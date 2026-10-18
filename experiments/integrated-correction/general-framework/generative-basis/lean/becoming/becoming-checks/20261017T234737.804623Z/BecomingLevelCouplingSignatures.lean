@@ -1,0 +1,16 @@
+import Becoming.LevelCoupling
+#check @Becoming.ExchangeLaw.RespondsByLevel.respondsTo
+#check @Becoming.ExchangeLaw.respondsWithin_zero_iff
+#check @Becoming.ExchangeLaw.RespondsTo.strength_pos
+#check @Becoming.ExchangeLaw.RespondsTo.couples
+#check @Becoming.ExchangeLaw.RespondsTo.upstream
+#check @Becoming.ExchangeLaw.Through.respondsWithin_unregistered
+#check @Becoming.ExchangeLaw.Through.registers_of_respondsTo
+#check @Becoming.ExchangeLaw.Through.reads_of_respondsTo
+#check @Becoming.ExchangeLaw.Through.couples_readCouplings
+#check @Becoming.ExchangeLaw.Through.upstream_restrictInto
+#check @Becoming.Web.registersAlike_of_levels
+#check @Becoming.ExchangeLaw.Through.not_respondsByLevel
+#check @Becoming.levelLaw_through
+#check @Becoming.levelLaw_respondsByLevel
+#check @Becoming.not_not_obs_iff_respondsByLevel

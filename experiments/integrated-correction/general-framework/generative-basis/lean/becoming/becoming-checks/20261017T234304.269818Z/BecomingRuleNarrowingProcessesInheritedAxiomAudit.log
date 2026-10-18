@@ -1,0 +1,10 @@
+'Becoming.RuleNarrowingProcessesInherited.narrow_once_iff' depends on axioms: [propext]
+'Becoming.RuleNarrowingProcessesInherited.narrowed_iff_fits' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleNarrowingProcessesInherited.dropped_has_counterevidence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Becoming.RuleNarrowingProcessesInherited.repeated_observation_idle' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleNarrowingProcessesInherited.narrowing_transport' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleNarrowingProcessesInherited.full_repertoire_settles_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,48 @@
+@Becoming.ExchangeLaw.RespondsByLevel.respondsTo : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C} {t s : Nat} {h : F}
+  {c d : C} {W : Becoming.Web F C}, law.RespondsByLevel W t h c s d → law.RespondsTo t h c s d
+@Becoming.ExchangeLaw.respondsWithin_zero_iff : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C} {t s : Nat} {h : F}
+  {c d : C}, law.RespondsWithin t h c s d 0 ↔ ¬law.RespondsTo t h c s d
+@Becoming.ExchangeLaw.RespondsTo.strength_pos : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C} {t s : Nat} {h : F}
+  {c d : C}, law.RespondsTo t h c s d → ∀ {k : Nat}, law.RespondsWithin t h c s d k → 0 < k
+@Becoming.ExchangeLaw.RespondsTo.couples : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C} {t s : Nat} {h : F} {c d : C}
+  {cs : List C} {part : F → Bool} {present : Nat → List F} {k : Nat → F → C → Nat → C → Nat},
+  (∀ (t : Nat) (h : F) (c : C) (s : Nat) (d : C), part h = false → s ≤ t → law.RespondsWithin t h c s d (k t h c s d)) →
+    law.RespondsTo t h c s d → h ∈ present t → part h = false → s ≤ t → d ∈ cs → Becoming.Couples cs part k present d c
+@Becoming.ExchangeLaw.RespondsTo.upstream : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C} {t s : Nat} {h : F}
+  {c d : C} {cs : List C} {part : F → Bool} {present : Nat → List F} {k : Nat → F → C → Nat → C → Nat},
+  (∀ (t : Nat) (h : F) (c : C) (s : Nat) (d : C), part h = false → s ≤ t → law.RespondsWithin t h c s d (k t h c s d)) →
+    law.RespondsTo t h c s d → h ∈ present t → part h = false → s ≤ t → d ∈ cs → Becoming.Upstream cs part k present d c
+@Becoming.ExchangeLaw.Through.respondsWithin_unregistered : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C}
+  {W : Becoming.Web F C} {obs : F → C → Prop} {part : F → Bool} {t s : Nat} {h : F} {c d : C},
+  law.Through W obs part → part h = false → ¬W.Registers obs h d → law.RespondsWithin t h c s d 0
+@Becoming.ExchangeLaw.Through.registers_of_respondsTo : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C}
+  {W : Becoming.Web F C} {obs : F → C → Prop} {part : F → Bool} {t s : Nat} {h : F} {c d : C},
+  law.Through W obs part → part h = false → law.RespondsTo t h c s d → ¬¬W.Registers obs h d
+@Becoming.ExchangeLaw.Through.reads_of_respondsTo : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C}
+  {W : Becoming.Web F C} {obs : F → C → Prop} {part : F → Bool} {t s : Nat} {h : F} {c d : C}
+  {reads : Nat → F → C → Bool},
+  law.Through W obs part →
+    (∀ (t : Nat) (h : F) (d : C), part h = false → W.Registers obs h d → reads t h d = true) →
+      part h = false → law.RespondsTo t h c s d → reads t h d = true
+@Becoming.ExchangeLaw.Through.couples_readCouplings : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C}
+  {W : Becoming.Web F C} {obs : F → C → Prop} {part : F → Bool} {t s : Nat} {h : F} {c d : C}
+  {reads : Nat → F → C → Bool} {cs : List C} {present : Nat → List F},
+  law.Through W obs part →
+    (∀ (t : Nat) (h : F) (d : C), part h = false → W.Registers obs h d → reads t h d = true) →
+      law.RespondsTo t h c s d →
+        h ∈ present t →
+          part h = false →
+            s ≤ t →
+              d ∈ cs → Becoming.Couples cs part (Becoming.readCouplings fun t h x x_1 d => reads t h d) present d c
+@Becoming.Web.registersAlike_of_levels : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F}
+  {l l' : Nat → C → Nat} {s' : Nat}, (∀ (e : C), l s' e = l' s' e) → W.RegistersAlike obs g l l' s'
+@Becoming.ExchangeLaw.Through.not_respondsByLevel : ∀ {F C : Type} {law : Becoming.ExchangeLaw F C}
+  {W : Becoming.Web F C} {obs : F → C → Prop} {part : F → Bool} {t s : Nat} {h : F} {c d : C} [DecidableEq C],
+  law.Through W obs part → part h = false → ¬obs h d → ¬law.RespondsByLevel W t h c s d
+@Becoming.levelLaw_through : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {part : F → Bool} {d : C}
+  {mark : F → Bool}, (∀ (h : F), mark h = true → obs h d) → (Becoming.levelLaw mark d).Through W obs part
+@Becoming.levelLaw_respondsByLevel : ∀ {F C : Type} {W : Becoming.Web F C} {d : C} [DecidableEq C] {mark : F → Bool}
+  {h : F}, mark h = true → ∀ (t : Nat) (c : C), (Becoming.levelLaw mark d).RespondsByLevel W t h c t d
+@Becoming.not_not_obs_iff_respondsByLevel : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {part : F → Bool}
+  {d : C} [DecidableEq C] [DecidableEq F] {h : F},
+  part h = false → (¬¬obs h d ↔ ¬¬∃ law, law.Through W obs part ∧ ∃ t c s, law.RespondsByLevel W t h c s d)

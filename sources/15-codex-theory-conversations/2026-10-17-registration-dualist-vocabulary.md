@@ -26,6 +26,10 @@ After the study was committed (`cc1beb086`), Ren chose to go through the candida
 
 > Agree with the candidates as proposed and with 识 option (b); record the decisions in the study, still no renames.
 
+After the decision was recorded (`961637101`), the assistant asked whether to do the instance check of coupling by level next. Ren sent the reply the assistant had drafted for the button:
+
+> Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames.
+
 ## Context (AI-authored)
 
 Everything below is the assistant's, not Ren's.

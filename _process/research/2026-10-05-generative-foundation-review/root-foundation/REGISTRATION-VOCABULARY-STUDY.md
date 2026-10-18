@@ -106,7 +106,7 @@ All fifteen restatements mean exactly their Lean statements. In three cases (`di
 
 ### 6.2 A check before "coupling" is adopted for S2
 
-`Web.Registers` takes `obs` as a supplied relation. `Loops.Couples` derives coupling from an exchange law's strengths, and `Observation` (P125) reads observation as a route of readings. Using one word for both is exact only if the level branch of S2 is shown to be, or to be read as, a coupling in the `Observation`/`Loops` sense. That is an instance theorem, i.e. new Lean, and needs a board claim. Until it exists, "coupled by level" is a reading of `obs`, labelled as such.
+`Web.Registers` takes `obs` as a supplied relation. `Loops.Couples` derives coupling from an exchange law's strengths, and `Observation` (P125) reads observation as a route of readings. Using one word for both is exact only if the level branch of S2 is shown to be, or to be read as, a coupling in the `Observation`/`Loops` sense. That is an instance theorem, i.e. new Lean, and needs a board claim. Until it exists, "coupled by level" is a reading of `obs`, labelled as such. **Done 18 October 2026 (N2):** [`Becoming.LevelCoupling`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean) proves that a law's response to one level is a coupling of every strength array and a route of reading. For a law reading through registration, only registered levels couple, an unobserved condition passes only a crossing of its need, and, up to double negation, observing is exactly where a level can couple into a formation within its need ([where-a-level-couples](../../../../theories/becoming/results/records/where-a-level-couples.md), [study §168](BECOMING-RENEWAL-READING.md#168-where-a-level-couples-into-a-formation-n2)). The level grain's condition is met; the positive half of the threshold grain (that a crossing does pass) is not witnessed.
 
 ### 6.3 On 识
 
@@ -128,7 +128,7 @@ Ren went through the candidates in conversation, numbered 1–15 with the AI's c
 
 | # | Current | Adopted (en) | Adopted (zh) | Condition carried |
 |---|---|---|---|---|
-| 1 | registers (S2) | couples into; by threshold / by level | 耦合入；经阈 / 经水平 | Coupling by level becomes a name only after the instance check of 6.2. Until then it is a labelled reading of `obs`. Always "into" (directed). |
+| 1 | registers (S2) | couples into; by threshold / by level | 耦合入；经阈 / 经水平 | Coupling by level became a name only after the instance check of 6.2, met on 18 October (N2). Always "into" (directed). |
 | 2 | registration as a map (S1) | the map; its lumping; the course through the map; `Law.frameBy` | 映射；归并；经映射的历程；律经映射之框 | — |
 | 3 | registers alike (S3) | alike through `g`'s couplings (`AlikeThrough`) | 经 g 之耦合无别 | — |
 | 4 | registration closure (S4) | coupling closure (`WithinCoupling`, `CoupledFrom`) | 耦合闭包 | — |

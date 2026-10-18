@@ -429,6 +429,7 @@
         "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
         "sources/15-codex-theory-conversations/2026-10-16-thresholds-readings-and-measure-question.md",
         "sources/15-codex-theory-conversations/2026-10-17-complete-unification.md",
+        "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
         "sources/15-codex-theory-conversations/2026-10-17-unification-follow-through.md"
       ]
     },
@@ -2149,6 +2150,18 @@
         "experiments/valuation-development/lean/perspectival/TrajectoryFidelity.lean",
         "sources/15-codex-theory-conversations/2026-10-15-i4-classification-table.md",
         "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md"
+      ]
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md": {
+      "title": "Naming study: \"registration\" and the learning vocabulary",
+      "local_links": [
+        "AGENTS.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
+        "sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md",
+        "sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md",
+        "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
+        "theories/becoming/chapters/NONDUAL-METHOD.md"
       ]
     },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md": {
@@ -5836,6 +5849,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",

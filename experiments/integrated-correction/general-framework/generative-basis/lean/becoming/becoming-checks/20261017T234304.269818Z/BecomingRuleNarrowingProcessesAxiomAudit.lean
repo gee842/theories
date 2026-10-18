@@ -1,0 +1,20 @@
+import Becoming.RuleNarrowingProcesses
+#print axioms Becoming.RuleNarrowingProcesses.sense
+#print axioms Becoming.RuleNarrowingProcesses.narrowed
+#print axioms Becoming.RuleNarrowingProcesses.after_congr
+#print axioms Becoming.RuleNarrowingProcesses.narrowed_congr
+#print axioms Becoming.RuleNarrowingProcesses.mem_learn_iff
+#print axioms Becoming.RuleNarrowingProcesses.Settles
+#print axioms Becoming.RuleNarrowingProcesses.all_true
+#print axioms Becoming.RuleNarrowingProcesses.all_of
+#print axioms Becoming.RuleNarrowingProcesses.onCons
+#print axioms Becoming.RuleNarrowingProcesses.answer_some
+#print axioms Becoming.RuleNarrowingProcesses.answer_none
+#print axioms Becoming.RuleNarrowingProcesses.answer_of_settles
+#print axioms Becoming.RuleNarrowingProcesses.settles_learn_iff
+#print axioms Becoming.RuleNarrowingProcesses.one_sample_settles_one
+#print axioms Becoming.RuleNarrowingProcesses.contrasting_settles_both
+#print axioms Becoming.RuleNarrowingProcesses.settled_differs_from_last
+#print axioms Becoming.RuleNarrowingProcesses.repeated_case_leaves_other
+#print axioms Becoming.RuleNarrowingProcesses.contradiction_settles_nothing
+#print axioms Becoming.RuleNarrowingProcesses.narrow_class_settles_wrongly

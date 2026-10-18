@@ -6520,6 +6520,45 @@ The checker enforces the ring (`PERIPHERY_JOINS`). 31 pure join modules went on 
 - That any join is a new result.
 - That the Mathlib leaves are joined: they are outside the run.
 
+<a id="168-where-a-level-couples-into-a-formation-n2"></a>
+## 168. Where a level couples into a formation (N2)
+
+```text
+Result(s): where-a-level-couples (new); reuses how-much-difference-arrives, how-a-carried-difference-grows,
+       observation-is-a-route, loops-within-what-a-law-reads, testing-within-registration, counterfactual-is-the-course
+Delta: the instance check the naming study held back (N1, REGISTRATION-VOCABULARY-STUDY.md §6.2): the supplied
+       relation obs is shown to be where a level can couple into a formation by level, in the sense of the strengths
+       of Becoming.Propagation, the couplings of Becoming.Loops and the readings of Becoming.Observation
+Supplied premises / correspondence: no axiom; a law of exchange, read through registration where stated; equality
+       of conditions (and, for the equivalence, of formations) decided where stated
+Evidence: Becoming.LevelCoupling, 15 theorems and 4 definitions, empty axiom reports; core receipt 20261017T234737.804623Z
+Boundary: a crossing of the need passing through some law is not witnessed (needs decided support); the converse
+          of the equivalence holds as a double negation; whether a given law responds to what it may read is open
+```
+
+Ren, 18 October 2026: "Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md)). The message is the reply the AI drafted for the button after Ren's decision on N1.
+
+**The question.** N1 adopted "couples into" for `Web.Registers`, by threshold (`Web.DependsOn`) and by level (`obs`). `obs` is supplied, while a coupling of `Becoming.Loops` is a positive strength of a law and a route of `Becoming.Observation` is a reading of one. Using one word is exact only if the level branch is a coupling in that sense. `observation-is-a-route` had also left open whether observation is "a second kind of relation beside dependence".
+
+**What is proved** (`Becoming.LevelCoupling`).
+- A response of an exchange to one level is defined as two histories, differing at most in that level, giving a positive exchange gap (`ExchangeLaw.RespondsTo`).
+- Strength zero is exactly no response, and a response forces every strength of the law for that level to be positive. So a response is a coupling of every strength array of the law, and a route of length one.
+- For a law reading through registration:
+  - a level that a formation outside the part neither depends on nor observes is coupled with strength zero;
+  - a response therefore comes from a registered condition (as a double negation);
+  - a response is read in every schedule covering registration, so it is a coupling of the routes of reading and a route of the law's strengths restricted to that schedule (`ExchangeLaw.Through.upstream_restrictInto`, which also joins the strength law to the base).
+- Where the formation does not observe the condition, a change of its level that leaves the need met alike changes nothing (`ExchangeLaw.Through.not_respondsByLevel`).
+- Where it observes the condition, the law taking that level reads through registration and responds within the need at every step (`levelLaw_through`, `levelLaw_respondsByLevel`).
+- So, up to double negation, observing is exactly where some law reading through registration couples a level into the formation within its need (`not_not_obs_iff_respondsByLevel`).
+
+**For the naming.** "Coupled by level" names `obs` exactly as the bound of where a level can couple: registration bounds coupling, and a law's responses are its couplings. This is the condition N1 set for that grain, so the level branch is no longer held back. The threshold grain is shown only in its negative half (only a crossing passes); a witness that a crossing does pass would need the formation's support decided. No name is changed (Ren: "still no renames").
+
+**Self-review.** The statements were read against the Lean.
+- `RespondsByLevel` restricts the threshold condition to the changed step. That is exact, because the histories agree everywhere else.
+- `not_respondsByLevel` needs decided equality of conditions only through `Web.alike_of_threshold`.
+- The witness law marks formations by a Boolean, so that reading through registration holds for every formation outside the part; the equivalence instantiates the mark with decided equality of formations.
+- The first checker run passed (receipt `20261017T234304.269818Z`), but the connectivity check found `ExchangeLaw.RespondsTo.upstream` apart: nothing on the base used it. `ExchangeLaw.Through.upstream_restrictInto` was added to join it, and the checker run again (receipt `20261017T234737.804623Z`). The first receipt is kept as evidence of the superseded run.
+
 ## Ren’s words quoted in passages that exist only in the Chinese edition
 
 The paragraphs below sit in Chinese-only passages of this study log ([Chinese edition](BECOMING-RENEWAL-READING.zh.md)). Only the quotation is repeated here, verbatim and in Ren’s original language, with the source link given in the passage (line numbers refer to the bilingual file before the split); the surrounding AI prose is in the Chinese edition. Nothing here is translated.

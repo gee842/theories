@@ -75,7 +75,7 @@ P124 left open how a formation comes to observe a stock it depends on; Ren answe
 - related, not a proved adapter: [runaway-distance-unregistered](runaway-distance-unregistered.md). There observation, obs, is given; here it is a route of readings from what is observed, direct observation being the route of length zero.
 - related, not a proved adapter: [what-a-cut-loses](what-a-cut-loses.md). Reuses CouplesAt: couplings acting at a step.
 
-**Used by:** [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
+**Used by:** [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md) · [where-a-level-couples](where-a-level-couples.md)
 
 <a id="sources--来源"></a>
 ### Sources

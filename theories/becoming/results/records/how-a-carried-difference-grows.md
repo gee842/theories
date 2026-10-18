@@ -73,7 +73,7 @@ Ren, 12 October 2026, comparing the theory with quantum dynamics and "Fermi's di
 - related, not a proved adapter: [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md). Within one law: loops lie within what is read and form where reading grows; for a law reading a stock only below a threshold there is no loop through the stock before the break, and the loop forms at the break.
 - related, not a proved adapter: [how-often-couplings-act](how-often-couplings-act.md). The geometric bound holds counting only the steps at which couplings act and is attained by a self-loop; in the reading Ren called right, “only a loop makes a difference run away”, couplings at only some steps are closed both ways: only a loop of the couplings that go on can make it run away, such a loop need not, and it does where its returns are frequent.
 
-**Used by:** [how-loops-form](how-loops-form.md) · [how-often-couplings-act](how-often-couplings-act.md) · [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md) · [observation-is-a-route](observation-is-a-route.md) · [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md) · [what-a-cut-loses](what-a-cut-loses.md)
+**Used by:** [how-loops-form](how-loops-form.md) · [how-often-couplings-act](how-often-couplings-act.md) · [loops-within-what-a-law-reads](loops-within-what-a-law-reads.md) · [observation-is-a-route](observation-is-a-route.md) · [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md) · [what-a-cut-loses](what-a-cut-loses.md) · [where-a-level-couples](where-a-level-couples.md)
 
 <a id="sources--来源"></a>
 ### Sources

@@ -170,6 +170,7 @@ import Becoming.TailRuns
 import Becoming.TallyWorlds
 import Becoming.TypicalRuns
 import Becoming.WeightedTraces
+import Becoming.LevelCoupling
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1231,6 +1232,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   reads that lies downstream, observing the stock itself being the route of length zero. A route
   forms by closing, as a loop does; in the measurement witness the route stock → record and the loop
   through the draw form at the step the measurement starts, and the raise registers after it.
+* `Becoming.LevelCoupling` (L4): where a level couples into a formation, with no premise beyond
+  what each statement names. Strength zero is exactly no response, and a response of an exchange
+  to one level is a coupling of every strength array of the law and a route of length one. For a
+  law reading through registration, a level neither depended on nor observed is coupled with
+  strength zero, so a response comes from a registered condition and is a route of reading in every
+  schedule covering registration; a condition depended on and not observed passes only a crossing
+  of its need, and an observed one can be responded to within its need: observing is exactly where
+  a level can couple into a formation by level.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return

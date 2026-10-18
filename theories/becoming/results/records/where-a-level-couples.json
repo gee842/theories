@@ -1,0 +1,446 @@
+{
+  "schema_version": 2,
+  "id": "where-a-level-couples",
+  "title": {
+    "zh": "水平在何处耦合入形成",
+    "en": "Where a level couples into a formation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-18T00:00:00+00:00",
+  "statement": {
+    "en": "A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through registration only registered levels couple, an unobserved condition passes only a crossing of its need, and observing is exactly where a level can couple within its need.",
+    "zh": "交换对一个水平的回应是律的每个强度阵列的耦合。对经所识而读的律，只有所识的水平耦合，不被观察的条件只过其所需的跨越，观察恰是水平能在所需之内耦合之处。"
+  },
+  "laws": [
+    {
+      "en": "Strength zero is exactly no response: across the step from t, h's exchange with c is coupled to the level of d at s with strength zero exactly where no two histories differing at most in that level give a positive exchange gap. A response forces every strength of the law for that level to be positive, so it is a coupling of every strength array of the law in the sense of Becoming.Loops and a route of length one.",
+      "zh": "强度为零恰是不回应：跨过从 t 起的一步，h 与 c 的交换对 d 在 s 的水平的耦合强度为零，恰当至多在该水平上不同的两段历史不给出正的交换之差。回应使律对该水平的每个强度都为正，所以它是律的每个强度阵列在 Becoming.Loops 意义上的耦合，也是长度为一的路线。",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsTo",
+        "Becoming.ExchangeLaw.respondsWithin_zero_iff",
+        "Becoming.ExchangeLaw.RespondsTo.strength_pos",
+        "Becoming.ExchangeLaw.RespondsTo.couples",
+        "Becoming.ExchangeLaw.RespondsTo.upstream"
+      ]
+    },
+    {
+      "en": "Only what couples into a formation responds: for a law reading through registration, a level a formation outside the part neither depends on nor observes is coupled into its exchanges with strength zero. A response thus comes from a registered condition (as a double negation), is read in every schedule covering registration, and is a route of reading and of the law's strengths restricted to that schedule.",
+      "zh": "只有耦合入形成者才被回应：对一个律，若它对部分之外的每个形成只读该形成所识者，则形成既不依赖也不观察的水平，在每一步以强度零耦合入它与每个条件的交换；所以回应来自它所识的条件（以双重否定），并在覆盖所识的每个时程中被读，是 Becoming.Observation 的所读路线的耦合，也是律的强度限于该时程后的路线。",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.respondsWithin_unregistered",
+        "Becoming.ExchangeLaw.Through.registers_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.reads_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.couples_readCouplings",
+        "Becoming.ExchangeLaw.Through.upstream_restrictInto",
+        "Becoming.Web.registersAlike_of_levels"
+      ]
+    },
+    {
+      "en": "By threshold, only a crossing passes: for a law reading through registration, where a formation outside the part does not observe a condition, a change of that condition's level at one step that leaves the formation's need for it met alike changes nothing the formation exchanges.",
+      "zh": "经阈只过跨越：对经所识而读的律，部分之外的形成不观察一个条件时，该条件在一步的水平的改变若使形成对它的所需同样得足，则不改变形成所交换的任何东西。",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsByLevel",
+        "Becoming.ExchangeLaw.RespondsByLevel.respondsTo",
+        "Becoming.ExchangeLaw.Through.not_respondsByLevel"
+      ]
+    },
+    {
+      "en": "By level, the level passes: where marked formations observe a condition, the law taking its level reads through registration and responds to it within the need at every step. So, for a formation outside the part, it is not refuted that it observes the condition exactly where it is not refuted that some law reading through its registration responds to it by level.",
+      "zh": "经水平则水平得过，观察恰是它能过之处：被标记的形成观察一个条件时，取该条件水平的律经所识而读，并在每一步、每个条件在所需之内回应该水平；所以对部分之外的形成，它观察该条件不被否定，恰当某个经其所识而读的律经水平回应该条件不被否定。",
+      "declarations": [
+        "Becoming.levelLaw",
+        "Becoming.levelLaw_through",
+        "Becoming.raisedAt",
+        "Becoming.levelLaw_respondsByLevel",
+        "Becoming.not_not_obs_iff_respondsByLevel"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Each theorem states what it needs: a law of exchange; for strengths, strengths of the law and a formation present outside the part, the level listed and no later than the step; for laws through registration, the law reading through it and the formation outside the part; a covering schedule for reading; decided equality of conditions for the threshold law and the witness, and of formations for the equivalence.",
+      "zh": "不加公理。各定理所需写在定理中：一个交换律；对强度之律，律的强度、部分之外在场的形成，所涉水平列出且不晚于该步；对经所识之律，律经所识而读（ExchangeLaw.Through），形成在部分之外；对读，覆盖所识的时程；对阈之律与见证，条件的相等可判定；对等价，形成的相等亦可判定。不需条件有限。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That a crossing of the need passes through some law reading through registration: a witness would need the formation's whole support decided.",
+      "zh": "所需的跨越经某个经所识而读的律得过：见证需判定形成的全部支撑。",
+      "kind": "scope"
+    },
+    {
+      "en": "That a given law responds to what it may read: a law reading through registration may ignore a level it registers.",
+      "zh": "一个给定的律回应它可读者：经所识而读的律可以不理会它所识的水平。",
+      "kind": "scope"
+    },
+    {
+      "en": "The converse without double negation: that a formation observes a condition is recovered from a response by level only as not refuted.",
+      "zh": "去掉双重否定的反方向：由经水平的回应只得出观察不被否定。",
+      "kind": "scope"
+    },
+    {
+      "en": "A strength's size beyond being positive.",
+      "zh": "强度除为正以外的大小。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261017T234737.804623Z): the 19 declarations of Becoming.LevelCoupling, 15 of them theorems, have empty axiom reports; the checker verifies core purity, and THEOREM-CONNECTIVITY.py --check finds none of them apart from the base. Author self-review in study section 168; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261017T234737.804623Z）：Becoming.LevelCoupling 的 19 项声明（15 项定理）公理报告为空；检查器并核对核心纯净，THEOREM-CONNECTIVITY.py --check 未见其中任何一项离开基底。作者自审见研究 §168；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "A witness that a crossing passes (decided support); the threshold grain stated as a coupling of Becoming.Thresholds; the renames adopted in the naming study (N1), which this check unblocks for the level branch; an independent review.",
+    "zh": "跨越得过的见证（支撑可判定）；把阈的粒度陈述为 Becoming.Thresholds 的耦合；命名研究（N1）采纳的改名，本检查为水平一支解除阻碍；独立审查。"
+  },
+  "correspondence": {
+    "en": "The naming study of 17-18 October (N1, study section 6.2) adopted \"couples into\" for what Web.Registers names, in two grains, and held the level grain back until the supplied relation obs was shown to be a coupling in the sense of Becoming.Loops and Becoming.Observation. Ren: \"Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames.\" This result does that. It also answers, for the level branch, the question observation-is-a-route leaves open, whether observation is a second kind of relation beside dependence: obs marks where a level can couple into a formation by level. Reading (the AI's, open): registration bounds coupling, and a law's responses are its couplings.",
+    "zh": "10月17–18日的命名研究（N1，研究第 6.2 节）以“耦合入”称 Web.Registers 所名者，分两种粒度，并在给出的关系 obs 被证明为 Becoming.Loops 与 Becoming.Observation 意义上的耦合之前，暂缓经水平一支。Ren：“Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames.” 本结果完成此事。它也就水平一支回答 observation-is-a-route 留下的问题，即观察是否为依赖之外的第二种关系：obs 标出水平能经水平耦合入形成之处。读法（AI 的，未定）：所识界定耦合，律的回应即其耦合。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
+  "aliases": [
+    "where a level couples",
+    "水平在何处耦合",
+    "coupling by level",
+    "经水平耦合",
+    "coupled by threshold",
+    "经阈耦合",
+    "response is a coupling",
+    "回应即耦合",
+    "strength zero is no response",
+    "强度为零即不回应",
+    "only a crossing passes",
+    "只过跨越",
+    "observing is where a level couples",
+    "观察即水平耦合之处"
+  ],
+  "dependencies": [
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses RespondsWithin and exchangeGap: coupling strength.",
+        "zh": "复用 RespondsWithin 与 exchangeGap：耦合强度。"
+      },
+      "interface": {
+        "output": {
+          "en": "Coupling strength of a law for one level.",
+          "zh": "律对一个水平的耦合强度。"
+        },
+        "input": {
+          "en": "Strength zero exactly where no response; a response forces positive strength.",
+          "zh": "强度为零恰无回应；回应使强度为正。"
+        },
+        "conditions": {
+          "en": "None beyond the law.",
+          "zh": "律之外无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "how-a-carried-difference-grows",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Couples: a coupling of a strength array.",
+        "zh": "复用 Couples：强度阵列的耦合。"
+      },
+      "interface": {
+        "output": {
+          "en": "Couplings of a strength array.",
+          "zh": "强度阵列的耦合。"
+        },
+        "input": {
+          "en": "A response is a coupling of every strength array of the law.",
+          "zh": "回应是律的每个强度阵列的耦合。"
+        },
+        "conditions": {
+          "en": "Formation present outside the part, level listed, no later than the step.",
+          "zh": "形成在部分之外在场，水平列出，不晚于该步。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean"
+      }
+    },
+    {
+      "id": "observation-is-a-route",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Upstream.single, readCouplings and ReadsInto.respondsWithin_unread through Through.readsAt.",
+        "zh": "复用 Upstream.single、readCouplings，以及经 Through.readsAt 的 ReadsInto.respondsWithin_unread。"
+      },
+      "interface": {
+        "output": {
+          "en": "Routes of reading; strength zero for unread levels.",
+          "zh": "所读路线；未读水平强度为零。"
+        },
+        "input": {
+          "en": "A response is a route of reading in every schedule covering registration.",
+          "zh": "回应在覆盖所识的每个时程中是所读路线。"
+        },
+        "conditions": {
+          "en": "Law reading through registration; schedule covering it.",
+          "zh": "律经所识而读；时程覆盖之。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean"
+      }
+    },
+    {
+      "id": "loops-within-what-a-law-reads",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Through.readsAt and ReadsAt.respondsWithin_unread.",
+        "zh": "复用 Through.readsAt 与 ReadsAt.respondsWithin_unread。"
+      },
+      "interface": {
+        "output": {
+          "en": "A law reading through registration reads every schedule covering it.",
+          "zh": "经所识而读的律读覆盖它的每个时程。"
+        },
+        "input": {
+          "en": "A response is read in every covering schedule.",
+          "zh": "回应在每个覆盖时程中被读。"
+        },
+        "conditions": {
+          "en": "Schedule covering registration.",
+          "zh": "覆盖所识的时程。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean"
+      }
+    },
+    {
+      "id": "testing-within-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Web.Registers, Web.RegistersAlike and Web.alike_of_threshold.",
+        "zh": "复用 Web.Registers、Web.RegistersAlike 与 Web.alike_of_threshold。"
+      },
+      "interface": {
+        "output": {
+          "en": "What registers in a formation; a condition depended on and not observed registers only whether its need is met.",
+          "zh": "形成所识者；依赖而不观察的条件只识所需是否得足。"
+        },
+        "input": {
+          "en": "By threshold only a crossing passes; by level the level passes.",
+          "zh": "经阈只过跨越；经水平则水平得过。"
+        },
+        "conditions": {
+          "en": "Equality of conditions decided for the threshold law.",
+          "zh": "阈之律需条件相等可判定。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses ExchangeLaw and ExchangeLaw.Through.",
+        "zh": "复用 ExchangeLaw 与 ExchangeLaw.Through。"
+      },
+      "interface": {
+        "output": {
+          "en": "Laws of exchange reading through registration.",
+          "zh": "经所识而读的交换律。"
+        },
+        "input": {
+          "en": "Only registered levels couple.",
+          "zh": "只有所识的水平耦合。"
+        },
+        "conditions": {
+          "en": "Formation outside the part.",
+          "zh": "形成在部分之外。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "subthreshold-registration",
+      "detail": {
+        "en": "There a raise below the threshold of a stock depended on and not observed registers nowhere along courses; here no law reading through registration responds to it.",
+        "zh": "那里依赖而不观察的储量在阈下的升高沿进程处处不被识；这里没有经所识而读的律回应它。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
+      "role": "proof",
+      "sha256": "ec064482ed470a43698b488381d453e591f2b2320a40f20195bb13b59b846cd7",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsTo",
+        "Becoming.ExchangeLaw.respondsWithin_zero_iff",
+        "Becoming.ExchangeLaw.RespondsTo.strength_pos",
+        "Becoming.ExchangeLaw.RespondsTo.couples",
+        "Becoming.ExchangeLaw.RespondsTo.upstream",
+        "Becoming.ExchangeLaw.Through.respondsWithin_unregistered",
+        "Becoming.ExchangeLaw.Through.registers_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.reads_of_respondsTo",
+        "Becoming.ExchangeLaw.Through.couples_readCouplings",
+        "Becoming.ExchangeLaw.Through.upstream_restrictInto",
+        "Becoming.Web.registersAlike_of_levels",
+        "Becoming.ExchangeLaw.RespondsByLevel",
+        "Becoming.ExchangeLaw.RespondsByLevel.respondsTo",
+        "Becoming.ExchangeLaw.Through.not_respondsByLevel",
+        "Becoming.levelLaw",
+        "Becoming.levelLaw_through",
+        "Becoming.raisedAt",
+        "Becoming.levelLaw_respondsByLevel",
+        "Becoming.not_not_obs_iff_respondsByLevel"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "de6c38b8fd6ea40886ba7bfd15a563cac716dab8783bc1d9a8a8b39baa92dcb1",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsWithin",
+        "Becoming.ExchangeLaw.exchangeGap",
+        "Becoming.ExchangeLaw.exchangeGap_of_alike",
+        "Becoming.gap_comm",
+        "Becoming.gap_add_self"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "role": "proof",
+      "sha256": "fccdc76341f8846bd67cd6194e155bda2ec9cda9f95ad2293d128f310cab2983",
+      "declarations": [
+        "Becoming.Couples"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
+      "role": "proof",
+      "sha256": "da261848a75269848991e8f18e92cb22c476ecd981ef74c21644669a86471887",
+      "declarations": [
+        "Becoming.Upstream.single",
+        "Becoming.readCouplings",
+        "Becoming.restrictInto",
+        "Becoming.ExchangeLaw.ReadsInto.restrict",
+        "Becoming.ExchangeLaw.Through.readsInto"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "role": "proof",
+      "sha256": "f90c6553a0f488086796b213ce410eff12e23e758342d104d4de1ad914de0103",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.readsAt",
+        "Becoming.ExchangeLaw.ReadsAt.respondsWithin_unread"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
+      "declarations": [
+        "Becoming.Web.Registers",
+        "Becoming.Web.RegistersAlike",
+        "Becoming.Web.alike_of_threshold"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "5a6e9db3e053f174c6abc0bc6453da09af983debc5aaa46d8f405e887587add6",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.Through"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "role": "receipt",
+      "sha256": "6298d721dfcb6f7994b645c999d18463925462d53590ed4db283101c6feee5af"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "b82647ccfa655d3c76dfd5ceeb2e93646d09eaf720a78a35f6357647ae3450be"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "e941b3ecb0ebfb03f0903550ed2d1f0c0208808ee246102cc3c5da432c9814a3"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
+      "role": "provenance",
+      "sha256": "e035d7d22ffa3d1beb884699bd0a6c24c055d8460b90a040a765ea703a6ad2d0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md",
+      "role": "integration",
+      "sha256": "21c55ecb521be6f68b1f5a2644aac8aa7f2efd0573589e685b7f1a706abf638f"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LevelCoupling",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Propagation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Loops",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Observation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Thresholds",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "18 October 2026: added, on Ren's \"Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames\" (N2), after the naming study N1; study section 168.",
+      "zh": "2026年10月18日：新增，按 Ren 的“Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames”（N2），在命名研究 N1 之后；研究第 168 节。"
+    }
+  ]
+}
