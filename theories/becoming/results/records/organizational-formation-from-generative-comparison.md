@@ -80,6 +80,7 @@ One support history forms links, retains a basis and bears an opportunity loss; 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 
 Aliases: `Becoming.undominated_has_iff`, `Becoming.Judgment.required_of_bettered`, `Becoming.Courses.extension_frontier_exists`, `Becoming.Courses.extension_frontier_has_iff`
 
@@ -96,6 +97,7 @@ Aliases: `Becoming.undominated_has_iff`, `Becoming.Judgment.required_of_bettered
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Decidedness.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, wording: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
+- 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
 - 5 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](organizational-formation-from-generative-comparison.json).
 
 <a id="earlier-text--早期文本"></a>

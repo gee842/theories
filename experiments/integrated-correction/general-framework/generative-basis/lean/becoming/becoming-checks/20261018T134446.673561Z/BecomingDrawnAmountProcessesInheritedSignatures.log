@@ -1,0 +1,35 @@
+@Becoming.DrawnAmountProcessesInherited.sub_lt_sub_of_lt : ∀ {a x y : Nat}, x < y → y ≤ a → a - y < a - x
+@Becoming.DrawnAmountProcessesInherited.left_step_retains : ∀ {b : Nat},
+  Becoming.DrawnAmountProcesses.draw.step 6 RelationalOrganization.Form.left b → b = 4 ∧ 2 ≤ b
+@Becoming.DrawnAmountProcessesInherited.overbuild_step_loses : ∀ {b b' : Nat},
+  Becoming.DrawnAmountProcesses.draw.step 6 RelationalOrganization.Form.left b →
+    Becoming.DrawnAmountProcesses.draw.step 6 RelationalOrganization.Form.overbuild b' → b' < b ∧ ¬2 ≤ b'
+@Becoming.DrawnAmountProcessesInherited.report_same_basis_differs : ∀ {b b' : Nat},
+  Becoming.DrawnAmountProcesses.draw.step 6 RelationalOrganization.Form.left b →
+    Becoming.DrawnAmountProcesses.draw.step 6 RelationalOrganization.Form.overbuild b' →
+      RelationalOrganization.constructionReport RelationalOrganization.Form.left =
+          RelationalOrganization.constructionReport RelationalOrganization.Form.overbuild ∧
+        2 ≤ b ∧ ¬2 ≤ b'
+Becoming.DrawnAmountProcessesInherited.no_report_judge : ¬∃ judge,
+    ∀ (f : RelationalOrganization.Form) (b : Nat),
+      Becoming.DrawnAmountProcesses.draw.step 6 f b → (judge (RelationalOrganization.constructionReport f) ↔ 2 ≤ b)
+Becoming.DrawnAmountProcessesInherited.formation_required_on_frame : PracticalJudgment.Required
+  (PracticalJudgment.Frontier RelationalOrganization.eligible
+    (Becoming.BetterAt Becoming.DrawnAmountProcessesInherited.frame Becoming.Judgment.protecting
+      Becoming.Judgment.gaining))
+  RelationalOrganization.formed
+Becoming.DrawnAmountProcessesInherited.neither_route_required_on_frame : ¬PracticalJudgment.Required
+      (PracticalJudgment.Frontier RelationalOrganization.eligible
+        (Becoming.BetterAt Becoming.DrawnAmountProcessesInherited.frame Becoming.Judgment.protecting
+          Becoming.Judgment.gaining))
+      RelationalOrganization.usesLeft ∧
+  ¬PracticalJudgment.Required
+      (PracticalJudgment.Frontier RelationalOrganization.eligible
+        (Becoming.BetterAt Becoming.DrawnAmountProcessesInherited.frame Becoming.Judgment.protecting
+          Becoming.Judgment.gaining))
+      RelationalOrganization.usesRight
+Becoming.DrawnAmountProcessesInherited.overbuild_off_frontier_on_frame : ¬PracticalJudgment.Frontier
+    RelationalOrganization.eligible
+    (Becoming.BetterAt Becoming.DrawnAmountProcessesInherited.frame Becoming.Judgment.protecting
+      Becoming.Judgment.gaining)
+    RelationalOrganization.Form.overbuild

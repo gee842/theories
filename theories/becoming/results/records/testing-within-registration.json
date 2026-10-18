@@ -482,7 +482,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "81f1b15ca32e8e87f0811d241ae09b678ead9175333a3964fd106bcb730af71d",
+      "sha256": "34bd0630b4d334ad07c88d57c86ff4dfae7ba8d0b824ae8768f24709aab4c593",
       "declarations": [
         "Becoming.Flow.Balances.uncoupled_beyond_influence",
         "Becoming.Clearing.sparedFlow",
@@ -550,7 +550,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a7f1a57fc856c8d5af8a6cb7ec8413c7ced7a411ab09343810f6ace6bee0907b",
+      "sha256": "35bfc7365ed757531a0f4ffe614cabc4124fae0240e2b08ac4ddefe7bac68efa",
       "declarations": []
     },
     {
@@ -600,6 +600,12 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -612,7 +618,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -892,6 +898,10 @@
     {
       "en": "18 October 2026, A1: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A1 applied the readings Ren took on 18 October, the revised readings of 生生, 生生不息 and \"entangled\" and the brief's Part B: the legend and item 11 of the statement in full, the premise card's row on the readings of `living`, labels and reading paragraphs in sections 1, 2, 3 and 6, the section 8.2 row on the relational start, sections 8.3 and 8.4, and the glossary and crosswalk rows; section 8.4 lists the open readings, with M1's line for section 7). The claim is unchanged.",
       "zh": "2026年10月18日，A1：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Feedback.lean). Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

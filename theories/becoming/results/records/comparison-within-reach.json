@@ -376,7 +376,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "81f1b15ca32e8e87f0811d241ae09b678ead9175333a3964fd106bcb730af71d",
+      "sha256": "34bd0630b4d334ad07c88d57c86ff4dfae7ba8d0b824ae8768f24709aab4c593",
       "declarations": [
         "Becoming.Flow.Balances.retains_transfer",
         "Becoming.Flow.Balances.not_adds_transfer",
@@ -498,12 +498,18 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -760,6 +766,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Feedback.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Feedback.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

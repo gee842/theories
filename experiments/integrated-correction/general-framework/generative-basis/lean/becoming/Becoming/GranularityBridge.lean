@@ -24,7 +24,8 @@ named, which is where the periphery used classical reasoning.
 **Programs.** A program is a recipe (`Recipe.ofProgram`, `Recipe.toProgram`) and carrying it out
 is leading along it (`Recipe.leads_ofProgram`). Reading a program as one test is the core's
 `Recipe.after` (`Recipe.toTest_after`); that it is exact for every model is exactly excluded middle
-(`diamond_correct_iff_em`), since a choice is read through negation and conjunction. Where the
+(`diamond_correct_iff_em`), since a choice is read through negation and conjunction: the core's
+`Recipe.holds_after_iff_em`, read through the encodings. Where the
 tests are decided it is exact (`diamond_correct_of_decided`). With `em` named, `compile_correct`,
 `finite_program_endpoints` and `guarded_history_matches` hold as stated; `word_program_exact`,
 `execution_has_native_trace`, `branch_executes` and `guard_hoisting_sound` need nothing.
@@ -468,7 +469,8 @@ end Programs
 
 /-- **Reading every program as one test is exact, for every model, exactly under excluded
 middle**: the periphery's `diamond_correct`, asked of every model with one configuration, one move
-and one condition, is excluded middle. -/
+and one condition, is the core's `Recipe.holds_after_iff_em`, read through the encodings (every
+frame is a model's, every recipe a program's and every branching test a test's). -/
 theorem diamond_correct_iff_em :
     (∀ (m : ExplanatoryBranching.Model Unit Unit Unit)
         (p : ExplanatoryGuardedPrograms.Program Unit Unit) (q : ExplanatoryBranching.Test Unit Unit)
@@ -476,12 +478,11 @@ theorem diamond_correct_iff_em :
       ExplanatoryBranching.Holds m s (ExplanatoryGuardedPrograms.diamond p q) ↔
         ∃ t, ExplanatoryGuardedPrograms.Executes m p s t ∧ ExplanatoryBranching.Holds m t q) ↔
       ∀ p : Prop, Decided p :=
-  ⟨fun exact p =>
-    match (exact ⟨⟨fun _ _ _ => False⟩, fun _ _ => p⟩
-        (.choice (.guard (.atom ())) (.guard (.neg (.atom ())))) .top ()).mp
-        (fun ⟨no, no'⟩ => no' ⟨fun yes => no ⟨yes, True.intro⟩, True.intro⟩) with
-    | ⟨_, .inl ⟨_, yes⟩, _⟩ => .inl yes
-    | ⟨_, .inr ⟨_, no⟩, _⟩ => .inr no,
+  ⟨fun exact => Recipe.holds_after_iff_em.mp fun F r s φ => by
+    rw [← Recipe.ofProgram_toProgram r, ← BranchingTest.ofTest_toTest φ]
+    exact (Recipe.holds_after_ofProgram (m := ⟨F.P, F.realized⟩) r.toProgram φ.toTest s).trans
+      ((exact ⟨F.P, F.realized⟩ r.toProgram φ.toTest s).trans
+        (Recipe.exists_leads_ofProgram r.toProgram φ.toTest s).symm),
    fun em m => diamond_correct_of_em em m⟩
 
 /-! ## What remains -/

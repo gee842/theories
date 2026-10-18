@@ -1,5 +1,6 @@
 import Becoming.Frame
 import Becoming.Inquiry
+import Becoming.ClassifiedBeliefProcesses
 import Becoming.Recurrence
 import Becoming.Diagonal
 import Becoming.Context
@@ -52,9 +53,11 @@ import Becoming.Entropy
 import Becoming.Units
 import Becoming.Imbalance
 import Becoming.Continuation
+import Becoming.RenewalFlow
 import Becoming.Admission
 import Becoming.Regions
 import Becoming.Metaethics
+import Becoming.Lifting
 import Becoming.Ranking
 import Becoming.LossMatching
 import Becoming.Correspondence
@@ -64,6 +67,7 @@ import Becoming.Significance
 import Becoming.Interdependence
 import Becoming.Feeding
 import Becoming.Feedback
+import Becoming.EdgeClosure
 import Becoming.Boundaries
 import Becoming.Relevance
 import Becoming.Testing
@@ -192,6 +196,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   reachability, invariants and new realization.
 * `Becoming.Inquiry` (L2): the visible scope of an inquiry is what its actual
   executions reach; a sound policy secures its goal there.
+* `Becoming.ClassifiedBeliefProcesses` (L2): a narrowed belief whose inhabitation is decided
+  is empty or inhabited; where every narrowed belief's inhabitation is decided, every belief is
+  classified through every depth, so bounded sufficiency is the implication form there.
 * `Becoming.Recurrence` (L2): what every law of change keeps, loses and returns to, with
   no premise and no decidability. A list holding enough of a sequence holds two equal values;
   within finitely many configurations a law merges nothing exactly where every configuration
@@ -670,6 +677,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   one's continuation depends on; it ends with the want, and a clearer that meets every
   requirement derived here can still end a life it does not need. Ren's proposal of 10
   October 2026 (an AI reading).
+* `Becoming.RenewalFlow` (L3): every law of the support-gated renewal family is a balanced flow
+  on its static web, so the family's restoration, its loss for good and the ending of joint
+  drawing beyond renewal are instances of the laws of every balanced flow; on the webs, formation
+  and the focal formation's own trajectory do not decide the class, formations each within
+  renewal consume jointly, escalation consumes, and the seasonal web is neither renewing nor
+  consuming.
 * `Becoming.Admission` (L3): what can form next, and what a part opens or closes. Levels
   admit a formation when they meet every requirement it has; support is admission by the
   levels that stand, gained only at a rise and lost only at a fall where requirements hold,
@@ -692,6 +705,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   living significance's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
+* `Becoming.Lifting` (L4): the lifting rule L on a frame's responses: C lifts, P and N hold
+  with L, and two countermodels show that the choice of the rule is substantive and that
+  transitivity needs a live middle response.
 * `Becoming.Ranking` (L4): what C ranks under each reading. Both the whole-run and the
   stepwise reading rank sharing above winning by consumption and, in the two-part
   family, restraint above overdraw; for an overdrawing formation with an event that
@@ -782,6 +798,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   the levels with and without it as the continuation condition does; the comparison of any two flows is decided
   within what their difference reaches. The continuation condition enters only as a hypothesis of three
   witnesses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
+* `Becoming.EdgeClosure` (L4): the seed–edge closure, what the process whose steps are the
+  edges reaches from a seed, and the core's closure under a relation as this closure from one
+  seed.
 * `Becoming.Testing` (L4): what registers in a formation and what it can test, with no premise
   beyond balance on the conditions registered and the representation. A condition a formation
   depends on and does not observe registers only whether it meets the need; an observed one

@@ -130,10 +130,10 @@
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
       "detail": {
-        "zh": "不由一般定律推出的部分（Becoming.RenewalBridge）：越过支持之点来自规律族自身的算术（overdraw_crosses_support，纯净的基础模块）；依存的焦点形成使水平低于自身所需、其形成量有界，仍是 dependent_overdraw_ends_itself 的规律族算术，此后它的永久终止才是 ends_for_good；independent_overdraw_persists 是规律族中的见证（不依存者可以持续）；jointly_consuming 中每个取用者单独在更新之内为更新型，无法在把两个取用者合为一个焦点形成的规律族中表示，各自份额的一般区分是 Becoming.Continuation 的 WithinOwn、WithinJoint、Pair.own_not_joint 与 joint_excess_ends。",
-        "en": "What the general laws do not give (Becoming.RenewalBridge): the crossing below support comes from the family's own arithmetic (overdraw_crosses_support, in the pure foundation module); that a dependent focal formation brings the level below its own need, with bounded formation, remains the family arithmetic of dependent_overdraw_ends_itself, and only its ending for good from then on is ends_for_good; independent_overdraw_persists is a witness in the family (an independent formation can persist); and in jointly_consuming each drawer being renewing within renewal alone cannot be represented in the family, which merges the two drawers into one focal formation; the general split of each one's share is Becoming.Continuation's WithinOwn, WithinJoint, Pair.own_not_joint and joint_excess_ends."
+        "zh": "不由一般定律推出的部分（Becoming.RenewalFlow）：越过支持之点来自规律族自身的算术（overdraw_crosses_support，纯净的基础模块）；依存的焦点形成使水平低于自身所需、其形成量有界，仍是 dependent_overdraw_ends_itself 的规律族算术，此后它的永久终止才是 ends_for_good；independent_overdraw_persists 是规律族中的见证（不依存者可以持续）；jointly_consuming 中每个取用者单独在更新之内为更新型，无法在把两个取用者合为一个焦点形成的规律族中表示，各自份额的一般区分是 Becoming.Continuation 的 WithinOwn、WithinJoint、Pair.own_not_joint 与 joint_excess_ends。",
+        "en": "What the general laws do not give (Becoming.RenewalFlow): the crossing below support comes from the family's own arithmetic (overdraw_crosses_support, in the pure foundation module); that a dependent focal formation brings the level below its own need, with bounded formation, remains the family arithmetic of dependent_overdraw_ends_itself, and only its ending for good from then on is ends_for_good; independent_overdraw_persists is a witness in the family (an independent formation can persist); and in jointly_consuming each drawer being renewing within renewal alone cannot be represented in the family, which merges the two drawers into one focal formation; the general split of each one's share is Becoming.Continuation's WithinOwn, WithinJoint, Pair.own_not_joint and joint_excess_ends."
       }
     }
   ],
@@ -142,8 +142,8 @@
     "zero-axiom-target-open"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 检查通过：35 项定理／60 项声明审计，公理集全空；编译 4 个应用例。同一回执也检查 RenewalComparison（计入 relational-reading-comparison）。把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与桥接模块 Becoming.RenewalBridge）经合并检查器回执 20261013T221720.428753Z 检查，公理报告为空。作者反审，无独立 agent 审查。",
-    "en": "Lean 4.29.1 check passed: 35 theorems / 60 declaration audits, every axiom set empty; 4 compiled application examples. The shared receipt also checks RenewalComparison (credited to relational-reading-comparison). The general laws and instance theorems connecting this result to the spine (Becoming.Continuation, bridge module Becoming.RenewalBridge) are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports. Author counterreview; no independent-agent review."
+    "zh": "Lean 4.29.1 检查通过：35 项定理／60 项声明审计，公理集全空；编译 4 个应用例。同一回执也检查 RenewalComparison（计入 relational-reading-comparison）。把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与 Becoming.RenewalFlow）经合并检查器检查，公理报告为空。作者反审，无独立 agent 审查。",
+    "en": "Lean 4.29.1 check passed: 35 theorems / 60 declaration audits, every axiom set empty; 4 compiled application examples. The shared receipt also checks RenewalComparison (credited to relational-reading-comparison). The general laws and instance theorems connecting this result to the spine (Becoming.Continuation, Becoming.RenewalFlow) are checked by the consolidated checker with empty axiom reports. Author counterreview; no independent-agent review."
   },
   "next_delta": {
     "zh": "在 becoming-return-grades、substitution-preserves-consumption 与 joint-difference-making 已承接的周期层面更新、条件间替代与共同消耗中的差别制造之外：多条件下的替代链及其损失；更精细的归属；为具体案例建立经验对应。",
@@ -240,7 +240,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "ce23f44709f9e0e00d55f1db5468a903ae46a3d761317c76c7dc747663f96fe3",
+      "sha256": "879544041d05a88778691dfa2810799df82b4917f47c92609544cfab89d3dbde",
       "declarations": [
         "Becoming.Flow.stays_below_at",
         "Becoming.Flow.ends_below_at",
@@ -251,9 +251,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
       "role": "proof",
-      "sha256": "f80c54a1b754fc6ffbd8ebf8605f82da28ffcd9ed079cbb456bbe34a022aadc4",
+      "sha256": "a8a951b4cd154ee0d1230a917ca8ebcd08740b2cdbcef3cb3aa7f5605cb7d935",
       "declarations": [
         "Becoming.SupportGated.flow",
         "Becoming.SupportGated.web",
@@ -306,6 +306,12 @@
       "role": "receipt",
       "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -318,15 +324,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalFlow",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -378,6 +384,10 @@
     },
     {
       "en": "17 October 2026, source reconciliation after language separation (commits cd34401a3, 87eb81f20, f4e5c354f): THEORY-OF-BECOMING.md now holds the English text, with the Chinese text in the sibling .zh.md edition (and, for compacted chapters, round logs moved verbatim to theories/becoming/history/); every earlier heading anchor is kept. The splitting agents and the integrator found no change to claims or their strength. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): the text names the core modules that now hold the declarations it cites (Becoming.Lifting, Becoming.EdgeClosure, Becoming.RenewalFlow). Declarations moved with their full Lean names, statements and proofs unchanged: flow, web, balances, givers_supported, below_for_good, ends_for_good, overdraw_ends, jointly_ends from RenewalBridge.lean to RenewalFlow.lean. Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠（Ren：“so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?”，然后“please do all”）：正文改为指名现在承载所引声明的核心模块（Becoming.Lifting、Becoming.EdgeClosure、Becoming.RenewalFlow）。声明连同完整 Lean 名称、陈述与证明原样移入核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

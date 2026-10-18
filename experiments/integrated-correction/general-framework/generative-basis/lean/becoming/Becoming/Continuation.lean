@@ -35,7 +35,7 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   Conversely a step of joint net giving raises the level by at least one (`net_give_raises_at`),
   and where the formations give jointly more than they take whenever the level is not below
   where it started, `m - level` steps bring it back to `m` (`restores`): the law of
-  restoration. `RelationalRenewal.Law`'s recovery is an instance (`Becoming.RenewalBridge`).
+  restoration. `RelationalRenewal.Law`'s recovery is an instance (`Becoming.RenewalFlow`).
 * **Renewal that depends on what it renews.** Where every formation giving to a condition
   depends on it at a need of at least `m`, only active formations give and activity needs
   support, a level below `m` stays below `m` at every later step (`stays_below`), and
@@ -49,7 +49,7 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   and all continue (`Alone.all_continue`).
   `RelationalRenewal.Law`'s loss of renewal for good, and the ending for good of each
   formation depending on its condition once the level is below its need, are instances
-  (`Becoming.RenewalBridge`).
+  (`Becoming.RenewalFlow`).
 * **What the derived extent does not reach.** Following the want counts what one's
   continuation depends on, and no more. In `Downstream` the self's continuation requires
   only its ground; a formation living on what the self gives ends when it stops giving,

@@ -5,10 +5,11 @@ import Becoming.Bridge
 
 `WholeGroundCoverage` and `CutCoverageAudit` state laws of the closure of seeds under edges, and
 `EvaluatorGrounding` of chains of small steps between profiles. `Becoming.Bridge` proves that
-these closures are reachability on the process whose steps are the edges (`reached_iff_closure`,
-`cutReach_iff_closure`, `chain_iff_reach`). This module reads the edges off a process: the edges
-of a process are its moves, one step under some label (`Moves`), and the closure of seeds under
-them is what the process reaches from a seed (`FromSeed`, `reached_iff`, `cutReach_iff`). A local
+the chains are reachability on the process whose steps are the edges (`chain_iff_reach`). This
+module reads the edges off a process: the edges of a process are its moves, one step under some
+label (`Moves`), and the closure of seeds under them is what the process reaches from a seed
+(`FromSeed`, `reached_iff`, `cutReach_iff`). At the edge process these are the seed–edge closure
+of `Becoming.EdgeClosure` (`reached_iff_closure`, `cutReach_iff_closure`). A local
 atlas of `WholeGroundCoverage` is a process whose labels are its scopes (`atlasProcess`, with one
 scope's edges alone as `scopeProcess`), and a family of atlases indexed by histories is a process
 on the positions of every history (`historyProcess`). The laws of the periphery modules are then
@@ -336,5 +337,19 @@ theorem reachable_living_significance (s : EvaluatorGrounding.Standpoint Gen Pro
 end Profiles
 
 end SeedReachProcesses
+
+/-- **The periphery's closure of seeds under edges is the seed–edge closure**: the edge process's
+moves are the edges, so this is `SeedReachProcesses.reached_iff` there. -/
+theorem reached_iff_closure {X : Type u} {seed : X → Prop} {edge : X → X → Prop} {x : X} :
+    WholeGroundCoverage.Reached seed edge x ↔ Closure seed edge x :=
+  SeedReachProcesses.reached_iff (P := edgeProcess edge)
+    (fun _ _ => ⟨fun e => ⟨(), e⟩, fun ⟨_, e⟩ => e⟩)
+
+/-- **The audit's closure of roots under edges is the seed–edge closure**, as
+`SeedReachProcesses.cutReach_iff` at the edge process. -/
+theorem cutReach_iff_closure {X : Type u} {seed : X → Prop} {edge : X → X → Prop} {x : X} :
+    UniversalEthics.CutCoverageAudit.Reach seed edge x ↔ Closure seed edge x :=
+  SeedReachProcesses.cutReach_iff (P := edgeProcess edge)
+    (fun _ _ => ⟨fun e => ⟨(), e⟩, fun ⟨_, e⟩ => e⟩)
 
 end Becoming

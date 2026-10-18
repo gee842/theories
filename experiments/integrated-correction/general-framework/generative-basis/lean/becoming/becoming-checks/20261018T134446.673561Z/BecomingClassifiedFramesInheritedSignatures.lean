@@ -1,0 +1,3 @@
+import Becoming.ClassifiedFramesInherited
+#check @Becoming.ClassifiedFramesInherited.frame_two_extremes_suffice
+#check @Becoming.ClassifiedFramesInherited.frame_strict_growth_robust

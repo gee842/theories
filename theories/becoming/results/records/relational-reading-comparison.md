@@ -89,6 +89,7 @@ Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 
 Aliases: `RenewalComparison.g0_relational`, `RenewalComparison.overdraw_relational_extension`, `RenewalComparison.overdraw_broad_incomparable`, `RenewalComparison.overdraw_comparison_ranks`, `RenewalComparison.broad_comparison_admits_overdraw`, `RenewalComparison.malignant_comparison`, `RenewalComparison.contest_comparison`, `Becoming.SupportGated.overdraw_extension`, `Becoming.SupportGated.contest_extensions`
 
@@ -104,6 +105,7 @@ Aliases: `RenewalComparison.g0_relational`, `RenewalComparison.overdraw_relation
 - Open-issues plan item 15 (Ren chose “includes”): a reading now includes an event, where it was said to credit it, a market word; the Lean names follow (old and new in the unification plan §10); zh 记入 unchanged.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Ranking.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (RenewalBridge.lean). The claim is unchanged.
 - 7 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](relational-reading-comparison.json).
 
 <a id="earlier-text--早期文本"></a>

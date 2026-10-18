@@ -235,6 +235,37 @@ None of these needs a board claim until Ren decides. Steps 1, 3 and 4 are Lean w
 - **Which periphery theorems have core counterparts under other names.** That is step 0.
 - **That any count after a step is checked.** The counts after each step are arithmetic on the receipt, not a run.
 
+## 7. What was done: F1
+
+Ren, 18 October 2026, after this study: "please do all" ([source](../../../../sources/15-codex-theory-conversations/2026-10-18-bridge-fold-do-all.md)). The AI made the five decisions of section 5 on the work's grounds; they are AI decisions, and the work, not Ren's words, is their warrant. Board item F1.
+
+**Decision 1: step 1 moves groups (a) to (d); group (e) stays in the bridge.** The repair process reaches no periphery constant, but its declarations would keep their names in the core (`RepairComparison.Repair`, `Life`, `Claim.backbone`, the episodes), and those names are an application's vocabulary, not the core's (naming rule, board rule 8). Its module also reads the episodes as basic losses, an application premise that would come into the core with it. What moved, with full Lean names, statements and proofs unchanged, into new core modules named by the core law:
+
+| Group | Core module | Theorems / other | From |
+|---|---|--:|---|
+| (a) the lifting rule L and `LiftModel` | `Becoming.Lifting` (imports `Becoming.Metaethics`) | 6 / 8 | `Bridge` |
+| (b) the seed–edge closure and `withinClosure_iff_closure` | `Becoming.EdgeClosure` (imports `Becoming.Feedback`) | 4 / 2 | `Bridge` |
+| (c) the support-gated family as a balanced flow | `Becoming.RenewalFlow` (imports `Becoming.Continuation`) | 21 / 4 | 15 of `RenewalBridge`, 6 of `SupportGatedWebs` |
+| (d) classified beliefs after observation | `Becoming.ClassifiedBeliefProcesses`, re-registered from `BRIDGE` to `CORE` | 3 / 0 | (no Lean edit) |
+
+The two existing core modules whose docstrings named the bridge for these declarations (`Becoming.Feedback`, `Becoming.Continuation`) now name the new modules; nothing else in them changed.
+
+**Step 2: no record called a bridge interface.** No record calls the kind-2 groups "bridge interfaces"; that label is the apart register's, and decision 5 changes it there. Four records name moved declarations by module in their text (`becoming-spine-instances`, `levels-of-closure`, `relational-renewal-classification`, `supported-renewal-recovery`) and now name the core module; every record listing a moved declaration lists it under its new source and is bound to the F1 receipt ([`rebind_f1.py`](development/bridge-fold/rebind_f1.py), [`apply_text_f1.py`](development/bridge-fold/apply_text_f1.py)). Records whose bindings were already stale in files the fold leaves alone are left as they were; records citing a changed file (the chapter, its Chinese edition, the reference, the package README, `Bridge.lean`, `Feedback.lean`, `Continuation.lean`, `RenewalBridge.lean`) are re-pointed or rebound only where they matched it at base, each with a history note saying what changed.
+
+**Step 4: the two duplications fold, proofs only.** `reached_iff_closure` and `cutReach_iff_closure` move from `Bridge` into `SeedReachProcesses` as corollaries of `reached_iff` and `cutReach_iff` at the edge process (`SeedReachProcesses` imports `Bridge`, so they could not stay in `Bridge` and use it). `diamond_correct_iff_em`'s converse is now the core's `Recipe.holds_after_iff_em` read through the encodings: every frame is a model's, every recipe a program's (`Recipe.ofProgram_toProgram`) and every branching test a test's (`BranchingTest.ofTest_toTest`). That use joins `Recipe.ofProgram_toProgram` to the rest, so it leaves the apart register. No renaming sweep. The chapter's count row reports the bridges and the joins apart.
+
+**Decision 3: the count row reports bridges and joins apart.** Bridges and joins differ in kind: the joins are the connectivity measure's adapters, not interfaces.
+
+**Decision 5: the register's categories.** A category `calibration` holds the two calibrations of classification-robust comparison (`classification_robust_iff_iff_em`, `two_extremes_suffice_of_em`): they state the exact logical principle a criterion needs, for a comparison the core does not assert, not an equivalence of interfaces. `support` is widened to a one-line unpacking of a module's own definitions, and `Becoming.Ranking.active_of_renewed` moves there ([`register_f1.py`](development/bridge-fold/register_f1.py)).
+
+**Decisions 2 and 4: step 3 follows step 0.** Step 0, the restatement audit, runs as its own session; step 3 retires only a periphery module that step 0 finds fully restated and that nothing live imports. Decision 2: such a module is marked superseded in place, not moved to `history/`. Its path and bytes stay (board rule 8), old receipts bind it by path and sha256 and stay re-checkable, and the module is not superseded material in the sense of a draft: it is a checked proof whose content the core now states.
+
+**Step 3: what step 0 found.** The [restatement audit](development/bridge-fold/RESTATEMENT-AUDIT.md) finds one of the twenty leaf periphery modules fully restated: `ExplanatoryResiduals`, all thirteen theorems stated by `Becoming.Granularity` (eleven as they stand, two with excluded middle named). It is not retired: its importer `deeper/ExplanatoryResumptionCases.lean` is live outside the run, an earlier version whose witnesses `Becoming.Midway` restates. So step 3 marks it superseded in place and nothing more: the record [`residual-continuation-correspondence`](../../../../theories/becoming/results/records/residual-continuation-correspondence.json) takes `Becoming/Granularity.lean` as its canonical source and keeps both periphery files as the earlier statement ([`step3_f1.py`](development/bridge-fold/step3_f1.py)); `GranularityBridge` keeps its readings of the module in the run. The near misses (`BecomingCompatibility`, `CutCoverageAudit`, small definitional gaps) get no new lemmas: a lemma written only to retire a file is not a result.
+
+**Counts.** Core receipt `20261018T134446.673561Z`, checked on main cedeecfb0 with F1 in the working tree, passed with an empty core axiom report. The core has 188 modules (counting the root `Becoming`) and 7,720 theorems, 191 modules and 7,794 theorems in the closure with the foundation (184 and 7,686 before); the bridges 8 modules and 269 theorems, the pure joins 30 and 298 (39 and 601 together before); the spine keeps 8,287 theorems. The [connectivity measure](THEOREM-CONNECTIVITY.md) counts 175 of them apart from both base families (177 before). 92 records changed: 31 declaration listings moved to their new source, 45 records rebound to the F1 receipt, the rest re-pointed after reading the chapter's change.
+
+**What this does not change.** No statement and no proof's content changed, and no result is added: a move, a re-registration and two proofs that now cite the law they repeated. The bridge keeps 269 theorems in eight modules and the joins 298 in thirty, about two thirds of them adapters, which the core's purity requires while the periphery stays live.
+
 ## Appendix: every declaration by module and kind
 
 ° marks a declaration that is not a theorem, † one that reaches no periphery constant (movable). Within a module, names drop the module's own namespace.

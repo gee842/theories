@@ -102,6 +102,7 @@ Ren's proposal says “all above does not require any axiom” and that the one 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 
 Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becoming.Mortal.without_continues`, `Becoming.Clearing.undermines_within_renewal`, `Becoming.Flow.FedBy`, `Becoming.Clearing.fedBy_source`, `Becoming.Clearing.clearer_not_living`, `Becoming.Clearing.center_not_derived`
 
@@ -121,6 +122,7 @@ Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becomi
 - 17 October 2026, wording of the public fields: outdated labels (G0, S0, N_std) replaced by the current vocabulary (living significance, self-significance, standpoint neutrality); “given by Ren's answer” replaced by marking the level of harm as a reading, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Standpoints.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
+- 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.
 - 51 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-extent-limits.json).
 
 <a id="earlier-text--早期文本"></a>

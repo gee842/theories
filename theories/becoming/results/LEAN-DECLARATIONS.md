@@ -12,8 +12,8 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 187 | 7,760 |
-| [Becoming bridge](lean-declarations/becoming-bridge.md) | 39 | 601 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 191 | 7,794 |
+| [Becoming bridge](lean-declarations/becoming-bridge.md) | 38 | 567 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 71 | 1,864 |
@@ -111,7 +111,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ClaimLedger.lean](lean-declarations/shared.md#module-970e18466304) | Organizational formation through revisable evaluation |
 | [ClassificationRevision.lean](lean-declarations/ethics.md#module-38dae45bdd62) | Normative grounding and generative direction |
 | [ClassificationRobustJudgment.lean](lean-declarations/ethics.md#module-6d2ff915d8b9) | Normative grounding and generative direction |
-| [ClassifiedBeliefProcesses.lean](lean-declarations/becoming-bridge.md#module-0274c995e9a4) | Becoming bridge |
+| [ClassifiedBeliefProcesses.lean](lean-declarations/becoming-core.md#module-0274c995e9a4) | Becoming pure core |
 | [ClassifiedFramesInherited.lean](lean-declarations/core.md#module-bdef73602a12) | Generative core and relational structure |
 | [ClosedLoopAudit.lean](lean-declarations/valuation.md#module-a5bbd3ef7a72) | Valuation development and liangzhi |
 | [ClosedLoopValuation.lean](lean-declarations/valuation.md#module-c43d59d00448) | Valuation development and liangzhi |
@@ -239,6 +239,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [DynamicConsequences.lean](lean-declarations/core.md#module-bf65a1ee68e5) | Generative core and relational structure |
 | [DynamicSymmetry.lean](lean-declarations/core.md#module-d33bc0ead9a9) | Generative core and relational structure |
 | [DynamicUnderdetermination.lean](lean-declarations/core.md#module-9120ff48313a) | Generative core and relational structure |
+| [EdgeClosure.lean](lean-declarations/becoming-core.md#module-8b1ca5da1360) | Becoming pure core |
 | [EffectiveCommand.lean](lean-declarations/ethics.md#module-9940a4c4d9be) | Normative grounding and generative direction |
 | [EmbeddedEvaluation.lean](lean-declarations/core.md#module-ce2fc7445eba) | Generative core and relational structure |
 | [EmbodiedChoiceScales.lean](lean-declarations/learning.md#module-6883a5aecb08) | Learning, prediction and dynamics |
@@ -470,6 +471,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [LevelCoupling.lean](lean-declarations/becoming-core.md#module-41d793a8ed35) | Becoming pure core |
 | [LevelWebs.lean](lean-declarations/becoming-core.md#module-b2bdcc78226b) | Becoming pure core |
 | [LifecycleCorrespondence.lean](lean-declarations/ethics.md#module-5beb4a64d4f6) | Normative grounding and generative direction |
+| [Lifting.lean](lean-declarations/becoming-core.md#module-d94bf165cf48) | Becoming pure core |
 | [Likeness.lean](lean-declarations/becoming-core.md#module-b00054b2fe2f) | Becoming pure core |
 | [LineageAudit.lean](lean-declarations/valuation.md#module-7d1b924b40d2) | Valuation development and liangzhi |
 | [LineageInProcess.lean](lean-declarations/valuation.md#module-45b450e65721) | Valuation development and liangzhi |
@@ -698,6 +700,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [RenewalComparison.lean](lean-declarations/core.md#module-72003943725b) | Generative core and relational structure |
 | [RenewalConfigurations.lean](lean-declarations/renewal.md#module-a218916039de) | Support and renewal |
 | [RenewalExamples.lean](lean-declarations/renewal.md#module-87b5bd85fd55) | Support and renewal |
+| [RenewalFlow.lean](lean-declarations/becoming-core.md#module-79f01dc1b7c2) | Becoming pure core |
 | [RenewalLedger.lean](lean-declarations/shared.md#module-46a3e9d8b95a) | Organizational formation through revisable evaluation |
 | [RenewalLink.lean](lean-declarations/renewal.md#module-28c0ce8386f8) | Support and renewal |
 | [RenewalLiquidity.lean](lean-declarations/shared.md#module-a8de4892aa41) | Organizational formation through revisable evaluation |

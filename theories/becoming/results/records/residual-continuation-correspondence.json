@@ -27,6 +27,14 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (GranularityBridge.lean: the fold). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold, step 3 (Ren: \"please do all\"): the restatement audit of step 0 (development/bridge-fold/RESTATEMENT-AUDIT.md) found ExplanatoryResiduals fully restated by Becoming.Granularity, and its importer ExplanatoryResumptionCases an earlier version whose witnesses Becoming.Midway restates. The canonical source is now the core module; both periphery files keep their path and bytes and stay cited as the earlier statement. The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠第 3 步（Ren：“please do all”）：第 0 步的重述审计（development/bridge-fold/RESTATEMENT-AUDIT.md）查明 ExplanatoryResiduals 已由 Becoming.Granularity 完整重述，导入它的 ExplanatoryResumptionCases 是较早版本，其见证由 Becoming.Midway 重述。规范来源改为核心模块；两个外围文件保留路径与字节，仍作为较早的陈述被引用。论断不变。"
     }
   ],
   "validation_scope": {
@@ -38,7 +46,7 @@
     "zh": "保留余项的部分展开与真实位置接续",
     "en": "Partial unfolding with residuals and resumption at reached positions"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
   "aliases": [
     "Generative.ExplanatoryResiduals.partial_history_matches",
     "Generative.ExplanatoryResiduals.execution_iff_completed_cut",
@@ -220,7 +228,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean",
       "role": "proof",
-      "sha256": "577db2868e40cb2a51ed5aae50eabb43338c69443724964b8f62dad657fb248c",
+      "sha256": "8c805b15a718c04fb407a5a7f5956a64114c7b1957d4eafc89bd49c377b32ae1",
       "declarations": [
         "Becoming.Recipe.advance_ofProgram",
         "Becoming.Recipe.Advance.toProgram",

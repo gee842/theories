@@ -112,8 +112,8 @@
     "zero-axiom-target-open"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 实查 9 项新定理声明／10 项新声明审计，4 空、6 仅标准依赖（propext、Quot.sound）；继承 35 项定理／60 项空审计另列，共 70 项审计、64 空。冻结成功回执绑定双模块源码、检查器、签名及日志。把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与桥接模块 Becoming.RenewalBridge）经合并检查器回执 20261013T221720.428753Z 检查，公理报告为空。作者反审，无独立代理或经验验收。",
-    "en": "Lean 4.29.1 checks nine new theorem declarations / ten declaration audits: four empty, six using only standard dependencies (propext, Quot.sound); 35 inherited theorems / 60 empty audits credited separately (total 70, 64 empty). The frozen successful receipt binds both module sources, checker, signatures and logs. The general laws and instances connecting this result to the spine (Becoming.Continuation, bridge module Becoming.RenewalBridge) are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports. Author counterreview; no independent-agent or empirical acceptance."
+    "zh": "Lean 4.29.1 实查 9 项新定理声明／10 项新声明审计，4 空、6 仅标准依赖（propext、Quot.sound）；继承 35 项定理／60 项空审计另列，共 70 项审计、64 空。冻结成功回执绑定双模块源码、检查器、签名及日志。把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与 Becoming.RenewalFlow）经合并检查器检查，公理报告为空。作者反审，无独立代理或经验验收。",
+    "en": "Lean 4.29.1 checks nine new theorem declarations / ten declaration audits: four empty, six using only standard dependencies (propext, Quot.sound); 35 inherited theorems / 60 empty audits credited separately (total 70, 64 empty). The frozen successful receipt binds both module sources, checker, signatures and logs. The general laws and instances connecting this result to the spine (Becoming.Continuation, Becoming.RenewalFlow) are checked by the consolidated checker with empty axiom reports. Author counterreview; no independent-agent or empirical acceptance."
   },
   "next_delta": {
     "zh": "把有限修复接口接入关系怎样变化的共同构成论证；保留足够的既有规律解释作为竞争说明，不以另一局部例子替代完整目标。",
@@ -229,7 +229,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "ce23f44709f9e0e00d55f1db5468a903ae46a3d761317c76c7dc747663f96fe3",
+      "sha256": "879544041d05a88778691dfa2810799df82b4917f47c92609544cfab89d3dbde",
       "declarations": [
         "Becoming.Flow.net_give_raises_at",
         "Becoming.Flow.net_give_bounded_at",
@@ -240,7 +240,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
       "role": "proof",
-      "sha256": "f80c54a1b754fc6ffbd8ebf8605f82da28ffcd9ed079cbb456bbe34a022aadc4",
+      "sha256": "ae3569b0dcb912f605231c5d903f188480158c35c552bb4cba9ee668be187cf7",
+      "declarations": [
+        "Becoming.SupportGated.pulse_restores"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
+      "role": "proof",
+      "sha256": "a8a951b4cd154ee0d1230a917ca8ebcd08740b2cdbcef3cb3aa7f5605cb7d935",
       "declarations": [
         "Becoming.SupportGated.renewal",
         "Becoming.SupportGated.netGive",
@@ -248,8 +256,7 @@
         "Becoming.SupportGated.web",
         "Becoming.SupportGated.balances",
         "Becoming.SupportGated.netGive_step",
-        "Becoming.SupportGated.repair_restores",
-        "Becoming.SupportGated.pulse_restores"
+        "Becoming.SupportGated.repair_restores"
       ]
     },
     {
@@ -262,6 +269,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "role": "receipt",
       "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
     }
   ],
@@ -282,15 +295,22 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalFlow",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -340,6 +360,10 @@
     },
     {
       "en": "17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): the text names the core modules that now hold the declarations it cites (Becoming.Lifting, Becoming.EdgeClosure, Becoming.RenewalFlow). Declarations moved with their full Lean names, statements and proofs unchanged: renewal, netGive, flow, web, balances, netGive_step, repair_restores from RenewalBridge.lean to RenewalFlow.lean. Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean, RenewalBridge.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠（Ren：“so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?”，然后“please do all”）：正文改为指名现在承载所引声明的核心模块（Becoming.Lifting、Becoming.EdgeClosure、Becoming.RenewalFlow）。声明连同完整 Lean 名称、陈述与证明原样移入核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

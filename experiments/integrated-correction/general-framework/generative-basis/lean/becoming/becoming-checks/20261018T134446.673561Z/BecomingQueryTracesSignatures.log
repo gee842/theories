@@ -1,0 +1,66 @@
+Becoming.QueryTraces.lesson_foldl : ∀ (es : List Generative.CompositionalAcquisition.Expr)
+  (x : Generative.CompositionalTransmission.Exchange),
+  Generative.CompositionalTransmission.lesson es x = List.foldl Becoming.QueryTraces.deliver x es
+Becoming.QueryTraces.lesson_trace : ∀ (es : List Generative.CompositionalAcquisition.Expr)
+  (x : Generative.CompositionalTransmission.Exchange),
+  Generative.Trace Becoming.QueryTraces.queryProcess x es (Generative.CompositionalTransmission.lesson es x)
+@Becoming.QueryTraces.trace_iff : ∀ {x y : Generative.CompositionalTransmission.Exchange}
+  {es : List Generative.CompositionalAcquisition.Expr},
+  Generative.Trace Becoming.QueryTraces.queryProcess x es y ↔ y = Generative.CompositionalTransmission.lesson es x
+@Becoming.QueryTraces.course_records_follow_sender : ∀ {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      { sender := Generative.CompositionalTransmission.source Generative.CompositionalTransmission.selective 7,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.basic y →
+    y.receiver.samples =
+        Generative.CompositionalTransmission.programRecords Generative.CompositionalTransmission.selective ∧
+      Generative.CompositionalTransmission.programRecords Generative.CompositionalTransmission.selective ≠
+        Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual
+@Becoming.QueryTraces.basic_course_records : ∀ {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 7,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.basic y →
+    y.receiver.samples = Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed
+@Becoming.QueryTraces.course_record_fits_departing_operation : ∀ {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 7,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.basic y →
+    Generative.CompositionalFormation.fits Generative.CompositionalFormation.duplicated y.receiver.samples = true ∧
+      Generative.CompositionalFormation.operate Generative.CompositionalFormation.duplicated
+          Generative.CompositionalAcquisition.novel ≠
+        Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+          Generative.CompositionalAcquisition.novel
+@Becoming.QueryTraces.extended_course_records : ∀ {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.extended y →
+    y.receiver.samples =
+      Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed ++
+        [(Generative.CompositionalAcquisition.novel,
+            Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+              Generative.CompositionalAcquisition.novel)]
+@Becoming.QueryTraces.extended_course_separates_operations : ∀ {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.extended y →
+    Generative.CompositionalFormation.fits Generative.CompositionalFormation.duplicated y.receiver.samples = false ∧
+      Generative.CompositionalFormation.fits
+          (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed)
+          y.receiver.samples =
+        true

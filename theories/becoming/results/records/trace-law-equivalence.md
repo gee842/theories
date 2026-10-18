@@ -61,6 +61,7 @@ Boundary source: [DynamicConsequences.lean](../../../../experiments/integrated-c
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -82,4 +83,5 @@ Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.l
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Unfolding.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean, Unfolding.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
+- 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-16): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](trace-law-equivalence.json).

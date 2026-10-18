@@ -29,8 +29,8 @@
       ]
     },
     {
-      "zh": "闭包本身封闭，所以是含 f 的最小封闭区域；它恰是 Becoming.Bridge 中从 f 这一个种子出发的种子—边闭包。",
-      "en": "The closure is itself closed, so it is the least closed region holding f; it is exactly the seed–edge closure of Becoming.Bridge from the one seed f.",
+      "zh": "闭包本身封闭，所以是含 f 的最小封闭区域；它恰是 Becoming.EdgeClosure 中从 f 这一个种子出发的种子—边闭包。",
+      "en": "The closure is itself closed, so it is the least closed region holding f; it is exactly the seed–edge closure of Becoming.EdgeClosure from the one seed f.",
       "declarations": [
         "Becoming.closedUnder_withinClosure",
         "Becoming.withinClosure_iff_closure",
@@ -185,8 +185,8 @@
     "significance-related-not-asserted"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Bridge 与 Continuation 的当前字节绑定回执 20261014T141427.442103Z）：Becoming.Feedback 的定理与 Bridge 的闭包适配（不另计为独立成果）公理报告为空；检查器并核对核心纯净。较早回执以旧名检查了同一陈述。作者反审见整合文档；整合之前经第十六次独立审查，其处理之后的文本尚未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Bridge and Becoming.Continuation bound to receipt 20261014T141427.442103Z): the theorems of Becoming.Feedback and the closure adapter of Becoming.Bridge, not an independent result, have empty axiom reports; core purity verified. Earlier receipts checked the same statements under former names. Author counterreview in the integration note; the sixteenth independent review read it before integration, and the text after its treatment is not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Feedback、EdgeClosure 与 Continuation 的当前字节绑定参考中最新的回执）：Becoming.Feedback 与 Becoming.EdgeClosure 的定理公理报告为空；检查器并核对核心纯净。较早回执以旧名检查了同一陈述。作者反审见整合文档；整合之前经第十六次独立审查，其处理之后的文本尚未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Feedback, Becoming.EdgeClosure and Becoming.Continuation bound to the latest receipt in the references): the theorems of Becoming.Feedback and Becoming.EdgeClosure have empty axiom reports; core purity verified. Earlier receipts checked the same statements under former names. Author counterreview in the integration note; the sixteenth independent review read it before integration, and the text after its treatment is not yet independently reviewed."
   },
   "next_delta": {
     "zh": "给出按步的闭包（差别的时间路线见 how-much-difference-arrives）。",
@@ -317,8 +317,8 @@
       "id": "becoming-spine-instances",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Becoming.Bridge 的种子—边闭包 Closure；闭包与之等价（withinClosure_iff_closure，在桥接中）。",
-        "en": "Reuses Becoming.Bridge's seed–edge closure Closure; the closure is equivalent to it (withinClosure_iff_closure, in the bridge)."
+        "zh": "复用核心的种子—边闭包 Closure（Becoming.EdgeClosure）；闭包与之等价（withinClosure_iff_closure）。",
+        "en": "Reuses the core's seed–edge closure Closure (Becoming.EdgeClosure); the closure is equivalent to it (withinClosure_iff_closure)."
       },
       "interface": {
         "output": {
@@ -333,7 +333,7 @@
           "zh": "无。",
           "en": "None."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/EdgeClosure.lean"
       }
     }
   ],
@@ -364,7 +364,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "81f1b15ca32e8e87f0811d241ae09b678ead9175333a3964fd106bcb730af71d",
+      "sha256": "34bd0630b4d334ad07c88d57c86ff4dfae7ba8d0b824ae8768f24709aab4c593",
       "declarations": [
         "Becoming.ClosedUnder",
         "Becoming.WithinClosure",
@@ -420,9 +420,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/EdgeClosure.lean",
       "role": "proof",
-      "sha256": "3d09685321ea089a49803ae27cc746ca0275d34079b3e898847442030bb6d6f7",
+      "sha256": "9a54b3741601f61fcb9072673a7c876b696f193550fbb70284434b5dc7dc67a7",
       "declarations": [
         "Becoming.withinClosure_iff_closure",
         "Becoming.Closure"
@@ -458,7 +458,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "ce23f44709f9e0e00d55f1db5468a903ae46a3d761317c76c7dc747663f96fe3",
+      "sha256": "879544041d05a88778691dfa2810799df82b4917f47c92609544cfab89d3dbde",
       "declarations": [
         "Becoming.Clearing.flow",
         "Becoming.Clearing.web"
@@ -477,7 +477,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "35bfc7365ed757531a0f4ffe614cabc4124fae0240e2b08ac4ddefe7bac68efa"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -529,20 +529,19 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "role": "receipt",
+      "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -569,8 +568,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/EdgeClosure.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.EdgeClosure",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -810,6 +816,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Feedback.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): the text names the core modules that now hold the declarations it cites (Becoming.Lifting, Becoming.EdgeClosure, Becoming.RenewalFlow). Declarations moved with their full Lean names, statements and proofs unchanged: withinClosure_iff_closure, Closure from Bridge.lean to EdgeClosure.lean. Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean, Feedback.lean). The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed after reading the change: the reference was already stale at base, where the checker found no change in the sections this record cites; F1 changes section 2's closure sentence, which states this record's closure and now names Becoming.EdgeClosure.",
+      "zh": "2026年10月18日，F1 桥接折叠（Ren：“so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?”，然后“please do all”）：正文改为指名现在承载所引声明的核心模块（Becoming.Lifting、Becoming.EdgeClosure、Becoming.RenewalFlow）。声明连同完整 Lean 名称、陈述与证明原样移入核心模块；读过改动后重新绑定或重新指向。论断不变。THE-THEORY-OF-BECOMING.md 读过改动后重新指向：第 2 节的闭包句改为指名 Becoming.EdgeClosure。"
     }
   ],
   "text_versions": [

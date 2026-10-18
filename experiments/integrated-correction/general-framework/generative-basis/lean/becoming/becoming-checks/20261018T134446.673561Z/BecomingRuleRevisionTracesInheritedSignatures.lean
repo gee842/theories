@@ -1,0 +1,3 @@
+import Becoming.RuleRevisionTracesInherited
+#check @Becoming.RuleRevisionTracesInherited.fails_forever
+#check @Becoming.RuleRevisionTracesInherited.resets_remaining

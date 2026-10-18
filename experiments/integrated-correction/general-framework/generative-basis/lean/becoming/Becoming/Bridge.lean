@@ -39,10 +39,9 @@ imports none of these modules; the dependency runs from them to the core.
   so is the whole-run reading of courses in `Becoming.Ranking`, with the same
   undisturbed levels.
   J1/J2 on configurations, `BetterAt`, is `PracticalJudgment.Better`.
-* Seed–edge closures (`WholeGroundCoverage.Reached`, `CutCoverageAudit.Reach`)
-  and finite chains (`EvaluatorGrounding.Chain`) are reachability on the process
-  whose steps are the edges. The core's closure under a relation (`WithinClosure`,
-  `Becoming.Feedback`) is the seed–edge closure from one seed.
+* Finite chains (`EvaluatorGrounding.Chain`) are reachability on the process whose
+  steps are the edges (`Becoming.EdgeClosure`); so are the seed–edge closures
+  (`WholeGroundCoverage.Reached`, `CutCoverageAudit.Reach`), by `Becoming.SeedReachProcesses`.
 * Joint-continuation spaces are the configurations reachable in a frame; their
   faithful transports are the core's `trace_map` and `trace_lift`.
 * `PracticalJudgment.Robust` is `CommonResponse`; `PracticalReach.Guarantees` is
@@ -50,10 +49,8 @@ imports none of these modules; the dependency runs from them to the core.
   observation; `CorrectionInfrastructure.LiveStep` is `Enabled`.
 * `GenerativeComparison.Situation` realizes each option functionally. On a frame
   a response may have several outcomes, so comparing responses needs the lifting
-  rule L. The functional articulation is exactly the deterministic case of the
-  lifted one, and the lifted comparison, reason and selection results hold for
-  every frame. Two countermodels show that the choice of lifting rule is
-  substantive and that transitivity needs a live middle response.
+  rule L (`Becoming.Lifting`, with its two countermodels). The functional
+  articulation is exactly the deterministic case of the lifted one.
 * Under the continuation condition of `Becoming.Significance`, `GenerativeComparison.G0` holds for
   every inventory with positive relevance read from significance, which on a frame's
   inventory is the core's `Frame.relevance`. The periphery's theorems taking living significance as a
@@ -165,61 +162,6 @@ open Generative Generative.InquirySufficiency
 universe u v w
 
 /-! ## Seed–edge closures are reachability -/
-
-/-- A one-label process whose steps are the given edges. -/
-def edgeProcess {X : Type u} (edge : X → X → Prop) : Process X Unit :=
-  ⟨fun x _ y => edge x y⟩
-
-/-- Everything reached from a seed along edges. -/
-def Closure {X : Type u} (seed : X → Prop) (edge : X → X → Prop) (x : X) : Prop :=
-  ∃ p, seed p ∧ Reach (edgeProcess edge) p x
-
-namespace Closure
-
-variable {X : Type u} {seed : X → Prop} {edge : X → X → Prop}
-
-theorem base {x : X} (held : seed x) : Closure seed edge x :=
-  ⟨x, held, Reach.refl _ _⟩
-
-theorem step {x y : X} : Closure seed edge x → edge x y → Closure seed edge y
-  | ⟨p, held, path⟩, e => ⟨p, held, path.trans (Reach.of_step (a := ()) e)⟩
-
-/-- Any property holding at seeds and preserved along edges holds on the closure. -/
-theorem induction {motive : X → Prop} (start : ∀ x, seed x → motive x)
-    (carry : ∀ x y, motive x → edge x y → motive y) {x : X} :
-    Closure seed edge x → motive x
-  | ⟨p, held, path⟩ =>
-    Invariant.reach (P := edgeProcess edge) (fun x _ y e m => carry x y m e) path (start p held)
-
-end Closure
-
-theorem reached_iff_closure {X : Type u} {seed : X → Prop} {edge : X → X → Prop} {x : X} :
-    WholeGroundCoverage.Reached seed edge x ↔ Closure seed edge x := by
-  constructor
-  · intro h
-    induction h with
-    | seed held => exact Closure.base held
-    | step _ e ih => exact ih.step e
-  · exact Closure.induction (fun _ held => .seed held) (fun _ _ r e => .step r e)
-
-theorem cutReach_iff_closure {X : Type u} {seed : X → Prop} {edge : X → X → Prop} {x : X} :
-    UniversalEthics.CutCoverageAudit.Reach seed edge x ↔ Closure seed edge x := by
-  constructor
-  · intro h
-    induction h with
-    | root held => exact Closure.base held
-    | step _ e ih => exact ih.step e
-  · exact Closure.induction (fun _ held => .root held) (fun _ _ r e => .step r e)
-
-/-- The core's closure under a relation, what lies in every region closed under it that holds a
-formation (`Becoming.Feedback`), is the seed–edge closure from that formation alone. -/
-theorem withinClosure_iff_closure {X : Type} {rel : X → X → Prop} {f g : X} :
-    WithinClosure rel f g ↔ Closure (fun x => x = f) rel g :=
-  ⟨fun within => within (Closure (fun x => x = f) rel) (fun _ _ held e => held.step e)
-      (Closure.base rfl),
-   Closure.induction (motive := WithinClosure rel f)
-      (fun x (same : x = f) => same.symm ▸ WithinClosure.refl f)
-      (fun _ _ within e => within.trans (WithinClosure.of_rel e))⟩
 
 theorem chain_iff_reach {X : Type} {step : X → X → Prop} {p q : X} :
     EvaluatorGrounding.Chain step p q ↔ Reach (edgeProcess step) p q := by
@@ -581,54 +523,6 @@ open GenerativeComparison
 
 variable {S A C : Type}
 
-/-- Every outcome of `b` generatively extends every outcome of `a`. -/
-def LiftExtension (F : Frame S A C) (living : C → Prop) (s : S) (a b : A) : Prop :=
-  ∀ t, F.P.step s a t → ∀ t', F.P.step s b t' → Extension F living t t'
-
-/-- C lifts: a lifted extension is a conservative lifted comparison. `Better first
-second` follows `GenerativeComparison`: the second is better. -/
-theorem comparison_lifts {F : Frame S A C} {living : C → Prop} {Better : S → S → Prop}
-    (comparison : Comparison F living Better) {s : S} {a b : A}
-    (extension : LiftExtension F living s a b) : LiftBetter F (fun x y => Better y x) s b a :=
-  fun t' ht' t ht => comparison t t' (extension t ht t' ht')
-
-/-- P with L: a lifted comparison between live responses supplies a reason to move. -/
-def LiftedArticulation (F : Frame S A C) (Better : S → S → Prop) (s : S)
-    (Reason : A → A → Prop) : Prop :=
-  ∀ a b, Enabled F.P s a → Enabled F.P s b → LiftBetter F (fun x y => Better y x) s b a →
-    Reason a b
-
-theorem lifted_comparison_supplies_reason {F : Frame S A C} {living : C → Prop}
-    {Better : S → S → Prop} {s : S} {Reason : A → A → Prop}
-    (comparison : Comparison F living Better) (practical : LiftedArticulation F Better s Reason)
-    {a b : A} (liveA : Enabled F.P s a) (liveB : Enabled F.P s b)
-    (extension : LiftExtension F living s a b) : Reason a b :=
-  practical a b liveA liveB (comparison_lifts comparison extension)
-
-/-- A live response no live response liftedly extends. -/
-def LiftSurvives (F : Frame S A C) (living : C → Prop) (s : S) (a : A) : Prop :=
-  Enabled F.P s a ∧ ∀ b, Enabled F.P s b → ¬ LiftExtension F living s a b
-
-/-- N with L: a selected response is live and liftedly dominated by no live one. -/
-def LiftCoherence (F : Frame S A C) (Better : S → S → Prop) (s : S)
-    (Selected : A → Prop) : Prop :=
-  ∀ a, Selected a → Enabled F.P s a ∧
-    ∀ b, Enabled F.P s b → ¬ LiftBetter F (fun x y => Better y x) s b a
-
-theorem lift_coherent_selection_survives {F : Frame S A C} {living : C → Prop}
-    {Better : S → S → Prop} {s : S} {Selected : A → Prop}
-    (comparison : Comparison F living Better) (coherence : LiftCoherence F Better s Selected)
-    {a : A} (selected : Selected a) : LiftSurvives F living s a :=
-  match coherence a selected with
-  | ⟨live, undominated⟩ =>
-    ⟨live, fun b liveB extension => undominated b liveB (comparison_lifts comparison extension)⟩
-
-theorem lift_continual_improvement_has_no_survivor {F : Frame S A C} {living : C → Prop}
-    {s : S} (improvement : ∀ a, Enabled F.P s a → ∃ b, Enabled F.P s b ∧ LiftExtension F living s a b)
-    (a : A) : ¬ LiftSurvives F living s a
-  | ⟨live, survives⟩ => match improvement a live with
-    | ⟨b, liveB, extension⟩ => survives b liveB extension
-
 /-- A functional situation as one frame step at a configuration. -/
 def situationProcess (situation : Situation S A) (s : S) : Process S A :=
   ⟨fun x a t => x = s ∧ situation.feasible a ∧ t = situation.realize a⟩
@@ -658,43 +552,6 @@ theorem articulation_iff_lifted (situation : Situation S A) (s : S) (realized : 
     lifted a b ((situation_enabled_iff situation s a).mpr fa)
       ((situation_enabled_iff situation s b).mpr fb)
       ((situation_lift_iff situation s realized (fun x y => Better y x) fb fa).mpr better)⟩
-
-namespace LiftModel
-
-inductive Act where
-  | low | high | mixed | dead
-
-/-- From configuration 0: `low` reaches 1, `high` 3, `mixed` 0 or 4, `dead` nothing.
-A larger configuration is better. -/
-def options : Nat → Act → Nat → Prop
-  | s, .low, t => s = 0 ∧ t = 1
-  | s, .high, t => s = 0 ∧ t = 3
-  | s, .mixed, t => s = 0 ∧ (t = 0 ∨ t = 4)
-  | _, .dead, _ => False
-
-def frame : Frame Nat Act Unit := ⟨⟨options⟩, fun _ _ => True⟩
-
-def larger (x y : Nat) : Prop := y < x
-
-/-- The lifting rule is substantive: a response with one better and one worse
-outcome is not comparable by the conservative rule, yet some outcome beats. -/
-theorem some_outcome_does_not_lift :
-    (∃ t t', frame.P.step 0 .mixed t ∧ frame.P.step 0 .high t' ∧ larger t t') ∧
-    ¬ LiftBetter frame larger 0 .mixed .high ∧ ¬ LiftBetter frame larger 0 .high .mixed :=
-  ⟨⟨4, 3, ⟨rfl, Or.inr rfl⟩, ⟨rfl, rfl⟩, Nat.lt_succ_self 3⟩,
-    fun lifted => Nat.not_lt_zero 3 (lifted 0 ⟨rfl, Or.inl rfl⟩ 3 ⟨rfl, rfl⟩),
-    fun lifted => Nat.lt_asymm (Nat.lt_succ_self 3) (lifted 3 ⟨rfl, rfl⟩ 4 ⟨rfl, Or.inr rfl⟩)⟩
-
-/-- Transitivity needs a live middle response: through a response with no outcome
-both lifted comparisons hold vacuously, while the composite fails. -/
-theorem lift_needs_live_middle :
-    LiftBetter frame larger 0 .low .dead ∧ LiftBetter frame larger 0 .dead .high ∧
-    ¬ LiftBetter frame larger 0 .low .high :=
-  ⟨fun _ _ _ never => (nomatch never), fun _ never => (nomatch never),
-    fun lifted => Nat.lt_asymm (lifted 1 ⟨rfl, rfl⟩ 3 ⟨rfl, rfl⟩)
-      (Nat.lt_trans (Nat.lt_succ_self 1) (Nat.lt_succ_self 2))⟩
-
-end LiftModel
 
 end Lifting
 

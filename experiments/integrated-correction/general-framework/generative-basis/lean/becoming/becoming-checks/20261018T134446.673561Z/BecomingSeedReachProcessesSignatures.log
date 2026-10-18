@@ -1,0 +1,113 @@
+@Becoming.SeedReachProcesses.reached_iff : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {edge : S → S → Prop},
+  (∀ (x y : S), edge x y ↔ Becoming.SeedReachProcesses.Moves P x y) →
+    ∀ {seed : S → Prop} {x : S}, WholeGroundCoverage.Reached seed edge x ↔ Becoming.SeedReachProcesses.FromSeed P seed x
+@Becoming.SeedReachProcesses.cutReach_iff : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {edge : S → S → Prop},
+  (∀ (x y : S), edge x y ↔ Becoming.SeedReachProcesses.Moves P x y) →
+    ∀ {seed : S → Prop} {x : S},
+      UniversalEthics.CutCoverageAudit.Reach seed edge x ↔ Becoming.SeedReachProcesses.FromSeed P seed x
+@Becoming.SeedReachProcesses.admissible_iff : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {seed I : S → Prop},
+  WholeGroundCoverage.Admissible seed (Becoming.SeedReachProcesses.Moves P) I ↔
+    (∀ (s : S), seed s → I s) ∧ Becoming.Invariant P I
+@Becoming.SeedReachProcesses.fromSeed_iff_invariant : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {seed : S → Prop} {p : S},
+  Becoming.SeedReachProcesses.FromSeed P seed p ↔
+    ∀ (I : S → Prop), (∀ (s : S), seed s → I s) → Becoming.Invariant P I → I p
+@Becoming.SeedReachProcesses.covers_iff_invariant : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {seed target : S → Prop},
+  (∀ (p : S), target p → Becoming.SeedReachProcesses.FromSeed P seed p) ↔
+    ∀ (I : S → Prop), (∀ (s : S), seed s → I s) → Becoming.Invariant P I → ∀ (p : S), target p → I p
+@Becoming.SeedReachProcesses.unreached_has_invariant : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {seed : S → Prop} {p : S},
+  ¬Becoming.SeedReachProcesses.FromSeed P seed p → ∃ I, (∀ (s : S), seed s → I s) ∧ Becoming.Invariant P I ∧ ¬I p
+@Becoming.SeedReachProcesses.substitute_seeds : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {seed seed' : S → Prop},
+  (∀ (p : S), seed' p → Becoming.SeedReachProcesses.FromSeed P seed p) →
+    ∀ {p : S}, Becoming.SeedReachProcesses.FromSeed P seed' p → Becoming.SeedReachProcesses.FromSeed P seed p
+@Becoming.SeedReachProcesses.joined_iff_moves : ∀ {Pos : Type u_1} {Sc : Type u_2}
+  (atlas : WholeGroundCoverage.LocalAtlas Pos Sc) (p q : Pos),
+  WholeGroundCoverage.JoinedEdge atlas p q ↔
+    Becoming.SeedReachProcesses.Moves (Becoming.SeedReachProcesses.atlasProcess atlas) p q
+@Becoming.SeedReachProcesses.scoped_iff_moves : ∀ {Pos : Type u_1} {Sc : Type u_2}
+  (atlas : WholeGroundCoverage.LocalAtlas Pos Sc) (i : Sc) (p q : Pos),
+  WholeGroundCoverage.ScopedEdge atlas i p q ↔
+    Becoming.SeedReachProcesses.Moves (Becoming.SeedReachProcesses.scopeProcess atlas i) p q
+@Becoming.SeedReachProcesses.scope_reach_in_atlas : ∀ {Pos : Type u_1} {Sc : Type u_2}
+  (atlas : WholeGroundCoverage.LocalAtlas Pos Sc) (i : Sc) {seed : Pos → Prop} {p : Pos},
+  Becoming.SeedReachProcesses.FromSeed (Becoming.SeedReachProcesses.scopeProcess atlas i) seed p →
+    Becoming.SeedReachProcesses.FromSeed (Becoming.SeedReachProcesses.atlasProcess atlas) seed p
+@Becoming.SeedReachProcesses.glued_on_reach : ∀ {Pos : Type u_1} {Sc : Type u_2}
+  {atlas : WholeGroundCoverage.LocalAtlas Pos Sc} {seed : Pos → Prop}
+  {Ground : (i : Sc) → { p // atlas.domain i p } → Prop},
+  WholeGroundCoverage.CompatibleGrounds atlas Ground →
+    (∀ (i : Sc) (p q : { p // atlas.domain i p }), atlas.edge i p q → Ground i p → Ground i q) →
+      (∀ (p : Pos), seed p → WholeGroundCoverage.GluedGround atlas Ground p) →
+        ∀ {p : Pos},
+          Becoming.SeedReachProcesses.FromSeed (Becoming.SeedReachProcesses.atlasProcess atlas) seed p →
+            WholeGroundCoverage.GluedGround atlas Ground p
+Becoming.SeedReachProcesses.alternating_beyond_scopes : Becoming.SeedReachProcesses.FromSeed
+    (Becoming.SeedReachProcesses.atlasProcess WholeGroundCoverage.alternatingAtlas) WholeGroundCoverage.firstSeed
+    WholeGroundCoverage.Place.finish ∧
+  ¬Becoming.SeedReachProcesses.FromSeed
+        (Becoming.SeedReachProcesses.scopeProcess WholeGroundCoverage.alternatingAtlas WholeGroundCoverage.Window.first)
+        WholeGroundCoverage.firstSeed WholeGroundCoverage.Place.finish ∧
+    ¬Becoming.SeedReachProcesses.FromSeed
+        (Becoming.SeedReachProcesses.scopeProcess WholeGroundCoverage.alternatingAtlas
+          WholeGroundCoverage.Window.second)
+        WholeGroundCoverage.firstSeed WholeGroundCoverage.Place.finish
+Becoming.SeedReachProcesses.unconnected_coverage_insufficient : (∀ (p : WholeGroundCoverage.Place),
+    ∃ i, WholeGroundCoverage.unconnectedAtlas.domain i p) ∧
+  (∃ p, WholeGroundCoverage.firstSeed p) ∧
+    ¬Becoming.SeedReachProcesses.FromSeed
+        (Becoming.SeedReachProcesses.atlasProcess WholeGroundCoverage.unconnectedAtlas) WholeGroundCoverage.firstSeed
+        WholeGroundCoverage.Place.finish
+@Becoming.SeedReachProcesses.history_iff_moves : ∀ {History : Type u_1} {Position : History → Type u_2}
+  {Scope : History → Type u_3} (atlas : (h : History) → WholeGroundCoverage.LocalAtlas (Position h) (Scope h))
+  (x y : Sigma Position),
+  WholeGroundCoverage.HistoryEdge atlas x y ↔
+    Becoming.SeedReachProcesses.Moves (Becoming.SeedReachProcesses.historyProcess atlas) x y
+@Becoming.SeedReachProcesses.history_reach_keeps : ∀ {History : Type u_1} {Position : History → Type u_2}
+  {Scope : History → Type u_3} {atlas : (h : History) → WholeGroundCoverage.LocalAtlas (Position h) (Scope h)}
+  {x y : Sigma Position}, Becoming.Reach (Becoming.SeedReachProcesses.historyProcess atlas) x y → x.fst = y.fst
+@Becoming.SeedReachProcesses.history_fromSeed_iff : ∀ {History : Type u_1} {Position : History → Type u_2}
+  {Scope : History → Type u_3} (atlas : (h : History) → WholeGroundCoverage.LocalAtlas (Position h) (Scope h))
+  (seed : Sigma Position → Prop) (h : History) (p : Position h),
+  Becoming.SeedReachProcesses.FromSeed (Becoming.SeedReachProcesses.historyProcess atlas) seed ⟨h, p⟩ ↔
+    Becoming.SeedReachProcesses.FromSeed (Becoming.SeedReachProcesses.atlasProcess (atlas h)) (fun q => seed ⟨h, q⟩) p
+@Becoming.SeedReachProcesses.history_sound_on_reach : ∀ {History : Type u_1} {Position : History → Type u_2}
+  {Scope : History → Type u_3} {atlas : (h : History) → WholeGroundCoverage.LocalAtlas (Position h) (Scope h)}
+  {seed : Sigma Position → Prop} {Reason : (h : History) → Position h → Prop},
+  (∀ (h : History) (p : Position h), seed ⟨h, p⟩ → Reason h p) →
+    (∀ (h : History), WholeGroundCoverage.LocalSound (atlas h) (Reason h)) →
+      ∀ {h : History} {p : Position h},
+        Becoming.SeedReachProcesses.FromSeed (Becoming.SeedReachProcesses.historyProcess atlas) seed ⟨h, p⟩ → Reason h p
+@Becoming.SeedReachProcesses.cut_iff_not_fromSeed : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {seed : S → Prop} {t : S},
+  UniversalEthics.CutCoverageAudit.HasCut seed (Becoming.SeedReachProcesses.Moves P) t ↔
+    ¬Becoming.SeedReachProcesses.FromSeed P seed t
+@Becoming.SeedReachProcesses.noCut_iff_fromSeed_of_decidable : ∀ {S : Type u_1} {A : Type u_2}
+  {P : Generative.Process S A} {seed : S → Prop} {t : S}
+  (decision : Decidable (Becoming.SeedReachProcesses.FromSeed P seed t)),
+  UniversalEthics.CutCoverageAudit.NoCut seed (Becoming.SeedReachProcesses.Moves P) t ↔
+    Becoming.SeedReachProcesses.FromSeed P seed t
+Becoming.SeedReachProcesses.upgrade_iff_dne : (∀ (S A : Type u_1) (P : Generative.Process S A) (seed : S → Prop)
+    (t : S),
+    UniversalEthics.CutCoverageAudit.NoCut seed (Becoming.SeedReachProcesses.Moves P) t →
+      Becoming.SeedReachProcesses.FromSeed P seed t) ↔
+  UniversalEthics.CutCoverageAudit.DoubleNegationElimination
+@Becoming.SeedReachProcesses.reachable_living_significance : ∀ {Gen Prof : Type}
+  (s : EvaluatorGrounding.Standpoint Gen Prof) (val : Prof → Prop) (step : Prof → Prof → Prop),
+  EvaluatorGrounding.Supervenes s val →
+    EvaluatorGrounding.SelfGood s →
+      EvaluatorGrounding.Tolerant val step →
+        (∀ (g' : Gen),
+            s.reach g' →
+              s.living g' →
+                ∃ g, s.own g ∧ s.living g ∧ Becoming.Reach (Becoming.edgeProcess step) (s.prof g) (s.prof g')) →
+          Becoming.G0 (Becoming.Frame.ofInventory (EvaluatorGrounding.reachableInventory s)) s.living fun x g => s.sig g
+@Becoming.reached_iff_closure : ∀ {X : Type u_1} {seed : X → Prop} {edge : X → X → Prop} {x : X},
+  WholeGroundCoverage.Reached seed edge x ↔ Becoming.Closure seed edge x
+@Becoming.cutReach_iff_closure : ∀ {X : Type u_1} {seed : X → Prop} {edge : X → X → Prop} {x : X},
+  UniversalEthics.CutCoverageAudit.Reach seed edge x ↔ Becoming.Closure seed edge x

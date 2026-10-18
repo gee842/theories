@@ -27,6 +27,10 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (GranularityBridge.lean: the fold). The claim is unchanged.",
+      "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "validation_scope": {
@@ -170,7 +174,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean",
       "role": "proof",
-      "sha256": "577db2868e40cb2a51ed5aae50eabb43338c69443724964b8f62dad657fb248c",
+      "sha256": "8c805b15a718c04fb407a5a7f5956a64114c7b1957d4eafc89bd49c377b32ae1",
       "declarations": [
         "Becoming.Recipe.ofProgram",
         "Becoming.Recipe.leads_ofProgram",

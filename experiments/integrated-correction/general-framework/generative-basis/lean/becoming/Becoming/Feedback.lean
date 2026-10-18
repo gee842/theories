@@ -18,8 +18,8 @@ enters only as a hypothesis of three witnesses.
   region holding the other holds it (`WithinClosure`). The closure is reflexive and transitive,
   grows with the relation, and is symmetric under a symmetric relation (`WithinClosure.refl`,
   `WithinClosure.trans`, `WithinClosure.mono`, `WithinClosure.symm`). It is what is reached from
-  the formation along the relation, the seed–edge closure of `Becoming.Bridge` from one seed
-  (`withinClosure_iff_closure` there). A region is a formation's closure exactly when it holds
+  the formation along the relation, the seed–edge closure of `Becoming.EdgeClosure` from one
+  seed (`withinClosure_iff_closure` there). A region is a formation's closure exactly when it holds
   the formation, is closed under the relation and lies within the closure, which a finite
   computation can certify (`closure_iff_certified`); a closed region holding one formation and
   not another separates their closures (`not_within_of_closed`).

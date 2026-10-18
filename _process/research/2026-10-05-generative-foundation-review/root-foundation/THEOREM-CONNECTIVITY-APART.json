@@ -1,14 +1,15 @@
 {
  "about": "Spine and periphery theorems that stand apart from the base by design (U, 17 October 2026; the periphery of the run, the foundation and the inherited modules the bridge imports, since U2). Each root (an apart theorem no other apart theorem uses) has a category and a reason; THEOREM-CONNECTIVITY.py --check fails where an apart root has none. The categories:",
  "categories": {
-  "support": "an arithmetic or list lemma, or a statement using only the prelude",
+  "support": "an arithmetic or list lemma, a statement using only the prelude, or a one-line unpacking of a module's own definitions",
   "logical-strength": "a statement about LPO, WLPO, LLPO, excluded middle or choice only",
   "model-witness": "a fact about one constructed model (a counterexample or example structure)",
   "restates": "it restates a law already stated on the base",
   "general-structure": "a law of every valuation or rule on any type; the base supplies no reading of its vocabulary",
   "bridge-interface": "an equivalence between an inherited periphery interface and a core concept (the bridge ring)",
   "axiom-dependent": "a periphery root whose own axiom report is not empty, so no join on the pure bridge can use it",
-  "periphery-scope": "a statement about a periphery module's own abstract interface with no evident reading as a process, run or world; the reason names the core concept the bridge identifies it with, or says there is none"
+  "periphery-scope": "a statement about a periphery module's own abstract interface with no evident reading as a process, run or world; the reason names the core concept the bridge identifies it with, or says there is none",
+  "calibration": "the exact logical principle (excluded middle, LPO, WLPO, choice) a stated criterion needs, for a notion the base does not assert; a lemma of the item that needs it"
  },
  "roots": {
   "Becoming.Apart.not_enough": {
@@ -248,8 +249,8 @@
   },
   "Becoming.Ranking.active_of_renewed": {
    "module": "Becoming.Ranking",
-   "category": "bridge-interface",
-   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+   "category": "support",
+   "reason": "a one-line unpacking of ActiveWhereSupported with Renewed in Becoming.Ranking, used by no Lean file; it mentions nothing outside the core, so it is no interface equivalence (fold study, section 3.1)"
   },
   "Becoming.Ranking.undisturbed_eq": {
    "module": "Becoming.Bridge",
@@ -258,11 +259,6 @@
   },
   "Becoming.Ranking.wholeRun_iff": {
    "module": "Becoming.Bridge",
-   "category": "bridge-interface",
-   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
-  },
-  "Becoming.Recipe.ofProgram_toProgram": {
-   "module": "Becoming.GranularityBridge",
    "category": "bridge-interface",
    "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
   },
@@ -438,8 +434,8 @@
   },
   "Becoming.classification_robust_iff_iff_em": {
    "module": "Becoming.Bridge",
-   "category": "bridge-interface",
-   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+   "category": "calibration",
+   "reason": "comparison under every classification of the fresh contents has its exact criterion, for every type, exactly under excluded middle; a calibration of the periphery's protection-first comparison (J1/J2), which the core does not assert (fold study, kind 2)"
   },
   "Becoming.complete_diagnosability_iff_by_core": {
    "module": "Becoming.Bridge",
@@ -593,8 +589,8 @@
   },
   "Becoming.two_extremes_suffice_of_em": {
    "module": "Becoming.Bridge",
-   "category": "bridge-interface",
-   "reason": "an equivalence between an inherited periphery interface and a core concept; this is the bridge ring's purpose, and the core side joins the base where its module does"
+   "category": "calibration",
+   "reason": "with excluded middle, the two extreme classifications decide comparison under every classification; the calibration's other half, about a commitment the core does not assert (fold study, kind 2)"
   },
   "Becoming.undominated_has_iff_em": {
    "module": "Becoming.Decidedness",
