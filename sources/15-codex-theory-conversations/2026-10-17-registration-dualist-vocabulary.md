@@ -74,3 +74,11 @@ After N5 (the renaming, `b84e722ea`) landed and the assistant reported it, Ren w
 > you have permission now, please see what else is there to do - keep pushing the frontier till finishing
 
 The assistant's reading, which Ren may correct: a standing go to take up open items of the chapter's programme (section 8.2) that no other session holds, claim each on the board, prove it, and land it through the queue, until the reachable items are done. The first is the gap for one's own act as a general theorem (board item G1). Items other sessions hold (the learning and seeking line, the prose reading pass) are left to them.
+
+## Ren's go for G4 (18 October 2026)
+
+After G3 (a law through a projection along one run, `55ee120c2`) landed, the assistant asked whether to claim the next item of section 8.2's row. Ren answered:
+
+> Yes: claim G4 on the board — the criterion along one run with Becoming.Testing's registration as the projection — and prove it in scratch while the queue runs.
+
+The assistant's reading: claim and prove G4 in scratch; landing follows the queue. Registration is now called coupling (`Web.AlikeThrough`), and since it is a relation rather than a projection, the criterion is stated up to a relation and coupling is taken as that relation.
