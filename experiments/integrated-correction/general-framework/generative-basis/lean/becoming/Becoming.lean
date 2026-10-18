@@ -221,6 +221,11 @@ import Becoming.Alternatives
 import Becoming.Bundles
 import Becoming.ActivationCapacity
 import Becoming.Narrowing
+import Becoming.PositiveGround
+import Becoming.ProfileReach
+import Becoming.RenewalBound
+import Becoming.Handoff
+import Becoming.RuleHandoff
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1162,6 +1167,28 @@ readings of the unfolding (`Becoming.Labelled`).
   exactly the fitting candidates; the answer procedure answers what the narrowed belief settles,
   safely and as the greatest safe answer; faithful acquisition answers correctly and re-encoding
   transports learning. Ported from `StandardsBridge` (F3J).
+* `Becoming.PositiveGround` (L4): certain positive ground with open future form: one response
+  can secure new living content in each admitted continuation without one fixed content in all;
+  a finite signed integral certifies it where each positive occurrence means such content; with
+  D every position with access has the reason, the least such reason fixed by access alone.
+  Ported from `PositiveGroundUncertainty` and `PositionedPositiveReason` (F3J).
+* `Becoming.ProfileReach` (L4): how a standpoint's own good reaches beyond its own region
+  through formed profiles: S0 with monotonicity reaches whatever is at least as connected;
+  tolerance is relational neutrality on profiles, so `Valuation.reaches` carries significance
+  along chains of small steps; threshold, present-aim, closed-self and persistence rivals mark
+  the boundaries. Ported from `EvaluatorGrounding` (F3J).
+* `Becoming.RenewalBound` (L2): renewal recurs where activity without renewal descends a
+  well-founded relation, with no decision for the negative form; arbitrarily late where decided,
+  within the rank where a rank certifies it; along runs; the alternation renews for ever with
+  bounded novelty. Ported from `ContinuationRenewal` (F3J).
+* `Becoming.Handoff` (L4): a remaining-step certificate handed between revised rules along one
+  history gives formation within the bound, positively relevant under living significance or
+  the continuation condition; without the handoff condition revised rules can fail for ever, and
+  a real revision changes the formed outcome. Ported from `OpenFutureRevision` (F3J).
+* `Becoming.RuleHandoff` (L4): a gated rule handed on through enacted relations: only adoption
+  changes the rule, handoff keeps the record and restricts participation without inventing it,
+  integration is read off the enacted relations and not off coarse counts; one finite history
+  of formation, revision and succession. Ported from `OrganizationalRuleInheritance` (F3J).
 * `Becoming.Assurance` (L2): when a plan secures its target, with no premise. For every
   process a completing plan runs, safely, into the goal; for every determined process the
   converse holds, so completion is exactly a safe run ending in the goal, and with no safety
