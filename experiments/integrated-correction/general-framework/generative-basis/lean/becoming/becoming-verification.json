@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261018T204907.920360Z",
+  "utc": "20261018T210832.866808Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261018T204907.920360Z",
+  "retained_run": "becoming-checks/20261018T210832.866808Z",
   "spine_modules": [
     "Becoming.World",
     "Becoming.Frame",
@@ -167,6 +167,11 @@
     "Becoming.Bundles",
     "Becoming.ActivationCapacity",
     "Becoming.Narrowing",
+    "Becoming.PositiveGround",
+    "Becoming.ProfileReach",
+    "Becoming.RenewalBound",
+    "Becoming.Handoff",
+    "Becoming.RuleHandoff",
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
@@ -429,6 +434,11 @@
     "Becoming.Bundles",
     "Becoming.ActivationCapacity",
     "Becoming.Narrowing",
+    "Becoming.PositiveGround",
+    "Becoming.ProfileReach",
+    "Becoming.RenewalBound",
+    "Becoming.Handoff",
+    "Becoming.RuleHandoff",
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
@@ -729,6 +739,11 @@
     "Becoming.Bundles",
     "Becoming.ActivationCapacity",
     "Becoming.Narrowing",
+    "Becoming.PositiveGround",
+    "Becoming.ProfileReach",
+    "Becoming.RenewalBound",
+    "Becoming.Handoff",
+    "Becoming.RuleHandoff",
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
@@ -958,6 +973,11 @@
     "Becoming.Bundles",
     "Becoming.ActivationCapacity",
     "Becoming.Narrowing",
+    "Becoming.PositiveGround",
+    "Becoming.ProfileReach",
+    "Becoming.RenewalBound",
+    "Becoming.Handoff",
+    "Becoming.RuleHandoff",
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
@@ -1323,6 +1343,11 @@
     "Becoming.Bundles": "becoming/Becoming/Bundles.lean",
     "Becoming.ActivationCapacity": "becoming/Becoming/ActivationCapacity.lean",
     "Becoming.Narrowing": "becoming/Becoming/Narrowing.lean",
+    "Becoming.PositiveGround": "becoming/Becoming/PositiveGround.lean",
+    "Becoming.ProfileReach": "becoming/Becoming/ProfileReach.lean",
+    "Becoming.RenewalBound": "becoming/Becoming/RenewalBound.lean",
+    "Becoming.Handoff": "becoming/Becoming/Handoff.lean",
+    "Becoming.RuleHandoff": "becoming/Becoming/RuleHandoff.lean",
     "Becoming.Runs": "becoming/Becoming/Runs.lean",
     "Becoming.CourseWorlds": "becoming/Becoming/CourseWorlds.lean",
     "Becoming.LearnableRuns": "becoming/Becoming/LearnableRuns.lean",
@@ -1688,6 +1713,11 @@
     "Becoming.Bundles": "f6cbac48fda80484d94a87ffe7c1e836dec4662880c2b9cd6a69e7e0c7dd83fa",
     "Becoming.ActivationCapacity": "639cd0ec42302ecfcbee194213099f790d0640f05a46781b5e5f25f7b7c76569",
     "Becoming.Narrowing": "d5c203f58f6d6a7dad66dac076558b00437917bc6bb8deefe3f9cb4dc676355b",
+    "Becoming.PositiveGround": "4ff99039dd325dbb540298fba9b9b934fb87383e6dd00217243cf7b1454f698f",
+    "Becoming.ProfileReach": "d850713ad0ab63c6b1c4a4f18d35ff0f5a447ef507c01f549f2145b7e2e240d9",
+    "Becoming.RenewalBound": "d7bb80150768b0092f8c0179dc1d3b0d156d80d0e9c7b95f6fad130156c63725",
+    "Becoming.Handoff": "95e4fa25cff31134f8c9584f30f403a26a0196a605e0c2cdd150d1e0740ab4f0",
+    "Becoming.RuleHandoff": "25641a222585a5e2dbbc5210fdea811c9c8994efd38d3a6ed73b601d4027583b",
     "Becoming.Runs": "f4272f9a8c26ac02592554fcf4acc9bd7bba73a0b52d8f4dd1ba4ff6f505757e",
     "Becoming.CourseWorlds": "d8987a40c80315f597353c21f73ad8419fdb3ee920ca53e84bd023746d75aff5",
     "Becoming.LearnableRuns": "a4bbc0e554f94f9580cd2284472db14845e32199655489ecb2f5cab388661616",
@@ -1748,7 +1778,7 @@
     "Becoming.TailRuns": "5f7a07c96afc15ebab827366a3eca23329816236fe9f433a46bf10fdfe083211",
     "Becoming.TallyWorlds": "bcb7f8571a4a499a5d7ddbbb6fcd0a8c36c46eadad442928557360e746a01f4d",
     "Becoming.WeightedTraces": "bd52c1f97228b5554496167afa728e30ff3640fc872b3393a41c3cd1eeaa54dd",
-    "Becoming": "ddc008a3f7c74f5abf0fa2a158146708bbae255da847a6ac636d2ced827169f9",
+    "Becoming": "c1ae6a99edd5d521b0b339c543983bbb0273249e48b1483a793a17e28dbcf3ad",
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
     "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
     "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
@@ -1887,18 +1917,17 @@
     "Becoming.SupportGatedWebsInherited": "33079d825c309f91a24eed0d25a848d0b86db0ddaa8874088570b866d0126f61"
   },
   "checker_sha256": {
-    "check_becoming.py": "cc997873daca1923dd39a7bddc04ff99145942fdadfc0751f446528377103671",
+    "check_becoming.py": "06f5e1d3846487c441109b02736536ffca8c4533e55500b21cc8bad620309304",
     "check.py": "4f9cb94de69bd0e7da6bc7ab1ae1cfd26e2d5848dabda5cbb88aebc36ac52da3"
   },
   "source_commit": {
-    "main": "de7ec058b63ed1d7d17e5c6556e8f1af774d9f6d",
+    "main": "f266d2f163f18b992f6323bdbd0ce1c69db82c38",
     "copied": [
-      "Becoming.CodeAcquisition.lean",
-      "Becoming.Derivation.lean",
-      "Becoming.LearnedGrouping.lean",
-      "Becoming.PartialReadout.lean",
-      "Becoming.ResponseLearning.lean",
-      "Becoming.RouteFormation.lean",
+      "Becoming.Handoff.lean",
+      "Becoming.PositiveGround.lean",
+      "Becoming.ProfileReach.lean",
+      "Becoming.RenewalBound.lean",
+      "Becoming.RuleHandoff.lean",
       "Becoming.lean",
       "check_becoming.py"
     ]
@@ -1909,21 +1938,21 @@
     "fresh": false,
     "ran": [
       "version.log",
-      "Becoming.PartialReadout.log",
-      "BecomingPartialReadoutAxiomAudit.log",
-      "BecomingPartialReadoutSignatures.log",
-      "Becoming.CodeAcquisition.log",
-      "BecomingCodeAcquisitionAxiomAudit.log",
-      "BecomingCodeAcquisitionSignatures.log",
-      "Becoming.RouteFormation.log",
-      "BecomingRouteFormationAxiomAudit.log",
-      "BecomingRouteFormationSignatures.log",
-      "Becoming.ResponseLearning.log",
-      "BecomingResponseLearningAxiomAudit.log",
-      "BecomingResponseLearningSignatures.log",
-      "Becoming.LearnedGrouping.log",
-      "BecomingLearnedGroupingAxiomAudit.log",
-      "BecomingLearnedGroupingSignatures.log",
+      "Becoming.PositiveGround.log",
+      "BecomingPositiveGroundAxiomAudit.log",
+      "BecomingPositiveGroundSignatures.log",
+      "Becoming.ProfileReach.log",
+      "BecomingProfileReachAxiomAudit.log",
+      "BecomingProfileReachSignatures.log",
+      "Becoming.RenewalBound.log",
+      "BecomingRenewalBoundAxiomAudit.log",
+      "BecomingRenewalBoundSignatures.log",
+      "Becoming.Handoff.log",
+      "BecomingHandoffAxiomAudit.log",
+      "BecomingHandoffSignatures.log",
+      "Becoming.RuleHandoff.log",
+      "BecomingRuleHandoffAxiomAudit.log",
+      "BecomingRuleHandoffSignatures.log",
       "Becoming.log",
       "BecomingAxiomAudit.log",
       "BecomingSignatures.log",
@@ -1993,11 +2022,11 @@
       "EnvironmentAudit.log",
       "BridgeEnvironmentAudit.log",
       "Controls.log",
-      "Becoming.PartialReadout.PreludeOnly.log",
-      "Becoming.CodeAcquisition.PreludeOnly.log",
-      "Becoming.RouteFormation.PreludeOnly.log",
-      "Becoming.ResponseLearning.PreludeOnly.log",
-      "Becoming.LearnedGrouping.PreludeOnly.log",
+      "Becoming.PositiveGround.PreludeOnly.log",
+      "Becoming.ProfileReach.PreludeOnly.log",
+      "Becoming.RenewalBound.PreludeOnly.log",
+      "Becoming.Handoff.PreludeOnly.log",
+      "Becoming.RuleHandoff.PreludeOnly.log",
       "Becoming.PreludeOnly.log"
     ],
     "reused": {
@@ -4017,6 +4046,30 @@
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
+      "Becoming.PartialReadout.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingPartialReadoutAxiomAudit.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingPartialReadoutSignatures.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "Becoming.CodeAcquisition.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingCodeAcquisitionAxiomAudit.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingCodeAcquisitionSignatures.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
       "Becoming.ReducedRuns.log": {
         "utc": "20261018T152551.160112Z",
         "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/c3e4b8d7-a251-443a-8c20-cbde5d7d59c6/scratchpad/w1build"
@@ -4028,6 +4081,42 @@
       "BecomingReducedRunsSignatures.log": {
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
+      },
+      "Becoming.RouteFormation.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingRouteFormationAxiomAudit.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingRouteFormationSignatures.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "Becoming.ResponseLearning.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingResponseLearningAxiomAudit.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingResponseLearningSignatures.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "Becoming.LearnedGrouping.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingLearnedGroupingAxiomAudit.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "BecomingLearnedGroupingSignatures.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
       },
       "Becoming.Unrolling.log": {
         "utc": "20261018T152551.160112Z",
@@ -6401,9 +6490,29 @@
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
+      "Becoming.PartialReadout.PreludeOnly.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "Becoming.CodeAcquisition.PreludeOnly.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
       "Becoming.ReducedRuns.PreludeOnly.log": {
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
+      },
+      "Becoming.RouteFormation.PreludeOnly.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "Becoming.ResponseLearning.PreludeOnly.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
+      },
+      "Becoming.LearnedGrouping.PreludeOnly.log": {
+        "utc": "20261018T204907.920360Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z"
       },
       "Becoming.Unrolling.PreludeOnly.log": {
         "utc": "20261018T183920.923524Z",
@@ -7106,6 +7215,21 @@
       "Becoming.Narrowing.log": "f0ec4c04da42e5e3c0657cb8fff6d26d90ba04e5254e5449fac8f576f1c58932",
       "BecomingNarrowingAxiomAudit.log": "a9a759ae6ce9da1d07a6f72ff787ac6fbdcfe1f6cd0e8a216dc7da196e28fa14",
       "BecomingNarrowingSignatures.log": "a934833115ef0faa44848c90d5d169373157fef4fb69c162e488067eb157937f",
+      "Becoming.PositiveGround.log": "dabfd92067537e276f5fd3df54d726da054431282ac771d4404e474a1211d256",
+      "BecomingPositiveGroundAxiomAudit.log": "e468938fd4e102c9244cf8d477a4c7ec156b022197be1718a4d1d117e9134985",
+      "BecomingPositiveGroundSignatures.log": "0b2688d636adbc69f922c9a2c50206022bf543897b198ee5d87d13d9a3d1719e",
+      "Becoming.ProfileReach.log": "8e262d1c86035bdad4f515eaa54f9b13b4606923d8525cbbeae991e1b5a073b2",
+      "BecomingProfileReachAxiomAudit.log": "24cc1836e11fa0a566889d2c59c930c949c2d9e931e2a55cd2e2894fe9031318",
+      "BecomingProfileReachSignatures.log": "e1105c2da43428a86da894b333a3f7c417addd9e27bd2c1bd7cfb62550c92049",
+      "Becoming.RenewalBound.log": "203aa1ae29aaee0c66c552e5bc4d2034867734a92adf159cb9004f66f2dd9990",
+      "BecomingRenewalBoundAxiomAudit.log": "5cdafa1639cf57d098bba0122535a55177f6b19f5942578c5dd581c79f3ec814",
+      "BecomingRenewalBoundSignatures.log": "79d08176a929e7e84771ab6161efdc077a315eae639524a45b9dcc2f8f67ef81",
+      "Becoming.Handoff.log": "10d13148bdc3c6a4e0ce3470ee7da4b6fbcf82e01df94b27ab9b6b95e189f389",
+      "BecomingHandoffAxiomAudit.log": "42bafd9383f72c4fa05893c4fd9e33f93ec8f4b692c73cfbed6911ecd0cf9b22",
+      "BecomingHandoffSignatures.log": "2716f570e5a210e5bf614c802a207d468a6937ebd23e07bb06e41766c7db84bb",
+      "Becoming.RuleHandoff.log": "14b800ca1d6f14e288f672a632279689a48c070aba6fe745dae5369ce348e62d",
+      "BecomingRuleHandoffAxiomAudit.log": "765c2feddeeb232cb0462e8243f3fd32d659171ea4ba8ffdec3aa0e876ae451f",
+      "BecomingRuleHandoffSignatures.log": "72dc660b2c2e1c8a05d79988f5f7a7c5791604851214bc8291f3039ffc426f7f",
       "Becoming.Runs.log": "9a3d1f2ab9777e3e5593edd988e1f818c84ed3ce9d5ef2102eb6dca043cb2476",
       "BecomingRunsAxiomAudit.log": "dc8cff880952dd2f8b2a26f6f86d0dfe397cdda98fd2df204ffd35ed7e163706",
       "BecomingRunsSignatures.log": "87d914d306cefcc9fd608baa145d8899fe3639f3526d610680d52945ba49d3da",
@@ -7286,9 +7410,9 @@
       "Becoming.WeightedTraces.log": "b8559e248d719d5024849274ce94696db04dbde5917106efedee8cdd14b625c0",
       "BecomingWeightedTracesAxiomAudit.log": "2f65f20af7b447aa567e3dbc2b1aadd84d1cb81b4f2e49188763126d5edde305",
       "BecomingWeightedTracesSignatures.log": "9c279d448f5dc823c0dc8550d45d0efa77961679b8fd70395d6023420cbc5d7b",
-      "Becoming.log": "fc5dfc4355e42b3f9e766341f9c59da78d5014ba3219c8a757152056ad3a9f36",
-      "BecomingAxiomAudit.log": "f76010952d8d16e80a3e041121acf2e6161f1d542dbccf01f37f99ef9d829bfa",
-      "BecomingSignatures.log": "a91b5dc657f46c6f852dee9c8a90518b8bb911527704d710cee9455d2d2929fc",
+      "Becoming.log": "07e9475124f4d6d93a5125c86b114f31b6e97aa4e01ac539c839fd1587e82d52",
+      "BecomingAxiomAudit.log": "38c2baf38bb302379041456b1493270ac2889d5f918820f40bfe73fa6d34d63e",
+      "BecomingSignatures.log": "f9985cf25129c0befb386100dcde9faaac5ed3607d2b3e252e3156f0baeae296",
       "GenerativeComparison.log": "4737465ba06dbcf9896aca98711c3ea30eb8f6f45a945555723b050b0d272338",
       "GenerativeComparisonAxiomAudit.log": "32d01d01f71d9047e8992895775a524734f4faeaec26aef66a960255f92184e4",
       "PracticalJudgment.log": "2629dbbcc1e2643a920d692e88e9b31432d228cd0383ff046605ae202a6cd33c",
@@ -7377,9 +7501,9 @@
       "JointInterpretationAxiomAudit.log": "1b6aefa939d46c258e5db0f630accdb4fe7ab77ba387f0ccce6d8517cebf4f0d",
       "AlignmentDirection.log": "41e33fa91972a43170effad4e008449eb29a7b631fcb61287f26482ccb62e46c",
       "AlignmentDirectionAxiomAudit.log": "0a3e76af74f0f479a3b9ca3610844e6ffb525f9992516efb75c65555dd3d4879",
-      "Becoming.Bridge.log": "891b79f634126ad94daf328bc11ff5fbbe4540428cf2afcbcf89726b4fe6d94b",
-      "BecomingBridgeAxiomAudit.log": "be608ab02cd5f658c0f050196c073777fc9aff24a26328129084de8bb87a7532",
-      "BecomingBridgeSignatures.log": "6b5c737872587a857b1af1aaeb4cea1c03b111389c43fd3980863717f6ecd3ff",
+      "Becoming.Bridge.log": "4cb2f6ab4244161a09c2e50251ca319e27c365ca1e8a6caf5f2ebe43d43c6a67",
+      "BecomingBridgeAxiomAudit.log": "faa2ea2ef94047f113e04771dc827760d86b89742cc35f2dfd9ddac3f1ebde72",
+      "BecomingBridgeSignatures.log": "d7d8a069c253f8bd08fd3fa7fa0b9d4c29554ce3ad587f9888d77dc48507a849",
       "ExplanatoryUniversality.log": "e75230f670b0cc608c8b1f631b67085d79bf13f92a8eb8c866c7781d97011412",
       "ExplanatoryUniversalityAxiomAudit.log": "2b1eb57d5d9a802a99ae184033f72d12828c8be2e3e9285a1b4e5357aaa301eb",
       "ExplanatoryJointness.log": "bec2d5b759267260db472748551056b79114b712c780972196d236c59087a598",
@@ -7416,9 +7540,9 @@
       "ExplanatoryGuardedProgramsAxiomAudit.log": "140bb523e0efe90cecaab0d5ec9cf7b8884a7a7111e314a8c449fc0db43da457",
       "ExplanatoryGranularityBoundary.log": "070c07477d6afd49467dc476dab0b127d4c8969ad9866bbcffdda41d27a81bbd",
       "ExplanatoryGranularityBoundaryAxiomAudit.log": "4d32bf0cf873ef9525f0f3a4552db811b2fab3de5f81845f46260f00a2331455",
-      "Becoming.GranularityBridge.log": "c8fbf2eb3276930065a62d1de91e1559b7d9d7dbc17bae6c1452c4aa8a6bab13",
-      "BecomingGranularityBridgeAxiomAudit.log": "de1c3653839bd50775d22c5f1c589a1f78a26df7eae73918a49a254a62da7d11",
-      "BecomingGranularityBridgeSignatures.log": "fc19b0814e2794f15a9188ab6c63121f549c56dbc6a500fe678c722b519b7be1",
+      "Becoming.GranularityBridge.log": "87ad5c084b75e203e6fe55a40fc6efae11ada91667cd49683bc1340abaee70bc",
+      "BecomingGranularityBridgeAxiomAudit.log": "c0f366e273cfb7c2883369d61a739303d7a08ee538dfbd84138144e920e3a6c5",
+      "BecomingGranularityBridgeSignatures.log": "5fed37f5630c29850b159bf62c10f42c069e419d97cac7b19d5808e95d2a0ab6",
       "GenerativeLossComparison.log": "36a8cdc6e9cb58d5f76eb225cd5a83c7895bcdd6d71d609205a2b6c811607b92",
       "GenerativeLossComparisonAxiomAudit.log": "aeddf885434d704d45613d49302890f0a107fc0ab0e6d851bb879e68df77e004",
       "Becoming.RepairComparison.log": "4c814b7fb1d172dbcc86b74ee7d900e4c15477bec522776ba372262f5555d582",
@@ -7455,12 +7579,12 @@
       "BecomingInstancesSignatures.log": "21473e7e6125871648f8ff79de458abe358b088975b178ed96feb5a58af9c8f1",
       "RenewalRecovery.log": "b7ec6b9a2d0381bea154476c53aceac5c2a15d238a077321ab24d229d34952f1",
       "RenewalRecoveryAxiomAudit.log": "2e8649bf4153e3550ef58467f84ff702d67b9956579e25023cb927f541767827",
-      "Becoming.RenewalBridge.log": "49f0ffddb0affbe000191ba7d8e29bf7a48165dfe1d1e547fe255e97068e14aa",
-      "BecomingRenewalBridgeAxiomAudit.log": "196dcba15267fd6760747e628232c8f2ea391ae5a78712f9e01de4f1477361d7",
-      "BecomingRenewalBridgeSignatures.log": "0623983a9d0ec9c3220365fadb4d1c94d7f4835f989709bc16dc0a4dfad000af",
-      "Becoming.CoursesBridge.log": "dcec5787404801954a7c147e4665a894a545a295d780893e2efab9bce89b076e",
-      "BecomingCoursesBridgeAxiomAudit.log": "89e24863c06a802aa2834cdc3e2b5ff1d13f7f625a9ce948fd2adf11bdf6456c",
-      "BecomingCoursesBridgeSignatures.log": "8655e224135cf7dc89edbdf14cf383e6ce7f55d8762ae04e3d3d5a9c4628f7f5",
+      "Becoming.RenewalBridge.log": "00b9945cf93a26b2f6410dce9d345b444d874db7406923dbe656aec99ab15979",
+      "BecomingRenewalBridgeAxiomAudit.log": "87cd00a31fa59cc1a7ebe7cf992f19038f0b34d53be9d7bed8ab0d01754d1475",
+      "BecomingRenewalBridgeSignatures.log": "294eaf65ab5a70f51ef2f5dab0ecd327842afdbb41d120eade8b26d1d084c10c",
+      "Becoming.CoursesBridge.log": "032788897a222d4cf9081b2c05c3e3ef3df2bd35ef1ca6bcd266a00f977e3127",
+      "BecomingCoursesBridgeAxiomAudit.log": "7f149ee99c42ab091e5420ee62cccf00f20fb515da76486c24bdc6f5e0a6ae90",
+      "BecomingCoursesBridgeSignatures.log": "b3c9759fbc2dd3b546fdb4aaa0f568fa5f0ff08b7a09cd3b2a358ab8e0a673f1",
       "Becoming.GuardHorizonProcesses.log": "58e4a26db2301a1a53e2a67bdf7b97993a0b902d554e0e585e2c1ac01df52785",
       "BecomingGuardHorizonProcessesAxiomAudit.log": "0277ad9ec3e7e788897825038260ec473c9fef8ad9b9b61718bd3d056842821a",
       "BecomingGuardHorizonProcessesSignatures.log": "0f2073b34f61f8ee2b6edf0e21621d078c2464ec84278a1fe85ddc6dc5197157",
@@ -7503,33 +7627,33 @@
       "Becoming.UnitTraces.log": "3a757c8e119cb4f283d21a73b295aac928785875094ef88bcab9c082a18ea92a",
       "BecomingUnitTracesAxiomAudit.log": "7c8b1dfb9297c0ca400840c9d5fd1423e2f1f77c28f09daf0d69ad91bdb2d017",
       "BecomingUnitTracesSignatures.log": "379ecf20bb6dc2fbe5a188c0a2f9d2dfefd7dba6babe337c661a2747969782d9",
-      "Becoming.RuleNarrowingProcesses.log": "bb30514b5bd5d06c87938d48d021ec5c0da4cfa5ce6e2fa279154861c09d2af6",
-      "BecomingRuleNarrowingProcessesAxiomAudit.log": "2c45b5ce7146ae555c09c7cf2b6307cb00a9c5aeeefa01c6e23c0c61e251b611",
-      "BecomingRuleNarrowingProcessesSignatures.log": "9ec2ede47c606f9517ce343191715be7739e7230e261dba6a2cf49197cdce587",
-      "Becoming.SeedReachProcesses.log": "d4e14120639564f73c3fbcb7035f7ba0a09ab054b72ef91e9d7e5e51e9f8e6e5",
-      "BecomingSeedReachProcessesAxiomAudit.log": "43138a74ddd542d32854cb8b3e50bbf324a710f333adcde4d3faac2607446ac9",
-      "BecomingSeedReachProcessesSignatures.log": "f2395aef492d693d3b0ac9fa333908bd1fe6b01f629fc62ff45457042b7b3b30",
+      "Becoming.RuleNarrowingProcesses.log": "9c2542bae8f72f594aa671343d966b808e9844b679a2f0c442311d73f9c54951",
+      "BecomingRuleNarrowingProcessesAxiomAudit.log": "5311abb67fec8bedff9277b2e3c52204949f566920b8ccb140402df387f28ce3",
+      "BecomingRuleNarrowingProcessesSignatures.log": "9a58149c2191aa77ba0e3b1c7fd0dde4bfff89d9eda51da732ab857ae6c3333d",
+      "Becoming.SeedReachProcesses.log": "bfef8e8bde5fabc3ba41c920008ed2cdb927ed5b5940d1491526ae5904ca6baa",
+      "BecomingSeedReachProcessesAxiomAudit.log": "c2e8f16c0fbdaf6ed0329a10ab5676a66d431796f685b3bee4902c15357d84a5",
+      "BecomingSeedReachProcessesSignatures.log": "21012c8f1eef1a4d977a71b5d6bdea5797320f0b838ec5dfa10b1fb32a711edb",
       "Becoming.ExtendedClaimFrames.log": "ebd1ea3f0b2b79f171986a4c42dac44ea2b04d7be10bca0bdbe5a8d9399aac3a",
       "BecomingExtendedClaimFramesAxiomAudit.log": "6409d84db97aa3a4c4c74da3ecda2cd9a4c6130b3727eb16754a78323e1c8a9f",
       "BecomingExtendedClaimFramesSignatures.log": "6cba0fb99453f06caa09eb0af1f4976651d8eb0e40858713d2e3f7258ffbdf0b",
-      "Becoming.ExtensionFrames.log": "d12935815435e0d6464a2e6ed13103b6993c62871c1b18ab958df14e0d5f004d",
-      "BecomingExtensionFramesAxiomAudit.log": "dec1c6d178c349016432b564978affb88a500094b90816e167a151b48c1ba2da",
-      "BecomingExtensionFramesSignatures.log": "f2f8fdc753e05dfc2f6511bcf7dab99812cf6b4252e325c1be0ff865adecf24d",
-      "Becoming.InterfaceTraces.log": "4e88a4373583db16641c18f8bf408f293afdba2122f0e92ffef7b29930dd9a71",
-      "BecomingInterfaceTracesAxiomAudit.log": "df7b6b741bada91978d6f16c5fe72ee3c8670422d655762902240cc86641983c",
-      "BecomingInterfaceTracesSignatures.log": "cd7e8ce5c8b42efecddbeb8810f9a7039e1bedae1e874ce4ae6635b5516074ab",
-      "Becoming.ReachableFrames.log": "c11183378926d4bc6118a81b29ef5bcbc351d3e336f369d43339597ae07b8835",
-      "BecomingReachableFramesAxiomAudit.log": "ab80a224ddd0bd79dec6a3917bb3c8331b7d9657b2b607d8e8dbef417038447b",
-      "BecomingReachableFramesSignatures.log": "1d39b2403be5c984b0e34f3830c975cdfe1e1e976b4a6445090d5d9a3b81b433",
+      "Becoming.ExtensionFrames.log": "bfc5d4f8e216eb766dedc5abc987f9c6a3bb3f873e9c32f18bcbe233f721ceed",
+      "BecomingExtensionFramesAxiomAudit.log": "900c60aa5f751d4f210530d94d5781c574e64758be66990d7a754d8fd50711a3",
+      "BecomingExtensionFramesSignatures.log": "f5a1a5f34ad2c2a24a9d65d377cafaee129ad5790d62636835accbb8568b5374",
+      "Becoming.InterfaceTraces.log": "159721c9774a07c194b96b68fe6af858312eb0a1194d75d8e0369e68932efff9",
+      "BecomingInterfaceTracesAxiomAudit.log": "f8c35f3dd4f77a77030382f9b5a4de579d14e48152a2759b21e522ecc75ae916",
+      "BecomingInterfaceTracesSignatures.log": "153cb5f8bec3302a88eb5e8966dea077be066c3a444c816e73690bd69dc90c37",
+      "Becoming.ReachableFrames.log": "022c4db6ed34ed1192606360adc1ba153e1e7d0202a8fcb11f32c62f0932b1bd",
+      "BecomingReachableFramesAxiomAudit.log": "b12b0a06910c73c0fc513749347de99541441c205b8918e28424d5fb13195687",
+      "BecomingReachableFramesSignatures.log": "aeb8f066ffedb15ea4538c8c325e243260211486d6101fcb22a1e436303aeb85",
       "Becoming.StrictTransportRuns.log": "c37579c6e6f8fdac95acb4d7f97f1dd014b91966f325ec8837432957d892e83d",
       "BecomingStrictTransportRunsAxiomAudit.log": "3c2748fd02de1340cf5892a5ba0e4fb22d9098e3b8279d317bba72ea25f9c3bd",
       "BecomingStrictTransportRunsSignatures.log": "2c8bebd97650469a3340b931246ca2634e9139da55a8beb973d2479091c87713",
-      "Becoming.CouplingHistoryFrames.log": "759b7e0f9b2f97d91d36946aabe46094ced5f110bf0d2cb43521d14540986a7f",
-      "BecomingCouplingHistoryFramesAxiomAudit.log": "824080d7f21333bd25cbbd0bf0cca847cddfe4e78a302017eb1ccf173270cf4c",
-      "BecomingCouplingHistoryFramesSignatures.log": "9b7dffe23d18774d40b79a27671ccce4935f127e154d733833c8ee8ffd5eaf06",
-      "Becoming.CourseExtensionFrames.log": "d84d7e098fcce4754b07591d72ddf5e3d7d7cf0c06ad94ea62cc472b90211864",
-      "BecomingCourseExtensionFramesAxiomAudit.log": "a263b3dcb59ecf7159b616f0335458ec936de80dfb3b5a838f251a33210b2d37",
-      "BecomingCourseExtensionFramesSignatures.log": "28fac3cff9c062afbdf4d6f514bb07d25aab6edfdca38c80795dcbedcec5bda1",
+      "Becoming.CouplingHistoryFrames.log": "0a45f61d2f80525bba88e74fb50da246b6f0e4c535695f739c3fd22b2c2edbbe",
+      "BecomingCouplingHistoryFramesAxiomAudit.log": "f16bba409a413bbfce8cf2de55b8d94958d1e4de1441cc16503b7ca98180cbf7",
+      "BecomingCouplingHistoryFramesSignatures.log": "4f298fe4fd5be8a0159e6a7371e38808074df478ce399a72599cff75adce0bf4",
+      "Becoming.CourseExtensionFrames.log": "4c797fd2f399d27f23de886186d1a394b0b425c744376c6eb3fee4369cd48ea1",
+      "BecomingCourseExtensionFramesAxiomAudit.log": "e9fe69ecda7071e4ef89f9a34551fc19be12f6128ccb9a00129e9d561e459d84",
+      "BecomingCourseExtensionFramesSignatures.log": "0fcb02b591b650ac0005400b41cfbe689beee410a698c94387a969ce7095f5ef",
       "Becoming.DerivationScopeProcesses.log": "ae376bd2f6576e50063ba0d0134a38bde5b5b1cf57a95b05edf389306cbc29c1",
       "BecomingDerivationScopeProcessesAxiomAudit.log": "f4177ecf80c9b7cb32743aa99ab160b7fc4b4c056c269b4a8a415b2cfca49bd3",
       "BecomingDerivationScopeProcessesSignatures.log": "9f2d4cb352b3169a40e613999147dccba1785ac1a6d86c9ed007e432c1d5e524",
@@ -7539,12 +7663,12 @@
       "Becoming.FeasibleProfileTraces.log": "ec56e8d21a1e3fde142b7927b0c59ee9e4276f9287eab8fae2754bea71298eb8",
       "BecomingFeasibleProfileTracesAxiomAudit.log": "240570ec7ab93c99e7c1e0a22361f94007aaeb0e95f340fcd5969c91cb6c1a38",
       "BecomingFeasibleProfileTracesSignatures.log": "e2b9ecbd1569c2dbaa7e94a1b984c6768f12b21cbba1005acef4980d932b78ee",
-      "Becoming.RuleRevisionTraces.log": "c03d7a0688fcf217486b5089e717d3014dde37bb4c3d6ce3a077eda3ffbc0ec9",
-      "BecomingRuleRevisionTracesAxiomAudit.log": "cd7095dbd8a8a9fe38b38bb87afea1c54e4cda122ec7ebcb9b39a0f1faeeeea6",
-      "BecomingRuleRevisionTracesSignatures.log": "06748565a25b9076d8e5b6689c431132e400862814610d1ceaeb24e4ffcdc5c3",
-      "Becoming.SupportGatedWebs.log": "33fc15a640bd026bd077b096d63b997ef4973575d1ec037295e0be0acc2ce3aa",
-      "BecomingSupportGatedWebsAxiomAudit.log": "eec554d364fb4ccef500945c680be915a54bbfc8f2d22990a737d576ccb80e62",
-      "BecomingSupportGatedWebsSignatures.log": "1017a92d5aeb06be62f4168dfa5f50b7d3eea9b72c9bf921311ddd26ff520039",
+      "Becoming.RuleRevisionTraces.log": "49a1954b553a277c5049c7b4e1a2886d0a1fa492c57206bc09278178070bbce3",
+      "BecomingRuleRevisionTracesAxiomAudit.log": "ce3e2feceeb82071ebf12afdec316200d37528883c937d424a6ec04e94d38002",
+      "BecomingRuleRevisionTracesSignatures.log": "2b4b7f770d3602d28ba101e9a8213fcb1a1cd53b37f4d23d4ad7464b65300b8d",
+      "Becoming.SupportGatedWebs.log": "c567888fe6854bbeb0c049274e642f6dd21f2b579edd61d30b9ba140cd740954",
+      "BecomingSupportGatedWebsAxiomAudit.log": "0f0cd6fdc780e8471d00a7a8bef443d4bf3ce31069534199e1bf9feef65911fd",
+      "BecomingSupportGatedWebsSignatures.log": "26ba77d57d465f79ee99b8d95576732dfed349d1156f04f297fe7d342e107c9f",
       "Becoming.GuardHorizonProcessesInherited.log": "fca4345ea6ff73bf987b4642bf87c190a4817f92cacc8c78b5a539bbd441a672",
       "BecomingGuardHorizonProcessesInheritedAxiomAudit.log": "7b9292e74ec215accfcebbf3e533c21807764a633da7928d314aef6694438891",
       "BecomingGuardHorizonProcessesInheritedSignatures.log": "239104ae691505ebfe63849ae6231dca7719f5c173bd6e1365da416716dd6329",
@@ -7581,9 +7705,9 @@
       "Becoming.DephasingRunsInherited.log": "34996a2691bcf565b13159ef345c9cc29c34e64189781b49adadcfd504ed6f5d",
       "BecomingDephasingRunsInheritedAxiomAudit.log": "3923d36255379d525e6211bb23d4528b2ae27a48a22b7d3a932b2d1d1a2f56fa",
       "BecomingDephasingRunsInheritedSignatures.log": "009e63ad5e31cf66ba073e70e753387eae853cd66dcb3fe7e9ad3a0d0a63d2da",
-      "Becoming.DrawnAmountProcessesInherited.log": "5fa7c933782c68dbc614b743c6d01a3f754732efa3a4066020404abf93e58521",
-      "BecomingDrawnAmountProcessesInheritedAxiomAudit.log": "ec4c043d7db4719fcd5455fdd823c674b5a4a562ccc5515ad8532301646eea72",
-      "BecomingDrawnAmountProcessesInheritedSignatures.log": "699cf3b7ddff76bcc48fb2ae75c22ffb15c7c8b6e2059bd3b3ad4081d9bd6152",
+      "Becoming.DrawnAmountProcessesInherited.log": "b1ca686533568a4ac3a3c568e4c75ae6675febdce2af298dec89130c0da3e334",
+      "BecomingDrawnAmountProcessesInheritedAxiomAudit.log": "3a29eb2e7ea2d858d0cb616b1d56cecdc5cc8c8b270f5aaafbcdd89f79bc502f",
+      "BecomingDrawnAmountProcessesInheritedSignatures.log": "88df09e173fec29a1abaf2991fc9bcf1146a485508242e41dab70b87a8f5b598",
       "Becoming.RuleHandoffTracesInherited.log": "3d21ca05c77d64b227512ee444f625e80d270a01472ef8752447508fffe1c4cf",
       "BecomingRuleHandoffTracesInheritedAxiomAudit.log": "3d58c81259b87efbc0fed0ed4930e77b9cfadd453ed7a7e463c2f1a33b841ae3",
       "BecomingRuleHandoffTracesInheritedSignatures.log": "02b72605af8b5f9da0376f552e2b56b1d22b320c565355d4013c987307efb27f",
@@ -7599,33 +7723,33 @@
       "Becoming.ReceptionTracesInherited.log": "da5c7eb0097f18f269307a97d5c9eaa2b9846226facf5617fb09163cbb2e45c6",
       "BecomingReceptionTracesInheritedAxiomAudit.log": "b883148e3a3efc771bc3e242895aabc3918cf866d34a4b85bccdbcc33b8c8677",
       "BecomingReceptionTracesInheritedSignatures.log": "aa3091f068f0a2990e380d9e6c0502f12aa8336cd9f1500dc0aaeb476e7d8310",
-      "Becoming.MoveOutcomeProcessesInherited.log": "58dc5e471635c51dbd284b3751b3ea90a8a7d5ce91eb48247b1542453b8043d3",
-      "BecomingMoveOutcomeProcessesInheritedAxiomAudit.log": "9b95b73addc6331fd7837c31667b08e7dd1311ad2835e24652c5f6125d58b207",
-      "BecomingMoveOutcomeProcessesInheritedSignatures.log": "1a1f2a4f59aa8581ce84ea0d8dcf2cc227da9560a7a149cf99b610021cd7fbc0",
-      "Becoming.RuleNarrowingProcessesInherited.log": "62ecb55616a590ee7e885952cd77681df8b0a41b07aed5c6002fd54375b5c592",
-      "BecomingRuleNarrowingProcessesInheritedAxiomAudit.log": "235fd3a2dffcb1f1521731b96478e71b78b7b76b67993d4fa75caea3da8a954b",
-      "BecomingRuleNarrowingProcessesInheritedSignatures.log": "498f583d9b89e6b7fbc826e74e7fa059b377740bcbc528ef3c9b03ea3ee5ce4b",
-      "Becoming.ClassifiedFramesInherited.log": "2edaebe31c7b2a4eae20cc1a829a892939e6edfdc63ab3ed88fe723a8cfdf0b4",
-      "BecomingClassifiedFramesInheritedAxiomAudit.log": "501c4c08528670562594d5da4c8a8997fc244a9800f0c167d112ea951336255d",
-      "BecomingClassifiedFramesInheritedSignatures.log": "342afb8b3e12cbec0305c77db1c77b494d3c8870a6d9ab9b72852db6dc426ed3",
-      "Becoming.InterfaceTracesInherited.log": "af38d89558b9bb89c376cc921682b81633d3479662391e1a82bcec2a40ca1c6f",
-      "BecomingInterfaceTracesInheritedAxiomAudit.log": "a04bdf74a56db20703078b4546653ad8dd8b304493cbd24d1feb312f08daa996",
-      "BecomingInterfaceTracesInheritedSignatures.log": "5ad809b16e87a8030128ff0d3d14c47eb7a70785c1652c530866cc4d7585f0ec",
-      "Becoming.ReachableFramesInherited.log": "cfb66f79e9fc37474c84696a101d8edb2cb9dba4d3fc736ef09fd11e41baa937",
-      "BecomingReachableFramesInheritedAxiomAudit.log": "1e8b97a40c8a47343ec75b7e9489d5d4b9c75aaf2fe8b7c15aee422b24c37502",
-      "BecomingReachableFramesInheritedSignatures.log": "b362169819d06e885aeac15473f7351ff4d8985b510edb8975718dd9c5d4577f",
+      "Becoming.MoveOutcomeProcessesInherited.log": "40af4c6a28351da2785fa162fc6615cdbb258277d1e71e42629893b00aef2211",
+      "BecomingMoveOutcomeProcessesInheritedAxiomAudit.log": "3e09a1fa6667bce79efd2d0fae811a898af22711802a108eb3ae2ea1e9f93594",
+      "BecomingMoveOutcomeProcessesInheritedSignatures.log": "e68b5a3a347b27be8427c09d1e909711bbab9e8965eadeb17d967891b45b494b",
+      "Becoming.RuleNarrowingProcessesInherited.log": "9040cad746fe44220243df8e0b987761ff8bf54ea652fd4f608d330b7f865270",
+      "BecomingRuleNarrowingProcessesInheritedAxiomAudit.log": "a86f29134cf282a718e68ab0234c70dd974041fe7c9f581c70600902a5dbcf73",
+      "BecomingRuleNarrowingProcessesInheritedSignatures.log": "802b3c36cca927621bcc84872567bcb1291417e5fc9b4186d06f11ca25e72bfa",
+      "Becoming.ClassifiedFramesInherited.log": "3cf6866c66190b60ccb554559e8641aced0ec3f13ce50d5ca66682f566fa03c9",
+      "BecomingClassifiedFramesInheritedAxiomAudit.log": "10a3e07cddf3ba63fc6fe883ea9d74d6889790237ef842c1c74ec56f09755cd4",
+      "BecomingClassifiedFramesInheritedSignatures.log": "68b8e1b59e645882f4a9787f1e48464e4c27c14cbdeda6f8f0b175f9c282d916",
+      "Becoming.InterfaceTracesInherited.log": "6a769429d8e5d0136434af9d26cfd55df86fb6164de6b0fb2128a88c46d746e7",
+      "BecomingInterfaceTracesInheritedAxiomAudit.log": "ace3b6a7b92c188bdae888bbcb065a0ad5136275349090379eb1acae1460d170",
+      "BecomingInterfaceTracesInheritedSignatures.log": "e0d959d2a84fdda2d558ac41696dca2551dd0ddda7b60447e083ca2a07bfd971",
+      "Becoming.ReachableFramesInherited.log": "d82d273f9543eacb5b73fcd551d7781199d50679e3f8e2e87f5431564e89a783",
+      "BecomingReachableFramesInheritedAxiomAudit.log": "0bbc5029ebf4406d670a183118f35be86349f532858fdf2c607bdb1b4dd44568",
+      "BecomingReachableFramesInheritedSignatures.log": "9b56e1f80a6f0d0c481fadf4a8faa1e61bedf915f2c56453a3dab8d9997c42c4",
       "Becoming.ContextArrivalTracesInherited.log": "4c2999259c34e5eeac531c5f0c88aa28f8b6d80dacd9823a541e970b3e97b635",
       "BecomingContextArrivalTracesInheritedAxiomAudit.log": "b833ae43e870549e6ffff6e521500d637dd337871105b033f48353bd88546032",
       "BecomingContextArrivalTracesInheritedSignatures.log": "1a1654cbb275614c346ca9d504bec3f218c93c14e48d1774bb54030b8b35c1b2",
-      "Becoming.RuleRevisionTracesInherited.log": "2d334ffdc587e3811fac3227fcd14f3e06d2a5694ea23eca2cb5f75785eda233",
-      "BecomingRuleRevisionTracesInheritedAxiomAudit.log": "4e3daee78c084256aab9cc9b5a2fb59b0bb85e0d03d725ab5c8105d932ed70d1",
-      "BecomingRuleRevisionTracesInheritedSignatures.log": "4f72cb8415468444993b4b51d73c566789682a6703fc57d67e8a472f5dab1dcc",
-      "Becoming.SupportGatedWebsInherited.log": "9a019d4183bd1d559fe4fba6b85353c98403cb8f4d0d33dccdfa7f644fc1ef66",
-      "BecomingSupportGatedWebsInheritedAxiomAudit.log": "4985bd1dcbd4681d0bcfe16bb98a3f483e6bb71cccccf156ab84228a6c9285fd",
-      "BecomingSupportGatedWebsInheritedSignatures.log": "12dde834a7cb6e5f0da4bdc46603272606ecdcab587039c7210845bfe181fdb2",
-      "EnvironmentAudit.log": "67809f95edf6c6628411670f5318de27ef1f105b9dcc4aac4a985997f14f58f7",
-      "BridgeEnvironmentAudit.log": "84625d4edc70fd34348374739ceeddc838a0965b47d41e501067472cd48fa3e5",
-      "Controls.log": "cad2c92541984e07158b8792347a79450149d0316583dabcfe6e2a16d9e87d94",
+      "Becoming.RuleRevisionTracesInherited.log": "b045c736e8095ed7efd0cdac934322b7bee7ed9ef0270edf8cca766319d96b4e",
+      "BecomingRuleRevisionTracesInheritedAxiomAudit.log": "f2b3ac3e5bdffff8001b4a93984990fe415e36068201e4dba377d8ca92b6b7a1",
+      "BecomingRuleRevisionTracesInheritedSignatures.log": "20cddd497bc80cd1fa9986fe9144f4fb245f25b57b611e2618704fb588e91f4f",
+      "Becoming.SupportGatedWebsInherited.log": "0cf2c5b15c47133b75a65b8e63329649463c1e89221a075f3b530f89d59395e7",
+      "BecomingSupportGatedWebsInheritedAxiomAudit.log": "a722f72622a00f6ace43a256f473e106b709a92e64d173126a2166434053787b",
+      "BecomingSupportGatedWebsInheritedSignatures.log": "a221dc85cd895f66d24773415f238021fa1e7a38500d130c7e31e4beeb584ba5",
+      "EnvironmentAudit.log": "8a32d806f36ba404dee825e2816e247d2a6d8072e6b780d0640513dfc0f83198",
+      "BridgeEnvironmentAudit.log": "deb7b2c838591e843c4edba0dc868db860181dca1ec2ee83c5bf386786a924de",
+      "Controls.log": "8c1c88eebeafdd2c9393da535212b305e844c54b2b98ab20eebc3253c9beb6d1",
       "Becoming.World.PreludeOnly.log": "b6c92a6f2a9085a73e92dc965f2d1f32073f9c307664b0b4b8a36ac512200b5f",
       "GenerativeCore.PreludeOnly.log": "8b89f7b1018f5a43ae9994a797db0fc12d2d5fa076f5da8d895ce648ccee4367",
       "Becoming.Frame.PreludeOnly.log": "951016dff6a22d5c1ddb5c9b7ffd203053235c9ba1a2f59e92008cb94fe2c074",
@@ -7792,6 +7916,11 @@
       "Becoming.Bundles.PreludeOnly.log": "93e6f76c4b527519811ac7e8a1456780634a87164893f0c052557ef12dfdc4f4",
       "Becoming.ActivationCapacity.PreludeOnly.log": "ca7c68f1df5e2773d2e99c1e5517e34e26f47a58a1e0e92d3c1e1c0ce3da4148",
       "Becoming.Narrowing.PreludeOnly.log": "e5a7a289fda51fff4c8849f3a0d0f99a7b2133bffde0eab74df31a054fddc197",
+      "Becoming.PositiveGround.PreludeOnly.log": "0af038d03d61b0b60efd0a07d915a0b851bd8ebc7890d54cc79a5909dac22834",
+      "Becoming.ProfileReach.PreludeOnly.log": "e15cbe1a4d1e6c1958ad18fd78496bea2c6ecc0987f625521fc32b94a9564a67",
+      "Becoming.RenewalBound.PreludeOnly.log": "aa7f92a2bbb0eccce9149671db912686aa8aa1a4dbf53851581de34a7686b03e",
+      "Becoming.Handoff.PreludeOnly.log": "859bbf23df2cfea8aaad553942969751a48ee348663978b43b5da26feb32e0fd",
+      "Becoming.RuleHandoff.PreludeOnly.log": "c9516ca74ef746cc34494b3ea6e07f29bca45e7b4f808673b219d6f6c147977f",
       "Becoming.Runs.PreludeOnly.log": "0314c4bc9a2f9677dcdc3243bd640e5e1f72a6367a7ee5c1e9d29f40b8b91cc7",
       "Becoming.CourseWorlds.PreludeOnly.log": "c97527ec306d6b00204dffaac157f77888c76635fa4e7a528ace2d61167d9e47",
       "Becoming.LearnableRuns.PreludeOnly.log": "fa0facbcfa1d1d3c9ba12ecaf9273c52c83084cf6a321e49837eca8d0fbfc1bc",
@@ -7852,7 +7981,7 @@
       "Becoming.TailRuns.PreludeOnly.log": "c977aa728d01112e1ae6042cf64b38f961c1c3b3502f6b3b57103902a25a940e",
       "Becoming.TallyWorlds.PreludeOnly.log": "cf83b9942cc61c1e4f870291da3c8636b7ffc78da487b87eadc4d7eb53c2695e",
       "Becoming.WeightedTraces.PreludeOnly.log": "c92810ab270ff574015486eb0f16b3a53e84bca1f1603bd2b50e044927b12c73",
-      "Becoming.PreludeOnly.log": "2025b4c9106c9751ca261f4b58d010d4497c514582d35cd3bb469237b98fa2c6"
+      "Becoming.PreludeOnly.log": "313279c391899f68865d6e460e3aed1832e8549b5756153ccd45f7849b86226b"
     }
   },
   "superseded_modules": {
@@ -10232,6 +10361,11 @@
     "Becoming.Bundles": 196,
     "Becoming.ActivationCapacity": 16,
     "Becoming.Narrowing": 167,
+    "Becoming.PositiveGround": 229,
+    "Becoming.ProfileReach": 88,
+    "Becoming.RenewalBound": 32,
+    "Becoming.Handoff": 100,
+    "Becoming.RuleHandoff": 323,
     "Becoming.Runs": 56,
     "Becoming.CourseWorlds": 47,
     "Becoming.LearnableRuns": 22,
@@ -10620,6 +10754,39 @@
       "propext"
     ],
     "Becoming.Activation.History.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.PositiveGround.Arrangement.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.PositiveGround.Position.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.ProfileReach.Standpoint.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.Event.handoff.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.Event.review.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.Event.propose.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.Event.integrate.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.Event.adopt.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.Event.enroll.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.Ballot.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.RuleHandoff.State.mk.injEq": [
       "propext"
     ],
     "Becoming.WebAt.mk.injEq": [
@@ -66730,6 +66897,1316 @@
       "kernel_checked": true
     },
     {
+      "module": "Becoming.PositiveGround",
+      "spine": true,
+      "layer": "core",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.finiteIntegral"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.one_sub_succ"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.pos_succ"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.not_pos_negSucc"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.pos_or_pos"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.positive_integral_has_positive_occurrence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.contingent_generation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.certified_integral_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.certified_reason_on_scope"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.contingent_generation_of_unrestricted"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.RouteReason"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.every_situated_position_has_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.every_situated_position_has_reason_of_unrestricted"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.route_reason_is_least"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.route_reason_depends_only_on_access"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.PositiveGround.FormationModel"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.magnitude"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.PositiveGround.LivingClaim"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.PositiveGround.Arrangement"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.respond"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.prior"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.realizes"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.futureFrame"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.fresh"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.same_response_without_fixed_form"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.PositiveGround.Occurrence"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.positiveDomain"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.fullDomain"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.contribution"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.occurrenceMeaning"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.positive_occurrence_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.positiveDomain_nodup"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.fullDomain_nodup"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.positive_integral_and_adverse_full_change"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.response_preserves_joint_openness"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.rule"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.repertoire"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.firstEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.live"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.live_one"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.live_two"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.barren_not_live"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.live_productive"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.wider_scope_can_require_certificate_retraction"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.PositiveGround.Act"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.arrangementOf"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Becoming.PositiveGround.Continuation"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.admittedAfter"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.wholeFrame"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.priorIn"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.g0Relevant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.g0_holds"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.PositiveGround.Substrate"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.PositiveGround.Position"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.access"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.respond_formation"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.nonEndorsingArtificial"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PositiveGround.endorsingHumanWithoutAccess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.nonendorsing_position_with_access_has_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.endorsement_without_access_gets_no_route_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PositiveGround.endorsement_independence_is_supplied_by_articulation"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.PositiveGround.finiteIntegral": [],
+        "Becoming.PositiveGround.one_sub_succ": [],
+        "Becoming.PositiveGround.pos_succ": [],
+        "Becoming.PositiveGround.not_pos_negSucc": [],
+        "Becoming.PositiveGround.pos_or_pos": [],
+        "Becoming.PositiveGround.positive_integral_has_positive_occurrence": [],
+        "Becoming.PositiveGround.contingent_generation": [],
+        "Becoming.PositiveGround.certified_integral_reason": [],
+        "Becoming.PositiveGround.certified_reason_on_scope": [],
+        "Becoming.PositiveGround.contingent_generation_of_unrestricted": [],
+        "Becoming.PositiveGround.RouteReason": [],
+        "Becoming.PositiveGround.every_situated_position_has_reason": [],
+        "Becoming.PositiveGround.every_situated_position_has_reason_of_unrestricted": [],
+        "Becoming.PositiveGround.route_reason_is_least": [],
+        "Becoming.PositiveGround.route_reason_depends_only_on_access": [],
+        "Becoming.PositiveGround.FormationModel": [],
+        "Becoming.PositiveGround.magnitude": [],
+        "Becoming.PositiveGround.LivingClaim": [],
+        "Becoming.PositiveGround.Arrangement": [],
+        "Becoming.PositiveGround.initial": [],
+        "Becoming.PositiveGround.respond": [],
+        "Becoming.PositiveGround.prior": [],
+        "Becoming.PositiveGround.realizes": [],
+        "Becoming.PositiveGround.futureFrame": [],
+        "Becoming.PositiveGround.fresh": [],
+        "Becoming.PositiveGround.same_response_without_fixed_form": [],
+        "Becoming.PositiveGround.Occurrence": [],
+        "Becoming.PositiveGround.positiveDomain": [],
+        "Becoming.PositiveGround.fullDomain": [],
+        "Becoming.PositiveGround.contribution": [],
+        "Becoming.PositiveGround.occurrenceMeaning": [],
+        "Becoming.PositiveGround.positive_occurrence_correspondence": [],
+        "Becoming.PositiveGround.positiveDomain_nodup": [],
+        "Becoming.PositiveGround.fullDomain_nodup": [],
+        "Becoming.PositiveGround.positive_integral_and_adverse_full_change": [],
+        "Becoming.PositiveGround.response_preserves_joint_openness": [],
+        "Becoming.PositiveGround.rule": [],
+        "Becoming.PositiveGround.repertoire": [],
+        "Becoming.PositiveGround.firstEvidence": [],
+        "Becoming.PositiveGround.live": [],
+        "Becoming.PositiveGround.live_one": [],
+        "Becoming.PositiveGround.live_two": [],
+        "Becoming.PositiveGround.barren_not_live": [],
+        "Becoming.PositiveGround.live_productive": [],
+        "Becoming.PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses": [],
+        "Becoming.PositiveGround.wider_scope_can_require_certificate_retraction": [],
+        "Becoming.PositiveGround.Act": [],
+        "Becoming.PositiveGround.arrangementOf": [],
+        "Becoming.PositiveGround.Continuation": [],
+        "Becoming.PositiveGround.admittedAfter": [],
+        "Becoming.PositiveGround.wholeFrame": [],
+        "Becoming.PositiveGround.priorIn": [],
+        "Becoming.PositiveGround.g0Relevant": [],
+        "Becoming.PositiveGround.g0_holds": [],
+        "Becoming.PositiveGround.Substrate": [],
+        "Becoming.PositiveGround.Position": [],
+        "Becoming.PositiveGround.access": [],
+        "Becoming.PositiveGround.respond_formation": [],
+        "Becoming.PositiveGround.nonEndorsingArtificial": [],
+        "Becoming.PositiveGround.endorsingHumanWithoutAccess": [],
+        "Becoming.PositiveGround.nonendorsing_position_with_access_has_reason": [],
+        "Becoming.PositiveGround.endorsement_without_access_gets_no_route_reason": [],
+        "Becoming.PositiveGround.endorsement_independence_is_supplied_by_articulation": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.ProfileReach",
+      "spine": true,
+      "layer": "core",
+      "theorems": 16,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Becoming.ProfileReach.Standpoint"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.SelfGood"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.Monotone"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.Supervenes"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.Tolerant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.self_good_reaches_at_least_as_connected"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.strict_indexed_rival_inconsistent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.chain_preserves"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.valuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.tolerant_iff_neutral"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.reach_relations_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.selfGood_valuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.tolerant_chain_reaches"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.reachableFrame"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.reach_is_g0"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.self_good_derives_reachable_g0"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.ProfileReach.Occ"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.degree"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.ownOcc"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.reachOcc"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.adjacent"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.standpoint"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.formed_other_has_significance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.threshold_selfGood"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.threshold_rival_is_consistent_without_tolerance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.tolerant_standpoint_reaches_stranger"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.present_aim_evaluator_escapes"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.closedStep"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.closed_self_blocks_reach"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.profile2"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.productLe"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ProfileReach.persistence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ProfileReach.persistence_rival_escapes_self_transcendence"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.ProfileReach.Standpoint": [],
+        "Becoming.ProfileReach.SelfGood": [],
+        "Becoming.ProfileReach.Monotone": [],
+        "Becoming.ProfileReach.Supervenes": [],
+        "Becoming.ProfileReach.Tolerant": [],
+        "Becoming.ProfileReach.self_good_reaches_at_least_as_connected": [],
+        "Becoming.ProfileReach.strict_indexed_rival_inconsistent": [],
+        "Becoming.ProfileReach.chain_preserves": [],
+        "Becoming.ProfileReach.valuation": [],
+        "Becoming.ProfileReach.tolerant_iff_neutral": [],
+        "Becoming.ProfileReach.reach_relations_iff": [],
+        "Becoming.ProfileReach.selfGood_valuation": [],
+        "Becoming.ProfileReach.tolerant_chain_reaches": [],
+        "Becoming.ProfileReach.reachableFrame": [],
+        "Becoming.ProfileReach.reach_is_g0": [],
+        "Becoming.ProfileReach.self_good_derives_reachable_g0": [],
+        "Becoming.ProfileReach.Occ": [],
+        "Becoming.ProfileReach.degree": [],
+        "Becoming.ProfileReach.ownOcc": [],
+        "Becoming.ProfileReach.reachOcc": [],
+        "Becoming.ProfileReach.adjacent": [],
+        "Becoming.ProfileReach.standpoint": [],
+        "Becoming.ProfileReach.formed_other_has_significance": [],
+        "Becoming.ProfileReach.threshold_selfGood": [],
+        "Becoming.ProfileReach.threshold_rival_is_consistent_without_tolerance": [],
+        "Becoming.ProfileReach.tolerant_standpoint_reaches_stranger": [],
+        "Becoming.ProfileReach.present_aim_evaluator_escapes": [],
+        "Becoming.ProfileReach.closedStep": [],
+        "Becoming.ProfileReach.closed_self_blocks_reach": [],
+        "Becoming.ProfileReach.profile2": [],
+        "Becoming.ProfileReach.productLe": [],
+        "Becoming.ProfileReach.persistence": [],
+        "Becoming.ProfileReach.persistence_rival_escapes_self_transcendence": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.RenewalBound",
+      "spine": true,
+      "layer": "core",
+      "theorems": 21,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.no_unrenewed_tail_of_accessible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.no_renewal_free_tail"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.renewal_after_of_accessible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.renewal_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.renewal_arbitrarily_late_of_decidable"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.renewal_within_rank_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.renewal_within_rank_plus_one_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.rank_renewal_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.run_no_renewal_free_tail"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.run_renewal_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.run_renewal_within_rank"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RenewalBound.alternation"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RenewalBound.rank"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RenewalBound.Restoring"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RenewalBound.AlternatingStep"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.state_succ"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.actual_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.nonrestoring_decreases"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.restores_arbitrarily_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.period_two"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.one_restoring_form"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.restoration_raises_rank"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.unrenewed_first_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.no_new_configurations"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RenewalBound.every_score_bounded"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.RenewalBound.no_unrenewed_tail_of_accessible": [],
+        "Becoming.RenewalBound.no_renewal_free_tail": [],
+        "Becoming.RenewalBound.renewal_after_of_accessible": [],
+        "Becoming.RenewalBound.renewal_arbitrarily_late": [],
+        "Becoming.RenewalBound.renewal_arbitrarily_late_of_decidable": [],
+        "Becoming.RenewalBound.renewal_within_rank_bound": [],
+        "Becoming.RenewalBound.renewal_within_rank_plus_one_steps": [],
+        "Becoming.RenewalBound.rank_renewal_arbitrarily_late": [],
+        "Becoming.RenewalBound.run_no_renewal_free_tail": [],
+        "Becoming.RenewalBound.run_renewal_arbitrarily_late": [],
+        "Becoming.RenewalBound.run_renewal_within_rank": [],
+        "Becoming.RenewalBound.alternation": [],
+        "Becoming.RenewalBound.rank": [],
+        "Becoming.RenewalBound.Restoring": [],
+        "Becoming.RenewalBound.AlternatingStep": [],
+        "Becoming.RenewalBound.state_succ": [],
+        "Becoming.RenewalBound.actual_steps": [],
+        "Becoming.RenewalBound.nonrestoring_decreases": [],
+        "Becoming.RenewalBound.restores_arbitrarily_late": [],
+        "Becoming.RenewalBound.period_two": [],
+        "Becoming.RenewalBound.one_restoring_form": [],
+        "Becoming.RenewalBound.restoration_raises_rank": [],
+        "Becoming.RenewalBound.unrenewed_first_step": [],
+        "Becoming.RenewalBound.no_new_configurations": [],
+        "Becoming.RenewalBound.every_score_bounded": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.Handoff",
+      "spine": true,
+      "layer": "core",
+      "theorems": 22,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.handed_off_progress"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.boundedFrame"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.generation_by_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.positive_ground_by_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.positive_ground_by_bound_of_unrestricted"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.revised_generation_by_bound_of_unrestricted"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.generation_by_bound_on_runs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.Run.novel_by_handoff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.Run.relevance_by_handoff_of_unrestricted"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.Handoff.Stage"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.Handoff.Rule"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.completed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.advance"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.remaining"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.each_fixed_rule_finishes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.each_rule_local_progress"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.restartChoice"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.revisingRun"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.revising_run_stays_unfinished"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.revising_unfinished"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.revised_rules_can_fail_forever"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.revision_resets_remaining"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.changed_form_with_valid_handoff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.realizes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.realized_form_need_not_be_fixed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.process"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.frame"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.step_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Handoff.revising"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.revising_state"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.changed_form"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.outcome_not_fixed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.fails_forever"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Handoff.resets_remaining"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.Handoff.handed_off_progress": [],
+        "Becoming.Handoff.boundedFrame": [],
+        "Becoming.Handoff.generation_by_bound": [],
+        "Becoming.Handoff.positive_ground_by_bound": [],
+        "Becoming.Handoff.positive_ground_by_bound_of_unrestricted": [],
+        "Becoming.Handoff.revised_generation_by_bound_of_unrestricted": [],
+        "Becoming.Handoff.generation_by_bound_on_runs": [],
+        "Becoming.Handoff.Run.novel_by_handoff": [],
+        "Becoming.Handoff.Run.relevance_by_handoff_of_unrestricted": [],
+        "Becoming.Handoff.Stage": [],
+        "Becoming.Handoff.Rule": [],
+        "Becoming.Handoff.completed": [],
+        "Becoming.Handoff.advance": [],
+        "Becoming.Handoff.remaining": [],
+        "Becoming.Handoff.each_fixed_rule_finishes": [],
+        "Becoming.Handoff.each_rule_local_progress": [],
+        "Becoming.Handoff.restartChoice": [],
+        "Becoming.Handoff.revisingRun": [],
+        "Becoming.Handoff.revising_run_stays_unfinished": [],
+        "Becoming.Handoff.revising_unfinished": [],
+        "Becoming.Handoff.revised_rules_can_fail_forever": [],
+        "Becoming.Handoff.revision_resets_remaining": [],
+        "Becoming.Handoff.changed_form_with_valid_handoff": [],
+        "Becoming.Handoff.realizes": [],
+        "Becoming.Handoff.realized_form_need_not_be_fixed": [],
+        "Becoming.Handoff.process": [],
+        "Becoming.Handoff.frame": [],
+        "Becoming.Handoff.step_iff": [],
+        "Becoming.Handoff.revising": [],
+        "Becoming.Handoff.revising_state": [],
+        "Becoming.Handoff.changed_form": [],
+        "Becoming.Handoff.outcome_not_fixed": [],
+        "Becoming.Handoff.fails_forever": [],
+        "Becoming.Handoff.resets_remaining": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.RuleHandoff",
+      "spine": true,
+      "layer": "core",
+      "theorems": 71,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "Becoming.RuleHandoff.Rule"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.RuleHandoff.Ballot"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.RuleHandoff.State"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.voters"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.consistent"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.governance"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.technical"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.RuleHandoff.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.handoff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.fork"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.step"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.run"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.process"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.allVote"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.twoVote"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.fourVote"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.formation"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.formed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.revised"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.and_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.and_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.some_of_ite"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.cond_of_ite"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.mem_of_contains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.trace_iff_run"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.run_is_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.admitted_requires_review"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.adoption_uses_recorded_proposal"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.adopts"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.nonAdopting"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.rule_kept"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.adopts_of_nonAdopting"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.nonadopting_step_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.changed_rule_requires_adoption"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.nonadopting_trace_keeps_rule"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.nonadopting_history_inherits"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.rule_inherited"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.rule_change_located"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoff_preserves_record"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoff_does_not_invent_participation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.fork_retains_source"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.handoffs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.repeated_handoff_inherits"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.same_enacted_relations_same_decision"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.filter_absent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.voters_absent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.no_participation_no_integration"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.extend_case"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.majority_acceptance_survives_extension"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.relations_form_through_work"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.review_alone_does_not_confer_office"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.office_without_review_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.proposal_alone_does_not_change_rule"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.authorized_revision_is_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.low_support_cannot_revise"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.duplicate_votes_do_not_create_mandates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.inherited_rules_change_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.wait_and_objection_matter"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.inherited_revision_continues"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.copied_rule_without_participation_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.enabling_one_operation_need_not_enable_revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.successor_can_revise_inherited_rule"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.boundary_is_not_exclusive_membership"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RuleHandoff.summary"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.no_count_only_decision"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.common_history_can_branch_with_different_rules"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.formation_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.revision_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.inherited_course_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.successor_revision_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.low_support_infeasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.review_step_keeps_roster"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.entry_without_review_disabled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.proposal_step_keeps_rule"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoff_step_eq"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoff_step_keeps"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoffs_trace_eq"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoffs_trace_keeps"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.fork_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.branch_revises"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.integrate_enabled_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.repeated_votes_disabled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.wait_and_objection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoff_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoff_without_participation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.integration_without_revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.entry_step_requires"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.handoff_step_present"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.fork_shares_position"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.same_relations_same_integration"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.no_presence_no_integration"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.majority_integration_extends"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.bool_eq_of_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RuleHandoff.counts_no_integration_reading"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.RuleHandoff.Rule": [],
+        "Becoming.RuleHandoff.Ballot": [],
+        "Becoming.RuleHandoff.State": [],
+        "Becoming.RuleHandoff.voters": [],
+        "Becoming.RuleHandoff.consistent": [],
+        "Becoming.RuleHandoff.governance": [],
+        "Becoming.RuleHandoff.technical": [],
+        "Becoming.RuleHandoff.Event": [],
+        "Becoming.RuleHandoff.handoff": [],
+        "Becoming.RuleHandoff.fork": [],
+        "Becoming.RuleHandoff.step": [],
+        "Becoming.RuleHandoff.run": [],
+        "Becoming.RuleHandoff.process": [],
+        "Becoming.RuleHandoff.initial": [],
+        "Becoming.RuleHandoff.allVote": [],
+        "Becoming.RuleHandoff.twoVote": [],
+        "Becoming.RuleHandoff.fourVote": [],
+        "Becoming.RuleHandoff.formation": [],
+        "Becoming.RuleHandoff.formed": [],
+        "Becoming.RuleHandoff.revised": [],
+        "Becoming.RuleHandoff.revision": [],
+        "Becoming.RuleHandoff.and_left": [],
+        "Becoming.RuleHandoff.and_right": [],
+        "Becoming.RuleHandoff.some_of_ite": [],
+        "Becoming.RuleHandoff.cond_of_ite": [],
+        "Becoming.RuleHandoff.mem_of_contains": [],
+        "Becoming.RuleHandoff.trace_iff_run": [],
+        "Becoming.RuleHandoff.run_is_trace": [],
+        "Becoming.RuleHandoff.admitted_requires_review": [],
+        "Becoming.RuleHandoff.adoption_uses_recorded_proposal": [],
+        "Becoming.RuleHandoff.adopts": [],
+        "Becoming.RuleHandoff.nonAdopting": [],
+        "Becoming.RuleHandoff.rule_kept": [],
+        "Becoming.RuleHandoff.adopts_of_nonAdopting": [],
+        "Becoming.RuleHandoff.nonadopting_step_preserves": [],
+        "Becoming.RuleHandoff.changed_rule_requires_adoption": [],
+        "Becoming.RuleHandoff.nonadopting_trace_keeps_rule": [],
+        "Becoming.RuleHandoff.nonadopting_history_inherits": [],
+        "Becoming.RuleHandoff.rule_inherited": [],
+        "Becoming.RuleHandoff.rule_change_located": [],
+        "Becoming.RuleHandoff.handoff_preserves_record": [],
+        "Becoming.RuleHandoff.handoff_does_not_invent_participation": [],
+        "Becoming.RuleHandoff.fork_retains_source": [],
+        "Becoming.RuleHandoff.handoffs": [],
+        "Becoming.RuleHandoff.repeated_handoff_inherits": [],
+        "Becoming.RuleHandoff.same_enacted_relations_same_decision": [],
+        "Becoming.RuleHandoff.filter_absent": [],
+        "Becoming.RuleHandoff.voters_absent": [],
+        "Becoming.RuleHandoff.no_participation_no_integration": [],
+        "Becoming.RuleHandoff.extend_case": [],
+        "Becoming.RuleHandoff.majority_acceptance_survives_extension": [],
+        "Becoming.RuleHandoff.relations_form_through_work": [],
+        "Becoming.RuleHandoff.review_alone_does_not_confer_office": [],
+        "Becoming.RuleHandoff.office_without_review_fails": [],
+        "Becoming.RuleHandoff.proposal_alone_does_not_change_rule": [],
+        "Becoming.RuleHandoff.authorized_revision_is_actual": [],
+        "Becoming.RuleHandoff.low_support_cannot_revise": [],
+        "Becoming.RuleHandoff.duplicate_votes_do_not_create_mandates": [],
+        "Becoming.RuleHandoff.inherited_rules_change_access": [],
+        "Becoming.RuleHandoff.wait_and_objection_matter": [],
+        "Becoming.RuleHandoff.inherited_revision_continues": [],
+        "Becoming.RuleHandoff.copied_rule_without_participation_fails": [],
+        "Becoming.RuleHandoff.enabling_one_operation_need_not_enable_revision": [],
+        "Becoming.RuleHandoff.successor_can_revise_inherited_rule": [],
+        "Becoming.RuleHandoff.boundary_is_not_exclusive_membership": [],
+        "Becoming.RuleHandoff.summary": [],
+        "Becoming.RuleHandoff.no_count_only_decision": [],
+        "Becoming.RuleHandoff.common_history_can_branch_with_different_rules": [],
+        "Becoming.RuleHandoff.formation_trace": [],
+        "Becoming.RuleHandoff.revision_trace": [],
+        "Becoming.RuleHandoff.inherited_course_trace": [],
+        "Becoming.RuleHandoff.successor_revision_trace": [],
+        "Becoming.RuleHandoff.low_support_infeasible": [],
+        "Becoming.RuleHandoff.review_step_keeps_roster": [],
+        "Becoming.RuleHandoff.entry_without_review_disabled": [],
+        "Becoming.RuleHandoff.proposal_step_keeps_rule": [],
+        "Becoming.RuleHandoff.handoff_step_eq": [],
+        "Becoming.RuleHandoff.handoff_step_keeps": [],
+        "Becoming.RuleHandoff.handoffs_trace_eq": [],
+        "Becoming.RuleHandoff.handoffs_trace_keeps": [],
+        "Becoming.RuleHandoff.fork_step": [],
+        "Becoming.RuleHandoff.branch_revises": [],
+        "Becoming.RuleHandoff.integrate_enabled_iff": [],
+        "Becoming.RuleHandoff.repeated_votes_disabled": [],
+        "Becoming.RuleHandoff.wait_and_objection": [],
+        "Becoming.RuleHandoff.handoff_access": [],
+        "Becoming.RuleHandoff.handoff_without_participation": [],
+        "Becoming.RuleHandoff.integration_without_revision": [],
+        "Becoming.RuleHandoff.entry_step_requires": [],
+        "Becoming.RuleHandoff.handoff_step_present": [],
+        "Becoming.RuleHandoff.fork_shares_position": [],
+        "Becoming.RuleHandoff.same_relations_same_integration": [],
+        "Becoming.RuleHandoff.no_presence_no_integration": [],
+        "Becoming.RuleHandoff.majority_integration_extends": [],
+        "Becoming.RuleHandoff.bool_eq_of_iff": [],
+        "Becoming.RuleHandoff.counts_no_integration_reading": []
+      },
+      "kernel_checked": true
+    },
+    {
       "module": "Becoming.Runs",
       "spine": true,
       "layer": "core",
@@ -91559,35 +93036,34 @@
   "artifact_sha256": {
     "Becoming.Bridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ClassifiedFramesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.CodeAcquisition.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.CodeAcquisition.lean": "57eaf0c2e6485e101c57106d645549e6d7cd602ab6683eed9b16d2ea1145f501",
-    "Becoming.CodeAcquisition.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.CouplingHistoryFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.CourseExtensionFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.CoursesBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Derivation.lean": "5289aee24c348830c51d9e4973b485f7bbda82c9beb0114805650daeb41deb40",
     "Becoming.DrawnAmountProcessesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ExtensionFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.GranularityBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Handoff.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Handoff.lean": "95e4fa25cff31134f8c9584f30f403a26a0196a605e0c2cdd150d1e0740ab4f0",
+    "Becoming.Handoff.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.InterfaceTraces.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.InterfaceTracesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.LearnedGrouping.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.LearnedGrouping.lean": "a28f82e7ac01b822d23293e3f4a23783e68c38da27bde7f5294ccc2558b63632",
-    "Becoming.LearnedGrouping.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.MoveOutcomeProcessesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.PartialReadout.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.PartialReadout.lean": "c3dc0de256358ae8ea257d067816a305a8b4792d1a6343d314daa3a4564e3305",
-    "Becoming.PartialReadout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.PositiveGround.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.PositiveGround.lean": "4ff99039dd325dbb540298fba9b9b934fb87383e6dd00217243cf7b1454f698f",
+    "Becoming.PositiveGround.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.ProfileReach.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.ProfileReach.lean": "d850713ad0ab63c6b1c4a4f18d35ff0f5a447ef507c01f549f2145b7e2e240d9",
+    "Becoming.ProfileReach.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ReachableFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ReachableFramesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.RenewalBound.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.RenewalBound.lean": "d7bb80150768b0092f8c0179dc1d3b0d156d80d0e9c7b95f6fad130156c63725",
+    "Becoming.RenewalBound.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RenewalBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.ResponseLearning.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.ResponseLearning.lean": "fb57ed096d1805385c92ad807125e93799e6baafe3a54a02b572466b20c2fa8f",
-    "Becoming.ResponseLearning.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.RouteFormation.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.RouteFormation.lean": "63d52422585d568061674ef17d43db5ecf94417f76f95492efba790d67ffc88b",
-    "Becoming.RouteFormation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.RuleHandoff.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.RuleHandoff.lean": "25641a222585a5e2dbbc5210fdea811c9c8994efd38d3a6ed73b601d4027583b",
+    "Becoming.RuleHandoff.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RuleNarrowingProcesses.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RuleNarrowingProcessesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RuleRevisionTraces.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -91595,7 +93071,7 @@
     "Becoming.SeedReachProcesses.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.SupportGatedWebs.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.SupportGatedWebsInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.lean": "ddc008a3f7c74f5abf0fa2a158146708bbae255da847a6ac636d2ced827169f9",
+    "Becoming.lean": "c1ae6a99edd5d521b0b339c543983bbb0273249e48b1483a793a17e28dbcf3ad",
     "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "BecomingAxiomAudit.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingAxiomAudit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -91607,10 +93083,6 @@
     "BecomingClassifiedFramesInheritedAxiomAudit.log": "f33bd8628fa3ec848d6f140792b620be1e84a06f76ef7cbeb0bbb8b21b929059",
     "BecomingClassifiedFramesInheritedSignatures.lean": "bc871fdaa612febe7261358b4b92824f717226ddcb88cd91d9f1c442d5ee804b",
     "BecomingClassifiedFramesInheritedSignatures.log": "27541526b2f933bfba5e03d4a5a9954a5633ff582a2cc65918d7115852cf53bb",
-    "BecomingCodeAcquisitionAxiomAudit.lean": "b45fedfe440b3dc50b2f7765dd9fa4f667f53bc5fdb81b3517d57b9f32b036be",
-    "BecomingCodeAcquisitionAxiomAudit.log": "bd573207ef28e0826f987a4f9374e96b3853534205504bda0e861d960bd40d9a",
-    "BecomingCodeAcquisitionSignatures.lean": "80aaf0ce35cbcbbb2dff63b5a54cadbb564ba09c80b76ada405939c445703867",
-    "BecomingCodeAcquisitionSignatures.log": "3c4dfb61c0335e8aac43abd6ad882058441fad4b54c9e9d7092400dcb2859f38",
     "BecomingCouplingHistoryFramesAxiomAudit.lean": "302b7103f5bf98d1043fca313230e5e108e1814c34ed40628c261b366edd84f9",
     "BecomingCouplingHistoryFramesAxiomAudit.log": "03aac366dc0e714b5172bdf4e8c7cd03855fff13c11f482029d5ddd2b8566cb9",
     "BecomingCouplingHistoryFramesSignatures.lean": "3205fb89fb91196eb9056ce104b5eb0e71a7e37c97d1042b92328ad95826b528",
@@ -91635,6 +93107,10 @@
     "BecomingGranularityBridgeAxiomAudit.log": "d7cb291036b45bea9c4ffaa39b1eaed45e96cff7fc94e70eb1ba0c5d618499a6",
     "BecomingGranularityBridgeSignatures.lean": "1dd13051deb029c90a307f811b6b26e7d701895ecfc7c4fd8b92a5acb39cb523",
     "BecomingGranularityBridgeSignatures.log": "56b5eef9456366d924d0bd6c855341d80296a032fe27223978fc3f2ee9d11c35",
+    "BecomingHandoffAxiomAudit.lean": "8c9223c480a581a292edf84c58e94025f5e06ae30dd2e688997dcf46e5ee8b11",
+    "BecomingHandoffAxiomAudit.log": "8fdfc6ed5a06fae828c2ed9679023f086bc7737ac12e6ae5aa6cb55d991dab33",
+    "BecomingHandoffSignatures.lean": "2d82df62e97416ef8a95aae61c32903fa7b9628613bdf3d18fa679c95ddebb7f",
+    "BecomingHandoffSignatures.log": "de3185e6ac3170587dc70d38d6b6ca8d27b8bd5ad1166e1f862cb96b1565b51e",
     "BecomingInterfaceTracesAxiomAudit.lean": "8f984795ab41beb127c47d87674941461449ed90379fbcacf647794e6e7ddf1a",
     "BecomingInterfaceTracesAxiomAudit.log": "87c92b040198cb5c231519d1dc0df52f6b2c83a0c35bdbe043b8c98a411b6479",
     "BecomingInterfaceTracesInheritedAxiomAudit.lean": "faa62fdeaeac6f5efc1de2dea0b57e20890fdda46dda2a679cafb557995c10d2",
@@ -91643,18 +93119,18 @@
     "BecomingInterfaceTracesInheritedSignatures.log": "9d1c41d6803d3f8e83f647541acc582aefc9b431588ae7adac77664355ddfd75",
     "BecomingInterfaceTracesSignatures.lean": "409ab229f1499391bfa319824a0f02bc1664b5f16cddb1ab40ffe522a75237ef",
     "BecomingInterfaceTracesSignatures.log": "cd108de51415708c36395a9b0548e6f4d517e0715c2ae60b204e40226e309a82",
-    "BecomingLearnedGroupingAxiomAudit.lean": "243b3fdaa3a1b68f7d7c9a92e2cdcc2f59b845489cd63940eef3d89337e80cb3",
-    "BecomingLearnedGroupingAxiomAudit.log": "a086ed35e270bf3bedd299b50c15e87f097e1aee0ac168a64a66798b958db5e7",
-    "BecomingLearnedGroupingSignatures.lean": "7b089dbd5ad0c5c14e701710c37d629575c32f9d5199cb0b1adabb683677db5b",
-    "BecomingLearnedGroupingSignatures.log": "42bb6d1dc1f9d78b0ac71a92cf098fdfc5f80ccec2a0216303ad92af4fc44514",
     "BecomingMoveOutcomeProcessesInheritedAxiomAudit.lean": "1fe9d88a0107d255199b76d667ff339e976c185b597aa48c18db46d7a48979b1",
     "BecomingMoveOutcomeProcessesInheritedAxiomAudit.log": "9a124eff6760fd8c5b3ddc499fb40a1ed102bce73fa54445e029043f7641aa1c",
     "BecomingMoveOutcomeProcessesInheritedSignatures.lean": "a1ccb618c59fabe1b6798465efbadb1387ad76bbf345816f417aee4bbd2edb4e",
     "BecomingMoveOutcomeProcessesInheritedSignatures.log": "a77345fdbc102d6ea72be4cc6b08d094484bee5eac3ce367a7bcd902e0193f90",
-    "BecomingPartialReadoutAxiomAudit.lean": "44adf7e2b4229fa601eca78122f76019fedea3778194626c8cd3b4914979708f",
-    "BecomingPartialReadoutAxiomAudit.log": "74f075173cd0755435ebbcfb6ee2c05577fe1ce669848144a7e2fc1680ab8060",
-    "BecomingPartialReadoutSignatures.lean": "5fd1a8d8f9e0a8fb15939f334379c200e2f9196496a5746f6d0dae443d88681b",
-    "BecomingPartialReadoutSignatures.log": "fc51ae7f970a75e07711ac74711f0056c0fad266181359df2d03bedc29f56532",
+    "BecomingPositiveGroundAxiomAudit.lean": "d99d6b278a69265b713965191a0ea92534252d528b4ab0b5c1186299b86a5134",
+    "BecomingPositiveGroundAxiomAudit.log": "bd21c6037cdfb543754254c782a39aef995be7930b18fd0a4c5d5bff47ba99c6",
+    "BecomingPositiveGroundSignatures.lean": "d26e7255060274d40805d0683be9428869fac5191221a0b3f446d53235e20bd5",
+    "BecomingPositiveGroundSignatures.log": "c02421b90cf35e1f7627baa95546cd9885402a2a999efb46b200ce66ccea03d3",
+    "BecomingProfileReachAxiomAudit.lean": "08d7b13bbf165e08270df621b046099e303ed82674d876a63d6eca43790b4672",
+    "BecomingProfileReachAxiomAudit.log": "c9c54c4ddc437abed5843185628764c8050818b88e7a70f07b9ca7d12cd47f25",
+    "BecomingProfileReachSignatures.lean": "494dd6d6c3afe839b5f641e902b60669cd7e6253074b2b1925e036405bbe2bc1",
+    "BecomingProfileReachSignatures.log": "017df0c095136712e9a1265daa24cd9ec89d4cc7e86239131a0ba3c2fe656c6c",
     "BecomingReachableFramesAxiomAudit.lean": "410d5d9f5d83b8ec892b35166e5c3f5a44877d22e7cb5140fda7b5bafbe5e5a7",
     "BecomingReachableFramesAxiomAudit.log": "91c67214b3328be3278238de6ce542a139b3dbf0c28d8694d6a929ec42842dde",
     "BecomingReachableFramesInheritedAxiomAudit.lean": "b19a5025820dba3a7d9c4b317e6fc9c3a9c997b9110dc848859b9c33d0ad51fd",
@@ -91663,18 +93139,18 @@
     "BecomingReachableFramesInheritedSignatures.log": "0aab2314c7a9d6a5def33c5fb1985531fe7030502d0f65342827fb6dd78cd15a",
     "BecomingReachableFramesSignatures.lean": "ffce880c9d73ae712218abf0fc8bee67b5f825dc02141dcfeb91fbf3be9ced8a",
     "BecomingReachableFramesSignatures.log": "e124cb6dc92406af6fb2d279e3b6450aa92072a27caa7593424491df0e543447",
+    "BecomingRenewalBoundAxiomAudit.lean": "e518d0556c835730c7f30bc80c7ea5ef6e6521024eab0ec61eda43b1a3088ed2",
+    "BecomingRenewalBoundAxiomAudit.log": "8bd5f321c54a84a1d3736ce37d8d85f466cdf6e9887377cbde0febf0d3c82631",
+    "BecomingRenewalBoundSignatures.lean": "e7e610af6d95d66d46e73a59711473706ec1f97c84388e62cf841680b9dfc5a6",
+    "BecomingRenewalBoundSignatures.log": "db2abd742144c6c47e85faa71559bc7b79f1ab544f81d4958affc342646bcd89",
     "BecomingRenewalBridgeAxiomAudit.lean": "39bf79460de998aaba86d617966d6123a0b7fbdb9ac2e24d63afd941c23fd779",
     "BecomingRenewalBridgeAxiomAudit.log": "7bb9a1ad1f85bb68cae4fbd492adc0e2a3b79c97babe2b5382a9cfb91667bc87",
     "BecomingRenewalBridgeSignatures.lean": "e8cd74ae91338dcc4b107a8eeca73ce2bd4f305b1ed1f1e396581f8c53efc67c",
     "BecomingRenewalBridgeSignatures.log": "27e291a7558d4c9cdc9a80b2c114bfaeb021febf46bae48e27b9eeb0ce84bdd9",
-    "BecomingResponseLearningAxiomAudit.lean": "3510ec293e9f8291c4093892bd26fb75bd99394fdcc3c499a1ebc83b89b8a597",
-    "BecomingResponseLearningAxiomAudit.log": "eb4874fe62d2219a5602388a1afa51901e79a450fe562952f5ce8833e82da311",
-    "BecomingResponseLearningSignatures.lean": "99aa897c8e0aa265a67cb09e665876a7a547b41f30f19618387716ddef789a5e",
-    "BecomingResponseLearningSignatures.log": "6c490ff5f8b6c38e1c69d6fb245eb7dd567ebb8c73f528448780d559cb9843c0",
-    "BecomingRouteFormationAxiomAudit.lean": "438dcc3ed68c3cbb3c39e61d7cc347c4d6f0dde7b24cafea0262b60184f63e34",
-    "BecomingRouteFormationAxiomAudit.log": "52505ec1add8f432da759b625bf01c92de930c6acf1b801fc199cff592b13ea8",
-    "BecomingRouteFormationSignatures.lean": "d41cf23452655a6d4dc2bb6b0a948e2bbe6785a0947d9ab6576eb6e93e47fe31",
-    "BecomingRouteFormationSignatures.log": "d831331cbb76e8e1da04c2ed351b19153cf151e364a8b7258010196fe8476c02",
+    "BecomingRuleHandoffAxiomAudit.lean": "c30b406de1f0946875ebe9ec59f07f3dc2751b4329d8474c468f8c9e25bb9166",
+    "BecomingRuleHandoffAxiomAudit.log": "bf622a238f0156866415c8a8a5448b9d3111debd032eaa56c2bce723b32e4188",
+    "BecomingRuleHandoffSignatures.lean": "a16fadc83d37a2390e41bd725f315f4fcb58ee36e7c07e9badba9b7dc213dcc6",
+    "BecomingRuleHandoffSignatures.log": "6a47e38882e9d75f2246472498217ad10234b32e4c3404eaac57e41d41f83cca",
     "BecomingRuleNarrowingProcessesAxiomAudit.lean": "58c54a4a723038c0e55d03a515a76f58c49c4f6fa3be903bcf59fc7efd561f2c",
     "BecomingRuleNarrowingProcessesAxiomAudit.log": "8522977c9de823e032b274af9ad4064d2a45ccb6ae64d55ae64e7bb145e03942",
     "BecomingRuleNarrowingProcessesInheritedAxiomAudit.lean": "6e41cbf55959ba4d2b9484fc9d098428af68f8e8ad15ed0c1d9d65354165629c",
@@ -91709,9 +93185,9 @@
     "BridgeEnvironmentAudit.log": "d15b53ed338e0af4723368bce5cbe0a20fd4f4735210793d1590dd8b931b6be4",
     "Controls.lean": "889320e9c37a781d4e846a48dfebbce63579a4050230e4f2e75d25883c808e30",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "EnvironmentAudit.lean": "a466d047b3e2d2cef668a3c758e82922dac7c3e7d0bfb57d25c20da8288d1238",
-    "EnvironmentAudit.log": "efa2810808275b724d81e6b938fa9eb3289aebf0521763e5af2d256c8359b0af",
-    "check_becoming.py": "cc997873daca1923dd39a7bddc04ff99145942fdadfc0751f446528377103671",
+    "EnvironmentAudit.lean": "01a7641f17cdc099ebfda5f6dd563ee8b930b3c9e59d89b7f5177ec8537a5e91",
+    "EnvironmentAudit.log": "6f98660ad408661d93cb22bcab10331649bc4e14aa9e1ef25c197f84c149addd",
+    "check_becoming.py": "06f5e1d3846487c441109b02736536ffca8c4533e55500b21cc8bad620309304",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }

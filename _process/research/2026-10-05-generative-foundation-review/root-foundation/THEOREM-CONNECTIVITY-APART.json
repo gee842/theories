@@ -2061,6 +2061,66 @@
    "module": "Becoming.RouteFormation",
    "category": "model-witness",
    "reason": "a computed list: the routes the supplied grammar generates with two sockets"
+  },
+  "Becoming.Handoff.changed_form_with_valid_handoff": {
+   "module": "Becoming.Handoff",
+   "category": "model-witness",
+   "reason": "a computation in the constructed stage model: after one step of the left rule the direct-right rule completes instead, within the handoff bound (OpenFutureRevision, ported by F3J)"
+  },
+  "Becoming.PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses": {
+   "module": "Becoming.PositiveGround",
+   "category": "model-witness",
+   "reason": "a fact about the constructed formation model and its repertoire: the first observation rules out the barren magnitude, the positive integral is positive in every live model, and which magnitude holds stays open (PositiveGroundUncertainty, ported by F3J)"
+  },
+  "Becoming.PositiveGround.positive_integral_and_adverse_full_change": {
+   "module": "Becoming.PositiveGround",
+   "category": "model-witness",
+   "reason": "a computation in the constructed formation model: a positive integral over the new aspect coexists with an adverse full signed change (PositiveGroundUncertainty, ported by F3J)"
+  },
+  "Becoming.PositiveGround.route_reason_depends_only_on_access": {
+   "module": "Becoming.PositiveGround",
+   "category": "general-structure",
+   "reason": "a law of every access, admission and positivity relation on any type: positions alike in access are alike in the route reason (PositionedPositiveReason, ported by F3J)"
+  },
+  "Becoming.PositiveGround.wider_scope_can_require_certificate_retraction": {
+   "module": "Becoming.PositiveGround",
+   "category": "model-witness",
+   "reason": "a fact about the constructed formation model: widening the admitted scope to the barren magnitude retracts the certificate (PositiveGroundUncertainty, ported by F3J)"
+  },
+  "Becoming.ProfileReach.closed_self_blocks_reach": {
+   "module": "Becoming.ProfileReach",
+   "category": "model-witness",
+   "reason": "a fact about the constructed finite occurrence model of degrees of connection with a closed step: tolerance holds yet nothing reaches the stranger (EvaluatorGrounding, ported by F3J)"
+  },
+  "Becoming.ProfileReach.formed_other_has_significance": {
+   "module": "Becoming.ProfileReach",
+   "category": "model-witness",
+   "reason": "a fact about the constructed finite occurrence model of degrees of connection: every monotone self-good standpoint on it gives the formed other significance (EvaluatorGrounding, ported by F3J)"
+  },
+  "Becoming.ProfileReach.persistence_rival_escapes_self_transcendence": {
+   "module": "Becoming.ProfileReach",
+   "category": "model-witness",
+   "reason": "a fact about the constructed persistence standpoint on two-component profiles: self-good and monotone, it gives the formed other no significance (EvaluatorGrounding, ported by F3J)"
+  },
+  "Becoming.ProfileReach.present_aim_evaluator_escapes": {
+   "module": "Becoming.ProfileReach",
+   "category": "model-witness",
+   "reason": "a fact about the constructed finite occurrence model of degrees of connection: the evaluator valuing nothing meets monotonicity, supervenience and tolerance and assigns no significance (EvaluatorGrounding, ported by F3J)"
+  },
+  "Becoming.ProfileReach.strict_indexed_rival_inconsistent": {
+   "module": "Becoming.ProfileReach",
+   "category": "general-structure",
+   "reason": "a law of every standpoint on any type of occurrences and profiles: a self-good monotone standpoint valuing only its own occurrences is inconsistent once another living occurrence is at least as connected (EvaluatorGrounding, ported by F3J)"
+  },
+  "Becoming.ProfileReach.threshold_rival_is_consistent_without_tolerance": {
+   "module": "Becoming.ProfileReach",
+   "category": "model-witness",
+   "reason": "a fact about the constructed finite occurrence model of degrees of connection: the threshold standpoint reaches the formed other, not the stranger, and violates tolerance at its cut (EvaluatorGrounding, ported by F3J)"
+  },
+  "Becoming.ProfileReach.tolerant_standpoint_reaches_stranger": {
+   "module": "Becoming.ProfileReach",
+   "category": "model-witness",
+   "reason": "a fact about the constructed finite occurrence model of degrees of connection: with tolerance along adjacent degrees a self-good standpoint reaches the stranger (EvaluatorGrounding, ported by F3J)"
   }
  }
 }

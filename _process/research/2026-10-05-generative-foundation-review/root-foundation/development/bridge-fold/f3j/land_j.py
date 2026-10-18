@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """F3J (19 October 2026): list F3J's new core modules in the package README and the chapter reference.
 
-usage (from the checkout root): python3 -B land_j.py RECEIPT_ID MODULE ...
+usage (from the checkout root): python3 -B land_j.py RECEIPT_ID MODULE[@ANCHOR] ...
 
 The CORE entries and the root imports and module notes are in the branch commits (they are checked
 inputs, so they are final before the checker runs). This adds, for each module, a row after the
-previous one (the first after `Becoming.Relevance`) to the package README's layer table and the
+previous one (the first after `Becoming.Relevance`), or after `Becoming.ANCHOR` where one is named, to the package README's layer table and the
 chapter reference's table, with the module's note from `Becoming.lean` and, in the reference, its
 theorem count from the receipt; and the modules' imports to the README's import notes. Idempotent.
 """
@@ -16,7 +16,10 @@ import sys
 
 PKG = pathlib.Path('experiments/integrated-correction/general-framework/generative-basis/lean/becoming')
 REF = pathlib.Path('theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md')
-RID, MODS = sys.argv[1], sys.argv[2:]
+RID = sys.argv[1]
+ARGS = [a.partition('@') for a in sys.argv[2:]]
+MODS = [m for m, _, _ in ARGS]
+ANCHOR = {m: a for m, _, a in ARGS if a}
 receipt = json.load(open(PKG / 'becoming-checks' / RID / 'verification.json'))
 count = {m['module']: m['theorems'] for m in receipt.get('modules', [])}
 
@@ -46,6 +49,7 @@ lines = readme.read_text().split('\n')
 prev = 'Relevance'
 for m in MODS:
     layer, text = note(m)
+    prev = ANCHOR.get(m, prev)
     if not any(l.startswith(f'| {layer} | [`Becoming.{m}`]') for l in lines):
         i = next(k for k, l in enumerate(lines) if re.match(rf'^\| L\d \| \[`Becoming\.{prev}`\]', l))
         lines.insert(i + 1, f'| {layer} | [`Becoming.{m}`](Becoming/{m}.lean) | {text} |')
@@ -63,6 +67,7 @@ lines = REF.read_text().split('\n')
 prev = 'Relevance'
 for m in MODS:
     layer, text = note(m)
+    prev = ANCHOR.get(m, prev)
     if not any(f'[Becoming.{m}](' in l for l in lines):
         i = next(k for k, l in enumerate(lines) if re.match(rf'^\| L\d \| \[Becoming\.{prev}\]\(', l))
         link = f'../../../{PKG}/Becoming/{m}.lean'

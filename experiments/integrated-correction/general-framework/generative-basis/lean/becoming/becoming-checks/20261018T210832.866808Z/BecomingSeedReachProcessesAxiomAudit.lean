@@ -1,0 +1,24 @@
+import Becoming.SeedReachProcesses
+#print axioms Becoming.SeedReachProcesses.reached_iff
+#print axioms Becoming.SeedReachProcesses.cutReach_iff
+#print axioms Becoming.SeedReachProcesses.admissible_iff
+#print axioms Becoming.SeedReachProcesses.atlasProcess
+#print axioms Becoming.SeedReachProcesses.scopeProcess
+#print axioms Becoming.SeedReachProcesses.joined_iff_moves
+#print axioms Becoming.SeedReachProcesses.scoped_iff_moves
+#print axioms Becoming.SeedReachProcesses.scope_reach_in_atlas
+#print axioms Becoming.SeedReachProcesses.glued_on_reach
+#print axioms Becoming.SeedReachProcesses.alternating_beyond_scopes
+#print axioms Becoming.SeedReachProcesses.unconnected_coverage_insufficient
+#print axioms Becoming.SeedReachProcesses.historyProcess
+#print axioms Becoming.SeedReachProcesses.history_iff_moves
+#print axioms Becoming.SeedReachProcesses.history_reach_keeps
+#print axioms Becoming.SeedReachProcesses.history_fromSeed_iff
+#print axioms Becoming.SeedReachProcesses.history_sound_on_reach
+#print axioms Becoming.SeedReachProcesses.hasCut_iff_separated
+#print axioms Becoming.SeedReachProcesses.cut_iff_not_fromSeed
+#print axioms Becoming.SeedReachProcesses.noCut_iff_fromSeed_of_decidable
+#print axioms Becoming.SeedReachProcesses.upgrade_iff_dne
+#print axioms Becoming.SeedReachProcesses.reachable_living_significance
+#print axioms Becoming.reached_iff_closure
+#print axioms Becoming.cutReach_iff_closure

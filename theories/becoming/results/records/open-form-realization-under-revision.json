@@ -31,7 +31,7 @@
     "zh": "阶段、组织路线和修订均是共同活动内的分化，不预设外在操控者或私有价值所有者。证书只证明指定的有限实现界限；若事件编号 n 表示第 n 到 n+1 次转变，0..B的事件范围为至多 B+1次转变。名字为 formed 的终止状态本身不认证现实中的善或履约。",
     "en": "Stages, organizational rules and revisions differentiate within shared activity, without a primitive external controller or private value owners. Certificates support a specified finite realization bound; if event n denotes transition n to n+1, events 0..B comprise at most B+1 transitions. Terminal states named formed do not themselves certify actual goodness or fulfillment."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
   "aliases": [
     "OpenFutureRevision.handed_off_progress",
     "OpenFutureRevision.generation_by_bound",
@@ -268,6 +268,49 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+      "role": "proof",
+      "sha256": "95e4fa25cff31134f8c9584f30f403a26a0196a605e0c2cdd150d1e0740ab4f0",
+      "declarations": [
+        "Becoming.Handoff.handed_off_progress",
+        "Becoming.Handoff.generation_by_bound",
+        "Becoming.Handoff.positive_ground_by_bound",
+        "Becoming.Handoff.each_fixed_rule_finishes",
+        "Becoming.Handoff.each_rule_local_progress",
+        "Becoming.Handoff.revising_run_stays_unfinished",
+        "Becoming.Handoff.revised_rules_can_fail_forever",
+        "Becoming.Handoff.revision_resets_remaining",
+        "Becoming.Handoff.changed_form_with_valid_handoff",
+        "Becoming.Handoff.realized_form_need_not_be_fixed",
+        "Becoming.Handoff.Run.novel_by_handoff",
+        "Becoming.Handoff.Run.relevance_by_handoff_of_unrestricted",
+        "Becoming.Handoff.positive_ground_by_bound_of_unrestricted",
+        "Becoming.Handoff.revised_generation_by_bound_of_unrestricted"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBound.lean",
+      "role": "proof",
+      "sha256": "d7bb80150768b0092f8c0179dc1d3b0d156d80d0e9c7b95f6fad130156c63725",
+      "declarations": [
+        "Becoming.RenewalBound.renewal_within_rank_bound"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "role": "proof",
+      "sha256": "4ff99039dd325dbb540298fba9b9b934fb87383e6dd00217243cf7b1454f698f",
+      "declarations": [
+        "Becoming.PositiveGround.contingent_generation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "role": "receipt",
+      "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -296,6 +339,27 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Handoff",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBound.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalBound",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -363,6 +427,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (14 in Becoming.Handoff; 1 in Becoming.PositiveGround; 1 in Becoming.RenewalBound), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from OpenFutureRevision.lean to Handoff.lean. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
     }
   ]
 }

@@ -31,7 +31,7 @@
     "zh": "社会接续从共同工作、资格和规则记录中分化；分支可共享参与者，记录继承不独自生成实际参与。Valkey及TDF原始材料提供有限机制对应，不是模型全程的实证复现。 整体与子系统是同一活动中的分化；该程序只表示其中一段关系，未形式化完整的相互反馈及边界变化。 解释以活动结果进入后续辨认与修订的具体关系、时序和参与变化为准；修复与学习可在同一活动中形成，不能由正式培训减少直接推出能力下降。",
     "en": "Social continuations differentiate through work, mandates and retained rule histories. Branches can share participants, and inherited records do not create participation. Primary Valkey/TDF records support bounded mechanism correspondence, not empirical reproduction of the whole model. Whole and subsystems differentiate within the same activity; this protocol represents one connection, not formalized complete reciprocal feedback or changing boundaries. Exposition identifies how activity results enter later interpretation and revision, with changing order and participation. Repair and learning may form in one activity; fewer formal training sessions do not directly imply reduced capability."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoff.lean",
   "aliases": [
     "OrganizationalRuleInheritance.inherited_revision_continues",
     "Becoming.Gated.kept_along_iff",
@@ -182,6 +182,31 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoff.lean",
+      "role": "proof",
+      "sha256": "25641a222585a5e2dbbc5210fdea811c9c8994efd38d3a6ed73b601d4027583b",
+      "declarations": [
+        "Becoming.RuleHandoff.changed_rule_requires_adoption",
+        "Becoming.RuleHandoff.nonadopting_history_inherits",
+        "Becoming.RuleHandoff.inherited_revision_continues",
+        "Becoming.RuleHandoff.enabling_one_operation_need_not_enable_revision",
+        "Becoming.RuleHandoff.same_enacted_relations_same_decision",
+        "Becoming.RuleHandoff.adopts",
+        "Becoming.RuleHandoff.process",
+        "Becoming.RuleHandoff.run",
+        "Becoming.RuleHandoff.trace_iff_run",
+        "Becoming.RuleHandoff.rule_kept",
+        "Becoming.RuleHandoff.rule_inherited",
+        "Becoming.RuleHandoff.rule_change_located"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "role": "receipt",
+      "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -203,6 +228,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Instances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoff.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RuleHandoff",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -299,6 +331,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (12 in Becoming.RuleHandoff), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from OrganizationalRuleInheritance.lean to RuleHandoff.lean. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
     }
   ]
 }

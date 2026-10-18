@@ -754,6 +754,23 @@
       "role": "receipt",
       "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "role": "proof",
+      "sha256": "4ff99039dd325dbb540298fba9b9b934fb87383e6dd00217243cf7b1454f698f",
+      "declarations": [
+        "Becoming.PositiveGround.contingent_generation_of_unrestricted",
+        "Becoming.PositiveGround.every_situated_position_has_reason_of_unrestricted",
+        "Becoming.PositiveGround.contingent_generation",
+        "Becoming.PositiveGround.every_situated_position_has_reason"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "role": "receipt",
+      "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -831,6 +848,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Alternatives",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1124,6 +1148,10 @@
     },
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (2 in Becoming.Alternatives), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (4 in Becoming.PositiveGround), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ],

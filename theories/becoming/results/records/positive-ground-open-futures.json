@@ -35,7 +35,7 @@
     "zh": "生成内容通过同一活动内已有分支、生产关系与共同回应形成。每个固定生产模型都容许两条真实未来分支；两个仍活的幅度模型另表认识未定。证据过滤不执行回应，认识增强不冒充新增生。已形成感知、预测和探究结果提供可见未来的解释根据；除回执中明确编译的真值保持与范围传递例外，不宣称新完成全部同一历史的机制组合。",
     "en": "New content forms through prior activity, a productive relation and the common response in one unfolding. Each fixed productive model admits two real future branches; two surviving magnitude models separately represent epistemic uncertainty. Evidence filtering does not perform the response, so increased recognition is not new life. Existing formed perception, prediction and inquiry results ground visible futures interpretively; apart from the explicitly compiled truth-retention and scope-transfer examples, no new full same-history mechanism composition is asserted."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
   "aliases": [
     "PositiveGroundUncertainty.positive_integral_has_positive_occurrence",
     "PositiveGroundUncertainty.contingent_generation_has_positive_ground",
@@ -272,6 +272,29 @@
       "role": "receipt",
       "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "role": "proof",
+      "sha256": "4ff99039dd325dbb540298fba9b9b934fb87383e6dd00217243cf7b1454f698f",
+      "declarations": [
+        "Becoming.PositiveGround.positive_integral_has_positive_occurrence",
+        "Becoming.PositiveGround.contingent_generation",
+        "Becoming.PositiveGround.certified_integral_reason",
+        "Becoming.PositiveGround.same_response_without_fixed_form",
+        "Becoming.PositiveGround.positive_occurrence_correspondence",
+        "Becoming.PositiveGround.positive_integral_and_adverse_full_change",
+        "Becoming.PositiveGround.response_preserves_joint_openness",
+        "Becoming.PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses",
+        "Becoming.PositiveGround.wider_scope_can_require_certificate_retraction",
+        "Becoming.PositiveGround.contingent_generation_of_unrestricted"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "role": "receipt",
+      "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -358,6 +381,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Narrowing",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -433,6 +463,10 @@
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (2 in Becoming.Bundles; 1 in Becoming.Inquiry; 1 in Becoming.Metaethics; 3 in Becoming.Narrowing), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (10 in Becoming.PositiveGround), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from PositiveGroundUncertainty.lean to PositiveGround.lean. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
     }
   ],
   "overview": {

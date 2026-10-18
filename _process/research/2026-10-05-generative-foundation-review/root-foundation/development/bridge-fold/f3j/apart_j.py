@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""F3J (19 October 2026): register the apart roots of F3J sub-chain 1's core modules. Idempotent.
+"""F3J (19 October 2026): register the apart roots of F3J's core modules (sub-chain 1, then sub-chains 2
+and 3). Idempotent.
 
 usage (from the checkout root): python3 -B apart_j.py
 
@@ -150,6 +151,48 @@ ROOTS = {
                                               'weighted score: it ranks enough gains above protection'
                                               + by('ProtectionPriorityRival')),
 }
+OCC = 'the constructed finite occurrence model of degrees of connection'
+ROOTS.update({
+    'Handoff.changed_form_with_valid_handoff': ('Becoming.Handoff', MW, 'a computation in the constructed stage '
+                                                'model: after one step of the left rule the direct-right rule '
+                                                'completes instead, within the handoff bound'
+                                                + by('OpenFutureRevision')),
+    'PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses': (
+        'Becoming.PositiveGround', MW, 'a fact about the constructed formation model and its repertoire: the first '
+        'observation rules out the barren magnitude, the positive integral is positive in every live model, and '
+        'which magnitude holds stays open' + by('PositiveGroundUncertainty')),
+    'PositiveGround.positive_integral_and_adverse_full_change': (
+        'Becoming.PositiveGround', MW, 'a computation in the constructed formation model: a positive integral over '
+        'the new aspect coexists with an adverse full signed change' + by('PositiveGroundUncertainty')),
+    'PositiveGround.route_reason_depends_only_on_access': (
+        'Becoming.PositiveGround', GS, 'a law of every access, admission and positivity relation on any type: '
+        'positions alike in access are alike in the route reason' + by('PositionedPositiveReason')),
+    'PositiveGround.wider_scope_can_require_certificate_retraction': (
+        'Becoming.PositiveGround', MW, 'a fact about the constructed formation model: widening the admitted scope '
+        'to the barren magnitude retracts the certificate' + by('PositiveGroundUncertainty')),
+    'ProfileReach.closed_self_blocks_reach': ('Becoming.ProfileReach', MW, 'a fact about ' + OCC + ' with a closed '
+                                              'step: tolerance holds yet nothing reaches the stranger'
+                                              + by('EvaluatorGrounding')),
+    'ProfileReach.formed_other_has_significance': ('Becoming.ProfileReach', MW, 'a fact about ' + OCC + ': every '
+                                                   'monotone self-good standpoint on it gives the formed other '
+                                                   'significance' + by('EvaluatorGrounding')),
+    'ProfileReach.persistence_rival_escapes_self_transcendence': (
+        'Becoming.ProfileReach', MW, 'a fact about the constructed persistence standpoint on two-component '
+        'profiles: self-good and monotone, it gives the formed other no significance' + by('EvaluatorGrounding')),
+    'ProfileReach.present_aim_evaluator_escapes': (
+        'Becoming.ProfileReach', MW, 'a fact about ' + OCC + ': the evaluator valuing nothing meets monotonicity, '
+        'supervenience and tolerance and assigns no significance' + by('EvaluatorGrounding')),
+    'ProfileReach.strict_indexed_rival_inconsistent': (
+        'Becoming.ProfileReach', GS, 'a law of every standpoint on any type of occurrences and profiles: a '
+        'self-good monotone standpoint valuing only its own occurrences is inconsistent once another living '
+        'occurrence is at least as connected' + by('EvaluatorGrounding')),
+    'ProfileReach.threshold_rival_is_consistent_without_tolerance': (
+        'Becoming.ProfileReach', MW, 'a fact about ' + OCC + ': the threshold standpoint reaches the formed other, '
+        'not the stranger, and violates tolerance at its cut' + by('EvaluatorGrounding')),
+    'ProfileReach.tolerant_standpoint_reaches_stranger': (
+        'Becoming.ProfileReach', MW, 'a fact about ' + OCC + ': with tolerance along adjacent degrees a self-good '
+        'standpoint reaches the stranger' + by('EvaluatorGrounding')),
+})
 REMOVE = ['Becoming.Decided.weakly']
 
 d = json.loads(APART.read_text())

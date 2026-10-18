@@ -1298,6 +1298,21 @@
       "role": "receipt",
       "sha256": "75429d3bd34fa847dd885fcb4195ab1935845952cc8e0d8f8ddb9c32ae35f2f9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+      "role": "proof",
+      "sha256": "95e4fa25cff31134f8c9584f30f403a26a0196a605e0c2cdd150d1e0740ab4f0",
+      "declarations": [
+        "Becoming.Handoff.Run.novel_by_handoff",
+        "Becoming.Handoff.Run.relevance_by_handoff_of_unrestricted"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "role": "receipt",
+      "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1524,6 +1539,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Derivation",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Handoff",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -1708,6 +1730,10 @@
     {
       "en": "18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Derivation; verdicts in port-q.md), bound to core receipt 20261018T204907.920360Z. Every core statement has an empty axiom report; where the periphery proof was classical, the core proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
       "zh": "2026年10月18日，F3Q 将探究与组合族移入核心：所引声明旁加上核心陈述（Derivation），绑定到核心回执；核心陈述的公理报告皆为空，外围经典证明处核心证明为构造性或明示其假设；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (2 in Becoming.Handoff), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
     }
   ],
   "text_versions": [

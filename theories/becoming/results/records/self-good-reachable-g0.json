@@ -39,7 +39,7 @@
     "zh": "分化（Diff）是对应前提，适用于分裂、复制、分叉与 AI 后继者，以及以形成性贡献为主导的评价方式；在 profile2 的积序下对任何立场都不成立，加权和序下须形成性贡献权重至少为组织连续性的 7/5。Chain 取在可能剖面上，因此容差也是对仅仅可能的剖面如何估值的主张。有限模型中的程度数字只表示顺序；实际对应须在应用中取得证据。",
     "en": "Differentiation (Diff) is a correspondence premise in scope for fission, copying, forking and AI successors and for formative-contribution-led evaluation; in profile2 it fails for every standpoint under the product order, and under a weighted sum it needs formative contribution weighted at least 7/5 of organizational continuity. Chain ranges over possible profiles, so tolerance is also a claim about valuing merely possible profiles. Degree numbers are orderings only; actual correspondence needs evidence in each application."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
   "aliases": [
     "EvaluatorGrounding.self_good_reaches_at_least_as_connected",
     "EvaluatorGrounding.strict_indexed_rival_inconsistent",
@@ -286,6 +286,35 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
+      "role": "proof",
+      "sha256": "d850713ad0ab63c6b1c4a4f18d35ff0f5a447ef507c01f549f2145b7e2e240d9",
+      "declarations": [
+        "Becoming.ProfileReach.self_good_reaches_at_least_as_connected",
+        "Becoming.ProfileReach.strict_indexed_rival_inconsistent",
+        "Becoming.ProfileReach.chain_preserves",
+        "Becoming.ProfileReach.tolerant_chain_reaches",
+        "Becoming.ProfileReach.reach_is_g0",
+        "Becoming.ProfileReach.self_good_derives_reachable_g0",
+        "Becoming.ProfileReach.formed_other_has_significance",
+        "Becoming.ProfileReach.threshold_rival_is_consistent_without_tolerance",
+        "Becoming.ProfileReach.tolerant_standpoint_reaches_stranger",
+        "Becoming.ProfileReach.present_aim_evaluator_escapes",
+        "Becoming.ProfileReach.closed_self_blocks_reach",
+        "Becoming.ProfileReach.persistence_rival_escapes_self_transcendence",
+        "Becoming.ProfileReach.valuation",
+        "Becoming.ProfileReach.tolerant_iff_neutral",
+        "Becoming.ProfileReach.reach_relations_iff",
+        "Becoming.ProfileReach.selfGood_valuation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "role": "receipt",
+      "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -328,6 +357,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ProfileReach",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -402,6 +438,10 @@
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (1 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (16 in Becoming.ProfileReach), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from EvaluatorGrounding.lean to ProfileReach.lean. A port restates; the claim is unchanged.",
+      "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
     }
   ]
 }
