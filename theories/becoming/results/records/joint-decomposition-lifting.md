@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T13:02:25.936140+00:00`. Run the registry che
 
 Under joint-fiber compactness and an exact reduced presentation, a code-level joint decomposition lifts from any given native representative of the whole code.
 
-Canonical source: [ExplanatoryJointness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean)
+Canonical source: [JointCorrespondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -46,12 +46,14 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [ExplanatoryJointness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean) | `Generative.ExplanatoryJointness.code_joint_lifts_from_whole` |
+| proof | [JointCorrespondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean) | `Becoming.liftsFromEach_of_exact` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Composition.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean) | `Becoming.liftsFromEach_iff`, `Becoming.liftsFromEach_of_sameJointTests`, `Becoming.matchesParts_of_compact_iff_em` |
 | proof | [CompositionBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean) | `Becoming.code_joint_lifts_from_whole_of_stable` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -68,3 +70,4 @@ Aliases: `Generative.ExplanatoryJointness.code_joint_lifts_from_whole`, `Becomin
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine, with one added hypothesis. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. A description lifts the parts it reads exactly where configurations it identifies match parts into configurations it identifies (liftsFromEach_iff; the periphery had one sufficient direction), and where it identifies exactly the configurations passing the same joint tests, the pairs of parts being compact and the tests stable, it lifts them (liftsFromEach_of_sameJointTests). An exact reduced presentation identifies exactly those configurations, and codeJoint is the core's jointImage, so code_joint_lifts_from_whole holds on the spine where the model's tests are stable (code_joint_lifts_from_whole_of_stable); excluded middle gives stability, and without stability the step the periphery takes classically is exactly excluded middle (matchesParts_of_compact_iff_em). Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; whether finite fibres are compact without excluded middle is open.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Composition.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
+- 18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (JointCorrespondence; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.

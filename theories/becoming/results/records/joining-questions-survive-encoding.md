@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T13:52:31.763955+00:00`. Run the registry che
 
 After encoding every joining partner in a question through the same account, interpreting the translated question in the induced multivalued joining relation gives exactly the original answer.
 
-Canonical source: [ExplanatoryJoiningBranches.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean)
+Canonical source: [JoiningCodes.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -59,11 +59,13 @@ Boundary source: [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../../_proc
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [ExplanatoryJoiningBranches.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean) | `Generative.ExplanatoryJoiningBranches.questions_survive_encoding` |
+| proof | [JoiningCodes.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean) | `Becoming.Joining.FiniteOutcomes.lifts_of_exact` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json) | — |
 | integration | [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md) | — |
 | proof | [Joining.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean) | `Becoming.Joining.holds_image_iff` |
 | proof | [JoiningBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean) | `Becoming.Joining.ofQuestion`, `Becoming.Joining.toQuestion`, `Becoming.Joining.questions_survive_encoding_of_em` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -83,4 +85,5 @@ Aliases: `Generative.ExplanatoryJoiningBranches.questions_survive_encoding`, `Be
 - 2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings.
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Joining, importing only Becoming.Likeness, reads a joining of fragments as frames of the spine, through partners, roles and retained references; a description lifts a joining exactly where having one code is a bisimulation of the partner frame, with no premise (Joining.lifts_iff); Becoming.JoiningBridge reads the joining studies as instances. Where a description lifts the joining, every branching test survives it (Joining.holds_image_iff); the periphery's branch questions are the partner frame's branching tests, read one to one (ofQuestion, toQuestion). The periphery's questions_survive_encoding holds on the spine (Joining.questions_survive_encoding_of_em): excluded middle is named as the hypothesis em : ∀ p : Prop, Decided p and used only to identify passing the same branching tests with likeness where outcomes are listed, which is where the periphery reasoned classically; without it, lifting is exactly having one code being a bisimulation (Joining.operation_lifts_iff). Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Joining.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); JoiningBridge.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
+- 18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (Joining, JoiningCodes; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
 - 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](joining-questions-survive-encoding.json).

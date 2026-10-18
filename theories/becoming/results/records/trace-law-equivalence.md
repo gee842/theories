@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 Two processes on the same state/action types agree pointwise on steps iff they agree on all finite labelled traces with both endpoints retained.
 
-Canonical source: [DynamicConsequences.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean)
+Canonical source: [Labelled.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -50,6 +50,7 @@ Boundary source: [DynamicConsequences.lean](../../../../experiments/integrated-c
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [DynamicConsequences.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean) | `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Deeper.word_feasibility_does_not_determine_endpoints` |
+| proof | [Carriers.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Carriers.lean) | `Becoming.Carriers.word_feasibility_does_not_determine_endpoints` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification.json) | — |
 | integration | [GenerativeModel.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) | `Generative.Model.laws_iff_endpoint_histories` |
 | review | [SESSION-PROOF-REUSE-SOURCE-CHECKS.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json) | — |
@@ -63,6 +64,7 @@ Boundary source: [DynamicConsequences.lean](../../../../experiments/integrated-c
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -86,4 +88,5 @@ Aliases: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.l
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): declarations moved with their full Lean names, statements and proofs unchanged: same_steps_iff_traces from Unfolding.lean to Labelled.lean. The claim is unchanged.
+- 18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (Carriers, Labelled; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-16): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](trace-law-equivalence.json).

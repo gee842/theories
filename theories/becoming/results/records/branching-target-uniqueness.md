@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 If branching tests separate the target model, two target positions agreeing with one source position on all tests are equal.
 
-Canonical source: [ExplanatoryBranching.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean)
+Canonical source: [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -58,6 +58,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -78,4 +79,5 @@ Aliases: `Generative.ExplanatoryBranching.same_functional`, `Becoming.SameBranch
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Likeness.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
+- 18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (Likeness; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
 - 5 rebinding entries (2026-10-14 to 2026-10-16): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](branching-target-uniqueness.json).

@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 If child footprints lie within the parent and are mutually exclusive, every realized plan’s combined leaf requests are duplicate-free and covered by the root footprint.
 
-Canonical source: [ExplanatoryFootprints.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean)
+Canonical source: [Composition.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -53,6 +53,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [CompositionBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean) | `Becoming.realized_requests_supported_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -69,3 +70,4 @@ Aliases: `Generative.ExplanatoryFootprints.realized_requests_supported`, `Becomi
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Where each part's footprint lies within its whole's and the two parts' footprints share nothing, what the leaves of a realized plan draw on, joined, repeats nothing and lies within the root's footprint (JointPlan.supports_of_realizes); realized_requests_supported is that law (realized_requests_supported_by_core), with no added hypothesis and empty axiom reports (scratch build; the receipt comes with the landing). The converse fails with nothing more: the root's footprint can support every leaf where no whole holds any part (Unjoined.supports_not_realizes), the record's limitation witnessed on the spine. The list model of realize_iff_supported and the periphery receipt keep their scope.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Composition.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
+- 18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (Composition; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
