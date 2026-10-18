@@ -14,6 +14,8 @@ Three kinds of statement are kept apart throughout:
 
 The footnotes of the README's opening say, sentence by sentence, which kind each claim is. Ren's words are kept verbatim with their source in [`sources/`](sources/README.md) and quoted as provenance, not as the warrant for a claim.
 
+The work is not licensed: [knowledge is a common good](COMMONS.md).
+
 ## Where to start
 
 1. [README](README.md): Ren's opening, then the established results.
