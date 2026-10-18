@@ -100,7 +100,7 @@ Aliases: `tying premises read off the exchange`, `联结的前提从交换读出
 - 16 October 2026, eighteenth review (R18): readOff defines the requirement as responding below need, so under readWeb “activity needs support” follows in one line (supported_of_responds); the record conceded that balance holds by construction but not that support does too (review item 32, P1). does_not_show 3 takes in that sentence. Claim narrowed; no theorem changed.
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
-- 13 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](premises-read-off-the-exchange.json).
+- 14 rebinding entries (2026-10-14 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](premises-read-off-the-exchange.json).
 
 </details>
 

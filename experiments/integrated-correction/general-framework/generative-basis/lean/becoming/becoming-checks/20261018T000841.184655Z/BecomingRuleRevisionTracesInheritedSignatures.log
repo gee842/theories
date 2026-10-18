@@ -1,0 +1,18 @@
+Becoming.RuleRevisionTracesInherited.fails_forever : (∀ (n : Nat),
+    OpenFutureRevision.completed
+      (OpenFutureRevision.advance (Becoming.RuleRevisionTraces.revising.act n)
+        (OpenFutureRevision.advance (Becoming.RuleRevisionTraces.revising.act n)
+          (Becoming.RuleRevisionTraces.revising.state n)))) ∧
+  (∀ (n : Nat),
+      OpenFutureRevision.remaining (Becoming.RuleRevisionTraces.revising.act n)
+          (Becoming.RuleRevisionTraces.revising.state (n + 1)) <
+        OpenFutureRevision.remaining (Becoming.RuleRevisionTraces.revising.act n)
+          (Becoming.RuleRevisionTraces.revising.state n)) ∧
+    ∀ (n : Nat), ¬OpenFutureRevision.completed (Becoming.RuleRevisionTraces.revising.state n)
+Becoming.RuleRevisionTracesInherited.resets_remaining : ∀ (n : Nat),
+  OpenFutureRevision.remaining (Becoming.RuleRevisionTraces.revising.act n)
+        (Becoming.RuleRevisionTraces.revising.state (n + 1)) =
+      1 ∧
+    OpenFutureRevision.remaining (Becoming.RuleRevisionTraces.revising.act (n + 1))
+        (Becoming.RuleRevisionTraces.revising.state (n + 1)) =
+      2

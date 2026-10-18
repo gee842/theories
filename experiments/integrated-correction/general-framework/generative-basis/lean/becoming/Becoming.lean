@@ -171,6 +171,7 @@ import Becoming.TallyWorlds
 import Becoming.TypicalRuns
 import Becoming.WeightedTraces
 import Becoming.LevelCoupling
+import Becoming.Interleavings
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1240,6 +1241,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   schedule covering registration; a condition depended on and not observed passes only a crossing
   of its need, and an observed one can be responded to within its need: observing is exactly where
   a level can couple into a formation by level.
+* `Becoming.Interleavings` (L4): the step index read off the relata's own courses, with no premise
+  beyond a local law (an exchange changes only the relata it touches, as their states determine).
+  Two lists of exchanges giving every relatum the same own course reach the same configuration, and
+  so do two traces of the exchange process; a scheduler builds an interleaving of given courses
+  exactly where one exists; and the own courses fix the interleaving exactly where every exchange
+  touches a relatum and every two share one. The shared index is a reading of the relations: beyond
+  them it orders only exchanges sharing no relatum, which changes no configuration.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return

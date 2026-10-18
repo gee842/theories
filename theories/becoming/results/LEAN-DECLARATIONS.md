@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 177 | 7,495 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 178 | 7,551 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 39 | 601 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -435,6 +435,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Interdependence.lean](lean-declarations/becoming-core.md#module-9b2e13db3d20) | Becoming pure core |
 | [InterfaceTraces.lean](lean-declarations/becoming-bridge.md#module-5df9b10f2a6d) | Becoming bridge |
 | [InterfaceTracesInherited.lean](lean-declarations/core.md#module-382ee6acff47) | Generative core and relational structure |
+| [Interleavings.lean](lean-declarations/becoming-core.md#module-4429a1ae5e70) | Becoming pure core |
 | [Joining.lean](lean-declarations/becoming-core.md#module-0e1027a8c9de) | Becoming pure core |
 | [JoiningBridge.lean](lean-declarations/becoming-bridge.md#module-9e611cafdf24) | Becoming bridge |
 | [JoiningCodeFrames.lean](lean-declarations/becoming-bridge.md#module-17d59983e265) | Becoming bridge |

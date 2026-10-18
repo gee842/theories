@@ -1,0 +1,176 @@
+#!/usr/bin/env python3
+"""Write the record the-step-index-from-own-courses for R1: python3 -B make_record.py RECEIPT_ID
+
+The receipt id names the checker run folder under becoming-checks/; the source hash is read from that receipt and
+checked against the file's current bytes before anything is written."""
+import datetime
+import hashlib
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[6]
+PKG = 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming'
+SRC = f'{PKG}/Becoming/Interleavings.lean'
+receipt_id = sys.argv[1]
+receipt = f'{PKG}/becoming-checks/{receipt_id}/verification.json'
+data = json.loads((ROOT / receipt).read_text())
+sha = hashlib.sha256((ROOT / SRC).read_bytes()).hexdigest()
+assert data['status'] == 'passed', data['status']
+assert data['source_sha256']['Becoming.Interleavings'] == sha, 'receipt does not bind the current bytes'
+
+N = 'Becoming.Interleavings.LocalLaw.'
+
+
+def d(*names):
+    return [N + n for n in names]
+
+
+laws = [
+    {
+        'en': 'Equal own courses, equal configurations: with the relata listed, two lists of exchanges of a local law '
+              'giving every relatum the same own course reach the same configuration from the same start, and so do '
+              'two traces of the exchange process; in particular two traces interleaving the same courses end alike, '
+              'and two exchanges sharing no relatum end alike in either order.',
+        'zh': '自身进程相同，构形相同：关系项列出时，局部律的两列交换若给每个关系项同一自身进程，则从同一起点到达同一构形；'
+              '交换进程的两条轨迹亦然。特别地，交错同一组进程的两条轨迹结束时相同，不共享关系项的两个交换以任一次序结束时相同。',
+        'declarations': d('act_comm', 'run_move', 'split_heads', 'run_of_courses', 'trace_of_courses',
+                          'trace_of_interleavings', 'trace_swap'),
+    },
+    {
+        'en': 'The index is built: with exchanges told apart, a scheduler taking an exchange that heads the remaining '
+              'course of every relatum it touches completes, within as many stages as the courses have exchanges, '
+              'exactly where some list, or some trace of the exchange process, takes every relatum through its given '
+              'course; what it returns does so.',
+        'zh': '指标是构造出来的：交换可区分时，一个调度每次取一个居于它所触及的每个关系项剩余进程之首的交换；它在不多于进程中交换总数的'
+              '步数内完成，恰当某一列、或交换进程的某条轨迹，使每个关系项走过给定的进程；它所返回者即如此。',
+        'declarations': d('ready', 'pick', 'pop', 'schedule', 'pop_interleaves', 'total_pop', 'schedule_interleaves',
+                          'schedule_some', 'schedule_iff', 'traced_iff'),
+    },
+    {
+        'en': 'Where the courses fix the index: with the relata listed, equal own courses force equal lists of '
+              'exchanges exactly where every exchange touches some relatum and every two exchanges are the same or '
+              'share a relatum, and the same holds for the traces from any one configuration; two exchanges sharing '
+              'no relatum have the same own courses in either order.',
+        'zh': '进程在何处定下指标：关系项列出时，自身进程相同迫使交换之列相同，恰当每个交换触及某关系项、且任两个交换相同或共享一个关系项；'
+              '从任一构形出发的轨迹亦然。不共享关系项的两个交换，以任一次序，自身进程相同。',
+        'declarations': d('Connected', 'swap_courses', 'eq_of_courses', 'unique_iff', 'traced_unique_iff'),
+    },
+]
+
+record = {
+    'schema_version': 2,
+    'id': 'the-step-index-from-own-courses',
+    'title': {
+        'zh': '步的指标读自关系项的自身进程',
+        'en': "The step index read off the relata's own courses",
+    },
+    'kind': 'theorem',
+    'status': 'recorded-checked',
+    'family': 'F01',
+    'reviewed_at_utc': datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat(),
+    'statement': {
+        'en': "For exchanges acting locally, an index of steps is read off the relata's own courses: it is an "
+              'interleaving of them, exists exactly where a scheduler completes, reaches the configuration they fix, '
+              'and is fixed by them exactly where every two exchanges share a relatum.',
+        'zh': '对局部作用的交换，步的指标读自关系项的自身进程：它是这些进程的一个交错，恰在一个调度完成之处存在，到达它们所定的构形，'
+              '并恰当任两个交换共享一个关系项时由它们定下。',
+    },
+    'laws': laws,
+    'hypotheses': [{
+        'en': 'No axiom. Each theorem states what it needs: a local law of exchange (LocalLaw: an exchange leaves the '
+              'relata it does not touch as they were and changes a relatum it touches as the states of the relata it '
+              'touches determine); the relata listed, for the configuration and uniqueness laws; exchanges told apart '
+              '(decided equality), for the scheduler. Courses are finite lists.',
+        'zh': '不加公理。各定理所需写在定理中：一个局部交换律（LocalLaw：交换不改它不触及的关系项，并按它所触及的关系项的状态改变它所触及者）；'
+              '对构形与唯一之律，关系项列出；对调度，交换可区分（相等可判定）。进程为有限列。',
+    }],
+    'does_not_show': [
+        {'en': 'That every becoming has a local law of exchange: whether a becoming can be so represented is the '
+               'warrant question of the scope of representation, which stays open.',
+         'zh': '每个生成都有局部交换律：一个生成能否如此表示，是表示范围的根据问题，仍开放。', 'kind': 'scope'},
+        {'en': 'Separate footprints for reading and changing: here what an exchange reads and what it may change are '
+               'one footprint, so two reads of one relatum do not commute.',
+         'zh': '读与改各有足迹：这里交换所读与所可改是同一足迹，所以对同一关系项的两次读不交换。', 'kind': 'scope'},
+        {'en': 'Courses without end, and a join by definition to the footprint of Becoming.Order over a world\'s '
+               'steps; nor the other identification of block A, of conditions with relata.',
+         'zh': '无尽的进程，以及按定义接到 Becoming.Order 在世界步上的足迹；亦不涉第 A 块的另一种认同，即条件与关系项的认同。',
+         'kind': 'correspondence'},
+    ],
+    'counterexamples': [{'path': SRC, 'detail': {
+        'en': 'Where two exchanges share no listed relatum, [e, f] and [f, e] have the same own courses; where they are '
+              'distinct the two lists differ, so the own courses do not fix the index (unique_iff, forward direction). '
+              'An exchange touching nothing has the same own courses as the empty list.',
+        'zh': '两个交换不共享列出的关系项时，[e, f] 与 [f, e] 自身进程相同；二者不同时两列不同，所以自身进程定不下指标（unique_iff 正向）。'
+              '不触及任何关系项的交换与空列自身进程相同。',
+    }}],
+    'standard_boundaries': ['no-ethical-premise', 'no-evaluation', 'discrete-steps', 'formal-not-empirical',
+                            'names-provisional', 'omission-not-refutation'],
+    'validation_scope': {
+        'en': f'Machine-checked by the consolidated Lean 4.29.1 checker (receipt {receipt_id}): the declarations of '
+              'Becoming.Interleavings have empty axiom reports; the checker verifies core purity. Author self-review '
+              'in study section 169; not independently reviewed.',
+        'zh': f'Lean 4.29.1 合并检查器实查（回执 {receipt_id}）：Becoming.Interleavings 的声明公理报告为空；检查器并核对核心纯净。'
+              '作者自审见研究第 169 节；未经独立审查。',
+    },
+    'next_delta': {
+        'en': 'Separate read and change footprints; courses without end; a correspondence with the footprint and the '
+              'order of joined exchanges of Becoming.Order; whether every becoming has a local law; an '
+              'independent review; an argued judgment on the reading.',
+        'zh': '读与改分开的足迹；无尽的进程；与 Becoming.Order 的足迹及相连交换之次序的对应；每个生成是否有局部律；独立审查；'
+              '对读法的论证判断。',
+    },
+    'correspondence': {
+        'en': 'The open programme of the chapter left open "deriving the shared index of steps from relations, or saying '
+              'why it is a commitment of the representation". Ren, 18 October 2026: "currently i have no problem of heading to '
+              'your direction ... please continue" (provenance of the work, not its warrant). The result answers the '
+              'formal half for finite courses of a local law: the index is derived where every two exchanges share a '
+              'relatum and is otherwise a choice the configurations do not read. This is the converse direction of '
+              'Mazurkiewicz traces (Mazurkiewicz 1977; Cartier and Foata 1969): there a trace is the class of words '
+              'under commuting independent letters; here the class is given by its projections to the relata and the '
+              'scheduler builds a representative. Reading (the AI\'s, pending Ren): the shared index of steps is a '
+              'reading of the relations, not their ground.',
+        'zh': '本章的开放纲领留下“从关系导出共同的步指标，或说明为何它是表示的承诺”。Ren，2026年10月18日：“currently i have no problem of '
+              'heading to your direction ... please continue”（工作的来历，不是它的根据）。本结果对局部律的有限进程回答其形式的一半：'
+              '任两个交换共享关系项处，指标由关系导出；否则它是构形所不读的一个选择。这是 Mazurkiewicz 迹（Mazurkiewicz 1977；'
+              'Cartier 与 Foata 1969）的反方向：那里迹是独立字母交换下的词类；这里类由它在关系项上的投影给出，调度构造一个代表。'
+              '读法（AI 的，待 Ren）：共同的步指标是关系的一种读法，不是关系的根基。',
+    },
+    'canonical_source': SRC,
+    'aliases': ['the step index from own courses', '步指标读自自身进程', 'interleaving of own courses', '自身进程的交错',
+                'equal own courses equal configurations', '自身进程同则构形同', 'the index is built', '指标是构造出来的',
+                'where the courses fix the index', '进程定下指标之处', 'shared index as commitment', '共同指标作为承诺'],
+    'dependencies': [],
+    'related': [
+        {'id': 'order-of-exchanges-is-the-invariant',
+         'detail': {'en': 'There, for a world given with an index and a footprint, the order of joined exchanges is what '
+                          'the premises keep; here, with no index given, the index is built from the own courses and '
+                          'carries nothing beyond them.',
+                    'zh': '那里对给出指标与足迹的世界，相连交换的次序是前提所保持者；这里不给指标，指标由自身进程构造，且不带它们之外的东西。'}},
+        {'id': 'only-the-order-of-change-registers',
+         'detail': {'en': 'There renumberings keeping the order of joined exchanges keep every premise of a world; here '
+                          'interleavings of the same own courses reach the same configuration.',
+                    'zh': '那里保持相连交换次序的重编号保持世界的每个前提；这里同一自身进程的交错到达同一构形。'}},
+    ],
+    'references': [
+        {'path': SRC, 'role': 'proof', 'sha256': sha,
+         'declarations': sorted({x for law in laws for x in law['declarations']})},
+        {'path': receipt, 'role': 'receipt'},
+        {'path': '_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md',
+         'role': 'integration'},
+        {'path': 'theories/becoming/chapters/THE-THEORY-OF-BECOMING.md', 'role': 'statement'},
+        {'path': 'sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md', 'role': 'provenance'},
+    ],
+    'proof_bindings': [{'source': SRC, 'receipt': receipt, 'sha256_pointer': '/source_sha256/Becoming.Interleavings',
+                        'success_pointer': '/status', 'success_value': 'passed'}],
+    'history': [{
+        'en': '18 October 2026: added (R1), in the direction Ren agreed to on 18 October ("please continue"): the formal '
+              'edge of target 1, the shared index of steps; study section 169.',
+        'zh': '2026年10月18日：新增（R1），沿 Ren 10月18日同意的方向（“please continue”）：目标一的形式边缘，共同的步指标；研究第 169 节。',
+    }],
+}
+for ref in record['references']:
+    ref['sha256'] = hashlib.sha256((ROOT / ref['path']).read_bytes()).hexdigest()
+out = ROOT / 'theories/becoming/results/records/the-step-index-from-own-courses.json'
+out.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
+print(out)

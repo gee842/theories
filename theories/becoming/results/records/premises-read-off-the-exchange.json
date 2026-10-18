@@ -371,7 +371,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "41afc878298b38e0044a53a40bc8ca9fb3b887e414f6e2b072fd0cd26e9f98d4"
+      "sha256": "05d6c75e3afe3da902d0a8ea7151b155985589eafd3c3af96452469294b4f126"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -518,6 +518,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, source reconciliation after R1 (the step index read off the relata's own courses): THE-THEORY-OF-BECOMING.md section 0 (the premise card row on discrete steps and one shared index gains a sentence on Becoming.Interleavings), section 8 (the row on one relational start and worlds as runs now states R1's result in place of the open item and links its record; the scope of representation in §8.5 gains a sentence; the integration row gains R1's connectivity count) and section 9 (the current receipt, now 20261018T000841.184655Z, and its counts) were edited. The integrator read the change: it adds to these sections and touches no statement of this record; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": []
