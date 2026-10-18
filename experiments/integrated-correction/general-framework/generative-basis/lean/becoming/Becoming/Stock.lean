@@ -1,4 +1,5 @@
 import Becoming.Flow
+import Becoming.Frame
 
 /-!
 # Stock: what a course draws, what replenishes it, and how long it can go on

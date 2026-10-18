@@ -1,3 +1,4 @@
+import Becoming.Labelled
 import Becoming.ReferencePlan
 import Becoming.Stock
 

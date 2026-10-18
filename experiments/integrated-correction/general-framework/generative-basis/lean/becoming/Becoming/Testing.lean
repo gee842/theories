@@ -1,4 +1,5 @@
 import Becoming.Feedback
+import Becoming.Horizon
 
 /-!
 # Testing: what registers in a formation, and what it can test

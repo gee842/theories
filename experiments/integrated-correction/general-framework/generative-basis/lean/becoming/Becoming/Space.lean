@@ -77,6 +77,9 @@ them is evaluated here. `Living` is the structural condition that every event is
 in the stepwise reading (`Web.valuation` in `Becoming.Metaethics`). The module does not
 show that the theory needs no axiom: it shows which statements need no premise and which
 premises carve which parts. No ethical predicate, ranking or axiom occurs.
+
+The structure `World` is stated in `Becoming.World`, the base of the core; this module
+collects its laws.
 -/
 namespace Becoming
 
@@ -171,13 +174,6 @@ theorem Web.generation_stops_unrefuted {X : Type} {W : Web X X} {L : Flow X X} {
         (dissipates t (Nat.le_trans from_ later)) mem (embodied.comesToStand arises).rises⟩
 
 /-! ## The space and its parts -/
-
-/-- A world: its relata, read with one kind of relatum, with the flow among them and their
-web. -/
-structure World where
-  Relatum : Type
-  flow : Flow Relatum Relatum
-  web : Web Relatum Relatum
 
 namespace World
 

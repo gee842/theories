@@ -71,6 +71,8 @@ flow's `present` lists each formation taking part at a step once; that it record
 is actually taken and given is an application duty. The family of conditions and the
 formations taking part at each step are finite. No ethical predicate, ranking or axiom
 occurs. Diversity and complexity are not stated here.
+
+The structure `Flow` is stated in `Becoming.World`, the base of the core.
 -/
 
 namespace Becoming
@@ -216,13 +218,6 @@ theorem steps_le {q : Nat → Nat} {R : Nat} :
 end Totals
 
 variable {F C : Type}
-
-/-- Amounts flowing between formations and conditions across each step: the formations
-taking part in the step, and how much each takes from and gives to each condition. -/
-structure Flow (F C : Type) where
-  present : Nat → List F
-  take : Nat → F → C → Nat
-  give : Nat → F → C → Nat
 
 /-- A condition *comes to stand* across the step from `t`: no standing at `t`, a positive
 standing after it. -/
@@ -631,7 +626,6 @@ theorem Balances.renewers_over {cs : List C} {g K S : Nat} (balances : L.Balance
     (capacity : L.Capacity cs g) (many : ∀ t, S ≤ t → K ≤ L.takers cs t) (N : Nat) :
     K * N ≤ W.stock cs S + g * total (steps S N) (L.renewers cs) :=
   renewers_over_on (fun t _ _ => balances.on cs t) capacity many
-
 
 /-- More without end needs replenishment without bound, from a step on: where the family
 is balanced on from `T₀` on, no bound holding from `T₀` on bounds its replenishment. -/

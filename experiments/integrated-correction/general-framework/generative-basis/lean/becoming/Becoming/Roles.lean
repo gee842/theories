@@ -119,9 +119,12 @@ bears on itself, at the step at which it ends, against living, whatever ends it;
 on Ren's delegation of 15 October 2026 this stays a verdict of the stepwise reading, for every
 drawer, valuing no drawer (DELEGATED-CHOICES D6). Dissipation is the physical premise of
 `Becoming.Dissipation`. No ethical predicate, ranking or axiom occurs.
+
+The readings that take a run (`Web.active_along`, `Web.bearing`, `Web.coextinct`,
+`Predation.fox_ends`) are in `Becoming.LabelledRoles`.
 -/
 
-open Generative
+
 
 namespace Becoming
 
@@ -415,11 +418,6 @@ as a condition at a positive need. -/
 def SelfBearing (x : X) : Prop :=
   ∀ t, W.active t x → W.requires t x x ∧ 0 < W.need t x x
 
-/-- Dependence at a positive need on embodied relata at a step, as a process on
-relata. -/
-def bearing (t : Nat) : Process X Unit :=
-  ⟨fun g _ y => (W.requires t g y ∧ 0 < W.need t g y) ∧ W.Embodied y⟩
-
 variable {W}
 
 /-- Under `Dependent`, a relatum bearing on itself stands as a condition while it is
@@ -443,18 +441,6 @@ theorem Embodied.active_of_bearing (dependent : W.Dependent) {y : X}
     (embodied : W.Embodied y) {t : Nat} {g : X} (active : W.active t g)
     (bearing : W.requires t g y ∧ 0 < W.need t g y) : W.active t y :=
   (embodied t).mpr (Nat.lt_of_lt_of_le bearing.2 (dependent t g active y bearing.1))
-
-/-- Under `Dependent`, activity at a step passes along every chain of dependence on
-embodied relata. -/
-theorem active_along (dependent : W.Dependent) (t : Nat) :
-    Invariant (W.bearing t) (W.active t) :=
-  fun _ _ _ ⟨bearing, embodied⟩ active => embodied.active_of_bearing dependent active bearing
-
-/-- Coextinction: under `Dependent`, a relatum that is not active at a step ends there
-every formation whose chain of dependence on embodied relata reaches it. -/
-theorem coextinct (dependent : W.Dependent) {t : Nat} {g y : X}
-    (chain : Reach (W.bearing t) g y) (ended : ¬ W.active t y) : ¬ W.active t g :=
-  fun active => ended ((active_along dependent t).reach chain active)
 
 /-- Consuming an embodied relatum at a need of one ends it: after the dependence is no
 longer met, the relatum is not active. -/
@@ -869,11 +855,6 @@ dependence, so it is not living. -/
 theorem breaking : web.BreakingOn 2 .fox .hare :=
   (embodied .hare).ending_breaks (t := 2) dependent (selfBearing .hare) Nat.zero_lt_one
     (hare_ends 3 (Nat.lt_succ_self 2)) ⟨rfl, rfl⟩
-
-/-- The fox depends on the hare, so it ends with it. -/
-theorem fox_ends : ∀ t, 2 < t → ¬ web.active t .fox :=
-  fun t later => Web.coextinct dependent
-    (Reach.of_step (a := ()) ⟨⟨.inr rfl, Nat.zero_lt_one⟩, embodied .hare⟩) (hare_ends t later)
 
 end Predation
 

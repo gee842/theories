@@ -1,4 +1,3 @@
-import Becoming.Horizon
 import Becoming.Population
 
 /-!
@@ -104,6 +103,9 @@ conditions, are physical premises, not theorems. The unfolding that bears recurr
 taking under dissipation and enclosure draws in from beyond every finite family of
 conditions; whether actual unfoldings meet these premises is an empirical question. No
 ethical predicate, ranking or axiom occurs.
+
+`Sequences.recurs_iff`, which reads a run of `Becoming.Horizon`, is in
+`Becoming.LabelledRoles`, so this module does not import `Becoming.Horizon`.
 -/
 
 namespace Becoming
@@ -1381,15 +1383,5 @@ theorem witnesses_not_dissipative :
 
 `Becoming.Horizon` and `Becoming.Change` each name recurrence, for the moves of a run of sequences
 and for a finite family. This is the first module that imports both, and they are one notion. -/
-
-/-- **Recurrence is one notion.** The moves of a run of sequences recur (`Sequences.Recurs` of
-`Becoming.Horizon`) exactly where `true` is moved at arbitrarily late steps by the family of one
-member (`Becoming.Recurs` of `Becoming.Change`). -/
-theorem Sequences.recurs_iff (r : Run (Becoming.Sequences.process Bool)) :
-    Becoming.Sequences.Recurs r ↔ Becoming.Recurs [()] (fun _ m => r.act m = true) :=
-  ⟨fun recurs N => match recurs N with
-    | ⟨m, later, yes⟩ => ⟨m, (), later, .head _, yes⟩,
-   fun recurs n => match recurs n with
-    | ⟨m, _, later, _, yes⟩ => ⟨m, later, yes⟩⟩
 
 end Becoming

@@ -42,6 +42,9 @@ Results:
 No ethical predicate, ranking or axiom occurs. Which grade an actual condition has,
 which cycle suits a reading, and whether a lengthening recovery signals an approaching
 loss are application and empirical questions.
+
+The witness runs `Renewable.dip_within_two` and
+`Renewable.escalation_undermines_for_every_cycle` are in `Becoming.Labelled`.
 -/
 
 namespace Becoming
@@ -314,37 +317,6 @@ end Slowing
 /-! ## Readings over cycles include a dip and withhold an escalation -/
 
 namespace Renewable
-
-/-- Over cycles of two the dip is included, by the run and by the event: the condition
-returns within two steps, though the first step breaks the sustaining formation's
-dependence. -/
-theorem dip_within_two :
-    (conditions.dependence.along dipping).RenewingInWithin 2 .focal ∧
-    ¬ (conditions.dependence.along dipping).UnderminingFor 2 0 .focal ∧
-    (conditions.dependence.along dipping).BreakingAt 0 .focal := by
-  have renewed : (conditions.dependence.along dipping).RenewedWithin 2 () := fun t g depends =>
-    match t, g, depends with
-    | 0, .sustaining, _ => ⟨2, Nat.zero_lt_two, Nat.le_refl 2, Nat.le_refl 1⟩
-    | 1, .sustaining, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩
-    | _ + 2, .sustaining, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩
-  have renewing : (conditions.dependence.along dipping).RenewingInWithin 2 .focal :=
-    fun _ _ _ => renewed
-  exact ⟨renewing, renewing.not_undermining_for,
-    ⟨(), trivial, .sustaining, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩⟩
-
-/-- The escalation undermines for every cycle: after it the condition never returns.
-The event before it does not undermine. -/
-theorem escalation_undermines_for_every_cycle :
-    ¬ (conditions.dependence.along escalating).UnderminingFor 1 0 .focal ∧
-    ∀ p, (conditions.dependence.along escalating).UnderminingFor p 1 .focal :=
-  ⟨fun undermining => stepwise_includes_before_escalation.2.1.not_undermining
-    (Web.undermining_for_one.mp undermining),
-   fun _ => ⟨(), trivial, .sustaining, trivial, fun
-     | 0, positive, _ => absurd positive (Nat.lt_irrefl 0)
-     | k + 1, _, _ =>
-       have gone := Nat.lt_of_le_of_lt
-         (Nat.le_of_eq (congrArg escalatingState (Nat.add_comm 1 (k + 1)))) Nat.zero_lt_one
-       ⟨⟨1, Nat.le_refl 1, fun _ _ _ => trivial, Nat.le_refl 1, gone⟩, gone⟩⟩⟩
 
 end Renewable
 

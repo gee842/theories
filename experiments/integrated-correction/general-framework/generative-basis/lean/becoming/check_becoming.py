@@ -70,13 +70,14 @@ import check as audit_support  # noqa: E402
 
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
-# The package, in layer order: the four core layers and their root, then the bridge.
-CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.ClassifiedBeliefProcesses", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
+# The package, in layer order: the base (`Becoming.World`, the one unfolding, prelude only), the four
+# core layers and their root, then the bridge.
+CORE = ["Becoming.World", "Becoming.Frame", "Becoming.Labelled", "Becoming.Inquiry", "Becoming.ClassifiedBeliefProcesses", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.LawAlongRun", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OrderNormal", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Stock", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Persistence", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
-        "Becoming.Seeking", "Becoming.Roles",
+        "Becoming.Seeking", "Becoming.Roles", "Becoming.LabelledRoles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
         "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
@@ -132,6 +133,11 @@ RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
 SCOPE = (
+    "World: the import tree starts from the records of the one unfolding, Becoming.World, which imports "
+    "nothing: Web, Flow, World, Exchange and total over Nat and Prop, with no premise among them. The labelled process and the frame enter as "
+    "readings of it (Becoming.Labelled: the four splits stated from the world's side, and the run "
+    "readings of renewal, dependence, return and generation; Becoming.LabelledRoles: those of roles "
+    "and dissipation), and the modules of the trunk from Renewal to Space do not import the frame. "
     "Stock: for every process, balance at each step is balance along every course; where steps "
     "draw only from what is held, a course is executable exactly where it is covered, and run "
     "jointly with a registration exactly where the registration admits it and the stock covers it; "

@@ -74,14 +74,12 @@ is made by some formation within the unfolding, that arising depletes the family
 steps without renewal, and that the conditions concerned are finitely many. No ethical
 predicate, ranking or axiom occurs. "More" generation, diversity and complexity are not
 stated here.
+
+`total` is stated in `Becoming.World`, and the witness run
+`Renewable.renewal_without_generation` in `Becoming.Labelled`.
 -/
 
 namespace Becoming
-
-/-- The total of a quantity over a finite list. -/
-def total {α : Type} : List α → (α → Nat) → Nat
-  | [], _ => 0
-  | a :: as, q => q a + total as q
 
 variable {F C : Type}
 
@@ -216,16 +214,6 @@ end Web
 /-! ## Renewal does not imply generation -/
 
 namespace Renewable
-
-/-- Drawing exactly what is renewed keeps every dependence, and nothing ever arises. -/
-theorem renewal_without_generation :
-    (conditions.dependence.along withinRenewal).Renewed () ∧
-    ∀ t f, ¬ (conditions.dependence.along withinRenewal).Arises t f :=
-  ⟨fun _ g depends => match g, depends with
-    | .sustaining, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩,
-   fun _ f ⟨inactive, _⟩ => match f with
-    | .focal => inactive trivial
-    | .sustaining => inactive (Nat.le_refl 1)⟩
 
 end Renewable
 

@@ -1,5 +1,6 @@
-import Becoming.Inquiry
 import Becoming.Dependence
+import Becoming.Inquiry
+import Becoming.Labelled
 
 /-!
 # The Universal Metaethical Core on the Becoming spine

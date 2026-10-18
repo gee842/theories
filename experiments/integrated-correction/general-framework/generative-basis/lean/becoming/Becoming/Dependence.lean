@@ -1,4 +1,5 @@
 import Becoming.Renewal
+import Becoming.World
 
 /-!
 # Dependence that forms, holds, breaks and transforms
@@ -78,11 +79,16 @@ Results:
 
 No ethical predicate, ranking or axiom occurs. Which observables represent an actual
 history, and whether a change of dependence preceded a fall, are application duties.
+
+The structure `Web` is stated in `Becoming.World`, the base of the core. The readings of
+dependence along a run of a labelled process (`Dependence.along`, `Web.conditions_along`, the
+`Crossing`, `Pinned` and `Renewable` runs) are in `Becoming.Labelled`, so this module does not
+import the frame.
 -/
 
 namespace Becoming
 
-open Generative RelationalRenewal
+open RelationalRenewal
 
 universe u v
 
@@ -163,21 +169,7 @@ structure Dependence (S : Type u) (F C : Type) where
   need : S → F → C → Nat
   draws : S → F → C → Prop
 
-/-- One unfolding read through conditions and the dependences among them, all of
-which may change from step to step. -/
-structure Web (F C : Type) where
-  level : Nat → C → Nat
-  active : Nat → F → Prop
-  requires : Nat → F → C → Prop
-  need : Nat → F → C → Nat
-  draws : Nat → F → C → Prop
-
 variable {S : Type u} {A : Type v} {F C : Type}
-
-/-- A run read through its dependences. -/
-def Dependence.along (K : Dependence S F C) {P : Process S A} (r : Run P) : Web F C :=
-  ⟨fun t => K.level (r.state t), fun t => K.active (r.state t),
-    fun t => K.requires (r.state t), fun t => K.need (r.state t), fun t => K.draws (r.state t)⟩
 
 /-- Fixed dependences: the conditions of `Becoming.Renewal`. -/
 def Conditions.dependence (K : Conditions S F C) : Dependence S F C :=
@@ -269,11 +261,6 @@ theorem static_consumingIn (U : Unfolding F C) (f : F) :
     (static U).ConsumingIn f ↔ RelationalRenewal.ConsumingIn U f :=
   ⟨fun ⟨_, c, drawn, consumed⟩ => ⟨c, drawn, (static_consumed U c).mp consumed⟩,
    fun ⟨c, drawn, consumed⟩ => ⟨0, c, drawn, (static_consumed U c).mpr consumed⟩⟩
-
-/-- Reading a run through fixed dependences is the static reading of the run. -/
-theorem conditions_along (K : Conditions S F C) {P : Process S A} (r : Run P) :
-    K.dependence.along r = static (K.along r) :=
-  rfl
 
 /-! ## Renewal, consumption and loss -/
 
@@ -806,12 +793,6 @@ inductive Move where
   /-- The first condition is renewed and a dormant formation resumes on it. -/
   | renew
 
-def process : Process State Move where
-  step s a t := match a with
-    | .rest => t = s
-    | .fall m => s.first = 1 ∧ t = ⟨0, m⟩
-    | .renew => s.mode = .dormant ∧ t = ⟨1, .onFirst⟩
-
 /-- Whether the formation is active in a mode. -/
 def Mode.active : Mode → Prop
   | .onFirst => True
@@ -853,74 +834,6 @@ def restoringState : Nat → State
   | 1 => ⟨0, .dormant⟩
   | _ + 2 => start
 
-/-- The formation ends with the loss. -/
-def ending : Run process :=
-  ⟨endingState, fun | 0 => .fall .ended | _ + 1 => .rest,
-    fun | 0 => ⟨rfl, rfl⟩ | _ + 1 => rfl⟩
-
-/-- The formation ceases to depend on the first condition and comes to depend on the
-second. -/
-def transforming : Run process :=
-  ⟨transformingState, fun | 0 => .fall .onSecond | _ + 1 => .rest,
-    fun | 0 => ⟨rfl, rfl⟩ | _ + 1 => rfl⟩
-
-/-- The formation waits on the first condition, which is renewed. -/
-def restoring : Run process :=
-  ⟨restoringState, fun | 0 => .fall .dormant | 1 => .renew | _ + 2 => .rest,
-    fun | 0 => ⟨rfl, rfl⟩ | 1 => ⟨rfl, rfl⟩ | _ + 2 => rfl⟩
-
-theorem ending_dependent : (dependence.along ending).Dependent
-  | 0, _, _, .first, _ => Nat.le_refl 1
-  | 0, _, _, .second, depends => False.elim depends
-  | _ + 1, _, active, _, _ => False.elim active
-
-theorem transforming_dependent : (dependence.along transforming).Dependent
-  | 0, _, _, .first, _ => Nat.le_refl 1
-  | 0, _, _, .second, depends => False.elim depends
-  | _ + 1, _, _, .first, depends => False.elim depends
-  | _ + 1, _, _, .second, _ => Nat.le_refl 1
-
-theorem restoring_dependent : (dependence.along restoring).Dependent
-  | 0, _, _, .first, _ => Nat.le_refl 1
-  | 0, _, _, .second, depends => False.elim depends
-  | 1, _, active, _, _ => False.elim active
-  | _ + 2, _, _, .first, _ => Nat.le_refl 1
-  | _ + 2, _, _, .second, depends => False.elim depends
-
-/-- One process, one configuration, three outcomes after a break of the same
-dependence. Each run breaks the formation's dependence on the first condition at its
-first step, read at the start of the step. In the first the formation ends and the
-loss has no return. In the second the dependence dissolves as one on the second
-condition forms, the formation stays active, and the loss has no return. In the third
-the formation waits, the condition is renewed, and the same dependence is kept again
-from then on. The move that makes the break selects the formation's mode, so the break
-does not determine the next configuration. Read at the end of the step, only the
-restoring run breaks anything, and in the ending run the dependence dissolves. -/
-theorem loss_does_not_decide :
-    ending.state 0 = transforming.state 0 ∧ transforming.state 0 = restoring.state 0 ∧
-    (dependence.along ending).Broken 0 () .first ∧
-    (dependence.along transforming).Broken 0 () .first ∧
-    (dependence.along restoring).Broken 0 () .first ∧
-    (dependence.along ending).Lost .first ∧
-    (∀ t, 0 < t → ¬ (dependence.along ending).active t ()) ∧
-    (dependence.along transforming).Lost .first ∧
-    (dependence.along transforming).Dissolves 0 () .first ∧
-    (dependence.along transforming).Forms 0 () .second ∧
-    (∀ t, (dependence.along transforming).active t ()) ∧
-    ¬ (dependence.along restoring).Consumed .first ∧
-    (∀ t, 2 ≤ t → (dependence.along restoring).active t () ∧
-      (dependence.along restoring).requires t () .first ∧
-      (dependence.along restoring).Kept t () .first) := by
-  refine ⟨rfl, rfl, ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩,
-    ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩,
-    ⟨(), 0, ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, fun | _ + 1, _ => Nat.zero_lt_one⟩,
-    fun | _ + 1, _ => id,
-    ⟨(), 0, ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, fun | _ + 1, _ => Nat.zero_lt_one⟩,
-    ⟨trivial, id⟩, ⟨id, trivial⟩, fun | 0 => trivial | _ + 1 => trivial, ?_,
-    fun | _ + 2, _ => ⟨trivial, trivial, Nat.le_refl 1, Nat.le_refl 1⟩⟩
-  intro ⟨_, T, _, below⟩
-  exact Nat.lt_irrefl 1 (below (T + 2) (Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.le_succ _)))
-
 end Crossing
 
 /-! ## The stepwise and whole-run readings differ -/
@@ -932,89 +845,15 @@ def escalatingState : Nat → Nat
   | 1 => 1
   | _ + 2 => 0
 
-/-- Drawing within renewal at first, then beyond it. -/
-def escalating : Run process :=
-  ⟨escalatingState, fun | 0 => 1 | _ + 1 => 2, fun | 0 => rfl | 1 => rfl | _ + 2 => rfl⟩
-
-/-- The whole-run reading counts the focal formation as consuming, while the stepwise
-reading includes its first event, which drew within renewal, and not its second. -/
-theorem stepwise_includes_before_escalation :
-    (conditions.dependence.along escalating).ConsumingIn .focal ∧
-    (conditions.dependence.along escalating).RenewingAt 0 .focal ∧
-    ¬ (conditions.dependence.along escalating).RenewingAt 1 .focal := by
-  refine ⟨⟨0, (), trivial, .sustaining, 1, trivial, fun | _ + 2, _ => Nat.zero_lt_one⟩,
-    ⟨trivial, fun _ _ g depends => ?_⟩, fun ⟨_, keeps⟩ => ?_⟩
-  · cases g with
-    | focal => exact False.elim depends
-    | sustaining => exact ⟨Nat.le_refl 1, Nat.le_refl 1⟩
-  · exact Nat.not_succ_le_zero 0 (keeps () (Or.inr trivial) .sustaining trivial).2
-
 def dippingState : Nat → Nat
   | 0 => 1
   | 1 => 0
   | _ + 2 => 1
 
-/-- Drawing beyond renewal once, then pausing while the condition is renewed. -/
-def dipping : Run process :=
-  ⟨dippingState, fun | 0 => 2 | 1 => 0 | _ + 2 => 1, fun | 0 => rfl | 1 => rfl | _ + 2 => rfl⟩
-
-/-- The whole-run reading does not count the focal formation as consuming, since the
-condition returns, while the stepwise reading withholds its first event, whose step
-breaks the sustaining formation's dependence. -/
-theorem dip_breaks_without_consuming :
-    ¬ (conditions.dependence.along dipping).ConsumingIn .focal ∧
-    ¬ (conditions.dependence.along dipping).RenewingAt 0 .focal := by
-  refine ⟨fun ⟨_, _, _, g, T, depends, below⟩ => ?_,
-    Web.not_renewing_at_of_broken (g := .sustaining) (c := ()) (Or.inr trivial)
-      ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩⟩
-  cases g with
-  | focal => exact depends
-  | sustaining =>
-    exact Nat.lt_irrefl 1 (below (T + 2) (Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.le_succ _)))
-
-/-- The formation whose dependence breaks is not within renewal at that step, and it is
-not undermining: it draws on nothing. -/
-theorem broken_formation :
-    (conditions.dependence.along escalating).active 1 .sustaining ∧
-    (conditions.dependence.along escalating).Broken 1 .sustaining () ∧
-    ¬ (conditions.dependence.along escalating).RenewingAt 1 .sustaining ∧
-    ¬ (conditions.dependence.along escalating).UnderminingAt 1 .sustaining :=
-  have broken : (conditions.dependence.along escalating).Broken 1 .sustaining () :=
-    ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩
-  ⟨Nat.le_refl 1, broken, Web.not_renewing_at_of_broken (Or.inl trivial) broken,
-   fun ⟨_, drawn, _⟩ => drawn⟩
-
 def pausingState : Nat → Nat
   | 0 => 1
   | 1 => 0
   | t + 2 => t + 1
-
-/-- Drawing beyond renewal once, then taking nothing (action 0). `Renewable`'s `draws`
-is blind to amount, so the focal formation formally draws at every step. -/
-def pausing : Run process :=
-  ⟨pausingState, fun | 0 => 2 | _ + 1 => 0, fun | 0 => rfl | 1 => rfl | _ + 2 => rfl⟩
-
-/-- After the loss, further drawing breaks nothing, yet it undermines. In the run beyond
-renewal every later event of the focal formation draws on a condition that fails a need it
-once met, without breaking anything; in the run that takes the same first step and then
-takes nothing, the condition returns, since in `Renewable` renewal continues below
-support. Undermining reads drawing on a condition that is left below a need it once met
-and below the present need; it does not test whether the drawing keeps the condition
-from returning (`Pinned`). -/
-theorem drawing_after_loss :
-    (∀ t, 0 < t → ¬ (conditions.dependence.along beyondRenewal).BreakingAt t .focal ∧
-      (conditions.dependence.along beyondRenewal).UnderminingAt t .focal) ∧
-    pausing.state 0 = beyondRenewal.state 0 ∧ pausing.act 0 = beyondRenewal.act 0 ∧
-    ¬ (conditions.dependence.along pausing).Consumed () :=
-  ⟨fun
-    | _ + 1, _ => ⟨fun ⟨_, _, g, depends, met, _⟩ => match g, depends with
-        | .sustaining, _ => Nat.not_succ_le_zero 0 met,
-      ⟨(), trivial, .sustaining, trivial,
-        ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩⟩,
-   rfl, rfl, fun ⟨g, T, depends, below⟩ => match g, depends with
-    | .sustaining, _ =>
-      Nat.not_succ_le_zero T (Nat.le_of_succ_le_succ (below (T + 2)
-        (Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.le_succ _))))⟩
 
 end Renewable
 
@@ -1030,11 +869,6 @@ inductive Formation where
 structure State where
   level : Nat
   taking : Nat
-
-/-- An exogenous collapse: whatever is taken, the level is 0 after every step. The action
-sets the next amount taken. -/
-def process : Process State Nat :=
-  ⟨fun _ a t => t = ⟨0, a⟩⟩
 
 /-- `old` depends on the condition at level one and is active while supported; `drawer`
 draws on it when it takes a positive amount. -/
@@ -1058,29 +892,6 @@ def takingState : Nat → State
 def restingState : Nat → State
   | 0 => ⟨2, 0⟩
   | _ + 1 => ⟨0, 0⟩
-
-/-- The drawer takes one unit at every step from step 1. -/
-def taking : Run process :=
-  ⟨takingState, fun _ => 1, fun | 0 => rfl | _ + 1 => rfl⟩
-
-/-- The drawer takes nothing. -/
-def resting : Run process :=
-  ⟨restingState, fun _ => 0, fun | 0 => rfl | _ + 1 => rfl⟩
-
-/-- Undermining reads co-participation in a shortfall that is not restored, not what a
-draw does. The two runs have the same level at every step, so the drawer's taking
-changes no level; yet in the run where it takes, each of its events from step 1 is
-undermining, and the whole-run reading counts it consuming. -/
-theorem undermining_without_effect :
-    (∀ t, (dependence.along taking).level t () = (dependence.along resting).level t ()) ∧
-    (∀ t, 1 ≤ t → (dependence.along taking).UnderminingAt t .drawer) ∧
-    (dependence.along taking).ConsumingIn .drawer ∧
-    ∀ t, ¬ (dependence.along resting).draws t .drawer () :=
-  ⟨fun | 0 => rfl | _ + 1 => rfl,
-   fun | _ + 1, _ => ⟨(), Nat.zero_lt_one, .old, trivial,
-          ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_succ 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩,
-   ⟨1, (), Nat.zero_lt_one, .old, 0, trivial, fun | _ + 1, _ => Nat.zero_lt_one⟩,
-   fun | 0 => Nat.lt_irrefl 0 | _ + 1 => Nat.lt_irrefl 0⟩
 
 end Pinned
 

@@ -1,3 +1,4 @@
+import Becoming.Labelled
 import Becoming.Mechanism
 import Becoming.Space
 
@@ -8,10 +9,19 @@ Ren asked of the core's first two layers, `Process S A` and `Frame`, on 12 Octob
 this dualistic?" They posit no subject and object, but their form takes four splits as given:
 a configuration and a move drawn from an alphabet of its own; a law supplied before the history
 it governs; claims read off a configuration; and configurations given before the relation among
-them. `World` (`Becoming.Space`) takes none of them: one kind of relatum, with what each takes,
+them. `World` (`Becoming.World`) takes none of them: one kind of relatum, with what each takes,
 gives, stands at, needs and draws at each step. This module states the four splits from the
 world's side, with no premise beyond what each theorem names, so that the labelled process and
 the frame are readings of one unfolding rather than its ground.
+
+The readings that need only the frame and the world (`withMove` and its round trips, `Shown`,
+`Shown.run`, `shown_le_iff`, `Consistent`, `DeadEnd`, `Splice`, `exchange`, `Frame.world`,
+`Frame.world_fixes_run`, `Bisimulation`, `Alike`, `IdentifiesAlike`, `Circulation` and the rest)
+are stated in `Becoming.Labelled`, which this module imports, and `Exchange` and `World.move` in
+`Becoming.World`; their names are unchanged. This module states the readings that also need laws
+of the world (`Flow.Balances`, `Web.Arises`, `coming_recurs_iff`) or of the process
+(`Determined`, `GoAlike`, `carries_law_iff`, `keepHistory`, `Law.orbit`), and the list below
+covers both.
 
 * **The move is part of what the unfolding is.** Read with the move inside the configuration
   (`withMove`), a process has the same runs, read two ways (`Run.toWithMove`, `Run.ofWithMove`).
@@ -136,35 +146,7 @@ section Move
 
 variable {S : Type u} {A : Type v}
 
-/-- The move read within the configuration: what the unfolding is at a step includes the move
-made there, and the law relates such configurations. -/
-def withMove (P : Process S A) : Process (S × A) Unit :=
-  ⟨fun x _ y => P.step x.1 x.2 y.1⟩
-
 variable {P : Process S A}
-
-/-- A run read with its moves inside its configurations. -/
-def Run.toWithMove (r : Run P) : Run (withMove P) :=
-  ⟨fun n => (r.state n, r.act n), fun _ => (), fun n => r.step n⟩
-
-/-- A run of the law with moves inside, read with its moves as labels. -/
-def Run.ofWithMove (r : Run (withMove P)) : Run P :=
-  ⟨fun n => (r.state n).1, fun n => (r.state n).2, fun n => r.step n⟩
-
-/-- **One run, read two ways.** Reading the moves inside and back gives the same run. -/
-theorem Run.ofWithMove_toWithMove (r : Run P) (n : Nat) :
-    r.toWithMove.ofWithMove.state n = r.state n ∧ r.toWithMove.ofWithMove.act n = r.act n :=
-  ⟨rfl, rfl⟩
-
-/-- And reading the moves as labels and back. -/
-theorem Run.toWithMove_ofWithMove (r : Run (withMove P)) (n : Nat) :
-    r.ofWithMove.toWithMove.state n = r.state n :=
-  rfl
-
-/-- **The law leaves the move open.** A step to a configuration admits every next move. -/
-theorem withMove_open {x : S × A} {i : Unit} {t : S} {b : A}
-    (step : (withMove P).step x i (t, b)) (b' : A) : (withMove P).step x i (t, b') :=
-  step
 
 /-- **With the move inside, the law is determined exactly where it is determined with moves
 as labels and, wherever it takes a step, only one move remains.** -/
@@ -181,16 +163,6 @@ theorem withMove_determined_iff :
       cases determined x.1 x.2 t t' step step'
       cases one x.1 x.2 t step b b'
       rfl⟩
-
-/-- The move formed within the unfolding: the next move is what a policy makes of the next
-configuration. -/
-def closedBy (P : Process S A) (policy : S → A) : Process (S × A) Unit :=
-  ⟨fun x _ y => P.step x.1 x.2 y.1 ∧ y.2 = policy y.1⟩
-
-/-- Forming the move within narrows the law with the move left open. -/
-theorem closedBy_withMove {policy : S → A} {x : S × A} {i : Unit} {y : S × A}
-    (step : (closedBy P policy).step x i y) : (withMove P).step x i y :=
-  step.1
 
 /-- With the move formed within, a determined law stays determined. -/
 theorem closedBy_determined (determined : Determined P) (policy : S → A) :
@@ -210,17 +182,6 @@ theorem closedBy_runs_agree (determined : Determined P) {policy : S → A}
     ∀ n, r.state n = r'.state n :=
   GoAlike.runs_agree (π := id) (goAlike_id_iff.mpr (closedBy_determined determined policy))
     r r' (fun _ => rfl) start
-
-/-- A process with its moves forgotten: a configuration goes to another by some move. -/
-def unlabelled (P : Process S A) : Process S Unit :=
-  ⟨fun s _ t => ∃ a, P.step s a t⟩
-
-/-- Forgetting the move of a joint step leaves a step of each part with its move forgotten. -/
-theorem unlabelled_product_le {T : Type w} {Q : Process T A} {x : S × T} {i : Unit} {y : S × T}
-    (step : (unlabelled (productProcess P Q)).step x i y) :
-    (productProcess (unlabelled P) (unlabelled Q)).step x i y :=
-  match step with
-  | ⟨a, here, there⟩ => ⟨⟨a, here⟩, ⟨a, there⟩⟩
 
 namespace Fork
 
@@ -263,29 +224,6 @@ section Exchange
 
 variable {R : Type}
 
-/-- What the relata present take and give across a step, read as a move. -/
-structure Exchange (R : Type) where
-  present : List R
-  take : R → R → Nat
-  give : R → R → Nat
-
-/-- What the relata present take from `c`. -/
-def Exchange.taken (m : Exchange R) (c : R) : Nat :=
-  total m.present fun f => m.take f c
-
-/-- What the relata present give to `c`. -/
-def Exchange.given (m : Exchange R) (c : R) : Nat :=
-  total m.present fun f => m.give f c
-
-/-- The law of exchange: across a step, each relatum's standing after it, with what is taken
-from it, is its standing before, with what is given to it. -/
-def exchange (R : Type) : Process (R → Nat) (Exchange R) :=
-  ⟨fun level m level' => ∀ c, level' c + m.taken c = level c + m.given c⟩
-
-/-- The world's move across the step from `t`: its relata's exchange. -/
-def World.move (w : World) (t : Nat) : Exchange w.Relatum :=
-  ⟨w.flow.present t, w.flow.take t, w.flow.give t⟩
-
 /-- **A world balances exactly where its standings run by its relata's exchanges.** -/
 theorem World.balances_iff_exchange (w : World) :
     w.flow.Balances w.web ↔
@@ -323,29 +261,6 @@ theorem exchange_runs_agree (r r' : Run (exchange R)) (moves : ∀ n, r.act n = 
 
 namespace Circulation
 
-/-- One relatum standing at one. -/
-def one : Unit → Nat := fun _ => 1
-
-/-- It takes one from itself and gives one to itself. -/
-def round : Exchange Unit := ⟨[()], fun _ _ => 1, fun _ _ => 1⟩
-
-/-- Nothing is exchanged. -/
-def idle : Exchange Unit := ⟨[], fun _ _ => 0, fun _ _ => 0⟩
-
-/-- **The standings do not fix the exchange.** A circulation and no exchange at all leave the
-same standings. -/
-theorem standings_leave_exchange :
-    (exchange Unit).step one round one ∧ (exchange Unit).step one idle one ∧
-      round.present ≠ idle.present :=
-  ⟨fun _ => rfl, fun _ => rfl, fun same => nomatch same⟩
-
-/-- **Passing fixes standing only from a beginning.** With nothing exchanged, standing at zero
-throughout and standing at one throughout are runs with the same moves. -/
-theorem start_needed :
-    ∃ r r' : Run (exchange Unit), (∀ n, r.act n = r'.act n) ∧ ∀ n, r.state n () ≠ r'.state n () :=
-  ⟨⟨fun _ _ => 0, fun _ => idle, fun _ _ => rfl⟩, ⟨fun _ _ => 1, fun _ => idle, fun _ _ => rfl⟩,
-   fun _ => rfl, fun _ same => absurd (show (0 : Nat) = 1 from same) (by decide)⟩
-
 end Circulation
 
 end Exchange
@@ -355,35 +270,6 @@ end Exchange
 section Law
 
 variable {S : Type u} {A : Type v}
-
-/-- The law a history shows: the steps it takes. -/
-def Shown (g : Nat → S) (m : Nat → A) : Process S A :=
-  ⟨fun s a t => ∃ n, g n = s ∧ m n = a ∧ g (n + 1) = t⟩
-
-/-- **Every history is a run of the law it shows**, with no premise. -/
-def Shown.run (g : Nat → S) (m : Nat → A) : Run (Shown g m) :=
-  ⟨g, m, fun n => ⟨n, rfl, rfl, rfl⟩⟩
-
-/-- **The law a history shows is the least law it is a run of.** -/
-theorem shown_le_iff {g : Nat → S} {m : Nat → A} {Q : Process S A} :
-    (∀ s a t, (Shown g m).step s a t → Q.step s a t) ↔ ∀ n, Q.step (g n) (m n) (g (n + 1)) :=
-  ⟨fun le n => le _ _ _ ⟨n, rfl, rfl, rfl⟩,
-   fun steps _ _ _ ⟨n, at_s, by_a, to_t⟩ => at_s ▸ by_a ▸ to_t ▸ steps n⟩
-
-/-- **A law is fixed by its traces.** Two laws on the same configurations and moves take the
-same steps exactly when they have the same traces with both ends kept; traces of one move
-suffice. -/
-theorem same_steps_iff_traces {P Q : Process S A} :
-    (∀ s a t, P.step s a t ↔ Q.step s a t) ↔ ∀ s as t, Trace P s as t ↔ Trace Q s as t :=
-  ⟨fun same _ _ _ => ⟨trace_map (f := fun x => x) fun s a t => (same s a t).mp,
-     trace_map (f := fun x => x) fun s a t => (same s a t).mpr⟩,
-   fun same s a t => ⟨fun h => trace_singleton_iff.mp ((same s [a] t).mp (trace_singleton_iff.mpr h)),
-     fun h => trace_singleton_iff.mp ((same s [a] t).mpr (trace_singleton_iff.mpr h))⟩⟩
-
-/-- A history is consistent where it never takes one move at one configuration to two
-outcomes. -/
-def Consistent (g : Nat → S) (m : Nat → A) : Prop :=
-  ∀ i j, g i = g j → m i = m j → g (i + 1) = g (j + 1)
 
 /-- **The law a history shows is determined exactly where the history is consistent.** -/
 theorem shown_determined_iff {g : Nat → S} {m : Nat → A} :
@@ -411,11 +297,6 @@ theorem Shown.agrees {g : Nat → S} {m : Nat → A} {Q : Process S A} (determin
     (shown : (Shown g m).step s a t) (step : Q.step s a t') : t' = t :=
   determined s a t' t step (shown_le_iff.mpr steps s a t shown)
 
-/-- A run of a law is a run of the law it shows, which the law contains. -/
-theorem Run.shown_le {P : Process S A} (r : Run P) :
-    ∀ s a t, (Shown r.state r.act).step s a t → P.step s a t :=
-  shown_le_iff.mpr r.step
-
 end Law
 
 /-! ## How far a history and its law correspond -/
@@ -423,25 +304,6 @@ end Law
 section Correspondence
 
 variable {S : Type u} {A : Type v}
-
-/-- A history new at every step meets no configuration twice. -/
-theorem eq_of_new {g : Nat → S} (new : ∀ i j, i < j → g i ≠ g j) {i j : Nat} (same : g i = g j) :
-    i = j :=
-  match Nat.lt_or_ge i j with
-  | .inl lt => absurd same (new i j lt)
-  | .inr ge => match Nat.lt_or_eq_of_le ge with
-    | .inl lt => absurd same.symm (new j i lt)
-    | .inr eq => eq.symm
-
-/-- **Where a history never revisits a configuration, the law it shows admits only the history.**
-Every run of that law from a configuration of the history is the history from there on. -/
-theorem Shown.runs_of_new {g : Nat → S} {m : Nat → A} (new : ∀ i j, i < j → g i ≠ g j)
-    (r : Run (Shown g m)) {k : Nat} (start : r.state 0 = g k) : ∀ n, r.state n = g (k + n)
-  | 0 => start
-  | n + 1 => match r.step n with
-    | ⟨_, at_s, _, to_t⟩ => by
-      cases eq_of_new new (at_s.trans (Shown.runs_of_new new r start n))
-      exact to_t.symm
 
 /-- **The law a kept history shows admits only that history.** Along a run keeping its history
 (`keepHistory` of `Becoming.Experiment`), every run of the law the history shows, from one of its
@@ -453,43 +315,9 @@ theorem Run.keepHistory_shown {P : Process S A} (r : Run (keepHistory P))
 
 namespace Splice
 
-/-- A history that returns once to where it began and then goes elsewhere for good. -/
-def history : Nat → Nat
-  | 0 => 0
-  | 1 => 1
-  | 2 => 0
-  | _ + 3 => 2
-
-/-- Going back and forth between the first two configurations, as the history never did. -/
-def loop : Nat → Nat
-  | 0 => 0
-  | 1 => 1
-  | n + 2 => loop n
-
-/-- The loop's steps are steps the history took. -/
-theorem loop_step : ∀ n, (Shown history fun _ => ()).step (loop n) () (loop (n + 1))
-  | 0 => ⟨0, rfl, rfl, rfl⟩
-  | 1 => ⟨1, rfl, rfl, rfl⟩
-  | n + 2 => loop_step n
-
-/-- **Where a history revisits, the law it shows admits a history it never took.** -/
-theorem spliced :
-    (∃ r : Run (Shown history fun _ => ()), ∀ n, r.state n = loop n) ∧
-      ∀ k, ∃ n, loop n ≠ history (k + n) :=
-  ⟨⟨⟨loop, fun _ => (), loop_step⟩, fun _ => rfl⟩,
-   fun _ => ⟨3, fun same => absurd (show (1 : Nat) = 2 from same) (by decide)⟩⟩
-
 end Splice
 
 namespace DeadEnd
-
-/-- One step, into a configuration with no continuation. -/
-def law : Process Bool Unit :=
-  ⟨fun s _ t => s = false ∧ t = true⟩
-
-/-- **A law can have a step and no history.** No history shows it. -/
-theorem no_history : law.step false () true ∧ (Run law → False) :=
-  ⟨⟨rfl, rfl⟩, fun r => nomatch (r.step 0).2.symm.trans (r.step 1).1⟩
 
 end DeadEnd
 
@@ -501,19 +329,7 @@ section Claims
 
 variable {S : Type u} {A : Type v} {C : Type}
 
-/-- A frame along a run read as a world: its relata are its claims, each active exactly where
-it is realized; nothing stands, depends, draws or is exchanged. -/
-def Frame.world (F : Frame S A C) (r : Run F.P) : World :=
-  ⟨C, ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩,
-    ⟨fun _ _ => 0, fun t c => F.realized (r.state t) c, fun _ _ _ => False, fun _ _ _ => 0,
-      fun _ _ _ => False⟩⟩
-
 variable {F : Frame S A C} {r : Run F.P}
-
-/-- **A claim's activity is its being realized.** -/
-theorem Frame.world_active {t : Nat} {c : C} :
-    (F.world r).web.active t c ↔ F.realized (r.state t) c :=
-  Iff.rfl
 
 /-- **A claim realized anew is a relatum arising.** -/
 theorem Frame.arises_iff {t : Nat} {c : C} :
@@ -535,19 +351,6 @@ theorem Frame.claims_recur_iff {cs : List C} [∀ c t, Decidable (F.realized (r.
       Recurs cs (fun c => CeasesToBe (fun n => F.realized (r.state n) c)) :=
   coming_recurs_iff (p := fun c n => F.realized (r.state n) c)
 
-/-- A process read through the claims that the configuration is this or that one. -/
-def Frame.configurations {S : Type} (P : Process S A) : Frame S A S :=
-  ⟨P, fun s c => s = c⟩
-
-/-- **Every run is a world, and the world fixes the run.** Two runs whose worlds of
-configurations agree in activity agree at every step. -/
-theorem Frame.world_fixes_run {S : Type} {P : Process S A}
-    (r r' : Run (Frame.configurations P).P)
-    (same : ∀ t c, ((Frame.configurations P).world r).web.active t c ↔
-      ((Frame.configurations P).world r').web.active t c) :
-    ∀ t, r.state t = r'.state t :=
-  fun t => ((same t (r.state t)).mp rfl).symm
-
 end Claims
 
 /-! ## Configurations alike in their relations -/
@@ -556,167 +359,16 @@ section Likeness
 
 variable {S : Type u} {S' : Type u'} {S'' : Type u''} {A : Type v} {C : Type w}
 
-/-- A bisimulation between two frames: related configurations realize the same claims, and each
-step of either is matched by a step of the other by the same move into related
-configurations. -/
-def Bisimulation (F : Frame S A C) (G : Frame S' A C) (B : S → S' → Prop) : Prop :=
-  ∀ s s', B s s' →
-    (∀ c, F.realized s c ↔ G.realized s' c) ∧
-    (∀ a t, F.P.step s a t → ∃ t', G.P.step s' a t' ∧ B t t') ∧
-    (∀ a t', G.P.step s' a t' → ∃ t, F.P.step s a t ∧ B t t')
-
-/-- Two configurations are alike where some bisimulation relates them: they relate alike to
-every continuation. `ReferencePlan.Alike` is another sense, two signals agreeing at the addresses
-of a plan. -/
-def Alike (F : Frame S A C) (G : Frame S' A C) (s : S) (s' : S') : Prop :=
-  ∃ B, Bisimulation F G B ∧ B s s'
-
-/-- Sameness is a bisimulation. -/
-theorem Bisimulation.eq (F : Frame S A C) : Bisimulation F F fun s s' => s = s' :=
-  fun s _ same => by
-    cases same
-    exact ⟨fun _ => Iff.rfl, fun _ t step => ⟨t, step, rfl⟩, fun _ t step => ⟨t, step, rfl⟩⟩
-
-/-- The converse of a bisimulation is one. -/
-theorem Bisimulation.converse {F : Frame S A C} {G : Frame S' A C} {B : S → S' → Prop}
-    (bisim : Bisimulation F G B) : Bisimulation G F fun s' s => B s s' :=
-  fun s' s related => match bisim s s' related with
-    | ⟨claims, forth, back⟩ => ⟨fun c => (claims c).symm, back, forth⟩
-
-/-- Bisimulations compose. -/
-theorem Bisimulation.comp {F : Frame S A C} {G : Frame S' A C} {H : Frame S'' A C}
-    {B : S → S' → Prop} {B' : S' → S'' → Prop}
-    (bisim : Bisimulation F G B) (bisim' : Bisimulation G H B') :
-    Bisimulation F H fun s s'' => ∃ s', B s s' ∧ B' s' s'' :=
-  fun s s'' ⟨s', related, related'⟩ =>
-    match bisim s s' related, bisim' s' s'' related' with
-    | ⟨claims, forth, back⟩, ⟨claims', forth', back'⟩ =>
-      ⟨fun c => (claims c).trans (claims' c),
-       fun a t step => match forth a t step with
-         | ⟨t', step', joined⟩ => match forth' a t' step' with
-           | ⟨t'', step'', joined'⟩ => ⟨t'', step'', t', joined, joined'⟩,
-       fun a t'' step'' => match back' a t'' step'' with
-         | ⟨t', step', joined'⟩ => match back a t' step' with
-           | ⟨t, step, joined⟩ => ⟨t, step, t', joined, joined'⟩⟩
-
-/-- **Likeness is an equivalence:** every configuration is alike to itself, -/
-theorem Alike.refl (F : Frame S A C) (s : S) : Alike F F s s :=
-  ⟨_, Bisimulation.eq F, rfl⟩
-
-/-- likeness runs both ways, -/
-theorem Alike.symm {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'} :
-    Alike F G s s' → Alike G F s' s
-  | ⟨_, bisim, related⟩ => ⟨_, bisim.converse, related⟩
-
-/-- and passes along. -/
-theorem Alike.trans {F : Frame S A C} {G : Frame S' A C} {H : Frame S'' A C} {s : S} {s' : S'}
-    {s'' : S''} : Alike F G s s' → Alike G H s' s'' → Alike F H s s''
-  | ⟨_, bisim, related⟩, ⟨_, bisim', related'⟩ => ⟨_, bisim.comp bisim', s', related, related'⟩
-
-/-- Alike configurations realize the same claims. -/
-theorem Alike.realized {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'}
-    (alike : Alike F G s s') (c : C) : F.realized s c ↔ G.realized s' c :=
-  match alike with
-  | ⟨_, bisim, related⟩ => (bisim s s' related).1 c
-
-/-- A step of one is matched by a step of the other by the same move into alike
-configurations. -/
-theorem Alike.step {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'}
-    (alike : Alike F G s s') {a : A} {t : S} (step : F.P.step s a t) :
-    ∃ t', G.P.step s' a t' ∧ Alike F G t t' :=
-  match alike with
-  | ⟨B, bisim, related⟩ => match (bisim s s' related).2.1 a t step with
-    | ⟨t', step', joined⟩ => ⟨t', step', B, bisim, joined⟩
-
-/-- Under a bisimulation every course of moves is matched by the same course into related
-configurations. -/
-theorem Bisimulation.trace {F : Frame S A C} {G : Frame S' A C} {B : S → S' → Prop}
-    (bisim : Bisimulation F G B) {s t : S} {as : List A} (path : Trace F.P s as t) :
-    ∀ {s'}, B s s' → ∃ t', Trace G.P s' as t' ∧ B t t' := by
-  induction path with
-  | nil =>
-    intro s' related
-    exact ⟨s', .nil s', related⟩
-  | cons step _ ih =>
-    intro s' related
-    match (bisim _ s' related).2.1 _ _ step with
-    | ⟨m', step', joined⟩ =>
-      match ih joined with
-      | ⟨t', path', joined'⟩ => exact ⟨t', .cons step' path', joined'⟩
-
-/-- **Alike configurations admit the same courses of moves into alike configurations.** -/
-theorem Alike.trace {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'}
-    (alike : Alike F G s s') {as : List A} {t : S} (path : Trace F.P s as t) :
-    ∃ t', Trace G.P s' as t' ∧ Alike F G t t' :=
-  match alike with
-  | ⟨B, bisim, related⟩ => match bisim.trace path related with
-    | ⟨t', path', joined⟩ => ⟨t', path', B, bisim, joined⟩
-
-/-- **Alike configurations pass the same tests**: a course of moves followed by a claim. -/
-theorem Alike.tests {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'}
-    (alike : Alike F G s s') (as : List A) (c : C) :
-    (∃ t, Trace F.P s as t ∧ F.realized t c) ↔ (∃ t', Trace G.P s' as t' ∧ G.realized t' c) :=
-  ⟨fun ⟨_, path, real⟩ => match alike.trace path with
-    | ⟨t', path', joined⟩ => ⟨t', path', (joined.realized c).mp real⟩,
-   fun ⟨_, path', real'⟩ => match alike.symm.trace path' with
-    | ⟨t, path, joined⟩ => ⟨t, path, (joined.realized c).mp real'⟩⟩
-
-/-- A frame is determined up to likeness at a configuration where any two outcomes of one move
-there are alike. -/
-def DeterminedAt (F : Frame S A C) (s : S) : Prop :=
-  ∀ a t t', F.P.step s a t → F.P.step s a t' → Alike F F t t'
-
 /-- A determined frame is determined up to likeness everywhere. -/
 theorem Determined.at {F : Frame S A C} (determined : Determined F.P) (s : S) :
     DeterminedAt F s :=
   fun a t t' step step' => (determined s a t t' step step') ▸ Alike.refl F t
-
-/-- **Determinacy up to likeness passes along likeness.** -/
-theorem DeterminedAt.transfer {F : Frame S A C} {G : Frame S' A C} {s : S} {s' : S'}
-    (alike : Alike F G s s') (determined : DeterminedAt F s) : DeterminedAt G s' :=
-  fun a _ _ step₁ step₂ =>
-    match alike.symm.step step₁, alike.symm.step step₂ with
-    | ⟨u₁, back₁, joined₁⟩, ⟨u₂, back₂, joined₂⟩ =>
-      joined₁.trans ((determined a u₁ u₂ back₁ back₂).trans joined₂.symm)
-
-/-- **Alike configurations go alike.** Where a frame is determined up to likeness, the same move
-takes alike configurations to alike ones. -/
-theorem DeterminedAt.goAlike {F : Frame S A C} {s s' : S} (alike : Alike F F s s')
-    (determined : DeterminedAt F s') {a : A} {t t' : S} (step : F.P.step s a t)
-    (step' : F.P.step s' a t') : Alike F F t t' :=
-  match alike.step step with
-  | ⟨u, matched, joined⟩ => joined.trans (determined a u t' matched step')
 
 /-! ### Descriptions that make sense -/
 
 section Sense
 
 variable {K : Type u'} {K' : Type u''}
-
-/-- A description of configurations makes sense where it identifies exactly the alike ones. -/
-def IdentifiesAlike (F : Frame S A C) (π : S → K) : Prop :=
-  ∀ s s', π s = π s' ↔ Alike F F s s'
-
-/-- **A description makes sense exactly where what it identifies relate alike and it identifies
-whatever is alike.** -/
-theorem identifiesAlike_iff {F : Frame S A C} {π : S → K} :
-    IdentifiesAlike F π ↔
-      Bisimulation F F (fun s s' => π s = π s') ∧ ∀ s s', Alike F F s s' → π s = π s' :=
-  ⟨fun sense =>
-    ⟨fun s s' same =>
-      have alike := (sense s s').mp same
-      ⟨alike.realized,
-       fun _ _ step => match alike.step step with
-         | ⟨t', step', joined⟩ => ⟨t', step', (sense _ t').mpr joined⟩,
-       fun _ _ step' => match alike.symm.step step' with
-         | ⟨t, step, joined⟩ => ⟨t, step, (sense t _).mpr joined.symm⟩⟩,
-     fun s s' => (sense s s').mpr⟩,
-   fun ⟨kernel, idle⟩ s s' => ⟨fun same => ⟨_, kernel, same⟩, idle s s'⟩⟩
-
-/-- **Descriptions that make sense identify the same configurations.** -/
-theorem IdentifiesAlike.unique {F : Frame S A C} {π : S → K} {ρ : S → K'} (sense : IdentifiesAlike F π)
-    (sense' : IdentifiesAlike F ρ) (s s' : S) : π s = π s' ↔ ρ s = ρ s' :=
-  (sense s s').trans (sense' s s').symm
 
 /-- **Where the frame is determined up to likeness, a description that makes sense carries a
 law** (`carries_law_iff` of `Becoming.Mechanism`). -/
@@ -725,13 +377,6 @@ theorem IdentifiesAlike.carries {F : Frame S A C} {π : S → K} (sense : Identi
     ∃ Q : Process K A, Determined Q ∧ FactorsThrough F.P π Q :=
   carries_law_iff.mpr fun s s' _ u u' same step step' =>
     (sense u u').mpr (DeterminedAt.goAlike ((sense s s').mp same) (determined s') step step')
-
-/-- **Naming the configurations makes sense exactly where alike configurations are one.** -/
-theorem identifiesAlike_id_iff {F : Frame S A C} :
-    IdentifiesAlike F id ↔ ∀ s s', Alike F F s s' → s = s' :=
-  ⟨fun sense s s' => (sense s s').mpr,
-   fun one s s' =>
-    ⟨fun same => Eq.subst (motive := fun x => Alike F F s x) same (Alike.refl F s), one s s'⟩⟩
 
 end Sense
 
@@ -748,10 +393,6 @@ inductive Config where
 /-- From the start one move leads to either successor; nothing is claimed. -/
 def frame : Frame Config Unit Unit :=
   ⟨⟨fun s _ t => s = .start ∧ (t = .left ∨ t = .right)⟩, fun _ _ => True⟩
-
-/-- The same with one successor. -/
-def one : Frame Bool Unit Unit :=
-  ⟨⟨fun s _ t => s = false ∧ t = true⟩, fun _ _ => True⟩
 
 /-- The twins are not determined. -/
 theorem not_determined : ¬ Determined frame.P :=
@@ -870,33 +511,6 @@ end Likeness
 section Standings
 
 variable {R : Type}
-
-/-- The law of exchange read through the claims that a relatum stands at an amount. -/
-def exchangeFrame (R : Type) : Frame (R → Nat) (Exchange R) (R × Nat) :=
-  ⟨exchange R, fun level x => level x.1 = x.2⟩
-
-/-- Agreeing at every relatum is a bisimulation of the law of exchange. -/
-theorem exchange_pointwise_bisimulation :
-    Bisimulation (exchangeFrame R) (exchangeFrame R) fun level level' => ∀ c, level c = level' c :=
-  fun _ _ same =>
-    ⟨fun x => ⟨fun h => (same x.1).symm.trans h, fun h => (same x.1).trans h⟩,
-     fun _ t step => ⟨t, fun c => (step c).trans (congrArg (· + _) (same c)), fun _ => rfl⟩,
-     fun _ t step => ⟨t, fun c => (step c).trans (congrArg (· + _) (same c).symm), fun _ => rfl⟩⟩
-
-/-- **Standings agreeing at every relatum are alike.** -/
-theorem exchange_alike_of_pointwise {level level' : R → Nat} (same : ∀ c, level c = level' c) :
-    Alike (exchangeFrame R) (exchangeFrame R) level level' :=
-  ⟨_, exchange_pointwise_bisimulation, same⟩
-
-/-- Alike standings agree at every relatum. -/
-theorem exchange_pointwise_of_alike {level level' : R → Nat}
-    (alike : Alike (exchangeFrame R) (exchangeFrame R) level level') : ∀ c, level c = level' c :=
-  fun c => ((alike.realized (c, level c)).mp rfl).symm
-
-/-- **Standings are alike exactly where they agree at every relatum.** -/
-theorem exchange_alike_iff {level level' : R → Nat} :
-    Alike (exchangeFrame R) (exchangeFrame R) level level' ↔ ∀ c, level c = level' c :=
-  ⟨exchange_pointwise_of_alike, exchange_alike_of_pointwise⟩
 
 /-- **The law of exchange is determined up to likeness.** -/
 theorem exchange_determinedAt (level : R → Nat) : DeterminedAt (exchangeFrame R) level :=

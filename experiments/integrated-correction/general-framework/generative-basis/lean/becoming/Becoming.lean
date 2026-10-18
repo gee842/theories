@@ -1,4 +1,6 @@
+import Becoming.World
 import Becoming.Frame
+import Becoming.Labelled
 import Becoming.Inquiry
 import Becoming.ClassifiedBeliefProcesses
 import Becoming.Recurrence
@@ -37,6 +39,7 @@ import Becoming.Dissipation
 import Becoming.Locality
 import Becoming.Seeking
 import Becoming.Roles
+import Becoming.LabelledRoles
 import Becoming.Reserve
 import Becoming.Evolution
 import Becoming.Capture
@@ -193,11 +196,23 @@ import Becoming.PoolResponse
 /-!
 # The Theory of Becoming: the formal core
 
-One relational unfolding, stated once. The core is the foundation (`GenerativeCore`,
-`InquirySufficiency`, `RelationalRenewal`) and four layers:
+One relational unfolding, stated once. The import tree starts from its records,
+`Becoming.World`, which imports nothing; the foundation (`GenerativeCore`, `InquirySufficiency`,
+`RelationalRenewal`) and four layers follow. The labelled process and the frame enter as
+readings of the unfolding (`Becoming.Labelled`).
 
+* `Becoming.World` (base): the records of the unfolding, with no premise among them. A web
+  (levels, activity, what each formation requires, needs and draws), a flow (who takes part,
+  what each takes and gives), a world (one kind of relatum with a flow and a web among its own
+  relata) and an exchange (what the relata take and give across a step), over `Nat` and `Prop`,
+  with nothing imported. Balance and the other premises are gluings or local states stated where
+  they are used (`Becoming.Readings`).
 * `Becoming.Frame` (L1): a frame is a process with realized claims; runs,
   reachability, invariants and new realization.
+* `Becoming.Labelled` (L1): the labelled process and the frame as readings of the one
+  unfolding: the move read within the configuration, the law a history shows, claims as relata,
+  configurations alike by bisimulation; and the run readings of renewal, dependence, return and
+  generation, whose laws are stated over the web without the frame.
 * `Becoming.Inquiry` (L2): the visible scope of an inquiry is what its actual
   executions reach; a sound policy secures its goal there.
 * `Becoming.ClassifiedBeliefProcesses` (L2): a narrowed belief whose inhabitation is decided
@@ -272,7 +287,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dead ends and splices and closing where the history is kept; a claim is a relatum and novelty
   is arising; configurations are alike where a bisimulation relates them, pass the same tests,
   and are named sensibly exactly where alike ones are one; determinacy as equality depends on
-  names. Ren confirmed the reading of law and history; the other readings are the AI's.
+  names. Ren confirmed the reading of law and history; the other readings are the AI's. The
+  readings needing only the frame and the world are stated in `Becoming.Labelled`.
 * `Becoming.LawAlongRun` (L3): a law through a projection along one run, and exactness. Some
   determined process on a description admits a run's steps read through it up to a step exactly
   where two of them alike under it, by the same move, reach configurations alike under it; the
@@ -454,6 +470,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   member of the family falling; without dissipation it need not. Where activity needs
   support, undermining an unchanged dependence leaves the relatum depending inactive after
   the step: its ending where it was active, no ending where it was dormant.
+* `Becoming.LabelledRoles` (L3): the run readings of `Becoming.Roles` and `Becoming.Dissipation`
+  (a web's activity along a run, ending together, the predation witness, a sequence's
+  recurrence as a run).
 * `Becoming.Reserve` (L3): a reserve carries activity beyond support. `Dependent` is
   exactly the zero reserve; a reserve can be a held condition, and where none is
   represented it is supplied. Where a held condition carries the formations, moving

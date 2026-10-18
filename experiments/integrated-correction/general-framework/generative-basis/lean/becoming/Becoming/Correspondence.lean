@@ -1,3 +1,4 @@
+import Becoming.Labelled
 import Becoming.Metaethics
 import Becoming.Roles
 

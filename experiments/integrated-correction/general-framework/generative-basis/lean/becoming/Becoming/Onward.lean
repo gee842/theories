@@ -1,3 +1,4 @@
+import Becoming.Horizon
 import Becoming.Parting
 
 /-!
