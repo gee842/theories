@@ -51,7 +51,7 @@
 | [EvaluatorGrounding](#evaluatorgrounding) | 12 | 12 | 0 | 0 | 0 | 0 | 12 | fully restated (sub-chain 2) |
 | [OpenFutureRevision](#openfuturerevision) | 10 | 10 | 0 | 0 | 0 | 0 | 10 | fully restated (sub-chain 2) |
 | [ContinuationRenewal](#continuationrenewal) | 17 | 17 | 0 | 0 | 0 | 0 | 17 | fully restated (sub-chain 2) |
-| OrganizationalRuleInheritance | 29 | | | | | | | sub-chain 3, pending |
+| [OrganizationalRuleInheritance](#organizationalruleinheritance) | 29 | 29 | 0 | 0 | 0 | 0 | 29 | fully restated (sub-chain 3) |
 
 Sub-chain 1 (the nine modules above StandardsBridge): 110 theorems, all same or step. StandardsBridge (26) lands with them, in `Becoming.Narrowing`.
 
@@ -467,3 +467,42 @@ Bridge and join declarations reading only these modules:
 Each core declaration in `Becoming.Handoff` has an empty axiom report (scratch build: 22 theorems, 34 declarations).
 
 Sub-chain 2 is fully restated: five periphery modules (58 theorems) in four new core modules, `PositiveGround` (30), `ProfileReach` (16), `RenewalBound` (21), `Handoff` (22), with their bridge and join declarations.
+
+## 6. Sub-chain 3
+
+### OrganizationalRuleInheritance
+
+Source: `universal-ethics/OrganizationalRuleInheritance.lean`. 29 theorems; **fully restated** in the new core module `Becoming.RuleHandoff` (imports `Assurance`, `Gated`, `Narrowing`), together with the bridge's governance section of `Becoming.Instances` and the joins `RuleHandoffTraces` and `RuleHandoffTracesInherited`. Map: `f3j/map_s3.py`. The definitions (`Rule`, `Ballot`, `State`, `voters`, `consistent`, `governance`, `technical`, `Event`, `handoff`, `fork`, `step`, the example configurations) are the same; the derived decidable equalities are kept, and have empty axiom reports. The periphery's `run` is the core's run of a partial law, `runPartial step` (the same recursion; the bridge's `run_eq`, a reading, retires), and `process` is `ofPartial step` (the bridge's `process_eq`, likewise), so the traces are exactly the completed runs by the core's `trace_ofPartial_iff` (`trace_iff_run`). Only adoption changes the rule, through the core's gate (`Gated.KeptBy`, `kept_along`, `change_located`).
+
+The periphery proves by `simp`, `split`, `simp_all`, `omega` and `classical`; the join `RuleHandoffTracesInherited` inherited `propext`, `Quot.sound` and `Classical.choice` from them. The core's proofs are constructive: steps are read through `some_of_ite` and `cond_of_ite` (the condition of a partial step that fires), Boolean conjunctions through `and_left` and `and_right`, membership in a filtered list through `Narrowing.mem_filter` and `mem_of_contains` (by constructors, not decided through `LawfulBEq`), `no_participation_no_integration` by rewriting the voters to the empty list and cases on the two Boolean inputs left, `majority_acceptance_survives_extension` by a Boolean case lemma (`extend_case`), `same_enacted_relations_same_decision` by cases on the equalities, and `nonadopting_step_preserves` from `rule_kept` without excluded middle. The closed `decide` computations are the periphery's, on the same definitions.
+
+| Theorem | Grade | Core counterpart |
+|---|---|---|
+| `run_is_trace` | same | `RuleHandoff.run_is_trace` |
+| `admitted_requires_review` | same | `RuleHandoff.admitted_requires_review` |
+| `adoption_uses_recorded_proposal` | same | `RuleHandoff.adoption_uses_recorded_proposal` |
+| `changed_rule_requires_adoption` | same | `RuleHandoff.changed_rule_requires_adoption` |
+| `handoff_preserves_record` | same | `RuleHandoff.handoff_preserves_record` |
+| `handoff_does_not_invent_participation` | same | `RuleHandoff.handoff_does_not_invent_participation` |
+| `fork_retains_source` | same | `RuleHandoff.fork_retains_source` |
+| `repeated_handoff_inherits` | same | `RuleHandoff.repeated_handoff_inherits` |
+| `same_enacted_relations_same_decision` | same | `RuleHandoff.same_enacted_relations_same_decision` |
+| `no_participation_no_integration` | same | `RuleHandoff.no_participation_no_integration` |
+| `nonadopting_step_preserves` | same | `RuleHandoff.nonadopting_step_preserves` |
+| `nonadopting_history_inherits` | same | `RuleHandoff.nonadopting_history_inherits` |
+| `relations_form_through_work`, `review_alone_does_not_confer_office`, `office_without_review_fails`, `proposal_alone_does_not_change_rule`, `authorized_revision_is_actual`, `low_support_cannot_revise`, `duplicate_votes_do_not_create_mandates`, `inherited_rules_change_access`, `wait_and_objection_matter`, `inherited_revision_continues`, `copied_rule_without_participation_fails`, `enabling_one_operation_need_not_enable_revision`, `successor_can_revise_inherited_rule`, `common_history_can_branch_with_different_rules` | same | the core theorems of the same names (closed `decide`) |
+| `boundary_is_not_exclusive_membership` | same | `RuleHandoff.boundary_is_not_exclusive_membership` (membership by constructors) |
+| `no_count_only_decision` | same | `RuleHandoff.no_count_only_decision` |
+| `majority_acceptance_survives_extension` | same | `RuleHandoff.majority_acceptance_survives_extension` |
+
+Bridge and join declarations reading only OrganizationalRuleInheritance:
+
+| Declaration | Grade | Core counterpart | Note |
+|---|---|---|---|
+| `Instances.adopts` (def), `trace_iff_run`, `rule_kept`, `rule_inherited`, `rule_change_located` | same | `RuleHandoff.adopts`, `trace_iff_run`, `rule_kept`, `rule_inherited`, `rule_change_located` | |
+| `Instances.ite_some` | same | `RuleHandoff.some_of_ite` | |
+| `Instances.process_eq`, `run_eq` | reading | `RuleHandoff.process`, `run` (definitions) | kind 1; retire |
+| `RuleHandoffTraces.*` (21 theorems) | same | the core theorems of the same names | `none_ne_some` is the core's `Assurance.none_ne_some` |
+| `RuleHandoffTracesInherited.*` (9 theorems) | same | the core theorems of the same names | the join inherited `propext`, `Quot.sound`, `Classical.choice`; the core's are clean |
+
+Each core declaration in `Becoming.RuleHandoff` has an empty axiom report (scratch build: 71 theorems, 96 declarations). With this, all 16 modules of the family (223 theorems) are restated in the core.
