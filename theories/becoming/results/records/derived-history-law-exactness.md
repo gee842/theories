@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T18:20:30.740385+00:00`. Run the registry che
 
 For a prefix-closed language L and summary q, the local law constructed from admitted one-step extensions preserves all finite continuations at every admitted history exactly iff histories sharing a code have identical continuation profiles.
 
-Canonical source: [DerivedHistoryLaw.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean)
+Canonical source: [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -55,11 +55,13 @@ Finite existential word feasibility only: no endpoint, branch-identity, probabil
 | integration | [DEDUCTIVE-FOUNDATION-TEST.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) | — |
 | provenance | [check_derived_history_law.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_derived_history_law.py) | — |
 | proof | [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean) | `Becoming.Readout.image`, `Becoming.Readout.SameFutures`, `Becoming.Readout.futures_through_iff` |
+| proof | [SummaryFutures.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SummaryFutures.lean) | `Becoming.SummaryFutures.every_word`, `Becoming.SummaryFutures.futures_through`, `Becoming.SummaryFutures.endpoint_moved` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.admittedProcess`, `Becoming.admitted_feasible_iff`, `Becoming.derived_same_steps`, `Becoming.exact_iff_fiber_future_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -80,4 +82,5 @@ Aliases: `Generative.DerivedHistoryLaw.exact_iff_fiber_future`, `Becoming.exact_
 - 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core (Becoming.Readout) proves, for every law that need not be determined, that the law read through a reduction (image) takes from each reduced value exactly the words the configuration can take, for every configuration, exactly when configurations the reduction merges can take the same words (futures_through_iff), the nondeterministic counterpart of law_through_iff. On a language's admitted histories, each step adding one move (admittedProcess; admitted_feasible_iff under prefix closure), derivedProcess is the law read through the summary (derived_same_steps), so exact_iff_fiber_future is that law (exact_iff_fiber_future_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports DerivedHistoryLaw, which the spine run compiles as an inherited module with ContinuationConditions.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
+- 18 October 2026, F2 (Ren: "please, do them, reduce bridges and add more theory to the spine"): every theorem of DerivedHistoryLaw.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Readout.lean; SummaryFutures.lean states the rest (every_word, futures_through, endpoint_moved). DerivedHistoryLaw.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-history-law-exactness.json).

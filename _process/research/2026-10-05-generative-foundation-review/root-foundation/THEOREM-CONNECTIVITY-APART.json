@@ -1466,6 +1466,121 @@
    "module": "WholeGroundCoverage",
    "category": "model-witness",
    "reason": "every place of the alternating atlas lies in some scope's domain; the atlas's process (SeedReachProcesses.atlasProcess) does not record domains, and the atlas's reach laws are joined as alternating_beyond_scopes"
+  },
+  "PracticalReach.guarantee_mono": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.completes_mono (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.common_goal_prevents_everywhere_strict": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.common_goal (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.no_strict_improvement_for_every_goal": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.no_strict_gain_everywhere (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.finite_revisions_preserve": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.covers_along (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.possible_enlargement_without_control": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.free_wider_not_covering (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.guaranteed_control_can_remove_possibility": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.law_covers_free_and_loses (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.retained_control_and_strict_new_goal": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.setting_covers_and_gains (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.outcome_goal_preservation_can_defeat_closure_goal": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.setting_covers_and_opens (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.separate_guarantees_not_joint": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.setting_separate_not_joint (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.empty_response_does_not_guarantee": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.halted_ensures_nothing (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalReach.projection_can_hide_loss": {
+   "module": "PracticalReach",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.MoveOutcomeProcesses.summary_hides_loss (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "Generative.BecomingCompatibility.actual_step_supplies_advance": {
+   "module": "BecomingCompatibility",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.ContextArrivalTraces.step_arrives (with arrives_singleton) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "Generative.BecomingCompatibility.empty_support_cannot_advance": {
+   "module": "BecomingCompatibility",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.ContextArrivalTraces.empty_support_no_arrival (with arrives_singleton) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "Generative.BecomingCompatibility.changed_context_is_formed": {
+   "module": "BecomingCompatibility",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.ContextArrivalTraces.changed_context_arrives (with arrives_singleton) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "UniversalEthics.CutCoverageAudit.has_cut_iff_not_reachable": {
+   "module": "CutCoverageAudit",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.SeedReachProcesses.separated_iff_not_fromSeed (Becoming.SeedReach) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "UniversalEthics.CutCoverageAudit.no_cut_iff_reachable_of_decidable": {
+   "module": "CutCoverageAudit",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.SeedReachProcesses.fromSeed_iff_not_separated_of_decidable (Becoming.SeedReach) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "UniversalEthics.CutCoverageAudit.universal_cut_upgrade_iff_double_negation_elimination": {
+   "module": "CutCoverageAudit",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.SeedReachProcesses.fromSeed_of_not_separated_iff_dne (Becoming.SeedReach) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "WholeGroundCoverage.reached_iff_entails": {
+   "module": "WholeGroundCoverage",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.SeedReachProcesses.fromSeed_iff_invariant (Becoming.SeedReach) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "WholeGroundCoverage.substitute_grounded_seeds": {
+   "module": "WholeGroundCoverage",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.SeedReachProcesses.substitute_seeds (Becoming.SeedReach) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "WholeGroundCoverage.uncovered_has_admissible_omission": {
+   "module": "WholeGroundCoverage",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.SeedReachProcesses.unreached_has_invariant (Becoming.SeedReach) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "WholeGroundCoverage.universal_target_coverage_iff": {
+   "module": "WholeGroundCoverage",
+   "category": "restates",
+   "reason": "stated in the core as Becoming.SeedReachProcesses.covers_iff_invariant (Becoming.SeedReach) (port-f2.md, F2); the join that cited it now proves its statement through the core law, so nothing on the base uses it"
+  },
+  "PracticalJudgment.robust_at_actual": {
+   "module": "PracticalJudgment",
+   "category": "restates",
+   "reason": "a common response completes at each configuration the belief holds: the foundation's CommonResponse unfolded, stated in the core as Becoming.MoveOutcomeProcesses.common_completes (F2), which no longer cites it"
+  },
+  "Becoming.ScopedReach.domain_covers": {
+   "module": "Becoming.ScopedReach",
+   "category": "model-witness",
+   "reason": "every configuration of the three-place witness lies in one of its two scopes' domains; a fact about the constructed domains of the alternating witness, the core counterpart of WholeGroundCoverage's alternating_domains_cover"
   }
  }
 }

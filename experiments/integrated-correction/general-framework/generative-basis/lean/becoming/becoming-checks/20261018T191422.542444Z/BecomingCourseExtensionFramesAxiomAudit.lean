@@ -1,0 +1,7 @@
+import Becoming.CourseExtensionFrames
+#print axioms Becoming.CourseExtensionFrames.broad
+#print axioms Becoming.CourseExtensionFrames.broad_iff
+#print axioms Becoming.CourseExtensionFrames.living_significance_relational
+#print axioms Becoming.CourseExtensionFrames.contest_extensions
+#print axioms Becoming.CourseExtensionFrames.preferOccurs_iff
+#print axioms Becoming.CourseExtensionFrames.malignant_ranks

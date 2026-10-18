@@ -1,0 +1,5 @@
+import Becoming.MoveOutcomeProcessesInherited
+#print axioms Becoming.MoveOutcomeProcesses.canEnsure_iff
+#print axioms Becoming.MoveOutcomeProcesses.summary_iff
+#print axioms Becoming.MoveOutcomeProcesses.steps_eq
+#print axioms Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers

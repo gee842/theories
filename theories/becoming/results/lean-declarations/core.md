@@ -1036,11 +1036,11 @@ Imports: `Becoming.CoursesBridge`
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTracesInherited.lean`
 
-Imports: `Becoming.ContextArrivalTraces`
+Imports: `Becoming.ContextArrivalTraces`, `BecomingCompatibility`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.ContextArrivalTracesInherited.changed_history_ends](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTracesInherited.lean#L24) | 24 |
+| [Becoming.ContextArrivalTracesInherited.changed_history_ends](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTracesInherited.lean#L25) | 25 |
 
 </details>
 
@@ -1398,17 +1398,20 @@ Imports: `Becoming.JointPhaseTraces`
 <a id="module-bbb3fae906ca"></a>
 
 <details>
-<summary>MoveOutcomeProcessesInherited.lean — 1 explicit declarations</summary>
+<summary>MoveOutcomeProcessesInherited.lean — 4 explicit declarations</summary>
 
 [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean`
 
-Imports: `Becoming.MoveOutcomeProcesses`
+Imports: `Becoming.MoveOutcomeProcesses`, `Becoming.Bridge`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean#L32) | 32 |
+| [Becoming.MoveOutcomeProcesses.canEnsure_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean#L37) | 37 |
+| [Becoming.MoveOutcomeProcesses.summary_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean#L43) | 43 |
+| [Becoming.MoveOutcomeProcesses.steps_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean#L50) | 50 |
+| [Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean#L67) | 67 |
 
 </details>
 

@@ -27,7 +27,7 @@
     "en": "States articulate relations within one unfolding. A return restores precisely the represented configuration; historical harms and distinct projected recovery targets are not erased.",
     "zh": "状态表达同一展开中的关系。返回仅恢复被表示的配置；历史损害及不同的投影恢复目标不被抹除。"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
   "aliases": [
     "BecomingReversibility.same_endpoint_possibilities_iff_return",
     "BecomingReversibility.irreversible_iff_endpoint_loss",
@@ -98,6 +98,16 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Irreversibility.lean",
+      "role": "proof",
+      "sha256": "ec9e9c251f39ae0e1dbdcaf7079c575578e2f919311afbd608a05eff60fe2fea",
+      "declarations": [
+        "Becoming.Irreversibility.deadEnd_no_return",
+        "Becoming.Irreversibility.same_change_different_return",
+        "Becoming.Irreversibility.constant_reading_hides_loss"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
       "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
@@ -136,6 +146,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "role": "receipt",
+      "sha256": "d87f0ffbdb0bafc510a5b95de2dd83714570dfc1ed7f1a6261578f8cb9125a79",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -157,6 +173,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Irreversibility.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Irreversibility",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -196,6 +219,9 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F2 (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): every theorem of BecomingReversibility.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Recurrence.lean; Irreversibility.lean states the rest (deadEnd_no_return, same_change_different_return, constant_reading_hides_loss). BecomingReversibility.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged."
     }
   ]
 }

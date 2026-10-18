@@ -3,9 +3,11 @@ import Becoming.Frame
 import Becoming.Labelled
 import Becoming.Inquiry
 import Becoming.ClassifiedBeliefProcesses
+import Becoming.MoveOutcomeProcesses
 import Becoming.Recurrence
 import Becoming.Diagonal
 import Becoming.Context
+import Becoming.ContextArrivalTraces
 import Becoming.Quantum
 import Becoming.Renewal
 import Becoming.Dependence
@@ -16,6 +18,7 @@ import Becoming.Experiment
 import Becoming.Mechanism
 import Becoming.Unfolding
 import Becoming.LawAlongRun
+import Becoming.Irreversibility
 import Becoming.Histories
 import Becoming.Branching
 import Becoming.Listing
@@ -77,6 +80,8 @@ import Becoming.Interdependence
 import Becoming.Feeding
 import Becoming.Feedback
 import Becoming.EdgeClosure
+import Becoming.SeedReach
+import Becoming.ScopedReach
 import Becoming.Boundaries
 import Becoming.Relevance
 import Becoming.Testing
@@ -103,6 +108,7 @@ import Becoming.Readout
 import Becoming.Dephasing
 import Becoming.ProjectedLaws
 import Becoming.JointPhase
+import Becoming.SummaryFutures
 import Becoming.Gated
 import Becoming.Viability
 import Becoming.Keeping
@@ -227,6 +233,12 @@ readings of the unfolding (`Becoming.Labelled`).
 * `Becoming.ClassifiedBeliefProcesses` (L2): a narrowed belief whose inhabitation is decided
   is empty or inhabited; where every narrowed belief's inhabitation is decided, every belief is
   classified through every depth, so bounded sufficiency is the implication form there.
+* `Becoming.MoveOutcomeProcesses` (L2): the outcomes of one move, with no premise. The moves of
+  one process at a configuration cover another's exactly where every goal one move of the first
+  completes, one move of the second completes; covering is a preorder carried along revisions,
+  and no process ensures every goal another does not. Four processes on two configurations
+  witness that more possible outcomes need not cover, that covering can remove a possibility, and
+  that a summary can hide a loss. Joined to the core from the U2 ring by F2.
 * `Becoming.Recurrence` (L2): what every law of change keeps, loses and returns to, with
   no premise and no decidability. A list holding enough of a sequence holds two equal values;
   within finitely many configurations a law merges nothing exactly where every configuration
@@ -248,6 +260,9 @@ readings of the unfolding (`Becoming.Labelled`).
   context-free reading no configuration respecting them glues, and where some context allows
   something they are the parts of no whole. Specker's three boxes and the Mermin–Peres square are
   witnesses. The readings are the AI's.
+* `Becoming.ContextArrivalTraces` (L2): arrival in a context along traces of the evolving law: a
+  step from a supported context arrives, from an empty support nothing arrives, and the context
+  changes with the step. Joined to the core from the U2 ring by F2.
 * `Becoming.Quantum` (L2): the quantum realization of the Mermin–Peres square (P72q, written and
   checked by the owner of P64–P68). The nine two-qubit observables as integer matrices square to
   the identity, commute along each line, and multiply to minus the identity along the third
@@ -306,6 +321,9 @@ readings of the unfolding (`Becoming.Labelled`).
   history law. A run can show a law the process lacks. The image is an exact finite-path
   projection (`Generative.projection_exact_iff`) exactly where configurations alike match each
   other's steps up to the description; going alike does not give it.
+* `Becoming.Irreversibility` (L3): return belongs to the law, not to the occurring change: the
+  dead end never returns, the same change occurs under the dead end and the flip with different
+  return, and a constant reading hides the loss. Stated by F2 from `BecomingReversibility`.
 * `Becoming.Histories` (L3): what histories fix (P76). A family of histories is the family of
   some law's histories exactly where it holds every sequence made of its own steps, and of a
   determined law's exactly where it is also consistent; two laws admit the same histories exactly
@@ -879,6 +897,17 @@ readings of the unfolding (`Becoming.Labelled`).
 * `Becoming.EdgeClosure` (L4): the seed–edge closure, what the process whose steps are the
   edges reaches from a seed, and the core's closure under a relation as this closure from one
   seed.
+* `Becoming.SeedReach` (L4): reach from seeds is the least invariant, with no premise. A
+  configuration is separated from the seeds by an invariant property exactly where it is not
+  reached; that every process reaches every configuration not so separated is double-negation
+  elimination, so a reach claim from a failed separation needs a path, not only the refuted
+  absence of one. Stated by F2 from the U2 join `SeedReachProcesses`.
+* `Becoming.ScopedReach` (L4): reach through scopes and within histories, with no premise. What
+  one scope's steps reach the process reaches; grounds agreeing where domains meet, carried by
+  each scope's steps, glue to an invariant; a family indexed by histories never leaves a history
+  and reaches in each exactly what that history's process reaches. Alternating scopes reach beyond
+  each scope, and covering every configuration by a scope does not give reach. Stated by F2 from
+  `WholeGroundCoverage`.
 * `Becoming.Testing` (L4): what registers in a formation and what it can test, with no premise
   beyond balance on the conditions registered and the representation. A condition a formation
   depends on and does not observe registers only whether it meets the need; an observed one
@@ -1118,6 +1147,10 @@ readings of the unfolding (`Becoming.Labelled`).
   pair carries the law (`no_local_pair_update`, `local_pair_carries_no_law`); a summary retaining
   the control is exact along every finite word and omits the other relations
   (`every_finite_word_exact`, `summary_omits_other_relations`).
+* `Becoming.SummaryFutures` (L4): a summary can carry the futures and move the endpoint: the
+  process extending a history takes every word, so read through any summary its futures are
+  carried, while read through a summary marking one history a step ends where the extended
+  history's summary is not. Stated by F2 from `DerivedHistoryLaw`.
 * `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
   by every ungated step is kept along every ungated course, and conversely; a course that
   changes it passes the gate, at a gated step that itself changes it. One direction suffices: a

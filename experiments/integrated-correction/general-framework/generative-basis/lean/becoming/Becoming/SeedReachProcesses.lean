@@ -1,4 +1,5 @@
 import Becoming.Bridge
+import Becoming.SeedReach
 
 /-!
 # Seed closures as reach in a process
@@ -7,20 +8,16 @@ import Becoming.Bridge
 `EvaluatorGrounding` of chains of small steps between profiles. `Becoming.Bridge` proves that
 the chains are reachability on the process whose steps are the edges (`chain_iff_reach`). This
 module reads the edges off a process: the edges of a process are its moves, one step under some
-label (`Moves`), and the closure of seeds under them is what the process reaches from a seed
-(`FromSeed`, `reached_iff`, `cutReach_iff`). At the edge process these are the seed–edge closure
-of `Becoming.EdgeClosure` (`reached_iff_closure`, `cutReach_iff_closure`). A local
-atlas of `WholeGroundCoverage` is a process whose labels are its scopes (`atlasProcess`, with one
-scope's edges alone as `scopeProcess`), and a family of atlases indexed by histories is a process
-on the positions of every history (`historyProcess`). The laws of the periphery modules are then
-stated of these processes and proved through them.
+label, and the closure of seeds under them is what the process reaches from a seed (`reached_iff`,
+`cutReach_iff`). `Moves`, `FromSeed` and the laws of reach from seeds (the least invariant,
+separation and what a reach claim needs) are stated in the core, `Becoming.SeedReach`, with the
+full names they had here. At the edge process these are the seed–edge closure of
+`Becoming.EdgeClosure` (`reached_iff_closure`, `cutReach_iff_closure`). A local atlas of
+`WholeGroundCoverage` is a process whose labels are its scopes (`atlasProcess`, with one scope's
+edges alone as `scopeProcess`), and a family of atlases indexed by histories is a process on the
+positions of every history (`historyProcess`). The laws of the periphery modules are then stated
+of these processes and proved through them.
 
-* **Reach from seeds is the least invariant.** A process reaches a configuration from a seed
-  exactly where every property holding at the seeds and invariant under the process holds there
-  (`fromSeed_iff_invariant`); every declared target is reached exactly where every such property
-  holds at every target (`covers_iff_invariant`); where a configuration is not reached, some such
-  property fails there (`unreached_has_invariant`); seeds reached from other seeds add nothing
-  (`substitute_seeds`).
 * **Scopes of an atlas.** What one scope's edges reach the atlas's process reaches
   (`scope_reach_in_atlas`); grounds compatible on overlaps and carried by every local edge hold
   wherever the atlas's process reaches from grounded seeds (`glued_on_reach`). In the alternating
@@ -32,11 +29,12 @@ stated of these processes and proved through them.
   history's atlas process reaches it from a seed of that history (`history_fromSeed_iff`), and a
   reason sound in each history holds wherever it reaches from seeds the reason holds at
   (`history_sound_on_reach`).
-* **Cuts.** A reverse-closed cut avoiding the seeds and holding a configuration exists exactly
-  where the process does not reach it from a seed (`cut_iff_not_fromSeed`); where that reach is
-  decided, no such cut exists exactly where it is reached (`noCut_iff_fromSeed_of_decidable`); and
-  absence of a cut gives reach in every process exactly where double-negation elimination holds
-  (`upgrade_iff_dne`).
+* **Cuts.** A reverse-closed cut avoiding the seeds and holding a configuration is the complement
+  of a property separating it from the seeds (`hasCut_iff_separated`), so it exists exactly where
+  the process does not reach it from a seed (`cut_iff_not_fromSeed`); where that reach is decided,
+  no such cut exists exactly where it is reached (`noCut_iff_fromSeed_of_decidable`); and absence
+  of a cut gives reach in every process exactly where double-negation elimination holds
+  (`upgrade_iff_dne`), the core's `fromSeed_of_not_separated_iff_dne`.
 * **Chains of small steps.** Under supervenience, S0 and tolerance, where every reachable living
   occurrence's profile is reached from an own living one in the process of small steps between
   profiles, living significance holds of the reachable occurrences with the standpoint's
@@ -58,12 +56,6 @@ namespace SeedReachProcesses
 section Moves
 
 variable {S : Type u} {A : Type v}
-
-/-- The moves of a process: one step under some label. -/
-def Moves (P : Process S A) (x y : S) : Prop := ∃ a, P.step x a y
-
-/-- What a process reaches from some seed. -/
-def FromSeed (P : Process S A) (seed : S → Prop) (x : S) : Prop := ∃ s, seed s ∧ Reach P s x
 
 /-- **The closure of seeds under edges that are a process's moves is what the process reaches
 from a seed.** -/
@@ -103,47 +95,6 @@ theorem admissible_iff {P : Process S A} {seed I : S → Prop} :
     WholeGroundCoverage.Admissible seed (Moves P) I ↔ (∀ s, seed s → I s) ∧ Invariant P I :=
   ⟨fun ⟨seeds, carry⟩ => ⟨seeds, fun x a y st held => carry x y ⟨a, st⟩ held⟩,
    fun ⟨seeds, inv⟩ => ⟨seeds, fun x y ⟨a, st⟩ held => inv x a y st held⟩⟩
-
-/-- **Reach from seeds is the least invariant.** A process reaches `p` from a seed exactly where
-every property holding at the seeds and invariant under the process holds at `p`. -/
-theorem fromSeed_iff_invariant {P : Process S A} {seed : S → Prop} {p : S} :
-    FromSeed P seed p ↔ ∀ I : S → Prop, (∀ s, seed s → I s) → Invariant P I → I p :=
-  (reached_iff (fun _ _ => Iff.rfl)).symm.trans
-    ((WholeGroundCoverage.reached_iff_entails seed (Moves P) p).trans
-      ⟨fun entails I seeds inv => entails I (admissible_iff.mpr ⟨seeds, inv⟩),
-       fun all I admissible => all I (admissible_iff.mp admissible).1 (admissible_iff.mp admissible).2⟩)
-
-/-- **Every target is reached from a seed exactly where every property holding at the seeds and
-invariant under the process holds at every target.** -/
-theorem covers_iff_invariant {P : Process S A} {seed target : S → Prop} :
-    (∀ p, target p → FromSeed P seed p) ↔
-      ∀ I : S → Prop, (∀ s, seed s → I s) → Invariant P I → ∀ p, target p → I p :=
-  have cover := WholeGroundCoverage.universal_target_coverage_iff seed target (Moves P)
-  ⟨fun all I seeds inv =>
-    cover.mp (fun p held => (reached_iff (fun _ _ => Iff.rfl)).mpr (all p held)) I
-      (admissible_iff.mpr ⟨seeds, inv⟩),
-   fun all p held => (reached_iff (fun _ _ => Iff.rfl)).mp
-    (cover.mpr (fun I admissible => all I (admissible_iff.mp admissible).1
-      (admissible_iff.mp admissible).2) p held)⟩
-
-/-- **Where a configuration is not reached from a seed, some property holding at the seeds and
-invariant under the process fails there.** -/
-theorem unreached_has_invariant {P : Process S A} {seed : S → Prop} {p : S}
-    (missing : ¬ FromSeed P seed p) :
-    ∃ I : S → Prop, (∀ s, seed s → I s) ∧ Invariant P I ∧ ¬ I p :=
-  match WholeGroundCoverage.uncovered_has_admissible_omission
-      (fun reached => missing ((reached_iff (fun _ _ => Iff.rfl)).mp reached)) with
-  | ⟨I, admissible, fails⟩ =>
-    ⟨I, (admissible_iff.mp admissible).1, (admissible_iff.mp admissible).2, fails⟩
-
-/-- **Seeds reached from other seeds add nothing to what a process reaches.** -/
-theorem substitute_seeds {P : Process S A} {seed seed' : S → Prop}
-    (grounded : ∀ p, seed' p → FromSeed P seed p) {p : S} (reached : FromSeed P seed' p) :
-    FromSeed P seed p :=
-  (reached_iff (fun _ _ => Iff.rfl)).mp
-    (WholeGroundCoverage.substitute_grounded_seeds
-      (fun q held => (reached_iff (fun _ _ => Iff.rfl)).mpr (grounded q held))
-      ((reached_iff (fun _ _ => Iff.rfl)).mpr reached))
 
 end Moves
 
@@ -277,40 +228,44 @@ variable {S : Type u} {A : Type v}
 
 open UniversalEthics.CutCoverageAudit
 
+/-- A reverse-closed cut avoiding the seeds and holding `t` is the complement of a property
+separating `t` from the seeds. -/
+theorem hasCut_iff_separated {P : Process S A} {seed : S → Prop} {t : S} :
+    HasCut seed (Moves P) t ↔ Separated P seed t :=
+  ⟨fun ⟨cut, held, avoids, closed⟩ =>
+    ⟨fun x => ¬ cut x, avoids, fun x a y step clear inside => clear (closed x y ⟨a, step⟩ inside),
+     fun clear => clear held⟩,
+   fun ⟨I, seeds, inv, fails⟩ =>
+    ⟨fun x => ¬ I x, fails, fun x held fails' => fails' (seeds x held),
+     fun x y ⟨a, step⟩ fails' held => fails' (inv x a y step held)⟩⟩
+
 /-- **A reverse-closed cut avoiding the seeds and holding `t` exists exactly where the process does
 not reach `t` from a seed.** -/
 theorem cut_iff_not_fromSeed {P : Process S A} {seed : S → Prop} {t : S} :
     HasCut seed (Moves P) t ↔ ¬ FromSeed P seed t :=
-  has_cut_iff_not_reachable.trans
-    ⟨fun unreached reached => unreached ((cutReach_iff (fun _ _ => Iff.rfl)).mpr reached),
-     fun unreached reached => unreached ((cutReach_iff (fun _ _ => Iff.rfl)).mp reached)⟩
+  hasCut_iff_separated.trans separated_iff_not_fromSeed
 
 /-- **Where reach from a seed is decided, no cut exists exactly where it is reached.** -/
 theorem noCut_iff_fromSeed_of_decidable {P : Process S A} {seed : S → Prop} {t : S}
     (decision : Decidable (FromSeed P seed t)) : NoCut seed (Moves P) t ↔ FromSeed P seed t :=
-  have reach := cutReach_iff (P := P) (seed := seed) (x := t) (fun _ _ => Iff.rfl)
-  (no_cut_iff_reachable_of_decidable (match decision with
-    | .isTrue held => .isTrue (reach.mpr held)
-    | .isFalse fails => .isFalse (fun held => fails (reach.mp held)))).trans reach
+  ⟨fun none => (fromSeed_iff_not_separated_of_decidable decision).mpr
+      (fun separated => none (hasCut_iff_separated.mpr separated)),
+   fun reached cut => cut_iff_not_fromSeed.mp cut reached⟩
 
 end Cuts
 
 open UniversalEthics.CutCoverageAudit in
 /-- **Absence of a cut gives reach in every process exactly where double-negation elimination
-holds.** -/
+holds**: the core's `fromSeed_of_not_separated_iff_dne`, a cut being the complement of a
+separating property. -/
 theorem upgrade_iff_dne :
     (∀ (S A : Type u) (P : Process S A) (seed : S → Prop) (t : S),
         NoCut seed (Moves P) t → FromSeed P seed t) ↔ DoubleNegationElimination :=
-  ⟨fun upgrade => universal_cut_upgrade_iff_double_negation_elimination.{u}.mp
-      (fun Position seed edge target noCut =>
-        (cutReach_iff (P := (⟨fun x _ y => edge x y⟩ : Process Position PUnit.{u + 1}))
-            (fun _ _ => ⟨fun e => ⟨PUnit.unit, e⟩, fun ⟨_, e⟩ => e⟩)).mpr
-          (upgrade Position PUnit.{u + 1} ⟨fun x _ y => edge x y⟩ seed target
-            (fun ⟨cut, held, avoids, closed⟩ =>
-              noCut ⟨cut, held, avoids, fun x y e => closed x y ⟨PUnit.unit, e⟩⟩))),
-   fun dne S _ P seed t noCut =>
-    (cutReach_iff (fun _ _ => Iff.rfl)).mp
-      (universal_cut_upgrade_iff_double_negation_elimination.{u}.mpr dne S seed (Moves P) t noCut)⟩
+  ⟨fun upgrade => fromSeed_of_not_separated_iff_dne.{u}.mp
+      (fun S A P seed t joined =>
+        upgrade S A P seed t (fun cut => joined (hasCut_iff_separated.mp cut))),
+   fun dne S A P seed t none => fromSeed_of_not_separated_iff_dne.{u}.mpr dne S A P seed t
+      (fun separated => none (hasCut_iff_separated.mpr separated))⟩
 
 /-! ## Chains of small steps between profiles -/
 

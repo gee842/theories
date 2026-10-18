@@ -27,7 +27,7 @@
     "zh": "历史和摘要描述同一展开；L的实际可接纳含义和字母划分保持给定。构造不创造实际可能性，也不证明所有过程都具有这个有限词表示。",
     "en": "Histories and summaries describe one unfolding; actual admissibility and the event articulation remain supplied. Construction neither creates actual possibilities nor proves that every process has this finite-word representation."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
   "aliases": [
     "Generative.DerivedHistoryLaw.exact_iff_fiber_future",
     "Becoming.exact_iff_fiber_future_by_core"
@@ -118,6 +118,16 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SummaryFutures.lean",
+      "role": "proof",
+      "sha256": "82874eba0aad2b8f5cc349a150c93b5f0f42d49815540d5f0323b8bb77a814e9",
+      "declarations": [
+        "Becoming.SummaryFutures.every_word",
+        "Becoming.SummaryFutures.futures_through",
+        "Becoming.SummaryFutures.endpoint_moved"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
       "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
@@ -151,6 +161,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "role": "receipt",
+      "sha256": "d87f0ffbdb0bafc510a5b95de2dd83714570dfc1ed7f1a6261578f8cb9125a79",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -172,6 +188,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SummaryFutures.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SummaryFutures",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -222,6 +245,9 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F2 (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): every theorem of DerivedHistoryLaw.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Readout.lean; SummaryFutures.lean states the rest (every_word, futures_through, endpoint_moved). DerivedHistoryLaw.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged."
     }
   ]
 }

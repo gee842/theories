@@ -1,4 +1,5 @@
 import Becoming.ContextArrivalTraces
+import BecomingCompatibility
 
 /-!
 # Where the changed history ends, through the periphery's proof

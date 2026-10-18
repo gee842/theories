@@ -1,0 +1,38 @@
+@Becoming.RuleRevisionTraces.step_iff : ∀ {s t : OpenFutureRevision.Stage} {p : OpenFutureRevision.Rule},
+  Becoming.RuleRevisionTraces.process.step s p t ↔ t = OpenFutureRevision.advance p s
+Becoming.RuleRevisionTraces.revising_state : ∀ (n : Nat),
+  Becoming.RuleRevisionTraces.revising.state n = OpenFutureRevision.revisingRun n
+Becoming.RuleRevisionTraces.changed_form : Generative.Trace Becoming.RuleRevisionTraces.process
+    OpenFutureRevision.Stage.leftReady [OpenFutureRevision.Rule.left, OpenFutureRevision.Rule.directRight]
+    OpenFutureRevision.Stage.formedRight ∧
+  Generative.Trace Becoming.RuleRevisionTraces.process OpenFutureRevision.Stage.leftReady
+      [OpenFutureRevision.Rule.left, OpenFutureRevision.Rule.left] OpenFutureRevision.Stage.formedLeft ∧
+    OpenFutureRevision.remaining OpenFutureRevision.Rule.directRight OpenFutureRevision.Stage.rightReady ≤
+      OpenFutureRevision.remaining OpenFutureRevision.Rule.left OpenFutureRevision.Stage.rightReady
+Becoming.RuleRevisionTraces.outcome_not_fixed : (∀ (p : Bool),
+    ∃ t q,
+      Generative.Trace Becoming.RuleRevisionTraces.process OpenFutureRevision.Stage.rightReady
+          [if p = true then OpenFutureRevision.Rule.directRight else OpenFutureRevision.Rule.left] t ∧
+        Becoming.RuleRevisionTraces.frame.realized t q) ∧
+  ¬∃ q,
+      ∀ (p : Bool) (t : OpenFutureRevision.Stage),
+        Generative.Trace Becoming.RuleRevisionTraces.process OpenFutureRevision.Stage.rightReady
+            [if p = true then OpenFutureRevision.Rule.directRight else OpenFutureRevision.Rule.left] t →
+          Becoming.RuleRevisionTraces.frame.realized t q
+@Becoming.RuleRevisionTraces.generation_by_bound_on_runs : ∀ {S A H Q F Pos : Type} {P : Generative.Process S A}
+  (r : H → Becoming.Run P) (admitted : H → Prop) (rank : H → Nat → S → Nat) (completed : H → Nat → Prop)
+  (decideEvent : (h : H) → DecidablePred (completed h)) (appears : H → Nat → Q → Prop) (generative : Q → Prop)
+  (before : H → Q → Prop) (bound : Nat),
+  (∀ (h : H), admitted h → rank h 0 ((r h).state 0) ≤ bound) →
+    (∀ (h : H), admitted h → ∀ (n : Nat), ¬completed h n → rank h n ((r h).state (n + 1)) < rank h n ((r h).state n)) →
+      (∀ (h : H),
+          admitted h →
+            ∀ (n : Nat), ¬completed h n → rank h (n + 1) ((r h).state (n + 1)) ≤ rank h n ((r h).state (n + 1))) →
+        (∀ (h : H), admitted h → ∀ (n : Nat), completed h n → ∃ q, generative q ∧ appears h n q ∧ ¬before h q) →
+          ∀ {sig : Pos → Nat → F → Prop},
+            Becoming.Unrestricted sig →
+              ∀ (formation : Q → F) (step : Q → Nat) (h : H),
+                admitted h →
+                  ∃ q,
+                    (generative q ∧ (∃ n, n ≤ bound ∧ appears h n q) ∧ ∀ (p : Pos), sig p (step q) (formation q)) ∧
+                      ¬before h q

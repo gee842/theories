@@ -1,0 +1,33 @@
+@Becoming.RuleNarrowingProcessesInherited.narrow_once_iff : ∀ {Q : Type} (hs : List (Generative.StandardsBridge.Rule Q))
+  (q : Q) (b : Bool) (h : Generative.StandardsBridge.Rule Q),
+  Generative.InquirySufficiency.After Becoming.observe Becoming.RuleNarrowingProcesses.sense (fun x => x ∈ hs) q
+      (Becoming.encode b) h ↔
+    h ∈ hs ∧ h q = b
+@Becoming.RuleNarrowingProcessesInherited.narrowed_iff_fits : ∀ {Q : Type}
+  (hs : List (Generative.StandardsBridge.Rule Q)) (e : List (Generative.StandardsBridge.Observation Q))
+  (h : Generative.StandardsBridge.Rule Q),
+  Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ hs) e h ↔ h ∈ hs ∧ Generative.StandardsBridge.Fits h e
+@Becoming.RuleNarrowingProcessesInherited.dropped_has_counterevidence : ∀ {Q : Type}
+  {hs : List (Generative.StandardsBridge.Rule Q)} {e : List (Generative.StandardsBridge.Observation Q)}
+  {h : Generative.StandardsBridge.Rule Q},
+  h ∈ hs → ¬Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ hs) e h → ∃ o, o ∈ e ∧ h o.fst ≠ o.snd
+@Becoming.RuleNarrowingProcessesInherited.repeated_observation_idle : ∀ {Q : Type}
+  (hs : List (Generative.StandardsBridge.Rule Q)) (o : Generative.StandardsBridge.Observation Q)
+  (h : Generative.StandardsBridge.Rule Q),
+  Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ hs) [o, o] h ↔
+    Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ hs) [o] h
+@Becoming.RuleNarrowingProcessesInherited.narrowing_transport : ∀ {Q R : Type}
+  (hs : List (Generative.StandardsBridge.Rule Q)) (e : List (Generative.StandardsBridge.Observation Q)) (enc : Q → R)
+  (dec : R → Q),
+  (∀ (q : Q), dec (enc q) = q) →
+    ∀ (g : Generative.StandardsBridge.Rule R),
+      Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ List.map (Generative.StandardsBridge.transport dec) hs)
+          (List.map (fun o => (enc o.fst, o.snd)) e) g ↔
+        g ∈ List.map (Generative.StandardsBridge.transport dec) (Generative.StandardsBridge.learn hs e)
+Becoming.RuleNarrowingProcessesInherited.full_repertoire_settles_actual : ∀
+  (actual : Generative.StandardsBridge.Rule Bool) (fuel : Nat) (qs : List Bool) {q b : Bool},
+  Becoming.RuleNarrowingProcesses.Settles
+      (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+        (Generative.StandardsBridge.acquire actual fuel qs))
+      q b →
+    b = actual q

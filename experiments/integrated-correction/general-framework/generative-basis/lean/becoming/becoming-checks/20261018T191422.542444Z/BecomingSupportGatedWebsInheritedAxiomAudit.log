@@ -1,0 +1,3 @@
+'Becoming.SupportGatedWebsInherited.repair_reactivates' depends on axioms: [propext, Quot.sound]
+'Becoming.SupportGatedWebsInherited.same_inputs_opposite_futures' depends on axioms: [propext, Quot.sound]
+'Becoming.SupportGatedWebsInherited.recovered_neither' depends on axioms: [propext, Quot.sound]
