@@ -31,6 +31,10 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Granularity, Presentations; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Granularity、Presentations），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ],
   "id": "prefix-observation-loss",
@@ -56,7 +60,7 @@
     "zh": "两位置有同一已允许 origin/enter 历史来源；区别由真实可达中间位置与后续 finish 有无给出，不来自自由损失谓词。此为给定规律中的见证，不是经验观察。",
     "en": "Both positions are reached from the same admitted origin/enter source. The difference comes from reached positions and the availability of finish, without a free loss predicate. These are witnesses under a supplied law, not empirical observations."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
   "aliases": [
     "Generative.ExplanatoryGranularityBoundary.prefix_only_still_loses_failure",
     "Generative.ExplanatoryGranularityBoundary.no_prefix_translation_of_loss",
@@ -148,6 +152,14 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Presentations.lean",
+      "role": "proof",
+      "sha256": "2bf9bbf0c7e544a14987811fbee4a2979dbedd718560244d0695e7cabed93dfa",
+      "declarations": [
+        "Becoming.Presentations.equal_codes_same_answers"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-granularity-checks/20261008T181446.359434Z/receipt.json",
       "role": "receipt",
       "sha256": "26ac4c6011432c220e356eaf77c89db6481f90330790ddafa775712528e86273",
@@ -174,6 +186,12 @@
         "Becoming.Midway.resumption_recovers_loss",
         "Becoming.Midway.reduced_prefix_cannot_extend"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -183,6 +201,20 @@
       "sha256_pointer": "/modules/18/sha256",
       "success_pointer": "/passed",
       "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Granularity",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Presentations.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Presentations",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ]
 }

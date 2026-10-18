@@ -31,7 +31,7 @@
     "zh": "片段、接合及其检验解释同一活动内的关系；数学语义不等于所有问题已被实际取得。",
     "en": "Fragments, joining and its questions interpret relations within the same activity; mathematical semantics does not establish acquired access to every answer."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean",
   "aliases": [
     "Generative.ExplanatoryJoiningBranches.questions_survive_encoding",
     "Becoming.Joining.questions_survive_encoding_of_em",
@@ -126,6 +126,14 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean",
+      "role": "proof",
+      "sha256": "3d8e58930133df00fced78e209815788802d932d4c918611697ae0c6101b1ada",
+      "declarations": [
+        "Becoming.Joining.FiniteOutcomes.lifts_of_exact"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
       "role": "receipt",
       "sha256": "ee0939ec4f4f14674312e91690ccd6bf9d436dca03b0d6664ec00c5fde832533",
@@ -160,6 +168,12 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -181,6 +195,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.JoiningBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joining",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodes.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JoiningCodes",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -216,6 +244,10 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Joining, JoiningCodes; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Joining、JoiningCodes），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

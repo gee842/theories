@@ -23,7 +23,7 @@
     "zh": "整体、代码与成对关系的解释是给定的，不假设所有物理实现满足紧致性。",
     "en": "The whole/code/joint interpretation is supplied; universal physical compactness is not assumed."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
   "aliases": [
     "Generative.ExplanatoryJointness.code_joint_lifts_from_whole",
     "Becoming.code_joint_lifts_from_whole_of_stable",
@@ -55,6 +55,14 @@
       "sha256": "18f745f8ef8bae379e3fadcf059a68c529caa5af4453adc469182148e4fa4e4f",
       "declarations": [
         "Generative.ExplanatoryJointness.code_joint_lifts_from_whole"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+      "role": "proof",
+      "sha256": "ac52ae2f68ae4451095728d81344c18508bdc9a1887f8af20fc90262fefcd7ef",
+      "declarations": [
+        "Becoming.liftsFromEach_of_exact"
       ]
     },
     {
@@ -98,6 +106,12 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -121,6 +135,13 @@
       "sha256_pointer": "/source_sha256/Becoming.CompositionBridge",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JointCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -139,6 +160,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Composition.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Composition.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (JointCorrespondence; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（JointCorrespondence），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

@@ -23,7 +23,7 @@
     "zh": "OpenMap 的强提升条件是给定解释条件；共同细化的投影在前一成果中另有导出。",
     "en": "The strong OpenMap lifting condition is supplied for a given interpretation; the preceding result derives it for the canonical projections."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
   "aliases": [
     "Generative.ExplanatoryJoiningRefinement.universal_common_factor",
     "Becoming.Joining.universal_factor",
@@ -97,6 +97,14 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningRoles.lean",
+      "role": "proof",
+      "sha256": "e275c5b791528c4b258b2729322b8e4cf7d6aab41a937c6cf57701f68d605b68",
+      "declarations": [
+        "Becoming.Joining.factor_unique_of_ext"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json",
       "role": "receipt",
       "sha256": "09ad7cb70e631f5bdf581ab30c2af72387b0920b174fd033415f627726127770",
@@ -116,7 +124,8 @@
         "Becoming.OpenMap",
         "Becoming.OpenMap.alike",
         "Becoming.Joining.OpenMap.sameBranchingTests",
-        "Becoming.Joining.universal_factor"
+        "Becoming.Joining.universal_factor",
+        "Becoming.Joining.openMap_iff"
       ]
     },
     {
@@ -132,6 +141,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
       "declarations": []
     }
   ],
@@ -154,6 +169,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.JoiningBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joining",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningRoles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JoiningRoles",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -185,6 +214,10 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the repository restructure (history batches H1–H7, receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md; compared with the version at 54180d652 with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Joining, JoiningRoles; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Joining、JoiningRoles），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

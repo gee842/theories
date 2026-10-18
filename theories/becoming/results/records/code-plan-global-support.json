@@ -23,7 +23,7 @@
     "zh": "这是同一模型和叶项解释内的实际形式组合，不是可加预算与任意时序模型的通用转换。",
     "en": "This is formal composition within the same model and leaf interpretation, not a universal adapter to additive budgets or arbitrary temporal models."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
   "aliases": [
     "Generative.ExplanatoryFootprints.code_plan_has_global_support",
     "Becoming.code_plan_has_global_support_of_stable",
@@ -105,6 +105,14 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+      "role": "proof",
+      "sha256": "ac52ae2f68ae4451095728d81344c18508bdc9a1887f8af20fc90262fefcd7ef",
+      "declarations": [
+        "Becoming.JointPlan.supports_of_code"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json",
       "role": "receipt",
       "sha256": "873e0ce7f081927642f2629954ab05c6294f57efecf1e5a50a4d889b89335650",
@@ -143,6 +151,12 @@
       "role": "receipt",
       "sha256": "e75f316ff9857ac3bdc90d127459709ef17bdce3d952f85c95e8771d8da84b3b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -164,6 +178,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CompositionBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JointCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -188,6 +209,10 @@
     {
       "zh": "2026年10月16日，P110–P112 落地（研究第147–149节）：改绑新回执并更新哈希：Composition.lean（P110：依 Ren 的交托决定的读法写入文档注释（只改注释，注释之外的代码不变；改动的段落按 100 列重排））。",
       "en": "16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Composition.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns))."
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (JointCorrespondence; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（JointCorrespondence），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

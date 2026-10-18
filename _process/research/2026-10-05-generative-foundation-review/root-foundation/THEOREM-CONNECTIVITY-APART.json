@@ -2121,6 +2121,141 @@
    "module": "Becoming.ProfileReach",
    "category": "model-witness",
    "reason": "a fact about the constructed finite occurrence model of degrees of connection: with tolerance along adjacent degrees a self-good standpoint reaches the stranger (EvaluatorGrounding, ported by F3J)"
+  },
+  "Becoming.BranchingTest.finer_rename": {
+   "module": "Becoming.Grains",
+   "category": "general-structure",
+   "reason": "a law of every renaming of branching tests into blocks of single moves, on any type of moves and claims: read back at the finer grain the renamed test is the test itself, an equality of tests with no frame (ExplanatoryGranularity, ported by F3E)"
+  },
+  "Becoming.Carriers.identity_bool_bijection": {
+   "module": "Becoming.Carriers",
+   "category": "support",
+   "reason": "a statement using only the prelude: the identity on `Bool` is one to one and onto (DynamicSymmetry, ported by F3E)"
+  },
+  "Becoming.Carriers.negation_bool_bijection": {
+   "module": "Becoming.Carriers",
+   "category": "support",
+   "reason": "a statement using only the prelude: negation on `Bool` is one to one and onto (DynamicSymmetry, ported by F3E)"
+  },
+  "Becoming.Coverage.balance_does_not_determine_coverability": {
+   "module": "Becoming.Coverage",
+   "category": "model-witness",
+   "reason": "a fact about two constructed boards: the separated pair balances like the empty board, which is covered, and has no cover (ExplanatoryStructure, ported by F3E)"
+  },
+  "Becoming.HistoryLanguages.same_future_extends": {
+   "module": "Becoming.HistoryLanguages",
+   "category": "general-structure",
+   "reason": "a law of every language of words on any alphabet: histories with one continuation profile keep one profile after a common extension (ContinuationConditions, ported by F3E)"
+  },
+  "Becoming.Joining.Occurrence.ofTuple_at": {
+   "module": "Becoming.JoiningRoles",
+   "category": "support",
+   "reason": "a one-line unpacking of `Occurrence.ofTuple`: each role is filled by the fragment the tuple gives it (ExplanatoryJoiningRefinement, ported by F3E)"
+  },
+  "Becoming.Joining.chainComplete_iff_commonUnit_suffices": {
+   "module": "Becoming.LocalUnits",
+   "category": "general-structure",
+   "reason": "a law of every joining (a ternary relation) on any type of fragments: under associativity, functionality and units, chain completion is that a common unit suffices for joining (ExplanatoryLocalUnits, ported by F3E)"
+  },
+  "Becoming.Joining.leftUnit_transport": {
+   "module": "Becoming.LocalUnits",
+   "category": "general-structure",
+   "reason": "a law of every joining (a ternary relation) on any type of fragments: a one-to-one correspondence carrying a joining carries its left units (ExplanatoryLocalUnits, ported by F3E)"
+  },
+  "Becoming.Joining.rightUnit_transport": {
+   "module": "Becoming.LocalUnits",
+   "category": "general-structure",
+   "reason": "a law of every joining (a ternary relation) on any type of fragments: a one-to-one correspondence carrying a joining carries its right units (ExplanatoryLocalUnits, ported by F3E)"
+  },
+  "Becoming.Joining.units_agree": {
+   "module": "Becoming.LocalUnits",
+   "category": "general-structure",
+   "reason": "a law of every joining (a ternary relation) on any type of fragments: under associativity any two assignments of units agree (ExplanatoryLocalUnits, ported by F3E)"
+  },
+  "Becoming.ListFootprints.realizes_iff_of_perm": {
+   "module": "Becoming.ListFootprints",
+   "category": "general-structure",
+   "reason": "a law of every plan over lists of any type of resources: plans drawing on reorderings of one list are realized at the same lists (ExplanatoryFootprints, ported by F3E)"
+  },
+  "Becoming.ListFootprints.realizes_reassociate": {
+   "module": "Becoming.ListFootprints",
+   "category": "general-structure",
+   "reason": "a law of every plan over lists of any type of resources: reassociating a plan keeps where it is realized (ExplanatoryFootprints, ported by F3E)"
+  },
+  "Becoming.Midway.exists_phase": {
+   "module": "Becoming.Grains",
+   "category": "support",
+   "reason": "a one-line unpacking of the witness's configuration type: something exists among its six configurations exactly where one of them is it (ExplanatoryGranularityBoundary, ported by F3E)"
+  },
+  "Becoming.Presentations.all_predicates_force_injective": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions: a presentation exact for all predicates gives distinct things distinct codes (ExplanatoryUniqueness, ported by F3E)"
+  },
+  "Becoming.Presentations.all_predicates_relation_recoverable": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions: under a presentation exact for all predicates every relation is read exactly through the codes (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.all_predicates_unique_correspondence": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions: two presentations exact for all predicates match their used codes one to one (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.canonical_exact": {
+   "module": "Becoming.Presentations",
+   "category": "support",
+   "reason": "a one-line unpacking of `canonical`: the presentation of each thing by its answers reads every answer exactly (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.canonical_factor": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions, with extensionality of predicates a named hypothesis: every exact presentation factors through the canonical one (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.first_summary_cannot_answer_both": {
+   "module": "Becoming.Presentations",
+   "category": "model-witness",
+   "reason": "a fact about one constructed presentation of pairs of bits: with both bits asked, no reading of the first bit is exact (ExplanatoryUniqueness, ported by F3E)"
+  },
+  "Becoming.Presentations.full_exact": {
+   "module": "Becoming.Presentations",
+   "category": "model-witness",
+   "reason": "a fact about one constructed presentation of pairs of bits: the pair as code reads the first bit exactly (ExplanatoryUniqueness, ported by F3E)"
+  },
+  "Becoming.Presentations.full_not_reduced": {
+   "module": "Becoming.Presentations",
+   "category": "model-witness",
+   "reason": "a fact about one constructed presentation of pairs of bits: the pair as code is not reduced for the first bit (ExplanatoryUniqueness, ported by F3E)"
+  },
+  "Becoming.Presentations.lift_exact_iff_saturated": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions: the image of a relation is its exact reading through an exact reduced presentation exactly where the relation is saturated (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.relation_descends_iff_saturated": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions: a relation descends to an exact reduced presentation exactly where it is saturated (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.relational_reading_unique_on_used": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions: exact readings of one relation agree on used codes (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.separating_relation_blocks_descent": {
+   "module": "Becoming.Presentations",
+   "category": "general-structure",
+   "reason": "a law of every presentation of any type of things by codes answering any type of questions: one pair of triples answering alike on which the relation differs blocks every exact reading (ExplanatoryUniversality, ported by F3E)"
+  },
+  "Becoming.Presentations.short_exact": {
+   "module": "Becoming.Presentations",
+   "category": "model-witness",
+   "reason": "a fact about one constructed presentation of pairs of bits: the first bit as code reads it exactly (ExplanatoryUniqueness, ported by F3E)"
+  },
+  "Becoming.Presentations.short_reduced": {
+   "module": "Becoming.Presentations",
+   "category": "model-witness",
+   "reason": "a fact about one constructed presentation of pairs of bits: the first bit as code is reduced (ExplanatoryUniqueness, ported by F3E)"
   }
  }
 }

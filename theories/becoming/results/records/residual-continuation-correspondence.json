@@ -39,6 +39,10 @@
     {
       "en": "18 October 2026, F3, the periphery port's sweep (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): ExplanatoryResiduals is registered as superseded and leaves the Becoming run; the eight readings of it in GranularityBridge (Recipe.advance_ofProgram, Recipe.Advance.toProgram, cut_iff_leaves and five restatements) left with it, so the reference to GranularityBridge is dropped and the alias same_preserves_resumption_by_core is replaced by the core law it read, SameBranchingTests.leads_iff. Both periphery files keep their path and bytes, and their receipts stay bound. The claim is unchanged.",
       "zh": "2026年10月18日，F3 外围移植的清扫：ExplanatoryResiduals 登记为已被取代，离开 Becoming 运行；GranularityBridge 中对它的八条读法随之移除，因此删去对 GranularityBridge 的引用，别名 same_preserves_resumption_by_core 换成它所读的核心定律 SameBranchingTests.leads_iff。两个外围文件保留路径与字节，其收据仍然绑定。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Granularity; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Granularity），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ],
   "validation_scope": {
@@ -235,6 +239,12 @@
       "role": "receipt",
       "sha256": "df15fdd0d0495745206cdfd0381f2691187c9e13ad21bc5815c7ad9e118e82ba",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "role": "receipt",
+      "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -251,6 +261,13 @@
       "sha256_pointer": "/modules/21/sha256",
       "success_pointer": "/passed",
       "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Granularity",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ]
 }
