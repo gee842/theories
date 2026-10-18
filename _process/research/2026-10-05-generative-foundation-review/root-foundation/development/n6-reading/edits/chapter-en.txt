@@ -453,9 +453,6 @@
 = S2
 - another's registration as a route
 + another's couplings as a route
-= S2
-- Testing`'s registration as the projection
-+ Testing`'s couplings as the projection
 = S5
 - which correlation between moves and what is hidden leaves a model unrefuted;
 + which correlation between moves and what is hidden leaves a model unexcluded;

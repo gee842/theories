@@ -59,7 +59,7 @@ def gen_records(out, header, recs):
                 lines.append('= ' + sense + ' @' + pth)
             else:
                 n = count_live(d, a)
-                if n == 0 and count_live(d0, a) >= 1:
+                if n == 0 and (d0 is None or count_live(d0, a) >= 1):
                     # the head no longer has the sentence: read what it has instead (left_on_head.py)
                     SKIPPED.append((stem, a + ('' if count_live(d, b) else '  [new words absent]'))); continue
                 assert n >= 1, (stem, 'not found', a)

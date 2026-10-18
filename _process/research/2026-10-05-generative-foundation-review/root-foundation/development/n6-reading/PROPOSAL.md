@@ -1,7 +1,7 @@
 # N6: the reading pass the N1 renaming left open (proposal to Ren)
 
 Board item N6, claimed in 77733b06b. Branch `n6-reading`, in its own worktree, rebased on main at
-9b9e7951b (after L1, S1, G1, G2, A1, F1, G3, L2, C1 and U2c landed). **Nothing here is landed; it waits for Ren's yes.**
+9b9e7951b (after L1, S1, G1, G2, A1, F1, G3, L2, C1 and U2c landed). **Ren's yes, 19 October 2026:** “Yes to the N6 reading pass: reapply it on current main, rerun the checkers and land it through the queue. Keep the selection title as proposed; leave NAMES.md for later.” ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-19-n6-reading-pass-yes.md)). It lands through the queue after F3C.
 
 N5 (b84e722ea) renamed 175 Lean declarations to the vocabulary adopted in section 7 of the
 [naming study](../../REGISTRATION-VOCABULARY-STUDY.md) and left the prose for a reading pass. This
@@ -37,6 +37,10 @@ count is checked again. Where main had rewritten a sentence since, the block was
   reaches beyond, and removed the sentences calling them open (in the chapter's §8.2 row and in
   selection-through-registration's scope and next step). Those four blocks are dropped; main's new
   sentences already use the adopted words.
+- On main `4ed11049d` (19 October): G4 stated the `Becoming.Testing` instance of the run criterion
+  in the adopted words, so the chapter block and the four record blocks calling it open are dropped;
+  G4's record a-law-through-coupling-along-one-run gets three blocks ("registers alike", a difference
+  "not registered" below a threshold, en + zh).
 - The L2 landing reworded the §8.2 "Learning" row itself ("feature", "extrapolation"); the two
   blocks for it are dropped. A1 added a second use of the where-a-level-couples reading in §8.4,
   which the reading's block now covers (count 2), and a third "不观察" in the zh open-readings list.
@@ -157,16 +161,24 @@ Ren's words are provenance, not warrant; these are the places where the pass jud
 - **识.** Keeping 识 for a formation's course through its own lumping (option (b)) keeps Ren's word
   where it means what the theory states; elsewhere the formal words are more exact.
 
-## Left for Ren
+<a id="left-for-ren"></a>
+## Decided by Ren (19 October 2026)
 
-1. **Yes or no to the pass**, and any rows to change ([PROPOSAL-FULL.md](PROPOSAL-FULL.md)).
-2. **Names** ([NAMES.md](NAMES.md)): declarations that still carry a retired sense
+1. **The pass:** yes, with no rows changed ([PROPOSAL-FULL.md](PROPOSAL-FULL.md)).
+2. **Names** ([NAMES.md](NAMES.md)): left for later. Declarations that still carry a retired sense
    (`Order.order_registers`, the ReferencePlan theorem names, `Contacts.Blind`, the `Registration`
-   namespace of `Becoming.Revision`, TypicalRuns' record names, and others found). Proposed only;
-   each would be an N5-style migration.
-3. **The selection title** above.
+   namespace of `Becoming.Revision`, TypicalRuns' record names, and others found) keep their names;
+   each rename would be an N5-style migration.
+3. **The selection title:** as proposed, "Selection through a map of the alternatives".
 
 ## Follow-ups noticed, not done here
+
+- The modules F3 ported into the core on 18-19 October (`Becoming.Narrowing`, `CodeAcquisition`,
+  `ResponseLearning`, `RouteFormation` and others) keep their periphery vocabulary: a learner
+  holding probe records, a belief over candidate rules narrowed by observation. Those are their own
+  senses as written (a learner as a configuration of a training process, records as data), so the
+  pass, which Ren accepted as proposed, does not reword them; whether "belief" there should read
+  as the candidates still alike after the observations is a reading for that family's owner.
 
 - DELEGATED-CHOICES (en and zh) uses the retired senses throughout its dated decisions (D26, D37,
   D39, D44 and others, for example "admission does not register it"). It is a register of dated

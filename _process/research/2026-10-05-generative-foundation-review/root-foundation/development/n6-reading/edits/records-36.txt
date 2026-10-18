@@ -9,10 +9,14 @@
 = S2
 - so that comparison does not register it
 + so that comparison does not show it
+### record:a-law-through-coupling-along-one-run
+= S3
+- What registers alike in a formation at a step, under two level histories.
++ What is alike through a formation's couplings at a step, under two level histories.
+= S2
+- There a difference below a threshold is not registered;
++ There a difference below a threshold does not couple in;
+= S2
+- 那里阈值以下的差别不被识；
++ 那里阈值以下的差别不耦合入；
 ### record:a-law-through-a-projection-along-one-run
-= S2 2
-- Becoming.Testing's registration (Web.AlikeThroughUpTo)
-+ Becoming.Testing's couplings (Web.AlikeThroughUpTo)
-= S2 2
-- Becoming.Testing 的识（Web.AlikeThroughUpTo）
-+ Becoming.Testing 的耦合（Web.AlikeThroughUpTo）
