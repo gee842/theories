@@ -15,7 +15,7 @@ Live counts every file outside a `history/` folder, frozen run evidence included
 | `2026-10-04-integrated-evolution/` | — | 2 | — | 0 |
 | `2026-10-05-causal-foundations/` | — | 1 | `outputs/ (1)` | 0 |
 | `2026-10-05-concern-theory/` | — | 48 | `reward-association/ (13)` | 0 |
-| `2026-10-05-generative-foundation-review/` | — | 451 | [foundation-assessment/ (105)](2026-10-05-generative-foundation-review/foundation-assessment/README.md) · [root-foundation/ (346)](2026-10-05-generative-foundation-review/root-foundation/INDEX.md) | 3358 |
+| `2026-10-05-generative-foundation-review/` | — | 466 | [foundation-assessment/ (105)](2026-10-05-generative-foundation-review/foundation-assessment/README.md) · [root-foundation/ (361)](2026-10-05-generative-foundation-review/root-foundation/INDEX.md) | 3358 |
 | `2026-10-05-generative-health/` | — | 1 | `discovery/ (1)` | 0 |
 | `2026-10-05-repository-reconciliation/` | — | 9 | [whole-repo-review-2026-10-16/ (8)](2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/README.md) | 0 |
 | `2026-10-05-revisable-concern/` | — | 3 | `settlement/ (3)` | 0 |
@@ -84,6 +84,7 @@ Studies retired as a whole are under [`_process/history/`](../history/):
 | `2026-10-05-unified-theory/` | 34 |
 | `2026-10-07-handoffs/` | 10 |
 | `2026-10-17-instructions/` | 3 |
+| `2026-10-18-instructions/` | 1 |
 | `workboard/` | 1 |
 | `worktree-salvage-2026-10-18/` | 391 |
 

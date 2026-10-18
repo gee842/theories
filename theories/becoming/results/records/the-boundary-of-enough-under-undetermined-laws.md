@@ -77,6 +77,7 @@ Aliases: `boundary of enough under undetermined laws`, `不确定之律下够的
 - 18 October 2026, readings D40-D42: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.
 - 18 October 2026, G2 (Becoming.SelectionReach): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G2 added the bullet on raising what couples in, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 18 October 2026, S3 (Becoming.LastChange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: S3 added the bullet on the last change, revised the "Seeking, capture and runaway" row of section 8.2, extended the D41/D42 reading and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
+- 18 October 2026, M1 (chapter section 7, AI alignment): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (M1 restated section 7 (AI alignment) around 明 and pooled coupling as sections 7.1-7.7 in 81f24f981, and a follow-up corrected "a wrong model excludes what holds" to "can exclude"; no other section changed). Section 7 cites this record's reading D41; checked against it. The claim is unchanged.
 
 </details>
 

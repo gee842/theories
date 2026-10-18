@@ -338,7 +338,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e5e6e6d15890b0cfef01f8c2969de29af6285d7b71ccc46a1e9ef06e32f3b12b",
+      "sha256": "efd55bb231de614d6c3a64e09a2bfa9476905f8c473f441d969c8e15c8c5b889",
       "declarations": []
     },
     {
@@ -638,6 +638,10 @@
     {
       "en": "18 October 2026, S3 (Becoming.LastChange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: S3 added the bullet on the last change, revised the \"Seeking, capture and runaway\" row of section 8.2, extended the D41/D42 reading and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月18日，S3（Becoming.LastChange）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, M1 (chapter section 7, AI alignment): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (M1 restated section 7 (AI alignment) around 明 and pooled coupling as sections 7.1-7.7 in 81f24f981, and a follow-up corrected \"a wrong model excludes what holds\" to \"can exclude\"; no other section changed). Section 7 restates this record's law; the restatement was checked against its statement and scope. The claim is unchanged.",
+      "zh": "2026年10月18日，M1（第7节，AI 对齐）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。第7节复述本成果的规律，已对照其陈述与范围检查。论断不变。"
     }
   ],
   "text_versions": [

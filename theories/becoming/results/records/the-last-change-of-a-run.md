@@ -75,6 +75,7 @@ Aliases: `the last change of a run`, `一次运行的最后一次变化`, `fewer
 ### History
 
 - 18 October 2026: added (S3), on Ren's "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable", the AI choosing the item; study section 178; the reading is D42 of DELEGATED-CHOICES, extended with S3.
+- 18 October 2026, M1 (chapter section 7, AI alignment): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (M1 restated section 7 (AI alignment) around 明 and pooled coupling as sections 7.1-7.7 in 81f24f981, and a follow-up corrected "a wrong model excludes what holds" to "can exclude"; no other section changed). The claim is unchanged.
 
 </details>
 
