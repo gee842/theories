@@ -162,9 +162,40 @@ def markdown_file(key, destination, config=None, root=ROOT):
     return adapt_links(body, configured, destination)
 
 
+FOOTNOTE_DEF = re.compile(r'^\[\^([^\]]+)\]:[ \t]*(.*)$', re.M)
+FOOTNOTE_REF = re.compile(r'\[\^([^\]]+)\](?!:)')
+
+
+def endnotes(body):
+    """Footnotes as numbered notes with ordinary links. On a repository's front page GitHub
+    leaves links inside footnotes unrewritten, so they resolve against the repository URL
+    and break; links in body text are rewritten and work."""
+    defs = {m.group(1): m.group(2) for m in FOOTNOTE_DEF.finditer(body)}
+    if not defs:
+        return body
+    order, uses = [], {}
+
+    def ref(m):
+        key = m.group(1)
+        if key not in defs:
+            return m.group(0)
+        if key not in order:
+            order.append(key)
+        uses[key] = uses.get(key, 0) + 1
+        anchor = 'ref-' + key + ('' if uses[key] == 1 else '-' + str(uses[key]))
+        return f'<sup><a id="{anchor}"></a>[{order.index(key) + 1}](#note-{key})</sup>'
+
+    text = FOOTNOTE_REF.sub(ref, FOOTNOTE_DEF.sub('', body))
+    order += [k for k in defs if k not in order]
+    notes = [f'{i}. <a id="note-{k}"></a>{defs[k]} [↩](#ref-{k})' for i, k in enumerate(order, 1)]
+    return re.sub(r'\n{3,}', '\n\n', text).rstrip() + '\n\n### Notes\n\n' + '\n\n'.join(notes)
+
+
 def readme_opening(config=None, root=ROOT):
-    """The opening placed first in README: a Markdown file named by the configuration."""
-    return markdown_file('readme_opening', 'README.md', config, root)
+    """The opening placed first in README: a Markdown file named by the configuration, its
+    footnotes as numbered notes (`endnotes`)."""
+    opening = markdown_file('readme_opening', 'README.md', config, root)
+    return endnotes(opening) if opening else opening
 
 
 def open_question_links(config=None):

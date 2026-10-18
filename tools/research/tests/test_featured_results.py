@@ -223,7 +223,7 @@ class OpeningTests(unittest.TestCase):
             opening = navigation.readme_opening({'readme_opening': 'theories/OPENING.md'}, root)
         self.assertEqual(opening, '## Truth exists\n\nSee [the source](sources/original.md).')
 
-    def test_opening_keeps_footnotes_and_adapts_reference_links(self):
+    def test_opening_footnotes_become_numbered_notes_with_adapted_links(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / 'theories').mkdir()
@@ -231,8 +231,8 @@ class OpeningTests(unittest.TestCase):
                 'Truth exists.[^law]\n\n[ref]: ../sources/original.md\n\n'
                 '[^law]: **Proved.** See [the record](records/law.md).\n')
             opening = navigation.readme_opening({'readme_opening': 'theories/OPENING.md'}, root)
-        self.assertEqual(opening, 'Truth exists.[^law]\n\n[ref]: sources/original.md\n\n'
-                                  '[^law]: **Proved.** See [the record](theories/records/law.md).')
+        self.assertEqual(opening, 'Truth exists.<sup><a id="ref-law"></a>[1](#note-law)</sup>\n\n[ref]: sources/original.md'
+                                  '\n\n### Notes\n\n1. <a id="note-law"></a>**Proved.** See [the record](theories/records/law.md). [↩](#ref-law)')
 
     def test_navigation_validation_reports_missing_opening(self):
         with patch.object(navigation, 'goals', return_value=[]), patch.object(navigation, 'read', return_value={'readme_opening': 'missing-opening.md'}):
