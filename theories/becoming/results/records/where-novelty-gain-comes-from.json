@@ -509,7 +509,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "afd49169c5d28946a60ef12e2fdd3cbb0c1b5fa9f7737cf24e1f2f7543e06a1c"
+      "sha256": "2a0769e16122ff4d4ba58ff48a4584f94e4c2fb140b4b109af11333fcfc46769"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -664,6 +664,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, readings D40-D42: DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D40-D42 added (index rows, decisions in section 6, lineage)). The claim is unchanged.",
+      "zh": "2026年10月18日，读法 D40-D42：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
     }
   ],
   "text_versions": []

@@ -209,7 +209,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "20b95910953f24eae265d579ad6a66013cda4106a1b607cfaeb8d03b57461aea"
+      "sha256": "5bc6d3c8152ab0062a335b3d041aba160b5b605ad8eb5b2da6a90b662e18933b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -244,6 +244,10 @@
     {
       "en": "18 October 2026: added (G1), on Ren's \"please see what else is there to do - keep pushing the frontier till finishing\"; study section 176.",
       "zh": "2026年10月18日：新增（G1），按 Ren 的“please see what else is there to do - keep pushing the frontier till finishing”；研究第 176 节。"
+    },
+    {
+      "en": "18 October 2026, readings D40-D42: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.",
+      "zh": "2026年10月18日，读法 D40-D42：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

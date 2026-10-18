@@ -203,7 +203,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "20b95910953f24eae265d579ad6a66013cda4106a1b607cfaeb8d03b57461aea",
+      "sha256": "5bc6d3c8152ab0062a335b3d041aba160b5b605ad8eb5b2da6a90b662e18933b",
       "declarations": []
     },
     {
@@ -424,6 +424,10 @@
     {
       "en": "18 October 2026, G1 (Becoming.SelectionGap): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): S1 and S2 revised the \"Seeking, capture and runaway\" row, and G1 revised the \"Selection, causes and experiment\" row (the gap for one's own act stated, its record linked). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月18日，G1（Becoming.SelectionGap）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：S1 与 S2 修订“寻求、俘获与失控”行，G1 修订“选择、原因与实验”行（陈述了自身动作的缺口，链接其记录）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, readings D40-D42: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.",
+      "zh": "2026年10月18日，读法 D40-D42：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

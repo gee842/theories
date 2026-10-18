@@ -79,6 +79,7 @@ Aliases: `gap for one's own act`, `自身动作的缺口`, `act unselected`, `�
 ### History
 
 - 18 October 2026: added (G1), on Ren's "please see what else is there to do - keep pushing the frontier till finishing"; study section 176.
+- 18 October 2026, readings D40-D42: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.
 
 </details>
 

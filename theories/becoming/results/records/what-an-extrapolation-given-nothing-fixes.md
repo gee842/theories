@@ -72,6 +72,7 @@ Aliases: `what an extrapolation given nothing fixes`, `不被给予任何东西�
 ### History
 
 - 18 October 2026: added (L1), on Ren's "Wait for N5's renames to land, then start the learning and seeking line on the renamed head."; study section 173.
+- 18 October 2026: the reading decided by the AI on Ren's words of 18 October ("alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable"), DELEGATED-CHOICES D40; the chapter labels it "AI reading, D40". The claim is unchanged.
 
 </details>
 

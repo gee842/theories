@@ -15,7 +15,7 @@ Live counts every file outside a `history/` folder, frozen run evidence included
 | `2026-10-04-integrated-evolution/` | — | 2 | — | 0 |
 | `2026-10-05-causal-foundations/` | — | 1 | `outputs/ (1)` | 0 |
 | `2026-10-05-concern-theory/` | — | 48 | `reward-association/ (13)` | 0 |
-| `2026-10-05-generative-foundation-review/` | — | 432 | [foundation-assessment/ (105)](2026-10-05-generative-foundation-review/foundation-assessment/README.md) · [root-foundation/ (327)](2026-10-05-generative-foundation-review/root-foundation/INDEX.md) | 3358 |
+| `2026-10-05-generative-foundation-review/` | — | 434 | [foundation-assessment/ (105)](2026-10-05-generative-foundation-review/foundation-assessment/README.md) · [root-foundation/ (329)](2026-10-05-generative-foundation-review/root-foundation/INDEX.md) | 3358 |
 | `2026-10-05-generative-health/` | — | 1 | `discovery/ (1)` | 0 |
 | `2026-10-05-repository-reconciliation/` | — | 9 | [whole-repo-review-2026-10-16/ (8)](2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/README.md) | 0 |
 | `2026-10-05-revisable-concern/` | — | 3 | `settlement/ (3)` | 0 |

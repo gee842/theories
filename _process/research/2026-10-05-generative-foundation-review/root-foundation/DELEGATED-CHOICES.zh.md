@@ -3,7 +3,7 @@
 
 > **中文版（2026-10-17）。** 正典文本是[英文版](DELEGATED-CHOICES.md)；本版由重构时从双语原文拆出，不与英文同步维护，两者有出入时以英文为准。
 
-2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]，现为 [6a12d4]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；Ren 可以改其中任何一项。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
+2026-10-15。Ren 在 P107 落地之后问：“What's the best choices to make? please make best of your judgement, and push the frontier of completeness”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md)）。这被读作交托：理论第 8 节列为 Ren 的选择、[CONTINUATION-GROUNDING-PLAN](../history/root-foundation/CONTINUATION-GROUNDING-PLAN.md) §6 与各结果记录留给 Ren 的读法与名称，由 AI 以其最好的判断决定。本记录是这些决定。全文由 AI 撰写（会话 “Overall progress and claims” [d8df1a]，现为 [6a12d4]），引号中的 Ren 原话除外。每项决定是 **AI 依 Ren 2026-10-15 的交托决定**，不是 Ren 自己的决定；Ren 可以改其中任何一项。D40-D42 依 Ren 2026-10-18 的话决定（§12）。工作板上认领为 P110；同一交托之下推进的证明是 P111（`Becoming.Gain`）与 P112（`Becoming.Gluing`），结果在其记录与研究中。
 
 <a id="0-怎样读这份记录--how-to-read-this-record"></a>
 ## 0. 怎样读这份记录
@@ -71,6 +71,9 @@
 | D37 | 任意多条件下的识；尾 | 形式上读作律的敏感，识本身属 Ren；尾取确切意义 |
 | D38 | 细分的计入；分辨率 | 两项都以确切范围采用；研究笔记照旧 |
 | D39 | 耦合强度与纠缠 | 以确切范围采用，识本身属 Ren；纠缠读作耦合的强度，不等同于量子的纠缠 |
+| D40 | 不被给予任何东西的外推所确定者 | 以确切范围采用：由一个列表容纳的世界；读法是函数，不是被持有的模型 |
+| D41 | 不确定之律下的够 | 以确切范围采用：可能是某一进程所允许者；过程一侧不是无明 |
+| D42 | 过程的运行何时安定 | 以确切范围采用：不永远变化不是安定；与 D34 的相似只在形式上 |
 
 <a id="1-生生与生成的空间--生生-and-the-generative-space"></a>
 ## 1. 生生与生成的空间
@@ -350,6 +353,33 @@
 **理由。** 定理的读法；审查的收窄保留。
 **会改变它的。** Ren 对这些用语的另一读法；一个实际的学习者，其学习不能由这些读法表示。
 
+<a id="d40-不被给予任何东西的外推所确定者--what-an-extrapolation-given-nothing-fixes"></a>
+### D40. 不被给予任何东西的外推所确定者
+
+所在：理论“学习者经其识所能学者”的 L1 各条与第 8.2 节“学习”一行；[what-an-extrapolation-given-nothing-fixes](../../../../theories/becoming/results/records/what-an-extrapolation-given-nothing-fixes.md) 的读法；研究第 173 节。
+
+**决定。** 以确切范围采用。在每个由一个列表容纳的世界中，不被给予任何东西，一个前缀确定经映射的整个未来（`Learnable.ahead_fixes`）；一个目标可学，恰当它从某步起是对那个未来的一个读法（`Learnable.learnable_iff_reading`）。所以 `learnable_iff` 的学习者在前缀之外被给予的（`fromLaw`：世界与目标），只作为对前缀已确定的未来的一个读法，不是对构形的更多通达。没有不被给予任何东西的学习者静止于每个可学目标，其见证（`Learnable.given_nothing_not_every`）按原样采用，并称为初等的：单构形世界中的两个常值目标；内容在于前缀确实确定的东西。这是 Ren 2026-10-16 之更正的一个形式侧面：选择“is about the cognitive model, not just record”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md)）：记住的过去确定经映射的未来，它不提供的是读法。Lean 名称 `reading` 保留：从经映射的未来到值的函数。不采用：（1）把它读到列表容纳的世界之外，那里在每个进程上没有前缀确定下一个值（`Learning.no_prefix_fixes_next`）；（2）把“对未来的一个读法”读作某个构成所持有的模型：定理说的是这样的函数存在，不是有什么表示它。
+**理由。** 定理不加前提地陈述这些；（1）为所引定理排除；（2）会加一个表示的前提。
+**会改变它的。** 在列表容纳的世界之外的确定形式（例如对所识者给一个界）；比 `reading` 更好的名称。
+
+<a id="d41-不确定之律下够的边界--the-boundary-of-enough-under-undetermined-laws"></a>
+### D41. 不确定之律下够的边界
+
+所在：理论“无明的边界条件”中“不确定之律下的够”一条；[the-boundary-of-enough-under-undetermined-laws](../../../../theories/becoming/results/records/the-boundary-of-enough-under-undetermined-laws.md) 的读法；研究第 174 节。
+
+**决定。** 以确切范围采用。够是过程与目标的关系，不只是目标的性质。可能之够：从一个构形的某次运行静止且目标被满足，恰当某个可达构形满足目标且有一步停留（`Enough.possibly_rests_iff`）。确保之够：每次运行都如此，恰当此外每个有停留之步的可达构形都满足目标，且每次运行都安定；后一部分不提目标（`Enough.assured_iff`）。“可能”不读作寻求者所能促成者：它是过程的某一进程所允许者，无论什么决定走哪一进程（在分开之处，是情境，D34）；在其余仍不确定时展开的一部分能确保什么，没有陈述，因为 `Becoming.Enough` 不把一步分为一部分与其余。无明不被扩大：D26 对它的读法关乎目标，即静止时不能达到的目标；因运行不断变化而不能静止，是过程一侧的失败，以其结构命名（D42），不算作无明；无明是 Ren 的用语（§10）。
+**理由。** 定理的读法；不采用的读法会加一个前提（选择进程者）或扩大 Ren 的用语。
+**会改变它的。** Ren 把无明读作包括过程一侧；一步在一部分与其余之间划分时的够的定理。
+
+<a id="d42-过程的运行何时安定--when-the-runs-of-a-process-settle"></a>
+### D42. 过程的运行何时安定
+
+所在：理论“无明的边界条件”中“运行何时安定”一条；[when-the-runs-of-a-process-settle](../../../../theories/becoming/results/records/when-the-runs-of-a-process-settle.md) 的读法；研究第 175 节。
+
+**决定。** 以确切范围采用。在由一个列表容纳的世界中，某次运行是否不断变化是过程的性质：恰当某个可达的变化可被撤回（`Settling.keeps_changing_iff`）。运行不永远变化，并不给出它们自此安定的一步；这一差距是有限全知原理，两个构形时已然（`Settling.OneWay.never_keeps_changing`、`Settling.OneWay.lpo_of_settles`）。读作：在有限的世界中，过程决定其运行是否不断变化，但知道一次运行不会永远变化，不是知道它何时已停。D34 中有有限多个状态而没有界的学习者，静止于它永远不能确证的一步；这一相似作为形式上的类比采用，不是等同。名称：“安定”指自某步起不变，如 `Becoming.Frequency`；“静止”另加目标被满足。
+**理由。** 定理；强度是精确的（不断变化在过程上，安定在有限全知原理），所以读法不加任何东西。
+**会改变它的。** 在核心接受的前提下的构造性安定定理；Ren 对安定更喜欢的名称。
+
 <a id="7-从关系开始的重建--the-relation-first-re-founding"></a>
 ## 7. 从关系开始的重建
 
@@ -489,3 +519,4 @@
 - Ren 2026-10-15 对“按情境”这一读法的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md)），决定 D34 的第一部分。
 - 早先 AI 依 Ren 交托所作的决定：继续之间以可能性比较（2026-10-11，§6.12）。
 - 同一交托之下推进的证明：P111 `Becoming.Gain`（新的增益从哪里来）与 P112 `Becoming.Gluing`（奇偶约束下语境中的读法何时粘合），见其记录与研究。
+- Ren 2026-10-18 对 L1、S1、S2 读法的话，“alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md#rens-message-on-the-readings-of-l1-s1-and-s2)），读作对 AI 所解释的读法的总体同意，并交托其措辞与范围：D40-D42。
