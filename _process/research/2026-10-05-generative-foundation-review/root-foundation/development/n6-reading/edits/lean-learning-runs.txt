@@ -1,0 +1,424 @@
+# LearningRuns.lean and IdentificationRuns.lean: the learning laws along runs.
+### lean:LearningRuns
+= .
+- # Learning along runs: what a run's registered record fixes and what a learner reaching it does
+-
+- `Becoming.Learning` states, of any course of registered values, what a record fixes, what a
+- learner by refutation does on it, what the course answering a learner is, and what training
+- through data selects; `Becoming.Learnable` states what a learner reading a registration learns
+- along a determined law's orbit. A course read along a run of any process is its registered course
+- (`Parting.course`), every course is the registered course of a run of free branching
+- (`Parting.freeRun`), and every run of a determined law is its orbit
+- (`Branching.law_run_state`, `LearnableRuns`). This module states those laws of runs.
+-
+- * **No record fixes the next value.** At a step where two runs of any process part (they register
+-   alike before it and apart at it, `Parting.PartAt`), a claim made from the record, the values
+-   decided, is refuted on one of them (`missed_on_one_of_part`). Every run's record is shared by
+-   two runs of free branching that repeat from that step on and register two given values there,
+-   and no claim from the record is right on both (`prefix_fixes_no_next`).
+- * **The answering law.** The course answering every claim of a learner is the registered course
+-   of a run of a determined law that keeps its record (`answerReg`, `answer_course`); no list holds
+-   its configurations (`answer_open`); with two values told apart every claim made along it is
+-   refuted (`answer_misses`); and the learner over every merging of classes of hypotheses never
+-   comes to rest along it (`merged_unrested`).
+- * **Learning by refutation along a run.** The learner is through the run's record
+-   (`byElimination_through_prefix`); every hypothesis it passed was refuted at an earlier step of the run
+-   (`missed_before`); over merged classes it holds no hypothesis beyond the place of one that
+-   holds along the run (`merged_bound`); where it is right from some step on along a run, the
+-   run's registered course repeats from some step (`lasso_of_right`).
+- * **Induction along a run held by a list.** On a run of a determined law whose configurations a
+-   list holds, the learner over the lasso hypotheses is refuted fewer than `tri l.length` times,
+-   claims from `l.length` on and is not refuted at arbitrarily late steps
+-   (`held_byElimination_bounded`); that it rests is unrefuted (`held_rest_unrefuted`). Along the run of
+-   negation from `false` it rests from step `3` (`alternate_rests`); negation never rests
+-   (`negation_never_rests`).
+- * **Generalization from a run.** Within the targets that go alike across a registration, their
+-   values at the configurations a run passed before `t` fix the value at a configuration exactly
+-   where it registers like one of them (`determines_iff_lumped_alike`); the value carried over
+-   is right exactly where the world takes one value at the two (`carried_right_iff`), as it does
+-   for a world going alike across the registration (`world_carried_right`).
+- * **Training on runs' records.** Read the registered courses of a process's runs as the class
+-   (`Courses`) and the moments before `t` as the data. A loss computed from the record selects
+-   alike runs registering alike before `t` (`loss_through_prefix`); within a class free beyond the
+-   record, a selection through it leaves the value at a later moment as free as the class does
+-   (`unselected_beyond_prefix`); and a fit to the record is right at a moment on every run exactly
+-   where the record determines it there (`fit_right_iff_runs`). Where runs branch freely, the
+-   record fixes no later value (`free_prefix_fixes_nothing`).
+- * **Alike in the frame, learned alike.** On runs of a determined law beginning alike in the frame
+-   that registers `reg`, a claim at a step where the targets differ is right on at most one
+-   (`claim_not_right_on_both`); with the targets decided it is refuted on one, the records equal at
+-   every step (`missed_on_one`). Along the runs of the law leaving two coordinates unchanged, no
+-   learner reading the first rests on the second at both `(true, false)` and `(true, true)`
+-   (`pair_first_not_rests`), none rests on it along every run (`pair_not_learnable`), and reading
+-   both, the learner over the lasso hypotheses rests on the second from step `2`
+-   (`pair_whole_rests`).
++ # Learning along runs: what a run's prefix fixes and what an extrapolation along it does
++
++ `Becoming.Learning` states, of any course of values, what a prefix fixes, what extrapolation by
++ elimination does on it, what the diagonal course of an extrapolation is, and what training
++ through data selects; `Becoming.Learnable` states what an extrapolation through a map learns
++ along a determined law's orbit. A course read along a run of any process is its course through a
++ map (`Parting.course`), every course is the course of a run of free branching through the
++ identity (`Parting.freeRun`), and every run of a determined law is its orbit
++ (`Branching.law_run_state`, `LearnableRuns`). This module states those laws of runs.
++
++ * **No prefix fixes the next value.** At a step where two runs of any process part (alike
++   through the map before it and apart at it, `Parting.PartAt`), a value proposed from the prefix,
++   the values decided, misses on one of them (`missed_on_one_of_part`). Every run's prefix is
++   shared by two runs of free branching that repeat from that step on and take two given values
++   there, and no value proposed from the prefix is right on both (`prefix_fixes_no_next`).
++ * **The diagonal law.** The course on which every value an extrapolation proposes misses is the
++   course through a map of a run of a determined law that keeps the whole prefix (`answerReg`,
++   `answer_course`); no list holds its configurations (`answer_open`); with two values told apart
++   every value proposed along it misses (`answer_misses`); and elimination over every merging of
++   classes of candidates never comes to rest along it (`merged_unrested`).
++ * **Elimination along a run.** The extrapolation is through the run's prefix
++   (`byElimination_through_prefix`); every candidate it passed missed at an earlier step of the run
++   (`missed_before`); over merged classes its current candidate is never beyond the place of one
++   that accords along the run (`merged_bound`); where it is right from some step on along a run,
++   the run's course through the map repeats from some step (`lasso_of_right`).
++ * **Induction along a run held by a list.** On a run of a determined law whose configurations a
++   list holds, elimination over the lasso candidates misses fewer than `tri l.length` times,
++   proposes from `l.length` on and does not miss at arbitrarily late steps
++   (`held_byElimination_bounded`); that it rests is unrefuted (`held_rest_unrefuted`). Along the run of
++   negation from `false` it rests from step `3` (`alternate_rests`); negation never rests
++   (`negation_never_rests`).
++ * **Generalization from a run.** Within the features that go alike across a map's lumping, their
++   values at the configurations a run passed before `t` fix the value at a configuration exactly
++   where it is lumped with one of them (`determines_iff_lumped_alike`); the value carried over
++   is right exactly where the world takes one value at the two (`carried_right_iff`), as it does
++   for a world going alike across the lumping (`world_carried_right`).
++ * **Training on runs' prefixes.** Read the courses through the map of a process's runs as the
++   class (`Courses`) and the moments before `t` as the data. A loss computed from the prefix
++   selects alike runs alike through the map before `t` (`loss_through_prefix`); within a class free
++   beyond the prefix, a selection through it leaves the value at a later moment as free as the class
++   does (`unselected_beyond_prefix`); and a fit to the prefix is right at a moment on every run
++   exactly where the prefix determines it there (`fit_right_iff_runs`). Where runs branch freely,
++   the prefix fixes no later value (`free_prefix_fixes_nothing`).
++ * **Alike in the frame, learned alike.** On runs of a determined law beginning alike in the frame
++   by `reg` (`Law.frameBy`), a value proposed at a step where the features differ is right on at
++   most one (`claim_not_right_on_both`); with the features decided it misses on one, the prefixes
++   equal at every step (`missed_on_one`). Along the runs of the law leaving two coordinates
++   unchanged, no extrapolation through the map to the first rests in accord with the second at
++   both `(true, false)` and `(true, true)` (`pair_first_not_rests`), none rests in accord with it
++   along every run (`pair_not_learnable`), and through the map to both, elimination over the lasso
++   candidates rests in accord with the second from step `2` (`pair_whole_rests`).
+= .
+- /-! ## Refutation read through equal records -/
++ /-! ## Misses read through equal prefixes -/
+= .
+- /-- A refutation carries to an equal claim and an equal value. -/
++ /-- A miss carries to an equal proposal and an equal value. -/
+= .
+- /-- A refutation at a step carries to a course with the same record and value there. -/
++ /-- A miss at a step carries to a course with the same prefix and value there. -/
+= .
+- /-- Held from `t` at the value of `o'`, a course agreeing with `o'` before `t` is refuted at `t`
+- only where `o'` is. -/
++ /-- Held from `t` at the value of `o'`, a course agreeing with `o'` before `t` is missed at `t`
++ only where `o'` is. -/
+= .
+- /-- **At a parting, a claim from the record is refuted on one of the two runs.** With the
+- registered values decided, where two runs register alike before `t` and apart at `t`, a claim
+- made at `t` from the record is refuted on one of them. -/
++ /-- **At a parting, a value proposed from the prefix misses on one of the two runs.** With the
++ values through the map decided, where two runs are alike through the map before `t` and apart at
++ `t`, a value proposed at `t` from the prefix misses on one of them. -/
+= .
+- /-- **No record of a run fixes the next value, not even among finite worlds.** Given two values,
+- the record of every run before `t` is the record of two runs of free branching that repeat from
+- `t` on, one registering each value at `t`; a claim made from the record is not right on both. -/
++ /-- **No prefix of a run fixes the next value, not even among finite worlds.** Given two values,
++ the prefix of every run before `t` is the prefix of two runs of free branching that repeat from
++ `t` on, one taking each value at `t`; a value proposed from the prefix is not right on both. -/
+= .
+- /-- **The learner by refutation is through the run's record.** On two runs registering alike
+- before `t`, it holds the same hypothesis and makes the same claim at `t`. -/
++ /-- **The extrapolation by elimination is through the run's prefix.** On two runs alike through
++ the map before `t`, its current candidate and its proposal at `t` are the same. -/
+= .
+- /-- **Every hypothesis the learner passed along a run was refuted at an earlier step of the
+- run.** -/
++ /-- **Every candidate elimination passed along a run missed at an earlier step of the run.** -/
+= .
+- /-- **Learning over classes along a run.** Where hypothesis `j` of class `c` is refuted at no
+- step of the run's registered course, the learner over the merged classes holds no hypothesis
+- beyond place `tri (c + j) + j`. -/
++ /-- **Learning over classes along a run.** Where candidate `j` of class `c` misses at no
++ step of the run's course through the map, the current candidate of elimination over the merged
++ classes is never beyond place `tri (c + j) + j`. -/
+= .
+- /-- **Where the learner over the lasso hypotheses is right from some step on along a run, the
+- run's registered course repeats from some step.** -/
++ /-- **Where elimination over the lasso candidates is right from some step on along a run, the
++ run's course through the map repeats from some step.** -/
+= .
+- /-- **Generalization from a run.** Within the targets that go alike across the registration, the
+- values at the configurations a run passed before `t` fix the value at `s` exactly where `s`
+- registers like one of them, given two values. -/
++ /-- **Generalization from a run.** Within the features that go alike across the map's lumping,
++ the values at the configurations a run passed before `t` fix the value at `s` exactly where `s`
++ is lumped with one of them, given two values. -/
+= .
+- two.** A target going alike across the registration and fitting the world `f` at the
+- configurations a run passed before `t` takes at `s` its value at a passed configuration `d`
+- registering like `s`; it is right at `s` exactly where `f` takes one value at `d` and `s`. -/
++ two.** A feature going alike across the lumping and fitting the world `f` at the
++ configurations a run passed before `t` takes at `s` its value at a passed configuration `d`
++ lumped with `s`; it is right at `s` exactly where `f` takes one value at `d` and `s`. -/
+= .
+- /-- **A world going alike across the registration is learned from a run at every configuration
+- registering like one the run passed.** -/
++ /-- **A world going alike across the lumping is learned from a run at every configuration
++ lumped with one the run passed.** -/
+= .
+- /-! ## Training on the records of runs -/
++ /-! ## Training on the prefixes of runs -/
+= .
+- /-- The registered courses of the runs of `P`: the class a learner reading `reg` along the runs
+- can meet. -/
++ /-- The courses through `reg` of the runs of `P`: the class an extrapolation through `reg` along
++ the runs can meet. -/
+= .
+- /-- The registered course of every run is one of them. -/
++ /-- The course through the map of every run is one of them. -/
+= .
+- /-- **A loss computed from the record selects alike runs registering alike before `t`.** -/
++ /-- **A loss computed from the prefix selects alike runs alike through the map before `t`.** -/
+= .
+- /-- **Training through the record leaves the later value as free as the runs leave it.** Where
+- the registered courses of `P` are free at `x` beyond the record before `t`, for every run whose
+- course a selection through the record selects and every run, a selected course of a run agrees
+- with the first on the record and takes the second's value at `x`. -/
++ /-- **Training through the prefix leaves the later value as free as the runs leave it.** Where
++ the courses through the map of `P` are free at `x` beyond the prefix before `t`, for every run
++ whose course a selection through the prefix selects and every run, a selected course of a run
++ agrees with the first on the prefix and takes the second's value at `x`. -/
+= .
+- /-- **A fit to the record is right at a moment on every run exactly where the record determines
+- it.** Every two runs registering alike before `t` register alike at `x` exactly where, within the
+- registered courses of `P`, the record before `t` determines the value at `x`. -/
++ /-- **A fit to the prefix is right at a moment on every run exactly where the prefix determines
++ it.** Every two runs alike through the map before `t` are alike at `x` exactly where, within the
++ courses through the map of `P`, the prefix before `t` determines the value at `x`. -/
+= .
+- /-- **Where runs branch freely, the record fixes no later value.** Given two values, within the
+- registered courses of the runs of free branching the record before `t` fixes the value at no
+- moment from `t` on. -/
++ /-- **Where runs branch freely, the prefix fixes no later value.** Given two values, within the
++ courses of the runs of free branching the prefix before `t` fixes the value at no
++ moment from `t` on. -/
+= .
+- /-! ## The answering law -/
++ /-! ## The diagonal law -/
+= .
+- /-- The registration of the law that answers `pred`: the answer to the claim made from the record
+- the law keeps. -/
++ /-- The map read along the diagonal law of `pred`: the value set against the proposal made from
++ the prefix the law keeps. -/
+= .
+- /-- **The answering course is the registered course of a run of the answering law.** Along every
+- run of `answerStep` from the empty record, what `answerReg` registers is the diagonal course. -/
++ /-- **The diagonal course is the course through a map of a run of the diagonal law.** Along every
++ run of `answerStep` from the empty prefix, the course through `answerReg` is the diagonal course. -/
+= .
+- /-- **The answering world is open.** No list holds the configurations of a run of the answering
+- law from the empty record. -/
++ /-- **The diagonal world is open.** No list holds the configurations of a run of the diagonal
++ law from the empty prefix. -/
+= .
+- /-- **With two values told apart, every claim made along the answering run is refuted.** -/
++ /-- **With two values told apart, every value proposed along the diagonal run misses.** -/
+= .
+- /-- **The learner over every merging never rests along its answering run.** However classes of
+- hypotheses are chosen and merged, the learner over them is right from no step on along the run
+- of the law that answers it. -/
++ /-- **Elimination over every merging never rests along its diagonal run.** However classes of
++ candidates are chosen and merged, elimination over them is right from no step on along the run
++ of its diagonal law. -/
+= .
+- /-- **Induction along a run held by a list: the refutations are bounded.** On a run of a
+- determined law whose configurations a list `l` holds, the learner over the lasso hypotheses,
+- reading the registration and knowing neither the configurations nor how many there are, is
+- refuted fewer than `tri l.length` times, claims at every step from `l.length` on, and is not
+- refuted at arbitrarily late steps. -/
++ /-- **Induction along a run held by a list: the misses are bounded.** On a run of a
++ determined law whose configurations a list `l` holds, elimination over the lasso candidates,
++ through the map and given neither the configurations nor their number, misses fewer than
++ `tri l.length` times, proposes at every step from `l.length` on, and does not miss at
++ arbitrarily late steps. -/
+= .
+- /-- **Induction along a run held by a list: that the learner rests is unrefuted.** -/
++ /-- **Induction along a run held by a list: that elimination rests is unrefuted.** -/
+= .
+- /-- **A claim finer than the registration is right on at most one of two runs beginning alike.**
+- On runs of a determined law beginning alike in the frame that registers `reg`, at a step where the
+- targets differ, a learner's claim is not right on both. -/
++ /-- **A proposal finer than the map is right on at most one of two runs beginning alike.**
++ On runs of a determined law beginning alike in the frame by `reg`, at a step where the
++ features differ, a value an extrapolation proposes is not right on both. -/
+= .
+- /-- **With the targets decided, the claim is refuted on one of two runs beginning alike, and their
+- records are equal at every step.** -/
++ /-- **With the features decided, the proposal misses on one of two runs beginning alike, and their
++ prefixes are equal at every step.** -/
+= .
+- /-- **Two refutations, then rest.** Along every run of negation from `false`, the learner over
+- the lasso hypotheses reading the configuration claims each value right from step `3` on. -/
++ /-- **Two misses, then rest.** Along every run of negation from `false`, elimination over
++ the lasso candidates through the identity proposes each value right from step `3` on. -/
+= .
+- /-- **Registering the first coordinate, no learner rests on the second along the runs from both
+- `(true, false)` and `(true, true)`** of the law leaving each configuration unchanged. -/
++ /-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
++ along the runs from both `(true, false)` and `(true, true)`** of the law leaving each
++ configuration unchanged. -/
+= .
+- /-- **Registering the first coordinate, no learner rests on the second along every run.** -/
++ /-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
++ along every run.** -/
+= .
+- /-- **Registering both, the learner over the lasso hypotheses rests on the second along every
+- run from step `2`.** -/
++ /-- **Through the map to both, elimination over the lasso candidates rests in accord with the
++ second along every run from step `2`.** -/
+### lean:IdentificationRuns
+= .
+- # Identification along runs: the states of a run and what a bounded record fixes
+-
+- `Becoming.Description` reads states off one registered history (`SameAhead`, `StatesBelow`) and
+- states what a description of parts keeps and loses (`Separated`, `Rectangular`);
+- `Becoming.Identification` states what a bound on the states adds: a record of `N + N' - 1` steps
+- fixes the history, the learner given the bound is right from there, Moore's bound holds within one
+- history. A course read along a run of any process is its registered course (`Parting.course`),
+- every course is the registered course of a run of free branching (`Parting.freeRun`), every run of
++ # Identification along runs: the states of a run and what a bounded prefix fixes
++
++ `Becoming.Description` reads states off one history through a map (`SameAhead`, `StatesBelow`)
++ and states what a description of parts keeps and loses (`Separated`, `Rectangular`);
++ `Becoming.Identification` states what a bound on the states adds: a prefix of `N + N' - 1` steps
++ fixes the history, the extrapolation given the bound is right from there, Moore's bound holds
++ within one history. A course read along a run of any process is its course through a map
++ (`Parting.course`), every course is the course of a run of free branching (`Parting.freeRun`), every run of
+= .
+-   their configurations are alike in the frame that registers `reg` (`sameAhead_iff_alike`). A run
+-   whose start returns has two moments that are one state (`returns_states`); a run registering
+-   every moment differently has each moment as its own state (`new_each`); a run's registered
+-   course has finitely many states exactly where it repeats from some step (`states_iff_lasso`).
++   their configurations are alike in the frame by `reg` (`sameAhead_iff_alike`). A run
++   whose start returns has two moments that are one state (`returns_states`); a run taking a
++   different value through the map at every moment has each moment as its own state (`new_each`);
++   a run's course through the map has finitely many states exactly where it repeats from some
++   step (`states_iff_lasso`).
+= .
+- * **A bounded record fixes a run's course, exactly.** Two runs of any process with at most `N` and
+-   `N'` states that register alike before `N + N' - 1` register alike at every step
++ * **A bounded prefix fixes a run's course, exactly.** Two runs of any process with at most `N` and
++   `N'` states that are alike through the map before `N + N' - 1` are alike at every step
+= .
+-   what is registered from them agrees for `N + N - 1` steps (`sameAhead_iff_below`), and for
++   the courses from them agree for `N + N - 1` steps (`sameAhead_iff_below`), and for
+= .
+- * **Learners along runs.** The learner given the bound is refuted at no step of a run with at most
+-   `N` states (`withBound_accords`); no learner can always speak sooner on runs of free branching
+-   (`withBound_earliest`), and being given the bound buys silence, not an earlier rest
+-   (`rest_without_bound_missed`). On a run whose registered course repeats, the learner over the
+-   lasso hypotheses is right from a step that is found (`rests_of_lasso`), a step no earlier than
+-   cubic in the bound (`byElimination_rest_cubic`). Along the run of negation from `true` the learner
+-   given two states is right from step `3` (`negation_derived`). The run of the law answering the
+-   learner given `N` has more than `N` states (`answer_exceeds_bound`).
++ * **Extrapolations along runs.** The extrapolation given the bound misses at no step of a run with
++   at most `N` states (`withBound_accords`); no extrapolation can always propose sooner on runs of
++   free branching (`withBound_earliest`), and being given the bound buys silence, not an earlier rest
++   (`rest_without_bound_missed`). On a run whose course through the map repeats, elimination over
++   the lasso candidates is right from a step that is found (`rests_of_lasso`), a step no earlier
++   than cubic in the bound (`byElimination_rest_cubic`). Along the run of negation from `true` the
++   extrapolation given two states is right from step `3` (`negation_derived`). The run
++   of the diagonal law of the extrapolation given the bound `N` has more than `N` states
++   (`answer_exceeds_bound`).
+= .
+- /-- **Where a run registers every moment differently, each moment is its own state.** -/
++ /-- **Where a run takes a different value through the map at every moment, each moment is its
++ own state.** -/
+= .
+- /-- **A run's registered course has finitely many states exactly where it repeats from some
+- step.** -/
++ /-- **A run's course through the map has finitely many states exactly where it repeats from some
++ step.** -/
+= .
+- /-- **A bounded record fixes a run's course.** Two runs whose registered courses have at most `N`
+- and `N'` states and which register alike before `N + N' - 1` register alike at every step. -/
++ /-- **A bounded prefix fixes a run's course.** Two runs whose courses through the map have at most
++ `N` and `N'` states and which are alike through it before `N + N' - 1` are alike at every step. -/
+= .
+- /-- **Two moments of a run with at most `N` states are one state exactly where what is
+- registered from them agrees for `N + N - 1` steps.** -/
++ /-- **Two moments of a run with at most `N` states are one state exactly where the courses from
++ them agree for `N + N - 1` steps.** -/
+= .
+- states are one state exactly where what is registered from them agrees for `N - 1` steps. -/
++ states are one state exactly where the courses from them agree for `N - 1` steps. -/
+= .
+- /-- **The learner given the bound is refuted at no step of a run with at most `N` states.** -/
++ /-- **The extrapolation given the bound misses at no step of a run with at most `N` states.** -/
+= .
+- /-- **On a run whose registered course repeats, the learner over the lasso hypotheses comes to be
+- right at a step that is found.** -/
++ /-- **On a run whose course through the map repeats, elimination over the lasso candidates comes
++ to be right at a step that is found.** -/
+= .
+- /-- **The record before `T` does not fix a run's course.** Given two values, for every `T` two
++ /-- **The prefix before `T` does not fix a run's course.** Given two values, for every `T` two
+= .
+- /-- **No learner can always speak sooner.** Given two values, no learner refuted at no step of
+- every run of free branching with at most `M + 2` states claims at step `M + M + 2` on each. -/
++ /-- **No extrapolation can always propose sooner.** Given two values, no extrapolation that misses
++ at no step of every run of free branching with at most `M + 2` states proposes at step
++ `M + M + 2` on each. -/
+= .
+- /-- **Being given the bound buys silence, not an earlier rest.** Given two values, no learner
+- right at step `1` on every run of free branching with one state is refuted at no step of every
+- such run with two states. -/
++ /-- **Being given the bound buys silence, not an earlier rest.** Given two values, no extrapolation
++ right at step `1` on every run of free branching with one state misses at no step of every
++ such run with two states. -/
+= .
+- /-- **The learner by refutation rests no earlier than a cubic step.** A step from which the
+- learner over the lasso hypotheses is right along every run of free branching on two values with
+- at most `N = 2m + 3` states comes after `(N³ - N) / 4`. -/
++ /-- **Elimination rests no earlier than a cubic step.** A step from which elimination over the
++ lasso candidates is right along every run of free branching on two values with
++ at most `N = 2m + 3` states comes after `(N³ - N) / 4`. -/
+= .
+- /-- **A world answering its own learner exceeds the bound the learner is given.** Where `other`
+- moves every value, the run of the law answering the learner given `N` registers more than `N`
+- states. -/
++ /-- **The diagonal world of an extrapolation exceeds the bound it is given.** Where `other`
++ moves every value, the run of the diagonal law of the extrapolation given the bound `N` has more
++ than `N` states through the map. -/
+= .
+- are alike in the frame that registers `reg`.** -/
++ are alike in the frame by `reg`.** -/
+= .
+- /-- **A run from a configuration that returns has two moments that are one state**, under every
+- registration. -/
++ /-- **A run from a configuration that returns has two moments that are one state**, through
++ every map. -/
+= .
+- law beginning in a list closed under it, registering alike for `N - 1` steps, `N` the list's
+- length: that they register alike at a step is refuted by nothing. -/
++ law beginning in a list closed under it, alike through the map for `N - 1` steps, `N` the list's
++ length: that they are alike through it at a step is refuted by nothing. -/
+= .
+- positions closed under it, and a registration, have two runs, from `0` and from `1`, that part at
++ positions closed under it, and a map, have two runs, from `0` and from `1`, that part at
+= .
+- /-- **Each state of the run of negation is defined through the other.** One registers `true` and
+- goes into the other, which registers `false` and goes into the first. -/
++ /-- **Each state of the run of negation is defined through the other.** One takes `true` and
++ goes into the other, which takes `false` and goes into the first. -/
+= .
+- /-- **The liar's truth is derived along the run.** Along the run of negation from `true`, the
+- learner given that there are two states is right at every step from `3` on. -/
++ /-- **The liar's truth is derived along the run.** Along the run of negation from `true`, the
++ extrapolation given two states is right at every step from `3` on. -/

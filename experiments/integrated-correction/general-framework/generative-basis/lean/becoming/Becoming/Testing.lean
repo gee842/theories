@@ -2,88 +2,92 @@ import Becoming.Feedback
 import Becoming.Horizon
 
 /-!
-# Testing: what registers in a formation, and what it can test
+# Testing: what couples into a formation, and what it can test
 
 On 11 October 2026 Ren asked whether becoming can provide "wisdoms to avoid run away feedbacks
 and the identification of knowledge, learning, and scientific principles like falsifiability",
 and wrote: "I think all the wisdoms about wisdoms, how to think, learn, update, are all explained
 within what we have, if not not proved yet". To the AI's answer Ren replied: "agree with you,
 great job, start now. for 4, you can explore which option is better, then make decision". This
-module states, with no premise beyond balance on the conditions registered and the
-representation, what a formation can register, what a claim needs in order to be tested by it,
-and where a difference stays unregistered. No significance, ranking or axiom occurs. The responsive form of reach blindness,
-the exact threshold laws, refutation relative to a model, pooled testing, the bridge to
+module states, with no premise beyond balance on the conditions coupled into a formation and the
+representation, what can couple into a formation, what a claim needs in order to be tested by it,
+and where a difference does not pass. No significance, ranking or axiom occurs. The responsive
+form of reach blindness, the exact threshold laws, exclusion relative to a model, pooled testing, the bridge to
 `Becoming.Inquiry` and the self-bearing witness were proposed and checked by the stage's
 independent review.
 
-* **Registration.** A formation registers its support, whether the levels admit it, and the
-  levels of the conditions it observes (`obs`). Under two level histories it registers alike at a
-  step when the levels admit it alike and its observed conditions stand alike
-  (`Web.AlikeThrough`), and alike up to a step when it does so at every step up to it
-  (`Web.AlikeThroughUpTo`). A condition it depends on and does not observe registers only
-  whether it meets the need (`Web.alike_of_threshold`); an observed one registers its level
-  (`Web.observed_level_couples`). Observing more distinguishes more
-  (`Web.AlikeThroughUpTo.of_obs`). The base observation is support only (`thresholdOnly`). In the
-  one-kind reading a formation's own standing then registers through support where it bears on
-  itself (`Web.SelfBearing`); a gauge of its own standing (`ownStanding`) is an observation
-  premise, as a gauge of a stock is.
-* **Refutation.** A claim about level histories is refuted by a formation at a step when no
-  history meeting it is registered alike up to that step (`Web.Excludes`), and relative to a model,
-  a class of admissible histories, when no admissible history meeting it is (`Web.ExcludesWithin`):
-  the refutation of the model and the claim together (`Web.excludesWithin_iff_conjunction`). A
-  claim is refuted only through a difference in what registers (`Web.Excludes.not_of_alike`); what
-  holds is never refuted, and within a model only where the model admits what holds
-  (`Web.Excludes.not_meets`, `Web.ExcludesWithin.not_meets`); a refutation stands at every later
-  step (`Web.Excludes.later`); observing more refutes more (`Web.Excludes.widen`). Without a model,
-  no finite record refutes a claim about what follows it (`Web.tail_unexcluded`). With a model of
-  the exchange, a formation observing a stock refutes at the first step every false claim that it
-  comes to nothing (`Flow.excludes_tail_within`); a wrong model refutes what holds
-  (`Stationary.model_error`), and registration refutes the model (`Stationary.model_excluded`). A
-  formation's belief is the histories it registers alike with the actual one
-  (`Web.ClassThrough`, `Web.class_excludes_iff`); a judgment from it is a common response of
-  `Becoming.Inquiry`, kept as later steps and more observation narrow the belief
-  (`Web.class_judge_iff`, `Web.class_judge_later`, `Web.class_judge_widen`).
-* **Reach blindness.** A formation registers a condition when it depends on it or observes it
-  (`Web.CoupledInto`). The registration closure is the closure under exchanging with a condition
-  registered (`Flow.WithinCoupling`). It holds the influence closure of `Becoming.Feedback`,
-  is that closure where the formation registers support only, and grows with observation and
-  with exchange (`Flow.withinCoupling_of_withinInfluence`,
+* **Coupling into a formation.** Into a formation couple its support, whether the levels admit
+  it, and the levels of the conditions coupled into it by level (`obs`). Under two level
+  histories they are alike through its couplings at a step when the levels admit it alike and the
+  conditions coupled into it by level stand alike (`Web.AlikeThrough`), and alike up to a step
+  when they are so at every step up to it (`Web.AlikeThroughUpTo`). A condition coupled into it
+  by threshold only passes only whether it meets the need (`Web.alike_of_threshold`); one coupled
+  by level passes its level (`Web.observed_level_couples`). More coupling by level distinguishes
+  more (`Web.AlikeThroughUpTo.of_obs`). The base coupling is by threshold only
+  (`thresholdOnly`). In the one-kind reading a formation's own standing then couples into it
+  through support where it bears on itself (`Web.SelfBearing`); a gauge of its own standing
+  (`ownStanding`) is a supplied coupling by level, as a gauge of a stock is.
+* **Exclusion.** A claim about level histories is excluded at a formation at a step when no
+  history meeting it is alike through the formation's couplings up to that step (`Web.Excludes`),
+  and relative to a model, a class of admissible histories, when no admissible history meeting it
+  is (`Web.ExcludesWithin`): the exclusion of the model and the claim together
+  (`Web.excludesWithin_iff_conjunction`). A claim is excluded only through a difference that
+  couples into the formation (`Web.Excludes.not_of_alike`); what holds is never excluded, and
+  within a model only where the model admits what holds (`Web.Excludes.not_meets`,
+  `Web.ExcludesWithin.not_meets`); an exclusion stands at every later step (`Web.Excludes.later`);
+  more coupling by level excludes more (`Web.Excludes.widen`). Without a model, no finite prefix
+  of levels excludes a claim about what follows it (`Web.tail_unexcluded`). With a model of the
+  exchange, a formation into which a stock couples by level excludes at the first step every
+  false claim that the stock comes to nothing (`Flow.excludes_tail_within`); a wrong model
+  excludes what holds (`Stationary.model_error`), and what couples in excludes the model
+  (`Stationary.model_excluded`). The class alike through a formation's couplings is the
+  histories alike with the actual one through them (`Web.ClassThrough`,
+  `Web.class_excludes_iff`); a judgment from it is a common response of `Becoming.Inquiry`,
+  kept as later steps and more coupling by level narrow the class (`Web.class_judge_iff`,
+  `Web.class_judge_later`, `Web.class_judge_widen`).
+* **Reach blindness.** A condition couples into a formation when the formation depends on it or
+  it is coupled into the formation by level (`Web.CoupledInto`). The coupling closure is the
+  closure under exchanging with a condition coupled in (`Flow.WithinCoupling`). It holds the
+  influence closure of `Becoming.Feedback`, is that closure where coupling is by threshold only,
+  and grows with coupling by level and with exchange (`Flow.withinCoupling_of_withinInfluence`,
   `Flow.withinCoupling_thresholdOnly`, `Flow.withinCoupling_mono_obs`,
   `Flow.withinCoupling_mono_flow`). Let two flows with the same formations present balance on
-  each condition the members of a region register (`Flow.BalancesOn`), let the region be closed
-  in both under being affected through what is registered, let the levels start alike on what its
-  members register, and let each member's exchange on what members register follow its own
-  registration. Then every member registers alike at every step, whatever is done beyond the
-  region or on what no member registers (`Flow.alike_within_closed`,
+  each condition coupled into a member of a region (`Flow.BalancesOn`), let the region be closed
+  in both under being affected through what couples in, let the levels start alike on what couples
+  into its members, and let each member's exchange on what couples into members follow what
+  couples into it. Then every member is alike through its couplings at every step, whatever is
+  done beyond the region or on what couples into no member (`Flow.alike_within_closed`,
   `Flow.alike_within_coupling`). With the rest of the exchange fixed this is P42's form for
-  every observation (`Flow.uncoupled_beyond_coupling`): no claim met by the levels without
-  a part beyond the closure is refuted within it, a refutation there rests on a model of the
+  every coupling by level (`Flow.uncoupled_beyond_coupling`): no claim met by the levels without
+  a part beyond the closure is excluded within it, an exclusion there rests on a model of the
   part's exchange, and a judgment there holds with and without the part
   (`Flow.unexcluded_beyond_coupling`, `Flow.beyond_needs_model`, `Flow.class_judge_beyond`).
-* **Testing is relational.** In `Clearing` the clearer registers alike at every step whether or
-  not its clearing ends the dweller (`Clearing.alike_for_clearer`, an instance of
-  `alike_within_closed`). In the spared world the claim that the dweller is ended is refuted by
-  the dweller at the third step and by the clearer at no step (`Clearing.tested_by_dweller`); a
-  claim neither refutes, the two together refute (`Clearing.pooled`); with a model fixing the
-  start and the exchange, the clearer refutes what it does not register, and its registration
-  does no work (`Clearing.model_idles_coupling`).
-* **Threshold blindness.** Let two flows balance on each condition `g` registers, the exchange
-  there following `g`'s registration (`Flow.ExchangeFollows`). While `g` registers alike, every
-  difference on a condition it registers stays as it was at the start (`Flow.difference_kept`).
-  Where the second web starts at least as high on what `g` registers and alike on what it
-  observes, `g` registers alike at every step before which the first web supported it
-  (`Flow.alike_while_supported`), and a difference changes only after a step at which the second
-  web admitted `g` and the first did not support it (`Flow.difference_changes_after_divergence`).
-  For one stock `d` higher that `g` depends on and does not observe: it stands `d` higher, and
-  `g` registers alike, at every step before which the first web supported `g` at every step
-  (`Flow.subthreshold_alike`, `Flow.subthreshold_alike_always`). Both webs failing together, the difference can stay
-  for ever (`JointFailure.difference_kept`). `SupportDrawn` is a witness in which the difference
-  changes (`SupportDrawn.difference_waits`). Observing the stock lifts this: the formation of
-  `Gauged` registers the two webs apart at the first step and draws on the higher stock while
-  supported in both (`Gauged.gauge_changes_difference`). Where others respond to the stock itself
-  the hypothesis fails, and the higher stock can end `g` first (`Attracting.higher_breaks_first`).
-  On a prey that bears on itself, a bite registers through support only where it brings the prey
-  below its need, and a gauge of itself registers every bite (`SelfPrey.threshold_on_oneself`).
+* **Testing is relational.** In `Clearing` the clearer is alike through its couplings at every
+  step whether or not its clearing ends the dweller (`Clearing.alike_for_clearer`, an instance of
+  `alike_within_closed`). In the spared world the claim that the dweller is ended is excluded at
+  the dweller at the third step and at the clearer at no step (`Clearing.tested_by_dweller`); a
+  claim excluded at neither is excluded at the two together (`Clearing.pooled`); with a model
+  fixing the start and the exchange, the clearer excludes what does not couple into it, and its
+  couplings do no work (`Clearing.model_idles_coupling`).
+* **Threshold blindness.** Let two flows balance on each condition coupled into `g`, the exchange
+  there following what couples into `g` (`Flow.ExchangeFollows`). While the flows are alike
+  through `g`'s couplings, every difference on a condition coupled into `g` stays as it was at the
+  start (`Flow.difference_kept`). Where the second web starts at least as high on what couples
+  into `g` and alike on what is coupled into it by level, the flows are alike through `g`'s
+  couplings at every step before which the first web supported it (`Flow.alike_while_supported`),
+  and a difference changes only after a step at which the second web admitted `g` and the first
+  did not support it (`Flow.difference_changes_after_divergence`). For one stock `d` higher that
+  couples into `g` by threshold only: it stands `d` higher, and the flows are alike through `g`'s
+  couplings, at every step before which the first web supported `g` at every step
+  (`Flow.subthreshold_alike`, `Flow.subthreshold_alike_always`). Both webs failing together, the
+  difference can stay for ever (`JointFailure.difference_kept`). `SupportDrawn` is a witness in
+  which the difference changes (`SupportDrawn.difference_waits`). Coupling the stock by level
+  lifts this: the two webs are apart through the couplings of `Gauged`'s formation at the first
+  step, and it draws on the higher stock while supported in both
+  (`Gauged.gauge_changes_difference`). Where others respond to the stock itself the hypothesis
+  fails, and the higher stock can end `g` first (`Attracting.higher_breaks_first`). On a prey that
+  bears on itself, a bite passes through support only where it brings the prey below its need, and
+  a gauge of itself passes every bite (`SelfPrey.threshold_on_oneself`).
 * **Horizon.** Where the continuation is open, as in `Renewable`, no reading decided by the first
   `h` steps of a run is the whole-run classification (`Renewable.no_exact_finite_reading`); one
   that includes no consuming run excludes a renewing one
@@ -93,35 +97,36 @@ independent review.
 **Readings (the AI's; Ren accepted their earlier wording on 11 October 2026, and the review
 narrowed them).**
 - Feedback through support has three blindnesses, each in its scope: below a threshold, where the
-  exchange follows registration (`subthreshold_alike`); beyond the horizon, where the continuation
-  is open (`Becoming.Horizon`); and beyond the registration closure (`alike_within_closed`). They
-  are not the only ones: support registers only net exchange (`Flow.Balances.agrees_iff_even`),
-  and one joint bit across the conditions required.
+  exchange follows what couples in (`subthreshold_alike`); beyond the horizon, where the
+  continuation is open (`Becoming.Horizon`); and beyond the coupling closure
+  (`alike_within_closed`). They are not the only ones: support passes only net exchange
+  (`Flow.Balances.agrees_iff_even`), and one joint bit across the conditions required.
 - A runaway is a loop that runs inside one of them. This is a heuristic, not a statement: no loop
-  or gain is defined, and where others respond to a stock its loss can register sooner
+  or gain is defined, and where others respond to a stock its loss can couple in sooner
   (`Attracting`).
-- Measurement registers a level below the threshold (`Web.observed_level_couples`); a model of
-  the exchange crosses the horizon relative to itself and answers to registration
-  (`Flow.excludes_tail_within`, `Stationary`); new observation and new exchange widen the closure
-  (`Flow.withinCoupling_mono_obs`, `Flow.withinCoupling_mono_flow`); others' registration
-  tests what one cannot (`Clearing.tested_by_dweller`, `Clearing.pooled`), and reaches one only
-  through a relation that is itself an exchange or an observation.
+- Measurement couples a level into a formation below the threshold
+  (`Web.observed_level_couples`); a model of the exchange crosses the horizon relative to itself
+  and answers to what couples in (`Flow.excludes_tail_within`, `Stationary`); new coupling by
+  level and new exchange widen the closure (`Flow.withinCoupling_mono_obs`,
+  `Flow.withinCoupling_mono_flow`); what couples into others tests what does not couple into one
+  (`Clearing.tested_by_dweller`, `Clearing.pooled`), and reaches one only through a relation that
+  is itself an exchange or a coupling by level.
 - Falsifiability is the condition of being corrected by the unfolding: a claim and its rivals
-  must differ in what can register (`Web.Excludes.not_of_alike`). It is relational and moves with
-  what is registered. Without a model no finite record tests a claim about what follows it; with
+  must differ in what can couple in (`Web.Excludes.not_of_alike`). It is relational and moves with
+  what couples in. Without a model no finite prefix tests a claim about what follows it; with
   one, the test is of the model and the claim together.
-- Read with Ren's 心 and 理, 理 is a model answerable to registration: it narrows the histories
-  admitted, so that the same registration decides more; it can mislead, and registration corrects
+- Read with Ren's 心 and 理, 理 is a model answerable to what couples in: it narrows the histories
+  admitted, so that the same couplings decide more; it can mislead, and what couples in corrects
   it.
 
 What is not derived:
-- that a formation observes anything beyond its support, gauges its own standing, forms a model,
-  or wants to avoid a runaway;
-- what a registration is about: registering alike bounds what can be told apart, and says nothing
-  of what a difference signifies;
+- that anything couples into a formation by level beyond its support, that it gauges its own
+  standing, forms a model, or wants to avoid a runaway;
+- what a coupling is about: being alike through the couplings bounds what can be told apart, and
+  says nothing of what a difference signifies;
 - what an act does: a claim about it compares two histories, and is tested only relative to a
   model of the history without the act (`Flow.beyond_needs_model`,
-  `Clearing.model_idles_coupling`); varying one's own act and registering the difference is
+  `Clearing.model_idles_coupling`); varying one's own act and the difference coupling back is
   open;
 - which laws hold of the actual unfolding;
 - how others respond: `Flow.ExchangeFollows`, and the response hypothesis of
@@ -129,8 +134,8 @@ What is not derived:
   the exchange fixed.
 
 Activity is supplied by the representation, not produced by the exchange, so it is not counted
-as registered; under `Web.Dependent` it cannot outrun support. Balance is assumed only on the
-conditions registered, at each step (`Flow.BalancesOn`); global balance gives it
+among what couples in; under `Web.Dependent` it cannot outrun support. Balance is assumed only on
+the conditions coupled in, at each step (`Flow.BalancesOn`); global balance gives it
 (`Flow.Balances.on`). The representation commits to discrete steps and natural quantities.
 -/
 
@@ -140,14 +145,15 @@ open Generative Generative.InquirySufficiency
 
 variable {F C : Type}
 
-/-! ## Registration and refutation -/
+/-! ## Coupling and exclusion -/
 
-/-- No level is observed: a formation registers its support only. In the one-kind reading its own
-standing then registers through support where it bears on itself (`Web.SelfBearing`). -/
+/-- No level is coupled by level: only support couples into a formation, by threshold. In the
+one-kind reading its own standing then couples in through support where it bears on itself
+(`Web.SelfBearing`). -/
 def thresholdOnly : F → C → Prop := fun _ _ => False
 
-/-- In the one-kind reading, a gauge of one's own standing: an observation premise, as a gauge of
-a stock is, not given by the identification of the two roles. -/
+/-- In the one-kind reading, a gauge of one's own standing: a supplied coupling by level, as a
+gauge of a stock is, not given by the identification of the two roles. -/
 def ownStanding {X : Type} : X → X → Prop := fun g c => c = g
 
 /-- A stock other than oneself is not one's own standing. -/
@@ -167,7 +173,7 @@ theorem le_of_add_eq_of_le {a b x y : Nat} (same : a + x = b + y) (le : x ≤ y)
 theorem eq_of_add_eq_of_eq {a b x y : Nat} (same : a + x = b + y) (eq : x = y) : b = a :=
   (add_right_cancel x (same.trans (congrArg (b + ·) eq.symm))).symm
 
-/-- The record `l` up to `t`, then the level `k` on `c`. -/
+/-- The level history `l` up to `t`, then the level `k` on `c`. -/
 def prefixThen [DecidableEq C] (l : Nat → C → Nat) (t : Nat) (c : C) (k : Nat) :
     Nat → C → Nat :=
   fun s e => if s ≤ t then l s e else if e = c then k else l s e
@@ -176,68 +182,70 @@ namespace Web
 
 variable (W : Web F C)
 
-/-- Under two level histories, `g` registers alike at `t`: the levels admit it alike, and the
-conditions it observes stand alike. -/
+/-- Under two level histories, alike through `g`'s couplings at `t`: the levels admit `g` alike,
+and the conditions coupled into `g` by level stand alike. -/
 def AlikeThrough (obs : F → C → Prop) (g : F) (l l' : Nat → C → Nat) (t : Nat) : Prop :=
   (W.Admits (l t) t g ↔ W.Admits (l' t) t g) ∧ ∀ c, obs g c → l t c = l' t c
 
-/-- `g` registers alike at every step up to `t`. -/
+/-- Alike through `g`'s couplings at every step up to `t`. -/
 def AlikeThroughUpTo (obs : F → C → Prop) (g : F) (l l' : Nat → C → Nat) (t : Nat) : Prop :=
   ∀ s, s ≤ t → W.AlikeThrough obs g l l' s
 
-/-- A claim about level histories is refuted by `g` at `t` under `l` when no history meeting the
-claim is registered alike by `g` up to `t`. For a formation without inquiry, read: its
-registration excludes the claim. -/
+/-- A claim about level histories is excluded at `g` at `t` under `l` when no history meeting
+the claim is alike with `l` through `g`'s couplings up to `t`. No inquiry is presupposed: what
+couples into `g` leaves no history meeting the claim. -/
 def Excludes (obs : F → C → Prop) (claim : (Nat → C → Nat) → Prop) (g : F)
     (l : Nat → C → Nat) (t : Nat) : Prop :=
   ∀ l', claim l' → ¬ W.AlikeThroughUpTo obs g l l' t
 
-/-- Refuted relative to a model, the histories it admits: no admitted history meeting the claim
-is registered alike by `g` up to `t`. -/
+/-- Excluded relative to a model, the histories it admits: no admitted history meeting the claim
+is alike through `g`'s couplings up to `t`. -/
 def ExcludesWithin (admitted : (Nat → C → Nat) → Prop) (obs : F → C → Prop)
     (claim : (Nat → C → Nat) → Prop) (g : F) (l : Nat → C → Nat) (t : Nat) : Prop :=
   ∀ l', admitted l' → claim l' → ¬ W.AlikeThroughUpTo obs g l l' t
 
-/-- A condition enters what registers in `g` when `g` depends on it, through the threshold of
-its support, or observes it, through its level. `Becoming.RespectsClaims` of `Becoming.Likeness` is
-another sense: a relation on descriptions under which related descriptions realize the same
-claims. -/
+/-- A condition couples into `g` when `g` depends on it, by the threshold of its support, or it
+is coupled into `g` by level (`obs`). The coupling is directed: `c` into `g`.
+(`Becoming.RespectsClaims` of `Becoming.Likeness` is a different relation, on descriptions under
+which related descriptions realize the same claims.) -/
 def CoupledInto (obs : F → C → Prop) (g : F) (c : C) : Prop :=
   W.DependsOn g c ∨ obs g c
 
-/-- `g`'s belief at `t` under `l`: the histories it registers alike with `l` up to `t`. -/
+/-- The class alike through `g` at `t` under `l`: the histories alike with `l` through `g`'s
+couplings up to `t`. -/
 def ClassThrough (obs : F → C → Prop) (g : F) (l : Nat → C → Nat) (t : Nat) :
     (Nat → C → Nat) → Prop :=
   fun l' => W.AlikeThroughUpTo obs g l l' t
 
-/-- Every member of a group registers alike up to `t`. -/
+/-- Alike through the couplings of every member of a group up to `t`. -/
 def AlikeThroughAll (obs : F → C → Prop) (group : F → Prop) (l l' : Nat → C → Nat)
     (t : Nat) : Prop :=
   ∀ g, group g → W.AlikeThroughUpTo obs g l l' t
 
-/-- A group refutes a claim when no history meeting it is registered alike by all its members. -/
+/-- A claim is excluded at a group when no history meeting it is alike through the couplings of
+all its members. -/
 def ExcludesBy (obs : F → C → Prop) (claim : (Nat → C → Nat) → Prop) (group : F → Prop)
     (l : Nat → C → Nat) (t : Nat) : Prop :=
   ∀ l', claim l' → ¬ W.AlikeThroughAll obs group l l' t
 
-/-- At `t`, `W'` stands at least as high as `W` on every condition `g` registers, and alike on
-every condition it observes. -/
+/-- At `t`, `W'` stands at least as high as `W` on every condition coupled into `g`, and alike on
+every condition coupled into `g` by level. -/
 def LevelsAtLeast (W' : Web F C) (obs : F → C → Prop) (g : F) (t : Nat) : Prop :=
   (∀ e, W.CoupledInto obs g e → W.level t e ≤ W'.level t e) ∧
     ∀ e, obs g e → W.level t e = W'.level t e
 
 variable {W} {obs obs' : F → C → Prop} {g : F} {l l' : Nat → C → Nat}
 
-/-- Every history registers alike with itself. -/
+/-- Every history is alike with itself through `g`'s couplings. -/
 theorem AlikeThrough.refl (t : Nat) : W.AlikeThrough obs g l l t :=
   ⟨Iff.rfl, fun _ _ => rfl⟩
 
-/-- Registering alike is symmetric. -/
+/-- Alike through the couplings is symmetric. -/
 theorem AlikeThrough.symm {t : Nat} (alike : W.AlikeThrough obs g l l' t) :
     W.AlikeThrough obs g l' l t :=
   ⟨alike.1.symm, fun c observed => (alike.2 c observed).symm⟩
 
-/-- Registering alike up to a step is symmetric. -/
+/-- Alike through the couplings up to a step is symmetric. -/
 theorem AlikeThroughUpTo.symm {t : Nat} (alike : W.AlikeThroughUpTo obs g l l' t) :
     W.AlikeThroughUpTo obs g l' l t :=
   fun s le => (alike s le).symm
@@ -247,13 +255,13 @@ theorem AlikeThroughUpTo.earlier {s t : Nat} (alike : W.AlikeThroughUpTo obs g l
     (le : s ≤ t) : W.AlikeThroughUpTo obs g l l' s :=
   fun r le' => alike r (Nat.le_trans le' le)
 
-/-- Observing more distinguishes more: histories alike under a larger observation are alike
-under a smaller one. -/
+/-- More coupling by level distinguishes more: histories alike through a larger coupling by
+level are alike through a smaller one. -/
 theorem AlikeThroughUpTo.of_obs (larger : ∀ g c, obs g c → obs' g c) {t : Nat}
     (alike : W.AlikeThroughUpTo obs' g l l' t) : W.AlikeThroughUpTo obs g l l' t :=
   fun s le => ⟨(alike s le).1, fun c observed => (alike s le).2 c (larger g c observed)⟩
 
-/-- Histories agreeing up to `t` are registered alike up to `t`. -/
+/-- Histories agreeing up to `t` are alike through the couplings up to `t`. -/
 theorem alikeThroughUpTo_of_agree {t : Nat} (agree : ∀ s, s ≤ t → ∀ e, l' s e = l s e) :
     W.AlikeThroughUpTo obs g l l' t :=
   fun s le => ⟨⟨fun admits c requires => Nat.le_trans (admits c requires)
@@ -261,10 +269,10 @@ theorem alikeThroughUpTo_of_agree {t : Nat} (agree : ∀ s, s ≤ t → ∀ e, l
     fun admits c requires => Nat.le_trans (admits c requires) (Nat.le_of_eq (agree s le c))⟩,
    fun c _ => (agree s le c).symm⟩
 
-/-- **What registers of one condition: its threshold.** With every other condition `g` registers
-alike at `s`, a condition `g` depends on and does not observe registers only whether it meets the
-need: meeting it under both histories or under neither, `g` registers alike, whatever the two
-levels are. -/
+/-- **What passes of one condition: its threshold.** With every other condition coupled into `g`
+alike at `s`, a condition coupled into `g` by threshold only passes only whether it meets the
+need: meeting it under both histories or under neither, they are alike through `g`'s couplings,
+whatever the two levels are. -/
 theorem alike_of_threshold [DecidableEq C] {c : C} {s : Nat} (unobserved : ¬ obs g c)
     (others : ∀ e, W.CoupledInto obs g e → e ≠ c → l s e = l' s e)
     (threshold : W.requires s g c → (W.need s g c ≤ l s c ↔ W.need s g c ≤ l' s c)) :
@@ -281,43 +289,43 @@ theorem alike_of_threshold [DecidableEq C] {c : C} {s : Nat} (unobserved : ¬ ob
           (Nat.le_of_eq (others e (.inl ⟨s, requires⟩) other).symm)⟩,
    fun e observed => others e (.inr observed) fun same => unobserved (same ▸ observed)⟩
 
-/-- **What registers of one condition: its level, where observed.** Any difference in an observed
-condition at `s` is registered. -/
+/-- **What passes of one condition: its level, where coupled by level.** Any difference at `s` in
+a condition coupled into `g` by level makes the histories not alike through `g`'s couplings. -/
 theorem observed_level_couples {c : C} {s : Nat} (observed : obs g c)
     (differ : l s c ≠ l' s c) : ¬ W.AlikeThrough obs g l l' s :=
   fun alike => differ (alike.2 c observed)
 
-/-- A claim is refuted only through a difference in what registers: where a history meeting it
-is registered alike up to a step, it is not refuted there. -/
+/-- A claim is excluded only through a difference that couples in: where a history meeting it
+is alike through `g`'s couplings up to a step, it is not excluded there. -/
 theorem Excludes.not_of_alike {claim : (Nat → C → Nat) → Prop} {t : Nat} (meets : claim l')
     (alike : W.AlikeThroughUpTo obs g l l' t) : ¬ W.Excludes obs claim g l t :=
   fun refutes => refutes l' meets alike
 
-/-- What holds is never refuted. -/
+/-- What holds is never excluded. -/
 theorem Excludes.not_meets {claim : (Nat → C → Nat) → Prop} {t : Nat}
     (refutes : W.Excludes obs claim g l t) : ¬ claim l :=
   fun meets => refutes l meets fun s _ => AlikeThrough.refl s
 
-/-- A refutation stands: refuted at a step, refuted at every later step. -/
+/-- An exclusion stands: excluded at a step, excluded at every later step. -/
 theorem Excludes.later {claim : (Nat → C → Nat) → Prop} {s t : Nat}
     (refutes : W.Excludes obs claim g l s) (le : s ≤ t) : W.Excludes obs claim g l t :=
   fun l' meets alike => refutes l' meets (alike.earlier le)
 
-/-- Observing more refutes more. -/
+/-- More coupling by level excludes more. -/
 theorem Excludes.widen (larger : ∀ g c, obs g c → obs' g c) {claim : (Nat → C → Nat) → Prop}
     {t : Nat} (refutes : W.Excludes obs claim g l t) : W.Excludes obs' claim g l t :=
   fun l' meets alike => refutes l' meets (alike.of_obs larger)
 
-/-- A claim met by a history that agrees with the record up to `t` is not refuted at `t`. -/
+/-- A claim met by a history that agrees with `l` up to `t` is not excluded at `t`. -/
 theorem Excludes.not_of_extension {claim : (Nat → C → Nat) → Prop} {t : Nat}
     (extension : ∃ m, claim m ∧ ∀ s, s ≤ t → ∀ e, m s e = l s e) :
     ¬ W.Excludes obs claim g l t :=
   match extension with
   | ⟨_, meets, agree⟩ => Excludes.not_of_alike meets (alikeThroughUpTo_of_agree agree)
 
-/-- **Without a model, a finite record leaves what follows open.** For every record up to `t`,
-neither the claim that a condition comes to nothing nor the claim that it stays above nothing
-after `t` is refuted at `t`, by any formation under any observation. -/
+/-- **Without a model, a finite prefix leaves what follows open.** For every level history up to
+`t`, neither the claim that a condition comes to nothing nor the claim that it stays above
+nothing after `t` is excluded at `t`, at any formation under any coupling by level. -/
 theorem tail_unexcluded [DecidableEq C] {t : Nat} (c : C) :
     ¬ W.Excludes obs (fun m => ∃ T, m T c = 0) g l t ∧
       ¬ W.Excludes obs (fun m => ∀ T, t < T → 0 < m T c) g l t :=
@@ -330,12 +338,12 @@ theorem tail_unexcluded [DecidableEq C] {t : Nat} (c : C) :
    Excludes.not_of_extension ⟨prefixThen l t c 1, fun T later =>
       Nat.lt_of_lt_of_le Nat.zero_lt_one (Nat.le_of_eq (after 1 T later).symm), agree 1⟩⟩
 
-/-- Refutation is refutation relative to the model admitting every history. -/
+/-- Exclusion is exclusion relative to the model admitting every history. -/
 theorem excludes_iff_excludesWithin_all {claim : (Nat → C → Nat) → Prop} {t : Nat} :
     W.Excludes obs claim g l t ↔ W.ExcludesWithin (fun _ => True) obs claim g l t :=
   ⟨fun refutes l' _ meets => refutes l' meets, fun refutes l' meets => refutes l' trivial meets⟩
 
-/-- Refutation within a model is refutation of the model and the claim together. -/
+/-- Exclusion within a model is exclusion of the model and the claim together. -/
 theorem excludesWithin_iff_conjunction {admitted : (Nat → C → Nat) → Prop}
     {claim : (Nat → C → Nat) → Prop} {t : Nat} :
     W.ExcludesWithin admitted obs claim g l t ↔
@@ -343,25 +351,25 @@ theorem excludesWithin_iff_conjunction {admitted : (Nat → C → Nat) → Prop}
   ⟨fun refutes l' ⟨inside, meets⟩ => refutes l' inside meets,
    fun refutes l' inside meets => refutes l' ⟨inside, meets⟩⟩
 
-/-- A narrower model refutes more. -/
+/-- A narrower model excludes more. -/
 theorem ExcludesWithin.narrow {admitted admitted' : (Nat → C → Nat) → Prop}
     (narrower : ∀ l, admitted' l → admitted l) {claim : (Nat → C → Nat) → Prop} {t : Nat}
     (refutes : W.ExcludesWithin admitted obs claim g l t) :
     W.ExcludesWithin admitted' obs claim g l t :=
   fun l' inside meets => refutes l' (narrower l' inside) meets
 
-/-- Within a model admitting what holds, what holds is never refuted. -/
+/-- Within a model admitting what holds, what holds is never excluded. -/
 theorem ExcludesWithin.not_meets {admitted : (Nat → C → Nat) → Prop}
     {claim : (Nat → C → Nat) → Prop} {t : Nat} (actual : admitted l)
     (refutes : W.ExcludesWithin admitted obs claim g l t) : ¬ claim l :=
   fun meets => refutes l actual meets fun _ _ => AlikeThrough.refl _
 
-/-- A group refutes what any member refutes. -/
+/-- What is excluded at any member is excluded at the group. -/
 theorem ExcludesBy.of_member {claim : (Nat → C → Nat) → Prop} {group : F → Prop} {t : Nat}
     (member : group g) (refutes : W.Excludes obs claim g l t) : W.ExcludesBy obs claim group l t :=
   fun l' meets all => refutes l' meets (all g member)
 
-/-- Refutation is a claim disjoint from the belief. -/
+/-- A claim is excluded exactly where it is disjoint from the class alike through `g`. -/
 theorem class_excludes_iff {claim : (Nat → C → Nat) → Prop} {t : Nat} :
     W.Excludes obs claim g l t ↔ ∀ l', W.ClassThrough obs g l t l' → ¬ claim l' :=
   ⟨fun refutes l' believed meets => refutes l' meets believed,
@@ -369,14 +377,15 @@ theorem class_excludes_iff {claim : (Nat → C → Nat) → Prop} {t : Nat} :
 
 variable {H : Type} {admissible : (Nat → C → Nat) → H → Prop} {a : H}
 
-/-- **The bridge to `Becoming.Inquiry`.** A judgment from a formation's registration is a common
-response over its belief: admissible at every history it registers alike with the actual. -/
+/-- **The bridge to `Becoming.Inquiry`.** A judgment through a formation's couplings is a common
+response over the class alike through it: admissible at every history alike with the actual
+through its couplings. -/
 theorem class_judge_iff {t : Nat} :
     CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True) (fun a => [a])
         (sees (W.ClassThrough obs g l t)) a ↔ ∀ l', W.AlikeThroughUpTo obs g l l' t → admissible l' a :=
   commonResponse_judge_iff
 
-/-- Later steps narrow the belief and keep every common response. -/
+/-- Later steps narrow the class and keep every common response. -/
 theorem class_judge_later {t t' : Nat} (le : t ≤ t')
     (common : CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True)
       (fun a => [a]) (sees (W.ClassThrough obs g l t)) a) :
@@ -384,7 +393,7 @@ theorem class_judge_later {t t' : Nat} (le : t ≤ t')
       (sees (W.ClassThrough obs g l t')) a :=
   commonResponse_antitone (sees_narrow fun _ alike => alike.earlier le) common
 
-/-- More observation narrows the belief and keeps every common response. -/
+/-- More coupling by level narrows the class and keeps every common response. -/
 theorem class_judge_widen (larger : ∀ g c, obs g c → obs' g c) {t : Nat}
     (common : CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True)
       (fun a => [a]) (sees (W.ClassThrough obs g l t)) a) :
@@ -392,7 +401,7 @@ theorem class_judge_widen (larger : ∀ g c, obs g c → obs' g c) {t : Nat}
       (sees (W.ClassThrough obs' g l t)) a :=
   commonResponse_antitone (sees_narrow fun _ alike => alike.of_obs larger) common
 
-/-- Webs agreeing on what `g` requires and needs register its support through admission by their
+/-- Webs agreeing on what `g` requires and needs pass its support through admission by their
 levels. -/
 theorem admits_iff_supported_of_agree {W' : Web F C}
     (requires : ∀ t c, W.requires t g c ↔ W'.requires t g c)
@@ -403,8 +412,9 @@ theorem admits_iff_supported_of_agree {W' : Web F C}
    fun supported c requires'' =>
      Nat.le_trans (Nat.le_of_eq (need t c)) (supported c ((requires t c).mp requires''))⟩
 
-/-- Where `W'` stands at least as high on what `g` registers and alike on what it observes,
-registering alike at a step is exactly: wherever the levels of `W'` admit `g`, `W` supports it. -/
+/-- Where `W'` stands at least as high on what couples into `g` and alike on what couples into it
+by level, being alike through `g`'s couplings at a step is exactly: wherever the levels of `W'`
+admit `g`, `W` supports it. -/
 theorem alikeThrough_iff_of_levelsAtLeast {W' : Web F C} {t : Nat}
     (above : W.LevelsAtLeast W' obs g t) :
     W.AlikeThrough obs g W.level W'.level t ↔ (W.Admits (W'.level t) t g → W.Supported t g) :=
@@ -415,30 +425,30 @@ theorem alikeThrough_iff_of_levelsAtLeast {W' : Web F C} {t : Nat}
 
 end Web
 
-/-! ## Reach blindness: nothing beyond the registration closure registers -/
+/-! ## Reach blindness: nothing beyond the coupling closure couples in -/
 
 namespace Flow
 
 variable (L : Flow F C) (W : Web F C)
 
-/-- `g` is affected through what it registers by `h`: `h` exchanges with a condition `g`
-registers. -/
+/-- `g` is affected by `h` through what couples into `g`: `h` exchanges with a condition coupled
+into `g`. -/
 def CoupledFrom (obs : F → C → Prop) (g h : F) : Prop :=
   ∃ c, W.CoupledInto obs g c ∧ L.Exchanges h c
 
-/-- `g` lies within `f`'s registration closure: the closure under being affected through what is
-registered. -/
+/-- `g` lies within `f`'s coupling closure: the closure under being affected through what couples
+in. -/
 def WithinCoupling (obs : F → C → Prop) (f g : F) : Prop :=
   WithinClosure (L.CoupledFrom W obs) f g
 
-/-- Affected through what is registered, in either of two flows. -/
+/-- Affected through what couples in, in either of two flows. -/
 def CoupledFromEither (L' : Flow F C) (obs : F → C → Prop) (g h : F) : Prop :=
   L.CoupledFrom W obs g h ∨ L'.CoupledFrom W obs g h
 
-/-- The exchange on what `g` registers follows `g`'s registration: wherever `g` registers alike
-up to `t`, the two flows take from and give to every condition `g` registers alike across the
-step from `t`, in total over every formation present. A hypothesis on the whole exchange around
-`g`: it excludes others responding to what `g` does not register. -/
+/-- The exchange on what couples into `g` follows what couples into `g`: wherever the flows are
+alike through `g`'s couplings up to `t`, they take from and give to every condition coupled into
+`g` alike across the step from `t`, in total over every formation present. A hypothesis on the
+whole exchange around `g`: it excludes others responding to what does not couple into `g`. -/
 def ExchangeFollows (L' : Flow F C) (W' : Web F C) (obs : F → C → Prop) (g : F) : Prop :=
   ∀ t, W.AlikeThroughUpTo obs g W.level W'.level t → ∀ c, W.CoupledInto obs g c →
     L.taken t c = L'.taken t c ∧ L.given t c = L'.given t c
@@ -463,9 +473,9 @@ theorem BalancedHistory.agree {l l' : Nat → C → Nat} {c : C} (history : L.Ba
       ((history s c).trans ((congrArg (· + L.given s c) (BalancedHistory.agree history history'
         start s)).trans (history' s c).symm))
 
-/-- **A model of the exchange crosses the horizon.** Relative to the level histories of a flow, a
-formation observing a stock refutes at the first step every false claim that the stock comes to
-nothing. -/
+/-- **A model of the exchange crosses the horizon.** Relative to the level histories of a flow,
+every false claim that a stock comes to nothing is excluded at the first step at a formation into
+which the stock couples by level. -/
 theorem excludes_tail_within {l : Nat → C → Nat} {c : C} (observed : obs g c)
     (history : L.BalancedHistory l) (never : ∀ T, ¬ l T c = 0) :
     W.ExcludesWithin L.BalancedHistory obs (fun l' => ∃ T, l' T c = 0) g l 0 :=
@@ -473,12 +483,12 @@ theorem excludes_tail_within {l : Nat → C → Nat} {c : C} (observed : obs g c
     never T ((BalancedHistory.agree history history' ((alike 0 (Nat.le_refl 0)).2 c observed)
       T).trans zero)
 
-/-- The registration closure holds the influence closure. -/
+/-- The coupling closure holds the influence closure. -/
 theorem withinCoupling_of_withinInfluence {f g : F} (within : L.WithinInfluence W f g) :
     L.WithinCoupling W obs f g :=
   WithinClosure.mono (fun _ _ ⟨c, depends, exchanges⟩ => ⟨c, .inl depends, exchanges⟩) within
 
-/-- Registering support only, the registration closure is the influence closure. -/
+/-- Where coupling is by threshold only, the coupling closure is the influence closure. -/
 theorem withinCoupling_thresholdOnly {f g : F} :
     L.WithinCoupling W thresholdOnly f g ↔ L.WithinInfluence W f g :=
   ⟨WithinClosure.mono fun _ _ ⟨c, registers, exchanges⟩ => match registers with
@@ -486,27 +496,27 @@ theorem withinCoupling_thresholdOnly {f g : F} :
      | .inr no => False.elim no,
    withinCoupling_of_withinInfluence⟩
 
-/-- The registration closure grows with observation. -/
+/-- The coupling closure grows with coupling by level. -/
 theorem withinCoupling_mono_obs (larger : ∀ g c, obs g c → obs' g c) {f g : F}
     (within : L.WithinCoupling W obs f g) : L.WithinCoupling W obs' f g :=
   WithinClosure.mono (fun _ _ ⟨c, registers, exchanges⟩ =>
     ⟨c, registers.imp id (larger _ c), exchanges⟩) within
 
-/-- The registration closure grows with exchange. -/
+/-- The coupling closure grows with exchange. -/
 theorem withinCoupling_mono_flow (more : ∀ h c, L.Exchanges h c → L'.Exchanges h c)
     {f g : F} (within : L.WithinCoupling W obs f g) : L'.WithinCoupling W obs f g :=
   WithinClosure.mono (fun _ _ ⟨c, registers, exchanges⟩ =>
     ⟨c, registers, more _ c exchanges⟩) within
 
-/-- Nothing beyond a formation's registration closure exchanges with a condition registered
-within it. -/
+/-- Nothing beyond a formation's coupling closure exchanges with a condition coupled into a
+formation within it. -/
 theorem beyond_coupling {f g h : F} (within : L.WithinCoupling W obs f g)
     (beyond : ¬ L.WithinCoupling W obs f h) {c : C} (registers : W.CoupledInto obs g c) :
     ¬ L.Exchanges h c :=
   fun exchanges => WithinClosure.not_rel within beyond ⟨c, registers, exchanges⟩
 
-/-- Within a region closed in both flows under being affected through what is registered, each
-formation's exchange on a condition a member registers agrees in the two flows wherever the
+/-- Within a region closed in both flows under being affected through what couples in, each
+formation's exchange on a condition coupled into a member agrees in the two flows wherever the
 members' does: a formation exchanging there is a member. -/
 theorem exchange_agrees_within {region : F → Prop} {h : F} {c : C} {t : Nat}
     (closed : ClosedUnder (L.CoupledFrom W obs) region)
@@ -532,12 +542,13 @@ theorem exchange_agrees_within {region : F → Prop} {h : F} {c : C} {t : Nat}
      (eq_zero_of_not_pos b).trans (eq_zero_of_not_pos b').symm⟩
 
 /-- **Reach blindness where the members respond.** Take two flows with the same formations
-present, balancing on each condition a member registers, and a region closed in both under being
-affected through what is registered.
-Let the levels start alike on everything a member registers, and let each member take from and
-give to what the members register alike in the two flows wherever it has registered alike. Then
-every member registers alike at every step, whatever differs beyond the region, in what members
-do with conditions no member registers, or in levels no member registers. -/
+present, balancing on each condition coupled into a member, and a region closed in both under
+being affected through what couples in.
+Let the levels start alike on everything that couples into a member, and let each member take
+from and give to what couples into the members alike in the two flows wherever the flows have
+been alike through its couplings. Then the flows are alike through every member's couplings at
+every step, whatever differs beyond the region, in what members do with conditions coupled into
+no member, or in levels coupled into no member. -/
 theorem alike_within_closed {region : F → Prop}
     (balanced : ∀ t g c, region g → W.CoupledInto obs g c → L.BalancesOn W [c] t)
     (balanced' : ∀ t g c, region g → W.CoupledInto obs g c → L'.BalancesOn W' [c] t)
@@ -589,7 +600,7 @@ theorem alike_within_closed {region : F → Prop}
       t
   fun t g member => alikeOf t (levels t t (Nat.le_refl t)) g member
 
-/-- Reach blindness where the members respond, for `f`'s registration closure drawn through both
+/-- Reach blindness where the members respond, for `f`'s coupling closure drawn through both
 flows. -/
 theorem alike_within_coupling {f : F}
     (balanced : ∀ t g c, WithinClosure (L.CoupledFromEither W L' obs) f g →
@@ -628,10 +639,10 @@ theorem withhold_exchanges {h : F} {c : C} : (L.withhold part).Exchanges h c →
   | ⟨t, mem, .inr pos⟩ => ⟨t, mem, .inr (pos_of_withheld_pos (b := part h) (q := L.give t h c) pos)⟩
 
 /-- **Reach blindness with the rest of the exchange fixed.** Where every member of a part lies
-beyond `f`'s registration closure, each formation within the closure registers alike with and
-without the part at every step: an instance of `alike_within_closed`, whose second flow is the
-flow with the part withheld. Registering support only, this is P42's
-`uncoupled_beyond_influence`. -/
+beyond `f`'s coupling closure, the flows with and without the part are alike through the
+couplings of each formation within the closure at every step: an instance of
+`alike_within_closed`, whose second flow is the flow with the part withheld. Where coupling is by
+threshold only, this is P42's `uncoupled_beyond_influence`. -/
 theorem uncoupled_beyond_coupling {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
     (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
@@ -655,8 +666,8 @@ theorem uncoupled_beyond_coupling {l : Nat → C → Nat}
         ⟨(withheld_eq_of_false notPart _).symm, (withheld_eq_of_false notPart _).symm⟩)
       t g within
 
-/-- What a part beyond the registration closure does cannot be tested within it: no claim met by
-the levels without the part is refuted, at any step, by a formation within the closure. -/
+/-- What a part beyond the coupling closure does cannot be tested within it: no claim met by
+the levels without the part is excluded, at any step, at a formation within the closure. -/
 theorem unexcluded_beyond_coupling {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
     (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
@@ -667,9 +678,9 @@ theorem unexcluded_beyond_coupling {l : Nat → C → Nat}
   fun _ g within => Web.Excludes.not_of_alike meets fun s _ =>
     uncoupled_beyond_coupling without balanced beyond s g within
 
-/-- **Beyond the registration closure, only a model can judge.** Where a formation within the
-closure refutes a claim relative to a model, the model and the claim together exclude the levels
-without a part beyond it: the refutation rests on a model of the part's exchange. -/
+/-- **Beyond the coupling closure, only a model can judge.** Where a claim is excluded relative to
+a model at a formation within the closure, the model and the claim together exclude the levels
+without a part beyond it: the exclusion rests on a model of the part's exchange. -/
 theorem beyond_needs_model {l₀ : Nat → C → Nat}
     (without : L.WithheldLevels part W l₀) {f : F}
     (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
@@ -681,8 +692,8 @@ theorem beyond_needs_model {l₀ : Nat → C → Nat}
   fun ⟨inside, meets⟩ => refutes l₀ inside meets fun s _ =>
     uncoupled_beyond_coupling without balanced beyond s g within
 
-/-- A judgment from within the registration closure holds with and without a part beyond it:
-every response common to the belief is admissible under both levels. -/
+/-- A judgment from within the coupling closure holds with and without a part beyond it:
+every response common to the class alike through the formation is admissible under both levels. -/
 theorem class_judge_beyond {H : Type} {admissible : (Nat → C → Nat) → H → Prop} {a : H}
     {l₀ : Nat → C → Nat} (without : L.WithheldLevels part W l₀) {f : F}
     (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
@@ -698,8 +709,9 @@ theorem class_judge_beyond {H : Type} {admissible : (Nat → C → Nat) → H �
 
 /-! ## Threshold blindness: a difference persists until support diverges -/
 
-/-- **Differences kept.** While `g` registers alike, exchange following its registration keeps
-every difference on a condition it registers as it was at the start. -/
+/-- **Differences kept.** While the flows are alike through `g`'s couplings, exchange following
+what couples into `g` keeps every difference on a condition coupled into `g` as it was at the
+start. -/
 theorem difference_kept
     (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
     (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
@@ -726,8 +738,8 @@ theorem difference_kept
               congrArg (· + W'.level 0 e) (balanced t e registers e (.head _)).symm
           _ = W.level (t + 1) e + W'.level 0 e + L.taken t e := Nat.add_right_comm _ _ _)
 
-/-- While `g` registers alike, a second web starting at least as high on what `g` registers and
-alike on what it observes still stands so. -/
+/-- While the flows are alike through `g`'s couplings, a second web starting at least as high on
+what couples into `g` and alike on what couples into it by level still stands so. -/
 theorem levelsAtLeast_while_alike
     (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
     (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
@@ -741,9 +753,9 @@ theorem levelsAtLeast_while_alike
    fun e observed => eq_of_add_eq_of_eq (difference_kept balanced balanced' follows t alike e
       (.inr observed)) (observedAlike e observed)⟩
 
-/-- **Alike while supported.** A second web starting at least as high on what `g` registers and
-alike on what it observes: `g` registers alike at every step before which the first web supported
-it. Any number of conditions may differ. -/
+/-- **Alike while supported.** A second web starting at least as high on what couples into `g`
+and alike on what couples into it by level: the flows are alike through `g`'s couplings at every
+step before which the first web supported `g`. Any number of conditions may differ. -/
 theorem alike_while_supported
     (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
     (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
@@ -761,8 +773,8 @@ theorem alike_while_supported
         (Web.alikeThrough_iff_of_levelsAtLeast (levelsAtLeast_while_alike balanced balanced'
           higher observedAlike follows past)).mpr fun _ => supported t (Nat.lt_succ_self t)
 
-/-- **A difference changes only after a divergence.** Where a difference on a condition `g`
-registers has changed by a step, the second web's levels admitted `g` and the first web did not
+/-- **A difference changes only after a divergence.** Where a difference on a condition coupled
+into `g` has changed by a step, the second web's levels admitted `g` and the first web did not
 support it at some earlier step (not every earlier step is otherwise); where activity needs
 support, `g` was not active in the first web at every earlier step. A failure of both webs
 together is not a divergence. -/
@@ -792,13 +804,14 @@ theorem difference_changes_after_divergence
     changed (difference_kept balanced balanced' follows t (alike t (Nat.le_refl t)) e registers)
   ⟨diverged, fun dependent active => diverged fun s before _ => dependent s g (active s before)⟩
 
-/-- **Threshold blindness.** Let two flows balance on each condition `g` registers, the exchange
-there following its registration, and start alike on every condition `g` registers except a
-stock `c` that `g` depends on and does not observe, which stands `d` higher in the second. Then at every step
-before which the first web supported `g` at every step, the stock stands exactly `d` higher in
-the second, every other condition `g` registers stands alike, and `g` has registered alike at
-every earlier step. Where the webs agree on what `g` requires and needs, registering alike is
-the same support in both (`Web.admits_iff_supported_of_agree`). -/
+/-- **Threshold blindness.** Let two flows balance on each condition coupled into `g`, the
+exchange there following what couples into `g`, and start alike on every condition coupled into
+`g` except a stock `c` coupled into `g` by threshold only, which stands `d` higher in the second.
+Then at every step before which the first web supported `g` at every step, the stock stands
+exactly `d` higher in the second, every other condition coupled into `g` stands alike, and the
+flows have been alike through `g`'s couplings at every earlier step. Where the webs agree on what
+`g` requires and needs, being alike through `g`'s couplings is the same support in both
+(`Web.admits_iff_supported_of_agree`). -/
 theorem subthreshold_alike [DecidableEq C] {c : C} {d : Nat}
     (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
     (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
@@ -826,7 +839,7 @@ theorem subthreshold_alike [DecidableEq C] {c : C} {d : Nat}
      alike⟩
 
 /-- Where the first web supports `g` at every step, the stock stands `d` higher at every step and
-`g` registers alike at every step. -/
+the flows are alike through `g`'s couplings at every step. -/
 theorem subthreshold_alike_always [DecidableEq C] {c : C} {d : Nat}
     (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
     (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
@@ -845,7 +858,7 @@ end Flow
 
 /-! ## Witnesses -/
 
-/-! ### A formation that observes its stock
+/-! ### A formation into which its stock couples by level
 
 It needs one unit of the stock, draws all of the stock above its need at the first step and
 nothing after. In the lower web the stock stands at two, in the higher at three. -/
@@ -876,7 +889,7 @@ def web (above : Nat) : Web Unit Unit where
   need _ _ _ := 1
   draws _ _ _ := True
 
-/-- Observing the stock. -/
+/-- The stock coupled by level. -/
 def stock : Unit → Unit → Prop := fun _ _ => True
 
 theorem balances (above : Nat) : (flow above).Balances (web above)
@@ -893,9 +906,9 @@ theorem dependent (above : Nat) : (web above).Dependent :=
 /-- **A gauge changes the difference while supported.** In the lower web (one unit above the
 need) and the higher (two), the formation drawing all of the stock above its need is supported at
 every step in both, and in the higher it draws on the difference: the stock no longer stands one
-higher. Observing the stock, the formation registers the two webs apart at the first step, so
-exchange following its registration constrains nothing there; registering its support only, the
-exchange does not follow its registration. -/
+higher. With the stock coupled by level, the two webs are apart through the formation's couplings
+at the first step, so exchange following what couples in constrains nothing there; with coupling
+by threshold only, the exchange does not follow what couples in. -/
 theorem gauge_changes_difference :
     (flow 1).Balances (web 1) ∧ (flow 2).Balances (web 2) ∧ (web 1).Dependent ∧
       (web 2).Dependent ∧ (∀ t, (web 1).Supported t () ∧ (web 2).Supported t ()) ∧
@@ -915,8 +928,8 @@ theorem gauge_changes_difference :
        () (.inl ⟨0, trivial⟩)).1) (by decide)⟩
 
 /-- In `Gauged` the stock is the formation's own standing, and a gauge of its own standing is the
-gauge of the stock: under `ownStanding` the formation registers the two webs apart at the first
-step. A formation carved so that its reserve is its own standing is never blind below its
+gauge of the stock: under `ownStanding` the two webs are apart through the formation's couplings
+at the first step. A formation carved so that its reserve is its own standing is never blind below its
 threshold there. -/
 theorem own_is_stock :
     (∀ g c, stock g c ↔ ownStanding g c) ∧
@@ -988,7 +1001,7 @@ theorem dependent (level : Nat → Nat) : (web level).Dependent :=
   fun _ _ active _ _ => active
 
 /-- The exchange follows the formation's support only. Up to the second step the two flows draw
-alike; from the third, the support registers differently. -/
+alike; from the third, the support passes differently. -/
 theorem follows : (flow lowerDraw).ExchangeFollows (web lowerLevel) (flow higherDraw)
     (web higherLevel) thresholdOnly ()
   | 0, _, (), _ => ⟨rfl, rfl⟩
@@ -996,8 +1009,8 @@ theorem follows : (flow lowerDraw).ExchangeFollows (web lowerLevel) (flow higher
   | t + 2, alike, (), _ => absurd ((alike 2 (Nat.le_add_left 2 t)).1.mpr
       (fun _ _ => Nat.le_refl 1) () trivial) (Nat.not_succ_le_zero 0)
 
-/-- **The difference waits for the divergence.** Through its support only, the formation
-registers the higher stock as the lower before the third step, where the lower web fails to
+/-- **The difference waits for the divergence.** Through its support only, the higher stock
+passes into the formation as the lower before the third step, where the lower web fails to
 support it and the higher does: the difference of one unit stands through the third step, as
 `Flow.subthreshold_alike` gives, and has changed by the fourth. -/
 theorem difference_waits :
@@ -1151,8 +1164,8 @@ theorem dependent_web (level : Nat → Nat) : (web level).Dependent
 
 /-- **Where others respond to the stock, the higher stock can end the dependent first.** The
 higher web, one unit higher at the start, fails the dependent at the second step, where the lower
-still supports it. The dependent registers alike at the first step and the totals taken differ
-there: the exchange does not follow its registration. -/
+still supports it. The flows are alike through the dependent's couplings at the first step and the
+totals taken differ there: the exchange does not follow what couples into it. -/
 theorem higher_breaks_first :
     lowerFlow.Balances (web lowerLevel) ∧ higherFlow.Balances (web higherLevel) ∧
       (web lowerLevel).Dependent ∧ (web higherLevel).Dependent ∧
@@ -1281,10 +1294,10 @@ theorem preyAlone_closed : ClosedUnder (flow.AffectedBy web) (fun x => x = prey)
     | _, rfl, prey, no, _, _ => nomatch no
     | _, rfl, predator, no, _, _ => nomatch no
 
-/-- **A gauge of one's own standing registers being taken from.** The predator lies beyond the
-prey's influence closure and within its registration closure under `ownStanding`. With the rest
-of the exchange fixed, the prey registers the predator's part alike through its support at every
-step, and not through a gauge of its own standing after the bite. -/
+/-- **A gauge of one's own standing passes being taken from.** The predator lies beyond the
+prey's influence closure and within its coupling closure under `ownStanding`. With the rest
+of the exchange fixed, the flows with and without the predator's part are alike through the prey's
+support at every step, and not through a gauge of its own standing after the bite. -/
 theorem couples_taking :
     ¬ flow.WithinInfluence web prey predator ∧
       flow.WithinCoupling web ownStanding prey predator ∧
@@ -1302,7 +1315,7 @@ theorem couples_taking :
      t prey (WithinClosure.refl _),
    fun alike => absurd (alike.2 prey rfl) (by decide)⟩
 
-/-- **What `Prey` omits.** The registered difference makes no difference to the prey: it is
+/-- **What `Prey` omits.** The difference coupled in makes no difference to the prey: it is
 supported, active and admitted by the spared levels at every step. The prey does not bear on
 itself, and the predator is active with no standing: the first part of `couples_taking` rests on
 these omitted relations. -/
@@ -1394,8 +1407,8 @@ theorem admits_spared (b t : Nat) : (web b).Admits (Prey.spared t) t prey :=
   | predator, no => nomatch no
 
 /-- **The threshold on oneself.** A bite of one is above the prey's need on itself: through
-support the prey registers it alike with the spared levels at every step, while a gauge of its
-own standing registers it at the second step. A bite of two registers through support at the
+support it passes alike with the spared levels at every step, while through a gauge of its own
+standing it passes at the second step. A bite of two passes through support at the
 second step. -/
 theorem threshold_on_oneself :
     (∀ t, (web 1).AlikeThrough thresholdOnly prey (web 1).level Prey.spared t) ∧
@@ -1429,12 +1442,12 @@ def actual : Nat → Unit → Nat
 def web : Web Unit Unit := ⟨actual, fun _ _ => True, fun _ _ _ => True, fun _ _ _ => 1,
   fun _ _ _ => True⟩
 
-/-- Observing the stock. -/
+/-- The stock coupled by level. -/
 def gauge : Unit → Unit → Prop := fun _ _ => True
 
-/-- **A wrong model refutes what holds.** Relative to the model, a formation gauging the stock
-refutes at the first step the claim that the stock comes to nothing, which holds of the actual
-history. -/
+/-- **A wrong model excludes what holds.** Relative to the model, at a formation gauging the
+stock the claim that the stock comes to nothing, which holds of the actual history, is excluded
+at the first step. -/
 theorem model_error :
     (∃ T, actual T () = 0) ∧ ¬ still.BalancedHistory actual ∧
       web.ExcludesWithin still.BalancedHistory gauge (fun l' => ∃ T, l' T () = 0) () actual 0 :=
@@ -1446,8 +1459,9 @@ theorem model_error :
      have two : l' 0 () = 2 := ((alike 0 (Nat.le_refl 0)).2 () trivial).symm
      Nat.noConfusion ((zero.symm.trans (same T)).trans two)⟩
 
-/-- **Registration refutes the model.** At the second step no history the model admits is
-registered alike by the gauging formation: within the model its belief is empty. -/
+/-- **What couples in excludes the model.** At the second step no history the model admits is
+alike through the gauging formation's couplings: within the model the class alike through it is
+empty. -/
 theorem model_excluded :
     web.ExcludesWithin still.BalancedHistory gauge (fun _ => True) () actual 1 :=
   fun l' history' _ alike =>
@@ -1459,13 +1473,13 @@ end Stationary
 
 namespace Clearing
 
-/-- The source and the clearer: the region of the clearer's registration. -/
+/-- The source and the clearer: the region of what couples into the clearer. -/
 def clearerSide : Formation → Prop
   | .source => True
   | .clearer => True
   | .dweller => False
 
-/-- What a member of the clearer's side registers, registering support only, is the resource. -/
+/-- What couples into a member of the clearer's side, by threshold only, is the resource. -/
 theorem couples_resource {g : Formation} {c : Place} (member : clearerSide g)
     (registers : web.CoupledInto thresholdOnly g c) : c = .resource :=
   match registers with
@@ -1477,7 +1491,7 @@ theorem couples_resource {g : Formation} {c : Place} (member : clearerSide g)
     | .clearer, .fuel _, _, no => nomatch no
 
 /-- In a flow in which the dweller does not exchange with the resource, the clearer's side is
-closed under being affected through what it registers. -/
+closed under being affected through what couples in. -/
 theorem clearerSide_closed (L : Flow Formation Place)
     (dwellerQuiet : ∀ t, L.take t .dweller .resource = 0 ∧ L.give t .dweller .resource = 0) :
     ClosedUnder (L.CoupledFrom web thresholdOnly) clearerSide :=
@@ -1490,9 +1504,9 @@ theorem clearerSide_closed (L : Flow Formation Place)
     | _, rfl, .dweller, .inr pos =>
       Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le pos (Nat.le_of_eq (dwellerQuiet t).2))
 
-/-- The clearer registers alike at every step whether or not it clears the habitat: an instance
-of `Flow.alike_within_closed`, the clearing being an act on a condition no member of its
-side registers. -/
+/-- The flows are alike through the clearer's couplings at every step whether or not it clears
+the habitat: an instance of `Flow.alike_within_closed`, the clearing being an act on a condition
+coupled into no member of its side. -/
 theorem alike_for_clearer :
     ∀ t, web.AlikeThroughUpTo thresholdOnly .clearer web.level sparedWeb.level t :=
   fun _ s _ => Flow.alike_within_closed (region := clearerSide)
@@ -1514,7 +1528,7 @@ def DwellerEnded (l : Nat → Place → Nat) : Prop :=
   ∀ n, ¬ web.Admits (l (n + 2)) (n + 2) .dweller
 
 /-- **Testing is relational.** In the world with the habitat spared, the claim that the dweller
-is ended is refuted by the clearer at no step, and by the dweller at the third step. -/
+is ended is excluded at the clearer at no step, and at the dweller at the third step. -/
 theorem tested_by_dweller :
     DwellerEnded web.level ∧
       (∀ t, ¬ web.Excludes thresholdOnly DwellerEnded .clearer sparedWeb.level t) ∧
@@ -1544,8 +1558,8 @@ def clearerAndDweller : Formation → Prop
   | .dweller => True
   | .source => False
 
-/-- **Pooled testing.** In the spared world, neither the clearer nor the dweller refutes, at the
-third step, that one of them is not admitted there; the two together do. -/
+/-- **Pooled testing.** In the spared world, the claim that one of them is not admitted at the
+third step is excluded there at neither the clearer nor the dweller; at the two together it is. -/
 theorem pooled :
     ¬ web.Excludes thresholdOnly EitherEnded .clearer sparedWeb.level 2 ∧
       ¬ web.Excludes thresholdOnly EitherEnded .dweller sparedWeb.level 2 ∧
@@ -1579,9 +1593,9 @@ theorem pooled :
 def FixedStartAndExchange (l' : Nat → Place → Nat) : Prop :=
   flow.BalancedHistory l' ∧ ∀ c, l' 0 c = web.level 0 c
 
-/-- **A complete model idles registration.** With a model fixing the start and the exchange, the
-clearer refutes at the first step, registering nothing about the habitat, that the dweller is
-admitted at the third. -/
+/-- **A complete model idles coupling.** With a model fixing the start and the exchange, the
+claim that the dweller is admitted at the third step is excluded at the clearer at the first
+step, though nothing about the habitat couples into it. -/
 theorem model_idles_coupling :
     web.ExcludesWithin FixedStartAndExchange thresholdOnly (fun l' => web.Admits (l' 2) 2 .dweller)
       .clearer web.level 0 :=

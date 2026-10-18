@@ -2,68 +2,71 @@ import Becoming.Distinguishing
 import Becoming.Lasting
 
 /-!
-# Parting: what a record fixes where the course branches
+# Parting: what a prefix fixes where the course branches
 
-`Becoming.Identification` states what a bounded record fixes under a determined law: the
-registered course of a world of `N` configurations is fixed by its record before `N + N - 1`,
+`Becoming.Identification` states what a bounded prefix fixes under a determined law: the
+course through a map of a world of `N` configurations is fixed by its prefix before `N + N - 1`,
 and no earlier step serves every such world. A process of the spine fixes only which steps are
 admissible, and from one configuration its runs can go different ways. This module states,
-with no premise beyond what each law names, what a record fixes along the runs of any process.
+with no premise beyond what each law names, what a prefix fixes along the runs of any process.
 
-* **At a parting no learner is right on both.** Two runs part at a step where they register the
-  same before it and differ at it (`PartAt`). Their records before the step are one record, so
-  no learner, whatever it is given, the world included, is right at that step on both
-  (`not_right_on_both`). A learner right at every step from `T` on, on every run from a
-  configuration, leaves no two of those runs parting at any step from `T` on
-  (`not_parting_of_right`). With the registered values decided, no two runs from a
-  configuration part exactly where all of them register one course (`unparted_iff`).
+* **At a parting no extrapolation is right on both.** Two runs part at a step where their
+  courses through the map are the same before it and differ at it (`PartAt`). Their prefixes
+  before the step are one prefix, so no extrapolation, whatever it is given, the process
+  included, is right at that step on both (`not_right_on_both`). An extrapolation right at every
+  step from `T` on, on every run from a configuration, leaves no two of those runs parting at
+  any step from `T` on (`not_parting_of_right`). With the values through the map decided, no two
+  runs from a configuration part exactly where all of them have one course through the map
+  (`unparted_iff`).
 * **Where runs do not part, the bound carries.** Not parting is kept along runs: from every
   configuration a run from an unparted configuration reaches, no two runs part either
   (`Unparted.along`, by joining runs at a step, `joinAt`). So on a run from a configuration
-  from which no two runs part, held by a list of `N` configurations, the registered course has at
-  most `N` states (`course_statesBelow`), and the learner by the least bound of
+  from which no two runs part, held by a list of `N` configurations, the course through the map
+  has at most `N` states (`course_statesBelow`), and the extrapolation by the least bound of
   `Becoming.Identification`, given nothing, is right at every step from `N + N - 1` on
-  (`leastBound_right`). No learner is right at step `N + N - 2` on every such run for `N ≥ 2`
+  (`leastBound_right`). No extrapolation is right at step `N + N - 2` on every such run for `N ≥ 2`
   (`rest_earliest_runs`): the step is exact for processes as for laws. A determined process
   with one move parts nowhere (`unparted_of_determined`), so the determined case is the
-  instance; a process can branch and part nowhere where its branching does not show in what is
-  registered (`free_unparted_const`).
+  instance; a process can branch and part nowhere where its branching does not show through the
+  map (`free_unparted_const`).
 * **Where runs part only before a step, the bound carries from there.** If no two runs from a
-  configuration part at any step from `T` on, the registered values decided, then no two runs
-  part from where a run from it is at `T` (`unparted_at_of_late`). Held by a list of `N`
-  configurations, its registered course then has at most `T + N` states (`late_statesBelow`,
-  through `statesBelow_shift`). The learner by the least bound is right at every step from
+  configuration part at any step from `T` on, the values through the map decided, then no two
+  runs part from where a run from it is at `T` (`unparted_at_of_late`). Held by a list of `N`
+  configurations, its course through the map then has at most `T + N` states (`late_statesBelow`,
+  through `statesBelow_shift`). The extrapolation by the least bound is right at every step from
   `2(T + N) - 1` on (`late_right`).
-* **Where no two runs part, a learner given the world is right.** Take a process with listed
-  moves and configurations, decided steps and decided registered values. The learner given the
-  world (`fromProcess`) reads from the record the configurations a run from `s` can be at
+* **Where no two runs part, an extrapolation built from the process is right.** Take a process
+  with listed moves and configurations, decided steps and decided values through the map. The
+  extrapolation built from the process, its listed moves and configurations and the start
+  (`fromProcess`) reads off the prefix the configurations a run from `s` can be at
   (`candidates`). It keeps the first from which a path as long as the list of configurations is
   open (`live`, `firstLive`), and such a path goes on without end (`live_persists`, `liveRun`):
   `live` is `Lasting.Continues` decided (`live_iff_continues`), and where a list of `N` holds
   every configuration a course of `N` steps makes its start unbounded, with no decidability and
   no selection (`continues_persists`, `unbounded_of_continues`), where `Lasting`'s lifting for
   finite branching holds up to double negation.
-  It claims what that configuration registers. It is right at step `t` on every run from `s`
-  exactly where no two runs from `s` part at `t` (`world_right_iff`). So some learner is right
-  there exactly where none part (`some_right_iff`): with `not_right_on_both`, at each step a
-  parting is exactly what neither the record nor the world settles.
+  It proposes that configuration's value through the map. It is right at step `t` on every run
+  from `s` exactly where no two runs from `s` part at `t` (`world_right_iff`). So some
+  extrapolation is right there exactly where none part (`some_right_iff`): with
+  `not_right_on_both`, at each step a parting is exactly what neither the prefix nor the process
+  settles.
 * **Where runs part, nothing bounds the course.** Under free branching, every configuration
-  may follow every configuration (`free`), every course is the registered course of a run
-  (`freeRun`). So after every record two runs of two configurations part, each with that record
-  (`free_parts_after`): no record shows that a world will not part. For every learner and every
-  record, a run of free branching on two values has that record and the learner is not right at
-  the next step (`free_open`); for every learner, one run is never right at any step
-  (`free_never_right`); and a run of free branching on two configurations has a registered course
-  with no bound on its states (`free_unbounded`).
+  may follow every configuration (`free`), every course is the course of a run through a map
+  (`freeRun`). So after every prefix two runs of two configurations part, each with that prefix
+  (`free_parts_after`): no prefix shows that a world will not part. For every extrapolation and
+  every prefix, a run of free branching on two values has that prefix and the extrapolation is not
+  right at the next step (`free_open`); for every extrapolation, one run is never right at any
+  step (`free_never_right`); and a run of free branching on two configurations has a course
+  through the map with no bound on its states (`free_unbounded`).
 
-So with a bound on configurations a record fixes the registered course exactly as far as the
-runs do not part, from `N + N - 1` on; where they part, neither the record nor the law fixes
+So with a bound on configurations a prefix fixes the course through the map exactly as far as the
+runs do not part, from `N + N - 1` on; where they part, neither the prefix nor the law fixes
 which way the run goes. Ren, 16 October 2026: "we are describing what everything obeys, but at
 every moment, the actual change depends on the situation", and "the situation makes it true".
 Read so, a law that branches leaves open what the situation fixes: with the situation as the
 move, the law is determined (`Becoming.Situations`). Ren took this reading on 16 October 2026.
 
-**Classical sources.** That for every learner some course defeats it at every step
+**Classical sources.** That for every extrapolation some course is missed at every step
 (`free_never_right`) is Gold's (1967) diagonal against identifying every sequence in the limit;
 the bound `N + N - 1` and its exactness carry over Moore's (1956) bound for distinguishing
 experiments, through `Becoming.Identification`, from determined laws to runs that do not part.
@@ -125,30 +128,30 @@ theorem joinAt_after : ∀ (k : Nat) (r r' : Run P) (meet : r'.state 0 = r.state
 
 end Runs
 
-/-! ## At a parting no learner is right on both -/
+/-! ## At a parting no extrapolation is right on both -/
 
 section Part
 
 variable {S : Type u} {A : Type v} {R : Type w} {P : Process S A}
 
-/-- What the registration registers along a run. -/
+/-- The course of a run through the map. -/
 def course (reg : S → R) (r : Run P) : Nat → R := fun n => reg (r.state n)
 
-/-- Two runs part at step `t`: they register the same before `t` and differ at `t`. -/
+/-- Two runs part at step `t`: through the map they are the same before `t` and differ at `t`. -/
 def PartAt (reg : S → R) (r r' : Run P) (t : Nat) : Prop :=
   (∀ n, n < t → reg (r.state n) = reg (r'.state n)) ∧ reg (r.state t) ≠ reg (r'.state t)
 
-/-- No two runs from `s` part: every two runs from `s` register one course. -/
+/-- No two runs from `s` part: every two runs from `s` have one course through the map. -/
 def Unparted (P : Process S A) (reg : S → R) (s : S) : Prop :=
   ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ∀ n, reg (r.state n) = reg (r'.state n)
 
-/-- The learner `pred`, reading the record of what is registered along `r` before `t`, claims
-what is registered at `t`. -/
+/-- The extrapolation `pred`, from the prefix before `t` of `r`'s course through the map,
+proposes the value through the map at `t`. -/
 def RightAt (pred : List R → Option R) (reg : S → R) (r : Run P) (t : Nat) : Prop :=
   pred (Learning.prefixOf (course reg r) t) = some (reg (r.state t))
 
-/-- **At a parting no learner is right on both.** The two records before the step are one
-record, whatever the learner is given. -/
+/-- **At a parting no extrapolation is right on both.** The two prefixes before the step are one
+prefix, whatever the extrapolation is given. -/
 theorem not_right_on_both (pred : List R → Option R) {reg : S → R} {r r' : Run P} {t : Nat}
     (part : PartAt reg r r' t) : ¬ (RightAt pred reg r t ∧ RightAt pred reg r' t) :=
   fun ⟨right, right'⟩ =>
@@ -156,7 +159,7 @@ theorem not_right_on_both (pred : List R → Option R) {reg : S → R} {r r' : R
       Learning.prefix_congr part.1
     part.2 (Option.some.inj (right.symm.trans ((congrArg pred same).trans right')))
 
-/-- A learner right at every step from `T` on, on every run from `s`, leaves no two of those
+/-- An extrapolation right at every step from `T` on, on every run from `s`, leaves no two of those
 runs parting at any step from `T` on. -/
 theorem not_parting_of_right {pred : List R → Option R} {reg : S → R} {s : S} {T : Nat}
     (right : ∀ r : Run P, r.state 0 = s → ∀ t, T ≤ t → RightAt pred reg r t)
@@ -164,7 +167,8 @@ theorem not_parting_of_right {pred : List R → Option R} {reg : S → R} {s : S
     ¬ PartAt reg r r' t :=
   fun part => not_right_on_both pred part ⟨right r start t late, right r' start' t late⟩
 
-/-- **No two runs from a configuration part exactly where all of them register one course.** -/
+/-- **No two runs from a configuration part exactly where all of them have one course through
+the map.** -/
 theorem unparted_iff [DecidableEq R] {reg : S → R} {s : S} :
     Unparted P reg s ↔
       ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ∀ t, ¬ PartAt reg r r' t :=
@@ -195,7 +199,7 @@ theorem Unparted.along {reg : S → R} {s : S} (unparted : Unparted P reg s) {r 
 
 /-- **Where runs do not part, the course has at most as many states as there are
 configurations.** On a run from a configuration from which no two runs part, held by a list,
-the registered course has at most as many states as the list has members. -/
+the course through the map has at most as many states as the list has members. -/
 theorem course_statesBelow {reg : S → R} {s : S} (unparted : Unparted P reg s) {r : Run P}
     (start : r.state 0 = s) {l : List S} (held : ∀ n, r.state n ∈ l) :
     StatesBelow (course reg r) l.length :=
@@ -205,8 +209,9 @@ theorem course_statesBelow {reg : S → R} {s : S} (unparted : Unparted P reg s)
       unparted.along start i (after r i) (after r j) rfl same.symm
     Identification.statesBelow_mono (statesBelow_of_same lt ahead) within
 
-/-- **The learner given nothing rests from `N + N - 1` on.** On a run from a configuration from
-which no two runs part, held by a list of `N` configurations, the learner by the least bound is
+/-- **An extrapolation given nothing rests from `N + N - 1` on.** On a run from a
+configuration from which no two runs part, held by a list of `N` configurations, the
+extrapolation by the least bound is
 right at every step from `N + N - 1` on. -/
 theorem leastBound_right [DecidableEq R] {reg : S → R} {s : S} (unparted : Unparted P reg s)
     {r : Run P} (start : r.state 0 = s) {l : List S} (held : ∀ n, r.state n ∈ l) {t : Nat}
@@ -228,7 +233,7 @@ theorem unparted_of_determined {P : Process S Unit} (determined : Determined P) 
     (s : S) : Unparted P reg s :=
   fun _ _ start start' n => congrArg reg (states_agree determined (start.trans start'.symm) n)
 
-/-- **The step is exact for processes.** Given two values, no learner is right at step
+/-- **The step is exact for processes.** Given two values, no extrapolation is right at step
 `N + N - 2` on every run, from a configuration from which no two runs part, of every process of
 `N = M + 2` configurations. -/
 theorem rest_earliest_runs {x y : R} (two : x ≠ y) (pred : List R → Option R) (M : Nat) :
@@ -300,8 +305,8 @@ theorem late_statesBelow [DecidableEq R] {reg : S → R} {s : S} {T : Nat}
   statesBelow_shift (course_statesBelow (unparted_at_of_late late start) (r := after r T) rfl
     fun n => held (T + n))
 
-/-- **The rest step where runs part only before `T`.** The learner by the least bound, given
-nothing, is right at every step from `2(T + N) - 1` on, on every run from a configuration from
+/-- **The rest step where runs part only before `T`.** The extrapolation by the least bound,
+given nothing, is right at every step from `2(T + N) - 1` on, on every run from a configuration from
 which no two runs part at any step from `T` on, held by a list of `N` configurations. -/
 theorem late_right [DecidableEq R] {reg : S → R} {s : S} {T : Nat}
     (late : ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ∀ t, T ≤ t → ¬ PartAt reg r r' t)
@@ -312,7 +317,7 @@ theorem late_right [DecidableEq R] {reg : S → R} {s : S} {T : Nat}
 
 end Late
 
-/-! ## Where runs do not part, a learner given the world is right -/
+/-! ## Where runs do not part, an extrapolation built from the process is right -/
 
 section World
 
@@ -516,8 +521,8 @@ def liveRun (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
 variable [DecidableEq R] (reg : S → R) (s : S)
 
 variable (P moves all) in
-/-- The configurations a run from `s` can be at, given the record before: those reached from
-one the record allows, registered as the record says. -/
+/-- The configurations a run from `s` can be at, given the prefix before: those reached from
+one the prefix allows, with the value through the map the prefix says. -/
 def candidates : List R → List S
   | [] => [s]
   | v :: record => keepIf (fun y => anyOf (candidates record) fun x =>
@@ -565,8 +570,9 @@ theorem firstLive_found : ∀ {l : List S} {y : S}, y ∈ l → live P moves all
       | ⟨z, found⟩ => exact ⟨z, show cond _ _ _ = _ by rw [here]; exact found⟩
 
 variable (P moves all) in
-/-- **The learner given the world**: from the record, the configurations a run from `s` can be
-at; of these, the first from which the run can go on; what it registers. -/
+/-- **The extrapolation built from the process** (its listed moves and configurations, the map
+and the start `s`): from the prefix, the configurations a run from `s` can be at; of these, the
+first from which the run can go on; its value through the map. -/
 def fromProcess (record : List R) : Option R :=
   (firstLive P moves all (candidates P moves all reg s record)).map reg
 
@@ -603,8 +609,8 @@ theorem candidates_run : ∀ (record : List R) (y : S),
            fun n => (congrArg r'.state ((Nat.add_assoc _ _ _).trans
              (congrArg _ (Nat.add_comm 1 n)))).trans (follows (n + 1))⟩
 
-/-- **Where no two runs part, the learner given the world is right.** For a process with listed
-moves and configurations and decided steps, the learner given the world is right at step `t`
+/-- **Where no two runs part, the extrapolation built from the process is right.** For a process
+with listed moves and configurations and decided steps, it is right at step `t`
 on every run from `s` where no two runs from `s` part at `t`. -/
 theorem world_right (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {t : Nat}
     (unparted : ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t)
@@ -630,16 +636,16 @@ theorem world_right (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
           rw [found]
           exact congrArg some same
 
-/-- **A learner given the world is right at a step on every run exactly where no two runs part
-there.** For a process with listed moves and configurations and decided steps. -/
+/-- **The extrapolation built from the process is right at a step on every run exactly where no
+two runs part there.** For a process with listed moves and configurations and decided steps. -/
 theorem world_right_iff (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (t : Nat) :
     (∀ r : Run P, r.state 0 = s → RightAt (fromProcess P moves all reg s) reg r t) ↔
       ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t :=
   ⟨fun right _ _ start start' part => not_right_on_both _ part ⟨right _ start, right _ start'⟩,
    fun unparted => world_right reg s every_move every unparted⟩
 
-/-- **Some learner is right at a step on every run exactly where no two runs part there, and
-the learner given the world is one.** -/
+/-- **Some extrapolation is right at a step on every run exactly where no two runs part there,
+and the extrapolation built from the process is one.** -/
 theorem some_right_iff (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (t : Nat) :
     (∃ pred : List R → Option R, ∀ r : Run P, r.state 0 = s → RightAt pred reg r t) ↔
       ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t :=
@@ -660,18 +666,18 @@ reads `Courses.anyChange`, the process in which every change is admitted, as thi
 (`Courses.anyChange_eq_free`). -/
 def free (V : Type w) : Process V Unit := ⟨fun _ _ _ => True⟩
 
-/-- Every course is a run of free branching, registered as it is. -/
+/-- Every course is the course of a run of free branching, through the identity map. -/
 def freeRun (o : Nat → V) : Run (free V) := ⟨o, fun _ => (), fun _ => trivial⟩
 
 theorem freeRun_course (o : Nat → V) : course id (freeRun o) = o := rfl
 
-/-- **Free branching parts nowhere where the registration does not show it.** -/
+/-- **Free branching parts nowhere where the map does not show it.** -/
 theorem free_unparted_const {R : Type u} (x : R) (s : V) :
     Unparted (free V) (fun _ => x) s :=
   fun _ _ _ _ _ => rfl
 
-/-- **No record shows that a world will not part.** Given two values, after every record two
-runs of free branching, each with that record, part. -/
+/-- **No prefix shows that a world will not part.** Given two values, after every prefix two
+runs of free branching, each with that prefix, part. -/
 theorem free_parts_after {x y : V} (two : x ≠ y) (o : Nat → V) (t : Nat) :
     ∃ r r' : Run (free V), Learning.prefixOf (course id r) t = Learning.prefixOf o t ∧
       Learning.prefixOf (course id r') t = Learning.prefixOf o t ∧ PartAt id r r' t :=
@@ -683,9 +689,9 @@ theorem free_parts_after {x y : V} (two : x ≠ y) (o : Nat → V) (t : Nat) :
    fun same => two ((Learning.holdFrom_after o x (Nat.le_refl t)).symm.trans
      (same.trans (Learning.holdFrom_after o y (Nat.le_refl t))))⟩
 
-/-- **After every record, every learner is open to error.** Given two values, for every learner
-and every record, a run of free branching has that record and the learner is not right at the
-next step. -/
+/-- **After every prefix, every extrapolation can miss.** Given two values, for every
+extrapolation and every prefix, a run of free branching has that prefix and the extrapolation is
+not right at the next step. -/
 theorem free_open [DecidableEq V] {x y : V} (two : x ≠ y) (pred : List V → Option V)
     (o : Nat → V) (t : Nat) :
     ∃ r : Run (free V), Learning.prefixOf (course id r) t = Learning.prefixOf o t ∧
@@ -696,7 +702,7 @@ theorem free_open [DecidableEq V] {x y : V} (two : x ≠ y) (pred : List V → O
     | isFalse wrong => ⟨r, same, wrong⟩
     | isTrue right => ⟨r', same', fun right' => not_right_on_both pred part ⟨right, right'⟩⟩
 
-/-- **Every learner has a run of free branching on which it is never right.** -/
+/-- **Every extrapolation has a run of free branching on which it is never right.** -/
 theorem free_never_right (pred : List Bool → Option Bool) :
     ∃ r : Run (free Bool), ∀ t, ¬ RightAt pred id r t :=
   ⟨freeRun (Learning.diagonal pred (fun b => !b) false), fun _ right =>
@@ -710,7 +716,7 @@ theorem free_held (r : Run (free Bool)) (n : Nat) : r.state n ∈ [true, false] 
   | false => List.Mem.tail _ (List.Mem.head _)
 
 /-- **Where runs part, two configurations bound nothing.** A run of free branching on two
-configurations has a registered course with no bound on its states. -/
+configurations has a course through the map with no bound on its states. -/
 theorem free_unbounded :
     ∃ r : Run (free Bool), ∀ N, ¬ StatesBelow (course id r) N :=
   ⟨freeRun (Learning.diagonal (Learning.byElimination Learning.lassos) (fun b => !b) false),

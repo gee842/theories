@@ -2,57 +2,57 @@ import Becoming.LearnableRuns
 import Becoming.Parting
 
 /-!
-# Learning along runs: what a run's registered record fixes and what a learner reaching it does
+# Learning along runs: what a run's prefix fixes and what an extrapolation along it does
 
-`Becoming.Learning` states, of any course of registered values, what a record fixes, what a
-learner by refutation does on it, what the course answering a learner is, and what training
-through data selects; `Becoming.Learnable` states what a learner reading a registration learns
-along a determined law's orbit. A course read along a run of any process is its registered course
-(`Parting.course`), every course is the registered course of a run of free branching
-(`Parting.freeRun`), and every run of a determined law is its orbit
+`Becoming.Learning` states, of any course of values, what a prefix fixes, what extrapolation by
+elimination does on it, what the diagonal course of an extrapolation is, and what training
+through data selects; `Becoming.Learnable` states what an extrapolation through a map learns
+along a determined law's orbit. A course read along a run of any process is its course through a
+map (`Parting.course`), every course is the course of a run of free branching through the
+identity (`Parting.freeRun`), and every run of a determined law is its orbit
 (`Branching.law_run_state`, `LearnableRuns`). This module states those laws of runs.
 
-* **No record fixes the next value.** At a step where two runs of any process part (they register
-  alike before it and apart at it, `Parting.PartAt`), a claim made from the record, the values
-  decided, is refuted on one of them (`missed_on_one_of_part`). Every run's record is shared by
-  two runs of free branching that repeat from that step on and register two given values there,
-  and no claim from the record is right on both (`prefix_fixes_no_next`).
-* **The answering law.** The course answering every claim of a learner is the registered course
-  of a run of a determined law that keeps its record (`answerReg`, `answer_course`); no list holds
-  its configurations (`answer_open`); with two values told apart every claim made along it is
-  refuted (`answer_misses`); and the learner over every merging of classes of hypotheses never
-  comes to rest along it (`merged_unrested`).
-* **Learning by refutation along a run.** The learner is through the run's record
-  (`byElimination_through_prefix`); every hypothesis it passed was refuted at an earlier step of the run
-  (`missed_before`); over merged classes it holds no hypothesis beyond the place of one that
-  holds along the run (`merged_bound`); where it is right from some step on along a run, the
-  run's registered course repeats from some step (`lasso_of_right`).
+* **No prefix fixes the next value.** At a step where two runs of any process part (alike
+  through the map before it and apart at it, `Parting.PartAt`), a value proposed from the prefix,
+  the values decided, misses on one of them (`missed_on_one_of_part`). Every run's prefix is
+  shared by two runs of free branching that repeat from that step on and take two given values
+  there, and no value proposed from the prefix is right on both (`prefix_fixes_no_next`).
+* **The diagonal law.** The course on which every value an extrapolation proposes misses is the
+  course through a map of a run of a determined law that keeps the whole prefix (`answerReg`,
+  `answer_course`); no list holds its configurations (`answer_open`); with two values told apart
+  every value proposed along it misses (`answer_misses`); and elimination over every merging of
+  classes of candidates never comes to rest along it (`merged_unrested`).
+* **Elimination along a run.** The extrapolation is through the run's prefix
+  (`byElimination_through_prefix`); every candidate it passed missed at an earlier step of the run
+  (`missed_before`); over merged classes its current candidate is never beyond the place of one
+  that accords along the run (`merged_bound`); where it is right from some step on along a run,
+  the run's course through the map repeats from some step (`lasso_of_right`).
 * **Induction along a run held by a list.** On a run of a determined law whose configurations a
-  list holds, the learner over the lasso hypotheses is refuted fewer than `tri l.length` times,
-  claims from `l.length` on and is not refuted at arbitrarily late steps
+  list holds, elimination over the lasso candidates misses fewer than `tri l.length` times,
+  proposes from `l.length` on and does not miss at arbitrarily late steps
   (`held_byElimination_bounded`); that it rests is unrefuted (`held_rest_unrefuted`). Along the run of
   negation from `false` it rests from step `3` (`alternate_rests`); negation never rests
   (`negation_never_rests`).
-* **Generalization from a run.** Within the targets that go alike across a registration, their
+* **Generalization from a run.** Within the features that go alike across a map's lumping, their
   values at the configurations a run passed before `t` fix the value at a configuration exactly
-  where it registers like one of them (`determines_iff_lumped_alike`); the value carried over
+  where it is lumped with one of them (`determines_iff_lumped_alike`); the value carried over
   is right exactly where the world takes one value at the two (`carried_right_iff`), as it does
-  for a world going alike across the registration (`world_carried_right`).
-* **Training on runs' records.** Read the registered courses of a process's runs as the class
-  (`Courses`) and the moments before `t` as the data. A loss computed from the record selects
-  alike runs registering alike before `t` (`loss_through_prefix`); within a class free beyond the
-  record, a selection through it leaves the value at a later moment as free as the class does
-  (`unselected_beyond_prefix`); and a fit to the record is right at a moment on every run exactly
-  where the record determines it there (`fit_right_iff_runs`). Where runs branch freely, the
-  record fixes no later value (`free_prefix_fixes_nothing`).
+  for a world going alike across the lumping (`world_carried_right`).
+* **Training on runs' prefixes.** Read the courses through the map of a process's runs as the
+  class (`Courses`) and the moments before `t` as the data. A loss computed from the prefix
+  selects alike runs alike through the map before `t` (`loss_through_prefix`); within a class free
+  beyond the prefix, a selection through it leaves the value at a later moment as free as the class
+  does (`unselected_beyond_prefix`); and a fit to the prefix is right at a moment on every run
+  exactly where the prefix determines it there (`fit_right_iff_runs`). Where runs branch freely,
+  the prefix fixes no later value (`free_prefix_fixes_nothing`).
 * **Alike in the frame, learned alike.** On runs of a determined law beginning alike in the frame
-  that registers `reg`, a claim at a step where the targets differ is right on at most one
-  (`claim_not_right_on_both`); with the targets decided it is refuted on one, the records equal at
-  every step (`missed_on_one`). Along the runs of the law leaving two coordinates unchanged, no
-  learner reading the first rests on the second at both `(true, false)` and `(true, true)`
-  (`pair_first_not_rests`), none rests on it along every run (`pair_not_learnable`), and reading
-  both, the learner over the lasso hypotheses rests on the second from step `2`
-  (`pair_whole_rests`).
+  by `reg` (`Law.frameBy`), a value proposed at a step where the features differ is right on at
+  most one (`claim_not_right_on_both`); with the features decided it misses on one, the prefixes
+  equal at every step (`missed_on_one`). Along the runs of the law leaving two coordinates
+  unchanged, no extrapolation through the map to the first rests in accord with the second at
+  both `(true, false)` and `(true, true)` (`pair_first_not_rests`), none rests in accord with it
+  along every run (`pair_not_learnable`), and through the map to both, elimination over the lasso
+  candidates rests in accord with the second from step `2` (`pair_whole_rests`).
 
 No ethical predicate, ranking or axiom occurs.
 -/
@@ -67,24 +67,24 @@ namespace LearningRuns
 
 open Learning
 
-/-! ## Refutation read through equal records -/
+/-! ## Misses read through equal prefixes -/
 
 section Transport
 
 variable {O : Type u}
 
-/-- A refutation carries to an equal claim and an equal value. -/
+/-- A miss carries to an equal proposal and an equal value. -/
 theorem missed_congr {c c' : Option O} {w w' : O} (claim : c = c') (value : w = w') :
     Misses c w → Misses c' w' :=
   fun ⟨v, made, differs⟩ => ⟨v, claim.symm.trans made, fun same => differs (same.trans value.symm)⟩
 
-/-- A refutation at a step carries to a course with the same record and value there. -/
+/-- A miss at a step carries to a course with the same prefix and value there. -/
 theorem missedAt_of_same {V : Type v} {pred : List O → Option V} {o : Nat → O} {o' : Nat → O}
     {val val' : V} {t : Nat} (same : prefixOf o t = prefixOf o' t) (now : val = val') :
     Misses (pred (prefixOf o t)) val → Misses (pred (prefixOf o' t)) val' :=
   missed_congr (congrArg pred same) now
 
-/-- Held from `t` at the value of `o'`, a course agreeing with `o'` before `t` is refuted at `t`
+/-- Held from `t` at the value of `o'`, a course agreeing with `o'` before `t` is missed at `t`
 only where `o'` is. -/
 theorem holdFrom_missed {pred : List O → Option O} {o o' : Nat → O} {t : Nat}
     (same : ∀ n, n < t → o n = o' n) :
@@ -101,9 +101,9 @@ section AnyProcess
 
 variable {S : Type u} {A : Type v} {R : Type w} {P : Process S A}
 
-/-- **At a parting, a claim from the record is refuted on one of the two runs.** With the
-registered values decided, where two runs register alike before `t` and apart at `t`, a claim
-made at `t` from the record is refuted on one of them. -/
+/-- **At a parting, a value proposed from the prefix misses on one of the two runs.** With the
+values through the map decided, where two runs are alike through the map before `t` and apart at
+`t`, a value proposed at `t` from the prefix misses on one of them. -/
 theorem missed_on_one_of_part [DecidableEq R] (pred : List R → Option R) {reg : S → R}
     {r r' : Run P} {t : Nat} (part : Parting.PartAt reg r r' t) {w : R}
     (claims : pred (prefixOf (Parting.course reg r) t) = some w) :
@@ -112,9 +112,9 @@ theorem missed_on_one_of_part [DecidableEq R] (pred : List R → Option R) {reg 
   | .inl refuted => .inl (holdFrom_missed (fun _ _ => rfl) refuted)
   | .inr refuted => .inr (holdFrom_missed part.1 refuted)
 
-/-- **No record of a run fixes the next value, not even among finite worlds.** Given two values,
-the record of every run before `t` is the record of two runs of free branching that repeat from
-`t` on, one registering each value at `t`; a claim made from the record is not right on both. -/
+/-- **No prefix of a run fixes the next value, not even among finite worlds.** Given two values,
+the prefix of every run before `t` is the prefix of two runs of free branching that repeat from
+`t` on, one taking each value at `t`; a value proposed from the prefix is not right on both. -/
 theorem prefix_fixes_no_next (pred : List R → Option R) (reg : S → R) (r : Run P) (t : Nat)
     {x y : R} (two : x ≠ y) {w : R} (claims : pred (prefixOf (Parting.course reg r) t) = some w) :
     ∃ q q' : Run (Parting.free R), Lasso (Parting.course id q) t 0 ∧
@@ -129,39 +129,38 @@ theorem prefix_fixes_no_next (pred : List R → Option R) (reg : S → R) (r : R
      Parting.freeRun (holdFrom (Parting.course reg r) t y), lasso, lasso', same, same',
      holdFrom_after _ x (Nat.le_refl t), holdFrom_after _ y (Nat.le_refl t), one⟩
 
-/-- **The learner by refutation is through the run's record.** On two runs registering alike
-before `t`, it holds the same hypothesis and makes the same claim at `t`. -/
+/-- **The extrapolation by elimination is through the run's prefix.** On two runs alike through
+the map before `t`, its current candidate and its proposal at `t` are the same. -/
 theorem byElimination_through_prefix [DecidableEq R] (H : Nat → List R → Option R) {reg : S → R}
     {r r' : Run P} {t : Nat} (same : ∀ n, n < t → reg (r.state n) = reg (r'.state n)) :
     index H (Parting.course reg r) t = index H (Parting.course reg r') t ∧
       byElimination H (prefixOf (Parting.course reg r) t) = byElimination H (prefixOf (Parting.course reg r') t) :=
   Learning.byElimination_through_prefix (prefix_congr same)
 
-/-- **Every hypothesis the learner passed along a run was refuted at an earlier step of the
-run.** -/
+/-- **Every candidate elimination passed along a run missed at an earlier step of the run.** -/
 theorem missed_before [DecidableEq R] {H : Nat → List R → Option R} {reg : S → R} {r : Run P}
     (t k : Nat) (below : k < index H (Parting.course reg r) t) :
     ∃ s, s < t ∧ index H (Parting.course reg r) s = k ∧ MissesAt (H k) (Parting.course reg r) s :=
   Learning.missed_before t k below
 
-/-- **Learning over classes along a run.** Where hypothesis `j` of class `c` is refuted at no
-step of the run's registered course, the learner over the merged classes holds no hypothesis
-beyond place `tri (c + j) + j`. -/
+/-- **Learning over classes along a run.** Where candidate `j` of class `c` misses at no
+step of the run's course through the map, the current candidate of elimination over the merged
+classes is never beyond place `tri (c + j) + j`. -/
 theorem merged_bound [DecidableEq R] (G : Nat → Nat → List R → Option R) {reg : S → R}
     {r : Run P} {c j : Nat} (holds : Accords (G c j) (Parting.course reg r)) :
     ∀ t, index (merged G) (Parting.course reg r) t ≤ tri (c + j) + j :=
   Learning.merged_bound G holds
 
-/-- **Where the learner over the lasso hypotheses is right from some step on along a run, the
-run's registered course repeats from some step.** -/
+/-- **Where elimination over the lasso candidates is right from some step on along a run, the
+run's course through the map repeats from some step.** -/
 theorem lasso_of_right [DecidableEq R] {reg : S → R} {r : Run P} {T : Nat}
     (right : ∀ t, T ≤ t → Parting.RightAt (byElimination lassos) reg r t) :
     ∃ i q, Lasso (Parting.course reg r) i q :=
   lasso_of_rest right
 
-/-- **Generalization from a run.** Within the targets that go alike across the registration, the
-values at the configurations a run passed before `t` fix the value at `s` exactly where `s`
-registers like one of them, given two values. -/
+/-- **Generalization from a run.** Within the features that go alike across the map's lumping,
+the values at the configurations a run passed before `t` fix the value at `s` exactly where `s`
+is lumped with one of them, given two values. -/
 theorem determines_iff_lumped_alike [DecidableEq R] {V : Type x} {reg : S → R} (r : Run P)
     (t : Nat) {s : S} {y z : V} (two : y ≠ z) :
     Determines (Lumped (V := V) reg) (· ∈ prefixOf r.state t) s ↔
@@ -169,16 +168,16 @@ theorem determines_iff_lumped_alike [DecidableEq R] {V : Type x} {reg : S → R}
   determines_lumped_iff two
 
 /-- **The value carried over from a run is right exactly where the world takes one value at the
-two.** A target going alike across the registration and fitting the world `f` at the
+two.** A feature going alike across the lumping and fitting the world `f` at the
 configurations a run passed before `t` takes at `s` its value at a passed configuration `d`
-registering like `s`; it is right at `s` exactly where `f` takes one value at `d` and `s`. -/
+lumped with `s`; it is right at `s` exactly where `f` takes one value at `d` and `s`. -/
 theorem carried_right_iff {V : Type x} {reg : S → R} {r : Run P} {t : Nat} {f g : S → V}
     {s d : S} (lumped : Lumped reg g) (fits : ∀ c, c ∈ prefixOf r.state t → g c = f c)
     (passed : d ∈ prefixOf r.state t) (same : reg d = reg s) : g s = f s ↔ f d = f s :=
   lumped_right_iff lumped fits passed same
 
-/-- **A world going alike across the registration is learned from a run at every configuration
-registering like one the run passed.** -/
+/-- **A world going alike across the lumping is learned from a run at every configuration
+lumped with one the run passed.** -/
 theorem world_carried_right {V : Type x} {reg : S → R} {r : Run P} {t : Nat} {f g : S → V}
     {s d : S} (world : Lumped reg f) (lumped : Lumped reg g)
     (fits : ∀ c, c ∈ prefixOf r.state t → g c = f c) (passed : d ∈ prefixOf r.state t)
@@ -187,32 +186,32 @@ theorem world_carried_right {V : Type x} {reg : S → R} {r : Run P} {t : Nat} {
 
 end AnyProcess
 
-/-! ## Training on the records of runs -/
+/-! ## Training on the prefixes of runs -/
 
 section Training
 
 variable {S : Type u} {A : Type v} {R : Type w} {P : Process S A}
 
-/-- The registered courses of the runs of `P`: the class a learner reading `reg` along the runs
-can meet. -/
+/-- The courses through `reg` of the runs of `P`: the class an extrapolation through `reg` along
+the runs can meet. -/
 def Courses (P : Process S A) (reg : S → R) (g : Nat → R) : Prop :=
   ∃ r : Run P, ∀ n, g n = reg (r.state n)
 
-/-- The registered course of every run is one of them. -/
+/-- The course through the map of every run is one of them. -/
 theorem course_mem (reg : S → R) (r : Run P) : Courses P reg (Parting.course reg r) :=
   ⟨r, fun _ => rfl⟩
 
-/-- **A loss computed from the record selects alike runs registering alike before `t`.** -/
+/-- **A loss computed from the prefix selects alike runs alike through the map before `t`.** -/
 theorem loss_through_prefix {L : Type x} {t : Nat} (loss : (Nat → R) → L)
     (on_data : ∀ g g', Training.AgreeOn (· < t) g g' → loss g = loss g') (choose : L → Prop)
     {reg : S → R} {r r' : Run P} (same : ∀ n, n < t → reg (r.state n) = reg (r'.state n)) :
     choose (loss (Parting.course reg r)) ↔ choose (loss (Parting.course reg r')) :=
   Training.loss_through loss on_data choose (Parting.course reg r) (Parting.course reg r') same
 
-/-- **Training through the record leaves the later value as free as the runs leave it.** Where
-the registered courses of `P` are free at `x` beyond the record before `t`, for every run whose
-course a selection through the record selects and every run, a selected course of a run agrees
-with the first on the record and takes the second's value at `x`. -/
+/-- **Training through the prefix leaves the later value as free as the runs leave it.** Where
+the courses through the map of `P` are free at `x` beyond the prefix before `t`, for every run
+whose course a selection through the prefix selects and every run, a selected course of a run
+agrees with the first on the prefix and takes the second's value at `x`. -/
 theorem unselected_beyond_prefix {reg : S → R} {t x : Nat} {select : (Nat → R) → Prop}
     (through : Training.Through (Training.AgreeOn (· < t)) select)
     (free : Free (Courses P reg) (· < t) x) {r r' : Run P}
@@ -221,9 +220,9 @@ theorem unselected_beyond_prefix {reg : S → R} {t x : Nat} {select : (Nat → 
       h x = reg (r'.state x) :=
   Training.unselected_beyond_data through free (course_mem reg r) (course_mem reg r') chosen
 
-/-- **A fit to the record is right at a moment on every run exactly where the record determines
-it.** Every two runs registering alike before `t` register alike at `x` exactly where, within the
-registered courses of `P`, the record before `t` determines the value at `x`. -/
+/-- **A fit to the prefix is right at a moment on every run exactly where the prefix determines
+it.** Every two runs alike through the map before `t` are alike at `x` exactly where, within the
+courses through the map of `P`, the prefix before `t` determines the value at `x`. -/
 theorem fit_right_iff_runs {reg : S → R} {t x : Nat} :
     (∀ r r' : Run P, (∀ n, n < t → reg (r'.state n) = reg (r.state n)) →
       reg (r'.state x) = reg (r.state x)) ↔ Determines (Courses P reg) (· < t) x :=
@@ -240,8 +239,8 @@ theorem fit_right_iff_runs {reg : S → R} {t x : Nat} :
   ⟨fun right => Training.fit_right_iff.mp (of_runs right),
    fun determines => to_runs (Training.fit_right_iff.mpr determines)⟩
 
-/-- **Where runs branch freely, the record fixes no later value.** Given two values, within the
-registered courses of the runs of free branching the record before `t` fixes the value at no
+/-- **Where runs branch freely, the prefix fixes no later value.** Given two values, within the
+courses of the runs of free branching the prefix before `t` fixes the value at no
 moment from `t` on. -/
 theorem free_prefix_fixes_nothing {V : Type w} {t x : Nat} (late : t ≤ x) {y z : V}
     (two : y ≠ z) : ¬ Determines (Courses (Parting.free V) id) (· < t) x :=
@@ -252,19 +251,19 @@ theorem free_prefix_fixes_nothing {V : Type w} {t x : Nat} (late : t ≤ x) {y z
 
 end Training
 
-/-! ## The answering law -/
+/-! ## The diagonal law -/
 
 section Answer
 
 variable {O : Type u}
 
-/-- The registration of the law that answers `pred`: the answer to the claim made from the record
-the law keeps. -/
+/-- The map read along the diagonal law of `pred`: the value set against the proposal made from
+the prefix the law keeps. -/
 def answerReg (pred : List O → Option O) (other : O → O) (x : O) (l : List O) : O :=
   answerTo other x (pred l)
 
-/-- **The answering course is the registered course of a run of the answering law.** Along every
-run of `answerStep` from the empty record, what `answerReg` registers is the diagonal course. -/
+/-- **The diagonal course is the course through a map of a run of the diagonal law.** Along every
+run of `answerStep` from the empty prefix, the course through `answerReg` is the diagonal course. -/
 theorem answer_course (pred : List O → Option O) (other : O → O) (x : O)
     (r : Run (Law.process (answerStep pred other x))) (start : r.state 0 = []) (n : Nat) :
     Parting.course (answerReg pred other x) r n = diagonal pred other x n :=
@@ -277,8 +276,8 @@ theorem answer_prefix (pred : List O → Option O) (other : O → O) (x : O)
     prefixOf (Parting.course (answerReg pred other x) r) t = prefixOf (diagonal pred other x) t :=
   prefix_congr fun n _ => answer_course pred other x r start n
 
-/-- **The answering world is open.** No list holds the configurations of a run of the answering
-law from the empty record. -/
+/-- **The diagonal world is open.** No list holds the configurations of a run of the diagonal
+law from the empty prefix. -/
 theorem answer_open (pred : List O → Option O) (other : O → O) (x : O)
     (r : Run (Law.process (answerStep pred other x))) (start : r.state 0 = []) :
     ¬ ∃ l : List (List O), ∀ n, r.state n ∈ l :=
@@ -287,7 +286,7 @@ theorem answer_open (pred : List O → Option O) (other : O → O) (x : O)
       ((Branching.law_run_state r n).trans
         (congrArg (fun s => Law.orbit (answerStep pred other x) s n) start)) (held n)⟩
 
-/-- **With two values told apart, every claim made along the answering run is refuted.** -/
+/-- **With two values told apart, every value proposed along the diagonal run misses.** -/
 theorem answer_misses [DecidableEq O] (pred : List O → Option O) {a b : O} (two : a ≠ b)
     (r : Run (Law.process (answerStep pred (swapTo a b) a))) (start : r.state 0 = []) {t : Nat}
     {w : O} (claims : pred (prefixOf (Parting.course (answerReg pred (swapTo a b) a) r) t) = some w) :
@@ -297,9 +296,9 @@ theorem answer_misses [DecidableEq O] (pred : List O → Option O) {a b : O} (tw
     (diagonal_misses pred (swapTo_moves two) a
       ((congrArg pred (answer_prefix pred (swapTo a b) a r start t)).symm.trans claims))
 
-/-- **The learner over every merging never rests along its answering run.** However classes of
-hypotheses are chosen and merged, the learner over them is right from no step on along the run
-of the law that answers it. -/
+/-- **Elimination over every merging never rests along its diagonal run.** However classes of
+candidates are chosen and merged, elimination over them is right from no step on along the run
+of its diagonal law. -/
 theorem merged_unrested [DecidableEq O] (G : Nat → Nat → List O → Option O) {other : O → O}
     (moves : ∀ v, other v ≠ v) (x : O) (r : Run (Law.process (answerStep (byElimination (merged G)) other x)))
     (start : r.state 0 = []) :
@@ -317,11 +316,11 @@ section Determined
 
 variable {S : Type u} {R : Type w} {next : S → S}
 
-/-- **Induction along a run held by a list: the refutations are bounded.** On a run of a
-determined law whose configurations a list `l` holds, the learner over the lasso hypotheses,
-reading the registration and knowing neither the configurations nor how many there are, is
-refuted fewer than `tri l.length` times, claims at every step from `l.length` on, and is not
-refuted at arbitrarily late steps. -/
+/-- **Induction along a run held by a list: the misses are bounded.** On a run of a
+determined law whose configurations a list `l` holds, elimination over the lasso candidates,
+through the map and given neither the configurations nor their number, misses fewer than
+`tri l.length` times, proposes at every step from `l.length` on, and does not miss at
+arbitrarily late steps. -/
 theorem held_byElimination_bounded [DecidableEq R] (r : Run (Law.process next)) {l : List S}
     (held : ∀ n, r.state n ∈ l) (reg : S → R) :
     (∀ t, index lassos (LearnableRuns.course reg r) t < tri l.length) ∧
@@ -339,7 +338,7 @@ theorem held_byElimination_bounded [DecidableEq R] (r : Run (Law.process next)) 
       | ⟨t, after, refuted⟩ => ⟨t, after, missedAt_of_same (LearnableRuns.prefix_eq reg r t)
           (congrArg reg (Branching.law_run_state r t)) refuted⟩⟩
 
-/-- **Induction along a run held by a list: that the learner rests is unrefuted.** -/
+/-- **Induction along a run held by a list: that elimination rests is unrefuted.** -/
 theorem held_rest_unrefuted [DecidableEq R] (r : Run (Law.process next)) {l : List S}
     (held : ∀ n, r.state n ∈ l) (reg : S → R) :
     ¬ ¬ LearnableRuns.Rests reg reg (byElimination lassos) r :=
@@ -347,9 +346,9 @@ theorem held_rest_unrefuted [DecidableEq R] (r : Run (Law.process next)) {l : Li
     (fun n => Eq.subst (motive := fun s => s ∈ l) (Branching.law_run_state r n) (held n)) reg
     fun ⟨T, rests⟩ => never ⟨T, (LearnableRuns.restsFrom_iff r T).mpr rests⟩
 
-/-- **A claim finer than the registration is right on at most one of two runs beginning alike.**
-On runs of a determined law beginning alike in the frame that registers `reg`, at a step where the
-targets differ, a learner's claim is not right on both. -/
+/-- **A proposal finer than the map is right on at most one of two runs beginning alike.**
+On runs of a determined law beginning alike in the frame by `reg`, at a step where the
+features differ, a value an extrapolation proposes is not right on both. -/
 theorem claim_not_right_on_both {V : Type x} {reg : S → R} {val : S → V} (pred : List R → Option V)
     {r r' : Run (Law.process next)}
     (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
@@ -365,8 +364,8 @@ theorem claim_not_right_on_both {V : Type x} {reg : S → R} {val : S → V} (pr
        (congrArg pred (LearnableRuns.prefix_eq reg r' t)).symm.trans
           (right'.trans (congrArg (fun s => some (val s)) (Branching.law_run_state r' t)))⟩
 
-/-- **With the targets decided, the claim is refuted on one of two runs beginning alike, and their
-records are equal at every step.** -/
+/-- **With the features decided, the proposal misses on one of two runs beginning alike, and their
+prefixes are equal at every step.** -/
 theorem missed_on_one {V : Type x} [DecidableEq V] {reg : S → R} {val : S → V}
     (pred : List R → Option V) {r r' : Run (Law.process next)}
     (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
@@ -398,8 +397,8 @@ theorem negation_never_rests (r : Run (Law.process not)) (n : Nat) :
     r.state (n + 1) ≠ r.state n :=
   fun same => not_moves (r.state n) ((r.step n).symm.trans same)
 
-/-- **Two refutations, then rest.** Along every run of negation from `false`, the learner over
-the lasso hypotheses reading the configuration claims each value right from step `3` on. -/
+/-- **Two misses, then rest.** Along every run of negation from `false`, elimination over
+the lasso candidates through the identity proposes each value right from step `3` on. -/
 theorem alternate_rests (r : Run (Law.process not)) (start : r.state 0 = false) :
     LearnableRuns.RestsFrom id id (byElimination lassos) r 3 :=
   (LearnableRuns.restsFrom_iff r 3).mpr
@@ -413,23 +412,25 @@ theorem pair_world : ∀ s : Bool × Bool, s ∈ [(true, true), (true, false), (
   | (false, true) => List.Mem.tail _ (List.Mem.tail _ (List.Mem.head _))
   | (false, false) => List.Mem.tail _ (List.Mem.tail _ (List.Mem.tail _ (List.Mem.head _)))
 
-/-- **Registering the first coordinate, no learner rests on the second along the runs from both
-`(true, false)` and `(true, true)`** of the law leaving each configuration unchanged. -/
+/-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
+along the runs from both `(true, false)` and `(true, true)`** of the law leaving each
+configuration unchanged. -/
 theorem pair_first_not_rests (pred : List Bool → Option Bool) :
     ¬ (LearnableRuns.Rests Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, false)) ∧
       LearnableRuns.Rests Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, true))) :=
   fun ⟨rests, rests'⟩ => Learnable.Pair.first_not_rests pred
     ⟨(LearnableRuns.rests_iff _).mp rests, (LearnableRuns.rests_iff _).mp rests'⟩
 
-/-- **Registering the first coordinate, no learner rests on the second along every run.** -/
+/-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
+along every run.** -/
 theorem pair_not_learnable :
     ¬ ∃ pred : List Bool → Option Bool, ∀ r : Run (Law.process Learnable.Pair.still),
       LearnableRuns.Rests Prod.fst Prod.snd pred r :=
   fun learnable => Learnable.Pair.not_lumped
     ((LearnableRuns.still_learnable_iff_lumped (fun _ => rfl) pair_world).mp learnable)
 
-/-- **Registering both, the learner over the lasso hypotheses rests on the second along every
-run from step `2`.** -/
+/-- **Through the map to both, elimination over the lasso candidates rests in accord with the
+second along every run from step `2`.** -/
 theorem pair_whole_rests (r : Run (Law.process Learnable.Pair.still)) :
     LearnableRuns.RestsFrom id Prod.snd (fun l => (byElimination lassos l).map Prod.snd) r 2 :=
   (LearnableRuns.restsFrom_iff r 2).mpr (Learnable.Pair.whole_rests (r.state 0))

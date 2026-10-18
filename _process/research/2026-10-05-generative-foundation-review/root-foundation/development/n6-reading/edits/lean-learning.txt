@@ -1,0 +1,414 @@
+# Learning.lean: the prefix, extrapolations, misses and accord, elimination over candidates.
+### lean:Learning
+= .
+- undissolved". This module states, with no premise beyond what each law names, when learning
+- from what registers succeeds, what a model of structure and of change carries beyond what
+- registered, what a selection through the data can reach, and what the next level up is. A
+- course is a sequence of registered values, such as the registration of a determined law's
+- orbit; a learner is any claim made from the record before a step.
++ undissolved". This module states, with no premise beyond what each law names, when learning
++ through a map comes into accord with what follows, what a model of structure and of change
++ carries beyond the data, what a selection through the data can reach, and what the next level
++ up is. A course is a sequence of values, such as a determined law's orbit read through a map;
++ an extrapolation (`pred`) is any map from the prefix before a step to a proposed value or to
++ silence.
+= .
+- * **No record fixes the next value.** Given two values, two courses share any record and
+-   differ at its next step, so a claim made from the record is not right on both
+-   (`no_prefix_fixes_next`), and, values decided, is refuted on one of them
+-   (`claim_missed_on_one`); both are courses of worlds held by a list
++ * **No prefix fixes the next value.** Given two values, two courses share any prefix and
++   differ at its next step, so a value proposed from the prefix is not right on both
++   (`no_prefix_fixes_next`), and, values decided, misses on one of them
++   (`claim_missed_on_one`); both are courses of worlds held by a list
+= .
+- * **No learner rests on every course.** For every learner a course answers each of its claims
+-   against it (`diagonal`, `diagonal_misses`), so on that course it rests at no step
+-   (`diagonal_unrested`). The answering course is the registration of a law that keeps its
+-   record, a world no list holds (`diagonal_open`).
+- * **Learning by refutation.** Holding hypotheses in order and moving to the next exactly where
+-   the one held is refuted (`indexOn`, `byElimination`), the learner never passes a hypothesis that
+-   holds, so it is refuted at most that hypothesis's place (`index_le_of_accords`) and not at
+-   arbitrarily late steps (`misses_not_recurring`); every hypothesis passed was refuted on
+-   the record at a recorded step (`missed_before`). The learner is through the record: one record, one
+-   hypothesis held and one claim (`byElimination_through_prefix`).
++ * **No extrapolation rests on every course.** For every extrapolation, on its diagonal course
++   each value it proposes misses at its step (`diagonal`, `diagonal_misses`), so on that course it
++   rests at no step (`diagonal_unrested`). The diagonal course is a law's orbit, read at its
++   latest value, of a law that keeps the whole prefix, a world no list holds (`diagonal_open`).
++ * **Extrapolation by elimination.** Taking candidates in order and moving to the next exactly
++   where the current one misses (`indexOn`, `byElimination`), the extrapolation never passes a
++   candidate that accords, so it misses at most that candidate's place (`index_le_of_accords`)
++   and not at arbitrarily late steps (`misses_not_recurring`); every candidate passed missed at
++   a step of the prefix (`missed_before`). The extrapolation is through the prefix: one prefix,
++   one current candidate and one proposed value (`byElimination_through_prefix`).
+= .
+-   configurations along an orbit are held by a list `l`, every registration of the orbit repeats
+-   from some step `i` with some period `q + 1`, `i + q + 1 ≤ l.length` (`lasso_of_held`, from
+-   `revisits_within`); every such course is the registration of a world held by a list
+-   (`lasso_realized`).
+- * **Induction in a world held by a list.** Over the lasso hypotheses in diagonal order
+-   (`lassos`, `pairAt`, `pairAt_place`), a learner that reads only a registration it can tell
+-   apart, and knows neither the configurations nor how many there are, is refuted fewer than
+-   `tri l.length` times, claims at every step from `l.length` on and is not refuted at
+-   arbitrarily late steps (`held_byElimination_bounded`, `lasso_byElimination_bounded`); that it comes to rest
+-   is unrefuted, a double negation (`held_rest_unrefuted`, `rest_unrefuted`). It comes to rest
+-   only on lasso courses (`lasso_of_rest`). The step at which it rests is not stated here. Its
+-   record never shows that it has come to rest: given two values, every claim it makes is refuted,
+-   at that step, on a course of a world held by a list that shares its record
+-   (`no_prefix_fixes_next_finite`). Its answering course is no lasso (`diagonal_not_lasso`).
+-   In `Alternate` it is refuted twice and holds from the third step on, at the bound
+-   `tri 1 + 1 = 2`.
+- * **The meta level.** Classes of hypotheses merged along the pairs (`merged`) are learned by
+-   the same refutation, with the bound composed (`merged_bound`); the learner over every merging
+-   is unrested on its answering course (`merged_unrested`).
++   configurations along an orbit are held by a list `l`, the orbit read through any map repeats
++   from some step `i` with some period `q + 1`, `i + q + 1 ≤ l.length` (`lasso_of_held`, from
++   `revisits_within`); every such course is the course, through a map, of a world held by a list
++   (`lasso_realized`).
++ * **Induction in a world held by a list.** Over the lasso candidates in diagonal order
++   (`lassos`, `pairAt`, `pairAt_place`), the extrapolation by elimination, which proposes only
++   from the prefix through a map with decided values and is given neither the
++   configurations nor their number, misses fewer than `tri l.length` times, proposes at every
++   step from `l.length` on and does not miss at arbitrarily late steps
++   (`held_byElimination_bounded`, `lasso_byElimination_bounded`); that it comes to rest
++   is unrefuted, a double negation (`held_rest_unrefuted`, `rest_unrefuted`). It comes to rest
++   only on lasso courses (`lasso_of_rest`). The step at which it rests is not stated here. Its
++   prefix never shows that it has come to rest: given two values, every value it proposes
++   misses, at that step, on a course of a world held by a list that shares its prefix
++   (`no_prefix_fixes_next_finite`). Its diagonal course is no lasso (`diagonal_not_lasso`).
++   In `Alternate` it misses twice and accords from the third step on, at the bound
++   `tri 1 + 1 = 2`.
++ * **The meta level.** Classes of candidates merged along the pairs (`merged`) are learned by
++   the same elimination, with the bound composed (`merged_bound`); the extrapolation over every
++   merging is unrested on its diagonal course (`merged_unrested`).
+= .
+-   its next configuration, read through `π`, goes alike across what `π` lumps
+-   (`goAlike_iff_lumped`). An observed outcome carries over to another configuration exactly
++   its next configuration, read through `π`, goes alike across what `π` lumps
++   (`goAlike_iff_lumped`). An outcome taken at one configuration carries over to another exactly
+= .
+-   (`Training.loss_through`); the selection through registration of `Becoming.Selection` is a
+-   selection through registering alike (`Training.web_selectsThrough_iff`). Within a class free
+-   beyond the data every selection through the data leaves the untried value as free as the class
++   (`Training.loss_through`); the selection through a formation's couplings of `Becoming.Selection`
++   is a selection through the classes alike through them (`Training.web_selectsThrough_iff`).
++   Within a class free beyond the data every selection through the data leaves the untried value
++   as free as the class
+= .
+-   one notion (`goAlike_iff_lumped`). What such a model carries beyond the record is what it
+-   lumps with what registered, and it is right there exactly where the world goes alike across
+-   the lumping. This reading of the formal terms is the AI's.
++   one notion (`goAlike_iff_lumped`). What such a model carries beyond the data is what it
++   lumps with the data, and it is right there exactly where the world goes alike across
++   the lumping. This reading of the formal terms is the AI's.
+= .
+-   what matters, which a longer record does not supply: the record gives distinctions, not their
+-   relevance.
++   what matters, which a longer prefix does not supply: the prefix gives distinctions, not their
++   relevance.
+= .
+-   resolved into laws rather than certified. No record fixes the next value, even among finite
+-   worlds. No learner rests on every course; the course defeating a learner registers its claims and
+-   keeps its record, an open world. In every world held by a list learning by refutation is refuted a
+-   number of times bounded by the number of configurations, its coming to rest is unrefuted, and its
+-   record never shows that it has come to rest; it rests only there. The uniformity of nature is no
+-   premise: it is the local condition of a law, that the world goes alike across what the model
+-   lumps.
++   resolved into laws rather than certified. No prefix fixes the next value, even among finite
++   worlds. No extrapolation rests on every course; the diagonal course of an extrapolation moves
++   off each value it proposes and keeps the whole prefix, an open world. In every world held by a
++   list extrapolation by elimination misses a number of times bounded by the number of
++   configurations, its coming to rest is unrefuted, and its prefix never shows that it has come to
++   rest; it rests only there. The uniformity of nature is no premise: it is the local condition of
++   a law, that the world goes alike across what the model lumps.
+= .
+- **Classical sources.** Learning by refutation over an enumeration of hypotheses is Gold's
+- identification in the limit by enumeration (Gold 1967, "Language identification in the limit";
+- Putnam 1965 for trial-and-error predicates): the learner changes its claim finitely often and is
+- right from some step on, with no step at which its record shows that it is. The diagonal course
+- answering every learner is the diagonal argument of Putnam (1963) and Gold (1967) that no learner
+- identifies every course; the reading of induction as convergence without certainty follows Kelly
+- (1996). What is the spine's own is the form: every learner and course is stated on the same
+- registrations as the rest of the core, no decision is used beyond what each theorem names, and the
+- rest of the learner by refutation is stated only as unrefuted (`rest_unrefuted`,
+- `held_rest_unrefuted`, a double negation), its step being given in `Becoming.Identification`.
++ **Classical sources.** Extrapolation by elimination over an enumeration of candidates is what the
++ literature calls Gold's identification in the limit by enumeration, a learner refuting
++ hypotheses (Gold 1967, "Language identification in the limit"; Putnam 1965 for trial-and-error
++ predicates): the extrapolation changes its proposal finitely often and is right from some step
++ on, with no step at which its prefix shows that it is. The diagonal course on which every
++ extrapolation misses is the diagonal argument of Putnam (1963) and Gold (1967) that no learner
++ identifies every course; the reading of induction as convergence without certainty follows Kelly
++ (1996). What is the spine's own is the form: every extrapolation and course is stated through the
++ same maps as the rest of the core, no decision is used beyond what each theorem names, and the
++ rest of the extrapolation by elimination is stated only as unrefuted (`rest_unrefuted`,
++ `held_rest_unrefuted`, a double negation), its step being given in `Becoming.Identification`.
+= .
+- What is not derived: which hypotheses, classes or lumpings an actual formation holds or can
+- reach; that its registration tells values apart; that its world is held by a list; that an
+- actual network's architecture and updates impose a given lumping; the correspondence of any of
+- these to an actual learner. No ethical predicate, ranking or axiom occurs.
++ What is not derived: which candidates, classes or lumpings an actual formation goes through or
++ can reach; that the values of its map are decided; that its world is held by a list; that an
++ actual network's architecture and updates impose a given lumping; the correspondence of any of
++ these to an actual formation that learns. No ethical predicate, ranking or axiom occurs.
+= .
+- /-! ## A registered course and its record -/
++ /-! ## A course and its prefix -/
+= .
+- /-- The record of a course before step `t`, latest first. -/
++ /-- The prefix of a course before step `t`, latest first. -/
+= .
+- /-- The record before `t` holds `t` values. -/
++ /-- The prefix before `t` holds `t` values. -/
+= .
+- /-- The record before `t` depends only on the course before `t`. -/
++ /-- The prefix before `t` depends only on the course before `t`. -/
+= .
+- /-- The value `k + 1` steps back in a record, latest first. -/
++ /-- The value `k + 1` steps back in a prefix, latest first. -/
+= .
+- /-- In the record before `u + k + 1`, the value `k + 1` steps back is the value at `u`. -/
++ /-- In the prefix before `u + k + 1`, the value `k + 1` steps back is the value at `u`. -/
+= .
+- /-- Before `t`, every value `k + 1 ≤ t` steps back is in the record. -/
++ /-- Before `t`, every value `k + 1 ≤ t` steps back is in the prefix. -/
+= .
+- /-- A claim, made or not, is refuted by a value: it was made and the value differs. -/
++ /-- A proposal, made or not (silence), misses a value: a value was proposed and the value that
++ comes differs. -/
+= .
+- /-- Telling registered values apart decides refutation. -/
++ /-- Values decided, a miss is decided. -/
+= .
+- /-- A claim made and not refuted by a value is that value. -/
++ /-- A value proposed that does not miss a value is that value. -/
+= .
+- /-- A claim that is the value is not refuted by it. -/
++ /-- A proposed value does not miss itself. -/
+= .
+- /-- The claim of `pred` at step `t`, made from the record before `t`, is refuted on `o`. -/
++ /-- The value `pred` proposes at step `t`, from the prefix before `t`, misses on `o`. -/
+= .
+- /-- `pred` is refuted at no step of `o`: every claim it makes on `o` is right. -/
++ /-- `pred` accords with `o`: it misses at no step, so every value it proposes on `o` is right. -/
+= .
+- /-! ## No record fixes what comes next -/
++ /-! ## No prefix fixes what comes next -/
+= .
+- /-- **No record fixes the next value.** For every course and every step `t`, given two values
+- there are two courses with the same record before `t`, taking the one value and the other at
+- `t`; a claim made from that record is not right on both. Nothing about the course is
+- assumed. -/
++ /-- **No prefix fixes the next value.** For every course and every step `t`, given two values
++ there are two courses with the same prefix before `t`, taking the one value and the other at
++ `t`; a value proposed from that prefix is not right on both. Nothing about the course is
++ assumed. -/
+= .
+- /-- **Values decided, a claim from the record is refuted on one of the two courses.** -/
++ /-- **Values decided, a value proposed from the prefix misses on one of the two courses.** -/
+= .
+- /-! ## The diagonal: a course answering every claim against it -/
++ /-! ## The diagonal: a course on which every proposed value misses -/
+= .
+- /-- The answer to a claim: `other w` against a claim `w`, `x` where none is made. -/
++ /-- The value set against a proposal: `other w` where `w` is proposed, `x` where none is. -/
+= .
+- /-- One step of the law that answers `pred`: the answer to its claim joins the record. -/
++ /-- One step of the law of `pred`'s diagonal course: the value set against its proposal joins
++ the prefix. -/
+= .
+- /-- The course answering every claim of `pred` against it: the registration, latest value, of
+- the law `answerStep`, which keeps its record. -/
++ /-- The course on which every value `pred` proposes misses: the latest value of the orbit of the
++ law `answerStep`, which keeps the whole prefix. -/
+= .
+- /-- The record of the diagonal course is the orbit of the law that keeps it. -/
++ /-- The prefix of the diagonal course is the orbit of the law that keeps it. -/
+= .
+- /-- **Every claim is answered.** Where `other` moves every value, every claim `pred` makes
+- on the diagonal course is refuted at its step. It holds of every `pred`: of every learner,
+- whatever it holds and however it revises. -/
++ /-- **Every proposed value misses on the diagonal course.** Where `other` moves every value,
++ every value `pred` proposes on its diagonal course misses at its step. It holds of every
++ `pred`: of every extrapolation, whatever candidates it goes through and however it revises. -/
+= .
+- /-- **No learner comes to rest on every course.** On the diagonal course of `pred`, at no step
+- from which on `pred` claims and is right. -/
++ /-- **No extrapolation comes to rest on every course.** On the diagonal course of `pred` there
++ is no step from which on `pred` proposes a value and is right. -/
+= .
+- /-- The law keeping the record holds `t` values at step `t`. -/
++ /-- The law keeping the prefix holds `t` values at step `t`. -/
+= .
+- /-- **The answering world is open.** No list holds the configurations of the law whose
+- registration is the diagonal course: it keeps its record, so it never returns
+- (`unlisted_of_new` of `Becoming.Recurrence`). -/
++ /-- **The diagonal world is open.** No list holds the configurations of the law whose orbit,
++ read at its latest value, is the diagonal course: it keeps the whole prefix, so it never returns
++ (`unlisted_of_new` of `Becoming.Recurrence`). -/
+= .
+- /-! ## Learning by refutation -/
++ /-! ## Extrapolation by elimination -/
+= .
+- /-- Learning by refutation over hypotheses `H`: from a record, the index of the hypothesis
+- held, starting at `0` and moving to the next exactly where the one held is refuted. The index
+- is the number of refutations so far. -/
++ /-- Elimination over candidates `H`: from a prefix, the index of the current candidate,
++ starting at `0` and moving to the next exactly where the current one misses. The index is the
++ number of misses so far. -/
+= .
+- /-- The learner by refutation: the claim of the hypothesis it holds. -/
++ /-- The extrapolation by elimination: the value proposed by the current candidate. -/
+= .
+- /-- **The learner never passes a hypothesis that holds.** Where hypothesis `j` is refuted at
+- no step of `o`, the learner holds no hypothesis beyond `j`: it is refuted at most `j` times. -/
++ /-- **The extrapolation by elimination never passes a candidate that accords.** Where candidate
++ `j` misses at no step of `o`, the current candidate is never beyond `j`: it misses at most `j`
++ times. -/
+= .
+- /-- **Every hypothesis passed was refuted on the record.** Each hypothesis before the one held
+- at `t` was held at some earlier step and refuted there. -/
++ /-- **Every candidate passed missed at a step of the prefix.** Each candidate before the current
++ one at `t` was current at some earlier step and missed there. -/
+= .
+- /-- Refutations at arbitrarily late steps raise the index past every bound. -/
++ /-- Misses at arbitrarily late steps raise the index past every bound. -/
+= .
+- /-- **Refutations are not unbounded where a hypothesis holds.** Where some hypothesis is refuted
+- at no step of `o`, the learner is not refuted at arbitrarily late steps. -/
++ /-- **Misses do not recur where a candidate accords.** Where some candidate misses at no step
++ of `o`, the extrapolation by elimination does not miss at arbitrarily late steps. -/
+= .
+- /-- **The learner is through the record.** On two courses with the same record before `t`,
+- the learner holds the same hypothesis and makes the same claim at `t`. -/
++ /-- **The extrapolation is through the prefix.** On two courses with the same prefix before
++ `t`, the current candidate and the proposed value at `t` are the same. -/
+= .
+- along an orbit are held by a list `l`, every registration of the orbit repeats, from some step
+- `i` on, with some period `q + 1`, where `i + q + 1 ≤ l.length` (from `revisits_within`). -/
++ along an orbit are held by a list `l`, the orbit read through any map repeats, from some step
++ `i` on, with some period `q + 1`, where `i + q + 1 ≤ l.length` (from `revisits_within`). -/
+= .
+- `0, …, i + q` is held by the list of its positions and registers `o` at every step. -/
++ `0, …, i + q` is held by the list of its positions and, read through `o`, takes the values of
++ `o` at every step. -/
+= .
+- /-- **Not even within finite worlds does a record fix the next value.** The two courses of
+- `no_prefix_fixes_next` are lasso courses, so courses of worlds held by a list
+- (`lasso_realized`): whatever a learner claims next from a record, some finite world with that
+- record refutes it. -/
++ /-- **Not even within finite worlds does a prefix fix the next value.** The two courses of
++ `no_prefix_fixes_next` are lasso courses, so courses of worlds held by a list
++ (`lasso_realized`): whatever value an extrapolation proposes next from a prefix, it misses in
++ some finite world with that prefix. -/
+= .
+- /-- The lasso hypothesis `h = (i, q)`: at a step `t` with `i + q + 1 ≤ t` it claims the value
+- `q + 1` steps back; before, it claims nothing. -/
++ /-- The lasso candidate `h = (i, q)`: at a step `t` with `i + q + 1 ≤ t` it proposes the value
++ `q + 1` steps back; before, it stays silent. -/
+= .
+- /-- **A lasso hypothesis holds of its course.** -/
++ /-- **A lasso candidate accords with its course.** -/
+= .
+- /-! ## The lasso hypotheses in order -/
++ /-! ## The lasso candidates in order -/
+= .
+- /-- The lasso hypotheses in the order of their pairs. -/
++ /-- The lasso candidates in the order of their pairs. -/
+= .
+- /-- **On a lasso course the learner's refutations are bounded.** On a course repeating from step `i` with
+- period `q + 1`, the learner by refutation over the lasso hypotheses, which knows neither `i`
+- nor `q`: holds no hypothesis beyond place `tri (i + q) + q`, so it is refuted at most that
+- many times; claims at every step from `i + q + 1` on; and is not refuted at arbitrarily late
+- steps. -/
++ /-- **On a lasso course the misses of elimination are bounded.** On a course repeating from step
++ `i` with period `q + 1`, the extrapolation by elimination over the lasso candidates, which is
++ given neither `i` nor `q`: its current candidate is never beyond place `tri (i + q) + q`,
++ so it misses at most that many times; it proposes at every step from `i + q + 1` on; and it does
++ not miss at arbitrarily late steps. -/
+= .
+- /-- **On a lasso course, that the learner comes to rest is unrefuted.** It is not refuted that
+- from some step on it claims at every step and is right (a double negation); the step is not
+- stated here. The learner's record never shows that it rests: given two values, a claim made
+- from a record is not right on both of two courses that share the record and differ at its next
+- step (`no_prefix_fixes_next`). -/
++ /-- **On a lasso course, that elimination comes to rest is unrefuted.** It is not refuted that
++ from some step on it proposes at every step and is right (a double negation); the step is not
++ stated here. Its prefix never shows that it rests: given two values, a value proposed from a
++ prefix is not right on both of two courses that share the prefix and differ at its next
++ step (`no_prefix_fixes_next`). -/
+= .
+- /-- **The learner comes to rest only on lasso courses.** Where from step `T` on it claims at
+- every step and is right, the course repeats from some step on. -/
++ /-- **Elimination over the lasso candidates comes to rest only on lasso courses.** Where from
++ step `T` on it proposes at every step and is right, the course repeats from some step on. -/
+= .
+- /-- **Induction in a world held by a list: the refutations are bounded.** Under a determined law
+- whose configurations along an orbit are held by a list `l`, the learner by refutation over the
+- lasso hypotheses, reading only a registration it can tell apart and knowing neither the
+- configurations nor how many there are: is refuted fewer than `tri l.length` times; claims at
+- every step from `l.length` on; and is not refuted at arbitrarily late steps. -/
++ /-- **Induction in a world held by a list: the misses are bounded.** Under a determined law
++ whose configurations along an orbit are held by a list `l`, the extrapolation by elimination
++ over the lasso candidates, proposing from the orbit's prefix through a map `reg` with decided
++ values and given neither the configurations nor their number: misses fewer than
++ `tri l.length` times; proposes at every step from `l.length` on; and does not miss at
++ arbitrarily late steps. -/
+= .
+- /-- **Induction in a world held by a list: that the learner comes to rest is unrefuted.** Under a
+- determined law whose configurations along an orbit are held by a list, it is not refuted that
+- from some step on the learner over the lasso hypotheses claims at every step and is right (a
+- double negation). -/
++ /-- **Induction in a world held by a list: that elimination comes to rest is unrefuted.** Under
++ a determined law whose configurations along an orbit are held by a list, it is not refuted that
++ from some step on the extrapolation by elimination over the lasso candidates proposes at every
++ step and is right (a double negation). -/
+= .
+- /-- **The answering world is no lasso.** The diagonal course of the learner over the lasso
+- hypotheses repeats from no step: it is the course of no world held by a list. -/
++ /-- **The diagonal world is no lasso.** The diagonal course of elimination over the lasso
++ candidates repeats from no step: it is the course of no world held by a list. -/
+= .
+- /-- Classes of hypotheses merged into one enumeration along the pairs. -/
++ /-- Classes of candidates merged into one enumeration along the pairs. -/
+= .
+- /-- **Learning over classes is learning by refutation.** Where hypothesis `j` of class `c`
+- holds, the learner by refutation over the merged enumeration holds no hypothesis beyond place
+- `tri (c + j) + j`: choosing a class is learning with the same law, one enumeration wider. -/
++ /-- **Learning over classes is elimination again.** Where candidate `j` of class `c` accords,
++ the current candidate of elimination over the merged enumeration is never beyond place
++ `tri (c + j) + j`: choosing a class is learning with the same law, one enumeration wider. -/
+= .
+- /-- **The learner over every merging is unrested on its diagonal course.** However the classes
+- are chosen and merged, the learner over them is refuted at every claim on its diagonal course,
+- which no list holds (`diagonal_misses`, `diagonal_open`). Read as no top level: learning at
+- the next level up is again learning, and again incomplete. -/
++ /-- **Elimination over every merging is unrested on its diagonal course.** However the classes
++ are chosen and merged, every value elimination over them proposes on its diagonal course misses,
++ and no list holds that world (`diagonal_misses`, `diagonal_open`). Read as no top level:
++ learning at the next level up is again learning, and again incomplete. -/
+= .
+- from `s` exactly where `s₀` and `s` go alike under `π` by `a`. The record does not fix this
++ from `s` exactly where `s₀` and `s` go alike under `π` by `a`. The prefix does not fix this
+= .
+- /-- P64's selection through a formation's registration is a selection through registering
+- alike. -/
++ /-- P64's selection through a formation's couplings is a selection through the classes of
++ histories alike through them. -/
+= .
+- /-- The learner is refuted twice, at steps `1` and `2`, and holds the hypothesis `(0, 1)`
+- from step `3` on. -/
++ /-- Elimination misses twice, at steps `1` and `2`, and its current candidate is `(0, 1)`
++ from step `3` on. -/
+= .
+- /-- **Two refutations, then rest.** From step `3` on the learner holds `(0, 1)`, the place
+- `tri 1 + 1 = 2` of `lasso_byElimination_bounded`, and claims each value right. -/
++ /-- **Two misses, then rest.** From step `3` on the current candidate is `(0, 1)`, the place
++ `tri 1 + 1 = 2` of `lasso_byElimination_bounded`, and each value it proposes is right. -/
+= .
+- of the class fitting the world `f` on the data claims at `x` the value of an observed input
+- lumped with `x`; it is right exactly where `f` takes one value at the two. -/
++ of the class fitting the world `f` on the data takes at `x` the value of an observed input
++ lumped with `x`; it is right exactly where `f` takes one value at the two. -/

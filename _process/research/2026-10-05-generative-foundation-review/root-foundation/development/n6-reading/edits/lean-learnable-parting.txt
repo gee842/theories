@@ -1,0 +1,409 @@
+# Learnable.lean and Parting.lean: what can come into accord with a feature through a map.
+### lean:Learnable
+= .
+- # Learnable: what a learner can learn through its registration
+-
+- A learner reads what a registration registers and claims something it does not register: a
+- registration `reg : S → R` of configurations, a target `val : S → V`, and a learner
+- `pred : List R → Option V` that claims at step `t` of the orbit from `s`, from the registered
+- record before `t` (`Becoming.Learning`'s `record`). It rests on the target from step `T` where it
+- claims the target at every later step (`RestsFrom`, `Rests`). `Becoming.Testing` shows that a
+- formation can test only a claim that differs in what registers in it; `Becoming.Learning` that no
+- record fixes the next value; `Becoming.Identification` that in a world a list holds, the learner
+- over the lasso hypotheses comes to rest on what it registers within a bound. This module states,
+- with no premise, what a registration lets a learner come to rest on.
+-
+- * **Alike to the registration, learned alike.** Two configurations with the same registered
+-   future give every learner the same record at every step (`prefixes_same`). So at a step where
+-   their targets differ, a claim is right on at most one (`claim_not_right_on_both`); with the
+-   targets decided it is refuted on one, while the two records stay equal at every step
+-   (`missed_on_one`). A learner resting on both has targets that agree from some step on
+-   (`agree_of_rests_both`); where they differ at arbitrarily late steps, no learner rests on
+-   both (`not_rests_on_both`), already for two configurations the law leaves unchanged
+-   (`still_not_rests_on_both`).
+- * **What is read off the registration is learned by the learner given nothing.** Where the
+-   target is read off what is registered (`val s = g (reg s)`), the learner over the lasso
+-   hypotheses on the registered values, its claims read by `g`, rests on the target in every
+-   world a list holds, from `Becoming.Identification`'s bound on (`rests_through`). It is given
+-   neither the configurations, nor how many there are, nor any value of the target.
+- * **Exactly.** In a world a list holds, some learner reading the registration rests on the
+-   target at every configuration exactly where configurations with the same registered future
+-   have targets that agree from some step on (`learnable_iff`). The learner of the second
+-   direction is given the world and the target (`fromLaw`): no learner does better, whatever it
+-   is given, since the first direction holds of every learner. Targets that go alike across the
+-   registration (`Learning.Lumped`) are always learnable (`learnable_of_lumped`). Where the law
+-   leaves every configuration unchanged, they are exactly the learnable ones
+-   (`still_learnable_iff_lumped`): what can be learned through a registration is what goes alike
+-   across it, the lumping by which `Becoming.Learning` states generalization.
+- * **Two still configurations** (`Pair`). Registering the first of two coordinates, no learner
+-   rests on the second at both `(true, false)` and `(true, true)` (`Pair.first_not_rests`), the
+-   second not going alike across the first (`Pair.not_lumped`). Registering both, the learner over
+-   the lasso hypotheses rests on the second at every configuration from step 2
+-   (`Pair.whole_rests`).
+-
+- Resting on the target from some step on is identification in the limit (Gold 1967), and
+- `learnable_iff` is an observability condition in that setting: its first direction holds of every
+- learner, while the learner of its second direction is given the world and the target, so that
+- direction shows existence, not a learner that is given nothing.
+-
+- Readings of this as registration bounding what is learned, as the limit of learning without
+- feedback that registers the target, or as a condition on cognition, belong to the study, not to
+- this module. No ethical predicate, ranking or axiom occurs.
++ # Learnable: what can be learned through a map
++
++ An extrapolation proposes, from values through a map, a value of a feature the map need not
++ take: a map `reg : S → R` of configurations, a feature `val : S → V`, and an extrapolation
++ `pred : List R → Option V` that proposes at step `t` of the orbit from `s`, from the prefix
++ before `t` of the course through the map (`Becoming.Learning`'s `prefixOf`). It rests in accord
++ with the feature from step `T` where it proposes the feature's value at every later step
++ (`RestsFrom`, `Rests`). `Becoming.Testing` shows that a claim is excluded at a formation only
++ through a difference that couples into it; `Becoming.Learning` that no prefix fixes the next
++ value; `Becoming.Identification` that in a world a list holds, elimination over the lasso
++ candidates comes to rest in accord with the course through the map within a bound. This module
++ states, with no premise, what a map lets an extrapolation come to rest in accord with.
++
++ * **Alike through the map, learned alike.** Two configurations with the same future through the
++   map give every extrapolation the same prefix at every step (`prefixes_same`). So at a step
++   where their features differ, a proposed value is right on at most one
++   (`claim_not_right_on_both`); with the features decided it misses on one, while the two
++   prefixes stay equal at every step (`missed_on_one`). An extrapolation resting on both has
++   features that agree from some step on (`agree_of_rests_both`); where they differ at
++   arbitrarily late steps, no extrapolation rests on both (`not_rests_on_both`), already for two
++   configurations the law leaves unchanged (`still_not_rests_on_both`).
++ * **What is read off the map is learned by an extrapolation given nothing.** Where the
++   feature is read off the map (`val s = g (reg s)`), elimination over the lasso candidates on the
++   values through the map, its proposals read by `g`, rests in accord with the feature in every
++   world a list holds, from `Becoming.Identification`'s bound on (`rests_through`). It is given
++   neither the configurations, nor their number, nor any value of the feature.
++ * **Exactly.** In a world a list holds, some extrapolation from prefixes through the map rests in
++   accord with the feature at every configuration exactly where configurations with the same
++   future through the map have features that agree from some step on (`learnable_iff`). The
++   extrapolation of the second direction is built from the law, the map, the feature and the list
++   (`fromLaw`): no extrapolation does better, whatever it is given, since the first direction
++   holds of every extrapolation. Features that go alike across the map's lumping
++   (`Learning.Lumped`) are always learnable (`learnable_of_lumped`). Where the law leaves every
++   configuration unchanged, they are exactly the learnable ones (`still_learnable_iff_lumped`):
++   what can be learned through a map is what goes alike across its lumping, the lumping by which
++   `Becoming.Learning` states generalization.
++ * **Two still configurations** (`Pair`). Through the map to the first of two coordinates, no
++   extrapolation rests in accord with the second at both `(true, false)` and `(true, true)`
++   (`Pair.first_not_rests`), the second not going alike across the first (`Pair.not_lumped`).
++   Through the map to both, elimination over the lasso candidates rests in accord with the second
++   at every configuration from step 2 (`Pair.whole_rests`).
++
++ Resting in accord with the feature from some step on is what the literature calls
++ identification in the limit (Gold 1967), and `learnable_iff` is an observability condition in
++ that setting: its first direction holds of every extrapolation, while the extrapolation of its
++ second direction is built from the law, the map, the feature and the list, so that direction
++ shows existence, not an extrapolation given nothing.
++
++ Readings of this as the map bounding what is learned, as the limit of learning without a
++ coupling of the feature back into what is learned, or as a condition on cognition, belong to the
++ study, not to this module. No ethical predicate, ranking or axiom occurs.
+= .
+- /-- The registered course from `s`: what the registration registers at each step of the orbit. -/
++ /-- The course from `s` through the map: the value of `reg` at each step of the orbit. -/
+= .
+- /-- The learner `pred`, reading the registered record, claims the target at every step from `T`
+- on along the orbit from `s`. -/
++ /-- The extrapolation `pred`, from the prefix of the course through the map, proposes the
++ feature's value at every step from `T` on along the orbit from `s`. -/
+= .
+- /-- The learner comes to rest on the target along the orbit from `s`. -/
++ /-- The extrapolation comes to rest in accord with the feature along the orbit from `s`. -/
+= .
+- /-! ## Alike to the registration, learned alike -/
++ /-! ## Alike through the map, learned alike -/
+= .
+- /-- **Configurations with the same registered future give every learner the same record.** -/
++ /-- **Configurations with the same future through the map give every extrapolation the same
++ prefix.** -/
+= .
+- /-- **A claim finer than the registration is right on at most one.** At a step where the
+- targets of two configurations with the same registered future differ, a learner's claim is not
+- right on both. No decision is used. -/
++ /-- **A proposal finer than the map is right on at most one.** At a step where the
++ features of two configurations with the same future through the map differ, a value an
++ extrapolation proposes is not right on both. No decision is used. -/
+= .
+- /-- **With the targets decided, a claim there is refuted on one, and the records stay equal.**
+- The learner's registered record is the same on both courses at every step, so it does not show
+- on which of them the claim was refuted. -/
++ /-- **With the features decided, a proposed value there misses on one, and the prefixes stay
++ equal.** The prefix through the map is the same on both courses at every step, so it does not
++ show on which of them the proposal missed. -/
+= .
+- /-- **A learner resting on two configurations alike to the registration has targets that agree
+- from some step on.** -/
++ /-- **An extrapolation resting on two configurations alike through the map has features that
++ agree from some step on.** -/
+= .
+- /-- **Where their targets differ at arbitrarily late steps, no learner rests on both.** -/
++ /-- **Where their features differ at arbitrarily late steps, no extrapolation rests on both.** -/
+= .
+- /-- **Already for two still configurations.** Where the law leaves `s` and `s'` unchanged, the
+- registration does not tell them apart and their targets differ, no learner reading the
+- registration rests on the target at both. -/
++ /-- **Already for two still configurations.** Where the law leaves `s` and `s'` unchanged, the
++ map does not tell them apart and their features differ, no extrapolation through the map rests
++ in accord with the feature at both. -/
+= .
+- /-- **Where the law leaves every configuration unchanged, a target learned at every
+- configuration goes alike across the registration.** -/
++ /-- **Where the law leaves every configuration unchanged, a feature learned at every
++ configuration goes alike across the map's lumping.** -/
+= .
+- /-! ## What is read off the registration -/
++ /-! ## What is read off the map -/
+= .
+- /-- **What is read off the registration is learned by the learner given nothing.** In a world a
+- list holds, where the target is read off what is registered, the learner over the lasso hypotheses
+- on the registered values, its claims read by `g`, rests on the target from
+- `Becoming.Identification`'s bound on (`held_byElimination_rests`). It is given neither the
+- configurations, nor how many there are, nor any value of the target. -/
++ /-- **What is read off the map is learned by an extrapolation given nothing.** In a world a
++ list holds, where the feature is read off the map, elimination over the lasso candidates on the
++ values through the map, its proposals read by `g`, rests in accord with the feature from
++ `Becoming.Identification`'s bound on (`held_byElimination_rests`). It is given neither the
++ configurations, nor their number, nor any value of the feature. -/
+= .
+- /-- The learner given the world at length `k`: among the configurations of `l`, the first whose
+- registered record before `k` is the record read, and its target `k` steps on. -/
++ /-- The extrapolation built from the law at length `k`: among the configurations of `l`, the
++ first whose prefix through the map before `k` is the prefix given, and its feature `k` steps on. -/
+= .
+- /-- **The learner given the world**: it reads the record and claims the target of the first
+- configuration of `l` with that record, as many steps on as the record is long. -/
++ /-- **The extrapolation built from the law** (the law, the map, the feature and the list `l`):
++ from a prefix it proposes the feature of the first configuration of `l` with that prefix, as
++ many steps on as the prefix is long. -/
+= .
+- /-- **Exactly.** In a world a list holds, some learner reading the registration rests on the
+- target at every configuration exactly where configurations with the same registered future have
+- targets that agree from some step on. The first direction holds of every learner, whatever it is
+- given; the learner of the second is given the world and the target (`fromLaw`). -/
++ /-- **Exactly.** In a world a list holds, some extrapolation from prefixes through the map rests
++ in accord with the feature at every configuration exactly where configurations with the same
++ future through the map have features that agree from some step on. The first direction holds of
++ every extrapolation, whatever it is given; the extrapolation of the second is built from the
++ law, the map, the feature and the list (`fromLaw`). -/
+= .
+- /-- **Targets that go alike across the registration are learnable**, under every law of a world
+- a list holds. -/
++ /-- **Features that go alike across the map's lumping are learnable**, under every law of a
++ world a list holds. -/
+= .
+- /-- **Where the law leaves every configuration unchanged, what can be learned through a
+- registration is exactly what goes alike across it.** -/
++ /-- **Where the law leaves every configuration unchanged, what can be learned through a
++ map is exactly what goes alike across its lumping.** -/
+= .
+- /-- **Registering the first coordinate, no learner rests on the second at both `(true, false)`
+- and `(true, true)`.** -/
++ /-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
++ at both `(true, false)` and `(true, true)`.** -/
+= .
+- /-- **Registering both, the learner over the lasso hypotheses rests on the second at every
+- configuration from step 2.** -/
++ /-- **Through the map to both, elimination over the lasso candidates rests in accord with the
++ second at every configuration from step 2.** -/
+### lean:Parting
+= .
+- # Parting: what a record fixes where the course branches
+-
+- `Becoming.Identification` states what a bounded record fixes under a determined law: the
+- registered course of a world of `N` configurations is fixed by its record before `N + N - 1`,
+- and no earlier step serves every such world. A process of the spine fixes only which steps are
+- admissible, and from one configuration its runs can go different ways. This module states,
+- with no premise beyond what each law names, what a record fixes along the runs of any process.
+-
+- * **At a parting no learner is right on both.** Two runs part at a step where they register the
+-   same before it and differ at it (`PartAt`). Their records before the step are one record, so
+-   no learner, whatever it is given, the world included, is right at that step on both
+-   (`not_right_on_both`). A learner right at every step from `T` on, on every run from a
+-   configuration, leaves no two of those runs parting at any step from `T` on
+-   (`not_parting_of_right`). With the registered values decided, no two runs from a
+-   configuration part exactly where all of them register one course (`unparted_iff`).
++ # Parting: what a prefix fixes where the course branches
++
++ `Becoming.Identification` states what a bounded prefix fixes under a determined law: the
++ course through a map of a world of `N` configurations is fixed by its prefix before `N + N - 1`,
++ and no earlier step serves every such world. A process of the spine fixes only which steps are
++ admissible, and from one configuration its runs can go different ways. This module states,
++ with no premise beyond what each law names, what a prefix fixes along the runs of any process.
++
++ * **At a parting no extrapolation is right on both.** Two runs part at a step where their
++   courses through the map are the same before it and differ at it (`PartAt`). Their prefixes
++   before the step are one prefix, so no extrapolation, whatever it is given, the process
++   included, is right at that step on both (`not_right_on_both`). An extrapolation right at every
++   step from `T` on, on every run from a configuration, leaves no two of those runs parting at
++   any step from `T` on (`not_parting_of_right`). With the values through the map decided, no two
++   runs from a configuration part exactly where all of them have one course through the map
++   (`unparted_iff`).
+= .
+-   from which no two runs part, held by a list of `N` configurations, the registered course has at
+-   most `N` states (`course_statesBelow`), and the learner by the least bound of
+-   `Becoming.Identification`, given nothing, is right at every step from `N + N - 1` on
+-   (`leastBound_right`). No learner is right at step `N + N - 2` on every such run for `N ≥ 2`
++   from which no two runs part, held by a list of `N` configurations, the course through the map
++   has at most `N` states (`course_statesBelow`), and the extrapolation by the least bound of
++   `Becoming.Identification`, given nothing, is right at every step from `N + N - 1` on
++   (`leastBound_right`). No extrapolation is right at step `N + N - 2` on every such run for `N ≥ 2`
+= .
+-   instance; a process can branch and part nowhere where its branching does not show in what is
+-   registered (`free_unparted_const`).
++   instance; a process can branch and part nowhere where its branching does not show through the
++   map (`free_unparted_const`).
+= .
+-   configuration part at any step from `T` on, the registered values decided, then no two runs
+-   part from where a run from it is at `T` (`unparted_at_of_late`). Held by a list of `N`
+-   configurations, its registered course then has at most `T + N` states (`late_statesBelow`,
+-   through `statesBelow_shift`). The learner by the least bound is right at every step from
+-   `2(T + N) - 1` on (`late_right`).
+- * **Where no two runs part, a learner given the world is right.** Take a process with listed
+-   moves and configurations, decided steps and decided registered values. The learner given the
+-   world (`fromProcess`) reads from the record the configurations a run from `s` can be at
+-   (`candidates`). It keeps the first from which a path as long as the list of configurations is
++   configuration part at any step from `T` on, the values through the map decided, then no two
++   runs part from where a run from it is at `T` (`unparted_at_of_late`). Held by a list of `N`
++   configurations, its course through the map then has at most `T + N` states (`late_statesBelow`,
++   through `statesBelow_shift`). The extrapolation by the least bound is right at every step from
++   `2(T + N) - 1` on (`late_right`).
++ * **Where no two runs part, an extrapolation built from the process is right.** Take a process
++   with listed moves and configurations, decided steps and decided values through the map. The
++   extrapolation built from the process, its listed moves and configurations and the start
++   (`fromProcess`) reads off the prefix the configurations a run from `s` can be at
++   (`candidates`). It keeps the first from which a path as long as the list of configurations is
+= .
+-   It claims what that configuration registers. It is right at step `t` on every run from `s`
+-   exactly where no two runs from `s` part at `t` (`world_right_iff`). So some learner is right
+-   there exactly where none part (`some_right_iff`): with `not_right_on_both`, at each step a
+-   parting is exactly what neither the record nor the world settles.
++   It proposes that configuration's value through the map. It is right at step `t` on every run
++   from `s` exactly where no two runs from `s` part at `t` (`world_right_iff`). So some
++   extrapolation is right there exactly where none part (`some_right_iff`): with
++   `not_right_on_both`, at each step a parting is exactly what neither the prefix nor the process
++   settles.
+= .
+-   may follow every configuration (`free`), every course is the registered course of a run
+-   (`freeRun`). So after every record two runs of two configurations part, each with that record
+-   (`free_parts_after`): no record shows that a world will not part. For every learner and every
+-   record, a run of free branching on two values has that record and the learner is not right at
+-   the next step (`free_open`); for every learner, one run is never right at any step
+-   (`free_never_right`); and a run of free branching on two configurations has a registered course
+-   with no bound on its states (`free_unbounded`).
+-
+- So with a bound on configurations a record fixes the registered course exactly as far as the
+- runs do not part, from `N + N - 1` on; where they part, neither the record nor the law fixes
++   may follow every configuration (`free`), every course is the course of a run through a map
++   (`freeRun`). So after every prefix two runs of two configurations part, each with that prefix
++   (`free_parts_after`): no prefix shows that a world will not part. For every extrapolation and
++   every prefix, a run of free branching on two values has that prefix and the extrapolation is not
++   right at the next step (`free_open`); for every extrapolation, one run is never right at any
++   step (`free_never_right`); and a run of free branching on two configurations has a course
++   through the map with no bound on its states (`free_unbounded`).
++
++ So with a bound on configurations a prefix fixes the course through the map exactly as far as the
++ runs do not part, from `N + N - 1` on; where they part, neither the prefix nor the law fixes
+= .
+- **Classical sources.** That for every learner some course defeats it at every step
++ **Classical sources.** That for every extrapolation some course is missed at every step
+= .
+- /-! ## At a parting no learner is right on both -/
++ /-! ## At a parting no extrapolation is right on both -/
+= .
+- /-- What the registration registers along a run. -/
++ /-- The course of a run through the map. -/
+= .
+- /-- Two runs part at step `t`: they register the same before `t` and differ at `t`. -/
++ /-- Two runs part at step `t`: through the map they are the same before `t` and differ at `t`. -/
+= .
+- /-- No two runs from `s` part: every two runs from `s` register one course. -/
++ /-- No two runs from `s` part: every two runs from `s` have one course through the map. -/
+= .
+- /-- The learner `pred`, reading the record of what is registered along `r` before `t`, claims
+- what is registered at `t`. -/
++ /-- The extrapolation `pred`, from the prefix before `t` of `r`'s course through the map,
++ proposes the value through the map at `t`. -/
+= .
+- /-- **At a parting no learner is right on both.** The two records before the step are one
+- record, whatever the learner is given. -/
++ /-- **At a parting no extrapolation is right on both.** The two prefixes before the step are one
++ prefix, whatever the extrapolation is given. -/
+= .
+- /-- A learner right at every step from `T` on, on every run from `s`, leaves no two of those
++ /-- An extrapolation right at every step from `T` on, on every run from `s`, leaves no two of those
+= .
+- /-- **No two runs from a configuration part exactly where all of them register one course.** -/
++ /-- **No two runs from a configuration part exactly where all of them have one course through
++ the map.** -/
+= .
+- the registered course has at most as many states as the list has members. -/
++ the course through the map has at most as many states as the list has members. -/
+= .
+- /-- **The learner given nothing rests from `N + N - 1` on.** On a run from a configuration from
+- which no two runs part, held by a list of `N` configurations, the learner by the least bound is
++ /-- **An extrapolation given nothing rests from `N + N - 1` on.** On a run from a
++ configuration from which no two runs part, held by a list of `N` configurations, the
++ extrapolation by the least bound is
+= .
+- /-- **The step is exact for processes.** Given two values, no learner is right at step
++ /-- **The step is exact for processes.** Given two values, no extrapolation is right at step
+= .
+- /-- **The rest step where runs part only before `T`.** The learner by the least bound, given
+- nothing, is right at every step from `2(T + N) - 1` on, on every run from a configuration from
++ /-- **The rest step where runs part only before `T`.** The extrapolation by the least bound,
++ given nothing, is right at every step from `2(T + N) - 1` on, on every run from a configuration from
+= .
+- /-! ## Where runs do not part, a learner given the world is right -/
++ /-! ## Where runs do not part, an extrapolation built from the process is right -/
+= .
+- /-- The configurations a run from `s` can be at, given the record before: those reached from
+- one the record allows, registered as the record says. -/
++ /-- The configurations a run from `s` can be at, given the prefix before: those reached from
++ one the prefix allows, with the value through the map the prefix says. -/
+= .
+- /-- **The learner given the world**: from the record, the configurations a run from `s` can be
+- at; of these, the first from which the run can go on; what it registers. -/
++ /-- **The extrapolation built from the process** (its listed moves and configurations, the map
++ and the start `s`): from the prefix, the configurations a run from `s` can be at; of these, the
++ first from which the run can go on; its value through the map. -/
+= .
+- /-- **Where no two runs part, the learner given the world is right.** For a process with listed
+- moves and configurations and decided steps, the learner given the world is right at step `t`
++ /-- **Where no two runs part, the extrapolation built from the process is right.** For a process
++ with listed moves and configurations and decided steps, it is right at step `t`
+= .
+- /-- **A learner given the world is right at a step on every run exactly where no two runs part
+- there.** For a process with listed moves and configurations and decided steps. -/
++ /-- **The extrapolation built from the process is right at a step on every run exactly where no
++ two runs part there.** For a process with listed moves and configurations and decided steps. -/
+= .
+- /-- **Some learner is right at a step on every run exactly where no two runs part there, and
+- the learner given the world is one.** -/
++ /-- **Some extrapolation is right at a step on every run exactly where no two runs part there,
++ and the extrapolation built from the process is one.** -/
+= .
+- /-- Every course is a run of free branching, registered as it is. -/
++ /-- Every course is the course of a run of free branching, through the identity map. -/
+= .
+- /-- **Free branching parts nowhere where the registration does not show it.** -/
++ /-- **Free branching parts nowhere where the map does not show it.** -/
+= .
+- /-- **No record shows that a world will not part.** Given two values, after every record two
+- runs of free branching, each with that record, part. -/
++ /-- **No prefix shows that a world will not part.** Given two values, after every prefix two
++ runs of free branching, each with that prefix, part. -/
+= .
+- /-- **After every record, every learner is open to error.** Given two values, for every learner
+- and every record, a run of free branching has that record and the learner is not right at the
+- next step. -/
++ /-- **After every prefix, every extrapolation can miss.** Given two values, for every
++ extrapolation and every prefix, a run of free branching has that prefix and the extrapolation is
++ not right at the next step. -/
+= .
+- /-- **Every learner has a run of free branching on which it is never right.** -/
++ /-- **Every extrapolation has a run of free branching on which it is never right.** -/
+= .
+- configurations has a registered course with no bound on its states. -/
++ configurations has a course through the map with no bound on its states. -/

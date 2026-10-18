@@ -1,0 +1,199 @@
+# LearnableRuns.lean, Unrolling.lean, ExactRecordRuns.lean.
+### lean:LearnableRuns
+= .
+- # Learnable runs: what a learner reading a run's registration can learn
+-
+- `Becoming.Learnable` states what a learner reading a registration can learn along the orbit of a
+- determined law. A determined law is a process of the spine (`Law.process`), and every run of it is
+- its orbit from where the run begins (`Branching.law_run_state`); configurations of a determined
+- law are alike in the frame that registers `reg` exactly where their registered futures are the
+- same (`Law.alike_iff_sameFuture`). This module states the laws of `Becoming.Learnable` about the
+- runs of the law and the likeness of the frame, and proves them through those laws.
+-
+- * **A run's registered record is its orbit's.** The record a learner reads along a run is the
+-   record along the orbit from the run's first configuration (`prefix_eq`), so a learner rests on
+-   a run exactly where it rests on that orbit (`restsFrom_iff`, `rests_iff`).
+- * **Alike in the frame, learned alike.** Two runs beginning at configurations alike in the frame
+-   that registers `reg` give every learner the same record at every step (`prefixes_same`); a
+-   learner resting on both has targets that agree from some step on (`agree_of_rests_both`), and
+-   where their targets differ at arbitrarily late steps no learner rests on both
+-   (`not_rests_on_both`).
+- * **What is read off the registration is learned along every run a list holds**
+-   (`rests_through`), by the learner over the lasso hypotheses given nothing.
+- * **Exactly.** In a world a list holds, some learner rests on the target along every run of the
+-   law exactly where runs beginning alike in the frame have targets that agree from some step on
+-   (`learnable_iff`); where the law leaves every configuration unchanged, exactly where the target
+-   goes alike across the registration (`still_learnable_iff_lumped`).
++ # Learnable runs: what can be learned through a map along a run
++
++ `Becoming.Learnable` states what an extrapolation through a map can learn along the orbit of a
++ determined law. A determined law is a process of the spine (`Law.process`), and every run of it is
++ its orbit from where the run begins (`Branching.law_run_state`); configurations of a determined
++ law are alike in the frame by `reg` (`Law.frameBy`) exactly where their futures through the map
++ are the same (`Law.alike_iff_sameFuture`). This module states the laws of `Becoming.Learnable`
++ about the runs of the law and the likeness of the frame, and proves them through those laws.
++
++ * **A run's prefix is its orbit's.** The prefix through the map along a run is the prefix along
++   the orbit from the run's first configuration (`prefix_eq`), so an extrapolation rests in accord
++   on a run exactly where it rests in accord on that orbit (`restsFrom_iff`, `rests_iff`).
++ * **Alike in the frame, learned alike.** Two runs beginning at configurations alike in the frame
++   by `reg` give every extrapolation the same prefix at every step (`prefixes_same`); an
++   extrapolation resting on both has features that agree from some step on
++   (`agree_of_rests_both`), and where their features differ at arbitrarily late steps no
++   extrapolation rests on both (`not_rests_on_both`).
++ * **What is read off the map is learned along every run a list holds** (`rests_through`), by
++   elimination over the lasso candidates given nothing.
++ * **Exactly.** In a world a list holds, some extrapolation rests in accord with the feature along
++   every run of the law exactly where runs beginning alike in the frame have features that agree
++   from some step on (`learnable_iff`); where the law leaves every configuration unchanged,
++   exactly where the feature goes alike across the map's lumping (`still_learnable_iff_lumped`).
+= .
+- /-- The registered course of a run: what the registration registers at each of its steps
+- (`Parting.course` on a run of the law's process). -/
++ /-- The course of a run through the map: the value of `reg` at each of its steps
++ (`Parting.course` on a run of the law's process). -/
+= .
+- /-- The learner `pred`, reading the registered record of the run, claims the target at every step
+- from `T` on. -/
++ /-- The extrapolation `pred`, from the prefix of the run's course through the map, proposes the
++ feature's value at every step from `T` on. -/
+= .
+- /-- The learner comes to rest on the target along the run. -/
++ /-- The extrapolation comes to rest in accord with the feature along the run. -/
+= .
+- /-- **A run's registered record is the record along the orbit from where it begins.** -/
++ /-- **A run's prefix through the map is the prefix along the orbit from where it begins.** -/
+= .
+- /-- **A learner rests on a run from `T` exactly where it rests from `T` on the orbit from where
+- the run begins.** -/
++ /-- **An extrapolation rests in accord on a run from `T` exactly where it rests in accord from
++ `T` on the orbit from where the run begins.** -/
+= .
+- /-- Runs beginning alike in the frame that registers `reg` have the same registered future along
+- the runs. -/
++ /-- Runs beginning alike in the frame by `reg` have the same future through the map along
++ the runs. -/
+= .
+- /-- **Runs beginning alike in the frame give every learner the same record.** -/
++ /-- **Runs beginning alike in the frame give every extrapolation the same prefix.** -/
+= .
+- /-- **A learner resting on two runs beginning alike in the frame has targets that agree from some
+- step on.** -/
++ /-- **An extrapolation resting on two runs beginning alike in the frame has features that agree
++ from some step on.** -/
+= .
+- /-- **Where the targets of two runs beginning alike in the frame differ at arbitrarily late steps,
+- no learner rests on both.** -/
++ /-- **Where the features of two runs beginning alike in the frame differ at arbitrarily late
++ steps, no extrapolation rests on both.** -/
+= .
+- /-- **What is read off the registration is learned along every run a list holds**, by the learner
+- over the lasso hypotheses on the registered values, given nothing, from `Becoming.Identification`'s
+- bound on. -/
++ /-- **What is read off the map is learned along every run a list holds**, by elimination
++ over the lasso candidates on the values through the map, given nothing, from
++ `Becoming.Identification`'s bound on. -/
+= .
+- /-- **Exactly.** In a world a list holds, some learner rests on the target along every run of the
+- law exactly where runs beginning alike in the frame that registers `reg` have targets that agree
+- from some step on. -/
++ /-- **Exactly.** In a world a list holds, some extrapolation rests in accord with the feature
++ along every run of the law exactly where runs beginning alike in the frame by `reg` have features
++ that agree from some step on. -/
+= .
+- /-- **Where the law leaves every configuration unchanged, a target is learnable along every run
+- exactly where it goes alike across the registration.** -/
++ /-- **Where the law leaves every configuration unchanged, a feature is learnable along every run
++ exactly where it goes alike across the map's lumping.** -/
+### lean:Unrolling
+= .
+-   reading of the first direction is given the world, the law and the feature (`Learnable.fromWorld`):
++   reading of the first direction is built from the list, the law and the feature
++   (`Learnable.fromWorld`):
+= .
+- /-- **The reading given the world**: the feature of the configuration read for a future, as many
+- steps on as the list is long; `v₀` where no configuration of the list is read. -/
++ /-- **The reading built from the list** (with the law, the map and the feature): the feature of
++ the configuration read for a future, as many steps on as the list is long; `v₀` where no
++ configuration of the list is read. -/
+= .
+- reading given the world of its future. -/
++ reading built from the list of its future. -/
+### lean:ExactRecordRuns
+= .
+- # Exact readings of a run's registered record
+-
+- `KnowledgeCorrespondence` states, for histories, an evidence projection and a two-valued target,
+- when a reading of the evidence answers the target soundly (never wrongly) or exactly (always
+- rightly) on a domain of histories, and when the evidence resolves the target (histories with one
+- evidence have one target). Here the histories are the runs of a process, the evidence at step `t`
+- is the record a registration `reg` leaves along the run before `t` (`recordBefore`), and the
+- target is a two-valued reading `val` of the run's configuration at `t` (`valueAt`). A reading of
+- the record is then a learner at one step: for a determined law, a learner claims the target along
+- every run from `T` on exactly where it reads the record exactly at every step from `T` on
+- (`exact_iff_restsFrom`, through `LearnableRuns.RestsFrom`). This module states the periphery's
+- general laws of these readings of runs and proves them through those laws.
++ # Exact readings of a run's prefix through a map
++
++ `KnowledgeCorrespondence` states, for histories, an evidence projection and a two-valued target,
++ when a reading of the evidence answers the target soundly (never wrongly) or exactly (always
++ rightly) on a domain of histories, and when the evidence resolves the target (histories with one
++ evidence have one target). Here the histories are the runs of a process, the evidence at step `t`
++ is the prefix before `t` of the run's course through a map `reg` (`recordBefore`), and the
++ target is a two-valued feature `val` of the run's configuration at `t` (`valueAt`). A reading of
++ the prefix is then an extrapolation at one step: for a determined law, an extrapolation proposes
++ the feature's value along every run from `T` on exactly where it reads the prefix exactly at
++ every step from `T` on (`exact_iff_restsFrom`, through `LearnableRuns.RestsFrom`). This module
++ states the periphery's general laws of these readings of runs and proves them through those laws.
+= .
+- * **A sound reading abstains where the record leaves the value open**: where two runs of the
+-   domain have one record before `t` and different values at `t`, a sound reading gives nothing on
+-   that record (`sound_abstains`).
+- * **Soundness holds on every smaller domain of runs** (`sound_within`), and **resolution survives
+-   reading a second registration beside the first** (`finer_resolves`).
+- * **A faithfully kept record keeps exactness** (`kept_exact`): reading the record through what a
+-   retention keeps is exact where the retention is read back faithfully on the domain.
++ * **A sound reading abstains where the prefix leaves the value open**: where two runs of the
++   domain have one prefix before `t` and different values at `t`, a sound reading gives nothing on
++   that prefix (`sound_abstains`).
++ * **Soundness holds on every smaller domain of runs** (`sound_within`), and **resolution survives
++   reading through a second map beside the first** (`finer_resolves`).
++ * **A faithfully kept prefix keeps exactness** (`kept_exact`): reading the prefix through what a
++   retention keeps is exact where the retention is read back faithfully on the domain.
+= .
+-   domain with one record before `t` have one value at `t` (`exact_resolves`).
++   domain with one prefix before `t` have one value at `t` (`exact_resolves`).
+= .
+- /-- The record the registration `reg` leaves along a run before step `t`, latest first. -/
++ /-- The prefix before step `t` of a run's course through the map `reg`, latest first. -/
+= .
+- /-- **A reading of the record exact on a domain of runs is sound there.** -/
++ /-- **A reading of the prefix exact on a domain of runs is sound there.** -/
+= .
+- /-- **An exact reading of the record needs resolution**: runs of the domain with one record before
+- `t` have one value at `t`. -/
++ /-- **An exact reading of the prefix needs resolution**: runs of the domain with one prefix before
++ `t` have one value at `t`. -/
+= .
+- /-- **A sound reading abstains where the record leaves the value open**: where two runs of the
+- domain have one record before `t` and different values at `t`, a sound reading gives nothing on
+- that record. -/
++ /-- **A sound reading abstains where the prefix leaves the value open**: where two runs of the
++ domain have one prefix before `t` and different values at `t`, a sound reading gives nothing on
++ that prefix. -/
+= .
+- /-- **Resolution survives reading a second registration beside the first.** -/
++ /-- **Resolution survives reading through a second map beside the first.** -/
+= .
+- /-- **A faithfully kept record keeps exactness**: reading the record through what a retention
+- keeps is exact where the retention is read back faithfully on the records of the domain. -/
++ /-- **A faithfully kept prefix keeps exactness**: reading the prefix through what a retention
++ keeps is exact where the retention is read back faithfully on the prefixes of the domain. -/
+= .
+- /-- **Abstaining from every record is sound** on every domain of runs. -/
++ /-- **Abstaining from every prefix is sound** on every domain of runs. -/
+= .
+- /-- **A learner claims the target along every run of a determined law from `T` on exactly where,
+- at every step from `T` on, it reads the record exactly on all runs.** -/
++ /-- **An extrapolation proposes the feature's value along every run of a determined law from `T`
++ on exactly where, at every step from `T` on, it reads the prefix exactly on all runs.** -/

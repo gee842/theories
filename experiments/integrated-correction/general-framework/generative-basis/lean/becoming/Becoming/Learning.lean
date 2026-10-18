@@ -9,47 +9,49 @@ networks, of cognition and of the wisdom about learning is. To the answer that n
 complete, which named the problem of induction as undissolved, Ren replied "please, fully
 complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the
 undissolved". This module states, with no premise beyond what each law names, when learning
-from what registers succeeds, what a model of structure and of change carries beyond what
-registered, what a selection through the data can reach, and what the next level up is. A
-course is a sequence of registered values, such as the registration of a determined law's
-orbit; a learner is any claim made from the record before a step.
+through a map comes into accord with what follows, what a model of structure and of change
+carries beyond the data, what a selection through the data can reach, and what the next level
+up is. A course is a sequence of values, such as a determined law's orbit read through a map;
+an extrapolation (`pred`) is any map from the prefix before a step to a proposed value or to
+silence.
 
-* **No record fixes the next value.** Given two values, two courses share any record and
-  differ at its next step, so a claim made from the record is not right on both
-  (`no_prefix_fixes_next`), and, values decided, is refuted on one of them
+* **No prefix fixes the next value.** Given two values, two courses share any prefix and
+  differ at its next step, so a value proposed from the prefix is not right on both
+  (`no_prefix_fixes_next`), and, values decided, misses on one of them
   (`claim_missed_on_one`); both are courses of worlds held by a list
   (`no_prefix_fixes_next_finite`, `holdFrom_lasso`). `Web.tail_unexcluded` of `Becoming.Testing`
   is the same law for level histories.
-* **No learner rests on every course.** For every learner a course answers each of its claims
-  against it (`diagonal`, `diagonal_misses`), so on that course it rests at no step
-  (`diagonal_unrested`). The answering course is the registration of a law that keeps its
-  record, a world no list holds (`diagonal_open`).
-* **Learning by refutation.** Holding hypotheses in order and moving to the next exactly where
-  the one held is refuted (`indexOn`, `byElimination`), the learner never passes a hypothesis that
-  holds, so it is refuted at most that hypothesis's place (`index_le_of_accords`) and not at
-  arbitrarily late steps (`misses_not_recurring`); every hypothesis passed was refuted on
-  the record at a recorded step (`missed_before`). The learner is through the record: one record, one
-  hypothesis held and one claim (`byElimination_through_prefix`).
+* **No extrapolation rests on every course.** For every extrapolation, on its diagonal course
+  each value it proposes misses at its step (`diagonal`, `diagonal_misses`), so on that course it
+  rests at no step (`diagonal_unrested`). The diagonal course is a law's orbit, read at its
+  latest value, of a law that keeps the whole prefix, a world no list holds (`diagonal_open`).
+* **Extrapolation by elimination.** Taking candidates in order and moving to the next exactly
+  where the current one misses (`indexOn`, `byElimination`), the extrapolation never passes a
+  candidate that accords, so it misses at most that candidate's place (`index_le_of_accords`)
+  and not at arbitrarily late steps (`misses_not_recurring`); every candidate passed missed at
+  a step of the prefix (`missed_before`). The extrapolation is through the prefix: one prefix,
+  one current candidate and one proposed value (`byElimination_through_prefix`).
 * **The courses of finitely many configurations are lassos.** Under a determined law whose
-  configurations along an orbit are held by a list `l`, every registration of the orbit repeats
+  configurations along an orbit are held by a list `l`, the orbit read through any map repeats
   from some step `i` with some period `q + 1`, `i + q + 1 ≤ l.length` (`lasso_of_held`, from
-  `revisits_within`); every such course is the registration of a world held by a list
+  `revisits_within`); every such course is the course, through a map, of a world held by a list
   (`lasso_realized`).
-* **Induction in a world held by a list.** Over the lasso hypotheses in diagonal order
-  (`lassos`, `pairAt`, `pairAt_place`), a learner that reads only a registration it can tell
-  apart, and knows neither the configurations nor how many there are, is refuted fewer than
-  `tri l.length` times, claims at every step from `l.length` on and is not refuted at
-  arbitrarily late steps (`held_byElimination_bounded`, `lasso_byElimination_bounded`); that it comes to rest
+* **Induction in a world held by a list.** Over the lasso candidates in diagonal order
+  (`lassos`, `pairAt`, `pairAt_place`), the extrapolation by elimination, which proposes only
+  from the prefix through a map with decided values and is given neither the
+  configurations nor their number, misses fewer than `tri l.length` times, proposes at every
+  step from `l.length` on and does not miss at arbitrarily late steps
+  (`held_byElimination_bounded`, `lasso_byElimination_bounded`); that it comes to rest
   is unrefuted, a double negation (`held_rest_unrefuted`, `rest_unrefuted`). It comes to rest
   only on lasso courses (`lasso_of_rest`). The step at which it rests is not stated here. Its
-  record never shows that it has come to rest: given two values, every claim it makes is refuted,
-  at that step, on a course of a world held by a list that shares its record
-  (`no_prefix_fixes_next_finite`). Its answering course is no lasso (`diagonal_not_lasso`).
-  In `Alternate` it is refuted twice and holds from the third step on, at the bound
+  prefix never shows that it has come to rest: given two values, every value it proposes
+  misses, at that step, on a course of a world held by a list that shares its prefix
+  (`no_prefix_fixes_next_finite`). Its diagonal course is no lasso (`diagonal_not_lasso`).
+  In `Alternate` it misses twice and accords from the third step on, at the bound
   `tri 1 + 1 = 2`.
-* **The meta level.** Classes of hypotheses merged along the pairs (`merged`) are learned by
-  the same refutation, with the bound composed (`merged_bound`); the learner over every merging
-  is unrested on its answering course (`merged_unrested`).
+* **The meta level.** Classes of candidates merged along the pairs (`merged`) are learned by
+  the same elimination, with the bound composed (`merged_bound`); the extrapolation over every
+  merging is unrested on its diagonal course (`merged_unrested`).
 * **A lumping generalizes exactly where it lumps.** Within the functions going alike across a
   lumping `π` (`Lumped`), finite data fix the value at an untried input exactly where some
   observed input is lumped with it (`determines_lumped_iff`, `lumped_determines`), and the value
@@ -61,14 +63,15 @@ orbit; a learner is any claim made from the record before a step.
   the same at every position and wrong where it differs.
 * **Structure and change are one lumping.** A determined law goes alike under `π` exactly where
   its next configuration, read through `π`, goes alike across what `π` lumps
-  (`goAlike_iff_lumped`). An observed outcome carries over to another configuration exactly
+  (`goAlike_iff_lumped`). An outcome taken at one configuration carries over to another exactly
   where the two go alike by that move (`transfer_right_iff`, `goAlike_iff_at`);
   `carries_law_iff` of `Becoming.Mechanism` is the global form.
 * **Training is a selection through the data.** A loss computed from the values on the data,
   and every choice made from it, select alike what agrees on the data
-  (`Training.loss_through`); the selection through registration of `Becoming.Selection` is a
-  selection through registering alike (`Training.web_selectsThrough_iff`). Within a class free
-  beyond the data every selection through the data leaves the untried value as free as the class
+  (`Training.loss_through`); the selection through a formation's couplings of `Becoming.Selection`
+  is a selection through the classes alike through them (`Training.web_selectsThrough_iff`).
+  Within a class free beyond the data every selection through the data leaves the untried value
+  as free as the class
   does (`Training.unselected_beyond_data`), and a fit is right beyond the data, for every world
   in the class, exactly where the class determines it (`Training.fit_right_iff`).
 * **Selection through a model of the options.** A selection or valuation through a model of the
@@ -83,22 +86,22 @@ orbit; a learner is any claim made from the record before a step.
 **Readings.**
 - 理 is, on Ren's reading, the modeling of the laws of structure and of change. A lumping is a
   model of structure; a lumping the step goes alike across is a model of change; the two are
-  one notion (`goAlike_iff_lumped`). What such a model carries beyond the record is what it
-  lumps with what registered, and it is right there exactly where the world goes alike across
+  one notion (`goAlike_iff_lumped`). What such a model carries beyond the data is what it
+  lumps with the data, and it is right there exactly where the world goes alike across
   the lumping. This reading of the formal terms is the AI's.
 - (The AI's reading of Ren's correction of 16 October 2026, which Ren approved the same day.) A
   selection is as good as the model it goes through. What a model lumps, no selection through it
   separates; separating them takes a finer model, and whether that model is right is its fit to
-  what matters, which a longer record does not supply: the record gives distinctions, not their
+  what matters, which a longer prefix does not supply: the prefix gives distinctions, not their
   relevance.
 - (The AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26.) Induction is
-  resolved into laws rather than certified. No record fixes the next value, even among finite
-  worlds. No learner rests on every course; the course defeating a learner registers its claims and
-  keeps its record, an open world. In every world held by a list learning by refutation is refuted a
-  number of times bounded by the number of configurations, its coming to rest is unrefuted, and its
-  record never shows that it has come to rest; it rests only there. The uniformity of nature is no
-  premise: it is the local condition of a law, that the world goes alike across what the model
-  lumps.
+  resolved into laws rather than certified. No prefix fixes the next value, even among finite
+  worlds. No extrapolation rests on every course; the diagonal course of an extrapolation moves
+  off each value it proposes and keeps the whole prefix, an open world. In every world held by a
+  list extrapolation by elimination misses a number of times bounded by the number of
+  configurations, its coming to rest is unrefuted, and its prefix never shows that it has come to
+  rest; it rests only there. The uniformity of nature is no premise: it is the local condition of
+  a law, that the world goes alike across what the model lumps.
 - (The AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26.) For a trained
   network the class is what training can reach, and the loss selects only through the data.
   Generalization is right exactly where the world goes alike across the lumping that the
@@ -107,21 +110,22 @@ orbit; a learner is any claim made from the record before a step.
 - (The AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26.) The meta level
   is learning again, over a merged enumeration, and there is no top.
 
-**Classical sources.** Learning by refutation over an enumeration of hypotheses is Gold's
-identification in the limit by enumeration (Gold 1967, "Language identification in the limit";
-Putnam 1965 for trial-and-error predicates): the learner changes its claim finitely often and is
-right from some step on, with no step at which its record shows that it is. The diagonal course
-answering every learner is the diagonal argument of Putnam (1963) and Gold (1967) that no learner
+**Classical sources.** Extrapolation by elimination over an enumeration of candidates is what the
+literature calls Gold's identification in the limit by enumeration, a learner refuting
+hypotheses (Gold 1967, "Language identification in the limit"; Putnam 1965 for trial-and-error
+predicates): the extrapolation changes its proposal finitely often and is right from some step
+on, with no step at which its prefix shows that it is. The diagonal course on which every
+extrapolation misses is the diagonal argument of Putnam (1963) and Gold (1967) that no learner
 identifies every course; the reading of induction as convergence without certainty follows Kelly
-(1996). What is the spine's own is the form: every learner and course is stated on the same
-registrations as the rest of the core, no decision is used beyond what each theorem names, and the
-rest of the learner by refutation is stated only as unrefuted (`rest_unrefuted`,
+(1996). What is the spine's own is the form: every extrapolation and course is stated through the
+same maps as the rest of the core, no decision is used beyond what each theorem names, and the
+rest of the extrapolation by elimination is stated only as unrefuted (`rest_unrefuted`,
 `held_rest_unrefuted`, a double negation), its step being given in `Becoming.Identification`.
 
-What is not derived: which hypotheses, classes or lumpings an actual formation holds or can
-reach; that its registration tells values apart; that its world is held by a list; that an
+What is not derived: which candidates, classes or lumpings an actual formation goes through or
+can reach; that the values of its map are decided; that its world is held by a list; that an
 actual network's architecture and updates impose a given lumping; the correspondence of any of
-these to an actual learner. No ethical predicate, ranking or axiom occurs.
+these to an actual formation that learns. No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -132,23 +136,23 @@ universe u v w
 
 namespace Learning
 
-/-! ## A registered course and its record -/
+/-! ## A course and its prefix -/
 
 section Record
 
 variable {O : Type u}
 
-/-- The record of a course before step `t`, latest first. -/
+/-- The prefix of a course before step `t`, latest first. -/
 def prefixOf (o : Nat → O) : Nat → List O
   | 0 => []
   | t + 1 => o t :: prefixOf o t
 
-/-- The record before `t` holds `t` values. -/
+/-- The prefix before `t` holds `t` values. -/
 theorem prefix_length (o : Nat → O) : ∀ t, (prefixOf o t).length = t
   | 0 => rfl
   | t + 1 => congrArg Nat.succ (prefix_length o t)
 
-/-- The record before `t` depends only on the course before `t`. -/
+/-- The prefix before `t` depends only on the course before `t`. -/
 theorem prefix_congr {o o' : Nat → O} : ∀ {t : Nat}, (∀ n, n < t → o n = o' n) →
     prefixOf o t = prefixOf o' t
   | 0, _ => rfl
@@ -157,27 +161,28 @@ theorem prefix_congr {o o' : Nat → O} : ∀ {t : Nat}, (∀ n, n < t → o n =
       congr (congrArg List.cons (same t (Nat.lt_succ_self t)))
         (prefix_congr fun n lt => same n (Nat.lt_trans lt (Nat.lt_succ_self t)))
 
-/-- The value `k + 1` steps back in a record, latest first. -/
+/-- The value `k + 1` steps back in a prefix, latest first. -/
 def back : List O → Nat → Option O
   | [], _ => none
   | v :: _, 0 => some v
   | _ :: l, k + 1 => back l k
 
-/-- In the record before `u + k + 1`, the value `k + 1` steps back is the value at `u`. -/
+/-- In the prefix before `u + k + 1`, the value `k + 1` steps back is the value at `u`. -/
 theorem back_prefix (o : Nat → O) (u : Nat) : ∀ k, back (prefixOf o (u + k + 1)) k = some (o u)
   | 0 => rfl
   | k + 1 => back_prefix o u k
 
-/-- Before `t`, every value `k + 1 ≤ t` steps back is in the record. -/
+/-- Before `t`, every value `k + 1 ≤ t` steps back is in the prefix. -/
 theorem back_made (o : Nat → O) {k t : Nat} (within : k < t) : ∃ v, back (prefixOf o t) k = some v :=
   let ⟨d, at_t⟩ := gap_of_lt within
   ⟨o d, (congrArg (fun n => back (prefixOf o n) k)
     (at_t.trans (congrArg Nat.succ (Nat.add_comm k d)))).trans (back_prefix o d k)⟩
 
-/-- A claim, made or not, is refuted by a value: it was made and the value differs. -/
+/-- A proposal, made or not (silence), misses a value: a value was proposed and the value that
+comes differs. -/
 def Misses (c : Option O) (v : O) : Prop := ∃ w, c = some w ∧ w ≠ v
 
-/-- Telling registered values apart decides refutation. -/
+/-- Values decided, a miss is decided. -/
 instance decMisses [DecidableEq O] : (c : Option O) → (v : O) → Decidable (Misses c v)
   | none, _ => isFalse fun ⟨_, made, _⟩ => nomatch made
   | some w, v =>
@@ -186,17 +191,17 @@ instance decMisses [DecidableEq O] : (c : Option O) → (v : O) → Decidable (M
       differs ((Option.some.inj made).symm.trans same)
     | isFalse differs => isTrue ⟨w, rfl, differs⟩
 
-/-- A claim made and not refuted by a value is that value. -/
+/-- A value proposed that does not miss a value is that value. -/
 theorem eq_of_not_missed [DecidableEq O] {w v : O} (unrefuted : ¬ Misses (some w) v) : w = v :=
   match decEq w v with
   | isTrue same => same
   | isFalse differs => absurd ⟨w, rfl, differs⟩ unrefuted
 
-/-- A claim that is the value is not refuted by it. -/
+/-- A proposed value does not miss itself. -/
 theorem not_missed_self {v : O} : ¬ Misses (some v) v :=
   fun ⟨_, made, differs⟩ => differs (Option.some.inj made).symm
 
-/-- The claim of `pred` at step `t`, made from the record before `t`, is refuted on `o`. -/
+/-- The value `pred` proposes at step `t`, from the prefix before `t`, misses on `o`. -/
 def MissesAt (pred : List O → Option O) (o : Nat → O) (t : Nat) : Prop :=
   Misses (pred (prefixOf o t)) (o t)
 
@@ -204,12 +209,12 @@ instance decMissesAt [DecidableEq O] (pred : List O → Option O) (o : Nat → O
     Decidable (MissesAt pred o t) :=
   decMisses _ _
 
-/-- `pred` is refuted at no step of `o`: every claim it makes on `o` is right. -/
+/-- `pred` accords with `o`: it misses at no step, so every value it proposes on `o` is right. -/
 def Accords (pred : List O → Option O) (o : Nat → O) : Prop := ∀ t, ¬ MissesAt pred o t
 
 end Record
 
-/-! ## No record fixes what comes next -/
+/-! ## No prefix fixes what comes next -/
 
 section Ahead
 
@@ -226,9 +231,9 @@ theorem holdFrom_after (o : Nat → O) {t : Nat} (x : O) {n : Nat} (after : t �
     holdFrom o t x n = x :=
   if_neg fun before => Nat.lt_irrefl n (Nat.lt_of_lt_of_le before after)
 
-/-- **No record fixes the next value.** For every course and every step `t`, given two values
-there are two courses with the same record before `t`, taking the one value and the other at
-`t`; a claim made from that record is not right on both. Nothing about the course is
+/-- **No prefix fixes the next value.** For every course and every step `t`, given two values
+there are two courses with the same prefix before `t`, taking the one value and the other at
+`t`; a value proposed from that prefix is not right on both. Nothing about the course is
 assumed. -/
 theorem no_prefix_fixes_next (pred : List O → Option O) (o : Nat → O) (t : Nat) {x y : O}
     (two : x ≠ y) {w : O} (claims : pred (prefixOf o t) = some w) :
@@ -246,7 +251,7 @@ theorem no_prefix_fixes_next (pred : List O → Option O) (o : Nat → O) (t : N
       right_y ⟨w, (congrArg pred same_y).trans claims, fun to_y =>
         two ((to_x.trans at_x).symm.trans (to_y.trans at_y))⟩⟩⟩
 
-/-- **Values decided, a claim from the record is refuted on one of the two courses.** -/
+/-- **Values decided, a value proposed from the prefix misses on one of the two courses.** -/
 theorem claim_missed_on_one [DecidableEq O] (pred : List O → Option O) (o : Nat → O) (t : Nat)
     {x y : O} (two : x ≠ y) {w : O} (claims : pred (prefixOf o t) = some w) :
     MissesAt pred (holdFrom o t x) t ∨ MissesAt pred (holdFrom o t y) t :=
@@ -262,35 +267,36 @@ theorem claim_missed_on_one [DecidableEq O] (pred : List O → Option O) (o : Na
 
 end Ahead
 
-/-! ## The diagonal: a course answering every claim against it -/
+/-! ## The diagonal: a course on which every proposed value misses -/
 
 section Diagonal
 
 variable {O : Type u}
 
-/-- The answer to a claim: `other w` against a claim `w`, `x` where none is made. -/
+/-- The value set against a proposal: `other w` where `w` is proposed, `x` where none is. -/
 def answerTo (other : O → O) (x : O) : Option O → O
   | some w => other w
   | none => x
 
-/-- One step of the law that answers `pred`: the answer to its claim joins the record. -/
+/-- One step of the law of `pred`'s diagonal course: the value set against its proposal joins
+the prefix. -/
 def answerStep (pred : List O → Option O) (other : O → O) (x : O) (l : List O) : List O :=
   answerTo other x (pred l) :: l
 
-/-- The course answering every claim of `pred` against it: the registration, latest value, of
-the law `answerStep`, which keeps its record. -/
+/-- The course on which every value `pred` proposes misses: the latest value of the orbit of the
+law `answerStep`, which keeps the whole prefix. -/
 def diagonal (pred : List O → Option O) (other : O → O) (x : O) (t : Nat) : O :=
   answerTo other x (pred (Law.orbit (answerStep pred other x) [] t))
 
-/-- The record of the diagonal course is the orbit of the law that keeps it. -/
+/-- The prefix of the diagonal course is the orbit of the law that keeps it. -/
 theorem prefix_diagonal (pred : List O → Option O) (other : O → O) (x : O) :
     ∀ t, prefixOf (diagonal pred other x) t = Law.orbit (answerStep pred other x) [] t
   | 0 => rfl
   | t + 1 => congrArg (List.cons (diagonal pred other x t)) (prefix_diagonal pred other x t)
 
-/-- **Every claim is answered.** Where `other` moves every value, every claim `pred` makes
-on the diagonal course is refuted at its step. It holds of every `pred`: of every learner,
-whatever it holds and however it revises. -/
+/-- **Every proposed value misses on the diagonal course.** Where `other` moves every value,
+every value `pred` proposes on its diagonal course misses at its step. It holds of every
+`pred`: of every extrapolation, whatever candidates it goes through and however it revises. -/
 theorem diagonal_misses (pred : List O → Option O) {other : O → O} (moves : ∀ v, other v ≠ v)
     (x : O) {t : Nat} {w : O} (claims : pred (prefixOf (diagonal pred other x) t) = some w) :
     MissesAt pred (diagonal pred other x) t :=
@@ -299,8 +305,8 @@ theorem diagonal_misses (pred : List O → Option O) {other : O → O} (moves : 
   have answered : diagonal pred other x t = other w := congrArg (answerTo other x) at_orbit
   ⟨w, claims, fun same => moves w (same.trans answered).symm⟩
 
-/-- **No learner comes to rest on every course.** On the diagonal course of `pred`, at no step
-from which on `pred` claims and is right. -/
+/-- **No extrapolation comes to rest on every course.** On the diagonal course of `pred` there
+is no step from which on `pred` proposes a value and is right. -/
 theorem diagonal_unrested (pred : List O → Option O) {other : O → O} (moves : ∀ v, other v ≠ v)
     (x : O) : ¬ ∃ T, ∀ t, T ≤ t → pred (prefixOf (diagonal pred other x) t) =
       some (diagonal pred other x t) :=
@@ -309,14 +315,14 @@ theorem diagonal_unrested (pred : List O → Option O) {other : O → O} (moves 
     | ⟨_, made, differs⟩ =>
       differs (Option.some.inj ((rests T (Nat.le_refl T)).symm.trans made)).symm
 
-/-- The law keeping the record holds `t` values at step `t`. -/
+/-- The law keeping the prefix holds `t` values at step `t`. -/
 theorem answer_orbit_length (pred : List O → Option O) (other : O → O) (x : O) :
     ∀ t, (Law.orbit (answerStep pred other x) [] t).length = t
   | 0 => rfl
   | t + 1 => congrArg Nat.succ (answer_orbit_length pred other x t)
 
-/-- **The answering world is open.** No list holds the configurations of the law whose
-registration is the diagonal course: it keeps its record, so it never returns
+/-- **The diagonal world is open.** No list holds the configurations of the law whose orbit,
+read at its latest value, is the diagonal course: it keeps the whole prefix, so it never returns
 (`unlisted_of_new` of `Becoming.Recurrence`). -/
 theorem diagonal_open (pred : List O → Option O) (other : O → O) (x : O) :
     ¬ ∃ l : List (List O), ∀ n, Law.orbit (answerStep pred other x) [] n ∈ l :=
@@ -335,20 +341,20 @@ theorem swapTo_moves [DecidableEq O] {x y : O} (two : x ≠ y) : ∀ v, swapTo x
 
 end Diagonal
 
-/-! ## Learning by refutation -/
+/-! ## Extrapolation by elimination -/
 
 section Refutation
 
 variable {O : Type u} [DecidableEq O]
 
-/-- Learning by refutation over hypotheses `H`: from a record, the index of the hypothesis
-held, starting at `0` and moving to the next exactly where the one held is refuted. The index
-is the number of refutations so far. -/
+/-- Elimination over candidates `H`: from a prefix, the index of the current candidate,
+starting at `0` and moving to the next exactly where the current one misses. The index is the
+number of misses so far. -/
 def indexOn (H : Nat → List O → Option O) : List O → Nat
   | [] => 0
   | v :: l => if Misses (H (indexOn H l) l) v then indexOn H l + 1 else indexOn H l
 
-/-- The learner by refutation: the claim of the hypothesis it holds. -/
+/-- The extrapolation by elimination: the value proposed by the current candidate. -/
 def byElimination (H : Nat → List O → Option O) (l : List O) : Option O := H (indexOn H l) l
 
 /-- The index held at step `t` of `o`. -/
@@ -383,8 +389,9 @@ theorem index_mono_le {T t : Nat} (le : T ≤ t) : index H o T ≤ index H o t :
   let ⟨d, at_t⟩ := gap_of_le le
   Eq.subst (motive := fun n => index H o T ≤ index H o n) at_t.symm (index_mono T d)
 
-/-- **The learner never passes a hypothesis that holds.** Where hypothesis `j` is refuted at
-no step of `o`, the learner holds no hypothesis beyond `j`: it is refuted at most `j` times. -/
+/-- **The extrapolation by elimination never passes a candidate that accords.** Where candidate
+`j` misses at no step of `o`, the current candidate is never beyond `j`: it misses at most `j`
+times. -/
 theorem index_le_of_accords {j : Nat} (holds : Accords (H j) o) : ∀ t, index H o t ≤ j
   | 0 => Nat.zero_le j
   | t + 1 =>
@@ -396,8 +403,8 @@ theorem index_le_of_accords {j : Nat} (holds : Accords (H j) o) : ∀ t, index H
         holds t (Eq.subst (motive := fun n => Misses (H n (prefixOf o t)) (o t)) at_j refuted)
       Nat.le_of_eq ((index_kept kept).trans at_j)
 
-/-- **Every hypothesis passed was refuted on the record.** Each hypothesis before the one held
-at `t` was held at some earlier step and refuted there. -/
+/-- **Every candidate passed missed at a step of the prefix.** Each candidate before the current
+one at `t` was current at some earlier step and missed there. -/
 theorem missed_before : ∀ (t k : Nat), k < index H o t →
     ∃ s, s < t ∧ index H o s = k ∧ MissesAt (H k) o s
   | 0, k, below => absurd below (Nat.not_lt_zero k)
@@ -418,7 +425,7 @@ theorem missed_before : ∀ (t k : Nat), k < index H o t →
         missed_before t k (Eq.subst (motive := fun n => k < n) (index_kept kept) below)
       ⟨s, Nat.lt_trans before (Nat.lt_succ_self t), held, refuted_s⟩
 
-/-- Refutations at arbitrarily late steps raise the index past every bound. -/
+/-- Misses at arbitrarily late steps raise the index past every bound. -/
 theorem index_unbounded (late : ∀ T, ∃ t, T ≤ t ∧ MissesAt (byElimination H) o t) :
     ∀ m, ∃ T, m ≤ index H o T
   | 0 => ⟨0, Nat.zero_le _⟩
@@ -428,16 +435,16 @@ theorem index_unbounded (late : ∀ T, ∃ t, T ≤ t ∧ MissesAt (byEliminatio
     ⟨t + 1, Nat.le_trans (Nat.succ_le_succ (Nat.le_trans reached (index_mono_le later)))
       (Nat.le_of_eq (index_missed refuted).symm)⟩
 
-/-- **Refutations are not unbounded where a hypothesis holds.** Where some hypothesis is refuted
-at no step of `o`, the learner is not refuted at arbitrarily late steps. -/
+/-- **Misses do not recur where a candidate accords.** Where some candidate misses at no step
+of `o`, the extrapolation by elimination does not miss at arbitrarily late steps. -/
 theorem misses_not_recurring {j : Nat} (holds : Accords (H j) o) :
     ¬ ∀ T, ∃ t, T ≤ t ∧ MissesAt (byElimination H) o t :=
   fun late =>
     let ⟨T, reached⟩ := index_unbounded late (j + 1)
     Nat.not_succ_le_self j (Nat.le_trans reached (index_le_of_accords holds T))
 
-/-- **The learner is through the record.** On two courses with the same record before `t`,
-the learner holds the same hypothesis and makes the same claim at `t`. -/
+/-- **The extrapolation is through the prefix.** On two courses with the same prefix before
+`t`, the current candidate and the proposed value at `t` are the same. -/
 theorem byElimination_through_prefix {o' : Nat → O} {t : Nat} (same : prefixOf o t = prefixOf o' t) :
     index H o t = index H o' t ∧ byElimination H (prefixOf o t) = byElimination H (prefixOf o' t) :=
   ⟨congrArg (indexOn H) same, congrArg (byElimination H) same⟩
@@ -482,7 +489,7 @@ variable {O : Type u}
 def Lasso (o : Nat → O) (i q : Nat) : Prop := ∀ u, i ≤ u → o (u + (q + 1)) = o u
 
 /-- **A world held by a list has a lasso course.** Under a determined law whose configurations
-along an orbit are held by a list `l`, every registration of the orbit repeats, from some step
+along an orbit are held by a list `l`, the orbit read through any map repeats, from some step
 `i` on, with some period `q + 1`, where `i + q + 1 ≤ l.length` (from `revisits_within`). -/
 theorem lasso_of_held {S : Type v} {next : S → S} {s : S} {l : List S}
     (held : ∀ n, Law.orbit next s n ∈ l) (reg : S → O) :
@@ -547,7 +554,8 @@ theorem lasso_positions {o : Nat → O} {i q : Nat} (lasso : Lasso o i q) :
                 ((agree (k + 1)).trans (congrArg o (Nat.succ_add n k).symm)))))⟩
 
 /-- **A lasso course is the course of a world held by a list.** The lasso world on positions
-`0, …, i + q` is held by the list of its positions and registers `o` at every step. -/
+`0, …, i + q` is held by the list of its positions and, read through `o`, takes the values of
+`o` at every step. -/
 theorem lasso_realized {o : Nat → O} {i q : Nat} (lasso : Lasso o i q) :
     (∀ n, Law.orbit (lassoNext i q) 0 n ∈ upto (i + q)) ∧
       ∀ n, o (Law.orbit (lassoNext i q) 0 n) = o n :=
@@ -558,10 +566,10 @@ theorem holdFrom_lasso (o : Nat → O) (t : Nat) (x : O) : Lasso (holdFrom o t x
   fun u later => (holdFrom_after o x (Nat.le_trans later (Nat.le_succ u))).trans
     (holdFrom_after o x later).symm
 
-/-- **Not even within finite worlds does a record fix the next value.** The two courses of
+/-- **Not even within finite worlds does a prefix fix the next value.** The two courses of
 `no_prefix_fixes_next` are lasso courses, so courses of worlds held by a list
-(`lasso_realized`): whatever a learner claims next from a record, some finite world with that
-record refutes it. -/
+(`lasso_realized`): whatever value an extrapolation proposes next from a prefix, it misses in
+some finite world with that prefix. -/
 theorem no_prefix_fixes_next_finite (pred : List O → Option O) (o : Nat → O) (t : Nat)
     {x y : O} (two : x ≠ y) {w : O} (claims : pred (prefixOf o t) = some w) :
     Lasso (holdFrom o t x) t 0 ∧ Lasso (holdFrom o t y) t 0 ∧
@@ -570,8 +578,8 @@ theorem no_prefix_fixes_next_finite (pred : List O → Option O) (o : Nat → O)
   let ⟨same_x, same_y, _, _, one⟩ := no_prefix_fixes_next pred o t two claims
   ⟨holdFrom_lasso o t x, holdFrom_lasso o t y, same_x, same_y, one⟩
 
-/-- The lasso hypothesis `h = (i, q)`: at a step `t` with `i + q + 1 ≤ t` it claims the value
-`q + 1` steps back; before, it claims nothing. -/
+/-- The lasso candidate `h = (i, q)`: at a step `t` with `i + q + 1 ≤ t` it proposes the value
+`q + 1` steps back; before, it stays silent. -/
 def lasso (h : Nat × Nat) (l : List O) : Option O :=
   if h.1 + h.2 + 1 ≤ l.length then back l h.2 else none
 
@@ -584,7 +592,7 @@ theorem lasso_silent {o : Nat → O} {h : Nat × Nat} {t : Nat} (early : t < h.1
   if_neg fun within => Nat.lt_irrefl t (Nat.lt_of_lt_of_le early
     (Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) (prefix_length o t) within))
 
-/-- **A lasso hypothesis holds of its course.** -/
+/-- **A lasso candidate accords with its course.** -/
 theorem lasso_accords {o : Nat → O} {i q : Nat} (repeats : Lasso o i q) : Accords (lasso (i, q)) o :=
   fun t ⟨_, claims, differs⟩ =>
     match Nat.lt_or_ge t (i + q + 1) with
@@ -602,7 +610,7 @@ theorem lasso_accords {o : Nat → O} {i q : Nat} (repeats : Lasso o i q) : Acco
 
 end Lassos
 
-/-! ## The lasso hypotheses in order -/
+/-! ## The lasso candidates in order -/
 
 section Order
 
@@ -665,7 +673,7 @@ theorem tri_mono (m : Nat) : ∀ d, tri m ≤ tri (m + d)
 theorem place_lt (i q : Nat) : tri (i + q) + q < tri (i + q + 1) :=
   Nat.succ_le_succ (Nat.add_le_add_left (Nat.le_add_left q i) (tri (i + q)))
 
-/-- The lasso hypotheses in the order of their pairs. -/
+/-- The lasso candidates in the order of their pairs. -/
 def lassos {O : Type u} : Nat → List O → Option O := fun k => lasso (pairAt k)
 
 end Order
@@ -676,11 +684,11 @@ section LearningLassos
 
 variable {O : Type u} [DecidableEq O] {o : Nat → O}
 
-/-- **On a lasso course the learner's refutations are bounded.** On a course repeating from step `i` with
-period `q + 1`, the learner by refutation over the lasso hypotheses, which knows neither `i`
-nor `q`: holds no hypothesis beyond place `tri (i + q) + q`, so it is refuted at most that
-many times; claims at every step from `i + q + 1` on; and is not refuted at arbitrarily late
-steps. -/
+/-- **On a lasso course the misses of elimination are bounded.** On a course repeating from step
+`i` with period `q + 1`, the extrapolation by elimination over the lasso candidates, which is
+given neither `i` nor `q`: its current candidate is never beyond place `tri (i + q) + q`,
+so it misses at most that many times; it proposes at every step from `i + q + 1` on; and it does
+not miss at arbitrarily late steps. -/
 theorem lasso_byElimination_bounded {i q : Nat} (repeats : Lasso o i q) :
     (∀ t, index lassos o t ≤ tri (i + q) + q) ∧
       (∀ t, i + q + 1 ≤ t → ∃ v, byElimination lassos (prefixOf o t) = some v) ∧
@@ -701,10 +709,10 @@ theorem lasso_byElimination_bounded {i q : Nat} (repeats : Lasso o i q) :
     ⟨v, (lasso_claims claims_at).trans found⟩,
    misses_not_recurring holds⟩
 
-/-- **On a lasso course, that the learner comes to rest is unrefuted.** It is not refuted that
-from some step on it claims at every step and is right (a double negation); the step is not
-stated here. The learner's record never shows that it rests: given two values, a claim made
-from a record is not right on both of two courses that share the record and differ at its next
+/-- **On a lasso course, that elimination comes to rest is unrefuted.** It is not refuted that
+from some step on it proposes at every step and is right (a double negation); the step is not
+stated here. Its prefix never shows that it rests: given two values, a value proposed from a
+prefix is not right on both of two courses that share the prefix and differ at its next
 step (`no_prefix_fixes_next`). -/
 theorem rest_unrefuted {i q : Nat} (repeats : Lasso o i q) :
     ¬ ¬ ∃ T, ∀ t, T ≤ t → byElimination lassos (prefixOf o t) = some (o t) :=
@@ -720,8 +728,8 @@ theorem rest_unrefuted {i q : Nat} (repeats : Lasso o i q) :
       made.trans (congrArg some (eq_of_not_missed fun refuted =>
         kept (Eq.subst (motive := fun c => Misses c (o t)) made.symm refuted)))⟩
 
-/-- **The learner comes to rest only on lasso courses.** Where from step `T` on it claims at
-every step and is right, the course repeats from some step on. -/
+/-- **Elimination over the lasso candidates comes to rest only on lasso courses.** Where from
+step `T` on it proposes at every step and is right, the course repeats from some step on. -/
 theorem lasso_of_rest {T : Nat} (rests : ∀ t, T ≤ t → byElimination lassos (prefixOf o t) = some (o t)) :
     ∃ i q, Lasso o i q :=
   have kept : ∀ t, T ≤ t → ¬ MissesAt (byElimination lassos) o t := fun t later =>
@@ -745,11 +753,12 @@ theorem lasso_of_rest {T : Nat} (rests : ∀ t, T ≤ t → byElimination lassos
         ((lasso_claims within).trans (back_prefix o u h.2))
     (Option.some.inj ((rests (u + h.2 + 1) past_T).symm.trans claim))⟩
 
-/-- **Induction in a world held by a list: the refutations are bounded.** Under a determined law
-whose configurations along an orbit are held by a list `l`, the learner by refutation over the
-lasso hypotheses, reading only a registration it can tell apart and knowing neither the
-configurations nor how many there are: is refuted fewer than `tri l.length` times; claims at
-every step from `l.length` on; and is not refuted at arbitrarily late steps. -/
+/-- **Induction in a world held by a list: the misses are bounded.** Under a determined law
+whose configurations along an orbit are held by a list `l`, the extrapolation by elimination
+over the lasso candidates, proposing from the orbit's prefix through a map `reg` with decided
+values and given neither the configurations nor their number: misses fewer than
+`tri l.length` times; proposes at every step from `l.length` on; and does not miss at
+arbitrarily late steps. -/
 theorem held_byElimination_bounded {S : Type v} {next : S → S} {s : S} {l : List S}
     (held : ∀ n, Law.orbit next s n ∈ l) (reg : S → O) :
     (∀ t, index lassos (fun n => reg (Law.orbit next s n)) t < tri l.length) ∧
@@ -765,10 +774,10 @@ theorem held_byElimination_bounded {S : Type v} {next : S → S} {s : S} {l : Li
   ⟨fun t => Nat.lt_of_le_of_lt (bound t) top,
    fun t later => claims t (Nat.le_trans within later), stop⟩
 
-/-- **Induction in a world held by a list: that the learner comes to rest is unrefuted.** Under a
-determined law whose configurations along an orbit are held by a list, it is not refuted that
-from some step on the learner over the lasso hypotheses claims at every step and is right (a
-double negation). -/
+/-- **Induction in a world held by a list: that elimination comes to rest is unrefuted.** Under
+a determined law whose configurations along an orbit are held by a list, it is not refuted that
+from some step on the extrapolation by elimination over the lasso candidates proposes at every
+step and is right (a double negation). -/
 theorem held_rest_unrefuted {S : Type v} {next : S → S} {s : S} {l : List S}
     (held : ∀ n, Law.orbit next s n ∈ l) (reg : S → O) :
     ¬ ¬ ∃ T, ∀ t, T ≤ t → byElimination lassos (prefixOf (fun n => reg (Law.orbit next s n)) t) =
@@ -776,8 +785,8 @@ theorem held_rest_unrefuted {S : Type v} {next : S → S} {s : S} {l : List S}
   let ⟨_, _, _, repeats⟩ := lasso_of_held held reg
   rest_unrefuted repeats
 
-/-- **The answering world is no lasso.** The diagonal course of the learner over the lasso
-hypotheses repeats from no step: it is the course of no world held by a list. -/
+/-- **The diagonal world is no lasso.** The diagonal course of elimination over the lasso
+candidates repeats from no step: it is the course of no world held by a list. -/
 theorem diagonal_not_lasso {other : O → O} (moves : ∀ v, other v ≠ v) (x : O) {i q : Nat} :
     ¬ Lasso (diagonal (byElimination lassos) other x) i q :=
   fun repeats => rest_unrefuted repeats fun ⟨T, rests⟩ =>
@@ -791,22 +800,22 @@ section Meta
 
 variable {O : Type u} [DecidableEq O] {o : Nat → O}
 
-/-- Classes of hypotheses merged into one enumeration along the pairs. -/
+/-- Classes of candidates merged into one enumeration along the pairs. -/
 def merged (G : Nat → Nat → List O → Option O) : Nat → List O → Option O :=
   fun k => G (pairAt k).1 (pairAt k).2
 
-/-- **Learning over classes is learning by refutation.** Where hypothesis `j` of class `c`
-holds, the learner by refutation over the merged enumeration holds no hypothesis beyond place
+/-- **Learning over classes is elimination again.** Where candidate `j` of class `c` accords,
+the current candidate of elimination over the merged enumeration is never beyond place
 `tri (c + j) + j`: choosing a class is learning with the same law, one enumeration wider. -/
 theorem merged_bound (G : Nat → Nat → List O → Option O) {c j : Nat} (holds : Accords (G c j) o) :
     ∀ t, index (merged G) o t ≤ tri (c + j) + j :=
   index_le_of_accords (H := merged G)
     (Eq.subst (motive := fun h : Nat × Nat => Accords (G h.1 h.2) o) (pairAt_place c j).symm holds)
 
-/-- **The learner over every merging is unrested on its diagonal course.** However the classes
-are chosen and merged, the learner over them is refuted at every claim on its diagonal course,
-which no list holds (`diagonal_misses`, `diagonal_open`). Read as no top level: learning at
-the next level up is again learning, and again incomplete. -/
+/-- **Elimination over every merging is unrested on its diagonal course.** However the classes
+are chosen and merged, every value elimination over them proposes on its diagonal course misses,
+and no list holds that world (`diagonal_misses`, `diagonal_open`). Read as no top level:
+learning at the next level up is again learning, and again incomplete. -/
 theorem merged_unrested (G : Nat → Nat → List O → Option O) {other : O → O} (moves : ∀ v, other v ≠ v)
     (x : O) : ¬ ∃ T, ∀ t, T ≤ t → byElimination (merged G) (prefixOf (diagonal (byElimination (merged G))
       other x) t) = some (diagonal (byElimination (merged G)) other x t) :=
@@ -873,7 +882,7 @@ theorem determines_lumped_iff [DecidableEq K] {π : I → K} {data : List I} {x 
    lumped_determines⟩
 
 /-- **The transfer is right exactly where the world goes alike across the lumping.** A member
-of the class fitting the world `f` on the data claims at `x` the value of an observed input
+of the class fitting the world `f` on the data takes at `x` the value of an observed input
 lumped with `x`; it is right exactly where `f` takes one value at the two. -/
 theorem lumped_right_iff {π : I → K} {D : I → Prop} {f g : I → V} {x d : I}
     (lumped : Lumped π g) (fits : ∀ i, D i → g i = f i) (at_d : D d) (same : π d = π x) :
@@ -930,7 +939,7 @@ theorem goAlike_iff_at {P : Process S A} {π : S → K} :
 
 /-- **A law of change generalizes exactly where the step goes alike.** Under a determined
 process, the outcome of `a` observed at `s₀`, read through `π`, transfers to every step of `a`
-from `s` exactly where `s₀` and `s` go alike under `π` by `a`. The record does not fix this
+from `s` exactly where `s₀` and `s` go alike under `π` by `a`. The prefix does not fix this
 before `a` is taken at `s` (`Run.not_fixesThrough_of_goAlike` of `Becoming.Mechanism`). -/
 theorem transfer_right_iff {P : Process S A} {π : S → K} (determined : Determined P)
     {s₀ s : S} {a : A} {u₀ : S} (observed : P.step s₀ a u₀) :
@@ -963,8 +972,8 @@ def Through (alike : X → X → Prop) (select : X → Prop) : Prop :=
 /-- Two functions agree on the data. -/
 def AgreeOn (D : I → Prop) (g g' : I → V) : Prop := ∀ i, D i → g i = g' i
 
-/-- P64's selection through a formation's registration is a selection through registering
-alike. -/
+/-- P64's selection through a formation's couplings is a selection through the classes of
+histories alike through them. -/
 theorem web_selectsThrough_iff {F C : Type} {W : Web F C} {obs : F → C → Prop} {f : F}
     {t : Nat} {select : (Nat → C → Nat) → Prop} :
     W.SelectsThrough obs f t select ↔
@@ -1149,12 +1158,12 @@ theorem repeats : Lasso course 0 1 :=
     | true => rfl
     | false => rfl
 
-/-- The learner is refuted twice, at steps `1` and `2`, and holds the hypothesis `(0, 1)`
+/-- Elimination misses twice, at steps `1` and `2`, and its current candidate is `(0, 1)`
 from step `3` on. -/
 theorem index_three : index lassos course 3 = 2 := rfl
 
-/-- **Two refutations, then rest.** From step `3` on the learner holds `(0, 1)`, the place
-`tri 1 + 1 = 2` of `lasso_byElimination_bounded`, and claims each value right. -/
+/-- **Two misses, then rest.** From step `3` on the current candidate is `(0, 1)`, the place
+`tri 1 + 1 = 2` of `lasso_byElimination_bounded`, and each value it proposes is right. -/
 theorem rests : ∀ t, 3 ≤ t → byElimination lassos (prefixOf course t) = some (course t) :=
   fun t later =>
     have held : index lassos course t = 2 :=

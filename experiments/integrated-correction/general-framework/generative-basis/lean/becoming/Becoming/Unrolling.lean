@@ -38,7 +38,8 @@ what it needs to be given, with no premise.
 * **Learnable exactly where a reading of the future.** In a world a list holds, a feature is
   learnable through the map exactly where some reading of futures, respecting values at each step,
   is the feature from some step on along every orbit (`Learnable.learnable_iff_reading`). The
-  reading of the first direction is given the world, the law and the feature (`Learnable.fromWorld`):
+  reading of the first direction is built from the list, the law and the feature
+  (`Learnable.fromWorld`):
   configurations as many steps on as the list is long return (`Law.returns_of_reachable`), and
   returning configurations whose features agree from some step on have equal features
   (`Learnable.eq_of_returns`), so on them the feature is fixed by the future
@@ -195,8 +196,9 @@ def readAt (next : S → S) (reg : S → R) (l : List S) (f : Nat → Option R) 
         (l.length + l.length - 1))
     (fun _ => decEq _ _) l
 
-/-- **The reading given the world**: the feature of the configuration read for a future, as many
-steps on as the list is long; `v₀` where no configuration of the list is read. -/
+/-- **The reading built from the list** (with the law, the map and the feature): the feature of
+the configuration read for a future, as many steps on as the list is long; `v₀` where no
+configuration of the list is read. -/
 def fromWorld (next : S → S) (reg : S → R) (val : S → V) (l : List S) (v₀ : V)
     (f : Nat → Option R) : V :=
   (readAt next reg l f).elim v₀ fun x => val (Law.orbit next x l.length)
@@ -212,7 +214,7 @@ theorem fromWorld_respects (next : S → S) (reg : S → R) (val : S → V) (l :
 /-- **Where features agree across the same future, each is a reading of the future.** In a world
 a list holds, where configurations with the same future through the map have features agreeing
 from some step on, the feature at every configuration as many steps on as the list is long is the
-reading given the world of its future. -/
+reading built from the list of its future. -/
 theorem reads_of_agree {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) (v₀ : V)
     (agree : ∀ s s', Law.SameFuture next reg s s' →

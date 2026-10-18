@@ -2,18 +2,18 @@ import Becoming.Description
 import Becoming.Refinement
 
 /-!
-# Identification: what a bounded record fixes
+# Identification: what a bounded prefix fixes
 
 Read as a truth that modelling projects, the projection being where the limit lies, an
 unfolding leaves three questions: whether it has a law of this kind, deriving the law from a
-finite record, and naming the classes of the split that makes sense without an axiom.
-`Becoming.Description` answers the first: every registered
-history is a law read through a registration, and its states are read off it
-(`alike_moments_iff`, `finitely_many_states_iff`). `Becoming.Learning` shows that no record
-fixes the next value, not even among worlds a list holds; that a learner by refutation that
-is not given how many configurations there are comes to rest is unrefuted
-(`held_rest_unrefuted`), and its record never shows that it has: given two values, every claim
-it makes is refuted, at that step, on a course of a world held by a list sharing its record
+finite prefix, and naming the classes of the split that makes sense without an axiom.
+`Becoming.Description` answers the first: every history read through a map is a law read
+through a map, and its states are read off it
+(`alike_moments_iff`, `finitely_many_states_iff`). `Becoming.Learning` shows that no prefix
+fixes the next value, not even among worlds a list holds; that the extrapolation by elimination,
+not given the number of configurations, comes to rest is unrefuted
+(`held_rest_unrefuted`), and its prefix never shows that it has: given two values, every value
+it proposes misses, at that step, on a course of a world held by a list sharing its prefix
 (`no_prefix_fixes_next_finite`). This module states what the situation adds: a bound on its
 states. With no premise beyond the bound:
 
@@ -21,72 +21,73 @@ states. With no premise beyond the bound:
   first `p` steps comes back after `Q` steps at every step (`period_extends`; Fine and Wilf,
   1965). So two courses repeating from steps `i`, `i'` with periods `q + 1`, `q' + 1` that agree
   before `(i + q + 1) + (i' + q')` agree at every step (`lassos_agree`).
-* **A bounded record fixes the course.** A history has at most `N` states exactly where it
+* **A bounded prefix fixes the course.** A history has at most `N` states exactly where it
   repeats from some step `i` with some period `q + 1`, `i + q + 1 ≤ N`
   (`statesBelow_iff_lasso`). Two histories with at most `N` and `N'` states that agree before
-  `N + N' - 1` agree at every step (`bounded_agree`): their records before `N + N' - 1` fix
+  `N + N' - 1` agree at every step (`bounded_agree`): their prefixes before `N + N' - 1` fix
   them (`prefix_fixes`). Before `N + N' - 2` they do not: for every `T` a history with one
-  state and one with `T + 1` share their record before `T` and differ at `T`
+  state and one with `T + 1` share their prefix before `T` and differ at `T`
   (`prefix_short`), for every `N ≥ 2` two histories with at most `N` states share their
-  record before `N + N - 2` and differ there (`prefix_short_twice`), and for every `N` and `N'`
-  a history with at most `N` states and one with at most `N'` share their record before
+  prefix before `N + N - 2` and differ there (`prefix_short_twice`), and for every `N` and `N'`
+  a history with at most `N` states and one with at most `N'` share their prefix before
   `N + N' - 2` and differ there (`bounded_agree_exact`): the length `N + N' - 1` is exact for
-  every pair of bounds. Records are equal exactly where the courses agree before their length
+  every pair of bounds. Prefixes are equal exactly where the courses agree before their length
   (`prefix_eq_iff`).
 * **Induction is deduction where the bound is given.** On a history with at most `N` states, a
-  lasso hypothesis within `N` that the record before `N + N - 1` bears out is the law of the
+  lasso candidate within `N` that the prefix before `N + N - 1` bears out is the law of the
   whole course (`lasso_of_fits`, `bounded_induction`), and one always is
-  (`bounded_hypothesis`). The learner given `N` (`withBound`), silent before step
-  `N + N - 1` and from then on claiming by the first hypothesis within `N` that the record bears
-  out, is refuted at no step of any history with at most `N` states and is right at every step
-  from `N + N - 1` on (`withBound_accords`, `withBound_exact`). No learner refuted at no step of every
-  history with at most `N ≥ 2` states claims at step `N + N - 2` on each of them
-  (`withBound_earliest`): the learner given the bound speaks as early as any can. The
+  (`bounded_hypothesis`). The extrapolation given the bound `N` (`withBound`), silent before step
+  `N + N - 1` and from then on proposing by the first candidate within `N` that the prefix bears
+  out, misses at no step of any history with at most `N` states and is right at every step
+  from `N + N - 1` on (`withBound_accords`, `withBound_exact`). No extrapolation that misses at no
+  step of every history with at most `N ≥ 2` states proposes at step `N + N - 2` on each of them
+  (`withBound_earliest`): the extrapolation given the bound proposes as early as any can. The
   two-valued negation, on which no fixed value is borne out (`Diagonal.revision_never_rests`), is
-  derived from step `3` on by the learner given two states (`negation_derived`).
-* **The learner not given the bound rests within it.** A lasso hypothesis within `N`
-  refuted at no step of a stretch of `N + N - 1` steps is refuted at no later step
-  (`no_miss_persists`). So on a history with at most `N` states the learner by refutation
-  over the lasso hypotheses, given neither `N` nor the course, claims at every step from
+  derived from step `3` on by the extrapolation given two states (`negation_derived`).
+* **Elimination not given the bound rests within it.** A lasso candidate within `N` that misses
+  at no step of a stretch of `N + N - 1` steps misses at no later step
+  (`no_miss_persists`). So on a history with at most `N` states the extrapolation by elimination
+  over the lasso candidates, given neither `N` nor the course, proposes at every step from
   `N + (N + N - 1) * tri N` on and is right (`byElimination_rests`); in a world a list holds, `N` is
   the list's length (`held_byElimination_rests`), and on a lasso course the rest that
   `Becoming.Learning` leaves unrefuted is found (`rests_of_lasso`). The step is a function of
-  the bound, which the learner does not have: its record does not show it. The step is cubic in
-  `N`: on the two-valued negation along a cycle of `N = 2m + 3` places, which is broken once in
-  every turn, the learner is refuted at step `(N³ - N) / 4` (`byElimination_missed_late`), each even
-  shift it passes costing a whole turn, so no earlier step bounds its rest on every history with
-  at most `N` states (`byElimination_rest_cubic`).
-* **The rest step needs no bound.** The learner by the least bound (`leastBound`), given no
-  bound, claims by the first lasso hypothesis the record bears out within the least bound within
-  which one is; it is right at every step from `N + N - 1` on of every history with at most `N`
-  states, for every `N` (`leastBound_exact`). No learner, given the bound or not, is right at step
-  `N + N - 2` on every such history for `N ≥ 2` (`rest_earliest`), so `N + N - 1` is the optimal
-  rest step and being given the bound does not move it. What the bound buys is silence: no learner
-  right at step `1` on every history with one state is refuted at no step of every history with
-  two states (`rest_without_bound_missed`), while the learner given the bound is silent before
-  `N + N - 1` and refuted nowhere (`withBound_accords`).
-* **A world answering its own learner exceeds the bound.** The course that answers every claim
-  of the learner given `N` has more than `N` states (`answer_exceeds_bound`): a world that
-  includes the learner and answers it is not within the bound the learner is given.
+  the bound, which the extrapolation is not given: its prefix does not show it. The step is
+  cubic in `N`: on the two-valued negation along a cycle of `N = 2m + 3` places, which is broken
+  once in every turn, elimination misses at step `(N³ - N) / 4` (`byElimination_missed_late`), each
+  even shift it passes costing a whole turn, so no earlier step bounds its rest on every history
+  with at most `N` states (`byElimination_rest_cubic`).
+* **The rest step needs no bound.** The extrapolation by the least bound (`leastBound`), given
+  no bound, proposes by the first lasso candidate the prefix bears out within the least
+  bound within which one is; it is right at every step from `N + N - 1` on of every history with
+  at most `N` states, for every `N` (`leastBound_exact`). No extrapolation, given the bound or
+  without, is right at step `N + N - 2` on every such history for `N ≥ 2` (`rest_earliest`), so
+  `N + N - 1` is the optimal rest step and being given the bound does not move it. What the bound buys is
+  silence: no extrapolation right at step `1` on every history with one state misses at no step
+  of every history with two states (`rest_without_bound_missed`), while the extrapolation with the
+  bound is silent before `N + N - 1` and misses nowhere (`withBound_accords`).
+* **The diagonal world of an extrapolation exceeds its bound.** The course on which every value
+  the extrapolation given the bound `N` proposes misses has more than `N` states
+  (`answer_exceeds_bound`): a world that contains the extrapolation and moves off every value it
+  proposes is not within the bound the extrapolation is given.
 * **The split that makes sense, named with no quotient.** In a world a list holds, under a
-  determined law, two configurations have the same registered future exactly where their
-  registered futures agree before `2N - 1` (`Law.sameFuture_iff_below`). Naming each
-  configuration by its registered future before that step, a finite list, makes sense
+  determined law, two configurations have the same future through the map exactly where their
+  futures through the map agree before `2N - 1` (`Law.sameFuture_iff_below`). Naming each
+  configuration by its future through the map before that step, a finite list, makes sense
   (`Law.name_identifiesAlike`); the names carry the law (`Law.name_carries`) and likeness is decided
-  by comparing them (`Law.decideAlike`). Naming by the whole registered future would need
+  by comparing them (`Law.decideAlike`). Naming by the whole future through the map would need
   function extensionality, which Lean proves from the quotient axiom `Quot.sound`; the bound
   makes the finite name enough. The states of a history with at most `N` states are read the same way
   (`sameAhead_iff_below`, `statesBelow_shift`).
 * **Moore's bound: within one world, `N - 1` steps.** Under a determined law, two members of a
-  list of `N` members closed under the law have the same registered future exactly where their
-  registered futures agree for `N - 1` steps, wherever the values of the members are compared
+  list of `N` members closed under the law have the same future through the map exactly where
+  their futures through the map agree for `N - 1` steps, wherever the values of the members are compared
   decidedly (`Law.sameFuture_iff_classes`). Agreeing for `k + 1` steps (`Law.AgreeTo`) is a chain
-  of equivalences, each finer than the one before (`Law.agreeTo_refining`); members registering
-  different values make two classes, each strict refinement adds one, and so the chain stops
+  of equivalences, each finer than the one before (`Law.agreeTo_refining`); members taking
+  different values through the map make two classes, each strict refinement adds one, and so the chain stops
   within `N - 2` (`Refining.steady_within` of `Becoming.Refinement`), after which, the law being
   determined, it never refines again (`Law.AgreeTo.steady_on`). For every `N ≥ 2` the bound is
-  exact: on a path of `N` positions to a last one that stays, registering only whether the last
-  is reached, the first two positions agree for `N - 2` steps and differ at the next
+  exact: on a path of `N` positions to a last one that stays, read through a map that takes only
+  whether the last is reached, the first two positions agree for `N - 2` steps and differ at the next
   (`Law.sameFuture_classes_exact`). Two moments of a history with at most `N` states whose
   values are decided are one state exactly where they agree for `N - 1` steps
   (`sameAhead_iff_classes`).
@@ -96,24 +97,25 @@ states. With no premise beyond the bound:
   (`Law.joinOrbits`) gives a labelling of the positions whose labels have one value each
   (`Law.joinOrbits_sound`); the labelling's agreements are its own, and Moore's bound for it
   carries over to the values. So two members of a list of `N` members closed under a determined
-  law have the same registered future exactly where their registered futures agree for `N - 1`
-  steps, with no premise (`Law.sameFuture_iff_within`), and two moments of a history with at
+  law have the same future through the map exactly where their futures through the map agree
+  for `N - 1` steps, with no premise (`Law.sameFuture_iff_within`), and two moments of a history with at
   most `N` states are one state exactly where they agree for `N - 1` steps
   (`sameAhead_iff_within`). Before this, with no decision, the agreement at every step was only
   refuted by nothing (`Law.sameFuture_classes_unrefuted`).
 
 The world in these statements is any world a list holds: a controller or a cognition inside it
-is part of what is registered, as in `Becoming.Description`'s `Law.adaptive_identifiesAlike_iff`.
+is part of the configuration the map reads, as in `Becoming.Description`'s
+`Law.adaptive_identifiesAlike_iff`.
 The bound `N + N' - 1` is the one of Fine and Wilf, and for two histories it is Moore's bound
 (1956) for the two systems taken together, attained for every pair of bounds. Within one world,
 or one history, the configurations share their classes, and Moore's bound is `N - 1`, with no
-premise. The learners here are learners in the limit in Gold's sense (Gold 1967, identification in
-the limit): the learner by refutation over the lasso hypotheses is identification by
-enumeration, and the learner given the bound (`withBound`) and the learner by the least bound
-(`leastBound`) identify every history with at most `N` states from step `N + N - 1` on, which is
-the Moore and Fine–Wilf bound read as a learning bound. The cubic step of the learner by
-refutation (`byElimination_rest_cubic`) is stated for the diagonal order in which `Learning.lassos`
-enumerates the hypotheses; another order is not covered.
+premise. The extrapolations here are what Gold calls learners in the limit (Gold 1967,
+identification in the limit): elimination over the lasso candidates is his identification by
+enumeration, and the extrapolation given the bound (`withBound`) and the extrapolation by the least
+bound (`leastBound`) fix every history with at most `N` states from step `N + N - 1` on, which is
+the Moore and Fine–Wilf bound read as a learning bound. The cubic step of elimination
+(`byElimination_rest_cubic`) is stated for the diagonal order in which `Learning.lassos`
+enumerates the candidates; another order is not covered.
 -/
 
 namespace Becoming
@@ -298,7 +300,7 @@ theorem lassoPos_period {i q : Nat} :
 
 end Positions
 
-/-! ## What a bounded record fixes -/
+/-! ## What a bounded prefix fixes -/
 
 section Bounded
 
@@ -348,7 +350,7 @@ theorem bounded_agree {o o' : Nat → O} {N N' : Nat} (bound : StatesBelow o N)
       Nat.sub_le_sub_right (Nat.add_le_add within within') 1
     lassos_agree lasso lasso' fun n lt => agree n (Nat.lt_of_lt_of_le lt short)
 
-/-- **Records are equal exactly where the courses agree before their length.** -/
+/-- **Prefixes are equal exactly where the courses agree before their length.** -/
 theorem prefix_eq_iff {o o' : Nat → O} : ∀ {T : Nat},
     Learning.prefixOf o T = Learning.prefixOf o' T ↔ ∀ n, n < T → o n = o' n
   | 0 => ⟨fun _ n lt => absurd lt (Nat.not_lt_zero n), fun _ => rfl⟩
@@ -364,7 +366,7 @@ theorem prefix_eq_iff {o o' : Nat → O} : ∀ {T : Nat},
           (congrArg o at_T).trans (now.trans (congrArg o' at_T).symm),
      Learning.prefix_congr⟩
 
-/-- **The record before `N + N' - 1` fixes a history with at most `N` states among those with at
+/-- **The prefix before `N + N' - 1` fixes a history with at most `N` states among those with at
 most `N'`.** -/
 theorem prefix_fixes {o o' : Nat → O} {N N' : Nat} (bound : StatesBelow o N)
     (bound' : StatesBelow o' N')
@@ -372,8 +374,8 @@ theorem prefix_fixes {o o' : Nat → O} {N N' : Nat} (bound : StatesBelow o N)
     ∀ n, o n = o' n :=
   bounded_agree bound bound' (prefix_eq_iff.mp same)
 
-/-- **The record before `N + N' - 2` does not.** For every `T`, given two values, a history
-with one state and one with at most `T + 1` share their record before `T` and differ at `T`
+/-- **The prefix before `N + N' - 2` does not.** For every `T`, given two values, a history
+with one state and one with at most `T + 1` share their prefix before `T` and differ at `T`
 (`Becoming.Learning`'s `holdFrom`). -/
 theorem prefix_short {x y : O} (two : x ≠ y) (T : Nat) :
     ∃ o o' : Nat → O, StatesBelow o 1 ∧ StatesBelow o' (T + 1) ∧
@@ -384,14 +386,14 @@ theorem prefix_short {x y : O} (two : x ≠ y) (T : Nat) :
    Learning.prefix_congr fun _ before => (Learning.holdFrom_before (fun _ => x) y before).symm,
    fun same => two (same.trans (Learning.holdFrom_after _ y (Nat.le_refl T)))⟩
 
-/-- The course of `Becoming.Learning`'s lasso world on positions `0, …, i + q` that registers `y`
-at position `m` and `x` elsewhere. -/
+/-- The course of `Becoming.Learning`'s lasso world on positions `0, …, i + q`, read through the
+map taking `y` at position `m` and `x` elsewhere. -/
 def mark (i q m : Nat) (x y : O) (n : Nat) : O :=
   if Law.orbit (Learning.lassoNext i q) 0 n = m then y else x
 
-/-- **For two histories with at most `N` states each, the record before `N + N - 2` does not fix
+/-- **For two histories with at most `N` states each, the prefix before `N + N - 2` does not fix
 the course.** With `N = M + 2`: the course marking every `N`-th step from step `M + 1`, and the
-course marking every `(N - 1)`-th step from step `M + 1`, share their record before `M + M + 2`
+course marking every `(N - 1)`-th step from step `M + 1`, share their prefix before `M + M + 2`
 and differ at it. So `N + N - 1` is exact for two histories with the same bound. -/
 theorem prefix_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
     ∃ o o' : Nat → O, StatesBelow o (M + 2) ∧ StatesBelow o' (M + 2) ∧
@@ -467,7 +469,7 @@ theorem prefix_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
     fun same => two (left.symm.trans (same.trans right))⟩
 
 /-- **The length `N + N' - 1` is exact for every pair of bounds.** Given two values, for all `M`
-and `M'`, a history with at most `M + 1` states and one with at most `M' + 1` share their record
+and `M'`, a history with at most `M + 1` states and one with at most `M' + 1` share their prefix
 before `M + M'` and differ at `M + M'`. The first marks every `(M + 1)`-th step, placed so that
 the steps from `M'` to `M + M' - 1` are unmarked and step `M + M'` is marked; the second
 follows it before step `M'` and stays unmarked from then on. With `M = 0` this is
@@ -525,8 +527,8 @@ theorem statesBelow_shift {o : Nat → O} {N : Nat} (bound : StatesBelow o N) (t
       (congrArg o (Nat.add_assoc t u (q + 1)).symm).trans
         (lasso (t + u) (Nat.le_trans later (Nat.le_add_left u t)))⟩
 
-/-- **The states of a bounded history are read off a finite record.** Two moments of a history
-with at most `N` states are one state exactly where what is registered from them agrees for
+/-- **The states of a bounded history are read off a finite prefix.** Two moments of a history
+with at most `N` states are one state exactly where the courses from them agree for
 `N + N - 1` steps. -/
 theorem sameAhead_iff_below {o : Nat → O} {N : Nat} (bound : StatesBelow o N) {t t' : Nat} :
     SameAhead o t t' ↔ ∀ n, n < N + N - 1 → o (t + n) = o (t' + n) :=
@@ -541,9 +543,9 @@ section Induction
 
 variable {O : Type u}
 
-/-- **With the bound given, a hypothesis the record bears out is the law of the course.** On a
-history with at most `N` states, a lasso `(i, q)` within `N` that holds on the record before
-`N + N - 1` holds at every step. The lasso world reading the record is a second history within
+/-- **With the bound given, a candidate the prefix bears out is the law of the course.** On a
+history with at most `N` states, a lasso `(i, q)` within `N` that accords with the prefix before
+`N + N - 1` accords at every step. The lasso world read off the prefix is a second history within
 `N` agreeing with the first before `N + N - 1`. -/
 theorem lasso_of_fits {o : Nat → O} {N i q : Nat} (bound : StatesBelow o N)
     (within : i + q + 1 ≤ N)
@@ -575,7 +577,7 @@ theorem lasso_of_fits {o : Nat → O} {N i q : Nat} (bound : StatesBelow o N)
     bounded_agree (statesBelow_iff_lasso.mpr ⟨i, q, within, lasso⟩) bound agree
   exact fun u le => (all _).symm.trans ((lasso u le).trans (all u))
 
-/-- A lasso hypothesis refuted at no step before `T` holds on the record before `T`. -/
+/-- A lasso candidate that misses at no step before `T` accords with the prefix before `T`. -/
 theorem fits_of_no_miss [DecidableEq O] {o : Nat → O} {i q T : Nat}
     (unrefuted : ∀ t, t < T → ¬ Learning.MissesAt (Learning.lasso (i, q)) o t) :
     ∀ u, i ≤ u → u + (q + 1) < T → o (u + (q + 1)) = o u :=
@@ -588,14 +590,14 @@ theorem fits_of_no_miss [DecidableEq O] {o : Nat → O} {i q T : Nat}
         (unrefuted _ lt))).symm
 
 /-- **In a bounded situation induction is deduction.** On a history with at most `N` states, a
-lasso hypothesis within `N` refuted at no step before `N + N - 1` is refuted at no step. -/
+lasso candidate within `N` that misses at no step before `N + N - 1` misses at no step. -/
 theorem bounded_induction [DecidableEq O] {o : Nat → O} {N i q : Nat}
     (bound : StatesBelow o N) (within : i + q + 1 ≤ N)
     (unrefuted : ∀ t, t < N + N - 1 → ¬ Learning.MissesAt (Learning.lasso (i, q)) o t) :
     Learning.Accords (Learning.lasso (i, q)) o :=
   Learning.lasso_accords (lasso_of_fits bound within (fits_of_no_miss unrefuted))
 
-/-- On a history with at most `N` states some lasso hypothesis within `N` holds. -/
+/-- On a history with at most `N` states some lasso candidate within `N` accords. -/
 theorem bounded_hypothesis {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
     ∃ i q, i + q + 1 ≤ N ∧ Learning.Accords (Learning.lasso (i, q)) o :=
   match statesBelow_iff_lasso.mp bound with
@@ -603,13 +605,13 @@ theorem bounded_hypothesis {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
 
 end Induction
 
-/-! ## The learner given the bound -/
+/-! ## The extrapolation given the bound -/
 
 section WithBound
 
 variable {O : Type u}
 
-/-- Every claim of `pred` on a record, each made from the record before it, is borne out. -/
+/-- Every value `pred` proposes along a prefix, each from the prefix before it, is borne out. -/
 def BorneOut (pred : List O → Option O) : List O → Prop
   | [] => True
   | v :: l => ¬ Learning.Misses (pred l) v ∧ BorneOut pred l
@@ -623,7 +625,7 @@ instance decBorneOut [DecidableEq O] (pred : List O → Option O) :
     | isFalse unrefuted, isTrue borne => isTrue ⟨unrefuted, borne⟩
     | isFalse _, isFalse unborne => isFalse fun ⟨_, borne⟩ => unborne borne
 
-/-- A record bears out `pred` exactly where `pred` is refuted at no step before its length. -/
+/-- A prefix bears out `pred` exactly where `pred` misses at no step before its length. -/
 theorem borneOut_prefix_iff {pred : List O → Option O} {o : Nat → O} : ∀ {T : Nat},
     BorneOut pred (Learning.prefixOf o T) ↔ ∀ t, t < T → ¬ Learning.MissesAt pred o t
   | 0 => ⟨fun _ t lt => absurd lt (Nat.not_lt_zero t), fun _ => trivial⟩
@@ -692,8 +694,8 @@ theorem firstFit_found {α : Type} {p : α → Prop} {dec : ∀ a, Decidable (p 
         match firstFit_found (dec := dec) mem' pa with
         | ⟨c, found⟩ => ⟨c, (if_neg npb).trans found⟩
 
-/-- The condition the learner given `N` puts on a hypothesis: within `N`, and borne out by
-the record. -/
+/-- The condition the extrapolation given the bound `N` puts on a candidate: within `N`, and
+borne out by the prefix. -/
 def Fits (N : Nat) (l : List O) (h : Nat × Nat) : Prop :=
   h.1 + h.2 + 1 ≤ N ∧ BorneOut (Learning.lasso h) l
 
@@ -701,18 +703,18 @@ instance decFits [DecidableEq O] (N : Nat) (l : List O) (h : Nat × Nat) :
     Decidable (Fits N l h) :=
   instDecidableAnd
 
-/-- The claim made by a hypothesis, if one is held. -/
+/-- The value proposed by a candidate, if one is found. -/
 def claimBy (l : List O) : Option (Nat × Nat) → Option O
   | some h => Learning.lasso h l
   | none => none
 
-/-- **The learner given the bound `N`.** Silent before step `N + N - 1`; from then on it
-claims by the first lasso hypothesis within `N` that the record bears out. -/
+/-- **The extrapolation given the bound `N`.** Silent before step `N + N - 1`; from then on it
+proposes by the first lasso candidate within `N` that the prefix bears out. -/
 def withBound [DecidableEq O] (N : Nat) (l : List O) : Option O :=
   if N + N - 1 ≤ l.length then claimBy l (firstFit (Fits N l) (decFits N l) (grid N N))
   else none
 
-/-- **The learner given the bound is right at every step from `N + N - 1` on** of every
+/-- **The extrapolation given the bound is right at every step from `N + N - 1` on** of every
 history with at most `N` states. -/
 theorem withBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : StatesBelow o N)
     (late : N + N - 1 ≤ t) : withBound N (Learning.prefixOf o t) = some (o t) :=
@@ -744,7 +746,7 @@ theorem withBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : Sta
         (if_pos long).trans ((congrArg (claimBy (Learning.prefixOf o t)) found).trans
           (value.trans (congrArg some right)))
 
-/-- **The learner given the bound is refuted at no step** of any history with at most `N`
+/-- **The extrapolation given the bound misses at no step** of any history with at most `N`
 states. -/
 theorem withBound_accords [DecidableEq O] {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
     Learning.Accords (withBound N) o := fun t =>
@@ -759,9 +761,9 @@ theorem withBound_accords [DecidableEq O] {o : Nat → O} {N : Nat} (bound : Sta
     Eq.subst (motive := fun c => ¬ Learning.Misses c (o t)) (withBound_exact bound late).symm
       Learning.not_missed_self
 
-/-- **No learner can always speak sooner.** Given two values, no learner refuted at no step of
-every history with at most `M + 2` states claims at step `M + M + 2` on each of them; the
-learner given the bound speaks from step `M + M + 3` on. -/
+/-- **No extrapolation can always propose sooner.** Given two values, no extrapolation that misses
+at no step of every history with at most `M + 2` states proposes at step `M + M + 2` on each of
+them; the extrapolation given the bound proposes from step `M + M + 3` on. -/
 theorem withBound_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
     ¬ ∀ o : Nat → O, StatesBelow o (M + 2) →
       Learning.Accords pred o ∧ ∃ w, pred (Learning.prefixOf o (M + M + 2)) = some w :=
@@ -775,16 +777,16 @@ theorem withBound_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O
         holds _ ⟨w, claims, fun right => holds' _ ⟨w, claims', fun right' =>
           differ (right.symm.trans right')⟩⟩
 
-/-- **The liar's truth is derived.** The learner given that there are two states is right about
-the two-valued negation at every step from `3` on: what no fixed value answers
-(`Diagonal.revision_never_rests`) is a rhythm read off the record. -/
+/-- **The liar's truth is derived.** The extrapolation given two states is right about
+the two-valued negation at every step from `3` on: what no fixed value accords with
+(`Diagonal.revision_never_rests`) is a rhythm read off the prefix. -/
 theorem negation_derived : ∀ t, 3 ≤ t →
     withBound 2 (Learning.prefixOf Negation.course t) = some (Negation.course t) :=
   fun _ late => withBound_exact (statesBelow_of_same (Nat.zero_lt_succ 1) Negation.zero_two) late
 
-/-- **A world answering its own learner exceeds the bound the learner is given.** Where `other`
-moves every value, the course that answers every claim of the learner given `N` has more
-than `N` states. -/
+/-- **The diagonal world of an extrapolation exceeds the bound it is given.** Where `other`
+moves every value, the course on which every value the extrapolation given the bound `N`
+proposes misses has more than `N` states. -/
 theorem answer_exceeds_bound [DecidableEq O] {other : O → O} (moves : ∀ v, other v ≠ v)
     (x : O) (N : Nat) : ¬ StatesBelow (Learning.diagonal (withBound N) other x) N :=
   fun bound => Learning.diagonal_unrested (withBound N) moves x
@@ -792,16 +794,16 @@ theorem answer_exceeds_bound [DecidableEq O] {other : O → O} (moves : ∀ v, o
 
 end WithBound
 
-/-! ## The learner not given the bound rests within it -/
+/-! ## Elimination not given the bound rests within it -/
 
 section Resting
 
 variable {O : Type u} [DecidableEq O] {o : Nat → O}
 
-/-- **A lasso hypothesis unrefuted for `N + N - 1` steps is refuted at no later step.** On a
-history with at most `N` states, a lasso `(a, b)` within `N` refuted at no step from `s ≥ a`
-to before `s + (N + N - 1)` is refuted at no step from `s` on: the stretch from `s` repeats with
-period `b + 1` on its record before `N + N - 1`, so at every step (`lasso_of_fits`). -/
+/-- **A lasso candidate without a miss for `N + N - 1` steps misses at no later step.** On a
+history with at most `N` states, a lasso `(a, b)` within `N` that misses at no step from `s ≥ a`
+to before `s + (N + N - 1)` misses at no step from `s` on: the stretch from `s` repeats with
+period `b + 1` on its prefix before `N + N - 1`, so at every step (`lasso_of_fits`). -/
 theorem no_miss_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a + b + 1 ≤ N)
     (from_s : a ≤ s)
     (window : ∀ t, s ≤ t → t < s + (N + N - 1) →
@@ -849,12 +851,12 @@ theorem no_miss_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a +
     exact Learning.lasso_accords from_here t
       (Eq.subst (motive := fun c => Learning.Misses c (o t)) same refuted)
 
-/-- **The learner not given the bound comes to rest within it.** On a history with at
-most `N` states, the learner by refutation over the lasso hypotheses, given neither `N`
-nor the course (`Becoming.Learning`'s `learner lassos`), claims at every step from
-`N + (N + N - 1) * tri N` on and is right. Its hypotheses all lie within `N`; in each stretch of
-`N + N - 1` steps from `N` on it is refuted, or the hypothesis it holds is never refuted again
-(`no_miss_persists`); it is refuted fewer than `tri N` times. Its record does not show the
+/-- **Elimination not given the bound comes to rest within it.** On a history with at
+most `N` states, the extrapolation by elimination over the lasso candidates, given neither
+`N` nor the course (`Becoming.Learning`'s `byElimination lassos`), proposes at every step from
+`N + (N + N - 1) * tri N` on and is right. Its candidates all lie within `N`; in each stretch of
+`N + N - 1` steps from `N` on it misses, or its current candidate never misses again
+(`no_miss_persists`); it misses fewer than `tri N` times. Its prefix does not show the
 step (`Becoming.Learning`'s `no_prefix_fixes_next_finite`); the bound does. -/
 theorem byElimination_rests {N : Nat} (bound : StatesBelow o N) :
     ∀ t, N + (N + N - 1) * Learning.tri N ≤ t →
@@ -950,18 +952,18 @@ theorem byElimination_rests {N : Nat} (bound : StatesBelow o N) :
         exact made.trans (congrArg some (Learning.eq_of_not_missed fun refuted =>
           kept (Eq.subst (motive := fun c => Learning.Misses c (o t)) made.symm refuted)))
 
-/-- **On a lasso course the learner comes to rest at a step that is found.** Where the course
-repeats from step `i` with period `q + 1`, the learner over the lasso hypotheses claims at every
+/-- **On a lasso course elimination comes to rest at a step that is found.** Where the course
+repeats from step `i` with period `q + 1`, elimination over the lasso candidates proposes at every
 step from a step bounded by `i` and `q` on and is right: the rest that `Becoming.Learning`'s
 `rest_unrefuted` leaves unrefuted is found. -/
 theorem rests_of_lasso {i q : Nat} (repeats : Learning.Lasso o i q) :
     ∃ T, ∀ t, T ≤ t → Learning.byElimination Learning.lassos (Learning.prefixOf o t) = some (o t) :=
   ⟨_, byElimination_rests (statesBelow_iff_lasso.mpr ⟨i, q, Nat.le_refl _, repeats⟩)⟩
 
-/-- **Induction in a world held by a list: the learner rests within a bound on the list.** Under
-a determined law whose configurations along an orbit are held by a list `l`, the learner by
-refutation over the lasso hypotheses, given neither the configurations nor how many there
-are, claims at every step from `N + (N + N - 1) * tri N` on and is right, `N` the length of
+/-- **Induction in a world held by a list: elimination rests within a bound on the list.** Under
+a determined law whose configurations along an orbit are held by a list `l`, the extrapolation by
+elimination over the lasso candidates, given neither the configurations nor their number,
+proposes at every step from `N + (N + N - 1) * tri N` on and is right, `N` the length of
 `l`. -/
 theorem held_byElimination_rests {S : Type v} {next : S → S} {s : S} {l : List S}
     (held : ∀ n, Law.orbit next s n ∈ l) (reg : S → O) :
@@ -979,19 +981,19 @@ section LeastBound
 
 variable {O : Type u}
 
-/-- The hypothesis found, or else the next search. -/
+/-- The candidate found, or else the next search. -/
 def orFit (found next : Option (Nat × Nat)) : Option (Nat × Nat) :=
   match found with
   | some h => some h
   | none => next
 
-/-- The first lasso hypothesis the record bears out within the least bound `M ≤ m` within which
+/-- The first lasso candidate the prefix bears out within the least bound `M ≤ m` within which
 one is borne out. -/
 def leastFit [DecidableEq O] (l : List O) : Nat → Option (Nat × Nat)
   | 0 => none
   | m + 1 => orFit (leastFit l m) (firstFit (Fits (m + 1) l) (decFits (m + 1) l) (grid (m + 1) (m + 1)))
 
-/-- What the least bound finds within `m` is within `m` and borne out by the record. -/
+/-- What the least bound finds within `m` is within `m` and borne out by the prefix. -/
 theorem leastFit_sound [DecidableEq O] {l : List O} :
     ∀ {m : Nat} {h : Nat × Nat}, leastFit l m = some h → Fits m l h
   | 0, h, found => nomatch (found : (none : Option (Nat × Nat)) = some h)
@@ -1008,7 +1010,7 @@ theorem leastFit_sound [DecidableEq O] {l : List O} :
         ((congrArg (fun f => orFit f (firstFit (Fits (m + 1) l) (decFits (m + 1) l)
           (grid (m + 1) (m + 1)))) e).symm.trans found)
 
-/-- Where a hypothesis within `N` is borne out, the least bound finds one within `N`. -/
+/-- Where a candidate within `N` is borne out, the least bound finds one within `N`. -/
 theorem leastFit_within [DecidableEq O] {l : List O} {N : Nat} {h₀ : Nat × Nat}
     (fits : Fits N l h₀) : ∀ {m : Nat}, N ≤ m → ∃ h, leastFit l m = some h ∧ h.1 + h.2 + 1 ≤ N
   | 0, le => absurd (Nat.le_trans fits.1 le) (Nat.not_succ_le_zero _)
@@ -1037,15 +1039,16 @@ theorem leastFit_within [DecidableEq O] {l : List O} {N : Nat} {h₀ : Nat × Na
         | ⟨h, found⟩ => ⟨h, (unfolds _ e).trans found,
             Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) top.symm (firstFit_sound found).1⟩
 
-/-- **The learner by the least bound.** Given no bound, it claims by the first lasso hypothesis
-the record bears out within the least bound within which one is. -/
+/-- **The extrapolation by the least bound.** Built without a bound, it proposes by the first
+lasso candidate the prefix bears out within the least bound within which one is. -/
 def leastBound [DecidableEq O] (l : List O) : Option O := claimBy l (leastFit l l.length)
 
-/-- **The rest step needs no bound.** The learner by the least bound, given no bound, is right at
-every step from `N + N - 1` on of every history with at most `N` states, for every `N`: as early
-as the learner given `N` (`withBound_exact`), and as early as any learner can be
-(`rest_earliest`). What it finds is within the true bound, since the true hypothesis is borne out,
-and a hypothesis within `N` borne out before `N + N - 1` holds (`bounded_induction`). -/
+/-- **The rest step needs no bound.** The extrapolation by the least bound, given no bound,
+is right at every step from `N + N - 1` on of every history with at most `N` states, for every
+`N`: as early as the extrapolation given the bound `N` (`withBound_exact`), and as early as any
+extrapolation can be (`rest_earliest`). What it finds is within the true bound, since the
+candidate that accords is borne out, and a candidate within `N` borne out before `N + N - 1`
+accords (`bounded_induction`). -/
 theorem leastBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : StatesBelow o N)
     (late : N + N - 1 ≤ t) : leastBound (Learning.prefixOf o t) = some (o t) :=
   have N_le : N ≤ N + N - 1 := le_twice_less_one (statesBelow_pos bound)
@@ -1071,9 +1074,10 @@ theorem leastBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : St
             (Eq.subst (motive := fun c => ¬ Learning.Misses c (o t)) value (holds' t))
         (congrArg (claimBy (Learning.prefixOf o t)) found).trans (value.trans (congrArg some right))
 
-/-- **No learner rests sooner.** Given two values, no learner is right at step `M + M + 2` on
-every history with at most `M + 2` states: with or without the bound, `N + N - 1` is the earliest
-step from which a learner can be right on every history with at most `N ≥ 2` states. -/
+/-- **No extrapolation rests sooner.** Given two values, no extrapolation is right at step
+`M + M + 2` on every history with at most `M + 2` states: with or without the bound, `N + N - 1`
+is the earliest step from which an extrapolation can be right on every history with at most
+`N ≥ 2` states. -/
 theorem rest_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
     ¬ ∀ o : Nat → O, StatesBelow o (M + 2) →
       pred (Learning.prefixOf o (M + M + 2)) = some (o (M + M + 2)) :=
@@ -1081,11 +1085,11 @@ theorem rest_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M 
     | ⟨o, o', bound, bound', same, differ⟩ =>
       differ (Option.some.inj ((all o bound).symm.trans ((congrArg pred same).trans (all o' bound'))))
 
-/-- **Being given the bound buys silence, not an earlier rest.** Given two values, no learner
-right at step `1` on every history with one state is refuted at no step of every history with
-two states. A learner not given the bound that rests at `N + N - 1` for every `N`, as the learner by
-the least bound does, speaks where a larger bound would keep it silent, and is refuted there;
-the learner given the bound is silent instead (`withBound_accords`). -/
+/-- **Being given the bound buys silence, not an earlier rest.** Given two values, no extrapolation right at
+step `1` on every history with one state misses at no step of every history with two states. An
+extrapolation not given the bound that rests at `N + N - 1` for every `N`, as the
+extrapolation by the least bound does, proposes where a larger bound would keep it silent, and
+misses there; the extrapolation given the bound is silent instead (`withBound_accords`). -/
 theorem rest_without_bound_missed {x y : O} (two : x ≠ y) (pred : List O → Option O) :
     ¬ ((∀ o : Nat → O, StatesBelow o 1 → pred (Learning.prefixOf o 1) = some (o 1)) ∧
       ∀ o : Nat → O, StatesBelow o 2 → Learning.Accords pred o) :=
@@ -1102,7 +1106,7 @@ theorem rest_without_bound_missed {x y : O} (two : x ≠ y) (pred : List O → O
 
 end LeastBound
 
-/-! ## The learner by refutation rests at a cubic step -/
+/-! ## Elimination rests at a cubic step -/
 
 section CubicRest
 
@@ -1164,13 +1168,13 @@ theorem oddCycle_below (n : Nat) : StatesBelow (oddCycle n) (n + 1) :=
   statesBelow_iff_lasso.mpr ⟨0, n, Nat.le_of_eq (congrArg (· + 1) (Nat.zero_add n)),
     oddCycle_lasso n⟩
 
-/-- A lasso hypothesis claims the value `q + 1` steps back. -/
+/-- A lasso candidate proposes the value `q + 1` steps back. -/
 theorem lasso_back {O : Type u} {o : Nat → O} {i q u : Nat} (from_i : i ≤ u) :
     Learning.lasso (i, q) (Learning.prefixOf o (u + q + 1)) = some (o u) :=
   (Learning.lasso_claims (o := o) (h := (i, q))
     (Nat.succ_le_succ (Nat.add_le_add_right from_i q))).trans (Learning.back_prefix o u q)
 
-/-- The learner by refutation keeps a hypothesis not refuted. -/
+/-- Elimination keeps a candidate that does not miss. -/
 theorem run_kept {O : Type u} [DecidableEq O] {H : Nat → List O → Option O} {o : Nat → O}
     {s k : Nat} (held : Learning.index H o s = k) :
     ∀ w, (∀ d, d < w → ¬ Learning.Misses (H k (Learning.prefixOf o (s + d))) (o (s + d))) →
@@ -1183,7 +1187,7 @@ theorem run_kept {O : Type u} [DecidableEq O] {H : Nat → List O → Option O} 
       (Eq.subst (motive := fun j => Learning.Misses (H j (Learning.prefixOf o (s + w))) (o (s + w)))
         before refuted))).trans before
 
-/-- The learner by refutation moves on from a hypothesis refuted. -/
+/-- Elimination moves on from a candidate that misses. -/
 theorem moved_on {O : Type u} [DecidableEq O] {H : Nat → List O → Option O} {o : Nat → O}
     {t k : Nat} (held : Learning.index H o t = k)
     (wrong : Learning.Misses (H k (Learning.prefixOf o t)) (o t)) :
@@ -1214,9 +1218,9 @@ theorem shift_run (a x q d : Nat) : a + x + q + 1 + d = a + (x + d) + q + 1 :=
 
 variable {n : Nat}
 
-/-- **An even shift runs to the end of the turn.** The hypothesis claiming the value `2e + 2`
-steps back, held from a place at least `2e + 2` into a turn of the odd cycle, is right to the
-end of the turn and refuted at its first place. -/
+/-- **An even shift runs to the end of the turn.** The candidate proposing the value `2e + 2`
+steps back, current from a place at least `2e + 2` into a turn of the odd cycle, is right to the
+end of the turn and misses at its first place. -/
 theorem even_shift_runs {e g j s₀ w i k : Nat} (fit : 2 * e + 2 + (2 * g + 1) = n + 1)
     (run : s₀ + w = 2 * g + 1) (from_i : i ≤ (n + 1) * j + s₀)
     (pair : Learning.pairAt k = (i, 2 * e + 1))
@@ -1268,9 +1272,9 @@ theorem even_shift_runs {e g j s₀ w i k : Nat} (fit : 2 * e + 2 + (2 * g + 1) 
       (fun same => nomatch (same.trans (oddCycle_block n (j + 1) (Nat.zero_le n)) : false = true))
   exact moved_on held_end wrong
 
-/-- **An odd shift runs to its own place.** The hypothesis claiming the value `2e + 1` steps
-back, held from a place `a ≤ 2e + 1` of a turn after the first, is right before place `2e + 1`
-and refuted there. -/
+/-- **An odd shift runs to its own place.** The candidate proposing the value `2e + 1` steps
+back, current from a place `a ≤ 2e + 1` of a turn after the first, is right before place `2e + 1`
+and misses there. -/
 theorem odd_shift_runs {e h j a w i k : Nat} (fit : 2 * e + 1 + 2 * (h + 1) = n + 1)
     (run : a + w = 2 * e + 1) (diag : i + 2 * e ≤ n)
     (pair : Learning.pairAt k = (i, 2 * e))
@@ -1327,7 +1331,7 @@ theorem odd_shift_runs {e h j a w i k : Nat} (fit : 2 * e + 1 + 2 * (h + 1) = n 
         true = false))
   exact moved_on held_end wrong
 
-/-- **The shift by one is refuted at once** anywhere inside a turn. -/
+/-- **The shift by one misses at once** anywhere inside a turn. -/
 theorem unit_shift_missed {j x i k : Nat} (inside : x + 1 ≤ n) (from_i : i ≤ (n + 1) * j + x)
     (pair : Learning.pairAt k = (i, 0))
     (held : Learning.index Learning.lassos (oddCycle n) ((n + 1) * j + x + 1) = k) :
@@ -1340,7 +1344,7 @@ theorem unit_shift_missed {j x i k : Nat} (inside : x + 1 ≤ n) (from_i : i ≤
     (fun same => not_ne_bool (Negation.course x)
       (same.trans (oddCycle_block n j (x := x + 1) inside)).symm))
 
-/-- The pair the learner over the lasso hypotheses holds one step into turn `J` of the
+/-- The current pair of elimination over the lasso candidates one step into turn `J` of the
 negation along a cycle of `n + 1` places. -/
 def turnHeld (n J : Nat) : Nat × Nat :=
   Learning.pairAt (Learning.index Learning.lassos (oddCycle n) ((n + 1) * J + 1))
@@ -1355,8 +1359,8 @@ theorem turn_room {e g M : Nat} (fit : 2 * e + 2 + (2 * g + 1) = 2 * M + 1) : 2 
   Nat.le_of_succ_le_succ (Eq.subst (motive := fun b => 2 * e + 2 + 1 ≤ b) fit
     (Nat.add_le_add_left (Nat.succ_le_succ (Nat.zero_le (2 * g))) (2 * e + 2)))
 
-/-- **A pair of shifts in one turn.** Held one step into a turn, an odd shift `2e + 1` not
-ending its diagonal is refuted at its place and the even shift after it at the start of the
+/-- **A pair of shifts in one turn.** Current one step into a turn, an odd shift `2e + 1` not
+ending its diagonal misses at its place and the even shift after it at the start of the
 next turn. -/
 theorem turn_pair {M e i j : Nat} (lt : e < M) (diag : i + 1 + 2 * e ≤ 2 * M)
     (now : turnHeld (2 * M) (j + 1) = (i + 1, 2 * e)) :
@@ -1382,8 +1386,8 @@ theorem turn_pair {M e i j : Nat} (lt : e < M) (diag : i + 1 + 2 * e ≤ 2 * M)
         ⟨refuted, ((congrArg Learning.pairAt after).trans
           (congrArg Learning.nextPair pair₁ : Learning.pairAt (k + 1 + 1) = _))⟩
 
-/-- **The end of a diagonal of odd length.** Held one step into a turn, the odd shift `2e + 1`
-ending its diagonal is refuted at its place, the shift by one opening the next diagonal at
+/-- **The end of a diagonal of odd length.** Current one step into a turn, the odd shift `2e + 1`
+ending its diagonal misses at its place, the shift by one opening the next diagonal at
 once, and the shift by two at the start of the next turn. -/
 theorem turn_end {M e j : Nat} (lt : e < M) (now : turnHeld (2 * M) (j + 1) = (0, 2 * e)) :
     Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle (2 * M))
@@ -1435,7 +1439,7 @@ theorem turn_walk {M : Nat} : ∀ (f e j i : Nat), e + f ≤ M → i + 2 * f + 2
         (after.trans (congrArg (fun x => (i, 2 * x)) (Nat.add_right_comm e 1 f)))
 
 /-- **Two diagonals take an odd number of turns.** One step into a turn at the start of the
-diagonal `2c + 2`, the learner is one step into the turn `2c + 3` later at the start of the
+diagonal `2c + 2`, elimination is one step into the turn `2c + 3` later at the start of the
 diagonal `2c + 4`. -/
 theorem turn_double {M c j : Nat} (room : c + 2 ≤ M)
     (now : turnHeld (2 * M) (j + 1) = (2 * (c + 1), 0)) :
@@ -1467,7 +1471,7 @@ theorem turn_double {M c j : Nat} (room : c + 2 ≤ M)
       (ended : turnHeld (2 * M) _ = (2 * (1 + c) + 1 + 1, 0)).trans
         (congrArg (fun x => (2 * (x + 1), 0)) (Nat.add_comm 1 c))
 
-/-- **The first turn.** One step into the second turn the learner holds the start of the
+/-- **The first turn.** One step into the second turn the current candidate is the start of the
 diagonal `2`. -/
 theorem start_turn (m : Nat) : turnHeld (2 * (m + 1)) 1 = (2, 0) :=
   have first : Learning.index Learning.lassos (oddCycle (2 * (m + 1))) 1 = 0 := rfl
@@ -1483,8 +1487,8 @@ theorem start_turn (m : Nat) : turnHeld (2 * (m + 1)) 1 = (2, 0) :=
         (Nat.add_comm 1 (2 * m)) (Nat.zero_le _) rfl third with
       | ⟨_, fourth⟩ => congrArg Learning.pairAt fourth
 
-/-- **The diagonals in pairs.** One step into turn `(c + 1)²` the learner holds the start of the
-diagonal `2c + 2`. -/
+/-- **The diagonals in pairs.** One step into turn `(c + 1)²` the current candidate is the start
+of the diagonal `2c + 2`. -/
 theorem turn_diagonals (m : Nat) : ∀ c, c + 1 ≤ m + 1 →
     turnHeld (2 * (m + 1)) ((c + 1) * (c + 1)) = (2 * (c + 1), 0)
   | 0, _ => start_turn m
@@ -1494,10 +1498,10 @@ theorem turn_diagonals (m : Nat) : ∀ c, c + 1 ≤ m + 1 →
         (c + 1 + 1) * (c + 1 + 1) = (c + 1) * c + c + (c + 1) + 1 + c + 1 + 1)).trans
       (turn_double (j := (c + 1) * c + c) room (turn_diagonals m c (Nat.le_of_succ_le room)))
 
-/-- **The learner by refutation is refuted at a cubic step.** On the two-valued negation along a
-cycle of `N = 2m + 3` places, a history with at most `N` states, the learner by refutation over
-the lasso hypotheses is refuted at step `(N³ - N) / 4 = (2m + 3)(m + 1)(m + 2)`: it passes every
-diagonal of hypotheses before the one holding the period `N`, each even shift costing a whole
+/-- **Elimination misses at a cubic step.** On the two-valued negation along a cycle of
+`N = 2m + 3` places, a history with at most `N` states, the extrapolation by elimination over
+the lasso candidates misses at step `(N³ - N) / 4 = (2m + 3)(m + 1)(m + 2)`: it passes every
+diagonal of candidates before the one with the period `N`, each even shift costing a whole
 turn. -/
 theorem byElimination_missed_late (m : Nat) :
     Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle (2 * (m + 1)))
@@ -1518,10 +1522,10 @@ theorem byElimination_missed_late (m : Nat) :
         (oddCycle (2 * (m + 1))) ((2 * (m + 1) + 1) * (y + 1)))
       (Nat.add_right_comm ((m + 1) * m + m) 1 m).symm refuted
 
-/-- **The learner by refutation rests no earlier than a cubic step.** A step from which the
-learner by refutation over the lasso hypotheses is right on every two-valued history with at
+/-- **Elimination rests no earlier than a cubic step.** A step from which the extrapolation by
+elimination over the lasso candidates is right on every two-valued history with at
 most `N = 2m + 3` states comes after `(N³ - N) / 4`. With `byElimination_rests` its rest step is cubic
-in `N`; the learner by the least bound rests from `2N - 1` (`leastBound_exact`). -/
+in `N`; the extrapolation by the least bound rests from `2N - 1` (`leastBound_exact`). -/
 theorem byElimination_rest_cubic (m : Nat) {T : Nat}
     (rests : ∀ o : Nat → Bool, StatesBelow o (2 * m + 3) → ∀ t, T ≤ t →
       Learning.byElimination Learning.lassos (Learning.prefixOf o t) = some (o t)) :
@@ -1550,7 +1554,7 @@ theorem orbit_held {next : S → S} {l : List S} (closed : ∀ s, s ∈ l → ne
   | 0 => mem
   | n + 1 => closed _ (orbit_held closed mem n)
 
-/-- The registered future of a member of a list closed under the law has at most as many
+/-- The future through the map of a member of a list closed under the law has at most as many
 states as the list has members. -/
 theorem statesBelow_held {next : S → S} {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l)
     {s : S} (mem : s ∈ l) (o : S → R) :
@@ -1558,9 +1562,9 @@ theorem statesBelow_held {next : S → S} {l : List S} (closed : ∀ s, s ∈ l 
   match Learning.lasso_of_held (orbit_held closed mem) o with
   | ⟨i, q, within, lasso⟩ => Identification.statesBelow_iff_lasso.mpr ⟨i, q, within, lasso⟩
 
-/-- **In a world a list closes, the same registered future is decided by a finite record.**
-Two members have the same registered future exactly where their registered futures agree for
-`N + N - 1` steps, `N` the length of the list. -/
+/-- **In a world a list closes, the same future through the map is decided by a finite prefix.**
+Two members have the same future through the map exactly where their futures through the map
+agree for `N + N - 1` steps, `N` the length of the list. -/
 theorem sameFuture_iff_below {next : S → S} {o : S → R} {l : List S}
     (closed : ∀ s, s ∈ l → next s ∈ l) {s s' : S} (mem : s ∈ l) (mem' : s' ∈ l) :
     Law.SameFuture next o s s' ↔
@@ -1569,12 +1573,12 @@ theorem sameFuture_iff_below {next : S → S} {o : S → R} {l : List S}
    fun agree => Identification.bounded_agree (statesBelow_held closed mem o)
      (statesBelow_held closed mem' o) agree⟩
 
-/-- The name of a configuration: its registered future before step `T`, latest first. -/
+/-- The name of a configuration: its future through the map before step `T`, latest first. -/
 def name (next : S → S) (o : S → R) (T : Nat) (s : S) : List R :=
   Learning.prefixOf (fun n => o (Law.orbit next s n)) T
 
 /-- **The split that makes sense, named with no quotient.** In a world a list holds, naming each
-configuration by its registered future before `N + N - 1` makes sense. -/
+configuration by its future through the map before `N + N - 1` makes sense. -/
 theorem name_identifiesAlike {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
     IdentifiesAlike (Law.frameBy next o) (name next o (l.length + l.length - 1)) :=
   fun s s' =>
@@ -1599,7 +1603,7 @@ section Classes
 
 variable {next : S → S} {o : S → R}
 
-/-- Two configurations register the same values for `k + 1` steps under a law. -/
+/-- Two configurations take the same values through the map for `k + 1` steps under a law. -/
 def AgreeTo (next : S → S) (o : S → R) : Nat → S → S → Prop
   | 0, s, s' => o s = o s'
   | k + 1, s, s' => o s = o s' ∧ AgreeTo next o k (next s) (next s')
@@ -1667,9 +1671,9 @@ theorem AgreeTo.steady_on {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l
 
 /-- **Moore's bound: one world's configurations are told apart within `N - 1` steps.** Under a
 determined law, two members of a list of `N` members closed under the law have the same
-registered future exactly where their registered futures agree for `N - 1` steps, wherever
-the values of the members are compared decidedly. Agreeing for `k + 1` steps is a chain of
-equivalences (`agreeTo_refining`); configurations registering different values make two
+future through the map exactly where their futures through the map agree for `N - 1` steps,
+wherever the values of the members are compared decidedly. Agreeing for `k + 1` steps is a chain
+of equivalences (`agreeTo_refining`); configurations taking different values make two
 classes, and each strict refinement adds one (`Refining.steady_within`). -/
 theorem sameFuture_iff_classes {l : List S} (closed : ∀ s, s ∈ l → next s ∈ l)
     (values : ∀ s s', s ∈ l → s' ∈ l → Decided (o s = o s')) {s s' : S} (mem : s ∈ l)
@@ -1718,7 +1722,7 @@ theorem upto_length : ∀ m, (Learning.upto m).length = m + 1
   | m + 1 => congrArg (· + 1) (upto_length m)
 
 /-- **Moore's bound is exact for every `N ≥ 2`.** A path of `N = M + 2` positions to a last one
-that stays, registering only whether the last is reached: its first two positions agree for
+that stays, read through a map that takes only whether the last is reached: its first two positions agree for
 `M` steps and differ at the next. -/
 theorem sameFuture_classes_exact {x y : R} (two : x ≠ y) (M : Nat) :
     ∃ (next : Nat → Nat) (o : Nat → R) (l : List Nat), l.length = M + 2 ∧
@@ -1886,7 +1890,8 @@ theorem lt_of_le_pred : ∀ {N i j : Nat}, j < N → i ≤ N - 1 → i < N
 
 /-- **Moore's bound with no premise: one world's configurations are told apart within `N - 1`
 steps.** Under a determined law, two members of a list of `N` members closed under the law have
-the same registered future exactly where their registered futures agree for `N - 1` steps. No
+the same future through the map exactly where their futures through the map agree for `N - 1`
+steps. No
 value is compared decidedly. The law is read on the positions of the list, where equality is
 decided (`orbit_memberAt`); the positions the agreements join are joined, pair by pair, into a
 labelling of positions, each label of one value (`joinOrbits_sound`); and Moore's bound for the
@@ -1933,7 +1938,7 @@ variable {O : Type u}
 
 /-- **Moore's bound for one history: two moments are one state where they agree for `N - 1`
 steps.** On a history with at most `N` states whose values are compared decidedly, two moments
-are one state exactly where what is registered from them agrees for `N - 1` steps. The history is
+are one state exactly where the courses from them agree for `N - 1` steps. The history is
 the course of its lasso world (`Learning.lasso_realized`), whose positions are at most `N`. -/
 theorem sameAhead_iff_classes {o : Nat → O} {N : Nat} (bound : StatesBelow o N)
     (values : ∀ n m, Decided (o n = o m)) {t t' : Nat} :
@@ -1961,7 +1966,7 @@ theorem sameAhead_iff_classes {o : Nat → O} {N : Nat} (bound : StatesBelow o N
       fun n => (ahead t n).symm.trans ((same n).trans (ahead t' n))⟩
 
 /-- **Moore's bound for one history, with no premise.** On a history with at most `N` states, two
-moments are one state exactly where what is registered from them agrees for `N - 1` steps; no
+moments are one state exactly where the courses from them agree for `N - 1` steps; no
 value is compared decidedly (`Law.sameFuture_iff_within`). -/
 theorem sameAhead_iff_within {o : Nat → O} {N : Nat} (bound : StatesBelow o N) {t t' : Nat} :
     SameAhead o t t' ↔ ∀ n, n < N - 1 → o (t + n) = o (t' + n) :=

@@ -2,54 +2,57 @@ import Becoming.Identification
 import Becoming.Seeking
 
 /-!
-# Learnable: what a learner can learn through its registration
+# Learnable: what can be learned through a map
 
-A learner reads what a registration registers and claims something it does not register: a
-registration `reg : S → R` of configurations, a target `val : S → V`, and a learner
-`pred : List R → Option V` that claims at step `t` of the orbit from `s`, from the registered
-record before `t` (`Becoming.Learning`'s `record`). It rests on the target from step `T` where it
-claims the target at every later step (`RestsFrom`, `Rests`). `Becoming.Testing` shows that a
-formation can test only a claim that differs in what registers in it; `Becoming.Learning` that no
-record fixes the next value; `Becoming.Identification` that in a world a list holds, the learner
-over the lasso hypotheses comes to rest on what it registers within a bound. This module states,
-with no premise, what a registration lets a learner come to rest on.
+An extrapolation proposes, from values through a map, a value of a feature the map need not
+take: a map `reg : S → R` of configurations, a feature `val : S → V`, and an extrapolation
+`pred : List R → Option V` that proposes at step `t` of the orbit from `s`, from the prefix
+before `t` of the course through the map (`Becoming.Learning`'s `prefixOf`). It rests in accord
+with the feature from step `T` where it proposes the feature's value at every later step
+(`RestsFrom`, `Rests`). `Becoming.Testing` shows that a claim is excluded at a formation only
+through a difference that couples into it; `Becoming.Learning` that no prefix fixes the next
+value; `Becoming.Identification` that in a world a list holds, elimination over the lasso
+candidates comes to rest in accord with the course through the map within a bound. This module
+states, with no premise, what a map lets an extrapolation come to rest in accord with.
 
-* **Alike to the registration, learned alike.** Two configurations with the same registered
-  future give every learner the same record at every step (`prefixes_same`). So at a step where
-  their targets differ, a claim is right on at most one (`claim_not_right_on_both`); with the
-  targets decided it is refuted on one, while the two records stay equal at every step
-  (`missed_on_one`). A learner resting on both has targets that agree from some step on
-  (`agree_of_rests_both`); where they differ at arbitrarily late steps, no learner rests on
-  both (`not_rests_on_both`), already for two configurations the law leaves unchanged
-  (`still_not_rests_on_both`).
-* **What is read off the registration is learned by the learner given nothing.** Where the
-  target is read off what is registered (`val s = g (reg s)`), the learner over the lasso
-  hypotheses on the registered values, its claims read by `g`, rests on the target in every
+* **Alike through the map, learned alike.** Two configurations with the same future through the
+  map give every extrapolation the same prefix at every step (`prefixes_same`). So at a step
+  where their features differ, a proposed value is right on at most one
+  (`claim_not_right_on_both`); with the features decided it misses on one, while the two
+  prefixes stay equal at every step (`missed_on_one`). An extrapolation resting on both has
+  features that agree from some step on (`agree_of_rests_both`); where they differ at
+  arbitrarily late steps, no extrapolation rests on both (`not_rests_on_both`), already for two
+  configurations the law leaves unchanged (`still_not_rests_on_both`).
+* **What is read off the map is learned by an extrapolation given nothing.** Where the
+  feature is read off the map (`val s = g (reg s)`), elimination over the lasso candidates on the
+  values through the map, its proposals read by `g`, rests in accord with the feature in every
   world a list holds, from `Becoming.Identification`'s bound on (`rests_through`). It is given
-  neither the configurations, nor how many there are, nor any value of the target.
-* **Exactly.** In a world a list holds, some learner reading the registration rests on the
-  target at every configuration exactly where configurations with the same registered future
-  have targets that agree from some step on (`learnable_iff`). The learner of the second
-  direction is given the world and the target (`fromLaw`): no learner does better, whatever it
-  is given, since the first direction holds of every learner. Targets that go alike across the
-  registration (`Learning.Lumped`) are always learnable (`learnable_of_lumped`). Where the law
-  leaves every configuration unchanged, they are exactly the learnable ones
-  (`still_learnable_iff_lumped`): what can be learned through a registration is what goes alike
-  across it, the lumping by which `Becoming.Learning` states generalization.
-* **Two still configurations** (`Pair`). Registering the first of two coordinates, no learner
-  rests on the second at both `(true, false)` and `(true, true)` (`Pair.first_not_rests`), the
-  second not going alike across the first (`Pair.not_lumped`). Registering both, the learner over
-  the lasso hypotheses rests on the second at every configuration from step 2
-  (`Pair.whole_rests`).
+  neither the configurations, nor their number, nor any value of the feature.
+* **Exactly.** In a world a list holds, some extrapolation from prefixes through the map rests in
+  accord with the feature at every configuration exactly where configurations with the same
+  future through the map have features that agree from some step on (`learnable_iff`). The
+  extrapolation of the second direction is built from the law, the map, the feature and the list
+  (`fromLaw`): no extrapolation does better, whatever it is given, since the first direction
+  holds of every extrapolation. Features that go alike across the map's lumping
+  (`Learning.Lumped`) are always learnable (`learnable_of_lumped`). Where the law leaves every
+  configuration unchanged, they are exactly the learnable ones (`still_learnable_iff_lumped`):
+  what can be learned through a map is what goes alike across its lumping, the lumping by which
+  `Becoming.Learning` states generalization.
+* **Two still configurations** (`Pair`). Through the map to the first of two coordinates, no
+  extrapolation rests in accord with the second at both `(true, false)` and `(true, true)`
+  (`Pair.first_not_rests`), the second not going alike across the first (`Pair.not_lumped`).
+  Through the map to both, elimination over the lasso candidates rests in accord with the second
+  at every configuration from step 2 (`Pair.whole_rests`).
 
-Resting on the target from some step on is identification in the limit (Gold 1967), and
-`learnable_iff` is an observability condition in that setting: its first direction holds of every
-learner, while the learner of its second direction is given the world and the target, so that
-direction shows existence, not a learner that is given nothing.
+Resting in accord with the feature from some step on is what the literature calls
+identification in the limit (Gold 1967), and `learnable_iff` is an observability condition in
+that setting: its first direction holds of every extrapolation, while the extrapolation of its
+second direction is built from the law, the map, the feature and the list, so that direction
+shows existence, not an extrapolation given nothing.
 
-Readings of this as registration bounding what is learned, as the limit of learning without
-feedback that registers the target, or as a condition on cognition, belong to the study, not to
-this module. No ethical predicate, ranking or axiom occurs.
+Readings of this as the map bounding what is learned, as the limit of learning without a
+coupling of the feature back into what is learned, or as a condition on cognition, belong to the
+study, not to this module. No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -64,35 +67,36 @@ section Rest
 
 variable {S : Type u} {R : Type v} {V : Type w}
 
-/-- The registered course from `s`: what the registration registers at each step of the orbit. -/
+/-- The course from `s` through the map: the value of `reg` at each step of the orbit. -/
 def course (next : S → S) (reg : S → R) (s : S) : Nat → R := fun n => reg (Law.orbit next s n)
 
-/-- The learner `pred`, reading the registered record, claims the target at every step from `T`
-on along the orbit from `s`. -/
+/-- The extrapolation `pred`, from the prefix of the course through the map, proposes the
+feature's value at every step from `T` on along the orbit from `s`. -/
 def RestsFrom (next : S → S) (reg : S → R) (val : S → V) (pred : List R → Option V) (s : S)
     (T : Nat) : Prop :=
   ∀ t, T ≤ t → pred (Learning.prefixOf (course next reg s) t) = some (val (Law.orbit next s t))
 
-/-- The learner comes to rest on the target along the orbit from `s`. -/
+/-- The extrapolation comes to rest in accord with the feature along the orbit from `s`. -/
 def Rests (next : S → S) (reg : S → R) (val : S → V) (pred : List R → Option V) (s : S) : Prop :=
   ∃ T, RestsFrom next reg val pred s T
 
 end Rest
 
-/-! ## Alike to the registration, learned alike -/
+/-! ## Alike through the map, learned alike -/
 
 section Alike
 
 variable {S : Type u} {R : Type v} {V : Type w} {next : S → S} {reg : S → R} {val : S → V}
 
-/-- **Configurations with the same registered future give every learner the same record.** -/
+/-- **Configurations with the same future through the map give every extrapolation the same
+prefix.** -/
 theorem prefixes_same {s s' : S} (same : Law.SameFuture next reg s s') (t : Nat) :
     Learning.prefixOf (course next reg s) t = Learning.prefixOf (course next reg s') t :=
   Learning.prefix_congr fun n _ => same n
 
-/-- **A claim finer than the registration is right on at most one.** At a step where the
-targets of two configurations with the same registered future differ, a learner's claim is not
-right on both. No decision is used. -/
+/-- **A proposal finer than the map is right on at most one.** At a step where the
+features of two configurations with the same future through the map differ, a value an
+extrapolation proposes is not right on both. No decision is used. -/
 theorem claim_not_right_on_both (pred : List R → Option V) {s s' : S}
     (same : Law.SameFuture next reg s s') {t : Nat}
     (differ : val (Law.orbit next s t) ≠ val (Law.orbit next s' t)) :
@@ -102,9 +106,9 @@ theorem claim_not_right_on_both (pred : List R → Option V) {s s' : S}
     differ (Option.some.inj
       ((right.symm.trans (congrArg pred (prefixes_same same t))).trans right'))
 
-/-- **With the targets decided, a claim there is refuted on one, and the records stay equal.**
-The learner's registered record is the same on both courses at every step, so it does not show
-on which of them the claim was refuted. -/
+/-- **With the features decided, a proposed value there misses on one, and the prefixes stay
+equal.** The prefix through the map is the same on both courses at every step, so it does not
+show on which of them the proposal missed. -/
 theorem missed_on_one [DecidableEq V] (pred : List R → Option V) {s s' : S}
     (same : Law.SameFuture next reg s s') {t : Nat}
     (differ : val (Law.orbit next s t) ≠ val (Law.orbit next s' t)) {w : V}
@@ -119,8 +123,8 @@ theorem missed_on_one [DecidableEq V] (pred : List R → Option V) {s s' : S}
    | isFalse wrong => .inl ⟨w, claims, wrong⟩,
    prefixes_same same⟩
 
-/-- **A learner resting on two configurations alike to the registration has targets that agree
-from some step on.** -/
+/-- **An extrapolation resting on two configurations alike through the map has features that
+agree from some step on.** -/
 theorem agree_of_rests_both {pred : List R → Option V} {s s' : S}
     (same : Law.SameFuture next reg s s') {T T' : Nat}
     (rests : RestsFrom next reg val pred s T) (rests' : RestsFrom next reg val pred s' T') :
@@ -130,7 +134,7 @@ theorem agree_of_rests_both {pred : List R → Option V} {s s' : S}
       (congrArg pred (prefixes_same same t))).trans
       (rests' t (Nat.le_trans (Nat.le_add_left T' T) late)))
 
-/-- **Where their targets differ at arbitrarily late steps, no learner rests on both.** -/
+/-- **Where their features differ at arbitrarily late steps, no extrapolation rests on both.** -/
 theorem not_rests_on_both (pred : List R → Option V) {s s' : S}
     (same : Law.SameFuture next reg s s')
     (differ : ∀ T, ∃ t, T ≤ t ∧ val (Law.orbit next s t) ≠ val (Law.orbit next s' t)) :
@@ -144,8 +148,8 @@ theorem orbit_of_still {s : S} (still : next s = s) (n : Nat) : Law.orbit next s
   (Law.fixed_rests (target := fun _ => True) still trivial n).1
 
 /-- **Already for two still configurations.** Where the law leaves `s` and `s'` unchanged, the
-registration does not tell them apart and their targets differ, no learner reading the
-registration rests on the target at both. -/
+map does not tell them apart and their features differ, no extrapolation through the map rests
+in accord with the feature at both. -/
 theorem still_not_rests_on_both (pred : List R → Option V) {s s' : S} (still : next s = s)
     (still' : next s' = s') (alike : reg s = reg s') (differ : val s ≠ val s') :
     ¬ (Rests next reg val pred s ∧ Rests next reg val pred s') :=
@@ -156,8 +160,8 @@ theorem still_not_rests_on_both (pred : List R → Option V) {s s' : S} (still :
       differ ((congrArg val (orbit_of_still still T)).symm.trans
         (same.trans (congrArg val (orbit_of_still still' T))))⟩
 
-/-- **Where the law leaves every configuration unchanged, a target learned at every
-configuration goes alike across the registration.** -/
+/-- **Where the law leaves every configuration unchanged, a feature learned at every
+configuration goes alike across the map's lumping.** -/
 theorem still_lumped_of_rests (still : ∀ s, next s = s) {pred : List R → Option V}
     (rests : ∀ s, Rests next reg val pred s) : Learning.Lumped reg val :=
   fun s s' alike =>
@@ -172,17 +176,17 @@ theorem still_lumped_of_rests (still : ∀ s, next s = s) {pred : List R → Opt
 
 end Alike
 
-/-! ## What is read off the registration -/
+/-! ## What is read off the map -/
 
 section Through
 
 variable {S : Type u} {R : Type v} {V : Type w} [DecidableEq R]
 
-/-- **What is read off the registration is learned by the learner given nothing.** In a world a
-list holds, where the target is read off what is registered, the learner over the lasso hypotheses
-on the registered values, its claims read by `g`, rests on the target from
+/-- **What is read off the map is learned by an extrapolation given nothing.** In a world a
+list holds, where the feature is read off the map, elimination over the lasso candidates on the
+values through the map, its proposals read by `g`, rests in accord with the feature from
 `Becoming.Identification`'s bound on (`held_byElimination_rests`). It is given neither the
-configurations, nor how many there are, nor any value of the target. -/
+configurations, nor their number, nor any value of the feature. -/
 theorem rests_through {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
     {reg : S → R} {val : S → V} {g : R → V} (factors : ∀ s, val s = g (reg s)) :
     RestsFrom next reg val (fun r => (Learning.byElimination Learning.lassos r).map g) s
@@ -213,23 +217,25 @@ theorem firstFit_congr {α : Type} {p q : α → Prop} {dp : ∀ a, Decidable (p
 
 variable {S : Type} {R : Type v} {V : Type w} [DecidableEq R]
 
-/-- The learner given the world at length `k`: among the configurations of `l`, the first whose
-registered record before `k` is the record read, and its target `k` steps on. -/
+/-- The extrapolation built from the law at length `k`: among the configurations of `l`, the
+first whose prefix through the map before `k` is the prefix given, and its feature `k` steps on. -/
 def fromLawAt (next : S → S) (reg : S → R) (val : S → V) (l : List S) (k : Nat) (r : List R) :
     Option V :=
   (Identification.firstFit (fun x => Law.name next reg k x = r)
       (fun x => decEq (Law.name next reg k x) r) l).map
     fun x => val (Law.orbit next x k)
 
-/-- **The learner given the world**: it reads the record and claims the target of the first
-configuration of `l` with that record, as many steps on as the record is long. -/
+/-- **The extrapolation built from the law** (the law, the map, the feature and the list `l`):
+from a prefix it proposes the feature of the first configuration of `l` with that prefix, as
+many steps on as the prefix is long. -/
 def fromLaw (next : S → S) (reg : S → R) (val : S → V) (l : List S) (r : List R) : Option V :=
   fromLawAt next reg val l r.length r
 
-/-- **Exactly.** In a world a list holds, some learner reading the registration rests on the
-target at every configuration exactly where configurations with the same registered future have
-targets that agree from some step on. The first direction holds of every learner, whatever it is
-given; the learner of the second is given the world and the target (`fromLaw`). -/
+/-- **Exactly.** In a world a list holds, some extrapolation from prefixes through the map rests
+in accord with the feature at every configuration exactly where configurations with the same
+future through the map have features that agree from some step on. The first direction holds of
+every extrapolation, whatever it is given; the extrapolation of the second is built from the
+law, the map, the feature and the list (`fromLaw`). -/
 theorem learnable_iff {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) :
     (∃ pred : List R → Option V, ∀ s, Rests next reg val pred s) ↔
@@ -267,15 +273,15 @@ theorem learnable_iff {next : S → S} {reg : S → R} {val : S → V} {l : List
           ((congrArg (Option.map fun x => val (Law.orbit next x t)) first).trans
             (congrArg some (agrees t (Nat.le_trans (Nat.le_add_left T _) late))))⟩⟩⟩
 
-/-- **Targets that go alike across the registration are learnable**, under every law of a world
-a list holds. -/
+/-- **Features that go alike across the map's lumping are learnable**, under every law of a
+world a list holds. -/
 theorem learnable_of_lumped {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) (lumped : Learning.Lumped reg val) :
     ∃ pred : List R → Option V, ∀ s, Rests next reg val pred s :=
   (learnable_iff world).mpr fun _ _ same => ⟨0, fun t _ => lumped _ _ (same t)⟩
 
 /-- **Where the law leaves every configuration unchanged, what can be learned through a
-registration is exactly what goes alike across it.** -/
+map is exactly what goes alike across its lumping.** -/
 theorem still_learnable_iff_lumped {next : S → S} (still : ∀ s, next s = s) {reg : S → R}
     {val : S → V} {l : List S} (world : ∀ s, s ∈ l) :
     (∃ pred : List R → Option V, ∀ s, Rests next reg val pred s) ↔ Learning.Lumped reg val :=
@@ -293,8 +299,8 @@ def still : Bool × Bool → Bool × Bool := fun s => s
 theorem stays (s : Bool × Bool) (n : Nat) : Law.orbit still s n = s :=
   orbit_of_still rfl n
 
-/-- **Registering the first coordinate, no learner rests on the second at both `(true, false)`
-and `(true, true)`.** -/
+/-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
+at both `(true, false)` and `(true, true)`.** -/
 theorem first_not_rests (pred : List Bool → Option Bool) :
     ¬ (Rests still Prod.fst Prod.snd pred (true, false) ∧
       Rests still Prod.fst Prod.snd pred (true, true)) :=
@@ -304,8 +310,8 @@ theorem first_not_rests (pred : List Bool → Option Bool) :
 theorem not_lumped : ¬ Learning.Lumped (Prod.fst : Bool × Bool → Bool) Prod.snd :=
   fun lumped => Bool.noConfusion (lumped (true, false) (true, true) rfl)
 
-/-- **Registering both, the learner over the lasso hypotheses rests on the second at every
-configuration from step 2.** -/
+/-- **Through the map to both, elimination over the lasso candidates rests in accord with the
+second at every configuration from step 2.** -/
 theorem whole_rests (s : Bool × Bool) :
     RestsFrom still id Prod.snd (fun r => (Learning.byElimination Learning.lassos r).map Prod.snd) s 2 :=
   rests_through (l := [s])

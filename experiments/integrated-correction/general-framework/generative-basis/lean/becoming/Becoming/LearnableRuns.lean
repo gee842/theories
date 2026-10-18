@@ -3,29 +3,29 @@ import Becoming.Learnable
 import Becoming.Parting
 
 /-!
-# Learnable runs: what a learner reading a run's registration can learn
+# Learnable runs: what can be learned through a map along a run
 
-`Becoming.Learnable` states what a learner reading a registration can learn along the orbit of a
+`Becoming.Learnable` states what an extrapolation through a map can learn along the orbit of a
 determined law. A determined law is a process of the spine (`Law.process`), and every run of it is
 its orbit from where the run begins (`Branching.law_run_state`); configurations of a determined
-law are alike in the frame that registers `reg` exactly where their registered futures are the
-same (`Law.alike_iff_sameFuture`). This module states the laws of `Becoming.Learnable` about the
-runs of the law and the likeness of the frame, and proves them through those laws.
+law are alike in the frame by `reg` (`Law.frameBy`) exactly where their futures through the map
+are the same (`Law.alike_iff_sameFuture`). This module states the laws of `Becoming.Learnable`
+about the runs of the law and the likeness of the frame, and proves them through those laws.
 
-* **A run's registered record is its orbit's.** The record a learner reads along a run is the
-  record along the orbit from the run's first configuration (`prefix_eq`), so a learner rests on
-  a run exactly where it rests on that orbit (`restsFrom_iff`, `rests_iff`).
+* **A run's prefix is its orbit's.** The prefix through the map along a run is the prefix along
+  the orbit from the run's first configuration (`prefix_eq`), so an extrapolation rests in accord
+  on a run exactly where it rests in accord on that orbit (`restsFrom_iff`, `rests_iff`).
 * **Alike in the frame, learned alike.** Two runs beginning at configurations alike in the frame
-  that registers `reg` give every learner the same record at every step (`prefixes_same`); a
-  learner resting on both has targets that agree from some step on (`agree_of_rests_both`), and
-  where their targets differ at arbitrarily late steps no learner rests on both
-  (`not_rests_on_both`).
-* **What is read off the registration is learned along every run a list holds**
-  (`rests_through`), by the learner over the lasso hypotheses given nothing.
-* **Exactly.** In a world a list holds, some learner rests on the target along every run of the
-  law exactly where runs beginning alike in the frame have targets that agree from some step on
-  (`learnable_iff`); where the law leaves every configuration unchanged, exactly where the target
-  goes alike across the registration (`still_learnable_iff_lumped`).
+  by `reg` give every extrapolation the same prefix at every step (`prefixes_same`); an
+  extrapolation resting on both has features that agree from some step on
+  (`agree_of_rests_both`), and where their features differ at arbitrarily late steps no
+  extrapolation rests on both (`not_rests_on_both`).
+* **What is read off the map is learned along every run a list holds** (`rests_through`), by
+  elimination over the lasso candidates given nothing.
+* **Exactly.** In a world a list holds, some extrapolation rests in accord with the feature along
+  every run of the law exactly where runs beginning alike in the frame have features that agree
+  from some step on (`learnable_iff`); where the law leaves every configuration unchanged,
+  exactly where the feature goes alike across the map's lumping (`still_learnable_iff_lumped`).
 
 Readings of this as learning along a course of the unfolding, rather than about a configuration
 set apart from it, belong to the study, not to this module. No ethical predicate, ranking or axiom
@@ -44,28 +44,28 @@ section Along
 
 variable {S : Type u} {R : Type v} {V : Type w} {next : S → S}
 
-/-- The registered course of a run: what the registration registers at each of its steps
+/-- The course of a run through the map: the value of `reg` at each of its steps
 (`Parting.course` on a run of the law's process). -/
 def course (reg : S → R) (r : Run (Law.process next)) : Nat → R := Parting.course reg r
 
-/-- The learner `pred`, reading the registered record of the run, claims the target at every step
-from `T` on. -/
+/-- The extrapolation `pred`, from the prefix of the run's course through the map, proposes the
+feature's value at every step from `T` on. -/
 def RestsFrom (reg : S → R) (val : S → V) (pred : List R → Option V) (r : Run (Law.process next))
     (T : Nat) : Prop :=
   ∀ t, T ≤ t → pred (Learning.prefixOf (course reg r) t) = some (val (r.state t))
 
-/-- The learner comes to rest on the target along the run. -/
+/-- The extrapolation comes to rest in accord with the feature along the run. -/
 def Rests (reg : S → R) (val : S → V) (pred : List R → Option V) (r : Run (Law.process next)) :
     Prop :=
   ∃ T, RestsFrom reg val pred r T
 
-/-- **A run's registered record is the record along the orbit from where it begins.** -/
+/-- **A run's prefix through the map is the prefix along the orbit from where it begins.** -/
 theorem prefix_eq (reg : S → R) (r : Run (Law.process next)) (t : Nat) :
     Learning.prefixOf (course reg r) t = Learning.prefixOf (Learnable.course next reg (r.state 0)) t :=
   Learning.prefix_congr fun n _ => congrArg reg (Branching.law_run_state r n)
 
-/-- **A learner rests on a run from `T` exactly where it rests from `T` on the orbit from where
-the run begins.** -/
+/-- **An extrapolation rests in accord on a run from `T` exactly where it rests in accord from
+`T` on the orbit from where the run begins.** -/
 theorem restsFrom_iff {reg : S → R} {val : S → V} {pred : List R → Option V}
     (r : Run (Law.process next)) (T : Nat) :
     RestsFrom reg val pred r T ↔ Learnable.RestsFrom next reg val pred (r.state 0) T :=
@@ -82,7 +82,7 @@ theorem rests_iff {reg : S → R} {val : S → V} {pred : List R → Option V}
   ⟨fun ⟨T, rests⟩ => ⟨T, (restsFrom_iff r T).mp rests⟩,
    fun ⟨T, rests⟩ => ⟨T, (restsFrom_iff r T).mpr rests⟩⟩
 
-/-- Runs beginning alike in the frame that registers `reg` have the same registered future along
+/-- Runs beginning alike in the frame by `reg` have the same future through the map along
 the runs. -/
 theorem course_same {reg : S → R} {r r' : Run (Law.process next)}
     (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
@@ -91,14 +91,14 @@ theorem course_same {reg : S → R} {r r' : Run (Law.process next)}
     ((Law.alike_iff_sameFuture.mp alike n).trans
       (congrArg reg (Branching.law_run_state r' n)).symm)
 
-/-- **Runs beginning alike in the frame give every learner the same record.** -/
+/-- **Runs beginning alike in the frame give every extrapolation the same prefix.** -/
 theorem prefixes_same {reg : S → R} {r r' : Run (Law.process next)}
     (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
     (t : Nat) : Learning.prefixOf (course reg r) t = Learning.prefixOf (course reg r') t :=
   Learning.prefix_congr fun n _ => course_same alike n
 
-/-- **A learner resting on two runs beginning alike in the frame has targets that agree from some
-step on.** -/
+/-- **An extrapolation resting on two runs beginning alike in the frame has features that agree
+from some step on.** -/
 theorem agree_of_rests_both {reg : S → R} {val : S → V} {pred : List R → Option V}
     {r r' : Run (Law.process next)}
     (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
@@ -110,8 +110,8 @@ theorem agree_of_rests_both {reg : S → R} {val : S → V} {pred : List R → O
           ((restsFrom_iff r T).mp rests) ((restsFrom_iff r' T').mp rests') t late).trans
         (congrArg val (Branching.law_run_state r' t)).symm)
 
-/-- **Where the targets of two runs beginning alike in the frame differ at arbitrarily late steps,
-no learner rests on both.** -/
+/-- **Where the features of two runs beginning alike in the frame differ at arbitrarily late
+steps, no extrapolation rests on both.** -/
 theorem not_rests_on_both {reg : S → R} {val : S → V} (pred : List R → Option V)
     {r r' : Run (Law.process next)}
     (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
@@ -131,9 +131,9 @@ section Through
 
 variable {S : Type u} {R : Type v} {V : Type w} [DecidableEq R] {next : S → S}
 
-/-- **What is read off the registration is learned along every run a list holds**, by the learner
-over the lasso hypotheses on the registered values, given nothing, from `Becoming.Identification`'s
-bound on. -/
+/-- **What is read off the map is learned along every run a list holds**, by elimination
+over the lasso candidates on the values through the map, given nothing, from
+`Becoming.Identification`'s bound on. -/
 theorem rests_through (r : Run (Law.process next)) {l : List S} (held : ∀ n, r.state n ∈ l)
     {reg : S → R} {val : S → V} {g : R → V} (factors : ∀ s, val s = g (reg s)) :
     RestsFrom reg val (fun x => (Learning.byElimination Learning.lassos x).map g) r
@@ -149,9 +149,9 @@ section Exactly
 
 variable {S : Type} {R : Type v} {V : Type w} [DecidableEq R] {next : S → S}
 
-/-- **Exactly.** In a world a list holds, some learner rests on the target along every run of the
-law exactly where runs beginning alike in the frame that registers `reg` have targets that agree
-from some step on. -/
+/-- **Exactly.** In a world a list holds, some extrapolation rests in accord with the feature
+along every run of the law exactly where runs beginning alike in the frame by `reg` have features
+that agree from some step on. -/
 theorem learnable_iff {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l) :
     (∃ pred : List R → Option V, ∀ r : Run (Law.process next), Rests reg val pred r) ↔
       ∀ r r' : Run (Law.process next),
@@ -166,8 +166,8 @@ theorem learnable_iff {reg : S → R} {val : S → V} {l : List S} (world : ∀ 
           (Law.alike_iff_sameFuture.mpr same)) with
     | ⟨pred, rests⟩ => ⟨pred, fun r => (rests_iff r).mpr (rests (r.state 0))⟩⟩
 
-/-- **Where the law leaves every configuration unchanged, a target is learnable along every run
-exactly where it goes alike across the registration.** -/
+/-- **Where the law leaves every configuration unchanged, a feature is learnable along every run
+exactly where it goes alike across the map's lumping.** -/
 theorem still_learnable_iff_lumped (still : ∀ s, next s = s) {reg : S → R} {val : S → V}
     {l : List S} (world : ∀ s, s ∈ l) :
     (∃ pred : List R → Option V, ∀ r : Run (Law.process next), Rests reg val pred r) ↔
