@@ -529,7 +529,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "2a0769e16122ff4d4ba58ff48a4584f94e4c2fb140b4b109af11333fcfc46769"
+      "sha256": "5c5eb2cc2ab0136954e9c9415f9784e55ed97ae92ee383dcc00305128a7c25b4"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -669,6 +669,10 @@
     {
       "en": "18 October 2026, readings D40-D42: DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D40-D42 added (index rows, decisions in section 6, lineage)). The claim is unchanged.",
       "zh": "2026年10月18日，读法 D40-D42：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, S3 (Becoming.LastChange): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D42 extended with S3 (index row and extension paragraph)). The claim is unchanged.",
+      "zh": "2026年10月18日，S3（Becoming.LastChange）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

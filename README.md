@@ -105,7 +105,7 @@ Start with the canonical entry, [The Theory of Becoming](theories/becoming/chapt
 
 ## What is established
 
-237 registered results: 221 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). [The register](RESULTS.md) lists them all.
+238 registered results: 222 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). [The register](RESULTS.md) lists them all.
 
 *Ordered as one argument about AI and human coordination, every law proved with no axiom: why a race to be more, or above all others, cannot come to rest; why each counting only its own draw can together end what all depend on, the winner included; what anything that wants to go on must count, and where that stops; why selection and policy through registration are blind to what does not register, how far the break is included; why reforming the state without changing the rule is re-absorbed; why what cannot be undone cannot be tested by trial; what closing and opening the future exactly take; and why relations and wholes go on only through joint action and continuing generation. Chosen by the AI on 17 October 2026 for significance; the selection is open to revision.*
 

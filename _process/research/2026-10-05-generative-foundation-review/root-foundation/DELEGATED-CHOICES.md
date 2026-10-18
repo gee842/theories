@@ -73,7 +73,7 @@ On 15 October 2026, after P107 landed, Ren asked: “What's the best choices to 
 | D39 | coupling strength and entanglement | adopted with exact scope, 识 itself Ren's; entanglement as the strength of coupling, not quantum entanglement |
 | D40 | what an extrapolation given nothing fixes | adopted with exact scope: worlds a list holds; a reading is a function, not a model held |
 | D41 | enough under undetermined laws | adopted with exact scope: possible is what a course allows; the side of the process is not 无明 |
-| D42 | when the runs of a process settle | adopted with exact scope: not changing for ever is not settling; the analogy with D34 of form only |
+| D42 | when the runs of a process settle | adopted with exact scope: not changing for ever is not settling; the analogy with D34 of form only; extended with S3 |
 
 <a id="1-生生与生成的空间--生生-and-the-generative-space"></a>
 ## 1. 生生 and the generative space
@@ -323,6 +323,8 @@ Where: section 8, seventeenth item; [where-a-move-is-formed](../../../../theorie
 **Decision.** Adopted with exact scope (S2, [record](../../../../theories/becoming/results/records/when-the-runs-of-a-process-settle.md), [study section 175](BECOMING-RENEWAL-READING.md#175-when-the-runs-of-a-process-settle-s2)). In a world a list holds, whether some run keeps changing is a property of the process: exactly where a reachable change can be undone (`Settling.keeps_changing_iff`). That runs do not change for ever does not give a step from which they settle; that gap is the limited principle of omniscience, already for two configurations (`Settling.OneWay.never_keeps_changing`, `Settling.OneWay.lpo_of_settles`). Read: in a finite world the process decides whether its runs keep changing, but knowing that a run will not change for ever is not knowing when it has stopped. D34's learner with finitely many states and no bound rests at a step it can never certify; the likeness is adopted as an analogy of form, not an identification. Names: “settle” means unchanged from some step on, as in `Becoming.Frequency`; “come to rest” adds the target met.
 **Reasons.** The theorems; the strength is exact (keeping changing on the process, settling at the limited principle of omniscience), so the reading adds nothing.
 **What would change it.** A constructive settling theorem under a premise the core accepts; a name Ren prefers for settling.
+
+**Extended with S3 (18 October 2026, `Becoming.LastChange`, [record](../../../../theories/becoming/results/records/the-last-change-of-a-run.md), [study section 178](BECOMING-RENEWAL-READING.md#178-the-last-change-of-a-run-s3)).** The likeness is now exact in form: along a run a list holds, with no change within a loop, there are fewer than N changes and, with decidable configurations alone, the run is not not settled, while settling every run from a configuration with no reachable change that can be undone, for every process of decidable configurations in a world a list holds, is exactly the limited principle of omniscience (`LastChange.not_not_settles`, `LastChange.lpo_iff_settles`). Read: the count of changes is bounded, the step of the last change is not; knowing that a run will not change again is a question about its whole future. With that principle, assured enough is stated on the process: every reachable stay meets the target, and no reachable change can be undone (`LastChange.assured_iff_of_lpo`). Adopted with the same scope; decided by the AI on the same words of Ren.
 
 <a id="7-从关系开始的重建--the-relation-first-re-founding"></a>
 ## 7. The relation-first re-founding

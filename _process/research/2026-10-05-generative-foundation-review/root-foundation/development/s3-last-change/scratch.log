@@ -1,0 +1,14 @@
+{
+  "tree": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/s3-last-change",
+  "modules": 30,
+  "ran": [],
+  "reused": 31,
+  "unclean": [],
+  "audits": {
+    "Becoming.LastChange": {
+      "theorems": 20,
+      "declarations": 24,
+      "with_axioms": {}
+    }
+  }
+}

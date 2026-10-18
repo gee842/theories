@@ -23,8 +23,8 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- The positive form: when every run settles. Whether the limited principle of omniscience with no reachable undoable change gives it is not stated.
-- How many times a run changes; worlds no list holds, where change can recur without a loop.
+- Settling without the limited principle of omniscience: with no reachable undoable change, every run settling is exactly LPO for every process of decidable configurations in a world a list holds (the-last-change-of-a-run).
+- Worlds no list holds, where change can recur without a loop (how many times a run changes within a list is in the-last-change-of-a-run).
 - **Counterexample:** OneWay: two configurations with no way back from true; no run keeps changing, and every run from false settling gives LPO (OneWay.lpo_of_settles). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Settling.lean)
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -39,7 +39,7 @@ Canonical source: [Settling.lean](../../../../experiments/integrated-correction/
 <a id="next--下一步"></a>
 ## Next
 
-The classical converse under LPO; how many times a run changes; an independent review.
+Settling under a premise the core accepts, short of LPO; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -76,6 +76,8 @@ Aliases: `when the runs of a process settle`, `过程的运行何时安定`, `ch
 - 18 October 2026: the reading decided by the AI on Ren's words of 18 October ("alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable"), DELEGATED-CHOICES D42; the chapter labels it "AI reading, D42". The claim is unchanged.
 - 18 October 2026, readings D40-D42: 2026-10-18-representation-scope-go.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (2026-10-18-representation-scope-go.md: Ren's message on the readings of L1, S1 and S2 recorded; THE-THEORY-OF-BECOMING.md: the readings of L1, S1 and S2 added as labelled paragraphs (AI reading, D40; AI reading, D41, D42), two interpretive sentences of the L1 bullets moved into the first). The claim is unchanged.
 - 18 October 2026, G2 (Becoming.SelectionReach): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G2 added a study section; THE-THEORY-OF-BECOMING.md: G2 added the bullet on raising what couples in, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
+- 18 October 2026, S3 (Becoming.LastChange): the positive form under LPO and how many times a run changes are stated in the-last-change-of-a-run, so two items of does_not_show and the next step were narrowed. Before: does_not_show "The positive form: when every run settles. Whether the limited principle of omniscience with no reachable undoable change gives it is not stated." and "How many times a run changes; worlds no list holds, where change can recur without a loop."; next step "The classical converse under LPO; how many times a run changes; an independent review.". The claim is unchanged.
+- 18 October 2026, S3 (Becoming.LastChange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: S3 added a study section; THE-THEORY-OF-BECOMING.md: S3 added the bullet on the last change, revised the "Seeking, capture and runaway" row of section 8.2, extended the D41/D42 reading and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 
 </details>
 

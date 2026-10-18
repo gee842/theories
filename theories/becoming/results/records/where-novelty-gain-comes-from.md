@@ -127,6 +127,7 @@ Aliases: `where novelty's gain comes from`, `新的增益从哪里来`, `every r
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 - 18 October 2026, readings D40-D42: DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D40-D42 added (index rows, decisions in section 6, lineage)). The claim is unchanged.
+- 18 October 2026, S3 (Becoming.LastChange): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D42 extended with S3 (index row and extension paragraph)). The claim is unchanged.
 - 8 rebinding entries (2026-10-16 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-novelty-gain-comes-from.json).
 
 </details>

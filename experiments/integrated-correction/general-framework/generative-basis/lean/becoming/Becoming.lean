@@ -177,6 +177,7 @@ import Becoming.CensusBinding
 import Becoming.Unrolling
 import Becoming.Enough
 import Becoming.Settling
+import Becoming.LastChange
 import Becoming.SelectionGap
 import Becoming.SelectionReach
 
@@ -1308,6 +1309,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   settles, or assured enough holds, there is none. That no run keeps changing does not give
   settling: in a process of two configurations, every run settling is the limited principle of
   omniscience.
+* `Becoming.LastChange` (L4): how often a run changes and what it takes to know it has stopped,
+  with no premise beyond a list, and decidable configurations, where stated. Along a run a list of
+  `N` holds, with no change within a loop, there are fewer than `N` changes; such a run settles
+  exactly where, at every step, whether it changes again is decided, and with decidable
+  configurations it is not not settled. With the limited principle of omniscience it settles, and
+  that every run with no reachable change that can be undone settles, for every process of
+  decidable configurations in a world a list holds, is exactly that principle. With it, assured
+  enough is every reachable stay meeting the target and no reachable change undoable.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return

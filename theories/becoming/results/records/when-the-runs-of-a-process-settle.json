@@ -84,13 +84,13 @@
   ],
   "does_not_show": [
     {
-      "en": "The positive form: when every run settles. Whether the limited principle of omniscience with no reachable undoable change gives it is not stated.",
-      "zh": "正面形式：每次运行何时安定。有限全知原理加上无可达的可撤回变化是否给出它，未被陈述。",
+      "en": "Settling without the limited principle of omniscience: with no reachable undoable change, every run settling is exactly LPO for every process of decidable configurations in a world a list holds (the-last-change-of-a-run).",
+      "zh": "没有有限全知原理的安定：没有可达的可撤回变化时，对由一个列表容纳的世界中每个构形可判定的过程，每次运行都安定恰是 LPO（the-last-change-of-a-run）。",
       "kind": "scope"
     },
     {
-      "en": "How many times a run changes; worlds no list holds, where change can recur without a loop.",
-      "zh": "一次运行变化多少次；没有列表容纳的世界，那里变化可无回路而反复出现。",
+      "en": "Worlds no list holds, where change can recur without a loop (how many times a run changes within a list is in the-last-change-of-a-run).",
+      "zh": "没有列表容纳的世界，那里变化可无回路而反复出现（列表之内一次运行变化多少次，见 the-last-change-of-a-run）。",
       "kind": "scope"
     }
   ],
@@ -116,8 +116,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T075849.482455Z）：Becoming.Settling 的 37 项声明（27 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 175 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "The classical converse under LPO; how many times a run changes; an independent review.",
-    "zh": "在 LPO 下的经典逆命题；一次运行变化多少次；独立审查。"
+    "en": "Settling under a premise the core accepts, short of LPO; an independent review.",
+    "zh": "在核心接受、弱于 LPO 的前提下的安定；独立审查。"
   },
   "correspondence": {
     "en": "Enough.assured_iff splits assured enough into a part about the target and every run settling. Ren, 18 October 2026: \"Start the next item: when the runs of a process settle, the part of assured enough that doesn't mention the target (claim on the board first).\" (provenance, not warrant). The negative form, some run keeping changing, is exact on the process; the positive form is calibrated at LPO.",
@@ -206,12 +206,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "172c1935b58364c4d5ad138a75e6d3d3cd5094f5fa4fe74671bae25bf9146cf3"
+      "sha256": "c8699ab3420fb1b097e3b032cdc03b1439b786f92927c1dd242cdb857c644947"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "46444b00d1fe3a02a1eabb32ee081fc8cab80f9ee7ea6ec682c24522d3dc8b88"
+      "sha256": "e5e6e6d15890b0cfef01f8c2969de29af6285d7b71ccc46a1e9ef06e32f3b12b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -248,6 +248,14 @@
     {
       "en": "18 October 2026, G2 (Becoming.SelectionReach): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G2 added a study section; THE-THEORY-OF-BECOMING.md: G2 added the bullet on raising what couples in, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月18日，G2（Becoming.SelectionReach）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, S3 (Becoming.LastChange): the positive form under LPO and how many times a run changes are stated in the-last-change-of-a-run, so two items of does_not_show and the next step were narrowed. Before: does_not_show \"The positive form: when every run settles. Whether the limited principle of omniscience with no reachable undoable change gives it is not stated.\" and \"How many times a run changes; worlds no list holds, where change can recur without a loop.\"; next step \"The classical converse under LPO; how many times a run changes; an independent review.\". The claim is unchanged.",
+      "zh": "2026年10月18日，S3（Becoming.LastChange）：LPO 下的正面形式与一次运行变化多少次已在 the-last-change-of-a-run 中陈述，所以“未表明”的两项与下一步收窄；原文见英文。论断不变。"
+    },
+    {
+      "en": "18 October 2026, S3 (Becoming.LastChange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: S3 added a study section; THE-THEORY-OF-BECOMING.md: S3 added the bullet on the last change, revised the \"Seeking, capture and runaway\" row of section 8.2, extended the D41/D42 reading and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，S3（Becoming.LastChange）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

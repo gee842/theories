@@ -104,6 +104,7 @@ Aliases: `when readings in context glue, for parity`, `奇偶约束下语境中�
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the validation scope said "not independently reviewed", while the eighteenth review (R18) read and corrected this record; R18 is an AI read-only review with no Lean rebuild, so it now says "reviewed by the eighteenth review (AI, read-only)", not "independently". The independent review in the next step stays: whether R18 counts as the review asked for is Ren's decision. Earlier text in text_versions.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 - 18 October 2026, readings D40-D42: DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D40-D42 added (index rows, decisions in section 6, lineage)). The claim is unchanged.
+- 18 October 2026, S3 (Becoming.LastChange): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D42 extended with S3 (index row and extension paragraph)). The claim is unchanged.
 - 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](gluing-under-parity.json).
 
 <a id="earlier-text--早期文本"></a>

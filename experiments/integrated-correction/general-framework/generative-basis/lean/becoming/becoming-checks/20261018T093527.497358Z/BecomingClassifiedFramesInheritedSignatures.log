@@ -1,0 +1,10 @@
+@Becoming.ClassifiedFramesInherited.frame_two_extremes_suffice : ∀ {S A C G N : Type} (F : Becoming.Frame S A C)
+  (g : S → G → Prop) (f : S → N → Prop) (a b : S),
+  (∀ (q : N → Prop), ClassificationRobustJudgment.compared F.realized g f q a b) ↔
+    ClassificationRobustJudgment.compared F.realized g f (fun x => False) a b ∧
+      ClassificationRobustJudgment.compared F.realized g f (fun x => True) a b
+@Becoming.ClassifiedFramesInherited.frame_strict_growth_robust : ∀ {S A C G N : Type} (F : Becoming.Frame S A C)
+  (g : S → G → Prop) (f : S → N → Prop) {a b : S},
+  PracticalJudgment.StrictIncluded (F.realized b) (F.realized a) →
+    PracticalJudgment.Included (f b) (f a) →
+      ∀ (q : N → Prop), ClassificationRobustJudgment.compared F.realized g f q a b

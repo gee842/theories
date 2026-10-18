@@ -81,6 +81,7 @@ Aliases: `favouring what reaches beyond`, `偏向伸出`, `raising what couples 
 ### History
 
 - 18 October 2026: added (G2), on Ren's "please see what else is there to do - keep pushing the frontier till finishing"; study section 177.
+- 18 October 2026, S3 (Becoming.LastChange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: S3 added a study section; THE-THEORY-OF-BECOMING.md: S3 added the bullet on the last change, revised the "Seeking, capture and runaway" row of section 8.2, extended the D41/D42 reading and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 
 </details>
 
