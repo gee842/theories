@@ -54,3 +54,15 @@ After N3 landed (`75b532517`) and the assistant reported it, with the four decis
 > please, i think we both see, just keep pushing the frontier - 道法自然, i am going to sleep, see you when i wake up
 
 The assistant's reading, which Ren may correct: a go to continue additive work at the frontier of this line, following where the work itself leads (道法自然: the way follows what is so of itself). The four renaming decisions were not answered, so "still no renames" stands and the package stays unapplied. The next item is the one N3 left open: a crossing where the formation requires several conditions at one step.
+
+## Ren's decision on the renaming (18 October 2026)
+
+After N4 landed (`d40e96177`), the assistant listed the four decisions the renaming package needed. Ren wrote:
+
+> please
+
+The assistant asked whether this was the go for the renaming, with three options: apply the renames with the assistant's four recommendations (argument order kept as `Web.CoupledInto obs g c`; the 30 definitions and the theorem families named after them; old names kept one cycle as deprecated aliases; one branch, landed through the queue); the same with full scope, also renaming the other 126 theorem names proposed by substitution, each reviewed; or no renames yet. Ren chose:
+
+> Renames, full scope
+
+The assistant's reading: this lifts "still no renames" for the package's names (the 30 definitions and the reviewed theorem names, with their families), with the other recommendations as stated. Docstring and record prose words stay out of scope, as the package said. Where the work departs from what was offered (deprecated aliases), the departure is recorded with its reason in the naming study.

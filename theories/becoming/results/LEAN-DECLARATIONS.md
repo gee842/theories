@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 179 | 7,607 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 180 | 7,636 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 39 | 601 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -100,6 +100,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [CarrierDiagnosis.lean](lean-declarations/other.md#module-92cfb0fcf109) | Other formal studies |
 | [CarrierTurnover.lean](lean-declarations/shared.md#module-abe231e35227) | Organizational formation through revisable evaluation |
 | [Cases.lean](lean-declarations/concern.md#module-5fd22deccdc6) | Concern and shared activity |
+| [CensusBinding.lean](lean-declarations/becoming-core.md#module-970a8214feea) | Becoming pure core |
 | [CensusCounts.lean](lean-declarations/becoming-core.md#module-85b456df5b23) | Becoming pure core |
 | [CensusWebs.lean](lean-declarations/becoming-core.md#module-3ad9ef5277e4) | Becoming pure core |
 | [ChanceAdequacy.lean](lean-declarations/ethics.md#module-166f8dbba86d) | Normative grounding and generative direction |

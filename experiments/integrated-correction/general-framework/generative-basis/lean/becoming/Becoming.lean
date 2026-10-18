@@ -173,6 +173,7 @@ import Becoming.WeightedTraces
 import Becoming.LevelCoupling
 import Becoming.Interleavings
 import Becoming.CensusCounts
+import Becoming.CensusBinding
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1259,6 +1260,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   finite worlds hold of them; where a procedure decides activity, its marks are these counts. The
   laws where every selected premise binds (`World.binding_counting` and its family) still take
   the procedure.
+* `Becoming.CensusBinding` (L4): the rest of the laws of counting over counted censuses, with no
+  decision procedure for activity and for every property of the counts: where every premise
+  binds, where the premises of each selection bind (with what binding adds: something active,
+  something arising, both at one step), in finite worlds and under enclosure, with the
+  equivalences saying where each added law holds; and the premises leaving counting free,
+  balance and embodiment binding jointly, the enclosed and finite laws agreeing, and the reading
+  on what stands. Each statement is its decided form in `Becoming.Counting` with the procedure
+  and the pointwise condition removed.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return

@@ -1,0 +1,3 @@
+import Becoming.ClassifiedFramesInherited
+#print axioms Becoming.ClassifiedFramesInherited.frame_two_extremes_suffice
+#print axioms Becoming.ClassifiedFramesInherited.frame_strict_growth_robust

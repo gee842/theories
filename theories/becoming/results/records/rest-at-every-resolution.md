@@ -147,7 +147,7 @@ Aliases: `Becoming.Flow.BalancesAt`, `Becoming.Flow.balancesAt_one`, `Becoming.L
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Roles.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)); Space.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
-- 50 rebinding entries (2026-10-10 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](rest-at-every-resolution.json).
+- 51 rebinding entries (2026-10-10 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](rest-at-every-resolution.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

@@ -31,11 +31,6 @@
    "category": "support",
    "reason": "A list lemma: a count is zero where the determination holds of no member."
   },
-  "Becoming.Counts.pos_of_mem": {
-   "module": "Becoming.Decidedness",
-   "category": "support",
-   "reason": "A list lemma: a member of which the determination holds makes a count positive."
-  },
   "Becoming.CrossSituational.Repeated.not_resolved": {
    "module": "Becoming.CrossSituational",
    "category": "model-witness",

@@ -5,7 +5,7 @@
 
 `counting-where-the-counts-exist` · **recorded-checked** · theorem · F01 · [record](counting-where-the-counts-exist.json) · [register](../../../../RESULTS.md)
 
-> The laws of counting hold of every counted census, the counts taken as relations: under each selection of the premises, under enclosure and in finite worlds, for every property of the counts, with decision asked only where a count exists.
+> Every law of counting of Becoming.Counting that takes decided activity holds of every counted census, the counts taken as relations, for every property of the counts and with decision asked only where a count exists; the one law left is a statement of logical strength.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -14,16 +14,19 @@
 2. Where the counts exist, for every property and with no decidedness: under each selection of the premises the laws of counting are the tally and, where the selection binds counting, nothing arising across a step at which nothing is active; under the eight premises, that law with the tally. (`Becoming.World.counting_under_counted`, `Becoming.World.premised_counting_counted`, `Becoming.World.counting_binds_iff_counted`, `Becoming.World.active_of_coming_jointly`, `Becoming.World.active_of_coming_taking`)
 3. Enclosure bounds change for every counted census of embodied relata under a balanced, dissipative flow; so in worlds enclosed from some step on and in finite worlds the laws of counting are those of Becoming.Counting, for every property and with no decidedness. (`Becoming.World.enclosure_bounds_change_counted`, `Becoming.World.active_of_coming_enclosed`, `Becoming.World.enclosed_counting_counted`, `Becoming.World.finite_counting_counted`, `Becoming.World.enclosed_counting_under_counted`, `Becoming.World.enclosed_change_bound_iff_counted`, `Becoming.World.finite_counting_under_counted`, `Becoming.World.finite_counting_binds_iff_counted`, `Becoming.World.finite_change_bound_iff_counted`)
 4. A ceasing count across a step exists exactly where, for each relatum listed before the step, whether it is listed after the step is weakly decided, and a coming count likewise; where a procedure decides activity, its marks are the counts. (`Becoming.World.ceasings_exist_iff`, `Becoming.World.comings_exist_iff`, `Becoming.World.ceasings_exist_iff_listed`, `Becoming.World.comings_exist_iff_listed`, `Becoming.World.countsOf_decided`, `Becoming.World.CountsHold.obey`, `Becoming.World.countsHold_of_obey`)
+5. Where the selected premises bind, for every property and with no decidedness: the laws of counting are those under the selection with what binding adds (something active, something arising, both at one step), each exactly where the selection gives it; likewise in finite worlds and under enclosure. (`Becoming.World.binding_counting_counted`, `Becoming.World.binding_counting_under_counted`, `Becoming.World.binding_activity_iff_counted`, `Becoming.World.binding_arising_iff_counted`, `Becoming.World.binding_joint_iff_counted`, `Becoming.World.finite_binding_counting_counted`, `Becoming.World.finite_binding_census_counted`, `Becoming.World.finite_binding_counting_under_counted`, `Becoming.World.finite_binding_activity_iff_counted`, `Becoming.World.finite_binding_arising_iff_counted`, `Becoming.World.finite_binding_joint_iff_counted`, `Becoming.World.enclosed_binding_counting_counted`, `Becoming.World.enclosed_binding_counting_under_counted`, `Becoming.World.enclosed_binding_activity_iff_counted`, `Becoming.World.enclosed_binding_arising_iff_counted`, `Becoming.World.enclosed_binding_joint_iff_counted`, `Becoming.World.CountsOf.active_pos`, `Becoming.World.CountsOf.arising_pos`, `Becoming.World.binds_arising_counted`, `Becoming.World.binds_adds_counted`, `Becoming.World.CountsOf.company_binding`, `Becoming.World.CountsOf.acts_of_binding`, `Becoming.World.CountsOf.joint_of_binding`, `Becoming.World.countsOf_eq`)
+6. The rest of the family holds of counted censuses: the premises leave counting free; balance and embodiment bind the counts only together; enclosed and finite worlds share their laws under the eight, and under a selection exactly where it bounds change and binds counting; read on what stands, the laws are those of counted censuses. (`Becoming.World.counting_free_parts_counted`, `Becoming.World.counting_binds_jointly_counted`, `Becoming.World.enclosed_iff_finite_counting_counted`, `Becoming.World.enclosed_iff_finite_counting_under_counted`, `Becoming.World.standing_iff_counting_counted`)
 
 <a id="conditions--条件"></a>
 ## Conditions
 
-- No axiom. Each theorem states what it needs: a census of the world; the selected premises; enclosure from a step, or finitely many relata, where stated. The agreement theorems take a decision procedure for activity, and the converse agreement a pointwise property.
+- No axiom. Each theorem states what it needs: a census of the world; the selected premises and, where stated, that they bind; enclosure from a step, or finitely many relata, where stated. The agreement theorems take a decision procedure for activity, the converse agreement and the reading on what stands a pointwise property.
 
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- The laws where the premises bind (World.binding_counting and its family): they still take a decision procedure for activity at every relatum and step.
+- World.lpo_of_finite_ends: asked of every finite world meeting the eight premises with its activity decided, a step after which nothing arises gives the limited principle of omniscience; its subject is the decision, and it is not restated.
+- The laws read on dependence (World.dependence_counting): they take a decision of dependence, not of activity, and are not restated.
 - That the counts exist in a given world: where activity at the listed relata is not weakly decided across a step, there is no count there and the laws hold vacuously of it.
 - **Counterexample:** A census that cannot be counted across a step: where for some relatum listed before the step it is not weakly decided whether it is listed after it, no ceasing count exists there (ceasings_exist_iff_listed). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean)
 
@@ -32,21 +35,21 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T012738.651832Z): the declarations of Becoming.CensusCounts have empty axiom reports; the checker verifies core purity. Author self-review in study section 170; not independently reviewed.
+Machine-checked by the consolidated Lean 4.29.1 checker (receipts 20261018T012738.651832Z for Becoming.CensusCounts and 20261018T060442.434639Z for Becoming.CensusBinding): the declarations have empty axiom reports; the checker verifies core purity. Author self-review in study sections 170 and 171; not independently reviewed.
 
 Canonical source: [CensusCounts.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean)
 
 <a id="next--下一步"></a>
 ## Next
 
-The laws where the premises bind, stated over counted censuses; replacing the decided statements by the counted ones where they are used; an independent review.
+Using the counted statements where the decided ones are used; the laws read on dependence over counted relations; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-The open programme of the chapter named one exception to the localized decidability: the counting laws take decidability of activity for every relatum and step, and hold for pointwise properties only. Ren, 18 October 2026: "Start R2: localize the counting laws' decidability of activity." (provenance, not warrant). The counted laws remove both conditions for the laws under the premises, each selection, enclosure and finite worlds: counts are relations, as Becoming.Decidedness reads them, so a law needs a decision only where a count exists, and the uniqueness of counts makes every property respect them.
+The open programme of the chapter named one exception to the localized decidability: the counting laws take decidability of activity for every relatum and step, and hold for pointwise properties only. Ren, 18 October 2026: "Start R2: localize the counting laws' decidability of activity." (provenance, not warrant). The counted laws remove both conditions for the laws under the premises, each selection, enclosure and finite worlds: counts are relations, as Becoming.Decidedness reads them, so a law needs a decision only where a count exists, and the uniqueness of counts makes every property respect them. Ren, 18 October 2026: "Start R2b: restate the binding family of the counting laws over counted censuses." (provenance, not warrant). The binding laws and the rest of the family follow, the same witnesses read as counts.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -63,16 +66,19 @@ The open programme of the chapter named one exception to the localized decidabil
 |---|---|---|
 | proof | [CensusCounts.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusCounts.lean) | `Becoming.FamilyCounts`, `Becoming.FamilyCounts.tally`, `Becoming.World.CountsHold`, `Becoming.World.CountsHold.obey`, `Becoming.World.CountsOf`, `Becoming.World.CountsOf.tally`, `Becoming.World.active_of_coming_enclosed`, `Becoming.World.active_of_coming_jointly`, `Becoming.World.active_of_coming_taking`, `Becoming.World.ceasings_exist_iff`, `Becoming.World.ceasings_exist_iff_listed`, `Becoming.World.comings_exist_iff`, `Becoming.World.comings_exist_iff_listed`, `Becoming.World.counting_binds_iff_counted`, `Becoming.World.counting_free_counted`, `Becoming.World.counting_under_counted`, `Becoming.World.countsHold_of_obey`, `Becoming.World.countsOf_decided`, `Becoming.World.enclosed_change_bound_iff_counted`, `Becoming.World.enclosed_counting_counted`, `Becoming.World.enclosed_counting_under_counted`, `Becoming.World.enclosure_bounds_change_counted`, `Becoming.World.finite_change_bound_iff_counted`, `Becoming.World.finite_counting_binds_iff_counted`, `Becoming.World.finite_counting_counted`, `Becoming.World.finite_counting_under_counted`, `Becoming.World.premised_counting_counted`, `Becoming.counted_laws`, `Becoming.tally_step` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T012738.651832Z/verification.json) | — |
+| proof | [CensusBinding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusBinding.lean) | `Becoming.World.CountsOf.active_pos`, `Becoming.World.CountsOf.acts_of_binding`, `Becoming.World.CountsOf.arising_pos`, `Becoming.World.CountsOf.company_binding`, `Becoming.World.CountsOf.joint_of_binding`, `Becoming.World.binding_activity_iff_counted`, `Becoming.World.binding_arising_iff_counted`, `Becoming.World.binding_counting_counted`, `Becoming.World.binding_counting_under_counted`, `Becoming.World.binding_joint_iff_counted`, `Becoming.World.binds_adds_counted`, `Becoming.World.binds_arising_counted`, `Becoming.World.counting_binds_jointly_counted`, `Becoming.World.counting_free_parts_counted`, `Becoming.World.countsOf_eq`, `Becoming.World.enclosed_binding_activity_iff_counted`, `Becoming.World.enclosed_binding_arising_iff_counted`, `Becoming.World.enclosed_binding_counting_counted`, `Becoming.World.enclosed_binding_counting_under_counted`, `Becoming.World.enclosed_binding_joint_iff_counted`, `Becoming.World.enclosed_iff_finite_counting_counted`, `Becoming.World.enclosed_iff_finite_counting_under_counted`, `Becoming.World.finite_binding_activity_iff_counted`, `Becoming.World.finite_binding_arising_iff_counted`, `Becoming.World.finite_binding_census_counted`, `Becoming.World.finite_binding_counting_counted`, `Becoming.World.finite_binding_counting_under_counted`, `Becoming.World.finite_binding_joint_iff_counted`, `Becoming.World.standing_iff_counting_counted` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T060442.434639Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
 
-Aliases: `counting where the counts exist`, `计数存在之处的计数`, `counted census`, `被计数的普查`, `counts as relations`, `计数作为关系`, `counting laws for every property`, `对每个性质的计数之律`
+Aliases: `counting where the counts exist`, `计数存在之处的计数`, `counted census`, `被计数的普查`, `counts as relations`, `计数作为关系`, `counting laws for every property`, `对每个性质的计数之律`, `binding laws over counted censuses`, `被计数的普查上的约束之律`
 
 <a id="history--沿革"></a>
 ### History
 
 - 18 October 2026: added (R2), on Ren's "Start R2: localize the counting laws' decidability of activity."; study section 170.
+- 18 October 2026: extended (R2b), on Ren's "Start R2b: restate the binding family of the counting laws over counted censuses."; laws 5 and 6 added from Becoming.CensusBinding, statement, scope and next step rewritten (the binding family is no longer outside the record); study section 171.
 
 </details>
 
