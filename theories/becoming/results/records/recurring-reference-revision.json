@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "651b1f9d21003bb629838423ce7cc0f0fb8fd2ca976a8303a3d933b38f8bc361",
+      "sha256": "9b8c49d0ad621452c0626af5e391db3b3e5e3512ee9f0db908f6bac7ba7ce77f",
       "declarations": []
     },
     {
@@ -562,6 +562,9 @@
     },
     {
       "en": "18 October 2026, F2, joins into the core (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): declarations moved with their full Lean names. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F2 follow-up: the chapter changed only in section 8's row on the integration of the spine, where the F2 rerun sentence now says F3R registered its 21 apart roots (`39c66e31b`); the reference to the chapter is re-pointed. The claim is unchanged."
     }
   ]
 }
