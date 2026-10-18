@@ -1,0 +1,633 @@
+{
+ "about": "The 67 periphery modules the 39 bridge modules reach (Lean constants of type and value): theorem count, how many kind-1 and all bridge declarations reach each, and the live Lean files importing it outside the Becoming package (history, receipts, builds and axiom-audit drivers excluded). 18 October 2026.",
+ "modules": [
+  {
+   "module": "GenerativeComparison",
+   "theorems": 11,
+   "kind1": 7,
+   "bridge_decls": 32,
+   "importers": [
+    "EvaluatorGrounding",
+    "PositionedPositiveReason",
+    "PositiveGroundUncertainty",
+    "ProtectionPriorityRival",
+    "RelationalGrounding",
+    "RenewalComparison",
+    "RenewingFormation"
+   ]
+  },
+  {
+   "module": "PracticalJudgment",
+   "theorems": 30,
+   "kind1": 6,
+   "bridge_decls": 31,
+   "importers": [
+    "AlignmentDirection",
+    "ClassificationRevision",
+    "ConcernExtension",
+    "CrossedClaims",
+    "GoalFormationRevision",
+    "GoalRevision",
+    "InquiryJudgment",
+    "PositiveGroundUncertainty",
+    "ProtectionPriorityRival",
+    "RelationalOrganization",
+    "SelectorReviewCoverage",
+    "SituatedKitchen",
+    "SustainedJudgment",
+    "TuningCorrespondence",
+    "UnequalBasicLosses"
+   ]
+  },
+  {
+   "module": "JointContinuationClassification",
+   "theorems": 5,
+   "kind1": 2,
+   "bridge_decls": 24,
+   "importers": [
+    "PositiveGroundUncertainty",
+    "RelationalBecoming",
+    "RelationalGrounding"
+   ]
+  },
+  {
+   "module": "StandardsBridge",
+   "theorems": 26,
+   "kind1": 4,
+   "bridge_decls": 18,
+   "importers": [
+    "FormedGrounds",
+    "PositiveGroundUncertainty"
+   ]
+  },
+  {
+   "module": "PositiveGroundUncertainty",
+   "theorems": 9,
+   "kind1": 0,
+   "bridge_decls": 1,
+   "importers": [
+    "OpenFutureRevision",
+    "PositionedPositiveReason"
+   ]
+  },
+  {
+   "module": "PositionedPositiveReason",
+   "theorems": 10,
+   "kind1": 2,
+   "bridge_decls": 3,
+   "importers": []
+  },
+  {
+   "module": "RenewalComparison",
+   "theorems": 15,
+   "kind1": 5,
+   "bridge_decls": 11,
+   "importers": []
+  },
+  {
+   "module": "WholeGroundCoverage",
+   "theorems": 27,
+   "kind1": 6,
+   "bridge_decls": 20,
+   "importers": []
+  },
+  {
+   "module": "CutCoverageAudit",
+   "theorems": 12,
+   "kind1": 2,
+   "bridge_decls": 5,
+   "importers": []
+  },
+  {
+   "module": "EvaluatorGrounding",
+   "theorems": 12,
+   "kind1": 1,
+   "bridge_decls": 7,
+   "importers": []
+  },
+  {
+   "module": "PracticalReach",
+   "theorems": 24,
+   "kind1": 4,
+   "bridge_decls": 18,
+   "importers": []
+  },
+  {
+   "module": "CorrectionInfrastructure",
+   "theorems": 34,
+   "kind1": 3,
+   "bridge_decls": 13,
+   "importers": []
+  },
+  {
+   "module": "HistoryRealization",
+   "theorems": 7,
+   "kind1": 1,
+   "bridge_decls": 5,
+   "importers": [
+    "ContinuationConditions",
+    "ExplanatoryNecessity",
+    "GeneratedSelf",
+    "GenerativeModel"
+   ]
+  },
+  {
+   "module": "ExplanatoryUniqueness",
+   "theorems": 15,
+   "kind1": 3,
+   "bridge_decls": 29,
+   "importers": [
+    "ExplanatoryBranching",
+    "ExplanatoryComposition",
+    "ExplanatoryJoining",
+    "ExplanatoryUniversality",
+    "UnfoldingPreservation"
+   ]
+  },
+  {
+   "module": "DynamicUnderdetermination",
+   "theorems": 9,
+   "kind1": 0,
+   "bridge_decls": 1,
+   "importers": [
+    "DynamicSymmetry",
+    "RelationalDynamics"
+   ]
+  },
+  {
+   "module": "RelationalDynamics",
+   "theorems": 13,
+   "kind1": 2,
+   "bridge_decls": 5,
+   "importers": [
+    "ExplanatoryBranching",
+    "RelationalContinuation"
+   ]
+  },
+  {
+   "module": "ExplanatoryBranching",
+   "theorems": 18,
+   "kind1": 32,
+   "bridge_decls": 65,
+   "importers": [
+    "ExplanatoryJoiningBranches",
+    "ExplanatoryJoiningIncidence",
+    "ExplanatoryJointness"
+   ]
+  },
+  {
+   "module": "ContinuationRenewal",
+   "theorems": 17,
+   "kind1": 2,
+   "bridge_decls": 14,
+   "importers": [
+    "ContinuationRenewalAudit",
+    "OpenFutureRevision",
+    "SituatedContinuation",
+    "SituatedRenewal"
+   ]
+  },
+  {
+   "module": "OpenFutureRevision",
+   "theorems": 10,
+   "kind1": 2,
+   "bridge_decls": 12,
+   "importers": []
+  },
+  {
+   "module": "RelationalGrounding",
+   "theorems": 6,
+   "kind1": 0,
+   "bridge_decls": 3,
+   "importers": [
+    "ClassificationRobustJudgment"
+   ]
+  },
+  {
+   "module": "ProtectionPriorityRival",
+   "theorems": 15,
+   "kind1": 0,
+   "bridge_decls": 2,
+   "importers": []
+  },
+  {
+   "module": "ChanceAdequacy",
+   "theorems": 8,
+   "kind1": 2,
+   "bridge_decls": 4,
+   "importers": [
+    "ObservableContinuation"
+   ]
+  },
+  {
+   "module": "AlignmentInquiry",
+   "theorems": 9,
+   "kind1": 7,
+   "bridge_decls": 22,
+   "importers": [
+    "EffectiveCommand",
+    "ObservableContinuation",
+    "ReformInquiry"
+   ]
+  },
+  {
+   "module": "EffectiveCommand",
+   "theorems": 15,
+   "kind1": 3,
+   "bridge_decls": 21,
+   "importers": [
+    "AcquiredCorrection"
+   ]
+  },
+  {
+   "module": "AcquiredCorrection",
+   "theorems": 24,
+   "kind1": 3,
+   "bridge_decls": 14,
+   "importers": [
+    "AcquiredCorrectionCases",
+    "FaultTolerantCorrection"
+   ]
+  },
+  {
+   "module": "FaultTolerantCorrection",
+   "theorems": 37,
+   "kind1": 2,
+   "bridge_decls": 8,
+   "importers": [
+    "CorrectionReconfiguration",
+    "FaultTolerantCorrectionCases"
+   ]
+  },
+  {
+   "module": "CorrectionReconfiguration",
+   "theorems": 28,
+   "kind1": 2,
+   "bridge_decls": 11,
+   "importers": [
+    "CorrectionReconfigurationCases",
+    "EvidenceQualifiedCorrection"
+   ]
+  },
+  {
+   "module": "FallibleInspection",
+   "theorems": 24,
+   "kind1": 2,
+   "bridge_decls": 3,
+   "importers": [
+    "FallibleInspectionCases",
+    "TemporalInspection"
+   ]
+  },
+  {
+   "module": "BecomingReversibility",
+   "theorems": 10,
+   "kind1": 1,
+   "bridge_decls": 3,
+   "importers": []
+  },
+  {
+   "module": "DynamicConsequences",
+   "theorems": 9,
+   "kind1": 0,
+   "bridge_decls": 1,
+   "importers": [
+    "DynamicClassification",
+    "EthicalOrientation",
+    "GeneratedSelf"
+   ]
+  },
+  {
+   "module": "ContinuationConditions",
+   "theorems": 18,
+   "kind1": 0,
+   "bridge_decls": 7,
+   "importers": [
+    "DerivedHistoryLaw",
+    "FormationProfileGap"
+   ]
+  },
+  {
+   "module": "DerivedHistoryLaw",
+   "theorems": 6,
+   "kind1": 1,
+   "bridge_decls": 2,
+   "importers": []
+  },
+  {
+   "module": "BecomingCompatibility",
+   "theorems": 20,
+   "kind1": 0,
+   "bridge_decls": 11,
+   "importers": []
+  },
+  {
+   "module": "RelationalBecoming",
+   "theorems": 12,
+   "kind1": 2,
+   "bridge_decls": 16,
+   "importers": []
+  },
+  {
+   "module": "ConcernExtension",
+   "theorems": 8,
+   "kind1": 3,
+   "bridge_decls": 15,
+   "importers": [
+    "ClassificationRobustJudgment",
+    "EvaluativeExtension"
+   ]
+  },
+  {
+   "module": "RelationalOrganization",
+   "theorems": 13,
+   "kind1": 1,
+   "bridge_decls": 5,
+   "importers": [
+    "ClassificationRobustJudgment",
+    "OrganizationCorrespondence"
+   ]
+  },
+  {
+   "module": "ClassificationRobustJudgment",
+   "theorems": 13,
+   "kind1": 0,
+   "bridge_decls": 9,
+   "importers": []
+  },
+  {
+   "module": "GenerativeClosure",
+   "theorems": 12,
+   "kind1": 0,
+   "bridge_decls": 9,
+   "importers": [
+    "CoreTreeRearticulation",
+    "InquiryFamilies",
+    "JointInterpretation"
+   ]
+  },
+  {
+   "module": "JointInterpretation",
+   "theorems": 10,
+   "kind1": 0,
+   "bridge_decls": 2,
+   "importers": []
+  },
+  {
+   "module": "AlignmentDirection",
+   "theorems": 9,
+   "kind1": 0,
+   "bridge_decls": 3,
+   "importers": []
+  },
+  {
+   "module": "ExplanatoryUniversality",
+   "theorems": 13,
+   "kind1": 0,
+   "bridge_decls": 9,
+   "importers": [
+    "ExplanatoryJoiningBranches",
+    "ExplanatoryJointness"
+   ]
+  },
+  {
+   "module": "ExplanatoryJointness",
+   "theorems": 20,
+   "kind1": 14,
+   "bridge_decls": 23,
+   "importers": [
+    "ExplanatoryFiniteLogic",
+    "ExplanatoryFootprints",
+    "ExplanatorySharedSupport"
+   ]
+  },
+  {
+   "module": "ExplanatoryFootprints",
+   "theorems": 11,
+   "kind1": 1,
+   "bridge_decls": 3,
+   "importers": [
+    "ExplanatoryCoexistence"
+   ]
+  },
+  {
+   "module": "ExplanatoryJoining",
+   "theorems": 23,
+   "kind1": 4,
+   "bridge_decls": 25,
+   "importers": [
+    "ExplanatoryLocalUnits"
+   ]
+  },
+  {
+   "module": "ExplanatoryLocalUnits",
+   "theorems": 31,
+   "kind1": 3,
+   "bridge_decls": 30,
+   "importers": [
+    "ExplanatoryJoiningContexts",
+    "ExplanatoryJoiningIncidence"
+   ]
+  },
+  {
+   "module": "ExplanatoryJoiningContexts",
+   "theorems": 16,
+   "kind1": 9,
+   "bridge_decls": 16,
+   "importers": [
+    "ExplanatoryContextualStructure",
+    "ExplanatoryJoiningBranches"
+   ]
+  },
+  {
+   "module": "ExplanatoryJoiningBranches",
+   "theorems": 16,
+   "kind1": 11,
+   "bridge_decls": 17,
+   "importers": [
+    "ExplanatoryJoiningBranchWitnesses",
+    "ExplanatoryJoiningRegisters"
+   ]
+  },
+  {
+   "module": "ExplanatoryContextualStructure",
+   "theorems": 11,
+   "kind1": 2,
+   "bridge_decls": 8,
+   "importers": [
+    "ExplanatoryHistoryInterfaces"
+   ]
+  },
+  {
+   "module": "ExplanatoryJoiningIncidence",
+   "theorems": 9,
+   "kind1": 12,
+   "bridge_decls": 15,
+   "importers": [
+    "ExplanatoryJoiningRefinement"
+   ]
+  },
+  {
+   "module": "ExplanatoryJoiningRefinement",
+   "theorems": 11,
+   "kind1": 0,
+   "bridge_decls": 1,
+   "importers": [
+    "ExplanatoryJoiningAnchors"
+   ]
+  },
+  {
+   "module": "ExplanatoryJoiningAnchors",
+   "theorems": 12,
+   "kind1": 1,
+   "bridge_decls": 4,
+   "importers": [
+    "ExplanatoryJoiningRegisters"
+   ]
+  },
+  {
+   "module": "ExplanatoryGranularity",
+   "theorems": 10,
+   "kind1": 5,
+   "bridge_decls": 11,
+   "importers": [
+    "ExplanatoryGranularityBoundary",
+    "ExplanatoryGuardedPrograms"
+   ]
+  },
+  {
+   "module": "ExplanatoryGuardedPrograms",
+   "theorems": 11,
+   "kind1": 12,
+   "bridge_decls": 27,
+   "importers": [
+    "ExplanatoryResiduals"
+   ]
+  },
+  {
+   "module": "ExplanatoryResiduals",
+   "theorems": 13,
+   "kind1": 3,
+   "bridge_decls": 7,
+   "importers": []
+  },
+  {
+   "module": "GenerativeLossComparison",
+   "theorems": 16,
+   "kind1": 2,
+   "bridge_decls": 8,
+   "importers": []
+  },
+  {
+   "module": "ContextualWisdom",
+   "theorems": 11,
+   "kind1": 1,
+   "bridge_decls": 3,
+   "importers": [
+    "WisdomResponseStructure"
+   ]
+  },
+  {
+   "module": "WisdomResponseStructure",
+   "theorems": 9,
+   "kind1": 1,
+   "bridge_decls": 2,
+   "importers": [
+    "WisdomFallibleJudgment"
+   ]
+  },
+  {
+   "module": "OperativeCoherence",
+   "theorems": 27,
+   "kind1": 4,
+   "bridge_decls": 38,
+   "importers": [
+    "RelationalReduction"
+   ]
+  },
+  {
+   "module": "SystemsOrganization",
+   "theorems": 24,
+   "kind1": 5,
+   "bridge_decls": 12,
+   "importers": [
+    "RelationalReduction",
+    "RelationsAcrossScales",
+    "SystemsComplexity"
+   ]
+  },
+  {
+   "module": "RelationalReduction",
+   "theorems": 11,
+   "kind1": 3,
+   "bridge_decls": 12,
+   "importers": []
+  },
+  {
+   "module": "OrganizationalRuleInheritance",
+   "theorems": 29,
+   "kind1": 6,
+   "bridge_decls": 28,
+   "importers": [
+    "JointPracticeContinuation",
+    "OrganizationalRuleInheritanceAudit"
+   ]
+  },
+  {
+   "module": "KnowledgeCorrespondence",
+   "theorems": 20,
+   "kind1": 0,
+   "bridge_decls": 9,
+   "importers": [
+    "CompositionalAcquisition",
+    "ExplanatoryInquiry",
+    "GoalFormationRevision",
+    "NormativeActivity"
+   ]
+  },
+  {
+   "module": "CompositionalAcquisition",
+   "theorems": 25,
+   "kind1": 3,
+   "bridge_decls": 10,
+   "importers": [
+    "CompositionalFormation",
+    "LearningCorrespondence"
+   ]
+  },
+  {
+   "module": "CompositionalFormation",
+   "theorems": 37,
+   "kind1": 0,
+   "bridge_decls": 5,
+   "importers": [
+    "CompositionalTransmission"
+   ]
+  },
+  {
+   "module": "CompositionalTransmission",
+   "theorems": 27,
+   "kind1": 3,
+   "bridge_decls": 10,
+   "importers": [
+    "AcquiredSegmentation"
+   ]
+  },
+  {
+   "module": "AcquiredSegmentation",
+   "theorems": 23,
+   "kind1": 5,
+   "bridge_decls": 7,
+   "importers": [
+    "AcquiredBinding"
+   ]
+  },
+  {
+   "module": "RenewalRecovery",
+   "theorems": 9,
+   "kind1": 0,
+   "bridge_decls": 3,
+   "importers": []
+  }
+ ]
+}
