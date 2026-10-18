@@ -1,0 +1,7 @@
+import Becoming.RuleNarrowingProcessesInherited
+#check @Becoming.RuleNarrowingProcessesInherited.narrow_once_iff
+#check @Becoming.RuleNarrowingProcessesInherited.narrowed_iff_fits
+#check @Becoming.RuleNarrowingProcessesInherited.dropped_has_counterevidence
+#check @Becoming.RuleNarrowingProcessesInherited.repeated_observation_idle
+#check @Becoming.RuleNarrowingProcessesInherited.narrowing_transport
+#check @Becoming.RuleNarrowingProcessesInherited.full_repertoire_settles_actual

@@ -168,7 +168,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "2599233e193a294b4bdf564bad79d1edc0d90e84db5011c688d1efb1f3f8a727"
+      "sha256": "ac6c5efc584f9477179e41cabe674da42aeca801d2811d0627e2ac21ac2152df"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -189,6 +189,10 @@
     {
       "en": "18 October 2026: added (S1), on Ren's \"Wait for N5's renames to land, then start the learning and seeking line on the renamed head.\"; study section 174.",
       "zh": "2026年10月18日：新增（S1），按 Ren 的“Wait for N5's renames to land, then start the learning and seeking line on the renamed head.”；研究第 174 节。"
+    },
+    {
+      "en": "18 October 2026, S2 (Becoming.Settling): THE-THEORY-OF-BECOMING.md re-pointed after S2 added the bullet on when the runs settle, revised the \"Seeking, capture and runaway\" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，S2（Becoming.Settling）：S2 增加关于运行何时安定的条目、修订第 8.2 节“寻求、俘获与失控”行与第 9 节回执及连通性文字后，THE-THEORY-OF-BECOMING.md 重新指向；重新指向前已读。论断不变。"
     }
   ]
 }

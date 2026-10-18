@@ -176,6 +176,7 @@ import Becoming.CensusCounts
 import Becoming.CensusBinding
 import Becoming.Unrolling
 import Becoming.Enough
+import Becoming.Settling
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1283,6 +1284,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   every such configuration meets the target and every run from it settles; a process in which
   every configuration can stay and meets the target has a run that never settles. Under a
   determined law the two are one, and are the boundary of enough of `Becoming.Seeking`.
+* `Becoming.Settling` (L4): when the runs of a process keep changing, with no premise beyond a list
+  where stated. A run that changes within a loop gives a run that goes round it and keeps
+  changing; along a run a list holds, change that recurs is a change within a loop. So in a world
+  a list holds, some run from a configuration keeps changing exactly where a configuration
+  reachable from it has a step to another from which it can be reached again; where every run
+  settles, or assured enough holds, there is none. That no run keeps changing does not give
+  settling: in a process of two configurations, every run settling is the limited principle of
+  omniscience.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return

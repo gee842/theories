@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 182 | 7,660 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 183 | 7,687 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 39 | 601 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -770,6 +770,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [SemanticCalibration.lean](lean-declarations/shared.md#module-ad79f81f6792) | Organizational formation through revisable evaluation |
 | [Sensitivity.lean](lean-declarations/becoming-core.md#module-4db5dac62437) | Becoming pure core |
 | [SensitivityWebs.lean](lean-declarations/becoming-core.md#module-99ea0db6a80e) | Becoming pure core |
+| [Settling.lean](lean-declarations/becoming-core.md#module-5a9e57e6d142) | Becoming pure core |
 | [SettlingCorrespondence.lean](lean-declarations/ethics.md#module-4d312d4e9464) | Normative grounding and generative direction |
 | [SharedStockInstances.lean](lean-declarations/other.md#module-cb1d1649776a) | Other formal studies |
 | [ShrinkingGain.lean](lean-declarations/learning.md#module-59ffcfa61113) | Learning, prediction and dynamics |

@@ -125,6 +125,7 @@ Aliases: `Becoming.World.standing_counting_under`, `Becoming.World.standing_iff_
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 - 18 October 2026, L1 (Becoming.Unrolling): THE-THEORY-OF-BECOMING.md re-pointed after L1 added the bullets on what an extrapolation given nothing fixes, revised the "Learning" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.
 - 18 October 2026, S1 (Becoming.Enough): THE-THEORY-OF-BECOMING.md re-pointed after S1 added the bullet on enough under undetermined laws, revised the "Seeking, capture and runaway" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.
+- 18 October 2026, S2 (Becoming.Settling): THE-THEORY-OF-BECOMING.md re-pointed after S2 added the bullet on when the runs settle, revised the "Seeking, capture and runaway" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.
 - 53 rebinding entries (2026-10-11 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](counting-standing-and-dependence.json).
 
 <a id="earlier-text--早期文本"></a>
