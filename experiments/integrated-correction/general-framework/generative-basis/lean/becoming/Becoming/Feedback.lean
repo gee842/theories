@@ -61,9 +61,9 @@ enters only as a hypothesis of three witnesses.
 * **What feedback registers.** Nothing beyond a formation's influence closure exchanges with a
   condition that a member of the closure depends on (`Flow.beyond_influence`). Where every member
   of a part lies beyond the closure, each formation within it is supported with the part exactly
-  where the levels without the part admit it (`Flow.Balances.unregistered_beyond_influence`). In
+  where the levels without the part admit it (`Flow.Balances.uncoupled_beyond_influence`). In
   `Clearing` the clearer's support is the same at every step whether or not it clears the
-  habitat, while the dweller ends (`Clearing.unregistered`). The influence closure is an upper
+  habitat, while the dweller ends (`Clearing.uncoupled`). The influence closure is an upper
   bound: with the rest of the exchange fixed, a formation's support registers only the parts that
   reach it directly (`Flow.Balances.admits_unreached`).
 * **What a part reaches.** A part reaches a formation when a member exchanges with a condition
@@ -104,7 +104,7 @@ enters only as a hypothesis of three witnesses.
   A part with a member beyond a system can be misjudged by significance bounded by that system
   (`Trophic.mixed_part`). The comparison by withheld levels holds the rest of the exchange fixed,
   so effects through others' responses do not register in it. With the deer's browsing held as it
-  is, the wolves' part narrows, closing the deer (`Trophic.mediated_unregistered`); against the
+  is, the wolves' part narrows, closing the deer (`Trophic.mediated_uncoupled`); against the
   flow in which the deer respond, the same taking is mixed (`Trophic.responsive_mixed`). Where a
   part gives what others take, the levels without it may not exist, and there is no comparison by
   withheld levels (`Clearing.no_levels_without_source`).
@@ -145,7 +145,7 @@ What is not derived:
 
 The comparisons by withheld levels keep the rest of the exchange fixed, and a part is a decided
 family of formations; one act of a formation is compared through a second flow, as in
-`Clearing.unregistered`. The representation commits to discrete steps and natural quantities.
+`Clearing.uncoupled`. The representation commits to discrete steps and natural quantities.
 -/
 
 namespace Becoming
@@ -553,7 +553,7 @@ theorem unreached_within_influence {f : F}
 beyond `f`'s influence closure, each formation within the closure is supported with the part
 exactly where the levels without it admit it, at every step: whatever the part ends beyond the
 closure registers nowhere within it. -/
-theorem Balances.unregistered_beyond_influence (balances : L.Balances W) {l : Nat → C → Nat}
+theorem Balances.uncoupled_beyond_influence (balances : L.Balances W) {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
     (beyond : ∀ h, part h = true → ¬ L.WithinInfluence W f h) :
     ∀ t g, L.WithinInfluence W f g → (W.Supported t g ↔ W.Admits (l t) t g) :=
@@ -1196,7 +1196,7 @@ forest: with the deer's browsing held as it is, the forest is supported with the
 where the levels without it admit it, at every step. So compared, the part narrows: the levels
 without it include those with it and admit the deer where those with it do not. Under the continuation condition
 it does not retain what has significance, from any standpoint. -/
-theorem mediated_unregistered {l : Nat → Place → Nat}
+theorem mediated_uncoupled {l : Nat → Place → Nat}
     (without : flow.WithheldLevels wolvesPart web l) {Pos : Type}
     {sig : Pos → Nat → Formation → Prop} (unrestricted : Unrestricted sig) (p : Pos) :
     flow.WithinInfluence web .forest .wolves ∧ ¬ flow.Reaches web wolvesPart .forest ∧
@@ -1411,7 +1411,7 @@ same at every step in both, as the general theorem gives, since the two flows ex
 its resource; it is active and supported throughout. With the habitat spared the dweller is
 active and supported at every step; with the habitat cleared it is inactive from the third step
 on. -/
-theorem unregistered :
+theorem uncoupled :
     sparedFlow.Balances sparedWeb ∧ sparedWeb.Dependent ∧
       (∀ t, web.Supported t .clearer ↔ sparedWeb.Supported t .clearer) ∧
       (∀ t, web.active t .clearer ∧ web.Supported t .clearer) ∧

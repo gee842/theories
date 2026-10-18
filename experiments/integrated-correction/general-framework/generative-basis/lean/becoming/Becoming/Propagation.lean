@@ -1033,7 +1033,7 @@ theorem Conveyed.spread {L L' : Flow F C} {W : Web F C} {obs : F → C → Prop}
     (inputs : ∀ t h c, h ∈ present t → part h = true → 0 < σ t h c →
       source t h ∧ TimedResponse.TouchesAt L L' t h c)
     (responds : ∀ t h c s d, h ∈ present t → part h = false → s ≤ t → d ∈ cs → 0 < k t h c s d →
-      TimedResponse.RegistersAt W obs h s d ∧ TimedResponse.TouchesAt L L' t h c)
+      TimedResponse.CoupledIntoAt W obs h s d ∧ TimedResponse.TouchesAt L L' t h c)
     {t : Nat} {c : C} (conveyed : Conveyed cs part σ k present δ t c) :
     TimedResponse.Spread L L' W obs source t c := by
   induction conveyed with

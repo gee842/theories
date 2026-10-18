@@ -75,7 +75,7 @@ the frame are readings of one unfolding rather than its ground.
   determined up to likeness, carry a law (`IdentifiesAlike.carries`); naming the configurations makes
   sense exactly where alike configurations are one (`identifiesAlike_id_iff`), and the twins' naming
   does not (`Twins.naming_not_identifiesAlike`). For a determined law read through a registration
-  (`Law.registered`), configurations are alike exactly where their registered futures are the
+  (`Law.frameBy`), configurations are alike exactly where their registered futures are the
   same (`Law.SameFuture`, `Law.alike_iff_sameFuture`), so there a description makes sense where
   it identifies exactly the same registered futures, and it carries a law
   (`Law.IdentifiesAlike.carries`).
@@ -814,12 +814,12 @@ section Registered
 variable {R : Type w}
 
 /-- A determined law read through a registration: what is registered is what is claimed. -/
-def Law.registered (next : S → S) (o : S → R) : Frame S Unit R :=
+def Law.frameBy (next : S → S) (o : S → R) : Frame S Unit R :=
   ⟨Law.process next, fun s r => o s = r⟩
 
 /-- The law read through a registration is determined. -/
-theorem Law.registered_determined (next : S → S) (o : S → R) :
-    Determined (Law.registered next o).P :=
+theorem Law.frameBy_determined (next : S → S) (o : S → R) :
+    Determined (Law.frameBy next o).P :=
   fun _ _ _ _ to to' => to.trans to'.symm
 
 /-- Two configurations have the same registered future under a law. -/
@@ -828,7 +828,7 @@ def Law.SameFuture (next : S → S) (o : S → R) (s s' : S) : Prop :=
 
 /-- Alike configurations have the same registered future. -/
 theorem Law.alike_future {next : S → S} {o : S → R} :
-    ∀ n {s s' : S}, Alike (Law.registered next o) (Law.registered next o) s s' →
+    ∀ n {s s' : S}, Alike (Law.frameBy next o) (Law.frameBy next o) s s' →
       o (Law.orbit next s n) = o (Law.orbit next s' n)
   | 0, s, _, alike => ((alike.realized (o s)).mp rfl).symm
   | n + 1, s, s', alike =>
@@ -840,7 +840,7 @@ theorem Law.alike_future {next : S → S} {o : S → R} :
 
 /-- The same registered future is a bisimulation. -/
 theorem Law.sameFuture_bisimulation {next : S → S} {o : S → R} :
-    Bisimulation (Law.registered next o) (Law.registered next o) (Law.SameFuture next o) :=
+    Bisimulation (Law.frameBy next o) (Law.frameBy next o) (Law.SameFuture next o) :=
   fun s s' same =>
     have ahead : Law.SameFuture next o (next s) (next s') := fun n =>
       (congrArg o (Law.orbit_shift next s n)).symm.trans
@@ -852,14 +852,14 @@ theorem Law.sameFuture_bisimulation {next : S → S} {o : S → R} :
 /-- **Under a determined law, configurations are alike exactly where their registered futures are
 the same.** -/
 theorem Law.alike_iff_sameFuture {next : S → S} {o : S → R} {s s' : S} :
-    Alike (Law.registered next o) (Law.registered next o) s s' ↔ Law.SameFuture next o s s' :=
+    Alike (Law.frameBy next o) (Law.frameBy next o) s s' ↔ Law.SameFuture next o s s' :=
   ⟨fun alike n => Law.alike_future n alike, fun same => ⟨_, Law.sameFuture_bisimulation, same⟩⟩
 
 /-- **Under a determined law, a description that makes sense carries a law.** -/
 theorem Law.IdentifiesAlike.carries {next : S → S} {o : S → R} {K : Type u'} {π : S → K}
-    (sense : IdentifiesAlike (Law.registered next o) π) :
+    (sense : IdentifiesAlike (Law.frameBy next o) π) :
     ∃ Q : Process K Unit, Determined Q ∧ FactorsThrough (Law.process next) π Q :=
-  sense.carries fun s => Determined.at (Law.registered_determined next o) s
+  sense.carries fun s => Determined.at (Law.frameBy_determined next o) s
 
 end Registered
 

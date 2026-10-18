@@ -354,17 +354,17 @@ theorem second_new_selection :
   new_contact_choice [0] 1 second_candidate_unavailable_before.2.2.1
 
 /-- Only constructed and installed contacts participate in this registration. -/
-def registered (s : State) : (Nat → Bool) → (Nat → Bool) → Prop :=
+def alikeOnInstalled (s : State) : (Nat → Bool) → (Nat → Bool) → Prop :=
   Alike (s.installed.map Sample.address)
 
 theorem first_installed_choice :
-    Learning.Training.Through (registered repairedFirst) (fun x => x 0 = true) ∧
-      ¬ Learning.Training.Through (registered initial) (fun x => x 0 = true) :=
+    Learning.Training.Through (alikeOnInstalled repairedFirst) (fun x => x 0 = true) ∧
+      ¬ Learning.Training.Through (alikeOnInstalled initial) (fun x => x 0 = true) :=
   first_new_selection
 
 theorem second_installed_choice :
-    Learning.Training.Through (registered repairedSecond) (fun x => x 1 = true) ∧
-      ¬ Learning.Training.Through (registered repairedFirst) (fun x => x 1 = true) :=
+    Learning.Training.Through (alikeOnInstalled repairedSecond) (fun x => x 1 = true) ∧
+      ¬ Learning.Training.Through (alikeOnInstalled repairedFirst) (fun x => x 1 = true) :=
   ⟨choice_at_contact (List.Mem.tail 0 (List.Mem.head [])), second_new_selection.2⟩
 
 theorem installed_response_correct (target : Bool) :

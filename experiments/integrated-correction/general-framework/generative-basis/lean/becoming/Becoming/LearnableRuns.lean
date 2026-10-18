@@ -13,10 +13,10 @@ same (`Law.alike_iff_sameFuture`). This module states the laws of `Becoming.Lear
 runs of the law and the likeness of the frame, and proves them through those laws.
 
 * **A run's registered record is its orbit's.** The record a learner reads along a run is the
-  record along the orbit from the run's first configuration (`record_eq`), so a learner rests on
+  record along the orbit from the run's first configuration (`prefix_eq`), so a learner rests on
   a run exactly where it rests on that orbit (`restsFrom_iff`, `rests_iff`).
 * **Alike in the frame, learned alike.** Two runs beginning at configurations alike in the frame
-  that registers `reg` give every learner the same record at every step (`records_same`); a
+  that registers `reg` give every learner the same record at every step (`prefixes_same`); a
   learner resting on both has targets that agree from some step on (`agree_of_rests_both`), and
   where their targets differ at arbitrarily late steps no learner rests on both
   (`not_rests_on_both`).
@@ -52,7 +52,7 @@ def course (reg : S → R) (r : Run (Law.process next)) : Nat → R := Parting.c
 from `T` on. -/
 def RestsFrom (reg : S → R) (val : S → V) (pred : List R → Option V) (r : Run (Law.process next))
     (T : Nat) : Prop :=
-  ∀ t, T ≤ t → pred (Learning.record (course reg r) t) = some (val (r.state t))
+  ∀ t, T ≤ t → pred (Learning.prefixOf (course reg r) t) = some (val (r.state t))
 
 /-- The learner comes to rest on the target along the run. -/
 def Rests (reg : S → R) (val : S → V) (pred : List R → Option V) (r : Run (Law.process next)) :
@@ -60,9 +60,9 @@ def Rests (reg : S → R) (val : S → V) (pred : List R → Option V) (r : Run 
   ∃ T, RestsFrom reg val pred r T
 
 /-- **A run's registered record is the record along the orbit from where it begins.** -/
-theorem record_eq (reg : S → R) (r : Run (Law.process next)) (t : Nat) :
-    Learning.record (course reg r) t = Learning.record (Learnable.course next reg (r.state 0)) t :=
-  Learning.record_congr fun n _ => congrArg reg (Branching.law_run_state r n)
+theorem prefix_eq (reg : S → R) (r : Run (Law.process next)) (t : Nat) :
+    Learning.prefixOf (course reg r) t = Learning.prefixOf (Learnable.course next reg (r.state 0)) t :=
+  Learning.prefix_congr fun n _ => congrArg reg (Branching.law_run_state r n)
 
 /-- **A learner rests on a run from `T` exactly where it rests from `T` on the orbit from where
 the run begins.** -/
@@ -70,10 +70,10 @@ theorem restsFrom_iff {reg : S → R} {val : S → V} {pred : List R → Option 
     (r : Run (Law.process next)) (T : Nat) :
     RestsFrom reg val pred r T ↔ Learnable.RestsFrom next reg val pred (r.state 0) T :=
   ⟨fun rests t late =>
-    (congrArg pred (record_eq reg r t)).symm.trans
+    (congrArg pred (prefix_eq reg r t)).symm.trans
       ((rests t late).trans (congrArg (fun x => some (val x)) (Branching.law_run_state r t))),
    fun rests t late =>
-    (congrArg pred (record_eq reg r t)).trans
+    (congrArg pred (prefix_eq reg r t)).trans
       ((rests t late).trans (congrArg (fun x => some (val x)) (Branching.law_run_state r t)).symm)⟩
 
 theorem rests_iff {reg : S → R} {val : S → V} {pred : List R → Option V}
@@ -85,23 +85,23 @@ theorem rests_iff {reg : S → R} {val : S → V} {pred : List R → Option V}
 /-- Runs beginning alike in the frame that registers `reg` have the same registered future along
 the runs. -/
 theorem course_same {reg : S → R} {r r' : Run (Law.process next)}
-    (alike : Alike (Law.registered next reg) (Law.registered next reg) (r.state 0) (r'.state 0))
+    (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
     (n : Nat) : reg (r.state n) = reg (r'.state n) :=
   (congrArg reg (Branching.law_run_state r n)).trans
     ((Law.alike_iff_sameFuture.mp alike n).trans
       (congrArg reg (Branching.law_run_state r' n)).symm)
 
 /-- **Runs beginning alike in the frame give every learner the same record.** -/
-theorem records_same {reg : S → R} {r r' : Run (Law.process next)}
-    (alike : Alike (Law.registered next reg) (Law.registered next reg) (r.state 0) (r'.state 0))
-    (t : Nat) : Learning.record (course reg r) t = Learning.record (course reg r') t :=
-  Learning.record_congr fun n _ => course_same alike n
+theorem prefixes_same {reg : S → R} {r r' : Run (Law.process next)}
+    (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
+    (t : Nat) : Learning.prefixOf (course reg r) t = Learning.prefixOf (course reg r') t :=
+  Learning.prefix_congr fun n _ => course_same alike n
 
 /-- **A learner resting on two runs beginning alike in the frame has targets that agree from some
 step on.** -/
 theorem agree_of_rests_both {reg : S → R} {val : S → V} {pred : List R → Option V}
     {r r' : Run (Law.process next)}
-    (alike : Alike (Law.registered next reg) (Law.registered next reg) (r.state 0) (r'.state 0))
+    (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
     {T T' : Nat} (rests : RestsFrom reg val pred r T) (rests' : RestsFrom reg val pred r' T') :
     ∀ t, T + T' ≤ t → val (r.state t) = val (r'.state t) :=
   fun t late =>
@@ -114,7 +114,7 @@ theorem agree_of_rests_both {reg : S → R} {val : S → V} {pred : List R → O
 no learner rests on both.** -/
 theorem not_rests_on_both {reg : S → R} {val : S → V} (pred : List R → Option V)
     {r r' : Run (Law.process next)}
-    (alike : Alike (Law.registered next reg) (Law.registered next reg) (r.state 0) (r'.state 0))
+    (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
     (differ : ∀ T, ∃ t, T ≤ t ∧ val (r.state t) ≠ val (r'.state t)) :
     ¬ (Rests reg val pred r ∧ Rests reg val pred r') :=
   fun ⟨rests, rests'⟩ =>
@@ -136,7 +136,7 @@ over the lasso hypotheses on the registered values, given nothing, from `Becomin
 bound on. -/
 theorem rests_through (r : Run (Law.process next)) {l : List S} (held : ∀ n, r.state n ∈ l)
     {reg : S → R} {val : S → V} {g : R → V} (factors : ∀ s, val s = g (reg s)) :
-    RestsFrom reg val (fun x => (Learning.learner Learning.lassos x).map g) r
+    RestsFrom reg val (fun x => (Learning.byElimination Learning.lassos x).map g) r
       (l.length + (l.length + l.length - 1) * Learning.tri l.length) :=
   (restsFrom_iff r _).mpr
     (Learnable.rests_through
@@ -155,7 +155,7 @@ from some step on. -/
 theorem learnable_iff {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l) :
     (∃ pred : List R → Option V, ∀ r : Run (Law.process next), Rests reg val pred r) ↔
       ∀ r r' : Run (Law.process next),
-        Alike (Law.registered next reg) (Law.registered next reg) (r.state 0) (r'.state 0) →
+        Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0) →
           ∃ T, ∀ t, T ≤ t → val (r.state t) = val (r'.state t) :=
   ⟨fun ⟨_, rests⟩ r r' alike =>
     match rests r, rests r' with

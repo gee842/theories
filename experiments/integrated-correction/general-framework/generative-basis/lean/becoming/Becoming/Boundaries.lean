@@ -140,7 +140,7 @@ What is not derived:
   transmission along that relation, from the bare own good of the empty relation to the continuation condition of
   the total one;
 - that a center knows its reach closure: its own feedback registers at most its influence closure
-  (`Flow.Balances.unregistered_beyond_influence`);
+  (`Flow.Balances.uncoupled_beyond_influence`);
 - the step from significance to a reason, to motivation or to practice.
 
 The audit of the uses of living significance (`Becoming.Relevance`) is clean, and Ren folded living significance (`G0`) on 11 October 2026: it

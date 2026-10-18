@@ -17,10 +17,10 @@ registration is supplied, never derived.
 * **A selection reaches exactly what registers.** Two histories are selected alike by every
   selection through `f`'s registration up to `t` exactly when `f` registers them alike up to `t`
   (`Web.selects_alike_iff`). The belief of `Becoming.Testing` is such a selection
-  (`Web.belief_selects`), so where `f` registers two histories apart, a selection through its
+  (`Web.class_selects`), so where `f` registers two histories apart, a selection through its
   registration holds at one and fails at the other (`Web.separates`); registering alike is an
-  equivalence (`Web.RegistersAlikeUpTo.trans`). A selection through registration is a claim its
-  selector tests completely, refuted exactly where it fails (`Web.SelectsThrough.refutes_iff`).
+  equivalence (`Web.AlikeThroughUpTo.trans`). A selection through registration is a claim its
+  selector tests completely, refuted exactly where it fails (`Web.SelectsThrough.excludes_iff`).
   Admission and the levels of observed conditions are selected and scored through registration
   (`Web.admits_through`, `Web.observed_scores`); a selection through registration stays so at
   later steps, under more observation, under negation and under conjunction
@@ -36,11 +36,11 @@ registration is supplied, never derived.
 * **Blind beyond the registration closure.** With the rest of the exchange fixed, every
   selection and every score through the registration of a formation within `f`'s registration
   closure selects the levels with and without a part beyond the closure alike
-  (`Flow.unselected_beyond_registration`, `Flow.unscored_beyond_registration`); so does every
+  (`Flow.unselected_beyond_coupling`, `Flow.unscored_beyond_coupling`); so does every
   selection through the pooled registration of a group within the closure
-  (`Flow.unselected_beyond_registration_all`). Where the members respond, under the hypotheses of
-  `Flow.alike_within_registration`, it selects the two flows alike
-  (`Flow.unselected_beyond_registration_responsive`).
+  (`Flow.unselected_beyond_coupling_all`). Where the members respond, under the hypotheses of
+  `Flow.alike_within_coupling`, it selects the two flows alike
+  (`Flow.unselected_beyond_coupling_responsive`).
 * **The gap.** In `Clearing` the dweller lies within the clearer's reach closure and beyond its
   registration closure, and the clearer does not register the habitat
   (`Clearing.dweller_within_reach`). Every selection through the clearer's registration selects
@@ -91,7 +91,7 @@ registration is supplied, never derived.
   closure extends. The gap is the reach closure less the registration closure.
 - The gap closes only through relations: dependence, observation, or another's registration
   pooled, as the dweller's is in `Clearing`. Pooling with formations within the closure does not
-  close it (`Flow.unselected_beyond_registration_all`).
+  close it (`Flow.unselected_beyond_coupling_all`).
 - Where reaching beyond raises what registers, selection favours it (`Diversion`), and cannot
   tell it from raising what registers without reaching beyond. With `share_rises` the share of
   what reaches beyond rises among descendants while the world is open; enclosed, the selection
@@ -126,74 +126,74 @@ are selected alike. A selection is any claim about level histories: which are ke
 leave more descendants. -/
 def SelectsThrough (W : Web F C) (obs : F → C → Prop) (f : F) (t : Nat)
     (select : (Nat → C → Nat) → Prop) : Prop :=
-  ∀ l l', W.RegistersAlikeUpTo obs f l l' t → (select l ↔ select l')
+  ∀ l l', W.AlikeThroughUpTo obs f l l' t → (select l ↔ select l')
 
 /-- A score is through `f`'s registration up to `t`: histories `f` registers alike up to `t`
 score alike. -/
 def ScoresThrough (W : Web F C) (obs : F → C → Prop) (f : F) (t : Nat)
     (score : (Nat → C → Nat) → Nat) : Prop :=
-  ∀ l l', W.RegistersAlikeUpTo obs f l l' t → score l = score l'
+  ∀ l l', W.AlikeThroughUpTo obs f l l' t → score l = score l'
 
 /-- A selection is through a group's pooled registration up to `t`: histories every member
 registers alike up to `t` are selected alike. -/
 def SelectsThroughAll (W : Web F C) (obs : F → C → Prop) (group : F → Prop) (t : Nat)
     (select : (Nat → C → Nat) → Prop) : Prop :=
-  ∀ l l', W.RegistersAlikeAll obs group l l' t → (select l ↔ select l')
+  ∀ l l', W.AlikeThroughAll obs group l l' t → (select l ↔ select l')
 
 variable {W : Web F C} {obs obs' : F → C → Prop} {g : F} {group : F → Prop}
   {l l' l'' : Nat → C → Nat} {t : Nat} {select select' : (Nat → C → Nat) → Prop}
   {score : (Nat → C → Nat) → Nat}
 
 /-- Registering alike at a step is transitive. -/
-theorem RegistersAlike.trans (first : W.RegistersAlike obs g l l' t)
-    (second : W.RegistersAlike obs g l' l'' t) : W.RegistersAlike obs g l l'' t :=
+theorem AlikeThrough.trans (first : W.AlikeThrough obs g l l' t)
+    (second : W.AlikeThrough obs g l' l'' t) : W.AlikeThrough obs g l l'' t :=
   ⟨first.1.trans second.1, fun c observed => (first.2 c observed).trans (second.2 c observed)⟩
 
-/-- Registering alike up to a step is transitive: with `RegistersAlike.refl` and
-`RegistersAlikeUpTo.symm`, an equivalence. -/
-theorem RegistersAlikeUpTo.trans (first : W.RegistersAlikeUpTo obs g l l' t)
-    (second : W.RegistersAlikeUpTo obs g l' l'' t) : W.RegistersAlikeUpTo obs g l l'' t :=
+/-- Registering alike up to a step is transitive: with `AlikeThrough.refl` and
+`AlikeThroughUpTo.symm`, an equivalence. -/
+theorem AlikeThroughUpTo.trans (first : W.AlikeThroughUpTo obs g l l' t)
+    (second : W.AlikeThroughUpTo obs g l' l'' t) : W.AlikeThroughUpTo obs g l l'' t :=
   fun s le => (first s le).trans (second s le)
 
 /-- Every member registers a history alike with itself. -/
-theorem RegistersAlikeAll.refl (t : Nat) : W.RegistersAlikeAll obs group l l t :=
-  fun _ _ s _ => RegistersAlike.refl s
+theorem AlikeThroughAll.refl (t : Nat) : W.AlikeThroughAll obs group l l t :=
+  fun _ _ s _ => AlikeThrough.refl s
 
 /-- Registering alike in every member is symmetric. -/
-theorem RegistersAlikeAll.symm (alike : W.RegistersAlikeAll obs group l l' t) :
-    W.RegistersAlikeAll obs group l' l t :=
+theorem AlikeThroughAll.symm (alike : W.AlikeThroughAll obs group l l' t) :
+    W.AlikeThroughAll obs group l' l t :=
   fun g member => (alike g member).symm
 
 /-- Registering alike in every member is transitive. -/
-theorem RegistersAlikeAll.trans (first : W.RegistersAlikeAll obs group l l' t)
-    (second : W.RegistersAlikeAll obs group l' l'' t) : W.RegistersAlikeAll obs group l l'' t :=
+theorem AlikeThroughAll.trans (first : W.AlikeThroughAll obs group l l' t)
+    (second : W.AlikeThroughAll obs group l' l'' t) : W.AlikeThroughAll obs group l l'' t :=
   fun g member => (first g member).trans (second g member)
 
 /-- A formation's belief, the histories it registers alike with `l`, is a selection through its
 registration. -/
-theorem belief_selects : W.SelectsThrough obs g t (W.Belief obs g l t) :=
+theorem class_selects : W.SelectsThrough obs g t (W.ClassThrough obs g l t) :=
   fun _ _ alike => ⟨fun first => first.trans alike, fun second => second.trans alike.symm⟩
 
 /-- **A selection reaches exactly what registers.** Two histories are selected alike by every
 selection through `g`'s registration up to `t` exactly when `g` registers them alike up to `t`. -/
 theorem selects_alike_iff :
     (∀ select, W.SelectsThrough obs g t select → (select l ↔ select l')) ↔
-      W.RegistersAlikeUpTo obs g l l' t :=
-  ⟨fun all => (all (W.Belief obs g l t) belief_selects).mp fun s _ => RegistersAlike.refl s,
+      W.AlikeThroughUpTo obs g l l' t :=
+  ⟨fun all => (all (W.ClassThrough obs g l t) class_selects).mp fun s _ => AlikeThrough.refl s,
    fun alike _ through => through l l' alike⟩
 
 /-- **What registers apart is separated.** Where `g` does not register two histories alike up to
 `t`, a selection through its registration, its belief, holds at the first and fails at the
 second. -/
-theorem separates (differ : ¬ W.RegistersAlikeUpTo obs g l l' t) :
+theorem separates (differ : ¬ W.AlikeThroughUpTo obs g l l' t) :
     ∃ select, W.SelectsThrough obs g t select ∧ select l ∧ ¬ select l' :=
-  ⟨W.Belief obs g l t, belief_selects, fun s _ => RegistersAlike.refl s, differ⟩
+  ⟨W.ClassThrough obs g l t, class_selects, fun s _ => AlikeThrough.refl s, differ⟩
 
 /-- **A selection through registration is tested completely.** Its selector refutes it exactly
 where it fails. -/
-theorem SelectsThrough.refutes_iff (through : W.SelectsThrough obs g t select) :
-    W.Refutes obs select g l t ↔ ¬ select l :=
-  ⟨Refutes.not_meets, fun fails l' meets alike => fails ((through l l' alike).mpr meets)⟩
+theorem SelectsThrough.excludes_iff (through : W.SelectsThrough obs g t select) :
+    W.Excludes obs select g l t ↔ ¬ select l :=
+  ⟨Excludes.not_meets, fun fails l' meets alike => fails ((through l l' alike).mpr meets)⟩
 
 /-- Admission at a step up to `t` is selected through registration up to `t`. -/
 theorem admits_through {s : Nat} (le : s ≤ t) :
@@ -243,11 +243,11 @@ theorem SelectsThrough.and (first : W.SelectsThrough obs g t select)
 each history, whether `g` registers it alike with `l` up to `t`, two histories are scored alike
 by every score through `g`'s registration exactly when `g` registers them alike: the mark of
 the belief is such a score. -/
-theorem scores_alike_iff (decided : ∀ m, Decidable (W.RegistersAlikeUpTo obs g l m t)) :
+theorem scores_alike_iff (decided : ∀ m, Decidable (W.AlikeThroughUpTo obs g l m t)) :
     (∀ score, W.ScoresThrough obs g t score → score l = score l') ↔
-      W.RegistersAlikeUpTo obs g l l' t :=
+      W.AlikeThroughUpTo obs g l l' t :=
   have through : W.ScoresThrough obs g t
-      (fun m => @mark (W.RegistersAlikeUpTo obs g l m t) (decided m)) := fun m m' alike =>
+      (fun m => @mark (W.AlikeThroughUpTo obs g l m t) (decided m)) := fun m m' alike =>
     @mark_cases _ (decided m) (fun x => x = @mark _ (decided m'))
       (fun holds => @mark_cases _ (decided m') (fun y => 1 = y) (fun _ => rfl)
         fun fails => absurd (holds.trans alike) fails)
@@ -256,8 +256,8 @@ theorem scores_alike_iff (decided : ∀ m, Decidable (W.RegistersAlikeUpTo obs g
   ⟨fun all =>
     have one : @mark _ (decided l) = 1 :=
       @mark_cases _ (decided l) (fun x => x = 1) (fun _ => rfl)
-        fun fails => absurd (fun s _ => RegistersAlike.refl s) fails
-    @mark_cases _ (decided l') (fun y => 1 = y → W.RegistersAlikeUpTo obs g l l' t)
+        fun fails => absurd (fun s _ => AlikeThrough.refl s) fails
+    @mark_cases _ (decided l') (fun y => 1 = y → W.AlikeThroughUpTo obs g l l' t)
       (fun holds _ => holds) (fun _ zero => Nat.noConfusion zero)
       (one.symm.trans (all _ through)),
    fun alike _ through => through l l' alike⟩
@@ -280,19 +280,19 @@ alike by every selection through a group's pooled registration up to `t` exactly
 member registers them alike up to `t`. -/
 theorem selects_alike_all_iff :
     (∀ select, W.SelectsThroughAll obs group t select → (select l ↔ select l')) ↔
-      W.RegistersAlikeAll obs group l l' t :=
-  ⟨fun all => (all (fun m => W.RegistersAlikeAll obs group l m t)
+      W.AlikeThroughAll obs group l l' t :=
+  ⟨fun all => (all (fun m => W.AlikeThroughAll obs group l m t)
       (fun _ _ alike => ⟨fun first => first.trans alike, fun second => second.trans alike.symm⟩)).mp
-      (RegistersAlikeAll.refl t),
+      (AlikeThroughAll.refl t),
    fun alike _ through => through l l' alike⟩
 
 /-- Where the members do not all register two histories alike up to `t`, a selection through the
 pooled registration holds at the first and fails at the second. -/
-theorem separates_all (differ : ¬ W.RegistersAlikeAll obs group l l' t) :
+theorem separates_all (differ : ¬ W.AlikeThroughAll obs group l l' t) :
     ∃ select, W.SelectsThroughAll obs group t select ∧ select l ∧ ¬ select l' :=
-  ⟨fun m => W.RegistersAlikeAll obs group l m t,
+  ⟨fun m => W.AlikeThroughAll obs group l m t,
    fun _ _ alike => ⟨fun first => first.trans alike, fun second => second.trans alike.symm⟩,
-   RegistersAlikeAll.refl t, differ⟩
+   AlikeThroughAll.refl t, differ⟩
 
 end Web
 
@@ -306,59 +306,59 @@ variable {L L' : Flow F C} {W W' : Web F C} {obs : F → C → Prop} {part : F �
 /-- **Selection is blind beyond the registration closure.** With the rest of the exchange fixed,
 where every member of a part lies beyond `f`'s registration closure, every selection through the
 registration of a formation within the closure, `f` among them, selects the levels with and
-without the part alike: an instance of `unregistered_beyond_registration`. -/
-theorem unselected_beyond_registration {l : Nat → C → Nat}
+without the part alike: an instance of `uncoupled_beyond_coupling`. -/
+theorem unselected_beyond_coupling {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
-    (balanced : ∀ t g c, L.WithinRegistration W obs f g → W.Registers obs g c →
+    (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
-    (beyond : ∀ h, part h = true → ¬ L.WithinRegistration W obs f h) {g : F}
-    (within : L.WithinRegistration W obs f g) {t : Nat}
+    (beyond : ∀ h, part h = true → ¬ L.WithinCoupling W obs f h) {g : F}
+    (within : L.WithinCoupling W obs f g) {t : Nat}
     (through : W.SelectsThrough obs g t select) : select W.level ↔ select l :=
-  through _ _ fun s _ => unregistered_beyond_registration without balanced beyond s g within
+  through _ _ fun s _ => uncoupled_beyond_coupling without balanced beyond s g within
 
 /-- Every score through the registration of a formation within the closure scores the levels
 with and without a part beyond it alike. -/
-theorem unscored_beyond_registration {l : Nat → C → Nat}
+theorem unscored_beyond_coupling {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
-    (balanced : ∀ t g c, L.WithinRegistration W obs f g → W.Registers obs g c →
+    (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
-    (beyond : ∀ h, part h = true → ¬ L.WithinRegistration W obs f h) {g : F}
-    (within : L.WithinRegistration W obs f g) {t : Nat}
+    (beyond : ∀ h, part h = true → ¬ L.WithinCoupling W obs f h) {g : F}
+    (within : L.WithinCoupling W obs f g) {t : Nat}
     (through : W.ScoresThrough obs g t score) : score W.level = score l :=
-  through _ _ fun s _ => unregistered_beyond_registration without balanced beyond s g within
+  through _ _ fun s _ => uncoupled_beyond_coupling without balanced beyond s g within
 
 /-- **Pooling within the closure stays blind.** Every selection through the pooled registration
 of a group whose members lie within `f`'s registration closure selects the levels with and
 without a part beyond the closure alike. -/
-theorem unselected_beyond_registration_all {l : Nat → C → Nat}
+theorem unselected_beyond_coupling_all {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
-    (balanced : ∀ t g c, L.WithinRegistration W obs f g → W.Registers obs g c →
+    (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
-    (beyond : ∀ h, part h = true → ¬ L.WithinRegistration W obs f h) {group : F → Prop}
-    (members : ∀ g, group g → L.WithinRegistration W obs f g) {t : Nat}
+    (beyond : ∀ h, part h = true → ¬ L.WithinCoupling W obs f h) {group : F → Prop}
+    (members : ∀ g, group g → L.WithinCoupling W obs f g) {t : Nat}
     (through : W.SelectsThroughAll obs group t select) : select W.level ↔ select l :=
   through _ _ fun g member s _ =>
-    unregistered_beyond_registration without balanced beyond s g (members g member)
+    uncoupled_beyond_coupling without balanced beyond s g (members g member)
 
 /-- **Blind beyond the closure where the members respond.** Under the hypotheses of
-`alike_within_registration`, every selection through the registration of a formation within
+`alike_within_coupling`, every selection through the registration of a formation within
 `f`'s registration closure, drawn through both flows, selects the two flows' levels alike. -/
-theorem unselected_beyond_registration_responsive {f : F}
-    (balanced : ∀ t g c, WithinClosure (L.RegisteredFromEither W L' obs) f g →
-      W.Registers obs g c → L.BalancesOn W [c] t)
-    (balanced' : ∀ t g c, WithinClosure (L.RegisteredFromEither W L' obs) f g →
-      W.Registers obs g c → L'.BalancesOn W' [c] t)
+theorem unselected_beyond_coupling_responsive {f : F}
+    (balanced : ∀ t g c, WithinClosure (L.CoupledFromEither W L' obs) f g →
+      W.CoupledInto obs g c → L.BalancesOn W [c] t)
+    (balanced' : ∀ t g c, WithinClosure (L.CoupledFromEither W L' obs) f g →
+      W.CoupledInto obs g c → L'.BalancesOn W' [c] t)
     (present : ∀ t, L.present t = L'.present t)
-    (start : ∀ g, WithinClosure (L.RegisteredFromEither W L' obs) f g →
-      ∀ c, W.Registers obs g c → W.level 0 c = W'.level 0 c)
-    (responds : ∀ h, WithinClosure (L.RegisteredFromEither W L' obs) f h →
-      ∀ t, W.RegistersAlikeUpTo obs h W.level W'.level t →
-      ∀ g c, WithinClosure (L.RegisteredFromEither W L' obs) f g → W.Registers obs g c →
+    (start : ∀ g, WithinClosure (L.CoupledFromEither W L' obs) f g →
+      ∀ c, W.CoupledInto obs g c → W.level 0 c = W'.level 0 c)
+    (responds : ∀ h, WithinClosure (L.CoupledFromEither W L' obs) f h →
+      ∀ t, W.AlikeThroughUpTo obs h W.level W'.level t →
+      ∀ g c, WithinClosure (L.CoupledFromEither W L' obs) f g → W.CoupledInto obs g c →
         L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c)
-    {g : F} (within : WithinClosure (L.RegisteredFromEither W L' obs) f g) {t : Nat}
+    {g : F} (within : WithinClosure (L.CoupledFromEither W L' obs) f g) {t : Nat}
     (through : W.SelectsThrough obs g t select) : select W.level ↔ select W'.level :=
   through _ _ fun s _ =>
-    alike_within_registration balanced balanced' present start responds s g within
+    alike_within_coupling balanced balanced' present start responds s g within
 
 end Flow
 
@@ -618,11 +618,11 @@ spared world alike at every step, while the dweller is ended in the cleared worl
 spared one: that the dweller is ended is selected through the clearer's registration at no
 step. -/
 theorem unselected :
-    (∀ t select, web.SelectsThrough supportOnly .clearer t select →
+    (∀ t select, web.SelectsThrough thresholdOnly .clearer t select →
       (select web.level ↔ select sparedWeb.level)) ∧
       DwellerEnded web.level ∧ ¬ DwellerEnded sparedWeb.level ∧
-      ∀ t, ¬ web.SelectsThrough supportOnly .clearer t DwellerEnded :=
-  have spared : ¬ DwellerEnded sparedWeb.level := Web.Refutes.not_meets tested_by_dweller.2.2
+      ∀ t, ¬ web.SelectsThrough thresholdOnly .clearer t DwellerEnded :=
+  have spared : ¬ DwellerEnded sparedWeb.level := Web.Excludes.not_meets tested_by_dweller.2.2
   ⟨fun t _ through => through _ _ (alike_for_clearer t), tested_by_dweller.1, spared,
    fun t through => spared ((through _ _ (alike_for_clearer t)).mp tested_by_dweller.1)⟩
 
@@ -630,10 +630,10 @@ theorem unselected :
 closure; the clearer does not register the habitat its clearing takes from. -/
 theorem dweller_within_reach :
     flow.WithinReach web .clearer .dweller ∧
-      ¬ flow.WithinRegistration web supportOnly .clearer .dweller ∧
-      ¬ web.Registers supportOnly .clearer .habitat :=
+      ¬ flow.WithinCoupling web thresholdOnly .clearer .dweller ∧
+      ¬ web.CoupledInto thresholdOnly .clearer .habitat :=
   ⟨reach_middle.1,
-   fun within => reach_middle.2.2.2.1 (Flow.withinRegistration_supportOnly.mp within),
+   fun within => reach_middle.2.2.2.1 (Flow.withinCoupling_thresholdOnly.mp within),
    fun registers => match registers with
     | .inl depends => Place.noConfusion (resource_of_clearer depends)
     | .inr no => no⟩
@@ -656,9 +656,9 @@ theorem clearer_spared : web.Admits (sparedWeb.level 2) 2 .clearer :=
 selection through the dweller's registration; it holds in the spared world and fails in the
 cleared one, which the dweller registers apart up to the third step. -/
 theorem selected_by_dweller :
-    web.SelectsThrough supportOnly .dweller 2 (fun l => web.Admits (l 2) 2 .dweller) ∧
+    web.SelectsThrough thresholdOnly .dweller 2 (fun l => web.Admits (l 2) 2 .dweller) ∧
       web.Admits (sparedWeb.level 2) 2 .dweller ∧ ¬ web.Admits (web.level 2) 2 .dweller ∧
-      ¬ web.RegistersAlikeUpTo supportOnly .dweller web.level sparedWeb.level 2 :=
+      ¬ web.AlikeThroughUpTo thresholdOnly .dweller web.level sparedWeb.level 2 :=
   ⟨Web.admits_through (Nat.le_refl 2), dweller_spared, unsupported_with 0,
    fun alike => unsupported_with 0 ((Web.admits_through (Nat.le_refl 2) _ _ alike).mpr
      dweller_spared)⟩
@@ -666,7 +666,7 @@ theorem selected_by_dweller :
 /-- The dweller registers the spared world alike with the world whose resource is gone at the
 third step, at every step. -/
 theorem dweller_alike_gone (t : Nat) :
-    web.RegistersAlikeUpTo supportOnly .dweller sparedWeb.level resourceGone t :=
+    web.AlikeThroughUpTo thresholdOnly .dweller sparedWeb.level resourceGone t :=
   fun _ _ => ⟨⟨fun admits c requires => (match c, requires with
       | .habitat, _ => admits .habitat trivial
       | .resource, no => nomatch no
@@ -686,14 +686,14 @@ spared world and fails in the cleared one, and it is through neither registratio
 clearer registers the cleared world alike with the spared one, the dweller the world whose
 resource is gone. -/
 theorem selected_pooled :
-    web.SelectsThroughAll supportOnly clearerAndDweller 2 BothAdmitted ∧
+    web.SelectsThroughAll thresholdOnly clearerAndDweller 2 BothAdmitted ∧
       BothAdmitted sparedWeb.level ∧ ¬ BothAdmitted web.level ∧
-      ¬ web.SelectsThrough supportOnly .clearer 2 BothAdmitted ∧
-      ¬ web.SelectsThrough supportOnly .dweller 2 BothAdmitted :=
-  have dweller : web.SelectsThroughAll supportOnly clearerAndDweller 2
+      ¬ web.SelectsThrough thresholdOnly .clearer 2 BothAdmitted ∧
+      ¬ web.SelectsThrough thresholdOnly .dweller 2 BothAdmitted :=
+  have dweller : web.SelectsThroughAll thresholdOnly clearerAndDweller 2
       (fun l => web.Admits (l 2) 2 .dweller) :=
     Web.SelectsThrough.all (g := Formation.dweller) trivial (Web.admits_through (Nat.le_refl 2))
-  have clearer : web.SelectsThroughAll supportOnly clearerAndDweller 2
+  have clearer : web.SelectsThroughAll thresholdOnly clearerAndDweller 2
       (fun l => web.Admits (l 2) 2 .clearer) :=
     Web.SelectsThrough.all (g := Formation.clearer) trivial (Web.admits_through (Nat.le_refl 2))
   have spared : BothAdmitted sparedWeb.level := ⟨dweller_spared, clearer_spared⟩
@@ -846,7 +846,7 @@ theorem diverting_taking : diverting.Taking (web divertedLevel)
 /-- In the diverting flow the taker alone is closed under being affected through what is
 registered: only the taker exchanges with the store, and it depends on nothing. -/
 theorem takerAlone_closed :
-    ClosedUnder (diverting.RegisteredFrom (web divertedLevel) gauge) takerAlone
+    ClosedUnder (diverting.CoupledFrom (web divertedLevel) gauge) takerAlone
   | .taker, .taker, _, _ => trivial
   | .taker, .dweller, _, ⟨_, _, _, _, .inl takes⟩ => absurd takes (Nat.lt_irrefl 0)
   | .taker, .dweller, _, ⟨_, _, _, _, .inr gives⟩ => absurd gives (Nat.lt_irrefl 0)
@@ -873,7 +873,7 @@ theorem favours :
       (web divertedLevel).Dependent ∧ (web undivertedLevel).Dependent ∧
       diverting.Acting (web divertedLevel) ∧ diverting.Taking (web divertedLevel) ∧
       diverting.WithinReach (web divertedLevel) .taker .dweller ∧
-      ¬ diverting.WithinRegistration (web divertedLevel) gauge .taker .dweller ∧
+      ¬ diverting.WithinCoupling (web divertedLevel) gauge .taker .dweller ∧
       ¬ undiverted.WithinReach (web undivertedLevel) .taker .dweller ∧
       (web divertedLevel).SelectsThrough gauge .taker 1 (StoreAtLeast 1 1) ∧
       StoreAtLeast 1 1 divertedLevel ∧ ¬ StoreAtLeast 1 1 undivertedLevel ∧
@@ -902,13 +902,13 @@ flow and unsupported from the second step on in the diverting one. -/
 theorem blind_to_source :
     supplying.Balances (web suppliedLevel) ∧ (web suppliedLevel).Dependent ∧
       ¬ supplying.WithinReach (web suppliedLevel) .taker .dweller ∧
-      (∀ t, (web divertedLevel).RegistersAlikeUpTo gauge .taker divertedLevel suppliedLevel t) ∧
+      (∀ t, (web divertedLevel).AlikeThroughUpTo gauge .taker divertedLevel suppliedLevel t) ∧
       (∀ t select, (web divertedLevel).SelectsThrough gauge .taker t select →
         (select divertedLevel ↔ select suppliedLevel)) ∧
       (∀ t, (web suppliedLevel).Supported t .dweller) ∧
       ∀ n, ¬ (web divertedLevel).Supported (n + 1) .dweller :=
   have alike : ∀ t,
-      (web divertedLevel).RegistersAlikeUpTo gauge .taker divertedLevel suppliedLevel t :=
+      (web divertedLevel).AlikeThroughUpTo gauge .taker divertedLevel suppliedLevel t :=
     fun _ _ _ => ⟨⟨fun _ _ no => (nomatch no), fun _ _ no => (nomatch no)⟩,
       fun c observed => match c, observed with
       | .store, _ => rfl

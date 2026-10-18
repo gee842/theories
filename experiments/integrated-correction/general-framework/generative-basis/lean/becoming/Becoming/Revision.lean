@@ -89,10 +89,10 @@ theorem keeps_iff {alike : S → X → X → Prop} {s t : S}
 /-- This includes the existing web registration without equating propositions by propext. -/
 theorem web_keeps_iff {F C : Type} {W : Web F C} {obs obs' : F → C → Prop}
     {f : F} {t u : Nat} :
-    (∀ l l', W.RegistersAlikeUpTo obs' f l l' u → W.RegistersAlikeUpTo obs f l l' t) ↔
+    (∀ l l', W.AlikeThroughUpTo obs' f l l' u → W.AlikeThroughUpTo obs f l l' t) ↔
     (∀ select, W.SelectsThrough obs f t select → W.SelectsThrough obs' f u select) :=
   (Learning.Training.keeps_through_iff
-    (fun _ _ _ => Web.RegistersAlike.refl _)
+    (fun _ _ _ => Web.AlikeThrough.refl _)
     (fun _ _ h => h.symm) (fun _ _ _ h k => h.trans k)).symm
 
 /-- Preservation composes along the process's actual intermediate configurations. -/
@@ -274,7 +274,7 @@ theorem controlled_revision :
 /-! ### Revising is a registration process run jointly with its stock -/
 
 /-- The registration side: the link (first) and the response (second). -/
-def registration : Process (Bool × Bool) Act := ⟨fun s a t => match a with
+def linkProcess : Process (Bool × Bool) Act := ⟨fun s a t => match a with
   | .replenish => t = s
   | .rebuild b => t = (b, s.2)
   | .correct => s.1 = true ∧ t = (true, true)⟩
@@ -293,7 +293,7 @@ def restore : Act → Nat
 
 /-- **Revising is the stock process run jointly with the registration, step for step.** -/
 theorem step_iff {s t : State} {a : Act} :
-    P.step s a t ↔ (productProcess (Stock.process draw restore) registration).step s a t := by
+    P.step s a t ↔ (productProcess (Stock.process draw restore) linkProcess).step s a t := by
   obtain ⟨n, l, v⟩ := s
   obtain ⟨m, l', v'⟩ := t
   cases a with
@@ -330,7 +330,7 @@ theorem step_iff {s t : State} {a : Act} :
       exact ⟨hl, m, rfl, rfl⟩
 
 theorem trace_iff {s t : State} {w : List Act} :
-    Trace P s w t ↔ Trace (productProcess (Stock.process draw restore) registration) s w t :=
+    Trace P s w t ↔ Trace (productProcess (Stock.process draw restore) linkProcess) s w t :=
   ⟨Stock.trace_mono (fun _ _ _ h => step_iff.mp h),
    Stock.trace_mono (fun _ _ _ h => step_iff.mpr h)⟩
 
@@ -342,7 +342,7 @@ theorem stock_balanced_held : Stock.Balanced P (fun s => s.1) draw restore ∧
 /-- **Instance of `Stock.product_feasible_iff`.** A course of reconstruction and correction
 is executable exactly where the registration side admits it and the stock covers it. -/
 theorem feasible_iff {s : State} {w : List Act} :
-    Feasible P s w ↔ Stock.Covered draw restore s.1 w ∧ Feasible registration s.2 w :=
+    Feasible P s w ↔ Stock.Covered draw restore s.1 w ∧ Feasible linkProcess s.2 w :=
   ⟨fun ⟨t, h⟩ => Stock.product_feasible_iff.mp ⟨t, trace_iff.mp h⟩,
    fun both => match Stock.product_feasible_iff.mpr both with
      | ⟨t, h⟩ => ⟨t, trace_iff.mpr h⟩⟩
@@ -355,7 +355,7 @@ theorem covered_not_enacted :
 
 /-- Registration does not enact: the link admits correction, and no stock covers it. -/
 theorem linked_not_enacted :
-    Feasible registration (true, false) [.correct] ∧ ¬ Feasible P (0, true, false) [.correct] :=
+    Feasible linkProcess (true, false) [.correct] ∧ ¬ Feasible P (0, true, false) [.correct] :=
   ⟨⟨(true, true), .cons ⟨rfl, rfl⟩ (.nil _)⟩, fun ⟨_, h⟩ => match h with
     | .cons step _ => match step.2 with
       | ⟨_, bad, _⟩ => Nat.noConfusion bad⟩

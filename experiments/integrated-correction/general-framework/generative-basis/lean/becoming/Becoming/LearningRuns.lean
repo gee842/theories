@@ -14,41 +14,41 @@ along a determined law's orbit. A course read along a run of any process is its 
 
 * **No record fixes the next value.** At a step where two runs of any process part (they register
   alike before it and apart at it, `Parting.PartAt`), a claim made from the record, the values
-  decided, is refuted on one of them (`refuted_on_one_of_part`). Every run's record is shared by
+  decided, is refuted on one of them (`missed_on_one_of_part`). Every run's record is shared by
   two runs of free branching that repeat from that step on and register two given values there,
-  and no claim from the record is right on both (`record_fixes_no_next`).
+  and no claim from the record is right on both (`prefix_fixes_no_next`).
 * **The answering law.** The course answering every claim of a learner is the registered course
   of a run of a determined law that keeps its record (`answerReg`, `answer_course`); no list holds
   its configurations (`answer_open`); with two values told apart every claim made along it is
-  refuted (`answer_refutes`); and the learner over every merging of classes of hypotheses never
+  refuted (`answer_misses`); and the learner over every merging of classes of hypotheses never
   comes to rest along it (`merged_unrested`).
 * **Learning by refutation along a run.** The learner is through the run's record
-  (`learner_through_record`); every hypothesis it passed was refuted at an earlier step of the run
-  (`refuted_before`); over merged classes it holds no hypothesis beyond the place of one that
+  (`byElimination_through_prefix`); every hypothesis it passed was refuted at an earlier step of the run
+  (`missed_before`); over merged classes it holds no hypothesis beyond the place of one that
   holds along the run (`merged_bound`); where it is right from some step on along a run, the
   run's registered course repeats from some step (`lasso_of_right`).
 * **Induction along a run held by a list.** On a run of a determined law whose configurations a
   list holds, the learner over the lasso hypotheses is refuted fewer than `tri l.length` times,
   claims from `l.length` on and is not refuted at arbitrarily late steps
-  (`held_learner_bounded`); that it rests is unrefuted (`held_rest_unrefuted`). Along the run of
+  (`held_byElimination_bounded`); that it rests is unrefuted (`held_rest_unrefuted`). Along the run of
   negation from `false` it rests from step `3` (`alternate_rests`); negation never rests
   (`negation_never_rests`).
 * **Generalization from a run.** Within the targets that go alike across a registration, their
   values at the configurations a run passed before `t` fix the value at a configuration exactly
-  where it registers like one of them (`determines_iff_registered_alike`); the value carried over
+  where it registers like one of them (`determines_iff_lumped_alike`); the value carried over
   is right exactly where the world takes one value at the two (`carried_right_iff`), as it does
   for a world going alike across the registration (`world_carried_right`).
 * **Training on runs' records.** Read the registered courses of a process's runs as the class
   (`Courses`) and the moments before `t` as the data. A loss computed from the record selects
-  alike runs registering alike before `t` (`loss_through_record`); within a class free beyond the
+  alike runs registering alike before `t` (`loss_through_prefix`); within a class free beyond the
   record, a selection through it leaves the value at a later moment as free as the class does
-  (`unselected_beyond_record`); and a fit to the record is right at a moment on every run exactly
+  (`unselected_beyond_prefix`); and a fit to the record is right at a moment on every run exactly
   where the record determines it there (`fit_right_iff_runs`). Where runs branch freely, the
-  record fixes no later value (`free_record_fixes_nothing`).
+  record fixes no later value (`free_prefix_fixes_nothing`).
 * **Alike in the frame, learned alike.** On runs of a determined law beginning alike in the frame
   that registers `reg`, a claim at a step where the targets differ is right on at most one
   (`claim_not_right_on_both`); with the targets decided it is refuted on one, the records equal at
-  every step (`refuted_on_one`). Along the runs of the law leaving two coordinates unchanged, no
+  every step (`missed_on_one`). Along the runs of the law leaving two coordinates unchanged, no
   learner reading the first rests on the second at both `(true, false)` and `(true, true)`
   (`pair_first_not_rests`), none rests on it along every run (`pair_not_learnable`), and reading
   both, the learner over the lasso hypotheses rests on the second from step `2`
@@ -74,23 +74,23 @@ section Transport
 variable {O : Type u}
 
 /-- A refutation carries to an equal claim and an equal value. -/
-theorem refuted_congr {c c' : Option O} {w w' : O} (claim : c = c') (value : w = w') :
-    Refuted c w → Refuted c' w' :=
+theorem missed_congr {c c' : Option O} {w w' : O} (claim : c = c') (value : w = w') :
+    Misses c w → Misses c' w' :=
   fun ⟨v, made, differs⟩ => ⟨v, claim.symm.trans made, fun same => differs (same.trans value.symm)⟩
 
 /-- A refutation at a step carries to a course with the same record and value there. -/
-theorem refutedAt_of_same {V : Type v} {pred : List O → Option V} {o : Nat → O} {o' : Nat → O}
-    {val val' : V} {t : Nat} (same : record o t = record o' t) (now : val = val') :
-    Refuted (pred (record o t)) val → Refuted (pred (record o' t)) val' :=
-  refuted_congr (congrArg pred same) now
+theorem missedAt_of_same {V : Type v} {pred : List O → Option V} {o : Nat → O} {o' : Nat → O}
+    {val val' : V} {t : Nat} (same : prefixOf o t = prefixOf o' t) (now : val = val') :
+    Misses (pred (prefixOf o t)) val → Misses (pred (prefixOf o' t)) val' :=
+  missed_congr (congrArg pred same) now
 
 /-- Held from `t` at the value of `o'`, a course agreeing with `o'` before `t` is refuted at `t`
 only where `o'` is. -/
-theorem holdFrom_refuted {pred : List O → Option O} {o o' : Nat → O} {t : Nat}
+theorem holdFrom_missed {pred : List O → Option O} {o o' : Nat → O} {t : Nat}
     (same : ∀ n, n < t → o n = o' n) :
-    RefutedAt pred (holdFrom o t (o' t)) t → RefutedAt pred o' t :=
-  refutedAt_of_same
-    (record_congr fun n before => (holdFrom_before o (o' t) before).trans (same n before))
+    MissesAt pred (holdFrom o t (o' t)) t → MissesAt pred o' t :=
+  missedAt_of_same
+    (prefix_congr fun n before => (holdFrom_before o (o' t) before).trans (same n before))
     (holdFrom_after o (o' t) (Nat.le_refl t))
 
 end Transport
@@ -104,26 +104,26 @@ variable {S : Type u} {A : Type v} {R : Type w} {P : Process S A}
 /-- **At a parting, a claim from the record is refuted on one of the two runs.** With the
 registered values decided, where two runs register alike before `t` and apart at `t`, a claim
 made at `t` from the record is refuted on one of them. -/
-theorem refuted_on_one_of_part [DecidableEq R] (pred : List R → Option R) {reg : S → R}
+theorem missed_on_one_of_part [DecidableEq R] (pred : List R → Option R) {reg : S → R}
     {r r' : Run P} {t : Nat} (part : Parting.PartAt reg r r' t) {w : R}
-    (claims : pred (record (Parting.course reg r) t) = some w) :
-    RefutedAt pred (Parting.course reg r) t ∨ RefutedAt pred (Parting.course reg r') t :=
-  match claim_refuted_on_one pred (Parting.course reg r) t part.2 claims with
-  | .inl refuted => .inl (holdFrom_refuted (fun _ _ => rfl) refuted)
-  | .inr refuted => .inr (holdFrom_refuted part.1 refuted)
+    (claims : pred (prefixOf (Parting.course reg r) t) = some w) :
+    MissesAt pred (Parting.course reg r) t ∨ MissesAt pred (Parting.course reg r') t :=
+  match claim_missed_on_one pred (Parting.course reg r) t part.2 claims with
+  | .inl refuted => .inl (holdFrom_missed (fun _ _ => rfl) refuted)
+  | .inr refuted => .inr (holdFrom_missed part.1 refuted)
 
 /-- **No record of a run fixes the next value, not even among finite worlds.** Given two values,
 the record of every run before `t` is the record of two runs of free branching that repeat from
 `t` on, one registering each value at `t`; a claim made from the record is not right on both. -/
-theorem record_fixes_no_next (pred : List R → Option R) (reg : S → R) (r : Run P) (t : Nat)
-    {x y : R} (two : x ≠ y) {w : R} (claims : pred (record (Parting.course reg r) t) = some w) :
+theorem prefix_fixes_no_next (pred : List R → Option R) (reg : S → R) (r : Run P) (t : Nat)
+    {x y : R} (two : x ≠ y) {w : R} (claims : pred (prefixOf (Parting.course reg r) t) = some w) :
     ∃ q q' : Run (Parting.free R), Lasso (Parting.course id q) t 0 ∧
       Lasso (Parting.course id q') t 0 ∧
-      record (Parting.course id q) t = record (Parting.course reg r) t ∧
-      record (Parting.course id q') t = record (Parting.course reg r) t ∧
+      prefixOf (Parting.course id q) t = prefixOf (Parting.course reg r) t ∧
+      prefixOf (Parting.course id q') t = prefixOf (Parting.course reg r) t ∧
       q.state t = x ∧ q'.state t = y ∧
-      ¬ (¬ RefutedAt pred (Parting.course id q) t ∧ ¬ RefutedAt pred (Parting.course id q') t) :=
-  match no_record_fixes_next_finite pred (Parting.course reg r) t two claims with
+      ¬ (¬ MissesAt pred (Parting.course id q) t ∧ ¬ MissesAt pred (Parting.course id q') t) :=
+  match no_prefix_fixes_next_finite pred (Parting.course reg r) t two claims with
   | ⟨lasso, lasso', same, same', one⟩ =>
     ⟨Parting.freeRun (holdFrom (Parting.course reg r) t x),
      Parting.freeRun (holdFrom (Parting.course reg r) t y), lasso, lasso', same, same',
@@ -131,41 +131,41 @@ theorem record_fixes_no_next (pred : List R → Option R) (reg : S → R) (r : R
 
 /-- **The learner by refutation is through the run's record.** On two runs registering alike
 before `t`, it holds the same hypothesis and makes the same claim at `t`. -/
-theorem learner_through_record [DecidableEq R] (H : Nat → List R → Option R) {reg : S → R}
+theorem byElimination_through_prefix [DecidableEq R] (H : Nat → List R → Option R) {reg : S → R}
     {r r' : Run P} {t : Nat} (same : ∀ n, n < t → reg (r.state n) = reg (r'.state n)) :
     index H (Parting.course reg r) t = index H (Parting.course reg r') t ∧
-      learner H (record (Parting.course reg r) t) = learner H (record (Parting.course reg r') t) :=
-  Learning.learner_through_record (record_congr same)
+      byElimination H (prefixOf (Parting.course reg r) t) = byElimination H (prefixOf (Parting.course reg r') t) :=
+  Learning.byElimination_through_prefix (prefix_congr same)
 
 /-- **Every hypothesis the learner passed along a run was refuted at an earlier step of the
 run.** -/
-theorem refuted_before [DecidableEq R] {H : Nat → List R → Option R} {reg : S → R} {r : Run P}
+theorem missed_before [DecidableEq R] {H : Nat → List R → Option R} {reg : S → R} {r : Run P}
     (t k : Nat) (below : k < index H (Parting.course reg r) t) :
-    ∃ s, s < t ∧ index H (Parting.course reg r) s = k ∧ RefutedAt (H k) (Parting.course reg r) s :=
-  Learning.refuted_before t k below
+    ∃ s, s < t ∧ index H (Parting.course reg r) s = k ∧ MissesAt (H k) (Parting.course reg r) s :=
+  Learning.missed_before t k below
 
 /-- **Learning over classes along a run.** Where hypothesis `j` of class `c` is refuted at no
 step of the run's registered course, the learner over the merged classes holds no hypothesis
 beyond place `tri (c + j) + j`. -/
 theorem merged_bound [DecidableEq R] (G : Nat → Nat → List R → Option R) {reg : S → R}
-    {r : Run P} {c j : Nat} (holds : Holds (G c j) (Parting.course reg r)) :
+    {r : Run P} {c j : Nat} (holds : Accords (G c j) (Parting.course reg r)) :
     ∀ t, index (merged G) (Parting.course reg r) t ≤ tri (c + j) + j :=
   Learning.merged_bound G holds
 
 /-- **Where the learner over the lasso hypotheses is right from some step on along a run, the
 run's registered course repeats from some step.** -/
 theorem lasso_of_right [DecidableEq R] {reg : S → R} {r : Run P} {T : Nat}
-    (right : ∀ t, T ≤ t → Parting.RightAt (learner lassos) reg r t) :
+    (right : ∀ t, T ≤ t → Parting.RightAt (byElimination lassos) reg r t) :
     ∃ i q, Lasso (Parting.course reg r) i q :=
   lasso_of_rest right
 
 /-- **Generalization from a run.** Within the targets that go alike across the registration, the
 values at the configurations a run passed before `t` fix the value at `s` exactly where `s`
 registers like one of them, given two values. -/
-theorem determines_iff_registered_alike [DecidableEq R] {V : Type x} {reg : S → R} (r : Run P)
+theorem determines_iff_lumped_alike [DecidableEq R] {V : Type x} {reg : S → R} (r : Run P)
     (t : Nat) {s : S} {y z : V} (two : y ≠ z) :
-    Determines (Lumped (V := V) reg) (· ∈ record r.state t) s ↔
-      ∃ d, d ∈ record r.state t ∧ reg d = reg s :=
+    Determines (Lumped (V := V) reg) (· ∈ prefixOf r.state t) s ↔
+      ∃ d, d ∈ prefixOf r.state t ∧ reg d = reg s :=
   determines_lumped_iff two
 
 /-- **The value carried over from a run is right exactly where the world takes one value at the
@@ -173,15 +173,15 @@ two.** A target going alike across the registration and fitting the world `f` at
 configurations a run passed before `t` takes at `s` its value at a passed configuration `d`
 registering like `s`; it is right at `s` exactly where `f` takes one value at `d` and `s`. -/
 theorem carried_right_iff {V : Type x} {reg : S → R} {r : Run P} {t : Nat} {f g : S → V}
-    {s d : S} (lumped : Lumped reg g) (fits : ∀ c, c ∈ record r.state t → g c = f c)
-    (passed : d ∈ record r.state t) (same : reg d = reg s) : g s = f s ↔ f d = f s :=
+    {s d : S} (lumped : Lumped reg g) (fits : ∀ c, c ∈ prefixOf r.state t → g c = f c)
+    (passed : d ∈ prefixOf r.state t) (same : reg d = reg s) : g s = f s ↔ f d = f s :=
   lumped_right_iff lumped fits passed same
 
 /-- **A world going alike across the registration is learned from a run at every configuration
 registering like one the run passed.** -/
 theorem world_carried_right {V : Type x} {reg : S → R} {r : Run P} {t : Nat} {f g : S → V}
     {s d : S} (world : Lumped reg f) (lumped : Lumped reg g)
-    (fits : ∀ c, c ∈ record r.state t → g c = f c) (passed : d ∈ record r.state t)
+    (fits : ∀ c, c ∈ prefixOf r.state t → g c = f c) (passed : d ∈ prefixOf r.state t)
     (same : reg d = reg s) : g s = f s :=
   lumped_world_right world lumped fits passed same
 
@@ -203,7 +203,7 @@ theorem course_mem (reg : S → R) (r : Run P) : Courses P reg (Parting.course r
   ⟨r, fun _ => rfl⟩
 
 /-- **A loss computed from the record selects alike runs registering alike before `t`.** -/
-theorem loss_through_record {L : Type x} {t : Nat} (loss : (Nat → R) → L)
+theorem loss_through_prefix {L : Type x} {t : Nat} (loss : (Nat → R) → L)
     (on_data : ∀ g g', Training.AgreeOn (· < t) g g' → loss g = loss g') (choose : L → Prop)
     {reg : S → R} {r r' : Run P} (same : ∀ n, n < t → reg (r.state n) = reg (r'.state n)) :
     choose (loss (Parting.course reg r)) ↔ choose (loss (Parting.course reg r')) :=
@@ -213,7 +213,7 @@ theorem loss_through_record {L : Type x} {t : Nat} (loss : (Nat → R) → L)
 the registered courses of `P` are free at `x` beyond the record before `t`, for every run whose
 course a selection through the record selects and every run, a selected course of a run agrees
 with the first on the record and takes the second's value at `x`. -/
-theorem unselected_beyond_record {reg : S → R} {t x : Nat} {select : (Nat → R) → Prop}
+theorem unselected_beyond_prefix {reg : S → R} {t x : Nat} {select : (Nat → R) → Prop}
     (through : Training.Through (Training.AgreeOn (· < t)) select)
     (free : Free (Courses P reg) (· < t) x) {r r' : Run P}
     (chosen : select (Parting.course reg r)) :
@@ -243,7 +243,7 @@ theorem fit_right_iff_runs {reg : S → R} {t x : Nat} :
 /-- **Where runs branch freely, the record fixes no later value.** Given two values, within the
 registered courses of the runs of free branching the record before `t` fixes the value at no
 moment from `t` on. -/
-theorem free_record_fixes_nothing {V : Type w} {t x : Nat} (late : t ≤ x) {y z : V}
+theorem free_prefix_fixes_nothing {V : Type w} {t x : Nat} (late : t ≤ x) {y z : V}
     (two : y ≠ z) : ¬ Determines (Courses (Parting.free V) id) (· < t) x :=
   fun determines => every_determines_nothing (D := (· < t))
     (fun early => Nat.lt_irrefl x (Nat.lt_of_lt_of_le early late)) two
@@ -272,10 +272,10 @@ theorem answer_course (pred : List O → Option O) (other : O → O) (x : O)
     ((Branching.law_run_state r n).trans
       (congrArg (fun s => Law.orbit (answerStep pred other x) s n) start))
 
-theorem answer_record (pred : List O → Option O) (other : O → O) (x : O)
+theorem answer_prefix (pred : List O → Option O) (other : O → O) (x : O)
     (r : Run (Law.process (answerStep pred other x))) (start : r.state 0 = []) (t : Nat) :
-    record (Parting.course (answerReg pred other x) r) t = record (diagonal pred other x) t :=
-  record_congr fun n _ => answer_course pred other x r start n
+    prefixOf (Parting.course (answerReg pred other x) r) t = prefixOf (diagonal pred other x) t :=
+  prefix_congr fun n _ => answer_course pred other x r start n
 
 /-- **The answering world is open.** No list holds the configurations of a run of the answering
 law from the empty record. -/
@@ -288,26 +288,26 @@ theorem answer_open (pred : List O → Option O) (other : O → O) (x : O)
         (congrArg (fun s => Law.orbit (answerStep pred other x) s n) start)) (held n)⟩
 
 /-- **With two values told apart, every claim made along the answering run is refuted.** -/
-theorem answer_refutes [DecidableEq O] (pred : List O → Option O) {a b : O} (two : a ≠ b)
+theorem answer_misses [DecidableEq O] (pred : List O → Option O) {a b : O} (two : a ≠ b)
     (r : Run (Law.process (answerStep pred (swapTo a b) a))) (start : r.state 0 = []) {t : Nat}
-    {w : O} (claims : pred (record (Parting.course (answerReg pred (swapTo a b) a) r) t) = some w) :
-    RefutedAt pred (Parting.course (answerReg pred (swapTo a b) a) r) t :=
-  refutedAt_of_same (answer_record pred (swapTo a b) a r start t).symm
+    {w : O} (claims : pred (prefixOf (Parting.course (answerReg pred (swapTo a b) a) r) t) = some w) :
+    MissesAt pred (Parting.course (answerReg pred (swapTo a b) a) r) t :=
+  missedAt_of_same (answer_prefix pred (swapTo a b) a r start t).symm
     (answer_course pred (swapTo a b) a r start t).symm
-    (diagonal_refutes pred (swapTo_moves two) a
-      ((congrArg pred (answer_record pred (swapTo a b) a r start t)).symm.trans claims))
+    (diagonal_misses pred (swapTo_moves two) a
+      ((congrArg pred (answer_prefix pred (swapTo a b) a r start t)).symm.trans claims))
 
 /-- **The learner over every merging never rests along its answering run.** However classes of
 hypotheses are chosen and merged, the learner over them is right from no step on along the run
 of the law that answers it. -/
 theorem merged_unrested [DecidableEq O] (G : Nat → Nat → List O → Option O) {other : O → O}
-    (moves : ∀ v, other v ≠ v) (x : O) (r : Run (Law.process (answerStep (learner (merged G)) other x)))
+    (moves : ∀ v, other v ≠ v) (x : O) (r : Run (Law.process (answerStep (byElimination (merged G)) other x)))
     (start : r.state 0 = []) :
-    ¬ ∃ T, ∀ t, T ≤ t → Parting.RightAt (learner (merged G)) (answerReg (learner (merged G)) other x)
+    ¬ ∃ T, ∀ t, T ≤ t → Parting.RightAt (byElimination (merged G)) (answerReg (byElimination (merged G)) other x)
       r t :=
   fun ⟨T, right⟩ => Learning.merged_unrested G moves x ⟨T, fun t late =>
-    (congrArg (learner (merged G)) (answer_record (learner (merged G)) other x r start t)).symm.trans
-      ((right t late).trans (congrArg some (answer_course (learner (merged G)) other x r start t)))⟩
+    (congrArg (byElimination (merged G)) (answer_prefix (byElimination (merged G)) other x r start t)).symm.trans
+      ((right t late).trans (congrArg some (answer_course (byElimination (merged G)) other x r start t)))⟩
 
 end Answer
 
@@ -322,27 +322,27 @@ determined law whose configurations a list `l` holds, the learner over the lasso
 reading the registration and knowing neither the configurations nor how many there are, is
 refuted fewer than `tri l.length` times, claims at every step from `l.length` on, and is not
 refuted at arbitrarily late steps. -/
-theorem held_learner_bounded [DecidableEq R] (r : Run (Law.process next)) {l : List S}
+theorem held_byElimination_bounded [DecidableEq R] (r : Run (Law.process next)) {l : List S}
     (held : ∀ n, r.state n ∈ l) (reg : S → R) :
     (∀ t, index lassos (LearnableRuns.course reg r) t < tri l.length) ∧
-      (∀ t, l.length ≤ t → ∃ v, learner lassos (record (LearnableRuns.course reg r) t) = some v) ∧
-      ¬ ∀ T, ∃ t, T ≤ t ∧ RefutedAt (learner lassos) (LearnableRuns.course reg r) t :=
+      (∀ t, l.length ≤ t → ∃ v, byElimination lassos (prefixOf (LearnableRuns.course reg r) t) = some v) ∧
+      ¬ ∀ T, ∃ t, T ≤ t ∧ MissesAt (byElimination lassos) (LearnableRuns.course reg r) t :=
   have held' : ∀ n, Law.orbit next (r.state 0) n ∈ l := fun n =>
     Eq.subst (motive := fun s => s ∈ l) (Branching.law_run_state r n) (held n)
-  match Learning.held_learner_bounded held' reg with
+  match Learning.held_byElimination_bounded held' reg with
   | ⟨bound, claims, stops⟩ =>
     ⟨fun t => Nat.lt_of_le_of_lt
-        (Nat.le_of_eq (congrArg (indexOn lassos) (LearnableRuns.record_eq reg r t))) (bound t),
+        (Nat.le_of_eq (congrArg (indexOn lassos) (LearnableRuns.prefix_eq reg r t))) (bound t),
      fun t late => match claims t late with
-      | ⟨v, made⟩ => ⟨v, (congrArg (learner lassos) (LearnableRuns.record_eq reg r t)).trans made⟩,
+      | ⟨v, made⟩ => ⟨v, (congrArg (byElimination lassos) (LearnableRuns.prefix_eq reg r t)).trans made⟩,
      fun late => stops fun T => match late T with
-      | ⟨t, after, refuted⟩ => ⟨t, after, refutedAt_of_same (LearnableRuns.record_eq reg r t)
+      | ⟨t, after, refuted⟩ => ⟨t, after, missedAt_of_same (LearnableRuns.prefix_eq reg r t)
           (congrArg reg (Branching.law_run_state r t)) refuted⟩⟩
 
 /-- **Induction along a run held by a list: that the learner rests is unrefuted.** -/
 theorem held_rest_unrefuted [DecidableEq R] (r : Run (Law.process next)) {l : List S}
     (held : ∀ n, r.state n ∈ l) (reg : S → R) :
-    ¬ ¬ LearnableRuns.Rests reg reg (learner lassos) r :=
+    ¬ ¬ LearnableRuns.Rests reg reg (byElimination lassos) r :=
   fun never => Learning.held_rest_unrefuted
     (fun n => Eq.subst (motive := fun s => s ∈ l) (Branching.law_run_state r n) (held n)) reg
     fun ⟨T, rests⟩ => never ⟨T, (LearnableRuns.restsFrom_iff r T).mpr rests⟩
@@ -352,41 +352,41 @@ On runs of a determined law beginning alike in the frame that registers `reg`, a
 targets differ, a learner's claim is not right on both. -/
 theorem claim_not_right_on_both {V : Type x} {reg : S → R} {val : S → V} (pred : List R → Option V)
     {r r' : Run (Law.process next)}
-    (alike : Alike (Law.registered next reg) (Law.registered next reg) (r.state 0) (r'.state 0))
+    (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
     {t : Nat} (differ : val (r.state t) ≠ val (r'.state t)) :
-    ¬ (pred (record (LearnableRuns.course reg r) t) = some (val (r.state t)) ∧
-      pred (record (LearnableRuns.course reg r') t) = some (val (r'.state t))) :=
+    ¬ (pred (prefixOf (LearnableRuns.course reg r) t) = some (val (r.state t)) ∧
+      pred (prefixOf (LearnableRuns.course reg r') t) = some (val (r'.state t))) :=
   fun ⟨right, right'⟩ =>
     Learnable.claim_not_right_on_both pred (Law.alike_iff_sameFuture.mp alike)
       (fun same => differ ((congrArg val (Branching.law_run_state r t)).trans
         (same.trans (congrArg val (Branching.law_run_state r' t)).symm)))
-      ⟨(congrArg pred (LearnableRuns.record_eq reg r t)).symm.trans
+      ⟨(congrArg pred (LearnableRuns.prefix_eq reg r t)).symm.trans
           (right.trans (congrArg (fun s => some (val s)) (Branching.law_run_state r t))),
-       (congrArg pred (LearnableRuns.record_eq reg r' t)).symm.trans
+       (congrArg pred (LearnableRuns.prefix_eq reg r' t)).symm.trans
           (right'.trans (congrArg (fun s => some (val s)) (Branching.law_run_state r' t)))⟩
 
 /-- **With the targets decided, the claim is refuted on one of two runs beginning alike, and their
 records are equal at every step.** -/
-theorem refuted_on_one {V : Type x} [DecidableEq V] {reg : S → R} {val : S → V}
+theorem missed_on_one {V : Type x} [DecidableEq V] {reg : S → R} {val : S → V}
     (pred : List R → Option V) {r r' : Run (Law.process next)}
-    (alike : Alike (Law.registered next reg) (Law.registered next reg) (r.state 0) (r'.state 0))
+    (alike : Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0))
     {t : Nat} (differ : val (r.state t) ≠ val (r'.state t)) {w : V}
-    (claims : pred (record (LearnableRuns.course reg r) t) = some w) :
-    (Refuted (pred (record (LearnableRuns.course reg r) t)) (val (r.state t)) ∨
-      Refuted (pred (record (LearnableRuns.course reg r') t)) (val (r'.state t))) ∧
-    ∀ n, record (LearnableRuns.course reg r) n = record (LearnableRuns.course reg r') n :=
-  match Learnable.refuted_on_one pred (Law.alike_iff_sameFuture.mp alike)
+    (claims : pred (prefixOf (LearnableRuns.course reg r) t) = some w) :
+    (Misses (pred (prefixOf (LearnableRuns.course reg r) t)) (val (r.state t)) ∨
+      Misses (pred (prefixOf (LearnableRuns.course reg r') t)) (val (r'.state t))) ∧
+    ∀ n, prefixOf (LearnableRuns.course reg r) n = prefixOf (LearnableRuns.course reg r') n :=
+  match Learnable.missed_on_one pred (Law.alike_iff_sameFuture.mp alike)
       (fun same => differ ((congrArg val (Branching.law_run_state r t)).trans
         (same.trans (congrArg val (Branching.law_run_state r' t)).symm)))
-      ((congrArg pred (LearnableRuns.record_eq reg r t)).symm.trans claims) with
+      ((congrArg pred (LearnableRuns.prefix_eq reg r t)).symm.trans claims) with
   | ⟨one, records⟩ =>
     ⟨match one with
-     | .inl refuted => .inl (refutedAt_of_same (LearnableRuns.record_eq reg r t).symm
+     | .inl refuted => .inl (missedAt_of_same (LearnableRuns.prefix_eq reg r t).symm
          (congrArg val (Branching.law_run_state r t)).symm refuted)
-     | .inr refuted => .inr (refutedAt_of_same (LearnableRuns.record_eq reg r' t).symm
+     | .inr refuted => .inr (missedAt_of_same (LearnableRuns.prefix_eq reg r' t).symm
          (congrArg val (Branching.law_run_state r' t)).symm refuted),
-     fun n => (LearnableRuns.record_eq reg r n).trans
-       ((records n).trans (LearnableRuns.record_eq reg r' n).symm)⟩
+     fun n => (LearnableRuns.prefix_eq reg r n).trans
+       ((records n).trans (LearnableRuns.prefix_eq reg r' n).symm)⟩
 
 end Determined
 
@@ -401,9 +401,9 @@ theorem negation_never_rests (r : Run (Law.process not)) (n : Nat) :
 /-- **Two refutations, then rest.** Along every run of negation from `false`, the learner over
 the lasso hypotheses reading the configuration claims each value right from step `3` on. -/
 theorem alternate_rests (r : Run (Law.process not)) (start : r.state 0 = false) :
-    LearnableRuns.RestsFrom id id (learner lassos) r 3 :=
+    LearnableRuns.RestsFrom id id (byElimination lassos) r 3 :=
   (LearnableRuns.restsFrom_iff r 3).mpr
-    (Eq.subst (motive := fun s => Learnable.RestsFrom not id id (learner lassos) s 3) start.symm
+    (Eq.subst (motive := fun s => Learnable.RestsFrom not id id (byElimination lassos) s 3) start.symm
       Alternate.rests)
 
 /-- The four configurations of two coordinates. -/
@@ -431,7 +431,7 @@ theorem pair_not_learnable :
 /-- **Registering both, the learner over the lasso hypotheses rests on the second along every
 run from step `2`.** -/
 theorem pair_whole_rests (r : Run (Law.process Learnable.Pair.still)) :
-    LearnableRuns.RestsFrom id Prod.snd (fun l => (learner lassos l).map Prod.snd) r 2 :=
+    LearnableRuns.RestsFrom id Prod.snd (fun l => (byElimination lassos l).map Prod.snd) r 2 :=
   (LearnableRuns.restsFrom_iff r 2).mpr (Learnable.Pair.whole_rests (r.state 0))
 
 end LearningRuns

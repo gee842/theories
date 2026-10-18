@@ -26,7 +26,7 @@ given as a rule.
   differs between two levels, the law does not read through what it is sensitive to, nor finitely
   many conditions, and the registrations it reads through have no least one
   (`wholeLaw_not_through_sensitive`, `wholeLaw_not_readsFinitely`,
-  `wholeLaw_no_least_registration`). The tail law of `Becoming.Sensitivity` is the instance of the
+  `wholeLaw_no_least_coupling`). The tail law of `Becoming.Sensitivity` is the instance of the
   indicator of vanishing (`tailLaw_eq_wholeLaw`, `vanishIndicator_changedByNoCondition`).
 * **A counterexample gives a rule.** The comparison by which `Becoming.Sensitivity` mixes two
   histories along a Boolean sequence decides the sequence as a rule (`mixedDecision`). So a law
@@ -201,7 +201,7 @@ theorem wholeLaw_not_readsFinitely (fixed : ChangedByNoCondition f) {α β : Nat
 /-- **The registrations it reads through have no least one.** For a web in which the formation
 depends on nothing, a least one would hold no condition, the conditions from each one on being read
 through, and the law does not read through registering nothing. -/
-theorem wholeLaw_no_least_registration (fixed : ChangedByNoCondition f) {α β : Nat → Nat}
+theorem wholeLaw_no_least_coupling (fixed : ChangedByNoCondition f) {α β : Nat → Nat}
     (differs : f α ≠ f β) {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t () c) :
     ¬ ∃ obs : Unit → Nat → Prop, (wholeLaw f).Through W obs (fun _ => false) ∧
       ∀ obs' : Unit → Nat → Prop, (wholeLaw f).Through W obs' (fun _ => false) →

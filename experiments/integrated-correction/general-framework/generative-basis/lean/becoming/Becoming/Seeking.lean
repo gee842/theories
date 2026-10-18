@@ -38,10 +38,10 @@ any condition on the configuration, the seeker's own or the others'.
   (`Flow.Balances.supported_iff_within_margin`); below the threshold a difference stays until
   support diverges (`Flow.subthreshold_alike`); before the break, how far off the break is does
   not register (`Web.break_not_bounded`); where the cost falls beyond the registration closure
-  (识闭包), no mark ever comes (`Flow.unregistered_beyond_registration`).
+  (识闭包), no mark ever comes (`Flow.uncoupled_beyond_coupling`).
 - *B4, seeing (明).* What support does not mark, measurement marks
-  (`Web.observed_raise_registers`), as do a model answerable to what is registered
-  (`Flow.refutes_tail_within`) and another formation's registration (`Clearing.pooled`). What
+  (`Web.observed_raise_couples`), as do a model answerable to what is registered
+  (`Flow.excludes_tail_within`) and another formation's registration (`Clearing.pooled`). What
   one's own act does is fixed only where the configuration returns, under a model of what is
   irrelevant (`Run.fixes_on_return`, `Run.generalizes`).
 

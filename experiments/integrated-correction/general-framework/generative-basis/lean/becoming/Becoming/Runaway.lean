@@ -21,14 +21,14 @@ needed, merge, then continue".
 * **The distance to the break is not registered.** Raising a stock by `d` (`Web.raise`) keeps
   balance on every condition (`Flow.BalancesOn.raise`). At every step at which a web supports
   a formation that does not observe the stock, the raised web registers alike for it
-  (`Web.registersAlike_raise`). So before the break nothing the formation registers bounds how
+  (`Web.alikeThrough_raise`). So before the break nothing the formation registers bounds how
   near the break is: for every horizon, where the stock is the only requirement that may be
   unmet up to it, some raised web registers alike at every step at which the actual web
   supports the formation, and supports it at every step up to the horizon
   (`Web.break_not_bounded`); the raised web is dependent where the web is
-  (`Web.Dependent.raise`). `SupportDrawn.break_unregistered` is an instance.
+  (`Web.Dependent.raise`). `SupportDrawn.break_uncoupled` is an instance.
 * **Observation registers it.** Observing the stock, a formation registers any raise at once
-  (`Web.observed_raise_registers`).
+  (`Web.observed_raise_couples`).
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26).**
 - A runaway is a loop whose registration cannot register the distance to its break: before the
@@ -59,14 +59,14 @@ its own take from and give to every condition it registers are alike across the 
 `t`. -/
 def PolicyThrough (L : Flow F C) (W : Web F C) (L' : Flow F C) (W' : Web F C)
     (obs : F → C → Prop) (g : F) : Prop :=
-  ∀ t, W.RegistersAlikeUpTo obs g W.level W'.level t → ∀ c, W.Registers obs g c →
+  ∀ t, W.AlikeThroughUpTo obs g W.level W'.level t → ∀ c, W.CoupledInto obs g c →
     L.take t g c = L'.take t g c ∧ L.give t g c = L'.give t g c
 
 /-- The rest of the exchange on what `g` registers is fixed: every other formation takes from
 and gives to every condition `g` registers alike in the two flows, at every step. -/
 def OthersFixed (L : Flow F C) (W : Web F C) (L' : Flow F C) (obs : F → C → Prop) (g : F) :
     Prop :=
-  ∀ t h c, h ≠ g → W.Registers obs g c → L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c
+  ∀ t h c, h ≠ g → W.CoupledInto obs g c → L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c
 
 /-- **A policy through registration, with the rest fixed, is exchange following
 registration.** -/
@@ -88,15 +88,15 @@ registration, with the rest fixed: where the starts differ only in a stock `g` d
 does not observe, `d` higher in the second, and the first web supports `g` at every step, the
 stock stands `d` higher at every step and `g` registers alike. -/
 theorem policy_keeps_difference [DecidableEq F] [DecidableEq C] {c : C} {d : Nat}
-    (balanced : ∀ t e, W.Registers obs g e → L.BalancesOn W [e] t)
-    (balanced' : ∀ t e, W.Registers obs g e → L'.BalancesOn W' [e] t)
+    (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
+    (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
     (present : ∀ t, L.present t = L'.present t)
     (policy : PolicyThrough L W L' W' obs g) (others : OthersFixed L W L' obs g)
     (depends : W.DependsOn g c) (unobserved : ¬ obs g c)
     (stock : W'.level 0 c = W.level 0 c + d)
-    (start : ∀ e, W.Registers obs g e → e ≠ c → W.level 0 e = W'.level 0 e)
+    (start : ∀ e, W.CoupledInto obs g e → e ≠ c → W.level 0 e = W'.level 0 e)
     (supported : ∀ t, W.Supported t g) :
-    ∀ t, W'.level t c = W.level t c + d ∧ W.RegistersAlike obs g W.level W'.level t :=
+    ∀ t, W'.level t c = W.level t c + d ∧ W.AlikeThrough obs g W.level W'.level t :=
   subthreshold_alike_always balanced balanced' depends unobserved stock start
     (exchangeFollows_of_policy present policy others) supported
 
@@ -105,13 +105,13 @@ with the rest fixed, starting at least as high on what `g` registers and alike o
 observes: wherever a difference on a condition `g` registers has changed by a step, the first
 web did not support `g` at every earlier step. -/
 theorem policy_uses_after_failure [DecidableEq F]
-    (balanced : ∀ t e, W.Registers obs g e → L.BalancesOn W [e] t)
-    (balanced' : ∀ t e, W.Registers obs g e → L'.BalancesOn W' [e] t)
+    (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
+    (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
     (present : ∀ t, L.present t = L'.present t)
     (policy : PolicyThrough L W L' W' obs g) (others : OthersFixed L W L' obs g)
-    (higher : ∀ e, W.Registers obs g e → W.level 0 e ≤ W'.level 0 e)
+    (higher : ∀ e, W.CoupledInto obs g e → W.level 0 e ≤ W'.level 0 e)
     (observedAlike : ∀ e, obs g e → W.level 0 e = W'.level 0 e) {t : Nat} {e : C}
-    (registers : W.Registers obs g e)
+    (registers : W.CoupledInto obs g e)
     (changed : W'.level t e + W.level 0 e ≠ W.level t e + W'.level 0 e) :
     ¬ ∀ s, s < t → W.Supported s g :=
   fun supported => (difference_changes_after_divergence balanced balanced' higher observedAlike
@@ -149,18 +149,18 @@ theorem raise_other [DecidableEq C] {c e : C} (other : e ≠ c) (d t : Nat) :
 
 /-- **Before the break, a raise does not register.** At every step at which the web supports
 `g`, a raise of a stock `g` does not observe registers alike for it. -/
-theorem registersAlike_raise [DecidableEq C] {c : C} (unobserved : ¬ obs g c) (d : Nat)
+theorem alikeThrough_raise [DecidableEq C] {c : C} (unobserved : ¬ obs g c) (d : Nat)
     {t : Nat} (supported : W.Supported t g) :
-    W.RegistersAlike obs g W.level (W.raise c d).level t :=
+    W.AlikeThrough obs g W.level (W.raise c d).level t :=
   ⟨⟨fun _ e requires => Nat.le_trans (supported e requires) (le_raise c d t e),
     fun _ => supported⟩,
    fun e observed => (raise_other (W := W) (fun same : e = c => unobserved (same ▸ observed)) d t).symm⟩
 
 /-- **Observation registers a raise at once.** Observing the stock, any positive raise is
 registered at every step. -/
-theorem observed_raise_registers [DecidableEq C] {c : C} (observed : obs g c) {d : Nat}
-    (pos : 0 < d) (t : Nat) : ¬ W.RegistersAlike obs g W.level (W.raise c d).level t :=
-  Web.observed_level_registers observed fun same =>
+theorem observed_raise_couples [DecidableEq C] {c : C} (observed : obs g c) {d : Nat}
+    (pos : 0 < d) (t : Nat) : ¬ W.AlikeThrough obs g W.level (W.raise c d).level t :=
+  Web.observed_level_couples observed fun same =>
     Nat.ne_of_lt (Nat.lt_add_of_pos_right (n := W.level t c) (if_pos rfl ▸ pos))
       (same.trans rfl)
 
@@ -191,7 +191,7 @@ every step up to `u`. So before the break nothing `g` registers bounds how far o
 theorem break_not_bounded [DecidableEq C] {c : C} (unobserved : ¬ obs g c) (u : Nat)
     (others : ∀ s, s ≤ u → ∀ e, e ≠ c → W.requires s g e → W.need s g e ≤ W.level s e) :
     ∃ d, (∀ s, s ≤ u → (W.raise c d).Supported s g) ∧
-      ∀ t, W.Supported t g → W.RegistersAlike obs g W.level (W.raise c d).level t :=
+      ∀ t, W.Supported t g → W.AlikeThrough obs g W.level (W.raise c d).level t :=
   ⟨W.needUpTo g c u,
    fun s le e requires => match decEq e c with
     | isTrue same => match e, same, requires with
@@ -201,7 +201,7 @@ theorem break_not_bounded [DecidableEq C] {c : C} (unobserved : ¬ obs g c) (u :
         Nat.le_trans (Nat.le_trans (W.need_le_needUpTo g c le) (Nat.le_add_left _ (W.level s c)))
           (Nat.le_of_eq raised.symm)
     | isFalse other => Nat.le_trans (others s le e other requires) (le_raise c _ s e),
-   fun _ supported => registersAlike_raise unobserved _ supported⟩
+   fun _ supported => alikeThrough_raise unobserved _ supported⟩
 
 end Web
 
@@ -226,14 +226,14 @@ namespace SupportDrawn
 /-- **The break, unregistered.** In the lower web the formation is unsupported at the third
 step; a raise of its stock registers alike for it at every step at which the lower web
 supports it, supports it at the third step, and keeps the flow balanced. -/
-theorem break_unregistered :
+theorem break_uncoupled :
     ¬ (web lowerLevel).Supported 2 () ∧
       ∃ d, ((web lowerLevel).raise () d).Supported 2 () ∧
         (∀ t, (web lowerLevel).Supported t () →
-          (web lowerLevel).RegistersAlike supportOnly () (web lowerLevel).level
+          (web lowerLevel).AlikeThrough thresholdOnly () (web lowerLevel).level
             ((web lowerLevel).raise () d).level t) ∧
         ∀ t, (flow lowerDraw).BalancesOn ((web lowerLevel).raise () d) [()] t :=
-  match (web lowerLevel).break_not_bounded (obs := supportOnly) (g := ()) (c := ())
+  match (web lowerLevel).break_not_bounded (obs := thresholdOnly) (g := ()) (c := ())
       (fun no => no) 2 (fun _ _ () other => absurd rfl other) with
   | ⟨d, supports, alike⟩ =>
     ⟨fun supported => Nat.not_succ_le_zero 0 (supported () trivial), d,

@@ -25,7 +25,7 @@ run: of which of its moments any selection through what registers along it can t
   where they register alike (`value_level_alike`).
 * **Right about a target only where the target goes alike across the registration.** A
   selection or valuation through the registered course is through what registers alike along
-  the run (`selects_through_registration`, `values_lumped`). Where a target on configurations
+  the run (`selects_through_coupling`, `values_lumped`). Where a target on configurations
   separates two moments that register alike, no selection through the course selects exactly
   the moments meeting it, and no valuation through it gives each moment its value
   (`selects_not_right_of_parted`, `values_not_right_of_parted`); where the target is read off
@@ -107,7 +107,7 @@ theorem value_level_alike {W : Type x} {value : (Nat → V) → Nat → W}
 
 /-- **A selection through the registered course is through what registers alike along the
 run.** -/
-theorem selects_through_registration {select : (Nat → V) → Nat → Prop}
+theorem selects_through_coupling {select : (Nat → V) → Nat → Prop}
     (equivariant : Equivariant select) (reg : S → V) (r : Run P) :
     Learning.Training.Through (fun i i' => reg (r.state i) = reg (r.state i'))
       (select (Parting.course reg r)) :=

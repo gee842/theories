@@ -953,10 +953,11 @@
    "how": "definition (study section 7)",
    "line": 208,
    "clash": false,
-   "lean_files": 21,
+   "lean_files": 22,
    "lean_file_names": [
     "Assurance.lean",
     "Bridge.lean",
+    "CensusBinding.lean",
     "Composition.lean",
     "CompositionBridge.lean",
     "Counting.lean",
@@ -965,8 +966,7 @@
     "GranularityBridge.lean",
     "Identification.lean",
     "IdentificationRuns.lean",
-    "Joining.lean",
-    "JoiningBridge.lean"
+    "Joining.lean"
    ],
    "records": 2,
    "record_ids": [
@@ -1510,7 +1510,7 @@
    "name": "ExchangeLaw.Through.respondsWithin_unregistered",
    "new": "ExchangeLaw.Through.respondsWithin_uncoupled",
    "how": "theorem name, token substitution (review)",
-   "line": 136,
+   "line": 155,
    "clash": false,
    "lean_files": 1,
    "lean_file_names": [
@@ -1528,7 +1528,7 @@
    "name": "ExchangeLaw.Through.registers_of_respondsTo",
    "new": "ExchangeLaw.Through.couples_of_respondsTo",
    "how": "theorem name, token substitution (review)",
-   "line": 151,
+   "line": 170,
    "clash": false,
    "lean_files": 1,
    "lean_file_names": [
@@ -1546,7 +1546,7 @@
    "name": "Web.registersAlike_of_levels",
    "new": "Web.alikeThrough_of_levels",
    "how": "theorem name, token substitution (review)",
-   "line": 194,
+   "line": 213,
    "clash": false,
    "lean_files": 1,
    "lean_file_names": [
@@ -1823,7 +1823,7 @@
    "how": "theorem name, token substitution (review)",
    "line": 148,
    "clash": false,
-   "lean_files": 212,
+   "lean_files": 214,
    "lean_file_names": [
     "Admission.lean",
     "Assurance.lean",
@@ -1834,9 +1834,9 @@
     "Bridge.lean",
     "CandidateRuns.lean",
     "Capture.lean",
-    "Change.lean",
-    "Closing.lean",
-    "Composition.lean"
+    "CensusBinding.lean",
+    "CensusCounts.lean",
+    "Change.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -1852,7 +1852,7 @@
    "how": "theorem name, token substitution (review)",
    "line": 154,
    "clash": false,
-   "lean_files": 212,
+   "lean_files": 214,
    "lean_file_names": [
     "Admission.lean",
     "Assurance.lean",
@@ -1863,9 +1863,9 @@
     "Bridge.lean",
     "CandidateRuns.lean",
     "Capture.lean",
-    "Change.lean",
-    "Closing.lean",
-    "Composition.lean"
+    "CensusBinding.lean",
+    "CensusCounts.lean",
+    "Change.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -1881,20 +1881,20 @@
    "how": "theorem name, token substitution (review)",
    "line": 159,
    "clash": false,
-   "lean_files": 47,
+   "lean_files": 48,
    "lean_file_names": [
     "Admission.lean",
     "Boundaries.lean",
     "Branching.lean",
     "Bridge.lean",
+    "CensusCounts.lean",
     "Change.lean",
     "Closing.lean",
     "Composition.lean",
     "Contacts.lean",
     "Dependence.lean",
     "Description.lean",
-    "Feedback.lean",
-    "Feeding.lean"
+    "Feedback.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -1910,7 +1910,7 @@
    "how": "theorem name, token substitution (review)",
    "line": 163,
    "clash": false,
-   "lean_files": 200,
+   "lean_files": 202,
    "lean_file_names": [
     "Admission.lean",
     "Assurance.lean",
@@ -1920,10 +1920,10 @@
     "Branching.lean",
     "Bridge.lean",
     "Capture.lean",
+    "CensusBinding.lean",
+    "CensusCounts.lean",
     "Change.lean",
-    "Closing.lean",
-    "Composition.lean",
-    "CompositionBridge.lean"
+    "Closing.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -1939,7 +1939,7 @@
    "how": "theorem name, token substitution (review)",
    "line": 168,
    "clash": false,
-   "lean_files": 212,
+   "lean_files": 214,
    "lean_file_names": [
     "Admission.lean",
     "Assurance.lean",
@@ -1950,9 +1950,9 @@
     "Bridge.lean",
     "CandidateRuns.lean",
     "Capture.lean",
-    "Change.lean",
-    "Closing.lean",
-    "Composition.lean"
+    "CensusBinding.lean",
+    "CensusCounts.lean",
+    "Change.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -2317,20 +2317,20 @@
    "how": "theorem name, token substitution (review)",
    "line": 231,
    "clash": false,
-   "lean_files": 47,
+   "lean_files": 48,
    "lean_file_names": [
     "Admission.lean",
     "Boundaries.lean",
     "Branching.lean",
     "Bridge.lean",
+    "CensusCounts.lean",
     "Change.lean",
     "Closing.lean",
     "Composition.lean",
     "Contacts.lean",
     "Dependence.lean",
     "Description.lean",
-    "Feedback.lean",
-    "Feeding.lean"
+    "Feedback.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -2346,7 +2346,7 @@
    "how": "theorem name, token substitution (review)",
    "line": 235,
    "clash": false,
-   "lean_files": 200,
+   "lean_files": 202,
    "lean_file_names": [
     "Admission.lean",
     "Assurance.lean",
@@ -2356,10 +2356,10 @@
     "Branching.lean",
     "Bridge.lean",
     "Capture.lean",
+    "CensusBinding.lean",
+    "CensusCounts.lean",
     "Change.lean",
-    "Closing.lean",
-    "Composition.lean",
-    "CompositionBridge.lean"
+    "Closing.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -2375,7 +2375,7 @@
    "how": "theorem name, token substitution (review)",
    "line": 240,
    "clash": false,
-   "lean_files": 200,
+   "lean_files": 202,
    "lean_file_names": [
     "Admission.lean",
     "Assurance.lean",
@@ -2385,10 +2385,10 @@
     "Branching.lean",
     "Bridge.lean",
     "Capture.lean",
+    "CensusBinding.lean",
+    "CensusCounts.lean",
     "Change.lean",
-    "Closing.lean",
-    "Composition.lean",
-    "CompositionBridge.lean"
+    "Closing.lean"
    ],
    "records": 1,
    "record_ids": [
@@ -2528,20 +2528,20 @@
    "how": "theorem name, token substitution (review)",
    "line": 301,
    "clash": false,
-   "lean_files": 99,
+   "lean_files": 102,
    "lean_file_names": [
     "Admission.lean",
     "Attraction.lean",
     "Becoming.lean",
     "Branching.lean",
+    "CensusBinding.lean",
+    "CensusCounts.lean",
     "Change.lean",
     "Closing.lean",
     "Continuation.lean",
     "Counting.lean",
     "Coupling.lean",
-    "CouplingTraces.lean",
-    "CourseWorlds.lean",
-    "Courses.lean"
+    "CouplingTraces.lean"
    ],
    "records": 1,
    "record_ids": [

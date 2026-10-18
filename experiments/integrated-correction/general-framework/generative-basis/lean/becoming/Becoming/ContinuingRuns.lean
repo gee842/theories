@@ -69,38 +69,38 @@ theorem run_method_changed (n : Nat) :
 /-- **The installed configuration of each cycle of the run selects at the next address, which the
 cycle's start does not.** -/
 theorem run_new_available_choice (n : Nat) :
-    Learning.Training.Through (ReferencePlan.registered (continuing.state (7 * n + 5)).work)
+    Learning.Training.Through (ReferencePlan.alikeOnInstalled (continuing.state (7 * n + 5)).work)
         (fun x => x (n + 1) = true) ∧
-      ¬ Learning.Training.Through (ReferencePlan.registered (continuing.state (7 * n)).work)
+      ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled (continuing.state (7 * n)).work)
         (fun x => x (n + 1) = true) :=
   Eq.subst (motive := fun s : ContinuingRevision.State =>
-      Learning.Training.Through (ReferencePlan.registered s.work) (fun x => x (n + 1) = true) ∧
-        ¬ Learning.Training.Through (ReferencePlan.registered (continuing.state (7 * n)).work)
+      Learning.Training.Through (ReferencePlan.alikeOnInstalled s.work) (fun x => x (n + 1) = true) ∧
+        ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled (continuing.state (7 * n)).work)
           (fun x => x (n + 1) = true))
     (ContinuingRevision.run_installs n).symm
     (Eq.subst (motive := fun s : ContinuingRevision.State =>
         Learning.Training.Through
-            (ReferencePlan.registered (ContinuingRevision.installed n).work)
+            (ReferencePlan.alikeOnInstalled (ContinuingRevision.installed n).work)
             (fun x => x (n + 1) = true) ∧
-          ¬ Learning.Training.Through (ReferencePlan.registered s.work) (fun x => x (n + 1) = true))
+          ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled s.work) (fun x => x (n + 1) = true))
       (ContinuingRevision.run_at_cycle n).symm (ContinuingRevision.new_available_choice n))
 
 /-- **The next cycle's start no longer selects at the retired address**, which the installed
 configuration of the cycle did. -/
 theorem run_retired_choice (n : Nat) :
-    Learning.Training.Through (ReferencePlan.registered (continuing.state (7 * n + 5)).work)
+    Learning.Training.Through (ReferencePlan.alikeOnInstalled (continuing.state (7 * n + 5)).work)
         (fun x => x n = true) ∧
-      ¬ Learning.Training.Through (ReferencePlan.registered (continuing.state (7 * (n + 1))).work)
+      ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled (continuing.state (7 * (n + 1))).work)
         (fun x => x n = true) :=
   Eq.subst (motive := fun s : ContinuingRevision.State =>
-      Learning.Training.Through (ReferencePlan.registered s.work) (fun x => x n = true) ∧
+      Learning.Training.Through (ReferencePlan.alikeOnInstalled s.work) (fun x => x n = true) ∧
         ¬ Learning.Training.Through
-          (ReferencePlan.registered (continuing.state (7 * (n + 1))).work) (fun x => x n = true))
+          (ReferencePlan.alikeOnInstalled (continuing.state (7 * (n + 1))).work) (fun x => x n = true))
     (ContinuingRevision.run_installs n).symm
     (Eq.subst (motive := fun s : ContinuingRevision.State =>
         Learning.Training.Through
-            (ReferencePlan.registered (ContinuingRevision.installed n).work) (fun x => x n = true) ∧
-          ¬ Learning.Training.Through (ReferencePlan.registered s.work) (fun x => x n = true))
+            (ReferencePlan.alikeOnInstalled (ContinuingRevision.installed n).work) (fun x => x n = true) ∧
+          ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled s.work) (fun x => x n = true))
       (ContinuingRevision.run_at_cycle (n + 1)).symm (ContinuingRevision.retired_choice n))
 
 /-- **At each cycle's start of the run, renewal is no step**: renewal needs a success first. -/

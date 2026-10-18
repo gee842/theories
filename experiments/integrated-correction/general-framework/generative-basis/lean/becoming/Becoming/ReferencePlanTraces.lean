@@ -417,8 +417,8 @@ theorem first_round_installs_contact {t : State} (first : Trace P initial firstR
 /-- **The first round gains the registered choice at contact 0**, which the start did not
 register. -/
 theorem first_round_registers {t : State} (first : Trace P initial firstRound t) :
-    Learning.Training.Through (registered t) (fun x => x 0 = true) ∧
-      ¬ Learning.Training.Through (registered initial) (fun x => x 0 = true) := by
+    Learning.Training.Through (alikeOnInstalled t) (fun x => x 0 = true) ∧
+      ¬ Learning.Training.Through (alikeOnInstalled initial) (fun x => x 0 = true) := by
   have e := firstRound_trace.mp first
   subst e
   exact first_installed_choice
@@ -426,8 +426,8 @@ theorem first_round_registers {t : State} (first : Trace P initial firstRound t)
 /-- **The second round gains the registered choice at contact 1**, which the first repair did not
 register. -/
 theorem second_round_registers {t : State} (second : Trace P repairedFirst secondRound t) :
-    Learning.Training.Through (registered t) (fun x => x 1 = true) ∧
-      ¬ Learning.Training.Through (registered repairedFirst) (fun x => x 1 = true) := by
+    Learning.Training.Through (alikeOnInstalled t) (fun x => x 1 = true) ∧
+      ¬ Learning.Training.Through (alikeOnInstalled repairedFirst) (fun x => x 1 = true) := by
   have e := secondRound_trace.mp second
   subst e
   exact second_installed_choice

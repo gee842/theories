@@ -46,7 +46,7 @@ route of readings from where it starts, and observing the stock itself is the ro
   `Measure.no_loop_before`); at `T` the route from the stock to the record forms, and with it the
   loop stock → record → draw (`Measure.route_at`, `Measure.loop_at`). In two courses apart only on
   the stock, the record is alike up to `T` and differs by the raise across the step from `T`
-  (`Measure.registers_after`), and the draw responds to the record (`Measure.draw_responds`): the
+  (`Measure.couples_after`), and the draw responds to the record (`Measure.draw_responds`): the
   raise registers through the record, with no threshold of the stock involved.
 
 **Readings (the AI's, pending Ren).**
@@ -225,7 +225,7 @@ theorem ExchangeLaw.ReadsAt.readsInto {reads : Nat → F → C → Bool} (r : la
 it.** -/
 theorem ExchangeLaw.Through.readsInto {W : Web F C} {obs : F → C → Prop}
     {reads : Nat → F → C → Bool} (through : law.Through W obs part)
-    (cover : ∀ t h d, part h = false → W.Registers obs h d → reads t h d = true) :
+    (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → reads t h d = true) :
     law.ReadsInto part fun t h _ _ d => reads t h d :=
   (through.readsAt cover).readsInto
 
@@ -362,7 +362,7 @@ downstream of `c` exchanges alike across that step. The stock it observes lies d
 itself; anything else it registers lies downstream only by a route of readings. -/
 theorem ExchangeLaw.Through.alike_off_downstream {obs : F → C → Prop}
     {regs : Nat → F → C → Bool} (through : law.Through W obs part)
-    (cover : ∀ t h d, part h = false → W.Registers obs h d → regs t h d = true)
+    (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → regs t h d = true)
     (listed : ∀ t h d, regs t h d = true → d ∈ cs)
     (balances : L.Balances W) (balances' : L'.Balances W')
     (present : ∀ t, L.present t = L'.present t) (acts : L.ActsAlike L' part)
@@ -480,7 +480,7 @@ theorem loop_at (T : Nat) :
 measurement, one formation present, starting alike on the record and the second `d` higher on the
 stock. Up to `T` the record is alike and the stock `d` higher; across the step from `T` the second
 record rises by `d` more. -/
-theorem registers_after {T N d : Nat} {L L' : Flow Unit Bool} {W W' : Web Unit Bool}
+theorem couples_after {T N d : Nat} {L L' : Flow Unit Bool} {W W' : Web Unit Bool}
     (balances : L.Balances W) (balances' : L'.Balances W')
     (one : ∀ t, L.present t = [()]) (one' : ∀ t, L'.present t = [()])
     (follows : L.Follows (law T N) (fun _ => false) W.level)

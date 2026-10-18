@@ -22,19 +22,19 @@ courses is `Courses.reachedFrom`. This module states those laws of runs and of r
   defined through the other (`negation_each_through_other`).
 * **A bounded record fixes a run's course, exactly.** Two runs of any process with at most `N` and
   `N'` states that register alike before `N + N' - 1` register alike at every step
-  (`record_fixes`); for every `T` two runs of free branching with one state and with `T + 1` part
-  at `T` (`record_short`). Two moments of a run with at most `N` states are one state exactly where
+  (`prefix_fixes`); for every `T` two runs of free branching with one state and with `T + 1` part
+  at `T` (`prefix_short`). Two moments of a run with at most `N` states are one state exactly where
   what is registered from them agrees for `N + N - 1` steps (`sameAhead_iff_below`), and for
   `N - 1` steps, with the values decided (`sameAhead_iff_classes`) or with no premise
   (`sameAhead_iff_within`). Moore's bound is exact on runs: for every `M` two runs of a law on
   `M + 2` positions part at `M` (`classes_exact_runs`); before Moore's step, agreement of two runs
   of a law on a list closed under it is refuted by nothing (`classes_unrefuted_runs`).
 * **Learners along runs.** The learner given the bound is refuted at no step of a run with at most
-  `N` states (`withBound_holds`); no learner can always speak sooner on runs of free branching
+  `N` states (`withBound_accords`); no learner can always speak sooner on runs of free branching
   (`withBound_earliest`), and being given the bound buys silence, not an earlier rest
-  (`rest_without_bound_refuted`). On a run whose registered course repeats, the learner over the
+  (`rest_without_bound_missed`). On a run whose registered course repeats, the learner over the
   lasso hypotheses is right from a step that is found (`rests_of_lasso`), a step no earlier than
-  cubic in the bound (`learner_rest_cubic`). Along the run of negation from `true` the learner
+  cubic in the bound (`byElimination_rest_cubic`). Along the run of negation from `true` the learner
   given two states is right from step `3` (`negation_derived`). The run of the law answering the
   learner given `N` has more than `N` states (`answer_exceeds_bound`).
 * **What a description of parts keeps along courses.** Of the whole a law's courses reach,
@@ -96,11 +96,11 @@ theorem states_iff_lasso (reg : S → R) (r : Run P) :
 
 /-- **A bounded record fixes a run's course.** Two runs whose registered courses have at most `N`
 and `N'` states and which register alike before `N + N' - 1` register alike at every step. -/
-theorem record_fixes {reg : S → R} {r r' : Run P} {N N' : Nat}
+theorem prefix_fixes {reg : S → R} {r r' : Run P} {N N' : Nat}
     (bound : StatesBelow (Parting.course reg r) N) (bound' : StatesBelow (Parting.course reg r') N')
     (agree : ∀ n, n < N + N' - 1 → reg (r.state n) = reg (r'.state n)) :
     ∀ n, reg (r.state n) = reg (r'.state n) :=
-  Identification.record_fixes bound bound' (record_congr agree)
+  Identification.prefix_fixes bound bound' (prefix_congr agree)
 
 /-- **Two moments of a run with at most `N` states are one state exactly where what is
 registered from them agrees for `N + N - 1` steps.** -/
@@ -127,16 +127,16 @@ theorem sameAhead_iff_within {reg : S → R} {r : Run P} {N : Nat}
   Identification.sameAhead_iff_within bound
 
 /-- **The learner given the bound is refuted at no step of a run with at most `N` states.** -/
-theorem withBound_holds [DecidableEq R] {reg : S → R} {r : Run P} {N : Nat}
+theorem withBound_accords [DecidableEq R] {reg : S → R} {r : Run P} {N : Nat}
     (bound : StatesBelow (Parting.course reg r) N) :
-    Holds (Identification.withBound N) (Parting.course reg r) :=
-  Identification.withBound_holds bound
+    Accords (Identification.withBound N) (Parting.course reg r) :=
+  Identification.withBound_accords bound
 
 /-- **On a run whose registered course repeats, the learner over the lasso hypotheses comes to be
 right at a step that is found.** -/
 theorem rests_of_lasso [DecidableEq R] {reg : S → R} {r : Run P} {i q : Nat}
     (repeats : Lasso (Parting.course reg r) i q) :
-    ∃ T, ∀ t, T ≤ t → Parting.RightAt (learner lassos) reg r t :=
+    ∃ T, ∀ t, T ≤ t → Parting.RightAt (byElimination lassos) reg r t :=
   Identification.rests_of_lasso repeats
 
 end AnyProcess
@@ -149,40 +149,40 @@ variable {O : Type u}
 
 /-- **The record before `T` does not fix a run's course.** Given two values, for every `T` two
 runs of free branching, one with one state and one with at most `T + 1`, part at `T`. -/
-theorem record_short {x y : O} (two : x ≠ y) (T : Nat) :
+theorem prefix_short {x y : O} (two : x ≠ y) (T : Nat) :
     ∃ q q' : Run (Parting.free O), StatesBelow (Parting.course id q) 1 ∧
       StatesBelow (Parting.course id q') (T + 1) ∧ Parting.PartAt id q q' T :=
-  match Identification.record_short two T with
+  match Identification.prefix_short two T with
   | ⟨o, o', bound, bound', same, differ⟩ =>
     ⟨Parting.freeRun o, Parting.freeRun o', bound, bound',
-     Identification.record_eq_iff.mp same, differ⟩
+     Identification.prefix_eq_iff.mp same, differ⟩
 
 /-- **No learner can always speak sooner.** Given two values, no learner refuted at no step of
 every run of free branching with at most `M + 2` states claims at step `M + M + 2` on each. -/
 theorem withBound_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
     ¬ ∀ q : Run (Parting.free O), StatesBelow (Parting.course id q) (M + 2) →
-      Holds pred (Parting.course id q) ∧ ∃ w, pred (record (Parting.course id q) (M + M + 2)) = some w :=
+      Accords pred (Parting.course id q) ∧ ∃ w, pred (prefixOf (Parting.course id q) (M + M + 2)) = some w :=
   fun all => Identification.withBound_earliest two pred M fun o bound => all (Parting.freeRun o) bound
 
 /-- **Being given the bound buys silence, not an earlier rest.** Given two values, no learner
 right at step `1` on every run of free branching with one state is refuted at no step of every
 such run with two states. -/
-theorem rest_without_bound_refuted {x y : O} (two : x ≠ y) (pred : List O → Option O) :
+theorem rest_without_bound_missed {x y : O} (two : x ≠ y) (pred : List O → Option O) :
     ¬ ((∀ q : Run (Parting.free O), StatesBelow (Parting.course id q) 1 →
         Parting.RightAt pred id q 1) ∧
       ∀ q : Run (Parting.free O), StatesBelow (Parting.course id q) 2 →
-        Holds pred (Parting.course id q)) :=
-  fun ⟨right, holds⟩ => Identification.rest_without_bound_refuted two pred
+        Accords pred (Parting.course id q)) :=
+  fun ⟨right, holds⟩ => Identification.rest_without_bound_missed two pred
     ⟨fun o bound => right (Parting.freeRun o) bound, fun o bound => holds (Parting.freeRun o) bound⟩
 
 /-- **The learner by refutation rests no earlier than a cubic step.** A step from which the
 learner over the lasso hypotheses is right along every run of free branching on two values with
 at most `N = 2m + 3` states comes after `(N³ - N) / 4`. -/
-theorem learner_rest_cubic (m : Nat) {T : Nat}
+theorem byElimination_rest_cubic (m : Nat) {T : Nat}
     (rests : ∀ q : Run (Parting.free Bool), StatesBelow (Parting.course id q) (2 * m + 3) →
-      ∀ t, T ≤ t → Parting.RightAt (learner lassos) id q t) :
+      ∀ t, T ≤ t → Parting.RightAt (byElimination lassos) id q t) :
     (2 * m + 3) * ((m + 1) * (m + 2)) < T :=
-  Identification.learner_rest_cubic m fun o bound t late => rests (Parting.freeRun o) bound t late
+  Identification.byElimination_rest_cubic m fun o bound t late => rests (Parting.freeRun o) bound t late
 
 /-- **A world answering its own learner exceeds the bound the learner is given.** Where `other`
 moves every value, the run of the law answering the learner given `N` registers more than `N`
@@ -206,7 +206,7 @@ variable {S : Type u} {R : Type w} {next : S → S}
 are alike in the frame that registers `reg`.** -/
 theorem sameAhead_iff_alike (reg : S → R) (r : Run (Law.process next)) {t t' : Nat} :
     SameAhead (Parting.course reg r) t t' ↔
-      Alike (Law.registered next reg) (Law.registered next reg) (r.state t) (r.state t') :=
+      Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state t) (r.state t') :=
   have along : ∀ n, Parting.course reg r n = reg (Law.orbit next (r.state 0) n) :=
     fun n => congrArg reg (Branching.law_run_state r n)
   have at_t : ∀ n, reg (Law.orbit next (r.state t) n) =
@@ -260,7 +260,7 @@ theorem classes_exact_runs {R : Type w} {x y : R} (two : x ≠ y) (M : Nat) :
 section Negation
 
 theorem negation_course (r : Run (Law.process not)) (start : r.state 0 = true) (n : Nat) :
-    Parting.course id r n = Negation.register n :=
+    Parting.course id r n = Negation.course n :=
   (Branching.law_run_state r n).trans (congrArg (fun s => Law.orbit not s n) start)
 
 /-- **Exactly two states along the run of negation from `true`.** -/
@@ -268,7 +268,7 @@ theorem negation_two_states (r : Run (Law.process not)) (start : r.state 0 = tru
     (¬ SameAhead (Parting.course id r) 0 1) ∧ SameAhead (Parting.course id r) 0 2 ∧
       ∀ t, SameAhead (Parting.course id r) t 0 ∨ SameAhead (Parting.course id r) t 1 :=
   have along := negation_course r start
-  have back : ∀ n, Negation.register n = Parting.course id r n := fun n => (along n).symm
+  have back : ∀ n, Negation.course n = Parting.course id r n := fun n => (along n).symm
   match Negation.two_states with
   | ⟨apart, same, each⟩ =>
     ⟨fun ahead => apart (sameAhead_congr along ahead), sameAhead_congr back same,
@@ -285,7 +285,7 @@ theorem negation_each_through_other (r : Run (Law.process not)) (start : r.state
       (SameAhead (Parting.course id r) t 1 →
         r.state t = false ∧ SameAhead (Parting.course id r) (t + 1) 0) :=
   have along := negation_course r start
-  have back : ∀ n, Negation.register n = Parting.course id r n := fun n => (along n).symm
+  have back : ∀ n, Negation.course n = Parting.course id r n := fun n => (along n).symm
   ⟨fun ahead => match (Negation.each_through_other t).1 (sameAhead_congr along ahead) with
     | ⟨value, next⟩ => ⟨(along t).trans value, sameAhead_congr back next⟩,
    fun ahead => match (Negation.each_through_other t).2 (sameAhead_congr along ahead) with
@@ -297,7 +297,7 @@ theorem negation_derived (r : Run (Law.process not)) (start : r.state 0 = true) 
     ∀ t, 3 ≤ t → Parting.RightAt (Identification.withBound 2) id r t :=
   fun t late =>
     (congrArg (Identification.withBound 2)
-        (record_congr fun n _ => negation_course r start n)).trans
+        (prefix_congr fun n _ => negation_course r start n)).trans
       ((Identification.negation_derived t late).trans
         (congrArg some (negation_course r start t).symm))
 

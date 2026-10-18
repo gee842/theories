@@ -4,7 +4,7 @@ import Becoming.Observation
 # Level coupling: where a level couples into a formation
 
 The naming study of 17-18 October (N1, study §6.2) adopted "couples into" for what
-`Web.Registers` names, in two grains: by threshold (`Web.DependsOn`) and by level (`obs`).
+`Web.CoupledInto` names, in two grains: by threshold (`Web.DependsOn`) and by level (`obs`).
 Ren agreed and asked for the instance check: "Claim and prove the instance check of coupling by
 level against Observation/Loops (study §6.2), still no renames." `obs` is a supplied relation,
 while a coupling of `Becoming.Loops` is a positive strength of an exchange law and a route of
@@ -20,8 +20,8 @@ theorem names, how the three meet. No name is changed.
   route of length one (`ExchangeLaw.RespondsTo.upstream`).
 * **Only what couples into a formation responds.** For a law reading, for each formation outside
   the part, only what it registers (`ExchangeLaw.Through`): a level it neither depends on nor
-  observes is coupled with strength zero (`ExchangeLaw.Through.respondsWithin_unregistered`), so a
-  response comes from a condition it registers (`ExchangeLaw.Through.registers_of_respondsTo`),
+  observes is coupled with strength zero (`ExchangeLaw.Through.respondsWithin_uncoupled`), so a
+  response comes from a condition it registers (`ExchangeLaw.Through.couples_of_respondsTo`),
   and is a route of reading in every schedule covering what it registers
   (`ExchangeLaw.Through.reads_of_respondsTo`, `ExchangeLaw.Through.couples_readCouplings`) and a
   route of the law's strengths restricted to that schedule
@@ -152,12 +152,12 @@ variable {law : ExchangeLaw F C} {W : Web F C} {obs : F → C → Prop} {part : 
 /-- **An unregistered level is coupled with strength zero.** For a law reading through
 registration, a level that a formation outside the part neither depends on nor observes is
 coupled into its exchange with every condition, at every step, with strength zero. -/
-theorem ExchangeLaw.Through.respondsWithin_unregistered (through : law.Through W obs part)
-    (out : part h = false) (unregistered : ¬ W.Registers obs h d) :
+theorem ExchangeLaw.Through.respondsWithin_uncoupled (through : law.Through W obs part)
+    (out : part h = false) (uncoupled : ¬ W.CoupledInto obs h d) :
     law.RespondsWithin t h c s d 0 :=
   ExchangeLaw.respondsWithin_zero_iff.mpr fun ⟨l, l', off, pos⟩ =>
-    have apart : ∀ e, W.Registers obs h e → ∀ s', ¬ (s' = s ∧ e = d) := fun _ registers _ both =>
-      unregistered (both.2 ▸ registers)
+    have apart : ∀ e, W.CoupledInto obs h e → ∀ s', ¬ (s' = s ∧ e = d) := fun _ registers _ both =>
+      uncoupled (both.2 ▸ registers)
     have alike := through h out t l l' fun s' _ =>
       ⟨⟨fun admits e requires =>
           (off s' e (apart e (Or.inl ⟨s', requires⟩) s')) ▸ admits e requires,
@@ -167,16 +167,16 @@ theorem ExchangeLaw.Through.respondsWithin_unregistered (through : law.Through W
     Nat.lt_irrefl 0 ((ExchangeLaw.exchangeGap_of_alike alike c) ▸ pos)
 
 /-- **A response comes from what couples into the formation.** -/
-theorem ExchangeLaw.Through.registers_of_respondsTo (through : law.Through W obs part)
-    (out : part h = false) (responds : law.RespondsTo t h c s d) : ¬ ¬ W.Registers obs h d :=
-  fun unregistered =>
-    ExchangeLaw.respondsWithin_zero_iff.mp (through.respondsWithin_unregistered out unregistered)
+theorem ExchangeLaw.Through.couples_of_respondsTo (through : law.Through W obs part)
+    (out : part h = false) (responds : law.RespondsTo t h c s d) : ¬ ¬ W.CoupledInto obs h d :=
+  fun uncoupled =>
+    ExchangeLaw.respondsWithin_zero_iff.mp (through.respondsWithin_uncoupled out uncoupled)
       responds
 
 /-- **A response is read in every schedule covering registration.** -/
 theorem ExchangeLaw.Through.reads_of_respondsTo {reads : Nat → F → C → Bool}
     (through : law.Through W obs part)
-    (cover : ∀ t h d, part h = false → W.Registers obs h d → reads t h d = true)
+    (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → reads t h d = true)
     (out : part h = false) (responds : law.RespondsTo t h c s d) : reads t h d = true :=
   match unread : reads t h d with
   | true => rfl
@@ -188,7 +188,7 @@ covering it, a response of a formation present outside the part, to a listed lev
 step, is a coupling of the routes of reading of `Becoming.Observation`. -/
 theorem ExchangeLaw.Through.couples_readCouplings {reads : Nat → F → C → Bool} {cs : List C}
     {present : Nat → List F} (through : law.Through W obs part)
-    (cover : ∀ t h d, part h = false → W.Registers obs h d → reads t h d = true)
+    (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → reads t h d = true)
     (responds : law.RespondsTo t h c s d) (mem : h ∈ present t) (out : part h = false)
     (le : s ≤ t) (listed : d ∈ cs) :
     Couples cs part (readCouplings fun t h _ _ d => reads t h d) present d c :=
@@ -202,7 +202,7 @@ formation present outside the part, to a listed level up to the step, is a route
 the strengths restricted to the schedule. -/
 theorem ExchangeLaw.Through.upstream_restrictInto {reads : Nat → F → C → Bool} {cs : List C}
     {present : Nat → List F} {k : Nat → F → C → Nat → C → Nat} (through : law.Through W obs part)
-    (cover : ∀ t h d, part h = false → W.Registers obs h d → reads t h d = true)
+    (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → reads t h d = true)
     (strengths : ∀ t h c s d, part h = false → s ≤ t → law.RespondsWithin t h c s d (k t h c s d))
     (responds : law.RespondsTo t h c s d) (mem : h ∈ present t) (out : part h = false)
     (le : s ≤ t) (listed : d ∈ cs) :
@@ -210,8 +210,8 @@ theorem ExchangeLaw.Through.upstream_restrictInto {reads : Nat → F → C → B
   responds.upstream ((through.readsInto cover).restrict strengths) mem out le listed
 
 /-- Histories with equal levels at a step register alike there. -/
-theorem Web.registersAlike_of_levels {g : F} {l l' : Nat → C → Nat} {s' : Nat}
-    (same : ∀ e, l s' e = l' s' e) : W.RegistersAlike obs g l l' s' :=
+theorem Web.alikeThrough_of_levels {g : F} {l l' : Nat → C → Nat} {s' : Nat}
+    (same : ∀ e, l s' e = l' s' e) : W.AlikeThrough obs g l l' s' :=
   ⟨⟨fun admits e requires => (same e) ▸ admits e requires,
     fun admits e requires => (same e).symm ▸ admits e requires⟩,
    fun e _ => same e⟩
@@ -228,7 +228,7 @@ theorem ExchangeLaw.Through.not_respondsByLevel [DecidableEq C] (through : law.T
           subst same
           exact Web.alike_of_threshold unobserved
             (fun e _ other => off _ e fun both => other both.2) threshold
-      | isFalse other => Web.registersAlike_of_levels fun e => off s' e fun both => other both.1
+      | isFalse other => Web.alikeThrough_of_levels fun e => off s' e fun both => other both.1
     Nat.lt_irrefl 0 ((ExchangeLaw.exchangeGap_of_alike alike c) ▸ pos)
 
 end Through
@@ -455,7 +455,7 @@ theorem ExchangeLaw.Through.admission_changes_of_unobserved (through : law.Throu
       | isTrue same => by
           subst same
           exact ⟨iff le, fun e seen => off _ e fun both => unobserved (both.2 ▸ seen)⟩
-      | isFalse other => Web.registersAlike_of_levels fun e => off s' e fun both => other both.1
+      | isFalse other => Web.alikeThrough_of_levels fun e => off s' e fun both => other both.1
     Nat.lt_irrefl 0 ((ExchangeLaw.exchangeGap_of_alike alike c) ▸ pos)
   ⟨match Nat.decLe s t with
     | isTrue le => le

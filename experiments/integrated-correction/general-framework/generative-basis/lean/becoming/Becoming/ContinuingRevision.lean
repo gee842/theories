@@ -316,9 +316,9 @@ theorem next_absent (n : Nat) : n+1 ∉ [n] :=
   fun h => next_ne n (singleton_member h)
 
 theorem new_available_choice (n : Nat) :
-    Learning.Training.Through (ReferencePlan.registered (installed n).work)
+    Learning.Training.Through (ReferencePlan.alikeOnInstalled (installed n).work)
       (fun x => x (n+1) = true) ∧
-    ¬ Learning.Training.Through (ReferencePlan.registered (ready n).work)
+    ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled (ready n).work)
       (fun x => x (n+1) = true) :=
   ⟨choice_at_contact (List.Mem.tail n (List.Mem.head [])),
    (new_contact_choice [n] (n+1) (next_absent n)).2⟩
@@ -373,9 +373,9 @@ theorem frozen_plan_no_return :
       .native (.perform 1 true), .renew] = none := rfl
 
 theorem retired_choice (n : Nat) :
-    Learning.Training.Through (ReferencePlan.registered (installed n).work)
+    Learning.Training.Through (ReferencePlan.alikeOnInstalled (installed n).work)
       (fun x => x n = true) ∧
-    ¬ Learning.Training.Through (ReferencePlan.registered (ready (n+1)).work)
+    ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled (ready (n+1)).work)
       (fun x => x n = true) := by
   have absent : n ∉ [n+1] := fun h => next_ne n (singleton_member h).symm
   exact ⟨choice_at_contact (List.Mem.head _), (new_contact_choice [n+1] n absent).2⟩

@@ -31,10 +31,10 @@ theorem answer_alike_beyond_response
     (balanced : L.Balances W) (balanced' : L'.Balances W')
     (present : ∀ s, L.present s = L'.present s)
     (start : ∀ h, ¬ L.WithinResponse L' W obs part h →
-      ∀ c, W.Registers obs h c → W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part)
+      ∀ c, W.CoupledInto obs h c → W.level 0 c = W'.level 0 c)
+    (responds : L.RespondsThroughCoupling L' W W' obs part)
     (read : (Nat → C → Nat) → Option Bool)
-    (through : ∀ l l', W.RegistersAlikeUpTo obs g l l' t → read l = read l')
+    (through : ∀ l l', W.AlikeThroughUpTo obs g l l' t → read l = read l')
     (beyond : ¬ L.WithinResponse L' W obs part g) :
     read W.level = read W'.level :=
   through _ _ fun s _ => Flow.alike_beyond_response
@@ -47,10 +47,10 @@ theorem different_answers_not_beyond
     (balanced : L.Balances W) (balanced' : L'.Balances W')
     (present : ∀ s, L.present s = L'.present s)
     (start : ∀ h, ¬ L.WithinResponse L' W obs part h →
-      ∀ c, W.Registers obs h c → W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part)
+      ∀ c, W.CoupledInto obs h c → W.level 0 c = W'.level 0 c)
+    (responds : L.RespondsThroughCoupling L' W W' obs part)
     (read : (Nat → C → Nat) → Option Bool)
-    (through : ∀ l l', W.RegistersAlikeUpTo obs g l l' t → read l = read l')
+    (through : ∀ l l', W.AlikeThroughUpTo obs g l l' t → read l = read l')
     (different : read W.level ≠ read W'.level) :
     ¬ ¬ L.WithinResponse L' W obs part g :=
   fun beyond => different (answer_alike_beyond_response
@@ -61,11 +61,11 @@ theorem answer_alike_beyond_law {law : ExchangeLaw F C}
     (balanced : L.Balances W) (balanced' : L'.Balances W')
     (present : ∀ s, L.present s = L'.present s)
     (start : ∀ h, ¬ L.WithinResponse L' W obs part h →
-      ∀ c, W.Registers obs h c → W.level 0 c = W'.level 0 c)
+      ∀ c, W.CoupledInto obs h c → W.level 0 c = W'.level 0 c)
     (lawThrough : law.Through W obs part)
     (follows : L.Follows law part W.level) (follows' : L'.Follows law part W'.level)
     (read : (Nat → C → Nat) → Option Bool)
-    (through : ∀ l l', W.RegistersAlikeUpTo obs g l l' t → read l = read l')
+    (through : ∀ l l', W.AlikeThroughUpTo obs g l l' t → read l = read l')
     (beyond : ¬ L.WithinResponse L' W obs part g) :
     read W.level = read W'.level :=
   answer_alike_beyond_response balanced balanced' present start
@@ -91,16 +91,16 @@ def regionWithResidual (region : F → Prop) : Option F → Prop
   | none => True
   | some h => region h
 
-theorem residual_registers_nothing (c : C) :
-    ¬ W.withRefinement.Registers (observeWithResidual obs) none c := by
+theorem residual_couples_nothing (c : C) :
+    ¬ W.withRefinement.CoupledInto (observeWithResidual obs) none c := by
   intro registers
   rcases registers with ⟨_, impossible⟩ | impossible <;> exact impossible
 
 /-- Every original closed region remains closed after counting an arbitrary
 imbalance, when it includes the added relatum but that relatum registers nothing. -/
 theorem closed_with_imbalance {region : F → Prop} (V : Web F C)
-    (closed : ClosedUnder (L.RegisteredFrom W obs) region) :
-    ClosedUnder ((L.withImbalance V).RegisteredFrom W.withRefinement
+    (closed : ClosedUnder (L.CoupledFrom W obs) region) :
+    ClosedUnder ((L.withImbalance V).CoupledFrom W.withRefinement
       (observeWithResidual obs)) (regionWithResidual region) := by
   intro g h member edge
   cases h with
@@ -108,7 +108,7 @@ theorem closed_with_imbalance {region : F → Prop} (V : Web F C)
   | some h =>
     rcases edge with ⟨c, registers, t, present, positive⟩
     cases g with
-    | none => exact False.elim (residual_registers_nothing c registers)
+    | none => exact False.elim (residual_couples_nothing c registers)
     | some g =>
       apply closed g h member
       refine ⟨c, registers, t, ?_, positive⟩
@@ -132,13 +132,13 @@ responds alike, and the original closed-region theorem applies. -/
 theorem alike_with_common_imbalance
     (present : ∀ s, L.present s = L'.present s)
     (start : ∀ h, ¬ L.WithinResponse L' W obs part h →
-      ∀ c, W.Registers obs h c → W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part)
+      ∀ c, W.CoupledInto obs h c → W.level 0 c = W'.level 0 c)
+    (responds : L.RespondsThroughCoupling L' W W' obs part)
     (residual : ∀ s c,
       (L.withImbalance W).take s none c = (L'.withImbalance W').take s none c ∧
       (L.withImbalance W).give s none c = (L'.withImbalance W').give s none c) :
     ∀ s h, ¬ L.WithinResponse L' W obs part h →
-      W.RegistersAlike obs h W.level W'.level s := by
+      W.AlikeThrough obs h W.level W'.level s := by
   let region : F → Prop := fun h => ¬ L.WithinResponse L' W obs part h
   have closed := Flow.beyond_response_closed (L := L) (L' := L') (W := W)
     (obs := obs) (part := part)
@@ -153,7 +153,7 @@ theorem alike_with_common_imbalance
     (by
       intro h member c registers
       cases h with
-      | none => exact False.elim (residual_registers_nothing c registers)
+      | none => exact False.elim (residual_couples_nothing c registers)
       | some h => exact start h member c registers)
     (by
       intro h member s alike g c _ _
@@ -167,13 +167,13 @@ unaccounted change. No reach decision and no absolute balance are assumed. -/
 theorem answer_alike_with_common_imbalance
     (present : ∀ s, L.present s = L'.present s)
     (start : ∀ h, ¬ L.WithinResponse L' W obs part h →
-      ∀ c, W.Registers obs h c → W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part)
+      ∀ c, W.CoupledInto obs h c → W.level 0 c = W'.level 0 c)
+    (responds : L.RespondsThroughCoupling L' W W' obs part)
     (residual : ∀ s c,
       (L.withImbalance W).take s none c = (L'.withImbalance W').take s none c ∧
       (L.withImbalance W).give s none c = (L'.withImbalance W').give s none c)
     (read : (Nat → C → Nat) → Option Bool)
-    (through : ∀ l l', W.RegistersAlikeUpTo obs g l l' t → read l = read l')
+    (through : ∀ l l', W.AlikeThroughUpTo obs g l l' t → read l = read l')
     (beyond : ¬ L.WithinResponse L' W obs part g) : read W.level = read W'.level :=
   through _ _ fun s _ => alike_with_common_imbalance present start responds residual s g beyond
 
@@ -190,12 +190,12 @@ variable {X : Type} (xs : List X) (weight : X → Nat)
     (present : ∀ x ∈ xs, ∀ s, (left x).present s = (right x).present s)
     (start : ∀ x ∈ xs, ∀ h,
       ¬ (left x).WithinResponse (right x) (web x) (observe x) (vary x) h →
-      ∀ c, (web x).Registers (observe x) h c → (web x).level 0 c = (web' x).level 0 c)
+      ∀ c, (web x).CoupledInto (observe x) h c → (web x).level 0 c = (web' x).level 0 c)
     (lawThrough : ∀ x ∈ xs, (law x).Through (web x) (observe x) (vary x))
     (follows : ∀ x ∈ xs, (left x).Follows (law x) (vary x) (web x).level)
     (follows' : ∀ x ∈ xs, (right x).Follows (law x) (vary x) (web' x).level)
     (through : ∀ x ∈ xs, ∀ l l',
-      (web x).RegistersAlikeUpTo (observe x) (reader x) l l' (time x) → read x l = read x l')
+      (web x).AlikeThroughUpTo (observe x) (reader x) l l' (time x) → read x l = read x l')
 
 include balanced balanced' present start lawThrough follows follows' through
 
@@ -296,7 +296,7 @@ theorem follows (b : Bool) : (flow b).Follows law (fun h => h) (web b).level := 
   intro h out t c
   cases h <;> simp_all [flow, law]
 
-theorem read_through : ∀ l l', (web false).RegistersAlikeUpTo
+theorem read_through : ∀ l l', (web false).AlikeThroughUpTo
     (fun _ _ => True) false l l' 1 → read l = read l' :=
   fun _ _ alike => congrArg (fun n => some (decide (0 < n))) ((alike 1 (Nat.le_refl 1)).2 () trivial)
 
@@ -315,7 +315,7 @@ theorem correct_answers : read (web false).level = some false ∧
 /-- Reach alone cannot force evidence to be used: a constant answering rule passes
 through the same registration but errs on the true alternative. -/
 theorem ignored_signal :
-    (∀ l l', (web false).RegistersAlikeUpTo (fun _ _ => True) false l l' 1 →
+    (∀ l l', (web false).AlikeThroughUpTo (fun _ _ => True) false l l' 1 →
       (fun _ : Nat → Unit → Nat => some false) l = (fun _ => some false) l') ∧
     wrong true ((fun _ : Nat → Unit → Nat => some false) (web true).level) = 1 :=
   ⟨fun _ _ _ => rfl, rfl⟩
@@ -385,12 +385,12 @@ theorem counted_residual_differs :
 it registers alike initially but gives differently immediately. Balance by accounting
 therefore cannot discharge the whole inquiry mechanism without further explanation. -/
 theorem counted_residual_not_response :
-    ¬ ((flow false).withImbalance (web false)).RespondsThroughRegistration
+    ¬ ((flow false).withImbalance (web false)).RespondsThroughCoupling
       ((flow false).withImbalance (web true)) (web false).withRefinement
       (web true).withRefinement (fun _ _ => True)
       (fun h => match h with | none => false | some k => k) := by
   intro responds
-  have alike : (web false).withRefinement.RegistersAlikeUpTo (fun _ _ => True)
+  have alike : (web false).withRefinement.AlikeThroughUpTo (fun _ _ => True)
       none (web false).withRefinement.level (web true).withRefinement.level 0 := by
     intro s le
     have zero : s = 0 := Nat.le_zero.mp le
@@ -448,11 +448,11 @@ variable {F C X : Type} (xs : List X) (weight : X → Nat)
     (present : ∀ x ∈ xs, ∀ t, t < time x → (left x).present t = (right x).present t)
     (start : ∀ x ∈ xs, ∀ c, (web x).level 0 c = (web' x).level 0 c)
     (responds : ∀ x ∈ xs, ∀ t, t < time x → ∀ h, ¬ source x t h →
-      (web x).RegistersAlikeUpTo (observe x) h (web x).level (web' x).level t →
+      (web x).AlikeThroughUpTo (observe x) h (web x).level (web' x).level t →
       ∀ c, (left x).take t h c = (right x).take t h c ∧
         (left x).give t h c = (right x).give t h c)
     (through : ∀ x ∈ xs, ∀ l l',
-      (web x).RegistersAlikeUpTo (observe x) (reader x) l l' (time x) → read x l = read x l')
+      (web x).AlikeThroughUpTo (observe x) (reader x) l l' (time x) → read x l = read x l')
 
 include balanced balanced' present start responds through
 

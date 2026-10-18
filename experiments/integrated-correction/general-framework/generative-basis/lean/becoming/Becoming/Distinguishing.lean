@@ -20,7 +20,7 @@ them, with no premise:
 * **Moves that carry the registration.** A law whose single move at each configuration is named
   by what is registered there, with nothing claimed (`Law.labelled`), is alike to depth `k`
   exactly where the registered futures agree for `k` steps (`Law.alikeTo_labelled_iff`): one step
-  fewer than when the registration is claimed (`alikeTo_registered_iff` of `Becoming.Likeness`).
+  fewer than when the registration is claimed (`alikeTo_frameBy_iff` of `Becoming.Likeness`).
   Every history with at most `N` states is the course of a law on `N` configurations
   (`Law.realized_within`), so of such a frame, finite and decided (`Law.labelled_finite`).
 * **The depths are exact for every pair.** For every `N` and `N'` there are such frames of `N`
@@ -29,11 +29,11 @@ them, with no premise:
   `alike_iff_alikeTo_across` is exact, as `N - 1` within one frame is (`EndOfPath.classes_exact`).
   Read through registrations, two worlds of `N` and `N'` configurations have configurations whose
   registered futures agree for `N + N' - 2` steps and which do not pass the same tests
-  (`registered_across_exact`): `N + N' - 1` of `Law.sameTests_iff_below_across` is exact too. Both
+  (`frameBy_across_exact`): `N + N' - 1` of `Law.sameTests_iff_below_across` is exact too. Both
   come from the histories of `Identification.bounded_agree_exact`. Within one world `N - 1` is
   exact too: on the path of `N` places to a last one that stays, registering only whether the
   last is reached, the first two places agree for `N - 2` steps and do not pass the same tests
-  (`registered_within_exact`).
+  (`frameBy_within_exact`).
 
 The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D34):
 what tells configurations apart within a bounded world is a finite record, and its length is set by
@@ -54,7 +54,7 @@ variable {S : Type u} {S' : Type u'} {R : Type w}
 
 /-- Agreeing at every step is a bisimulation between two laws read through registrations. -/
 theorem agree_bisimulation {next : S → S} {next' : S' → S'} {o : S → R} {o' : S' → R} :
-    Bisimulation (Law.registered next o) (Law.registered next' o')
+    Bisimulation (Law.frameBy next o) (Law.frameBy next' o')
       (fun t t' => ∀ n, o (Law.orbit next t n) = o' (Law.orbit next' t' n)) :=
   fun s s' same =>
     have ahead : ∀ n, o (Law.orbit next (next s) n) = o' (Law.orbit next' (next' s') n) := fun n =>
@@ -72,9 +72,9 @@ theorem agree_bisimulation {next : S → S} {next' : S' → S'} {o : S → R} {o
 at every step.** -/
 theorem alike_iff_agree {next : S → S} {next' : S' → S'} {o : S → R} {o' : S' → R} {s : S}
     {s' : S'} :
-    Alike (Law.registered next o) (Law.registered next' o') s s' ↔
+    Alike (Law.frameBy next o) (Law.frameBy next' o') s s' ↔
       ∀ n, o (Law.orbit next s n) = o' (Law.orbit next' s' n) :=
-  ⟨fun alike n => alikeTo_registered_iff.mp (alike.alikeTo n) n (Nat.le_refl n),
+  ⟨fun alike n => alikeTo_frameBy_iff.mp (alike.alikeTo n) n (Nat.le_refl n),
    fun agree => ⟨_, agree_bisimulation, agree⟩⟩
 
 /-- **The tests are a bounded record.** Under a determined law read through a registration, in a
@@ -84,9 +84,9 @@ of `Becoming.Histories`), likeness is the same registered future (`Law.alike_iff
 that is agreement for `N - 1` steps (`Law.sameFuture_iff_within`). -/
 theorem sameTests_iff_within {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l)
     {s s' : S} :
-    SameTests (Law.registered next o) (Law.registered next o) s s' ↔
+    SameTests (Law.frameBy next o) (Law.frameBy next o) s s' ↔
       ∀ n, n < l.length - 1 → o (Law.orbit next s n) = o (Law.orbit next s' n) :=
-  (Determined.alike_iff_sameTests (Law.registered_determined next o)).symm.trans
+  (Determined.alike_iff_sameTests (Law.frameBy_determined next o)).symm.trans
     (Law.alike_iff_sameFuture.trans
       (Law.sameFuture_iff_within (fun s _ => world (next s)) (world s) (world s')))
 
@@ -96,10 +96,10 @@ configurations pass the same tests exactly where their registered futures agree 
 `N + N' - 1` steps (`Identification.bounded_agree`). -/
 theorem sameTests_iff_below_across {next : S → S} {next' : S' → S'} {o : S → R} {o' : S' → R}
     {l : List S} {l' : List S'} (world : ∀ s, s ∈ l) (world' : ∀ s', s' ∈ l') {s : S} {s' : S'} :
-    SameTests (Law.registered next o) (Law.registered next' o') s s' ↔
+    SameTests (Law.frameBy next o) (Law.frameBy next' o') s s' ↔
       ∀ n, n < l.length + l'.length - 1 → o (Law.orbit next s n) = o' (Law.orbit next' s' n) :=
-  (alike_iff_sameTests (Determined.at (Law.registered_determined next o))
-    (Determined.at (Law.registered_determined next' o'))).symm.trans
+  (alike_iff_sameTests (Determined.at (Law.frameBy_determined next o))
+    (Determined.at (Law.frameBy_determined next' o'))).symm.trans
     (alike_iff_agree.trans
       ⟨fun agree n _ => agree n, fun agree =>
         Identification.bounded_agree (statesBelow_held (fun s _ => world (next s)) (world s) o)
@@ -209,7 +209,7 @@ theorem labelled_across_exact (M M' : Nat) :
        length_finBelow (M + 1) (M + 1) (Nat.le_refl _),
        length_finBelow (M' + 1) (M' + 1) (Nat.le_refl _),
        Law.alikeTo_labelled_iff.mpr fun n early =>
-         (course n).trans ((Identification.record_eq_iff.mp shared n early).trans (course' n).symm),
+         (course n).trans ((Identification.prefix_eq_iff.mp shared n early).trans (course' n).symm),
        fun alike => differ ((course (M + M')).symm.trans
          ((Law.alikeTo_labelled_iff.mp (alike.alikeTo (M + M' + 1)) (M + M')
            (Nat.lt_succ_self _)).trans (course' (M + M'))))⟩
@@ -218,22 +218,22 @@ theorem labelled_across_exact (M M' : Nat) :
 `N = M + 1` and `N' = M' + 1` there are laws on `N` and `N'` configurations, read through
 registrations, with configurations whose registered futures agree for `N + N' - 2` steps and which
 do not pass the same tests: the length of `Law.sameTests_iff_below_across` is exact. -/
-theorem registered_across_exact (M M' : Nat) :
+theorem frameBy_across_exact (M M' : Nat) :
     ∃ (next : Fin (M + 1) → Fin (M + 1)) (o : Fin (M + 1) → Bool)
       (next' : Fin (M' + 1) → Fin (M' + 1)) (o' : Fin (M' + 1) → Bool)
       (s : Fin (M + 1)) (s' : Fin (M' + 1)),
       (∀ n, n < M + M' → o (Law.orbit next s n) = o' (Law.orbit next' s' n)) ∧
-      ¬ SameTests (Law.registered next o) (Law.registered next' o') s s' :=
+      ¬ SameTests (Law.frameBy next o) (Law.frameBy next' o') s s' :=
   match Identification.bounded_agree_exact (x := true) (y := false) (fun same => Bool.noConfusion same) M M' with
   | ⟨_, _, bound, bound', shared, differ⟩ =>
     match Law.realized_within bound, Law.realized_within bound' with
     | ⟨next, o, s, course⟩, ⟨next', o', s', course'⟩ =>
       ⟨next, o, next', o', s, s', fun n early =>
-         (course n).trans ((Identification.record_eq_iff.mp shared n early).trans (course' n).symm),
+         (course n).trans ((Identification.prefix_eq_iff.mp shared n early).trans (course' n).symm),
        fun same => differ ((course (M + M')).symm.trans
          ((Law.alike_iff_agree.mp ((alike_iff_sameTests
-            (Determined.at (Law.registered_determined next o))
-            (Determined.at (Law.registered_determined next' o'))).mpr same) (M + M')).trans
+            (Determined.at (Law.frameBy_determined next o))
+            (Determined.at (Law.frameBy_determined next' o'))).mpr same) (M + M')).trans
            (course' (M + M'))))⟩
 
 /-- **Within one world, `N - 1` is exact for the tests.** For every `N = M + 2` there is a law on
@@ -241,12 +241,12 @@ theorem registered_across_exact (M M' : Nat) :
 configurations whose registered futures agree for `N - 2` steps and which do not pass the same
 tests: the length `N - 1` of `Law.sameTests_iff_within` is exact. The law is the path of `N`
 places to a last one that stays, registering only whether the last is reached. -/
-theorem registered_within_exact (M : Nat) :
+theorem frameBy_within_exact (M : Nat) :
     ∃ (next : Fin (M + 2) → Fin (M + 2)) (o : Fin (M + 2) → Bool) (s s' : Fin (M + 2)),
       (finBelow (M + 2) (M + 2) (Nat.le_refl _)).length = M + 2 ∧
       (∀ t, t ∈ finBelow (M + 2) (M + 2) (Nat.le_refl _)) ∧
       (∀ n, n < M → o (Law.orbit next s n) = o (Law.orbit next s' n)) ∧
-      ¬ SameTests (Law.registered next o) (Law.registered next o) s s' :=
+      ¬ SameTests (Law.frameBy next o) (Law.frameBy next o) s s' :=
   have stays : ∀ p, Learning.lassoNext (M + 1) 0 p < M + 2 := fun p =>
     match Nat.lt_or_ge p (M + 1) with
     | .inl inside => Eq.subst (motive := fun v => v < M + 2)

@@ -21,7 +21,7 @@ No premise is added; every declaration has an empty axiom report.
   claims makes configurations go alike** (`carries_law_alike_iff`). Some process on the
   descriptions, determined up to likeness under the claims, admits every step read through `π`
   exactly when some equivalence on descriptions relates only descriptions realizing the same
-  claims (`Registers`) and takes configurations whose descriptions it relates, by one move, to
+  claims (`RespectsClaims`) and takes configurations whose descriptions it relates, by one move, to
   configurations whose descriptions it relates (`GoAlikeUnder`). The process is the image closed
   under the equivalence (`imageUnder`); the equivalence, from a carrying process, is likeness in
   it. Where the claims name the descriptions, the only such equivalence is equality, and this is
@@ -81,7 +81,7 @@ No premise is added; every declaration has an empty axiom report.
   one frame `N - 1` is exact: on a path of `N` places ending where nothing steps, the first two
   places are alike to depth `N - 2` and are not alike (`EndOfPath.classes_exact`). For determined
   laws read through registrations, likeness to depth `k` is agreement for `k + 1` steps
-  (`alikeTo_registered_iff`). There one step less suffices: `N - 2` within one world
+  (`alikeTo_frameBy_iff`). There one step less suffices: `N - 2` within one world
   (`Law.sameFuture_iff_classes` of `Becoming.Identification`) and `N + N' - 2` across two
   (`Identification.bounded_agree`), each exact for laws and courses
   (`Law.sameFuture_classes_exact`, `Identification.bounded_agree_exact`). A frame's extra step is
@@ -155,9 +155,9 @@ section Carrying
 variable {S : Type u} {A : Type v} {K : Type u'} {D : Type w'}
 
 /-- `E` registers the claims: descriptions it relates realize the same claims. This is a
-relation on descriptions respecting the claims; `Web.Registers` of `Becoming.Testing` is another
+relation on descriptions respecting the claims; `Web.CoupledInto` of `Becoming.Testing` is another
 sense, a condition entering what registers in a formation (its dependence or its observation). -/
-def Registers (claims : K → D → Prop) (E : K → K → Prop) : Prop :=
+def RespectsClaims (claims : K → D → Prop) (E : K → K → Prop) : Prop :=
   ∀ k k', E k k' → ∀ d, claims k d ↔ claims k' d
 
 /-- Configurations whose descriptions `E` relates go, by one move, to configurations whose
@@ -178,7 +178,7 @@ theorem factors_imageUnder (P : Process S A) (π : S → K) {E : K → K → Pro
 
 /-- An equivalence registering the claims is a bisimulation of the image closed under it. -/
 theorem imageUnder_bisimulation (P : Process S A) (π : S → K) {claims : K → D → Prop}
-    {E : K → K → Prop} (eqv : Equivalence E) (registers : Registers claims E) :
+    {E : K → K → Prop} (eqv : Equivalence E) (registers : RespectsClaims claims E) :
     Bisimulation (⟨imageUnder P π E, claims⟩ : Frame K A D) ⟨imageUnder P π E, claims⟩ E :=
   fun k k' related =>
     ⟨registers k k' related,
@@ -190,7 +190,7 @@ theorem imageUnder_bisimulation (P : Process S A) (π : S → K) {claims : K →
 /-- Where an equivalence registering the claims makes configurations go alike, the image closed
 under it is determined up to likeness everywhere. -/
 theorem imageUnder_determinedAt (P : Process S A) (π : S → K) {claims : K → D → Prop}
-    {E : K → K → Prop} (eqv : Equivalence E) (registers : Registers claims E)
+    {E : K → K → Prop} (eqv : Equivalence E) (registers : RespectsClaims claims E)
     (go : GoAlikeUnder P π E) : ∀ k, DeterminedAt (⟨imageUnder P π E, claims⟩ : Frame K A D) k :=
   fun _ a _ _ ⟨s, u, at_k, step, to⟩ ⟨s', u', at_k', step', to'⟩ =>
     ⟨E, imageUnder_bisimulation P π eqv registers,
@@ -202,7 +202,7 @@ theorem alike_equivalence (F : Frame K A D) : Equivalence (Alike F F) :=
   ⟨Alike.refl F, Alike.symm, Alike.trans⟩
 
 /-- Likeness in a frame registers its claims. -/
-theorem alike_registers (F : Frame K A D) : Registers F.realized (Alike F F) :=
+theorem alike_respectsClaims (F : Frame K A D) : RespectsClaims F.realized (Alike F F) :=
   fun _ _ alike => alike.realized
 
 /-- **A description carries a law up to likeness exactly where some equivalence registering the
@@ -213,9 +213,9 @@ whose descriptions it relates, by one move, to configurations whose descriptions
 theorem carries_law_alike_iff {P : Process S A} {π : S → K} {claims : K → D → Prop} :
     (∃ Q : Process K A, (∀ k, DeterminedAt (⟨Q, claims⟩ : Frame K A D) k) ∧
         FactorsThrough P π Q) ↔
-      ∃ E : K → K → Prop, Equivalence E ∧ Registers claims E ∧ GoAlikeUnder P π E :=
+      ∃ E : K → K → Prop, Equivalence E ∧ RespectsClaims claims E ∧ GoAlikeUnder P π E :=
   ⟨fun ⟨Q, determined, factors⟩ =>
-    ⟨Alike (⟨Q, claims⟩ : Frame K A D) ⟨Q, claims⟩, alike_equivalence _, alike_registers _,
+    ⟨Alike (⟨Q, claims⟩ : Frame K A D) ⟨Q, claims⟩, alike_equivalence _, alike_respectsClaims _,
      fun s s' a u u' alike step step' =>
        match alike.step (factors s a u step) with
        | ⟨κ, to, joined⟩ => joined.trans (determined (π s') a κ (π u') to (factors s' a u' step'))⟩,
@@ -384,7 +384,7 @@ to likeness no outcome of a move at a description the run has not taken it at, u
 the image closed under the equivalence: `Run.not_fixesThrough_of_goAlike` up to likeness. -/
 theorem Run.not_fixesThroughAlike_of_goAlikeUnder {K : Type u'} {D : Type w'} {P : Process S A}
     (r : Run P) {π : S → K} {claims : K → D → Prop} {E : K → K → Prop} (eqv : Equivalence E)
-    (registers : Registers claims E) (go : GoAlikeUnder P π E) {t : Nat} {k : K} {a : A}
+    (registers : RespectsClaims claims E) (go : GoAlikeUnder P π E) {t : Nat} {k : K} {a : A}
     (untaken : ¬ r.TakesThroughAlike π (imageUnder P π E) claims t k a) {x y : K} {d : D}
     (here : claims x d) (not_here : ¬ claims y d) : ¬ ∃ κ, r.FixesThroughAlike π claims t k a κ :=
   r.not_fixesThroughAlike_of_untaken (imageUnder_determinedAt P π eqv registers go)
@@ -1091,9 +1091,9 @@ theorem alike_iff_alikeTo_across (moves : ∃ l : List A, ∀ a, a ∈ l)
 
 /-- **For determined laws read through registrations, likeness to depth `k` is agreement for
 `k + 1` steps.** -/
-theorem alikeTo_registered_iff {R : Type w} {next : S → S} {next' : S' → S'} {o : S → R}
+theorem alikeTo_frameBy_iff {R : Type w} {next : S → S} {next' : S' → S'} {o : S → R}
     {o' : S' → R} : ∀ {k : Nat} {s : S} {s' : S'},
-    AlikeTo (Law.registered next o) (Law.registered next' o') k s s' ↔
+    AlikeTo (Law.frameBy next o) (Law.frameBy next' o') k s s' ↔
       ∀ n, n ≤ k → o (Law.orbit next s n) = o' (Law.orbit next' s' n)
   | 0, s, _ =>
     ⟨fun alike n le => match n, le with
@@ -1107,22 +1107,22 @@ theorem alikeTo_registered_iff {R : Type w} {next : S → S} {next' : S' → S'}
       | m + 1, le => match forth () (next s) rfl with
         | ⟨_, step', joined⟩ =>
           (congrArg o (Law.orbit_shift next s m)).trans
-            ((alikeTo_registered_iff.mp
-                (Eq.subst (motive := fun t' => AlikeTo (Law.registered next o)
-                  (Law.registered next' o') k (next s) t') (step' : _ = next' s') joined)
+            ((alikeTo_frameBy_iff.mp
+                (Eq.subst (motive := fun t' => AlikeTo (Law.frameBy next o)
+                  (Law.frameBy next' o') k (next s) t') (step' : _ = next' s') joined)
                 m (Nat.le_of_succ_le_succ le)).trans
               (congrArg o' (Law.orbit_shift next' s' m)).symm),
      fun agree =>
-      have ahead : AlikeTo (Law.registered next o) (Law.registered next' o') k (next s) (next' s') :=
-        alikeTo_registered_iff.mpr fun m le =>
+      have ahead : AlikeTo (Law.frameBy next o) (Law.frameBy next' o') k (next s) (next' s') :=
+        alikeTo_frameBy_iff.mpr fun m le =>
           (congrArg o (Law.orbit_shift next s m)).symm.trans
             ((agree (m + 1) (Nat.succ_le_succ le)).trans (congrArg o' (Law.orbit_shift next' s' m)))
       ⟨fun _ => ⟨fun at_s => (agree 0 (Nat.zero_le _)).symm.trans at_s,
          fun at_s' => (agree 0 (Nat.zero_le _)).trans at_s'⟩,
-       fun _ t step => ⟨next' s', rfl, Eq.subst (motive := fun v => AlikeTo (Law.registered next o)
-         (Law.registered next' o') k v (next' s')) (step : t = next s).symm ahead⟩,
-       fun _ t' step' => ⟨next s, rfl, Eq.subst (motive := fun v => AlikeTo (Law.registered next o)
-         (Law.registered next' o') k (next s) v) (step' : t' = next' s').symm ahead⟩⟩⟩
+       fun _ t step => ⟨next' s', rfl, Eq.subst (motive := fun v => AlikeTo (Law.frameBy next o)
+         (Law.frameBy next' o') k v (next' s')) (step : t = next s).symm ahead⟩,
+       fun _ t' step' => ⟨next s, rfl, Eq.subst (motive := fun v => AlikeTo (Law.frameBy next o)
+         (Law.frameBy next' o') k (next s) v) (step' : t' = next' s').symm ahead⟩⟩⟩
 
 end Classes
 

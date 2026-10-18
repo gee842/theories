@@ -41,7 +41,7 @@ that keeping is carried by plans whose later moves follow what was registered.
   (`Certificate.keptFor`), the viability kernel among them (`Kernel.keptFor`).
 * **What is registered matters.** In `Matching`, a hidden bit must be matched by the second
   move. Registering the bit, the starts are kept for two steps; registering nothing, they are
-  not (`Matching.registration_matters`).
+  not (`Matching.keeping_matters`).
 * **Joint plans.** Two plans for two parts run together as one plan of pairs (`Plan.zip`). Where
   every joint step projects onto a step of each part, the joint class lies over classes the
   parts' plans keep, and the joint moves are usable throughout (`Plan.Compatible`), the joint
@@ -199,7 +199,7 @@ takes it to its registration with the first step taken. -/
 def process : Process (O × Bool) (Option α) := ⟨fun s _ t => t = (s.1, true)⟩
 
 /-- A step registers the registration it reaches. -/
-def registers : O × Bool → Option α → O × Bool → O := fun _ _ t => t.1
+def keeps : O × Bool → Option α → O × Bool → O := fun _ _ t => t.1
 
 /-- Before the first step every move is allowed; after it, only a value related to the
 registration. -/
@@ -211,13 +211,13 @@ def start : O × Bool → Prop := fun s => s.2 = false
 
 /-- Where each registration has a related value, the starts are kept for two steps. -/
 theorem kept (each : ∀ o, ∃ x, R o x) :
-    KeptFor process registers (fun _ => True) (admits R) 2 start :=
+    KeptFor process keeps (fun _ => True) (admits R) 2 start :=
   ⟨fun _ _ => trivial, none, fun s held => ⟨Or.inl held, (s.1, true), rfl⟩,
    fun o => ⟨fun _ _ => trivial,
      match each o with
      | ⟨x, related⟩ => ⟨some x, fun t seen => match seen with
-         | ⟨_, _, _, registered⟩ =>
-           ⟨Or.inr ⟨x, rfl, Eq.subst (motive := fun z => R z x) registered.symm related⟩,
+         | ⟨_, _, _, keepsBit⟩ =>
+           ⟨Or.inr ⟨x, rfl, Eq.subst (motive := fun z => R z x) keepsBit.symm related⟩,
             (t.1, true), rfl⟩,
          fun _ _ _ => trivial⟩⟩⟩
 
@@ -225,7 +225,7 @@ variable {R}
 
 /-- A plan keeping the starts for two steps answers each registration with a related value. -/
 theorem related {p : Plan (Option α) O 2}
-    (keeps : p.Keeps process registers (fun _ => True) (admits R) start) (o : O) :
+    (keeps : p.Keeps process keeps (fun _ => True) (admits R) start) (o : O) :
     ∃ x, (p.rest o).first = some x ∧ R o x :=
   match ((keeps.rest o).usable_first (o, true) ⟨(o, false), rfl, rfl, rfl⟩).1 with
   | .inl wrong => Bool.noConfusion wrong
@@ -233,7 +233,7 @@ theorem related {p : Plan (Option α) O 2}
 
 /-- The answer such a plan gives is a value. -/
 theorem answered {p : Plan (Option α) O 2}
-    (keeps : p.Keeps process registers (fun _ => True) (admits R) start) (o : O) :
+    (keeps : p.Keeps process keeps (fun _ => True) (admits R) start) (o : O) :
     ((p.rest o).first).isSome = true :=
   match related keeps o with
   | ⟨_, same, _⟩ => Eq.subst (motive := fun z => z.isSome = true) same.symm rfl
@@ -249,7 +249,7 @@ theorem plans_iff_choice {O : Type u} :
         KeptFor P sense guard allowed n B → ∃ p : Plan A O n, p.Keeps P sense guard allowed B) ↔
       ∀ α : Type u, ChoiceOver O α :=
   ⟨fun plans α R each =>
-    match plans (O × Bool) (Option α) Answering.process Answering.registers (fun _ => True)
+    match plans (O × Bool) (Option α) Answering.process Answering.keeps (fun _ => True)
         (Answering.admits R) 2 Answering.start (Answering.kept R each) with
     | ⟨p, keeps⟩ =>
       ⟨fun o => ((p.rest o).first).get (Answering.answered keeps o),
@@ -264,7 +264,7 @@ theorem plans_iff_choice {O : Type u} :
 /-- What is seen from a narrower class is seen from a wider one. -/
 theorem Seen.mono {B C : S → Prop} (narrower : ∀ s, B s → C s) {a : A} {o : O} {t : S} :
     Seen P sense B a o t → Seen P sense C a o t
-  | ⟨s, held, step, registered⟩ => ⟨s, narrower s held, step, registered⟩
+  | ⟨s, held, step, keepsBit⟩ => ⟨s, narrower s held, step, keepsBit⟩
 
 /-- **A narrower class is kept wherever a wider one is.** -/
 theorem KeptFor.mono : ∀ {n : Nat} {B C : S → Prop}, (∀ s, B s → C s) →
@@ -292,8 +292,8 @@ theorem KeptFor.finer {F : Type z} {fine : S → A → S → F} (forget : F → 
   | _ + 1, _, kept => match kept.2 with
     | ⟨a, usable, next⟩ => ⟨kept.1, a, usable, fun f => KeptFor.mono
         (fun t seen => match seen with
-          | ⟨s, held, step, registered⟩ =>
-            ⟨s, held, step, (consistent s a t).symm.trans (congrArg forget registered)⟩)
+          | ⟨s, held, step, keepsBit⟩ =>
+            ⟨s, held, step, (consistent s a t).symm.trans (congrArg forget keepsBit)⟩)
         (KeptFor.finer forget consistent (next (forget f)))⟩
 
 /-- **Once there is a move, the empty class is kept for every horizon.** -/
@@ -381,10 +381,10 @@ def bit : Stage → Bool
   | .lost => false
 
 /-- Registering the bit of the stage reached. -/
-def registered : Stage → Bool → Stage → Bool := fun _ _ t => bit t
+def keepsBit : Stage → Bool → Stage → Bool := fun _ _ t => bit t
 
 /-- Registering nothing. -/
-def blind : Stage → Bool → Stage → Unit := fun _ _ _ => ()
+def keepsNothing : Stage → Bool → Stage → Unit := fun _ _ _ => ()
 
 theorem step_matched : ∀ b, step (.need b) b = .done
   | true => rfl
@@ -396,7 +396,7 @@ theorem step_unmatched : ∀ a, step (.need (!a)) a = .lost
 
 /-- After the first move, registering the bit, the class seen is the need with that bit. -/
 theorem seen_start {a o : Bool} {t : Stage} :
-    Seen process registered starts a o t → t = .need o
+    Seen process keepsBit starts a o t → t = .need o
   | ⟨.start _, _, reached, same⟩ =>
     Eq.trans reached (congrArg Stage.need (Eq.trans (congrArg bit reached).symm same))
   | ⟨.need _, held, _, _⟩ => False.elim held
@@ -404,7 +404,7 @@ theorem seen_start {a o : Bool} {t : Stage} :
   | ⟨.lost, held, _, _⟩ => False.elim held
 
 /-- **Registering the bit, the starts are kept for two steps.** -/
-theorem registered_kept : KeptFor process registered safe (fun _ _ => True) 2 starts :=
+theorem keepsBit_kept : KeptFor process keepsBit safe (fun _ _ => True) 2 starts :=
   ⟨fun s held => match s, held with
     | .start _, _ => trivial
     | .need _, held => False.elim held
@@ -421,7 +421,7 @@ theorem registered_kept : KeptFor process registered safe (fun _ _ => True) 2 st
 
 /-- **Registering nothing, the starts are not kept for two steps**: whatever the second move,
 one of the needs is lost. -/
-theorem blind_not_kept : ¬ KeptFor process blind safe (fun _ _ => True) 2 starts :=
+theorem keepsNothing_not_kept : ¬ KeptFor process keepsNothing safe (fun _ _ => True) 2 starts :=
   fun kept => match kept.2 with
     | ⟨_, _, next⟩ => match (next ()).2 with
       | ⟨second, _, last⟩ =>
@@ -431,10 +431,10 @@ theorem blind_not_kept : ¬ KeptFor process blind safe (fun _ _ => True) 2 start
 
 /-- **What is registered matters**: the same process, guard and moves keep the starts for two
 steps registering the hidden bit, and not registering nothing. -/
-theorem registration_matters :
-    KeptFor process registered safe (fun _ _ => True) 2 starts ∧
-      ¬ KeptFor process blind safe (fun _ _ => True) 2 starts :=
-  ⟨registered_kept, blind_not_kept⟩
+theorem keeping_matters :
+    KeptFor process keepsBit safe (fun _ _ => True) 2 starts ∧
+      ¬ KeptFor process keepsNothing safe (fun _ _ => True) 2 starts :=
+  ⟨keepsBit_kept, keepsNothing_not_kept⟩
 
 end Matching
 
@@ -484,11 +484,11 @@ theorem Plan.zip_keeps {P : Process S (M × N)} {PX : Process X M} {PY : Process
     ⟨fun s held => ⟨keepsX.1 _ (cover s held).1, keepsY.1 _ (cover s held).2⟩, compatible.1,
      fun o => Plan.zip_keeps project
        (fun t seen => match seen with
-         | ⟨s, held, step, registered⟩ =>
+         | ⟨s, held, step, keepsBit⟩ =>
            ⟨⟨πX s, (cover s held).1, (project s (p.first, q.first) t step).1,
-              congrArg Prod.fst registered⟩,
+              congrArg Prod.fst keepsBit⟩,
             ⟨πY s, (cover s held).2, (project s (p.first, q.first) t step).2,
-              congrArg Prod.snd registered⟩⟩)
+              congrArg Prod.snd keepsBit⟩⟩)
        (keepsX.2.2 o.1) (keepsY.2.2 o.2) (compatible.2 o)⟩
 
 /-- **Every joint plan that keeps a guard is compatible**: its pairs of moves are usable

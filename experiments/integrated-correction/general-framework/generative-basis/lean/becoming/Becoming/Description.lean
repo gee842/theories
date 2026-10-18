@@ -28,7 +28,7 @@ reading lumps together. This module states what a cut keeps and what it loses, w
   a second time, losing nothing either way (`coupling_relates_and_unrelates`).
 * **The split that makes sense, under a determined law.** `Becoming.Unfolding` (P69) states
   when a description makes sense (`IdentifiesAlike`: it identifies exactly the alike configurations)
-  and, for a determined law read through a registration (`Law.registered`), that alike is the
+  and, for a determined law read through a registration (`Law.frameBy`), that alike is the
   same registered future (`Law.alike_iff_sameFuture`). In those terms: a split that keeps what
   is registered and carries a law in `Becoming.Mechanism`'s sense (`GoAlike`) relates
   configurations by a bisimulation (`Law.kernel_bisimulation`), so it loses nothing registered
@@ -327,7 +327,7 @@ theorem goAlike_process_iff {next : S → S} {π : S → K} :
 bisimulation of the registered law. -/
 theorem kernel_bisimulation {next : S → S} {o : S → R} {π : S → K}
     (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π) :
-    Bisimulation (registered next o) (registered next o) (fun s s' => π s = π s') :=
+    Bisimulation (frameBy next o) (frameBy next o) (fun s s' => π s = π s') :=
   fun s s' same =>
     have ahead : π (next s) = π (next s') := goAlike_process_iff.mp alike s s' same
     ⟨fun _ => ⟨fun h => (keeps s s' same).symm.trans h, fun h => (keeps s s' same).trans h⟩,
@@ -343,34 +343,34 @@ theorem sameFuture_of_law {next : S → S} {o : S → R} {π : S → K}
 /-- **The coarsest split that keeps what is registered and carries a law makes sense.** -/
 theorem identifiesAlike_of_law {next : S → S} {o : S → R} {π : S → K}
     (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π)
-    (coarsest : ∀ s s', SameFuture next o s s' → π s = π s') : IdentifiesAlike (registered next o) π :=
+    (coarsest : ∀ s s', SameFuture next o s s' → π s = π s') : IdentifiesAlike (frameBy next o) π :=
   identifiesAlike_iff.mpr ⟨kernel_bisimulation keeps alike,
     fun s s' same => coarsest s s' (alike_iff_sameFuture.mp same)⟩
 
 /-- The split that lumps everything always carries a law (`goAlike_const`), and makes sense only
 where nothing registered ever differs. -/
 theorem const_identifiesAlike_iff {next : S → S} {o : S → R} (k : K) :
-    IdentifiesAlike (registered next o) (fun _ => k) ↔ ∀ s s', SameFuture next o s s' :=
+    IdentifiesAlike (frameBy next o) (fun _ => k) ↔ ∀ s s', SameFuture next o s s' :=
   ⟨fun sense s s' => alike_iff_sameFuture.mp ((sense s s').mp rfl),
    fun all s s' => ⟨fun _ => alike_iff_sameFuture.mpr (all s s'), fun _ => rfl⟩⟩
 
 /-- **What is registered now makes sense by itself exactly where it fixes its own registered
 future.** -/
 theorem now_identifiesAlike_iff {next : S → S} {o : S → R} :
-    IdentifiesAlike (registered next o) o ↔ ∀ s s', o s = o s' → SameFuture next o s s' :=
+    IdentifiesAlike (frameBy next o) o ↔ ∀ s s', o s = o s' → SameFuture next o s s' :=
   ⟨fun sense s s' e => alike_iff_sameFuture.mp ((sense s s').mp e),
    fun fixes s s' => ⟨fun e => alike_iff_sameFuture.mpr (fixes s s' e),
      fun same => (alike_iff_sameFuture.mp same) 0⟩⟩
 
 /-- **Registering everything, the configuration itself is the split that makes sense**: nothing
 alike is two. -/
-theorem whole_identifiesAlike (next : S → S) : IdentifiesAlike (registered next id) id :=
+theorem whole_identifiesAlike (next : S → S) : IdentifiesAlike (frameBy next id) id :=
   identifiesAlike_id_iff.mpr fun _ _ alike => alike_iff_sameFuture.mp alike 0
 
 /-- **The registered part alone makes sense exactly where the rest never makes a registered
 difference**; elsewhere the split that makes sense includes the rest. -/
 theorem part_identifiesAlike_iff {X : Type u} {C : Type v} {next : X × C → X × C} :
-    IdentifiesAlike (registered next Prod.fst) Prod.fst ↔
+    IdentifiesAlike (frameBy next Prod.fst) Prod.fst ↔
       ∀ x c c', SameFuture next Prod.fst (x, c) (x, c') :=
   now_identifiesAlike_iff.trans
     ⟨fun fixes x c c' => fixes (x, c) (x, c') rfl,
@@ -394,14 +394,14 @@ theorem sameFuture_of_goAlike {next : S → S} {o : S → R} (alike : GoAlike (p
 /-- **What is registered now makes sense by itself exactly where it carries a law**: a condition on
 one step. -/
 theorem now_identifiesAlike_iff_goAlike {next : S → S} {o : S → R} :
-    IdentifiesAlike (registered next o) o ↔ GoAlike (process next) o :=
+    IdentifiesAlike (frameBy next o) o ↔ GoAlike (process next) o :=
   now_identifiesAlike_iff.trans
     ⟨fun fixes => goAlike_process_iff.mpr fun s s' e => fixes s s' e 1, sameFuture_of_goAlike⟩
 
 /-- **The registered part alone makes sense exactly where the rest makes no difference to its next
 value.** -/
 theorem part_identifiesAlike_iff_step {X : Type u} {C : Type v} {next : X × C → X × C} :
-    IdentifiesAlike (registered next Prod.fst) Prod.fst ↔ ∀ x c c', (next (x, c)).1 = (next (x, c')).1 := by
+    IdentifiesAlike (frameBy next Prod.fst) Prod.fst ↔ ∀ x c c', (next (x, c)).1 = (next (x, c')).1 := by
   refine now_identifiesAlike_iff_goAlike.trans ⟨fun alike x c c' => goAlike_process_iff.mp alike _ _ rfl, ?_⟩
   intro every
   apply goAlike_process_iff.mpr
@@ -417,7 +417,7 @@ theorem part_identifiesAlike_iff_step {X : Type u} {C : Type v} {next : X × C �
 /-- A part whose next value is set by a rule that changes with it: the part alone makes sense
 exactly where the rule makes no difference to it, the condition of `adaptive_state_law_iff`. -/
 theorem adaptive_identifiesAlike_iff {X : Type u} {C : Type v} (F : C → X → X) (G : C → X → C) :
-    IdentifiesAlike (registered (fun s : X × C => (F s.2 s.1, G s.2 s.1)) Prod.fst) Prod.fst ↔
+    IdentifiesAlike (frameBy (fun s : X × C => (F s.2 s.1, G s.2 s.1)) Prod.fst) Prod.fst ↔
       ∀ x c c', F c x = F c' x :=
   part_identifiesAlike_iff_step
 
@@ -440,7 +440,7 @@ theorem move_adaptive :
   rfl
 
 /-- **Registering only the standing, the split that makes sense is the pair.** -/
-theorem pair_identifiesAlike : IdentifiesAlike (Law.registered move Prod.fst) (fun s : Nat × Nat => s) :=
+theorem pair_identifiesAlike : IdentifiesAlike (Law.frameBy move Prod.fst) (fun s : Nat × Nat => s) :=
   fun ⟨x, v⟩ ⟨x', v'⟩ =>
     ⟨fun e => match e with | rfl => Alike.refl _ (x, v),
      fun alike =>
@@ -461,8 +461,8 @@ theorem passing_alone : ¬ Law.SameFuture move Prod.fst (0, 0) (1, 0) :=
 
 /-- Neither alone makes sense. -/
 theorem neither_alone :
-    ¬ IdentifiesAlike (Law.registered move Prod.fst) Prod.fst ∧
-      ¬ IdentifiesAlike (Law.registered move Prod.fst) Prod.snd :=
+    ¬ IdentifiesAlike (Law.frameBy move Prod.fst) Prod.fst ∧
+      ¬ IdentifiesAlike (Law.frameBy move Prod.fst) Prod.snd :=
   ⟨fun sense => standing_alone (carries_law_iff.mp (Law.IdentifiesAlike.carries sense)),
    fun sense => passing_alone (Law.alike_iff_sameFuture.mp ((sense (0, 0) (1, 0)).mp rfl))⟩
 
@@ -474,7 +474,7 @@ theorem orbit_still : ∀ (s : Nat × Nat) n, Law.orbit still s n = s
   | s, n + 1 => orbit_still s n
 
 /-- **Where nothing passes, the standing alone makes sense**: the pair is one. -/
-theorem still_identifiesAlike : IdentifiesAlike (Law.registered still Prod.fst) Prod.fst :=
+theorem still_identifiesAlike : IdentifiesAlike (Law.frameBy still Prod.fst) Prod.fst :=
   Law.now_identifiesAlike_iff.mpr fun s s' h n =>
     (congrArg Prod.fst (orbit_still s n)).trans (h.trans (congrArg Prod.fst (orbit_still s' n)).symm)
 
@@ -523,7 +523,7 @@ theorem SameAhead.new_each {o : Nat → O} (new : ∀ t t', o t = o t' → t = t
 moments, each going on to the next, which is the succession of the step index and nothing more.
 Its alike moments are the moments that are one state. -/
 theorem alike_moments_iff {o : Nat → O} {t t' : Nat} :
-    Alike (Law.registered Nat.succ o) (Law.registered Nat.succ o) t t' ↔ SameAhead o t t' :=
+    Alike (Law.frameBy Nat.succ o) (Law.frameBy Nat.succ o) t t' ↔ SameAhead o t t' :=
   Law.alike_iff_sameFuture.trans
     ⟨fun h n => (congrArg o (Law.succ_orbit t n)).symm.trans
         ((h n).trans (congrArg o (Law.succ_orbit t' n))),
@@ -630,17 +630,17 @@ end Moments
 namespace Negation
 
 /-- The two-valued negation, registered at each moment. -/
-def register (n : Nat) : Bool := Law.orbit (fun b : Bool => !b) true n
+def course (n : Nat) : Bool := Law.orbit (fun b : Bool => !b) true n
 
-theorem zero_two : SameAhead register 0 2 :=
+theorem zero_two : SameAhead course 0 2 :=
   fun n => (congrArg (Law.orbit (fun b : Bool => !b) true) (Nat.zero_add n)).trans
     (Law.orbit_add (fun b : Bool => !b) true 2 n).symm
 
 /-- **Exactly two states**: the first two moments differ, the third is the first again, and every
 moment is one of the two. -/
 theorem two_states :
-    (¬ SameAhead register 0 1) ∧ SameAhead register 0 2 ∧
-      ∀ t, SameAhead register t 0 ∨ SameAhead register t 1 :=
+    (¬ SameAhead course 0 1) ∧ SameAhead course 0 2 ∧
+      ∀ t, SameAhead course t 0 ∨ SameAhead course t 1 :=
   ⟨fun h => Diagonal.revision_never_rests Diagonal.flip_moves true 0 (h 0).symm, zero_two,
    fun t => match statesBelow_of_same (Nat.zero_lt_succ 1) zero_two t with
      | ⟨0, _, h⟩ => .inl h
@@ -650,8 +650,8 @@ theorem two_states :
 /-- **Each is defined through the other**: one registers `true` and goes into the other, which
 registers `false` and goes into the first. -/
 theorem each_through_other (t : Nat) :
-    (SameAhead register t 0 → register t = true ∧ SameAhead register (t + 1) 1) ∧
-      (SameAhead register t 1 → register t = false ∧ SameAhead register (t + 1) 0) :=
+    (SameAhead course t 0 → course t = true ∧ SameAhead course (t + 1) 1) ∧
+      (SameAhead course t 1 → course t = false ∧ SameAhead course (t + 1) 0) :=
   ⟨fun h => ⟨h 0, h.next⟩, fun h => ⟨h 0, h.next.trans zero_two.symm⟩⟩
 
 end Negation

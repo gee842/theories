@@ -11,7 +11,7 @@ values (`Typicality.courses`), and states the exact spread, the counting form of
 and of Chernoff's bound over them. It reads every course as a run of free branching
 (`Parting.free`, `Parting.freeRun`). This module states those counts of the runs: the courses of
 `n` steps are exactly the records a run of free branching on two values shows in its first `n`
-steps (`Learning.record` of `Parting.course`), each listed once, so every count over them is a
+steps (`Learning.prefixOf` of `Parting.course`), each listed once, so every count over them is a
 count over the records of runs, whatever list holds them.
 
 * **The courses are the records of runs.** A list of `n` values is a course of `n` steps exactly
@@ -150,17 +150,17 @@ def ofRecord : List Bool → Nat → Bool
   | [], _ => false
   | b :: w, k => if k = w.length then b else ofRecord w k
 
-theorem record_ofRecord : ∀ w : List Bool, Learning.record (ofRecord w) w.length = w
+theorem record_ofRecord : ∀ w : List Bool, Learning.prefixOf (ofRecord w) w.length = w
   | [] => rfl
   | b :: w =>
-    show ofRecord (b :: w) w.length :: Learning.record (ofRecord (b :: w)) w.length = b :: w from
+    show ofRecord (b :: w) w.length :: Learning.prefixOf (ofRecord (b :: w)) w.length = b :: w from
     congr (congrArg List.cons (if_pos rfl))
-      ((Learning.record_congr fun _ before => if_neg (Nat.ne_of_lt before)).trans
+      ((Learning.prefix_congr fun _ before => if_neg (Nat.ne_of_lt before)).trans
         (record_ofRecord w))
 
 /-- The record of `n` steps of a run of free branching on two values. -/
 abbrev record (r : Run (Parting.free Bool)) (n : Nat) : List Bool :=
-  Learning.record (Parting.course id r) n
+  Learning.prefixOf (Parting.course id r) n
 
 /-- **The courses of `n` steps are exactly the records of `n` steps of runs of free branching on
 two values.** -/
@@ -169,9 +169,9 @@ theorem mem_courses_iff {n : Nat} {w : List Bool} :
   ⟨fun mem =>
     have len : w.length = n := Typicality.mem_courses_iff.mp mem
     ⟨Parting.freeRun (ofRecord w),
-      Eq.subst (motive := fun k => Learning.record (ofRecord w) k = w) len (record_ofRecord w)⟩,
+      Eq.subst (motive := fun k => Learning.prefixOf (ofRecord w) k = w) len (record_ofRecord w)⟩,
    fun ⟨_, same⟩ => Typicality.mem_courses_iff.mpr
-    (Eq.subst (motive := fun k => k.length = n) same (Learning.record_length _ n))⟩
+    (Eq.subst (motive := fun k => k.length = n) same (Learning.prefix_length _ n))⟩
 
 theorem distinct_extend : ∀ {ws : List (List Bool)}, CrossSituational.Distinct ws →
     CrossSituational.Distinct (Typicality.extend ws)

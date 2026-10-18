@@ -62,7 +62,7 @@ theorem total_const {α : Type} (c : Nat) : ∀ l : List α, total l (fun _ => c
 
 /-- The context-free readings of the first `n` configurations of a run, the latest first. -/
 abbrev readings {C : Type} (val : σ → C → Bool) (r : Run P) (n : Nat) : List (C → Bool) :=
-  Learning.record (Parting.course val r) n
+  Learning.prefixOf (Parting.course val r) n
 
 /-- A mixture bound of `Becoming.Gluing` over the readings of a run's first `n` steps. -/
 theorem along_le {C : Type} {f : (C → Bool) → Nat} {c : Nat} (val : σ → C → Bool) (r : Run P)
@@ -71,7 +71,7 @@ theorem along_le {C : Type} {f : (C → Bool) → Nat} {c : Nat} (val : σ → C
       total (readings val r n) (fun _ => c)) :
     total (readings val r n) f + n ≤ n * c :=
   Eq.subst (motive := fun x => total (readings val r n) f + x ≤ x * c)
-    (Learning.record_length _ n)
+    (Learning.prefix_length _ n)
     (Eq.subst (motive := fun y => _ ≤ y) (total_const c _) bound)
 
 /-- **The classical CHSH bound over a run.** For every context-free description of the

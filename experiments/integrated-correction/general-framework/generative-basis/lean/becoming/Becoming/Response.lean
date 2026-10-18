@@ -21,17 +21,17 @@ premise each law names.
   condition a third registers, and so on (`Flow.WithinResponse`). Every member lies within it
   (`Flow.member_within_response`). A formation lies within it exactly when some member lies within
   the formation's registration closure drawn through both flows, the closure of
-  `Flow.alike_within_registration` (`Flow.withinResponse_iff_registration`, through
+  `Flow.alike_within_coupling` (`Flow.withinResponse_iff_coupling`, through
   `WithinClosure.converse`); with one flow, within its registration closure
   (`Flow.withinResponse_self_iff`). It holds what the part reaches and each member's reach closure
   of P42 (`Flow.withinResponse_of_reaches`, `Flow.withinResponse_of_withinReach`); registering
   support only, with one flow, it is the union of the members' reach closures
-  (`Flow.withinResponse_supportOnly_iff`). The reach closure is the converse of the influence
+  (`Flow.withinResponse_thresholdOnly_iff`). The reach closure is the converse of the influence
   closure (`Flow.withinReach_iff_withinInfluence`).
 * **Responding through registration.** The rest responds through its registration when each
   formation outside the part exchanges alike in the two flows across every step up to which it has
-  registered alike (`Flow.RespondsThroughRegistration`). It is a supplied premise. With the rest
-  of the exchange fixed it holds whatever registers (`Flow.respondsThroughRegistration_withhold`).
+  registered alike (`Flow.RespondsThroughCoupling`). It is a supplied premise. With the rest
+  of the exchange fixed it holds whatever registers (`Flow.respondsThroughCoupling_withhold`).
 * **Confinement.** The formations beyond the responsive reach form a region closed in both flows
   under being affected through what is registered, and hold no member
   (`Flow.beyond_response_closed`, `Flow.outside_part_of_beyond_response`). So where the two flows
@@ -52,7 +52,7 @@ premise each law names.
   where membership is decidable, covering the reach suffices
   (`Flow.Balances.comparison_within_response_of_decidable`).
 * **Witnesses.** In `Trophic` the deer respond through their support to the wolves' taking
-  (`Trophic.responds_through_registration`). The forest lies within the wolves' responsive reach,
+  (`Trophic.responds_through_coupling`). The forest lies within the wolves' responsive reach,
   which the wolves' part does not reach (`Trophic.forest_within_response`); the reach is exactly
   the wolves, the deer and the forest (`Trophic.within_response_iff`), so the responsive comparison
   of `Trophic.responsive_mixed` is decided among them (`Trophic.responsive_comparison`). In `Loop`
@@ -73,7 +73,7 @@ premise each law names.
   difference an act makes can arrive when the rest responds through its support.
 
 What is not derived: that formations respond only through their registration (supplied as
-`Flow.RespondsThroughRegistration`); how they respond; any measure of how much difference arrives,
+`Flow.RespondsThroughCoupling`); how they respond; any measure of how much difference arrives,
 or that any arrives within the reach. The representation commits to discrete steps and natural
 quantities. No ethical predicate, ranking or axiom occurs.
 -/
@@ -104,13 +104,13 @@ variable (L L' : Flow F C) (W W' : Web F C)
 under affecting through what is registered, in either flow, where `a` affects `b` so when `a`
 exchanges, in one of the flows, with a condition `b` registers. -/
 def WithinResponse (obs : F → C → Prop) (part : F → Bool) (g : F) : Prop :=
-  ∃ h, part h = true ∧ WithinClosure (fun a b => L.RegisteredFromEither W L' obs b a) h g
+  ∃ h, part h = true ∧ WithinClosure (fun a b => L.CoupledFromEither W L' obs b a) h g
 
 /-- The rest responds through its registration: each formation outside the part exchanges alike
 in the two flows across the step from `t` wherever it has registered alike up to `t`. A supplied
 premise: it excludes formations outside the part responding to what they do not register. -/
-def RespondsThroughRegistration (obs : F → C → Prop) (part : F → Bool) : Prop :=
-  ∀ h, part h = false → ∀ t, W.RegistersAlikeUpTo obs h W.level W'.level t →
+def RespondsThroughCoupling (obs : F → C → Prop) (part : F → Bool) : Prop :=
+  ∀ h, part h = false → ∀ t, W.AlikeThroughUpTo obs h W.level W'.level t →
     ∀ c, L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c
 
 variable {L L' W W'} {obs : F → C → Prop} {part : F → Bool}
@@ -131,24 +131,24 @@ theorem outside_part_of_beyond_response {g : F} (beyond : ¬ L.WithinResponse L'
 
 /-- **The responsive reach is the dual of the registration closure.** `g` lies within the part's
 responsive reach exactly when some member lies within `g`'s registration closure drawn through
-both flows, the closure of `alike_within_registration`. -/
-theorem withinResponse_iff_registration {g : F} :
+both flows, the closure of `alike_within_coupling`. -/
+theorem withinResponse_iff_coupling {g : F} :
     L.WithinResponse L' W obs part g ↔
-      ∃ h, part h = true ∧ WithinClosure (L.RegisteredFromEither W L' obs) g h :=
+      ∃ h, part h = true ∧ WithinClosure (L.CoupledFromEither W L' obs) g h :=
   ⟨fun ⟨h, member, within⟩ =>
-     ⟨h, member, (WithinClosure.converse (rel := L.RegisteredFromEither W L' obs)).mp within⟩,
+     ⟨h, member, (WithinClosure.converse (rel := L.CoupledFromEither W L' obs)).mp within⟩,
    fun ⟨h, member, within⟩ =>
-     ⟨h, member, (WithinClosure.converse (rel := L.RegisteredFromEither W L' obs)).mpr within⟩⟩
+     ⟨h, member, (WithinClosure.converse (rel := L.CoupledFromEither W L' obs)).mpr within⟩⟩
 
 /-- With one flow, `g` lies within the part's responsive reach exactly when some member lies
 within `g`'s registration closure. -/
 theorem withinResponse_self_iff {g : F} :
-    L.WithinResponse L W obs part g ↔ ∃ h, part h = true ∧ L.WithinRegistration W obs g h :=
-  ⟨fun within => match withinResponse_iff_registration.mp within with
+    L.WithinResponse L W obs part g ↔ ∃ h, part h = true ∧ L.WithinCoupling W obs g h :=
+  ⟨fun within => match withinResponse_iff_coupling.mp within with
     | ⟨h, member, closure⟩ => ⟨h, member, WithinClosure.mono (fun _ _ related => match related with
         | .inl first => first
         | .inr second => second) closure⟩,
-   fun ⟨h, member, closure⟩ => withinResponse_iff_registration.mpr
+   fun ⟨h, member, closure⟩ => withinResponse_iff_coupling.mpr
     ⟨h, member, WithinClosure.mono (fun _ _ related => .inl related) closure⟩⟩
 
 /-- What the part reaches lies within its responsive reach. -/
@@ -165,8 +165,8 @@ theorem withinResponse_of_withinReach {h g : F} (member : part h = true)
 
 /-- **Registering support only, the responsive reach is the reach closure.** With one flow, `g`
 lies within the part's responsive reach exactly when it lies within some member's reach closure. -/
-theorem withinResponse_supportOnly_iff {g : F} :
-    L.WithinResponse L W supportOnly part g ↔ ∃ h, part h = true ∧ L.WithinReach W h g :=
+theorem withinResponse_thresholdOnly_iff {g : F} :
+    L.WithinResponse L W thresholdOnly part g ↔ ∃ h, part h = true ∧ L.WithinReach W h g :=
   ⟨fun ⟨h, member, within⟩ => ⟨h, member, WithinClosure.mono (fun _ _ related => match related with
       | .inl ⟨c, .inl depends, exchanges⟩ => ⟨c, depends, exchanges⟩
       | .inl ⟨_, .inr no, _⟩ => False.elim no
@@ -182,8 +182,8 @@ theorem withinReach_iff_withinInfluence {h g : F} :
 
 /-- With the rest of the exchange fixed, the rest responds through its registration, whatever
 registers: outside the part, the flow with the part withheld exchanges as the flow does. -/
-theorem respondsThroughRegistration_withhold :
-    L.RespondsThroughRegistration (L.withhold part) W W' obs part :=
+theorem respondsThroughCoupling_withhold :
+    L.RespondsThroughCoupling (L.withhold part) W W' obs part :=
   fun _ outside _ _ _ =>
     ⟨(withheld_eq_of_false outside _).symm, (withheld_eq_of_false outside _).symm⟩
 
@@ -193,8 +193,8 @@ theorem respondsThroughRegistration_withhold :
 being affected through what is registered: whatever exchanges with a condition such a formation
 registers lies beyond the reach as well. -/
 theorem beyond_response_closed :
-    ClosedUnder (L.RegisteredFrom W obs) (fun g => ¬ L.WithinResponse L' W obs part g) ∧
-      ClosedUnder (L'.RegisteredFrom W obs) (fun g => ¬ L.WithinResponse L' W obs part g) :=
+    ClosedUnder (L.CoupledFrom W obs) (fun g => ¬ L.WithinResponse L' W obs part g) ∧
+      ClosedUnder (L'.CoupledFrom W obs) (fun g => ¬ L.WithinResponse L' W obs part g) :=
   ⟨fun _ _ beyond related ⟨k, member, within⟩ =>
      beyond ⟨k, member, within.trans (WithinClosure.of_rel (.inl related))⟩,
    fun _ _ beyond related ⟨k, member, within⟩ =>
@@ -205,15 +205,15 @@ registered by a formation beyond the part's responsive reach and starting alike 
 rest respond through its registration. Then every formation beyond the responsive reach registers
 alike at every step, whatever the part does: an instance of `alike_within_closed`. -/
 theorem alike_beyond_response
-    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
-    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L'.BalancesOn W' [c] t)
     (present : ∀ t, L.present t = L'.present t)
-    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.Registers obs g c →
+    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.CoupledInto obs g c →
       W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part) :
-    ∀ t g, ¬ L.WithinResponse L' W obs part g → W.RegistersAlike obs g W.level W'.level t :=
+    (responds : L.RespondsThroughCoupling L' W W' obs part) :
+    ∀ t g, ¬ L.WithinResponse L' W obs part g → W.AlikeThrough obs g W.level W'.level t :=
   alike_within_closed (region := fun g => ¬ L.WithinResponse L' W obs part g) balanced balanced'
     beyond_response_closed.1 beyond_response_closed.2 present start
     fun h beyond t alike _ c _ _ => responds h (outside_part_of_beyond_response beyond) t alike c
@@ -221,14 +221,14 @@ theorem alike_beyond_response
 /-- Under the same hypotheses, every formation beyond the part's responsive reach exchanges alike
 in the two flows at every step. -/
 theorem exchange_alike_beyond_response
-    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
-    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L'.BalancesOn W' [c] t)
     (present : ∀ t, L.present t = L'.present t)
-    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.Registers obs g c →
+    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.CoupledInto obs g c →
       W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part) :
+    (responds : L.RespondsThroughCoupling L' W W' obs part) :
     ∀ t h, ¬ L.WithinResponse L' W obs part h → ∀ c,
       L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c :=
   fun t h beyond c => responds h (outside_part_of_beyond_response beyond) t
@@ -238,15 +238,15 @@ theorem exchange_alike_beyond_response
 formation beyond the part's responsive reach alike, in total, at every step: a formation exchanging
 with it lies beyond the reach too. -/
 theorem totals_alike_beyond_response
-    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
-    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L'.BalancesOn W' [c] t)
     (present : ∀ t, L.present t = L'.present t)
-    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.Registers obs g c →
+    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.CoupledInto obs g c →
       W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part) :
-    ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (responds : L.RespondsThroughCoupling L' W W' obs part) :
+    ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L.taken t c = L'.taken t c ∧ L.given t c = L'.given t c :=
   fun t _ c beyond registers =>
     have each : ∀ h, h ∈ L.present t →
@@ -263,14 +263,14 @@ theorem totals_alike_beyond_response
 difference between the two flows reaches no formation beyond the part's responsive reach, before
 any step: each condition it requires has alike totals at every step. -/
 theorem not_differs_beyond_response
-    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
-    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.Registers obs g c →
+    (balanced' : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L'.BalancesOn W' [c] t)
     (present : ∀ t, L.present t = L'.present t)
-    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.Registers obs g c →
+    (start : ∀ g, ¬ L.WithinResponse L' W obs part g → ∀ c, W.CoupledInto obs g c →
       W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part) {t : Nat} {g : F}
+    (responds : L.RespondsThroughCoupling L' W W' obs part) {t : Nat} {g : F}
     (beyond : ¬ L.WithinResponse L' W obs part g) : ¬ DiffersBefore L L' W t g
   | ⟨c, s, requires, _, differs⟩ =>
     have same := totals_alike_beyond_response balanced balanced' present start responds s g c
@@ -293,7 +293,7 @@ would need membership decided, which is not used. -/
 theorem Balances.comparison_within_response {Pos : Type} (balances : L.Balances W)
     (balances' : L'.Balances W') (present : ∀ t, L.present t = L'.present t)
     (start : ∀ c, W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part)
+    (responds : L.RespondsThroughCoupling L' W W' obs part)
     {sig : Pos → Nat → F → Prop} {p : Pos}
     (covers : ∀ t g, ¬ ¬ L.WithinResponse L' W obs part g → sig p t g) :
     (W.Retains sig p W.level W'.level ↔ W.Includes W.level W'.level) ∧
@@ -310,7 +310,7 @@ theorem Balances.comparison_within_response {Pos : Type} (balances : L.Balances 
 theorem Balances.comparison_within_response_of_decidable {Pos : Type} (balances : L.Balances W)
     (balances' : L'.Balances W') (present : ∀ t, L.present t = L'.present t)
     (start : ∀ c, W.level 0 c = W'.level 0 c)
-    (responds : L.RespondsThroughRegistration L' W W' obs part)
+    (responds : L.RespondsThroughCoupling L' W W' obs part)
     (decided : ∀ g, Decidable (L.WithinResponse L' W obs part g))
     {sig : Pos → Nat → F → Prop} {p : Pos}
     (covers : ∀ t g, L.WithinResponse L' W obs part g → sig p t g) :
@@ -337,14 +337,14 @@ herd the deer depend on, and the deer browse the growth the forest depends on. W
 exchange fixed the wolves' part does not reach the forest (`wolves_unreached`); the difference
 from the flow in which the deer respond does (`difference_reaches_forest`). -/
 theorem forest_within_response :
-    flow.WithinResponse responsiveFlow web supportOnly wolvesPart .forest ∧
+    flow.WithinResponse responsiveFlow web thresholdOnly wolvesPart .forest ∧
       ¬ flow.Reaches web wolvesPart .forest :=
-  have hunted : flow.RegisteredFromEither web responsiveFlow supportOnly .deer .wolves :=
+  have hunted : flow.CoupledFromEither web responsiveFlow thresholdOnly .deer .wolves :=
     .inl ⟨.herd, .inl ⟨0, trivial⟩, 0, .tail _ (.tail _ (.tail _ (.head _))), .inl Nat.zero_lt_one⟩
-  have browsed : flow.RegisteredFromEither web responsiveFlow supportOnly .forest .deer :=
+  have browsed : flow.CoupledFromEither web responsiveFlow thresholdOnly .forest .deer :=
     .inl ⟨.growth, .inl ⟨0, trivial⟩, 0, .tail _ (.tail _ (.head _)), .inl (Nat.succ_pos 1)⟩
   ⟨⟨.wolves, rfl, WithinClosure.trans
-      (rel := fun a b => flow.RegisteredFromEither web responsiveFlow supportOnly b a)
+      (rel := fun a b => flow.CoupledFromEither web responsiveFlow thresholdOnly b a)
       (WithinClosure.of_rel hunted) (WithinClosure.of_rel browsed)⟩,
    wolves_unreached⟩
 
@@ -352,8 +352,8 @@ theorem forest_within_response :
 formation exchanges in the flow in which the deer respond as in the flow with the wolves, wherever
 it has registered alike: the deer browse alike at the first step, and from the second on the
 herd's loss has registered in their support. -/
-theorem responds_through_registration :
-    flow.RespondsThroughRegistration responsiveFlow web responsiveWeb supportOnly wolvesPart
+theorem responds_through_coupling :
+    flow.RespondsThroughCoupling responsiveFlow web responsiveWeb thresholdOnly wolvesPart
   | .sun, _, _, _, _ => ⟨rfl, rfl⟩
   | .forest, _, _, _, _ => ⟨rfl, rfl⟩
   | .deer, _, 0, _, .growth => ⟨rfl, rfl⟩
@@ -388,7 +388,7 @@ theorem den_untouched : ∀ (t : Nat) (a : Formation),
 
 /-- Nothing exchanges, in either flow, with a condition the far formation registers. -/
 theorem far_unaffected {a : Formation} {c : Place} :
-    web.Registers supportOnly .far c → ¬ flow.Exchanges a c ∧ ¬ responsiveFlow.Exchanges a c
+    web.CoupledInto thresholdOnly .far c → ¬ flow.Exchanges a c ∧ ¬ responsiveFlow.Exchanges a c
   | .inr no => False.elim no
   | .inl ⟨_, requires⟩ => match c, requires with
     | .growth, no => nomatch no
@@ -408,7 +408,7 @@ theorem far_unaffected {a : Formation} {c : Place} :
 /-- The wolves, the deer and the forest are closed under affecting through what is registered:
 the sun registers nothing, and nothing exchanges with what the far formation registers. -/
 theorem responsiveReach_closed :
-    ClosedUnder (fun a b => flow.RegisteredFromEither web responsiveFlow supportOnly b a)
+    ClosedUnder (fun a b => flow.CoupledFromEither web responsiveFlow thresholdOnly b a)
       responsiveReach
   | _, .forest, _, _ => trivial
   | _, .deer, _, _ => trivial
@@ -423,7 +423,7 @@ theorem responsiveReach_closed :
 /-- The wolves' responsive reach is exactly the wolves, the deer and the forest: the sun and the
 far formation lie beyond it. -/
 theorem within_response_iff {g : Formation} :
-    flow.WithinResponse responsiveFlow web supportOnly wolvesPart g ↔ responsiveReach g :=
+    flow.WithinResponse responsiveFlow web thresholdOnly wolvesPart g ↔ responsiveReach g :=
   ⟨fun ⟨h, member, within⟩ => within responsiveReach responsiveReach_closed
       (match h, member with
         | .sun, no => nomatch no
@@ -455,7 +455,7 @@ theorem responsive_comparison {Pos : Type} {sig : Pos → Nat → Formation → 
       ¬ web.Retains sig p web.level responsiveWeb.level ∧
       ¬ web.Retains sig p responsiveWeb.level web.level :=
   have stable : ∀ g,
-      ¬ ¬ flow.WithinResponse responsiveFlow web supportOnly wolvesPart g → responsiveReach g
+      ¬ ¬ flow.WithinResponse responsiveFlow web thresholdOnly wolvesPart g → responsiveReach g
     | .sun, notBeyond => notBeyond fun within => within_response_iff.mp within
     | .forest, _ => trivial
     | .deer, _ => trivial
@@ -466,7 +466,7 @@ theorem responsive_comparison {Pos : Type} {sig : Pos → Nat → Formation → 
     | .herd => rfl
     | .den => rfl
   have law := balances.comparison_within_response responsive_balances (fun _ => rfl) start
-    responds_through_registration (sig := sig) (p := p)
+    responds_through_coupling (sig := sig) (p := p)
     fun t g notBeyond => covers t g (stable g notBeyond)
   have mixed := responsive_mixed (sig := fun (_ : Unit) _ _ => True) (fun _ => trivial) ()
   ⟨law.1, law.2.1,
@@ -596,7 +596,7 @@ theorem quiet_dependent : quietWeb.Dependent :=
 
 /-- The second responds through what it registers: it takes alike in the two flows at the first
 step, and at the second it has observed its condition fall. -/
-theorem responds : escalation.RespondsThroughRegistration quiet web quietWeb paired firstPart
+theorem responds : escalation.RespondsThroughCoupling quiet web quietWeb paired firstPart
   | .first, no, _, _, _ => nomatch no
   | .second, _, 0, _, .ofFirst => ⟨rfl, rfl⟩
   | .second, _, 1, alike, .ofFirst =>
@@ -616,9 +616,9 @@ before the third step: the loop registers only in the comparison where the rest 
 theorem returns :
     escalation.Balances web ∧ quiet.Balances quietWeb ∧ web.Dependent ∧ quietWeb.Dependent ∧
       (∀ c, web.level 0 c = quietWeb.level 0 c) ∧
-      escalation.RespondsThroughRegistration quiet web quietWeb paired firstPart ∧
-      escalation.RegisteredFromEither web quiet paired .second .first ∧
-      escalation.RegisteredFromEither web quiet paired .first .second ∧
+      escalation.RespondsThroughCoupling quiet web quietWeb paired firstPart ∧
+      escalation.CoupledFromEither web quiet paired .second .first ∧
+      escalation.CoupledFromEither web quiet paired .first .second ∧
       (∀ t, escalation.take t .first .ofFirst = quiet.take t .first .ofFirst ∧
         escalation.give t .first .ofFirst = quiet.give t .first .ofFirst) ∧
       ¬ web.Supported 2 .first ∧ quietWeb.Supported 2 .first ∧

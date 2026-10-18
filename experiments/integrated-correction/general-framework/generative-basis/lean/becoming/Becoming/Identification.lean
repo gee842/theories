@@ -14,7 +14,7 @@ fixes the next value, not even among worlds a list holds; that a learner by refu
 is not given how many configurations there are comes to rest is unrefuted
 (`held_rest_unrefuted`), and its record never shows that it has: given two values, every claim
 it makes is refuted, at that step, on a course of a world held by a list sharing its record
-(`no_record_fixes_next_finite`). This module states what the situation adds: a bound on its
+(`no_prefix_fixes_next_finite`). This module states what the situation adds: a bound on its
 states. With no premise beyond the bound:
 
 * **Two periods.** A course with period `p + 1` that comes back after `Q` steps at each of its
@@ -25,37 +25,37 @@ states. With no premise beyond the bound:
   repeats from some step `i` with some period `q + 1`, `i + q + 1 ≤ N`
   (`statesBelow_iff_lasso`). Two histories with at most `N` and `N'` states that agree before
   `N + N' - 1` agree at every step (`bounded_agree`): their records before `N + N' - 1` fix
-  them (`record_fixes`). Before `N + N' - 2` they do not: for every `T` a history with one
+  them (`prefix_fixes`). Before `N + N' - 2` they do not: for every `T` a history with one
   state and one with `T + 1` share their record before `T` and differ at `T`
-  (`record_short`), for every `N ≥ 2` two histories with at most `N` states share their
-  record before `N + N - 2` and differ there (`record_short_twice`), and for every `N` and `N'`
+  (`prefix_short`), for every `N ≥ 2` two histories with at most `N` states share their
+  record before `N + N - 2` and differ there (`prefix_short_twice`), and for every `N` and `N'`
   a history with at most `N` states and one with at most `N'` share their record before
   `N + N' - 2` and differ there (`bounded_agree_exact`): the length `N + N' - 1` is exact for
   every pair of bounds. Records are equal exactly where the courses agree before their length
-  (`record_eq_iff`).
+  (`prefix_eq_iff`).
 * **Induction is deduction where the bound is given.** On a history with at most `N` states, a
   lasso hypothesis within `N` that the record before `N + N - 1` bears out is the law of the
   whole course (`lasso_of_fits`, `bounded_induction`), and one always is
   (`bounded_hypothesis`). The learner given `N` (`withBound`), silent before step
   `N + N - 1` and from then on claiming by the first hypothesis within `N` that the record bears
   out, is refuted at no step of any history with at most `N` states and is right at every step
-  from `N + N - 1` on (`withBound_holds`, `withBound_exact`). No learner refuted at no step of every
+  from `N + N - 1` on (`withBound_accords`, `withBound_exact`). No learner refuted at no step of every
   history with at most `N ≥ 2` states claims at step `N + N - 2` on each of them
   (`withBound_earliest`): the learner given the bound speaks as early as any can. The
   two-valued negation, on which no fixed value is borne out (`Diagonal.revision_never_rests`), is
   derived from step `3` on by the learner given two states (`negation_derived`).
 * **The learner not given the bound rests within it.** A lasso hypothesis within `N`
   refuted at no step of a stretch of `N + N - 1` steps is refuted at no later step
-  (`unrefuted_persists`). So on a history with at most `N` states the learner by refutation
+  (`no_miss_persists`). So on a history with at most `N` states the learner by refutation
   over the lasso hypotheses, given neither `N` nor the course, claims at every step from
-  `N + (N + N - 1) * tri N` on and is right (`learner_rests`); in a world a list holds, `N` is
-  the list's length (`held_learner_rests`), and on a lasso course the rest that
+  `N + (N + N - 1) * tri N` on and is right (`byElimination_rests`); in a world a list holds, `N` is
+  the list's length (`held_byElimination_rests`), and on a lasso course the rest that
   `Becoming.Learning` leaves unrefuted is found (`rests_of_lasso`). The step is a function of
   the bound, which the learner does not have: its record does not show it. The step is cubic in
   `N`: on the two-valued negation along a cycle of `N = 2m + 3` places, which is broken once in
-  every turn, the learner is refuted at step `(N³ - N) / 4` (`learner_refuted_late`), each even
+  every turn, the learner is refuted at step `(N³ - N) / 4` (`byElimination_missed_late`), each even
   shift it passes costing a whole turn, so no earlier step bounds its rest on every history with
-  at most `N` states (`learner_rest_cubic`).
+  at most `N` states (`byElimination_rest_cubic`).
 * **The rest step needs no bound.** The learner by the least bound (`leastBound`), given no
   bound, claims by the first lasso hypothesis the record bears out within the least bound within
   which one is; it is right at every step from `N + N - 1` on of every history with at most `N`
@@ -63,8 +63,8 @@ states. With no premise beyond the bound:
   `N + N - 2` on every such history for `N ≥ 2` (`rest_earliest`), so `N + N - 1` is the optimal
   rest step and being given the bound does not move it. What the bound buys is silence: no learner
   right at step `1` on every history with one state is refuted at no step of every history with
-  two states (`rest_without_bound_refuted`), while the learner given the bound is silent before
-  `N + N - 1` and refuted nowhere (`withBound_holds`).
+  two states (`rest_without_bound_missed`), while the learner given the bound is silent before
+  `N + N - 1` and refuted nowhere (`withBound_accords`).
 * **A world answering its own learner exceeds the bound.** The course that answers every claim
   of the learner given `N` has more than `N` states (`answer_exceeds_bound`): a world that
   includes the learner and answers it is not within the bound the learner is given.
@@ -112,7 +112,7 @@ the limit): the learner by refutation over the lasso hypotheses is identificatio
 enumeration, and the learner given the bound (`withBound`) and the learner by the least bound
 (`leastBound`) identify every history with at most `N` states from step `N + N - 1` on, which is
 the Moore and Fine–Wilf bound read as a learning bound. The cubic step of the learner by
-refutation (`learner_rest_cubic`) is stated for the diagonal order in which `Learning.lassos`
+refutation (`byElimination_rest_cubic`) is stated for the diagonal order in which `Learning.lassos`
 enumerates the hypotheses; another order is not covered.
 -/
 
@@ -349,39 +349,39 @@ theorem bounded_agree {o o' : Nat → O} {N N' : Nat} (bound : StatesBelow o N)
     lassos_agree lasso lasso' fun n lt => agree n (Nat.lt_of_lt_of_le lt short)
 
 /-- **Records are equal exactly where the courses agree before their length.** -/
-theorem record_eq_iff {o o' : Nat → O} : ∀ {T : Nat},
-    Learning.record o T = Learning.record o' T ↔ ∀ n, n < T → o n = o' n
+theorem prefix_eq_iff {o o' : Nat → O} : ∀ {T : Nat},
+    Learning.prefixOf o T = Learning.prefixOf o' T ↔ ∀ n, n < T → o n = o' n
   | 0 => ⟨fun _ n lt => absurd lt (Nat.not_lt_zero n), fun _ => rfl⟩
   | T + 1 =>
     ⟨fun same n lt =>
       match List.cons.inj
-          (show o T :: Learning.record o T = o' T :: Learning.record o' T from same) with
+          (show o T :: Learning.prefixOf o T = o' T :: Learning.prefixOf o' T from same) with
       | ⟨now, before⟩ =>
         match Nat.lt_or_ge n T with
-        | .inl lt' => record_eq_iff.mp before n lt'
+        | .inl lt' => prefix_eq_iff.mp before n lt'
         | .inr ge =>
           have at_T : n = T := Nat.le_antisymm (Nat.le_of_lt_succ lt) ge
           (congrArg o at_T).trans (now.trans (congrArg o' at_T).symm),
-     Learning.record_congr⟩
+     Learning.prefix_congr⟩
 
 /-- **The record before `N + N' - 1` fixes a history with at most `N` states among those with at
 most `N'`.** -/
-theorem record_fixes {o o' : Nat → O} {N N' : Nat} (bound : StatesBelow o N)
+theorem prefix_fixes {o o' : Nat → O} {N N' : Nat} (bound : StatesBelow o N)
     (bound' : StatesBelow o' N')
-    (same : Learning.record o (N + N' - 1) = Learning.record o' (N + N' - 1)) :
+    (same : Learning.prefixOf o (N + N' - 1) = Learning.prefixOf o' (N + N' - 1)) :
     ∀ n, o n = o' n :=
-  bounded_agree bound bound' (record_eq_iff.mp same)
+  bounded_agree bound bound' (prefix_eq_iff.mp same)
 
 /-- **The record before `N + N' - 2` does not.** For every `T`, given two values, a history
 with one state and one with at most `T + 1` share their record before `T` and differ at `T`
 (`Becoming.Learning`'s `holdFrom`). -/
-theorem record_short {x y : O} (two : x ≠ y) (T : Nat) :
+theorem prefix_short {x y : O} (two : x ≠ y) (T : Nat) :
     ∃ o o' : Nat → O, StatesBelow o 1 ∧ StatesBelow o' (T + 1) ∧
-      Learning.record o T = Learning.record o' T ∧ o T ≠ o' T :=
+      Learning.prefixOf o T = Learning.prefixOf o' T ∧ o T ≠ o' T :=
   ⟨fun _ => x, Learning.holdFrom (fun _ => x) T y,
    statesBelow_iff_lasso.mpr ⟨0, 0, Nat.le_refl 1, fun _ _ => rfl⟩,
    statesBelow_iff_lasso.mpr ⟨T, 0, Nat.le_refl (T + 1), Learning.holdFrom_lasso _ T y⟩,
-   Learning.record_congr fun _ before => (Learning.holdFrom_before (fun _ => x) y before).symm,
+   Learning.prefix_congr fun _ before => (Learning.holdFrom_before (fun _ => x) y before).symm,
    fun same => two (same.trans (Learning.holdFrom_after _ y (Nat.le_refl T)))⟩
 
 /-- The course of `Becoming.Learning`'s lasso world on positions `0, …, i + q` that registers `y`
@@ -393,9 +393,9 @@ def mark (i q m : Nat) (x y : O) (n : Nat) : O :=
 the course.** With `N = M + 2`: the course marking every `N`-th step from step `M + 1`, and the
 course marking every `(N - 1)`-th step from step `M + 1`, share their record before `M + M + 2`
 and differ at it. So `N + N - 1` is exact for two histories with the same bound. -/
-theorem record_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
+theorem prefix_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
     ∃ o o' : Nat → O, StatesBelow o (M + 2) ∧ StatesBelow o' (M + 2) ∧
-      Learning.record o (M + M + 2) = Learning.record o' (M + M + 2) ∧
+      Learning.prefixOf o (M + M + 2) = Learning.prefixOf o' (M + M + 2) ∧
         o (M + M + 2) ≠ o' (M + M + 2) := by
   let pos := Law.orbit (Learning.lassoNext 0 (M + 1)) 0
   let pos' := Law.orbit (Learning.lassoNext 1 M) 0
@@ -463,7 +463,7 @@ theorem record_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
     statesBelow_iff_lasso.mpr
       ⟨0, M + 1, Nat.le_of_eq (congrArg (· + 1) (Nat.zero_add (M + 1))), lasso⟩,
     statesBelow_iff_lasso.mpr ⟨1, M, Nat.le_of_eq (congrArg (· + 1) (Nat.add_comm 1 M)), lasso'⟩,
-    record_eq_iff.mpr agree,
+    prefix_eq_iff.mpr agree,
     fun same => two (left.symm.trans (same.trans right))⟩
 
 /-- **The length `N + N' - 1` is exact for every pair of bounds.** Given two values, for all `M`
@@ -471,10 +471,10 @@ and `M'`, a history with at most `M + 1` states and one with at most `M' + 1` sh
 before `M + M'` and differ at `M + M'`. The first marks every `(M + 1)`-th step, placed so that
 the steps from `M'` to `M + M' - 1` are unmarked and step `M + M'` is marked; the second
 follows it before step `M'` and stays unmarked from then on. With `M = 0` this is
-`record_short`; with `M = M'` it is the case `N = N'` of `record_short_twice`. -/
+`prefix_short`; with `M = M'` it is the case `N = N'` of `prefix_short_twice`. -/
 theorem bounded_agree_exact {x y : O} (two : x ≠ y) (M M' : Nat) :
     ∃ o o' : Nat → O, StatesBelow o (M + 1) ∧ StatesBelow o' (M' + 1) ∧
-      Learning.record o (M + M') = Learning.record o' (M + M') ∧ o (M + M') ≠ o' (M + M') := by
+      Learning.prefixOf o (M + M') = Learning.prefixOf o' (M + M') ∧ o (M + M') ≠ o' (M + M') := by
   let pos := Law.orbit (Learning.lassoNext 0 M) 0
   have early : ∀ j, j ≤ M → pos j = j := fun j le =>
     lassoPos_early (i := 0) (q := M) j
@@ -513,7 +513,7 @@ theorem bounded_agree_exact {x y : O} (two : x ≠ y) (M M' : Nat) :
   exact ⟨o, o',
     statesBelow_iff_lasso.mpr ⟨0, M, Nat.le_of_eq (congrArg (· + 1) (Nat.zero_add M)), lasso⟩,
     statesBelow_iff_lasso.mpr ⟨M', 0, Nat.le_refl (M' + 1), Learning.holdFrom_lasso o M' x⟩,
-    record_eq_iff.mpr agree,
+    prefix_eq_iff.mpr agree,
     fun same => two (stays.symm.trans (same.symm.trans marked))⟩
 
 /-- A later stretch of a history with at most `N` states has at most `N` states. -/
@@ -576,30 +576,30 @@ theorem lasso_of_fits {o : Nat → O} {N i q : Nat} (bound : StatesBelow o N)
   exact fun u le => (all _).symm.trans ((lasso u le).trans (all u))
 
 /-- A lasso hypothesis refuted at no step before `T` holds on the record before `T`. -/
-theorem fits_of_unrefuted [DecidableEq O] {o : Nat → O} {i q T : Nat}
-    (unrefuted : ∀ t, t < T → ¬ Learning.RefutedAt (Learning.lasso (i, q)) o t) :
+theorem fits_of_no_miss [DecidableEq O] {o : Nat → O} {i q T : Nat}
+    (unrefuted : ∀ t, t < T → ¬ Learning.MissesAt (Learning.lasso (i, q)) o t) :
     ∀ u, i ≤ u → u + (q + 1) < T → o (u + (q + 1)) = o u :=
   fun u le lt =>
-    have claims : Learning.lasso (i, q) (Learning.record o (u + (q + 1))) = some (o u) :=
+    have claims : Learning.lasso (i, q) (Learning.prefixOf o (u + (q + 1))) = some (o u) :=
       (Learning.lasso_claims (o := o) (h := (i, q)) (Nat.add_le_add_right le (q + 1))).trans
-        (Learning.back_record o u q)
-    (Learning.eq_of_not_refuted
-      (Eq.subst (motive := fun c => ¬ Learning.Refuted c (o (u + (q + 1)))) claims
+        (Learning.back_prefix o u q)
+    (Learning.eq_of_not_missed
+      (Eq.subst (motive := fun c => ¬ Learning.Misses c (o (u + (q + 1)))) claims
         (unrefuted _ lt))).symm
 
 /-- **In a bounded situation induction is deduction.** On a history with at most `N` states, a
 lasso hypothesis within `N` refuted at no step before `N + N - 1` is refuted at no step. -/
 theorem bounded_induction [DecidableEq O] {o : Nat → O} {N i q : Nat}
     (bound : StatesBelow o N) (within : i + q + 1 ≤ N)
-    (unrefuted : ∀ t, t < N + N - 1 → ¬ Learning.RefutedAt (Learning.lasso (i, q)) o t) :
-    Learning.Holds (Learning.lasso (i, q)) o :=
-  Learning.lasso_holds (lasso_of_fits bound within (fits_of_unrefuted unrefuted))
+    (unrefuted : ∀ t, t < N + N - 1 → ¬ Learning.MissesAt (Learning.lasso (i, q)) o t) :
+    Learning.Accords (Learning.lasso (i, q)) o :=
+  Learning.lasso_accords (lasso_of_fits bound within (fits_of_no_miss unrefuted))
 
 /-- On a history with at most `N` states some lasso hypothesis within `N` holds. -/
 theorem bounded_hypothesis {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
-    ∃ i q, i + q + 1 ≤ N ∧ Learning.Holds (Learning.lasso (i, q)) o :=
+    ∃ i q, i + q + 1 ≤ N ∧ Learning.Accords (Learning.lasso (i, q)) o :=
   match statesBelow_iff_lasso.mp bound with
-  | ⟨i, q, within, lasso⟩ => ⟨i, q, within, Learning.lasso_holds lasso⟩
+  | ⟨i, q, within, lasso⟩ => ⟨i, q, within, Learning.lasso_accords lasso⟩
 
 end Induction
 
@@ -612,30 +612,30 @@ variable {O : Type u}
 /-- Every claim of `pred` on a record, each made from the record before it, is borne out. -/
 def BorneOut (pred : List O → Option O) : List O → Prop
   | [] => True
-  | v :: l => ¬ Learning.Refuted (pred l) v ∧ BorneOut pred l
+  | v :: l => ¬ Learning.Misses (pred l) v ∧ BorneOut pred l
 
 instance decBorneOut [DecidableEq O] (pred : List O → Option O) :
     (l : List O) → Decidable (BorneOut pred l)
   | [] => isTrue trivial
   | v :: l =>
-    match Learning.decRefuted (pred l) v, decBorneOut pred l with
+    match Learning.decMisses (pred l) v, decBorneOut pred l with
     | isTrue refuted, _ => isFalse fun ⟨unrefuted, _⟩ => unrefuted refuted
     | isFalse unrefuted, isTrue borne => isTrue ⟨unrefuted, borne⟩
     | isFalse _, isFalse unborne => isFalse fun ⟨_, borne⟩ => unborne borne
 
 /-- A record bears out `pred` exactly where `pred` is refuted at no step before its length. -/
-theorem borneOut_record_iff {pred : List O → Option O} {o : Nat → O} : ∀ {T : Nat},
-    BorneOut pred (Learning.record o T) ↔ ∀ t, t < T → ¬ Learning.RefutedAt pred o t
+theorem borneOut_prefix_iff {pred : List O → Option O} {o : Nat → O} : ∀ {T : Nat},
+    BorneOut pred (Learning.prefixOf o T) ↔ ∀ t, t < T → ¬ Learning.MissesAt pred o t
   | 0 => ⟨fun _ t lt => absurd lt (Nat.not_lt_zero t), fun _ => trivial⟩
   | T + 1 =>
     ⟨fun ⟨now, before⟩ t lt =>
       match Nat.lt_or_ge t T with
-      | .inl lt' => borneOut_record_iff.mp before t lt'
+      | .inl lt' => borneOut_prefix_iff.mp before t lt'
       | .inr ge =>
-        Eq.subst (motive := fun s => ¬ Learning.RefutedAt pred o s)
+        Eq.subst (motive := fun s => ¬ Learning.MissesAt pred o s)
           (Nat.le_antisymm ge (Nat.le_of_lt_succ lt)) now,
      fun all => ⟨all T (Nat.lt_succ_self T),
-       borneOut_record_iff.mpr fun t lt => all t (Nat.lt_succ_of_lt lt)⟩⟩
+       borneOut_prefix_iff.mpr fun t lt => all t (Nat.lt_succ_of_lt lt)⟩⟩
 
 /-- The pairs `(i, q)` with `q < Q`, for one `i`. -/
 def column (i : Nat) : Nat → List (Nat × Nat)
@@ -715,62 +715,62 @@ def withBound [DecidableEq O] (N : Nat) (l : List O) : Option O :=
 /-- **The learner given the bound is right at every step from `N + N - 1` on** of every
 history with at most `N` states. -/
 theorem withBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : StatesBelow o N)
-    (late : N + N - 1 ≤ t) : withBound N (Learning.record o t) = some (o t) :=
-  have long : N + N - 1 ≤ (Learning.record o t).length :=
-    Eq.subst (motive := fun n => N + N - 1 ≤ n) (Learning.record_length o t).symm late
+    (late : N + N - 1 ≤ t) : withBound N (Learning.prefixOf o t) = some (o t) :=
+  have long : N + N - 1 ≤ (Learning.prefixOf o t).length :=
+    Eq.subst (motive := fun n => N + N - 1 ≤ n) (Learning.prefix_length o t).symm late
   have N_le : N ≤ N + N - 1 := le_twice_less_one (statesBelow_pos bound)
   match bounded_hypothesis bound with
   | ⟨i, q, within, holds⟩ =>
-    have true_fits : Fits N (Learning.record o t) (i, q) :=
-      ⟨within, borneOut_record_iff.mpr fun t' _ => holds t'⟩
+    have true_fits : Fits N (Learning.prefixOf o t) (i, q) :=
+      ⟨within, borneOut_prefix_iff.mpr fun t' _ => holds t'⟩
     have member : (i, q) ∈ grid N N :=
       mem_grid (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_left q i)) within)
         (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_right i q)) within)
-    match firstFit_found (dec := decFits N (Learning.record o t)) member true_fits with
+    match firstFit_found (dec := decFits N (Learning.prefixOf o t)) member true_fits with
     | ⟨(i', q'), found⟩ =>
-      have fits : Fits N (Learning.record o t) (i', q') := firstFit_sound found
+      have fits : Fits N (Learning.prefixOf o t) (i', q') := firstFit_sound found
       have speaks : i' + q' + 1 ≤ t := Nat.le_trans fits.1 (Nat.le_trans N_le late)
-      have holds' : Learning.Holds (Learning.lasso (i', q')) o :=
+      have holds' : Learning.Accords (Learning.lasso (i', q')) o :=
         bounded_induction bound fits.1 fun t' lt =>
-          borneOut_record_iff.mp fits.2 t' (Nat.lt_of_lt_of_le lt late)
+          borneOut_prefix_iff.mp fits.2 t' (Nat.lt_of_lt_of_le lt late)
       match Learning.back_made o
           (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_left q' i')) speaks) with
       | ⟨v, at_back⟩ =>
-        have value : Learning.lasso (i', q') (Learning.record o t) = some v :=
+        have value : Learning.lasso (i', q') (Learning.prefixOf o t) = some v :=
           (Learning.lasso_claims (o := o) (h := (i', q')) speaks).trans at_back
         have right : v = o t :=
-          Learning.eq_of_not_refuted
-            (Eq.subst (motive := fun c => ¬ Learning.Refuted c (o t)) value (holds' t))
-        (if_pos long).trans ((congrArg (claimBy (Learning.record o t)) found).trans
+          Learning.eq_of_not_missed
+            (Eq.subst (motive := fun c => ¬ Learning.Misses c (o t)) value (holds' t))
+        (if_pos long).trans ((congrArg (claimBy (Learning.prefixOf o t)) found).trans
           (value.trans (congrArg some right)))
 
 /-- **The learner given the bound is refuted at no step** of any history with at most `N`
 states. -/
-theorem withBound_holds [DecidableEq O] {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
-    Learning.Holds (withBound N) o := fun t =>
+theorem withBound_accords [DecidableEq O] {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
+    Learning.Accords (withBound N) o := fun t =>
   match Nat.lt_or_ge t (N + N - 1) with
   | .inl early =>
     fun ⟨_, made, _⟩ =>
-      nomatch (show withBound N (Learning.record o t) = none from
+      nomatch (show withBound N (Learning.prefixOf o t) = none from
         if_neg fun long => Nat.lt_irrefl t (Nat.lt_of_lt_of_le early
-          (Eq.subst (motive := fun n => N + N - 1 ≤ n) (Learning.record_length o t) long))
+          (Eq.subst (motive := fun n => N + N - 1 ≤ n) (Learning.prefix_length o t) long))
         ).symm.trans made
   | .inr late =>
-    Eq.subst (motive := fun c => ¬ Learning.Refuted c (o t)) (withBound_exact bound late).symm
-      Learning.not_refuted_self
+    Eq.subst (motive := fun c => ¬ Learning.Misses c (o t)) (withBound_exact bound late).symm
+      Learning.not_missed_self
 
 /-- **No learner can always speak sooner.** Given two values, no learner refuted at no step of
 every history with at most `M + 2` states claims at step `M + M + 2` on each of them; the
 learner given the bound speaks from step `M + M + 3` on. -/
 theorem withBound_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
     ¬ ∀ o : Nat → O, StatesBelow o (M + 2) →
-      Learning.Holds pred o ∧ ∃ w, pred (Learning.record o (M + M + 2)) = some w :=
+      Learning.Accords pred o ∧ ∃ w, pred (Learning.prefixOf o (M + M + 2)) = some w :=
   fun all =>
-    match record_short_twice two M with
+    match prefix_short_twice two M with
     | ⟨o, o', bound, bound', same, differ⟩ =>
       match all o bound, all o' bound' with
       | ⟨holds, w, claims⟩, ⟨holds', _, _⟩ =>
-        have claims' : pred (Learning.record o' (M + M + 2)) = some w :=
+        have claims' : pred (Learning.prefixOf o' (M + M + 2)) = some w :=
           (congrArg pred same).symm.trans claims
         holds _ ⟨w, claims, fun right => holds' _ ⟨w, claims', fun right' =>
           differ (right.symm.trans right')⟩⟩
@@ -779,7 +779,7 @@ theorem withBound_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O
 the two-valued negation at every step from `3` on: what no fixed value answers
 (`Diagonal.revision_never_rests`) is a rhythm read off the record. -/
 theorem negation_derived : ∀ t, 3 ≤ t →
-    withBound 2 (Learning.record Negation.register t) = some (Negation.register t) :=
+    withBound 2 (Learning.prefixOf Negation.course t) = some (Negation.course t) :=
   fun _ late => withBound_exact (statesBelow_of_same (Nat.zero_lt_succ 1) Negation.zero_two) late
 
 /-- **A world answering its own learner exceeds the bound the learner is given.** Where `other`
@@ -802,11 +802,11 @@ variable {O : Type u} [DecidableEq O] {o : Nat → O}
 history with at most `N` states, a lasso `(a, b)` within `N` refuted at no step from `s ≥ a`
 to before `s + (N + N - 1)` is refuted at no step from `s` on: the stretch from `s` repeats with
 period `b + 1` on its record before `N + N - 1`, so at every step (`lasso_of_fits`). -/
-theorem unrefuted_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a + b + 1 ≤ N)
+theorem no_miss_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a + b + 1 ≤ N)
     (from_s : a ≤ s)
     (window : ∀ t, s ≤ t → t < s + (N + N - 1) →
-      ¬ Learning.RefutedAt (Learning.lasso (a, b)) o t) :
-    ∀ t, s ≤ t → ¬ Learning.RefutedAt (Learning.lasso (a, b)) o t := by
+      ¬ Learning.MissesAt (Learning.lasso (a, b)) o t) :
+    ∀ t, s ≤ t → ¬ Learning.MissesAt (Learning.lasso (a, b)) o t := by
   have period_le : b + 1 ≤ N + N - 1 :=
     Nat.le_trans (Nat.le_trans (Nat.succ_le_succ (Nat.le_add_left b a)) within)
       (le_twice_less_one (statesBelow_pos bound))
@@ -814,16 +814,16 @@ theorem unrefuted_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a
       o (s + (u + (b + 1))) = o (s + u) := fun u _ lt =>
     have at_t : s + (u + (b + 1)) = s + u + b + 1 :=
       (Nat.add_assoc s u (b + 1)).symm
-    have claims : Learning.lasso (a, b) (Learning.record o (s + (u + (b + 1)))) =
+    have claims : Learning.lasso (a, b) (Learning.prefixOf o (s + (u + (b + 1)))) =
         some (o (s + u)) :=
       (Learning.lasso_claims (o := o) (h := (a, b))
         (Eq.subst (motive := fun n => a + b + 1 ≤ n) at_t.symm
           (Nat.succ_le_succ (Nat.add_le_add_right
             (Nat.le_trans from_s (Nat.le_add_right s u)) b)))).trans
-        ((congrArg (fun n => Learning.back (Learning.record o n) b) at_t).trans
-          (Learning.back_record o (s + u) b))
-    (Learning.eq_of_not_refuted
-      (Eq.subst (motive := fun c => ¬ Learning.Refuted c (o (s + (u + (b + 1))))) claims
+        ((congrArg (fun n => Learning.back (Learning.prefixOf o n) b) at_t).trans
+          (Learning.back_prefix o (s + u) b))
+    (Learning.eq_of_not_missed
+      (Eq.subst (motive := fun c => ¬ Learning.Misses c (o (s + (u + (b + 1))))) claims
         (window _ (Nat.le_add_right s _) (Nat.add_lt_add_left lt s)))).symm
   have shifted : Learning.Lasso (fun n => o (s + n)) 0 b :=
     lasso_of_fits (statesBelow_shift bound s)
@@ -841,27 +841,27 @@ theorem unrefuted_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a
   | .inl early => exact window t from_t early refuted
   | .inr late =>
     have far : s + b + 1 ≤ t := Nat.le_trans (Nat.add_le_add_left period_le s) late
-    have same : Learning.lasso (a, b) (Learning.record o t) =
-        Learning.lasso (s, b) (Learning.record o t) :=
+    have same : Learning.lasso (a, b) (Learning.prefixOf o t) =
+        Learning.lasso (s, b) (Learning.prefixOf o t) :=
       (Learning.lasso_claims (o := o) (h := (a, b))
         (Nat.le_trans (Nat.succ_le_succ (Nat.add_le_add_right from_s b)) far)).trans
         (Learning.lasso_claims (o := o) (h := (s, b)) far).symm
-    exact Learning.lasso_holds from_here t
-      (Eq.subst (motive := fun c => Learning.Refuted c (o t)) same refuted)
+    exact Learning.lasso_accords from_here t
+      (Eq.subst (motive := fun c => Learning.Misses c (o t)) same refuted)
 
 /-- **The learner not given the bound comes to rest within it.** On a history with at
 most `N` states, the learner by refutation over the lasso hypotheses, given neither `N`
 nor the course (`Becoming.Learning`'s `learner lassos`), claims at every step from
 `N + (N + N - 1) * tri N` on and is right. Its hypotheses all lie within `N`; in each stretch of
 `N + N - 1` steps from `N` on it is refuted, or the hypothesis it holds is never refuted again
-(`unrefuted_persists`); it is refuted fewer than `tri N` times. Its record does not show the
-step (`Becoming.Learning`'s `no_record_fixes_next_finite`); the bound does. -/
-theorem learner_rests {N : Nat} (bound : StatesBelow o N) :
+(`no_miss_persists`); it is refuted fewer than `tri N` times. Its record does not show the
+step (`Becoming.Learning`'s `no_prefix_fixes_next_finite`); the bound does. -/
+theorem byElimination_rests {N : Nat} (bound : StatesBelow o N) :
     ∀ t, N + (N + N - 1) * Learning.tri N ≤ t →
-      Learning.learner Learning.lassos (Learning.record o t) = some (o t) := by
+      Learning.byElimination Learning.lassos (Learning.prefixOf o t) = some (o t) := by
   match statesBelow_iff_lasso.mp bound with
   | ⟨i, q, within, repeats⟩ =>
-    match Learning.lasso_learner_bounded repeats with
+    match Learning.lasso_byElimination_bounded repeats with
     | ⟨top, claims, _⟩ =>
       let W := N + N - 1
       let k := Learning.index Learning.lassos o
@@ -876,7 +876,7 @@ theorem learner_rests {N : Nat} (bound : StatesBelow o N) :
         fun t => Nat.le_trans (Nat.succ_le_succ (Nat.le_trans (Learning.diag_le (top t))
           (Nat.le_of_eq (congrArg Learning.diag (Learning.pairAt_place i q))))) within
       have stays : ∀ s, N ≤ s → k (s + W) = k s → ∀ t, s ≤ t →
-          ¬ Learning.RefutedAt (Learning.learner Learning.lassos) o t := by
+          ¬ Learning.MissesAt (Learning.byElimination Learning.lassos) o t := by
         intro s from_N steady
         let h := Learning.pairAt (k s)
         have h_first : h.1 ≤ s :=
@@ -891,32 +891,32 @@ theorem learner_rests {N : Nat} (bound : StatesBelow o N) :
           ⟨mid, Nat.le_antisymm up (Nat.le_trans (Nat.le_of_eq mid.symm)
             (Learning.index_le_succ t))⟩
         have claim_is : ∀ t, k t = k s →
-            Learning.learner Learning.lassos (Learning.record o t) =
-              Learning.lasso h (Learning.record o t) := fun t at_t =>
-          congrArg (fun n => Learning.lasso (Learning.pairAt n) (Learning.record o t)) at_t
+            Learning.byElimination Learning.lassos (Learning.prefixOf o t) =
+              Learning.lasso h (Learning.prefixOf o t) := fun t at_t =>
+          congrArg (fun n => Learning.lasso (Learning.pairAt n) (Learning.prefixOf o t)) at_t
         have window : ∀ t, s ≤ t → t < s + W →
-            ¬ Learning.RefutedAt (Learning.lasso (h.1, h.2)) o t := fun t from_s lt refuted =>
+            ¬ Learning.MissesAt (Learning.lasso (h.1, h.2)) o t := fun t from_s lt refuted =>
           match flat t from_s lt with
           | ⟨mid, next⟩ =>
             Nat.succ_ne_self (k s) (((congrArg (· + 1) mid).symm.trans
-              (Learning.index_refuted (H := Learning.lassos) (o := o) (t := t)
-                (Eq.subst (motive := fun c => Learning.Refuted c (o t)) (claim_is t mid).symm
+              (Learning.index_missed (H := Learning.lassos) (o := o) (t := t)
+                (Eq.subst (motive := fun c => Learning.Misses c (o t)) (claim_is t mid).symm
                   refuted)).symm).trans next)
-        have never := unrefuted_persists bound (held_within s) h_first window
+        have never := no_miss_persists bound (held_within s) h_first window
         have kept : ∀ d, k (s + d) = k s := fun d =>
           Nat.rec (motive := fun d => k (s + d) = k s) rfl
             (fun d ih => (Learning.index_kept (fun refuted =>
               never (s + d) (Nat.le_add_right s d)
-                (Eq.subst (motive := fun c => Learning.Refuted c (o (s + d)))
+                (Eq.subst (motive := fun c => Learning.Misses c (o (s + d)))
                   (claim_is (s + d) ih) refuted))).trans ih) d
         intro t from_s refuted
         match gap_of_le from_s with
         | ⟨d, at_t⟩ =>
           have at_t_k : k t = k s := (congrArg k at_t).trans (kept d)
           exact never t from_s
-            (Eq.subst (motive := fun c => Learning.Refuted c (o t)) (claim_is t at_t_k) refuted)
+            (Eq.subst (motive := fun c => Learning.Misses c (o t)) (claim_is t at_t_k) refuted)
       have climb : ∀ j, j ≤ k (start j) ∨
-          ∀ t, start j ≤ t → ¬ Learning.RefutedAt (Learning.learner Learning.lassos) o t := by
+          ∀ t, start j ≤ t → ¬ Learning.MissesAt (Learning.byElimination Learning.lassos) o t := by
         intro j
         induction j with
         | zero => exact .inl (Nat.zero_le _)
@@ -937,7 +937,7 @@ theorem learner_rests {N : Nat} (bound : StatesBelow o N) :
               exact .inr fun t from_t =>
                 stays (start j) from_N steady t (Nat.le_trans later from_t)
       have quiet : ∀ t, start (Learning.tri (i + q) + q + 1) ≤ t →
-          ¬ Learning.RefutedAt (Learning.learner Learning.lassos) o t :=
+          ¬ Learning.MissesAt (Learning.byElimination Learning.lassos) o t :=
         match climb (Learning.tri (i + q) + q + 1) with
         | .inl count => absurd (Nat.le_trans count (top _)) (Nat.not_succ_le_self _)
         | .inr quiet => quiet
@@ -947,29 +947,29 @@ theorem learner_rests {N : Nat} (bound : StatesBelow o N) :
       have kept := quiet t (Nat.le_trans soon late)
       match claims t (Nat.le_trans within (Nat.le_trans (Nat.le_add_right N _) late)) with
       | ⟨_, made⟩ =>
-        exact made.trans (congrArg some (Learning.eq_of_not_refuted fun refuted =>
-          kept (Eq.subst (motive := fun c => Learning.Refuted c (o t)) made.symm refuted)))
+        exact made.trans (congrArg some (Learning.eq_of_not_missed fun refuted =>
+          kept (Eq.subst (motive := fun c => Learning.Misses c (o t)) made.symm refuted)))
 
 /-- **On a lasso course the learner comes to rest at a step that is found.** Where the course
 repeats from step `i` with period `q + 1`, the learner over the lasso hypotheses claims at every
 step from a step bounded by `i` and `q` on and is right: the rest that `Becoming.Learning`'s
 `rest_unrefuted` leaves unrefuted is found. -/
 theorem rests_of_lasso {i q : Nat} (repeats : Learning.Lasso o i q) :
-    ∃ T, ∀ t, T ≤ t → Learning.learner Learning.lassos (Learning.record o t) = some (o t) :=
-  ⟨_, learner_rests (statesBelow_iff_lasso.mpr ⟨i, q, Nat.le_refl _, repeats⟩)⟩
+    ∃ T, ∀ t, T ≤ t → Learning.byElimination Learning.lassos (Learning.prefixOf o t) = some (o t) :=
+  ⟨_, byElimination_rests (statesBelow_iff_lasso.mpr ⟨i, q, Nat.le_refl _, repeats⟩)⟩
 
 /-- **Induction in a world held by a list: the learner rests within a bound on the list.** Under
 a determined law whose configurations along an orbit are held by a list `l`, the learner by
 refutation over the lasso hypotheses, given neither the configurations nor how many there
 are, claims at every step from `N + (N + N - 1) * tri N` on and is right, `N` the length of
 `l`. -/
-theorem held_learner_rests {S : Type v} {next : S → S} {s : S} {l : List S}
+theorem held_byElimination_rests {S : Type v} {next : S → S} {s : S} {l : List S}
     (held : ∀ n, Law.orbit next s n ∈ l) (reg : S → O) :
     ∀ t, l.length + (l.length + l.length - 1) * Learning.tri l.length ≤ t →
-      Learning.learner Learning.lassos
-          (Learning.record (fun n => reg (Law.orbit next s n)) t) =
+      Learning.byElimination Learning.lassos
+          (Learning.prefixOf (fun n => reg (Law.orbit next s n)) t) =
         some (reg (Law.orbit next s t)) :=
-  learner_rests (statesBelow_iff_lasso.mpr (Learning.lasso_of_held held reg))
+  byElimination_rests (statesBelow_iff_lasso.mpr (Learning.lasso_of_held held reg))
 
 end Resting
 
@@ -1047,37 +1047,37 @@ as the learner given `N` (`withBound_exact`), and as early as any learner can be
 (`rest_earliest`). What it finds is within the true bound, since the true hypothesis is borne out,
 and a hypothesis within `N` borne out before `N + N - 1` holds (`bounded_induction`). -/
 theorem leastBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : StatesBelow o N)
-    (late : N + N - 1 ≤ t) : leastBound (Learning.record o t) = some (o t) :=
+    (late : N + N - 1 ≤ t) : leastBound (Learning.prefixOf o t) = some (o t) :=
   have N_le : N ≤ N + N - 1 := le_twice_less_one (statesBelow_pos bound)
-  have long : N ≤ (Learning.record o t).length :=
-    Eq.subst (motive := fun n => N ≤ n) (Learning.record_length o t).symm (Nat.le_trans N_le late)
+  have long : N ≤ (Learning.prefixOf o t).length :=
+    Eq.subst (motive := fun n => N ≤ n) (Learning.prefix_length o t).symm (Nat.le_trans N_le late)
   match bounded_hypothesis bound with
   | ⟨i, q, within, holds⟩ =>
-    match leastFit_within (l := Learning.record o t) (h₀ := (i, q))
-        ⟨within, borneOut_record_iff.mpr fun t' _ => holds t'⟩ long with
+    match leastFit_within (l := Learning.prefixOf o t) (h₀ := (i, q))
+        ⟨within, borneOut_prefix_iff.mpr fun t' _ => holds t'⟩ long with
     | ⟨(i', q'), found, within'⟩ =>
       have borne := (leastFit_sound found).2
       have speaks : i' + q' + 1 ≤ t := Nat.le_trans within' (Nat.le_trans N_le late)
-      have holds' : Learning.Holds (Learning.lasso (i', q')) o :=
+      have holds' : Learning.Accords (Learning.lasso (i', q')) o :=
         bounded_induction bound within' fun t' lt =>
-          borneOut_record_iff.mp borne t' (Nat.lt_of_lt_of_le lt late)
+          borneOut_prefix_iff.mp borne t' (Nat.lt_of_lt_of_le lt late)
       match Learning.back_made o
           (Nat.lt_of_lt_of_le (Nat.lt_succ_of_le (Nat.le_add_left q' i')) speaks) with
       | ⟨v, at_back⟩ =>
-        have value : Learning.lasso (i', q') (Learning.record o t) = some v :=
+        have value : Learning.lasso (i', q') (Learning.prefixOf o t) = some v :=
           (Learning.lasso_claims (o := o) (h := (i', q')) speaks).trans at_back
         have right : v = o t :=
-          Learning.eq_of_not_refuted
-            (Eq.subst (motive := fun c => ¬ Learning.Refuted c (o t)) value (holds' t))
-        (congrArg (claimBy (Learning.record o t)) found).trans (value.trans (congrArg some right))
+          Learning.eq_of_not_missed
+            (Eq.subst (motive := fun c => ¬ Learning.Misses c (o t)) value (holds' t))
+        (congrArg (claimBy (Learning.prefixOf o t)) found).trans (value.trans (congrArg some right))
 
 /-- **No learner rests sooner.** Given two values, no learner is right at step `M + M + 2` on
 every history with at most `M + 2` states: with or without the bound, `N + N - 1` is the earliest
 step from which a learner can be right on every history with at most `N ≥ 2` states. -/
 theorem rest_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
     ¬ ∀ o : Nat → O, StatesBelow o (M + 2) →
-      pred (Learning.record o (M + M + 2)) = some (o (M + M + 2)) :=
-  fun all => match record_short_twice two M with
+      pred (Learning.prefixOf o (M + M + 2)) = some (o (M + M + 2)) :=
+  fun all => match prefix_short_twice two M with
     | ⟨o, o', bound, bound', same, differ⟩ =>
       differ (Option.some.inj ((all o bound).symm.trans ((congrArg pred same).trans (all o' bound'))))
 
@@ -1085,17 +1085,17 @@ theorem rest_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M 
 right at step `1` on every history with one state is refuted at no step of every history with
 two states. A learner not given the bound that rests at `N + N - 1` for every `N`, as the learner by
 the least bound does, speaks where a larger bound would keep it silent, and is refuted there;
-the learner given the bound is silent instead (`withBound_holds`). -/
-theorem rest_without_bound_refuted {x y : O} (two : x ≠ y) (pred : List O → Option O) :
-    ¬ ((∀ o : Nat → O, StatesBelow o 1 → pred (Learning.record o 1) = some (o 1)) ∧
-      ∀ o : Nat → O, StatesBelow o 2 → Learning.Holds pred o) :=
+the learner given the bound is silent instead (`withBound_accords`). -/
+theorem rest_without_bound_missed {x y : O} (two : x ≠ y) (pred : List O → Option O) :
+    ¬ ((∀ o : Nat → O, StatesBelow o 1 → pred (Learning.prefixOf o 1) = some (o 1)) ∧
+      ∀ o : Nat → O, StatesBelow o 2 → Learning.Accords pred o) :=
   fun ⟨rests, holds⟩ =>
     have still_one : StatesBelow (fun _ => x) 1 :=
       statesBelow_iff_lasso.mpr ⟨0, 0, Nat.le_refl 1, fun _ _ => rfl⟩
     have turn_two : StatesBelow (Learning.holdFrom (fun _ => x) 1 y) 2 :=
       statesBelow_iff_lasso.mpr ⟨1, 0, Nat.le_refl 2, Learning.holdFrom_lasso (fun _ => x) 1 y⟩
-    have same : Learning.record (Learning.holdFrom (fun _ => x) 1 y) 1 =
-        Learning.record (fun _ => x) 1 :=
+    have same : Learning.prefixOf (Learning.holdFrom (fun _ => x) 1 y) 1 =
+        Learning.prefixOf (fun _ => x) 1 :=
       congrArg (· :: []) (Learning.holdFrom_before (fun _ => x) y Nat.zero_lt_one)
     holds _ turn_two 1 ⟨x, (congrArg pred same).trans (rests _ still_one), fun right =>
       two (right.trans (Learning.holdFrom_after (fun _ => x) y (Nat.le_refl 1)))⟩
@@ -1116,19 +1116,19 @@ theorem not_ne_bool : ∀ b : Bool, (!b) ≠ b
   | true, same => nomatch (same : false = true)
   | false, same => nomatch (same : true = false)
 
-theorem register_two (a : Nat) : Negation.register (a + 2) = Negation.register a :=
-  not_not_bool (Negation.register a)
+theorem course_two (a : Nat) : Negation.course (a + 2) = Negation.course a :=
+  not_not_bool (Negation.course a)
 
-theorem register_even (a : Nat) : ∀ e, Negation.register (a + 2 * e) = Negation.register a
+theorem course_even (a : Nat) : ∀ e, Negation.course (a + 2 * e) = Negation.course a
   | 0 => rfl
-  | e + 1 => (register_two (a + 2 * e)).trans (register_even a e)
+  | e + 1 => (course_two (a + 2 * e)).trans (course_even a e)
 
-theorem register_double : ∀ e, Negation.register (2 * e) = true
+theorem course_double : ∀ e, Negation.course (2 * e) = true
   | 0 => rfl
-  | e + 1 => (register_two (2 * e)).trans (register_double e)
+  | e + 1 => (course_two (2 * e)).trans (course_double e)
 
-theorem register_odd (e : Nat) : Negation.register (2 * e + 1) = false :=
-  congrArg (fun b => !b) (register_double e)
+theorem course_odd (e : Nat) : Negation.course (2 * e + 1) = false :=
+  congrArg (fun b => !b) (course_double e)
 
 /-- The place along a cycle of `n + 1` places. -/
 def cyclePos (n t : Nat) : Nat := Law.orbit (Learning.lassoNext 0 n) 0 t
@@ -1148,15 +1148,15 @@ theorem cyclePos_block (n : Nat) : ∀ (j : Nat) {x : Nat}, x ≤ n → cyclePos
 
 /-- **The two-valued negation along a cycle of `n + 1` places.** Where `n + 1` is odd, the
 negation cannot close around the cycle: it is broken once in every turn. -/
-def oddCycle (n t : Nat) : Bool := Negation.register (cyclePos n t)
+def oddCycle (n t : Nat) : Bool := Negation.course (cyclePos n t)
 
 theorem oddCycle_block (n j : Nat) {x : Nat} (le : x ≤ n) :
-    oddCycle n ((n + 1) * j + x) = Negation.register x :=
-  congrArg Negation.register (cyclePos_block n j le)
+    oddCycle n ((n + 1) * j + x) = Negation.course x :=
+  congrArg Negation.course (cyclePos_block n j le)
 
 /-- The negation along a cycle of `n + 1` places has at most `n + 1` states. -/
 theorem oddCycle_lasso (n : Nat) : Learning.Lasso (oddCycle n) 0 n := fun u _ =>
-  congrArg Negation.register
+  congrArg Negation.course
     ((congrArg (cyclePos n) (congrArg (· + (n + 1)) (Nat.zero_add u).symm)).trans
       ((lassoPos_period (i := 0) (q := n) u).trans (congrArg (cyclePos n) (Nat.zero_add u))))
 
@@ -1166,39 +1166,39 @@ theorem oddCycle_below (n : Nat) : StatesBelow (oddCycle n) (n + 1) :=
 
 /-- A lasso hypothesis claims the value `q + 1` steps back. -/
 theorem lasso_back {O : Type u} {o : Nat → O} {i q u : Nat} (from_i : i ≤ u) :
-    Learning.lasso (i, q) (Learning.record o (u + q + 1)) = some (o u) :=
+    Learning.lasso (i, q) (Learning.prefixOf o (u + q + 1)) = some (o u) :=
   (Learning.lasso_claims (o := o) (h := (i, q))
-    (Nat.succ_le_succ (Nat.add_le_add_right from_i q))).trans (Learning.back_record o u q)
+    (Nat.succ_le_succ (Nat.add_le_add_right from_i q))).trans (Learning.back_prefix o u q)
 
 /-- The learner by refutation keeps a hypothesis not refuted. -/
 theorem run_kept {O : Type u} [DecidableEq O] {H : Nat → List O → Option O} {o : Nat → O}
     {s k : Nat} (held : Learning.index H o s = k) :
-    ∀ w, (∀ d, d < w → ¬ Learning.Refuted (H k (Learning.record o (s + d))) (o (s + d))) →
+    ∀ w, (∀ d, d < w → ¬ Learning.Misses (H k (Learning.prefixOf o (s + d))) (o (s + d))) →
       Learning.index H o (s + w) = k
   | 0, _ => held
   | w + 1, right =>
     have before : Learning.index H o (s + w) = k :=
       run_kept held w (fun d lt => right d (Nat.lt_succ_of_lt lt))
     (Learning.index_kept (fun refuted => right w (Nat.lt_succ_self w)
-      (Eq.subst (motive := fun j => Learning.Refuted (H j (Learning.record o (s + w))) (o (s + w)))
+      (Eq.subst (motive := fun j => Learning.Misses (H j (Learning.prefixOf o (s + w))) (o (s + w)))
         before refuted))).trans before
 
 /-- The learner by refutation moves on from a hypothesis refuted. -/
 theorem moved_on {O : Type u} [DecidableEq O] {H : Nat → List O → Option O} {o : Nat → O}
     {t k : Nat} (held : Learning.index H o t = k)
-    (wrong : Learning.Refuted (H k (Learning.record o t)) (o t)) :
-    Learning.RefutedAt (Learning.learner H) o t ∧ Learning.index H o (t + 1) = k + 1 :=
-  have refuted : Learning.RefutedAt (Learning.learner H) o t :=
-    Eq.subst (motive := fun j => Learning.Refuted (H j (Learning.record o t)) (o t)) held.symm wrong
-  ⟨refuted, (Learning.index_refuted refuted).trans (congrArg (· + 1) held)⟩
+    (wrong : Learning.Misses (H k (Learning.prefixOf o t)) (o t)) :
+    Learning.MissesAt (Learning.byElimination H) o t ∧ Learning.index H o (t + 1) = k + 1 :=
+  have refuted : Learning.MissesAt (Learning.byElimination H) o t :=
+    Eq.subst (motive := fun j => Learning.Misses (H j (Learning.prefixOf o t)) (o t)) held.symm wrong
+  ⟨refuted, (Learning.index_missed refuted).trans (congrArg (· + 1) held)⟩
 
-theorem refuted_of {v w : Bool} {c : Option Bool} (claims : c = some v) (differs : v ≠ w) :
-    Learning.Refuted c w := ⟨v, claims, differs⟩
+theorem missed_of {v w : Bool} {c : Option Bool} (claims : c = some v) (differs : v ≠ w) :
+    Learning.Misses c w := ⟨v, claims, differs⟩
 
-theorem unrefuted_of {v w : Bool} {c : Option Bool} (claims : c = some v) (same : v = w) :
-    ¬ Learning.Refuted c w :=
-  Eq.subst (motive := fun c => ¬ Learning.Refuted c w) claims.symm
-    (Eq.subst (motive := fun x => ¬ Learning.Refuted (some x) w) same.symm Learning.not_refuted_self)
+theorem not_missed_of {v w : Bool} {c : Option Bool} (claims : c = some v) (same : v = w) :
+    ¬ Learning.Misses c w :=
+  Eq.subst (motive := fun c => ¬ Learning.Misses c w) claims.symm
+    (Eq.subst (motive := fun x => ¬ Learning.Misses (some x) w) same.symm Learning.not_missed_self)
 
 theorem le_of_add_right : ∀ {a c : Nat} (b : Nat), a + b ≤ c + b → a ≤ c
   | _, _, 0, le => le
@@ -1221,13 +1221,13 @@ theorem even_shift_runs {e g j s₀ w i k : Nat} (fit : 2 * e + 2 + (2 * g + 1) 
     (run : s₀ + w = 2 * g + 1) (from_i : i ≤ (n + 1) * j + s₀)
     (pair : Learning.pairAt k = (i, 2 * e + 1))
     (held : Learning.index Learning.lassos (oddCycle n) ((n + 1) * j + s₀ + (2 * e + 1) + 1) = k) :
-    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle n) ((n + 1) * (j + 1)) ∧
+    Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle n) ((n + 1) * (j + 1)) ∧
       Learning.index Learning.lassos (oddCycle n) ((n + 1) * (j + 1) + 1) = k + 1 := by
   let B := (n + 1) * j
   let o := oddCycle n
   have claim : ∀ x, i ≤ B + x →
-      Learning.lassos k (Learning.record o (B + x + (2 * e + 1) + 1)) = some (o (B + x)) :=
-    fun x le => (congrArg (fun h => Learning.lasso h (Learning.record o (B + x + (2 * e + 1) + 1)))
+      Learning.lassos k (Learning.prefixOf o (B + x + (2 * e + 1) + 1)) = some (o (B + x)) :=
+    fun x le => (congrArg (fun h => Learning.lasso h (Learning.prefixOf o (B + x + (2 * e + 1) + 1)))
       pair).trans (lasso_back le)
   have room : ∀ d, d < w → s₀ + d + (2 * e + 2) ≤ n := fun d lt =>
     Nat.le_of_lt_succ (Eq.subst (motive := fun b => s₀ + d + (2 * e + 2) < b) fit
@@ -1237,12 +1237,12 @@ theorem even_shift_runs {e g j s₀ w i k : Nat} (fit : 2 * e + 2 + (2 * g + 1) 
           (Nat.add_lt_add_left lt s₀)) (2 * e + 2))))
   have kept := run_kept held w fun d lt =>
     have le := room d lt
-    unrefuted_of
-      ((congrArg (fun t => Learning.lassos k (Learning.record o t)) (shift_run B s₀ (2 * e + 1) d)).trans
+    not_missed_of
+      ((congrArg (fun t => Learning.lassos k (Learning.prefixOf o t)) (shift_run B s₀ (2 * e + 1) d)).trans
         ((claim (s₀ + d) (Nat.le_trans from_i (Nat.add_le_add_left (Nat.le_add_right s₀ d) B))).trans
           (congrArg some (oddCycle_block n j
             (Nat.le_trans (Nat.le_add_right (s₀ + d) (2 * e + 2)) le)))))
-      ((register_even (s₀ + d) (e + 1)).symm.trans
+      ((course_even (s₀ + d) (e + 1)).symm.trans
         ((oddCycle_block n j le).symm.trans
           (congrArg o ((four_assoc B (s₀ + d) (2 * e + 1)).symm.trans
             (shift_run B s₀ (2 * e + 1) d).symm))))
@@ -1256,15 +1256,15 @@ theorem even_shift_runs {e g j s₀ w i k : Nat} (fit : 2 * e + 2 + (2 * g + 1) 
       (Nat.lt_add_of_pos_right (Nat.zero_lt_succ _))))
   have held_end : Learning.index Learning.lassos o ((n + 1) * (j + 1)) = k :=
     Eq.subst (motive := fun t => Learning.index Learning.lassos o t = k) at_end kept
-  have wrong : Learning.Refuted (Learning.lassos k (Learning.record o ((n + 1) * (j + 1))))
+  have wrong : Learning.Misses (Learning.lassos k (Learning.prefixOf o ((n + 1) * (j + 1))))
       (o ((n + 1) * (j + 1))) :=
-    refuted_of
-      ((congrArg (fun t => Learning.lassos k (Learning.record o t))
+    missed_of
+      ((congrArg (fun t => Learning.lassos k (Learning.prefixOf o t))
         ((at_end.symm.trans (shift_run B s₀ (2 * e + 1) w)).trans
           (congrArg (fun x => B + x + (2 * e + 1) + 1) run))).trans
         ((claim (2 * g + 1) (Eq.subst (motive := fun x => i ≤ B + x) run
           (Nat.le_trans from_i (Nat.add_le_add_left (Nat.le_add_right s₀ w) B)))).trans
-          (congrArg some ((oddCycle_block n j g_le).trans (register_odd g)))))
+          (congrArg some ((oddCycle_block n j g_le).trans (course_odd g)))))
       (fun same => nomatch (same.trans (oddCycle_block n (j + 1) (Nat.zero_le n)) : false = true))
   exact moved_on held_end wrong
 
@@ -1275,15 +1275,15 @@ theorem odd_shift_runs {e h j a w i k : Nat} (fit : 2 * e + 1 + 2 * (h + 1) = n 
     (run : a + w = 2 * e + 1) (diag : i + 2 * e ≤ n)
     (pair : Learning.pairAt k = (i, 2 * e))
     (held : Learning.index Learning.lassos (oddCycle n) ((n + 1) * (j + 1) + a) = k) :
-    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle n)
+    Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle n)
         ((n + 1) * (j + 1) + (2 * e + 1)) ∧
       Learning.index Learning.lassos (oddCycle n) ((n + 1) * (j + 1) + (2 * e + 1) + 1) = k + 1 := by
   let B' := (n + 1) * j
   let B := (n + 1) * (j + 1)
   let o := oddCycle n
   have claim : ∀ u, i ≤ u →
-      Learning.lassos k (Learning.record o (u + 2 * e + 1)) = some (o u) :=
-    fun u le => (congrArg (fun p => Learning.lasso p (Learning.record o (u + 2 * e + 1)))
+      Learning.lassos k (Learning.prefixOf o (u + 2 * e + 1)) = some (o u) :=
+    fun u le => (congrArg (fun p => Learning.lasso p (Learning.prefixOf o (u + 2 * e + 1)))
       pair).trans (lasso_back le)
   have i_le : i ≤ n := Nat.le_trans (Nat.le_add_right i (2 * e)) diag
   have late : n + 1 ≤ B := Nat.le_add_left (n + 1) B'
@@ -1307,10 +1307,10 @@ theorem odd_shift_runs {e h j a w i k : Nat} (fit : 2 * e + 1 + 2 * (h + 1) = n 
         (Eq.subst (motive := fun b => B ≤ b) (back_turn (a + d)).symm (Nat.le_add_right B (a + d)))
     have from_i : i ≤ B' + (a + d + 2 * (h + 1)) :=
       le_of_add_right (2 * e) (Nat.le_of_succ_le_succ chain)
-    unrefuted_of
-      ((congrArg (fun t => Learning.lassos k (Learning.record o t)) at_t).trans
+    not_missed_of
+      ((congrArg (fun t => Learning.lassos k (Learning.prefixOf o t)) at_t).trans
         ((claim _ from_i).trans (congrArg some (oddCycle_block n j u_le))))
-      ((register_even (a + d) (h + 1)).trans
+      ((course_even (a + d) (h + 1)).trans
         ((oddCycle_block n (j + 1) r_le).symm.trans
           (congrArg o (Nat.add_assoc B a d).symm)))
   have at_end : (n + 1) * (j + 1) + a + w = (n + 1) * (j + 1) + (2 * e + 1) :=
@@ -1319,25 +1319,25 @@ theorem odd_shift_runs {e h j a w i k : Nat} (fit : 2 * e + 1 + 2 * (h + 1) = n 
     Eq.subst (motive := fun t => Learning.index Learning.lassos o t = k) at_end kept
   have e_le : 2 * e + 1 ≤ n := Nat.le_of_lt_succ (Eq.subst (motive := fun b => 2 * e + 1 < b) fit
     (Nat.lt_add_of_pos_right (Nat.zero_lt_succ _)))
-  have wrong : Learning.Refuted (Learning.lassos k (Learning.record o (B + (2 * e + 1))))
+  have wrong : Learning.Misses (Learning.lassos k (Learning.prefixOf o (B + (2 * e + 1))))
       (o (B + (2 * e + 1))) :=
-    refuted_of ((claim B (Nat.le_trans i_le (Nat.le_trans (Nat.le_succ n) late))).trans
+    missed_of ((claim B (Nat.le_trans i_le (Nat.le_trans (Nat.le_succ n) late))).trans
         (congrArg some (oddCycle_block n (j + 1) (Nat.zero_le n))))
-      (fun same => nomatch (same.trans ((oddCycle_block n (j + 1) e_le).trans (register_odd e)) :
+      (fun same => nomatch (same.trans ((oddCycle_block n (j + 1) e_le).trans (course_odd e)) :
         true = false))
   exact moved_on held_end wrong
 
 /-- **The shift by one is refuted at once** anywhere inside a turn. -/
-theorem unit_shift_refuted {j x i k : Nat} (inside : x + 1 ≤ n) (from_i : i ≤ (n + 1) * j + x)
+theorem unit_shift_missed {j x i k : Nat} (inside : x + 1 ≤ n) (from_i : i ≤ (n + 1) * j + x)
     (pair : Learning.pairAt k = (i, 0))
     (held : Learning.index Learning.lassos (oddCycle n) ((n + 1) * j + x + 1) = k) :
-    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle n) ((n + 1) * j + x + 1) ∧
+    Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle n) ((n + 1) * j + x + 1) ∧
       Learning.index Learning.lassos (oddCycle n) ((n + 1) * j + x + 1 + 1) = k + 1 :=
-  moved_on held (refuted_of
-    ((congrArg (fun p => Learning.lasso p (Learning.record (oddCycle n) ((n + 1) * j + x + 1)))
+  moved_on held (missed_of
+    ((congrArg (fun p => Learning.lasso p (Learning.prefixOf (oddCycle n) ((n + 1) * j + x + 1)))
       pair).trans ((lasso_back (q := 0) from_i).trans
         (congrArg some (oddCycle_block n j (Nat.le_of_succ_le inside)))))
-    (fun same => not_ne_bool (Negation.register x)
+    (fun same => not_ne_bool (Negation.course x)
       (same.trans (oddCycle_block n j (x := x + 1) inside)).symm))
 
 /-- The pair the learner over the lasso hypotheses holds one step into turn `J` of the
@@ -1360,7 +1360,7 @@ ending its diagonal is refuted at its place and the even shift after it at the s
 next turn. -/
 theorem turn_pair {M e i j : Nat} (lt : e < M) (diag : i + 1 + 2 * e ≤ 2 * M)
     (now : turnHeld (2 * M) (j + 1) = (i + 1, 2 * e)) :
-    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle (2 * M))
+    Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle (2 * M))
         ((2 * M + 1) * (j + 1 + 1)) ∧
       turnHeld (2 * M) (j + 1 + 1) = Learning.nextPair (i, 2 * e + 1) :=
   let k := Learning.index Learning.lassos (oddCycle (2 * M)) ((2 * M + 1) * (j + 1) + 1)
@@ -1386,7 +1386,7 @@ theorem turn_pair {M e i j : Nat} (lt : e < M) (diag : i + 1 + 2 * e ≤ 2 * M)
 ending its diagonal is refuted at its place, the shift by one opening the next diagonal at
 once, and the shift by two at the start of the next turn. -/
 theorem turn_end {M e j : Nat} (lt : e < M) (now : turnHeld (2 * M) (j + 1) = (0, 2 * e)) :
-    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle (2 * M))
+    Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle (2 * M))
         ((2 * M + 1) * (j + 1 + 1)) ∧
       turnHeld (2 * M) (j + 1 + 1) = Learning.nextPair (2 * e, 1) :=
   let k := Learning.index Learning.lassos (oddCycle (2 * M)) ((2 * M + 1) * (j + 1) + 1)
@@ -1401,7 +1401,7 @@ theorem turn_end {M e j : Nat} (lt : e < M) (now : turnHeld (2 * M) (j + 1) = (0
       (Eq.subst (motive := fun b => b ≤ 2 * M) (Nat.zero_add (2 * e)).symm
         (Nat.le_trans (Nat.le_add_right (2 * e) 2) room)) now rfl with
     | ⟨_, first⟩ =>
-      match unit_shift_refuted (n := 2 * M) (j := j + 1) (x := 2 * e + 1) (k := k + 1) room
+      match unit_shift_missed (n := 2 * M) (j := j + 1) (x := 2 * e + 1) (k := k + 1) room
         (Nat.le_add_left (2 * e + 1) _) pair₁ first with
       | ⟨_, second⟩ =>
         have fitE : 2 * 0 + 2 + (2 * (e + g) + 1) = 2 * M + 1 :=
@@ -1471,10 +1471,10 @@ theorem turn_double {M c j : Nat} (room : c + 2 ≤ M)
 diagonal `2`. -/
 theorem start_turn (m : Nat) : turnHeld (2 * (m + 1)) 1 = (2, 0) :=
   have first : Learning.index Learning.lassos (oddCycle (2 * (m + 1))) 1 = 0 := rfl
-  match unit_shift_refuted (n := 2 * (m + 1)) (j := 0) (x := 0) (i := 0) (k := 0)
+  match unit_shift_missed (n := 2 * (m + 1)) (j := 0) (x := 0) (i := 0) (k := 0)
     (Nat.succ_le_succ (Nat.zero_le _)) (Nat.zero_le _) rfl first with
   | ⟨_, second⟩ =>
-    match unit_shift_refuted (n := 2 * (m + 1)) (j := 0) (x := 1) (i := 1) (k := 0 + 1)
+    match unit_shift_missed (n := 2 * (m + 1)) (j := 0) (x := 1) (i := 1) (k := 0 + 1)
       (Nat.succ_le_succ (Nat.succ_le_succ (Nat.zero_le _))) (Nat.le_refl _) rfl second with
     | ⟨_, third⟩ =>
       match even_shift_runs (n := 2 * (m + 1)) (e := 0) (g := m) (j := 0) (s₀ := 1) (w := 2 * m) (i := 0)
@@ -1499,8 +1499,8 @@ cycle of `N = 2m + 3` places, a history with at most `N` states, the learner by 
 the lasso hypotheses is refuted at step `(N³ - N) / 4 = (2m + 3)(m + 1)(m + 2)`: it passes every
 diagonal of hypotheses before the one holding the period `N`, each even shift costing a whole
 turn. -/
-theorem learner_refuted_late (m : Nat) :
-    Learning.RefutedAt (Learning.learner Learning.lassos) (oddCycle (2 * (m + 1)))
+theorem byElimination_missed_late (m : Nat) :
+    Learning.MissesAt (Learning.byElimination Learning.lassos) (oddCycle (2 * (m + 1)))
       ((2 * (m + 1) + 1) * ((m + 1) * (m + 1) + (m + 1))) :=
   have last := turn_diagonals m m (Nat.le_refl _)
   have along := turn_walk (M := m + 1) m 0 ((m + 1) * m + m) 2
@@ -1514,22 +1514,22 @@ theorem learner_refuted_late (m : Nat) :
     ((congrArg (turnHeld (2 * (m + 1))) (Nat.add_right_comm ((m + 1) * m + m) 1 m)).symm.trans
       along) with
   | ⟨refuted, _⟩ =>
-    Eq.subst (motive := fun y => Learning.RefutedAt (Learning.learner Learning.lassos)
+    Eq.subst (motive := fun y => Learning.MissesAt (Learning.byElimination Learning.lassos)
         (oddCycle (2 * (m + 1))) ((2 * (m + 1) + 1) * (y + 1)))
       (Nat.add_right_comm ((m + 1) * m + m) 1 m).symm refuted
 
 /-- **The learner by refutation rests no earlier than a cubic step.** A step from which the
 learner by refutation over the lasso hypotheses is right on every two-valued history with at
-most `N = 2m + 3` states comes after `(N³ - N) / 4`. With `learner_rests` its rest step is cubic
+most `N = 2m + 3` states comes after `(N³ - N) / 4`. With `byElimination_rests` its rest step is cubic
 in `N`; the learner by the least bound rests from `2N - 1` (`leastBound_exact`). -/
-theorem learner_rest_cubic (m : Nat) {T : Nat}
+theorem byElimination_rest_cubic (m : Nat) {T : Nat}
     (rests : ∀ o : Nat → Bool, StatesBelow o (2 * m + 3) → ∀ t, T ≤ t →
-      Learning.learner Learning.lassos (Learning.record o t) = some (o t)) :
+      Learning.byElimination Learning.lassos (Learning.prefixOf o t) = some (o t)) :
     (2 * m + 3) * ((m + 1) * (m + 2)) < T :=
   match Nat.lt_or_ge ((2 * m + 3) * ((m + 1) * (m + 2))) T with
   | .inl early => early
   | .inr late =>
-    match learner_refuted_late m with
+    match byElimination_missed_late m with
     | ⟨_, claims, differs⟩ =>
       absurd (Option.some.inj (claims.symm.trans
         (rests (oddCycle (2 * (m + 1))) (oddCycle_below (2 * (m + 1))) _ late))) differs
@@ -1571,14 +1571,14 @@ theorem sameFuture_iff_below {next : S → S} {o : S → R} {l : List S}
 
 /-- The name of a configuration: its registered future before step `T`, latest first. -/
 def name (next : S → S) (o : S → R) (T : Nat) (s : S) : List R :=
-  Learning.record (fun n => o (Law.orbit next s n)) T
+  Learning.prefixOf (fun n => o (Law.orbit next s n)) T
 
 /-- **The split that makes sense, named with no quotient.** In a world a list holds, naming each
 configuration by its registered future before `N + N - 1` makes sense. -/
 theorem name_identifiesAlike {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
-    IdentifiesAlike (Law.registered next o) (name next o (l.length + l.length - 1)) :=
+    IdentifiesAlike (Law.frameBy next o) (name next o (l.length + l.length - 1)) :=
   fun s s' =>
-    (Identification.record_eq_iff.trans
+    (Identification.prefix_eq_iff.trans
       (sameFuture_iff_below (fun s _ => world (next s)) (world s) (world s')).symm).trans
       Law.alike_iff_sameFuture.symm
 
@@ -1590,7 +1590,7 @@ theorem name_carries {next : S → S} {o : S → R} {l : List S} (world : ∀ s,
 
 /-- **Likeness is decided by comparing names.** -/
 def decideAlike [DecidableEq R] {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l)
-    (s s' : S) : Decidable (Alike (Law.registered next o) (Law.registered next o) s s') :=
+    (s s' : S) : Decidable (Alike (Law.frameBy next o) (Law.frameBy next o) s s') :=
   decidable_of_iff _ (name_identifiesAlike world s s')
 
 /-! ## Moore's bound: the classes of one world -/

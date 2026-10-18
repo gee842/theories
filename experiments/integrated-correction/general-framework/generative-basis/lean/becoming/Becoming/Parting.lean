@@ -36,7 +36,7 @@ with no premise beyond what each law names, what a record fixes along the runs o
   `2(T + N) - 1` on (`late_right`).
 * **Where no two runs part, a learner given the world is right.** Take a process with listed
   moves and configurations, decided steps and decided registered values. The learner given the
-  world (`worldLearner`) reads from the record the configurations a run from `s` can be at
+  world (`fromProcess`) reads from the record the configurations a run from `s` can be at
   (`candidates`). It keeps the first from which a path as long as the list of configurations is
   open (`live`, `firstLive`), and such a path goes on without end (`live_persists`, `liveRun`):
   `live` is `Lasting.Continues` decided (`live_iff_continues`), and where a list of `N` holds
@@ -145,15 +145,15 @@ def Unparted (P : Process S A) (reg : S → R) (s : S) : Prop :=
 /-- The learner `pred`, reading the record of what is registered along `r` before `t`, claims
 what is registered at `t`. -/
 def RightAt (pred : List R → Option R) (reg : S → R) (r : Run P) (t : Nat) : Prop :=
-  pred (Learning.record (course reg r) t) = some (reg (r.state t))
+  pred (Learning.prefixOf (course reg r) t) = some (reg (r.state t))
 
 /-- **At a parting no learner is right on both.** The two records before the step are one
 record, whatever the learner is given. -/
 theorem not_right_on_both (pred : List R → Option R) {reg : S → R} {r r' : Run P} {t : Nat}
     (part : PartAt reg r r' t) : ¬ (RightAt pred reg r t ∧ RightAt pred reg r' t) :=
   fun ⟨right, right'⟩ =>
-    have same : Learning.record (course reg r) t = Learning.record (course reg r') t :=
-      Learning.record_congr part.1
+    have same : Learning.prefixOf (course reg r) t = Learning.prefixOf (course reg r') t :=
+      Learning.prefix_congr part.1
     part.2 (Option.some.inj (right.symm.trans ((congrArg pred same).trans right')))
 
 /-- A learner right at every step from `T` on, on every run from `s`, leaves no two of those
@@ -242,7 +242,7 @@ theorem rest_earliest_runs {x y : R} (two : x ≠ y) (pred : List R → Option R
         (unparted_of_determined (show Determined (Law.process next) from
           fun s _ t t' (first : t = next s) (second : t' = next s) => first.trans second.symm)
           reg _)
-      (congrArg pred (Learning.record_congr fun n _ => (reads n).symm)).trans
+      (congrArg pred (Learning.prefix_congr fun n _ => (reads n).symm)).trans
         (right.trans (congrArg some (reads (M + M + 2))))
 
 end Carries
@@ -567,19 +567,19 @@ theorem firstLive_found : ∀ {l : List S} {y : S}, y ∈ l → live P moves all
 variable (P moves all) in
 /-- **The learner given the world**: from the record, the configurations a run from `s` can be
 at; of these, the first from which the run can go on; what it registers. -/
-def worldLearner (record : List R) : Option R :=
+def fromProcess (record : List R) : Option R :=
   (firstLive P moves all (candidates P moves all reg s record)).map reg
 
 theorem run_in_candidates (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (r : Run P)
     (start : r.state 0 = s) :
-    ∀ t, r.state t ∈ candidates P moves all reg s (Learning.record (course reg r) t)
+    ∀ t, r.state t ∈ candidates P moves all reg s (Learning.prefixOf (course reg r) t)
   | 0 => Eq.subst (motive := fun x => x ∈ [s]) start.symm (.head _)
   | t + 1 => mem_keepIf.mpr ⟨every _, anyOf_of_mem (run_in_candidates every_move every r start t)
       (and_of (decide_eq_true rfl) (anyOf_of_mem (every_move (r.act t)) (decide_eq_true (r.step t))))⟩
 
 theorem candidates_run : ∀ (record : List R) (y : S),
     y ∈ candidates P moves all reg s record → ∀ q : Run P, q.state 0 = y →
-      ∃ r' : Run P, r'.state 0 = s ∧ Learning.record (course reg r') record.length = record ∧
+      ∃ r' : Run P, r'.state 0 = s ∧ Learning.prefixOf (course reg r') record.length = record ∧
         ∀ n, r'.state (record.length + n) = q.state n
   | [], y, mem, q, start =>
     have at_s : y = s := match mem_cons_split mem with
@@ -595,7 +595,7 @@ theorem candidates_run : ∀ (record : List R) (y : S),
         match candidates_run record x inside (before x a q into) rfl with
         | ⟨r', start', recorded, follows⟩ =>
           ⟨r', start',
-           show course reg r' record.length :: Learning.record (course reg r') record.length =
+           show course reg r' record.length :: Learning.prefixOf (course reg r') record.length =
                v :: record by
              rw [recorded]
              exact congrArg (· :: record)
@@ -608,17 +608,17 @@ moves and configurations and decided steps, the learner given the world is right
 on every run from `s` where no two runs from `s` part at `t`. -/
 theorem world_right (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) {t : Nat}
     (unparted : ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t)
-    (r : Run P) (start : r.state 0 = s) : RightAt (worldLearner P moves all reg s) reg r t :=
+    (r : Run P) (start : r.state 0 = s) : RightAt (fromProcess P moves all reg s) reg r t :=
   match firstLive_found (run_in_candidates reg s every_move every r start t)
       (live_of_run every_move every r all.length t) with
   | ⟨y, found⟩ => match firstLive_spec found with
     | ⟨inside, open_⟩ =>
       match candidates_run reg s _ y inside (liveRun every_move every ⟨y, open_⟩) rfl with
       | ⟨r', start', recorded, follows⟩ =>
-        have length : (Learning.record (course reg r) t).length = t := Learning.record_length _ t
+        have length : (Learning.prefixOf (course reg r) t).length = t := Learning.prefix_length _ t
         have agree : ∀ n, n < t → reg (r.state n) = reg (r'.state n) :=
-          Identification.record_eq_iff.mp
-            (Eq.subst (motive := fun k => Learning.record (course reg r') k = _) length recorded).symm
+          Identification.prefix_eq_iff.mp
+            (Eq.subst (motive := fun k => Learning.prefixOf (course reg r') k = _) length recorded).symm
         have at_t : r'.state t = y :=
           Eq.subst (motive := fun k => r'.state (k + 0) = y) length (follows 0)
         have same : reg y = reg (r.state t) :=
@@ -633,7 +633,7 @@ theorem world_right (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
 /-- **A learner given the world is right at a step on every run exactly where no two runs part
 there.** For a process with listed moves and configurations and decided steps. -/
 theorem world_right_iff (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (t : Nat) :
-    (∀ r : Run P, r.state 0 = s → RightAt (worldLearner P moves all reg s) reg r t) ↔
+    (∀ r : Run P, r.state 0 = s → RightAt (fromProcess P moves all reg s) reg r t) ↔
       ∀ r r' : Run P, r.state 0 = s → r'.state 0 = s → ¬ PartAt reg r r' t :=
   ⟨fun right _ _ start start' part => not_right_on_both _ part ⟨right _ start, right _ start'⟩,
    fun unparted => world_right reg s every_move every unparted⟩
@@ -673,11 +673,11 @@ theorem free_unparted_const {R : Type u} (x : R) (s : V) :
 /-- **No record shows that a world will not part.** Given two values, after every record two
 runs of free branching, each with that record, part. -/
 theorem free_parts_after {x y : V} (two : x ≠ y) (o : Nat → V) (t : Nat) :
-    ∃ r r' : Run (free V), Learning.record (course id r) t = Learning.record o t ∧
-      Learning.record (course id r') t = Learning.record o t ∧ PartAt id r r' t :=
+    ∃ r r' : Run (free V), Learning.prefixOf (course id r) t = Learning.prefixOf o t ∧
+      Learning.prefixOf (course id r') t = Learning.prefixOf o t ∧ PartAt id r r' t :=
   ⟨freeRun (Learning.holdFrom o t x), freeRun (Learning.holdFrom o t y),
-   Learning.record_congr fun _ early => Learning.holdFrom_before o x early,
-   Learning.record_congr fun _ early => Learning.holdFrom_before o y early,
+   Learning.prefix_congr fun _ early => Learning.holdFrom_before o x early,
+   Learning.prefix_congr fun _ early => Learning.holdFrom_before o y early,
    fun _ early => (Learning.holdFrom_before o x early).trans
      (Learning.holdFrom_before o y early).symm,
    fun same => two ((Learning.holdFrom_after o x (Nat.le_refl t)).symm.trans
@@ -688,11 +688,11 @@ and every record, a run of free branching has that record and the learner is not
 next step. -/
 theorem free_open [DecidableEq V] {x y : V} (two : x ≠ y) (pred : List V → Option V)
     (o : Nat → V) (t : Nat) :
-    ∃ r : Run (free V), Learning.record (course id r) t = Learning.record o t ∧
+    ∃ r : Run (free V), Learning.prefixOf (course id r) t = Learning.prefixOf o t ∧
       ¬ RightAt pred id r t :=
   match free_parts_after two o t with
   | ⟨r, r', same, same', part⟩ =>
-    match decEq (pred (Learning.record (course id r) t)) (some (r.state t)) with
+    match decEq (pred (Learning.prefixOf (course id r) t)) (some (r.state t)) with
     | isFalse wrong => ⟨r, same, wrong⟩
     | isTrue right => ⟨r', same', fun right' => not_right_on_both pred part ⟨right, right'⟩⟩
 
@@ -700,7 +700,7 @@ theorem free_open [DecidableEq V] {x y : V} (two : x ≠ y) (pred : List V → O
 theorem free_never_right (pred : List Bool → Option Bool) :
     ∃ r : Run (free Bool), ∀ t, ¬ RightAt pred id r t :=
   ⟨freeRun (Learning.diagonal pred (fun b => !b) false), fun _ right =>
-    match Learning.diagonal_refutes pred Identification.not_ne_bool false right with
+    match Learning.diagonal_misses pred Identification.not_ne_bool false right with
     | ⟨_, made, differs⟩ => differs (Option.some.inj (made.symm.trans right))⟩
 
 /-- Free branching on two values is held by a list of two configurations. -/
@@ -713,7 +713,7 @@ theorem free_held (r : Run (free Bool)) (n : Nat) : r.state n ∈ [true, false] 
 configurations has a registered course with no bound on its states. -/
 theorem free_unbounded :
     ∃ r : Run (free Bool), ∀ N, ¬ StatesBelow (course id r) N :=
-  ⟨freeRun (Learning.diagonal (Learning.learner Learning.lassos) (fun b => !b) false),
+  ⟨freeRun (Learning.diagonal (Learning.byElimination Learning.lassos) (fun b => !b) false),
    fun _ bound => match Identification.statesBelow_iff_lasso.mp bound with
      | ⟨_, _, _, lasso⟩ => Learning.diagonal_not_lasso Identification.not_ne_bool false lasso⟩
 

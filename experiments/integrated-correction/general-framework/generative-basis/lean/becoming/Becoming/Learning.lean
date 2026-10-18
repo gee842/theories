@@ -16,20 +16,20 @@ orbit; a learner is any claim made from the record before a step.
 
 * **No record fixes the next value.** Given two values, two courses share any record and
   differ at its next step, so a claim made from the record is not right on both
-  (`no_record_fixes_next`), and, values decided, is refuted on one of them
-  (`claim_refuted_on_one`); both are courses of worlds held by a list
-  (`no_record_fixes_next_finite`, `holdFrom_lasso`). `Web.tail_unrefuted` of `Becoming.Testing`
+  (`no_prefix_fixes_next`), and, values decided, is refuted on one of them
+  (`claim_missed_on_one`); both are courses of worlds held by a list
+  (`no_prefix_fixes_next_finite`, `holdFrom_lasso`). `Web.tail_unexcluded` of `Becoming.Testing`
   is the same law for level histories.
 * **No learner rests on every course.** For every learner a course answers each of its claims
-  against it (`diagonal`, `diagonal_refutes`), so on that course it rests at no step
+  against it (`diagonal`, `diagonal_misses`), so on that course it rests at no step
   (`diagonal_unrested`). The answering course is the registration of a law that keeps its
   record, a world no list holds (`diagonal_open`).
 * **Learning by refutation.** Holding hypotheses in order and moving to the next exactly where
-  the one held is refuted (`indexOn`, `learner`), the learner never passes a hypothesis that
-  holds, so it is refuted at most that hypothesis's place (`index_le_of_holds`) and not at
-  arbitrarily late steps (`refutations_not_recurring`); every hypothesis passed was refuted on
-  the record at a recorded step (`refuted_before`). The learner is through the record: one record, one
-  hypothesis held and one claim (`learner_through_record`).
+  the one held is refuted (`indexOn`, `byElimination`), the learner never passes a hypothesis that
+  holds, so it is refuted at most that hypothesis's place (`index_le_of_accords`) and not at
+  arbitrarily late steps (`misses_not_recurring`); every hypothesis passed was refuted on
+  the record at a recorded step (`missed_before`). The learner is through the record: one record, one
+  hypothesis held and one claim (`byElimination_through_prefix`).
 * **The courses of finitely many configurations are lassos.** Under a determined law whose
   configurations along an orbit are held by a list `l`, every registration of the orbit repeats
   from some step `i` with some period `q + 1`, `i + q + 1 ≤ l.length` (`lasso_of_held`, from
@@ -39,12 +39,12 @@ orbit; a learner is any claim made from the record before a step.
   (`lassos`, `pairAt`, `pairAt_place`), a learner that reads only a registration it can tell
   apart, and knows neither the configurations nor how many there are, is refuted fewer than
   `tri l.length` times, claims at every step from `l.length` on and is not refuted at
-  arbitrarily late steps (`held_learner_bounded`, `lasso_learner_bounded`); that it comes to rest
+  arbitrarily late steps (`held_byElimination_bounded`, `lasso_byElimination_bounded`); that it comes to rest
   is unrefuted, a double negation (`held_rest_unrefuted`, `rest_unrefuted`). It comes to rest
   only on lasso courses (`lasso_of_rest`). The step at which it rests is not stated here. Its
   record never shows that it has come to rest: given two values, every claim it makes is refuted,
   at that step, on a course of a world held by a list that shares its record
-  (`no_record_fixes_next_finite`). Its answering course is no lasso (`diagonal_not_lasso`).
+  (`no_prefix_fixes_next_finite`). Its answering course is no lasso (`diagonal_not_lasso`).
   In `Alternate` it is refuted twice and holds from the third step on, at the bound
   `tri 1 + 1 = 2`.
 * **The meta level.** Classes of hypotheses merged along the pairs (`merged`) are learned by
@@ -139,23 +139,23 @@ section Record
 variable {O : Type u}
 
 /-- The record of a course before step `t`, latest first. -/
-def record (o : Nat → O) : Nat → List O
+def prefixOf (o : Nat → O) : Nat → List O
   | 0 => []
-  | t + 1 => o t :: record o t
+  | t + 1 => o t :: prefixOf o t
 
 /-- The record before `t` holds `t` values. -/
-theorem record_length (o : Nat → O) : ∀ t, (record o t).length = t
+theorem prefix_length (o : Nat → O) : ∀ t, (prefixOf o t).length = t
   | 0 => rfl
-  | t + 1 => congrArg Nat.succ (record_length o t)
+  | t + 1 => congrArg Nat.succ (prefix_length o t)
 
 /-- The record before `t` depends only on the course before `t`. -/
-theorem record_congr {o o' : Nat → O} : ∀ {t : Nat}, (∀ n, n < t → o n = o' n) →
-    record o t = record o' t
+theorem prefix_congr {o o' : Nat → O} : ∀ {t : Nat}, (∀ n, n < t → o n = o' n) →
+    prefixOf o t = prefixOf o' t
   | 0, _ => rfl
   | t + 1, same =>
-    show o t :: record o t = o' t :: record o' t from
+    show o t :: prefixOf o t = o' t :: prefixOf o' t from
       congr (congrArg List.cons (same t (Nat.lt_succ_self t)))
-        (record_congr fun n lt => same n (Nat.lt_trans lt (Nat.lt_succ_self t)))
+        (prefix_congr fun n lt => same n (Nat.lt_trans lt (Nat.lt_succ_self t)))
 
 /-- The value `k + 1` steps back in a record, latest first. -/
 def back : List O → Nat → Option O
@@ -164,21 +164,21 @@ def back : List O → Nat → Option O
   | _ :: l, k + 1 => back l k
 
 /-- In the record before `u + k + 1`, the value `k + 1` steps back is the value at `u`. -/
-theorem back_record (o : Nat → O) (u : Nat) : ∀ k, back (record o (u + k + 1)) k = some (o u)
+theorem back_prefix (o : Nat → O) (u : Nat) : ∀ k, back (prefixOf o (u + k + 1)) k = some (o u)
   | 0 => rfl
-  | k + 1 => back_record o u k
+  | k + 1 => back_prefix o u k
 
 /-- Before `t`, every value `k + 1 ≤ t` steps back is in the record. -/
-theorem back_made (o : Nat → O) {k t : Nat} (within : k < t) : ∃ v, back (record o t) k = some v :=
+theorem back_made (o : Nat → O) {k t : Nat} (within : k < t) : ∃ v, back (prefixOf o t) k = some v :=
   let ⟨d, at_t⟩ := gap_of_lt within
-  ⟨o d, (congrArg (fun n => back (record o n) k)
-    (at_t.trans (congrArg Nat.succ (Nat.add_comm k d)))).trans (back_record o d k)⟩
+  ⟨o d, (congrArg (fun n => back (prefixOf o n) k)
+    (at_t.trans (congrArg Nat.succ (Nat.add_comm k d)))).trans (back_prefix o d k)⟩
 
 /-- A claim, made or not, is refuted by a value: it was made and the value differs. -/
-def Refuted (c : Option O) (v : O) : Prop := ∃ w, c = some w ∧ w ≠ v
+def Misses (c : Option O) (v : O) : Prop := ∃ w, c = some w ∧ w ≠ v
 
 /-- Telling registered values apart decides refutation. -/
-instance decRefuted [DecidableEq O] : (c : Option O) → (v : O) → Decidable (Refuted c v)
+instance decMisses [DecidableEq O] : (c : Option O) → (v : O) → Decidable (Misses c v)
   | none, _ => isFalse fun ⟨_, made, _⟩ => nomatch made
   | some w, v =>
     match decEq w v with
@@ -187,25 +187,25 @@ instance decRefuted [DecidableEq O] : (c : Option O) → (v : O) → Decidable (
     | isFalse differs => isTrue ⟨w, rfl, differs⟩
 
 /-- A claim made and not refuted by a value is that value. -/
-theorem eq_of_not_refuted [DecidableEq O] {w v : O} (unrefuted : ¬ Refuted (some w) v) : w = v :=
+theorem eq_of_not_missed [DecidableEq O] {w v : O} (unrefuted : ¬ Misses (some w) v) : w = v :=
   match decEq w v with
   | isTrue same => same
   | isFalse differs => absurd ⟨w, rfl, differs⟩ unrefuted
 
 /-- A claim that is the value is not refuted by it. -/
-theorem not_refuted_self {v : O} : ¬ Refuted (some v) v :=
+theorem not_missed_self {v : O} : ¬ Misses (some v) v :=
   fun ⟨_, made, differs⟩ => differs (Option.some.inj made).symm
 
 /-- The claim of `pred` at step `t`, made from the record before `t`, is refuted on `o`. -/
-def RefutedAt (pred : List O → Option O) (o : Nat → O) (t : Nat) : Prop :=
-  Refuted (pred (record o t)) (o t)
+def MissesAt (pred : List O → Option O) (o : Nat → O) (t : Nat) : Prop :=
+  Misses (pred (prefixOf o t)) (o t)
 
-instance decRefutedAt [DecidableEq O] (pred : List O → Option O) (o : Nat → O) (t : Nat) :
-    Decidable (RefutedAt pred o t) :=
-  decRefuted _ _
+instance decMissesAt [DecidableEq O] (pred : List O → Option O) (o : Nat → O) (t : Nat) :
+    Decidable (MissesAt pred o t) :=
+  decMisses _ _
 
 /-- `pred` is refuted at no step of `o`: every claim it makes on `o` is right. -/
-def Holds (pred : List O → Option O) (o : Nat → O) : Prop := ∀ t, ¬ RefutedAt pred o t
+def Accords (pred : List O → Option O) (o : Nat → O) : Prop := ∀ t, ¬ MissesAt pred o t
 
 end Record
 
@@ -230,15 +230,15 @@ theorem holdFrom_after (o : Nat → O) {t : Nat} (x : O) {n : Nat} (after : t �
 there are two courses with the same record before `t`, taking the one value and the other at
 `t`; a claim made from that record is not right on both. Nothing about the course is
 assumed. -/
-theorem no_record_fixes_next (pred : List O → Option O) (o : Nat → O) (t : Nat) {x y : O}
-    (two : x ≠ y) {w : O} (claims : pred (record o t) = some w) :
-    record (holdFrom o t x) t = record o t ∧ record (holdFrom o t y) t = record o t ∧
+theorem no_prefix_fixes_next (pred : List O → Option O) (o : Nat → O) (t : Nat) {x y : O}
+    (two : x ≠ y) {w : O} (claims : pred (prefixOf o t) = some w) :
+    prefixOf (holdFrom o t x) t = prefixOf o t ∧ prefixOf (holdFrom o t y) t = prefixOf o t ∧
       holdFrom o t x t = x ∧ holdFrom o t y t = y ∧
-      ¬ (¬ RefutedAt pred (holdFrom o t x) t ∧ ¬ RefutedAt pred (holdFrom o t y) t) :=
-  have same_x : record (holdFrom o t x) t = record o t :=
-    record_congr fun _ before => holdFrom_before o x before
-  have same_y : record (holdFrom o t y) t = record o t :=
-    record_congr fun _ before => holdFrom_before o y before
+      ¬ (¬ MissesAt pred (holdFrom o t x) t ∧ ¬ MissesAt pred (holdFrom o t y) t) :=
+  have same_x : prefixOf (holdFrom o t x) t = prefixOf o t :=
+    prefix_congr fun _ before => holdFrom_before o x before
+  have same_y : prefixOf (holdFrom o t y) t = prefixOf o t :=
+    prefix_congr fun _ before => holdFrom_before o y before
   have at_x : holdFrom o t x t = x := holdFrom_after o x (Nat.le_refl t)
   have at_y : holdFrom o t y t = y := holdFrom_after o y (Nat.le_refl t)
   ⟨same_x, same_y, at_x, at_y, fun ⟨right_x, right_y⟩ =>
@@ -247,13 +247,13 @@ theorem no_record_fixes_next (pred : List O → Option O) (o : Nat → O) (t : N
         two ((to_x.trans at_x).symm.trans (to_y.trans at_y))⟩⟩⟩
 
 /-- **Values decided, a claim from the record is refuted on one of the two courses.** -/
-theorem claim_refuted_on_one [DecidableEq O] (pred : List O → Option O) (o : Nat → O) (t : Nat)
-    {x y : O} (two : x ≠ y) {w : O} (claims : pred (record o t) = some w) :
-    RefutedAt pred (holdFrom o t x) t ∨ RefutedAt pred (holdFrom o t y) t :=
-  have same_x : record (holdFrom o t x) t = record o t :=
-    record_congr fun _ before => holdFrom_before o x before
-  have same_y : record (holdFrom o t y) t = record o t :=
-    record_congr fun _ before => holdFrom_before o y before
+theorem claim_missed_on_one [DecidableEq O] (pred : List O → Option O) (o : Nat → O) (t : Nat)
+    {x y : O} (two : x ≠ y) {w : O} (claims : pred (prefixOf o t) = some w) :
+    MissesAt pred (holdFrom o t x) t ∨ MissesAt pred (holdFrom o t y) t :=
+  have same_x : prefixOf (holdFrom o t x) t = prefixOf o t :=
+    prefix_congr fun _ before => holdFrom_before o x before
+  have same_y : prefixOf (holdFrom o t y) t = prefixOf o t :=
+    prefix_congr fun _ before => holdFrom_before o y before
   match decEq w x with
   | isTrue at_x => .inr ⟨w, (congrArg pred same_y).trans claims, fun to_y =>
       two (at_x.symm.trans (to_y.trans (holdFrom_after o y (Nat.le_refl t))))⟩
@@ -283,29 +283,29 @@ def diagonal (pred : List O → Option O) (other : O → O) (x : O) (t : Nat) : 
   answerTo other x (pred (Law.orbit (answerStep pred other x) [] t))
 
 /-- The record of the diagonal course is the orbit of the law that keeps it. -/
-theorem record_diagonal (pred : List O → Option O) (other : O → O) (x : O) :
-    ∀ t, record (diagonal pred other x) t = Law.orbit (answerStep pred other x) [] t
+theorem prefix_diagonal (pred : List O → Option O) (other : O → O) (x : O) :
+    ∀ t, prefixOf (diagonal pred other x) t = Law.orbit (answerStep pred other x) [] t
   | 0 => rfl
-  | t + 1 => congrArg (List.cons (diagonal pred other x t)) (record_diagonal pred other x t)
+  | t + 1 => congrArg (List.cons (diagonal pred other x t)) (prefix_diagonal pred other x t)
 
 /-- **Every claim is answered.** Where `other` moves every value, every claim `pred` makes
 on the diagonal course is refuted at its step. It holds of every `pred`: of every learner,
 whatever it holds and however it revises. -/
-theorem diagonal_refutes (pred : List O → Option O) {other : O → O} (moves : ∀ v, other v ≠ v)
-    (x : O) {t : Nat} {w : O} (claims : pred (record (diagonal pred other x) t) = some w) :
-    RefutedAt pred (diagonal pred other x) t :=
+theorem diagonal_misses (pred : List O → Option O) {other : O → O} (moves : ∀ v, other v ≠ v)
+    (x : O) {t : Nat} {w : O} (claims : pred (prefixOf (diagonal pred other x) t) = some w) :
+    MissesAt pred (diagonal pred other x) t :=
   have at_orbit : pred (Law.orbit (answerStep pred other x) [] t) = some w :=
-    (congrArg pred (record_diagonal pred other x t)).symm.trans claims
+    (congrArg pred (prefix_diagonal pred other x t)).symm.trans claims
   have answered : diagonal pred other x t = other w := congrArg (answerTo other x) at_orbit
   ⟨w, claims, fun same => moves w (same.trans answered).symm⟩
 
 /-- **No learner comes to rest on every course.** On the diagonal course of `pred`, at no step
 from which on `pred` claims and is right. -/
 theorem diagonal_unrested (pred : List O → Option O) {other : O → O} (moves : ∀ v, other v ≠ v)
-    (x : O) : ¬ ∃ T, ∀ t, T ≤ t → pred (record (diagonal pred other x) t) =
+    (x : O) : ¬ ∃ T, ∀ t, T ≤ t → pred (prefixOf (diagonal pred other x) t) =
       some (diagonal pred other x t) :=
   fun ⟨T, rests⟩ =>
-    match diagonal_refutes pred moves x (rests T (Nat.le_refl T)) with
+    match diagonal_misses pred moves x (rests T (Nat.le_refl T)) with
     | ⟨_, made, differs⟩ =>
       differs (Option.some.inj ((rests T (Nat.le_refl T)).symm.trans made)).symm
 
@@ -346,33 +346,33 @@ held, starting at `0` and moving to the next exactly where the one held is refut
 is the number of refutations so far. -/
 def indexOn (H : Nat → List O → Option O) : List O → Nat
   | [] => 0
-  | v :: l => if Refuted (H (indexOn H l) l) v then indexOn H l + 1 else indexOn H l
+  | v :: l => if Misses (H (indexOn H l) l) v then indexOn H l + 1 else indexOn H l
 
 /-- The learner by refutation: the claim of the hypothesis it holds. -/
-def learner (H : Nat → List O → Option O) (l : List O) : Option O := H (indexOn H l) l
+def byElimination (H : Nat → List O → Option O) (l : List O) : Option O := H (indexOn H l) l
 
 /-- The index held at step `t` of `o`. -/
 abbrev index (H : Nat → List O → Option O) (o : Nat → O) (t : Nat) : Nat :=
-  indexOn H (record o t)
+  indexOn H (prefixOf o t)
 
 variable {H : Nat → List O → Option O} {o : Nat → O}
 
-theorem index_refuted {t : Nat} (refuted : RefutedAt (learner H) o t) :
+theorem index_missed {t : Nat} (refuted : MissesAt (byElimination H) o t) :
     index H o (t + 1) = index H o t + 1 :=
   if_pos refuted
 
-theorem index_kept {t : Nat} (kept : ¬ RefutedAt (learner H) o t) :
+theorem index_kept {t : Nat} (kept : ¬ MissesAt (byElimination H) o t) :
     index H o (t + 1) = index H o t :=
   if_neg kept
 
 theorem index_succ_le (t : Nat) : index H o (t + 1) ≤ index H o t + 1 :=
-  match decRefutedAt (learner H) o t with
-  | isTrue refuted => Nat.le_of_eq (index_refuted refuted)
+  match decMissesAt (byElimination H) o t with
+  | isTrue refuted => Nat.le_of_eq (index_missed refuted)
   | isFalse kept => Nat.le_trans (Nat.le_of_eq (index_kept kept)) (Nat.le_succ _)
 
 theorem index_le_succ (t : Nat) : index H o t ≤ index H o (t + 1) :=
-  match decRefutedAt (learner H) o t with
-  | isTrue refuted => Nat.le_trans (Nat.le_succ _) (Nat.le_of_eq (index_refuted refuted).symm)
+  match decMissesAt (byElimination H) o t with
+  | isTrue refuted => Nat.le_trans (Nat.le_succ _) (Nat.le_of_eq (index_missed refuted).symm)
   | isFalse kept => Nat.le_of_eq (index_kept kept).symm
 
 theorem index_mono (t : Nat) : ∀ d, index H o t ≤ index H o (t + d)
@@ -385,62 +385,62 @@ theorem index_mono_le {T t : Nat} (le : T ≤ t) : index H o T ≤ index H o t :
 
 /-- **The learner never passes a hypothesis that holds.** Where hypothesis `j` is refuted at
 no step of `o`, the learner holds no hypothesis beyond `j`: it is refuted at most `j` times. -/
-theorem index_le_of_holds {j : Nat} (holds : Holds (H j) o) : ∀ t, index H o t ≤ j
+theorem index_le_of_accords {j : Nat} (holds : Accords (H j) o) : ∀ t, index H o t ≤ j
   | 0 => Nat.zero_le j
   | t + 1 =>
     match Nat.lt_or_ge (index H o t) j with
     | .inl below => Nat.le_trans (index_succ_le t) below
     | .inr reached =>
-      have at_j : index H o t = j := Nat.le_antisymm (index_le_of_holds holds t) reached
-      have kept : ¬ RefutedAt (learner H) o t := fun refuted =>
-        holds t (Eq.subst (motive := fun n => Refuted (H n (record o t)) (o t)) at_j refuted)
+      have at_j : index H o t = j := Nat.le_antisymm (index_le_of_accords holds t) reached
+      have kept : ¬ MissesAt (byElimination H) o t := fun refuted =>
+        holds t (Eq.subst (motive := fun n => Misses (H n (prefixOf o t)) (o t)) at_j refuted)
       Nat.le_of_eq ((index_kept kept).trans at_j)
 
 /-- **Every hypothesis passed was refuted on the record.** Each hypothesis before the one held
 at `t` was held at some earlier step and refuted there. -/
-theorem refuted_before : ∀ (t k : Nat), k < index H o t →
-    ∃ s, s < t ∧ index H o s = k ∧ RefutedAt (H k) o s
+theorem missed_before : ∀ (t k : Nat), k < index H o t →
+    ∃ s, s < t ∧ index H o s = k ∧ MissesAt (H k) o s
   | 0, k, below => absurd below (Nat.not_lt_zero k)
   | t + 1, k, below =>
-    match decRefutedAt (learner H) o t with
+    match decMissesAt (byElimination H) o t with
     | isTrue refuted =>
       have below' : k ≤ index H o t :=
-        Nat.le_of_lt_succ (Eq.subst (motive := fun n => k < n) (index_refuted refuted) below)
+        Nat.le_of_lt_succ (Eq.subst (motive := fun n => k < n) (index_missed refuted) below)
       match Nat.lt_or_eq_of_le below' with
       | .inl earlier =>
-        let ⟨s, before, held, refuted_s⟩ := refuted_before t k earlier
+        let ⟨s, before, held, refuted_s⟩ := missed_before t k earlier
         ⟨s, Nat.lt_trans before (Nat.lt_succ_self t), held, refuted_s⟩
       | .inr at_k =>
         ⟨t, Nat.lt_succ_self t, at_k.symm,
-          Eq.subst (motive := fun n => Refuted (H n (record o t)) (o t)) at_k.symm refuted⟩
+          Eq.subst (motive := fun n => Misses (H n (prefixOf o t)) (o t)) at_k.symm refuted⟩
     | isFalse kept =>
       let ⟨s, before, held, refuted_s⟩ :=
-        refuted_before t k (Eq.subst (motive := fun n => k < n) (index_kept kept) below)
+        missed_before t k (Eq.subst (motive := fun n => k < n) (index_kept kept) below)
       ⟨s, Nat.lt_trans before (Nat.lt_succ_self t), held, refuted_s⟩
 
 /-- Refutations at arbitrarily late steps raise the index past every bound. -/
-theorem index_unbounded (late : ∀ T, ∃ t, T ≤ t ∧ RefutedAt (learner H) o t) :
+theorem index_unbounded (late : ∀ T, ∃ t, T ≤ t ∧ MissesAt (byElimination H) o t) :
     ∀ m, ∃ T, m ≤ index H o T
   | 0 => ⟨0, Nat.zero_le _⟩
   | m + 1 =>
     let ⟨T, reached⟩ := index_unbounded late m
     let ⟨t, later, refuted⟩ := late T
     ⟨t + 1, Nat.le_trans (Nat.succ_le_succ (Nat.le_trans reached (index_mono_le later)))
-      (Nat.le_of_eq (index_refuted refuted).symm)⟩
+      (Nat.le_of_eq (index_missed refuted).symm)⟩
 
 /-- **Refutations are not unbounded where a hypothesis holds.** Where some hypothesis is refuted
 at no step of `o`, the learner is not refuted at arbitrarily late steps. -/
-theorem refutations_not_recurring {j : Nat} (holds : Holds (H j) o) :
-    ¬ ∀ T, ∃ t, T ≤ t ∧ RefutedAt (learner H) o t :=
+theorem misses_not_recurring {j : Nat} (holds : Accords (H j) o) :
+    ¬ ∀ T, ∃ t, T ≤ t ∧ MissesAt (byElimination H) o t :=
   fun late =>
     let ⟨T, reached⟩ := index_unbounded late (j + 1)
-    Nat.not_succ_le_self j (Nat.le_trans reached (index_le_of_holds holds T))
+    Nat.not_succ_le_self j (Nat.le_trans reached (index_le_of_accords holds T))
 
 /-- **The learner is through the record.** On two courses with the same record before `t`,
 the learner holds the same hypothesis and makes the same claim at `t`. -/
-theorem learner_through_record {o' : Nat → O} {t : Nat} (same : record o t = record o' t) :
-    index H o t = index H o' t ∧ learner H (record o t) = learner H (record o' t) :=
-  ⟨congrArg (indexOn H) same, congrArg (learner H) same⟩
+theorem byElimination_through_prefix {o' : Nat → O} {t : Nat} (same : prefixOf o t = prefixOf o' t) :
+    index H o t = index H o' t ∧ byElimination H (prefixOf o t) = byElimination H (prefixOf o' t) :=
+  ⟨congrArg (indexOn H) same, congrArg (byElimination H) same⟩
 
 /-- That a bounded sequence of counts that never falls is constant from some step on is
 unrefuted (a double negation). -/
@@ -559,15 +559,15 @@ theorem holdFrom_lasso (o : Nat → O) (t : Nat) (x : O) : Lasso (holdFrom o t x
     (holdFrom_after o x later).symm
 
 /-- **Not even within finite worlds does a record fix the next value.** The two courses of
-`no_record_fixes_next` are lasso courses, so courses of worlds held by a list
+`no_prefix_fixes_next` are lasso courses, so courses of worlds held by a list
 (`lasso_realized`): whatever a learner claims next from a record, some finite world with that
 record refutes it. -/
-theorem no_record_fixes_next_finite (pred : List O → Option O) (o : Nat → O) (t : Nat)
-    {x y : O} (two : x ≠ y) {w : O} (claims : pred (record o t) = some w) :
+theorem no_prefix_fixes_next_finite (pred : List O → Option O) (o : Nat → O) (t : Nat)
+    {x y : O} (two : x ≠ y) {w : O} (claims : pred (prefixOf o t) = some w) :
     Lasso (holdFrom o t x) t 0 ∧ Lasso (holdFrom o t y) t 0 ∧
-      record (holdFrom o t x) t = record o t ∧ record (holdFrom o t y) t = record o t ∧
-      ¬ (¬ RefutedAt pred (holdFrom o t x) t ∧ ¬ RefutedAt pred (holdFrom o t y) t) :=
-  let ⟨same_x, same_y, _, _, one⟩ := no_record_fixes_next pred o t two claims
+      prefixOf (holdFrom o t x) t = prefixOf o t ∧ prefixOf (holdFrom o t y) t = prefixOf o t ∧
+      ¬ (¬ MissesAt pred (holdFrom o t x) t ∧ ¬ MissesAt pred (holdFrom o t y) t) :=
+  let ⟨same_x, same_y, _, _, one⟩ := no_prefix_fixes_next pred o t two claims
   ⟨holdFrom_lasso o t x, holdFrom_lasso o t y, same_x, same_y, one⟩
 
 /-- The lasso hypothesis `h = (i, q)`: at a step `t` with `i + q + 1 ≤ t` it claims the value
@@ -576,16 +576,16 @@ def lasso (h : Nat × Nat) (l : List O) : Option O :=
   if h.1 + h.2 + 1 ≤ l.length then back l h.2 else none
 
 theorem lasso_claims {o : Nat → O} {h : Nat × Nat} {t : Nat} (within : h.1 + h.2 + 1 ≤ t) :
-    lasso h (record o t) = back (record o t) h.2 :=
-  if_pos (Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) (record_length o t).symm within)
+    lasso h (prefixOf o t) = back (prefixOf o t) h.2 :=
+  if_pos (Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) (prefix_length o t).symm within)
 
 theorem lasso_silent {o : Nat → O} {h : Nat × Nat} {t : Nat} (early : t < h.1 + h.2 + 1) :
-    lasso h (record o t) = none :=
+    lasso h (prefixOf o t) = none :=
   if_neg fun within => Nat.lt_irrefl t (Nat.lt_of_lt_of_le early
-    (Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) (record_length o t) within))
+    (Eq.subst (motive := fun n => h.1 + h.2 + 1 ≤ n) (prefix_length o t) within))
 
 /-- **A lasso hypothesis holds of its course.** -/
-theorem lasso_holds {o : Nat → O} {i q : Nat} (repeats : Lasso o i q) : Holds (lasso (i, q)) o :=
+theorem lasso_accords {o : Nat → O} {i q : Nat} (repeats : Lasso o i q) : Accords (lasso (i, q)) o :=
   fun t ⟨_, claims, differs⟩ =>
     match Nat.lt_or_ge t (i + q + 1) with
     | .inl early => nomatch (lasso_silent (o := o) (h := (i, q)) early).symm.trans claims
@@ -594,9 +594,9 @@ theorem lasso_holds {o : Nat → O} {i q : Nat} (repeats : Lasso o i q) : Holds 
       have at_t' : t = i + d + q + 1 :=
         at_t.trans ((Nat.add_right_comm (i + q) 1 d).trans
           (congrArg Nat.succ (Nat.add_right_comm i q d)))
-      have value : lasso (i, q) (record o t) = some (o (i + d)) :=
+      have value : lasso (i, q) (prefixOf o t) = some (o (i + d)) :=
         (lasso_claims (o := o) (h := (i, q)) within).trans
-          ((congrArg (fun n => back (record o n) q) at_t').trans (back_record o (i + d) q))
+          ((congrArg (fun n => back (prefixOf o n) q) at_t').trans (back_prefix o (i + d) q))
       differs ((Option.some.inj (claims.symm.trans value)).trans
         ((repeats (i + d) (Nat.le_add_right i d)).symm.trans (congrArg o at_t'.symm)))
 
@@ -681,13 +681,13 @@ period `q + 1`, the learner by refutation over the lasso hypotheses, which knows
 nor `q`: holds no hypothesis beyond place `tri (i + q) + q`, so it is refuted at most that
 many times; claims at every step from `i + q + 1` on; and is not refuted at arbitrarily late
 steps. -/
-theorem lasso_learner_bounded {i q : Nat} (repeats : Lasso o i q) :
+theorem lasso_byElimination_bounded {i q : Nat} (repeats : Lasso o i q) :
     (∀ t, index lassos o t ≤ tri (i + q) + q) ∧
-      (∀ t, i + q + 1 ≤ t → ∃ v, learner lassos (record o t) = some v) ∧
-      ¬ ∀ T, ∃ t, T ≤ t ∧ RefutedAt (learner lassos) o t :=
-  have holds : Holds (lassos (tri (i + q) + q)) o :=
-    Eq.subst (motive := fun h => Holds (lasso h) o) (pairAt_place i q).symm (lasso_holds repeats)
-  have bound := index_le_of_holds holds
+      (∀ t, i + q + 1 ≤ t → ∃ v, byElimination lassos (prefixOf o t) = some v) ∧
+      ¬ ∀ T, ∃ t, T ≤ t ∧ MissesAt (byElimination lassos) o t :=
+  have holds : Accords (lassos (tri (i + q) + q)) o :=
+    Eq.subst (motive := fun h => Accords (lasso h) o) (pairAt_place i q).symm (lasso_accords repeats)
+  have bound := index_le_of_accords holds
   ⟨bound, fun t within =>
     have near : diag (pairAt (index lassos o t)) ≤ i + q :=
       Nat.le_trans (diag_le (bound t)) (Nat.le_of_eq (congrArg diag (pairAt_place i q)))
@@ -699,33 +699,33 @@ theorem lasso_learner_bounded {i q : Nat} (repeats : Lasso o i q) :
         (Nat.lt_succ_self ((pairAt (index lassos o t)).1 + (pairAt (index lassos o t)).2))
         claims_at))
     ⟨v, (lasso_claims claims_at).trans found⟩,
-   refutations_not_recurring holds⟩
+   misses_not_recurring holds⟩
 
 /-- **On a lasso course, that the learner comes to rest is unrefuted.** It is not refuted that
 from some step on it claims at every step and is right (a double negation); the step is not
 stated here. The learner's record never shows that it rests: given two values, a claim made
 from a record is not right on both of two courses that share the record and differ at its next
-step (`no_record_fixes_next`). -/
+step (`no_prefix_fixes_next`). -/
 theorem rest_unrefuted {i q : Nat} (repeats : Lasso o i q) :
-    ¬ ¬ ∃ T, ∀ t, T ≤ t → learner lassos (record o t) = some (o t) :=
-  let ⟨bound, claims, _⟩ := lasso_learner_bounded repeats
+    ¬ ¬ ∃ T, ∀ t, T ≤ t → byElimination lassos (prefixOf o t) = some (o t) :=
+  let ⟨bound, claims, _⟩ := lasso_byElimination_bounded repeats
   fun never => stable_unrefuted (f := index lassos o) index_le_succ bound fun ⟨T, stays⟩ =>
     never ⟨T + (i + q + 1), fun t later =>
       have after_T : T ≤ t := Nat.le_trans (Nat.le_add_right T _) later
-      have kept : ¬ RefutedAt (learner lassos) o t := fun refuted =>
+      have kept : ¬ MissesAt (byElimination lassos) o t := fun refuted =>
         Nat.ne_of_lt (Nat.lt_succ_self (index lassos o t))
           (((stays t after_T).trans (stays (t + 1) (Nat.le_succ_of_le after_T)).symm).trans
-            (index_refuted refuted))
+            (index_missed refuted))
       let ⟨_, made⟩ := claims t (Nat.le_trans (Nat.le_add_left _ T) later)
-      made.trans (congrArg some (eq_of_not_refuted fun refuted =>
-        kept (Eq.subst (motive := fun c => Refuted c (o t)) made.symm refuted)))⟩
+      made.trans (congrArg some (eq_of_not_missed fun refuted =>
+        kept (Eq.subst (motive := fun c => Misses c (o t)) made.symm refuted)))⟩
 
 /-- **The learner comes to rest only on lasso courses.** Where from step `T` on it claims at
 every step and is right, the course repeats from some step on. -/
-theorem lasso_of_rest {T : Nat} (rests : ∀ t, T ≤ t → learner lassos (record o t) = some (o t)) :
+theorem lasso_of_rest {T : Nat} (rests : ∀ t, T ≤ t → byElimination lassos (prefixOf o t) = some (o t)) :
     ∃ i q, Lasso o i q :=
-  have kept : ∀ t, T ≤ t → ¬ RefutedAt (learner lassos) o t := fun t later =>
-    Eq.subst (motive := fun c => ¬ Refuted c (o t)) (rests t later).symm not_refuted_self
+  have kept : ∀ t, T ≤ t → ¬ MissesAt (byElimination lassos) o t := fun t later =>
+    Eq.subst (motive := fun c => ¬ Misses c (o t)) (rests t later).symm not_missed_self
   have stays : ∀ d, index lassos o (T + d) = index lassos o T := fun d =>
     Nat.rec (motive := fun d => index lassos o (T + d) = index lassos o T) rfl
       (fun d ih => (index_kept (kept (T + d) (Nat.le_add_right T d))).trans ih) d
@@ -740,9 +740,9 @@ theorem lasso_of_rest {T : Nat} (rests : ∀ t, T ≤ t → learner lassos (reco
     have within : h.1 + h.2 + 1 ≤ u + h.2 + 1 :=
       Nat.succ_le_succ (Nat.add_le_add_right
         (Nat.le_trans (Nat.le_add_right h.1 T) later) h.2)
-    have claim : learner lassos (record o (u + h.2 + 1)) = some (o u) :=
-      (congrArg (fun n => lasso (pairAt n) (record o (u + h.2 + 1))) held).trans
-        ((lasso_claims within).trans (back_record o u h.2))
+    have claim : byElimination lassos (prefixOf o (u + h.2 + 1)) = some (o u) :=
+      (congrArg (fun n => lasso (pairAt n) (prefixOf o (u + h.2 + 1))) held).trans
+        ((lasso_claims within).trans (back_prefix o u h.2))
     (Option.some.inj ((rests (u + h.2 + 1) past_T).symm.trans claim))⟩
 
 /-- **Induction in a world held by a list: the refutations are bounded.** Under a determined law
@@ -750,14 +750,14 @@ whose configurations along an orbit are held by a list `l`, the learner by refut
 lasso hypotheses, reading only a registration it can tell apart and knowing neither the
 configurations nor how many there are: is refuted fewer than `tri l.length` times; claims at
 every step from `l.length` on; and is not refuted at arbitrarily late steps. -/
-theorem held_learner_bounded {S : Type v} {next : S → S} {s : S} {l : List S}
+theorem held_byElimination_bounded {S : Type v} {next : S → S} {s : S} {l : List S}
     (held : ∀ n, Law.orbit next s n ∈ l) (reg : S → O) :
     (∀ t, index lassos (fun n => reg (Law.orbit next s n)) t < tri l.length) ∧
       (∀ t, l.length ≤ t →
-        ∃ v, learner lassos (record (fun n => reg (Law.orbit next s n)) t) = some v) ∧
-      ¬ ∀ T, ∃ t, T ≤ t ∧ RefutedAt (learner lassos) (fun n => reg (Law.orbit next s n)) t :=
+        ∃ v, byElimination lassos (prefixOf (fun n => reg (Law.orbit next s n)) t) = some v) ∧
+      ¬ ∀ T, ∃ t, T ≤ t ∧ MissesAt (byElimination lassos) (fun n => reg (Law.orbit next s n)) t :=
   let ⟨i, q, within, repeats⟩ := lasso_of_held held reg
-  let ⟨bound, claims, stop⟩ := lasso_learner_bounded repeats
+  let ⟨bound, claims, stop⟩ := lasso_byElimination_bounded repeats
   have top : tri (i + q) + q < tri l.length :=
     Nat.lt_of_lt_of_le (place_lt i q)
       (let ⟨d, at_l⟩ := gap_of_le within
@@ -771,7 +771,7 @@ from some step on the learner over the lasso hypotheses claims at every step and
 double negation). -/
 theorem held_rest_unrefuted {S : Type v} {next : S → S} {s : S} {l : List S}
     (held : ∀ n, Law.orbit next s n ∈ l) (reg : S → O) :
-    ¬ ¬ ∃ T, ∀ t, T ≤ t → learner lassos (record (fun n => reg (Law.orbit next s n)) t) =
+    ¬ ¬ ∃ T, ∀ t, T ≤ t → byElimination lassos (prefixOf (fun n => reg (Law.orbit next s n)) t) =
       some (reg (Law.orbit next s t)) :=
   let ⟨_, _, _, repeats⟩ := lasso_of_held held reg
   rest_unrefuted repeats
@@ -779,9 +779,9 @@ theorem held_rest_unrefuted {S : Type v} {next : S → S} {s : S} {l : List S}
 /-- **The answering world is no lasso.** The diagonal course of the learner over the lasso
 hypotheses repeats from no step: it is the course of no world held by a list. -/
 theorem diagonal_not_lasso {other : O → O} (moves : ∀ v, other v ≠ v) (x : O) {i q : Nat} :
-    ¬ Lasso (diagonal (learner lassos) other x) i q :=
+    ¬ Lasso (diagonal (byElimination lassos) other x) i q :=
   fun repeats => rest_unrefuted repeats fun ⟨T, rests⟩ =>
-    diagonal_unrested (learner lassos) moves x ⟨T, rests⟩
+    diagonal_unrested (byElimination lassos) moves x ⟨T, rests⟩
 
 end LearningLassos
 
@@ -798,19 +798,19 @@ def merged (G : Nat → Nat → List O → Option O) : Nat → List O → Option
 /-- **Learning over classes is learning by refutation.** Where hypothesis `j` of class `c`
 holds, the learner by refutation over the merged enumeration holds no hypothesis beyond place
 `tri (c + j) + j`: choosing a class is learning with the same law, one enumeration wider. -/
-theorem merged_bound (G : Nat → Nat → List O → Option O) {c j : Nat} (holds : Holds (G c j) o) :
+theorem merged_bound (G : Nat → Nat → List O → Option O) {c j : Nat} (holds : Accords (G c j) o) :
     ∀ t, index (merged G) o t ≤ tri (c + j) + j :=
-  index_le_of_holds (H := merged G)
-    (Eq.subst (motive := fun h : Nat × Nat => Holds (G h.1 h.2) o) (pairAt_place c j).symm holds)
+  index_le_of_accords (H := merged G)
+    (Eq.subst (motive := fun h : Nat × Nat => Accords (G h.1 h.2) o) (pairAt_place c j).symm holds)
 
 /-- **The learner over every merging is unrested on its diagonal course.** However the classes
 are chosen and merged, the learner over them is refuted at every claim on its diagonal course,
-which no list holds (`diagonal_refutes`, `diagonal_open`). Read as no top level: learning at
+which no list holds (`diagonal_misses`, `diagonal_open`). Read as no top level: learning at
 the next level up is again learning, and again incomplete. -/
 theorem merged_unrested (G : Nat → Nat → List O → Option O) {other : O → O} (moves : ∀ v, other v ≠ v)
-    (x : O) : ¬ ∃ T, ∀ t, T ≤ t → learner (merged G) (record (diagonal (learner (merged G))
-      other x) t) = some (diagonal (learner (merged G)) other x t) :=
-  diagonal_unrested (learner (merged G)) moves x
+    (x : O) : ¬ ∃ T, ∀ t, T ≤ t → byElimination (merged G) (prefixOf (diagonal (byElimination (merged G))
+      other x) t) = some (diagonal (byElimination (merged G)) other x t) :=
+  diagonal_unrested (byElimination (merged G)) moves x
 
 end Meta
 
@@ -968,7 +968,7 @@ alike. -/
 theorem web_selectsThrough_iff {F C : Type} {W : Web F C} {obs : F → C → Prop} {f : F}
     {t : Nat} {select : (Nat → C → Nat) → Prop} :
     W.SelectsThrough obs f t select ↔
-      Through (fun l l' => W.RegistersAlikeUpTo obs f l l' t) select :=
+      Through (fun l l' => W.AlikeThroughUpTo obs f l l' t) select :=
   Iff.rfl
 
 /-- **A loss on the data selects through the data.** A loss computed from the values on the
@@ -1154,18 +1154,18 @@ from step `3` on. -/
 theorem index_three : index lassos course 3 = 2 := rfl
 
 /-- **Two refutations, then rest.** From step `3` on the learner holds `(0, 1)`, the place
-`tri 1 + 1 = 2` of `lasso_learner_bounded`, and claims each value right. -/
-theorem rests : ∀ t, 3 ≤ t → learner lassos (record course t) = some (course t) :=
+`tri 1 + 1 = 2` of `lasso_byElimination_bounded`, and claims each value right. -/
+theorem rests : ∀ t, 3 ≤ t → byElimination lassos (prefixOf course t) = some (course t) :=
   fun t later =>
     have held : index lassos course t = 2 :=
-      Nat.le_antisymm ((lasso_learner_bounded repeats).1 t)
+      Nat.le_antisymm ((lasso_byElimination_bounded repeats).1 t)
         (Nat.le_trans (Nat.le_of_eq index_three.symm) (index_mono_le later))
     let ⟨d, at_t⟩ := gap_of_le (Nat.le_trans (Nat.le_succ 2) later)
     have at_t' : t = d + 1 + 1 := at_t.trans (Nat.add_comm 2 d)
-    (congrArg (fun n => lasso (pairAt n) (record course t)) held).trans
+    (congrArg (fun n => lasso (pairAt n) (prefixOf course t)) held).trans
       ((lasso_claims (h := (0, 1)) (Nat.le_trans (Nat.le_succ 2) later)).trans
-        ((congrArg (fun n => back (record course n) 1) at_t').trans
-          ((back_record course d 1).trans
+        ((congrArg (fun n => back (prefixOf course n) 1) at_t').trans
+          ((back_prefix course d 1).trans
             (congrArg some ((repeats d (Nat.zero_le d)).symm.trans
               (congrArg course at_t'.symm))))))
 

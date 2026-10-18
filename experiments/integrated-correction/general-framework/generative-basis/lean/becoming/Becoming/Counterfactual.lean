@@ -7,7 +7,7 @@ import Becoming.Unfolding
 
 `Becoming.Response` (P65) decided the comparison where the rest responds within a part's
 responsive reach, with two things supplied: the second flow, and the premise that the rest
-responds through its registration (`Flow.RespondsThroughRegistration`). The chapter's open item
+responds through its registration (`Flow.RespondsThroughCoupling`). The chapter's open item
 asked for "a comparison in which others respond as the dynamics give, not through a second flow
 supplied". This module gives the rest's exchange by a law and derives both. No premise enters
 beyond the law of exchange itself and what each theorem names.
@@ -44,7 +44,7 @@ beyond the law of exchange itself and what each theorem names.
   that (`ExchangeLaw.Nonanticipating.through_of_observed`), the proof changing one condition at a
   time (`alike_of_sensitive_agree`). Conversely every registration a law reads through holds,
   with what the formation depends on, every condition its exchange is sensitive to, up to double
-  negation: that it leaves one out is refuted (`¬ ¬`, `ExchangeLaw.Through.registers_of_sensitive`).
+  negation: that it leaves one out is refuted (`¬ ¬`, `ExchangeLaw.Through.couples_of_sensitive`).
   So sensitivity is the least registration, least in that double-negation form. No
   decision of sensitivity is used: what is decided is only whether two numbers are equal
   (`nat_eq_of_not_not`).
@@ -144,7 +144,7 @@ def Nonanticipating : Prop :=
 
 /-- The law reads, for each formation outside the part, only what that formation registers. -/
 def Through (W : Web F C) (obs : F → C → Prop) (part : F → Bool) : Prop :=
-  ∀ h, part h = false → ∀ t l l', W.RegistersAlikeUpTo obs h l l' t → law.GivesAlike t h l l'
+  ∀ h, part h = false → ∀ t l l', W.AlikeThroughUpTo obs h l l' t → law.GivesAlike t h l l'
 
 /-- Across the step from `t`, what `h` exchanges is fixed by the other conditions' levels up to
 `t`: `c`'s levels, and every level after `t`, make no difference to it. -/
@@ -182,7 +182,7 @@ for each formation, only what it registers, the rest responds through its regist
 two courses: P65's premise, with no premise on the pair. -/
 theorem ExchangeLaw.Through.responds (through : law.Through W obs part)
     (follows : L.Follows law part W.level) (follows' : L'.Follows law part W'.level) :
-    L.RespondsThroughRegistration L' W W' obs part :=
+    L.RespondsThroughCoupling L' W W' obs part :=
   fun h out t alike c =>
     have same := through h out t W.level W'.level alike c
     ⟨(follows h out t c).1.trans (same.1.trans (follows' h out t c).1.symm),
@@ -426,15 +426,15 @@ theorem nat_eq_of_not_not {a b : Nat} (nn : ¬ ¬ a = b) : a = b :=
 /-- **A law reading through a registration is sensitive only to what that registration holds.**
 Where a law reads, for a formation outside the part, only what it registers, every condition its
 exchange is sensitive to is one the formation depends on or observes: it is not left out. -/
-theorem ExchangeLaw.Through.registers_of_sensitive {W : Web F C} {obs : F → C → Prop}
+theorem ExchangeLaw.Through.couples_of_sensitive {W : Web F C} {obs : F → C → Prop}
     {part : F → Bool} (through : law.Through W obs part) {h : F} (out : part h = false) {c : C}
-    (sensitive : law.Sensitive h c) : ¬ ¬ W.Registers obs h c :=
-  fun unregistered =>
+    (sensitive : law.Sensitive h c) : ¬ ¬ W.CoupledInto obs h c :=
+  fun uncoupled =>
     let ⟨t, notInsensitive⟩ := sensitive
     notInsensitive fun l l' off =>
-      have apart : ∀ e, W.Registers obs h e → e ≠ c := fun e registers same => by
+      have apart : ∀ e, W.CoupledInto obs h e → e ≠ c := fun e registers same => by
         subst same
-        exact unregistered registers
+        exact uncoupled registers
       through h out t l l' fun s le =>
         ⟨⟨fun admits e requires =>
             (off s le e (apart e (Or.inl ⟨s, requires⟩))) ▸ admits e requires,
@@ -860,7 +860,7 @@ theorem quiet_follows : quiet.Follows replyLaw firstPart quietWeb.level
   | .first, no, _, _ => nomatch no
 
 /-- P65's `Loop.responds`, checked there case by case, follows from the second's law. -/
-theorem responds_by_law : escalation.RespondsThroughRegistration quiet web quietWeb paired firstPart :=
+theorem responds_by_law : escalation.RespondsThroughCoupling quiet web quietWeb paired firstPart :=
   replyLaw_through.responds escalation_follows quiet_follows
 
 /-- **Each course is fixed by the first's act.** A balanced flow with both formations present,

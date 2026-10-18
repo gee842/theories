@@ -64,7 +64,7 @@ exchange, with no premise beyond what each theorem names.
   from the two sides.
 - What can register the distance is a reading of the stock's level before the break: observing
   it forms the loop earlier, where it can respond while there is still stock
-  (`Web.observed_raise_registers`).
+  (`Web.observed_raise_couples`).
 
 What is not derived: which schedule a law reads, which threshold, and whether a formation draws
 more than is renewed; how a formation comes to observe what it did not (given in
@@ -165,7 +165,7 @@ reads, for each formation outside the part, only what it registers, and the sche
 every step every condition the formation depends on or observes, the law reads the schedule. -/
 theorem ExchangeLaw.Through.readsAt {W : Web F C} {obs : F → C → Prop}
     (through : law.Through W obs part)
-    (cover : ∀ t h d, part h = false → W.Registers obs h d → reads t h d = true) :
+    (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → reads t h d = true) :
     law.ReadsAt part reads :=
   fun h out t l l' agree =>
     through h out t l l' fun s le =>

@@ -5,7 +5,7 @@ import Becoming.Counterfactual
 
 `Becoming.Counterfactual` shows that every registration a law of exchange reads through holds,
 with what the formation depends on, every condition its exchange is sensitive to, in the form
-that its not holding it is refuted (`¬ ¬`, `ExchangeLaw.Through.registers_of_sensitive`), and,
+that its not holding it is refuted (`¬ ¬`, `ExchangeLaw.Through.couples_of_sensitive`), and,
 with finitely many conditions, listed with equality decided, that a law of what has stood reads
 through registering what it is sensitive to (`ExchangeLaw.Nonanticipating.through_sensitive`):
 sensitivity is the least registration, least up to that double negation. It leaves open whether
@@ -34,9 +34,9 @@ given constructively.
   conditions reads through every registration observing what it is sensitive to
   (`ExchangeLaw.ReadsFinitely.through_of_observed`), through what it is sensitive to
   (`ExchangeLaw.ReadsFinitely.through_sensitive`), and sensitivity is the least registration it
-  reads through (`ExchangeLaw.ReadsFinitely.least_registration`, with
-  `ExchangeLaw.Through.registers_of_sensitive`): least in that every registration it reads through
-  holds each condition it is sensitive to up to double negation (`¬ ¬ W.Registers obs h c`), not
+  reads through (`ExchangeLaw.ReadsFinitely.least_coupling`, with
+  `ExchangeLaw.Through.couples_of_sensitive`): least in that every registration it reads through
+  holds each condition it is sensitive to up to double negation (`¬ ¬ W.CoupledInto obs h c`), not
   as a positive inclusion. The comparison as the dynamics give holds for
   such laws with any number of conditions, the registration being their sensitivity
   (`comparison_through_sensitivity_of_readsFinitely`). The case of finitely many conditions in
@@ -57,7 +57,7 @@ given constructively.
   between two histories (`tailLaw_differs`). It does not read through what it is sensitive to
   (`tailLaw_not_through_sensitive`; for a web in which it depends on nothing,
   `tailLaw_not_through`), nor finitely many conditions (`tailLaw_not_readsFinitely`), and the
-  registrations it reads through have no least one (`tailLaw_no_least_registration`).
+  registrations it reads through have no least one (`tailLaw_no_least_coupling`).
 * **Every counterexample gives omniscience.** Where, for a law of what has stood whose conditions
   are numbered by the natural numbers, two histories agree up to a step on every condition it is
   sensitive to and still give differently there, the weak limited principle of omniscience holds
@@ -194,13 +194,13 @@ theorem ExchangeLaw.ReadsFinitely.through_sensitive (fin : law.ReadsFinitely) (W
 finitely many conditions reads through what it is sensitive to, and every registration it reads
 through holds, with what the formation depends on, every condition it is sensitive to, up to
 double negation: that it does not hold one is refuted (`¬ ¬`). -/
-theorem ExchangeLaw.ReadsFinitely.least_registration (fin : law.ReadsFinitely) (W : Web F C)
+theorem ExchangeLaw.ReadsFinitely.least_coupling (fin : law.ReadsFinitely) (W : Web F C)
     (part : F → Bool) :
     law.Through W law.Sensitive part ∧
       ∀ obs : F → C → Prop, law.Through W obs part →
-        ∀ h, part h = false → ∀ c, law.Sensitive h c → ¬ ¬ W.Registers obs h c :=
+        ∀ h, part h = false → ∀ c, law.Sensitive h c → ¬ ¬ W.CoupledInto obs h c :=
   ⟨fin.through_sensitive W part,
-   fun _ through _ out _ sensitive => through.registers_of_sensitive out sensitive⟩
+   fun _ through _ out _ sensitive => through.couples_of_sensitive out sensitive⟩
 
 /-- **The case of finitely many conditions is an instance**: `Becoming.Counterfactual`'s
 `ExchangeLaw.Nonanticipating.through_sensitive`, from one list holding every condition. -/
@@ -371,7 +371,7 @@ theorem tailLaw_through_from {W : Web Unit Nat} (n : Nat) :
 formation depends on nothing, no registration the tail law reads through lies within every
 registration it reads through: it would hold no condition, the conditions from each one on being
 read through, and the tail law does not read through registering nothing. -/
-theorem tailLaw_no_least_registration {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t () c) :
+theorem tailLaw_no_least_coupling {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t () c) :
     ¬ ∃ obs : Unit → Nat → Prop, (tailLaw decides).Through W obs (fun _ => false) ∧
       ∀ obs' : Unit → Nat → Prop, (tailLaw decides).Through W obs' (fun _ => false) →
         ∀ c, obs () c → obs' () c :=

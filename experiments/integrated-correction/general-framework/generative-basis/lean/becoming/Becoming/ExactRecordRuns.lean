@@ -46,7 +46,7 @@ variable {S : Type u} {A : Type v} {R : Type w} {P : Process S A}
 
 /-- The record the registration `reg` leaves along a run before step `t`, latest first. -/
 def recordBefore (reg : S → R) (t : Nat) (r : Run P) : List R :=
-  Learning.record (Parting.course reg r) t
+  Learning.prefixOf (Parting.course reg r) t
 
 /-- The two-valued reading `val` of a run's configuration at step `t`. -/
 def valueAt (val : S → Bool) (t : Nat) (r : Run P) : Bool := val (r.state t)

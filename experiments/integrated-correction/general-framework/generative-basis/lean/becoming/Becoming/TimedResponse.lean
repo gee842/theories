@@ -25,11 +25,11 @@ def TouchesAt (L L' : Flow F C) (t : Nat) (h : F) (c : C) : Prop :=
 
 /-- The condition enters support at this step, or is explicitly observed. Unlike
 the whole-history registration envelope, a future requirement is not counted now. -/
-def RegistersAt (W : Web F C) (obs : F → C → Prop) (g : F) (s : Nat) (c : C) : Prop :=
+def CoupledIntoAt (W : Web F C) (obs : F → C → Prop) (g : F) (s : Nat) (c : C) : Prop :=
   W.requires s g c ∨ obs g c
 
-theorem registersAt_registers {W : Web F C} {obs : F → C → Prop} {g : F} {s : Nat} {c : C}
-    (reg : RegistersAt W obs g s c) : W.Registers obs g c :=
+theorem coupledIntoAt_coupledInto {W : Web F C} {obs : F → C → Prop} {g : F} {s : Nat} {c : C}
+    (reg : CoupledIntoAt W obs g s c) : W.CoupledInto obs g c :=
   reg.elim (fun req => .inl ⟨s, req⟩) Or.inr
 
 /-- Potential propagation, retaining the order of exchanges and past registration.
@@ -40,13 +40,13 @@ inductive Spread (L L' : Flow F C) (W : Web F C)
   | input {t h c} : source t h → TouchesAt L L' t h c →
       Spread L L' W obs source (t+1) c
   | response {s t h c d} : Spread L L' W obs source s d → s ≤ t →
-      RegistersAt W obs h s d → TouchesAt L L' t h c →
+      CoupledIntoAt W obs h s d → TouchesAt L L' t h c →
       Spread L L' W obs source (t+1) c
 
 /-- A potential source route has entered something the reader registers by T. -/
 def ReachedBy (L L' : Flow F C) (W : Web F C) (obs : F → C → Prop)
     (source : Nat → F → Prop) (g : F) (T : Nat) : Prop :=
-  ∃ s c, s ≤ T ∧ RegistersAt W obs g s c ∧ Spread L L' W obs source s c
+  ∃ s c, s ≤ T ∧ CoupledIntoAt W obs g s c ∧ Spread L L' W obs source s c
 
 variable {L L' : Flow F C} {W W' : Web F C}
     {obs : F → C → Prop} {source : Nat → F → Prop}
@@ -78,9 +78,9 @@ theorem reachedBy_mono {g : F} {T U : Nat} (le : T ≤ U)
   | ⟨s, c, before, reg, spread⟩ => ⟨s, c, Nat.le_trans before le, reg, spread⟩
 
 /-- Equality of registered levels suffices for the native registration, including support. -/
-theorem registration_of_levels {h : F} {l l' : Nat → C → Nat} {t : Nat}
-    (same : ∀ c, RegistersAt W obs h t c → l t c = l' t c) :
-    W.RegistersAlike obs h l l' t :=
+theorem coupling_of_levels {h : F} {l l' : Nat → C → Nat} {t : Nat}
+    (same : ∀ c, CoupledIntoAt W obs h t c → l t c = l' t c) :
+    W.AlikeThrough obs h l l' t :=
   ⟨⟨fun admits c requires => Nat.le_trans (admits c requires)
       (Nat.le_of_eq (same c (.inl requires))),
     fun admits c requires => Nat.le_trans (admits c requires)
@@ -97,7 +97,7 @@ theorem levels_alike_before {D : Nat}
     (present : ∀ t, t < D → L.present t = L'.present t)
     (start : ∀ c, W.level 0 c = W'.level 0 c)
     (responds : ∀ t, t < D → ∀ h, ¬ source t h →
-      W.RegistersAlikeUpTo obs h W.level W'.level t →
+      W.AlikeThroughUpTo obs h W.level W'.level t →
       ∀ c, L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c) :
     ∀ t, t ≤ D → ∀ c, ¬ Spread L L' W obs source t c →
       W.level t c = W'.level t c := by
@@ -120,7 +120,7 @@ theorem levels_alike_before {D : Nat}
           intro touch
           apply responds t before h (fun src => outside (.input src touch))
           intro s le
-          apply registration_of_levels
+          apply coupling_of_levels
           intro d reg
           exact earlier s le d (fun spread => outside (.response spread le reg touch))
         exact match Nat.decLt 0 (L.take t h c), Nat.decLt 0 (L.give t h c),
@@ -155,29 +155,29 @@ variable {D : Nat}
     (present : ∀ t, t < D → L.present t = L'.present t)
     (start : ∀ c, W.level 0 c = W'.level 0 c)
     (responds : ∀ t, t < D → ∀ h, ¬ source t h →
-      W.RegistersAlikeUpTo obs h W.level W'.level t →
+      W.AlikeThroughUpTo obs h W.level W'.level t →
       ∀ c, L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c)
 
 include balanced balanced' present start responds
 
-theorem registration_alike_before {g : F}
+theorem coupling_alike_before {g : F}
     (unreached : ¬ ReachedBy L L' W obs source g D) :
-    W.RegistersAlikeUpTo obs g W.level W'.level D :=
-  fun s le => registration_of_levels fun c reg =>
+    W.AlikeThroughUpTo obs g W.level W'.level D :=
+  fun s le => coupling_of_levels fun c reg =>
     levels_alike_before balanced balanced' present start responds s le c
       (fun spread => unreached ⟨s, c, le, reg, spread⟩)
 
 /-- Any output type is admitted. Factoring through complete registration is supplied. -/
 theorem answer_alike_before {A : Type} {g : F}
     (read : (Nat → C → Nat) → A)
-    (through : ∀ l l', W.RegistersAlikeUpTo obs g l l' D → read l = read l')
+    (through : ∀ l l', W.AlikeThroughUpTo obs g l l' D → read l = read l')
     (unreached : ¬ ReachedBy L L' W obs source g D) : read W.level = read W'.level :=
-  through _ _ (registration_alike_before balanced balanced' present start responds unreached)
+  through _ _ (coupling_alike_before balanced balanced' present start responds unreached)
 
 /-- Constructive necessity: different outputs rule out absence of a timely route. -/
 theorem different_answers_not_unreached {A : Type} {g : F}
     (read : (Nat → C → Nat) → A)
-    (through : ∀ l l', W.RegistersAlikeUpTo obs g l l' D → read l = read l')
+    (through : ∀ l l', W.AlikeThroughUpTo obs g l l' D → read l = read l')
     (different : read W.level ≠ read W'.level) : ¬ ¬ ReachedBy L L' W obs source g D :=
   fun unreached => different
     (answer_alike_before balanced balanced' present start responds read through unreached)
@@ -186,7 +186,7 @@ theorem different_answers_not_unreached {A : Type} {g : F}
 theorem different_answers_require_reached {A : Type} {g : F}
     [decided : Decidable (ReachedBy L L' W obs source g D)]
     (read : (Nat → C → Nat) → A)
-    (through : ∀ l l', W.RegistersAlikeUpTo obs g l l' D → read l = read l')
+    (through : ∀ l l', W.AlikeThroughUpTo obs g l l' D → read l = read l')
     (different : read W.level ≠ read W'.level) : ReachedBy L L' W obs source g D :=
   match decided with
   | isTrue reached => reached
@@ -195,9 +195,9 @@ theorem different_answers_require_reached {A : Type} {g : F}
         different unreached)
 end Deadline
 
-theorem touches_registered_edge {g h : F} {t : Nat} {c : C}
-    (present : L.present t = L'.present t) (reg : W.Registers obs g c)
-    (touch : TouchesAt L L' t h c) : L.RegisteredFromEither W L' obs g h :=
+theorem touches_coupled_edge {g h : F} {t : Nat} {c : C}
+    (present : L.present t = L'.present t) (reg : W.CoupledInto obs g c)
+    (touch : TouchesAt L L' t h c) : L.CoupledFromEither W L' obs g h :=
   match touch.2 with
   | .inl pos => .inl ⟨c, reg, t, touch.1, .inl pos⟩
   | .inr (.inl pos) => .inl ⟨c, reg, t, touch.1, .inr pos⟩
@@ -208,24 +208,24 @@ theorem touches_registered_edge {g h : F} {t : Nat} {c : C}
 theorem Spread.within_response {part : F → Bool}
     (present : ∀ t, L.present t = L'.present t)
     (inside : ∀ t h, source t h → part h = true) {t : Nat} {c : C}
-    (spread : Spread L L' W obs source t c) {g : F} (reg : W.Registers obs g c) :
+    (spread : Spread L L' W obs source t c) {g : F} (reg : W.CoupledInto obs g c) :
     L.WithinResponse L' W obs part g := by
   induction spread generalizing g with
   | hold _ ih => exact ih reg
   | input src touch =>
       exact ⟨_, inside _ _ src,
-        WithinClosure.of_rel (touches_registered_edge (present _) reg touch)⟩
+        WithinClosure.of_rel (touches_coupled_edge (present _) reg touch)⟩
   | response _ _ previous touch ih =>
-      rcases ih (registersAt_registers previous) with ⟨h, member, within⟩
+      rcases ih (coupledIntoAt_coupledInto previous) with ⟨h, member, within⟩
       exact ⟨h, member, within.trans
-        (WithinClosure.of_rel (touches_registered_edge (present _) reg touch))⟩
+        (WithinClosure.of_rel (touches_coupled_edge (present _) reg touch))⟩
 
 theorem reachedBy_within_response {part : F → Bool}
     (present : ∀ t, L.present t = L'.present t)
     (inside : ∀ t h, source t h → part h = true) {g : F} {T : Nat}
     (reached : ReachedBy L L' W obs source g T) : L.WithinResponse L' W obs part g :=
   match reached with
-  | ⟨_, _, _, reg, spread⟩ => spread.within_response present inside (registersAt_registers reg)
+  | ⟨_, _, _, reg, spread⟩ => spread.within_response present inside (coupledIntoAt_coupledInto reg)
 
 /-! A delayed native exchange. The source is true, the distinct reader is false.
 Both are formations in the same web, sharing one condition. -/
@@ -261,7 +261,7 @@ theorem balanced (b : Bool) : (flow b).Balances (web b) := by
     | succ t => rfl
 
 theorem responds : ∀ t, ∀ h, ¬ sourceAt t h →
-    (web false).RegistersAlikeUpTo (fun _ _ => True) h
+    (web false).AlikeThroughUpTo (fun _ _ => True) h
       (web false).level (web true).level t →
     ∀ c, (flow false).take t h c = (flow true).take t h c ∧
       (flow false).give t h c = (flow true).give t h c := by
@@ -274,7 +274,7 @@ theorem responds : ∀ t, ∀ h, ¬ sourceAt t h →
       | true => exact False.elim (out ⟨rfl, rfl⟩)
     | succ t => exact ⟨rfl, rfl⟩
 
-theorem read_through (t : Nat) : ∀ l l', (web false).RegistersAlikeUpTo
+theorem read_through (t : Nat) : ∀ l l', (web false).AlikeThroughUpTo
     (fun _ _ => True) false l l' t → readAt t l = readAt t l' :=
   fun _ _ alike => congrArg (fun n => decide (0 < n)) ((alike t (Nat.le_refl t)).2 () trivial)
 
@@ -300,7 +300,7 @@ theorem answers_before_and_after :
 
 /-- A reached signal may be ignored: passing through registration does not ensure use. -/
 theorem constant_read_ignores :
-    (∀ l l', (web false).RegistersAlikeUpTo (fun _ _ => True) false l l' 2 →
+    (∀ l l', (web false).AlikeThroughUpTo (fun _ _ => True) false l l' 2 →
       (fun _ : Nat → Unit → Nat => false) l = (fun _ => false) l') ∧
     (fun _ : Nat → Unit → Nat => false) (web true).level ≠ true :=
   ⟨fun _ _ _ => rfl, Bool.noConfusion⟩
