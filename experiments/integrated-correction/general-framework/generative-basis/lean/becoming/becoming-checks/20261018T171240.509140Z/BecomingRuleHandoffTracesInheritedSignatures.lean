@@ -1,0 +1,10 @@
+import Becoming.RuleHandoffTracesInherited
+#check @Becoming.RuleHandoffTracesInherited.entry_step_requires
+#check @Becoming.RuleHandoffTracesInherited.handoff_step_present
+#check @Becoming.RuleHandoffTracesInherited.fork_shares_position
+#check @Becoming.RuleHandoffTracesInherited.nonadopting_trace_keeps_rule
+#check @Becoming.RuleHandoffTracesInherited.same_relations_same_integration
+#check @Becoming.RuleHandoffTracesInherited.no_presence_no_integration
+#check @Becoming.RuleHandoffTracesInherited.majority_integration_extends
+#check @Becoming.RuleHandoffTracesInherited.bool_eq_of_iff
+#check @Becoming.RuleHandoffTracesInherited.counts_no_integration_reading

@@ -1,0 +1,32 @@
+# Sentences main added after the readings were written (A1, C1, G3, L2; head 9b9e7951b), read by sense (left_on_head.py lists them).
+### theories/becoming/chapters/THE-THEORY-OF-BECOMING.md
+= TEXT the §7 opening contrasted §3's word with its own; after the pass §3 says "couples into" too
+- Where §3 says that a formation registers a condition, this section says that it couples into the condition, by threshold or by level,
++ Like §3, this section says that a formation couples into a condition, by threshold or by level,
+= S2 §3's heading as the pass reads it
+- §3, “Selection through registration”)
++ §3, “Selection through the couplings”)
+= S2 what a comparison of courses passes (C1, D44)
+- so a comparison of courses by admission does not register it,
++ so a comparison of courses by admission does not show it,
+= S2
+- a comparison of courses that registers an ending through exclusion from taking, which admission does not;
++ a comparison of courses that shows an ending through exclusion from taking, which admission does not;
+### theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md
+= TEXT 同英文版：§7 开头把 §3 的词与本节的词对照；经此次阅读，§3 也说耦合入
+- §3 说形成识一个条件之处，本节说形成耦合入这个条件，经阈或经水平，
++ 本节与 §3 一样，说形成耦合入一个条件，经阈或经水平，
+= S2 §3 的标题
+- §3“经识的选择”）
++ §3“经耦合的选择”）
+= S2 the AI's reading (where-a-level-couples), as in the English edition
+- 所识界定耦合，律的回应即其耦合。
++ 所能耦合入者界定所回应者，律的回应即其耦合。
+### lean:LawAlongRun
+= S2 Testing's couplings as the projection (G3)
+- the instance with `Becoming.Testing`'s registration
++ the instance with `Becoming.Testing`'s couplings
+### lean:Labels
+= L-prefix the prefix of a course (L2)
+- /-- A record read through a map is the record of the course read through it. -/
++ /-- A prefix read through a map is the prefix of the course read through it. -/

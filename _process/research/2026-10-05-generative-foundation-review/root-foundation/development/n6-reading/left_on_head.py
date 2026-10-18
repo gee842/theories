@@ -9,6 +9,8 @@ import glob, json, re, subprocess, sys
 sys.path.insert(0, __import__('os').path.dirname(__file__))
 from reading_pass import prose_of, live_strings, PKG, RECORDS
 READ_AT = sys.argv[1] if len(sys.argv) > 1 else '77733b06b'
+# the head the edits are applied to: the merge base with main (main itself moves)
+HEAD_REV = subprocess.run(['git', 'merge-base', 'HEAD', 'main'], capture_output=True, text=True).stdout.strip()
 RX = re.compile(r'regist|refut|learner|belief|\brecords?\b|hypothes|target|identif|登记|识|学习者|信念|否证|假说|目标', re.I)
 def old(path):
     r = subprocess.run(['git', 'show', f'{READ_AT}:{path}'], capture_output=True, text=True)
@@ -22,7 +24,7 @@ def report(path, now, before, head):
         if u not in seen and u in cur and RX.search(u):
             print(f'{path}: {u[:400]}')
 def at_head(path):
-    r = subprocess.run(['git', 'show', f'main:{path}'], capture_output=True, text=True)
+    r = subprocess.run(['git', 'show', f'{HEAD_REV}:{path}'], capture_output=True, text=True)
     return r.stdout if r.returncode == 0 else ''
 def lean_prose(t):
     return ' \n'.join(x for _, x in prose_of(t)) if t else ''

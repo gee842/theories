@@ -46,7 +46,7 @@ what any of them did. Going alike and matching are the two halves of a mechanism
 a description.
 
 What is not derived: which projection an actual unfolding carries a law through; that any
-formation forms or uses one; the instance with `Becoming.Testing`'s registration
+formation forms or uses one; the instance with `Becoming.Testing`'s couplings
 (`Web.AlikeThroughUpTo`) as the projection. No ethical predicate, ranking or axiom occurs.
 -/
 

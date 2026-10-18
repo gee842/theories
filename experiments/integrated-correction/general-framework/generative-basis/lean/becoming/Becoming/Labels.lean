@@ -49,7 +49,7 @@ namespace Learning
 
 variable {O : Type u} {O' : Type v}
 
-/-- A record read through a map is the record of the course read through it. -/
+/-- A prefix read through a map is the prefix of the course read through it. -/
 theorem prefix_map (g : O → O') (o : Nat → O) :
     ∀ t, (prefixOf o t).map g = prefixOf (fun n => g (o n)) t
   | 0 => rfl

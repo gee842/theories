@@ -110,7 +110,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean",
       "detail": {
-        "en": "Excluding.admission_alike: the levels of the excluding course admit the second at every step, and its level path and that of the sharing course include each other, while the second ends from step one; a comparison of level paths by admission does not register an ending through exclusion from taking.",
+        "en": "Excluding.admission_alike: the levels of the excluding course admit the second at every step, and its level path and that of the sharing course include each other, while the second ends from step one; a comparison of level paths by admission does not show an ending through exclusion from taking.",
         "zh": "Excluding.admission_alike：排除的进程中水平每步都容纳第二个，它的水平路径与分享的进程的互相包含，而第二个自第一步起终结；以容纳比较水平路径，不记下经由被排除于取用之外的终结。"
       }
     }
@@ -128,7 +128,7 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T154830.591298Z）：Becoming.Exclusion 的 38 项声明（31 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 183 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that registers an ending through exclusion from taking; an independent review.",
+    "en": "Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.",
     "zh": "第 6.7 节见证中强制的终结；取尽所给如何形成；记下经由被排除于取用之外的终结的进程比较；独立审查。"
   },
   "correspondence": {
@@ -167,7 +167,7 @@
     {
       "id": "significance-retained-within-margin",
       "detail": {
-        "en": "There retaining and the margin compare level paths by what they admit; here the levels admit the excluded formation at every step while it ends, so that comparison does not register it.",
+        "en": "There retaining and the margin compare level paths by what they admit; here the levels admit the excluded formation at every step while it ends, so that comparison does not show it.",
         "zh": "那里保留与余量以所容纳者比较水平路径；这里水平每步都容纳被排除的形成而它终结，所以那一比较不记下它。"
       }
     },
@@ -238,7 +238,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05"
+      "sha256": "124d078f9152a8bd4e11b38d367f13d41b2f04ee041d337a894cc7b8add2f2ee"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -259,6 +259,9 @@
     {
       "en": "18 October 2026: added (C1), on Ren's \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\", the AI choosing the item; study section 183; the reading is D44 of DELEGATED-CHOICES.",
       "zh": "2026年10月18日：新增（C1），按 Ren 的\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"，此项由 AI 选定；研究第 183 节；读法是 DELEGATED-CHOICES 的 D44。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md. The claim is unchanged."
     }
   ]
 }

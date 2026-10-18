@@ -163,8 +163,8 @@
     "en": "Whether the weak rule gives the rule of the limited principle (whether the tail law takes strictly more); what a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 sensitivity-is-the-least-registration 的 next_delta 首项：反例之存在的确切强度。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：依存于整体而不依存于其任何部分者，恰在能对每个无尽的是非记录判定它是否全是否之处给出；条件编号时，最小的识恰在这一全知处不成立，不需要更多，核心不假定它。读作水平永不消失，这一类整体只需要弱的规则；读作终将消失，一个相关的整体（经典地是其补，在核心中是另一个律）需要有限全知原则的规则。数学是标准的：构造性反推数学中的弱有限全知原则（Bridges 与 Richman 1987；有限全知原则出自 Bishop 1967），这里以规则陈述。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the first item of the next_delta of sensitivity-is-the-least-registration: the exact strength of a counterexample's existence. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): what depends on the whole and on no part of it is given exactly where it can be decided, of every unending record of yes and no, whether it says no throughout; with the conditions numbered, the least registration fails exactly at this omniscience and needs no more of it, and the core does not assume it. Read as whether levels never vanish, a whole of this kind takes only the weak rule; read as whether they vanish eventually, a related whole, classically its complement but in the core another law, takes the rule of the limited principle. The mathematics is standard: the weak limited principle of omniscience of constructive reverse mathematics (Bridges and Richman 1987; the limited principle is Bishop's, 1967), stated here as a rule."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 sensitivity-is-the-least-registration 的 next_delta 首项：反例之存在的确切强度。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：依存于整体而不依存于其任何部分者，恰在能对每个无尽的是非序列判定它是否全是否之处给出；条件编号时，最小的耦合恰在这一全知处不成立，不需要更多，核心不假定它。读作水平永不消失，这一类整体只需要弱的规则；读作终将消失，一个相关的整体（经典地是其补，在核心中是另一个律）需要有限全知原则的规则。数学是标准的：构造性反推数学中的弱有限全知原则（Bridges 与 Richman 1987；有限全知原则出自 Bishop 1967），这里以规则陈述。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the first item of the next_delta of sensitivity-is-the-least-registration: the exact strength of a counterexample's existence. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): what depends on the whole and on no part of it is given exactly where it can be decided, of every unending sequence of yes and no, whether it says no throughout; with the conditions numbered, the least coupling fails exactly at this omniscience and needs no more of it, and the core does not assume it. Read as whether levels never vanish, a whole of this kind takes only the weak rule; read as whether they vanish eventually, a related whole, classically its complement but in the core another law, takes the rule of the limited principle. The mathematics is standard: the weak limited principle of omniscience of constructive reverse mathematics (Bridges and Richman 1987; the limited principle is Bishop's, 1967), stated here as a rule."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
   "aliases": [
@@ -398,7 +398,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05"
+      "sha256": "124d078f9152a8bd4e11b38d367f13d41b2f04ee041d337a894cc7b8add2f2ee"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -444,21 +444,21 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tail.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Tail",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Sensitivity",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"

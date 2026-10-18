@@ -1,0 +1,18 @@
+# Records main added or changed after the readings were written (C1, G3; head 9b9e7951b), read by sense.
+### record:what-taking-all-excludes
+= S2
+- does not register an ending through exclusion from taking
++ does not show an ending through exclusion from taking
+= S2
+- a comparison of courses that registers an ending through exclusion from taking
++ a comparison of courses that shows an ending through exclusion from taking
+= S2
+- so that comparison does not register it
++ so that comparison does not show it
+### record:a-law-through-a-projection-along-one-run
+= S2 2
+- Becoming.Testing's registration (Web.AlikeThroughUpTo)
++ Becoming.Testing's couplings (Web.AlikeThroughUpTo)
+= S2 2
+- Becoming.Testing 的识（Web.AlikeThroughUpTo）
++ Becoming.Testing 的耦合（Web.AlikeThroughUpTo）

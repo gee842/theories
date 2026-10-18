@@ -1,0 +1,10 @@
+Becoming.SupportGatedWebs.pulse_levels : (Becoming.SupportGated.web (RenewalRecovery.pulse 2)).level 0 () = 2 ∧
+  (Becoming.SupportGated.web (RenewalRecovery.pulse 3)).level 0 () = 2 ∧
+    (Becoming.SupportGated.web (RenewalRecovery.pulse 2)).level 1 () = 1 ∧
+      (Becoming.SupportGated.web (RenewalRecovery.pulse 3)).level 1 () = 0 ∧
+        (Becoming.SupportGated.web (RenewalRecovery.pulse 2)).level 2 () = 2
+Becoming.SupportGatedWebs.unsupported_pulse_ends : ∀ (n : Nat),
+  (Becoming.SupportGated.web (RenewalRecovery.pulse 3)).level (1 + n) () = 0 ∧
+    ∀ (p : RelationalRenewal.Law.Part), ¬(Becoming.SupportGated.web (RenewalRecovery.pulse 3)).active (1 + n) p
+Becoming.SupportGatedWebs.absent_dependent : ∀ (L : RelationalRenewal.Law),
+  (Becoming.Web.static (RenewalComparison.absent L)).Dependent

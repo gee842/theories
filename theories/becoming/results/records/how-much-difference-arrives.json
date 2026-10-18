@@ -233,8 +233,8 @@
     "en": "A least strength (needing a decision); strengths below one and real amounts; the bound with infinitely many conditions; how a center represents what it reaches; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D39；识本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作识的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达（在携带之律下表明，它什么也不取，不是无增益的；对无增益的律未表明）；Ren 的句子中，“heavily coupled into it”读作耦合强度，“a highly entangled system”读作耦合位于贯穿整体的回路上，多“highly”是回路上的强度与其作用的频度，不等同于量子的纠缠（经修订由 Ren 2026-10-18 取，DELEGATED-CHOICES D39）。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the item of six records' next_delta on how much difference arrives and a measure of coupling. Readings (the AI's, adopted on Ren's delegation, DELEGATED-CHOICES D39; 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a formation registers; how much difference arrives is itself a course one law generates in the one unfolding, not added to it; a held difference keeps arriving (shown under the carrying law, which takes nothing and is not gainless, not for gainless laws); in Ren's sentence, “heavily coupled into it” reads as coupling strength and “a highly entangled system” as couplings that lie on loops through the whole, how highly being the strengths along the loops and how often they act, not as quantum entanglement (revised and taken by Ren on 18 October 2026, DELEGATED-CHOICES D39). In systems terms the strengths are incremental gains (Lipschitz bounds) and the carried amount is their comparison system (a discrete Grönwall inequality), here attained. The name \"coupling strength\" follows the scope of levels-of-closure (\"does not measure the strength of coupling\"), leaving \"gain\" to P111."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答六项记录 next_delta 中的“差别到达多少”与“耦合的度量”。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D39；识这个词本身仍是 Ren 的）：耦合强度是敏感所缺的度量，形式上读作耦合的强弱；差别到达多少本身是同一展开中由一个律生成的进程，不另加于展开；所持的差别不断到达（在携带之律下表明，它什么也不取，不是无增益的；对无增益的律未表明）；Ren 的句子中，“heavily coupled into it”读作耦合强度，“a highly entangled system”读作耦合位于贯穿整体的回路上，多“highly”是回路上的强度与其作用的频度，不等同于量子的纠缠（经修订由 Ren 2026-10-18 取，DELEGATED-CHOICES D39）。系统论中，强度是增量增益（Lipschitz 界），所携带的量是它们的比较系统（离散的 Grönwall 不等式），这里它恰好达到。名称“耦合强度”取自 levels-of-closure 的范围（“不度量耦合的强度”），“增益”留给 P111。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the item of six records' next_delta on how much difference arrives and a measure of coupling. Readings (the AI's, adopted on Ren's delegation, DELEGATED-CHOICES D39; the word 识 itself stays Ren's): the coupling strength is the measure sensitivity lacked, read formally as how strongly a level couples into a formation; how much difference arrives is itself a course one law generates in the one unfolding, not added to it; a held difference keeps arriving (shown under the carrying law, which takes nothing and is not gainless, not for gainless laws); in Ren's sentence, “heavily coupled into it” reads as coupling strength and “a highly entangled system” as couplings that lie on loops through the whole, how highly being the strengths along the loops and how often they act, not as quantum entanglement (revised and taken by Ren on 18 October 2026, DELEGATED-CHOICES D39). In systems terms the strengths are incremental gains (Lipschitz bounds) and the carried amount is their comparison system (a discrete Grönwall inequality), here attained. The name \"coupling strength\" follows the scope of levels-of-closure (\"does not measure the strength of coupling\"), leaving \"gain\" to P111."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
   "aliases": [
@@ -519,7 +519,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05"
+      "sha256": "124d078f9152a8bd4e11b38d367f13d41b2f04ee041d337a894cc7b8add2f2ee"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -566,21 +566,21 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T101831.943492Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.TimedResponse",
       "success_pointer": "/status",
       "success_value": "passed"

@@ -1,0 +1,17 @@
+@Becoming.InterfaceTraces.run_none : ∀ {S Q A : Type} {m : AlignmentInquiry.Interface S Q A}
+  {p : AlignmentInquiry.Plan Q A} {s : S}, m.probe s p.query = none → AlignmentInquiry.run m p s = none
+@Becoming.InterfaceTraces.run_some : ∀ {S Q A : Type} {m : AlignmentInquiry.Interface S Q A}
+  {p : AlignmentInquiry.Plan Q A} {s after : S} {answer : Bool},
+  m.probe s p.query = some (answer, after) →
+    AlignmentInquiry.run m p s = m.respond after (AlignmentInquiry.branch p answer)
+@Becoming.InterfaceTraces.run_iff_trace : ∀ {S Q A : Type} (m : AlignmentInquiry.Interface S Q A)
+  (p : AlignmentInquiry.Plan Q A) (s t : S),
+  AlignmentInquiry.run m p s = some t ↔
+    ∃ answer, Generative.Trace (Becoming.InterfaceTraces.process m) s (Becoming.InterfaceTraces.moves p answer) t
+@Becoming.InterfaceTraces.passes_iff_completes : ∀ {S Q A : Type} (m : AlignmentInquiry.Interface S Q A)
+  (p : AlignmentInquiry.Plan Q A) (s : S),
+  AlignmentInquiry.passes m p s = true ↔ Becoming.InterfaceTraces.Completes m p s
+@Becoming.InterfaceTraces.valid_iff : ∀ {S Q A : Type} (m : AlignmentInquiry.Interface S Q A) (states : List S)
+  (p : AlignmentInquiry.Plan Q A),
+  AlignmentInquiry.valid m states p = true ↔
+    states ≠ [] ∧ ∀ (s : S), s ∈ states → Becoming.InterfaceTraces.Completes m p s

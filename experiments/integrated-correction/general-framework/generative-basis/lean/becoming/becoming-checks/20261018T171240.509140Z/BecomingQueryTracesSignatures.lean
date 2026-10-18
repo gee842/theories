@@ -1,0 +1,9 @@
+import Becoming.QueryTraces
+#check @Becoming.QueryTraces.lesson_foldl
+#check @Becoming.QueryTraces.lesson_trace
+#check @Becoming.QueryTraces.trace_iff
+#check @Becoming.QueryTraces.course_records_follow_sender
+#check @Becoming.QueryTraces.basic_course_records
+#check @Becoming.QueryTraces.course_record_fits_departing_operation
+#check @Becoming.QueryTraces.extended_course_records
+#check @Becoming.QueryTraces.extended_course_separates_operations

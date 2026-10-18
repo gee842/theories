@@ -138,7 +138,7 @@
 = S2
 - some law reading through registration responds to a crossing there
 + some law reading through the couplings responds to a crossing there
-= S2 the AI's reading
+= S2 2 the AI's reading
 - registration bounds coupling, and a law's responses are its couplings.
 + what can couple in bounds what responds, and a law's responses are its couplings.
 = S6
@@ -454,8 +454,8 @@
 - another's registration as a route
 + another's couplings as a route
 = S2
-- Testing`'s registration as the projection,
-+ Testing`'s couplings as the projection,
+- Testing`'s registration as the projection
++ Testing`'s couplings as the projection
 = S5
 - which correlation between moves and what is hidden leaves a model unrefuted;
 + which correlation between moves and what is hidden leaves a model unexcluded;
@@ -465,12 +465,6 @@
 = S1
 - learning where the registered values themselves are not told apart;
 + learning where the values through the map are not themselves told apart;
-= L-feature
-- learning a target from finitely many of its values, given part of a reading of the future rather than the whole (given nothing, no learner rests on every learnable target
-+ learning a feature from finitely many of its values, given part of a reading of the future rather than the whole (given nothing, no extrapolation rests on every learnable feature
-= L-feature
-- a target is learnable exactly where it is, from some step on, a reading of the future through the map,
-+ a feature is learnable exactly where it is, from some step on, a reading of the future through the map,
 = S7
 - the connection with a registration within what it registers, incomplete at every step
 + the connection with a family of readings within what it reads, incomplete at every step

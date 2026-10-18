@@ -1,0 +1,17 @@
+import Becoming.FinerTraces
+#check @Becoming.FinerTraces.mem_cons_split
+#check @Becoming.FinerTraces.mem_append_split
+#check @Becoming.FinerTraces.of_mem_map
+#check @Becoming.FinerTraces.of_mem_joinMap
+#check @Becoming.FinerTraces.lt_of_mem_upto
+#check @Becoming.FinerTraces.mem_upto
+#check @Becoming.FinerTraces.of_mem_openSteps
+#check @Becoming.FinerTraces.of_mem_finerSteps
+#check @Becoming.FinerTraces.mem_finerSteps
+#check @Becoming.FinerTraces.mem_finer_iff
+#check @Becoming.FinerTraces.trace_forget
+#check @Becoming.FinerTraces.trace_lift
+#check @Becoming.FinerTraces.nonzero_iff
+#check @Becoming.FinerTraces.finer_exists_iff
+#check @Becoming.FinerTraces.two_listed
+#check @Becoming.FinerTraces.two_values_mem_iff

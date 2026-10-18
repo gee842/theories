@@ -27,7 +27,7 @@
 - Endings forced in the witnesses of section 6.7 (Downstream, Mortal, Clearing) by quantifying over activity: there they stay stipulated; here an ending is derived only for a formation living by taking.
 - How taking all that is given forms (through what it gains, a stronger case of the meta-attractor); reserves and delayed renewal; shares beyond the witnesses.
 - Which course is to be taken: the excluding and the sharing course are not ranked, and the extent derived from the first's want does not separate them.
-- **Counterexample:** Excluding.admission_alike: the levels of the excluding course admit the second at every step, and its level path and that of the sharing course include each other, while the second ends from step one; a comparison of level paths by admission does not register an ending through exclusion from taking. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean)
+- **Counterexample:** Excluding.admission_alike: the levels of the excluding course admit the second at every step, and its level path and that of the sharing course include each other, while the second ends from step one; a comparison of level paths by admission does not show an ending through exclusion from taking. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exclusion.lean)
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
@@ -41,7 +41,7 @@ Canonical source: [Exclusion.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that registers an ending through exclusion from taking; an independent review.
+Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -56,7 +56,7 @@ The chapter's open programme (section 8.2, "Continuation (§6.7) and feeding") n
 - none
 - related, not a proved adapter: [own-count-misses-joint-excess](own-count-misses-joint-excess.md). There joint excess ends the renewal and the formations depending on it at such a need; here a full taker makes every other taker a joint excess, so a full taker that continues excludes them.
 - related, not a proved adapter: [derived-extent-limits](derived-extent-limits.md). There a clearer meeting every requirement derived from its want still ends a dweller, the ending stipulated; here ending another serves taking all that is given, not continuing as such, and the ending of a formation living by taking is derived.
-- related, not a proved adapter: [significance-retained-within-margin](significance-retained-within-margin.md). There retaining and the margin compare level paths by what they admit; here the levels admit the excluded formation at every step while it ends, so that comparison does not register it.
+- related, not a proved adapter: [significance-retained-within-margin](significance-retained-within-margin.md). There retaining and the margin compare level paths by what they admit; here the levels admit the excluded formation at every step while it ends, so that comparison does not show it.
 - related, not a proved adapter: [consumption-ends-with-feeders](consumption-ends-with-feeders.md). There a taker ends with its feeders; here a taker ends alongside a full taker while the renewer and the full taker continue.
 
 <a id="sources--来源"></a>
@@ -76,6 +76,7 @@ Aliases: `what taking all that is given excludes`, `取尽所给所排除的`, `
 ### History
 
 - 18 October 2026: added (C1), on Ren's "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable", the AI choosing the item; study section 183; the reading is D44 of DELEGATED-CHOICES.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 
 </details>
 

@@ -40,14 +40,14 @@ Canonical source: [Observation.lean](../../../../experiments/integrated-correcti
 <a id="next--下一步"></a>
 ## Next
 
-Measurement with error; another's registration as a route; when what lies downstream must differ (lower bounds on responses); the conjecture that observation is not a second relation beside dependence; an independent review.
+Measurement with error; another's reading as a route; when what lies downstream must differ (lower bounds on responses); the conjecture that observation is not a second relation beside dependence; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-P124 left open how a formation comes to observe a stock it depends on; Ren answered P124's approach with “approve your approach, please continue”. This result answers in part: a formation can observe only at the end of a route of readings from what is observed; the converse, that what lies downstream registers, fails. That necessity is a noninterference property (Goguen and Meseguer 1982): what is not downstream of the stock is unaffected by it, as in the dependency-graph reading of information flow. Readings (the AI's, weakened to what apart_only_downstream shows and taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): observing lies within the downstream: a formation's exchange responds to a difference at a stock only through a level it reads that lies downstream of the stock, direct observation being the route of length zero and a measurement, a model or another's registration a longer route; a formation comes to observe by a reading that closes a route; the reading of the stock's level before the break in P124's second reading is such a route. That observation is not a second relation beside dependence goes beyond the theorem, which shows only that observation does not go beyond dependence, not that it is dependence; it is kept as a conjecture, not a reading.
+P124 left open how a formation comes to observe a stock it depends on; Ren answered P124's approach with “approve your approach, please continue”. This result answers in part: a formation can observe only at the end of a route of readings from what is observed; the converse, that what lies downstream makes a difference, fails. That necessity is a noninterference property (Goguen and Meseguer 1982): what is not downstream of the stock is unaffected by it, as in the dependency-graph reading of information flow. Readings (the AI's, weakened to what apart_only_downstream shows and taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): observing lies within the downstream: a formation's exchange responds to a difference at a stock only through a level it reads that lies downstream of the stock, direct observation being the route of length zero and a measurement, a model or another's reading a longer route; a formation comes to observe by a reading that closes a route; the reading of the stock's level before the break in P124's second reading is such a route. That observation is not a second relation beside dependence goes beyond the theorem, which shows only that observation does not go beyond dependence, not that it is dependence; it is kept as a conjecture, not a reading.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
