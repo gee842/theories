@@ -14,7 +14,7 @@ R=$(ls -t $PKG/becoming-checks | head -1)
 python3 -c "import json;d=json.load(open('$PKG/becoming-checks/$R/verification.json'));assert d['status']=='passed';assert d['core_axioms']==[]"
 echo receipt=$R
 python3 -B $Q/apart_q.py
-python3 -B _process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.py --check > $L/conn-q.log 2>&1
+python3 -B _process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.py --write --check > $L/conn-q.log 2>&1
 python3 -c "
 import json;t=open('$L/conn-q.log').read();d=json.loads(t[t.index('{'):t.rindex('}')+1])
 assert not d['apart_roots_unclassified'] and not d['register_entries_not_apart_roots']
