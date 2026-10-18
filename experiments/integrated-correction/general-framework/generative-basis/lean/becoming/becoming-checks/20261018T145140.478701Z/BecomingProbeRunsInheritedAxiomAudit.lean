@@ -1,0 +1,23 @@
+import Becoming.ProbeRunsInherited
+#print axioms Becoming.ProbeRunsInherited.inquiry
+#print axioms Becoming.ProbeRunsInherited.probe_some
+#print axioms Becoming.ProbeRunsInherited.respond_some
+#print axioms Becoming.ProbeRunsInherited.step_keeps_actual
+#print axioms Becoming.ProbeRunsInherited.step_narrows
+#print axioms Becoming.ProbeRunsInherited.actual_kept
+#print axioms Becoming.ProbeRunsInherited.candidates_narrow
+#print axioms Becoming.ProbeRunsInherited.separation_kept
+#print axioms Becoming.ProbeRunsInherited.certificate_kept
+#print axioms Becoming.ProbeRunsInherited.chosen_plan_completes
+#print axioms Becoming.ProbeRunsInherited.run_answered
+#print axioms Becoming.ProbeRunsInherited.run_unanswered
+#print axioms Becoming.ProbeRunsInherited.trace_iff_run
+#print axioms Becoming.ProbeRunsInherited.final_of_trace
+#print axioms Becoming.ProbeRunsInherited.trace_of_final_ne
+#print axioms Becoming.ProbeRunsInherited.inspected_trace_completes
+#print axioms Becoming.ProbeRunsInherited.inspected_trace_short_of_reserve
+#print axioms Becoming.ProbeRunsInherited.slow_trace_misses_deadline
+#print axioms Becoming.ProbeRunsInherited.reuse_trace_completes_without_uniform_pool
+#print axioms Becoming.ProbeRunsInherited.empty_candidates_trace_fails
+#print axioms Becoming.ProbeRunsInherited.listed_inspect_traces_complete
+#print axioms Becoming.ProbeRunsInherited.listed_reuse_traces_complete

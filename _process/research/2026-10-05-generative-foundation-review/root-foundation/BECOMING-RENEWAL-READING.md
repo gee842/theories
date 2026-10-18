@@ -6520,6 +6520,8 @@ The checker enforces the ring (`PERIPHERY_JOINS`). 31 pure join modules went on 
 - That any join is a new result.
 - That the Mathlib leaves are joined: they are outside the run.
 
+**The two trace laws, checked (U2c, 18 October 2026).** The two trace laws P2 flagged as possibly vacuous, which [D43](DELEGATED-CHOICES.md#d43-其余的待决读法--the-other-pending-readings) left as a check rather than a reading, are not vacuous. `empty_candidates_trace_fails` and the slow-query half of `slow_trace_misses_deadline` each said only that every trace of its query and the response ends without the command achieved, which would hold if there were no such trace. Both traces exist, and each law now states its trace as a conjunct, as the module's other computed cases do. Lean proves each existence by `trace_of_final_ne`: the final situation differs from the start, since it records the query's answer in the receipt and the start records none. The final situation differs from the start only where the query is answered, and each query is: the slow query draws 3 from a reserve of 20 and takes 3 time steps against a deadline of 12 from time 0, and the reuse query draws and takes nothing, so it is answered with no candidates too; the response always answers. Nothing else changes: the other conjuncts keep their statements and proofs, the module keeps its 21 theorems, and both laws still carry only `propext`. Core receipt `20261018T164220.815903Z` ([run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T164220.815903Z/verification.json)).
+
 <a id="168-where-a-level-couples-into-a-formation-n2"></a>
 ## 168. Where a level couples into a formation (N2)
 

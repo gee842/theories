@@ -381,7 +381,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05"
+      "sha256": "c915fe992514528f0ca232631958d8b3b0a8cbe5955175eae5d45cb89e56e90d"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -874,6 +874,10 @@
     {
       "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, U2c (the two trace laws of Becoming.ProbeRunsInherited): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U2c updated the current receipt in section 9 (run, main commit, steps reused and run); the counts are unchanged). The claim is unchanged.",
+      "zh": "2026年10月18日，U2c（Becoming.ProbeRunsInherited 的两条迹之律）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（THE-THEORY-OF-BECOMING.md：U2c 更新了第 9 节的当前回执（运行、main 提交、复用与运行的步数）；计数不变）。论断不变。"
     }
   ],
   "text_versions": [

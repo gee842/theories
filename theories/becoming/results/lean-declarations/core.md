@@ -1425,31 +1425,31 @@ Imports: `GenerativeCore`, `Becoming.Frame`, `EvidenceQualifiedCorrection`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.ProbeRunsInherited.probe_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L59) | 59 |
-| [Becoming.ProbeRunsInherited.respond_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L79) | 79 |
-| [Becoming.ProbeRunsInherited.step_keeps_actual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L85) | 85 |
-| [Becoming.ProbeRunsInherited.step_narrows](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L95) | 95 |
-| [Becoming.ProbeRunsInherited.actual_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L104) | 104 |
-| [Becoming.ProbeRunsInherited.candidates_narrow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L113) | 113 |
-| [Becoming.ProbeRunsInherited.separation_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L120) | 120 |
-| [Becoming.ProbeRunsInherited.certificate_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L128) | 128 |
-| [Becoming.ProbeRunsInherited.chosen_plan_completes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L139) | 139 |
-| [Becoming.ProbeRunsInherited.run_answered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L153) | 153 |
-| [Becoming.ProbeRunsInherited.run_unanswered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L162) | 162 |
-| [Becoming.ProbeRunsInherited.trace_iff_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L170) | 170 |
-| [Becoming.ProbeRunsInherited.final_of_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L181) | 181 |
-| [Becoming.ProbeRunsInherited.trace_of_final_ne](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L187) | 187 |
-| [Becoming.ProbeRunsInherited.inspected_trace_completes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L198) | 198 |
-| [Becoming.ProbeRunsInherited.inspected_trace_short_of_reserve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L217) | 217 |
-| [Becoming.ProbeRunsInherited.slow_trace_misses_deadline](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L236) | 236 |
-| [Becoming.ProbeRunsInherited.reuse_trace_completes_without_uniform_pool](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L253) | 253 |
-| [Becoming.ProbeRunsInherited.empty_candidates_trace_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L267) | 267 |
-| [Becoming.ProbeRunsInherited.listed_inspect_traces_complete](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L276) | 276 |
-| [Becoming.ProbeRunsInherited.listed_reuse_traces_complete](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L285) | 285 |
+| [Becoming.ProbeRunsInherited.probe_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L60) | 60 |
+| [Becoming.ProbeRunsInherited.respond_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L80) | 80 |
+| [Becoming.ProbeRunsInherited.step_keeps_actual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L86) | 86 |
+| [Becoming.ProbeRunsInherited.step_narrows](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L96) | 96 |
+| [Becoming.ProbeRunsInherited.actual_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L105) | 105 |
+| [Becoming.ProbeRunsInherited.candidates_narrow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L114) | 114 |
+| [Becoming.ProbeRunsInherited.separation_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L121) | 121 |
+| [Becoming.ProbeRunsInherited.certificate_kept](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L129) | 129 |
+| [Becoming.ProbeRunsInherited.chosen_plan_completes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L140) | 140 |
+| [Becoming.ProbeRunsInherited.run_answered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L154) | 154 |
+| [Becoming.ProbeRunsInherited.run_unanswered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L163) | 163 |
+| [Becoming.ProbeRunsInherited.trace_iff_run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L171) | 171 |
+| [Becoming.ProbeRunsInherited.final_of_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L182) | 182 |
+| [Becoming.ProbeRunsInherited.trace_of_final_ne](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L188) | 188 |
+| [Becoming.ProbeRunsInherited.inspected_trace_completes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L199) | 199 |
+| [Becoming.ProbeRunsInherited.inspected_trace_short_of_reserve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L218) | 218 |
+| [Becoming.ProbeRunsInherited.slow_trace_misses_deadline](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L237) | 237 |
+| [Becoming.ProbeRunsInherited.reuse_trace_completes_without_uniform_pool](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L257) | 257 |
+| [Becoming.ProbeRunsInherited.empty_candidates_trace_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L271) | 271 |
+| [Becoming.ProbeRunsInherited.listed_inspect_traces_complete](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L283) | 283 |
+| [Becoming.ProbeRunsInherited.listed_reuse_traces_complete](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L292) | 292 |
 
 Definitions and types:
 
-- `def` [Becoming.ProbeRunsInherited.inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L53) (L53)
+- `def` [Becoming.ProbeRunsInherited.inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean#L54) (L54)
 
 </details>
 

@@ -177,6 +177,7 @@ Items 3–5 (L1, S1, S2) were decided by Ren on 18 October in the session "Repos
 14. **U and U2**, the joins' readings and the apart-by-design classification (study §166–§167; [THEOREM-CONNECTIVITY-APART.json](THEOREM-CONNECTIVITY-APART.json)).
     - **Keep.** The checker requires a category and a reason for every apart root. There are 292 roots: 152 model witnesses, 50 support, 26 periphery scope, 20 bridge interface, 18 restatements, 13 logical strength and 13 general structure.
     - The two trace laws flagged as possibly vacuous are a check to do, not a reading: `ProbeRunsInherited.empty_candidates_trace_fails` and the slow-query half of `slow_trace_misses_deadline`. Each needs a witness that it is not vacuous, or a label.
+    - **Checked** (18 October 2026, board item U2c, [study §167](BECOMING-RENEWAL-READING.md#167-the-unification-follow-through-u2)): both traces exist, so neither law is vacuous; each law now states its trace as a conjunct.
 15. **I4b-4** ([record](../../../../theories/becoming/results/records/lifting-where-branching-is-finite.md)).
     - **Keep as taken.** The record marks it taken by Ren's 16 October "agree with other readings", which Ren has not corrected; confirm.
 16. **whole-first-and-bounded-centers** ([record](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)).

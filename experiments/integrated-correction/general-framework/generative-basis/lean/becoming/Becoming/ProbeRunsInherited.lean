@@ -33,7 +33,8 @@ so this module is in the periphery-join ring.
   the slow query misses the deadline (`slow_trace_misses_deadline`); the actual trace completes
   without a uniform pool (`reuse_trace_completes_without_uniform_pool`); no candidates, no
   completion (`empty_candidates_trace_fails`); and the selected plans complete from every listed
-  situation (`listed_inspect_traces_complete`, `listed_reuse_traces_complete`).
+  situation (`listed_inspect_traces_complete`, `listed_reuse_traces_complete`). Each computed case
+  also states that its trace exists, so none of them holds only because there is no such trace.
 
 No ethical predicate or ranking occurs. The module adds no axiom of its own; it inherits
 `propext` from `EvidenceQualifiedCorrection.probe`, `respond`, `interface`, `final` and every
@@ -230,17 +231,20 @@ theorem inspected_trace_short_of_reserve :
     (final_of_trace tr) sufficient_evidence_can_leave_too_little_to_act⟩
 
 /-- **A slower query of the same accuracy misses the deadline.** From the left model with reserve
-20 and deadline 12, every trace of the slow query and the response ends without the command
-achieved, while the inspection query and the response form a trace, and every such trace ends with
-it achieved. -/
+20 and deadline 12, the slow query and the response form a trace, and every such trace ends without
+the command achieved, while the inspection query and the response form a trace, and every such
+trace ends with it achieved. -/
 theorem slow_trace_misses_deadline :
-    (∀ out, Trace inquiry (initialSituation .left [0] 20 12) [some .slow, none] out →
+    Trace inquiry (initialSituation .left [0] 20 12) [some .slow, none]
+        (final (initialSituation .left [0] 20 12) .slow) ∧
+      (∀ out, Trace inquiry (initialSituation .left [0] 20 12) [some .slow, none] out →
         achieved out = false) ∧
       Trace inquiry (initialSituation .left [0] 20 12) [some .inspect, none]
         (final (initialSituation .left [0] 20 12) .inspect) ∧
       ∀ out, Trace inquiry (initialSituation .left [0] 20 12) [some .inspect, none] out →
         achieved out = true :=
-  ⟨fun _ tr => Eq.subst (motive := fun x => achieved x = false) (final_of_trace tr)
+  ⟨trace_of_final_ne (fun same => nomatch congrArg Situation.receipt same),
+   fun _ tr => Eq.subst (motive := fun x => achieved x = false) (final_of_trace tr)
       slower_equally_accurate_inspection_misses_deadline.1,
    trace_of_final_ne (fun same =>
       nomatch (congrArg achieved same).symm.trans slower_equally_accurate_inspection_misses_deadline.2),
@@ -262,13 +266,16 @@ theorem reuse_trace_completes_without_uniform_pool :
    fun _ tr => Eq.subst (motive := fun x => achieved x = true) (final_of_trace tr)
       lack_of_uniform_availability_does_not_forbid_actual_certificate.2⟩
 
-/-- **No candidates, no completion.** From the left model with no candidates, every trace of the
-reuse query and the response ends without the command achieved. -/
+/-- **No candidates, no completion.** From the left model with no candidates, the reuse query and
+the response form a trace, and every such trace ends without the command achieved. -/
 theorem empty_candidates_trace_fails :
-    ∀ out, Trace inquiry (initialSituation .left [] 20 20 []) [some .reuse, none] out →
-      achieved out = false :=
-  fun _ tr => Eq.subst (motive := fun x => achieved x = false) (final_of_trace tr)
-    empty_survivors_do_not_authorize_correction
+    Trace inquiry (initialSituation .left [] 20 20 []) [some .reuse, none]
+        (final (initialSituation .left [] 20 20 []) .reuse) ∧
+      ∀ out, Trace inquiry (initialSituation .left [] 20 20 []) [some .reuse, none] out →
+        achieved out = false :=
+  ⟨trace_of_final_ne (fun same => nomatch congrArg Situation.receipt same),
+   fun _ tr => Eq.subst (motive := fun x => achieved x = false) (final_of_trace tr)
+    empty_survivors_do_not_authorize_correction⟩
 
 /-- **Under pooled unknowns, the inspection traces complete.** From every listed situation with
 reserve and deadline 12, the inspection query and the response form a trace ending with the

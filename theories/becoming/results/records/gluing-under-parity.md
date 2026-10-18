@@ -107,6 +107,7 @@ Aliases: `when readings in context glue, for parity`, `奇偶约束下语境中�
 - 18 October 2026, S3 (Becoming.LastChange): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D42 extended with S3 (index row and extension paragraph)). The claim is unchanged.
 - 18 October 2026, A1: DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: A1 revised D1, D5, D22 and D39, each keeping its original text under a dated revision, and added D43, the other readings Ren took on 18 October, with their index rows). The claim is unchanged.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: D40 extended with L2; D44 added with C1 (index rows, decision, lineage)). The claim is unchanged.
+- 18 October 2026, U2c (the two trace laws of Becoming.ProbeRunsInherited): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: U2c recorded in D43 ("The joins") that the two trace laws flagged as possibly vacuous were checked: both traces exist, and each law now states its trace). The claim is unchanged.
 - 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](gluing-under-parity.json).
 
 <a id="earlier-text--早期文本"></a>
