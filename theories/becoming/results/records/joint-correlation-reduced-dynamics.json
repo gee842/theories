@@ -31,7 +31,7 @@
     "zh": "同一制备中分化的两个坐标表示操作角色。相位实际改变共同振幅关系，再以相同交互和测量比较后续；summary_update_exact的输出满足旧evolve_semiconjugacy的输入，summary_recovers_control连接测量。标准量子效应及一般约化定理不作为新发现。",
     "en": "Two coordinates differentiate operation roles within one preparation. Phase changes the joint amplitude relation before a common interaction and measurement compare continuations. summary_update_exact supplies the old evolve_semiconjugacy premise, and summary_recovers_control connects its output to measurement. Neither the standard quantum effect nor the general reduction theorem is claimed as a new discovery."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhase.lean",
   "aliases": [
     "Generative.RelationalReduction.actual_phase_preserves_both_local_states",
     "Generative.RelationalReduction.actual_phase_preserves_basis_masses",
@@ -138,6 +138,21 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhase.lean",
+      "role": "proof",
+      "sha256": "09780e9a3d318f85d3854a9fedd64ab3f761c62a67f7dc9aa17fba332e6f8411",
+      "declarations": [
+        "Becoming.JointPhase.actual_phase_preserves_both_local_states",
+        "Becoming.JointPhase.actual_phase_preserves_basis_masses",
+        "Becoming.JointPhase.same_interaction_distinguishes_relation",
+        "Becoming.JointPhase.no_local_pair_update",
+        "Becoming.JointPhase.summary_update_exact",
+        "Becoming.JointPhase.every_finite_control_response_exact",
+        "Becoming.JointPhase.summary_omits_other_relations",
+        "Becoming.JointPhase.local_pair_carries_no_law"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
       "role": "proof",
       "sha256": "08725e834290ab83cfe8f2acf9cb3ede7e8b01b7be233987e4be95ad51d2f94a",
@@ -212,6 +227,12 @@
       "role": "receipt",
       "sha256": "167317522f26c16d624f15528c625767b1d0cef1412be1b7fd70f45ee773ca63",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -261,6 +282,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
       "sha256_pointer": "/source_sha256/MachineInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhase.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JointPhase",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -349,6 +377,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (JointPhase, Readout; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（JointPhase、Readout），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

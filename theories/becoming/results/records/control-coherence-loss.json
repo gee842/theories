@@ -27,7 +27,7 @@
     "en": "A restricted algebraic instantiation of standard quantum operations with the control coordinate first. Matrix traces and shared response denominators are explicit. This is a state-interface calculation, not a verified implementation of the full higher-order switch or a laboratory run.",
     "zh": "标准量子操作的受限代数实例化，以控制坐标为先；矩阵迹和响应共同分母公开。这是状态接口计算，不是完整高阶开关的已验证实现或实验运行。"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dephasing.lean",
   "aliases": [
     "Generative.OperativeCoherence.switched_density",
     "Generative.OperativeCoherence.dephase_keeps_response_iff",
@@ -94,6 +94,23 @@
         "Generative.OperativeCoherence.dephase_keeps_response_iff",
         "Generative.OperativeCoherence.recording_reduces_to_dephase",
         "Generative.OperativeCoherence.joint_reversal_restores_control"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dephasing.lean",
+      "role": "proof",
+      "sha256": "05735a27805e061746418783dbde62eda59ce7bbdf363bce24bc783545a74652",
+      "declarations": [
+        "Becoming.Dephasing.preparation_from_blank",
+        "Becoming.Dephasing.switched_density",
+        "Becoming.Dephasing.coherent_response",
+        "Becoming.Dephasing.degraded_response",
+        "Becoming.Dephasing.no_diagonal_response_decoder",
+        "Becoming.Dephasing.no_uniform_dephase_inverse",
+        "Becoming.Dephasing.retained_response_exact",
+        "Becoming.Dephasing.dephase_keeps_response_iff",
+        "Becoming.Dephasing.recording_reduces_to_dephase",
+        "Becoming.Dephasing.joint_reversal_restores_control"
       ]
     },
     {
@@ -189,6 +206,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -217,6 +240,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dephasing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dephasing",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -312,6 +342,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Dephasing; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（Dephasing），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

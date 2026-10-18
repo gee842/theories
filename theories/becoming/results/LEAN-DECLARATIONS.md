@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 198 | 7,880 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 207 | 8,129 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 38 | 559 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -56,6 +56,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ActionAwareTracking.lean](lean-declarations/learning.md#module-c1e8bbb07357) | Learning, prediction and dynamics |
 | [ActionPreparation.lean](lean-declarations/shared.md#module-c89e3d27ff4d) | Organizational formation through revisable evaluation |
 | [ActionWitness.lean](lean-declarations/shared.md#module-1e9f6921303e) | Organizational formation through revisable evaluation |
+| [ActiveReading.lean](lean-declarations/becoming-core.md#module-6434ecb25f64) | Becoming pure core |
 | [ActualRecovery.lean](lean-declarations/core.md#module-6b8e6a0d66ac) | Generative core and relational structure |
 | [AdaptiveCore.lean](lean-declarations/learning.md#module-c3234339b888) | Learning, prediction and dynamics |
 | [Admission.lean](lean-declarations/becoming-core.md#module-26ad83f73cb9) | Becoming pure core |
@@ -72,6 +73,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ArchivePreparation.lean](lean-declarations/shared.md#module-f08c6d6875b6) | Organizational formation through revisable evaluation |
 | [AssemblyDerivedSelection.lean](lean-declarations/ethics.md#module-30cc534a61b8) | Normative grounding and generative direction |
 | [Assurance.lean](lean-declarations/becoming-core.md#module-0f9c37484982) | Becoming pure core |
+| [AssurancePlans.lean](lean-declarations/becoming-core.md#module-862b921a607a) | Becoming pure core |
 | [AttainableQuestions.lean](lean-declarations/inquiry.md#module-eb7be2a9177f) | Attainable inquiry, contact and process laws |
 | [Attraction.lean](lean-declarations/becoming-core.md#module-0f3c0f2c796a) | Becoming pure core |
 | [AttractionRuns.lean](lean-declarations/becoming-core.md#module-13ca7b7edce2) | Becoming pure core |
@@ -213,6 +215,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [DependenceWarrant.lean](lean-declarations/core.md#module-7367fd620ac4) | Generative core and relational structure |
 | [DependenceWebs.lean](lean-declarations/becoming-core.md#module-ffb7cb1a43db) | Becoming pure core |
 | [DependentCompletion.lean](lean-declarations/abstraction.md#module-363e3103ce55) | Abstraction, applicability and constitution |
+| [Dephasing.lean](lean-declarations/becoming-core.md#module-1103d0222e3c) | Becoming pure core |
 | [DephasingRuns.lean](lean-declarations/becoming-bridge.md#module-05b309f8cd6a) | Becoming bridge |
 | [DephasingRunsInherited.lean](lean-declarations/core.md#module-d851198fbd13) | Generative core and relational structure |
 | [Depletion.lean](lean-declarations/core.md#module-5391ff34d63c) | Generative core and relational structure |
@@ -436,6 +439,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [InstallationTraces.lean](lean-declarations/becoming-bridge.md#module-4cf8a0d7126a) | Becoming bridge |
 | [InstallationTracesInherited.lean](lean-declarations/core.md#module-6260b2f695f5) | Generative core and relational structure |
 | [Instances.lean](lean-declarations/becoming-bridge.md#module-fc3ddc0ea6af) | Becoming bridge |
+| [Integers.lean](lean-declarations/becoming-core.md#module-6301489d5d60) | Becoming pure core |
 | [IntegratedPortContinuation.lean](lean-declarations/inquiry.md#module-9e3c69c03ebf) | Attainable inquiry, contact and process laws |
 | [Interdependence.lean](lean-declarations/becoming-core.md#module-9b2e13db3d20) | Becoming pure core |
 | [InterfaceTraces.lean](lean-declarations/becoming-bridge.md#module-5df9b10f2a6d) | Becoming bridge |
@@ -449,6 +453,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [JointContinuation.lean](lean-declarations/learning.md#module-9bafeaa2c9e5) | Learning, prediction and dynamics |
 | [JointContinuationClassification.lean](lean-declarations/ethics.md#module-2c0028cc241e) | Normative grounding and generative direction |
 | [JointInterpretation.lean](lean-declarations/inquiry.md#module-6bb6c519ec52) | Attainable inquiry, contact and process laws |
+| [JointPhase.lean](lean-declarations/becoming-core.md#module-5cfc0c3cee2e) | Becoming pure core |
 | [JointPhaseTraces.lean](lean-declarations/becoming-bridge.md#module-890f7a5ce1e3) | Becoming bridge |
 | [JointPhaseTracesInherited.lean](lean-declarations/core.md#module-a0adf66b83b5) | Generative core and relational structure |
 | [JointPlanFrames.lean](lean-declarations/becoming-core.md#module-803304e89e6a) | Becoming pure core |
@@ -497,6 +502,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [MarketDiagnosis.lean](lean-declarations/other.md#module-e2732406feff) | Other formal studies |
 | [MarketGenerativity.lean](lean-declarations/other.md#module-e2e5c347dc5a) | Other formal studies |
 | [MarketInstances.lean](lean-declarations/other.md#module-96b312116575) | Other formal studies |
+| [MatchedCourses.lean](lean-declarations/becoming-core.md#module-7e62abf919a9) | Becoming pure core |
 | [MaterialMaturation.lean](lean-declarations/ethics.md#module-e4e9dd7ab622) | Normative grounding and generative direction |
 | [MeasuredFeedback.lean](lean-declarations/learning.md#module-99c139232337) | Learning, prediction and dynamics |
 | [Mechanism.lean](lean-declarations/becoming-core.md#module-1d6eda30f7b5) | Becoming pure core |
@@ -606,6 +612,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ProbeRunsInherited.lean](lean-declarations/core.md#module-803384a33d7f) | Generative core and relational structure |
 | [ProductTower.lean](lean-declarations/core.md#module-4d5adece21ab) | Generative core and relational structure |
 | [ProjectedLawTraces.lean](lean-declarations/becoming-bridge.md#module-6e62052b452d) | Becoming bridge |
+| [ProjectedLaws.lean](lean-declarations/becoming-core.md#module-321a4be2da04) | Becoming pure core |
 | [Propagation.lean](lean-declarations/becoming-core.md#module-b54c1e7958f2) | Becoming pure core |
 | [ProtectedScope.lean](lean-declarations/core.md#module-734a8db29b35) | Generative core and relational structure |
 | [ProtectedScopeLimits.lean](lean-declarations/core.md#module-a915d0fcaf85) | Generative core and relational structure |
@@ -806,6 +813,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Stock.lean](lean-declarations/becoming-core.md#module-3ccc0c61851a) | Becoming pure core |
 | [StockTraces.lean](lean-declarations/becoming-core.md#module-90901fc62875) | Becoming pure core |
 | [StrengthFlows.lean](lean-declarations/becoming-core.md#module-de00326fb98d) | Becoming pure core |
+| [StrictTransport.lean](lean-declarations/becoming-core.md#module-a425881357d5) | Becoming pure core |
 | [StrictTransportRuns.lean](lean-declarations/becoming-bridge.md#module-477c16f69c79) | Becoming bridge |
 | [StructuralCopying.lean](lean-declarations/ethics.md#module-558eaf1967e0) | Normative grounding and generative direction |
 | [StructuralInheritance.lean](lean-declarations/ethics.md#module-e8a2cb3c9480) | Normative grounding and generative direction |
@@ -820,6 +828,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [SupportGatedWebsInherited.lean](lean-declarations/core.md#module-d8406aedbebb) | Generative core and relational structure |
 | [SupportHandoff.lean](lean-declarations/shared.md#module-15a26dae9373) | Organizational formation through revisable evaluation |
 | [SupportNecessity.lean](lean-declarations/renewal.md#module-bedcaae2aaa8) | Support and renewal |
+| [SupportRecovery.lean](lean-declarations/becoming-core.md#module-707caab644a3) | Becoming pure core |
 | [SupportedRevision.lean](lean-declarations/learning.md#module-ed748ff2bb5a) | Learning, prediction and dynamics |
 | [SurfaceSelection.lean](lean-declarations/ethics.md#module-b298a57e747a) | Normative grounding and generative direction |
 | [SustainedJudgment.lean](lean-declarations/ethics.md#module-0fd5374df4b5) | Normative grounding and generative direction |

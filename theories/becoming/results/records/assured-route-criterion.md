@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker fo
 
 For every determined process (each move has at most one successor), a plan completes — every step possible and safe from every configuration the earlier steps can reach, every endpoint meeting the goal — exactly when it runs, its run is safe and its endpoint meets the goal; with no safety condition, exactly when it runs and every endpoint meets the goal. For a law of change, a plan completes exactly when the goal holds where the law takes it, and for one move exactly when it holds at the successor. A partial law's traces are exactly its completed runs. The converse fails for nondeterministic processes. Contextual wisdom's assurance is completion with no safety condition. The three-route process is a law of change, so taking route a from an unreached state assures arrival exactly when a differs from the uniquely blocked mode m: an instance.
 
-Canonical source: [WisdomResponseStructure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean)
+Canonical source: [AssurancePlans.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AssurancePlans.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -48,12 +48,14 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [WisdomResponseStructure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean) | `Generative.WisdomResponseStructure.assured_route_iff` |
+| proof | [AssurancePlans.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AssurancePlans.lean) | `Becoming.AssurancePlans.Routes.completes_iff`, `Becoming.AssurancePlans.Regulation.kept_along` |
 | proof | [Assurance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Assurance.lean) | `Becoming.Assurance.free`, `Becoming.Assurance.runs_of_completes`, `Becoming.Assurance.completes_of_runs`, `Becoming.Assurance.completes_iff_of_determined`, `Becoming.Assurance.completes_iff_runs`, `Becoming.Assurance.ofMap`, `Becoming.Assurance.ofMap_determined`, `Becoming.Assurance.completes_ofMap_iff`, `Becoming.Assurance.completes_ofMap_single`, `Becoming.Assurance.ofPartial`, `Becoming.Assurance.runPartial`, `Becoming.Assurance.trace_ofPartial_iff`, `Becoming.Assurance.completes_ofPartial_iff`, `Becoming.Assurance.Branch.runs_not_completes`, `Becoming.Assurance.Branch.not_determined` |
 | proof | [Instances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean) | `Becoming.Instances.assured_iff_completes`, `Becoming.Instances.routes_eq`, `Becoming.Instances.routes_assured_iff`, `Becoming.Instances.regulation_assured_iff` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -70,4 +72,5 @@ Aliases: `Generative.WisdomResponseStructure.assured_route_iff`, `Becoming.Assur
 - 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-14: under Ren's approved general-law audit of older records, the claim now states the law first: for every determined process, completion is exactly a safe run ending in the goal (new core module Becoming.Assurance); the three-route process and the regulation law become instances through the bridge Becoming.Instances, and the nondeterministic counterexample Branch is added. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorem, receipt and scope are unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
+- 19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (AssurancePlans; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
 - 15 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](assured-route-criterion.json).

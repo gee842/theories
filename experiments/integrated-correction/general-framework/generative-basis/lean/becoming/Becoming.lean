@@ -58,13 +58,17 @@ import Becoming.Units
 import Becoming.Imbalance
 import Becoming.Continuation
 import Becoming.RenewalFlow
+import Becoming.SupportRecovery
 import Becoming.Admission
 import Becoming.Exclusion
 import Becoming.Regions
 import Becoming.Metaethics
 import Becoming.Lifting
 import Becoming.Ranking
+import Becoming.ActiveReading
 import Becoming.LossMatching
+import Becoming.StrictTransport
+import Becoming.MatchedCourses
 import Becoming.Correspondence
 import Becoming.Descent
 import Becoming.Standpoints
@@ -92,8 +96,13 @@ import Becoming.Description
 import Becoming.Identification
 import Becoming.Learnable
 import Becoming.Assurance
+import Becoming.AssurancePlans
+import Becoming.Integers
 import Becoming.Segmentation
 import Becoming.Readout
+import Becoming.Dephasing
+import Becoming.ProjectedLaws
+import Becoming.JointPhase
 import Becoming.Gated
 import Becoming.Viability
 import Becoming.Keeping
@@ -714,6 +723,12 @@ readings of the unfolding (`Becoming.Labelled`).
   and the focal formation's own trajectory do not decide the class, formations each within
   renewal consume jointly, escalation consumes, and the seasonal web is neither renewing nor
   consuming.
+* `Becoming.SupportRecovery` (L3): recovery in the support-gated family (no premise): with both
+  formations unsupported the level stays (`absorbs`); a window of supported net repair raises the
+  level by at least its length (`window_progress`); two pulses with the same later inputs recover
+  or end for good, and the recovered history is neither renewing nor consuming in the whole-time
+  classification (`same_later_inputs`, `supported_pulse_recovers`, `unsupported_pulse_ends`,
+  `recovered_neither`).
 * `Becoming.Admission` (L3): what can form next, and what a part opens or closes. Levels
   admit a formation when they meet every requirement it has; support is admission by the
   levels that stand, gained only at a rise and lost only at a fall where requirements hold,
@@ -756,6 +771,13 @@ readings of the unfolding (`Becoming.Labelled`).
   family, restraint above overdraw; for an overdrawing formation with an event that
   leaves every need met, only the whole-run reading ranks its absence above its
   occurrence.
+* `Becoming.ActiveReading` (L4): the reading of every active event beside the whole-run reading
+  (no premise): the whole-run reading withholds a consumer's events, and living significance on it
+  credits exactly the active events of non-consuming formations (`g0_wholeRun_iff`); under the
+  reading of every active event an overdrawing formation leaves the two courses unranked, so C
+  admits a comparison preferring the course with it (`overdraw_unranked`,
+  `overdraw_admits_occurrence`), while sharing still extends winning by consumption
+  (`contest_readings`).
 * `Becoming.LossMatching` (L4): strict loss matching for every frame: a strict match composes
   and is monotone; a generative extension is a match by identity, so a commitment making
   matching sufficient for strict priority contains C; such a commitment needs matching to be
@@ -764,6 +786,19 @@ readings of the unfolding (`Becoming.Labelled`).
   a match exists exactly when the better loses no more in each class and fewer in all; losing a
   support every claim rests on is matched below nothing; a claim read at its time is settled
   from then on, so restored support re-realizes no missed claim.
+* `Becoming.StrictTransport` (L4): strict transport along a supplied comparison (the comparison is
+  a hypothesis): a strict anchor is carried by weak steps on its side, through compatible
+  relations, along runs that lose or gain no claim, and by faithful redescription, and a supplied
+  link makes it a reason (`reason_of_strict_above`); a cutoff order prefers repair exactly below
+  its cutoff, so compatible cutoffs disagree, and the finishing-first rival supplies no cutoff
+  (`cutoffs_disagree`, `continuation_first_no_cutoff`).
+* `Becoming.MatchedCourses` (L4): comparison anchors for courses from one start that each secure
+  the claims of some positions (reading the claims as complete comparable basic losses is the
+  premise `BasicAlike` or `BaseApart`, and sufficiency of matching, `Frame.SufficientMatching`, is
+  a hypothesis): support returns while missed claims stay lost (`recovery_retains_loss`); counts
+  of losses decide strict matches (`matches_iff`, `lost_counts`), which give the two anchors and
+  their order under sufficiency (`conditional_outer_order`); where every claim rests on a base,
+  the course losing it matches nothing (`fragile_b3_matches_nothing`).
 * `Becoming.Correspondence` (L4): which conditions relate. Under the discipline that a
   condition relates two events only when one draws on it and the other depends on it
   at a positive level, at any steps, idle conditions connect nothing, and connection through a
@@ -1038,6 +1073,18 @@ readings of the unfolding (`Becoming.Labelled`).
   condition a run every endpoint of which meets the goal. A two-outcome process shows the
   converse fails without determination. For a law of change, a plan completes exactly when the
   goal holds where the law takes it; a partial law's traces are exactly its completed runs.
+* `Becoming.AssurancePlans` (L2): plans on determined, open and shut processes (no premise): under
+  a determined process a trace has one end, so some end meeting a goal is every end
+  (`Trace.determined_end`, `every_end_of_some_end`); with every move open some end is not every
+  end, and with none every claim about ends is vacuous (`Open.some_not_every`, `Shut.no_end`); an
+  itinerary of responses that keeps a band completes from every configuration in it
+  (`completes_itinerary`); in the regulation model opposite moves keep the band and merge nothing
+  (`Regulation.kept_along`), and in the three-route model each adequate reading merges outcomes
+  another tells apart, so no coarsest adequate description exists (`Routes.no_coarsest_adequate`).
+* `Becoming.Integers` (L2): constructive ring laws on `Int` (no premise): integers read as
+  difference pairs of natural numbers, with the commutativity, associativity, negation,
+  cancellation and multiplication laws the dephasing model uses, every one with an empty axiom
+  report.
 * `Becoming.Segmentation` (L2): grouping a sequence by a relation between adjacent elements,
   for every alphabet and relation, with no premise. Grouping returns a partition exactly when
   each group is linked inside and opens against the next, and that partition is unique; encoded
@@ -1051,6 +1098,26 @@ readings of the unfolding (`Becoming.Labelled`).
   observable agrees there, so nothing restores two merged configurations; a determined reduced
   law carries every step exactly when merged configurations go to merged ones, and a commuting
   reduced law commutes with every course.
+* `Becoming.Dephasing` (L4): the control–target dephasing model on integer amplitudes (no
+  premise): dephasing keeps the diagonal and the mass and merges a prepared and a coherent state,
+  so no decoder reads the response through the diagonal record and no uniform map restores it
+  (`no_diagonal_response_decoder`, `no_uniform_dephase_inverse`, through `Readout`); recording
+  into a branch reduces to dephasing and joint reversal restores the control; read as a law of
+  change, dephasing settles, merges, is not lossless, and its runs meet (`settles`,
+  `not_lossless`, `runs_meet`).
+* `Becoming.ProjectedLaws` (L4): projected laws of a deterministic law (no premise): a reduced law
+  commutes with the law exactly when the law factors through the projection, exactly when merged
+  configurations go alike, and then along every word (`commuting_iff_factors`,
+  `fibre_iff_goAlike`, `commuting_iff_traces`); with the same cells, crossed wiring leaves one
+  cell no law of its own (`no_autonomous_left_law`), and in the device model formation and
+  recurrence share one history that parts alone cannot keep
+  (`parts_only_cannot_preserve_futures`).
+* `Becoming.JointPhase` (L4): joint phase on two registers (no premise): the interaction keeps
+  both local states and the basis masses while it changes the cross term, so the relation is told
+  apart only through the joint (`same_interaction_distinguishes_relation`); no update of the local
+  pair carries the law (`no_local_pair_update`, `local_pair_carries_no_law`); a summary retaining
+  the control is exact along every finite word and omits the other relations
+  (`every_finite_word_exact`, `summary_omits_other_relations`).
 * `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
   by every ungated step is kept along every ungated course, and conversely; a course that
   changes it passes the gate, at a gated step that itself changes it. One direction suffices: a

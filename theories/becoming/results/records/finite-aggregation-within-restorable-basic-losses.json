@@ -26,7 +26,8 @@
         "Becoming.Frame.strictLossMatch_of_extension",
         "Becoming.Frame.SufficientMatching",
         "Becoming.Frame.SufficientMatching.comparison",
-        "Becoming.RepairComparison.a_b1_not_extension"
+        "Becoming.RepairComparison.a_b1_not_extension",
+        "Becoming.MatchedCourses.a_b1_not_extension"
       ]
     },
     {
@@ -74,15 +75,23 @@
       "zh": "实例：同一修复过程的各路线由同一初态产生，保留同处两次活动与别处一次、两次、三次活动；读作同一类的完整片段，四条路线的剩余损失为 3、4、3、2，所以由计数律，A 严格匹配 B₁，B₃ 严格匹配 A，B₂ 与 A 两个方向都没有。",
       "declarations": [
         "Becoming.RepairComparison.common_start",
+        "Becoming.MatchedCourses.common_start",
         "Becoming.RepairComparison.generated_trace",
+        "Becoming.MatchedCourses.generated_trace",
         "Becoming.RepairComparison.separated_same_life",
+        "Becoming.MatchedCourses.separated_same_position",
         "Becoming.RepairComparison.matches_iff",
+        "Becoming.MatchedCourses.matches_iff",
         "Becoming.RepairComparison.lost_counts",
+        "Becoming.MatchedCourses.lost_counts",
         "Becoming.RepairComparison.a_matches_b1",
+        "Becoming.MatchedCourses.a_matches_b1",
         "Becoming.RepairComparison.b3_matches_a",
+        "Becoming.MatchedCourses.b3_matches_a",
         "Becoming.RepairComparison.a_matches_b1_by_count",
         "Becoming.RepairComparison.b3_matches_a_by_count",
-        "Becoming.RepairComparison.b2_a_neither"
+        "Becoming.RepairComparison.b2_a_neither",
+        "Becoming.MatchedCourses.b2_a_neither"
       ]
     },
     {
@@ -90,11 +99,16 @@
       "zh": "完整片段匹配的充分性成立时，一次保护不足、三次足够，二对二只给出损失对应。",
       "declarations": [
         "Becoming.RepairComparison.SufficientMatching",
+        "Becoming.Frame.SufficientMatching",
         "Becoming.RepairComparison.sufficientMatching_iff",
         "Becoming.RepairComparison.conditional_lower_anchor",
+        "Becoming.MatchedCourses.conditional_lower_anchor",
         "Becoming.RepairComparison.conditional_upper_anchor",
+        "Becoming.MatchedCourses.conditional_upper_anchor",
         "Becoming.RepairComparison.b2_loss_correspondence",
-        "Becoming.RepairComparison.b2_correspondence_involutive"
+        "Becoming.MatchedCourses.b2_loss_correspondence",
+        "Becoming.RepairComparison.b2_correspondence_involutive",
+        "Becoming.MatchedCourses.b2_correspondence_involutive"
       ]
     },
     {
@@ -102,8 +116,11 @@
       "zh": "三接入修复断开共同骨干时，该路线经严格匹配不优于任何路线。",
       "declarations": [
         "Becoming.RepairComparison.fragile_b3_loses_backbone",
+        "Becoming.MatchedCourses.fragile_b3_loses_base",
         "Becoming.RepairComparison.fragile_b3_not_matching",
-        "Becoming.RepairComparison.fragile_b3_better_than_none"
+        "Becoming.MatchedCourses.fragile_b3_not_matching",
+        "Becoming.RepairComparison.fragile_b3_better_than_none",
+        "Becoming.MatchedCourses.fragile_b3_matches_nothing"
       ]
     }
   ],
@@ -442,6 +459,64 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MatchedCourses.lean",
+      "role": "proof",
+      "sha256": "0b7433345d7bd4e09685525bd0dd524bdf12ef4096ff6e3fe32e5f6f75a11171",
+      "declarations": [
+        "Becoming.MatchedCourses.Move",
+        "Becoming.MatchedCourses.Position",
+        "Becoming.MatchedCourses.Claim",
+        "Becoming.MatchedCourses.State",
+        "Becoming.MatchedCourses.start",
+        "Becoming.MatchedCourses.baseAfter",
+        "Becoming.MatchedCourses.advance",
+        "Becoming.MatchedCourses.process",
+        "Becoming.MatchedCourses.states",
+        "Becoming.MatchedCourses.run",
+        "Becoming.MatchedCourses.time",
+        "Becoming.MatchedCourses.positionOf",
+        "Becoming.MatchedCourses.covers",
+        "Becoming.MatchedCourses.frame",
+        "Becoming.MatchedCourses.decidableRealized",
+        "Becoming.MatchedCourses.gapAt",
+        "Becoming.MatchedCourses.firstClaimOf",
+        "Becoming.MatchedCourses.supportedAt",
+        "Becoming.MatchedCourses.Supported",
+        "Becoming.MatchedCourses.decidableSupported",
+        "Becoming.MatchedCourses.final",
+        "Becoming.MatchedCourses.common_start",
+        "Becoming.MatchedCourses.generated_trace",
+        "Becoming.MatchedCourses.separated_same_position",
+        "Becoming.MatchedCourses.support_between",
+        "Becoming.MatchedCourses.support_restored",
+        "Becoming.MatchedCourses.claim_iff_support",
+        "Becoming.MatchedCourses.recovery_retains_loss",
+        "Becoming.MatchedCourses.BasicAlike",
+        "Becoming.MatchedCourses.matchB1",
+        "Becoming.MatchedCourses.a_matches_b1",
+        "Becoming.MatchedCourses.matchA",
+        "Becoming.MatchedCourses.b3_matches_a",
+        "Becoming.MatchedCourses.swapB2",
+        "Becoming.MatchedCourses.b2_loss_correspondence",
+        "Becoming.MatchedCourses.b2_correspondence_involutive",
+        "Becoming.MatchedCourses.conditional_lower_anchor",
+        "Becoming.MatchedCourses.conditional_upper_anchor",
+        "Becoming.MatchedCourses.conditional_outer_order",
+        "Becoming.MatchedCourses.fragile_b3_loses_base",
+        "Becoming.MatchedCourses.fragile_a_keeps_base",
+        "Becoming.MatchedCourses.fragile_b3_not_matching",
+        "Becoming.MatchedCourses.allClaims",
+        "Becoming.MatchedCourses.allClaims_distinct",
+        "Becoming.MatchedCourses.allClaims_every",
+        "Becoming.MatchedCourses.lostCount",
+        "Becoming.MatchedCourses.matches_iff",
+        "Becoming.MatchedCourses.lost_counts",
+        "Becoming.MatchedCourses.b2_a_neither",
+        "Becoming.MatchedCourses.a_b1_not_extension",
+        "Becoming.MatchedCourses.fragile_b3_matches_nothing"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
       "role": "proof",
       "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
@@ -459,6 +534,18 @@
         "GenerativeLossComparison.strict_improvement_transport",
         "GenerativeLossComparison.strict_rejection_transport",
         "GenerativeLossComparison.Compatible"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransport.lean",
+      "role": "proof",
+      "sha256": "0a8a3e61aca7df9c7caa7997921530a0d62466e70e09dff36eba7c5c51181697",
+      "declarations": [
+        "Becoming.StrictTransport.Strict",
+        "Becoming.StrictTransport.Transitive",
+        "Becoming.StrictTransport.strict_above_trans",
+        "Becoming.StrictTransport.strict_below_trans",
+        "Becoming.StrictTransport.Compatible"
       ]
     },
     {
@@ -495,6 +582,12 @@
         "Becoming.EndlessLosses.no_sufficient_matching",
         "Becoming.Frame.not_readsAt_of_recovery"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -523,6 +616,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LossMatching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MatchedCourses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.MatchedCourses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransport.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.StrictTransport",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -576,6 +683,10 @@
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): BASIC-CONFLICT-JUDGMENT.md, PRACTICAL-JUDGMENT.md now use the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (LossMatching, MatchedCourses, StrictTransport; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（LossMatching、MatchedCourses、StrictTransport），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ],
   "text_versions": [

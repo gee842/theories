@@ -36,7 +36,9 @@
         "Becoming.SupportGated.netGive_step",
         "Becoming.SupportGated.repair_restores",
         "RenewalRecovery.supported_repair_step",
+        "Becoming.SupportRecovery.repair_step",
         "RenewalRecovery.repair_window_progress",
+        "Becoming.SupportRecovery.window_progress",
         "RenewalRecovery.repair_restores_sustaining_support"
       ]
     },
@@ -44,7 +46,8 @@
       "zh": "若两项活动都失去支持，实际水平此后不变，即使后续输入表仍列有贡献。",
       "en": "If both activities lack support, the reached level remains constant despite later nominal contributions.",
       "declarations": [
-        "RenewalRecovery.inactive_pair_absorbs"
+        "RenewalRecovery.inactive_pair_absorbs",
+        "Becoming.SupportRecovery.absorbs"
       ]
     },
     {
@@ -52,11 +55,17 @@
       "en": "Two actual draw histories have the same initial level and later inputs but opposite recovery outcomes; the recovered history is neither all-time renewing nor permanently consuming, and its supported pulse is an instance of the law of restoration.",
       "declarations": [
         "RenewalRecovery.same_future_inputs",
+        "Becoming.SupportRecovery.same_later_inputs",
         "RenewalRecovery.two_actual_pulses",
+        "Becoming.SupportRecovery.pulse_levels",
         "RenewalRecovery.supported_pulse_recovers",
+        "Becoming.SupportRecovery.supported_pulse_recovers",
         "RenewalRecovery.unsupported_pulse_never_recovers",
+        "Becoming.SupportRecovery.unsupported_pulse_ends",
         "RenewalRecovery.recovered_history_neither_global_class",
-        "Becoming.SupportGated.pulse_restores"
+        "Becoming.SupportRecovery.recovered_neither",
+        "Becoming.SupportGated.pulse_restores",
+        "Becoming.SupportGated.repair_restores"
       ]
     }
   ],
@@ -123,7 +132,7 @@
     "zh": "维持、取用与修复是同一展开中分化的作用。旧 Law.level 给出修复窗口起点；每步净增通过 repair_window_progress 接到原维持支持测试。仅第一次取用不同的两段历史改变实际修复支持，后续名义输入并不等于实际供给。没有真实系统的经验对应。",
     "en": "Sustaining, drawing and repair differentiate roles within one unfolding. The inherited Law.level supplies the repair-window start; per-step progress through repair_window_progress feeds the original sustaining-support test. A first-draw difference changes actual repair support; later nominal inputs are not actual supply. No empirical correspondence to a real system is established."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean",
   "aliases": [
     "RenewalRecovery.inactive_pair_absorbs",
     "RenewalRecovery.supported_repair_step",
@@ -194,6 +203,21 @@
         "RenewalRecovery.supported_pulse_recovers",
         "RenewalRecovery.unsupported_pulse_never_recovers",
         "RenewalRecovery.recovered_history_neither_global_class"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean",
+      "role": "proof",
+      "sha256": "3f000483a6155cbddad0ec40dba64a650bb22085dbf01eeddd69fbdef4fa1d88",
+      "declarations": [
+        "Becoming.SupportRecovery.absorbs",
+        "Becoming.SupportRecovery.repair_step",
+        "Becoming.SupportRecovery.window_progress",
+        "Becoming.SupportRecovery.same_later_inputs",
+        "Becoming.SupportRecovery.pulse_levels",
+        "Becoming.SupportRecovery.supported_pulse_recovers",
+        "Becoming.SupportRecovery.unsupported_pulse_ends",
+        "Becoming.SupportRecovery.recovered_neither"
       ]
     },
     {
@@ -276,6 +300,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -311,6 +341,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RenewalFlow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SupportRecovery",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -364,6 +401,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): the text names the core modules that now hold the declarations it cites (Becoming.Lifting, Becoming.EdgeClosure, Becoming.RenewalFlow). Declarations moved with their full Lean names, statements and proofs unchanged: renewal, netGive, flow, web, balances, netGive_step, repair_restores from RenewalBridge.lean to RenewalFlow.lean. Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean, RenewalBridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠（Ren：“so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?”，然后“please do all”）：正文改为指名现在承载所引声明的核心模块（Becoming.Lifting、Becoming.EdgeClosure、Becoming.RenewalFlow）。声明连同完整 Lean 名称、陈述与证明原样移入核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (RenewalFlow, SupportRecovery; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（RenewalFlow、SupportRecovery），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ],
   "text_versions": [

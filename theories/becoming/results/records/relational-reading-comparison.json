@@ -27,6 +27,7 @@
       "en": "Read relationally, so that the active events of formations not consuming conditions of the relations they participate in are the generative grounds, living significance includes exactly those events and is silent on a consumer's events.",
       "declarations": [
         "RenewalComparison.g0_relational",
+        "Becoming.ActiveReading.g0_wholeRun_iff",
         "GenerativeComparison.G0"
       ]
     },
@@ -35,6 +36,7 @@
       "en": "For every law of the relational-renewal family in which the focal formation draws beyond renewal from some step on, the same unfolding without that formation renews every condition and is a generative extension of the unfolding with it, an instance of that law; this holds for a dependent (malignant) and an independent (winning) focal formation alike.",
       "declarations": [
         "Becoming.SupportGated.overdraw_extension",
+        "Becoming.Ranking.whole_run_extends",
         "RenewalComparison.overdraw_relational_extension",
         "GenerativeComparison.GenerativeExtension"
       ]
@@ -44,7 +46,9 @@
       "en": "So the comparison principle C ranks the unfolding without the overdrawing formation strictly higher, and no asymmetric comparison satisfying C prefers the overdraw.",
       "declarations": [
         "RenewalComparison.overdraw_comparison_ranks",
+        "Becoming.Ranking.whole_run_ranks",
         "RenewalComparison.malignant_comparison",
+        "Becoming.ActiveReading.malignant_readings",
         "GenerativeComparison.ComparisonPrinciple"
       ]
     },
@@ -53,7 +57,9 @@
       "en": "Read event by event, the two unfoldings are incomparable by extension, and an irreflexive, transitive comparison satisfying C prefers the overdraw.",
       "declarations": [
         "RenewalComparison.overdraw_broad_incomparable",
-        "RenewalComparison.broad_comparison_admits_overdraw"
+        "Becoming.ActiveReading.overdraw_unranked",
+        "RenewalComparison.broad_comparison_admits_overdraw",
+        "Becoming.ActiveReading.overdraw_admits_occurrence"
       ]
     },
     {
@@ -61,6 +67,7 @@
       "en": "Sharing is a generative extension of winning by consumption under both readings, an instance of the same law and, under the event-by-event reading, of the law of extension for a reading exact on the extending course.",
       "declarations": [
         "Becoming.SupportGated.contest_extensions",
+        "Becoming.ActiveReading.contest_readings",
         "RenewalComparison.contest_comparison",
         "Becoming.Ranking.extendsUnder_iff_of_exact"
       ]
@@ -136,7 +143,7 @@
     "en": "Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 ('整体中的生及其继续生成'), and Ren's follow-up that generation and degeneration do not overlap; that reading and C's defense as an articulation of 'a whole direction of ever more 生' are philosophical, not established by the audit. The comparison course is the same unfolding without the focal formation, not a feasible alternative; feasibility and selection belong to P/N and the situation.",
     "zh": "以关系读 G0 的“生成”，依据的是 Ren 的 G0——对象为生生（“整体中的生及其继续生成”）——及其追问“generative 和 degenerate 不 overlap”；这一读法以及把 C 作为“整体的，不断创造更多生的方向”之比较表述的辩护，属于哲学论证，审计不确立。对照接续是同一展开中没有该形成的情形，不是可行选项；可行与选择属于 P/N 与情境。"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
   "aliases": [
     "RenewalComparison.g0_relational",
     "RenewalComparison.overdraw_relational_extension",
@@ -233,6 +240,18 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+      "role": "proof",
+      "sha256": "22c6ce03b842119dbde66f560743a08672b0a9c007e1e08b1ea3d56b2d39aac9",
+      "declarations": [
+        "Becoming.ActiveReading.g0_wholeRun_iff",
+        "Becoming.ActiveReading.overdraw_unranked",
+        "Becoming.ActiveReading.overdraw_admits_occurrence",
+        "Becoming.ActiveReading.malignant_readings",
+        "Becoming.ActiveReading.contest_readings"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
       "role": "proof",
       "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
@@ -250,7 +269,9 @@
         "Becoming.Ranking.extendsUnder_iff_of_exact",
         "Becoming.Ranking.wholeRun_of_renewed",
         "Becoming.Ranking.renewed_extends_iff",
-        "Becoming.Ranking.renewed_active_extends_iff"
+        "Becoming.Ranking.renewed_active_extends_iff",
+        "Becoming.Ranking.whole_run_extends",
+        "Becoming.Ranking.whole_run_ranks"
       ]
     },
     {
@@ -327,6 +348,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "role": "receipt",
+      "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -355,6 +382,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ActiveReading",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -424,6 +458,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (RenewalBridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (ActiveReading, Ranking; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（ActiveReading、Ranking），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ],
   "text_versions": [
