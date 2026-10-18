@@ -57,7 +57,7 @@ After G4 (`Becoming.LawThroughCoupling`) landed and the assistant reported it, R
 
 > continue
 
-The assistant's reading, which Ren may correct: the standing go of 18 October continues. The next item taken is the criterion through coupling that changes along the run (board item G5), which G4 left open.
+The assistant's reading, which Ren may revise: the standing go of 18 October continues. The next item taken is the criterion through coupling that changes along the run (board item G5), which G4 left open.
 """
     SOURCE.write_text(src)
 
@@ -97,7 +97,7 @@ Ren, 18 October 2026: "{REN}" ([source]({SRC_LINK})); on 19 October Ren wrote "c
 - **Unchanged dependences give one criterion**: consistency reads a relation only on the run's configurations up to `t` (`Run.consistentUnder_congr`); so where `g`'s dependences up to `t` are those of step `k` (`Dependence.Unchanged`), the run is consistent under the changing coupling exactly where it is under the coupling fixed at step `k` (`Run.consistent_unchanged_iff`).
 - **Where dependences form or dissolve, neither gives the other** (`Changing`): one level rising by one each step, a determined process. Depending on the level with need 2 only at level 0 (`Changing.dissolving`, which dissolves across the first step, `Changing.dissolves`), the run is consistent at every step under the changing coupling (`Changing.dissolving_consistent`); with the dependence of level 0 held fixed, levels 0 and 1 are coupled alike and lead to 1 and 2, coupled apart (`Changing.dissolving_fixed_inconsistent`, `Changing.dissolving_fixed_no_law`). Depending on it with need 2 from level 1 on (`Changing.forming`, formed across the first step, `Changing.forms`), the coupling fixed at the start depends on nothing and is consistent at every step (`Changing.forming_fixed_consistent`), while under the changing coupling levels 0 and 2 are coupled alike and lead to 1 and 3, coupled apart (`Changing.forming_inconsistent`, `Changing.forming_no_law`).
 
-**What this changes.** The study of G4 (section {g4}) said that with changing coupling "the relation then is not an equivalence in general". Read through the dependence each configuration carries, it is one, and the criterion holds unchanged; that note is corrected here. What changes is which relation is meant: the coupling a formation has on each occasion, or the coupling of one moment held over the course. They agree where nothing it depends on changes, and otherwise neither's law gives the other's.
+**What this changes.** The study of G4 (section {g4}) said that with changing coupling "the relation then is not an equivalence in general". Read through the dependence each configuration carries, it is one, and the criterion holds unchanged; that note is revised here. What changes is which relation is meant: the coupling a formation has on each occasion, or the coupling of one moment held over the course. They agree where nothing it depends on changes, and otherwise neither's law gives the other's.
 
 *Reading* [AI reading]. A law at a formation's coupling along a course is a law at the coupling it has on each occasion. Reading the course through the dependence of one moment can find a law its own coupling does not carry, or miss one it does. The reading does not say which dependences an actual formation forms.
 
