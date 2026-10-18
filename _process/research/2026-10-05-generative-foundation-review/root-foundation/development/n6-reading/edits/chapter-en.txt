@@ -1,0 +1,590 @@
+# The chapter, English edition: read sentence by sentence (senses as tagged); Ren's quoted words and record ids kept.
+### theories/becoming/chapters/THE-THEORY-OF-BECOMING.md
+= S2
+- A formation can test only a claim that differs in what registers in it (`Becoming.Testing`).
++ A formation can test only a claim that differs in what couples into it (`Becoming.Testing`).
+= S7
+- a registration within what it registers cannot hold every reading at once; context-free claims are a commitment that quantum registration does not meet.
++ a family of readings within what it reads cannot hold every reading at once; context-free claims are a commitment that what quantum states show does not meet.
+= L-prefix
+- Where the number of states is bounded by N, the record of 2N − 1 steps fixes the registered course,
++ Where the number of states is bounded by N, the prefix of 2N − 1 steps fixes the course through the map,
+= S1
+- This holds for every process exactly where its runs do not part in what is registered (`Becoming.Parting`). A record registers no weight;
++ This holds for every process exactly where its runs do not part through the map (`Becoming.Parting`). A record shows no weight;
+= S7
+- A frame reads a claim's registration as independent of what is registered with it. Quantum registration does not meet this.
++ A frame reads what is shown of a claim as independent of what is shown with it. What quantum states show does not meet this.
+= S1
+- Where position changes by velocity and only position is registered,
++ Where position changes by velocity and only position is read,
+= S1 the record id stays
+- - formed registration changes the fidelity of copying ([formed-copying-registration]
++ - a formed reading changes the fidelity of copying ([formed-copying-registration]
+= S7
+- So a formation's support registers only the exchanges with what it depends on
++ So a formation's support follows only the exchanges with what it depends on
+= S7
+- What a part does registers on a condition exactly through its net exchange with it
++ What a part does shows on a condition exactly through its net exchange with it
+= S7
+- - **What feedback registers** ([feedback-and-reach]
++ - **What feedback carries** ([feedback-and-reach]
+= S7
+- a formation's support registers only the parts that reach it directly
++ a formation's support follows only the parts that reach it directly
+= S7
+- so effects through others' responses do not register in it:
++ so effects through others' responses do not show in it:
+= S7
+- a formation's feedback registers at most its influence closure,
++ a formation's feedback carries at most its influence closure,
+= S2
+- This module states where it can go when the rest responds through what it registers
++ This module states where it can go when the rest responds through what couples into it
+= S2
+- within some member's closure under affecting through what is registered: a member exchanges, in one of the two flows, with a condition the formation registers, or reaches it by such links
++ within some member's closure under affecting through what couples in: a member exchanges, in one of the two flows, with a condition coupled into the formation, or reaches it by such links
+= S3
+- The rest responds through its registration when every formation outside the part exchanges alike in the two flows across each step up to which it has registered alike
++ The rest responds through its couplings when every formation outside the part exchanges alike in the two flows across each step up to which the flows have been alike through its couplings
+= S3
+- balance and a common start on what the formations beyond the responsive reach register, each of them registers alike and exchanges alike at every step
++ balance and a common start on what couples into the formations beyond the responsive reach, the flows are alike through the couplings of each of them and it exchanges alike at every step
+= S4
+- The responsive reach is the dual of the registration closure
++ The responsive reach is the dual of the coupling closure
+= S2
+- registering support only, with one flow, it is exactly the union of the members' reach closures
++ where coupling is by threshold only, with one flow, it is exactly the union of the members' reach closures
+= S2
+- In `Loop` a part's act changes what another formation registers,
++ In `Loop` a part's act changes what couples into another formation,
+= S2
+- and with the rest responding through its registration the responsive reach counts; an escalation loop is the case where each party responds through its registration and the difference returns to the part; registering support only, the reach closure
++ and with the rest responding through its couplings the responsive reach counts; an escalation loop is the case where each party responds through its couplings and the difference returns to the part; where coupling is by threshold only, the reach closure
+= S2
+- That formations respond only through their registration and how they respond are not derived;
++ That formations respond only through their couplings and how they respond are not derived;
+= S2
+- the premise that the rest responds through its registration. This module
++ the premise that the rest responds through its couplings. This module
+= S2
+- only what it registers (`ExchangeLaw.Through`), the rest responds through its registration in any two courses of the law
++ only what couples into it (`ExchangeLaw.Through`), the rest responds through its couplings in any two courses of the law
+= S2
+- Every law of what has stood reads through registering everything;
++ Every law of what has stood reads through the coupling of everything;
+= S2
+- and no registration it reads through, with what the formation depends on, leaves out
++ and no coupling it reads through, with what the formation depends on, leaves out
+= S2
+- sensitivity is the least registration, at that strength.
++ sensitivity is the least coupling, at that strength.
+= S2
+- within the responsive reach drawn through the law's registration, which with finitely many conditions is its sensitivity;
++ within the responsive reach drawn through the law's coupling, which with finitely many conditions is its sensitivity;
+= S2
+- the second's reply is a law reading only what it observes,
++ the second's reply is a law reading only what couples into it by level,
+= S2 the AI's reading; 识 read as coupling into a formation
+- and, read as 识 (shí, registering), a formation registers what its exchange is sensitive to.
++ and, read as 识 (shí), what couples into a formation is what its exchange is sensitive to.
+= S2 9
+- the least registration
++ the least coupling
+= S2
+- the registrations it reads through have no least one
++ the couplings it reads through have no least one
+= S2
+- and where the positive strengths are registered the routes are those of
++ and where the positive strengths are of levels coupled in the routes are those of
+= S2
+- a law reading through a registration reads every schedule covering it
++ a law reading through a coupling reads every schedule covering it
+= S2
+- and its courses are policies through registration in the sense of
++ and its courses are policies through the couplings in the sense of
+= S2
+- every law reading through a registration in which no formation outside the part observes the stock,
++ every law reading through a coupling in which the stock couples by level into no formation outside the part,
+= S2
+- what can register how near the break is, is a reading of the stock's level before it.
++ what can carry how near the break is, is a reading of the stock's level before it.
+= S2
+- adopted "couples into" for what a formation registers, by threshold or by level,
++ adopted "couples into" for what a formation was said to register, by threshold or by level,
+= S2
+- For a law reading through registration (`ExchangeLaw.Through`), a level a formation outside the part neither depends on nor observes is coupled with strength zero
++ For a law reading through the couplings (`ExchangeLaw.Through`), a level that couples into a formation outside the part neither by threshold nor by level is coupled with strength zero
+= S2
+- A response therefore comes from a registered condition
++ A response therefore comes from a condition that couples in
+= S2
+- is a route of reading in every schedule covering registration,
++ is a route of reading in every schedule covering what couples in,
+= S2
+- Where the formation depends on a condition and does not observe it,
++ Where a condition couples into the formation by threshold only,
+= S2
+- Where it observes the condition, the law taking that level responds
++ Where the condition couples in by level, the law taking that level responds
+= S2
+- So, up to double negation, observing is exactly where some law reading through registration couples a level
++ So, up to double negation, coupling by level (`obs`) is exactly where some law reading through the couplings couples a level
+= S2
+- A response to a condition not observed is a crossing of its need
++ A response to a condition not coupled in by level is a crossing of its need
+= S2
+- some law reading through registration responds to a crossing there
++ some law reading through the couplings responds to a crossing there
+= S2 the AI's reading
+- registration bounds coupling, and a law's responses are its couplings.
++ what can couple in bounds what responds, and a law's responses are its couplings.
+= S6
+- an unregistered past and an unregistered description (`Twins.retarget_breaks`
++ a past no claim tells apart and a description no claim tells apart (`Twins.retarget_breaks`
+= S2
+- The stock it observes is the route of length zero.
++ A stock coupled in by level is the route of length zero.
+= S2 the heading follows Testing's; option (b) for 识 stated
+- **Registration and testing.** A formation registers its support (whether the levels admit it) and the levels of the conditions it observes ([Becoming.Testing]
++ **Coupling and testing.** Into a formation couple its support (whether the levels admit it), by threshold, and the levels of the conditions coupled into it by level ([Becoming.Testing]
+= ZH-keep Ren's 识 stays with its place under option (b)
+- Here “register” renders Ren's 识 (shí).
++ “Couples into” replaces “registers”, which rendered Ren's 识 (shí); under the naming decision of 18 October, 识 is kept for a formation's own course through the lumping its couplings make.
+= S2
+- - *Threshold.* Through dependence, registration is a threshold: a condition depended on and not observed registers only whether it meets the need (`Web.alike_of_threshold`). Through observation, its level registers (`Web.observed_level_couples`).
++ - *Threshold.* Coupled by threshold, a condition coupled in by threshold only passes only whether it meets the need (`Web.alike_of_threshold`). Coupled by level, its level passes (`Web.observed_level_couples`).
+= S5 Popper's falsifiability stays as the standard
+- - *Refutation.* A claim is refuted only through a difference in what registers (`Web.Excludes.not_of_alike`): a claim and its rival must differ where something can register.
++ - *Exclusion.* A claim is excluded only through a difference in what couples in (`Web.Excludes.not_of_alike`): a claim and its rival must differ where something can couple in.
+= S5
+- - *Models.* Without a model, a finite record does not refute a claim about what follows it (`Web.tail_unexcluded`). Relative to a model of the exchange, a formation observing a stock refutes a false claim at the first step (`Flow.excludes_tail_within`). A refutation relative to a model is a refutation of the model and the claim together: a wrong model refutes what holds, and registration refutes the model
++ - *Models.* Without a model, a finite prefix does not exclude a claim about what follows it (`Web.tail_unexcluded`). Relative to a model of the exchange, a formation into which a stock couples by level excludes a false claim at the first step (`Flow.excludes_tail_within`). An exclusion relative to a model is an exclusion of the model and the claim together: a wrong model excludes what holds, and what couples in excludes the model
+= S5 belief → the class alike through g (`ClassThrough`)
+- - *Judgment on the flow.* A judgment made from registration is exactly a common response of the judging process over the formation's belief, and later steps and more observation preserve it
++ - *Judgment on the flow.* A judgment made through a formation's couplings is exactly a common response of the judging process over the class alike through them, and later steps and more coupling preserve it
+= S2
+- Where the members of a region respond only through their own registration, what lies beyond the region does not register within it
++ Where the members of a region respond only through their own couplings, what lies beyond the region does not show within it
+= S2
+- Where the exchange follows a formation's registration, a difference below threshold stays
++ Where the exchange follows a formation's couplings, a difference below threshold stays
+= S2
+- Balance is assumed stepwise only on the registered conditions.
++ Balance is assumed stepwise only on the conditions coupled in.
+= S4 the AI's reading
+- and beyond the registration closure. Reading a runaway
++ and beyond the coupling closure. Reading a runaway
+= S2 the earlier reading is quoted as it was
+- this replaces the AI's earlier reading “a model answerable to registration”. A model is still tested only through registration.
++ this replaces the AI's earlier reading “a model answerable to registration”. A model is still tested only through what couples in.
+= S1
+- An untaken move is not fixed, even with everything registered
++ An untaken move is not fixed, even with the whole configuration read
+= S5
+- it is never refuted while the move goes in step with what the projection leaves out, and is refuted where the two are varied apart (`Confound`).
++ it is never excluded while the move goes in step with what the projection leaves out, and is excluded where the two are varied apart (`Confound`).
+= S2
+- **Runaway.** A policy through registration, with the rest of the exchange fixed, is exchange following registration ([Becoming.Runaway]
++ **Runaway.** A policy through the couplings, with the rest of the exchange fixed, is exchange following what couples in ([Becoming.Runaway]
+= S2
+- never uses a larger stock it does not observe,
++ never uses a larger stock coupled into it by threshold only,
+= S3
+- agrees with the actual one in everything the formation registers and lasts past that horizon (`Web.break_not_bounded`): how far off the break is does not register. Observing the stock registers it at once
++ is alike with the actual one through the formation's couplings and lasts past that horizon (`Web.break_not_bounded`): how far off the break is does not couple in. Coupling the stock in by level passes it at once
+= S3 the AI's reading
+- A runaway is a loop whose own registration before the break is that of a world with as much more stock as one likes. Avoiding it without giving up what is there needs measurement, a model, or another formation's registration.
++ A runaway is a loop through whose own couplings, before the break, the world is alike with a world with as much more stock as one likes. Avoiding it without giving up what is there needs measurement, a model, or another formation's couplings.
+= ZH-keep 识 kept for the seeker's course (option b)
+- - *Correction.* Losses reach a seeker only through what it registers (`Becoming.Testing`, `Becoming.Runaway`). So locked seeking is not corrected by its own feedback. Registration that reaches what support does not mark corrects it:
++ - *Correction.* Losses reach a seeker only through what couples into it (`Becoming.Testing`, `Becoming.Runaway`); its course through the lumping those couplings make is 识. So locked seeking is not corrected by its own feedback. Coupling that reaches what support does not mark corrects it:
+= S2 the AI's reading
+- 明 (míng, “seeing, clarity”) is registration that reaches what support does not mark.
++ 明 (míng, “seeing, clarity”) is coupling that reaches what support does not mark.
+= S2 heading follows Selection's title
+- **Selection through registration.** A selection is any claim about level histories: which are kept, rewarded or leave more descendants. It goes through a selector's registration when histories the selector registers alike are selected alike
++ **Selection through the couplings.** A selection is any claim about level histories: which are kept, rewarded or leave more descendants. It goes through a selector's couplings when histories alike through them are selected alike
+= S5
+- - Two histories are selected alike by every selection through `g`'s registration exactly when `g` registers them alike, with no premise (`Web.selects_alike_iff`). Where `g` registers them apart, `g`'s belief is a selection that separates them
++ - Two histories are selected alike by every selection through `g`'s couplings exactly when they are alike through them, with no premise (`Web.selects_alike_iff`). Where they are apart through them, the class alike through `g` is a selection that separates them
+= S4
+- every selection through the registration of a formation within the registration closure selects
++ every selection through the couplings of a formation within the coupling closure selects
+= S4
+- - The gap is the reach closure less the registration closure. In `Clearing` the dweller lies within the clearer's reach closure and beyond its registration closure. Every selection through the clearer's registration selects
++ - The gap is the reach closure less the coupling closure. In `Clearing` the dweller lies within the clearer's reach closure and beyond its coupling closure. Every selection through the clearer's couplings selects
+= S2
+- The dweller's registration, alone or pooled with the clearer's, separates
++ The dweller's couplings, alone or pooled with the clearer's, separate
+= S4
+- a flow that reaches beyond the registration closure, taking from the source a dweller depends on to raise a store the taker registers, is selected over the restrained flow by a selection through the taker's registration. Every selection through that registration treats
++ a flow that reaches beyond the coupling closure, taking from the source a dweller depends on to raise a store coupled into the taker, is selected over the restrained flow by a selection through the taker's couplings. Every selection through those couplings treats
+= S2 the AI's reading (D25)
+- Any selection decided by what registers (keeping, rewarding, reproducing, training) reaches exactly what the selector registers. The gap closes only through dependence, observation, or another's registration pooled. Where reaching beyond raises what registers, selection favours it. Read for AI training, the reward process is the selector and training reaches only what the reward registers;
++ Any selection decided by what couples in (keeping, rewarding, reproducing, training) reaches exactly what couples into the selector. The gap closes only through dependence, coupling by level, or another's couplings pooled. Where reaching beyond raises what couples in, selection favours it. Read for AI training, the reward process is the selector and training reaches only what couples into the reward;
+= S1 the record id stays
+- **Selection revises registration.** Reconstruction within one process can change what later activity distinguishes. Where the old registration is an equivalence, every selection expressible through the old registration remains expressible
++ **Selection revises the lumping.** Reconstruction within one process can change what later activity distinguishes. Where the old lumping is an equivalence, every selection expressible through the old lumping remains expressible
+= S1
+- directly reuses the selection through registration of `Web`.
++ directly reuses the selection through the couplings of `Web`.
+= S1
+- directly reuses the registration revision above.
++ directly reuses the revision of the lumping above.
+= L-extrap
+- A registered sequence is a sequence of registered values, such as the registration of a determined law's orbit. A learner is any claim made from the record before step t.
++ A course is a sequence of values, such as a determined law's orbit read through a map. An extrapolation is any map from the prefix before step t to a proposed value or to silence.
+= L-prefix
+- - *No record fixes the next value.* With no premise, no record fixes the next value, even among finite worlds (`no_prefix_fixes_next`, `no_prefix_fixes_next_finite`). For every learner, some sequence answers it at every step and refutes each of its claims; that sequence keeps its record, so it is open
++ - *No prefix fixes the next value.* With no premise, no prefix fixes the next value, even among finite worlds (`no_prefix_fixes_next`, `no_prefix_fixes_next_finite`). For every extrapolation, some course answers it at every step and each value it proposes misses; that course keeps its whole prefix, so it is open
+= L-elim
+- - *Learning by refutation.* Hold hypotheses in order and move to the next exactly where the one held is refuted. Such learning never passes a hypothesis that holds
++ - *Extrapolation by elimination.* Hold candidates in order and move to the next exactly where the one held misses. Such an extrapolation never passes a candidate that accords
+= L-miss
+- Where a list holds a determined law's orbit, its registration repeats periodically from some step on (`lasso_of_held`). Consider a learner that knows neither the configurations nor their number and reads only a registration whose values it can tell apart. It is refuted fewer than `tri N` times for N configurations; it claims at every step from step N on; and it is not the case that it is refuted at arbitrarily late steps (`held_byElimination_bounded`). That it comes to rest cannot be refuted (`held_rest_unrefuted`, a double negation). It rests only on such sequences (`lasso_of_rest`), and its record never shows that it has come to rest
++ Where a list holds a determined law's orbit, its course through any map repeats periodically from some step on (`lasso_of_held`). Consider an extrapolation given neither the configurations nor their number that reads only a course through a map whose values it can tell apart. It misses fewer than `tri N` times for N configurations; it proposes at every step from step N on; and it is not the case that it misses at arbitrarily late steps (`held_byElimination_bounded`). That it comes to rest cannot be refuted (`held_rest_unrefuted`, a double negation). It rests only on such courses (`lasso_of_rest`), and its prefix never shows that it has come to rest
+= S2
+- (`Training.loss_through`; the selection through registration of `Becoming.Selection` is an instance)
++ (`Training.loss_through`; the selection through the couplings of `Becoming.Selection` is an instance)
+= S1
+- For a determined law read through a registration, alike is the same registered future (`Law.alike_iff_sameFuture`).
++ For a determined law read through a map, alike is the same future through the map (`Law.alike_iff_sameFuture`).
+= S1
+- - The coarsest split that keeps what is registered and carries a law makes sense and loses nothing registered
++ - The coarsest split that keeps the map's value and carries a law makes sense and loses nothing the map takes
+= S1
+- makes sense only where nothing registered ever differs
++ makes sense only where the map's value never differs
+= S1
+- - What is registered now makes sense by itself exactly where it carries a law, a condition on one step (`Law.now_identifiesAlike_iff_goAlike`). A registered part alone makes sense
++ - The map's present value makes sense by itself exactly where it carries a law, a condition on one step (`Law.now_identifiesAlike_iff_goAlike`). A part of the map's value alone makes sense
+= S1
+- Cognition or a controller lies within the split that makes sense exactly where it makes a registered difference.
++ Cognition or a controller lies within the split that makes sense exactly where it makes a difference through the map.
+= S1
+- - *States read off a history.* States are not given with configurations; they are read off a registered history. Two moments are one state when everything registered after them is alike (`SameAhead`). Every registered history is a determined law read through what is registered:
++ - *States read off a history.* States are not given with configurations; they are read off a history of values. Two moments are one state when every value after them is alike (`SameAhead`). Every history of values is a determined law read through a map:
+= S1
+- There are finitely many states exactly where the registration repeats from some moment on
++ There are finitely many states exactly where the history repeats from some moment on
+= S1
+- A returning configuration has finitely many states under every registration (`Law.Returns.states`). The registration of two-valued negation has exactly two states,
++ A returning configuration has finitely many states through every map (`Law.Returns.states`). The course of two-valued negation has exactly two states,
+= S7 the record id stays
+- **A registration within what it registers.** A world's registration of itself is made by its parts, and the parts are within what is registered
++ **A family of readings within what it reads.** What a world reads of itself is read by its parts, and the parts are within what is read
+= S7
+- - *The diagonal.* A registration indexed by what it reads misses a definite reading
++ - *The diagonal.* A family of readings indexed by what it reads misses a definite reading
+= S7
+- For values compared by equality, a registration within what it registers says every reading exactly where nothing among the values can be told apart (`Diagonal.complete_iff_alike`). A registration that says every reading gives
++ For values compared by equality, a family of readings within what it reads says every reading exactly where nothing among the values can be told apart (`Diagonal.complete_iff_alike`). A family that says every reading gives
+= S7
+- - *Completing is an unfolding.* A registration that keeps what it registered and next registers what it missed is incomplete
++ - *Completing is an unfolding.* A family that keeps what it said and next says what it missed is incomplete
+= S7 the record id stays
+- **Contextual registration.** Ren asked
++ **Claims shown in context.** Ren asked
+= S7
+- By type, the frame reads claims as free of context: what a claim registers does not depend on what is registered with it.
++ By type, the frame reads claims as free of context: what is shown of a claim does not depend on what is shown with it.
+= S7
+- - Claims are registered in contexts. The registrations glue exactly where any two contexts registering one claim register it alike (`Contextual.glues_iff_agree`). A frame of context-free claims fits exactly where the registrations glue at every configuration
++ - Claims are shown in contexts. What the contexts show glues exactly where any two contexts one claim lies within show it alike (`Contextual.glues_iff_agree`). A frame of context-free claims fits exactly where what the contexts show glues at every configuration
+= S7
+- This is narrower than the full Hilbert space; quantum registration, so represented, is of this kind.
++ This is narrower than the full Hilbert space; what quantum states show, so represented, is of this kind.
+= S7 the AI's reading (D33)
+- A value is a registration in context, that is, a relation.
++ A value is what a context shows, that is, a relation.
+= L-prefix
+- **Identification: what a bounded record fixes.**
++ **Identification: what a bounded prefix fixes.**
+= L-prefix
+- What follows says what a finite record fixes where the situation has a bound
++ What follows says what a finite prefix fixes where the situation has a bound
+= L-prefix
+- - *Two histories.* Two registered histories with at most N and N′ states that agree before N + N′ − 1 agree everywhere, so a record of that length fixes the course
++ - *Two histories.* Two histories of values with at most N and N′ states that agree before N + N′ − 1 agree everywhere, so a prefix of that length fixes the course
+= L-prefix
+- For every pair of bounds, no shorter record suffices
++ For every pair of bounds, no shorter prefix suffices
+= L-miss
+- A lasso hypothesis within N that is not refuted on the record of length 2N − 1 is the law of the whole course (`Identification.bounded_induction`). The learner given the bound is refuted nowhere and is right at every step from 2N − 1 on, and no learner can always claim earlier
++ A lasso candidate within N that does not miss on the prefix of length 2N − 1 is the law of the whole course (`Identification.bounded_induction`). The extrapolation given the bound misses nowhere and is right at every step from 2N − 1 on, and no extrapolation can always propose earlier
+= L-elim
+- - *Not given the bound.* The learner not given the bound (learning by refutation, `Becoming.Learning`) also rests, at a step the bound gives: it is right at every step from N + (2N − 1)·tri N on (`Identification.held_byElimination_rests`), though its record never shows this.
++ - *Not given the bound.* The extrapolation not given the bound (extrapolation by elimination, `Becoming.Learning`) also rests, at a step the bound gives: it is right at every step from N + (2N − 1)·tri N on (`Identification.held_byElimination_rests`), though its prefix never shows this.
+= L-miss
+- broken once in every turn, it is refuted at step (N³ − N)/4,
++ broken once in every turn, it misses at step (N³ − N)/4,
+= L-prefix
+- Where there is no bound, no record fixes the next value.
++ Where there is no bound, no prefix fixes the next value.
+= L-extrap
+- - *The rest step needs no bound.* The learner by the least bound is given no bound. It claims by the first hypothesis borne out within the least bound within which the record bears out some lasso hypothesis.
++ - *The rest step needs no bound.* The extrapolation by the least bound is given no bound. It proposes by the first candidate borne out within the least bound within which the prefix bears out some lasso candidate.
+= L-extrap
+- No learner, given the bound or not, is right at step 2N − 2
++ No extrapolation, given the bound or not, is right at step 2N − 2
+= L-miss
+- What the bound buys is silence: a learner right at step 1 on every one-state history cannot be refuted nowhere on every two-state history
++ What the bound buys is silence: an extrapolation right at step 1 on every one-state history cannot miss nowhere on every two-state history
+= S1
+- - *Controllers within the world.* A controller in the world is within what is registered. A world that answers the learner given the bound
++ - *Controllers within the world.* A controller in the world is within what is read. A world that answers the extrapolation given the bound
+= S1
+- naming each configuration by its registered future for 2N − 1 steps makes sense
++ naming each configuration by its future through the map for 2N − 1 steps makes sense
+= S1
+- Two members have the same registered future exactly where they agree within N − 1 steps
++ Two members have the same future through the map exactly where they agree within N − 1 steps
+= L-prefix
+- Merge, pair by pair, the positions that agreements in the record join;
++ Merge, pair by pair, the positions that agreements in the prefix join;
+= L-prefix
+- - *Tests.* Tests are bounded records too. Under a determined law read through a registration, in a world of N configurations, two configurations pass the same tests (`SameTests` of `Becoming.Histories`) exactly where their registered futures agree within N − 1 steps.
++ - *Tests.* Tests are bounded prefixes too. Under a determined law read through a map, in a world of N configurations, two configurations pass the same tests (`SameTests` of `Becoming.Histories`) exactly where their futures through the map agree within N − 1 steps.
+= S1
+- Between frames whose moves carry the registration,
++ Between frames whose moves carry the map's value,
+= L-prefix the AI's reading (D34)
+- The bound is the condition under which a situation's finite record fixes everything registered. *Reading* [AI reading, D34]: a finite record is a projection,
++ The bound is the condition under which a situation's finite prefix fixes the whole course through the map. *Reading* [AI reading, D34]: a finite prefix is a projection,
+= L-extrap the record id stays
+- **What a learner can learn through its registration.** A learner reads what a registration registers and claims what it does not register. Take a registration `reg` of configurations and a target `val`. A learner claims at step t from the registered record before t, and rests on the target from step T when it claims the target at every step from T on
++ **What an extrapolation can learn through a map.** An extrapolation reads a course through a map and proposes what the map does not give. Take a map `reg` of configurations and a feature `val`. An extrapolation proposes at step t from the prefix before t of the course through the map, and rests on the feature from step T when it proposes the feature's value at every step from T on
+= L-feature
+- - *No premise.* Two configurations with the same registered future give every learner the same record at every step (`prefixes_same`). So at a step where their targets differ, a claim is right on at most one of them (`claim_not_right_on_both`). With the target's values decidable, it is refuted on one, while the two records are equal everywhere and do not show which
++ - *No premise.* Two configurations with the same future through the map give every extrapolation the same prefix at every step (`prefixes_same`). So at a step where their features differ, a proposed value is right on at most one of them (`claim_not_right_on_both`). With the feature's values decidable, it misses on one, while the two prefixes are equal everywhere and do not show which
+= L-feature
+- - A learner resting on both has targets that agree from some step on (`agree_of_rests_both`). Where the targets differ at arbitrarily late steps, no learner rests on both,
++ - An extrapolation resting on both has features that agree from some step on (`agree_of_rests_both`). Where the features differ at arbitrarily late steps, no extrapolation rests on both,
+= L-feature
+- - Where the target is read off the registration (`val s = g (reg s)`), the lasso learner reading registered values is given neither the configurations, nor their number, nor any value of the target. In every world a list holds, it rests from the identification bound on
++ - Where the feature is read off the map (`val s = g (reg s)`), the lasso extrapolation reading values through the map is given neither the configurations, nor their number, nor any value of the feature. In every world a list holds, it rests from `Becoming.Identification`'s bound on
+= L-built
+- - *Exactly.* In a world a list holds, some learner reading the registration rests at every configuration exactly where configurations with the same registered future have targets agreeing from some step on (`learnable_iff`). The necessity side holds of every learner, whatever it is given. The learner on the sufficiency side is given the world and the target (`fromLaw`); so this is an identifiability condition, not a learning procedure that finds the target unaided.
++ - *Exactly.* In a world a list holds, some extrapolation reading through the map rests at every configuration exactly where configurations with the same future through the map have features agreeing from some step on (`learnable_iff`). The necessity side holds of every extrapolation, whatever it is given. The extrapolation on the sufficiency side is built from the law, the map, the feature and the list (`fromLaw`); so this is an observability condition, not a procedure that finds the feature unaided.
+= L-feature
+- - Targets that go alike across the registration (`Lumped`) are always learnable (`learnable_of_lumped`). Where the law leaves every configuration unchanged, these are exactly the learnable targets
++ - Features that go alike across the map's lumping (`Lumped`) are always learnable (`learnable_of_lumped`). Where the law leaves every configuration unchanged, these are exactly the learnable features
+= L-extrap
+- Unroll the lasso learner given nothing (the extrapolation by elimination over the lasso candidates) on its own proposals,
++ Unroll the lasso extrapolation given nothing (the extrapolation by elimination over the lasso candidates) on its own proposals,
+= L-fix
+- In every world a list holds, from the identification bound on, it then proposes
++ In every world a list holds, from `Becoming.Identification`'s bound on, it then proposes
+= L-built
+- - *Learnable exactly where a reading of the future.* A target is learnable exactly where some reading of futures, respecting values at each step, is the target from some step on along every orbit (`Learnable.learnable_iff_reading`). The reading on the necessity side is given the world, the law and the target (`Learnable.fromWorld`): a configuration as many steps on as the list is long returns, and returning configurations whose targets agree from some step on have equal targets (`Learnable.eq_of_returns`). On the sufficiency side the learner given only the reading learns the target (`Learnable.reading_rests_from`). So what `fromLaw` is given beyond the prefix
++ - *Learnable exactly where a reading of the future.* A feature is learnable exactly where some reading of futures, respecting values at each step, is the feature from some step on along every orbit (`Learnable.learnable_iff_reading`). The reading on the necessity side is built from the list, the law and the feature (`Learnable.fromWorld`): a configuration as many steps on as the list is long returns, and returning configurations whose features agree from some step on have equal features (`Learnable.eq_of_returns`). On the sufficiency side the extrapolation given only the reading learns the feature (`Learnable.reading_rests_from`). So what `fromLaw` is built from beyond the prefix
+= L-feature
+- - *Given nothing, not every learnable target.* No learner given nothing rests on every learnable target: in a one-configuration world the targets `true` and `false` are each learnable,
++ - *Given nothing, not every learnable feature.* No extrapolation given nothing rests on every learnable feature: in a one-configuration world the features `true` and `false` are each learnable,
+= S1 the AI's reading (D26); the record id stays
+- Registration bounds what is learned. This is the not-seeing below threshold of `Becoming.Testing`, stated for learners; what lies beyond registration is reached only by widening it.
++ The map bounds what is learned. This is the not-seeing below threshold of `Becoming.Testing`, stated for extrapolations; what lies beyond the map is reached only by widening it.
+= L-prefix
+- Two runs part at a step where they register the same before it and differ at it; their records before it are one record, so no learner, whatever it is given, the world included, is right on both
++ Two runs part at a step where their courses through the map are the same before it and differ at it; their prefixes before it are one prefix, so no extrapolation, whatever it is given, the process included, is right on both
+= S1
+- on a run held by a list of N configurations the registered course has at most N states, and the learner by the least bound, given nothing,
++ on a run held by a list of N configurations the course through the map has at most N states, and the extrapolation by the least bound, given nothing,
+= S1
+- and so is a branching that does not show in what is registered
++ and so is a branching that does not show through the map
+= L-prefix
+- under free branching every course is a run's course, after every record two runs part, so no record shows that a world will not part; every learner has a run on which it is never right;
++ under free branching every course is a run's course, after every prefix two runs part, so no prefix shows that a world will not part; every extrapolation has a run on which it is never right;
+= S7 the run's record kept (Typicality's sense)
+- Nor does a record fix weights: it registers a course, not a weight.
++ Nor does a record fix weights: it shows a course, not a weight.
+= L-prefix the AI's reading Ren took, its wording aligned
+- everything registered is derived situationally, as far as runs do not part; at a parting neither the record nor the supplied law fixes which way the run goes,
++ everything read through the map is derived situationally, as far as runs do not part; at a parting neither the prefix nor the supplied law fixes which way the run goes,
+= S1
+- Where runs part only before step T and never after, the registered values decided,
++ Where runs part only before step T and never after, the values through the map decided,
+= S1
+- and the learner by the least bound is right from 2(T + N) − 1 on
++ and the extrapolation by the least bound is right from 2(T + N) − 1 on
+= L-built
+- The converse: for a process with listed moves and configurations and decided steps and registered values, the learner given the world reads from the record the configurations a run from s can be at,
++ The converse: for a process with listed moves and configurations and decided steps and values through the map, the extrapolation built from the process reads off the prefix the configurations a run from s can be at,
+= S1
+- `Parting.liveRun`), and claims what it registers. It is right at a step on every run from s exactly where no two such runs part there (`Parting.world_right_iff`), so some learner is right there exactly where none part (`Parting.some_right_iff`). With `Parting.not_right_on_both`, at each step a parting is exactly what neither the record nor the world settles.
++ `Parting.liveRun`), and proposes that configuration's value through the map. It is right at a step on every run from s exactly where no two such runs part there (`Parting.world_right_iff`), so some extrapolation is right there exactly where none part (`Parting.some_right_iff`). With `Parting.not_right_on_both`, at each step a parting is exactly what neither the prefix nor the process settles.
+= S7
+- 9 shows that without the condition the loss registers only where the dependence reaches what is closed.
++ 9 shows that without the condition the loss shows only where the dependence reaches what is closed.
+= S7 the record id stays
+- - **Feedback registers at most the influence closure** ([feedback-and-reach](../results/records/feedback-and-reach.md)). Nothing beyond the influence closure registers within it
++ - **Feedback carries at most the influence closure** ([feedback-and-reach](../results/records/feedback-and-reach.md)). Nothing beyond the influence closure shows within it
+= S7
+- so it registers only a part's direct exchanges.
++ so it shows only a part's direct exchanges.
+= S7 the AI's reading
+- - The influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others. With the rest of the exchange fixed, only the parts that reach it register.
++ - The influence closure reads what a formation's own feedback can carry once effects pass through the support and activity of others. With the rest of the exchange fixed, only the parts that reach it show.
+= S7
+- A formation's feedback registers at most its influence closure, what can affect it, while its own part reaches into its reach closure, what it can affect. A center that values only what its feedback registers compares
++ A formation's feedback carries at most its influence closure, what can affect it, while its own part reaches into its reach closure, what it can affect. A center that values only what its feedback carries compares
+= S7
+- since its own feedback registers at most its influence closure
++ since its own feedback carries at most its influence closure
+= S2
+- the counterfactual's act read through the part's own registration,
++ the counterfactual's act read through the part's own couplings,
+= S2
+- feeding, feedback and reach, registration and testing, experiment,
++ feeding, feedback and reach, coupling and testing, experiment,
+= S1
+- where models, moves, laws, targets, descriptions, hypotheses and registrations come from
++ where models, moves, laws, targets, descriptions, hypotheses and maps come from
+= ZH-keep 识 stays where it names the derived structure (option b)
+- the laws of registration (识), of 理, of testing, of learning and generalization, of selection and training through registration, of enough, of runaway and of the meta level hold for every learner and every representation,
++ the laws of coupling and of 识 (a formation's course through the lumping its couplings make), of 理, of testing, of learning and generalization, of selection and training through the couplings, of enough, of runaway and of the meta level hold for every extrapolation and every representation,
+= S2
+- another's registration as a route
++ another's couplings as a route
+= S4
+- where an act differs only on conditions no member of the registration closure registers, every selection through it misses the act
++ where an act differs only on conditions coupled into no member of the coupling closure, every selection through it misses the act
+= S2
+- Testing`'s registration as the projection,
++ Testing`'s couplings as the projection,
+= S5
+- which correlation between moves and what is hidden leaves a model unrefuted;
++ which correlation between moves and what is hidden leaves a model unexcluded;
+= ALT
+- for selection through a model of the options, the same law where the model's entries are relations between options.
++ for selection through a map of the alternatives, the same law where the map's entries are relations between alternatives.
+= S1
+- learning where the registered values themselves are not told apart;
++ learning where the values through the map are not themselves told apart;
+= L-feature
+- learning a target from finitely many of its values, given part of a reading of the future rather than the whole (given nothing, no learner rests on every learnable target
++ learning a feature from finitely many of its values, given part of a reading of the future rather than the whole (given nothing, no extrapolation rests on every learnable feature
+= L-feature
+- a target is learnable exactly where it is, from some step on, a reading of the future through the map,
++ a feature is learnable exactly where it is, from some step on, a reading of the future through the map,
+= S7
+- the connection with a registration within what it registers, incomplete at every step
++ the connection with a family of readings within what it reads, incomplete at every step
+= S6
+- a characterization of the laws that need a registration finer than the claims;
++ a characterization of the laws that need a map finer than the claims;
+= L-extrap
+- (no learner rests on every course)
++ (no extrapolation rests on every course)
+= L-elim
+- The exact rest step of the learner by refutation.
++ The exact rest step of the extrapolation by elimination.
+= L-extrap
+- the optimum over learners is 2N − 1
++ the optimum over extrapolations is 2N − 1
+= L-built
+- whether a learner given the world can be right for infinite or undecided processes,
++ whether an extrapolation built from the process can be right for infinite or undecided processes,
+= S2 the AI's reading (D37)
+- the registration through which the rest responds, in the premise of `Becoming.Response`, is read formally as the law's sensitivity, the least coupling it reads through; registration as 识 is Ren's own reading.
++ the coupling through which the rest responds, in the premise of `Becoming.Response`, is read formally as the law's sensitivity, the least coupling it reads through; 识, Ren's own word, is kept for a formation's course through the lumping its couplings make.
+= S2 the AI's reading (D39)
+- The coupling strength is read formally as how strongly a formation registers,
++ The coupling strength is read formally as how strongly a level couples into a formation,
+= L-prefix (D34)
+- the bound is only the condition under which a situation's finite record fixes everything registered (D34).
++ the bound is only the condition under which a situation's finite prefix fixes the whole course through the map (D34).
+= S7 values a step keeps (`sense`)
+- - Where the registrations have choice into plans, a class is kept exactly where some plan keeps it (`keptFor_iff_plan_of_choice`). With listed registrations the same holds
++ - Where the values a step keeps have choice into plans, a class is kept exactly where some plan keeps it (`keptFor_iff_plan_of_choice`). With listed values the same holds
+= S1
+- | one state, same ahead (同一状态) | Two moments of a registered history after which everything registered is the same. States are read off the history, not given as configurations; there are finitely many exactly where what is registered repeats from some moment on.
++ | one state, same ahead (同一状态) | Two moments of a history of values after which every value is the same. States are read off the history, not given as configurations; there are finitely many exactly where the history repeats from some moment on.
+= S7
+- | gap / completing unfolding (缺口／补全的展开) | For a registration indexed by what it reads, the reading obtained by moving each member's registration of itself through a map, which no member says. A registration that keeps what is registered and registers the gap next
++ | gap / completing unfolding (缺口／补全的展开) | For a family of readings indexed by what it reads, the reading obtained by moving each member's value at itself through a map, which no member says. A family that keeps what it said and says the gap next
+= S7 glossary term renamed; the old term is listed under the retired names
+- | contextual registration / gluing (语境中的识／粘合) | Claims are registered in contexts. The registrations glue where some context-free reading agrees with every context, exactly where contexts registering the same claim register it alike.
++ | claims in context / gluing (语境中的主张／粘合) | Claims are shown in contexts. What the contexts show glues where some context-free reading agrees with every context, exactly where the contexts a claim lies within show it alike.
+= S1
+- | bound on states (状态数的界) | A registered history has at most N states:
++ | bound on states (状态数的界) | A history of values has at most N states:
+= L-extrap glossary term renamed
+- | identification / learner given the bound (辨识／给定界的学习者) | A finite record fixes the whole course. The learner given the bound N says nothing before 2N − 1, and from then on claims the lasso hypothesis within N that the record confirms; it is refuted nowhere.
++ | identification / extrapolation given the bound (辨识／给定界的外推) | A finite prefix fixes the whole course. The extrapolation given the bound N stays silent before 2N − 1, and from then on proposes by the lasso candidate within N that the prefix bears out; it misses nowhere.
+= S1
+- | runs part (运行分开) | Two runs register alike before some step and differently at it. Where no two runs from a configuration part, they register one course.
++ | runs part (运行分开) | Two runs take one value through the map before some step and different values at it. Where no two runs from a configuration part, they have one course through the map.
+= L-built glossary term renamed
+- | learner given the world (被给予世界的学习者) | Reads off the record the configurations the run may be at, takes the first from which it can go on without end, and says the value it registers.
++ | extrapolation built from the process (依过程所建之外推) | Reads off the prefix the configurations the run may be at, takes the first from which it can go on without end, and proposes its value through the map.
+= S7
+- a center's own feedback registers at most its influence closure,
++ a center's own feedback carries at most its influence closure,
+= S7
+- A formation's own feedback registers at most this.
++ A formation's own feedback carries at most this.
+= S4 glossary term renamed
+- | registration closure (识闭包) | The closure under being affected through what is registered (another formation exchanges with a condition it depends on or observes). It contains the influence closure and is that closure where only support is registered. Where members respond only through their own registration, what lies outside the closure is not registered within it.
++ | coupling closure (耦合闭包) | The closure under being affected through what couples in (another formation exchanges with a condition coupled into it, by threshold or by level). It contains the influence closure and is that closure where coupling is by threshold only. Where members respond only through their own couplings, what lies outside the closure does not show within it.
+= S2 glossary term renamed
+- | selection through registration (经识的选择) | A selection on histories of levels (keeping, rewarding, leaving offspring) in which histories the selector registers alike are selected alike; scoring likewise. It reaches exactly what the selector registers, and is blind outside the registration closure.
++ | selection through the couplings (经耦合的选择) | A selection on histories of levels (keeping, rewarding, leaving offspring) in which histories alike through the selector's couplings are selected alike; scoring likewise. It reaches exactly what couples into the selector, and tells nothing apart outside the coupling closure.
+= S2
+- whose registration fixes a selection; taken as what it actually registers. The more it observes, the more it can tell apart.
++ whose couplings fix a selection; taken as what actually couples into it. The more couples in by level, the more it can tell apart.
+= S4
+- | gap, of selection (缺口) | The candidate's reach closure less the selector's registration closure. In `Clearing` the ending within it is not selected by a selection through the selector's registration, and is selected by the dweller's registration and by the registrations taken together. That the gap closes only through dependence, observation or others' registration taken together is an AI reading.
++ | gap, of selection (缺口) | The candidate's reach closure less the selector's coupling closure. In `Clearing` the ending within it is not selected by a selection through the selector's couplings, and is selected through the dweller's couplings and through the couplings taken together. That the gap closes only through dependence, coupling by level or others' couplings taken together is an AI reading.
+= S5 glossary term renamed; Popper's term stays in correspondence fields
+- | refutation (否证) | No history satisfying the claim registers alike with the actual one up to some step. Relative to a model (a class of admissible histories), it refutes the model and the claim together.
++ | exclusion (排除) | No history satisfying the claim is alike with the actual one through the formation's couplings up to some step. Relative to a model (a class of admissible histories), it excludes the model and the claim together.
+= L-prefix glossary term renamed
+- | course / record (被识的序列／记录) | A sequence of registered values, for example the registration of a determined law's orbit; the record is the values before step t, latest first.
++ | course / prefix (经映射的历程／前段) | A sequence of values, for example a determined law's orbit read through a map; the prefix is the values before step t, latest first.
+= L-elim glossary term renamed
+- | learning by refutation (按否证学习) | Hypotheses are put in order, and the learner moves to the next exactly where the one it holds is refuted. It never passes a hypothesis that holds, and every one it passes is refuted in the record.
++ | extrapolation by elimination (逐除外推) | Candidates are put in order, and the extrapolation moves to the next exactly where the one it holds misses. It never passes a candidate that accords, and every one it passes missed within the prefix.
+= L-miss
+- | lasso (套索) | A sequence that repeats periodically from some step on: exactly the registration of a world a list holds. On it the lasso learner's refutations are bounded,
++ | lasso (套索) | A sequence that repeats periodically from some step on: exactly the course, through a map, of a world a list holds. On it the lasso extrapolation's misses are bounded,
+= L-miss
+- | diagonal course (对角序列) | A sequence that at every step answers the learner's claim so as to refute it. It is the registration of a law that keeps the record, and so is open.
++ | diagonal course (对角序列) | A sequence that at every step answers the extrapolation's proposed value so that it misses. It is the course of a law that keeps the whole prefix, and so is open.
+= L-elim
+- | merged enumeration, at the meta level (合并枚举) | Classes of hypotheses merged along pairs
++ | merged enumeration, at the meta level (合并枚举) | Classes of candidates merged along pairs
+= S2
+- | subthreshold (阈下) | A condition depended on but not observed is registered only as whether the requirement is met. Where exchange follows registration,
++ | subthreshold (阈下) | A condition coupled in by threshold only passes only whether the requirement is met. Where exchange follows what couples in,
+= S5
+- A move staggered against what was left out can refute it; a synchronized move cannot.
++ A move staggered against what was left out can exclude it; a synchronized move cannot.
+= S2
+- the two are one concept (the AI's reading of the formal term). A model is tested only through registration.
++ the two are one concept (the AI's reading of the formal term). A model is tested only through what couples in.
+= S2
+- | responsive reach (回应所及) | The part's closure, between two flows, under being affected through what is registered: a member exchanges in one of the two flows with a condition another formation registers, which exchanges with one a third registers, and so on link by link. Dual to the registration closure; where only support is registered and there is one flow, it is exactly the union of the members' reach closures. Where the rest responds through registration,
++ | responsive reach (回应所及) | The part's closure, between two flows, under being affected through what couples in: a member exchanges in one of the two flows with a condition coupled into another formation, which exchanges with one coupled into a third, and so on link by link. Dual to the coupling closure; where coupling is by threshold only and there is one flow, it is exactly the union of the members' reach closures. Where the rest responds through its couplings,
+= S3 glossary term renamed
+- | responds through registration (经识回应) | Every formation outside the part that registers alike up to a step exchanges alike at that step in the two flows.
++ | responds through the couplings (经耦合而应) | Every formation outside the part through whose couplings the two flows are alike up to a step exchanges alike at that step in the two flows.
+= S2
+- no registration it reads through (together with what it depends on) leaves out what it is sensitive to, and sensitivity is the least coupling (in the strength of double negation: a registration it reads through cannot fail
++ no coupling it reads through (together with what it depends on) leaves out what it is sensitive to, and sensitivity is the least coupling (in the strength of double negation: a coupling it reads through cannot fail
+= S2
+- and where the number differs there is no least registration.
++ and where the number differs there is no least coupling.
+= S2
+- what is observed is a route of length zero.
++ a stock coupled in by level is a route of length zero.
+= S2 the retired prose terms explained once here
+- The prose words of this chapter (registers, refutation, learner) are changed by reading, not by this renaming.
++ The prose words of this chapter were then changed by reading, not by this renaming (N6): registration closure is the coupling closure, selection through registration is selection through the couplings, responds through registration is responds through the couplings, contextual registration is claims in context, refutation (of a claim at a formation) is exclusion, course / record is course / prefix, learning by refutation is extrapolation by elimination, the learner given the bound or the world is the extrapolation given the bound or built from the process. 识 is kept for a formation's own course through the lumping its couplings make.
+= S2
+- - *Threshold.* Coupled by threshold, a condition coupled in by threshold only passes only whether it meets the need (`Web.alike_of_threshold`). Coupled by level, its level passes
++ - *Threshold.* A condition coupled in by threshold only passes only whether it meets the need (`Web.alike_of_threshold`). Coupled in by level, its level passes
