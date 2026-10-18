@@ -13,13 +13,15 @@ import json
 import subprocess
 import sys
 
+PKG = 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/'
+RF = '_process/research/2026-10-05-generative-foundation-review/root-foundation/'
 WHAT = {
-    'Becoming.lean': 'F3Q added the imports and module notes of its six new core modules',
-    'README.md': 'F3Q added the layer-table rows and import notes of its six new core modules',
-    'check_becoming.py': 'F3Q added its six new core modules to the core list',
-    'becoming-verification.json': 'the current receipt is the core run with F3Q\'s six modules',
-    'THE-THEORY-OF-BECOMING-REFERENCE.md': 'F3Q added the reference-table rows of its six new core modules',
-    'THEOREM-CONNECTIVITY-APART.json': 'F3Q registered the 32 apart roots of its six new core modules',
+    PKG + 'Becoming.lean': 'F3Q added the imports and module notes of its six new core modules',
+    PKG + 'README.md': 'F3Q added the layer-table rows and import notes of its six new core modules',
+    PKG + 'check_becoming.py': 'F3Q added its six new core modules to the core list',
+    PKG + 'becoming-verification.json': 'the current receipt is the core run with F3Q\'s six modules',
+    'theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md': 'F3Q added the reference-table rows of its six new core modules',
+    RF + 'THEOREM-CONNECTIVITY-APART.json': 'F3Q registered the 32 apart roots of its six new core modules',
 }
 
 
@@ -28,7 +30,7 @@ def main(base):
     h = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
     at_base = lambda p: hashlib.sha256(subprocess.run(['git', 'show', base + ':' + p],
                                                       capture_output=True).stdout).hexdigest()
-    shared = {p for p in changed if p.rsplit('/', 1)[-1] in WHAT}
+    shared = {p for p in changed if p in WHAT}
     base_sha = {p: at_base(p) for p in shared}
     out = []
     for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
@@ -38,16 +40,17 @@ def main(base):
             p = r.get('path')
             if p in shared and r.get('sha256') == base_sha[p] != h(p):
                 r['sha256'] = h(p)
-                files.append(p.rsplit('/', 1)[-1])
+                files.append(p)
         if not files:
             continue
         files = sorted(set(files))
-        why = '; '.join(f'{x}: {WHAT[x]}' for x in files)
-        note = (f'18 October 2026, F3Q (the port of the inquiry and composition family): {", ".join(files)} re-pointed '
+        why = '; '.join(f'{x.rsplit("/", 1)[-1]}: {WHAT[x]}' for x in files)
+        names = [x.rsplit('/', 1)[-1] for x in files]
+        note = (f'18 October 2026, F3Q (the port of the inquiry and composition family): {", ".join(names)} re-pointed '
                 f'after reading the change ({why}). The claim is unchanged.')
         if not any(n.get('en') == note for n in d.get('history', [])):
             d.setdefault('history', []).append({
-                'en': note, 'zh': f'2026年10月18日，F3Q（探究与组合族移入核心）：读过改动后，{"、".join(files)} 重新指向。论断不变。'})
+                'en': note, 'zh': f'2026年10月18日，F3Q（探究与组合族移入核心）：读过改动后，{"、".join(names)} 重新指向。论断不变。'})
         open(f, 'w').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
         out.append((f.rsplit('/', 1)[-1], files))
     for x in out:
