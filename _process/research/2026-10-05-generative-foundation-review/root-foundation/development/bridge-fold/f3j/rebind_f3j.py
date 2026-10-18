@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""F3J, sub-chain 1 (18 October 2026): rebind the result records to the new core modules.
+"""F3J, sub-chains 1 and 2 (18 October 2026): rebind the result records to the new core modules.
 
-usage (from the checkout root): python3 -B rebind_f3j.py BASE RECEIPT_ID
+usage (from the checkout root): python3 -B rebind_f3j.py BASE RECEIPT_ID [map_s1 map_s2 ...]
+(the sub-chain maps to apply; default map_s1)
 
 BASE is the main commit the port is applied on; RECEIPT_ID the passing core receipt in this checkout.
 A port restates; it adds no result. For every record:
@@ -24,9 +25,14 @@ import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from map_s1 import MAP, CANONICAL  # noqa: E402
+import importlib  # noqa: E402
 
 BASE, RID = sys.argv[1], sys.argv[2]
+MAP, CANONICAL = {}, {}
+for name in sys.argv[3:] or ['map_s1']:
+    chain = importlib.import_module(name)
+    MAP.update(chain.MAP)
+    CANONICAL.update(chain.CANONICAL)
 PKG = 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/'
 RECEIPT = PKG + 'becoming-checks/' + RID + '/verification.json'
 receipt = json.load(open(RECEIPT))
@@ -39,7 +45,8 @@ for m in receipt.get('modules', []):
         if isinstance(d, dict):
             home.setdefault(d['name'], m['module'])
 NEW = {'Becoming.Lexical', 'Becoming.Frontier', 'Becoming.ScoreRepresentation', 'Becoming.Alternatives',
-       'Becoming.Bundles', 'Becoming.Narrowing'}
+       'Becoming.Bundles', 'Becoming.Narrowing',
+       'Becoming.PositiveGround'}
 missing = sorted({c for cs in MAP.values() for c in cs if c not in home})
 if missing:
     sys.exit('not elaborated in the receipt: ' + ', '.join(missing))
