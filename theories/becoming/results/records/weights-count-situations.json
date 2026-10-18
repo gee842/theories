@@ -287,7 +287,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
       "role": "proof",
-      "sha256": "f2eabd60b234237608e1d6d48db9d8a2911c98929753fe270e7dd1130c7b4e73",
+      "sha256": "fc2cd616a439c78067b655725f25a81fa346de2436db7a1e7b109080d9d01948",
       "declarations": [
         "Becoming.Situations.upto",
         "Becoming.Situations.sum_upto",
@@ -348,7 +348,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "c75994193dc0d8da4e28957633fd9a5a7e39b4796064df1a2525f8df05609703",
+      "sha256": "a8e4d252fa870cac6f200aec594aef104fcc85b29577c439af877bd9242192f8",
       "declarations": [
         "Becoming.Typicality.courses",
         "Becoming.Typicality.extend",
@@ -495,14 +495,14 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Situations.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Situations",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Typicality",
       "success_pointer": "/status",
       "success_value": "passed"

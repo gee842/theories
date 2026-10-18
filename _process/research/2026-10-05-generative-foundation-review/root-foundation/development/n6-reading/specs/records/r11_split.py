@@ -1,7 +1,7 @@
 """Record the-split-that-makes-sense, read by sense (N6), following chapter §3's wording."""
 REC=('the-split-that-makes-sense',[
 ("S1","@statement/zh","确定的律下，保留映射之值并承载规律的最粗切分有意义；映射之值的一部分单独有意义，恰当其余对它的下一值不造成差别。每段值的历史是一条确定的律，状态有限恰当它从某一刻起重复。"),
-("S1","@statement/en","For a determined law, the coarsest split keeping the map's value and carrying a law makes sense, and a part of the map's value alone makes sense exactly where the rest makes no difference to its next value. Every history of values is a determined law, finite-state exactly where it is eventually periodic."),
+("S1","@statement/en","For a determined law, the coarsest split keeping the map's value and carrying a law makes sense, and part of the value alone makes sense exactly where the rest makes no difference to its next value. Every history of values is a determined law, finite-state exactly where it is eventually periodic."),
 ("S1","@laws/0/zh","以 Becoming.Unfolding 的定义：确定的律 next 经映射 o 读作框架 Law.frameBy next o；描述有意义，指它恰把相同的配置等同，相同就是经映射的未来相同。"),
 ("S1","@laws/0/en","With Becoming.Unfolding's definitions: a determined law next read through a map o is the frame Law.frameBy next o; a description makes sense when it identifies exactly the alike configurations, and alike is the same future through the map."),
 ("S1","@laws/1/zh","确定的律下，描述与律同去，恰当它把被等同者带到被等同者。保留映射之值并同去的切分以互模拟联系配置，不失去映射所取的任何东西；最粗的这样的切分有意义。"),

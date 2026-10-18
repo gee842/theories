@@ -272,7 +272,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
       "role": "proof",
-      "sha256": "7554756d57ae76e535ab9a7f920f0a0ef5a3909514449ca7d48c0cdbf2a12661",
+      "sha256": "b6892a213d02d0828c5b4139d9cbe68d075a3e3109d3a8368d3b924f1006da10",
       "declarations": [
         "Becoming.Flow.PolicyThrough",
         "Becoming.Flow.OthersFixed",
@@ -381,7 +381,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Runaway",
       "success_pointer": "/status",
       "success_value": "passed"

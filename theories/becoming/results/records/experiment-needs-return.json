@@ -153,8 +153,8 @@
       "kind": "scope"
     },
     {
-      "zh": "动作与隐藏者的何种相关使模型永不被否证，一般形式没有陈述。",
-      "en": "The general form of which correlation between moves and what is hidden leaves a model unrefuted is not stated.",
+      "zh": "动作与隐藏者的何种相关使模型永不被排除，一般形式没有陈述。",
+      "en": "The general form of which correlation between moves and what is hidden leaves a model never excluded is not stated.",
       "kind": "scope"
     }
   ],
@@ -162,8 +162,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
       "detail": {
-        "zh": "错误的投影误归因而永不被否证：Confound 中动作不造成差别，只读结果时记录固定左得假、右得真；动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都被容许（Confound.misattributes、Confound.confounded）。只有与隐藏位错开的动作否证它（Confound.varied_refutes）。",
-        "en": "A wrong projection misattributes and is never refuted: in Confound the move makes no difference, yet read through the outcome the record fixes left to false and right to true, and with the moves in step with the hidden bit the determined model in which the move decides the outcome is admitted at every step (Confound.misattributes, Confound.confounded). Only moves varied against the hidden bit refute it (Confound.varied_refutes)."
+        "zh": "错误的投影误归因而永不被排除：Confound 中动作不造成差别，只读结果时记录固定左得假、右得真；动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都被容许（Confound.misattributes、Confound.confounded）。只有与隐藏位错开的动作排除它（Confound.varied_refutes）。",
+        "en": "A wrong projection misattributes and is never excluded: in Confound the move makes no difference, yet read through the outcome the record fixes left to false and right to true, and with the moves in step with the hidden bit the determined model in which the move decides the outcome is admitted at every step (Confound.misattributes, Confound.confounded). Only moves varied against the hidden bit exclude it (Confound.varied_refutes)."
       }
     }
   ],
@@ -177,8 +177,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the theorems of Becoming.Experiment have empty axiom reports, and the checker verifies core purity; Experiment, Recurrence and Frame are bound by 20261013T094743.528770Z, Joint by 20261013T221720.428753Z, Testing by 20261014T091930.724493Z. Author counterreview in the integration note; at Ren's “no extra review needed” there is no independent review."
   },
   "next_delta": {
-    "zh": "以 Becoming.Testing 中耦合所成的归并为投影的形式桥接（见 projection-carrying-a-law 与 generalization-through-lumping）；动作与隐藏者的何种相关使模型永不被否证的一般形式；动作中被遗忘的部分造成差别时的实验（见 causal-models-as-processes）。",
-    "en": "The formal bridge with the lumping the couplings make in Becoming.Testing as the projection (see projection-carrying-a-law and generalization-through-lumping); the general form of which correlation between moves and what is hidden leaves a model unrefuted; experiment where a forgotten part of the move makes a difference (see causal-models-as-processes)."
+    "zh": "以 Becoming.Testing 中耦合所成的归并为投影的形式桥接（见 projection-carrying-a-law 与 generalization-through-lumping）；动作与隐藏者的何种相关使模型永不被排除的一般形式；动作中被遗忘的部分造成差别时的实验（见 causal-models-as-processes）。",
+    "en": "The formal bridge with the lumping the couplings make in Becoming.Testing as the projection (see projection-carrying-a-law and generalization-through-lumping); the general form of which correlation between moves and what is hidden leaves a model never excluded; experiment where a forgotten part of the move makes a difference (see causal-models-as-processes)."
   },
   "correspondence": {
     "zh": "testing-within-registration 留下的开放项（审查 F6）：一个动作造成什么，是有与无此动作的两段历史的比较。Ren 在那一结果落地后写“land and merge all, then continue”，看过结果后写“no extra review needed, merge, then continue”。读法（AI 的，依 Ren 的交托采用）：实验是在配置（按实验者的读法）返回之处变动自己的动作；重复是这一返回；对照是步骤经读法分解的模型；与略去者无关的变动是随机化的结构形式；以 testing-within-registration 的耦合为读法，阈下与所及之外的不显出是不分解的情形。",
@@ -308,7 +308,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
       "role": "proof",
-      "sha256": "622ffc32049bf3318fe709473198a88d626207b8cc8c9fecf38b18ae48e35914",
+      "sha256": "f1ed2c37740f968c8702b04112de6553ee5bf37cf0e14bbb9bd7e5e11eabc285",
       "declarations": [
         "Becoming.Run.Takes",
         "Becoming.Run.StepsOf",
@@ -463,7 +463,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Experiment",
       "success_pointer": "/status",
       "success_value": "passed"

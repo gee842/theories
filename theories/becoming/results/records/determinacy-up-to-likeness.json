@@ -130,8 +130,8 @@
       ]
     },
     {
-      "zh": "什么也不主张时，没有混杂被否证。",
-      "en": "With nothing claimed, no confound is refuted.",
+      "zh": "什么也不主张时，没有混杂被排除。",
+      "en": "With nothing claimed, no confound is excluded.",
       "declarations": [
         "Becoming.Confound.refutes_registered"
       ]
@@ -180,8 +180,8 @@
     "en": "A characterization of the laws that need a split finer than the claims, beyond the three witnesses."
   },
   "correspondence": {
-    "zh": "读法（AI 的；Ren 2026-10-14 同意此方向）：相同是展开自身的配置同一；在相同之下成立的确定定理关乎配置如何相关，需要相等的那些依赖于主张所分开的（相等是最细的切分，即命名，规律 1）：对相同者中一个名字的干预、没有主张分开的过去、没有主张分开的描述。没有主张分开的既不被固定也不被否证（比较 Becoming.Testing 中形成能检验的主张）。在相同之下，承载规律的是一个尊重主张的等价，而不只是像：每个描述就是自己的主张时它是相等。见整合文档 §99 与 Becoming.Likeness 一节。",
-    "en": "Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness is the unfolding's own identity of configurations; the theorems with determinacy that hold up to likeness are about how configurations relate, and those that need equality depend on what the claims tell apart, equality being the finest split, naming (law 1): an intervention on one name among alike configurations, a past no claim tells apart, a description no claim tells apart. What no claim tells apart is neither fixed nor refuted (compare the claims a formation can test in Becoming.Testing). Up to likeness a law is carried by an equivalence that respects the claims, not by the image alone; where each description is its own claim, that equivalence is equality. See §99 of the integration note and its section on Becoming.Likeness."
+    "zh": "读法（AI 的；Ren 2026-10-14 同意此方向）：相同是展开自身的配置同一；在相同之下成立的确定定理关乎配置如何相关，需要相等的那些依赖于主张所分开的（相等是最细的切分，即命名，规律 1）：对相同者中一个名字的干预、没有主张分开的过去、没有主张分开的描述。没有主张分开的既不被固定也不被排除（比较 Becoming.Testing 中形成能检验的主张）。在相同之下，承载规律的是一个尊重主张的等价，而不只是像：每个描述就是自己的主张时它是相等。见整合文档 §99 与 Becoming.Likeness 一节。",
+    "en": "Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness is the unfolding's own identity of configurations; the theorems with determinacy that hold up to likeness are about how configurations relate, and those that need equality depend on what the claims tell apart, equality being the finest split, naming (law 1): an intervention on one name among alike configurations, a past no claim tells apart, a description no claim tells apart. What no claim tells apart is neither fixed nor excluded (compare the claims a formation can test in Becoming.Testing). Up to likeness a law is carried by an equivalence that respects the claims, not by the image alone; where each description is its own claim, that equivalence is equality. See §99 of the integration note and its section on Becoming.Likeness."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
   "aliases": [
@@ -314,7 +314,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "a1fb134192dc2900e63bad805132ec75757b0fe2b722e18091da49eed0cd7c12",
+      "sha256": "58b9fc1c27a970007227d9b2cca13d0a5ed3699e605491d897128ca128f774f7",
       "declarations": [
         "Becoming.alike_configurations",
         "Becoming.determined_iff_named",
@@ -354,7 +354,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "6c2b4224dcad451ab417dc46e232a666a8693c498362c25cd573f86f40fb0212",
+      "sha256": "93c5377713eef17b5f5e06c6382180f86a5ffc1a4d60a0f138eae3d4fbfd5724",
       "declarations": [
         "Becoming.RespectsClaims",
         "Becoming.GoAlikeUnder",
@@ -408,7 +408,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "ce0cbaa9eae78046d860abeb963b0eab87d8981451044ed9bb85d2fb66ab5b68",
+      "sha256": "afa3fa23f606a59e8b9578a3ba2046c136d2b4cb7310f29dff1cf5e020388d09",
       "declarations": [
         "Becoming.goAlike_id_iff",
         "Becoming.GoAlike.runs_agree",
@@ -425,7 +425,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
       "role": "proof",
-      "sha256": "622ffc32049bf3318fe709473198a88d626207b8cc8c9fecf38b18ae48e35914",
+      "sha256": "f1ed2c37740f968c8702b04112de6553ee5bf37cf0e14bbb9bd7e5e11eabc285",
       "declarations": [
         "Becoming.Run.fixes_of_takes",
         "Becoming.Run.not_fixes_of_untaken",
@@ -453,7 +453,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
       "declarations": []
     },
     {
@@ -514,7 +514,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -528,21 +528,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Experiment",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"

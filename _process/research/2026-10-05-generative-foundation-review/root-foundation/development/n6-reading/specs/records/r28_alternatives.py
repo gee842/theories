@@ -2,7 +2,7 @@
 REC=('selection-through-a-model-of-the-options',[
 ('ALT', '@title/en', 'Selection through a map of the alternatives'),
 ('ALT', '@statement/zh', '对相同已定的备择与给每个备择任何种类条目的映射：两个备择被每个经映射的选择选得相同，恰当映射使二者并列；至多选一个备择的这种选择能选出 k，恰当没有别的备择的条目等于 k 的。'),
-('ALT', '@statement/en', "For alternatives with decided equality and a map giving each an entry of any kind: two alternatives are selected alike by every selection through the map exactly when the map ties them, and such a selection selecting at most one alternative can select k exactly when no other alternative's entry equals k's."),
+('ALT', '@statement/en', "For alternatives with decided equality and a map giving each an entry of any kind: two are selected alike by every selection through the map exactly when the map ties them, and such a selection selecting at most one alternative can select k exactly when no other alternative's entry equals k's."),
 ('ALT', '@laws/0/zh', '交换两个备择（swap）是对合。选择、取值与选取经映射：交换两个备择的条目，即交换所选者、所取的值或所选取者。交换两个并列的备择，映射不变。'),
 ('ALT', '@laws/0/en', "Exchanging two alternatives (swap) is an involution. A selection, a valuation and a choice are through the map when exchanging two alternatives' entries exchanges what is selected, the values or the choice. Exchanging two tied alternatives leaves the map as it was."),
 ('ALT', '@laws/1/zh', '并列的备择被选得相同；两个备择被每个经映射的选择选得相同，恰当映射使二者并列。见证是选出条目等于给定值的备择。'),

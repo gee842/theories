@@ -5,7 +5,7 @@
 
 `determinacy-up-to-likeness` · **recorded-checked** · theorem · F01 · [record](determinacy-up-to-likeness.json) · [register](../../../../RESULTS.md)
 
-> Determinacy is the named case of determinacy up to likeness, and the laws on how configurations relate hold up to likeness, including when a description carries a law; an intervention on one of alike configurations, an unregistered past and an unregistered description need equality.
+> Determinacy is the named case of determinacy up to likeness, and the laws on how configurations relate hold up to likeness, including when a description carries a law; an intervention on one of alike configurations, a past no claim tells apart and a description no claim tells apart need equality.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -18,15 +18,15 @@
 6. A description carries a law up to likeness exactly where some equivalence on descriptions relates only descriptions realizing the same claims and takes configurations whose descriptions it relates, by one move, to configurations whose descriptions it relates; the carrier is the image closed under the equivalence. (`Becoming.RespectsClaims`, `Becoming.GoAlikeUnder`, `Becoming.imageUnder`, `Becoming.imageUnder_determinedAt`, `Becoming.carries_law_alike_iff`)
 7. Where each description is its own claim, the only such equivalence is equality, and this is the law stated with equality; with nothing claimed, every description carries a law. (`Becoming.eq_equivalence`, `Becoming.carries_law_named_iff`, `Becoming.carries_law_iff`, `Becoming.carries_unregistered`)
 8. The image is determined up to likeness exactly where configurations whose descriptions are alike in it go alike under it; a description can carry a law up to likeness while its image is not determined up to likeness, so up to likeness the image is no longer the least carrier. (`Becoming.image_determinedAt_iff`, `Becoming.image_determined_iff`, `Becoming.Image.least`, `Becoming.Parting.image_not_determinedAt`, `Becoming.Parting.carries`)
-9. The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition: then either the part makes the difference or the same move still breaks the dependence; determinacy up to likeness under claims registering that level, and determinacy, are cases. (`Becoming.Dependence.dichotomy_of_same_level`, `Becoming.Dependence.dichotomy_of_determinedAt`, `Becoming.Dependence.level_registers`, `Becoming.Dependence.dichotomy_of_determined`, `Becoming.Dependence.determined_dichotomy`)
-10. Read through a projection, a move not taken at a description alike to the one named is not fixed up to likeness, for outcomes that differ in a claim: so under any process on the descriptions, determined up to likeness, that admits the steps so read, and so wherever some equivalence registering the claims makes configurations go alike. (`Becoming.Run.TakesThroughAlike`, `Becoming.Run.FixesThroughAlike`, `Becoming.Run.not_fixesThroughAlike_of_untaken`, `Becoming.Run.not_fixesThroughAlike_of_goAlikeUnder`, `Becoming.Run.not_fixesThrough_of_untaken`, `Becoming.Run.not_fixesThrough_of_goAlike`)
-11. An intervention on one of two alike configurations breaks determinacy up to likeness; a kept history returns up to likeness where its present does and nothing registers the past, so a kept history is new only with its past registered. (`Becoming.Twins.retarget_breaks`, `Becoming.keepFrame`, `Becoming.keepFrame_alike_iff`, `Becoming.keepHistory_returns_alike`, `Becoming.keepHistory_new_named`)
-12. With nothing claimed, no confound is refuted. (`Becoming.Confound.refutes_registered`)
+9. The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition: then either the part makes the difference or the same move still breaks the dependence; determinacy up to likeness under claims telling that level apart, and determinacy, are cases. (`Becoming.Dependence.dichotomy_of_same_level`, `Becoming.Dependence.dichotomy_of_determinedAt`, `Becoming.Dependence.level_registers`, `Becoming.Dependence.dichotomy_of_determined`, `Becoming.Dependence.determined_dichotomy`)
+10. Read through a projection, a move not taken at a description alike to the one named is not fixed up to likeness, for outcomes that differ in a claim: so under any process on the descriptions, determined up to likeness, that admits the steps so read, and so wherever some equivalence respecting the claims makes configurations go alike. (`Becoming.Run.TakesThroughAlike`, `Becoming.Run.FixesThroughAlike`, `Becoming.Run.not_fixesThroughAlike_of_untaken`, `Becoming.Run.not_fixesThroughAlike_of_goAlikeUnder`, `Becoming.Run.not_fixesThrough_of_untaken`, `Becoming.Run.not_fixesThrough_of_goAlike`)
+11. An intervention on one of two alike configurations breaks determinacy up to likeness; a kept history returns up to likeness where its present does and no claim tells the past apart, so a kept history is new only where a claim tells its past apart. (`Becoming.Twins.retarget_breaks`, `Becoming.keepFrame`, `Becoming.keepFrame_alike_iff`, `Becoming.keepHistory_returns_alike`, `Becoming.keepHistory_new_named`)
+12. With nothing claimed, no confound is excluded. (`Becoming.Confound.refutes_registered`)
 
 <a id="conditions--条件"></a>
 ## Conditions
 
-- No premise: each law states its conditions, among them determinacy up to likeness where it is used and claims that register what is compared; likeness is bisimulation, with no quotient taken.
+- No premise: each law states its conditions, among them determinacy up to likeness where it is used and claims that tell apart what is compared; likeness is bisimulation, with no quotient taken.
 
 <a id="does-not-show--未表明"></a>
 ## Does not show
@@ -47,14 +47,14 @@ Canonical source: [Branching.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-A characterization of the laws that need a registration finer than the claims, beyond the three witnesses.
+A characterization of the laws that need a split finer than the claims, beyond the three witnesses.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness is the unfolding's own identity of configurations; the theorems with determinacy that hold up to likeness are about how configurations relate, and those that need equality depend on what is registered, equality being the finest registration, naming (law 1): an intervention on one name among alike configurations, a past nothing registers, a description nothing registers. What nothing registers is neither fixed nor refuted (compare the registers of Becoming.Testing). Up to likeness a law is carried by an equivalence that registers the claims, not by the image alone; where each description is its own claim, that equivalence is equality. See §99 of the integration note and its section on Becoming.Likeness.
+Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness is the unfolding's own identity of configurations; the theorems with determinacy that hold up to likeness are about how configurations relate, and those that need equality depend on what the claims tell apart, equality being the finest split, naming (law 1): an intervention on one name among alike configurations, a past no claim tells apart, a description no claim tells apart. What no claim tells apart is neither fixed nor excluded (compare the claims a formation can test in Becoming.Testing). Up to likeness a law is carried by an equivalence that respects the claims, not by the image alone; where each description is its own claim, that equivalence is equality. See §99 of the integration note and its section on Becoming.Likeness.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -69,7 +69,7 @@ Reading (the AI's; Ren agreed with its direction on 14 October 2026): likeness i
   - Preserved conditions: None. [Experiment.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
 - **formal-reuse**: [projection-carrying-a-law](projection-carrying-a-law.md). Reuses Mechanism's DependsOnlyOn, forget_inputs_determined_iff and Confound.
   - Output: Mechanism and standard causal models.
-  - Input: The forms up to likeness and where registration is needed.
+  - Input: The forms up to likeness and where equality is needed.
   - Preserved conditions: None. [Mechanism.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
 - **formal-reuse**: [joint-difference-making](joint-difference-making.md). Reuses Joint's BreaksBy, MakesDifference and determined_dichotomy: the dichotomy needs only one level after the move, and determinacy is a case (Dependence.dichotomy_of_determined).
   - Output: The dichotomy of difference-making, under determinacy.

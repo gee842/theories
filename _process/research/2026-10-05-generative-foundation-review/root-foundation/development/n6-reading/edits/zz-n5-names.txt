@@ -1,0 +1,134 @@
+# N5 names left in live prose: each retired Lean name read as its current name (RENAME-TABLE.json).
+### record:comparison-where-the-rest-responds
+= N5 *
+- 、supportOnly、
++ 、thresholdOnly、
+= N5 *
+-  supportOnly,
++  thresholdOnly,
+### record:counterfactual-is-the-course
+= N5 *
+- ；registers_of_sensitive 
++ ；couples_of_sensitive 
+= N5 *
+-  registers_of_sensitive 
++  couples_of_sensitive 
+= N5 *
+- （tailLaw_no_least_registration，
++ （tailLaw_no_least_coupling，
+= N5 *
+- (tailLaw_no_least_registration,
++ (tailLaw_no_least_coupling,
+### record:feedback-and-reach
+= N5 *
+-  unregistered_beyond_influence。
++  uncoupled_beyond_influence。
+= N5 *
+-  unregistered_beyond_influence.
++  uncoupled_beyond_influence.
+### record:how-much-difference-arrives
+= N5 *
+- 、RegistersAt 
++ 、CoupledIntoAt 
+= N5 *
+-  RegistersAt 
++  CoupledIntoAt 
+### record:learning-by-refutation
+= N5 *
+-  no_record_fixes_next、
++  no_prefix_fixes_next、
+= N5 *
+- 、claim_refuted_on_one、
++ 、claim_missed_on_one、
+= N5 *
+- 、diagonal_refutes、
++ 、diagonal_misses、
+= N5 *
+- 、index_le_of_holds、
++ 、index_le_of_accords、
+= N5 *
+- 、refutations_not_recurring、
++ 、misses_not_recurring、
+= N5 *
+- 、held_learner_bounded、
++ 、held_byElimination_bounded、
+= N5 *
+-  no_record_fixes_next,
++  no_prefix_fixes_next,
+= N5 *
+-  claim_refuted_on_one,
++  claim_missed_on_one,
+= N5 *
+-  diagonal_refutes,
++  diagonal_misses,
+= N5 *
+-  index_le_of_holds,
++  index_le_of_accords,
+= N5 *
+-  refutations_not_recurring,
++  misses_not_recurring,
+= N5 *
+-  held_learner_bounded,
++  held_byElimination_bounded,
+### record:registration-within-what-it-registers
+= N5 *
+-  diagonal_refutes 
++  diagonal_misses 
+### record:subthreshold-registration
+= N5 *
+-  supportOnly）
++  thresholdOnly）
+= N5 *
+-  supportOnly 
++  thresholdOnly 
+= N5 *
+- （supportOnly）
++ （thresholdOnly）
+= N5 *
+- (supportOnly)
++ (thresholdOnly)
+= N5 *
+- 、supportOnly 
++ 、thresholdOnly 
+### record:testing-within-registration
+= N5 *
+- （supportOnly）
++ （thresholdOnly）
+= N5 *
+- (supportOnly)
++ (thresholdOnly)
+### record:tests-fix-likeness-where-determined
+= N5 *
+- （registered_across_exact）
++ （frameBy_across_exact）
+= N5 *
+- (registered_across_exact)
++ (frameBy_across_exact)
+= N5 *
+- （registered_within_exact）
++ （frameBy_within_exact）
+= N5 *
+- (registered_within_exact)
++ (frameBy_within_exact)
+= N5 *
+- 、record_eq_iff 
++ 、prefix_eq_iff 
+= N5 *
+-  record_eq_iff 
++  prefix_eq_iff 
+### record:timely-response-necessity
+= N5 *
+- ；RegistersAt 
++ ；CoupledIntoAt 
+= N5 *
+-  RegistersAt 
++  CoupledIntoAt 
+= N5 *
+-  RegistersAlikeUpTo。
++  AlikeThroughUpTo。
+= N5 *
+- RegistersAlikeUpTo 
++ AlikeThroughUpTo 
+= N5 *
+- registration_alike_before 
++ coupling_alike_before 

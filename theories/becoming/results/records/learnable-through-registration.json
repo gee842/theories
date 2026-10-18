@@ -11,7 +11,7 @@
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
     "zh": "经映射的未来相同的配置给每个外推同样的前段。被列表所持的世界中，某个外推在每个配置上于特征静止，恰当这样的配置其特征从某步起一致；律使每个配置不变时，恰当特征经映射之归并同去。",
-    "en": "Configurations with the same future through the map give every extrapolation the same prefix. In a world a list holds, some extrapolation rests on a feature everywhere exactly where such configurations have features agreeing from some step on; under a still law, exactly where the feature goes alike across the map's lumping."
+    "en": "Configurations with one future through the map give every extrapolation the same prefix. In a listed world, some extrapolation rests on a feature everywhere exactly where such configurations have features eventually agreeing; under a still law, exactly where the feature respects the lumping."
   },
   "laws": [
     {
@@ -318,7 +318,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
       "role": "proof",
-      "sha256": "ba98259841cc2968ceec071dc6618fde8245b9b405560c85ce4f90db9ad74852",
+      "sha256": "4cd8b649b81b2bbeb1c8800036665cc0541ca78ae4bd3a60befd82def08a5168",
       "declarations": [
         "Becoming.Learnable.course",
         "Becoming.Learnable.RestsFrom",
@@ -348,7 +348,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "648576d8bb87dc1097d8ce069daeeae4c2fddd6f912f26d89a1346ca94f38e46",
+      "sha256": "aecbe2c2ece126e2fc1d04f901d900bd1619a931679ab3a584888cf0a6e1b4d0",
       "declarations": [
         "Becoming.Learning.prefixOf",
         "Becoming.Learning.prefix_congr",
@@ -363,7 +363,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "a850122314509981b7743346afec8c2f1dcd1dc58b5f18c1c69a85157dcbce89",
+      "sha256": "389e050bf149ae8a5e3bc6e04a13c46a1f3f311bd367b7bc3821ccb1e171eda7",
       "declarations": [
         "Becoming.Identification.held_byElimination_rests",
         "Becoming.Identification.prefix_eq_iff",
@@ -385,7 +385,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
       "role": "proof",
-      "sha256": "405c8941a736f9fcfaabb9d6d5ce993232eb67bb03c09be612c13727823d71e8",
+      "sha256": "60910d50480aa82ae2a0dd3b73bfe65f7fb17267f642e9d23701b02ae3cb2a99",
       "declarations": [
         "Becoming.Law.fixed_rests"
       ]
@@ -450,7 +450,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
       "role": "proof",
-      "sha256": "a4bbc0e554f94f9580cd2284472db14845e32199655489ecb2f5cab388661616",
+      "sha256": "c0950e5cbd3afb785f8884f8476b2b1871f725ef2e1bcb4754bd56f2b3867c64",
       "declarations": [
         "Becoming.LearnableRuns.course",
         "Becoming.LearnableRuns.RestsFrom",
@@ -495,21 +495,21 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learnable",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -523,7 +523,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Seeking",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -537,7 +537,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LearnableRuns",
       "success_pointer": "/status",
       "success_value": "passed"

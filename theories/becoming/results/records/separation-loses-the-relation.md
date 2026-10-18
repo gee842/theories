@@ -47,7 +47,7 @@ Relation is stated for wholes of two parts, with parity as the witness for three
 
 **Preserved conditions:** None. [Context.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
 
-- Related, not a proved adapter: [the-split-that-makes-sense](the-split-that-makes-sense.md). Same module: the split that makes sense, relative to what is registered; here, what any description cutting a whole into parts loses.
+- Related, not a proved adapter: [the-split-that-makes-sense](the-split-that-makes-sense.md). Same module: the split that makes sense, relative to the map; here, what any description cutting a whole into parts loses.
 - Related, not a proved adapter: [projection-carrying-a-law](projection-carrying-a-law.md). A projection carries a law exactly where what it lumps goes alike; here laws moving each part by itself keep wholes rectangular, and joint laws can relate or unrelate the parts.
 - Related, not a proved adapter: [gluing-under-parity](gluing-under-parity.md). The exact law for the same kind of case of parts failing a whole: for parity constraints, context-free readings exist exactly where no selection of contexts contradicts.
 
@@ -69,6 +69,7 @@ Relation is stated for wholes of two parts, with parity as the witness for three
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -91,4 +92,5 @@ Aliases: `Becoming.Rectangular`, `Becoming.Separated`, `Becoming.separation_fait
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Description.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Context.lean, Courses.lean, Description.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T094652.463397Z after reading the change. The claim is unchanged.
 - 32 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](separation-loses-the-relation.json).

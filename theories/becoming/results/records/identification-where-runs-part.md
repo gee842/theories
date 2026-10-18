@@ -5,35 +5,35 @@
 
 `identification-where-runs-part` · **recorded-checked** · theorem · F01 · [record](identification-where-runs-part.json) · [register](../../../../RESULTS.md)
 
-> Wherever the runs of a process register one course, a record fixes it from 2N − 1 on with N configurations, as for determined laws. At a parting no learner, whatever it is given, is right on both runs; for listed, decided processes a learner given the world is right exactly where none part.
+> Wherever a process's runs have one course through the map, a prefix fixes it from 2N − 1 on with N configurations. At a parting no extrapolation, whatever it is given, is right on both runs; for listed, decided processes the one built from the process is right exactly where none part.
 
 <a id="laws--规律"></a>
 ## Laws
 
-1. Two runs part at a step where they register the same before it and differ at it; their records before it are one, so no learner, whatever it is given, is right on both; a learner right from T on, on every run from a configuration, leaves no two of those runs parting from T on. (`Becoming.Parting.PartAt`, `Becoming.Parting.RightAt`, `Becoming.Parting.course`, `Becoming.Parting.not_right_on_both`, `Becoming.Parting.not_parting_of_right`)
-2. With the registered values decided, no two runs from a configuration part exactly where all of them register one course. (`Becoming.Parting.Unparted`, `Becoming.Parting.unparted_iff`)
+1. Two runs part at a step where they take one value through the map before it and different values at it; their prefixes before it are one, so no extrapolation, whatever it is given, is right on both; an extrapolation right from T on, on every run from a configuration, leaves no two of those runs parting from T on. (`Becoming.Parting.PartAt`, `Becoming.Parting.RightAt`, `Becoming.Parting.course`, `Becoming.Parting.not_right_on_both`, `Becoming.Parting.not_parting_of_right`)
+2. With the values through the map decided, no two runs from a configuration part exactly where all of them have one course through the map. (`Becoming.Parting.Unparted`, `Becoming.Parting.unparted_iff`)
 3. Not parting is kept along runs: a run up to a step joined to any run from where it is at that step is a run from its start, so every configuration a run from an unparted configuration reaches is unparted. (`Becoming.Parting.after`, `Becoming.Parting.before`, `Becoming.Parting.joinAt`, `Becoming.Parting.joinAt_before`, `Becoming.Parting.joinAt_after`, `Becoming.Parting.Unparted.along`)
-4. On a run from an unparted configuration held by a list of N configurations the registered course has at most N states, and the learner by the least bound, given nothing, is right from N + N − 1 on; for N ≥ 2 no learner is right at N + N − 2 on every such run of every process of N configurations. (`Becoming.Parting.course_statesBelow`, `Becoming.Parting.leastBound_right`, `Becoming.Parting.rest_earliest_runs`)
-5. A determined process with one move parts nowhere, so determined laws are the instance; a branching that does not show in what is registered parts nowhere either. (`Becoming.Parting.states_agree`, `Becoming.Parting.unparted_of_determined`, `Becoming.Parting.free_unparted_const`)
-6. Under free branching every course is a run's course; after every record two runs with that record part, every learner is not right at the next step on one of them, and one run makes it wrong at every step. (`Becoming.Parting.free`, `Becoming.Parting.freeRun`, `Becoming.Parting.freeRun_course`, `Becoming.Parting.free_parts_after`, `Becoming.Parting.free_open`, `Becoming.Parting.free_never_right`)
-7. Free branching on two values is held by a list of two configurations, and one of its runs has a registered course with no bound on its states. (`Becoming.Parting.free_held`, `Becoming.Parting.free_unbounded`)
-8. Where runs part only before step T and never after, the registered values decided, no two runs part from where a run is at T; held by N configurations its course has at most T + N states, and the learner by the least bound is right from 2(T + N) − 1 on. (`Becoming.Parting.unparted_at_of_late`, `Becoming.Parting.statesBelow_shift`, `Becoming.Parting.late_statesBelow`, `Becoming.Parting.late_right`)
+4. On a run from an unparted configuration held by a list of N configurations the course through the map has at most N states, and the extrapolation by the least bound, given nothing, is right from N + N − 1 on; for N ≥ 2 no extrapolation is right at N + N − 2 on every such run of every process of N configurations. (`Becoming.Parting.course_statesBelow`, `Becoming.Parting.leastBound_right`, `Becoming.Parting.rest_earliest_runs`)
+5. A determined process with one move parts nowhere, so determined laws are the instance; a branching that does not show through the map parts nowhere either. (`Becoming.Parting.states_agree`, `Becoming.Parting.unparted_of_determined`, `Becoming.Parting.free_unparted_const`)
+6. Under free branching every course is a run's course; after every prefix two runs with that prefix part, every extrapolation is not right at the next step on one of them, and one run makes it wrong at every step. (`Becoming.Parting.free`, `Becoming.Parting.freeRun`, `Becoming.Parting.freeRun_course`, `Becoming.Parting.free_parts_after`, `Becoming.Parting.free_open`, `Becoming.Parting.free_never_right`)
+7. Free branching on two values is held by a list of two configurations, and one of its runs has a course through the map with no bound on its states. (`Becoming.Parting.free_held`, `Becoming.Parting.free_unbounded`)
+8. Where runs part only before step T and never after, the values through the map decided, no two runs part from where a run is at T; held by N configurations its course has at most T + N states, and the extrapolation by the least bound is right from 2(T + N) − 1 on. (`Becoming.Parting.unparted_at_of_late`, `Becoming.Parting.statesBelow_shift`, `Becoming.Parting.late_statesBelow`, `Becoming.Parting.late_right`)
 9. Where a list of N holds every configuration, from where a course of N steps starts a step leads to where one starts: the course repeats a configuration and can go round; so courses of every length start there, with no decidability and no selection. With decided steps and listed moves, a run goes on from there, built by taking at each step the first successor from which one can. (`Becoming.Parting.path_of_continues`, `Becoming.Parting.continues_cycle`, `Becoming.Parting.continues_persists`, `Becoming.Parting.continues_any`, `Becoming.Parting.unbounded_of_continues`, `Becoming.Parting.anyOf`, `Becoming.Parting.anyOf_true`, `Becoming.Parting.anyOf_of_mem`, `Becoming.Parting.and_both`, `Becoming.Parting.and_of`, `Becoming.Parting.choose`, `Becoming.Parting.live`, `Becoming.Parting.live_succ_iff`, `Becoming.Parting.live_of_run`, `Becoming.Parting.live_iff_continues`, `Becoming.Parting.live_persists`, `Becoming.Parting.advance`, `Becoming.Parting.advanced`, `Becoming.Parting.liveRun`, `Becoming.Lasting.Continues`, `Becoming.Lasting.Unbounded`)
-10. The converse: with decided steps and registered values, the learner given the world reads from the record the configurations a run can be at, takes the first from which a run goes on, and claims what it registers; it is right at a step on every run from a configuration exactly where no two of those runs part there, so some learner is right there exactly where none part. (`Becoming.Parting.keepIf`, `Becoming.Parting.mem_keepIf`, `Becoming.Parting.candidates`, `Becoming.Parting.firstLive`, `Becoming.Parting.firstLive_spec`, `Becoming.Parting.firstLive_found`, `Becoming.Parting.fromProcess`, `Becoming.Parting.run_in_candidates`, `Becoming.Parting.candidates_run`, `Becoming.Parting.world_right`, `Becoming.Parting.world_right_iff`, `Becoming.Parting.some_right_iff`)
+10. The converse: with decided steps and values through the map, the extrapolation built from the process reads from the prefix the configurations a run can be at, takes the first from which a run goes on, and proposes its value through the map; it is right at a step on every run from a configuration exactly where no two of those runs part there, so some extrapolation is right there exactly where none part. (`Becoming.Parting.keepIf`, `Becoming.Parting.mem_keepIf`, `Becoming.Parting.candidates`, `Becoming.Parting.firstLive`, `Becoming.Parting.firstLive_spec`, `Becoming.Parting.firstLive_found`, `Becoming.Parting.fromProcess`, `Becoming.Parting.run_in_candidates`, `Becoming.Parting.candidates_run`, `Becoming.Parting.world_right`, `Becoming.Parting.world_right_iff`, `Becoming.Parting.some_right_iff`)
 
 <a id="conditions--条件"></a>
 ## Conditions
 
-- No axiom. What each law needs is written into it: a run held by a list, a start unparted or unparted from T on; unparted_iff, leastBound_right, the late_ laws and free_open need the registered values decided; world_right and its kin need listed moves and configurations and decided steps; free_never_right, free_held and free_unbounded are stated on two values (Bool).
-- The learner reads the values registered at configurations; moves register only where the registration reads them (for instance, where a configuration carries its last move).
+- No axiom. What each law needs is written into it: a run held by a list, a start unparted or unparted from T on; unparted_iff, leastBound_right, the late_ laws and free_open need the values through the map decided; world_right_iff and its kin need listed moves and configurations and decided steps; free_never_right, free_held and free_unbounded are stated on two values (Bool).
+- The extrapolation reads the values of configurations through the map; moves show only where the map reads them (for instance, where a configuration carries its last move).
 
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
 - A bound on configurations bounds no course where runs part. Witness: `Becoming.Parting.free_unbounded`.
-- The learner given the world for infinite or undecided processes: the construction needs listed moves and configurations and decided steps, and elsewhere whether a run goes on is not decided in general.
+- The extrapolation built from the process for infinite or undecided processes: the construction needs listed moves and configurations and decided steps, and elsewhere whether a run goes on is not decided in general.
 - Whether 2(T + N) − 1 is exact for every T is not shown.
-- **Counterexample:** free_parts_after: after every record two runs of free branching with that record part; free_never_right: for every learner, the diagonal run of free branching makes it wrong at every step; free_unbounded: a run on two configurations whose course is no lasso and has no bound on its states. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean)
+- **Counterexample:** free_parts_after: after every prefix two runs of free branching with that prefix part; free_never_right: for every extrapolation, the diagonal run of free branching makes it wrong at every step; free_unbounded: a run on two configurations whose course is no lasso and has no bound on its states. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean)
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision.
 
@@ -47,33 +47,33 @@ Canonical source: [Parting.lean](../../../../experiments/integrated-correction/g
 <a id="next--下一步"></a>
 ## Next
 
-Where a learner given the world can be right for infinite or undecided processes; the exactness of 2(T + N) − 1.
+Where an extrapolation built from the process can be right for infinite or undecided processes; the exactness of 2(T + N) − 1.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”, with the core read as the whole covering all reality where things and changes exist, with zero axioms, and “if my earlier words are unreasonable, please keep note, not follow blindly”. The identification line (identification-where-bounded) is stated for determined laws; this states it for every process, determined laws being one case. Known result: no learner right on both at a parting is the indistinguishability argument, a diagonal argument in the style of Gold (1967, “Language identification in the limit”); parting and distinguishing tests go back to Moore (1956, “Gedanken-experiments on sequential machines”). The AI's note: “the full "truth" can be derived, situationally” (12 October) holds for what is registered, as far as runs do not part; that every situation is bounded is not derived with no axiom. The AI's first reading, “at a parting the branch is settled only when taken”, is withdrawn; Ren, 16 October 2026: “the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, which Ren took the same day): at a parting, what the record and the supplied law leave open the situation fixes (weights-count-situations).
+Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”, with the core read as the whole covering all reality where things and changes exist, with zero axioms, and “if my earlier words are unreasonable, please keep note, not follow blindly”. The identification line (identification-where-bounded) is stated for determined laws; this states it for every process, determined laws being one case. Known result: no extrapolation right on both at a parting is the indistinguishability argument, a diagonal argument in the style of Gold (1967, “Language identification in the limit”); parting and distinguishing tests go back to Moore (1956, “Gedanken-experiments on sequential machines”). The AI's note: “the full "truth" can be derived, situationally” (12 October) holds for what is read through the map, as far as runs do not part; that every situation is bounded is not derived with no axiom. The AI's first reading, “at a parting the branch is settled only when taken”, is withdrawn; Ren, 16 October 2026: “the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, which Ren took the same day): at a parting, what the prefix and the supplied law leave open the situation fixes (weights-count-situations).
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
 - **formal-reuse**: [identification-where-bounded](identification-where-bounded.md). Reuses leastBound_exact, rest_earliest, statesBelow_iff_lasso, statesBelow_mono, below_all and not_ne_bool: identification under determined laws extended to every process where runs do not part.
-  - Output: On a course with at most N states the learner by the least bound is right from 2N − 1 on; 2N − 2 does not suffice.
-  - Input: The registered course of an unparted run has at most N states.
-  - Preserved conditions: Registered values decided. [Identification.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean)
-- **formal-reuse**: [learning-by-refutation](learning-by-refutation.md). Reuses record, record_congr, holdFrom, diagonal, diagonal_refutes, diagonal_not_lasso, learner and lassos: the diagonal and openness on free branching.
-  - Output: For every learner a course refuting each of its claims, and it is no lasso.
+  - Output: On a course with at most N states the extrapolation by the least bound is right from 2N − 1 on; 2N − 2 does not suffice.
+  - Input: The course through the map of an unparted run has at most N states.
+  - Preserved conditions: Values through the map decided. [Identification.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean)
+- **formal-reuse**: [learning-by-refutation](learning-by-refutation.md). Reuses prefixOf, prefix_congr, holdFrom, diagonal, diagonal_misses, diagonal_not_lasso, byElimination and lassos: the diagonal and openness on free branching.
+  - Output: For every extrapolation a course on which each value it proposes misses, and it is no lasso.
   - Input: That course is a run of free branching.
   - Preserved conditions: Two values. [Learning.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
 - **formal-reuse**: [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md). Reuses Law.realized_within: a course with at most N states is the course of a law on N configurations, giving exactness for processes.
-  - Output: A law, registration and start on Fin N whose registered course is the given course.
+  - Output: A law, a map and a start on Fin N whose course through the map is the given course.
   - Input: An unparted run of a determined process with one move.
   - Preserved conditions: None. [Distinguishing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean)
 - **formal-reuse**: [recurrence-without-premise](recurrence-without-premise.md). Reuses revisits_within, Law.process and Law.orbit: a run held by a list revisits a configuration within the list's length.
   - Output: A sequence held by a list of length N repeats within N.
-  - Input: A run at one configuration twice, the registered courses from there agreeing.
+  - Input: A run at one configuration twice, the courses through the map from there agreeing.
   - Preserved conditions: None. [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
 - **formal-reuse**: [the-split-that-makes-sense](the-split-that-makes-sense.md). Reuses StatesBelow, SameAhead and statesBelow_of_same: where two moments are one state, the course has at most as many states as the later.
   - Output: Two moments of one state give a bound on states.
@@ -81,13 +81,13 @@ Ren, 15 October 2026: “"What this line doesn’t reach" is also worth doing”
   - Preserved conditions: None. [Description.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean)
 - **formal-reuse**: [lifting-where-branching-is-finite](lifting-where-branching-is-finite.md). Reuses Lasting.Continues and Lasting.Unbounded: how long the courses from a configuration are.
   - Output: Some course of n steps starts at s; courses of every length do.
-  - Input: With finitely many configurations, a course of N steps gives courses of every length, with no decidability; the learner given the world takes a configuration from which a run goes on.
+  - Input: With finitely many configurations, a course of N steps gives courses of every length, with no decidability; the extrapolation built from the process takes a configuration from which a run goes on.
   - Preserved conditions: A list holds every configuration. [Lasting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean)
-- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). The registration's limit: configurations with the same registered future give every learner the same record; here, runs with the same registered past.
-- related, not a proved adapter: [experiment-needs-return](experiment-needs-return.md). What an act does is fixed by the record only where taken; here a branching at a parting is settled only when taken.
+- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). The map's limit: configurations with the same future through the map give every extrapolation the same prefix; here, runs with the same past through the map.
+- related, not a proved adapter: [experiment-needs-return](experiment-needs-return.md). What an act does is fixed by the record only where taken; here neither the prefix nor the supplied law fixes the branch at a parting (the reading “settled only when taken” is withdrawn).
 - related, not a proved adapter: [returning-where-the-course-branches](returning-where-the-course-branches.md). Returning and drawing for the same branching processes; here, identification in them.
-- related, not a proved adapter: [typicality-by-counting](typicality-by-counting.md). Worlds with weights: a record registers no weight, and counting gives that most courses show the weights.
-- related, not a proved adapter: [weights-count-situations](weights-count-situations.md). What the record and the law leave open at a parting the situation fixes: with the situation as the move, the law is determined.
+- related, not a proved adapter: [typicality-by-counting](typicality-by-counting.md). Worlds with weights: a record shows no weight, and counting gives that most courses show the weights.
+- related, not a proved adapter: [weights-count-situations](weights-count-situations.md). What the prefix and the law leave open at a parting the situation fixes: with the situation as the move, the law is determined.
 
 **Used by:** [where-a-run-goes-on](where-a-run-goes-on.md)
 

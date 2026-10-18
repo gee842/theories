@@ -255,7 +255,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "01ced43ce5bb9f1753bda0c7a203c4682dcb3b10314d3b5a284cc911fea10fda",
+      "sha256": "f441161618e20d8b6bf27a11249d0ed8b0d78d8beb9c83ef300dad3a06ee0615",
       "declarations": [
         "Becoming.Contextual.world",
         "Becoming.Contextual.world_active",
@@ -278,7 +278,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "role": "proof",
-      "sha256": "28d65c468558ff5e790dde6320a6d10919ec37032aae44f7647837759d764342",
+      "sha256": "ed96100e7b83b1e13672ae42fc4f1266bca91211df2417e4eba8a4c98b08db93",
       "declarations": [
         "Becoming.Contextual",
         "Becoming.Contextual.indexed",
@@ -293,7 +293,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
       "role": "proof",
-      "sha256": "a758d973628daaed646be595b4de92ba1ea32993b959f75ebd9a055fbf5bbc78",
+      "sha256": "d7f67ac97e0df73475890f3328aa02e0a61d8fab03308353e8961e5895427e0c",
       "declarations": [
         "Becoming.Square.no_context_free_values"
       ]
@@ -328,7 +328,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
       "role": "proof",
-      "sha256": "cf64ef01631336661d1b504e8479465499557d3f6f24f05ef1370faf971f35cb",
+      "sha256": "926c02570f38dceca3056a4d5850ed53215320bfaeece7430f7cc3a42a9b48ab",
       "declarations": [
         "Becoming.BoundaryInvariant",
         "Becoming.SubTrue",
@@ -408,21 +408,21 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Context",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Quantum",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -443,7 +443,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Boundaries",
       "success_pointer": "/status",
       "success_value": "passed"

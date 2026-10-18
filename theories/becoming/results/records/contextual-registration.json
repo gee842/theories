@@ -11,7 +11,7 @@
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "诸语境所显示者恰在语境相交处一致时粘合，不依语境的主张的框架恰在处处粘合时合；有的世界在任何配置都不粘合（Specker 的盒子；两量子比特的 Mermin–Peres 方阵）。部分失去整体有两种方式：不给回整体，或没有整体。",
-    "en": "What the contexts show glues exactly where contexts agree where they meet, and a frame of context-free claims fits exactly where it glues everywhere; some worlds glue nowhere (Specker's boxes; the two-qubit Mermin–Peres square). Parts fail a whole in two ways: they do not give it back, or there is none."
+    "en": "What contexts show glues exactly where contexts agree where they meet, and a frame of context-free claims fits exactly where it glues everywhere; some worlds glue nowhere (Specker's boxes; the two-qubit Mermin–Peres square). Parts fail a whole in two ways: they do not give it back, or there is none."
   },
   "claim": {
     "zh": "在语境中显示的主张（Contextual S K C V）：within k c 说主张 c 在语境 k 之内，shows s k c 是 k 在配置 s 处显示的 c 的值。在 s 处诸语境所显示者粘合（Contextual.Glues），指有 v : C → V 与每个语境在其内的每个主张上一致；它推出同一主张所在的任意两个语境一致（Contextual.Glues.agree），每个主张在某个语境之内时两者等价（Contextual.glues_iff_agree）。连同语境读，所显示的每一个是框架的主张（Contextual.indexed），以语境为索引的框架合于所显示的每一个（Contextual.indexed_fits）；不依语境的主张的框架合（Contextual.FitsFree），恰当诸语境所显示者在每个配置粘合（Contextual.fitsFree_iff）。语境能显示什么只取决于其内的主张（Local），没有不依语境的读法落在每个语境的可能性之内（NoGlobal）时，没有尊重可能性的配置粘合（Contextual.not_glues），只要一个配置尊重它们，就没有不依语境的主张的框架合（Contextual.no_free_frame）。整体 W 在语境中允许的（restrict）是局部的（restrict_local），W 在其部分粘合成者（Glued）之内（glued_of_whole）；部分给回整体记作 PartsDetermine；可能性非空且没有不依语境的读法时，它们不是任何整体的部分（no_whole）。Specker 的三个盒子与三次打开、打开的两个中恰有一个有宝石：可能性局部（Specker.local_），没有打开强制任何盒子（Specker.unforced），没有放置合于全部（Specker.noGlobal），每次打开都在第一个盒子显示宝石的世界尊重它们（Specker.respects）而不粘合（Specker.not_glues），它们不是任何整体的部分（Specker.no_whole）。Mermin–Peres 方阵：九格三行三列，每行与前两列的奇偶为偶，第三列为奇：可能性局部（Square.local_），没有线强制任何格（Square.unforced），没有赋值合于全部六条线（Square.nine、Square.noGlobal），它们不是任何整体的部分（Square.no_whole）。量子实现（Becoming.Quantum）：两个量子比特上的九个可观测量作为整数矩阵，每个平方为 I（obs_sq），每条线的三个两两对易（line_commute），线的乘积在第三列为 −I、否则为 I（line_product）；非零向量在一条线上共同显示的值有该线的奇偶（line_parity），是该线的一个可能（shows_support），每个可能都由一个明确的整数向量显示（line_realized、support_shown）；所以没有对九格的赋值在每条线上被量子态共同显示（no_context_free_values）。不用 Lean 公理（生成的单射引理 injEq 除外，没有源声明使用它们）。",
@@ -108,7 +108,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "role": "proof",
-      "sha256": "28d65c468558ff5e790dde6320a6d10919ec37032aae44f7647837759d764342",
+      "sha256": "ed96100e7b83b1e13672ae42fc4f1266bca91211df2417e4eba8a4c98b08db93",
       "declarations": [
         "Becoming.Contextual",
         "Becoming.Local",
@@ -175,7 +175,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
       "role": "proof",
-      "sha256": "a758d973628daaed646be595b4de92ba1ea32993b959f75ebd9a055fbf5bbc78",
+      "sha256": "d7f67ac97e0df73475890f3328aa02e0a61d8fab03308353e8961e5895427e0c",
       "declarations": [
         "Becoming.Square.q₀",
         "Becoming.Square.q₁",
@@ -271,7 +271,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
       "declarations": []
     },
     {
@@ -307,7 +307,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ParityReadings.lean",
       "role": "proof",
-      "sha256": "16bf4090c7f93e33410dfeda2ef0a1212e35bba0202ad87f3e50f05c5e19fc09",
+      "sha256": "a4fe5d397a1336f4066b21f09a91637265505ae78488326b326c9b2ec4720cb8",
       "declarations": [
         "Becoming.Contextual.FreeAt",
         "Becoming.Contextual.glues_iff_freeAt",
@@ -325,19 +325,25 @@
       "role": "receipt",
       "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "role": "receipt",
+      "sha256": "81ac9c49309a8910dbbb1872e10a1062de1a0608db9e53897ece9f83b0e7c1c1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Context",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Quantum",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -351,7 +357,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ParityReadings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ParityReadings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -524,6 +530,9 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Context.lean, ParityReadings.lean, Quantum.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T094652.463397Z after reading the change. The claim is unchanged."
     }
   ]
 }

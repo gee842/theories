@@ -11,7 +11,7 @@
 ## Laws
 
 1. Let r be a run of a process P. Relative to determinacy, the record up to a step fixes the outcome of move a at configuration s to u when every determined process admitting each step of r before it sends a at s to u. (`Becoming.Run`, `Becoming.Run.Takes`, `Becoming.Run.StepsOf`, `Becoming.Run.Fixes`, `Becoming.Determined`)
-2. Once the run has taken a at s, the record fixes it to where the run went; where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever registers: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run. (`Becoming.Run.fixes_of_takes`, `Becoming.retarget`, `Becoming.retarget_determined`, `Becoming.retarget_step`, `Becoming.Run.stepsOf_retarget`, `Becoming.Run.not_fixes_of_untaken`)
+2. Once the run has taken a at s, the record fixes it to where the run went; where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever is read: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run. (`Becoming.Run.fixes_of_takes`, `Becoming.retarget`, `Becoming.retarget_determined`, `Becoming.retarget_step`, `Becoming.Run.stepsOf_retarget`, `Becoming.Run.not_fixes_of_untaken`)
 3. So where the configuration returns, another move's outcome is fixed; with P determined and two different configurations, a run whose configurations never return fixes, at each configuration it passes, no move other than the one it takes. (`Becoming.Run.fixes_on_return`, `Becoming.Run.ordered_of_ne`, `Becoming.Run.not_fixes_other_of_new`)
 4. In the process keeping the history of configurations and moves passed through (keepHistory, the counterpart with moves of Law.withHistory) the past grows by one at each step, so every step is new; determinacy is kept; and, with P determined and two different configurations, nothing about one's own acts but what one did is fixed. (`Becoming.keepHistory`, `Becoming.Law.withHistory`, `Becoming.keepHistory_length`, `Becoming.keepHistory_new`, `Becoming.keepHistory_determined`, `Becoming.keepHistory_fixes_nothing_else`)
 5. Read through a projection π: once the run has taken a at a configuration projecting to k, the record so read fixes its outcome; where P's step factors through π into a determined process, the fixed outcome is the outcome, read through π, at every configuration projecting to k, passed by the run or not. (`Becoming.Run.StepsThrough`, `Becoming.Run.FixesThrough`, `Becoming.Run.fixesThrough_of_takes`, `Becoming.FactorsThrough`, `Becoming.Run.stepsThrough_of_factors`, `Becoming.Run.generalizes`)
@@ -34,9 +34,9 @@
 - Which projection the actual unfolding factors through is empirical.
 - Random or undetermined processes are not treated.
 - Whole configurations rarely return in practice, so the positive results in practice go through projections.
-- The formal bridge to Becoming.Testing's registration is not stated.
-- The general form of which correlation between moves and what is hidden leaves a model unrefuted is not stated.
-- **Counterexample:** A wrong projection misattributes and is never refuted: in Confound the move makes no difference, yet read through the outcome the record fixes left to false and right to true, and with the moves in step with the hidden bit the determined model in which the move decides the outcome is admitted at every step (Confound.misattributes, Confound.confounded). Only moves varied against the hidden bit refute it (Confound.varied_refutes). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+- The formal bridge to the couplings of Becoming.Testing is not stated.
+- The general form of which correlation between moves and what is hidden leaves a model never excluded is not stated.
+- **Counterexample:** A wrong projection misattributes and is never excluded: in Confound the move makes no difference, yet read through the outcome the record fixes left to false and right to true, and with the moves in step with the hidden bit the determined model in which the move decides the outcome is admitted at every step (Confound.misattributes, Confound.confounded). Only moves varied against the hidden bit exclude it (Confound.varied_refutes). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
 
 **Standard boundaries:** Contains no ethical predicate and evaluates neither arising nor ceasing. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · No ethical premise and no Lean axiom is used.
 
@@ -50,14 +50,14 @@ Canonical source: [Experiment.lean](../../../../experiments/integrated-correctio
 <a id="next--下一步"></a>
 ## Next
 
-The formal bridge with Becoming.Testing's registration as the projection (see projection-carrying-a-law and generalization-through-lumping); the general form of which correlation between moves and what is hidden leaves a model unrefuted; experiment where a forgotten part of the move makes a difference (see causal-models-as-processes).
+The formal bridge with the lumping the couplings make in Becoming.Testing as the projection (see projection-carrying-a-law and generalization-through-lumping); the general form of which correlation between moves and what is hidden leaves a model never excluded; experiment where a forgotten part of the move makes a difference (see causal-models-as-processes).
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-The open item of testing-within-registration (review F6): what an act does compares the history with it and the history without it. After that result landed Ren wrote “land and merge all, then continue”, and on the result “no extra review needed, merge, then continue”. Readings (the AI's, adopted on Ren's delegation): an experiment is varying one's own act where the configuration, as the experimenter reads it, returns; replication is that return; a control is the model that the step factors through the reading; variation independent of what is left out is the structural form of randomization; with the registration of testing-within-registration as the reading, threshold and reach blindness are cases where the step does not factor.
+The open item of testing-within-registration (review F6): what an act does compares the history with it and the history without it. After that result landed Ren wrote “land and merge all, then continue”, and on the result “no extra review needed, merge, then continue”. Readings (the AI's, adopted on Ren's delegation): an experiment is varying one's own act where the configuration, as the experimenter reads it, returns; replication is that return; a control is the model that the step factors through the reading; variation independent of what is left out is the structural form of randomization; with the couplings of testing-within-registration as the reading, what does not show below the threshold or beyond the reach is a case where the step does not factor.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -76,7 +76,7 @@ The open item of testing-within-registration (review F6): what an act does compa
   - Preserved conditions: None. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
 - related, not a proved adapter: [scientific-inquiry-foundation](scientific-inquiry-foundation.md). One part of this open target: the structural conditions of experiment, replication and control, stated on the spine; it does not establish the whole target.
 - related, not a proved adapter: [finite-fallible-inquiry-necessity](finite-fallible-inquiry-necessity.md). The periphery's information bound; here on the spine: where the record fixes what an act does.
-- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below the threshold stays where the exchange follows registration; here, with registration as the projection, blindness below the threshold is a case where the step does not factor through what registers (a reading).
+- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below the threshold stays where the exchange follows what couples in; here, with the couplings as the projection, a difference below the threshold not showing is a case where the step does not factor through what couples in (a reading).
 
 **Used by:** [a-law-through-a-projection-along-one-run](a-law-through-a-projection-along-one-run.md) · [causal-models-as-processes](causal-models-as-processes.md) · [determinacy-up-to-likeness](determinacy-up-to-likeness.md) · [process-and-frame-as-readings](process-and-frame-as-readings.md) · [projection-carrying-a-law](projection-carrying-a-law.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [where-a-move-is-formed](where-a-move-is-formed.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
 

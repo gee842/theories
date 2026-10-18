@@ -11,7 +11,7 @@
 + 两段历史被每个经选择者之耦合的选择选得相同，恰当它们经这些耦合无别。其余交换固定时选择在耦合闭包之外不见；所及闭包之内、耦合闭包之外的终结不被选出，合起来的耦合选出它；伸出而抬高耦合入者的流被选中。
 = S4 @statement/en
 - Every selection through a registration selects two histories alike exactly when they register alike. With the rest fixed, selection is blind beyond the registration closure; pooled registration selects an ending beyond it within reach, and a flow reaching beyond to raise what registers is selected.
-+ Every selection through a selector's couplings selects two histories alike exactly when they are alike through those couplings. With the rest fixed, selection is blind beyond the coupling closure; couplings pooled select an ending beyond it within reach, and a flow reaching beyond to raise what couples in is selected.
++ Every selection through a selector's couplings selects histories alike exactly when they are alike through them. With the rest fixed, selection is blind beyond the coupling closure; pooled couplings select an ending beyond it within reach, and a flow raising what couples in from beyond is selected.
 = S3 @laws/0/zh
 - 一个选择是关于水平历史的任意命题；它经一个形成直到某步之识，是指该形成直到该步识得相同的任意两段历史同被选中或同不被选中；评分经它，是指得分相等。识得相同可传递，是等价关系。
 + 一个选择是关于水平历史的任意命题；它经一个形成直到某步的耦合，是指直到该步经该形成之耦合无别的任意两段历史同被选中或同不被选中；评分经它，是指得分相等。经耦合无别可传递，是等价关系。
@@ -143,7 +143,7 @@
 + 自身动作的缺口作为一般定理：动作只在不耦合入任何耦合闭包成员的条件上不同时，经其耦合的每个选择都看不见它；偏向伸出的一般形式：抬高耦合入者的部分何时必伸出耦合闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。
 = S4 @next_delta/en
 - The gap for one's own act as a general theorem: where an act differs only on conditions no member of the registration closure registers, every selection through it misses the act; favouring reaching beyond in general: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.
-+ The gap for one's own act as a general theorem: where an act differs only on conditions coupled into no member of the coupling closure, every selection through the couplings misses the act; favouring reaching beyond in general: when a part raising what couples in must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.
++ The gap for one's own act as a general theorem: where an act differs only on conditions coupled into no member of the coupling closure, every selection through couplings misses it; favouring reaching beyond in general: when a part raising what couples in must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond.
 = S4
 - 读法（AI 的，依 Ren 的交托采用）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。
 + 读法（AI 的，依 Ren 的交托采用）：任何由耦合入选择者者决定的选择（保留、奖励、繁殖、训练）恰及耦合入选择者的，对候选者的部分在选择者耦合闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去耦合闭包，只经依存、经水平的耦合或他者的耦合合起来才合上；伸出而抬高耦合入者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及耦合入奖励的。

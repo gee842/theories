@@ -79,7 +79,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "6c2b4224dcad451ab417dc46e232a666a8693c498362c25cd573f86f40fb0212",
+      "sha256": "93c5377713eef17b5f5e06c6382180f86a5ffc1a4d60a0f138eae3d4fbfd5724",
       "declarations": [
         "Becoming.Alike.sameBranchingTests",
         "Becoming.apart_of_not_sameBranchingTests",
@@ -171,7 +171,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"

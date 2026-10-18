@@ -24,7 +24,7 @@ Canonical source: [Seeking.lean](../../../../experiments/integrated-correction/g
 - A target is any condition on the configuration; how a target forms is not modelled. rests_iff assumes a determined law; B2 assumes what stands is listed at each step, a local condition written into the theorems.
 - Discrete steps, counted from step 0; natural-number quantities.
 
-Ren on 10 October: “the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)” and “find the boundary condition for 无明”; on 11 October: “yes let's do 无明”. B1 (enough) and B2 (expansion or exhaustion) of the 无明 boundary plan are stated here; B3 (feedback) and B4 (明) are the theorems of P49, P53 and P55 read for seeking, not restated; B5 (hijacking) is not stated. Readings (the AI's, adopted on Ren's delegation): 无明 is the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and its boundary is B1; 明 is registration reaching what support does not mark; 知足 and 知止 are targets within the boundary; dominance as such is not the target ruled out. See §83 of the integration note.
+Ren on 10 October: “the seeking system got locked in, what they are pursuing is illusion(in south asia and Buddhism)” and “find the boundary condition for 无明”; on 11 October: “yes let's do 无明”. B1 (enough) and B2 (expansion or exhaustion) of the 无明 boundary plan are stated here; B3 (feedback) and B4 (明) are the theorems of P49, P53 and P55 read for seeking, not restated; B5 (hijacking) is not stated. Readings (the AI's, adopted on Ren's delegation): 无明 is the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and its boundary is B1; 明 is coupling that lets in what support does not mark; 知足 and 知止 are targets within the boundary; dominance as such is not the target ruled out. See §83 of the integration note.
 
 <a id="检验与边界-validation-and-boundaries"></a>
 ## Validation and boundaries
@@ -55,8 +55,8 @@ How a target forms or is revised, that a seeker pursues it, and which targets ac
 
 **Preserved conditions:** What stands is listed at each step. [Locality.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
-- Related, not a proved adapter: [testing-within-registration](testing-within-registration.md). Part of B3 and B4: a claim is refuted only through a difference in what registers; nothing beyond the registration closure registers.
-- Related, not a proved adapter: [runaway-distance-unregistered](runaway-distance-unregistered.md). B3: before the break, how far off it is does not register.
+- Related, not a proved adapter: [testing-within-registration](testing-within-registration.md). Part of B3 and B4: a claim is excluded only through a difference in what couples in; nothing beyond the coupling closure couples in.
+- Related, not a proved adapter: [runaway-distance-unregistered](runaway-distance-unregistered.md). B3: before the break, how far off it is does not couple in.
 - Related, not a proved adapter: [experiment-needs-return](experiment-needs-return.md). B4: what one's own act does is fixed only where the configuration returns, under a model of what is irrelevant.
 - Related, not a proved adapter: [continuing-self-fed-from-beyond](continuing-self-fed-from-beyond.md). There a finite family that keeps taking cannot, enclosed, go on fed from beyond; here rising without end needs steps at which what stands does not run down.
 
@@ -83,6 +83,7 @@ How a target forms or is revised, that a seeker pursues it, and which targets ac
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 

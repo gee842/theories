@@ -47,7 +47,7 @@ Canonical source: [Admission.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-State the margin where the rest adjust (the others' taking responding to the levels without the part): comparison-where-the-rest-responds states where the difference can go when the rest responds through its registration, not the exact margin under such a response. Compare reachability over several steps; link the comparison formally to the but-for test of Becoming.Joint.
+State the margin where the rest adjust (the others' taking responding to the levels without the part): comparison-where-the-rest-responds states where the difference can go when the rest responds through its couplings, not the exact margin under such a response. Compare reachability over several steps; link the comparison formally to the but-for test of Becoming.Joint.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 

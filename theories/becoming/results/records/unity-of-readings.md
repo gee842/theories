@@ -10,7 +10,7 @@
 <a id="laws--规律"></a>
 ## Laws
 
-1. Along a run, the registrations of a contextual system, each claim read with its context, are the relata of one world, each active exactly where it is registered with its value; as in Frame.world, nothing stands or is exchanged in it; no gluing is used, so quantum registrations are included. (`Becoming.Contextual.world`, `Becoming.Contextual.world_active`)
+1. Along a run, what a contextual system shows, each claim read with its context, are the relata of one world, each active exactly where it is shown with its value; as in Frame.world, nothing stands or is exchanged in it; no gluing is used, so what quantum measurements show is included. (`Becoming.Contextual.world`, `Becoming.Contextual.world_active`)
 2. A condition's change across a step is read by its standing, as the rise and fall of its level, and by the exchange, as what the flow gave it beyond what it took and took beyond what it gave; the two read it alike exactly where the flow balances there, so the readings glue at every step exactly where the flow balances, and a frame of context-free claims of change fits exactly then. (`Becoming.ChangeReading`, `Becoming.Flow.changeReadings`, `Becoming.sub_add_add_right`, `Becoming.sub_eq_of_add_eq`, `Becoming.add_eq_of_sub_eq`, `Becoming.changes_agree_iff`, `Becoming.Flow.changeReadings_agree_iff`, `Becoming.Flow.changeReadings_glue_iff`, `Becoming.Flow.changeReadings_glue_everywhere_iff`, `Becoming.Flow.changeReadings_free_iff`)
 3. With the rest counted the two readings glue at every step: the rest's exchange is the difference between them, counted as a relatum; the readings of every world glue at every step, its own readings glue exactly where it balances, which is exactly where the rest is never active, and the world is a run of the law of exchange whose standings are the world's. (`Becoming.Flow.changeReadings_glue_counting_rest`, `Becoming.World.unity`)
 4. Significance under the same standard of invariance (a restatement, not a new result): with the whole admissible and the presupposition boundary-invariant, it holds as the boundary is drawn somewhere exactly where the continuation of everything has significance from that standpoint; a rival bounded by a region holding the self's closure meets the standard exactly where the region is everything. (`Becoming.presupposition_iff_all_of_invariant`, `Becoming.bounded_invariant_iff`)
@@ -23,12 +23,12 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- That the readings of an unfolding glue: quantum registrations do not (Square.no_context_free_values). Witness: `Becoming.Square.no_context_free_values`.
-- The relata of Contextual.world are indexed claims, active where registered, and nothing stands or is exchanged in it: it does not show that the readings form a world with a flow and a web.
+- That the readings of an unfolding glue: what quantum measurements show does not (Square.no_context_free_values). Witness: `Becoming.Square.no_context_free_values`.
+- The relata of Contextual.world are indexed claims, active where shown, and nothing stands or is exchanged in it: it does not show that the readings form a world with a flow and a web.
 - Which readings an unfolding has.
 - That significance meets the standard of invariance, and that the presupposition holds: the two significance theorems restate Becoming.Boundaries and add no result.
 - That balance with the rest counted is a further fact: the rest is defined as the residual imbalance (Flow.withImbalance), and changes_agree_iff is an identity on the naturals.
-- **Counterexample:** The Mermin–Peres square: its registrations glue nowhere (Square.no_whole), and qubits realize it (Becoming.Quantum); by Contextual.world they are still the relata of one world. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
+- **Counterexample:** The Mermin–Peres square: what its contexts show glues nowhere (Square.no_whole), and qubits realize it (Becoming.Quantum); by Contextual.world they are still the relata of one world. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account. · States how significance relates to structure, for any significance or under the continuation condition (Unrestricted: the continuation of anything has significance); it asserts no significance and does not assert the condition.
 
@@ -55,7 +55,7 @@ Ren, 14 October 2026: “why do we need "World"? wasn't this about the whole and
 ### Dependencies
 
 - **formal-reuse**: [contextual-registration](contextual-registration.md). Reuses Contextual, Contextual.indexed, Glues, Agree, glues_iff_agree, FitsFree and fitsFree_iff.
-  - Output: Registrations in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere.
+  - Output: Claims shown in context; gluing exactly where contexts agree; a frame of context-free claims fitting exactly where they glue everywhere.
   - Input: The readings as one world; the gluing of two readings of change.
   - Preserved conditions: None. [Context.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
 - **formal-reuse**: [process-and-frame-as-readings](process-and-frame-as-readings.md). Reuses Frame.world, Frame.world_active and World.exchangeRun: claims as relata; a balanced world is a run of exchange.

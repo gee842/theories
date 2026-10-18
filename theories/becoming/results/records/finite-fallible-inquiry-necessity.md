@@ -12,7 +12,7 @@ Documentary review UTC: `2026-10-13T13:04:43.138900+00:00`. Run the registry che
 <a id="主张-claim"></a>
 ## Claim
 
-Finite weighted discrimination has commitment coverage at most two error weights plus evidence separation; readout-preserving adaptive relations cannot meet stronger service claims. Composed with native balanced courses of one law, under the stated initial-record and complete-registration conditions, coverage is at most two errors plus responsive-reach weight; entirely beyond reach, coverage equals the two errors. A test of balance: common residual exchange suffices for native beyond-reach registration and answer equality, with absolute balance as a special case; omitted exchange can preserve correct readouts while invalidating the mechanism bound, and counting the residual does not automatically restore response.
+Finite weighted discrimination has commitment coverage at most two error weights plus evidence separation; readout-preserving adaptive relations cannot meet stronger service claims. Composed with native balanced courses of one law, under the stated starting and complete-coupling conditions, coverage is at most two errors plus responsive-reach weight; entirely beyond reach, coverage equals the two errors. A test of balance: common residual exchange suffices for native beyond-reach likeness through the couplings and answer equality, with absolute balance as a special case; omitted exchange can preserve correct readouts while invalidating the mechanism bound, and counting the residual does not automatically restore response.
 
 Canonical source: [ScientificInquiryNecessity.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean)
 
@@ -22,11 +22,11 @@ Canonical source: [ScientificInquiryNecessity.lean](../../../../experiments/inte
 - Intended binary target, finite natural-weight tables and complete actually available inputs; probability interpretation additionally requires equal positive marginal totals.
 - The paired version uses a valid pairing and common reader; the direct marginal version needs no chosen coupling.
 - The adaptive conclusion uses initial relatedness, step preservation and identical readouts on related states; different state types are allowed.
-- The native composition uses balanced courses, the same formations present, matching initially registered conditions beyond responsive reach; outside the part both follow one registration-dependent exchange law, and answering factors through complete registration up to answer time.
-- The reach-weight indicator uses an explicit reach decision; the qualitative beyond-reach conclusion and exact blind identity need none. Actual target labels, paired weights and completeness of access retain correspondence obligations.
+- The native composition uses balanced courses, the same formations present, and alike initial levels of the conditions coupled in beyond responsive reach; outside the part both follow one exchange law reading through the couplings, and answering factors through everything that couples in up to answer time.
+- The reach-weight indicator uses an explicit reach decision; the qualitative beyond-reach conclusion and the exact identity entirely beyond reach need none. Actual target labels, paired weights and completeness of access retain correspondence obligations.
 - P94’s qualitative generalization replaces balance of each original flow with equality of their residual giving and taking at every step and condition; retains presence, relevant initial levels, response and complete readout conditions. This sufficient condition is not claimed minimal or necessary.
 
-The varying part, registration and response differentiate within one unfolding. The new composition derives the statistical restriction through the shared spine’s exchanges, registration closure and common-law response. The scientific achievement is independently specified by coverage and error, not acceptance of this theory. Structural reach closes exchanges over whole courses, rather than identifying a time-ordered causal path by answer time. P94 fixes the same native task and compares complete versus omitted-exchange descriptions; the missing relation is an explanatory omission, not evidence of an unrelated reality.
+The varying part, coupling and response differentiate within one unfolding. The new composition derives the statistical restriction through the shared spine’s exchanges, coupling closure and common-law response. The scientific achievement is independently specified by coverage and error, not acceptance of this theory. Structural reach closes exchanges over whole courses, rather than identifying a time-ordered causal path by answer time. P94 fixes the same native task and compares complete versus omitted-exchange descriptions; the missing relation is an explanatory omission, not evidence of an unrelated reality.
 
 <a id="检验与边界-validation-and-boundaries"></a>
 ## Validation and boundaries
@@ -42,29 +42,29 @@ Retains finite natural weights, complete inputs, a common rule and actual probab
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
 
-- **formal-reuse**: [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md). alike_beyond_response produces identical registration beyond reach; answer_alike_beyond_response consumes it to obtain identical answers without reproving the closure.
+- **formal-reuse**: [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md). alike_beyond_response produces likeness through the couplings beyond reach; answer_alike_beyond_response consumes it to obtain identical answers without reproving the closure.
 - **formal-reuse**: [counterfactual-is-the-course](counterfactual-is-the-course.md). ExchangeLaw.Through.responds derives the response premise from one law for answer_alike_beyond_law and the weighted bound.
 - **formal-reuse**: [imbalance-as-relatum](imbalance-as-relatum.md). Reuses Flow.withImbalance, withImbalance_balances and balances_iff_idle to test whether response survives balancing by representation, and to derive common residuals as a sufficient condition weaker than absolute balance.
 
-**Output:** Identical registration at every time beyond responsive reach.
+**Output:** Alike through the couplings at every time beyond responsive reach.
 
 **Input:** Identical answers supply the existing fallible coverage bound.
 
-**Preserved conditions:** Balance, the same present formations and relevant initial levels, response through registration, and a complete answering interface. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+**Preserved conditions:** Balance, the same present formations and relevant initial levels, response through the couplings, and a complete answering interface. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
 
 
-**Output:** Two courses of one registration-dependent law satisfy the response premise.
+**Output:** Two courses of one law reading through the couplings satisfy the response premise.
 
-**Input:** The response premise of beyond-reach registration and answer equality.
+**Input:** The response premise of beyond-reach likeness through the couplings and answer equality.
 
-**Preserved conditions:** The supplied law reads through registration; outside the part both courses follow it. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+**Preserved conditions:** The supplied law reads through the couplings; outside the part both courses follow it. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
 
 
 **Output:** Counting residuals balances the flow; original balance is exactly the added relatum neither giving nor taking.
 
-**Input:** The closed region includes a nonregistering added relatum; equal residual exchange on both sides permits the existing closed-region blindness theorem.
+**Input:** The closed region includes an added relatum into which nothing couples; equal residual exchange on both sides permits the existing closed-region indistinguishability theorem.
 
-**Preserved conditions:** Common present formations, relevant initial registrations, original closed region and response; the added relatum exchanges alike at every time and condition. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+**Preserved conditions:** Common present formations, relevant initial levels, original closed region and response; the added relatum exchanges alike at every time and condition. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
 
 
 **Used by:** [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [timely-response-necessity](timely-response-necessity.md) · [wisdom-root](wisdom-root.md) (interpretive)
@@ -89,6 +89,7 @@ Retains finite natural weights, complete inputs, a common rule and actual probab
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261016T120403.241963Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T063731.167536Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T095146.390681Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -114,4 +115,5 @@ Aliases: `Generative.ScientificInquiryNecessity.fallible_inquiry_bound`, `Genera
 - 16 October 2026, I5 (checker hardening; infrastructure, not a result): check_fallible_inquiry.py now uses the shared structural match of inherited receipts (a passed receipt mapping the module's name or path to its current sha256), the shared Lean resolution (`LEAN`, `elan which lean` or the default path) and `BECOMING_OUT`; its diff was read. FallibleInquiry.lean's bytes are unchanged; the rerun gives receipt 20261016T120403.241963Z (passed, 31 theorems, 37 declaration audits, the same axioms; each of the 43 inherited modules' current bytes has a passed receipt), the binding moves to it and the older receipts are kept. The claim, premises and status are unchanged; no reproof is credited.
 - 17 October 2026, wording of the public fields: the P-number P94 removed, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: FallibleInquiry.lean. Rebound to the FallibleInquiry checker's receipt 20261018T063731.167536Z after reading the change. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. Rebound to receipt 20261018T095146.390681Z after reading the change. The claim is unchanged.
 - 1 rebinding entry (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](finite-fallible-inquiry-necessity.json).

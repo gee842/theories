@@ -291,7 +291,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
       "role": "proof",
-      "sha256": "75dee026e41bd527a11595f274424e96c54a29328707e67613dd6cfe94d88b02",
+      "sha256": "2c574926d119b7977d6e5805cb5fc970b73f2dffd910ae0d78b670d8dd7137c1",
       "declarations": [
         "Becoming.Flow.SameExchange",
         "Becoming.Flow.Commuted",
@@ -458,7 +458,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
       "declarations": []
     },
     {
@@ -521,7 +521,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Order",
       "success_pointer": "/status",
       "success_value": "passed"

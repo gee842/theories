@@ -5,7 +5,7 @@
 + 有界的前段确定历程，前段长度恰好。界给定时归纳即演绎；不给定界时，按最小的界的外推从 2N − 1 起每步都对，与任何外推能做到的一样早：界给出沉默，不给出更早的静止。有限的名命名有意义的切分，不用商。
 = L-prefix @statement/en
 - A bounded record fixes the course at an exact length. With the bound given, induction is deduction; not given, the learner by the least bound is right from 2N − 1 on, as early as any learner can be: the bound buys silence, not speed. Finite names name the split that makes sense, with no quotient.
-+ A bounded prefix fixes the course at an exact length. With the bound given, induction is deduction; not given, the extrapolation by the least bound is right from 2N − 1 on, as early as any extrapolation can be: the bound buys silence, not speed. Finite names name the split that makes sense, with no quotient.
++ A bounded prefix fixes the course at an exact length. With the bound given, induction is deduction; not given, extrapolation by the least bound is right from 2N − 1 on, as early as any can be: the bound buys silence, not speed. Finite names name the split that makes sense, with no quotient.
 = L-prefix
 - 记录相等恰当历程在其长度之前相同；所以长 N + N' − 1 的记录确定历程。
 + 前段相等恰当历程在其长度之前相同；所以长 N + N' − 1 的前段确定历程。

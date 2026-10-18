@@ -232,8 +232,8 @@
           "en": "Withheld levels and the arithmetic identity of withholding."
         },
         "input": {
-          "zh": "Flow.Balances.agrees_iff_even、admits_unreached_before 与 unregistered_beyond_influence。",
-          "en": "Flow.Balances.agrees_iff_even, admits_unreached_before and unregistered_beyond_influence."
+          "zh": "Flow.Balances.agrees_iff_even、admits_unreached_before 与 uncoupled_beyond_influence。",
+          "en": "Flow.Balances.agrees_iff_even, admits_unreached_before and uncoupled_beyond_influence."
         },
         "conditions": {
           "zh": "平衡。",
@@ -417,7 +417,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",

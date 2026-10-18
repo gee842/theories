@@ -1,6 +1,6 @@
 """Record where-a-level-couples, read by sense (N6), following the chapter's LevelCoupling paragraph."""
 REC=('where-a-level-couples',[
-("S2","@statement/en","A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels that couple in respond; by threshold only a crossing passes, through the conjunction of the needs, and coupling by level is exactly where a level can couple within its need."),
+("S2","@statement/en","An exchange's response to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels coupled in respond; by threshold only a crossing passes, through the needs' conjunction, and coupling by level is exactly where a level couples within its need."),
 ("S2","@statement/zh","交换对一个水平的回应是律的每个强度阵列的耦合。对经耦合而读的律，只有耦合入的水平被回应；经阈只有跨越得过，且经所需之合取，经水平耦合恰是水平能在所需之内耦合之处。"),
 ("S2","@laws/1/en","Only what couples into a formation responds: for a law reading through the couplings, a level that couples into a formation outside the part neither by threshold nor by level is coupled into its exchanges with strength zero. A response thus comes from a condition that couples in (as a double negation), is read in every schedule covering what couples in, and is a route of reading and of the law's strengths restricted to that schedule."),
 ("S2","@laws/1/zh","只有耦合入形成者才被回应：对一个律，若它对部分之外的每个形成只读耦合入该形成者，则既不经阈也不经水平耦合入形成的水平，在每一步以强度零耦合入它与每个条件的交换；所以回应来自耦合入的条件（以双重否定），并在覆盖耦合入者的每个时程中被读，是 Becoming.Observation 的所读路线的耦合，也是律的强度限于该时程后的路线。"),

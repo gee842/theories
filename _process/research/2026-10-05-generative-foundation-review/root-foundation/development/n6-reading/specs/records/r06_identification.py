@@ -1,7 +1,7 @@
 """Record identification-where-bounded, read by sense (N6); the record id stays; retired Lean names follow RENAME-TABLE."""
 REC=('identification-where-bounded',[
 ("L-prefix","@statement/zh","有界的前段确定历程，前段长度恰好。界给定时归纳即演绎；不给定界时，按最小的界的外推从 2N − 1 起每步都对，与任何外推能做到的一样早：界给出沉默，不给出更早的静止。有限的名命名有意义的切分，不用商。"),
-("L-prefix","@statement/en","A bounded prefix fixes the course at an exact length. With the bound given, induction is deduction; not given, the extrapolation by the least bound is right from 2N − 1 on, as early as any extrapolation can be: the bound buys silence, not speed. Finite names name the split that makes sense, with no quotient."),
+("L-prefix","@statement/en","A bounded prefix fixes the course at an exact length. With the bound given, induction is deduction; not given, extrapolation by the least bound is right from 2N − 1 on, as early as any can be: the bound buys silence, not speed. Finite names name the split that makes sense, with no quotient."),
 ("L-prefix","记录相等恰当历程在其长度之前相同；所以长 N + N' − 1 的记录确定历程。","前段相等恰当历程在其长度之前相同；所以长 N + N' − 1 的前段确定历程。"),
 ("L-prefix","records are equal exactly where the courses agree before their length; so the record before N + N′ − 1 fixes the course.","prefixes are equal exactly where the courses agree before their length; so the prefix before N + N′ − 1 fixes the course."),
 ("L-prefix","@laws/3/zh","给出两个值：对每个 T，一个状态的历程与至多 T + 1 个状态的历程长 T 的前段相同而在 T 不同；对每个 M，两个至多 M + 2 个状态的历程长 M + M + 2 的前段相同而在那里不同。对每一对 M、M′，至多 M + 1 与至多 M′ + 1 个状态的两个历程，长 M + M′ 的前段相同而在第 M + M′ 步不同：长度 N + N′ − 1 对每一对界恰好。"),

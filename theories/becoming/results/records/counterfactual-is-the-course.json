@@ -219,8 +219,8 @@
       "en": "Feasibility of the course (ExchangeLaw.Feasible) is a hypothesis of comparison_with_act, counterfactual_is_course and ExchangeLaw.course_unique; course_balances_iff proves it equivalent to the generated flow's balance."
     },
     {
-      "zh": "敏感的形式（alike_of_sensitive_agree、through_of_observed、through_sensitive、comparison_through_sensitivity）假设条件有限：一个列表含每个条件，并且条件的相等可判定；只判定两个数是否相等，不判定敏感；registers_of_sensitive 的结论是双重否定。",
-      "en": "The sensitivity forms (alike_of_sensitive_agree, through_of_observed, through_sensitive, comparison_through_sensitivity) assume finitely many conditions, a list holding every condition, and decidable equality of conditions; only whether two numbers are equal is decided, never sensitivity; registers_of_sensitive concludes a double negation."
+      "zh": "敏感的形式（alike_of_sensitive_agree、through_of_observed、through_sensitive、comparison_through_sensitivity）假设条件有限：一个列表含每个条件，并且条件的相等可判定；只判定两个数是否相等，不判定敏感；couples_of_sensitive 的结论是双重否定。",
+      "en": "The sensitivity forms (alike_of_sensitive_agree, through_of_observed, through_sensitive, comparison_through_sensitivity) assume finitely many conditions, a list holding every condition, and decidable equality of conditions; only whether two numbers are equal is decided, never sensitivity; couples_of_sensitive concludes a double negation."
     },
     {
       "zh": "比较的定律如 comparison-where-the-rest-responds：实际的流全局平衡（Flow.Balances）、两个流的在场形成每步相同、起始相同；意义 sig 是给定的，覆盖写成双重否定。",
@@ -509,8 +509,8 @@
     {
       "id": "sensitivity-is-the-least-registration",
       "detail": {
-        "zh": "回答其下一步：凡律在每个历史下读有限多个条件，无论条件多少，敏感都是最小的耦合（ExchangeLaw.ReadsFinitely.least_coupling），条件有限的情形（ExchangeLaw.Nonanticipating.through_sensitive）是其实例；条件无穷多时这一条件不能去掉（tailLaw_no_least_registration，给定消失之判定），条件编号时每个反例都给出弱有限全知原则（wlpo_of_not_through_sensitive）。",
-        "en": "Answers its next step: wherever the law reads finitely many conditions under each history, sensitivity is the least coupling with any number of conditions (ExchangeLaw.ReadsFinitely.least_coupling), the finite case (ExchangeLaw.Nonanticipating.through_sensitive) being its instance; with infinitely many conditions this cannot be dropped (tailLaw_no_least_registration, given the decision of vanishing), and with numbered conditions every counterexample gives the weak limited principle of omniscience (wlpo_of_not_through_sensitive)."
+        "zh": "回答其下一步：凡律在每个历史下读有限多个条件，无论条件多少，敏感都是最小的耦合（ExchangeLaw.ReadsFinitely.least_coupling），条件有限的情形（ExchangeLaw.Nonanticipating.through_sensitive）是其实例；条件无穷多时这一条件不能去掉（tailLaw_no_least_coupling，给定消失之判定），条件编号时每个反例都给出弱有限全知原则（wlpo_of_not_through_sensitive）。",
+        "en": "Answers its next step: wherever the law reads finitely many conditions under each history, sensitivity is the least coupling with any number of conditions (ExchangeLaw.ReadsFinitely.least_coupling), the finite case (ExchangeLaw.Nonanticipating.through_sensitive) being its instance; with infinitely many conditions this cannot be dropped (tailLaw_no_least_coupling, given the decision of vanishing), and with numbered conditions every counterexample gives the weak limited principle of omniscience (wlpo_of_not_through_sensitive)."
       }
     },
     {
@@ -525,7 +525,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "dabb239082e3ea10b17c9d1054837c36292f01d30d05d5981435526874b4babb",
+      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.AgreeUpTo",
@@ -604,7 +604,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
       "role": "proof",
-      "sha256": "8e285d9a8b1952b58668e2dbd2f51f23598a40cdb6bb2f96271986ab6372a842",
+      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289",
       "declarations": [
         "Becoming.Flow.RespondsThroughCoupling",
         "Becoming.Flow.WithinResponse",
@@ -632,7 +632,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "ce0cbaa9eae78046d860abeb963b0eab87d8981451044ed9bb85d2fb66ab5b68",
+      "sha256": "afa3fa23f606a59e8b9578a3ba2046c136d2b4cb7310f29dff1cf5e020388d09",
       "declarations": [
         "Becoming.inputs",
         "Becoming.trajectory",
@@ -725,7 +725,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
       "declarations": []
     },
     {
@@ -786,14 +786,14 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Response",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -807,7 +807,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"

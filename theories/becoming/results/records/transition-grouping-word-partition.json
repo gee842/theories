@@ -177,7 +177,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "role": "proof",
-      "sha256": "a0470cd471a7d4b1cdc18854121931773415c7e9e8d005e9e27910ad27993995",
+      "sha256": "a270630c90893b96d3ddf42073412d0bbfaa97cf66ffebf9c56d8129edcac732",
       "declarations": [
         "Becoming.Courses.course_words_iff",
         "Becoming.Courses.course_chunks_iff",
@@ -241,7 +241,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"

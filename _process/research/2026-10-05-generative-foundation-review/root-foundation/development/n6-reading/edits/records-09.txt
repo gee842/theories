@@ -5,7 +5,7 @@
 + 凡一个过程的运行经映射是同一历程之处，配置数为 N 时，前段从 2N − 1 起确定它，与确定的律一样。在分开之处，没有外推，无论被给予什么（过程在内），在两个运行上都对；列出、可判定的过程中，依过程所建的外推恰在不分开之处都对。
 = L-built @statement/en
 - Wherever the runs of a process register one course, a record fixes it from 2N − 1 on with N configurations, as for determined laws. At a parting no learner, whatever it is given, is right on both runs; for listed, decided processes a learner given the world is right exactly where none part.
-+ Wherever the runs of a process have one course through the map, a prefix fixes it from 2N − 1 on with N configurations, as for determined laws. At a parting no extrapolation, whatever it is given, is right on both runs; for listed, decided processes the extrapolation built from the process is right exactly where none part.
++ Wherever a process's runs have one course through the map, a prefix fixes it from 2N − 1 on with N configurations. At a parting no extrapolation, whatever it is given, is right on both runs; for listed, decided processes the one built from the process is right exactly where none part.
 = L-prefix @laws/0/zh
 - 两个运行在某步之前所识相同、在该步不同，即在该步分开；两者在该步之前的记录是同一个，所以没有学习者，无论被给予什么，在两者上都对；在从一个配置出发的每个运行上从 T 起都对的学习者，使这些运行在 T 之后不分开。
 + 两个运行在某步之前经映射取同一值、在该步取不同值，即在该步分开；两者在该步之前的前段是同一个，所以没有外推，无论被给予什么，在两者上都对；在从一个配置出发的每个运行上从 T 起都对的外推，使这些运行在 T 之后不分开。

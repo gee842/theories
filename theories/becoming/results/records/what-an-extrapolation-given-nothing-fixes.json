@@ -164,7 +164,7 @@
         "Becoming.Learning.unroll",
         "Becoming.Learning.unroll_prefix"
       ],
-      "sha256": "e1f475c25fd877b0ccf8006a5eb06ceb909ad00150fd9ace8b55cc3dad5d3cd0"
+      "sha256": "e476d5a3ad43ef8aefb3ac01b1a5eed955ad078d4df46b71a8ef9fb181be6245"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T070401.460540Z/verification.json",
@@ -185,12 +185,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
       "role": "provenance",
       "sha256": "25097d7f8769b032c043cc12396930cdecc2f50d62b7cd5496583388f54d55ea"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "role": "receipt",
+      "sha256": "81ac9c49309a8910dbbb1872e10a1062de1a0608db9e53897ece9f83b0e7c1c1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unrolling.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T070401.460540Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unrolling",
       "success_pointer": "/status",
       "success_value": "passed"

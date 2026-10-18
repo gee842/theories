@@ -5,7 +5,7 @@
 
 `exchanges-commute-unless-joined` · **recorded-checked** · theorem · F01 · [record](exchanges-commute-unless-joined.json) · [register](../../../../RESULTS.md)
 
-> Where sides split two steps, swapping the exchanges keeps balance, dissipation, embodiment, totals and counts, under any number of such commutations too; the order registers through a shared relatum or a dependence.
+> Where sides split two steps, swapping the exchanges keeps balance, dissipation, embodiment, totals and counts, under any number of such commutations too; the order shows through a shared relatum or a dependence.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -15,7 +15,7 @@
 3. Balance, dissipation and embodiment hold of the commuted world exactly where they hold of the world: the standing amounts exchange (Exchanged), their rises and falls changing places. (`Becoming.World.commute`, `Becoming.World.commute_laws`, `Becoming.Flow.Commuted.balances_iff`, `Becoming.Flow.Commuted.dissipative_iff`, `Becoming.Web.Commuted.embodied`, `Becoming.Flow.Balances`, `Becoming.Flow.Dissipative`, `Becoming.Web.Embodied`)
 4. Over any stretch holding both steps, the counts of a finite family's arising and ceasing (with activity decided in both worlds), the rises and falls of a family's total standing and the steps at which it falls are those of the world. (`Becoming.World.commute_counts`)
 5. Repeated, the commutations generate Reorders, which keeps balance, dissipation and embodiment and, over a stretch holding every commuted pair, the totals: Mazurkiewicz trace equivalence, with independence of two consecutive exchanges taken as sides splitting them. (`Becoming.Reorders`, `Becoming.Reorders.laws`, `Becoming.Reorders.totals`)
-6. The order registers through dependence and through a shared relatum, each with a witness. Activity needing support holds after commuting where no dependence crosses the sides; in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support. (`Becoming.Web.Dependent`, `Becoming.Web.commute_dependent`, `Becoming.Crossing.world`, `Becoming.Crossing.split`, `Becoming.Crossing.order_registers`)
+6. The order shows through dependence and through a shared relatum, each with a witness. Activity needing support holds after commuting where no dependence crosses the sides; in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support. (`Becoming.Web.Dependent`, `Becoming.Web.commute_dependent`, `Becoming.Crossing.world`, `Becoming.Crossing.split`, `Becoming.Crossing.order_registers`)
 7. Only active relata giving holds after commuting where no relatum giving has its activity begun by the first step or ended by the second; in Arising the relatum arising across the first step gives across the second, and in the other order gives before it is active. (`Becoming.Flow.Acting`, `Becoming.Flow.Commuted.acting`, `Becoming.Arising.world`, `Becoming.Arising.split`, `Becoming.Arising.order_registers`)
 8. With a footprint saying which relata each exchange touches and containing the exchanges, commuting neighbouring exchanges not joined is a step of Reorders with the footprint as sides, and any number of such commutations keeps every premise in both directions, activity needing support, only active relata giving and taking and bounded transmission with the same bound among them. (`Becoming.Footprinted`, `Becoming.Footprinted.Contains`, `Becoming.Footprinted.Joined`, `Becoming.Footprinted.split`, `Becoming.Footprinted.reorder_premises`, `Becoming.Flow.Taking`, `Becoming.Flow.TransmitsWithin`)
 9. Along any Reorders, joined commutations included, the counts of arising and ceasing over a stretch holding every commuted pair are kept where activity is decided in both worlds. (`Becoming.Reorders.counts`)
@@ -57,7 +57,7 @@ Unbounded reorderings and continuous-time correspondence remain open; the least 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-Reading (the AI's, adopted on Ren's delegation): within the order, what registers is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that makes this exact is in order-of-exchanges-is-the-invariant.
+Reading (the AI's, adopted on Ren's delegation): within the order, what shows is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that makes this exact is in order-of-exchanges-is-the-invariant.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies

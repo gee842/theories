@@ -1,7 +1,7 @@
 """Record identification-where-runs-part, read by sense (N6); the record id stays; retired Lean names follow RENAME-TABLE."""
 REC=('identification-where-runs-part',[
 ("L-built","@statement/zh","凡一个过程的运行经映射是同一历程之处，配置数为 N 时，前段从 2N − 1 起确定它，与确定的律一样。在分开之处，没有外推，无论被给予什么（过程在内），在两个运行上都对；列出、可判定的过程中，依过程所建的外推恰在不分开之处都对。"),
-("L-built","@statement/en","Wherever the runs of a process have one course through the map, a prefix fixes it from 2N − 1 on with N configurations, as for determined laws. At a parting no extrapolation, whatever it is given, is right on both runs; for listed, decided processes the extrapolation built from the process is right exactly where none part."),
+("L-built","@statement/en","Wherever a process's runs have one course through the map, a prefix fixes it from 2N − 1 on with N configurations. At a parting no extrapolation, whatever it is given, is right on both runs; for listed, decided processes the one built from the process is right exactly where none part."),
 ("L-prefix","@laws/0/zh","两个运行在某步之前经映射取同一值、在该步取不同值，即在该步分开；两者在该步之前的前段是同一个，所以没有外推，无论被给予什么，在两者上都对；在从一个配置出发的每个运行上从 T 起都对的外推，使这些运行在 T 之后不分开。"),
 ("L-prefix","@laws/0/en","Two runs part at a step where they take one value through the map before it and different values at it; their prefixes before it are one, so no extrapolation, whatever it is given, is right on both; an extrapolation right from T on, on every run from a configuration, leaves no two of those runs parting from T on."),
 ("S1","@laws/1/zh","经映射的值可判定时，从一个配置出发没有两个运行分开，恰当它们经映射的是同一历程。"),

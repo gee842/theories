@@ -153,7 +153,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "role": "proof",
-      "sha256": "28d65c468558ff5e790dde6320a6d10919ec37032aae44f7647837759d764342",
+      "sha256": "ed96100e7b83b1e13672ae42fc4f1266bca91211df2417e4eba8a4c98b08db93",
       "declarations": [
         "Becoming.pooledLaw",
         "Becoming.InOne",

@@ -120,7 +120,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
       "role": "proof",
-      "sha256": "5a2ba29f2a623d8040aca86e29c88d8dfde639686ed13cb02f26035df7159e80",
+      "sha256": "324c7db4346f4e68afa634ed780cd52ccb6447c27106a9693c871263635417df",
       "declarations": [
         "Becoming.Copying.built_iff",
         "Becoming.Copying.required",
@@ -178,6 +178,12 @@
       "role": "receipt",
       "sha256": "6fe0e3ab38330703d0f751cff0e2dde91877f7f1bca06dc0c5065c1b21c6be17",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "role": "receipt",
+      "sha256": "81ac9c49309a8910dbbb1872e10a1062de1a0608db9e53897ece9f83b0e7c1c1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -190,7 +196,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Copying",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -291,6 +297,9 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Copying.lean. Rebound to receipt 20261018T094652.463397Z after reading the change. The claim is unchanged."
     }
   ]
 }

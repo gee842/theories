@@ -11,7 +11,7 @@
 + 经映射的未来相同的配置给每个外推同样的前段。被列表所持的世界中，某个外推在每个配置上于特征静止，恰当这样的配置其特征从某步起一致；律使每个配置不变时，恰当特征经映射之归并同去。
 = L-feature @statement/en
 - Configurations with the same registered future give every learner the same record. In a world a list holds, some learner rests on a target everywhere exactly where such configurations have targets agreeing from some step on; under a still law, exactly where it goes alike across the registration.
-+ Configurations with the same future through the map give every extrapolation the same prefix. In a world a list holds, some extrapolation rests on a feature everywhere exactly where such configurations have features agreeing from some step on; under a still law, exactly where the feature goes alike across the map's lumping.
++ Configurations with one future through the map give every extrapolation the same prefix. In a listed world, some extrapolation rests on a feature everywhere exactly where such configurations have features eventually agreeing; under a still law, exactly where the feature respects the lumping.
 = L-feature @laws/0/zh
 - 学习者从所识的记录主张目标：由配置出发之轨道的所识历程（course）；从第 T 步起每步主张目标即从 T 起静止（RestsFrom），某个 T 存在即静止（Rests）。
 + 外推从经映射之历程的前段提出特征之值：由配置出发之轨道经映射的历程（course）；从第 T 步起每步提出特征之值即从 T 起静止（RestsFrom），某个 T 存在即静止（Rests）。

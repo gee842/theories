@@ -10,7 +10,7 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-18T09:00:00+00:00",
   "statement": {
-    "en": "A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels that couple in respond; by threshold only a crossing passes, through the conjunction of the needs, and coupling by level is exactly where a level can couple within its need.",
+    "en": "An exchange's response to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels coupled in respond; by threshold only a crossing passes, through the needs' conjunction, and coupling by level is exactly where a level couples within its need.",
     "zh": "交换对一个水平的回应是律的每个强度阵列的耦合。对经耦合而读的律，只有耦合入的水平被回应；经阈只有跨越得过，且经所需之合取，经水平耦合恰是水平能在所需之内耦合之处。"
   },
   "laws": [
@@ -325,7 +325,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
       "role": "proof",
-      "sha256": "c37b6ed5d2e4084deb7235e42bb68266a6764d6217bca87dd6f4aabc4b8927e8",
+      "sha256": "56c179545753c1bb0c58115cf658fb786c4440a2001616724bee451b7fcbdee1",
       "declarations": [
         "Becoming.ExchangeLaw.RespondsTo",
         "Becoming.ExchangeLaw.respondsWithin_zero_iff",
@@ -373,7 +373,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "24cc36ce159b4ee8c7216666bcdca13a59360a37c37ae89732fa1c77d26b9685",
+      "sha256": "0a07620f53e13a4e3a8cbf473f6c7e395fe797520458acff457df65bb592f529",
       "declarations": [
         "Becoming.ExchangeLaw.RespondsWithin",
         "Becoming.ExchangeLaw.exchangeGap",
@@ -393,7 +393,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
       "role": "proof",
-      "sha256": "4f16019d3f1e0f8f39818a0788c8fc6d13ac52aef3bd1cde67e75358c8391139",
+      "sha256": "29cd8691e1b4f8e5b141befb4b35c77139bd1d5ec79f9a12ea882a9d202fd372",
       "declarations": [
         "Becoming.Upstream.single",
         "Becoming.readCouplings",
@@ -405,7 +405,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
       "role": "proof",
-      "sha256": "2c12b45c91e455818f7a59c618f6069055dd76a8fbb5946b99597658a1c41945",
+      "sha256": "b048cc4bd0ad17c402cfe65a6419f23c33f18248f9af75ef24138794bc541d77",
       "declarations": [
         "Becoming.ExchangeLaw.Through.readsAt",
         "Becoming.ExchangeLaw.ReadsAt.respondsWithin_unread"
@@ -424,7 +424,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "dabb239082e3ea10b17c9d1054837c36292f01d30d05d5981435526874b4babb",
+      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.ExchangeLaw.Through"
@@ -471,14 +471,14 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LevelCoupling",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -492,14 +492,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Observation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Thresholds",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -513,7 +513,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"

@@ -68,13 +68,14 @@ Boundary source: [RecurrentAssembly.lean](../../../../experiments/integrated-cor
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T092443.150338Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
 <a id="复用与下一增量-reuse-and-next-delta"></a>
 ## Reuse and next delta
 
-Fixed-law recurrence and added template copying are complete; formed-copying-registration further joins local registration formation, leaving physical discrimination, renewed supply and shared allocation to explain.
+Fixed-law recurrence and added template copying are complete; formed-copying-registration further joins local contact formation, leaving physical discrimination, renewed supply and shared allocation to explain.
 
 Aliases: `RecurrentAssembly.prepared_repeated_generation`, `Becoming.Copying.doubling_iff`, `Becoming.CopyingInstances.grow_iff`, `Becoming.CopyingInstances.rounds_mature_iff`, `Becoming.CopyingInstances.grow_strand_iff`, `Becoming.CopyingInstances.mature_strand_iff`
 
@@ -89,4 +90,5 @@ Aliases: `RecurrentAssembly.prepared_repeated_generation`, `Becoming.Copying.dou
 - 2026-10-14: under the general-law audit of older records, the claim now states the law first (the copying and doubling laws of the new core module Becoming.Copying): end attachment is the core copy of the alternating word with unit draws, so chain growth and the mature chain are equivalences; a new support invariant (one unit per attachment and per cleavage) gives the equivalence for n rounds reaching k·2^n mature chains, the old supported_rounds being its sufficient side and partial_failure_keeps_material its failing side. Periphery CopyingInstances; built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
 - 14 October 2026, open-issues plan (study section 116): chain growth and the forming of the mature chain now hold bonds included: end attachment keeps the bonds the path on the tokens (attach_path_shaped), so grow_iff and mature_forms_iff hold of the whole strand (grow_strand_iff, mature_strand_iff). With Copying.lean and CopyingInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged).
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Copying.lean. Rebound to receipt 20261018T094652.463397Z after reading the change. The claim is unchanged.
 - 14 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](recurrent-chain-assembly.json).

@@ -33,7 +33,7 @@
 - One course does not fix whose move it is: one course is admitted by the part's law of the move and by the rest's. Witness: `Becoming.TwoClocks.one_course_two_laws`.
 - Being closed against the rest does not imply that the move is one's own. Witness: `Becoming.TwoClocks.closed_not_own`.
 - Which successor a law that is not determined takes: the coupling forms the move, not the successor.
-- How much of a move a part forms (a measure of coupling); the counterfactual's act read through the part's own registration (ExchangeLaw.Through is stated for the formations outside the part); continuous time.
+- How much of a move a part forms (a measure of coupling); the counterfactual's act read through the part's own couplings (ExchangeLaw.Through is stated for the formations outside the part); continuous time.
 - That "one move, two sides" goes beyond the definition: part_act_eq_rest_act holds by rfl; the content is in which laws admit the move (one_course_two_laws, closed_not_own) and when a course fixes whose it is. Witness: `Becoming.Run.part_act_eq_rest_act`.
 - **Counterexample:** Parity: the move is whether the part and the rest differ; along the course it is formed through neither the part's configurations nor the rest's, only through the joint configuration: not every move is one side's. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean)
 
@@ -49,7 +49,7 @@ Canonical source: [Coupling.lean](../../../../experiments/integrated-correction/
 <a id="next--下一步"></a>
 ## Next
 
-The part's share of a move stated on this record's runs; the counterfactual's act read through the part's own registration; what forms the successor of a law that is not determined; continuous time; an independent review.
+The part's share of a move stated on this record's runs; the counterfactual's act read through the part's own couplings; what forms the successor of a law that is not determined; continuous time; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 

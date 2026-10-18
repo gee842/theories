@@ -8,7 +8,7 @@
 + 对相同已定的备择与给每个备择任何种类条目的映射：两个备择被每个经映射的选择选得相同，恰当映射使二者并列；至多选一个备择的这种选择能选出 k，恰当没有别的备择的条目等于 k 的。
 = ALT @statement/en
 - For options with decided equality and a model giving each an entry of any kind: two options are selected alike by every selection through the model exactly when the model ties them, and such a selection selecting at most one option can select k exactly when no other option's entry equals k's.
-+ For alternatives with decided equality and a map giving each an entry of any kind: two alternatives are selected alike by every selection through the map exactly when the map ties them, and such a selection selecting at most one alternative can select k exactly when no other alternative's entry equals k's.
++ For alternatives with decided equality and a map giving each an entry of any kind: two are selected alike by every selection through the map exactly when the map ties them, and such a selection selecting at most one alternative can select k exactly when no other alternative's entry equals k's.
 = ALT @laws/0/zh
 - 交换两个选项（swap）是对合。选择、取值与选取经模型：交换两个选项的条目，即交换所选者、所取的值或所选取者。交换两个并列的选项，模型不变。
 + 交换两个备择（swap）是对合。选择、取值与选取经映射：交换两个备择的条目，即交换所选者、所取的值或所选取者。交换两个并列的备择，映射不变。

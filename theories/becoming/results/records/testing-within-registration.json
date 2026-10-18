@@ -152,8 +152,8 @@
       "en": "Coupling: support and the levels of the conditions coupled in by level (obs, a parameter); activity is supplied by the representation and is not counted as coupled in. Exclusion is by one formation, at a step, under one level history; a claim is any proposition about level histories."
     },
     {
-      "zh": "形成自身的立着是否算作耦合入者（Ren 的第 4 问，当时问的是“是否被识”）由 AI 探索后决定：基础只有支持耦合入（supportOnly）；一类读法中自身的立着经承担自身（Web.SelfBearing）经阈耦合入；量度自身（ownStanding）是经水平耦合的前提。理由见整合文档。",
-      "en": "Whether a formation's own standing counts as coupled in (Ren's question 4, asked then as whether it is registered) was decided by the AI after exploring the options: only support couples into the base (supportOnly); in the one-kind reading own standing couples in by threshold through self-bearing (Web.SelfBearing); a gauge of oneself (ownStanding) is a premise of coupling by level. The reasons are in the integration note."
+      "zh": "形成自身的立着是否算作耦合入者（Ren 的第 4 问，当时问的是“是否被识”）由 AI 探索后决定：基础只有支持耦合入（thresholdOnly）；一类读法中自身的立着经承担自身（Web.SelfBearing）经阈耦合入；量度自身（ownStanding）是经水平耦合的前提。理由见整合文档。",
+      "en": "Whether a formation's own standing counts as coupled in (Ren's question 4, asked then as whether it is registered) was decided by the AI after exploring the options: only support couples into the base (thresholdOnly); in the one-kind reading own standing couples in by threshold through self-bearing (Web.SelfBearing); a gauge of oneself (ownStanding) is a premise of coupling by level. The reasons are in the integration note."
     },
     {
       "zh": "见证的结论：各见证的流、网与模型（Clearing、Prey、Stationary）。",

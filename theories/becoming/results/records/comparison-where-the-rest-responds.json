@@ -11,7 +11,7 @@
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
     "zh": "部分之外的形成都经自己的耦合回应时，两个流的比较在部分的回应所及之内决定：两个流经其外每个形成的耦合无别、它交换相同，差别到不了它；只有支持耦合入时，回应所及是所及闭包之并。",
-    "en": "Where every formation outside a part responds through its couplings, comparing two flows is decided within the part's responsive reach: beyond it the flows are alike through each formation's couplings, it exchanges alike, and the difference never arrives; where only support couples in, that reach is the union of the reach closures."
+    "en": "Where every formation outside a part responds through its couplings, two flows compare within its responsive reach: beyond it they are alike through the couplings, the part exchanges alike, and the difference never arrives; where only support couples in, the reach is the union of reach closures."
   },
   "laws": [
     {
@@ -277,8 +277,8 @@
       "id": "testing-within-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Flow.CoupledFrom、Flow.CoupledFromEither、Flow.WithinCoupling、supportOnly、Web.CoupledInto、Web.AlikeThroughUpTo、Flow.exchange_agrees_within 与 Flow.withheld_eq_of_false；限定是 Flow.alike_within_closed 以回应所及之外为区域的实例。",
-        "en": "Reuses Flow.CoupledFrom, Flow.CoupledFromEither, Flow.WithinCoupling, supportOnly, Web.CoupledInto, Web.AlikeThroughUpTo, Flow.exchange_agrees_within and Flow.withheld_eq_of_false; the confinement is the instance of Flow.alike_within_closed whose region is what lies beyond the responsive reach."
+        "zh": "复用 Flow.CoupledFrom、Flow.CoupledFromEither、Flow.WithinCoupling、thresholdOnly、Web.CoupledInto、Web.AlikeThroughUpTo、Flow.exchange_agrees_within 与 Flow.withheld_eq_of_false；限定是 Flow.alike_within_closed 以回应所及之外为区域的实例。",
+        "en": "Reuses Flow.CoupledFrom, Flow.CoupledFromEither, Flow.WithinCoupling, thresholdOnly, Web.CoupledInto, Web.AlikeThroughUpTo, Flow.exchange_agrees_within and Flow.withheld_eq_of_false; the confinement is the instance of Flow.alike_within_closed whose region is what lies beyond the responsive reach."
       },
       "interface": {
         "output": {
@@ -423,7 +423,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
       "role": "proof",
-      "sha256": "8e285d9a8b1952b58668e2dbd2f51f23598a40cdb6bb2f96271986ab6372a842",
+      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289",
       "declarations": [
         "Becoming.WithinClosure.converse",
         "Becoming.Flow.WithinResponse",
@@ -516,7 +516,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "dabb239082e3ea10b17c9d1054837c36292f01d30d05d5981435526874b4babb",
+      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e",
       "declarations": [
         "Becoming.ExchangeLaw.Through.responds",
         "Becoming.ExchangeLaw.Nonanticipating.through_all",
@@ -541,7 +541,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
       "declarations": []
     },
     {
@@ -602,7 +602,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Response",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -630,7 +630,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"

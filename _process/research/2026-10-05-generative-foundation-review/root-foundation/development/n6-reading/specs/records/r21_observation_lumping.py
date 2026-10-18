@@ -1,7 +1,7 @@
 """Records observation-is-a-route (what a difference reaches lies within the downstream; following Becoming.Observation; the measurement's record stays) and generalization-through-lumping, read by sense (N6)."""
 RECS=[('observation-is-a-route',[
 ("S2","@statement/zh","一个储量之差只往它的下游去；对每个读入每个条件的律，只在储量上不同的进程在其下游之外都相同，所以储量只能经形成所读的、在储量下游的水平耦合入它，经水平耦合入是长度为零的路线；路线由闭合而形成。"),
-("S2","@statement/en","A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so the stock can couple into a formation only through a level the formation reads downstream, coupling in by level being the route of length zero; a route forms by closing."),
+("S2","@statement/en","A stock's difference goes only downstream; for every law reading into each condition, courses apart only in the stock are alike off its downstream, so the stock couples into a formation only through a level it reads downstream (coupling by level: the route of length zero); routes form by closing."),
 ("S2","读一个时程的律是对所有条件读得一样的特例，经识而读的律也是；","读一个时程的律是对所有条件读得一样的特例，经耦合而读的律也是；"),
 ("S2","and so is a law reading through a registration;","and so is a law reading through a coupling;"),
 ("S2","@laws/3/zh","差所到之处在下游之内：对每个读入每个条件一个时程、所读水平列出的律，两个平衡的进程在场的形成相同、部分动作相同、其余遵从律，起始只在一个储量上不同时，在每一步凡不在储量下游（按到那一步形成的所读路线）的条件都相同；所以一个形成所读入的水平都不在下游时它的交换相同，经耦合而读的律中耦合入的都不在下游时也是。经水平耦合入的储量是长度为零的路线。"),

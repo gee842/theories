@@ -2,7 +2,7 @@
 ### record:where-a-level-couples
 = S2 @statement/en
 - A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through registration only registered levels couple; by threshold only a crossing passes, through the conjunction of the needs, and observing is exactly where a level can couple within its need.
-+ A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels that couple in respond; by threshold only a crossing passes, through the conjunction of the needs, and coupling by level is exactly where a level can couple within its need.
++ An exchange's response to one level is a coupling of every strength array of the law. For a law reading through the couplings only levels coupled in respond; by threshold only a crossing passes, through the needs' conjunction, and coupling by level is exactly where a level couples within its need.
 = S2 @statement/zh
 - 交换对一个水平的回应是律的每个强度阵列的耦合。对经所识而读的律，只有所识的水平耦合；经阈只有跨越得过，且经所需之合取，观察恰是水平能在所需之内耦合之处。
 + 交换对一个水平的回应是律的每个强度阵列的耦合。对经耦合而读的律，只有耦合入的水平被回应；经阈只有跨越得过，且经所需之合取，经水平耦合恰是水平能在所需之内耦合之处。

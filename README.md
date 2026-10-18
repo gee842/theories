@@ -149,15 +149,15 @@ The derived extent runs one way, to what one's continuation depends on, and ends
 
 **Status:** `recorded-checked`, an existing Lean receipt is recorded · theorem · [conditions and evidence](theories/becoming/results/records/derived-extent-limits.md) · [canonical source](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 
-#### Selection through registration
+#### Selection through the couplings
 
-Every selection through a registration selects two histories alike exactly when they register alike. With the rest fixed, selection is blind beyond the registration closure; pooled registration selects an ending beyond it within reach, and a flow reaching beyond to raise what registers is selected.
+Every selection through a selector's couplings selects histories alike exactly when they are alike through them. With the rest fixed, selection is blind beyond the coupling closure; pooled couplings select an ending beyond it within reach, and a flow raising what couples in from beyond is selected.
 
 **Status:** `recorded-checked`, an existing Lean receipt is recorded · theorem · [conditions and evidence](theories/becoming/results/records/selection-through-registration.md) · [canonical source](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
 
-#### Runaway and the unregistered distance to the break
+#### Runaway, and the distance to the break that does not couple in
 
-Every policy through registration, with the rest fixed, that keeps its support leaves any larger unobserved stock unused; before the break, how far off the break is does not register.
+Every policy through the couplings, with the rest of the exchange fixed, that keeps its support leaves unused any larger stock coupled into it by threshold only; before the break, how far off the break is does not couple in.
 
 **Status:** `recorded-checked`, an existing Lean receipt is recorded · theorem · [conditions and evidence](theories/becoming/results/records/runaway-distance-unregistered.md) · [canonical source](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean)
 

@@ -1,7 +1,7 @@
 """Record comparison-where-the-rest-responds, read by sense (N6); the record id stays."""
 REC=('comparison-where-the-rest-responds',[
 ("S3","@statement/zh","部分之外的形成都经自己的耦合回应时，两个流的比较在部分的回应所及之内决定：两个流经其外每个形成的耦合无别、它交换相同，差别到不了它；只有支持耦合入时，回应所及是所及闭包之并。"),
-("S3","@statement/en","Where every formation outside a part responds through its couplings, comparing two flows is decided within the part's responsive reach: beyond it the flows are alike through each formation's couplings, it exchanges alike, and the difference never arrives; where only support couples in, that reach is the union of the reach closures."),
+("S3","@statement/en","Where every formation outside a part responds through its couplings, two flows compare within its responsive reach: beyond it they are alike through the couplings, the part exchanges alike, and the difference never arrives; where only support couples in, the reach is the union of reach closures."),
 ("S2","对“a 在两个流之一中与 b 所识的条件交换”这一关系的闭包之内","对“a 在两个流之一中与耦合入 b 的条件交换”这一关系的闭包之内"),
 ("S2","when it lies within some member's closure under the relation ‘a exchanges, in one of the two flows, with a condition b registers’","when it lies within some member's closure under the relation ‘a exchanges, in one of the two flows, with a condition coupled into b’"),
 ("S2","对两个流、两个网、一个观察与部分","对两个流、两个网、一个经水平的耦合（obs）与部分"),

@@ -3,7 +3,7 @@ REC=('learnable-through-registration',[
 ("L-extrap","@title/zh","外推经映射所能学者"),
 ("L-extrap","@title/en","What an extrapolation can learn through a map"),
 ("L-feature","@statement/zh","经映射的未来相同的配置给每个外推同样的前段。被列表所持的世界中，某个外推在每个配置上于特征静止，恰当这样的配置其特征从某步起一致；律使每个配置不变时，恰当特征经映射之归并同去。"),
-("L-feature","@statement/en","Configurations with the same future through the map give every extrapolation the same prefix. In a world a list holds, some extrapolation rests on a feature everywhere exactly where such configurations have features agreeing from some step on; under a still law, exactly where the feature goes alike across the map's lumping."),
+("L-feature","@statement/en","Configurations with one future through the map give every extrapolation the same prefix. In a listed world, some extrapolation rests on a feature everywhere exactly where such configurations have features eventually agreeing; under a still law, exactly where the feature respects the lumping."),
 ("L-feature","@laws/0/zh","外推从经映射之历程的前段提出特征之值：由配置出发之轨道经映射的历程（course）；从第 T 步起每步提出特征之值即从 T 起静止（RestsFrom），某个 T 存在即静止（Rests）。"),
 ("L-feature","@laws/0/en","An extrapolation proposes a value of the feature from the prefix of a course through the map: the course through the map of a configuration's orbit (course); proposing the feature's value at every step from T on is resting from T (RestsFrom), and resting is resting from some T (Rests)."),
 ("L-miss","@laws/1/zh","经映射的未来相同的两个配置给每个外推每一步同样的前段；所以在其特征不同之步，所提出的值至多在一处对，不用判定；特征之值可判定时，所提出的值在一处不合，而两处前段处处相同。"),

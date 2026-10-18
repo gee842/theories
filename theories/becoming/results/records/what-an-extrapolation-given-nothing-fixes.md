@@ -46,13 +46,13 @@ An extrapolation that finds the reading, or a table of it; an independent review
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-The chapter's open programme (section 8.2, Learning) named "a learner given nothing that rests on every learnable target, or a witness that none does". Ren, 18 October 2026: "Wait for N5's renames to land, then start the learning and seeking line on the renamed head." (provenance, not warrant). The witness answers the item; the exact theorem says what a learner given the world (fromLaw) is given beyond the prefix: a reading of the future through the map, which the prefix itself fixes.
+The chapter's open programme (section 8.2, Learning) named "a learner given nothing that rests on every learnable target, or a witness that none does". Ren, 18 October 2026: "Wait for N5's renames to land, then start the learning and seeking line on the renamed head." (provenance, not warrant). The witness answers the item; the exact theorem says what an extrapolation built from the law (fromLaw) is given beyond the prefix: a reading of the future through the map, which the prefix itself fixes.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
 - none
-- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). There learnability is characterized with a learner given the world, the law and the target (fromLaw); here what that learner is given beyond the prefix is exactly a reading of the future, and given nothing no learner learns every learnable target.
+- related, not a proved adapter: [learnable-through-registration](learnable-through-registration.md). There learnability is characterized with an extrapolation built from the law, given the world and the feature (fromLaw); here what that extrapolation is given beyond the prefix is exactly a reading of the future, and given nothing no extrapolation learns every learnable feature.
 - related, not a proved adapter: [identification-where-bounded](identification-where-bounded.md). The bound from which the extrapolation by elimination proposes the next value, and the naming by a finite future of length 2N - 1, are taken from there.
 
 <a id="sources--来源"></a>
@@ -65,6 +65,7 @@ The chapter's open programme (section 8.2, Learning) named "a learner given noth
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json) | — |
 
 Aliases: `what an extrapolation given nothing fixes`, `不被给予任何东西的外推所确定者`, `unrolling`, `展开`, `learnable exactly where a reading of the future`, `可学恰当是未来的读法`, `given nothing, not every learnable feature`, `不被给予任何东西，并非每个可学特征`
 

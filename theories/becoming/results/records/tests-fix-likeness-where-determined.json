@@ -174,8 +174,8 @@
       ]
     },
     {
-      "zh": "两个有分支的框架之间深度 N + N′ − 1 对每一对恰好：每个配置只有一个动作、以该处映射之值命名、不主张什么的框架（Law.labelled）中，深度 k 的相同恰是 k 步内的一致（Law.alikeTo_labelled_iff），比映射之值作为主张时少一步；每个至多 N 个状态的历史是 N 个配置上的律的历程（Law.realized_within，其套索世界），这样的框架有限且已定（Law.labelled_finite）。由 Identification.bounded_agree_exact 的两个历程，对每个 N、N′ 有 N 与 N′ 个配置的这样的框架，其配置在深度 N + N′ − 2 相同而不相同（labelled_across_exact）；经映射读出时，有经映射的未来在 N + N′ − 2 步内一致而不通过相同检验的配置（registered_across_exact），所以第十四条规律的长度 N + N′ − 1 也恰好。不加前提。",
-      "en": "Across two branching frames the depth N + N′ − 1 is exact for every pair: in a frame whose single move at each configuration is named by the map's value there and which claims nothing (Law.labelled), likeness to depth k is agreement for k steps (Law.alikeTo_labelled_iff), one step fewer than with the map's value claimed; every history with at most N states is the course of a law on N configurations (Law.realized_within, its lasso world), and such a frame is finite and decided (Law.labelled_finite). From the two courses of Identification.bounded_agree_exact, for every N and N′ there are such frames of N and N′ configurations whose configurations are alike to depth N + N′ − 2 and not alike (labelled_across_exact); read through maps, there are configurations whose futures through the map agree for N + N′ − 2 steps and which do not pass the same tests (registered_across_exact), so the length N + N′ − 1 of the fourteenth law is exact too. No premise.",
+      "zh": "两个有分支的框架之间深度 N + N′ − 1 对每一对恰好：每个配置只有一个动作、以该处映射之值命名、不主张什么的框架（Law.labelled）中，深度 k 的相同恰是 k 步内的一致（Law.alikeTo_labelled_iff），比映射之值作为主张时少一步；每个至多 N 个状态的历史是 N 个配置上的律的历程（Law.realized_within，其套索世界），这样的框架有限且已定（Law.labelled_finite）。由 Identification.bounded_agree_exact 的两个历程，对每个 N、N′ 有 N 与 N′ 个配置的这样的框架，其配置在深度 N + N′ − 2 相同而不相同（labelled_across_exact）；经映射读出时，有经映射的未来在 N + N′ − 2 步内一致而不通过相同检验的配置（frameBy_across_exact），所以第十四条规律的长度 N + N′ − 1 也恰好。不加前提。",
+      "en": "Across two branching frames the depth N + N′ − 1 is exact for every pair: in a frame whose single move at each configuration is named by the map's value there and which claims nothing (Law.labelled), likeness to depth k is agreement for k steps (Law.alikeTo_labelled_iff), one step fewer than with the map's value claimed; every history with at most N states is the course of a law on N configurations (Law.realized_within, its lasso world), and such a frame is finite and decided (Law.labelled_finite). From the two courses of Identification.bounded_agree_exact, for every N and N′ there are such frames of N and N′ configurations whose configurations are alike to depth N + N′ − 2 and not alike (labelled_across_exact); read through maps, there are configurations whose futures through the map agree for N + N′ − 2 steps and which do not pass the same tests (frameBy_across_exact), so the length N + N′ − 1 of the fourteenth law is exact too. No premise.",
       "declarations": [
         "Becoming.Law.labelled",
         "Becoming.Law.alikeTo_labelled_iff",
@@ -187,8 +187,8 @@
       ]
     },
     {
-      "zh": "一个世界之内 N − 1 对检验恰好：对每个 N ≥ 2，在 N 个位置走到停住的最后一个、映射只取是否到了最后的路径上，世界整个由 N 个配置持有，前两个位置在 N − 2 步内一致而不通过相同的检验（registered_within_exact）。不加前提。",
-      "en": "Within one world N − 1 is exact for the tests: for every N ≥ 2, on the path of N places to a last one that stays, with a map taking whether the last is reached, in a world N configurations hold wholly, the first two places agree for N − 2 steps and do not pass the same tests (registered_within_exact). No premise.",
+      "zh": "一个世界之内 N − 1 对检验恰好：对每个 N ≥ 2，在 N 个位置走到停住的最后一个、映射只取是否到了最后的路径上，世界整个由 N 个配置持有，前两个位置在 N − 2 步内一致而不通过相同的检验（frameBy_within_exact）。不加前提。",
+      "en": "Within one world N − 1 is exact for the tests: for every N ≥ 2, on the path of N places to a last one that stays, with a map taking whether the last is reached, in a world N configurations hold wholly, the first two places agree for N − 2 steps and do not pass the same tests (frameBy_within_exact). No premise.",
       "declarations": [
         "Becoming.frameBy_within_exact"
       ]
@@ -324,8 +324,8 @@
       "id": "identification-where-bounded",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Becoming.Refinement 的 Refining、Refining.steady_within、DistinctUnder 与 le_pred_of_succ_le：深度的相同在类数之内停止。复用 Law.sameFuture_iff_within、Identification.bounded_agree、bounded_agree_exact、statesBelow_iff_lasso、record_eq_iff 与 Law.statesBelow_held：检验即有界的前段，两个框架之间的深度恰好。",
-        "en": "Reuses Refining, Refining.steady_within, DistinctUnder and le_pred_of_succ_le of Becoming.Refinement: likeness to depth stops within the classes. Reuses Law.sameFuture_iff_within, Identification.bounded_agree, bounded_agree_exact, statesBelow_iff_lasso, record_eq_iff and Law.statesBelow_held: the tests are a bounded prefix, and the depth across two frames is exact."
+        "zh": "复用 Becoming.Refinement 的 Refining、Refining.steady_within、DistinctUnder 与 le_pred_of_succ_le：深度的相同在类数之内停止。复用 Law.sameFuture_iff_within、Identification.bounded_agree、bounded_agree_exact、statesBelow_iff_lasso、prefix_eq_iff 与 Law.statesBelow_held：检验即有界的前段，两个框架之间的深度恰好。",
+        "en": "Reuses Refining, Refining.steady_within, DistinctUnder and le_pred_of_succ_le of Becoming.Refinement: likeness to depth stops within the classes. Reuses Law.sameFuture_iff_within, Identification.bounded_agree, bounded_agree_exact, statesBelow_iff_lasso, prefix_eq_iff and Law.statesBelow_held: the tests are a bounded prefix, and the depth across two frames is exact."
       },
       "interface": {
         "output": {
@@ -391,7 +391,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "6c2b4224dcad451ab417dc46e232a666a8693c498362c25cd573f86f40fb0212",
+      "sha256": "93c5377713eef17b5f5e06c6382180f86a5ffc1a4d60a0f138eae3d4fbfd5724",
       "declarations": [
         "Becoming.Decided.exists_listed",
         "Becoming.Decided.exists_of_listed",
@@ -633,7 +633,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
       "declarations": []
     },
     {
@@ -669,7 +669,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
       "role": "proof",
-      "sha256": "6639d45632b2fe11227486fef261cac837cf4c7ed0e718a9b51b81f8699de456",
+      "sha256": "7f33180fa3e706cc2245a4ce11a74e5754843e91f6faf296ee147023ca05a19b",
       "declarations": [
         "Becoming.DistinctUnder",
         "Becoming.DistinctUnder.single",
@@ -688,7 +688,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
       "role": "proof",
-      "sha256": "02b34aba035de30e69dec1f662f06ef3a9eff78c5f180a22f81c9bdcd7904a34",
+      "sha256": "68d698f2eb47859f6ab1736c4031122514c4fd8c0d4e965505b2a4fd14252c4b",
       "declarations": [
         "Becoming.Law.agree_bisimulation",
         "Becoming.Law.alike_iff_agree",
@@ -778,7 +778,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -799,14 +799,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Refinement",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Distinguishing",
       "success_pointer": "/status",
       "success_value": "passed"

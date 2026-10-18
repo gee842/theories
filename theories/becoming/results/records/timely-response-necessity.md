@@ -12,18 +12,18 @@ Documentary review UTC: `2026-10-13T13:04:43.135431+00:00`. Run the registry che
 <a id="主张-claim"></a>
 ## Claim
 
-For two native flow/web courses with common initial levels, prefix balance and presence, past-registration response outside a source and a common complete readout, a distinction outside ordered propagation cannot change the answer by its deadline. Finite weighted commitment is at most paired error plus timely potential-reach weight; total nonarrival gives equality with paired error.
+For two native flow/web courses with common initial levels, prefix balance and presence, response through what coupled in before, outside a source, and a common complete readout, a distinction outside ordered propagation cannot change the answer by its deadline. Finite weighted commitment is at most paired error plus timely potential-reach weight; total nonarrival gives equality with paired error.
 
 Canonical source: [TimedResponse.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
 
-- All initial levels agree; balance and present formations agree for t<D; outside the time-indexed source exchange responds through prior registration.
-- Common readout through the same W-based complete registration up to D; RegistersAt uses current requirements or explicit observation. Discrete steps have no inherent physical duration.
+- All initial levels agree; balance and present formations agree for t<D; outside the time-indexed source exchange responds through what coupled in before.
+- Common readout through everything that couples in through the same W up to D; CoupledIntoAt uses current requirements or coupling by level. Discrete steps have no inherent physical duration.
 - Statistical composition supplies a finite list, natural weights, opposite targets and a timely-reach decision; total blindness needs no such decision.
 
-Command formation, exchange, registration and response differentiate within one unfolding. The theorem does not identify sources from correlated records, certify matched initial states or measure delay; actual pairing, delivery/execution and probabilities need warrant.
+Command formation, exchange, coupling and response differentiate within one unfolding. The theorem does not identify sources from correlated records, certify matched initial states or measure delay; actual pairing, delivery/execution and probabilities need warrant.
 
 <a id="检验与边界-validation-and-boundaries"></a>
 ## Validation and boundaries
@@ -38,19 +38,19 @@ Necessary bound, not sufficient control, complete knowledge or a universal scien
 ## Dependencies and related results
 
 - **formal-reuse**: [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md). Timed reach reconnects to the original responsive closure.
-- **formal-reuse**: [testing-within-registration](testing-within-registration.md). Reuses complete past registration.
+- **formal-reuse**: [testing-within-registration](testing-within-registration.md). Reuses everything that coupled in before.
 - **formal-reuse**: [finite-fallible-inquiry-necessity](finite-fallible-inquiry-necessity.md). Reuses the original statistical inequality.
 
-**Output:** Native responsive closure and registered-exchange edges.
+**Output:** Native responsive closure and coupled-exchange edges.
 
 **Input:** reachedBy_within_response.
 
 **Preserved conditions:** Sources belong to the old part and presence agrees; no converse. [TimedResponse.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
 
 
-**Output:** RegistersAlikeUpTo from support and observation.
+**Output:** AlikeThroughUpTo from support and coupling by level.
 
-**Input:** registration_alike_before and answer_alike_before.
+**Input:** coupling_alike_before and answer_alike_before.
 
 **Preserved conditions:** Common interface and response supplied; current support differs from future requirements. [TimedResponse.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
 
@@ -81,6 +81,8 @@ Necessary bound, not sufficient control, complete knowledge or a universal scien
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T063731.167536Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T095146.390681Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -98,4 +100,5 @@ Aliases: `Becoming.TimedResponse.levels_alike_before`, `Becoming.TimedResponse.a
 - 2026-10-13 P105: prior substantive passages are byte-preserved; refresh document bindings after appended demarcation discussion, with formal claims, premises and passed receipts unchanged.
 - 14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`, `FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`; statements, proofs and theorem counts unchanged; Lean sources: TimedResponse, FallibleInquiry only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: FallibleInquiry.lean, TimedResponse.lean. Rebound to core receipt 20261018T062828.251326Z; FallibleInquiry.lean rebound to its own checker's receipt 20261018T063731.167536Z, after reading the change. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean, TimedResponse.lean. Rebound to receipt 20261018T094652.463397Z, 20261018T095146.390681Z after reading the change. The claim is unchanged.
 - 3 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](timely-response-necessity.json).

@@ -413,7 +413,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
       "role": "proof",
-      "sha256": "cf64ef01631336661d1b504e8479465499557d3f6f24f05ef1370faf971f35cb",
+      "sha256": "926c02570f38dceca3056a4d5850ed53215320bfaeece7430f7cc3a42a9b48ab",
       "declarations": [
         "Becoming.Boundary",
         "Becoming.Boundary.closure",
@@ -570,7 +570,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Boundaries",
       "success_pointer": "/status",
       "success_value": "passed"

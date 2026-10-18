@@ -11,7 +11,7 @@
   "reviewed_at_utc": "2026-10-16T00:00:00+00:00",
   "statement": {
     "zh": "对相同已定的备择与给每个备择任何种类条目的映射：两个备择被每个经映射的选择选得相同，恰当映射使二者并列；至多选一个备择的这种选择能选出 k，恰当没有别的备择的条目等于 k 的。",
-    "en": "For alternatives with decided equality and a map giving each an entry of any kind: two alternatives are selected alike by every selection through the map exactly when the map ties them, and such a selection selecting at most one alternative can select k exactly when no other alternative's entry equals k's."
+    "en": "For alternatives with decided equality and a map giving each an entry of any kind: two are selected alike by every selection through the map exactly when the map ties them, and such a selection selecting at most one alternative can select k exactly when no other alternative's entry equals k's."
   },
   "laws": [
     {
@@ -211,7 +211,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "3399211a1a4b5e08592f4bbdd6c5d288b14870e534def29aa447be3b33040d96",
+      "sha256": "6b82bfbdff6518183a8226f1e09e2ca3db6b5416de0f70844b19d627c8b2a9a9",
       "declarations": [
         "Becoming.Relabel.swap",
         "Becoming.Relabel.swap_left",
@@ -247,7 +247,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "648576d8bb87dc1097d8ce069daeeae4c2fddd6f912f26d89a1346ca94f38e46",
+      "sha256": "aecbe2c2ece126e2fc1d04f901d900bd1619a931679ab3a584888cf0a6e1b4d0",
       "declarations": [
         "Becoming.Learning.selects_through_lumping",
         "Becoming.Learning.values_lumped",
@@ -364,7 +364,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionRuns.lean",
       "role": "proof",
-      "sha256": "03c8932cd4fd31548aee82a0fd26937114f5eb80907e423d08e7205e4cb2e6f7",
+      "sha256": "18451b6bc4d03fb2e2ed69abf551d1333691e055956e56a6f0987f8d622e1565",
       "declarations": [
         "Becoming.SelectionRuns.selected_alike_iff",
         "Becoming.SelectionRuns.valued_alike_iff",
@@ -392,19 +392,25 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "role": "receipt",
+      "sha256": "81ac9c49309a8910dbbb1872e10a1062de1a0608db9e53897ece9f83b0e7c1c1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -432,7 +438,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.SelectionRuns",
       "success_pointer": "/status",
       "success_value": "passed"

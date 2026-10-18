@@ -1,7 +1,7 @@
 """Record wisdom-root-part-one, read by sense (N6); the record id stays."""
 REC=('wisdom-root-part-one',[
 ("S2","@statement/zh","耦合与识（一个形成经其耦合所成之归并的历程）、理、检验、学习与推广、经耦合的选择与训练、够、失控、判断与元层次的已检查规律及形成路线，对每个外推与保留相同内容的每个表示成立（核心中不用公理）：这是目标 wisdom-root 的形式支撑。"),
-("S2","@statement/en","The checked laws of coupling and 识 (a formation's course through the lumping its couplings make), 理, testing, learning and generalization, selection and training through the couplings, enough, runaway, judgment and the meta level, and the routes of formation hold of every extrapolation and representation keeping the same content, axiom-free in the core: the formal support of wisdom-root."),
+("S2","@statement/en","The checked laws of coupling and 识, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold of every extrapolation and representation with the same content, axiom-free in the core: wisdom-root's formal support."),
 ("L-extrap","Each law below is stated for every formation, learner, lumping","Each law below is stated for every formation, extrapolation, lumping"),
 ("L-extrap","下列每条规律都对每个形成、每个学习者、每个归并","下列每条规律都对每个形成、每个外推、每个归并"),
 ("S5","@laws/0/en","Coupling: a claim is excluded only through a difference in what couples in, and no prefix fixes the next value."),

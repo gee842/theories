@@ -5,33 +5,33 @@
 
 `wisdom-root-part-one` · **reviewed-scoped** · argument · F11 · [record](wisdom-root-part-one.json) · [register](../../../../RESULTS.md)
 
-> The checked laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold of every learner and representation keeping the same content, axiom-free in the core: the formal support of wisdom-root.
+> The checked laws of coupling and 识, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold of every extrapolation and representation with the same content, axiom-free in the core: wisdom-root's formal support.
 
 <a id="exact-statement--确切陈述"></a>
 ## Exact statement
 
-Each law below is stated for every formation, learner, lumping, selection or determined law, with no axiom in the core (the periphery learning-bridge theorems use only Lean's standard axioms) and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within the scope of the theory without axiom).
+Each law below is stated for every formation, extrapolation, lumping, selection or determined law, with no axiom in the core (the periphery learning-bridge theorems use only Lean's standard axioms) and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within the scope of the theory without axiom).
 
 <a id="laws--规律"></a>
 ## Laws
 
-1. Registration: a claim is refuted only through a registered difference, and no record fixes the next value. (`Becoming.Web.Excludes.not_of_alike`, `Becoming.Web.tail_unexcluded`, `Becoming.Learning.no_prefix_fixes_next`)
+1. Coupling: a claim is excluded only through a difference in what couples in, and no prefix fixes the next value. (`Becoming.Web.Excludes.not_of_alike`, `Becoming.Web.tail_unexcluded`, `Becoming.Learning.no_prefix_fixes_next`)
 2. 理 (a reading: the modeling of the laws of structure and change): data alone fix no untried value; generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it; structure and change are one lumping; a projection carries a law exactly where configurations alike go alike. (`Becoming.Learning.every_determines_nothing`, `Becoming.Learning.determines_lumped_iff`, `Becoming.Learning.lumped_right_iff`, `Becoming.Learning.goAlike_iff_lumped`, `Becoming.carries_law_iff`)
-3. Testing: refutation relative to a model refutes the model and the claim together; the record fixes an act's outcome only where taken; replication is return; one occasion stands for its class under the model. (`Becoming.Web.excludesWithin_iff_conjunction`, `Becoming.Run.not_fixes_of_untaken`, `Becoming.Run.fixes_on_return`, `Becoming.Run.generalizes`)
-4. Learning: in a world held by a list, learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest; every learner has an open course refuting each of its claims. (`Becoming.Learning.held_byElimination_bounded`, `Becoming.Learning.held_rest_unrefuted`, `Becoming.Learning.no_prefix_fixes_next_finite`, `Becoming.Learning.diagonal_misses`, `Becoming.Learning.diagonal_open`)
-5. 明 (others' registration): what the clearer cannot test the dweller can, and together they test what neither can alone; selection through registration is blind beyond the registration closure, and pooled registration selects what it misses. (`Becoming.Clearing.tested_by_dweller`, `Becoming.Clearing.pooled`, `Becoming.Flow.unselected_beyond_coupling`, `Becoming.Clearing.selected_pooled`)
+3. Testing: exclusion relative to a model excludes the model and the claim together; the record fixes an act's outcome only where taken; replication is return; one occasion stands for its class under the model. (`Becoming.Web.excludesWithin_iff_conjunction`, `Becoming.Run.not_fixes_of_untaken`, `Becoming.Run.fixes_on_return`, `Becoming.Run.generalizes`)
+4. Learning: in a world held by a list, extrapolation by elimination misses a bounded number of times, its coming to rest is unrefuted and its prefix never shows that it has come to rest; every extrapolation has an open course on which each value it proposes misses. (`Becoming.Learning.held_byElimination_bounded`, `Becoming.Learning.held_rest_unrefuted`, `Becoming.Learning.no_prefix_fixes_next_finite`, `Becoming.Learning.diagonal_misses`, `Becoming.Learning.diagonal_open`)
+5. 明 (others' couplings): what the clearer cannot test the dweller can, and together they test what neither can alone; selection through the couplings is blind beyond the coupling closure, and pooled couplings select what it misses. (`Becoming.Clearing.tested_by_dweller`, `Becoming.Clearing.pooled`, `Becoming.Flow.unselected_beyond_coupling`, `Becoming.Clearing.selected_pooled`)
 6. Enough: seeking rests exactly at a state the law leaves unchanged that meets its target; “more than now” needs an open world; two seekers of “above all others” never rest together. (`Becoming.Law.rests_iff`, `Becoming.more_needs_open`, `Becoming.Law.aboveAll_never_rests`)
-7. Runaway: before the break, how far it is does not register, while observing the stock registers it. (`Becoming.Web.break_not_bounded`, `Becoming.Web.observed_raise_couples`)
-8. Proxies: selection and training go only through the selector's registration or the data; values beyond the data stay as free as the class leaves them; reaching beyond the registration closure to raise what registers is selected. (`Becoming.Web.selects_alike_iff`, `Becoming.Learning.Training.loss_through`, `Becoming.Learning.Training.unselected_beyond_data`, `Becoming.Diversion.favours`)
-9. Judgment: a judgment from registration is exactly a common response of the judging process over the belief. (`Becoming.commonResponse_judge_iff`, `Becoming.Web.class_judge_iff`)
+7. Runaway: before the break, how far it is does not couple in, while coupling the stock in by level passes it. (`Becoming.Web.break_not_bounded`, `Becoming.Web.observed_raise_couples`)
+8. Proxies: selection and training go only through the selector's couplings or the data; values beyond the data stay as free as the class leaves them; reaching beyond the coupling closure to raise what couples in is selected. (`Becoming.Web.selects_alike_iff`, `Becoming.Learning.Training.loss_through`, `Becoming.Learning.Training.unselected_beyond_data`, `Becoming.Diversion.favours`)
+9. Judgment: a judgment made through the couplings is exactly a common response of the judging process over the class alike through them. (`Becoming.commonResponse_judge_iff`, `Becoming.Web.class_judge_iff`)
 10. The meta level: learning over classes is the same learning over a merged enumeration; every merging has its diagonal course; a system changing its own rule has its law on the joint configuration. (`Becoming.Learning.merged_bound`, `Becoming.Learning.merged_unrested`, `Becoming.adaptive_state_law_iff`)
-11. The formal routes of formation: learning by refutation forms a model from the record; the acquisition chain forms an interpretation of every expression from three encounters; Hebbian development and the route of updating are laws on the joint configuration; the responsive route learns where the task fails. (`Becoming.LearningCorrespondence.uniform_determines`, `Becoming.LearningCorrespondence.hebbian_activity_law_iff`, `Becoming.LearningCorrespondence.updating_network_law_iff`, `Becoming.LearningCorrespondence.responsive_learns`)
+11. The formal routes of formation: extrapolation by elimination forms a model from the prefix; the acquisition chain forms an interpretation of every expression from three encounters; Hebbian development and the route of updating are laws on the joint configuration; the responsive route learns where the task fails. (`Becoming.LearningCorrespondence.uniform_determines`, `Becoming.LearningCorrespondence.hebbian_activity_law_iff`, `Becoming.LearningCorrespondence.updating_network_law_iff`, `Becoming.LearningCorrespondence.responsive_learns`)
 
 <a id="conditions--条件"></a>
 ## Conditions
 
 - No premise is added; the core uses no axiom, and the periphery learning bridge (LearningCorrespondence's hebbian_activity_law_iff, updating_network_law_iff and responsive_learns) uses propext, Quot.sound and Classical.choice; each law's conditions stay in its theorems (balance only where used, the rest of the exchange fixed, decided values, a world held by a list and so on), as in the respective records.
-- Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, adopted on Ren's delegation (理 is Ren's); 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model.
+- Matching the laws to aspects of wisdom (coupling and 识, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, adopted on Ren's delegation (理 is Ren's); 明 here means only that seeing beyond what couples into oneself needs another's couplings, not its whole classical sense; “holding of every representation” means every extrapolation is bound by these laws, not that the wise hold an explicit model.
 - “Holding of every representation” retains each theorem’s types and conditions. Application to wisdom additionally requires judgment content, grounds, scope, strength and E; it does not mean every wise activity has every module’s function or must keep revising.
 
 <a id="does-not-show--未表明"></a>
@@ -39,8 +39,8 @@ Each law below is stated for every formation, learner, lumping, selection or det
 
 - The formal laws and routes of formation do not by themselves prove exhaustive wisdom coverage, universal necessity of every core commitment or sufficiency of the relations; full coverage requires argument.
 - Actual formation, concern and affect, and historical correspondence have separate evidential burdens.
-- A refuting course for each learner is not perpetual revision in every actual world: bounded identification excludes a universal perpetual-revision reading. Witness: `Becoming.Identification.held_byElimination_rests`.
-- The pooled-registration examples cited for 明 do not require every improvement to add external information; reorganizing accessible experience is a possible route still needing explanation.
+- A course on which each value an extrapolation proposes misses is not perpetual revision in every actual world: bounded identification excludes a universal perpetual-revision reading. Witness: `Becoming.Identification.held_byElimination_rests`.
+- The pooled-identification examples cited for 明 do not require every improvement to add external information; reorganizing accessible experience is a possible route still needing explanation.
 - The ethical warrant of judgment goes through the continuation condition, which the theory states as a condition.
 - **Counterexample:** Being jointly constrained does not explain wisdom; this record says what wisdom cannot lack and how it fails without it, not when a formation is wise, so it does not upgrade the necessary formal part into a sufficient definition. [source](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
 
@@ -49,7 +49,7 @@ Each law below is stated for every formation, learner, lumping, selection or det
 
 1. Formal support matched: the checked laws of the theory without axiom are matched to the four connections of the wisdom-root target, adding no Lean; which law constitutes which aspect of wisdom is an argument. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#93-智慧之根在第一部分所及p75)
 2. Content correspondence: independently described judgment content is connected to the laws, with quantifier counterreview: common response permits omitting irrelevant differences, and risk judgment need not guarantee success. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#necessity-through-judgment-content)
-3. Bounded stable correctness: where the orbit is held by a list of length N, the learner by refutation claims and is right at every step from a step computed from N, which the learner does not have. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#97-辨识有界的记录确定什么p83)
+3. Bounded stable correctness: where the orbit is held by a list of length N, extrapolation by elimination proposes and is right at every step from a step computed from N, which the extrapolation does not have. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#97-辨识有界的记录确定什么p83)
 
 <a id="evidence--证据"></a>
 ## Evidence
@@ -73,12 +73,12 @@ Ren’s reading of 理 and the formal integration of the laws are retained. Corr
 <a id="dependencies--依赖"></a>
 ### Dependencies
 
-- **interpretive**: [testing-within-registration](testing-within-registration.md). The laws of registration, refutation and others' registration (明).
-  - Output: A claim is refuted only through a registered difference; testing is relational; a judgment from registration is a common response over belief.
-  - Input: The registration, testing, 明 and judgment aspects of wisdom.
-  - Preserved conditions: Balance assumed only on the conditions registered, step by step; response hypotheses supplied. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+- **interpretive**: [testing-within-registration](testing-within-registration.md). The laws of coupling, exclusion and others' couplings (明).
+  - Output: A claim is excluded only through a difference in what couples in; testing is relational; a judgment made through the couplings is a common response over the class alike through them.
+  - Input: The coupling, testing, 明 and judgment aspects of wisdom.
+  - Preserved conditions: Balance assumed only on the conditions coupled in, step by step; response hypotheses supplied. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
 - **interpretive**: [learning-by-refutation](learning-by-refutation.md). The laws of induction, learning and the meta level.
-  - Output: No record fixes the next value; the diagonal; learning by refutation bounded, its rest unrefuted; the merged enumeration.
+  - Output: No prefix fixes the next value; the diagonal; extrapolation by elimination's misses bounded, its rest unrefuted; the merged enumeration.
   - Input: The learning and meta-level aspects of wisdom; continuing development.
   - Preserved conditions: Decided values; a world held by a list (for the positive results). [Learning.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
 - **interpretive**: [generalization-through-lumping](generalization-through-lumping.md). The laws of 理 (Ren's reading), generalization and training.
@@ -94,18 +94,18 @@ Ren’s reading of 理 and the formal integration of the laws are retained. Corr
   - Input: The enough aspect of wisdom.
   - Preserved conditions: A determined law; the target given within the unfolding. [Seeking.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean)
 - **interpretive**: [runaway-distance-unregistered](runaway-distance-unregistered.md). The laws of runaway.
-  - Output: How far the break is does not register through one's own registration; observing the stock registers it.
+  - Output: How far the break is does not couple in through one's own couplings; coupling the stock in by level passes it.
   - Input: The no-runaway aspect of wisdom.
-  - Preserved conditions: A policy through registration, the rest fixed. [Runaway.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean)
-- **interpretive**: [selection-through-registration](selection-through-registration.md). The laws of selection through registration and of proxies.
-  - Output: Selection through registration reaches exactly what the selector registers; blind beyond the registration closure; pooled registration selects the ending in the gap.
+  - Preserved conditions: A policy through the couplings, the rest of the exchange fixed. [Runaway.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean)
+- **interpretive**: [selection-through-registration](selection-through-registration.md). The laws of selection through the couplings and of proxies.
+  - Output: Selection through the couplings reaches exactly what couples into the selector; blind beyond the coupling closure; pooled couplings select the ending in the gap.
   - Input: The 明 and proxy aspects of wisdom.
   - Preserved conditions: The rest of the exchange fixed (for the blindness). [Selection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
 - **interpretive**: [projection-carrying-a-law](projection-carrying-a-law.md). The laws of mechanism and of systems changing their own rule.
   - Output: A projection carries a law exactly where configurations alike go alike; the state has a law of its own exactly where the rule makes no difference.
   - Input: The 理 and meta-level aspects of wisdom.
   - Preserved conditions: No premise. [Mechanism.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
-- **interpretive**: [identification-where-bounded](identification-where-bounded.md). Bounded identification distinguishes the absence of a universally completed learner from perpetual non-convergence in actual learning; used to check necessity scope.
+- **interpretive**: [identification-where-bounded](identification-where-bounded.md). Bounded identification distinguishes the absence of a universally completed extrapolation from perpetual non-convergence in actual learning; used to check necessity scope.
 - related, not a proved adapter: [wisdom-root](wisdom-root.md). Completed formal support is reused directly; full necessity coverage, actual formation, concern and affect, and sufficiency retain distinct scopes and cannot certify one another.
 - related, not a proved adapter: [practical-judgment-g0-j](practical-judgment-g0-j.md). The ethical warrant of judgment goes through the condition of chapter section 6.15 (with the one axiom as a condition, G0 is a theorem); this record does not change it and contains no ethical predicate.
 - related, not a proved adapter: [target-capture](target-capture.md). The laws of target capture (the share rising, re-absorption) are the other side of the enough aspect.

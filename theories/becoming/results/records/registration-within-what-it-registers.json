@@ -98,8 +98,8 @@
     {
       "id": "learning-by-refutation",
       "detail": {
-        "zh": "它的 diagonal_refutes 与 diagonal_unrested 是外推的形式，与 gap_unsaid、revision_never_rests 同形而对象不同，各自写成。",
-        "en": "Its diagonal_refutes and diagonal_unrested are the extrapolation's form, of the same form as gap_unsaid and revision_never_rests and a different object, written independently."
+        "zh": "它的 diagonal_misses 与 diagonal_unrested 是外推的形式，与 gap_unsaid、revision_never_rests 同形而对象不同，各自写成。",
+        "en": "Its diagonal_misses and diagonal_unrested are the extrapolation's form, of the same form as gap_unsaid and revision_never_rests and a different object, written independently."
       }
     }
   ],
@@ -124,7 +124,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
       "role": "proof",
-      "sha256": "97530660973b187bfc1fb0baca7bb803c0a2b0908f8d1500e1ab0965538e43a7",
+      "sha256": "d9bc94cb1a0f21534a53c0daac1ae6a7563f7ecd86a75c4724ca832b7eb95c4d",
       "declarations": [
         "Becoming.Diagonal.Says",
         "Becoming.Diagonal.gap",
@@ -192,7 +192,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
+      "sha256": "b50635c18b582b5c7f9cbf77c74cfdec31565b9723a8de8ac46287ec7e9a9c4b",
       "declarations": []
     },
     {
@@ -230,12 +230,18 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
+      "role": "receipt",
+      "sha256": "81ac9c49309a8910dbbb1872e10a1062de1a0608db9e53897ece9f83b0e7c1c1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T094652.463397Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Diagonal",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -413,6 +419,9 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Diagonal.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T094652.463397Z after reading the change. The claim is unchanged."
     }
   ]
 }
