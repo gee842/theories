@@ -36,6 +36,17 @@ theorem names, how the three meet. No name is changed.
   registration responds to a crossing there, at every condition (`thresholdLaw`,
   `thresholdLaw_through`, `thresholdLaw_respondsByCrossing`, `crossing_passes`). The 18 October
   continuation (N3) added this half.
+* **Among several conditions, a crossing passes through the conjunction.** A response to a
+  condition the formation does not observe changes its admission at that step, at or before the
+  step of the exchange (`ExchangeLaw.Through.admission_changes_of_unobserved`), so it happens only
+  where the formation's other requirements there are met (`ExchangeLaw.Through.others_met_of_unobserved`).
+  A response by a crossing needs a positive requirement (`ExchangeLaw.RespondsByCrossing.requires_pos`).
+  Where the formation's admission at the step is decided, a crossing of a condition passes, through
+  a law reading only that decision, into every later exchange and at every condition, exactly where
+  the formation requires the condition there with a positive need (`admissionLaw`,
+  `admissionLaw_through`, `admissionLaw_respondsByCrossing`, `crossing_passes_iff`); a listed
+  support decides admission (`admitsDecidableOfSupport`, `crossing_passes_of_support`). The second
+  18 October continuation (N4) added this.
 * **By level, the level passes.** Where it observes the condition, a law reading through its
   registration responds to it by level at every step and condition (`levelLaw`,
   `levelLaw_through`, `levelLaw_respondsByLevel`). So observing is exactly where a level can couple
@@ -50,8 +61,9 @@ equivalence is the constructive form: the converse shows that a level coupling i
 
 What is not derived: which law the rest follows, or whether an observed level is in fact
 responded to (a law reading through registration may ignore what it registers); a crossing
-passing where the formation requires other conditions at the same step (its admission is then a
-conjunction a law would have to decide); a strength's size beyond being positive. The representation commits to discrete steps and natural amounts. No
+passing where the formation's admission at the step is not decided (the decision is the
+witness's one input, and a law that responds reads no more than it); a strength's size beyond
+being positive. The representation commits to discrete steps and natural amounts. No
 ethical predicate, ranking or axiom occurs.
 -/
 
@@ -421,5 +433,179 @@ theorem crossing_passes [DecidableEq C] [DecidableEq F]
      (decide_eq_true rfl) ((sole d).mpr rfl) positive c⟩
 
 end Crossing
+
+/-! ## A crossing among several conditions -/
+
+section Gate
+
+variable {law : ExchangeLaw F C} {W : Web F C} {obs : F → C → Prop} {part : F → Bool}
+  {t s : Nat} {h : F} {c d : C}
+
+/-- **A response to a condition not observed changes admission.** For a law reading through
+registration and a formation outside the part that does not observe `d`: wherever two histories
+differing at most in the level of `d` at `s` give a positive exchange gap, `s` is at most the
+step of the exchange, and the two histories do not admit the formation alike at `s`. -/
+theorem ExchangeLaw.Through.admission_changes_of_unobserved (through : law.Through W obs part)
+    (out : part h = false) (unobserved : ¬ obs h d) {l l' : Nat → C → Nat}
+    (off : ∀ s' e, ¬ (s' = s ∧ e = d) → l s' e = l' s' e) (pos : 0 < law.exchangeGap t h c l l') :
+    s ≤ t ∧ ¬ (W.Admits (l s) s h ↔ W.Admits (l' s) s h) :=
+  have none : (s ≤ t → (W.Admits (l s) s h ↔ W.Admits (l' s) s h)) → False := fun iff =>
+    have alike := through h out t l l' fun s' le =>
+      match Nat.decEq s' s with
+      | isTrue same => by
+          subst same
+          exact ⟨iff le, fun e seen => off _ e fun both => unobserved (both.2 ▸ seen)⟩
+      | isFalse other => Web.registersAlike_of_levels fun e => off s' e fun both => other both.1
+    Nat.lt_irrefl 0 ((ExchangeLaw.exchangeGap_of_alike alike c) ▸ pos)
+  ⟨match Nat.decLe s t with
+    | isTrue le => le
+    | isFalse late => (none fun le => absurd le late).elim,
+   fun iff => none fun _ => iff⟩
+
+/-- **A crossing passes only where the other requirements are met.** Under the same conditions,
+it is not refuted that every other condition the formation requires at `s` meets its need there
+under the first history, and so under the second: a response to `d` alone changes admission only
+where the rest of the conjunction holds. -/
+theorem ExchangeLaw.Through.others_met_of_unobserved (through : law.Through W obs part)
+    (out : part h = false) (unobserved : ¬ obs h d) {l l' : Nat → C → Nat}
+    (off : ∀ s' e, ¬ (s' = s ∧ e = d) → l s' e = l' s' e) (pos : 0 < law.exchangeGap t h c l l') :
+    ¬ ¬ ∀ e, W.requires s h e → ¬ e = d → W.need s h e ≤ l s e :=
+  fun unmet => (through.admission_changes_of_unobserved out unobserved off pos).2
+    ⟨fun admits => absurd (fun e requires _ => admits e requires) unmet,
+     fun admits => absurd (fun e requires other => Nat.le_trans (admits e requires)
+       (Nat.le_of_eq (off s e fun both => other both.2).symm)) unmet⟩
+
+/-- **A response by a crossing needs a positive requirement.** The formation requires the
+condition at the step of the level, with a positive need. -/
+theorem ExchangeLaw.RespondsByCrossing.requires_pos (responds : law.RespondsByCrossing W t h c s d) :
+    W.requires s h d ∧ 0 < W.need s h d :=
+  let ⟨_, l', _, requires, _, unmet, _⟩ := responds
+  ⟨requires, Nat.lt_of_le_of_lt (Nat.zero_le (l' s d)) (Nat.gt_of_not_le unmet)⟩
+
+/-- Two decided propositions that are equivalent are decided alike. -/
+theorem decide_eq_of_iff {p q : Prop} (dp : Decidable p) (dq : Decidable q) (iff : p ↔ q) :
+    @decide p dp = @decide q dq :=
+  match dp, dq with
+  | isTrue _, isTrue _ => rfl
+  | isFalse _, isFalse _ => rfl
+  | isTrue yes, isFalse no => absurd (iff.mp yes) no
+  | isFalse no, isTrue yes => absurd (iff.mpr yes) no
+
+/-- **A law taking a decided admission.** The formation `g` takes, across every step from `T`
+on, one unit from every condition where the levels at `T` admit it, and nothing otherwise;
+nothing else is exchanged. Its only input is the decision of `g`'s admission at `T`. -/
+def admissionLaw [DecidableEq F] (W : Web F C) (g : F) (T : Nat)
+    (dec : ∀ l : C → Nat, Decidable (W.Admits l T g)) : ExchangeLaw F C :=
+  ⟨fun t h l _ => bif decide (h = g) then
+      (bif Nat.ble T t then (bif @decide _ (dec (l T)) then 1 else 0) else 0) else 0,
+   fun _ _ _ _ => 0⟩
+
+/-- **The law taking a decided admission reads through registration.** -/
+theorem admissionLaw_through [DecidableEq F] {g : F} {T : Nat}
+    (dec : ∀ l : C → Nat, Decidable (W.Admits l T g)) :
+    (admissionLaw W g T dec).Through W obs part :=
+  fun h _ t l l' alike _ => by
+    refine ⟨?_, rfl⟩
+    show cond (decide (h = g)) (cond (Nat.ble T t) (cond (@decide _ (dec (l T))) 1 0) 0) 0 =
+      cond (decide (h = g)) (cond (Nat.ble T t) (cond (@decide _ (dec (l' T))) 1 0) 0) 0
+    cases m : decide (h = g) with
+    | false => rfl
+    | true =>
+      cases q : Nat.ble T t with
+      | false => rfl
+      | true =>
+        have same : h = g := of_decide_eq_true m
+        subst same
+        exact congrArg (fun b => cond b 1 0)
+          (decide_eq_of_iff (dec (l T)) (dec (l' T)) (alike T (Nat.le_of_ble_eq_true q)).1)
+
+/-- The levels at each need of `g`, and the level of `d` at `T` lowered to nothing in the
+second. -/
+def needLoweredAt [DecidableEq C] (W : Web F C) (g : F) (T : Nat) (d : C) : Nat → C → Nat :=
+  fun s e => if s = T ∧ e = d then 0 else W.need s g e
+
+/-- **The law taking a decided admission responds to a crossing** of every condition `g`
+requires at `T` with a positive need, across every step from `T` on, at every condition. -/
+theorem admissionLaw_respondsByCrossing [DecidableEq C] [DecidableEq F] {g : F} {T : Nat}
+    (dec : ∀ l : C → Nat, Decidable (W.Admits l T g)) (requires : W.requires T g d)
+    (positive : 0 < W.need T g d) (late : T ≤ t) (c : C) :
+    (admissionLaw W g T dec).RespondsByCrossing W t g c T d :=
+  have unmet : ¬ W.need T g d ≤ needLoweredAt W g T d T d := fun le =>
+    Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le positive (Nat.le_trans le (Nat.le_of_eq (if_pos ⟨rfl, rfl⟩))))
+  have admitted : W.Admits (fun e => W.need T g e) T g := fun _ _ => Nat.le_refl _
+  have refused : ¬ W.Admits (needLoweredAt W g T d T) T g := fun admits => unmet (admits d requires)
+  have before : (admissionLaw W g T dec).take t g (fun s e => W.need s g e) c = 1 := by
+    show cond (decide (g = g))
+      (cond (Nat.ble T t) (cond (@decide _ (dec (fun e => W.need T g e))) 1 0) 0) 0 = 1
+    cases m : decide (g = g) with
+    | false => exact absurd rfl (of_decide_eq_false m)
+    | true =>
+      cases q : Nat.ble T t with
+      | false => exact Bool.noConfusion ((Nat.ble_eq_true_of_le late).symm.trans q)
+      | true =>
+        cases r : @decide _ (dec (fun e => W.need T g e)) with
+        | false => exact absurd admitted (of_decide_eq_false r)
+        | true => rfl
+  have after : (admissionLaw W g T dec).take t g (needLoweredAt W g T d) c = 0 := by
+    show cond (decide (g = g))
+      (cond (Nat.ble T t) (cond (@decide _ (dec (needLoweredAt W g T d T))) 1 0) 0) 0 = 0
+    cases m : decide (g = g) with
+    | false => rfl
+    | true =>
+      cases q : Nat.ble T t with
+      | false => rfl
+      | true =>
+        cases r : @decide _ (dec (needLoweredAt W g T d T)) with
+        | false => rfl
+        | true => exact absurd (of_decide_eq_true r) refused
+  ⟨fun s e => W.need s g e, needLoweredAt W g T d,
+   fun _ _ apart => (if_neg apart).symm, requires, Nat.le_refl _, unmet,
+   Nat.lt_of_lt_of_le Nat.one_pos (Nat.le_trans
+     (Nat.le_of_eq ((gap_zero 1).symm.trans (congr (congrArg gap before) after).symm))
+     (Nat.le_add_right _ (gap 0 0)))⟩
+
+/-- **Among several conditions, a crossing passes exactly where it is required.** For a
+formation whose admission at `T` is decided: some law reading through registration responds to a
+crossing of the level of `d` at `T`, across every step from `T` on and at every condition, exactly
+where the formation requires `d` at `T` with a positive need. -/
+theorem crossing_passes_iff [DecidableEq C] [DecidableEq F] {g : F} {T : Nat}
+    (dec : ∀ l : C → Nat, Decidable (W.Admits l T g)) :
+    (W.requires T g d ∧ 0 < W.need T g d) ↔
+      ∃ law : ExchangeLaw F C, law.Through W obs part ∧
+        ∀ t, T ≤ t → ∀ c, law.RespondsByCrossing W t g c T d :=
+  ⟨fun ⟨requires, positive⟩ => ⟨admissionLaw W g T dec, admissionLaw_through dec,
+     fun _ late c => admissionLaw_respondsByCrossing dec requires positive late c⟩,
+   fun ⟨_, _, responds⟩ => (responds T (Nat.le_refl T) d).requires_pos⟩
+
+/-- Whether levels meet a formation's need at a step for every listed condition, decided by going
+through the list. -/
+def metAllDec (W : Web F C) (T : Nat) (g : F) (l : C → Nat) :
+    (es : List C) → Decidable (∀ e, List.Mem e es → W.need T g e ≤ l e)
+  | [] => isTrue fun _ mem => nomatch mem
+  | a :: es =>
+    match Nat.decLe (W.need T g a) (l a), metAllDec W T g l es with
+    | isTrue met, isTrue rest => isTrue fun e mem => match e, mem with
+      | _, .head _ => met
+      | e, .tail _ mem => rest e mem
+    | isFalse unmet, _ => isFalse fun all => unmet (all a (.head _))
+    | isTrue _, isFalse unmet => isFalse fun all => unmet fun e mem => all e (.tail _ mem)
+
+/-- **A listed support decides admission.** Where the conditions a formation requires at a step
+are exactly those of a list, whether levels admit it there is decided. -/
+def admitsDecidableOfSupport {g : F} {T : Nat} (es : List C)
+    (support : ∀ e, W.requires T g e ↔ List.Mem e es) (l : C → Nat) : Decidable (W.Admits l T g) :=
+  match metAllDec W T g l es with
+  | isTrue all => isTrue fun e requires => all e ((support e).mp requires)
+  | isFalse unmet => isFalse fun admits => unmet fun e mem => admits e ((support e).mpr mem)
+
+/-- **With a listed support, a crossing passes exactly where it is required.** -/
+theorem crossing_passes_of_support [DecidableEq C] [DecidableEq F] {g : F} {T : Nat} (es : List C)
+    (support : ∀ e, W.requires T g e ↔ List.Mem e es) :
+    (W.requires T g d ∧ 0 < W.need T g d) ↔
+      ∃ law : ExchangeLaw F C, law.Through W obs part ∧
+        ∀ t, T ≤ t → ∀ c, law.RespondsByCrossing W t g c T d :=
+  crossing_passes_iff (admitsDecidableOfSupport es support)
+
+end Gate
 
 end Becoming

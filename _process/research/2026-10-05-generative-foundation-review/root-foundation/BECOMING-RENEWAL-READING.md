@@ -6568,6 +6568,14 @@ Ren, 18 October 2026: "Claim and prove the instance check of coupling by level a
 
 So both grains of "couples into" are exact: by level the level passes, by threshold a crossing passes. What remains is a crossing where the formation requires other conditions at the same step: its admission is then a conjunction, which a law would have to decide. Evidence: 22 theorems and 7 definitions in `Becoming.LevelCoupling`, empty axiom reports; core receipt `20261018T002939.754460Z`.
 
+**A crossing among several conditions (N4, 18 October).** After Ren's "just keep pushing the frontier - 道法自然" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md#rens-go-to-keep-pushing-18-october-2026)), the same module took up the item N3 left open.
+- For a law reading through registration, a response to a condition the formation does not observe changes its admission at the step of that level, which is at or before the step of the exchange (`ExchangeLaw.Through.admission_changes_of_unobserved`). Admission is the conjunction of the formation's needs at the step, so the response happens only where its other requirements there are met: that is not refuted (`ExchangeLaw.Through.others_met_of_unobserved`).
+- A response by a crossing needs the condition required at that step with a positive need (`ExchangeLaw.RespondsByCrossing.requires_pos`).
+- Where the formation's admission at the step is decided, the law that takes one unit wherever the levels at that step admit it reads through registration. It responds to a crossing of every condition required there with a positive need, across every later step and at every condition (`admissionLaw`, `admissionLaw_through`, `admissionLaw_respondsByCrossing`). So a crossing passes exactly where it is required with a positive need (`crossing_passes_iff`). A listed support decides admission (`admitsDecidableOfSupport`, `crossing_passes_of_support`), and N3's one-condition case reads as a list of one (a reading; N3's theorem is not rederived from it).
+- The witness has one input, the decision of admission, so the premise is that decision and not a finite world.
+
+What remains is a crossing where admission is not decided. A law that responds to such a crossing tells the two histories apart, but that is not shown to decide admission. Evidence: 30 theorems and 11 definitions in `Becoming.LevelCoupling`, empty axiom reports; core receipt `20261018T011212.424412Z`.
+
 ## 169. The step index read off the relata's own courses (R1)
 
 ```text

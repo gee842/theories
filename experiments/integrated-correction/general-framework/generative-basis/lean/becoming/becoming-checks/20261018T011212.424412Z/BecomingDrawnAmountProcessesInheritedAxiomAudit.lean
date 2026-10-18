@@ -1,0 +1,10 @@
+import Becoming.DrawnAmountProcessesInherited
+#print axioms Becoming.DrawnAmountProcessesInherited.sub_lt_sub_of_lt
+#print axioms Becoming.DrawnAmountProcessesInherited.left_step_retains
+#print axioms Becoming.DrawnAmountProcessesInherited.overbuild_step_loses
+#print axioms Becoming.DrawnAmountProcessesInherited.report_same_basis_differs
+#print axioms Becoming.DrawnAmountProcessesInherited.no_report_judge
+#print axioms Becoming.DrawnAmountProcessesInherited.frame
+#print axioms Becoming.DrawnAmountProcessesInherited.formation_required_on_frame
+#print axioms Becoming.DrawnAmountProcessesInherited.neither_route_required_on_frame
+#print axioms Becoming.DrawnAmountProcessesInherited.overbuild_off_frontier_on_frame

@@ -122,7 +122,7 @@ Aliases: `Becoming.World.standing_counting_under`, `Becoming.World.standing_iff_
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Counting.lean, counting_free now cites counting_laws. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
-- 50 rebinding entries (2026-10-11 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](counting-standing-and-dependence.json).
+- 51 rebinding entries (2026-10-11 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](counting-standing-and-dependence.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

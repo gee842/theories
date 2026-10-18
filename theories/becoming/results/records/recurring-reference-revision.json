@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "066ce1e56d8f4f8791dee7a85941f07d866c37752a55be6373e699a84a468d14",
+      "sha256": "aea12591c7f6bdb3355aae9c24482a45a50ab2149fa6d14cb6aae29ccdf75390",
       "declarations": []
     },
     {
@@ -467,6 +467,9 @@
     },
     {
       "en": "18 October 2026, source reconciliation after N3 (the positive half of the threshold grain): THE-THEORY-OF-BECOMING.md section 2 (the paragraph \"Where a level couples into a formation\") had its \"Not shown\" sentence replaced by the crossing result of Becoming.LevelCoupling and a narrower open item. The author read the change: it is confined to that paragraph and touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, source reconciliation after N4 (a crossing among several conditions): THE-THEORY-OF-BECOMING.md section 2 (the paragraph \"Where a level couples into a formation\") had its \"Not shown\" sentence replaced by the result for several conditions of Becoming.LevelCoupling and a narrower open item. The author read the change: it is confined to that paragraph and touches no statement of this record; re-pointed, the claim is unchanged."
     }
   ]
 }

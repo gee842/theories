@@ -1239,9 +1239,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   law reading through registration, a level neither depended on nor observed is coupled with
   strength zero, so a response comes from a registered condition and is a route of reading in every
   schedule covering registration; a condition depended on and not observed passes only a crossing
-  of its need, and where it is the formation's one requirement at a step a crossing does pass; an
-  observed one can be responded to within its need: observing is exactly where a level can couple
-  into a formation by level.
+  of its need, and that only where its other requirements at the step are met, changing its
+  admission there; where that admission is decided a crossing passes exactly where the condition
+  is required with a positive need; an observed one can be responded to within its need: observing
+  is exactly where a level can couple into a formation by level.
 * `Becoming.Interleavings` (L4): the step index read off the relata's own courses, with no premise
   beyond a local law (an exchange changes only the relata it touches, as their states determine).
   Two lists of exchanges giving every relatum the same own course reach the same configuration, and

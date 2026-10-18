@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-18T06:00:00+00:00",
+  "reviewed_at_utc": "2026-10-18T09:00:00+00:00",
   "statement": {
-    "en": "A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through registration only registered levels couple; by threshold a crossing of the need passes and nothing else, and observing is exactly where a level can couple within its need.",
-    "zh": "交换对一个水平的回应是律的每个强度阵列的耦合。对经所识而读的律，只有所识的水平耦合；经阈只有所需的跨越得过，观察恰是水平能在所需之内耦合之处。"
+    "en": "A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through registration only registered levels couple; by threshold only a crossing passes, through the conjunction of the needs, and observing is exactly where a level can couple within its need.",
+    "zh": "交换对一个水平的回应是律的每个强度阵列的耦合。对经所识而读的律，只有所识的水平耦合；经阈只有跨越得过，且经所需之合取，观察恰是水平能在所需之内耦合之处。"
   },
   "laws": [
     {
@@ -63,6 +63,24 @@
       ]
     },
     {
+      "en": "Among several conditions, a crossing passes through the conjunction: a response of a law reading through registration to an unobserved condition changes the formation's admission at that step, only where its other requirements there are met; where admission there is decided, some such law responds to a crossing into every later exchange exactly where the condition is required with a positive need.",
+      "zh": "多个条件之间，跨越经合取而过：经所识而读的律对不观察之条件的回应改变形成在该步的容许，且只在它那一步的其他所需已满足之处；该步容许可判定时，恰在该条件被需要且所需为正之处，有这样的律对跨越回应，及于之后每一步的交换。",
+      "declarations": [
+        "Becoming.ExchangeLaw.Through.admission_changes_of_unobserved",
+        "Becoming.ExchangeLaw.Through.others_met_of_unobserved",
+        "Becoming.ExchangeLaw.RespondsByCrossing.requires_pos",
+        "Becoming.decide_eq_of_iff",
+        "Becoming.admissionLaw",
+        "Becoming.admissionLaw_through",
+        "Becoming.needLoweredAt",
+        "Becoming.admissionLaw_respondsByCrossing",
+        "Becoming.crossing_passes_iff",
+        "Becoming.metAllDec",
+        "Becoming.admitsDecidableOfSupport",
+        "Becoming.crossing_passes_of_support"
+      ]
+    },
+    {
       "en": "By level, the level passes: where marked formations observe a condition, the law taking its level reads through registration and responds to it within the need at every step. So, for a formation outside the part, it is not refuted that it observes the condition exactly where it is not refuted that some law reading through its registration responds to it by level.",
       "zh": "经水平则水平得过，观察恰是它能过之处：被标记的形成观察一个条件时，取该条件水平的律经所识而读，并在每一步、每个条件在所需之内回应该水平；所以对部分之外的形成，它观察该条件不被否定，恰当某个经其所识而读的律经水平回应该条件不被否定。",
       "declarations": [
@@ -78,12 +96,16 @@
     {
       "en": "No axiom. Each theorem states what it needs: a law of exchange; for strengths, strengths of the law and a formation present outside the part, the level listed and no later than the step; for laws through registration, the law reading through it and the formation outside the part; a covering schedule for reading; decided equality of conditions for the threshold law and the witness, and of formations for the equivalence.",
       "zh": "不加公理。各定理所需写在定理中：一个交换律；对强度之律，律的强度、部分之外在场的形成，所涉水平列出且不晚于该步；对经所识之律，律经所识而读（ExchangeLaw.Through），形成在部分之外；对读，覆盖所识的时程；对阈之律与见证，条件的相等可判定；对等价，形成的相等亦可判定。不需条件有限。"
+    },
+    {
+      "en": "For a crossing among several conditions: the formation's admission at the step decided (a listed support decides it), and equality of conditions and of formations decided, for the witness.",
+      "zh": "对多个条件之间的跨越：形成在该步的容许可判定（列出的支撑即可判定），且条件与形成的相等可判定，用于见证。"
     }
   ],
   "does_not_show": [
     {
-      "en": "A crossing passing where the formation requires other conditions at the same step: its admission is then a conjunction a law would have to decide.",
-      "zh": "形成在同一步还需要别的条件时跨越得过：其容许是一个合取，律须判定它。",
+      "en": "A crossing passing where the formation's admission at the step is not decided: a law responding to it tells the two histories apart, which is not shown to decide admission.",
+      "zh": "形成在该步的容许不可判定时跨越得过：回应它的律分开两段历史，但未表明这判定了容许。",
       "kind": "scope"
     },
     {
@@ -112,12 +134,12 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T002939.754460Z): the 29 declarations of Becoming.LevelCoupling, 22 of them theorems, have empty axiom reports; the checker verifies core purity, and THEOREM-CONNECTIVITY.py --check finds none of them apart from the base. Author self-review in study section 168; not independently reviewed.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T002939.754460Z）：Becoming.LevelCoupling 的 29 项声明（22 项定理）公理报告为空；检查器并核对核心纯净，THEOREM-CONNECTIVITY.py --check 未见其中任何一项离开基底。作者自审见研究 §168；未经独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T011212.424412Z): the 41 declarations of Becoming.LevelCoupling, 30 of them theorems, have empty axiom reports; the checker verifies core purity, and THEOREM-CONNECTIVITY.py --check finds none of them apart from the base. Author self-review in study section 168; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T011212.424412Z）：Becoming.LevelCoupling 的 41 项声明（30 项定理）公理报告为空；检查器并核对核心纯净，THEOREM-CONNECTIVITY.py --check 未见其中任何一项离开基底。作者自审见研究 §168；未经独立审查。"
   },
   "next_delta": {
-    "en": "A crossing where the formation requires several conditions at one step (a decided support); the renames adopted in the naming study (N1), prepared as a dry run and awaiting Ren; an independent review.",
-    "zh": "形成在一步需要多个条件时的跨越（支撑可判定）；命名研究（N1）采纳的改名，已作试运行，待 Ren；独立审查。"
+    "en": "The renames adopted in the naming study (N1), prepared as a dry run and awaiting Ren; a crossing where admission is not decided; an independent review.",
+    "zh": "命名研究（N1）采纳的改名，已作试运行，待 Ren；容许不可判定时的跨越；独立审查。"
   },
   "correspondence": {
     "en": "The naming study of 17-18 October (N1, study section 6.2) adopted \"couples into\" for what Web.Registers names, in two grains, and held the level grain back until the supplied relation obs was shown to be a coupling in the sense of Becoming.Loops and Becoming.Observation. Ren: \"Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames.\" This result does that. It also answers, for the level branch, the question observation-is-a-route leaves open, whether observation is a second kind of relation beside dependence: obs marks where a level can couple into a formation by level. Reading (the AI's, open): registration bounds coupling, and a law's responses are its couplings.",
@@ -143,7 +165,12 @@
     "跨越得过",
     "crossing passes",
     "threshold law",
-    "阈之律"
+    "阈之律",
+    "crossing through the conjunction",
+    "经合取而过",
+    "admission law",
+    "容许之律",
+    "decided admission"
   ],
   "dependencies": [
     {
@@ -298,7 +325,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
       "role": "proof",
-      "sha256": "70f3bac80407495b99679165ae805573315cae60a1062ba47e5cdde4c8c55d8d",
+      "sha256": "a8cf8f8a9796e3bf44bb40076a10f554a9ed062a7bd2c0f7003472d99612144e",
       "declarations": [
         "Becoming.ExchangeLaw.RespondsTo",
         "Becoming.ExchangeLaw.respondsWithin_zero_iff",
@@ -324,6 +351,18 @@
         "Becoming.loweredAt",
         "Becoming.thresholdLaw_respondsByCrossing",
         "Becoming.crossing_passes",
+        "Becoming.ExchangeLaw.Through.admission_changes_of_unobserved",
+        "Becoming.ExchangeLaw.Through.others_met_of_unobserved",
+        "Becoming.ExchangeLaw.RespondsByCrossing.requires_pos",
+        "Becoming.decide_eq_of_iff",
+        "Becoming.admissionLaw",
+        "Becoming.admissionLaw_through",
+        "Becoming.needLoweredAt",
+        "Becoming.admissionLaw_respondsByCrossing",
+        "Becoming.crossing_passes_iff",
+        "Becoming.metAllDec",
+        "Becoming.admitsDecidableOfSupport",
+        "Becoming.crossing_passes_of_support",
         "Becoming.levelLaw",
         "Becoming.levelLaw_through",
         "Becoming.raisedAt",
@@ -394,17 +433,17 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "d55ec2fab3b13ab7f354ac216702fcad5faf8f4fb92fd47c28ea96ff1fe2ea23"
+      "sha256": "063cb17f84876510be0b43a5ef1a8555639a4dd8e133f796c14fc145b44465bb"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "066ce1e56d8f4f8791dee7a85941f07d866c37752a55be6373e699a84a468d14"
+      "sha256": "aea12591c7f6bdb3355aae9c24482a45a50ab2149fa6d14cb6aae29ccdf75390"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
       "role": "provenance",
-      "sha256": "7021337724ee130a08cca64a8d7e4df64015f56514091fd47fecbe3f24352651"
+      "sha256": "987c95041c3e7bd95923bbaf266a520b7682bb8291cc7bf79acc0929651f6241"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md",
@@ -412,57 +451,57 @@
       "sha256": "21c55ecb521be6f68b1f5a2644aac8aa7f2efd0573589e685b7f1a706abf638f"
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "role": "receipt",
-      "sha256": "9776e859c9ce5e9a89618e5400f711238f9408cfb7065fc8491867dc62fa3ce6"
+      "sha256": "3c105297106945d4610ee27f483499886da89a22bab02e19f339da9f1b041813"
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LevelCoupling",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Observation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Thresholds",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -476,6 +515,10 @@
     {
       "en": "18 October 2026: the positive half of the threshold grain added after Ren's \"please continue\" (N3): a response to an unobserved condition is a crossing, and where the support at a step is the one condition a crossing passes; study section 168.",
       "zh": "2026年10月18日：按 Ren 的“please continue”加入阈粒度的正面一半（N3）：对不观察之条件的回应是跨越，一步的支撑只是该条件时跨越得过；研究第 168 节。"
+    },
+    {
+      "en": "18 October 2026: a crossing among several conditions added after Ren's \"just keep pushing the frontier - 道法自然\" (N4): a response to an unobserved condition changes admission, only where the other requirements are met, and where admission is decided a crossing passes exactly where required with a positive need; study section 168.",
+      "zh": "2026年10月18日：按 Ren 的“just keep pushing the frontier - 道法自然”加入多个条件之间的跨越（N4）：对不观察之条件的回应改变容许，只在其他所需已满足之处；容许可判定时，跨越恰在所需且为正之处得过；研究第 168 节。"
     }
   ]
 }
