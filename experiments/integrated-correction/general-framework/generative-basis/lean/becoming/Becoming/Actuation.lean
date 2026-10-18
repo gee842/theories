@@ -4,7 +4,7 @@ import Becoming.Naturals
 /-!
 # Actuation: recognition, delivery and enactment as consecutive steps of one installation
 
-One installation is corrected through three consecutive changes of its state: a command is
+A requested change reaches one installation through three consecutive changes of its state: a command is
 issued where the request is signed and its credential is the current epoch, delivered along the
 route that is open, and enacted where it was delivered and its credential is still current
 (`issue`, `deliver`, `enact`, `protocol`). Every step draws one unit from the reserve and one
@@ -36,7 +36,7 @@ and its goal cannot rewrite; no cryptographic claim is made.
   `route_inquiry_completes_both`); where it is known, no inquiry is needed
   (`known_route_no_probe`, `known_route_completes`). Paths from each configuration are not a
   uniform plan (`statewise_not_uniform_run`, `statewise_not_uniform`). A timely inquiry keeps
-  the correction possible and an equally accurate but slow one does not (`timely_run`,
+  the requested change possible and an equally accurate but slow one does not (`timely_run`,
   `late_probe_no_run`, `timely_trace`, `late_no_trace`). Shutdown, replacement and update
   complete with the effects they name (`shutdown_run`, `replacement_run`, `update_run`,
   `shutdown_trace`, `replacement_trace`, `update_trace`). A plan selected from a model that omits
@@ -463,7 +463,7 @@ theorem statewise_not_uniform_run :
     (protocol true (start true .update 3 3)).isSome = true ∧
     choose interface [start false .update 3 3, start true .update 3 3] plans = none := by decide
 
-/-- **A timely inquiry keeps the correction possible.** -/
+/-- **A timely inquiry keeps the requested change possible.** -/
 theorem timely_run : (run interface ⟨.route, false, true⟩ (start true .update 4 4)).isSome = true := by
   decide
 

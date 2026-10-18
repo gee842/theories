@@ -141,7 +141,7 @@ ROOTS = {
     'PooledEnvelopes.misleading_diagnosis_accepts_compromised': (MW, MODELS + ': a misleading diagnosis accepts '
                                                                  'only compromised support'),
     'PooledEnvelopes.pooled_completes': (GS, 'a law of every family of causal models, test and installation: a '
-                                         'separated pool after a faithful test completes a guarded correction; its '
+                                         'separated pool after a faithful test completes a guarded transaction; its '
                                          'process reading is the inquiry\'s `certificate_kept` and `chosen_plan_completes`'),
     'PooledEnvelopes.short_or_closed_no_plan': (MW, MODELS + ': with too little reserve or inspection closed no '
                                                 'listed plan is uniform'),

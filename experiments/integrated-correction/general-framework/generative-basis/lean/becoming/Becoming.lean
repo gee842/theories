@@ -1310,8 +1310,8 @@ readings of the unfolding (`Becoming.Labelled`).
 * `Becoming.Actuation` (L3): issue, delivery and enactment of a command as moves of one
   installation (no premise): what each move needs (`issue_stale`, `enact_revoked`), the reserve
   and what is drawn conserved along every trace (`conserved_trace`), the protocol's exact effects
-  (`protocol_exact`), and a timely inquiry keeping correction possible where an equally accurate
-  slow one does not (`timely_run`, `late_probe_no_run`).
+  (`protocol_exact`), and a timely inquiry keeping the requested change possible where an equally
+  accurate slow one does not (`timely_run`, `late_probe_no_run`).
 * `Becoming.TreeSearch` (L3): a finite search of a route tree read as the run of a determined law
   (no premise): what is found is there (`discover_sound`), exhausted is absence within the
   frontier (`exhausted_dead`), enough fuel finds an inhabited tree (`inhabited_discovered`), and
@@ -1362,8 +1362,8 @@ readings of the unfolding (`Becoming.Labelled`).
 * `Becoming.Acceptance` (L3): an accept bit given priority over a base score, and what it does not
   protect (no premise): with a positive lift a choice is best exactly where it accepts and its
   move is best by the base score (`acceptance_factorization`), so acceptance restores no access
-  the base optimum lacks; diverting the resource that keeps correction possible can be best
-  (`accepting_optimum_can_destroy_access`), and a value computed without the restriction can
+  the base optimum lacks; diverting the resource that keeps a requested change possible can be
+  best (`accepting_optimum_can_destroy_access`), and a value computed without the restriction can
   prefer the wrong branch (`stale_value_shield_suboptimal`).
 * `Becoming.GuardHorizon` (L3): keeping a guard by a choice of moves, over a horizon, from
   readings (choice over the readings named where used): the controlled reading of `Viability`

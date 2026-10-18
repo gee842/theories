@@ -18,12 +18,12 @@ amount (`reconfigure`).
   envelope is sound for covered causes (`induced_certificate_sound`); readiness is exactly a
   nonempty separated induced envelope (`ready_separates`, `ready_iff_nonempty_separated`), which
   makes the certificate available (`induced_certificate_available`) and, with faithful members,
-  completes a guarded correction within the scope (`induced_completes`).
+  completes a guarded transaction within the scope (`induced_completes`).
 * **The step.** Every step installs the candidate, keeps scope and tree, renews epoch and serial,
   unsigns, draws its amount and leaves reserve and time for the response
   (`reconfigure_renews`); it keeps what the scope permits (`reconfigure_keeps_scope`), stales the
   previous epoch's requests (`reconfigure_stales_epoch`), covers every shorter route
-  (`reconfigure_covers_shorter`) and, with faithful members, completes a correction
+  (`reconfigure_covers_shorter`) and, with faithful members, completes the requested change
   (`reconfigure_then_completes`); a closed step or an unready candidate has none
   (`closed_rejected`, `unready_rejected`).
 * **As a process.** The step is a process on managed installations whose actions are
@@ -179,7 +179,7 @@ theorem induced_certificate_available (a : Arrangement) (actual : List Nat)
       (fun d hd outside => responsive d hd (outside_bound_survives a actual bound included d hd outside))
 
 /-- **A ready arrangement, covered causes, and faithful, responsive members working under them
-complete a guarded correction within the scope.** -/
+complete a guarded transaction within the scope.** -/
 theorem induced_completes (a : Arrangement) (actual : List Nat)
     (covered : Covered a actual) (checked : ready a = true)
     (w : Installation) (p : Request) (reads : Readings) (approvals : Approvals)
@@ -331,7 +331,7 @@ theorem reconfigure_covers_shorter (opened : Bool) (amount depth : Nat) (candida
    Nat.le_trans (Nat.add_le_add_left small _) admitted.2.2.2.2.2.2.2.2.2.2.2⟩
 
 /-- **After a reconfiguration, faithful members working under covered causes complete a
-guarded correction of a current request within the depth provided for, within the scope.** -/
+guarded transaction of a current request within the depth provided for, within the scope.** -/
 theorem reconfigure_then_completes (opened : Bool) (amount depth : Nat) (candidate : Arrangement)
     (old next : Managed) (installed : reconfigure opened amount depth candidate old = some next)
     (actual : List Nat) (covered : Covered candidate actual)
@@ -559,7 +559,7 @@ theorem repaired_completes :
 /-- **The previous epoch's approvals fail after the reconfiguration.** -/
 theorem old_approvals_fail :
     gate repaired4.roster (envelope repaired4) (envelope repaired4) renewed.installation request
-      (correctReads initial request) (correctApprovals initial request) = false := by decide
+      (faithfulReads initial request) (faithfulApprovals initial request) = false := by decide
 
 /-- The original installation with reserve 12. -/
 def lowReserve : Managed := ⟨separate3, {initial with state := {initial.state with reserve := 12}}⟩
@@ -618,7 +618,7 @@ theorem combined_draw_steps : Enabled process combinedReserve toRepaired :=
 /-- **After the repaired step, the earlier epoch's approvals fail the gate.** -/
 theorem repaired_step_rejects_old {next : Managed} (step : process.step original toRepaired next) :
     gate repaired4.roster (envelope repaired4) (envelope repaired4) next.installation request
-      (correctReads initial request) (correctApprovals initial request) = false :=
+      (faithfulReads initial request) (faithfulApprovals initial request) = false :=
   renewed_of_step step ▸ old_approvals_fail
 
 /-- **After the repaired step, the surviving members complete the shutdown.** -/

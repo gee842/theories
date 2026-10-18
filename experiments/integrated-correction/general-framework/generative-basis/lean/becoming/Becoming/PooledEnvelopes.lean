@@ -14,7 +14,7 @@ the pooled envelope is sound whichever remaining model is actual.
   an accepted certificate while the pool is not empty (`refinement_preserves_certificate`) and a
   separated pool separated (`refinement_preserves_separation`); an empty family certifies nothing
   (`empty_family_rejects`); and a separated pool holding the actual model, in particular after a
-  faithful test, completes a guarded correction with faithful members (`member_completes`,
+  faithful test, completes a guarded transaction with faithful members (`member_completes`,
   `pooled_completes`).
 * **Computed cases.** Three models of four members: each is ready but their pool is not; the
   survivors of the actual faults can be insufficient before diagnosis; a diagnosis need not
@@ -29,7 +29,7 @@ the pooled envelope is sound whichever remaining model is actual.
   selected, with the common envelope learned no inspection is needed, and with too little reserve
   or no inspection open no listed plan is uniform; sufficient evidence can leave too little to act,
   enough completes the shutdown, a slower inspection of the same accuracy misses the deadline, the
-  actual certificate needs no uniform pool, and no candidates give no correction.
+  actual certificate needs no uniform pool, and no candidates give no completion.
 * **As a process.** An inspection or the response is a step of one process on situations
   (`inquiry`, `probe_some`, `respond_some`); along every run the actual model stays a candidate
   (`actual_kept`), the candidates only narrow (`candidates_narrow`), separation and acceptance are
@@ -125,7 +125,7 @@ theorem empty_family_rejects (roster : List Domain) {H : Type}
     certificate roster (pooled describe []) supports = false := rfl
 
 /-- **A separated pool of models holding the actual one, with faithful, responsive members working
-under covered causes, completes a guarded correction within the scope.** -/
+under covered causes, completes a guarded transaction within the scope.** -/
 theorem member_completes {H : Type} (describe : H → Arrangement)
     (models : List H) (actual : H) (known : actual ∈ models)
     (roots : List Nat) (covered : Covered (describe actual) roots)
@@ -167,7 +167,7 @@ theorem member_completes {H : Type} (describe : H → Arrangement)
       | ⟨s, c⟩ => ⟨s, c, within⟩
 
 /-- **A separated pool after a faithful test, with faithful, responsive members working under
-covered causes, completes a guarded correction within the scope.** -/
+covered causes, completes a guarded transaction within the scope.** -/
 theorem pooled_completes {H : Type} (describe : H → Arrangement)
     (models : List H) (test : H → Bool) (actual : H) (known : actual ∈ models)
     (roots : List Nat) (covered : Covered (describe actual) roots)
@@ -430,8 +430,8 @@ theorem actual_certificate_without_uniform_pool :
     poolReady (pooled describe hypotheses) = false ∧
     achieved (final (initialSituation .left [] 11 11) .reuse) = true := by decide
 
-/-- **No candidates, no correction.** -/
-theorem empty_candidates_no_correction :
+/-- **No candidates, no completion.** -/
+theorem empty_candidates_no_completion :
     achieved (final (initialSituation .left [] 20 20 []) .reuse) = false := by decide
 
 /-! ## The inquiry as a process -/
@@ -597,7 +597,7 @@ theorem empty_candidates_trace_fails :
       ∀ out, Trace inquiry (initialSituation .left [] 20 20 []) [some .reuse, none] out →
         achieved out = false :=
   ⟨trace_of_final_ne (fun same => nomatch congrArg Situation.record same),
-   fun _ tr => final_of_trace tr ▸ empty_candidates_no_correction⟩
+   fun _ tr => final_of_trace tr ▸ empty_candidates_no_completion⟩
 
 /-- **Under pooled unknowns, the inspection traces complete from every listed situation.** -/
 theorem listed_inspect_traces_complete :

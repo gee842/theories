@@ -26,7 +26,7 @@ refuses a command outside the scope.
   (`succeeded_gate`), lies within the scope where the issuers are faithful
   (`execute_within_scope`), fails for a forbidden command (`forbidden_fails`), advances the serial
   (`success_advances_serial`) and so blocks its replay (`success_blocks_replay`); certificates
-  available under separated envelopes complete a correction within the scope
+  available under separated envelopes complete the requested change within the scope
   (`certified_completes`). The guard refuses a forbidden command whatever the issuers
   (`guard_blocks_forbidden`), is the transaction itself for a permitted one
   (`guard_permitted_same`), and keeps every success within the scope (`guard_keeps_success`).
@@ -388,7 +388,7 @@ theorem success_blocks_replay (roster : List Domain) (rf af : Envelope)
         current))
 
 /-- **Certificates available under separated envelopes, with faithful domains outside the actual
-fault sets and the reserve and time covering the transaction, complete a correction within the
+fault sets and the reserve and time covering the transaction, complete the requested change within the
 scope.** -/
 theorem certified_completes (roster : List Domain) (rf af : Envelope)
     (w : Installation) (p : Request) (reads : Readings) (approvals : Approvals)
@@ -460,15 +460,15 @@ def initial : Installation := ⟨.endpoint true, start true .shutdown 20 20, 0, 
 /-- A shutdown request at the root of the current epoch and serial. -/
 def request : Request := ⟨7, 0, [], true, .shutdown⟩
 /-- Every reader reports the installation. -/
-def correctReads (w : Installation) (p : Request) : Readings := fun _ => some (observed w p.address)
+def faithfulReads (w : Installation) (p : Request) : Readings := fun _ => some (observed w p.address)
 /-- Every issuer approves a request within the scope. -/
-def correctApprovals (w : Installation) (p : Request) : Approvals :=
+def faithfulApprovals (w : Installation) (p : Request) : Approvals :=
   fun _ => match withinScope w p with | true => some p | false => none
 
 /-- **One issuer approving alone does not widen the scope.** -/
 theorem single_issuer_rejected :
     gate roster3 singleFault singleFault initial {request with command := .update}
-      (correctReads initial {request with command := .update})
+      (faithfulReads initial {request with command := .update})
       (fun d => if d = 0 then some {request with command := .update} else none) = false := by
   decide
 
@@ -491,25 +491,25 @@ theorem two_domains_complete :
 /-- **A consumed request cannot be replayed.** -/
 theorem consumed_rejected :
     gate roster3 singleFault singleFault
-      (execute roster3 singleFault singleFault initial request (correctReads initial request)
-        (correctApprovals initial request)).installation
-      request (correctReads initial request) (correctApprovals initial request) = false := by
+      (execute roster3 singleFault singleFault initial request (faithfulReads initial request)
+        (faithfulApprovals initial request)).installation
+      request (faithfulReads initial request) (faithfulApprovals initial request) = false := by
   decide
 
 /-- **Changing the command invalidates the approvals.** -/
 theorem changed_command_rejected :
     gate roster3 singleFault singleFault initial {request with command := .update}
-      (correctReads initial request) (correctApprovals initial request) = false := by decide
+      (faithfulReads initial request) (faithfulApprovals initial request) = false := by decide
 
 /-- **A single-fault model admits a forbidden update from a correlated pair of issuers; the
 correlated model rejects it.** -/
 theorem single_fault_model_admits_forbidden :
     (execute roster3 singleFault singleFault initial {request with command := .update}
-        (correctReads initial {request with command := .update})
+        (faithfulReads initial {request with command := .update})
         (fun d => if d = 2 then none else some {request with command := .update})).succeeded = true ∧
       permits initial.scope Command.update = false ∧
       gate roster3 correlated3 correlated3 initial {request with command := .update}
-        (correctReads initial {request with command := .update})
+        (faithfulReads initial {request with command := .update})
         (fun d => if d = 2 then none else some {request with command := .update}) = false := by
   decide
 
@@ -531,18 +531,18 @@ def lowReserve : Installation := {initial with state := start true .shutdown 8 2
 
 /-- **Accurate redundancy can exhaust the reserve: the load is drawn, three are not left.** -/
 theorem redundancy_exhausts_reserve :
-    ((execute roster3 singleFault singleFault lowReserve request (correctReads lowReserve request)
-        (correctApprovals lowReserve request)).succeeded,
-      (execute roster3 singleFault singleFault lowReserve request (correctReads lowReserve request)
-        (correctApprovals lowReserve request)).installation.state.drawn,
-      (execute roster3 singleFault singleFault lowReserve request (correctReads lowReserve request)
-        (correctApprovals lowReserve request)).installation.state.reserve) = (false, 6, 2) := by
+    ((execute roster3 singleFault singleFault lowReserve request (faithfulReads lowReserve request)
+        (faithfulApprovals lowReserve request)).succeeded,
+      (execute roster3 singleFault singleFault lowReserve request (faithfulReads lowReserve request)
+        (faithfulApprovals lowReserve request)).installation.state.drawn,
+      (execute roster3 singleFault singleFault lowReserve request (faithfulReads lowReserve request)
+        (faithfulApprovals lowReserve request)).installation.state.reserve) = (false, 6, 2) := by
   decide
 
 /-- **The direct guard repairs the correlated failure.** -/
 theorem guard_blocks_correlated :
     (guardedExecute roster3 singleFault singleFault initial {request with command := .update}
-      (correctReads initial {request with command := .update})
+      (faithfulReads initial {request with command := .update})
       (fun d => if d = 2 then none else some {request with command := .update})).succeeded =
       false := by decide
 
@@ -554,19 +554,19 @@ def narrowedScope : Installation := {initial with scope := ⟨false, false, fals
 /-- **Readings of the earlier tree, with matching labels, pass the gate of the changed
 installation, yet the guarded transaction does not succeed.** -/
 theorem old_readings_pass_gate :
-    gate roster3 singleFault singleFault changedRoot request (correctReads initial request)
-        (correctApprovals initial request) = true ∧
+    gate roster3 singleFault singleFault changedRoot request (faithfulReads initial request)
+        (faithfulApprovals initial request) = true ∧
       (guardedExecute roster3 singleFault singleFault changedRoot request
-        (correctReads initial request) (correctApprovals initial request)).succeeded = false := by
+        (faithfulReads initial request) (faithfulApprovals initial request)).succeeded = false := by
   decide
 
 /-- **Approvals of an unchanged request complete under a narrowed scope only without the
 guard.** -/
 theorem narrowed_scope_guarded :
-    (execute roster3 singleFault singleFault narrowedScope request (correctReads initial request)
-        (correctApprovals initial request)).succeeded = true ∧
+    (execute roster3 singleFault singleFault narrowedScope request (faithfulReads initial request)
+        (faithfulApprovals initial request)).succeeded = true ∧
       (guardedExecute roster3 singleFault singleFault narrowedScope request
-        (correctReads initial request) (correctApprovals initial request)).succeeded = false := by
+        (faithfulReads initial request) (faithfulApprovals initial request)).succeeded = false := by
   decide
 
 /-! ## The monitor as a process -/
@@ -745,7 +745,7 @@ theorem guarded_keeps_completion {w w' : Installation} {x : Transaction}
 scope.** -/
 theorem single_issuer_no_completion :
     ∀ w', ¬ (monitor roster3 singleFault singleFault).step initial
-      (⟨{request with command := .update}, correctReads initial {request with command := .update},
+      (⟨{request with command := .update}, faithfulReads initial {request with command := .update},
         fun d => if d = 0 then some {request with command := .update} else none⟩, true) w' :=
   gate_closed_no_completion single_issuer_rejected
 
@@ -765,26 +765,26 @@ theorem two_faithful_completion :
 installation.** -/
 theorem consumed_no_trace {w'' : Installation} :
     ¬ Trace (monitor roster3 singleFault singleFault) initial
-      [(⟨request, correctReads initial request, correctApprovals initial request⟩, true),
-       (⟨request, correctReads initial request, correctApprovals initial request⟩, true)] w'' :=
+      [(⟨request, faithfulReads initial request, faithfulApprovals initial request⟩, true),
+       (⟨request, faithfulReads initial request, faithfulApprovals initial request⟩, true)] w'' :=
   replay_no_trace rfl _ _
 
 /-- **Approvals of the shutdown give no completed move of a changed command.** -/
 theorem changed_command_no_completion :
     ∀ w', ¬ (monitor roster3 singleFault singleFault).step initial
-      (⟨{request with command := .update}, correctReads initial request,
-        correctApprovals initial request⟩, true) w' :=
+      (⟨{request with command := .update}, faithfulReads initial request,
+        faithfulApprovals initial request⟩, true) w' :=
   gate_closed_no_completion changed_command_rejected
 
 /-- **Under the single-fault model a correlated pair of issuers completes an update the scope
 forbids; the correlated model gives it no completed move.** -/
 theorem correlated_model_blocks :
     (∃ w', (monitor roster3 singleFault singleFault).step initial
-        (⟨{request with command := .update}, correctReads initial {request with command := .update},
+        (⟨{request with command := .update}, faithfulReads initial {request with command := .update},
           fun d => if d = 2 then none else some {request with command := .update}⟩, true) w') ∧
       permits initial.scope Command.update = false ∧
       ∀ w', ¬ (monitor roster3 correlated3 correlated3).step initial
-        (⟨{request with command := .update}, correctReads initial {request with command := .update},
+        (⟨{request with command := .update}, faithfulReads initial {request with command := .update},
           fun d => if d = 2 then none else some {request with command := .update}⟩, true) w' :=
   match single_fault_model_admits_forbidden with
   | ⟨completes, forbidden, closed⟩ =>
@@ -801,14 +801,14 @@ theorem distinct_support_completion :
     congrArg (fun v => v.2.1) distinct_support_completes,
     congrArg (fun v => v.2.2) distinct_support_completes⟩
 
-/-- **Accurate redundancy can exhaust the reserve: from reserve eight, the correct transaction's
+/-- **Accurate redundancy can exhaust the reserve: from reserve eight, the faithfully certified transaction's
 only move does not complete, leaving six drawn and two in reserve.** -/
 theorem redundancy_exhausts :
     (∃ w', (monitor roster3 singleFault singleFault).step lowReserve
-        (⟨request, correctReads lowReserve request, correctApprovals lowReserve request⟩, false) w' ∧
+        (⟨request, faithfulReads lowReserve request, faithfulApprovals lowReserve request⟩, false) w' ∧
         w'.state.drawn = 6 ∧ w'.state.reserve = 2) ∧
       ∀ w', ¬ (monitor roster3 singleFault singleFault).step lowReserve
-        (⟨request, correctReads lowReserve request, correctApprovals lowReserve request⟩, true) w' :=
+        (⟨request, faithfulReads lowReserve request, faithfulApprovals lowReserve request⟩, true) w' :=
   ⟨⟨_, failed_of (congrArg Prod.fst redundancy_exhausts_reserve),
       congrArg (fun v => v.2.1) redundancy_exhausts_reserve,
       congrArg (fun v => v.2.2) redundancy_exhausts_reserve⟩,
@@ -818,17 +818,17 @@ theorem redundancy_exhausts :
 update no completed move.** -/
 theorem direct_guard_no_completion :
     ∀ w', ¬ (guardedMonitor roster3 singleFault singleFault).step initial
-      (⟨{request with command := .update}, correctReads initial {request with command := .update},
+      (⟨{request with command := .update}, faithfulReads initial {request with command := .update},
         fun d => if d = 2 then none else some {request with command := .update}⟩, true) w' :=
   fun _ h => nomatch guard_blocks_correlated.symm.trans (congrArg Outcome.succeeded h)
 
 /-- **Readings of the earlier tree pass the gate of the changed installation, yet the guarded
 monitor gives them no completed move.** -/
 theorem old_readings_no_completion :
-    gate roster3 singleFault singleFault changedRoot request (correctReads initial request)
-        (correctApprovals initial request) = true ∧
+    gate roster3 singleFault singleFault changedRoot request (faithfulReads initial request)
+        (faithfulApprovals initial request) = true ∧
       ∀ w', ¬ (guardedMonitor roster3 singleFault singleFault).step changedRoot
-        (⟨request, correctReads initial request, correctApprovals initial request⟩, true) w' :=
+        (⟨request, faithfulReads initial request, faithfulApprovals initial request⟩, true) w' :=
   match old_readings_pass_gate with
   | ⟨passes, failed⟩ =>
     ⟨passes, fun _ h => nomatch failed.symm.trans (congrArg Outcome.succeeded h)⟩
@@ -837,9 +837,9 @@ theorem old_readings_no_completion :
 the guarded monitor.** -/
 theorem narrowed_scope_monitor :
     (∃ w', (monitor roster3 singleFault singleFault).step narrowedScope
-        (⟨request, correctReads initial request, correctApprovals initial request⟩, true) w') ∧
+        (⟨request, faithfulReads initial request, faithfulApprovals initial request⟩, true) w') ∧
       ∀ w', ¬ (guardedMonitor roster3 singleFault singleFault).step narrowedScope
-        (⟨request, correctReads initial request, correctApprovals initial request⟩, true) w' :=
+        (⟨request, faithfulReads initial request, faithfulApprovals initial request⟩, true) w' :=
   match narrowed_scope_guarded with
   | ⟨completes, failed⟩ =>
     ⟨⟨_, completed_of completes⟩,

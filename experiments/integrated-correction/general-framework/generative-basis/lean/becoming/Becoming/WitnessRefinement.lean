@@ -24,12 +24,12 @@ missing report constrains nothing.
   `Readout.no_common_report_envelopes_iff` read on these reports (`explains_complete_iff`,
   `compatible_complete_iff`).
 * **Refined pools.** A certificate over the refined pool is sound for the actual arrangement
-  (`refined_pool_sound`) and, separated, completes a guarded correction (`refined_completes`).
+  (`refined_pool_sound`) and, separated, completes a guarded transaction (`refined_completes`).
 * **Computed cases.** Conflicting models each certify themselves; four witnesses cannot separate a
   split transcript, a fifth diagnostic witness resolves the distinction, its absence keeps the
   uncertainty, it is still fallible, and duplicating its support repairs nothing; an inspection
   that draws one unit per witness and then responds completes the shutdown with five witnesses,
-  leaves the correction uncertified with four, and needs reserve left to respond; denied
+  leaves the requested change uncertified with four, and needs reserve left to respond; denied
   inspection collects nothing; an uncovered correlated failure of witnesses can delete the actual
   model.
 * **As a process.** An inspection by a transcript or the response is a step of one process on
@@ -267,7 +267,7 @@ theorem refined_pool_sound {H : Type} (roster : List Domain)
     roots covered supports P reliable accepted
 
 /-- **A separated refined pool, with faithful, responsive members, completes a guarded
-correction within the scope.** The installation is the one left after the inspection; its
+transaction within the scope.** The installation is the one left after the inspection; its
 reserve must still cover the response. -/
 theorem refined_completes {H : Type} (roster : List Domain)
     (faults : H → Envelope) (answer : H → Bool) (describe : H → Arrangement)
@@ -436,7 +436,7 @@ theorem inspection_then_shutdown :
     (outcome true splitReports (initialSituation .left [0] 16 16)).installation.serial = 1 := by
   decide
 
-/-- **Inadequate witnesses leave the correction uncertified.** -/
+/-- **Inadequate witnesses leave the requested change uncertified.** -/
 theorem inadequate_witnesses_uncertified :
     (outcome false splitReports (initialSituation .left [0] 16 16)).candidates = hypotheses ∧
     achieved (outcome false splitReports (initialSituation .left [0] 16 16)) = false ∧
@@ -648,7 +648,7 @@ theorem extended_trace_completes :
       nomatch (congrArg achieved same).symm.trans inspection_then_shutdown.2.1),
    fun _ tr => outcome_of_trace tr ▸ inspection_then_shutdown⟩
 
-/-- **Four witnesses leave the correction uncertified, as traces.** -/
+/-- **Four witnesses leave the requested change uncertified, as traces.** -/
 theorem four_witness_trace_uncertified :
     Trace (audit false) (initialSituation .left [0] 16 16) [some splitReports, none]
         (outcome false splitReports (initialSituation .left [0] 16 16)) ∧

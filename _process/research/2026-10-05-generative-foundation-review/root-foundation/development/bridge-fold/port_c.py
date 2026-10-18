@@ -195,7 +195,7 @@ mod('EvidenceQualifiedCorrection', GC + 'EvidenceQualifiedCorrection.lean', Fals
     ('acquired_evidence_then_real_shutdown', 'evidence_then_shutdown'),
     ('slower_equally_accurate_inspection_misses_deadline', 'slow_misses_deadline'),
     ('lack_of_uniform_availability_does_not_forbid_actual_certificate', 'actual_certificate_without_uniform_pool'),
-    ('empty_survivors_do_not_authorize_correction', 'empty_candidates_no_correction'),
+    ('empty_survivors_do_not_authorize_correction', 'empty_candidates_no_completion'),
 ]), note='The periphery used `Quot.sound` (through `funext`) in `inspected_actual_model_is_retained`; the core '
          'statement `probe_keeps_actual` needs no axiom. `evidence_qualified_completion` goes through the new '
          'general helper `member_completes` (a model holding at the actual arrangement completes). '

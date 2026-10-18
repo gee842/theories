@@ -5,7 +5,7 @@ import Becoming.Keeping
 /-!
 # Guard horizon: keeping a guard by a choice of moves, over a horizon, from readings
 
-A guard marks the configurations in which correction stays possible. On a process, the guard is
+A guard marks the configurations in which a requested change can still be carried out. On a process, the guard is
 kept for `n` steps from a configuration where it holds there and, for `n` more, some enabled move
 leads only to configurations keeping it for one step fewer (`Viable`); such a move is admissible
 (`Admissible`). This is the controlled reading of the core's viability law (`Viability`), where
@@ -414,7 +414,7 @@ theorem overlapping_handoff_keeps_access :
     | _, .tail _ (.head _) => .inl rfl
     | _, .tail _ (.tail _ (.head _)) => .inr rfl
 
-/-- **The old route may be retired: preserving correction is not freezing a route.** -/
+/-- **The old route may be retired: keeping access is not freezing a route.** -/
 theorem route_retirement_allowed : RouteAccess (false, true) ∧ (false, true).1 ≠ true :=
   ⟨.inr rfl, fun e => nomatch e⟩
 

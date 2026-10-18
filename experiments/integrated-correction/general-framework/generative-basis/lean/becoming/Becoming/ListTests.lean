@@ -1,7 +1,7 @@
 /-!
 # Boolean tests over lists and options, constructively
 
-The correction models of the core (`Becoming.ContingentPlans` and the modules after it) decide
+The core's models of a requested change carried out (`Becoming.ContingentPlans` and the modules after it) decide
 their conditions by Boolean tests over finite lists: every member passes (`List.all`), some
 member passes (`List.any`), the first member that passes (`List.find?`), the members that pass
 (`List.filter`), membership by equality (`List.contains`), and options that hold a value

@@ -1,7 +1,7 @@
 /-!
 # Naturals: the subtraction and order laws of the core's drawn amounts, constructively
 
-The correction models of the core (`Becoming.Actuation` and the modules after it) draw amounts
+The core's models of a requested change carried out (`Becoming.Actuation` and the modules after it) draw amounts
 from a reserve with truncated subtraction and compare them with an order. Lean's prelude proves
 several of the laws they need (`Nat.sub_add_cancel`, `Nat.add_sub_cancel`, `Nat.sub_sub`, …)
 with `propext`, so the core cannot cite them. This module proves the ones the models use, by

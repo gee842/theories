@@ -224,7 +224,7 @@ Source: `universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean`.
 | `acquired_evidence_then_real_shutdown` | none | same | `Becoming.PooledEnvelopes.evidence_then_shutdown` | stated on the core, constructive |
 | `slower_equally_accurate_inspection_misses_deadline` | none | same | `Becoming.PooledEnvelopes.slow_misses_deadline` | stated on the core, constructive |
 | `lack_of_uniform_availability_does_not_forbid_actual_certificate` | none | same | `Becoming.PooledEnvelopes.actual_certificate_without_uniform_pool` | stated on the core, constructive |
-| `empty_survivors_do_not_authorize_correction` | none | same | `Becoming.PooledEnvelopes.empty_candidates_no_correction` | stated on the core, constructive |
+| `empty_survivors_do_not_authorize_correction` | none | same | `Becoming.PooledEnvelopes.empty_candidates_no_completion` | stated on the core, constructive |
 
 ### FallibleInspection
 

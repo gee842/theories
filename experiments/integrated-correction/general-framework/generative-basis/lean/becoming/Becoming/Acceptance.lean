@@ -3,8 +3,8 @@ import Becoming.IntegerOrder
 /-!
 # Acceptance: an accept bit given priority over a base score, and what it does not protect
 
-Correction happens within one activity; a choice there pairs a base move with a bit saying
-whether correction is accepted. A choice is best among the allowed ones by a score where no
+A requested change, such as a stop, happens within one activity; a choice there pairs a base
+move with a bit saying whether the request is accepted. A choice is best among the allowed ones by a score where no
 allowed choice scores more (`Best`); the score with acceptance adds a positive lift to the base
 score of an accepting choice (`AcceptScore`). This is an algebraic interface to the acceptance
 construction of the corrigibility literature, not a proof of its equilibrium theorem; the base
@@ -12,11 +12,11 @@ score is a supplied integer value of a move, including whatever future effects i
 
 * **Acceptance factors.** With a positive lift, a choice is best by the score with acceptance
   exactly where it accepts and its move is best by the base score (`acceptance_factorization`);
-  so every best choice keeps access to correction exactly where every best base move does
+  so every best choice keeps access for a requested change exactly where every best base move does
   (`every_optimum_has_access_iff`), and where no best base move keeps it, acceptance restores
   nothing (`no_base_optimal_access`).
 * **Acceptance does not maintain access.** Where diverting the resource that
-  keeps correction possible scores more, the best choice accepts and diverts
+  keeps a requested change possible scores more, the best choice accepts and diverts
   (`maintenance_separation`, `accepting_optimum_can_destroy_access`); a fixed separate weight for
   keeping access fails against a larger diversion value (`fixed_access_weight_boundary`,
   `every_fixed_access_weight_has_counterexample`), and keeps access exactly where it exceeds the
@@ -33,7 +33,7 @@ score is a supplied integer value of a move, including whatever future effects i
   (`approximate_score_bound_tight`).
 
 Access, the lift and the semantics of a legitimate command are supplied; nothing here derives a
-warrant for correction or certifies a learned correspondence. This states the score part of
+warrant for a requested change or certifies a learned correspondence. This states the score part of
 `CorrectionInfrastructure` (8 October) in the core (board item F3C, 18 October 2026), with the
 words of exchange replaced: the acceptance `bonus` is a `lift`, the maintenance `cost` is a
 `diversion` value. No premise; every declaration has an empty axiom report.
@@ -101,7 +101,7 @@ theorem no_base_optimal_access {A : Type} (allowed access : A → Prop)
 
 /-! ## Maintaining access -/
 
-/-- The base value of diverting the resource that keeps correction possible (`true`) or
+/-- The base value of diverting the resource that keeps a requested change possible (`true`) or
 maintaining it (`false`). -/
 def MaintenanceValue (diversion : Int) : Bool → Int
   | true => diversion
