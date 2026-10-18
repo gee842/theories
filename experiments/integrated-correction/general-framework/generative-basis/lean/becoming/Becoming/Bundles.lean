@@ -269,6 +269,59 @@ theorem retained_left_only :
    (history_meaning retainedLeft _).mp retainedLeft_only.2.1,
    fun right => retainedLeft_only.2.2 ((history_meaning retainedLeft _).mpr right)⟩
 
+/-- **The joint content of the law is the configuration with both active**: a configuration
+realizing both claims is `bothActive`. From the bridge's reading of the law. -/
+theorem joint_content_both {s : Configuration} (content : ∀ c, realizedAt s c) :
+    s = .bothActive :=
+  match content .leftRealized, content .rightRealized with
+  | .inl left, .inl right => Configuration.noConfusion (left.symm.trans right)
+  | _, .inr both => both
+  | .inr both, _ => both
+
+/-- Configurations past the release: released, or one side active. -/
+def PastRelease (s : Configuration) : Prop :=
+  s = .released ∨ s = .leftActive ∨ s = .rightActive
+
+/-- A step keeps a configuration past the release. -/
+theorem PastRelease.step {s m : Configuration} {a : Event} (step : Step s a m)
+    (past : PastRelease s) : PastRelease m :=
+  match step, past with
+  | .retainCoupling, .inl e => Configuration.noConfusion e
+  | .retainCoupling, .inr (.inl e) => Configuration.noConfusion e
+  | .retainCoupling, .inr (.inr e) => Configuration.noConfusion e
+  | .releaseCoupling, .inl e => Configuration.noConfusion e
+  | .releaseCoupling, .inr (.inl e) => Configuration.noConfusion e
+  | .releaseCoupling, .inr (.inr e) => Configuration.noConfusion e
+  | .activateLeftCoupled, .inl e => Configuration.noConfusion e
+  | .activateLeftCoupled, .inr (.inl e) => Configuration.noConfusion e
+  | .activateLeftCoupled, .inr (.inr e) => Configuration.noConfusion e
+  | .activateRightCoupled, .inl e => Configuration.noConfusion e
+  | .activateRightCoupled, .inr (.inl e) => Configuration.noConfusion e
+  | .activateRightCoupled, .inr (.inr e) => Configuration.noConfusion e
+  | .activateTogether, .inl e => Configuration.noConfusion e
+  | .activateTogether, .inr (.inl e) => Configuration.noConfusion e
+  | .activateTogether, .inr (.inr e) => Configuration.noConfusion e
+  | .activateLeftReleased, _ => .inr (.inl rfl)
+  | .activateRightReleased, _ => .inr (.inr rfl)
+
+/-- **Every trace of the law keeps a configuration past the release.** -/
+theorem PastRelease.trace : ∀ {s t : Configuration} {word : List Event},
+    Trace law s word t → PastRelease s → PastRelease t
+  | _, _, _, .nil _, past => past
+  | _, _, _, .cons step path, past => PastRelease.trace path (PastRelease.step step past)
+
+/-- Both active is not past the release. -/
+theorem PastRelease.not_both : ¬ PastRelease .bothActive
+  | .inl e => Configuration.noConfusion e
+  | .inr (.inl e) => Configuration.noConfusion e
+  | .inr (.inr e) => Configuration.noConfusion e
+
+/-- **After the release no trace reaches the joint content.** -/
+theorem PastRelease.no_joint {s t : Configuration} {word : List Event} (past : PastRelease s)
+    (path : Trace law s word t) : ¬ ∀ c, realizedAt t c :=
+  fun content => PastRelease.not_both
+    (Eq.subst (motive := PastRelease) (joint_content_both content) (PastRelease.trace path past))
+
 end Activation
 
 namespace Regimes

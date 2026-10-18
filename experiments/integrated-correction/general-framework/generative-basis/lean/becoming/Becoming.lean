@@ -208,6 +208,12 @@ import Becoming.SelectionReach
 import Becoming.SelectionPool
 import Becoming.PoolResponse
 import Becoming.LawThroughCoupling
+import Becoming.Lexical
+import Becoming.Frontier
+import Becoming.ScoreRepresentation
+import Becoming.Alternatives
+import Becoming.Bundles
+import Becoming.Narrowing
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1106,6 +1112,35 @@ readings of the unfolding (`Becoming.Labelled`).
   (`g0_relevance_iff`), and left the comparison of courses to the AI, which compares courses on
   possibilities.
 
+* `Becoming.Lexical` (L4): the lexical order of configurations by basic claims, then gains
+  (`Above`), which asserts nothing; that a comparison is this order, protection first (J1/J2),
+  is the condition `BasicPriority`, which theorems take. Adjoined contents, crossed growth, fresh
+  gains and fresh basic claims; classification of fresh contents, with the decisions it needs
+  named, and the calibration that the characterization of preference under every
+  classification holds generally exactly when excluded middle does; along a generative
+  extension no decision is needed. Ported from `PracticalJudgment`, `ConcernExtension` and
+  `ClassificationRobustJudgment` (F3J, 18 October 2026).
+* `Becoming.Frontier` (L4): the frontier of a comparison among eligible alternatives, what it
+  requires, assignment, succession of service and discharge; the frontier exists where the
+  comparison is weakly decided on a listed menu, and under `BasicPriority` it is the lexical
+  frontier. Models: formation on a drawn amount (as steps of a process), handover of service,
+  collective requirement, routes under classification. Ported from `PracticalJudgment`,
+  `RelationalOrganization` and `AlignmentDirection` (F3J).
+* `Becoming.ScoreRepresentation` (L4): C does not yield protection first: every comparison by
+  a natural-number score satisfying C outranks protection by enough gains, while a bounded
+  rational score represents the lexical order. Ported from `ProtectionPriorityRival` (F3J).
+* `Becoming.Alternatives` (L4): alternatives of one history realizing configurations; C, P and
+  N on them, the survivors of an extension filter as lifted survivors, and two appraisals with
+  different coherent selections. Ported from `GenerativeComparison` (F3J).
+* `Becoming.Bundles` (L4): joint bundles of claims over regions of configurations: carrying
+  whole profiles is preserving bundles; the same marginal realizations can lose a joint
+  bundle; regimes of an activation law compared by their joint bundles, not their marginals.
+  Ported from `JointContinuationClassification` and `RelationalGrounding` (F3J).
+* `Becoming.Narrowing` (L4): learning a rule by narrowing a belief through observation: a
+  belief over candidate rules narrowed by `After` on the pure observation of their values keeps
+  exactly the fitting candidates; the answer procedure answers what the narrowed belief settles,
+  safely and as the greatest safe answer; faithful acquisition answers correctly and re-encoding
+  transports learning. Ported from `StandardsBridge` (F3J).
 * `Becoming.Assurance` (L2): when a plan secures its target, with no premise. For every
   process a completing plan runs, safely, into the goal; for every determined process the
   converse holds, so completion is exactly a safe run ending in the goal, and with no safety

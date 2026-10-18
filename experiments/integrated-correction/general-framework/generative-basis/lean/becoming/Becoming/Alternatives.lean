@@ -1,5 +1,6 @@
 import Becoming.Metaethics
 import Becoming.Relevance
+import Becoming.Lifting
 
 /-!
 # Alternatives realizing configurations: C, P and N on them
@@ -7,8 +8,8 @@ import Becoming.Relevance
 A set of alternatives of one history realizes each feasible alternative as a configuration of a
 frame (`Alternatives`): the alternatives are differentiated responses within the history, not
 independent choosers. Living significance (`G0`), C (`Comparison`), the articulation P
-(`Articulation`: a strict comparison of two feasible alternatives' configurations gives a
-reason to move) and the coherence N (`Coherent`: a selected alternative is feasible and no
+(`Alternatives.Articulation`: a strict comparison of two feasible alternatives' configurations gives a
+reason to move) and the coherence N (`Alternatives.Coherent`: a selected alternative is feasible and no
 feasible one is strictly better) are separate conditions; each theorem names those it takes. P
 supplies a reason, not an obligation, permission or compliance. The conditional selection
 results use C and N, not living significance.
@@ -21,7 +22,11 @@ restated. Every declaration has an empty axiom report.
 
 * **A new realization of an extension has positive relevance** under living significance
   (`G0.new_realization`); under the continuation condition, positive relevance read from
-  significance (`extension_new_relevance`, from the join `ExtensionFrames`).
+  significance (`Extension.new_relevance`, from the join `ExtensionFrames`).
+* **Survivors are lifted survivors.** On the step of a set of alternatives, an alternative
+  survives exactly when no live alternative liftedly extends it
+  (`Alternatives.survives_iff_lifted`), and restricting the alternatives keeps such a survivor
+  (`Alternatives.restricted_survives`), both from the join `ExtensionFrames`.
 * **C and P give a reason** for moving between feasible alternatives whose configurations extend
   (`Alternatives.reason_of_extension`). **C and N**: a coherently selected alternative is not
   extended by a feasible one (`Alternatives.survives_of_coherent`); restricting the feasible
@@ -68,7 +73,7 @@ theorem G0.new_realization {F : Frame S A C} {living : C → Prop} {positive : S
 read from significance**: living significance holds of that relevance (`g0_of_unrestricted`), so
 an extension realizes living content with significance that the earlier configuration lacked.
 Ported from the join `ExtensionFrames`. -/
-theorem extension_new_relevance {Q F Pos : Type} (M : Frame S A Q) (living : Q → Prop)
+theorem Extension.new_relevance {Q F Pos : Type} (M : Frame S A Q) (living : Q → Prop)
     {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) (formation : Q → F)
     (step : Q → Nat) {s t : S} (extension : Extension M living s t) :
     ∃ c, M.relevance living sig formation step t c ∧ ¬ M.realized s c :=
@@ -78,31 +83,31 @@ variable {R : Type}
 
 /-- P: a strict comparison of two feasible alternatives' configurations gives a reason to move
 from the first to the second. -/
-def Articulation (X : Alternatives S R) (Better : S → S → Prop) (Reason : R → R → Prop) : Prop :=
+def Alternatives.Articulation (X : Alternatives S R) (Better : S → S → Prop) (Reason : R → R → Prop) : Prop :=
   ∀ a b, X.feasible a → X.feasible b → Better (X.realize a) (X.realize b) → Reason a b
 
 /-- N: a selected alternative is feasible, and no feasible alternative is strictly better. -/
-def Coherent (X : Alternatives S R) (Better : S → S → Prop) (Selected : R → Prop) : Prop :=
+def Alternatives.Coherent (X : Alternatives S R) (Better : S → S → Prop) (Selected : R → Prop) : Prop :=
   ∀ a, Selected a → X.feasible a ∧ ∀ b, X.feasible b → ¬ Better (X.realize a) (X.realize b)
 
 /-- A feasible alternative no feasible alternative generatively extends. Surviving this filter
 establishes no permission or duty. -/
-def Survives (F : Frame S A C) (living : C → Prop) (X : Alternatives S R) (a : R) : Prop :=
+def Alternatives.Survives (F : Frame S A C) (living : C → Prop) (X : Alternatives S R) (a : R) : Prop :=
   X.feasible a ∧ ∀ b, X.feasible b → ¬ Extension F living (X.realize a) (X.realize b)
 
 variable {F : Frame S A C} {living : C → Prop} {X : Alternatives S R} {Better : S → S → Prop}
 
 /-- **C and P give a reason** to move to a feasible alternative whose configuration extends. -/
 theorem Alternatives.reason_of_extension {Reason : R → R → Prop}
-    (comparison : Comparison F living Better) (articulation : Articulation X Better Reason)
+    (comparison : Comparison F living Better) (articulation : Alternatives.Articulation X Better Reason)
     {a b : R} (feasibleA : X.feasible a) (feasibleB : X.feasible b)
     (extension : Extension F living (X.realize a) (X.realize b)) : Reason a b :=
   articulation a b feasibleA feasibleB (comparison _ _ extension)
 
 /-- **C and N**: a coherently selected alternative survives. -/
 theorem Alternatives.survives_of_coherent {Selected : R → Prop}
-    (comparison : Comparison F living Better) (coherent : Coherent X Better Selected) {a : R}
-    (selected : Selected a) : Survives F living X a :=
+    (comparison : Comparison F living Better) (coherent : Alternatives.Coherent X Better Selected) {a : R}
+    (selected : Selected a) : Alternatives.Survives F living X a :=
   match coherent a selected with
   | ⟨feasible, unbeaten⟩ => ⟨feasible, fun b other extension =>
       unbeaten b other (comparison _ _ extension)⟩
@@ -110,15 +115,15 @@ theorem Alternatives.survives_of_coherent {Selected : R → Prop}
 /-- Restricting the feasible alternatives keeps a survivor that remains feasible. Deleting rivals
 removes comparisons; it changes no realization. -/
 theorem Alternatives.survives_restrict (restricted : R → Prop) {a : R}
-    (survives : Survives F living X a) (kept : restricted a) :
-    Survives F living ⟨fun b => X.feasible b ∧ restricted b, X.realize⟩ a :=
+    (survives : Alternatives.Survives F living X a) (kept : restricted a) :
+    Alternatives.Survives F living ⟨fun b => X.feasible b ∧ restricted b, X.realize⟩ a :=
   ⟨⟨survives.1, kept⟩, fun b other => survives.2 b other.1⟩
 
 /-- **Continual improvement leaves no survivor**: where every feasible alternative is extended by
 a feasible one, none survives. -/
 theorem Alternatives.no_survivor
     (improvement : ∀ a, X.feasible a → ∃ b, X.feasible b ∧
-      Extension F living (X.realize a) (X.realize b)) (a : R) : ¬ Survives F living X a :=
+      Extension F living (X.realize a) (X.realize b)) (a : R) : ¬ Alternatives.Survives F living X a :=
   fun survives => match improvement a survives.1 with
   | ⟨b, feasible, extension⟩ => survives.2 b feasible extension
 
@@ -139,6 +144,54 @@ theorem Alternatives.lift_iff (X : Alternatives S R) (s : S) (realized : S → C
    fun held _ ⟨_, _, ha⟩ _ ⟨_, _, hb⟩ =>
     Eq.subst (motive := fun x => better x _) ha.symm
       (Eq.subst (motive := fun y => better (X.realize a) y) hb.symm held)⟩
+
+/-- **The survivors of a set of alternatives are the lifted survivors of its step**: an
+alternative survives the generative-extension filter exactly when it is live at the step and no
+live alternative liftedly extends it (`LiftSurvives`, `Becoming.Lifting`). From the join
+`ExtensionFrames`. -/
+theorem Alternatives.survives_iff_lifted (X : Alternatives S R) (s : S) (realized : S → C → Prop)
+    (living : C → Prop) (a : R) :
+    Alternatives.Survives ⟨X.process s, realized⟩ living X a ↔ LiftSurvives ⟨X.process s, realized⟩ living s a :=
+  ⟨fun ⟨feasibleA, unextended⟩ =>
+    ⟨(X.enabled_iff s a).mpr feasibleA, fun b liveB lifted =>
+      let feasibleB := (X.enabled_iff s b).mp liveB
+      unextended b feasibleB
+        ((X.lift_iff s realized (Extension ⟨X.process s, realized⟩ living) feasibleA
+          feasibleB).mp lifted)⟩,
+   fun ⟨liveA, unextended⟩ =>
+    let feasibleA := (X.enabled_iff s a).mp liveA
+    ⟨feasibleA, fun b feasibleB extension =>
+      unextended b ((X.enabled_iff s b).mpr feasibleB)
+        ((X.lift_iff s realized (Extension ⟨X.process s, realized⟩ living) feasibleA
+          feasibleB).mpr extension)⟩⟩
+
+/-- **P is lifted P on the step of the alternatives**: a reason from every strict comparison of
+feasible alternatives' configurations is a reason from every lifted comparison of live
+alternatives (`LiftedArticulation`, `Becoming.Lifting`). From the bridge. -/
+theorem Alternatives.articulation_iff_lifted (X : Alternatives S R) (s : S)
+    (realized : S → C → Prop) (Better : S → S → Prop) (Reason : R → R → Prop) :
+    Alternatives.Articulation X Better Reason ↔ LiftedArticulation ⟨X.process s, realized⟩ Better s Reason :=
+  ⟨fun articulation a b liveA liveB lifted =>
+    let feasibleA := (X.enabled_iff s a).mp liveA
+    let feasibleB := (X.enabled_iff s b).mp liveB
+    articulation a b feasibleA feasibleB
+      ((X.lift_iff s realized (fun x y => Better y x) feasibleB feasibleA).mp lifted),
+   fun lifted a b feasibleA feasibleB better =>
+    lifted a b ((X.enabled_iff s a).mpr feasibleA) ((X.enabled_iff s b).mpr feasibleB)
+      ((X.lift_iff s realized (fun x y => Better y x) feasibleB feasibleA).mpr better)⟩
+
+/-- **Restricting the alternatives keeps a lifted survivor**: an alternative no live alternative
+liftedly extends still survives when the feasible alternatives are restricted to a subfamily
+containing it. From the join `ExtensionFrames`. -/
+theorem Alternatives.restricted_survives (X : Alternatives S R) (s : S) (realized : S → C → Prop)
+    (living : C → Prop) (restricted : R → Prop) {a : R}
+    (survivor : LiftSurvives ⟨X.process s, realized⟩ living s a) (retained : restricted a) :
+    LiftSurvives ⟨Alternatives.process ⟨fun b => X.feasible b ∧ restricted b, X.realize⟩ s,
+      realized⟩ living s a :=
+  (Alternatives.survives_iff_lifted ⟨fun b => X.feasible b ∧ restricted b, X.realize⟩ s realized
+      living a).mp
+    (Alternatives.survives_restrict restricted
+      ((Alternatives.survives_iff_lifted X s realized living a).mpr survivor) retained)
 
 end Alternatives
 
@@ -214,7 +267,7 @@ theorem opposite :
 
 /-- **Both alternatives of the trade-off survive.** -/
 theorem both_survive :
-    Survives frame living tradeoff (true, false) ∧ Survives frame living tradeoff (false, true) :=
+    Alternatives.Survives frame living tradeoff (true, false) ∧ Alternatives.Survives frame living tradeoff (false, true) :=
   ⟨⟨.inl rfl, fun b feasible => match b, feasible with
       | _, .inl rfl => Extension.irrefl
       | _, .inr rfl => fun e => lost e false rfl Bool.noConfusion⟩,
@@ -224,8 +277,8 @@ theorem both_survive :
 
 /-- **Each appraisal selects a different alternative coherently.** -/
 theorem different_selections :
-    Coherent tradeoff (ScoreBetter firstAppraisal) (fun p => p = (true, false)) ∧
-      Coherent tradeoff (ScoreBetter secondAppraisal) (fun p => p = (false, true)) :=
+    Alternatives.Coherent tradeoff (ScoreBetter firstAppraisal) (fun p => p = (true, false)) ∧
+      Alternatives.Coherent tradeoff (ScoreBetter secondAppraisal) (fun p => p = (false, true)) :=
   ⟨fun a selected => match a, selected with
     | _, rfl => ⟨.inl rfl, fun b feasible => match b, feasible with
       | _, .inl rfl => Nat.lt_irrefl 2

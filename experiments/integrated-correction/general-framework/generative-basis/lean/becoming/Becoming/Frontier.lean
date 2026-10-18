@@ -57,6 +57,8 @@ namespace Becoming
 
 open Lexical
 
+namespace Requirement
+
 section Frontier
 
 variable {H : Type}
@@ -148,7 +150,7 @@ theorem required_of_bettered (x : H) (rest : List H) (exact : ∀ a, eligible a 
 variable {C G : Type} {basic : H → C → Prop} {gain : H → G → Prop}
 
 /-- **Under `BasicPriority` the frontier is that of the lexical order.** -/
-theorem Lexical.BasicPriority.frontier_iff (priority : BasicPriority basic gain better) {a : H} :
+theorem _root_.Becoming.Lexical.BasicPriority.frontier_iff (priority : BasicPriority basic gain better) {a : H} :
     Frontier eligible better a ↔ Frontier eligible (Lexical.Above basic gain) a :=
   ⟨fun ⟨admitted, unbeaten⟩ =>
     ⟨admitted, fun b other above => unbeaten b other ((priority.iff b a).mpr above)⟩,
@@ -157,7 +159,7 @@ theorem Lexical.BasicPriority.frontier_iff (priority : BasicPriority basic gain 
 
 /-- Under `BasicPriority` what is required of the frontier is what is required of the lexical
 frontier. -/
-theorem Lexical.BasicPriority.required_iff (priority : BasicPriority basic gain better) :
+theorem _root_.Becoming.Lexical.BasicPriority.required_iff (priority : BasicPriority basic gain better) :
     Required (Frontier eligible better) task ↔
       Required (Frontier eligible (Lexical.Above basic gain)) task :=
   ⟨fun ⟨⟨a, frontier⟩, all⟩ => ⟨⟨a, (priority.frontier_iff).mp frontier⟩,
@@ -307,13 +309,13 @@ basis. These laws and the reading of the basic claims are stipulated. -/
 inductive Form where
   | idle | left | right | overbuild
 
-def spent : Form → Nat
+def drawn : Form → Nat
   | .idle => 0
   | .left => 2
   | .right => 2
   | .overbuild => 5
 
-def remaining (f : Form) : Nat := 6 - spent f
+def remaining (f : Form) : Nat := 6 - drawn f
 
 def linked : Form → Prop
   | .idle => False
@@ -332,9 +334,9 @@ def protect (f : Form) : Bool → Prop
   | false => basis f
 
 /-- The free occasion that formation spends. -/
-def freeOccasion (f : Form) (_ : Unit) : Prop := spent f = 0
+def freeOccasion (f : Form) (_ : Unit) : Prop := drawn f = 0
 
-def eligible (f : Form) : Prop := spent f ≤ 6
+def eligible (f : Form) : Prop := drawn f ≤ 6
 
 def formed (f : Form) : Prop := linked f ∧ basis f
 
@@ -356,7 +358,7 @@ theorem decided_protect (f : Form) : ∀ c, Decided (protect f c)
   | true => (decided_basis f).and (decided_linked f)
   | false => decided_basis f
 
-theorem decided_free (f : Form) : Decided (freeOccasion f ()) := decided_of_decidable (spent f = 0)
+theorem decided_free (f : Form) : Decided (freeOccasion f ()) := decided_of_decidable (drawn f = 0)
 
 theorem decided_above (a b : Form) : Decided (Above protect freeOccasion a b) :=
   Above.decided (decided_included_bool (decided_protect b) (decided_protect a))
@@ -457,7 +459,7 @@ theorem no_route_required :
 
 /-- **More construction can defeat its own basis.** -/
 theorem overbuilding :
-    spent .left < spent .overbuild ∧ linked .overbuild ∧ ¬ basis .overbuild ∧
+    drawn .left < drawn .overbuild ∧ linked .overbuild ∧ ¬ basis .overbuild ∧
       ¬ Frontier eligible (Above protect freeOccasion) .overbuild :=
   ⟨by decide, True.intro, not_basis_overbuild,
    Frontier.excluded (eligible_all .left) left_above_overbuild⟩
@@ -489,7 +491,7 @@ From the join `DrawnAmountProcesses` (and its inherited part): the continuations
 a process on the shared amount, each step drawing what the continuation draws. -/
 
 /-- The continuations as moves on the amount. -/
-def draw : Generative.Process Nat Form := ⟨fun a f b => b = a - spent f⟩
+def draw : Generative.Process Nat Form := ⟨fun a f b => b = a - drawn f⟩
 
 /-- **From the shared amount, the step by a continuation reaches exactly what remains after
 it.** -/
@@ -509,7 +511,7 @@ theorem eq_zero_of_sub_eq : ∀ {a x : Nat}, x ≤ a → a - x = a → x = 0
       (Nat.sub_le a x)) (Nat.not_succ_le_self a)
 
 /-- **A step rests exactly where it draws nothing**, within the amount. -/
-theorem rests_iff_free {a b : Nat} {f : Form} (within : spent f ≤ a) (step : draw.step a f b) :
+theorem rests_iff_free {a b : Nat} {f : Form} (within : drawn f ≤ a) (step : draw.step a f b) :
     b = a ↔ freeOccasion f () :=
   ⟨fun rests => eq_zero_of_sub_eq within (step.symm.trans rests),
    fun free => step.trans (congrArg (a - ·) free)⟩
@@ -831,5 +833,7 @@ theorem Required.through_summary {S S' A : Type} {P : Process S A} {Q : Process 
     (fun _ reached => Reach.lift lift reached) meaning
 
 end Summary
+
+end Requirement
 
 end Becoming
