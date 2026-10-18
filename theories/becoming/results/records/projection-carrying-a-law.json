@@ -470,7 +470,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "efd55bb231de614d6c3a64e09a2bfa9476905f8c473f441d969c8e15c8c5b889",
+      "sha256": "eac2317e0594842430b1bdaab92e31304fc328f3597d30a0c2d8c724c7124331",
       "declarations": []
     },
     {
@@ -730,6 +730,10 @@
     {
       "en": "18 October 2026, M1 (chapter section 7, AI alignment): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (M1 restated section 7 (AI alignment) around 明 and pooled coupling as sections 7.1-7.7 in 81f24f981, and a follow-up corrected \"a wrong model excludes what holds\" to \"can exclude\"; no other section changed). The claim is unchanged.",
       "zh": "2026年10月18日，M1（第7节，AI 对齐）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, M2 (Becoming.SelectionPool): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M2 added the bullet on what pooled coupling reaches, restated the pooled-coupling route of section 7.3 and section 7.4 around the theorems, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，M2（Becoming.SelectionPool）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

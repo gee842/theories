@@ -1,0 +1,16 @@
+import Becoming.RuleNarrowingProcesses
+#check @Becoming.RuleNarrowingProcesses.after_congr
+#check @Becoming.RuleNarrowingProcesses.narrowed_congr
+#check @Becoming.RuleNarrowingProcesses.mem_learn_iff
+#check @Becoming.RuleNarrowingProcesses.all_true
+#check @Becoming.RuleNarrowingProcesses.all_of
+#check @Becoming.RuleNarrowingProcesses.answer_some
+#check @Becoming.RuleNarrowingProcesses.answer_none
+#check @Becoming.RuleNarrowingProcesses.answer_of_settles
+#check @Becoming.RuleNarrowingProcesses.settles_learn_iff
+#check @Becoming.RuleNarrowingProcesses.one_sample_settles_one
+#check @Becoming.RuleNarrowingProcesses.contrasting_settles_both
+#check @Becoming.RuleNarrowingProcesses.settled_differs_from_last
+#check @Becoming.RuleNarrowingProcesses.repeated_case_leaves_other
+#check @Becoming.RuleNarrowingProcesses.contradiction_settles_nothing
+#check @Becoming.RuleNarrowingProcesses.narrow_class_settles_wrongly

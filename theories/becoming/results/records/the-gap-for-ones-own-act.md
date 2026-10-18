@@ -60,6 +60,8 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Preserved conditions: Nonanticipating laws; feasibility. [Counterfactual.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean)
 - related, not a proved adapter: [testing-within-registration](testing-within-registration.md). There nothing beyond the closure exchanges with a condition coupled into it (Flow.beyond_coupling); so a difference beyond cannot come back into the closure through a formation outside it.
 
+**Used by:** [what-pooled-coupling-reaches](what-pooled-coupling-reaches.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -83,6 +85,7 @@ Aliases: `gap for one's own act`, `自身动作的缺口`, `act unselected`, `�
 - 18 October 2026, G2 (Becoming.SelectionReach): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G2 added a study section; THE-THEORY-OF-BECOMING.md: G2 added the bullet on raising what couples in, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 18 October 2026, S3 (Becoming.LastChange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: S3 added a study section; THE-THEORY-OF-BECOMING.md: S3 added the bullet on the last change, revised the "Seeking, capture and runaway" row of section 8.2, extended the D41/D42 reading and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 - 18 October 2026, M1 (chapter section 7, AI alignment): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (M1 restated section 7 (AI alignment) around 明 and pooled coupling as sections 7.1-7.7 in 81f24f981, and a follow-up corrected "a wrong model excludes what holds" to "can exclude"; no other section changed). Section 7 restates this record's law; the restatement was checked against its statement and scope. The claim is unchanged.
+- 18 October 2026, M2 (Becoming.SelectionPool): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M2 added a study section; THE-THEORY-OF-BECOMING.md: M2 added the bullet on what pooled coupling reaches, restated the pooled-coupling route of section 7.3 and section 7.4 around the theorems, revised the "Selection, causes and experiment" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 
 </details>
 

@@ -180,6 +180,7 @@ import Becoming.Settling
 import Becoming.LastChange
 import Becoming.SelectionGap
 import Becoming.SelectionReach
+import Becoming.SelectionPool
 
 /-!
 # The Theory of Becoming: the formal core
@@ -839,6 +840,18 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   beyond in full. So every selection
   holding only where what couples in rises holds only on flows reaching beyond the coupling.
   `Diversion` is an instance, and its supplying flow, which gains, shows the premise binds.
+* `Becoming.SelectionPool` (L4): what selection through pooled coupling reaches. A pool's
+  coupling closure is the union of its members' coupling closures. With the rest of the exchange
+  fixed, a part beyond it is selected alike by every selection through the pooled coupling of any
+  group within it. Some pooled selection separates two histories exactly when the members do not
+  all couple them alike; with the members listed and each member's coupling decided, exactly when
+  some member couples them apart; and the pooled selections are one member's exactly when
+  whatever that member couples alike every member couples alike. Where the rest follows a law of
+  exchange reading through coupling and a pool's act differs only beyond the pool's coupling
+  closure, every selection through the pooled coupling of a group within the closure selects the
+  flows with and without the act alike, and a formation whose admission the act changes lies
+  beyond the closure and separates the two through every pool holding it. In `Clearing`, pooling
+  with the dweller closes the clearer's gap.
 * `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by

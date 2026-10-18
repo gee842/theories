@@ -1,0 +1,17 @@
+{
+  "tree": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/m2-selection-pool",
+  "modules": 47,
+  "ran": [
+    "Becoming.SelectionPool",
+    "BecomingSelectionPoolAxiomAudit"
+  ],
+  "reused": 46,
+  "unclean": [],
+  "audits": {
+    "Becoming.SelectionPool": {
+      "theorems": 33,
+      "declarations": 37,
+      "with_axioms": {}
+    }
+  }
+}

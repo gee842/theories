@@ -1,0 +1,34 @@
+@Becoming.CourseExtensionFrames.broad_iff : ∀ {W F C : Type} (U : W → RelationalRenewal.Unfolding F C) (w : W)
+  (e : F × Nat), Becoming.CourseExtensionFrames.broad U w e ↔ (RenewalComparison.broadInventory U).realized w e
+@Becoming.CourseExtensionFrames.living_significance_relational : ∀ {W F C : Type}
+  (U : W → RelationalRenewal.Unfolding F C) (positive : W → F × Nat → Prop),
+  Becoming.G0 (Becoming.Ranking.frame (Becoming.Ranking.wholeRun U)) (fun x => True) positive ↔
+    ∀ (w : W) (f : F) (t : Nat),
+      (Becoming.Web.static (U w)).active t f → ¬(Becoming.Web.static (U w)).ConsumingIn f → positive w (f, t)
+Becoming.CourseExtensionFrames.contest_extensions : Becoming.Ranking.ExtendsUnder
+    (Becoming.Ranking.wholeRun RenewalComparison.contest) RenewalComparison.Contest.wins
+    RenewalComparison.Contest.shares ∧
+  Becoming.Ranking.ExtendsUnder (Becoming.CourseExtensionFrames.broad RenewalComparison.contest)
+      RenewalComparison.Contest.wins RenewalComparison.Contest.shares ∧
+    (∀ (t : Nat),
+        Becoming.CourseExtensionFrames.broad RenewalComparison.contest RenewalComparison.Contest.wins
+          (RelationalRenewal.Law.Part.focal, t)) ∧
+      ∀ (t : Nat),
+        ¬Becoming.Ranking.wholeRun RenewalComparison.contest RenewalComparison.Contest.wins
+            (RelationalRenewal.Law.Part.focal, t)
+Becoming.CourseExtensionFrames.preferOccurs_iff : ∀ (L : RelationalRenewal.Law) (a b : RenewalComparison.Growth),
+  RenewalComparison.preferOccurs L a b ↔
+    Becoming.Ranking.ExtendsUnder (Becoming.CourseExtensionFrames.broad (RenewalComparison.course L)) a b ∨
+      a = RenewalComparison.Growth.absent ∧ b = RenewalComparison.Growth.occurs
+Becoming.CourseExtensionFrames.malignant_ranks : (∀
+    (Better : RenewalComparison.Growth → RenewalComparison.Growth → Prop),
+    Becoming.Ranking.ComparisonUnder
+        (Becoming.Ranking.wholeRun (RenewalComparison.course RelationalRenewal.Law.malignant)) Better →
+      Better RenewalComparison.Growth.occurs RenewalComparison.Growth.absent) ∧
+  Becoming.Ranking.ComparisonUnder
+      (Becoming.CourseExtensionFrames.broad (RenewalComparison.course RelationalRenewal.Law.malignant))
+      (RenewalComparison.preferOccurs RelationalRenewal.Law.malignant) ∧
+    RenewalComparison.preferOccurs RelationalRenewal.Law.malignant RenewalComparison.Growth.absent
+        RenewalComparison.Growth.occurs ∧
+      ¬RenewalComparison.preferOccurs RelationalRenewal.Law.malignant RenewalComparison.Growth.occurs
+          RenewalComparison.Growth.absent

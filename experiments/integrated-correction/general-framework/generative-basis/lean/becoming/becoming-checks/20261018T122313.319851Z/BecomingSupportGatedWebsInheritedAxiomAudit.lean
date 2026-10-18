@@ -1,0 +1,4 @@
+import Becoming.SupportGatedWebsInherited
+#print axioms Becoming.SupportGatedWebsInherited.repair_reactivates
+#print axioms Becoming.SupportGatedWebsInherited.same_inputs_opposite_futures
+#print axioms Becoming.SupportGatedWebsInherited.recovered_neither
