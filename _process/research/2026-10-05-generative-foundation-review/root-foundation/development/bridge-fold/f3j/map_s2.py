@@ -1,5 +1,5 @@
 """F3J sub-chain 2: periphery and bridge declarations -> their core counterparts (port-j.md, section 5)."""
-B, G = 'Becoming.', 'Becoming.PositiveGround.'
+B, G, R = 'Becoming.', 'Becoming.PositiveGround.', 'Becoming.ProfileReach.'
 MAP = {
  # PositiveGroundUncertainty
  'PositiveGroundUncertainty.finiteIntegral': [G+'finiteIntegral'],
@@ -30,5 +30,27 @@ MAP = {
  'Becoming.contingent_generation_of_unrestricted': [G+'contingent_generation_of_unrestricted'],
  'Becoming.every_situated_position_has_reason_of_unrestricted': [G+'every_situated_position_has_reason_of_unrestricted'],
  'Becoming.ReachableFramesInherited.certified_reason_on_scope': [G+'certified_reason_on_scope'],
+ # EvaluatorGrounding
+ 'EvaluatorGrounding.Standpoint': [R+'Standpoint'], 'EvaluatorGrounding.SelfGood': [R+'SelfGood'],
+ 'EvaluatorGrounding.Monotone': [R+'Monotone'], 'EvaluatorGrounding.Supervenes': [R+'Supervenes'],
+ 'EvaluatorGrounding.Tolerant': [R+'Tolerant'],
+ 'EvaluatorGrounding.self_good_reaches_at_least_as_connected': [R+'self_good_reaches_at_least_as_connected'],
+ 'EvaluatorGrounding.strict_indexed_rival_inconsistent': [R+'strict_indexed_rival_inconsistent'],
+ 'EvaluatorGrounding.chain_preserves': [R+'chain_preserves'],
+ 'EvaluatorGrounding.tolerant_chain_reaches': [R+'tolerant_chain_reaches'],
+ 'EvaluatorGrounding.reachableInventory': [R+'reachableFrame'],
+ 'EvaluatorGrounding.reach_is_g0': [R+'reach_is_g0'],
+ 'EvaluatorGrounding.self_good_derives_reachable_g0': [R+'self_good_derives_reachable_g0'],
+ 'EvaluatorGrounding.formed_other_has_significance': [R+'formed_other_has_significance'],
+ 'EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance': [R+'threshold_rival_is_consistent_without_tolerance'],
+ 'EvaluatorGrounding.tolerant_standpoint_reaches_stranger': [R+'tolerant_standpoint_reaches_stranger'],
+ 'EvaluatorGrounding.present_aim_evaluator_escapes': [R+'present_aim_evaluator_escapes'],
+ 'EvaluatorGrounding.closed_self_blocks_reach': [R+'closed_self_blocks_reach'],
+ 'EvaluatorGrounding.persistence_rival_escapes_self_transcendence': [R+'persistence_rival_escapes_self_transcendence'],
+ 'Becoming.profileValuation': [R+'valuation'], 'Becoming.tolerant_iff_neutral': [R+'tolerant_iff_neutral'],
+ 'Becoming.chain_iff_reach_profiles': [R+'reach_relations_iff'], 'Becoming.selfGood_profiles': [R+'selfGood_valuation'],
+ 'Becoming.tolerant_chain_reaches_by_core': [R+'tolerant_chain_reaches'],
+ 'Becoming.SeedReachProcesses.reachable_living_significance': [R+'self_good_derives_reachable_g0'],
 }
-CANONICAL = {'PositiveGroundUncertainty.lean': 'PositiveGround.lean', 'PositionedPositiveReason.lean': 'PositiveGround.lean'}
+CANONICAL = {'PositiveGroundUncertainty.lean': 'PositiveGround.lean', 'PositionedPositiveReason.lean': 'PositiveGround.lean',
+             'EvaluatorGrounding.lean': 'ProfileReach.lean'}

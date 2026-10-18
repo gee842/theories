@@ -48,7 +48,7 @@
 | [StandardsBridge](#standardsbridge) | 26 | 24 | 2 (extensionality named) | 0 | 0 | 0 | 26 | fully restated |
 | [PositiveGroundUncertainty](#positivegrounduncertainty) | 9 | 9 | 0 | 0 | 0 | 0 | 9 | fully restated (sub-chain 2) |
 | [PositionedPositiveReason](#positionedpositivereason) | 10 | 10 | 0 | 0 | 0 | 0 | 10 | fully restated (sub-chain 2) |
-| EvaluatorGrounding | 12 | | | | | | | sub-chain 2, pending |
+| [EvaluatorGrounding](#evaluatorgrounding) | 12 | 12 | 0 | 0 | 0 | 0 | 12 | fully restated (sub-chain 2) |
 | OpenFutureRevision | 10 | | | | | | | sub-chain 2, pending |
 | ContinuationRenewal | 17 | | | | | | | sub-chain 2, pending |
 | OrganizationalRuleInheritance | 29 | | | | | | | sub-chain 3, pending |
@@ -375,3 +375,36 @@ Bridge and join declarations reading only these two modules:
 | `ReachableFramesInherited.certified_reason_on_scope` | same | `PositiveGround.certified_reason_on_scope` | the core's `Scope` of a policy |
 
 Each core declaration in `Becoming.PositiveGround` has an empty axiom report (scratch build: 30 theorems, 63 declarations).
+
+### EvaluatorGrounding
+
+Source: `universal-ethics/generative-capacity/EvaluatorGrounding.lean`. 12 theorems; **fully restated** in the new core module `Becoming.ProfileReach` (imports `EdgeClosure`, `Metaethics`; namespace `Becoming.ProfileReach`, apart from the core's `Standpoints` and `Valuation`). `Standpoint`, `SelfGood`, `Monotone`, `Supervenes`, `Tolerant` are restated with the same definitions. The periphery's inductive `Chain step` is the core's reach along the edges, `Reach (edgeProcess step)` (`EdgeClosure`; the bridge's `chain_iff_reach`, kind 1, retires); its `reachableInventory` is the frame with no moves realizing the reachable occurrences (`reachableFrame`), with `living` the standpoint's living occurrences. Step two is stated through the core, as the bridge's `tolerant_chain_reaches_by_core` did: the standpoint's valuation of profiles (`valuation`, the bridge's `profileValuation`) turns tolerance into N_rel and S0 under supervenience into S0, and `Valuation.reaches` carries significance along reach. The periphery's `simp` and `omega` steps are decided comparisons of numerals here.
+
+| Theorem | Grade | Core counterpart | How established |
+|---|---|---|---|
+| `self_good_reaches_at_least_as_connected` | same | `ProfileReach.self_good_reaches_at_least_as_connected` | |
+| `strict_indexed_rival_inconsistent` | same | `ProfileReach.strict_indexed_rival_inconsistent` | |
+| `chain_preserves` | same | `ProfileReach.chain_preserves` | on `Reach (edgeProcess step)`, by `Invariant.reach` |
+| `tolerant_chain_reaches` | same | `ProfileReach.tolerant_chain_reaches` | through `Valuation.reaches` |
+| `reach_is_g0` | same | `ProfileReach.reach_is_g0` | on `reachableFrame` |
+| `self_good_derives_reachable_g0` | same | `ProfileReach.self_good_derives_reachable_g0` | |
+| `formed_other_has_significance` | same | `ProfileReach.formed_other_has_significance` | |
+| `threshold_rival_is_consistent_without_tolerance` | same | `ProfileReach.threshold_rival_is_consistent_without_tolerance` | S0 by cases (`threshold_selfGood`) |
+| `tolerant_standpoint_reaches_stranger` | same | `ProfileReach.tolerant_standpoint_reaches_stranger` | |
+| `present_aim_evaluator_escapes` | same | `ProfileReach.present_aim_evaluator_escapes` | |
+| `closed_self_blocks_reach` | same | `ProfileReach.closed_self_blocks_reach` | |
+| `persistence_rival_escapes_self_transcendence` | same | `ProfileReach.persistence_rival_escapes_self_transcendence` | |
+
+Bridge and join declarations reading only EvaluatorGrounding:
+
+| Declaration | Grade | Core counterpart | Note |
+|---|---|---|---|
+| `Bridge.chain_iff_reach` | reading | `Reach (edgeProcess step)` | kind 1; retires with `Chain` |
+| `Bridge.profileValuation` (def) | same | `ProfileReach.valuation` | same definition |
+| `Bridge.tolerant_iff_neutral` | same | `ProfileReach.tolerant_iff_neutral` | |
+| `Bridge.chain_iff_reach_profiles` | same | `ProfileReach.reach_relations_iff` | reach along related profiles is reach along the edges |
+| `Bridge.selfGood_profiles` | same | `ProfileReach.selfGood_valuation` | |
+| `Bridge.tolerant_chain_reaches_by_core` | same | `ProfileReach.tolerant_chain_reaches` | the core statement is this proof |
+| `SeedReachProcesses.reachable_living_significance` | same | `ProfileReach.self_good_derives_reachable_g0` | the join is F2's (`SeedReachProcesses`); this one declaration reads only EvaluatorGrounding and the bridge's `Frame.ofInventory`, so its core counterpart is stated here |
+
+Each core declaration in `Becoming.ProfileReach` has an empty axiom report (scratch build: 16 theorems, 33 declarations).
