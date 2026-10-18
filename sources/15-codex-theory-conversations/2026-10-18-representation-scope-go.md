@@ -30,3 +30,13 @@
 ## Context (AI-authored)
 
 - Read as board item R2b: the laws of counting where the selected premises bind (`World.binding_counting`, `World.binding_counting_under`, their activity, arising and joint equivalences, and the finite and enclosed forms, with `World.finite_binding_census`), restated over counted censuses as `Becoming.CensusCounts` did for the other counting laws, so that no decision procedure for activity is taken.
+
+## Ren's message, after R2b landed
+
+18 October 2026, the same conversation, after the AI reported R2b landed and asked whether to start the learning and seeking line now or wait for the N1 renames (board item N5, another session) to land (Ren chose the reply button the AI had drafted).
+
+> Wait for N5's renames to land, then start the learning and seeking line on the renamed head.
+
+## Context (AI-authored)
+
+- New Lean for the learning and seeking line waits until N5's renaming has landed on main, so that it is written in the adopted vocabulary and does not collide with the rename.
