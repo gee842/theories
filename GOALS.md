@@ -195,9 +195,9 @@ Establish the deductive necessity of the Theory of Becoming as a whole without a
 
 **README overview:** First priority: Theory of Becoming
 
-Ren locates deductive necessity in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and evaluation under the conditional alignment route remain differentiated within the same reality.
+Deductive necessity lies in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and evaluation under the conditional alignment route remain differentiated within the same reality.
 
-**Next:** Ren's zero-premise redirect of 11 October: remove premises and derive the most general version of each law of the theory without axiom, zero premises first. Inventory where each main theorem uses a premise, finiteness, enclosure or decidability; restate each localizable law for every world as “Y iff Z”, Z holding of that world at the steps and relata the proof uses, with the selection theorems as corollaries; put commitments of the representation to Ren; test each law against weakening the representation. The selection tables are not extended further, and no premise is claimed derived where the representation proves it contingent.
+**Next:** Zero premises first (11 October): remove premises and derive the most general version of each law of the theory without axiom, zero premises first. Inventory where each main theorem uses a premise, finiteness, enclosure or decidability; restate each localizable law for every world as “Y iff Z”, Z holding of that world at the steps and relata the proof uses, with the selection theorems as corollaries; state the commitments of the representation openly; test each law against weakening the representation. The selection tables are not extended further, and no premise is claimed derived where the representation proves it contingent.
 
 [becoming-context-coherence](theories/becoming/results/records/becoming-context-coherence.md): `recorded-checked`
 
