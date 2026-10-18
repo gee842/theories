@@ -4684,6 +4684,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
       ],
@@ -6173,6 +6174,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
       ],
@@ -6225,6 +6227,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
@@ -6253,6 +6256,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
@@ -6286,6 +6290,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
@@ -6366,6 +6371,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
@@ -6625,6 +6631,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
       ],
@@ -7173,6 +7180,7 @@
       "receipt_bytes_match": true,
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
+        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md"
       ],
@@ -9220,7 +9228,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9285,7 +9292,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
@@ -9388,7 +9394,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
@@ -9441,7 +9446,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9454,7 +9458,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9467,7 +9470,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9480,7 +9482,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9545,7 +9546,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9572,7 +9572,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
@@ -9598,7 +9597,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9611,7 +9609,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9624,7 +9621,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
@@ -9637,7 +9633,6 @@
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
       "direct_documentation_links_from": [
-        "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
