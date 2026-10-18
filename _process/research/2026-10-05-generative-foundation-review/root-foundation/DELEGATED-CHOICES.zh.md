@@ -288,7 +288,7 @@
 **理由。** 一、把供给闭包读作系统已由 §6.9 撤回，而系统闭包在一个共同条件成立处就是整体，所以不能是中间层次；所及闭包是二者之外的中间层次；三、它说出反馈不能给的。
 **会改变它的。** Ren 的中间层次是指所依存的。
 
-**在一个说明中修订（2026-10-19，D45）。** 一、二、四、五不变，用采用的词汇：说“识及”或“识”处，读作耦合入或耦合（[命名研究](REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)）。三与理论第 7 节相接：情境的觉知是对自身所及的明，即知道自己的部分在其所耦合入者之外所到达的。反馈至多耦合入影响闭包（`Flow.Balances.uncoupled_beyond_influence`）。经水平的耦合使耦合闭包超出影响闭包，只经阈的耦合则不能（`Flow.withinCoupling_of_withinInfluence`、`Flow.withinCoupling_thresholdOnly`）。部分到达其所及闭包。所以情境的觉知要知道的，是 §7.2 第一条规律的缺口，即所及闭包减去耦合闭包；在它之外，经这个形成之耦合的选择什么也不分开（`Flow.unselected_beyond_coupling`）。**改变了什么。** 三原只说反馈不能给的；现在也说什么给它，缺口在哪里。**会改变它的。** 同上。上面的原文保留。
+**在一个说明中修订（2026-10-19，D45）。** 一、二、四、五不变，用采用的词汇：说“识及”或“识”处，读作耦合入或耦合（[命名研究](REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)）。三与理论第 7 节相接：情境的觉知是对自身所及的明，即知道自己的部分在其所耦合入者之外所到达的。反馈至多耦合入影响闭包（`Flow.Balances.uncoupled_beyond_influence`）。耦合闭包含影响闭包，只经支持耦合入时就是影响闭包，所以只有经水平的耦合能使它变宽（`Flow.withinCoupling_of_withinInfluence`、`Flow.withinCoupling_thresholdOnly`、`Flow.withinCoupling_mono_obs`）。部分到达其所及闭包。所以情境的觉知要知道的，是 §7.2 第一条规律的缺口，即所及闭包减去耦合闭包；在它之外，经这个形成之耦合的选择什么也不分开（`Flow.unselected_beyond_coupling`）。**改变了什么。** 三原只说反馈不能给的；现在也说什么给它，缺口在哪里。**会改变它的。** 同上。上面的原文保留。
 
 <a id="5-公理的分解与生成的空间--the-axiom-decomposed-and-the-generative-space"></a>
 ## 5. 公理的分解与生成的空间
@@ -391,7 +391,7 @@
 - **识与理。** 识是一个形成自己的进一步进程，即其选择、回应或寻求，经它自己的耦合所作的归并而行。理在形式上是世界经之同行的归并：关于何者无关的模型恰在那里正确（`goAlike_iff_lumped`）；经模型的选择，只在要紧者经其归并同行处，对要紧者正确（`Learning.selects_right_through`）。二者是一个结构的两面：进程所经的归并，以及世界是否经它同行。
 - **知足与知止。** 知足是在律所不变的状态被满足的目标（`Law.rests_iff`）。知止是在这一边界之内的目标，使追求因够而止，不因耗尽而止。所立者从某步起衰减时，上升因耗尽而止（`Flow.more_exhausted`）；一个群体所耦合入者的上升，由群体之外偿付（`Flow.Balances.rise_paid_from_beyond`）。目标从何而来，动力学不决定，所以作为选择的知止未被表示：规律说的是哪些目标能停息。
 - **无明。** 无明是使寻求锁定在不能于停息中满足之目标上的不见。这种不见是一个位置，是每个形成的位置：一个形成的耦合不分开者，经这些耦合的每个选择都同样选择（`Web.selects_alike_iff`）；它的耦合闭包之外，什么也不经这些耦合被分开（`Flow.unselected_beyond_coupling`）。这个位置不是无明。它是无明不从内部被纠正的缘故：被锁定之寻求的损失，只经寻求者所耦合入者到达它。不断变化的运行属于过程，不是无明（D41）。理论中开放的读法“无明是一个位置，不是缺陷”（§7.2）据此修订：这个位置不是缺陷，无明是它所留下的被锁定的寻求。
-- **明。** 明是及于支持所不标记者的耦合。它是一种关系，与接到一个选择上的耦合一样宽，随量度、模型与他者接入而变宽（理论 §7.3）。观察使耦合闭包超出只经支持所耦合入者（`Flow.withinCoupling_thresholdOnly`）；被观察之存量的每次抬高，每一步都经观察者的耦合造成差别（`Web.observed_raise_couples`）。
+- **明。** 明是及于支持所不标记者的耦合。它是一种关系，与接到一个选择上的耦合一样宽，随量度、模型与他者接入而变宽（理论 §7.3）。能使耦合闭包超出只经支持所耦合入者的，是观察（`Flow.withinCoupling_thresholdOnly`、`Flow.withinCoupling_mono_obs`）；被观察之存量的每次抬高，每一步都经观察者的耦合造成差别（`Web.observed_raise_couples`）。
 
 **改变了什么。** 上面的决定逐项给出读法，明用的是已退役的“识”一词；§7 的读法原为开放。**会改变它的。** 同上；这一结构不能安放的、对其中某个用语的读法。上面的原文保留。
 
@@ -636,7 +636,7 @@ L1、S1 与 S2 是 D40-D42。
 - *R18。* 第十八次审查算作其记录所要求的审查：作者之外的审查者，把陈述对照 Lean、把读法对照其范围来读。构建 Lean 不是审查所加的，因为检查器的回执检查证明。凡引它处都说明其性质：AI 的审查，只读，未构建 Lean；不声称有人的审查。它审查过的记录如此说明，以代替“未经独立审查”；它未覆盖的记录保留那句话。这也回答两项记录留给 Ren 的问题（[seeking-boundary](../../../../theories/becoming/results/records/seeking-boundary.md)、[target-capture](../../../../theories/becoming/results/records/target-capture.md)）。
 
 （5）**理论 §8.4 的其余问题。**
-- *“生成”的几种意义。* 中文文本以三个词分开三种意义：展开指一个展开，形成指一个形成及其形成，生成指生成，如 Ren 的论中（“生生：生成者生成新的生成”），其反面是退化（D2）。理论的中文名“生成之论”中的“生成”是 becoming，这是这一哲学用语的通常译法。生成之论计入“all space, generative, degenerative”（Ren，2026-10-08，[原话](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)），且“generative is a part of its manifold”（Ren，2026-10-09，[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md)）。词汇表说明两种意义。
+- *“生成”的几种意义。* 中文文本以三个词分开三种意义：展开指一个展开，形成指一个形成及其形成，生成指生成，如 Ren 的论中（“生生：生成者生成新的生成”），其反面是退化（D2）。中文版的题名“生成／变化之论”（AI 对 Ren 2026-10-09 所定理论之名的译法；较早的题名作“生成之论”）以“生成”与“变化”合写 becoming；中文章节中单说“生成”而意指 becoming 之处，现作“生成／变化”。生成／变化之论计入“all space, generative, degenerative”（Ren，2026-10-08，[原话](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)），且“generative is a part of its manifold”（Ren，2026-10-09，[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md)）。词汇表说明两种意义。
 - *关于生之意义的句子。* 理论的状态说明已说：生之意义是限于活的断言的条件，条件给每个断言以意义，不带正的价（`g0_of_unrestricted`、`relevance_least`）。这就是 Lean 所表明的全部，所以这一问题关闭。
 - *Ren 的用语。* “closure bounds change”保留为 Ren 的说法，连同其出处。规律保留其名，即围住约束变化；证明表明约束变化的是耗尽（[laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md)）。识与理在（2）中有其位置。
 - *表示的承诺*（离散的步、自然数的量、普查、判定的相等与列出）。照旧。每项应否细化或推出，是表示之范围的问题（理论 §8.5），由表示必须表达的与更细粒度上的定理决定；Ren 2026-10-11 的保留是来源。
