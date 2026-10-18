@@ -79,6 +79,13 @@ MODULES = {
                    '(`no_local_pair_update`, `local_pair_carries_no_law`); a summary retaining the control is exact '
                    'along every finite word and omits the other relations (`every_finite_word_exact`, '
                    '`summary_omits_other_relations`)'),
+    'ActivationCapacity': ('L4', 'Bundles', 'Bundles', 7,
+                           'effective capacity in the activation law (no premise): a configuration realizes both claims '
+                           'exactly when both are active (`joint_iff`); the joint content is realizable within one move '
+                           'from the coupled configuration and not from the initial one, so a preparation step changes '
+                           'the current capacity (`preparation_changes_capacity`); after the release no number of moves '
+                           'realizes it (`released_not_joint`, `release_loses_joint`), and the prepared configuration can '
+                           'still end one-sided (`prepared_can_end_one_sided`)'),
 }
 IMPORT_NOTES = {
     '; within L3,': '; `AssurancePlans` imports `Assurance`',
@@ -86,6 +93,7 @@ IMPORT_NOTES = {
     '). L1–L3 contain': ('; `ActiveReading` imports `Ranking`; `MatchedCourses` imports `LossMatching` and '
                          '`StrictTransport`; `Dephasing` imports `Readout`; `ProjectedLaws` imports `Readout`; '
                          '`JointPhase` imports `Dephasing` and `ProjectedLaws`'),
+    '; `Narrowing` imports': '; `ActivationCapacity` imports `Bundles` and `Recurrence`',
 }
 
 

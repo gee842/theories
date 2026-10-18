@@ -213,6 +213,7 @@ import Becoming.Frontier
 import Becoming.ScoreRepresentation
 import Becoming.Alternatives
 import Becoming.Bundles
+import Becoming.ActivationCapacity
 import Becoming.Narrowing
 
 /-!
@@ -1136,6 +1137,12 @@ readings of the unfolding (`Becoming.Labelled`).
   whole profiles is preserving bundles; the same marginal realizations can lose a joint
   bundle; regimes of an activation law compared by their joint bundles, not their marginals.
   Ported from `JointContinuationClassification` and `RelationalGrounding` (F3J).
+* `Becoming.ActivationCapacity` (L4): effective capacity in the activation law (no premise): a
+  configuration realizes both claims exactly when both are active (`joint_iff`); the joint content
+  is realizable within one move from the coupled configuration and not from the initial one, so a
+  preparation step changes the current capacity (`preparation_changes_capacity`); after the
+  release no number of moves realizes it (`released_not_joint`, `release_loses_joint`), and the
+  prepared configuration can still end one-sided (`prepared_can_end_one_sided`).
 * `Becoming.Narrowing` (L4): learning a rule by narrowing a belief through observation: a
   belief over candidate rules narrowed by `After` on the pure observation of their values keeps
   exactly the fitting candidates; the answer procedure answers what the narrowed belief settles,
