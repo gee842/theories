@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 In a finite coupled domain, pointwise coverage of demand with still-working old support yields a mass floor under one positive total weight; preservation for all natural weights characterizes inclusion.
 
-Canonical source: [ChanceAdequacy.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean)
+Canonical source: [ChanceFloors.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ChanceFloors.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -45,6 +45,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [ChanceAdequacy.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean) | `ChanceAdequacy.fulfillment_gives_chance_floor`, `ChanceAdequacy.all_weights_preserve_mass_iff`, `ChanceAdequacy.positive_chance_can_miss_due_protection` |
+| proof | [ChanceFloors.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ChanceFloors.lean) | `Becoming.ChanceFloors.fulfillment_gives_chance_floor`, `Becoming.ChanceFloors.positive_chance_can_miss_due_protection` |
 | receipt | [chance-adequacy-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json) | — |
 | integration | [CHANCE-ADEQUACY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
@@ -57,6 +58,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T234635.457051Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -76,4 +78,5 @@ Aliases: `ChanceAdequacy.fulfillment_gives_chance_floor`, `ChanceAdequacy.all_we
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Weighted.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Courses.lean, six theorems now cite their general forms (Lasting.fixed_avoids, Countdown.Advances.completes, Copying.scan_le, CrossSituational.narrows, CrossSituational.reads_every_iff, Readout.no_judge_of_merged), and inspection_trace_scan is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
+- 19 October 2026, F3C, the port of the correction family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (ChanceFloors, Weighted; verdicts in port-c.md), bound to core receipt 20261018T234635.457051Z, and the canonical source is the core module. The periphery and bridge references stay until the sweep retires them. No new result; the claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-16): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](fulfillment-chance-floor.json).
