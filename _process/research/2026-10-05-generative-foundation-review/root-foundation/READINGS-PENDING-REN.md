@@ -4,6 +4,8 @@
 
 **Ren's answer (18 October 2026).** Ren took Parts A and B ([words](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)); Parts C and D stay with him. Board item A1 applied them on 18 October as revisions of D1, D5, D22 and D39 and a new decision D43 in [DELEGATED-CHOICES](DELEGATED-CHOICES.md), and in the chapter and the records. The generativity chain's change (item 19) was applied through the chain's maintenance record (board item A2).
 
+**Ren's answer (19 October 2026).** To Parts C and D: “integrate all, the theory is a whole, not stitched pieces, go ahead” ([words](../../../../sources/15-codex-theory-conversations/2026-10-19-integrate-all.md)). Board item A4 records it as decision [D45](DELEGATED-CHOICES.md#d45-一个说明中的读法--the-readings-in-one-account): no reading is ratified item by item, and none waits on Ren; each is decided by its place in one account, and Part D within it. The chapter and the records follow through the landing queue.
+
 Where a reading says what one of Ren's terms means, Ren's own texts are the evidence of that term's sense. Whether the reading is the strongest one the work supports is argued from the work, not from Ren's words ([Ren, 17 October](../../../../sources/15-codex-theory-conversations/2026-10-17-ren-words-not-authority.md)).
 
 The register is the work board's [Decisions pending Ren](../../../BECOMING-WORKBOARD.md) table together with open questions 44–51 of the [eighteenth review](BECOMING-EIGHTEENTH-REVIEW.md). Part A takes Ren's central terms first (review finding D-a; [CHANGES B5](../../2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/CHANGES.md), "Ren: yes for the D1–D39 question"). Part B gives a recommendation on every other pending reading. Part C answers the question about the register itself.
@@ -205,12 +207,16 @@ The question is whether Ren's "agree with other readings" of 16 October ratifies
 
 The one pass is ready as a sheet: [PHRASE-READINGS-PENDING-REN](PHRASE-READINGS-PENDING-REN.md), 18 October 2026. It gives 20 items, each with Ren's words and their source, the current reading and its reason, and room for yes or a correction. It sets D34 aside, because Ren's own words decide it, and adds the readings of his terms that "among others" left unnamed: D3, D4, D12, D26, D27, D29 and D30.
 
+**Answered on 19 October 2026** ([D45](DELEGATED-CHOICES.md#d45-一个说明中的读法--the-readings-in-one-account)): not item by item, but as one account. The sheet's items 2 (D3), 10 (D19), 11 (D20), 12 (D21 (4)), 14 (D26) and 19 (D37, D39) are revised there; the others stand as written.
+
 ## D. Waiting on Ren, not readings
 
 - `IdealWarrant`'s join under a structural name (board rule 8).
 - The Chinese term and the informal heading of the rest family, and the OPENING footnote.
 - The integrator and W-root ownership ([CHANGES B7](../../2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/CHANGES.md)).
 - Whether R18, an AI read-only review, counts as the review asked for (B6).
+
+**Decided on 19 October 2026** ([D45](DELEGATED-CHOICES.md#d45-一个说明中的读法--the-readings-in-one-account), item (4)). The rest family's Chinese term is 停息, with the heading 停息定理, and OPENING does not change. `IdealWarrant` joins the core with `CompletionRole` and `HistoryIdeals` as one family of ideals under structural names (board sub-item A4-L). Rule 3's fallback is the arrangement for integrating, with no session named. W-root's claim has lapsed under rule 4, and its target stays open in chapter §8.1. R18 counts as the review asked for, stated as an AI review, read-only, that built no Lean.
 
 Found while preparing this brief, and since fixed: chapter §9 said the connectivity measure finds "1,019 of the 7,214 spine theorems apart" and counted 129 core modules. The session "Repository completion review and restructure" corrected both in its S3 landing (`35aa2f28b`). §9 now reads 177 of 8,254 apart, and 183 core modules (186 with the foundation).
 
