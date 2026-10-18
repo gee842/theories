@@ -1,0 +1,58 @@
+# F3: the periphery port, the program
+
+18 October 2026. Board item F3, after F1 (the fold) and beside F2 (six leaf modules). Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification" ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-18-resolve-bridges-unification.md)). This file is the shared plan of the five family sessions and the sweep. It is a sibling of the [fold study](../../BECOMING-BRIDGE-FOLD.md), which it does not edit.
+
+## 1. Why the bridges stay after F1
+
+F1 moves what the bridge holds without need. What remains is there because the old periphery is still part of the Becoming run: 78 inherited modules bound by hash, 75 of them outside the foundation, with 1,208 theorems. While a periphery module is in the run, its theorems need adapters to reach the core: kind-1 readings, `…_by_core` instances, the 30 pure joins and the 26 `…Inherited` periphery joins. Each adapter is correct, but together they keep two vocabularies alive for one theory.
+
+None of the 75 imports Mathlib; each compiles from the prelude, the foundation and other periphery modules. So nothing in principle stops their content from being stated in the core.
+
+## 2. End state
+
+- **One live vocabulary.** Every theorem of the 75 modules is either a core theorem (cited, where the core already states it) or stated in a core module under the core's names. Every core axiom report stays empty. Where a periphery proof was classical, the core proof is constructive, or it names the principle it needs as a hypothesis (excluded middle, LPO, WLPO). A calibration is recorded as a result only where its record says what the need means for the unfolding (AGENTS.md, "Proof and naming").
+- **Periphery out of the run.** Each of the 75 is marked superseded in place. It keeps its path and bytes (board rule 8), so old receipts stay re-checkable and Lean files outside the run that import it still compile. It leaves the Becoming compile order, and its records take the core module as `canonical_source`.
+- **No bridge or join modules.** A bridge or join declaration that reads only superseded modules has no live use. It leaves the package. A file emptied this way moves to `history/` with `research.py move`. A declaration removed from a file that stays is listed in the sweep's record, with the commit that removed it.
+- **The foundation stays.** `GenerativeCore`, `InquirySufficiency` and `RelationalRenewal` are in the core closure already. Whether the root moves to `World` is board item W (re-root study), not F3.
+- **Measure.** The chapter §9 count row reports periphery modules in the run, bridge modules and join modules; F3 is done when all three are 0, apart from the foundation. The connectivity measure must not lose a connection: a ported theorem connects through the core law it instantiates.
+
+## 3. The families
+
+Each family is closed under the periphery imports among its own modules, except where noted, so the five sessions edit no common periphery file.
+
+| Family | Modules | Theorems | Core laws to cite first (not exhaustive) |
+|---|---|--:|---|
+| **E** explanatory and dynamics (`deeper/`) | HistoryRealization, ExplanatoryNecessity, ExplanatoryStructure, ExplanatoryUniqueness, DynamicUnderdetermination, RelationalDynamics, ExplanatoryBranching, DynamicSymmetry, DynamicConsequences, ContinuationConditions, ExplanatoryUniversality, ExplanatoryJointness, ExplanatoryFootprints, ExplanatoryJoining, ExplanatoryLocalUnits, ExplanatoryJoiningContexts, ExplanatoryJoiningBranches, ExplanatoryContextualStructure, ExplanatoryJoiningIncidence, ExplanatoryJoiningRefinement, ExplanatoryJoiningAnchors, ExplanatoryJoiningRegisters, ExplanatoryGranularity, ExplanatoryGuardedPrograms, ExplanatoryResiduals, ExplanatoryGranularityBoundary | 374 | Likeness, Branching, Joining, Granularity, Segmentation, Unfolding |
+| **C** correction | AlignmentInquiry, EffectiveCommand, AcquiredCorrection, FaultTolerantCorrection, CorrectionReconfiguration, EvidenceQualifiedCorrection, FallibleInspection, CorrectionInfrastructure, ChanceAdequacy | 203 | Viability, Assurance, Testing, Experiment, Revision, ContinuingRevision, FallibleInquiry |
+| **Q** inquiry and composition | KnowledgeCorrespondence, CompositionalAcquisition, CompositionalFormation, CompositionalTransmission, AcquiredSegmentation, GenerativeClosure, JointInterpretation | 154 | Inquiry, Learnable, Segmentation, Composition |
+| **J** judgment and comparison | GenerativeComparison, PracticalJudgment, JointContinuationClassification, StandardsBridge, PositiveGroundUncertainty, PositionedPositiveReason, EvaluatorGrounding, ProtectionPriorityRival, RelationalGrounding, ConcernExtension, RelationalOrganization, ClassificationRobustJudgment, AlignmentDirection, OpenFutureRevision, ContinuationRenewal, OrganizationalRuleInheritance | 223 | Metaethics, Significance (§6.15), Courses, Selection |
+| **R** renewal, loss, systems, wisdom | RenewalComparison, RenewalRecovery, GenerativeLossComparison, RelationalBecoming, OperativeCoherence, SystemsOrganization, RelationalReduction, GeneratedPaths, CorePredication, ContextualWisdom, WisdomResponseStructure, and `RepairComparison` group (e) | 155 | LossMatching, Renewal, Continuation, RenewalFlow (F1), Flow, Space |
+| **F2** (its own claim) | PracticalReach, CutCoverageAudit, WholeGroundCoverage, BecomingCompatibility, BecomingReversibility, DerivedHistoryLaw | 99 | as F2's board row says. F2's row names the laws missing for PracticalReach, CutCoverageAudit and BecomingCompatibility and three joins (MoveOutcomeProcesses, SeedReachProcesses, ContextArrivalTraces); no family takes any of the six until F2 releases it on the board |
+
+Cross-family imports in the periphery: `RenewalComparison` and `RelationalBecoming` (R) import `GenerativeComparison` and `JointContinuationClassification` (J); `DerivedHistoryLaw` (F2) imports `ContinuationConditions` (E); `ContinuationRenewal` and `RelationalGrounding` stay in J with their importers. These order retirement only: a module leaves the run when no module left in the run imports it. They do not order porting, because a ported core module imports only the core. Where R needs a J notion in the core, R builds on the core's `Metaethics` (`GenerativeComparison` is the core's `Extension` and `Comparison` by `Iff.rfl`) and, for J2, on J's core module once J has claimed its interface on the board.
+
+The joins go with the module they read: a pure join or `…Inherited` join whose periphery import is in a family belongs to that family's port.
+
+## 4. Rules for a port
+
+1. **Cite before stating.** Use the step-0 audit's grades where it covers the module ([RESTATEMENT-AUDIT](RESTATEMENT-AUDIT.md)); otherwise match statements, not names. A theorem the core already states is not restated; its record cites the core theorem. Do not reprove another session's item.
+2. **State the law, not the model's vocabulary.** A periphery theorem that is an instance of a core law is stated as that instance, on core types, in a module named by the core law it instantiates (board rule 8; [naming study §7](../../REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)). Content the core lacks goes in a new core module named by its law and joined to the spine through the core modules it builds on. The application's own words (episodes, lives, kitchens) stay in docstrings and records as readings, not in declaration names.
+3. **Commitments stay conditions.** A comparison or responsibility commitment (J1, J2, sufficiency of matching, the continuation condition) is a hypothesis or a structure argument of the core theorem, never a definition that asserts it. The core asserts no ethical axiom; §6.15 is the pattern.
+4. **Constructive core.** Empty axiom report. A periphery proof using `propext`, `Quot.sound` or `Classical.choice` is redone constructively, or the core theorem takes the omniscience principle as a hypothesis and says so. No axiom is "inherited" in the core.
+5. **No new Lean on existing core modules.** New core modules only; an existing core module's owner decides changes to it (board rule 3). Do not edit bridge files, join files (F2's three joins are F2's), `check_becoming.py`'s `BRIDGE` or `PERIPHERY_JOINS` lists, or the chapter §9 count row: those belong to the sweep (section 5). Adding your new modules to `CORE` is yours, at landing.
+6. **Records.** `make research-find` first. A port is not a new result unless it adds content (a constructive proof of a classically proved theorem is a delta of the existing record; state it there). Rebind the existing records: `canonical_source` to the core module, `proof_bindings` to the core declarations, a history note naming F3. Ren's words in a record stay verbatim and are never the warrant.
+7. **A module is ported when** every one of its theorems is graded *same* or *step* against the core, including your new modules. List the verdict per theorem in your family's file `development/bridge-fold/port-<family>.md`, in the step-0 audit's format. Report to the sweep owner when a module is ported; the sweep takes it out of the run.
+8. **Land in pieces.** Land through the queue a sub-chain at a time (a few modules), rebased on main, with the dry run, the checkers and `research-render`, `research-check`, `research-links`, `research-test`. Commit only your paths with `git commit -m … -- <paths>`. Work in your own worktree.
+
+## 5. The sweep (session "Too many bridges")
+
+After F1 lands, and then after each family landing:
+- **Retirement mechanism.** `check_becoming.py` gets a register of superseded periphery modules, each with its core canonical modules. The checker refuses a register entry that is still imported by a module in the run, and leaves registered modules out of the compile order; their receipts are kept.
+- **Per ported module.** It is added to the register and removed from the run, its kind-1, kind-3 and join declarations that read only registered modules are removed, its emptied files move to `history/`, the apart register is updated, and the connectivity measure is rerun.
+- **At the end.** The `BRIDGE` and `PERIPHERY_JOINS` lists are empty or gone, the chapter §9 row reports the final counts, and the fold study gets a closing section written by its owner or, with the owner's agreement, by the sweep.
+
+## 6. What this does not claim
+
+- That every periphery theorem can be stated constructively. Where a proof needs an omniscience principle, the hypothesis stays and is reported.
+- That family boundaries are right everywhere. A session that finds a module belongs elsewhere says so on the board, and the two owners agree on the move.
+- That a port adds theory. Most of it is restatement, so the theory gains no new results from it. What it gains is one vocabulary and a spine with no second home for its laws.
