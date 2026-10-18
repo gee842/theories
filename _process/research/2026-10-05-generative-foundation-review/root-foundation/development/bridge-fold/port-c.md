@@ -326,7 +326,7 @@ A join leaves the package when the modules it reads retire (the sweep, F3). Its 
 | `Becoming.DispatchProcessesInherited` | all (`unfunded_step_fails` → `short_step_fails`; `map_some` inlined) | Becoming.Dispatch (process section) | same |
 | `Becoming.TransactionTracesInherited` | all (`completion_within_mandate` → `completion_within_scope`, `compromised_issuer_no_completion` → `single_issuer_no_completion`, `narrowed_mandate_guarded` → `narrowed_scope_monitor`) | Becoming.Transactions (monitor section) | same |
 | `Becoming.ReconfigurationProcesses, Becoming.ReconfigurationProcessesInherited` | all (`step_keeps_mandate` → `step_keeps_scope`) | Becoming.Reconfiguration (process section) | same |
-| `Becoming.ProbeRunsInherited` | all (`run_answered`/`run_unanswered` → `ContingentPlans.run_some`/`run_none`) | Becoming.PooledEnvelopes (inquiry section) | same |
+| `Becoming.ProbeRunsInherited` | all (`run_answered`/`run_unanswered` → `ContingentPlans.run_some`/`run_none`; `slow_trace_misses_deadline` and `empty_candidates_trace_fails` with the existence of the trace as first conjunct, as U2c states them on main) | Becoming.PooledEnvelopes (inquiry section) | same |
 | `Becoming.InspectionProcessesInherited` | all | Becoming.WitnessRefinement (audit section) | same |
 | `Becoming.GuardHorizonProcesses, Becoming.GuardHorizonProcessesInherited` | all (`uniform_iff` takes `Viability.ChoiceOver`) | Becoming.GuardHorizon | same (choice named) |
 | `Becoming.Bridge` | `liveStep_iff_enabled` | Becoming.GuardHorizon (`Viable` on `Process`, `Enabled`) | identification |

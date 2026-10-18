@@ -321,7 +321,7 @@ JOINS = [
      'Becoming.Transactions (monitor section)', 'same'),
     ('Becoming.ReconfigurationProcesses, Becoming.ReconfigurationProcessesInherited',
      'all (`step_keeps_mandate` → `step_keeps_scope`)', 'Becoming.Reconfiguration (process section)', 'same'),
-    ('Becoming.ProbeRunsInherited', 'all (`run_answered`/`run_unanswered` → `ContingentPlans.run_some`/`run_none`)',
+    ('Becoming.ProbeRunsInherited', 'all (`run_answered`/`run_unanswered` → `ContingentPlans.run_some`/`run_none`; `slow_trace_misses_deadline` and `empty_candidates_trace_fails` with the existence of the trace as first conjunct, as U2c states them on main)',
      'Becoming.PooledEnvelopes (inquiry section)', 'same'),
     ('Becoming.InspectionProcessesInherited', 'all', 'Becoming.WitnessRefinement (audit section)', 'same'),
     ('Becoming.GuardHorizonProcesses, Becoming.GuardHorizonProcessesInherited',
