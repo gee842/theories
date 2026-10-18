@@ -7037,6 +7037,264 @@ Ren, 18 October 2026: "what is the light, how can we hold the light to enlight o
 - `nomatch` takes several discriminants, so inside anonymous constructors it is parenthesized; `match` on an equation proof substitutes only the matched variables, so `Clearing.acts_alike` matches on the condition and the equation together.
 - Scratch build: 33 theorems, 37 declarations, `unclean` empty, `with_axioms` empty; core receipt `20261018T122313.319851Z` passed.
 
+## 180. Where the spine's import tree starts, and a plan to start it at the one unfolding (W, step 1)
+
+```text
+Result(s): no new result; a measurement of the Becoming package's import tree and a landing plan for board item W
+Delta: for every one of the 10,529 declarations (7,760 theorems) of the core closure, whether its statement or its
+       proof reaches the labelled transition system (`GenerativeCore`, `Becoming.Frame`); what World, Web, Flow,
+       Exchange and Unfolding's equivalences need; an executable plan in three batches (W1 the base and the cut, W2 the
+       mixed modules the world side needs, W3 records and prose) with the one unfolding first and the labelled process
+       and the frame entering as its readings: per batch the new modules and their imports, every declaration moved,
+       every import line before and after, 0 statements changed, the compile steps rerun, simulated on Lean's own
+       constant graph with an acyclicity and import-closure check
+Supplied premises / correspondence: none; a reading of the Lean source and of Lean's constant data
+Evidence: Lean constants of type and value for every constant of the foundation and the core (scratch build on main
+          fcf68673f, every one of the 187 imported steps restored from the shared cache, Lean 4.29.1; the Lean sources
+          are byte-identical on main 08188907c, where this section was written); the checker's own module index and
+          import closure; data and tools in development/rerooting/
+Boundary: the plan is simulated on the constant graph, not compiled, and is rerun after F1 and F2 land; whether the
+          Process-level theorems transport to World is not claimed; "reaches no labelled process" is a fact about
+          constants, not a verdict that a statement is relational; counts are before F1, F2 and F3 land
+```
+
+Ren, 18 October 2026: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification" ([source](../../../../sources/15-codex-theory-conversations/2026-10-18-spine-root-reroot.md)). The work board holds this as W ([board](../../../BECOMING-WORKBOARD.md)): step 1 is this study, step 2 the implementation by the session that claimed W. AGENTS.md makes the one relational unfolding the starting point and asks that a framing presupposing separate entities be reconstructed, not patched with a closing remark ([AGENTS.md](../../../../AGENTS.md#begin-with-one-relational-unfolding)).
+
+**What section 91 left.** P69 (section 91, [Chinese edition](BECOMING-RENEWAL-READING.zh.md)) proved that the labelled process and the frame are readings of a `World`, and its self-review said plainly that this was an order of reading, not of compilation: `GenerativeCore` stayed unchanged, `Process` was still stated before `World`, and defining `Process` from `World` would "either rewrite every module or only rename". This section measures what lies between those two, and finds a third option. Neither every statement nor only a name changes. Most of the core never touches the labelled process, so moving a small number of declarations is enough for the tree to start at the world.
+
+### 180.1 Method
+
+- **Modules and imports.** The checker's own `module_index` and `closure` (`check_becoming.py`), which skip archived copies. The checked closure has 327 compile steps: 248 `Becoming.*` modules (183 core, 39 bridge, 26 periphery joins) and 79 others. The 249th file in `Becoming/`, `FallibleInquiry`, has its own checker. The brief's figures were recomputed. `Becoming.Frame` reaches 242 of the 248 (181 core, 38 bridge, 24 joins), not 223. The longest core chain runs 30 imports from `GenerativeCore`.
+- **Constants.** A Lean script (`tools/RerootMeta.lean`) imported the root module `Becoming`, a scratch build in which all 187 steps came from the cache. For every constant of the three foundation modules and the 184 core modules, it wrote the constants used in its type and in its value, and the module of each.
+- **Two reaches.** A declaration's *full reach* follows types and values through every core and foundation constant. Its *statement reach* follows its type, and through definitions and structures their values as well, but does not enter theorems' proofs. A declaration *reaches the labelled process* where the reach meets a constant of `GenerativeCore` (`Process`, `Trace`, `productProcess`, …) or of `Becoming.Frame` (`Frame`, `Run`, `Reach`, `Invariant`, `Novel`). Declarations are counted as the checker counts them (`declarations`, 10,529 in the core closure, 7,760 of them theorems, M2's receipt figure).
+- **Simulation.** `tools/sim.py` finds the base's closure and Unfolding's early readings. `tools/sim3.py` places every declaration in its batch's module, trims the imports of world-side modules to world-side ones, adds each import a module then lacks for a constant it uses, and checks that the resulting graph has no cycle. `tools/sim2.py` is an earlier pass without the cycle check; it is kept as a record and superseded by `sim3.py`.
+
+Data: [development/rerooting/](development/rerooting/README.md) (`declarations.json` with one row per declaration, `module-reach.json` with one row per module, `plan-batches.json` with the executable spec of W1 and W2; `plan-sim.json` is the earlier pass, superseded).
+
+### 180.2 The tree as it is
+
+| Root (imports nothing in the package) | Since | Reaches | What it states |
+|---|---|---|---|
+| `GenerativeCore` (foundation) | 6 October | 246 of 248 | `Generative.Process State Action` (`step : State → Action → State → Prop`), `Trace`, `productProcess` |
+| `RelationalRenewal` (foundation, `deeper/`) | 9 October | 215 | `RelationalRenewal.Unfolding F C`: levels, activity, what each formation requires, needs and draws. The fields are `Web`'s, with the dependence fixed in time; renewing and consuming are relations to participated conditions |
+| `Becoming.Segmentation` (core) | 14 October | 39 | grouping a sequence by a relation of adjacency, for every alphabet |
+| `Becoming.ReconfigurationProcesses` (bridge), `Becoming.DispatchProcessesInherited` (join) | 17 October | 1, 0 | joins over periphery roots (`CorrectionReconfiguration`, `AcquiredCorrection`) |
+
+`Becoming.Frame` (9 October) imports only `GenerativeCore` and is the trunk. `World` is defined in `Becoming.Space` at import depth 13 from `GenerativeCore`, along Frame → Renewal → Dependence → Return → Generation → Flow → Change → Population → Dissipation → Locality → Roles → Reserve → Space. `Becoming.Unfolding` is at depth 14 and has seven importers.
+
+### 180.3 What World, Web, Flow, Exchange and Unfolding need
+
+| Declaration | Module | Statement and proof reach (core and foundation) | Reaches the labelled process |
+|---|---|---|---|
+| `Web` | Dependence | Dependence (itself) | no |
+| `Flow` | Flow | Flow | no |
+| `World` | Space | Dependence, Flow, Space (the two structures) | no |
+| `Exchange`, `Exchange.taken`, `Exchange.given` | Unfolding | Unfolding, `total` (Generation) | no |
+| `World.move` | Unfolding | the structures | no |
+| `Web.Arises` | Generation | Dependence, Generation | no |
+| `Flow.Balances` | Flow | Dependence, Flow, Generation | no |
+| `World.arising_iff_ceasing` | Space | Change, Dependence, Flow, Generation, Population, Space | no |
+| `World.rests_unrefuted` | Space | + Dissipation, Locality, Roles | no |
+| `exchange` (the law of exchange) | Unfolding | `Process`, `total` | yes: it is a `Process` |
+| `withMove`, `Shown`, `Run.toWithMove`, `Shown.run`, `shown_le_iff`, `Frame.world`, `Frame.world_fixes_run`, `Alike`, `Bisimulation`, `DeadEnd.no_history`, `Splice.spliced` | Unfolding | Frame and the structures only | yes, by statement |
+| `World.balances_iff_exchange`, `World.exchange_step_iff`, `World.exchangeRun` | Unfolding | + `Flow.Balances`, `Flow.BalancesOn` | yes |
+| `Frame.claims_recur_iff` | Unfolding | + Change (`coming_recurs_iff`) | yes |
+| `exists_law_iff`, `closedBy_runs_agree`, `IdentifiesAlike.carries` | Unfolding | + Joint (`Determined`), Mechanism (`carries_law_iff`, `GoAlike`), Experiment | yes |
+
+So `Web` and `Flow` are records over `Nat` and `Prop`, `World` is a record of them, and `Exchange` needs only a list sum. None of them reaches the labelled process. Of Unfolding's 104 declarations (68 theorems), 64 (37 theorems) need nothing beyond those structures, `GenerativeCore` and `Frame`, and could stand right after `Frame`. The other 40 need `Flow.Balances`, `Web.Arises` and Change's `coming_recurs_iff` (laws of the world), or `Determined`, `GoAlike`, `carries_law_iff`, `keepHistory` and `Law.orbit` (laws of the process). The list is in `plan-sim.json` (`early_readings`, `late_readings`).
+
+### 180.4 How much of the core the labelled process reaches
+
+| | Declarations | Theorems |
+|---|--:|--:|
+| reach the labelled process neither by statement nor by proof | 8,409 | 6,029 |
+| statement free of it, proof uses it | 30 | 11 |
+| statement reaches it | 2,090 | 1,720 |
+| total (core closure) | 10,529 | 7,760 |
+
+By module (the three foundation modules and 184 core modules): 83 modules reach it nowhere (82 core, plus `RelationalRenewal`), 80 are mixed, 22 reach it in every declaration (among them `GenerativeCore`, `Frame`, `Gated`, `Postponement`, `LastChange` and most of the `…Runs` instance modules), 1 (`Capture`) only by a proof, and 1 (`Becoming`) declares nothing. Of the 82 core modules that reach it nowhere, 80 have `Frame` in their import closure; only `Segmentation` and `CrossSituational` do not.
+
+What the 6,029 free theorems are about, read off their statements: 2,962 state something of `Web`, `Flow`, `World`, `Exchange` or `RelationalRenewal.Unfolding`; 2 are over state-indexed observables (`Dependence`, `Conditions`) with no process; 3,065 mention none of these. The last group is laws of numbers, lists, orders and counts, and of the core's own configuration-first notions such as Recurrence's `Law` (a function on configurations, with no move alphabet). They are free of the labelled process without being statements about the one unfolding.
+
+### 180.5 Why World sits at depth 13
+
+Rebuilt from the free declarations alone (an edge where a free declaration uses a constant of another module), the chain under `Space` is the same chain without its first link: RelationalRenewal → Renewal → Dependence → Return → Generation → Flow → Change → Population → Dissipation → Locality → Roles → Reserve → Space, depth 12. Two facts follow.
+
+- **The labelled process enters the trunk at two imports.** `Becoming.Renewal` imports `Becoming.Frame` for its runs (`Conditions.along`, the `Renewable` witness runs), though its free declarations need only `RelationalRenewal`. `Becoming.Dissipation` imports `Becoming.Horizon`, whose statements are mostly about runs (41 of 53 declarations), though Dissipation's free declarations need nothing from it. The cycle-checked simulation found the second import, which the first pass missed (180.7, W1 step 4). Along the chain, what ties a free declaration to the module below is world-side: Dependence's `Conditions.dependence` uses Renewal's `Conditions`, Renewal's `falls_not_recurring` uses `RelationalRenewal.unrenewed_drawdown_finite`, Return uses `Web` and its relations, Flow uses Generation's `Web.Arises`, `Web.stock` and `total`.
+- **World's laws are deep because they build on each other, not because of the process.** `World.arising_iff_ceasing` uses Change and Population; `World.rests_unrefuted` uses Dissipation, Locality and Roles. The structure `World` needs only two records. It is late because it was defined at the end of the chain whose laws it collects (Space, 9 October). Its parts came first.
+
+So the tree has two roots at the bottom: `GenerativeCore`, the labelled process, and `RelationalRenewal`, the relational unfolding of 9 October, whose `Unfolding` is the fixed-dependence case of `Web` (`Web.static`, with `static_supported`, `static_dependent`, `static_renewed`, `static_consumed`, `static_renewingIn`, `static_consumingIn` in Dependence). The process root is above the relational one in the trunk only because Renewal joins them.
+
+### 180.6 The order after re-rooting
+
+The base comes first: one prelude-only module that states the one unfolding. The laws of the main chain follow it, free of the labelled process. `GenerativeCore` and `Frame` come next and enter the core as readings: the first module after `Frame` states Unfolding's equivalences, so every course of a labelled process is a world and every history is a run of the law it shows. Each module that now mixes world-side laws with their labelled-process instances keeps the laws, and its instances move to a module of the reading branch, `Becoming.Labelled<Module>`. Names are flat, as every module of the package is today. The prefix gathers the reading branch in one place.
+
+```text
+prelude
+├─ Becoming.World            World, Web, Flow, Exchange, Exchange.taken, Exchange.given, World.move, total
+│  │                         (8 declarations; imports nothing)
+│  └─ RelationalRenewal ─ Renewal ─ Dependence ─ Return ─ Generation ─ Flow ─ Change ─ Population
+│       ─ Dissipation ─ Locality ─ Roles ─ Reserve ─ Evolution ─ Space ─ … (after W2: all 82
+│       modules free of the labelled process, and the world-side parts of the 29 split modules)
+├─ GenerativeCore (unchanged)
+│  └─ Frame (unchanged)
+│     └─ Becoming.Labelled   imports Frame and World: withMove and its round trips, Shown, Shown.run,
+│        │                   shown_le_iff, Consistent, DeadEnd, Splice, exchange, exchangeFrame,
+│        │                   Frame.world, Frame.world_fixes_run, Bisimulation, Alike, DeterminedAt,
+│        │                   IdentifiesAlike, Circulation (60 declarations from Unfolding, 37 theorems)
+│        └─ Becoming.Labelled<Module> for each split module: its statements about runs, traces and
+│           processes, importing that module and what those statements use
+├─ RelationalRenewal (foundation, imports nothing)
+└─ Segmentation (imports nothing)
+```
+
+Import depths (simulated) now, after W1 and after W2:
+
+| | now | after W1 | after W2 |
+|---|--:|--:|--:|
+| `Becoming.World` | (none) | 0 | 0 |
+| `GenerativeCore` / `Frame` / `Becoming.Labelled` | 0 / 1 / (none) | 0 / 1 / 2 | 0 / 1 / 2 |
+| `Space` / `Unfolding` | 13 / 14 | 12 / 13 | 12 / 13 |
+| longest core chain | 30 | 29 | 29 |
+| existing core modules (of 183) with `Frame` in their import closure | 180 | 136 | 69 |
+| modules free of the labelled process (of 82) with `Frame` in their import closure | 80 | 42 | 0 |
+
+### 180.7 The implementation plan
+
+The batches below land one at a time through the queue, each with the checker green. No batch changes the statement of an existing theorem. Every declaration keeps its full Lean name, since names follow namespaces, not files, and keeps its proof. The exact contents are in [`plan-batches.json`](development/rerooting/plan-batches.json): for each batch, the new modules with their imports, the declarations each receives, the source modules edited, and every import line before and after. `tools/sim3.py` regenerates the file, and it checks that the resulting import graph has no cycle and that every module still imports every constant it uses.
+
+**Before W1 (prerequisites).**
+1. Wait for F1 and F2 to land, or rebase on them (W's row).
+2. Rerun `tools/` on the rebased tree: `scratch_build.py` with `tools/RerootImports.lean`, then `RerootMeta.lean`, `reach.py`, `mods.py`, `sim.py` and `sim3.py`. Take the module lists from that run's `plan-batches.json`. The counts below were measured before F1.
+
+**W1, the base and the cut** (one Lean landing; 8 new modules, 106 declarations moved, 59 of them theorems; 0 statements changed).
+
+1. **`Becoming.World`.**
+   - **Create it.** It imports nothing and receives `Web` (from Dependence), `Flow` (from Flow), `World` (from Space), `total` (from Generation), and `Exchange`, `Exchange.taken`, `Exchange.given` and `World.move` (from Unfolding). Each declaration moves with its docstring.
+   - **Point the old homes to it.** Add `import Becoming.World` to Dependence. Give the headers of Dependence, Flow and Space a sentence saying their structure now lives in `Becoming.World`.
+   - **Green on its own:** World lies below Dependence, and everything above Dependence keeps it in its closure.
+2. **`Becoming.Labelled`.**
+   - **Create it.** It imports `Becoming.Frame` and `Becoming.World` and receives Unfolding's 60 early readings (`plan-batches.json`, `W1.moved["Becoming.Labelled"]`).
+   - **Header.** Its header takes over the parts of Unfolding's header that describe them: the four splits and "The move is part of what the unfolding is", "A history fixes the law it shows", "A claim is a relatum".
+   - **Import.** Add `import Becoming.Labelled` to Unfolding.
+   - **Green on its own:** Unfolding's 40 remaining declarations reach the 60 through the new import.
+3. **The six modules of the chain's labelled readings.**
+   - **Create them**, each receiving the declarations of its source module that reach the labelled process:
+     - `Becoming.LabelledRenewal`: 9 (`Conditions.along`, the `Renewable` witness runs, `Run.renewal_recurs`, …);
+     - `Becoming.LabelledDependence`: 21 (`Dependence.along`, `Web.conditions_along`, the `Crossing`, `Pinned` and `Renewable` runs);
+     - `Becoming.LabelledReturn`: 2;
+     - `Becoming.LabelledGeneration`: 1;
+     - `Becoming.LabelledDissipation`: 1;
+     - `Becoming.LabelledRoles`: 4.
+   - **Imports.** These follow `W1.new_modules`: the source module, `Frame`, and the other labelled modules whose declarations they use. One reading module for all 38 would close a cycle: Dependence's runs are used by Horizon, and Dissipation's run uses Horizon.
+4. **The cut.**
+   - **Drop two imports:** `import Becoming.Frame` from Renewal and `import Becoming.Horizon` from Dissipation. Their remaining declarations do not use them.
+   - **Add the import lines this needs (8 modules whose only change is imports):**
+     - Horizon and Joint: `Frame`, `LabelledDependence` and `LabelledRenewal`;
+     - Stock: `Frame`;
+     - Metaethics: `LabelledDependence` and `LabelledRenewal`;
+     - Correspondence: `LabelledDependence`;
+     - ContinuingRevision: `LabelledRenewal`;
+     - Testing and Onward: `Horizon`.
+5. **Checker and root.**
+   - Add the 8 modules to `CORE` in `check_becoming.py`: `Becoming.World` first, `Becoming.Labelled` after `Becoming.Frame`, each `Labelled<Module>` after its source.
+   - Add them to the root module `Becoming.lean`.
+   - Update `check_becoming.py`'s layer comment ("the four core layers and their root").
+6. **Check, then land.**
+   - Scratch-build the 8 new modules and the 17 changed ones (9 lose declarations, 8 change only imports).
+   - Confirm every audit is empty, and that `Becoming.World` compiles from the prelude.
+   - Run the dry run and land through the queue.
+   - **Cost:** the inputs change for 224 of the 335 compile steps, each with its audit and signature step. That is one run of about two thirds of the package.
+
+Steps 1, 2 and 3–4 are each green on their own, so W1 can land in three parts if the queue needs it. Each part reruns most of the 224 steps again, so one landing is recommended.
+
+**W2, the other mixed modules** (one Lean landing, after W1 and re-simulated on W1's tree; 23 new modules, 474 declarations moved, 383 of them theorems; 0 statements changed).
+- **Which modules.** The set is closed under use: every mixed module whose world-side declarations a world-side module uses is split, so no world-side module needs a mixed one. It has 23 modules: Capture, Context, Correspondence, Counterfactual, Descent, Description, Diagonal, Histories, Horizon, Identification, Inquiry, Learning, Likeness, Mechanism, Metaethics, Readings, Recurrence, Runs, Significance, Standpoints, Testing, Unfolding and Weighted.
+- **What moves.** Each module keeps its world-side declarations. Its declarations about runs, traces and processes move to `Becoming.Labelled<Module>`, which imports the module, the module's former imports and what the moved statements use. Unfolding's remaining 34 go to `Becoming.LabelledUnfolding`. The largest moves are Likeness 114, Mechanism 43, Horizon 41 and Metaethics 39.
+- **Imports.**
+  - The world-side modules (the 82 modules free of the labelled process and the 29 split modules) keep only the imports that are themselves world-side, with the additions in `W2.import_changes`.
+  - 41 other modules change only an import line, gaining the `Labelled<Module>` they use (`W2.import_only`).
+  - The resulting graph is acyclic (simulated).
+- **Names.** `Labelled<Module>`, not `<Module>Runs`, because five of the names would collide with existing modules: `CounterfactualRuns`, `DiagonalRuns`, `IdentificationRuns`, `LearningRuns` and `RecurrenceRuns`. Merging into those modules closes cycles (for example RecurrenceRuns → Branching → Attraction → RecurrenceRuns).
+- **Cost:** the inputs change for 236 of the 358 compile steps.
+- **After W2:** no module free of the labelled process has `Frame` in its import closure, and 69 of the 183 existing core modules do.
+
+**W3, records, measure and prose** (no Lean; after W1, and again after W2).
+- **Records:**
+  - 19 records after W1 and 48 after W2 name a moved declaration in a live field (`records_naming_moved`).
+  - Their claims do not change.
+  - Their `proof_bindings`, which bind by source file, gain the new files.
+- **Measure and prose:**
+  - Rerun `THEOREM-CONNECTIVITY.py --check`, since apart roots are keyed by module.
+  - Update chapter §9's account of the layers and its count row.
+  - Update the package README's layer description (en and zh).
+- `make research-render`, `research-check`, `research-links` and `research-test`.
+
+### 180.8 How the older roots fold in
+
+- **`GenerativeCore`: unchanged; after W1 it is the root of the reading branch only.**
+  - Its bytes are bound by receipts, and 37 of the 75 inherited periphery modules in the run depend on it (9 import it directly), so it cannot import `Becoming.World`.
+  - The core uses it only from `Frame` and the reading branch. After W2 no world-side module reaches it.
+- **`InquirySufficiency`: unchanged.**
+  - It imports `GenerativeCore`, and 24 of its 32 declarations state something of the process.
+  - After W2 `Inquiry`, one of its two core importers (the other is `Keeping`), is split: `LabelledInquiry` imports it, and `Inquiry`, keeping its one world-side declaration, imports nothing.
+- **`RelationalRenewal`: unchanged; it stays the second module of the world side.**
+  - Renewal and Dependence read it through `Web.static` and its six equivalences, which stay in Dependence.
+  - It is the oldest relational root in the repository (9 October).
+- **`Becoming.Segmentation`: a prelude-only library of grouping laws, left as it is.**
+  - It needs nothing from the base and reaches the labelled process nowhere.
+  - An import of `Becoming.World` would be unused.
+- **`ReconfigurationProcesses` and `DispatchProcessesInherited`: not W's.**
+  - They read the periphery modules `CorrectionReconfiguration` and `AcquiredCorrection`, which F3C ports, and they leave the run with the F3 sweep.
+- **What W supports, and what it does not.** The graph keeps four sources: `Becoming.World`, `GenerativeCore`, `RelationalRenewal` and `Segmentation`. The claim W supports is that the core's own first module states the one unfolding, that the world side never needs the labelled process (after W2), and that the labelled process enters the core as its reading. It does not claim a single source.
+
+### 180.9 Overlap with the board and other branches (read 18 October on main 08188907c and the branches' tips)
+
+- **F1** (branch `f1-bridge-fold`, work in progress).
+  - **What it edits:** `check_becoming.py`'s `CORE` list, `Continuation` and `Feedback`. It adds `Becoming.RenewalFlow`, `Becoming.Lifting` and `Becoming.EdgeClosure`, and re-registers `ClassifiedBeliefProcesses`.
+  - **Overlap:** no W1 file; W2 shares none of F1's Lean files. The two share the `CORE` list.
+  - **What W must check:** `EdgeClosure` defines a `Process` (`edgeProcess`) on `Feedback`. `Feedback` is world-side, so after W2 `EdgeClosure` needs `import Becoming.Frame` or `Becoming.Labelled`. The rerun of `sim3.py` on F1's tree reports it.
+- **F2** (from F1's branch) registers three join modules as core and does not edit existing core modules. It shares only the `CORE` list. Its modules are classified in the rerun.
+- **F3 and its five families** add new core modules on the current base and retire periphery modules.
+  - W's row asks them to keep building on the current base.
+  - In this plan their modules go through the classification before W2, as any module does: a world-side module's imports are trimmed, and a mixed one is split.
+- **N6** (branch `n6-reading`, not landed, waiting on Ren's yes) rewrites docstrings in 62 core files.
+  - **Shared with W1:** `Unfolding`, `Stock` and `Testing`.
+  - **Shared with W2:** `Context`, `Counterfactual`, `Description`, `Diagonal`, `Identification`, `Learning`, `Likeness`, `Mechanism`, `Readings`, `Testing` and `Unfolding`.
+  - **How to land:** the docstring of a moving declaration moves in N6's wording if N6 has landed, and whichever lands second resolves the text.
+- **G3, L2, C1 and M3** add modules above Unfolding or the chain. Their imports stay valid in W1, because every module keeps every constant it uses in its import closure, which is the simulation's check. In W2 they are classified with the rest.
+- **No integrator is named.** Under rule 3 a change to a shared definition is decided by the owner of the defining module. W changes no definition: `Web`, `Flow`, `World` and `Exchange` move with their names and bodies.
+
+### 180.10 Cost
+
+| Batch | New modules | Declarations moved | Modules edited (+ import line only) | Statements changed | Compile steps rerun |
+|---|--:|--:|--:|--:|--:|
+| W1 | 8 | 106 | 9 (+8) | 0 | 224 of 335 |
+| W2 | 23 | 474 | 23 (+41) | 0 | 236 of 358 |
+| W3 | 0 | 0 | records 19 + 48, chapter, README | 0 | none (no Lean) |
+
+Every moved declaration has an empty axiom report now and keeps its proof term, so the audits stay empty. `Becoming.World` imports nothing, so the prelude-only compile of the core is unaffected. The receipts record no durations, so the cost is counted in steps. Scratch builds store passed steps in the shared cache, and the landing run reuses them.
+
+**Not in the plan.**
+- **Splitting the remaining mixed modules (50 after W2).** They state a law and its process instance side by side, and no world-side module needs them. Splitting them would add files without making any law simpler.
+- **Restating the 1,720 Process-level theorems over World.** It is not a transport. A world is one course; a process is a law over many courses. Unfolding shows the correspondence failing both ways: a law can have a step and no history (`DeadEnd.no_history`), and the law a revisiting history shows admits histories it never took (`Splice.spliced`). The relation the core states exactly is the one `Becoming.Labelled` holds.
+
+### 180.11 What this does not show
+
+- **That the plan compiles.** The simulation reads Lean's constants. It does not see `open`, `variable`, sections, notation, instances, attributes or docstrings' references. Each step is scratch-built before landing.
+- **That the counts hold after F1, F2 and F3 land.** The tools must be rerun.
+- **That every Process-level theorem has a world-side counterpart.** It is not audited (180.10).
+- **That a declaration free of the labelled process is a relational statement.** 3,065 of the 6,029 free theorems mention neither the world nor the process.
+- **That `World` takes no split.** `Web` and `Flow` take two kinds, formations and conditions, which `World` instantiates at one `Relatum` (`Becoming.Roles` reads the two-kind form as a world). The common step index is a commitment of the representation (P69's boundary; R1's `Interleavings` reads it off the relata's own courses). W leaves both as they are.
+
+### 180.12 Ren's go and what the implementer settles
+
+Ren gave the go for W on 18 October: "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification" ([source](../../../../sources/15-codex-theory-conversations/2026-10-18-spine-root-reroot.md)). Nothing in the plan waits on him. The implementing session (W's row) settles these points on the board as it lands:
+- **Names.** It fixes the names (`Becoming.World`, `Becoming.Labelled`, `Becoming.Labelled<Module>`) at claim time, under the naming rule.
+- **Rerun.** It reruns the tools after F1 and F2, and again before W2.
+- **N6's wording.** It keeps N6's wording on any docstring that moves.
+- **New modules.** It brings the families' new modules into W2's classification.
+
 ## Ren’s words quoted in passages that exist only in the Chinese edition
 
 The paragraphs below sit in Chinese-only passages of this study log ([Chinese edition](BECOMING-RENEWAL-READING.zh.md)). Only the quotation is repeated here, verbatim and in Ren’s original language, with the source link given in the passage (line numbers refer to the bilingual file before the split); the surrounding AI prose is in the Chinese edition. Nothing here is translated.

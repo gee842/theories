@@ -1,0 +1,1872 @@
+[
+{
+"module": "GenerativeCore",
+"decls": 28,
+"free": 0,
+"proof_only": 0,
+"stmt": 28,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 23
+},
+{
+"module": "InquirySufficiency",
+"decls": 32,
+"free": 8,
+"proof_only": 0,
+"stmt": 24,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 14
+},
+{
+"module": "RelationalRenewal",
+"decls": 60,
+"free": 60,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 35,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Frame",
+"decls": 17,
+"free": 0,
+"proof_only": 0,
+"stmt": 17,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 11
+},
+{
+"module": "Becoming.Inquiry",
+"decls": 9,
+"free": 1,
+"proof_only": 0,
+"stmt": 8,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 6
+},
+{
+"module": "Becoming.Recurrence",
+"decls": 77,
+"free": 62,
+"proof_only": 0,
+"stmt": 15,
+"thm_free": 51,
+"thm_proof": 0,
+"thm_stmt": 12
+},
+{
+"module": "Becoming.Diagonal",
+"decls": 31,
+"free": 30,
+"proof_only": 0,
+"stmt": 1,
+"thm_free": 25,
+"thm_proof": 0,
+"thm_stmt": 1
+},
+{
+"module": "Becoming.Context",
+"decls": 88,
+"free": 58,
+"proof_only": 1,
+"stmt": 29,
+"thm_free": 26,
+"thm_proof": 0,
+"thm_stmt": 20
+},
+{
+"module": "Becoming.Quantum",
+"decls": 69,
+"free": 69,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 37,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Renewal",
+"decls": 14,
+"free": 5,
+"proof_only": 0,
+"stmt": 9,
+"thm_free": 1,
+"thm_proof": 0,
+"thm_stmt": 5
+},
+{
+"module": "Becoming.Dependence",
+"decls": 133,
+"free": 112,
+"proof_only": 0,
+"stmt": 21,
+"thm_free": 52,
+"thm_proof": 0,
+"thm_stmt": 10
+},
+{
+"module": "Becoming.Return",
+"decls": 38,
+"free": 36,
+"proof_only": 0,
+"stmt": 2,
+"thm_free": 27,
+"thm_proof": 0,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.Horizon",
+"decls": 53,
+"free": 12,
+"proof_only": 0,
+"stmt": 41,
+"thm_free": 8,
+"thm_proof": 0,
+"thm_stmt": 29
+},
+{
+"module": "Becoming.Joint",
+"decls": 77,
+"free": 30,
+"proof_only": 0,
+"stmt": 47,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 30
+},
+{
+"module": "Becoming.Experiment",
+"decls": 42,
+"free": 10,
+"proof_only": 0,
+"stmt": 32,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 21
+},
+{
+"module": "Becoming.Mechanism",
+"decls": 47,
+"free": 4,
+"proof_only": 1,
+"stmt": 42,
+"thm_free": 0,
+"thm_proof": 1,
+"thm_stmt": 29
+},
+{
+"module": "Becoming.Unfolding",
+"decls": 104,
+"free": 17,
+"proof_only": 0,
+"stmt": 87,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 66
+},
+{
+"module": "Becoming.Histories",
+"decls": 41,
+"free": 7,
+"proof_only": 1,
+"stmt": 33,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 27
+},
+{
+"module": "Becoming.Branching",
+"decls": 156,
+"free": 24,
+"proof_only": 0,
+"stmt": 132,
+"thm_free": 16,
+"thm_proof": 0,
+"thm_stmt": 103
+},
+{
+"module": "Becoming.Listing",
+"decls": 103,
+"free": 103,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 85,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Order",
+"decls": 317,
+"free": 317,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 266,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.OrderNormal",
+"decls": 127,
+"free": 127,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 101,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.OneStep",
+"decls": 401,
+"free": 401,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 311,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Weighted",
+"decls": 67,
+"free": 65,
+"proof_only": 0,
+"stmt": 2,
+"thm_free": 42,
+"thm_proof": 0,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.Transmission",
+"decls": 83,
+"free": 83,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 64,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Succession",
+"decls": 9,
+"free": 9,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 6,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Attraction",
+"decls": 61,
+"free": 46,
+"proof_only": 0,
+"stmt": 15,
+"thm_free": 36,
+"thm_proof": 0,
+"thm_stmt": 11
+},
+{
+"module": "Becoming.Substitution",
+"decls": 24,
+"free": 24,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 12,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Generation",
+"decls": 62,
+"free": 61,
+"proof_only": 0,
+"stmt": 1,
+"thm_free": 29,
+"thm_proof": 0,
+"thm_stmt": 1
+},
+{
+"module": "Becoming.Flow",
+"decls": 136,
+"free": 136,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 97,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Stock",
+"decls": 58,
+"free": 24,
+"proof_only": 1,
+"stmt": 33,
+"thm_free": 19,
+"thm_proof": 1,
+"thm_stmt": 26
+},
+{
+"module": "Becoming.Change",
+"decls": 76,
+"free": 76,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 59,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Population",
+"decls": 156,
+"free": 156,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 130,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Identity",
+"decls": 181,
+"free": 181,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 119,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Persistence",
+"decls": 90,
+"free": 89,
+"proof_only": 0,
+"stmt": 1,
+"thm_free": 70,
+"thm_proof": 0,
+"thm_stmt": 1
+},
+{
+"module": "Becoming.Wholes",
+"decls": 52,
+"free": 52,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 36,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Dissipation",
+"decls": 134,
+"free": 133,
+"proof_only": 0,
+"stmt": 1,
+"thm_free": 109,
+"thm_proof": 0,
+"thm_stmt": 1
+},
+{
+"module": "Becoming.Locality",
+"decls": 51,
+"free": 51,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 44,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Seeking",
+"decls": 16,
+"free": 16,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 13,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Roles",
+"decls": 189,
+"free": 185,
+"proof_only": 1,
+"stmt": 3,
+"thm_free": 142,
+"thm_proof": 1,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.Reserve",
+"decls": 123,
+"free": 123,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 84,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Evolution",
+"decls": 50,
+"free": 50,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 31,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Capture",
+"decls": 13,
+"free": 12,
+"proof_only": 1,
+"stmt": 0,
+"thm_free": 10,
+"thm_proof": 1,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Space",
+"decls": 136,
+"free": 136,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 65,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Premises",
+"decls": 133,
+"free": 133,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 61,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Sampling",
+"decls": 119,
+"free": 119,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 90,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Tower",
+"decls": 8,
+"free": 8,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 6,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Openness",
+"decls": 117,
+"free": 117,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 85,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Decidedness",
+"decls": 72,
+"free": 72,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 65,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Refinement",
+"decls": 14,
+"free": 14,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 11,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Counting",
+"decls": 312,
+"free": 312,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 212,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Standing",
+"decls": 54,
+"free": 54,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 37,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Resolution",
+"decls": 262,
+"free": 262,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 208,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Entropy",
+"decls": 233,
+"free": 233,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 185,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Units",
+"decls": 41,
+"free": 41,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 31,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Imbalance",
+"decls": 16,
+"free": 16,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 15,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Continuation",
+"decls": 87,
+"free": 87,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 52,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Admission",
+"decls": 72,
+"free": 72,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 46,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Regions",
+"decls": 37,
+"free": 37,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 26,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Metaethics",
+"decls": 78,
+"free": 39,
+"proof_only": 2,
+"stmt": 37,
+"thm_free": 11,
+"thm_proof": 1,
+"thm_stmt": 28
+},
+{
+"module": "Becoming.Ranking",
+"decls": 62,
+"free": 38,
+"proof_only": 3,
+"stmt": 21,
+"thm_free": 19,
+"thm_proof": 0,
+"thm_stmt": 20
+},
+{
+"module": "Becoming.LossMatching",
+"decls": 42,
+"free": 11,
+"proof_only": 0,
+"stmt": 31,
+"thm_free": 9,
+"thm_proof": 0,
+"thm_stmt": 25
+},
+{
+"module": "Becoming.Correspondence",
+"decls": 53,
+"free": 31,
+"proof_only": 2,
+"stmt": 20,
+"thm_free": 15,
+"thm_proof": 2,
+"thm_stmt": 20
+},
+{
+"module": "Becoming.Descent",
+"decls": 50,
+"free": 35,
+"proof_only": 0,
+"stmt": 15,
+"thm_free": 26,
+"thm_proof": 0,
+"thm_stmt": 15
+},
+{
+"module": "Becoming.Standpoints",
+"decls": 36,
+"free": 33,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 19,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.Significance",
+"decls": 46,
+"free": 41,
+"proof_only": 0,
+"stmt": 5,
+"thm_free": 33,
+"thm_proof": 0,
+"thm_stmt": 4
+},
+{
+"module": "Becoming.Interdependence",
+"decls": 36,
+"free": 36,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 30,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Feeding",
+"decls": 64,
+"free": 64,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 41,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Feedback",
+"decls": 149,
+"free": 149,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 102,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Testing",
+"decls": 149,
+"free": 143,
+"proof_only": 0,
+"stmt": 6,
+"thm_free": 86,
+"thm_proof": 0,
+"thm_stmt": 6
+},
+{
+"module": "Becoming.Runaway",
+"decls": 17,
+"free": 17,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 13,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Response",
+"decls": 47,
+"free": 47,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 30,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.TimedResponse",
+"decls": 30,
+"free": 30,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 22,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Counterfactual",
+"decls": 73,
+"free": 67,
+"proof_only": 0,
+"stmt": 6,
+"thm_free": 41,
+"thm_proof": 0,
+"thm_stmt": 5
+},
+{
+"module": "Becoming.Regrouping",
+"decls": 33,
+"free": 17,
+"proof_only": 0,
+"stmt": 16,
+"thm_free": 10,
+"thm_proof": 0,
+"thm_stmt": 14
+},
+{
+"module": "Becoming.Selection",
+"decls": 91,
+"free": 91,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 67,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.SelectionGap",
+"decls": 9,
+"free": 9,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 7,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.SelectionReach",
+"decls": 13,
+"free": 13,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 13,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.SelectionPool",
+"decls": 37,
+"free": 37,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 33,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Learning",
+"decls": 120,
+"free": 116,
+"proof_only": 0,
+"stmt": 4,
+"thm_free": 80,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.Revision",
+"decls": 44,
+"free": 21,
+"proof_only": 0,
+"stmt": 23,
+"thm_free": 12,
+"thm_proof": 0,
+"thm_stmt": 19
+},
+{
+"module": "Becoming.Contacts",
+"decls": 30,
+"free": 29,
+"proof_only": 0,
+"stmt": 1,
+"thm_free": 23,
+"thm_proof": 0,
+"thm_stmt": 1
+},
+{
+"module": "Becoming.RegroupingSelection",
+"decls": 11,
+"free": 1,
+"proof_only": 0,
+"stmt": 10,
+"thm_free": 1,
+"thm_proof": 0,
+"thm_stmt": 10
+},
+{
+"module": "Becoming.ReferencePlan",
+"decls": 85,
+"free": 72,
+"proof_only": 0,
+"stmt": 13,
+"thm_free": 47,
+"thm_proof": 0,
+"thm_stmt": 12
+},
+{
+"module": "Becoming.ContinuingRevision",
+"decls": 92,
+"free": 52,
+"proof_only": 0,
+"stmt": 40,
+"thm_free": 22,
+"thm_proof": 0,
+"thm_stmt": 37
+},
+{
+"module": "Becoming.Description",
+"decls": 65,
+"free": 47,
+"proof_only": 0,
+"stmt": 18,
+"thm_free": 35,
+"thm_proof": 0,
+"thm_stmt": 18
+},
+{
+"module": "Becoming.Identification",
+"decls": 128,
+"free": 125,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 103,
+"thm_proof": 0,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.Learnable",
+"decls": 23,
+"free": 23,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 17,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Assurance",
+"decls": 25,
+"free": 6,
+"proof_only": 0,
+"stmt": 19,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 16
+},
+{
+"module": "Becoming.Segmentation",
+"decls": 32,
+"free": 32,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 17,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Readout",
+"decls": 36,
+"free": 30,
+"proof_only": 0,
+"stmt": 6,
+"thm_free": 18,
+"thm_proof": 0,
+"thm_stmt": 4
+},
+{
+"module": "Becoming.Gated",
+"decls": 16,
+"free": 0,
+"proof_only": 0,
+"stmt": 16,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 13
+},
+{
+"module": "Becoming.Viability",
+"decls": 33,
+"free": 14,
+"proof_only": 3,
+"stmt": 16,
+"thm_free": 10,
+"thm_proof": 3,
+"thm_stmt": 12
+},
+{
+"module": "Becoming.Keeping",
+"decls": 55,
+"free": 22,
+"proof_only": 0,
+"stmt": 33,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 26
+},
+{
+"module": "Becoming.Countdown",
+"decls": 27,
+"free": 23,
+"proof_only": 0,
+"stmt": 4,
+"thm_free": 17,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.Lasting",
+"decls": 112,
+"free": 82,
+"proof_only": 0,
+"stmt": 30,
+"thm_free": 66,
+"thm_proof": 0,
+"thm_stmt": 23
+},
+{
+"module": "Becoming.Copying",
+"decls": 106,
+"free": 100,
+"proof_only": 0,
+"stmt": 6,
+"thm_free": 67,
+"thm_proof": 0,
+"thm_stmt": 4
+},
+{
+"module": "Becoming.Retrodiction",
+"decls": 24,
+"free": 24,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 17,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.CrossSituational",
+"decls": 43,
+"free": 43,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 37,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Likeness",
+"decls": 204,
+"free": 90,
+"proof_only": 0,
+"stmt": 114,
+"thm_free": 58,
+"thm_proof": 0,
+"thm_stmt": 98
+},
+{
+"module": "Becoming.Distinguishing",
+"decls": 12,
+"free": 2,
+"proof_only": 0,
+"stmt": 10,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 9
+},
+{
+"module": "Becoming.Composition",
+"decls": 95,
+"free": 39,
+"proof_only": 0,
+"stmt": 56,
+"thm_free": 20,
+"thm_proof": 0,
+"thm_stmt": 45
+},
+{
+"module": "Becoming.Joining",
+"decls": 113,
+"free": 54,
+"proof_only": 2,
+"stmt": 57,
+"thm_free": 21,
+"thm_proof": 0,
+"thm_stmt": 50
+},
+{
+"module": "Becoming.Granularity",
+"decls": 120,
+"free": 30,
+"proof_only": 0,
+"stmt": 90,
+"thm_free": 7,
+"thm_proof": 0,
+"thm_stmt": 79
+},
+{
+"module": "Becoming.Postponement",
+"decls": 17,
+"free": 0,
+"proof_only": 0,
+"stmt": 17,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 16
+},
+{
+"module": "Becoming.Boundaries",
+"decls": 54,
+"free": 54,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 47,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Novelty",
+"decls": 20,
+"free": 20,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 19,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Reading",
+"decls": 50,
+"free": 50,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 34,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Readings",
+"decls": 16,
+"free": 12,
+"proof_only": 0,
+"stmt": 4,
+"thm_free": 10,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.Coupling",
+"decls": 72,
+"free": 36,
+"proof_only": 0,
+"stmt": 36,
+"thm_free": 25,
+"thm_proof": 0,
+"thm_stmt": 26
+},
+{
+"module": "Becoming.Sensitivity",
+"decls": 58,
+"free": 58,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 47,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Tail",
+"decls": 53,
+"free": 53,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 39,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Courses",
+"decls": 100,
+"free": 17,
+"proof_only": 1,
+"stmt": 82,
+"thm_free": 15,
+"thm_proof": 0,
+"thm_stmt": 75
+},
+{
+"module": "Becoming.Parting",
+"decls": 63,
+"free": 9,
+"proof_only": 0,
+"stmt": 54,
+"thm_free": 6,
+"thm_proof": 0,
+"thm_stmt": 38
+},
+{
+"module": "Becoming.Onward",
+"decls": 40,
+"free": 7,
+"proof_only": 0,
+"stmt": 33,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 26
+},
+{
+"module": "Becoming.Typicality",
+"decls": 56,
+"free": 56,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 43,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Situations",
+"decls": 54,
+"free": 51,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 36,
+"thm_proof": 0,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.Propagation",
+"decls": 97,
+"free": 97,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 78,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Loops",
+"decls": 137,
+"free": 137,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 113,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Remainder",
+"decls": 66,
+"free": 66,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 58,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Routes",
+"decls": 39,
+"free": 39,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 30,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Closing",
+"decls": 61,
+"free": 61,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 51,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Thresholds",
+"decls": 45,
+"free": 45,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 38,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Observation",
+"decls": 32,
+"free": 32,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 27,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.LevelCoupling",
+"decls": 41,
+"free": 41,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 30,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Interleavings",
+"decls": 70,
+"free": 62,
+"proof_only": 0,
+"stmt": 8,
+"thm_free": 49,
+"thm_proof": 0,
+"thm_stmt": 7
+},
+{
+"module": "Becoming.CensusCounts",
+"decls": 44,
+"free": 44,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 41,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.CensusBinding",
+"decls": 29,
+"free": 29,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 29,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Frequency",
+"decls": 98,
+"free": 98,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 83,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Gain",
+"decls": 35,
+"free": 35,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 30,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Gluing",
+"decls": 113,
+"free": 113,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 81,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.Relevance",
+"decls": 39,
+"free": 15,
+"proof_only": 1,
+"stmt": 23,
+"thm_free": 9,
+"thm_proof": 0,
+"thm_stmt": 22
+},
+{
+"module": "Becoming.Runs",
+"decls": 35,
+"free": 9,
+"proof_only": 0,
+"stmt": 26,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 17
+},
+{
+"module": "Becoming.CourseWorlds",
+"decls": 38,
+"free": 38,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 34,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.LearnableRuns",
+"decls": 13,
+"free": 0,
+"proof_only": 0,
+"stmt": 13,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 10
+},
+{
+"module": "Becoming.Unrolling",
+"decls": 22,
+"free": 18,
+"proof_only": 0,
+"stmt": 4,
+"thm_free": 11,
+"thm_proof": 0,
+"thm_stmt": 4
+},
+{
+"module": "Becoming.ParityReadings",
+"decls": 13,
+"free": 5,
+"proof_only": 0,
+"stmt": 8,
+"thm_free": 3,
+"thm_proof": 0,
+"thm_stmt": 7
+},
+{
+"module": "Becoming.FinerTraces",
+"decls": 17,
+"free": 11,
+"proof_only": 0,
+"stmt": 6,
+"thm_free": 11,
+"thm_proof": 0,
+"thm_stmt": 5
+},
+{
+"module": "Becoming.FormedLoops",
+"decls": 12,
+"free": 12,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 7,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.AttractionRuns",
+"decls": 15,
+"free": 0,
+"proof_only": 0,
+"stmt": 15,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 15
+},
+{
+"module": "Becoming.BoundaryFlows",
+"decls": 16,
+"free": 16,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 16,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.BoundaryWorlds",
+"decls": 2,
+"free": 2,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.CandidateRuns",
+"decls": 5,
+"free": 0,
+"proof_only": 0,
+"stmt": 5,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 5
+},
+{
+"module": "Becoming.CaptureWorlds",
+"decls": 4,
+"free": 4,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.CensusWebs",
+"decls": 8,
+"free": 8,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 8,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.ContactCourses",
+"decls": 3,
+"free": 0,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.ContextualRuns",
+"decls": 25,
+"free": 4,
+"proof_only": 0,
+"stmt": 21,
+"thm_free": 1,
+"thm_proof": 0,
+"thm_stmt": 19
+},
+{
+"module": "Becoming.ContinuingRuns",
+"decls": 12,
+"free": 1,
+"proof_only": 0,
+"stmt": 11,
+"thm_free": 1,
+"thm_proof": 0,
+"thm_stmt": 11
+},
+{
+"module": "Becoming.CopyCourses",
+"decls": 13,
+"free": 3,
+"proof_only": 0,
+"stmt": 10,
+"thm_free": 3,
+"thm_proof": 0,
+"thm_stmt": 10
+},
+{
+"module": "Becoming.CountdownCourses",
+"decls": 3,
+"free": 0,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.CounterfactualRuns",
+"decls": 3,
+"free": 1,
+"proof_only": 0,
+"stmt": 2,
+"thm_free": 1,
+"thm_proof": 0,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.CouplingTraces",
+"decls": 37,
+"free": 3,
+"proof_only": 0,
+"stmt": 34,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 32
+},
+{
+"module": "Becoming.CourseRoles",
+"decls": 11,
+"free": 10,
+"proof_only": 0,
+"stmt": 1,
+"thm_free": 10,
+"thm_proof": 0,
+"thm_stmt": 1
+},
+{
+"module": "Becoming.DependenceWebs",
+"decls": 2,
+"free": 2,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.DiagonalRuns",
+"decls": 15,
+"free": 0,
+"proof_only": 0,
+"stmt": 15,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 13
+},
+{
+"module": "Becoming.ExchangeFlows",
+"decls": 4,
+"free": 4,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.HorizonWebs",
+"decls": 1,
+"free": 1,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 1,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.IdentificationRuns",
+"decls": 31,
+"free": 5,
+"proof_only": 0,
+"stmt": 26,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 26
+},
+{
+"module": "Becoming.JointPlanFrames",
+"decls": 3,
+"free": 0,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.LastingRuns",
+"decls": 18,
+"free": 0,
+"proof_only": 0,
+"stmt": 18,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 18
+},
+{
+"module": "Becoming.LearningRuns",
+"decls": 34,
+"free": 5,
+"proof_only": 0,
+"stmt": 29,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 28
+},
+{
+"module": "Becoming.LevelWebs",
+"decls": 4,
+"free": 4,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.ListedOutcomeFrames",
+"decls": 3,
+"free": 0,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.ListedWebs",
+"decls": 12,
+"free": 12,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 12,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.MoveRuns",
+"decls": 16,
+"free": 0,
+"proof_only": 0,
+"stmt": 16,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 14
+},
+{
+"module": "Becoming.OrderWorlds",
+"decls": 8,
+"free": 8,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 8,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.PassageWorlds",
+"decls": 4,
+"free": 4,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.RecurrenceRuns",
+"decls": 9,
+"free": 0,
+"proof_only": 0,
+"stmt": 9,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 8
+},
+{
+"module": "Becoming.ReducedRuns",
+"decls": 4,
+"free": 0,
+"proof_only": 0,
+"stmt": 4,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 4
+},
+{
+"module": "Becoming.ReferencePlanTraces",
+"decls": 59,
+"free": 5,
+"proof_only": 0,
+"stmt": 54,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 53
+},
+{
+"module": "Becoming.RetrodictionRuns",
+"decls": 3,
+"free": 0,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.RevisionRuns",
+"decls": 3,
+"free": 0,
+"proof_only": 0,
+"stmt": 3,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming.RouteTraces",
+"decls": 7,
+"free": 5,
+"proof_only": 0,
+"stmt": 2,
+"thm_free": 5,
+"thm_proof": 0,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.SeekingRuns",
+"decls": 10,
+"free": 0,
+"proof_only": 0,
+"stmt": 10,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 10
+},
+{
+"module": "Becoming.Enough",
+"decls": 20,
+"free": 2,
+"proof_only": 0,
+"stmt": 18,
+"thm_free": 1,
+"thm_proof": 0,
+"thm_stmt": 8
+},
+{
+"module": "Becoming.Settling",
+"decls": 37,
+"free": 15,
+"proof_only": 1,
+"stmt": 21,
+"thm_free": 10,
+"thm_proof": 1,
+"thm_stmt": 16
+},
+{
+"module": "Becoming.LastChange",
+"decls": 24,
+"free": 0,
+"proof_only": 0,
+"stmt": 24,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 20
+},
+{
+"module": "Becoming.SelectionRuns",
+"decls": 13,
+"free": 0,
+"proof_only": 0,
+"stmt": 13,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 13
+},
+{
+"module": "Becoming.SensitivityWebs",
+"decls": 4,
+"free": 4,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 4,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.SituationTraces",
+"decls": 26,
+"free": 11,
+"proof_only": 3,
+"stmt": 12,
+"thm_free": 11,
+"thm_proof": 0,
+"thm_stmt": 12
+},
+{
+"module": "Becoming.StockTraces",
+"decls": 2,
+"free": 0,
+"proof_only": 0,
+"stmt": 2,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 2
+},
+{
+"module": "Becoming.StrengthFlows",
+"decls": 14,
+"free": 14,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 13,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.TailRuns",
+"decls": 20,
+"free": 0,
+"proof_only": 5,
+"stmt": 15,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 13
+},
+{
+"module": "Becoming.TallyWorlds",
+"decls": 6,
+"free": 6,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 5,
+"thm_proof": 0,
+"thm_stmt": 0
+},
+{
+"module": "Becoming.TypicalRuns",
+"decls": 26,
+"free": 15,
+"proof_only": 1,
+"stmt": 10,
+"thm_free": 13,
+"thm_proof": 0,
+"thm_stmt": 9
+},
+{
+"module": "Becoming.WeightedTraces",
+"decls": 7,
+"free": 2,
+"proof_only": 0,
+"stmt": 5,
+"thm_free": 2,
+"thm_proof": 0,
+"thm_stmt": 3
+},
+{
+"module": "Becoming",
+"decls": 0,
+"free": 0,
+"proof_only": 0,
+"stmt": 0,
+"thm_free": 0,
+"thm_proof": 0,
+"thm_stmt": 0
+}
+]
