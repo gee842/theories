@@ -40,3 +40,13 @@
 ## Context (AI-authored)
 
 - New Lean for the learning and seeking line waits until N5's renaming has landed on main, so that it is written in the adopted vocabulary and does not collide with the rename.
+
+## Ren's message, after S1 landed
+
+18 October 2026, the same conversation, after the AI reported L1 (`Becoming.Unrolling`) and S1 (`Becoming.Enough`) landed and asked what next on the line (Ren chose the reply button the AI had drafted).
+
+> Start the next item: when the runs of a process settle, the part of assured enough that doesn't mention the target (claim on the board first).
+
+## Context (AI-authored)
+
+- Read as board item S2: S1's `Enough.assured_iff` splits assured enough into every reachable stay meeting the target and every run settling; S2 states when the runs of a process settle.
