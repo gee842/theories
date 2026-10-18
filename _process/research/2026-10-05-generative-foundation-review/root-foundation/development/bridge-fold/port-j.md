@@ -49,8 +49,8 @@
 | [PositiveGroundUncertainty](#positivegrounduncertainty) | 9 | 9 | 0 | 0 | 0 | 0 | 9 | fully restated (sub-chain 2) |
 | [PositionedPositiveReason](#positionedpositivereason) | 10 | 10 | 0 | 0 | 0 | 0 | 10 | fully restated (sub-chain 2) |
 | [EvaluatorGrounding](#evaluatorgrounding) | 12 | 12 | 0 | 0 | 0 | 0 | 12 | fully restated (sub-chain 2) |
-| OpenFutureRevision | 10 | | | | | | | sub-chain 2, pending |
-| ContinuationRenewal | 17 | | | | | | | sub-chain 2, pending |
+| [OpenFutureRevision](#openfuturerevision) | 10 | 10 | 0 | 0 | 0 | 0 | 10 | fully restated (sub-chain 2) |
+| [ContinuationRenewal](#continuationrenewal) | 17 | 17 | 0 | 0 | 0 | 0 | 17 | fully restated (sub-chain 2) |
 | OrganizationalRuleInheritance | 29 | | | | | | | sub-chain 3, pending |
 
 Sub-chain 1 (the nine modules above StandardsBridge): 110 theorems, all same or step. StandardsBridge (26) lands with them, in `Becoming.Narrowing`.
@@ -408,3 +408,62 @@ Bridge and join declarations reading only EvaluatorGrounding:
 | `SeedReachProcesses.reachable_living_significance` | same | `ProfileReach.self_good_derives_reachable_g0` | the join is F2's (`SeedReachProcesses`); this one declaration reads only EvaluatorGrounding and the bridge's `Frame.ofInventory`, so its core counterpart is stated here |
 
 Each core declaration in `Becoming.ProfileReach` has an empty axiom report (scratch build: 16 theorems, 33 declarations).
+
+### ContinuationRenewal
+
+Source: `universal-ethics/ContinuationRenewal.lean`. 17 theorems; **fully restated** in the new core module `Becoming.RenewalBound` (imports `Recurrence`, `Renewal`), together with the join `DescentRenewalRuns`. The core's `Renewal` states the natural-number case of the negative result (`Run.renewal_recurs`); the well-founded form, the positive forms and the bounds are new to the core here. The periphery's instance argument `[DecidablePred renewal]` is an explicit hypothesis `decision : ∀ n, Decidable (renewal n)`, and its `by_cases` a match on that decision. Its alternating sequence `alternatingState` is the run of the negation law from `true` (`alternation := Law.run Bool.not true`), the identification the join proved (`alternation_state`, kind 1, retires), so the periphery's nine alternation theorems and the join's are one set of core theorems on the run; `alternatingRenewal` is `Restoring`, `alternatingRank` the rank of the run's configuration.
+
+| Theorem | Grade | Core counterpart | How established |
+|---|---|---|---|
+| `no_unrenewed_tail_of_accessible` | same | `RenewalBound.no_unrenewed_tail_of_accessible` | induction on `Acc` |
+| `no_renewal_free_tail` | same | `RenewalBound.no_renewal_free_tail` | no decision |
+| `renewal_after_of_accessible` | same | `RenewalBound.renewal_after_of_accessible` | |
+| `renewal_arbitrarily_late` | same | `RenewalBound.renewal_arbitrarily_late` | |
+| `renewal_arbitrarily_late_of_decidable` | same | `RenewalBound.renewal_arbitrarily_late_of_decidable` | decision named |
+| `renewal_within_rank_bound` | same | `RenewalBound.renewal_within_rank_bound` | recursion on the bound, decision named |
+| `renewal_within_rank_plus_one_steps` | same | `RenewalBound.renewal_within_rank_plus_one_steps` | |
+| `rank_renewal_arbitrarily_late` | same | `RenewalBound.rank_renewal_arbitrarily_late` | |
+| `alternating_actual_steps` | same | `RenewalBound.actual_steps` | on the run |
+| `alternating_nonrenewal_decreases` | same | `RenewalBound.nonrestoring_decreases` | |
+| `alternating_renews_arbitrarily_late` | same | `RenewalBound.restores_arbitrarily_late` | |
+| `alternating_period_two` | same | `RenewalBound.period_two` | |
+| `alternating_one_restoring_form` | same | `RenewalBound.one_restoring_form` | |
+| `alternating_restoration_raises_rank` | same | `RenewalBound.restoration_raises_rank` | |
+| `alternating_has_actual_unrenewed_step` | same | `RenewalBound.unrenewed_first_step` | |
+| `alternating_no_new_configurations` | same | `RenewalBound.no_new_configurations` | |
+| `alternating_every_configuration_score_bounded` | same | `RenewalBound.every_score_bounded` | |
+
+The join `DescentRenewalRuns` (12 theorems): `no_renewal_free_tail`, `renewal_arbitrarily_late`, `renewal_within_rank` are `RenewalBound.run_no_renewal_free_tail`, `run_renewal_arbitrarily_late`, `run_renewal_within_rank` (same); `alternation_state` and `alternatingRank_eq` are the identification (kind 1, retire); `actual_steps`, `period_two`, `restores_arbitrarily_late`, `restoration_raises_rank`, `unrenewed_first_step`, `no_new_configurations`, `every_score_bounded` are the core theorems of the same names (same). Each core declaration in `Becoming.RenewalBound` has an empty axiom report (scratch build: 21 theorems, 25 declarations).
+
+### OpenFutureRevision
+
+Source: `universal-ethics/generative-capacity/OpenFutureRevision.lean`. 10 theorems; **fully restated** in the new core module `Becoming.Handoff` (imports `PositiveGround`, `RenewalBound`), together with the bridge's open-form revision section and the joins `RuleRevisionTraces` and `RuleRevisionTracesInherited`. `boundedInventory` is the frame with no moves realizing the occurrences within the bound (`boundedFrame`), its `generative` the reading `living`; `decideEvent : ∀ h, DecidablePred (completed h)` is the same hypothesis written `∀ h n, Decidable (completed h n)`. The periphery's `Stage` and `Rule` derive `DecidableEq` and its `advance` and `remaining` branch on `if p = …`; the core states both by cases, with the same value at every argument, so no decidable equality is needed, and the periphery's `simp` and `decide` steps are `rfl` and numeral comparisons. The join `RuleRevisionTracesInherited` inherited `propext` from the periphery's proofs; its core counterparts have empty axiom reports.
+
+| Theorem | Grade | Core counterpart | How established |
+|---|---|---|---|
+| `handed_off_progress` | same | `Handoff.handed_off_progress` | |
+| `generation_by_bound` | same | `Handoff.generation_by_bound` | through `RenewalBound.renewal_within_rank_bound` |
+| `positive_ground_by_bound` | same | `Handoff.positive_ground_by_bound` | through `PositiveGround.contingent_generation` |
+| `each_fixed_rule_finishes` | same | `Handoff.each_fixed_rule_finishes` | |
+| `each_rule_local_progress` | same | `Handoff.each_rule_local_progress` | |
+| `revising_run_stays_unfinished` | same | `Handoff.revising_run_stays_unfinished` | |
+| `revised_rules_can_fail_forever` | same | `Handoff.revised_rules_can_fail_forever` | |
+| `revision_resets_remaining` | same | `Handoff.revision_resets_remaining` | |
+| `changed_form_with_valid_handoff` | same | `Handoff.changed_form_with_valid_handoff` | |
+| `realized_form_need_not_be_fixed` | same | `Handoff.realized_form_need_not_be_fixed` | |
+
+Bridge and join declarations reading only these modules:
+
+| Declaration | Grade | Core counterpart | Note |
+|---|---|---|---|
+| `Bridge.Run.novel_by_handoff` | same | `Handoff.Run.novel_by_handoff` | decision named |
+| `Bridge.Run.relevance_by_handoff_of_unrestricted` | same | `Handoff.Run.relevance_by_handoff_of_unrestricted` | |
+| `Bridge.positive_ground_by_bound_of_unrestricted` | same | `Handoff.positive_ground_by_bound_of_unrestricted` | relevance as `Frame.relevance`, the bridge's inline conjunction |
+| `Bridge.revised_generation_by_bound_of_unrestricted` | same | `Handoff.revised_generation_by_bound_of_unrestricted` | likewise |
+| `RuleRevisionTraces.process`, `frame`, `revising` (defs), `step_iff`, `revising_state` | same | `Handoff.process`, `frame`, `revising`, `step_iff`, `revising_state` | |
+| `RuleRevisionTraces.changed_form`, `outcome_not_fixed`, `generation_by_bound_on_runs` | same | `Handoff.changed_form`, `outcome_not_fixed`, `generation_by_bound_on_runs` | |
+| `RuleRevisionTracesInherited.fails_forever`, `resets_remaining` | same | `Handoff.fails_forever`, `resets_remaining` | the join inherited `propext`; the core's are clean |
+
+Each core declaration in `Becoming.Handoff` has an empty axiom report (scratch build: 22 theorems, 34 declarations).
+
+Sub-chain 2 is fully restated: five periphery modules (58 theorems) in four new core modules, `PositiveGround` (30), `ProfileReach` (16), `RenewalBound` (21), `Handoff` (22), with their bridge and join declarations.
