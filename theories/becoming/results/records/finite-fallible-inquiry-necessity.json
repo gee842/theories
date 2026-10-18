@@ -210,7 +210,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
       "role": "proof",
-      "sha256": "c0e085ff612901da4dbd2ba77e8cbf64abfc6f16b4a70eea38fd3475eb4e4021",
+      "sha256": "c1476d86f5b7b67b97aeebff9f416c52640a09a2602c62d64389d5d25bf13b8c",
       "declarations": [
         "Becoming.FallibleInquiry.answer_alike_beyond_response",
         "Becoming.FallibleInquiry.different_answers_not_beyond",
@@ -227,7 +227,7 @@
         "Becoming.FallibleInquiry.Witness.ignored_signal",
         "Becoming.FallibleInquiry.observeWithResidual",
         "Becoming.FallibleInquiry.regionWithResidual",
-        "Becoming.FallibleInquiry.residual_registers_nothing",
+        "Becoming.FallibleInquiry.residual_couples_nothing",
         "Becoming.FallibleInquiry.closed_with_imbalance",
         "Becoming.FallibleInquiry.common_imbalance_of_balanced",
         "Becoming.FallibleInquiry.alike_with_common_imbalance",
@@ -285,6 +285,12 @@
       "role": "receipt",
       "sha256": "ee0a3be1c346e06588497429893a9d932418e13bc910a10121f942e6770481e5",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T063731.167536Z/verification.json",
+      "role": "receipt",
+      "sha256": "211c5aab48e7f1eb987c8180fe2dc979e1b8ffac24ba8777e06b081ecfbd39d7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -297,7 +303,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261016T120403.241963Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T063731.167536Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -353,6 +359,9 @@
     },
     {
       "en": "17 October 2026, wording of the public fields: the P-number P94 removed, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: FallibleInquiry.lean. Rebound to the FallibleInquiry checker's receipt 20261018T063731.167536Z after reading the change. The claim is unchanged."
     }
   ]
 }

@@ -27,8 +27,8 @@
       "en": "Each theorem's conditions are written into it: two different values (no_record_fixes_next); other moving every value (the diagonal); some hypothesis holding (index_le_of_holds, refutations_not_recurring); the course being a lasso or the orbit held by a list (lasso_learner_bounded, held_learner_bounded). The hypotheses H and the classes G are supplied from outside the learning."
     },
     {
-      "zh": "静止只以双重否定陈述（rest_unrefuted、held_rest_unrefuted、stable_unrefuted），名称依整合者的规则带“unrefuted”：此处不给出静止之步（并未证明不能给出；P83 给出它：轨道被长 N 的列表所持时，学习者从第 N + (2N − 1)·tri N 步起每步主张且正确，Identification.held_learner_rests，这一步由界给出，学习者的记录不表明它）；“不在任意晚处被否证”是“否证复现”的否定，不是“从某步起不被否证”。",
-      "en": "Coming to rest is stated only as a double negation (rest_unrefuted, held_rest_unrefuted, stable_unrefuted), the names carrying “unrefuted” under the integrator's rule: the step of rest is not stated here (not shown impossible; P83 states it: where the orbit is held by a list of length N, the learner claims and is right at every step from N + (2N − 1)·tri N on, Identification.held_learner_rests, a step the bound gives and the learner's record does not show); “not refuted at arbitrarily late steps” is the negation of refutations recurring, not “unrefuted from some step on”."
+      "zh": "静止只以双重否定陈述（rest_unrefuted、held_rest_unrefuted、stable_unrefuted），名称依整合者的规则带“unrefuted”：此处不给出静止之步（并未证明不能给出；P83 给出它：轨道被长 N 的列表所持时，学习者从第 N + (2N − 1)·tri N 步起每步主张且正确，Identification.held_byElimination_rests，这一步由界给出，学习者的记录不表明它）；“不在任意晚处被否证”是“否证复现”的否定，不是“从某步起不被否证”。",
+      "en": "Coming to rest is stated only as a double negation (rest_unrefuted, held_rest_unrefuted, stable_unrefuted), the names carrying “unrefuted” under the integrator's rule: the step of rest is not stated here (not shown impossible; P83 states it: where the orbit is held by a list of length N, the learner claims and is right at every step from N + (2N − 1)·tri N on, Identification.held_byElimination_rests, a step the bound gives and the learner's record does not show); “not refuted at arbitrarily late steps” is the negation of refutations recurring, not “unrefuted from some step on”."
     }
   ],
   "correspondence": {
@@ -69,8 +69,8 @@
       "id": "testing-within-registration",
       "relation": "interpretive",
       "detail": {
-        "zh": "P49 的 Web.tail_unrefuted（没有模型，有限记录不否证关于其后的主张）是水平历史上的同一规律；这里对任意被识的序列陈述（no_record_fixes_next），并给出它的正面一侧：被列表所持的世界中按否证学习否证有界。",
-        "en": "P49's Web.tail_unrefuted (without a model no finite record refutes a claim about what follows) is the same law for level histories; here it is stated for every course (no_record_fixes_next), with its positive side: in a world held by a list learning by refutation is refuted a bounded number of times."
+        "zh": "P49 的 Web.tail_unexcluded（没有模型，有限记录不否证关于其后的主张）是水平历史上的同一规律；这里对任意被识的序列陈述（no_record_fixes_next），并给出它的正面一侧：被列表所持的世界中按否证学习否证有界。",
+        "en": "P49's Web.tail_unexcluded (without a model no finite record refutes a claim about what follows) is the same law for level histories; here it is stated for every course (no_record_fixes_next), with its positive side: in a world held by a list learning by refutation is refuted a bounded number of times."
       },
       "interface": {
         "output": {
@@ -140,48 +140,48 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "53f660c677c3b85f9f202df4adf277d1d95ebe01099f7c25be1689f402c54dfd",
+      "sha256": "648576d8bb87dc1097d8ce069daeeae4c2fddd6f912f26d89a1346ca94f38e46",
       "declarations": [
-        "Becoming.Learning.record",
-        "Becoming.Learning.record_length",
-        "Becoming.Learning.record_congr",
+        "Becoming.Learning.prefixOf",
+        "Becoming.Learning.prefix_length",
+        "Becoming.Learning.prefix_congr",
         "Becoming.Learning.back",
-        "Becoming.Learning.back_record",
+        "Becoming.Learning.back_prefix",
         "Becoming.Learning.back_made",
-        "Becoming.Learning.Refuted",
-        "Becoming.Learning.eq_of_not_refuted",
-        "Becoming.Learning.not_refuted_self",
-        "Becoming.Learning.RefutedAt",
-        "Becoming.Learning.Holds",
+        "Becoming.Learning.Misses",
+        "Becoming.Learning.eq_of_not_missed",
+        "Becoming.Learning.not_missed_self",
+        "Becoming.Learning.MissesAt",
+        "Becoming.Learning.Accords",
         "Becoming.Learning.holdFrom",
         "Becoming.Learning.holdFrom_before",
         "Becoming.Learning.holdFrom_after",
-        "Becoming.Learning.no_record_fixes_next",
-        "Becoming.Learning.claim_refuted_on_one",
+        "Becoming.Learning.no_prefix_fixes_next",
+        "Becoming.Learning.claim_missed_on_one",
         "Becoming.Learning.answerTo",
         "Becoming.Learning.answerStep",
         "Becoming.Learning.diagonal",
-        "Becoming.Learning.record_diagonal",
-        "Becoming.Learning.diagonal_refutes",
+        "Becoming.Learning.prefix_diagonal",
+        "Becoming.Learning.diagonal_misses",
         "Becoming.Learning.diagonal_unrested",
         "Becoming.Learning.answer_orbit_length",
         "Becoming.Learning.diagonal_open",
         "Becoming.Learning.swapTo",
         "Becoming.Learning.swapTo_moves",
         "Becoming.Learning.indexOn",
-        "Becoming.Learning.learner",
+        "Becoming.Learning.byElimination",
         "Becoming.Learning.index",
-        "Becoming.Learning.index_refuted",
+        "Becoming.Learning.index_missed",
         "Becoming.Learning.index_kept",
         "Becoming.Learning.index_succ_le",
         "Becoming.Learning.index_le_succ",
         "Becoming.Learning.index_mono",
         "Becoming.Learning.index_mono_le",
-        "Becoming.Learning.index_le_of_holds",
-        "Becoming.Learning.refuted_before",
+        "Becoming.Learning.index_le_of_accords",
+        "Becoming.Learning.missed_before",
         "Becoming.Learning.index_unbounded",
-        "Becoming.Learning.refutations_not_recurring",
-        "Becoming.Learning.learner_through_record",
+        "Becoming.Learning.misses_not_recurring",
+        "Becoming.Learning.byElimination_through_prefix",
         "Becoming.Learning.stable_unrefuted",
         "Becoming.Learning.Lasso",
         "Becoming.Learning.lasso_of_held",
@@ -191,11 +191,11 @@
         "Becoming.Learning.lasso_positions",
         "Becoming.Learning.lasso_realized",
         "Becoming.Learning.holdFrom_lasso",
-        "Becoming.Learning.no_record_fixes_next_finite",
+        "Becoming.Learning.no_prefix_fixes_next_finite",
         "Becoming.Learning.lasso",
         "Becoming.Learning.lasso_claims",
         "Becoming.Learning.lasso_silent",
-        "Becoming.Learning.lasso_holds",
+        "Becoming.Learning.lasso_accords",
         "Becoming.Learning.nextPair",
         "Becoming.Learning.pairAt",
         "Becoming.Learning.tri",
@@ -209,10 +209,10 @@
         "Becoming.Learning.tri_mono",
         "Becoming.Learning.place_lt",
         "Becoming.Learning.lassos",
-        "Becoming.Learning.lasso_learner_bounded",
+        "Becoming.Learning.lasso_byElimination_bounded",
         "Becoming.Learning.rest_unrefuted",
         "Becoming.Learning.lasso_of_rest",
-        "Becoming.Learning.held_learner_bounded",
+        "Becoming.Learning.held_byElimination_bounded",
         "Becoming.Learning.held_rest_unrefuted",
         "Becoming.Learning.diagonal_not_lasso",
         "Becoming.Learning.merged",
@@ -237,21 +237,21 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
+      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
       "declarations": [
-        "Becoming.Web.tail_unrefuted"
+        "Becoming.Web.tail_unexcluded"
       ]
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b6c6d5d26b4ca64f9dad873ec5bc3052a9e05b2468c853949caca733bc595ade",
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
@@ -288,12 +288,18 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -307,7 +313,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -484,6 +490,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Learning.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ]
 }

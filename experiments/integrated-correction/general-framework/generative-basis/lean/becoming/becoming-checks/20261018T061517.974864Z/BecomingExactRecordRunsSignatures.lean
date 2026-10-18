@@ -1,0 +1,10 @@
+import Becoming.ExactRecordRuns
+#check @Becoming.ExactRecordRuns.exact_sound
+#check @Becoming.ExactRecordRuns.exact_resolves
+#check @Becoming.ExactRecordRuns.sound_abstains
+#check @Becoming.ExactRecordRuns.sound_within
+#check @Becoming.ExactRecordRuns.finer_resolves
+#check @Becoming.ExactRecordRuns.kept_exact
+#check @Becoming.ExactRecordRuns.abstaining_sound
+#check @Becoming.ExactRecordRuns.abstaining_not_exact
+#check @Becoming.ExactRecordRuns.exact_iff_restsFrom

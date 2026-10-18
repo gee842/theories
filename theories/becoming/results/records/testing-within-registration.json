@@ -18,9 +18,9 @@
       "zh": "形成识它的支持（水平是否接纳它）与它所观察之条件的水平；基础只识支持。在两个水平历史之下，在某步水平同样接纳它、所观察的条件同样立着，就是识得相同；直到某步每步如此，就是直到该步识得相同。",
       "en": "A formation registers its support (whether the levels admit it) and the levels of the conditions it observes; the base registers support only. Under two level histories it registers alike at a step when the levels admit it alike and its observed conditions stand alike, and alike up to a step when it does so at every step up to it.",
       "declarations": [
-        "Becoming.supportOnly",
-        "Becoming.Web.RegistersAlike",
-        "Becoming.Web.RegistersAlikeUpTo"
+        "Becoming.thresholdOnly",
+        "Becoming.Web.AlikeThrough",
+        "Becoming.Web.AlikeThroughUpTo"
       ]
     },
     {
@@ -28,62 +28,62 @@
       "en": "With every other registered condition alike, a condition depended on and not observed registers only whether it meets the need; an observed one registers its level; observing more distinguishes more.",
       "declarations": [
         "Becoming.Web.alike_of_threshold",
-        "Becoming.Web.observed_level_registers",
-        "Becoming.Web.RegistersAlikeUpTo.of_obs"
+        "Becoming.Web.observed_level_couples",
+        "Becoming.Web.AlikeThroughUpTo.of_obs"
       ]
     },
     {
       "zh": "关于水平历史的主张在某步被否证，是指满足它的历史没有一个直到该步与实际识得相同：主张只经所识的差别被否证，成立的永不被否证，否证此后一直成立，观察得更多否证得更多。",
       "en": "A claim about level histories is refuted at a step when no history meeting it registers alike with the actual one up to that step: a claim is refuted only through a difference in what registers, what holds is never refuted, a refutation stands, and observing more refutes more.",
       "declarations": [
-        "Becoming.Web.Refutes",
-        "Becoming.Web.Refutes.not_of_alike",
-        "Becoming.Web.Refutes.not_meets",
-        "Becoming.Web.Refutes.later",
-        "Becoming.Web.Refutes.widen"
+        "Becoming.Web.Excludes",
+        "Becoming.Web.Excludes.not_of_alike",
+        "Becoming.Web.Excludes.not_meets",
+        "Becoming.Web.Excludes.later",
+        "Becoming.Web.Excludes.widen"
       ]
     },
     {
       "zh": "没有模型时，对任何有限的记录，“某条件将归于无”与“它此后一直在无之上”都不被否证。",
       "en": "Without a model, for any finite record, neither the claim that a condition comes to nothing nor the claim that it stays above nothing afterwards is refuted.",
       "declarations": [
-        "Becoming.Web.tail_unrefuted"
+        "Becoming.Web.tail_unexcluded"
       ]
     },
     {
       "zh": "相对于模型（可容许历史的类）的否证恰是对模型与主张一起的否证；以流的平衡水平历史为模型、实际历史是其中之一时，观察储量的形成在第一步否证一切“它将归于无”的假主张；错的模型否证成立的，识否证模型。",
       "en": "Refutation relative to a model, a class of admissible histories, is exactly refutation of the model and the claim together; relative to a flow's balanced level histories, the actual one among them, a formation observing a stock refutes at the first step every false claim that it comes to nothing; a wrong model refutes what holds, and registration refutes the model.",
       "declarations": [
-        "Becoming.Web.RefutesWithin",
-        "Becoming.Web.refutesWithin_iff_conjunction",
+        "Becoming.Web.ExcludesWithin",
+        "Becoming.Web.excludesWithin_iff_conjunction",
         "Becoming.Flow.BalancedHistory",
-        "Becoming.Flow.refutes_tail_within",
+        "Becoming.Flow.excludes_tail_within",
         "Becoming.Stationary.model_error",
-        "Becoming.Stationary.model_refuted"
+        "Becoming.Stationary.model_excluded"
       ]
     },
     {
       "zh": "形成的信念是与实际识得相同的历史；否证是主张与信念不交；由识作出的判断恰是 Becoming.Inquiry 中判断过程在信念上的共同回应，更晚的步与更多的观察都保持它。",
       "en": "A formation's belief is the histories registering alike with the actual one; refutation is a claim disjoint from the belief; a judgment from registration is exactly a common response of the judging process of Becoming.Inquiry over the belief, kept as later steps and more observation narrow it.",
       "declarations": [
-        "Becoming.Web.Belief",
-        "Becoming.Web.belief_refutes_iff",
-        "Becoming.Web.belief_judge_iff",
-        "Becoming.Web.belief_judge_later",
-        "Becoming.Web.belief_judge_widen"
+        "Becoming.Web.ClassThrough",
+        "Becoming.Web.class_excludes_iff",
+        "Becoming.Web.class_judge_iff",
+        "Becoming.Web.class_judge_later",
+        "Becoming.Web.class_judge_widen"
       ]
     },
     {
       "zh": "形成依存于或观察一个条件就识它；识闭包是对经所识者受影响的闭包，含影响闭包，只识支持时就是它，随观察与交换增大。",
       "en": "A formation registers a condition when it depends on it or observes it; the registration closure is the closure under being affected through what is registered, holding the influence closure, equal to it registering support only, and growing with observation and exchange.",
       "declarations": [
-        "Becoming.Web.Registers",
-        "Becoming.Flow.RegisteredFrom",
-        "Becoming.Flow.WithinRegistration",
-        "Becoming.Flow.withinRegistration_of_withinInfluence",
-        "Becoming.Flow.withinRegistration_supportOnly",
-        "Becoming.Flow.withinRegistration_mono_obs",
-        "Becoming.Flow.withinRegistration_mono_flow"
+        "Becoming.Web.CoupledInto",
+        "Becoming.Flow.CoupledFrom",
+        "Becoming.Flow.WithinCoupling",
+        "Becoming.Flow.withinCoupling_of_withinInfluence",
+        "Becoming.Flow.withinCoupling_thresholdOnly",
+        "Becoming.Flow.withinCoupling_mono_obs",
+        "Becoming.Flow.withinCoupling_mono_flow"
       ]
     },
     {
@@ -97,11 +97,11 @@
       "zh": "其余交换固定、在识闭包内所识的条件上逐步平衡时：成员都在识闭包之外的部分，闭包之内每步有与无它都识得相同；无部分的水平所满足的主张在闭包之内不被否证；相对于模型的否证靠模型对部分之交换的排除；闭包之内的判断在有与无部分时都可容许。",
       "en": "With the rest of the exchange fixed and balance at each step on what is registered within the closure, a part whose members all lie beyond the registration closure is registered alike with and without it at every step within it; no claim met by the levels without it is refuted there; a refutation there relative to a model rests on the model excluding its exchange; a judgment there is admissible with and without it.",
       "declarations": [
-        "Becoming.Flow.unregistered_beyond_registration",
-        "Becoming.Flow.Balances.unregistered_beyond_influence",
-        "Becoming.Flow.unrefuted_beyond_registration",
+        "Becoming.Flow.uncoupled_beyond_coupling",
+        "Becoming.Flow.Balances.uncoupled_beyond_influence",
+        "Becoming.Flow.unexcluded_beyond_coupling",
         "Becoming.Flow.beyond_needs_model",
-        "Becoming.Flow.belief_judge_beyond"
+        "Becoming.Flow.class_judge_beyond"
       ]
     },
     {
@@ -112,7 +112,7 @@
         "Becoming.Clearing.DwellerEnded",
         "Becoming.Clearing.tested_by_dweller",
         "Becoming.Clearing.EitherEnded",
-        "Becoming.Web.RefutesBy",
+        "Becoming.Web.ExcludesBy",
         "Becoming.Clearing.pooled"
       ]
     },
@@ -121,7 +121,7 @@
       "en": "With a model fixing the start and the exchange, the clearer refutes at the first step what it does not register.",
       "declarations": [
         "Becoming.Clearing.FixedStartAndExchange",
-        "Becoming.Clearing.model_idles_registration"
+        "Becoming.Clearing.model_idles_coupling"
       ]
     },
     {
@@ -129,7 +129,7 @@
       "en": "In Prey, the prey not depending on itself, the predator lies beyond its influence closure and within its registration closure under a gauge of itself: the prey registers the predator's part alike through support at every step, and the gauge registers the taking after the bite; this rests on omitted relations.",
       "declarations": [
         "Becoming.ownStanding",
-        "Becoming.Prey.registers_taking",
+        "Becoming.Prey.couples_taking",
         "Becoming.Prey.omits"
       ]
     }
@@ -197,8 +197,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "detail": {
-        "zh": "识闭包可以严格大于影响闭包：Prey 中捕食者在猎物的影响闭包之外，量度自身时在其识闭包之内（Prey.registers_taking）；所识的差别对猎物不起作用，猎物不承担自身（Prey.omits），所以这一见证靠被省略的关系。",
-        "en": "The registration closure can be strictly larger than the influence closure: in Prey the predator lies beyond the prey's influence closure and, under a gauge of itself, within its registration closure (Prey.registers_taking); the registered difference does nothing to the prey, which does not bear on itself (Prey.omits), so the witness rests on omitted relations."
+        "zh": "识闭包可以严格大于影响闭包：Prey 中捕食者在猎物的影响闭包之外，量度自身时在其识闭包之内（Prey.couples_taking）；所识的差别对猎物不起作用，猎物不承担自身（Prey.omits），所以这一见证靠被省略的关系。",
+        "en": "The registration closure can be strictly larger than the influence closure: in Prey the predator lies beyond the prey's influence closure and, under a gauge of itself, within its registration closure (Prey.couples_taking); the registered difference does nothing to the prey, which does not bear on itself (Prey.omits), so the witness rests on omitted relations."
       }
     }
   ],
@@ -221,21 +221,21 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
   "aliases": [
-    "Becoming.Web.RegistersAlike",
-    "Becoming.Web.RegistersAlikeUpTo",
-    "Becoming.Web.Refutes",
-    "Becoming.Web.RefutesWithin",
-    "Becoming.Web.Registers",
-    "Becoming.Web.Belief",
+    "Becoming.Web.AlikeThrough",
+    "Becoming.Web.AlikeThroughUpTo",
+    "Becoming.Web.Excludes",
+    "Becoming.Web.ExcludesWithin",
+    "Becoming.Web.CoupledInto",
+    "Becoming.Web.ClassThrough",
     "Becoming.Web.alike_of_threshold",
-    "Becoming.Web.tail_unrefuted",
-    "Becoming.Web.refutesWithin_iff_conjunction",
-    "Becoming.Web.belief_judge_iff",
-    "Becoming.Flow.WithinRegistration",
-    "Becoming.Flow.refutes_tail_within",
+    "Becoming.Web.tail_unexcluded",
+    "Becoming.Web.excludesWithin_iff_conjunction",
+    "Becoming.Web.class_judge_iff",
+    "Becoming.Flow.WithinCoupling",
+    "Becoming.Flow.excludes_tail_within",
     "Becoming.Flow.alike_within_closed",
-    "Becoming.Flow.unregistered_beyond_registration",
-    "Becoming.Flow.unrefuted_beyond_registration",
+    "Becoming.Flow.uncoupled_beyond_coupling",
+    "Becoming.Flow.unexcluded_beyond_coupling",
     "Becoming.Flow.beyond_needs_model",
     "Becoming.Clearing.tested_by_dweller",
     "Becoming.Clearing.pooled",
@@ -253,8 +253,8 @@
       "id": "feedback-and-reach",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "推广 P42 的 Flow.Balances.unregistered_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只识支持时 Flow.unregistered_beyond_registration 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。",
-        "en": "Extends P42's Flow.Balances.unregistered_beyond_influence (adding observation, and grounding it in the form where the members respond, Flow.alike_within_closed; registering support only, Flow.unregistered_beyond_registration is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form."
+        "zh": "推广 P42 的 Flow.Balances.uncoupled_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只识支持时 Flow.uncoupled_beyond_coupling 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。",
+        "en": "Extends P42's Flow.Balances.uncoupled_beyond_influence (adding observation, and grounding it in the form where the members respond, Flow.alike_within_closed; registering support only, Flow.uncoupled_beyond_coupling is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form."
       },
       "interface": {
         "output": {
@@ -390,75 +390,75 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
+      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
       "declarations": [
-        "Becoming.supportOnly",
+        "Becoming.thresholdOnly",
         "Becoming.ownStanding",
         "Becoming.ownStanding_other",
         "Becoming.sees_narrow",
-        "Becoming.recordThen",
-        "Becoming.Web.RegistersAlike",
-        "Becoming.Web.RegistersAlikeUpTo",
-        "Becoming.Web.Refutes",
-        "Becoming.Web.RefutesWithin",
-        "Becoming.Web.Registers",
-        "Becoming.Web.Belief",
-        "Becoming.Web.RegistersAlikeAll",
-        "Becoming.Web.RefutesBy",
-        "Becoming.Web.RegistersAlike.refl",
-        "Becoming.Web.RegistersAlike.symm",
-        "Becoming.Web.RegistersAlikeUpTo.symm",
-        "Becoming.Web.RegistersAlikeUpTo.earlier",
-        "Becoming.Web.RegistersAlikeUpTo.of_obs",
-        "Becoming.Web.registersAlikeUpTo_of_agree",
+        "Becoming.prefixThen",
+        "Becoming.Web.AlikeThrough",
+        "Becoming.Web.AlikeThroughUpTo",
+        "Becoming.Web.Excludes",
+        "Becoming.Web.ExcludesWithin",
+        "Becoming.Web.CoupledInto",
+        "Becoming.Web.ClassThrough",
+        "Becoming.Web.AlikeThroughAll",
+        "Becoming.Web.ExcludesBy",
+        "Becoming.Web.AlikeThrough.refl",
+        "Becoming.Web.AlikeThrough.symm",
+        "Becoming.Web.AlikeThroughUpTo.symm",
+        "Becoming.Web.AlikeThroughUpTo.earlier",
+        "Becoming.Web.AlikeThroughUpTo.of_obs",
+        "Becoming.Web.alikeThroughUpTo_of_agree",
         "Becoming.Web.alike_of_threshold",
-        "Becoming.Web.observed_level_registers",
-        "Becoming.Web.Refutes.not_of_alike",
-        "Becoming.Web.Refutes.not_meets",
-        "Becoming.Web.Refutes.later",
-        "Becoming.Web.Refutes.widen",
-        "Becoming.Web.Refutes.not_of_extension",
-        "Becoming.Web.tail_unrefuted",
-        "Becoming.Web.refutes_iff_refutesWithin_all",
-        "Becoming.Web.refutesWithin_iff_conjunction",
-        "Becoming.Web.RefutesWithin.narrow",
-        "Becoming.Web.RefutesWithin.not_meets",
-        "Becoming.Web.RefutesBy.of_member",
-        "Becoming.Web.belief_refutes_iff",
-        "Becoming.Web.belief_judge_iff",
-        "Becoming.Web.belief_judge_later",
-        "Becoming.Web.belief_judge_widen",
-        "Becoming.Flow.RegisteredFrom",
-        "Becoming.Flow.WithinRegistration",
-        "Becoming.Flow.RegisteredFromEither",
+        "Becoming.Web.observed_level_couples",
+        "Becoming.Web.Excludes.not_of_alike",
+        "Becoming.Web.Excludes.not_meets",
+        "Becoming.Web.Excludes.later",
+        "Becoming.Web.Excludes.widen",
+        "Becoming.Web.Excludes.not_of_extension",
+        "Becoming.Web.tail_unexcluded",
+        "Becoming.Web.excludes_iff_excludesWithin_all",
+        "Becoming.Web.excludesWithin_iff_conjunction",
+        "Becoming.Web.ExcludesWithin.narrow",
+        "Becoming.Web.ExcludesWithin.not_meets",
+        "Becoming.Web.ExcludesBy.of_member",
+        "Becoming.Web.class_excludes_iff",
+        "Becoming.Web.class_judge_iff",
+        "Becoming.Web.class_judge_later",
+        "Becoming.Web.class_judge_widen",
+        "Becoming.Flow.CoupledFrom",
+        "Becoming.Flow.WithinCoupling",
+        "Becoming.Flow.CoupledFromEither",
         "Becoming.Flow.BalancedHistory",
         "Becoming.Flow.balancedHistory_iff",
         "Becoming.Flow.BalancedHistory.agree",
-        "Becoming.Flow.refutes_tail_within",
-        "Becoming.Flow.withinRegistration_of_withinInfluence",
-        "Becoming.Flow.withinRegistration_supportOnly",
-        "Becoming.Flow.withinRegistration_mono_obs",
-        "Becoming.Flow.withinRegistration_mono_flow",
-        "Becoming.Flow.beyond_registration",
+        "Becoming.Flow.excludes_tail_within",
+        "Becoming.Flow.withinCoupling_of_withinInfluence",
+        "Becoming.Flow.withinCoupling_thresholdOnly",
+        "Becoming.Flow.withinCoupling_mono_obs",
+        "Becoming.Flow.withinCoupling_mono_flow",
+        "Becoming.Flow.beyond_coupling",
         "Becoming.Flow.exchange_agrees_within",
         "Becoming.Flow.alike_within_closed",
-        "Becoming.Flow.alike_within_registration",
+        "Becoming.Flow.alike_within_coupling",
         "Becoming.Flow.withhold_exchanges",
-        "Becoming.Flow.unregistered_beyond_registration",
-        "Becoming.Flow.unrefuted_beyond_registration",
+        "Becoming.Flow.uncoupled_beyond_coupling",
+        "Becoming.Flow.unexcluded_beyond_coupling",
         "Becoming.Flow.beyond_needs_model",
-        "Becoming.Flow.belief_judge_beyond",
+        "Becoming.Flow.class_judge_beyond",
         "Becoming.Prey.flow",
         "Becoming.Prey.web",
         "Becoming.Prey.spared",
         "Becoming.Prey.predatorPart",
         "Becoming.Prey.preyAlone_closed",
-        "Becoming.Prey.registers_taking",
+        "Becoming.Prey.couples_taking",
         "Becoming.Prey.omits",
         "Becoming.Stationary.still",
         "Becoming.Stationary.actual",
         "Becoming.Stationary.model_error",
-        "Becoming.Stationary.model_refuted",
+        "Becoming.Stationary.model_excluded",
         "Becoming.Clearing.clearerSide",
         "Becoming.Clearing.clearerSide_closed",
         "Becoming.Clearing.alike_for_clearer",
@@ -467,7 +467,7 @@
         "Becoming.Clearing.EitherEnded",
         "Becoming.Clearing.pooled",
         "Becoming.Clearing.FixedStartAndExchange",
-        "Becoming.Clearing.model_idles_registration"
+        "Becoming.Clearing.model_idles_coupling"
       ]
     },
     {
@@ -482,9 +482,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "c55af28f327df9cdf8967b72cdece864aa2d04a2f3a32c8b13a75b9c6935855d",
+      "sha256": "81f1b15ca32e8e87f0811d241ae09b678ead9175333a3964fd106bcb730af71d",
       "declarations": [
-        "Becoming.Flow.Balances.unregistered_beyond_influence",
+        "Becoming.Flow.Balances.uncoupled_beyond_influence",
         "Becoming.Clearing.sparedFlow",
         "Becoming.Clearing.sparedWeb",
         "Becoming.Clearing.spared_balances",
@@ -544,13 +544,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "18116a4404fa57cf65fbbec59916ee335216040d9811dda3c148760219530812",
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
@@ -594,19 +594,25 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -855,6 +861,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Feedback.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Feedback.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

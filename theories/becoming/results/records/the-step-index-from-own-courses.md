@@ -72,6 +72,7 @@ Aliases: `the step index from own courses`, `步指标读自自身进程`, `inte
 ### History
 
 - 18 October 2026: added (R1), in the direction Ren agreed to on 18 October ("please continue"): the formal edge of target 1, the shared index of steps; study section 169.
+- 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, 2026-10-18-representation-scope-go.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 
 </details>
 

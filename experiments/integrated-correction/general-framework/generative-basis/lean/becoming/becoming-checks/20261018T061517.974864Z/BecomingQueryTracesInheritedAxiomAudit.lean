@@ -1,0 +1,22 @@
+import Becoming.QueryTracesInherited
+#print axioms Becoming.QueryTracesInherited.step_delivers
+#print axioms Becoming.QueryTracesInherited.step_adds_nothing_without_response
+#print axioms Becoming.QueryTracesInherited.course_joint_support
+#print axioms Becoming.QueryTracesInherited.course_without_composite
+#print axioms Becoming.QueryTracesInherited.course_reversed_composite
+#print axioms Becoming.QueryTracesInherited.learned_selective_funded
+#print axioms Becoming.QueryTracesInherited.learned_selective_loses_distinction
+#print axioms Becoming.QueryTracesInherited.learned_depends_on_course
+#print axioms Becoming.QueryTracesInherited.learned_blocked_short
+#print axioms Becoming.QueryTracesInherited.succession_step_keeps
+#print axioms Becoming.QueryTracesInherited.orbit_cohort
+#print axioms Becoming.QueryTracesInherited.orbit_limited
+#print axioms Becoming.QueryTracesInherited.run_cohort
+#print axioms Becoming.QueryTracesInherited.succession_keeps_correspondence
+#print axioms Becoming.QueryTracesInherited.succession_keeps_lost_distinction
+#print axioms Becoming.QueryTracesInherited.succession_stabilizes_change
+#print axioms Becoming.QueryTracesInherited.formed_succession_teaches
+#print axioms Becoming.QueryTracesInherited.formed_succession_second
+#print axioms Becoming.QueryTracesInherited.budget_succession_blocked
+#print axioms Becoming.QueryTracesInherited.peer_repair
+#print axioms Becoming.QueryTracesInherited.peer_keeps_error

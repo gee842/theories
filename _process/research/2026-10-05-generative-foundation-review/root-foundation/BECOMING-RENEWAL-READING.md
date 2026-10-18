@@ -6698,6 +6698,29 @@ Ren, 18 October 2026: "Start R2b: restate the binding family of the counting law
 - `Counts.pos_of_mem`, registered as an apart root, is now used on the base and was removed from the apart register; the connectivity check passes with 177 apart of 8,163.
 - Scratch build: 29 theorems, `unclean` empty, `with_axioms` empty; first build clean.
 
+## 172. The N1 renaming applied (N5)
+
+```text
+Result(s): none new; 24 records name declarations by the new names in their live fields and 176 are
+           rebound or re-pointed (history notes); no claim changes
+Delta: 175 declarations renamed to the vocabulary of the naming study (section 7): the 30 definitions, the theorem
+       names reviewed from the dry run and the theorem families named after a renamed definition; Lean code and
+       backticked references, records' live fields, the chapter (with a glossary table of retired Lean names) and
+       the package README; prose words unchanged
+Supplied premises / correspondence: none; statements and proofs unchanged, as the checker's compile of every
+       module under the new names shows
+Evidence: core receipt `20261018T062828.251326Z` (177 core modules; the core compiles from the prelude); a first
+          run before merging R2b, `20261018T061517.974864Z`, also passed; connectivity check passes
+Boundary: no deprecated aliases (reasons in the naming study, section 8); studies, sources and frozen receipts keep
+          the old names; prose words and the senses outside the two families are left to a reading pass
+```
+
+Ren, 18 October 2026, choosing among the options the AI offered: "Renames, full scope" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md#rens-decision-on-the-renaming-18-october-2026)). What changed, the departures from what was offered and what was left are in the [naming study](REGISTRATION-VOCABULARY-STUDY.md#8-applied-n5-18-october-2026). The full table is [RENAME-TABLE.json](development/n1-migration/RENAME-TABLE.json).
+- The renaming was applied by [apply_renames.py](development/n1-migration/apply_renames.py) on a branch. It separates Lean code from comments: identifiers are renamed in code and inside backticks; prose words are left alone. Short common names (`record`, `learner`, `Holds`, `registered`) are renamed bare only in the files whose namespaces they belong to.
+- Both checker runs passed with no fix needed after the rewrite.
+- FallibleInquiry, a periphery with its own checker, was rechecked (`check_fallible_inquiry.py`, receipt `20261018T063731.167536Z`, 31 theorems), and its three records were bound to that receipt.
+- [rebind_records.py](development/n1-migration/rebind_records.py) rewrote the records' live fields (not `history` or `text_versions`) and rehashed every reference to a changed file. It rebound every proof binding to a changed Lean file to the receipt, and added a history note to each record it changed.
+
 ## Ren’s words quoted in passages that exist only in the Chinese edition
 
 The paragraphs below sit in Chinese-only passages of this study log ([Chinese edition](BECOMING-RENEWAL-READING.zh.md)). Only the quotation is repeated here, verbatim and in Ren’s original language, with the source link given in the passage (line numbers refer to the bilingual file before the split); the surrounding AI prose is in the Chinese edition. Nothing here is translated.

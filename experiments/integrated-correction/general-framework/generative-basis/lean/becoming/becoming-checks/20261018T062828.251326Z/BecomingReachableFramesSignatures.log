@@ -1,0 +1,30 @@
+@Becoming.ReachableFrames.carries_compose : ∀ {S₁ S₂ S₃ : Type u_1} {A₁ A₂ A₃ : Type u_2} {C : Type u_3}
+  (F₁ : Becoming.Frame S₁ A₁ C) (F₂ : Becoming.Frame S₂ A₂ C) (F₃ : Becoming.Frame S₃ A₃ C) (r₁ : S₁) (r₂ : S₂)
+  (r₃ : S₃),
+  JointContinuationClassification.CarriesWholeProfiles (F₁.continuations r₁) (F₂.continuations r₂) →
+    JointContinuationClassification.CarriesWholeProfiles (F₂.continuations r₂) (F₃.continuations r₃) →
+      JointContinuationClassification.CarriesWholeProfiles (F₁.continuations r₁) (F₃.continuations r₃)
+@Becoming.ReachableFrames.complement_closed_no_extension : ∀ {S A C : Type} (F : Becoming.Frame S A C) (root : S)
+  (complement : C → C),
+  (∀ (s : S), Becoming.Reach F.P root s → ∀ (c : C), F.realized s (complement c) ↔ ¬F.realized s c) →
+    ∀ (living : C → Prop) {s t : S},
+      Becoming.Reach F.P root s → Becoming.Reach F.P root t → ¬Becoming.Extension F living s t
+@Becoming.ReachableFrames.required_through_summary : ∀ {S S' A : Type} {P : Generative.Process S A}
+  {Q : Generative.Process S' A} (q : S → S'),
+  (∀ (s : S) (a : A) (t : S), P.step s a t → Q.step (q s) a (q t)) →
+    (∀ (s : S) (a : A) (r : S'), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) →
+      ∀ {task : S → Prop} {task' : S' → Prop},
+        (∀ (s : S), task s ↔ task' (q s)) →
+          ∀ (root : S),
+            PracticalJudgment.Required (Becoming.Reach P root) task →
+              PracticalJudgment.Required (Becoming.Reach Q (q root)) task'
+@Becoming.ReachableFrames.common_relative_on_scope : ∀ {S A R Index : Type} {k : Nat} {P : Generative.Process S A}
+  {sense : S → A → S → Fin k} {response : R → List A} {B : S → Prop}
+  {policy : Generative.InquirySufficiency.Policy A R k} (basis : Index → InquiryRoot.Formula S) (indices : List Index),
+  (∀ (i : Index), i ∈ indices) →
+    (∀ (q : InquiryRoot.Formula S),
+        InquiryRoot.Derives basis [] q → ∃ t, Becoming.Scope P sense response B policy t ∧ q t) →
+      ∃ t,
+        Becoming.Scope P sense response B policy t ∧
+          ∀ (context : List (InquiryRoot.Formula S)) (q : InquiryRoot.Formula S),
+            InquiryRoot.Derives basis context q → InquiryRoot.Holds context t → q t

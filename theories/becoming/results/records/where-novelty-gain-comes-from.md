@@ -125,6 +125,7 @@ Aliases: `where novelty's gain comes from`, `新的增益从哪里来`, `every r
 - 16 October 2026: the validation scope names the receipt bound when P110–P112 landed, 20261015T192014.437564Z (it read “receipt bound at landing”); statement, proofs and bindings unchanged.
 - 16 October 2026, eighteenth review (R18): “every rise is given” (rise_netGiver) is an accounting identity: withImbalance defines the rest as the residual, and law 0 did not mark it as holding by construction (review item 34, P3). Law 0 now says “by the definition of the rest as the residual”. Claim narrowed; no theorem changed.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
+- 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 - 8 rebinding entries (2026-10-16 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-novelty-gain-comes-from.json).
 
 </details>

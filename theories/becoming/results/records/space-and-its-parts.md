@@ -160,6 +160,7 @@ Aliases: `Becoming.World`, `Becoming.World.ofRoles`, `Becoming.World.ArisingRecu
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: the statement said "dissipation brings a finite world to rest"; World.rests_unrefuted proves only ¬¬∃N, RestsFrom N (naming the step needs LPO), so it now says a finite world "cannot be refuted to come to rest". Earlier text in text_versions.
 - 17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance); review-round labels and authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
+- 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 67 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](space-and-its-parts.json).
 
 <a id="earlier-text--早期文本"></a>

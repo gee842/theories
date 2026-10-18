@@ -104,7 +104,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
       "role": "proof",
-      "sha256": "33d85895a037b2d1c544acbeb778f4c599f1de2bc461970ba54b6c3f5bd00852",
+      "sha256": "7deceb354836ccbfdaec1da33f7ff6e988f41da04a6f591756c486c41fe48654",
       "declarations": [
         "Becoming.ContinuingRevision.State",
         "Becoming.ContinuingRevision.Act",
@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "2803919ee0fd323f57814fafa520807ac427f488b4ce717948822dceaaca1033",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
@@ -251,12 +251,18 @@
         "Becoming.Run.replenishes_of_draws",
         "Becoming.Run.draws_iff_replenishes"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ContinuingRevision",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -476,6 +482,9 @@
     },
     {
       "en": "18 October 2026, source reconciliation after R2b (the binding laws of counting where the counts exist): THE-THEORY-OF-BECOMING.md now says that the laws where the premises bind also hold over counted censuses (Becoming.CensusBinding), replacing the sentences that left them open: in the theory stated in full, the premise card row \"Decided\", section 1 (\"Counting where the counts exist\"), the open programme (row \"The whole and its parts\" and the decidedness paragraph) and section 9 (receipt and connectivity). The decided statements and their scope are unchanged. Read after the change: the claim is unchanged; re-pointed."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: ContinuingRevision.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ]
 }

@@ -160,7 +160,7 @@
         "Becoming.alike_iff_alikeTo_across",
         "Becoming.EndOfPath.frame",
         "Becoming.EndOfPath.classes_exact",
-        "Becoming.alikeTo_registered_iff"
+        "Becoming.alikeTo_frameBy_iff"
       ]
     },
     {
@@ -183,14 +183,14 @@
         "Becoming.Law.orbit_fin",
         "Becoming.Law.realized_within",
         "Becoming.labelled_across_exact",
-        "Becoming.registered_across_exact"
+        "Becoming.frameBy_across_exact"
       ]
     },
     {
       "zh": "一个世界之内 N − 1 对检验恰好：对每个 N ≥ 2，在 N 个位置走到停住的最后一个、只识是否到了最后的路径上，世界整个由 N 个配置持有，前两个位置在 N − 2 步内一致而不通过相同的检验（registered_within_exact）。不加前提。",
       "en": "Within one world N − 1 is exact for the tests: for every N ≥ 2, on the path of N places to a last one that stays, registering whether the last is reached, in a world N configurations hold wholly, the first two places agree for N − 2 steps and do not pass the same tests (registered_within_exact). No premise.",
       "declarations": [
-        "Becoming.registered_within_exact"
+        "Becoming.frameBy_within_exact"
       ]
     }
   ],
@@ -291,10 +291,10 @@
     "Becoming.Law.sameTests_iff_below_across",
     "Becoming.Law.alikeTo_labelled_iff",
     "Becoming.labelled_across_exact",
-    "Becoming.registered_across_exact",
+    "Becoming.frameBy_across_exact",
     "the tests are a bounded record",
     "检验即有界的记录",
-    "Becoming.registered_within_exact"
+    "Becoming.frameBy_within_exact"
   ],
   "dependencies": [
     {
@@ -391,7 +391,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "8071d6d635db25b99219a1ba37e1ceb04d74cca192ebe7cb77010ca4aab6bc3e",
+      "sha256": "6c2b4224dcad451ab417dc46e232a666a8693c498362c25cd573f86f40fb0212",
       "declarations": [
         "Becoming.Decided.exists_listed",
         "Becoming.Decided.exists_of_listed",
@@ -527,7 +527,7 @@
         "Becoming.alike_iff_alikeTo_classes",
         "Becoming.AlikeTo.steady_within_across",
         "Becoming.alike_iff_alikeTo_across",
-        "Becoming.alikeTo_registered_iff",
+        "Becoming.alikeTo_frameBy_iff",
         "Becoming.finBelow",
         "Becoming.length_finBelow",
         "Becoming.mem_finBelow",
@@ -585,7 +585,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "2fcfb43cadcf6c106cdcf0d2afd57ac0d4143d6c3d8cab9b5dbed1685f996a31",
+      "sha256": "365fe9764be2ef5ceca70283b52dbfeb8afca7e3372fbb25bcdfa5094b96e551",
       "declarations": [
         "Becoming.Bisimulation",
         "Becoming.Alike",
@@ -620,13 +620,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b6c6d5d26b4ca64f9dad873ec5bc3052a9e05b2468c853949caca733bc595ade",
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
@@ -681,7 +681,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
       "role": "proof",
-      "sha256": "d14074029d26520b8b26883b8cf8b53be7485140868cc1df8208c06ee572f871",
+      "sha256": "02b34aba035de30e69dec1f662f06ef3a9eff78c5f180a22f81c9bdcd7904a34",
       "declarations": [
         "Becoming.Law.agree_bisimulation",
         "Becoming.Law.alike_iff_agree",
@@ -693,8 +693,8 @@
         "Becoming.Law.orbit_fin",
         "Becoming.Law.realized_within",
         "Becoming.labelled_across_exact",
-        "Becoming.registered_across_exact",
-        "Becoming.registered_within_exact"
+        "Becoming.frameBy_across_exact",
+        "Becoming.frameBy_within_exact"
       ]
     },
     {
@@ -720,6 +720,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -732,7 +738,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -753,7 +759,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -781,7 +787,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Distinguishing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Distinguishing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -955,6 +961,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Bridge.lean, Unfolding.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Distinguishing.lean, Likeness.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

@@ -100,7 +100,7 @@
         "Becoming.Trophic.withoutWolves",
         "Becoming.Trophic.wolves_unreached",
         "Becoming.Trophic.deer_without_wolves",
-        "Becoming.Trophic.mediated_unregistered"
+        "Becoming.Trophic.mediated_uncoupled"
       ]
     },
     {
@@ -131,8 +131,8 @@
       "en": "Comparisons with and without a part use withheld levels (Flow.WithheldLevels): the levels with the part withheld and the rest of the exchange unchanged, a choice of the representation; a comparison of two flows is given the second flow."
     },
     {
-      "zh": "一般定理不用公理；公理 Unrestricted 只作为三个见证的假设出现（Trophic.mediated_unregistered、responsive_mixed、mixed_part）；把它读作 Ren 的公理是 AI 的读法，依 Ren 的交托采用。",
-      "en": "The general theorems use no axiom; the axiom Unrestricted appears only as a hypothesis of three witnesses (Trophic.mediated_unregistered, responsive_mixed, mixed_part); reading it as Ren's axiom is the AI's reading, adopted on Ren's delegation."
+      "zh": "一般定理不用公理；公理 Unrestricted 只作为三个见证的假设出现（Trophic.mediated_uncoupled、responsive_mixed、mixed_part）；把它读作 Ren 的公理是 AI 的读法，依 Ren 的交托采用。",
+      "en": "The general theorems use no axiom; the axiom Unrestricted appears only as a hypothesis of three witnesses (Trophic.mediated_uncoupled, responsive_mixed, mixed_part); reading it as Ren's axiom is the AI's reading, adopted on Ren's delegation."
     },
     {
       "zh": "Trophic、Clearing 与 Margin 的结论：见证的流、网与部分（Trophic.wolvesPart、Trophic.withoutWolves、Trophic.farWolvesPart、Clearing.sourcePart、Margin.flow、Margin.web、Margin.takerPart）。",
@@ -170,8 +170,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "detail": {
-        "zh": "其余交换固定时，经他者回应的效果不在比较中被识（Trophic.mediated_unregistered）；对照有回应的流，比较不同（Trophic.responsive_mixed）；部分给出他者所取时，比较可以不存在（Clearing.no_levels_without_source）。",
-        "en": "With the rest of the exchange fixed, effects through others' responses do not register in the comparison (Trophic.mediated_unregistered); against a responding flow the comparison differs (Trophic.responsive_mixed); where a part gives what others take, the comparison need not exist (Clearing.no_levels_without_source)."
+        "zh": "其余交换固定时，经他者回应的效果不在比较中被识（Trophic.mediated_uncoupled）；对照有回应的流，比较不同（Trophic.responsive_mixed）；部分给出他者所取时，比较可以不存在（Clearing.no_levels_without_source）。",
+        "en": "With the rest of the exchange fixed, effects through others' responses do not register in the comparison (Trophic.mediated_uncoupled); against a responding flow the comparison differs (Trophic.responsive_mixed); where a part gives what others take, the comparison need not exist (Clearing.no_levels_without_source)."
       }
     }
   ],
@@ -210,7 +210,7 @@
     "Becoming.Margin.reach_without_misjudgment",
     "Becoming.Trophic.wolves_unreached",
     "Becoming.Trophic.deer_without_wolves",
-    "Becoming.Trophic.mediated_unregistered",
+    "Becoming.Trophic.mediated_uncoupled",
     "Becoming.Trophic.responsive_mixed",
     "Becoming.Trophic.difference_reaches_forest",
     "Becoming.Trophic.far_system",
@@ -322,8 +322,8 @@
           "en": "The axiom and bounded significance."
         },
         "input": {
-          "zh": "Trophic.mediated_unregistered、responsive_mixed、mixed_part 与 closed_comparison。",
-          "en": "Trophic.mediated_unregistered, responsive_mixed, mixed_part and closed_comparison."
+          "zh": "Trophic.mediated_uncoupled、responsive_mixed、mixed_part 与 closed_comparison。",
+          "en": "Trophic.mediated_uncoupled, responsive_mixed, mixed_part and closed_comparison."
         },
         "conditions": {
           "zh": "无。",
@@ -376,7 +376,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "c55af28f327df9cdf8967b72cdece864aa2d04a2f3a32c8b13a75b9c6935855d",
+      "sha256": "81f1b15ca32e8e87f0811d241ae09b678ead9175333a3964fd106bcb730af71d",
       "declarations": [
         "Becoming.Flow.Balances.retains_transfer",
         "Becoming.Flow.Balances.not_adds_transfer",
@@ -394,7 +394,7 @@
         "Becoming.Margin.reach_without_misjudgment",
         "Becoming.Trophic.wolves_unreached",
         "Becoming.Trophic.deer_without_wolves",
-        "Becoming.Trophic.mediated_unregistered",
+        "Becoming.Trophic.mediated_uncoupled",
         "Becoming.Trophic.responsive_mixed",
         "Becoming.Trophic.difference_reaches_forest",
         "Becoming.Trophic.far_system",
@@ -453,12 +453,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "18116a4404fa57cf65fbbec59916ee335216040d9811dda3c148760219530812"
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311"
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -492,12 +492,18 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -751,6 +757,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Feedback.lean, Significance.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Feedback.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

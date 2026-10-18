@@ -177,17 +177,17 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "56e57f1bbf41a59e29940072358a535ebc261b345fc34e8bbdf065f661c12049"
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "05d6c75e3afe3da902d0a8ea7151b155985589eafd3c3af96452469294b4f126"
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
       "role": "provenance",
-      "sha256": "c95f93e7db494d5b586dcc987712085e65bce8f1f7cae396cca4918d4fabb6e6"
+      "sha256": "68f1d05515797ea373b2b62cd21591e1c779c78eeb5eb903fe90b12a5fb0bfc3"
     }
   ],
   "proof_bindings": [
@@ -203,6 +203,9 @@
     {
       "en": "18 October 2026: added (R1), in the direction Ren agreed to on 18 October (\"please continue\"): the formal edge of target 1, the shared index of steps; study section 169.",
       "zh": "2026年10月18日：新增（R1），沿 Ren 10月18日同意的方向（“please continue”）：目标一的形式边缘，共同的步指标；研究第 169 节。"
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, 2026-10-18-representation-scope-go.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
     }
   ]
 }

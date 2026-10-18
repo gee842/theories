@@ -146,6 +146,7 @@ Aliases: `Becoming.Web.depletes_iff`, `Becoming.Web.depletion_not_recurring`, `B
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: Generation.lean (P110: the readings decided on Ren's delegation folded into the docstrings (comments only; the code outside comments is unchanged; changed paragraphs refilled at 100 columns)).
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: Web.Unceasing.rises concludes ¬∀t≥T, Still and Unceasing.regeneration_recurs concludes ¬∀t≥T, ∀f, ¬Regenerating; law 3 said a condition "rises at arbitrarily late steps" and renewal "recurs", and now says the family is "still from no step on" and renewal "stops from no step on". Earlier text in text_versions.
 - 17 October 2026, wording: review-round labels removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
+- 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 87 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](unceasing-generation-needs-renewal.json).
 
 <a id="earlier-text--早期文本"></a>

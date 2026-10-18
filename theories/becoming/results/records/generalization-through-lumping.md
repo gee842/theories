@@ -67,7 +67,7 @@ Ren, 12 October 2026: “我觉得理更像是对结构和变化的规律的建�
   - Output: A projection carries a determined law exactly where configurations alike go alike; a system changing its own rule has a state law exactly where the rule makes no difference.
   - Input: When a lumping's generalization is right; structure and change as one; the laws of networks and routes of updating.
   - Preserved conditions: No premise; transfer_right_iff assumes the process determined. [Mechanism.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
-- **formal-reuse**: [selection-through-registration](selection-through-registration.md). Reuses Web.SelectsThrough and Web.RegistersAlikeUpTo: selection through registration is selection through registering alike (Training.web_selectsThrough_iff). The delta carries selection over to training: a loss selects through the data, and values beyond the data stay as free as the class leaves them.
+- **formal-reuse**: [selection-through-registration](selection-through-registration.md). Reuses Web.SelectsThrough and Web.AlikeThroughUpTo: selection through registration is selection through registering alike (Training.web_selectsThrough_iff). The delta carries selection over to training: a loss selects through the data, and values beyond the data stay as free as the class leaves them.
   - Output: Two histories are selected alike by every selection through registration exactly when the selector registers them alike.
   - Input: Training as selection through the data; when a fit is right beyond the data.
   - Preserved conditions: No premise. [Selection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
@@ -99,6 +99,7 @@ Ren, 12 October 2026: “我觉得理更像是对结构和变化的规律的建�
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 
 Aliases: `理`, `generalization`, `推广`, `uniformity of nature`
 
@@ -115,6 +116,7 @@ Aliases: `理`, `generalization`, `推广`, `uniformity of nature`
 - 16 October 2026, integration I4b item 2 (Ren chose “Closest gaps first”): Selection.lean's docstring gains a bullet on selection by the record alone, and a section of that name precedes the witnesses; the declarations this record cites are unchanged. The reference takes the new hash and its proof binding moves to core receipt 20261015T193630.814921Z.
 - 16 October 2026, I4b item 2 follow-up (study section 153): Selection.lean changes only in comments (the section “Selection by the record alone” renamed “Selection through a model of the options”), and Learning.lean gains a section of eight theorems linking a model of the options to its lumping; the declarations this record cites are unchanged. Learning.lean and Selection.lean take the new hashes, and the proof bindings move to core receipt 20261015T202927.668755Z; the record selection-through-a-model-of-the-options is linked.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
+- 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Learning.lean, Selection.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
 - 33 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](generalization-through-lumping.json).
 
 <a id="earlier-text--早期文本"></a>

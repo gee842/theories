@@ -1,4 +1,6 @@
-# N1 migration package (prepared, not applied)
+# N1 migration package
+
+**Applied 18 October 2026 (N5).** Ren chose "Renames, full scope". What was applied, the departures (no deprecated aliases; `Learning.prefixOf`) and what was left are in [section 8 of the naming study](../../REGISTRATION-VOCABULARY-STUDY.md#8-applied-n5-18-october-2026); the full table is [RENAME-TABLE.json](RENAME-TABLE.json), made by [apply_renames.py](apply_renames.py), with records rebound by [rebind_records.py](rebind_records.py). The text below is the package as prepared.
 
 18 October 2026. AI-authored. This folder prepares the renaming that the [naming study](../../REGISTRATION-VOCABULARY-STUDY.md) adopted in its section 7, so that it can be reviewed before anything changes. Nothing here has been applied. Ren's instruction for N1 and N2 was "still no renames"; his later "please continue" ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md#rens-go-to-continue-18-october-2026)) is read as a go for additive work, not as lifting that instruction.
 

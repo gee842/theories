@@ -1,0 +1,186 @@
+@Becoming.Run.ofWithMove_toWithMove : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} (r : Becoming.Run P)
+  (n : Nat), r.toWithMove.ofWithMove.state n = r.state n ∧ r.toWithMove.ofWithMove.act n = r.act n
+@Becoming.Run.toWithMove_ofWithMove : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (r : Becoming.Run (Becoming.withMove P)) (n : Nat), r.ofWithMove.toWithMove.state n = r.state n
+@Becoming.withMove_open : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {x : S × A} {i : Unit} {t : S}
+  {b : A}, (Becoming.withMove P).step x i (t, b) → ∀ (b' : A), (Becoming.withMove P).step x i (t, b')
+@Becoming.withMove_determined_iff : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A},
+  Becoming.Determined (Becoming.withMove P) ↔
+    Becoming.Determined P ∧ ∀ (s : S) (a : A) (t : S), P.step s a t → ∀ (b b' : A), b = b'
+@Becoming.closedBy_withMove : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {policy : S → A} {x : S × A}
+  {i : Unit} {y : S × A}, (Becoming.closedBy P policy).step x i y → (Becoming.withMove P).step x i y
+@Becoming.closedBy_determined : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A},
+  Becoming.Determined P → ∀ (policy : S → A), Becoming.Determined (Becoming.closedBy P policy)
+@Becoming.closedBy_runs_agree : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A},
+  Becoming.Determined P →
+    ∀ {policy : S → A} (r r' : Becoming.Run (Becoming.closedBy P policy)),
+      r.state 0 = r'.state 0 → ∀ (n : Nat), r.state n = r'.state n
+@Becoming.unlabelled_product_le : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {T : Type u_3}
+  {Q : Generative.Process T A} {x : S × T} {i : Unit} {y : S × T},
+  (Becoming.unlabelled (Generative.productProcess P Q)).step x i y →
+    (Generative.productProcess (Becoming.unlabelled P) (Becoming.unlabelled Q)).step x i y
+Becoming.Fork.label_couples : (¬∃ a,
+      (Generative.productProcess Becoming.Fork.law Becoming.Fork.law).step
+        (Becoming.Fork.Pos.origin, Becoming.Fork.Pos.origin) a (Becoming.Fork.Pos.left, Becoming.Fork.Pos.right)) ∧
+  (Generative.productProcess (Becoming.unlabelled Becoming.Fork.law) (Becoming.unlabelled Becoming.Fork.law)).step
+    (Becoming.Fork.Pos.origin, Becoming.Fork.Pos.origin) () (Becoming.Fork.Pos.left, Becoming.Fork.Pos.right)
+Becoming.World.balances_iff_exchange : ∀ (w : Becoming.World),
+  w.flow.Balances w.web ↔
+    ∀ (t : Nat), (Becoming.exchange w.Relatum).step (w.web.level t) (w.move t) (w.web.level (t + 1))
+Becoming.World.exchange_step_iff : ∀ (w : Becoming.World) (t : Nat),
+  (Becoming.exchange w.Relatum).step (w.web.level t) (w.move t) (w.web.level (t + 1)) ↔
+    ∀ (cs : List w.Relatum), w.flow.BalancesOn w.web cs t
+@Becoming.exchange_agrees : ∀ {R : Type} {level level' level'' : R → Nat} {m : Becoming.Exchange R},
+  (Becoming.exchange R).step level m level' →
+    (Becoming.exchange R).step level m level'' → ∀ (c : R), level' c = level'' c
+@Becoming.exchange_runs_agree : ∀ {R : Type} (r r' : Becoming.Run (Becoming.exchange R)),
+  (∀ (n : Nat), r.act n = r'.act n) →
+    (∀ (c : R), r.state 0 c = r'.state 0 c) → ∀ (n : Nat) (c : R), r.state n c = r'.state n c
+Becoming.Circulation.standings_leave_exchange : (Becoming.exchange Unit).step Becoming.Circulation.one
+    Becoming.Circulation.round Becoming.Circulation.one ∧
+  (Becoming.exchange Unit).step Becoming.Circulation.one Becoming.Circulation.idle Becoming.Circulation.one ∧
+    Becoming.Circulation.round.present ≠ Becoming.Circulation.idle.present
+Becoming.Circulation.start_needed : ∃ r r',
+  (∀ (n : Nat), r.act n = r'.act n) ∧ ∀ (n : Nat), r.state n () ≠ r'.state n ()
+@Becoming.shown_le_iff : ∀ {S : Type u_1} {A : Type u_2} {g : Nat → S} {m : Nat → A} {Q : Generative.Process S A},
+  (∀ (s : S) (a : A) (t : S), (Becoming.Shown g m).step s a t → Q.step s a t) ↔
+    ∀ (n : Nat), Q.step (g n) (m n) (g (n + 1))
+@Becoming.same_steps_iff_traces : ∀ {S : Type u_1} {A : Type u_2} {P Q : Generative.Process S A},
+  (∀ (s : S) (a : A) (t : S), P.step s a t ↔ Q.step s a t) ↔
+    ∀ (s : S) (as : List A) (t : S), Generative.Trace P s as t ↔ Generative.Trace Q s as t
+@Becoming.shown_determined_iff : ∀ {S : Type u_1} {A : Type u_2} {g : Nat → S} {m : Nat → A},
+  Becoming.Determined (Becoming.Shown g m) ↔ Becoming.Consistent g m
+@Becoming.exists_law_iff : ∀ {S : Type u_1} {A : Type u_2} {g : Nat → S} {m : Nat → A},
+  (∃ Q, Becoming.Determined Q ∧ ∀ (n : Nat), Q.step (g n) (m n) (g (n + 1))) ↔ Becoming.Consistent g m
+@Becoming.Shown.agrees : ∀ {S : Type u_1} {A : Type u_2} {g : Nat → S} {m : Nat → A} {Q : Generative.Process S A},
+  Becoming.Determined Q →
+    (∀ (n : Nat), Q.step (g n) (m n) (g (n + 1))) →
+      ∀ {s : S} {a : A} {t t' : S}, (Becoming.Shown g m).step s a t → Q.step s a t' → t' = t
+@Becoming.Run.shown_le : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} (r : Becoming.Run P) (s : S)
+  (a : A) (t : S), (Becoming.Shown r.state r.act).step s a t → P.step s a t
+@Becoming.eq_of_new : ∀ {S : Type u_1} {g : Nat → S},
+  (∀ (i j : Nat), i < j → g i ≠ g j) → ∀ {i j : Nat}, g i = g j → i = j
+@Becoming.Shown.runs_of_new : ∀ {S : Type u_1} {A : Type u_2} {g : Nat → S} {m : Nat → A},
+  (∀ (i j : Nat), i < j → g i ≠ g j) →
+    ∀ (r : Becoming.Run (Becoming.Shown g m)) {k : Nat}, r.state 0 = g k → ∀ (n : Nat), r.state n = g (k + n)
+@Becoming.Run.keepHistory_shown : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (r : Becoming.Run (Becoming.keepHistory P)) (r' : Becoming.Run (Becoming.Shown r.state r.act)) {k : Nat},
+  r'.state 0 = r.state k → ∀ (n : Nat), r'.state n = r.state (k + n)
+Becoming.Splice.loop_step : ∀ (n : Nat),
+  (Becoming.Shown Becoming.Splice.history fun x => ()).step (Becoming.Splice.loop n) () (Becoming.Splice.loop (n + 1))
+Becoming.Splice.spliced : (∃ r, ∀ (n : Nat), r.state n = Becoming.Splice.loop n) ∧
+  ∀ (k : Nat), ∃ n, Becoming.Splice.loop n ≠ Becoming.Splice.history (k + n)
+Becoming.DeadEnd.no_history : Becoming.DeadEnd.law.step false () true ∧ ∀ (a : Becoming.Run Becoming.DeadEnd.law), False
+@Becoming.Frame.world_active : ∀ {S : Type u_1} {A : Type u_2} {C : Type} {F : Becoming.Frame S A C}
+  {r : Becoming.Run F.P} {t : Nat} {c : C}, (F.world r).web.active t c ↔ F.realized (r.state t) c
+@Becoming.Frame.arises_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type} {F : Becoming.Frame S A C}
+  {r : Becoming.Run F.P} {t : Nat} {c : C},
+  (F.world r).web.Arises t c ↔ Becoming.ComesToBe (fun n => F.realized (r.state n) c) t
+@Becoming.Frame.novel_iff_arises : ∀ {S : Type u_1} {A : Type u_2} {C : Type} {F : Becoming.Frame S A C}
+  {r : Becoming.Run F.P} {reading : C → Prop} {before : S → C → Prop} {t : Nat},
+  (∀ (c : C), before (r.state (t + 1)) c ↔ F.realized (r.state t) c) →
+    (Becoming.Novel F reading before (r.state (t + 1)) ↔ ∃ c, reading c ∧ (F.world r).web.Arises t c)
+@Becoming.Frame.claims_recur_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type} {F : Becoming.Frame S A C}
+  {r : Becoming.Run F.P} {cs : List C} [(c : C) → (t : Nat) → Decidable (F.realized (r.state t) c)],
+  (Becoming.Recurs cs fun c => Becoming.ComesToBe fun n => F.realized (r.state n) c) ↔
+    Becoming.Recurs cs fun c => Becoming.CeasesToBe fun n => F.realized (r.state n) c
+@Becoming.Frame.world_fixes_run : ∀ {A : Type u_1} {S : Type} {P : Generative.Process S A}
+  (r r' : Becoming.Run (Becoming.Frame.configurations P).P),
+  (∀ (t : Nat) (c : ((Becoming.Frame.configurations P).world r).Relatum),
+      ((Becoming.Frame.configurations P).world r).web.active t c ↔
+        ((Becoming.Frame.configurations P).world r').web.active t c) →
+    ∀ (t : Nat), r.state t = r'.state t
+@Becoming.Bisimulation.eq : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} (F : Becoming.Frame S A C),
+  Becoming.Bisimulation F F fun s s' => s = s'
+@Becoming.Bisimulation.converse : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3}
+  {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {B : S → S' → Prop},
+  Becoming.Bisimulation F G B → Becoming.Bisimulation G F fun s' s => B s s'
+@Becoming.Bisimulation.comp : ∀ {S : Type u_1} {S' : Type u_4} {S'' : Type u_5} {A : Type u_2} {C : Type u_3}
+  {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {H : Becoming.Frame S'' A C} {B : S → S' → Prop}
+  {B' : S' → S'' → Prop},
+  Becoming.Bisimulation F G B →
+    Becoming.Bisimulation G H B' → Becoming.Bisimulation F H fun s s'' => ∃ s', B s s' ∧ B' s' s''
+@Becoming.Alike.refl : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} (F : Becoming.Frame S A C) (s : S),
+  Becoming.Alike F F s s
+@Becoming.Alike.symm : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {G : Becoming.Frame S' A C} {s : S} {s' : S'}, Becoming.Alike F G s s' → Becoming.Alike G F s' s
+@Becoming.Alike.trans : ∀ {S : Type u_1} {S' : Type u_4} {S'' : Type u_5} {A : Type u_2} {C : Type u_3}
+  {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {H : Becoming.Frame S'' A C} {s : S} {s' : S'} {s'' : S''},
+  Becoming.Alike F G s s' → Becoming.Alike G H s' s'' → Becoming.Alike F H s s''
+@Becoming.Alike.realized : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {G : Becoming.Frame S' A C} {s : S} {s' : S'}, Becoming.Alike F G s s' → ∀ (c : C), F.realized s c ↔ G.realized s' c
+@Becoming.Alike.step : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {G : Becoming.Frame S' A C} {s : S} {s' : S'},
+  Becoming.Alike F G s s' → ∀ {a : A} {t : S}, F.P.step s a t → ∃ t', G.P.step s' a t' ∧ Becoming.Alike F G t t'
+@Becoming.Bisimulation.trace : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {G : Becoming.Frame S' A C} {B : S → S' → Prop},
+  Becoming.Bisimulation F G B →
+    ∀ {s t : S} {as : List A},
+      Generative.Trace F.P s as t → ∀ {s' : S'}, B s s' → ∃ t', Generative.Trace G.P s' as t' ∧ B t t'
+@Becoming.Alike.trace : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {G : Becoming.Frame S' A C} {s : S} {s' : S'},
+  Becoming.Alike F G s s' →
+    ∀ {as : List A} {t : S}, Generative.Trace F.P s as t → ∃ t', Generative.Trace G.P s' as t' ∧ Becoming.Alike F G t t'
+@Becoming.Alike.tests : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {G : Becoming.Frame S' A C} {s : S} {s' : S'},
+  Becoming.Alike F G s s' →
+    ∀ (as : List A) (c : C),
+      (∃ t, Generative.Trace F.P s as t ∧ F.realized t c) ↔ ∃ t', Generative.Trace G.P s' as t' ∧ G.realized t' c
+@Becoming.Determined.at : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C},
+  Becoming.Determined F.P → ∀ (s : S), Becoming.DeterminedAt F s
+@Becoming.DeterminedAt.transfer : ∀ {S : Type u_1} {S' : Type u_4} {A : Type u_2} {C : Type u_3}
+  {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C} {s : S} {s' : S'},
+  Becoming.Alike F G s s' → Becoming.DeterminedAt F s → Becoming.DeterminedAt G s'
+@Becoming.DeterminedAt.goAlike : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C} {s s' : S},
+  Becoming.Alike F F s s' →
+    Becoming.DeterminedAt F s' → ∀ {a : A} {t t' : S}, F.P.step s a t → F.P.step s' a t' → Becoming.Alike F F t t'
+@Becoming.identifiesAlike_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4} {F : Becoming.Frame S A C}
+  {π : S → K},
+  Becoming.IdentifiesAlike F π ↔
+    (Becoming.Bisimulation F F fun s s' => π s = π s') ∧ ∀ (s s' : S), Becoming.Alike F F s s' → π s = π s'
+@Becoming.IdentifiesAlike.unique : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4} {K' : Type u_5}
+  {F : Becoming.Frame S A C} {π : S → K} {ρ : S → K'},
+  Becoming.IdentifiesAlike F π → Becoming.IdentifiesAlike F ρ → ∀ (s s' : S), π s = π s' ↔ ρ s = ρ s'
+@Becoming.IdentifiesAlike.carries : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.Frame S A C} {π : S → K},
+  Becoming.IdentifiesAlike F π →
+    (∀ (s : S), Becoming.DeterminedAt F s) → ∃ Q, Becoming.Determined Q ∧ Becoming.FactorsThrough F.P π Q
+@Becoming.identifiesAlike_id_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C},
+  Becoming.IdentifiesAlike F id ↔ ∀ (s s' : S), Becoming.Alike F F s s' → s = s'
+Becoming.Twins.not_determined : ¬Becoming.Determined Becoming.Twins.frame.P
+Becoming.Twins.one_determined : Becoming.Determined Becoming.Twins.one.P
+Becoming.Twins.bisimulation : Becoming.Bisimulation Becoming.Twins.frame Becoming.Twins.frame fun x y =>
+  x = Becoming.Twins.Config.start ↔ y = Becoming.Twins.Config.start
+Becoming.Twins.left_alike_right : Becoming.Alike Becoming.Twins.frame Becoming.Twins.frame Becoming.Twins.Config.left
+  Becoming.Twins.Config.right
+@Becoming.Twins.successor_not_start : ∀ {t : Becoming.Twins.Config},
+  t = Becoming.Twins.Config.left ∨ t = Becoming.Twins.Config.right → ¬t = Becoming.Twins.Config.start
+Becoming.Twins.bisimulation_one : Becoming.Bisimulation Becoming.Twins.frame Becoming.Twins.one fun x b =>
+  x = Becoming.Twins.Config.start ↔ b = false
+Becoming.Twins.alike_one : Becoming.Alike Becoming.Twins.frame Becoming.Twins.one Becoming.Twins.Config.start false ∧
+  Becoming.Determined Becoming.Twins.one.P ∧
+    ¬Becoming.Determined Becoming.Twins.frame.P ∧ Becoming.DeterminedAt Becoming.Twins.frame Becoming.Twins.Config.start
+Becoming.Twins.naming_not_identifiesAlike : ¬Becoming.IdentifiesAlike Becoming.Twins.frame id
+@Becoming.Law.frameBy_determined : ∀ {S : Type u_1} {R : Type u_2} (next : S → S) (o : S → R),
+  Becoming.Determined (Becoming.Law.frameBy next o).P
+@Becoming.Law.alike_future : ∀ {S : Type u_1} {R : Type u_2} {next : S → S} {o : S → R} (n : Nat) {s s' : S},
+  Becoming.Alike (Becoming.Law.frameBy next o) (Becoming.Law.frameBy next o) s s' →
+    o (Becoming.Law.orbit next s n) = o (Becoming.Law.orbit next s' n)
+@Becoming.Law.sameFuture_bisimulation : ∀ {S : Type u_1} {R : Type u_2} {next : S → S} {o : S → R},
+  Becoming.Bisimulation (Becoming.Law.frameBy next o) (Becoming.Law.frameBy next o) (Becoming.Law.SameFuture next o)
+@Becoming.Law.alike_iff_sameFuture : ∀ {S : Type u_1} {R : Type u_2} {next : S → S} {o : S → R} {s s' : S},
+  Becoming.Alike (Becoming.Law.frameBy next o) (Becoming.Law.frameBy next o) s s' ↔ Becoming.Law.SameFuture next o s s'
+@Becoming.Law.IdentifiesAlike.carries : ∀ {S : Type u_1} {R : Type u_2} {next : S → S} {o : S → R} {K : Type u_3}
+  {π : S → K},
+  Becoming.IdentifiesAlike (Becoming.Law.frameBy next o) π →
+    ∃ Q, Becoming.Determined Q ∧ Becoming.FactorsThrough (Becoming.Law.process next) π Q
+@Becoming.exchange_pointwise_bisimulation : ∀ {R : Type},
+  Becoming.Bisimulation (Becoming.exchangeFrame R) (Becoming.exchangeFrame R) fun level level' =>
+    ∀ (c : R), level c = level' c
+@Becoming.exchange_alike_of_pointwise : ∀ {R : Type} {level level' : R → Nat},
+  (∀ (c : R), level c = level' c) → Becoming.Alike (Becoming.exchangeFrame R) (Becoming.exchangeFrame R) level level'
+@Becoming.exchange_pointwise_of_alike : ∀ {R : Type} {level level' : R → Nat},
+  Becoming.Alike (Becoming.exchangeFrame R) (Becoming.exchangeFrame R) level level' → ∀ (c : R), level c = level' c
+@Becoming.exchange_alike_iff : ∀ {R : Type} {level level' : R → Nat},
+  Becoming.Alike (Becoming.exchangeFrame R) (Becoming.exchangeFrame R) level level' ↔ ∀ (c : R), level c = level' c
+@Becoming.exchange_determinedAt : ∀ {R : Type} (level : R → Nat), Becoming.DeterminedAt (Becoming.exchangeFrame R) level

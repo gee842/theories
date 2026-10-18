@@ -134,20 +134,20 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
       "role": "proof",
-      "sha256": "8a93ea0479fee0d06c6f76ae311da72edbf0e3be6069a7657fc49f47e0b7400b",
+      "sha256": "d95c8a9fb4bd48f436ab9c010fe211740ddebad403b6cc56b9864a9fb2c573f9",
       "declarations": [
-        "Becoming.TimedResponse.registersAt_registers",
+        "Becoming.TimedResponse.coupledIntoAt_coupledInto",
         "Becoming.TimedResponse.not_spread_zero",
         "Becoming.TimedResponse.Spread.has_earlier_source",
         "Becoming.TimedResponse.not_reached_before_source",
         "Becoming.TimedResponse.reachedBy_mono",
-        "Becoming.TimedResponse.registration_of_levels",
+        "Becoming.TimedResponse.coupling_of_levels",
         "Becoming.TimedResponse.levels_alike_before",
-        "Becoming.TimedResponse.registration_alike_before",
+        "Becoming.TimedResponse.coupling_alike_before",
         "Becoming.TimedResponse.answer_alike_before",
         "Becoming.TimedResponse.different_answers_not_unreached",
         "Becoming.TimedResponse.different_answers_require_reached",
-        "Becoming.TimedResponse.touches_registered_edge",
+        "Becoming.TimedResponse.touches_coupled_edge",
         "Becoming.TimedResponse.Spread.within_response",
         "Becoming.TimedResponse.reachedBy_within_response",
         "Becoming.TimedResponse.Delayed.balanced",
@@ -163,7 +163,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
       "role": "proof",
-      "sha256": "c0e085ff612901da4dbd2ba77e8cbf64abfc6f16b4a70eea38fd3475eb4e4021",
+      "sha256": "c1476d86f5b7b67b97aeebff9f416c52640a09a2602c62d64389d5d25bf13b8c",
       "declarations": [
         "Becoming.FallibleInquiry.coverage_le_errors_add_timed_reach",
         "Becoming.FallibleInquiry.error_bounds_require_timed_reach",
@@ -217,19 +217,31 @@
       "role": "receipt",
       "sha256": "26ec20ad76d9c1acd39de927f3400875132b4f3a9a3dbcd1c1c10ffee251afd8",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T063731.167536Z/verification.json",
+      "role": "receipt",
+      "sha256": "211c5aab48e7f1eb987c8180fe2dc979e1b8ffac24ba8777e06b081ecfbd39d7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.TimedResponse",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T063731.167536Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -260,6 +272,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): SCIENTIFIC-PHILOSOPHY.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: FallibleInquiry.lean, TimedResponse.lean. Rebound to core receipt 20261018T062828.251326Z; FallibleInquiry.lean rebound to its own checker's receipt 20261018T063731.167536Z, after reading the change. The claim is unchanged."
     }
   ]
 }

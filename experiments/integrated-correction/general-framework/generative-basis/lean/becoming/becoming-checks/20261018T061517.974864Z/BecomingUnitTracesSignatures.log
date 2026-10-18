@@ -1,0 +1,78 @@
+@Becoming.UnitTraces.merge_assoc : ∀ {S : Type u_1} {A : Type u_2} (f g h : Generative.ExplanatoryJoining.Fragment S A),
+  Generative.ExplanatoryJoining.merge f (Generative.ExplanatoryJoining.merge g h) =
+    Generative.ExplanatoryJoining.merge (Generative.ExplanatoryJoining.merge f g) h
+@Becoming.UnitTraces.associative : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A),
+  Generative.ExplanatoryLocalUnits.Associative (Generative.ExplanatoryLocalUnits.traceJoin P)
+@Becoming.UnitTraces.units_unique : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A)
+  (a : Generative.ExplanatoryLocalUnits.Admitted P),
+  (∃ e,
+      Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e a ∧
+        ∀ (f : Generative.ExplanatoryLocalUnits.Admitted P),
+          Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin P) f a → f = e) ∧
+    ∃ e,
+      Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e a ∧
+        ∀ (f : Generative.ExplanatoryLocalUnits.Admitted P),
+          Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin P) f a → f = e
+@Becoming.UnitTraces.boundaries_unique : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A)
+  (left right left' right' : Generative.ExplanatoryLocalUnits.Admitted P → Generative.ExplanatoryLocalUnits.Admitted P),
+  (∀ (a : Generative.ExplanatoryLocalUnits.Admitted P),
+      Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin P) (left a) a) →
+    (∀ (a : Generative.ExplanatoryLocalUnits.Admitted P),
+        Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin P) (right a) a) →
+      (∀ (a : Generative.ExplanatoryLocalUnits.Admitted P),
+          Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin P) (left' a) a) →
+        (∀ (a : Generative.ExplanatoryLocalUnits.Admitted P),
+            Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin P) (right' a) a) →
+          ∀ (a : Generative.ExplanatoryLocalUnits.Admitted P), left a = left' a ∧ right a = right' a
+@Becoming.UnitTraces.left_unit_of_joined : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {a b c e : Generative.ExplanatoryLocalUnits.Admitted P},
+  Generative.ExplanatoryLocalUnits.traceJoin P a b c →
+    Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e a →
+      Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e c
+@Becoming.UnitTraces.right_unit_of_joined : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {a b c e : Generative.ExplanatoryLocalUnits.Admitted P},
+  Generative.ExplanatoryLocalUnits.traceJoin P a b c →
+    Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e b →
+      Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e c
+@Becoming.UnitTraces.common_unit_joins : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A)
+  (a b : Generative.ExplanatoryLocalUnits.Admitted P),
+  Generative.ExplanatoryLocalUnits.CommonUnit (Generative.ExplanatoryLocalUnits.traceJoin P) a b →
+    Generative.ExplanatoryLocalUnits.Composable (Generative.ExplanatoryLocalUnits.traceJoin P) a b
+@Becoming.UnitTraces.left_unit_transport : ∀ {S : Type u_1} {A : Type u_2} {S' : Type u_3} {A' : Type u_4}
+  {P : Generative.Process S A} {Q : Generative.Process S' A'}
+  {f : Generative.ExplanatoryLocalUnits.Admitted P → Generative.ExplanatoryLocalUnits.Admitted Q},
+  (∀ (a b : Generative.ExplanatoryLocalUnits.Admitted P), f a = f b → a = b) →
+    (∀ (b : Generative.ExplanatoryLocalUnits.Admitted Q), ∃ a, f a = b) →
+      (∀ (a b c : Generative.ExplanatoryLocalUnits.Admitted P),
+          Generative.ExplanatoryLocalUnits.traceJoin P a b c ↔
+            Generative.ExplanatoryLocalUnits.traceJoin Q (f a) (f b) (f c)) →
+        ∀ (e a : Generative.ExplanatoryLocalUnits.Admitted P),
+          Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e a ↔
+            Generative.ExplanatoryLocalUnits.LeftUnit (Generative.ExplanatoryLocalUnits.traceJoin Q) (f e) (f a)
+@Becoming.UnitTraces.right_unit_transport : ∀ {S : Type u_1} {A : Type u_2} {S' : Type u_3} {A' : Type u_4}
+  {P : Generative.Process S A} {Q : Generative.Process S' A'}
+  {f : Generative.ExplanatoryLocalUnits.Admitted P → Generative.ExplanatoryLocalUnits.Admitted Q},
+  (∀ (a b : Generative.ExplanatoryLocalUnits.Admitted P), f a = f b → a = b) →
+    (∀ (b : Generative.ExplanatoryLocalUnits.Admitted Q), ∃ a, f a = b) →
+      (∀ (a b c : Generative.ExplanatoryLocalUnits.Admitted P),
+          Generative.ExplanatoryLocalUnits.traceJoin P a b c ↔
+            Generative.ExplanatoryLocalUnits.traceJoin Q (f a) (f b) (f c)) →
+        ∀ (e a : Generative.ExplanatoryLocalUnits.Admitted P),
+          Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin P) e a ↔
+            Generative.ExplanatoryLocalUnits.RightUnit (Generative.ExplanatoryLocalUnits.traceJoin Q) (f e) (f a)
+@Becoming.UnitTraces.trace_cases : ∀ {s t : Bool} {w : List Unit},
+  Generative.Trace Generative.ExplanatoryJoining.budgetProcess s w t → w = [] ∧ s = t ∨ w = [()] ∧ s = false ∧ t = true
+@Becoming.UnitTraces.oneStep_reads_mp : ∀ {a b c : Bool},
+  Becoming.UnitTraces.oneStepImage a b c → Generative.ExplanatoryLocalUnits.budgetJoin a b c
+@Becoming.UnitTraces.oneStep_reads_mpr : ∀ {a b c : Bool},
+  Generative.ExplanatoryLocalUnits.budgetJoin a b c → Becoming.UnitTraces.oneStepImage a b c
+Becoming.UnitTraces.oneStep_reads : ∀ (a b c : Bool),
+  Becoming.UnitTraces.oneStepImage a b c ↔ Generative.ExplanatoryLocalUnits.budgetJoin a b c
+@Becoming.UnitTraces.neutral_of_iff : ∀ {F : Type u_1} {J K : Generative.ExplanatoryLocalUnits.Join F},
+  (∀ (a b c : F), J a b c ↔ K a b c) →
+    ∀ {e : F}, Generative.ExplanatoryLocalUnits.Neutral K e → Generative.ExplanatoryLocalUnits.Neutral J e
+Becoming.UnitTraces.oneStep_functional : Generative.ExplanatoryLocalUnits.Functional Becoming.UnitTraces.oneStepImage
+Becoming.UnitTraces.oneStep_associative : Generative.ExplanatoryLocalUnits.Associative Becoming.UnitTraces.oneStepImage
+Becoming.UnitTraces.oneStep_has_units : Generative.ExplanatoryLocalUnits.HasUnits Becoming.UnitTraces.oneStepImage
+Becoming.UnitTraces.oneStep_not_chain_complete : ¬Generative.ExplanatoryLocalUnits.ChainComplete
+    Becoming.UnitTraces.oneStepImage

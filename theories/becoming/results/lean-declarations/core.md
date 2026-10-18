@@ -1166,7 +1166,7 @@ Imports: `Becoming.Counterfactual`, `Becoming.TimedResponse`, `Becoming.Imbalanc
 | [Becoming.FallibleInquiry.answer_alike_beyond_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L30) | 30 |
 | [Becoming.FallibleInquiry.different_answers_not_beyond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L46) | 46 |
 | [Becoming.FallibleInquiry.answer_alike_beyond_law](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L60) | 60 |
-| [Becoming.FallibleInquiry.residual_registers_nothing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L94) | 94 |
+| [Becoming.FallibleInquiry.residual_couples_nothing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L94) | 94 |
 | [Becoming.FallibleInquiry.closed_with_imbalance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L101) | 101 |
 | [Becoming.FallibleInquiry.common_imbalance_of_balanced](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L119) | 119 |
 | [Becoming.FallibleInquiry.alike_with_common_imbalance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean#L132) | 132 |

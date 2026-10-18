@@ -30,8 +30,8 @@
       "declarations": [
         "Becoming.Flow.policy_keeps_difference",
         "Becoming.Flow.BalancesOn",
-        "Becoming.Web.Registers",
-        "Becoming.Web.RegistersAlike"
+        "Becoming.Web.CoupledInto",
+        "Becoming.Web.AlikeThrough"
       ]
     },
     {
@@ -59,8 +59,8 @@
       "zh": "在网支持 g 的每一步，g 不观察的储量的抬高，g 识得相同；观察它时，任何正的抬高每步都被识。",
       "en": "At every step at which the web supports g, a raise of a stock g does not observe registers alike for g; observing it, every positive raise registers at every step.",
       "declarations": [
-        "Becoming.Web.registersAlike_raise",
-        "Becoming.Web.observed_raise_registers"
+        "Becoming.Web.alikeThrough_raise",
+        "Becoming.Web.observed_raise_couples"
       ]
     },
     {
@@ -76,7 +76,7 @@
       "zh": "SupportDrawn 中较低的网在第三步不支持形成，一个抬高在较低的网支持它的每一步识得相同，在第三步支持它，流在其上平衡。",
       "en": "In SupportDrawn the lower web fails the formation at the third step, and a raise registers alike at every step at which the lower web supports it, supports it at the third step and keeps the flow balanced.",
       "declarations": [
-        "Becoming.SupportDrawn.break_unregistered"
+        "Becoming.SupportDrawn.break_uncoupled"
       ]
     }
   ],
@@ -144,10 +144,10 @@
     "Becoming.Flow.policy_keeps_difference",
     "Becoming.Flow.policy_uses_after_failure",
     "Becoming.Web.raise",
-    "Becoming.Web.registersAlike_raise",
+    "Becoming.Web.alikeThrough_raise",
     "Becoming.Web.break_not_bounded",
-    "Becoming.Web.observed_raise_registers",
-    "Becoming.SupportDrawn.break_unregistered",
+    "Becoming.Web.observed_raise_couples",
+    "Becoming.SupportDrawn.break_uncoupled",
     "runaway",
     "失控",
     "runaway feedback",
@@ -181,8 +181,8 @@
       "id": "testing-within-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Web.RegistersAlike、Web.Registers 与 Web.observed_level_registers。",
-        "en": "Reuses Web.RegistersAlike, Web.Registers and Web.observed_level_registers."
+        "zh": "复用 Web.AlikeThrough、Web.CoupledInto 与 Web.observed_level_couples。",
+        "en": "Reuses Web.AlikeThrough, Web.CoupledInto and Web.observed_level_couples."
       },
       "interface": {
         "output": {
@@ -272,7 +272,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
       "role": "proof",
-      "sha256": "014cbac478d3eff0eccbc1bce3fee73315b78262e745842d1ce4c6c61be1d55a",
+      "sha256": "7554756d57ae76e535ab9a7f920f0a0ef5a3909514449ca7d48c0cdbf2a12661",
       "declarations": [
         "Becoming.Flow.PolicyThrough",
         "Becoming.Flow.OthersFixed",
@@ -283,27 +283,27 @@
         "Becoming.Web.le_raise",
         "Becoming.Web.Supported.raise",
         "Becoming.Web.raise_other",
-        "Becoming.Web.registersAlike_raise",
-        "Becoming.Web.observed_raise_registers",
+        "Becoming.Web.alikeThrough_raise",
+        "Becoming.Web.observed_raise_couples",
         "Becoming.Web.needUpTo",
         "Becoming.Web.need_le_needUpTo",
         "Becoming.Web.Dependent.raise",
         "Becoming.Web.break_not_bounded",
         "Becoming.Flow.BalancesOn.raise",
-        "Becoming.SupportDrawn.break_unregistered"
+        "Becoming.SupportDrawn.break_uncoupled"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
+      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
       "declarations": [
         "Becoming.Flow.ExchangeFollows",
         "Becoming.Flow.subthreshold_alike_always",
         "Becoming.Flow.difference_changes_after_divergence",
-        "Becoming.Web.RegistersAlike",
-        "Becoming.Web.Registers",
-        "Becoming.Web.observed_level_registers"
+        "Becoming.Web.AlikeThrough",
+        "Becoming.Web.CoupledInto",
+        "Becoming.Web.observed_level_couples"
       ]
     },
     {
@@ -332,13 +332,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b6c6d5d26b4ca64f9dad873ec5bc3052a9e05b2468c853949caca733bc595ade",
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
@@ -364,19 +364,25 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Runaway",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -605,6 +611,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after the docs-reconciliation moves (batches RA–RE, RG; receipts in _process/architecture/moves/): the move tool rewrote links and path mentions in BECOMING-RENEWAL-READING.md; compared with b4a01b37d with link targets and paths masked, nothing else changed. Re-pointed after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Runaway.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

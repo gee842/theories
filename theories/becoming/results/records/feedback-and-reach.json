@@ -52,7 +52,7 @@
         "Becoming.Flow.WithinInfluence",
         "Becoming.Flow.beyond_influence",
         "Becoming.Flow.unreached_within_influence",
-        "Becoming.Flow.Balances.unregistered_beyond_influence"
+        "Becoming.Flow.Balances.uncoupled_beyond_influence"
       ]
     },
     {
@@ -62,7 +62,7 @@
         "Becoming.Clearing.sparedFlow",
         "Becoming.Clearing.sparedWeb",
         "Becoming.Clearing.resource_of_clearer",
-        "Becoming.Clearing.unregistered"
+        "Becoming.Clearing.uncoupled"
       ]
     },
     {
@@ -148,10 +148,10 @@
       "kind": "non-implication"
     },
     {
-      "zh": "一个形成的某一动作只能经第二个流比较，如 Clearing.unregistered。",
-      "en": "One act of a formation is compared only through a second flow, as in Clearing.unregistered.",
+      "zh": "一个形成的某一动作只能经第二个流比较，如 Clearing.uncoupled。",
+      "en": "One act of a formation is compared only through a second flow, as in Clearing.uncoupled.",
       "kind": "scope",
-      "witness": "Becoming.Clearing.unregistered"
+      "witness": "Becoming.Clearing.uncoupled"
     },
     {
       "zh": "回应的流在见证中是给出的。",
@@ -163,8 +163,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "detail": {
-        "zh": "以扣留水平的比较固定其余交换，影响闭包的动机来自经他者传递的影响：其余交换固定时，只有直接到达的部分被识（Flow.Balances.admits_unreached），狼群经鹿对森林的作用在其中不出现（Trophic.mediated_unregistered，见 comparison-within-reach）；影响闭包是上界，不是所识者的刻画。",
-        "en": "The comparison by withheld levels keeps the rest of the exchange fixed, while the influence closure is motivated by effects passing through others: with the rest fixed only the parts that reach a formation directly register (Flow.Balances.admits_unreached), and the wolves' effect on the forest through the deer does not appear (Trophic.mediated_unregistered; see comparison-within-reach); the influence closure is an upper bound, not a characterization of what registers."
+        "zh": "以扣留水平的比较固定其余交换，影响闭包的动机来自经他者传递的影响：其余交换固定时，只有直接到达的部分被识（Flow.Balances.admits_unreached），狼群经鹿对森林的作用在其中不出现（Trophic.mediated_uncoupled，见 comparison-within-reach）；影响闭包是上界，不是所识者的刻画。",
+        "en": "The comparison by withheld levels keeps the rest of the exchange fixed, while the influence closure is motivated by effects passing through others: with the rest fixed only the parts that reach a formation directly register (Flow.Balances.admits_unreached), and the wolves' effect on the forest through the deer does not appear (Trophic.mediated_uncoupled; see comparison-within-reach); the influence closure is an upper bound, not a characterization of what registers."
       }
     }
   ],
@@ -198,7 +198,7 @@
     "Becoming.Flow.Balances.exchanges_of_differs",
     "Becoming.Flow.beyond_influence",
     "Becoming.Flow.unreached_within_influence",
-    "Becoming.Flow.Balances.unregistered_beyond_influence",
+    "Becoming.Flow.Balances.uncoupled_beyond_influence",
     "Becoming.Flow.Reaches",
     "Becoming.Flow.ReachesBefore",
     "Becoming.Flow.ReachesBefore.reaches",
@@ -212,7 +212,7 @@
     "Becoming.Flow.unreached_within_system",
     "Becoming.Flow.own_within_reach",
     "Becoming.Flow.own_within_system",
-    "Becoming.Clearing.unregistered",
+    "Becoming.Clearing.uncoupled",
     "Becoming.Clearing.resource_of_clearer",
     "Becoming.Clearing.reaches_dweller",
     "Becoming.Clearing.clearer_own",
@@ -278,8 +278,8 @@
           "en": "The clearer's part; with it the dweller is unsupported from step 2 on."
         },
         "input": {
-          "zh": "Clearing.unregistered 与 Clearing.reaches_dweller。",
-          "en": "Clearing.unregistered and Clearing.reaches_dweller."
+          "zh": "Clearing.uncoupled 与 Clearing.reaches_dweller。",
+          "en": "Clearing.uncoupled and Clearing.reaches_dweller."
         },
         "conditions": {
           "zh": "无。",
@@ -323,7 +323,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
       "role": "proof",
-      "sha256": "c55af28f327df9cdf8967b72cdece864aa2d04a2f3a32c8b13a75b9c6935855d",
+      "sha256": "81f1b15ca32e8e87f0811d241ae09b678ead9175333a3964fd106bcb730af71d",
       "declarations": [
         "Becoming.Flow.Balances.levels_agree",
         "Becoming.Flow.Balances.support_agrees",
@@ -335,7 +335,7 @@
         "Becoming.Flow.Balances.exchanges_of_differs",
         "Becoming.Flow.beyond_influence",
         "Becoming.Flow.unreached_within_influence",
-        "Becoming.Flow.Balances.unregistered_beyond_influence",
+        "Becoming.Flow.Balances.uncoupled_beyond_influence",
         "Becoming.Flow.Reaches",
         "Becoming.Flow.ReachesBefore",
         "Becoming.Flow.ReachesBefore.reaches",
@@ -349,7 +349,7 @@
         "Becoming.Flow.unreached_within_system",
         "Becoming.Flow.own_within_reach",
         "Becoming.Flow.own_within_system",
-        "Becoming.Clearing.unregistered",
+        "Becoming.Clearing.uncoupled",
         "Becoming.Clearing.resource_of_clearer",
         "Becoming.Clearing.reaches_dweller",
         "Becoming.Clearing.clearer_own",
@@ -412,12 +412,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "18116a4404fa57cf65fbbec59916ee335216040d9811dda3c148760219530812"
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30"
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -446,12 +446,18 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -710,6 +716,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Feedback.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Feedback.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

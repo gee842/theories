@@ -1,0 +1,9 @@
+import Becoming.RecurrenceRuns
+#check @Becoming.RecurrenceRuns.lossless_iff_returns
+#check @Becoming.RecurrenceRuns.merges_loses
+#check @Becoming.RecurrenceRuns.kept_lossless
+#check @Becoming.RecurrenceRuns.kept_never_returns
+#check @Becoming.RecurrenceRuns.kept_loses_beginning
+#check @Becoming.RecurrenceRuns.kept_unlisted
+#check @Becoming.RecurrenceRuns.keptRun_present
+#check @Becoming.RecurrenceRuns.return_keeps_history

@@ -147,3 +147,26 @@ Ren went through the candidates in conversation, numbered 1–15 with the AI's c
 | 识 | registers (zh, 11 October) | — | 识 is kept for the derived structure only: a formation's own further course (selection, response, seeking) factoring through the lumping its own couplings make | Primitives take the words of rows 1–13. The 无明 line (`Seeking`, `Capture`) is where 识 now has its exact place. The reading is the AI's; Ren chose this option. |
 
 Not decided here: the adjacent words of 6.4 (`Admits`, "model", `Reads`/`Reading`, "options" outside `Selection`); the instance check of 6.2; the migration of 6.5, steps 2–3, which needs its own claim on the board. Nothing is renamed by this decision.
+
+## 8. Applied (N5, 18 October 2026)
+
+Ren answered the four decisions of the migration package with "Renames, full scope" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md#rens-decision-on-the-renaming-18-october-2026)). The renaming was applied on one branch and landed with one checker run. The full table, every old full name with its new one, read off the declarations before and after, is [RENAME-TABLE.json](development/n1-migration/RENAME-TABLE.json): 175 declarations. The tools are [apply_renames.py](development/n1-migration/apply_renames.py) and [rebind_records.py](development/n1-migration/rebind_records.py).
+
+**What changed.**
+- The 30 definitions of section 7, with the theorem names the dry run proposed. Each was reviewed against its statement; three proposals were changed: `Viability.Matching.registered_kept` → `keepsBit_kept`, `registration_matters` → `keeping_matters`, `LearningRuns.determines_iff_registered_alike` → `determines_iff_lumped_alike`.
+- The theorem families named after a renamed definition that the dry run's token families did not reach: in Unfolding, Distinguishing, Likeness, FallibleInquiry, Keeping, Response, Sensitivity, Tail, Testing and Identification. Examples: `Law.registered_determined` → `Law.frameBy_determined`, `ExchangeLaw.ReadsFinitely.least_registration` → `least_coupling`, `Web.tail_unrefuted` → `Web.tail_unexcluded` (the web sense: not excluded), `Identification.unrefuted_persists` → `no_miss_persists` (the learning sense: no miss), and the instances `Learning.decRefuted` → `decMisses`.
+- Identifiers changed in Lean code and wherever a docstring, a record's live field, the chapter or the package README names them (in backticks, or qualified). Prose words such as "registers" or "record" were not substituted; they change by reading.
+
+**Departures from what was offered, with reasons.**
+- `Learning.record` became `Learning.prefixOf`, not `Learning.prefix`: `prefix` is a Lean command keyword, so the bare name cannot be used inside its namespace. Theorem names keep `prefix` (`Learning.prefix_length`).
+- Row 7′'s `negationCourse` is `Negation.course`, the same name with its namespace.
+- No deprecated aliases. The pure core compiles from Lean's prelude, where the `alias` command is not available, so an alias would be a copy of the statement. A copy no theorem on the base uses would stand apart and fail the connectivity check, and every alias would count as a theorem in the receipts. The aliases were meant to keep records and other sessions' work resolving. Records were rebound in the same change. No Lean outside the package names these declarations, except frozen check receipts and development copies, which keep their bytes as evidence. RENAME-TABLE.json is the lookup for every old name.
+
+**Left as they are.**
+- The logical sense of "unrefuted" and "refutable" (a double negation, P58b; `Horizon.Refutable`), as the package said.
+- Senses outside the two families:
+  - "record" for the conserved record of Entropy, the record of Experiment and Observation's stock;
+  - the record of runs in TypicalRuns (`ofRecord`, `Records`, `record_ofRecord`);
+  - "registers" as a verb in Order (`order_registers`), Branching, ReferencePlan's and ReferencePlanTraces' theorem names, and Contacts' `Blind`.
+  These are candidates for the reading pass, not renamed by substitution.
+- Studies, sources and frozen receipts keep the old names as history. The chapter's glossary explains the retired names once.

@@ -1,0 +1,2 @@
+import Becoming.MoveOutcomeProcessesInherited
+#check @Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers

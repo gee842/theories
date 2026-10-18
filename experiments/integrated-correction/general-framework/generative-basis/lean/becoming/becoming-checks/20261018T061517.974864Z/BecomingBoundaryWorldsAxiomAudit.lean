@@ -1,0 +1,3 @@
+import Becoming.BoundaryWorlds
+#print axioms Becoming.BoundaryWorlds.presupposition_iff_all
+#print axioms Becoming.BoundaryWorlds.bounded_invariant_iff

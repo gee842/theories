@@ -1,0 +1,10 @@
+import Becoming.SupportGatedWebs
+#print axioms Becoming.SupportGatedWebs.formation_does_not_decide
+#print axioms Becoming.SupportGatedWebs.own_trajectory_does_not_decide
+#print axioms Becoming.SupportGatedWebs.jointly_consuming
+#print axioms Becoming.SupportGatedWebs.escalation_consumes
+#print axioms Becoming.SupportGatedWebs.fluctuating_dependent
+#print axioms Becoming.SupportGatedWebs.fluctuating_neither
+#print axioms Becoming.SupportGatedWebs.pulse_levels
+#print axioms Becoming.SupportGatedWebs.unsupported_pulse_ends
+#print axioms Becoming.SupportGatedWebs.absent_dependent

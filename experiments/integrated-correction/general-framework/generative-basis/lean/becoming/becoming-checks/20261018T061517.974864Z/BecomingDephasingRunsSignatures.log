@@ -1,0 +1,109 @@
+@Becoming.DephasingRuns.operations_trace_iff : ∀ {S : Type} {s t : S} {gs : List (S → S)},
+  Generative.Trace (Becoming.DephasingRuns.operations S) s gs t ↔ t = List.foldl (fun x g => g x) s gs
+Becoming.DephasingRuns.dephase_dephase : ∀ (m : Generative.OperativeCoherence.Matrix),
+  Generative.OperativeCoherence.dephase (Generative.OperativeCoherence.dephase m) =
+    Generative.OperativeCoherence.dephase m
+Becoming.DephasingRuns.run_settles : ∀ (m : Generative.OperativeCoherence.Matrix) (n : Nat),
+  (Becoming.Law.run Generative.OperativeCoherence.dephase m).state (n + 1) = Generative.OperativeCoherence.dephase m
+Becoming.DephasingRuns.settles : ∀ (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.dephase))
+  (n : Nat), r.state (n + 1) = Generative.OperativeCoherence.dephase (r.state 0)
+Becoming.DephasingRuns.diagonal_invariant : ∀ (d : Int × Int),
+  Becoming.Invariant (Becoming.Law.process Generative.OperativeCoherence.dephase) fun m =>
+    Generative.OperativeCoherence.diagonal m = d
+Becoming.DephasingRuns.mass_invariant : ∀ (w : Int),
+  Becoming.Invariant (Becoming.Law.process Generative.OperativeCoherence.dephase) fun m =>
+    Generative.OperativeCoherence.mass m = w
+Becoming.DephasingRuns.diagonal_along : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.dephase)) (n : Nat),
+  Generative.OperativeCoherence.diagonal (r.state n) = Generative.OperativeCoherence.diagonal (r.state 0)
+Becoming.DephasingRuns.mass_along : ∀ (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.dephase))
+  (n : Nat), Generative.OperativeCoherence.mass (r.state n) = Generative.OperativeCoherence.mass (r.state 0)
+Becoming.DephasingRuns.prepared_run_diagonal : ∀ (n : Nat),
+  Generative.OperativeCoherence.diagonal
+      ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared).state n) =
+    (1, 1)
+Becoming.DephasingRuns.coherent_run_diagonal : ∀ (n : Nat),
+  Generative.OperativeCoherence.diagonal
+      ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state n) =
+    (1, 1)
+Becoming.DephasingRuns.prepared_ne_coherent : Generative.OperativeCoherence.prepared ≠
+  Generative.OperativeCoherence.coherent
+Becoming.DephasingRuns.merges : Becoming.Law.Merges Generative.OperativeCoherence.dephase
+Becoming.DephasingRuns.process_merges : Becoming.Branching.Merges
+  (Becoming.Law.process Generative.OperativeCoherence.dephase)
+Becoming.DephasingRuns.not_lossless : ¬Becoming.Branching.Lossless
+    (Becoming.Law.process Generative.OperativeCoherence.dephase)
+Becoming.DephasingRuns.runs_meet : ∀ (n : Nat),
+  (Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared).state (n + 1) =
+    (Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state (n + 1)
+Becoming.DephasingRuns.no_restore_along : ∀ (n : Nat),
+  ¬∃ restore,
+      restore
+            ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared).state
+              (n + 1)) =
+          (Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared).state 0 ∧
+        restore
+            ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state
+              (n + 1)) =
+          (Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state 0
+Becoming.DephasingRuns.prepared_run : (Becoming.Law.run Generative.OperativeCoherence.dephase
+          Generative.OperativeCoherence.prepared).state
+      0 =
+    { zz := 1, zo := 1, oz := 1, oo := 1 } ∧
+  ∀ (n : Nat),
+    (Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared).state (n + 1) =
+      { zz := 1, zo := 0, oz := 0, oo := 1 }
+Becoming.DephasingRuns.coherent_run : (Becoming.Law.run Generative.OperativeCoherence.dephase
+          Generative.OperativeCoherence.coherent).state
+      0 =
+    { zz := 1, zo := -1, oz := -1, oo := 1 } ∧
+  ∀ (n : Nat),
+    (Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state (n + 1) =
+      { zz := 1, zo := 0, oz := 0, oo := 1 }
+Becoming.DephasingRuns.prepared_run_response : Generative.OperativeCoherence.response
+      ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared).state 0) =
+    (4, 0, 4) ∧
+  ∀ (n : Nat),
+    Generative.OperativeCoherence.response
+        ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared).state
+          (n + 1)) =
+      (2, 2, 4)
+Becoming.DephasingRuns.coherent_run_response : Generative.OperativeCoherence.response
+      ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state 0) =
+    (0, 4, 4) ∧
+  ∀ (n : Nat),
+    Generative.OperativeCoherence.response
+        ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state
+          (n + 1)) =
+      (2, 2, 4)
+Becoming.DephasingRuns.no_diagonal_decoder_along : ∀ (n : Nat),
+  ¬∃ decode,
+      decode
+            (Generative.OperativeCoherence.diagonal
+              ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state
+                0)) =
+          Generative.OperativeCoherence.plusMass
+            ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state 0) ∧
+        decode
+            (Generative.OperativeCoherence.diagonal
+              ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state
+                (n + 1))) =
+          Generative.OperativeCoherence.plusMass
+            ((Becoming.Law.run Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent).state
+              (n + 1))
+Becoming.DephasingRuns.returns : ∀ (j : Generative.OperativeCoherence.Joint),
+  Becoming.Branching.Returns (Becoming.Law.process Generative.OperativeCoherence.recordBranch) j
+@Becoming.DephasingRuns.control_returns : ∀ {v : Generative.OperativeCoherence.Vec}
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.recordBranch)),
+  r.state 0 = Generative.OperativeCoherence.withBlank v →
+    Generative.OperativeCoherence.controlDensity (r.state 2) = Generative.OperativeCoherence.controlDensity (r.state 0)
+Becoming.DephasingRuns.prepared_reading : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.recordBranch)),
+  r.state 0 = Generative.OperativeCoherence.withBlank { zero := 1, one := 1 } →
+    Generative.OperativeCoherence.controlDensity (r.state 0) = Generative.OperativeCoherence.prepared ∧
+      Generative.OperativeCoherence.controlDensity (r.state 2) = Generative.OperativeCoherence.prepared
+Becoming.DephasingRuns.coherent_reading : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.recordBranch)),
+  r.state 0 = Generative.OperativeCoherence.withBlank { zero := -1, one := 1 } →
+    Generative.OperativeCoherence.controlDensity (r.state 0) = Generative.OperativeCoherence.coherent ∧
+      Generative.OperativeCoherence.controlDensity (r.state 2) = Generative.OperativeCoherence.coherent

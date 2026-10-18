@@ -153,7 +153,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
       "role": "proof",
-      "sha256": "1508a83f701c67c38da5a12e34f5a03d63f94cc2c54ccac459a7ee35adcb2dd2",
+      "sha256": "eb01f4c37c477a75727e5d12a7fa0a85c6bcc1783a26fc09d56a72d619dfb165",
       "declarations": [
         "Becoming.ReferencePlan.flip",
         "Becoming.ReferencePlan.flip_twice",
@@ -206,7 +206,7 @@
         "Becoming.ReferencePlan.second_candidate_unavailable_before",
         "Becoming.ReferencePlan.first_new_selection",
         "Becoming.ReferencePlan.second_new_selection",
-        "Becoming.ReferencePlan.registered",
+        "Becoming.ReferencePlan.alikeOnInstalled",
         "Becoming.ReferencePlan.first_installed_choice",
         "Becoming.ReferencePlan.second_installed_choice",
         "Becoming.ReferencePlan.installed_response_correct",
@@ -268,7 +268,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
@@ -280,7 +280,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
       "role": "proof",
-      "sha256": "9d8e8647148b21f3eda597cc7ba569a4b786a950c96fcd9e105382334f32813d",
+      "sha256": "f628f4250a3436baafbff809a95c1d0ccdd7f16d966701009a7559c1f40ea454",
       "declarations": []
     },
     {
@@ -334,12 +334,18 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ReferencePlan",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -475,6 +481,9 @@
     },
     {
       "en": "17 October 2026, wording of the public fields: the P-number P93 replaced by the record it names (selection-under-registration-revision), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: ReferencePlan.lean, Revision.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ]
 }

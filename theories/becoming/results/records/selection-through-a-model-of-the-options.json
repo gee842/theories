@@ -116,7 +116,7 @@
         "Becoming.SelectionRuns.choice_withholds_of_constant",
         "Becoming.SelectionRuns.values_alike_of_constant",
         "Becoming.SelectionRuns.value_level_alike",
-        "Becoming.SelectionRuns.selects_through_registration",
+        "Becoming.SelectionRuns.selects_through_coupling",
         "Becoming.SelectionRuns.values_lumped",
         "Becoming.SelectionRuns.selects_not_right_of_parted",
         "Becoming.SelectionRuns.selects_right_of_reads",
@@ -211,7 +211,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "c3ff9798d8630518d765f147433373695bd5ff3ea9625be728e1baa764af20d5",
+      "sha256": "3399211a1a4b5e08592f4bbdd6c5d288b14870e534def29aa447be3b33040d96",
       "declarations": [
         "Becoming.Relabel.swap",
         "Becoming.Relabel.swap_left",
@@ -247,7 +247,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "53f660c677c3b85f9f202df4adf277d1d95ebe01099f7c25be1689f402c54dfd",
+      "sha256": "648576d8bb87dc1097d8ce069daeeae4c2fddd6f912f26d89a1346ca94f38e46",
       "declarations": [
         "Becoming.Learning.selects_through_lumping",
         "Becoming.Learning.values_lumped",
@@ -328,12 +328,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b6c6d5d26b4ca64f9dad873ec5bc3052a9e05b2468c853949caca733bc595ade"
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "41afc878298b38e0044a53a40bc8ca9fb3b887e414f6e2b072fd0cd26e9f98d4"
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -364,7 +364,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionRuns.lean",
       "role": "proof",
-      "sha256": "cb0196e93527247503b227ef1fc156e18a59b27791baa105a1fcb78f559c6a82",
+      "sha256": "03c8932cd4fd31548aee82a0fd26937114f5eb80907e423d08e7205e4cb2e6f7",
       "declarations": [
         "Becoming.SelectionRuns.selected_alike_iff",
         "Becoming.SelectionRuns.valued_alike_iff",
@@ -373,7 +373,7 @@
         "Becoming.SelectionRuns.choice_withholds_of_constant",
         "Becoming.SelectionRuns.values_alike_of_constant",
         "Becoming.SelectionRuns.value_level_alike",
-        "Becoming.SelectionRuns.selects_through_registration",
+        "Becoming.SelectionRuns.selects_through_coupling",
         "Becoming.SelectionRuns.values_lumped",
         "Becoming.SelectionRuns.selects_not_right_of_parted",
         "Becoming.SelectionRuns.selects_right_of_reads",
@@ -386,19 +386,25 @@
       "role": "receipt",
       "sha256": "b03dcb1751889412dc2f7bd1ec6310e9e226475f42af629c6001bb15f8859879",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -426,7 +432,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.SelectionRuns",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -518,6 +524,9 @@
     },
     {
       "en": "17 October 2026, U (every spine theorem on the base): an application, not a new result. Becoming.SelectionRuns states this record's laws along runs, the options read as the moments of a run and the model as its registered course (Parting.course); the record no longer rests only on theorems apart from the base. One law with its 13 declarations added. Bound to core receipt 20261017T071851.986246Z; study section 166. Claim and status unchanged. The chapter's section 8 rows on worlds as runs and on integration of the spine and its section 9 receipt were rewritten for U in the same change; re-pointed."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Learning.lean, Selection.lean, SelectionRuns.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": []

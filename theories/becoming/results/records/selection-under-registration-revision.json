@@ -156,7 +156,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
       "role": "proof",
-      "sha256": "9d8e8647148b21f3eda597cc7ba569a4b786a950c96fcd9e105382334f32813d",
+      "sha256": "f628f4250a3436baafbff809a95c1d0ccdd7f16d966701009a7559c1f40ea454",
       "declarations": [
         "Becoming.Learning.Training.keeps_through_iff",
         "Becoming.Learning.Training.lost_choice",
@@ -193,7 +193,7 @@
         "Becoming.Revising.chosen_step",
         "Becoming.Revising.controlled",
         "Becoming.Revising.controlled_revision",
-        "Becoming.Revising.registration",
+        "Becoming.Revising.linkProcess",
         "Becoming.Revising.draw",
         "Becoming.Revising.restore",
         "Becoming.Revising.step_iff",
@@ -282,12 +282,18 @@
         "Becoming.Stock.product_feasible_iff",
         "Becoming.Stock.covered_of_trace"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Revision",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -353,6 +359,9 @@
     },
     {
       "en": "17 October 2026, wording: P-numbers removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Revision.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ]
 }

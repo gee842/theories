@@ -79,6 +79,7 @@ Aliases: `counting where the counts exist`, `计数存在之处的计数`, `coun
 
 - 18 October 2026: added (R2), on Ren's "Start R2: localize the counting laws' decidability of activity."; study section 170.
 - 18 October 2026: extended (R2b), on Ren's "Start R2b: restate the binding family of the counting laws over counted censuses."; laws 5 and 6 added from Becoming.CensusBinding, statement, scope and next step rewritten (the binding family is no longer outside the record); study section 171.
+- 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, 2026-10-18-representation-scope-go.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 
 </details>
 

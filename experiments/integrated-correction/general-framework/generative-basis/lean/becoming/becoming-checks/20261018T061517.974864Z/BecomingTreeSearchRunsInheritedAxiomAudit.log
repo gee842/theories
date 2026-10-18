@@ -1,0 +1,8 @@
+'Becoming.TreeSearchRunsInherited.spent_le_step' depends on axioms: [propext, Quot.sound]
+'Becoming.TreeSearchRunsInherited.found_located' depends on axioms: [propext]
+'Becoming.TreeSearchRunsInherited.found_real' depends on axioms: [propext]
+'Becoming.TreeSearchRunsInherited.exhausted_dead' depends on axioms: [propext, Quot.sound]
+'Becoming.TreeSearchRunsInherited.steps_settle' depends on axioms: [propext, Quot.sound]
+'Becoming.TreeSearchRunsInherited.inhabited_found' depends on axioms: [propext, Quot.sound]
+'Becoming.TreeSearchRunsInherited.acquire_charges_run' depends on axioms: [propext, Quot.sound]
+'Becoming.TreeSearchRunsInherited.search_then_dispatch' depends on axioms: [propext, Classical.choice, Quot.sound]

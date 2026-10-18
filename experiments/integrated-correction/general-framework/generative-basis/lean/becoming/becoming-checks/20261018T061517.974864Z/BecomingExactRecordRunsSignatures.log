@@ -1,0 +1,64 @@
+@Becoming.ExactRecordRuns.exact_sound : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3} {P : Generative.Process S A}
+  {D : Becoming.Run P → Prop} {reg : S → R} {val : S → Bool} {t : Nat} {answer : List R → Option Bool},
+  Generative.KnowledgeCorrespondence.ExactOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t) answer →
+    Generative.KnowledgeCorrespondence.SoundOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t) answer
+@Becoming.ExactRecordRuns.exact_resolves : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3} {P : Generative.Process S A}
+  {D : Becoming.Run P → Prop} {reg : S → R} {val : S → Bool} {t : Nat} {answer : List R → Option Bool},
+  Generative.KnowledgeCorrespondence.ExactOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t) answer →
+    Generative.KnowledgeCorrespondence.Resolves D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t)
+@Becoming.ExactRecordRuns.sound_abstains : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3} {P : Generative.Process S A}
+  {D : Becoming.Run P → Prop} {reg : S → R} {val : S → Bool} {t : Nat} {answer : List R → Option Bool},
+  Generative.KnowledgeCorrespondence.SoundOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t) answer →
+    ∀ {r r' : Becoming.Run P},
+      D r →
+        D r' →
+          Becoming.ExactRecordRuns.recordBefore reg t r = Becoming.ExactRecordRuns.recordBefore reg t r' →
+            val (r.state t) ≠ val (r'.state t) → answer (Becoming.ExactRecordRuns.recordBefore reg t r) = none
+@Becoming.ExactRecordRuns.sound_within : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3} {P : Generative.Process S A}
+  {D D' : Becoming.Run P → Prop} {reg : S → R} {val : S → Bool} {t : Nat} {answer : List R → Option Bool},
+  Generative.KnowledgeCorrespondence.SoundOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t) answer →
+    (∀ (r : Becoming.Run P), D' r → D r) →
+      Generative.KnowledgeCorrespondence.SoundOn D' (Becoming.ExactRecordRuns.recordBefore reg t)
+        (Becoming.ExactRecordRuns.valueAt val t) answer
+@Becoming.ExactRecordRuns.finer_resolves : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3} {P : Generative.Process S A}
+  {R' : Type} {D : Becoming.Run P → Prop} {reg : S → R} {val : S → Bool} {t : Nat},
+  Generative.KnowledgeCorrespondence.Resolves D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t) →
+    ∀ (reg' : S → R'),
+      Generative.KnowledgeCorrespondence.Resolves D
+        (fun r => (Becoming.ExactRecordRuns.recordBefore reg t r, Becoming.ExactRecordRuns.recordBefore reg' t r))
+        (Becoming.ExactRecordRuns.valueAt val t)
+@Becoming.ExactRecordRuns.kept_exact : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3} {P : Generative.Process S A}
+  {M : Type} {D : Becoming.Run P → Prop} {reg : S → R} {val : S → Bool} {t : Nat} {answer : List R → Option Bool},
+  Generative.KnowledgeCorrespondence.ExactOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+      (Becoming.ExactRecordRuns.valueAt val t) answer →
+    ∀ (retain : List R → M) (read : M → List R),
+      (∀ (r : Becoming.Run P),
+          D r →
+            read (retain (Becoming.ExactRecordRuns.recordBefore reg t r)) =
+              Becoming.ExactRecordRuns.recordBefore reg t r) →
+        Generative.KnowledgeCorrespondence.ExactOn D (fun r => retain (Becoming.ExactRecordRuns.recordBefore reg t r))
+          (Becoming.ExactRecordRuns.valueAt val t) fun m => answer (read m)
+@Becoming.ExactRecordRuns.abstaining_sound : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3} {P : Generative.Process S A}
+  (D : Becoming.Run P → Prop) (reg : S → R) (val : S → Bool) (t : Nat),
+  Generative.KnowledgeCorrespondence.SoundOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+    (Becoming.ExactRecordRuns.valueAt val t) fun x => none
+@Becoming.ExactRecordRuns.abstaining_not_exact : ∀ {S : Type u_1} {A : Type u_2} {R : Type u_3}
+  {P : Generative.Process S A} {D : Becoming.Run P → Prop} (reg : S → R) (val : S → Bool) (t : Nat)
+  {r : Becoming.Run P},
+  D r →
+    ¬Generative.KnowledgeCorrespondence.ExactOn D (Becoming.ExactRecordRuns.recordBefore reg t)
+        (Becoming.ExactRecordRuns.valueAt val t) fun x => none
+@Becoming.ExactRecordRuns.exact_iff_restsFrom : ∀ {S : Type u_1} {R : Type u_2} {next : S → S} {reg : S → R}
+  {val : S → Bool} {pred : List R → Option Bool} {T : Nat},
+  (∀ (t : Nat),
+      T ≤ t →
+        Generative.KnowledgeCorrespondence.ExactOn (fun x => True) (Becoming.ExactRecordRuns.recordBefore reg t)
+          (Becoming.ExactRecordRuns.valueAt val t) pred) ↔
+    ∀ (r : Becoming.Run (Becoming.Law.process next)), Becoming.LearnableRuns.RestsFrom reg val pred r T

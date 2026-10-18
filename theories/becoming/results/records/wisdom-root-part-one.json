@@ -22,9 +22,9 @@
       "en": "Registration: a claim is refuted only through a registered difference, and no record fixes the next value.",
       "zh": "识：主张只经所识的差别被否证，无记录固定下一个。",
       "declarations": [
-        "Becoming.Web.Refutes.not_of_alike",
-        "Becoming.Web.tail_unrefuted",
-        "Becoming.Learning.no_record_fixes_next"
+        "Becoming.Web.Excludes.not_of_alike",
+        "Becoming.Web.tail_unexcluded",
+        "Becoming.Learning.no_prefix_fixes_next"
       ]
     },
     {
@@ -42,7 +42,7 @@
       "en": "Testing: refutation relative to a model refutes the model and the claim together; the record fixes an act's outcome only where taken; replication is return; one occasion stands for its class under the model.",
       "zh": "检验：相对于模型的否证是对模型与主张一起的否证，记录只在取过之处固定动作的结果，重复是返回，一次场合代表经模型相同的类。",
       "declarations": [
-        "Becoming.Web.refutesWithin_iff_conjunction",
+        "Becoming.Web.excludesWithin_iff_conjunction",
         "Becoming.Run.not_fixes_of_untaken",
         "Becoming.Run.fixes_on_return",
         "Becoming.Run.generalizes"
@@ -52,10 +52,10 @@
       "en": "Learning: in a world held by a list, learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest; every learner has an open course refuting each of its claims.",
       "zh": "学习：被列表所持的世界中按否证学习的否证有界、静止不能被否证、其记录从不表明它已静止；每个学习者都有否证它每个主张的开放的序列。",
       "declarations": [
-        "Becoming.Learning.held_learner_bounded",
+        "Becoming.Learning.held_byElimination_bounded",
         "Becoming.Learning.held_rest_unrefuted",
-        "Becoming.Learning.no_record_fixes_next_finite",
-        "Becoming.Learning.diagonal_refutes",
+        "Becoming.Learning.no_prefix_fixes_next_finite",
+        "Becoming.Learning.diagonal_misses",
         "Becoming.Learning.diagonal_open"
       ]
     },
@@ -65,7 +65,7 @@
       "declarations": [
         "Becoming.Clearing.tested_by_dweller",
         "Becoming.Clearing.pooled",
-        "Becoming.Flow.unselected_beyond_registration",
+        "Becoming.Flow.unselected_beyond_coupling",
         "Becoming.Clearing.selected_pooled"
       ]
     },
@@ -83,7 +83,7 @@
       "zh": "失控：断裂之前断裂还有多远不被识，观察储量则识之。",
       "declarations": [
         "Becoming.Web.break_not_bounded",
-        "Becoming.Web.observed_raise_registers"
+        "Becoming.Web.observed_raise_couples"
       ]
     },
     {
@@ -101,7 +101,7 @@
       "zh": "判断：由识作出的判断恰是判断过程在信念上的共同回应。",
       "declarations": [
         "Becoming.commonResponse_judge_iff",
-        "Becoming.Web.belief_judge_iff"
+        "Becoming.Web.class_judge_iff"
       ]
     },
     {
@@ -405,7 +405,7 @@
       "en": "A refuting course for each learner is not perpetual revision in every actual world: bounded identification excludes a universal perpetual-revision reading.",
       "zh": "每个学习者有一个反驳历程，不是每个实际世界要求永久修订：有界识别排除永久修订的普遍读法。",
       "kind": "non-implication",
-      "witness": "Becoming.Identification.held_learner_rests"
+      "witness": "Becoming.Identification.held_byElimination_rests"
     },
     {
       "en": "The pooled-registration examples cited for 明 do not require every improvement to add external information; reorganizing accessible experience is a possible route still needing explanation.",
@@ -426,26 +426,26 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "review",
-      "sha256": "18116a4404fa57cf65fbbec59916ee335216040d9811dda3c148760219530812",
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
+      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
       "declarations": [
-        "Becoming.Web.Refutes.not_of_alike",
-        "Becoming.Web.tail_unrefuted",
-        "Becoming.Web.refutesWithin_iff_conjunction",
+        "Becoming.Web.Excludes.not_of_alike",
+        "Becoming.Web.tail_unexcluded",
+        "Becoming.Web.excludesWithin_iff_conjunction",
         "Becoming.Clearing.tested_by_dweller",
         "Becoming.Clearing.pooled",
-        "Becoming.Web.belief_judge_iff"
+        "Becoming.Web.class_judge_iff"
       ]
     },
     {
@@ -469,10 +469,10 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "c3ff9798d8630518d765f147433373695bd5ff3ea9625be728e1baa764af20d5",
+      "sha256": "3399211a1a4b5e08592f4bbdd6c5d288b14870e534def29aa447be3b33040d96",
       "declarations": [
         "Becoming.Web.selects_alike_iff",
-        "Becoming.Flow.unselected_beyond_registration",
+        "Becoming.Flow.unselected_beyond_coupling",
         "Becoming.Clearing.selected_pooled",
         "Becoming.Diversion.favours"
       ]
@@ -480,7 +480,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
       "role": "proof",
-      "sha256": "cb31fea622b45a2a122feff277ab7cf8db62b5862d71ab6d732b4a5e8f9671d9",
+      "sha256": "405c8941a736f9fcfaabb9d6d5ce993232eb67bb03c09be612c13727823d71e8",
       "declarations": [
         "Becoming.Law.rests_iff",
         "Becoming.more_needs_open",
@@ -490,10 +490,10 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
       "role": "proof",
-      "sha256": "014cbac478d3eff0eccbc1bce3fee73315b78262e745842d1ce4c6c61be1d55a",
+      "sha256": "7554756d57ae76e535ab9a7f920f0a0ef5a3909514449ca7d48c0cdbf2a12661",
       "declarations": [
         "Becoming.Web.break_not_bounded",
-        "Becoming.Web.observed_raise_registers"
+        "Becoming.Web.observed_raise_couples"
       ]
     },
     {
@@ -508,17 +508,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "53f660c677c3b85f9f202df4adf277d1d95ebe01099f7c25be1689f402c54dfd",
+      "sha256": "648576d8bb87dc1097d8ce069daeeae4c2fddd6f912f26d89a1346ca94f38e46",
       "declarations": [
-        "Becoming.Learning.no_record_fixes_next",
+        "Becoming.Learning.no_prefix_fixes_next",
         "Becoming.Learning.every_determines_nothing",
         "Becoming.Learning.determines_lumped_iff",
         "Becoming.Learning.lumped_right_iff",
         "Becoming.Learning.goAlike_iff_lumped",
-        "Becoming.Learning.held_learner_bounded",
+        "Becoming.Learning.held_byElimination_bounded",
         "Becoming.Learning.held_rest_unrefuted",
-        "Becoming.Learning.no_record_fixes_next_finite",
-        "Becoming.Learning.diagonal_refutes",
+        "Becoming.Learning.no_prefix_fixes_next_finite",
+        "Becoming.Learning.diagonal_misses",
         "Becoming.Learning.diagonal_open",
         "Becoming.Learning.Training.loss_through",
         "Becoming.Learning.Training.unselected_beyond_data",
@@ -564,11 +564,11 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "1b750e84a20e7185a30a1bae29a3d9f3584880df6e92b80d555bcebacb21ef9d",
+      "sha256": "a850122314509981b7743346afec8c2f1dcd1dc58b5f18c1c69a85157dcbce89",
       "declarations": [
         "Becoming.Identification.bounded_induction",
         "Becoming.Identification.withBound_exact",
-        "Becoming.Identification.held_learner_rests"
+        "Becoming.Identification.held_byElimination_rests"
       ]
     },
     {
@@ -599,12 +599,18 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -625,21 +631,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Seeking",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Runaway",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -653,7 +659,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -667,7 +673,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -932,6 +938,9 @@
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): THE-THEORY-OF-BECOMING.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Identification.lean, Learning.lean, Runaway.lean, Seeking.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

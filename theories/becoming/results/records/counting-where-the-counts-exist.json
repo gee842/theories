@@ -284,12 +284,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "dff0984bed37d75c7504fa3e9b2b47acdabd16b6ce3f947cceea63fb0c90eff0"
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "2803919ee0fd323f57814fafa520807ac427f488b4ce717948822dceaaca1033"
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -321,6 +321,9 @@
     {
       "en": "18 October 2026: extended (R2b), on Ren's \"Start R2b: restate the binding family of the counting laws over counted censuses.\"; laws 5 and 6 added from Becoming.CensusBinding, statement, scope and next step rewritten (the binding family is no longer outside the record); study section 171.",
       "zh": "2026年10月18日：扩展（R2b），按 Ren 的“Start R2b: restate the binding family of the counting laws over counted censuses.”；自 Becoming.CensusBinding 增第 5、6 条律，改写陈述、范围与下一步（约束之族不再在记录之外）；研究第 171 节。"
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, 2026-10-18-representation-scope-go.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
     }
   ]
 }

@@ -1,0 +1,24 @@
+import Becoming.MoveOutcomeProcesses
+#print axioms Becoming.MoveOutcomeProcesses.Ensures
+#print axioms Becoming.MoveOutcomeProcesses.Covers
+#print axioms Becoming.MoveOutcomeProcesses.canEnsure_iff
+#print axioms Becoming.MoveOutcomeProcesses.covers_iff_moves
+#print axioms Becoming.MoveOutcomeProcesses.covers_iff
+#print axioms Becoming.MoveOutcomeProcesses.completes_mono
+#print axioms Becoming.MoveOutcomeProcesses.common_goal
+#print axioms Becoming.MoveOutcomeProcesses.no_strict_gain_everywhere
+#print axioms Becoming.MoveOutcomeProcesses.covers_along
+#print axioms Becoming.MoveOutcomeProcesses.summary_iff
+#print axioms Becoming.MoveOutcomeProcesses.common_completes
+#print axioms Becoming.MoveOutcomeProcesses.toFalse
+#print axioms Becoming.MoveOutcomeProcesses.free
+#print axioms Becoming.MoveOutcomeProcesses.setting
+#print axioms Becoming.MoveOutcomeProcesses.halted
+#print axioms Becoming.MoveOutcomeProcesses.steps_eq
+#print axioms Becoming.MoveOutcomeProcesses.free_wider_not_covering
+#print axioms Becoming.MoveOutcomeProcesses.law_covers_free_and_loses
+#print axioms Becoming.MoveOutcomeProcesses.setting_covers_and_gains
+#print axioms Becoming.MoveOutcomeProcesses.setting_covers_and_opens
+#print axioms Becoming.MoveOutcomeProcesses.setting_separate_not_joint
+#print axioms Becoming.MoveOutcomeProcesses.halted_ensures_nothing
+#print axioms Becoming.MoveOutcomeProcesses.summary_hides_loss

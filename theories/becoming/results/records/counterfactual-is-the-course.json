@@ -83,7 +83,7 @@
       "declarations": [
         "Becoming.ExchangeLaw.Through",
         "Becoming.ExchangeLaw.Through.responds",
-        "Becoming.Flow.RespondsThroughRegistration"
+        "Becoming.Flow.RespondsThroughCoupling"
       ]
     },
     {
@@ -109,7 +109,7 @@
       "zh": "反之，律所经的每个识，连同形成所依存的，都不漏掉它敏感的条件（双重否定）；不判定敏感，只判定两个数是否相等。",
       "en": "Conversely, every registration a law reads through, with what the formation depends on, leaves out no condition the exchange is sensitive to (double-negated); no sensitivity is decided, only whether two numbers are equal.",
       "declarations": [
-        "Becoming.ExchangeLaw.Through.registers_of_sensitive",
+        "Becoming.ExchangeLaw.Through.couples_of_sensitive",
         "Becoming.nat_eq_of_not_not"
       ]
     },
@@ -296,8 +296,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "detail": {
-        "zh": "事先给定的识可以过窄：律对某个形成既不依存也不观察的条件敏感时，律不经这个识而读（ExchangeLaw.Through.registers_of_sensitive 的逆否）；回应所及须经律的敏感画出，随之变宽。",
-        "en": "A registration given in advance can be too narrow: where the law is sensitive to a condition the formation neither depends on nor observes, the law does not read through that registration (the contrapositive of ExchangeLaw.Through.registers_of_sensitive); the responsive reach must be drawn through the law's sensitivity, and widens."
+        "zh": "事先给定的识可以过窄：律对某个形成既不依存也不观察的条件敏感时，律不经这个识而读（ExchangeLaw.Through.couples_of_sensitive 的逆否）；回应所及须经律的敏感画出，随之变宽。",
+        "en": "A registration given in advance can be too narrow: where the law is sensitive to a condition the formation neither depends on nor observes, the law does not read through that registration (the contrapositive of ExchangeLaw.Through.couples_of_sensitive); the responsive reach must be drawn through the law's sensitivity, and widens."
       }
     }
   ],
@@ -335,7 +335,7 @@
     "Becoming.ExchangeLaw.course_unique",
     "Becoming.ExchangeLaw.Through.responds",
     "Becoming.ExchangeLaw.Nonanticipating.through_sensitive",
-    "Becoming.ExchangeLaw.Through.registers_of_sensitive",
+    "Becoming.ExchangeLaw.Through.couples_of_sensitive",
     "Becoming.comparison_of_courses",
     "Becoming.comparison_through_sensitivity",
     "Becoming.comparison_with_act",
@@ -349,8 +349,8 @@
       "id": "comparison-where-the-rest-responds",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Flow.RespondsThroughRegistration、Flow.WithinResponse 与 Flow.Balances.comparison_within_response：本记录把其前提推出，比较是它的应用；见证复用 Loop 的流、网、部分与 Loop.responds 的陈述。",
-        "en": "Reuses Flow.RespondsThroughRegistration, Flow.WithinResponse and Flow.Balances.comparison_within_response: this record derives its premise, and the comparison is its application; the witness reuses Loop's flows, webs, part and the statement of Loop.responds."
+        "zh": "复用 Flow.RespondsThroughCoupling、Flow.WithinResponse 与 Flow.Balances.comparison_within_response：本记录把其前提推出，比较是它的应用；见证复用 Loop 的流、网、部分与 Loop.responds 的陈述。",
+        "en": "Reuses Flow.RespondsThroughCoupling, Flow.WithinResponse and Flow.Balances.comparison_within_response: this record derives its premise, and the comparison is its application; the witness reuses Loop's flows, webs, part and the statement of Loop.responds."
       },
       "interface": {
         "output": {
@@ -372,8 +372,8 @@
       "id": "testing-within-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Web.Registers、Web.RegistersAlike 与 Web.RegistersAlikeUpTo：律经识而读与敏感的最小性都以它们陈述。",
-        "en": "Reuses Web.Registers, Web.RegistersAlike and Web.RegistersAlikeUpTo: reading through a registration and the leastness of sensitivity are stated with them."
+        "zh": "复用 Web.CoupledInto、Web.AlikeThrough 与 Web.AlikeThroughUpTo：律经识而读与敏感的最小性都以它们陈述。",
+        "en": "Reuses Web.CoupledInto, Web.AlikeThrough and Web.AlikeThroughUpTo: reading through a registration and the leastness of sensitivity are stated with them."
       },
       "interface": {
         "output": {
@@ -509,8 +509,8 @@
     {
       "id": "sensitivity-is-the-least-registration",
       "detail": {
-        "zh": "回答其下一步：凡律在每个历史下读有限多个条件，无论条件多少，敏感都是最小的识（ExchangeLaw.ReadsFinitely.least_registration），条件有限的情形（ExchangeLaw.Nonanticipating.through_sensitive）是其实例；条件无穷多时这一条件不能去掉（tailLaw_no_least_registration，给定消失之判定），条件编号时每个反例都给出弱有限全知原则（wlpo_of_not_through_sensitive）。",
-        "en": "Answers its next step: wherever the law reads finitely many conditions under each history, sensitivity is the least registration with any number of conditions (ExchangeLaw.ReadsFinitely.least_registration), the finite case (ExchangeLaw.Nonanticipating.through_sensitive) being its instance; with infinitely many conditions this cannot be dropped (tailLaw_no_least_registration, given the decision of vanishing), and with numbered conditions every counterexample gives the weak limited principle of omniscience (wlpo_of_not_through_sensitive)."
+        "zh": "回答其下一步：凡律在每个历史下读有限多个条件，无论条件多少，敏感都是最小的识（ExchangeLaw.ReadsFinitely.least_coupling），条件有限的情形（ExchangeLaw.Nonanticipating.through_sensitive）是其实例；条件无穷多时这一条件不能去掉（tailLaw_no_least_registration，给定消失之判定），条件编号时每个反例都给出弱有限全知原则（wlpo_of_not_through_sensitive）。",
+        "en": "Answers its next step: wherever the law reads finitely many conditions under each history, sensitivity is the least registration with any number of conditions (ExchangeLaw.ReadsFinitely.least_coupling), the finite case (ExchangeLaw.Nonanticipating.through_sensitive) being its instance; with infinitely many conditions this cannot be dropped (tailLaw_no_least_registration, given the decision of vanishing), and with numbered conditions every counterexample gives the weak limited principle of omniscience (wlpo_of_not_through_sensitive)."
       }
     },
     {
@@ -525,7 +525,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "5a6e9db3e053f174c6abc0bc6453da09af983debc5aaa46d8f405e887587add6",
+      "sha256": "dabb239082e3ea10b17c9d1054837c36292f01d30d05d5981435526874b4babb",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.AgreeUpTo",
@@ -564,7 +564,7 @@
         "Becoming.ExchangeLaw.course_balances_iff",
         "Becoming.ExchangeLaw.history_orbit",
         "Becoming.nat_eq_of_not_not",
-        "Becoming.ExchangeLaw.Through.registers_of_sensitive",
+        "Becoming.ExchangeLaw.Through.couples_of_sensitive",
         "Becoming.mixIn",
         "Becoming.mixIn_either",
         "Becoming.mixIn_listed",
@@ -604,9 +604,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
       "role": "proof",
-      "sha256": "2c2c160471488e5a75cc453bc4cc333a42cf3c539c8d0acf0d65eb559bce7857",
+      "sha256": "8e285d9a8b1952b58668e2dbd2f51f23598a40cdb6bb2f96271986ab6372a842",
       "declarations": [
-        "Becoming.Flow.RespondsThroughRegistration",
+        "Becoming.Flow.RespondsThroughCoupling",
         "Becoming.Flow.WithinResponse",
         "Becoming.Flow.Balances.comparison_within_response",
         "Becoming.Loop.web",
@@ -622,11 +622,11 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "c3556e6909a7581539c27c6d2bbeba2b6158b180d9fdf13e5350a0b1baa5079d",
+      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
       "declarations": [
-        "Becoming.Web.Registers",
-        "Becoming.Web.RegistersAlike",
-        "Becoming.Web.RegistersAlikeUpTo"
+        "Becoming.Web.CoupledInto",
+        "Becoming.Web.AlikeThrough",
+        "Becoming.Web.AlikeThroughUpTo"
       ]
     },
     {
@@ -644,7 +644,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "2fcfb43cadcf6c106cdcf0d2afd57ac0d4143d6c3d8cab9b5dbed1685f996a31",
+      "sha256": "365fe9764be2ef5ceca70283b52dbfeb8afca7e3372fbb25bcdfa5094b96e551",
       "declarations": [
         "Becoming.Exchange",
         "Becoming.exchange",
@@ -719,13 +719,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b6c6d5d26b4ca64f9dad873ec5bc3052a9e05b2468c853949caca733bc595ade",
+      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "241e1d592a9d2dc52343d1de24054988dc8e77c4ed3549954b10174250d20e30",
+      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e",
       "declarations": []
     },
     {
@@ -769,26 +769,32 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Response",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -802,7 +808,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1030,6 +1036,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): Response.lean, Unfolding.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Counterfactual.lean, ExchangeLaw.courseWeb is added and ExchangeLaw.world is now World.ofKind of the course's flow and that web, definitionally the same; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof; in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Counterfactual.lean, Response.lean, THE-THEORY-OF-BECOMING.md, Testing.lean, Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

@@ -104,7 +104,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean",
       "role": "proof",
-      "sha256": "2f397db36e59067a3754271445ef7893391614f17be1bd4f80ce0d67ec0e87ce",
+      "sha256": "10ea1be7f56af42325af728952cd42a93fcbde3464df02d3115c7364ead628f6",
       "declarations": [
         "Becoming.Viability.Plan",
         "Becoming.Viability.Plan.Keeps",
@@ -144,6 +144,12 @@
       "role": "provenance",
       "sha256": "7fc382aeeb75f2af415ca1e0d9ce38b163da35e583957893c978569db9cc1784",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "role": "receipt",
+      "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -156,7 +162,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Keeping.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Keeping",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -181,6 +187,9 @@
     {
       "zh": "2026-10-15，整合 I3c（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述（Becoming.Keeping 的共同方案）。两部分的方案合成一个成对之步的方案，各部分依自己的登记继续（Plan.zip、jointSense）。每个共同之步投影为各部分之步、共同之类落在两部分方案所保持之类之上、成对之步处处可用（Plan.Compatible）时，共同方案保持两个守卫，不加前提（Plan.zip_keeps）；每个保持守卫的共同方案其成对之步都处处可用（Plan.compatible_of_zip_keeps）。投影与共同可用是分开的条件，都不由两部分各自的方案推出。外围实例：JointContinuation 的配对即核心的 Plan.zip（ContinuationCorrespondence.toPlan_zip），递推的共同可施行即 Plan.Compatible（compatible_iff），故 joint_plan_composition 与 compatibility_necessary 由核心律给出（joint_plan_composition_by_core、compatibility_necessary_by_core）；二者提及以两个带指标方案的匹配定义的 zipPlan，编译后用 propext。外围证明及其回执保持原范围。Becoming.Keeping 由核心运行审计（回执 20261015T150956.178111Z，公理报告为空）；外围实例模块 ContinuationCorrespondence 由其检查器以 Lean 4.30.0-rc2 与 Mathlib 实查（回执 20261015T151901.978501Z）：单一方案的对应与可列举的情形公理报告为空，Classical.choice 只在 classicalChoice 与 viable_iff_plan_by_core 中，共同方案的几条用 propext 与 Quot.sound。",
       "en": "15 October 2026, integration I3c (Ren: “a lot proofs are probably not integrated”): stated on the spine (the joint plans of Becoming.Keeping). Two parts’ plans run together as one plan of pairs, each part continuing by its own registration (Plan.zip, jointSense). Where every joint step projects onto a step of each part, the joint class lies over classes the parts’ plans keep and the paired moves are usable throughout (Plan.Compatible), the joint plan keeps both guards, with no premise (Plan.zip_keeps); every joint plan that keeps a guard has its paired moves usable throughout (Plan.compatible_of_zip_keeps). Projection and joint usability are separate conditions, neither following from the parts’ plans. Periphery instance: JointContinuation’s pairing is the core’s Plan.zip (ContinuationCorrespondence.toPlan_zip) and recursive joint executability is Plan.Compatible (compatible_iff), so joint_plan_composition and compatibility_necessary follow from the core laws (joint_plan_composition_by_core, compatibility_necessary_by_core); both mention zipPlan, defined by a match on two indexed plans, which compiles through propext. The periphery proofs and their receipts keep their scope. Becoming.Keeping is audited by the core run (receipt 20261015T150956.178111Z, empty axiom reports); the periphery instance module ContinuationCorrespondence is checked by its own checker with Lean 4.30.0-rc2 and Mathlib (receipt 20261015T151901.978501Z): the single-plan correspondence and the listed case have empty axiom reports, Classical.choice occurs only in classicalChoice and viable_iff_plan_by_core, and the joint-plan declarations use propext and Quot.sound."
+    },
+    {
+      "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Keeping.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
     }
   ]
 }
