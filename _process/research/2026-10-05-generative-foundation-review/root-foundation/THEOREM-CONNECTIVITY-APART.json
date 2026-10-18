@@ -1581,6 +1581,111 @@
    "module": "Becoming.ScopedReach",
    "category": "model-witness",
    "reason": "every configuration of the three-place witness lies in one of its two scopes' domains; a fact about the constructed domains of the alternating witness, the core counterpart of WholeGroundCoverage's alternating_domains_cover"
+  },
+  "Becoming.ActiveReading.absent_included": {
+   "module": "Becoming.ActiveReading",
+   "category": "support",
+   "reason": "a one-line unpacking: `Ranking.absent_sustains` with `absent_not_consuming`, the course without the focal formation read by the whole-run reading (RenewalComparison.absent_grounds, ported by F3R)"
+  },
+  "Becoming.Dephasing.no_uniform_dephase_inverse": {
+   "module": "Becoming.Dephasing",
+   "category": "model-witness",
+   "reason": "a fact about the constructed dephasing map on 2x2 integer matrices (OperativeCoherence, ported by F3R); its law is `Readout.no_restore`, through which it is proved"
+  },
+  "Becoming.Dephasing.retained_response_exact": {
+   "module": "Becoming.Dephasing",
+   "category": "model-witness",
+   "reason": "a fact about the constructed control-target model: the retained branch decodes the response exactly (OperativeCoherence, ported by F3R)"
+  },
+  "Becoming.Integers.add_right_cancel": {
+   "module": "Becoming.Integers",
+   "category": "support",
+   "reason": "an arithmetic lemma on `Int` using only the prelude, constructive (Becoming.Integers, F3R)"
+  },
+  "Becoming.MatchedCourses.b2_correspondence_involutive": {
+   "module": "Becoming.MatchedCourses",
+   "category": "model-witness",
+   "reason": "a fact about one constructed course model: the b2 loss correspondence is its own inverse (RepairComparison, ported by F3R)"
+  },
+  "Becoming.MatchedCourses.separated_same_position": {
+   "module": "Becoming.MatchedCourses",
+   "category": "model-witness",
+   "reason": "a fact about one constructed course model: two claims of one position are separated in time (RepairComparison, ported by F3R)"
+  },
+  "Becoming.MatchedCourses.support_between": {
+   "module": "Becoming.MatchedCourses",
+   "category": "model-witness",
+   "reason": "a fact about one constructed course model: support is available between the claims of a position (RepairComparison, ported by F3R)"
+  },
+  "Becoming.MatchedCourses.support_restored": {
+   "module": "Becoming.MatchedCourses",
+   "category": "model-witness",
+   "reason": "a fact about one constructed course model: support is back at the final state of every course (RepairComparison, ported by F3R)"
+  },
+  "Becoming.ProjectedLaws.cross_routing_two_steps": {
+   "module": "Becoming.ProjectedLaws",
+   "category": "model-witness",
+   "reason": "a computation in the constructed two-cell wiring model (SystemsOrganization, ported by F3R)"
+  },
+  "Becoming.ProjectedLaws.no_autonomous_left_law": {
+   "module": "Becoming.ProjectedLaws",
+   "category": "model-witness",
+   "reason": "a counterexample in the constructed two-cell wiring model: crossed routing leaves one cell no law of its own; its law is `Mechanism.carries_law_iff` (SystemsOrganization, ported by F3R)"
+  },
+  "Becoming.ProjectedLaws.self_routing_fixed": {
+   "module": "Becoming.ProjectedLaws",
+   "category": "model-witness",
+   "reason": "a computation in the constructed two-cell wiring model (SystemsOrganization, ported by F3R)"
+  },
+  "Becoming.StrictTransport.anchor_licenses_no_longer_repair": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.continuation_first_above_every": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.continuation_first_no_cutoff": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.continuation_first_prefers_shorter": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.continuation_first_transitive": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.cutoff_transitive": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.cutoffs_disagree": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.shorter_interruption_no_worse": {
+   "module": "Becoming.StrictTransport",
+   "category": "model-witness",
+   "reason": "a fact about the four routes and the cutoff or finishing-first order on them, one constructed model of the weak rules (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.StrictTransport.strict_iff_of_faithful": {
+   "module": "Becoming.StrictTransport",
+   "category": "general-structure",
+   "reason": "a law of every supplied comparison on any type and every faithful redescription of it; the base supplies no reading of the comparison (GenerativeLossComparison, ported by F3R)"
+  },
+  "Becoming.SupportRecovery.same_later_inputs": {
+   "module": "Becoming.SupportRecovery",
+   "category": "model-witness",
+   "reason": "a fact about the two constructed pulse histories: they draw and contribute the same after the first step (RenewalRecovery, ported by F3R)"
   }
  }
 }
