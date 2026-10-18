@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "16fd456e8b33ed8e49a880117517b8bdf15395523b0612dbc25f733b22da0097",
+      "sha256": "2599233e193a294b4bdf564bad79d1edc0d90e84db5011c688d1efb1f3f8a727",
       "declarations": []
     },
     {
@@ -489,6 +489,10 @@
     {
       "en": "18 October 2026, L1 (Becoming.Unrolling): THE-THEORY-OF-BECOMING.md re-pointed after L1 added the bullets on what an extrapolation given nothing fixes, revised the \"Learning\" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月18日，L1（Becoming.Unrolling）：L1 增加关于不被给予任何东西的外推所确定者的条目、修订第 8.2 节“学习”行与第 9 节回执及连通性文字后，THE-THEORY-OF-BECOMING.md 重新指向；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, S1 (Becoming.Enough): THE-THEORY-OF-BECOMING.md re-pointed after S1 added the bullet on enough under undetermined laws, revised the \"Seeking, capture and runaway\" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月18日，S1（Becoming.Enough）：S1 增加关于不确定之律下之够的条目、修订第 8.2 节“寻求、俘获与失控”行与第 9 节回执及连通性文字后，THE-THEORY-OF-BECOMING.md 重新指向；重新指向前已读。论断不变。"
     }
   ]
 }

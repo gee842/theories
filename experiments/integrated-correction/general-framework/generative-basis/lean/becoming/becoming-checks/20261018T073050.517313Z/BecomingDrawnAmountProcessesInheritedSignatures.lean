@@ -1,0 +1,9 @@
+import Becoming.DrawnAmountProcessesInherited
+#check @Becoming.DrawnAmountProcessesInherited.sub_lt_sub_of_lt
+#check @Becoming.DrawnAmountProcessesInherited.left_step_retains
+#check @Becoming.DrawnAmountProcessesInherited.overbuild_step_loses
+#check @Becoming.DrawnAmountProcessesInherited.report_same_basis_differs
+#check @Becoming.DrawnAmountProcessesInherited.no_report_judge
+#check @Becoming.DrawnAmountProcessesInherited.formation_required_on_frame
+#check @Becoming.DrawnAmountProcessesInherited.neither_route_required_on_frame
+#check @Becoming.DrawnAmountProcessesInherited.overbuild_off_frontier_on_frame

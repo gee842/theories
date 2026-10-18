@@ -1,0 +1,15 @@
+@Becoming.ReachableFramesInherited.certified_reason_on_scope : ∀ {S A C R O : Type} {k : Nat} (F : Becoming.Frame S A C)
+  (living : C → Prop) {sense : S → A → S → Fin k} {response : R → List A} {B : S → Prop}
+  {policy : Generative.InquirySufficiency.Policy A R k} (before positive : S → C → Prop) (reason : S → Prop),
+  Becoming.G0 F living positive →
+    (∀ (t : S) (c : C), positive t c → reason t) →
+      ∀ (domain : List O) (contribution : S → O → Int) (meaning : O → C),
+        (∀ (t : S),
+            Becoming.Scope F.P sense response B policy t →
+              ∀ (o : O),
+                o ∈ domain →
+                  0 < contribution t o → living (meaning o) ∧ F.realized t (meaning o) ∧ ¬before t (meaning o)) →
+          (∀ (t : S),
+              Becoming.Scope F.P sense response B policy t →
+                0 < PositiveGroundUncertainty.finiteIntegral domain (contribution t)) →
+            ∀ (t : S), Becoming.Scope F.P sense response B policy t → (∃ c, positive t c ∧ ¬before t c) ∧ reason t

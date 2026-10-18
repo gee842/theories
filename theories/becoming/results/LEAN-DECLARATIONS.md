@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 181 | 7,651 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 182 | 7,660 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 39 | 601 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -247,6 +247,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [EnactedOrientation.lean](lean-declarations/core.md#module-7587315c346a) | Generative core and relational structure |
 | [EnactedScene.lean](lean-declarations/inquiry.md#module-79f5d61b66c6) | Attainable inquiry, contact and process laws |
 | [EncounterChoice.lean](lean-declarations/inquiry.md#module-130b052828c4) | Attainable inquiry, contact and process laws |
+| [Enough.lean](lean-declarations/becoming-core.md#module-76ad8e8c0e8d) | Becoming pure core |
 | [Entropy.lean](lean-declarations/becoming-core.md#module-53f5f554b2a8) | Becoming pure core |
 | [Enumeration.lean](lean-declarations/shared.md#module-2aa3f81f3ba3) | Organizational formation through revisable evaluation |
 | [EqualityGenerativity.lean](lean-declarations/abstraction.md#module-475eb20715c8) | Abstraction, applicability and constitution |

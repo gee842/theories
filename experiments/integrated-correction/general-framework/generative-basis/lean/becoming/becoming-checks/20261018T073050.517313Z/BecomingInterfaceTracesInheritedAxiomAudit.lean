@@ -1,0 +1,5 @@
+import Becoming.InterfaceTracesInherited
+#print axioms Becoming.InterfaceTracesInherited.false_iff_not
+#print axioms Becoming.InterfaceTracesInherited.selected_iff_completes
+#print axioms Becoming.InterfaceTracesInherited.none_selected_iff
+#print axioms Becoming.InterfaceTracesInherited.selected_completes

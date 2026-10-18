@@ -175,6 +175,7 @@ import Becoming.Interleavings
 import Becoming.CensusCounts
 import Becoming.CensusBinding
 import Becoming.Unrolling
+import Becoming.Enough
 
 /-!
 # The Theory of Becoming: the formal core
@@ -1276,6 +1277,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   learnable through the map exactly where it is, from some step on along every orbit, a reading
   of that future, and the extrapolation given the reading learns it; given nothing, no
   extrapolation learns every learnable feature.
+* `Becoming.Enough` (L4): the boundary of enough on the runs of any process, with no premise. Some
+  run from a configuration comes to rest with its target met exactly where a reachable
+  configuration that has a step that stays meets the target. Every run from it does exactly where
+  every such configuration meets the target and every run from it settles; a process in which
+  every configuration can stay and meets the target has a run that never settles. Under a
+  determined law the two are one, and are the boundary of enough of `Becoming.Seeking`.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return
