@@ -92,6 +92,7 @@ Aliases: `criterion along one run`, `沿一个运行的判据`, `law through a p
 ### History
 
 - 18 October 2026: added (G3), on Ren's "please see what else is there to do - keep pushing the frontier till finishing"; study section 181.
+- 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: L2 and C1 added a study section each; THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the "Learning" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 
 </details>
 

@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 192 | 7,811 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 194 | 7,862 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 38 | 567 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -267,6 +267,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ExactRecordRuns.lean](lean-declarations/becoming-bridge.md#module-13b22804454e) | Becoming bridge |
 | [ExactRecordRunsInherited.lean](lean-declarations/core.md#module-b901c0b1952f) | Generative core and relational structure |
 | [ExchangeFlows.lean](lean-declarations/becoming-core.md#module-9e324b0a14da) | Becoming pure core |
+| [Exclusion.lean](lean-declarations/becoming-core.md#module-31e87f74b962) | Becoming pure core |
 | [ExpandingInquiry.lean](lean-declarations/other.md#module-1f53d52a1db7) | Other formal studies |
 | [Experiment.lean](lean-declarations/becoming-core.md#module-1934213e38a7) | Becoming pure core |
 | [ExplanationDischarge.lean](lean-declarations/core.md#module-dfc447302a8a) | Generative core and relational structure |
@@ -458,6 +459,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [KeptSupport.lean](lean-declarations/abstraction.md#module-c764abc871d9) | Abstraction, applicability and constitution |
 | [KitchenTransitions.lean](lean-declarations/ethics.md#module-74df76c70b6e) | Normative grounding and generative direction |
 | [KnowledgeCorrespondence.lean](lean-declarations/inquiry.md#module-3c2658ad7582) | Attainable inquiry, contact and process laws |
+| [Labels.lean](lean-declarations/becoming-core.md#module-7fac02aac7eb) | Becoming pure core |
 | [LastChange.lean](lean-declarations/becoming-core.md#module-9e3b47c1ecb7) | Becoming pure core |
 | [Lasting.lean](lean-declarations/becoming-core.md#module-2804e16a6285) | Becoming pure core |
 | [LastingRuns.lean](lean-declarations/becoming-core.md#module-48d8228de025) | Becoming pure core |

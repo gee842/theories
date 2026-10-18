@@ -24,7 +24,7 @@
 ## Does not show
 
 - An extrapolation that finds the reading: the reading of the first direction of the exact theorem is given the world, the law and the feature (fromWorld).
-- Learning a feature from finitely many of its values; undetermined processes; rates beyond the stated bound.
+- Undetermined processes; rates beyond the stated bound (learning from finitely many labelled values of the feature is in what-finitely-many-labels-fix).
 - **Counterexample:** One configuration, one value through the map: the features true and false are each learnable, and no single extrapolation rests in accord with both (given_nothing_not_every). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unrolling.lean)
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -39,7 +39,7 @@ Canonical source: [Unrolling.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-Learning from finitely many values of the feature (part of a reading given); the enough of seeking under undetermined laws (board item S1); an independent review.
+An extrapolation that finds the reading, or a table of it; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -73,6 +73,8 @@ Aliases: `what an extrapolation given nothing fixes`, `不被给予任何东西�
 
 - 18 October 2026: added (L1), on Ren's "Wait for N5's renames to land, then start the learning and seeking line on the renamed head."; study section 173.
 - 18 October 2026: the reading decided by the AI on Ren's words of 18 October ("alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable"), DELEGATED-CHOICES D40; the chapter labels it "AI reading, D40". The claim is unchanged.
+- 18 October 2026, L2 (Becoming.Labels): learning from finitely many values of the feature is stated in what-finitely-many-labels-fix, and the enough of seeking under undetermined laws landed as S1 (the-boundary-of-enough-under-undetermined-laws), so one item of does_not_show and the next step were narrowed. Before: does_not_show "Learning a feature from finitely many of its values; undetermined processes; rates beyond the stated bound."; next step "Learning from finitely many values of the feature (part of a reading given); the enough of seeking under undetermined laws (board item S1); an independent review.". The claim is unchanged.
+- 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change since bd5252f96 (the section 8.2 row "Learning" that cites it now names Becoming.Labels (a table found rather than given, and whether fewer names suffice, stay open), and the D40 reading extended with L2 states that the reading is a finite object). The claim is unchanged.
 
 </details>
 

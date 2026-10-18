@@ -71,10 +71,11 @@
 | D37 | 任意多条件下的识；尾 | 形式上读作律的敏感，识本身属 Ren；尾取确切意义 |
 | D38 | 细分的计入；分辨率 | 两项都以确切范围采用；研究笔记照旧 |
 | D39 | 耦合强度与纠缠 | 以确切范围采用，识本身属 Ren；经修订由 Ren 取（10-18）：“heavily coupled into it”读作强度，“a highly entangled system”读作回路，不等同于量子的纠缠；（3）带审查的范围 |
-| D40 | 不被给予任何东西的外推所确定者 | 以确切范围采用：由一个列表容纳的世界；读法是函数，不是被持有的模型 |
+| D40 | 不被给予任何东西的外推所确定者 | 以确切范围采用：由一个列表容纳的世界；读法是函数，不是被持有的模型；以 L2 扩展 |
 | D41 | 不确定之律下的够 | 以确切范围采用：可能是某一进程所允许者；过程一侧不是无明 |
 | D42 | 过程的运行何时安定 | 以确切范围采用：不永远变化不是安定；与 D34 的相似只在形式上；以 S3 扩展 |
 | D43 | 其余的待决读法（10-18） | 由 Ren 依决定简报的建议取：逐项保留、收窄、减弱或修订 |
+| D44 | 取尽所给所排除的 | 以确切范围采用：终结他者服务于取尽所给，而非延续；容纳不记下它 |
 
 <a id="1-生生与生成的空间--生生-and-the-generative-space"></a>
 ## 1. 生生与生成的空间
@@ -234,6 +235,15 @@
 **理由。** 一、逐字合 Ren 的句子，并且它就是对任何东西的 G0（`unrestricted_iff_g0`）；二、见证迫使它。
 **会改变它的。** Ren 给“has significance”加限定。
 
+<a id="d44-取尽所给所排除的--what-taking-all-that-is-given-excludes"></a>
+### D44. 取尽所给所排除的
+
+所在：理论第 6.7 节“What taking all that is given excludes”一条；[what-taking-all-excludes](../../../../theories/becoming/results/records/what-taking-all-excludes.md) 的读法；研究第 183 节。
+
+**决定。** 以确切范围采用。一、终结他者服务于取尽所给，而不是延续本身：在持续的取尽者旁，以从该条件取用为生的形成终结（`Flow.continuing_ends_taker`），而各在所给之内取用时，同样的成员一同持续（`Excluding.three_courses`）。开放项“终结他者服务于清除者延续的见证”只对取尽者成立。二、由第一个的想要推出的范围不区分排除的进程与分享的进程：两者中第一个每步都活跃且被支持。区分它们的是第二个的延续，延续条件计入它（本章第 6.15 节），第一个推出的范围不及于它。三、以容纳比较进程（保留，D13；余量）不记下经由被排除于取用之外的终结：排除的进程中水平每步都容纳第二个，而它终结（`Excluding.admission_alike`）。所以不因水平保留了有意义者而把取尽者的取用读作无损：损失是该成员的延续，任何以包含的比较都不许可它（D14）。不采用：（a）把排除的进程读作离开取尽所给也服务于第一个的延续；（b）在终结经由取用起作用之处，把以容纳读的保留读作不损；（c）把取尽所给读作元吸引子的情形——那是 Ren 语料中的术语，且需要取尽所给如何形成的定律。“竞争排除”之名取自生态学原理，以此范围用于 `Flow.continuing_excludes` 的定律。
+**理由。** 一与二是定理；三是见证，D14 已把成员的终结算作损失。不采用的读法会加前提（a），丢掉定理所示的损失（b），或扩展 Ren 的术语（c）。
+**会改变它的。** 记下经由取用之终结的进程比较（在流上，而不是在水平上）；取尽所给如何形成的定律。
+
 <a id="4-不用公理的路线反馈与所及--the-route-without-axiom-feedback-and-reach"></a>
 ## 4. 不用公理的路线、反馈与所及
 
@@ -370,6 +380,8 @@
 **决定。** 以确切范围采用。在每个由一个列表容纳的世界中，不被给予任何东西，一个前缀确定经映射的整个未来（`Learnable.ahead_fixes`）；一个目标可学，恰当它从某步起是对那个未来的一个读法（`Learnable.learnable_iff_reading`）。所以 `learnable_iff` 的学习者在前缀之外被给予的（`fromLaw`：世界与目标），只作为对前缀已确定的未来的一个读法，不是对构形的更多通达。没有不被给予任何东西的学习者静止于每个可学目标，其见证（`Learnable.given_nothing_not_every`）按原样采用，并称为初等的：单构形世界中的两个常值目标；内容在于前缀确实确定的东西。这是 Ren 2026-10-16 之更正的一个形式侧面：选择“is about the cognitive model, not just record”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md)）：记住的过去确定经映射的未来，它不提供的是读法。Lean 名称 `reading` 保留：从经映射的未来到值的函数。不采用：（1）把它读到列表容纳的世界之外，那里在每个进程上没有前缀确定下一个值（`Learning.no_prefix_fixes_next`）；（2）把“对未来的一个读法”读作某个构成所持有的模型：定理说的是这样的函数存在，不是有什么表示它。
 **理由。** 定理不加前提地陈述这些；（1）为所引定理排除；（2）会加一个表示的前提。
 **会改变它的。** 在列表容纳的世界之外的确定形式（例如对所识者给一个界）；比 `reading` 更好的名称。
+
+**以 L2 扩展（2026-10-18，`Becoming.Labels`，[记录](../../../../theories/becoming/results/records/what-finitely-many-labels-fix.md)，研究第 182 节）。** 读法是有限的对象。在由 N 个构形的列表容纳的世界中，被给予至多 N 个带标签名字的外推学得每个可学特征：每个名字是 N − 1 个经映射之值的未来，每个标签是特征的一个值。所以一个特征可学，恰当某张这样的表学得它（`Learnable.table_rests`、`Learnable.learnable_iff_table`）。其标签含特征在它静止后所取的每个值（`Learnable.label_of_rests`）。映射也带着特征之处，界之前的标签确定此后的每一个（`Learnable.ahead_with_labels`）。读作：前缀不提供的，是附在名字上的有限多个特征之值。表仍是被给予的，不是找到的，也不读作某个构成所持有的模型（不采用的读法（2）仍成立）。以同样的范围采用；由 AI 依 Ren 的同一段话决定。
 
 <a id="d41-不确定之律下够的边界--the-boundary-of-enough-under-undetermined-laws"></a>
 ### D41. 不确定之律下够的边界
@@ -560,3 +572,4 @@ L1、S1 与 S2 是 D40-D42。
 - 同一交托之下推进的证明：P111 `Becoming.Gain`（新的增益从哪里来）与 P112 `Becoming.Gluing`（奇偶约束下语境中的读法何时粘合），见其记录与研究。
 - Ren 2026-10-18 对 L1、S1、S2 读法的话，“alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md#rens-message-on-the-readings-of-l1-s1-and-s2)），读作对 AI 所解释的读法的总体同意，并交托其措辞与范围：D40-D42。
 - Ren 2026-10-18 的回答，“I take the revised readings of 生生, 生生不息 and "entangled". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.”，由 AI 草拟的回复按钮发出，所以措辞是 AI 的，选择是 Ren 的（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）：D1、D5、D22 与 D39 的修订，以及 D43。论证在[决定简报](READINGS-PENDING-REN.md)中。
+- Ren 2026-10-18 的话，“alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable”，也读作交托下一项的选择：C1 及其读法 D44（研究第 183 节）。

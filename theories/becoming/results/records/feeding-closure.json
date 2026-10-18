@@ -460,7 +460,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "99793ee6b3da4146a83942274c0e9422da161ea87fd7c8f0d0ea534c36736c6e"
+      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -861,6 +861,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change since 77dc88103 (the section 8.2 row \"Continuation (§6.7) and feeding\" that cites it now reads C1's result (how taking all that is given forms, ending another serving taking all that is given, forced endings in the witnesses of §6.7, a comparison that registers an ending through exclusion) and links what-taking-all-excludes). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过自 77dc88103 以来的改动后（引用它的第 8.2 节“延续（§6.7）与供给”一行现读 C1 的结果），THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

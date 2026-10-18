@@ -56,6 +56,7 @@ import Becoming.Imbalance
 import Becoming.Continuation
 import Becoming.RenewalFlow
 import Becoming.Admission
+import Becoming.Exclusion
 import Becoming.Regions
 import Becoming.Metaethics
 import Becoming.Lifting
@@ -180,6 +181,7 @@ import Becoming.Interleavings
 import Becoming.CensusCounts
 import Becoming.CensusBinding
 import Becoming.Unrolling
+import Becoming.Labels
 import Becoming.Enough
 import Becoming.Settling
 import Becoming.LastChange
@@ -703,6 +705,18 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   and opening needs a net give. Compared by inclusion, a part widens, narrows, keeps the
   same or is mixed, each exceeding the other, which inclusion does not order. Reading
   these as Ren's generative, degenerative and neutral is the AI's reading.
+* `Becoming.Exclusion` (L3): what taking all that is given excludes, with no ethical premise.
+  A formation takes all that is given to a condition across a step where it takes part and
+  takes from it at least all that the step gives to it; alongside it, any other taker makes
+  the joint taking exceed what is given. So where renewal is given only by formations
+  depending on what they renew, full taking alongside another taker for as many steps as the
+  level allows ends every formation depending on the condition at such a need, the full taker
+  included; a full taker that continues leaves no other formation taking through such a
+  window, and a formation living by taking from the condition, whose activity does not resume
+  once it stops, ends. Taking jointly within what is given keeps the level and every formation
+  supported. Of a renewer and two takers, the first's continuation does not require the
+  second's ending (all three continue where each takes one); taking all that is given does.
+  The levels admit the second where it ends, so admission does not see the exclusion.
 * `Becoming.Regions` (L3): self, system and whole, and represented boundaries. What a
   part's levels admit within a region they admit within every region inside it, what is
   lost beyond a region is lost beyond every region inside it, and nothing lies beyond
@@ -1336,6 +1350,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   learnable through the map exactly where it is, from some step on along every orbit, a reading
   of that future, and the extrapolation given the reading learns it; given nothing, no
   extrapolation learns every learnable feature.
+* `Becoming.Labels` (L4): what finitely many labelled names fix, with no premise beyond a list.
+  The extrapolation given a table of labelled names (a name a finite future through the map, a
+  label a value of the feature) unrolls the extrapolation given nothing and proposes the label of
+  the first name its proposed future begins with. In a world a list of `N` holds, the table of
+  the `N` configurations, each named by `N - 1` values, learns every learnable feature, so a
+  feature is learnable exactly where the extrapolation given some table of at most `N` names of
+  `N - 1` values learns it; its labels include every value the feature takes once it rests.
+  Where the map also carries the feature, the labels before the bound fix every later one.
 * `Becoming.Enough` (L4): the boundary of enough on the runs of any process, with no premise. Some
   run from a configuration comes to rest with its target met exactly where a reachable
   configuration that has a step that stays meets the target. Every run from it does exactly where

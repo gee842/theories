@@ -77,12 +77,12 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.ClassifiedBeliefProcesse
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
         "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
-        "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.Admission",
+        "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.Admission", "Becoming.Exclusion",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Lifting", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback", "Becoming.EdgeClosure",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.SelectionGap", "Becoming.SelectionReach", "Becoming.SelectionPool", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.LevelCoupling", "Becoming.Interleavings", "Becoming.CensusCounts", "Becoming.CensusBinding", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.Unrolling", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.BoundaryFlows", "Becoming.BoundaryWorlds", "Becoming.CandidateRuns", "Becoming.CaptureWorlds", "Becoming.CensusWebs", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CountdownCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.DependenceWebs", "Becoming.DiagonalRuns", "Becoming.ExchangeFlows", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.JointPlanFrames", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.LevelWebs", "Becoming.ListedOutcomeFrames", "Becoming.ListedWebs", "Becoming.MoveRuns", "Becoming.OrderWorlds", "Becoming.PassageWorlds", "Becoming.RecurrenceRuns", "Becoming.ReducedRuns", "Becoming.ReferencePlanTraces", "Becoming.RetrodictionRuns", "Becoming.RevisionRuns", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.Enough", "Becoming.Settling", "Becoming.LastChange", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StockTraces", "Becoming.StrengthFlows", "Becoming.TailRuns", "Becoming.TallyWorlds", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.SelectionGap", "Becoming.SelectionReach", "Becoming.SelectionPool", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.LevelCoupling", "Becoming.Interleavings", "Becoming.CensusCounts", "Becoming.CensusBinding", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.Unrolling", "Becoming.Labels", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.BoundaryFlows", "Becoming.BoundaryWorlds", "Becoming.CandidateRuns", "Becoming.CaptureWorlds", "Becoming.CensusWebs", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CountdownCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.DependenceWebs", "Becoming.DiagonalRuns", "Becoming.ExchangeFlows", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.JointPlanFrames", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.LevelWebs", "Becoming.ListedOutcomeFrames", "Becoming.ListedWebs", "Becoming.MoveRuns", "Becoming.OrderWorlds", "Becoming.PassageWorlds", "Becoming.RecurrenceRuns", "Becoming.ReducedRuns", "Becoming.ReferencePlanTraces", "Becoming.RetrodictionRuns", "Becoming.RevisionRuns", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.Enough", "Becoming.Settling", "Becoming.LastChange", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StockTraces", "Becoming.StrengthFlows", "Becoming.TailRuns", "Becoming.TallyWorlds", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge",
     # U2 (17 October 2026): pure joins of the periphery to the base
     "Becoming.GuardHorizonProcesses", "Becoming.InstallationTraces",
@@ -1147,6 +1147,19 @@ SCOPE = (
     "nothing; a giver from beyond widens, its levels including and exceeding those without it, "
     "and a conveyor's part is mixed, each level path exceeding the other. No ethical predicate "
     "occurs. "
+    "Exclusion: where renewal is given only by formations depending on what they renew, a "
+    "formation taking all that is given to a condition makes every other taker a joint excess, so "
+    "full taking alongside another taker for as many steps as the level allows ends every "
+    "formation depending on the condition at such a need, the full taker included; a full taker "
+    "that continues leaves no other formation taking from the condition through a window as long "
+    "as the level, a formation active only while it takes from it is not active through such a "
+    "window, and one whose activity does not resume once it stops ends; taking jointly within what "
+    "is given keeps the level and, where the formations depend on that condition alone at needs "
+    "it met at the start, every formation supported; of a renewer and two takers, all end where "
+    "both take two, the renewer and the first continue where the first takes all and the second "
+    "ends, the ending also following from the law, and all three continue where each takes one, "
+    "while the levels of the last two courses admit every member at every step. No ethical "
+    "predicate occurs. "
     "Regions: within a region of formations levels admit everything other levels admit there, and "
     "beyond it some formation the other levels admit these do not; inclusion is admission within "
     "the whole at every step, what holds within a region holds within every region inside it, what "
@@ -1475,6 +1488,16 @@ SCOPE = (
     "registration give every learner the same record, and in a world a list holds a target is "
     "learnable along every run exactly where runs beginning alike have targets that agree from "
     "some step on. "
+    "Unrolling: given nothing, a prefix fixes the whole future through the map in every world a list "
+    "holds: unrolled on its own proposals, the extrapolation by elimination over the lasso candidates "
+    "proposes the value through the map at every step ahead from the identification bound on; a "
+    "feature is learnable exactly where it is, from some step on, a reading of that future, and given "
+    "nothing no extrapolation learns every learnable feature. "
+    "Labels: in a world a list of N holds, a feature is learnable through the map exactly where the "
+    "extrapolation given some table of at most N labelled names of N - 1 values learns it, the table "
+    "of the world being one; every value the feature takes once that extrapolation rests is a label; "
+    "where the map also carries the feature, the extrapolation given nothing learns it and the labels "
+    "before the bound fix every later one. "
     "ParityReadings: the registrations glue at a step of a run exactly where the world of readings "
     "is context-free there; for a parity system a respecting world of readings is context-free at "
     "a step, and a frame of context-free claims fits, exactly where no selection of contexts "
@@ -1522,6 +1545,19 @@ SCOPE = (
     "RevisionRuns: what the history of a run's registrations selects, and the reconstruction steps. "
     "RouteTraces: the orders of a sum over a process's histories. "
     "SeekingRuns: the boundary of enough on the unfolding. "
+    "Enough: under an undetermined law some run comes to rest with its target met exactly where a "
+    "reachable configuration stays and meets it, and every run does exactly where every reachable "
+    "configuration with a step that stays meets it and every run settles; under a determined law the "
+    "two are one. "
+    "Settling: in a world a list holds, some run keeps changing exactly where a reachable change can "
+    "be undone; not changing for ever is not settling, which is the limited principle of omniscience "
+    "already for two configurations. "
+    "LastChange: along a run a list of N holds, with no change within a loop, there are fewer than N "
+    "changes, and with decidable configurations the run is not not settled; settling every run from a "
+    "configuration with no reachable change that can be undone, for every process of decidable "
+    "configurations in a world a list holds, is exactly the limited principle of omniscience, and "
+    "with it assured enough is every reachable stay meeting the target and no reachable change "
+    "undoable. "
     "SelectionRuns: a selection through a run's registered course. "
     "SensitivityWebs: sensitivity on webs and flows: what depends on the whole, read off the courses. "
     "SituationTraces: the counts of situations are counts of the traces of one determined process. "

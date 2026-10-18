@@ -315,12 +315,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0d444fd3bfc9943d2b4bc03ae0d582920175bb55b70578a4bd597ff46a984182"
+      "sha256": "2802ff8087414012138996cf36c203f8f429d0009782782b7adee19e71dc6a79"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "58c5a0c94a6c147c56cab0bce96d287bc1f0aafadcf7f3bdd38b94297b1bc56b"
+      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -369,6 +369,10 @@
     {
       "en": "18 October 2026: added (G3), on Ren's \"please see what else is there to do - keep pushing the frontier till finishing\"; study section 181.",
       "zh": "2026年10月18日：新增（G3），按 Ren 的“please see what else is there to do - keep pushing the frontier till finishing”；研究第 181 节。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: L2 and C1 added a study section each; THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

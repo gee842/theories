@@ -7340,6 +7340,122 @@ Ren, 18 October 2026: "please see what else is there to do - keep pushing the fr
 - `Becoming.Readout.law_through_iff` (a reduced readout carries a law exactly where configurations alike go alike, over every configuration) is a different statement in another namespace.
 - Scratch build: 17 theorems, `unclean` empty, `with_axioms` empty; core receipt `20261018T150254.342862Z` passed (189 core modules).
 
+## 182. What finitely many labels fix (L2)
+
+```text
+Result(s): what-finitely-many-labels-fix (new); related to what-an-extrapolation-given-nothing-fixes,
+           learnable-through-registration, identification-where-bounded
+Delta: section 173 left learning a feature from finitely many of its values, given part of a reading of the future
+       rather than the whole; here: in a world a list of N holds, the extrapolation given the table of the world, N
+       labelled names of N - 1 values through the map, learns every learnable feature, so a feature is learnable
+       exactly where the extrapolation given some table of at most N such names learns it; its labels include every
+       value the feature takes once it rests; where the map also carries the feature, the extrapolation given nothing
+       learns it and the labels before the bound fix every later one; the same along runs
+Supplied premises / correspondence: no axiom; a determined law; a list holding the world (or the orbit, along the
+       course); values through the map compared decidably, and the feature's values too where the map carries it
+Evidence: Becoming.Labels, 20 theorems, empty axiom reports; core receipt `20261018T154830.591298Z`; connectivity check passes, 175 apart of 8,355
+Boundary: a table found rather than given; whether names of fewer than N - 1 values, or fewer than N names, can be
+          enough; undetermined processes
+```
+
+Ren, 18 October 2026: "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable" ([source](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md#rens-message-on-the-readings-of-l1-s1-and-s2)). The AI chose this item. Section 173 left it as its next step, and the chapter's §8.2 row "Learning" listed "learning a target from finitely many of its values, given part of a reading of the future rather than the whole".
+
+**The question.** A feature is learnable exactly where it is, from some step on, a reading of the future through the map (`Learnable.learnable_iff_reading`, section 173). The reading of the first direction, `Learnable.fromWorld`, is a function on whole futures. How much of it does an extrapolation need, and what do labels of the feature give?
+
+**The move.** Name a configuration by its first N − 1 values through the map. By Moore's bound (`Law.sameFuture_iff_within`), two configurations of a world a list of N holds have the same future through the map exactly where their names agree. From its bound on, the extrapolation given nothing, unrolled on its own proposals, proposes the whole future through the map (`Learnable.ahead_fixes`). So the first N − 1 values it proposes are the name of the configuration the course is at.
+
+A table pairs names with labels. The extrapolation given a table proposes the label of the first entry whose name its proposed future begins with (`Learnable.byTable`). The table of the world takes each configuration N steps on, as many as the list is long, where every configuration returns (`Law.returns_of_reachable`). The entry found first may belong to another configuration than the one the course is at. But the two have the same future through the map, and returning configurations whose features agree from some step on have equal features (`Learnable.eq_of_returns`). So the label found is the feature's value now.
+
+**What is proved** (`Becoming.Labels`).
+- **A table of labelled names** (`Learnable.Begins`, `Learnable.byTable`, `Learnable.entryOf`, `Learnable.tableOf`). A name is a finite future through the map, latest first, as `Law.name` writes it, and a label is a value of the feature. The extrapolation given a table is given neither the configurations, nor how many there are, nor the law, nor any value of the feature beyond the table's labels.
+- **`N` names of `N - 1` values are enough** (`Learnable.table_rests`). Take a world a list of N holds, where configurations with the same future through the map have features agreeing from some step on. There the extrapolation given the table of the world rests in accord with the feature along every orbit, from the bound of the extrapolation given nothing on.
+- **Learnable exactly where some table learns it** (`Learnable.learnable_iff_table`). A feature is learnable through the map exactly where the extrapolation given some table of at most N labelled names, each of N − 1 values, rests in accord with it at every configuration. The table of the world is one wherever any is.
+- **The labels needed** (`Learnable.label_of_rests`, `Learnable.labels_of_still`). Every value the feature takes from the step an extrapolation given a table rests on is a label of the table. Where the law leaves every configuration unchanged, every value the feature takes is a label.
+- **Labels along the course** (`Learnable.rests_with_labels`, `Learnable.ahead_with_labels`). Where the map also carries the feature, the extrapolation given nothing learns every feature from the bound on. Unrolled, it proposes the feature at every step ahead: in a world a list holds, the labels before the bound fix every later one. These are instances of `Learnable.rests_through` and `Learnable.ahead_fixes`.
+- **Along runs** (`LearnableRuns.table_rests`, `LearnableRuns.learnable_iff_table`, `LearnableRuns.labels_of_still`, `LearnableRuns.rests_with_labels`, `LearnableRuns.ahead_with_labels`), through `Becoming.LearnableRuns`.
+- Supporting: `Learning.prefix_map`, `Identification.firstFit_mem`, `Identification.firstFit_map`, `Learnable.length_map`, `Learnable.mem_map_of`, `Learnable.tableOf_length`, `Learnable.entryOf_name_length`, `Learnable.tableOf_names`, `Learnable.begins_entryOf`.
+
+**What this changes.** What a learnable feature adds to the prefix (section 173) is a finite object: at most N labelled names of N − 1 values, whose labels are values the feature takes. The reading of the first direction of `learnable_iff_reading` is a function on whole futures. It is needed only on the finitely many futures of the world, and each of those is fixed by its first N − 1 values. Where the map carries the feature itself, nothing beyond the prefix is needed: the labels before the bound are enough.
+
+The table is built from the world, the law and the feature, as `fromWorld` is. What changes is that the extrapolation needs only a finite table: finitely many values of the feature, attached to names. It still does not find the table.
+
+**Also in this landing.** The checker's scope text gains a sentence for `Becoming.Labels`. It also gains sentences for `Becoming.Unrolling`, `Becoming.Enough`, `Becoming.Settling` and `Becoming.LastChange`, which landed without them.
+
+**Not done.**
+- A table found rather than given.
+- Whether names of fewer than N − 1 values, or fewer than N names, can be enough in some world of N configurations. For telling configurations apart, N − 1 values are exact (`Law.sameFuture_classes_exact`).
+- Undetermined processes.
+- Probabilistic or approximate learning.
+- An independent review.
+
+**Self-review.** The statements were read against the Lean.
+- `Begins f e` compares the first `e.1.length` proposals with the name, latest first, as `prefixOf` writes them. `begins_entryOf` restates it as agreement of the first N − 1 proposals with the next values through the map of the entry's configuration.
+- In `table_rests`, Moore's bound gives the entry found first and the configuration the course is at the same future through the map. The hypothesis `agree` gives them features agreeing from some step on. Both are reached N steps on, so both return (`Law.returns_of_reachable`), and `eq_of_returns` gives equal features.
+- The bound is that of the extrapolation given nothing, `l.length + (l.length + l.length - 1) * tri l.length`. It is at least `l.length`, so the step `t` is `l.length + d` for some `d` (`gap_of_le`).
+- `learnable_iff_table`'s first direction gets `agree` from `learnable_iff`. Its second direction takes `byTable tbl` as the extrapolation. The size bounds are `tableOf_length` and `tableOf_names`.
+- `label_of_rests` uses only that `byTable` proposes the label of an entry `firstFit` finds in the table (`firstFit_mem`). `labels_of_still` uses `orbit_of_still`.
+- `rests_with_labels` and `ahead_with_labels` are instances with the map `fun x => (reg x, val x)`. Their extrapolation reads values of the feature, so these need the feature's values decidable (`[DecidableEq V]`).
+- The table section has `S R V : Type`, since `Identification.firstFit` is stated for `Type`. The along-the-course section keeps the universe-polymorphic statement.
+- The run forms other than `LearnableRuns.table_rests` are proved through the laws on configurations they restate (`rests_iff`, `restsFrom_iff`, `prefix_eq`, `Branching.law_run_state`). So each law of the module is used by a declaration stated on runs of the spine. The first checker run left four laws apart (`learnable_iff_table`, `rests_with_labels`, `labels_of_still`, `ahead_with_labels`): two had no run form, and two run forms were proved around the law they restate.
+- Scratch build: 20 theorems, 25 declarations, `unclean` empty, `with_axioms` empty.
+
+## 183. What taking all that is given excludes (C1)
+
+```text
+Result(s): what-taking-all-excludes (new); related to own-count-misses-joint-excess, derived-extent-limits,
+           significance-retained-within-margin, consumption-ends-with-feeders
+Delta: Continuation derived that where renewal depends on what it renews, joint excess bringing the level below a
+       need ends the renewal and every formation depending on the condition at that need; its witnesses stipulate
+       their endings. Here: a formation taking all that is given makes every other taker a joint excess, so a full
+       taker that continues leaves no other formation taking through a window as long as the level, and a formation
+       living by taking from the condition, whose activity does not resume, ends (derived, not stipulated); taking
+       jointly within what is given keeps the level and every formation supported; of a renewer and two takers, the
+       first's continuation does not require the second's ending, while taking all that is given does; the levels
+       of the excluding and of the sharing course admit every member at every step, so admission does not see the
+       exclusion
+Supplied premises / correspondence: no axiom; balance, only active formations giving, activity needing support,
+       whatever gives to the condition depending on it at the need; for the ending, a formation active only while it
+       takes from the condition, whose activity does not resume once it stops
+Evidence: Becoming.Exclusion, 31 theorems, empty axiom reports; core receipt `20261018T154830.591298Z`; connectivity check passes, 175 apart of 8,355
+Boundary: endings forced in the witnesses of section 6.7; how taking all that is given forms; reserves, delayed
+          renewal and shares beyond the witnesses; a comparison of courses that registers an ending through exclusion
+```
+
+Ren, 18 October 2026: "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable" ([source](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md#rens-message-on-the-readings-of-l1-s1-and-s2)). The AI chose this item. The chapter's §8.2 row "Continuation (§6.7) and feeding" listed "a witness in which ending another serves the clearer's continuation (a stronger case of the meta-attractor)", and `derived-extent-limits` named the same step.
+
+**The question.** `Becoming.Continuation` derives that joint excess ends the renewal and every formation depending on the condition at the need it falls below (`Flow.joint_excess_ends`). Of a renewer and two takers, all end where both take two (`Exceeding.all_end`). Where does ending another serve a formation's continuation, and does a formation's continuation require it?
+
+**The move.** Name the taking that makes every other taker an excess: a formation takes all that is given to a condition across a step where it takes part and takes from the condition at least all that the step gives to it (`Flow.TakesAll`). Any other taker then makes the joint taking exceed what is given, since two members of the list of those taking part count together at most the total. Continuation's law of joint excess does the rest. Where the full taker continues, the window of joint excess the level can hold is too short for any other taker to keep taking.
+
+**What is proved** (`Becoming.Exclusion`).
+- **Full taking alongside another taker** (`Flow.TakesAll`, `Flow.excess_of_takesAll`, `Flow.full_taking_ends_at`, `Flow.full_taking_ends`). Where renewal depends on what it renews, a full taker alongside another taker at each of n steps, from a level below n + m, ends every formation depending on the condition at a need of at least m, the full taker included.
+- **Competitive exclusion** (`Flow.continuing_excludes`, `Flow.continuing_excludes_active`, `Flow.continuing_ends_taker`, `Flow.alongside_not_all`). A full taker that continues, depending on the condition at a need of at least m, leaves no other formation taking from it at each of the `W.level T c + 1` steps from any `T`. A formation active only while it takes from the condition is not active at each of them. Where its activity does not resume once it stops, it is inactive from `T + W.level T c` on: the ending is derived, not stipulated. A formation that continues alongside another taker does not take all that is given at each of them.
+- **The joint course** (`Flow.level_kept`, `Flow.supported_of_within`). Taking jointly within what is given at every step keeps the level at least where it started. Where the formations depend on that condition alone, at needs it met at the start, every formation is supported at every step.
+- **Three courses of `Exceeding`'s members** (`Excluding.three_courses`). The renewer gives two units across each step, and each taker depends on the condition at need one. Where both take two, all end from step two (`Exceeding.all_end`). In `Excluding` the first takes all that is given and the second takes at the first step only, then ends; the renewer and the first are active at every step. The second's ending also follows from the law (`Excluding.ends_by_law`). In `Sharing` each takes one, jointly within what is given, and all three are supported (derived through `Flow.supported_of_within`) and active at every step; neither takes all that is given. There the second lives by taking and continues, so the law needs its premise of full taking (`Sharing.full_taking_needed`).
+- **Admission does not see the exclusion** (`Excluding.admits_all`, `Excluding.admission_alike`). The levels of `Excluding` and of `Sharing` admit every member at every step, and each level path includes the other (`Web.Includes`). Yet the second is inactive in `Excluding` from step one and active at every step in `Sharing`.
+- Supporting: `mem_of_mem_cons_ne`, `add_le_total_of_mem`, `Web.active_before`, and the witnesses' `balances`, `acting`, `dependent`, `gated`, `takes_all`, `continues`, `first_step`, `second_lives`, `second_lasting`, `within`, `neither_all`.
+
+**What this changes.** Ending another serves taking all that is given, not continuing as such. The first's continuation does not require the second's ending: the first continues in `Excluding` and in `Sharing`, with every dependence met at every step. Taking all that is given does require it: alongside a full taker that continues, a formation living by taking from the condition ends. So the open item's witness exists only for a full taker, and the same formation taking within a share needs no other formation's ending.
+
+The exclusion is not visible to a comparison of level paths by admission. In `Excluding` the levels still meet the second's need at every step; it ends because taking alongside the full taker would end everyone. A comparison by inclusion (section 6.8 of the chapter: retaining, the margin) compares what level paths admit. So it does not register an ending through exclusion from taking. In `Clearing` the clearer's taking draws the habitat below the dweller's need, so that ending is visible to admission (`Becoming.Regions`); here it is not. The loss is the member's continuation (D14), and D44 records the reading.
+
+**Not done.**
+- Endings forced in the witnesses of section 6.7 (`Downstream`, `Mortal`, `Clearing`) by quantifying over activity: their endings stay stipulated. Here an ending is derived only for a formation living by taking alongside a full taker that continues.
+- How taking all that is given forms, for instance through what it gains (a stronger case of the meta-attractor).
+- Reserves, delayed renewal, and shares beyond the witnesses.
+- A comparison of courses that registers an ending through exclusion from taking.
+- An independent review.
+
+**Self-review.** The statements were read against the Lean.
+- `TakesAll t f c` is `f ∈ L.present t ∧ L.given t c ≤ L.take t f c`: it takes from `c` at least the total given to `c` by all those taking part. `excess_of_takesAll` adds the other taker's positive take; `add_le_total_of_mem` bounds the two takes by the total over the list, for members apart.
+- `full_taking_ends_at` and `full_taking_ends` are `joint_excess_ends_at` and `joint_excess_ends` with the excess supplied by `excess_of_takesAll`. Their premises are those of Continuation's laws, plus full taking and the other taker.
+- `continuing_excludes` takes the window `n = W.level T c + 1` with `k = 0`, so `start` holds for every `m`. Its conclusion would make the full taker, which continues and depends at such a need, inactive at `T + n`. `continuing_excludes_active` adds `lives`, active only while taking. `continuing_ends_taker` adds `lasting`, no resumption after `T`. Activity at `T + (W.level T c + k)` then gives activity at every step of the window (`Web.active_before`, by induction on `≤`).
+- `ends_by_law` instantiates `continuing_ends_taker` in `Excluding` with `m = 1` and `T = 0`. The premises `lives` and `lasting` of the second hold there, so the general law's premises are met together.
+- `Sharing.dependent` is derived from the joint course, not stipulated. `full_taking_needed` shows `lives` without full taking, with the second continuing.
+- `admission_alike` compares level paths under `Excluding.web`'s requirements; `Sharing.web` has the same requirements and needs (every member, need one).
+- The module imports `Becoming.Admission` for `Web.Admits` and `Web.Includes`.
+- Scratch build: 31 theorems, 38 declarations, `unclean` empty, `with_axioms` empty.
+
 ## Ren’s words quoted in passages that exist only in the Chinese edition
 
 The paragraphs below sit in Chinese-only passages of this study log ([Chinese edition](BECOMING-RENEWAL-READING.zh.md)). Only the quotation is repeated here, verbatim and in Ren’s original language, with the source link given in the passage (line numbers refer to the bilingual file before the split); the surrounding AI prose is in the Chinese edition. Nothing here is translated.

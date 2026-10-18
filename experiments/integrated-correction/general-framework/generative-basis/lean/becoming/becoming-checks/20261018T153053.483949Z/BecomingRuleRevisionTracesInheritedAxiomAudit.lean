@@ -1,0 +1,3 @@
+import Becoming.RuleRevisionTracesInherited
+#print axioms Becoming.RuleRevisionTracesInherited.fails_forever
+#print axioms Becoming.RuleRevisionTracesInherited.resets_remaining

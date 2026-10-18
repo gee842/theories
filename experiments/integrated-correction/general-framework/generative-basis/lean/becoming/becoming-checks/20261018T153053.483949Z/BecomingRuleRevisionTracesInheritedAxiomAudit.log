@@ -1,0 +1,2 @@
+'Becoming.RuleRevisionTracesInherited.fails_forever' depends on axioms: [propext]
+'Becoming.RuleRevisionTracesInherited.resets_remaining' depends on axioms: [propext]

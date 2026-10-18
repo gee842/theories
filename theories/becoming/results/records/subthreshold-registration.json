@@ -298,7 +298,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "58c5a0c94a6c147c56cab0bce96d287bc1f0aafadcf7f3bdd38b94297b1bc56b",
+      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05",
       "declarations": []
     },
     {
@@ -640,6 +640,10 @@
     {
       "en": "18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月18日，G3（Becoming.LawAlongRun）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

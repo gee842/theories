@@ -53,7 +53,7 @@ Canonical source: [Continuation.lean](../../../../experiments/integrated-correct
 <a id="next--下一步"></a>
 ## Next
 
-The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; a witness where ending another serves the clearer's continuation (a stronger case of the meta-attractor); forced endings (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.
+The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; how taking all that is given forms (a stronger case of the meta-attractor); forced endings in these witnesses (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -83,6 +83,7 @@ Ren's proposal says “all above does not require any axiom” and that the one 
   - Preserved conditions: None. [Dependence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 - related, not a proved adapter: [no-finite-part-bears-taking](no-finite-part-bears-taking.md). The clearer's flow follows Lone's source and fuels (Frontier).
 - related, not a proved adapter: [renewing-consuming-formation](renewing-consuming-formation.md). A consumer forms more at first and a one-step count prefers it; the clearer does not consume its own resource, only another's habitat.
+- related, not a proved adapter: [what-taking-all-excludes](what-taking-all-excludes.md). Here a clearer meeting every requirement derived from its want still ends a dweller, the ending stipulated; there ending another serves taking all that is given, not continuing as such, and the ending of a formation living by taking alongside a full taker is derived.
 
 **Used by:** [consumption-ends-with-feeders](consumption-ends-with-feeders.md) (interpretive) · [feeding-closure](feeding-closure.md) · [four-cases-of-a-part](four-cases-of-a-part.md) · [loss-beyond-a-region](loss-beyond-a-region.md) · [represented-boundary-against-dependence](represented-boundary-against-dependence.md) · [whole-first-and-bounded-centers](whole-first-and-bounded-centers.md) (interpretive)
 
@@ -123,6 +124,7 @@ Aliases: `Becoming.Downstream.one_way`, `Becoming.Mortal.after_its_end`, `Becomi
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Standpoints.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.
+- 18 October 2026, C1 (Becoming.Exclusion): the witness where ending another serves the clearer's continuation is stated in what-taking-all-excludes (it serves taking all that is given, not continuing as such, and the ending of a formation living by taking alongside a full taker is derived), so the next step was narrowed and the record linked. Before: next step "The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; a witness where ending another serves the clearer's continuation (a stronger case of the meta-attractor); forced endings (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.". The claim is unchanged.
 - 51 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-extent-limits.json).
 
 <a id="earlier-text--早期文本"></a>

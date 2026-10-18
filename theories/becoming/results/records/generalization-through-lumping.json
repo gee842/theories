@@ -403,7 +403,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "16fd456e8b33ed8e49a880117517b8bdf15395523b0612dbc25f733b22da0097",
+      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05",
       "declarations": []
     },
     {
@@ -660,6 +660,10 @@
     {
       "en": "18 October 2026, L1 (Becoming.Unrolling): THE-THEORY-OF-BECOMING.md re-pointed after L1 added the bullets on what an extrapolation given nothing fixes, revised the \"Learning\" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月18日，L1（Becoming.Unrolling）：L1 增加关于不被给予任何东西的外推所确定者的条目、修订第 8.2 节“学习”行与第 9 节回执及连通性文字后，THE-THEORY-OF-BECOMING.md 重新指向；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change since bd5252f96 (the section 8.2 row \"Learning\" that cites it now names Becoming.Labels (a table found rather than given, and whether fewer names suffice, stay open)). The claim is unchanged.",
+      "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过自 bd5252f96 以来的改动后（引用它的第 8.2 节“学习”一行现指 Becoming.Labels），THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [
