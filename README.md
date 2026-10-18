@@ -53,7 +53,7 @@ The future is within our hands. Let's make it good. Follow the truth.
 道法自然  
 *The Dao follows what is so of itself.*
 
-*Yongxu Ren, 10 October 2026, edited with AI. The footnotes, written with AI, say how far each claim is proved. [Original wording](sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md).*
+*10 October 2026, edited with AI. The footnotes, written with AI, say how far each claim is proved. [Original wording](sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md).*
 
 [^law]: **Proved, for every world as the theory represents it:** in discrete steps, with whole-number amounts, and with what is counted decided at each step. In every such world, arising and ceasing, a dependence forming and dissolving, and a condition coming to stand and ceasing to stand are one change (`change_readings`), and in a finite family coming to be and ceasing to be keep pace (`keep_pace`). Asked of every finite world without that decision, the law that arising recurs exactly when ceasing does is equivalent to excluded middle (`World.law_iff_em`). **Open:** whether every becoming can be so represented, and the deduction that the whole theory is necessary with no added premise ([the theory stated whole](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#第一部分的总陈述--part-i-stated-whole); [the open target](theories/becoming/results/records/theory-of-becoming-foundation.md)).
 
