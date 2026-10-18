@@ -72,6 +72,8 @@ SENSES = {
            'section 7, the zh column; 识 kept only for a formation\'s own course factoring through its own lumping'),
     'ZH-keep': ('识 kept: a formation\'s own further course factors through the lumping its own couplings make',
                 'section 7, option (b): the derived structure where differentiation by a part shapes that part\'s course'),
+    'ALT': ('"options", "selection through a model of the options" → alternatives; a selection factors through a map '
+            'of the alternatives (row 15)', 'revises the 16 October title, as Ren took in section 7; the old title is history'),
     'NAME': ('identifier proposed for a leftover sense (naming study section 8)', 'see the table of names'),
     'TEXT': ('wording around a changed word (grammar, a sentence that names the new words)',
              'needed for the sentence to read'),
@@ -190,6 +192,8 @@ def detect(old, new):
         s.append('L-feature')
     if gone('hypothes') or came('candidate') or came('by elimination'):
         s.append('L-elim')
+    if gone('option') and came('alternative'):
+        s.append('ALT')
     if gone('identif') and came('fix'):
         s.append('L-fix')
     if any(ord(c) > 0x2e80 for c in old + new) and old != new:

@@ -2,55 +2,56 @@ import Becoming.Viability
 import InquirySufficiency
 
 /-!
-# Keeping: a guard kept through what is registered
+# Keeping: a guard kept through what the steps keep
 
 `Becoming.Viability` states where no course leaves a guard: every course is counted, whatever
 moves it takes. Here the moves are not all alike. A move is usable from a class of
-configurations where it is allowed and enabled at each of them, and after it what the step
-registers narrows the class. This module states, for every process, every registration of its
-steps, every guard and every condition on moves, when a class is kept for `n` steps, and how
-that keeping is carried by plans whose later moves follow what was registered.
+configurations where it is allowed and enabled at each of them, and after it the value the step
+keeps (`sense`, a map of steps) narrows the class. This module states, for every process, every
+map of its steps to the values they keep, every guard and every condition on moves, when a class
+is kept for `n` steps, and how that keeping is carried by plans whose later moves follow the
+values kept.
 
 * **Kept for `n` steps.** A class is kept for no steps where the guard holds throughout it, and
-  for `n + 1` steps where, besides, some move usable from it leaves, whatever the step
-  registers, a class kept for `n` steps (`KeptFor`). The class after a move and a registration
-  is what can stand after the move from the class where the step registers it (`Seen`); where
-  the registrations are listed (`Fin k`), it is `InquirySufficiency.After` (`seen_eq_after`).
-* **Plans.** A plan of `n` moves gives a first move and, for each registration of its step, a
+  for `n + 1` steps where, besides, some move usable from it leaves, whatever value the step
+  keeps, a class kept for `n` steps (`KeptFor`). The class after a move and a value kept is what
+  can stand after the move from the class where the step keeps that value (`Seen`); where the
+  values kept are listed (`Fin k`), it is `InquirySufficiency.After` (`seen_eq_after`).
+* **Plans.** A plan of `n` moves gives a first move and, for each value its step keeps, a
   plan of `n - 1` moves (`Plan`); it keeps the guard from a class where the guard holds there,
   its first move is usable and each continuation keeps the guard from the class seen
   (`Plan.Keeps`). A plan that keeps the guard keeps the class for its length, with no premise
   (`Plan.Keeps.keptFor`). Conversely, a kept class has a plan that keeps it wherever the
-  registrations have choice into plans (`KeptFor.plan_of_choice`,
-  `keptFor_iff_plan_of_choice`). Listed registrations have it with no premise
+  values kept have choice into plans (`KeptFor.plan_of_choice`,
+  `keptFor_iff_plan_of_choice`). Listed values have it with no premise
   (`choiceOver_fin`), so there a class is kept exactly where some plan keeps it
   (`keptFor_iff_plan`).
-* **The boundary.** For arbitrary registrations the converse is exactly choice: kept classes
-  have plans in every process exactly where every relation total on the registrations has a
+* **The boundary.** For arbitrary values kept the converse is exactly choice: kept classes
+  have plans in every process exactly where every relation total on the values has a
   choice function (`plans_iff_choice`). A relation is answered by a two-step keeping problem
-  whose second move must be related to what the first step registered (`Answering`). Choice
+  whose second move must be related to the value the first step kept (`Answering`). Choice
   is a hypothesis of the law where it is needed, never assumed.
 * **Order.** A narrower class is kept wherever a wider one is (`KeptFor.mono`), a longer
-  horizon keeps every shorter one (`KeptFor.shorter`), and a finer registration keeps what a
+  horizon keeps every shorter one (`KeptFor.shorter`), and a finer map of the steps keeps what a
   coarser one keeps, the moves unchanged (`KeptFor.finer`). The empty class is kept for every
   horizon once there is a move (`keptFor_empty`).
 * **Classes kept for every horizon.** A family of classes within the guard, each with a usable
-  move leading, whatever is registered, into the family, keeps each of its classes for every
+  move leading, whatever value is kept, into the family, keeps each of its classes for every
   horizon (`keptFor_of_closed`). A certificate of `Viability` with a move allowed and enabled
   throughout it is such a family: every class within it is kept for every horizon
   (`Certificate.keptFor`), the viability kernel among them (`Kernel.keptFor`).
-* **What is registered matters.** In `Matching`, a hidden bit must be matched by the second
-  move. Registering the bit, the starts are kept for two steps; registering nothing, they are
-  not (`Matching.keeping_matters`).
+* **What a step keeps matters.** In `Matching`, a hidden bit must be matched by the second
+  move. Where the step keeps the bit, the starts are kept for two steps; where it keeps nothing,
+  they are not (`Matching.keeping_matters`).
 * **Joint plans.** Two plans for two parts run together as one plan of pairs (`Plan.zip`). Where
   every joint step projects onto a step of each part, the joint class lies over classes the
   parts' plans keep, and the joint moves are usable throughout (`Plan.Compatible`), the joint
-  plan keeps both guards, each part registering its own step (`Plan.zip_keeps`); and every
+  plan keeps both guards, each part keeping the value of its own step (`Plan.zip_keeps`); and every
   joint plan that keeps a guard has its moves usable throughout
   (`Plan.compatible_of_zip_keeps`). Projection and joint usability are separate conditions:
   neither follows from the parts' plans.
 
-Which guard marks what an activity needs, which moves are allowed and what a step registers are
+Which guard marks what an activity needs, which moves are allowed and what a step keeps are
 supplied with each application. No premise is added; every declaration has an empty axiom
 report.
 -/
@@ -67,13 +68,13 @@ variable {S : Type u} {A : Type v} {O : Type w}
 
 /-! ## Kept for `n` steps -/
 
-/-- What can stand after the move `a` from a configuration of `B`, where the step registers
-`o`. -/
+/-- What can stand after the move `a` from a configuration of `B`, where the step keeps the
+value `o`. -/
 def Seen (P : Process S A) (sense : S → A → S → O) (B : S → Prop) (a : A) (o : O) (t : S) :
     Prop :=
   ∃ s, B s ∧ P.step s a t ∧ sense s a t = o
 
-/-- Where the registrations are listed, what is seen is `InquirySufficiency.After`. -/
+/-- Where the values kept are listed, what is seen is `InquirySufficiency.After`. -/
 theorem seen_eq_after {k : Nat} (P : Process S A) (sense : S → A → S → Fin k) (B : S → Prop)
     (a : A) (o : Fin k) : Seen P sense B a o = InquirySufficiency.After P sense B a o :=
   rfl
@@ -83,8 +84,8 @@ configurations. -/
 def Usable (P : Process S A) (allowed : S → A → Prop) (B : S → Prop) (a : A) : Prop :=
   ∀ s, B s → allowed s a ∧ Enabled P s a
 
-/-- **Kept for `n` steps through what is registered.** The guard holds throughout the class,
-and, with steps to go, some move usable from the class leaves, whatever the step registers, a
+/-- **Kept for `n` steps through what the steps keep.** The guard holds throughout the class,
+and, with steps to go, some move usable from the class leaves, whatever value the step keeps, a
 class kept for one step fewer. -/
 def KeptFor (P : Process S A) (sense : S → A → S → O) (guard : S → Prop)
     (allowed : S → A → Prop) : Nat → (S → Prop) → Prop
@@ -94,7 +95,7 @@ def KeptFor (P : Process S A) (sense : S → A → S → O) (guard : S → Prop)
 
 /-! ## Plans -/
 
-/-- A plan of `n` moves: a first move and, for each registration of its step, a plan of the
+/-- A plan of `n` moves: a first move and, for each value its step keeps, a plan of the
 moves after it. -/
 inductive Plan (A : Type v) (O : Type w) : Nat → Type (max v w) where
   | stop : Plan A O 0
@@ -113,7 +114,7 @@ def Plan.split {n : Nat} (p : Plan A O n) : Plan.Split A O n :=
 /-- The first move of a plan. -/
 def Plan.first {n : Nat} (p : Plan A O (n + 1)) : A := (Plan.split p).1
 
-/-- The plan after the first move, for each registration of its step. -/
+/-- The plan after the first move, for each value its step keeps. -/
 def Plan.rest {n : Nat} (p : Plan A O (n + 1)) : O → Plan A O n := (Plan.split p).2
 
 /-- A plan keeps the guard from a class: the guard holds throughout the class, and, with moves to
@@ -150,16 +151,16 @@ theorem Plan.Keeps.keptFor : {n : Nat} → {p : Plan A O n} → {B : S → Prop}
   | 0, _, _, keeps => keeps
   | _ + 1, p, _, keeps => ⟨keeps.1, p.first, keeps.2.1, fun o => Plan.Keeps.keptFor (keeps.2.2 o)⟩
 
-/-- **Choice over the registrations into `α`**: every relation giving each registration something
+/-- **Choice over the values kept into `α`**: every relation giving each value something
 in `α` is met by one function. A hypothesis where a law needs it, never assumed. -/
 def ChoiceOver (O : Type w) (α : Type z) : Prop :=
   ∀ R : O → α → Prop, (∀ o, ∃ x, R o x) → ∃ f : O → α, ∀ o, R o (f o)
 
-/-- **Listed registrations have choice.** No premise. -/
+/-- **Listed values have choice.** No premise. -/
 theorem choiceOver_fin {k : Nat} {α : Type z} : ChoiceOver (Fin k) α :=
   fun R each => InquirySufficiency.finite_choice R each
 
-/-- **Where the registrations have choice into plans, every kept class has a plan keeping it.** -/
+/-- **Where the values kept have choice into plans, every kept class has a plan keeping it.** -/
 theorem KeptFor.plan_of_choice (choice : ∀ n, ChoiceOver O (Plan A O n)) :
     ∀ (n : Nat) {B : S → Prop}, KeptFor P sense guard allowed n B →
       ∃ p : Plan A O n, p.Keeps P sense guard allowed B
@@ -170,19 +171,19 @@ theorem KeptFor.plan_of_choice (choice : ∀ n, ChoiceOver O (Plan A O n)) :
           (fun o => KeptFor.plan_of_choice choice n (next o)) with
       | ⟨f, keeps⟩ => ⟨.act a f, kept.1, usable, keeps⟩
 
-/-- **Where the registrations have choice into plans, a class is kept exactly where some plan
+/-- **Where the values kept have choice into plans, a class is kept exactly where some plan
 keeps it.** -/
 theorem keptFor_iff_plan_of_choice (choice : ∀ n, ChoiceOver O (Plan A O n)) {n : Nat}
     {B : S → Prop} :
     KeptFor P sense guard allowed n B ↔ ∃ p : Plan A O n, p.Keeps P sense guard allowed B :=
   ⟨KeptFor.plan_of_choice choice n, fun ⟨_, keeps⟩ => keeps.keptFor⟩
 
-/-- **Listed registrations: a class is kept exactly where some plan keeps it.** No premise. -/
+/-- **Listed values: a class is kept exactly where some plan keeps it.** No premise. -/
 theorem keptFor_iff_plan {k : Nat} {listed : S → A → S → Fin k} {n : Nat} {B : S → Prop} :
     KeptFor P listed guard allowed n B ↔ ∃ p : Plan A (Fin k) n, p.Keeps P listed guard allowed B :=
   keptFor_iff_plan_of_choice (fun _ => choiceOver_fin)
 
-/-! ## The boundary: plans for every registration are choice -/
+/-! ## The boundary: plans for every map of the steps are choice -/
 
 /-- The value of an option known to hold one. -/
 theorem get_of_eq_some {β : Type z} : ∀ {a : Option β} (h : a.isSome = true) {x : β}, a = some x →
@@ -194,22 +195,22 @@ namespace Answering
 
 variable {O : Type u} {α : Type u} (R : O → α → Prop)
 
-/-- Each configuration carries a registration and whether the first step was taken; every step
-takes it to its registration with the first step taken. -/
+/-- Each configuration carries a value and whether the first step was taken; every step
+takes it to its value with the first step taken. -/
 def process : Process (O × Bool) (Option α) := ⟨fun s _ t => t = (s.1, true)⟩
 
-/-- A step registers the registration it reaches. -/
+/-- A step keeps the value it reaches. -/
 def keeps : O × Bool → Option α → O × Bool → O := fun _ _ t => t.1
 
 /-- Before the first step every move is allowed; after it, only a value related to the
-registration. -/
+value kept. -/
 def admits : O × Bool → Option α → Prop :=
   fun s a => s.2 = false ∨ ∃ x, a = some x ∧ R s.1 x
 
 /-- The configurations before the first step. -/
 def start : O × Bool → Prop := fun s => s.2 = false
 
-/-- Where each registration has a related value, the starts are kept for two steps. -/
+/-- Where each value kept has a related value, the starts are kept for two steps. -/
 theorem kept (each : ∀ o, ∃ x, R o x) :
     KeptFor process keeps (fun _ => True) (admits R) 2 start :=
   ⟨fun _ _ => trivial, none, fun s held => ⟨Or.inl held, (s.1, true), rfl⟩,
@@ -223,7 +224,7 @@ theorem kept (each : ∀ o, ∃ x, R o x) :
 
 variable {R}
 
-/-- A plan keeping the starts for two steps answers each registration with a related value. -/
+/-- A plan keeping the starts for two steps answers each value kept with a related value. -/
 theorem related {p : Plan (Option α) O 2}
     (keeps : p.Keeps process keeps (fun _ => True) (admits R) start) (o : O) :
     ∃ x, (p.rest o).first = some x ∧ R o x :=
@@ -240,7 +241,7 @@ theorem answered {p : Plan (Option α) O 2}
 
 end Answering
 
-/-- **Kept classes have plans in every process exactly where the registrations have choice.**
+/-- **Kept classes have plans in every process exactly where the values kept have choice.**
 The direction from right to left is `KeptFor.plan_of_choice`; from left to right, a plan for
 `Answering` gives the choice function. -/
 theorem plans_iff_choice {O : Type u} :
@@ -282,7 +283,7 @@ theorem KeptFor.shorter : ∀ {n : Nat} {B : S → Prop},
   | _ + 1, _, kept => match kept.2 with
     | ⟨a, usable, next⟩ => ⟨kept.1, a, usable, fun o => KeptFor.shorter (next o)⟩
 
-/-- **A finer registration keeps what a coarser one keeps**, the moves unchanged: a registration
+/-- **A finer map of the steps keeps what a coarser one keeps**, the moves unchanged: the coarser
 read off the finer one by `forget`. -/
 theorem KeptFor.finer {F : Type z} {fine : S → A → S → F} (forget : F → O)
     (consistent : ∀ s a t, forget (fine s a t) = sense s a t) :
@@ -305,8 +306,8 @@ theorem keptFor_empty (a : A) : ∀ n, KeptFor P sense guard allowed n (fun _ =>
 
 /-! ## Classes kept for every horizon -/
 
-/-- **A family of classes within the guard, each with a usable move leading, whatever is
-registered, into the family, keeps each of its classes for every horizon.** -/
+/-- **A family of classes within the guard, each with a usable move leading, whatever value is
+kept, into the family, keeps each of its classes for every horizon.** -/
 theorem keptFor_of_closed (family : (S → Prop) → Prop)
     (within : ∀ B, family B → ∀ s, B s → guard s)
     (closed : ∀ B, family B → ∃ a, Usable P allowed B a ∧ ∀ o, family (Seen P sense B a o)) :
@@ -317,7 +318,7 @@ theorem keptFor_of_closed (family : (S → Prop) → Prop)
       ⟨within B held, a, usable, fun o => keptFor_of_closed family within closed n (next o)⟩
 
 /-- **A certificate with a move allowed and enabled throughout keeps every class within it for
-every horizon**, whatever is registered. -/
+every horizon**, whatever the steps keep. -/
 theorem Certificate.keptFor {K : S → Prop} (cert : Certificate P guard K) {a : A}
     (usable : Usable P allowed K a) :
     ∀ n {B : S → Prop}, (∀ s, B s → K s) → KeptFor P sense guard allowed n B :=
@@ -328,12 +329,12 @@ theorem Certificate.keptFor {K : S → Prop} (cert : Certificate P guard K) {a :
         | ⟨s, held, step, _⟩ => cert.closed s a t step (inside s held)⟩)
 
 /-- **Where one move is allowed and enabled throughout the kernel, every class within the kernel is
-kept for every horizon**, whatever is registered. -/
+kept for every horizon**, whatever the steps keep. -/
 theorem Kernel.keptFor {a : A} (usable : Usable P allowed (Kernel P guard) a) :
     ∀ n {B : S → Prop}, (∀ s, B s → Kernel P guard s) → KeptFor P sense guard allowed n B :=
   Certificate.keptFor (kernel_certificate P guard) usable
 
-/-! ## What is registered matters -/
+/-! ## What a step keeps matters -/
 
 namespace Matching
 
@@ -380,10 +381,10 @@ def bit : Stage → Bool
   | .done => false
   | .lost => false
 
-/-- Registering the bit of the stage reached. -/
+/-- The step keeps the bit of the stage reached. -/
 def keepsBit : Stage → Bool → Stage → Bool := fun _ _ t => bit t
 
-/-- Registering nothing. -/
+/-- The step keeps nothing. -/
 def keepsNothing : Stage → Bool → Stage → Unit := fun _ _ _ => ()
 
 theorem step_matched : ∀ b, step (.need b) b = .done
@@ -394,7 +395,7 @@ theorem step_unmatched : ∀ a, step (.need (!a)) a = .lost
   | true => rfl
   | false => rfl
 
-/-- After the first move, registering the bit, the class seen is the need with that bit. -/
+/-- After the first move, the step keeping the bit, the class seen is the need with that bit. -/
 theorem seen_start {a o : Bool} {t : Stage} :
     Seen process keepsBit starts a o t → t = .need o
   | ⟨.start _, _, reached, same⟩ =>
@@ -403,7 +404,7 @@ theorem seen_start {a o : Bool} {t : Stage} :
   | ⟨.done, held, _, _⟩ => False.elim held
   | ⟨.lost, held, _, _⟩ => False.elim held
 
-/-- **Registering the bit, the starts are kept for two steps.** -/
+/-- **Where the step keeps the bit, the starts are kept for two steps.** -/
 theorem keepsBit_kept : KeptFor process keepsBit safe (fun _ _ => True) 2 starts :=
   ⟨fun s held => match s, held with
     | .start _, _ => trivial
@@ -419,8 +420,8 @@ theorem keepsBit_kept : KeptFor process keepsBit safe (fun _ _ => True) 2 starts
            (Eq.trans (Eq.trans reached (congrArg (fun z => step z o) (seen_start earlier)))
              (step_matched o)).symm trivial⟩⟩
 
-/-- **Registering nothing, the starts are not kept for two steps**: whatever the second move,
-one of the needs is lost. -/
+/-- **Where the step keeps nothing, the starts are not kept for two steps**: whatever the second
+move, one of the needs is lost. -/
 theorem keepsNothing_not_kept : ¬ KeptFor process keepsNothing safe (fun _ _ => True) 2 starts :=
   fun kept => match kept.2 with
     | ⟨_, _, next⟩ => match (next ()).2 with
@@ -429,8 +430,8 @@ theorem keepsNothing_not_kept : ¬ KeptFor process keepsNothing safe (fun _ _ =>
           (last () (step (.need (!second)) second)
             ⟨.need (!second), ⟨.start (!second), trivial, rfl, rfl⟩, rfl, rfl⟩)
 
-/-- **What is registered matters**: the same process, guard and moves keep the starts for two
-steps registering the hidden bit, and not registering nothing. -/
+/-- **What a step keeps matters**: the same process, guard and moves keep the starts for two
+steps where the step keeps the hidden bit, and not where it keeps nothing. -/
 theorem keeping_matters :
     KeptFor process keepsBit safe (fun _ _ => True) 2 starts ∧
       ¬ KeptFor process keepsNothing safe (fun _ _ => True) 2 starts :=
@@ -444,13 +445,13 @@ section Joint
 
 variable {X Y : Type u} {M N : Type v} {Q R : Type w}
 
-/-- Two plans of one length run together as one plan of pairs, each part continuing by its own
-registration. -/
+/-- Two plans of one length run together as one plan of pairs, each part continuing by the value
+its own step keeps. -/
 def Plan.zip : {n : Nat} → Plan M Q n → Plan N R n → Plan (M × N) (Q × R) n
   | 0, _, _ => .stop
   | _ + 1, p, q => .act (p.first, q.first) fun o => Plan.zip (p.rest o.1) (q.rest o.2)
 
-/-- The joint registration: each part registers its own step. -/
+/-- The joint map of steps: each part keeps the value of its own step. -/
 def jointSense (left : X → M → X → Q) (right : Y → N → Y → R) (πX : S → X) (πY : S → Y) :
     S → M × N → S → Q × R :=
   fun s m t => (left (πX s) m.1 (πX t), right (πY s) m.2 (πY t))

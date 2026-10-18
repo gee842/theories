@@ -4,14 +4,14 @@ import Becoming.Parting
 /-!
 # Contextual runs: the parity bounds and the parts of no whole along the runs of any process
 
-`Becoming.Context` states when claims registered in context glue, with Specker's three boxes and
+`Becoming.Context` states when claims shown in context glue, with Specker's three boxes and
 the Mermin–Peres square as possibilities no context-free reading fits, and `Becoming.Gluing` the
 exact law for parity constraints with its Bell-type bounds (Specker, CHSH, the square, a cycle).
-`Becoming.ParityReadings` reads the registrations along a run of any process as one world
+`Becoming.ParityReadings` reads the contextual systems along a run of any process as one world
 (`Contextual.world`) and states when it is context-free at a step (`Contextual.FreeAt`). This
 module states the instances of those laws on runs, with two readings of a run beside the world of
 readings: a context-free description of the configurations (`val : σ → C → Bool`), whose readings
-over the first `n` steps (`readings`, the record of `Parting.course val r`) are a mixture in the
+over the first `n` steps (`readings`, the prefix of `Parting.course val r`) are a mixture in the
 sense of `Becoming.Gluing`; and the readings a run passes through, as a whole of possibilities
 (`passes`).
 
@@ -27,11 +27,11 @@ sense of `Becoming.Gluing`; and the readings a run passes through, as a whole of
   in its first box meet all three (`specker_in_context`); so these worlds of readings are
   context-free at no step (`chsh_in_context_not_free`, `square_in_context_not_free`,
   `specker_not_free`).
-* **Respecting the possibilities, never context-free.** Every registration of Specker's boxes or of
-  the square respecting the possibilities at a step of a run is context-free there at no step
+* **Respecting the possibilities, never context-free.** Every contextual system of Specker's boxes or
+  of the square respecting the possibilities at a step of a run is context-free there at no step
   (`specker_respecting_not_free`, `square_respecting_not_free`), from the parity contradiction of
   each (`Specker.noGlobal_of_contradiction`, `Square.noGlobal_of_contradiction`). For every parity
-  system with its claims listed without repetition and its contexts listed, no registration
+  system with its claims listed without repetition and its contexts listed, no contextual system
   respecting the contexts' possibilities at a step of a run is context-free there exactly where a
   selection of contexts contradicts (`noGlobal_run_iff`). Some context-free description of a run
   meets every relation of a cycle at every step exactly where the cycle holds an even number of
@@ -41,7 +41,7 @@ sense of `Becoming.Gluing`; and the readings a run passes through, as a whole of
   no run of any process, read context-free, passes through readings whose parts are Specker's
   openings' possibilities or the square's lines' (`specker_not_passes`, `square_not_passes`).
 
-What is not derived: which registrations of an actual unfolding are of these kinds; the quantum
+What is not derived: which contextual systems of an actual unfolding are of these kinds; the quantum
 values beyond the square. No ethical predicate, ranking or axiom occurs.
 -/
 
@@ -168,7 +168,7 @@ theorem specker_not_free (r : Run P) (t : Nat) : ¬ (speckerAt (σ := σ)).FreeA
 
 /-! ## Respecting the possibilities, never context-free -/
 
-/-- **Every registration of Specker's boxes respecting the openings' possibilities at a step of a
+/-- **Every contextual system of Specker's boxes respecting the openings' possibilities at a step of a
 run is context-free there at no step.** -/
 theorem specker_respecting_not_free (X : Contextual σ Specker.Opening Specker.Box Bool)
     (same : X.within = Specker.within) {r : Run P} {t : Nat}
@@ -177,7 +177,7 @@ theorem specker_respecting_not_free (X : Contextual σ Specker.Opening Specker.B
       Specker.local_) Specker.noGlobal_of_contradiction respects
     ((X.glues_iff_freeAt P r t).mpr free)
 
-/-- **Every registration of the square respecting the lines' possibilities at a step of a run is
+/-- **Every contextual system of the square respecting the lines' possibilities at a step of a run is
 context-free there at no step.** -/
 theorem square_respecting_not_free (X : Contextual σ Square.Line Square.Cell Bool)
     (same : X.within = Square.within) {r : Run P} {t : Nat}
@@ -187,8 +187,8 @@ theorem square_respecting_not_free (X : Contextual σ Square.Line Square.Cell Bo
     ((X.glues_iff_freeAt P r t).mpr free)
 
 /-- **The parity law at a step of a run.** With the claims listed without repetition and the
-contexts listed, no registration respecting the contexts' possibilities at a step of a run is
-context-free there exactly where a selection of contexts contradicts. -/
+contexts listed, no contextual system respecting the contexts' possibilities at a step of a run
+is context-free there exactly where a selection of contexts contradicts. -/
 theorem noGlobal_run_iff {K C : Type} [DecidableEq C] (S : ParitySystem K C)
     (distinct : Distinct S.claims) {all : List K} (every : ∀ k, k ∈ all) (r : Run P) (t : Nat) :
     (∀ X : Contextual σ K C Bool, X.within = S.within → X.Respects S.support (r.state t) →
@@ -211,7 +211,7 @@ theorem passes_glued {K C V : Type} (within : K → C → Prop) (val : σ → C 
     (t : Nat) : Glued (restrict within (passes val r)) (val (r.state t)) :=
   glued_of_whole ⟨t, rfl⟩
 
-/-- **What a run allows within a context depends only on the claims the context registers.** -/
+/-- **What a run allows within a context depends only on the claims within the context.** -/
 theorem passes_local {K C V : Type} (within : K → C → Prop) (val : σ → C → V) (r : Run P) :
     Local within (restrict within (passes val r)) :=
   restrict_local within _

@@ -1,25 +1,26 @@
 import Becoming.Frame
 
 /-!
-# Contextual worlds: claims registered in context
+# Contextual worlds: claims shown in context
 
-A `Frame` fixes whether each claim is realized by the configuration alone: what is registered
-of a claim does not depend on what else is registered with it. This module states that as a
-commitment of the representation and what follows where it fails, with no premise.
+A `Frame` fixes whether each claim is realized by the configuration alone: what is shown of a
+claim does not depend on what else is shown with it. This module states that as a commitment of
+the representation and what follows where it fails, with no premise.
 
-A claim is registered in a context (`Contextual`): `within k c` says that context `k` registers
-claim `c`, and `shows s k c` is what `k` registers of `c` at configuration `s`. Nothing is
+A claim is shown in a context (`Contextual`): `within k c` says that claim `c` lies within
+context `k`, and `shows s k c` is what `k` shows of `c` at configuration `s`. Nothing is
 decided and no choice is made.
 
-* **Gluing is agreement where contexts meet.** The registrations at a configuration glue, one
-  context-free reading agreeing with every context (`Contextual.Glues`), exactly where every
-  two contexts registering a claim register it alike (`Contextual.glues_iff_agree`, given a
-  context registering each claim).
-* **Context-free claims are a commitment.** Read with its context, every registration is a claim
-  of a frame (`Contextual.indexed`, `Contextual.indexed_fits`). A frame of context-free claims
-  fits exactly where the registrations glue at every configuration (`Contextual.fitsFree_iff`).
+* **Gluing is agreement where contexts meet.** What the contexts show at a configuration glues,
+  one context-free reading agreeing with every context (`Contextual.Glues`), exactly where every
+  two contexts a claim lies within show it alike (`Contextual.glues_iff_agree`, given a
+  context each claim lies within).
+* **Context-free claims are a commitment.** Read with its context, everything a context shows is
+  a claim of a frame (`Contextual.indexed`, `Contextual.indexed_fits`). A frame of context-free
+  claims fits exactly where what the contexts show glues at every configuration
+  (`Contextual.fitsFree_iff`).
 * **Where the possibilities do not glue, no configuration does.** If what each context can show
-  depends only on the claims it registers (`Local`) and no context-free reading lies within every
+  depends only on the claims within it (`Local`) and no context-free reading lies within every
   context's possibilities (`NoGlobal`), then no configuration respecting them glues
   (`Contextual.not_glues`), and no frame of context-free claims fits a world one of whose
   configurations respects them (`Contextual.no_free_frame`), while the indexed frame does.
@@ -35,11 +36,11 @@ decided and no choice is made.
   way in every opening it belongs to (`Specker.unforced`), no placement fits them all
   (`Specker.noGlobal`), and a world showing a gem in each opening exists (`Specker.respects`).
 * **The Mermin–Peres square** (Mermin 1990, Peres 1990). Nine claims in three rows and three columns, each line
-  registering three; a row's three values have even parity, as do the first two columns', and
+  holding three; a row's three values have even parity, as do the first two columns', and
   the third column's odd. Each line's possibilities are local, every cell can show either value
   in both its lines (`Square.unforced`), and no assignment fits all six lines
-  (`Square.noGlobal`). Two-qubit observables realize the square, so quantum registrations are
-  of this kind: `Becoming.Quantum` (P72q), which imports this module, checks it
+  (`Square.noGlobal`). Two-qubit observables realize the square, so what quantum measurements
+  show is of this kind: `Becoming.Quantum` (P72q), which imports this module, checks it
   (`line_product`, `shows_support`, `support_shown`, `no_context_free_values`).
 
 * **Laws in context.** A law can also hold in a context: a family gives each context its law
@@ -59,13 +60,13 @@ decided and no choice is made.
   `ChangingContext.ends`), and the forgotten law can take a step the given context cannot follow
   (`ChangingContext.erased_not_lifted`).
 So a frame of context-free claims is a commitment of the representation: it holds of a world
-exactly where its registrations glue, and some worlds' registrations cannot glue at any
-configuration. Claims indexed by the context in which they are registered always fit, at the cost
-that a claim registered in two contexts is two claims. Readings of this as wave and particle, as
-the Kochen–Specker theorem, or as values being relations registered in context belong to the
+exactly where what its contexts show glues, and in some worlds it cannot glue at any
+configuration. Claims indexed by the context in which they are shown always fit, at the cost
+that a claim shown in two contexts is two claims. Readings of this as wave and particle, as
+the Kochen–Specker theorem, or as values being relations shown in context belong to the
 study, not to this module.
 
-**Classical sources.** Reading a family of registrations in context as gluing to one context-free
+**Classical sources.** Reading a family of values shown in context as gluing to one context-free
 reading is the sheaf-theoretic account of contextuality (Abramsky and Brandenburger 2011), and
 possibilities that are the parts of no whole are its logical contextuality; the parity form of the
 obstruction, its cohomological reading and the magic-square games are credited in
@@ -80,13 +81,13 @@ open Generative
 
 universe u v w u' u''
 
-/-- Claims registered in contexts: which claims each context registers, and what it registers of
-each at each configuration. -/
+/-- Claims shown in contexts: which claims lie within each context, and what it shows of each at
+each configuration. -/
 structure Contextual (S : Type u) (K : Type v) (C : Type w) (V : Type u') where
   within : K → C → Prop
   shows : S → K → C → V
 
-/-- What each context can show depends only on the claims it registers. -/
+/-- What each context can show depends only on the claims within it. -/
 def Local {K : Type v} {C : Type w} {V : Type u'} (within : K → C → Prop)
     (support : K → (C → V) → Prop) : Prop :=
   ∀ k v v', (∀ c, within k c → v c = v' c) → support k v → support k v'
@@ -95,8 +96,8 @@ def Local {K : Type v} {C : Type w} {V : Type u'} (within : K → C → Prop)
 def NoGlobal {K : Type v} {C : Type w} {V : Type u'} (support : K → (C → V) → Prop) : Prop :=
   ¬ ∃ v : C → V, ∀ k, support k v
 
-/-- No context forces a claim: every claim can show every value in every context registering
-it. -/
+/-- No context forces a claim: every claim can show every value in every context it lies
+within. -/
 def Unforced {K : Type v} {C : Type w} {V : Type u'} (within : K → C → Prop)
     (support : K → (C → V) → Prop) : Prop :=
   ∀ k c b, within k c → ∃ v, support k v ∧ v c = b
@@ -107,12 +108,12 @@ variable {S : Type u} {K : Type v} {C : Type w} {V : Type u'} (X : Contextual S 
 
 /-! ## Gluing -/
 
-/-- At `s` the registrations glue: one context-free reading agrees with every context on every
-claim it registers. -/
+/-- At `s` what the contexts show glues: one context-free reading agrees with every context on
+every claim within it. -/
 def Glues (s : S) : Prop :=
   ∃ v : C → V, ∀ k c, X.within k c → X.shows s k c = v c
 
-/-- At `s` every two contexts registering a claim register it alike. -/
+/-- At `s` every two contexts a claim lies within show it alike. -/
 def Agree (s : S) : Prop :=
   ∀ k k' c, X.within k c → X.within k' c → X.shows s k c = X.shows s k' c
 
@@ -120,7 +121,7 @@ theorem Glues.agree {X : Contextual S K C V} {s : S} (glues : X.Glues s) : X.Agr
   match glues with
   | ⟨_, hv⟩ => fun k k' c w w' => (hv k c w).trans (hv k' c w').symm
 
-/-- **The registrations glue exactly where contexts agree where they meet.** -/
+/-- **What the contexts show glues exactly where contexts agree where they meet.** -/
 theorem glues_iff_agree (home : C → K) (covers : ∀ c, X.within (home c) c) (s : S) :
     X.Glues s ↔ X.Agree s :=
   ⟨Glues.agree, fun agree =>
@@ -128,21 +129,21 @@ theorem glues_iff_agree (home : C → K) (covers : ∀ c, X.within (home c) c) (
 
 /-! ## Frames -/
 
-/-- Read with its context, every registration is a claim: a context, a claim and a value. -/
+/-- Read with its context, everything shown is a claim: a context, a claim and a value. -/
 def indexed {A : Type u''} (P : Process S A) : Frame S A (K × C × V) :=
   ⟨P, fun s q => X.within q.1 q.2.1 ∧ X.shows s q.1 q.2.1 = q.2.2⟩
 
-/-- The indexed frame fits every registration. -/
+/-- The indexed frame fits everything shown. -/
 theorem indexed_fits {A : Type u''} (P : Process S A) (s : S) (k : K) (c : C) (b : V) :
     (X.indexed P).realized s (k, c, b) ↔ X.within k c ∧ X.shows s k c = b :=
   Iff.rfl
 
 /-- A frame of context-free claims, a claim with a value, fits when it agrees with every context
-on every claim the context registers. -/
+on every claim within the context. -/
 def FitsFree {A : Type u''} (F : Frame S A (C × V)) : Prop :=
   ∀ s k c b, X.within k c → (X.shows s k c = b ↔ F.realized s (c, b))
 
-/-- **A frame of context-free claims fits exactly where the registrations glue at every
+/-- **A frame of context-free claims fits exactly where what the contexts show glues at every
 configuration.** -/
 theorem fitsFree_iff {A : Type u''} (P : Process S A) (home : C → K)
     (covers : ∀ c, X.within (home c) c) :
@@ -186,7 +187,7 @@ section Wholes
 variable {K : Type v} {C : Type w} {V : Type u'}
 
 /-- What a whole of possibilities allows within a context: the readings some possibility agrees
-with on every claim the context registers. -/
+with on every claim within the context. -/
 def restrict (within : K → C → Prop) (W : (C → V) → Prop) (k : K) (u : C → V) : Prop :=
   ∃ v, W v ∧ ∀ c, within k c → v c = u c
 
@@ -202,13 +203,13 @@ theorem glued_of_whole {within : K → C → Prop} {W : (C → V) → Prop} {v :
     Glued (restrict within W) v :=
   fun _ => ⟨v, h, fun _ _ => rfl⟩
 
-/-- What a whole allows within a context depends only on the claims the context registers. -/
+/-- What a whole allows within a context depends only on the claims within it. -/
 theorem restrict_local (within : K → C → Prop) (W : (C → V) → Prop) :
     Local within (restrict within W) :=
   fun _ _ _ same ⟨v, hv, agree⟩ => ⟨v, hv, fun c w => (agree c w).trans (same c w)⟩
 
 /-- **Possibilities with no context-free reading, where some context allows something, are the
-parts of no whole**, whatever each context registers: locality is not used. Where nothing is
+parts of no whole**, whatever lies within each context: locality is not used. Where nothing is
 allowed anywhere, the empty whole has these parts. -/
 theorem no_whole {within : K → C → Prop} {support : K → (C → V) → Prop}
     (none : NoGlobal support) (some : ∃ k u, support k u) :
@@ -245,7 +246,7 @@ def second : Opening → Box
   | .bc => .c
   | .ca => .a
 
-/-- An opening registers its two boxes. -/
+/-- An opening holds its two boxes. -/
 def within (k : Opening) (x : Box) : Prop := x = first k ∨ x = second k
 
 /-- Exactly one of the two opened holds the gem. -/
@@ -344,7 +345,7 @@ def i0 : Fin 3 := ⟨0, by decide⟩
 def i1 : Fin 3 := ⟨1, by decide⟩
 def i2 : Fin 3 := ⟨2, by decide⟩
 
-/-- A line registers three cells. -/
+/-- A line holds three cells. -/
 inductive Line where
   | row (i : Fin 3)
   | column (j : Fin 3)

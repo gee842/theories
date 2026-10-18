@@ -1,0 +1,72 @@
+# Revision.lean: the registration at each configuration → its lumping (`alike s`); Revising's registration side → the link process (`linkProcess`, row 7′); the supplied target of correction kept (local sense); the namespace `Registration` is a name, in the names table.
+### lean:Revision
+= S1
+- # Selection when the registration itself changes
+-
+- One Process supplies actual changes of configuration. A registration at each configuration
+- reads distinctions within that unfolding;
++ # Selection when the lumping itself changes
++
++ One Process supplies actual changes of configuration. A lumping at each configuration
++ (`alike s`) draws distinctions within that unfolding;
+= S1
+- A history of the registrations actually made is different
++ A history of the lumpings actually drawn is different
+= S1
+- A finite Process instance changes its registration
+- and the availability
++ A finite Process instance changes its lumping
++ and the availability
+= S1 Revising's registration side is its link process (`linkProcess`)
+- That instance is a registration process run jointly with its stock,
++ That instance is a link process run jointly with its stock,
+= S1
+- reconstruction and correction is executable exactly where the registration admits it and the
++ reconstruction and correction is executable exactly where the link process admits it and the
+= S1
+- covered correction can be blocked by the registration (`Revising.covered_not_enacted`)
++ covered correction can be blocked by the link process (`Revising.covered_not_enacted`)
+= S1
+- /-- The new registration preserves distinctions of the old one. -/
++ /-- The new lumping preserves distinctions of the old one. -/
+= S3
+- /-- This includes the existing web registration without equating propositions by propext. -/
++ /-- This includes the lumping through a web's couplings without equating propositions by propext. -/
+= S1 the retention sense of record kept
+- /-- The observations actually made through this step. Reading it as a usable present record
++ /-- Alike through every lumping actually drawn up to this step. Reading it as a usable present record
+= S1
+- /-- Registering through a jointly retained old and new reading preserves both. -/
++ /-- Lumping through a jointly retained old and new reading preserves both. -/
+= S1
+- rebuilding consumes one and changes registration;
++ rebuilding consumes one and changes the link;
+= S1
+- /-- Old registration cannot distinguish the two reconstruction choices,
++ /-- The old lumping cannot distinguish the two reconstruction choices,
+= S2
+- It observes no hidden target
+- bit.
++ It reads no hidden target
++ bit.
+= S1
+- /-- The selected reconstruction forms a finer registration.
++ /-- The selected reconstruction forms a finer lumping.
+= S1
+- /-! ### Revising is a registration process run jointly with its stock -/
++ /-! ### Revising is a link process run jointly with its stock -/
+= S1
+- /-- The registration side: the link (first) and the response (second). -/
++ /-- The link side: the link (first) and the response (second). -/
+= S1
+- /-- **Revising is the stock process run jointly with the registration, step for step.** -/
++ /-- **Revising is the stock process run jointly with the link process, step for step.** -/
+= S1
+- is executable exactly where the registration side admits it and the stock covers it. -/
++ is executable exactly where the link side admits it and the stock covers it. -/
+= S1
+- /-- Stock does not enact: a correction the stock covers, which the registration blocks. -/
++ /-- Stock does not enact: a correction the stock covers, which the link process blocks. -/
+= S1
+- /-- Registration does not enact:
++ /-- The link does not enact:

@@ -19,25 +19,25 @@ theorem names, how the three meet. No name is changed.
   `Becoming.Loops` for every strength array of the law (`ExchangeLaw.RespondsTo.couples`) and a
   route of length one (`ExchangeLaw.RespondsTo.upstream`).
 * **Only what couples into a formation responds.** For a law reading, for each formation outside
-  the part, only what it registers (`ExchangeLaw.Through`): a level it neither depends on nor
-  observes is coupled with strength zero (`ExchangeLaw.Through.respondsWithin_uncoupled`), so a
-  response comes from a condition it registers (`ExchangeLaw.Through.couples_of_respondsTo`),
-  and is a route of reading in every schedule covering what it registers
+  the part, only what couples into it (`ExchangeLaw.Through`): a level that couples into it
+  neither by threshold nor by level is coupled with strength zero (`ExchangeLaw.Through.respondsWithin_uncoupled`), so a
+  response comes from a condition that couples into it (`ExchangeLaw.Through.couples_of_respondsTo`),
+  and is a route of reading in every schedule covering what couples into it
   (`ExchangeLaw.Through.reads_of_respondsTo`, `ExchangeLaw.Through.couples_readCouplings`) and a
   route of the law's strengths restricted to that schedule
   (`ExchangeLaw.Through.upstream_restrictInto`).
 * **By threshold, only a crossing passes.** A change of one level that leaves its need met
-  alike is a response by level (`ExchangeLaw.RespondsByLevel`). Where the formation does not
-  observe the condition, no law reading through its registration responds to it by level
+  alike is a response by level (`ExchangeLaw.RespondsByLevel`). Where the condition does not
+  couple into the formation by level, no law reading through its couplings responds to it by level
   (`ExchangeLaw.Through.not_respondsByLevel`): through the threshold only a crossing passes.
-* **By threshold, a crossing passes.** A response to a condition the formation does not observe
-  is a crossing of its need (`ExchangeLaw.Through.crosses_of_unobserved`). Where the formation
+* **By threshold, a crossing passes.** A response to a condition that does not couple into the
+  formation by level is a crossing of its need (`ExchangeLaw.Through.crosses_of_unobserved`). Where the formation
   requires at a step exactly that one condition, with a positive need, a law reading through its
-  registration responds to a crossing there, at every condition (`thresholdLaw`,
+  couplings responds to a crossing there, at every condition (`thresholdLaw`,
   `thresholdLaw_through`, `thresholdLaw_respondsByCrossing`, `crossing_passes`). The 18 October
   continuation (N3) added this half.
 * **Among several conditions, a crossing passes through the conjunction.** A response to a
-  condition the formation does not observe changes its admission at that step, at or before the
+  condition that does not couple into the formation by level changes its admission at that step, at or before the
   step of the exchange (`ExchangeLaw.Through.admission_changes_of_unobserved`), so it happens only
   where the formation's other requirements there are met (`ExchangeLaw.Through.others_met_of_unobserved`).
   A response by a crossing needs a positive requirement (`ExchangeLaw.RespondsByCrossing.requires_pos`).
@@ -47,20 +47,20 @@ theorem names, how the three meet. No name is changed.
   `admissionLaw_through`, `admissionLaw_respondsByCrossing`, `crossing_passes_iff`); a listed
   support decides admission (`admitsDecidableOfSupport`, `crossing_passes_of_support`). The second
   18 October continuation (N4) added this.
-* **By level, the level passes.** Where it observes the condition, a law reading through its
-  registration responds to it by level at every step and condition (`levelLaw`,
-  `levelLaw_through`, `levelLaw_respondsByLevel`). So observing is exactly where a level can couple
+* **By level, the level passes.** Where the condition couples into it by level, a law reading
+  through its couplings responds to it by level at every step and condition (`levelLaw`,
+  `levelLaw_through`, `levelLaw_respondsByLevel`). So coupling by level (`obs`) is exactly where a level can couple
   into a formation within its threshold (`not_not_obs_iff_respondsByLevel`).
 
 **Reading (the AI's).** `obs` is not a second kind of relation beside the couplings of
 `Becoming.Loops` and the readings of `Becoming.Observation`: it marks where a level can couple
 into a formation by level, as `Web.DependsOn` marks where it can couple by threshold (a crossing
-of the need), and every coupling a response forces lies within them. "Coupled by level" names this exactly; registration
-bounds coupling, and a law's actual responses are its couplings. The double negation of the last
+of the need), and every coupling a response forces lies within them. "Coupled by level" names this exactly; what can
+couple in bounds what responds, and a law's actual responses are its couplings. The double negation of the last
 equivalence is the constructive form: the converse shows that a level coupling is not left out.
 
-What is not derived: which law the rest follows, or whether an observed level is in fact
-responded to (a law reading through registration may ignore what it registers); a crossing
+What is not derived: which law the rest follows, or whether a level coupled by level is in fact
+responded to (a law reading through the couplings may ignore what couples in); a crossing
 passing where the formation's admission at the step is not decided (the decision is the
 witness's one input, and a law that responds reads no more than it); a strength's size beyond
 being positive. The representation commits to discrete steps and natural amounts. No
@@ -149,8 +149,9 @@ section Through
 variable {law : ExchangeLaw F C} {W : Web F C} {obs : F → C → Prop} {part : F → Bool}
   {t s : Nat} {h : F} {c d : C}
 
-/-- **An unregistered level is coupled with strength zero.** For a law reading through
-registration, a level that a formation outside the part neither depends on nor observes is
+/-- **A level that does not couple in is coupled with strength zero.** For a law reading through
+the couplings, a level that couples into a formation outside the part neither by threshold nor by
+level is
 coupled into its exchange with every condition, at every step, with strength zero. -/
 theorem ExchangeLaw.Through.respondsWithin_uncoupled (through : law.Through W obs part)
     (out : part h = false) (uncoupled : ¬ W.CoupledInto obs h d) :
@@ -173,7 +174,7 @@ theorem ExchangeLaw.Through.couples_of_respondsTo (through : law.Through W obs p
     ExchangeLaw.respondsWithin_zero_iff.mp (through.respondsWithin_uncoupled out uncoupled)
       responds
 
-/-- **A response is read in every schedule covering registration.** -/
+/-- **A response is read in every schedule covering what couples in.** -/
 theorem ExchangeLaw.Through.reads_of_respondsTo {reads : Nat → F → C → Bool}
     (through : law.Through W obs part)
     (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → reads t h d = true)
@@ -183,7 +184,7 @@ theorem ExchangeLaw.Through.reads_of_respondsTo {reads : Nat → F → C → Boo
   | false => absurd responds (ExchangeLaw.respondsWithin_zero_iff.mp
       ((through.readsAt cover).respondsWithin_unread out unread c s))
 
-/-- **A response is a route of reading.** For a law reading through registration and a schedule
+/-- **A response is a route of reading.** For a law reading through the couplings and a schedule
 covering it, a response of a formation present outside the part, to a listed level up to the
 step, is a coupling of the routes of reading of `Becoming.Observation`. -/
 theorem ExchangeLaw.Through.couples_readCouplings {reads : Nat → F → C → Bool} {cs : List C}
@@ -197,7 +198,7 @@ theorem ExchangeLaw.Through.couples_readCouplings {reads : Nat → F → C → B
      (through.reads_of_respondsTo cover out responds) ▸ Nat.one_pos⟩
 
 /-- **A response is a route of the strengths restricted to what is read.** For a law reading
-through registration, a schedule covering it and any strength array of the law, a response of a
+through the couplings, a schedule covering it and any strength array of the law, a response of a
 formation present outside the part, to a listed level up to the step, is a route of length one of
 the strengths restricted to the schedule. -/
 theorem ExchangeLaw.Through.upstream_restrictInto {reads : Nat → F → C → Bool} {cs : List C}
@@ -209,15 +210,15 @@ theorem ExchangeLaw.Through.upstream_restrictInto {reads : Nat → F → C → B
     Upstream cs part (restrictInto (fun t h _ _ d => reads t h d) k) present d c :=
   responds.upstream ((through.readsInto cover).restrict strengths) mem out le listed
 
-/-- Histories with equal levels at a step register alike there. -/
+/-- Histories with equal levels at a step are alike there through the couplings. -/
 theorem Web.alikeThrough_of_levels {g : F} {l l' : Nat → C → Nat} {s' : Nat}
     (same : ∀ e, l s' e = l' s' e) : W.AlikeThrough obs g l l' s' :=
   ⟨⟨fun admits e requires => (same e) ▸ admits e requires,
     fun admits e requires => (same e).symm ▸ admits e requires⟩,
    fun e _ => same e⟩
 
-/-- **By threshold, only a crossing passes.** For a law reading through registration, a formation
-outside the part that does not observe a condition is not responded to by level: a change of that
+/-- **By threshold, only a crossing passes.** For a law reading through the couplings, a formation
+outside the part into which a condition does not couple by level is not responded to by level: a change of that
 level leaving its need met alike changes nothing it exchanges. -/
 theorem ExchangeLaw.Through.not_respondsByLevel [DecidableEq C] (through : law.Through W obs part)
     (out : part h = false) (unobserved : ¬ obs h d) : ¬ law.RespondsByLevel W t h c s d :=
@@ -239,12 +240,12 @@ section Witness
 
 variable {W : Web F C} {obs : F → C → Prop} {part : F → Bool} {d : C}
 
-/-- **A law taking the level it observes.** Each marked formation takes from every condition the
+/-- **A law taking the level that couples in by level.** Each marked formation takes from every condition the
 level of `d` at the step; nothing else is exchanged. -/
 def levelLaw (mark : F → Bool) (d : C) : ExchangeLaw F C :=
   ⟨fun t h l _ => bif mark h then l t d else 0, fun _ _ _ _ => 0⟩
 
-/-- **The law taking an observed level reads through registration.** -/
+/-- **The law taking a level coupled by level reads through the couplings.** -/
 theorem levelLaw_through {mark : F → Bool} (marked : ∀ h, mark h = true → obs h d) :
     (levelLaw mark d).Through W obs part :=
   fun h _ t l l' alike _ => by
@@ -258,7 +259,7 @@ theorem levelLaw_through {mark : F → Bool} (marked : ∀ h, mark h = true → 
 def raisedAt [DecidableEq C] (n t : Nat) (d : C) : Nat → C → Nat :=
   fun s e => if s = t ∧ e = d then n + 1 else n
 
-/-- **The law taking an observed level responds to it by level** at every step and condition,
+/-- **The law taking a level coupled by level responds to it by level** at every step and condition,
 for every marked formation. -/
 theorem levelLaw_respondsByLevel [DecidableEq C] {mark : F → Bool} {h : F} (marked : mark h = true)
     (t : Nat) (c : C) : (levelLaw mark d).RespondsByLevel W t h c t d :=
@@ -277,9 +278,9 @@ theorem levelLaw_respondsByLevel [DecidableEq C] {mark : F → Bool} {h : F} (ma
      (Nat.le_of_eq (one.symm.trans (congr (congrArg gap before) after).symm))
      (Nat.le_add_right _ (gap 0 0)))⟩
 
-/-- **Observing is exactly where a level can couple into a formation within its threshold.** For
-a formation outside the part: it is not refuted that it observes the condition exactly where it
-is not refuted that some law reading through its registration responds to the condition by
+/-- **Coupling by level is exactly where a level can couple into a formation within its threshold.**
+For a formation outside the part: it is not refuted that the condition couples into it by level
+exactly where it is not refuted that some law reading through its couplings responds to the condition by
 level. -/
 theorem not_not_obs_iff_respondsByLevel [DecidableEq C] [DecidableEq F] {h : F}
     (out : part h = false) :
@@ -322,8 +323,8 @@ theorem ExchangeLaw.RespondsByCrossing.respondsTo (responds : law.RespondsByCros
   let ⟨l, l', off, _, _, _, pos⟩ := responds
   ⟨l, l', off, pos⟩
 
-/-- **A response to a condition not observed is a crossing.** For a law reading through
-registration and a formation outside the part that does not observe `d`: wherever two histories
+/-- **A response to a condition not coupled in by level is a crossing.** For a law reading through
+the couplings and a formation outside the part into which `d` does not couple by level: wherever two histories
 differing at most in the level of `d` at `s` give a positive exchange gap, the formation is not
 refuted to require `d` at `s`, and the two levels do not meet its need alike. -/
 theorem ExchangeLaw.Through.crosses_of_unobserved [DecidableEq C] (through : law.Through W obs part)
@@ -359,7 +360,7 @@ def thresholdLaw (W : Web F C) (mark : F → Bool) (d : C) (T : Nat) : ExchangeL
       (bif Nat.beq t T then (bif Nat.ble (W.need t h d) (l t d) then 1 else 0) else 0) else 0,
    fun _ _ _ _ => 0⟩
 
-/-- **The law taking a crossing reads through registration** where every marked formation
+/-- **The law taking a crossing reads through the couplings** where every marked formation
 requires at `T` exactly the one condition `d`. -/
 theorem thresholdLaw_through {mark : F → Bool} {T : Nat}
     (sole : ∀ h, mark h = true → ∀ e, W.requires T h e ↔ e = d) :
@@ -420,9 +421,9 @@ theorem thresholdLaw_respondsByCrossing [DecidableEq C] {mark : F → Bool} (mar
      (Nat.le_add_right _ (gap 0 0)))⟩
 
 /-- **By threshold, a crossing passes.** For a formation outside the part requiring at `t`
-exactly the one condition `d`, with a positive need: some law reading through its registration
-responds to a crossing of its need at `t`, at every condition. Conversely, where the formation
-does not observe `d`, a response of any law reading through registration to `d` is a crossing
+exactly the one condition `d`, with a positive need: some law reading through its couplings
+responds to a crossing of its need at `t`, at every condition. Conversely, where `d` does not
+couple into the formation by level, a response of any law reading through the couplings to `d` is a crossing
 (`ExchangeLaw.Through.crosses_of_unobserved`). -/
 theorem crossing_passes [DecidableEq C] [DecidableEq F]
     (sole : ∀ e, W.requires t h e ↔ e = d) (positive : 0 < W.need t h d) :
@@ -441,8 +442,8 @@ section Gate
 variable {law : ExchangeLaw F C} {W : Web F C} {obs : F → C → Prop} {part : F → Bool}
   {t s : Nat} {h : F} {c d : C}
 
-/-- **A response to a condition not observed changes admission.** For a law reading through
-registration and a formation outside the part that does not observe `d`: wherever two histories
+/-- **A response to a condition not coupled in by level changes admission.** For a law reading through
+the couplings and a formation outside the part into which `d` does not couple by level: wherever two histories
 differing at most in the level of `d` at `s` give a positive exchange gap, `s` is at most the
 step of the exchange, and the two histories do not admit the formation alike at `s`. -/
 theorem ExchangeLaw.Through.admission_changes_of_unobserved (through : law.Through W obs part)
@@ -500,7 +501,7 @@ def admissionLaw [DecidableEq F] (W : Web F C) (g : F) (T : Nat)
       (bif Nat.ble T t then (bif @decide _ (dec (l T)) then 1 else 0) else 0) else 0,
    fun _ _ _ _ => 0⟩
 
-/-- **The law taking a decided admission reads through registration.** -/
+/-- **The law taking a decided admission reads through the couplings.** -/
 theorem admissionLaw_through [DecidableEq F] {g : F} {T : Nat}
     (dec : ∀ l : C → Nat, Decidable (W.Admits l T g)) :
     (admissionLaw W g T dec).Through W obs part :=
@@ -565,7 +566,7 @@ theorem admissionLaw_respondsByCrossing [DecidableEq C] [DecidableEq F] {g : F} 
      (Nat.le_add_right _ (gap 0 0)))⟩
 
 /-- **Among several conditions, a crossing passes exactly where it is required.** For a
-formation whose admission at `T` is decided: some law reading through registration responds to a
+formation whose admission at `T` is decided: some law reading through the couplings responds to a
 crossing of the level of `d` at `T`, across every step from `T` on and at every condition, exactly
 where the formation requires `d` at `T` with a positive need. -/
 theorem crossing_passes_iff [DecidableEq C] [DecidableEq F] {g : F} {T : Nat}

@@ -6,40 +6,40 @@ import Becoming.Quantum
 # Parity readings: where the readings of one unfolding glue, for parity and for quantum states
 
 `Becoming.Readings` reads every contextual system along a run as one world: each claim read with
-its context is a relatum, active exactly where its context registers it with that value
+its context is a relatum, active exactly where its context shows it with that value
 (`Contextual.world`). `Becoming.Context` showed that a frame of context-free claims fits exactly
-where the registrations glue at every configuration (`Contextual.fitsFree_iff`). `Becoming.Gluing`
+where what the contexts show glues at every configuration (`Contextual.fitsFree_iff`). `Becoming.Gluing`
 gives the exact law for parity constraints (`ParitySystem.global_or_contradicts`), and
-`Becoming.Quantum` the quantum registrations of the Mermin–Peres square
+`Becoming.Quantum` the quantum contextual systems of the Mermin–Peres square
 (`Square.no_context_free_values`). This module states those laws about the world of readings along
 a run of any process and about the frames of that process, and proves them through them.
 
-* **Gluing is the world being context-free at a step.** At a step of a run, the registrations glue
-  exactly where the active relata of the world of readings are read off one context-free
+* **Gluing is the world being context-free at a step.** At a step of a run, what the contexts show
+  glues exactly where the active relata of the world of readings are read off one context-free
   assignment (`Contextual.glues_iff_freeAt`): every active claim `(k, c, b)` has the value `b`
   the assignment gives `c`.
 * **The parity law on the world.** For a parity system with its claims listed without repetition
   and its contexts listed, some world of readings respecting the contexts' possibilities at a
   step is context-free there exactly where no selection of contexts contradicts
   (`ParitySystem.world_free_iff`). Where a selection of `m` contexts contradicts, a world of
-  readings context-free at a step registers at most `m − 1` of them within their possibilities
-  there (`ParitySystem.world_met_le`); readings in context register all `m`
+  readings context-free at a step meets at most `m − 1` of them within their possibilities
+  there (`ParitySystem.world_met_le`); readings in context meet all `m`
   (`ParitySystem.indexed_met`, cited).
 * **The parity law on frames.** For every process, some contextual system respecting the
   possibilities at a configuration is fitted by a frame of context-free claims of that process
   exactly where no selection contradicts (`ParitySystem.freeFrame_iff`).
-* **Quantum readings never glue.** A registration of the square is quantum at a configuration
-  where each line registers its three cells and what it shows on them is shown jointly by a
-  nonzero state vector (`Square.QuantumAt`). Quantum registrations exist at every configuration
-  (`Square.quantum_at`); where a registration is quantum it does not glue
+* **Quantum readings never glue.** A contextual system of the square is quantum at a
+  configuration where what each line shows on its three cells is shown jointly by a
+  nonzero state vector (`Square.QuantumAt`). Quantum contextual systems exist at every configuration
+  (`Square.quantum_at`); where a contextual system is quantum it does not glue
   (`Square.QuantumAt.not_glues`), so the world of readings along every run is context-free at no
   step where it is quantum (`Square.QuantumAt.not_freeAt`), and no frame of context-free claims of
-  any process fits it (`Square.QuantumAt.no_free_frame`), while the indexed frame fits every
-  registration (`Contextual.indexed_fits`, cited). So along every run of every process, the
+  any process fits it (`Square.QuantumAt.no_free_frame`), while the indexed frame fits everything
+  shown (`Contextual.indexed_fits`, cited). So along every run of every process, the
   quantum readings are one world (`Contextual.world`) that no context-free description fits
   (`Square.quantum_readings`).
 
-What is not derived: which registrations of an actual unfolding are parity-constrained or quantum;
+What is not derived: which contextual systems of an actual unfolding are parity-constrained or quantum;
 the quantum values beyond the square (Tsirelson's bound is not stated); the cycle law of
 `Becoming.Gluing` on a base object, since no relation of the base is a cycle of equal-or-different
 relations between claims without supplying one. Readings of this as the context carrying what no
@@ -60,7 +60,7 @@ context-free assignment. -/
 def FreeAt (P : Process S A) (r : Run P) (t : Nat) : Prop :=
   ∃ v : C → V, ∀ k c b, (X.world P r).web.active t (k, c, b) → v c = b
 
-/-- **The registrations glue at a step of a run exactly where the world of readings is
+/-- **What the contexts show glues at a step of a run exactly where the world of readings is
 context-free there.** -/
 theorem glues_iff_freeAt (P : Process S A) (r : Run P) (t : Nat) :
     X.Glues (r.state t) ↔ X.FreeAt P r t :=
@@ -74,7 +74,7 @@ namespace ParitySystem
 
 variable {K C σ A : Type}
 
-/-- Whether an assignment meets a context depends only on the claims the context registers. -/
+/-- Whether an assignment meets a context depends only on the claims within the context. -/
 theorem met_congr {S : ParitySystem K C} {k : K} {u u' : C → Bool}
     (same : ∀ c, S.within k c → u c = u' c) : S.met k u = S.met k u' :=
   have values : S.value k u = S.value k u' :=
@@ -98,7 +98,7 @@ theorem world_free_iff [DecidableEq C] (S : ParitySystem K C) (distinct : Distin
     | .inr ⟨ks, _, contra⟩ => absurd ⟨ks, contra⟩ none⟩
 
 /-- **A Bell-type bound on the world of readings.** Where a selection of `m` contexts contradicts,
-a world of readings that is context-free at a step registers at most `m − 1` of them within their
+a world of readings that is context-free at a step meets at most `m − 1` of them within their
 possibilities there. -/
 theorem world_met_le {S : ParitySystem K C} {ks : List K} (contra : S.Contradicts ks)
     {X : Contextual σ K C Bool} (same : X.within = S.within) {P : Process σ A} {r : Run P}
@@ -113,7 +113,7 @@ theorem world_met_le {S : ParitySystem K C} {ks : List K} (contra : S.Contradict
       (met_le contra v)
 
 /-- **The parity law on frames.** For every process, with the claims listed without repetition,
-the contexts listed and every claim registered by some context, some contextual system respecting
+the contexts listed and every claim within some context, some contextual system respecting
 the possibilities at a configuration is fitted by a frame of context-free claims of that process
 exactly where no selection of contexts contradicts. -/
 theorem freeFrame_iff [DecidableEq C] (S : ParitySystem K C) (distinct : Distinct S.claims)
@@ -140,13 +140,13 @@ namespace Square
 
 variable {σ A : Type}
 
-/-- A registration of the square is quantum at a configuration where each line registers its
-three cells and what it shows on them is shown jointly by a nonzero state vector. -/
+/-- A contextual system of the square is quantum at a configuration where what each line shows on
+its three cells is shown jointly by a nonzero state vector. -/
 def QuantumAt (X : Contextual σ Line Cell Bool) (s : σ) : Prop :=
   (∀ l q, X.within l (at_ l q)) ∧
     ∀ l, ∃ v : Fin 4 → Int, (¬ ∀ k, v k = 0) ∧ ∀ q, Shows v (at_ l q) (X.shows s l (at_ l q))
 
-/-- **Quantum registrations do not glue.** -/
+/-- **Quantum contextual systems do not glue.** -/
 theorem QuantumAt.not_glues {X : Contextual σ Line Cell Bool} {s : σ} (quantum : QuantumAt X s) :
     ¬ X.Glues s :=
   fun ⟨f, hf⟩ => no_context_free_values ⟨f, fun l => match quantum.2 l with
@@ -154,13 +154,13 @@ theorem QuantumAt.not_glues {X : Contextual σ Line Cell Bool} {s : σ} (quantum
         Eq.subst (motive := fun b => Shows v (at_ l q) b) (hf l (at_ l q) (quantum.1 l q))
           (shows q)⟩⟩
 
-/-- **Along every run, the world of readings is context-free at no step where the registration
-is quantum.** -/
+/-- **Along every run, the world of readings is context-free at no step where the contextual
+system is quantum.** -/
 theorem QuantumAt.not_freeAt {X : Contextual σ Line Cell Bool} {P : Process σ A} {r : Run P}
     {t : Nat} (quantum : QuantumAt X (r.state t)) : ¬ X.FreeAt P r t :=
   fun free => quantum.not_glues ((X.glues_iff_freeAt P r t).mpr free)
 
-/-- **No frame of context-free claims of any process fits a registration quantum at some
+/-- **No frame of context-free claims of any process fits a contextual system quantum at some
 configuration.** -/
 theorem QuantumAt.no_free_frame {X : Contextual σ Line Cell Bool} {s₀ : σ}
     (quantum : QuantumAt X s₀) (P : Process σ A) :
@@ -169,10 +169,10 @@ theorem QuantumAt.no_free_frame {X : Contextual σ Line Cell Bool} {s₀ : σ}
     ((X.fitsFree_iff P (fun c => Line.row c.1) (fun c => quantum.1 (Line.row c.1) c.2)).mp
       fits s₀)
 
-/-- The quantum registrations of the square: each line shows its own support (`inLine`). -/
+/-- The quantum contextual systems of the square: each line shows its own support (`inLine`). -/
 def quantum : Contextual σ Line Cell Bool := ⟨within, fun _ l => inLine l⟩
 
-/-- **Quantum registrations exist at every configuration.** -/
+/-- **Quantum contextual systems exist at every configuration.** -/
 theorem quantum_at (s : σ) : QuantumAt (quantum (σ := σ)) s :=
   ⟨within_at, fun l => support_shown (inLine_support l)⟩
 

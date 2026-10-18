@@ -1,0 +1,30 @@
+# Gluing.lean: registrations in context → what the contexts show (S7, as Context); a context registers the claims it counts → they lie within it; the record id `contextual-registration` kept (ids are frozen).
+### lean:Gluing
+= S7
+- fits a world exactly where its
+- registrations glue,
++ fits a world exactly where what its
++ contexts show glues,
+= S7 the record's id stays
+- the next step of the record
+- of contextual registration,
++ the next step of the record
++ of claims shown in context (`contextual-registration`),
+= S7
+- and which registrations of an actual unfolding are of this kind.
++ and which contextual systems of an actual unfolding are of this kind.
+= S7
+- /-- A context registers the claims it counts. -/
++ /-- The claims a context counts lie within it. -/
+= S7
+- /-- What a context can show depends only on the claims it registers. -/
++ /-- What a context can show depends only on the claims within it. -/
+= S7
+- some world registering what each context counts,
++ some world showing what each context counts,
+= S7
+- /-- A pair of settings registers the outcome at each station under its setting,
++ /-- A pair of settings holds the outcome at each station under its setting,
+= S7
+- each outcome is registered twice,
++ each outcome lies within two pairs,

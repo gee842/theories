@@ -20,18 +20,18 @@ condition each law names.
   stock and everything replenished before the step cover everything drawn up to and including
   it (`covered_iff_prefix`). So every course of every such process is covered
   (`covered_of_trace`); the converse fails, since other relations of the process can block a
-  covered step (`Revising.covered_not_enacted`). For a registration process run jointly with
-  its stock, a course is executable exactly when the registration admits it and the stock
+  covered step (`Revising.covered_not_enacted`). For a process run jointly with
+  its stock, a course is executable exactly when that process admits it and the stock
   covers it (`product_feasible_iff`).
 * **Repetition.** A course repeated without end needs what it replenishes to cover what it
   draws, in every balanced process (`cycles_need`, `repeat_needs`). For the stock process, and
-  for any registration cycle run jointly with it, repetition without end holds exactly where
+  for any cycle of a process run jointly with it, repetition without end holds exactly where
   the first pass is covered and the return covers the draw (`repeat_covered_iff`,
   `product_repeat_iff`).
 * **Recurrence along runs.** Along every run of every balanced process, drawing at arbitrarily
   late steps needs replenishment at arbitrarily late steps (`Run.replenishes_of_draws`); where
   the stock is bounded the two recur together (`Run.draws_iff_replenishes`). Without the bound
-  the converse fails (`accumulating`). An unending course of a registration process is carried
+  the converse fails (`accumulating`). An unending course of a process is carried
   by the stock exactly where each step's draw is within the stock then standing
   (`carried_iff`).
 * **A level drawn on and not replenished.** Where what stands after each step and what it draws
@@ -202,8 +202,8 @@ theorem covered_of_trace {P : Process S A} {σ : S → Nat} {draw replenish : A 
   (feasible_iff_covered as (σ s)).mp
     ⟨σ t, trace_map (process_map_iff.mp ⟨bal, held⟩) h⟩
 
-/-- **Registration and stock, run jointly.** A course is executable exactly where the
-registration process admits it and the stock covers it. -/
+/-- **A process and stock, run jointly.** A course is executable exactly where the
+process `R` admits it and the stock covers it. -/
 theorem product_feasible_iff {S' : Type u} {R : Process S' A} {draw replenish : A → Nat}
     {n : Nat} {x : S'} {as : List A} :
     Feasible (productProcess (process draw replenish) R) (n, x) as ↔
@@ -342,8 +342,8 @@ theorem trace_repeat {S' : Type u} {R : Process S' A} {x : S'} {w : List A}
   | 0 => .nil x
   | k + 1 => trace_append_iff.mpr ⟨x, trace_repeat cycle k, cycle⟩
 
-/-- **A registration cycle carried by stock.** Where a course returns the registration
-process to where it began, running it jointly with the stock process from `n`, it can be
+/-- **A cycle carried by stock.** Where a course returns the process `R` to where it
+began, running it jointly with the stock process from `n`, it can be
 repeated any number of times exactly where its first pass is covered and its return covers its
 draw. -/
 theorem product_repeat_iff {S' : Type u} {R : Process S' A} {draw replenish : A → Nat}
@@ -506,7 +506,7 @@ def along (draw replenish : A → Nat) (n : Nat) (acts : Nat → A) : Nat → Na
   | 0 => n
   | k + 1 => along draw replenish n acts k - draw (acts k) + replenish (acts k)
 
-/-- **An unending course carried by stock.** A run of a registration process can be run
+/-- **An unending course carried by stock.** A run of a process `R` can be run
 jointly with the stock process from `n`, taking the same actions, exactly where at every
 step the draw is within the stock then standing. -/
 theorem carried_iff {S' : Type u} {R : Process S' A} {draw replenish : A → Nat}

@@ -18,12 +18,12 @@ that process, its steps and its traces.
   exactly its traces of length `n` (`repair_iff`).
 * **Laws of the steps.** Every revise step puts the failed address at the head of the method and
   of the next plan, leaving the installed device in place (`revise_binds_plan`, `revise_step`);
-  so the revised method registers the failure (`revise_registers`), keeps every selection the
+  so the revised method contacts the failed address (`revise_registers`), keeps every selection the
   old one made (`revise_keeps_selections`, `revise_keeps`), and gains the choice at a new
   contact (`revise_gains_contact`). A probe step acquires both references of the next planned
   contact (`probe_binds`), a checked install step binds the fresh pairs (`install_binds`), and a
   frozen step re-runs the retained method whatever failed (`frozen_plan`), so at every retained
-  method some failure is left unregistered (`frozen_leaves_unregistered`). A perform step
+  method some failure is left unanswered (`frozen_leaves_unregistered`). A perform step
   answers through the installed key (`perform_response`); a key read off the low reference
   drives the contact to every target exactly where the two references differ
   (`checked_drives`), and after a drift step it misses every target (`drift_misses`).
@@ -32,7 +32,7 @@ that process, its steps and its traces.
   fails (`second_mismatch_trace`), the policy repairs in four steps (`second_repair`), and both
   revised contacts are used (`finished_trace`). The history is its two rounds and the last uses
   (`firstRound`, `secondRound`, `actualWord_rounds`, `history_rounds`); the rounds change the
-  method twice (`rounds_change_method`), install and register each new contact
+  method twice (`rounds_change_method`), install each new contact and gain its choice
   (`first_round_installs_contact`, `first_round_registers`, `second_round_registers`), and after
   each round every use of an installed contact meets its target (`first_round_meets`,
   `second_round_meets`, `first_use_meets`, `second_use_meets`). The history ends with half its
@@ -208,7 +208,7 @@ theorem revise_step {s t : State} (st : P.step s .revise t) :
       contradiction
   | some i => exact ⟨i, rfl, congrArg Prod.fst (revise_binds_plan hm st)⟩
 
-/-- **A revise step's method registers the failure it answers.** -/
+/-- **A revise step's method contacts the failed address it answers.** -/
 theorem revise_registers {s t : State} {i : Nat} (h : s.mismatch = some i)
     (st : P.step s .revise t) :
     Learning.Training.Through (ReferencePlan.Alike t.method) (fun x => x i = true) :=
@@ -262,7 +262,7 @@ theorem frozen_plan {s t : State} (st : P.step s .frozen t) :
     t.pending = frozenRule s.method s.mismatch :=
   step_reads (fun _ => rfl) (frozen_reads_method s) st
 
-/-- **At every retained method some failure is left unregistered by every frozen step.** -/
+/-- **At every retained method some failure is left unanswered by every frozen step.** -/
 theorem frozen_leaves_unregistered (s : State) :
     ∃ i, ∀ t, P.step { s with mismatch := some i } .frozen t →
       ¬ Learning.Training.Through (ReferencePlan.Alike t.pending) (fun x => x i = true) :=
@@ -414,8 +414,8 @@ theorem first_round_installs_contact {t : State} (first : Trace P initial firstR
   subst e
   exact first_candidate_unavailable_before
 
-/-- **The first round gains the registered choice at contact 0**, which the start did not
-register. -/
+/-- **The first round gains the choice at contact 0 through the installed contacts**, which the
+start did not have. -/
 theorem first_round_registers {t : State} (first : Trace P initial firstRound t) :
     Learning.Training.Through (alikeOnInstalled t) (fun x => x 0 = true) ∧
       ¬ Learning.Training.Through (alikeOnInstalled initial) (fun x => x 0 = true) := by
@@ -423,8 +423,8 @@ theorem first_round_registers {t : State} (first : Trace P initial firstRound t)
   subst e
   exact first_installed_choice
 
-/-- **The second round gains the registered choice at contact 1**, which the first repair did not
-register. -/
+/-- **The second round gains the choice at contact 1 through the installed contacts**, which the
+first repair did not have. -/
 theorem second_round_registers {t : State} (second : Trace P repairedFirst secondRound t) :
     Learning.Training.Through (alikeOnInstalled t) (fun x => x 1 = true) ∧
       ¬ Learning.Training.Through (alikeOnInstalled repairedFirst) (fun x => x 1 = true) := by

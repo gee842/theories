@@ -7,7 +7,7 @@ import Becoming.TimedResponse
 `Becoming.Counterfactual` (P80) gives the course an act generates where the rest follows a law of
 what has stood, and decides the comparison within the part's responsive reach; among what it does
 not derive is "any measure of how much difference arrives". `Becoming.Sensitivity` (P113) gives the
-least registration such a law reads through, its sensitivity, which says whether a level can change
+least coupling such a law reads through, its sensitivity, which says whether a level can change
 an exchange, not by how much; `Becoming.TimedResponse` orders the reach in time. This module
 measures, within the theory without axiom and with no premise beyond what each law names, how strongly an exchange is
 coupled to a level, how much difference an act carries through such couplings, and that this is the
@@ -52,8 +52,8 @@ most that can arrive.
 * **Where it goes.** The carried amount is positive exactly where a gap is conveyed (`Conveyed`), by
   a starting gap, by holding, by a gap of the part, or by a positive strength from a level to which
   a gap was conveyed: a route in time (`carried_pos_iff`). Where none is, the levels agree
-  (`levels_alike_of_not_conveyed`). Where the positive strengths are of formations registering the
-  level and exchanging with the condition, every conveyed gap lies on a route of
+  (`levels_alike_of_not_conveyed`). Where the positive strengths are of formations into which the
+  level couples and which exchange with the condition, every conveyed gap lies on a route of
   `TimedResponse.Spread` (`Conveyed.spread`): the potential propagation of
   `Becoming.TimedResponse`, now with its amount.
 * **Carried differences add.** What the strengths carry from two sets of gaps together is the sum
@@ -67,7 +67,7 @@ most that can arrive.
 
 **Readings (the AI's, pending Ren).**
 - The coupling strength is the measure that sensitivity lacked: sensitivity says that a level can
-  change an exchange, the strength how much. Read with registration as 识, a formation registers
+  change an exchange, the strength how much. Read as 识, what couples into a formation is
   what its exchange is sensitive to, and the strength is how strongly.
 - How much difference arrives is itself a course: the carried amount is what one law generates, so
   an act's reach is read off the unfolding, not added to it. In systems theory the strengths are
@@ -1025,8 +1025,8 @@ theorem carried_pos_iff (t : Nat) (c : C) :
           k t h c s d * carried cs part σ k present δ s d) (Propagation.mem_steps_upto le))⟩
 
 /-- **A conveyed gap spreads.** With no starting gap, where every positive gap of the part is a
-source exchanging with the condition, and every positive strength is of a formation registering that
-level and exchanging with the condition, every conveyed gap lies on a route of
+source exchanging with the condition, and every positive strength is of a formation into which that
+level couples and which exchanges with the condition, every conveyed gap lies on a route of
 `TimedResponse.Spread`. -/
 theorem Conveyed.spread {L L' : Flow F C} {W : Web F C} {obs : F → C → Prop}
     {source : Nat → F → Prop} (noStart : ∀ c, δ c = 0)

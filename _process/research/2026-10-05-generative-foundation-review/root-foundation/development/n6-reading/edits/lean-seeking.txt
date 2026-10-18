@@ -1,0 +1,20 @@
+# Seeking.lean: B3 is where 识 keeps its place (option b): a seeker's course through the lumping its couplings make; the primitives take couples into, coupling closure (耦合闭包); the seeker's target kept (its own sense).
+### lean:Seeking
+= ZH-keep 识 kept for the derived structure, the seeker's course through the lumping its couplings make (option b); the primitive is coupling
+- - *B3, feedback.* Losses reach a seeker only through what it registers (识). Through support
+-   they register only where its cumulative net draw passes the margin
++ - *B3, feedback.* Losses reach a seeker only through what couples into it; its course through
++   the lumping those couplings make is 识. Through support they show only where its cumulative net
++   draw passes the margin
+= S4
+- how far off the break is does
+-   not register (`Web.break_not_bounded`); where the cost falls beyond the registration closure
+-   (识闭包), no mark ever comes
++ how far off the break is does
++   not couple in (`Web.break_not_bounded`); where the cost falls beyond the coupling closure
++   (耦合闭包), no mark ever comes
+= S2
+- as do a model answerable to what is registered
+-   (`Flow.excludes_tail_within`) and another formation's registration (`Clearing.pooled`).
++ as do a model answerable to what couples in
++   (`Flow.excludes_tail_within`) and another formation's couplings (`Clearing.pooled`).

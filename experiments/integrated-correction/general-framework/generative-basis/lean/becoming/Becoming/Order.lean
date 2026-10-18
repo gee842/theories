@@ -139,9 +139,9 @@ are taken in the other order.
 
 Reading (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D30): for the
 laws of one step, the totals and counts over a stretch, and recurrence, the step index carries
-nothing beyond the order of change; an idle step registers nothing, and removing it changes nothing
+nothing beyond the order of change; an idle step makes no difference, and removing it changes nothing
 the laws state. What is counted per step, rates and how long a reserve carries, is relative to the
-unit of the reading, as coarser steps were (`Becoming.Sampling`). Within the order, what registers
+unit of the reading, as coarser steps were (`Becoming.Sampling`). Within the order, what makes a difference
 is the order of exchanges joined through a relatum or a dependence: with a footprint, the order the
 laws need is the partial order `Precedes`, not a sequence of steps. Commuting exchanges it does not
 order keeps every premise and the order itself, and every arrangement of the same exchanges keeping
@@ -1867,7 +1867,7 @@ theorem split : web.Split 0 firstSide firstSide :=
      | 2, _ => ⟨rfl, fun _ => ⟨rfl, rfl, rfl⟩⟩
      | _ + 3, _ => ⟨rfl, fun _ => ⟨rfl, rfl, rfl⟩⟩⟩
 
-/-- **The order of exchanges joined by a dependence registers.** The two exchanges share no
+/-- **The order of exchanges joined by a dependence makes a difference.** The two exchanges share no
 relatum and the sides split them, so the world taken in the other order balances; but the first
 relatum depends on the second across the sides, and in the other order the second ceases to stand
 while the first is still active: activity needing support fails between the two steps. -/
@@ -1965,7 +1965,7 @@ theorem split : web.Split 0 firstSide firstSide :=
      | 0, no => Bool.noConfusion no
      | _ + 1, _ => ⟨rfl, fun _ => ⟨rfl, rfl, rfl⟩⟩⟩
 
-/-- **The order of exchanges sharing a relatum registers.** Each standing and activity changes
+/-- **The order of exchanges sharing a relatum makes a difference.** Each standing and activity changes
 across one of the two steps, so the world taken in the other order balances; but the relatum that
 arises across the first step gives across the second, and in the other order it gives before it
 is active. -/
@@ -2774,7 +2774,7 @@ theorem Reorders.counts {X : Type} {S m : Nat} (xs : List X) :
      next.2.trans (ceasings_moved (p := fun x n => W.active n x)
        (p' := fun x n => (W.commute t side side).active n x) (fun x _ => web.2.1 x) from_ to)⟩
 
-/-! ### Where the order registers, every footprint joins the two exchanges -/
+/-! ### Where the order makes a difference, every footprint joins the two exchanges -/
 
 namespace Crossing
 

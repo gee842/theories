@@ -1,0 +1,28 @@
+# Stock.lean: a registration process run jointly with the stock → a process `R` run jointly with it (any process; Revising's link process is one); "observable" kept (the systems term).
+### lean:Stock
+= S1
+- For a registration process run jointly with
+-   its stock, a course is executable exactly when the registration admits it and the stock
+-   covers it
++ For a process run jointly with
++   its stock, a course is executable exactly when that process admits it and the stock
++   covers it
+= S1
+- for any registration cycle run jointly with it,
++ for any cycle of a process run jointly with it,
+= S1
+- An unending course of a registration process is carried
++ An unending course of a process is carried
+= S1
+- /-- **Registration and stock, run jointly.** A course is executable exactly where the
+- registration process admits it and the stock covers it. -/
++ /-- **A process and stock, run jointly.** A course is executable exactly where the
++ process `R` admits it and the stock covers it. -/
+= S1
+- /-- **A registration cycle carried by stock.** Where a course returns the registration
+- process to where it began,
++ /-- **A cycle carried by stock.** Where a course returns the process `R` to where it
++ began,
+= S1
+- A run of a registration process can be run
++ A run of a process `R` can be run

@@ -1,0 +1,113 @@
+# LevelCoupling.lean: what it registers → what couples into it; observes → couples in by level (`obs`).
+### lean:LevelCoupling
+= S2
+-   the part, only what it registers (`ExchangeLaw.Through`): a level it neither depends on nor
+-   observes is coupled with strength zero
++   the part, only what couples into it (`ExchangeLaw.Through`): a level that couples into it
++   neither by threshold nor by level is coupled with strength zero
+= S2
+-   response comes from a condition it registers (`ExchangeLaw.Through.couples_of_respondsTo`),
+-   and is a route of reading in every schedule covering what it registers
++   response comes from a condition that couples into it (`ExchangeLaw.Through.couples_of_respondsTo`),
++   and is a route of reading in every schedule covering what couples into it
+= S2
+-   alike is a response by level (`ExchangeLaw.RespondsByLevel`). Where the formation does not
+-   observe the condition, no law reading through its registration responds to it by level
++   alike is a response by level (`ExchangeLaw.RespondsByLevel`). Where the condition does not
++   couple into the formation by level, no law reading through its couplings responds to it by level
+= S2
+- * **By threshold, a crossing passes.** A response to a condition the formation does not observe
+-   is a crossing of its need
++ * **By threshold, a crossing passes.** A response to a condition that does not couple into the
++   formation by level is a crossing of its need
+= S2
+-   requires at a step exactly that one condition, with a positive need, a law reading through its
+-   registration responds to a crossing there
++   requires at a step exactly that one condition, with a positive need, a law reading through its
++   couplings responds to a crossing there
+= S2
+- * **Among several conditions, a crossing passes through the conjunction.** A response to a
+-   condition the formation does not observe changes its admission
++ * **Among several conditions, a crossing passes through the conjunction.** A response to a
++   condition that does not couple into the formation by level changes its admission
+= S2
+- * **By level, the level passes.** Where it observes the condition, a law reading through its
+-   registration responds to it by level at every step and condition (`levelLaw`,
+-   `levelLaw_through`, `levelLaw_respondsByLevel`). So observing is exactly where a level can couple
++ * **By level, the level passes.** Where the condition couples into it by level, a law reading
++   through its couplings responds to it by level at every step and condition (`levelLaw`,
++   `levelLaw_through`, `levelLaw_respondsByLevel`). So coupling by level (`obs`) is exactly where a level can couple
+= S2 the AI's reading
+- "Coupled by level" names this exactly; registration
+- bounds coupling, and a law's actual responses are its couplings.
++ "Coupled by level" names this exactly; what can
++ couple in bounds what responds, and a law's actual responses are its couplings.
+= S2
+- What is not derived: which law the rest follows, or whether an observed level is in fact
+- responded to (a law reading through registration may ignore what it registers);
++ What is not derived: which law the rest follows, or whether a level coupled by level is in fact
++ responded to (a law reading through the couplings may ignore what couples in);
+= S2
+- /-- **An unregistered level is coupled with strength zero.** For a law reading through
+- registration, a level that a formation outside the part neither depends on nor observes is
++ /-- **A level that does not couple in is coupled with strength zero.** For a law reading through
++ the couplings, a level that couples into a formation outside the part neither by threshold nor by
++ level is
+= S2 2
+- reading through its registration
++ reading through its couplings
+= S2 4
+- reading through registration
++ reading through the couplings
+= S2 3
+- reads through registration
++ reads through the couplings
+= S2 2
+- reading through
+- registration
++ reading through
++ the couplings
+= S2
+- reading
+- through registration
++ reading
++ through the couplings
+= S2
+- /-- **A response is read in every schedule covering registration.** -/
++ /-- **A response is read in every schedule covering what couples in.** -/
+= S2
+- /-- Histories with equal levels at a step register alike there. -/
++ /-- Histories with equal levels at a step are alike there through the couplings. -/
+= S2
+- outside the part that does not observe a condition is not responded to by level
++ outside the part into which a condition does not couple by level is not responded to by level
+= S2
+- /-- **A law taking the level it observes.**
++ /-- **A law taking the level that couples in by level.**
+= S2
+- /-- **The law taking an observed level reads through the couplings.** -/
++ /-- **The law taking a level coupled by level reads through the couplings.** -/
+= S2
+- /-- **The law taking an observed level responds to it by level**
++ /-- **The law taking a level coupled by level responds to it by level**
+= S2 `¬ ¬` refuted kept (double negation)
+- /-- **Observing is exactly where a level can couple into a formation within its threshold.** For
+- a formation outside the part: it is not refuted that it observes the condition exactly where it
+- is not refuted that some law reading through its couplings responds
++ /-- **Coupling by level is exactly where a level can couple into a formation within its threshold.**
++ For a formation outside the part: it is not refuted that the condition couples into it by level
++ exactly where it is not refuted that some law reading through its couplings responds
+= S2
+- /-- **A response to a condition not observed is a crossing.**
++ /-- **A response to a condition not coupled in by level is a crossing.**
+= S2 2
+- the couplings and a formation outside the part that does not observe `d`:
++ the couplings and a formation outside the part into which `d` does not couple by level:
+= S2
+- Conversely, where the formation
+- does not observe `d`, a response
++ Conversely, where `d` does not
++ couple into the formation by level, a response
+= S2
+- /-- **A response to a condition not observed changes admission.**
++ /-- **A response to a condition not coupled in by level changes admission.**

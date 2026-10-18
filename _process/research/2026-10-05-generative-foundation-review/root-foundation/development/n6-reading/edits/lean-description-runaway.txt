@@ -1,0 +1,301 @@
+# Description.lean (a history through a map) and Runaway.lean (a policy through its couplings).
+### lean:Description
+= .
+-   and, for a determined law read through a registration (`Law.frameBy`), that alike is the
+-   same registered future (`Law.alike_iff_sameFuture`). In those terms: a split that keeps what
+-   is registered and carries a law in `Becoming.Mechanism`'s sense (`GoAlike`) relates
+-   configurations by a bisimulation (`Law.kernel_bisimulation`), so it loses nothing registered
+-   (`Law.sameFuture_of_law`), and the coarsest such split makes sense (`Law.identifiesAlike_of_law`).
+-   Carrying a law is not enough: the split that lumps everything always carries one
+-   (`goAlike_const`) and makes sense only where nothing registered ever differs
+-   (`Law.const_identifiesAlike_iff`). Registering everything, the configuration itself makes sense
+-   (`Law.whole_identifiesAlike`). What is registered now makes sense by itself exactly where it
+-   carries a law, a condition on one step (`Law.now_identifiesAlike_iff_goAlike`), equivalently where it
+-   fixes its own registered future (`Law.now_identifiesAlike_iff`). So a registered part alone makes
+-   sense exactly where the rest makes no difference to its next value
++   and, for a determined law read through a map (`Law.frameBy`), that alike is the
++   same future through the map (`Law.alike_iff_sameFuture`). In those terms: a split that keeps
++   the map's value and carries a law in `Becoming.Mechanism`'s sense (`GoAlike`) relates
++   configurations by a bisimulation (`Law.kernel_bisimulation`), so it loses nothing the map
++   tells apart (`Law.sameFuture_of_law`), and the coarsest such split makes sense
++   (`Law.identifiesAlike_of_law`). Carrying a law is not enough: the split that lumps everything
++   always carries one (`goAlike_const`) and makes sense only where the map's value never differs
++   (`Law.const_identifiesAlike_iff`). Through the identity map, the configuration itself makes
++   sense (`Law.whole_identifiesAlike`). The map's present value makes sense by itself exactly where
++   it carries a law, a condition on one step (`Law.now_identifiesAlike_iff_goAlike`), equivalently
++   where it fixes its own future through the map (`Law.now_identifiesAlike_iff`). So a part read
++   through the map alone makes sense exactly where the rest makes no difference to its next value
+= .
+- * **The pair.** Where a standing changes by a passing and only the standing is registered
+-   (`Motion.move`), the split that makes sense is the pair (`Motion.pair_identifiesAlike`); the standing
++ * **The pair.** Where a standing changes by a passing and the map reads only the standing
++   (`Motion.move`), the split that makes sense is the pair (`Motion.pair_identifiesAlike`); the standing
+= .
+- * **States from one registered history.** Two moments of one registered unfolding are one state
+-   when everything registered after them is alike (`SameAhead`); this is an equivalence that goes
+-   on as itself (`SameAhead.next`), `Becoming.Unfolding`'s same registered future read along
+-   an orbit (`sameAhead_orbit_iff`), so states and their law are read off the history with no
+-   configuration given. Where every moment is registered differently, each moment is its own
+-   state (`SameAhead.new_each`). This needs no law given beforehand beyond the succession of
+-   steps, the representation's shared step index: every registered history is a determined law,
+-   the law of moments, read through what is registered, and its alike moments
+-   are the moments that are one state (`alike_moments_iff`, through `Becoming.Unfolding`). A
+-   registered history has finitely many states exactly where two of its moments are one state,
+-   that is, where its registration repeats from some moment on (`finitely_many_states_iff`, by a
+-   pigeonhole up to a relation with no decision, `shared_below`); a configuration that returns
+-   has finitely many states under every registration (`Law.Returns.states`). The two-valued
++ * **States from one history through a map.** Two moments of one history read through a map are
++   one state when everything after them is alike through the map (`SameAhead`); this is an
++   equivalence that goes on as itself (`SameAhead.next`), `Becoming.Unfolding`'s same future
++   through the map read along an orbit (`sameAhead_orbit_iff`), so states and their law are read
++   off the history with no configuration given. Where the map takes a different value at every
++   moment, each moment is its own state (`SameAhead.new_each`). This needs no law given
++   beforehand beyond the succession of steps, the representation's shared step index: every
++   history through a map is a determined law, the law of moments, read through the map, and its
++   alike moments are the moments that are one state (`alike_moments_iff`, through
++   `Becoming.Unfolding`). A history through a map has finitely many states exactly where two of
++   its moments are one state, that is, where its values repeat from some moment on
++   (`finitely_many_states_iff`, by a pigeonhole up to a relation with no decision,
++   `shared_below`); a configuration that returns has finitely many states through every map
++   (`Law.Returns.states`). The two-valued
+= .
+- unmade only by what acts on the parts together or by loss; relative to what is registered, one
+- split loses no difference that will make a difference and adds none that never will, and the law
+- comes out of it. That an unfolding has a law is not a premise beyond the succession of its steps:
+- its states and their law are read off what it registers, and they are finitely many exactly
+- where the registration repeats from some moment on. The readings of this as what a projection
++ unmade only by what acts on the parts together or by loss; relative to a map, one split loses
++ no difference that will make a difference and adds none that never will, and the law comes out
++ of it. That an unfolding has a law is not a premise beyond the succession of its steps: its
++ states and their law are read off its course through a map, and they are finitely many exactly
++ where that course repeats from some moment on. The readings of this as what a projection
+= .
+- /-- A split that keeps what is registered and carries a law relates configurations by a
+- bisimulation of the registered law. -/
++ /-- A split that keeps the map's value and carries a law relates configurations by a
++ bisimulation of the law framed by the map. -/
+= .
+- /-- Such a split loses nothing registered. -/
++ /-- Such a split loses nothing the map tells apart. -/
+= .
+- /-- **The coarsest split that keeps what is registered and carries a law makes sense.** -/
++ /-- **The coarsest split that keeps the map's value and carries a law makes sense.** -/
+= .
+- /-- The split that lumps everything always carries a law (`goAlike_const`), and makes sense only
+- where nothing registered ever differs. -/
++ /-- The split that lumps everything always carries a law (`goAlike_const`), and makes sense only
++ where the map's value never differs. -/
+= .
+- /-- **What is registered now makes sense by itself exactly where it fixes its own registered
+- future.** -/
++ /-- **The map's present value makes sense by itself exactly where it fixes its own future
++ through the map.** -/
+= .
+- /-- **Registering everything, the configuration itself is the split that makes sense**: nothing
+- alike is two. -/
++ /-- **Through the identity map, the configuration itself is the split that makes sense**:
++ nothing alike is two. -/
+= .
+- /-- **The registered part alone makes sense exactly where the rest never makes a registered
+- difference**; elsewhere the split that makes sense includes the rest. -/
++ /-- **The part read through the map alone makes sense exactly where the rest never makes a
++ difference through the map**; elsewhere the split that makes sense includes the rest. -/
+= .
+- /-- Where what is registered carries a law, it fixes its own registered future. -/
++ /-- Where the map's value carries a law, it fixes its own future through the map. -/
+= .
+- /-- **What is registered now makes sense by itself exactly where it carries a law**: a condition on
+- one step. -/
++ /-- **The map's present value makes sense by itself exactly where it carries a law**: a condition
++ on one step. -/
+= .
+- /-- **The registered part alone makes sense exactly where the rest makes no difference to its next
+- value.** -/
++ /-- **The part read through the map alone makes sense exactly where the rest makes no difference
++ to its next value.** -/
+= .
+- /-- **Registering only the standing, the split that makes sense is the pair.** -/
++ /-- **Through the map to the standing alone, the split that makes sense is the pair.** -/
+= .
+- /-! ## States from one registered history -/
++ /-! ## States from one history through a map -/
+= .
+- /-- Two moments of one registered unfolding are one state when everything registered after them
+- is alike. -/
++ /-- Two moments of one history through a map are one state when everything after them is alike
++ through the map. -/
+= .
+- /-- Read along an orbit, one state is the same registered future. -/
++ /-- Read along an orbit, one state is the same future through the map. -/
+= .
+- /-- Where every moment is registered differently, each moment is its own state. -/
++ /-- Where the map takes a different value at every moment, each moment is its own state. -/
+= .
+- /-- **Every registered history is a determined law read through a registration**: the law of
+- moments, each going on to the next, which is the succession of the step index and nothing more.
++ /-- **Every history through a map is a determined law read through a map**: the law of
++ moments, each going on to the next, which is the succession of the step index and nothing more.
+= .
+- /-- **A registered history has finitely many states exactly where two of its moments are one
+- state**, that is, where its registration repeats from some moment on. -/
++ /-- **A history through a map has finitely many states exactly where two of its moments are one
++ state**, that is, where its values repeat from some moment on. -/
+= .
+- /-- **A configuration that returns has finitely many states under every registration.** -/
++ /-- **A configuration that returns has finitely many states through every map.** -/
+= .
+- /-- The two-valued negation, registered at each moment. -/
++ /-- The two-valued negation, read at each moment. -/
+= .
+- /-- **Each is defined through the other**: one registers `true` and goes into the other, which
+- registers `false` and goes into the first. -/
++ /-- **Each is defined through the other**: one takes `true` and goes into the other, which
++ takes `false` and goes into the first. -/
+= .
+- /-- **Finitely many states is a lasso**: a registered history has finitely many states exactly
++ /-- **Finitely many states is a lasso**: a history through a map has finitely many states exactly
+### lean:Runaway
+= .
+- # Runaway: what a loop through its own registration cannot register
+-
+- On 11 October 2026 Ren asked for "wisdoms to avoid run away feedbacks". `Becoming.Testing`
+- states threshold blindness for an exchange that follows a formation's registration
+- (`Flow.ExchangeFollows`), and reads a runaway as a loop running inside it. This module states,
+- with no premise beyond balance on the conditions registered, what that means for every
+- policy and how far the blindness reaches. Ren's reply to the proposal was "no extra review
+- needed, merge, then continue".
+-
+- * **Every policy through registration.** A formation's policy goes through its registration
+-   when its own exchange on what it registers is alike wherever it has registered alike
+-   (`Flow.PolicyThrough`). With the rest of the exchange on what it registers fixed
+-   (`Flow.OthersFixed`), the exchange then follows its registration
+-   (`Flow.exchangeFollows_of_policy`). So for every such policy, a difference in a stock the
+-   formation depends on and does not observe is never used while the lower web supports it
+-   (`Flow.policy_keeps_difference`), and wherever the difference has been used, the lower web
+-   failed to support the formation at some earlier step (`Flow.policy_uses_after_failure`).
+- * **The distance to the break is not registered.** Raising a stock by `d` (`Web.raise`) keeps
+-   balance on every condition (`Flow.BalancesOn.raise`). At every step at which a web supports
+-   a formation that does not observe the stock, the raised web registers alike for it
+-   (`Web.alikeThrough_raise`). So before the break nothing the formation registers bounds how
+-   near the break is: for every horizon, where the stock is the only requirement that may be
+-   unmet up to it, some raised web registers alike at every step at which the actual web
+-   supports the formation, and supports it at every step up to the horizon
+-   (`Web.break_not_bounded`); the raised web is dependent where the web is
+-   (`Web.Dependent.raise`). `SupportDrawn.break_uncoupled` is an instance.
+- * **Observation registers it.** Observing the stock, a formation registers any raise at once
+-   (`Web.observed_raise_couples`).
+-
+- **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26).**
+- - A runaway is a loop whose registration cannot register the distance to its break: before the
+-   break, its own registration is the same as in a world with as much more stock as one likes.
+-   Its policy, however clever, cannot use what it does not register.
+- - To avoid a runaway without forgoing what is there, a formation needs what registers the
+-   stock (measurement), or a model of it (理, a model answerable to registration), or another
+-   formation whose registration does (`Becoming.Testing`); experiment needs a return and a model
+-   of what is irrelevant (`Becoming.Experiment`).
++ # Runaway: what does not couple into a loop through its own couplings
++
++ On 11 October 2026 Ren asked for "wisdoms to avoid run away feedbacks". `Becoming.Testing`
++ states threshold blindness for an exchange that follows what couples into a formation
++ (`Flow.ExchangeFollows`), and reads a runaway as a loop running inside it. This module states,
++ with no premise beyond balance on the conditions coupled in, what that means for every
++ policy and how far the blindness reaches. Ren's reply to the proposal was "no extra review
++ needed, merge, then continue".
++
++ * **Every policy through the couplings.** A formation's policy goes through its couplings
++   when its own exchange on what couples into it is alike wherever the flows have been alike
++   through its couplings (`Flow.PolicyThrough`). With the rest of the exchange on what couples
++   into it fixed (`Flow.OthersFixed`), the exchange then follows what couples in
++   (`Flow.exchangeFollows_of_policy`). So for every such policy, a difference in a stock coupled
++   into the formation by threshold only is never used while the lower web supports it
++   (`Flow.policy_keeps_difference`), and wherever the difference has been used, the lower web
++   failed to support the formation at some earlier step (`Flow.policy_uses_after_failure`).
++ * **The distance to the break does not couple in.** Raising a stock by `d` (`Web.raise`) keeps
++   balance on every condition (`Flow.BalancesOn.raise`). At every step at which a web supports
++   a formation into which the stock couples by threshold only, the raised web is alike through
++   the formation's couplings (`Web.alikeThrough_raise`). So before the break nothing that couples
++   into the formation bounds how near the break is: for every horizon, where the stock is the only
++   requirement that may be unmet up to it, some raised web is alike through its couplings at every
++   step at which the actual web supports the formation, and supports it at every step up to the
++   horizon (`Web.break_not_bounded`); the raised web is dependent where the web is
++   (`Web.Dependent.raise`). `SupportDrawn.break_uncoupled` is an instance.
++ * **Coupling by level passes it.** With the stock coupled into a formation by level, any raise
++   passes at once (`Web.observed_raise_couples`).
++
++ **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26).**
++ - A runaway is a loop into which the distance to its break does not couple: before the break,
++   what couples into it is the same as in a world with as much more stock as one likes. Its
++   policy, however clever, cannot use what does not couple into it.
++ - To avoid a runaway without forgoing what is there, a formation needs the stock coupled into it
++   by level (measurement), or a model of it (理, a model answerable to what couples in), or another
++   formation into which the stock couples (`Becoming.Testing`); experiment needs a return and a
++   model of what is irrelevant (`Becoming.Experiment`).
+= .
+- /-! ## Every policy through registration -/
++ /-! ## Every policy through the couplings -/
+= .
+- /-- `g`'s policy goes through its registration: wherever `g` has registered alike up to `t`,
+- its own take from and give to every condition it registers are alike across the step from
+- `t`. -/
++ /-- `g`'s policy goes through its couplings: wherever the flows have been alike through `g`'s
++ couplings up to `t`, its own take from and give to every condition coupled into it are alike
++ across the step from `t`. -/
+= .
+- /-- The rest of the exchange on what `g` registers is fixed: every other formation takes from
+- and gives to every condition `g` registers alike in the two flows, at every step. -/
++ /-- The rest of the exchange on what couples into `g` is fixed: every other formation takes from
++ and gives to every condition coupled into `g` alike in the two flows, at every step. -/
+= .
+- /-- **A policy through registration, with the rest fixed, is exchange following
+- registration.** -/
++ /-- **A policy through the couplings, with the rest fixed, is exchange following what couples
++ in.** -/
+= .
+- /-- **A policy that keeps its support never uses a larger stock.** For every policy through
+- registration, with the rest fixed: where the starts differ only in a stock `g` depends on and
+- does not observe, `d` higher in the second, and the first web supports `g` at every step, the
+- stock stands `d` higher at every step and `g` registers alike. -/
++ /-- **A policy that keeps its support never uses a larger stock.** For every policy through the
++ couplings, with the rest fixed: where the starts differ only in a stock coupled into `g` by
++ threshold only, `d` higher in the second, and the first web supports `g` at every step, the
++ stock stands `d` higher at every step and the flows are alike through `g`'s couplings. -/
+= .
+- /-- **A larger stock is used only after a failure.** For every policy through registration,
+- with the rest fixed, starting at least as high on what `g` registers and alike on what it
+- observes: wherever a difference on a condition `g` registers has changed by a step, the first
+- web did not support `g` at every earlier step. -/
++ /-- **A larger stock is used only after a failure.** For every policy through the couplings,
++ with the rest fixed, starting at least as high on what couples into `g` and alike on what couples
++ into it by level: wherever a difference on a condition coupled into `g` has changed by a step,
++ the first web did not support `g` at every earlier step. -/
+= .
+- /-! ## The distance to the break is not registered -/
++ /-! ## The distance to the break does not couple in -/
+= .
+- /-- **Before the break, a raise does not register.** At every step at which the web supports
+- `g`, a raise of a stock `g` does not observe registers alike for it. -/
++ /-- **Before the break, a raise does not pass.** At every step at which the web supports
++ `g`, a raise of a stock not coupled into `g` by level leaves the webs alike through `g`'s
++ couplings. -/
+= .
+- /-- **Observation registers a raise at once.** Observing the stock, any positive raise is
+- registered at every step. -/
++ /-- **Coupling by level passes a raise at once.** With the stock coupled into `g` by level, any
++ positive raise sets the webs apart through `g`'s couplings at every step. -/
+= .
+- /-- **No registered bound on the break.** Let `g` not observe a stock `c`, and let `c` be the
+- only requirement of `g` that may be unmet at the steps up to a horizon `u`. Then some raise of
+- `c` registers alike for `g` at every step at which the web supports `g`, and supports `g` at
+- every step up to `u`. So before the break nothing `g` registers bounds how far off it is. -/
++ /-- **No bound on the break couples in.** Let a stock `c` not couple into `g` by level, and let
++ `c` be the only requirement of `g` that may be unmet at the steps up to a horizon `u`. Then some
++ raise of `c` is alike through `g`'s couplings at every step at which the web supports `g`, and
++ supports `g` at every step up to `u`. So before the break nothing that couples into `g` bounds
++ how far off it is. -/
+= .
+- /-- **The break, unregistered.** In the lower web the formation is unsupported at the third
+- step; a raise of its stock registers alike for it at every step at which the lower web
+- supports it, supports it at the third step, and keeps the flow balanced. -/
++ /-- **The break, uncoupled.** In the lower web the formation is unsupported at the third
++ step; a raise of its stock is alike through its couplings at every step at which the lower web
++ supports it, supports it at the third step, and keeps the flow balanced. -/

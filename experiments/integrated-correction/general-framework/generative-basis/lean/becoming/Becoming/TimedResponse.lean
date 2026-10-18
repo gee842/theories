@@ -5,7 +5,7 @@ import Becoming.Response
 
 Two courses of one native Flow/Web description, with common initial levels and
 the same present formations. A declared source may differ at specified steps;
-the rest responds through its past registration. Spread is a potential route,
+the rest responds through its past couplings. Spread is a potential route,
 not an assertion of actual influence or reliable control. A response exchange
 at t can first affect levels at t+1. No physical duration is assigned to a step.
 -/
@@ -23,8 +23,8 @@ def TouchesAt (L L' : Flow F C) (t : Nat) (h : F) (c : C) : Prop :=
     (0 < L.take t h c ∨ 0 < L.give t h c ∨
       0 < L'.take t h c ∨ 0 < L'.give t h c)
 
-/-- The condition enters support at this step, or is explicitly observed. Unlike
-the whole-history registration envelope, a future requirement is not counted now. -/
+/-- The condition enters support at this step, or couples in by level. Unlike
+the whole-history coupling envelope, a future requirement is not counted now. -/
 def CoupledIntoAt (W : Web F C) (obs : F → C → Prop) (g : F) (s : Nat) (c : C) : Prop :=
   W.requires s g c ∨ obs g c
 
@@ -32,7 +32,7 @@ theorem coupledIntoAt_coupledInto {W : Web F C} {obs : F → C → Prop} {g : F}
     (reg : CoupledIntoAt W obs g s c) : W.CoupledInto obs g c :=
   reg.elim (fun req => .inl ⟨s, req⟩) Or.inr
 
-/-- Potential propagation, retaining the order of exchanges and past registration.
+/-- Potential propagation, retaining the order of exchanges and past couplings.
 There is no initial source: differences already present must be handled separately. -/
 inductive Spread (L L' : Flow F C) (W : Web F C)
     (obs : F → C → Prop) (source : Nat → F → Prop) : Nat → C → Prop
@@ -43,7 +43,7 @@ inductive Spread (L L' : Flow F C) (W : Web F C)
       CoupledIntoAt W obs h s d → TouchesAt L L' t h c →
       Spread L L' W obs source (t+1) c
 
-/-- A potential source route has entered something the reader registers by T. -/
+/-- A potential source route has entered something that couples into the reader by T. -/
 def ReachedBy (L L' : Flow F C) (W : Web F C) (obs : F → C → Prop)
     (source : Nat → F → Prop) (g : F) (T : Nat) : Prop :=
   ∃ s c, s ≤ T ∧ CoupledIntoAt W obs g s c ∧ Spread L L' W obs source s c
@@ -77,7 +77,8 @@ theorem reachedBy_mono {g : F} {T U : Nat} (le : T ≤ U)
   match reached with
   | ⟨s, c, before, reg, spread⟩ => ⟨s, c, Nat.le_trans before le, reg, spread⟩
 
-/-- Equality of registered levels suffices for the native registration, including support. -/
+/-- Equality of the levels that couple in suffices for alikeness through the couplings, including
+support. -/
 theorem coupling_of_levels {h : F} {l l' : Nat → C → Nat} {t : Nat}
     (same : ∀ c, CoupledIntoAt W obs h t c → l t c = l' t c) :
     W.AlikeThrough obs h l l' t :=
@@ -167,7 +168,7 @@ theorem coupling_alike_before {g : F}
     levels_alike_before balanced balanced' present start responds s le c
       (fun spread => unreached ⟨s, c, le, reg, spread⟩)
 
-/-- Any output type is admitted. Factoring through complete registration is supplied. -/
+/-- Any output type is admitted. Factoring through the complete couplings is supplied. -/
 theorem answer_alike_before {A : Type} {g : F}
     (read : (Nat → C → Nat) → A)
     (through : ∀ l l', W.AlikeThroughUpTo obs g l l' D → read l = read l')
@@ -298,7 +299,7 @@ theorem answers_before_and_after :
     readAt 2 (web false).level ≠ readAt 2 (web true).level :=
   ⟨rfl, Bool.noConfusion⟩
 
-/-- A reached signal may be ignored: passing through registration does not ensure use. -/
+/-- A reached signal may be ignored: passing through the couplings does not ensure use. -/
 theorem constant_read_ignores :
     (∀ l l', (web false).AlikeThroughUpTo (fun _ _ => True) false l l' 2 →
       (fun _ : Nat → Unit → Nat => false) l = (fun _ => false) l') ∧

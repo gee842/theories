@@ -1,0 +1,5 @@
+# Typicality.lean: a record registers one course → shows one course (the record of a run kept).
+### lean:Typicality
+= S7
+- A record registers one course, never a weight.
++ A record shows one course, never a weight.

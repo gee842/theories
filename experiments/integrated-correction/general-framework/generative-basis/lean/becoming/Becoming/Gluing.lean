@@ -4,11 +4,11 @@ import Becoming.Population
 /-!
 # Gluing: when readings in context glue, for parity
 
-`Becoming.Context` showed that a frame of context-free claims fits a world exactly where its
-registrations glue, with Specker's three boxes and the Mermin–Peres square as possibilities no
+`Becoming.Context` showed that a frame of context-free claims fits a world exactly where what its
+contexts show glues, with Specker's three boxes and the Mermin–Peres square as possibilities no
 context-free reading fits. This module gives the exact law for claims constrained by parity in
 each context, with no premise beyond the listed claims and contexts: the next step of the record
-of contextual registration, “the general parity obstruction; probabilistic contextuality” (Ren, 15
+of claims shown in context (`contextual-registration`), “the general parity obstruction; probabilistic contextuality” (Ren, 15
 October 2026: “please make best of your judgement, and push the frontier of completeness”).
 
 A parity system (`ParitySystem`) lists claims and gives each context the claims it counts and the
@@ -61,7 +61,7 @@ added together, say that nothing has odd parity.
 
 What is not derived: the quantum values, which need real amplitudes (Tsirelson's bound for CHSH is
 not stated here; `Becoming.Quantum` realizes the square with integer matrices); contextuality
-beyond parity constraints; and which registrations of an actual unfolding are of this kind. No
+beyond parity constraints; and which contextual systems of an actual unfolding are of this kind. No
 ethical predicate, ranking or axiom occurs.
 
 **Classical sources.** That a system of parity constraints has a solution exactly where no
@@ -362,7 +362,7 @@ variable {K C : Type} (S : ParitySystem K C)
 /-- The constraint of a context. -/
 def constraint (k : K) : ParityConstraint C := ⟨S.counts k, S.odd k⟩
 
-/-- A context registers the claims it counts. -/
+/-- The claims a context counts lie within it. -/
 def within (k : K) (c : C) : Prop := S.counts k c = true
 
 /-- The parity of an assignment's values on the listed claims a context counts. -/
@@ -382,7 +382,7 @@ times while the parities it requires add up to odd. -/
 def Contradicts (ks : List K) : Prop :=
   (∀ c, c ∈ S.claims → oddOver ks (fun k => S.counts k c) = false) ∧ oddOver ks S.odd = true
 
-/-- What a context can show depends only on the claims it registers. -/
+/-- What a context can show depends only on the claims within it. -/
 theorem local_ : Local S.within S.support :=
   fun k v v' same met =>
     (oddOver_congr fun c _ => and_congr_of (S.counts k c) (v c) (v' c) (same c)).symm.trans met
@@ -481,7 +481,7 @@ theorem noGlobal_iff [DecidableEq C] (distinct : Distinct S.claims) {all : List 
    fun ⟨_, contra⟩ => contradicts_noGlobal contra⟩
 
 /-- **Readings in context glue exactly where no selection of contexts contradicts.** With the
-contexts listed, some world registering what each context counts, respecting the possibilities,
+contexts listed, some world showing what each context counts, respecting the possibilities,
 glues at its configuration exactly where no selection contradicts. -/
 theorem glues_iff [DecidableEq C] (distinct : Distinct S.claims) {all : List K}
     (every : ∀ k, k ∈ all) :
@@ -560,7 +560,7 @@ def outcomes : List Outcome := [.left false, .left true, .right false, .right tr
 /-- Whether two settings are the same. -/
 def same (x y : Bool) : Bool := !(addParity x y)
 
-/-- A pair of settings registers the outcome at each station under its setting, and requires
+/-- A pair of settings holds the outcome at each station under its setting, and requires
 the two to differ exactly where both settings are `true`. -/
 def paritySystem : ParitySystem (Bool × Bool) Outcome :=
   ⟨outcomes, fun k o => match o with
@@ -582,7 +582,7 @@ theorem support_iff : ∀ (x y : Bool) (v : Outcome → Bool),
 /-- The four pairs of settings. -/
 def pairs : List (Bool × Bool) := [(false, false), (false, true), (true, false), (true, true)]
 
-/-- **The four pairs contradict**: each outcome is registered twice, and only one pair requires
+/-- **The four pairs contradict**: each outcome lies within two pairs, and only one pair requires
 the outcomes to differ. -/
 theorem pairs_contradict : paritySystem.Contradicts pairs :=
   ⟨fun o _ => match o with

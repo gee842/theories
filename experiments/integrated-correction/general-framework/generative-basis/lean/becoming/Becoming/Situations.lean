@@ -32,7 +32,7 @@ each step is taken in situations that each fix it.
   the one that happens is not a count, and nothing here fixes it.
 * **Any number of values counts as two through an event.** Take free branching on any listed
   values, each with a natural weight (`valueWeight`), read through any event. Summing a reading
-  of what the event registers over the courses, each counted by its weight, is summing it over
+  of what the event shows over the courses, each counted by its weight, is summing it over
   Typicality's courses with the event's weight `P` (`inside`) for one and the rest's `Q`
   (`outside`) for the other (`sum_event`). So the law of large numbers (`event_typical`) and
   exponential concentration (`event_concentrated`) count situations for every event, out of
@@ -348,11 +348,11 @@ theorem inside_add_outside (wt : V → Nat) (event : V → Bool) : ∀ vals : Li
 /-- Free branching on any values, a step to `v` weighing `wt v` whatever it comes from. -/
 def valueWeight (wt : V → Nat) (_ : V) (_ : Unit) (v : V) : Nat := wt v
 
-/-- What an event registers along a course of values. -/
+/-- What an event shows along a course of values. -/
 def seen (event : V → Bool) (c : List (Unit × V)) : List Bool := c.map fun x => event x.2
 
 /-- **Any number of values, read through an event, counts as two.** For every list of values
-with natural weights and every event, summing a reading of what the event registers over the
+with natural weights and every event, summing a reading of what the event shows over the
 courses of `n` steps, each counted by its weight, is summing it over Typicality's courses with
 the event's weight for one and the rest's for the other. -/
 theorem sum_event (vals : List V) (wt : V → Nat) (event : V → Bool) : ∀ (n : Nat) (s : V)

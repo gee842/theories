@@ -22,7 +22,7 @@ still add. This module states that count with no premise beyond those decisions.
   members holds the configurations, each step's relation is decided among them, and some `c`
   of them are pairwise apart at the first step, at some step `k` with `k + c ≤ N` members the
   relation joins are joined at the next (`SteadyAt`). Moore's bound (1956) is the case of a
-  determined law read through a registration (`Law.sameFuture_iff_classes` of
+  determined law read through a map (`Law.sameFuture_iff_classes` of
   `Becoming.Identification`); branching frames are `AlikeTo.steady_within_classes` of
   `Becoming.Likeness`.
 * **Refuted by nothing.** The decisions of finitely many propositions are together unrefuted

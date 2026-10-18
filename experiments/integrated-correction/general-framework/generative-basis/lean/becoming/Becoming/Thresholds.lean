@@ -4,9 +4,9 @@ import Becoming.Runaway
 /-!
 # Thresholds: loops within what a law reads, and the break
 
-`Becoming.Runaway` showed, for a formation whose policy goes through its registration with the
-rest of the exchange fixed, that a stock it depends on without observing is never used while the
-lower web supports it, and that nothing it registers bounds how near the break is.
+`Becoming.Runaway` showed, for a formation whose policy goes through its couplings with the
+rest of the exchange fixed, that a stock coupled into it by threshold only is never used while the
+lower web supports it, and that nothing coupled into it bounds how near the break is.
 `Becoming.Closing` showed how loops form within the unfolding, by a coupling that closes a chain.
 The reading of `Becoming.Loops` that Ren took on 16 October left open "where a formation's
 drawing comes to respond to the level its drawing lowers, where this meets `Becoming.Runaway`";
@@ -19,8 +19,8 @@ exchange, with no premise beyond what each theorem names.
   (`ExchangeLaw.ReadsAt.respondsWithin_unread`), so the strengths restricted to what is read
   (`restrictReads`) are strengths of the law (`ExchangeLaw.ReadsAt.restrict`). Every law of what
   has stood reads everything (`ExchangeLaw.Nonanticipating.readsAt_all`); a law reading through a
-  registration reads every schedule covering it (`ExchangeLaw.Through.readsAt`), and its courses
-  are policies through registration in `Becoming.Runaway`'s sense
+  coupling reads every schedule covering it (`ExchangeLaw.Through.readsAt`), and its courses
+  are policies through the couplings in `Becoming.Runaway`'s sense
   (`ExchangeLaw.Through.policyThrough`).
 * **Loops lie within what is read.** A coupling of the restricted strengths reads its level
   (`couplesAt_reads`, `couplesAt_of_reads`, `couples_reads`); a draw responds to the level it
@@ -34,7 +34,7 @@ exchange, with no premise beyond what each theorem names.
   (`unread_carried_nowhere`, from `held_while`).
 * **The break.** A law reads a stock only below a threshold (`ExchangeLaw.ReadsBelow`) when, while
   the stock stands at the threshold, it reads only that it stands: every law reading through a
-  registration in which no one observes the stock, with the threshold at least every need of it,
+  coupling in which the stock couples into no one by level, with the threshold at least every need of it,
   is such a law (`ExchangeLaw.Through.readsBelow`, deciding only numbers,
   `Thresholds.le_of_not_not`), so `Becoming.Runaway`'s formation is an instance. For every such law, raising the stock by any amount changes nothing else up to the
   break (`break_carried_nowhere`): the distance to the break is carried nowhere, for every law and
@@ -58,12 +58,12 @@ exchange, with no premise beyond what each theorem names.
   up to the break shows after it.
 
 **Readings (the AI's, agreed by Ren on 16 October 2026: "agree in general").**
-- A runaway's break is where a loop forms: the loop through the stock that would register the
+- A runaway's break is where a loop forms: the loop through the stock that would carry the
   distance is not there before the break, because the law reads the stock only once it fails.
   The blindness of `Becoming.Runaway` and the formation of `Becoming.Closing` are one event seen
   from the two sides.
-- What can register the distance is a reading of the stock's level before the break: observing
-  it forms the loop earlier, where it can respond while there is still stock
+- What can carry the distance is a reading of the stock's level before the break: coupling it in
+  by level forms the loop earlier, where it can respond while there is still stock
   (`Web.observed_raise_couples`).
 
 What is not derived: which schedule a law reads, which threshold, and whether a formation draws
@@ -160,9 +160,10 @@ theorem ExchangeLaw.Nonanticipating.readsAt_all (na : law.Nonanticipating) (part
     law.ReadsAt part fun _ _ _ => true :=
   fun h _ t l l' agree => na t h l l' fun s le d => agree s le d rfl
 
-/-- **A law reading through a registration reads every schedule covering it.** Where the law
-reads, for each formation outside the part, only what it registers, and the schedule marks at
-every step every condition the formation depends on or observes, the law reads the schedule. -/
+/-- **A law reading through a coupling reads every schedule covering it.** Where the law
+reads, for each formation outside the part, only what couples into it, and the schedule marks at
+every step every condition coupling into the formation, by threshold or by level, the law reads
+the schedule. -/
 theorem ExchangeLaw.Through.readsAt {W : Web F C} {obs : F → C → Prop}
     (through : law.Through W obs part)
     (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → reads t h d = true) :
@@ -175,9 +176,9 @@ theorem ExchangeLaw.Through.readsAt {W : Web F C} {obs : F → C → Prop}
           (agree s le e (cover t h e out (Or.inl ⟨s, requires⟩))).symm ▸ admits e requires⟩,
        fun e seen => agree s le e (cover t h e out (Or.inr seen))⟩
 
-/-- **The courses of a law reading through registration are policies through it.** Two flows
-following, outside the part, one law that reads, for each formation, only what it registers:
-each formation outside the part acts by a policy through its registration in the sense of
+/-- **The courses of a law reading through the couplings are policies through them.** Two flows
+following, outside the part, one law that reads, for each formation, only what couples into it:
+each formation outside the part acts by a policy through its couplings in the sense of
 `Becoming.Runaway`. -/
 theorem ExchangeLaw.Through.policyThrough {W W' : Web F C} {obs : F → C → Prop}
     {L L' : Flow F C} (through : law.Through W obs part) {g : F} (out : part g = false)
@@ -350,7 +351,7 @@ variable (law : ExchangeLaw F C)
 /-- **The law reads a stock only below a threshold.** For each formation outside the part, across
 the step from `t`: under histories alike up to `t` off the stock `c`, in both of which `c` has
 stood at each step `s` at least `θ s`, the law gives alike. While the stock stands, the law reads
-only that it stands, as a formation depending on it without observing it registers it. -/
+only that it stands, as a formation into which it couples by threshold only takes it in. -/
 def ReadsBelow (part : F → Bool) (c : C) (θ : Nat → Nat) : Prop :=
   ∀ h, part h = false → ∀ t l l', (∀ s, s ≤ t → θ s ≤ l s c ∧ θ s ≤ l' s c) →
     (∀ s, s ≤ t → ∀ e, e ≠ c → l s e = l' s e) → law.GivesAlike t h l l'
@@ -366,7 +367,7 @@ only below a threshold: two balanced courses with the same formations present, t
 alike and the rest following the law, apart at the start only in the stock, `d` higher in the
 second. Where the first course's stock stands at its threshold at every step before `T`, up to `T`
 the levels are alike everywhere else and the stock stands `d` higher. So up to the break nothing
-outside the stock differs, by however much the stock is raised: nothing the rest registers bounds
+outside the stock differs, by however much the stock is raised: nothing coupled into the rest bounds
 how near the break is. -/
 theorem break_carried_nowhere {c : C} {θ : Nat → Nat} (r : law.ReadsBelow part c θ)
     (balances : L.Balances W) (balances' : L'.Balances W')
@@ -390,11 +391,11 @@ theorem Thresholds.le_of_not_not {a b : Nat} (notBelow : ¬ ¬ a ≤ b) : a ≤ 
   | isTrue le => le
   | isFalse nle => absurd nle notBelow
 
-/-- **Every law reading through a registration in which no one observes the stock reads it only
-below the needs.** Where the law reads, for each formation outside the part, only what it
-registers, no formation outside the part observes the stock `c`, and `θ s` is at least what each
-of them needs of `c` at `s`, the law reads `c` only below `θ`: `Becoming.Runaway`'s formation
-depending on a stock without observing it is an instance. No decision on conditions is used. -/
+/-- **Every law reading through a coupling in which the stock couples into no one by level reads
+it only below the needs.** Where the law reads, for each formation outside the part, only what
+couples into it, the stock `c` couples by level into no formation outside the part, and `θ s` is
+at least what each of them needs of `c` at `s`, the law reads `c` only below `θ`:
+`Becoming.Runaway`'s formation, into which the stock couples by threshold only, is an instance. No decision on conditions is used. -/
 theorem ExchangeLaw.Through.readsBelow {W : Web F C} {obs : F → C → Prop} {c : C}
     {θ : Nat → Nat} (through : law.Through W obs part)
     (unobserved : ∀ h, part h = false → ¬ obs h c)
@@ -618,7 +619,7 @@ theorem forms_at_break (N : Nat) {k : Nat → Unit → Bool → Nat → Bool →
    fun t e s => (reads (N + 1)).standing_unread rfl only rfl t e s,
    onLoop strengths⟩
 
-/-- **The break registers only after it.** Two balanced courses of the draw, alike on the product
+/-- **The break shows only after it.** Two balanced courses of the draw, alike on the product
 at `T`: where at `T` the first stock stands below `N + 1` and the second at it, across the step from
 `T` the second gives one more to the product. The raise that changed nothing up to the break
 (`break_carried_nowhere`) shows at the step after it. -/

@@ -1,0 +1,510 @@
+# Selection.lean: a selection through a formation's couplings; a selection through a map of the alternatives.
+### lean:Selection
+= .
+- # Selection: a selection through registration reaches exactly what registers
++ # Selection: a selection through a formation's couplings reaches exactly what couples in
+= .
+- go: "Great, let's finish all of them". This module states, with no premise beyond what each law
+- names, what a selection decided by a formation's registration can tell apart. A selection is any
+- claim about level histories, read as which histories are kept, rewarded or leave more
+- descendants. It is through a selector's registration up to a step when the histories the
+- selector registers alike up to that step are selected alike (`Web.SelectsThrough`); a score is
+- through it when they score alike (`Web.ScoresThrough`). That a selection is through
+- registration is supplied, never derived.
+-
+- * **A selection reaches exactly what registers.** Two histories are selected alike by every
+-   selection through `f`'s registration up to `t` exactly when `f` registers them alike up to `t`
+-   (`Web.selects_alike_iff`). The belief of `Becoming.Testing` is such a selection
+-   (`Web.class_selects`), so where `f` registers two histories apart, a selection through its
+-   registration holds at one and fails at the other (`Web.separates`); registering alike is an
+-   equivalence (`Web.AlikeThroughUpTo.trans`). A selection through registration is a claim its
+-   selector tests completely, refuted exactly where it fails (`Web.SelectsThrough.excludes_iff`).
+-   Admission and the levels of observed conditions are selected and scored through registration
+-   (`Web.admits_through`, `Web.observed_scores`); a selection through registration stays so at
+-   later steps, under more observation, under negation and under conjunction
+-   (`Web.SelectsThrough.later`, `Web.SelectsThrough.widen`, `Web.SelectsThrough.not`,
+-   `Web.SelectsThrough.and`), and a score's thresholds are selections
+-   (`Web.ScoresThrough.atLeast`). For scores the same law holds where registering alike with the
+-   first history is decidable, a hypothesis named at that point (`Web.scores_alike_iff`).
+- * **Groups.** A selection through a group's pooled registration is one that selects alike the
+-   histories every member registers alike (`Web.SelectsThroughAll`); the same law holds of it
+-   (`Web.selects_alike_all_iff`, `Web.separates_all`). A member's selection is a group selection
+-   (`Web.SelectsThrough.all`), and group selections are closed under conjunction
+-   (`Web.SelectsThroughAll.and`).
+- * **Blind beyond the registration closure.** With the rest of the exchange fixed, every
+-   selection and every score through the registration of a formation within `f`'s registration
+-   closure selects the levels with and without a part beyond the closure alike
+-   (`Flow.unselected_beyond_coupling`, `Flow.unscored_beyond_coupling`); so does every
+-   selection through the pooled registration of a group within the closure
+-   (`Flow.unselected_beyond_coupling_all`). Where the members respond, under the hypotheses of
+-   `Flow.alike_within_coupling`, it selects the two flows alike
+-   (`Flow.unselected_beyond_coupling_responsive`).
+- * **The gap.** In `Clearing` the dweller lies within the clearer's reach closure and beyond its
+-   registration closure, and the clearer does not register the habitat
+-   (`Clearing.dweller_within_reach`). Every selection through the clearer's registration selects
+-   the cleared and the spared world alike at every step, while the dweller ends in the one and
+-   not the other; that the dweller ends is selected through the clearer's registration at no step
+-   (`Clearing.unselected`). The dweller's admission at the third step is a selection through the
+-   dweller's registration and separates the two worlds (`Clearing.selected_by_dweller`); the
+-   admission of both at the third step is a selection through the pooled registration of the
+-   clearer and the dweller that separates them and is through neither alone
+-   (`Clearing.selected_pooled`).
+- * **Selection favours reaching beyond.** In `Diversion` a taker gauges a store. In the diverting
+-   flow it takes one unit from a source a dweller depends on and gives it to the store; in the
+-   undiverted flow nothing is exchanged. The selection that the store stands at least one at the
+-   second step is through the taker's registration, holds in the diverting flow and fails in the
+-   undiverted one, while the diverting flow reaches the dweller, beyond the taker's registration
+-   closure, and ends it (`Diversion.favours`). Every selection through the taker's registration
+-   selects the diverting flow alike with a supplying flow, which raises the store without drawing
+-   on the source and reaches nothing beyond the taker (`Diversion.blind_to_source`).
++ go: "Great, let's finish all of them". This module states, with no premise beyond what each law
++ names, what a selection decided by what couples into a formation can tell apart. A selection is
++ any claim about level histories, read as which histories are kept, rewarded or leave more
++ descendants. It is through a selector's couplings up to a step when the histories alike through
++ them up to that step are selected alike (`Web.SelectsThrough`); a score is through them when
++ they score alike (`Web.ScoresThrough`). That a selection is through a selector's couplings is
++ supplied, never derived.
++
++ * **A selection reaches exactly what couples in.** Two histories are selected alike by every
++   selection through `f`'s couplings up to `t` exactly when they are alike through `f`'s couplings
++   up to `t` (`Web.selects_alike_iff`). The class alike through `f` of `Becoming.Testing` is such
++   a selection (`Web.class_selects`), so where two histories are apart through `f`'s couplings, a
++   selection through them holds at one and fails at the other (`Web.separates`); alike through the
++   couplings is an equivalence (`Web.AlikeThroughUpTo.trans`). A selection through a selector's
++   couplings is a claim the selector tests completely, excluded exactly where it fails
++   (`Web.SelectsThrough.excludes_iff`). Admission and the levels of conditions coupled in by level
++   are selected and scored through the couplings (`Web.admits_through`, `Web.observed_scores`); a
++   selection through the couplings stays so at later steps, under more coupling by level, under
++   negation and under conjunction (`Web.SelectsThrough.later`, `Web.SelectsThrough.widen`,
++   `Web.SelectsThrough.not`, `Web.SelectsThrough.and`), and a score's thresholds are selections
++   (`Web.ScoresThrough.atLeast`). For scores the same law holds where being alike with the
++   first history is decidable, a hypothesis named at that point (`Web.scores_alike_iff`).
++ * **Groups.** A selection through a group's pooled couplings is one that selects alike the
++   histories alike through every member's couplings (`Web.SelectsThroughAll`); the same law holds
++   of it (`Web.selects_alike_all_iff`, `Web.separates_all`). A member's selection is a group
++   selection (`Web.SelectsThrough.all`), and group selections are closed under conjunction
++   (`Web.SelectsThroughAll.and`).
++ * **Blind beyond the coupling closure.** With the rest of the exchange fixed, every
++   selection and every score through the couplings of a formation within `f`'s coupling
++   closure selects the levels with and without a part beyond the closure alike
++   (`Flow.unselected_beyond_coupling`, `Flow.unscored_beyond_coupling`); so does every
++   selection through the pooled couplings of a group within the closure
++   (`Flow.unselected_beyond_coupling_all`). Where the members respond, under the hypotheses of
++   `Flow.alike_within_coupling`, it selects the two flows alike
++   (`Flow.unselected_beyond_coupling_responsive`).
++ * **The gap.** In `Clearing` the dweller lies within the clearer's reach closure and beyond its
++   coupling closure, and the habitat does not couple into the clearer
++   (`Clearing.dweller_within_reach`). Every selection through the clearer's couplings selects
++   the cleared and the spared world alike at every step, while the dweller ends in the one and
++   not the other; that the dweller ends is selected through the clearer's couplings at no step
++   (`Clearing.unselected`). The dweller's admission at the third step is a selection through the
++   dweller's couplings and separates the two worlds (`Clearing.selected_by_dweller`); the
++   admission of both at the third step is a selection through the pooled couplings of the
++   clearer and the dweller that separates them and is through neither alone
++   (`Clearing.selected_pooled`).
++ * **Selection favours reaching beyond.** In `Diversion` a taker gauges a store. In the diverting
++   flow it takes one unit from a source a dweller depends on and gives it to the store; in the
++   undiverted flow nothing is exchanged. The selection that the store stands at least one at the
++   second step is through the taker's couplings, holds in the diverting flow and fails in the
++   undiverted one, while the diverting flow reaches the dweller, beyond the taker's coupling
++   closure, and ends it (`Diversion.favours`). Every selection through the taker's couplings
++   selects the diverting flow alike with a supplying flow, which raises the store without drawing
++   on the source and reaches nothing beyond the taker (`Diversion.blind_to_source`).
+= .
+- * **Through a model of the options.** A selector tells options apart only through its model of
+-   them: an entry for each option, of any kind; options given one entry are tied, lumped together
+-   by the model. A selection is through the model when exchanging two options' entries exchanges
+-   what it selects (`Relabel.Equivariant`). Two options are selected alike by every such selection
+-   exactly when the model ties them (`Relabel.selected_alike_iff`), as a selection through
+-   registration reaches exactly what registers. One selecting at most one option singles out
+-   exactly the options whose entry no other option shares (`Relabel.singled_iff_untied`, the
+-   selection `Relabel.Alone`), and at a full tie of two or more options it selects none
+-   (`Relabel.Equivariant.none_of_full_tie`). A valuation through the model, such as a weight on
+-   each option, gives tied options equal values (`Relabel.EquivariantValue.tied`,
+-   `Relabel.valued_alike_iff`), and a choice of one option chooses no tied option and withholds at
+-   a full tie (`Relabel.EquivariantChoice.untied`, `Relabel.EquivariantChoice.withholds_of_full_tie`).
+-   Exchanging two options tells them apart: their equality is decided, a condition each statement
+-   names. The model is a lumping (`Lumped` of `Becoming.Learning`), and a selection through it is
++ * **Through a map of the alternatives.** A selector tells alternatives apart only through its map
++   of them: an entry for each alternative, of any kind; alternatives given one entry are tied,
++   lumped together by the map. A selection factors through the map when exchanging two
++   alternatives' entries exchanges what it selects (`Relabel.Equivariant`). Two alternatives are
++   selected alike by every such selection exactly when the map ties them
++   (`Relabel.selected_alike_iff`), as a selection through a formation's couplings reaches exactly
++   what couples in. One selecting at most one alternative singles out exactly the alternatives
++   whose entry no other alternative shares (`Relabel.singled_iff_untied`, the selection
++   `Relabel.Alone`), and at a full tie of two or more alternatives it selects none
++   (`Relabel.Equivariant.none_of_full_tie`). A valuation through the map, such as a weight on
++   each alternative, gives tied alternatives equal values (`Relabel.EquivariantValue.tied`,
++   `Relabel.valued_alike_iff`), and a choice of one alternative chooses no tied alternative and
++   withholds at a full tie (`Relabel.EquivariantChoice.untied`,
++   `Relabel.EquivariantChoice.withholds_of_full_tie`). Exchanging two alternatives tells them
++   apart: their equality is decided, a condition each statement names. The map is a lumping
++   (`Lumped` of `Becoming.Learning`), and a selection through it is
+= .
+- - Any selection decided by what a selector registers (keeping, rewarding, reproducing,
+-   training) reaches exactly what that selector registers. It is blind to whatever a candidate's
+-   part does beyond the selector's registration closure, however far the candidate's reach
+-   closure extends. The gap is the reach closure less the registration closure.
+- - The gap closes only through relations: dependence, observation, or another's registration
+-   pooled, as the dweller's is in `Clearing`. Pooling with formations within the closure does not
+-   close it (`Flow.unselected_beyond_coupling_all`).
+- - Where reaching beyond raises what registers, selection favours it (`Diversion`), and cannot
+-   tell it from raising what registers without reaching beyond. With `share_rises` the share of
+-   what reaches beyond rises among descendants while the world is open; enclosed, the selection
+-   stops with the descent (`Flow.descent_exhausted` of `Becoming.Capture`).
+- - Read for AI training, a reward process is a selector: training reaches only what the reward
+-   registers. The AI connects this with Ren's phrase from an earlier paper, "capability outruns
+-   correction": what is selected through a registration can reach beyond it, and correction by
+-   that registration does not reach there.
+-
+- What is not derived: who selects, what the selector registers, that a selection is through
+- registration at all (supplied as `Web.SelectsThrough`), that offspring follow the selection,
+- that reaching beyond is chosen, that a selection is through a given model, and how an option it
+- singles out is found (a search over listed options). The law for scores in the converse direction takes the
+- decidability of registering alike as a hypothesis. No ethical predicate, ranking or axiom occurs.
+-
+- **Classical sources.** A selection through a model of the options that commutes with relabelling
+- (`Relabel.Equivariant`) is neutral in the sense of May (1952): it treats the options alike under
+- every permutation that the model does not tell apart, so that at a full tie it selects none, as
+- May's neutrality forces a tie between alternatives that are interchanged.
++ - Any selection decided by what couples into a selector (keeping, rewarding, reproducing,
++   training) reaches exactly what couples into that selector. It is blind to whatever a
++   candidate's part does beyond the selector's coupling closure, however far the candidate's
++   reach closure extends. The gap is the reach closure less the coupling closure.
++ - The gap closes only through relations: dependence, coupling by level, or another's couplings
++   pooled, as the dweller's are in `Clearing`. Pooling with formations within the closure does not
++   close it (`Flow.unselected_beyond_coupling_all`).
++ - Where reaching beyond raises what couples in, selection favours it (`Diversion`), and cannot
++   tell it from raising what couples in without reaching beyond. With `share_rises` the share of
++   what reaches beyond rises among descendants while the world is open; enclosed, the selection
++   stops with the descent (`Flow.descent_exhausted` of `Becoming.Capture`).
++ - Read for AI training, a reward process is a selector: training reaches only what couples into
++   the reward. The AI connects this with Ren's phrase from an earlier paper, "capability outruns
++   correction": what is selected through a selector's couplings can reach beyond them, and
++   correction through those couplings does not reach there.
++
++ What is not derived: who selects, what couples into the selector, that a selection is through
++ its couplings at all (supplied as `Web.SelectsThrough`), that offspring follow the selection,
++ that reaching beyond is chosen, that a selection factors through a given map, and how an
++ alternative it singles out is found (a search over listed alternatives). The law for scores in the
++ converse direction takes the decidability of being alike through the couplings as a hypothesis.
++ No ethical predicate, ranking or axiom occurs.
++
++ **Classical sources.** A selection through a map of the alternatives that commutes with
++ relabelling (`Relabel.Equivariant`) is neutral in the sense of May (1952): it treats the
++ alternatives alike under every permutation that the map does not tell apart, so that at a full tie
++ it selects none, as May's neutrality forces a tie between alternatives that are interchanged.
+= .
+- /-! ## Selection through registration -/
++ /-! ## Selection through a formation's couplings -/
+= .
+- /-- A selection is through `f`'s registration up to `t`: histories `f` registers alike up to `t`
+- are selected alike. A selection is any claim about level histories: which are kept, rewarded or
+- leave more descendants. -/
++ /-- A selection is through `f`'s couplings up to `t`: histories alike through `f`'s couplings up
++ to `t` are selected alike. A selection is any claim about level histories: which are kept,
++ rewarded or leave more descendants. -/
+= .
+- /-- A score is through `f`'s registration up to `t`: histories `f` registers alike up to `t`
+- score alike. -/
++ /-- A score is through `f`'s couplings up to `t`: histories alike through them up to `t` score
++ alike. -/
+= .
+- /-- A selection is through a group's pooled registration up to `t`: histories every member
+- registers alike up to `t` are selected alike. -/
++ /-- A selection is through a group's pooled couplings up to `t`: histories alike through every
++ member's couplings up to `t` are selected alike. -/
+= .
+- /-- Registering alike at a step is transitive. -/
++ /-- Alike through the couplings at a step is transitive. -/
+= .
+- /-- Registering alike up to a step is transitive: with `AlikeThrough.refl` and
++ /-- Alike through the couplings up to a step is transitive: with `AlikeThrough.refl` and
+= .
+- /-- Every member registers a history alike with itself. -/
++ /-- A history is alike with itself through every member's couplings. -/
+= .
+- /-- Registering alike in every member is symmetric. -/
++ /-- Alike through every member's couplings is symmetric. -/
+= .
+- /-- Registering alike in every member is transitive. -/
++ /-- Alike through every member's couplings is transitive. -/
+= .
+- /-- A formation's belief, the histories it registers alike with `l`, is a selection through its
+- registration. -/
++ /-- The class alike through a formation, the histories alike with `l` through its couplings, is
++ a selection through its couplings. -/
+= .
+- /-- **A selection reaches exactly what registers.** Two histories are selected alike by every
+- selection through `g`'s registration up to `t` exactly when `g` registers them alike up to `t`. -/
++ /-- **A selection reaches exactly what couples in.** Two histories are selected alike by every
++ selection through `g`'s couplings up to `t` exactly when they are alike through `g`'s couplings
++ up to `t`. -/
+= .
+- /-- **What registers apart is separated.** Where `g` does not register two histories alike up to
+- `t`, a selection through its registration, its belief, holds at the first and fails at the
+- second. -/
++ /-- **What is apart through the couplings is separated.** Where two histories are not alike
++ through `g`'s couplings up to `t`, a selection through them, the class alike through `g`, holds
++ at the first and fails at the second. -/
+= .
+- /-- **A selection through registration is tested completely.** Its selector refutes it exactly
+- where it fails. -/
++ /-- **A selection through a selector's couplings is tested completely.** It is excluded at its
++ selector exactly where it fails. -/
+= .
+- /-- Admission at a step up to `t` is selected through registration up to `t`. -/
++ /-- Admission at a step up to `t` is selected through the couplings up to `t`. -/
+= .
+- /-- The level of an observed condition at a step up to `t` is scored through registration up to
+- `t`. -/
++ /-- The level of a condition coupled in by level, at a step up to `t`, is scored through the
++ couplings up to `t`. -/
+= .
+- /-- A score's threshold is a selection through the same registration. -/
++ /-- A score's threshold is a selection through the same couplings. -/
+= .
+- /-- A selection through registration up to a step is through registration up to every later
+- step. -/
++ /-- A selection through the couplings up to a step is through them up to every later step. -/
+= .
+- /-- A selection through registration stays so under more observation. -/
++ /-- A selection through the couplings stays so under more coupling by level. -/
+= .
+- /-- What a selection through registration does not select is selected through it. -/
++ /-- What a selection through the couplings does not select is selected through them. -/
+= .
+- /-- Two selections through one registration select jointly through it. -/
++ /-- Two selections through one formation's couplings select jointly through them. -/
+= .
+- /-- **Scores reach exactly what registers, where registering alike is decidable.** Given, for
+- each history, whether `g` registers it alike with `l` up to `t`, two histories are scored alike
+- by every score through `g`'s registration exactly when `g` registers them alike: the mark of
+- the belief is such a score. -/
++ /-- **Scores reach exactly what couples in, where being alike through the couplings is
++ decidable.** Given, for each history, whether it is alike with `l` through `g`'s couplings up to
++ `t`, two histories are scored alike by every score through `g`'s couplings exactly when they are
++ alike through them: the mark of the class alike through `g` is such a score. -/
+= .
+- /-- Two group selections select jointly through the pooled registration. -/
++ /-- Two group selections select jointly through the pooled couplings. -/
+= .
+- /-- **A pooled selection reaches exactly what the pool registers.** Two histories are selected
+- alike by every selection through a group's pooled registration up to `t` exactly when every
+- member registers them alike up to `t`. -/
++ /-- **A pooled selection reaches exactly what couples into the pool.** Two histories are
++ selected alike by every selection through a group's pooled couplings up to `t` exactly when they
++ are alike through every member's couplings up to `t`. -/
+= .
+- /-- Where the members do not all register two histories alike up to `t`, a selection through the
+- pooled registration holds at the first and fails at the second. -/
++ /-- Where two histories are not alike through every member's couplings up to `t`, a selection
++ through the pooled couplings holds at the first and fails at the second. -/
+= .
+- /-! ## Blind beyond the registration closure -/
++ /-! ## Blind beyond the coupling closure -/
+= .
+- /-- **Selection is blind beyond the registration closure.** With the rest of the exchange fixed,
+- where every member of a part lies beyond `f`'s registration closure, every selection through the
+- registration of a formation within the closure, `f` among them, selects the levels with and
+- without the part alike: an instance of `uncoupled_beyond_coupling`. -/
++ /-- **Selection is blind beyond the coupling closure.** With the rest of the exchange fixed,
++ where every member of a part lies beyond `f`'s coupling closure, every selection through the
++ couplings of a formation within the closure, `f` among them, selects the levels with and
++ without the part alike: an instance of `uncoupled_beyond_coupling`. -/
+= .
+- /-- Every score through the registration of a formation within the closure scores the levels
+- with and without a part beyond it alike. -/
++ /-- Every score through the couplings of a formation within the closure scores the levels
++ with and without a part beyond it alike. -/
+= .
+- /-- **Pooling within the closure stays blind.** Every selection through the pooled registration
+- of a group whose members lie within `f`'s registration closure selects the levels with and
+- without a part beyond the closure alike. -/
++ /-- **Pooling within the closure stays blind.** Every selection through the pooled couplings
++ of a group whose members lie within `f`'s coupling closure selects the levels with and
++ without a part beyond the closure alike. -/
+= .
+- `alike_within_coupling`, every selection through the registration of a formation within
+- `f`'s registration closure, drawn through both flows, selects the two flows' levels alike. -/
++ `alike_within_coupling`, every selection through the couplings of a formation within
++ `f`'s coupling closure, drawn through both flows, selects the two flows' levels alike. -/
+= .
+- selection is through a selector's registration, parents whose histories it registers alike are
+- carriers together (`Web.SelectsThrough`), whatever their parts do beyond its registration
+- closure. -/
++ selection is through a selector's couplings, parents whose histories are alike through them are
++ carriers together (`Web.SelectsThrough`), whatever their parts do beyond its coupling
++ closure. -/
+= .
+- /-! ## Selection through a model of the options
+-
+- A selector tells options apart only through its model of them: an entry per option, of any kind,
+- the options given one entry being tied, lumped together by the model (`Lumped` of
+- `Becoming.Learning`). A selection among them is through the model when exchanging two options'
+- entries exchanges what it selects (`Relabel.Equivariant`); a valuation of the options, such as a
+- weight on each, is through the model when it exchanges their values (`Relabel.EquivariantValue`);
+- a choice of at most one option is when it exchanges the choice (`Relabel.EquivariantChoice`). As a
+- selection through registration reaches exactly what registers (`Web.selects_alike_iff`), a
+- selection through a model separates exactly what the model separates. -/
++ /-! ## Selection through a map of the alternatives
++
++ A selector tells alternatives apart only through its map of them: an entry per alternative, of any
++ kind, the alternatives given one entry being tied, lumped together by the map (`Lumped` of
++ `Becoming.Learning`). A selection among them factors through the map when exchanging two
++ alternatives' entries exchanges what it selects (`Relabel.Equivariant`); a valuation of the
++ alternatives, such as a weight on each, factors through the map when it exchanges their values
++ (`Relabel.EquivariantValue`); a choice of at most one alternative does when it exchanges the
++ choice (`Relabel.EquivariantChoice`). As a selection through a formation's couplings reaches
++ exactly what couples in (`Web.selects_alike_iff`), a selection through a map separates exactly
++ what the map separates. -/
+= .
+- /-- Exchange the options `a` and `b`. -/
++ /-- Exchange the alternatives `a` and `b`. -/
+= .
+- /-- Exchanging twice returns every option. -/
++ /-- Exchanging twice returns every alternative. -/
+= .
+- /-- A selection is through the model: where `r'` is `r` with the entries of `a` and `b`
+- exchanged, it selects at `r'` what it selects at `r`, exchanged. -/
++ /-- A selection factors through the map: where `r'` is `r` with the entries of `a` and `b`
++ exchanged, it selects at `r'` what it selects at `r`, exchanged. -/
+= .
+- /-- A valuation of the options is through the model: exchanging two options' entries exchanges
+- their values. -/
++ /-- A valuation of the alternatives factors through the map: exchanging two alternatives' entries
++ exchanges their values. -/
+= .
+- /-- A choice of at most one option is through the model: exchanging two options' entries
+- exchanges the choice. -/
++ /-- A choice of at most one alternative factors through the map: exchanging two alternatives'
++ entries exchanges the choice. -/
+= .
+- /-- Exchanging two tied options leaves the model as it was. -/
++ /-- Exchanging two tied alternatives leaves the map as it was. -/
+= .
+- /-- **Tied options are selected alike.** -/
++ /-- **Tied alternatives are selected alike.** -/
+= .
+- /-- **A selection through a model separates exactly what the model separates.** Two options are
+- selected alike by every selection through the model exactly when the model ties them. -/
++ /-- **A selection through a map separates exactly what the map separates.** Two alternatives are
++ selected alike by every selection through the map exactly when the map ties them. -/
+= .
+- /-- **What is singled out is untied.** A selection through the model that selects at most one
+- option at `r` selects none that another option's entry ties. -/
++ /-- **What is singled out is untied.** A selection through the map that selects at most one
++ alternative at `r` selects none that another alternative's entry ties. -/
+= .
+- /-- At a full tie of two or more options, a selection through the model that selects at most one
+- option selects none. -/
++ /-- At a full tie of two or more alternatives, a selection through the map that selects at most
++ one alternative selects none. -/
+= .
+- /-- The option holding `v` alone in the model. -/
++ /-- The alternative holding `v` alone in the map. -/
+= .
+- /-- Holding an entry alone is read through the model. -/
++ /-- Holding an entry alone is read through the map. -/
+= .
+- /-- At most one option holds an entry alone. -/
++ /-- At most one alternative holds an entry alone. -/
+= .
+- /-- **An option is singled out exactly where the model separates it.** Some selection through the
+- model, selecting at most one option at each model, selects `k` at `r` exactly when no
+- other option's entry ties `k`'s. -/
++ /-- **An alternative is singled out exactly where the map separates it.** Some selection through
++ the map, selecting at most one alternative at each map, selects `k` at `r` exactly when no
++ other alternative's entry ties `k`'s. -/
+= .
+- /-- **Tied options are valued alike**, a weight on each among them. -/
++ /-- **Tied alternatives are valued alike**, a weight on each among them. -/
+= .
+- /-- At a full tie every option is valued alike. -/
++ /-- At a full tie every alternative is valued alike. -/
+= .
+- /-- The options taking a given value form a selection through the model. -/
++ /-- The alternatives taking a given value form a selection through the map. -/
+= .
+- /-- A constant valuation, the same weight on every option, is through the model. -/
++ /-- A constant valuation, the same weight on every alternative, factors through the map. -/
+= .
+- /-- The entry itself is a valuation through the model. -/
++ /-- The entry itself is a valuation through the map. -/
+= .
+- /-- Two options are valued alike by every valuation through the model exactly when the model
+- ties them. -/
++ /-- Two alternatives are valued alike by every valuation through the map exactly when the map
++ ties them. -/
+= .
+- /-- A choice through the model selects, through the model, the option it chooses. -/
++ /-- A choice through the map selects, through the map, the alternative it chooses. -/
+= .
+- /-- A choice chooses at most one option. -/
++ /-- A choice chooses at most one alternative. -/
+= .
+- /-- **A choice through the model chooses no tied option.** -/
++ /-- **A choice through the map chooses no tied alternative.** -/
+= .
+- /-- **At a full tie of two or more options a choice through the model withholds.** -/
++ /-- **At a full tie of two or more alternatives a choice through the map withholds.** -/
+= .
+- /-- **What the clearer's selection cannot reach.** Every selection through the clearer's
+- registration (support only, the observation of `alike_for_clearer`) selects the cleared and the
+- spared world alike at every step, while the dweller is ended in the cleared world and not in the
+- spared one: that the dweller is ended is selected through the clearer's registration at no
+- step. -/
++ /-- **What the clearer's selection cannot reach.** Every selection through the clearer's
++ couplings (by threshold only, as in `alike_for_clearer`) selects the cleared and the
++ spared world alike at every step, while the dweller is ended in the cleared world and not in the
++ spared one: that the dweller is ended is selected through the clearer's couplings at no
++ step. -/
+= .
+- /-- **The gap.** The dweller lies within the clearer's reach closure and beyond its registration
+- closure; the clearer does not register the habitat its clearing takes from. -/
++ /-- **The gap.** The dweller lies within the clearer's reach closure and beyond its coupling
++ closure; the habitat its clearing takes from does not couple into the clearer. -/
+= .
+- /-- **The dweller's registration selects.** The dweller's admission at the third step is a
+- selection through the dweller's registration; it holds in the spared world and fails in the
+- cleared one, which the dweller registers apart up to the third step. -/
++ /-- **The dweller's couplings select.** The dweller's admission at the third step is a
++ selection through the dweller's couplings; it holds in the spared world and fails in the
++ cleared one, which are apart through the dweller's couplings up to the third step. -/
+= .
+- /-- The dweller registers the spared world alike with the world whose resource is gone at the
+- third step, at every step. -/
++ /-- The spared world is alike through the dweller's couplings with the world whose resource is
++ gone at the third step, at every step. -/
+= .
+- a selection through the pooled registration of the clearer and the dweller. It holds in the
+- spared world and fails in the cleared one, and it is through neither registration alone: the
+- clearer registers the cleared world alike with the spared one, the dweller the world whose
+- resource is gone. -/
++ a selection through the pooled couplings of the clearer and the dweller. It holds in the
++ spared world and fails in the cleared one, and it is through neither's couplings alone: through
++ the clearer's the cleared world is alike with the spared one, through the dweller's the world
++ whose resource is gone is. -/
+= .
+- /-- The taker observes the store. -/
++ /-- The store couples into the taker by level. -/
+= .
+- /-- In the diverting flow the taker alone is closed under being affected through what is
+- registered: only the taker exchanges with the store, and it depends on nothing. -/
++ /-- In the diverting flow the taker alone is closed under being affected through what couples
++ in: only the taker exchanges with the store, and it depends on nothing. -/
+= .
+- The diverting flow reaches the dweller, which lies within the taker's reach closure and beyond its
+- registration closure; the undiverted flow does not reach it. The selection that the store stands
+- at least one at the second step is through the taker's registration, holds in the diverting flow
++ The diverting flow reaches the dweller, which lies within the taker's reach closure and beyond its
++ coupling closure; the undiverted flow does not reach it. The selection that the store stands
++ at least one at the second step is through the taker's couplings, holds in the diverting flow
+= .
+- store as the diverting flow does, and reaches nothing beyond the taker. The taker registers the
+- diverting and the supplying levels alike at every step, so every selection through its
+- registration selects them alike, while the dweller is supported at every step in the supplying
++ store as the diverting flow does, and reaches nothing beyond the taker. The diverting and the
++ supplying levels are alike through the taker's couplings at every step, so every selection
++ through them selects the two alike, while the dweller is supported at every step in the supplying

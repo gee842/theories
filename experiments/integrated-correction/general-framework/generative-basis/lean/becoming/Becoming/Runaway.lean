@@ -1,43 +1,43 @@
 import Becoming.Testing
 
 /-!
-# Runaway: what a loop through its own registration cannot register
+# Runaway: what does not couple into a loop through its own couplings
 
 On 11 October 2026 Ren asked for "wisdoms to avoid run away feedbacks". `Becoming.Testing`
-states threshold blindness for an exchange that follows a formation's registration
+states threshold blindness for an exchange that follows what couples into a formation
 (`Flow.ExchangeFollows`), and reads a runaway as a loop running inside it. This module states,
-with no premise beyond balance on the conditions registered, what that means for every
+with no premise beyond balance on the conditions coupled in, what that means for every
 policy and how far the blindness reaches. Ren's reply to the proposal was "no extra review
 needed, merge, then continue".
 
-* **Every policy through registration.** A formation's policy goes through its registration
-  when its own exchange on what it registers is alike wherever it has registered alike
-  (`Flow.PolicyThrough`). With the rest of the exchange on what it registers fixed
-  (`Flow.OthersFixed`), the exchange then follows its registration
-  (`Flow.exchangeFollows_of_policy`). So for every such policy, a difference in a stock the
-  formation depends on and does not observe is never used while the lower web supports it
+* **Every policy through the couplings.** A formation's policy goes through its couplings
+  when its own exchange on what couples into it is alike wherever the flows have been alike
+  through its couplings (`Flow.PolicyThrough`). With the rest of the exchange on what couples
+  into it fixed (`Flow.OthersFixed`), the exchange then follows what couples in
+  (`Flow.exchangeFollows_of_policy`). So for every such policy, a difference in a stock coupled
+  into the formation by threshold only is never used while the lower web supports it
   (`Flow.policy_keeps_difference`), and wherever the difference has been used, the lower web
   failed to support the formation at some earlier step (`Flow.policy_uses_after_failure`).
-* **The distance to the break is not registered.** Raising a stock by `d` (`Web.raise`) keeps
+* **The distance to the break does not couple in.** Raising a stock by `d` (`Web.raise`) keeps
   balance on every condition (`Flow.BalancesOn.raise`). At every step at which a web supports
-  a formation that does not observe the stock, the raised web registers alike for it
-  (`Web.alikeThrough_raise`). So before the break nothing the formation registers bounds how
-  near the break is: for every horizon, where the stock is the only requirement that may be
-  unmet up to it, some raised web registers alike at every step at which the actual web
-  supports the formation, and supports it at every step up to the horizon
-  (`Web.break_not_bounded`); the raised web is dependent where the web is
+  a formation into which the stock couples by threshold only, the raised web is alike through
+  the formation's couplings (`Web.alikeThrough_raise`). So before the break nothing that couples
+  into the formation bounds how near the break is: for every horizon, where the stock is the only
+  requirement that may be unmet up to it, some raised web is alike through its couplings at every
+  step at which the actual web supports the formation, and supports it at every step up to the
+  horizon (`Web.break_not_bounded`); the raised web is dependent where the web is
   (`Web.Dependent.raise`). `SupportDrawn.break_uncoupled` is an instance.
-* **Observation registers it.** Observing the stock, a formation registers any raise at once
-  (`Web.observed_raise_couples`).
+* **Coupling by level passes it.** With the stock coupled into a formation by level, any raise
+  passes at once (`Web.observed_raise_couples`).
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D26).**
-- A runaway is a loop whose registration cannot register the distance to its break: before the
-  break, its own registration is the same as in a world with as much more stock as one likes.
-  Its policy, however clever, cannot use what it does not register.
-- To avoid a runaway without forgoing what is there, a formation needs what registers the
-  stock (measurement), or a model of it (理, a model answerable to registration), or another
-  formation whose registration does (`Becoming.Testing`); experiment needs a return and a model
-  of what is irrelevant (`Becoming.Experiment`).
+- A runaway is a loop into which the distance to its break does not couple: before the break,
+  what couples into it is the same as in a world with as much more stock as one likes. Its
+  policy, however clever, cannot use what does not couple into it.
+- To avoid a runaway without forgoing what is there, a formation needs the stock coupled into it
+  by level (measurement), or a model of it (理, a model answerable to what couples in), or another
+  formation into which the stock couples (`Becoming.Testing`); experiment needs a return and a
+  model of what is irrelevant (`Becoming.Experiment`).
 
 What is not derived: that a formation draws more than is renewed, wants to keep its support,
 or forms a policy; which formations respond to what. No ethical predicate, ranking or axiom
@@ -48,28 +48,28 @@ namespace Becoming
 
 variable {F C : Type}
 
-/-! ## Every policy through registration -/
+/-! ## Every policy through the couplings -/
 
 namespace Flow
 
 variable {L L' : Flow F C} {W W' : Web F C} {obs : F → C → Prop} {g : F}
 
-/-- `g`'s policy goes through its registration: wherever `g` has registered alike up to `t`,
-its own take from and give to every condition it registers are alike across the step from
-`t`. -/
+/-- `g`'s policy goes through its couplings: wherever the flows have been alike through `g`'s
+couplings up to `t`, its own take from and give to every condition coupled into it are alike
+across the step from `t`. -/
 def PolicyThrough (L : Flow F C) (W : Web F C) (L' : Flow F C) (W' : Web F C)
     (obs : F → C → Prop) (g : F) : Prop :=
   ∀ t, W.AlikeThroughUpTo obs g W.level W'.level t → ∀ c, W.CoupledInto obs g c →
     L.take t g c = L'.take t g c ∧ L.give t g c = L'.give t g c
 
-/-- The rest of the exchange on what `g` registers is fixed: every other formation takes from
-and gives to every condition `g` registers alike in the two flows, at every step. -/
+/-- The rest of the exchange on what couples into `g` is fixed: every other formation takes from
+and gives to every condition coupled into `g` alike in the two flows, at every step. -/
 def OthersFixed (L : Flow F C) (W : Web F C) (L' : Flow F C) (obs : F → C → Prop) (g : F) :
     Prop :=
   ∀ t h c, h ≠ g → W.CoupledInto obs g c → L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c
 
-/-- **A policy through registration, with the rest fixed, is exchange following
-registration.** -/
+/-- **A policy through the couplings, with the rest fixed, is exchange following what couples
+in.** -/
 theorem exchangeFollows_of_policy [DecidableEq F] (present : ∀ t, L.present t = L'.present t)
     (policy : PolicyThrough L W L' W' obs g) (others : OthersFixed L W L' obs g) :
     L.ExchangeFollows W L' W' obs g :=
@@ -83,10 +83,10 @@ theorem exchangeFollows_of_policy [DecidableEq F] (present : ∀ t, L.present t 
      (total_congr_on fun h mem => (each h mem).2).trans
         (congrArg (fun as => total as fun h => L'.give t h c) (present t))⟩
 
-/-- **A policy that keeps its support never uses a larger stock.** For every policy through
-registration, with the rest fixed: where the starts differ only in a stock `g` depends on and
-does not observe, `d` higher in the second, and the first web supports `g` at every step, the
-stock stands `d` higher at every step and `g` registers alike. -/
+/-- **A policy that keeps its support never uses a larger stock.** For every policy through the
+couplings, with the rest fixed: where the starts differ only in a stock coupled into `g` by
+threshold only, `d` higher in the second, and the first web supports `g` at every step, the
+stock stands `d` higher at every step and the flows are alike through `g`'s couplings. -/
 theorem policy_keeps_difference [DecidableEq F] [DecidableEq C] {c : C} {d : Nat}
     (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
     (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
@@ -100,10 +100,10 @@ theorem policy_keeps_difference [DecidableEq F] [DecidableEq C] {c : C} {d : Nat
   subthreshold_alike_always balanced balanced' depends unobserved stock start
     (exchangeFollows_of_policy present policy others) supported
 
-/-- **A larger stock is used only after a failure.** For every policy through registration,
-with the rest fixed, starting at least as high on what `g` registers and alike on what it
-observes: wherever a difference on a condition `g` registers has changed by a step, the first
-web did not support `g` at every earlier step. -/
+/-- **A larger stock is used only after a failure.** For every policy through the couplings,
+with the rest fixed, starting at least as high on what couples into `g` and alike on what couples
+into it by level: wherever a difference on a condition coupled into `g` has changed by a step,
+the first web did not support `g` at every earlier step. -/
 theorem policy_uses_after_failure [DecidableEq F]
     (balanced : ∀ t e, W.CoupledInto obs g e → L.BalancesOn W [e] t)
     (balanced' : ∀ t e, W.CoupledInto obs g e → L'.BalancesOn W' [e] t)
@@ -120,7 +120,7 @@ theorem policy_uses_after_failure [DecidableEq F]
 
 end Flow
 
-/-! ## The distance to the break is not registered -/
+/-! ## The distance to the break does not couple in -/
 
 namespace Web
 
@@ -147,8 +147,9 @@ theorem raise_other [DecidableEq C] {c e : C} (other : e ≠ c) (d t : Nat) :
     (W.raise c d).level t e = W.level t e :=
   congrArg (W.level t e + ·) (if_neg other)
 
-/-- **Before the break, a raise does not register.** At every step at which the web supports
-`g`, a raise of a stock `g` does not observe registers alike for it. -/
+/-- **Before the break, a raise does not pass.** At every step at which the web supports
+`g`, a raise of a stock not coupled into `g` by level leaves the webs alike through `g`'s
+couplings. -/
 theorem alikeThrough_raise [DecidableEq C] {c : C} (unobserved : ¬ obs g c) (d : Nat)
     {t : Nat} (supported : W.Supported t g) :
     W.AlikeThrough obs g W.level (W.raise c d).level t :=
@@ -156,8 +157,8 @@ theorem alikeThrough_raise [DecidableEq C] {c : C} (unobserved : ¬ obs g c) (d 
     fun _ => supported⟩,
    fun e observed => (raise_other (W := W) (fun same : e = c => unobserved (same ▸ observed)) d t).symm⟩
 
-/-- **Observation registers a raise at once.** Observing the stock, any positive raise is
-registered at every step. -/
+/-- **Coupling by level passes a raise at once.** With the stock coupled into `g` by level, any
+positive raise sets the webs apart through `g`'s couplings at every step. -/
 theorem observed_raise_couples [DecidableEq C] {c : C} (observed : obs g c) {d : Nat}
     (pos : 0 < d) (t : Nat) : ¬ W.AlikeThrough obs g W.level (W.raise c d).level t :=
   Web.observed_level_couples observed fun same =>
@@ -184,10 +185,11 @@ theorem Dependent.raise [DecidableEq C] (dependent : W.Dependent) (c : C) (d : N
     (W.raise c d).Dependent :=
   fun t f active => (dependent t f active).raise c d
 
-/-- **No registered bound on the break.** Let `g` not observe a stock `c`, and let `c` be the
-only requirement of `g` that may be unmet at the steps up to a horizon `u`. Then some raise of
-`c` registers alike for `g` at every step at which the web supports `g`, and supports `g` at
-every step up to `u`. So before the break nothing `g` registers bounds how far off it is. -/
+/-- **No bound on the break couples in.** Let a stock `c` not couple into `g` by level, and let
+`c` be the only requirement of `g` that may be unmet at the steps up to a horizon `u`. Then some
+raise of `c` is alike through `g`'s couplings at every step at which the web supports `g`, and
+supports `g` at every step up to `u`. So before the break nothing that couples into `g` bounds
+how far off it is. -/
 theorem break_not_bounded [DecidableEq C] {c : C} (unobserved : ¬ obs g c) (u : Nat)
     (others : ∀ s, s ≤ u → ∀ e, e ≠ c → W.requires s g e → W.need s g e ≤ W.level s e) :
     ∃ d, (∀ s, s ≤ u → (W.raise c d).Supported s g) ∧
@@ -223,8 +225,8 @@ end Flow
 
 namespace SupportDrawn
 
-/-- **The break, unregistered.** In the lower web the formation is unsupported at the third
-step; a raise of its stock registers alike for it at every step at which the lower web
+/-- **The break, uncoupled.** In the lower web the formation is unsupported at the third
+step; a raise of its stock is alike through its couplings at every step at which the lower web
 supports it, supports it at the third step, and keeps the flow balanced. -/
 theorem break_uncoupled :
     ¬ (web lowerLevel).Supported 2 () ∧

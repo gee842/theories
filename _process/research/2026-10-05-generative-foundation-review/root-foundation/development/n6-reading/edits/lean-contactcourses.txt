@@ -1,0 +1,5 @@
+# ContactCourses.lean: a registration through addressed contacts → the lumping through them (as Contacts); `blind_*` names in the names table.
+### lean:ContactCourses
+= S1
+- `Becoming.Contacts` states what a registration through addressed contacts selects
++ `Becoming.Contacts` states what a lumping through addressed contacts selects

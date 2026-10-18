@@ -1,0 +1,9 @@
+# Closing.lean: not registered before it → does not show before it; what can register it → what reads the couplings themselves.
+### lean:Closing
+= S7 the AI's reading
+- a runaway's break is not registered
+-   before it, and the formation of the loop that runs away is not registered either, by the amounts
+-   it carries. What can register it is what registers the couplings themselves
++ a runaway's break does not show
++   before it, and the formation of the loop that runs away does not show either, in the amounts
++   it carries. What can show it is what reads the couplings themselves

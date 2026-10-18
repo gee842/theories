@@ -1,0 +1,19 @@
+# Copying.lean: a copy reading through a registration → through a reading `read` (the map from sites).
+### lean:Copying
+= S1
+- A copy that attaches at each site what a registration reads
+-   there
++ A copy that attaches at each site what a reading `read` gives
++   there
+= S1
+- /-- The site `i` of a word read through a registration:
++ /-- The site `i` of a word read through `read`:
+= S1
+- /-- One move of a copy attaching what the registration reads at the next site,
++ /-- One move of a copy attaching what the reading gives at the next site,
+= S1
+- /-- One move of a copy reading through the registration `read`:
++ /-- One move of a copy reading through `read`:
+= S1
+- /-- **A copy reading through a registration reproduces a word
++ /-- **A copy reading through `read` reproduces a word

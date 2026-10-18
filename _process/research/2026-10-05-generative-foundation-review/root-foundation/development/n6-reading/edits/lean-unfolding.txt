@@ -1,0 +1,31 @@
+# Unfolding.lean: a law read through a registration → through a map; registered future → future through the map (S1, as Identification); `section Registered` is a name, in the names table.
+### lean:Unfolding
+= S1
+- For a determined law read through a registration
+-   (`Law.frameBy`), configurations are alike exactly where their registered futures are the
+-   same (`Law.SameFuture`, `Law.alike_iff_sameFuture`), so there a description makes sense where
+-   it identifies exactly the same registered futures,
++ For a determined law read through a map
++   (`Law.frameBy`), configurations are alike exactly where their futures through the map are the
++   same (`Law.SameFuture`, `Law.alike_iff_sameFuture`), so there a description makes sense where
++   it identifies exactly the same futures through the map,
+= S1
+- /-! ### A determined law: likeness is the same registered future -/
++ /-! ### A determined law: likeness is the same future through the map -/
+= S1
+- /-- A determined law read through a registration: what is registered is what is claimed. -/
++ /-- A determined law read through a map: the map's value is what is claimed. -/
+= S1
+- /-- The law read through a registration is determined. -/
++ /-- The law read through a map is determined. -/
+= S1 2
+- the same registered future
++ the same future through the map
+= S1
+- /-- The same registered future is a bisimulation. -/
++ /-- The same future through the map is a bisimulation. -/
+= S1
+- their registered futures are
+- the same.**
++ their futures through the map are
++ the same.**

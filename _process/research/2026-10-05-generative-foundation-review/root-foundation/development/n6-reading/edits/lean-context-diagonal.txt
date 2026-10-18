@@ -1,0 +1,212 @@
+# Context.lean (claims shown in context) and Diagonal.lean (a family that says readings, indexed by what it reads).
+### lean:Context
+= S7 a claim lies within a context and the context shows a value of it (`within`, `shows`)
+- # Contextual worlds: claims registered in context
+-
+- A `Frame` fixes whether each claim is realized by the configuration alone: what is registered
+- of a claim does not depend on what else is registered with it. This module states that as a
+- commitment of the representation and what follows where it fails, with no premise.
+-
+- A claim is registered in a context (`Contextual`): `within k c` says that context `k` registers
+- claim `c`, and `shows s k c` is what `k` registers of `c` at configuration `s`. Nothing is
+- decided and no choice is made.
+-
+- * **Gluing is agreement where contexts meet.** The registrations at a configuration glue, one
+-   context-free reading agreeing with every context (`Contextual.Glues`), exactly where every
+-   two contexts registering a claim register it alike (`Contextual.glues_iff_agree`, given a
+-   context registering each claim).
+- * **Context-free claims are a commitment.** Read with its context, every registration is a claim
+-   of a frame (`Contextual.indexed`, `Contextual.indexed_fits`). A frame of context-free claims
+-   fits exactly where the registrations glue at every configuration (`Contextual.fitsFree_iff`).
+- * **Where the possibilities do not glue, no configuration does.** If what each context can show
+-   depends only on the claims it registers (`Local`) and no context-free reading lies within every
++ # Contextual worlds: claims shown in context
++
++ A `Frame` fixes whether each claim is realized by the configuration alone: what is shown of a
++ claim does not depend on what else is shown with it. This module states that as a commitment of
++ the representation and what follows where it fails, with no premise.
++
++ A claim is shown in a context (`Contextual`): `within k c` says that claim `c` lies within
++ context `k`, and `shows s k c` is what `k` shows of `c` at configuration `s`. Nothing is
++ decided and no choice is made.
++
++ * **Gluing is agreement where contexts meet.** What the contexts show at a configuration glues,
++   one context-free reading agreeing with every context (`Contextual.Glues`), exactly where every
++   two contexts a claim lies within show it alike (`Contextual.glues_iff_agree`, given a
++   context each claim lies within).
++ * **Context-free claims are a commitment.** Read with its context, everything a context shows is
++   a claim of a frame (`Contextual.indexed`, `Contextual.indexed_fits`). A frame of context-free
++   claims fits exactly where what the contexts show glues at every configuration
++   (`Contextual.fitsFree_iff`).
++ * **Where the possibilities do not glue, no configuration does.** If what each context can show
++   depends only on the claims within it (`Local`) and no context-free reading lies within every
+= S7
+- * **The Mermin–Peres square** (Mermin 1990, Peres 1990). Nine claims in three rows and three columns, each line
+-   registering three; a row's three values have even parity, as do the first two columns', and
++ * **The Mermin–Peres square** (Mermin 1990, Peres 1990). Nine claims in three rows and three columns, each line
++   holding three; a row's three values have even parity, as do the first two columns', and
+= S7
+-   (`Square.noGlobal`). Two-qubit observables realize the square, so quantum registrations are
+-   of this kind: `Becoming.Quantum` (P72q), which imports this module, checks it
++   (`Square.noGlobal`). Two-qubit observables realize the square, so what quantum measurements
++   show is of this kind: `Becoming.Quantum` (P72q), which imports this module, checks it
+= S7
+- So a frame of context-free claims is a commitment of the representation: it holds of a world
+- exactly where its registrations glue, and some worlds' registrations cannot glue at any
+- configuration. Claims indexed by the context in which they are registered always fit, at the cost
+- that a claim registered in two contexts is two claims. Readings of this as wave and particle, as
+- the Kochen–Specker theorem, or as values being relations registered in context belong to the
+- study, not to this module.
+-
+- **Classical sources.** Reading a family of registrations in context as gluing to one context-free
++ So a frame of context-free claims is a commitment of the representation: it holds of a world
++ exactly where what its contexts show glues, and in some worlds it cannot glue at any
++ configuration. Claims indexed by the context in which they are shown always fit, at the cost
++ that a claim shown in two contexts is two claims. Readings of this as wave and particle, as
++ the Kochen–Specker theorem, or as values being relations shown in context belong to the
++ study, not to this module.
++
++ **Classical sources.** Reading a family of values shown in context as gluing to one context-free
+= S7
+- /-- Claims registered in contexts: which claims each context registers, and what it registers of
+- each at each configuration. -/
++ /-- Claims shown in contexts: which claims lie within each context, and what it shows of each at
++ each configuration. -/
+= S7
+- /-- What each context can show depends only on the claims it registers. -/
++ /-- What each context can show depends only on the claims within it. -/
+= S7
+- /-- No context forces a claim: every claim can show every value in every context registering
+- it. -/
++ /-- No context forces a claim: every claim can show every value in every context it lies
++ within. -/
+= S7
+- /-- At `s` the registrations glue: one context-free reading agrees with every context on every
+- claim it registers. -/
++ /-- At `s` what the contexts show glues: one context-free reading agrees with every context on
++ every claim within it. -/
+= S7
+- /-- At `s` every two contexts registering a claim register it alike. -/
++ /-- At `s` every two contexts a claim lies within show it alike. -/
+= S7
+- /-- **The registrations glue exactly where contexts agree where they meet.** -/
++ /-- **What the contexts show glues exactly where contexts agree where they meet.** -/
+= S7
+- /-- Read with its context, every registration is a claim: a context, a claim and a value. -/
++ /-- Read with its context, everything shown is a claim: a context, a claim and a value. -/
+= S7
+- /-- The indexed frame fits every registration. -/
++ /-- The indexed frame fits everything shown. -/
+= S7 2
+- on every claim the context registers. -/
++ on every claim within the context. -/
+= S7
+- /-- **A frame of context-free claims fits exactly where the registrations glue at every
+- configuration.** -/
++ /-- **A frame of context-free claims fits exactly where what the contexts show glues at every
++ configuration.** -/
+= S7
+- /-- What a whole allows within a context depends only on the claims the context registers. -/
++ /-- What a whole allows within a context depends only on the claims within it. -/
+= S7
+- parts of no whole**, whatever each context registers: locality is not used. Where nothing is
++ parts of no whole**, whatever lies within each context: locality is not used. Where nothing is
+= S7
+- /-- An opening registers its two boxes. -/
++ /-- An opening holds its two boxes. -/
+= S7
+- /-- A line registers three cells. -/
++ /-- A line holds three cells. -/
+### lean:Diagonal
+= S7 a member says a reading (`Says`): its values are alike with the reading's at every point
+- # A registration within what it registers
+-
+- What a world registers of itself is registered by parts of it. Here a registration is a family
+- `ψ : A → A → B`: the member `a` registers `ψ a x` of each `x`, and the members are among what is
+- registered. `same` says when two registered values are alike: equality, or for claims `Iff`.
+- Nothing about the members or the values is assumed, and nothing is decided except where a law
+- names it.
+-
+- * **The gap.** Moving each member's registration of itself by a map `f` that leaves no value
+-   alike with its image gives a reading no member registers (`gap_unsaid`). This is Lawvere's
+-   diagonal argument; `RootCoverageBoundary`, outside the core, proves it for functions and
+-   predicates. A registration that registers every reading gives every map a value alike with
+-   its image (`fixed_of_complete`).
++ # A family of readings within what it reads
++
++ What a world reads of itself is read by parts of it. Here the readings are a family
++ `ψ : A → A → B`: the member `a` takes the value `ψ a x` at each `x`, and the members are among
++ what is read. `same` says when two values are alike: equality, or for claims `Iff`.
++ Nothing about the members or the values is assumed, and nothing is decided except where a law
++ names it.
++
++ * **The gap.** Moving each member's value at itself by a map `f` that leaves no value
++   alike with its image gives a reading no member says (`gap_unsaid`). This is Lawvere's
++   diagonal argument; `RootCoverageBoundary`, outside the core, proves it for functions and
++   predicates. A family that says every reading gives every map a value alike with
++   its image (`fixed_of_complete`).
+= S7
+- compared by equality, a registration within
++ compared by equality, a family within
+= S7
+- * **Completion is an unfolding.** A registration that keeps what it registered and next
+-   registers what it missed (`Unfolds`) is incomplete at every step (`Unfolds.incomplete`).
+-   Each step's gap is registered at no step up to its own (`Unfolds.gap_new`), no two gaps are
+-   alike (`Unfolds.gaps_differ`), and the registration never returns: every later step
+-   registers something no earlier step did (`Unfolds.never_returns`). No finite stock of
++ * **Completion is an unfolding.** A family that keeps what it said and next says what it missed
++   (`Unfolds`) is incomplete at every step (`Unfolds.incomplete`).
++   Each step's gap is said at no step up to its own (`Unfolds.gap_new`), no two gaps are
++   alike (`Unfolds.gaps_differ`), and the family never returns: every later step
++   says something no earlier step did (`Unfolds.never_returns`). No finite stock of
+= S7
+-   contradiction; `Becoming.Description` reads the same rhythm off its registrations as two
+-   states, each defined through the other (`Negation.two_states`).
+-
+- So, with no premise: a registration within what it registers is complete exactly where there
+- is nothing to tell apart. Where there is, what it misses is definite, and the next step can
+- register it, but that step misses something new; completing it is an unfolding that never
++   contradiction; `Becoming.Description` reads the same rhythm off its course as two
++   states, each defined through the other (`Negation.two_states`).
++
++ So, with no premise: a family of readings within what it reads is complete exactly where there
++ is nothing to tell apart. Where there is, what it misses is definite, and the next step can
++ say it, but that step misses something new; completing it is an unfolding that never
+= S7
+- /-- Some member registers `g`: its registration is alike with `g` at every `x`. -/
++ /-- Some member says `g`: its value is alike with `g`'s at every `x`. -/
+= S7
+- /-- What each member registers of itself, moved by `f`. -/
++ /-- Each member's value at itself, moved by `f`. -/
+= S7
+- /-- No member registers the gap. -/
++ /-- No member says the gap. -/
+= S7
+- /-- Lawvere's fixed point: where every reading is registered, every map has a value alike with
+- its image. -/
++ /-- Lawvere's fixed point: where every reading is said, every map has a value alike with
++ its image. -/
+= S7
+- /-- Registering alike carries over to a reading alike at every point. -/
++ /-- Saying carries over to a reading alike at every point. -/
+= S7
+- /-- Where equality with `b` is decided, a registration that says everything leaves nothing to
++ /-- Where equality with `b` is decided, a family that says everything leaves nothing to
+= S7
+- /-- A registration within says every reading exactly when the values have nothing to tell
++ /-- A family within says every reading exactly when the values have nothing to tell
+= S7
+- /-- A registration that keeps what it registered and next registers what it missed. -/
++ /-- A family that keeps what it said and next says what it missed. -/
+= S7
+- /-- A gap is registered at no step up to its own. -/
++ /-- A gap is said at no step up to its own. -/
+= S7
+- /-- The registration never returns: every later step registers something no earlier step did. -/
++ /-- The family never returns: every later step says something no earlier step did. -/
+= S7
+- /-- No finite stock of readings holds what an unfolding registration misses. -/
++ /-- No finite stock of readings holds what an unfolding family misses. -/
+= S7
+- register `false`. -/
++ take `false`. -/

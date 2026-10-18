@@ -1,0 +1,378 @@
+# Keeping.lean (the value a step keeps) and Response.lean (responding through the couplings).
+### lean:Keeping
+= .
+- # Keeping: a guard kept through what is registered
+-
+- `Becoming.Viability` states where no course leaves a guard: every course is counted, whatever
+- moves it takes. Here the moves are not all alike. A move is usable from a class of
+- configurations where it is allowed and enabled at each of them, and after it what the step
+- registers narrows the class. This module states, for every process, every registration of its
+- steps, every guard and every condition on moves, when a class is kept for `n` steps, and how
+- that keeping is carried by plans whose later moves follow what was registered.
+-
+- * **Kept for `n` steps.** A class is kept for no steps where the guard holds throughout it, and
+-   for `n + 1` steps where, besides, some move usable from it leaves, whatever the step
+-   registers, a class kept for `n` steps (`KeptFor`). The class after a move and a registration
+-   is what can stand after the move from the class where the step registers it (`Seen`); where
+-   the registrations are listed (`Fin k`), it is `InquirySufficiency.After` (`seen_eq_after`).
+- * **Plans.** A plan of `n` moves gives a first move and, for each registration of its step, a
+-   plan of `n - 1` moves (`Plan`); it keeps the guard from a class where the guard holds there,
+-   its first move is usable and each continuation keeps the guard from the class seen
+-   (`Plan.Keeps`). A plan that keeps the guard keeps the class for its length, with no premise
+-   (`Plan.Keeps.keptFor`). Conversely, a kept class has a plan that keeps it wherever the
+-   registrations have choice into plans (`KeptFor.plan_of_choice`,
+-   `keptFor_iff_plan_of_choice`). Listed registrations have it with no premise
+-   (`choiceOver_fin`), so there a class is kept exactly where some plan keeps it
+-   (`keptFor_iff_plan`).
+- * **The boundary.** For arbitrary registrations the converse is exactly choice: kept classes
+-   have plans in every process exactly where every relation total on the registrations has a
+-   choice function (`plans_iff_choice`). A relation is answered by a two-step keeping problem
+-   whose second move must be related to what the first step registered (`Answering`). Choice
+-   is a hypothesis of the law where it is needed, never assumed.
+- * **Order.** A narrower class is kept wherever a wider one is (`KeptFor.mono`), a longer
+-   horizon keeps every shorter one (`KeptFor.shorter`), and a finer registration keeps what a
+-   coarser one keeps, the moves unchanged (`KeptFor.finer`). The empty class is kept for every
+-   horizon once there is a move (`keptFor_empty`).
+- * **Classes kept for every horizon.** A family of classes within the guard, each with a usable
+-   move leading, whatever is registered, into the family, keeps each of its classes for every
++ # Keeping: a guard kept through what the steps keep
++
++ `Becoming.Viability` states where no course leaves a guard: every course is counted, whatever
++ moves it takes. Here the moves are not all alike. A move is usable from a class of
++ configurations where it is allowed and enabled at each of them, and after it the value the step
++ keeps (`sense`, a map of steps) narrows the class. This module states, for every process, every
++ map of its steps to the values they keep, every guard and every condition on moves, when a class
++ is kept for `n` steps, and how that keeping is carried by plans whose later moves follow the
++ values kept.
++
++ * **Kept for `n` steps.** A class is kept for no steps where the guard holds throughout it, and
++   for `n + 1` steps where, besides, some move usable from it leaves, whatever value the step
++   keeps, a class kept for `n` steps (`KeptFor`). The class after a move and a value kept is what
++   can stand after the move from the class where the step keeps that value (`Seen`); where the
++   values kept are listed (`Fin k`), it is `InquirySufficiency.After` (`seen_eq_after`).
++ * **Plans.** A plan of `n` moves gives a first move and, for each value its step keeps, a
++   plan of `n - 1` moves (`Plan`); it keeps the guard from a class where the guard holds there,
++   its first move is usable and each continuation keeps the guard from the class seen
++   (`Plan.Keeps`). A plan that keeps the guard keeps the class for its length, with no premise
++   (`Plan.Keeps.keptFor`). Conversely, a kept class has a plan that keeps it wherever the
++   values kept have choice into plans (`KeptFor.plan_of_choice`,
++   `keptFor_iff_plan_of_choice`). Listed values have it with no premise
++   (`choiceOver_fin`), so there a class is kept exactly where some plan keeps it
++   (`keptFor_iff_plan`).
++ * **The boundary.** For arbitrary values kept the converse is exactly choice: kept classes
++   have plans in every process exactly where every relation total on the values has a
++   choice function (`plans_iff_choice`). A relation is answered by a two-step keeping problem
++   whose second move must be related to the value the first step kept (`Answering`). Choice
++   is a hypothesis of the law where it is needed, never assumed.
++ * **Order.** A narrower class is kept wherever a wider one is (`KeptFor.mono`), a longer
++   horizon keeps every shorter one (`KeptFor.shorter`), and a finer map of the steps keeps what a
++   coarser one keeps, the moves unchanged (`KeptFor.finer`). The empty class is kept for every
++   horizon once there is a move (`keptFor_empty`).
++ * **Classes kept for every horizon.** A family of classes within the guard, each with a usable
++   move leading, whatever value is kept, into the family, keeps each of its classes for every
+= .
+- * **What is registered matters.** In `Matching`, a hidden bit must be matched by the second
+-   move. Registering the bit, the starts are kept for two steps; registering nothing, they are
+-   not (`Matching.keeping_matters`).
++ * **What a step keeps matters.** In `Matching`, a hidden bit must be matched by the second
++   move. Where the step keeps the bit, the starts are kept for two steps; where it keeps nothing,
++   they are not (`Matching.keeping_matters`).
+= .
+-   plan keeps both guards, each part registering its own step (`Plan.zip_keeps`); and every
++   plan keeps both guards, each part keeping the value of its own step (`Plan.zip_keeps`); and every
+= .
+- Which guard marks what an activity needs, which moves are allowed and what a step registers are
+- supplied with each application. No premise is added; every declaration has an empty axiom
++ Which guard marks what an activity needs, which moves are allowed and what a step keeps are
++ supplied with each application. No premise is added; every declaration has an empty axiom
+= .
+- /-- What can stand after the move `a` from a configuration of `B`, where the step registers
+- `o`. -/
++ /-- What can stand after the move `a` from a configuration of `B`, where the step keeps the
++ value `o`. -/
+= .
+- /-- Where the registrations are listed, what is seen is `InquirySufficiency.After`. -/
++ /-- Where the values kept are listed, what is seen is `InquirySufficiency.After`. -/
+= .
+- /-- **Kept for `n` steps through what is registered.** The guard holds throughout the class,
+- and, with steps to go, some move usable from the class leaves, whatever the step registers, a
+- class kept for one step fewer. -/
++ /-- **Kept for `n` steps through what the steps keep.** The guard holds throughout the class,
++ and, with steps to go, some move usable from the class leaves, whatever value the step keeps, a
++ class kept for one step fewer. -/
+= .
+- /-- A plan of `n` moves: a first move and, for each registration of its step, a plan of the
+- moves after it. -/
++ /-- A plan of `n` moves: a first move and, for each value its step keeps, a plan of the
++ moves after it. -/
+= .
+- /-- The plan after the first move, for each registration of its step. -/
++ /-- The plan after the first move, for each value its step keeps. -/
+= .
+- /-- **Choice over the registrations into `α`**: every relation giving each registration something
+- in `α` is met by one function. A hypothesis where a law needs it, never assumed. -/
++ /-- **Choice over the values kept into `α`**: every relation giving each value something
++ in `α` is met by one function. A hypothesis where a law needs it, never assumed. -/
+= .
+- /-- **Listed registrations have choice.** No premise. -/
++ /-- **Listed values have choice.** No premise. -/
+= .
+- /-- **Where the registrations have choice into plans, every kept class has a plan keeping it.** -/
++ /-- **Where the values kept have choice into plans, every kept class has a plan keeping it.** -/
+= .
+- /-- **Where the registrations have choice into plans, a class is kept exactly where some plan
+- keeps it.** -/
++ /-- **Where the values kept have choice into plans, a class is kept exactly where some plan
++ keeps it.** -/
+= .
+- /-- **Listed registrations: a class is kept exactly where some plan keeps it.** No premise. -/
++ /-- **Listed values: a class is kept exactly where some plan keeps it.** No premise. -/
+= .
+- /-! ## The boundary: plans for every registration are choice -/
++ /-! ## The boundary: plans for every map of the steps are choice -/
+= .
+- /-- Each configuration carries a registration and whether the first step was taken; every step
+- takes it to its registration with the first step taken. -/
++ /-- Each configuration carries a value and whether the first step was taken; every step
++ takes it to its value with the first step taken. -/
+= .
+- /-- A step registers the registration it reaches. -/
++ /-- A step keeps the value it reaches. -/
+= .
+- /-- Before the first step every move is allowed; after it, only a value related to the
+- registration. -/
++ /-- Before the first step every move is allowed; after it, only a value related to the
++ value kept. -/
+= .
+- /-- Where each registration has a related value, the starts are kept for two steps. -/
++ /-- Where each value kept has a related value, the starts are kept for two steps. -/
+= .
+- /-- A plan keeping the starts for two steps answers each registration with a related value. -/
++ /-- A plan keeping the starts for two steps answers each value kept with a related value. -/
+= .
+- /-- **Kept classes have plans in every process exactly where the registrations have choice.**
++ /-- **Kept classes have plans in every process exactly where the values kept have choice.**
+= .
+- /-- **A finer registration keeps what a coarser one keeps**, the moves unchanged: a registration
+- read off the finer one by `forget`. -/
++ /-- **A finer map of the steps keeps what a coarser one keeps**, the moves unchanged: the coarser
++ read off the finer one by `forget`. -/
+= .
+- /-- **A family of classes within the guard, each with a usable move leading, whatever is
+- registered, into the family, keeps each of its classes for every horizon.** -/
++ /-- **A family of classes within the guard, each with a usable move leading, whatever value is
++ kept, into the family, keeps each of its classes for every horizon.** -/
+= . 2
+- every horizon**, whatever is registered. -/
++ every horizon**, whatever the steps keep. -/
+= .
+- /-! ## What is registered matters -/
++ /-! ## What a step keeps matters -/
+= .
+- /-- Registering the bit of the stage reached. -/
++ /-- The step keeps the bit of the stage reached. -/
+= .
+- /-- Registering nothing. -/
++ /-- The step keeps nothing. -/
+= .
+- /-- After the first move, registering the bit, the class seen is the need with that bit. -/
++ /-- After the first move, the step keeping the bit, the class seen is the need with that bit. -/
+= .
+- /-- **Registering the bit, the starts are kept for two steps.** -/
++ /-- **Where the step keeps the bit, the starts are kept for two steps.** -/
+= .
+- /-- **Registering nothing, the starts are not kept for two steps**: whatever the second move,
+- one of the needs is lost. -/
++ /-- **Where the step keeps nothing, the starts are not kept for two steps**: whatever the second
++ move, one of the needs is lost. -/
+= .
+- /-- **What is registered matters**: the same process, guard and moves keep the starts for two
+- steps registering the hidden bit, and not registering nothing. -/
++ /-- **What a step keeps matters**: the same process, guard and moves keep the starts for two
++ steps where the step keeps the hidden bit, and not where it keeps nothing. -/
+= .
+- /-- Two plans of one length run together as one plan of pairs, each part continuing by its own
+- registration. -/
++ /-- Two plans of one length run together as one plan of pairs, each part continuing by the value
++ its own step keeps. -/
+= .
+- /-- The joint registration: each part registers its own step. -/
++ /-- The joint map of steps: each part keeps the value of its own step. -/
+### lean:Response
+= .
+- can go when everything outside a part responds only through what it registers: within the part's
+- closure under affecting what is registered. It is the dual, from a part's side, of the reach
++ can go when everything outside a part responds only through what couples into it: within the
++ part's closure under affecting through what couples in. It is the dual, from a part's side, of the reach
+= .
+- * **Responsive reach.** A formation lies within a part's responsive reach between two flows when it
+-   lies within a member's closure under affecting through what is registered, in either flow: a
+-   member exchanges with a condition another formation registers, that formation exchanges with a
+-   condition a third registers, and so on (`Flow.WithinResponse`). Every member lies within it
+-   (`Flow.member_within_response`). A formation lies within it exactly when some member lies within
+-   the formation's registration closure drawn through both flows, the closure of
+-   `Flow.alike_within_coupling` (`Flow.withinResponse_iff_coupling`, through
+-   `WithinClosure.converse`); with one flow, within its registration closure
+-   (`Flow.withinResponse_self_iff`). It holds what the part reaches and each member's reach closure
+-   of P42 (`Flow.withinResponse_of_reaches`, `Flow.withinResponse_of_withinReach`); registering
+-   support only, with one flow, it is the union of the members' reach closures
+-   (`Flow.withinResponse_thresholdOnly_iff`). The reach closure is the converse of the influence
+-   closure (`Flow.withinReach_iff_withinInfluence`).
+- * **Responding through registration.** The rest responds through its registration when each
+-   formation outside the part exchanges alike in the two flows across every step up to which it has
+-   registered alike (`Flow.RespondsThroughCoupling`). It is a supplied premise. With the rest
+-   of the exchange fixed it holds whatever registers (`Flow.respondsThroughCoupling_withhold`).
+- * **Confinement.** The formations beyond the responsive reach form a region closed in both flows
+-   under being affected through what is registered, and hold no member
+-   (`Flow.beyond_response_closed`, `Flow.outside_part_of_beyond_response`). So where the two flows
+-   have the same formations present, balance on what those formations register and start alike
+-   there, and the rest responds through its registration, every formation beyond the responsive
+-   reach registers alike, exchanges alike, and meets alike totals on every condition it registers,
+-   at every step (`Flow.alike_beyond_response`, an instance of `Flow.alike_within_closed`;
++ * **Responsive reach.** A formation lies within a part's responsive reach between two flows when it
++   lies within a member's closure under affecting through what couples in, in either flow: a
++   member exchanges with a condition coupled into another formation, that formation exchanges with
++   a condition coupled into a third, and so on (`Flow.WithinResponse`). Every member lies within it
++   (`Flow.member_within_response`). A formation lies within it exactly when some member lies within
++   the formation's coupling closure drawn through both flows, the closure of
++   `Flow.alike_within_coupling` (`Flow.withinResponse_iff_coupling`, through
++   `WithinClosure.converse`); with one flow, within its coupling closure
++   (`Flow.withinResponse_self_iff`). It holds what the part reaches and each member's reach closure
++   of P42 (`Flow.withinResponse_of_reaches`, `Flow.withinResponse_of_withinReach`); where coupling
++   is by threshold only, with one flow, it is the union of the members' reach closures
++   (`Flow.withinResponse_thresholdOnly_iff`). The reach closure is the converse of the influence
++   closure (`Flow.withinReach_iff_withinInfluence`).
++ * **Responding through the couplings.** The rest responds through its couplings when each
++   formation outside the part exchanges alike in the two flows across every step up to which the
++   flows have been alike through its couplings (`Flow.RespondsThroughCoupling`). It is a supplied
++   premise. With the rest of the exchange fixed it holds whatever couples in
++   (`Flow.respondsThroughCoupling_withhold`).
++ * **Confinement.** The formations beyond the responsive reach form a region closed in both flows
++   under being affected through what couples in, and hold no member
++   (`Flow.beyond_response_closed`, `Flow.outside_part_of_beyond_response`). So where the two flows
++   have the same formations present, balance on what couples into those formations and start alike
++   there, and the rest responds through its couplings, the flows are alike through the couplings
++   of every formation beyond the responsive reach, and it exchanges alike and meets alike totals on
++   every condition coupled into it, at every step (`Flow.alike_beyond_response`, an instance of
++   `Flow.alike_within_closed`;
+= .
+-   present start alike, the rest responding through its registration. For any significance that,
++   present start alike, the rest responding through its couplings. For any significance that,
+= .
+-   a part's act changes what another formation registers, the other responds, and the difference
++   a part's act changes what couples into another formation, the other responds, and the difference
+= .
+-   reaches directly counts (`Flow.Balances.comparison_within_reach`). With the rest responding
+-   through its registration, the part's closure under affecting what is registered counts. What an
+-   act does to formations that interact with it is decided within the second.
+- - An escalation loop is the case where each party responds through its registration and the
+-   difference returns to the part (`Loop.returns`). It does not register in the comparison with the
+-   rest fixed.
+- - Registering support only, the responsive reach is the union of the members' reach closures of
++   reaches directly counts (`Flow.Balances.comparison_within_reach`). With the rest responding
++   through its couplings, the part's closure under affecting through what couples in counts. What
++   an act does to formations that interact with it is decided within the second.
++ - An escalation loop is the case where each party responds through its couplings and the
++   difference returns to the part (`Loop.returns`). It does not show in the comparison with the
++   rest fixed.
++ - Where coupling is by threshold only, the responsive reach is the union of the members' reach closures of
+= .
+- What is not derived: that formations respond only through their registration (supplied as
++ What is not derived: that formations respond only through their couplings (supplied as
+= .
+- /-- `g` lies within the part's responsive reach between two flows: within some member's closure
+- under affecting through what is registered, in either flow, where `a` affects `b` so when `a`
+- exchanges, in one of the flows, with a condition `b` registers. -/
++ /-- `g` lies within the part's responsive reach between two flows: within some member's closure
++ under affecting through what couples in, in either flow, where `a` affects `b` so when `a`
++ exchanges, in one of the flows, with a condition coupled into `b`. -/
+= .
+- /-- The rest responds through its registration: each formation outside the part exchanges alike
+- in the two flows across the step from `t` wherever it has registered alike up to `t`. A supplied
+- premise: it excludes formations outside the part responding to what they do not register. -/
++ /-- The rest responds through its couplings: each formation outside the part exchanges alike
++ in the two flows across the step from `t` wherever the flows are alike through its couplings up
++ to `t`. A supplied premise: it excludes formations outside the part responding to what does not
++ couple into them. -/
+= .
+- /-- **The responsive reach is the dual of the registration closure.** `g` lies within the part's
+- responsive reach exactly when some member lies within `g`'s registration closure drawn through
+- both flows, the closure of `alike_within_coupling`. -/
++ /-- **The responsive reach is the dual of the coupling closure.** `g` lies within the part's
++ responsive reach exactly when some member lies within `g`'s coupling closure drawn through
++ both flows, the closure of `alike_within_coupling`. -/
+= .
+- within `g`'s registration closure. -/
++ within `g`'s coupling closure. -/
+= .
+- /-- **Registering support only, the responsive reach is the reach closure.** With one flow, `g`
++ /-- **Where coupling is by threshold only, the responsive reach is the reach closure.** With one flow, `g`
+= .
+- /-- With the rest of the exchange fixed, the rest responds through its registration, whatever
+- registers: outside the part, the flow with the part withheld exchanges as the flow does. -/
++ /-- With the rest of the exchange fixed, the rest responds through its couplings, whatever
++ couples in: outside the part, the flow with the part withheld exchanges as the flow does. -/
+= .
+- being affected through what is registered: whatever exchanges with a condition such a formation
+- registers lies beyond the reach as well. -/
++ being affected through what couples in: whatever exchanges with a condition coupled into such a
++ formation lies beyond the reach as well. -/
+= .
+- /-- **Confinement.** Take two flows with the same formations present, balancing on each condition
+- registered by a formation beyond the part's responsive reach and starting alike there, and let the
+- rest respond through its registration. Then every formation beyond the responsive reach registers
+- alike at every step, whatever the part does: an instance of `alike_within_closed`. -/
++ /-- **Confinement.** Take two flows with the same formations present, balancing on each condition
++ coupled into a formation beyond the part's responsive reach and starting alike there, and let the
++ rest respond through its couplings. Then the flows are alike through the couplings of every
++ formation beyond the responsive reach at every step, whatever the part does: an instance of
++ `alike_within_closed`. -/
+= .
+- /-- Under the same hypotheses, the two flows take from and give to each condition registered by a
+- formation beyond the part's responsive reach alike, in total, at every step: a formation exchanging
++ /-- Under the same hypotheses, the two flows take from and give to each condition coupled into a
++ formation beyond the part's responsive reach alike, in total, at every step: a formation exchanging
+= .
+- balanced flows with the same formations present start alike, and let the rest respond through its
+- registration. For any significance that, from `p`, covers every formation not beyond the part's
++ balanced flows with the same formations present start alike, and let the rest respond through its
++ couplings. For any significance that, from `p`, covers every formation not beyond the part's
+= .
+- it has registered alike: the deer browse alike at the first step, and from the second on the
+- herd's loss has registered in their support. -/
++ the flows have been alike through its couplings: the deer browse alike at the first step, and
++ from the second on the herd's loss has passed into their support. -/
+= .
+- /-- Nothing exchanges, in either flow, with a condition the far formation registers. -/
++ /-- Nothing exchanges, in either flow, with a condition coupled into the far formation. -/
+= .
+- /-- The wolves, the deer and the forest are closed under affecting through what is registered:
+- the sun registers nothing, and nothing exchanges with what the far formation registers. -/
++ /-- The wolves, the deer and the forest are closed under affecting through what couples in:
++ nothing couples into the sun, and nothing exchanges with what couples into the far formation. -/
+= .
+- /-! A loop: a part's act changes what another formation registers, the other responds, and the
+- difference returns to the part. -/
++ /-! A loop: a part's act changes what couples into another formation, the other responds, and
++ the difference returns to the part. -/
+= .
+- Each formation requires its paired condition and observes it. -/
++ Each formation requires its paired condition, which couples into it by level. -/
+= .
+- the second, having observed the fall, takes two units of the first's condition across the
+- second. -/
++ the second, the fall having coupled into it, takes two units of the first's condition across the
++ second. -/
+= .
+- /-- The second responds through what it registers: it takes alike in the two flows at the first
+- step, and at the second it has observed its condition fall. -/
++ /-- The second responds through its couplings: it takes alike in the two flows at the first
++ step, and at the second the fall of its condition has coupled into it. -/
+= .
+- they start alike, and the second responds through what it registers. The first's act takes from
+- the condition the second observes, and the second's response takes from the condition the first
++ they start alike, and the second responds through its couplings. The first's act takes from
++ the condition coupled into the second by level, and the second's response takes from the condition the first
+= .
+- before the third step: the loop registers only in the comparison where the rest responds. -/
++ before the third step: the loop shows only in the comparison where the rest responds. -/

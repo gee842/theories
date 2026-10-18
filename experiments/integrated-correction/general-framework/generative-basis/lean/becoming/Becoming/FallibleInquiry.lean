@@ -25,7 +25,7 @@ open Generative.ScientificInquiryNecessity
 variable {F C : Type} {L L' : Flow F C} {W W' : Web F C}
   {obs : F → C → Prop} {part : F → Bool} {g : F} {t : Nat}
 
-/-- Every response through a formation's complete past registration agrees outside
+/-- Every response through a formation's complete past couplings agrees outside
 responsive reach. Balance is supplied on all conditions for this adapter. -/
 theorem answer_alike_beyond_response
     (balanced : L.Balances W) (balanced' : L'.Balances W')
@@ -74,13 +74,13 @@ theorem answer_alike_beyond_law {law : ExchangeLaw F C}
 
 /-! ## A weaker sufficient mechanism condition: common unaccounted change
 
-Use P59's existing balancing extension, without making the added accounting relatum
-an observer. Its exchanges may be nonzero. If they agree between the alternatives,
+Use P59's existing balancing extension, without coupling anything by level into the
+added accounting relatum. Its exchanges may be nonzero. If they agree between the alternatives,
 they cannot introduce a distinction into the region beyond the original reach.
 -/
 
-/-- Extend the original registration without registering anything in the accounting
-relatum. Existing formations retain exactly the original registration. -/
+/-- Extend the original coupling by level without coupling anything into the accounting
+relatum. Existing formations retain exactly the original coupling. -/
 def observeWithResidual (obs : F → C → Prop) : Option F → C → Prop
   | none, _ => False
   | some h, c => obs h c
@@ -97,7 +97,7 @@ theorem residual_couples_nothing (c : C) :
   rcases registers with ⟨_, impossible⟩ | impossible <;> exact impossible
 
 /-- Every original closed region remains closed after counting an arbitrary
-imbalance, when it includes the added relatum but that relatum registers nothing. -/
+imbalance, when it includes the added relatum but nothing couples into that relatum. -/
 theorem closed_with_imbalance {region : F → Prop} (V : Web F C)
     (closed : ClosedUnder (L.CoupledFrom W obs) region) :
     ClosedUnder ((L.withImbalance V).CoupledFrom W.withRefinement
@@ -162,7 +162,7 @@ theorem alike_with_common_imbalance
       | some h => exact responds h (Flow.outside_part_of_beyond_response member) s alike c)
   exact fun s h beyond => common s (some h) beyond
 
-/-- Responses through registration are blind under common, possibly nonzero,
+/-- Responses through the couplings do not tell apart common, possibly nonzero,
 unaccounted change. No reach decision and no absolute balance are assumed. -/
 theorem answer_alike_with_common_imbalance
     (present : ∀ s, L.present s = L'.present s)
@@ -263,7 +263,7 @@ theorem beyond_reach_coverage_eq_errors
 end Weighted
 
 /-! Native witnesses: two differentiated formations share one condition. The part
-adds to it; a distinct reader registers it. No external truth oracle drives either
+adds to it; it couples into a distinct reader. No external truth oracle drives either
 flow. The false/true target labels describe absence/presence of the part's giving. -/
 namespace Witness
 
@@ -313,7 +313,7 @@ theorem correct_answers : read (web false).level = some false ∧
     read (web true).level = some true := ⟨rfl, rfl⟩
 
 /-- Reach alone cannot force evidence to be used: a constant answering rule passes
-through the same registration but errs on the true alternative. -/
+through the same couplings but errs on the true alternative. -/
 theorem ignored_signal :
     (∀ l l', (web false).AlikeThroughUpTo (fun _ _ => True) false l l' 1 →
       (fun _ : Nat → Unit → Nat => some false) l = (fun _ => some false) l') ∧
@@ -382,7 +382,7 @@ theorem counted_residual_differs :
     ((flow false).withImbalance (web true)).give 0 none () = 1 := ⟨rfl, rfl⟩
 
 /-- If the residual is placed outside the varying part, the response premise fails:
-it registers alike initially but gives differently immediately. Balance by accounting
+it is alike through its couplings initially but gives differently immediately. Balance by accounting
 therefore cannot discharge the whole inquiry mechanism without further explanation. -/
 theorem counted_residual_not_response :
     ¬ ((flow false).withImbalance (web false)).RespondsThroughCoupling

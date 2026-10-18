@@ -79,7 +79,7 @@ unfolding's courses and not of a separate model.
   `no_run_judge_of_merged`). Two steps of a web agree under every reading through its conditions
   exactly where every condition stands at the same level (`steps_agree_iff_levels`,
   `supplied_agree_iff_levels`).
-* **Fallible witnesses.** The registrations of a run at listed dates are fallible witnesses: where
+* **Fallible witnesses.** The values a map takes along a run at listed dates are fallible witnesses: where
   two fault sets leave a common faithful date, no run of any process is explained by two answers
   under them (`run_reports_apart`); over the courses in which every change is admitted, no course
   is so explained exactly where every two admitted fault sets leave one
@@ -468,7 +468,7 @@ theorem steps_orbit : ∀ (n : Nat) (s : Scan α), Copying.steps draw n s = Law.
   | 0, _ => rfl
   | n + 1, s => (steps_orbit n (tick draw s)).trans (Law.orbit_shift (tick draw) s n).symm
 
-/-- `n` moves of a copy reading through a registration go along the orbit of its law. -/
+/-- `n` moves of a copy reading through `read` go along the orbit of its law. -/
 theorem readSteps_orbit (read : Nat → Option α) :
     ∀ (n : Nat) (s : Scan α), readSteps draw read n s = Law.orbit (readTick draw read) s n
   | 0, _ => rfl
@@ -905,9 +905,9 @@ section Witnesses
 
 open Readout
 
-/-- **Registrations of a run at listed dates as fallible witnesses.** For every process and every
-two-valued registration, where two fault sets leave a common faithful date, no run's
-registrations are explained both by `x` with the dates of the one at fault and by `y` with those
+/-- **The values a map takes along a run at listed dates as fallible witnesses.** For every
+process and every two-valued map, where two fault sets leave a common faithful date, no run's
+values through the map are explained both by `x` with the dates of the one at fault and by `y` with those
 of the other. -/
 theorem run_reports_apart {S : Type u} {A : Type v} {P : Process S A} (o : S → Bool)
     {roster a b : List Nat} {x y : Bool} (different : x ≠ y) (common : CommonWitness roster a b)
@@ -915,7 +915,7 @@ theorem run_reports_apart {S : Type u} {A : Type v} {P : Process S A} (o : S →
     Explains roster a x (fun d => o (r.state d)) → ¬ Explains roster b y (fun d => o (r.state d)) :=
   (no_common_report_iff different).mpr common _
 
-/-- **The registrations of every course tell two answers apart exactly where the fault sets leave
+/-- **The values of every course tell two answers apart exactly where the fault sets leave
 a common faithful date**, for the courses of two-valued configurations in which every change is
 admitted. -/
 theorem dates_no_common_report_iff {roster a b : List Nat} {x y : Bool} (different : x ≠ y) :

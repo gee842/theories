@@ -34,7 +34,7 @@ repeated doubling draws. The constructed copy machines of the periphery are inst
   one length, uses are in arithmetic progression where the unlike pairs are (`use_midpoint`),
   and the word with more unlike pairs draws less exactly when an unlike attachment draws less
   (`use_lt_iff`).
-* **Reading through contacts.** A copy that attaches at each site what a registration reads
+* **Reading through contacts.** A copy that attaches at each site what a reading `read` gives
   there reproduces a word exactly when every site reads the word's token, the pool supplies the
   word and the support covers what it draws (`reading_iff`). Its product only grows
   (`readSteps_extends`).
@@ -756,12 +756,12 @@ theorem use_lt_iff (first same differ : Nat) {x y : α} {l m : List α}
 
 /-! ## Reading through contacts -/
 
-/-- The site `i` of a word read through a registration: each site reads the word's token. -/
+/-- The site `i` of a word read through `read`: each site reads the word's token. -/
 def Reads (read : Nat → Option α) : Nat → List α → Prop
   | _, [] => True
   | i, x :: xs => read i = some x ∧ Reads read (i + 1) xs
 
-/-- One move of a copy attaching what the registration reads at the next site, given that
+/-- One move of a copy attaching what the reading gives at the next site, given that
 reading. -/
 def readStep (s : Scan α) : Option α → Scan α
   | none => s
@@ -774,7 +774,7 @@ def readStep (s : Scan α) : Option α → Scan α
           s.used + draw s.previous x⟩
       else s
 
-/-- One move of a copy reading through the registration `read`: the token attached at site `i`
+/-- One move of a copy reading through `read`: the token attached at site `i`
 is what `read` reads at `i`. -/
 def readTick (read : Nat → Option α) (s : Scan α) : Scan α := readStep draw s (read s.built.length)
 
@@ -811,7 +811,7 @@ theorem readSteps_extends (read : Nat → Option α) :
     | ⟨first, h1⟩, ⟨rest, h2⟩ =>
       ⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (append_regroup _ _ _))⟩
 
-/-- **A copy reading through a registration reproduces a word exactly when every site reads
+/-- **A copy reading through `read` reproduces a word exactly when every site reads
 the word's token there, the pool supplies the word and the support covers what it draws.** -/
 theorem reading_iff (read : Nat → Option α) : ∀ (word pending : List α) (prev : Option α)
     (built pool : List α) (free used : Nat), pending.length = word.length →

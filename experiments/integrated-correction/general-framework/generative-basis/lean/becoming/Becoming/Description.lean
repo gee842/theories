@@ -28,52 +28,53 @@ reading lumps together. This module states what a cut keeps and what it loses, w
   a second time, losing nothing either way (`coupling_relates_and_unrelates`).
 * **The split that makes sense, under a determined law.** `Becoming.Unfolding` (P69) states
   when a description makes sense (`IdentifiesAlike`: it identifies exactly the alike configurations)
-  and, for a determined law read through a registration (`Law.frameBy`), that alike is the
-  same registered future (`Law.alike_iff_sameFuture`). In those terms: a split that keeps what
-  is registered and carries a law in `Becoming.Mechanism`'s sense (`GoAlike`) relates
-  configurations by a bisimulation (`Law.kernel_bisimulation`), so it loses nothing registered
-  (`Law.sameFuture_of_law`), and the coarsest such split makes sense (`Law.identifiesAlike_of_law`).
-  Carrying a law is not enough: the split that lumps everything always carries one
-  (`goAlike_const`) and makes sense only where nothing registered ever differs
-  (`Law.const_identifiesAlike_iff`). Registering everything, the configuration itself makes sense
-  (`Law.whole_identifiesAlike`). What is registered now makes sense by itself exactly where it
-  carries a law, a condition on one step (`Law.now_identifiesAlike_iff_goAlike`), equivalently where it
-  fixes its own registered future (`Law.now_identifiesAlike_iff`). So a registered part alone makes
-  sense exactly where the rest makes no difference to its next value
+  and, for a determined law read through a map (`Law.frameBy`), that alike is the
+  same future through the map (`Law.alike_iff_sameFuture`). In those terms: a split that keeps
+  the map's value and carries a law in `Becoming.Mechanism`'s sense (`GoAlike`) relates
+  configurations by a bisimulation (`Law.kernel_bisimulation`), so it loses nothing the map
+  tells apart (`Law.sameFuture_of_law`), and the coarsest such split makes sense
+  (`Law.identifiesAlike_of_law`). Carrying a law is not enough: the split that lumps everything
+  always carries one (`goAlike_const`) and makes sense only where the map's value never differs
+  (`Law.const_identifiesAlike_iff`). Through the identity map, the configuration itself makes
+  sense (`Law.whole_identifiesAlike`). The map's present value makes sense by itself exactly where
+  it carries a law, a condition on one step (`Law.now_identifiesAlike_iff_goAlike`), equivalently
+  where it fixes its own future through the map (`Law.now_identifiesAlike_iff`). So a part read
+  through the map alone makes sense exactly where the rest makes no difference to its next value
   (`Law.part_identifiesAlike_iff_step`, `Law.part_identifiesAlike_iff`), and otherwise the split that makes
   sense includes the rest. For a part whose next value is set by a rule that changes with it, as
   in `Becoming.Mechanism`'s `adaptive`, that is the rule making no difference to it
   (`Law.adaptive_identifiesAlike_iff`).
-* **The pair.** Where a standing changes by a passing and only the standing is registered
+* **The pair.** Where a standing changes by a passing and the map reads only the standing
   (`Motion.move`), the split that makes sense is the pair (`Motion.pair_identifiesAlike`); the standing
   alone carries no law, as `Becoming.Mechanism`'s `adaptive_state_law_iff` gives with the
   passing as the rule (`Motion.standing_alone`), and the passing alone loses the standing
   (`Motion.passing_alone`), so neither alone makes sense (`Motion.neither_alone`). Where nothing
   passes, the standing alone makes sense (`Motion.still_identifiesAlike`).
-* **States from one registered history.** Two moments of one registered unfolding are one state
-  when everything registered after them is alike (`SameAhead`); this is an equivalence that goes
-  on as itself (`SameAhead.next`), `Becoming.Unfolding`'s same registered future read along
-  an orbit (`sameAhead_orbit_iff`), so states and their law are read off the history with no
-  configuration given. Where every moment is registered differently, each moment is its own
-  state (`SameAhead.new_each`). This needs no law given beforehand beyond the succession of
-  steps, the representation's shared step index: every registered history is a determined law,
-  the law of moments, read through what is registered, and its alike moments
-  are the moments that are one state (`alike_moments_iff`, through `Becoming.Unfolding`). A
-  registered history has finitely many states exactly where two of its moments are one state,
-  that is, where its registration repeats from some moment on (`finitely_many_states_iff`, by a
-  pigeonhole up to a relation with no decision, `shared_below`); a configuration that returns
-  has finitely many states under every registration (`Law.Returns.states`). The two-valued
+* **States from one history through a map.** Two moments of one history read through a map are
+  one state when everything after them is alike through the map (`SameAhead`); this is an
+  equivalence that goes on as itself (`SameAhead.next`), `Becoming.Unfolding`'s same future
+  through the map read along an orbit (`sameAhead_orbit_iff`), so states and their law are read
+  off the history with no configuration given. Where the map takes a different value at every
+  moment, each moment is its own state (`SameAhead.new_each`). This needs no law given
+  beforehand beyond the succession of steps, the representation's shared step index: every
+  history through a map is a determined law, the law of moments, read through the map, and its
+  alike moments are the moments that are one state (`alike_moments_iff`, through
+  `Becoming.Unfolding`). A history through a map has finitely many states exactly where two of
+  its moments are one state, that is, where its values repeat from some moment on
+  (`finitely_many_states_iff`, by a pigeonhole up to a relation with no decision,
+  `shared_below`); a configuration that returns has finitely many states through every map
+  (`Law.Returns.states`). The two-valued
   negation, `Becoming.Diagonal`'s rhythm of a revision that never rests, has exactly two states
   (`Negation.two_states`), each defined through the other (`Negation.each_through_other`).
   `Becoming.Learning`'s lasso course is two moments being one state (`lasso_iff_sameAhead`), so
   finitely many states is a lasso (`finitely_many_states_iff_lasso`).
 
 So a cut keeps everything exactly where what it cuts is unrelated, and a relation is made and
-unmade only by what acts on the parts together or by loss; relative to what is registered, one
-split loses no difference that will make a difference and adds none that never will, and the law
-comes out of it. That an unfolding has a law is not a premise beyond the succession of its steps:
-its states and their law are read off what it registers, and they are finitely many exactly
-where the registration repeats from some moment on. The readings of this as what a projection
+unmade only by what acts on the parts together or by loss; relative to a map, one split loses
+no difference that will make a difference and adds none that never will, and the law comes out
+of it. That an unfolding has a law is not a premise beyond the succession of its steps: its
+states and their law are read off its course through a map, and they are finitely many exactly
+where that course repeats from some moment on. The readings of this as what a projection
 deducts, as 阴阳, as what makes two a pair, or as the tests a decomposition owes the nondual
 method belong to the study, not to this module.
 
@@ -323,8 +324,8 @@ theorem goAlike_process_iff {next : S → S} {π : S → K} :
     GoAlike (process next) π ↔ ∀ s s', π s = π s' → π (next s) = π (next s') :=
   Learning.goAlike_iff_lumped
 
-/-- A split that keeps what is registered and carries a law relates configurations by a
-bisimulation of the registered law. -/
+/-- A split that keeps the map's value and carries a law relates configurations by a
+bisimulation of the law framed by the map. -/
 theorem kernel_bisimulation {next : S → S} {o : S → R} {π : S → K}
     (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π) :
     Bisimulation (frameBy next o) (frameBy next o) (fun s s' => π s = π s') :=
@@ -334,13 +335,13 @@ theorem kernel_bisimulation {next : S → S} {o : S → R} {π : S → K}
      fun _ _ to => ⟨next s', rfl, by cases to; exact ahead⟩,
      fun _ _ to => ⟨next s, rfl, by cases to; exact ahead⟩⟩
 
-/-- Such a split loses nothing registered. -/
+/-- Such a split loses nothing the map tells apart. -/
 theorem sameFuture_of_law {next : S → S} {o : S → R} {π : S → K}
     (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π) {s s' : S}
     (same : π s = π s') : SameFuture next o s s' :=
   alike_iff_sameFuture.mp ⟨_, kernel_bisimulation keeps alike, same⟩
 
-/-- **The coarsest split that keeps what is registered and carries a law makes sense.** -/
+/-- **The coarsest split that keeps the map's value and carries a law makes sense.** -/
 theorem identifiesAlike_of_law {next : S → S} {o : S → R} {π : S → K}
     (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π)
     (coarsest : ∀ s s', SameFuture next o s s' → π s = π s') : IdentifiesAlike (frameBy next o) π :=
@@ -348,27 +349,27 @@ theorem identifiesAlike_of_law {next : S → S} {o : S → R} {π : S → K}
     fun s s' same => coarsest s s' (alike_iff_sameFuture.mp same)⟩
 
 /-- The split that lumps everything always carries a law (`goAlike_const`), and makes sense only
-where nothing registered ever differs. -/
+where the map's value never differs. -/
 theorem const_identifiesAlike_iff {next : S → S} {o : S → R} (k : K) :
     IdentifiesAlike (frameBy next o) (fun _ => k) ↔ ∀ s s', SameFuture next o s s' :=
   ⟨fun sense s s' => alike_iff_sameFuture.mp ((sense s s').mp rfl),
    fun all s s' => ⟨fun _ => alike_iff_sameFuture.mpr (all s s'), fun _ => rfl⟩⟩
 
-/-- **What is registered now makes sense by itself exactly where it fixes its own registered
-future.** -/
+/-- **The map's present value makes sense by itself exactly where it fixes its own future
+through the map.** -/
 theorem now_identifiesAlike_iff {next : S → S} {o : S → R} :
     IdentifiesAlike (frameBy next o) o ↔ ∀ s s', o s = o s' → SameFuture next o s s' :=
   ⟨fun sense s s' e => alike_iff_sameFuture.mp ((sense s s').mp e),
    fun fixes s s' => ⟨fun e => alike_iff_sameFuture.mpr (fixes s s' e),
      fun same => (alike_iff_sameFuture.mp same) 0⟩⟩
 
-/-- **Registering everything, the configuration itself is the split that makes sense**: nothing
-alike is two. -/
+/-- **Through the identity map, the configuration itself is the split that makes sense**:
+nothing alike is two. -/
 theorem whole_identifiesAlike (next : S → S) : IdentifiesAlike (frameBy next id) id :=
   identifiesAlike_id_iff.mpr fun _ _ alike => alike_iff_sameFuture.mp alike 0
 
-/-- **The registered part alone makes sense exactly where the rest never makes a registered
-difference**; elsewhere the split that makes sense includes the rest. -/
+/-- **The part read through the map alone makes sense exactly where the rest never makes a
+difference through the map**; elsewhere the split that makes sense includes the rest. -/
 theorem part_identifiesAlike_iff {X : Type u} {C : Type v} {next : X × C → X × C} :
     IdentifiesAlike (frameBy next Prod.fst) Prod.fst ↔
       ∀ x c c', SameFuture next Prod.fst (x, c) (x, c') :=
@@ -383,7 +384,7 @@ theorem part_identifiesAlike_iff {X : Type u} {C : Type v} {next : X × C → X 
            subst e
            exact rest x c c'⟩
 
-/-- Where what is registered carries a law, it fixes its own registered future. -/
+/-- Where the map's value carries a law, it fixes its own future through the map. -/
 theorem sameFuture_of_goAlike {next : S → S} {o : S → R} (alike : GoAlike (process next) o) :
     ∀ s s', o s = o s' → SameFuture next o s s' := by
   intro s s' e n
@@ -391,15 +392,15 @@ theorem sameFuture_of_goAlike {next : S → S} {o : S → R} (alike : GoAlike (p
   | zero => exact e
   | succ n ih => exact goAlike_process_iff.mp alike _ _ ih
 
-/-- **What is registered now makes sense by itself exactly where it carries a law**: a condition on
-one step. -/
+/-- **The map's present value makes sense by itself exactly where it carries a law**: a condition
+on one step. -/
 theorem now_identifiesAlike_iff_goAlike {next : S → S} {o : S → R} :
     IdentifiesAlike (frameBy next o) o ↔ GoAlike (process next) o :=
   now_identifiesAlike_iff.trans
     ⟨fun fixes => goAlike_process_iff.mpr fun s s' e => fixes s s' e 1, sameFuture_of_goAlike⟩
 
-/-- **The registered part alone makes sense exactly where the rest makes no difference to its next
-value.** -/
+/-- **The part read through the map alone makes sense exactly where the rest makes no difference
+to its next value.** -/
 theorem part_identifiesAlike_iff_step {X : Type u} {C : Type v} {next : X × C → X × C} :
     IdentifiesAlike (frameBy next Prod.fst) Prod.fst ↔ ∀ x c c', (next (x, c)).1 = (next (x, c')).1 := by
   refine now_identifiesAlike_iff_goAlike.trans ⟨fun alike x c c' => goAlike_process_iff.mp alike _ _ rfl, ?_⟩
@@ -439,7 +440,7 @@ theorem move_adaptive :
     Law.process move = adaptive (fun g x (_ : Unit) => x + g) (fun g (_ : Nat) => g) :=
   rfl
 
-/-- **Registering only the standing, the split that makes sense is the pair.** -/
+/-- **Through the map to the standing alone, the split that makes sense is the pair.** -/
 theorem pair_identifiesAlike : IdentifiesAlike (Law.frameBy move Prod.fst) (fun s : Nat × Nat => s) :=
   fun ⟨x, v⟩ ⟨x', v'⟩ =>
     ⟨fun e => match e with | rfl => Alike.refl _ (x, v),
@@ -480,14 +481,14 @@ theorem still_identifiesAlike : IdentifiesAlike (Law.frameBy still Prod.fst) Pro
 
 end Motion
 
-/-! ## States from one registered history -/
+/-! ## States from one history through a map -/
 
 section Moments
 
 variable {O : Type v}
 
-/-- Two moments of one registered unfolding are one state when everything registered after them
-is alike. -/
+/-- Two moments of one history through a map are one state when everything after them is alike
+through the map. -/
 def SameAhead (o : Nat → O) (t t' : Nat) : Prop := ∀ n, o (t + n) = o (t' + n)
 
 theorem SameAhead.refl (o : Nat → O) (t : Nat) : SameAhead o t t := fun _ => rfl
@@ -505,7 +506,7 @@ theorem SameAhead.next {o : Nat → O} {t t' : Nat} (h : SameAhead o t t') :
   fun n => (congrArg o (Nat.succ_add t n)).trans
     ((h (n + 1)).trans (congrArg o (Nat.succ_add t' n)).symm)
 
-/-- Read along an orbit, one state is the same registered future. -/
+/-- Read along an orbit, one state is the same future through the map. -/
 theorem sameAhead_orbit_iff {S : Type u} {next : S → S} {o : S → O} {s : S} {t t' : Nat} :
     SameAhead (fun n => o (Law.orbit next s n)) t t' ↔
       Law.SameFuture next o (Law.orbit next s t) (Law.orbit next s t') :=
@@ -514,12 +515,12 @@ theorem sameAhead_orbit_iff {S : Type u} {next : S → S} {o : S → O} {s : S} 
    fun h n => (congrArg o (Law.orbit_add next s t n)).trans
       ((h n).trans (congrArg o (Law.orbit_add next s t' n)).symm)⟩
 
-/-- Where every moment is registered differently, each moment is its own state. -/
+/-- Where the map takes a different value at every moment, each moment is its own state. -/
 theorem SameAhead.new_each {o : Nat → O} (new : ∀ t t', o t = o t' → t = t') {t t' : Nat}
     (h : SameAhead o t t') : t = t' :=
   new t t' (h 0)
 
-/-- **Every registered history is a determined law read through a registration**: the law of
+/-- **Every history through a map is a determined law read through a map**: the law of
 moments, each going on to the next, which is the succession of the step index and nothing more.
 Its alike moments are the moments that are one state. -/
 theorem alike_moments_iff {o : Nat → O} {t t' : Nat} :
@@ -608,15 +609,15 @@ theorem statesBelow_of_same {o : Nat → O} {i j : Nat} (lt : i < j) (same : Sam
           exact same.symm
         exact ⟨i, lt, h.next.trans back⟩
 
-/-- **A registered history has finitely many states exactly where two of its moments are one
-state**, that is, where its registration repeats from some moment on. -/
+/-- **A history through a map has finitely many states exactly where two of its moments are one
+state**, that is, where its values repeat from some moment on. -/
 theorem finitely_many_states_iff {o : Nat → O} :
     (∃ L, StatesBelow o L) ↔ ∃ i j, i < j ∧ SameAhead o i j :=
   ⟨fun ⟨L, below⟩ => match shared_below L (fun t i => SameAhead o t i) (fun n _ => below n) with
     | ⟨t, t', _, lt, _, h, h'⟩ => ⟨t, t', lt, h.trans h'.symm⟩,
    fun ⟨_, _, lt, same⟩ => ⟨_, statesBelow_of_same lt same⟩⟩
 
-/-- **A configuration that returns has finitely many states under every registration.** -/
+/-- **A configuration that returns has finitely many states through every map.** -/
 theorem Law.Returns.states {S : Type u} {next : S → S} {s : S} (returns : Law.Returns next s)
     (o : S → O) : ∃ i j, i < j ∧ SameAhead (fun n => o (Law.orbit next s n)) i j :=
   match returns with
@@ -629,7 +630,7 @@ end Moments
 
 namespace Negation
 
-/-- The two-valued negation, registered at each moment. -/
+/-- The two-valued negation, read at each moment. -/
 def course (n : Nat) : Bool := Law.orbit (fun b : Bool => !b) true n
 
 theorem zero_two : SameAhead course 0 2 :=
@@ -647,8 +648,8 @@ theorem two_states :
      | ⟨1, _, h⟩ => .inr h
      | ⟨_ + 2, lt, _⟩ => absurd (Nat.le_of_lt_succ (Nat.lt_of_succ_lt_succ lt)) (Nat.not_succ_le_zero _)⟩
 
-/-- **Each is defined through the other**: one registers `true` and goes into the other, which
-registers `false` and goes into the first. -/
+/-- **Each is defined through the other**: one takes `true` and goes into the other, which
+takes `false` and goes into the first. -/
 theorem each_through_other (t : Nat) :
     (SameAhead course t 0 → course t = true ∧ SameAhead course (t + 1) 1) ∧
       (SameAhead course t 1 → course t = false ∧ SameAhead course (t + 1) 0) :=
@@ -674,7 +675,7 @@ theorem lasso_iff_sameAhead {o : Nat → O} {i q : Nat} :
       subst at_u
       exact (congrArg o (Nat.add_right_comm i d (q + 1))).trans (same d).symm⟩
 
-/-- **Finitely many states is a lasso**: a registered history has finitely many states exactly
+/-- **Finitely many states is a lasso**: a history through a map has finitely many states exactly
 where it repeats from some step on with some period, `Becoming.Learning`'s lasso course. -/
 theorem finitely_many_states_iff_lasso {o : Nat → O} :
     (∃ L, StatesBelow o L) ↔ ∃ i q, Learning.Lasso o i q :=

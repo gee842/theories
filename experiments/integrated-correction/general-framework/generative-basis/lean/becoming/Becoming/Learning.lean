@@ -74,14 +74,14 @@ silence.
   as free as the class
   does (`Training.unselected_beyond_data`), and a fit is right beyond the data, for every world
   in the class, exactly where the class determines it (`Training.fit_right_iff`).
-* **Selection through a model of the options.** A selection or valuation through a model of the
-  options (`Relabel.Equivariant`, `Relabel.EquivariantValue` of `Becoming.Selection`) is a
-  selection through the model's lumping (`selects_through_lumping`, `values_lumped`). It is right
+* **Selection through a map of the alternatives.** A selection or valuation through a map of the
+  alternatives (`Relabel.Equivariant`, `Relabel.EquivariantValue` of `Becoming.Selection`) is a
+  selection through the map's lumping (`selects_through_lumping`, `values_lumped`). It is right
   about what matters only where what matters goes alike across that lumping
-  (`selects_right_through`, `values_right_lumped`): where what matters separates two options the
-  model lumps, none is right (`selects_not_right_of_parted`, `values_not_right_of_parted`); where
-  what matters is read off the model, reading it through the model is right
-  (`selects_right_of_reads`, `values_right_of_reads`).
+  (`selects_right_through`, `values_right_lumped`): where what matters separates two
+  alternatives the map lumps, none is right (`selects_not_right_of_parted`,
+  `values_not_right_of_parted`); where what matters is read off the map, reading it through the
+  map is right (`selects_right_of_reads`, `values_right_of_reads`).
 
 **Readings.**
 - 理 is, on Ren's reading, the modeling of the laws of structure and of change. A lumping is a
@@ -1013,11 +1013,11 @@ theorem fit_right_iff {C : (I → V) → Prop} {D : I → Prop} {x : I} :
 
 end Training
 
-/-! ## Selection through a model of the options
+/-! ## Selection through a map of the alternatives
 
-A selector tells options apart through its model of them, an entry for each option
-(`Becoming.Selection`, namespace `Relabel`); the model lumps together the options it gives one
-entry. A selection through the model is a selection through that lumping, and it is right about
+A selector tells alternatives apart through its map of them, an entry for each alternative
+(`Becoming.Selection`, namespace `Relabel`); the map lumps together the alternatives it gives one
+entry. A selection through the map is a selection through that lumping, and it is right about
 what matters only where what matters goes alike across the lumping. -/
 
 section Model
@@ -1026,7 +1026,7 @@ open Relabel
 
 variable {K : Type u} {V : Type v} {W : Type w} [DecidableEq K]
 
-/-- **A selection through a model is a selection through its lumping.** Options the model `r`
+/-- **A selection through a map is a selection through its lumping.** Alternatives the map `r`
 lumps together are selected alike. -/
 theorem selects_through_lumping {select : (K → V) → K → Prop} (equivariant : Equivariant select)
     (r : K → V) : Training.Through (fun i i' => r i = r i') (select r) :=
@@ -1037,45 +1037,45 @@ theorem values_lumped {value : (K → V) → K → W} (equivariant : Equivariant
     (r : K → V) : Lumped r (value r) :=
   fun _ _ tie => equivariant.tied tie
 
-/-- **A selection through a model is right about what matters only where what matters goes
-alike across the model's lumping.** If a selection through `r` selects exactly the options
-satisfying `p`, then `p` holds alike of options `r` lumps together. -/
+/-- **A selection through a map is right about what matters only where what matters goes
+alike across the map's lumping.** If a selection through `r` selects exactly the alternatives
+satisfying `p`, then `p` holds alike of alternatives `r` lumps together. -/
 theorem selects_right_through {select : (K → V) → K → Prop} (equivariant : Equivariant select)
     {r : K → V} {p : K → Prop} (right : ∀ i, select r i ↔ p i) :
     Training.Through (fun i i' => r i = r i') p :=
   fun i i' tie => (right i).symm.trans ((equivariant.tied tie).trans (right i'))
 
-/-- **What a model lumps, no selection through it can separate.** Where `p` holds of one of two
-options the model `r` lumps together and not of the other, no selection through `r` selects
-exactly the options satisfying `p`: that takes a finer model. -/
+/-- **What a map lumps, no selection through it can separate.** Where `p` holds of one of two
+alternatives the map `r` lumps together and not of the other, no selection through `r` selects
+exactly the alternatives satisfying `p`: that takes a finer map. -/
 theorem selects_not_right_of_parted {select : (K → V) → K → Prop}
     (equivariant : Equivariant select) {r : K → V} {p : K → Prop} {j k : K} (tie : r j = r k)
     (holds : p j) (fails : ¬ p k) : ¬ ∀ i, select r i ↔ p i :=
   fun right => fails ((selects_right_through equivariant right j k tie).mp holds)
 
-/-- **A model reading what matters selects it.** Where `p` is read off the model `r` through
-`q`, the selection reading every model through `q` is a selection through the model, and it
-selects exactly the options satisfying `p`. -/
+/-- **A map reading what matters selects it.** Where `p` is read off the map `r` through
+`q`, the selection reading every map through `q` is a selection through the map, and it
+selects exactly the alternatives satisfying `p`. -/
 theorem selects_right_of_reads {r : K → V} {p : K → Prop} (q : V → Prop)
     (reads : ∀ i, p i ↔ q (r i)) :
     Equivariant (fun (r' : K → V) (i : K) => q (r' i)) ∧ ∀ i, q (r i) ↔ p i :=
   ⟨fun _ _ _ _ relabel i => iff_of_eq (congrArg q (relabel i)), fun i => (reads i).symm⟩
 
-/-- A valuation through a model gives every option the value `f` that matters only where `f`
-goes alike across the model's lumping. -/
+/-- A valuation through a map gives every alternative the value `f` that matters only where `f`
+goes alike across the map's lumping. -/
 theorem values_right_lumped {value : (K → V) → K → W} (equivariant : EquivariantValue value)
     {r : K → V} {f : K → W} (right : ∀ i, value r i = f i) : Lumped r f :=
   fun i i' tie => (right i).symm.trans ((equivariant.tied tie).trans (right i'))
 
-/-- Where `f` parts two options the model `r` lumps together, no valuation through `r` gives
-every option its value under `f`. -/
+/-- Where `f` parts two alternatives the map `r` lumps together, no valuation through `r` gives
+every alternative its value under `f`. -/
 theorem values_not_right_of_parted {value : (K → V) → K → W}
     (equivariant : EquivariantValue value) {r : K → V} {f : K → W} {j k : K} (tie : r j = r k)
     (parted : f j ≠ f k) : ¬ ∀ i, value r i = f i :=
   fun right => parted (values_right_lumped equivariant right j k tie)
 
-/-- Where `f` is read off the model `r` through `h`, the valuation reading every model through
-`h` is a valuation through the model, and it gives every option its value under `f`. -/
+/-- Where `f` is read off the map `r` through `h`, the valuation reading every map through
+`h` is a valuation through the map, and it gives every alternative its value under `f`. -/
 theorem values_right_of_reads {r : K → V} {f : K → W} (h : V → W) (reads : ∀ i, f i = h (r i)) :
     EquivariantValue (fun (r' : K → V) (i : K) => h (r' i)) ∧ ∀ i, h (r i) = f i :=
   ⟨fun _ _ _ _ relabel i => congrArg h (relabel i), fun i => (reads i).symm⟩

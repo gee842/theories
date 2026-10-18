@@ -4,23 +4,23 @@ import Becoming.CrossSituational
 import Becoming.FinerTraces
 
 /-!
-# Typical runs: what counting says of the records of runs of free branching
+# Typical runs: what counting says of the prefixes of runs of free branching
 
 `Becoming.Typicality` counts, with natural weights `p` and `q`, the courses of `n` steps on two
 values (`Typicality.courses`), and states the exact spread, the counting form of Chebyshev's bound
 and of Chernoff's bound over them. It reads every course as a run of free branching
 (`Parting.free`, `Parting.freeRun`). This module states those counts of the runs: the courses of
-`n` steps are exactly the records a run of free branching on two values shows in its first `n`
-steps (`Learning.prefixOf` of `Parting.course`), each listed once, so every count over them is a
-count over the records of runs, whatever list holds them.
+`n` steps are exactly the prefixes of `n` steps a run of free branching on two values shows
+(`Learning.prefixOf` of `Parting.course`), each listed once, so every count over them is a
+count over the prefixes of runs, whatever list holds them.
 
-* **The courses are the records of runs.** A list of `n` values is a course of `n` steps exactly
-  where some run of free branching shows it as its record of `n` steps (`mem_courses_iff`), and
-  the courses list each record once (`courses_records`).
-* **A count over the records does not depend on how they are listed.** Two lists each holding
+* **The courses are the prefixes of runs.** A list of `n` values is a course of `n` steps exactly
+  where some run of free branching shows it as its prefix of `n` steps (`mem_courses_iff`), and
+  the courses list each prefix once (`courses_records`).
+* **A count over the prefixes does not depend on how they are listed.** Two lists each holding
   every member of one kind once give every count the same sum (`sum_listing`, `total_listing`).
-* **The counts of `Becoming.Typicality` are counts of records.** For every list `l` holding each
-  record of `n` steps of the runs of free branching on two values once: there are `2 ^ n` of
+* **The counts of `Becoming.Typicality` are counts of prefixes.** For every list `l` holding each
+  prefix of `n` steps of the runs of free branching on two values once: there are `2 ^ n` of
   them (`records_count`); they weigh `(p + q) ^ n` together (`records_weight`), which is the sum
   over histories of `Becoming.Weighted` (`histories_records`); their squared deviations add up to
   `n·p·q·(p + q)^n` (`records_spread`); those deviating by at least `d` weigh, times `d`, at most
@@ -30,7 +30,7 @@ count over the records of runs, whatever list holds them.
   (`records_few_far_ahead`).
 
 What is not derived, as in `Becoming.Typicality`: that the run which happens is typical. Counting
-weighs the records of runs; it does not choose one, and no record shows that a run of free
+weighs the prefixes of runs; it does not choose one, and no prefix shows that a run of free
 branching will not part (`Parting.free_parts_after`). No ethical predicate, ranking or axiom
 occurs.
 -/
@@ -132,7 +132,7 @@ theorem length_listed {M : α → Prop} {l m : List α} (listed : Listing M l)
 
 end Listing
 
-/-! ## The courses are the records of runs -/
+/-! ## The courses are the prefixes of runs -/
 
 /-- Typicality's sum is the sum of counting. -/
 theorem total_eq_sum (f : List Bool → Nat) : ∀ ws : List (List Bool),
@@ -145,7 +145,7 @@ theorem total_listing {M : List Bool → Prop} {l m : List (List Bool)} (listed 
     (listed' : Listing M m) (f : List Bool → Nat) : Typicality.total l f = Typicality.total m f :=
   (total_eq_sum f l).trans ((sum_listed listed listed' f).trans (total_eq_sum f m).symm)
 
-/-- The sequence whose record of `w.length` steps is `w`, `false` after it. -/
+/-- The sequence whose prefix of `w.length` steps is `w`, `false` after it. -/
 def ofRecord : List Bool → Nat → Bool
   | [], _ => false
   | b :: w, k => if k = w.length then b else ofRecord w k
@@ -158,11 +158,11 @@ theorem record_ofRecord : ∀ w : List Bool, Learning.prefixOf (ofRecord w) w.le
       ((Learning.prefix_congr fun _ before => if_neg (Nat.ne_of_lt before)).trans
         (record_ofRecord w))
 
-/-- The record of `n` steps of a run of free branching on two values. -/
+/-- The prefix of `n` steps of a run of free branching on two values. -/
 abbrev record (r : Run (Parting.free Bool)) (n : Nat) : List Bool :=
   Learning.prefixOf (Parting.course id r) n
 
-/-- **The courses of `n` steps are exactly the records of `n` steps of runs of free branching on
+/-- **The courses of `n` steps are exactly the prefixes of `n` steps of runs of free branching on
 two values.** -/
 theorem mem_courses_iff {n : Nat} {w : List Bool} :
     w ∈ Typicality.courses n ↔ ∃ r : Run (Parting.free Bool), record r n = w :=
@@ -194,39 +194,39 @@ theorem distinct_courses : ∀ n, CrossSituational.Distinct (Typicality.courses 
       ⟨fun mem => (nomatch mem), trivial⟩
   | n + 1 => distinct_extend (distinct_courses n)
 
-/-- `l` holds every record of `n` steps of the runs of free branching on two values once. -/
+/-- `l` holds every prefix of `n` steps of the runs of free branching on two values once. -/
 def Records (n : Nat) (l : List (List Bool)) : Prop :=
   Listing (fun w => ∃ r : Run (Parting.free Bool), record r n = w) l
 
-/-- **The courses of `n` steps hold every record of `n` steps of the runs once.** -/
+/-- **The courses of `n` steps hold every prefix of `n` steps of the runs once.** -/
 theorem courses_records (n : Nat) : Records n (Typicality.courses n) :=
   ⟨distinct_courses n, fun _ => mem_courses_iff⟩
 
-/-! ## The counts of Typicality are counts of records -/
+/-! ## The counts of Typicality are counts of prefixes -/
 
 section Counts
 
 variable {n : Nat} {l : List (List Bool)}
 
-/-- **There are `2 ^ n` records of `n` steps of the runs of free branching on two values.** -/
+/-- **There are `2 ^ n` prefixes of `n` steps of the runs of free branching on two values.** -/
 theorem records_count (listed : Records n l) : l.length = 2 ^ n :=
   (length_listed listed (courses_records n)).trans (Typicality.courses_length n)
 
-/-- **The records of `n` steps weigh `(p + q) ^ n` together.** -/
+/-- **The prefixes of `n` steps weigh `(p + q) ^ n` together.** -/
 theorem records_weight (listed : Records n l) (p q : Nat) :
     Typicality.total l (Typicality.weight p q) = (p + q) ^ n :=
   (total_listing listed (courses_records n) _).trans (Typicality.total_weight p q n)
 
-/-- **The sum over histories of `Becoming.Weighted` is the weight of the records.** The sum over
+/-- **The sum over histories of `Becoming.Weighted` is the weight of the prefixes.** The sum over
 the histories of `n` steps of free branching on two values, weighted by counting, is the total
-weight of the records of `n` steps of its runs. -/
+weight of the prefixes of `n` steps of its runs. -/
 theorem histories_records (listed : Records n l) (p q : Nat) (s : Bool) :
     counting.sum (Becoming.courses [()] [true, false] n)
         (counting.along (Typicality.stepWeight p q) (fun _ => 1) s) =
       Typicality.total l (Typicality.weight p q) :=
   (Typicality.sum_courses_weight p q n s).trans (total_listing (courses_records n) listed _)
 
-/-- **The spread over the records of runs is exact.** Over the records of `n` steps, each
+/-- **The spread over the prefixes of runs is exact.** Over the prefixes of `n` steps, each
 weighted, `x·x + y·y` adds up to `2·x·y` plus `n·p·q·(p + q)^n`. -/
 theorem records_spread (listed : Records n l) (p q : Nat) :
     Typicality.total l (fun w => Typicality.weight p q w * Typicality.square p q w) =
@@ -236,21 +236,21 @@ theorem records_spread (listed : Records n l) (p q : Nat) :
     ((Typicality.spread p q n).trans
       (congrArg (· + n * (p * q * (p + q) ^ n)) (total_listing (courses_records n) listed _)))
 
-/-- **Most records of runs show the weights.** The records of `n` steps whose squared deviation
+/-- **Most prefixes of runs show the weights.** The prefixes of `n` steps whose squared deviation
 is at least `d` weigh, times `d`, at most `n·p·q·(p + q)^n`, out of `(p + q)^n` for all. -/
 theorem records_typical (listed : Records n l) (p q d : Nat) :
     Typicality.total l (Typicality.offBy p q d) * d ≤ n * (p * q * (p + q) ^ n) :=
   Eq.subst (motive := fun x => x * d ≤ n * (p * q * (p + q) ^ n))
     (total_listing (courses_records n) listed _) (Typicality.typical p q n d)
 
-/-- **Concentration over the records of runs is exponential.** For every `u ≥ v`, the records of
+/-- **Concentration over the prefixes of runs is exponential.** For every `u ≥ v`, the prefixes of
 `n` steps with at least `k` ones weigh, times `u ^ k · v ^ n`, at most `(p·u + q·v) ^ n · v ^ k`. -/
 theorem records_concentrated (listed : Records n l) (p q k : Nat) {u v : Nat} (le : v ≤ u) :
     Typicality.total l (Typicality.atLeast p q k) * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k :=
   Eq.subst (motive := fun x => x * (u ^ k * v ^ n) ≤ (p * u + q * v) ^ n * v ^ k)
     (total_listing (courses_records n) listed _) (Typicality.concentrated p q k n le)
 
-/-- **Exponentially few runs run far ahead.** Of the `2 ^ n` records of `n` steps, those with at
+/-- **Exponentially few runs run far ahead.** Of the `2 ^ n` prefixes of `n` steps, those with at
 least `k` ones number, times `3 ^ k`, at most `4 ^ n`. -/
 theorem records_few_far_ahead (listed : Records n l) (k : Nat) :
     Typicality.total l (Typicality.atLeast 1 1 k) * 3 ^ k ≤ 4 ^ n :=

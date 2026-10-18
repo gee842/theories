@@ -1,0 +1,18 @@
+# Courses.lean: a run's registrations at listed dates → the values a map takes at them (S1); the reach target and "observable" kept (local senses).
+### lean:Courses
+= S1
+- * **Fallible witnesses.** The registrations of a run at listed dates are fallible witnesses:
++ * **Fallible witnesses.** The values a map takes along a run at listed dates are fallible witnesses:
+= S1
+- /-- `n` moves of a copy reading through a registration go along the orbit of its law. -/
++ /-- `n` moves of a copy reading through `read` go along the orbit of its law. -/
+= S1
+- /-- **Registrations of a run at listed dates as fallible witnesses.** For every process and every
+- two-valued registration, where two fault sets leave a common faithful date, no run's
+- registrations are explained
++ /-- **The values a map takes along a run at listed dates as fallible witnesses.** For every
++ process and every two-valued map, where two fault sets leave a common faithful date, no run's
++ values through the map are explained
+= S1
+- /-- **The registrations of every course tell two answers apart
++ /-- **The values of every course tell two answers apart

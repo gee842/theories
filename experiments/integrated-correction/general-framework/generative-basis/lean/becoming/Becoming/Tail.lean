@@ -3,7 +3,7 @@ import Becoming.Sensitivity
 /-!
 # Tail: what a law of the whole and no part takes
 
-`Becoming.Sensitivity` shows that sensitivity is the least registration, up to double negation,
+`Becoming.Sensitivity` shows that sensitivity is the least coupling, up to double negation,
 wherever a law reads finitely many conditions under each history, and that with infinitely many
 conditions this cannot be dropped relative to a decision taken as a hypothesis. Given a decision
 of whether levels vanish from some condition on, which gives the
@@ -24,14 +24,14 @@ given as a rule.
   sensitive to none, and reads through the conditions from any one on (`wholeLaw_nonanticipating`,
   `wholeLaw_insensitive`, `wholeLaw_not_sensitive`, `wholeLaw_through_from`). Where the number
   differs between two levels, the law does not read through what it is sensitive to, nor finitely
-  many conditions, and the registrations it reads through have no least one
+  many conditions, and the couplings it reads through have no least one
   (`wholeLaw_not_through_sensitive`, `wholeLaw_not_readsFinitely`,
   `wholeLaw_no_least_coupling`). The tail law of `Becoming.Sensitivity` is the instance of the
   indicator of vanishing (`tailLaw_eq_wholeLaw`, `vanishIndicator_changedByNoCondition`).
 * **A counterexample gives a rule.** The comparison by which `Becoming.Sensitivity` mixes two
   histories along a Boolean sequence decides the sequence as a rule (`mixedDecision`). So a law
   insensitive at a step to every condition that still differs there, and a counterexample to the
-  least registration, each give a rule deciding, of every Boolean sequence, whether it is `false`
+  least coupling, each give a rule deciding, of every Boolean sequence, whether it is `false`
   throughout (`insensitiveDiffersDecision`, `notThroughSensitiveDecision`). Such a rule gives
   `WLPO` (`WLPO.of_rule`).
 * **A rule gives a counterexample.** With such a rule, whether levels vanish from condition `N` on
@@ -46,7 +46,7 @@ given as a rule.
   `neverLaw_insensitive`, `neverLaw_not_sensitive`, `neverLaw_differs`): a counterexample built
   from the rule alone.
 * **Exactly.** A number changed by no condition that still differs, a law insensitive at a step to
-  every condition that still differs there, and a counterexample to the least registration each
+  every condition that still differs there, and a counterexample to the least coupling each
   exist exactly where such a rule does (`changedByNoCondition_iff_rule`,
   `insensitive_differs_iff_rule`, `not_through_sensitive_iff_rule`).
 * **The decision of vanishing is the limited principle as a rule.** It gives a rule deciding, of
@@ -59,7 +59,7 @@ given as a rule.
 **Readings (the AI's, pending Ren).**
 - A whole that depends on no part of it is given exactly where it can be decided, of every
   unending record of yes and no, whether it says no throughout: every such whole gives that
-  decision, and that decision gives one. With the conditions numbered, the least registration
+  decision, and that decision gives one. With the conditions numbered, the least coupling
   fails exactly at this omniscience and needs no more of it; the core does not assume it.
 - Read as whether levels vanish eventually, the whole takes the limited principle as a rule; read
   as whether they never vanish, the same whole, telling apart the same histories, takes only the
@@ -179,7 +179,7 @@ theorem wholeLaw_not_sensitive (fixed : ChangedByNoCondition f) (c : Nat) :
     ¬ (wholeLaw f).Sensitive () c :=
   fun ⟨t, notInsensitive⟩ => notInsensitive (wholeLaw_insensitive fixed t c)
 
-/-- It reads through registering the conditions from any one on. -/
+/-- It reads through the coupling of the conditions from any one on. -/
 theorem wholeLaw_through_from (fixed : ChangedByNoCondition f) {W : Web Unit Nat} (n : Nat) :
     (wholeLaw f).Through W (fun _ c => n ≤ c) (fun _ => false) :=
   fun _ _ _ _ _ alike => wholeLaw_reads_from fixed n fun s le m above => (alike s le).2 m above
@@ -198,9 +198,9 @@ theorem wholeLaw_not_readsFinitely (fixed : ChangedByNoCondition f) {α β : Nat
   fun fin => differs
     ((fin.alike_of_insensitive (wholeLaw_not_sensitive fixed) 0 (fun _ => α) (fun _ => β)) 0).1
 
-/-- **The registrations it reads through have no least one.** For a web in which the formation
+/-- **The couplings it reads through have no least one.** For a web in which the formation
 depends on nothing, a least one would hold no condition, the conditions from each one on being read
-through, and the law does not read through registering nothing. -/
+through, and the law does not read through the coupling of nothing. -/
 theorem wholeLaw_no_least_coupling (fixed : ChangedByNoCondition f) {α β : Nat → Nat}
     (differs : f α ≠ f β) {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t () c) :
     ¬ ∃ obs : Unit → Nat → Prop, (wholeLaw f).Through W obs (fun _ => false) ∧
@@ -262,7 +262,7 @@ def insensitiveDiffersDecision {law : ExchangeLaw F Nat} {t : Nat} {h : F}
     (fun n yes => alike_of_agree_from insensitive n fun r _ e above =>
       (congrArg (fun b => bif b then l' r e else l r e) (seenBy_true yes above) : _))
 
-/-- **Every counterexample to the least registration gives a rule** deciding, of every Boolean
+/-- **Every counterexample to the least coupling gives a rule** deciding, of every Boolean
 sequence, whether it is `false` throughout: a law of what has stood, its conditions numbered by the
 natural numbers, with two histories agreeing up to `t` on every condition it is sensitive to that
 still give differently there. -/
@@ -427,7 +427,7 @@ theorem insensitive_differs_iff_rule :
     ⟨Unit, neverLaw decides, 0, (), fun _ _ => 0, fun _ _ => 1, 0, neverLaw_insensitive decides 0,
      fun same => neverLaw_differs decides 0 0 same.1⟩⟩
 
-/-- **A counterexample to the least registration exists exactly where such a rule does**: a law of
+/-- **A counterexample to the least coupling exists exactly where such a rule does**: a law of
 what has stood, its conditions numbered by the natural numbers, with two histories agreeing up to a
 step on every condition it is sensitive to that still give differently there. -/
 theorem not_through_sensitive_iff_rule :

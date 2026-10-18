@@ -1,0 +1,5 @@
+# Refinement.lean: a law read through a registration → through a map (S1).
+### lean:Refinement
+= S1
+- determined law read through a registration (`Law.sameFuture_iff_classes`
++ determined law read through a map (`Law.sameFuture_iff_classes`

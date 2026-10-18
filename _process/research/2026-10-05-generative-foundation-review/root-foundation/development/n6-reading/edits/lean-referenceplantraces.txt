@@ -1,0 +1,27 @@
+# ReferencePlanTraces.lean: as ReferencePlan; a round registers a choice → gains the choice through its lumping; `revise_registers`, `frozen_leaves_unregistered`, `first_round_registers`, `second_round_registers` are names, in the names table.
+### lean:ReferencePlanTraces
+= S1
+- so the revised method registers the failure (`revise_registers`),
++ so the revised method contacts the failed address (`revise_registers`),
+= S1
+- method some failure is left unregistered (`frozen_leaves_unregistered`).
++ method some failure is left unanswered (`frozen_leaves_unregistered`).
+= S1
+- install and register each new contact
++ install each new contact and gain its choice
+= S1
+- /-- **A revise step's method registers the failure it answers.** -/
++ /-- **A revise step's method contacts the failed address it answers.** -/
+= S1
+- /-- **At every retained method some failure is left unregistered by every frozen step.** -/
++ /-- **At every retained method some failure is left unanswered by every frozen step.** -/
+= S1
+- /-- **The first round gains the registered choice at contact 0**, which the start did not
+- register. -/
++ /-- **The first round gains the choice at contact 0 through the installed contacts**, which the
++ start did not have. -/
+= S1
+- /-- **The second round gains the registered choice at contact 1**, which the first repair did not
+- register. -/
++ /-- **The second round gains the choice at contact 1 through the installed contacts**, which the
++ first repair did not have. -/

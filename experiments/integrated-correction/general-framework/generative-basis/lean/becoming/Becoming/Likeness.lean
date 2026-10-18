@@ -17,7 +17,7 @@ constructively where frames are finite and decided, that neither decision can be
 which principle the finitely many configurations save where only each move's outcomes are listed.
 No premise is added; every declaration has an empty axiom report.
 
-* **A description carries a law up to likeness exactly where some equivalence registering the
+* **A description carries a law up to likeness exactly where some equivalence respecting the
   claims makes configurations go alike** (`carries_law_alike_iff`). Some process on the
   descriptions, determined up to likeness under the claims, admits every step read through `π`
   exactly when some equivalence on descriptions relates only descriptions realizing the same
@@ -38,13 +38,13 @@ No premise is added; every declaration has an empty axiom report.
   back to an alike configuration. Read through a projection, a move the run has not taken at a
   description alike to the one named is not fixed up to likeness, under any process on the
   descriptions determined up to likeness that admits the steps so read
-  (`Run.not_fixesThroughAlike_of_untaken`), and so wherever an equivalence registering the
+  (`Run.not_fixesThroughAlike_of_untaken`), and so wherever an equivalence respecting the
   claims makes configurations go alike (`Run.not_fixesThroughAlike_of_goAlikeUnder`):
   `Run.not_fixesThrough_of_untaken` and `Run.not_fixesThrough_of_goAlike` up to likeness.
 * **The dichotomy of difference-making needs only the level after the move to be one**
   (`Dependence.dichotomy_of_same_level`). Where every step by the move from the withheld
   configuration reaches the same level of the condition, either the part makes the difference or
-  the same move still breaks the dependence. Determinacy up to likeness under claims that register
+  the same move still breaks the dependence. Determinacy up to likeness under claims that tell apart
   the level is a case of it (`Dependence.dichotomy_of_determinedAt`), and so is determinacy
   (`Dependence.dichotomy_of_determined`, the statement of `Dependence.determined_dichotomy`). In
   every process the part makes the difference exactly when the same move no longer breaks the
@@ -80,12 +80,12 @@ No premise is added; every declaration has an empty axiom report.
   number of pairs, `N · N'` (`AlikeTo.steady_within`, `alike_iff_alikeTo_pairs`, kept). Within
   one frame `N - 1` is exact: on a path of `N` places ending where nothing steps, the first two
   places are alike to depth `N - 2` and are not alike (`EndOfPath.classes_exact`). For determined
-  laws read through registrations, likeness to depth `k` is agreement for `k + 1` steps
+  laws read through maps, likeness to depth `k` is agreement for `k + 1` steps
   (`alikeTo_frameBy_iff`). There one step less suffices: `N - 2` within one world
   (`Law.sameFuture_iff_classes` of `Becoming.Identification`) and `N + N' - 2` across two
   (`Identification.bounded_agree`), each exact for laws and courses
   (`Law.sameFuture_classes_exact`, `Identification.bounded_agree_exact`). A frame's extra step is
-  where whether a move can be taken at all registers. Whether `N + N' - 1` is exact across two
+  where whether a move can be taken at all makes a difference. Whether `N + N' - 1` is exact across two
   frames is not stated here.
 * **The decisions cannot be dropped from deciding likeness.** Asked of every pair of frames with
   one configuration, one move and no claims, whether their configurations are alike is decided
@@ -154,9 +154,9 @@ section Carrying
 
 variable {S : Type u} {A : Type v} {K : Type u'} {D : Type w'}
 
-/-- `E` registers the claims: descriptions it relates realize the same claims. This is a
-relation on descriptions respecting the claims; `Web.CoupledInto` of `Becoming.Testing` is another
-sense, a condition entering what registers in a formation (its dependence or its observation). -/
+/-- `E` respects the claims: descriptions it relates realize the same claims. `Web.CoupledInto`
+of `Becoming.Testing` is another sense, a condition coupling into a formation, by threshold (its
+dependence) or by level. -/
 def RespectsClaims (claims : K → D → Prop) (E : K → K → Prop) : Prop :=
   ∀ k k', E k k' → ∀ d, claims k d ↔ claims k' d
 
@@ -176,7 +176,7 @@ theorem factors_imageUnder (P : Process S A) (π : S → K) {E : K → K → Pro
     (eqv : Equivalence E) : FactorsThrough P π (imageUnder P π E) :=
   fun s _ u step => ⟨s, u, eqv.refl _, step, eqv.refl _⟩
 
-/-- An equivalence registering the claims is a bisimulation of the image closed under it. -/
+/-- An equivalence respecting the claims is a bisimulation of the image closed under it. -/
 theorem imageUnder_bisimulation (P : Process S A) (π : S → K) {claims : K → D → Prop}
     {E : K → K → Prop} (eqv : Equivalence E) (registers : RespectsClaims claims E) :
     Bisimulation (⟨imageUnder P π E, claims⟩ : Frame K A D) ⟨imageUnder P π E, claims⟩ E :=
@@ -187,7 +187,7 @@ theorem imageUnder_bisimulation (P : Process S A) (π : S → K) {claims : K →
      fun _ κ ⟨s, u, at_k, step, to⟩ =>
        ⟨κ, ⟨s, u, eqv.trans related at_k, step, to⟩, eqv.refl κ⟩⟩
 
-/-- Where an equivalence registering the claims makes configurations go alike, the image closed
+/-- Where an equivalence respecting the claims makes configurations go alike, the image closed
 under it is determined up to likeness everywhere. -/
 theorem imageUnder_determinedAt (P : Process S A) (π : S → K) {claims : K → D → Prop}
     {E : K → K → Prop} (eqv : Equivalence E) (registers : RespectsClaims claims E)
@@ -201,11 +201,11 @@ theorem imageUnder_determinedAt (P : Process S A) (π : S → K) {claims : K →
 theorem alike_equivalence (F : Frame K A D) : Equivalence (Alike F F) :=
   ⟨Alike.refl F, Alike.symm, Alike.trans⟩
 
-/-- Likeness in a frame registers its claims. -/
+/-- Likeness in a frame respects its claims. -/
 theorem alike_respectsClaims (F : Frame K A D) : RespectsClaims F.realized (Alike F F) :=
   fun _ _ alike => alike.realized
 
-/-- **A description carries a law up to likeness exactly where some equivalence registering the
+/-- **A description carries a law up to likeness exactly where some equivalence respecting the
 claims makes configurations go alike.** Some process on the descriptions, determined up to
 likeness under `claims`, admits every step of `P` read through `π` if and only if some equivalence
 on the descriptions relates only descriptions realizing the same claims and takes configurations
@@ -228,7 +228,7 @@ theorem eq_equivalence : Equivalence (fun k k' : K => k = k') :=
   ⟨fun _ => rfl, fun same => same.symm, fun same same' => same.trans same'⟩
 
 /-- **Where the claims name the descriptions, carrying a law up to likeness is
-`carries_law_iff`.** With each description its own claim, the only equivalence registering the
+`carries_law_iff`.** With each description its own claim, the only equivalence respecting the
 claims is equality, and some process determined up to likeness admits every step read through
 `π` exactly when configurations alike under `π` go alike under `π`. -/
 theorem carries_law_named_iff {P : Process S A} {π : S → K} :
@@ -379,7 +379,7 @@ theorem Run.not_fixesThroughAlike_of_untaken {K : Type u'} {D : Type w'} {P : Pr
     not_here ((to_y.realized d).mpr ((to_x.realized d).mp here))
 
 /-- **A law carried up to likeness is not fixed where not yet taken either.** Where an
-equivalence registering the claims makes configurations go alike under `π`, the record fixes up
+equivalence respecting the claims makes configurations go alike under `π`, the record fixes up
 to likeness no outcome of a move at a description the run has not taken it at, up to likeness in
 the image closed under the equivalence: `Run.not_fixesThrough_of_goAlike` up to likeness. -/
 theorem Run.not_fixesThroughAlike_of_goAlikeUnder {K : Type u'} {D : Type w'} {P : Process S A}
@@ -1089,7 +1089,7 @@ theorem alike_iff_alikeTo_across (moves : ∃ l : List A, ∀ a, a ∈ l)
     | ⟨N, within, steady⟩ =>
       ⟨AlikeTo F G N, AlikeTo.bisimulation steady, AlikeTo.down_to (le_pred_of_succ_le within) alike⟩⟩
 
-/-- **For determined laws read through registrations, likeness to depth `k` is agreement for
+/-- **For determined laws read through maps, likeness to depth `k` is agreement for
 `k + 1` steps.** -/
 theorem alikeTo_frameBy_iff {R : Type w} {next : S → S} {next' : S' → S'} {o : S → R}
     {o' : S' → R} : ∀ {k : Nat} {s : S} {s' : S'},
@@ -2418,7 +2418,7 @@ theorem dichotomy_of_same_level {P : Process S A} {withhold : F → S → S} {f 
       ⟨met, Eq.subst (motive := fun n => K.need (withhold f s) g c ≤ n)
         (same t₀ t available step) held⟩⟩
 
-/-- **Determinacy up to likeness under claims registering the level suffices.** Where alike
+/-- **Determinacy up to likeness under claims telling the level apart suffices.** Where alike
 configurations, read by `claims`, are at the same level of the condition and the frame is
 determined up to likeness at the withheld configuration, the dichotomy holds. -/
 theorem dichotomy_of_determinedAt {D : Type w} {P : Process S A} {claims : S → D → Prop}
@@ -2433,7 +2433,7 @@ theorem dichotomy_of_determinedAt {D : Type w} {P : Process S A} {claims : S →
     (fun t t' step step' => registers t t' (determined a t t' step step').realized)
     breaks available depends met
 
-/-- The claims reading the level of the condition register it. -/
+/-- The claims reading the level of the condition tell it apart. -/
 theorem level_registers (c : C) :
     ∀ x y : S, (∀ n, K.level x c = n ↔ K.level y c = n) → K.level x c = K.level y c :=
   fun _ y same => (same (K.level y c)).mpr rfl

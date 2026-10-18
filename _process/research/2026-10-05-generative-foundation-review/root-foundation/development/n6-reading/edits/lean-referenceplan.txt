@@ -1,0 +1,25 @@
+# ReferencePlan.lean: a rule registers a failed address → contacts it; unregistered → unanswered (as Contacts); the installed registration → the lumping on installed contacts; the channel's target values kept (local sense); `revise_registers_failure`, `frozen_blind` are names, in the names table.
+### lean:ReferencePlan
+= S1
+- The revision rule
+- registers every failed address (`propose_answers`, `revise_registers_failure`); the frozen
+- rule is blind to what failed and leaves some failure unregistered at every retained method
++ The revision rule
++ contacts every failed address (`propose_answers`, `revise_registers_failure`); the frozen
++ rule does not read what failed and leaves some failure unanswered at every retained method
+= S1
+- /-- The address domain of the installed registration.
++ /-- The address domain of the lumping on installed contacts.
+= S1
+- /-- Direct reuse of `Registration.keeps_iff`, not a second definition of registration-based
+- selection. -/
++ /-- Direct reuse of `Registration.keeps_iff`, not a second definition of selection through a
++ lumping. -/
+= S1
+- /-- Only constructed and installed contacts participate in this registration. -/
++ /-- Only constructed and installed contacts participate in this lumping. -/
+= S1
+- At every retained method, some failure is left
+- unregistered by the frozen rule;
++ At every retained method, some failure is left
++ unanswered by the frozen rule;

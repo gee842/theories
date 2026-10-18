@@ -139,7 +139,7 @@ What is not derived:
   significance is (`Web.significance_undetermined`); along a relation it already carries
   transmission along that relation, from the bare own good of the empty relation to the continuation condition of
   the total one;
-- that a center knows its reach closure: its own feedback registers at most its influence closure
+- that a center knows its reach closure: its own feedback carries at most its influence closure
   (`Flow.Balances.uncoupled_beyond_influence`);
 - the step from significance to a reason, to motivation or to practice.
 

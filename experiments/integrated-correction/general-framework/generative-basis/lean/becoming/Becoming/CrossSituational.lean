@@ -3,7 +3,7 @@ import Becoming.Segmentation
 /-!
 # Cross-situational resolution: what a form names, read across the occasions it was met
 
-A learner meets a form on several occasions, and each record of an occasion offers the meanings
+A formation that learns meets a form on several occasions, and each record of an occasion offers the meanings
 accessible then. Which records bear on a form, and what each record offers, are read by two
 Boolean relations (`bears`, `offers`). A meaning stands for a form where every record bearing on
 the form offers it (`stands`); the candidates of the form are the meanings of a repertoire that

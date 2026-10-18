@@ -18,8 +18,8 @@ erasure, exhaustion, failed separation and drift delimit the claim.
 The general laws come first, in `Becoming.Stock` and `Becoming.Contacts`; the last section
 reads this process through them. The fuel is a stock balanced against what is used and drawn
 only from what is held, so every executed course is covered (`covered`). The revision rule
-registers every failed address (`propose_answers`, `revise_registers_failure`); the frozen
-rule is blind to what failed and leaves some failure unregistered at every retained method
+contacts every failed address (`propose_answers`, `revise_registers_failure`); the frozen
+rule does not read what failed and leaves some failure unanswered at every retained method
 (`frozen_misses`). A reference pair drives the channel to both targets exactly when its
 references differ (`checked_pair_iff`), and after drift an installed key fails at every target
 (`drift_fails`). The witnesses below are instances and controls of these laws.
@@ -241,7 +241,7 @@ theorem checked_pair_correct (c : Bool → Bool) (separate : c false ≠ c true)
     | false => cases target <;> first | exact hi | exact lo
     | true => exact False.elim (separate (lo.trans hi.symm))
 
-/-- The address domain of the installed registration. These are alternative
+/-- The address domain of the lumping on installed contacts. These are alternative
 signals at its contacts, not claims that unseen channels were actually sampled. Two signals are
 alike where they agree at every planned address: `Learning.Training.AgreeOn` on the plan
 (`alike_iff_agreeOn`). This is not `Becoming.Alike` of `Becoming.Unfolding`, which relates two
@@ -258,8 +258,8 @@ theorem added_keeps (m : List Nat) (i : Nat) :
     Registration.Keeps Alike m (i :: m) :=
   fun _ _ h j hj => h j (List.mem_cons_of_mem i hj)
 
-/-- Direct reuse of `Registration.keeps_iff`, not a second definition of registration-based
-selection. -/
+/-- Direct reuse of `Registration.keeps_iff`, not a second definition of selection through a
+lumping. -/
 theorem old_selections_remain (m : List Nat) (i : Nat) :
     ∀ select, Learning.Training.Through (Alike m) select →
       Learning.Training.Through (Alike (i :: m)) select :=
@@ -353,7 +353,7 @@ theorem second_new_selection :
       ¬ Learning.Training.Through (Alike repairedFirst.method) (fun x => x 1 = true) :=
   new_contact_choice [0] 1 second_candidate_unavailable_before.2.2.1
 
-/-- Only constructed and installed contacts participate in this registration. -/
+/-- Only constructed and installed contacts participate in this lumping. -/
 def alikeOnInstalled (s : State) : (Nat → Bool) → (Nat → Bool) → Prop :=
   Alike (s.installed.map Sample.address)
 
@@ -484,7 +484,7 @@ theorem frozen_reads_method (s : State) :
 theorem frozen_blind : Contacts.Blind frozenRule := fun _ _ => rfl
 
 /-- **Instance of `Contacts.blind_misses`.** At every retained method, some failure is left
-unregistered by the frozen rule; `frozen_method_still_fails` is one control of this law. -/
+unanswered by the frozen rule; `frozen_method_still_fails` is one control of this law. -/
 theorem frozen_misses (m : List Nat) :
     ∃ i, ¬ Learning.Training.Through (Alike (frozenRule m (some i))) (fun x => x i = true) :=
   Contacts.blind_misses frozen_blind Contacts.nat_unlisted m

@@ -1,0 +1,7 @@
+# Mechanism.lean: does not register → does not show.
+### lean:Mechanism
+= S7
+- A change of mechanism at a projected configuration not yet met does not
+- register before it happens. -/
++ A change of mechanism at a projected configuration not yet met does not
++ show before it happens. -/

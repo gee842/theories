@@ -1,0 +1,26 @@
+# TimedResponse.lean: past registration → past couplings (S2); explicitly observed → coupled by level.
+### lean:TimedResponse
+= S2
+- the rest responds through its past registration.
++ the rest responds through its past couplings.
+= S2
+- /-- The condition enters support at this step, or is explicitly observed. Unlike
+- the whole-history registration envelope,
++ /-- The condition enters support at this step, or couples in by level. Unlike
++ the whole-history coupling envelope,
+= S2
+- /-- Potential propagation, retaining the order of exchanges and past registration.
++ /-- Potential propagation, retaining the order of exchanges and past couplings.
+= S2
+- /-- A potential source route has entered something the reader registers by T. -/
++ /-- A potential source route has entered something that couples into the reader by T. -/
+= S2
+- /-- Equality of registered levels suffices for the native registration, including support. -/
++ /-- Equality of the levels that couple in suffices for alikeness through the couplings, including
++ support. -/
+= S2
+- Factoring through complete registration is supplied.
++ Factoring through the complete couplings is supplied.
+= S2
+- passing through registration does not ensure use.
++ passing through the couplings does not ensure use.

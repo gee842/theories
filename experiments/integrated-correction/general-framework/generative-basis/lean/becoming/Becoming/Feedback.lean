@@ -1,7 +1,7 @@
 import Becoming.Interdependence
 
 /-!
-# Feedback and reach: what registers on a formation, and what a part reaches
+# Feedback and reach: what a formation's feedback carries, and what a part reaches
 
 On 10 October 2026 Ren stated the long-term objectives: “I want to push the frontier as strong
 as possible, in terms of human knowledge, or have the full truth set(still need situational
@@ -52,19 +52,19 @@ enters only as a hypothesis of three witnesses.
   (`Flow.feeding_whole_of_common`, `Flow.feeding_unrestricted_of_common`).
 * **Levels follow their exchanges.** Two balanced flows that start a condition alike, and take
   from it and give to it alike, keep it alike (`Flow.Balances.levels_agree`). So a formation's
-  support registers only the exchanges with what it depends on (`Flow.Balances.support_agrees`).
-  What a part does registers on a condition exactly through its net exchange with it
+  support follows only the exchanges with what it depends on (`Flow.Balances.support_agrees`).
+  What a part does shows on a condition exactly through its net exchange with it
   (`Flow.Balances.agrees_iff_even`). The levels with and without the part agree where none of
   its members exchanges with the condition (`Flow.Balances.agrees_of_quiet`); where they differ
   at a step, some member exchanged with it at an earlier step
   (`Flow.Balances.exchanges_before_of_differs`).
-* **What feedback registers.** Nothing beyond a formation's influence closure exchanges with a
+* **What feedback carries.** Nothing beyond a formation's influence closure exchanges with a
   condition that a member of the closure depends on (`Flow.beyond_influence`). Where every member
   of a part lies beyond the closure, each formation within it is supported with the part exactly
   where the levels without the part admit it (`Flow.Balances.uncoupled_beyond_influence`). In
   `Clearing` the clearer's support is the same at every step whether or not it clears the
   habitat, while the dweller ends (`Clearing.uncoupled`). The influence closure is an upper
-  bound: with the rest of the exchange fixed, a formation's support registers only the parts that
+  bound: with the rest of the exchange fixed, a formation's support follows only the parts that
   reach it directly (`Flow.Balances.admits_unreached`).
 * **What a part reaches.** A part reaches a formation when a member exchanges with a condition
   the formation depends on (`Flow.Reaches`), and reaches it before a step when a member exchanged,
@@ -103,19 +103,19 @@ enters only as a hypothesis of three witnesses.
   formation's influence closure and change no admission there (`Margin.reach_without_misjudgment`).
   A part with a member beyond a system can be misjudged by significance bounded by that system
   (`Trophic.mixed_part`). The comparison by withheld levels holds the rest of the exchange fixed,
-  so effects through others' responses do not register in it. With the deer's browsing held as it
+  so effects through others' responses do not show in it. With the deer's browsing held as it
   is, the wolves' part narrows, closing the deer (`Trophic.mediated_uncoupled`); against the
   flow in which the deer respond, the same taking is mixed (`Trophic.responsive_mixed`). Where a
   part gives what others take, the levels without it may not exist, and there is no comparison by
   withheld levels (`Clearing.no_levels_without_source`).
 
 **AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D20).**
-- The influence closure reads what a formation's own feedback can register, once effects pass
+- The influence closure reads what a formation's own feedback can carry, once effects pass
   through the support and activity of others. With the rest of the exchange fixed, only the parts
-  that reach it register.
-- Feedback and a part's exchange point in opposite directions. A formation's feedback registers at
+  that reach it show.
+- Feedback and a part's exchange point in opposite directions. A formation's feedback carries at
   most its influence closure, what can affect it, while its own part reaches into its reach
-  closure, what it can affect. A center that values only what its feedback registers compares its
+  closure, what it can affect. A center that values only what its feedback carries compares its
   own part as the continuation condition does wherever the part reaches only within that closure
   (`Flow.Balances.comparison_local`). Where the part reaches beyond it, the center can misjudge it,
   as the clearer does; reaching beyond does not by itself make it misjudge (`Margin`). This reads
@@ -384,7 +384,7 @@ theorem Balances.levels_agree {L' : Flow F C} {W' : Web F C} (balances : L.Balan
           ((congrArg (W'.level t c + ·) (given t)).trans
             ((balances' t c).symm.trans (congrArg (W'.level (t + 1) c + ·) (taken t).symm)))))
 
-/-- A formation's support registers only the exchanges with what it depends on. Let two
+/-- A formation's support follows only the exchanges with what it depends on. Let two
 balanced flows, on webs that agree on what `g` requires and needs, start alike and take and
 give alike on every condition `g` depends on. Then `g` is supported alike at every step,
 whatever else the two flows do. -/
@@ -412,7 +412,7 @@ theorem Balances.support_agrees {L' : Flow F C} {W' : Web F C} (balances : L.Bal
 
 variable {part : F → Bool}
 
-/-- What a part does registers on a condition exactly through its net exchange with it: the
+/-- What a part does shows on a condition exactly through its net exchange with it: the
 levels with and without the part agree at a step exactly when, before it, the part has given
 the condition what it has taken from it. -/
 theorem Balances.agrees_iff_even (balances : L.Balances W) {l : Nat → C → Nat}
@@ -436,7 +436,7 @@ theorem Balances.le_withheld (balances : L.Balances W) {l : Nat → C → Nat}
       ((congrArg (l t c + ·) ((total_congr none (steps 0 t)).trans (total_zero (steps 0 t)))).trans
         (Nat.add_zero _))))
 
-/-- Withholding a part that only takes registers as gain or nothing: whatever is supported with a
+/-- Withholding a part that only takes shows as gain or nothing: whatever is supported with a
 part that gives nothing to what it requires is admitted by the levels without it. -/
 theorem Balances.admits_without_taker (balances : L.Balances W) {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {t : Nat} {g : F}
@@ -549,10 +549,10 @@ theorem unreached_within_influence {f : F}
     (within : L.WithinInfluence W f g) : ¬ L.Reaches W part g
   | ⟨h, member, affected⟩ => beyond h member (within.trans (WithinClosure.of_rel affected))
 
-/-- Feedback registers nothing beyond the influence closure. Where every member of a part lies
+/-- Feedback carries nothing from beyond the influence closure. Where every member of a part lies
 beyond `f`'s influence closure, each formation within the closure is supported with the part
 exactly where the levels without it admit it, at every step: whatever the part ends beyond the
-closure registers nowhere within it. -/
+closure shows nowhere within it. -/
 theorem Balances.uncoupled_beyond_influence (balances : L.Balances W) {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
     (beyond : ∀ h, part h = true → ¬ L.WithinInfluence W f h) :
@@ -1190,7 +1190,7 @@ theorem wolves_unreached : ¬ flow.Reaches web wolvesPart .forest :=
     | .wolves, _, .den, no, _ => nomatch no
     | .far, no, _, _, _ => nomatch no
 
-/-- The mediated effect does not register in the comparison that holds the rest of the exchange
+/-- The mediated effect does not show in the comparison that holds the rest of the exchange
 fixed. The wolves lie within the forest's influence closure, yet their part does not reach the
 forest: with the deer's browsing held as it is, the forest is supported with the part exactly
 where the levels without it admit it, at every step. So compared, the part narrows: the levels
@@ -1405,7 +1405,7 @@ theorem resource_of_clearer {c : Place} : web.DependsOn .clearer c → c = .reso
     | .habitat, no => nomatch no
     | .fuel _, no => nomatch no
 
-/-- What the clearer's own support registers does not show whether its clearing ends the
+/-- What the clearer's own support carries does not show whether its clearing ends the
 dweller. Both flows balance and in both activity needs support. The clearer's support is the
 same at every step in both, as the general theorem gives, since the two flows exchange alike with
 its resource; it is active and supported throughout. With the habitat spared the dweller is

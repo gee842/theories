@@ -5,38 +5,39 @@ import Becoming.Likeness
 # Distinguishing: what tells configurations apart, and how deep
 
 `Becoming.Histories` shows that tests fix likeness where branching is determined up to likeness
-(`alike_iff_sameTests`); `Becoming.Identification` shows that a bounded record fixes a registered
-future (`bounded_agree`, `Law.sameFuture_iff_within`); `Becoming.Likeness` bounds the depth of
+(`alike_iff_sameTests`); `Becoming.Identification` shows that a bounded prefix fixes the future
+through a map (`bounded_agree`, `Law.sameFuture_iff_within`); `Becoming.Likeness` bounds the depth of
 likeness by classes (`alike_iff_alikeTo_classes`, `alike_iff_alikeTo_across`). This module joins
 them, with no premise:
 
-* **The tests are a bounded record.** Under a determined law read through a registration, in a
+* **The tests are a bounded prefix.** Under a determined law read through a map, in a
   world a list of `N` configurations holds, two configurations pass the same tests exactly where
-  their registered futures agree for `N - 1` steps (`Law.sameTests_iff_within`); across two such
-  worlds of `N` and `N'` configurations, exactly where they agree for `N + N' - 1` steps
+  their futures through the map agree for `N - 1` steps (`Law.sameTests_iff_within`); across two
+  such worlds of `N` and `N'` configurations, exactly where they agree for `N + N' - 1` steps
   (`Law.sameTests_iff_below_across`). Infinitely many tests, each a course of moves and a claim,
-  are fixed by finitely many registered values. Two laws read through registrations are alike
-  exactly where their registered futures agree at every step (`Law.alike_iff_agree`).
-* **Moves that carry the registration.** A law whose single move at each configuration is named
-  by what is registered there, with nothing claimed (`Law.labelled`), is alike to depth `k`
-  exactly where the registered futures agree for `k` steps (`Law.alikeTo_labelled_iff`): one step
-  fewer than when the registration is claimed (`alikeTo_frameBy_iff` of `Becoming.Likeness`).
+  are fixed by finitely many values through the map. Two laws read through maps are alike
+  exactly where their futures through the maps agree at every step (`Law.alike_iff_agree`).
+* **Moves that carry the map's value.** A law whose single move at each configuration is named
+  by the map's value there, with nothing claimed (`Law.labelled`), is alike to depth `k`
+  exactly where the futures through the map agree for `k` steps (`Law.alikeTo_labelled_iff`): one
+  step fewer than when the map's value is claimed (`alikeTo_frameBy_iff` of `Becoming.Likeness`).
   Every history with at most `N` states is the course of a law on `N` configurations
   (`Law.realized_within`), so of such a frame, finite and decided (`Law.labelled_finite`).
 * **The depths are exact for every pair.** For every `N` and `N'` there are such frames of `N`
   and `N'` configurations, held by lists of `N` and `N'` members, with configurations alike to
   depth `N + N' - 2` and not alike (`labelled_across_exact`): the depth `N + N' - 1` of
   `alike_iff_alikeTo_across` is exact, as `N - 1` within one frame is (`EndOfPath.classes_exact`).
-  Read through registrations, two worlds of `N` and `N'` configurations have configurations whose
-  registered futures agree for `N + N' - 2` steps and which do not pass the same tests
+  Read through maps, two worlds of `N` and `N'` configurations have configurations whose
+  futures through the maps agree for `N + N' - 2` steps and which do not pass the same tests
   (`frameBy_across_exact`): `N + N' - 1` of `Law.sameTests_iff_below_across` is exact too. Both
   come from the histories of `Identification.bounded_agree_exact`. Within one world `N - 1` is
-  exact too: on the path of `N` places to a last one that stays, registering only whether the
-  last is reached, the first two places agree for `N - 2` steps and do not pass the same tests
+  exact too: on the path of `N` places to a last one that stays, read through a map that takes
+  only whether the last is reached, the first two places agree for `N - 2` steps and do not pass
+  the same tests
   (`frameBy_within_exact`).
 
 The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D34):
-what tells configurations apart within a bounded world is a finite record, and its length is set by
+what tells configurations apart within a bounded world is a finite prefix, and its length is set by
 the number of configurations, exactly.
 -/
 
@@ -46,13 +47,13 @@ open Generative
 
 universe u u' v w
 
-/-! ## The tests are a bounded record -/
+/-! ## The tests are a bounded prefix -/
 
 namespace Law
 
 variable {S : Type u} {S' : Type u'} {R : Type w}
 
-/-- Agreeing at every step is a bisimulation between two laws read through registrations. -/
+/-- Agreeing at every step is a bisimulation between two laws read through maps. -/
 theorem agree_bisimulation {next : S → S} {next' : S' → S'} {o : S → R} {o' : S' → R} :
     Bisimulation (Law.frameBy next o) (Law.frameBy next' o')
       (fun t t' => ∀ n, o (Law.orbit next t n) = o' (Law.orbit next' t' n)) :=
@@ -68,7 +69,7 @@ theorem agree_bisimulation {next : S → S} {next' : S' → S'} {o : S → R} {o
         (motive := fun v => ∀ n, o (Law.orbit next (next s) n) = o' (Law.orbit next' v n))
         (to : t' = next' s').symm ahead⟩⟩
 
-/-- **Two laws read through registrations are alike exactly where their registered futures agree
+/-- **Two laws read through maps are alike exactly where their futures through the maps agree
 at every step.** -/
 theorem alike_iff_agree {next : S → S} {next' : S' → S'} {o : S → R} {o' : S' → R} {s : S}
     {s' : S'} :
@@ -77,10 +78,10 @@ theorem alike_iff_agree {next : S → S} {next' : S' → S'} {o : S → R} {o' :
   ⟨fun alike n => alikeTo_frameBy_iff.mp (alike.alikeTo n) n (Nat.le_refl n),
    fun agree => ⟨_, agree_bisimulation, agree⟩⟩
 
-/-- **The tests are a bounded record.** Under a determined law read through a registration, in a
+/-- **The tests are a bounded prefix.** Under a determined law read through a map, in a
 world a list of `N` configurations holds, two configurations pass the same tests exactly where
-their registered futures agree for `N - 1` steps. Tests fix likeness (`Determined.alike_iff_sameTests`
-of `Becoming.Histories`), likeness is the same registered future (`Law.alike_iff_sameFuture`), and
+their futures through the map agree for `N - 1` steps. Tests fix likeness (`Determined.alike_iff_sameTests`
+of `Becoming.Histories`), likeness is the same future through the map (`Law.alike_iff_sameFuture`), and
 that is agreement for `N - 1` steps (`Law.sameFuture_iff_within`). -/
 theorem sameTests_iff_within {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l)
     {s s' : S} :
@@ -90,9 +91,9 @@ theorem sameTests_iff_within {next : S → S} {o : S → R} {l : List S} (world 
     (Law.alike_iff_sameFuture.trans
       (Law.sameFuture_iff_within (fun s _ => world (next s)) (world s) (world s')))
 
-/-- **Across two worlds, the tests are a record of `N + N' - 1` steps.** Under two determined
-laws read through registrations, in worlds lists of `N` and `N'` configurations hold, two
-configurations pass the same tests exactly where their registered futures agree for
+/-- **Across two worlds, the tests are a prefix of `N + N' - 1` steps.** Under two determined
+laws read through maps, in worlds lists of `N` and `N'` configurations hold, two
+configurations pass the same tests exactly where their futures through the maps agree for
 `N + N' - 1` steps (`Identification.bounded_agree`). -/
 theorem sameTests_iff_below_across {next : S → S} {next' : S' → S'} {o : S → R} {o' : S' → R}
     {l : List S} {l' : List S'} (world : ∀ s, s ∈ l) (world' : ∀ s', s' ∈ l') {s : S} {s' : S'} :
@@ -107,18 +108,18 @@ theorem sameTests_iff_below_across {next : S → S} {next' : S' → S'} {o : S �
 
 end Law
 
-/-! ## Moves that carry the registration -/
+/-! ## Moves that carry the map's value -/
 
 namespace Law
 
 variable {S : Type u} {S' : Type u'} {A : Type v}
 
-/-- A law whose single move at each configuration is named by what is registered there, with
+/-- A law whose single move at each configuration is named by the map's value there, with
 nothing claimed. -/
 def labelled (next : S → S) (o : S → A) : Frame S A Empty :=
   ⟨⟨fun s a t => t = next s ∧ a = o s⟩, fun _ c => nomatch c⟩
 
-/-- **Where the moves carry the registration, likeness to depth `k` is agreement for `k`
+/-- **Where the moves carry the map's value, likeness to depth `k` is agreement for `k`
 steps.** -/
 theorem alikeTo_labelled_iff {next : S → S} {next' : S' → S'} {o : S → A} {o' : S' → A} :
     ∀ {k : Nat} {s : S} {s' : S'},
@@ -188,7 +189,7 @@ end Law
 /-! ## The depths are exact for every pair -/
 
 /-- **Across two branching frames, the depth `N + N' - 1` is exact.** For every `N = M + 1` and
-`N' = M' + 1` there are frames whose moves carry a registration, of `N` and `N'` configurations,
+`N' = M' + 1` there are frames whose moves carry a map's value, of `N` and `N'` configurations,
 finite and decided, with configurations alike to depth `N + N' - 2` and not alike. With the moves
 and claims listed, they are alike exactly where alike to depth `N + N' - 1`
 (`alike_iff_alikeTo_across`), and no lower depth will do. -/
@@ -214,9 +215,9 @@ theorem labelled_across_exact (M M' : Nat) :
          ((Law.alikeTo_labelled_iff.mp (alike.alikeTo (M + M' + 1)) (M + M')
            (Nat.lt_succ_self _)).trans (course' (M + M'))))⟩
 
-/-- **Across two worlds read through registrations, `N + N' - 1` is exact.** For every
+/-- **Across two worlds read through maps, `N + N' - 1` is exact.** For every
 `N = M + 1` and `N' = M' + 1` there are laws on `N` and `N'` configurations, read through
-registrations, with configurations whose registered futures agree for `N + N' - 2` steps and which
+maps, with configurations whose futures through the maps agree for `N + N' - 2` steps and which
 do not pass the same tests: the length of `Law.sameTests_iff_below_across` is exact. -/
 theorem frameBy_across_exact (M M' : Nat) :
     ∃ (next : Fin (M + 1) → Fin (M + 1)) (o : Fin (M + 1) → Bool)
@@ -237,10 +238,10 @@ theorem frameBy_across_exact (M M' : Nat) :
            (course' (M + M'))))⟩
 
 /-- **Within one world, `N - 1` is exact for the tests.** For every `N = M + 2` there is a law on
-`N` configurations, read through a registration, in a world a list of `N` members holds, with two
-configurations whose registered futures agree for `N - 2` steps and which do not pass the same
+`N` configurations, read through a map, in a world a list of `N` members holds, with two
+configurations whose futures through the map agree for `N - 2` steps and which do not pass the same
 tests: the length `N - 1` of `Law.sameTests_iff_within` is exact. The law is the path of `N`
-places to a last one that stays, registering only whether the last is reached. -/
+places to a last one that stays, read through a map that takes only whether the last is reached. -/
 theorem frameBy_within_exact (M : Nat) :
     ∃ (next : Fin (M + 2) → Fin (M + 2)) (o : Fin (M + 2) → Bool) (s s' : Fin (M + 2)),
       (finBelow (M + 2) (M + 2) (Nat.le_refl _)).length = M + 2 ∧

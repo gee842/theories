@@ -86,15 +86,15 @@ states Capture's rule region as an instance of P67's absorbing regions.
   (`Run.fixesAlike_of_takes`) and one occasion stands for its class (`Run.generalizesAlike`); a
   move taken at no configuration alike to the one named is not fixed, for outcomes that differ
   in a claim (`Run.not_fixesAlike_of_untaken`), through an intervention on a whole likeness class
-  (`retargetAlike`, `retargetAlike_determinedAt`). These need equality, or claims registering
+  (`retargetAlike`, `retargetAlike_determinedAt`). These need equality, or claims telling apart
   what equality tells apart: retargeting one of two alike configurations breaks determinacy up
   to likeness (`Twins.retarget_breaks`), so `retarget_determined` holds up to likeness only for
-  the class; a kept history returns up to likeness where its present does and nothing registers
-  the past (`keepFrame_alike_iff`, `keepHistory_returns_alike`), so `keepHistory_new` and
-  `keepHistory_fixes_nothing_else` need the past registered (`keepHistory_new_named`); with
-  nothing claimed, every description carries a law and no confound is refuted
+  the class; a kept history returns up to likeness where its present does and no claim tells
+  the past apart (`keepFrame_alike_iff`, `keepHistory_returns_alike`), so `keepHistory_new` and
+  `keepHistory_fixes_nothing_else` need the past claimed (`keepHistory_new_named`); with
+  nothing claimed, every description carries a law and no confound is excluded
   (`carries_unregistered`, `Confound.refutes_registered`), so `carries_law_iff`,
-  `Switching.no_state_law` and `Confound.varied_refutes` need the description registered.
+  `Switching.no_state_law` and `Confound.varied_refutes` need the description claimed.
 * **Capture's rule region.** Where the rule keeps itself, the configurations with a given rule
   are a region the law never leaves (`Law.rule_absorbing`); where the next configuration also
   depends on the rule alone, the configuration the rule holds is fixed (`Law.held_absorbing`) and
@@ -117,9 +117,9 @@ states Capture's rule region as an instance of P67's absorbing regions.
   many configurations; under every process it holds along each run.
 - Likeness is the unfolding's own identity of configurations. The theorems with determinacy that
   hold up to likeness are about how configurations relate; those that need equality depend on
-  what is registered: an intervention on one name among alike configurations, a past nothing
-  registers, a description nothing registers. What nothing registers is neither fixed nor
-  refuted (compare the registers of `Becoming.Testing`).
+  what is claimed: an intervention on one name among alike configurations, a past no claim tells
+  apart, a description no claim tells apart. What no claim tells apart is neither fixed nor
+  excluded (compare what couples into a formation in `Becoming.Testing`).
 - Capture read as attraction: perturbation of the state alone is drawn back into what the rule holds,
   and the attractor moves only with the rule.
 
@@ -1175,17 +1175,17 @@ theorem keepFrame_present (F : Frame S A C) :
     fun a t' step => match alike.symm.step (a := a) (t := (t', (y, a) :: p')) ⟨step, rfl⟩ with
       | ⟨u, ⟨step', _⟩, joined⟩ => ⟨u.1, step', u.2, (y, a) :: p', joined.symm⟩⟩
 
-/-- **Where nothing registers the past, kept configurations are alike exactly where their
+/-- **Where no claim tells the past apart, kept configurations are alike exactly where their
 presents are.** -/
 theorem keepFrame_alike_iff {F : Frame S A C} {h h' : S × List (S × A)} :
     Alike (keepFrame F) (keepFrame F) h h' ↔ Alike F F h.1 h'.1 :=
   ⟨fun alike => ⟨_, keepFrame_present F, h.2, h'.2, alike⟩,
    fun alike => ⟨_, keepFrame_bisimulation F, alike⟩⟩
 
-/-- **A kept history returns up to likeness where its present does and nothing registers the
-past.** Along a run keeping its history, two steps whose presents are alike have kept
+/-- **A kept history returns up to likeness where its present does and no claim tells the
+past apart.** Along a run keeping its history, two steps whose presents are alike have kept
 configurations that are distinct (`keepHistory_new`) and alike: `keepHistory_new` needs
-equality, or claims that register the past. -/
+equality, or claims that tell the past apart. -/
 theorem keepHistory_returns_alike {F : Frame S A C} (r : Run (keepFrame F).P) {i j : Nat}
     (lt : i < j) (back : Alike F F (r.state i).1 (r.state j).1) :
     r.state i ≠ r.state j ∧ Alike (keepFrame F) (keepFrame F) (r.state i) (r.state j) :=
@@ -1199,7 +1199,7 @@ theorem keepHistory_new_named {S A : Type} {P : Process S A} (r : Run (keepHisto
       (r.state i) (r.state j) :=
   fun alike => keepHistory_new r i j lt (alike_configurations alike)
 
-/-! ### What nothing registers is not refuted -/
+/-! ### What no claim tells apart is not excluded -/
 
 /-- The process admitting every step, with nothing claimed. -/
 def anything (S : Type u) (A : Type v) : Frame S A Unit :=
@@ -1240,7 +1240,7 @@ theorem Run.generalizesAlike {K : Type u'} {D : Type w} {P : Process S A} (r : R
 /-- **With nothing claimed, every description carries a law up to likeness**: the process
 admitting every step is determined up to likeness and every step factors through every
 description into it. So `carries_law_iff` of `Becoming.Mechanism` needs equality on the
-description, or claims that register it; with the description named by the claims it is
+description, or claims that tell it apart; with the description named by the claims it is
 `carries_law_iff` itself (`determined_iff_named`). -/
 theorem carries_unregistered {K : Type u'} (P : Process S A) (π : S → K) :
     ∃ Q : Process K A, (∀ k, DeterminedAt (⟨Q, fun _ _ => True⟩ : Frame K A Unit) k) ∧
@@ -1329,14 +1329,14 @@ theorem meet_and_part :
 
 end Coarse
 
-/-! ### A confound not registered is not refuted -/
+/-! ### A confound not claimed is not excluded -/
 
 namespace Confound
 
-/-- **Refuting a model needs the outcome registered.** With nothing claimed, the process
+/-- **Excluding a model needs the outcome claimed.** With nothing claimed, the process
 admitting every step is determined up to likeness and admits every step of the varied run read
 through the outcome, so `varied_refutes` fails up to likeness; with the outcome named by the
-claims, determinacy up to likeness is determinacy and the refutation stands. -/
+claims, determinacy up to likeness is determinacy and the exclusion stands. -/
 theorem refutes_registered :
     (∃ Q : Process Bool Move,
       (∀ k, DeterminedAt (⟨Q, fun _ _ => True⟩ : Frame Bool Move Unit) k) ∧

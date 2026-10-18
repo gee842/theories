@@ -9,41 +9,43 @@ feedback, adaptive parameters, attractors). `Becoming.Feedback` left one compari
 counterfactual in which the rest of the exchange adjusts. Its comparison by withheld levels keeps
 the rest fixed, and `Flow.Balances.comparison_within_difference` decides any two flows within what
 their difference reaches, without saying where that difference can go. This module states where it
-can go when everything outside a part responds only through what it registers: within the part's
-closure under affecting what is registered. It is the dual, from a part's side, of the reach
+can go when everything outside a part responds only through what couples into it: within the
+part's closure under affecting through what couples in. It is the dual, from a part's side, of the reach
 blindness of `Becoming.Testing` (`Flow.alike_within_closed`), which is stated from a region's side.
 No premise enters beyond balance, a common start, the same formations present, and the response
 premise each law names.
 
 * **Responsive reach.** A formation lies within a part's responsive reach between two flows when it
-  lies within a member's closure under affecting through what is registered, in either flow: a
-  member exchanges with a condition another formation registers, that formation exchanges with a
-  condition a third registers, and so on (`Flow.WithinResponse`). Every member lies within it
+  lies within a member's closure under affecting through what couples in, in either flow: a
+  member exchanges with a condition coupled into another formation, that formation exchanges with
+  a condition coupled into a third, and so on (`Flow.WithinResponse`). Every member lies within it
   (`Flow.member_within_response`). A formation lies within it exactly when some member lies within
-  the formation's registration closure drawn through both flows, the closure of
+  the formation's coupling closure drawn through both flows, the closure of
   `Flow.alike_within_coupling` (`Flow.withinResponse_iff_coupling`, through
-  `WithinClosure.converse`); with one flow, within its registration closure
+  `WithinClosure.converse`); with one flow, within its coupling closure
   (`Flow.withinResponse_self_iff`). It holds what the part reaches and each member's reach closure
-  of P42 (`Flow.withinResponse_of_reaches`, `Flow.withinResponse_of_withinReach`); registering
-  support only, with one flow, it is the union of the members' reach closures
+  of P42 (`Flow.withinResponse_of_reaches`, `Flow.withinResponse_of_withinReach`); where coupling
+  is by threshold only, with one flow, it is the union of the members' reach closures
   (`Flow.withinResponse_thresholdOnly_iff`). The reach closure is the converse of the influence
   closure (`Flow.withinReach_iff_withinInfluence`).
-* **Responding through registration.** The rest responds through its registration when each
-  formation outside the part exchanges alike in the two flows across every step up to which it has
-  registered alike (`Flow.RespondsThroughCoupling`). It is a supplied premise. With the rest
-  of the exchange fixed it holds whatever registers (`Flow.respondsThroughCoupling_withhold`).
+* **Responding through the couplings.** The rest responds through its couplings when each
+  formation outside the part exchanges alike in the two flows across every step up to which the
+  flows have been alike through its couplings (`Flow.RespondsThroughCoupling`). It is a supplied
+  premise. With the rest of the exchange fixed it holds whatever couples in
+  (`Flow.respondsThroughCoupling_withhold`).
 * **Confinement.** The formations beyond the responsive reach form a region closed in both flows
-  under being affected through what is registered, and hold no member
+  under being affected through what couples in, and hold no member
   (`Flow.beyond_response_closed`, `Flow.outside_part_of_beyond_response`). So where the two flows
-  have the same formations present, balance on what those formations register and start alike
-  there, and the rest responds through its registration, every formation beyond the responsive
-  reach registers alike, exchanges alike, and meets alike totals on every condition it registers,
-  at every step (`Flow.alike_beyond_response`, an instance of `Flow.alike_within_closed`;
+  have the same formations present, balance on what couples into those formations and start alike
+  there, and the rest responds through its couplings, the flows are alike through the couplings
+  of every formation beyond the responsive reach, and it exchanges alike and meets alike totals on
+  every condition coupled into it, at every step (`Flow.alike_beyond_response`, an instance of
+  `Flow.alike_within_closed`;
   `Flow.exchange_alike_beyond_response`, `Flow.totals_alike_beyond_response`). The difference
   between the flows reaches nothing beyond the responsive reach
   (`Flow.not_differs_beyond_response`).
 * **The comparison where the rest responds.** Let two balanced flows with the same formations
-  present start alike, the rest responding through its registration. For any significance that,
+  present start alike, the rest responding through its couplings. For any significance that,
   from a standpoint, covers every formation not beyond the part's responsive reach, the levels of
   each flow retain what has significance along the other's exactly as they include them, and
   neither adds a continuation with significance exactly where neither exceeds the other
@@ -56,23 +58,23 @@ premise each law names.
   which the wolves' part does not reach (`Trophic.forest_within_response`); the reach is exactly
   the wolves, the deer and the forest (`Trophic.within_response_iff`), so the responsive comparison
   of `Trophic.responsive_mixed` is decided among them (`Trophic.responsive_comparison`). In `Loop`
-  a part's act changes what another formation registers, the other responds, and the difference
+  a part's act changes what couples into another formation, the other responds, and the difference
   returns to the part's own support, which the part's own exchange never reaches
   (`Loop.returns`).
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
 - An act has two counterfactuals. With the rest of the exchange fixed (P42), only what the part
   reaches directly counts (`Flow.Balances.comparison_within_reach`). With the rest responding
-  through its registration, the part's closure under affecting what is registered counts. What an
-  act does to formations that interact with it is decided within the second.
-- An escalation loop is the case where each party responds through its registration and the
-  difference returns to the part (`Loop.returns`). It does not register in the comparison with the
+  through its couplings, the part's closure under affecting through what couples in counts. What
+  an act does to formations that interact with it is decided within the second.
+- An escalation loop is the case where each party responds through its couplings and the
+  difference returns to the part (`Loop.returns`). It does not show in the comparison with the
   rest fixed.
-- Registering support only, the responsive reach is the union of the members' reach closures of
+- Where coupling is by threshold only, the responsive reach is the union of the members' reach closures of
   `Becoming.Feedback`. This gives the reach closure its counterfactual meaning: it is where the
   difference an act makes can arrive when the rest responds through its support.
 
-What is not derived: that formations respond only through their registration (supplied as
+What is not derived: that formations respond only through their couplings (supplied as
 `Flow.RespondsThroughCoupling`); how they respond; any measure of how much difference arrives,
 or that any arrives within the reach. The representation commits to discrete steps and natural
 quantities. No ethical predicate, ranking or axiom occurs.
@@ -101,14 +103,15 @@ namespace Flow
 variable (L L' : Flow F C) (W W' : Web F C)
 
 /-- `g` lies within the part's responsive reach between two flows: within some member's closure
-under affecting through what is registered, in either flow, where `a` affects `b` so when `a`
-exchanges, in one of the flows, with a condition `b` registers. -/
+under affecting through what couples in, in either flow, where `a` affects `b` so when `a`
+exchanges, in one of the flows, with a condition coupled into `b`. -/
 def WithinResponse (obs : F → C → Prop) (part : F → Bool) (g : F) : Prop :=
   ∃ h, part h = true ∧ WithinClosure (fun a b => L.CoupledFromEither W L' obs b a) h g
 
-/-- The rest responds through its registration: each formation outside the part exchanges alike
-in the two flows across the step from `t` wherever it has registered alike up to `t`. A supplied
-premise: it excludes formations outside the part responding to what they do not register. -/
+/-- The rest responds through its couplings: each formation outside the part exchanges alike
+in the two flows across the step from `t` wherever the flows are alike through its couplings up
+to `t`. A supplied premise: it excludes formations outside the part responding to what does not
+couple into them. -/
 def RespondsThroughCoupling (obs : F → C → Prop) (part : F → Bool) : Prop :=
   ∀ h, part h = false → ∀ t, W.AlikeThroughUpTo obs h W.level W'.level t →
     ∀ c, L.take t h c = L'.take t h c ∧ L.give t h c = L'.give t h c
@@ -129,8 +132,8 @@ theorem outside_part_of_beyond_response {g : F} (beyond : ¬ L.WithinResponse L'
   | false, _ => rfl
   | true, no => absurd rfl no
 
-/-- **The responsive reach is the dual of the registration closure.** `g` lies within the part's
-responsive reach exactly when some member lies within `g`'s registration closure drawn through
+/-- **The responsive reach is the dual of the coupling closure.** `g` lies within the part's
+responsive reach exactly when some member lies within `g`'s coupling closure drawn through
 both flows, the closure of `alike_within_coupling`. -/
 theorem withinResponse_iff_coupling {g : F} :
     L.WithinResponse L' W obs part g ↔
@@ -141,7 +144,7 @@ theorem withinResponse_iff_coupling {g : F} :
      ⟨h, member, (WithinClosure.converse (rel := L.CoupledFromEither W L' obs)).mpr within⟩⟩
 
 /-- With one flow, `g` lies within the part's responsive reach exactly when some member lies
-within `g`'s registration closure. -/
+within `g`'s coupling closure. -/
 theorem withinResponse_self_iff {g : F} :
     L.WithinResponse L W obs part g ↔ ∃ h, part h = true ∧ L.WithinCoupling W obs g h :=
   ⟨fun within => match withinResponse_iff_coupling.mp within with
@@ -163,7 +166,7 @@ theorem withinResponse_of_withinReach {h g : F} (member : part h = true)
   ⟨h, member, WithinClosure.mono (fun _ _ ⟨c, depends, exchanges⟩ =>
     .inl ⟨c, .inl depends, exchanges⟩) within⟩
 
-/-- **Registering support only, the responsive reach is the reach closure.** With one flow, `g`
+/-- **Where coupling is by threshold only, the responsive reach is the reach closure.** With one flow, `g`
 lies within the part's responsive reach exactly when it lies within some member's reach closure. -/
 theorem withinResponse_thresholdOnly_iff {g : F} :
     L.WithinResponse L W thresholdOnly part g ↔ ∃ h, part h = true ∧ L.WithinReach W h g :=
@@ -180,8 +183,8 @@ theorem withinReach_iff_withinInfluence {h g : F} :
     L.WithinReach W h g ↔ L.WithinInfluence W g h :=
   WithinClosure.converse (rel := L.AffectedBy W)
 
-/-- With the rest of the exchange fixed, the rest responds through its registration, whatever
-registers: outside the part, the flow with the part withheld exchanges as the flow does. -/
+/-- With the rest of the exchange fixed, the rest responds through its couplings, whatever
+couples in: outside the part, the flow with the part withheld exchanges as the flow does. -/
 theorem respondsThroughCoupling_withhold :
     L.RespondsThroughCoupling (L.withhold part) W W' obs part :=
   fun _ outside _ _ _ =>
@@ -190,8 +193,8 @@ theorem respondsThroughCoupling_withhold :
 /-! ## Confinement -/
 
 /-- The formations beyond the part's responsive reach form a region closed, in each flow, under
-being affected through what is registered: whatever exchanges with a condition such a formation
-registers lies beyond the reach as well. -/
+being affected through what couples in: whatever exchanges with a condition coupled into such a
+formation lies beyond the reach as well. -/
 theorem beyond_response_closed :
     ClosedUnder (L.CoupledFrom W obs) (fun g => ¬ L.WithinResponse L' W obs part g) ∧
       ClosedUnder (L'.CoupledFrom W obs) (fun g => ¬ L.WithinResponse L' W obs part g) :=
@@ -201,9 +204,10 @@ theorem beyond_response_closed :
      beyond ⟨k, member, within.trans (WithinClosure.of_rel (.inr related))⟩⟩
 
 /-- **Confinement.** Take two flows with the same formations present, balancing on each condition
-registered by a formation beyond the part's responsive reach and starting alike there, and let the
-rest respond through its registration. Then every formation beyond the responsive reach registers
-alike at every step, whatever the part does: an instance of `alike_within_closed`. -/
+coupled into a formation beyond the part's responsive reach and starting alike there, and let the
+rest respond through its couplings. Then the flows are alike through the couplings of every
+formation beyond the responsive reach at every step, whatever the part does: an instance of
+`alike_within_closed`. -/
 theorem alike_beyond_response
     (balanced : ∀ t g c, ¬ L.WithinResponse L' W obs part g → W.CoupledInto obs g c →
       L.BalancesOn W [c] t)
@@ -234,7 +238,7 @@ theorem exchange_alike_beyond_response
   fun t h beyond c => responds h (outside_part_of_beyond_response beyond) t
     (fun s _ => alike_beyond_response balanced balanced' present start responds s h beyond) c
 
-/-- Under the same hypotheses, the two flows take from and give to each condition registered by a
+/-- Under the same hypotheses, the two flows take from and give to each condition coupled into a
 formation beyond the part's responsive reach alike, in total, at every step: a formation exchanging
 with it lies beyond the reach too. -/
 theorem totals_alike_beyond_response
@@ -283,7 +287,7 @@ theorem not_differs_beyond_response
 
 /-- **The comparison where the rest responds is decided within the responsive reach.** Let two
 balanced flows with the same formations present start alike, and let the rest respond through its
-registration. For any significance that, from `p`, covers every formation not beyond the part's
+couplings. For any significance that, from `p`, covers every formation not beyond the part's
 responsive reach, the levels of the first flow retain what has significance along the second's
 exactly when they include them, and the reverse, and neither adds a continuation with significance
 exactly where neither exceeds the other: the continuation condition's comparisons. The cover is stated for what is
@@ -350,8 +354,8 @@ theorem forest_within_response :
 
 /-- In the trophic cascade the rest responds through its support. Outside the wolves' part each
 formation exchanges in the flow in which the deer respond as in the flow with the wolves, wherever
-it has registered alike: the deer browse alike at the first step, and from the second on the
-herd's loss has registered in their support. -/
+the flows have been alike through its couplings: the deer browse alike at the first step, and
+from the second on the herd's loss has passed into their support. -/
 theorem responds_through_coupling :
     flow.RespondsThroughCoupling responsiveFlow web responsiveWeb thresholdOnly wolvesPart
   | .sun, _, _, _, _ => ⟨rfl, rfl⟩
@@ -386,7 +390,7 @@ theorem den_untouched : ∀ (t : Nat) (a : Formation),
   | _, .wolves => ⟨rfl, rfl, rfl⟩
   | _, .far => ⟨rfl, rfl, rfl⟩
 
-/-- Nothing exchanges, in either flow, with a condition the far formation registers. -/
+/-- Nothing exchanges, in either flow, with a condition coupled into the far formation. -/
 theorem far_unaffected {a : Formation} {c : Place} :
     web.CoupledInto thresholdOnly .far c → ¬ flow.Exchanges a c ∧ ¬ responsiveFlow.Exchanges a c
   | .inr no => False.elim no
@@ -405,8 +409,8 @@ theorem far_unaffected {a : Formation} {c : Place} :
         | .inr gives =>
           Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives (Nat.le_of_eq (den_untouched t a).2.1))⟩
 
-/-- The wolves, the deer and the forest are closed under affecting through what is registered:
-the sun registers nothing, and nothing exchanges with what the far formation registers. -/
+/-- The wolves, the deer and the forest are closed under affecting through what couples in:
+nothing couples into the sun, and nothing exchanges with what couples into the far formation. -/
 theorem responsiveReach_closed :
     ClosedUnder (fun a b => flow.CoupledFromEither web responsiveFlow thresholdOnly b a)
       responsiveReach
@@ -475,8 +479,8 @@ theorem responsive_comparison {Pos : Type} {sig : Pos → Nat → Formation → 
 
 end Trophic
 
-/-! A loop: a part's act changes what another formation registers, the other responds, and the
-difference returns to the part. -/
+/-! A loop: a part's act changes what couples into another formation, the other responds, and
+the difference returns to the part. -/
 
 namespace Loop
 
@@ -499,7 +503,7 @@ def firstPart : Formation → Bool
   | .second => false
 
 /-- The condition paired with each formation: the first's is `ofFirst`, the second's `ofSecond`.
-Each formation requires its paired condition and observes it. -/
+Each formation requires its paired condition, which couples into it by level. -/
 def paired : Formation → Place → Prop
   | .first, .ofFirst => True
   | .first, .ofSecond => False
@@ -518,7 +522,7 @@ def reply : Nat → Nat
   | _ + 2 => 0
 
 /-- With the act: the first takes one unit of the second's condition across the first step, and
-the second, having observed the fall, takes two units of the first's condition across the
+the second, the fall having coupled into it, takes two units of the first's condition across the
 second. -/
 def escalation : Flow Formation Place where
   present _ := members
@@ -594,8 +598,8 @@ theorem dependent : web.Dependent
 theorem quiet_dependent : quietWeb.Dependent :=
   fun _ _ _ _ _ => Nat.succ_le_succ (Nat.zero_le 1)
 
-/-- The second responds through what it registers: it takes alike in the two flows at the first
-step, and at the second it has observed its condition fall. -/
+/-- The second responds through its couplings: it takes alike in the two flows at the first
+step, and at the second the fall of its condition has coupled into it. -/
 theorem responds : escalation.RespondsThroughCoupling quiet web quietWeb paired firstPart
   | .first, no, _, _, _ => nomatch no
   | .second, _, 0, _, .ofFirst => ⟨rfl, rfl⟩
@@ -607,12 +611,12 @@ theorem responds : escalation.RespondsThroughCoupling quiet web quietWeb paired 
   | .second, _, _, _, .ofSecond => ⟨rfl, rfl⟩
 
 /-- **The difference returns to the part.** Both flows balance and in both activity needs support;
-they start alike, and the second responds through what it registers. The first's act takes from
-the condition the second observes, and the second's response takes from the condition the first
+they start alike, and the second responds through its couplings. The first's act takes from
+the condition coupled into the second by level, and the second's response takes from the condition the first
 requires. The first's own exchange with its condition is the same in both flows, yet with the act
 the first is unsupported at the third step and without it supported. With the rest of the exchange
 fixed the first's part does not reach the first, while the difference between the flows reaches it
-before the third step: the loop registers only in the comparison where the rest responds. -/
+before the third step: the loop shows only in the comparison where the rest responds. -/
 theorem returns :
     escalation.Balances web ∧ quiet.Balances quietWeb ∧ web.Dependent ∧ quietWeb.Dependent ∧
       (∀ c, web.level 0 c = quietWeb.level 0 c) ∧

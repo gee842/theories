@@ -3,10 +3,11 @@ import Becoming.Thresholds
 /-!
 # Observation: a route from what is observed
 
-`Becoming.Runaway` took observation as given: a formation observes a condition or does not
-(`obs`), and what it neither depends on nor observes it does not register. `Becoming.Thresholds`
-showed that a law reading a stock only below a threshold carries a raise of it nowhere up to the
-break, and that what can register the distance is a reading of the stock's level before the break;
+`Becoming.Runaway` took observation as given: a condition couples into a formation by level or
+does not (`obs`), and what couples into it neither by threshold nor by level makes no difference
+to it. `Becoming.Thresholds` showed that a law reading a stock only below a threshold carries a
+raise of it nowhere up to the break, and that what can carry the distance is a reading of the
+stock's level before the break;
 it left open how a formation comes to observe a stock it depends on. Ren approved that approach
 and said to continue (16 October). This module answers within the theory without axiom, with no premise beyond what
 each theorem names: observing lies within the downstream. A difference reaches a formation only along a
@@ -22,19 +23,19 @@ route of readings from where it starts, and observing the stock itself is the ro
   (`ExchangeLaw.ReadsInto`) when what each formation outside the part exchanges with a condition
   is fixed by the levels the schedule marks for it. A law reading a schedule in the sense of
   `Becoming.Thresholds` reads into every condition alike (`ExchangeLaw.ReadsAt.readsInto`), so a
-  law reading through a registration does (`ExchangeLaw.Through.readsInto`). An unread level is
+  law reading through a coupling does (`ExchangeLaw.Through.readsInto`). An unread level is
   coupled with strength zero (`ExchangeLaw.ReadsInto.respondsWithin_unread`), so the strengths
   restricted to what is read (`restrictInto`) are strengths of the law
   (`ExchangeLaw.ReadsInto.restrict`), and their routes are routes of reading (`readCouplings`,
   `couplesAt_readCouplings`, `upstream_readCouplings`).
-* **Registering lies within the downstream.** For every law reading into each condition: two balanced
+* **What a difference reaches lies within the downstream.** For every law reading into each condition: two balanced
   courses with the same formations present, the part acting alike and the rest following the law,
   apart at the start only in a stock, are alike at every condition and step not downstream of the
   stock by the readings formed by that step (`apart_only_downstream`). So a formation's exchange
   with a condition differs only where it reads there a level downstream of the stock
-  (`exchange_alike_off_downstream`), and for a law reading through registration only where what it
-  registers lies downstream (`ExchangeLaw.Through.alike_off_downstream`). The stock it observes is
-  downstream of itself; anything else it registers is downstream only by a route.
+  (`exchange_alike_off_downstream`), and for a law reading through the couplings only where what
+  couples into it lies downstream (`ExchangeLaw.Through.alike_off_downstream`). A stock coupled in
+  by level is downstream of itself; anything else coupled in is downstream only by a route.
 * **A route forms by closing.** The routes formed by step `T + 1` are those formed by `T` and those
   through a coupling acting at `T` (`upstream_succ_iff`, `route_forms_by_closing`), as loops form
   in `Becoming.Closing`.
@@ -47,19 +48,19 @@ route of readings from where it starts, and observing the stock itself is the ro
   loop stock → record → draw (`Measure.route_at`, `Measure.loop_at`). In two courses apart only on
   the stock, the record is alike up to `T` and differs by the raise across the step from `T`
   (`Measure.couples_after`), and the draw responds to the record (`Measure.draw_responds`): the
-  raise registers through the record, with no threshold of the stock involved.
+  raise passes through the record, with no threshold of the stock involved.
 
 **Readings (the AI's, pending Ren).**
 - Observation is not a second kind of relation beside dependence. To observe a stock is to stand at
   the end of a route of readings from it; observing it directly is the route of length zero, and a
-  measurement, a model or another's registration is a longer route. A formation comes to observe
+  measurement, a model or another's reading is a longer route. A formation comes to observe
   what it did not by a reading that closes a route, at a step, as a loop closes.
 - What `Becoming.Thresholds` called reading the stock's level before the break is such a route:
-  the loop that registers the distance forms when the route closes, which can be before the break.
+  the loop that carries the distance forms when the route closes, which can be before the break.
 
-The theorems give one direction: what registers lies within the downstream, so what is not
-downstream does not register (`apart_only_downstream`); that every downstream condition does
-register is not stated. **Classical sources.** Two courses apart only in what is not read and alike
+The theorems give one direction: what makes a difference lies within the downstream, so what is
+not downstream makes none (`apart_only_downstream`); that every downstream condition makes one is
+not stated. **Classical sources.** Two courses apart only in what is not read and alike
 in everything read is the noninterference condition of Goguen and Meseguer (1982): a difference
 at a stock does not interfere with what lies off its downstream.
 
@@ -221,7 +222,7 @@ theorem ExchangeLaw.ReadsAt.readsInto {reads : Nat → F → C → Bool} (r : la
     law.ReadsInto part fun t h _ _ d => reads t h d :=
   fun h out t c l l' agree => r h out t l l' (fun s le d read => agree s d le read) c
 
-/-- **A law reading through a registration reads into every condition each schedule covering
+/-- **A law reading through a coupling reads into every condition each schedule covering
 it.** -/
 theorem ExchangeLaw.Through.readsInto {W : Web F C} {obs : F → C → Prop}
     {reads : Nat → F → C → Bool} (through : law.Through W obs part)
@@ -337,7 +338,7 @@ theorem apart_only_downstream (r : law.ReadsInto part reads)
         exact same_step bal bal'
   fun t => upto t t (Nat.le_refl t)
 
-/-- **A formation's exchange registers the stock only through what lies downstream of it.** In
+/-- **A formation's exchange responds to the stock only through what lies downstream of it.** In
 the courses of `apart_only_downstream`, a formation outside the part every level of which it reads
 into `e` at `t` lies off the downstream of `c` exchanges alike with `e` across that step. -/
 theorem exchange_alike_off_downstream (r : law.ReadsInto part reads)
@@ -356,10 +357,10 @@ theorem exchange_alike_off_downstream (r : law.ReadsInto part reads)
   ⟨(follows g out t e).1.trans (same.1.trans (follows' g out t e).1.symm),
    (follows g out t e).2.trans (same.2.trans (follows' g out t e).2.symm)⟩
 
-/-- **Observation goes only by a route.** For a law reading through registration with a schedule covering
-it: a formation outside the part every condition of which it registers at `t` lies off the
-downstream of `c` exchanges alike across that step. The stock it observes lies downstream of
-itself; anything else it registers lies downstream only by a route of readings. -/
+/-- **Observation goes only by a route.** For a law reading through the couplings with a schedule
+covering it: a formation outside the part, every condition coupling into it at `t` lying off the
+downstream of `c`, exchanges alike across that step. A stock coupled in by level lies downstream
+of itself; anything else coupled in lies downstream only by a route of readings. -/
 theorem ExchangeLaw.Through.alike_off_downstream {obs : F → C → Prop}
     {regs : Nat → F → C → Bool} (through : law.Through W obs part)
     (cover : ∀ t h d, part h = false → W.CoupledInto obs h d → regs t h d = true)
@@ -476,7 +477,7 @@ theorem loop_at (T : Nat) :
       (fun _ => [()]) true :=
   onLoop_of_closing (record_into_stock T T) (Upstream.refl true) (Upstream.single (route_at T))
 
-/-- **The raise registers in the record from the step after `T`.** Two balanced courses of the
+/-- **The raise passes into the record from the step after `T`.** Two balanced courses of the
 measurement, one formation present, starting alike on the record and the second `d` higher on the
 stock. Up to `T` the record is alike and the stock `d` higher; across the step from `T` the second
 record rises by `d` more. -/

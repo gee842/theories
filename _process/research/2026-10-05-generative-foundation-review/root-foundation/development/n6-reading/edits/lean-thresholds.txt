@@ -1,0 +1,68 @@
+# Thresholds.lean: a policy through its registration → through its couplings (as Runaway); without observing → coupled by threshold only (S2); "registers the distance" → carries it.
+### lean:Thresholds
+= S2
+- `Becoming.Runaway` showed, for a formation whose policy goes through its registration with the
+- rest of the exchange fixed, that a stock it depends on without observing is never used while the
+- lower web supports it, and that nothing it registers bounds how near the break is.
++ `Becoming.Runaway` showed, for a formation whose policy goes through its couplings with the
++ rest of the exchange fixed, that a stock coupled into it by threshold only is never used while the
++ lower web supports it, and that nothing coupled into it bounds how near the break is.
+= S2
+- a law reading through a
+-   registration reads every schedule covering it (`ExchangeLaw.Through.readsAt`), and its courses
+-   are policies through registration in `Becoming.Runaway`'s sense
++ a law reading through a
++   coupling reads every schedule covering it (`ExchangeLaw.Through.readsAt`), and its courses
++   are policies through the couplings in `Becoming.Runaway`'s sense
+= S2
+- every law reading through a
+-   registration in which no one observes the stock,
++ every law reading through a
++   coupling in which the stock couples into no one by level,
+= S2 the AI's reading, agreed by Ren
+- the loop through the stock that would register the
+-   distance is not there before the break,
++ the loop through the stock that would carry the
++   distance is not there before the break,
+= S2
+- - What can register the distance is a reading of the stock's level before the break: observing
+-   it forms the loop earlier,
++ - What can carry the distance is a reading of the stock's level before the break: coupling it in
++   by level forms the loop earlier,
+= S2
+- /-- **A law reading through a registration reads every schedule covering it.** Where the law
+- reads, for each formation outside the part, only what it registers, and the schedule marks at
+- every step every condition the formation depends on or observes, the law reads the schedule. -/
++ /-- **A law reading through a coupling reads every schedule covering it.** Where the law
++ reads, for each formation outside the part, only what couples into it, and the schedule marks at
++ every step every condition coupling into the formation, by threshold or by level, the law reads
++ the schedule. -/
+= S2
+- /-- **The courses of a law reading through registration are policies through it.** Two flows
+- following, outside the part, one law that reads, for each formation, only what it registers:
+- each formation outside the part acts by a policy through its registration in the sense of
++ /-- **The courses of a law reading through the couplings are policies through them.** Two flows
++ following, outside the part, one law that reads, for each formation, only what couples into it:
++ each formation outside the part acts by a policy through its couplings in the sense of
+= S2
+- only that it stands, as a formation depending on it without observing it registers it. -/
++ only that it stands, as a formation into which it couples by threshold only takes it in. -/
+= S2
+- nothing the rest registers bounds
+- how near the break is. -/
++ nothing coupled into the rest bounds
++ how near the break is. -/
+= S2
+- /-- **Every law reading through a registration in which no one observes the stock reads it only
+- below the needs.** Where the law reads, for each formation outside the part, only what it
+- registers, no formation outside the part observes the stock `c`, and `θ s` is at least what each
+- of them needs of `c` at `s`, the law reads `c` only below `θ`: `Becoming.Runaway`'s formation
+- depending on a stock without observing it is an instance.
++ /-- **Every law reading through a coupling in which the stock couples into no one by level reads
++ it only below the needs.** Where the law reads, for each formation outside the part, only what
++ couples into it, the stock `c` couples by level into no formation outside the part, and `θ s` is
++ at least what each of them needs of `c` at `s`, the law reads `c` only below `θ`:
++ `Becoming.Runaway`'s formation, into which the stock couples by threshold only, is an instance.
+= S2
+- /-- **The break registers only after it.**
++ /-- **The break shows only after it.**

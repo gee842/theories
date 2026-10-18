@@ -8,7 +8,7 @@ import Becoming.Runs
 reads, that what depends on the whole depends on some part, and that a law of the whole and no
 part does not read through what it is sensitive to. A law of exchange enters the unfolding
 through the flows that follow it along webs (`Flow.Follows`, `Becoming.Counterfactual`), through
-the registrations of a web it reads through (`ExchangeLaw.Through`), and through its course, a
+the couplings of a web it reads through (`ExchangeLaw.Through`), and through its course, a
 world (`ExchangeLaw.courseWorld`, `Becoming.Runs`). This module states those laws there.
 
 * **Flows following a law exchange alike where it depends on no single condition.** At a step at
@@ -19,7 +19,7 @@ world (`ExchangeLaw.courseWorld`, `Becoming.Runs`). This module states those law
   exchange alike at every step, whatever the webs (`exchange_alike_of_insensitive`).
 * **The law of a whole does not read through what it is sensitive to, on a web.** On a web in
   which the formation depends on nothing, the law exchanging a number no condition changes, where
-  that number differs between two levels, does not read through registering what it is sensitive
+  that number differs between two levels, does not read through the coupling of what it is sensitive
   to (`wholeLaw_not_through`); the tail law's form is `tailLaw_not_through` of
   `Becoming.Sensitivity`.
 * **The tail law's course is a world.** The course the tail law generates is a balanced world

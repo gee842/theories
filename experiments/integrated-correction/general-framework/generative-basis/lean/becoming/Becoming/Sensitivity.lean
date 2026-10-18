@@ -1,17 +1,17 @@
 import Becoming.Counterfactual
 
 /-!
-# Sensitivity: the least registration with any number of conditions
+# Sensitivity: the least coupling with any number of conditions
 
-`Becoming.Counterfactual` shows that every registration a law of exchange reads through holds,
+`Becoming.Counterfactual` shows that every coupling a law of exchange reads through holds,
 with what the formation depends on, every condition its exchange is sensitive to, in the form
 that its not holding it is refuted (`¬ ¬`, `ExchangeLaw.Through.couples_of_sensitive`), and,
 with finitely many conditions, listed with equality decided, that a law of what has stood reads
-through registering what it is sensitive to (`ExchangeLaw.Nonanticipating.through_sensitive`):
-sensitivity is the least registration, least up to that double negation. It leaves open whether
-sensitivity remains the least registration with infinitely many conditions, or a counterexample.
+through the coupling of what it is sensitive to (`ExchangeLaw.Nonanticipating.through_sensitive`):
+sensitivity is the least coupling, least up to that double negation. It leaves open whether
+sensitivity remains the least coupling with infinitely many conditions, or a counterexample.
 This module answers within the theory without axiom, with no premise beyond what each law names: sensitivity is the
-least registration, in the same double-negation form, wherever a law reads finitely many
+least coupling, in the same double-negation form, wherever a law reads finitely many
 conditions under each history, with any number of conditions; with infinitely many, the condition
 cannot be dropped where vanishing is decided (a hypothesis, `decides`, which gives `LPO`), and
 without such a decision every counterexample gives a principle of omniscience (`WLPO`), so none is
@@ -27,18 +27,18 @@ given constructively.
   `ExchangeLaw.Nonanticipating.readsFinitely_of_every`); with infinitely many, a law can read
   finitely many under each history and within no one list under all of them
   (`Pointer.readsFinitely`, `Pointer.no_list`).
-* **Sensitivity is the least registration, with any number of conditions.** A law of what has
+* **Sensitivity is the least coupling, with any number of conditions.** A law of what has
   stood gives alike under two histories agreeing on what it is sensitive to, wherever it reads
   within a list under one of them (`alike_of_sensitive_agree_within`): the listed conditions are
   changed one at a time, as in `Becoming.Counterfactual`. So a law reading finitely many
-  conditions reads through every registration observing what it is sensitive to
+  conditions reads through every coupling by level that holds what it is sensitive to
   (`ExchangeLaw.ReadsFinitely.through_of_observed`), through what it is sensitive to
-  (`ExchangeLaw.ReadsFinitely.through_sensitive`), and sensitivity is the least registration it
+  (`ExchangeLaw.ReadsFinitely.through_sensitive`), and sensitivity is the least coupling it
   reads through (`ExchangeLaw.ReadsFinitely.least_coupling`, with
-  `ExchangeLaw.Through.couples_of_sensitive`): least in that every registration it reads through
+  `ExchangeLaw.Through.couples_of_sensitive`): least in that every coupling it reads through
   holds each condition it is sensitive to up to double negation (`¬ ¬ W.CoupledInto obs h c`), not
   as a positive inclusion. The comparison as the dynamics give holds for
-  such laws with any number of conditions, the registration being their sensitivity
+  such laws with any number of conditions, the coupling being their sensitivity
   (`comparison_through_sensitivity_of_readsFinitely`). The case of finitely many conditions in
   `Becoming.Counterfactual` is the instance with one list holding every condition
   (`ExchangeLaw.Nonanticipating.through_sensitive_of_every`).
@@ -51,13 +51,13 @@ given constructively.
   (`wlpo_of_not_through_sensitive`). Given a decision,
   for every sequence of levels, of whether it vanishes from some condition on (`VanishFrom`), the
   law exchanging the indicator of that at step `0` (`vanishIndicator`, `tailLaw`) reads what has
-  stood (`tailLaw_nonanticipating`) and through registering the conditions from any one on
+  stood (`tailLaw_nonanticipating`) and through the coupling of the conditions from any one on
   (`tailLaw_reads_from`, `tailLaw_through_from`), is insensitive at every step to every condition
   (`tailLaw_insensitive`) and so sensitive to none (`tailLaw_not_sensitive`), and still differs
   between two histories (`tailLaw_differs`). It does not read through what it is sensitive to
   (`tailLaw_not_through_sensitive`; for a web in which it depends on nothing,
   `tailLaw_not_through`), nor finitely many conditions (`tailLaw_not_readsFinitely`), and the
-  registrations it reads through have no least one (`tailLaw_no_least_coupling`).
+  couplings it reads through have no least one (`tailLaw_no_least_coupling`).
 * **Every counterexample gives omniscience.** Where, for a law of what has stood whose conditions
   are numbered by the natural numbers, two histories agree up to a step on every condition it is
   sensitive to and still give differently there, the weak limited principle of omniscience holds
@@ -68,16 +68,16 @@ given constructively.
   (`seenBy`, `alike_of_agree_from_sensitive`, `alike_of_agree_from`), and compare two numbers
   (`mixed_decides`). The limited principle of `Becoming.Change` gives `WLPO` (`WLPO.of_lpo`); no
   constructive proof does. So, with the conditions numbered, no counterexample to the least
-  registration can be given without a principle of omniscience, and with the decision of
+  coupling can be given without a principle of omniscience, and with the decision of
   vanishing one is given; that decision gives the limited principle itself
   (`lpo_of_vanish_decided`, through `seenBy_exists`).
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D37; 识
 itself stays Ren's reading).**
-- What a formation's exchange is sensitive to is what it registers, with any number of
-  conditions, wherever the law reads finitely many conditions under each history: read as 识, a
-  formation registers exactly what its own exchange can be changed by, one condition at a time,
-  and no list needs supplying.
+- What a formation's exchange is sensitive to is what couples into it, with any number of
+  conditions, wherever the law reads finitely many conditions under each history: read as 识,
+  what couples into a formation is exactly what its own exchange can be changed by, one condition
+  at a time, and no list needs supplying.
 - What depends on the whole depends on some part. A law that no single condition can change,
   and that reads finitely many conditions, cannot be changed at all. A whole that depends on no
   part of it is a tail, like whether levels vanish eventually or a long-run average: it differs
@@ -101,7 +101,7 @@ occurs.
 *Foundations of Constructive Analysis*) and `WLPO` its weak form (Bridges and Richman 1987,
 *Varieties of Constructive Mathematics*); calibrating a statement by the principle it gives is
 constructive reverse mathematics in Ishihara's sense, and that a discontinuous function gives
-`WLPO` is Ishihara's: a counterexample to the least registration is such a discontinuity, a law
+`WLPO` is Ishihara's: a counterexample to the least coupling is such a discontinuity, a law
 changed by no condition that still differs. The mixing of two histories along a Boolean sequence
 is the standard way such a statement yields `WLPO`. The calibration here is of the core's own
 statements; the principles are defined, never assumed.
@@ -153,7 +153,7 @@ theorem ExchangeLaw.Nonanticipating.readsFinitely_of_every (na : law.Nonanticipa
 
 end Finitely
 
-/-! ## Sensitivity is the least registration, with any number of conditions -/
+/-! ## Sensitivity is the least coupling, with any number of conditions -/
 
 section Least
 
@@ -171,8 +171,8 @@ theorem alike_of_sensitive_agree_within (na : law.Nonanticipating) {t : Nat} {h 
     have last := within (mixIn l l' cs) (fun s _ _ mem => (mixIn_listed l l' mem s).symm) d
     ⟨chain.1.trans last.1.symm, chain.2.trans last.2.symm⟩
 
-/-- **A law reading finitely many conditions reads through every registration that observes what
-it is sensitive to**, with any number of conditions. -/
+/-- **A law reading finitely many conditions reads through every coupling by level that holds
+what it is sensitive to**, with any number of conditions. -/
 theorem ExchangeLaw.ReadsFinitely.through_of_observed (fin : law.ReadsFinitely) {W : Web F C}
     {obs : F → C → Prop} {part : F → Bool}
     (observed : ∀ h, part h = false → ∀ c, law.Sensitive h c → ¬ ¬ obs h c) :
@@ -190,8 +190,8 @@ theorem ExchangeLaw.ReadsFinitely.through_sensitive (fin : law.ReadsFinitely) (W
     (part : F → Bool) : law.Through W law.Sensitive part :=
   fin.through_of_observed fun _ _ _ sensitive unseen => unseen sensitive
 
-/-- **Sensitivity is the least registration, with any number of conditions.** A law reading
-finitely many conditions reads through what it is sensitive to, and every registration it reads
+/-- **Sensitivity is the least coupling, with any number of conditions.** A law reading
+finitely many conditions reads through what it is sensitive to, and every coupling it reads
 through holds, with what the formation depends on, every condition it is sensitive to, up to
 double negation: that it does not hold one is refuted (`¬ ¬`). -/
 theorem ExchangeLaw.ReadsFinitely.least_coupling (fin : law.ReadsFinitely) (W : Web F C)
@@ -362,15 +362,15 @@ theorem tailLaw_not_through {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t 
         fun _ c requires => absurd requires (free s c)⟩,
        fun c sensitive => agree c sensitive s le⟩
 
-/-- **The tail law reads through registering the conditions from any one on.** -/
+/-- **The tail law reads through the coupling of the conditions from any one on.** -/
 theorem tailLaw_through_from {W : Web Unit Nat} (n : Nat) :
     (tailLaw decides).Through W (fun _ c => n ≤ c) (fun _ => false) :=
   fun _ _ _ _ _ alike => tailLaw_reads_from decides n fun s le m above => (alike s le).2 m above
 
-/-- **The registrations the tail law reads through have no least one.** For a web in which the
-formation depends on nothing, no registration the tail law reads through lies within every
-registration it reads through: it would hold no condition, the conditions from each one on being
-read through, and the tail law does not read through registering nothing. -/
+/-- **The couplings the tail law reads through have no least one.** For a web in which the
+formation depends on nothing, no coupling the tail law reads through lies within every
+coupling it reads through: it would hold no condition, the conditions from each one on being
+read through, and the tail law does not read through the coupling of nothing. -/
 theorem tailLaw_no_least_coupling {W : Web Unit Nat} (free : ∀ t c, ¬ W.requires t () c) :
     ¬ ∃ obs : Unit → Nat → Prop, (tailLaw decides).Through W obs (fun _ => false) ∧
       ∀ obs' : Unit → Nat → Prop, (tailLaw decides).Through W obs' (fun _ => false) →
@@ -538,7 +538,7 @@ theorem alike_of_agree_from_sensitive {law : ExchangeLaw F Nat} (na : law.Nonant
     have rest := alike_of_agree_from_sensitive na agree k either' fromK
     fun d => ⟨(swap d).1.trans (rest d).1, (swap d).2.trans (rest d).2⟩
 
-/-- **Every counterexample to the least registration gives the weak limited principle of
+/-- **Every counterexample to the least coupling gives the weak limited principle of
 omniscience.** Where, for a law of what has stood whose conditions are numbered by the natural
 numbers, two histories agree up to `t` on every condition it is sensitive to and still give
 differently there, every Boolean sequence is `false` throughout or not. -/
@@ -565,7 +565,7 @@ theorem seenBy_exists {s : Nat → Bool} : ∀ {m : Nat}, seenBy s m = true → 
 
 /-- **The decision of vanishing gives the limited principle of omniscience.** Levels `1` before
 the first `true` of a Boolean sequence and `0` from it on vanish from some condition on exactly
-where the sequence has a `true`. So the tail law, a counterexample to the least registration, takes
+where the sequence has a `true`. So the tail law, a counterexample to the least coupling, takes
 at least `LPO`. -/
 theorem lpo_of_vanish_decided (decides : ∀ α : Nat → Nat, Decidable (VanishFrom α)) : LPO :=
   fun s =>

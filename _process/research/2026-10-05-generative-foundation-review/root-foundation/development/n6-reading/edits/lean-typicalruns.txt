@@ -1,0 +1,82 @@
+# TypicalRuns.lean: the record of `n` steps is `Learning.prefixOf` of the course, so it is a prefix (L-prefix); `record`, `Records`, `records_*`, `ofRecord` are names, in the names table.
+### lean:TypicalRuns
+= L-prefix
+- # Typical runs: what counting says of the records of runs of free branching
++ # Typical runs: what counting says of the prefixes of runs of free branching
+= L-prefix
+- `n` steps are exactly the records a run of free branching on two values shows in its first `n`
++ `n` steps are exactly the prefixes of `n` steps a run of free branching on two values shows
+= L-prefix
+- count over the records of runs, whatever list holds them.
++ count over the prefixes of runs, whatever list holds them.
+= L-prefix
+- * **The courses are the records of runs.** A list of `n` values is a course of `n` steps exactly
++ * **The courses are the prefixes of runs.** A list of `n` values is a course of `n` steps exactly
+= L-prefix
+-   where some run of free branching shows it as its record of `n` steps (`mem_courses_iff`), and
++   where some run of free branching shows it as its prefix of `n` steps (`mem_courses_iff`), and
+= L-prefix
+-   the courses list each record once (`courses_records`).
++   the courses list each prefix once (`courses_records`).
+= L-prefix
+- * **A count over the records does not depend on how they are listed.** Two lists each holding
++ * **A count over the prefixes does not depend on how they are listed.** Two lists each holding
+= L-prefix
+- * **The counts of `Becoming.Typicality` are counts of records.** For every list `l` holding each
++ * **The counts of `Becoming.Typicality` are counts of prefixes.** For every list `l` holding each
+= L-prefix
+-   record of `n` steps of the runs of free branching on two values once: there are `2 ^ n` of
++   prefix of `n` steps of the runs of free branching on two values once: there are `2 ^ n` of
+= L-prefix
+- weighs the records of runs; it does not choose one, and no record shows that a run of free
++ weighs the prefixes of runs; it does not choose one, and no prefix shows that a run of free
+= L-prefix
+- /-! ## The courses are the records of runs -/
++ /-! ## The courses are the prefixes of runs -/
+= L-prefix
+- /-- The sequence whose record of `w.length` steps is `w`, `false` after it. -/
++ /-- The sequence whose prefix of `w.length` steps is `w`, `false` after it. -/
+= L-prefix
+- /-- The record of `n` steps of a run of free branching on two values. -/
++ /-- The prefix of `n` steps of a run of free branching on two values. -/
+= L-prefix
+- /-- **The courses of `n` steps are exactly the records of `n` steps of runs of free branching on
++ /-- **The courses of `n` steps are exactly the prefixes of `n` steps of runs of free branching on
+= L-prefix
+- /-- `l` holds every record of `n` steps of the runs of free branching on two values once. -/
++ /-- `l` holds every prefix of `n` steps of the runs of free branching on two values once. -/
+= L-prefix
+- /-- **The courses of `n` steps hold every record of `n` steps of the runs once.** -/
++ /-- **The courses of `n` steps hold every prefix of `n` steps of the runs once.** -/
+= L-prefix
+- /-! ## The counts of Typicality are counts of records -/
++ /-! ## The counts of Typicality are counts of prefixes -/
+= L-prefix
+- /-- **There are `2 ^ n` records of `n` steps of the runs of free branching on two values.** -/
++ /-- **There are `2 ^ n` prefixes of `n` steps of the runs of free branching on two values.** -/
+= L-prefix
+- /-- **The records of `n` steps weigh `(p + q) ^ n` together.** -/
++ /-- **The prefixes of `n` steps weigh `(p + q) ^ n` together.** -/
+= L-prefix
+- /-- **The sum over histories of `Becoming.Weighted` is the weight of the records.** The sum over
++ /-- **The sum over histories of `Becoming.Weighted` is the weight of the prefixes.** The sum over
+= L-prefix
+- weight of the records of `n` steps of its runs. -/
++ weight of the prefixes of `n` steps of its runs. -/
+= L-prefix
+- /-- **The spread over the records of runs is exact.** Over the records of `n` steps, each
++ /-- **The spread over the prefixes of runs is exact.** Over the prefixes of `n` steps, each
+= L-prefix
+- /-- **Most records of runs show the weights.** The records of `n` steps whose squared deviation
++ /-- **Most prefixes of runs show the weights.** The prefixes of `n` steps whose squared deviation
+= L-prefix
+- /-- **Concentration over the records of runs is exponential.** For every `u ≥ v`, the records of
++ /-- **Concentration over the prefixes of runs is exponential.** For every `u ≥ v`, the prefixes of
+= L-prefix
+- /-- **Exponentially few runs run far ahead.** Of the `2 ^ n` records of `n` steps, those with at
++ /-- **Exponentially few runs run far ahead.** Of the `2 ^ n` prefixes of `n` steps, those with at
+= L-prefix
+-
+- steps (`Learning.prefixOf` of `Parting.course`), each listed once,
++
++ (`Learning.prefixOf` of `Parting.course`), each listed once,

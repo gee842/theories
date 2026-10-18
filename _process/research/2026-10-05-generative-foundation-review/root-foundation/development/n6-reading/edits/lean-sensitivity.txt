@@ -1,0 +1,87 @@
+# Sensitivity.lean: the least coupling a law reads through (as Counterfactual); "refutes WLPO" and `¬ ¬` "refuted" kept (logical senses).
+### lean:Sensitivity
+= S2 the least registration → the least coupling (`least_coupling`, as N5 named it)
+- # Sensitivity: the least registration with any number of conditions
+-
+- `Becoming.Counterfactual` shows that every registration a law of exchange reads through holds,
++ # Sensitivity: the least coupling with any number of conditions
++
++ `Becoming.Counterfactual` shows that every coupling a law of exchange reads through holds,
+= S2
+- through registering what it is sensitive to (`ExchangeLaw.Nonanticipating.through_sensitive`):
+- sensitivity is the least registration, least up to that double negation. It leaves open whether
+- sensitivity remains the least registration with infinitely many conditions, or a counterexample.
++ through the coupling of what it is sensitive to (`ExchangeLaw.Nonanticipating.through_sensitive`):
++ sensitivity is the least coupling, least up to that double negation. It leaves open whether
++ sensitivity remains the least coupling with infinitely many conditions, or a counterexample.
+= S2
+- least registration, in the same double-negation form, wherever a law reads finitely many
++ least coupling, in the same double-negation form, wherever a law reads finitely many
+= S2
+- * **Sensitivity is the least registration, with any number of conditions.** A law of what has
++ * **Sensitivity is the least coupling, with any number of conditions.** A law of what has
+= S2
+-   conditions reads through every registration observing what it is sensitive to
+-   (`ExchangeLaw.ReadsFinitely.through_of_observed`), through what it is sensitive to
+-   (`ExchangeLaw.ReadsFinitely.through_sensitive`), and sensitivity is the least registration it
++   conditions reads through every coupling by level that holds what it is sensitive to
++   (`ExchangeLaw.ReadsFinitely.through_of_observed`), through what it is sensitive to
++   (`ExchangeLaw.ReadsFinitely.through_sensitive`), and sensitivity is the least coupling it
+= S2
+-   `ExchangeLaw.Through.couples_of_sensitive`): least in that every registration it reads through
++   `ExchangeLaw.Through.couples_of_sensitive`): least in that every coupling it reads through
+= S2
+-   such laws with any number of conditions, the registration being their sensitivity
++   such laws with any number of conditions, the coupling being their sensitivity
+= S2
+-   stood (`tailLaw_nonanticipating`) and through registering the conditions from any one on
++   stood (`tailLaw_nonanticipating`) and through the coupling of the conditions from any one on
+= S2
+-   registrations it reads through have no least one (`tailLaw_no_least_coupling`).
++   couplings it reads through have no least one (`tailLaw_no_least_coupling`).
+= S2
+-   registration can be given without a principle of omniscience, and with the decision of
++   coupling can be given without a principle of omniscience, and with the decision of
+= S2 the AI's reading (D37); 识 read as coupling into a formation (ZH b)
+- - What a formation's exchange is sensitive to is what it registers, with any number of
+-   conditions, wherever the law reads finitely many conditions under each history: read as 识, a
+-   formation registers exactly what its own exchange can be changed by, one condition at a time,
+-   and no list needs supplying.
++ - What a formation's exchange is sensitive to is what couples into it, with any number of
++   conditions, wherever the law reads finitely many conditions under each history: read as 识,
++   what couples into a formation is exactly what its own exchange can be changed by, one condition
++   at a time, and no list needs supplying.
+= S2
+- `WLPO` is Ishihara's: a counterexample to the least registration is such a discontinuity, a law
++ `WLPO` is Ishihara's: a counterexample to the least coupling is such a discontinuity, a law
+= S2
+- /-! ## Sensitivity is the least registration, with any number of conditions -/
++ /-! ## Sensitivity is the least coupling, with any number of conditions -/
+= S2
+- /-- **A law reading finitely many conditions reads through every registration that observes what
+- it is sensitive to**, with any number of conditions. -/
++ /-- **A law reading finitely many conditions reads through every coupling by level that holds
++ what it is sensitive to**, with any number of conditions. -/
+= S2
+- /-- **Sensitivity is the least registration, with any number of conditions.** A law reading
+- finitely many conditions reads through what it is sensitive to, and every registration it reads
++ /-- **Sensitivity is the least coupling, with any number of conditions.** A law reading
++ finitely many conditions reads through what it is sensitive to, and every coupling it reads
+= S2
+- /-- **The tail law reads through registering the conditions from any one on.** -/
++ /-- **The tail law reads through the coupling of the conditions from any one on.** -/
+= S2
+- /-- **The registrations the tail law reads through have no least one.** For a web in which the
+- formation depends on nothing, no registration the tail law reads through lies within every
+- registration it reads through: it would hold no condition, the conditions from each one on being
+- read through, and the tail law does not read through registering nothing. -/
++ /-- **The couplings the tail law reads through have no least one.** For a web in which the
++ formation depends on nothing, no coupling the tail law reads through lies within every
++ coupling it reads through: it would hold no condition, the conditions from each one on being
++ read through, and the tail law does not read through the coupling of nothing. -/
+= S2
+- /-- **Every counterexample to the least registration gives the weak limited principle of
++ /-- **Every counterexample to the least coupling gives the weak limited principle of
+= S2
+- where the sequence has a `true`. So the tail law, a counterexample to the least registration, takes
++ where the sequence has a `true`. So the tail law, a counterexample to the least coupling, takes

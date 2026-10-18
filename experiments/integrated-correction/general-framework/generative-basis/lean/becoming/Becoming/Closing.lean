@@ -55,9 +55,9 @@ states how loops form, within the theory without axiom and with no premise beyon
   that the theorems take them as they stand at each step.
 - A loop's formation is not foreseen from the amounts before it. Before it forms the growth is at
   most polynomial; the step it forms is not shown by the course so far, and the amounts after it
-  grow at least geometrically. This meets `Becoming.Runaway`: a runaway's break is not registered
-  before it, and the formation of the loop that runs away is not registered either, by the amounts
-  it carries. What can register it is what registers the couplings themselves (in the threshold
+  grow at least geometrically. This meets `Becoming.Runaway`: a runaway's break does not show
+  before it, and the formation of the loop that runs away does not show either, in the amounts
+  it carries. What can show it is what reads the couplings themselves (in the threshold
   witness, the distance of the level to `θ`).
 - How loops dissolve is the other side, stated in `Becoming.Remainder` (couplings that stop: a loop
   whose couplings stop carries what a finite order carries).

@@ -4,7 +4,7 @@ import Becoming.Assurance
 /-!
 # Contact courses: revision rules as processes, and encodings along a run of channels
 
-`Becoming.Contacts` states what a registration through addressed contacts selects and how a rule
+`Becoming.Contacts` states what a lumping through addressed contacts selects and how a rule
 forming the next plan from the present plan and the failed address answers failures: a rule that
 does not read the failure (`Contacts.Blind`) answers every failure exactly where its plans contact
 every address, and with finitely many addresses a blind rule can answer every failure. It also

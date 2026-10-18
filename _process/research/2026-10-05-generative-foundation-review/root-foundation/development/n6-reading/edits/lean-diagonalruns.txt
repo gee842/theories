@@ -1,0 +1,38 @@
+# DiagonalRuns.lean: a family of readings that says (`Says`), as Diagonal.
+### lean:DiagonalRuns
+= S7
+- # Diagonal runs: completing a registration within what it registers, as a process
+-
+- `Becoming.Diagonal` states that a registration within what it registers misses a definite
+- reading, that a registration keeping what it registered and next registering what it missed
+- (`Diagonal.Unfolds`) never closes and never returns, and that revising a value by a map moving
+- every value never rests. Completion is a process: its configurations are registrations
+- `A → A → B`, and a step keeps every reading registered and registers the gap of the one before
++ # Diagonal runs: completing a family of readings within what it reads, as a process
++
++ `Becoming.Diagonal` states that a family of readings within what it reads misses a definite
++ reading, that a family keeping what it said and next saying what it missed
++ (`Diagonal.Unfolds`) never closes and never returns, and that revising a value by a map moving
++ every value never rests. Completion is a process: its configurations are families
++ `A → A → B`, and a step keeps every reading said and says the gap of the one before
+= S7
+- each step's gap is registered at no step up to its own (`gap_new`), no two
+-   gaps are alike (`gaps_differ`), the run never returns: every later step registers something no
++ each step's gap is said at no step up to its own (`gap_new`), no two
++   gaps are alike (`gaps_differ`), the run never returns: every later step says something no
+= S7 2
+- A run of completion by equality comes to a registration saying every reading exactly
++ A run of completion by equality comes to a family saying every reading exactly
+= S7
+- /-- **Completion**: across a step a registration keeps every reading it registered and registers
+- the gap of the registration before, its registration of itself moved by `f`. -/
++ /-- **Completion**: across a step a family keeps every reading it said and says the gap of the
++ family before, its value at itself moved by `f`. -/
+= S7
+- /-- **Each step's gap is registered at no step up to its own.** -/
++ /-- **Each step's gap is said at no step up to its own.** -/
+= S7
+- every later step registers something no earlier step
+- did. -/
++ every later step says something no earlier step
++ did. -/

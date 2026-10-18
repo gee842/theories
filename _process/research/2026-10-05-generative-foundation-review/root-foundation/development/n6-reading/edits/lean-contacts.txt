@@ -1,0 +1,37 @@
+# Contacts.lean: registration through a plan → the lumping through it (S1); a plan registers an address → contacts it; a blind rule → a rule not reading the failure (`Blind` is a name, in the names table).
+### lean:Contacts
+= S1
+- # Contacts: registration through addressed contacts, its revision, and reference pairs
++ # Contacts: lumping through addressed contacts, its revision, and reference pairs
+= S1
+- A registration reads signals at a finite list of
+- addresses (its contacts);
++ A plan reads signals at a finite list of
++ addresses (its contacts);
+= S1
+- * **What a plan registers.** Registration through a plan is the shared agreement on data
++ * **What a plan lumps.** The lumping through a plan is the shared agreement on data
+= S1
+-   the next plan registers the failed address,
++   the next plan contacts the failed address,
+= S7 blind → not reading the failure (`Blind` defines it so)
+- every blind rule leaves, at every plan, some
++ every rule not reading the failure leaves, at every plan, some
+= S1
+- /-- **What registration through data selects.**
++ /-- **What a lumping through data selects.**
+= S1
+- /-- **A change of data keeps the old registration exactly where it retains the old data.** -/
++ /-- **A change of data keeps the old lumping exactly where it retains the old data.** -/
+= S1
+- /-- The next plan registers every failed address. -/
++ /-- The next plan contacts every failed address. -/
+= S7
+- /-- A blind rule answers every failure
++ /-- A rule not reading the failure answers every failure
+= S7
+- /-- **A rule blind to consequences leaves,
++ /-- **A rule not reading its consequences leaves,
+= S7
+- /-- With finitely many addresses a blind rule can answer every failure. -/
++ /-- With finitely many addresses a rule not reading the failure can answer every failure. -/

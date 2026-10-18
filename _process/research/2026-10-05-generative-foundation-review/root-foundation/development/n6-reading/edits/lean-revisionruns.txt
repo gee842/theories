@@ -1,0 +1,19 @@
+# RevisionRuns.lean: the history of a run's registrations → of its lumpings (S1, as Revision).
+### lean:RevisionRuns
+= S1 4
+- history of a run's registrations
++ history of a run's lumpings
+= S1
+- `Becoming.Revision` states that registering through a jointly retained old and new reading gains
++ `Becoming.Revision` states that lumping through a jointly retained old and new reading gains
+= S1
+- `Revising.P`, that the registration with the link unformed cannot select
++ `Revising.P`, that the lumping with the link unformed cannot select
+= S1
+- the history
+- of the run's registrations through every step
++ the history
++ of the run's lumpings through every step
+= S1
+- the response false keeps the registration. -/
++ the response false keeps the lumping. -/

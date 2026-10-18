@@ -4,10 +4,10 @@ import Becoming.Context
 # The quantum realization of the Mermin–Peres square (P72q)
 
 P72's `Becoming.Context` states the Mermin–Peres square (Mermin 1990, Peres 1990) as claims
-registered in context: nine cells (`Square.Cell`), six lines (`Square.Line`), each line a context
-registering its three cells, the parity each line's values must have (`Square.odd`: odd in the
+shown in context: nine cells (`Square.Cell`), six lines (`Square.Line`), each line a context
+holding its three cells, the parity each line's values must have (`Square.odd`: odd in the
 third column only), and `Square.noGlobal`: no single assignment of values to the nine cells has
-every line's parity. This module gives the quantum registrations that realize the square. Cell
+every line's parity. This module gives the quantum states and observables that realize the square. Cell
 `(i, j)` holds the observable at row `i`, column `j`:
 
 ```
@@ -20,22 +20,22 @@ Every observable here is a real matrix: `X`, `Z` and `I` are, and `Y⊗Y = -(W�
 `W = iY = [[0, 1], [-1, 0]]` real (`yy_entries`). So the square is stated with explicit integer
 4×4 matrices and checked by evaluation, with nothing beyond Lean's prelude and P72.
 
-* **The operators.** Each observable squares to the identity (`obs_sq`), so it registers one of
+* **The operators.** Each observable squares to the identity (`obs_sq`), so it shows one of
   two values, `+1` or `-1`. The three observables of a line commute pairwise (`row_commute`,
-  `column_commute`, `line_commute`), so a line is a context that can be registered together,
+  `column_commute`, `line_commute`), so a line is a context that can be measured jointly,
   while two observables sharing no line anticommute (`off_line_anticommute`), so no larger
   context holds them. Each line multiplies to `-I` where it is odd and to `+I` elsewhere
   (`row_product`, `column_product`, `line_product`).
-* **The registrations.** Each observable is a signed permutation matrix (`obs_signed`), acting on
+* **What a state shows.** Each observable is a signed permutation matrix (`obs_signed`), acting on
   a vector as `act` (`mulVec_obs`). A vector shows the value `b` at a cell (`true` meaning `-1`)
   where the cell's observable sends it to itself with that sign (`Shows`). Wherever a nonzero
   vector shows values at the three cells of a line, their parity is the line's (`row_parity`,
   `column_parity`, `line_parity`), so what a quantum state shows jointly on a line is a support
   of the line in P72's sense (`shows_support`). Conversely every support of a line is shown
   jointly by an explicit integer vector (`line_realized`, `support_shown`).
-* **Quantum registrations are contextual.** No assignment of values to the nine cells is shown
+* **What quantum states show is contextual.** No assignment of values to the nine cells is shown
   jointly on every line by quantum states (`no_context_free_values`): it would be a support of
-  every line, which `Square.noGlobal` excludes. Within each context the registrations are
+  every line, which `Square.noGlobal` excludes. Within each context what is shown is
   definite and every value the context allows occurs; across contexts they do not come from one
   context-free assignment. This is the Kochen–Specker theorem for two qubits in Mermin and
   Peres's form, with the operator algebra checked rather than cited.
@@ -148,7 +148,7 @@ and `|10⟩⟨01|`. -/
 theorem yy_entries : Same yy (fun i j =>
     if i.val + j.val = 3 then (if i.val = 0 ∨ i.val = 3 then -1 else 1) else 0) := by decide
 
-/-- Every observable squares to the identity, so it registers `+1` or `-1`. -/
+/-- Every observable squares to the identity, so it shows `+1` or `-1`. -/
 theorem obs_sq : ∀ i j : Fin 3, Same (mul (obs (i, j)) (obs (i, j))) one := by decide
 
 /-- The observables of a row commute pairwise. -/
@@ -171,7 +171,7 @@ theorem row_product : ∀ i : Fin 3, Same (rowProduct i) one := by decide
 theorem column_product : ∀ j : Fin 3,
     Same (columnProduct j) (if Nat.beq j.val 2 then neg one else one) := by decide
 
-/-! ## The registrations -/
+/-! ## What a state shows -/
 
 /-- `-x` where `b`, else `x`: the value `-1` where `b` is `true`. -/
 def flip (b : Bool) (x : Int) : Int := if b then -x else x
@@ -252,7 +252,7 @@ theorem mulVec_obs (i j : Fin 3) (v : Fin 4 → Int) (k : Fin 4) :
   mulVec_signed _ v k _ _ (obs_signed i j k)
 
 /-- A vector shows the value `b` at a cell (`true` meaning `-1`) where the cell's observable
-sends it to itself with that sign: a registration of the cell's observable with value `b`. -/
+sends it to itself with that sign: the cell's observable measured with value `b`. -/
 def Shows (v : Fin 4 → Int) (c : Cell) (b : Bool) : Prop :=
   ∀ k, mulVec (obs c) v k = sign b * v k
 
@@ -316,7 +316,7 @@ theorem act_congr (c : Cell) {u v : Fin 4 → Int} {b : Bool} (h : ∀ m, u m = 
   show flip (negAt c k) (u (src c k)) = flip b (flip (negAt c k) (v (src c k)))
   rw [h, flip_comm]
 
-/-- Registered jointly at three cells, the three observables applied in turn flip by the
+/-- Shown jointly at three cells, the three observables applied in turn flip by the
 parity of the values shown. -/
 theorem shows_three {v : Fin 4 → Int} {c₀ c₁ c₂ : Cell} {b₀ b₁ b₂ : Bool}
     (s₀ : ∀ k, act c₀ v k = flip b₀ (v k)) (s₁ : ∀ k, act c₁ v k = flip b₁ (v k))
@@ -327,7 +327,7 @@ theorem shows_three {v : Fin 4 → Int} {c₀ c₁ c₂ : Cell} {b₀ b₁ b₂ 
   rw [act_congr c₀ two k, s₀ k, flip_flip]
   cases b₀ <;> cases b₁ <;> cases b₂ <;> rfl
 
-/-- **Quantum registrations keep each row's parity.** Wherever a nonzero vector shows values at
+/-- **What quantum states show keeps each row's parity.** Wherever a nonzero vector shows values at
 the three cells of a row, their parity is even, as the row's product `+I` gives. -/
 theorem row_parity {v : Fin 4 → Int} {i : Fin 3} {b₀ b₁ b₂ : Bool} (nonzero : ¬ ∀ k, v k = 0)
     (s₀ : Shows v (i, i0) b₀) (s₁ : Shows v (i, i1) b₁) (s₂ : Shows v (i, i2) b₂) :
@@ -340,7 +340,7 @@ theorem row_parity {v : Fin 4 → Int} {i : Fin 3} {b₀ b₁ b₂ : Bool} (nonz
   · rfl
   · exact absurd (fun k => flip_cancel (hp ▸ e k) Bool.noConfusion) nonzero
 
-/-- **Quantum registrations keep each column's parity.** Wherever a nonzero vector shows values
+/-- **What quantum states show keeps each column's parity.** Wherever a nonzero vector shows values
 at the three cells of a column, their parity is even in the first two columns and odd in the
 third, as the column's product `+I` or `-I` gives. -/
 theorem column_parity {v : Fin 4 → Int} {j : Fin 3} {b₀ b₁ b₂ : Bool} (nonzero : ¬ ∀ k, v k = 0)
@@ -356,7 +356,7 @@ theorem column_parity {v : Fin 4 → Int} {j : Fin 3} {b₀ b₁ b₂ : Bool} (n
   · exact absurd (fun k => flip_cancel (hj ▸ hp ▸ e k) Bool.noConfusion) nonzero
   · rfl
 
-/-- A row's joint registration with the values `b₀`, `b₁` at its first two cells and the value
+/-- A state showing on a row the values `b₀`, `b₁` at its first two cells and the value
 the line's parity gives at the third: an integer vector, explicit. -/
 def rowWitness (n : Fin 3) (b₀ b₁ : Bool) : Fin 4 → Int :=
   match n.val, b₀, b₁ with
@@ -374,7 +374,7 @@ def rowWitness (n : Fin 3) (b₀ b₁ : Bool) : Fin 4 → Int :=
   | 2, true, true => fun k => match k.val with | 0 => 1 | 1 => -1 | 2 => -1 | _ => -1
   | _, _, _ => fun _ => 0
 
-/-- A column's joint registration with the values `b₀`, `b₁` at its first two cells and the value
+/-- A state showing on a column the values `b₀`, `b₁` at its first two cells and the value
 the line's parity gives at the third: an integer vector, explicit. -/
 def columnWitness (n : Fin 3) (b₀ b₁ : Bool) : Fin 4 → Int :=
   match n.val, b₀, b₁ with
@@ -408,7 +408,7 @@ theorem column_realized : ∀ j : Fin 3, ∀ b₀ b₁ : Bool,
       Shows (columnWitness j b₀ b₁) (i2, j) (parity b₀ b₁ (Nat.beq j.val 2)) := by
   decide
 
-/-! ## Lines: the registrations are the supports, and no context-free assignment fits -/
+/-! ## Lines: what is shown is a support, and no context-free assignment fits -/
 
 /-- The product of a line's observables, in order along the line. -/
 def lineProduct (l : Line) : Mat4 := mul (mul (obs (at_ l i0)) (obs (at_ l i1))) (obs (at_ l i2))
@@ -424,7 +424,7 @@ theorem line_commute : ∀ (l : Line) (q q' : Fin 3),
   | .row i, q, q' => row_commute i q q'
   | .column j, q, q' => column_commute j q q'
 
-/-- **Quantum registrations keep each line's parity.** Wherever a nonzero vector shows values
+/-- **What quantum states show keeps each line's parity.** Wherever a nonzero vector shows values
 at the three cells of a line, their parity is the line's. -/
 theorem line_parity {v : Fin 4 → Int} {l : Line} {b₀ b₁ b₂ : Bool} (nonzero : ¬ ∀ k, v k = 0)
     (s₀ : Shows v (at_ l i0) b₀) (s₁ : Shows v (at_ l i1) b₁) (s₂ : Shows v (at_ l i2) b₂) :
@@ -438,7 +438,7 @@ theorem shows_support {v : Fin 4 → Int} {l : Line} {f : Cell → Bool} (nonzer
     (shows : ∀ q, Shows v (at_ l q) (f (at_ l q))) : support l f :=
   line_parity nonzero (shows i0) (shows i1) (shows i2)
 
-/-- A line's joint registration with the values `b₀`, `b₁` at its first two cells. -/
+/-- A state showing on a line the values `b₀`, `b₁` at its first two cells. -/
 def lineWitness : Line → Bool → Bool → Fin 4 → Int
   | .row i => rowWitness i
   | .column j => columnWitness j
@@ -467,7 +467,7 @@ theorem support_shown {l : Line} {f : Cell → Bool} (h : support l f) :
     rw [parity_third _ _ _ _ h]
     exact s₂
 
-/-- **Quantum registrations are contextual.** On every line, the values quantum states show
+/-- **What quantum states show is contextual.** On every line, the values quantum states show
 jointly are exactly the line's supports (`shows_support`, `support_shown`); so no single
 assignment of values to the nine cells is shown jointly on every line, since it would be a
 support of every line, which P72's `noGlobal` excludes. -/

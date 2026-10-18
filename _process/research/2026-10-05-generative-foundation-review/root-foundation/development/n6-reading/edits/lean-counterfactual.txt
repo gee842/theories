@@ -1,0 +1,93 @@
+# Counterfactual.lean: the law reads through a coupling (`obs` with the web's threshold coupling); the experiment's record is kept (physical sense).
+### lean:Counterfactual
+= S2 "responds through its registration" → through its couplings (as `Flow.RespondsThroughCoupling` and Response)
+- responds through its registration (`Flow.RespondsThroughCoupling`). The chapter's open item
++ responds through its couplings (`Flow.RespondsThroughCoupling`). The chapter's open item
+= S2 a registration a law reads through → a coupling (`obs` with the web): "registers" → what couples in; "observes" → couples in by level; refuted under `¬ ¬` kept (double negation)
+-   only what that formation registers (`ExchangeLaw.Through`), the rest responds through its
+-   registration in any two courses of the law (`ExchangeLaw.Through.responds`): P65's premise, with
+-   nothing supplied about the pair. Every law of what has stood reads through registering
+-   everything (`ExchangeLaw.Nonanticipating.through_all`). With finitely many conditions it reads
+-   through registering what its exchange is sensitive to (`ExchangeLaw.Sensitive`,
+-   `ExchangeLaw.Nonanticipating.through_sensitive`), and through every registration that observes
+-   that (`ExchangeLaw.Nonanticipating.through_of_observed`), the proof changing one condition at a
+-   time (`alike_of_sensitive_agree`). Conversely every registration a law reads through holds,
++   only what couples into that formation (`ExchangeLaw.Through`), the rest responds through its
++   couplings in any two courses of the law (`ExchangeLaw.Through.responds`): P65's premise, with
++   nothing supplied about the pair. Every law of what has stood reads through the coupling of
++   everything (`ExchangeLaw.Nonanticipating.through_all`). With finitely many conditions it reads
++   through the coupling of what its exchange is sensitive to (`ExchangeLaw.Sensitive`,
++   `ExchangeLaw.Nonanticipating.through_sensitive`), and through every coupling by level that
++   holds that (`ExchangeLaw.Nonanticipating.through_of_observed`), the proof changing one condition
++   at a time (`alike_of_sensitive_agree`). Conversely every coupling a law reads through holds,
+= S2
+-   So sensitivity is the least registration, least in that double-negation form. No
++   So sensitivity is the least coupling, least in that double-negation form. No
+= S2
+-   registration, with the same formations present and starting alike: for any significance
+-   covering what is not beyond the part's responsive reach drawn through that registration, each
++   coupling, with the same formations present and starting alike: for any significance
++   covering what is not beyond the part's responsive reach drawn through that coupling, each
+= S2
+-   conditions the registration need not be given: it is the law's sensitivity
++   conditions the coupling need not be given: it is the law's sensitivity
+= S2
+-   stood and only what the second observes (`Loop.replyLaw_nonanticipating`,
++   stood and only what couples into the second by level (`Loop.replyLaw_nonanticipating`,
+= S2 the AI's reading (D25); 识 read as coupling into a formation (ZH b keeps 识 for the derived structure)
+-   about how formations behave. Whatever such law their exchange follows, it reads through a
+-   registration, with finitely many conditions what the exchange is sensitive to; read as 识, a
+-   formation registers what its own exchange is sensitive to. The narrower that
++   about how formations behave. Whatever such law their exchange follows, it reads through a
++   coupling, with finitely many conditions what the exchange is sensitive to; read as 识, what
++   couples into a formation is what its own exchange is sensitive to. The narrower that
+= S2
+- that the least registration is sensitivity when there are infinitely many conditions (only
++ that the least coupling is sensitivity when there are infinitely many conditions (only
+= S2
+- /-- The law reads, for each formation outside the part, only what that formation registers. -/
++ /-- The law reads, for each formation outside the part, only what couples into that formation. -/
+= S2
+- /-! ## Responding through registration, derived -/
++ /-! ## Responding through the couplings, derived -/
+= S2
+- for each formation, only what it registers, the rest responds through its registration in any
++ for each formation, only what couples into it, the rest responds through its couplings in any
+= S2
+- /-- Every law of what has stood reads through registering everything. -/
++ /-- Every law of what has stood reads through the coupling of everything. -/
+= S2
+- /-! ## The registration a law reads through -/
++ /-! ## The coupling a law reads through -/
+= S2
+- /-- **A law reading through a registration is sensitive only to what that registration holds.**
+- Where a law reads, for a formation outside the part, only what it registers, every condition its
+- exchange is sensitive to is one the formation depends on or observes: it is not left out. -/
++ /-- **A law reading through a coupling is sensitive only to what that coupling holds.**
++ Where a law reads, for a formation outside the part, only what couples into it, every condition its
++ exchange is sensitive to couples into the formation, by threshold or by level: it is not left out. -/
+= S2
+- /-- So, with finitely many conditions, a law of what has stood reads through every registration
+- that observes what it is sensitive to. -/
++ /-- So, with finitely many conditions, a law of what has stood reads through every coupling
++ by level that holds what it is sensitive to. -/
+= S2
+- /-- **Every law of what has stood reads through a registration: what it is sensitive to.** With
++ /-- **Every law of what has stood reads through a coupling: what it is sensitive to.** With
+= S2
+- a registration. For any significance that, from `p`, covers every formation not beyond the part's
+- responsive reach drawn through that registration, the levels of each flow retain what has
++ a coupling. For any significance that, from `p`, covers every formation not beyond the part's
++ responsive reach drawn through that coupling, the levels of each flow retain what has
+= S2
+- /-- With finitely many conditions the registration need not be given: the comparison of two
++ /-- With finitely many conditions the coupling need not be given: the comparison of two
+= S2
+- follow a law of what has stood reading through a registration, and let the part act instead by
++ follow a law of what has stood reading through a coupling, and let the part act instead by
+= S2
+- reach drawn through the registration: the counterfactual is generated, not supplied, and no
++ reach drawn through the coupling: the counterfactual is generated, not supplied, and no
+= S2
+- /-- The second's law reads only what the second observes, its own condition. -/
++ /-- The second's law reads only what couples into the second by level, its own condition. -/

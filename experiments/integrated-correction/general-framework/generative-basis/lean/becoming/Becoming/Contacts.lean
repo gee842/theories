@@ -1,14 +1,14 @@
 import Becoming.Revision
 
 /-!
-# Contacts: registration through addressed contacts, its revision, and reference pairs
+# Contacts: lumping through addressed contacts, its revision, and reference pairs
 
 General laws of which the contact plans of `Becoming.ReferencePlan` and
-`Becoming.ContinuingRevision` are instances. A registration reads signals at a finite list of
+`Becoming.ContinuingRevision` are instances. A plan reads signals at a finite list of
 addresses (its contacts); two signals are alike where they agree at every contact. Nothing is
 assumed beyond decidable equality of addresses.
 
-* **What a plan registers.** Registration through a plan is the shared agreement on data
+* **What a plan lumps.** The lumping through a plan is the shared agreement on data
   (`Learning.Training.AgreeOn`), the data being the contacts. For any decided data, the
   selection of a signal's value at an address is through agreement on the data exactly where
   the address is in the data (`through_data_iff`), and a change of data keeps every old
@@ -20,10 +20,10 @@ assumed beyond decidable equality of addresses.
   every trace whose steps retain contacts, all selections are kept (`trace_keeps_of_retains`).
 * **Revision that reads its consequences.** A rule forming the next plan from the present plan
   and the address at which the last activity failed answers every failure, in the sense that
-  the next plan registers the failed address, exactly where its output contains that address
+  the next plan contacts the failed address, exactly where its output contains that address
   (`answers_iff`). A rule that does not read the failure (`Blind`) answers every failure
   exactly where its plan contacts every address (`blind_answers_iff`); where no list holds
-  every address (`Unlisted`, as for `Nat`), every blind rule leaves, at every plan, some
+  every address (`Unlisted`, as for `Nat`), every rule not reading the failure leaves, at every plan, some
   failure unanswered (`blind_misses`). With finitely many addresses the converse fails
   (`finite_blind_answers`).
 * **Reference pairs.** Two reference responses of a two-valued channel, used as the encoding
@@ -77,7 +77,7 @@ theorem agree_spot {D : I → Prop} {i : I} (absent : ¬ D i) :
     Learning.Training.AgreeOn D (fun _ => false) (spot i) :=
   fun j m => (spot_other (j := j) fun (e : j = i) => absent (e ▸ m)).symm
 
-/-- **What registration through data selects.** The value at `i` is selected through agreement
+/-- **What a lumping through data selects.** The value at `i` is selected through agreement
 on decided data exactly where `i` is in the data. -/
 theorem through_data_iff {D : I → Prop} (decided : ∀ i, D i ∨ ¬ D i) {i : I} :
     Learning.Training.Through (Learning.Training.AgreeOn D) (fun x : I → Bool => x i = true) ↔ D i :=
@@ -87,7 +87,7 @@ theorem through_data_iff {D : I → Prop} (decided : ∀ i, D i ∨ ¬ D i) {i :
         fun h => Bool.noConfusion h,
    fun m _ _ h => ⟨fun hx => (h _ m).symm.trans hx, fun hy => (h _ m).trans hy⟩⟩
 
-/-- **A change of data keeps the old registration exactly where it retains the old data.** -/
+/-- **A change of data keeps the old lumping exactly where it retains the old data.** -/
 theorem keeps_data_iff {S : Type u} {D : S → I → Prop} (s t : S)
     (decided : ∀ i, D t i ∨ ¬ D t i) :
     Registration.Keeps (fun s => Learning.Training.AgreeOn (V := Bool) (D s)) s t ↔
@@ -150,7 +150,7 @@ theorem trace_keeps_of_retains {S : Type u} {A : Type v} {P : Process S A} {plan
 
 /-! ## Revision that reads its consequences -/
 
-/-- The next plan registers every failed address. -/
+/-- The next plan contacts every failed address. -/
 def Answers (ρ : List I → Option I → List I) : Prop := ∀ D i, i ∈ ρ D (some i)
 
 /-- **A revision rule answers every failure exactly where its output contains the failed
@@ -164,7 +164,7 @@ theorem answers_iff (ρ : List I → Option I → List I) :
 def Blind (ρ : List I → Option I → List I) : Prop := ∀ D r, ρ D r = ρ D none
 
 omit [DecidableEq I] in
-/-- A blind rule answers every failure exactly where its plans contact every address. -/
+/-- A rule not reading the failure answers every failure exactly where its plans contact every address. -/
 theorem blind_answers_iff {ρ : List I → Option I → List I} (blind : Blind ρ) :
     Answers ρ ↔ ∀ D i, i ∈ ρ D none :=
   ⟨fun h D i => blind D (some i) ▸ h D i, fun h D i => (blind D (some i)).symm ▸ h D i⟩
@@ -172,7 +172,7 @@ theorem blind_answers_iff {ρ : List I → Option I → List I} (blind : Blind �
 /-- No list holds every address. -/
 def Unlisted (I : Type) : Prop := ∀ l : List I, ∃ i, i ∉ l
 
-/-- **A rule blind to consequences leaves, at every plan, some failure unanswered**, where no
+/-- **A rule not reading its consequences leaves, at every plan, some failure unanswered**, where no
 list holds every address. -/
 theorem blind_misses {ρ : List I → Option I → List I} (blind : Blind ρ) (unlisted : Unlisted I)
     (D : List I) :
@@ -193,7 +193,7 @@ theorem nat_unlisted : Unlisted Nat := fun l =>
   match nat_bound l with
   | ⟨b, below⟩ => ⟨b, fun h => Nat.lt_irrefl b (below b h)⟩
 
-/-- With finitely many addresses a blind rule can answer every failure. -/
+/-- With finitely many addresses a rule not reading the failure can answer every failure. -/
 theorem finite_blind_answers :
     Blind (I := Bool) (fun _ _ => [false, true]) ∧ Answers (I := Bool) (fun _ _ => [false, true]) :=
   ⟨fun _ _ => rfl, fun _ i => match i with

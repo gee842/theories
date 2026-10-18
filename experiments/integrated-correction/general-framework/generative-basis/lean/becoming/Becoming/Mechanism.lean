@@ -269,7 +269,7 @@ process on the description admits the run's steps before `t` read through `π`, 
 not taken `a` at a configuration projecting to `k` before `t`, the record fixes no outcome of
 `a` at `k`: determined processes admitting every step so read send it to any two projected
 configurations. A change of mechanism at a projected configuration not yet met does not
-register before it happens. -/
+show before it happens. -/
 theorem not_fixesThrough_of_untaken (r : Run P) {π : S → K} {t : Nat} {k : K} {a : A}
     (law : ∃ Q : Process K A, Determined Q ∧ r.StepsThrough π Q t)
     (untaken : ¬ r.TakesThrough π t k a) {κ₁ κ₂ : K} (two : κ₁ ≠ κ₂) :

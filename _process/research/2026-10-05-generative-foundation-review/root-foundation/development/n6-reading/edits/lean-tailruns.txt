@@ -1,0 +1,39 @@
+# TailRuns.lean: a Boolean or level a map takes along a run (S1); the least coupling (S2).
+### lean:TailRuns
+= S2 4
+- the least registration
++ the least coupling
+= S1
+- (`Shown.run`), and a Boolean or a level registered along a run of any process is a sequence. So
++ (`Shown.run`), and a Boolean or a level a map takes along a run of any process is a sequence. So
+= S1
+- the Boolean it registers is `false` throughout
++ the Boolean a map takes along it is `false` throughout
+= S1
+- whether the level it registers vanishes from some step on
++ whether the level a map takes along it vanishes from some step on
+= S1 2
+- the levels a run registers are indicated
++ the levels a map takes along a run are indicated
+= S1
+- every Boolean it registers, whether the
+- registration is
++ every Boolean map along it, whether the
++ Boolean is
+= S1 2
+- every Boolean it registers, the registration is
++ every Boolean map along it, the Boolean is
+= S1
+- every Boolean it registers, whether it is ever
++ every Boolean map along it, whether it is ever
+= S1
+- every level it registers, whether
++ every level map along it, whether
+= S1 9
+- whether its registration is
++ whether its Boolean is
+= S1
+- whether its
+- registration is
++ whether its
++ Boolean is

@@ -1,32 +1,32 @@
 import Becoming.Recurrence
 
 /-!
-# A registration within what it registers
+# A family of readings within what it reads
 
-What a world registers of itself is registered by parts of it. Here a registration is a family
-`ψ : A → A → B`: the member `a` registers `ψ a x` of each `x`, and the members are among what is
-registered. `same` says when two registered values are alike: equality, or for claims `Iff`.
+What a world reads of itself is read by parts of it. Here the readings are a family
+`ψ : A → A → B`: the member `a` takes the value `ψ a x` at each `x`, and the members are among
+what is read. `same` says when two values are alike: equality, or for claims `Iff`.
 Nothing about the members or the values is assumed, and nothing is decided except where a law
 names it.
 
-* **The gap.** Moving each member's registration of itself by a map `f` that leaves no value
-  alike with its image gives a reading no member registers (`gap_unsaid`). This is Lawvere's
+* **The gap.** Moving each member's value at itself by a map `f` that leaves no value
+  alike with its image gives a reading no member says (`gap_unsaid`). This is Lawvere's
   diagonal argument; `RootCoverageBoundary`, outside the core, proves it for functions and
-  predicates. A registration that registers every reading gives every map a value alike with
+  predicates. A family that says every reading gives every map a value alike with
   its image (`fixed_of_complete`).
 * **For claims, never complete.** No family of claims indexed by what it reads realizes every
   pattern of claims (`claims_incomplete`), with no decision, since a claim is never alike with
   its negation (`moves_not`). A frame whose claims are its own configurations is the instance
   (`Frame.self_incomplete`).
-* **Exactly where nothing differs.** For values compared by equality, a registration within
+* **Exactly where nothing differs.** For values compared by equality, a family within
   says every reading exactly when the values have nothing to tell apart
   (`complete_iff_alike`). One direction needs only that equality with one value be decided
   (`alike_of_complete`), and the other only a member and a value.
-* **Completion is an unfolding.** A registration that keeps what it registered and next
-  registers what it missed (`Unfolds`) is incomplete at every step (`Unfolds.incomplete`).
-  Each step's gap is registered at no step up to its own (`Unfolds.gap_new`), no two gaps are
-  alike (`Unfolds.gaps_differ`), and the registration never returns: every later step
-  registers something no earlier step did (`Unfolds.never_returns`). No finite stock of
+* **Completion is an unfolding.** A family that keeps what it said and next says what it missed
+  (`Unfolds`) is incomplete at every step (`Unfolds.incomplete`).
+  Each step's gap is said at no step up to its own (`Unfolds.gap_new`), no two gaps are
+  alike (`Unfolds.gaps_differ`), and the family never returns: every later step
+  says something no earlier step did (`Unfolds.never_returns`). No finite stock of
   readings holds what it misses (`Unfolds.unheld`, from `stock_unheld`: pairwise different
   readings are not all alike with members of a finite stock, with no decision on the values).
   Such an unfolding exists (`unfolding_unfolds`, `unfolding_open`). Like a kept history
@@ -36,12 +36,12 @@ names it.
   (`revision_never_rests`); for a claim that denies itself, revision never rests up to `Iff`
   (`negation_never_rests`); and the two-valued negation returns every two steps
   (`negation_returns`). The liar, read as a revision, is the simplest rhythm, not a
-  contradiction; `Becoming.Description` reads the same rhythm off its registrations as two
+  contradiction; `Becoming.Description` reads the same rhythm off its course as two
   states, each defined through the other (`Negation.two_states`).
 
-So, with no premise: a registration within what it registers is complete exactly where there
+So, with no premise: a family of readings within what it reads is complete exactly where there
 is nothing to tell apart. Where there is, what it misses is definite, and the next step can
-register it, but that step misses something new; completing it is an unfolding that never
+say it, but that step misses something new; completing it is an unfolding that never
 closes and never returns. Readings of this as a limit of a projection held within what it
 projects, as Zhuangzi's 一与言为二，二与一为三, as the revision theory of truth, or as a limit on
 self-prediction belong to the study, not to this module.
@@ -61,29 +61,29 @@ variable {A : Type u} {B : Type v}
 
 /-! ## The gap -/
 
-/-- Some member registers `g`: its registration is alike with `g` at every `x`. -/
+/-- Some member says `g`: its value is alike with `g`'s at every `x`. -/
 def Says (same : B → B → Prop) (ψ : A → A → B) (g : A → B) : Prop :=
   ∃ a, ∀ x, same (ψ a x) (g x)
 
-/-- What each member registers of itself, moved by `f`. -/
+/-- Each member's value at itself, moved by `f`. -/
 def gap (f : B → B) (ψ : A → A → B) (x : A) : B := f (ψ x x)
 
 /-- `f` leaves no value alike with its image. -/
 def Moves (same : B → B → Prop) (f : B → B) : Prop := ∀ b, ¬ same b (f b)
 
-/-- No member registers the gap. -/
+/-- No member says the gap. -/
 theorem gap_unsaid {same : B → B → Prop} {f : B → B} (moves : Moves same f) (ψ : A → A → B) :
     ¬ Says same ψ (gap f ψ) :=
   fun ⟨a, h⟩ => moves (ψ a a) (h a)
 
-/-- Lawvere's fixed point: where every reading is registered, every map has a value alike with
+/-- Lawvere's fixed point: where every reading is said, every map has a value alike with
 its image. -/
 theorem fixed_of_complete {same : B → B → Prop} (ψ : A → A → B) (all : ∀ g, Says same ψ g)
     (f : B → B) : ∃ b, same b (f b) :=
   match all (gap f ψ) with
   | ⟨a, h⟩ => ⟨ψ a a, h a⟩
 
-/-- Registering alike carries over to a reading alike at every point. -/
+/-- Saying carries over to a reading alike at every point. -/
 theorem Says.congr {same : B → B → Prop} (trans : ∀ b b' b'', same b b' → same b' b'' → same b b'')
     {ψ : A → A → B} {g g' : A → B} (h : Says same ψ g) (e : ∀ x, same (g x) (g' x)) :
     Says same ψ g' :=
@@ -109,7 +109,7 @@ theorem claims_gap (ψ : A → A → Prop) : ¬ Says Iff ψ (fun x => ¬ ψ x x)
 
 /-! ## Exactly where nothing differs -/
 
-/-- Where equality with `b` is decided, a registration that says everything leaves nothing to
+/-- Where equality with `b` is decided, a family that says everything leaves nothing to
 tell apart from `b`. -/
 theorem alike_of_complete (ψ : A → A → B) (all : ∀ g, Says Eq ψ g) (b b' : B)
     (decided : ∀ x : B, Decidable (x = b)) : b' = b :=
@@ -127,7 +127,7 @@ theorem complete_of_alike (a₀ : A) (b₀ : B) (alike : ∀ b b' : B, b = b') :
     ∃ ψ : A → A → B, ∀ g, Says Eq ψ g :=
   ⟨fun _ _ => b₀, fun g => ⟨a₀, fun x => alike b₀ (g x)⟩⟩
 
-/-- A registration within says every reading exactly when the values have nothing to tell
+/-- A family within says every reading exactly when the values have nothing to tell
 apart. -/
 theorem complete_iff_alike [DecidableEq B] (a₀ : A) (b₀ : B) :
     (∃ ψ : A → A → B, ∀ g, Says Eq ψ g) ↔ ∀ b b' : B, b = b' :=
@@ -136,7 +136,7 @@ theorem complete_iff_alike [DecidableEq B] (a₀ : A) (b₀ : B) :
 
 /-! ## Completion is an unfolding -/
 
-/-- A registration that keeps what it registered and next registers what it missed. -/
+/-- A family that keeps what it said and next says what it missed. -/
 structure Unfolds (same : B → B → Prop) (f : B → B) (φ : Nat → A → A → B) : Prop where
   keeps : ∀ n g, Says same (φ n) g → Says same (φ (n + 1)) g
   chases : ∀ n, Says same (φ (n + 1)) (gap f (φ n))
@@ -157,7 +157,7 @@ theorem Unfolds.incomplete (_ : Unfolds same f φ) (moves : Moves same f) (n : N
     ¬ Says same (φ n) (gap f (φ n)) :=
   gap_unsaid moves (φ n)
 
-/-- A gap is registered at no step up to its own. -/
+/-- A gap is said at no step up to its own. -/
 theorem Unfolds.gap_new (U : Unfolds same f φ) (moves : Moves same f) (m k : Nat) :
     ¬ Says same (φ m) (gap f (φ (m + k))) :=
   fun h => gap_unsaid moves (φ (m + k)) (U.keeps_on m k h)
@@ -168,7 +168,7 @@ theorem Unfolds.gaps_differ (U : Unfolds same f φ) (moves : Moves same f)
     ¬ ∀ x, same (gap f (φ m) x) (gap f (φ (m + 1 + k)) x) :=
   fun e => gap_unsaid moves (φ (m + 1 + k)) ((U.keeps_on (m + 1) k (U.chases m)).congr trans e)
 
-/-- The registration never returns: every later step registers something no earlier step did. -/
+/-- The family never returns: every later step says something no earlier step did. -/
 theorem Unfolds.never_returns (U : Unfolds same f φ) (moves : Moves same f) (n k : Nat) :
     ¬ ∀ g, Says same (φ (n + 1 + k)) g → Says same (φ n) g :=
   fun back => gap_unsaid moves (φ n) (back _ (U.keeps_on (n + 1) k (U.chases n)))
@@ -216,7 +216,7 @@ theorem stock_unheld {same : B → B → Prop} (symm : ∀ b b', same b b' → s
             | isFalse ne => ⟨i, Nat.lt_of_le_of_ne (Nat.le_of_lt_succ hi) ne, hr⟩)
     evens (fun e => odds (fun o => notBoth ⟨e, o⟩))
 
-/-- No finite stock of readings holds what an unfolding registration misses. -/
+/-- No finite stock of readings holds what an unfolding family misses. -/
 theorem Unfolds.unheld {same : B → B → Prop} {f : B → B} {φ : Nat → A → A → B}
     (U : Unfolds same f φ) (moves : Moves same f) (symm : ∀ b b', same b b' → same b' b)
     (trans : ∀ b b' b'', same b b' → same b' b'' → same b b'') (L : Nat) (r : Nat → A → B) :
@@ -231,7 +231,7 @@ theorem Unfolds.unheld {same : B → B → Prop} {f : B → B} {φ : Nat → A �
 /-! ## An unfolding exists -/
 
 /-- At step `n + 1` the member `n + 1` takes up the gap of step `n`; members not yet reached
-register `false`. -/
+take `false`. -/
 def unfolding : Nat → Nat → Nat → Bool
   | 0, _, _ => false
   | n + 1, a, x => if a = n + 1 then !(unfolding n x x) else unfolding n a x

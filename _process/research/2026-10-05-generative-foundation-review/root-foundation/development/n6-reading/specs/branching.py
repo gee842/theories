@@ -1,0 +1,18 @@
+from gen_edits import gen
+D='_process/research/2026-10-05-generative-foundation-review/root-foundation/development/n6-reading'
+L='experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming'
+gen(D+'/edits/lean-branching.txt','Branching.lean: what the claims register → what the claims tell apart (S6); a confound refuted → excluded (S5, as Testing); `carries_unregistered`, `refutes_registered` are names, in the names table.','lean:Branching',L+'/Branching.lean',[
+("S6 claims registering X → claims telling X apart; nothing registers → no claim tells apart; refuted (a model by a run) → excluded","These need equality, or claims registering\n  what equality tells apart:","These need equality, or claims telling apart\n  what equality tells apart:"),
+("S6","the class; a kept history returns up to likeness where its present does and nothing registers\n  the past (`keepFrame_alike_iff`, `keepHistory_returns_alike`), so `keepHistory_new` and\n  `keepHistory_fixes_nothing_else` need the past registered (`keepHistory_new_named`); with\n  nothing claimed, every description carries a law and no confound is refuted\n  (`carries_unregistered`, `Confound.refutes_registered`), so `carries_law_iff`,\n  `Switching.no_state_law` and `Confound.varied_refutes` need the description registered.",
+ "the class; a kept history returns up to likeness where its present does and no claim tells\n  the past apart (`keepFrame_alike_iff`, `keepHistory_returns_alike`), so `keepHistory_new` and\n  `keepHistory_fixes_nothing_else` need the past claimed (`keepHistory_new_named`); with\n  nothing claimed, every description carries a law and no confound is excluded\n  (`carries_unregistered`, `Confound.refutes_registered`), so `carries_law_iff`,\n  `Switching.no_state_law` and `Confound.varied_refutes` need the description claimed."),
+("S6 the AI's reading (D32)","those that need equality depend on\n  what is registered: an intervention on one name among alike configurations, a past nothing\n  registers, a description nothing registers. What nothing registers is neither fixed nor\n  refuted (compare the registers of `Becoming.Testing`).",
+ "those that need equality depend on\n  what is claimed: an intervention on one name among alike configurations, a past no claim tells\n  apart, a description no claim tells apart. What no claim tells apart is neither fixed nor\n  excluded (compare what couples into a formation in `Becoming.Testing`)."),
+("S6","/-- **Where nothing registers the past, kept configurations","/-- **Where no claim tells the past apart, kept configurations"),
+("S6","where its present does and nothing registers the\npast.**","where its present does and no claim tells the\npast apart.**"),
+("S6","equality, or claims that register the past. -/","equality, or claims that tell the past apart. -/"),
+("S6","/-! ### What nothing registers is not refuted -/","/-! ### What no claim tells apart is not excluded -/"),
+("S6","description, or claims that register it;","description, or claims that tell it apart;"),
+("S6","/-! ### A confound not registered is not refuted -/","/-! ### A confound not claimed is not excluded -/"),
+("S6","/-- **Refuting a model needs the outcome registered.**","/-- **Excluding a model needs the outcome claimed.**"),
+("S5","so `varied_refutes` fails up to likeness; with the outcome named by the\nclaims, determinacy up to likeness is determinacy and the refutation stands. -/","so `varied_refutes` fails up to likeness; with the outcome named by the\nclaims, determinacy up to likeness is determinacy and the exclusion stands. -/"),
+])

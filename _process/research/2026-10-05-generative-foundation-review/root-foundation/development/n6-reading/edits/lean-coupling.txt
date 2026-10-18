@@ -1,0 +1,18 @@
+# Coupling.lean: the record of a course kept (Experiment's sense); refutes a reading → excludes it (as the module's own `excludes`); registering → reading; the part's registration → its couplings.
+### lean:Coupling
+= S5
+- read every move as its own and its record never refutes it;
++ read every move as its own and its record never excludes it;
+= S1 the AI's reading
+- - Reading more, more is one's own: registering what forms a move makes the move formed through
+-   what one is.
++ - Reading more, more is one's own: reading what forms a move makes the move formed through
++   what one is.
+= S2
+- the counterfactual's act read through the part's own
+- registration (`ExchangeLaw.Through`
++ the counterfactual's act read through the part's own
++ couplings (`ExchangeLaw.Through`
+= S5
+- /-- **A recurrence with the move varied refutes the reading.** -/
++ /-- **A recurrence with the move varied excludes the reading.** -/

@@ -1,0 +1,43 @@
+# Readings.lean: a contextual system's registrations → what its contexts show (S7, as Context); a reading registers a change → reads it; Ren's quoted "belief" kept.
+### lean:Readings
+= S7
+- Along a run, the registrations of a contextual
+-   system (`Contextual`), each claim read with its context, are the relata of one world, each active
+-   exactly where it is registered with its value
++ Along a run, the claims of a contextual
++   system (`Contextual`), each read with its context, are the relata of one world, each active
++   exactly where its context shows it with its value
+= S7
+- as for the Mermin–Peres square and quantum registrations
++ as for the Mermin–Peres square and what quantum states show
+= S7
+-   the registrations glue at every configuration (`Contextual.fitsFree_iff` of `Becoming.Context`).
++   what the contexts show glues at every configuration (`Contextual.fitsFree_iff` of `Becoming.Context`).
+= S7
+- The two
+-   register a change alike exactly where
++ The two
++   read a change alike exactly where
+= S7
+- which fails for quantum
+- registrations;
++ which fails for what quantum
++ states show;
+= S7
+- active exactly where its context registers it with its
+- value.
++ active exactly where its context shows it with its
++ value.
+= S7
+- /-- A context's registration is a relatum's activity. -/
++ /-- What a context shows is a relatum's activity. -/
+= S7
+- /-- What each reading registers of the change of each condition across the step from `t`, as what
+- it rose and what it fell: standing registers the rise and the fall of the level; exchange
+- registers what the flow gave beyond what it took, and took beyond what it gave. -/
++ /-- What each reading reads of the change of each condition across the step from `t`, as what
++ it rose and what it fell: standing reads the rise and the fall of the level; exchange
++ reads what the flow gave beyond what it took, and took beyond what it gave. -/
+= S7
+- /-- **Two readings register one change alike exactly where they balance.**
++ /-- **Two readings read one change alike exactly where they balance.**

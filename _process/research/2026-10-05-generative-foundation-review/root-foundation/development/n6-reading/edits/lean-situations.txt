@@ -1,0 +1,13 @@
+# Situations.lean: what an event registers → what it shows (`seen`).
+### lean:Situations
+= S7
+- of what the event registers over the courses,
++ of what the event shows over the courses,
+= S7
+- /-- What an event registers along a course of values. -/
++ /-- What an event shows along a course of values. -/
+= S7
+- summing a reading of what the event registers over the
+- courses
++ summing a reading of what the event shows over the
++ courses

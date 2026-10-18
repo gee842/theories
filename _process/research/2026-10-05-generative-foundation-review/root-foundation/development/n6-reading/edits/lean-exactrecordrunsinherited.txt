@@ -1,0 +1,16 @@
+# ExactRecordRunsInherited.lean: a run's registered record → the prefix of its course through a map (L-prefix, as ExactRecordRuns); the evidence's target kept (KnowledgeCorrespondence's term).
+### lean:ExactRecordRunsInherited
+= L-prefix
+- # Exact readings of a run's registered record: the condition of resolution
++ # Exact readings of a run's prefix through a map: the condition of resolution
+= L-prefix
+- the record a registration
+- leaves along a run before step `t` as evidence
++ the prefix before step `t`
++ of a run's course through a map as evidence
+= L-prefix 2
+- Some reading of the record is exact
++ Some reading of the prefix is exact
+= L-prefix 2
+- domain with one record before `t` have one value at `t`
++ domain with one prefix before `t` have one value at `t`

@@ -13,7 +13,7 @@ what each theorem states.
 
 * **What the record fixes.** Along a run, relative to determinacy, the record fixes what a
   move does at a configuration where the run takes that move there (`Run.fixes_of_takes`),
-  and fixes nothing where it does not, even with every configuration registered: a determined
+  and fixes nothing where it does not, even where the whole configuration is read: a determined
   process sending the untaken move anywhere at all has the same run (`retarget`,
   `Run.not_fixes_of_untaken`). So what one's own act would have done otherwise is fixed only
   where the configuration returns and the move differs there
@@ -33,22 +33,22 @@ what each theorem states.
   (`Run.projection_returns`, an instance of `revisits_from`). The projection is a model.
   Where the step does not factor through it, the record fixes a difference between two moves
   that make no difference anywhere (`Confound.misattributes`). Moving in step with what the
-  projection leaves out, the wrong model is admitted at every step and never refuted
-  (`Confound.confounded`); varying the move against it, a later step refutes the model, since
+  projection leaves out, the wrong model is admitted at every step and never excluded
+  (`Confound.confounded`); varying the move against it, a later step excludes the model, since
   no determined process admits the steps so read (`Confound.varied_refutes`).
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).** An
 experiment is varying one's own act where the configuration, read as the experimenter reads it,
 returns. Replication is that return. A control is the claim that what differs between the occasions
 is irrelevant: the model that the step factors through the reading. Varying the act independently of
-what the reading leaves out is what can refute a wrong control; acts in step with it never refute
-it. With the registration of `Becoming.Testing` as the reading, an experiment through what registers
-is right where the unfolding factors through what registers; threshold and reach blindness are cases
+what the reading leaves out is what can exclude a wrong control; acts in step with it never exclude
+it. With what couples into a formation (`Becoming.Testing`) as the reading, an experiment through
+what couples in is right where the unfolding factors through it; threshold and reach blindness are cases
 where it does not.
 
 What is not derived: that a formation varies its acts, keeps or forgets its history, or forms a
 projection; which projection the actual unfolding factors through; and that what is fixed is
-registered by anything other than the full configuration or its projection. No ethical
+read by anything other than the full configuration or its projection. No ethical
 predicate, ranking or axiom occurs.
 -/
 
@@ -117,7 +117,7 @@ theorem stepsOf_retarget (r : Run P) {t : Nat} {s : S} {b : A} (untaken : ¬ r.T
 
 /-- **A move not taken is not fixed.** Where the run has not taken `b` at `s` before `t`, and
 the process is determined, the record up to `t` fixes no outcome of `b` at `s`, whatever
-registers: determined processes admitting every step of the run send it to any two
+is read: determined processes admitting every step of the run send it to any two
 configurations. -/
 theorem not_fixes_of_untaken (determined : Determined P) (r : Run P) {t : Nat} {s : S} {b : A}
     (untaken : ¬ r.Takes t s b) {x y : S} (two : x ≠ y) : ¬ ∃ u, r.Fixes t s b u :=
@@ -344,15 +344,15 @@ theorem misattributes (moves : Nat → Move) (first : moves 0 = left) (second : 
    second ▸ (run moves).fixesThrough_of_takes outcome (n := 1)
      (Nat.lt_of_lt_of_le (by decide) two)⟩
 
-/-- **A confound is never refuted.** Moving in step with the hidden bit, every step read
+/-- **A confound is never excluded.** Moving in step with the hidden bit, every step read
 through the outcome is admitted by the determined model in which the move decides the
-outcome, at every step: the record never refutes the wrong projection. -/
+outcome, at every step: the record never excludes the wrong projection. -/
 theorem confounded : ∀ t, (run aligned).StepsThrough outcome moveDecides t :=
   fun _ n _ => match aligned_with_hidden n with
     | .inl ⟨move, hidden⟩ => .inl ⟨move, hidden⟩
     | .inr ⟨move, hidden⟩ => .inr ⟨move, hidden⟩
 
-/-- **Varying the move against the hidden bit refutes the projection.** Moving left again at
+/-- **Varying the move against the hidden bit excludes the projection.** Moving left again at
 the fourth step, where the hidden bit differs from the first, no determined process admits
 the steps up to the fifth read through the outcome. -/
 theorem varied_refutes :

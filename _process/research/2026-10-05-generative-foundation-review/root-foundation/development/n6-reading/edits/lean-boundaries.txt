@@ -1,0 +1,5 @@
+# Boundaries.lean: feedback registers → carries (as Feedback).
+### lean:Boundaries
+= S7
+- its own feedback registers at most its influence closure
++ its own feedback carries at most its influence closure

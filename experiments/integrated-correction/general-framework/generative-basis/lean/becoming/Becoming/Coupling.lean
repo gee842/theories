@@ -100,9 +100,9 @@ qualifiers (DELEGATED-CHOICES D24).
   only where a configuration recurs with the move varied. This is the counterpart of
   `Becoming.Experiment`: an experiment varies one's own move where the configuration returns, and
   attribution sees the move vary where a configuration returns. A part that keeps its history can
-  read every move as its own and its record never refutes it; but then, by
+  read every move as its own and its record never excludes it; but then, by
   `Becoming.Recurrence`, it never returns.
-- Reading more, more is one's own: registering what forms a move makes the move formed through
+- Reading more, more is one's own: reading what forms a move makes the move formed through
   what one is.
 - Closed is not one's own: a part closed against the rest may still not form its moves.
 - Novelty in what is done needs openness or growth: moves that never settle into a cycle are
@@ -112,7 +112,7 @@ What is not derived: which cut of an actual unfolding into part and rest is apt,
 part's move is in fact its own; where a law is not determined, which successor a run takes, which
 nothing here forms; a measure of how much of a move a part forms (the measure of coupling among
 the theory chapter's further proofs); the counterfactual's act read through the part's own
-registration (`ExchangeLaw.Through` of `Becoming.Counterfactual` is stated for the formations
+couplings (`ExchangeLaw.Through` of `Becoming.Counterfactual` is stated for the formations
 outside the part); continuous time. The finite-stretch policy and the exclusion take decided
 equality as hypotheses. No ethical predicate, ranking or axiom occurs.
 -/
@@ -515,7 +515,7 @@ theorem lumped_of_new {g : I → K} (new : ∀ i j, g i = g j → i = j) (m : I 
     Learning.Lumped g m :=
   fun i j same => congrArg m (new i j same)
 
-/-- **A recurrence with the move varied refutes the reading.** -/
+/-- **A recurrence with the move varied excludes the reading.** -/
 theorem not_lumped_of_varied {g : I → K} {m : I → A} {i j : I} (same : g i = g j)
     (varied : m i ≠ m j) : ¬ Learning.Lumped g m :=
   fun formed => varied (formed i j same)

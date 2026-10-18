@@ -1,0 +1,10 @@
+# SensitivityWebs.lean: the registrations of a web → its couplings; registering what it is sensitive to → the coupling of it (as Sensitivity).
+### lean:SensitivityWebs
+= S2
+- the registrations of a web it reads through (`ExchangeLaw.Through`)
++ the couplings of a web it reads through (`ExchangeLaw.Through`)
+= S2
+- does not read through registering what it is sensitive
+-   to
++ does not read through the coupling of what it is sensitive
++   to

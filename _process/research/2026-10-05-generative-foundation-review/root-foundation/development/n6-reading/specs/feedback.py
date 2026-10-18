@@ -1,0 +1,19 @@
+from gen_edits import gen
+D='_process/research/2026-10-05-generative-foundation-review/root-foundation/development/n6-reading'
+L='experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming'
+gen(D+'/edits/lean-feedback.txt','Feedback.lean: "registers on" (shows up in) → shows in, follows, carries (S7 local senses).','lean:Feedback',L+'/Feedback.lean',[
+("S7 what registers on a formation → what its feedback carries","# Feedback and reach: what registers on a formation, and what a part reaches","# Feedback and reach: what a formation's feedback carries, and what a part reaches"),
+("S7","  support registers only the exchanges with what it depends on (`Flow.Balances.support_agrees`).\n  What a part does registers on a condition exactly through its net exchange with it","  support follows only the exchanges with what it depends on (`Flow.Balances.support_agrees`).\n  What a part does shows on a condition exactly through its net exchange with it"),
+("S7","* **What feedback registers.**","* **What feedback carries.**"),
+("S7","a formation's support registers only the parts that\n  reach it directly","a formation's support follows only the parts that\n  reach it directly"),
+("S7","  so effects through others' responses do not register in it.","  so effects through others' responses do not show in it."),
+("S7 the AI's reading (D20)","- The influence closure reads what a formation's own feedback can register, once effects pass\n  through the support and activity of others. With the rest of the exchange fixed, only the parts\n  that reach it register.\n- Feedback and a part's exchange point in opposite directions. A formation's feedback registers at\n  most its influence closure, what can affect it, while its own part reaches into its reach\n  closure, what it can affect. A center that values only what its feedback registers compares its",
+ "- The influence closure reads what a formation's own feedback can carry, once effects pass\n  through the support and activity of others. With the rest of the exchange fixed, only the parts\n  that reach it show.\n- Feedback and a part's exchange point in opposite directions. A formation's feedback carries at\n  most its influence closure, what can affect it, while its own part reaches into its reach\n  closure, what it can affect. A center that values only what its feedback carries compares its"),
+("S7","/-- A formation's support registers only the exchanges with what it depends on.","/-- A formation's support follows only the exchanges with what it depends on."),
+("S7","/-- What a part does registers on a condition exactly through its net exchange with it:","/-- What a part does shows on a condition exactly through its net exchange with it:"),
+("S7","/-- Withholding a part that only takes registers as gain or nothing:","/-- Withholding a part that only takes shows as gain or nothing:"),
+("S7","/-- Feedback registers nothing beyond the influence closure.","/-- Feedback carries nothing from beyond the influence closure."),
+("S7","closure registers nowhere within it. -/","closure shows nowhere within it. -/"),
+("S7","/-- The mediated effect does not register in the comparison","/-- The mediated effect does not show in the comparison"),
+("S7","/-- What the clearer's own support registers does not show whether","/-- What the clearer's own support carries does not show whether"),
+])

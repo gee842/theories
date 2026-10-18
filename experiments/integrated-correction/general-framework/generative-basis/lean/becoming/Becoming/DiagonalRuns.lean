@@ -2,23 +2,23 @@ import Becoming.Diagonal
 import Becoming.Branching
 
 /-!
-# Diagonal runs: completing a registration within what it registers, as a process
+# Diagonal runs: completing a family of readings within what it reads, as a process
 
-`Becoming.Diagonal` states that a registration within what it registers misses a definite
-reading, that a registration keeping what it registered and next registering what it missed
+`Becoming.Diagonal` states that a family of readings within what it reads misses a definite
+reading, that a family keeping what it said and next saying what it missed
 (`Diagonal.Unfolds`) never closes and never returns, and that revising a value by a map moving
-every value never rests. Completion is a process: its configurations are registrations
-`A → A → B`, and a step keeps every reading registered and registers the gap of the one before
+every value never rests. Completion is a process: its configurations are families
+`A → A → B`, and a step keeps every reading said and says the gap of the one before
 (`Completion`). The unfoldings are exactly its runs (`unfolds_iff`). Revision is a determined law
 (`Law.process`), every run of it its orbit (`Branching.law_run_state`). This module states the
 laws of `Becoming.Diagonal` of these runs and processes, and of frames whose claims are their own
 configurations.
 
 * **Every run of completion stays open.** At every step a run of completion misses that step's own
-  gap (`incomplete`); each step's gap is registered at no step up to its own (`gap_new`), no two
-  gaps are alike (`gaps_differ`), the run never returns: every later step registers something no
+  gap (`incomplete`); each step's gap is said at no step up to its own (`gap_new`), no two
+  gaps are alike (`gaps_differ`), the run never returns: every later step says something no
   earlier step did (`never_returns`), and no finite stock of readings holds what it misses
-  (`unheld`). A run of completion by equality comes to a registration saying every reading exactly
+  (`unheld`). A run of completion by equality comes to a family saying every reading exactly
   where the values have nothing to tell apart (`complete_iff_alike`). The two-valued unfolding of
   `Becoming.Diagonal` is a run of completion (`unfoldingRun`), open in all three ways
   (`unfoldingRun_open`).
@@ -49,8 +49,8 @@ section Completion
 
 variable {A : Type u} {B : Type v}
 
-/-- **Completion**: across a step a registration keeps every reading it registered and registers
-the gap of the registration before, its registration of itself moved by `f`. -/
+/-- **Completion**: across a step a family keeps every reading it said and says the gap of the
+family before, its value at itself moved by `f`. -/
 def Completion (same : B → B → Prop) (f : B → B) : Process (A → A → B) Unit :=
   ⟨fun φ _ φ' => (∀ g, Says same φ g → Says same φ' g) ∧ Says same φ' (gap f φ)⟩
 
@@ -72,7 +72,7 @@ variable (r : Run (Completion (A := A) same f))
 theorem incomplete (moves : Moves same f) (n : Nat) : ¬ Says same (r.state n) (gap f (r.state n)) :=
   (run_unfolds r).incomplete moves n
 
-/-- **Each step's gap is registered at no step up to its own.** -/
+/-- **Each step's gap is said at no step up to its own.** -/
 theorem gap_new (moves : Moves same f) (m k : Nat) : ¬ Says same (r.state m) (gap f (r.state (m + k))) :=
   (run_unfolds r).gap_new moves m k
 
@@ -81,7 +81,7 @@ theorem gaps_differ (moves : Moves same f) (trans : ∀ b b' b'', same b b' → 
     ¬ ∀ x, same (gap f (r.state m) x) (gap f (r.state (m + 1 + k)) x) :=
   (run_unfolds r).gaps_differ moves trans m k
 
-/-- **A run of completion never returns**: every later step registers something no earlier step
+/-- **A run of completion never returns**: every later step says something no earlier step
 did. -/
 theorem never_returns (moves : Moves same f) (n k : Nat) :
     ¬ ∀ g, Says same (r.state (n + 1 + k)) g → Says same (r.state n) g :=
@@ -95,7 +95,7 @@ theorem unheld (moves : Moves same f) (symm : ∀ b b', same b b' → same b' b)
 
 end Completion
 
-/-- **A run of completion by equality comes to a registration saying every reading exactly where
+/-- **A run of completion by equality comes to a family saying every reading exactly where
 the values have nothing to tell apart.** -/
 theorem complete_iff_alike {A : Type u} {B : Type v} [DecidableEq B] {f : B → B} (a₀ : A)
     (r : Run (Completion (A := A) (@Eq B) f)) :

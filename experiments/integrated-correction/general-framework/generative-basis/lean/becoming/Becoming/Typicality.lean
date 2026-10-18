@@ -7,7 +7,7 @@ import Becoming.Weighted
 `Becoming.Weighted` states what a weighting of steps adds to a law that is not determined: the
 sum over histories is exact, possibility is its support, and its losses are theorems. Every
 weighting there is a premise: the weights come with their laws and nothing is assumed of any
-world. A record registers one course, never a weight. This module states, with no premise, what
+world. A record shows one course, never a weight. This module states, with no premise, what
 weights counted over the courses say of the frequencies a record can show, and so where a
 record fixes weights and where it cannot.
 

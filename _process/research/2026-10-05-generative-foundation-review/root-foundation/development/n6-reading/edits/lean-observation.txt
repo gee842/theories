@@ -1,0 +1,59 @@
+# Observation.lean: "registers" → couples in / makes a difference / carries; observation as a route kept (the module's subject); the measurement's record kept (physical sense).
+### lean:Observation
+= S2 `obs` named as coupling by level; what registers → what makes a difference
+- `Becoming.Runaway` took observation as given: a formation observes a condition or does not
+- (`obs`), and what it neither depends on nor observes it does not register. `Becoming.Thresholds`
+- showed that a law reading a stock only below a threshold carries a raise of it nowhere up to the
+- break, and that what can register the distance is a reading of the stock's level before the break;
++ `Becoming.Runaway` took observation as given: a condition couples into a formation by level or
++ does not (`obs`), and what couples into it neither by threshold nor by level makes no difference
++ to it. `Becoming.Thresholds` showed that a law reading a stock only below a threshold carries a
++ raise of it nowhere up to the break, and that what can carry the distance is a reading of the
++ stock's level before the break;
+= S2
+-   law reading through a registration does (`ExchangeLaw.Through.readsInto`).
++   law reading through a coupling does (`ExchangeLaw.Through.readsInto`).
+= S2
+- * **Registering lies within the downstream.**
++ * **What a difference reaches lies within the downstream.**
+= S2
+- (`exchange_alike_off_downstream`), and for a law reading through registration only where what it
+-   registers lies downstream (`ExchangeLaw.Through.alike_off_downstream`). The stock it observes is
+-   downstream of itself; anything else it registers is downstream only by a route.
++ (`exchange_alike_off_downstream`), and for a law reading through the couplings only where what
++   couples into it lies downstream (`ExchangeLaw.Through.alike_off_downstream`). A stock coupled in
++   by level is downstream of itself; anything else coupled in is downstream only by a route.
+= S2
+-   raise registers through the record, with no threshold of the stock involved.
++   raise passes through the record, with no threshold of the stock involved.
+= S2 the AI's reading, pending Ren
+- measurement, a model or another's registration is a longer route.
++ measurement, a model or another's reading is a longer route.
+= S2
+-   the loop that registers the distance forms when the route closes,
++   the loop that carries the distance forms when the route closes,
+= S2
+- The theorems give one direction: what registers lies within the downstream, so what is not
+- downstream does not register (`apart_only_downstream`); that every downstream condition does
+- register is not stated.
++ The theorems give one direction: what makes a difference lies within the downstream, so what is
++ not downstream makes none (`apart_only_downstream`); that every downstream condition makes one is
++ not stated.
+= S2
+- /-- **A law reading through a registration reads into every condition
++ /-- **A law reading through a coupling reads into every condition
+= S2
+- /-- **A formation's exchange registers the stock only through what lies downstream of it.**
++ /-- **A formation's exchange responds to the stock only through what lies downstream of it.**
+= S2
+- /-- **Observation goes only by a route.** For a law reading through registration with a schedule covering
+- it: a formation outside the part every condition of which it registers at `t` lies off the
+- downstream of `c` exchanges alike across that step. The stock it observes lies downstream of
+- itself; anything else it registers lies downstream only by a route of readings. -/
++ /-- **Observation goes only by a route.** For a law reading through the couplings with a schedule
++ covering it: a formation outside the part, every condition coupling into it at `t` lying off the
++ downstream of `c`, exchanges alike across that step. A stock coupled in by level lies downstream
++ of itself; anything else coupled in lies downstream only by a route of readings. -/
+= S2 the measurement's record kept
+- /-- **The raise registers in the record from the step after `T`.**
++ /-- **The raise passes into the record from the step after `T`.**

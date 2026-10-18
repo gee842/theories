@@ -2,27 +2,27 @@ import Becoming.Learning
 import Becoming.Stock
 
 /-!
-# Selection when the registration itself changes
+# Selection when the lumping itself changes
 
-One Process supplies actual changes of configuration. A registration at each configuration
-reads distinctions within that unfolding; its index is not an outside selector. Reuse
+One Process supplies actual changes of configuration. A lumping at each configuration
+(`alike s`) draws distinctions within that unfolding; its index is not an outside selector. Reuse
 Learning.Training.Through (and hence Web.SelectsThrough), rather than another notion of selection.
 Every old selection survives a change exactly when new indistinguishability implies old
 indistinguishability. Along actual traces this composes. It says nothing by itself about
 whether a selected corrective action remains enabled.
 
-A history of the registrations actually made is different from applying the latest apparatus
+A history of the lumpings actually drawn is different from applying the latest apparatus
 retroactively. Keeping that history preserves distinctions; a physical memory doing so is
-an additional correspondence condition. A finite Process instance changes its registration
+an additional correspondence condition. A finite Process instance changes its lumping
 and the availability of correction through reconstruction that draws on a stock. Both opening
 and closing are executable; neither is selected inevitably. Its stock, replenishment and
 construction recipe are local supplied relations, not universal primitives.
 
-That instance is a registration process run jointly with its stock, step for step
+That instance is a link process run jointly with its stock, step for step
 (`Revising.step_iff`), so the general laws of `Becoming.Stock` apply to it: a course of
-reconstruction and correction is executable exactly where the registration admits it and the
+reconstruction and correction is executable exactly where the link process admits it and the
 stock covers it (`Revising.feasible_iff`). Discrimination, stock and enactment stay distinct: a
-covered correction can be blocked by the registration (`Revising.covered_not_enacted`), and a
+covered correction can be blocked by the link process (`Revising.covered_not_enacted`), and a
 correction the link admits can lack stock (`Revising.linked_not_enacted`).
 -/
 
@@ -67,7 +67,7 @@ namespace Registration
 
 variable {S : Type u} {A : Type v} {X : Type w} {V : Type z}
 
-/-- The new registration preserves distinctions of the old one. -/
+/-- The new lumping preserves distinctions of the old one. -/
 def Keeps (alike : S → X → X → Prop) (s t : S) : Prop :=
   ∀ x y, alike t x y → alike s x y
 
@@ -86,7 +86,7 @@ theorem keeps_iff {alike : S → X → X → Prop} {s t : S}
       ∀ select, Learning.Training.Through (alike s) select → Learning.Training.Through (alike t) select :=
   (Learning.Training.keeps_through_iff refl symm trans).symm
 
-/-- This includes the existing web registration without equating propositions by propext. -/
+/-- This includes the lumping through a web's couplings without equating propositions by propext. -/
 theorem web_keeps_iff {F C : Type} {W : Web F C} {obs obs' : F → C → Prop}
     {f : F} {t u : Nat} :
     (∀ l l', W.AlikeThroughUpTo obs' f l l' u → W.AlikeThroughUpTo obs f l l' t) ↔
@@ -109,7 +109,7 @@ theorem run_keeps {P : Process S A} (r : Run P) {alike : S → X → X → Prop}
     Keeps alike (r.state n) (r.state (n + k)) :=
   trace_keeps step_keeps (r.window_trace k n)
 
-/-- The observations actually made through this step. Reading it as a usable present record
+/-- Alike through every lumping actually drawn up to this step. Reading it as a usable present record
 requires an actual retention mechanism; this definition does not provide one. -/
 def History {P : Process S A} (r : Run P) (alike : S → X → X → Prop)
     (t : Nat) (x y : X) : Prop := ∀ n, n ≤ t → alike (r.state n) x y
@@ -125,7 +125,7 @@ theorem through_history_later {P : Process S A} (r : Run P)
     Learning.Training.Through (History r alike u) select :=
   fun x y h => through x y (history_keeps r alike le x y h)
 
-/-- Registering through a jointly retained old and new reading preserves both. -/
+/-- Lumping through a jointly retained old and new reading preserves both. -/
 theorem retained_keeps (old fresh : X → V) :
     ∀ x y, (old x, fresh x) = (old y, fresh y) → old x = old y :=
   fun _ _ h => congrArg Prod.fst h
@@ -154,7 +154,7 @@ inductive Act where
   | rebuild (mode : Bool)
   | correct
 
-/-- Replenishment supplies one unit; rebuilding consumes one and changes registration;
+/-- Replenishment supplies one unit; rebuilding consumes one and changes the link;
 correction consumes one, needs the distinguishing link, and changes the response to the
 supplied target true. This is an actual response change, not a proof that the target is right. These local laws are supplied. -/
 def P : Process State Act := ⟨fun s a t => match a with
@@ -201,7 +201,7 @@ theorem opened_choice (n : Nat) : Learning.Training.Through (alike (n, true, fal
 theorem closed_loses (n : Nat) : ¬ Learning.Training.Through (alike (n, false, false)) (fun b => b = true) :=
   fun through => Bool.noConfusion ((through true false rfl).mp rfl)
 
-/-- Old registration cannot distinguish the two reconstruction choices, although one forms
+/-- The old lumping cannot distinguish the two reconstruction choices, although one forms
 and the other removes the link. The statement concerns represented modes, not all actions. -/
 theorem old_cannot_select_rebuild (n : Nat) (select : Bool → Prop)
     (through : Learning.Training.Through (alike (n, false, false)) select) : select true ↔ select false :=
@@ -236,7 +236,7 @@ theorem closes_choice : P.step (2, true, false) (.rebuild false) (1, false, fals
    fun h => Bool.noConfusion ((correction_enabled_iff _).mp h).1⟩
 
 /-- A supplied controller reads current stock and the apparatus status: replenish when
-empty, form the missing link when supported, otherwise use it. It observes no hidden target
+empty, form the missing link when supported, otherwise use it. It reads no hidden target
 bit. Its preference for forming the link is supplied, not derived from the old reading. -/
 def choose : State → Act
   | (0, _) => .replenish
@@ -258,7 +258,7 @@ def controlled : Run P :=
   ⟨Law.orbit next (0, false, false), fun n => choose (Law.orbit next (0, false, false) n),
    fun n => chosen_step (Law.orbit next (0, false, false) n)⟩
 
-/-- The selected reconstruction forms a finer registration. Its support is exhausted there;
+/-- The selected reconstruction forms a finer lumping. Its support is exhausted there;
 ordinary replenishment then restores the actual corrective continuation, which is taken. -/
 theorem controlled_revision :
     controlled.act 1 = .rebuild true ∧ controlled.state 2 = (0, true, false) ∧
@@ -271,9 +271,9 @@ theorem controlled_revision :
   ⟨rfl, rfl, closed_loses 0, opened_choice 0, opens_without_correction.2.2,
    rfl, rfl, controlled.step 3, rfl, rfl⟩
 
-/-! ### Revising is a registration process run jointly with its stock -/
+/-! ### Revising is a link process run jointly with its stock -/
 
-/-- The registration side: the link (first) and the response (second). -/
+/-- The link side: the link (first) and the response (second). -/
 def linkProcess : Process (Bool × Bool) Act := ⟨fun s a t => match a with
   | .replenish => t = s
   | .rebuild b => t = (b, s.2)
@@ -291,7 +291,7 @@ def restore : Act → Nat
   | .rebuild _ => 0
   | .correct => 0
 
-/-- **Revising is the stock process run jointly with the registration, step for step.** -/
+/-- **Revising is the stock process run jointly with the link process, step for step.** -/
 theorem step_iff {s t : State} {a : Act} :
     P.step s a t ↔ (productProcess (Stock.process draw restore) linkProcess).step s a t := by
   obtain ⟨n, l, v⟩ := s
@@ -340,20 +340,20 @@ theorem stock_balanced_held : Stock.Balanced P (fun s => s.1) draw restore ∧
   ⟨fun _ _ _ h => (step_iff.mp h).1.2, fun _ _ _ h => (step_iff.mp h).1.1⟩
 
 /-- **Instance of `Stock.product_feasible_iff`.** A course of reconstruction and correction
-is executable exactly where the registration side admits it and the stock covers it. -/
+is executable exactly where the link side admits it and the stock covers it. -/
 theorem feasible_iff {s : State} {w : List Act} :
     Feasible P s w ↔ Stock.Covered draw restore s.1 w ∧ Feasible linkProcess s.2 w :=
   ⟨fun ⟨t, h⟩ => Stock.product_feasible_iff.mp ⟨t, trace_iff.mp h⟩,
    fun both => match Stock.product_feasible_iff.mpr both with
      | ⟨t, h⟩ => ⟨t, trace_iff.mpr h⟩⟩
 
-/-- Stock does not enact: a correction the stock covers, which the registration blocks. -/
+/-- Stock does not enact: a correction the stock covers, which the link process blocks. -/
 theorem covered_not_enacted :
     Stock.Covered draw restore 1 [.correct] ∧ ¬ Feasible P (1, false, false) [.correct] :=
   ⟨⟨Nat.le_refl 1, trivial⟩, fun ⟨_, h⟩ => match h with
     | .cons step _ => Bool.noConfusion step.1⟩
 
-/-- Registration does not enact: the link admits correction, and no stock covers it. -/
+/-- The link does not enact: the link admits correction, and no stock covers it. -/
 theorem linked_not_enacted :
     Feasible linkProcess (true, false) [.correct] ∧ ¬ Feasible P (0, true, false) [.correct] :=
   ⟨⟨(true, true), .cons ⟨rfl, rfl⟩ (.nil _)⟩, fun ⟨_, h⟩ => match h with

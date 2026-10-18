@@ -2,81 +2,83 @@ import Becoming.Testing
 import Becoming.Capture
 
 /-!
-# Selection: a selection through registration reaches exactly what registers
+# Selection: a selection through a formation's couplings reaches exactly what couples in
 
 On 12 October 2026, after the AI compared the theory with a general cause–effect system
 (`x_{t+1} = F(x_t, u_t, ε_t)`, with feedback, adaptive parameters and attractors), Ren gave the
 go: "Great, let's finish all of them". This module states, with no premise beyond what each law
-names, what a selection decided by a formation's registration can tell apart. A selection is any
-claim about level histories, read as which histories are kept, rewarded or leave more
-descendants. It is through a selector's registration up to a step when the histories the
-selector registers alike up to that step are selected alike (`Web.SelectsThrough`); a score is
-through it when they score alike (`Web.ScoresThrough`). That a selection is through
-registration is supplied, never derived.
+names, what a selection decided by what couples into a formation can tell apart. A selection is
+any claim about level histories, read as which histories are kept, rewarded or leave more
+descendants. It is through a selector's couplings up to a step when the histories alike through
+them up to that step are selected alike (`Web.SelectsThrough`); a score is through them when
+they score alike (`Web.ScoresThrough`). That a selection is through a selector's couplings is
+supplied, never derived.
 
-* **A selection reaches exactly what registers.** Two histories are selected alike by every
-  selection through `f`'s registration up to `t` exactly when `f` registers them alike up to `t`
-  (`Web.selects_alike_iff`). The belief of `Becoming.Testing` is such a selection
-  (`Web.class_selects`), so where `f` registers two histories apart, a selection through its
-  registration holds at one and fails at the other (`Web.separates`); registering alike is an
-  equivalence (`Web.AlikeThroughUpTo.trans`). A selection through registration is a claim its
-  selector tests completely, refuted exactly where it fails (`Web.SelectsThrough.excludes_iff`).
-  Admission and the levels of observed conditions are selected and scored through registration
-  (`Web.admits_through`, `Web.observed_scores`); a selection through registration stays so at
-  later steps, under more observation, under negation and under conjunction
-  (`Web.SelectsThrough.later`, `Web.SelectsThrough.widen`, `Web.SelectsThrough.not`,
-  `Web.SelectsThrough.and`), and a score's thresholds are selections
-  (`Web.ScoresThrough.atLeast`). For scores the same law holds where registering alike with the
+* **A selection reaches exactly what couples in.** Two histories are selected alike by every
+  selection through `f`'s couplings up to `t` exactly when they are alike through `f`'s couplings
+  up to `t` (`Web.selects_alike_iff`). The class alike through `f` of `Becoming.Testing` is such
+  a selection (`Web.class_selects`), so where two histories are apart through `f`'s couplings, a
+  selection through them holds at one and fails at the other (`Web.separates`); alike through the
+  couplings is an equivalence (`Web.AlikeThroughUpTo.trans`). A selection through a selector's
+  couplings is a claim the selector tests completely, excluded exactly where it fails
+  (`Web.SelectsThrough.excludes_iff`). Admission and the levels of conditions coupled in by level
+  are selected and scored through the couplings (`Web.admits_through`, `Web.observed_scores`); a
+  selection through the couplings stays so at later steps, under more coupling by level, under
+  negation and under conjunction (`Web.SelectsThrough.later`, `Web.SelectsThrough.widen`,
+  `Web.SelectsThrough.not`, `Web.SelectsThrough.and`), and a score's thresholds are selections
+  (`Web.ScoresThrough.atLeast`). For scores the same law holds where being alike with the
   first history is decidable, a hypothesis named at that point (`Web.scores_alike_iff`).
-* **Groups.** A selection through a group's pooled registration is one that selects alike the
-  histories every member registers alike (`Web.SelectsThroughAll`); the same law holds of it
-  (`Web.selects_alike_all_iff`, `Web.separates_all`). A member's selection is a group selection
-  (`Web.SelectsThrough.all`), and group selections are closed under conjunction
+* **Groups.** A selection through a group's pooled couplings is one that selects alike the
+  histories alike through every member's couplings (`Web.SelectsThroughAll`); the same law holds
+  of it (`Web.selects_alike_all_iff`, `Web.separates_all`). A member's selection is a group
+  selection (`Web.SelectsThrough.all`), and group selections are closed under conjunction
   (`Web.SelectsThroughAll.and`).
-* **Blind beyond the registration closure.** With the rest of the exchange fixed, every
-  selection and every score through the registration of a formation within `f`'s registration
+* **Blind beyond the coupling closure.** With the rest of the exchange fixed, every
+  selection and every score through the couplings of a formation within `f`'s coupling
   closure selects the levels with and without a part beyond the closure alike
   (`Flow.unselected_beyond_coupling`, `Flow.unscored_beyond_coupling`); so does every
-  selection through the pooled registration of a group within the closure
+  selection through the pooled couplings of a group within the closure
   (`Flow.unselected_beyond_coupling_all`). Where the members respond, under the hypotheses of
   `Flow.alike_within_coupling`, it selects the two flows alike
   (`Flow.unselected_beyond_coupling_responsive`).
 * **The gap.** In `Clearing` the dweller lies within the clearer's reach closure and beyond its
-  registration closure, and the clearer does not register the habitat
-  (`Clearing.dweller_within_reach`). Every selection through the clearer's registration selects
+  coupling closure, and the habitat does not couple into the clearer
+  (`Clearing.dweller_within_reach`). Every selection through the clearer's couplings selects
   the cleared and the spared world alike at every step, while the dweller ends in the one and
-  not the other; that the dweller ends is selected through the clearer's registration at no step
+  not the other; that the dweller ends is selected through the clearer's couplings at no step
   (`Clearing.unselected`). The dweller's admission at the third step is a selection through the
-  dweller's registration and separates the two worlds (`Clearing.selected_by_dweller`); the
-  admission of both at the third step is a selection through the pooled registration of the
+  dweller's couplings and separates the two worlds (`Clearing.selected_by_dweller`); the
+  admission of both at the third step is a selection through the pooled couplings of the
   clearer and the dweller that separates them and is through neither alone
   (`Clearing.selected_pooled`).
 * **Selection favours reaching beyond.** In `Diversion` a taker gauges a store. In the diverting
   flow it takes one unit from a source a dweller depends on and gives it to the store; in the
   undiverted flow nothing is exchanged. The selection that the store stands at least one at the
-  second step is through the taker's registration, holds in the diverting flow and fails in the
-  undiverted one, while the diverting flow reaches the dweller, beyond the taker's registration
-  closure, and ends it (`Diversion.favours`). Every selection through the taker's registration
+  second step is through the taker's couplings, holds in the diverting flow and fails in the
+  undiverted one, while the diverting flow reaches the dweller, beyond the taker's coupling
+  closure, and ends it (`Diversion.favours`). Every selection through the taker's couplings
   selects the diverting flow alike with a supplying flow, which raises the store without drawing
   on the source and reaches nothing beyond the taker (`Diversion.blind_to_source`).
 * **Share among descendants.** Where a selection gives each parent whose history it holds for at
   least `a` offspring and each other parent at most `b < a`, the share of the parents it holds for
   rises among the offspring (`share_rises_through`): `share_rises` of `Becoming.Capture`, the
   selection supplying which parents are carriers.
-* **Through a model of the options.** A selector tells options apart only through its model of
-  them: an entry for each option, of any kind; options given one entry are tied, lumped together
-  by the model. A selection is through the model when exchanging two options' entries exchanges
-  what it selects (`Relabel.Equivariant`). Two options are selected alike by every such selection
-  exactly when the model ties them (`Relabel.selected_alike_iff`), as a selection through
-  registration reaches exactly what registers. One selecting at most one option singles out
-  exactly the options whose entry no other option shares (`Relabel.singled_iff_untied`, the
-  selection `Relabel.Alone`), and at a full tie of two or more options it selects none
-  (`Relabel.Equivariant.none_of_full_tie`). A valuation through the model, such as a weight on
-  each option, gives tied options equal values (`Relabel.EquivariantValue.tied`,
-  `Relabel.valued_alike_iff`), and a choice of one option chooses no tied option and withholds at
-  a full tie (`Relabel.EquivariantChoice.untied`, `Relabel.EquivariantChoice.withholds_of_full_tie`).
-  Exchanging two options tells them apart: their equality is decided, a condition each statement
-  names. The model is a lumping (`Lumped` of `Becoming.Learning`), and a selection through it is
+* **Through a map of the alternatives.** A selector tells alternatives apart only through its map
+  of them: an entry for each alternative, of any kind; alternatives given one entry are tied,
+  lumped together by the map. A selection factors through the map when exchanging two
+  alternatives' entries exchanges what it selects (`Relabel.Equivariant`). Two alternatives are
+  selected alike by every such selection exactly when the map ties them
+  (`Relabel.selected_alike_iff`), as a selection through a formation's couplings reaches exactly
+  what couples in. One selecting at most one alternative singles out exactly the alternatives
+  whose entry no other alternative shares (`Relabel.singled_iff_untied`, the selection
+  `Relabel.Alone`), and at a full tie of two or more alternatives it selects none
+  (`Relabel.Equivariant.none_of_full_tie`). A valuation through the map, such as a weight on
+  each alternative, gives tied alternatives equal values (`Relabel.EquivariantValue.tied`,
+  `Relabel.valued_alike_iff`), and a choice of one alternative chooses no tied alternative and
+  withholds at a full tie (`Relabel.EquivariantChoice.untied`,
+  `Relabel.EquivariantChoice.withholds_of_full_tie`). Exchanging two alternatives tells them
+  apart: their equality is decided, a condition each statement names. The map is a lumping
+  (`Lumped` of `Becoming.Learning`), and a selection through it is
   right about what matters only where what matters goes alike across the lumping
   (`Learning.selects_right_through`, `Learning.selects_not_right_of_parted`). Reading (the AI's
   reading of Ren's correction of 16 October 2026, which Ren approved the same day): what a model
@@ -85,57 +87,58 @@ registration is supplied, never derived.
   gives distinctions, not their relevance.
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
-- Any selection decided by what a selector registers (keeping, rewarding, reproducing,
-  training) reaches exactly what that selector registers. It is blind to whatever a candidate's
-  part does beyond the selector's registration closure, however far the candidate's reach
-  closure extends. The gap is the reach closure less the registration closure.
-- The gap closes only through relations: dependence, observation, or another's registration
-  pooled, as the dweller's is in `Clearing`. Pooling with formations within the closure does not
+- Any selection decided by what couples into a selector (keeping, rewarding, reproducing,
+  training) reaches exactly what couples into that selector. It is blind to whatever a
+  candidate's part does beyond the selector's coupling closure, however far the candidate's
+  reach closure extends. The gap is the reach closure less the coupling closure.
+- The gap closes only through relations: dependence, coupling by level, or another's couplings
+  pooled, as the dweller's are in `Clearing`. Pooling with formations within the closure does not
   close it (`Flow.unselected_beyond_coupling_all`).
-- Where reaching beyond raises what registers, selection favours it (`Diversion`), and cannot
-  tell it from raising what registers without reaching beyond. With `share_rises` the share of
+- Where reaching beyond raises what couples in, selection favours it (`Diversion`), and cannot
+  tell it from raising what couples in without reaching beyond. With `share_rises` the share of
   what reaches beyond rises among descendants while the world is open; enclosed, the selection
   stops with the descent (`Flow.descent_exhausted` of `Becoming.Capture`).
-- Read for AI training, a reward process is a selector: training reaches only what the reward
-  registers. The AI connects this with Ren's phrase from an earlier paper, "capability outruns
-  correction": what is selected through a registration can reach beyond it, and correction by
-  that registration does not reach there.
+- Read for AI training, a reward process is a selector: training reaches only what couples into
+  the reward. The AI connects this with Ren's phrase from an earlier paper, "capability outruns
+  correction": what is selected through a selector's couplings can reach beyond them, and
+  correction through those couplings does not reach there.
 
-What is not derived: who selects, what the selector registers, that a selection is through
-registration at all (supplied as `Web.SelectsThrough`), that offspring follow the selection,
-that reaching beyond is chosen, that a selection is through a given model, and how an option it
-singles out is found (a search over listed options). The law for scores in the converse direction takes the
-decidability of registering alike as a hypothesis. No ethical predicate, ranking or axiom occurs.
+What is not derived: who selects, what couples into the selector, that a selection is through
+its couplings at all (supplied as `Web.SelectsThrough`), that offspring follow the selection,
+that reaching beyond is chosen, that a selection factors through a given map, and how an
+alternative it singles out is found (a search over listed alternatives). The law for scores in the
+converse direction takes the decidability of being alike through the couplings as a hypothesis.
+No ethical predicate, ranking or axiom occurs.
 
-**Classical sources.** A selection through a model of the options that commutes with relabelling
-(`Relabel.Equivariant`) is neutral in the sense of May (1952): it treats the options alike under
-every permutation that the model does not tell apart, so that at a full tie it selects none, as
-May's neutrality forces a tie between alternatives that are interchanged.
+**Classical sources.** A selection through a map of the alternatives that commutes with
+relabelling (`Relabel.Equivariant`) is neutral in the sense of May (1952): it treats the
+alternatives alike under every permutation that the map does not tell apart, so that at a full tie
+it selects none, as May's neutrality forces a tie between alternatives that are interchanged.
 -/
 
 namespace Becoming
 
 variable {F C : Type}
 
-/-! ## Selection through registration -/
+/-! ## Selection through a formation's couplings -/
 
 namespace Web
 
-/-- A selection is through `f`'s registration up to `t`: histories `f` registers alike up to `t`
-are selected alike. A selection is any claim about level histories: which are kept, rewarded or
-leave more descendants. -/
+/-- A selection is through `f`'s couplings up to `t`: histories alike through `f`'s couplings up
+to `t` are selected alike. A selection is any claim about level histories: which are kept,
+rewarded or leave more descendants. -/
 def SelectsThrough (W : Web F C) (obs : F → C → Prop) (f : F) (t : Nat)
     (select : (Nat → C → Nat) → Prop) : Prop :=
   ∀ l l', W.AlikeThroughUpTo obs f l l' t → (select l ↔ select l')
 
-/-- A score is through `f`'s registration up to `t`: histories `f` registers alike up to `t`
-score alike. -/
+/-- A score is through `f`'s couplings up to `t`: histories alike through them up to `t` score
+alike. -/
 def ScoresThrough (W : Web F C) (obs : F → C → Prop) (f : F) (t : Nat)
     (score : (Nat → C → Nat) → Nat) : Prop :=
   ∀ l l', W.AlikeThroughUpTo obs f l l' t → score l = score l'
 
-/-- A selection is through a group's pooled registration up to `t`: histories every member
-registers alike up to `t` are selected alike. -/
+/-- A selection is through a group's pooled couplings up to `t`: histories alike through every
+member's couplings up to `t` are selected alike. -/
 def SelectsThroughAll (W : Web F C) (obs : F → C → Prop) (group : F → Prop) (t : Nat)
     (select : (Nat → C → Nat) → Prop) : Prop :=
   ∀ l l', W.AlikeThroughAll obs group l l' t → (select l ↔ select l')
@@ -144,94 +147,94 @@ variable {W : Web F C} {obs obs' : F → C → Prop} {g : F} {group : F → Prop
   {l l' l'' : Nat → C → Nat} {t : Nat} {select select' : (Nat → C → Nat) → Prop}
   {score : (Nat → C → Nat) → Nat}
 
-/-- Registering alike at a step is transitive. -/
+/-- Alike through the couplings at a step is transitive. -/
 theorem AlikeThrough.trans (first : W.AlikeThrough obs g l l' t)
     (second : W.AlikeThrough obs g l' l'' t) : W.AlikeThrough obs g l l'' t :=
   ⟨first.1.trans second.1, fun c observed => (first.2 c observed).trans (second.2 c observed)⟩
 
-/-- Registering alike up to a step is transitive: with `AlikeThrough.refl` and
+/-- Alike through the couplings up to a step is transitive: with `AlikeThrough.refl` and
 `AlikeThroughUpTo.symm`, an equivalence. -/
 theorem AlikeThroughUpTo.trans (first : W.AlikeThroughUpTo obs g l l' t)
     (second : W.AlikeThroughUpTo obs g l' l'' t) : W.AlikeThroughUpTo obs g l l'' t :=
   fun s le => (first s le).trans (second s le)
 
-/-- Every member registers a history alike with itself. -/
+/-- A history is alike with itself through every member's couplings. -/
 theorem AlikeThroughAll.refl (t : Nat) : W.AlikeThroughAll obs group l l t :=
   fun _ _ s _ => AlikeThrough.refl s
 
-/-- Registering alike in every member is symmetric. -/
+/-- Alike through every member's couplings is symmetric. -/
 theorem AlikeThroughAll.symm (alike : W.AlikeThroughAll obs group l l' t) :
     W.AlikeThroughAll obs group l' l t :=
   fun g member => (alike g member).symm
 
-/-- Registering alike in every member is transitive. -/
+/-- Alike through every member's couplings is transitive. -/
 theorem AlikeThroughAll.trans (first : W.AlikeThroughAll obs group l l' t)
     (second : W.AlikeThroughAll obs group l' l'' t) : W.AlikeThroughAll obs group l l'' t :=
   fun g member => (first g member).trans (second g member)
 
-/-- A formation's belief, the histories it registers alike with `l`, is a selection through its
-registration. -/
+/-- The class alike through a formation, the histories alike with `l` through its couplings, is
+a selection through its couplings. -/
 theorem class_selects : W.SelectsThrough obs g t (W.ClassThrough obs g l t) :=
   fun _ _ alike => ⟨fun first => first.trans alike, fun second => second.trans alike.symm⟩
 
-/-- **A selection reaches exactly what registers.** Two histories are selected alike by every
-selection through `g`'s registration up to `t` exactly when `g` registers them alike up to `t`. -/
+/-- **A selection reaches exactly what couples in.** Two histories are selected alike by every
+selection through `g`'s couplings up to `t` exactly when they are alike through `g`'s couplings
+up to `t`. -/
 theorem selects_alike_iff :
     (∀ select, W.SelectsThrough obs g t select → (select l ↔ select l')) ↔
       W.AlikeThroughUpTo obs g l l' t :=
   ⟨fun all => (all (W.ClassThrough obs g l t) class_selects).mp fun s _ => AlikeThrough.refl s,
    fun alike _ through => through l l' alike⟩
 
-/-- **What registers apart is separated.** Where `g` does not register two histories alike up to
-`t`, a selection through its registration, its belief, holds at the first and fails at the
-second. -/
+/-- **What is apart through the couplings is separated.** Where two histories are not alike
+through `g`'s couplings up to `t`, a selection through them, the class alike through `g`, holds
+at the first and fails at the second. -/
 theorem separates (differ : ¬ W.AlikeThroughUpTo obs g l l' t) :
     ∃ select, W.SelectsThrough obs g t select ∧ select l ∧ ¬ select l' :=
   ⟨W.ClassThrough obs g l t, class_selects, fun s _ => AlikeThrough.refl s, differ⟩
 
-/-- **A selection through registration is tested completely.** Its selector refutes it exactly
-where it fails. -/
+/-- **A selection through a selector's couplings is tested completely.** It is excluded at its
+selector exactly where it fails. -/
 theorem SelectsThrough.excludes_iff (through : W.SelectsThrough obs g t select) :
     W.Excludes obs select g l t ↔ ¬ select l :=
   ⟨Excludes.not_meets, fun fails l' meets alike => fails ((through l l' alike).mpr meets)⟩
 
-/-- Admission at a step up to `t` is selected through registration up to `t`. -/
+/-- Admission at a step up to `t` is selected through the couplings up to `t`. -/
 theorem admits_through {s : Nat} (le : s ≤ t) :
     W.SelectsThrough obs g t (fun l => W.Admits (l s) s g) :=
   fun _ _ alike => (alike s le).1
 
-/-- The level of an observed condition at a step up to `t` is scored through registration up to
-`t`. -/
+/-- The level of a condition coupled in by level, at a step up to `t`, is scored through the
+couplings up to `t`. -/
 theorem observed_scores {c : C} {s : Nat} (observed : obs g c) (le : s ≤ t) :
     W.ScoresThrough obs g t (fun l => l s c) :=
   fun _ _ alike => (alike s le).2 c observed
 
-/-- A score's threshold is a selection through the same registration. -/
+/-- A score's threshold is a selection through the same couplings. -/
 theorem ScoresThrough.atLeast (through : W.ScoresThrough obs g t score) (k : Nat) :
     W.SelectsThrough obs g t (fun l => k ≤ score l) :=
   fun l l' alike =>
     ⟨fun le => Nat.le_trans le (Nat.le_of_eq (through l l' alike)),
      fun le => Nat.le_trans le (Nat.le_of_eq (through l l' alike).symm)⟩
 
-/-- A selection through registration up to a step is through registration up to every later
-step. -/
+/-- A selection through the couplings up to a step is through them up to every later step. -/
 theorem SelectsThrough.later {s : Nat} (through : W.SelectsThrough obs g s select) (le : s ≤ t) :
     W.SelectsThrough obs g t select :=
   fun l l' alike => through l l' (alike.earlier le)
 
-/-- A selection through registration stays so under more observation. -/
+/-- A selection through the couplings stays so under more coupling by level. -/
 theorem SelectsThrough.widen (larger : ∀ g c, obs g c → obs' g c)
     (through : W.SelectsThrough obs g t select) : W.SelectsThrough obs' g t select :=
   fun l l' alike => through l l' (alike.of_obs larger)
 
-/-- What a selection through registration does not select is selected through it. -/
+/-- What a selection through the couplings does not select is selected through them. -/
 theorem SelectsThrough.not (through : W.SelectsThrough obs g t select) :
     W.SelectsThrough obs g t (fun l => ¬ select l) :=
   fun l l' alike =>
     ⟨fun fails holds => fails ((through l l' alike).mpr holds),
      fun fails holds => fails ((through l l' alike).mp holds)⟩
 
-/-- Two selections through one registration select jointly through it. -/
+/-- Two selections through one formation's couplings select jointly through them. -/
 theorem SelectsThrough.and (first : W.SelectsThrough obs g t select)
     (second : W.SelectsThrough obs g t select') :
     W.SelectsThrough obs g t (fun l => select l ∧ select' l) :=
@@ -239,10 +242,10 @@ theorem SelectsThrough.and (first : W.SelectsThrough obs g t select)
     ⟨fun ⟨one, two⟩ => ⟨(first l l' alike).mp one, (second l l' alike).mp two⟩,
      fun ⟨one, two⟩ => ⟨(first l l' alike).mpr one, (second l l' alike).mpr two⟩⟩
 
-/-- **Scores reach exactly what registers, where registering alike is decidable.** Given, for
-each history, whether `g` registers it alike with `l` up to `t`, two histories are scored alike
-by every score through `g`'s registration exactly when `g` registers them alike: the mark of
-the belief is such a score. -/
+/-- **Scores reach exactly what couples in, where being alike through the couplings is
+decidable.** Given, for each history, whether it is alike with `l` through `g`'s couplings up to
+`t`, two histories are scored alike by every score through `g`'s couplings exactly when they are
+alike through them: the mark of the class alike through `g` is such a score. -/
 theorem scores_alike_iff (decided : ∀ m, Decidable (W.AlikeThroughUpTo obs g l m t)) :
     (∀ score, W.ScoresThrough obs g t score → score l = score l') ↔
       W.AlikeThroughUpTo obs g l l' t :=
@@ -267,7 +270,7 @@ theorem SelectsThrough.all (member : group g) (through : W.SelectsThrough obs g 
     W.SelectsThroughAll obs group t select :=
   fun l l' alike => through l l' (alike g member)
 
-/-- Two group selections select jointly through the pooled registration. -/
+/-- Two group selections select jointly through the pooled couplings. -/
 theorem SelectsThroughAll.and (first : W.SelectsThroughAll obs group t select)
     (second : W.SelectsThroughAll obs group t select') :
     W.SelectsThroughAll obs group t (fun l => select l ∧ select' l) :=
@@ -275,9 +278,9 @@ theorem SelectsThroughAll.and (first : W.SelectsThroughAll obs group t select)
     ⟨fun ⟨one, two⟩ => ⟨(first l l' alike).mp one, (second l l' alike).mp two⟩,
      fun ⟨one, two⟩ => ⟨(first l l' alike).mpr one, (second l l' alike).mpr two⟩⟩
 
-/-- **A pooled selection reaches exactly what the pool registers.** Two histories are selected
-alike by every selection through a group's pooled registration up to `t` exactly when every
-member registers them alike up to `t`. -/
+/-- **A pooled selection reaches exactly what couples into the pool.** Two histories are
+selected alike by every selection through a group's pooled couplings up to `t` exactly when they
+are alike through every member's couplings up to `t`. -/
 theorem selects_alike_all_iff :
     (∀ select, W.SelectsThroughAll obs group t select → (select l ↔ select l')) ↔
       W.AlikeThroughAll obs group l l' t :=
@@ -286,8 +289,8 @@ theorem selects_alike_all_iff :
       (AlikeThroughAll.refl t),
    fun alike _ through => through l l' alike⟩
 
-/-- Where the members do not all register two histories alike up to `t`, a selection through the
-pooled registration holds at the first and fails at the second. -/
+/-- Where two histories are not alike through every member's couplings up to `t`, a selection
+through the pooled couplings holds at the first and fails at the second. -/
 theorem separates_all (differ : ¬ W.AlikeThroughAll obs group l l' t) :
     ∃ select, W.SelectsThroughAll obs group t select ∧ select l ∧ ¬ select l' :=
   ⟨fun m => W.AlikeThroughAll obs group l m t,
@@ -296,16 +299,16 @@ theorem separates_all (differ : ¬ W.AlikeThroughAll obs group l l' t) :
 
 end Web
 
-/-! ## Blind beyond the registration closure -/
+/-! ## Blind beyond the coupling closure -/
 
 namespace Flow
 
 variable {L L' : Flow F C} {W W' : Web F C} {obs : F → C → Prop} {part : F → Bool}
   {select : (Nat → C → Nat) → Prop} {score : (Nat → C → Nat) → Nat}
 
-/-- **Selection is blind beyond the registration closure.** With the rest of the exchange fixed,
-where every member of a part lies beyond `f`'s registration closure, every selection through the
-registration of a formation within the closure, `f` among them, selects the levels with and
+/-- **Selection is blind beyond the coupling closure.** With the rest of the exchange fixed,
+where every member of a part lies beyond `f`'s coupling closure, every selection through the
+couplings of a formation within the closure, `f` among them, selects the levels with and
 without the part alike: an instance of `uncoupled_beyond_coupling`. -/
 theorem unselected_beyond_coupling {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
@@ -316,7 +319,7 @@ theorem unselected_beyond_coupling {l : Nat → C → Nat}
     (through : W.SelectsThrough obs g t select) : select W.level ↔ select l :=
   through _ _ fun s _ => uncoupled_beyond_coupling without balanced beyond s g within
 
-/-- Every score through the registration of a formation within the closure scores the levels
+/-- Every score through the couplings of a formation within the closure scores the levels
 with and without a part beyond it alike. -/
 theorem unscored_beyond_coupling {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
@@ -327,8 +330,8 @@ theorem unscored_beyond_coupling {l : Nat → C → Nat}
     (through : W.ScoresThrough obs g t score) : score W.level = score l :=
   through _ _ fun s _ => uncoupled_beyond_coupling without balanced beyond s g within
 
-/-- **Pooling within the closure stays blind.** Every selection through the pooled registration
-of a group whose members lie within `f`'s registration closure selects the levels with and
+/-- **Pooling within the closure stays blind.** Every selection through the pooled couplings
+of a group whose members lie within `f`'s coupling closure selects the levels with and
 without a part beyond the closure alike. -/
 theorem unselected_beyond_coupling_all {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
@@ -341,8 +344,8 @@ theorem unselected_beyond_coupling_all {l : Nat → C → Nat}
     uncoupled_beyond_coupling without balanced beyond s g (members g member)
 
 /-- **Blind beyond the closure where the members respond.** Under the hypotheses of
-`alike_within_coupling`, every selection through the registration of a formation within
-`f`'s registration closure, drawn through both flows, selects the two flows' levels alike. -/
+`alike_within_coupling`, every selection through the couplings of a formation within
+`f`'s coupling closure, drawn through both flows, selects the two flows' levels alike. -/
 theorem unselected_beyond_coupling_responsive {f : F}
     (balanced : ∀ t g c, WithinClosure (L.CoupledFromEither W L' obs) f g →
       W.CoupledInto obs g c → L.BalancesOn W [c] t)
@@ -372,8 +375,8 @@ variable {α : Type}
 for at least `a` offspring and each other parent at most `b < a`. Where it holds for every parent
 of `ms` and for none of `es`, both present, the parents of `ms` stand to those of `es` strictly
 less than their offspring do: `share_rises`, the selection supplying the carriers. Where the
-selection is through a selector's registration, parents whose histories it registers alike are
-carriers together (`Web.SelectsThrough`), whatever their parts do beyond its registration
+selection is through a selector's couplings, parents whose histories are alike through them are
+carriers together (`Web.SelectsThrough`), whatever their parts do beyond its coupling
 closure. -/
 theorem share_rises_through {history : α → Nat → C → Nat} {kids : α → List α}
     {select : (Nat → C → Nat) → Prop} {ms es : List α} {a b : Nat}
@@ -387,16 +390,17 @@ theorem share_rises_through {history : α → Nat → C → Nat} {kids : α → 
 
 end Share
 
-/-! ## Selection through a model of the options
+/-! ## Selection through a map of the alternatives
 
-A selector tells options apart only through its model of them: an entry per option, of any kind,
-the options given one entry being tied, lumped together by the model (`Lumped` of
-`Becoming.Learning`). A selection among them is through the model when exchanging two options'
-entries exchanges what it selects (`Relabel.Equivariant`); a valuation of the options, such as a
-weight on each, is through the model when it exchanges their values (`Relabel.EquivariantValue`);
-a choice of at most one option is when it exchanges the choice (`Relabel.EquivariantChoice`). As a
-selection through registration reaches exactly what registers (`Web.selects_alike_iff`), a
-selection through a model separates exactly what the model separates. -/
+A selector tells alternatives apart only through its map of them: an entry per alternative, of any
+kind, the alternatives given one entry being tied, lumped together by the map (`Lumped` of
+`Becoming.Learning`). A selection among them factors through the map when exchanging two
+alternatives' entries exchanges what it selects (`Relabel.Equivariant`); a valuation of the
+alternatives, such as a weight on each, factors through the map when it exchanges their values
+(`Relabel.EquivariantValue`); a choice of at most one alternative does when it exchanges the
+choice (`Relabel.EquivariantChoice`). As a selection through a formation's couplings reaches
+exactly what couples in (`Web.selects_alike_iff`), a selection through a map separates exactly
+what the map separates. -/
 
 namespace Relabel
 
@@ -404,7 +408,7 @@ universe u v w
 
 variable {K : Type u} {V : Type v} [DecidableEq K]
 
-/-- Exchange the options `a` and `b`. -/
+/-- Exchange the alternatives `a` and `b`. -/
 def swap (a b k : K) : K := if k = a then b else if k = b then a else k
 
 theorem swap_left (a b : K) : swap a b a = b := if_pos rfl
@@ -419,7 +423,7 @@ theorem swap_right (a b : K) : swap a b b = a :=
 theorem swap_other (a b : K) {k : K} (not_a : k ≠ a) (not_b : k ≠ b) : swap a b k = k :=
   (if_neg not_a).trans (if_neg not_b)
 
-/-- Exchanging twice returns every option. -/
+/-- Exchanging twice returns every alternative. -/
 theorem swap_swap (a b k : K) : swap a b (swap a b k) = k :=
   match decEq k a with
   | isTrue at_a =>
@@ -435,24 +439,24 @@ theorem swap_swap (a b k : K) : swap a b (swap a b k) = k :=
 theorem swap_inj (a b : K) {x y : K} (same : swap a b x = swap a b y) : x = y :=
   (swap_swap a b x).symm.trans ((congrArg (swap a b) same).trans (swap_swap a b y))
 
-/-- A selection is through the model: where `r'` is `r` with the entries of `a` and `b`
+/-- A selection factors through the map: where `r'` is `r` with the entries of `a` and `b`
 exchanged, it selects at `r'` what it selects at `r`, exchanged. -/
 def Equivariant (select : (K → V) → K → Prop) : Prop :=
   ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → ∀ i, select r' i ↔ select r (swap a b i)
 
-/-- A valuation of the options is through the model: exchanging two options' entries exchanges
-their values. -/
+/-- A valuation of the alternatives factors through the map: exchanging two alternatives' entries
+exchanges their values. -/
 def EquivariantValue {W : Type w} (value : (K → V) → K → W) : Prop :=
   ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → ∀ i, value r' i = value r (swap a b i)
 
-/-- A choice of at most one option is through the model: exchanging two options' entries
-exchanges the choice. -/
+/-- A choice of at most one alternative factors through the map: exchanging two alternatives'
+entries exchanges the choice. -/
 def EquivariantChoice (rule : (K → V) → Option K) : Prop :=
   ∀ r r' a b, (∀ k, r' k = r (swap a b k)) → rule r' = (rule r).map (swap a b)
 
 variable {r : K → V} {j k : K}
 
-/-- Exchanging two tied options leaves the model as it was. -/
+/-- Exchanging two tied alternatives leaves the map as it was. -/
 theorem fixed_of_tied (tie : r j = r k) : ∀ i, r i = r (swap j k i) := fun i =>
   match decEq i j with
   | isTrue at_j =>
@@ -464,13 +468,13 @@ theorem fixed_of_tied (tie : r j = r k) : ∀ i, r i = r (swap j k i) := fun i =
         (congrArg (fun x => r (swap j k x)) at_k.symm)))
     | isFalse not_k => congrArg r (swap_other j k not_j not_k).symm
 
-/-- **Tied options are selected alike.** -/
+/-- **Tied alternatives are selected alike.** -/
 theorem Equivariant.tied {select : (K → V) → K → Prop} (equivariant : Equivariant select)
     (tie : r j = r k) : select r j ↔ select r k :=
   (equivariant r r j k (fixed_of_tied tie) j).trans (iff_of_eq (congrArg (select r) (swap_left j k)))
 
-/-- **A selection through a model separates exactly what the model separates.** Two options are
-selected alike by every selection through the model exactly when the model ties them. -/
+/-- **A selection through a map separates exactly what the map separates.** Two alternatives are
+selected alike by every selection through the map exactly when the map ties them. -/
 theorem selected_alike_iff :
     (∀ select : (K → V) → K → Prop, Equivariant select → (select r j ↔ select r k)) ↔ r j = r k :=
   ⟨fun all => ((all (fun r' i => r' i = r j) (fun _ _ _ _ relabel i =>
@@ -478,15 +482,15 @@ theorem selected_alike_iff :
       rfl).symm,
    fun tie _ equivariant => equivariant.tied tie⟩
 
-/-- **What is singled out is untied.** A selection through the model that selects at most one
-option at `r` selects none that another option's entry ties. -/
+/-- **What is singled out is untied.** A selection through the map that selects at most one
+alternative at `r` selects none that another alternative's entry ties. -/
 theorem Equivariant.untied {select : (K → V) → K → Prop} (equivariant : Equivariant select)
     (single : ∀ i i', select r i → select r i' → i = i') (selected : select r k) :
     ∀ j, j ≠ k → r j ≠ r k :=
   fun j differ tie => differ (single j k ((equivariant.tied tie).mpr selected) selected)
 
-/-- At a full tie of two or more options, a selection through the model that selects at most one
-option selects none. -/
+/-- At a full tie of two or more alternatives, a selection through the map that selects at most
+one alternative selects none. -/
 theorem Equivariant.none_of_full_tie {select : (K → V) → K → Prop}
     (equivariant : Equivariant select) (single : ∀ i i', select r i → select r i' → i = i')
     {a b : K} (two : a ≠ b) (tied : ∀ i i', r i = r i') : ∀ k, ¬ select r k :=
@@ -495,10 +499,10 @@ theorem Equivariant.none_of_full_tie {select : (K → V) → K → Prop}
       same.symm)) (tied b k)
   | isFalse not_a => equivariant.untied single selected a (fun same => not_a same.symm) (tied a k)
 
-/-- The option holding `v` alone in the model. -/
+/-- The alternative holding `v` alone in the map. -/
 def Alone (v : V) (r : K → V) (i : K) : Prop := r i = v ∧ ∀ j, j ≠ i → r j ≠ v
 
-/-- Holding an entry alone is read through the model. -/
+/-- Holding an entry alone is read through the map. -/
 theorem alone_equivariant (v : V) : Equivariant (Alone (K := K) v) :=
   fun r _ a b relabel i =>
     ⟨fun ⟨holds, only⟩ => ⟨(relabel i).symm.trans holds, fun j differ same =>
@@ -508,15 +512,15 @@ theorem alone_equivariant (v : V) : Equivariant (Alone (K := K) v) :=
      fun ⟨holds, only⟩ => ⟨(relabel i).trans holds, fun j differ same =>
         only (swap a b j) (fun at_i => differ (swap_inj a b at_i)) ((relabel j).symm.trans same)⟩⟩
 
-/-- At most one option holds an entry alone. -/
+/-- At most one alternative holds an entry alone. -/
 theorem alone_single {v : V} {i i' : K} (first : Alone v r i) (second : Alone v r i') : i = i' :=
   match decEq i i' with
   | isTrue same => same
   | isFalse differ => absurd first.1 (second.2 i differ)
 
-/-- **An option is singled out exactly where the model separates it.** Some selection through the
-model, selecting at most one option at each model, selects `k` at `r` exactly when no
-other option's entry ties `k`'s. -/
+/-- **An alternative is singled out exactly where the map separates it.** Some selection through
+the map, selecting at most one alternative at each map, selects `k` at `r` exactly when no
+other alternative's entry ties `k`'s. -/
 theorem singled_iff_untied :
     (∃ select : (K → V) → K → Prop, Equivariant select ∧
       (∀ r' i i', select r' i → select r' i' → i = i') ∧ select r k) ↔
@@ -531,33 +535,33 @@ section Values
 
 variable {W : Type w} {value : (K → V) → K → W}
 
-/-- **Tied options are valued alike**, a weight on each among them. -/
+/-- **Tied alternatives are valued alike**, a weight on each among them. -/
 theorem EquivariantValue.tied (equivariant : EquivariantValue value) (tie : r j = r k) :
     value r j = value r k :=
   (equivariant r r j k (fixed_of_tied tie) j).trans (congrArg (value r) (swap_left j k))
 
-/-- At a full tie every option is valued alike. -/
+/-- At a full tie every alternative is valued alike. -/
 theorem EquivariantValue.full_tie (equivariant : EquivariantValue value)
     (tied : ∀ i i', r i = r i') (i i' : K) : value r i = value r i' :=
   equivariant.tied (tied i i')
 
-/-- The options taking a given value form a selection through the model. -/
+/-- The alternatives taking a given value form a selection through the map. -/
 theorem EquivariantValue.level (equivariant : EquivariantValue value) (c : W) :
     Equivariant (fun r i => value r i = c) :=
   fun r r' a b relabel i => ⟨fun holds => (equivariant r r' a b relabel i).symm.trans holds,
     fun holds => (equivariant r r' a b relabel i).trans holds⟩
 
-/-- A constant valuation, the same weight on every option, is through the model. -/
+/-- A constant valuation, the same weight on every alternative, factors through the map. -/
 theorem EquivariantValue.const (c : W) : EquivariantValue (fun (_ : K → V) (_ : K) => c) :=
   fun _ _ _ _ _ _ => rfl
 
 end Values
 
-/-- The entry itself is a valuation through the model. -/
+/-- The entry itself is a valuation through the map. -/
 theorem entry_equivariant : EquivariantValue (fun (r : K → V) (i : K) => r i) :=
   fun _ _ _ _ relabel i => relabel i
 
-/-- Two options are valued alike by every valuation through the model exactly when the model
+/-- Two alternatives are valued alike by every valuation through the map exactly when the map
 ties them. -/
 theorem valued_alike_iff :
     (∀ value : (K → V) → K → V, EquivariantValue value → value r j = value r k) ↔ r j = r k :=
@@ -576,7 +580,7 @@ theorem map_swap_eq_some (a b : K) {i : K} :
         (congrArg (swap a b) (Option.some.inj e))),
       fun e => congrArg some ((congrArg (swap a b) (Option.some.inj e)).trans (swap_swap a b i))⟩
 
-/-- A choice through the model selects, through the model, the option it chooses. -/
+/-- A choice through the map selects, through the map, the alternative it chooses. -/
 theorem EquivariantChoice.selects (equivariant : EquivariantChoice rule) :
     Equivariant (fun r i => rule r = some i) :=
   fun r r' a b relabel _ =>
@@ -584,17 +588,17 @@ theorem EquivariantChoice.selects (equivariant : EquivariantChoice rule) :
       (map_swap_eq_some a b)
 
 omit [DecidableEq K] in
-/-- A choice chooses at most one option. -/
+/-- A choice chooses at most one alternative. -/
 theorem EquivariantChoice.single (r : K → V) {i i' : K} (first : rule r = some i)
     (second : rule r = some i') : i = i' :=
   Option.some.inj (first.symm.trans second)
 
-/-- **A choice through the model chooses no tied option.** -/
+/-- **A choice through the map chooses no tied alternative.** -/
 theorem EquivariantChoice.untied (equivariant : EquivariantChoice rule) (chosen : rule r = some k) :
     ∀ j, j ≠ k → r j ≠ r k :=
   equivariant.selects.untied (fun _ _ => EquivariantChoice.single r) chosen
 
-/-- **At a full tie of two or more options a choice through the model withholds.** -/
+/-- **At a full tie of two or more alternatives a choice through the map withholds.** -/
 theorem EquivariantChoice.withholds_of_full_tie (equivariant : EquivariantChoice rule) {a b : K}
     (two : a ≠ b) (tied : ∀ i i', r i = r i') : rule r = none :=
   match chosen : rule r with
@@ -613,9 +617,9 @@ end Relabel
 namespace Clearing
 
 /-- **What the clearer's selection cannot reach.** Every selection through the clearer's
-registration (support only, the observation of `alike_for_clearer`) selects the cleared and the
+couplings (by threshold only, as in `alike_for_clearer`) selects the cleared and the
 spared world alike at every step, while the dweller is ended in the cleared world and not in the
-spared one: that the dweller is ended is selected through the clearer's registration at no
+spared one: that the dweller is ended is selected through the clearer's couplings at no
 step. -/
 theorem unselected :
     (∀ t select, web.SelectsThrough thresholdOnly .clearer t select →
@@ -626,8 +630,8 @@ theorem unselected :
   ⟨fun t _ through => through _ _ (alike_for_clearer t), tested_by_dweller.1, spared,
    fun t through => spared ((through _ _ (alike_for_clearer t)).mp tested_by_dweller.1)⟩
 
-/-- **The gap.** The dweller lies within the clearer's reach closure and beyond its registration
-closure; the clearer does not register the habitat its clearing takes from. -/
+/-- **The gap.** The dweller lies within the clearer's reach closure and beyond its coupling
+closure; the habitat its clearing takes from does not couple into the clearer. -/
 theorem dweller_within_reach :
     flow.WithinReach web .clearer .dweller ∧
       ¬ flow.WithinCoupling web thresholdOnly .clearer .dweller ∧
@@ -652,9 +656,9 @@ theorem clearer_spared : web.Admits (sparedWeb.level 2) 2 .clearer :=
   | .habitat, no => nomatch no
   | .fuel _, no => nomatch no
 
-/-- **The dweller's registration selects.** The dweller's admission at the third step is a
-selection through the dweller's registration; it holds in the spared world and fails in the
-cleared one, which the dweller registers apart up to the third step. -/
+/-- **The dweller's couplings select.** The dweller's admission at the third step is a
+selection through the dweller's couplings; it holds in the spared world and fails in the
+cleared one, which are apart through the dweller's couplings up to the third step. -/
 theorem selected_by_dweller :
     web.SelectsThrough thresholdOnly .dweller 2 (fun l => web.Admits (l 2) 2 .dweller) ∧
       web.Admits (sparedWeb.level 2) 2 .dweller ∧ ¬ web.Admits (web.level 2) 2 .dweller ∧
@@ -663,8 +667,8 @@ theorem selected_by_dweller :
    fun alike => unsupported_with 0 ((Web.admits_through (Nat.le_refl 2) _ _ alike).mpr
      dweller_spared)⟩
 
-/-- The dweller registers the spared world alike with the world whose resource is gone at the
-third step, at every step. -/
+/-- The spared world is alike through the dweller's couplings with the world whose resource is
+gone at the third step, at every step. -/
 theorem dweller_alike_gone (t : Nat) :
     web.AlikeThroughUpTo thresholdOnly .dweller sparedWeb.level resourceGone t :=
   fun _ _ => ⟨⟨fun admits c requires => (match c, requires with
@@ -681,10 +685,10 @@ def BothAdmitted (l : Nat → Place → Nat) : Prop :=
   web.Admits (l 2) 2 .dweller ∧ web.Admits (l 2) 2 .clearer
 
 /-- **Pooled selection.** That both the dweller and the clearer are admitted at the third step is
-a selection through the pooled registration of the clearer and the dweller. It holds in the
-spared world and fails in the cleared one, and it is through neither registration alone: the
-clearer registers the cleared world alike with the spared one, the dweller the world whose
-resource is gone. -/
+a selection through the pooled couplings of the clearer and the dweller. It holds in the
+spared world and fails in the cleared one, and it is through neither's couplings alone: through
+the clearer's the cleared world is alike with the spared one, through the dweller's the world
+whose resource is gone is. -/
 theorem selected_pooled :
     web.SelectsThroughAll thresholdOnly clearerAndDweller 2 BothAdmitted ∧
       BothAdmitted sparedWeb.level ∧ ¬ BothAdmitted web.level ∧
@@ -796,7 +800,7 @@ def web (level : Nat → Place → Nat) : Web Formation Place where
     | .taker, .store => False
     | .dweller, _ => False
 
-/-- The taker observes the store. -/
+/-- The store couples into the taker by level. -/
 def gauge : Formation → Place → Prop
   | .taker, .store => True
   | .taker, .source => False
@@ -843,8 +847,8 @@ theorem diverting_taking : diverting.Taking (web divertedLevel)
   | _, .taker, .store, _, takes => absurd takes (Nat.lt_irrefl 0)
   | _, .dweller, _, _, takes => absurd takes (Nat.lt_irrefl 0)
 
-/-- In the diverting flow the taker alone is closed under being affected through what is
-registered: only the taker exchanges with the store, and it depends on nothing. -/
+/-- In the diverting flow the taker alone is closed under being affected through what couples
+in: only the taker exchanges with the store, and it depends on nothing. -/
 theorem takerAlone_closed :
     ClosedUnder (diverting.CoupledFrom (web divertedLevel) gauge) takerAlone
   | .taker, .taker, _, _ => trivial
@@ -864,8 +868,8 @@ theorem supplied_closed : ClosedUnder (supplying.Affects (web suppliedLevel)) ta
 /-- **Selection favours reaching beyond.** Both flows balance and in both activity needs support;
 in the diverting flow only active formations give and take, and take only from what they draw on.
 The diverting flow reaches the dweller, which lies within the taker's reach closure and beyond its
-registration closure; the undiverted flow does not reach it. The selection that the store stands
-at least one at the second step is through the taker's registration, holds in the diverting flow
+coupling closure; the undiverted flow does not reach it. The selection that the store stands
+at least one at the second step is through the taker's couplings, holds in the diverting flow
 and fails in the undiverted one. The dweller is unsupported from the second step on in the
 diverting flow and supported at every step in the undiverted one. -/
 theorem favours :
@@ -895,9 +899,9 @@ theorem favours :
     | .store, no => nomatch no⟩
 
 /-- **Selection cannot tell reaching beyond from not.** The supplying flow balances, raises the
-store as the diverting flow does, and reaches nothing beyond the taker. The taker registers the
-diverting and the supplying levels alike at every step, so every selection through its
-registration selects them alike, while the dweller is supported at every step in the supplying
+store as the diverting flow does, and reaches nothing beyond the taker. The diverting and the
+supplying levels are alike through the taker's couplings at every step, so every selection
+through them selects the two alike, while the dweller is supported at every step in the supplying
 flow and unsupported from the second step on in the diverting one. -/
 theorem blind_to_source :
     supplying.Balances (web suppliedLevel) ∧ (web suppliedLevel).Dependent ∧

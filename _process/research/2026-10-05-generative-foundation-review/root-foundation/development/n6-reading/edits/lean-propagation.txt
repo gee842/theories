@@ -1,0 +1,20 @@
+# Propagation.lean: the least registration → the least coupling (as Sensitivity); a formation registering a level → the level coupling into it.
+### lean:Propagation
+= S2
+- least registration such a law reads through,
++ least coupling such a law reads through,
+= S2
+- Where the positive strengths are of formations registering the
+-   level and exchanging with the condition,
++ Where the positive strengths are of formations into which the
++   level couples and which exchange with the condition,
+= S2 the AI's reading, pending Ren; 识 as in Counterfactual
+- Read with registration as 识, a formation registers
+-   what its exchange is sensitive to, and the strength is how strongly.
++ Read as 识, what couples into a formation is
++   what its exchange is sensitive to, and the strength is how strongly.
+= S2
+- every positive strength is of a formation registering that
+- level and exchanging with the condition,
++ every positive strength is of a formation into which that
++ level couples and which exchanges with the condition,

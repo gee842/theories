@@ -1,0 +1,100 @@
+# Distinguishing.lean: the tests are a bounded prefix of the future through the map.
+### lean:Distinguishing
+= S1 a bounded record of registered values → a bounded prefix of the future through the map (L-prefix)
+- (`alike_iff_sameTests`); `Becoming.Identification` shows that a bounded record fixes a registered
+- future (`bounded_agree`, `Law.sameFuture_iff_within`); `Becoming.Likeness` bounds the depth of
++ (`alike_iff_sameTests`); `Becoming.Identification` shows that a bounded prefix fixes the future
++ through a map (`bounded_agree`, `Law.sameFuture_iff_within`); `Becoming.Likeness` bounds the depth of
+= S1
+- * **The tests are a bounded record.** Under a determined law read through a registration, in a
+-   world a list of `N` configurations holds, two configurations pass the same tests exactly where
+-   their registered futures agree for `N - 1` steps (`Law.sameTests_iff_within`); across two such
+-   worlds of `N` and `N'` configurations, exactly where they agree for `N + N' - 1` steps
+-   (`Law.sameTests_iff_below_across`). Infinitely many tests, each a course of moves and a claim,
+-   are fixed by finitely many registered values. Two laws read through registrations are alike
+-   exactly where their registered futures agree at every step (`Law.alike_iff_agree`).
+- * **Moves that carry the registration.** A law whose single move at each configuration is named
+-   by what is registered there, with nothing claimed (`Law.labelled`), is alike to depth `k`
+-   exactly where the registered futures agree for `k` steps (`Law.alikeTo_labelled_iff`): one step
+-   fewer than when the registration is claimed (`alikeTo_frameBy_iff` of `Becoming.Likeness`).
++ * **The tests are a bounded prefix.** Under a determined law read through a map, in a
++   world a list of `N` configurations holds, two configurations pass the same tests exactly where
++   their futures through the map agree for `N - 1` steps (`Law.sameTests_iff_within`); across two
++   such worlds of `N` and `N'` configurations, exactly where they agree for `N + N' - 1` steps
++   (`Law.sameTests_iff_below_across`). Infinitely many tests, each a course of moves and a claim,
++   are fixed by finitely many values through the map. Two laws read through maps are alike
++   exactly where their futures through the maps agree at every step (`Law.alike_iff_agree`).
++ * **Moves that carry the map's value.** A law whose single move at each configuration is named
++   by the map's value there, with nothing claimed (`Law.labelled`), is alike to depth `k`
++   exactly where the futures through the map agree for `k` steps (`Law.alikeTo_labelled_iff`): one
++   step fewer than when the map's value is claimed (`alikeTo_frameBy_iff` of `Becoming.Likeness`).
+= S1
+-   Read through registrations, two worlds of `N` and `N'` configurations have configurations whose
+-   registered futures agree for `N + N' - 2` steps and which do not pass the same tests
++   Read through maps, two worlds of `N` and `N'` configurations have configurations whose
++   futures through the maps agree for `N + N' - 2` steps and which do not pass the same tests
+= S1
+-   exact too: on the path of `N` places to a last one that stays, registering only whether the
+-   last is reached, the first two places agree for `N - 2` steps and do not pass the same tests
++   exact too: on the path of `N` places to a last one that stays, read through a map that takes
++   only whether the last is reached, the first two places agree for `N - 2` steps and do not pass
++   the same tests
+= L-prefix the AI's reading (D34), so revisable
+- what tells configurations apart within a bounded world is a finite record, and its length is set by
++ what tells configurations apart within a bounded world is a finite prefix, and its length is set by
+= L-prefix
+- /-! ## The tests are a bounded record -/
++ /-! ## The tests are a bounded prefix -/
+= S1
+- /-- Agreeing at every step is a bisimulation between two laws read through registrations. -/
++ /-- Agreeing at every step is a bisimulation between two laws read through maps. -/
+= S1
+- /-- **Two laws read through registrations are alike exactly where their registered futures agree
+- at every step.** -/
++ /-- **Two laws read through maps are alike exactly where their futures through the maps agree
++ at every step.** -/
+= S1
+- /-- **The tests are a bounded record.** Under a determined law read through a registration, in a
+- world a list of `N` configurations holds, two configurations pass the same tests exactly where
+- their registered futures agree for `N - 1` steps. Tests fix likeness (`Determined.alike_iff_sameTests`
+- of `Becoming.Histories`), likeness is the same registered future (`Law.alike_iff_sameFuture`), and
++ /-- **The tests are a bounded prefix.** Under a determined law read through a map, in a
++ world a list of `N` configurations holds, two configurations pass the same tests exactly where
++ their futures through the map agree for `N - 1` steps. Tests fix likeness (`Determined.alike_iff_sameTests`
++ of `Becoming.Histories`), likeness is the same future through the map (`Law.alike_iff_sameFuture`), and
+= S1
+- /-- **Across two worlds, the tests are a record of `N + N' - 1` steps.** Under two determined
+- laws read through registrations, in worlds lists of `N` and `N'` configurations hold, two
+- configurations pass the same tests exactly where their registered futures agree for
++ /-- **Across two worlds, the tests are a prefix of `N + N' - 1` steps.** Under two determined
++ laws read through maps, in worlds lists of `N` and `N'` configurations hold, two
++ configurations pass the same tests exactly where their futures through the maps agree for
+= S1
+- /-! ## Moves that carry the registration -/
++ /-! ## Moves that carry the map's value -/
+= S1
+- /-- A law whose single move at each configuration is named by what is registered there, with
+- nothing claimed. -/
++ /-- A law whose single move at each configuration is named by the map's value there, with
++ nothing claimed. -/
+= S1
+- /-- **Where the moves carry the registration, likeness to depth `k` is agreement for `k`
++ /-- **Where the moves carry the map's value, likeness to depth `k` is agreement for `k`
+= S1
+- `N' = M' + 1` there are frames whose moves carry a registration, of `N` and `N'` configurations,
++ `N' = M' + 1` there are frames whose moves carry a map's value, of `N` and `N'` configurations,
+= S1
+- /-- **Across two worlds read through registrations, `N + N' - 1` is exact.** For every
+- `N = M + 1` and `N' = M' + 1` there are laws on `N` and `N'` configurations, read through
+- registrations, with configurations whose registered futures agree for `N + N' - 2` steps and which
++ /-- **Across two worlds read through maps, `N + N' - 1` is exact.** For every
++ `N = M + 1` and `N' = M' + 1` there are laws on `N` and `N'` configurations, read through
++ maps, with configurations whose futures through the maps agree for `N + N' - 2` steps and which
+= S1
+- `N` configurations, read through a registration, in a world a list of `N` members holds, with two
+- configurations whose registered futures agree for `N - 2` steps and which do not pass the same
++ `N` configurations, read through a map, in a world a list of `N` members holds, with two
++ configurations whose futures through the map agree for `N - 2` steps and which do not pass the same
+= S1
+- places to a last one that stays, registering only whether the last is reached. -/
++ places to a last one that stays, read through a map that takes only whether the last is reached. -/

@@ -14,18 +14,18 @@ always one world; a description free of context exists exactly where the reading
 counted, every world is one run of the one law of exchange. The same standard of invariance,
 applied to significance, leaves the continuation condition, the condition of chapter §6.15 (not asserted), as one horn of a dichotomy.
 
-* **The readings of one unfolding are one world.** Along a run, the registrations of a contextual
-  system (`Contextual`), each claim read with its context, are the relata of one world, each active
-  exactly where it is registered with its value (`Contextual.world`, `Contextual.world_active`);
+* **The readings of one unfolding are one world.** Along a run, the claims of a contextual
+  system (`Contextual`), each read with its context, are the relata of one world, each active
+  exactly where its context shows it with its value (`Contextual.world`, `Contextual.world_active`);
   as in `Frame.world`, nothing stands or is exchanged in it. No gluing is used, so this holds where
-  context-free values are impossible, as for the Mermin–Peres square and quantum registrations
+  context-free values are impossible, as for the Mermin–Peres square and what quantum states show
   (`Square.no_whole`, `Becoming.Quantum`'s `no_context_free_values`).
 * **A description free of context is a gluing.** A frame of context-free claims fits exactly where
-  the registrations glue at every configuration (`Contextual.fitsFree_iff` of `Becoming.Context`).
+  what the contexts show glues at every configuration (`Contextual.fitsFree_iff` of `Becoming.Context`).
 * **Balance is the gluing of two readings of change.** A change of a condition across a step is
   read by its standing, as the rise and the fall of its level, and by the exchange, as what the
   flow gave it beyond what it took and took beyond what it gave (`Flow.changeReadings`). The two
-  register a change alike exactly where the levels and the exchange balance there
+  read a change alike exactly where the levels and the exchange balance there
   (`changes_agree_iff`), so the readings glue across a step exactly where the flow balances there
   (`Flow.changeReadings_glue_iff`), at every step exactly where it balances
   (`Flow.changeReadings_glue_everywhere_iff`), and a frame of context-free claims of change fits
@@ -66,8 +66,8 @@ applied to significance, leaves the continuation condition, the condition of cha
   is drawn somewhere, the “belief” without which, Ren wrote on 10 October 2026, the self “can not
   justify itself”.
 
-What is not derived: that the readings of an unfolding glue, which fails for quantum
-registrations; which readings an unfolding has; what the rest of the whole is, since its exchange
+What is not derived: that the readings of an unfolding glue, which fails for what quantum
+states show; which readings an unfolding has; what the rest of the whole is, since its exchange
 is read off the standings and the exchange of the formations, as their difference; that
 significance meets the invariance standard, and that the presupposition holds. No ethical predicate, ranking or axiom occurs; the significance
 of the condition of chapter §6.15 enters only as a predicate the theorems quantify over.
@@ -86,12 +86,12 @@ namespace Contextual
 variable {S K C V : Type} (X : Contextual S K C V)
 
 /-- **The readings of one unfolding are one world.** Along a run, each claim of a contextual
-system read with its context is a relatum, active exactly where its context registers it with its
+system read with its context is a relatum, active exactly where its context shows it with its
 value. No gluing is used. -/
 def world {A : Type} (P : Process S A) (r : Run P) : World :=
   (X.indexed P).world r
 
-/-- A context's registration is a relatum's activity. -/
+/-- What a context shows is a relatum's activity. -/
 theorem world_active {A : Type} {P : Process S A} {r : Run P} {t : Nat} {q : K × C × V} :
     (X.world P r).web.active t q ↔ X.within q.1 q.2.1 ∧ X.shows (r.state t) q.1 q.2.1 = q.2.2 :=
   Iff.rfl
@@ -105,9 +105,9 @@ inductive ChangeReading where
   | standing
   | exchange
 
-/-- What each reading registers of the change of each condition across the step from `t`, as what
-it rose and what it fell: standing registers the rise and the fall of the level; exchange
-registers what the flow gave beyond what it took, and took beyond what it gave. -/
+/-- What each reading reads of the change of each condition across the step from `t`, as what
+it rose and what it fell: standing reads the rise and the fall of the level; exchange
+reads what the flow gave beyond what it took, and took beyond what it gave. -/
 def Flow.changeReadings (L : Flow F C) (W : Web F C) :
     Contextual Nat ChangeReading C (Nat × Nat) :=
   ⟨fun _ _ => True, fun t k c => match k with
@@ -139,7 +139,7 @@ theorem add_eq_of_sub_eq {a b p q : Nat} (rise : b - a = q - p) (fall : a - b = 
     _ = a + q + (b - a + (a - b)) := Nat.add_add_add_comm a (b - a) q (a - b)
     _ = a + q + (a - b + (b - a)) := congrArg (a + q + ·) (Nat.add_comm (b - a) (a - b)))
 
-/-- **Two readings register one change alike exactly where they balance.** The rise and the fall
+/-- **Two readings read one change alike exactly where they balance.** The rise and the fall
 from `a` to `b` are the excesses of `q` over `p` and of `p` over `q` exactly where
 `b + p = a + q`. -/
 theorem changes_agree_iff {a b p q : Nat} : (b - a, a - b) = (q - p, p - q) ↔ b + p = a + q :=
