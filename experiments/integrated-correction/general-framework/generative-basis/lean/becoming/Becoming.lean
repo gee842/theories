@@ -123,6 +123,19 @@ import Becoming.Distinguishing
 import Becoming.Composition
 import Becoming.Joining
 import Becoming.Granularity
+import Becoming.HistoryLanguages
+import Becoming.Coverage
+import Becoming.Presentations
+import Becoming.Carriers
+import Becoming.BranchingCorrespondence
+import Becoming.JointCorrespondence
+import Becoming.ListFootprints
+import Becoming.Fragments
+import Becoming.LocalUnits
+import Becoming.JoiningContexts
+import Becoming.JoiningCodes
+import Becoming.JoiningRoles
+import Becoming.Grains
 import Becoming.Postponement
 import Becoming.Novelty
 import Becoming.Reading
@@ -1359,6 +1372,55 @@ readings of the unfolding (`Becoming.Labelled`).
   one of finitely many tests, so configurations passing the same tests answer it alike, while
   reading every recipe as one test is exactly excluded middle. What remains of a recipe resumes
   where the course stands. Completed blocks and every nonempty prefix can hide a loss midway.
+* `Becoming.HistoryLanguages` (L3): languages of histories (no premise): a prefix-closed language
+  of words is realized exactly by the law of its histories (`realizes_feasible`); continuation
+  profiles, letterwise stability and the obstruction that locates a changed profile; the bounded
+  language, the latch and the gate.
+* `Becoming.Coverage` (L3): a placement course and the global cover it builds (no premise): a
+  course of placements covers a board exactly where its tiles and the rest make up the board up to
+  order, with no event order; where allowed tiles join opposite colours the balance is kept, so
+  the board with two opposite corners removed has no cover (`mutilated_no_cover`), and balance
+  does not determine coverability (`balance_does_not_determine_coverability`).
+* `Becoming.Presentations` (L3): exact and reduced presentations (no premise; extensionality of
+  predicates named where used): presentations exact for the same answers share one kernel and one
+  alignment; a relation descends to codes exactly where it is saturated; the canonical
+  presentation by all predicates; a frame's branching tests as questions.
+* `Becoming.Carriers` (L3): one carrier, several laws (no premise): `static`, `toggle` and their
+  kin share carrier and feasible words; symmetry does not fix the law, and relational identity
+  reads `static` and `toggle` as one recurrence; feasible words do not fix endpoints
+  (`word_feasibility_does_not_determine_endpoints`).
+* `Becoming.BranchingCorrespondence` (L3): branching tests match the configurations of two frames
+  (excluded middle named): configurations passing the same tests match successors and are
+  bisimilar, reachable configurations correspond one to one and steps are carried exactly
+  (`SameBranchingTests.correspondence_of_em`); every bisimulation agrees with the tests.
+* `Becoming.JointCorrespondence` (L3): what a joint frame reaches by steps and parts (stability of
+  the tests named): joint tests carry pairs and steps exactly and match reachable configurations
+  one to one; codes reading the joint tests lift the parts, the plans and exclusive support.
+* `Becoming.ListFootprints` (L3): lists as footprints (no premise): a plan is realized exactly
+  where what its leaves draw on is supported, so reassociating or reordering a plan keeps whether
+  it is realized (`realizes_iff_of_perm`).
+* `Becoming.Fragments` (L3): fragments of a process joined end to start (no premise): joining is
+  functional and associative with idle units; probes by the fragments that stay recover the ends
+  and the joining and miss the course between (`probes_miss_course`).
+* `Becoming.LocalUnits` (L3): units of a joining (no premise): unique under associativity, shared
+  by what joins, carried by correspondences; chain completion is that a common unit suffices; on
+  traced fragments the units are the fragments that stay, and the process that moves at most once
+  has units but is not chain complete.
+* `Becoming.JoiningContexts` (L3): contexts of a joining as courses of its frame (no premise):
+  agreeing on contexts is passing the same tests (`ContextSame.iff_sameTests`) and, for a
+  functional joining, the largest compatible relation (`contextSame_iff_compatible`).
+* `Becoming.JoiningCodes` (L3): codes read against contexts and branching tests (excluded middle
+  named where used): the joining of codes, its domain and functionality; a test asked after a
+  context; a presentation exact and reduced for the tests lifts a joining with listed outcomes
+  (`FiniteOutcomes.lifts_of_exact`).
+* `Becoming.JoiningRoles` (L3): roles and retained references by branching tests (excluded middle
+  and function extensionality named where used): units give every role; the traced fragments of
+  the process that moves once collapse through roles and stay apart through retained references
+  (`Fragment.once_codes_apart`).
+* `Becoming.Grains` (L3): what remained of reading at two grains (no premise; the decision of two
+  tests named where used): renaming into single-move blocks and reading finer returns the test
+  (`BranchingTest.finer_rename`); either of two decided tests; histories of recipes are finer
+  courses; configurations with no step and the same claims are alike (`Alike.of_stuck`).
 * `Becoming.Postponement` (L3): what linear tests see, with no premise. Postponing every branching
   until it shows (a configuration becoming the family a course may have reached), two
   configurations pass the same linear tests exactly where they are alike, and a frame is alike to
