@@ -1,0 +1,20 @@
+import Becoming.ReceptionTracesInherited
+#print axioms Becoming.ReceptionTracesInherited.reception
+#print axioms Becoming.ReceptionTracesInherited.step_iff
+#print axioms Becoming.ReceptionTracesInherited.trace_end
+#print axioms Becoming.ReceptionTracesInherited.expose_trace
+#print axioms Becoming.ReceptionTracesInherited.along
+#print axioms Becoming.ReceptionTracesInherited.total_kept
+#print axioms Becoming.ReceptionTracesInherited.still_without_support
+#print axioms Becoming.ReceptionTracesInherited.broadening_trace
+#print axioms Becoming.ReceptionTracesInherited.grouping_assembles
+#print axioms Becoming.ReceptionTracesInherited.reception_changes_parse
+#print axioms Becoming.ReceptionTracesInherited.response_keeps_history
+#print axioms Becoming.ReceptionTracesInherited.support_used
+#print axioms Becoming.ReceptionTracesInherited.parse_without_support
+#print axioms Becoming.ReceptionTracesInherited.order_not_frequency
+#print axioms Becoming.ReceptionTracesInherited.narrowCourse
+#print axioms Becoming.ReceptionTracesInherited.broadening_after_failure
+#print axioms Becoming.ReceptionTracesInherited.parsed_not_broadened
+#print axioms Becoming.ReceptionTracesInherited.broadening_keeps_prefix
+#print axioms Becoming.ReceptionTracesInherited.broadening_parses_one_form

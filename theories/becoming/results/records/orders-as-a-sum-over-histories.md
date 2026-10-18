@@ -78,7 +78,7 @@ Ren, 12 October 2026, asked about the integration for laws that are not determin
 | proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.gap_of_le` |
 | proof | [Population.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean) | `Becoming.total_congr_on` |
 | proof | [Dissipation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean) | `Becoming.total_eq_zero` |
-| proof | [Generation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) | `Becoming.total` |
+| proof | [World.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean) | `Becoming.total` |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-12-move-towards-100.md](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) | — |
@@ -89,6 +89,7 @@ Ren, 12 October 2026, asked about the integration for laws that are not determin
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `orders as a sum over histories`, `阶作为历史之和`, `sum over routes`, `路线之和`, `route back in time`, `沿时间往回的路线`, `expansion by order of a sum over histories`, `历史之和按阶展开`, `horizon and order`, `视界与阶`, `joining the orders to the sum over histories`, `把各阶接到历史之和`
 
@@ -102,6 +103,7 @@ Aliases: `orders as a sum over histories`, `阶作为历史之和`, `sum over ro
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Loops.lean, Propagation.lean, Routes.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Propagation.lean, THE-THEORY-OF-BECOMING.md. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): declarations moved with their full Lean names, statements and proofs unchanged: total from Generation.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean, Flow.lean). The claim is unchanged.
 - 14 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](orders-as-a-sum-over-histories.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -1,0 +1,7 @@
+@Becoming.Web.active_along : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent → ∀ (t : Nat), Becoming.Invariant (W.bearing t) (W.active t)
+@Becoming.Web.coextinct : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent → ∀ {t : Nat} {g y : X}, Becoming.Reach (W.bearing t) g y → ¬W.active t y → ¬W.active t g
+Becoming.Predation.fox_ends : ∀ (t : Nat), 2 < t → ¬Becoming.Predation.web.active t Becoming.Predation.Relatum.fox
+Becoming.Sequences.recurs_iff : ∀ (r : Becoming.Run (Becoming.Sequences.process Bool)),
+  Becoming.Sequences.Recurs r ↔ Becoming.Recurs [()] fun x m => r.act m = true

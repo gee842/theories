@@ -1,0 +1,12 @@
+import Becoming.TrainingProcessesInherited
+#print axioms Becoming.TrainingProcessesInherited.trainProcess
+#print axioms Becoming.TrainingProcessesInherited.step_iff
+#print axioms Becoming.TrainingProcessesInherited.step_records
+#print axioms Becoming.TrainingProcessesInherited.step_installs
+#print axioms Becoming.TrainingProcessesInherited.step_support
+#print axioms Becoming.TrainingProcessesInherited.step_rests_when_short
+#print axioms Becoming.TrainingProcessesInherited.step_code_transfers
+#print axioms Becoming.TrainingProcessesInherited.step_evidence
+#print axioms Becoming.TrainingProcessesInherited.step_then_execute
+#print axioms Becoming.TrainingProcessesInherited.novel_after_step
+#print axioms Becoming.TrainingProcessesInherited.installed_without_execution

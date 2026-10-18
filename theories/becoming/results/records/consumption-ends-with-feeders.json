@@ -440,7 +440,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.Acting",
@@ -454,7 +454,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
       "declarations": [
         "Becoming.Web.Supported",
         "Becoming.Web.Dependent",
@@ -549,6 +549,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -575,14 +581,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -869,6 +875,10 @@
     {
       "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change since 77dc88103 (the section 8.2 row \"Continuation (§6.7) and feeding\" that cites it now reads C1's result (how taking all that is given forms, ending another serving taking all that is given, forced endings in the witnesses of §6.7, a comparison that registers an ending through exclusion) and links what-taking-all-excludes). The claim is unchanged.",
       "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过自 77dc88103 以来的改动后（引用它的第 8.2 节“延续（§6.7）与供给”一行现读 C1 的结果），THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean, Flow.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

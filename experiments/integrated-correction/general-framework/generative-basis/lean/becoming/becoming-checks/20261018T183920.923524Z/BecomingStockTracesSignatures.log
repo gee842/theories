@@ -1,0 +1,12 @@
+@Becoming.StockTraces.feasible_iff_prefix : ∀ {A : Type} {draw replenish : A → Nat} (as : List A) (n : Nat),
+  Generative.Feasible (Becoming.Stock.process draw replenish) n as ↔
+    ∀ (u : List A) (a : A) (v : List A),
+      as = u ++ a :: v → Becoming.total u draw + draw a ≤ n + Becoming.total u replenish
+@Becoming.StockTraces.trace_prefix : ∀ {S : Type u_1} {A : Type} {P : Generative.Process S A} {σ : S → Nat}
+  {draw replenish : A → Nat},
+  Becoming.Stock.Balanced P σ draw replenish →
+    Becoming.Stock.DrawsHeld P σ draw →
+      ∀ {s t : S} {as : List A},
+        Generative.Trace P s as t →
+          ∀ (u : List A) (a : A) (v : List A),
+            as = u ++ a :: v → Becoming.total u draw + draw a ≤ σ s + Becoming.total u replenish

@@ -1,0 +1,4 @@
+import Becoming.JoiningCodeFramesInherited
+#check @Becoming.JoiningCodeFramesInherited.canonical_factor
+#check @Becoming.JoiningCodeFramesInherited.common_operation
+#check @Becoming.JoiningCodeFramesInherited.sameTests_iff_alike

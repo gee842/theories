@@ -528,9 +528,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "37f2cd1a36334292f9e74b79a0fb5269fc032f700f1a62feb92c135a0fba905c",
+      "sha256": "6fbcfccbc89cc50050a4fafdfc9e3d4753270bd19c024ea3ad1f0d92d6ee8057",
       "declarations": [
-        "Becoming.World",
         "Becoming.World.rests_unrefuted",
         "Becoming.World.unbalanced_world",
         "Becoming.World.mutualism_world",
@@ -538,9 +537,17 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "role": "proof",
+      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f",
+      "declarations": [
+        "Becoming.World"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "ad5455526b0dcfa8242950c677ab641dc4c9c5f2e2115d8d3a51fd2d630e2b4e",
+      "sha256": "820140f86f359309fd50ac1416cbe3ab8fe31d561beca57707dc33935ee5d867",
       "declarations": [
         "Becoming.Flow.Dissipative",
         "Becoming.Flow.Enclosed",
@@ -578,7 +585,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "d6e867b830b46a5b716646099fafc4e23f7f84e70e13b2792a3455be7bec5ce7",
+      "sha256": "1e0b6616ca3363962d90aa0f33cdd871fa20700e9c5a5f48e88b9f817d5ee546",
       "declarations": [
         "Becoming.Web.Embodied",
         "Becoming.Mutualism.dependent"
@@ -647,6 +654,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -659,14 +672,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -694,8 +707,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1019,6 +1039,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: World from Space.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean, Roles.lean, Space.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

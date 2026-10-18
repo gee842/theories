@@ -139,6 +139,7 @@ Ren’s reading of 理 and the formal integration of the laws are retained. Corr
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T202927.668755Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `root of wisdom, Part I`, `智慧之根（第一部分）`
 
@@ -174,6 +175,7 @@ Aliases: `root of wisdom, Part I`, `智慧之根（第一部分）`
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A7: the statement, claim and hypothesis 1 said the cited laws hold "axiom-free"; the receipt of the cited LearningCorrespondence.hebbian_activity_law_iff, updating_network_law_iff and responsive_learns lists propext, Classical.choice and Quot.sound, so "axiom-free" is restricted to the core, and the claim and hypothesis 1 state that the periphery bridge uses only Lean's standard axioms, as the validation scope already said. Earlier text in text_versions.
 - 17 October 2026, wording: outdated labels (the axiom, Part I) replaced by the current vocabulary (the continuation condition, the theory without axiom); authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Identification.lean, Learning.lean, Runaway.lean, Seeking.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Testing.lean). The claim is unchanged.
 - 37 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](wisdom-root-part-one.json).
 
 <a id="earlier-text--早期文本"></a>

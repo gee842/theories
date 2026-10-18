@@ -76,6 +76,7 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
 | provenance | [2026-10-12-move-towards-100.md](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) | — |
 | provenance | [2026-10-16-loops-readings-and-delegated-choices.md](../../../../sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_passes_iff_markov`, `Becoming.Refutable.not_not`, `what a finite history refutes`, `有限历史所否证者`, `finite refutability`, `有限可否证`, `adherence`, `附着`
 
@@ -88,6 +89,7 @@ Aliases: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_passes_if
 - 16 October 2026, eighteenth review (R18): the statement said a reading with an adhering run outside it is “neither refutable nor verifiable”; the Lean gives only “not refutable” (not_refutable_of_adheres), non-verifiability needing a run inside adhering to the complement (not_verifiable_of_adheres), and eventual occurrence is adhered to from outside yet verifiable. The statement is corrected in both languages to the form law 2 already had (review item 19); the correspondence names Alpern–Schneider 1985 and Kelly 1996 (item 39, K6). Claim narrowed; no theorem changed.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A7: standard boundary no-ethical-premise ("No ethical premise and no Lean axiom is used") replaced by no-ethical-premise-core-axiom-free: the receipts of the cited periphery correspondence declarations list propext, Quot.sound (and Classical.choice), which fails that key's cite_when; the core declarations still have empty axiom reports. Earlier text in text_versions.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Horizon.lean). The claim is unchanged.
 - 21 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-finite-history-refutes.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -440,7 +440,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "111d4264083e40f97d4039ab4f7acd52daf0cda90b096e07f3c0dc7cf1a2cd65",
+      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
       "declarations": [
         "Becoming.Web.valuation",
         "Becoming.Web.connected_of_common",
@@ -461,15 +461,11 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
       "declarations": [
         "Becoming.Web.RenewingAt",
         "Becoming.Web.renewing_at_active",
         "Becoming.Web.not_renewing_at_of_broken",
-        "Becoming.Renewable.escalating",
-        "Becoming.Renewable.stepwise_includes_before_escalation",
-        "Becoming.Renewable.dipping",
-        "Becoming.Renewable.dip_breaks_without_consuming",
         "Becoming.Dip.web",
         "Becoming.Dip.renewing_at_each_step_not_in_run",
         "Becoming.Web.BreakingOn",
@@ -479,21 +475,32 @@
         "Becoming.Web.BreakingOn.undermining",
         "Becoming.Web.RenewingAt.not_undermining",
         "Becoming.Web.RenewingAt.not_breaking",
-        "Becoming.Renewable.broken_formation",
-        "Becoming.Renewable.pausing",
-        "Becoming.Renewable.drawing_after_loss",
         "Becoming.Web.MetAbove",
         "Becoming.Web.MetAbove.now",
         "Becoming.NewNeed.web",
         "Becoming.NewNeed.never_met_not_undermining",
-        "Becoming.Pinned.process",
         "Becoming.Pinned.dependence",
-        "Becoming.Pinned.undermining_without_effect",
         "Becoming.FallingNeed.never_met_not_undermining",
         "Becoming.RisingNeed.grown_need_not_met",
         "Becoming.Gap.lapse_starts_afresh",
         "Becoming.Stunted.web",
         "Becoming.Stunted.stunting_undermines"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb",
+      "declarations": [
+        "Becoming.Renewable.escalating",
+        "Becoming.Renewable.stepwise_includes_before_escalation",
+        "Becoming.Renewable.dipping",
+        "Becoming.Renewable.dip_breaks_without_consuming",
+        "Becoming.Renewable.broken_formation",
+        "Becoming.Renewable.pausing",
+        "Becoming.Renewable.drawing_after_loss",
+        "Becoming.Pinned.process",
+        "Becoming.Pinned.undermining_without_effect"
       ]
     },
     {
@@ -529,7 +536,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "04fc5b34901c9a20f48e8c6f37d27ac5eecffc715c636adc27246dbdf73b10d3",
+      "sha256": "b83ce782e66e6372274efa1ab62fdbb5419b20825f8ee03cdad016dc1750c5bf",
       "declarations": [
         "Becoming.Pool.mixedRun",
         "Becoming.Pool.within_share_undermines"
@@ -569,20 +576,33 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1017,6 +1037,10 @@
     {
       "en": "18 October 2026, A1 (Ren 18 October: \"I take the revised readings of 生生, 生生不息 and \\\"entangled\\\". Record my answer in sources, then apply them with Part B's recommendations, coordinating with N6.\"): the reading of 生生 revised as Ren took it (DELEGATED-CHOICES D1); the review counterexample that records the earlier reading is kept as it was. Before: \"on Ren's delegation 生生 is read as the generative space\". The claim is unchanged.",
       "zh": "2026年10月18日，A1（Ren 10月18日的回答）：生生的读法按 Ren 所取修订（DELEGATED-CHOICES D1）；记录早先读法的审查反例保持原样；原文见英文。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: escalating, stepwise_includes_before_escalation, dipping, dip_breaks_without_consuming, broken_formation, pausing, drawing_after_loss, process, undermining_without_effect from Dependence.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean, Metaethics.lean). Re-pointed after reading the change (Joint.lean: the fold). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

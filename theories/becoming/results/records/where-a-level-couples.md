@@ -99,6 +99,7 @@ The naming study of 17-18 October (N1, study section 6.2) adopted "couples into"
 | integration | [REGISTRATION-VOCABULARY-STUDY.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T011212.424412Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `where a level couples`, `水平在何处耦合`, `coupling by level`, `经水平耦合`, `coupled by threshold`, `经阈耦合`, `response is a coupling`, `回应即耦合`, `strength zero is no response`, `强度为零即不回应`, `only a crossing passes`, `只过跨越`, `observing is where a level couples`, `观察即水平耦合之处`, `a crossing passes`, `跨越得过`, `crossing passes`, `threshold law`, `阈之律`, `crossing through the conjunction`, `经合取而过`, `admission law`, `容许之律`, `decided admission`
 
@@ -113,6 +114,7 @@ Aliases: `where a level couples`, `水平在何处耦合`, `coupling by level`, 
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.
 - 18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the "Learning" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Testing.lean). The claim is unchanged.
 
 </details>
 

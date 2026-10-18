@@ -1,0 +1,27 @@
+import Becoming.DephasingRuns
+#print axioms Becoming.DephasingRuns.operations
+#print axioms Becoming.DephasingRuns.operations_trace_iff
+#print axioms Becoming.DephasingRuns.dephase_dephase
+#print axioms Becoming.DephasingRuns.run_settles
+#print axioms Becoming.DephasingRuns.settles
+#print axioms Becoming.DephasingRuns.diagonal_invariant
+#print axioms Becoming.DephasingRuns.mass_invariant
+#print axioms Becoming.DephasingRuns.diagonal_along
+#print axioms Becoming.DephasingRuns.mass_along
+#print axioms Becoming.DephasingRuns.prepared_run_diagonal
+#print axioms Becoming.DephasingRuns.coherent_run_diagonal
+#print axioms Becoming.DephasingRuns.prepared_ne_coherent
+#print axioms Becoming.DephasingRuns.merges
+#print axioms Becoming.DephasingRuns.process_merges
+#print axioms Becoming.DephasingRuns.not_lossless
+#print axioms Becoming.DephasingRuns.runs_meet
+#print axioms Becoming.DephasingRuns.no_restore_along
+#print axioms Becoming.DephasingRuns.prepared_run
+#print axioms Becoming.DephasingRuns.coherent_run
+#print axioms Becoming.DephasingRuns.prepared_run_response
+#print axioms Becoming.DephasingRuns.coherent_run_response
+#print axioms Becoming.DephasingRuns.no_diagonal_decoder_along
+#print axioms Becoming.DephasingRuns.returns
+#print axioms Becoming.DephasingRuns.control_returns
+#print axioms Becoming.DephasingRuns.prepared_reading
+#print axioms Becoming.DephasingRuns.coherent_reading

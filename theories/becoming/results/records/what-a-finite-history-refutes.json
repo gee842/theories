@@ -186,7 +186,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "672d7cd5d368d699186ab6a3048e9750959df92c6e49fc964b9aad1e0f2a1ec8",
+      "sha256": "bb812c6cd7704808e87e883dc5a78ee95794acd6cbf0ecc04d71c2533d04d9c5",
       "declarations": [
         "Becoming.Run.AgreeUpTo.refl",
         "Becoming.Run.AgreeUpTo.symm",
@@ -298,12 +298,18 @@
       "role": "receipt",
       "sha256": "04b95ada137f2c932e26f3dba4eea50303af59762ab2be9f6bdd28f1649eadd9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -425,6 +431,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Horizon.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

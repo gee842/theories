@@ -1,0 +1,12 @@
+import Becoming.DephasingRunsInherited
+#print axioms Becoming.DephasingRunsInherited.x_norm_invariant
+#print axioms Becoming.DephasingRunsInherited.z_norm_invariant
+#print axioms Becoming.DephasingRunsInherited.x_norm_along
+#print axioms Becoming.DephasingRunsInherited.z_norm_along
+#print axioms Becoming.DephasingRunsInherited.orders_negate
+#print axioms Becoming.DephasingRunsInherited.hadamard_prepares
+#print axioms Becoming.DephasingRunsInherited.switched_course
+#print axioms Becoming.DephasingRunsInherited.recording_dephases
+#print axioms Becoming.DephasingRunsInherited.response_settles
+#print axioms Becoming.DephasingRunsInherited.plus_kept_iff
+#print axioms Becoming.DephasingRunsInherited.plus_minus_along

@@ -440,7 +440,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "ad5455526b0dcfa8242950c677ab641dc4c9c5f2e2115d8d3a51fd2d630e2b4e",
+      "sha256": "820140f86f359309fd50ac1416cbe3ab8fe31d561beca57707dc33935ee5d867",
       "declarations": [
         "Becoming.Flow.BalancesOn.comes_from_standing"
       ]
@@ -554,7 +554,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1d540f698048f1ae2d00b2e31e7b9607a418e5df960af36c604156544b86eb5d"
+      "sha256": "07fe5af5430049cfab70de14b7dac42a0cd6ddfa5744d22e41a39f1fdbdadff3"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -576,6 +576,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
     }
   ],
@@ -624,7 +630,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -923,6 +929,10 @@
     {
       "en": "19 October 2026, F3 sweep step 1 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts and connectivity follow the sweep run, and its list of checks names the superseded register). The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 1：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean). Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's layers start from Becoming.World and name Becoming.Labelled; the P69 paragraph says where the readings now live; counts, receipt and connectivity follow the W1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

@@ -1,0 +1,11 @@
+import Becoming.TreeSearchRuns
+#check @Becoming.TreeSearchRuns.advance_found
+#check @Becoming.TreeSearchRuns.advance_empty
+#check @Becoming.TreeSearchRuns.orbit_fixed
+#check @Becoming.TreeSearchRuns.orbit_reads_scan_from
+#check @Becoming.TreeSearchRuns.orbit_reads_scan
+#check @Becoming.TreeSearchRuns.run_reads_scan
+#check @Becoming.TreeSearchRuns.run_reads_discover
+#check @Becoming.TreeSearchRuns.found_without_reading_rest
+#check @Becoming.TreeSearchRuns.pending_then_found
+#check @Becoming.TreeSearchRuns.example_found

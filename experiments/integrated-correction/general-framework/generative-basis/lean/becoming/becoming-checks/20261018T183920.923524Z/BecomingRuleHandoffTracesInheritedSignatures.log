@@ -1,0 +1,45 @@
+@Becoming.RuleHandoffTracesInherited.entry_step_requires : ∀ {s t : OrganizationalRuleInheritance.State} {c : Nat}
+  {b : OrganizationalRuleInheritance.Ballot},
+  OrganizationalRuleInheritance.process.step s (OrganizationalRuleInheritance.Event.enroll c b) t →
+    (s.reviews.any fun e => e.snd == c) = true ∧ OrganizationalRuleInheritance.governance s b = true
+@Becoming.RuleHandoffTracesInherited.handoff_step_present : ∀ {s t : OrganizationalRuleInheritance.State}
+  {cs : List Nat},
+  OrganizationalRuleInheritance.process.step s (OrganizationalRuleInheritance.Event.handoff cs) t →
+    ∀ {i : Nat}, i ∈ t.present → i ∈ s.present ∧ i ∈ cs
+@Becoming.RuleHandoffTracesInherited.fork_shares_position : ∀ {t : OrganizationalRuleInheritance.State},
+  OrganizationalRuleInheritance.process.step OrganizationalRuleInheritance.revised
+      (OrganizationalRuleInheritance.Event.handoff [0, 1]) t →
+    0 ∈ OrganizationalRuleInheritance.revised.present ∧ 0 ∈ t.present
+@Becoming.RuleHandoffTracesInherited.nonadopting_trace_keeps_rule : ∀ {s t : OrganizationalRuleInheritance.State}
+  {es : List OrganizationalRuleInheritance.Event},
+  Generative.Trace OrganizationalRuleInheritance.process s es t →
+    (∀ (e : OrganizationalRuleInheritance.Event), e ∈ es → OrganizationalRuleInheritance.nonAdopting e = true) →
+      t.rule = s.rule
+@Becoming.RuleHandoffTracesInherited.same_relations_same_integration : ∀ {s t : OrganizationalRuleInheritance.State}
+  (b : OrganizationalRuleInheritance.Ballot),
+  s.roster = t.roster →
+    s.present = t.present →
+      s.rule = t.rule →
+        (Generative.Enabled OrganizationalRuleInheritance.process s (OrganizationalRuleInheritance.Event.integrate b) ↔
+          Generative.Enabled OrganizationalRuleInheritance.process t (OrganizationalRuleInheritance.Event.integrate b))
+@Becoming.RuleHandoffTracesInherited.no_presence_no_integration : ∀ {s : OrganizationalRuleInheritance.State}
+  (b : OrganizationalRuleInheritance.Ballot),
+  s.present = [] →
+    ¬Generative.Enabled OrganizationalRuleInheritance.process s (OrganizationalRuleInheritance.Event.integrate b)
+@Becoming.RuleHandoffTracesInherited.majority_integration_extends : ∀ {s : OrganizationalRuleInheritance.State}
+  {b : OrganizationalRuleInheritance.Ballot},
+  s.rule = OrganizationalRuleInheritance.Rule.majority →
+    Generative.Enabled OrganizationalRuleInheritance.process s (OrganizationalRuleInheritance.Event.integrate b) →
+      Generative.Enabled OrganizationalRuleInheritance.process
+        { roster := s.roster, present := s.present, reviews := s.reviews,
+          rule := OrganizationalRuleInheritance.Rule.timedTwo, proposal := s.proposal, adoptions := s.adoptions,
+          accepted := s.accepted }
+        (OrganizationalRuleInheritance.Event.integrate b)
+@Becoming.RuleHandoffTracesInherited.bool_eq_of_iff : ∀ {x y : Bool}, (x = true ↔ y = true) → x = y
+Becoming.RuleHandoffTracesInherited.counts_no_integration_reading : ¬∃ f,
+    (f (OrganizationalRuleInheritance.summary OrganizationalRuleInheritance.formed) = true ↔
+        Generative.Enabled OrganizationalRuleInheritance.process OrganizationalRuleInheritance.formed
+          (OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote)) ∧
+      (f (OrganizationalRuleInheritance.summary OrganizationalRuleInheritance.revised) = true ↔
+        Generative.Enabled OrganizationalRuleInheritance.process OrganizationalRuleInheritance.revised
+          (OrganizationalRuleInheritance.Event.integrate OrganizationalRuleInheritance.twoVote))

@@ -104,7 +104,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
       "role": "proof",
-      "sha256": "7deceb354836ccbfdaec1da33f7ff6e988f41da04a6f591756c486c41fe48654",
+      "sha256": "a6945f150c75540f35e320bc11c75dc15965e439f7592eee33f9411c7aa6776e",
       "declarations": [
         "Becoming.ContinuingRevision.State",
         "Becoming.ContinuingRevision.Act",
@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "1d540f698048f1ae2d00b2e31e7b9607a418e5df960af36c604156544b86eb5d",
+      "sha256": "07fe5af5430049cfab70de14b7dac42a0cd6ddfa5744d22e41a39f1fdbdadff3",
       "declarations": []
     },
     {
@@ -243,7 +243,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
       "role": "proof",
-      "sha256": "d9abec4ff1f686aa4d6e0c04d32d6fafb99cd03e794c12426b6556c0b2725905",
+      "sha256": "5050f01032ca162bc9e23f0cdb707b6a270da2ccc0b53b00e0557c6b18f4c52f",
       "declarations": [
         "Becoming.Stock.Balanced",
         "Becoming.Stock.cycles_need",
@@ -257,19 +257,25 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ContinuingRevision",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -549,6 +555,10 @@
     {
       "en": "19 October 2026, F3 sweep step 1 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts and connectivity follow the sweep run, and its list of checks names the superseded register). The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 1：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (ContinuingRevision.lean, Stock.lean). Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's layers start from Becoming.World and name Becoming.Labelled; the P69 paragraph says where the readings now live; counts, receipt and connectivity follow the W1 run). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

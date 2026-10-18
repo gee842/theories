@@ -1,0 +1,10 @@
+import Becoming.ProjectedLawTraces
+#print axioms Becoming.ProjectedLawTraces.commuting_iff_factors
+#print axioms Becoming.ProjectedLawTraces.fibre_iff_goAlike
+#print axioms Becoming.ProjectedLawTraces.commuting_iff_traces
+#print axioms Becoming.ProjectedLawTraces.traces_compose
+#print axioms Becoming.ProjectedLawTraces.coupled_trace
+#print axioms Becoming.ProjectedLawTraces.wiring_recurrence
+#print axioms Becoming.ProjectedLawTraces.left_not_goAlike
+#print axioms Becoming.ProjectedLawTraces.left_carries_no_law
+#print axioms Becoming.ProjectedLawTraces.assembly_draws

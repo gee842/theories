@@ -221,7 +221,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
       "declarations": [
         "Becoming.Web.Supported",
         "Becoming.Web.Dependent",
@@ -270,6 +270,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -289,7 +295,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -561,6 +567,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

@@ -1,0 +1,19 @@
+'Becoming.ReceptionTracesInherited.reception' does not depend on any axioms
+'Becoming.ReceptionTracesInherited.step_iff' does not depend on any axioms
+'Becoming.ReceptionTracesInherited.trace_end' does not depend on any axioms
+'Becoming.ReceptionTracesInherited.expose_trace' does not depend on any axioms
+'Becoming.ReceptionTracesInherited.along' does not depend on any axioms
+'Becoming.ReceptionTracesInherited.total_kept' depends on axioms: [propext, Quot.sound]
+'Becoming.ReceptionTracesInherited.still_without_support' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.broadening_trace' depends on axioms: [propext, Quot.sound]
+'Becoming.ReceptionTracesInherited.grouping_assembles' depends on axioms: [propext, Quot.sound]
+'Becoming.ReceptionTracesInherited.reception_changes_parse' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.response_keeps_history' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.support_used' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.parse_without_support' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.order_not_frequency' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.narrowCourse' does not depend on any axioms
+'Becoming.ReceptionTracesInherited.broadening_after_failure' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.parsed_not_broadened' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.broadening_keeps_prefix' depends on axioms: [propext]
+'Becoming.ReceptionTracesInherited.broadening_parses_one_form' depends on axioms: [propext]

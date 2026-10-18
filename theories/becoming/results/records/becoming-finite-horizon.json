@@ -249,7 +249,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
+      "sha256": "dd46c64db93e1eac72a21660f62953a4b1a9f3be6a56f82b2bd3d740bbdeff00",
       "declarations": [
         "Becoming.Renewable.no_exact_finite_reading",
         "Becoming.Renewable.finite_reading_withholds_renewal"
@@ -258,7 +258,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "672d7cd5d368d699186ab6a3048e9750959df92c6e49fc964b9aad1e0f2a1ec8",
+      "sha256": "bb812c6cd7704808e87e883dc5a78ee95794acd6cbf0ecc04d71c2533d04d9c5",
       "declarations": [
         "Becoming.Run.cons",
         "Becoming.Run.AgreeUpTo",
@@ -274,16 +274,23 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
       "role": "proof",
-      "sha256": "20ecc226f5228135c051d9830995ff784731854d0c39c2fd06c40e03834a13f8",
+      "sha256": "469737b2180554148efd736cc21a323aaba416efbebc08117b5e658a710d2695",
       "declarations": [
-        "Becoming.Renewable.process",
         "Becoming.Renewable.conditions"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb",
+      "declarations": [
+        "Becoming.Renewable.process"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
       "declarations": [
         "Becoming.Web.RenewingAt",
         "Becoming.Web.ConsumingIn",
@@ -323,7 +330,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
       "role": "proof",
-      "sha256": "fec78adc7074d6776394dc35734d5fc2ac186ee96f70d0e0ac2100642f67b1b7",
+      "sha256": "4d7b89144e1ed6b7222507861a6a760c6e20f1c560bdd6c745aab15c8b110374",
       "declarations": [
         "Becoming.Web.RenewingInWithin",
         "Becoming.Web.UnderminingFor"
@@ -355,20 +362,33 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -780,6 +800,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Testing.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: process from Renewal.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Horizon.lean, Testing.lean). Re-pointed after reading the change (Dependence.lean: the fold; Renewal.lean: the fold; Return.lean: the fold). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

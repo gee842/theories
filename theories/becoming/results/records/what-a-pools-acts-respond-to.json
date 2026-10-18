@@ -409,7 +409,7 @@
         "Becoming.Flow.CoupledFromEither",
         "Becoming.thresholdOnly"
       ],
-      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1"
+      "sha256": "dd46c64db93e1eac72a21660f62953a4b1a9f3be6a56f82b2bd3d740bbdeff00"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
@@ -458,12 +458,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "7cd617f01252bb8596c729bd4b7fe867aa6cd6ffc17ba2b881c1cfdf974ef90b"
+      "sha256": "95fa7deae4f3f7aa3c359f141c3a1900a8b39387b37788aa7bd0e199ca02567f"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1d540f698048f1ae2d00b2e31e7b9607a418e5df960af36c604156544b86eb5d"
+      "sha256": "07fe5af5430049cfab70de14b7dac42a0cd6ddfa5744d22e41a39f1fdbdadff3"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -493,6 +493,10 @@
     {
       "en": "19 October 2026, F3 sweep step 1 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts and connectivity follow the sweep run, and its list of checks names the superseded register). The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 1：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the fold; THE-THEORY-OF-BECOMING.md: section 9's layers start from Becoming.World and name Becoming.Labelled; the P69 paragraph says where the readings now live; counts, receipt and connectivity follow the W1 run; Testing.lean: the fold). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

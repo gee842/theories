@@ -194,11 +194,18 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
       "role": "proof",
-      "sha256": "20ecc226f5228135c051d9830995ff784731854d0c39c2fd06c40e03834a13f8",
+      "sha256": "469737b2180554148efd736cc21a323aaba416efbebc08117b5e658a710d2695",
       "declarations": [
         "Becoming.Conditions",
+        "Becoming.falls_not_recurring"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb",
+      "declarations": [
         "Becoming.Conditions.along",
-        "Becoming.falls_not_recurring",
         "Becoming.Run.not_of_depletion",
         "Becoming.no_execution_of_depletion",
         "Becoming.Run.renewal_recurs",
@@ -209,7 +216,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "111d4264083e40f97d4039ab4f7acd52daf0cda90b096e07f3c0dc7cf1a2cd65",
+      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
       "declarations": [
         "Becoming.Conditions.valuation",
         "Becoming.Conditions.connected_of_common",
@@ -329,19 +336,25 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Renewal",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -371,6 +384,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -821,6 +841,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: along, not_of_depletion, no_execution_of_depletion, renewal_recurs, drawdown_not_recurring, class_belongs_to_the_run from Renewal.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Metaethics.lean, Renewal.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

@@ -1,0 +1,63 @@
+Becoming.TreeSearchRunsInherited.spent_le_step : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {f : List AcquiredCorrection.Entry},
+  r.state 0 = { frontier := f, found := none, spent := 0 } → ∀ (n : Nat), (r.state n).spent ≤ n
+Becoming.TreeSearchRunsInherited.found_located : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {f : List AcquiredCorrection.Entry}
+  {root : AcquiredCorrection.Tree},
+  r.state 0 = { frontier := f, found := none, spent := 0 } →
+    AcquiredCorrection.coherent root f →
+      ∀ {n : Nat} {t : AcquiredCorrection.Ticket},
+        Becoming.TreeSearchRuns.verdict (r.state n) = AcquiredCorrection.Verdict.found t →
+          AcquiredCorrection.locate root t.fst = some t.snd
+Becoming.TreeSearchRunsInherited.found_real : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {root : AcquiredCorrection.Tree},
+  r.state 0 = Becoming.TreeSearchRuns.start root →
+    ∀ {n : Nat} {t : AcquiredCorrection.Ticket},
+      Becoming.TreeSearchRuns.verdict (r.state n) = AcquiredCorrection.Verdict.found t →
+        AcquiredCorrection.locate root t.fst = some t.snd
+Becoming.TreeSearchRunsInherited.exhausted_dead : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {f : List AcquiredCorrection.Entry},
+  r.state 0 = { frontier := f, found := none, spent := 0 } →
+    ∀ {n : Nat},
+      Becoming.TreeSearchRuns.verdict (r.state n) = AcquiredCorrection.Verdict.exhausted →
+        AcquiredCorrection.live f = false
+Becoming.TreeSearchRunsInherited.steps_settle : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {f : List AcquiredCorrection.Entry},
+  r.state 0 = { frontier := f, found := none, spent := 0 } →
+    ∀ {n : Nat},
+      AcquiredCorrection.burden f ≤ n → Becoming.TreeSearchRuns.verdict (r.state n) ≠ AcquiredCorrection.Verdict.pending
+Becoming.TreeSearchRunsInherited.inhabited_found : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {root : AcquiredCorrection.Tree},
+  r.state 0 = Becoming.TreeSearchRuns.start root →
+    ∀ {n : Nat},
+      AcquiredCorrection.nodes root ≤ n →
+        AcquiredCorrection.inhabited root = true →
+          ∃ t,
+            Becoming.TreeSearchRuns.verdict (r.state n) = AcquiredCorrection.Verdict.found t ∧
+              AcquiredCorrection.locate root t.fst = some t.snd
+Becoming.TreeSearchRunsInherited.acquire_charges_run : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {root : AcquiredCorrection.Tree},
+  r.state 0 = Becoming.TreeSearchRuns.start root →
+    ∀ (n : Nat) (s : EffectiveCommand.State),
+      n ≤ s.reserve →
+        s.time + n ≤ s.deadline →
+          ∃ after,
+            AcquiredCorrection.acquire n root s = some (Becoming.TreeSearchRuns.read (r.state n), after) ∧
+              after.reserve + (r.state n).spent = s.reserve ∧
+                after.spent = s.spent + (r.state n).spent ∧ after.time = s.time + (r.state n).spent
+Becoming.TreeSearchRunsInherited.search_then_dispatch : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)) {root : AcquiredCorrection.Tree},
+  r.state 0 = Becoming.TreeSearchRuns.start root →
+    ∀ (s : EffectiveCommand.State),
+      AcquiredCorrection.inhabited root = true →
+        s.signed = true →
+          s.credential = s.authority →
+            2 * AcquiredCorrection.nodes root + 3 ≤ s.reserve →
+              s.time + (2 * AcquiredCorrection.nodes root + 3) ≤ s.deadline →
+                ∃ t after,
+                  AcquiredCorrection.acquire (AcquiredCorrection.nodes root) root s =
+                      some (Becoming.TreeSearchRuns.read (r.state (AcquiredCorrection.nodes root)), after) ∧
+                    Becoming.TreeSearchRuns.verdict (r.state (AcquiredCorrection.nodes root)) =
+                        AcquiredCorrection.Verdict.found t ∧
+                      (AcquiredCorrection.dispatch root t after).succeeded = true ∧
+                        (AcquiredCorrection.dispatch root t after).state.completed = true

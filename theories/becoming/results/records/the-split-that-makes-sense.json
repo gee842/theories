@@ -415,18 +415,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "365fe9764be2ef5ceca70283b52dbfeb8afca7e3372fbb25bcdfa5094b96e551",
+      "sha256": "48718b1ebbf2c205d78e7175c3b01e4b2cbaf8edba463fca7f3f0c94d00bfe8a",
+      "declarations": [
+        "Becoming.Law.frameBy",
+        "Becoming.Law.SameFuture",
+        "Becoming.Law.alike_iff_sameFuture",
+        "Becoming.Law.IdentifiesAlike.carries"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb",
       "declarations": [
         "Becoming.Alike",
         "Becoming.Alike.refl",
         "Becoming.Bisimulation",
         "Becoming.IdentifiesAlike",
         "Becoming.identifiesAlike_iff",
-        "Becoming.identifiesAlike_id_iff",
-        "Becoming.Law.frameBy",
-        "Becoming.Law.SameFuture",
-        "Becoming.Law.alike_iff_sameFuture",
-        "Becoming.Law.IdentifiesAlike.carries"
+        "Becoming.identifiesAlike_id_iff"
       ]
     },
     {
@@ -545,6 +552,12 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -557,7 +570,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -587,6 +600,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -750,6 +770,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. This record's live fields name the declarations by their new names; prose words are unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, Description.lean, Learning.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: Alike, refl, Bisimulation, IdentifiesAlike, identifiesAlike_iff, identifiesAlike_id_iff from Unfolding.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Unfolding.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

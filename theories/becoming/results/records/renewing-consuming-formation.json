@@ -210,7 +210,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
       "role": "proof",
-      "sha256": "d9abec4ff1f686aa4d6e0c04d32d6fafb99cd03e794c12426b6556c0b2725905",
+      "sha256": "5050f01032ca162bc9e23f0cdb707b6a270da2ccc0b53b00e0557c6b18f4c52f",
       "declarations": [
         "Becoming.Stock.FallsBy",
         "Becoming.Stock.trace_falls",
@@ -255,6 +255,12 @@
       "role": "provenance",
       "sha256": "9b3a7b10f675e8048cd2ad8ccbb10657611206eff53d071ecbb5db54a574896e",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -274,7 +280,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -339,6 +345,10 @@
     },
     {
       "en": "17 October 2026, source reconciliation after relabelling (Ren's 17 October directive: earlier words are provenance, not authority): G0-WARRANT.md now uses the current vocabulary (living significance for G0, the continuation condition for the one axiom, the theory without axiom for Part I, section 6 retitled), with delegation and process markers removed and every earlier anchor kept. The integrator compared the change and found relabelling only; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Stock.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

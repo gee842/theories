@@ -101,6 +101,7 @@ identity-across-steps shows that readings following a formation (arising, unceas
 | provenance | [2026-10-09-complete-theory-of-becoming.md](../../../../sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `Becoming.Web.Census.balanceFrom`, `Becoming.Web.Census.balanceFrom_eq`, `Becoming.Web.Census.arisingFrom_of_ceasingFrom`, `Becoming.Web.Census.ceasingFrom_of_arisingFrom`, `Becoming.Web.CeasesFrom`, `Becoming.Web.NoMerge`, `Becoming.Tandem.budding`, `Becoming.Tandem.joining`, `Becoming.gaining_of_losing`, `Becoming.losing_of_gaining`
 
@@ -116,6 +117,7 @@ Aliases: `Becoming.Web.Census.balanceFrom`, `Becoming.Web.Census.balanceFrom_eq`
 - 16 October 2026, P110 (readings decided on Ren's delegation of 15 October 2026, study section 147, DELEGATED-CHOICES D2, D36): readings and names formerly left to Ren are adopted or declined as those decisions say, and next steps asking for Ren's judgment on them are removed. Statements, proofs and bindings unchanged; Ren can reverse any of the decisions.
 - 16 October 2026, landing P110–P112 (study sections 147–149): rebound to the new receipt and rehashed: THE-THEORY-OF-BECOMING.md (P110: §8's “Ren's choices” became “Readings decided on Ren's delegation” and “What stays Ren's”, readings formerly pending Ren elsewhere carry their decision numbers (DELEGATED-CHOICES), and the D39 lines were added; P111 and P112: §9 rows for Becoming.Gain and Becoming.Gluing; totals moved to the new receipt).
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Flow.lean). The claim is unchanged.
 - 67 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](census-balance-under-continuation.json).
 
 <a id="earlier-text--早期文本"></a>

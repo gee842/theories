@@ -92,6 +92,7 @@ Ren's proposal says that the self can become rigid and “has to count the dynam
 | review | [CONTINUATION-GROUNDING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-REVIEW.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `Becoming.Flow.WithinOwn`, `Becoming.Flow.WithinJoint`, `Becoming.Flow.joint_keeps`, `Becoming.Flow.excess_lowers`, `Becoming.Flow.excess_bounded`, `Becoming.Flow.stays_below`, `Becoming.Flow.ends_below`, `Becoming.Flow.joint_excess_ends`, `Becoming.Pair.no_web`, `Becoming.Exceeding.all_end`, `Becoming.Alone.all_continue`
 
@@ -109,6 +110,7 @@ Aliases: `Becoming.Flow.WithinOwn`, `Becoming.Flow.WithinJoint`, `Becoming.Flow.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the next step asked for an instance theorem to RelationalRenewal's support-gated law; RenewalBridge (relational-renewal-classification) gives the loss-for-good instances and jointly_ends, and that family cannot represent each drawer's share, so the next step now names the remaining joint-excess split and the wear law, and the record is added as related. Earlier text in text_versions.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Flow.lean). The claim is unchanged.
 - 52 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](own-count-misses-joint-excess.json).
 
 <a id="earlier-text--早期文本"></a>

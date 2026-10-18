@@ -1,0 +1,176 @@
+@Becoming.blocks_ofModel : ∀ {S : Type u_1} {A B O : Type u_2} (m : Generative.ExplanatoryBranching.Model S A O)
+  (expand : B → List A),
+  Becoming.Frame.ofModel (Generative.ExplanatoryGranularity.blocks m expand) = (Becoming.Frame.ofModel m).blocks expand
+@Becoming.encode_eq_flatMap : ∀ {A B : Type u_1} (g : B → List A) (l : List B),
+  Becoming.Segmentation.encode g l = List.flatMap g l
+@Becoming.BranchingTest.holds_ofTest : ∀ {S : Type u_1} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} (q : Generative.ExplanatoryBranching.Test A O) (s : S),
+  Becoming.BranchingTest.Holds (Becoming.Frame.ofModel m) s (Becoming.BranchingTest.ofTest q) ↔
+    Generative.ExplanatoryBranching.Holds m s q
+@Becoming.BranchingTest.toTest_along : ∀ {A O : Type u_1} (word : List A) (φ : Becoming.BranchingTest A O),
+  (Becoming.BranchingTest.along word φ).toTest = Generative.ExplanatoryGranularity.along word φ.toTest
+@Becoming.BranchingTest.toTest_finer : ∀ {A B O : Type u_1} (expand : B → List A) (φ : Becoming.BranchingTest B O),
+  (Becoming.BranchingTest.finer expand φ).toTest = Generative.ExplanatoryGranularity.compile expand φ.toTest
+@Becoming.BranchingTest.holds_finer : ∀ {S : Type u_1} {A B O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} (expand : B → List A) (φ : Becoming.BranchingTest B O) (s : S),
+  Becoming.BranchingTest.Holds (Becoming.Frame.ofModel m) s (Becoming.BranchingTest.finer expand φ) ↔
+    Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGranularity.compile expand φ.toTest)
+@Becoming.compile_correct_by_core : ∀ {S : Type u_1} {A B O : Type u_2}
+  (m : Generative.ExplanatoryBranching.Model S A O) (expand : B → List A) (q : Generative.ExplanatoryBranching.Test B O)
+  (s : S),
+  Generative.ExplanatoryBranching.Holds (Generative.ExplanatoryGranularity.blocks m expand) s q ↔
+    Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGranularity.compile expand q)
+@Becoming.blocks_trace_iff_by_core : ∀ {S : Type u_1} {A B O : Type u_2}
+  (m : Generative.ExplanatoryBranching.Model S A O) (expand : B → List A) (word : List B) (s t : S),
+  Generative.Trace (Generative.ExplanatoryGranularity.blocks m expand).process s word t ↔
+    Generative.Trace m.process s (List.flatMap expand word) t
+@Becoming.finite_trace_endpoints_by_core : ∀ {S : Type u_1} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O},
+  Generative.ExplanatoryBranching.ImageFinite m →
+    ∀ (word : List A) (s : S), ∃ endpoints, ∀ (t : S), Generative.Trace m.process s word t ↔ t ∈ endpoints
+@Becoming.blocks_image_finite_by_core : ∀ {S : Type u_1} {A B O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O},
+  Generative.ExplanatoryBranching.ImageFinite m →
+    ∀ (expand : B → List A),
+      Generative.ExplanatoryBranching.ImageFinite (Generative.ExplanatoryGranularity.blocks m expand)
+@Becoming.answers_finer_iff : ∀ {S : Type u_1} {T : Type u_3} {A B D O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T D O}
+  {left : B → List A} {right : B → List D} {s : S} {t : T},
+  (∀ (φ : Becoming.BranchingTest B O),
+      Becoming.BranchingTest.Holds (Becoming.Frame.ofModel m) s (Becoming.BranchingTest.finer left φ) ↔
+        Becoming.BranchingTest.Holds (Becoming.Frame.ofModel n) t (Becoming.BranchingTest.finer right φ)) ↔
+    ∀ (q : Generative.ExplanatoryBranching.Test B O),
+      Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGranularity.compile left q) ↔
+        Generative.ExplanatoryBranching.Holds n t (Generative.ExplanatoryGranularity.compile right q)
+@Becoming.cross_granularity_history_matches_of_em : ∀ {S : Type u_1} {T : Type u_3} {A B D O : Type u_2},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T D O},
+      Generative.ExplanatoryBranching.ImageFinite n →
+        ∀ (left : B → List A) (right : B → List D) {s : S} {t : T},
+          (∀ (q : Generative.ExplanatoryBranching.Test B O),
+              Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGranularity.compile left q) ↔
+                Generative.ExplanatoryBranching.Holds n t (Generative.ExplanatoryGranularity.compile right q)) →
+            ∀ {word : List B} {finish : S},
+              Generative.Trace m.process s (List.flatMap left word) finish →
+                ∃ finish',
+                  Generative.Trace n.process t (List.flatMap right word) finish' ∧
+                    ∀ (q : Generative.ExplanatoryBranching.Test B O),
+                      Generative.ExplanatoryBranching.Holds m finish
+                          (Generative.ExplanatoryGranularity.compile left q) ↔
+                        Generative.ExplanatoryBranching.Holds n finish'
+                          (Generative.ExplanatoryGranularity.compile right q)
+@Becoming.singleton_coverage_recovers_questions_by_core : ∀ {S : Type u_1} {A B O : Type u_2}
+  (m : Generative.ExplanatoryBranching.Model S A O) (expand : B → List A) (name : A → B),
+  (∀ (a : A), expand (name a) = [a]) →
+    ∀ (s t : S),
+      Generative.ExplanatoryBranching.Same (Generative.ExplanatoryGranularity.blocks m expand)
+          (Generative.ExplanatoryGranularity.blocks m expand) s t ↔
+        Generative.ExplanatoryBranching.Same m m s t
+@Becoming.full_and_block_reduced_kernels_by_core : ∀ {S : Type u_1} {A B O : Type u_2}
+  (m : Generative.ExplanatoryBranching.Model S A O) (expand : B → List A) (name : A → B),
+  (∀ (a : A), expand (name a) = [a]) →
+    ∀ {C E : Type} (p : Generative.ExplanatoryUniqueness.Presentation S (Generative.ExplanatoryBranching.Test A O) C)
+      (r : Generative.ExplanatoryUniqueness.Presentation S (Generative.ExplanatoryBranching.Test B O) E),
+      Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryBranching.Holds m) p →
+        Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryBranching.Holds m) p →
+          Generative.ExplanatoryUniqueness.Exact
+              (Generative.ExplanatoryBranching.Holds (Generative.ExplanatoryGranularity.blocks m expand)) r →
+            Generative.ExplanatoryUniqueness.Reduced
+                (Generative.ExplanatoryBranching.Holds (Generative.ExplanatoryGranularity.blocks m expand)) r →
+              ∀ (s t : S), p.encode s = p.encode t ↔ r.encode s = r.encode t
+@Becoming.Recipe.toProgram_ofProgram : ∀ {A O : Type u_1} (p : Generative.ExplanatoryGuardedPrograms.Program A O),
+  (Becoming.Recipe.ofProgram p).toProgram = p
+@Becoming.Recipe.ofProgram_toProgram : ∀ {A O : Type u_1} (r : Becoming.Recipe A O),
+  Becoming.Recipe.ofProgram r.toProgram = r
+@Becoming.Recipe.leads_ofProgram : ∀ {S : Type u_1} {A O : Type u_2} (m : Generative.ExplanatoryBranching.Model S A O)
+  (p : Generative.ExplanatoryGuardedPrograms.Program A O) {s t : S},
+  Becoming.Recipe.Leads (Becoming.Frame.ofModel m) (Becoming.Recipe.ofProgram p) s t ↔
+    Generative.ExplanatoryGuardedPrograms.Executes m p s t
+@Becoming.Recipe.toTest_after : ∀ {A O : Type u_1} (p : Becoming.Recipe A O) (φ : Becoming.BranchingTest A O),
+  (p.after φ).toTest = Generative.ExplanatoryGuardedPrograms.diamond p.toProgram φ.toTest
+@Becoming.Recipe.holds_after_ofProgram : ∀ {S : Type u_1} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} (p : Generative.ExplanatoryGuardedPrograms.Program A O)
+  (q : Generative.ExplanatoryBranching.Test A O) (s : S),
+  Becoming.BranchingTest.Holds (Becoming.Frame.ofModel m) s
+      ((Becoming.Recipe.ofProgram p).after (Becoming.BranchingTest.ofTest q)) ↔
+    Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGuardedPrograms.diamond p q)
+@Becoming.Recipe.exists_leads_ofProgram : ∀ {S : Type u_1} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O} (p : Generative.ExplanatoryGuardedPrograms.Program A O)
+  (q : Generative.ExplanatoryBranching.Test A O) (s : S),
+  (∃ t,
+      Becoming.Recipe.Leads (Becoming.Frame.ofModel m) (Becoming.Recipe.ofProgram p) s t ∧
+        Becoming.BranchingTest.Holds (Becoming.Frame.ofModel m) t (Becoming.BranchingTest.ofTest q)) ↔
+    ∃ t, Generative.ExplanatoryGuardedPrograms.Executes m p s t ∧ Generative.ExplanatoryBranching.Holds m t q
+@Becoming.diamond_correct_of_decided : ∀ {S : Type u_1} {A O : Type u_2}
+  {m : Generative.ExplanatoryBranching.Model S A O},
+  Becoming.TestsDecided (Becoming.Frame.ofModel m) →
+    ∀ (p : Generative.ExplanatoryGuardedPrograms.Program A O) (q : Generative.ExplanatoryBranching.Test A O) (s : S),
+      Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGuardedPrograms.diamond p q) ↔
+        ∃ t, Generative.ExplanatoryGuardedPrograms.Executes m p s t ∧ Generative.ExplanatoryBranching.Holds m t q
+@Becoming.diamond_correct_of_em : ∀ {S : Type u_1} {A O : Type u_2},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ (m : Generative.ExplanatoryBranching.Model S A O) (p : Generative.ExplanatoryGuardedPrograms.Program A O)
+      (q : Generative.ExplanatoryBranching.Test A O) (s : S),
+      Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGuardedPrograms.diamond p q) ↔
+        ∃ t, Generative.ExplanatoryGuardedPrograms.Executes m p s t ∧ Generative.ExplanatoryBranching.Holds m t q
+@Becoming.program_compile_correct_of_em : ∀ {S : Type u_1} {A B O : Type u_2},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ (m : Generative.ExplanatoryBranching.Model S A O) (recipe : B → Generative.ExplanatoryGuardedPrograms.Program A O)
+      (q : Generative.ExplanatoryBranching.Test B O) (s : S),
+      Generative.ExplanatoryBranching.Holds (Generative.ExplanatoryGuardedPrograms.programModel m recipe) s q ↔
+        Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGuardedPrograms.compile recipe q)
+@Becoming.Recipe.ofProgram_wordProgram : ∀ {A O : Type u_1} (word : List A),
+  Becoming.Recipe.ofProgram (Generative.ExplanatoryGuardedPrograms.wordProgram word) = Becoming.Recipe.word word
+@Becoming.word_program_exact_by_core : ∀ {S : Type u_1} {A O : Type u_2}
+  (m : Generative.ExplanatoryBranching.Model S A O) (word : List A) (s t : S),
+  Generative.ExplanatoryGuardedPrograms.Executes m (Generative.ExplanatoryGuardedPrograms.wordProgram word) s t ↔
+    Generative.Trace m.process s word t
+@Becoming.execution_has_native_trace_by_core : ∀ {S : Type u_1} {A O : Type u_2}
+  (m : Generative.ExplanatoryBranching.Model S A O) (p : Generative.ExplanatoryGuardedPrograms.Program A O) {s t : S},
+  Generative.ExplanatoryGuardedPrograms.Executes m p s t → ∃ word, Generative.Trace m.process s word t
+@Becoming.finite_program_endpoints_of_em : ∀ {S : Type u_1} {A O : Type u_2},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {m : Generative.ExplanatoryBranching.Model S A O},
+      Generative.ExplanatoryBranching.ImageFinite m →
+        ∀ (p : Generative.ExplanatoryGuardedPrograms.Program A O) (s : S),
+          ∃ xs, ∀ (t : S), Generative.ExplanatoryGuardedPrograms.Executes m p s t ↔ t ∈ xs
+@Becoming.guarded_history_matches_of_em : ∀ {S : Type u_1} {T : Type u_3} {A B D O : Type u_2},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {m : Generative.ExplanatoryBranching.Model S A O} {n : Generative.ExplanatoryBranching.Model T D O},
+      Generative.ExplanatoryBranching.ImageFinite n →
+        ∀ (left : B → Generative.ExplanatoryGuardedPrograms.Program A O)
+          (right : B → Generative.ExplanatoryGuardedPrograms.Program D O) {s : S} {t : T},
+          (∀ (q : Generative.ExplanatoryBranching.Test B O),
+              Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGuardedPrograms.compile left q) ↔
+                Generative.ExplanatoryBranching.Holds n t (Generative.ExplanatoryGuardedPrograms.compile right q)) →
+            ∀ {word : List B} {finish : S},
+              Generative.Trace (Generative.ExplanatoryGuardedPrograms.programModel m left).process s word finish →
+                ∃ finish',
+                  Generative.Trace (Generative.ExplanatoryGuardedPrograms.programModel n right).process t word finish' ∧
+                    ∀ (q : Generative.ExplanatoryBranching.Test B O),
+                      Generative.ExplanatoryBranching.Holds m finish
+                          (Generative.ExplanatoryGuardedPrograms.compile left q) ↔
+                        Generative.ExplanatoryBranching.Holds n finish'
+                          (Generative.ExplanatoryGuardedPrograms.compile right q)
+@Becoming.branch_executes_by_core : ∀ {S : Type u_1} {A O : Type u_2} (m : Generative.ExplanatoryBranching.Model S A O)
+  (test : Generative.ExplanatoryBranching.Test A O) (yes no : Generative.ExplanatoryGuardedPrograms.Program A O)
+  (s t : S),
+  Generative.ExplanatoryGuardedPrograms.Executes m (Generative.ExplanatoryGuardedPrograms.branch test yes no) s t ↔
+    Generative.ExplanatoryBranching.Holds m s test ∧ Generative.ExplanatoryGuardedPrograms.Executes m yes s t ∨
+      ¬Generative.ExplanatoryBranching.Holds m s test ∧ Generative.ExplanatoryGuardedPrograms.Executes m no s t
+@Becoming.guard_hoisting_sound_by_core : ∀ {S : Type u_1} {A O : Type u_2}
+  (m : Generative.ExplanatoryBranching.Model S A O) (pre yes no : Generative.ExplanatoryGuardedPrograms.Program A O)
+  (test : Generative.ExplanatoryBranching.Test A O) (s t : S),
+  (∀ (middle : S),
+      Generative.ExplanatoryGuardedPrograms.Executes m pre s middle →
+        (Generative.ExplanatoryBranching.Holds m middle test ↔ Generative.ExplanatoryBranching.Holds m s test)) →
+    (Generative.ExplanatoryGuardedPrograms.Executes m
+        (pre.seq (Generative.ExplanatoryGuardedPrograms.branch test yes no)) s t ↔
+      Generative.ExplanatoryGuardedPrograms.Executes m
+        (Generative.ExplanatoryGuardedPrograms.branch test (pre.seq yes) (pre.seq no)) s t)
+Becoming.diamond_correct_iff_em : (∀ (m : Generative.ExplanatoryBranching.Model Unit Unit Unit)
+    (p : Generative.ExplanatoryGuardedPrograms.Program Unit Unit) (q : Generative.ExplanatoryBranching.Test Unit Unit)
+    (s : Unit),
+    Generative.ExplanatoryBranching.Holds m s (Generative.ExplanatoryGuardedPrograms.diamond p q) ↔
+      ∃ t, Generative.ExplanatoryGuardedPrograms.Executes m p s t ∧ Generative.ExplanatoryBranching.Holds m t q) ↔
+  ∀ (p : Prop), Becoming.Decided p

@@ -1,0 +1,3 @@
+import Becoming.JointPhaseTracesInherited
+#print axioms Becoming.JointPhaseTracesInherited.summary_response
+#print axioms Becoming.JointPhaseTracesInherited.summary_omits_register

@@ -1,0 +1,3 @@
+import Becoming.DependenceWebs
+#print axioms Becoming.DependenceWebs.continuing_restores_fixed_unit
+#print axioms Becoming.DependenceWebs.chain_ends_at_once

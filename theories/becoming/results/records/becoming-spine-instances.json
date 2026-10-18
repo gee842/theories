@@ -260,7 +260,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "111d4264083e40f97d4039ab4f7acd52daf0cda90b096e07f3c0dc7cf1a2cd65",
+      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
       "declarations": [
         "Becoming.G0",
         "Becoming.Extension",
@@ -475,6 +475,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -494,7 +500,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1021,6 +1027,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): the text names the core modules that now hold the declarations it cites (Becoming.Lifting, Becoming.EdgeClosure, Becoming.RenewalFlow). Declarations moved with their full Lean names, statements and proofs unchanged: edgeProcess, Closure from Bridge.lean to EdgeClosure.lean; reached_iff_closure, cutReach_iff_closure from Bridge.lean to SeedReachProcesses.lean; LiftExtension, comparison_lifts, LiftedArticulation, lifted_comparison_supplies_reason, LiftSurvives, LiftCoherence, lift_coherent_selection_survives, lift_continual_improvement_has_no_survivor, some_outcome_does_not_lift, lift_needs_live_middle from Bridge.lean to Lifting.lean. Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠（Ren：“so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?”，然后“please do all”）：正文改为指名现在承载所引声明的核心模块（Becoming.Lifting、Becoming.EdgeClosure、Becoming.RenewalFlow）。声明连同完整 Lean 名称、陈述与证明原样移入核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Metaethics.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

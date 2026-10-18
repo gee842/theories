@@ -429,7 +429,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
+      "sha256": "dd46c64db93e1eac72a21660f62953a4b1a9f3be6a56f82b2bd3d740bbdeff00",
       "declarations": [
         "Becoming.Web.CoupledInto",
         "Becoming.Web.AlikeThroughUpTo"
@@ -438,20 +438,28 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
       "declarations": [
-        "Becoming.Flow",
         "Becoming.Flow.Balances",
         "Becoming.Flow.taken",
         "Becoming.Flow.given"
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "role": "proof",
+      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f",
+      "declarations": [
+        "Becoming.Flow",
+        "Becoming.Web",
+        "Becoming.total"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
       "declarations": [
-        "Becoming.Web",
         "Becoming.add_right_cancel"
       ]
     },
@@ -477,14 +485,6 @@
       "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9",
       "declarations": [
         "Becoming.le_succ_cases"
-      ]
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "role": "proof",
-      "sha256": "bf81218edd5c67f967e663472ef1d01fe66866b82f2f9025363941bb2a9f17b9",
-      "declarations": [
-        "Becoming.total"
       ]
     },
     {
@@ -542,6 +542,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -596,21 +602,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -637,9 +643,9 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T214555.207438Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -694,6 +700,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Feedback.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: Flow from Flow.lean to World.lean; Web from Dependence.lean to World.lean; total from Generation.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean, Flow.lean, Testing.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

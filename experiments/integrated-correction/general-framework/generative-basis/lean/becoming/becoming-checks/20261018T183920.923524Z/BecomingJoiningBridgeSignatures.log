@@ -1,0 +1,197 @@
+@Becoming.Joining.holds_ofQuestion : ∀ {F : Type u_1} (J : Becoming.Joining F)
+  (q : Generative.ExplanatoryJoiningBranches.Question F) (x : F),
+  Generative.ExplanatoryJoiningBranches.target J x q ↔
+    Becoming.BranchingTest.Holds J.frame x (Becoming.Joining.ofQuestion q)
+@Becoming.Joining.holds_toQuestion : ∀ {F : Type u_1} (J : Becoming.Joining F)
+  (φ : Becoming.BranchingTest (Becoming.Joining.Move F) Empty) (x : F),
+  Becoming.BranchingTest.Holds J.frame x φ ↔
+    Generative.ExplanatoryJoiningBranches.target J x (Becoming.Joining.toQuestion φ)
+@Becoming.Joining.branchSame_iff : ∀ {F : Type u_1} {J : Becoming.Joining F} {x y : F},
+  Generative.ExplanatoryJoiningBranches.BranchSame J x y ↔ Becoming.SameBranchingTests J.frame J.frame x y
+@Becoming.Joining.compatible_iff : ∀ {F : Type u_1} {J : Becoming.Joining F} {R : F → F → Prop},
+  Generative.ExplanatoryJoiningContexts.Compatible J R ↔ J.Compatible R
+@Becoming.Joining.kernel_iff : ∀ {F : Type u_1} {C : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryUniqueness.Presentation F (Generative.ExplanatoryJoiningBranches.Question F) C},
+  Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJoiningBranches.target J) p →
+    Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJoiningBranches.target J) p →
+      ∀ (x y : F), p.encode x = p.encode y ↔ Becoming.SameBranchingTests J.frame J.frame x y
+@Becoming.Joining.operation_lifts_iff : ∀ {F : Type u_1} {C : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryUniqueness.Presentation F (Generative.ExplanatoryJoiningBranches.Question F) C},
+  Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJoiningBranches.target J) p →
+    Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJoiningBranches.target J) p →
+      ((∀ (x y : F) (c : C),
+          Generative.ExplanatoryUniversality.Lift p J (p.encode x) (p.encode y) c → ∃ z, J x y z ∧ p.encode z = c) ↔
+        Becoming.Bisimulation J.frame J.frame (Becoming.SameBranchingTests J.frame J.frame))
+@Becoming.Joining.operation_lifts_of_em : ∀ {F : Type u_1},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {C : Type u_2} {J : Becoming.Joining F},
+      Generative.ExplanatoryJoiningBranches.FiniteOutcomes J →
+        ∀ {p : Generative.ExplanatoryUniqueness.Presentation F (Generative.ExplanatoryJoiningBranches.Question F) C},
+          Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJoiningBranches.target J) p →
+            Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJoiningBranches.target J) p →
+              ∀ (x y : F) (c : C),
+                Generative.ExplanatoryUniversality.Lift p J (p.encode x) (p.encode y) c ↔ ∃ z, J x y z ∧ p.encode z = c
+@Becoming.Joining.common_multivalued_structure_of_em : ∀ {F : Type u_1},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {C : Type u_2} {D : Type u_3} {J : Becoming.Joining F},
+      Generative.ExplanatoryJoiningBranches.FiniteOutcomes J →
+        ∀ {p : Generative.ExplanatoryUniqueness.Presentation F (Generative.ExplanatoryJoiningBranches.Question F) C}
+          {r : Generative.ExplanatoryUniqueness.Presentation F (Generative.ExplanatoryJoiningBranches.Question F) D},
+          Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJoiningBranches.target J) p →
+            Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJoiningBranches.target J) p →
+              Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJoiningBranches.target J) r →
+                Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJoiningBranches.target J) r →
+                  (∀ (x y : F) (c : C),
+                      Generative.ExplanatoryUniversality.Lift p J (p.encode x) (p.encode y) c ↔
+                        ∃ z, J x y z ∧ p.encode z = c) ∧
+                    (∀ (x y : F) (c : D),
+                        Generative.ExplanatoryUniversality.Lift r J (r.encode x) (r.encode y) c ↔
+                          ∃ z, J x y z ∧ r.encode z = c) ∧
+                      (∀ (c : C),
+                          Generative.ExplanatoryUniqueness.Used p c →
+                            ∃ d,
+                              Generative.ExplanatoryUniqueness.Matches p r c d ∧
+                                ∀ (e : D), Generative.ExplanatoryUniqueness.Matches p r c e → e = d) ∧
+                        (∀ (d : D),
+                            Generative.ExplanatoryUniqueness.Used r d →
+                              ∃ c,
+                                Generative.ExplanatoryUniqueness.Matches p r c d ∧
+                                  ∀ (e : C), Generative.ExplanatoryUniqueness.Matches p r e d → e = c) ∧
+                          ∀ (a b c : C) (a' b' c' : D),
+                            Generative.ExplanatoryUniqueness.Matches p r a a' →
+                              Generative.ExplanatoryUniqueness.Matches p r b b' →
+                                Generative.ExplanatoryUniqueness.Matches p r c c' →
+                                  (Generative.ExplanatoryUniversality.Lift p J a b c ↔
+                                    Generative.ExplanatoryUniversality.Lift r J a' b' c')
+@Becoming.Joining.ofQuestion_mapQuestion : ∀ {F : Type u_1} {C : Type u_2} (f : F → C)
+  (q : Generative.ExplanatoryJoiningBranches.Question F),
+  Becoming.Joining.ofQuestion (Generative.ExplanatoryJoiningBranches.mapQuestion f q) =
+    Becoming.Joining.mapPartners f (Becoming.Joining.ofQuestion q)
+@Becoming.Joining.questions_survive_encoding_of_em : ∀ {F : Type u_1},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {C : Type u_2} {J : Becoming.Joining F},
+      Generative.ExplanatoryJoiningBranches.FiniteOutcomes J →
+        ∀ {p : Generative.ExplanatoryUniqueness.Presentation F (Generative.ExplanatoryJoiningBranches.Question F) C},
+          Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJoiningBranches.target J) p →
+            Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJoiningBranches.target J) p →
+              ∀ (q : Generative.ExplanatoryJoiningBranches.Question F) (x : F),
+                Generative.ExplanatoryJoiningBranches.target (Generative.ExplanatoryUniversality.Lift p J) (p.encode x)
+                    (Generative.ExplanatoryJoiningBranches.mapQuestion p.encode q) ↔
+                  Generative.ExplanatoryJoiningBranches.target J x q
+@Becoming.Joining.treeOf_map : ∀ {F : Type u_1} {C : Type u_2} (f : F → C)
+  (t : Generative.ExplanatoryJoiningBranches.Tree F),
+  Becoming.Joining.treeOf (Generative.ExplanatoryJoiningBranches.Tree.map f t) =
+    Becoming.Joining.Tree.map f (Becoming.Joining.treeOf t)
+@Becoming.Joining.realizes_treeOf : ∀ {F : Type u_1} (J : Becoming.Joining F)
+  (t : Generative.ExplanatoryJoiningBranches.Tree F) (z : F),
+  Generative.ExplanatoryJoiningBranches.Tree.Realizes J t z ↔
+    Becoming.Joining.Tree.Realizes J (Becoming.Joining.treeOf t) z
+@Becoming.Joining.tree_lifts_of_em : ∀ {F : Type u_1},
+  (∀ (p : Prop), Becoming.Decided p) →
+    ∀ {C : Type u_2} {J : Becoming.Joining F},
+      Generative.ExplanatoryJoiningBranches.FiniteOutcomes J →
+        ∀ {p : Generative.ExplanatoryUniqueness.Presentation F (Generative.ExplanatoryJoiningBranches.Question F) C},
+          Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJoiningBranches.target J) p →
+            Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJoiningBranches.target J) p →
+              ∀ (t : Generative.ExplanatoryJoiningBranches.Tree F) (c : C),
+                Generative.ExplanatoryJoiningBranches.Tree.Realizes (Generative.ExplanatoryUniversality.Lift p J)
+                    (Generative.ExplanatoryJoiningBranches.Tree.map p.encode t) c ↔
+                  ∃ z, Generative.ExplanatoryJoiningBranches.Tree.Realizes J t z ∧ p.encode z = c
+@Becoming.Joining.realizes_iff_trace : ∀ {F : Type u_1} (J : Becoming.Joining F)
+  (c : Generative.ExplanatoryJoiningContexts.Context F) (x y : F),
+  Generative.ExplanatoryJoiningContexts.Realizes J c x y ↔ Generative.Trace J.frame.P x (Becoming.Joining.courseOf c) y
+@Becoming.Joining.realizes_contextFrom : ∀ {F : Type u_1} (J : Becoming.Joining F) (as : List (Becoming.Joining.Move F))
+  (c : Generative.ExplanatoryJoiningContexts.Context F) (x y : F),
+  Generative.ExplanatoryJoiningContexts.Realizes J (Becoming.Joining.contextFrom c as) x y ↔
+    ∃ m, Generative.ExplanatoryJoiningContexts.Realizes J c x m ∧ Generative.Trace J.frame.P m as y
+@Becoming.Joining.contextSame_iff_sameTests : ∀ {F : Type u_1} {J : Becoming.Joining F} {x y : F},
+  Generative.ExplanatoryJoiningContexts.Same J x y ↔ Becoming.SameTests J.frame J.frame x y
+@Becoming.Joining.unique_common_operational_structure_by_core : ∀ {F : Type u_1} {C : Type u_2} {D : Type u_3}
+  {J : Becoming.Joining F},
+  Generative.ExplanatoryLocalUnits.Functional J →
+    ∀ {p : Generative.ExplanatoryContextualStructure.Account F C}
+      {r : Generative.ExplanatoryContextualStructure.Account F D},
+      Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryContextualStructure.target J) p →
+        Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryContextualStructure.target J) p →
+          Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryContextualStructure.target J) r →
+            Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryContextualStructure.target J) r →
+              Generative.ExplanatoryLocalUnits.Functional (Generative.ExplanatoryContextualStructure.Operation J p) ∧
+                Generative.ExplanatoryLocalUnits.Functional (Generative.ExplanatoryContextualStructure.Operation J r) ∧
+                  (∀ (a : C),
+                      Generative.ExplanatoryUniqueness.Used p a →
+                        ∃ b,
+                          Generative.ExplanatoryUniqueness.Matches p r a b ∧
+                            ∀ (c : D), Generative.ExplanatoryUniqueness.Matches p r a c → c = b) ∧
+                    (∀ (b : D),
+                        Generative.ExplanatoryUniqueness.Used r b →
+                          ∃ a,
+                            Generative.ExplanatoryUniqueness.Matches p r a b ∧
+                              ∀ (c : C), Generative.ExplanatoryUniqueness.Matches p r c b → c = a) ∧
+                      ∀ (a b c : C) (a' b' c' : D),
+                        Generative.ExplanatoryUniqueness.Matches p r a a' →
+                          Generative.ExplanatoryUniqueness.Matches p r b b' →
+                            Generative.ExplanatoryUniqueness.Matches p r c c' →
+                              (Generative.ExplanatoryContextualStructure.Operation J p a b c ↔
+                                Generative.ExplanatoryContextualStructure.Operation J r a' b' c')
+Becoming.Joining.roleOf_roleTo : ∀ (r : Becoming.Joining.Role), Becoming.Joining.roleOf (Becoming.Joining.roleTo r) = r
+@Becoming.Joining.occurrenceOf_at : ∀ {F : Type u_1} {J : Becoming.Joining F}
+  (e : Generative.ExplanatoryJoiningIncidence.Occurrence J) (r : Generative.ExplanatoryJoiningIncidence.Role),
+  (Becoming.Joining.occurrenceOf e).at (Becoming.Joining.roleOf r) = e.at r
+@Becoming.Joining.occurrenceTo_at : ∀ {F : Type u_1} {J : Becoming.Joining F} (d : J.Occurrence)
+  (r : Generative.ExplanatoryJoiningIncidence.Role),
+  (Becoming.Joining.occurrenceTo d).at r = d.at (Becoming.Joining.roleOf r)
+@Becoming.Joining.tupleOccurrence_at : ∀ {F : Type u_1} {J : Becoming.Joining F}
+  (t : Generative.ExplanatoryJoiningIncidence.Role → F)
+  (formed :
+    J (t Generative.ExplanatoryJoiningIncidence.Role.first) (t Generative.ExplanatoryJoiningIncidence.Role.second)
+      (t Generative.ExplanatoryJoiningIncidence.Role.result))
+  (r : Becoming.Joining.Role), (Becoming.Joining.tupleOccurrence t formed).at r = t (Becoming.Joining.roleTo r)
+@Becoming.Joining.openMap_iff_incidence : ∀ {F : Type u_1} {G : Type u_2} {J : Becoming.Joining F}
+  {K : Becoming.Joining G} {p : F → G}, Generative.ExplanatoryJoiningIncidence.OpenMap J K p ↔ J.OpenMap K p
+@Becoming.Joining.roleTotal_iff : ∀ {F : Type u_1} {J : Becoming.Joining F},
+  Generative.ExplanatoryJoiningAnchors.RoleTotal J ↔ J.RoleTotal
+@Becoming.Joining.locallyFinite_iff : ∀ {F : Type u_1} {J : Becoming.Joining F},
+  Generative.ExplanatoryJoiningIncidence.LocallyFinite J ↔ J.LocallyFinite
+@Becoming.Joining.openMap_keeps_role_tests : ∀ {F : Type u_1} {G : Type u_2} {J : Becoming.Joining F}
+  {K : Becoming.Joining G} {p : F → G},
+  Generative.ExplanatoryJoiningIncidence.OpenMap J K p →
+    ∀ (x : F), Becoming.SameBranchingTests J.roleFrame K.roleFrame (Sum.inl x) (Sum.inl (p x))
+@Becoming.Joining.roleTotal_of_hasUnits : ∀ {F : Type u_1} {J : Becoming.Joining F},
+  Generative.ExplanatoryLocalUnits.HasUnits J → J.RoleTotal
+@Becoming.Joining.units_alike_in_roles : ∀ {F : Type u_1} {G : Type u_2} {J : Becoming.Joining F}
+  {K : Becoming.Joining G},
+  Generative.ExplanatoryLocalUnits.HasUnits J →
+    Generative.ExplanatoryLocalUnits.HasUnits K →
+      ∀ (x : F) (y : G), Becoming.Alike J.roleFrame K.roleFrame (Sum.inl x) (Sum.inl y)
+@Becoming.Joining.idle_neutral_by_core : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A) (s : S),
+  Generative.ExplanatoryLocalUnits.Neutral (Generative.ExplanatoryLocalUnits.traceJoin P)
+    (Generative.ExplanatoryLocalUnits.traceIdle P s)
+@Becoming.Joining.joined_idle_right_by_core : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {f : Generative.ExplanatoryJoining.Fragment S A},
+  Generative.ExplanatoryJoining.Valid P f →
+    Generative.ExplanatoryJoining.Joined P f (Generative.ExplanatoryJoining.idle f.finish) f
+@Becoming.Joining.trace_has_units_by_core : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A),
+  Generative.ExplanatoryLocalUnits.HasUnits (Generative.ExplanatoryLocalUnits.traceJoin P)
+Becoming.Joining.open_map_does_not_force_pair_lifting_by_core : (Generative.ExplanatoryJoiningIncidence.OpenMap
+    (Generative.ExplanatoryLocalUnits.traceJoin Generative.ExplanatoryJoining.budgetProcess)
+    Generative.ExplanatoryJoiningAnchors.coarseJoin fun x => ()) ∧
+  ¬Generative.ExplanatoryJoiningAnchors.PairLifting
+      (Generative.ExplanatoryLocalUnits.traceJoin Generative.ExplanatoryJoining.budgetProcess)
+      Generative.ExplanatoryJoiningAnchors.coarseJoin fun x => ()
+Becoming.Joining.single_step_roles_alike : Becoming.Alike
+  (Becoming.Joining.roleFrame (Generative.ExplanatoryLocalUnits.traceJoin Generative.ExplanatoryJoining.budgetProcess))
+  (Becoming.Joining.roleFrame (Generative.ExplanatoryLocalUnits.traceJoin Generative.ExplanatoryJoining.budgetProcess))
+  (Sum.inl Generative.ExplanatoryJoiningAnchors.spent)
+  (Sum.inl (Generative.ExplanatoryLocalUnits.traceIdle Generative.ExplanatoryJoining.budgetProcess false))
+@Becoming.Joining.every_exact_account_retains_real_difference_by_core : ∀ {C : Type u_1}
+  (π : List (Generative.ExplanatoryLocalUnits.Admitted Generative.ExplanatoryJoining.budgetProcess) → C),
+  (∀ (xs ys : List (Generative.ExplanatoryLocalUnits.Admitted Generative.ExplanatoryJoining.budgetProcess)),
+      π xs = π ys →
+        Becoming.SameBranchingTests
+          (Becoming.Joining.retainedFrame
+            (Generative.ExplanatoryLocalUnits.traceJoin Generative.ExplanatoryJoining.budgetProcess))
+          (Becoming.Joining.retainedFrame
+            (Generative.ExplanatoryLocalUnits.traceJoin Generative.ExplanatoryJoining.budgetProcess))
+          xs ys) →
+    π [Generative.ExplanatoryLocalUnits.traceIdle Generative.ExplanatoryJoining.budgetProcess false] ≠
+      π [Generative.ExplanatoryJoiningAnchors.spent]

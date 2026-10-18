@@ -403,7 +403,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "04fc5b34901c9a20f48e8c6f37d27ac5eecffc715c636adc27246dbdf73b10d3",
+      "sha256": "b83ce782e66e6372274efa1ab62fdbb5419b20825f8ee03cdad016dc1750c5bf",
       "declarations": [
         "Becoming.Determined"
       ]
@@ -484,6 +484,12 @@
       "role": "receipt",
       "sha256": "2904fa10cde6e9a5fd2db9bc2cfd798f510246af636b3f60985b78e9cb12d4fa",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -517,7 +523,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T183102.290672Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Joint",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -597,6 +603,10 @@
     {
       "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Joint.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": []

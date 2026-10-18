@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 195 | 7,880 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 198 | 7,880 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 38 | 559 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -459,6 +459,8 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [KeptSupport.lean](lean-declarations/abstraction.md#module-c764abc871d9) | Abstraction, applicability and constitution |
 | [KitchenTransitions.lean](lean-declarations/ethics.md#module-74df76c70b6e) | Normative grounding and generative direction |
 | [KnowledgeCorrespondence.lean](lean-declarations/inquiry.md#module-3c2658ad7582) | Attainable inquiry, contact and process laws |
+| [Labelled.lean](lean-declarations/becoming-core.md#module-fecf49326c58) | Becoming pure core |
+| [LabelledRoles.lean](lean-declarations/becoming-core.md#module-81d06ccfba4a) | Becoming pure core |
 | [Labels.lean](lean-declarations/becoming-core.md#module-7fac02aac7eb) | Becoming pure core |
 | [LastChange.lean](lean-declarations/becoming-core.md#module-9e3b47c1ecb7) | Becoming pure core |
 | [Lasting.lean](lean-declarations/becoming-core.md#module-2804e16a6285) | Becoming pure core |
@@ -880,3 +882,4 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [WisdomGoalGrounds.lean](lean-declarations/ethics.md#module-3bd6cb85aa59) | Normative grounding and generative direction |
 | [WisdomResponseStructure.lean](lean-declarations/core.md#module-25c8adeade56) | Generative core and relational structure |
 | [WitnessHull.lean](lean-declarations/abstraction.md#module-72d18a9b2453) | Abstraction, applicability and constitution |
+| [World.lean](lean-declarations/becoming-core.md#module-7d8b73829c63) | Becoming pure core |

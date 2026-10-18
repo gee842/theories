@@ -81,7 +81,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 | proof | [Counterfactual.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean) | `Becoming.ExchangeLaw`, `Becoming.ExchangeLaw.GivesAlike`, `Becoming.ExchangeLaw.Nonanticipating`, `Becoming.ExchangeLaw.InsensitiveAt`, `Becoming.ExchangeLaw.Sensitive`, `Becoming.ExchangeLaw.Through` |
 | proof | [Change.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean) | `Becoming.LPO` |
 | proof | [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean) | `Becoming.Web.AlikeThroughUpTo` |
-| proof | [Dependence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean) | `Becoming.Web` |
+| proof | [World.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean) | `Becoming.Web` |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-12-move-towards-100.md](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) | — |
@@ -90,6 +90,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `what a law of the whole and no part takes`, `整体而无部分之律所需`, `a whole and no part`, `整体而无部分`, `changed by no condition`, `没有一个条件改变`, `law of levels that never vanish`, `永不消失之律`, `WLPO as a rule`, `弱有限全知原则作为规则`, `exact strength of a counterexample`, `反例的确切强度`
 
@@ -107,6 +108,7 @@ Aliases: `what a law of the whole and no part takes`, `整体而无部分之律�
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.
 - 18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the "Learning" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): declarations moved with their full Lean names, statements and proofs unchanged: Web from Dependence.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Testing.lean). The claim is unchanged.
 - 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-law-of-the-whole-and-no-part-takes.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -1,0 +1,182 @@
+Becoming.FormationTracesInherited.course_of_moves : ∀ (ms : List Becoming.FormationTracesInherited.FormationMove)
+  (s : Generative.CompositionalFormation.Frame),
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess s ms
+    (List.foldl Becoming.FormationTracesInherited.formationStep s ms)
+@Becoming.FormationTracesInherited.trace_iff : ∀ {s t : Generative.CompositionalFormation.Frame}
+  {ms : List Becoming.FormationTracesInherited.FormationMove},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess s ms t ↔
+    t = List.foldl Becoming.FormationTracesInherited.formationStep s ms
+Becoming.FormationTracesInherited.step_support : ∀ (s : Generative.CompositionalFormation.Frame)
+  (m : Becoming.FormationTracesInherited.FormationMove),
+  (Becoming.FormationTracesInherited.formationStep s m).support +
+      (Becoming.FormationTracesInherited.formationStep s m).spent =
+    s.support + s.spent
+@Becoming.FormationTracesInherited.course_support : ∀ {s t : Generative.CompositionalFormation.Frame}
+  {ms : List Becoming.FormationTracesInherited.FormationMove},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess s ms t → t.support + t.spent = s.support + s.spent
+@Becoming.FormationTracesInherited.place_parts : ∀ {s t : Generative.CompositionalFormation.Frame} {socket : Bool},
+  Becoming.FormationTracesInherited.formationProcess.step s
+      (Becoming.FormationTracesInherited.FormationMove.place socket) t →
+    t.parts + t.usedParts = s.parts + s.usedParts
+@Becoming.FormationTracesInherited.inspect_installed : ∀ {s t : Generative.CompositionalFormation.Frame}
+  {e : Generative.CompositionalAcquisition.Evidence},
+  Becoming.FormationTracesInherited.formationProcess.step s (Becoming.FormationTracesInherited.FormationMove.inspect e)
+      t →
+    s.blocked = false →
+      1 ≤ s.support →
+        t.installed =
+          if
+              Generative.CompositionalFormation.fits { first := e.first, second := e.second, route := s.wires }
+                  s.samples =
+                true then
+            some { first := e.first, second := e.second, route := s.wires }
+          else none
+@Becoming.FormationTracesInherited.installed_of_test : ∀ {b : Bool} {p q : Generative.CompositionalFormation.Program},
+  (if b = true then some p else none) = some q → b = true ∧ q = p
+@Becoming.FormationTracesInherited.inspection_transfers : ∀ {s t : Generative.CompositionalFormation.Frame}
+  {c : Generative.CompositionalAcquisition.Code} {o : List Bool} {q : Generative.CompositionalFormation.Program},
+  Becoming.FormationTracesInherited.formationProcess.step s
+      (Becoming.FormationTracesInherited.FormationMove.inspect { first := c.first, second := c.second, ordered := o })
+      t →
+    s.blocked = false →
+      1 ≤ s.support →
+        s.samples = Generative.CompositionalAcquisition.trialRecords c →
+          s.wires ∈ Generative.CompositionalFormation.generatedRoutes 2 →
+            c.first ≠ c.second →
+              t.installed = some q →
+                ∀ (x : Generative.CompositionalAcquisition.Expr),
+                  Generative.CompositionalFormation.operate q x = Generative.CompositionalAcquisition.eval c x
+@Becoming.FormationTracesInherited.extended_inspection_transfers : ∀ {s t : Generative.CompositionalFormation.Frame}
+  {c : Generative.CompositionalAcquisition.Code} {o : List Bool} {q : Generative.CompositionalFormation.Program},
+  Becoming.FormationTracesInherited.formationProcess.step s
+      (Becoming.FormationTracesInherited.FormationMove.inspect { first := c.first, second := c.second, ordered := o })
+      t →
+    s.blocked = false →
+      1 ≤ s.support →
+        s.samples =
+            Generative.CompositionalAcquisition.trialRecords c ++
+              [(Generative.CompositionalAcquisition.novel,
+                  Generative.CompositionalAcquisition.eval c Generative.CompositionalAcquisition.novel)] →
+          s.wires ∈ Generative.CompositionalFormation.generatedRoutes 2 →
+            t.installed = some q →
+              ∀ (x : Generative.CompositionalAcquisition.Expr),
+                Generative.CompositionalFormation.operate q x = Generative.CompositionalAcquisition.eval c x
+@Becoming.FormationTracesInherited.inspection_installs_own : ∀ {s t : Generative.CompositionalFormation.Frame}
+  {c : Generative.CompositionalAcquisition.Code} {o : List Bool},
+  Becoming.FormationTracesInherited.formationProcess.step s
+      (Becoming.FormationTracesInherited.FormationMove.inspect { first := c.first, second := c.second, ordered := o })
+      t →
+    s.blocked = false →
+      1 ≤ s.support →
+        s.samples = Generative.CompositionalAcquisition.trialRecords c →
+          s.wires = Generative.CompositionalFormation.routeFor c →
+            t.installed = some (Generative.CompositionalFormation.programFor c)
+@Becoming.FormationTracesInherited.training_alone_no_response : ∀ {l : Generative.CompositionalAcquisition.Learner},
+  Becoming.TrainingProcessesInherited.trainProcess.step (Generative.CompositionalAcquisition.initial 18)
+      Generative.CompositionalAcquisition.usual l →
+    l.code = some Generative.CompositionalAcquisition.usual ∧
+      Generative.CompositionalFormation.respond (Generative.CompositionalFormation.fromLearner l 4)
+          Generative.CompositionalAcquisition.novel =
+        none
+@Becoming.FormationTracesInherited.develop_course_replaces : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.attempts = [([false, false], false), ([false, true], true)] ∧
+      y.installed = some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual)
+@Becoming.FormationTracesInherited.develop_course_records : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.samples =
+      (Generative.CompositionalAcquisition.train Generative.CompositionalAcquisition.usual
+          (Generative.CompositionalAcquisition.initial 18)).records
+@Becoming.FormationTracesInherited.develop_course_executes : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    Generative.CompositionalFormation.respond y Generative.CompositionalAcquisition.novel =
+      some ([false, false, true], 0)
+@Becoming.FormationTracesInherited.develop_course_account : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.spent = 7 ∧ y.support = 4 ∧ y.usedParts = 4 ∧ y.parts = 0 ∧ 7 + y.spent + y.support = 18
+@Becoming.FormationTracesInherited.develop_course_removed : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    { wires := y.wires, installed := none, support := y.support, spent := y.spent, parts := y.parts,
+            usedParts := y.usedParts, blocked := y.blocked, samples := y.samples, attempts := y.attempts }.attempts =
+        y.attempts ∧
+      Generative.CompositionalFormation.respond
+          { wires := y.wires, installed := none, support := y.support, spent := y.spent, parts := y.parts,
+            usedParts := y.usedParts, blocked := y.blocked, samples := y.samples, attempts := y.attempts }
+          Generative.CompositionalAcquisition.novel =
+        none
+@Becoming.FormationTracesInherited.develop_course_no_parts : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 0)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.samples = Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual ∧
+      y.blocked = true ∧ Generative.CompositionalFormation.respond y Generative.CompositionalAcquisition.novel = none
+@Becoming.FormationTracesInherited.develop_course_partial : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 1)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.wires = [false] ∧
+      y.spent = 1 ∧
+        y.parts = 0 ∧ Generative.CompositionalFormation.respond y Generative.CompositionalAcquisition.novel = none
+@Becoming.FormationTracesInherited.develop_course_short : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 14 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.installed = some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual) ∧
+      Generative.CompositionalFormation.respond y Generative.CompositionalAcquisition.novel = none
+@Becoming.FormationTracesInherited.develop_course_switched : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess
+      (Generative.CompositionalFormation.prepared 22 6 Generative.CompositionalAcquisition.switched)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.attempts = [([false, false], false), ([false, true], false), ([true, false], true)] ∧
+      Generative.CompositionalFormation.respond y Generative.CompositionalAcquisition.novel =
+        some ([true, false, false], 0)
+@Becoming.FormationTracesInherited.develop_course_collapsed : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess
+      (Generative.CompositionalFormation.prepared 15 2 Generative.CompositionalFormation.collapsed)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.installed = some Generative.CompositionalFormation.duplicated ∧
+      Generative.CompositionalFormation.respond y Generative.CompositionalAcquisition.novel =
+        some ([false, false, false, false], 0)
+@Becoming.FormationTracesInherited.develop_course_unobserved : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess
+      (Generative.CompositionalFormation.prepared 27 6 Generative.CompositionalFormation.collapsed)
+      [Becoming.FormationTracesInherited.FormationMove.develop] y →
+    y.installed = some Generative.CompositionalFormation.duplicated ∧
+      Generative.CompositionalFormation.respond y Generative.CompositionalFormation.further = some ([false, false], 14)
+@Becoming.FormationTracesInherited.repair_course_rebuilds : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess
+      (Generative.CompositionalFormation.prepared 27 6 Generative.CompositionalFormation.collapsed)
+      Becoming.FormationTracesInherited.repair y →
+    y.samples =
+        Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed ++
+          [(Generative.CompositionalAcquisition.novel,
+              Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+                Generative.CompositionalAcquisition.novel)] ∧
+      y.attempts = [([false, false], true), ([false, false], false), ([false, false], false), ([false, true], true)] ∧
+        y.installed = some (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed)
+@Becoming.FormationTracesInherited.repair_course_further : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess
+      (Generative.CompositionalFormation.prepared 27 6 Generative.CompositionalFormation.collapsed)
+      Becoming.FormationTracesInherited.repair y →
+    ¬Generative.CompositionalFormation.further ∈ List.map Prod.fst y.samples ∧
+      Generative.CompositionalFormation.respond y Generative.CompositionalFormation.further =
+        some ([false, false, false], 0)
+@Becoming.FormationTracesInherited.repair_course_account : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess
+      (Generative.CompositionalFormation.prepared 27 6 Generative.CompositionalFormation.collapsed)
+      Becoming.FormationTracesInherited.repair y →
+    y.spent = 16 ∧ y.support = 4 ∧ y.usedParts = 6 ∧ y.parts = 0 ∧ 7 + y.spent + y.support = 27
+@Becoming.FormationTracesInherited.repair_course_no_parts : ∀ {y : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess
+      (Generative.CompositionalFormation.prepared 27 2 Generative.CompositionalFormation.collapsed)
+      Becoming.FormationTracesInherited.repair y →
+    y.blocked = true ∧
+      y.samples =
+          Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed ++
+            [(Generative.CompositionalAcquisition.novel,
+                Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+                  Generative.CompositionalAcquisition.novel)] ∧
+        y.installed = none ∧
+          Generative.CompositionalFormation.respond y Generative.CompositionalFormation.further = none

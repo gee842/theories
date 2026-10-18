@@ -1,0 +1,4 @@
+import Becoming.JoiningCodeFramesInherited
+#print axioms Becoming.JoiningCodeFramesInherited.canonical_factor
+#print axioms Becoming.JoiningCodeFramesInherited.common_operation
+#print axioms Becoming.JoiningCodeFramesInherited.sameTests_iff_alike

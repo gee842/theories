@@ -99,6 +99,7 @@ Ren wrote that being generative is that “its existence creates more possibilit
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `Becoming.Web.GainsSupport`, `Becoming.Web.LosesSupport`, `Becoming.Web.Unloosened`, `Becoming.Web.Untightened`, `Becoming.Web.GainsSupport.rises`, `Becoming.Web.LosesSupport.falls`, `Becoming.Flow.rise_given_by_supported`, `Becoming.Flow.gains_from_supported`, `Becoming.Flow.unsupported_stays`, `Becoming.Flow.nothing_supported_stays`, `Becoming.Restoring.Adapting.restores`, `Becoming.Restoring.Inflow.restores`, `Becoming.Restoring.Idle.restores`, `Becoming.Restoring.Carried.restores`, `Becoming.Restoring.Spontaneous.restores`
 
@@ -115,6 +116,7 @@ Aliases: `Becoming.Web.GainsSupport`, `Becoming.Web.LosesSupport`, `Becoming.Web
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: the support-gated instance in the next step now says that RenewalBridge already gives its premises (balance, givers_supported, Flow.restores) while the instance itself is not yet stated, and the record is added as related. Earlier text in text_versions.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md. The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean, Flow.lean, Generation.lean, Space.lean). The claim is unchanged.
 - 58 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](support-from-the-supported.json).
 
 <a id="earlier-text--早期文本"></a>

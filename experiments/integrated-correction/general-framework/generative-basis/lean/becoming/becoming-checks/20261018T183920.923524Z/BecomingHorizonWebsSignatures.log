@@ -1,0 +1,9 @@
+Becoming.HorizonWebs.prefix_does_not_decide : ∀ (h : Nat),
+  (∀ (t : Nat),
+      t ≤ h →
+        (Becoming.Web.static (Becoming.Feedback.law h (Becoming.Feedback.stopping h)).unfolding).level t () =
+          (Becoming.Web.static (Becoming.Feedback.law h Becoming.Feedback.continuing).unfolding).level t ()) ∧
+    (Becoming.Web.static (Becoming.Feedback.law h (Becoming.Feedback.stopping h)).unfolding).RenewingIn
+        RelationalRenewal.Law.Part.focal ∧
+      (Becoming.Web.static (Becoming.Feedback.law h Becoming.Feedback.continuing).unfolding).ConsumingIn
+        RelationalRenewal.Law.Part.focal

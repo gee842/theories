@@ -1,0 +1,13 @@
+'Becoming.RuleHandoffTracesInherited.entry_step_requires' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleHandoffTracesInherited.handoff_step_present' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleHandoffTracesInherited.fork_shares_position' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleHandoffTracesInherited.nonadopting_trace_keeps_rule' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleHandoffTracesInherited.same_relations_same_integration' depends on axioms: [propext, Quot.sound]
+'Becoming.RuleHandoffTracesInherited.no_presence_no_integration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Becoming.RuleHandoffTracesInherited.majority_integration_extends' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Becoming.RuleHandoffTracesInherited.bool_eq_of_iff' does not depend on any axioms
+'Becoming.RuleHandoffTracesInherited.counts_no_integration_reading' depends on axioms: [propext]

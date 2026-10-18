@@ -1,0 +1,42 @@
+Becoming.TreeSearchRuns.advance_found : ∀ (f : List AcquiredCorrection.Entry) (t : AcquiredCorrection.Ticket) (k : Nat),
+  Becoming.TreeSearchRuns.advance { frontier := f, found := some t, spent := k } =
+    { frontier := f, found := some t, spent := k }
+Becoming.TreeSearchRuns.advance_empty : ∀ (k : Nat),
+  Becoming.TreeSearchRuns.advance { frontier := [], found := none, spent := k } =
+    { frontier := [], found := none, spent := k }
+@Becoming.TreeSearchRuns.orbit_fixed : ∀ {s : Becoming.TreeSearchRuns.Search},
+  Becoming.TreeSearchRuns.advance s = s → ∀ (n : Nat), Becoming.Law.orbit Becoming.TreeSearchRuns.advance s n = s
+Becoming.TreeSearchRuns.orbit_reads_scan_from : ∀ (n : Nat) (f : List AcquiredCorrection.Entry) (k : Nat),
+  Becoming.TreeSearchRuns.verdict
+        (Becoming.Law.orbit Becoming.TreeSearchRuns.advance { frontier := f, found := none, spent := k } n) =
+      (AcquiredCorrection.scan n f).verdict ∧
+    (Becoming.Law.orbit Becoming.TreeSearchRuns.advance { frontier := f, found := none, spent := k } n).spent =
+      k + (AcquiredCorrection.scan n f).spent
+Becoming.TreeSearchRuns.orbit_reads_scan : ∀ (n : Nat) (f : List AcquiredCorrection.Entry),
+  Becoming.TreeSearchRuns.read
+      (Becoming.Law.orbit Becoming.TreeSearchRuns.advance { frontier := f, found := none, spent := 0 } n) =
+    AcquiredCorrection.scan n f
+@Becoming.TreeSearchRuns.run_reads_scan : ∀ {f : List AcquiredCorrection.Entry}
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)),
+  r.state 0 = { frontier := f, found := none, spent := 0 } →
+    ∀ (n : Nat), Becoming.TreeSearchRuns.read (r.state n) = AcquiredCorrection.scan n f
+@Becoming.TreeSearchRuns.run_reads_discover : ∀ {root : AcquiredCorrection.Tree}
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)),
+  r.state 0 = Becoming.TreeSearchRuns.start root →
+    ∀ (n : Nat), Becoming.TreeSearchRuns.read (r.state n) = AcquiredCorrection.discover n root
+Becoming.TreeSearchRuns.found_without_reading_rest : ∀ (key : Bool) (unread : AcquiredCorrection.Tree)
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)),
+  r.state 0 = Becoming.TreeSearchRuns.start ((AcquiredCorrection.Tree.endpoint key).fork unread) →
+    Becoming.TreeSearchRuns.read (r.state 2) =
+      { verdict := AcquiredCorrection.Verdict.found ([false], key), spent := 2 }
+Becoming.TreeSearchRuns.pending_then_found : ∀
+  (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)),
+  r.state 0 =
+      Becoming.TreeSearchRuns.start (AcquiredCorrection.Tree.closed.fork (AcquiredCorrection.Tree.endpoint true)) →
+    Becoming.TreeSearchRuns.read (r.state 1) = { verdict := AcquiredCorrection.Verdict.pending, spent := 1 } ∧
+      Becoming.TreeSearchRuns.read (r.state 3) =
+        { verdict := AcquiredCorrection.Verdict.found ([true], true), spent := 3 }
+Becoming.TreeSearchRuns.example_found : ∀ (r : Becoming.Run (Becoming.Law.process Becoming.TreeSearchRuns.advance)),
+  r.state 0 = Becoming.TreeSearchRuns.start AcquiredCorrection.exampleTree →
+    Becoming.TreeSearchRuns.read (r.state 4) =
+      { verdict := AcquiredCorrection.Verdict.found AcquiredCorrection.exampleTicket, spent := 4 }

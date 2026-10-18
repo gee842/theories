@@ -1,0 +1,10 @@
+'Becoming.JointPhaseTraces.process' does not depend on any axioms
+'Becoming.JointPhaseTraces.step_iff' does not depend on any axioms
+'Becoming.JointPhaseTraces.trace_end' does not depend on any axioms
+'Becoming.JointPhaseTraces.evolve_trace' does not depend on any axioms
+'Becoming.JointPhaseTraces.interaction_forms_joined' does not depend on any axioms
+'Becoming.JointPhaseTraces.phase_keeps_local_states' does not depend on any axioms
+'Becoming.JointPhaseTraces.phase_keeps_masses' does not depend on any axioms
+'Becoming.JointPhaseTraces.phase_changes_cross' does not depend on any axioms
+'Becoming.JointPhaseTraces.interaction_tells_apart' does not depend on any axioms
+'Becoming.JointPhaseTraces.no_local_update' does not depend on any axioms

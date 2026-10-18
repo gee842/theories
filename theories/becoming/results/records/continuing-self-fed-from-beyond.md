@@ -95,6 +95,7 @@ Ren's proposal says: “the pure "self" is an illusion, where only when outside 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 
 Aliases: `Becoming.Flow.Conveys`, `Becoming.Flow.FedFromBeyond`, `Becoming.Flow.inward_iff_not_fed`, `Becoming.Flow.fed_of_not_inward`, `Becoming.Flow.fed_from_beyond`, `Becoming.Flow.rising_fed_from_beyond`, `Becoming.Web.generation_fed_from_beyond`, `Becoming.Lone.fed_not_recurring`, `Becoming.Successive.relay`, `Becoming.Successive.takes_part_once`
 
@@ -113,6 +114,7 @@ Aliases: `Becoming.Flow.Conveys`, `Becoming.Flow.FedFromBeyond`, `Becoming.Flow.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A4: the title and statement said a continuing family "is fed from beyond"; Flow.fed_from_beyond and generation_fed_from_beyond conclude ¬∀t≥N, ¬FedFromBeyond, as law 3 already says, so the title and statement now have that strength. Earlier text in text_versions.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.
+- 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean, Flow.lean, Roles.lean). The claim is unchanged.
 - 52 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continuing-self-fed-from-beyond.json).
 
 <a id="earlier-text--早期文本"></a>

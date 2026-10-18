@@ -1,0 +1,26 @@
+@Becoming.ExchangeFlows.selected_le_uniform : ∀ {X : Type} {L : Becoming.Flow X X} {W : Becoming.Web X X},
+  L.Acting W →
+    W.Dependent →
+      ∀ {t : Nat} {c : X} {ps : List X} {kids : X → List X},
+        (∀ (p k : X), p ∈ ps → k ∈ kids p → L.DescendsAt W t k p) →
+          (∀ (p : X), p ∈ ps → W.requires t p c) →
+            ∀ {k : Nat},
+              (∀ (p : X), (kids p).length = k) →
+                (k * Becoming.total ps fun p => W.need t p c) ≤ k * (ps.length * W.level t c)
+@Becoming.ExchangeFlows.selection_within_uniform : ∀ {X : Type} {L : Becoming.Flow X X} {W : Becoming.Web X X},
+  L.Acting W →
+    W.Dependent →
+      ∀ {t : Nat} {c : X} {ps : List X} {kids : X → List X},
+        (∀ (p k : X), p ∈ ps → k ∈ kids p → L.DescendsAt W t k p) →
+          (∀ (p : X), p ∈ ps → W.requires t p c) →
+            ∀ {k : Nat},
+              (∀ (p : X), (kids p).length = k) →
+                ∀ (b : X → Nat),
+                  Becoming.offspring ps kids b + Becoming.lowered ps kids (fun p => W.need t p c) b ≤
+                    k * (ps.length * W.level t c) + Becoming.raised ps kids (fun p => W.need t p c) b
+@Becoming.ExchangeFlows.sample_take_absent : ∀ {F C : Type} [inst : DecidableEq F] (L : Becoming.Flow F C)
+  (σ : Nat → Nat) {s : Nat} {f : F},
+  (∀ (j : Nat), j ∈ Becoming.span σ s → ¬f ∈ L.present j) → ∀ (c : C), (L.sample σ).take s f c = 0
+@Becoming.ExchangeFlows.sample_give_absent : ∀ {F C : Type} [inst : DecidableEq F] (L : Becoming.Flow F C)
+  (σ : Nat → Nat) {s : Nat} {f : F},
+  (∀ (j : Nat), j ∈ Becoming.span σ s → ¬f ∈ L.present j) → ∀ (c : C), (L.sample σ).give s f c = 0

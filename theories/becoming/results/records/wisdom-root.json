@@ -805,7 +805,16 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "365fe9764be2ef5ceca70283b52dbfeb8afca7e3372fbb25bcdfa5094b96e551",
+      "sha256": "48718b1ebbf2c205d78e7175c3b01e4b2cbaf8edba463fca7f3f0c94d00bfe8a",
+      "declarations": [
+        "Becoming.Frame.arises_iff",
+        "Becoming.Frame.claims_recur_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "sha256": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb",
       "declarations": [
         "Becoming.withMove",
         "Becoming.Run.toWithMove",
@@ -814,21 +823,20 @@
         "Becoming.Run.toWithMove_ofWithMove",
         "Becoming.Frame.world",
         "Becoming.Frame.world_active",
-        "Becoming.Frame.arises_iff",
-        "Becoming.Frame.claims_recur_iff",
         "Becoming.Frame.configurations",
         "Becoming.Frame.world_fixes_run",
         "Becoming.Bisimulation",
         "Becoming.Alike",
         "Becoming.Bisimulation.trace",
         "Becoming.Alike.trace",
-        "Becoming.Alike.tests"
+        "Becoming.Alike.tests",
+        "Becoming.Dependence.along"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "d6e867b830b46a5b716646099fafc4e23f7f84e70e13b2792a3455be7bec5ce7",
+      "sha256": "1e0b6616ca3363962d90aa0f33cdd871fa20700e9c5a5f48e88b9f817d5ee546",
       "declarations": [
         "Becoming.Web.roles",
         "Becoming.Web.roles_supported",
@@ -847,7 +855,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "37f2cd1a36334292f9e74b79a0fb5269fc032f700f1a62feb92c135a0fba905c",
+      "sha256": "6fbcfccbc89cc50050a4fafdfc9e3d4753270bd19c024ea3ad1f0d92d6ee8057",
       "declarations": [
         "Becoming.World.ofRoles",
         "Becoming.World.arisingRecurs_ofRoles",
@@ -857,9 +865,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
       "declarations": [
-        "Becoming.Dependence.along",
         "Becoming.Web.Supported",
         "Becoming.Web.Dependent"
       ]
@@ -956,7 +963,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
       "role": "proof",
-      "sha256": "7deceb354836ccbfdaec1da33f7ff6e988f41da04a6f591756c486c41fe48654",
+      "sha256": "a6945f150c75540f35e320bc11c75dc15965e439f7592eee33f9411c7aa6776e",
       "declarations": [
         "Becoming.ContinuingRevision.one_cycle",
         "Becoming.ContinuingRevision.all_cycles",
@@ -1267,6 +1274,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1314,28 +1327,28 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1384,7 +1397,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ContinuingRevision",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1477,6 +1490,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1655,6 +1675,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: withMove, toWithMove, ofWithMove, ofWithMove_toWithMove, toWithMove_ofWithMove, world, world_active, configurations, world_fixes_run, Bisimulation, Alike, trace, trace, tests from Unfolding.lean to Labelled.lean; along from Dependence.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (ContinuingRevision.lean, Dependence.lean, Roles.lean, Space.lean, Unfolding.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

@@ -1,0 +1,11 @@
+@Becoming.BoundaryWorlds.presupposition_iff_all : ∀ {Pos : Type} (w : Becoming.World) {center : Pos → w.Relatum}
+  {sig : Pos → Nat → w.Relatum → Prop} {p : Pos},
+  Becoming.BoundaryInvariant (Becoming.Boundary (w.flow.Affects w.web) (center p)) (Becoming.SignificantWithin sig p) →
+    (Becoming.SubTrue (Becoming.Boundary (w.flow.Affects w.web) (center p)) (Becoming.SignificantWithin sig p) ↔
+      ∀ (t : Nat) (g : w.Relatum), sig p t g)
+@Becoming.BoundaryWorlds.bounded_invariant_iff : ∀ {Pos : Type} (w : Becoming.World) {center : Pos → w.Relatum}
+  {region : Pos → w.Relatum → Prop} {p : Pos},
+  (∀ (g : w.Relatum), w.flow.WithinReach w.web (center p) g → region p g) →
+    (Becoming.BoundaryInvariant (Becoming.Boundary (w.flow.Affects w.web) (center p))
+        (Becoming.SignificantWithin (Becoming.bounded region) p) ↔
+      ∀ (g : w.Relatum), region p g)

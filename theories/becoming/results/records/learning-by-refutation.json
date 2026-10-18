@@ -237,7 +237,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "3a557131944c92a33249a955fdac1db90c3a667ced4138abebb4cc23c347a5b1",
+      "sha256": "dd46c64db93e1eac72a21660f62953a4b1a9f3be6a56f82b2bd3d740bbdeff00",
       "declarations": [
         "Becoming.Web.tail_unexcluded"
       ]
@@ -294,6 +294,12 @@
       "role": "receipt",
       "sha256": "0dec8292b9c1b7a85364070084bf7c053486e60608e228f7d1dc0da391e9f6d1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "role": "receipt",
+      "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -313,7 +319,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -501,6 +507,10 @@
     {
       "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change since bd5252f96 (the section 8.2 row \"Learning\" that cites it now names Becoming.Labels (a table found rather than given, and whether fewer names suffice, stay open)). The claim is unchanged.",
       "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过自 bd5252f96 以来的改动后（引用它的第 8.2 节“学习”一行现指 Becoming.Labels），THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Testing.lean). The claim is unchanged.",
+      "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

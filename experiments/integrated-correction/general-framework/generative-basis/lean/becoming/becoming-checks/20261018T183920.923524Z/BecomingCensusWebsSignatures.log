@@ -1,0 +1,24 @@
+@Becoming.CensusWebs.listed_over_stretch : ∀ {F C : Type} (W : Becoming.Web F C) {l : Nat → List F} {S : Nat} (n : Nat)
+  {A D : Nat},
+  (∀ (s : Nat), S ≤ s → s ≤ S + n → Becoming.Distinct (l s) ∧ ∀ (f : F), W.active s f ↔ f ∈ l s) →
+    Becoming.CountsAcross l (fun t f => W.Ceases t f) (Becoming.steps S n) D →
+      Becoming.CountsAcross (fun t => l (t + 1)) (fun t f => W.Arises t f) (Becoming.steps S n) A →
+        (l (S + n)).length + D = (l S).length + A
+@Becoming.CensusWebs.keep_pace : ∀ {F C : Type} (W : Becoming.Web F C) {fs : List F} {S n A D : Nat},
+  Becoming.CountsAcross (fun x => fs) (fun t f => W.Arises t f) (Becoming.steps S n) A →
+    Becoming.CountsAcross (fun x => fs) (fun t f => W.Ceases t f) (Becoming.steps S n) D →
+      A ≤ fs.length + D ∧ D ≤ fs.length + A
+@Becoming.CensusWebs.arisings_count : ∀ {F C : Type} (W : Becoming.Web F C)
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] (fs : List F) (t : Nat),
+  Becoming.Counts fs (fun f => W.Arises t f) (Becoming.comings fs (fun f s => W.active s f) t)
+@Becoming.CensusWebs.ceasings_count : ∀ {F C : Type} (W : Becoming.Web F C)
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] (fs : List F) (t : Nat),
+  Becoming.Counts fs (fun f => W.Ceases t f) (Becoming.ceasings fs (fun f s => W.active s f) t)
+@Becoming.CensusWebs.census_identityDecided : ∀ {F C : Type} (W : Becoming.Web F C) {l : Nat → List F},
+  Becoming.Listed (fun f t => W.active t f) l → ∀ (t : Nat), Becoming.IdentityDecided (l t)
+@Becoming.CensusWebs.stock_eq : ∀ {F C : Type} (W : Becoming.Web F C) {cs cs' ds : List C},
+  Becoming.ListsOnce cs ds → Becoming.ListsOnce cs' ds → ∀ (t : Nat), W.stock cs t = W.stock cs' t
+@Becoming.CensusWebs.stock_le : ∀ {F C : Type} (W : Becoming.Web F C) {cs ds : List C},
+  Becoming.ListsOnce cs ds → ∀ (t : Nat), W.stock cs t ≤ W.stock ds t
+Becoming.CensusWebs.indiscernible_numbers_unique : ∀ (w : Becoming.World) {l : List w.Relatum} {n n' : Nat},
+  Becoming.NumbersBy w.Indiscernible l n → Becoming.NumbersBy w.Indiscernible l n' → n = n'
