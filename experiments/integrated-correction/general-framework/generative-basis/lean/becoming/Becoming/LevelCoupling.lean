@@ -30,6 +30,12 @@ theorem names, how the three meet. No name is changed.
   alike is a response by level (`ExchangeLaw.RespondsByLevel`). Where the formation does not
   observe the condition, no law reading through its registration responds to it by level
   (`ExchangeLaw.Through.not_respondsByLevel`): through the threshold only a crossing passes.
+* **By threshold, a crossing passes.** A response to a condition the formation does not observe
+  is a crossing of its need (`ExchangeLaw.Through.crosses_of_unobserved`). Where the formation
+  requires at a step exactly that one condition, with a positive need, a law reading through its
+  registration responds to a crossing there, at every condition (`thresholdLaw`,
+  `thresholdLaw_through`, `thresholdLaw_respondsByCrossing`, `crossing_passes`). The 18 October
+  continuation (N3) added this half.
 * **By level, the level passes.** Where it observes the condition, a law reading through its
   registration responds to it by level at every step and condition (`levelLaw`,
   `levelLaw_through`, `levelLaw_respondsByLevel`). So observing is exactly where a level can couple
@@ -37,14 +43,15 @@ theorem names, how the three meet. No name is changed.
 
 **Reading (the AI's).** `obs` is not a second kind of relation beside the couplings of
 `Becoming.Loops` and the readings of `Becoming.Observation`: it marks where a level can couple
-into a formation by level, as `Web.DependsOn` marks where it can couple by threshold, and every
-coupling a response forces lies within them. "Coupled by level" names this exactly; registration
+into a formation by level, as `Web.DependsOn` marks where it can couple by threshold (a crossing
+of the need), and every coupling a response forces lies within them. "Coupled by level" names this exactly; registration
 bounds coupling, and a law's actual responses are its couplings. The double negation of the last
 equivalence is the constructive form: the converse shows that a level coupling is not left out.
 
 What is not derived: which law the rest follows, or whether an observed level is in fact
-responded to (a law reading through registration may ignore what it registers); a strength's
-size beyond being positive. The representation commits to discrete steps and natural amounts. No
+responded to (a law reading through registration may ignore what it registers); a crossing
+passing where the formation requires other conditions at the same step (its admission is then a
+conjunction a law would have to decide); a strength's size beyond being positive. The representation commits to discrete steps and natural amounts. No
 ethical predicate, ranking or axiom occurs.
 -/
 
@@ -275,5 +282,144 @@ theorem not_not_obs_iff_respondsByLevel [DecidableEq C] [DecidableEq F] {h : F}
     through.not_respondsByLevel out unobserved responds⟩
 
 end Witness
+
+/-! ## By threshold, a crossing passes -/
+
+namespace ExchangeLaw
+
+variable (law : ExchangeLaw F C)
+
+/-- **The exchange responds to a crossing.** As `RespondsTo`, by a change of the level of `d` at
+`s` across `h`'s need for it in `W`: the need is met under the first history and not under the
+second. -/
+def RespondsByCrossing (W : Web F C) (t : Nat) (h : F) (c : C) (s : Nat) (d : C) : Prop :=
+  ∃ l l' : Nat → C → Nat, (∀ s' e, ¬ (s' = s ∧ e = d) → l s' e = l' s' e) ∧
+    W.requires s h d ∧ W.need s h d ≤ l s d ∧ ¬ W.need s h d ≤ l' s d ∧
+    0 < law.exchangeGap t h c l l'
+
+end ExchangeLaw
+
+section Crossing
+
+variable {law : ExchangeLaw F C} {W : Web F C} {obs : F → C → Prop} {part : F → Bool}
+  {t s : Nat} {h : F} {c d : C}
+
+/-- A response by a crossing is a response. -/
+theorem ExchangeLaw.RespondsByCrossing.respondsTo (responds : law.RespondsByCrossing W t h c s d) :
+    law.RespondsTo t h c s d :=
+  let ⟨l, l', off, _, _, _, pos⟩ := responds
+  ⟨l, l', off, pos⟩
+
+/-- **A response to a condition not observed is a crossing.** For a law reading through
+registration and a formation outside the part that does not observe `d`: wherever two histories
+differing at most in the level of `d` at `s` give a positive exchange gap, the formation is not
+refuted to require `d` at `s`, and the two levels do not meet its need alike. -/
+theorem ExchangeLaw.Through.crosses_of_unobserved [DecidableEq C] (through : law.Through W obs part)
+    (out : part h = false) (unobserved : ¬ obs h d) {l l' : Nat → C → Nat}
+    (off : ∀ s' e, ¬ (s' = s ∧ e = d) → l s' e = l' s' e) (pos : 0 < law.exchangeGap t h c l l') :
+    ¬ ¬ W.requires s h d ∧ ¬ (W.need s h d ≤ l s d ↔ W.need s h d ≤ l' s d) :=
+  ⟨fun none => through.not_respondsByLevel out unobserved
+      ⟨l, l', off, fun requires => absurd requires none, pos⟩,
+   fun alike => through.not_respondsByLevel out unobserved ⟨l, l', off, fun _ => alike, pos⟩⟩
+
+/-- Two numbers below the same bound compare alike with it. -/
+theorem ble_eq_of_iff {a b b' : Nat} (iff : a ≤ b ↔ a ≤ b') : Nat.ble a b = Nat.ble a b' :=
+  match hb : Nat.ble a b, hb' : Nat.ble a b' with
+  | true, true => rfl
+  | false, false => rfl
+  | true, false =>
+    Bool.noConfusion ((Nat.ble_eq_true_of_le (iff.mp (Nat.le_of_ble_eq_true hb))).symm.trans hb')
+  | false, true =>
+    Bool.noConfusion ((Nat.ble_eq_true_of_le (iff.mpr (Nat.le_of_ble_eq_true hb'))).symm.trans hb)
+
+/-- Where a formation requires at a step exactly the one condition `d`, the levels admit it
+exactly where they meet its need for `d`. -/
+theorem Web.admits_iff_of_sole {l : C → Nat} {t : Nat} (sole : ∀ e, W.requires t h e ↔ e = d) :
+    W.Admits l t h ↔ W.need t h d ≤ l d :=
+  ⟨fun admits => admits d ((sole d).mpr rfl),
+   fun met e requires => ((sole e).mp requires) ▸ met⟩
+
+/-- **A law taking a crossing of the need.** Each marked formation takes, across the step from
+`T` only, one unit from every condition where the level of `d` at `T` meets its need, and nothing
+otherwise; nothing else is exchanged. -/
+def thresholdLaw (W : Web F C) (mark : F → Bool) (d : C) (T : Nat) : ExchangeLaw F C :=
+  ⟨fun t h l _ => bif mark h then
+      (bif Nat.beq t T then (bif Nat.ble (W.need t h d) (l t d) then 1 else 0) else 0) else 0,
+   fun _ _ _ _ => 0⟩
+
+/-- **The law taking a crossing reads through registration** where every marked formation
+requires at `T` exactly the one condition `d`. -/
+theorem thresholdLaw_through {mark : F → Bool} {T : Nat}
+    (sole : ∀ h, mark h = true → ∀ e, W.requires T h e ↔ e = d) :
+    (thresholdLaw W mark d T).Through W obs part :=
+  fun h _ t l l' alike _ => by
+    refine ⟨?_, rfl⟩
+    show cond (mark h) (cond (Nat.beq t T) (cond (Nat.ble (W.need t h d) (l t d)) 1 0) 0) 0 =
+      cond (mark h) (cond (Nat.beq t T) (cond (Nat.ble (W.need t h d) (l' t d)) 1 0) 0) 0
+    cases m : mark h with
+    | false => rfl
+    | true =>
+      cases q : Nat.beq t T with
+      | false => rfl
+      | true =>
+        have same : t = T := Nat.eq_of_beq_eq_true q
+        subst same
+        have admits := (alike t (Nat.le_refl t)).1
+        have iff : W.need t h d ≤ l t d ↔ W.need t h d ≤ l' t d :=
+          ⟨fun met => (Web.admits_iff_of_sole (sole h m)).mp
+              (admits.mp ((Web.admits_iff_of_sole (sole h m)).mpr met)),
+           fun met => (Web.admits_iff_of_sole (sole h m)).mp
+              (admits.mpr ((Web.admits_iff_of_sole (sole h m)).mpr met))⟩
+        exact congrArg (fun b => cond b 1 0) (ble_eq_of_iff iff)
+
+/-- The levels at the need, and the level of `d` at `t` lowered to nothing in the second. -/
+def loweredAt [DecidableEq C] (n t : Nat) (d : C) : Nat → C → Nat :=
+  fun s e => if s = t ∧ e = d then 0 else n
+
+/-- **The law taking a crossing responds to it** at every condition, for every marked formation
+requiring `d` at `t` with a positive need. -/
+theorem thresholdLaw_respondsByCrossing [DecidableEq C] {mark : F → Bool} (marked : mark h = true)
+    (requires : W.requires t h d) (positive : 0 < W.need t h d) (c : C) :
+    (thresholdLaw W mark d t).RespondsByCrossing W t h c t d :=
+  have unmet : ¬ W.need t h d ≤ loweredAt (W.need t h d) t d t d := fun le =>
+    Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le positive (Nat.le_trans le (Nat.le_of_eq (if_pos ⟨rfl, rfl⟩))))
+  have below : Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d) = false :=
+    match hb : Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d) with
+    | true => absurd (Nat.le_of_ble_eq_true hb) unmet
+    | false => rfl
+  have before : cond (mark h)
+      (cond (Nat.beq t t) (cond (Nat.ble (W.need t h d) (W.need t h d)) 1 0) 0) 0 = 1 :=
+    (congrArg (fun b => cond b
+      (cond (Nat.beq t t) (cond (Nat.ble (W.need t h d) (W.need t h d)) 1 0) 0) 0) marked).trans
+      ((congrArg (fun b => cond b (cond (Nat.ble (W.need t h d) (W.need t h d)) 1 0) 0)
+        (Loops.beq_self t)).trans
+        (congrArg (fun b => cond b 1 0) (Nat.ble_eq_true_of_le (Nat.le_refl _))))
+  have after : cond (mark h) (cond (Nat.beq t t)
+      (cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) 0 = 0 :=
+    (congrArg (fun b => cond b (cond (Nat.beq t t)
+      (cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) 0) marked).trans
+      ((congrArg (fun b => cond b
+        (cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) (Loops.beq_self t)).trans
+        (congrArg (fun b => cond b 1 0) below))
+  ⟨fun _ _ => W.need t h d, loweredAt (W.need t h d) t d,
+   fun _ _ apart => (if_neg apart).symm, requires, Nat.le_refl _, unmet,
+   Nat.lt_of_lt_of_le Nat.one_pos (Nat.le_trans
+     (Nat.le_of_eq ((gap_zero 1).symm.trans (congr (congrArg gap before) after).symm))
+     (Nat.le_add_right _ (gap 0 0)))⟩
+
+/-- **By threshold, a crossing passes.** For a formation outside the part requiring at `t`
+exactly the one condition `d`, with a positive need: some law reading through its registration
+responds to a crossing of its need at `t`, at every condition. Conversely, where the formation
+does not observe `d`, a response of any law reading through registration to `d` is a crossing
+(`ExchangeLaw.Through.crosses_of_unobserved`). -/
+theorem crossing_passes [DecidableEq C] [DecidableEq F]
+    (sole : ∀ e, W.requires t h e ↔ e = d) (positive : 0 < W.need t h d) :
+    ∃ law : ExchangeLaw F C, law.Through W obs part ∧ ∀ c, law.RespondsByCrossing W t h c t d :=
+  ⟨thresholdLaw W (fun h' => decide (h' = h)) d t,
+   thresholdLaw_through fun _ m => (of_decide_eq_true m) ▸ sole,
+   fun c => thresholdLaw_respondsByCrossing (mark := fun h' => decide (h' = h))
+     (decide_eq_true rfl) ((sole d).mpr rfl) positive c⟩
+
+end Crossing
 
 end Becoming

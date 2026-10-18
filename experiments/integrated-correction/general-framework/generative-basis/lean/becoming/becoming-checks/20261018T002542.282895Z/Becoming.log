@@ -1,0 +1,1 @@
+Becoming.lean:1:0: error: import Becoming.LevelCoupling failed, environment already contains 'Becoming.beq_self.match_1_1' from Becoming.OrderNormal

@@ -6559,6 +6559,15 @@ Ren, 18 October 2026: "Claim and prove the instance check of coupling by level a
 - The witness law marks formations by a Boolean, so that reading through registration holds for every formation outside the part; the equivalence instantiates the mark with decided equality of formations.
 - The first checker run passed (receipt `20261017T234304.269818Z`), but the connectivity check found `ExchangeLaw.RespondsTo.upstream` apart: nothing on the base used it. `ExchangeLaw.Through.upstream_restrictInto` was added to join it, and the checker run again (receipt `20261017T234737.804623Z`). The first receipt is kept as evidence of the superseded run.
 
+**The positive half of the threshold grain (N3, 18 October).** After Ren's "please continue" ([source](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md#rens-go-to-continue-18-october-2026)), the same module gained the half that N2 left unwitnessed.
+- A response by a crossing changes the level across the formation's need: met under one history, not under the other (`ExchangeLaw.RespondsByCrossing`).
+- For a law reading through registration, a response to a condition the formation does not observe is a crossing: the formation is not refuted to require the condition at that step, and the two levels do not meet its need alike (`ExchangeLaw.Through.crosses_of_unobserved`).
+- Where the formation requires at a step exactly that one condition, with a positive need, the law taking one unit across that step only, where the need is met, reads through registration and responds to the crossing at every condition (`thresholdLaw`, `thresholdLaw_through`, `thresholdLaw_respondsByCrossing`, `crossing_passes`).
+- A first version needed the support to be the one condition at every step. Making the law act at the crossing step only weakened the hypothesis to that step.
+- The first checker run (receipt `20261018T002542.282895Z`, kept) failed on a name clash: the module had its own `beq_self`, which `Becoming.OrderNormal` also declares. The module now uses `Loops.beq_self`, one proof for one law.
+
+So both grains of "couples into" are exact: by level the level passes, by threshold a crossing passes. What remains is a crossing where the formation requires other conditions at the same step: its admission is then a conjunction, which a law would have to decide. Evidence: 22 theorems and 7 definitions in `Becoming.LevelCoupling`, empty axiom reports; core receipt `20261018T002939.754460Z`.
+
 ## 169. The step index read off the relata's own courses (R1)
 
 ```text

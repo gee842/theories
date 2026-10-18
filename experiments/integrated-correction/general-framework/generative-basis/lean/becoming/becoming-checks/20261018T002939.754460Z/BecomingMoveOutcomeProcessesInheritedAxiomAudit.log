@@ -1,0 +1,3 @@
+'Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

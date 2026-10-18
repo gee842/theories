@@ -6248,7 +6248,7 @@ Definitions and types:
 <a id="module-41d793a8ed35"></a>
 
 <details>
-<summary>LevelCoupling.lean — 19 explicit declarations</summary>
+<summary>LevelCoupling.lean — 29 explicit declarations</summary>
 
 [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked
 
@@ -6258,28 +6258,38 @@ Imports: `Becoming.Observation`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.ExchangeLaw.RespondsByLevel.respondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L82) | 82 |
-| [Becoming.ExchangeLaw.respondsWithin_zero_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L88) | 88 |
-| [Becoming.ExchangeLaw.RespondsTo.strength_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L99) | 99 |
-| [Becoming.ExchangeLaw.RespondsTo.couples](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L111) | 111 |
-| [Becoming.ExchangeLaw.RespondsTo.upstream](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L118) | 118 |
-| [Becoming.ExchangeLaw.Through.respondsWithin_unregistered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L136) | 136 |
-| [Becoming.ExchangeLaw.Through.registers_of_respondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L151) | 151 |
-| [Becoming.ExchangeLaw.Through.reads_of_respondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L158) | 158 |
-| [Becoming.ExchangeLaw.Through.couples_readCouplings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L170) | 170 |
-| [Becoming.ExchangeLaw.Through.upstream_restrictInto](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L184) | 184 |
-| [Becoming.Web.registersAlike_of_levels](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L194) | 194 |
-| [Becoming.ExchangeLaw.Through.not_respondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L203) | 203 |
-| [Becoming.levelLaw_through](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L229) | 229 |
-| [Becoming.levelLaw_respondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L244) | 244 |
-| [Becoming.not_not_obs_iff_respondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L265) | 265 |
+| [Becoming.ExchangeLaw.RespondsByLevel.respondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L89) | 89 |
+| [Becoming.ExchangeLaw.respondsWithin_zero_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L95) | 95 |
+| [Becoming.ExchangeLaw.RespondsTo.strength_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L106) | 106 |
+| [Becoming.ExchangeLaw.RespondsTo.couples](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L118) | 118 |
+| [Becoming.ExchangeLaw.RespondsTo.upstream](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L125) | 125 |
+| [Becoming.ExchangeLaw.Through.respondsWithin_unregistered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L143) | 143 |
+| [Becoming.ExchangeLaw.Through.registers_of_respondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L158) | 158 |
+| [Becoming.ExchangeLaw.Through.reads_of_respondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L165) | 165 |
+| [Becoming.ExchangeLaw.Through.couples_readCouplings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L177) | 177 |
+| [Becoming.ExchangeLaw.Through.upstream_restrictInto](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L191) | 191 |
+| [Becoming.Web.registersAlike_of_levels](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L201) | 201 |
+| [Becoming.ExchangeLaw.Through.not_respondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L210) | 210 |
+| [Becoming.levelLaw_through](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L236) | 236 |
+| [Becoming.levelLaw_respondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L251) | 251 |
+| [Becoming.not_not_obs_iff_respondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L272) | 272 |
+| [Becoming.ExchangeLaw.RespondsByCrossing.respondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L308) | 308 |
+| [Becoming.ExchangeLaw.Through.crosses_of_unobserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L317) | 317 |
+| [Becoming.ble_eq_of_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L326) | 326 |
+| [Becoming.Web.admits_iff_of_sole](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L337) | 337 |
+| [Becoming.thresholdLaw_through](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L352) | 352 |
+| [Becoming.thresholdLaw_respondsByCrossing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L381) | 381 |
+| [Becoming.crossing_passes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L415) | 415 |
 
 Definitions and types:
 
-- `def` [Becoming.ExchangeLaw.RespondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L62) (L62)
-- `def` [Becoming.ExchangeLaw.RespondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L68) (L68)
-- `def` [Becoming.levelLaw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L225) (L225)
-- `def` [Becoming.raisedAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L239) (L239)
+- `def` [Becoming.ExchangeLaw.RespondsTo](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L69) (L69)
+- `def` [Becoming.ExchangeLaw.RespondsByLevel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L75) (L75)
+- `def` [Becoming.levelLaw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L232) (L232)
+- `def` [Becoming.raisedAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L246) (L246)
+- `def` [Becoming.ExchangeLaw.RespondsByCrossing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L295) (L295)
+- `def` [Becoming.thresholdLaw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L345) (L345)
+- `def` [Becoming.loweredAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean#L376) (L376)
 
 </details>
 

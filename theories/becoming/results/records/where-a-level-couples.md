@@ -5,7 +5,7 @@
 
 `where-a-level-couples` · **recorded-checked** · theorem · F01 · [record](where-a-level-couples.json) · [register](../../../../RESULTS.md)
 
-> A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through registration only registered levels couple, an unobserved condition passes only a crossing of its need, and observing is exactly where a level can couple within its need.
+> A response of an exchange to one level is a coupling of every strength array of the law. For a law reading through registration only registered levels couple; by threshold a crossing of the need passes and nothing else, and observing is exactly where a level can couple within its need.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -13,7 +13,8 @@
 1. Strength zero is exactly no response: across the step from t, h's exchange with c is coupled to the level of d at s with strength zero exactly where no two histories differing at most in that level give a positive exchange gap. A response forces every strength of the law for that level to be positive, so it is a coupling of every strength array of the law in the sense of Becoming.Loops and a route of length one. (`Becoming.ExchangeLaw.RespondsTo`, `Becoming.ExchangeLaw.respondsWithin_zero_iff`, `Becoming.ExchangeLaw.RespondsTo.strength_pos`, `Becoming.ExchangeLaw.RespondsTo.couples`, `Becoming.ExchangeLaw.RespondsTo.upstream`)
 2. Only what couples into a formation responds: for a law reading through registration, a level a formation outside the part neither depends on nor observes is coupled into its exchanges with strength zero. A response thus comes from a registered condition (as a double negation), is read in every schedule covering registration, and is a route of reading and of the law's strengths restricted to that schedule. (`Becoming.ExchangeLaw.Through.respondsWithin_unregistered`, `Becoming.ExchangeLaw.Through.registers_of_respondsTo`, `Becoming.ExchangeLaw.Through.reads_of_respondsTo`, `Becoming.ExchangeLaw.Through.couples_readCouplings`, `Becoming.ExchangeLaw.Through.upstream_restrictInto`, `Becoming.Web.registersAlike_of_levels`)
 3. By threshold, only a crossing passes: for a law reading through registration, where a formation outside the part does not observe a condition, a change of that condition's level at one step that leaves the formation's need for it met alike changes nothing the formation exchanges. (`Becoming.ExchangeLaw.RespondsByLevel`, `Becoming.ExchangeLaw.RespondsByLevel.respondsTo`, `Becoming.ExchangeLaw.Through.not_respondsByLevel`)
-4. By level, the level passes: where marked formations observe a condition, the law taking its level reads through registration and responds to it within the need at every step. So, for a formation outside the part, it is not refuted that it observes the condition exactly where it is not refuted that some law reading through its registration responds to it by level. (`Becoming.levelLaw`, `Becoming.levelLaw_through`, `Becoming.raisedAt`, `Becoming.levelLaw_respondsByLevel`, `Becoming.not_not_obs_iff_respondsByLevel`)
+4. By threshold, a crossing passes: for a law reading through registration, a response to a condition the formation does not observe is a crossing of its need (the requirement not refuted, the two levels not meeting it alike); where the formation requires at a step exactly that condition, with a positive need, a law reading through registration responds to a crossing there, at every condition. (`Becoming.ExchangeLaw.RespondsByCrossing`, `Becoming.ExchangeLaw.RespondsByCrossing.respondsTo`, `Becoming.ExchangeLaw.Through.crosses_of_unobserved`, `Becoming.ble_eq_of_iff`, `Becoming.Web.admits_iff_of_sole`, `Becoming.thresholdLaw`, `Becoming.thresholdLaw_through`, `Becoming.loweredAt`, `Becoming.thresholdLaw_respondsByCrossing`, `Becoming.crossing_passes`)
+5. By level, the level passes: where marked formations observe a condition, the law taking its level reads through registration and responds to it within the need at every step. So, for a formation outside the part, it is not refuted that it observes the condition exactly where it is not refuted that some law reading through its registration responds to it by level. (`Becoming.levelLaw`, `Becoming.levelLaw_through`, `Becoming.raisedAt`, `Becoming.levelLaw_respondsByLevel`, `Becoming.not_not_obs_iff_respondsByLevel`)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -23,7 +24,7 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- That a crossing of the need passes through some law reading through registration: a witness would need the formation's whole support decided.
+- A crossing passing where the formation requires other conditions at the same step: its admission is then a conjunction a law would have to decide.
 - That a given law responds to what it may read: a law reading through registration may ignore a level it registers.
 - The converse without double negation: that a formation observes a condition is recovered from a response by level only as not refuted.
 - A strength's size beyond being positive.
@@ -33,14 +34,14 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261017T234737.804623Z): the 19 declarations of Becoming.LevelCoupling, 15 of them theorems, have empty axiom reports; the checker verifies core purity, and THEOREM-CONNECTIVITY.py --check finds none of them apart from the base. Author self-review in study section 168; not independently reviewed.
+Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261018T002939.754460Z): the 29 declarations of Becoming.LevelCoupling, 22 of them theorems, have empty axiom reports; the checker verifies core purity, and THEOREM-CONNECTIVITY.py --check finds none of them apart from the base. Author self-review in study section 168; not independently reviewed.
 
 Canonical source: [LevelCoupling.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean)
 
 <a id="next--下一步"></a>
 ## Next
 
-A witness that a crossing passes (decided support); the threshold grain stated as a coupling of Becoming.Thresholds; the renames adopted in the naming study (N1), which this check unblocks for the level branch; an independent review.
+A crossing where the formation requires several conditions at one step (a decided support); the renames adopted in the naming study (N1), prepared as a dry run and awaiting Ren; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -83,26 +84,27 @@ The naming study of 17-18 October (N1, study section 6.2) adopted "couples into"
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [LevelCoupling.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean) | `Becoming.ExchangeLaw.RespondsTo`, `Becoming.ExchangeLaw.respondsWithin_zero_iff`, `Becoming.ExchangeLaw.RespondsTo.strength_pos`, `Becoming.ExchangeLaw.RespondsTo.couples`, `Becoming.ExchangeLaw.RespondsTo.upstream`, `Becoming.ExchangeLaw.Through.respondsWithin_unregistered`, `Becoming.ExchangeLaw.Through.registers_of_respondsTo`, `Becoming.ExchangeLaw.Through.reads_of_respondsTo`, `Becoming.ExchangeLaw.Through.couples_readCouplings`, `Becoming.ExchangeLaw.Through.upstream_restrictInto`, `Becoming.Web.registersAlike_of_levels`, `Becoming.ExchangeLaw.RespondsByLevel`, `Becoming.ExchangeLaw.RespondsByLevel.respondsTo`, `Becoming.ExchangeLaw.Through.not_respondsByLevel`, `Becoming.levelLaw`, `Becoming.levelLaw_through`, `Becoming.raisedAt`, `Becoming.levelLaw_respondsByLevel`, `Becoming.not_not_obs_iff_respondsByLevel` |
+| proof | [LevelCoupling.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelCoupling.lean) | `Becoming.ExchangeLaw.RespondsTo`, `Becoming.ExchangeLaw.respondsWithin_zero_iff`, `Becoming.ExchangeLaw.RespondsTo.strength_pos`, `Becoming.ExchangeLaw.RespondsTo.couples`, `Becoming.ExchangeLaw.RespondsTo.upstream`, `Becoming.ExchangeLaw.Through.respondsWithin_unregistered`, `Becoming.ExchangeLaw.Through.registers_of_respondsTo`, `Becoming.ExchangeLaw.Through.reads_of_respondsTo`, `Becoming.ExchangeLaw.Through.couples_readCouplings`, `Becoming.ExchangeLaw.Through.upstream_restrictInto`, `Becoming.Web.registersAlike_of_levels`, `Becoming.ExchangeLaw.RespondsByLevel`, `Becoming.ExchangeLaw.RespondsByLevel.respondsTo`, `Becoming.ExchangeLaw.Through.not_respondsByLevel`, `Becoming.ExchangeLaw.RespondsByCrossing`, `Becoming.ExchangeLaw.RespondsByCrossing.respondsTo`, `Becoming.ExchangeLaw.Through.crosses_of_unobserved`, `Becoming.ble_eq_of_iff`, `Becoming.Web.admits_iff_of_sole`, `Becoming.thresholdLaw`, `Becoming.thresholdLaw_through`, `Becoming.loweredAt`, `Becoming.thresholdLaw_respondsByCrossing`, `Becoming.crossing_passes`, `Becoming.levelLaw`, `Becoming.levelLaw_through`, `Becoming.raisedAt`, `Becoming.levelLaw_respondsByLevel`, `Becoming.not_not_obs_iff_respondsByLevel` |
 | proof | [Propagation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean) | `Becoming.ExchangeLaw.RespondsWithin`, `Becoming.ExchangeLaw.exchangeGap`, `Becoming.ExchangeLaw.exchangeGap_of_alike`, `Becoming.gap_comm`, `Becoming.gap_add_self` |
 | proof | [Loops.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean) | `Becoming.Couples` |
 | proof | [Observation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean) | `Becoming.Upstream.single`, `Becoming.readCouplings`, `Becoming.restrictInto`, `Becoming.ExchangeLaw.ReadsInto.restrict`, `Becoming.ExchangeLaw.Through.readsInto` |
 | proof | [Thresholds.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Thresholds.lean) | `Becoming.ExchangeLaw.Through.readsAt`, `Becoming.ExchangeLaw.ReadsAt.respondsWithin_unread` |
 | proof | [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean) | `Becoming.Web.Registers`, `Becoming.Web.RegistersAlike`, `Becoming.Web.alike_of_threshold` |
 | proof | [Counterfactual.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean) | `Becoming.ExchangeLaw`, `Becoming.ExchangeLaw.Through` |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T234737.804623Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-17-registration-dualist-vocabulary.md](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md) | — |
 | integration | [REGISTRATION-VOCABULARY-STUDY.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T002939.754460Z/verification.json) | — |
 
-Aliases: `where a level couples`, `水平在何处耦合`, `coupling by level`, `经水平耦合`, `coupled by threshold`, `经阈耦合`, `response is a coupling`, `回应即耦合`, `strength zero is no response`, `强度为零即不回应`, `only a crossing passes`, `只过跨越`, `observing is where a level couples`, `观察即水平耦合之处`
+Aliases: `where a level couples`, `水平在何处耦合`, `coupling by level`, `经水平耦合`, `coupled by threshold`, `经阈耦合`, `response is a coupling`, `回应即耦合`, `strength zero is no response`, `强度为零即不回应`, `only a crossing passes`, `只过跨越`, `observing is where a level couples`, `观察即水平耦合之处`, `a crossing passes`, `跨越得过`, `crossing passes`, `threshold law`, `阈之律`
 
 <a id="history--沿革"></a>
 ### History
 
 - 18 October 2026: added, on Ren's "Claim and prove the instance check of coupling by level against Observation/Loops (study §6.2), still no renames" (N2), after the naming study N1; study section 168.
+- 18 October 2026: the positive half of the threshold grain added after Ren's "please continue" (N3): a response to an unobserved condition is a crossing, and where the support at a step is the one condition a crossing passes; study section 168.
 
 </details>
 
-Documentary review UTC: `2026-10-18T00:00:00+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-18T06:00:00+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
