@@ -46,8 +46,8 @@
 | [ClassificationRobustJudgment](#classificationrobustjudgment) | 13 | 7 | 5 | 1 | 0 | 0 | 13 | fully restated |
 | [AlignmentDirection](#alignmentdirection) | 9 | 9 | 0 | 0 | 0 | 0 | 9 | fully restated |
 | [StandardsBridge](#standardsbridge) | 26 | 24 | 2 (extensionality named) | 0 | 0 | 0 | 26 | fully restated |
-| PositiveGroundUncertainty | 9 | | | | | | | sub-chain 2, pending |
-| PositionedPositiveReason | 10 | | | | | | | sub-chain 2, pending |
+| [PositiveGroundUncertainty](#positivegrounduncertainty) | 9 | 9 | 0 | 0 | 0 | 0 | 9 | fully restated (sub-chain 2) |
+| [PositionedPositiveReason](#positionedpositivereason) | 10 | 10 | 0 | 0 | 0 | 0 | 10 | fully restated (sub-chain 2) |
 | EvaluatorGrounding | 12 | | | | | | | sub-chain 2, pending |
 | OpenFutureRevision | 10 | | | | | | | sub-chain 2, pending |
 | ContinuationRenewal | 17 | | | | | | | sub-chain 2, pending |
@@ -331,4 +331,47 @@ Declarations of the bridge that reach both family J and family R (`Conditions.li
 
 ## 5. Sub-chains 2 and 3
 
-Pending. Sub-chain 2: PositiveGroundUncertainty, PositionedPositiveReason, EvaluatorGrounding, OpenFutureRevision, ContinuationRenewal, with the joins RuleRevisionTraces(+`Inherited`), DescentRenewalRuns and ReachableFramesInherited. Sub-chain 3: OrganizationalRuleInheritance with RuleHandoffTraces(+`Inherited`).
+Sub-chain 2: PositiveGroundUncertainty, PositionedPositiveReason, EvaluatorGrounding, OpenFutureRevision, ContinuationRenewal, with the joins RuleRevisionTraces(+`Inherited`), DescentRenewalRuns and ReachableFramesInherited. Sub-chain 3: OrganizationalRuleInheritance with RuleHandoffTraces(+`Inherited`). Map for the rebind: `f3j/map_s2.py` (`rebind_f3j.py BASE RID map_s1 map_s2`).
+
+### PositiveGroundUncertainty
+
+Source: `universal-ethics/generative-capacity/PositiveGroundUncertainty.lean`. 9 theorems; **fully restated** in `Becoming.PositiveGround` (imports `Bundles`, `Narrowing`, `Relevance`). The periphery's `Inventory H Q` (`realized`, `generative`) is the core's frame with `living` its generative claims, the identification of sub-chain 1 (`Frame.ofInventory`, kind 1); `G0 inventory positive` is `G0 F living positive`. The finite futures are a frame with no moves (`futureFrame`); `PreservesJointBundles` on `Continuations` is `Bundles`' `PreservesBundles` with every configuration feasible. The periphery proves by `simp`, `omega` and `by_cases`; the core's proofs are constructive. Most of the prelude's `Int` order lemmas depend on `propext`, so the signed sums go by cases on `Int`'s constructors: `pos_succ` (`0 < ofNat (n + 1)`, through `Int.subNatNat_of_sub_eq_zero`), `not_pos_negSucc`, and `pos_or_pos` (a positive sum has a positive summand). F3R's `Becoming.Integers` states ring laws only, so these order lemmas do not duplicate it.
+
+| Theorem | Grade | Core counterpart | How established |
+|---|---|---|---|
+| `positive_integral_has_positive_occurrence` | same | `PositiveGround.positive_integral_has_positive_occurrence` | constructive: `pos_or_pos` in place of `by_cases` and `omega` |
+| `contingent_generation_has_positive_ground` | same | `PositiveGround.contingent_generation` | |
+| `certified_integral_supplies_contributory_reason` | same | `PositiveGround.certified_integral_reason` | |
+| `same_response_secures_generation_without_fixed_form` | same | `PositiveGround.same_response_without_fixed_form` | `fresh` is the periphery's `generative` |
+| `positive_occurrence_has_actual_generative_correspondence` | same | `PositiveGround.positive_occurrence_correspondence` | by cases on the two members of the positive domain |
+| `positive_integral_and_adverse_full_change` | same | `PositiveGround.positive_integral_and_adverse_full_change` | `Nodup` by explicit `Pairwise` terms, sums by `decide` |
+| `response_preserves_joint_openness_and_query_access` | same | `PositiveGround.response_preserves_joint_openness` | `Bundles.preserves_of_transport` at `id` |
+| `acquired_evidence_secures_good_and_leaves_both_opennesses` | same | `PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses` | on `Narrowing`'s `acquire`, `learn`, `answer`, `revise` |
+| `wider_scope_can_require_certificate_retraction` | same | `PositiveGround.wider_scope_can_require_certificate_retraction` | |
+
+### PositionedPositiveReason
+
+Source: `universal-ethics/generative-capacity/PositionedPositiveReason.lean`. 10 theorems; **fully restated** in `Becoming.PositiveGround`. `SecuresPositiveGround` and `PositionedArticulation` (D) are already the core's (`Becoming.Metaethics`), with the same definitions; they are cited. `RouteReason` is restated. The concrete continuations are a frame with no moves (`wholeFrame`).
+
+| Theorem | Grade | Core counterpart | How established |
+|---|---|---|---|
+| `every_situated_position_has_reason` | same | `PositiveGround.every_situated_position_has_reason` | |
+| `route_reason_is_least` | same | `PositiveGround.route_reason_is_least` | |
+| `route_reason_depends_only_on_access` | same | `PositiveGround.route_reason_depends_only_on_access` | |
+| `g0_holds` | same | `PositiveGround.g0_holds` | |
+| `barren_not_live` | same | `PositiveGround.barren_not_live` | |
+| `live_productive` | same | `PositiveGround.live_productive` | |
+| `respond_formation` | same | `PositiveGround.respond_formation` | |
+| `nonendorsing_position_with_access_has_reason` | same | `PositiveGround.nonendorsing_position_with_access_has_reason` | |
+| `endorsement_without_access_gets_no_route_reason` | same | `PositiveGround.endorsement_without_access_gets_no_route_reason` | |
+| `endorsement_independence_is_supplied_by_articulation` | same | `PositiveGround.endorsement_independence_is_supplied_by_articulation` | |
+
+Bridge and join declarations reading only these two modules:
+
+| Declaration | Grade | Core counterpart | Note |
+|---|---|---|---|
+| `Bridge.contingent_generation_of_unrestricted` | same | `PositiveGround.contingent_generation_of_unrestricted` | positive relevance read as `Frame.relevance` (`Relevance`), the bridge's inline conjunction |
+| `Bridge.every_situated_position_has_reason_of_unrestricted` | same | `PositiveGround.every_situated_position_has_reason_of_unrestricted` | likewise |
+| `ReachableFramesInherited.certified_reason_on_scope` | same | `PositiveGround.certified_reason_on_scope` | the core's `Scope` of a policy |
+
+Each core declaration in `Becoming.PositiveGround` has an empty axiom report (scratch build: 30 theorems, 63 declarations).
