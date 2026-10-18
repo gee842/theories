@@ -174,7 +174,7 @@ Aliases: `Becoming.Tally`, `Becoming.Listed.keeps`, `Becoming.Listed.tally`, `Be
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item A1: in the correspondence, "the rest theorem brings counting to rest" becomes "leaves counting unrefuted to come to rest", the rest theorem's ¬¬ strength. Earlier text in text_versions.
 - 17 October 2026, wording: authority phrasing removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Counting.lean, counting_free now cites counting_laws; in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
-- 64 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-law-of-counting.json).
+- 65 rebinding entries (2026-10-10 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-law-of-counting.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

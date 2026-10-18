@@ -10,3 +10,13 @@
 
 - "Your direction" is the AI's recommendation at the end of its roadmap explanation: first the formal edge of the first open target (the deductive necessity of Becoming as a whole), namely the scope of representation, deriving the shared index of steps from relations or saying exactly why it is a commitment of the representation (chapter §8.2, "One relational start, and worlds as runs"; §8.5, "The scope of representation"); second the learning and seeking line; alongside, the one premise gap left by the decidability inventory, the counting laws' decidability of activity at every relatum and step (chapter §8.2, "The whole and its parts").
 - Read as board item R1 (representation scope: the step index from the relata's own courses), with the counting refinement as R2 if reached. Nothing is pushed without Ren's word.
+
+## Ren's message, later the same morning
+
+18 October 2026, the same conversation, after the AI reported R1 landed and asked whether to go on to R2 (Ren chose the reply button the AI had drafted).
+
+> Start R2: localize the counting laws' decidability of activity.
+
+## Context (AI-authored)
+
+- Read as board item R2: the counting laws of `Becoming.Counting` restated over counted censuses (counts as relations, `Becoming.Decidedness`), so that no decision procedure for activity is taken.

@@ -1,0 +1,28 @@
+@Becoming.CouplingHistoryFrames.admissible_trace : ∀ {h : JointContinuationClassification.History},
+  JointContinuationClassification.Admissible h →
+    Generative.Trace Becoming.CouplingHistoryFrames.frame.P JointContinuationClassification.Configuration.initial
+      [h.first, h.second] h.final
+@Becoming.CouplingHistoryFrames.trace_admissible : ∀ {first second : JointContinuationClassification.Event}
+  {final : JointContinuationClassification.Configuration},
+  Generative.Trace Becoming.CouplingHistoryFrames.frame.P JointContinuationClassification.Configuration.initial
+      [first, second] final →
+    ∃ middle,
+      JointContinuationClassification.Admissible { first := first, middle := middle, second := second, final := final }
+Becoming.CouplingHistoryFrames.history_meaning : ∀ (h : JointContinuationClassification.History)
+  (c : JointContinuationClassification.Claim),
+  JointContinuationClassification.Realized h c ↔ Becoming.CouplingHistoryFrames.frame.realized h.final c
+Becoming.CouplingHistoryFrames.retained_left_only : (∃ second final,
+    Generative.Trace Becoming.CouplingHistoryFrames.frame.P JointContinuationClassification.Configuration.initial
+        [JointContinuationClassification.Event.retain, second] final ∧
+      ∀ (c : JointContinuationClassification.Claim), Becoming.CouplingHistoryFrames.frame.realized final c) ∧
+  Generative.Trace Becoming.CouplingHistoryFrames.frame.P JointContinuationClassification.Configuration.initial
+      [JointContinuationClassification.Event.retain, JointContinuationClassification.Event.activateLeft]
+      JointContinuationClassification.Configuration.leftActive ∧
+    Becoming.CouplingHistoryFrames.frame.realized JointContinuationClassification.Configuration.leftActive
+        JointContinuationClassification.Claim.leftRealized ∧
+      ¬Becoming.CouplingHistoryFrames.frame.realized JointContinuationClassification.Configuration.leftActive
+          JointContinuationClassification.Claim.rightRealized
+Becoming.CouplingHistoryFrames.joint_description_separates : (Becoming.Frame.ofInventory
+        RelationalGrounding.jointInventory).realized
+    RelationalGrounding.Regime.released ≠
+  (Becoming.Frame.ofInventory RelationalGrounding.jointInventory).realized RelationalGrounding.Regime.retained

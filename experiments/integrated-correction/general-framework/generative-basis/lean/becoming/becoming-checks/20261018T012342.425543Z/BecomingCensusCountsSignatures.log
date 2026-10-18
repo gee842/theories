@@ -1,0 +1,160 @@
+@Becoming.exists_add_of_le : ∀ {c n : Nat}, c ≤ n → ∃ k, n = k + c
+@Becoming.cancel_add_right : ∀ {a b : Nat} (c : Nat), a + c = b + c → a = b
+@Becoming.tally_step : ∀ {n n' c a : Nat}, c ≤ n → n' + c = n + a → ∃ k, n = k + c ∧ n' = k + a
+@Becoming.FamilyCounts.tally : ∀ {α : Type} {p : α → Nat → Prop} {l : Nat → List α} {n c a : Nat → Nat},
+  Becoming.Listed p l → Becoming.FamilyCounts p l n c a → Becoming.Tally n c a
+@Becoming.familyCounts_decided : ∀ {α : Type} {p : α → Nat → Prop} [inst : (x : α) → (t : Nat) → Decidable (p x t)]
+  (l : Nat → List α),
+  Becoming.FamilyCounts p l (fun t => (l t).length) (fun t => Becoming.ceasings (l t) p t) fun t =>
+    Becoming.comings (l (t + 1)) p t
+@Becoming.FamilyCounts.of_eq : ∀ {α : Type} {p : α → Nat → Prop} {l : Nat → List α} {n c a n' c' a' : Nat → Nat},
+  Becoming.FamilyCounts p l n c a →
+    (∀ (t : Nat), n t = n' t ∧ c t = c' t ∧ a t = a' t) → Becoming.FamilyCounts p l n' c' a'
+@Becoming.counted_laws : ∀ {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  (∀ (β : Type) (p : β → Nat → Prop) (l : Nat → List β) (n c a : Nat → Nat),
+      Becoming.Listed p l → Becoming.FamilyCounts p l n c a → Q n c a) ↔
+    ∀ (n c a : Nat → Nat), Becoming.Tally n c a → Q n c a
+@Becoming.World.CountsOf.tally : ∀ {w : Becoming.World} {alive : Nat → List w.Relatum} {n c a : Nat → Nat},
+  w.web.Census alive → w.CountsOf alive n c a → Becoming.Tally n c a
+@Becoming.World.ceasings_exist_iff : ∀ {w : Becoming.World} (alive : Nat → List w.Relatum) (t : Nat),
+  (∃ d, Becoming.Counts (alive t) (fun x => Becoming.CeasesToBe (fun s => w.web.active s x) t) d) ↔
+    ∀ (x : w.Relatum), x ∈ alive t → Becoming.Decided (Becoming.CeasesToBe (fun s => w.web.active s x) t)
+@Becoming.World.comings_exist_iff : ∀ {w : Becoming.World} (alive : Nat → List w.Relatum) (t : Nat),
+  (∃ d, Becoming.Counts (alive (t + 1)) (fun x => Becoming.ComesToBe (fun s => w.web.active s x) t) d) ↔
+    ∀ (x : w.Relatum), x ∈ alive (t + 1) → Becoming.Decided (Becoming.ComesToBe (fun s => w.web.active s x) t)
+@Becoming.World.ceasings_exist_iff_listed : ∀ {w : Becoming.World} {alive : Nat → List w.Relatum},
+  w.web.Census alive →
+    ∀ (t : Nat),
+      (∃ d, Becoming.Counts (alive t) (fun x => Becoming.CeasesToBe (fun s => w.web.active s x) t) d) ↔
+        ∀ (x : w.Relatum), x ∈ alive t → Becoming.WeaklyDecided (x ∈ alive (t + 1))
+@Becoming.World.comings_exist_iff_listed : ∀ {w : Becoming.World} {alive : Nat → List w.Relatum},
+  w.web.Census alive →
+    ∀ (t : Nat),
+      (∃ d, Becoming.Counts (alive (t + 1)) (fun x => Becoming.ComesToBe (fun s => w.web.active s x) t) d) ↔
+        ∀ (x : w.Relatum), x ∈ alive (t + 1) → Becoming.WeaklyDecided (x ∈ alive t)
+@Becoming.World.countsOf_decided : ∀ {w : Becoming.World}
+  [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)] (alive : Nat → List w.Relatum),
+  w.CountsOf alive (fun t => (alive t).length) (fun t => Becoming.ceasings (alive t) (fun x s => w.web.active s x) t)
+    fun t => Becoming.comings (alive (t + 1)) (fun x s => w.web.active s x) t
+@Becoming.World.CountsHold.obey : ∀ {w : Becoming.World}
+  [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)]
+  {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}, w.CountsHold Q → w.CountsObey Q
+@Becoming.World.countsHold_of_obey : ∀ {w : Becoming.World}
+  [inst : (t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)]
+  {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}, Becoming.Pointwise Q → w.CountsObey Q → w.CountsHold Q
+@Becoming.World.active_of_coming_jointly : ∀ {w : Becoming.World},
+  w.Balanced →
+    w.Acting →
+      w.ArisingEmbodied →
+        ∀ {alive : Nat → List w.Relatum},
+          w.web.Census alive →
+            ∀ {t : Nat} {x : w.Relatum}, Becoming.ComesToBe (fun s => w.web.active s x) t → 0 < (alive t).length
+@Becoming.World.active_of_coming_taking : ∀ {w : Becoming.World},
+  w.Balanced →
+    w.Taking →
+      w.Dissipative →
+        w.Embodied →
+          ∀ {alive : Nat → List w.Relatum},
+            w.web.Census alive →
+              ∀ {t : Nat} {x : w.Relatum},
+                x ∈ alive (t + 1) → Becoming.ComesToBe (fun s => w.web.active s x) t → 0 < (alive t).length
+@Becoming.World.queue_countsOf : ∀ {n c a : Nat → Nat},
+  Becoming.Tally n c a → (Becoming.World.queue n c).CountsOf (Becoming.Queue.line n c) n c a
+@Becoming.World.embodiedQueue_countsOf : ∀ {n c a : Nat → Nat},
+  Becoming.Tally n c a → (Becoming.World.embodiedQueue n c).CountsOf (Becoming.Queue.line n c) n c a
+@Becoming.World.openQueue_countsOf : ∀ {n c a : Nat → Nat},
+  Becoming.Tally n c a →
+    (Becoming.World.openQueue n c).CountsOf
+      (fun t => List.map Becoming.OpenQueue.Relatum.member (Becoming.Queue.line n c t)) n c a
+@Becoming.World.drivenQueue_countsOf : ∀ {n c a : Nat → Nat},
+  Becoming.Tally n c a →
+    (Becoming.World.drivenQueue n c).CountsOf
+      (fun t => List.map Becoming.OpenQueue.Relatum.member (Becoming.Queue.line n c t)) n c a
+Becoming.World.counting_under_counted : ∀ (S : Becoming.World.Premise → Bool)
+  {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  (∀ (n c a : Nat → Nat),
+      Becoming.Tally n c a → (Becoming.World.BindsCounting S → ∀ (t : Nat), 0 < a t → 0 < n t) → Q n c a) ↔
+    ∀ (w : Becoming.World), w.Meets S → w.CountsHold Q
+@Becoming.World.premised_counting_counted : ∀ {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  (∀ (n c a : Nat → Nat), Becoming.Tally n c a → (∀ (t : Nat), 0 < a t → 0 < n t) → Q n c a) ↔
+    ∀ (w : Becoming.World), w.Premised → w.CountsHold Q
+Becoming.World.counting_binds_iff_counted : ∀ (S : Becoming.World.Premise → Bool),
+  (∀ (w : Becoming.World), w.Meets S → w.CountsHold fun n x a => ∀ (t : Nat), 0 < a t → 0 < n t) ↔
+    Becoming.World.BindsCounting S
+@Becoming.World.enclosure_bounds_change_counted : ∀ {w : Becoming.World} {alive : Nat → List w.Relatum},
+  w.web.Census alive →
+    ∀ {n c a : Nat → Nat},
+      w.CountsOf alive n c a →
+        w.Embodied →
+          w.Balanced →
+            w.Dissipative →
+              ∀ {T : Nat},
+                (∀ (t : Nat), T ≤ t → w.flow.Enclosed t) → Becoming.ChangeBound T (w.web.stock (alive T) T) n c a
+@Becoming.World.active_of_coming_enclosed : ∀ {w : Becoming.World},
+  w.Balanced →
+    w.Dissipative →
+      w.Embodied →
+        ∀ {alive : Nat → List w.Relatum},
+          w.web.Census alive →
+            ∀ {t : Nat},
+              w.flow.Enclosed t →
+                ∀ {x : w.Relatum}, Becoming.ComesToBe (fun s => w.web.active s x) t → 0 < (alive t).length
+@Becoming.World.company_of : ∀ {w : Becoming.World} {alive : Nat → List w.Relatum} {n c a : Nat → Nat},
+  w.CountsOf alive n c a →
+    ∀ {t : Nat},
+      (∀ (x : w.Relatum), x ∈ alive (t + 1) → Becoming.ComesToBe (fun s => w.web.active s x) t → 0 < (alive t).length) →
+        0 < a t → 0 < n t
+@Becoming.World.enclosedQueue_countsOf : ∀ {n c a : Nat → Nat} (B : Nat),
+  Becoming.Tally n c a → (Becoming.World.enclosedQueue n c a B).CountsOf (Becoming.Queue.line n c) n c a
+@Becoming.World.closingQueue_countsOf : ∀ {n c a : Nat → Nat} (B T : Nat),
+  Becoming.Tally n c a → (Becoming.World.closingQueue n c a B T).CountsOf (Becoming.Queue.line n c) n c a
+@Becoming.World.finiteQueue_countsOf : ∀ {n c a : Nat → Nat} {B : Nat},
+  Becoming.Tally n c a →
+    Becoming.ChangeBound 0 B n c a →
+      (Becoming.World.finiteQueue n c a B).CountsOf (Becoming.FiniteQueue.alive n c B) n c a
+@Becoming.World.ring_countsOf : ∀ {n c a : Nat → Nat} {M : Nat},
+  Becoming.Tally n c a →
+    (∀ (t : Nat), n t ≤ M) → (Becoming.World.ring n c M).CountsOf (Becoming.Ring.seated n c M) n c a
+@Becoming.World.embodiedRing_countsOf : ∀ {n c a : Nat → Nat} {M : Nat},
+  Becoming.Tally n c a →
+    (∀ (t : Nat), n t ≤ M) → (Becoming.World.embodiedRing n c M).CountsOf (Becoming.Ring.seated n c M) n c a
+@Becoming.World.balancedRing_countsOf : ∀ {n c a : Nat → Nat} {M : Nat},
+  Becoming.Tally n c a →
+    (∀ (t : Nat), n t ≤ M) → (Becoming.World.balancedRing n c M).CountsOf (Becoming.Ring.seated n c M) n c a
+@Becoming.World.enclosed_counting_counted : ∀ {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  (∀ (n c a : Nat → Nat),
+      Becoming.Tally n c a → (∀ (t : Nat), 0 < a t → 0 < n t) → (∃ B, Becoming.ChangeBound 0 B n c a) → Q n c a) ↔
+    ∀ (w : Becoming.World), w.Premised → (∃ T, ∀ (t : Nat), T ≤ t → w.flow.Enclosed t) → w.CountsHold Q
+@Becoming.World.finite_counting_counted : ∀ {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  (∀ (n c a : Nat → Nat),
+      Becoming.Tally n c a → (∀ (t : Nat), 0 < a t → 0 < n t) → (∃ B, Becoming.ChangeBound 0 B n c a) → Q n c a) ↔
+    ∀ (w : Becoming.World), w.Premised → w.Finite → w.CountsHold Q
+Becoming.World.enclosed_counting_under_counted : ∀ (S : Becoming.World.Premise → Bool)
+  {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  (∀ (n c a : Nat → Nat),
+      Becoming.Tally n c a →
+        (Becoming.World.BindsCounting S → ∀ (t : Nat), 0 < a t → 0 < n t) →
+          (Becoming.World.BoundsChange S →
+              ∃ T B, Becoming.ChangeBound T B n c a ∧ ∀ (t : Nat), T ≤ t → 0 < a t → 0 < n t) →
+            Q n c a) ↔
+    ∀ (w : Becoming.World), w.Meets S → (∃ T, ∀ (t : Nat), T ≤ t → w.flow.Enclosed t) → w.CountsHold Q
+Becoming.World.enclosed_change_bound_iff_counted : ∀ (S : Becoming.World.Premise → Bool),
+  (∀ (w : Becoming.World),
+      w.Meets S →
+        (∃ T, ∀ (t : Nat), T ≤ t → w.flow.Enclosed t) →
+          w.CountsHold fun n c a => ∃ T B, Becoming.ChangeBound T B n c a) ↔
+    Becoming.World.BoundsChange S
+Becoming.World.finite_counting_under_counted : ∀ (S : Becoming.World.Premise → Bool)
+  {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  (∀ (n c a : Nat → Nat),
+      Becoming.Tally n c a →
+        (∃ M, ∀ (t : Nat), n t ≤ M) →
+          (Becoming.World.BindsCounting S ∨ Becoming.World.BoundsChange S → ∀ (t : Nat), 0 < a t → 0 < n t) →
+            (Becoming.World.BoundsChange S → ∃ B, Becoming.ChangeBound 0 B n c a) → Q n c a) ↔
+    ∀ (w : Becoming.World), w.Meets S → w.Finite → w.CountsHold Q
+Becoming.World.finite_counting_binds_iff_counted : ∀ (S : Becoming.World.Premise → Bool),
+  (∀ (w : Becoming.World), w.Meets S → w.Finite → w.CountsHold fun n x a => ∀ (t : Nat), 0 < a t → 0 < n t) ↔
+    Becoming.World.BindsCounting S ∨ Becoming.World.BoundsChange S
+Becoming.World.finite_change_bound_iff_counted : ∀ (S : Becoming.World.Premise → Bool),
+  (∀ (w : Becoming.World), w.Meets S → w.Finite → w.CountsHold fun n c a => ∃ B, Becoming.ChangeBound 0 B n c a) ↔
+    Becoming.World.BoundsChange S

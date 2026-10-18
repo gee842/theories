@@ -848,7 +848,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3b7410ca1f5e54362c7d5c09de47c7f0dcf5cc70e7889cebef4861035e3a7311",
+      "sha256": "d10f4753b92d39f1985114f5e939d47471f7b02aa34f846a85fb57a17c4d6f66",
       "declarations": []
     },
     {
@@ -1197,6 +1197,9 @@
     },
     {
       "en": "17 October 2026, U2 (unification follow-through; Ren: \"let's fix all these\"): in Space.lean, World.ofKind is added. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, source reconciliation after R2 (the laws of counting where the counts exist): THE-THEORY-OF-BECOMING.md adds, beside the decided counting laws, their forms over counted censuses (Becoming.CensusCounts, counts as relations, no decision procedure, every property): in the theory stated in full, the premise card rows \"Pointwise properties\" and \"Decided\", section 1 (a new bullet \"Counting where the counts exist\"), \"What each premise adds\", the open programme (row \"The whole and its parts\" and the decidedness paragraph) and section 9 (receipt and connectivity). The decided statements and their scope are unchanged. Read after the change: additions only; re-pointed, the claim is unchanged."
     }
   ],
   "text_versions": [

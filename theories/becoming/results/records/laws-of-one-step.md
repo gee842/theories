@@ -137,7 +137,7 @@ Aliases: `Becoming.Flow.BalancesOn`, `Becoming.Flow.balances_iff_on`, `Becoming.
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), item B6: does_not_show 4 and 5 said finer units are "not tested here" and coarser steps and continuous time "not covered", and the next step asked to test both; laws-at-finer-units, laws-at-coarser-steps and continuous-time-as-tower give them, so the items now point there, the next step drops the two done items and names real-valued time, and three related entries are added. Earlier text in text_versions.
 - 17 October 2026, wording of the public fields: attributions of decisions to Ren replaced by stating that the decisions lie outside this result, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): in Counting.lean, counting_free now cites counting_laws. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
-- 50 rebinding entries (2026-10-11 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step.json).
+- 51 rebinding entries (2026-10-11 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](laws-of-one-step.json).
 
 <a id="earlier-text--早期文本"></a>
 ### Earlier text

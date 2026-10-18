@@ -1,0 +1,7 @@
+import Becoming.CouplingHistoryFrames
+#print axioms Becoming.CouplingHistoryFrames.frame
+#print axioms Becoming.CouplingHistoryFrames.admissible_trace
+#print axioms Becoming.CouplingHistoryFrames.trace_admissible
+#print axioms Becoming.CouplingHistoryFrames.history_meaning
+#print axioms Becoming.CouplingHistoryFrames.retained_left_only
+#print axioms Becoming.CouplingHistoryFrames.joint_description_separates
