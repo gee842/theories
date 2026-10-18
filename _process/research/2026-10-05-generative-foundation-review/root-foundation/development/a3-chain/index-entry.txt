@@ -1,0 +1,49 @@
+
+<a id="sources-read-again-19-october-2026"></a>
+## 复读待读的来源，四个条目的现状改写，与改标提议 / The pending sources read, four entries restated, and a relabelling proposal — 19 October 2026
+
+工作板 A3。上一条（A2）留下 58 项待读来源，并列出发现而未改动的几处；第十八次审查的发现 P8 要求每项刷新的指纹都经阅读（[审查](BECOMING-EIGHTEENTH-REVIEW.md)）。
+
+**所读的来源，65 项。** A2 留下的 58 项，加上 A2 读后又变动的 7 项（F3J 与 F3Q 的移植改动了 classification-robust-generative-comparison 的记录与页面、organizational-rule-inheritance.json、transition-grouping-word-partition 的记录与页面；G4 的改绑注改动了 recurring-reference-revision.md 与 selection-through-a-model-of-the-options.md）。每项按其指纹所记、在 git 历史中找到的版本（[classify_pending.py](development/a2-chain/classify_pending.py)），对照链接它的每个条目通读；[reading.json](development/a3-chain/reading.json) 列出每项的类别、条目、所读版本与所见。类别：生成页 8 项；经语言分离拆分、并另有改动（译文、改标、轮次记录移出）的章节与研究 21 项；其他内容变动 22 项（记录、Lean 源、README、存根）；没有哪个已提交版本具有所记哈希者 14 项，对其条目通读现行文件。18 项没有条目链接，读其改动后刷新。65 项全部刷新，无一仍待。
+
+**改写的条目，中英两种语言。** 只在来源已不支持条目所说之处改写；标签（G0、J1–J4、公理路线、P 编号）照 P129 保留，列入下面的提议。
+- C17 主张、C24 范围：PRACTICAL-JUDGMENT 的前提表现作“Living significance | Follows under the continuation condition (canonical chapter §6.15); not assumed”，完成一段现作“under the explicit practical commitments and living significance, which follows under the continuation condition”。条目以现在时说 G0 作为公理采用、候选在“明确公理下”完整，照 P129 改写 C03 的方式改为 G0 现为以§6.15之条件为条件的定理。
+- M21（A2 发现 1）：PHILOSOPHICAL-ACCOUNT §32 现作“The answers under the continuation condition and the practical account are complete at their declared scope”。“两个公理回答保持完成”改为“两个回答在§6.15的延续条件之下保持完成”；“不等于证明相反公理”改为“不等于证明其反面 G0”，并注 G0 的现状；“不反过来证明公理”改为“不反过来证明 G0 或其所出的条件”。
+- M20 范围：ETHICAL-LEARNING §12 现把所形成的地位放在“the scope of life declared for living significance”之内，原作“在所采用的 G0 生命范围中”；“公理化哲学连接”改为在 G0 与 J1–J4 之下的哲学连接，并注 G0 的现状。
+- 链接：E06 的 CLAIMS.md 改指 RESULTS.md（A2 发现 3），M20 的 ROADMAP.md 改指 GOALS.md#generative-alignment；两页现都是指向这两处的存根。RESULTS.md 与 GOALS.md 已读，指纹记入。
+各处改动由 [apply_entries.py](development/a3-chain/apply_entries.py) 按 [revisions.json](development/a3-chain/revisions.json) 施行，每处替换一个只出现一次的片段，并写明来源与理由。
+
+**确认的条目。** C01、C03、C09、C14、C18–C20、C23、C26、C28–C30、C33、F01、F18、F22、F23、F26–F30、M12–M15、M23–M26 与其来源相合。新文字多是改标（G0 → 生命意义，J1–J4 → 各项实践承诺，G0/J → 条件对齐路线）、只有中文的段落译入英文版、轮次记录逐字移入 history/，以及改绑、改名（N5）、移植（F1、F3J、F3Q、F3R）与重新指向。这些没有改动任何条目的论断或范围。C30 与 F22 的七项记录、organizational-formation-from-generative-comparison（M20）按现行文件读过：它们此后的历史只记改绑，每条都说主张不变。
+
+**发现清单。** 新页 PHRASE-READINGS-PENDING-REN.md 是决定简报 C 部分为 Ren 准备的一次过目单（审查第 50 项），Ren 于 2026-10-19 以 D45 整体作答；本条的提议页 CHAIN-RELABELLING-PENDING-REN.md 也是待 Ren 决定之页；二者都不作条目根据，加入已检清单。
+
+**改标提议，未施行。** 链仍用已退役的标签：G0（15 个条目，75 处）、J1–J4（9 个条目，41 处）、公理路线诸语（6 个条目，13 处）、“Ren's proposed axiom”（C03）、“folding”（M20），以及 P 编号（6 个条目，49 处）。链是 Ren 所编的论证，D45 第 (6) 项也把它留给向 Ren 的提议，所以[提议](CHAIN-RELABELLING-PENDING-REN.md)请他在三者中选：(a) 就地改为章节词汇表的现行用语，(b) 保留标签、加一句索引，(c) 只改承载现状的标签。推荐 (a)。
+
+**渲染。** 没有来源仍待，GENERATIVITY-CHAIN.md 以 `--render` 渲染。
+
+**落地时复读。** {reread_zh}
+
+这是作者复读，不是独立验收，不证明新命题。
+
+Board item A3. The previous entry (A2) left 58 sources pending and listed what it found and did not change; finding P8 of the eighteenth review requires every refreshed fingerprint to be read ([review](BECOMING-EIGHTEENTH-REVIEW.md)).
+
+**The sources read, 65.** A2's 58, and seven changed after A2 read them: F3J's and F3Q's ports changed the record and page of classification-robust-generative-comparison, organizational-rule-inheritance.json and the record and page of transition-grouping-word-partition, and G4's rebinding notes changed recurring-reference-revision.md and selection-through-a-model-of-the-options.md. Each was read in full against every entry that links it, from the version its fingerprint records, found in git history ([classify_pending.py](development/a2-chain/classify_pending.py)). [reading.json](development/a3-chain/reading.json) lists each source with its kind, its entries, the version read and what was found. By kind: 8 generated pages; 21 chapters and studies split by the language separation and changed beyond it (translations, the relabel, round logs moved out); 22 other changes of content (records, Lean sources, READMEs, stubs); 14 whose recorded hash no committed version has, for which the current file was read against its entries. No entry links 18 of them; those were refreshed after their change was read. All 65 are refreshed; none stays pending.
+
+**Entries revised, both languages.** An entry was revised only where its source no longer supports what it says. Labels (G0, J1–J4, the axiom route, P-numbers) are kept, as P129 kept them, and are listed in the proposal below.
+- C17's claim and C24's scope. PRACTICAL-JUDGMENT's premise table now reads "Living significance | Follows under the continuation condition (canonical chapter §6.15); not assumed", and its completion paragraph "under the explicit practical commitments and living significance, which follows under the continuation condition". The entries said, in the present tense, that G0 is adopted as an axiom and that the candidate is complete "under explicit axioms". They now say that G0 is a theorem with the condition of section 6.15, which the theory does not assert, as P129 restated C03.
+- M21 (A2's finding 1). PHILOSOPHICAL-ACCOUNT §32 now reads "The answers under the continuation condition and the practical account are complete at their declared scope". "The two axiomatic answers remain complete" becomes "the two answers remain complete under the continuation condition of section 6.15". "Does not prove the opposite axiom" becomes "does not prove its opposite, G0", with G0's status stated. "Does not prove the axiom" becomes "does not prove G0 or the condition it follows from".
+- M20's scope. ETHICAL-LEARNING §12 now places formed standing "within the scope of life declared for living significance", where it read "在所采用的 G0 生命范围中". The connection "under the explicit axioms" (公理化) becomes one under G0 and J1–J4, with G0's status stated.
+- Links. E06's link to CLAIMS.md now points to RESULTS.md (A2's finding 3), and M20's link to ROADMAP.md to GOALS.md#generative-alignment. Both old pages are stubs pointing there. RESULTS.md and GOALS.md were read and their fingerprints recorded.
+[apply_entries.py](development/a3-chain/apply_entries.py) applies every edit from [revisions.json](development/a3-chain/revisions.json), each replacing one fragment that occurs once, with its source and reason.
+
+**Entries confirmed.** C01, C03, C09, C14, C18–C20, C23, C26, C28–C30, C33, F01, F18, F22, F23, F26–F30, M12–M15 and M23–M26 agree with their sources. Most of the new text is the relabel (G0 → living significance, J1–J4 → the practical commitments by content, G0/J → the conditional alignment route), translation of Chinese-only passages into the English editions, and round logs moved verbatim to history/. The rest is rebinding, renaming (N5), ports (F1, F3J, F3Q, F3R) and re-pointing. None of it changes an entry's claim or scope. The seven records of C30 and F22, and organizational-formation-from-generative-comparison (M20), were read as current files: their histories since record only rebinding, each line with the claim unchanged.
+
+**Discovery.** The new page PHRASE-READINGS-PENDING-REN.md is the one-pass sheet prepared for Ren under Part C of the decision brief (review item 50), which Ren answered as a whole on 19 October 2026 (D45). This entry's proposal page, CHAIN-RELABELLING-PENDING-REN.md, is also a page awaiting Ren's decision. Neither grounds an entry. Both join the inspected inventory.
+
+**The relabelling proposal, not applied.** The chain still uses the retired labels: G0 (15 entries, 75 uses), J1–J4 (9 entries, 41 uses), the axiom-route phrases (6 entries, 13 uses), "Ren's proposed axiom" (C03), "folding" (M20), and P-numbers (6 entries, 49 uses). The chain is Ren's curated argument, and D45 (6) leaves it to change only through proposals to Ren, so the [proposal](CHAIN-RELABELLING-PENDING-REN.md) asks him to choose: (a) relabel in place with the chapter glossary's current terms, (b) keep the labels and add a key, or (c) relabel only the status-bearing labels. It recommends (a).
+
+**Rendering.** With no source pending, GENERATIVITY-CHAIN.md is rendered with `--render`.
+
+**Read again at landing.** {reread_en}
+
+This is author reading, not independent acceptance, and proves no new claim.

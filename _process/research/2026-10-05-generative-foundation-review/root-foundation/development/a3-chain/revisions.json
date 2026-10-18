@@ -1,0 +1,135 @@
+{
+ "note": "A3, 19 October 2026: the entry revisions the reading of the pending sources calls for, and the two items A2's entry found (M21's axiom wording, E06's link to the CLAIMS.md stub). Each text edit replaces one exact fragment of one field, which must occur exactly once; labels the relabel retired (G0, J1-J4, Part I/II, the axiom route, P-numbers) are kept, as P129 kept them, and are listed in the relabelling proposal for Ren. Applied by apply_entries.py.",
+ "text": [
+  {
+   "entry": "C17",
+   "field": "claim_zh",
+   "old": "推进共同的比较与情境推论；当前 alignment 任务不再以公理自身的无前提证明作为完成门槛。",
+   "new": "推进共同的比较与情境推论；G0 曾作为 alignment 任务的公理采用，现为以§6.15之条件（Unrestricted，理论不断言）为条件的定理，其无前提证明不是这一路线的完成门槛。",
+   "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+   "reason": "The source's premise table now reads \"Living significance | Follows under the continuation condition (canonical chapter §6.15); not assumed\" where it read \"Authorized foundational axiom\"; the entry's present-tense status (adopted as an axiom by the current task) is restated as P129 restated C03."
+  },
+  {
+   "entry": "C17",
+   "field": "claim_en",
+   "old": "Adopt the favorable significance of whole life and further generation explicitly as G0, and develop common comparative and situated inferences; the current alignment task no longer makes a premise-free proof of that axiom a completion gate.",
+   "new": "Take the favorable significance of whole life and further generation explicitly as G0, the starting point of common comparative and situated inferences; G0, once adopted as an axiom for the alignment task, is now a theorem with the condition of section 6.15 (Unrestricted, which the theory does not assert), and a premise-free proof of it is not a completion gate for this route.",
+   "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+   "reason": "As for claim_zh."
+  },
+  {
+   "entry": "C24",
+   "field": "scope_zh",
+   "old": "明确公理下完整一般候选；",
+   "new": "在公开的 J1–J4 与 G0（现为以§6.15之条件（Unrestricted，理论不断言）为条件的定理）之下的完整一般候选；",
+   "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+   "reason": "The source's completion paragraph now reads \"under the explicit practical commitments and living significance, which follows under the continuation condition\" where it read \"under explicit axioms\"."
+  },
+  {
+   "entry": "C24",
+   "field": "scope_en",
+   "old": "Complete general candidate under explicit axioms;",
+   "new": "Complete general candidate under the disclosed J1–J4 and G0, now a theorem with the condition of section 6.15 (Unrestricted, which the theory does not assert);",
+   "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+   "reason": "As for scope_zh."
+  },
+  {
+   "entry": "M21",
+   "field": "claim_zh",
+   "old": "条件性选择差异不反过来证明公理。",
+   "new": "条件性选择差异不反过来证明 G0 或其所出的条件（§6.15，理论不断言）。",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "Task item 3 (A2's finding 1): after P128 the two answers hold under the continuation condition, which the theory does not assert. PHILOSOPHICAL-ACCOUNT §32 now reads \"The answers under the continuation condition and the practical account are complete at their declared scope\" where it read \"The axiomatic answers …\", and KNOWLEDGE.md says living significance \"is not assumed\"; restated as P129 restated M15 and C03."
+  },
+  {
+   "entry": "M21",
+   "field": "claim_en",
+   "old": "that conditional difference does not prove the axiom.",
+   "new": "that conditional difference does not prove G0 or the condition it follows from (section 6.15, which the theory does not assert).",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "As above (M21, task item 3)."
+  },
+  {
+   "entry": "M21",
+   "field": "scope_zh",
+   "old": "批评限制不等于证明相反公理。",
+   "new": "批评限制不等于证明其反面 G0；G0 现为以§6.15之条件（Unrestricted，理论不断言）为条件的定理。",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "As above (M21, task item 3)."
+  },
+  {
+   "entry": "M21",
+   "field": "scope_en",
+   "old": "criticism of a restriction does not prove the opposite axiom.",
+   "new": "criticism of a restriction does not prove its opposite, G0, which is now a theorem with the condition of section 6.15 (Unrestricted, which the theory does not assert).",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "As above (M21, task item 3)."
+  },
+  {
+   "entry": "M21",
+   "field": "scope_zh",
+   "old": "思想实验非经验发现，两个公理回答保持完成，",
+   "new": "思想实验非经验发现，两个回答在§6.15的延续条件之下保持完成，",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "As above (M21, task item 3)."
+  },
+  {
+   "entry": "M21",
+   "field": "scope_en",
+   "old": "the two axiomatic answers remain complete, and no new proof",
+   "new": "the two answers remain complete under the continuation condition of section 6.15, and no new proof",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "As above (M21, task item 3)."
+  },
+  {
+   "entry": "M21",
+   "field": "scope_zh",
+   "old": "其他访问限制明示。两个公理回答保持完成，",
+   "new": "其他访问限制明示。两个回答在这一条件之下保持完成，",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "As above (M21, task item 3)."
+  },
+  {
+   "entry": "M21",
+   "field": "scope_en",
+   "old": "with other limits recorded. The two axiomatic answers remain complete;",
+   "new": "with other limits recorded. The two answers remain complete under that condition;",
+   "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+   "reason": "As above (M21, task item 3)."
+  },
+  {
+   "entry": "M20",
+   "field": "scope_zh",
+   "old": "新增地位与关系修订的公理化哲学连接及",
+   "new": "新增地位与关系修订的哲学连接（在 G0 与 J1–J4 之下；G0 现为以§6.15之条件（Unrestricted，理论不断言）为条件的定理）及",
+   "source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+   "reason": "ETHICAL-LEARNING §12 (formed-ethical-standing) now places the connection \"within the scope of life declared for living significance\" where it read \"在所采用的 G0 生命范围中\"; after P128 living significance is not an adopted axiom, so the scope's \"under the explicit axioms\" is restated in P129's form, keeping the labels."
+  },
+  {
+   "entry": "M20",
+   "field": "scope_en",
+   "old": "relational revision under the explicit axioms, with",
+   "new": "relational revision under G0 and J1–J4 (G0 now a theorem with the condition of section 6.15, Unrestricted, which the theory does not assert), with",
+   "source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+   "reason": "As for scope_zh."
+  }
+ ],
+ "links": [
+  {
+   "entry": "E06",
+   "old_path": "theories/becoming/chapters/CLAIMS.md",
+   "new_path": "RESULTS.md",
+   "label_zh": "成果登记",
+   "label_en": "Results register",
+   "reason": "CLAIMS.md is a stub since 17 October (P2 navigation, b4a01b37d): \"The single register is RESULTS.md\". E06's link meant the register of detailed claims and their recorded scope."
+  },
+  {
+   "entry": "M20",
+   "old_path": "theories/becoming/results/ROADMAP.md",
+   "new_path": "GOALS.md#generative-alignment",
+   "label_zh": "当前方向与完成成果分列",
+   "label_en": "Active directions and completed results",
+   "reason": "ROADMAP.md is a stub since 17 October (P2 navigation, b4a01b37d): \"Directions, their authorization and their state are in GOALS.md\". The generative-alignment direction, its completion criterion and its linked completed records now stand in GOALS.md#generative-alignment."
+  }
+ ]
+}

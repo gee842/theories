@@ -1,0 +1,755 @@
+{
+ "sources": {
+  "RESEARCH.md": {
+   "kind": "generated",
+   "entries": [],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "sha256": "d2e0586e5cbf481439ccd58ec8feec64f280d584d8f7f47d4eac59087acac826",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Generated register, now a stub: since 17 October (P2 navigation, b4a01b37d) RESEARCH.md no longer repeats the register; it points to RESULTS.md, GOALS.md, OPEN-QUESTIONS.md and DEPENDENCIES.md. The diff is the removal of the repeated table, English-only headings and the new navigation line. No entry links it; nothing in the chain rests on it. Read again at e1c010006: the navigation line gains a \"Start here\" link to MAP.md (eb36b95ae); nothing else changed."
+  },
+  "theories/becoming/chapters/CLAIMS.md": {
+   "kind": "generated",
+   "entries": [
+    "E06"
+   ],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "sha256": "825d9f855141d017cdf56c75927655c6d6b25e47fc0c1790d4ed760106fe53b9",
+   "decision": "refresh",
+   "revised": [
+    "E06"
+   ],
+   "basis": "Generated register, now a stub (P2 navigation, b4a01b37d): the table of records moved to RESULTS.md, the single register. E06 linked it as its claim register; E06's link now points to RESULTS.md (task item 3), so this fingerprint stays only as history of the old link. Read again at e1c010006: the navigation line gains a \"Start here\" link to MAP.md (eb36b95ae); nothing else changed."
+  },
+  "theories/becoming/history/EMPIRICAL-SCOPE.md": {
+   "kind": "other",
+   "entries": [
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "873446a29dadcf627b0f12293f13902e681403558b26de6750800ca9a71a6ffa",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Moved to theories/becoming/history/ (H4); the one changed line is a reference-style link definition ([ai-audit]: …) re-pointed to the revisable-concern study's history folder. The rewrites recorded by move H3 take the fingerprint to the current hash: the whole change is the move tool's. E06's evidential-scope claims unchanged."
+  },
+  "theories/becoming/chapters/LIANGZHI-EVOLUTION.md": {
+   "kind": "other",
+   "entries": [
+    "M12",
+    "M13",
+    "M14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "aab50a09814217f9f0b89e42ebb1b141d7187611ba673356333db9b02706626b",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation: in the 8 October continuation paragraph the English half (\"older next-step wording below is historical …\") is now given in Chinese, the file being the Chinese chapter; no other change. M12, M13 and M14 cite the chapter's account of Liangzhi's formation, which is unchanged."
+  },
+  "theories/becoming/chapters/MATHEMATICAL-CORE.md": {
+   "kind": "other",
+   "entries": [
+    "F01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "996c4ffe7093d422106e76e04f4e371d1feefb13f8bd32490d27ec897bcf7e8a",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "One paragraph relabelled and restated after P128: \"The current alignment task explicitly adopts G0 …\" became \"The conditional alignment route starts from living significance … The theory does not assume it; it follows under the continuation condition\", with Ren's correction as provenance, not warrant. F01 cites the chapter for the process core, predication and composition, not this paragraph; F01 unaffected."
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md": {
+   "kind": "other",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "85b6d341b93fa6f729686cc28fcb37a7d03e5b1f",
+   "sha256": "17a6ef203209ce19fbf45feb1964513d5e0b144c8d3bf7092dbb8244cba17307",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Relabel only: G0 → living significance (three places) and the practical-judgment candidate's \"explicit-axiom general-principles scope\" → \"conditional general-principles scope\". C14 cites the full evolutionary objective; its sentence \"the ethical extension discloses G0 and further commitments\" uses G0 as a name for what the chapter now calls living significance, a retired label left to the relabelling proposal. No claim of C14 affected."
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C26",
+    "F18",
+    "F23",
+    "F26",
+    "F27",
+    "F28"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "1fd670e3defe9f199766a0ad411d60d9307d95ff40ab2c60e115768f4398c569",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Equal to the language separation's English output of the recorded version, plus one pointer line: 70 Chinese-only passages in 18 sections are in the Chinese edition (ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.zh.md). Every anchor C26, F23, F26, F27 and F28 link still resolves; C26, F18, F23, F26-F28 unaffected, their Chinese-only support reached through the pointer."
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "ebf34b419fd78edcfd525826ed7aa4b5331c6727",
+   "sha256": "dc8511c092a0fec03eaf549938f3c8c851b7fe1bd8acdac11bf9e82c48942776",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Equal to the language separation's English output plus the pointer line: sections 1-9 (the LR argument) exist only in the Chinese edition (CROSSED-CLAIMS-ARGUMENT.zh.md); the English file keeps their anchors and the FR and complete-episode sections (10-14). M20's four anchored links resolve to English sections; its link \"Affirmative LR argument\" reaches the LR text through the pointer. M20 unaffected."
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "cba619a392b4d78e3ea2035a513a24f31d5f81a704a46431b80b0ab37311c867",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Equal to the language separation's English output plus the pointer line: sections 1-6 exist only in the Chinese edition (CROSSED-CLAIMS-INTEGRATION.zh.md). M20's link reaches them through the pointer; M20 unaffected."
+  },
+  "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md": {
+   "kind": "split+edits",
+   "entries": [],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "f58f46abc5800cf4b6b7cb43aa89acea0c89f92b5c65161c3ecc2383da167994",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation plus one relabel (\"nor that scientific inquiry entails G0\" → \"living significance\"). No entry links it."
+  },
+  "theories/becoming/chapters/BECOMING-FOUNDATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "a93262028e30d9014d0820524ace14a3c5204e43",
+   "sha256": "6dfcbffda6ef0f1559a081d1b61f0c1cf2833335d4f831f55b1392462b239eb8",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Relabel and status: \"G0 gives …; the disclosed J commitments …\" → \"Living significance gives … (under the continuation condition, not by assumption); the disclosed practical commitments …\", \"Their axioms need not be used\" → \"Their conditions …\", \"does not assume G0\" → \"living significance\". C01 cites the foundational scope and does not mention G0; unaffected."
+  },
+  "theories/meta-attractor/README.md": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "a643f4fa85b43bd119cc9dac88937f03cb3557ff",
+   "sha256": "e680930d5983bf4e163b4b2c69b85dc017b6caf6d1c0fd35281d27fe5461567d",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "One path mention rewritten (drafts/…/v6.1/THEORY.md → drafts/…/history/v6.1/THEORY.md); the rewrites recorded by moves H5 and RB take the fingerprint to the current hash. No entry links it."
+  },
+  "theories/becoming/chapters/PRACTICAL-JUDGMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C17",
+    "C18",
+    "C19",
+    "C23",
+    "C24",
+    "M14",
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "b8050f1365bbd55561f5ef30009d6779ab25af933d08a468de1865cee1965faa",
+   "decision": "refresh",
+   "revised": [
+    "C17",
+    "C24"
+   ],
+   "basis": "Language separation with translations of the Chinese-only paragraphs (BC1 note, kitchen calibrations, the application calibration), the relabel (G0 → living significance; J1-J4 → full comparison, basic-condition priority, bounded responsibility, practical selection; G0/J interface → the conditional alignment route) and one status change: the premise table's \"G0 | Authorized foundational axiom\" became \"Living significance | Follows under the continuation condition (canonical chapter §6.15); not assumed\", the completion paragraph's \"under explicit axioms\" became \"under the explicit practical commitments and living significance, which follows under the continuation condition\", and the timely-continuation section's \"Part I treats it conditionally and the single significance axiom in Part II yields it\" became \"living significance follows under the continuation condition; it is not assumed\". C17's claim (G0 adopted explicitly, \"that axiom\", \"the current alignment task\") and C24's scope (\"Complete general candidate under explicit axioms\") state the status the source withdrew: both restated, as P129 did for C03. C18, C19, C23, M14 and M20 (the timely-continuation application; P95's \"G0 retains its folded significance interface\") use G0, J1-J4 and the axiom route as names for what the source now names otherwise, and their claims are what the source says: confirmed, their labels left to the relabelling proposal. C19's \"accepted at their declared axiom scope\" reports the scope of the independent review of 8 October."
+  },
+  "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C20",
+    "C26"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "182865dc14ceaec645cc70c67ac18d25382f0249663924b9a653730db6475f42",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation; the restructure of 17 October (f4e5c354f), which moved earlier status paragraphs, the withdrawn routes (§2, §5-§7) and the rounds' next-connection, blocked-status and completion-audit passages verbatim to the rounds history, each place keeping its anchor and a pointer; English translations of the Chinese-only sections (§18-§23.5: the monist reconstruction, completed repair and changing restrictions, informed harm and meta-attraction, technical learning against revision of ends, the five continuations); the relabel (J2 → basic-condition priority, G0/J route → the conditional alignment route, \"the earlier axiomatic completion\" → \"the earlier completion under explicit premises\"). C26's claims (§20-§23.5, target capture reused, informed harm not refuting validity, the narrowed fulfillment question) are what the English text now states in full; C20's (the zero-axiom target reopened and open, Ren's 13 October focus and monist correction, the conditional route kept) likewise. Their labels (\"the existing axiom route\", \"G0/J and P89 stay complete\", \"the current alignment task proceeds from explicit G0\", which names the route's starting point and does not call it an axiom) are left to the relabelling proposal; confirmed."
+  },
+  "theories/becoming/chapters/KNOWLEDGE.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M15",
+    "M21"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "sha256": "d2e97b6bcaa3cee2aff283330a9e1f4947dff67bf42ec2d29ca887eb30b49b5d",
+   "decision": "refresh",
+   "revised": [
+    "M21"
+   ],
+   "basis": "Language separation (a pointer to the Chinese edition; the Chinese-only summary sentences translated), the round logs moved verbatim to the history file (87eb81f20), the relabel (G0 → living significance, J1-J4 → the practical commitments, the G0/J route → the conditional alignment route) and one status change: \"G0 is retained as an explicit ethical starting point\" became \"Living significance is the ethical direction here, and it is not assumed: … follows under the continuation condition\". The completed two-question account is now \"the completed two-question account of living significance\". M15 agrees (P129 already restated its G0 sentence); M21's \"the two axiomatic answers remain complete\" and \"does not prove the opposite axiom\" state the status the chapter withdrew: restated (task item 3), together with the same wording in M21's claim (\"does not prove the axiom\")."
+  },
+  "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md": {
+   "kind": "other",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "sha256": "98b0e36fa0b8444d8e1c2b7de94c383cc20d63ca4c222195eb41c36b0424f59b",
+   "decision": "refresh",
+   "revised": [
+    "M21"
+   ],
+   "basis": "Restructure of 17 October (f4e5c354f): the round-by-round continuations §11-§31 and §33 moved verbatim to the rounds history, each keeping its anchor and a one-line pointer; §1-§10 and §32 kept, relabelled (G0 → living significance, J2 → basic-condition priority, J3 → bounded responsibility), with §6 adding that living significance is not assumed but follows under the continuation condition, whose warrant is open, and §32's \"The axiomatic answers and practical account are complete at their declared scope\" becoming \"The answers under the continuation condition and the practical account are complete at their declared scope\". M21's round-by-round scope sentences (Aaron, Chappell, Bruckner and the rest) are supported by the verbatim rounds history the pointers reach; its axiom wording is restated after §32's new sentence."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean": {
+   "kind": "other",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "sha256": "c1476d86f5b7b67b97aeebff9f416c52640a09a2602c62d64389d5d25bf13b8c",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "N5 renaming only (6913eb2f1): Registers → CoupledInto, RegistersAlikeUpTo → AlikeThroughUpTo, RespondsThroughRegistration → RespondsThroughCoupling, RegisteredFrom → CoupledFrom, residual_registers_nothing → residual_couples_nothing; statements and proofs otherwise unchanged. M21 states the native-composition bound in prose and names none of these declarations (no name N5 renamed occurs in the chain's data); confirmed."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_fallible_inquiry.py": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "0aa6cdbe96eeca37dc7e0c607702bd503e1143b9a804bad3a19b5abaf86a3d57",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Checker moved onto the shared helpers (67fb3d935): Lean binary resolution, receipt matching by module and sha256, output paths and the not-audited-by-name record now come from check_becoming. No theorem or receipt claim changes. No entry links it; it checks FallibleInquiry, whose M21 statements are unchanged."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean": {
+   "kind": "other",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "sha256": "d95c8a9fb4bd48f436ab9c010fe211740ddebad403b6cc56b9864a9fb2c573f9",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "N5 renaming only (6913eb2f1): RegistersAt → CoupledIntoAt, registration_of_levels → coupling_of_levels, registration_alike_before → coupling_alike_before, touches_registered_edge → touches_coupled_edge and the Web-level names as in FallibleInquiry; statements and proofs otherwise unchanged. M21's timed-response sentence (P104: coverage bounded by paired error plus timely potential reach; future support not counted as earlier registration) names none of them; confirmed."
+  },
+  "theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C28",
+    "C29"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "8e1b1f309d884314b50a4b7cbed9f8b5929fb18af693e2353d3fe95949a8f8f4",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation with the Chinese-only paragraphs translated (upward and downward paths, cognition not a further layer, selection versus realization versus direction, the continuation-adequacy, joint-continuation, seeded-mutual-continuation and acquisition-to-use rounds of §18-§21 with their theorem counts 14, 16, 13 and 15); the restructure of 17 October (f4e5c354f), which moved the next-connection passages and the empirical rounds §13, §15-§17 verbatim to RELATIONS-ACROSS-SCALES-rounds-2026-10-17.md, each place keeping its anchor and a summary line; one relabel (no new proof of living significance). The figures C28 and C29 take from this chapter (12,440 interval evaluations, 10,930 forecasts, 198 animals, 70 to 96 calibration, 694 repeated baseline entries, 403 measurements, 144 hours) are in the English text or in that history file, checked by search; C29's 145-row replication table comes from BIOLOGICAL-RENEWAL-INTEGRATION.md, unchanged. C28 and C29 confirmed."
+  },
+  "theories/becoming/README.md": {
+   "kind": "generated",
+   "entries": [],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "sha256": "6dc89c9dd86777ceb31ea0b6dba0f14bac54f653de67fd2b0d198d5c2ee67a65",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Generated page, now a stub like RESEARCH.md (P2 navigation, b4a01b37d): it names the canonical chapter and Ren's OPENING, points to RESULTS.md for the register, and keeps the discovery commands and the link to this chain. No entry links it. Read again at e1c010006: the navigation line gains a \"Start here\" link to MAP.md (eb36b95ae); nothing else changed."
+  },
+  "theories/becoming/chapters/ALIGNMENT-DIRECTION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "11467e87a5a3543f0a7d6d704a3f50a974df5c018353c3a7e6441c4f59ece99f",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation (the dated provenance paragraph translated, with Ren's words kept in the original: \"能够清楚论证我们主张怎样的对齐方向\"), the relabel (J1-J4 → full comparison, basic-condition priority, bounded responsibility, practical selection; G0 → living significance) and the status change after P128: the table's \"Foundational axiom\" row became \"Living significance (foundation) … under the continuation condition this follows, and it is not assumed\", and \"within the axiom framework\" became \"within the conditional framework\". M20 cites the direction argument as completed and independently accepted, with no claim about G0's status; confirmed."
+  },
+  "theories/becoming/results/ROADMAP.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "517006ecae7dbe3e47443761c95adb4084f8c49cc2d4b3915a8905dfc909b1af",
+   "decision": "refresh",
+   "revised": [
+    "M20"
+   ],
+   "basis": "Generated page, now a stub: \"This page earlier repeated the scope list. Directions, their authorization and their state are in GOALS.md.\" The generative-alignment direction M20 cites (completed direction and practical-judgment results reused) is now GOALS.md#generative-alignment, whose premises read \"Follow the conditional alignment route\". M20's link re-pointed there (labels kept). Read again at e1c010006: the navigation line gains a \"Start here\" link to MAP.md (eb36b95ae); nothing else changed."
+  },
+  "theories/becoming/chapters/ETHICAL-LEARNING.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0d0d16fd052ed760abe2b461357b6b517405d7e06e8649097b7f0ca7dba2a8cb",
+   "decision": "refresh",
+   "revised": [
+    "M20"
+   ],
+   "basis": "Language separation (English edition now a full translation of the Chinese original, ETHICAL-LEARNING.zh.md), round logs (§26, §§29-30, the first §37, §§71-74) moved verbatim to the history file, labels retired (G0/J → living significance, the conditional alignment route). All 15 anchors M20 links remain. §12 now reads \"within the scope of life declared for living significance\" for \"在所采用的 G0 生命范围中\": M20's \"公理化哲学连接\" / \"under the explicit axioms\" restated (labels kept). The current correction of 8 October (§§75-77 withdraw the first-authorization wall) was already in the recorded version; the rest of M20's ethical-learning sentences are supported."
+  },
+  "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "02e94aa880ec7ce48184ac29599825682e64ff9e265d9cc726d96f3e93ee9b5c",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation only: a pointer line to the Chinese edition and English translations of passages that were Chinese-only (local alignment as goal fidelity, the scope reached up to the wall, the response-capacity principle, the joined obedience/disclosure/exit result, the conditional realization of costly correction). Nothing withdrawn. M24's \"collective loss under local compliance\" with its conditional scope is supported; confirmed."
+  },
+  "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md": {
+   "kind": "split+edits",
+   "entries": [
+    "F30",
+    "M25"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "db4e8efd15ea20d9c49030db97d9886613dfc9a32285062b0eb8d74f2698f2ba",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation and the relabel: \"under explicit G0 and J1-J4\" → \"under living significance and the practical commitments, both stated explicitly\"; living significance \"is not assumed: it follows under the continuation condition\"; every \"Under G0/J\" → \"Under the conditional alignment route\". The formal contributions and their counts are unchanged. M25's \"Explicit G0/J grounds appraise ends and selectors\" uses the labels (the relabelling proposal lists it); M25 and F30 confirmed."
+  },
+  "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "884daa2a141ab5baaa288ea2aec1fe0ec2c65f796709aa0f916263fcaaa2adcd",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation (Chinese-only passages translated: how basic conflict forms, BC1 stated in full with its five requirements, the crossed-case, finite-aggregation and joint-comparison continuations) and the relabel (\"under G0/J\" → \"under the conditional alignment route\"; J2 → basic-condition priority). BC1, BC2, LC and LR keep their scope as declared, contestable commitments; all seven anchors M20 links remain. M20 confirmed."
+  },
+  "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C33",
+    "F29",
+    "M23"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "fb7a8fb58dbbe27778ed78330498fd20b1d168caeebbc725bad7a7027eab9727",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation, the dated round status paragraphs moved to the history file (the per-round counts 37/58, 39/55 and 33/62 kept in one compact paragraph), a sentence added on history in the mixed-history failure, and the relabel in the §15 table (\"G0 and explicit J1-J4\" → \"Living significance and the explicit practical commitments\"). §15 Responsive transformation (heading slug 15-responsive-transformation) keeps the account C33, M23 and F29 cite; none of them states G0's status. Confirmed."
+  },
+  "theories/becoming/chapters/GENERATED-LOGIC.md": {
+   "kind": "split+edits",
+   "entries": [
+    "F01"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "sha256": "e6a3e25355b2753a9da5d0c864bf4bc26de171f1b521d1b8bd5334bbef98cf03",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation only (pointer line; translations of Chinese-only passages: the first-round contraction criterion with 38 theorems, the two checked counterexamples, the frontier conclusion crediting rely-guarantee and abstraction-repair work, the 28-theorem acquired-use count) and one relabel (\"the completed G0/J ethical route\" → \"the completed conditional alignment route\"). No result or count changed; F01 confirmed."
+  },
+  "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "338bf1053adaad70de18aa7908b3ffe2cca7b76b",
+   "sha256": "f5a3790f07f1685825c92326a6b70aa04e65ea597fa02b3646410c8c09565f39",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation (dated round summaries, the joint-choice framing, the three-tier global-exclusion example and its reading translated into the English edition) and the relabel. The open-form section now states the handoff certificate in full, and P89's paragraph now says living significance \"follows from the continuation condition (Unrestricted in Lean)\" and that the empty axiom report \"does not prove that the continuation condition needs no ground\". M20's sentences (\"feeds G0 positive ground\", P89 \"obtaining G0\" with Unrestricted explicit) say the same with the old label; all five anchors remain. M20 confirmed."
+  },
+  "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "3b483acfdfcaa141c19af92ce271af61002b2b398ff0825ed86052db8fe239ce",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation: the enshittification section and the profit-and-externalities section gain full translations, keeping Ren's two corrections (actual market and internet history is usable evidence; the coexistence of growth and path loss withdrawn as too weak a target); the \"English:\" companion paragraphs (beta=0 intervention, LibreOffice, Apollo/Narwhal) kept with the prefix dropped; relabel to the conditional alignment route. All four anchors remain. M20's enshittification and interface-control sentences confirmed."
+  },
+  "theories/meta-attractor/COMMON-ORGANIZATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "a643f4fa85b43bd119cc9dac88937f03cb3557ff",
+   "sha256": "a2c1f958d84bf7464623dfbdd0065be177556f7801e5055d7cdfc08e04c60f3b",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation only: the bilingual current-integration line kept in English, and the P99 paragraph's Chinese text translated (failure receipt → revised reference sequence → next acquisition → checked record into the apparatus). The integrated-account anchor remains; M24's common-organization and recurring-revision sentences confirmed."
+  },
+  "theories/becoming/results/records/transition-grouping-word-partition.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "77dc88103e95053be16160c7781053360b5fda1f",
+   "sha256": "bd5340b0dd9fb2d2bd6aa4f1753c80b702e16be9f316594f81b463c8d1095159",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No entry links this record (its page, #63, is linked by M26). F3Q (0217baa38) moved the canonical source to the core module Becoming.LearnedGrouping, added its six declarations, the core receipt 20261018T204907.920360Z and a history line: \"No new result, the claim is unchanged\" (verified in the history text). Statement and scope unchanged."
+  },
+  "theories/becoming/results/records/situated-recovery-empirical-correspondence.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "sha256": "4cd9e2cf769925bc351c96e83a238689e7f5d39971d75abc80c7dc00d644aa6f",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No entry links this record. The H1-H7 restructure re-pointed JOINT-RISK-REVISION-INTEGRATION.md into history/, refreshed three source hashes after link-only rewrites and added a history line saying nothing else changed in those files. Statement unchanged."
+  },
+  "theories/becoming/results/records/open-form-realization-under-revision.json": {
+   "kind": "other",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "7cce6ae9e7d4b310bc889f3312c8a5ac6329d1cb",
+   "sha256": "c90e6029e732013b533df88248d2818c7154e67d92de1663e141e4786a044288",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "The claim was relabelled (\"the existing G0 positive-ground theorem\" → \"the existing positive-ground theorem of living significance\"; \"P89 states the result\" → \"The result is stated\"), its history says \"the claim is unchanged\", and the comparison bears it out; the rest is rebinding: language-separation and relabel source reconciliation, U2 and F1 core receipts, and F3J's port (canonical source OpenFutureRevision.lean → Becoming.Handoff, 14 declarations; PositiveGround; RenewalBound). M20's open-form and P89 sentences say the same with the old labels; confirmed."
+  },
+  "theories/becoming/results/records/classification-robust-generative-comparison.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "984137c97768a83617dc4d7773687551b7c70a7e",
+   "sha256": "c5ed515d0b911c0ed97e38998c717239bc05cb9373bfbf68ba0823a7ab40b562",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Changed after A2 read it: F3J's port (4f6bc20c8) cites the core counterparts (Becoming.Lexical 36, Frontier 34, Bundles 13, Alternatives 9, Inquiry 2, Metaethics 2) and moves the canonical source from ClassificationRobustJudgment.lean to Becoming.Lexical; no other field changed (compared by key). Its page (#30) is linked by M20; statement unchanged."
+  },
+  "theories/becoming/results/records/classification-robust-generative-comparison.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "984137c97768a83617dc4d7773687551b7c70a7e",
+   "sha256": "0feaacb62ed033702fc4835fef6d83d9bc94c9009f3e8efb30920533e94023b4",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Generated page of #29, re-rendered after F3J (35ce2ea29): canonical source Lexical.lean, six core proof rows and the F3J history line added; the statement, output and preserved conditions are unchanged. M20's classification-robust sentences confirmed."
+  },
+  "theories/becoming/results/records/organizational-rule-inheritance.json": {
+   "kind": "other",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "77dc88103e95053be16160c7781053360b5fda1f",
+   "sha256": "6b3a3fd71c0837b02e25c38d3646f7847788588bb3b3be9195066a8c96134dea",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Changed after A2 read it: F3J (502c22b45) adds the core module Becoming.RuleHandoff (12 declarations), its receipt 20261018T210832.866808Z and binding, and moves the canonical source from OrganizationalRuleInheritance.lean to RuleHandoff.lean; the F3J history line says a port restates and the claim is unchanged. C14 confirmed."
+  },
+  "theories/becoming/results/records/finite-granularity-question-recovery.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "sha256": "c814ca89daec4796941adee45dd54fdca36c400638972a1d56bb1a29529344b8",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current file. Its history since then records only rebinding (I3/I3b spine statements, the P110-P112 receipt, the H1-H7 re-pointing, F1's fold and F3 sweep step 1, each \"the claim is unchanged\"). The current statement (finite-block branch questions translate exactly; finite-block histories matched with answers preserved) supports C30's and F22's granularity sentences; confirmed. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/prefix-observation-loss.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "sha256": "fe4ecc8d55dc0fe1e3ca14f225129223ac68cacc6ef3a0dbc6393b24cc07df20",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current file. Its history since then records only rebinding (I3/I3b spine statements, the P110-P112 receipt, the H1-H7 re-pointing). The current statement (all nonempty-prefix questions can omit intermediate loss; exposing the suffix restores it) is C30's and F22's \"All nonempty-prefix questions can still omit intermediate loss\"; confirmed. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/incidence-common-refinement.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "sha256": "8037a2587ea05c9f88b7ecdec61f8e4e90fa90a4f2295dd4d381d30cadbfa7e7",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current file. Its history since then records only rebinding (I3/I3b spine statements, the P110-P112 receipt, the H1-H7 re-pointing). The current statement (incidence agreement on locally finite, connected scopes gives a common refinement whose projections preserve and lift joins) supports C30's and F22's incidence sentences and the scope's \"local finiteness and connectivity\"; confirmed. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/multivalued-joining-common-structure.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "sha256": "80a67287fe93a9ff51e06feb79f289a4cececd4058cb46755aced51a19683626",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current file. Its history since then records only rebinding (I3/I3b spine statements, the P110-P112 receipt, the H1-H7 re-pointing). The current statement (unique alignment of exact multivalued joining accounts preserving outcome classes, with lifting) supports C30's and F22's \"multivalued joining itself\" sentence; confirmed. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/retained-reference-joining-recovery.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "sha256": "1075152083a9e40076c394e6573b96d245ca9b1de308b5267b20fb3b621ebf2e",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current file. Its history since then records only rebinding (I3/I3b spine statements, the P110-P112 receipt, the H1-H7 re-pointing). The current statement (retained-reference agreement matches finite formation sequences; exact accounts must distinguish idle and spent histories) supports C30 and F22; confirmed. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/guarded-program-question-recovery.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "sha256": "eb6e9c6582ec191c46c7b636a63bde19e6e17aeccb39995d7468d5a43fb2f543",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current file. Its history since then records only rebinding (I3/I3b spine statements, the P110-P112 receipt, the H1-H7 re-pointing, F1's fold and F3 sweep step 1, each \"the claim is unchanged\"). The current statement (guarded, sequential and choice program questions compile exactly; macro histories matched) supports C30's and F22's \"Finite guarded recipes\" sentences; confirmed. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/residual-continuation-correspondence.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "sha256": "feb681d099a2ba1370d94215932acdd71cd946694ea7af602a70a0f7dccf31c2",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current file. Its history since then records only rebinding (I3/I3b spine statements, the P110-P112 receipt, the H1-H7 re-pointing, F1's fold, the restatement audit making Becoming.Granularity the canonical source, and F3's sweep retiring ExplanatoryResiduals from the run, each \"the claim is unchanged\"). The current statement (residual programs: exact completion/resumption correspondence; different residuals at one position force distinctions) supports C30's and F22's residual sentences; confirmed. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/finite-joining-tree-lifting.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "sha256": "94be453fb0358bb1335df9589676732a6adcdf86009605232f7cc95278257b27",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version, and no entry links this record; read the current file. Its history records only rebinding and the 17 October re-pointing, each \"the claim is unchanged\". Statement: encoded finite joining trees realize a code exactly when the original tree does; it fits the joining family C30 and F22 summarize. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/functional-joining-common-structure.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "sha256": "407ec7e4ce3247b47904b2cde104c4a97839ddcae522a2664e666fe068cb5313",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version, and no entry links this record; read the current file. Its history records only rebinding and the 17 October re-pointing, each \"the claim is unchanged\". Statement: functional joining accounts carry the same induced partial operation with a unique alignment; it fits the joining family C30 and F22 summarize. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/joining-open-map-factor.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "sha256": "43237e06975c44f238413b12fbb93cf8efc2b1b8ceaf9bef4b2f160b0cbad9df",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version, and no entry links this record; read the current file. Its history records only rebinding and the 17 October re-pointing, each \"the claim is unchanged\". Statement: the unique join-preserving factor commuting with common-refinement projections, C30's and F22's \"unique join-preserving factor commuting with given projections\". Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/joining-questions-survive-encoding.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "sha256": "a1c9ca6914284e0d022046c6d332e201cf53009c3bdab5bbddf5bd7797ad4fbd",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version, and no entry links this record; read the current file. Its history records only rebinding and the 17 October re-pointing, each \"the claim is unchanged\". Statement: translated joining questions keep their answers in the induced multivalued relation; fits C30 and F22. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/unanchored-incidence-collapse.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "sha256": "9ab78bdd365019ec5551c2c327ced135739bfd08ffa2b64f3d4f571bea031370",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version, and no entry links this record; read the current file. Its history records only rebinding and the 17 October re-pointing, each \"the claim is unchanged\", plus the 17 October wording line removing round narration. Statement: unanchored incidence collapses all local-unit fragments and can turn the spent history's impossible self-join possible, as C30's and F22's \"Unanchored incidence questions nevertheless collapse\" sentence says. Read again at a5acc7cbf: F3E's port (e652d079e) cites the core statements of the declarations (Joining, JoiningRoles, JoiningCodes, Granularity, BranchingCorrespondence, Presentations, Fragments, Likeness, LocalUnits, Labelled), rebinds to core receipt 20261018T222948.779875Z and moves the canonical source to the core module; the five Joining.lean references dropped are re-cited at the core modules that now hold those declarations. Its history line: \"No new result; the claim is unchanged\"; statements unchanged (compared by field)."
+  },
+  "theories/becoming/results/records/growth-constrained-fragmentation.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "sha256": "6204b7dff742fa35763ac30ed54cdd264910ab2bf9c74db13f3e8422fa1c249b",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version, and no entry links this record; read the current file. Its history records only rebinding and the 17 October re-pointing, each \"the claim is unchanged\" (I3/P114 spine statements, P129, U2, N1 renaming, F1's core receipt). Statement: grown graphs with matched composition constrain successors after edge removal, with a cut-law ranking reversal; no chain entry states it."
+  },
+  "theories/becoming/results/records/context-sensitive-updating-correspondence.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "sha256": "b89fa1ce786bb510510792be3d0313afedaa119979fcd9f658d52c8ed3b28074",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No entry links this record. The H1-H7 restructure re-pointed JOINT-RISK-REVISION-INTEGRATION.md into history/, refreshed two source hashes after link-only rewrites and added a history line saying nothing else changed; statement unchanged."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "846d28107ba6124859d911f99f714e5f3213872797528cf104c9b8afe9a8a454",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No entry links this README. RG (35fc0710f) moved its stack of dated status paragraphs verbatim to the sibling history/ (receipt _process/architecture/moves/RG.json) and left a short index of the 26 modules, 26 checkers, 24 receipts and the 12 records that bind files here; 992f0d8ec corrected stale statements. No result is withdrawn: the results stay in their records."
+  },
+  "theories/becoming/chapters/THEORY-OF-BECOMING.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C09"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "sha256": "10b5d1faa826473427818718e609cd5a7ccb253748ffa5154dd43b04d0577160",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Language separation: the Chinese-only framing, the table of the five questions of change, the retained-form-versus-efficacy distinction, the two-qubit relational-reduction reading, the preparation-bound reading and the recovery reading are translated into the English edition; the two \"English scope\" paragraphs (renewing/consuming formation, support-gated repair) remain, only their position shifted; one relabel to the conditional alignment route. C09's sentences (formed capacity vs exercise, preparation bound, retained form vs supported efficacy, joint cross contribution, finite repair vs inactivity) are all supported; confirmed."
+  },
+  "theories/becoming/results/records/constitutive-binding-assessment.json": {
+   "kind": "other",
+   "entries": [
+    "F01"
+   ],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "sha256": "357173a340323161c23cfaa05766d027e1e2213e031e9dfde4b2fe7291592f2b",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Re-pointing into history/ (H1-H7), reviewed_at refreshed, and one correction by the whole-repository review (item records-a-l-17): the validation scope said it \"checks three existing Lean receipts\" while the record binds none; it now names them (reflective identity, recognitional binding, inferential substitution), says the recheck is in BINDING-CONSTITUTION-CHECKS.json and that the record binds none; earlier bytes kept in text_versions. Statement unchanged. F01 says \"zero new theorems or recompilation\" and claims no receipt binding; confirmed."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean": {
+   "kind": "other",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "e816e8351edeb08197a5db4bd0a84b6cc92c81cf",
+   "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "U2 relabelled the module notes (G0 → living significance; \"Under the axiom of Becoming.Significance\" → \"Under the continuation condition of Becoming.Significance\"); F1's fold moved the seed-edge Closure and the lifting rule into the core (Becoming.EdgeClosure, SeedReachProcesses, Lifting), removing them here. P89's four adapters (Run.novel_by_handoff, Run.relevance_by_handoff_of_unrestricted and the two OpenFutureRevision ends) remain in Bridge.lean, restated also in Becoming.Handoff by F3J. M20's \"P89 adds four checked Lean adapters\" with its link \"Adapters on the shared spine\" is supported; confirmed."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean": {
+   "kind": "other",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "sha256": "f628f4250a3436baafbff809a95c1d0ccdd7f16d966701009a7559c1f40ea454",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "N5's renaming only (RegistersAlikeUpTo → AlikeThroughUpTo, RegistersAlike → AlikeThrough, registration → linkProcess, as in RENAME-TABLE.json); statements and proofs otherwise unchanged. M24's revision sentence (executable exactly when the link admits it and the stock covers it, neither alone enacting it; linked_not_enacted) still holds; its prose word \"registration\" is listed in the relabelling proposal. Confirmed."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean": {
+   "kind": "other",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "sha256": "eb01f4c37c477a75727e5d12a7fa0a85c6bcc1783a26fc09d56a72d619dfb165",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "P129 linked the homonym Alike to Learning.Training.AgreeOn (new alike_iff_agreeOn, Iff.rfl) and noted it is not Becoming.Alike of Unfolding; N5 renamed registered → alikeOnInstalled. Statements otherwise unchanged; first_installed_choice and second_installed_choice keep their content. M24's reference-plan and actual-use sentences confirmed."
+  },
+  "theories/becoming/results/records/recurring-reference-revision.md": {
+   "kind": "generated",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "29eb4ef3d0b7a85cc0793d850dca675a0987214f",
+   "sha256": "50bd8abb075daa47c8fa1cfb158d027369bb5394e163afc26448c5362ae02592",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Generated page; changed after A2 read it only by three rebinding history lines (G4, F3R sub-chain 2, F3Q re-pointing THE-THEORY-OF-BECOMING.md after its section 8/9 receipt and count changes), each \"The claim is unchanged\". M24 confirmed."
+  },
+  "theories/becoming/results/records/universal-practical-warrant.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "d8f86e8ccab0536eaeb941920d2cd5483e4baa20",
+   "sha256": "6c4b1d56059400f9e7afb1f49c2c98b1e2a99b2b4494d35fe2ead8bad20f5886",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No entry links this record. Changes: the Chinese title 普遍实践权威 → 普遍实践根据 (review item bilingual-16, matching the English \"warrant\"), \"following Ren\" dropped from a progress line (17 October provenance directive), re-pointing after H1-H7 and language separation; earlier text in text_versions. Statement unchanged."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "ea31c15c5c738dc35b9c0a76fee1fc53e3e2f1fa",
+   "sha256": "48718b1ebbf2c205d78e7175c3b01e4b2cbaf8edba463fca7f3f0c94d00bfe8a",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No entry links this file. P129 annotated homonyms; U2 relabelled the notes (\"Part I's theorems\" → \"the theory without axiom's theorems\"); N5 renamed (Law.registered → Law.frameBy); W1 (711738736) re-rooted the import tree, moving the readings that need only the frame and the world (withMove, Shown, Alike, Bisimulation and the rest) to Becoming.Labelled with their names unchanged, which this module imports. No statement withdrawn."
+  },
+  "theories/becoming/results/records/transition-grouping-word-partition.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "77dc88103e95053be16160c7781053360b5fda1f",
+   "sha256": "ad317145cfe56c1ddcc967f5a7fe48602dc68cba8b3f5b4527b4852fd459ccd7",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Generated page of #26, re-rendered after F3Q: canonical source LearnedGrouping.lean, its six core declarations, the core receipt and the F3Q history line added; statement unchanged. M26's grouping-reuse link confirmed."
+  },
+  "theories/becoming/results/records/selection-through-a-model-of-the-options.md": {
+   "kind": "generated",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "2f19bff73b3d60c205196f3d199df7a6d527b2c7",
+   "sha256": "567881c08b0afe2410e8f04e16f6e2397f1ed99e458e1a7a96dcd6792f7b6d6f",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Generated page; changed after A2 read it only by G4's rebinding line (THE-THEORY-OF-BECOMING.md re-pointed after section 8's \"Selection, causes and experiment\" row changed), \"The claim is unchanged\". M15 confirmed."
+  },
+  "theories/becoming/results/records/organizational-formation-from-generative-comparison.md": {
+   "kind": "version-not-found",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": null,
+   "sha256": "57859ec00861eb8d22d502f06d9c89aff74440c745b96691cd0c3bb8a73bf962",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "No commit holds the recorded version; read the current page. Statement: in a finite nonempty eligible range, if every continuation lacking an organizational relation has a strictly better eligible construction, every undefeated choice includes it; this can warrant building shared capacity without fixing one carrier; the overbuilding counterexample kept. Its history since 16 October records rebinding, the 17 October relabel and F3J's port, each with the claim unchanged. M20's monist organizational-warrant sentence (formation requirement from whole improvement witnesses, carrier latitude, construction success vs whole appraisal) is supported; confirmed."
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C01",
+    "C03"
+   ],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "sha256": "3f2b0da5f3361c0a69870cc993c4a63937bd4679a9e9da94bafc790d65a5d18e",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Recorded at P127 (1a78f978b); read through P128's fold, the restructure into the English canonical chapter with a Chinese edition, the relabel, and the later landings (U2, N5, W1, F1, F2, F3 families, G1-G4, M1-M3, A2). §6.15 (anchor kept) now opens \"This section is conditional: the theory does not assert its condition\", with a dated note that living significance was an adopted axiom until 11 October and the continuation condition asserted until 16 October; living significance follows under it (g0_of_unrestricted). C03 (\"G0 is no longer an axiom: it is a theorem with Ren's proposed axiom as its condition, a condition the theory does not assert (section 6.15)\") matches; C01's whole/manifold claim matches the chapter's \"Whole and manifold\" paragraph (necessity concerns Becoming as a whole; generativity is a part of it). C01 and C03 confirmed."
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md": {
+   "kind": "changed after A2 recorded it",
+   "entries": [
+    "M15",
+    "M26"
+   ],
+   "recorded_commit": null,
+   "sha256": "b1f0d504f845ca3e481c65166411cec0fdbccfb0df7589a102ad5b10d8710e63",
+   "decision": "refresh",
+   "revised": [],
+   "basis": "Changed after A2 recorded it, by A4 (eb07a4f17), read at e1c010006: Ren's answer of 19 October 2026 to Parts C and D (\"integrate all, the theory is a whole, not stitched pieces, go ahead\") recorded as D45, with revisions of D3, D19, D20, D21, D26, D37 and D39 dated below them. D43, which M15 and M26 link, is unchanged and keeps its anchor. D45 joins D43's conjecture on observation with where-a-level-couples and keeps \"observation is no second relation beside dependence\" as one conjecture, as M26 says; D45 (6) leaves the generativity chain to change only through proposals to Ren. M15 and M26 confirmed."
+  }
+ },
+ "newly_linked": {
+  "RESULTS.md": {
+   "entries": [
+    "E06"
+   ],
+   "sha256": "37bcc5830dbb15b32d3e4ee79cd10c35a5af408d4220585322118c9fbdbcad2a",
+   "basis": "Generated register: \"The single register of results: one editable JSON record per migrated claim, from which this page and each record page are generated.\" E06 linked CLAIMS.md as the register of detailed claims and their recorded scope; CLAIMS.md now points here. Read again at e1c010006: the navigation line gains a \"Start here\" link to MAP.md (eb36b95ae); nothing else changed. Read again at a5acc7cbf: F3E's landing re-rendered the canonical-source column of its ported results; the register's role is unchanged."
+  },
+  "GOALS.md": {
+   "entries": [
+    "M20"
+   ],
+   "sha256": "2531975efd912dae9d7865d77abd298d0cef8bcd7c013c61c59aa99a4f097574",
+   "basis": "Generated scope page; its generative-alignment section states the direction, its premises (\"Follow the conditional alignment route\"), completion criterion and the linked completed records (alignment-direction-g0-j, open-form-realization-under-revision, practical-judgment-g0-j). M20 linked ROADMAP.md for these; ROADMAP.md now points here. Read again at e1c010006: the navigation line gains a \"Start here\" link to MAP.md (eb36b95ae); nothing else changed. Read again at a5acc7cbf: the Theory of Becoming goal's text no longer names Ren as the one who locates the necessity; the generative-alignment section is unchanged."
+  }
+ },
+ "discovery": {
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHRASE-READINGS-PENDING-REN.md": "The one-pass sheet prepared for Ren under Part C of READINGS-PENDING-REN.md (review item 50), answered on 19 October 2026 as a whole through D45 (\"integrate all, the theory is a whole, not stitched pieces, go ahead\"). A decision page, not a result; no entry rests on it.",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHAIN-RELABELLING-PENDING-REN.md": "A3's proposal to Ren on the chain's retired labels; a pending decision, not a result; no entry rests on it."
+ }
+}
