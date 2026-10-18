@@ -81,6 +81,7 @@ every block: current wording, proposed wording, sense.
 - `make research-render` and `research-check` pass on the branch (the 82 reading-drift entries are
   the base's; the argument pages and reading registers are unchanged). `research-links` reports
   692 broken links, the same count as the main checkout, none in a file the pass touches.
+  `research-test` passes (170 tests).
   Generated pages whose content depends on untracked files (the Lean inventory, file counts,
   the manifest) are left to be rendered in the main checkout at landing.
 
