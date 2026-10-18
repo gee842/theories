@@ -1177,7 +1177,7 @@ readings of the unfolding (`Becoming.Labelled`).
   tolerance is relational neutrality on profiles, so `Valuation.reaches` carries significance
   along chains of small steps; threshold, present-aim, closed-self and persistence rivals mark
   the boundaries. Ported from `EvaluatorGrounding` (F3J).
-* `Becoming.RenewalBound` (L2): renewal recurs where activity without renewal descends a
+* `Becoming.RenewalBound` (L3): renewal recurs where activity without renewal descends a
   well-founded relation, with no decision for the negative form; arbitrarily late where decided,
   within the rank where a rank certifies it; along runs; the alternation renews for ever with
   bounded novelty. Ported from `ContinuationRenewal` (F3J).
