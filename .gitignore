@@ -9,3 +9,4 @@ node_modules/
 .venv/
 *.blend1
 .pytest_cache/
+.build/
