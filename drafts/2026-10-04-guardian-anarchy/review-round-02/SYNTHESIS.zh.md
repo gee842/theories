@@ -104,11 +104,11 @@ Wamo 是灵感来源，不能被当成长期社会秩序已经得到验证的证
 
 ## 来源与完整讨论
 
-1. [10 月 2 日自动转写：provider 段落](/Users/ren/theories/drafts/2026-10-02-friend-conversation/transcript.md:409)。Speaker B 暂定为 Ren，转写具有不确定性；本次对话再次确认树的比喻。
-2. [关系自我相关原始讨论](/Users/ren/theories/sources/12-claude-ai-chats/2026-03-18_American_individualism_as_ideological_extremism_8cbca0df.md)；[仁义礼智信讨论与对 field 的批评](/Users/ren/theories/sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md:532)。需要区别 HUMAN 消息与 AI 的推演。
-3. [Wamo coordinating text 原始提问](/Users/ren/theories/sources/12-claude-ai-chats/2024-06-11_Wamo_Community_Consensus_for_Chiang_Mai_2024_6be1114c.md:8)。
-4. [方法博物馆既有方向稿](/Users/ren/theories/sources/11-human-solutions-museum/人类解决问题的方法博物馆-方向定稿.md)。这是已有 AI 辅助起草的项目文本，借用的是研究方法，不是验证过的制度效果。
+1. [10 月 2 日自动转写：provider 段落](../../2026-10-02-friend-conversation/transcript.md#L409)。Speaker B 暂定为 Ren，转写具有不确定性；本次对话再次确认树的比喻。
+2. [关系自我相关原始讨论](../../../sources/12-claude-ai-chats/2026-03-18_American_individualism_as_ideological_extremism_8cbca0df.md)；[仁义礼智信讨论与对 field 的批评](../../../sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md#L532)。需要区别 HUMAN 消息与 AI 的推演。
+3. [Wamo coordinating text 原始提问](../../../sources/12-claude-ai-chats/2024-06-11_Wamo_Community_Consensus_for_Chiang_Mai_2024_6be1114c.md#L8)。
+4. [方法博物馆既有方向稿](../../../sources/11-human-solutions-museum/人类解决问题的方法博物馆-方向定稿.md)。这是已有 AI 辅助起草的项目文本，借用的是研究方法，不是验证过的制度效果。
 5. [跨理论启发及第二轮反驳](theory-inspirations.md)；[核心命题审查与具体职责版本](theory.md)；[读者、科普与世界想象审查](reader-and-world.md)；[表达形式与工作方法复审](expression-and-method.md)。
-6. [6 月 4 日：强 Guardian、手段与目的](/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md:236)。
+6. [6 月 4 日：强 Guardian、手段与目的](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L236)。
 
 本轮没有穷尽理论语料，也没有用户阅读测试或社会工程验证。新的连接与场景是可以继续争论、修订和使用的研究成果；不会因多位代理赞同就自动成为定论。

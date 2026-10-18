@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "root": "drafts/2026-10-04-soi-si-lom-5-2/history",
+  "entries": [
+    {
+      "old_path": "drafts/2026-10-04-soi-si-lom-5-2/integration/MERGE.md",
+      "new_path": "drafts/2026-10-04-soi-si-lom-5-2/history/MERGE.md",
+      "sha256": "601c39f9e42b20288cf6482c7a2ba2084271cd4fa39ce07fe2653d57bff79460",
+      "blob": "b89dc9b5e89869b93153cef8f45eaa1d8030e2e9",
+      "batch": "K1",
+      "reason": "applied plan: the 4 October integration plans, reviews and merge note, executed into the theories that day; same depth as integration/, so their links resolve",
+      "plan_entry": "drafts/2026-10-04-soi-si-lom-5-2/integration/MERGE.md"
+    },
+    {
+      "old_path": "drafts/2026-10-04-soi-si-lom-5-2/integration/PLAN-fable.md",
+      "new_path": "drafts/2026-10-04-soi-si-lom-5-2/history/PLAN-fable.md",
+      "sha256": "a3b5ba32475b80edaa376c2726ca89b5ce879a87317006add72ab3684de0d7f8",
+      "blob": "a36317095b23ac0f97c767b92222d584dd1a73bd",
+      "batch": "K1",
+      "reason": "applied plan: the 4 October integration plans, reviews and merge note, executed into the theories that day; same depth as integration/, so their links resolve",
+      "plan_entry": "drafts/2026-10-04-soi-si-lom-5-2/integration/PLAN-fable.md"
+    },
+    {
+      "old_path": "drafts/2026-10-04-soi-si-lom-5-2/integration/PLAN-opus.md",
+      "new_path": "drafts/2026-10-04-soi-si-lom-5-2/history/PLAN-opus.md",
+      "sha256": "8d3d19c14b4b06f28d912206ab8f5846badfaff14e9cb1f6cfb2db776d885cfd",
+      "blob": "6380ed1d9cab13ee7ea7cce39b1fdf1b720f02f2",
+      "batch": "K1",
+      "reason": "applied plan: the 4 October integration plans, reviews and merge note, executed into the theories that day; same depth as integration/, so their links resolve",
+      "plan_entry": "drafts/2026-10-04-soi-si-lom-5-2/integration/PLAN-opus.md"
+    },
+    {
+      "old_path": "drafts/2026-10-04-soi-si-lom-5-2/integration/REVIEW-fable.md",
+      "new_path": "drafts/2026-10-04-soi-si-lom-5-2/history/REVIEW-fable.md",
+      "sha256": "84ce453eebe10e3ebb88b2624ff92c53b45cc86e1f08f5abae835aeaebb871e6",
+      "blob": "f2fc9d29a404637c8be0b225f63e22212710b407",
+      "batch": "K1",
+      "reason": "applied plan: the 4 October integration plans, reviews and merge note, executed into the theories that day; same depth as integration/, so their links resolve",
+      "plan_entry": "drafts/2026-10-04-soi-si-lom-5-2/integration/REVIEW-fable.md"
+    },
+    {
+      "old_path": "drafts/2026-10-04-soi-si-lom-5-2/integration/REVIEW.md",
+      "new_path": "drafts/2026-10-04-soi-si-lom-5-2/history/REVIEW.md",
+      "sha256": "bdd1ccf4bdb46a426f6389cdaa374daa9d43924f42ca16b6a61d0b35bbe124c3",
+      "blob": "f0b0f30739afbf550cc918e53ae545eab75d9157",
+      "batch": "K1",
+      "reason": "applied plan: the 4 October integration plans, reviews and merge note, executed into the theories that day; same depth as integration/, so their links resolve",
+      "plan_entry": "drafts/2026-10-04-soi-si-lom-5-2/integration/REVIEW.md"
+    }
+  ]
+}

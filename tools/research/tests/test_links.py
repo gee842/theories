@@ -59,6 +59,33 @@ class LinkCheckTests(unittest.TestCase):
             limited = moves.check_links(root, only=['docs/B.md'], classifier=paths.Classifier(settings={}, root=root, generated=set()))
             self.assertEqual(limited['broken'], 0)
 
+    def test_targets_outside_the_repository_are_listed_not_counted(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            files = {
+                '.gitignore': 'audio/*.m4a\n',
+                'docs/A.md': '[audio](../audio/original.m4a) [sub](../sub/README.md) [gone](../audio/notes.md)\n'
+                             'Notation \\(X(0)=k[E](0)\\) is not a link. [abs](/Users/someone/repo/docs/A.md)\n',
+                'docs/frozen-copy/C.md': '[bad](gone.md)\n',
+                'docs/PINNED.md': '[bad](gone.md)\n',
+            }
+            for name, body in files.items():
+                (root / name).parent.mkdir(parents=True, exist_ok=True)
+                (root / name).write_text(body)
+            subprocess.run(['git', 'init', '-q'], cwd=root, check=True)
+            subprocess.run(['git', 'add', '-A'], cwd=root, check=True)
+            subprocess.run(['git', 'update-index', '--add', '--cacheinfo', '160000,' + '1' * 40 + ',sub'], cwd=root, check=True)
+            settings = {'path_roles': {'evidence_paths': {'docs/frozen-copy/': 'a frozen copy', 'docs/PINNED.md': 'hashed'}}}
+            classifier = paths.Classifier(settings=settings, root=root, generated=set())
+            self.assertEqual(classifier.role('docs/frozen-copy/C.md'), 'evidence')
+            self.assertEqual(classifier.role('docs/PINNED.md'), 'evidence')
+            self.assertEqual(classifier.role('docs/PINNED.md.bak'), 'live')
+            result = moves.check_links(root, classifier=classifier)
+            self.assertEqual(sorted((b['target'], b['kind']) for b in result['list']),
+                             [('../audio/notes.md', 'missing-path'), ('/Users/someone/repo/docs/A.md', 'absolute-path')])
+            self.assertEqual(sorted((b['target'], b['kind']) for b in result['not_in_repository']),
+                             [('../audio/original.m4a', 'ignored-by-git'), ('../sub/README.md', 'in-submodule')])
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -93,6 +93,25 @@ def tracked(root: Path) -> dict[str, str]:
     return out
 
 
+def gitlinks(root: Path) -> set[str]:
+    """Tracked submodule paths (mode 160000): their contents belong to another repository."""
+    out = set()
+    for entry in git(root, 'ls-files', '-s', '-z').split(b'\0'):
+        if entry.startswith(b'160000 '):
+            out.add(entry.split(b'\t', 1)[1].decode())
+    return out
+
+
+def ignored_paths(root: Path, candidates) -> set[str]:
+    """The candidates git's ignore rules exclude (they need not exist)."""
+    candidates = sorted(set(candidates))
+    if not candidates:
+        return set()
+    out = subprocess.run(['git', 'check-ignore', '--stdin', '-z'], cwd=root, input='\0'.join(candidates).encode(),
+                         stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout
+    return {p for p in out.decode().split('\0') if p}
+
+
 def untracked(root: Path, ignored: bool = False) -> list[str]:
     args = ['ls-files', '--others', '-z'] + (['--ignored', '--exclude-standard'] if ignored else ['--exclude-standard'])
     return [p for p in git(root, *args).decode().split('\0') if p]
@@ -174,13 +193,15 @@ def code_mask(text: str) -> str:
 
 
 INLINE = re.compile(r'\]\(')
+# Inline TeX on one line, \( ... \): `[EX](0)` inside it is notation, not a link.
+TEX_INLINE = re.compile(r'\\\(.*?\\\)')
 REFDEF = re.compile(r'^ {0,3}\[(?!\^)[^\]\n]+\]:[ \t]*(<[^>\n]*>|\S+)', re.M)
 HTMLREF = re.compile(r'<(?:a|img|source|link)\b[^>]*?\s(?:href|src)\s*=\s*(["\'])([^"\'\n]*)\1', re.I)
 
 
 def links(text: str):
-    """(start, end, raw) for every link target outside code: inline, reference and HTML."""
-    masked = code_mask(text)
+    """(start, end, raw) for every link target outside code and inline TeX: inline, reference and HTML."""
+    masked = TEX_INLINE.sub(lambda m: re.sub(r'[^\n]', ' ', m.group(0)), code_mask(text))
     found = []
     for m in INLINE.finditer(masked):
         i = m.end()
@@ -319,6 +340,7 @@ def check_links(root: Path = ROOT, only=None, classifier=None, include_generated
     files = inventory(root)
     present = set(files)
     dirs = directories(files)
+    submodules = gitlinks(root)
     roles_ok = {'live', 'generated'} if include_generated else {'live'}
     selected = [f for f in files if f.endswith('.md') and classifier.role(f) in roles_ok
                 and (not only or any(f == p.rstrip('/') or f.startswith(p.rstrip('/') + '/') for p in only))]
@@ -332,7 +354,7 @@ def check_links(root: Path = ROOT, only=None, classifier=None, include_generated
                 anchor_cache[path] = set()
         return anchor_cache[path]
 
-    broken, checked = [], 0
+    broken, checked, absent = [], 0, []
     for referrer in selected:
         try:
             text = (root / referrer).read_text(errors='replace')
@@ -361,8 +383,25 @@ def check_links(root: Path = ROOT, only=None, classifier=None, include_generated
                 if wanted not in found and wanted.lower() not in found and not re.fullmatch(r'L\d+(-L\d+)?', wanted):
                     kind = 'missing-anchor'
             if kind:
-                broken.append({'file': referrer, 'line': line_of(text, start), 'target': raw, 'kind': kind,
-                               'role': classifier.role(referrer)})
+                item = {'file': referrer, 'line': line_of(text, start), 'target': raw, 'kind': kind,
+                        'role': classifier.role(referrer)}
+                if kind == 'missing-path' and any(target == s or target.startswith(s + '/') for s in submodules):
+                    item['kind'] = 'in-submodule'
+                    absent.append(item)
+                elif kind == 'missing-path':
+                    absent.append(item)  # settled below: ignored by git, or broken
+                else:
+                    broken.append(item)
+    # A missing target that git's ignore rules exclude is kept outside the repository by design
+    # (a recording kept locally, say); it is listed, not counted as broken.
+    ignored = ignored_paths(root, {resolve(a['file'], split_target(a['target'])[0]).rstrip('/')
+                                   for a in absent if a['kind'] == 'missing-path'})
+    local_only = []
+    for a in absent:
+        if a['kind'] == 'missing-path' and resolve(a['file'], split_target(a['target'])[0]).rstrip('/') in ignored:
+            a['kind'] = 'ignored-by-git'
+        (local_only if a['kind'] != 'missing-path' else broken).append(a)
+    broken.sort(key=lambda b: (b['file'], b['line']))
     by_dir, by_kind, by_role = defaultdict(int), defaultdict(int), defaultdict(int)
     for b in broken:
         by_dir[posixpath.dirname(b['file']) or '.'] += 1
@@ -372,8 +411,10 @@ def check_links(root: Path = ROOT, only=None, classifier=None, include_generated
             'broken_by_kind': dict(sorted(by_kind.items())), 'broken_by_role': dict(sorted(by_role.items())),
             'by_directory': dict(sorted(by_dir.items(), key=lambda kv: (-kv[1], kv[0]))),
             'list': broken,
+            'not_in_repository': local_only,
             'scope': 'Relative links and #anchors in live and generated Markdown (paths.py roles); history, evidence, '
-                     'sources and scratch are frozen and not checked. Paths must match tracked or untracked files exactly.'}
+                     'sources and scratch are frozen and not checked. Paths must match tracked or untracked files exactly. '
+                     'Targets inside a submodule or excluded by .gitignore are listed under not_in_repository, not counted.'}
 
 
 # ---------------------------------------------------------------- the move plan

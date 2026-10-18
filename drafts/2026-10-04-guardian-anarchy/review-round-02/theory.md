@@ -16,10 +16,10 @@
 
 可定位证据：
 
-- [10 月 2 日谈话:409](/Users/ren/theories/drafts/2026-10-02-friend-conversation/transcript.md:409) 从 government、security、decent life 的基础自由，提出足够好、不必逐年变大的自主基础设施，随后才说树是 provider。原本就不只是生活服务的自动化。
-- [6 月原始消息:236](/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md:236)讨论识别使系统失稳的行为模式、协调制止伤害、因应情境纠正，同时承认不能确保每个系统永远不失败。
-- [同一材料:248](/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md:248)明确反对先验排除强 Guardian，认为集中、分散、强、弱是手段。
-- 主页面的全部“守护如何工作”情境见 [app.js:14](/Users/ren/theories/experiments/guardian-anarchy/dist/app.js:14)：平日、旱季、修复、新花园，全部是供水。页面对跨地方关系的具体解释也停在水与材料循环，见 [index.html:129](/Users/ren/theories/experiments/guardian-anarchy/dist/index.html:129)。
+- [10 月 2 日谈话:409](../../2026-10-02-friend-conversation/transcript.md#L409) 从 government、security、decent life 的基础自由，提出足够好、不必逐年变大的自主基础设施，随后才说树是 provider。原本就不只是生活服务的自动化。
+- [6 月原始消息:236](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L236)讨论识别使系统失稳的行为模式、协调制止伤害、因应情境纠正，同时承认不能确保每个系统永远不失败。
+- [同一材料:248](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L248)明确反对先验排除强 Guardian，认为集中、分散、强、弱是手段。
+- 主页面的全部“守护如何工作”情境见 [app.js:14](../../../experiments/guardian-anarchy/dist/app.js#L14)：平日、旱季、修复、新花园，全部是供水。页面对跨地方关系的具体解释也停在水与材料循环，见 [index.html:129](../../../experiments/guardian-anarchy/dist/index.html#L129)。
 
 **可反驳的判断：** 如果仅阅读主页面的读者能解释“Guardian Anarchy 与一个自动化程度很高、善待居民的普通公共事业系统究竟有什么不同”，则上述缺口可能没有我估计的大。当前文本中，读者很容易解释水路怎样运行，较难解释“Anarchy”为什么是这个构想不可替代的一半。
 
@@ -49,13 +49,13 @@
 
 三个意思并不相同。设备平稳时，某个参与者仍可能把公共能力变成自己的优势；规则被严格执行时，新的生活需要仍可能无从表达；现场安静也可能只是人不再愿意尝试。
 
-[生生不息论整理:55](/Users/ren/theories/theories/shengsheng-buxi-generative-existence/README.md:55)区分未、可、应、转；[同稿:61](/Users/ren/theories/theories/shengsheng-buxi-generative-existence/README.md:61)明确“好非舒适”；[同稿:104](/Users/ren/theories/theories/shengsheng-buxi-generative-existence/README.md:104)把和放在差异与关系流通之中。这些既有阐释可以帮助我们把“和平”发展为能承受差异、转变与纠纷的秩序，避免把变化本身当故障。
+[生生不息论整理:55](../../../theories/becoming/README.md)区分未、可、应、转；[同稿:61](../../../theories/becoming/README.md)明确“好非舒适”；[同稿:104](../../../theories/becoming/README.md)把和放在差异与关系流通之中。这些既有阐释可以帮助我们把“和平”发展为能承受差异、转变与纠纷的秩序，避免把变化本身当故障。
 
 **可发展的新问题：** 一个竞争、争论或冒险活动，在什么条件下丰富共同生活，在什么条件下开始吞噬其共同基础？Guardian 对后一种转变是否有已获共识的识别与响应职责？这需要案例和边界，不宜直接交给模型一个“辨认一切退化”的无限任务。
 
 ### 2. 固定公共角色不等于世界只有“人类主体／AI 工具”两类存在
 
-本次 Guardian 被设计成基础设施，这一点应保留。可是既有 Ren 语料并不把 AI 与人类置于完全不同的伦理原则下，见 [6 月消息:249](/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md:249)。生生不息整理也包含人类与人工心智为同行者的思想。
+本次 Guardian 被设计成基础设施，这一点应保留。可是既有 Ren 语料并不把 AI 与人类置于完全不同的伦理原则下，见 [6 月消息:249](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L249)。生生不息整理也包含人类与人工心智为同行者的思想。
 
 因此，“Guardian 不自行迭代”可以是一个公共角色的技术设定，不必被扩展成“所有 AI 都只应维持人类生活”的文明原则。当前反复使用“人决定／AI 执行”，对解释该角色有用，但若当成完整未来本体，就缩窄了来源中的视野。
 
@@ -63,7 +63,7 @@
 
 ### 3. 生成性不只是更多生活方式可供选择
 
-当前主页面加入实验室和共同游戏世界，是有依据的进步；[原始消息:64](/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md:64)以后确有花园、AR、Middle Earth、火箭等构想。但这种多样性若只作为预先展示的三个选项，仍未呈现“人能形成原来不存在的共同条件”。
+当前主页面加入实验室和共同游戏世界，是有依据的进步；[原始消息:64](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L64)以后确有花园、AR、Middle Earth、火箭等构想。但这种多样性若只作为预先展示的三个选项，仍未呈现“人能形成原来不存在的共同条件”。
 
 河谷新花园是一个微小且真实的生成案例，应该保留；同时至少需要研究一种会改变关系本身的生成：人们形成新的学习共同体、共同发明新的协作方式，或把一次创造沉淀为别人也能使用的基础。它不是单纯换一种消费、审美或地理布景。
 
@@ -71,7 +71,7 @@
 
 ### 4. 地方共识与整体关系之间还有未完成的思想工作
 
-用户明确提出不同地区可以确定不同秩序。另一方面，原始语料反复要求从我们本来处在同一关系网络中出发，而不是把自我／外部当作绝对切割，见 [10 月 4 日译稿:31](/Users/ren/theories/drafts/2026-10-04-soi-si-lom-5-2/translation-zh.md:31)、[同稿:45](/Users/ren/theories/drafts/2026-10-04-soi-si-lom-5-2/translation-zh.md:45)。
+用户明确提出不同地区可以确定不同秩序。另一方面，原始语料反复要求从我们本来处在同一关系网络中出发，而不是把自我／外部当作绝对切割，见 [10 月 4 日译稿:31](../../2026-10-04-soi-si-lom-5-2/translation-zh.md#L31)、[同稿:45](../../2026-10-04-soi-si-lom-5-2/translation-zh.md#L45)。
 
 这不是要取消地区共识，而是意味着共识的对象不能只由一幅地图决定。跨地区影响、共同生产链、知识关系和流动人口，都可能要求不同尺度的共同理解。当前水路例子抓住了这个方向，但没有回答这些尺度怎样共处。
 
@@ -83,7 +83,7 @@
 
 需要明确是本轮或前轮新添加：四层图解；Guardian 主要只在“维持层”的定位；具体授权与变更程序；储水配置的可调范围；备用水路与新住户预案；精确的替换制度；“Anarchy＝自生的秩序”的译释；一整套默认的有限动作或干预优先序。它们可以很好，但不能把实现选择变成原始思想的必然推论。
 
-尤其值得保留的原始提醒是 [6 月消息:256](/Users/ren/theories/sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md:256)：Ren 曾在相近的工作中批评，调整之后“you wrote a beautiful piece but lost the power”，丢掉系统思考、总体化趋势、转向的必要性及迫切性。这不是证明本次作品失败的判词，而是对我们很具体的提醒：优美的未来生活不应该替代为什么这种未来值得创造、它改变了什么动态关系的解释。
+尤其值得保留的原始提醒是 [6 月消息:256](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L256)：Ren 曾在相近的工作中批评，调整之后“you wrote a beautiful piece but lost the power”，丢掉系统思考、总体化趋势、转向的必要性及迫切性。这不是证明本次作品失败的判词，而是对我们很具体的提醒：优美的未来生活不应该替代为什么这种未来值得创造、它改变了什么动态关系的解释。
 
 ## 最重要的三个研究问题
 

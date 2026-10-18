@@ -72,7 +72,9 @@ tmp/, work/                   scratch; nothing tracked
 
 ## Path roles
 
-[`tools/research/paths.py`](../tools/research/paths.py) classifies every path once, from `path_roles` in `research-config.json`, and the other tools use it. In order of precedence: **source** (`sources/`), **scratch** (`tmp/`, `work/`, `.claude/`, caches), **history** (any path component named exactly `history`, and `_process/architecture/history/`), **evidence** (timestamped run folders, `verification-history/`, `legacy-replays/`, snapshots, `-BEFORE-` copies), **generated** (pages written by render), **live** (everything else). Default search and discovery read live and generated files; history and evidence are reached deliberately (`research.py find … --archives`).
+[`tools/research/paths.py`](../tools/research/paths.py) classifies every path once, from `path_roles` in `research-config.json`, and the other tools use it. In order of precedence: **source** (`sources/`), **scratch** (`tmp/`, `work/`, `.claude/`, caches), **history** (any path component named exactly `history`, and `_process/architecture/history/`), **evidence** (timestamped run folders, `verification-history/`, `legacy-replays/`, snapshots, `-BEFORE-` copies, `frozen/` and `review-history/` folders, and the files and folders `evidence_paths` names, each with its reason: frozen copies and inputs whose bytes a manifest, freeze or review receipt hashes), **generated** (pages written by render), **live** (everything else). Default search and discovery read live and generated files; history and evidence are reached deliberately (`research.py find … --archives`).
+
+`make research-links` checks every relative link and anchor in live and generated Markdown and fails on any break, so it is a gate: a new break shows. Links use repository-relative paths, never absolute ones. A target inside a submodule or excluded by `.gitignore` (a recording kept locally) cannot be checked from the repository; the check lists it under `not_in_repository` and does not count it. A file pinned by a hash keeps its bytes: it is classified as evidence, not repaired.
 
 ## History layout
 

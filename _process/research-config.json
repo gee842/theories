@@ -138,7 +138,9 @@
       "legacy-replays",
       "snapshots",
       "source-snapshots",
-      "before"
+      "before",
+      "frozen",
+      "review-history"
     ],
     "evidence_component_patterns": [
       "^\\d{8}T\\d{6}(\\.\\d+)?Z",
@@ -149,7 +151,24 @@
       "-BEFORE[-.]",
       "^before-",
       "(^|-)before-\\d"
-    ]
+    ],
+    "evidence_paths": {
+      "_process/research/2026-10-05-concern-theory/reward-association/development/IDENTIFICATION-before-reporting-clarification.md": "Saved copy before the reporting clarification; the study's review-receipt.json and prospective-review.json and experiments/recipient-value-learning/independent-check.json hash it.",
+      "drafts/2026-09-05-generative-foundations/_v11-build/": "Assembly files of the completed v1.1 whitepaper (6 September 2026), written for the assembled WHITEPAPER-v1.1.md, where their links and #chapter anchors resolve; SOURCES-before.md is a saved copy of sources/SOURCES.md.",
+      "drafts/2026-09-05-generative-foundations/_v11-parts/": "Chapter sources of the completed v1.1 whitepaper; _v11-build/assemble.py joins them into WHITEPAPER-v1.1.md, where their links resolve.",
+      "drafts/2026-09-05-zhishan-foundation/理论主线与组织立场.md": "A recorded earlier file of the generative-foundations whitepaper: history/v1.0-原版校验.json hashes it and _v11-build/verify_v11.py checks it unchanged.",
+      "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/src/": "Assembly inputs of the completed V7.3 edition: verification/v73-input-manifest.json and source-changes.json hash them, and their links are written for the assembled pages in v7.3/.",
+      "experiments/agentdojo-evidence-boundary/correction-action/continuation/development/review/PROTOCOL-REVIEW-01.md": "Protocol review 01 as accepted; protocol-review-01.json hashes it.",
+      "experiments/agentdojo-evidence-boundary/correction-action/runs/k02/": "Run k02; its preservation.json and final-inventory.json hash its files.",
+      "experiments/motor-learning-cost/development/PROTOCOL-before-boundary-guard.md": "Saved protocol before the boundary guard; MOTOR-LEARNING-COST-INTEGRITY.json hashes it.",
+      "experiments/recipient-value-learning/bounded-identification/development/prospective-review.md": "The prospective review as accepted; prospective-review-provenance.json and the concern study's bounded-identification-review.json hash it.",
+      "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/development/publication-freshness-review/PROTOCOL.md": "Frozen protocol of the publication-freshness review; protocol-freeze.json and first-run-receipt.json hash it.",
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/application/formal/review/pre-integration-summary/": "The application-evidence review before integration; review-acceptance.json hashes it.",
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession/formal/development/prospective-contract/": "The prospective contract as frozen; PROVENANCE.json hashes it.",
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/HANDOFF.md": "Handoff before the import; the study's PREIMPORT-EVIDENCE-INTEGRATION and FIXED-FINISH-LINE snapshots hash it.",
+      "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/formal/development/initial-no-keep/README.original.md": "Original README of the first attempt; provenance.json and ROUTE-REVISION-INTEGRITY.json hash it.",
+      "theories/evolving-community-swarms/context/": "Byte copies of source records in sources/15-codex-theory-conversations/ (the 2026-09-05 and 2026-09-07 evolving-community-swarms records), as the records state."
+    }
   },
   "move_receipts": "_process/architecture/moves",
   "move_pinned": [

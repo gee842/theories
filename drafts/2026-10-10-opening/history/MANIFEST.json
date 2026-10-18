@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "root": "drafts/2026-10-10-opening/history",
+  "entries": [
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-DRAFT.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-DRAFT.md",
+      "sha256": "cb0ef799d29ce1b94b6bfb15c34bf624c55359b35e3b3ccdbeb0f940331e2306",
+      "blob": "4df89dff5775881f7a59dabd2902f0161214e8a0",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-DRAFT.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-NOTES.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-NOTES.md",
+      "sha256": "bcc7ded114ecc0262614b3a671dcf7170a571af9b9dea69c5b0bba5fcadd77ba",
+      "blob": "9d875a720c0505922f9f45cf852fb625134d436a",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-NOTES.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-REVIEW.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-REVIEW.md",
+      "sha256": "4c62393f072c855084e4a4ab9d7f00bfb4d937d697d8a33bd3675ae771c5abf6",
+      "blob": "880a29e5400271c4a10b01f138459d40baaf2f8e",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-REVIEW.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V2.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V2.md",
+      "sha256": "3e767a2b36245a7b18f414ad9df00ffcb347380236c7e35120bec2ef3b07808c",
+      "blob": "e810bd684608eefa2a6df8d27ada163e55a7503c",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V2.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V3.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V3.md",
+      "sha256": "2f8952b14500d446d979000ab7f81a7ad6373f2b43f5ecf854c7455fdccfb0fa",
+      "blob": "cc262d525ae5b79a105a8e3ff8f6aaa3ccb413e9",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V3.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V4.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V4.md",
+      "sha256": "afa9b23c952a41d52e2788cbe9434c72ce0d3c5dd199950b39e3630bcc475ee5",
+      "blob": "a95bd0802969550aa324c6cb33f2231e893046d1",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V4.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V5.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V5.md",
+      "sha256": "88c62e07601e34b7c74a520417dbc63fe5d4b940f3e260bef7305b7270e62f13",
+      "blob": "d5593971dbe32c81958518f4a23f04a1069307f1",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V5.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V6-PROPOSAL.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V6-PROPOSAL.md",
+      "sha256": "4faf4336662b0f688b823ddb692d7442485a1fea5040338bc94895c5fc1a28fd",
+      "blob": "8d6f6f4280978c5544acbe14332b78ed050725c3",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V6-PROPOSAL.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V6.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V6.md",
+      "sha256": "cf7d924d2c308a6409e4975103e52d1f1d18c3cf6ace38178b5026db0de184e8",
+      "blob": "fbfc05781a224c803dd4dd18b026addebeb2bc94",
+      "batch": "K1",
+      "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V6.md"
+    }
+  ]
+}

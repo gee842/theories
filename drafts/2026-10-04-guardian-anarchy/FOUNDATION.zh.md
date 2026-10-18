@@ -116,7 +116,7 @@ Guardian Anarchy 的未来感，由此发生在日常中：人醒来，世界已
 本稿由 AI 根据 Ren 的思想材料和 2026 年 10 月 4 日的本次对话起草。除明确标出的短语外，不将本稿新写的句子作为 Ren 的逐字引语。它是新的阐释与设计提案，不覆盖既有理论文本。
 
 1. [2026 年 10 月 2 日谈话转写](../2026-10-02-friend-conversation/transcript.md)，00:50:01 与 01:01:18；[转写说明](../2026-10-02-friend-conversation/README.md)指出说话人识别和自动转写仍有不确定性。本次对话中用户再次明确采用「树是 provider」，因此本稿将其作为本次方向。
-2. [生生不息论的理论整理](../../theories/shengsheng-buxi-generative-existence/README.md)；[英文稿第一部](../2026-10-02-shengsheng-en/parts/01-part-one.md)。二者含 AI 整理与论述；本稿使用「形成之物成为继续形成的条件」「未、可、应、转」「场」「修复与转变」，不把相关规范方向声称为已由物理学证明的定理。
+2. [生生不息论的理论整理](../../theories/becoming/README.md)；[英文稿第一部](../2026-10-02-shengsheng-en/parts/01-part-one.md)。二者含 AI 整理与论述；本稿使用「形成之物成为继续形成的条件」「未、可、应、转」「场」「修复与转变」，不把相关规范方向声称为已由物理学证明的定理。
 3. [智能向善 天下生生 宣言 v1.1](../2026-09-05-generative-foundations/宣言-v1.1.md)。使用共同富裕作为自由的物质基础、不同生活相互成就的方向；该版本为已有合作文本。
 4. 本次对话中 Ren 对 Guardian 的定义：固定模型，不迭代自己的认知结构，最小化；作为动态系统的 cybernetic controller；不同地区共同确定要维持的秩序。本稿的授权、替换和接续机制为对此的设计展开。
 5. [Architecture for a living Earth](../../theories/architecture-for-a-living-earth/README.md)。材料流转、可维修与更替、自动化的物质条件为已有探索；河谷供水与花园案例为本稿新设想，未进行工程验证。

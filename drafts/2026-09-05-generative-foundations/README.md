@@ -21,4 +21,4 @@ The current edition is v1.1 (6 September 2026). [README-v1.1](README-v1.1.md) li
 - [从差异到生生_认知与生成的递归推导.md](从差异到生生_认知与生成的递归推导.md), [善恶的客观性与向善演化_论证补篇.md](善恶的客观性与向善演化_论证补篇.md), [三层现实与认知反馈_论证补篇.md](三层现实与认知反馈_论证补篇.md), [物理生成与内在规范性_论证补篇.md](物理生成与内在规范性_论证补篇.md): supplementary arguments.
 - [系统存续与Meta-Attractor_联合诊断表.md](系统存续与Meta-Attractor_联合诊断表.md), [Meta-Attractor-诊断工作表.md](Meta-Attractor-诊断工作表.md): diagnostic tables.
 - [formal/](formal/README.md): Lean files and checks.
-- [_v11-parts/](_v11-parts/) and [_v11-build/](_v11-build/): chapter sources and assembly scripts for v1.1.
+- [_v11-parts/](_v11-parts/) and [_v11-build/](_v11-build/): chapter sources and assembly scripts for v1.1. They are frozen inputs of the finished edition (`evidence_paths` in `_process/research-config.json`): their links are written for the assembled whitepaper and resolve there.

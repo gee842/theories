@@ -6,8 +6,9 @@ Roles:
 - history:   retired material: any path component named exactly `history`, plus the
              hash-addressed `_process/architecture/history/` store.
 - evidence:  frozen run material: timestamped run folders (`*-checks/<UTC>/`, nanosecond run
-             ids), `verification-history/`, `legacy-replays/`, snapshots, "before" copies, and
-             the move receipts (`move_receipts`).
+             ids), `verification-history/`, `legacy-replays/`, snapshots, "before" copies, the
+             move receipts (`move_receipts`), and the paths the config key `evidence_paths` names,
+             each with its reason (frozen copies and hash-pinned inputs that keep their place).
 - generated: pages written by `make research-render` (the generated manifest and record pages).
 - live:      everything else; the files readers and sessions edit.
 
@@ -65,6 +66,10 @@ class Classifier:
         # Move receipts record former paths on purpose; they are evidence, never rewritten.
         receipts = self.settings.get('move_receipts')
         self.evidence_prefixes = [receipts.rstrip('/') + '/'] if isinstance(receipts, str) and receipts.strip('/') else []
+        # Named frozen paths: a key ending in '/' covers a directory, any other key one file.
+        named = rules.get('evidence_paths') or {}
+        self.evidence_files = {k for k in named if not k.endswith('/')}
+        self.evidence_prefixes += [k for k in named if k.endswith('/')]
         self._generated = generated
 
     @property
@@ -94,7 +99,8 @@ class Classifier:
         if any(c in r['history_components'] for c in directories) or any(path.startswith(p) for p in r['history_prefixes']):
             return 'history'
         if any(c in r['evidence_components'] or any(p.search(c) for p in self.component_patterns) for c in directories) \
-                or any(p.search(parts[-1]) for p in self.name_patterns) or any(path.startswith(p) for p in self.evidence_prefixes):
+                or any(p.search(parts[-1]) for p in self.name_patterns) or any(path.startswith(p) for p in self.evidence_prefixes) \
+                or path in self.evidence_files:
             return 'evidence'
         if path in self.generated:
             return 'generated'
