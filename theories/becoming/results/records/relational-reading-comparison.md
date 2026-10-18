@@ -92,6 +92,8 @@ Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json) | — |
+| proof | [Metaethics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | `Becoming.G0`, `Becoming.Extension`, `Becoming.Comparison` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json) | — |
 
 Aliases: `RenewalComparison.g0_relational`, `RenewalComparison.overdraw_relational_extension`, `RenewalComparison.overdraw_broad_incomparable`, `RenewalComparison.overdraw_comparison_ranks`, `RenewalComparison.broad_comparison_admits_overdraw`, `RenewalComparison.malignant_comparison`, `RenewalComparison.contest_comparison`, `Becoming.SupportGated.overdraw_extension`, `Becoming.SupportGated.contest_extensions`
 
@@ -109,6 +111,7 @@ Aliases: `RenewalComparison.g0_relational`, `RenewalComparison.overdraw_relation
 - 17 October 2026, wording: outdated labels (G0) replaced by the current vocabulary (living significance), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (RenewalBridge.lean). The claim is unchanged.
 - 19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (ActiveReading, Ranking; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
+- 18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core counterparts of the cited periphery and bridge declarations are cited (3 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.
 - 7 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](relational-reading-comparison.json).
 
 <a id="earlier-text--早期文本"></a>

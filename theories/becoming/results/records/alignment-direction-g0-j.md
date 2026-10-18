@@ -82,6 +82,9 @@ The constructed case distinguishes expansion, service, transfer and abrupt withd
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
+| proof | [Frontier.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean) | `Becoming.Requirement.Handover.transfer_above_expansion`, `Becoming.Requirement.Handover.undelivered_fails`, `Becoming.Lexical.BasicPriority.frontier_iff` |
+| proof | [Lexical.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean) | `Becoming.Lexical.Frame.Above`, `Becoming.Lexical.tierFrame`, `Becoming.Lexical.basicSide`, `Becoming.Lexical.gainSide`, `Becoming.Lexical.above_iff_frame` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json) | — |
 
 Aliases: `Becoming.alignment_better_iff_betterAt`, `Becoming.alignment_frontier_iff`
 
@@ -98,6 +101,7 @@ Aliases: `Becoming.alignment_better_iff_betterAt`, `Becoming.alignment_frontier_
 - 17 October 2026, wording of the public fields: outdated labels (G0, J1–J4) replaced by the current vocabulary (living significance, the practical commitments, named by content), following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
+- 18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core counterparts of the cited periphery and bridge declarations are cited (3 in Becoming.Frontier; 5 in Becoming.Lexical), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](alignment-direction-g0-j.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:45:14.926134+00:00`. Run the registry che
 
 Under one event law, retaining and releasing a coupling have identical marginal possibilities, while retention preserves every represented joint bundle and adds the full bundle. Feeding this structural output into explicit comparison principle C excludes any irreflexive comparator over a summary fully determined by those marginals. A joint-bundle description distinguishes the case; richer possibility still does not force joint actualization.
 
-Canonical source: [RelationalGrounding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean)
+Canonical source: [Bundles.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -59,13 +59,15 @@ No dependency on another migrated record is asserted; source imports and supplie
 | statement | [RELATIONAL-GROUNDING-PROOF.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-PROOF.md) | — |
 | review | [RELATIONAL-GROUNDING-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-GROUNDING-REVIEW.md) | — |
 | provenance | [2026-10-08-monist-relational-ontology-first.md](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md) | — |
-| proof | [Metaethics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | `Becoming.Comparison.separates` |
+| proof | [Metaethics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | `Becoming.Comparison.separates`, `Becoming.Extension`, `Becoming.Comparison` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.Frame.ofInventory`, `Becoming.strict_comparison_through_marginals_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T163210.426211Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
+| proof | [Bundles.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean) | `Becoming.Regimes.released_carried`, `Becoming.Regimes.extension`, `Becoming.Regimes.marginals_agree`, `Becoming.Regimes.no_comparison_through_marginals`, `Becoming.Regimes.joint_separates`, `Becoming.Regimes.possibility_not_realization`, `Becoming.carries_iff_preserves`, `Becoming.Activation.same_marginals_lose_bundle` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -85,4 +87,5 @@ Aliases: `RelationalGrounding.released_profiles_are_carried`, `RelationalGroundi
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean, Metaethics.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Metaethics.lean). The claim is unchanged.
+- 18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core counterparts of the cited periphery and bridge declarations are cited (8 in Becoming.Bundles; 2 in Becoming.Metaethics), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from RelationalGrounding.lean to Bundles.lean. A port restates; the claim is unchanged.
 - 3 rebinding entries (2026-10-15): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](relational-generative-comparison.json).
