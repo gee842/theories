@@ -561,15 +561,19 @@ theorem inspected_trace_short_of_reserve :
       nomatch (congrArg Situation.record same).symm.trans evidence_short_of_reserve.2.1),
    fun _ tr => final_of_trace tr ▸ evidence_short_of_reserve⟩
 
-/-- **A slower inspection misses the deadline, as traces.** -/
+/-- **A slower inspection misses the deadline, as traces**: the slow trace exists and does not
+complete; the timely one completes. -/
 theorem slow_trace_misses_deadline :
-    (∀ out, Trace inquiry (initialSituation .left [0] 20 12) [some .slow, none] out →
+    Trace inquiry (initialSituation .left [0] 20 12) [some .slow, none]
+        (final (initialSituation .left [0] 20 12) .slow) ∧
+      (∀ out, Trace inquiry (initialSituation .left [0] 20 12) [some .slow, none] out →
         achieved out = false) ∧
       Trace inquiry (initialSituation .left [0] 20 12) [some .inspect, none]
         (final (initialSituation .left [0] 20 12) .inspect) ∧
       ∀ out, Trace inquiry (initialSituation .left [0] 20 12) [some .inspect, none] out →
         achieved out = true :=
-  ⟨fun _ tr => final_of_trace tr ▸ slow_misses_deadline.1,
+  ⟨trace_of_final_ne (fun same => nomatch congrArg Situation.record same),
+   fun _ tr => final_of_trace tr ▸ slow_misses_deadline.1,
    trace_of_final_ne (fun same =>
       nomatch (congrArg achieved same).symm.trans slow_misses_deadline.2),
    fun _ tr => final_of_trace tr ▸ slow_misses_deadline.2⟩
@@ -586,11 +590,14 @@ theorem reuse_trace_completes_without_uniform_pool :
       actual_certificate_without_uniform_pool.2),
    fun _ tr => final_of_trace tr ▸ actual_certificate_without_uniform_pool.2⟩
 
-/-- **No candidates, no completion, as traces.** -/
+/-- **No candidates, no completion, as traces**: the trace exists, and it does not complete. -/
 theorem empty_candidates_trace_fails :
-    ∀ out, Trace inquiry (initialSituation .left [] 20 20 []) [some .reuse, none] out →
-      achieved out = false :=
-  fun _ tr => final_of_trace tr ▸ empty_candidates_no_correction
+    Trace inquiry (initialSituation .left [] 20 20 []) [some .reuse, none]
+        (final (initialSituation .left [] 20 20 []) .reuse) ∧
+      ∀ out, Trace inquiry (initialSituation .left [] 20 20 []) [some .reuse, none] out →
+        achieved out = false :=
+  ⟨trace_of_final_ne (fun same => nomatch congrArg Situation.record same),
+   fun _ tr => final_of_trace tr ▸ empty_candidates_no_correction⟩
 
 /-- **Under pooled unknowns, the inspection traces complete from every listed situation.** -/
 theorem listed_inspect_traces_complete :
