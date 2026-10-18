@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T19:22:44.046898+00:00`. Run the registry che
 
 Under a fixed relational law and realization interpretation, joint realization within n steps after an actual prefix is reachable through the same intermediate configuration within prefix length plus n steps. The existing joint-activation law supplies changed one-step capacity after preparation, loss of joint realization at every finite horizon after release, and a path leaving available joint capacity unused. Unbounded backward reachability repeats the established inference and is not counted as another result.
 
-Canonical source: [RelationalBecoming.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean)
+Canonical source: [ActivationCapacity.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActivationCapacity.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -50,6 +50,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [RelationalBecoming.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean) | `RelationalBecoming.within_after_prefix`, `RelationalBecoming.actual_preparation_changes_effective_capacity`, `RelationalBecoming.released_cannot_reach_joint`, `RelationalBecoming.actual_release_loses_eventual_joint`, `RelationalBecoming.prepared_capacity_can_end_without_joint_realization` |
+| proof | [ActivationCapacity.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActivationCapacity.lean) | `Becoming.ActivationCapacity.preparation_changes_capacity`, `Becoming.ActivationCapacity.released_not_joint`, `Becoming.ActivationCapacity.release_loses_joint`, `Becoming.ActivationCapacity.prepared_can_end_one_sided` |
 | proof | [GenerativeCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) | `Generative.trace_append_iff` |
 | proof | [JointContinuationClassification.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean) | `JointContinuationClassification.Realized` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json) | — |
@@ -63,6 +64,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | proof | [Bundles.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean) | `Becoming.Activation.realized` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T203356.753598Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -86,4 +88,5 @@ Aliases: `RelationalBecoming.within_after_prefix`, `RelationalBecoming.actual_pr
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged; in Recurrence.lean, Run.change_not_recurring now cites not_marks on the run's configurations instead of its own proof. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Re-pointed after reading the change (Bridge.lean: the fold). The claim is unchanged.
 - 18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core counterparts of the cited periphery and bridge declarations are cited (1 in Becoming.Bundles), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.
+- 19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (ActivationCapacity, Recurrence; verdicts in port-r.md), bound to core receipt 20261018T203356.753598Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
 - 5 rebinding entries (2026-10-15 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](effective-capacity-and-eventual-reachability.json).

@@ -251,7 +251,7 @@ Source: `deeper/RenewalRecovery.lean`. Before: the step-0 audit.
 
 ### RelationalBecoming
 
-Source: `deeper/RelationalBecoming.lean`. Before: the step-0 audit. The model is `JointContinuationClassification`’s (family J); F3J states it in the core as `Activation` (`Becoming.Bundles`), and `Becoming.ActivationCapacity` lands after it.
+Source: `deeper/RelationalBecoming.lean`. Before: the step-0 audit. The model is `JointContinuationClassification`’s (family J); F3J states it in the core as `Activation` (`Becoming.Bundles`), and `Becoming.ActivationCapacity` builds on it (F3R sub-chain 2).
 
 | Theorem | Before | After | Core counterpart | How |
 |---|---|---|---|---|
@@ -343,5 +343,5 @@ A join leaves the package when the modules it reads retire (the sweep, F3). Its 
 ## Overlaps
 
 - `Becoming.DescentRenewalRuns` imports `ContinuationRenewal` (family J), not a module of this family: it goes with F3J.
-- `RelationalBecoming`'s model is `JointContinuationClassification`'s (family J). F3J states it as `Activation` in `Becoming.Bundles`; `Becoming.ActivationCapacity` builds on it and lands after F3J's first sub-chain.
+- `RelationalBecoming`'s model is `JointContinuationClassification`'s (family J). F3J states it as `Activation` in `Becoming.Bundles`; `Becoming.ActivationCapacity` builds on it (F3R sub-chain 2, after F3J's first sub-chain).
 - `Becoming.CouplingHistoryFrames` reads both `RelationalBecoming` and `RelationalGrounding` (family J); its content is in F3J's `Becoming.Bundles`.

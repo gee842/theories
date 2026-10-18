@@ -203,7 +203,7 @@ mod('RelationalBecoming', 'deeper/RelationalBecoming.lean', True, [
     ('actual_release_loses_eventual_joint', 'release_loses_joint'),
     ('prepared_capacity_can_end_without_joint_realization', 'prepared_can_end_one_sided'),
 ]), note='The model is `JointContinuationClassification`’s (family J); F3J states it in the core as `Activation` '
-         '(`Becoming.Bundles`), and `Becoming.ActivationCapacity` lands after it.')
+         '(`Becoming.Bundles`), and `Becoming.ActivationCapacity` builds on it (F3R sub-chain 2).')
 
 # --- RepairComparison (bridge module of F1), its content --------------------------------------
 _mc_same = ['common_start', 'generated_trace', 'recovery_retains_loss', 'b2_loss_correspondence',
@@ -302,8 +302,8 @@ def render():
             '- `Becoming.DescentRenewalRuns` imports `ContinuationRenewal` (family J), not a module of this family: it goes '
             'with F3J.',
             '- `RelationalBecoming`\'s model is `JointContinuationClassification`\'s (family J). F3J states it as '
-            '`Activation` in `Becoming.Bundles`; `Becoming.ActivationCapacity` builds on it and lands after F3J\'s first '
-            'sub-chain.',
+            '`Activation` in `Becoming.Bundles`; `Becoming.ActivationCapacity` builds on it (F3R sub-chain 2, after F3J\'s '
+            'first sub-chain).',
             '- `Becoming.CouplingHistoryFrames` reads both `RelationalBecoming` and `RelationalGrounding` (family J); its '
             'content is in F3J\'s `Becoming.Bundles`.', '']
     (HERE / 'port-r.md').write_text('\n'.join(out))

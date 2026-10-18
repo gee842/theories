@@ -35,7 +35,7 @@
     "zh": "同一活动中准备、共同激活和解除条件形成不同后续。Trace 拼接携带同一实际中间配置；history_meaning 保持旧历史的实现含义。当前新增量是有界细化及旧共同活动应用，祖先可达／当前形成／行使的区分与原接触形成证据由既有可能性接口保留。",
     "en": "Preparation, joint activation and release differentiate continuations within one activity. Trace concatenation retains the same intermediate configuration; history_meaning preserves the original realization semantics. The delta is a bounded refinement and application to an existing common activity. The prior possibility interface retains the ancestral-reachability/formed-condition/exercise distinction and its actual contact-formation evidence."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActivationCapacity.lean",
   "aliases": [
     "RelationalBecoming.within_after_prefix",
     "RelationalBecoming.actual_preparation_changes_effective_capacity",
@@ -97,6 +97,17 @@
         "RelationalBecoming.released_cannot_reach_joint",
         "RelationalBecoming.actual_release_loses_eventual_joint",
         "RelationalBecoming.prepared_capacity_can_end_without_joint_realization"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActivationCapacity.lean",
+      "role": "proof",
+      "sha256": "639cd0ec42302ecfcbee194213099f790d0640f05a46781b5e5f25f7b7c76569",
+      "declarations": [
+        "Becoming.ActivationCapacity.preparation_changes_capacity",
+        "Becoming.ActivationCapacity.released_not_joint",
+        "Becoming.ActivationCapacity.release_loses_joint",
+        "Becoming.ActivationCapacity.prepared_can_end_one_sided"
       ]
     },
     {
@@ -197,6 +208,12 @@
       "role": "receipt",
       "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T203356.753598Z/verification.json",
+      "role": "receipt",
+      "sha256": "6b1dd356d93ee11907e20ee45c86fcae4cbee773993cb8bba188cd632f8e54a8",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -225,6 +242,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bundles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T203356.753598Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActivationCapacity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T203356.753598Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ActivationCapacity",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -290,6 +321,10 @@
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (1 in Becoming.Bundles), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (ActivationCapacity, Recurrence; verdicts in port-r.md), bound to core receipt 20261018T203356.753598Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（ActivationCapacity、Recurrence），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

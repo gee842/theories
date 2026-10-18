@@ -1,11 +1,11 @@
 {
- "commit": "0d1371b0f125ff6555e6bfeebf2bccd0daec69be",
+ "commit": "1afacb0c3565fe2022bed3736b08cf67ee5dfb60",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261018T200007.370225Z",
+ "core_receipt_at_commit": "20261018T201753.515165Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
- "tracked_modules": 356,
- "constants": 33889,
- "spine_theorems": 8940,
+ "tracked_modules": 357,
+ "constants": 33905,
+ "spine_theorems": 8947,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -27,10 +27,10 @@
  },
  "classes": {
   "statement on both families": 159,
-  "statement on Process/Frame/Run/Trace": 2255,
+  "statement on Process/Frame/Run/Trace": 2261,
   "statement on World/Flow/Web": 3005,
   "proof through a base family": 128,
-  "used by a theorem on the base": 3127,
+  "used by a theorem on the base": 3128,
   "apart: own vocabulary": 255,
   "apart: prelude-only statement": 11
  },
@@ -8195,6 +8195,13 @@
   "Becoming.Regimes.joint_enrichment_strict": "statement on Process/Frame/Run/Trace",
   "Becoming.Regimes.no_fresh_released": "statement on Process/Frame/Run/Trace",
   "Becoming.Regimes.joint_enrichment_classified": "statement on Process/Frame/Run/Trace",
+  "Becoming.ActivationCapacity.joint_iff": "used by a theorem on the base",
+  "Becoming.ActivationCapacity.coupled_within_one": "statement on Process/Frame/Run/Trace",
+  "Becoming.ActivationCapacity.initial_not_within_one": "statement on Process/Frame/Run/Trace",
+  "Becoming.ActivationCapacity.preparation_changes_capacity": "statement on Process/Frame/Run/Trace",
+  "Becoming.ActivationCapacity.released_not_joint": "statement on Process/Frame/Run/Trace",
+  "Becoming.ActivationCapacity.release_loses_joint": "statement on Process/Frame/Run/Trace",
+  "Becoming.ActivationCapacity.prepared_can_end_one_sided": "statement on Process/Frame/Run/Trace",
   "Becoming.Narrowing.beq_true_iff": "used by a theorem on the base",
   "Becoming.Narrowing.mem_filter": "used by a theorem on the base",
   "Becoming.Narrowing.filter_cons_true": "used by a theorem on the base",
