@@ -156,6 +156,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3C, the port of the correction family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Actuation; verdicts in port-c.md), bound to core receipt 20261018T234635.457051Z. The periphery and bridge references stay until the sweep retires them. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3C 将纠正族移入核心：所引声明旁加上核心陈述（Actuation），绑定到核心回执；外围与桥接引用保留到清扫退役它们。无新结果，论断不变。"
     }
   ],
   "related": [
@@ -246,6 +250,14 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Actuation.lean",
+      "role": "proof",
+      "sha256": "472164a3edb60c92ab7219377461e4651c3a68bee9bae72441c216a47fe3f000",
+      "declarations": [
+        "Becoming.Actuation.protocol_exact"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean",
       "role": "proof",
       "sha256": "393284aac793ff5329a7463d5379cfd697ec4bd734b04cfdd8d078f7cb609f41",
@@ -330,6 +342,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T234635.457051Z/verification.json",
+      "role": "receipt",
+      "sha256": "92cab4ebbfc2d528b6ef7f154d25b4396dcdd3a3f3fc5e0825551a2d8c922679",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -372,6 +390,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Actuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T234635.457051Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Actuation",
       "success_pointer": "/status",
       "success_value": "passed"
     }

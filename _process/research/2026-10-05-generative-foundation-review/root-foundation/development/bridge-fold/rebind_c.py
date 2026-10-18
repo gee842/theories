@@ -133,14 +133,14 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     if json.dumps(d, ensure_ascii=False) == before:
         continue
     mods = sorted({module_of[s].split('.', 1)[-1] for s in added})
-    note = ('18 October 2026, F3C, the port of the correction family into the core (Ren: '
+    note = ('19 October 2026, F3C, the port of the correction family into the core (Ren: '
             '"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction '
             'of unification"): the core statements of the cited declarations are added beside them ('
             + ', '.join(mods) + '; verdicts in port-c.md), bound to core receipt ' + RID
             + (', and the canonical source is the core module' if from_canonical else '')
             + '. The periphery and bridge references stay until the sweep retires them. No new result; the claim is '
               'unchanged.')
-    d['history'].append({'en': note, 'zh': '2026年10月18日，F3C 将纠正族移入核心：所引声明旁加上核心陈述（'
+    d['history'].append({'en': note, 'zh': '2026年10月19日，F3C 将纠正族移入核心：所引声明旁加上核心陈述（'
                          + '、'.join(mods) + '），绑定到核心回执；外围与桥接引用保留到清扫退役它们。无新结果，论断不变。'})
     open(f, 'w').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
     summary.append((f.rsplit('/', 1)[-1], {module_of[s]: len(v) for s, v in added.items()}))

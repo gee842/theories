@@ -1,0 +1,6 @@
+'Becoming.MoveOutcomeProcesses.canEnsure_iff' does not depend on any axioms
+'Becoming.MoveOutcomeProcesses.summary_iff' does not depend on any axioms
+'Becoming.MoveOutcomeProcesses.steps_eq' does not depend on any axioms
+'Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

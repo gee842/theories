@@ -199,7 +199,14 @@ ORIGIN = {'Acceptance': 'CorrectionInfrastructure', 'GuardHorizon': 'CorrectionI
           'PooledEnvelopes': 'EvidenceQualifiedCorrection', 'Reconfiguration': 'CorrectionReconfiguration',
           'WitnessRefinement': 'FallibleInspection'}
 
+# Entries that stop being roots once these modules use them: an apart theorem of F3C now uses each, so the
+# measure counts it under F3C's root instead.
+NO_LONGER_ROOTS = ['Becoming.Integers.add_right_cancel',  # used by IntegerOrder.le_antisymm
+                   'Becoming.mass_lt_of_added']  # used by ChanceFloors.repair_adds_new_protection
+
 d = json.loads(APART.read_text())
+for name in NO_LONGER_ROOTS:
+    d['roots'].pop(name, None)
 for name, (category, reason) in ROOTS.items():
     module = name.split('.')[0]
     if module in ORIGIN:

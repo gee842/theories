@@ -1,0 +1,14 @@
+@Becoming.InterfaceTracesInherited.false_iff_not : ∀ {b : Bool}, b = false ↔ ¬b = true
+@Becoming.InterfaceTracesInherited.selected_iff_completes : ∀ {S Q A : Type} (m : AlignmentInquiry.Interface S Q A)
+  (states : List S) (plans : List (AlignmentInquiry.Plan Q A)),
+  (AlignmentInquiry.choose m states plans).isSome = true ↔
+    ∃ p, p ∈ plans ∧ states ≠ [] ∧ ∀ (s : S), s ∈ states → Becoming.InterfaceTraces.Completes m p s
+@Becoming.InterfaceTracesInherited.none_selected_iff : ∀ {S Q A : Type} (m : AlignmentInquiry.Interface S Q A)
+  (states : List S) (plans : List (AlignmentInquiry.Plan Q A)),
+  AlignmentInquiry.choose m states plans = none ↔
+    ∀ (p : AlignmentInquiry.Plan Q A),
+      p ∈ plans → ¬(states ≠ [] ∧ ∀ (s : S), s ∈ states → Becoming.InterfaceTraces.Completes m p s)
+@Becoming.InterfaceTracesInherited.selected_completes : ∀ {S Q A : Type} (m : AlignmentInquiry.Interface S Q A)
+  (states : List S) (plans : List (AlignmentInquiry.Plan Q A)) {p : AlignmentInquiry.Plan Q A},
+  AlignmentInquiry.choose m states plans = some p →
+    states ≠ [] ∧ p ∈ plans ∧ ∀ (s : S), s ∈ states → Becoming.InterfaceTraces.Completes m p s

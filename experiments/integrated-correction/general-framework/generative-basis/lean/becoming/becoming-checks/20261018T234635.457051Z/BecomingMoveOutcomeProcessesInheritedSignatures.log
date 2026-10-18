@@ -1,0 +1,15 @@
+@Becoming.MoveOutcomeProcesses.canEnsure_iff : ∀ {S A : Type} {P : Generative.Process S A} {s : S} {goal : S → Prop},
+  PracticalReach.CanEnsure (fun a o => P.step s a o) goal ↔ Becoming.MoveOutcomeProcesses.Ensures P s goal
+@Becoming.MoveOutcomeProcesses.summary_iff : ∀ {S A T : Type} (f : S → T) (P : Generative.Process S A) (s : S)
+  (goal : T → Prop),
+  PracticalReach.CanEnsure (PracticalReach.Project f fun a o => P.step s a o) goal ↔
+    Becoming.MoveOutcomeProcesses.Ensures P s fun o => goal (f o)
+Becoming.MoveOutcomeProcesses.steps_eq : ∀ (s : Bool),
+  (fun a o => Becoming.MoveOutcomeProcesses.toFalse.step s a o) = PracticalReach.fixed ∧
+    (fun a o => Becoming.MoveOutcomeProcesses.free.step s a o) = PracticalReach.uncontrolled ∧
+      (fun a o => Becoming.MoveOutcomeProcesses.setting.step s a o) = PracticalReach.selectable ∧
+        (fun a o => Becoming.MoveOutcomeProcesses.halted.step s a o) = PracticalReach.absent
+@Becoming.MoveOutcomeProcessesInherited.lost_goal_of_not_covers : ∀ {S A B : Type} {P : Generative.Process S A} {s : S}
+  {Q : Generative.Process S B} {t : S},
+  ¬Becoming.MoveOutcomeProcesses.Covers P s Q t →
+    ∃ goal, Becoming.MoveOutcomeProcesses.Ensures P s goal ∧ ¬Becoming.MoveOutcomeProcesses.Ensures Q t goal

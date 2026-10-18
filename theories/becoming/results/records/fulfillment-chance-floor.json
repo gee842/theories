@@ -23,7 +23,7 @@
     "zh": "配对、时段、覆盖与旧承担有效性需要证据；权重不是伦理重要性。",
     "en": "Coupling, time window, coverage and validity of the undertaking need evidence; weights are not ethical importance."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ChanceFloors.lean",
   "aliases": [
     "ChanceAdequacy.fulfillment_gives_chance_floor",
     "ChanceAdequacy.all_weights_preserve_mass_iff",
@@ -68,6 +68,15 @@
         "ChanceAdequacy.fulfillment_gives_chance_floor",
         "ChanceAdequacy.all_weights_preserve_mass_iff",
         "ChanceAdequacy.positive_chance_can_miss_due_protection"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ChanceFloors.lean",
+      "role": "proof",
+      "sha256": "5a48ce068ad96c40d9e7475fec5dab98533454efc3d7931cbead0d98f86506cd",
+      "declarations": [
+        "Becoming.ChanceFloors.fulfillment_gives_chance_floor",
+        "Becoming.ChanceFloors.positive_chance_can_miss_due_protection"
       ]
     },
     {
@@ -155,6 +164,12 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T234635.457051Z/verification.json",
+      "role": "receipt",
+      "sha256": "92cab4ebbfc2d528b6ef7f154d25b4396dcdd3a3f3fc5e0825551a2d8c922679",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -183,6 +198,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ChanceFloors.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T234635.457051Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ChanceFloors",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T234635.457051Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Weighted",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -230,6 +259,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3C, the port of the correction family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (ChanceFloors, Weighted; verdicts in port-c.md), bound to core receipt 20261018T234635.457051Z, and the canonical source is the core module. The periphery and bridge references stay until the sweep retires them. No new result; the claim is unchanged.",
+      "zh": "2026年10月19日，F3C 将纠正族移入核心：所引声明旁加上核心陈述（ChanceFloors、Weighted），绑定到核心回执；外围与桥接引用保留到清扫退役它们。无新结果，论断不变。"
     }
   ]
 }

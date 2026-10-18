@@ -1,0 +1,54 @@
+@Becoming.ListTests.and_true_iff : ∀ {a b : Bool}, (a && b) = true ↔ a = true ∧ b = true
+@Becoming.ListTests.or_true_iff : ∀ {a b : Bool}, (a || b) = true ↔ a = true ∨ b = true
+@Becoming.ListTests.not_true_iff : ∀ {a : Bool}, (!a) = true ↔ a = false
+@Becoming.ListTests.false_iff_not : ∀ {b : Bool}, b = false ↔ ¬b = true
+@Becoming.ListTests.and_left : ∀ {a b : Bool}, (a && b) = true → a = true
+@Becoming.ListTests.and_right : ∀ {a b : Bool}, (a && b) = true → b = true
+@Becoming.ListTests.decide_true_iff : ∀ {p : Prop} [inst : Decidable p], decide p = true ↔ p
+@Becoming.ListTests.beq_true_iff : ∀ {α : Type u_1} [inst : DecidableEq α] {a b : α}, (a == b) = true ↔ a = b
+@Becoming.ListTests.beq_false_iff : ∀ {α : Type u_1} [inst : DecidableEq α] {a b : α}, (a == b) = false ↔ a ≠ b
+@Becoming.ListTests.mem_cons_iff : ∀ {α : Type u_1} {a b : α} {l : List α}, a ∈ b :: l ↔ a = b ∨ a ∈ l
+@Becoming.ListTests.not_mem_nil : ∀ {α : Type u_1} {a : α}, ¬a ∈ []
+@Becoming.ListTests.mem_singleton_iff : ∀ {α : Type u_1} {a b : α}, a ∈ [b] ↔ a = b
+@Becoming.ListTests.mem_append_iff : ∀ {α : Type u_1} {a : α} {l m : List α}, a ∈ l ++ m ↔ a ∈ l ∨ a ∈ m
+@Becoming.ListTests.all_true_iff : ∀ {α : Type u_1} {p : α → Bool} {l : List α},
+  l.all p = true ↔ ∀ (x : α), x ∈ l → p x = true
+@Becoming.ListTests.any_true_iff : ∀ {α : Type u_1} {p : α → Bool} {l : List α},
+  l.any p = true ↔ ∃ x, x ∈ l ∧ p x = true
+@Becoming.ListTests.all_mem : ∀ {α : Type u_1} {p : α → Bool} {l : List α},
+  l.all p = true → ∀ {x : α}, x ∈ l → p x = true
+@Becoming.ListTests.contains_true_iff : ∀ {α : Type u_1} [inst : DecidableEq α] {a : α} {l : List α},
+  l.contains a = true ↔ a ∈ l
+@Becoming.ListTests.contains_false_iff : ∀ {α : Type u_1} [inst : DecidableEq α] {a : α} {l : List α},
+  l.contains a = false ↔ ¬a ∈ l
+@Becoming.ListTests.isEmpty_false_iff : ∀ {α : Type u_1} {l : List α}, l.isEmpty = false ↔ l ≠ []
+@Becoming.ListTests.not_isEmpty_true_iff : ∀ {α : Type u_1} {l : List α}, (!l.isEmpty) = true ↔ l ≠ []
+@Becoming.ListTests.mem_filter_iff : ∀ {α : Type u_1} {p : α → Bool} {x : α} {l : List α},
+  x ∈ List.filter p l ↔ x ∈ l ∧ p x = true
+@Becoming.ListTests.filter_of_all : ∀ {α : Type u_1} {p : α → Bool} {l : List α},
+  (∀ (x : α), x ∈ l → p x = true) → List.filter p l = l
+@Becoming.ListTests.mem_map_iff : ∀ {α : Type u_1} {β : Type u_2} {f : α → β} {y : β} {l : List α},
+  y ∈ List.map f l ↔ ∃ x, x ∈ l ∧ f x = y
+@Becoming.ListTests.mem_map_of : ∀ {α : Type u_1} {β : Type u_2} {f : α → β} {x : α} {l : List α},
+  x ∈ l → f x ∈ List.map f l
+@Becoming.ListTests.mem_flatten_iff : ∀ {β : Type u_1} {y : β} {ls : List (List β)},
+  y ∈ ls.flatten ↔ ∃ l, l ∈ ls ∧ y ∈ l
+@Becoming.ListTests.mem_flatMap_iff : ∀ {α : Type u_1} {β : Type u_2} {f : α → List β} {y : β} {l : List α},
+  y ∈ List.flatMap f l ↔ ∃ x, x ∈ l ∧ y ∈ f x
+@Becoming.ListTests.length_append : ∀ {α : Type u_1} (l m : List α), (l ++ m).length = l.length + m.length
+@Becoming.ListTests.find_some : ∀ {α : Type u_1} {p : α → Bool} {l : List α} {a : α},
+  List.find? p l = some a → p a = true
+@Becoming.ListTests.mem_of_find_some : ∀ {α : Type u_1} {p : α → Bool} {l : List α} {a : α},
+  List.find? p l = some a → a ∈ l
+@Becoming.ListTests.find_none_iff : ∀ {α : Type u_1} {p : α → Bool} {l : List α},
+  List.find? p l = none ↔ ∀ (x : α), x ∈ l → p x = false
+@Becoming.ListTests.find_isSome_iff : ∀ {α : Type u_1} {p : α → Bool} {l : List α},
+  (List.find? p l).isSome = true ↔ ∃ x, x ∈ l ∧ p x = true
+@Becoming.ListTests.bind_eq_some : ∀ {γ δ : Type} {o : Option γ} {f : γ → Option δ} {b : δ},
+  o >>= f = some b ↔ ∃ a, o = some a ∧ f a = some b
+@Becoming.ListTests.map_eq_some : ∀ {α : Type u_1} {β : Type u_2} {f : α → β} {b : β} {o : Option α},
+  Option.map f o = some b ↔ ∃ a, o = some a ∧ f a = b
+@Becoming.ListTests.option_any_true_iff : ∀ {α : Type u_1} {f : α → Bool} {o : Option α},
+  Option.any f o = true ↔ ∃ a, o = some a ∧ f a = true
+@Becoming.ListTests.isSome_iff : ∀ {α : Type u_1} {o : Option α}, o.isSome = true ↔ ∃ a, o = some a
+@Becoming.ListTests.none_ne_some : ∀ {α : Type u_1} {a : α}, none ≠ some a

@@ -492,11 +492,6 @@
    "category": "logical-strength",
    "reason": "Every list over a type can be listed once exactly where identity on the type is decided: a statement about decided equality only; the world form (World.indiscernible_decided_iff_em) is on the base."
   },
-  "Becoming.mass_lt_of_added": {
-   "module": "Becoming.Weighted",
-   "category": "support",
-   "reason": "a sum over a listed domain rises strictly where an entry of positive weight is added to the event; a list-arithmetic law with no process, run or world"
-  },
   "Becoming.nodup_iff_distinct": {
    "module": "Becoming.Composition",
    "category": "support",
@@ -1592,11 +1587,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed control-target model: the retained branch decodes the response exactly (OperativeCoherence, ported by F3R)"
   },
-  "Becoming.Integers.add_right_cancel": {
-   "module": "Becoming.Integers",
-   "category": "support",
-   "reason": "an arithmetic lemma on `Int` using only the prelude, constructive (Becoming.Integers, F3R)"
-  },
   "Becoming.MatchedCourses.b2_correspondence_involutive": {
    "module": "Becoming.MatchedCourses",
    "category": "model-witness",
@@ -2256,6 +2246,421 @@
    "module": "Becoming.Presentations",
    "category": "model-witness",
    "reason": "a fact about one constructed presentation of pairs of bits: the first bit as code is reduced (ExplanatoryUniqueness, ported by F3E)"
+  },
+  "Becoming.Acceptance.accepting_optimum_can_destroy_access": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed maintenance model (divert or keep the resource, accept or not): with positive diversion and lift the best choice accepts and diverts (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.approximate_score_bound": {
+   "module": "Becoming.Acceptance",
+   "category": "general-structure",
+   "reason": "a law of every integer score on any type of moves: a choice best by an estimate within `err` of the actual score is within `2 * err` of every allowed move (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.approximate_score_bound_tight": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about one constructed estimate on two moves: the `2 * err` bound is attained (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.every_fixed_access_weight_has_counterexample": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed maintenance model (divert or keep the resource, accept or not): every fixed weight for keeping access has a diversion value defeating it (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.every_optimum_has_access_iff": {
+   "module": "Becoming.Acceptance",
+   "category": "general-structure",
+   "reason": "a law of every integer score on any type of moves, with a positive lift for accepting: every best choice keeps access exactly where every best base move does (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.maintenance_weight_exact": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed maintenance model (divert or keep the resource, accept or not): a separate weight keeps access exactly where it exceeds the diversion value (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.no_base_optimal_access": {
+   "module": "Becoming.Acceptance",
+   "category": "general-structure",
+   "reason": "a law of every integer score on any type of moves: where no best base move keeps access, none does (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.recomputed_value_restores_branch": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed two-step model of a branch and a last move: values recomputed within the allowed continuations select the best branch (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.restricted_value_achievable": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed two-step model of a branch and a last move: the restricted value is reached by an allowed last move (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.restricted_value_bounds": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed two-step model of a branch and a last move: the restricted value bounds every allowed continuation (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.stale_value_shield_suboptimal": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed two-step model of a branch and a last move: a value computed without the restriction prefers the branch whose allowed continuations score less (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.unavoidable_score_loss": {
+   "module": "Becoming.Acceptance",
+   "category": "general-structure",
+   "reason": "a law of every integer score on any type of moves: the loss of a restricted best move is nonnegative and least among the allowed moves (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Acceptance.unrestricted_value_optimal": {
+   "module": "Becoming.Acceptance",
+   "category": "model-witness",
+   "reason": "a fact about the constructed two-step model of a branch and a last move: the unrestricted value is the best over every continuation (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.Actuation.draw_none": {
+   "module": "Becoming.Actuation",
+   "category": "support",
+   "reason": "a one-line unpacking of `draw`: a draw beyond the reserve or the deadline fails (a helper of the port, F3C)"
+  },
+  "Becoming.Dispatch.add_three_assoc": {
+   "module": "Becoming.Dispatch",
+   "category": "support",
+   "reason": "an arithmetic lemma: `a + c + 3 = a + (c + 3)` (a helper of the port, F3C)"
+  },
+  "Becoming.TreeSearch.live_single": {
+   "module": "Becoming.TreeSearch",
+   "category": "support",
+   "reason": "a one-line unpacking of `live` on a single entry (a helper of the port, F3C)"
+  },
+  "Becoming.ChanceFloors.fulfillment_gives_chance_floor": {
+   "module": "Becoming.ChanceFloors",
+   "category": "general-structure",
+   "reason": "a law of every finite weighting of any type of entries: pointwise fulfilment of the due protection bounds its mass by the new route's, through the core's `mass_mono` (ChanceAdequacy, ported by F3C)"
+  },
+  "Becoming.ChanceFloors.mass_dirac_pos_iff": {
+   "module": "Becoming.ChanceFloors",
+   "category": "general-structure",
+   "reason": "a law of every listed domain of any type: the weighting counting one entry gives an event positive mass exactly where the entry is listed and the event holds there (the core's `mem_of_mass_dirac_pos` and `mass_dirac_pos` together) (ChanceAdequacy, ported by F3C)"
+  },
+  "Becoming.ChanceFloors.positive_chance_can_miss_due_protection": {
+   "module": "Becoming.ChanceFloors",
+   "category": "model-witness",
+   "reason": "a fact about one constructed domain of two entries: a route of positive chance and the same total success misses exactly the due protection (ChanceAdequacy, ported by F3C)"
+  },
+  "Becoming.ChanceFloors.repair_adds_new_protection": {
+   "module": "Becoming.ChanceFloors",
+   "category": "general-structure",
+   "reason": "a law of every finite weighting of any type of entries: a candidate working at a weighted entry where the protection was not due raises the mass, through the core's `mass_lt_of_added` (ChanceAdequacy, ported by F3C)"
+  },
+  "Becoming.ContingentPlans.branch_congr": {
+   "module": "Becoming.ContingentPlans",
+   "category": "support",
+   "reason": "a one-line unpacking of `branch`: equal answers select the same response (AlignmentInquiry, ported by F3C)"
+  },
+  "Becoming.ContingentPlans.branch_incompatible": {
+   "module": "Becoming.ContingentPlans",
+   "category": "support",
+   "reason": "a one-line unpacking of `branch`: one response cannot meet two incompatible requirements (AlignmentInquiry, ported by F3C)"
+  },
+  "Becoming.ContingentPlans.empty_belief_none": {
+   "module": "Becoming.ContingentPlans",
+   "category": "support",
+   "reason": "a one-line unpacking of `choose`: an empty belief selects no plan (AlignmentInquiry, ported by F3C)"
+  },
+  "Becoming.ContingentPlans.mem_repertoire": {
+   "module": "Becoming.ContingentPlans",
+   "category": "support",
+   "reason": "a one-line unpacking of `repertoire`: a plan of listed queries and responses is in it (AlignmentInquiry, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.availability_iff_separated": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "general-structure",
+   "reason": "a law of every roster of domains and every fault envelope: the certificate is available for every admitted fault set exactly where the envelope is separated (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.correlated_four_separation": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about one constructed envelope: a correlated pair among four domains is separated (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.correlated_three_blocks": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about one constructed envelope: a correlated pair among three domains blocks the certificate (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.covering_faults_reject": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "general-structure",
+   "reason": "a law of every roster of domains and every fault envelope: two admitted fault sets covering the roster reject the support outside the actual one (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.duplicated_roster_same": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "general-structure",
+   "reason": "a law of every roster of domains and every fault envelope: listing the roster twice certifies exactly what it certifies once (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.empty_envelope_rejects": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "general-structure",
+   "reason": "a law of every roster of domains and every fault envelope: an empty envelope certifies nothing (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.one_fault_separation": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about one constructed envelope: one fault among three domains is separated (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.FaultEnvelopes.total_fault_rejects": {
+   "module": "Becoming.FaultEnvelopes",
+   "category": "general-structure",
+   "reason": "a law of every roster of domains and every fault envelope: an envelope admitting the whole roster certifies nothing (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.coverage_transports": {
+   "module": "Becoming.GuardHorizon",
+   "category": "general-structure",
+   "reason": "a law of every catalogue of requirements on any types: coverage transports along a translation retaining the old requirements (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.discriminating_reading_uniform": {
+   "module": "Becoming.GuardHorizon",
+   "category": "model-witness",
+   "reason": "a fact about one constructed reading of two configurations: a reading telling them apart gives a uniform choice (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.empty_requirement_hides_loss": {
+   "module": "Becoming.GuardHorizon",
+   "category": "model-witness",
+   "reason": "a fact about one constructed catalogue: an empty requirement covers vacuously where the full one does not (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.endpoint_access_hides_gap": {
+   "module": "Becoming.GuardHorizon",
+   "category": "model-witness",
+   "reason": "a fact about one constructed route replacement: access at both endpoints with a gap between (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.overlapping_handoff_keeps_access": {
+   "module": "Becoming.GuardHorizon",
+   "category": "model-witness",
+   "reason": "a fact about one constructed overlapping handoff: access at every prefix (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.route_retirement_allowed": {
+   "module": "Becoming.GuardHorizon",
+   "category": "model-witness",
+   "reason": "a fact about one constructed handoff: access kept with the old route retired (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.statewise_not_uniform": {
+   "module": "Becoming.GuardHorizon",
+   "category": "model-witness",
+   "reason": "a fact about one constructed reading that merges two configurations: good moves at each configuration and no uniform choice (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.GuardHorizon.uniform_finer": {
+   "module": "Becoming.GuardHorizon",
+   "category": "general-structure",
+   "reason": "a law of every reading of any type of configurations: a choice uniform on a coarser reading is uniform on every finer one (CorrectionInfrastructure, ported by F3C)"
+  },
+  "Becoming.IntegerOrder.add_lt_add_left": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "an order law of `Int` proved without `propext`, kept with the module's other order laws (F3C's constructive support for the family)"
+  },
+  "Becoming.IntegerOrder.le_iff": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "a one-line unpacking of `≤` on `Int` as a natural difference (F3C's constructive support for the family)"
+  },
+  "Becoming.IntegerOrder.le_of_not_lt": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "an order law of `Int` proved without `propext`, kept with the module's other order laws (F3C's constructive support for the family)"
+  },
+  "Becoming.IntegerOrder.le_total": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "an order law of `Int` proved without `propext`, kept with the module's other order laws (F3C's constructive support for the family)"
+  },
+  "Becoming.IntegerOrder.lt_iff": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "a one-line unpacking of `<` on `Int` as `a + 1 ≤ b` (F3C's constructive support for the family)"
+  },
+  "Becoming.IntegerOrder.lt_of_le_of_lt": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "an order law of `Int` proved without `propext`, kept with the module's other order laws (F3C's constructive support for the family)"
+  },
+  "Becoming.IntegerOrder.nonneg_or_neg": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "a statement using only the prelude: an integer or its negative is natural (F3C's constructive support for the family)"
+  },
+  "Becoming.IntegerOrder.sub_add_cancel": {
+   "module": "Becoming.IntegerOrder",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Int`: `a + -b + b = a` (F3C's constructive support for the family)"
+  },
+  "Becoming.ListTests.all_mem": {
+   "module": "Becoming.ListTests",
+   "category": "support",
+   "reason": "a list lemma proved without `propext`: every member passes a test `all` passes (F3C's constructive support for the family)"
+  },
+  "Becoming.ListTests.filter_of_all": {
+   "module": "Becoming.ListTests",
+   "category": "support",
+   "reason": "a list lemma proved without `propext`: a filter every member passes keeps the list (F3C's constructive support for the family)"
+  },
+  "Becoming.ListTests.length_append": {
+   "module": "Becoming.ListTests",
+   "category": "support",
+   "reason": "a list lemma proved without `propext`: the length of an append is the sum (F3C's constructive support for the family)"
+  },
+  "Becoming.Naturals.add_le_of_le_sub": {
+   "module": "Becoming.Naturals",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
+  },
+  "Becoming.Naturals.add_left_cancel": {
+   "module": "Becoming.Naturals",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
+  },
+  "Becoming.Naturals.add_sub_cancel_left": {
+   "module": "Becoming.Naturals",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
+  },
+  "Becoming.Naturals.ne_of_lt": {
+   "module": "Becoming.Naturals",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
+  },
+  "Becoming.PooledEnvelopes.diagnosis_not_identifying": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about the constructed three causal models of four members: a diagnosis readies the pool without identifying the model (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.PooledEnvelopes.empty_family_rejects": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "general-structure",
+   "reason": "a law of every family of causal models: an empty family certifies nothing (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.PooledEnvelopes.every_candidate_ready_pool_not": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about the constructed three causal models of four members: each is ready, their pool is not (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.PooledEnvelopes.misleading_diagnosis_accepts_compromised": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about the constructed three causal models of four members: a misleading diagnosis accepts only compromised support (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.PooledEnvelopes.pooled_completes": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "general-structure",
+   "reason": "a law of every family of causal models, test and installation: a separated pool after a faithful test completes a guarded transaction; its process reading is the inquiry's `certificate_kept` and `chosen_plan_completes` (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.PooledEnvelopes.short_or_closed_no_plan": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about the constructed three causal models of four members: with too little reserve or inspection closed no listed plan is uniform (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.PooledEnvelopes.survivors_insufficient_before_diagnosis": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about the constructed three causal models of four members: the survivors of the actual faults do not certify over the pool (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.PooledEnvelopes.unobserved_change_invalidates": {
+   "module": "Becoming.PooledEnvelopes",
+   "category": "model-witness",
+   "reason": "a fact about the constructed three causal models of four members: an unobserved change invalidates learned coverage (EvidenceQualifiedCorrection, ported by F3C)"
+  },
+  "Becoming.Reconfiguration.envelopes_compute": {
+   "module": "Becoming.Reconfiguration",
+   "category": "model-witness",
+   "reason": "a fact about the constructed separate, merged and repaired arrangements: their induced envelopes (CorrectionReconfiguration, ported by F3C)"
+  },
+  "Becoming.Reconfiguration.induced_certificate_sound": {
+   "module": "Becoming.Reconfiguration",
+   "category": "general-structure",
+   "reason": "a law of every arrangement of failure formulas over root causes: a certificate over the induced envelope is sound for covered causes (CorrectionReconfiguration, ported by F3C)"
+  },
+  "Becoming.Reconfiguration.induced_mono": {
+   "module": "Becoming.Reconfiguration",
+   "category": "general-structure",
+   "reason": "a law of every arrangement of failure formulas: the induced faults are monotone in the causes (CorrectionReconfiguration, ported by F3C)"
+  },
+  "Becoming.Reconfiguration.omitted_cause_breaks": {
+   "module": "Becoming.Reconfiguration",
+   "category": "model-witness",
+   "reason": "a fact about one constructed arrangement: ready, yet a cause its formulas omit fails every member (CorrectionReconfiguration, ported by F3C)"
+  },
+  "Becoming.Reconfiguration.readiness_cases": {
+   "module": "Becoming.Reconfiguration",
+   "category": "model-witness",
+   "reason": "a fact about the constructed arrangements: which are ready (CorrectionReconfiguration, ported by F3C)"
+  },
+  "Becoming.Reconfiguration.same_cause_not_redundant": {
+   "module": "Becoming.Reconfiguration",
+   "category": "model-witness",
+   "reason": "a fact about constructed failure formulas: two members of one cause fail together (CorrectionReconfiguration, ported by F3C)"
+  },
+  "Becoming.Reconfiguration.stale_envelope_accepts_shared": {
+   "module": "Becoming.Reconfiguration",
+   "category": "model-witness",
+   "reason": "a fact about the constructed arrangements: a stale envelope accepts support a shared cause controls (CorrectionReconfiguration, ported by F3C)"
+  },
+  "Becoming.Transactions.consumed_rejected": {
+   "module": "Becoming.Transactions",
+   "category": "model-witness",
+   "reason": "a fact about one constructed transaction: the consumed request fails the gate; its process reading is `consumed_no_trace` on the monitor (FaultTolerantCorrection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.absent_fifth_keeps_uncertainty": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "model-witness",
+   "reason": "a fact about the constructed audit (four or five witnesses of a structural question): without the fifth report every model stays (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.complete_diagnosability_iff_cross_separation": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "general-structure",
+   "reason": "a law of every roster of witnesses, fault envelopes and reports: on complete transcripts opposite answers are told apart exactly where the envelopes are cross-separated, the core's `Readout.no_common_report_envelopes_iff` read on these reports (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.conflicting_models_self_certify": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "model-witness",
+   "reason": "a fact about the constructed audit (four or five witnesses of a structural question): conflicting models each certify themselves (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.covering_faults_same_transcript": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "general-structure",
+   "reason": "a law of every roster of witnesses, fault envelopes and reports: fault sets covering the roster admit one complete transcript for both answers (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.cross_separation_excludes": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "general-structure",
+   "reason": "a law of every roster of witnesses, fault envelopes and reports: cross-separated envelopes exclude opposite explanations of a complete transcript (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.duplicated_fifth_no_repair": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "model-witness",
+   "reason": "a fact about the constructed audit (four or five witnesses of a structural question): duplicating the fifth witness's support repairs nothing (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.fifth_witness_fallible": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "model-witness",
+   "reason": "a fact about the constructed audit (four or five witnesses of a structural question): the fifth witness alone may be faulty (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.fifth_witness_resolves": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "model-witness",
+   "reason": "a fact about the constructed audit (four or five witnesses of a structural question): a fifth witness resolves the distinction (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.four_witnesses_inseparable": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "model-witness",
+   "reason": "a fact about the constructed audit (four or five witnesses of a structural question): four witnesses cannot separate the split transcript (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.responsive_survivors_exclude": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "general-structure",
+   "reason": "a law of every roster of witnesses, fault envelopes and reports: responsive survivors outside every alternative fault set exclude the opposite answer (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.silence_keeps_models": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "general-structure",
+   "reason": "a law of every roster of witnesses, fault envelopes and reports: silence keeps every model with a fault set (FallibleInspection, ported by F3C)"
+  },
+  "Becoming.WitnessRefinement.uncovered_correlation_deletes_actual": {
+   "module": "Becoming.WitnessRefinement",
+   "category": "model-witness",
+   "reason": "a fact about the constructed audit (four or five witnesses of a structural question): an uncovered correlated failure deletes the actual model (FallibleInspection, ported by F3C)"
   }
  }
 }
