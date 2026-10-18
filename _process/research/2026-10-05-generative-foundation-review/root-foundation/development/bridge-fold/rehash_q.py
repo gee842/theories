@@ -19,6 +19,7 @@ WHAT = {
     'check_becoming.py': 'F3Q added its six new core modules to the core list',
     'becoming-verification.json': 'the current receipt is the core run with F3Q\'s six modules',
     'THE-THEORY-OF-BECOMING-REFERENCE.md': 'F3Q added the reference-table rows of its six new core modules',
+    'THEOREM-CONNECTIVITY-APART.json': 'F3Q registered the 32 apart roots of its six new core modules',
 }
 
 
