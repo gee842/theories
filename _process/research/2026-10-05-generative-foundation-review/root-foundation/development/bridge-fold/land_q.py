@@ -34,11 +34,46 @@ MODULES = {
                        'read by no exact reading and the signal with a reference is (`signal_no_exact`, '
                        '`paired_exact`); on runs, an extrapolation rests on the feature from a step exactly where it '
                        'reads the prefix exactly from then on (`Runs.exact_iff_restsFrom`)'),
+    'CodeAcquisition': ('L4', 'PartialReadout', 'PartialReadout', 39,
+                        'acquiring a two-primitive code from probe records (supplied code, probes and stock): the '
+                        'probe records give the code exactly and so every expression (`acquired_exact`, '
+                        '`acquired_every_expression`), while the primitive probes alone are lumped and read by no '
+                        'exact reading (`primitives_not_lumped`, `primitives_no_exact`); training draws on stock and '
+                        'installs the code, which answers a novel expression (`training_installs`, '
+                        '`novel_execution`); training is a process (`trainProcess`, `step_code_transfers`)'),
+    'RouteFormation': ('L4', 'CodeAcquisition', 'CodeAcquisition', 70,
+                       'forming a route that executes an acquired code (supplied parts, grammar of routes and '
+                       'search): the code alone supplies no route (`interpretation_no_route`); a wrong route is '
+                       'built, tried and replaced, and the formed route answers a novel expression '
+                       '(`wrong_route_replaced`, `formed_answers_novel`), with every move keeping stock plus drawn '
+                       '(`course_stock`); old records can admit a wrong route that only a new record separates, and '
+                       'repair needs a fresh record and parts (`old_records_admit_duplicate`, '
+                       '`fresh_record_rebuilds`, `discrepancy_no_parts`); the moves form one process '
+                       '(`formationProcess`, `trace_iff`)'),
+    'ResponseLearning': ('L4', 'RouteFormation', 'RouteFormation', 64,
+                         'forming an operation from another formation\'s actual responses (supplied programs, '
+                         'lessons and stock): a lesson keeps the pair\'s stock plus drawn and the receiver sees only '
+                         'responses (`lesson_stock`, `learn_through_interface`); the program is reconstructed and '
+                         'kept in every generation (`reconstructs_program`, `every_generation_holds`), and so is a '
+                         'lost distinction, whatever the stock (`distinction_lost_every_generation`, '
+                         '`stock_keeps_content`); succession is a law whose runs pass through the generations '
+                         '(`run_generation`)'),
+    'LearnedGrouping': ('L4', 'ResponseLearning', 'ResponseLearning', 41,
+                        'received transitions form the grouping through which a formed operation reads an utterance '
+                        '(supplied sounds, decoder and encounters): grouping recovers the words of every two-word '
+                        'sequence exactly when six bond values hold (`two_word_iff`), which the supplied context\'s '
+                        'majority bonds give (`context_groups_words`), so the utterance parses and the formed '
+                        'operation answers it (`grouping_reaches_program`); a course with the same counts in another '
+                        'order does not (`order_not_frequency`); reception is a process (`reception`, `total_kept`)'),
 }
-IMPORT_NOTES = {
-    '; within L3,': '; `Derivation` imports `Inquiry`',
-    '). L1–L3 contain': '; `PartialReadout` imports `Readout` and `LearnableRuns`',
-}
+IMPORT_NOTES = [
+    ('; within L3,', '; `Derivation` imports `Inquiry`'),
+    ('). L1–L3 contain', '; `PartialReadout` imports `Readout` and `LearnableRuns`'),
+    ('). L1–L3 contain', '; `CodeAcquisition` imports `PartialReadout` and `Assurance`'),
+    ('). L1–L3 contain', '; `RouteFormation` imports `CodeAcquisition` and `ReducedRuns`'),
+    ('). L1–L3 contain', '; `ResponseLearning` imports `RouteFormation` and `Branching`'),
+    ('). L1–L3 contain', '; `LearnedGrouping` imports `RouteFormation` and `Segmentation`'),
+]
 
 
 def after_entry(lines, start, is_entry):
@@ -94,7 +129,7 @@ def main(selected):
         i = next(k for k, l in enumerate(lines) if re.match(rf'^\| L\d \| \[`Becoming\.{anchor}`\]', l))
         lines.insert(i + 1, f'| {layer} | [`Becoming.{m}`](Becoming/{m}.lean) | {text} |')
     text = '\n'.join(lines)
-    for at, note in IMPORT_NOTES.items():
+    for at, note in IMPORT_NOTES:
         if not any(note.startswith(f'; `{m}`') for m in selected):
             continue
         if note not in text:
