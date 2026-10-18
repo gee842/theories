@@ -38,3 +38,11 @@ Everything below is the assistant's, not Ren's.
 - **Cautions the assistant gave.** Directed dependence, a part not holding the whole, and real losses of distinction are differentiations within the one unfolding and must be kept, not flattened. Ren's 11 October choice of 识 for "registers" ([source](2026-10-11-wisdom-from-registration.md)) is closer to dependent differentiation than the English word, but 识 is also the 分别 that the 无明 line diagnoses, so it may fit the level of cognition rather than the structural primitive; Ren's words are provenance, and this is a judgment to be made on the work.
 - **Scope of the authorization.** The study decomposes and proposes; it renames nothing (no Lean name, record, chapter text or module), adds no Lean and no result ID. Any adoption is a later decision.
 - **Precedents.** This continues Ren's earlier naming questions: decidability "too dualist" ([11 October](2026-10-11-decidability-local-imbalance-relatum.md)), "is this dualistic?" of the core's starting point ([12 October](2026-10-12-relational-starting-point.md)), IdealWarrant "a terrible dualist name" ([16 October](2026-10-16-joined-module-names.md)), and the naming rules of [10 October](2026-10-10-zero-axiom-part-and-names.md).
+
+## Ren's go to continue (18 October 2026)
+
+After N2 landed (`a072eed9d`) and the assistant reported it, Ren wrote:
+
+> going to sleep - currently i have no problem of heading to your direction. I think you also sees it, good job, please continue, I will check on you when i wake up
+
+The assistant's reading, which Ren may correct: a go to continue the N1/N2 line in the direction the study sets, with the earlier constraint "still no renames" not lifted in words. So the session continues with additive work: the positive half of the threshold grain (N3), and the migration prepared as a reviewable package, with nothing renamed until Ren decides.
