@@ -4,7 +4,7 @@ A guide for visitors: what this repository is, where to begin, how its history i
 
 ## What this is
 
-The working repository of the Theory of Becoming: an account of how anything comes to be, lasts, changes and passes away within one relational unfolding, and of what follows for ethics and for AI alignment. It is developed together by Ren and AI. Claude and Codex sessions, often several at once, draft, prove, review and keep the records; Ren sets the direction, decides the readings of his own terms and writes in his own voice.
+The working repository of the Theory of Becoming: an account of how anything comes to be, lasts, changes and passes away within one relational unfolding, and of what follows for ethics and for AI alignment. It is developed together by Ren and AI. AI sessions, often several at once, draft, prove, review and keep the records; Ren sets the direction, decides the readings of his own terms and writes in his own voice.
 
 Three kinds of statement are kept apart throughout:
 
