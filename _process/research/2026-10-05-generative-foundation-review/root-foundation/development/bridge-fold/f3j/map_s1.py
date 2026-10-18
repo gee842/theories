@@ -4,7 +4,7 @@ MAP = {
  # GenerativeComparison
  'GenerativeComparison.Inventory': [B+'Frame'], 'GenerativeComparison.G0': [B+'G0'],
  'GenerativeComparison.GenerativeExtension': [B+'Extension'], 'GenerativeComparison.ComparisonPrinciple': [B+'Comparison'],
- 'GenerativeComparison.Situation': [B+'Alternatives'], 'GenerativeComparison.PracticalArticulation': [B+'Articulation'],
+ 'GenerativeComparison.Situation': [B+'Alternatives'], 'GenerativeComparison.PracticalArticulation': [B+'Alternatives.Articulation'],
  'GenerativeComparison.new_realization_has_positive_relevance': [B+'G0.new_realization'],
  'GenerativeComparison.generative_extension_irreflexive': [B+'Extension.irrefl'],
  'GenerativeComparison.generative_extension_transitive': [B+'Extension.trans'],
