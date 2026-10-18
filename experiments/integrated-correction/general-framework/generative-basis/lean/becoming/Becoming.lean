@@ -113,6 +113,21 @@ import Becoming.SummaryFutures
 import Becoming.Gated
 import Becoming.Viability
 import Becoming.Keeping
+import Becoming.ListTests
+import Becoming.Naturals
+import Becoming.ContingentPlans
+import Becoming.Actuation
+import Becoming.TreeSearch
+import Becoming.Dispatch
+import Becoming.FaultEnvelopes
+import Becoming.Transactions
+import Becoming.Reconfiguration
+import Becoming.PooledEnvelopes
+import Becoming.WitnessRefinement
+import Becoming.ChanceFloors
+import Becoming.IntegerOrder
+import Becoming.Acceptance
+import Becoming.GuardHorizon
 import Becoming.Countdown
 import Becoming.Lasting
 import Becoming.Copying
@@ -1280,6 +1295,83 @@ readings of the unfolding (`Becoming.Labelled`).
   horizon. Two parts' plans run together keep both guards where joint steps project onto the
   parts and the joint moves are usable throughout, and every joint plan that keeps a guard has
   them usable.
+* `Becoming.ListTests` (L2): Boolean tests over lists and options (no premise): `all`, `any`,
+  `contains`, `filter`, `find?`, `bind` and `map` say what they test (`all_true_iff`,
+  `any_true_iff`, `find_none_iff`, `bind_eq_some`), proved by recursion where the prelude uses
+  `propext`.
+* `Becoming.Naturals` (L2): the subtraction and order laws of drawn amounts (no premise):
+  cancellation, `sub_sub`, `le_sub_of_add_le` and the bounds of a sum, proved by recursion where
+  the prelude uses `propext`.
+* `Becoming.ContingentPlans` (L3): contingent plans, probe then respond by the answer (no
+  premise): a plan's run is a trace of the interface's process (`run_iff_trace`,
+  `passes_iff_completes`); a plan is selected for a listed belief exactly where a listed plan
+  completes from every configuration of it (`selected_iff_completes`), an empty belief certifies
+  none, and equal answers select the same response (`branch_congr`, `branch_incompatible`).
+* `Becoming.Actuation` (L3): issue, delivery and enactment of a command as moves of one
+  installation (no premise): what each move needs (`issue_stale`, `enact_revoked`), the reserve
+  and what is drawn conserved along every trace (`conserved_trace`), the protocol's exact effects
+  (`protocol_exact`), and a timely inquiry keeping correction possible where an equally accurate
+  slow one does not (`timely_run`, `late_probe_no_run`).
+* `Becoming.TreeSearch` (L3): a finite search of a route tree read as the run of a determined law
+  (no premise): what is found is there (`discover_sound`), exhausted is absence within the
+  frontier (`exhausted_dead`), enough fuel finds an inhabited tree (`inhabited_discovered`), and
+  step `n` of every run reads as the scan with fuel `n` (`run_reads_scan`).
+* `Becoming.Dispatch` (L3): a found route re-read in the current installation before it is acted
+  on (no premise): dispatch fails without the route or the epoch (`dispatch_absent`,
+  `dispatch_revoked`), a search followed by its dispatch completes and draws both
+  (`acquired_execution`, `discovery_then_dispatch`), and a capture accepted as the current epoch
+  passes the gate (`captured_epoch_passes`).
+* `Becoming.FaultEnvelopes` (L3): what a certificate over a roster of domains warrants under
+  supplied fault envelopes (no premise): soundness for every admitted fault set
+  (`certificate_sound`), availability exactly where the envelope is separated
+  (`availability_iff_separated`), and no warrant from duplication, an empty envelope or a stronger
+  one (`duplicated_roster_same`, `stronger_envelope_no_new_acceptance`).
+* `Becoming.Transactions` (L3): a gate of certified readings and approvals, and the monitor
+  process it makes (no premise): an open gate finds the route and keeps the scope (`gate_route`,
+  `gate_within_scope`), a transaction has exact effects and blocks its replay (`execute_exact`,
+  `replay_no_trace`), the scope guard refuses a forbidden command whatever the issuers
+  (`guard_blocks_forbidden`), and correlated faults outside the model can admit one
+  (`single_fault_model_admits_forbidden`).
+* `Becoming.Reconfiguration` (L3): fault envelopes induced by root causes, and the step that
+  installs a new roster (no premise): readiness is a nonempty separated induced envelope
+  (`ready_iff_nonempty_separated`); the step renews epoch and serial, keeps the scope and stales
+  old requests (`step_renews`, `step_keeps_scope`, `step_stales_old_epoch`); two members of one
+  cause are not redundant (`same_cause_not_redundant`), and a cause the formulas omit still breaks
+  the model.
+* `Becoming.PooledEnvelopes` (L3): certificates over the pooled envelopes of several causal
+  models, and the inquiry process that narrows them (no premise): the actual model survives
+  faithful tests and a certificate over the pool is sound (`pooled_certificate_sound`); each model
+  can be ready while the pool is not (`every_candidate_ready_pool_not`); along every run the
+  actual model stays a candidate (`actual_kept`), and an equally accurate slower inspection misses
+  the deadline (`slow_misses_deadline`).
+* `Becoming.WitnessRefinement` (L4): a structural question read jointly with its fallible
+  witnesses (no premise): refinement keeps the actual model (`refine_keeps_actual`); on complete
+  transcripts opposite answers are always told apart exactly where the envelopes are
+  cross-separated (`complete_diagnosability_iff_cross_separation`, through
+  `Readout.no_common_report_envelopes_iff`); a fifth witness resolves what four cannot and stays
+  fallible, and the audit is a process whose runs only narrow the candidates.
+* `Becoming.ChanceFloors` (L3): what pointwise fulfilment of a due protection gives under a finite
+  law of chance (no premise): a chance floor (`fulfillment_gives_chance_floor`, through
+  `mass_mono`), repair as an event that raises the mass (`repair_adds_new_protection`), and a
+  route of positive chance missing exactly the due protection
+  (`positive_chance_can_miss_due_protection`).
+* `Becoming.IntegerOrder` (L2): the order laws of `Int` without `propext` (no premise): through
+  the ring laws of `Becoming.Integers`, every order law reduces to a sum of naturals being natural
+  and an integer or its negative being natural; comparison is decided by cases (`lt_or_le`),
+  without excluded middle.
+* `Becoming.Acceptance` (L3): an accept bit given priority over a base score, and what it does not
+  protect (no premise): with a positive lift a choice is best exactly where it accepts and its
+  move is best by the base score (`acceptance_factorization`), so acceptance restores no access
+  the base optimum lacks; diverting the resource that keeps correction possible can be best
+  (`accepting_optimum_can_destroy_access`), and a value computed without the restriction can
+  prefer the wrong branch (`stale_value_shield_suboptimal`).
+* `Becoming.GuardHorizon` (L3): keeping a guard by a choice of moves, over a horizon, from
+  readings (choice over the readings named where used): the controlled reading of `Viability`
+  (`viable_succ_iff`, `certificate_viable`, `kernel_viable`); Bellman values bound every course
+  kept within the guard (`bellman_bounds_safe`); a choice uniform on readings exists exactly where
+  each reading has one good move, the converse with `Viability.ChoiceOver`
+  (`uniform_policy_iff_fiber_feasible`); endpoint access can hide a gap that an overlapping
+  handoff closes (`endpoint_access_hides_gap`, `overlapping_handoff_keeps_access`).
 * `Becoming.Countdown` (L2): counted work, kept properties of admitted courses and a reserved
   exit, with no premise. An admitted course keeps a property exactly when every admitted step
   does; work done one unit per tick for one unit of fuel finishes in `work + 1` ticks exactly
