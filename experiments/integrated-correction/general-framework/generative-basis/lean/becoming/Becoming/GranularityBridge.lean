@@ -1,14 +1,13 @@
 import Becoming.Granularity
 import Becoming.Bridge
-import ExplanatoryResiduals
+import ExplanatoryGuardedPrograms
 import ExplanatoryGranularityBoundary
 
 /-!
 # The granularity studies as instances of `Becoming.Granularity`
 
-The peripheral studies of granularity (`ExplanatoryGranularity`, `ExplanatoryGuardedPrograms`,
-`ExplanatoryResiduals`, `ExplanatoryGranularityBoundary` and `ExplanatoryResumptionCases`) read
-here in the core. A model of `ExplanatoryBranching` is a frame (`Frame.ofModel`) and its tests are
+The peripheral studies of granularity (`ExplanatoryGranularity`, `ExplanatoryGuardedPrograms`
+and `ExplanatoryGranularityBoundary`) read here in the core. A model of `ExplanatoryBranching` is a frame (`Frame.ofModel`) and its tests are
 the core's branching tests (`BranchingTest.toTest`, `BranchingTest.ofTest`), as `Becoming.Bridge`
 shows. Every declaration of this module has an empty axiom report.
 
@@ -30,12 +29,10 @@ tests are decided it is exact (`diamond_correct_of_decided`). With `em` named, `
 `finite_program_endpoints` and `guarded_history_matches` hold as stated; `word_program_exact`,
 `execution_has_native_trace`, `branch_executes` and `guard_hoisting_sound` need nothing.
 
-**What remains.** The periphery's advances and the core's correspond one to one
-(`Recipe.advance_ofProgram`, `Recipe.Advance.toProgram`), so a cut is a partial course leaving the
-same program (`cut_iff_leaves`): `cut_resume`, `execution_iff_completed_cut` and
-`resumption_after_inserted_history` hold as stated, and `partial_history_matches` with `em` named.
-`same_preserves_resumption` needs no premise: the periphery reads each continuation question as one
-test, classically, while the core reads it as finitely many (`SameBranchingTests.leads_iff`).
+**What remains.** What a program carried out part of the way leaves is stated in the core, with
+no periphery reading (`Recipe.Leaves`, `Recipe.leads_iff_leaves`, `SameBranchingTests.leads_iff`,
+`Recipe.Leaves.same_of_em` in `Becoming.Granularity`). `ExplanatoryResiduals`, which stated it in
+the periphery, is superseded (F3, 18 October 2026), and its readings left this module with it.
 
 **The witnesses.** `ExplanatoryGranularityBoundary.unfolding` is defined by a match with an
 overlapping wildcard case, and its compiled definition uses `propext`, so no statement mentioning
@@ -484,102 +481,5 @@ theorem diamond_correct_iff_em :
       ((exact ⟨F.P, F.realized⟩ r.toProgram φ.toTest s).trans
         (Recipe.exists_leads_ofProgram r.toProgram φ.toTest s).symm),
    fun em m => diamond_correct_of_em em m⟩
-
-/-! ## What remains -/
-
-section Remaining
-
-variable {S : Type u} {T : Type u} {A O : Type v}
-
-/-- **An advance of the periphery is an advance of the core.** -/
-theorem Recipe.advance_ofProgram {m : ExplanatoryBranching.Model S A O}
-    {c d : ExplanatoryGuardedPrograms.Program A O × S} (h : ExplanatoryResiduals.Advance m c d) :
-    Recipe.Advance (Frame.ofModel m) (Recipe.ofProgram c.1) c.2 (Recipe.ofProgram d.1) d.2 := by
-  induction h with
-  | action step => exact .move step
-  | guard holds => exact .guard ((BranchingTest.holds_ofTest _ _).mpr holds)
-  | seqSkip q s => exact .seqSkip _ s
-  | seq _ ih => exact .seq ih
-  | left p q s => exact .left _ _ s
-  | right p q s => exact .right _ _ s
-
-/-- **An advance of the core is an advance of the periphery.** -/
-theorem Recipe.Advance.toProgram {m : ExplanatoryBranching.Model S A O} {r r' : Recipe A O}
-    {s t : S} (h : Recipe.Advance (Frame.ofModel m) r s r' t) :
-    ExplanatoryResiduals.Advance m (r.toProgram, s) (r'.toProgram, t) := by
-  induction h with
-  | move step => exact .action step
-  | guard holds => exact .guard ((BranchingTest.holds_toTest _ _).mp holds)
-  | seqSkip q s => exact .seqSkip _ s
-  | seq _ ih => exact .seq ih
-  | left p q s => exact .left _ _ s
-  | right p q s => exact .right _ _ s
-
-/-- **A cut of the periphery is a partial course of the core leaving the same program.** -/
-theorem cut_iff_leaves {m : ExplanatoryBranching.Model S A O}
-    {p r : ExplanatoryGuardedPrograms.Program A O} {s t : S} :
-    ExplanatoryResiduals.Cut m p s r t ↔
-      Recipe.Leaves (Frame.ofModel m) (Recipe.ofProgram p) s (Recipe.ofProgram r) t :=
-  ⟨fun ⟨schedule, path⟩ => ⟨schedule, trace_map (Q := Recipe.unfolding (Frame.ofModel m))
-      (f := fun c : ExplanatoryGuardedPrograms.Program A O × S => (Recipe.ofProgram c.1, c.2))
-      (fun _ _ _ advance => Recipe.advance_ofProgram advance) path⟩,
-   fun ⟨schedule, path⟩ =>
-    have mapped := trace_map (Q := ExplanatoryResiduals.unfolding m)
-      (f := fun c : Recipe A O × S => (Recipe.toProgram c.1, c.2))
-      (fun _ _ _ advance => Recipe.Advance.toProgram advance) path
-    ⟨schedule, Eq.subst (motive := fun x => Trace (ExplanatoryResiduals.unfolding m) (p, s) schedule (x, t))
-      (Recipe.toProgram_ofProgram r)
-      (Eq.subst (motive := fun x => Trace (ExplanatoryResiduals.unfolding m) (x, s) schedule
-          ((Recipe.ofProgram r).toProgram, t))
-        (Recipe.toProgram_ofProgram p) mapped)⟩⟩
-
-/-- **`cut_resume` is `Recipe.Leaves.resume`.** -/
-theorem cut_resume_by_core {m : ExplanatoryBranching.Model S A O}
-    {p r : ExplanatoryGuardedPrograms.Program A O} {s t finish : S}
-    (h : ExplanatoryResiduals.Cut m p s r t) (tail : ExplanatoryGuardedPrograms.Executes m r t finish) :
-    ExplanatoryGuardedPrograms.Executes m p s finish :=
-  (Recipe.leads_ofProgram m p).mp ((cut_iff_leaves.mp h).resume ((Recipe.leads_ofProgram m r).mpr tail))
-
-/-- **`execution_iff_completed_cut` is `Recipe.leads_iff_leaves`.** -/
-theorem execution_iff_completed_cut_by_core (m : ExplanatoryBranching.Model S A O)
-    (p : ExplanatoryGuardedPrograms.Program A O) (s t : S) :
-    ExplanatoryGuardedPrograms.Executes m p s t ↔ ExplanatoryResiduals.Cut m p s .skip t :=
-  (Recipe.leads_ofProgram m p).symm.trans
-    ((Recipe.leads_iff_leaves (Frame.ofModel m) _ s t).trans (cut_iff_leaves (r := .skip)).symm)
-
-/-- **`same_preserves_resumption` with no premise** (`SameBranchingTests.leads_iff`): the core reads
-each continuation question as finitely many tests, not as one test read classically. -/
-theorem same_preserves_resumption_by_core {m : ExplanatoryBranching.Model S A O} {s t : S}
-    (same : ExplanatoryBranching.Same m m s t) (r : ExplanatoryGuardedPrograms.Program A O)
-    (q : ExplanatoryBranching.Test A O) :
-    (∃ finish, ExplanatoryGuardedPrograms.Executes m r s finish ∧
-        ExplanatoryBranching.Holds m finish q) ↔
-      ∃ finish, ExplanatoryGuardedPrograms.Executes m r t finish ∧
-        ExplanatoryBranching.Holds m finish q :=
-  (Recipe.exists_leads_ofProgram r q s).symm.trans
-    ((SameBranchingTests.leads_iff (sameBranchingTests_iff_same.mpr same) (Recipe.ofProgram r)
-        (BranchingTest.ofTest q)).trans (Recipe.exists_leads_ofProgram r q t))
-
-/-- **`partial_history_matches` is `Recipe.Leaves.same_of_em`**, with excluded middle named. -/
-theorem partial_history_matches_of_em (em : ∀ p : Prop, Decided p)
-    {m : ExplanatoryBranching.Model S A O} {n : ExplanatoryBranching.Model T A O}
-    (hn : ExplanatoryBranching.ImageFinite n) {p r : ExplanatoryGuardedPrograms.Program A O}
-    {s s' : S} {t : T} (h : ExplanatoryResiduals.Cut m p s r s')
-    (same : ExplanatoryBranching.Same m n s t) :
-    ∃ t', ExplanatoryResiduals.Cut n p t r t' ∧ ExplanatoryBranching.Same m n s' t' :=
-  match Recipe.Leaves.same_of_em em (G := Frame.ofModel n) hn (cut_iff_leaves.mp h) (sameBranchingTests_iff_same.mpr same) with
-  | ⟨t', leaves, joined⟩ => ⟨t', cut_iff_leaves.mpr leaves, sameBranchingTests_iff_same.mp joined⟩
-
-/-- **`resumption_after_inserted_history` is `Recipe.Leaves.inserted`.** -/
-theorem resumption_after_inserted_history_by_core {m : ExplanatoryBranching.Model S A O}
-    {p r : ExplanatoryGuardedPrograms.Program A O} {s reached current finish : S}
-    {inserted : List A} (cut : ExplanatoryResiduals.Cut m p s r reached)
-    (change : Trace m.process reached inserted current)
-    (resume : ExplanatoryGuardedPrograms.Executes m r current finish) :
-    ∃ first last, Trace m.process s first reached ∧ Trace m.process current last finish ∧
-      Trace m.process s (first ++ inserted ++ last) finish :=
-  (cut_iff_leaves.mp cut).inserted change ((Recipe.leads_ofProgram m r).mpr resume)
-
-end Remaining
 
 end Becoming

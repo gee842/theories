@@ -108,6 +108,7 @@ Aliases: `what a pool's acts respond to`, `一组的动作回应什么`, `the ga
 ### History
 
 - 18 October 2026: added (M3), on Ren's "what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?" and "please make your own pareto frontier decisions, and push the frontier", the AI choosing the item; study section 184.
+- 19 October 2026, F3 sweep step 1 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts and connectivity follow the sweep run, and its list of checks names the superseded register). The claim is unchanged.
 
 </details>
 

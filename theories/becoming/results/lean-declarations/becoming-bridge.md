@@ -519,60 +519,52 @@ Imports: `Becoming.Frame`, `ContinuationConditions`
 <a id="module-5a2cd7a614ce"></a>
 
 <details>
-<summary>GranularityBridge.lean — 41 explicit declarations</summary>
+<summary>GranularityBridge.lean — 33 explicit declarations</summary>
 
 [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean`
 
-Imports: `Becoming.Granularity`, `Becoming.Bridge`, `ExplanatoryResiduals`, `ExplanatoryGranularityBoundary`
+Imports: `Becoming.Granularity`, `Becoming.Bridge`, `ExplanatoryGuardedPrograms`, `ExplanatoryGranularityBoundary`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.blocks_ofModel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L63) | 63 |
-| [Becoming.encode_eq_flatMap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L68) | 68 |
-| [Becoming.BranchingTest.holds_ofTest](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L74) | 74 |
-| [Becoming.BranchingTest.toTest_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L83) | 83 |
-| [Becoming.BranchingTest.toTest_finer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L91) | 91 |
-| [Becoming.BranchingTest.holds_finer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L105) | 105 |
-| [Becoming.compile_correct_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L114) | 114 |
-| [Becoming.blocks_trace_iff_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L126) | 126 |
-| [Becoming.finite_trace_endpoints_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L135) | 135 |
-| [Becoming.blocks_image_finite_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L141) | 141 |
-| [Becoming.answers_finer_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L147) | 147 |
-| [Becoming.cross_granularity_history_matches_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L164) | 164 |
-| [Becoming.singleton_coverage_recovers_questions_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L184) | 184 |
-| [Becoming.full_and_block_reduced_kernels_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L193) | 193 |
-| [Becoming.Recipe.toProgram_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L233) | 233 |
-| [Becoming.Recipe.ofProgram_toProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L244) | 244 |
-| [Becoming.Recipe.leads_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L254) | 254 |
-| [Becoming.Recipe.toTest_after](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L277) | 277 |
-| [Becoming.Recipe.holds_after_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L293) | 293 |
-| [Becoming.Recipe.exists_leads_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L306) | 306 |
-| [Becoming.diamond_correct_of_decided](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L317) | 317 |
-| [Becoming.diamond_correct_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L326) | 326 |
-| [Becoming.program_compile_correct_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L333) | 333 |
-| [Becoming.Recipe.ofProgram_wordProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L359) | 359 |
-| [Becoming.word_program_exact_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L366) | 366 |
-| [Becoming.execution_has_native_trace_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L375) | 375 |
-| [Becoming.finite_program_endpoints_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L381) | 381 |
-| [Becoming.guarded_history_matches_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L390) | 390 |
-| [Becoming.branch_executes_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L426) | 426 |
-| [Becoming.guard_hoisting_sound_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L450) | 450 |
-| [Becoming.diamond_correct_iff_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L474) | 474 |
-| [Becoming.Recipe.advance_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L495) | 495 |
-| [Becoming.Recipe.Advance.toProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L507) | 507 |
-| [Becoming.cut_iff_leaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L519) | 519 |
-| [Becoming.cut_resume_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L537) | 537 |
-| [Becoming.execution_iff_completed_cut_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L544) | 544 |
-| [Becoming.same_preserves_resumption_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L552) | 552 |
-| [Becoming.partial_history_matches_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L564) | 564 |
-| [Becoming.resumption_after_inserted_history_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L574) | 574 |
+| [Becoming.blocks_ofModel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L60) | 60 |
+| [Becoming.encode_eq_flatMap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L65) | 65 |
+| [Becoming.BranchingTest.holds_ofTest](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L71) | 71 |
+| [Becoming.BranchingTest.toTest_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L80) | 80 |
+| [Becoming.BranchingTest.toTest_finer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L88) | 88 |
+| [Becoming.BranchingTest.holds_finer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L102) | 102 |
+| [Becoming.compile_correct_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L111) | 111 |
+| [Becoming.blocks_trace_iff_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L123) | 123 |
+| [Becoming.finite_trace_endpoints_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L132) | 132 |
+| [Becoming.blocks_image_finite_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L138) | 138 |
+| [Becoming.answers_finer_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L144) | 144 |
+| [Becoming.cross_granularity_history_matches_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L161) | 161 |
+| [Becoming.singleton_coverage_recovers_questions_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L181) | 181 |
+| [Becoming.full_and_block_reduced_kernels_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L190) | 190 |
+| [Becoming.Recipe.toProgram_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L230) | 230 |
+| [Becoming.Recipe.ofProgram_toProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L241) | 241 |
+| [Becoming.Recipe.leads_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L251) | 251 |
+| [Becoming.Recipe.toTest_after](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L274) | 274 |
+| [Becoming.Recipe.holds_after_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L290) | 290 |
+| [Becoming.Recipe.exists_leads_ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L303) | 303 |
+| [Becoming.diamond_correct_of_decided](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L314) | 314 |
+| [Becoming.diamond_correct_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L323) | 323 |
+| [Becoming.program_compile_correct_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L330) | 330 |
+| [Becoming.Recipe.ofProgram_wordProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L356) | 356 |
+| [Becoming.word_program_exact_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L363) | 363 |
+| [Becoming.execution_has_native_trace_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L372) | 372 |
+| [Becoming.finite_program_endpoints_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L378) | 378 |
+| [Becoming.guarded_history_matches_of_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L387) | 387 |
+| [Becoming.branch_executes_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L423) | 423 |
+| [Becoming.guard_hoisting_sound_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L447) | 447 |
+| [Becoming.diamond_correct_iff_em](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L471) | 471 |
 
 Definitions and types:
 
-- `def` [Becoming.Recipe.ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L217) (L217)
-- `def` [Becoming.Recipe.toProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L225) (L225)
+- `def` [Becoming.Recipe.ofProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L214) (L214)
+- `def` [Becoming.Recipe.toProgram](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean#L222) (L222)
 
 </details>
 

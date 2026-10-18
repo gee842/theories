@@ -13,7 +13,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
 | [Becoming pure core](lean-declarations/becoming-core.md) | 195 | 7,880 |
-| [Becoming bridge](lean-declarations/becoming-bridge.md) | 38 | 567 |
+| [Becoming bridge](lean-declarations/becoming-bridge.md) | 38 | 559 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 71 | 1,864 |

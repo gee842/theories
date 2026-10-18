@@ -35,6 +35,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold, step 3 (Ren: \"please do all\"): the restatement audit of step 0 (development/bridge-fold/RESTATEMENT-AUDIT.md) found ExplanatoryResiduals fully restated by Becoming.Granularity, and its importer ExplanatoryResumptionCases an earlier version whose witnesses Becoming.Midway restates. The canonical source is now the core module; both periphery files keep their path and bytes and stay cited as the earlier statement. The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠第 3 步（Ren：“please do all”）：第 0 步的重述审计（development/bridge-fold/RESTATEMENT-AUDIT.md）查明 ExplanatoryResiduals 已由 Becoming.Granularity 完整重述，导入它的 ExplanatoryResumptionCases 是较早版本，其见证由 Becoming.Midway 重述。规范来源改为核心模块；两个外围文件保留路径与字节，仍作为较早的陈述被引用。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3, the periphery port's sweep (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): ExplanatoryResiduals is registered as superseded and leaves the Becoming run; the eight readings of it in GranularityBridge (Recipe.advance_ofProgram, Recipe.Advance.toProgram, cut_iff_leaves and five restatements) left with it, so the reference to GranularityBridge is dropped and the alias same_preserves_resumption_by_core is replaced by the core law it read, SameBranchingTests.leads_iff. Both periphery files keep their path and bytes, and their receipts stay bound. The claim is unchanged.",
+      "zh": "2026年10月18日，F3 外围移植的清扫：ExplanatoryResiduals 登记为已被取代，离开 Becoming 运行；GranularityBridge 中对它的八条读法随之移除，因此删去对 GranularityBridge 的引用，别名 same_preserves_resumption_by_core 换成它所读的核心定律 SameBranchingTests.leads_iff。两个外围文件保留路径与字节，其收据仍然绑定。论断不变。"
     }
   ],
   "validation_scope": {
@@ -52,7 +56,7 @@
     "Generative.ExplanatoryResiduals.execution_iff_completed_cut",
     "Generative.ExplanatoryResumptionCases.exact_paused_accounts_retain_remaining_program",
     "Becoming.Recipe.leads_iff_leaves",
-    "Becoming.same_preserves_resumption_by_core",
+    "Becoming.SameBranchingTests.leads_iff",
     "Becoming.Midway.remainder_codes_apart"
   ],
   "claim": {
@@ -216,6 +220,7 @@
         "Becoming.Recipe.Leaves.inserted",
         "Becoming.Recipe.Leaves.alike",
         "Becoming.Recipe.Leaves.same_of_em",
+        "Becoming.SameBranchingTests.leads_iff",
         "Becoming.Recipe.Resumes.codes_apart",
         "Becoming.Midway.testing_before_formation_changes_results",
         "Becoming.Midway.same_start_distinct_remainders",
@@ -223,21 +228,6 @@
         "Becoming.Midway.remainder_codes_apart",
         "Becoming.Midway.inserted_can_disable_resumption",
         "Becoming.Midway.inserted_changes_tests"
-      ]
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean",
-      "role": "proof",
-      "sha256": "8c805b15a718c04fb407a5a7f5956a64114c7b1957d4eafc89bd49c377b32ae1",
-      "declarations": [
-        "Becoming.Recipe.advance_ofProgram",
-        "Becoming.Recipe.Advance.toProgram",
-        "Becoming.cut_iff_leaves",
-        "Becoming.cut_resume_by_core",
-        "Becoming.execution_iff_completed_cut_by_core",
-        "Becoming.same_preserves_resumption_by_core",
-        "Becoming.partial_history_matches_of_em",
-        "Becoming.resumption_after_inserted_history_by_core"
       ]
     },
     {

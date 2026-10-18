@@ -463,7 +463,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "4b2204c94382bdb6cebf0b55a4299d330d861a033dc93d5522945f53d2ab4933"
+      "sha256": "1d540f698048f1ae2d00b2e31e7b9607a418e5df960af36c604156544b86eb5d"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -489,6 +489,10 @@
     {
       "en": "18 October 2026: added (M3), on Ren's \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\", the AI choosing the item; study section 184.",
       "zh": "2026年10月18日：新增（M3），按 Ren 的\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"与\"please make your own pareto frontier decisions, and push the frontier\"，此项由 AI 选定；研究第 184 节。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 1 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts and connectivity follow the sweep run, and its list of checks names the superseded register). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 1：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

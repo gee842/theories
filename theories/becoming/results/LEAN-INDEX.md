@@ -19,17 +19,17 @@ Warrant of ethical premises, valid inference, recognition, motivation and implem
 <a id="覆盖范围--coverage"></a>
 ## Coverage
 
-The inventory contains **1,692 `.lean` paths and 1,217 distinct byte contents**, including 202 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
+The inventory contains **1,642 `.lean` paths and 1,216 distinct byte contents**, including 165 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
 
 | File role | Paths |
 |---|---:|
 | Audit driver | 13 |
-| Development attempt | 825 |
+| Development attempt | 775 |
 | Historical draft | 3 |
 | Imported archive | 23 |
 | Working source | 828 |
 
-The working-source and audit entries contain **19,835 explicit theorem/lemma occurrences** and 29,813 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
+The working-source and audit entries contain **19,827 explicit theorem/lemma occurrences** and 29,805 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
 
 Hidden, ignored and untracked files are included; `.git`, `.lake`, `node_modules`, `.venv`, `venv`, `__pycache__` and other sessions' worktrees (`.claude/worktrees`) are excluded, and directory symlinks are not followed. Archives and attempts remain in the JSON inventory without repeating them in the main table; saved copies in run, check, snapshot and history folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.
 
@@ -283,7 +283,7 @@ Conceptual entry: [THE-THEORY-OF-BECOMING §9](../chapters/THE-THEORY-OF-BECOMIN
 | [ExtendedClaimFrames](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExtendedClaimFrames.lean) · [Names](lean-declarations/becoming-bridge.md#module-0a85ef74779f) | 9 | 2 | [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |
 | [ExtensionFrames](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExtensionFrames.lean) · [Names](lean-declarations/becoming-bridge.md#module-4b2922da63bd) | 3 | 0 | [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |
 | [FeasibleProfileTraces](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FeasibleProfileTraces.lean) · [Names](lean-declarations/becoming-bridge.md#module-72cfdb75b51c) | 7 | 0 | [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |
-| [GranularityBridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean) · [Names](lean-declarations/becoming-bridge.md#module-5a2cd7a614ce) | 39 | 2 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |
+| [GranularityBridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean) · [Names](lean-declarations/becoming-bridge.md#module-5a2cd7a614ce) | 31 | 2 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |
 | [GuardHorizonProcesses](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GuardHorizonProcesses.lean) · [Names](lean-declarations/becoming-bridge.md#module-f714e627896c) | 14 | 3 | [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |
 | [InstallationTraces](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InstallationTraces.lean) · [Names](lean-declarations/becoming-bridge.md#module-4cf8a0d7126a) | 24 | 4 | [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |
 | [Instances](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean) · [Names](lean-declarations/becoming-bridge.md#module-fc3ddc0ea6af) | 22 | 3 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: bridge layer, bytes as checked |

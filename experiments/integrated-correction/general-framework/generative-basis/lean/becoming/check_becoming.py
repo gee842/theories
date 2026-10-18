@@ -17,6 +17,9 @@ The bridge imports existing modules to show that their interfaces are the core's
 nothing in the core imports it, and its declarations also have empty axiom reports. The
 constants of the bridge modules themselves are audited the same way (their imports may use
 axioms; only the bridge's own constants count): empty, apart from generated `injEq` on `propext`.
+Superseded periphery modules (`SUPERSEDED`, since F3) are modules whose every theorem the core states:
+they keep their bytes, stay out of the run, and the receipt records each one's sha256 and the core
+modules stating it.
 Periphery joins (`PERIPHERY_JOINS`, since U2) state periphery theorems' laws of the base through
 periphery roots whose own reports are not empty; nothing in the core or the bridge imports them, and
 each of their declarations may carry only the axioms it inherits (propext, Quot.sound,
@@ -117,6 +120,13 @@ PERIPHERY_JOINS = [
     "Becoming.ReachableFramesInherited", "Becoming.ContextArrivalTracesInherited",
     "Becoming.RuleRevisionTracesInherited", "Becoming.SupportGatedWebsInherited"]
 CHECKED = SPINE + PERIPHERY_JOINS
+# Superseded periphery modules (F3, 18 October 2026): modules whose every theorem the core states.
+# Each keeps its path and bytes, so earlier receipts stay re-checkable and files outside the run that
+# import it still compile; it is out of this run: nothing compiled here imports it, which the run
+# asserts. Each maps to the core modules that state its content (its records' canonical source).
+SUPERSEDED = {
+    "ExplanatoryResiduals": ["Becoming.Granularity"],
+}
 PURE = FOUNDATION + CORE
 RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
@@ -2281,6 +2291,16 @@ def main():
     steps = receipt["lean_steps"] = {"cache": str(CACHE), "fresh": FRESH, "ran": [], "reused": {}, "keys": {}}
     try:
         assert sorted(core_closure) == sorted(PURE), ("core imports outside the core", core_closure)
+        # A superseded module stays out of the run, and the core modules said to state it are core.
+        assert not set(SUPERSEDED) & set(order), ("superseded module in the run", sorted(set(SUPERSEDED) & set(order)))
+        for name, stated_by in SUPERSEDED.items():
+            assert len(index.get(name, [])) == 1, ("superseded module not found once", name)
+            assert stated_by and all(m in CORE for m in stated_by), ("superseded module not stated by the core", name, stated_by)
+        receipt["superseded_modules"] = {
+            name: {"source_path": str(index[name][0].relative_to(LEAN_ROOT)),
+                   "source_sha256": audit_support.digest(index[name][0].read_bytes()),
+                   "stated_by": stated_by}
+            for name, stated_by in SUPERSEDED.items()}
         inherited = [name for name in order if name not in CHECKED]
         # A record of history, not a check: inherited modules are compiled and audited below.
         # A receipt counts where it maps the module to its current bytes and has passed.
@@ -2485,6 +2505,7 @@ def main():
         "not_audited_by_name": {name: len(v["private"]) + len(v["unnamed_instance_lines"])
                                 for name, v in receipt.get("not_audited_by_name", {}).items()},
         "inherited_modules": sum(r["layer"] == "inherited" for r in records),
+        "superseded_modules": len(SUPERSEDED),
         "periphery_join_theorems": {r["module"]: r["theorems"] for r in records if r["layer"] == "periphery join"},
         "periphery_join_axioms": sorted({a for r in records if r["layer"] == "periphery join"
                                          for aa in r["axiom_dependencies"].values() for a in aa}),

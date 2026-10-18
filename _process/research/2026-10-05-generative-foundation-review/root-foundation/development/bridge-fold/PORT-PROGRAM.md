@@ -11,7 +11,7 @@ None of the 75 imports Mathlib; each compiles from the prelude, the foundation a
 ## 2. End state
 
 - **One live vocabulary.** Every theorem of the 75 modules is either a core theorem (cited, where the core already states it) or stated in a core module under the core's names. Every core axiom report stays empty. Where a periphery proof was classical, the core proof is constructive, or it names the principle it needs as a hypothesis (excluded middle, LPO, WLPO). A calibration is recorded as a result only where its record says what the need means for the unfolding (AGENTS.md, "Proof and naming").
-- **Periphery out of the run.** Each of the 75 is marked superseded in place. It keeps its path and bytes (board rule 8), so old receipts stay re-checkable and Lean files outside the run that import it still compile. It leaves the Becoming compile order, and its records take the core module as `canonical_source`.
+- **Periphery out of the run.** Each of the 75 is marked superseded in place. It keeps its path and bytes (board rule 8), so old receipts stay re-checkable and Lean files outside the run that import it still compile. It leaves the Becoming compile order, and its records take the core module as `canonical_source`. An importer outside the run does not keep a module in the run; this revises the clause "that nothing live imports" of the fold study's decisions 2 and 4, with the agreement of F1's owner (18 October). The checker's `SUPERSEDED` register lists each retired module with the core modules that state it, and the run fails if a registered module comes back into its compile order.
 - **No bridge or join modules.** A bridge or join declaration that reads only superseded modules has no live use. It leaves the package. A file emptied this way moves to `history/` with `research.py move`. A declaration removed from a file that stays is listed in the sweep's record, with the commit that removed it.
 - **The foundation stays.** `GenerativeCore`, `InquirySufficiency` and `RelationalRenewal` are in the core closure already. Whether the root moves to `World` is board item W (re-root study), not F3.
 - **Measure.** The chapter §9 count row reports periphery modules in the run, bridge modules and join modules; F3 is done when all three are 0, apart from the foundation. The connectivity measure must not lose a connection: a ported theorem connects through the core law it instantiates.
@@ -44,12 +44,24 @@ The joins go with the module they read: a pure join or `…Inherited` join whose
 7. **A module is ported when** every one of its theorems is graded *same* or *step* against the core, including your new modules. List the verdict per theorem in your family's file `development/bridge-fold/port-<family>.md`, in the step-0 audit's format. Report to the sweep owner when a module is ported; the sweep takes it out of the run.
 8. **Land in pieces.** Land through the queue a sub-chain at a time (a few modules), rebased on main, with the dry run, the checkers and `research-render`, `research-check`, `research-links`, `research-test`. Commit only your paths with `git commit -m … -- <paths>`. Work in your own worktree.
 
+### Notes for the families
+
+- **F3C, `EvidenceQualifiedCorrection` and its joins.** Board item U2c (session "Check U2's two possibly vacuous trace laws") gives `empty_candidates_trace_fails` and `slow_trace_misses_deadline` in `Becoming.ProbeRunsInherited` a first conjunct stating that their trace exists (`Trace inquiry s [some q, none] (final s q)`, by `trace_of_final_ne`), so neither law holds only because no trace exists. The port states both cases with that conjunct (study §167, "The two trace laws, checked"; D43, "The joins").
+
+- **All families, W1's imports.** W1 (re-root, study §180) adds `Becoming.World`, `Becoming.Labelled` and `Becoming.LabelledRoles` and changes no statement or full name; `Renewal` drops `import Becoming.Frame` and `Dissipation` drops `import Becoming.Horizon`. After W1, a new module using `Conditions.along`, `Dependence.along`, `Web.conditions_along`, the Crossing/Pinned/Renewable runs, `withMove`/`Shown`/`Frame.world`/`Alike`/`Bisimulation` or `Web.active_along`/`bearing`/`coextinct` imports `Becoming.Labelled` (or `LabelledRoles`), unless it already reaches `Unfolding`, `Horizon`, `Joint`, `Metaethics` or `Correspondence`; one that relied on `Dissipation` for `Horizon` imports `Becoming.Horizon`. Whoever lands second adds the lines. W2 reclassifies the families' new modules after they land.
+
 ## 5. The sweep (session "Too many bridges")
 
 After F1 lands, and then after each family landing:
 - **Retirement mechanism.** `check_becoming.py` gets a register of superseded periphery modules, each with its core canonical modules. The checker refuses a register entry that is still imported by a module in the run, and leaves registered modules out of the compile order; their receipts are kept.
 - **Per ported module.** It is added to the register and removed from the run, its kind-1, kind-3 and join declarations that read only registered modules are removed, its emptied files move to `history/`, the apart register is updated, and the connectivity measure is rerun.
 - **At the end.** The `BRIDGE` and `PERIPHERY_JOINS` lists are empty or gone, the chapter §9 row reports the final counts, and the fold study gets a closing section written by its owner or, with the owner's agreement, by the sweep.
+
+### Sweep log
+
+| Step | Module retired | Stated by | Declarations removed | Commit |
+|---|---|---|---|---|
+| 1 | `ExplanatoryResiduals` (fully restated, step-0 audit) | `Becoming.Granularity` | `GranularityBridge`: `Recipe.advance_ofProgram`, `Recipe.Advance.toProgram`, `cut_iff_leaves`, `cut_resume_by_core`, `execution_iff_completed_cut_by_core`, `same_preserves_resumption_by_core`, `partial_history_matches_of_em`, `resumption_after_inserted_history_by_core` (8 theorems) | this landing |
 
 ## 6. What this does not claim
 
