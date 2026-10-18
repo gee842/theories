@@ -10,17 +10,17 @@
   "family": "F11",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "识、理、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的已检查规律及形成路线，对每个学习者与保留相同内容的每个表示成立（核心中不用公理）：这是目标 wisdom-root 的形式支撑。",
-    "en": "The checked laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold of every learner and representation keeping the same content, axiom-free in the core: the formal support of wisdom-root."
+    "zh": "耦合与识（一个形成经其耦合所成之归并的历程）、理、检验、学习与推广、经耦合的选择与训练、够、失控、判断与元层次的已检查规律及形成路线，对每个外推与保留相同内容的每个表示成立（核心中不用公理）：这是目标 wisdom-root 的形式支撑。",
+    "en": "The checked laws of coupling and 识 (a formation's course through the lumping its couplings make), 理, testing, learning and generalization, selection and training through the couplings, enough, runaway, judgment and the meta level, and the routes of formation hold of every extrapolation and representation keeping the same content, axiom-free in the core: the formal support of wisdom-root."
   },
   "claim": {
-    "en": "Each law below is stated for every formation, learner, lumping, selection or determined law, with no axiom in the core (the periphery learning-bridge theorems use only Lean's standard axioms) and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within the scope of the theory without axiom).",
-    "zh": "下列每条规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，核心中不用公理（外围学习桥接的定理只用 Lean 的标准公理），其条件写在定理中，所以保留相同内容的任何表示都避不开它。连同形成的形式路线，它们是目标 wisdom-root 的形式支撑（无公理的理论所及的普遍规律与形成路线）。"
+    "en": "Each law below is stated for every formation, extrapolation, lumping, selection or determined law, with no axiom in the core (the periphery learning-bridge theorems use only Lean's standard axioms) and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within the scope of the theory without axiom).",
+    "zh": "下列每条规律都对每个形成、每个外推、每个归并、每个选择或每个确定的律陈述，核心中不用公理（外围学习桥接的定理只用 Lean 的标准公理），其条件写在定理中，所以保留相同内容的任何表示都避不开它。连同形成的形式路线，它们是目标 wisdom-root 的形式支撑（无公理的理论所及的普遍规律与形成路线）。"
   },
   "laws": [
     {
-      "en": "Registration: a claim is refuted only through a registered difference, and no record fixes the next value.",
-      "zh": "识：主张只经所识的差别被否证，无记录固定下一个。",
+      "en": "Coupling: a claim is excluded only through a difference in what couples in, and no prefix fixes the next value.",
+      "zh": "耦合：主张只经耦合入者的差别被排除，无前段固定下一个值。",
       "declarations": [
         "Becoming.Web.Excludes.not_of_alike",
         "Becoming.Web.tail_unexcluded",
@@ -39,8 +39,8 @@
       ]
     },
     {
-      "en": "Testing: refutation relative to a model refutes the model and the claim together; the record fixes an act's outcome only where taken; replication is return; one occasion stands for its class under the model.",
-      "zh": "检验：相对于模型的否证是对模型与主张一起的否证，记录只在取过之处固定动作的结果，重复是返回，一次场合代表经模型相同的类。",
+      "en": "Testing: exclusion relative to a model excludes the model and the claim together; the record fixes an act's outcome only where taken; replication is return; one occasion stands for its class under the model.",
+      "zh": "检验：相对于模型的排除是对模型与主张一起的排除，记录只在取过之处固定动作的结果，重复是返回，一次场合代表经模型相同的类。",
       "declarations": [
         "Becoming.Web.excludesWithin_iff_conjunction",
         "Becoming.Run.not_fixes_of_untaken",
@@ -49,8 +49,8 @@
       ]
     },
     {
-      "en": "Learning: in a world held by a list, learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest; every learner has an open course refuting each of its claims.",
-      "zh": "学习：被列表所持的世界中按否证学习的否证有界、静止不能被否证、其记录从不表明它已静止；每个学习者都有否证它每个主张的开放的序列。",
+      "en": "Learning: in a world held by a list, extrapolation by elimination misses a bounded number of times, its coming to rest is unrefuted and its prefix never shows that it has come to rest; every extrapolation has an open course on which each value it proposes misses.",
+      "zh": "学习：被列表所持的世界中逐除外推的不合有界、静止不能被否证、其前段从不表明它已静止；每个外推都有一个开放的历程，使它提出的每个值都不合。",
       "declarations": [
         "Becoming.Learning.held_byElimination_bounded",
         "Becoming.Learning.held_rest_unrefuted",
@@ -60,8 +60,8 @@
       ]
     },
     {
-      "en": "明 (others' registration): what the clearer cannot test the dweller can, and together they test what neither can alone; selection through registration is blind beyond the registration closure, and pooled registration selects what it misses.",
-      "zh": "明（他者之识）：清除者不能检验的栖居者能，合起来能检验各自都不能的；经识的选择在识闭包之外不见，合起来的识选出它。",
+      "en": "明 (others' couplings): what the clearer cannot test the dweller can, and together they test what neither can alone; selection through the couplings is blind beyond the coupling closure, and pooled couplings select what it misses.",
+      "zh": "明（他者的耦合）：清除者不能检验的栖居者能，合起来能检验各自都不能的；经耦合的选择在耦合闭包之外不见，合起来的耦合选出它。",
       "declarations": [
         "Becoming.Clearing.tested_by_dweller",
         "Becoming.Clearing.pooled",
@@ -79,16 +79,16 @@
       ]
     },
     {
-      "en": "Runaway: before the break, how far it is does not register, while observing the stock registers it.",
-      "zh": "失控：断裂之前断裂还有多远不被识，观察储量则识之。",
+      "en": "Runaway: before the break, how far it is does not couple in, while coupling the stock in by level passes it.",
+      "zh": "失控：断裂之前断裂还有多远不耦合入，储量经水平耦合入则传递它。",
       "declarations": [
         "Becoming.Web.break_not_bounded",
         "Becoming.Web.observed_raise_couples"
       ]
     },
     {
-      "en": "Proxies: selection and training go only through the selector's registration or the data; values beyond the data stay as free as the class leaves them; reaching beyond the registration closure to raise what registers is selected.",
-      "zh": "代理：选择与训练只经选择者之识或数据，数据之外的值与类同样自由，伸出识闭包之外而抬高所识者被选中。",
+      "en": "Proxies: selection and training go only through the selector's couplings or the data; values beyond the data stay as free as the class leaves them; reaching beyond the coupling closure to raise what couples in is selected.",
+      "zh": "代理：选择与训练只经选择者的耦合或数据，数据之外的值与类同样自由，伸出耦合闭包之外而抬高耦合入者被选中。",
       "declarations": [
         "Becoming.Web.selects_alike_iff",
         "Becoming.Learning.Training.loss_through",
@@ -97,8 +97,8 @@
       ]
     },
     {
-      "en": "Judgment: a judgment from registration is exactly a common response of the judging process over the belief.",
-      "zh": "判断：由识作出的判断恰是判断过程在信念上的共同回应。",
+      "en": "Judgment: a judgment made through the couplings is exactly a common response of the judging process over the class alike through them.",
+      "zh": "判断：经耦合作出的判断恰是判断过程在经其耦合无别之类上的共同回应。",
       "declarations": [
         "Becoming.commonResponse_judge_iff",
         "Becoming.Web.class_judge_iff"
@@ -114,8 +114,8 @@
       ]
     },
     {
-      "en": "The formal routes of formation: learning by refutation forms a model from the record; the acquisition chain forms an interpretation of every expression from three encounters; Hebbian development and the route of updating are laws on the joint configuration; the responsive route learns where the task fails.",
-      "zh": "形成的形式路线：按否证学习从记录形成模型，习得链从三次接触形成对全部表达式的解释，Hebb 式发展与更新路线是联合配置上的律，回应路线在失败处学习。",
+      "en": "The formal routes of formation: extrapolation by elimination forms a model from the prefix; the acquisition chain forms an interpretation of every expression from three encounters; Hebbian development and the route of updating are laws on the joint configuration; the responsive route learns where the task fails.",
+      "zh": "形成的形式路线：逐除外推从前段形成模型，习得链从三次接触形成对全部表达式的解释，Hebb 式发展与更新路线是联合配置上的律，回应路线在失败处学习。",
       "declarations": [
         "Becoming.LearningCorrespondence.uniform_determines",
         "Becoming.LearningCorrespondence.hebbian_activity_law_iff",
@@ -130,8 +130,8 @@
       "en": "No premise is added; the core uses no axiom, and the periphery learning bridge (LearningCorrespondence's hebbian_activity_law_iff, updating_network_law_iff and responsive_learns) uses propext, Quot.sound and Classical.choice; each law's conditions stay in its theorems (balance only where used, the rest of the exchange fixed, decided values, a world held by a list and so on), as in the respective records."
     },
     {
-      "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余依 Ren 的交托采用；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
-      "en": "Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, adopted on Ren's delegation (理 is Ren's); 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model."
+      "zh": "把规律对到智慧的各面（耦合与识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余依 Ren 的交托采用；“明”在这里只指看见耦合入自身者之外要他者的耦合，不取其全部古典含义；“对每个表示成立”指每个外推都受这些规律约束，不指有智慧者显式持有一个模型。",
+      "en": "Matching the laws to aspects of wisdom (coupling and 识, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, adopted on Ren's delegation (理 is Ren's); 明 here means only that seeing beyond what couples into oneself needs another's couplings, not its whole classical sense; “holding of every representation” means every extrapolation is bound by these laws, not that the wise hold an explicit model."
     },
     {
       "zh": "“对每个表示成立”保持各定理的类型与条件。应用于智慧须另说明判断内容、根据、范围、强度及 E；不表示所有智慧活动都具有每个模块的功能或必须继续修改。",
@@ -152,21 +152,21 @@
       "id": "testing-within-registration",
       "relation": "interpretive",
       "detail": {
-        "zh": "识、否证与他者之识（明）的规律。",
-        "en": "The laws of registration, refutation and others' registration (明)."
+        "zh": "耦合、排除与他者的耦合（明）的规律。",
+        "en": "The laws of coupling, exclusion and others' couplings (明)."
       },
       "interface": {
         "output": {
-          "zh": "主张只经所识的差别被否证；检验是关系的；由识作出的判断是信念上的共同回应。",
-          "en": "A claim is refuted only through a registered difference; testing is relational; a judgment from registration is a common response over belief."
+          "zh": "主张只经耦合入者的差别被排除；检验是关系的；经耦合作出的判断是经其耦合无别之类上的共同回应。",
+          "en": "A claim is excluded only through a difference in what couples in; testing is relational; a judgment made through the couplings is a common response over the class alike through them."
         },
         "input": {
-          "zh": "智慧的识、检验、明与判断各面。",
-          "en": "The registration, testing, 明 and judgment aspects of wisdom."
+          "zh": "智慧的耦合、检验、明与判断各面。",
+          "en": "The coupling, testing, 明 and judgment aspects of wisdom."
         },
         "conditions": {
-          "zh": "平衡只在被识的条件上逐步假设；回应的假设是给出的。",
-          "en": "Balance assumed only on the conditions registered, step by step; response hypotheses supplied."
+          "zh": "平衡只在耦合入的条件上逐步假设；回应的假设是给出的。",
+          "en": "Balance assumed only on the conditions coupled in, step by step; response hypotheses supplied."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
       }
@@ -180,8 +180,8 @@
       },
       "interface": {
         "output": {
-          "zh": "无记录固定下一个；对角；按否证学习的否证有界、静止不能被否证；合并枚举。",
-          "en": "No record fixes the next value; the diagonal; learning by refutation bounded, its rest unrefuted; the merged enumeration."
+          "zh": "无前段固定下一个值；对角；逐除外推的不合有界、静止不能被否证；合并枚举。",
+          "en": "No prefix fixes the next value; the diagonal; extrapolation by elimination's misses bounded, its rest unrefuted; the merged enumeration."
         },
         "input": {
           "zh": "智慧的学习与元层次两面；持续展开。",
@@ -272,16 +272,16 @@
       },
       "interface": {
         "output": {
-          "zh": "断裂还有多远不被自身之识识；观察储量则识之。",
-          "en": "How far the break is does not register through one's own registration; observing the stock registers it."
+          "zh": "断裂还有多远不经自身的耦合耦合入；储量经水平耦合入则传递它。",
+          "en": "How far the break is does not couple in through one's own couplings; coupling the stock in by level passes it."
         },
         "input": {
           "zh": "智慧的不失控一面。",
           "en": "The no-runaway aspect of wisdom."
         },
         "conditions": {
-          "zh": "经识的策略，其余固定。",
-          "en": "A policy through registration, the rest fixed."
+          "zh": "经耦合的策略，其余交换固定。",
+          "en": "A policy through the couplings, the rest of the exchange fixed."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean"
       }
@@ -290,13 +290,13 @@
       "id": "selection-through-registration",
       "relation": "interpretive",
       "detail": {
-        "zh": "经识的选择与代理的规律。",
-        "en": "The laws of selection through registration and of proxies."
+        "zh": "经耦合的选择与代理的规律。",
+        "en": "The laws of selection through the couplings and of proxies."
       },
       "interface": {
         "output": {
-          "zh": "经识的选择恰及选择者所识；在识闭包之外不见；合起来的识选出缺口中的终结。",
-          "en": "Selection through registration reaches exactly what the selector registers; blind beyond the registration closure; pooled registration selects the ending in the gap."
+          "zh": "经耦合的选择恰及耦合入选择者的；在耦合闭包之外不见；合起来的耦合选出缺口中的终结。",
+          "en": "Selection through the couplings reaches exactly what couples into the selector; blind beyond the coupling closure; pooled couplings select the ending in the gap."
         },
         "input": {
           "zh": "智慧的明与代理两面。",
@@ -336,8 +336,8 @@
       "id": "identification-where-bounded",
       "relation": "interpretive",
       "detail": {
-        "zh": "有界识别说明为何无普遍完成的学习者不等于实际学习永不收束；用于必要性范围核对。",
-        "en": "Bounded identification distinguishes the absence of a universally completed learner from perpetual non-convergence in actual learning; used to check necessity scope."
+        "zh": "有界辨识说明为何没有普遍完成的外推不等于实际学习永不收束；用于必要性范围核对。",
+        "en": "Bounded identification distinguishes the absence of a universally completed extrapolation from perpetual non-convergence in actual learning; used to check necessity scope."
       }
     }
   ],
@@ -385,8 +385,8 @@
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#necessity-through-judgment-content"
     },
     {
-      "en": "Bounded stable correctness: where the orbit is held by a list of length N, the learner by refutation claims and is right at every step from a step computed from N, which the learner does not have.",
-      "zh": "有界稳定正确：轨道被长 N 的列表所持时，按否证学习者从由 N 算出的一步起每步主张且正确；这一步是学习者所没有的 N 的函数。",
+      "en": "Bounded stable correctness: where the orbit is held by a list of length N, extrapolation by elimination proposes and is right at every step from a step computed from N, which the extrapolation does not have.",
+      "zh": "有界稳定正确：轨道被长 N 的列表所持时，逐除外推从由 N 算出的一步起每步提出且正确；这一步是外推所没有的 N 的函数。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#97-辨识有界的记录确定什么p83"
     }
   ],
@@ -402,8 +402,8 @@
       "kind": "correspondence"
     },
     {
-      "en": "A refuting course for each learner is not perpetual revision in every actual world: bounded identification excludes a universal perpetual-revision reading.",
-      "zh": "每个学习者有一个反驳历程，不是每个实际世界要求永久修订：有界识别排除永久修订的普遍读法。",
+      "en": "A course on which each value an extrapolation proposes misses is not perpetual revision in every actual world: bounded identification excludes a universal perpetual-revision reading.",
+      "zh": "每个外推有一个使它所提出的值都不合的历程，不是每个实际世界要求永久修订：有界辨识排除永久修订的普遍读法。",
       "kind": "non-implication",
       "witness": "Becoming.Identification.held_byElimination_rests"
     },

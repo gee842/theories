@@ -2,21 +2,21 @@
   "schema_version": 2,
   "id": "testing-within-registration",
   "title": {
-    "zh": "识之内的检验",
-    "en": "Testing within registration"
+    "zh": "耦合之内的检验",
+    "en": "Testing within the couplings"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "主张只经所识的差别被否证，相对于模型的否证是对模型与主张一起的否证。成员只经自己之识回应时，识闭包之外的在其中不被识；检验是关系的。",
-    "en": "A claim is refuted only through a difference in what registers, and refutation relative to a model refutes the model and the claim together. Where members respond only through their own registration, nothing beyond the registration closure registers within it; testing is relational."
+    "zh": "主张只经耦合入者的差别被排除，相对于模型的排除是对模型与主张一起的排除。成员只经自己的耦合回应时，耦合闭包之外的不在其中显出；检验是关系的。",
+    "en": "A claim is excluded only through a difference in what couples in, and exclusion relative to a model excludes the model and the claim together. Where members respond only through their own couplings, nothing beyond the coupling closure shows within it; testing is relational."
   },
   "laws": [
     {
-      "zh": "形成识它的支持（水平是否接纳它）与它所观察之条件的水平；基础只识支持。在两个水平历史之下，在某步水平同样接纳它、所观察的条件同样立着，就是识得相同；直到某步每步如此，就是直到该步识得相同。",
-      "en": "A formation registers its support (whether the levels admit it) and the levels of the conditions it observes; the base registers support only. Under two level histories it registers alike at a step when the levels admit it alike and its observed conditions stand alike, and alike up to a step when it does so at every step up to it.",
+      "zh": "耦合入形成的，是它的支持（水平是否接纳它），经阈，与经水平耦合入它之条件的水平；基础只有支持耦合入。在两个水平历史之下，在某步水平同样接纳它、经水平耦合入的条件同样立着，就是在该步经其耦合无别；直到某步每步如此，就是直到该步经其耦合无别。",
+      "en": "Into a formation couple its support (whether the levels admit it), by threshold, and the levels of the conditions coupled into it by level; into the base only support couples. Two level histories are alike through its couplings at a step when the levels admit it alike and its conditions coupled in by level stand alike, and alike through them up to a step when they are so at every step up to it.",
       "declarations": [
         "Becoming.thresholdOnly",
         "Becoming.Web.AlikeThrough",
@@ -24,8 +24,8 @@
       ]
     },
     {
-      "zh": "其余所识条件相同时，依存而不观察的条件只以是否满足所需被识；观察的条件以其水平被识；观察得更多分辨得更多。",
-      "en": "With every other registered condition alike, a condition depended on and not observed registers only whether it meets the need; an observed one registers its level; observing more distinguishes more.",
+      "zh": "其余耦合入的条件相同时，只经阈耦合入的条件只传递它是否满足所需；经水平耦合入的条件传递其水平；经水平耦合入的越多，分辨得越多。",
+      "en": "With every other condition coupled in alike, a condition coupled in by threshold only passes only whether it meets the need; one coupled in by level passes its level; the more couples in by level, the more is told apart.",
       "declarations": [
         "Becoming.Web.alike_of_threshold",
         "Becoming.Web.observed_level_couples",
@@ -33,8 +33,8 @@
       ]
     },
     {
-      "zh": "关于水平历史的主张在某步被否证，是指满足它的历史没有一个直到该步与实际识得相同：主张只经所识的差别被否证，成立的永不被否证，否证此后一直成立，观察得更多否证得更多。",
-      "en": "A claim about level histories is refuted at a step when no history meeting it registers alike with the actual one up to that step: a claim is refuted only through a difference in what registers, what holds is never refuted, a refutation stands, and observing more refutes more.",
+      "zh": "关于水平历史的主张在某步被排除，是指满足它的历史没有一个直到该步经形成的耦合与实际无别：主张只经耦合入者的差别被排除，成立的永不被排除，排除此后一直成立，经水平耦合入的越多，排除得越多。",
+      "en": "A claim about level histories is excluded at a step when no history meeting it is alike with the actual one through the formation's couplings up to that step: a claim is excluded only through a difference in what couples in, what holds is never excluded, an exclusion stands, and the more couples in by level, the more is excluded.",
       "declarations": [
         "Becoming.Web.Excludes",
         "Becoming.Web.Excludes.not_of_alike",
@@ -44,15 +44,15 @@
       ]
     },
     {
-      "zh": "没有模型时，对任何有限的记录，“某条件将归于无”与“它此后一直在无之上”都不被否证。",
-      "en": "Without a model, for any finite record, neither the claim that a condition comes to nothing nor the claim that it stays above nothing afterwards is refuted.",
+      "zh": "没有模型时，对任何有限的前段，“某条件将归于无”与“它此后一直在无之上”都不被排除。",
+      "en": "Without a model, for any finite prefix, neither the claim that a condition comes to nothing nor the claim that it stays above nothing afterwards is excluded.",
       "declarations": [
         "Becoming.Web.tail_unexcluded"
       ]
     },
     {
-      "zh": "相对于模型（可容许历史的类）的否证恰是对模型与主张一起的否证；以流的平衡水平历史为模型、实际历史是其中之一时，观察储量的形成在第一步否证一切“它将归于无”的假主张；错的模型否证成立的，识否证模型。",
-      "en": "Refutation relative to a model, a class of admissible histories, is exactly refutation of the model and the claim together; relative to a flow's balanced level histories, the actual one among them, a formation observing a stock refutes at the first step every false claim that it comes to nothing; a wrong model refutes what holds, and registration refutes the model.",
+      "zh": "相对于模型（可容许历史的类）的排除恰是对模型与主张一起的排除；以流的平衡水平历史为模型、实际历史是其中之一时，储量经水平耦合入的形成在第一步排除一切“它将归于无”的假主张；错的模型排除成立的，耦合入者排除模型。",
+      "en": "Exclusion relative to a model, a class of admissible histories, is exactly exclusion of the model and the claim together; relative to a flow's balanced level histories, the actual one among them, a formation into which a stock couples by level excludes at the first step every false claim that it comes to nothing; a wrong model excludes what holds, and what couples in excludes the model.",
       "declarations": [
         "Becoming.Web.ExcludesWithin",
         "Becoming.Web.excludesWithin_iff_conjunction",
@@ -63,8 +63,8 @@
       ]
     },
     {
-      "zh": "形成的信念是与实际识得相同的历史；否证是主张与信念不交；由识作出的判断恰是 Becoming.Inquiry 中判断过程在信念上的共同回应，更晚的步与更多的观察都保持它。",
-      "en": "A formation's belief is the histories registering alike with the actual one; refutation is a claim disjoint from the belief; a judgment from registration is exactly a common response of the judging process of Becoming.Inquiry over the belief, kept as later steps and more observation narrow it.",
+      "zh": "经形成之耦合无别之类，是经其耦合与实际无别的历史；排除是主张与这个类不交；经其耦合作出的判断恰是 Becoming.Inquiry 中判断过程在这个类上的共同回应，更晚的步与更多的耦合使类收窄，都保持它。",
+      "en": "The class alike through a formation's couplings is the histories alike with the actual one through them; exclusion is a claim disjoint from that class; a judgment made through the couplings is exactly a common response of the judging process of Becoming.Inquiry over the class, kept as later steps and more coupling narrow it.",
       "declarations": [
         "Becoming.Web.ClassThrough",
         "Becoming.Web.class_excludes_iff",
@@ -74,8 +74,8 @@
       ]
     },
     {
-      "zh": "形成依存于或观察一个条件就识它；识闭包是对经所识者受影响的闭包，含影响闭包，只识支持时就是它，随观察与交换增大。",
-      "en": "A formation registers a condition when it depends on it or observes it; the registration closure is the closure under being affected through what is registered, holding the influence closure, equal to it registering support only, and growing with observation and exchange.",
+      "zh": "形成依存于一个条件，或该条件经水平耦合入它，该条件就耦合入它；耦合闭包是对经耦合入者受影响的闭包，含影响闭包，只有支持耦合入时就是它，随经水平的耦合与交换增大。",
+      "en": "A condition couples into a formation when the formation depends on it or it couples in by level; the coupling closure is the closure under being affected through what couples in, holding the influence closure, equal to it where only support couples in, and growing with coupling by level and with exchange.",
       "declarations": [
         "Becoming.Web.CoupledInto",
         "Becoming.Flow.CoupledFrom",
@@ -87,15 +87,15 @@
       ]
     },
     {
-      "zh": "两个流相同的形成在场、在一个区域的成员所识的每个条件上逐步平衡，区域在两个流中都对经所识者受影响封闭，水平起始在成员所识的条件上相同，每个成员在自己识得相同之处对成员所识的条件同样取用与给予时，每个成员每步都识得相同。",
-      "en": "For two flows with the same formations present, balancing at each step on every condition a member of a region registers, the region closed in both under being affected through what is registered, the levels starting alike on what members register, and each member taking from and giving to what members register alike wherever it has registered alike, every member registers alike at every step.",
+      "zh": "两个流相同的形成在场、在耦合入一个区域之成员的每个条件上逐步平衡，区域在两个流中都对经耦合入者受影响封闭，水平起始在耦合入成员的条件上相同，每个成员在两个流经其耦合无别之处对耦合入成员的条件同样取用与给予时，两个流每步都经每个成员的耦合无别。",
+      "en": "For two flows with the same formations present, balancing at each step on every condition coupled into a member of a region, the region closed in both under being affected through what couples in, the levels starting alike on what couples into members, and each member taking from and giving to what couples into members alike wherever the flows have been alike through its couplings, the flows are alike through every member's couplings at every step.",
       "declarations": [
         "Becoming.Flow.alike_within_closed"
       ]
     },
     {
-      "zh": "其余交换固定、在识闭包内所识的条件上逐步平衡时：成员都在识闭包之外的部分，闭包之内每步有与无它都识得相同；无部分的水平所满足的主张在闭包之内不被否证；相对于模型的否证靠模型对部分之交换的排除；闭包之内的判断在有与无部分时都可容许。",
-      "en": "With the rest of the exchange fixed and balance at each step on what is registered within the closure, a part whose members all lie beyond the registration closure is registered alike with and without it at every step within it; no claim met by the levels without it is refuted there; a refutation there relative to a model rests on the model excluding its exchange; a judgment there is admissible with and without it.",
+      "zh": "其余交换固定、在耦合入闭包内者的条件上逐步平衡时：成员都在耦合闭包之外的部分，闭包之内每步有与无它都经其耦合无别；无部分的水平所满足的主张在闭包之内不被排除；相对于模型的排除靠模型对部分之交换的排除；闭包之内的判断在有与无部分时都可容许。",
+      "en": "With the rest of the exchange fixed and balance at each step on what couples in within the closure, the worlds with and without a part whose members all lie beyond the coupling closure are alike through the couplings within it at every step; no claim met by the levels without it is excluded there; an exclusion there relative to a model rests on the model excluding its exchange; a judgment there is admissible with and without it.",
       "declarations": [
         "Becoming.Flow.uncoupled_beyond_coupling",
         "Becoming.Flow.Balances.uncoupled_beyond_influence",
@@ -105,8 +105,8 @@
       ]
     },
     {
-      "zh": "Clearing 中清除者每步都识得相同，无论清除是否终结栖居者；在不清除的世界中，“栖居者已被终结”被清除者在任何一步都不否证，被栖居者在第三步否证；“第三步栖居者或清除者不被接纳”，两者各自都不否证，合起来否证。",
-      "en": "In Clearing the clearer registers alike at every step whether or not its clearing ends the dweller; with the habitat spared, the claim that the dweller is ended is refuted by the clearer at no step and by the dweller at the third step; the claim that the dweller or the clearer is not admitted at the third step is refuted by neither alone and by the two together.",
+      "zh": "Clearing 中两个世界每步都经清除者的耦合无别，无论清除是否终结栖居者；在不清除的世界中，“栖居者已被终结”被清除者在任何一步都不排除，被栖居者在第三步排除；“第三步栖居者或清除者不被接纳”，两者各自都不排除，合起来排除。",
+      "en": "In Clearing the worlds are alike through the clearer's couplings at every step whether or not its clearing ends the dweller; with the habitat spared, the claim that the dweller is ended is excluded by the clearer at no step and by the dweller at the third step; the claim that the dweller or the clearer is not admitted at the third step is excluded by neither alone and by the two together.",
       "declarations": [
         "Becoming.Clearing.alike_for_clearer",
         "Becoming.Clearing.DwellerEnded",
@@ -117,16 +117,16 @@
       ]
     },
     {
-      "zh": "以固定起始与交换的模型，清除者在第一步否证它不识的。",
-      "en": "With a model fixing the start and the exchange, the clearer refutes at the first step what it does not register.",
+      "zh": "以固定起始与交换的模型，清除者在第一步排除不耦合入它的。",
+      "en": "With a model fixing the start and the exchange, the clearer excludes at the first step what does not couple into it.",
       "declarations": [
         "Becoming.Clearing.FixedStartAndExchange",
         "Becoming.Clearing.model_idles_coupling"
       ]
     },
     {
-      "zh": "Prey 中不依存于自身的猎物，捕食者在其影响闭包之外、量度自身时的识闭包之内：猎物经支持每步把捕食者的部分识得相同，量度自身则在被咬之后识其取用；这靠被省略的关系。",
-      "en": "In Prey, the prey not depending on itself, the predator lies beyond its influence closure and within its registration closure under a gauge of itself: the prey registers the predator's part alike through support at every step, and the gauge registers the taking after the bite; this rests on omitted relations.",
+      "zh": "Prey 中不依存于自身的猎物，捕食者在其影响闭包之外、量度自身时的耦合闭包之内：有与无捕食者的部分，两个世界经猎物的支持每步无别，量度自身则在被咬之后传递其取用；这靠被省略的关系。",
+      "en": "In Prey, the prey not depending on itself, the predator lies beyond its influence closure and within its coupling closure under a gauge of itself: the worlds with and without the predator's part are alike through the prey's support at every step, and the gauge passes the taking after the bite; this rests on omitted relations.",
       "declarations": [
         "Becoming.ownStanding",
         "Becoming.Prey.couples_taking",
@@ -136,24 +136,24 @@
   ],
   "hypotheses": [
     {
-      "zh": "识与否证的定义不设前提；模型是给出的可容许历史类。",
-      "en": "The definitions of registration and refutation assume nothing; a model is a supplied class of admissible histories."
+      "zh": "耦合与排除的定义不设前提；模型是给出的可容许历史类。",
+      "en": "The definitions of coupling and exclusion assume nothing; a model is a supplied class of admissible histories."
     },
     {
-      "zh": "平衡只在被识的条件上逐步假设（Flow.BalancesOn，单元素家族，不需要有限性）；整体的平衡经 Flow.Balances.on 给出它。",
-      "en": "Balance is assumed only on the conditions registered, at each step (Flow.BalancesOn, singleton families, needing no finiteness); global balance gives it through Flow.Balances.on."
+      "zh": "平衡只在耦合入的条件上逐步假设（Flow.BalancesOn，单元素家族，不需要有限性）；整体的平衡经 Flow.Balances.on 给出它。",
+      "en": "Balance is assumed only on the conditions coupled in, at each step (Flow.BalancesOn, singleton families, needing no finiteness); global balance gives it through Flow.Balances.on."
     },
     {
-      "zh": "Flow.alike_within_closed 另设区域在两个流中封闭、起始相同与成员只经自己之识回应，都是给出的假设：他者怎样回应是给出的。有与无部分的比较用扣留水平（Flow.WithheldLevels，其余交换不变，是表示上的选择）；部分是判定的形成家族。",
-      "en": "Flow.alike_within_closed further assumes the region closed in both flows, the starts alike, and the members responding only through their own registration, all supplied: how others respond is supplied. The comparison with and without a part uses withheld levels (Flow.WithheldLevels, the rest of the exchange unchanged, a choice of the representation); a part is a decided family of formations."
+      "zh": "Flow.alike_within_closed 另设区域在两个流中封闭、起始相同与成员只经自己的耦合回应，都是给出的假设：他者怎样回应是给出的。有与无部分的比较用扣留水平（Flow.WithheldLevels，其余交换不变，是表示上的选择）；部分是判定的形成家族。",
+      "en": "Flow.alike_within_closed further assumes the region closed in both flows, the starts alike, and the members responding only through their own couplings, all supplied: how others respond is supplied. The comparison with and without a part uses withheld levels (Flow.WithheldLevels, the rest of the exchange unchanged, a choice of the representation); a part is a decided family of formations."
     },
     {
-      "zh": "识：支持与所观察条件的水平（obs，参数）；活动由表示给出，不算作被识。否证是对一个形成、在一步、在一个水平历史之下的；主张是关于水平历史的任何命题。",
-      "en": "Registration: support and the levels of the conditions observed (obs, a parameter); activity is supplied by the representation and is not counted as registered. Refutation is by one formation, at a step, under one level history; a claim is any proposition about level histories."
+      "zh": "耦合：支持与经水平耦合入之条件的水平（obs，参数）；活动由表示给出，不算作耦合入者。排除是对一个形成、在一步、在一个水平历史之下的；主张是关于水平历史的任何命题。",
+      "en": "Coupling: support and the levels of the conditions coupled in by level (obs, a parameter); activity is supplied by the representation and is not counted as coupled in. Exclusion is by one formation, at a step, under one level history; a claim is any proposition about level histories."
     },
     {
-      "zh": "形成自身的立着是否算作被识（Ren 的第 4 问）由 AI 探索后决定：基础只识支持（supportOnly）；一类读法中自身的立着经承担自身（Web.SelfBearing）作为阈值被识；量度自身（ownStanding）是观察前提。理由见整合文档。",
-      "en": "Whether a formation's own standing counts as registered (Ren's question 4) was decided by the AI after exploring the options: the base registers support only (supportOnly); in the one-kind reading own standing registers through self-bearing (Web.SelfBearing) as a threshold; a gauge of oneself (ownStanding) is an observation premise. The reasons are in the integration note."
+      "zh": "形成自身的立着是否算作耦合入者（Ren 的第 4 问，当时问的是“是否被识”）由 AI 探索后决定：基础只有支持耦合入（supportOnly）；一类读法中自身的立着经承担自身（Web.SelfBearing）经阈耦合入；量度自身（ownStanding）是经水平耦合的前提。理由见整合文档。",
+      "en": "Whether a formation's own standing counts as coupled in (Ren's question 4, asked then as whether it is registered) was decided by the AI after exploring the options: only support couples into the base (supportOnly); in the one-kind reading own standing couples in by threshold through self-bearing (Web.SelfBearing); a gauge of oneself (ownStanding) is a premise of coupling by level. The reasons are in the integration note."
     },
     {
       "zh": "见证的结论：各见证的流、网与模型（Clearing、Prey、Stationary）。",
@@ -166,23 +166,23 @@
   ],
   "does_not_show": [
     {
-      "zh": "反馈的三种不见各只在其范围内成立：阈下在交换随识之处，视界之外在延续开放之处，识闭包之外在成员只经自己之识回应之处。",
-      "en": "Each feedback blindness holds only in its scope: below threshold where exchange follows registration, beyond the horizon where continuation is open, beyond the registration closure where members respond only through their own registration.",
+      "zh": "反馈的三种不见各只在其范围内成立：阈下在交换随耦合入者之处，视界之外在延续开放之处，耦合闭包之外在成员只经自己的耦合回应之处。",
+      "en": "Each feedback blindness holds only in its scope: below threshold where exchange follows what couples in, beyond the horizon where continuation is open, beyond the coupling closure where members respond only through their own couplings.",
       "kind": "correspondence"
     },
     {
-      "zh": "这些规律不推出形成观察支持之外的任何东西、形成模型、想要检验或知道其识闭包。",
-      "en": "The laws do not derive that a formation observes anything beyond its support, forms a model, wants to test or knows its registration closure.",
+      "zh": "这些规律不推出有支持之外的东西经水平耦合入形成，也不推出形成形成模型、想要检验或知道其耦合闭包。",
+      "en": "The laws do not derive that anything beyond its support couples into a formation by level, that it forms a model, wants to test or knows its coupling closure.",
       "kind": "non-implication"
     },
     {
-      "zh": "识得相同界定能分辨的，不说一个差别关于什么。",
-      "en": "Registering alike bounds what can be told apart and says nothing of what a difference is about.",
+      "zh": "经耦合无别界定能分辨的，不说一个差别关于什么。",
+      "en": "Being alike through the couplings bounds what can be told apart and says nothing of what a difference is about.",
       "kind": "scope"
     },
     {
-      "zh": "一个动作造成什么是对两段历史的比较，只相对于无此动作之历史的模型才可检验；变动自己的动作并识差别（实验）在这里没有陈述。",
-      "en": "What an act does compares two histories and is testable only relative to a model of the history without it; varying one's own act and registering the difference (experiment) is not stated here.",
+      "zh": "一个动作造成什么是对两段历史的比较，只相对于无此动作之历史的模型才可检验；变动自己的动作而差别经耦合显出（实验）在这里没有陈述。",
+      "en": "What an act does compares two histories and is testable only relative to a model of the history without it; varying one's own act and the difference showing through the couplings (experiment) is not stated here.",
       "kind": "scope"
     }
   ],
@@ -190,15 +190,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "detail": {
-        "zh": "相对于模型的否证可以出错：Stationary 中模型说没有取用与给予，相对于它，量度储量的形成在第一步否证“储量将归于无”，而这在实际中成立（Stationary.model_error）。",
-        "en": "Refutation relative to a model can err: in Stationary the model says nothing takes or gives, and relative to it a formation gauging the stock refutes at the first step the claim that the stock comes to nothing, which holds of the actual history (Stationary.model_error)."
+        "zh": "相对于模型的排除可以出错：Stationary 中模型说没有取用与给予，相对于它，量度储量的形成在第一步排除“储量将归于无”，而这在实际中成立（Stationary.model_error）。",
+        "en": "Exclusion relative to a model can err: in Stationary the model says nothing takes or gives, and relative to it a formation gauging the stock excludes at the first step the claim that the stock comes to nothing, which holds of the actual history (Stationary.model_error)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "detail": {
-        "zh": "识闭包可以严格大于影响闭包：Prey 中捕食者在猎物的影响闭包之外，量度自身时在其识闭包之内（Prey.couples_taking）；所识的差别对猎物不起作用，猎物不承担自身（Prey.omits），所以这一见证靠被省略的关系。",
-        "en": "The registration closure can be strictly larger than the influence closure: in Prey the predator lies beyond the prey's influence closure and, under a gauge of itself, within its registration closure (Prey.couples_taking); the registered difference does nothing to the prey, which does not bear on itself (Prey.omits), so the witness rests on omitted relations."
+        "zh": "耦合闭包可以严格大于影响闭包：Prey 中捕食者在猎物的影响闭包之外，量度自身时在其耦合闭包之内（Prey.couples_taking）；耦合入的差别对猎物不起作用，猎物不承担自身（Prey.omits），所以这一见证靠被省略的关系。",
+        "en": "The coupling closure can be strictly larger than the influence closure: in Prey the predator lies beyond the prey's influence closure and, under a gauge of itself, within its coupling closure (Prey.couples_taking); the difference coupled in does nothing to the prey, which does not bear on itself (Prey.omits), so the witness rests on omitted relations."
       }
     }
   ],
@@ -212,12 +212,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Testing and this record's local laws have empty axiom reports (receipt 20261013T094743.528770Z; current bytes bound by 20261014T091930.724493Z), and the checker verifies core purity. Author counterreview in the integration note; reviewed before integration by the seventeenth independent review (listed under sources), treated in the integration note; no independent review of the text after that treatment yet."
   },
   "next_delta": {
-    "zh": "多步 Scope 的桥：感知只经识的策略在识得相同的流上有同样的所见范围；模型从哪里来（见 projection-carrying-a-law 与 generalization-through-lumping）；由动力学给出回应，而不是另给它；识关于什么（校准）；识不分辨值时（阈下）的学习。",
-    "en": "The multi-step Scope bridge: a policy sensing only through registration has the same visible scope on flows registered alike; where a model comes from (see projection-carrying-a-law, generalization-through-lumping); responses given by the dynamics, not supplied; calibration; learning below threshold."
+    "zh": "多步 Scope 的桥：只经耦合感知的策略在经其耦合无别的流上有同样的所见范围；模型从哪里来（见 projection-carrying-a-law 与 generalization-through-lumping）；由动力学给出回应，而不是另给它；耦合入者关于什么（校准）；耦合入者不分辨值时（阈下）的学习。",
+    "en": "The multi-step Scope bridge: a policy sensing only through its couplings has the same visible scope on flows alike through them; where a model comes from (see projection-carrying-a-law, generalization-through-lumping); responses given by the dynamics, not supplied; calibration; learning below threshold."
   },
   "correspondence": {
-    "zh": "Ren 的提议：“can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”，“I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”。AI 的回答提出反馈的三种不见、失控是在其一之中运行的回路、跨过它们的方式、可否证性是被展开纠正的条件，以及 理 的读法；Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（见“未表明”）；失控的读法是启发，不是陈述；理 原由 AI 读作对识负责的模型，现依 Ren 2026-10-12 的读法，为对结构与变化之规律的建模；模型仍只经识被检验（generalization-through-lumping）。所以记录中的读法是 AI 收窄之后的，依 Ren 的交托采用（DELEGATED-CHOICES D26），不是 Ren 所接受的原文。",
-    "en": "Ren's proposal: “can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”, and “I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”. The AI's answer proposed three blindnesses of feedback, a runaway as a loop running inside one of them, the ways across them, falsifiability as the condition of being corrected by the unfolding, and a reading of 理; Ren answered “agree with you, great job, start now. for 4, you can explore which option is better, then make decision”. The independent review narrowed the readings: each blindness has its scope (a does-not-show item states it); the runaway reading is a heuristic, not a statement; and 理, read by the AI as a model answerable to registration, is now read as Ren read it on 12 October 2026, the modeling of the laws of structure and of change; a model is still tested only through registration (generalization-through-lumping). So the readings here are the AI's narrowed ones, adopted on Ren's delegation (DELEGATED-CHOICES D26), not the wording Ren accepted."
+    "zh": "Ren 的提议：“can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”，“I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”。AI 的回答提出反馈的三种不见、失控是在其一之中运行的回路、跨过它们的方式、可否证性是被展开纠正的条件，以及 理 的读法；Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（见“未表明”）；失控的读法是启发，不是陈述；理 原由 AI 读作对识负责的模型，现依 Ren 2026-10-12 的读法，为对结构与变化之规律的建模；模型仍只经耦合入者被检验（generalization-through-lumping）。所以记录中的读法是 AI 收窄之后的，依 Ren 的交托采用（DELEGATED-CHOICES D26），不是 Ren 所接受的原文。",
+    "en": "Ren's proposal: “can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”, and “I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”. The AI's answer proposed three blindnesses of feedback, a runaway as a loop running inside one of them, the ways across them, falsifiability as the condition of being corrected by the unfolding, and a reading of 理; Ren answered “agree with you, great job, start now. for 4, you can explore which option is better, then make decision”. The independent review narrowed the readings: each blindness has its scope (a does-not-show item states it); the runaway reading is a heuristic, not a statement; and 理, read by the AI as a model answerable to registration, is now read as Ren read it on 12 October 2026, the modeling of the laws of structure and of change; a model is still tested only through what couples in (generalization-through-lumping). So the readings here are the AI's narrowed ones, adopted on Ren's delegation (DELEGATED-CHOICES D26), not the wording Ren accepted."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
   "aliases": [
@@ -253,8 +253,8 @@
       "id": "feedback-and-reach",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "推广 P42 的 Flow.Balances.uncoupled_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只识支持时 Flow.uncoupled_beyond_coupling 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。",
-        "en": "Extends P42's Flow.Balances.uncoupled_beyond_influence (adding observation, and grounding it in the form where the members respond, Flow.alike_within_closed; registering support only, Flow.uncoupled_beyond_coupling is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form."
+        "zh": "推广 P42 的 Flow.Balances.uncoupled_beyond_influence（加入经水平的耦合，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只有支持耦合入时 Flow.uncoupled_beyond_coupling 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。",
+        "en": "Extends P42's Flow.Balances.uncoupled_beyond_influence (adding coupling by level, and grounding it in the form where the members respond, Flow.alike_within_closed; where only support couples in, Flow.uncoupled_beyond_coupling is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form."
       },
       "interface": {
         "output": {
@@ -262,8 +262,8 @@
           "en": "Exchange, the influence closure and the world with the habitat spared."
         },
         "input": {
-          "zh": "识闭包及其不见；清除者不检验栖居者被终结。",
-          "en": "The registration closure and its blindness; the clearer does not test whether the dweller is ended."
+          "zh": "耦合闭包及其不见；清除者不检验栖居者被终结。",
+          "en": "The coupling closure and its blindness; the clearer does not test whether the dweller is ended."
         },
         "conditions": {
           "zh": "平衡；扣留水平。",
@@ -285,8 +285,8 @@
           "en": "Closure under a relation."
         },
         "input": {
-          "zh": "识闭包及其封闭。",
-          "en": "The registration closure and its closedness."
+          "zh": "耦合闭包及其封闭。",
+          "en": "The coupling closure and its closedness."
         },
         "conditions": {
           "zh": "无。",
@@ -308,8 +308,8 @@
           "en": "Admission and withheld levels."
         },
         "input": {
-          "zh": "识得相同的第一项；有与无部分的比较。",
-          "en": "The first clause of registering alike; the comparison with and without a part."
+          "zh": "经耦合无别的第一项；有与无部分的比较。",
+          "en": "The first clause of being alike through the couplings; the comparison with and without a part."
         },
         "conditions": {
           "zh": "无。",
@@ -346,43 +346,43 @@
     {
       "id": "subthreshold-registration",
       "detail": {
-        "zh": "那里是阈值处的识与交换随识时阈下差别的规律；这里是识、否证、所及与检验的关系性。",
-        "en": "There registration at a threshold and the laws of differences below it where the exchange follows registration; here registration, refutation, reach and the relational character of testing."
+        "zh": "那里是经阈的耦合与交换随耦合入者时阈下差别的规律；这里是耦合、排除、所及与检验的关系性。",
+        "en": "There coupling by threshold and the laws of differences below it where the exchange follows what couples in; here coupling, exclusion, reach and the relational character of testing."
       }
     },
     {
       "id": "becoming-finite-horizon",
       "detail": {
-        "zh": "那里有限的前缀不决定更新还是消耗，其两个推论 no_exact_finite_reading 与 finite_reading_withholds_renewal 也在 Becoming.Testing 中；这里没有模型时有限的记录不否证关于其后的主张，相对于模型则可以。",
-        "en": "There no finite prefix decides renewal or consumption, and its two corollaries no_exact_finite_reading and finite_reading_withholds_renewal are also in Becoming.Testing; here without a model no finite record refutes a claim about what follows it, while relative to a model one can."
+        "zh": "那里有限的前缀不决定更新还是消耗，其两个推论 no_exact_finite_reading 与 finite_reading_withholds_renewal 也在 Becoming.Testing 中；这里没有模型时有限的前段不排除关于其后的主张，相对于模型则可以。",
+        "en": "There no finite prefix decides renewal or consumption, and its two corollaries no_exact_finite_reading and finite_reading_withholds_renewal are also in Becoming.Testing; here without a model no finite prefix excludes a claim about what follows it, while relative to a model one can."
       }
     },
     {
       "id": "finite-fallible-inquiry-necessity",
       "detail": {
-        "zh": "外围的信息界：保持同样读数的适应关系不能同时满足更强的覆盖；这里在脊柱上，同样的识不分辨，主张只经所识的差别被否证。",
-        "en": "The periphery's information bound: adaptive relations preserving the same readouts cannot also meet stronger coverage; here on the spine, the same registration does not distinguish, and a claim is refuted only through a difference in what registers."
+        "zh": "外围的信息界：保持同样读数的适应关系不能同时满足更强的覆盖；这里在脊柱上，经耦合无别者不被分辨，主张只经耦合入者的差别被排除。",
+        "en": "The periphery's information bound: adaptive relations preserving the same readouts cannot also meet stronger coverage; here on the spine, what is alike through the couplings is not told apart, and a claim is excluded only through a difference in what couples in."
       }
     },
     {
       "id": "prefix-observation-loss",
       "detail": {
-        "zh": "那里一切前缀问题都可以漏掉中间的损失；这里没有模型时有限的记录不否证关于其后的主张。",
-        "en": "There every prefix question can omit an intermediate loss; here without a model no finite record refutes a claim about what follows it."
+        "zh": "那里一切前缀问题都可以漏掉中间的损失；这里没有模型时有限的前段不排除关于其后的主张。",
+        "en": "There every prefix question can omit an intermediate loss; here without a model no finite prefix excludes a claim about what follows it."
       }
     },
     {
       "id": "scientific-inquiry-foundation",
       "detail": {
-        "zh": "这一开放目标的一个部分：在脊柱上陈述被展开否证的条件与相对于模型的否证；不确立整个目标。",
-        "en": "One part of this open target: the condition of being refuted by the unfolding, and refutation relative to a model, stated on the spine; it does not establish the whole target."
+        "zh": "这一开放目标的一个部分：在脊柱上陈述被展开排除的条件与相对于模型的排除；不确立整个目标。",
+        "en": "One part of this open target: the condition of being excluded by the unfolding, and exclusion relative to a model, stated on the spine; it does not establish the whole target."
       }
     },
     {
       "id": "experiment-needs-return",
       "detail": {
-        "zh": "实验：变动自己的动作并识差别；记录只在运行取用之处固定动作的结果。",
-        "en": "Experiment: varying one's own act and registering the difference; a record fixes a move's outcome only where the run took it."
+        "zh": "实验：变动自己的动作而差别经耦合显出；记录只在运行取用之处固定动作的结果。",
+        "en": "Experiment: varying one's own act and the difference showing through the couplings; a record fixes a move's outcome only where the run took it."
       }
     },
     {

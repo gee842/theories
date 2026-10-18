@@ -10,13 +10,13 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "部分之外的形成都经自己之识回应时，两个流的比较在部分的回应所及之内决定：其外的每个形成识得相同、交换相同，差别到不了它；只识支持时，回应所及是所及闭包之并。",
-    "en": "Where every formation outside a part responds through its registration, comparing two flows is decided within the part's responsive reach: beyond it each formation registers and exchanges alike and the difference never arrives; registering support only, that reach is the union of the reach closures."
+    "zh": "部分之外的形成都经自己的耦合回应时，两个流的比较在部分的回应所及之内决定：两个流经其外每个形成的耦合无别、它交换相同，差别到不了它；只有支持耦合入时，回应所及是所及闭包之并。",
+    "en": "Where every formation outside a part responds through its couplings, comparing two flows is decided within the part's responsive reach: beyond it the flows are alike through each formation's couplings, it exchanges alike, and the difference never arrives; where only support couples in, that reach is the union of the reach closures."
   },
   "laws": [
     {
-      "zh": "回应所及：对两个流、两个网、一个观察与部分（判定的形成家族），一个形成在部分的回应所及之内，是指它在某个成员对“a 在两个流之一中与 b 所识的条件交换”这一关系的闭包之内；每个成员都在其中，其外的都在部分之外。",
-      "en": "Responsive reach: for two flows, two webs, an observation and a part (a decided family of formations), a formation lies within the part's responsive reach when it lies within some member's closure under the relation ‘a exchanges, in one of the two flows, with a condition b registers’; every member lies within it, and what lies beyond is outside the part.",
+      "zh": "回应所及：对两个流、两个网、一个经水平的耦合（obs）与部分（判定的形成家族），一个形成在部分的回应所及之内，是指它在某个成员对“a 在两个流之一中与耦合入 b 的条件交换”这一关系的闭包之内；每个成员都在其中，其外的都在部分之外。",
+      "en": "Responsive reach: for two flows, two webs, a coupling by level (obs) and a part (a decided family of formations), a formation lies within the part's responsive reach when it lies within some member's closure under the relation ‘a exchanges, in one of the two flows, with a condition coupled into b’; every member lies within it, and what lies beyond is outside the part.",
       "declarations": [
         "Becoming.Flow.WithinResponse",
         "Becoming.Flow.CoupledFromEither",
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "zh": "对逆关系的闭包是闭包之逆，所以一个形成在回应所及之内，恰当某个成员在它经两个流画出的识闭包之内；一个流时，恰当某个成员在它的识闭包之内。",
-      "en": "The closure under a converse is the converse of the closure, so a formation lies within the responsive reach exactly when some member lies within its registration closure drawn through both flows; with one flow, exactly when some member lies within its registration closure.",
+      "zh": "对逆关系的闭包是闭包之逆，所以一个形成在回应所及之内，恰当某个成员在它经两个流画出的耦合闭包之内；一个流时，恰当某个成员在它的耦合闭包之内。",
+      "en": "The closure under a converse is the converse of the closure, so a formation lies within the responsive reach exactly when some member lies within its coupling closure drawn through both flows; with one flow, exactly when some member lies within its coupling closure.",
       "declarations": [
         "Becoming.WithinClosure.converse",
         "Becoming.Flow.withinResponse_iff_coupling",
@@ -36,8 +36,8 @@
       ]
     },
     {
-      "zh": "部分所到达的与每个成员的所及闭包都在回应所及之内；只识支持、一个流时，一个形成在回应所及之内恰当它在某个成员的所及闭包之内；所及闭包是影响闭包之逆。",
-      "en": "What the part reaches and each member's reach closure lie within the responsive reach; registering support only, with one flow, a formation lies within it exactly when it lies within some member's reach closure; the reach closure is the converse of the influence closure.",
+      "zh": "部分所到达的与每个成员的所及闭包都在回应所及之内；只经阈耦合、一个流时，一个形成在回应所及之内恰当它在某个成员的所及闭包之内；所及闭包是影响闭包之逆。",
+      "en": "What the part reaches and each member's reach closure lie within the responsive reach; with coupling by threshold only and one flow, a formation lies within it exactly when it lies within some member's reach closure; the reach closure is the converse of the influence closure.",
       "declarations": [
         "Becoming.Flow.withinResponse_of_reaches",
         "Becoming.Flow.withinResponse_of_withinReach",
@@ -47,8 +47,8 @@
       ]
     },
     {
-      "zh": "其余经识回应：部分之外的每个形成，凡在第一个网下对两个网的水平直到第 t 步识得相同，在第 t 步与每个条件的取用与给予在两个流中相同；其余固定（第二个流扣下部分）时无论识什么它都成立。",
-      "en": "The rest responds through its registration when each formation outside the part that has registered alike, under the first web, between the levels of the two webs up to step t takes from and gives to every condition alike in the two flows at step t; with the rest fixed (the second flow withholding the part) this holds whatever registers.",
+      "zh": "其余经其耦合回应：部分之外的每个形成，凡在第一个网下两个网的水平直到第 t 步经其耦合无别，在第 t 步与每个条件的取用与给予在两个流中相同；其余固定（第二个流扣下部分）时无论什么耦合入它都成立。",
+      "en": "The rest responds through its couplings when each formation outside the part, wherever the levels of the two webs have been alike through its couplings, under the first web, up to step t, takes from and gives to every condition alike in the two flows at step t; with the rest fixed (the second flow withholding the part) this holds whatever couples in.",
       "declarations": [
         "Becoming.Flow.RespondsThroughCoupling",
         "Becoming.Web.AlikeThroughUpTo",
@@ -56,16 +56,16 @@
       ]
     },
     {
-      "zh": "回应所及之外的形成构成在两个流中都对“被识自”封闭的区域，由闭包的定义直接得到。",
-      "en": "The formations beyond the responsive reach form a region closed in both flows under being registered from, directly from the definition of the closure.",
+      "zh": "回应所及之外的形成构成在两个流中都对“经耦合入者受影响”封闭的区域，由闭包的定义直接得到。",
+      "en": "The formations beyond the responsive reach form a region closed in both flows under being affected through what couples in, directly from the definition of the closure.",
       "declarations": [
         "Becoming.Flow.beyond_response_closed",
         "Becoming.Flow.CoupledFrom"
       ]
     },
     {
-      "zh": "限定：两个流的在场形成每步相同，在回应所及之外者所识的每个条件上逐步平衡且起始相同，其余经识回应时，回应所及之外的每个形成每步识得相同，并与每个条件交换相同（封闭区域内相同的实例）。",
-      "en": "Confinement: where the two flows have the same formations present at every step, balance at each step on every condition registered by a formation beyond the reach and start alike there, and the rest responds through its registration, every formation beyond the responsive reach registers alike and exchanges alike with every condition at every step (an instance of likeness within a closed region).",
+      "zh": "限定：两个流的在场形成每步相同，在耦合入回应所及之外者的每个条件上逐步平衡且起始相同，其余经其耦合回应时，两个流每步经回应所及之外每个形成的耦合无别，它并与每个条件交换相同（封闭区域内相同的实例）。",
+      "en": "Confinement: where the two flows have the same formations present at every step, balance at each step on every condition coupled into a formation beyond the reach and start alike there, and the rest responds through its couplings, the flows are alike through every formation beyond the responsive reach at every step, and it exchanges alike with every condition (an instance of likeness within a closed region).",
       "declarations": [
         "Becoming.Flow.BalancesOn",
         "Becoming.Flow.alike_beyond_response",
@@ -74,8 +74,8 @@
       ]
     },
     {
-      "zh": "同样条件下，两个流每步从这样的形成所识的每个条件取用与向它给予的总量相同，两个流的差别在任何一步之前都到不了它。",
-      "en": "Under the same conditions, the totals the two flows take from and give to each condition such a formation registers are alike at every step, and the difference between the flows reaches it before no step.",
+      "zh": "同样条件下，两个流每步从耦合入这样的形成的每个条件取用与向它给予的总量相同，两个流的差别在任何一步之前都到不了它。",
+      "en": "Under the same conditions, the totals the two flows take from and give to each condition coupled into such a formation are alike at every step, and the difference between the flows reaches it before no step.",
       "declarations": [
         "Becoming.Flow.totals_alike_beyond_response",
         "Becoming.Flow.not_differs_beyond_response",
@@ -83,8 +83,8 @@
       ]
     },
     {
-      "zh": "所以两个流都平衡、在场形成相同、起始相同、其余经识回应时，对从 p 覆盖每个不在回应所及之外的形成的任何意义，第一个网的水平保留第二个网的水平上有意义者恰当前者包含后者，反过来也是；两者都不增加有意义的延续恰当两者都不超出对方。",
-      "en": "Where both flows balance, share the formations present, start alike and the rest responds through registration, for any significance covering from p every formation not beyond the responsive reach, the levels of the first web retain what has significance along those of the second exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other.",
+      "zh": "所以两个流都平衡、在场形成相同、起始相同、其余经其耦合回应时，对从 p 覆盖每个不在回应所及之外的形成的任何意义，第一个网的水平保留第二个网的水平上有意义者恰当前者包含后者，反过来也是；两者都不增加有意义的延续恰当两者都不超出对方。",
+      "en": "Where both flows balance, share the formations present, start alike and the rest responds through its couplings, for any significance covering from p every formation not beyond the responsive reach, the levels of the first web retain what has significance along those of the second exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other.",
       "declarations": [
         "Becoming.Flow.Balances.comparison_within_response",
         "Becoming.Flow.Balances.comparison_within_difference"
@@ -98,8 +98,8 @@
       ]
     },
     {
-      "zh": "见证，营养级联：在狼群之流与鹿有回应之流之间，只识支持时前提成立；森林在狼群的回应所及之内，而狼群的部分到达不了它。",
-      "en": "Witness, the trophic cascade: between the flow with the wolves and the flow in which the deer respond, the premise holds registering support only, and the forest lies within the wolves' responsive reach, which their part does not reach.",
+      "zh": "见证，营养级联：在狼群之流与鹿有回应之流之间，只经阈耦合时前提成立；森林在狼群的回应所及之内，而狼群的部分到达不了它。",
+      "en": "Witness, the trophic cascade: between the flow with the wolves and the flow in which the deer respond, the premise holds with coupling by threshold only, and the forest lies within the wolves' responsive reach, which their part does not reach.",
       "declarations": [
         "Becoming.Trophic.responds_through_coupling",
         "Becoming.Trophic.forest_within_response"
@@ -117,8 +117,8 @@
       ]
     },
     {
-      "zh": "见证，升级回路：两个形成各需要并观察自己的条件；有动作之流中第一个在第 0 步从第二个的条件取用，第二个在第 1 步回应、从第一个的条件取用，无动作之流什么都不取用；两个流平衡，活动需要支持，起始相同，第二个经识回应。",
-      "en": "Witness, an escalation loop: two formations each require and observe their own condition; in the flow with the act the first takes from the second's condition at step 0 and the second responds at step 1 by taking from the first's, while in the other flow nothing is taken; both flows balance, activity needs support, they start alike and the second responds through its registration.",
+      "zh": "见证，升级回路：两个形成各需要自己的条件，且该条件经水平耦合入它；有动作之流中第一个在第 0 步从第二个的条件取用，第二个在第 1 步回应、从第一个的条件取用，无动作之流什么都不取用；两个流平衡，活动需要支持，起始相同，第二个经其耦合回应。",
+      "en": "Witness, an escalation loop: two formations each require their own condition, which couples into it by level; in the flow with the act the first takes from the second's condition at step 0 and the second responds at step 1 by taking from the first's, while in the other flow nothing is taken; both flows balance, activity needs support, they start alike and the second responds through its couplings.",
       "declarations": [
         "Becoming.Loop.escalation",
         "Becoming.Loop.quiet",
@@ -139,24 +139,24 @@
   ],
   "hypotheses": [
     {
-      "zh": "经识回应（Flow.RespondsThroughCoupling）在这些定律中是给出的前提，定律只在回应所及之外用到它；它排除对未被识者的回应、噪声与未表示为条件的外来输入。",
-      "en": "Responding through registration (Flow.RespondsThroughCoupling) is a supplied premise in these laws, which use it only beyond the responsive reach; it excludes responding to what is not registered, noise, and outside inputs not represented as conditions."
+      "zh": "经其耦合回应（Flow.RespondsThroughCoupling）在这些定律中是给出的前提，定律只在回应所及之外用到它；它排除对不耦合入者的回应、噪声与未表示为条件的外来输入。",
+      "en": "Responding through the couplings (Flow.RespondsThroughCoupling) is a supplied premise in these laws, which use it only beyond the responsive reach; it excludes responding to what does not couple in, noise, and outside inputs not represented as conditions."
     },
     {
-      "zh": "其余遵从一个只读各形成所识的交换律时，该前提对律的任意两个进程是定理（ExchangeLaw.Through.responds，见 counterfactual-is-the-course）。",
-      "en": "Where the rest follows a law of exchange reading only what each formation registers, the premise is a theorem for any two courses of the law (ExchangeLaw.Through.responds, counterfactual-is-the-course)."
+      "zh": "其余遵从一个只读耦合入各形成者的交换律时，该前提对律的任意两个进程是定理（ExchangeLaw.Through.responds，见 counterfactual-is-the-course）。",
+      "en": "Where the rest follows a law of exchange reading only what couples into each formation, the premise is a theorem for any two courses of the law (ExchangeLaw.Through.responds, counterfactual-is-the-course)."
     },
     {
-      "zh": "每个读已立者的律经识一切而读，条件有限时经其敏感而读（ExchangeLaw.Nonanticipating.through_sensitive）；取律的敏感为识时，那些回应落在识之内，回应所及随之变宽。",
-      "en": "Every law of what has stood reads through registering everything, and with finitely many conditions through its sensitivity (ExchangeLaw.Nonanticipating.through_sensitive); with the law's sensitivity as the registration those responses fall within it and the responsive reach widens."
+      "zh": "每个读已立者的律都经一切之耦合而读，条件有限时经其敏感而读（ExchangeLaw.Nonanticipating.through_sensitive）；取律的敏感为耦合时，那些回应落在耦合之内，回应所及随之变宽。",
+      "en": "Every law of what has stood reads through the coupling of everything, and with finitely many conditions through its sensitivity (ExchangeLaw.Nonanticipating.through_sensitive); with the law's sensitivity as the coupling those responses fall within it and the responsive reach widens."
     },
     {
       "zh": "这时仍取的假设：交换律本身；它读已立者（ExchangeLaw.Nonanticipating）；第二个流为另一动作生成的进程时，进程可行（ExchangeLaw.Feasible，等价于它平衡）；敏感的形式还要条件有限、条件的相等可判定。",
       "en": "The hypotheses then still taken: the law of exchange itself; that it reads what has stood (ExchangeLaw.Nonanticipating); with the second flow the course another act generates, that course's feasibility (ExchangeLaw.Feasible, equivalent to its balance); and for the sensitivity form, finitely many conditions with decidable equality."
     },
     {
-      "zh": "限定的定律只在回应所及之外者所识的条件上逐步假设平衡（Flow.BalancesOn），并假设两个流的在场形成每步相同、在那些条件上起始相同。",
-      "en": "The confinement laws assume balance at each step only on the conditions registered by formations beyond the responsive reach (Flow.BalancesOn), the same formations present in both flows at every step, and a common start on those conditions."
+      "zh": "限定的定律只在耦合入回应所及之外者的条件上逐步假设平衡（Flow.BalancesOn），并假设两个流的在场形成每步相同、在那些条件上起始相同。",
+      "en": "The confinement laws assume balance at each step only on the conditions coupled into formations beyond the responsive reach (Flow.BalancesOn), the same formations present in both flows at every step, and a common start on those conditions."
     },
     {
       "zh": "主比较假设两个流全局平衡（Flow.Balances）、起始相同；意义 sig 是给定的，覆盖写成双重否定，不用判定；可判定的形式另取回应所及的判定为假设。",
@@ -177,8 +177,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "形成只经其识回应是给出的前提：在此既不推出它们这样回应，也不推出怎样回应。",
-      "en": "Responding only through registration is supplied: neither that formations respond so nor how they respond follows here.",
+      "zh": "形成只经其耦合回应是给出的前提：在此既不推出它们这样回应，也不推出怎样回应。",
+      "en": "Responding only through the couplings is supplied: neither that formations respond so nor how they respond follows here.",
       "kind": "non-implication"
     },
     {
@@ -192,8 +192,8 @@
       "kind": "non-implication"
     },
     {
-      "zh": "前提强于定律所用的；定律只用回应所及之外者在其所识条件上的交换。",
-      "en": "The premise is stronger than what the laws use, which is only the exchange of formations beyond the reach on what they register.",
+      "zh": "前提强于定律所用的；定律只用回应所及之外者在耦合入它的条件上的交换。",
+      "en": "The premise is stronger than what the laws use, which is only the exchange of formations beyond the reach on what couples into them.",
       "kind": "scope"
     },
     {
@@ -218,8 +218,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "detail": {
-        "zh": "前提可以不成立：Attracting 中取用者什么都不识（不需要任何条件、只识支持），却在储量较高时多取用（Attracting.higher_breaks_first）；按检视，那里没有部分时经识回应不成立，限定不被主张。本模块没有为此另立定理。",
-        "en": "The premise can fail: in Attracting the taker registers nothing (it requires nothing and registers support only), yet takes more where the stock is higher (Attracting.higher_breaks_first); by inspection, with no part, responding through registration fails there, and the confinement is not claimed. This module states no separate theorem for it."
+        "zh": "前提可以不成立：Attracting 中没有什么耦合入取用者（它不需要任何条件、只有支持耦合入），却在储量较高时多取用（Attracting.higher_breaks_first）；按检视，那里没有部分时经其耦合回应不成立，限定不被主张。本模块没有为此另立定理。",
+        "en": "The premise can fail: in Attracting nothing couples into the taker (it requires nothing, and only support couples in), yet it takes more where the stock is higher (Attracting.higher_breaks_first); by inspection, with no part, responding through the couplings fails there, and the confinement is not claimed. This module states no separate theorem for it."
       }
     }
   ],
@@ -238,8 +238,8 @@
     "en": "Loops under laws with no finite coupling strength (answered by how-a-carried-difference-grows where the strengths are given)."
   },
   "correspondence": {
-    "zh": "AI 把本理论与一般的因果系统（x_{t+1} = F(x_t, u_t, ε_t)、反馈、自适应参数、吸引子）作比较并提出五项改进之后，Ren 写道：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本项是其中第二项（提议是 AI 的）：其余回应时的反事实，回答本章开放项“其余交换随之调整的反事实”中其余经识回应的情形。读法（AI 的，依 Ren 的交托采用）：一个动作有两种反事实，其余固定时只计部分直接到达的，其余经识回应时计部分对经所识者影响的闭包；一个动作对与之相互作用的形成造成什么，在第二种之内决定；升级回路是每一方都经识回应、差别回到部分的情形，它不在其余固定的比较中出现；只识支持时回应所及是所及闭包之并，这给所及闭包一个反事实的意义：其余经其支持回应时，一个动作的差别所能到之处。来源中粘贴的因果系统文字（含军备竞赛的回路）作者未注明，不是 Ren 的话，也不是本理论的前提。",
-    "en": "After the AI compared the theory with a general cause–effect system (x_{t+1} = F(x_t, u_t, ε_t), feedback, adaptive parameters, attractors) and proposed five improvements, Ren wrote: “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This is the second proposal, the AI's: the counterfactual where the rest responds, answering, for the case where the rest responds through its registration, the chapter's open item “the counterfactual in which the rest of the exchange adjusts”. Readings (the AI's, adopted on Ren's delegation): an act has two counterfactuals, with the rest fixed, where only what the part reaches directly counts, and with the rest responding through its registration, where the part's closure under affecting what is registered counts; what an act does to formations that interact with it is decided within the second; an escalation loop is the case where each party responds through its registration and the difference returns to the part, which does not show in the comparison with the rest fixed; registering support only, the responsive reach is the union of the reach closures, which gives the reach closure a counterfactual meaning: where the difference an act makes can arrive when the rest responds through its support. The cause–effect text pasted in the source, including its arms-race loop, has no stated author; it is not Ren's wording and not a premise of the theory."
+    "zh": "AI 把本理论与一般的因果系统（x_{t+1} = F(x_t, u_t, ε_t)、反馈、自适应参数、吸引子）作比较并提出五项改进之后，Ren 写道：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本项是其中第二项（提议是 AI 的）：其余回应时的反事实，回答本章开放项“其余交换随之调整的反事实”中其余经其耦合回应的情形。读法（AI 的，依 Ren 的交托采用）：一个动作有两种反事实，其余固定时只计部分直接到达的，其余经其耦合回应时计部分对经耦合入者影响的闭包；一个动作对与之相互作用的形成造成什么，在第二种之内决定；升级回路是每一方都经其耦合回应、差别回到部分的情形，它不在其余固定的比较中出现；只经阈耦合时回应所及是所及闭包之并，这给所及闭包一个反事实的意义：其余经其支持回应时，一个动作的差别所能到之处。来源中粘贴的因果系统文字（含军备竞赛的回路）作者未注明，不是 Ren 的话，也不是本理论的前提。",
+    "en": "After the AI compared the theory with a general cause–effect system (x_{t+1} = F(x_t, u_t, ε_t), feedback, adaptive parameters, attractors) and proposed five improvements, Ren wrote: “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This is the second proposal, the AI's: the counterfactual where the rest responds, answering, for the case where the rest responds through its couplings, the chapter's open item “the counterfactual in which the rest of the exchange adjusts”. Readings (the AI's, adopted on Ren's delegation): an act has two counterfactuals, with the rest fixed, where only what the part reaches directly counts, and with the rest responding through its couplings, where the part's closure under affecting what couples in counts; what an act does to formations that interact with it is decided within the second; an escalation loop is the case where each party responds through its couplings and the difference returns to the part, which does not show in the comparison with the rest fixed; with coupling by threshold only, the responsive reach is the union of the reach closures, which gives the reach closure a counterfactual meaning: where the difference an act makes can arrive when the rest responds through its support. The cause–effect text pasted in the source, including its arms-race loop, has no stated author; it is not Ren's wording and not a premise of the theory."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
   "aliases": [
@@ -282,16 +282,16 @@
       },
       "interface": {
         "output": {
-          "zh": "从区域一侧：对经所识者受影响封闭、成员只经自己之识回应的区域，其成员识得相同。",
-          "en": "From a region's side: members of a region closed under being affected through what is registered, responding only through their own registration, register alike."
+          "zh": "从区域一侧：对经耦合入者受影响封闭、成员只经自己的耦合回应的区域，两个流经其成员的耦合无别。",
+          "en": "From a region's side: for a region closed under being affected through what couples in, its members responding only through their own couplings, the flows are alike through the members' couplings."
         },
         "input": {
-          "zh": "从部分一侧：回应所及之外的区域封闭，其成员识得相同、交换相同。",
-          "en": "From a part's side: the region beyond the responsive reach is closed, and its members register alike and exchange alike."
+          "zh": "从部分一侧：回应所及之外的区域封闭，两个流经其成员的耦合无别、成员交换相同。",
+          "en": "From a part's side: the region beyond the responsive reach is closed, and the flows are alike through its members' couplings and its members exchange alike."
         },
         "conditions": {
-          "zh": "在区域成员所识的条件上逐步平衡；两个流的在场形成相同；起始相同；其余经识回应。",
-          "en": "Balance at each step on what the region's members register; the same formations present; a common start; the rest responding through its registration."
+          "zh": "在耦合入区域成员的条件上逐步平衡；两个流的在场形成相同；起始相同；其余经其耦合回应。",
+          "en": "Balance at each step on what couples into the region's members; the same formations present; a common start; the rest responding through its couplings."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
       }
@@ -355,8 +355,8 @@
           "en": "The closure under a relation; the reach and influence closures."
         },
         "input": {
-          "zh": "回应所及是对经所识者影响的闭包；只识支持、一个流时是所及闭包之并；所及闭包是影响闭包之逆。",
-          "en": "The responsive reach is the closure under affecting what is registered; registering support only, with one flow, it is the union of reach closures; the reach closure is the converse of the influence closure."
+          "zh": "回应所及是对经耦合入者影响的闭包；只经阈耦合、一个流时是所及闭包之并；所及闭包是影响闭包之逆。",
+          "en": "The responsive reach is the closure under affecting what couples in; with coupling by threshold only and one flow, it is the union of reach closures; the reach closure is the converse of the influence closure."
         },
         "conditions": {
           "zh": "无。",
@@ -369,8 +369,8 @@
       "id": "laws-of-one-step",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Flow.BalancesOn 与 Flow.Balances.on：限定只在回应所及之外者所识的条件上逐步假设平衡，全局平衡给出它。",
-        "en": "Reuses Flow.BalancesOn and Flow.Balances.on: the confinement assumes balance at each step only on what formations beyond the responsive reach register, and global balance gives it."
+        "zh": "复用 Flow.BalancesOn 与 Flow.Balances.on：限定只在耦合入回应所及之外者的条件上逐步假设平衡，全局平衡给出它。",
+        "en": "Reuses Flow.BalancesOn and Flow.Balances.on: the confinement assumes balance at each step only on what couples into formations beyond the responsive reach, and global balance gives it."
       },
       "interface": {
         "output": {
@@ -393,15 +393,15 @@
     {
       "id": "runaway-distance-unregistered",
       "detail": {
-        "zh": "那里的下一步要求定义回路（水平影响取用、取用又影响水平）并把失控陈述为定理。Loop 只走了一小步：它是比较中一个定义好的两方回路的见证，其中第一个形成的动作经第二个的观察与回应回到第一个自身的支持，而其余固定的比较看不到它（Loop.returns）。它不是回路的一般定义，只有一个动作、一次回应、一个回合，没有增益或放大，也没有失控的定理；那里其余固定的假设在这里换为经识回应。",
-        "en": "Its next step asks to define a loop (levels affecting taking, and taking the levels) and to state a runaway itself as a theorem. Loop goes only a small way: it is a witness of a defined two-party loop in the comparison, in which the first formation's act returns to its own support through the second's observation and response, which the comparison with the rest fixed does not show (Loop.returns). It is not a general definition of a loop; it has one act, one response and one round, no gain or amplification, and no runaway theorem; the rest held fixed there is replaced here by responding through registration."
+        "zh": "那里的下一步要求定义回路（水平影响取用、取用又影响水平）并把失控陈述为定理。Loop 只走了一小步：它是比较中一个定义好的两方回路的见证，其中第一个形成的动作经耦合入第二个的水平与它的回应回到第一个自身的支持，而其余固定的比较看不到它（Loop.returns）。它不是回路的一般定义，只有一个动作、一次回应、一个回合，没有增益或放大，也没有失控的定理；那里其余固定的假设在这里换为经其耦合回应。",
+        "en": "Its next step asks to define a loop (levels affecting taking, and taking the levels) and to state a runaway itself as a theorem. Loop goes only a small way: it is a witness of a defined two-party loop in the comparison, in which the first formation's act returns to its own support through the level coupled into the second and its response, which the comparison with the rest fixed does not show (Loop.returns). It is not a general definition of a loop; it has one act, one response and one round, no gain or amplification, and no runaway theorem; the rest held fixed there is replaced here by responding through the couplings."
       }
     },
     {
       "id": "counterfactual-is-the-course",
       "detail": {
-        "zh": "推出本记录的前提：其余遵从一个只读各形成所识的交换律时，其余经识回应是定理；第二个流是另一动作生成的进程，比较不另给第二个流与回应；Loop.responds 由律推出（Loop.responds_by_law）。",
-        "en": "Derives this record's premise: where the rest follows a law of exchange reading only what each formation registers, responding through registration is a theorem; the second flow is the course another act generates, so the comparison supplies neither the second flow nor the response; Loop.responds follows from the law (Loop.responds_by_law)."
+        "zh": "推出本记录的前提：其余遵从一个只读耦合入各形成者的交换律时，其余经其耦合回应是定理；第二个流是另一动作生成的进程，比较不另给第二个流与回应；Loop.responds 由律推出（Loop.responds_by_law）。",
+        "en": "Derives this record's premise: where the rest follows a law of exchange reading only what couples into each formation, responding through the couplings is a theorem; the second flow is the course another act generates, so the comparison supplies neither the second flow nor the response; Loop.responds follows from the law (Loop.responds_by_law)."
       }
     },
     {

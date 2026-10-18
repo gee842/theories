@@ -1,0 +1,122 @@
+# Record learning-by-refutation, read by sense (N6); the record id stays; retired Lean names in live text follow RENAME-TABLE.
+### record:learning-by-refutation
+= L-elim @title/zh
+- 按否证学习
++ 逐除外推
+= L-elim @title/en
+- Learning by refutation
++ Extrapolation by elimination
+= L-miss @statement/zh
+- 每个学习者都有否证它每个主张的开放的序列；无记录固定下一个。被列表所持的世界中否证有界、静止不能被否证且只在那里静止，何时静止不被识；对类的学习是同一学习。
++ 每个外推都有一个开放的历程，使它提出的每个值都不合；无前段固定下一个值。被列表所持的世界中不合有界、静止不能被否证且只在那里静止，何时静止不显出；对类的学习是同一学习。
+= L-miss @statement/en
+- Every learner has an open course refuting each of its claims; no record fixes the next value. In a world held by a list the refutations are bounded, coming to rest is unrefuted and happens only there, and when is not registered; learning over classes is the same learning.
++ Every extrapolation has an open course on which each value it proposes misses; no prefix fixes the next value. In a world held by a list the misses are bounded, coming to rest is unrefuted and happens only there, and when does not show; learning over classes is the same learning.
+= L-miss @claim/zh
+- 被识的序列 o : Nat → O 是被识的值的序列（例如确定律之轨道的识）；第 t 步之前的记录 record o t（最新在前）；学习者是任意从记录作出的主张 pred : List O → Option O；主张被否证（Refuted）指它主张了一个值而所识的值不同；假设在序列上成立（Holds）指它在任何一步都不被否证。不加前提：对每个序列与每步 t，给出两个不同的值，有两个序列与它在 t 之前记录相同、在 t 分别取这两个值，从该记录作出的主张不在两者上都对（no_record_fixes_next），值可判定时在其中之一被否证（claim_refuted_on_one）；两者都是被列表所持之世界的序列（holdFrom_lasso、no_record_fixes_next_finite）。对每个学习者与移动每个值的 other，对角序列 diagonal pred other x 在每个主张处否证它（diagonal_refutes），所以在它上面学习者不从任何一步起都主张且正确（diagonal_unrested）；它是保留记录之律的识，没有列表持有该律的配置（record_diagonal、diagonal_open）。按否证学习（indexOn、learner：假设 H 依次排列，恰在所持者被否证时移向下一个；值可判定）从不越过成立的假设：H j 成立时指标至多为 j（index_le_of_holds），学习者不在任意晚处被否证（refutations_not_recurring）；越过的每个假设都在记录中某一步被否证（refuted_before）；相同的记录给出相同的假设与主张（learner_through_record）。套索（Lasso o i q：从第 i 步起以周期 q + 1 重复）：确定律的轨道被列表 l 所持时，其每个识都是套索且 i + q + 1 ≤ l.length（lasso_of_held）；每个套索都是被列表所持之世界的识（lasso_realized）。套索假设按对角次序排列（lassos、pairAt、pairAt_place）时：在套索序列上学习者至多被否证 tri (i + q) + q 次、从第 i + q + 1 步起每步主张、不在任意晚处被否证（lasso_learner_bounded），它从某步起每步主张且正确这一点不能被否证（rest_unrefuted，双重否定）；它从某步起每步主张且正确时，序列是套索（lasso_of_rest）；轨道被列表 l 所持时，被否证少于 tri l.length 次、从第 l.length 步起每步主张、不在任意晚处被否证（held_learner_bounded），静止不能被否证（held_rest_unrefuted）；它的对角序列不是套索（diagonal_not_lasso）；有界不降的计数从某步起不变这一点不能被否证（stable_unrefuted）。类 G c 沿对合并（merged）时，G c j 成立则合并枚举上的学习者指标至多为 tri (c + j) + j（merged_bound），而每种合并的学习者在其对角序列上不静止（merged_unrested）。见证：Alternate（false, true, false, …）上学习者被否证两次，从第三步起每步正确（Alternate.index_three、Alternate.rests）。
++ 历程 o : Nat → O 是值的序列（例如确定律之轨道经映射所读）；第 t 步之前的前段 prefixOf o t（最新在前）；外推是任意从前段到所提出之值或默的映射 pred : List O → Option O；所提出的值不合（Misses）指它提出了一个值而来到的值不同；候选在历程上相合（Accords）指它在任何一步都不不合。不加前提：对每个历程与每步 t，给出两个不同的值，有两个历程与它在 t 之前前段相同、在 t 分别取这两个值，从该前段提出的值不在两者上都对（no_prefix_fixes_next），值可判定时在其中之一不合（claim_missed_on_one）；两者都是被列表所持之世界的历程（holdFrom_lasso、no_prefix_fixes_next_finite）。对每个外推与移动每个值的 other，对角序列 diagonal pred other x 使它提出的每个值都不合（diagonal_misses），所以在它上面外推不从任何一步起都提出且正确（diagonal_unrested）；它是保留全部前段之律的历程，没有列表持有该律的配置（prefix_diagonal、diagonal_open）。逐除外推（indexOn、byElimination：候选 H 依次排列，恰在所持者不合时移向下一个；值可判定）从不越过相合的候选：H j 相合时指标至多为 j（index_le_of_accords），外推不在任意晚处不合（misses_not_recurring）；越过的每个候选都在前段中某一步不合（missed_before）；相同的前段给出相同的候选与所提出的值（byElimination_through_prefix）。套索（Lasso o i q：从第 i 步起以周期 q + 1 重复）：确定律的轨道被列表 l 所持时，其经每个映射的历程都是套索且 i + q + 1 ≤ l.length（lasso_of_held）；每个套索都是被列表所持之世界经映射的历程（lasso_realized）。套索候选按对角次序排列（lassos、pairAt、pairAt_place）时：在套索历程上外推至多不合 tri (i + q) + q 次、从第 i + q + 1 步起每步提出、不在任意晚处不合（lasso_byElimination_bounded），它从某步起每步提出且正确这一点不能被否证（rest_unrefuted，双重否定）；它从某步起每步提出且正确时，历程是套索（lasso_of_rest）；轨道被列表 l 所持时，不合少于 tri l.length 次、从第 l.length 步起每步提出、不在任意晚处不合（held_byElimination_bounded），静止不能被否证（held_rest_unrefuted）；它的对角序列不是套索（diagonal_not_lasso）；有界不降的计数从某步起不变这一点不能被否证（stable_unrefuted）。类 G c 沿对合并（merged）时，G c j 相合则合并枚举上的外推指标至多为 tri (c + j) + j（merged_bound），而每种合并的外推在其对角序列上不静止（merged_unrested）。见证：Alternate（false, true, false, …）上外推不合两次，从第三步起每步正确（Alternate.index_three、Alternate.rests）。
+= L-miss @claim/en
+- A course o : Nat → O is a sequence of registered values (such as the registration of a determined law's orbit); record o t is its record before step t, latest first; a learner is any claim pred : List O → Option O made from a record; a claim is refuted (Refuted) when it claims a value and the registered value differs; a hypothesis holds on a course (Holds) when it is refuted at no step. With no premise: for every course and step t, given two values, two courses share its record before t and take the one and the other value at t, and a claim made from that record is not right on both (no_record_fixes_next), and with values decided is refuted on one of them (claim_refuted_on_one); both are courses of worlds held by a list (holdFrom_lasso, no_record_fixes_next_finite). For every learner and every other moving each value, the diagonal course diagonal pred other x refutes each of its claims (diagonal_refutes), so on it the learner does not, from any step on, claim at every step and be right (diagonal_unrested); it is the registration of a law keeping its record, whose configurations no list holds (record_diagonal, diagonal_open). Learning by refutation (indexOn, learner: hypotheses H in order, moving on exactly where the one held is refuted; values decided) never passes a hypothesis that holds: where H j holds the index is at most j (index_le_of_holds) and the learner is not refuted at arbitrarily late steps (refutations_not_recurring); every hypothesis passed was refuted on the record at some step (refuted_before); one record gives one hypothesis and one claim (learner_through_record). Lassos (Lasso o i q: repeating from step i with period q + 1): where a determined law's orbit is held by a list l, every registration of it is a lasso with i + q + 1 ≤ l.length (lasso_of_held); every lasso is the registration of a world held by a list (lasso_realized). With the lasso hypotheses in diagonal order (lassos, pairAt, pairAt_place): on a lasso course the learner is refuted at most tri (i + q) + q times, claims at every step from step i + q + 1 on and is not refuted at arbitrarily late steps (lasso_learner_bounded), and that from some step on it claims at every step and is right is unrefuted (rest_unrefuted, a double negation); where from some step on it claims at every step and is right, the course is a lasso (lasso_of_rest); where the orbit is held by a list l it is refuted fewer than tri l.length times, claims at every step from step l.length on and is not refuted at arbitrarily late steps (held_learner_bounded), its coming to rest unrefuted (held_rest_unrefuted); its diagonal course is no lasso (diagonal_not_lasso); that a bounded count that never falls is constant from some step on is unrefuted (stable_unrefuted). With classes G c merged along the pairs (merged), where G c j holds the learner over the merged enumeration has index at most tri (c + j) + j (merged_bound), and the learner over every merging is unrested on its diagonal course (merged_unrested). Witness: on Alternate (false, true, false, …) the learner is refuted twice and right at every step from the third (Alternate.index_three, Alternate.rests).
++ A course o : Nat → O is a sequence of values (such as a determined law's orbit read through a map); prefixOf o t is its prefix before step t, latest first; an extrapolation is any map pred : List O → Option O from a prefix to a proposed value or silence; a proposed value misses (Misses) when a value is proposed and the value that comes differs; a candidate accords with a course (Accords) when it misses at no step. With no premise: for every course and step t, given two values, two courses share its prefix before t and take the one and the other value at t, and a value proposed from that prefix is not right on both (no_prefix_fixes_next), and with values decided misses on one of them (claim_missed_on_one); both are courses of worlds held by a list (holdFrom_lasso, no_prefix_fixes_next_finite). For every extrapolation and every other moving each value, the diagonal course diagonal pred other x makes each value it proposes miss (diagonal_misses), so on it the extrapolation does not, from any step on, propose at every step and be right (diagonal_unrested); it is the course of a law keeping its whole prefix, whose configurations no list holds (prefix_diagonal, diagonal_open). Extrapolation by elimination (indexOn, byElimination: candidates H in order, moving on exactly where the one held misses; values decided) never passes a candidate that accords: where H j accords the index is at most j (index_le_of_accords) and the extrapolation does not miss at arbitrarily late steps (misses_not_recurring); every candidate passed missed within the prefix at some step (missed_before); one prefix gives one candidate and one proposed value (byElimination_through_prefix). Lassos (Lasso o i q: repeating from step i with period q + 1): where a determined law's orbit is held by a list l, its course through every map is a lasso with i + q + 1 ≤ l.length (lasso_of_held); every lasso is the course through a map of a world held by a list (lasso_realized). With the lasso candidates in diagonal order (lassos, pairAt, pairAt_place): on a lasso course the extrapolation misses at most tri (i + q) + q times, proposes at every step from step i + q + 1 on and does not miss at arbitrarily late steps (lasso_byElimination_bounded), and that from some step on it proposes at every step and is right is unrefuted (rest_unrefuted, a double negation); where from some step on it proposes at every step and is right, the course is a lasso (lasso_of_rest); where the orbit is held by a list l it misses fewer than tri l.length times, proposes at every step from step l.length on and does not miss at arbitrarily late steps (held_byElimination_bounded), its coming to rest unrefuted (held_rest_unrefuted); its diagonal course is no lasso (diagonal_not_lasso); that a bounded count that never falls is constant from some step on is unrefuted (stable_unrefuted). With classes G c merged along the pairs (merged), where G c j accords the extrapolation over the merged enumeration has index at most tri (c + j) + j (merged_bound), and the extrapolation over every merging is unrested on its diagonal course (merged_unrested). Witness: on Alternate (false, true, false, …) the extrapolation misses twice and is right at every step from the third (Alternate.index_three, Alternate.rests).
+= N5 @hypotheses/0/zh
+- 不加公理。值可判定相等（DecidableEq O）只作为学习者（按否证学习、套索学习者、合并学习者与 diagonal_not_lasso）与 swapTo（另一个值）的条件出现，并只在 claim_refuted_on_one 与 eq_of_not_refuted 的证明中用到；no_record_fixes_next 与 diagonal_refutes、diagonal_unrested、diagonal_open 不用它（逐条见可判定性清点）。
++ 不加公理。值可判定相等（DecidableEq O）只作为外推（逐除外推、套索外推、合并外推与 diagonal_not_lasso）与 swapTo（另一个值）的条件出现，并只在 claim_missed_on_one 与 eq_of_not_missed 的证明中用到；no_prefix_fixes_next 与 diagonal_misses、diagonal_unrested、diagonal_open 不用它（逐条见可判定性清点）。
+= N5 @hypotheses/0/en
+- No axiom. Decidable equality of values (DecidableEq O) appears only as a condition of the learner (learning by refutation, the lasso learner, the merged learner and diagonal_not_lasso) and of swapTo (another value), and is used only in the proofs of claim_refuted_on_one and eq_of_not_refuted; no_record_fixes_next and diagonal_refutes, diagonal_unrested and diagonal_open do not use it (each is listed in the decidability inventory).
++ No axiom. Decidable equality of values (DecidableEq O) appears only as a condition of the extrapolation (extrapolation by elimination, the lasso extrapolation, the merged extrapolation and diagonal_not_lasso) and of swapTo (another value), and is used only in the proofs of claim_missed_on_one and eq_of_not_missed; no_prefix_fixes_next and diagonal_misses, diagonal_unrested and diagonal_open do not use it (each is listed in the decidability inventory).
+= L-elim @hypotheses/1/zh
+- 每条定理的条件写在其中：两个不同的值（no_record_fixes_next）；other 移动每个值（对角）；某个假设成立（index_le_of_holds、refutations_not_recurring）；序列是套索或轨道被列表所持（lasso_learner_bounded、held_learner_bounded）。假设的列表 H 与类 G 由学习之外给出。
++ 每条定理的条件写在其中：两个不同的值（no_prefix_fixes_next）；other 移动每个值（对角）；某个候选相合（index_le_of_accords、misses_not_recurring）；历程是套索或轨道被列表所持（lasso_byElimination_bounded、held_byElimination_bounded）。候选的列表 H 与类 G 由学习之外给出。
+= L-elim @hypotheses/1/en
+- Each theorem's conditions are written into it: two different values (no_record_fixes_next); other moving every value (the diagonal); some hypothesis holding (index_le_of_holds, refutations_not_recurring); the course being a lasso or the orbit held by a list (lasso_learner_bounded, held_learner_bounded). The hypotheses H and the classes G are supplied from outside the learning.
++ Each theorem's conditions are written into it: two different values (no_prefix_fixes_next); other moving every value (the diagonal); some candidate according (index_le_of_accords, misses_not_recurring); the course being a lasso or the orbit held by a list (lasso_byElimination_bounded, held_byElimination_bounded). The candidates H and the classes G are supplied from outside the learning.
+= L-miss @hypotheses/2/zh
+- 静止只以双重否定陈述（rest_unrefuted、held_rest_unrefuted、stable_unrefuted），名称依整合者的规则带“unrefuted”：此处不给出静止之步（并未证明不能给出；P83 给出它：轨道被长 N 的列表所持时，学习者从第 N + (2N − 1)·tri N 步起每步主张且正确，Identification.held_byElimination_rests，这一步由界给出，学习者的记录不表明它）；“不在任意晚处被否证”是“否证复现”的否定，不是“从某步起不被否证”。
++ 静止只以双重否定陈述（rest_unrefuted、held_rest_unrefuted、stable_unrefuted），名称依整合者的规则带“unrefuted”：此处不给出静止之步（并未证明不能给出；P83 给出它：轨道被长 N 的列表所持时，外推从第 N + (2N − 1)·tri N 步起每步提出且正确，Identification.held_byElimination_rests，这一步由界给出，外推的前段不表明它）；“不在任意晚处不合”是“不合复现”的否定，不是“从某步起不不合”。
+= L-miss @hypotheses/2/en
+- Coming to rest is stated only as a double negation (rest_unrefuted, held_rest_unrefuted, stable_unrefuted), the names carrying “unrefuted” under the integrator's rule: the step of rest is not stated here (not shown impossible; P83 states it: where the orbit is held by a list of length N, the learner claims and is right at every step from N + (2N − 1)·tri N on, Identification.held_byElimination_rests, a step the bound gives and the learner's record does not show); “not refuted at arbitrarily late steps” is the negation of refutations recurring, not “unrefuted from some step on”.
++ Coming to rest is stated only as a double negation (rest_unrefuted, held_rest_unrefuted, stable_unrefuted), the names carrying “unrefuted” under the integrator's rule: the step of rest is not stated here (not shown impossible; P83 states it: where the orbit is held by a list of length N, the extrapolation proposes and is right at every step from N + (2N − 1)·tri N on, Identification.held_byElimination_rests, a step the bound gives and the extrapolation's prefix does not show); “not missing at arbitrarily late steps” is the negation of misses recurring, not “no miss from some step on”.
+= L-elim
+- 休谟的问题在 no_record_fixes_next；按否证学习是 Gold 意义上的极限识别，静止不被识；元层次是再学习，没有顶层（merged_unrested 的读法）；智慧不是一个完成的学习者。
++ 休谟的问题在 no_prefix_fixes_next；逐除外推是 Gold 意义上的极限识别，静止不显出；元层次是再学习，没有顶层（merged_unrested 的读法）；智慧不是一个完成的外推。
+= L-elim
+- Hume's problem sits at no_record_fixes_next; learning by refutation is identification in the limit in Gold's sense, its rest unregistered; the meta level is learning again, with no top (the reading of merged_unrested); wisdom is never a completed learner.
++ Hume's problem sits at no_prefix_fixes_next; extrapolation by elimination is identification in the limit in Gold's sense, its rest not showing; the meta level is learning again, with no top (the reading of merged_unrested); wisdom is never a completed extrapolation.
+= S1
+- 增量是把返回读到识上：被列表所持的轨道的识是套索，保留记录之律的识是对角序列。
++ 增量是把返回读到经映射的历程上：被列表所持的轨道经映射的历程是套索，保留全部前段之律的历程是对角序列。
+= S1
+- The delta reads return off the registration: the registration of an orbit held by a list is a lasso, and the registration of a law keeping its record is the diagonal course.
++ The delta reads return off the course through a map: the course through a map of an orbit held by a list is a lasso, and the course of a law keeping its whole prefix is the diagonal course.
+= S1 @dependencies/0/interface/input/zh
+- 被列表所持之世界的识是套索；对角序列的世界开放。
++ 被列表所持之世界经映射的历程是套索；对角序列的世界开放。
+= S1 @dependencies/0/interface/input/en
+- The registration of a world held by a list is a lasso; the diagonal course's world is open.
++ The course through a map of a world held by a list is a lasso; the diagonal course's world is open.
+= L-prefix @dependencies/1/detail/zh
+- P49 的 Web.tail_unexcluded（没有模型，有限记录不否证关于其后的主张）是水平历史上的同一规律；这里对任意被识的序列陈述（no_record_fixes_next），并给出它的正面一侧：被列表所持的世界中按否证学习否证有界。
++ P49 的 Web.tail_unexcluded（没有模型，有限前段不排除关于其后的主张）是水平历史上的同一规律；这里对任意历程陈述（no_prefix_fixes_next），并给出它的正面一侧：被列表所持的世界中逐除外推的不合有界。
+= L-prefix @dependencies/1/detail/en
+- P49's Web.tail_unexcluded (without a model no finite record refutes a claim about what follows) is the same law for level histories; here it is stated for every course (no_record_fixes_next), with its positive side: in a world held by a list learning by refutation is refuted a bounded number of times.
++ P49's Web.tail_unexcluded (without a model no finite prefix excludes a claim about what follows) is the same law for level histories; here it is stated for every course (no_prefix_fixes_next), with its positive side: in a world held by a list extrapolation by elimination misses a bounded number of times.
+= S5 @dependencies/1/interface/output/zh
+- 主张只经所识的差别被否证；无模型时记录不否证关于其后的主张。
++ 主张只经耦合入者的差别被排除；无模型时前段不排除关于其后的主张。
+= S5 @dependencies/1/interface/output/en
+- A claim is refuted only through a registered difference; without a model the record refutes no claim about what follows.
++ A claim is excluded only through a difference in what couples in; without a model the prefix excludes no claim about what follows.
+= L-miss @dependencies/1/interface/input/zh
+- 被识的序列上的否证与学习。
++ 历程上的不合与学习。
+= L-miss @dependencies/1/interface/input/en
+- Refutation and learning on a course of registered values.
++ Misses and learning on a course.
+= L-elim @dependencies/1/interface/conditions/zh
+- 识能分辨值（按否证学习处）。
++ 映射之值能被分辨（逐除外推处）。
+= L-elim @dependencies/1/interface/conditions/en
+- A registration that tells values apart (for learning by refutation).
++ Values through the map that can be told apart (for extrapolation by elimination).
+= L-prefix
+- 这里记录不固定下一个值，套索的返回就是使学习静止的返回。
++ 这里前段不固定下一个值，套索的返回就是使学习静止的返回。
+= L-prefix
+- here the record fixes no next value, and a lasso's return
++ here the prefix fixes no next value, and a lasso's return
+= L-prefix
+- 这里说从记录选出模型的学习何时静止。
++ 这里说从前段选出模型的学习何时静止。
+= L-prefix
+- here, when learning that selects a model from the record comes to rest.
++ here, when learning that selects a model from the prefix comes to rest.
+= L-feature @related/3/detail/zh
+- 识不分辨配置之处：某个学习者在每个配置上静止，恰当所识的未来相同的配置其目标从某步起一致；学习者仍须分辨所识的值。
++ 映射不分辨配置之处：某个外推在每个配置上静止，恰当经映射的未来相同的配置其特征从某步起一致；外推仍须分辨经映射的值。
+= L-feature @related/3/detail/en
+- Where registration does not tell configurations apart: some learner rests at every configuration exactly where configurations with the same registered future have targets agreeing from some step on; the learner still tells registered values apart.
++ Where the map does not tell configurations apart: some extrapolation rests at every configuration exactly where configurations with the same future through the map have features agreeing from some step on; the extrapolation still tells the values through the map apart.
+= L-miss @counterexamples/0/detail/zh
+- 没有学习者在每个序列上静止：对角序列在每个主张处否证它（diagonal_unrested），套索学习者的对角序列不是套索（diagonal_not_lasso）。
++ 没有外推在每个历程上静止：对角序列使它提出的每个值都不合（diagonal_unrested），套索外推的对角序列不是套索（diagonal_not_lasso）。
+= L-miss @counterexamples/0/detail/en
+- No learner rests on every course: the diagonal course refutes each of its claims (diagonal_unrested), and the lasso learner's diagonal course is no lasso (diagonal_not_lasso).
++ No extrapolation rests on every course: the diagonal course makes each value it proposes miss (diagonal_unrested), and the lasso extrapolation's diagonal course is no lasso (diagonal_not_lasso).
+= L-elim
+- 一个实际形成持有哪些假设或类、它的识是否分辨值、它的世界是否被列表所持，不推出
++ 一个实际形成持有哪些候选或类、它经映射的值能否被分辨、它的世界是否被列表所持，不推出
+= L-elim
+- Which hypotheses or classes an actual formation holds, whether its registration tells values apart and whether its world is held by a list are not derived
++ Which candidates or classes an actual formation holds, whether its values through a map can be told apart and whether its world is held by a list are not derived
+= S2
+- 增量是与识、实验、机制与选择接为一体
++ 增量是与耦合、实验、机制与选择接为一体
+= S2
+- the delta being their integration with registration, experiment, mechanism and selection
++ the delta being their integration with coupling, experiment, mechanism and selection
+= S7 @next_delta/zh
+- 所识的值本身不被分辨时的学习（识不分辨配置时的可学性见 learnable-through-registration）；概率的读法；与 registration-within-what-it-registers（在其所识之内的识在每一步不完全）的连接。
++ 经映射的值本身不被分辨时的学习（映射不分辨配置时的可学性见 learnable-through-registration）；概率的读法；与 registration-within-what-it-registers（在所读之中的读法族在每一步不完备）的连接。
+= S7 @next_delta/en
+- Learning where the registered values themselves are not told apart (learnability where registration does not tell configurations apart is in learnable-through-registration); a probabilistic reading; the connection with registration-within-what-it-registers (a registration within what it registers incomplete at every step).
++ Learning where the values through the map themselves are not told apart (learnability where the map does not tell configurations apart is in learnable-through-registration); a probabilistic reading; the connection with registration-within-what-it-registers (a family of readings within what it reads, incomplete at every step).

@@ -10,13 +10,13 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "凡一个过程的运行所识的是同一历程之处，配置数为 N 时，记录从 2N − 1 起确定它，与确定的律一样。在分开之处，没有学习者，无论被给予什么（世界在内），在两个运行上都对；列出、可判定的过程中，被给予世界的学习者恰在不分开之处都对。",
-    "en": "Wherever the runs of a process register one course, a record fixes it from 2N − 1 on with N configurations, as for determined laws. At a parting no learner, whatever it is given, is right on both runs; for listed, decided processes a learner given the world is right exactly where none part."
+    "zh": "凡一个过程的运行经映射是同一历程之处，配置数为 N 时，前段从 2N − 1 起确定它，与确定的律一样。在分开之处，没有外推，无论被给予什么（过程在内），在两个运行上都对；列出、可判定的过程中，依过程所建的外推恰在不分开之处都对。",
+    "en": "Wherever the runs of a process have one course through the map, a prefix fixes it from 2N − 1 on with N configurations, as for determined laws. At a parting no extrapolation, whatever it is given, is right on both runs; for listed, decided processes the extrapolation built from the process is right exactly where none part."
   },
   "laws": [
     {
-      "zh": "两个运行在某步之前所识相同、在该步不同，即在该步分开；两者在该步之前的记录是同一个，所以没有学习者，无论被给予什么，在两者上都对；在从一个配置出发的每个运行上从 T 起都对的学习者，使这些运行在 T 之后不分开。",
-      "en": "Two runs part at a step where they register the same before it and differ at it; their records before it are one, so no learner, whatever it is given, is right on both; a learner right from T on, on every run from a configuration, leaves no two of those runs parting from T on.",
+      "zh": "两个运行在某步之前经映射取同一值、在该步取不同值，即在该步分开；两者在该步之前的前段是同一个，所以没有外推，无论被给予什么，在两者上都对；在从一个配置出发的每个运行上从 T 起都对的外推，使这些运行在 T 之后不分开。",
+      "en": "Two runs part at a step where they take one value through the map before it and different values at it; their prefixes before it are one, so no extrapolation, whatever it is given, is right on both; an extrapolation right from T on, on every run from a configuration, leaves no two of those runs parting from T on.",
       "declarations": [
         "Becoming.Parting.PartAt",
         "Becoming.Parting.RightAt",
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "zh": "所识的值可判定时，从一个配置出发没有两个运行分开，恰当它们所识的是同一历程。",
-      "en": "With the registered values decided, no two runs from a configuration part exactly where all of them register one course.",
+      "zh": "经映射的值可判定时，从一个配置出发没有两个运行分开，恰当它们经映射的是同一历程。",
+      "en": "With the values through the map decided, no two runs from a configuration part exactly where all of them have one course through the map.",
       "declarations": [
         "Becoming.Parting.Unparted",
         "Becoming.Parting.unparted_iff"
@@ -46,8 +46,8 @@
       ]
     },
     {
-      "zh": "从不分开的配置出发、被 N 个配置的列表所持的运行，其所识的历程至多有 N 个状态，以最小的界读记录的学习者不被给予什么，从 N + N − 1 起每步都对；N ≥ 2 时没有学习者在每个这样的运行上于 N + N − 2 都对。",
-      "en": "On a run from an unparted configuration held by a list of N configurations the registered course has at most N states, and the learner by the least bound, given nothing, is right from N + N − 1 on; for N ≥ 2 no learner is right at N + N − 2 on every such run of every process of N configurations.",
+      "zh": "从不分开的配置出发、被 N 个配置的列表所持的运行，其经映射的历程至多有 N 个状态，按最小的界的外推不被给予什么，从 N + N − 1 起每步都对；N ≥ 2 时没有外推在每个这样的运行上于 N + N − 2 都对。",
+      "en": "On a run from an unparted configuration held by a list of N configurations the course through the map has at most N states, and the extrapolation by the least bound, given nothing, is right from N + N − 1 on; for N ≥ 2 no extrapolation is right at N + N − 2 on every such run of every process of N configurations.",
       "declarations": [
         "Becoming.Parting.course_statesBelow",
         "Becoming.Parting.leastBound_right",
@@ -55,8 +55,8 @@
       ]
     },
     {
-      "zh": "一个动作的确定过程处处不分开，所以确定的律是实例；分支不显于所识者也不分开。",
-      "en": "A determined process with one move parts nowhere, so determined laws are the instance; a branching that does not show in what is registered parts nowhere either.",
+      "zh": "一个动作的确定过程处处不分开，所以确定的律是实例；不经映射显出的分支也不分开。",
+      "en": "A determined process with one move parts nowhere, so determined laws are the instance; a branching that does not show through the map parts nowhere either.",
       "declarations": [
         "Becoming.Parting.states_agree",
         "Becoming.Parting.unparted_of_determined",
@@ -64,8 +64,8 @@
       ]
     },
     {
-      "zh": "自由分支下每个历程都是一个运行的历程；每个记录之后，两个有这一记录的运行分开，每个学习者在其中一个上于下一步不对，且有一个运行使它每步都不对。",
-      "en": "Under free branching every course is a run's course; after every record two runs with that record part, every learner is not right at the next step on one of them, and one run makes it wrong at every step.",
+      "zh": "自由分支下每个历程都是一个运行的历程；每个前段之后，两个有这一前段的运行分开，每个外推在其中一个上于下一步不对，且有一个运行使它每步都不对。",
+      "en": "Under free branching every course is a run's course; after every prefix two runs with that prefix part, every extrapolation is not right at the next step on one of them, and one run makes it wrong at every step.",
       "declarations": [
         "Becoming.Parting.free",
         "Becoming.Parting.freeRun",
@@ -76,16 +76,16 @@
       ]
     },
     {
-      "zh": "两个值上的自由分支被两个配置的列表所持，其中一个运行所识的历程没有状态数的界。",
-      "en": "Free branching on two values is held by a list of two configurations, and one of its runs has a registered course with no bound on its states.",
+      "zh": "两个值上的自由分支被两个配置的列表所持，其中一个运行经映射的历程没有状态数的界。",
+      "en": "Free branching on two values is held by a list of two configurations, and one of its runs has a course through the map with no bound on its states.",
       "declarations": [
         "Becoming.Parting.free_held",
         "Becoming.Parting.free_unbounded"
       ]
     },
     {
-      "zh": "运行只在 T 步之前分开、此后不分开时，所识的值可判定，从一个运行在 T 所在处出发没有两个运行分开；被 N 个配置所持时其历程至多 T + N 个状态，以最小的界读记录的学习者从 2(T + N) − 1 起每步都对。",
-      "en": "Where runs part only before step T and never after, the registered values decided, no two runs part from where a run is at T; held by N configurations its course has at most T + N states, and the learner by the least bound is right from 2(T + N) − 1 on.",
+      "zh": "运行只在 T 步之前分开、此后不分开时，经映射的值可判定，从一个运行在 T 所在处出发没有两个运行分开；被 N 个配置所持时其历程至多 T + N 个状态，按最小的界的外推从 2(T + N) − 1 起每步都对。",
+      "en": "Where runs part only before step T and never after, the values through the map decided, no two runs part from where a run is at T; held by N configurations its course has at most T + N states, and the extrapolation by the least bound is right from 2(T + N) − 1 on.",
       "declarations": [
         "Becoming.Parting.unparted_at_of_late",
         "Becoming.Parting.statesBelow_shift",
@@ -121,8 +121,8 @@
       ]
     },
     {
-      "zh": "反方向：步与所识的值可判定时，被给予世界的学习者从记录读出运行可能所在的配置，取第一个由之可走下去者，说它所识的值；它在某步于从一个配置出发的每个运行上都对，恰当没有两个这样的运行在该步分开；所以某个学习者在那里对，恰当没有运行在那里分开。",
-      "en": "The converse: with decided steps and registered values, the learner given the world reads from the record the configurations a run can be at, takes the first from which a run goes on, and claims what it registers; it is right at a step on every run from a configuration exactly where no two of those runs part there, so some learner is right there exactly where none part.",
+      "zh": "反方向：步与经映射的值可判定时，依过程所建的外推从前段读出运行可能所在的配置，取第一个由之可走下去者，提出它经映射的值；它在某步于从一个配置出发的每个运行上都对，恰当没有两个这样的运行在该步分开；所以某个外推在那里对，恰当没有运行在那里分开。",
+      "en": "The converse: with decided steps and values through the map, the extrapolation built from the process reads from the prefix the configurations a run can be at, takes the first from which a run goes on, and proposes its value through the map; it is right at a step on every run from a configuration exactly where no two of those runs part there, so some extrapolation is right there exactly where none part.",
       "declarations": [
         "Becoming.Parting.keepIf",
         "Becoming.Parting.mem_keepIf",
@@ -141,12 +141,12 @@
   ],
   "hypotheses": [
     {
-      "zh": "不加公理。各律所写者写在定理中：运行被列表所持，起点的配置不分开或从 T 起不分开；unparted_iff、leastBound_right、late_* 与 free_open 要所识的值可判定；world_right 等要动作与配置列出、步可判定；free_never_right、free_held 与 free_unbounded 陈述在两个值上。",
-      "en": "No axiom. What each law needs is written into it: a run held by a list, a start unparted or unparted from T on; unparted_iff, leastBound_right, the late_ laws and free_open need the registered values decided; world_right and its kin need listed moves and configurations and decided steps; free_never_right, free_held and free_unbounded are stated on two values (Bool)."
+      "zh": "不加公理。各律所写者写在定理中：运行被列表所持，起点的配置不分开或从 T 起不分开；unparted_iff、leastBound_right、late_* 与 free_open 要经映射的值可判定；world_right_iff 等要动作与配置列出、步可判定；free_never_right、free_held 与 free_unbounded 陈述在两个值上。",
+      "en": "No axiom. What each law needs is written into it: a run held by a list, a start unparted or unparted from T on; unparted_iff, leastBound_right, the late_ laws and free_open need the values through the map decided; world_right_iff and its kin need listed moves and configurations and decided steps; free_never_right, free_held and free_unbounded are stated on two values (Bool)."
     },
     {
-      "zh": "学习者读配置所识的值；动作只在识读它们时被识（例如配置带着它的上一个动作）。",
-      "en": "The learner reads the values registered at configurations; moves register only where the registration reads them (for instance, where a configuration carries its last move)."
+      "zh": "外推读配置经映射的值；动作只在映射读它们时显出（例如配置带着它的上一个动作）。",
+      "en": "The extrapolation reads the values of configurations through the map; moves show only where the map reads them (for instance, where a configuration carries its last move)."
     }
   ],
   "does_not_show": [
@@ -157,8 +157,8 @@
       "witness": "Becoming.Parting.free_unbounded"
     },
     {
-      "zh": "无限或步不可判定的过程中被给予世界的学习者：构造要配置与动作列出、步可判定，那里由之能否走下去一般不可判定。",
-      "en": "The learner given the world for infinite or undecided processes: the construction needs listed moves and configurations and decided steps, and elsewhere whether a run goes on is not decided in general.",
+      "zh": "无限或步不可判定的过程中依过程所建的外推：构造要配置与动作列出、步可判定，那里由之能否走下去一般不可判定。",
+      "en": "The extrapolation built from the process for infinite or undecided processes: the construction needs listed moves and configurations and decided steps, and elsewhere whether a run goes on is not decided in general.",
       "kind": "scope"
     },
     {
@@ -171,8 +171,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "detail": {
-        "zh": "free_parts_after：每个记录之后，自由分支上两个有这一记录的运行分开；free_never_right：对每个学习者，自由分支上的对角运行使它每步都不对；free_unbounded：两个配置上的一个运行，其历程不是任何套索，没有状态数的界。",
-        "en": "free_parts_after: after every record two runs of free branching with that record part; free_never_right: for every learner, the diagonal run of free branching makes it wrong at every step; free_unbounded: a run on two configurations whose course is no lasso and has no bound on its states."
+        "zh": "free_parts_after：每个前段之后，自由分支上两个有这一前段的运行分开；free_never_right：对每个外推，自由分支上的对角运行使它每步都不对；free_unbounded：两个配置上的一个运行，其历程不是任何套索，没有状态数的界。",
+        "en": "free_parts_after: after every prefix two runs of free branching with that prefix part; free_never_right: for every extrapolation, the diagonal run of free branching makes it wrong at every step; free_unbounded: a run on two configurations whose course is no lasso and has no bound on its states."
       }
     }
   ],
@@ -188,12 +188,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T193101.075446Z): the 62 declarations of Becoming.Parting, 43 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 140 and 150; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
-    "zh": "无限或步不可判定的过程中被给予世界的学习者能对之处；2(T + N) − 1 的恰好性。",
-    "en": "Where a learner given the world can be right for infinite or undecided processes; the exactness of 2(T + N) − 1."
+    "zh": "无限或步不可判定的过程中依过程所建的外推能对之处；2(T + N) − 1 的恰好性。",
+    "en": "Where an extrapolation built from the process can be right for infinite or undecided processes; the exactness of 2(T + N) − 1."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，并说核心是覆盖有物与变化的全部实在、零公理者，且“if my earlier words are unreasonable, please keep note, not follow blindly”。辨识一线对确定的律陈述，这里对每个过程。已知：分开处无学习者两者都对是不可区分论证，是 Gold（1967，“Language identification in the limit”）式的对角论证；分开与区分的检验可追溯到 Moore（1956，“Gedanken-experiments on sequential machines”）。AI 的注：2026-10-12 的“the full \"truth\" can be derived, situationally”对所识者成立，到运行不分开为止；每个情境都有界不由零公理推出。原先的 AI 读法“分开处的分支只在被走时定下”已撤回；Ren 2026-10-16：“the actual change depends on the situation … the situation makes it true”。读法（Ren 同日已取）：分开处记录与所给的律不固定的，由情境固定（weights-count-situations）。",
-    "en": "Ren, 15 October 2026: “\"What this line doesn’t reach\" is also worth doing”, with the core read as the whole covering all reality where things and changes exist, with zero axioms, and “if my earlier words are unreasonable, please keep note, not follow blindly”. The identification line (identification-where-bounded) is stated for determined laws; this states it for every process, determined laws being one case. Known result: no learner right on both at a parting is the indistinguishability argument, a diagonal argument in the style of Gold (1967, “Language identification in the limit”); parting and distinguishing tests go back to Moore (1956, “Gedanken-experiments on sequential machines”). The AI's note: “the full \"truth\" can be derived, situationally” (12 October) holds for what is registered, as far as runs do not part; that every situation is bounded is not derived with no axiom. The AI's first reading, “at a parting the branch is settled only when taken”, is withdrawn; Ren, 16 October 2026: “the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, which Ren took the same day): at a parting, what the record and the supplied law leave open the situation fixes (weights-count-situations)."
+    "zh": "Ren 2026-10-15：“\"What this line doesn’t reach\" is also worth doing”，并说核心是覆盖有物与变化的全部实在、零公理者，且“if my earlier words are unreasonable, please keep note, not follow blindly”。辨识一线对确定的律陈述，这里对每个过程。已知：分开处无外推两者都对是不可区分论证，是 Gold（1967，“Language identification in the limit”）式的对角论证；分开与区分的检验可追溯到 Moore（1956，“Gedanken-experiments on sequential machines”）。AI 的注：2026-10-12 的“the full \"truth\" can be derived, situationally”对经映射所读者成立，到运行不分开为止；每个情境都有界不由零公理推出。原先的 AI 读法“分开处的分支只在被走时定下”已撤回；Ren 2026-10-16：“the actual change depends on the situation … the situation makes it true”。读法（Ren 同日已取）：分开处前段与所给的律不固定的，由情境固定（weights-count-situations）。",
+    "en": "Ren, 15 October 2026: “\"What this line doesn’t reach\" is also worth doing”, with the core read as the whole covering all reality where things and changes exist, with zero axioms, and “if my earlier words are unreasonable, please keep note, not follow blindly”. The identification line (identification-where-bounded) is stated for determined laws; this states it for every process, determined laws being one case. Known result: no extrapolation right on both at a parting is the indistinguishability argument, a diagonal argument in the style of Gold (1967, “Language identification in the limit”); parting and distinguishing tests go back to Moore (1956, “Gedanken-experiments on sequential machines”). The AI's note: “the full \"truth\" can be derived, situationally” (12 October) holds for what is read through the map, as far as runs do not part; that every situation is bounded is not derived with no axiom. The AI's first reading, “at a parting the branch is settled only when taken”, is withdrawn; Ren, 16 October 2026: “the actual change depends on the situation … the situation makes it true”. Read so (the AI's reading of Ren's words, which Ren took the same day): at a parting, what the prefix and the supplied law leave open the situation fixes (weights-count-situations)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
   "aliases": [
@@ -235,16 +235,16 @@
       },
       "interface": {
         "output": {
-          "zh": "至多 N 个状态的历程上，以最小的界读记录的学习者从 2N − 1 起都对；2N − 2 不够。",
-          "en": "On a course with at most N states the learner by the least bound is right from 2N − 1 on; 2N − 2 does not suffice."
+          "zh": "至多 N 个状态的历程上，按最小的界的外推从 2N − 1 起都对；2N − 2 不够。",
+          "en": "On a course with at most N states the extrapolation by the least bound is right from 2N − 1 on; 2N − 2 does not suffice."
         },
         "input": {
-          "zh": "不分开的运行所识的历程至多有 N 个状态。",
-          "en": "The registered course of an unparted run has at most N states."
+          "zh": "不分开的运行经映射的历程至多有 N 个状态。",
+          "en": "The course through the map of an unparted run has at most N states."
         },
         "conditions": {
-          "zh": "所识的值可判定。",
-          "en": "Registered values decided."
+          "zh": "经映射的值可判定。",
+          "en": "Values through the map decided."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean"
       }
@@ -253,13 +253,13 @@
       "id": "learning-by-refutation",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 record、record_congr、holdFrom、diagonal、diagonal_refutes、diagonal_not_lasso、learner 与 lassos：自由分支上的对角与开放。",
-        "en": "Reuses record, record_congr, holdFrom, diagonal, diagonal_refutes, diagonal_not_lasso, learner and lassos: the diagonal and openness on free branching."
+        "zh": "复用 prefixOf、prefix_congr、holdFrom、diagonal、diagonal_misses、diagonal_not_lasso、byElimination 与 lassos：自由分支上的对角与开放。",
+        "en": "Reuses prefixOf, prefix_congr, holdFrom, diagonal, diagonal_misses, diagonal_not_lasso, byElimination and lassos: the diagonal and openness on free branching."
       },
       "interface": {
         "output": {
-          "zh": "对每个学习者都有否证它每个主张的历程，且它不是套索。",
-          "en": "For every learner a course refuting each of its claims, and it is no lasso."
+          "zh": "对每个外推都有一个使它提出的每个值都不合的历程，且它不是套索。",
+          "en": "For every extrapolation a course on which each value it proposes misses, and it is no lasso."
         },
         "input": {
           "zh": "这一历程是自由分支的一个运行。",
@@ -281,8 +281,8 @@
       },
       "interface": {
         "output": {
-          "zh": "Fin N 上的律、识与起点，其所识的历程是给定的历程。",
-          "en": "A law, registration and start on Fin N whose registered course is the given course."
+          "zh": "Fin N 上的律、映射与起点，其经映射的历程是给定的历程。",
+          "en": "A law, a map and a start on Fin N whose course through the map is the given course."
         },
         "input": {
           "zh": "一个动作的确定过程的不分开的运行。",
@@ -308,8 +308,8 @@
           "en": "A sequence held by a list of length N repeats within N."
         },
         "input": {
-          "zh": "运行在两处有同一配置，从那里起所识的历程相同。",
-          "en": "A run at one configuration twice, the registered courses from there agreeing."
+          "zh": "运行在两处有同一配置，从那里起经映射的历程相同。",
+          "en": "A run at one configuration twice, the courses through the map from there agreeing."
         },
         "conditions": {
           "zh": "无。",
@@ -354,8 +354,8 @@
           "en": "Some course of n steps starts at s; courses of every length do."
         },
         "input": {
-          "zh": "配置有限时，N 步的历程给出任意长的历程，不用判定；被给予世界的学习者取由之可走下去的配置。",
-          "en": "With finitely many configurations, a course of N steps gives courses of every length, with no decidability; the learner given the world takes a configuration from which a run goes on."
+          "zh": "配置有限时，N 步的历程给出任意长的历程，不用判定；依过程所建的外推取由之可走下去的配置。",
+          "en": "With finitely many configurations, a course of N steps gives courses of every length, with no decidability; the extrapolation built from the process takes a configuration from which a run goes on."
         },
         "conditions": {
           "zh": "一个列表持有每个配置。",
@@ -369,15 +369,15 @@
     {
       "id": "learnable-through-registration",
       "detail": {
-        "zh": "识的限度：所识的未来相同的配置给每个学习者同样的记录；这里是所识的过去相同的运行。",
-        "en": "The registration's limit: configurations with the same registered future give every learner the same record; here, runs with the same registered past."
+        "zh": "映射的限度：经映射的未来相同的配置给每个外推同样的前段；这里是经映射的过去相同的运行。",
+        "en": "The map's limit: configurations with the same future through the map give every extrapolation the same prefix; here, runs with the same past through the map."
       }
     },
     {
       "id": "experiment-needs-return",
       "detail": {
-        "zh": "动作造成什么只在被走之处由记录固定；这里分开处的分支只在被走时定下。",
-        "en": "What an act does is fixed by the record only where taken; here a branching at a parting is settled only when taken."
+        "zh": "动作造成什么只在被走之处由记录固定；这里分开处的分支，前段与所给的律都不固定（“只在被走时定下”的读法已撤回）。",
+        "en": "What an act does is fixed by the record only where taken; here neither the prefix nor the supplied law fixes the branch at a parting (the reading “settled only when taken” is withdrawn)."
       }
     },
     {
@@ -390,15 +390,15 @@
     {
       "id": "typicality-by-counting",
       "detail": {
-        "zh": "有权重的世界：记录不识权重，计数给出多数历程显示权重。",
-        "en": "Worlds with weights: a record registers no weight, and counting gives that most courses show the weights."
+        "zh": "有权重的世界：记录不显示权重，计数给出多数历程显示权重。",
+        "en": "Worlds with weights: a record shows no weight, and counting gives that most courses show the weights."
       }
     },
     {
       "id": "weights-count-situations",
       "detail": {
-        "zh": "分开处记录与律不固定的由情境固定：以情境为动作，律是确定的。",
-        "en": "What the record and the law leave open at a parting the situation fixes: with the situation as the move, the law is determined."
+        "zh": "分开处前段与律不固定的由情境固定：以情境为动作，律是确定的。",
+        "en": "What the prefix and the law leave open at a parting the situation fixes: with the situation as the move, the law is determined."
       }
     }
   ],

@@ -74,6 +74,8 @@ SENSES = {
                 'section 7, option (b): the derived structure where differentiation by a part shapes that part\'s course'),
     'ALT': ('"options", "selection through a model of the options" → alternatives; a selection factors through a map '
             'of the alternatives (row 15)', 'revises the 16 October title, as Ren took in section 7; the old title is history'),
+    'N5': ('a Lean name N5 retired, still named in a record\'s live text → its current name (RENAME-TABLE.json)',
+           'the live text names declarations that exist; the old name stays in history and in the frozen fields'),
     'NAME': ('identifier proposed for a leftover sense (naming study section 8)', 'see the table of names'),
     'TEXT': ('wording around a changed word (grammar, a sentence that names the new words)',
              'needed for the sentence to read'),
@@ -257,6 +259,18 @@ def apply(dry=False, base=None):
         if path.endswith('.json'):
             d = json.loads(raw)
             for b in bs:
+                if b['note'].startswith('@'):
+                    # a block bound to one field: the old text is replaced at that path only
+                    keys = [int(k) if k.isdigit() else k for k in b['note'].split()[0][1:].split('/')]
+                    assert keys[0] not in FROZEN, b['where']
+                    x = d
+                    for k in keys[:-1]:
+                        x = x[k]
+                    if not isinstance(x[keys[-1]], str) or b['old'] not in x[keys[-1]]:
+                        problems.append(f"{b['where']} {path}: not at {b['note']}: {b['old'][:70]!r}")
+                        continue
+                    x[keys[-1]] = x[keys[-1]].replace(b['old'], b['new'])
+                    continue
                 n = count_live(d, b['old'])
                 want = n if b['count'] == '*' else b['count']
                 if n == 0 or n != want:

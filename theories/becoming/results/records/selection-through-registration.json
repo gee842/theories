@@ -2,21 +2,21 @@
   "schema_version": 2,
   "id": "selection-through-registration",
   "title": {
-    "zh": "经识的选择",
-    "en": "Selection through registration"
+    "zh": "经耦合的选择",
+    "en": "Selection through the couplings"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
   "reviewed_at_utc": "2026-10-14T12:10:00+00:00",
   "statement": {
-    "zh": "两段历史被每个经选择者之识的选择选得相同，恰当选择者把它们识得相同。其余交换固定时选择在识闭包之外不见；所及闭包之内、识闭包之外的终结不被选出，合起来的识选出它；伸出而抬高所识者的流被选中。",
-    "en": "Every selection through a registration selects two histories alike exactly when they register alike. With the rest fixed, selection is blind beyond the registration closure; pooled registration selects an ending beyond it within reach, and a flow reaching beyond to raise what registers is selected."
+    "zh": "两段历史被每个经选择者之耦合的选择选得相同，恰当它们经这些耦合无别。其余交换固定时选择在耦合闭包之外不见；所及闭包之内、耦合闭包之外的终结不被选出，合起来的耦合选出它；伸出而抬高耦合入者的流被选中。",
+    "en": "Every selection through a selector's couplings selects two histories alike exactly when they are alike through those couplings. With the rest fixed, selection is blind beyond the coupling closure; couplings pooled select an ending beyond it within reach, and a flow reaching beyond to raise what couples in is selected."
   },
   "laws": [
     {
-      "zh": "一个选择是关于水平历史的任意命题；它经一个形成直到某步之识，是指该形成直到该步识得相同的任意两段历史同被选中或同不被选中；评分经它，是指得分相等。识得相同可传递，是等价关系。",
-      "en": "A selection is any claim about level histories; it goes through a formation's registration up to a step when any two histories the formation registers alike up to that step are both selected or both not, and a score goes through it when they score alike. Registering alike is transitive, so an equivalence.",
+      "zh": "一个选择是关于水平历史的任意命题；它经一个形成直到某步的耦合，是指直到该步经该形成之耦合无别的任意两段历史同被选中或同不被选中；评分经它，是指得分相等。经耦合无别可传递，是等价关系。",
+      "en": "A selection is any claim about level histories; it goes through a formation's couplings up to a step when any two histories alike through those couplings up to that step are both selected or both not, and a score goes through them when they score alike. Being alike through the couplings is transitive, so an equivalence.",
       "declarations": [
         "Becoming.Web.SelectsThrough",
         "Becoming.Web.ScoresThrough",
@@ -26,8 +26,8 @@
       ]
     },
     {
-      "zh": "不加前提：两段历史被每个经一个形成之识的选择选得相同，恰当该形成直到该步把它们识得相同；它的信念是经其识的选择，所以它识得不同之处，有一个经其识的选择在一段成立、在另一段不成立。",
-      "en": "With no premise, two histories are selected alike by every selection through a formation's registration exactly when it registers them alike up to the step; its belief is such a selection, so where it registers them apart some selection through its registration holds at one and fails at the other.",
+      "zh": "不加前提：两段历史被每个经一个形成之耦合的选择选得相同，恰当它们直到该步经该形成的耦合无别；经其耦合无别之类本身是经其耦合的选择，所以经之有别之处，有一个经其耦合的选择在一段成立、在另一段不成立。",
+      "en": "With no premise, two histories are selected alike by every selection through a formation's couplings exactly when they are alike through those couplings up to the step; the class alike through them is itself such a selection, so where they are apart through them some selection through the couplings holds at one and fails at the other.",
       "declarations": [
         "Becoming.Web.selects_alike_iff",
         "Becoming.Web.class_selects",
@@ -35,8 +35,8 @@
       ]
     },
     {
-      "zh": "经识的选择恰在不成立之处被其选择者否证；到该步为止某步的接纳是经识的选择，被观察条件在这样一步的水平是经识的评分，评分的阈值是经识的选择；经识在更晚的步、更多的观察、否定与合取之下保持。",
-      "en": "A selection through registration is refuted by its selector exactly where it fails; admission at a step up to the given one is a selection through registration, the level of an observed condition at such a step a score through it, and a score's threshold a selection through it; going through registration survives later steps, more observation, negation and conjunction.",
+      "zh": "经耦合的选择恰在不成立之处被其选择者排除；到该步为止某步的接纳是经耦合的选择，经水平耦合入之条件在这样一步的水平是经耦合的评分，评分的阈值是经耦合的选择；经耦合在更晚的步、更多的经水平耦合、否定与合取之下保持。",
+      "en": "A selection through the couplings is excluded by its selector exactly where it fails; admission at a step up to the given one is a selection through the couplings, the level of a condition coupled in by level at such a step a score through them, and a score's threshold a selection through them; going through the couplings survives later steps, more coupling by level, negation and conjunction.",
       "declarations": [
         "Becoming.Web.Excludes",
         "Becoming.Web.SelectsThrough.excludes_iff",
@@ -50,15 +50,15 @@
       ]
     },
     {
-      "zh": "与第一段历史识得相同可判定时，两段历史被每个经识的评分评得相同，恰当识得相同。",
-      "en": "Where registering alike with the first history is decidable, two histories are scored alike by every score through registration exactly when they are registered alike.",
+      "zh": "经耦合与第一段历史无别可判定时，两段历史被每个经耦合的评分评得相同，恰当它们经耦合无别。",
+      "en": "Where being alike through the couplings with the first history is decidable, two histories are scored alike by every score through the couplings exactly when they are alike through them.",
       "declarations": [
         "Becoming.Web.scores_alike_iff"
       ]
     },
     {
-      "zh": "一组形成合起来：每个成员都识得相同的历史被选得相同；同样的等价与分开成立；成员的选择是合起来的选择，合起来的选择在合取下封闭。",
-      "en": "For a group, a selection goes through its pooled registration when histories every member registers alike are selected alike; the same equivalence and separation hold; a member's selection is a group selection, and group selections are closed under conjunction.",
+      "zh": "一组形成合起来：经每个成员之耦合都无别的历史被选得相同；同样的等价与分开成立；成员的选择是合起来的选择，合起来的选择在合取下封闭。",
+      "en": "For a group, a selection goes through its pooled couplings when histories alike through every member's couplings are selected alike; the same equivalence and separation hold; a member's selection is a group selection, and group selections are closed under conjunction.",
       "declarations": [
         "Becoming.Web.SelectsThroughAll",
         "Becoming.Web.AlikeThroughAll",
@@ -72,8 +72,8 @@
       ]
     },
     {
-      "zh": "识闭包之外的不见：扣留一个部分（其余交换固定），平衡只在一个形成的识闭包成员所识的条件上逐步成立，部分的每个成员都在该闭包之外时，经闭包内任一形成之识的每个选择与评分，把有无该部分的水平选得相同、评得相同；成员都在闭包之内的一组合起来亦然。",
-      "en": "Blindness beyond the registration closure: with a part withheld and the rest of the exchange fixed, balance at each step on what members of a formation's registration closure register, and every member of the part beyond that closure, every selection and score through the registration of a formation within the closure treats the levels with and without the part alike, as does every group whose members lie within it.",
+      "zh": "耦合闭包之外的不见：扣留一个部分（其余交换固定），平衡只在耦合入一个形成之耦合闭包成员的条件上逐步成立，部分的每个成员都在该闭包之外时，经闭包内任一形成之耦合的每个选择与评分，把有无该部分的水平选得相同、评得相同；成员都在闭包之内的一组合起来亦然。",
+      "en": "Blindness beyond the coupling closure: with a part withheld and the rest of the exchange fixed, balance at each step on what couples into members of a formation's coupling closure, and every member of the part beyond that closure, every selection and score through the couplings of a formation within the closure treats the levels with and without the part alike, as does every group whose members lie within it.",
       "declarations": [
         "Becoming.Flow.WithinCoupling",
         "Becoming.Flow.uncoupled_beyond_coupling",
@@ -83,8 +83,8 @@
       ]
     },
     {
-      "zh": "两流在对两流画出的识闭包内的所识条件上都逐步平衡、在场者相同、起始在所识者上相同、成员只经自己之识回应时，经该闭包内任一形成之识的每个选择，把两流的水平选得相同。",
-      "en": "Where two flows both balance at each step on the conditions registered within the registration closure drawn through both, have the same formations present, start alike on what is registered, and members respond only through their own registration, every selection through the registration of a formation within that closure selects the two flows' levels alike.",
+      "zh": "两流在对两流画出的耦合闭包内耦合入的条件上都逐步平衡、在场者相同、起始在耦合入者上相同、成员只经自己的耦合回应时，经该闭包内任一形成之耦合的每个选择，把两流的水平选得相同。",
+      "en": "Where two flows both balance at each step on the conditions coupled in within the coupling closure drawn through both, have the same formations present, start alike on what couples in, and members respond only through their own couplings, every selection through the couplings of a formation within that closure selects the two flows' levels alike.",
       "declarations": [
         "Becoming.Flow.CoupledFromEither",
         "Becoming.Flow.alike_within_coupling",
@@ -101,8 +101,8 @@
       ]
     },
     {
-      "zh": "见证 Clearing：经清除者之识（只识支持）的每个选择在每一步都把清除与不清除的世界选得相同，栖居者在前者中被终结、在后者中不然，“栖居者被终结”在任何一步都不经清除者之识；栖居者在清除者的所及闭包之内、识闭包之外，清除者不识栖息地。",
-      "en": "In Clearing every selection through the clearer's registration (support only) selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second, and that the dweller is ended goes through the clearer's registration at no step; the dweller lies within the clearer's reach closure and beyond its registration closure, and the clearer does not register the habitat.",
+      "zh": "见证 Clearing：经清除者之耦合（只有支持）的每个选择在每一步都把清除与不清除的世界选得相同，栖居者在前者中被终结、在后者中不然，“栖居者被终结”在任何一步都不经清除者的耦合；栖居者在清除者的所及闭包之内、耦合闭包之外，栖息地不耦合入清除者。",
+      "en": "In Clearing every selection through the clearer's couplings (support only) selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second, and that the dweller is ended goes through the clearer's couplings at no step; the dweller lies within the clearer's reach closure and beyond its coupling closure, and the habitat does not couple into the clearer.",
       "declarations": [
         "Becoming.Clearing.unselected",
         "Becoming.Clearing.dweller_within_reach",
@@ -110,8 +110,8 @@
       ]
     },
     {
-      "zh": "“栖居者在第三步被接纳”经栖居者之识，分开两个世界；“第三步两者都被接纳”经两者合起来的识，分开两个世界，而不经任一单独之识。",
-      "en": "In Clearing the dweller's admission at the third step goes through the dweller's registration and separates the two worlds; both being admitted at the third step goes through the pooled registration of the two, separates the worlds, and goes through neither registration alone.",
+      "zh": "“栖居者在第三步被接纳”经栖居者的耦合，分开两个世界；“第三步两者都被接纳”经两者合起来的耦合，分开两个世界，而不经任一单独的耦合。",
+      "en": "In Clearing the dweller's admission at the third step goes through the dweller's couplings and separates the two worlds; both being admitted at the third step goes through the pooled couplings of the two, separates the worlds, and goes through neither's couplings alone.",
       "declarations": [
         "Becoming.Clearing.selected_by_dweller",
         "Becoming.Clearing.BothAdmitted",
@@ -119,8 +119,8 @@
       ]
     },
     {
-      "zh": "见证 Diversion：转移的流从栖居者所依存的来源取一个单位给取用者观察的存储，伸到识闭包之外的栖居者；“存储在第二步至少为一”经取用者之识，在转移的流成立、在不分流的流不成立。",
-      "en": "In Diversion the diverting flow takes a unit from the source a dweller depends on and gives it to the store the taker observes, reaching the dweller beyond the registration closure; that the store stands at least one at the second step goes through the taker's registration, holds in the diverting flow and fails in the undiverted one.",
+      "zh": "见证 Diversion：转移的流从栖居者所依存的来源取一个单位给经水平耦合入取用者的存储，伸到耦合闭包之外的栖居者；“存储在第二步至少为一”经取用者的耦合，在转移的流成立、在不分流的流不成立。",
+      "en": "In Diversion the diverting flow takes a unit from the source a dweller depends on and gives it to the store coupled into the taker by level, reaching the dweller beyond the coupling closure; that the store stands at least one at the second step goes through the taker's couplings, holds in the diverting flow and fails in the undiverted one.",
       "declarations": [
         "Becoming.Diversion.diverting",
         "Becoming.Diversion.undiverted",
@@ -129,8 +129,8 @@
       ]
     },
     {
-      "zh": "栖居者在转移的流中从第二步起不被支持，在不分流的流中每步被支持；经取用者之识的每个选择，把转移的流与不伸出、只给予存储的供给的流选得相同。",
-      "en": "The dweller is unsupported from the second step on in the diverting flow and supported at every step in the undiverted one; every selection through the taker's registration selects the diverting flow alike with a supplying flow that only gives to the store and reaches nothing beyond.",
+      "zh": "栖居者在转移的流中从第二步起不被支持，在不分流的流中每步被支持；经取用者之耦合的每个选择，把转移的流与不伸出、只给予存储的供给的流选得相同。",
+      "en": "The dweller is unsupported from the second step on in the diverting flow and supported at every step in the undiverted one; every selection through the taker's couplings selects the diverting flow alike with a supplying flow that only gives to the store and reaches nothing beyond.",
       "declarations": [
         "Becoming.Diversion.favours",
         "Becoming.Diversion.supplying",
@@ -140,20 +140,20 @@
   ],
   "hypotheses": [
     {
-      "zh": "选择经识（Web.SelectsThrough、Web.ScoresThrough、Web.SelectsThroughAll）是给出的条件，写在用到它的每条定理中，不推出；选择是关于水平历史的任意命题。",
-      "en": "That a selection goes through registration (Web.SelectsThrough, Web.ScoresThrough, Web.SelectsThroughAll) is a supplied condition written into each theorem that uses it, never derived; a selection is any claim about level histories."
+      "zh": "选择经耦合（Web.SelectsThrough、Web.ScoresThrough、Web.SelectsThroughAll）是给出的条件，写在用到它的每条定理中，不推出；选择是关于水平历史的任意命题。",
+      "en": "That a selection goes through the couplings (Web.SelectsThrough, Web.ScoresThrough, Web.SelectsThroughAll) is a supplied condition written into each theorem that uses it, never derived; a selection is any claim about level histories."
     },
     {
-      "zh": "识闭包之外的不见另设 unregistered_beyond_registration 的条件：其余交换固定（扣留的部分，WithheldLevels）；平衡只在识闭包成员所识的条件上逐步假设（Flow.BalancesOn）；部分的每个成员都在识闭包之外。",
-      "en": "Blindness beyond the registration closure further assumes the conditions of unregistered_beyond_registration: the rest of the exchange fixed (a part withheld, WithheldLevels); balance assumed only on the conditions members of the registration closure register, at each step (Flow.BalancesOn); every member of the part beyond the registration closure."
+      "zh": "耦合闭包之外的不见另设 Flow.uncoupled_beyond_coupling 的条件：其余交换固定（扣留的部分，WithheldLevels）；平衡只在耦合入耦合闭包成员的条件上逐步假设（Flow.BalancesOn）；部分的每个成员都在耦合闭包之外。",
+      "en": "Blindness beyond the coupling closure further assumes the conditions of Flow.uncoupled_beyond_coupling: the rest of the exchange fixed (a part withheld, WithheldLevels); balance assumed only on the conditions coupled into members of the coupling closure, at each step (Flow.BalancesOn); every member of the part beyond the coupling closure."
     },
     {
-      "zh": "回应的形式另设 alike_within_registration 的假设：两流在所识条件上逐步平衡、两流在场者相同、起始在所识者上相同、成员只经自己之识回应。",
-      "en": "The responsive form assumes the hypotheses of alike_within_registration: both flows balanced at each step on the conditions registered, the same formations present in both flows, the same start on what is registered, members responding only through their own registration."
+      "zh": "回应的形式另设 Flow.alike_within_coupling 的假设：两流在耦合入的条件上逐步平衡、两流在场者相同、起始在耦合入者上相同、成员只经自己的耦合回应。",
+      "en": "The responsive form assumes the hypotheses of Flow.alike_within_coupling: both flows balanced at each step on the conditions coupled in, the same formations present in both flows, the same start on what couples in, members responding only through their own couplings."
     },
     {
-      "zh": "评分定律的逆向以“与第一段历史识得相同”的可判定性为命名的假设（decided）；选择的定律不需要判定。",
-      "en": "The converse of the law for scores takes the decidability of registering alike with the first history as a named hypothesis (decided); the law for selections needs no decision."
+      "zh": "评分定律的逆向以“经耦合与第一段历史无别”的可判定性为命名的假设（decided）；选择的定律不需要判定。",
+      "en": "The converse of the law for scores takes the decidability of being alike through the couplings with the first history as a named hypothesis (decided); the law for selections needs no decision."
     },
     {
       "zh": "share_rises_through：亲代的历史、后代数的下界与上界（rewarded、unrewarded）、b < a、两类亲代都在，都是给出的；传递不在其中。",
@@ -170,13 +170,13 @@
   ],
   "does_not_show": [
     {
-      "zh": "这些规律不推出谁选择、选择者识什么、一个实际的选择是否经识、后代是否随选择、伸向识闭包之外是否被选取。",
-      "en": "The laws do not derive who selects, what the selector registers, whether an actual selection goes through registration, whether offspring follow the selection, or whether reaching beyond is chosen.",
+      "zh": "这些规律不推出谁选择、什么耦合入选择者、一个实际的选择是否经耦合、后代是否随选择、伸向耦合闭包之外是否被选取。",
+      "en": "The laws do not derive who selects, what couples into the selector, whether an actual selection goes through the couplings, whether offspring follow the selection, or whether reaching beyond is chosen.",
       "kind": "non-implication"
     },
     {
-      "zh": "所识越多，识闭包越大、缺口越小：定律的力量全在选择者实际识什么。",
-      "en": "The more is registered, the larger the registration closure and the smaller the gap: the law's force lies entirely in what the selector actually registers.",
+      "zh": "耦合入的越多，耦合闭包越大、缺口越小：定律的力量全在实际耦合入选择者的是什么。",
+      "en": "The more couples in, the larger the coupling closure and the smaller the gap: the law's force lies entirely in what actually couples into the selector.",
       "kind": "scope"
     },
     {
@@ -199,22 +199,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "detail": {
-        "zh": "选择不见缺口：Clearing 中经清除者之识的每个选择在每一步都把清除与不清除的世界选得相同，而栖居者在前者中被终结、在后者中不然；“栖居者被终结”在任何一步都不经清除者之识（Clearing.unselected）。",
-        "en": "Selection is blind to the gap: in Clearing every selection through the clearer's registration selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second; that the dweller is ended goes through the clearer's registration at no step (Clearing.unselected)."
+        "zh": "选择不见缺口：Clearing 中经清除者之耦合的每个选择在每一步都把清除与不清除的世界选得相同，而栖居者在前者中被终结、在后者中不然；“栖居者被终结”在任何一步都不经清除者的耦合（Clearing.unselected）。",
+        "en": "Selection is blind to the gap: in Clearing every selection through the clearer's couplings selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second; that the dweller is ended goes through the clearer's couplings at no step (Clearing.unselected)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "detail": {
-        "zh": "合起来才选出：“第三步栖居者与清除者都被接纳”经两者合起来的识，分开清除与不清除的世界，而不经任一单独之识（Clearing.selected_pooled）。",
-        "en": "Only pooled registration selects it: that both the dweller and the clearer are admitted at the third step goes through their pooled registration and separates the cleared from the spared world, yet goes through neither registration alone (Clearing.selected_pooled)."
+        "zh": "合起来才选出：“第三步栖居者与清除者都被接纳”经两者合起来的耦合，分开清除与不清除的世界，而不经任一单独的耦合（Clearing.selected_pooled）。",
+        "en": "Only pooled couplings select it: that both the dweller and the clearer are admitted at the third step goes through their pooled couplings and separates the cleared from the spared world, yet goes through neither's couplings alone (Clearing.selected_pooled)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "detail": {
-        "zh": "选择分不出伸出与否：Diversion 中经取用者之识的每个选择把从栖居者的来源转移的流与只给予存储、不伸出的供给的流选得相同，而栖居者只在前者中不被支持（Diversion.blind_to_source）；同一选择选中转移的流而不选不分流的流（Diversion.favours）。",
-        "en": "Selection cannot tell reaching beyond from not: in Diversion every selection through the taker's registration selects the flow diverting from the dweller's source alike with a supplying flow that only gives to the store and reaches nothing beyond, while the dweller is unsupported only in the first (Diversion.blind_to_source); the same selection selects the diverting flow over the undiverted one (Diversion.favours)."
+        "zh": "选择分不出伸出与否：Diversion 中经取用者之耦合的每个选择把从栖居者的来源转移的流与只给予存储、不伸出的供给的流选得相同，而栖居者只在前者中不被支持（Diversion.blind_to_source）；同一选择选中转移的流而不选不分流的流（Diversion.favours）。",
+        "en": "Selection cannot tell reaching beyond from not: in Diversion every selection through the taker's couplings selects the flow diverting from the dweller's source alike with a supplying flow that only gives to the store and reaches nothing beyond, while the dweller is unsupported only in the first (Diversion.blind_to_source); the same selection selects the diverting flow over the undiverted one (Diversion.favours)."
       }
     }
   ],
@@ -232,8 +232,8 @@
     "zh": "与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。"
   },
   "correspondence": {
-    "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项，五项提议是 AI 的。读法（AI 的，依 Ren 的交托采用）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
-    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?” and pasted an explanation of causal systems of unstated authorship (neither Ren's wording nor a premise); after the AI's comparison and its five proposals, Ren wrote “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This record is the first of them. Readings (the AI's, adopted on Ren's delegation): any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what it registers, blind to whatever a candidate's part does beyond the selector's registration closure, however far its reach closure extends; the gap is the reach closure less the registration closure, closing only through dependence, observation or another's registration pooled; where reaching beyond raises what registers, selection favours it, and with share_rises the share of what reaches beyond rises while the world is open; for AI training, a reward process is a selector and training reaches only what the reward registers. The AI, on its own account, connects this with the title of Ren's paper “When Capability Outruns Correction”. See §86 of the integration note."
+    "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项，五项提议是 AI 的。读法（AI 的，依 Ren 的交托采用）：任何由耦合入选择者者决定的选择（保留、奖励、繁殖、训练）恰及耦合入选择者的，对候选者的部分在选择者耦合闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去耦合闭包，只经依存、经水平的耦合或他者的耦合合起来才合上；伸出而抬高耦合入者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及耦合入奖励的。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
+    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?” and pasted an explanation of causal systems of unstated authorship (neither Ren's wording nor a premise); after the AI's comparison and its five proposals, Ren wrote “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This record is the first of them. Readings (the AI's, adopted on Ren's delegation): any selection decided by what couples into a selector (keeping, rewarding, reproducing, training) reaches exactly what couples into it, blind to whatever a candidate's part does beyond the selector's coupling closure, however far its reach closure extends; the gap is the reach closure less the coupling closure, closing only through dependence, coupling by level or another's couplings pooled; where reaching beyond raises what couples in, selection favours it, and with share_rises the share of what reaches beyond rises while the world is open; for AI training, a reward process is a selector and training reaches only what couples into the reward. The AI, on its own account, connects this with the title of Ren's paper “When Capability Outruns Correction”. See §86 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
   "aliases": [
@@ -271,21 +271,21 @@
       "id": "testing-within-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Web.AlikeThrough、Web.AlikeThroughUpTo（refl、symm、earlier、of_obs）、Web.ClassThrough、Web.Excludes（not_meets）、Web.AlikeThroughAll、Flow.WithinCoupling、Flow.withinCoupling_thresholdOnly、Flow.uncoupled_beyond_coupling、Flow.alike_within_coupling，以及见证 Clearing.alike_for_clearer、tested_by_dweller、DwellerEnded、resourceGone、clearerAndDweller。增量是把识得相同移到选择上：经识的选择恰及所识，识闭包之外的不见对每个经识的选择成立。",
-        "en": "Reuses Web.AlikeThrough, Web.AlikeThroughUpTo (refl, symm, earlier, of_obs), Web.ClassThrough, Web.Excludes (not_meets), Web.AlikeThroughAll, Flow.WithinCoupling, Flow.withinCoupling_thresholdOnly, Flow.uncoupled_beyond_coupling, Flow.alike_within_coupling, and the witness's Clearing.alike_for_clearer, tested_by_dweller, DwellerEnded, resourceGone and clearerAndDweller. The delta carries registering alike over to selection: selection through registration reaches exactly what registers, and blindness beyond the registration closure holds of every such selection."
+        "zh": "复用 Web.AlikeThrough、Web.AlikeThroughUpTo（refl、symm、earlier、of_obs）、Web.ClassThrough、Web.Excludes（not_meets）、Web.AlikeThroughAll、Flow.WithinCoupling、Flow.withinCoupling_thresholdOnly、Flow.uncoupled_beyond_coupling、Flow.alike_within_coupling，以及见证 Clearing.alike_for_clearer、tested_by_dweller、DwellerEnded、resourceGone、clearerAndDweller。增量是把经耦合无别移到选择上：经耦合的选择恰及耦合入者，耦合闭包之外的不见对每个经耦合的选择成立。",
+        "en": "Reuses Web.AlikeThrough, Web.AlikeThroughUpTo (refl, symm, earlier, of_obs), Web.ClassThrough, Web.Excludes (not_meets), Web.AlikeThroughAll, Flow.WithinCoupling, Flow.withinCoupling_thresholdOnly, Flow.uncoupled_beyond_coupling, Flow.alike_within_coupling, and the witness's Clearing.alike_for_clearer, tested_by_dweller, DwellerEnded, resourceGone and clearerAndDweller. The delta carries being alike through the couplings over to selection: selection through the couplings reaches exactly what couples in, and blindness beyond the coupling closure holds of every such selection."
       },
       "interface": {
         "output": {
-          "zh": "什么被识得相同；识闭包；识闭包之外的不被识；清除者与栖居者的检验。",
-          "en": "What registers alike; the registration closure; nothing beyond it registers; the clearer's and the dweller's testing."
+          "zh": "什么经耦合无别；耦合闭包；耦合闭包之外的不在其中显出；清除者与栖居者的检验。",
+          "en": "What is alike through the couplings; the coupling closure; nothing beyond it shows within it; the clearer's and the dweller's testing."
         },
         "input": {
-          "zh": "经识的选择所能分辨的；它在识闭包之外的不见；缺口的见证。",
-          "en": "What a selection through registration can tell apart; its blindness beyond the registration closure; the witnesses of the gap."
+          "zh": "经耦合的选择所能分辨的；它在耦合闭包之外的不见；缺口的见证。",
+          "en": "What a selection through the couplings can tell apart; its blindness beyond the coupling closure; the witnesses of the gap."
         },
         "conditions": {
-          "zh": "平衡只在被识的条件上逐步假设；其余交换固定，或成员只经自己之识回应。",
-          "en": "Balance only on the conditions registered, at each step; the rest of the exchange fixed, or members responding only through their own registration."
+          "zh": "平衡只在耦合入的条件上逐步假设；其余交换固定，或成员只经自己的耦合回应。",
+          "en": "Balance only on the conditions coupled in, at each step; the rest of the exchange fixed, or members responding only through their own couplings."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
       }
@@ -294,8 +294,8 @@
       "id": "levels-of-closure",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用对一个关系的闭包（WithinClosure、ClosedUnder）、所及闭包（Flow.WithinReach）与 Clearing 中所及闭包介于清除者与整体之间（Clearing.reach_middle）。缺口是候选者的所及闭包减去选择者的识闭包。",
-        "en": "Reuses the closure under a relation (WithinClosure, ClosedUnder), the reach closure (Flow.WithinReach) and, in Clearing, the reach closure lying between the clearer and the whole (Clearing.reach_middle). The gap is a candidate's reach closure less the selector's registration closure."
+        "zh": "复用对一个关系的闭包（WithinClosure、ClosedUnder）、所及闭包（Flow.WithinReach）与 Clearing 中所及闭包介于清除者与整体之间（Clearing.reach_middle）。缺口是候选者的所及闭包减去选择者的耦合闭包。",
+        "en": "Reuses the closure under a relation (WithinClosure, ClosedUnder), the reach closure (Flow.WithinReach) and, in Clearing, the reach closure lying between the clearer and the whole (Clearing.reach_middle). The gap is a candidate's reach closure less the selector's coupling closure."
       },
       "interface": {
         "output": {
@@ -317,8 +317,8 @@
       "id": "feedback-and-reach",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用清除者的见证（Clearing.resource_of_clearer）。那里形成的反馈至多识及其影响闭包，而它的部分伸到所及闭包；这里经识的选择也止于识闭包，缺口是两者之差。",
-        "en": "Reuses the clearer's witness (Clearing.resource_of_clearer). There a formation's feedback registers at most its influence closure while its part reaches into its reach closure; here selection through registration also stops at the registration closure, and the gap is the difference."
+        "zh": "复用清除者的见证（Clearing.resource_of_clearer）。那里形成的反馈至多及于其影响闭包，而它的部分伸到所及闭包；这里经耦合的选择也止于耦合闭包，缺口是两者之差。",
+        "en": "Reuses the clearer's witness (Clearing.resource_of_clearer). There a formation's feedback carries at most its influence closure while its part reaches into its reach closure; here selection through the couplings also stops at the coupling closure, and the gap is the difference."
       },
       "interface": {
         "output": {
@@ -364,29 +364,29 @@
     {
       "id": "runaway-distance-unregistered",
       "detail": {
-        "zh": "那里经识的策略不能用上它所不识的储量；这里经识的选择不能对它所不识的部分作出选择。",
-        "en": "There a policy through registration cannot use a stock it does not register; here a selection through registration cannot select on a part it does not register."
+        "zh": "那里经耦合的策略不能用上只经阈耦合入它的储量的余量；这里经耦合的选择不能对不耦合入选择者的部分作出选择。",
+        "en": "There a policy through the couplings cannot use a stock coupled into it by threshold only; here a selection through the couplings cannot select on a part that does not couple into the selector."
       }
     },
     {
       "id": "evolution-on-descent",
       "detail": {
-        "zh": "那里 Price 方程的计数形式不陈述选择项；P62 给出份额的上升，这里由经识的选择给出携带者（应用）。",
-        "en": "There the counting form of Price's equation leaves the selection term unstated; P62 gives the rise of a share, and here a selection through registration supplies the carriers (an application)."
+        "zh": "那里 Price 方程的计数形式不陈述选择项；P62 给出份额的上升，这里由经耦合的选择给出携带者（应用）。",
+        "en": "There the counting form of Price's equation leaves the selection term unstated; P62 gives the rise of a share, and here a selection through the couplings supplies the carriers (an application)."
       }
     },
     {
       "id": "selection-under-registration-revision",
       "detail": {
-        "zh": "P93 完成登记改变时的选择保留／损失条件及实际局部重构；配方自身取得和更一般捕获仍开放。",
-        "en": "P93 completes choice preservation/loss under registration change and local executed reconstruction; acquired recipes and general capture remain open."
+        "zh": "P93 完成归并改变时的选择保留／损失条件及实际局部重构；配方自身取得和更一般捕获仍开放。",
+        "en": "P93 completes choice preservation/loss when the lumping changes, and local executed reconstruction; acquired recipes and general capture remain open."
       }
     },
     {
       "id": "selection-through-a-model-of-the-options",
       "detail": {
-        "zh": "同一形式的律：经识的选择恰及所识，经模型的选择恰分开模型所分开者；模型使两个选项并列时，每个经模型的选择都选得相同。",
-        "en": "A law of the same form: selection through registration reaches exactly what registers, and selection through a model separates exactly what the model separates; where the model ties two options, every selection through it selects them alike."
+        "zh": "同一形式的律：经耦合的选择恰及耦合入者，经映射的选择恰分开映射所分开者；映射使两个备择并列时，每个经映射的选择都选得相同。",
+        "en": "A law of the same form: selection through the couplings reaches exactly what couples in, and selection through a map separates exactly what the map separates; where the map ties two alternatives, every selection through it selects them alike."
       }
     },
     {

@@ -1,0 +1,194 @@
+# Record learnable-through-registration, read by sense (N6); the record id stays.
+### record:learnable-through-registration
+= L-extrap @title/zh
+- 经其识所能学者
++ 外推经映射所能学者
+= L-extrap @title/en
+- What a learner can learn through its registration
++ What an extrapolation can learn through a map
+= L-feature @statement/zh
+- 所识的未来相同的配置给每个学习者同样的记录。被列表所持的世界中，某个学习者在每个配置上于目标静止，恰当这样的配置其目标从某步起一致；律使每个配置不变时，恰当目标经识同去。
++ 经映射的未来相同的配置给每个外推同样的前段。被列表所持的世界中，某个外推在每个配置上于特征静止，恰当这样的配置其特征从某步起一致；律使每个配置不变时，恰当特征经映射之归并同去。
+= L-feature @statement/en
+- Configurations with the same registered future give every learner the same record. In a world a list holds, some learner rests on a target everywhere exactly where such configurations have targets agreeing from some step on; under a still law, exactly where it goes alike across the registration.
++ Configurations with the same future through the map give every extrapolation the same prefix. In a world a list holds, some extrapolation rests on a feature everywhere exactly where such configurations have features agreeing from some step on; under a still law, exactly where the feature goes alike across the map's lumping.
+= L-feature @laws/0/zh
+- 学习者从所识的记录主张目标：由配置出发之轨道的所识历程（course）；从第 T 步起每步主张目标即从 T 起静止（RestsFrom），某个 T 存在即静止（Rests）。
++ 外推从经映射之历程的前段提出特征之值：由配置出发之轨道经映射的历程（course）；从第 T 步起每步提出特征之值即从 T 起静止（RestsFrom），某个 T 存在即静止（Rests）。
+= L-feature @laws/0/en
+- A learner claims a target from the registered record: the registered course of a configuration's orbit (course); claiming the target at every step from T on is resting from T (RestsFrom), and resting is resting from some T (Rests).
++ An extrapolation proposes a value of the feature from the prefix of a course through the map: the course through the map of a configuration's orbit (course); proposing the feature's value at every step from T on is resting from T (RestsFrom), and resting is resting from some T (Rests).
+= L-miss @laws/1/zh
+- 所识的未来相同的两个配置给每个学习者每一步同样的记录；所以在其目标不同之步，主张至多在一处对，不用判定；目标值可判定时，主张在一处被否证，而两处记录处处相同。
++ 经映射的未来相同的两个配置给每个外推每一步同样的前段；所以在其特征不同之步，所提出的值至多在一处对，不用判定；特征之值可判定时，所提出的值在一处不合，而两处前段处处相同。
+= L-miss @laws/1/en
+- Two configurations with the same registered future give every learner the same record at every step; so at a step where their targets differ a claim is right on at most one, with no decision, and with the target values decided a claim is refuted on one while the two records stay equal at every step.
++ Two configurations with the same future through the map give every extrapolation the same prefix at every step; so at a step where their features differ a proposed value is right on at most one, with no decision, and with the feature's values decided a proposed value misses on one while the two prefixes stay equal at every step.
+= L-feature @laws/2/zh
+- 在两处都静止的学习者，其目标从某步起一致；所以目标在任意晚处不同时，没有学习者在两处都静止；律使两个配置不变、识不分辨它们而目标不同时即如此。
++ 在两处都静止的外推，其特征从某步起一致；所以特征在任意晚处不同时，没有外推在两处都静止；律使两个配置不变、映射不分开它们而特征不同时即如此。
+= L-feature @laws/2/en
+- A learner resting on both has targets agreeing from some step on; so where they differ at arbitrarily late steps no learner rests on both, already where the law leaves both configurations unchanged, the registration does not tell them apart and their targets differ.
++ An extrapolation resting on both has features agreeing from some step on; so where they differ at arbitrarily late steps no extrapolation rests on both, already where the law leaves both configurations unchanged, the map does not tell them apart and their features differ.
+= L-elim @laws/3/zh
+- 目标从所识读出时，读所识之值的套索假设学习者，其主张经读出，在被列表所持的世界中从辨识的界起静止；它不被给予配置、其数目或目标的任何值。
++ 特征从映射读出时，经映射之值上的套索候选的外推，其所提出的值经读出，在被列表所持的世界中从辨识的界起静止；它不被给予配置、其数目或特征的任何值。
+= L-elim @laws/3/en
+- Where the target is read off what is registered, the learner over the lasso hypotheses on the registered values, its claims read off, rests on the target in every world a list holds from the identification bound on; it is given neither the configurations, nor how many there are, nor any value of the target.
++ Where the feature is read off the map, the extrapolation over the lasso candidates on the values through the map, its proposals read off, rests on the feature in every world a list holds from the identification bound on; it is given neither the configurations, nor how many there are, nor any value of the feature.
+= L-built @laws/4/zh
+- 恰当地：在被列表所持的世界中，某个读识的学习者在每个配置上静止，恰当所识的未来相同的配置其目标从某步起一致；必要一侧对每个学习者成立，充分一侧的学习者被给予世界与目标。
++ 恰当地：在被列表所持的世界中，某个经映射而读的外推在每个配置上静止，恰当经映射的未来相同的配置其特征从某步起一致；必要一侧对每个外推成立，充分一侧的外推依律、映射、特征与列表所建。
+= L-built @laws/4/en
+- Exactly: in a world a list holds, some learner reading the registration rests at every configuration exactly where configurations with the same registered future have targets agreeing from some step on; the necessary side holds of every learner, and the learner of the sufficient side is given the world and the target.
++ Exactly: in a world a list holds, some extrapolation reading through the map rests at every configuration exactly where configurations with the same future through the map have features agreeing from some step on; the necessary side holds of every extrapolation, and the extrapolation of the sufficient side is built from the law, the map, the feature and the list.
+= L-feature @laws/5/zh
+- 经识同去的目标总可学；律使每个配置不变时，可学的恰是经识同去者。
++ 经映射之归并同去的特征总可学；律使每个配置不变时，可学的恰是经映射之归并同去者。
+= L-feature @laws/5/en
+- Targets going alike across the registration are learnable; under a law leaving every configuration unchanged, exactly those are.
++ Features going alike across the map's lumping are learnable; under a law leaving every configuration unchanged, exactly those are.
+= S1 @laws/6/zh
+- 两个坐标、律不变：识第一个坐标时，没有学习者在 (true, false) 与 (true, true) 两处都在第二个坐标上静止，第二个坐标不经第一个同去；识两个坐标时，套索学习者从第 2 步起静止。
++ 两个坐标、律不变：映射取第一个坐标时，没有外推在 (true, false) 与 (true, true) 两处都在第二个坐标上静止，第二个坐标不经第一个同去；映射取两个坐标时，套索外推从第 2 步起静止。
+= S1 @laws/6/en
+- Two coordinates under a still law: registering the first, no learner rests on the second at both (true, false) and (true, true), the second not going alike across the first; registering both, the lasso learner rests from step 2.
++ Two coordinates under a still law: with the map taking the first, no extrapolation rests on the second at both (true, false) and (true, true), the second not going alike across the first; with the map taking both, the lasso extrapolation rests from step 2.
+= L-prefix @laws/7/zh
+- 沿运行：确定之律的运行给学习者从其起点出发之轨道的记录，所以学习者恰在静止于那条轨道处静止于这个运行；在识这个登记的框架中起点相似的运行给每个学习者相同的记录；在列表持有的世界中，目标恰在起点相似之运行的目标从某步起一致处沿每个运行可学，在不变之律下恰在目标经识同去处可学。
++ 沿运行：确定之律的运行给外推从其起点出发之轨道的前段，所以外推恰在静止于那条轨道处静止于这个运行；在这个映射的框架中起点相似的运行给每个外推相同的前段；在列表持有的世界中，特征恰在起点相似之运行的特征从某步起一致处沿每个运行可学，在不变之律下恰在特征经映射之归并同去处可学。
+= L-prefix @laws/7/en
+- Along runs: a determined law's run gives a learner its orbit's record, so the learner rests on the run exactly where it rests on that orbit; runs beginning alike in the registration's frame give every learner one record; where a list holds the world, a target is learnable along every run exactly where such runs have targets agreeing from some step on, under a still law where it goes alike across the registration.
++ Along runs: a determined law's run gives an extrapolation its orbit's prefix, so the extrapolation rests on the run exactly where it rests on that orbit; runs beginning alike in the map's frame give every extrapolation one prefix; where a list holds the world, a feature is learnable along every run exactly where such runs have features agreeing from some step on, under a still law where it goes alike across the map's lumping.
+= N5 @hypotheses/0/zh
+- 不加公理。所识值的可判定相等（DecidableEq R）只作为套索学习者与 withWorld 的条件，在 rests_through 的陈述与 learnable_iff 的证明中；目标值的可判定相等（DecidableEq V）只在 refuted_on_one。
++ 不加公理。经映射之值的可判定相等（DecidableEq R）只作为套索外推与 fromLaw 的条件，在 rests_through 的陈述与 learnable_iff 的证明中；特征之值的可判定相等（DecidableEq V）只在 missed_on_one。
+= N5 @hypotheses/0/en
+- No axiom. Decidable equality of registered values (DecidableEq R) appears only as a condition of the lasso learner and of withWorld, in the statement of rests_through and the proof of learnable_iff; decidable equality of target values (DecidableEq V) only in refuted_on_one.
++ No axiom. Decidable equality of the values through the map (DecidableEq R) appears only as a condition of the lasso extrapolation and of fromLaw, in the statement of rests_through and the proof of learnable_iff; decidable equality of feature values (DecidableEq V) only in missed_on_one.
+= L-feature @hypotheses/1/zh
+- 每条定理的条件写在其中：所识的未来相同；目标在任意晚处不同；轨道或世界被列表所持；目标从所识读出（val s = g (reg s)）；律使配置不变。
++ 每条定理的条件写在其中：经映射的未来相同；特征在任意晚处不同；轨道或世界被列表所持；特征从映射读出（val s = g (reg s)）；律使配置不变。
+= L-feature @hypotheses/1/en
+- Each theorem's conditions are written into it: the same registered future; targets differing at arbitrarily late steps; the orbit or the world held by a list; the target read off the registration (val s = g (reg s)); the law leaving configurations unchanged.
++ Each theorem's conditions are written into it: the same future through the map; features differing at arbitrarily late steps; the orbit or the world held by a list; the feature read off the map (val s = g (reg s)); the law leaving configurations unchanged.
+= L-built @does_not_show/0/zh
+- 充分一侧的学习者被给予世界与目标；不被给予什么的学习者只对从现在所识读出的目标证明。
++ 充分一侧的外推依律、映射、特征与列表所建；不被给予什么的外推只对从映射现在之值读出的特征证明。
+= L-built @does_not_show/0/en
+- The learner of the sufficient side is given the world and the target; a learner given nothing is shown only for targets read off the present registration.
++ The extrapolation of the sufficient side is built from the law, the map, the feature and the list; an extrapolation given nothing is shown only for features read off the map's present value.
+= L-feature @does_not_show/1/zh
+- 一般的律下，可学不推出经识同去：读出所识的下一值的目标可学而不必同去。
++ 一般的律下，可学不推出经映射之归并同去：读出映射下一值的特征可学而不必同去。
+= L-feature @does_not_show/1/en
+- Under a general law, learnable does not imply going alike across the registration: a target reading the next registered value is learnable without it.
++ Under a general law, learnable does not imply going alike across the map's lumping: a feature reading the map's next value is learnable without it.
+= L-extrap @does_not_show/3/zh
+- 学习者仍须分辨所识的值；所识的值本身不被分辨时的学习没有陈述。
++ 外推仍须分辨经映射的值；经映射的值本身不被分辨时的学习没有陈述。
+= L-extrap @does_not_show/3/en
+- The learner still tells registered values apart; learning where the registered values themselves are not told apart is not stated.
++ The extrapolation still tells the values through the map apart; learning where those values themselves are not told apart is not stated.
+= L-extrap @counterexamples/0/detail/zh
+- Pair：识第一个坐标时，没有学习者在 (true, false) 与 (true, true) 两处都在第二个坐标上静止（Pair.first_not_rests）。
++ Pair：映射取第一个坐标时，没有外推在 (true, false) 与 (true, true) 两处都在第二个坐标上静止（Pair.first_not_rests）。
+= L-extrap @counterexamples/0/detail/en
+- Pair: registering the first coordinate, no learner rests on the second at both (true, false) and (true, true) (Pair.first_not_rests).
++ Pair: with the map taking the first coordinate, no extrapolation rests on the second at both (true, false) and (true, true) (Pair.first_not_rests).
+= L-feature @next_delta/zh
+- 不被给予世界、对每个可学目标静止的学习者，或其不存在的见证；不确定过程上与概率读法下的可学性；实际的识（阈值、注意）的实例。
++ 不被给予什么、对每个可学特征静止的外推，或其不存在的见证；不确定过程上与概率读法下的可学性；实际的映射（阈值、注意）的实例。
+= L-feature @next_delta/en
+- A learner given nothing that rests on every learnable target, or a witness that none does; learnability over undetermined processes and on a probabilistic reading; instances for actual registrations (thresholds, attention).
++ An extrapolation given nothing that rests on every learnable feature, or a witness that none does; learnability over undetermined processes and on a probabilistic reading; instances for actual maps (thresholds, attention).
+= L-elim
+- 按否证学习的结果留下：识不分辨值时的学习没有陈述。本结果陈述它：经识，学习者所能学的，恰是所识的未来相同者从某步起一致之处。读法（AI 的，依 Ren 的交托采用）：识为所学划界；依 Ren 的读法，理是对结构与变化之规律的建模，这一建模经识被学到，正如它经识被检验；阈下的差别（依存而不观察的条件只以阈值被识）只在它在所识的未来中显现、或从目标中消失之处可学；识之外者只经扩大识到达：新的观察、他者之识。
++ 逐除外推的结果（当时称按否证学习）留下：映射不分辨值时的学习没有陈述。本结果陈述它：经映射，外推所能学的，恰是经映射的未来相同者从某步起一致之处。读法（AI 的，依 Ren 的交托采用）：映射为所学划界；依 Ren 的读法，理是对结构与变化之规律的建模，这一建模经映射被学到，正如它经耦合入者被检验；阈下的差别（只经阈耦合入的条件只传递是否满足所需）只在它在经映射的未来中显现、或从特征中消失之处可学；映射之外者只经扩大映射到达：新的经水平的耦合、他者的耦合。
+= L-elim
+- Learning by refutation left learning where registration does not tell values apart unstated. This result states it: what a learner can learn through a registration is exactly where configurations with the same registered future agree from some step on. Readings (the AI's, adopted on Ren's delegation): registration bounds what is learned; on Ren's reading 理 is the modeling of the laws of structure and of change, and that modeling is learned through registration as it is tested through it; a difference below threshold (a condition depended on and not observed registers only whether it meets the need) is learnable only where it shows in the registered future or vanishes from the target; what lies beyond registration is reached only by widening it: new observation, another's registration.
++ Extrapolation by elimination (then called learning by refutation) left learning where the map does not tell values apart unstated. This result states it: what an extrapolation can learn through a map is exactly where configurations with the same future through the map agree from some step on. Readings (the AI's, adopted on Ren's delegation): the map bounds what is learned; on Ren's reading 理 is the modeling of the laws of structure and of change, and that modeling is learned through the map as it is tested through what couples in; a difference below threshold (a condition coupled in by threshold only passes only whether it meets the need) is learnable only where it shows in the future through the map or vanishes from the feature; what lies beyond the map is reached only by widening it: new coupling by level, another's couplings.
+= N5 @dependencies/0/detail/zh
+- 复用 record、record_congr、record_length、Refuted、Lumped、learner、lassos 与 tri：学习者、记录、否证与归并。
++ 复用 prefixOf、prefix_congr、prefix_length、Misses、Lumped、byElimination、lassos 与 tri：外推、前段、不合与归并。
+= N5 @dependencies/0/detail/en
+- Reuses record, record_congr, record_length, Refuted, Lumped, learner, lassos and tri: the learner, the record, refutation and lumping.
++ Reuses prefixOf, prefix_congr, prefix_length, Misses, Lumped, byElimination, lassos and tri: the extrapolation, the prefix, missing and lumping.
+= L-elim @dependencies/0/interface/output/zh
+- 学习者与所识的记录；按否证学习；归并。
++ 外推与经映射之历程的前段；逐除外推；归并。
+= L-elim @dependencies/0/interface/output/en
+- Learners and registered records; learning by refutation; lumping.
++ Extrapolations and prefixes of courses through a map; extrapolation by elimination; lumping.
+= L-feature @dependencies/0/interface/input/zh
+- 经识的学习者在目标上静止。
++ 经映射而读的外推在特征上静止。
+= L-feature @dependencies/0/interface/input/en
+- A learner reading a registration resting on a target.
++ An extrapolation reading through a map resting on a feature.
+= L-extrap @dependencies/0/interface/conditions/zh
+- 套索学习者要所识的值可判定。
++ 套索外推要经映射的值可判定。
+= L-extrap @dependencies/0/interface/conditions/en
+- The lasso learner needs registered values decided.
++ The lasso extrapolation needs the values through the map decided.
+= N5 @dependencies/1/detail/zh
+- 复用 held_learner_rests（未给定界的学习者的静止之步）、Law.name、Law.sameFuture_iff_below、record_eq_iff、firstFit、firstFit_sound 与 firstFit_found。
++ 复用 held_byElimination_rests（未给定界的外推的静止之步）、Law.name、Law.sameFuture_iff_below、prefix_eq_iff、firstFit、firstFit_sound 与 firstFit_found。
+= N5 @dependencies/1/detail/en
+- Reuses held_learner_rests (the step at which the learner not given the bound rests), Law.name, Law.sameFuture_iff_below, record_eq_iff, firstFit, firstFit_sound and firstFit_found.
++ Reuses held_byElimination_rests (the step at which the extrapolation not given the bound rests), Law.name, Law.sameFuture_iff_below, prefix_eq_iff, firstFit, firstFit_sound and firstFit_found.
+= L-prefix @dependencies/1/interface/output/zh
+- 有界的记录确定所识的未来；未给定界的学习者的静止之步。
++ 有界的前段确定经映射的未来；未给定界的外推的静止之步。
+= L-prefix @dependencies/1/interface/output/en
+- A bounded record fixes the registered future; the step at which the learner not given the bound rests.
++ A bounded prefix fixes the future through the map; the step at which the extrapolation not given the bound rests.
+= L-built @dependencies/1/interface/input/zh
+- 从所识读出的目标在界内学到；被给予世界的学习者。
++ 从映射读出的特征在界内学到；依律所建的外推。
+= L-built @dependencies/1/interface/input/en
+- A target read off the registration learned within the bound; the learner given the world.
++ A feature read off the map learned within the bound; the extrapolation built from the law.
+= S1 @dependencies/2/detail/zh
+- 复用 Law.SameFuture：所识的未来相同。
++ 复用 Law.SameFuture：经映射的未来相同。
+= S1 @dependencies/2/detail/en
+- Reuses Law.SameFuture: the same registered future.
++ Reuses Law.SameFuture: the same future through the map.
+= S1 @dependencies/2/interface/output/zh
+- 所识的未来相同的配置。
++ 经映射的未来相同的配置。
+= S1 @dependencies/2/interface/output/en
+- Configurations with the same registered future.
++ Configurations with the same future through the map.
+= L-prefix @dependencies/2/interface/input/zh
+- 同样的记录。
++ 同样的前段。
+= L-prefix @dependencies/2/interface/input/en
+- The same record.
++ The same prefix.
+= S1 @dependencies/4/interface/input/zh
+- 所识的历程。
++ 经映射的历程。
+= S1 @dependencies/4/interface/input/en
+- Registered courses.
++ Courses through a map.
+= L-feature @related/0/detail/zh
+- 在不变的律下，可学的目标恰是经识同去者；推广所经的归并就是识所给的那一个。
++ 在不变的律下，可学的特征恰是经映射之归并同去者；推广所经的归并就是映射所给的那一个。
+= L-feature @related/0/detail/en
+- Under a still law, the learnable targets are exactly those going alike across the registration; the lumping generalization goes through is the one the registration gives.
++ Under a still law, the learnable features are exactly those going alike across the map's lumping; the lumping generalization goes through is the one the map gives.
+= L-feature @related/1/detail/zh
+- 依存而不观察的条件只以阈值被识；读于学习者，阈下的差别只在它在所识的未来中显现、或从目标中消失之处可学（读法）。
++ 只经阈耦合入的条件只传递是否满足所需；读于外推，阈下的差别只在它在经映射的未来中显现、或从特征中消失之处可学（读法）。
+= L-feature @related/1/detail/en
+- A condition depended on and not observed registers only as a threshold; read for learners, a difference below threshold is learnable only where it shows in the registered future or vanishes from the target (a reading).
++ A condition coupled in by threshold only passes only whether it meets the need; read for extrapolations, a difference below threshold is learnable only where it shows in the future through the map or vanishes from the feature (a reading).
+= L-extrap @related/2/detail/zh
+- 其学习一项读于识：学习者所能学的，不多于所识的未来所分辨者。
++ 其学习一项经映射来读：外推所能学的，不多于经映射的未来所分辨者。
+= L-extrap @related/2/detail/en
+- Its learning clause read through registration: a learner learns no more than the registered future tells apart.
++ Its learning clause read through a map: an extrapolation learns no more than the future through the map tells apart.
