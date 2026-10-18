@@ -98,7 +98,7 @@ After the AI compared the theory with a general cause–effect system (x_{t+1} =
 - related, not a proved adapter: [how-much-difference-arrives](how-much-difference-arrives.md). Answers two items of its next step: how much difference arrives is at most the carried amount, which is attained, and is positive exactly along a route in time of positive strengths (carried_pos_iff). Loops have witnesses only: a loop of strength one doubles a unit every step (Propagation.Loop.runaway).
 - related, not a proved adapter: [how-a-carried-difference-grows](how-a-carried-difference-grows.md). Answers the item on loops in its next step, where the rest follows a law with given coupling strengths: a loop is a chain of couplings of positive strength back to where it started (OnLoop), the strength around it is one plus the product of its strengths, by which what reaches it is multiplied every time around (carried_runaway), and with the same formations and strengths at every step a polynomial bound holds exactly where no loop lies upstream.
 
-**Used by:** [counterfactual-is-the-course](counterfactual-is-the-course.md) · [finite-fallible-inquiry-necessity](finite-fallible-inquiry-necessity.md) · [timely-response-necessity](timely-response-necessity.md)
+**Used by:** [counterfactual-is-the-course](counterfactual-is-the-course.md) · [finite-fallible-inquiry-necessity](finite-fallible-inquiry-necessity.md) · [timely-response-necessity](timely-response-necessity.md) · [what-a-pools-acts-respond-to](what-a-pools-acts-respond-to.md)
 
 <a id="sources--来源"></a>
 ### Sources

@@ -93,6 +93,7 @@ Aliases: `criterion along one run`, `沿一个运行的判据`, `law through a p
 
 - 18 October 2026: added (G3), on Ren's "please see what else is there to do - keep pushing the frontier till finishing"; study section 181.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: L2 and C1 added a study section each; THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the "Learning" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
+- 19 October 2026, M3 (Becoming.PoolResponse): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): M3 revised the "Selection, causes and experiment" row of section 8.2 (what a pool's acts respond to stated, its record linked, the open item restated as which responses correct) and extended the section 7 line of the open readings in section 8.4; U2c's change in between was in section 9 only. Read before re-pointing. The claim is unchanged.
 
 </details>
 

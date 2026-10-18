@@ -1,0 +1,13 @@
+Becoming.SupportGatedWebsInherited.repair_reactivates : ∀ (L : RelationalRenewal.Law) (T : Nat),
+  (Becoming.SupportGated.web L).active T RelationalRenewal.Law.Part.focal →
+    (∀ (d : Nat), d < L.needG - (Becoming.SupportGated.web L).level T () → L.draw (T + d) < L.contrib (T + d)) →
+      (Becoming.SupportGated.web L).active (T + (L.needG - (Becoming.SupportGated.web L).level T ()))
+        RelationalRenewal.Law.Part.sustaining
+Becoming.SupportGatedWebsInherited.same_inputs_opposite_futures : ∀ (n : Nat),
+  (RenewalRecovery.pulse 2).draw (n + 1) = (RenewalRecovery.pulse 3).draw (n + 1) ∧
+    (RenewalRecovery.pulse 2).contrib (n + 1) = (RenewalRecovery.pulse 3).contrib (n + 1) ∧
+      (RenewalRecovery.pulse 2).needG ≤ (Becoming.SupportGated.web (RenewalRecovery.pulse 2)).level (2 + n) () ∧
+        (Becoming.SupportGated.web (RenewalRecovery.pulse 3)).level (1 + n) () = 0
+Becoming.SupportGatedWebsInherited.recovered_neither : ¬(Becoming.SupportGated.web (RenewalRecovery.pulse 2)).RenewingIn
+      RelationalRenewal.Law.Part.focal ∧
+  ¬(Becoming.SupportGated.web (RenewalRecovery.pulse 2)).ConsumingIn RelationalRenewal.Law.Part.focal

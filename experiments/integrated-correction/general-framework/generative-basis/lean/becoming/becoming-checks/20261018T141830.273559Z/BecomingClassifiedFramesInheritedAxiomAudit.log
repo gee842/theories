@@ -1,0 +1,6 @@
+'Becoming.ClassifiedFramesInherited.frame_two_extremes_suffice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Becoming.ClassifiedFramesInherited.frame_strict_growth_robust' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -48,7 +48,7 @@ Canonical source: [SelectionPool.lean](../../../../experiments/integrated-correc
 <a id="next--下一步"></a>
 ## Next
 
-Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); whether a pool's selection responds to what it separates; an independent review.
+Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); which responses to what a pool separates correct the act (what a pool's acts can respond to is stated in what-a-pools-acts-respond-to); an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -71,6 +71,9 @@ The chapter's section 7.4, restated by M1 on 18 October 2026, read "alignment fo
 - related, not a proved adapter: [testing-within-registration](testing-within-registration.md). There one formation's coupling closure, and the clearer's side closed under being affected through what it couples into (Clearing.clearerSide_closed); here a pool's closure is the union of its members', and the clearer's alikeness is derived from a law of exchange.
 - related, not a proved adapter: [raising-what-couples-in-draws-from-beyond](raising-what-couples-in-draws-from-beyond.md). There a selection rewarding a rise of what a group couples into rewards drawing from beyond the group's coupling; here what a pool can separate is bounded by its members' coupling closures.
 - related, not a proved adapter: [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md). Its list searches over decided properties (Becoming.Likeness) give the member-level converse: from not every member coupling alike, a member that couples apart.
+- related, not a proved adapter: [what-a-pools-acts-respond-to](what-a-pools-acts-respond-to.md). Derives this record's premise that a selection goes through the pooled coupling for what a pool decides by its acts, where each member's law reads through its coupling, and turns the gap for a pool's act into the gap for its response.
+
+**Used by:** [what-a-pools-acts-respond-to](what-a-pools-acts-respond-to.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -101,6 +104,8 @@ Aliases: `what pooled coupling reaches`, `合起来的耦合及于什么`, `the 
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Re-pointed after reading the change (Feedback.lean: the fold; THE-THEORY-OF-BECOMING.md: section 2's closure sentence names Becoming.EdgeClosure; section 9's bridge bullet says what the fold moved, and its counts, receipt and connectivity follow the F1 run). The claim is unchanged.
 - 18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the "Learning" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
+- 18 October 2026, M3 (Becoming.PoolResponse): next_delta updated, since what-a-pools-acts-respond-to states what a pool's acts can respond to (exactly bounded by the members' coupling, and not fixed by it); which responses correct stays open. The claim is unchanged.
+- 19 October 2026, M3 (Becoming.PoolResponse): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): M3 revised the "Selection, causes and experiment" row of section 8.2 (what a pool's acts respond to stated, its record linked, the open item restated as which responses correct) and extended the section 7 line of the open readings in section 8.4; U2c's change in between was in section 9 only. Read before re-pointing. The claim is unchanged.
 
 </details>
 

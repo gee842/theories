@@ -167,8 +167,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T122313.319851Z）：Becoming.SelectionPool 的 37 项声明（33 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 179 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); whether a pool's selection responds to what it separates; an independent review.",
-    "zh": "哪些形成合起来，一组怎样形成、持续并抵抗由其所奖励者书写的规则（target-capture）；一组的选择是否回应它所分开者；独立审查。"
+    "en": "Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); which responses to what a pool separates correct the act (what a pool's acts can respond to is stated in what-a-pools-acts-respond-to); an independent review.",
+    "zh": "哪些形成合起来，一组怎样形成、持续并抵抗由其所奖励者书写的规则（target-capture）；对一组所分开者的哪些回应纠正动作（一组的动作能回应什么，见 what-a-pools-acts-respond-to）；独立审查。"
   },
   "correspondence": {
     "en": "The chapter's section 7.4, restated by M1 on 18 October 2026, read \"alignment for all is pooled coupling across intelligences\" as an open AI reading, and section 7.3 bounded pooled coupling only for a pool within one formation's coupling closure (Flow.unselected_beyond_coupling_all). Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's): no pool, however wide, selects what its own joint act does beyond its joint coupling closure; that is selected only through formations beyond it that couple the difference apart, such as those whose support the act changes.",
@@ -253,6 +253,13 @@
       "detail": {
         "en": "Its list searches over decided properties (Becoming.Likeness) give the member-level converse: from not every member coupling alike, a member that couples apart.",
         "zh": "其对已判定性质的列表搜索（Becoming.Likeness）给出成员层面的逆向陈述：由并非每个成员都耦合得无别，得到一个耦合得有别的成员。"
+      }
+    },
+    {
+      "id": "what-a-pools-acts-respond-to",
+      "detail": {
+        "en": "Derives this record's premise that a selection goes through the pooled coupling for what a pool decides by its acts, where each member's law reads through its coupling, and turns the gap for a pool's act into the gap for its response.",
+        "zh": "每个成员的律都经其耦合而读时，为一组以其动作所决定者推出本成果“选择经合起来的耦合”的前提，并把一组之动作的缺口变为其回应的缺口。"
       }
     }
   ],
@@ -407,7 +414,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8756580579b53371d6dd11d9cc1ce207eebf85c42dfd581f8b5c8c5756036e05"
+      "sha256": "4b2204c94382bdb6cebf0b55a4299d330d861a033dc93d5522945f53d2ab4933"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -449,6 +456,14 @@
     {
       "en": "18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the \"Learning\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, M3 (Becoming.PoolResponse): next_delta updated, since what-a-pools-acts-respond-to states what a pool's acts can respond to (exactly bounded by the members' coupling, and not fixed by it); which responses correct stays open. The claim is unchanged.",
+      "zh": "2026年10月18日，M3（Becoming.PoolResponse）：next_delta 更新，因为 what-a-pools-acts-respond-to 陈述了一组的动作能回应什么（由成员的耦合精确界定，而不由它确定）；哪些回应纠正仍开放。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M3 (Becoming.PoolResponse): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): M3 revised the \"Selection, causes and experiment\" row of section 8.2 (what a pool's acts respond to stated, its record linked, the open item restated as which responses correct) and extended the section 7 line of the open readings in section 8.4; U2c's change in between was in section 9 only. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，M3（Becoming.PoolResponse）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：M3 修订第 8.2 节“选择、原因与实验”行（陈述了一组的动作回应什么，链接其记录，开放项改述为哪些回应纠正），并扩展第 8.4 节开放读法中第 7 节一行；其间 U2c 的改动只在第 9 节。重新指向前已读。论断不变。"
     }
   ]
 }

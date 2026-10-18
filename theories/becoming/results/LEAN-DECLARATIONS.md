@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 194 | 7,862 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 195 | 7,880 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 38 | 567 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,516 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -574,6 +574,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PlasticityPreparation.lean](lean-declarations/shared.md#module-c527ff17c751) | Organizational formation through revisable evaluation |
 | [PlasticityWitness.lean](lean-declarations/shared.md#module-ac933f076498) | Organizational formation through revisable evaluation |
 | [PluralRecords.lean](lean-declarations/abstraction.md#module-2a54e07465df) | Abstraction, applicability and constitution |
+| [PoolResponse.lean](lean-declarations/becoming-core.md#module-618dbf62e7d3) | Becoming pure core |
 | [Population.lean](lean-declarations/becoming-core.md#module-161ef92f702e) | Becoming pure core |
 | [PopulationCorrection.lean](lean-declarations/other.md#module-eb4d5a6069ec) | Other formal studies |
 | [PopulationRealization.lean](lean-declarations/other.md#module-dc65abdfa4be) | Other formal studies |

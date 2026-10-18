@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "c915fe992514528f0ca232631958d8b3b0a8cbe5955175eae5d45cb89e56e90d"
+      "sha256": "4b2204c94382bdb6cebf0b55a4299d330d861a033dc93d5522945f53d2ab4933"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -975,6 +975,10 @@
     {
       "en": "18 October 2026, U2c (the two trace laws of Becoming.ProbeRunsInherited): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U2c updated the current receipt in section 9 (run, main commit, steps reused and run); the counts are unchanged). The claim is unchanged.",
       "zh": "2026年10月18日，U2c（Becoming.ProbeRunsInherited 的两条迹之律）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（THE-THEORY-OF-BECOMING.md：U2c 更新了第 9 节的当前回执（运行、main 提交、复用与运行的步数）；计数不变）。论断不变。"
+    },
+    {
+      "en": "18 October 2026, M3 (Becoming.PoolResponse): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M3 added the bullet on what a pool's acts respond to, added the laws of a pool's response to section 7.4 and revised its reading, restated \"Coupling is not compliance\" and added \"Which responses correct\" in section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，M3（Becoming.PoolResponse）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [
