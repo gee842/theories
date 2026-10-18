@@ -2,7 +2,7 @@
 
 18 October 2026. Written by the AI (Claude Code session of 18 October) for Ren's decision. Everything here is the AI's except text in quotation marks attributed to Ren, each with its source. A reading interprets checked content: taking, revising or declining one changes no theorem and adds no premise.
 
-**Ren's answer (18 October 2026).** Ren took Parts A and B ([words](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)); Parts C and D stay with him. Board item A1 applied them on 18 October as revisions of D1, D5, D22 and D39 and a new decision D43 in [DELEGATED-CHOICES](DELEGATED-CHOICES.md), and in the chapter and the records. The generativity chain's change (item 19) goes through the chain's maintenance record, a separate step.
+**Ren's answer (18 October 2026).** Ren took Parts A and B ([words](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)); Parts C and D stay with him. Board item A1 applied them on 18 October as revisions of D1, D5, D22 and D39 and a new decision D43 in [DELEGATED-CHOICES](DELEGATED-CHOICES.md), and in the chapter and the records. The generativity chain's change (item 19) was applied through the chain's maintenance record (board item A2).
 
 Where a reading says what one of Ren's terms means, Ren's own texts are the evidence of that term's sense. Whether the reading is the strongest one the work supports is argued from the work, not from Ren's words ([Ren, 17 October](../../../../sources/15-codex-theory-conversations/2026-10-17-ren-words-not-authority.md)).
 
@@ -192,7 +192,8 @@ Items 3–5 (L1, S1, S2) were decided by Ren on 18 October in the session "Repos
       - `Selection`: selection works through the selector's model (Ren's "memory is not wisdom");
       - `Observation`: registering lies within the downstream;
       - `Parting`: where runs part, neither the record nor the law fixes the way.
-    - Separately, the chain's index record needs an entry for the 78 refreshed fingerprints. That is a process fix, not a reading.
+    - **Applied** (board item A2), as Ren took it (D43): `Selection` in the chain's wisdom entry (M15), `Observation` and `Parting` in its learning entry (M26), each with its record's scope and in the naming study's coupling vocabulary ([chain](../../../../theories/becoming/results/GENERATIVITY-CHAIN.md), [maintenance record](GENERATIVITY-CHAIN-INDEX-RECORD.md#learning-and-wisdom-links-18-october-2026)). "Memory is not wisdom", above and in item 3, is the AI's paraphrase of Ren's correction, not his words; the chain quotes his words of 16 October, “it is about the cognitive model, not just record” ([source](../../../../sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md)).
+    - Separately, the chain's index record needed an entry for the 78 refreshed fingerprints, a process fix, not a reading. That entry was written on 16 October 2026 (`e3b08cda9`, fix-list item 37), and A2's entry covers the sources changed since ([maintenance record](GENERATIVITY-CHAIN-INDEX-RECORD.md#learning-and-wisdom-links-18-october-2026)).
 
 ## C. The register itself (D-f, review item 50)
 

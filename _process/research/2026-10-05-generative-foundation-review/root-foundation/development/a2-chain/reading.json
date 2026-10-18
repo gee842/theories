@@ -1,0 +1,2417 @@
+{
+ "note": "A2, 18 October 2026: the generativity chain sources changed since the reading of 16 October, as classified by classify_pending.py at the worktree base adab4a574. \"sources\" were read and are recorded by record_reading.py where the file is still the version read; \"pending\" were not refreshed; \"discovery\" are the new pages A2 classified.",
+ "sources": {
+  "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "e043436008b4d438013017370fd092cb84ac8181e94c73fef25e4b46f4e93e3f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BOUND-CALIBRATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C28",
+    "F20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "621464661ffe4e590ff988d5ad14830d2fd7808df83169c3d8fa3ab8e868e2f0",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CLASSIFICATION-REVISION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0c3ef5d1a78931c1816bb7a014ae006acaaf41de3fa50221cc287962d203cc0e",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "c58332d8df28dfa4d887ea7034ebfdc3cecced0154adb80797e2516da52ec46e",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONCERN-EXTENSION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "5384d506c989ca57c94b1f5d3a64e3f88cb505cb9af180db35268dd580cf9240",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "777e3bf9360acc56f327da315d7ccc4a0a0aea30ebe3e63d2f725daa5ae1a213",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C28",
+    "F20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0fe639b857f91ec452866b7ea06ce475d9f30f9f03e2165e7b5680b97c4ed5ed",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-RENEWAL-MATH.md": {
+   "kind": "links-only",
+   "entries": [
+    "F02"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "9c8b0ded5fde0e118d95690eb4966259720f20c803d0ef334f70e2b857bed3e6",
+   "basis": "link targets only, every one the same file moved; the move rewrites H1 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "F29",
+    "M23"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "766b77ed4e7cd91ecd6337dcb6a798312aaef21a35019324d52c499c61f3fc63",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01",
+    "M15"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "6da279324aeb71029fa00d70b4fdba2365f9397a279a525d3fe2bc92ecf15898",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "d39e66c04d320583cff52f64dba1c541a34b76a4e70b0481f8984397d313fac9",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATIVE-EXTENSION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "cd24301113378b3150592c52ac48204fd9e13e1849cb6e333a25cd673a9dfc88",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-CALIBRATED-UPDATER.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "75942674f0c2f5940e8ba852d9277a2435d092d0f78f594863803e53305b771f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "e1bd9d8b7e744efaf0138ab3bf3a2a91849f56616366f2e27544c4cc84f1b246",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "62c4fc692e68cffaa8ea439c7ced11ab61d68bfeb2fd6882287c624f8c09857e",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "772e4ea40641aaa4822a4c5ae6a71374eaec8b10871cd9f9fcc8908e28aceba1",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-NETWORK-COMPARISON.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "4fc091d133ec5d7829e545bacbd58631477e96636b58ef0a84276a50f44fc0e0",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "5873e141d9afa2e53165e2174206dde10e9a3b975554a138b8f010d6ccba7aea",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "ff9a5cae2be49e6226af5b4bde17d6f310463d1978426726d3e8c2925a15aeaa",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "3c8038d56220f1d1e748bd988fd4e2839e99de9a3e53cae057dce9500340ff4d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "905f78e0ee3d817a9480a97d20b96a117deb5654d4a3b001817fd437e1524e5f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "ec319e412ed69b42f998bd8344a8781b4fa05d50c38dafbcb33d926b3ca68fb0",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "ab89994575e4c1f59fd20c00a5f882ff12fa89c63e57b2423e4df0d1d6490a24",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "2e0cfd0475c25fd02702c8b43516a510deed175377fc74264ecb9496d8972353",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "7a3d9e6d7673f2b7879a4cc65fd82233f148e48e15096d05daa4f1b6f952147b",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "bf01066d3a951997525ed435b3e9718da8f30485fc009e4fa2269e29b1ed05a3",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "683e6aa9ac6dc0a0bbbcd3f6e2adb4ab144933d13cee85ff8c589d6eb866acce",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FIXED-FINISH-LINE-AUDIT.md": {
+   "kind": "links-only",
+   "entries": [
+    "E03"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "07c1b294a9338bd9cf41df983b803cfe78bd026005d1a80cc592d5247c9043ff",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0470cea3aa03c4b3f7ce01c6bd87b00b0c5b4a0d63d1fc5832a62b276a93b41b",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "37fc46241758b1e4f85149b4d7c447d21071f5618b79ef91c938e5147362cb0d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/G0-AND-KNOWLEDGE.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "989e1b79c21569662e146a42327613b16d28664e3c6b56f85c416daf5a102644",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "e543a93ddd547dc8ad4b5979f5ce3c0b8e70ea039d5b4cfe71d3602a49861b01",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "f43183a2630a0ab87dec90ae41e1b30b426e72f6d4d125b07f53c98072a593fa",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "4a8654f2598cf9becf89b26752978dfd77fde9b9945612bd8bb1cd708088d3fd",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERAL-FOUNDATION-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "b333500aed0672577c2826057b8108175602718bb9bc6c18a8fe4ce91ec74eca",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "709cd8d3e35144205a22b2fececf0253fc8d2860eb996de7917dcd415fa5400d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C19",
+    "F14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "6cf3409316d5f63d1ff54377d31c565c466e658cd43b4bfce366b52b6fb4bdc7",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-VALUE-NECESSITY.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "9a432f7ec25c60e32085f68ef4e6ed979f4d6871fcbe62126ae8db473e15f975",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "f94ecf9d9403107cae99e5eed806efefa05df54f12014f75cb78836347d4d68b",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0c0674eb1cf575c62a8338b7e8f3141547d4c3c5c5f8a9d278b438a622f65f7e",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "208f2905afd93653ba2db411ebe1048d0480939a8a92f3e21cf35332dfc09a1d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/INQUIRY-JUDGMENT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C31",
+    "F24"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0977c40ccf68defa8ed9c7ff7d78cc8426f8c076ad216f062011db15f07f0121",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0a8a102a83ef1f633a187c46219982a2c9315588600f5cc122c988920a4e7ec6",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md": {
+   "kind": "links-only",
+   "entries": [
+    "M15",
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "87f7a0ca590d30919b11493061bc43ac46bfd0f2e89915082639d28bc2dcc421",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md": {
+   "kind": "links-only",
+   "entries": [
+    "M15",
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "13ee5b1f4958f12abecc913a74c4fdcfce95bb143a8b9746cfbce3d063e159e9",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "781bbd6ec5227c07f580249ce32f23b2540eb2464d27a63cbc4cc11041e64350",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "6ba4c98816a428c0a1868f5935d813cc153e7cf14d05afbcd3c8a06a1257ddea",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LAW-CORRESPONDENCE-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "910f66aad0f1254a04ed59e7bae004d64972d4e0f91ed474ca4f337384c7e56a",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "5e6844311ec53aff636c09e0ce0460344aa4ac5d14a4eef83ec15cc6d7a12d04",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-ALLOCATION-PROOF.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "9e0e619206417a2765a5ee5e9f953cf088fbf20b3faf7c59bfc084acb309d053",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-ALLOCATION-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "142d57c4acba15c879b695f1560da8b68a6e5f2b421ccab11780d3f0ecdee1f6",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3+H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08",
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "6d36e0529546f78307acfd9bab6030d58afc639ca9d6c358f66dfd24a5eeecfc",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-EXPANSION-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08",
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "8cf98d5aaacbecf3912ac3bb4311e3865470dd29506c10a9a342debabc8bb6f9",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-GOOD-GROUNDING.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "2bd6577a9a219b95730bfeb6f0386e30e9f21fce6103ff2e0c43ee0a47a58472",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-ORGANIZATION-EVIDENCE.md": {
+   "kind": "links-only",
+   "entries": [
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "6c798f0514514b597deee3f81d83a1f0e860797ae23b1f30f84ae4374786dbc2",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-ORGANIZATION-PROOF.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "8bd56f5d4b21f4af4843bf8c425eed26de16ee3930faa0c05a882b1e4f17d1b8",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-ORGANIZATION-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "ba13c61041e67e73d6cd013d5b8c09ae180389c9b71bc4dba56ecaab9c1e5826",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3+H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-TRANSITION-EVIDENCE.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08",
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "613f77b955de87089b721f973afc779130a7a08103de0b83b5c04122dc5f8bc4",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-TRANSITION-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C08",
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "5c312a4f4f128ade9700ba378d855e226cfbc75ddd09967e600eac459ee8db1a",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3+H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "a63c4c7bd687c42eb8286b79f4ae961a683b7fa1650c6d618d906c03f6a04c44",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICS-GROUNDING-RESOLUTION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "dd17a096576d981e06771c28757f7addd189f3c99b97ac0708a23d64b2a1de24",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MEASURED-FEEDBACK-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C32",
+    "F25"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "f6c2efaa0d4de483fd86ab283ca9bd43a2298359085e6d338fd6ae85ee697b21",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/META-ATTRACTOR-ADMISSION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "98e49f6cdf41c0303be44dfc39832fea71df5491be8d3ea5162df79cca35cb0b",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NEW-POSSIBILITIES-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "F17"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "886d3a45087a3bd8db287367ccbba7ecc0414086a9caf2b210953c2bbfe64dd9",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NEW-POSSIBILITIES-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C25"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "35a6ec87582dad3f0c8cd03e4db3836d03a502a05d1e96df0ad1e105964f8fea",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "E04",
+    "F12"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "3a79ad4e3178e1a6591137a040010bfbe2ca2c7e28a226453199315afe7547e2",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NORMATIVE-WARRANT-SOURCES.md": {
+   "kind": "links-only",
+   "entries": [
+    "E04"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "aeb4c91f5fd1504ef1ab54e0b9f171a46c2821e537ea0cec5c0fe85b898ef791",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PLURAL-CORRECTION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C33",
+    "F29"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "cfefd5e134f143211c65f9db5c7d2678fcb1c21f0bbb4c1b6c9556251ef5f0c1",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md": {
+   "kind": "links-only",
+   "entries": [
+    "C09"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "8850662e88fde2e29e43016c2224677367f9596436f0b07658c065fff2c1978f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H1+H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "37d2ec4c43ecb92e90cd0ba61796abce4c48372209e45ecc6eb97e1756ce9f12",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/POSITIVE-GROUND-UNCERTAINTY-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "78a6cf249e539c060a5f4f9bb00e1c3ffecbf10d3cb56873e589ba65011cace4",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REFORM-EVIDENCE-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "c25d472b99f38ccfcfe00b78a48313e4dab00b46f63617b318f2ca6e2d7736e3",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C28"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "a9f3363f69d4b0d047b30fb4b32465710d67c28d3975f6799e9cccc58fc225a6",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCALE-REVISION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C28",
+    "F20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0e13926b97f96f36359202fe1514a43b26d6277da6bc440e8aa8e0537d872f9e",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "eb74351cf1fedca6a506a3479fa1323ff07224408ed4bdbd0f264942263d0350",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "85adae0cbe0da4364d73eedb00ea07c78d86924fdc07cc53863b42ff4e62ebf1",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "e9fa4998b891f7a7f82f276629b155ffbfa06f59694e6c4935abac5fe809d9a2",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "167614c9461130cac4e1c09192dc063690e495fe87646dada9944eb3b180c168",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SITUATED-WARRANT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C23"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "74361d1450c67f001111d9e711d715ee96fdd1edffeebdf64845f18d2d57c55d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C27",
+    "F19"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "3108d32c52f2df5b28ed1eb518bddca7211c31a8047d2381ceebc7b00030a6bc",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C27"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "57c2829d5c0b67004495005091ba6979d014a61fee58ef9cce82c052d281895a",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "759a5e072e9dbddddaeab128a20648bc3a5ccecb1dd51bb2a03fcdc18f9ca549",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "036c47587b653fdaf73c8333f28fde63e2d08ef8262275865455d6ffb869e4b3",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "aec1a738bde8f500ed5841b5cd40f4a23bc6c5a0c6a3d98194bf0a54e449602b",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md": {
+   "kind": "links-only",
+   "entries": [
+    "C32"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "2ef84053bcc62861647365dbbf175a649d6ffc46d12cc5e33af9afee9c51f09f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/TIMED-FEEDBACK-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C32",
+    "F25"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "d08263840e1bc8d9b002b9ba1a42e3d666e28baa0e6ca56dd652f515e1c050a0",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "F11"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "a0001d62e791b0ca7f10261e2dee766ce02c522b4fc8e4295008c14c37655370",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VARIATION-WARRANT-ARGUMENT.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "ca82ff602c3200711118fe8fa515803942e5e955d2e5dfe76ff11b648a3c4b00",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VARIATION-WARRANT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "5e30b5f38311faf80236190efc42eb42d5bbe87b494a13abd4d6f367d5c38ae4",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/VARIATION-WARRANT-REVIEW.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "f374c7bbf1b33f2fd049905b8e3009fab8dd8879f5daaba09a37a97f672769e7",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "8fe4a068bf03ee28cb4ae882a7be4a0a96d223c75974e32befe02aa4a93f5d78",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "1ae57568659e8fa3019d055b5e1024264e5314e1ee7228e05f1b072560f2c7a1",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WHOLE-PRACTICAL-GROUND-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "F10"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "071814168a58b84f1168012c9e0fce031804e22bae4bd6a7c1a3c973a0438eb7",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-CONTEXT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "F01",
+    "M15"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "a21233d777f5a86652637c7246125901ce08a93e9998b83798d52b33f82411af",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WISDOM-RESPONSE-NECESSITY.md": {
+   "kind": "links-only",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "bf9db8d7581967f4cb6ce641ef1cf6e8a1a3e44dac9597d8a7fa673b35598e63",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "31dc7e93ed80a14f6a96e18bf18356b3bd6d07e9214a8f76eebf63fc5de02543",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "976d0e6544c3951c8f5d0bf301d79e984cb2416818a10fb9ebdd1eddef4f15b7",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "6a964a92a6c12ec5cb506bd347cc3a745c12aff8247e51f2efb5c4f4e20dbc4d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md": {
+   "kind": "links-only",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "3bd675ec507d493c7beaa4cb65c8104be1fa2dd93f779449e30f268d78c0f013",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md": {
+   "kind": "new link target",
+   "entries": [
+    "M15",
+    "M26"
+   ],
+   "recorded_commit": null,
+   "sha256": "fd2cc2bec8d2a1092cad04e7c34b3179623f795a2e613e730d67d1e6e5fb89b8",
+   "basis": "read in full; linked by A2 (M15 or M26) Read again at caf0c4f83: L2 extended D40 (the reading is a finite table of labels), C1 added D44 (what taking all that is given excludes) and its delegation line, and U2c recorded that the two trace laws of the joins are not vacuous; D43's readings of Selection, Observation and Parting, which M15 and M26 cite, are unchanged."
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "7d101ae98c63306d3bf5715144acc474e58bde6346f50c0b70be0706dd617c1e",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C30",
+    "F22",
+    "M15"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "a78b40420146e1035b468b39f60faf9ac2a768db1df8f63adcdf4b13a3dee56f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "0c2a66dfa4deb7aecd05cfe1f0acc711cdc9d6c6b90784ca54aea02f88b2a06f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "b05667a58087ca82f7e03776bf59ed4d35814a2e98a64f0ec61e9576ea09dafc",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md": {
+   "kind": "split+links",
+   "entries": [
+    "M15",
+    "M24"
+   ],
+   "recorded_commit": "a643f4fa85b43bd119cc9dac88937f03cb3557ff",
+   "sha256": "4d67672ab7df1ee71c3cf111d46fb4999bc0fd8ba7e331ad09b75418aa670f03",
+   "basis": "the language separation's English output of the recorded version, link targets moved; the Chinese is in the Chinese edition"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "722ab3f753d902cdebd0c460823457686ed2b77e58cf42257847194ea4757363",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C09"
+   ],
+   "recorded_commit": "4e7642e1187f34e844c21a50bfc14b423453542a",
+   "sha256": "ef73b555d35257c387de925b7712f9c96655a6ce8c5a1e6a92a9a8a275a2c9ab",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "338bf1053adaad70de18aa7908b3ffe2cca7b76b",
+   "sha256": "95efdb9a532d7c261f0be4f6cd84ad5e35d626581c376d3df21eff871c0ee02a",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md": {
+   "kind": "links-only",
+   "entries": [
+    "M15",
+    "M21"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "26d0c1bc43e6a406b8e5d4e9c15378846f284301adffcbb3546a0cfd6a216e13",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md": {
+   "kind": "links-only",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "sha256": "b24072f6b633e544a9d9bbfa9ee2064588b37fc86f418d6a50d7f5c5d97a3f61",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md": {
+   "kind": "links-only",
+   "entries": [
+    "C23"
+   ],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "4df3c55fab536e841fbd3a6a9e7f256073f002220cdca8b4865c3b2709f04675",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "C23"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "fbd1d9019effe753a88b071efcbf210f99766fef52f90829e2bea4154d850747",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "a9bbe3bb32a1397fd8228326c78b14f0140f6e5af652aa428d5b6426b506156b",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "29182370c4e0d25af83df7f6297269712c9409b2761ab1ca1a426f1c07d4bb57",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean": {
+   "kind": "other",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "sha256": "a6945f150c75540f35e320bc11c75dc15965e439f7592eee33f9411c7aa6776e",
+   "basis": "read in full: N5 rename ReferencePlan.registered to ReferencePlan.alikeOnInstalled, statements otherwise unchanged; M15 confirmed Read again at caf0c4f83: W1 added import Becoming.Labelled at the top, re-rooting the import tree; no statement, name or proof changed."
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean": {
+   "kind": "other",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "595f541fecc837560c17a908749961f7a2189ebb",
+   "sha256": "dabb239082e3ea10b17c9d1054837c36292f01d30d05d5981435526874b4babb",
+   "basis": "read in full: N5 renames; a docstring now states the double negation the statement already had (couples_of_sensitive); new definition ExchangeLaw.courseWeb with ExchangeLaw.world through World.ofKind (U); M15 confirmed"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean": {
+   "kind": "new link target",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": null,
+   "sha256": "648576d8bb87dc1097d8ce069daeeae4c2fddd6f912f26d89a1346ca94f38e46",
+   "basis": "read in full; linked by A2 (M15 or M26)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean": {
+   "kind": "new link target",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": null,
+   "sha256": "4f16019d3f1e0f8f39818a0788c8fc6d13ac52aef3bd1cde67e75358c8391139",
+   "basis": "read in full; linked by A2 (M15 or M26)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean": {
+   "kind": "new link target",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": null,
+   "sha256": "a7f50150da6ac47b1f92a5c5f799eca65d47edf2dc01069005c1ab5c744b06d4",
+   "basis": "read in full; linked by A2 (M15 or M26)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean": {
+   "kind": "other",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "595f541fecc837560c17a908749961f7a2189ebb",
+   "sha256": "aae50d4e1220904e455a8f88f0b616d5ddd0b3c7f5a4b5a934d2db91ee4d022b",
+   "basis": "read in full: docstrings relabelled (G0 to living significance, the axiom to the continuation condition); declarations unchanged; M15 confirmed"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean": {
+   "kind": "other",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "595f541fecc837560c17a908749961f7a2189ebb",
+   "sha256": "8e285d9a8b1952b58668e2dbd2f51f23598a40cdb6bb2f96271986ab6372a842",
+   "basis": "read in full: N5 renames (registration to coupling: RespondsThroughCoupling, CoupledInto, AlikeThrough, thresholdOnly) and the relabel in one docstring; statements otherwise unchanged; M15 confirmed"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean": {
+   "kind": "new link target",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": null,
+   "sha256": "3399211a1a4b5e08592f4bbdd6c5d288b14870e534def29aa447be3b33040d96",
+   "basis": "read in full; linked by A2 (M15 or M26)"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "18d77a3f5bcbe196d0fa1735f2bd35af8053da04a0612b02aed25d1d4bccd055",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "9087ad082b7a1e7b9617f9667cd0ab275c1dbdfd",
+   "sha256": "455c0c454d42d71f4af34898db608220a580f6226e8ec5353b048771cc295ba9",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ACQUIRED-CORRECTION.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "78303002cf853242857f87bc16bb1373070386297c52413a3204303dd4913b3d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ALIGNMENT-CONTINUITY.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "10638864763642a468efa7432e723b65b7c1f37fb403cf81e405111fe7d86fbd",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CORRECTION-RECONFIGURATION.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "3a443822b439db2a31b73228939dedaa710ec20832f35cb4d92c083535693189",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EVIDENCE-QUALIFIED-CORRECTION.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "d24c713ec008dc496aeaad851b63622d62ae2794cb607f4c68f1c12724e5a5ee",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FALLIBLE-INSPECTION.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "3fe11973977dd616ecbd913ce9e9c7c4d3789991927d63f9c652a941bbf73d92",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FAULT-TOLERANT-CORRECTION.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "130585f5abd6d761e2d177be65762428bf5cce3c0097d6adb8d925825aa8519d",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MEDIATED-CONTROL.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "c473972ce6c73901dd18578d2309ccff2f251503",
+   "sha256": "2eb65128c627ef502a5bb9772308bcee8b34c3fdba8ef57bb37da5edf3ee8c76",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RECOVERABLE-CONTROL.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "4e7642e1187f34e844c21a50bfc14b423453542a",
+   "sha256": "26c5845650116e2e28849f0355aed74687ef236916cac2dc410f7cddee17266f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RESERVED-SHUTDOWN.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "4e7642e1187f34e844c21a50bfc14b423453542a",
+   "sha256": "95d77ebca1ef6c97476c0db1a443b75af304ba99bf58ec7dea504daf595dfeea",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TEMPORAL-INSPECTION.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "e752757b789cefbd6de304f8bcfee40543db9c07da017233abec89af4903525c",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/README.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "4e7642e1187f34e844c21a50bfc14b423453542a",
+   "sha256": "8d734b6dbab0a741edb51ebd57f8f46858605241ad7d06e7f5384c4ccb2c5788",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "74cba5b135ef9ba5f2fa586a2bf39595ad4136b5",
+   "sha256": "ab9c24979e1f731c4e2d7ab47ceff0dde0224a8cdd5fb0364cb8bdcd3ee29404",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md": {
+   "kind": "links-only",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "4e7642e1187f34e844c21a50bfc14b423453542a",
+   "sha256": "82c4d62a0fcdc6e08614823e9e91933c15c58b13ea52b323eed7997e3b5b36e7",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "experiments/market-generativity/formal/README.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "d168b9c104444b2f966cc5dd2bbd13c37a6631a52cd0b17305a796da4c77bbea",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4 take the fingerprint to this version"
+  },
+  "experiments/valuation-development/lean/perspectival/README.md": {
+   "kind": "links-only",
+   "entries": [
+    "F12"
+   ],
+   "recorded_commit": "e40ae55936418816616ee75ee46aebbc6ab8b2d7",
+   "sha256": "f9183b95ca550e7ae5d41ba1a0cf4b654e6df18781c352ff015d2166e6030e48",
+   "basis": "link targets only, every one the same file moved; the move rewrites H5 take the fingerprint to this version"
+  },
+  "sources/15-codex-theory-conversations/2026-10-16-selection-through-a-model.md": {
+   "kind": "new link target",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": null,
+   "sha256": "72f5157a577bed3616101e9c1e1ee96e6701d3fc9e2839acf27cb09bb06fede9",
+   "basis": "read in full; linked by A2 (M15 or M26)"
+  },
+  "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "9087ad082b7a1e7b9617f9667cd0ab275c1dbdfd",
+   "sha256": "1e9d0d4f8b3742289a61faec6aa42e7d7b85165caf22a4a22306a5256ea4d757",
+   "basis": "read in full: the relabel (G0/J to the conditional alignment route, living significance) and P73/P74 removed; M26 confirmed"
+  },
+  "theories/becoming/chapters/NONDUAL-METHOD.md": {
+   "kind": "links-only",
+   "entries": [
+    "C01",
+    "C05"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "sha256": "34879a406378f20ea80d3ae58409357c1c21543d07d8d475bff44f4106778da7",
+   "basis": "link targets only, every one the same file moved; the move rewrites H4+H5 take the fingerprint to this version"
+  },
+  "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md": {
+   "kind": "links-only",
+   "entries": [
+    "M10",
+    "M11"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "95371fc59817b4196f15e48d007f0c588d10a2ccc20f27a968e215a81a52adfe",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3+H4+H5 take the fingerprint to this version"
+  },
+  "theories/becoming/chapters/WISDOM-AND-CONTEXT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "cc78f07fe7784ce7af35bfd542cfd9e7bdef884c",
+   "sha256": "b5ba7d8e6b15b4f0519f92289608fd5dcf24c27fce5c53ab7cb0bc0b88d3bed3",
+   "basis": "read in full: Chinese-only passages translated into the English edition (sections 1-31); the relabel (G0/J/E to the conditional alignment route, living significance under the continuation condition); M15 confirmed"
+  },
+  "theories/becoming/history/ALIGNMENT-AND-GOVERNANCE.md": {
+   "kind": "links-only",
+   "entries": [
+    "M20",
+    "M23"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "7b5f39595c377b88068d017e2b199b331128248fec4c82299073563ec58ac2dc",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/FORMATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M16"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "281035d46ae5efdd358e23b34c6ba8e5c7237b105193d51e1973535398f84018",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/GENERATIVE-DEVELOPMENT.md": {
+   "kind": "links-only",
+   "entries": [
+    "M01",
+    "M15"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "142d163655cb42f569e118d1d718f386ced1fdddbf9c7b7fa1c3d5b7ca71ac34",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/GENERATIVE-GROUNDING.md": {
+   "kind": "links-only",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "9117a1fc625b99a39c98768943e82df37d242e7105781631f979df65e9ed0b64",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/HUIGEN.md": {
+   "kind": "links-only",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "sha256": "f0dc467fe9c11faded6d5d38cf8271e38f1c5df29f3031076349394a3f4e52f8",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/LEARNING-ROUTE-REVISION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M04"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "9d1a5df89d39dc59d9b58ce64899607d7bd994c69756342839e0c3a87f7a5e68",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/PREDICTION-ACTION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M03"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "01b519adc01ff3264b2a4defb991d250ed9e57211dbaf236f74fed187a24ad38",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/RECIPIENT-CORRECTION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "46408584bf78547ab29fab3ae4b7b0cff17e67b45c45b7d596a12f684487137f",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/RECORDED-REASONS.md": {
+   "kind": "links-only",
+   "entries": [
+    "M07"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "7ecd7a8a85a61ef33f9445f766f2ba15806b9379623b01b676115476e5049321",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/REVISABLE-CONCERN-SETTLEMENT.md": {
+   "kind": "links-only",
+   "entries": [
+    "M18"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "c7fb103d8a24c36f0651f354454b493e94f6c8772060e702b77c14594fa6616b",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/SELECTOR-REVISION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M02"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "d1a65a83aeb72e24dea552c878f18bc45155a589a2c33feee079d004c732ae50",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/SOURCE-MAP.md": {
+   "kind": "links-only",
+   "entries": [
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "62baca10b40191acd9284944b645ed0df0c34305695f6d765f674c77837df752",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/SUCCESSOR-LEARNING.md": {
+   "kind": "links-only",
+   "entries": [
+    "M05"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "1df01b7e2ba3872302da3042490b29ca0a4cdea3f58081814dc46c97a5b444b7",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md": {
+   "kind": "links-only",
+   "entries": [
+    "C02",
+    "C03",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C13",
+    "C14",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C22",
+    "C23",
+    "F14"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "sha256": "a06388eafc08e416e0adecd65c9a2127660637141e10e274638b78ba90e3eb90",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/history/UPDATER-FORMATION.md": {
+   "kind": "links-only",
+   "entries": [
+    "M02"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "sha256": "8f33aed567f03becd33c839a0bc9bbcdf4861881e38aa210994ffa253b349cb4",
+   "basis": "link targets only, every one the same file moved; the move rewrites H3 take the fingerprint to this version"
+  },
+  "theories/becoming/results/records/acquired-binding-compositional-use.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "edb834a32e132df9855a128891b676e691280e8a9cb5130b75a9cc8b94f4b5c3",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/acquired-binding-compositional-use.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "03188b98fad68e1c6cac1f13116d23c70c9a521ac65f184c5d70094f024952d2",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/acquired-revision-of-pending-task.md": {
+   "kind": "generated",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "0094d654218b2925401c2e345e23d286dff29fdfe14ca7d682517140098c003e",
+   "basis": "record page in the English-only template; its record changed in: history, references"
+  },
+  "theories/becoming/results/records/binding-preserving-substitution.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "F01"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "7bffdef196518d7a389a3ed0cc66527cb21beaf3cb96236b1e3662c204cf0054",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/classification-robust-generative-comparison.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "047257f784c4c4359cf70df0244a1e5a050e3a87129e85b999cb4c2846c06409",
+   "basis": "record fields changed: history, references; claim and scope unchanged Read again at ca19a7835: F1, the bridge fold, re-pointed the Bridge.lean proof reference to the folded file with the same declarations and added its dated note; claim and scope unchanged."
+  },
+  "theories/becoming/results/records/classification-robust-generative-comparison.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "31507b6a0a3c7bd6a92abf185976a31160d26de01297bb5d69c930fd70af987c",
+   "basis": "record page in the English-only template; its record changed in: history, references Read again at ca19a7835: only F1's dated re-pointing note was added to the history; nothing else changed."
+  },
+  "theories/becoming/results/records/consequence-revised-reference-plan.md": {
+   "kind": "generated",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "ba5d32e23118281b80f779016e73ff30477f47421ad5b2d0c02eca9026cc271c",
+   "basis": "record page in the English-only template; its record changed in: claim, history, next_delta, proof_bindings, references, reviewed_at_utc Read again at caf0c4f83: W1, the re-rooting, rebound the record to core receipt 20261018T183920.923524Z and added the receipt row and its dated note; nothing else changed."
+  },
+  "theories/becoming/results/records/context-sensitive-updating-correspondence.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "e9bffafa99a31470cc0ac50a28f5a6cdd9ecf467",
+   "sha256": "d1984a84fb6d58a538182b86fcf4fd7d35d4aece5e6c489239c3c5e7e72aff69",
+   "basis": "record page in the English-only template; its record changed in: history, progress, references"
+  },
+  "theories/becoming/results/records/derived-history-law-exactness.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "7cce6ae9e7d4b310bc889f3312c8a5ac6329d1cb",
+   "sha256": "280c8f4fe543f1c73e8a665c6f03859eee13ee7b13a2b62140da6d0141c5a31a",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged Read again at ca19a7835: F1, the bridge fold, re-pointed the Bridge.lean proof reference with the same declarations, rebound the Bridge.lean proof binding from core receipt 20261017T113233.209872Z to 20261018T134446.673561Z, cites that receipt and added its dated note; claim and scope unchanged. Read again at caf0c4f83: F2, joins into the core, moved the canonical source to the core's Readout.lean, every theorem of DerivedHistoryLaw.lean being stated in the core, and added SummaryFutures.lean with F2's core receipt 20261018T191422.542444Z and a dated note; DerivedHistoryLaw.lean keeps its path and bytes; claim and scope unchanged, and C01 names no file of it."
+  },
+  "theories/becoming/results/records/enacted-scene-binding.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "56858b29661847901a378443d50f626b5a6feaef5613d195da85acd7b6c9d59b",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/enacted-scene-binding.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "92cb328f22e7f3bd17c277022d0d8c767d7a0dc5d401a4c961a107c80bdc76ec",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/encounter-control-and-retention.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "sha256": "3ddd8617c0306e43d58670271d22db75cc2c49e217cfab8b0168b7175ca6a3b4",
+   "basis": "record fields changed: history, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/encounter-control-and-retention.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "e9bffafa99a31470cc0ac50a28f5a6cdd9ecf467",
+   "sha256": "113a1b18e0e2740844f831c8e2067ddb4d3f324622d23d5c80a870c9fe3b22c3",
+   "basis": "record page in the English-only template; its record changed in: history, references"
+  },
+  "theories/becoming/results/records/encounter-selection-and-revision.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "64cef87e57721b96495ab5910b136375085890a2a7b7cc54bdae5e62050cd7a7",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/encounter-selection-and-revision.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "0710bf483ed73596fdd11201e0edcdcdadd439c7e00bb2156986cad78439c9e4",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/finite-fallible-inquiry-necessity.json": {
+   "kind": "other",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "896f27ab1656da891da4090d515cbb8cb8c7e01d",
+   "sha256": "c4cd75d022714b2685370aa3bae5d3fb7af23ce6cb51e6a101090e9fdfefb93a",
+   "basis": "read in full: claim: \"P94 tests balance\" becomes \"A test of balance\"; receipts rebound (I5, N5); history notes; M15 confirmed"
+  },
+  "theories/becoming/results/records/finite-fallible-inquiry-necessity.md": {
+   "kind": "generated",
+   "entries": [],
+   "recorded_commit": "896f27ab1656da891da4090d515cbb8cb8c7e01d",
+   "sha256": "78746f8c2308add9d379cf1df9256815513d9e41ad42db8cc3c0bb0cee78aaa3",
+   "basis": "record page in the English-only template; its record changed in: claim, history, proof_bindings, references, validation_scope"
+  },
+  "theories/becoming/results/records/formed-copying-correction.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "6e07f157ecf728773de1be1c7518a9ab3c88775a4febe1ea3e0c19b53f184895",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/formed-copying-registration.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "11f067c8fb953662068479f958f24b2dfaa581a794714db384e654186bec6ac7",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/historical-source-binding.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "ee8d6ee28a4f788814cae5bf301b337128fabf399019bf971dd25d7f0965de3f",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/historical-source-binding.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "740e065cce88794cc9674ebe744948e08784c96836163575ff71b801489acb10",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/identification-where-runs-part.md": {
+   "kind": "new link target",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": null,
+   "sha256": "095b9290781960df841338385d5266510433c0a4eab6dcd4cc0e970042429e70",
+   "basis": "read in full; linked by A2 (M15 or M26) Read again at caf0c4f83: W1, the re-rooting, rebound the record to core receipt 20261018T183920.923524Z and added the receipt row and its dated note; nothing else changed."
+  },
+  "theories/becoming/results/records/inherited-structural-copying.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "99fae92443a2bf9ea0235a755798460b9b075c7d40b6bd3d86dd9afdd7354f42",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/joint-practice-forms-continuation.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "f231b9ce36d7ecbfdea5ca5ab7c32ddbf2ef3ef4d390e3bfd48644d86cc3a311",
+   "basis": "record fields changed: history, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/learned-procedure-transmission.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "2730a48c7ad3aa56c7265cf511c2ad37e0b2f2d578b23ffa57c6c120b62d3e30",
+   "basis": "record fields changed: history, references; claim and scope unchanged Read again at caf0c4f83: W1 re-pointed the Stock.lean proof reference with the same declarations, rebound its proof binding from core receipt 20261015T161154.555289Z to 20261018T183920.923524Z, cites that receipt and added its dated note; claim and scope unchanged."
+  },
+  "theories/becoming/results/records/learned-procedure-transmission.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "919f4f62203acd5f26abd60c5291d84cdd6b652eed7006bb21d817aaab6cc76f",
+   "basis": "record page in the English-only template; its record changed in: history, references Read again at caf0c4f83: W1, the re-rooting, rebound the record to core receipt 20261018T183920.923524Z and added the receipt row and its dated note; nothing else changed."
+  },
+  "theories/becoming/results/records/market-partial-correction-boundary.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "2f95dda3d8fd0bddd29156576b325735402d4ec3",
+   "sha256": "9827cd7aaf9e0d147ebc8f63f62f6d9f397cf5e54fa6c7e4f8d9a662307643d8",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/market-supported-finite-transition.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "2f95dda3d8fd0bddd29156576b325735402d4ec3",
+   "sha256": "87e2fd53735b006e96500cb176b801df563b3595fcb97c048b72d23d124fdd53",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/mediated-evidence-transport.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "30bcb2651440d549ee91fde682f5449c5c1df3548bd36155ddcd4ab52ad978ab",
+   "basis": "record fields changed: history, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/mediated-evidence-transport.md": {
+   "kind": "generated",
+   "entries": [],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "14d202a8ac8231e67c038ee582595f8bf00d1583d34ad4968d1956afa0be1f9c",
+   "basis": "record page in the English-only template; its record changed in: history, references"
+  },
+  "theories/becoming/results/records/naming-attention-coverage.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "sha256": "f65c811e592b2c478dd609699f1be240cf6076febd08400c80aa3540a04c5c48",
+   "basis": "record fields changed: history, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/naming-attention-coverage.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "e9bffafa99a31470cc0ac50a28f5a6cdd9ecf467",
+   "sha256": "845d84c5bf3c69d99fc9579c4334c875f67103125d6de36fba1a29f6ab6827c4",
+   "basis": "record page in the English-only template; its record changed in: history, references"
+  },
+  "theories/becoming/results/records/observation-is-a-route.md": {
+   "kind": "new link target",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": null,
+   "sha256": "e2467f1b527deaff426120cc200612a260047c5b4c0c76cf1a91e3b23ad670af",
+   "basis": "read in full; linked by A2 (M15 or M26) Read again at ca19a7835: only F1's and G3's dated re-pointing notes were added to the history; nothing else changed. Read again at caf0c4f83: W1 moved Flow, Web and total to World.lean with their full Lean names, so the proof rows follow, and added its receipt row; L2 and C1's and W1's dated notes were added; statements, proofs and claim unchanged."
+  },
+  "theories/becoming/results/records/organizational-rule-inheritance.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "a441dd2340d9f86f0704c3c351adc869a2a0e462",
+   "sha256": "81fbbfe2cad1bfe6c23ecbd1e8a73f6a6d699c82b9aaff63299d753e8e0d4761",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/pending-task-context-applicability.md": {
+   "kind": "generated",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "bce0242df5a1806b0c0954d2cb522a521e66f270c7517810086232aeebdd9940",
+   "basis": "record page in the English-only template; its record changed in: history, references Read again at caf0c4f83: W1, the re-rooting, rebound the record to core receipt 20261018T183920.923524Z and added the receipt row and its dated note; nothing else changed."
+  },
+  "theories/becoming/results/records/recoverable-mediated-change.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "0909959352d150dbdce703ece2508674878b3904473d9733b3ccdd15718afdd8",
+   "basis": "record fields changed: history, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/recoverable-mediated-change.md": {
+   "kind": "generated",
+   "entries": [
+    "F30",
+    "M25"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "ba15bf40a4e76262218edf86ac185d75ea47cb3491743cb0f83910d5ecb9c551",
+   "basis": "record page in the English-only template; its record changed in: history, references"
+  },
+  "theories/becoming/results/records/recurrent-chain-assembly.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "19200b7ebe01041aec04b9c8c0b2f80f0f4d3964ee71839d786c115781c4450f",
+   "basis": "record fields changed: history, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/recurring-reference-revision.md": {
+   "kind": "generated",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "sha256": "ef3a4b7fd9c4d5518fad431991e51b9770923788b61d7476345a56810483d4ae",
+   "basis": "record page in the English-only template; its record changed in: history, next_delta, proof_bindings, references Read again at ca19a7835: only F1's and G3's dated re-pointing notes were added to the history; nothing else changed. Read again at caf0c4f83: W1's receipt row and the dated notes of L2 and C1, U2c, M3, F3 sweep step 1, W1 and F2 were added; nothing else changed. Read again at 2343c774a: the F2 follow-up's dated note was added; nothing else changed."
+  },
+  "theories/becoming/results/records/reserved-shutdown-during-recovery.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "3ffd4bce22e34b0026e14ca1d078beeadd9e46cb495bece73eb5ca434328971a",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/reserved-shutdown-during-recovery.md": {
+   "kind": "generated",
+   "entries": [
+    "F30",
+    "M25"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "819a1e92052abef0ed42cb7af465e482558a8dbeab23613b1e81718cdef12118",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/retrospective-source-binding.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "6dab8abc0daddf0dfc376ffea65bb3b0511381cccba087ca46cb6b3eca9c5445",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/retrospective-source-binding.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "c83329276418121d036431a1697e3854f13496ba1171716cd135a7cddb1d8ad5",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/becoming/results/records/scientific-inquiry-foundation.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "a04727a401a4bb6cefac70c08f76831874c0261d",
+   "sha256": "63b88f6a92263967ad9ba5f952c35003c82543d566490f221984d8170cb4d3bb",
+   "basis": "record fields changed: history, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/scientific-inquiry-foundation.md": {
+   "kind": "generated",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "a04727a401a4bb6cefac70c08f76831874c0261d",
+   "sha256": "e7f79d0a3b8dc76e466cf4c754f21a30350a665ddc43e06900502c94dc2fb8a3",
+   "basis": "record page in the English-only template; its record changed in: history, references"
+  },
+  "theories/becoming/results/records/selection-through-a-model-of-the-options.md": {
+   "kind": "new link target",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": null,
+   "sha256": "f68bca918fd503fbf7492c6aaeedcdbe1a4f7ab9193011e277d54d89ae2916a6",
+   "basis": "read in full; linked by A2 (M15 or M26) Read again at ca19a7835: only F1's and G3's dated re-pointing notes were added to the history; nothing else changed. Read again at caf0c4f83: the dated notes of L2 and C1, M3, F3 sweep step 1, W1 and F2 were added; nothing else changed."
+  },
+  "theories/becoming/results/records/selection-under-registration-revision.md": {
+   "kind": "generated",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "caea3f0bb929ab75710dc77fe11f1ea9038ac9f7",
+   "sha256": "c94b690a8a06657fee89abfd44503515b2de63b043ff8bef47fe38699901edc9",
+   "basis": "record page in the English-only template; its record changed in: history, next_delta, proof_bindings, references Read again at caf0c4f83: W1, the re-rooting, rebound the record to core receipt 20261018T183920.923524Z and added the receipt row and its dated note; nothing else changed."
+  },
+  "theories/becoming/results/records/situated-recovery-empirical-correspondence.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "e9bffafa99a31470cc0ac50a28f5a6cdd9ecf467",
+   "sha256": "05e6a312c3e785e829393824d23b1ab3a4798836aa9f7403d8be57836fe600d3",
+   "basis": "record page in the English-only template; its record changed in: history, progress, references"
+  },
+  "theories/becoming/results/records/timely-response-necessity.json": {
+   "kind": "record-bindings",
+   "entries": [
+    "M15"
+   ],
+   "recorded_commit": "896f27ab1656da891da4090d515cbb8cb8c7e01d",
+   "sha256": "58cd402224c012645818c5de629a2c3a3a11971716ad69793f84ee29f4d9158c",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/timely-response-necessity.md": {
+   "kind": "generated",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "896f27ab1656da891da4090d515cbb8cb8c7e01d",
+   "sha256": "31e40b98a29d97e235031e986a99db585d0275d10251d59a4158f477ae6b8521",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references Read again at caf0c4f83: the Used by line gained M3's record what-a-pools-acts-respond-to; nothing else changed."
+  },
+  "theories/becoming/results/records/transition-grouping-word-partition.json": {
+   "kind": "record-bindings",
+   "entries": [],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "e9d25a4f1431ea37f02f21102de6c4f7e64bddda588c750f97e81ddb0064bb7e",
+   "basis": "record fields changed: history, proof_bindings, references; claim and scope unchanged"
+  },
+  "theories/becoming/results/records/transition-grouping-word-partition.md": {
+   "kind": "generated",
+   "entries": [
+    "M26"
+   ],
+   "recorded_commit": "d66b62903760597e7d6f529a3426043c1787cb89",
+   "sha256": "ba29099e8cff895530f378d371e13db0b183f002850ad35dee6f9587aabe7125",
+   "basis": "record page in the English-only template; its record changed in: history, proof_bindings, references"
+  },
+  "theories/meta-attractor/GENERATIVE-REGIMES.md": {
+   "kind": "split+links",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "a643f4fa85b43bd119cc9dac88937f03cb3557ff",
+   "sha256": "c29f74b82e6c33b368f3671ef0433ad16f63226fc88c861210d7bcf466731f92",
+   "basis": "the language separation's English output of the recorded version, link targets moved; the Chinese is in the Chinese edition"
+  }
+ },
+ "pending": {
+  "RESEARCH.md": {
+   "kind": "generated",
+   "entries": [],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "reason": "register regenerated; no entry links it; not read here"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "ebf34b419fd78edcfd525826ed7aa4b5331c6727",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C26",
+    "F18",
+    "F23",
+    "F26",
+    "F27",
+    "F28"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean": {
+   "kind": "other",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "e816e8351edeb08197a5db4bd0a84b6cc92c81cf",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean": {
+   "kind": "other",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean": {
+   "kind": "other",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean": {
+   "kind": "other",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean": {
+   "kind": "other",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "f7fffe761449dc25dbd2acfaf8994d93d14d854b",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "ea31c15c5c738dc35b9c0a76fee1fc53e3e2f1fa",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_fallible_inquiry.py": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/README.md": {
+   "kind": "generated",
+   "entries": [],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "reason": "register regenerated; no entry links it; not read here"
+  },
+  "theories/becoming/chapters/ALIGNMENT-DIRECTION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md": {
+   "kind": "split+edits",
+   "entries": [
+    "F30",
+    "M25"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/BECOMING-FOUNDATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C01"
+   ],
+   "recorded_commit": "a93262028e30d9014d0820524ace14a3c5204e43",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "338bf1053adaad70de18aa7908b3ffe2cca7b76b",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/CLAIMS.md": {
+   "kind": "generated",
+   "entries": [
+    "E06"
+   ],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "reason": "the page is now a stub pointing to RESULTS.md; E06 links it"
+  },
+  "theories/becoming/chapters/ETHICAL-LEARNING.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/GENERATED-LOGIC.md": {
+   "kind": "split+edits",
+   "entries": [
+    "F01"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/KNOWLEDGE.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M15",
+    "M21"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "reason": "read: M15 agrees with it; M21 still calls its two answers axiomatic, and the chapter now states that living significance follows under the continuation condition"
+  },
+  "theories/becoming/chapters/LIANGZHI-EVOLUTION.md": {
+   "kind": "other",
+   "entries": [
+    "M12",
+    "M13",
+    "M14"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/MATHEMATICAL-CORE.md": {
+   "kind": "other",
+   "entries": [
+    "F01"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md": {
+   "kind": "other",
+   "entries": [
+    "M21"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C33",
+    "F29",
+    "M23"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/PRACTICAL-JUDGMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C17",
+    "C18",
+    "C19",
+    "C23",
+    "C24",
+    "M14",
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C28",
+    "C29"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md": {
+   "kind": "split+edits",
+   "entries": [],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C01",
+    "C03"
+   ],
+   "recorded_commit": "1a78f978bb72f728bde71c7e5106e047434a49bb",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md": {
+   "kind": "other",
+   "entries": [
+    "C14"
+   ],
+   "recorded_commit": "85b6d341b93fa6f729686cc28fcb37a7d03e5b1f",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/chapters/THEORY-OF-BECOMING.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C09"
+   ],
+   "recorded_commit": "ba3b0e3b6dcc6254b07bc4faf0b81d490f73eff9",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md": {
+   "kind": "split+edits",
+   "entries": [
+    "C20",
+    "C26"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/becoming/history/EMPIRICAL-SCOPE.md": {
+   "kind": "other",
+   "entries": [
+    "E06"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/results/ROADMAP.md": {
+   "kind": "generated",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "8f7734b4132cbded774e51090ec2d83aa5a4e523",
+   "reason": "register rewritten (relabel, navigation); not read here"
+  },
+  "theories/becoming/results/records/constitutive-binding-assessment.json": {
+   "kind": "other",
+   "entries": [
+    "F01"
+   ],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/results/records/context-sensitive-updating-correspondence.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/results/records/finite-granularity-question-recovery.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/finite-joining-tree-lifting.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/functional-joining-common-structure.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/growth-constrained-fragmentation.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/guarded-program-question-recovery.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/incidence-common-refinement.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/joining-open-map-factor.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/joining-questions-survive-encoding.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/multivalued-joining-common-structure.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/open-form-realization-under-revision.json": {
+   "kind": "other",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": "7cce6ae9e7d4b310bc889f3312c8a5ac6329d1cb",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/results/records/organizational-formation-from-generative-comparison.md": {
+   "kind": "version-not-found",
+   "entries": [
+    "M20"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/prefix-observation-loss.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/residual-continuation-correspondence.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/retained-reference-joining-recovery.json": {
+   "kind": "version-not-found",
+   "entries": [
+    "C30",
+    "F22"
+   ],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/situated-recovery-empirical-correspondence.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "7745e3ad7b4027fb7d2f58f43f4d1ba79be0f1ae",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/becoming/results/records/unanchored-incidence-collapse.json": {
+   "kind": "version-not-found",
+   "entries": [],
+   "recorded_commit": null,
+   "reason": "the version the fingerprint records is not in git history"
+  },
+  "theories/becoming/results/records/universal-practical-warrant.json": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "d8f86e8ccab0536eaeb941920d2cd5483e4baa20",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  },
+  "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "87fdbb077d4a062fdd11f1cdf5e68f8c6fba702c",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/meta-attractor/COMMON-ORGANIZATION.md": {
+   "kind": "split+edits",
+   "entries": [
+    "M24"
+   ],
+   "recorded_commit": "a643f4fa85b43bd119cc9dac88937f03cb3557ff",
+   "reason": "text changed beyond the language separation (translations, the relabel or other edits); not read here"
+  },
+  "theories/meta-attractor/README.md": {
+   "kind": "other",
+   "entries": [],
+   "recorded_commit": "a643f4fa85b43bd119cc9dac88937f03cb3557ff",
+   "reason": "changed beyond links (Lean renames and docstrings, record content or edits); not read here"
+  }
+ },
+ "discovery": [
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P49-REVIEW.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PART-II-INVENTORY.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-BRIDGE-FOLD.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-EIGHTEENTH-REVIEW.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-GENERAL-LAWS-REVIEW.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RELEASE-READINESS-REVIEW.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/READINGS-PENDING-REN.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/REVIEWS.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.zh.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.zh.md",
+  "theories/becoming/chapters/ALIGNMENT-DIRECTION.zh.md",
+  "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.zh.md",
+  "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.zh.md",
+  "theories/becoming/chapters/BECOMING-FOUNDATION.zh.md",
+  "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.zh.md",
+  "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.zh.md",
+  "theories/becoming/chapters/ETHICAL-LEARNING.zh.md",
+  "theories/becoming/chapters/G0-WARRANT.zh.md",
+  "theories/becoming/chapters/GENERATED-LOGIC.zh.md",
+  "theories/becoming/chapters/KNOWLEDGE.zh.md",
+  "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.zh.md",
+  "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.zh.md",
+  "theories/becoming/chapters/PRACTICAL-JUDGMENT.zh.md",
+  "theories/becoming/chapters/README.md",
+  "theories/becoming/chapters/RELATIONS-ACROSS-SCALES.zh.md",
+  "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.zh.md",
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
+  "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+  "theories/becoming/chapters/THEORY-OF-BECOMING.zh.md",
+  "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md",
+  "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md"
+ ]
+}
