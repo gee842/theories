@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 When a finite list covers all basis indices, pointwise admissible interpretation of the full derived closure is equivalent to one admissible interpretation satisfying the entire closure.
 
-Canonical source: [JointInterpretation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean)
+Canonical source: [Derivation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -50,11 +50,13 @@ Boundary source: [JointInterpretation.lean](../../../../experiments/integrated-c
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [JointInterpretation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean) | `InquiryRoot.JointInterpretation.pointwise_closure_iff_common`, `InquiryRoot.JointInterpretation.separate_rows_have_no_common_interpretation` |
+| proof | [Derivation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean) | `Becoming.Derivation.pointwise_iff_common`, `Becoming.Derivation.rows_not_together`, `Becoming.Derivation.Scope.common_iff` |
 | receipt | [joint-interpretation-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json) | — |
 | integration | [DEDUCTIVE-FOUNDATION-TEST.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.common_on_scope_iff` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -77,4 +79,5 @@ Aliases: `InquiryRoot.JointInterpretation.pointwise_closure_iff_common`
 - 14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): compiled by the spine run and connected to the core. The bridge now imports JointInterpretation, whose theorems have empty axiom reports. With the core’s Scope as the admissible interpretations: with a finite basis, each derived claim realized somewhere in the scope is one configuration of the scope realizing them all (common_on_scope_iff). The common-interpretation reduction itself stays the periphery’s theorem. (scratch build; the receipt comes with the landing)
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Re-pointed after reading the change (Bridge.lean: the fold). The claim is unchanged.
+- 18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (Derivation; verdicts in port-q.md), bound to core receipt 20261018T204907.920360Z, and the canonical source is the core module. Every core statement has an empty axiom report; where the periphery proof was classical, the core proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
 - 3 rebinding entries (2026-10-15 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](finite-basis-common-interpretation.json).

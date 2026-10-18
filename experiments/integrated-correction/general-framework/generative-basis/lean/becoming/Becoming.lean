@@ -2,6 +2,7 @@ import Becoming.World
 import Becoming.Frame
 import Becoming.Labelled
 import Becoming.Inquiry
+import Becoming.Derivation
 import Becoming.ClassifiedBeliefProcesses
 import Becoming.MoveOutcomeProcesses
 import Becoming.Recurrence
@@ -147,6 +148,11 @@ import Becoming.Gluing
 import Becoming.Runs
 import Becoming.CourseWorlds
 import Becoming.LearnableRuns
+import Becoming.PartialReadout
+import Becoming.CodeAcquisition
+import Becoming.RouteFormation
+import Becoming.ResponseLearning
+import Becoming.LearnedGrouping
 import Becoming.ParityReadings
 import Becoming.FinerTraces
 import Becoming.FormedLoops
@@ -238,6 +244,14 @@ readings of the unfolding (`Becoming.Labelled`).
   generation, whose laws are stated over the web without the frame.
 * `Becoming.Inquiry` (L2): the visible scope of an inquiry is what its actual
   executions reach; a sound policy secures its goal there.
+* `Becoming.Derivation` (L2): premise-tracked derivation from a basis (no premise beyond what each
+  theorem names): a derived claim holds wherever the basis and its local premises do
+  (`Derives.sound`), so the whole closure holds throughout a domain exactly where the basis does
+  (`closure_throughout_iff`) and a countermodel excludes a claim from it
+  (`countermodel_excludes`); with a list covering the basis, claims met one by one are met by one
+  configuration (`pointwise_iff_common`), which rows met separately need not be
+  (`rows_not_pointwise`); every law is read on the scope of an inquiry (`Scope.closure_iff`,
+  `Scope.goal_closure`, `Scope.common_relative`).
 * `Becoming.ClassifiedBeliefProcesses` (L2): a narrowed belief whose inhabitation is decided
   is empty or inhabited; where every narrowed belief's inhabitation is decided, every belief is
   classified through every depth, so bounded sufficiency is the implication form there.
@@ -1613,6 +1627,41 @@ readings of the unfolding (`Becoming.Labelled`).
   registration give every learner the same record, so in a world a list holds a target is
   learnable along every run exactly where runs beginning alike have targets that agree from some
   step on.
+* `Becoming.PartialReadout` (L4): partial readout of a feature through a map on a domain (no
+  premise beyond what each theorem names; a section of the map is a hypothesis where a reading
+  must be built): an exact reading is sound and needs the feature lumped (`ExactWithin.sound`,
+  `ExactWithin.lumped`), and with a section one exists exactly then (`exact_exists_iff`); a sound
+  reading stays silent where the map merges two feature values (`SoundWithin.silent`); in the
+  channel model the signal alone is read by no exact reading and the signal with a reference is
+  (`signal_no_exact`, `paired_exact`); on runs, an extrapolation rests on the feature from a step
+  exactly where it reads the prefix exactly from then on (`Runs.exact_iff_restsFrom`).
+* `Becoming.CodeAcquisition` (L4): acquiring a two-primitive code from probe records (supplied
+  code, probes and stock): the probe records give the code exactly and so every expression
+  (`acquired_exact`, `acquired_every_expression`), while the primitive probes alone are lumped and
+  read by no exact reading (`primitives_not_lumped`, `primitives_no_exact`); training draws on
+  stock and installs the code, which answers a novel expression (`training_installs`,
+  `novel_execution`); training is a process (`trainProcess`, `step_code_transfers`).
+* `Becoming.RouteFormation` (L4): forming a route that executes an acquired code (supplied parts,
+  grammar of routes and search): the code alone supplies no route (`interpretation_no_route`); a
+  wrong route is built, tried and replaced, and the formed route answers a novel expression
+  (`wrong_route_replaced`, `formed_answers_novel`), with every move keeping stock plus drawn
+  (`course_stock`); old records can admit a wrong route that only a new record separates, and
+  repair needs a fresh record and parts (`old_records_admit_duplicate`, `fresh_record_rebuilds`,
+  `discrepancy_no_parts`); the moves form one process (`formationProcess`, `trace_iff`).
+* `Becoming.ResponseLearning` (L4): forming an operation from another formation's actual responses
+  (supplied programs, lessons and stock): a lesson keeps the pair's stock plus drawn and the
+  receiver sees only responses (`lesson_stock`, `learn_through_interface`); the program is
+  reconstructed and kept in every generation (`reconstructs_program`, `every_generation_holds`),
+  and so is a lost distinction, whatever the stock (`distinction_lost_every_generation`,
+  `stock_keeps_content`); succession is a law whose runs pass through the generations
+  (`run_generation`).
+* `Becoming.LearnedGrouping` (L4): received transitions form the grouping through which a formed
+  operation reads an utterance (supplied sounds, decoder and encounters): grouping recovers the
+  words of every two-word sequence exactly when six bond values hold (`two_word_iff`), which the
+  supplied context's majority bonds give (`context_groups_words`), so the utterance parses and the
+  formed operation answers it (`grouping_reaches_program`); a course with the same counts in
+  another order does not (`order_not_frequency`); reception is a process (`reception`,
+  `total_kept`).
 * `Becoming.ParityReadings` (L4): where the readings of one unfolding glue, with no premise beyond
   the listed claims and contexts. The registrations glue at a step of a run exactly where the
   world of readings is context-free there; for a parity system some world of readings respecting

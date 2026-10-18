@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 If Derives basis context p, every interpretation satisfying the entire basis and local context satisfies p.
 
-Canonical source: [GenerativeClosure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean)
+Canonical source: [Derivation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -46,12 +46,14 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [GenerativeClosure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean) | `InquiryRoot.derivation_sound`, `InquiryRoot.extra_claim_not_closed_derivable` |
+| proof | [Derivation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean) | `Becoming.Derivation.Derives.sound`, `Becoming.Derivation.claim_not_closed`, `Becoming.Derivation.Scope.closed`, `Becoming.Derivation.Scope.closure_iff`, `Becoming.Derivation.Scope.goal_closure` |
 | receipt | [joint-interpretation-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json) | — |
 | integration | [WholeTheoryDischarge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean) | `InquiryRoot.WholeDischarge.derivation_sound_constructively` |
 | review | [SESSION-PROOF-REUSE-SOURCE-CHECKS.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.derivation_sound_on_scope`, `Becoming.closure_over_scope_iff_basis`, `Becoming.sound_goal_closure` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -70,4 +72,5 @@ Aliases: `InquiryRoot.derivation_sound`, `InquiryRoot.WholeDischarge.derivation_
 - 14 October 2026, integration I3b (Ren: “a lot proofs are probably not integrated”): compiled by the spine run and connected to the core. The bridge now imports GenerativeClosure, whose theorems have empty axiom reports in the spine run. Read as the core’s Scope, the configurations a policy’s actual executions reach from a belief, the inquiry predicate is fixed by the dynamics: a claim derived from a basis holding over the scope holds over it, and the whole closure does exactly where the basis does (derivation_sound_on_scope, closure_over_scope_iff_basis); every claim derived from a sound policy’s goal holds over its scope (sound_goal_closure). Soundness itself stays the periphery’s theorem and is not restated in the core. (scratch build; the receipt comes with the landing)
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Bridge.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Re-pointed after reading the change (Bridge.lean: the fold). The claim is unchanged.
+- 18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (Derivation; verdicts in port-q.md), with core receipt 20261018T204907.920360Z as a reference and no binding (its alias `InquiryRoot.WholeDischarge.derivation_sound_constructively` names a declaration of `WholeTheoryDischarge`, which is not in the run; a binding would make the registry require the core receipt, which lists the `InquiryRoot` namespace, to list it too. As before, the core receipt is a reference, not a binding), and the canonical source is the core module. Every core statement has an empty axiom report; where the periphery proof was classical, the core proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.
 - 2 rebinding entries (2026-10-15): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derivation-soundness.json).

@@ -387,7 +387,7 @@ def render():
             'content is in the core first. "Before" is the join\'s own grade: a join states its periphery theorem '
             'through a core law, by logic.']
     for name, d in JOINS.items():
-        table(name, d, f'`{name}`')
+        table(name, d, name)
     out += ['', '## Overlaps', '',
             '- `Becoming.ReachableFrames` and `Becoming.ReachableFramesInherited` also read family J '
             '(`JointContinuationClassification`, `AlignmentDirection`); F3Q states only `common_relative_on_scope`.',

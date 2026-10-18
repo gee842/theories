@@ -253,7 +253,7 @@ Source: `inquiry-root/AcquiredSegmentation.lean`. Before: graded by F3Q. Groupin
 
 A join or bridge declaration leaves the package when the modules it reads retire (the sweep, F3); its content is in the core first. "Before" is the join's own grade: a join states its periphery theorem through a core law, by logic.
 
-### `Becoming.DerivationScopeProcesses`
+### Becoming.DerivationScopeProcesses
 
 Source: `becoming/Becoming/DerivationScopeProcesses.lean`. Before: graded by F3Q.
 
@@ -264,7 +264,7 @@ Source: `becoming/Becoming/DerivationScopeProcesses.lean`. Before: graded by F3Q
 | `lemma_extension_on_scope` | step | same | `Becoming.Derivation.Scope.lemma_closed` | stated on the core, constructive |
 | `countermodel_on_scope` | step | same | `Becoming.Derivation.Scope.countermodel` | stated on the core, constructive |
 
-### `Becoming.Bridge`
+### Becoming.Bridge
 
 Source: `becoming/Becoming/Bridge.lean`. Before: graded by F3Q. Only the section "Derivation over the scope of an inquiry" reads this family.
 
@@ -275,7 +275,7 @@ Source: `becoming/Becoming/Bridge.lean`. Before: graded by F3Q. Only the section
 | `sound_goal_closure` | step | same | `Becoming.Derivation.Scope.goal_closure` | stated on the core, constructive |
 | `common_on_scope_iff` | step | same | `Becoming.Derivation.Scope.common_iff` | stated on the core, constructive |
 
-### `Becoming.ReachableFrames`
+### Becoming.ReachableFrames
 
 Source: `becoming/Becoming/ReachableFrames.lean`. Before: graded by F3Q. Only `common_relative_on_scope` reads this family (`JointInterpretation`); `carries_compose`, `complement_closed_no_extension` and `required_through_summary` read family J’s modules.
 
@@ -283,7 +283,7 @@ Source: `becoming/Becoming/ReachableFrames.lean`. Before: graded by F3Q. Only `c
 |---|---|---|---|---|
 | `common_relative_on_scope` | step | same | `Becoming.Derivation.Scope.common_relative` | stated on the core, constructive |
 
-### `Becoming.ExactRecordRuns`
+### Becoming.ExactRecordRuns
 
 Source: `becoming/Becoming/ExactRecordRuns.lean`. Before: graded by F3Q. `recordBefore` is `Runs.prefixBefore`, `valueAt` is `Runs.featureAt`.
 
@@ -299,7 +299,7 @@ Source: `becoming/Becoming/ExactRecordRuns.lean`. Before: graded by F3Q. `record
 | `abstaining_not_exact` | step | same | `Becoming.PartialReadout.Runs.silent_not_exact` | stated on the core, constructive |
 | `exact_iff_restsFrom` | step | same | `Becoming.PartialReadout.Runs.exact_iff_restsFrom` | stated on the core, constructive |
 
-### `Becoming.ExactRecordRunsInherited`
+### Becoming.ExactRecordRunsInherited
 
 Source: `becoming/Becoming/ExactRecordRunsInherited.lean`. Before: graded by F3Q.
 
@@ -307,7 +307,7 @@ Source: `becoming/Becoming/ExactRecordRunsInherited.lean`. Before: graded by F3Q
 |---|---|---|---|---|
 | `exact_possible_iff` | step | same (section named) | `Becoming.PartialReadout.Runs.exact_exists_iff` | the periphery decoder used `Classical.choose`; the core takes a section of the map over the domain (`SectionWithin`) as a hypothesis, which is the datum a decoder needs, so no choice is used |
 
-### `Becoming.TrainingProcessesInherited`
+### Becoming.TrainingProcessesInherited
 
 Source: `becoming/Becoming/TrainingProcessesInherited.lean`. Before: graded by F3Q.
 
@@ -324,7 +324,7 @@ Source: `becoming/Becoming/TrainingProcessesInherited.lean`. Before: graded by F
 | `novel_after_step` | step | same | `Becoming.CodeAcquisition.novel_after_step` | stated on the core, constructive |
 | `installed_without_execution` | step | same | `Becoming.CodeAcquisition.installed_without_execution` | stated on the core, constructive |
 
-### `Becoming.FormationTracesInherited`
+### Becoming.FormationTracesInherited
 
 Source: `becoming/Becoming/FormationTracesInherited.lean`. Before: graded by F3Q.
 
@@ -357,7 +357,7 @@ Source: `becoming/Becoming/FormationTracesInherited.lean`. Before: graded by F3Q
 | `repair_course_account` | step | same | `Becoming.RouteFormation.repair_course_account` | stated on the core, constructive |
 | `repair_course_no_parts` | step | same | `Becoming.RouteFormation.repair_course_no_parts` | stated on the core, constructive |
 
-### `Becoming.QueryTraces`
+### Becoming.QueryTraces
 
 Source: `becoming/Becoming/QueryTraces.lean`. Before: graded by F3Q.
 
@@ -372,7 +372,7 @@ Source: `becoming/Becoming/QueryTraces.lean`. Before: graded by F3Q.
 | `extended_course_records` | step | same | `Becoming.ResponseLearning.extended_course_records` | stated on the core, constructive |
 | `extended_course_separates_operations` | step | same | `Becoming.ResponseLearning.extended_course_separates` | stated on the core, constructive |
 
-### `Becoming.QueryTracesInherited`
+### Becoming.QueryTracesInherited
 
 Source: `becoming/Becoming/QueryTracesInherited.lean`. Before: graded by F3Q.
 
@@ -400,7 +400,7 @@ Source: `becoming/Becoming/QueryTracesInherited.lean`. Before: graded by F3Q.
 | `peer_keeps_error` | step | same | `Becoming.ResponseLearning.peer_keeps_error` | stated on the core, constructive |
 | `budget_succession_blocked` | step | same | `Becoming.ResponseLearning.execution_stock_succession_blocked` | stated on the core, constructive |
 
-### `Becoming.ReceptionTracesInherited`
+### Becoming.ReceptionTracesInherited
 
 Source: `becoming/Becoming/ReceptionTracesInherited.lean`. Before: graded by F3Q.
 
@@ -424,7 +424,7 @@ Source: `becoming/Becoming/ReceptionTracesInherited.lean`. Before: graded by F3Q
 | `broadening_keeps_prefix` | step | same | `Becoming.LearnedGrouping.broadening_keeps_prefix` | stated on the core, constructive |
 | `broadening_parses_one_form` | step | same | `Becoming.LearnedGrouping.broadening_parses_one_form` | stated on the core, constructive |
 
-### `Becoming.Instances`
+### Becoming.Instances
 
 Source: `becoming/Becoming/Instances.lean`. Before: graded by F3Q. Only the section "Grouping" reads this family (`AcquiredSegmentation`).
 

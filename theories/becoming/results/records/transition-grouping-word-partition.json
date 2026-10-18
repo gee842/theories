@@ -28,7 +28,7 @@
     "zh": "该关系是日志中已观察转移的分节判准；声音分类与语言对应没有由此推导。",
     "en": "The relation is a grouping criterion derived from observed transitions in a log; sound categories and linguistic correspondence are not derived."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnedGrouping.lean",
   "aliases": [
     "Generative.AcquiredSegmentation.ideal_grouping_recovers_words",
     "Becoming.Segmentation.chunks_eq_iff",
@@ -83,6 +83,19 @@
         "Generative.AcquiredSegmentation.actual_exposure_forms_the_grouping_relation",
         "Generative.AcquiredSegmentation.learned_grouping_transfers_to_every_word_sequence",
         "Generative.AcquiredSegmentation.partial_experience_can_parse_one_form_without_general_grouping"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnedGrouping.lean",
+      "role": "proof",
+      "sha256": "a28f82e7ac01b822d23293e3f4a23783e68c38da27bde7f5294ccc2558b63632",
+      "declarations": [
+        "Becoming.LearnedGrouping.ideal_two_word",
+        "Becoming.LearnedGrouping.context_forms_bond",
+        "Becoming.LearnedGrouping.context_groups_words",
+        "Becoming.LearnedGrouping.broaden_one_form",
+        "Becoming.LearnedGrouping.spelled",
+        "Becoming.LearnedGrouping.two_word_iff"
       ]
     },
     {
@@ -189,6 +202,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json",
+      "role": "receipt",
+      "sha256": "75429d3bd34fa847dd885fcb4195ab1935845952cc8e0d8f8ddb9c32ae35f2f9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -224,6 +243,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnedGrouping.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LearnedGrouping",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -311,6 +337,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (LearnedGrouping; verdicts in port-q.md), bound to core receipt 20261018T204907.920360Z, and the canonical source is the core module. Every core statement has an empty axiom report; where the periphery proof was classical, the core proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3Q 将探究与组合族移入核心：所引声明旁加上核心陈述（LearnedGrouping），绑定到核心回执；核心陈述的公理报告皆为空，外围经典证明处核心证明为构造性或明示其假设；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

@@ -8,10 +8,12 @@ BASE=$1; L=$2
 Q=_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold
 PKG=experiments/integrated-correction/general-framework/generative-basis/lean/becoming
 mkdir -p $L
+L=$(cd $L && pwd)
 python3 -B $Q/land_q.py
 (cd $PKG && LEAN_TIMEOUT=1800 BECOMING_JOBS=3 python3 -B check_becoming.py > $L/checker-q.log 2>&1)
 R=$(ls -t $PKG/becoming-checks | head -1)
-python3 -c "import json;d=json.load(open('$PKG/becoming-checks/$R/verification.json'));assert d['status']=='passed';assert d['core_axioms']==[]"
+python3 -c "import json;assert json.load(open('$PKG/becoming-checks/$R/verification.json'))['status']=='passed'"
+grep -q '"core_axioms": \[\]' $L/checker-q.log
 echo receipt=$R
 python3 -B $Q/apart_q.py
 python3 -B _process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.py --write --check > $L/conn-q.log 2>&1

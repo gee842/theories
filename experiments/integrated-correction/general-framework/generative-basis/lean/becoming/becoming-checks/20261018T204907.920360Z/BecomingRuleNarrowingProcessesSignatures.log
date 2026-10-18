@@ -1,0 +1,68 @@
+@Becoming.RuleNarrowingProcesses.after_congr : ∀ {Q : Type} {B B' : Generative.StandardsBridge.Rule Q → Prop},
+  (∀ (h : Generative.StandardsBridge.Rule Q), B h ↔ B' h) →
+    ∀ (q : Q) (o : Fin 2) (h : Generative.StandardsBridge.Rule Q),
+      Generative.InquirySufficiency.After Becoming.observe Becoming.RuleNarrowingProcesses.sense B q o h ↔
+        Generative.InquirySufficiency.After Becoming.observe Becoming.RuleNarrowingProcesses.sense B' q o h
+@Becoming.RuleNarrowingProcesses.narrowed_congr : ∀ {Q : Type} (e : List (Generative.StandardsBridge.Observation Q))
+  {B B' : Generative.StandardsBridge.Rule Q → Prop},
+  (∀ (h : Generative.StandardsBridge.Rule Q), B h ↔ B' h) →
+    ∀ (h : Generative.StandardsBridge.Rule Q),
+      Becoming.RuleNarrowingProcesses.narrowed B e h ↔ Becoming.RuleNarrowingProcesses.narrowed B' e h
+@Becoming.RuleNarrowingProcesses.mem_learn_iff : ∀ {Q : Type} (e : List (Generative.StandardsBridge.Observation Q))
+  (hs : List (Generative.StandardsBridge.Rule Q)) (h : Generative.StandardsBridge.Rule Q),
+  h ∈ Generative.StandardsBridge.learn hs e ↔ Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ hs) e h
+@Becoming.RuleNarrowingProcesses.all_true : ∀ {α : Type} (p : α → Bool) (l : List α),
+  l.all p = true → ∀ (x : α), x ∈ l → p x = true
+@Becoming.RuleNarrowingProcesses.all_of : ∀ {α : Type} (p : α → Bool) (l : List α),
+  (∀ (x : α), x ∈ l → p x = true) → l.all p = true
+@Becoming.RuleNarrowingProcesses.answer_some : ∀ {Q : Type} {hs : List (Generative.StandardsBridge.Rule Q)} {q : Q}
+  {b : Bool},
+  Generative.StandardsBridge.answer hs q = some b → Becoming.RuleNarrowingProcesses.Settles (fun x => x ∈ hs) q b
+@Becoming.RuleNarrowingProcesses.answer_none : ∀ {Q : Type} {hs : List (Generative.StandardsBridge.Rule Q)} {q : Q}
+  {b : Bool},
+  Generative.StandardsBridge.answer hs q = none → ¬Becoming.RuleNarrowingProcesses.Settles (fun x => x ∈ hs) q b
+@Becoming.RuleNarrowingProcesses.answer_of_settles : ∀ {Q : Type} {hs : List (Generative.StandardsBridge.Rule Q)}
+  {q : Q} {b : Bool},
+  Becoming.RuleNarrowingProcesses.Settles (fun x => x ∈ hs) q b → Generative.StandardsBridge.answer hs q = some b
+@Becoming.RuleNarrowingProcesses.settles_learn_iff : ∀ {Q : Type} {hs : List (Generative.StandardsBridge.Rule Q)}
+  {e : List (Generative.StandardsBridge.Observation Q)} {q : Q} {b : Bool},
+  Becoming.RuleNarrowingProcesses.Settles (fun x => x ∈ Generative.StandardsBridge.learn hs e) q b ↔
+    Becoming.RuleNarrowingProcesses.Settles (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ hs) e) q b
+Becoming.RuleNarrowingProcesses.one_sample_settles_one : Becoming.RuleNarrowingProcesses.Settles
+    (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+      Generative.StandardsBridge.oneSample)
+    true true ∧
+  ∀ (b : Bool),
+    ¬Becoming.RuleNarrowingProcesses.Settles
+        (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+          Generative.StandardsBridge.oneSample)
+        false b
+Becoming.RuleNarrowingProcesses.contrasting_settles_both : Becoming.RuleNarrowingProcesses.Settles
+    (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+      Generative.StandardsBridge.twoSamples)
+    true true ∧
+  Becoming.RuleNarrowingProcesses.Settles
+    (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+      Generative.StandardsBridge.twoSamples)
+    false false
+Becoming.RuleNarrowingProcesses.settled_differs_from_last : Generative.StandardsBridge.twoSamples.getLast? =
+    some (false, false) ∧
+  Becoming.RuleNarrowingProcesses.Settles
+    (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+      Generative.StandardsBridge.twoSamples)
+    true true
+Becoming.RuleNarrowingProcesses.repeated_case_leaves_other : ∀ (b : Bool),
+  ¬Becoming.RuleNarrowingProcesses.Settles
+      (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+        (Generative.StandardsBridge.acquire id 2 [true, true]))
+      false b
+Becoming.RuleNarrowingProcesses.contradiction_settles_nothing : ∀ (b : Bool),
+  ¬Becoming.RuleNarrowingProcesses.Settles
+      (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ Generative.StandardsBridge.repertoire)
+        [(true, true), (true, false)])
+      false b
+Becoming.RuleNarrowingProcesses.narrow_class_settles_wrongly : Becoming.RuleNarrowingProcesses.Settles
+    (Becoming.RuleNarrowingProcesses.narrowed (fun x => x ∈ [fun x => true])
+      (Generative.StandardsBridge.acquire id 1 [true]))
+    false true ∧
+  id false = false

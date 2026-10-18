@@ -23,7 +23,7 @@
     "zh": "没有定义 admissible 为根基成立；此归约不提供实际接纳或根基真。",
     "en": "Admissible is not defined as basis truth; the reduction supplies neither actual admission nor root truth."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
   "aliases": [
     "InquiryRoot.JointInterpretation.pointwise_closure_iff_common"
   ],
@@ -81,6 +81,16 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+      "role": "proof",
+      "sha256": "5289aee24c348830c51d9e4973b485f7bbda82c9beb0114805650daeb41deb40",
+      "declarations": [
+        "Becoming.Derivation.pointwise_iff_common",
+        "Becoming.Derivation.rows_not_together",
+        "Becoming.Derivation.Scope.common_iff"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json",
       "role": "receipt",
       "sha256": "84ccd8f9cfbc584fdd568815f1d39f8bccf671420ec5de493a5d4492488f607a",
@@ -111,6 +121,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json",
+      "role": "receipt",
+      "sha256": "75429d3bd34fa847dd885fcb4195ab1935845952cc8e0d8f8ddb9c32ae35f2f9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -120,6 +136,13 @@
       "sha256_pointer": "/modules/JointInterpretation/source_sha256",
       "success_pointer": "/passed",
       "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Derivation",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -172,6 +195,10 @@
     {
       "en": "18 October 2026, F1, the bridge fold (Ren: \"so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?\", then \"please do all\"): Re-pointed after reading the change (Bridge.lean: the fold). The claim is unchanged.",
       "zh": "2026年10月18日，F1 桥接折叠：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Derivation; verdicts in port-q.md), bound to core receipt 20261018T204907.920360Z, and the canonical source is the core module. Every core statement has an empty axiom report; where the periphery proof was classical, the core proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3Q 将探究与组合族移入核心：所引声明旁加上核心陈述（Derivation），绑定到核心回执；核心陈述的公理报告皆为空，外围经典证明处核心证明为构造性或明示其假设；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ]
 }

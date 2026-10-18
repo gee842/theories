@@ -1901,6 +1901,166 @@
    "module": "Becoming.ScoreRepresentation",
    "category": "model-witness",
    "reason": "a fact about the constructed weighted score: it ranks enough gains above protection (ProtectionPriorityRival, ported by F3J)"
+  },
+  "Becoming.CodeAcquisition.choice_keeps_content": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about the one acquired code of `usual` and two picks of a primitive; no run or world reads it"
+  },
+  "Becoming.CodeAcquisition.equal_primitives_unresolved": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about two constructed codes with equal primitives"
+  },
+  "Becoming.CodeAcquisition.missing_composite_no_code": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about one constructed list of records without the composite probe"
+  },
+  "Becoming.CodeAcquisition.nonuniform_agrees_on_probes": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about one constructed response function `nonuniform` on the three probes"
+  },
+  "Becoming.CodeAcquisition.nonuniform_fails_transfer": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about one constructed response function `nonuniform`, which no program runs"
+  },
+  "Becoming.CodeAcquisition.novel_not_probe": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a decidable inequality of four constructed expressions"
+  },
+  "Becoming.CodeAcquisition.primitives_no_exact": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "the code model's instance of `PartialReadout.ExactWithin.lumped`: the primitive probes read by no exact reading of the order; the general law is joined on runs as `PartialReadout.Runs.exact_lumped`"
+  },
+  "Becoming.CodeAcquisition.probe_readings": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "support",
+   "reason": "a definitional (rfl) statement about the evaluation of the two atoms and the composite probe, a structural recursion of the module's own grammar"
+  },
+  "Becoming.CodeAcquisition.records_form_interpretation": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about the records of the constructed code `usual`; the step that installs it is read on the training process (`step_installs`)"
+  },
+  "Becoming.CodeAcquisition.renaming_keeps_values": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "support",
+   "reason": "invariance of the module's own expression evaluation under renaming the atoms, a structural recursion with no reading as a process, run or world"
+  },
+  "Becoming.CodeAcquisition.reversed_composite_switches": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about one constructed list of records with the composite reversed"
+  },
+  "Becoming.CodeAcquisition.wrong_order_fails_transfer": {
+   "module": "Becoming.CodeAcquisition",
+   "category": "model-witness",
+   "reason": "a fact about two constructed codes (`usual`, `switched`) on one expression"
+  },
+  "Becoming.Derivation.claim_implies_itself": {
+   "module": "Becoming.Derivation",
+   "category": "model-witness",
+   "reason": "a single derivation over the Bool countermodel (implication introduction discharging one premise)"
+  },
+  "Becoming.Derivation.claim_not_closed": {
+   "module": "Becoming.Derivation",
+   "category": "model-witness",
+   "reason": "the Bool countermodel instance of `countermodel_excludes`, which is read on the scope of an inquiry as `Scope.countermodel`"
+  },
+  "Becoming.Derivation.claim_not_throughout": {
+   "module": "Becoming.Derivation",
+   "category": "model-witness",
+   "reason": "a fact about one constructed two-point countermodel on Bool"
+  },
+  "Becoming.Derivation.rows_each_met": {
+   "module": "Becoming.Derivation",
+   "category": "model-witness",
+   "reason": "a fact about the control basis `rows` on Bool, an inference control, not two worlds"
+  },
+  "Becoming.Derivation.rows_not_pointwise": {
+   "module": "Becoming.Derivation",
+   "category": "model-witness",
+   "reason": "a fact about the control basis `rows` on Bool, an inference control, not two worlds"
+  },
+  "Becoming.LearnedGrouping.gap_breaks_edge": {
+   "module": "Becoming.LearnedGrouping",
+   "category": "model-witness",
+   "reason": "a computed fact about the edges and bond of three supplied logs, not about a configuration or a trace of reception"
+  },
+  "Becoming.LearnedGrouping.ideal_two_word": {
+   "module": "Becoming.LearnedGrouping",
+   "category": "model-witness",
+   "reason": "the instance of `two_word_iff` at the supplied ideal relation; the learned relation is read along the trace of reception (`grouping_assembles`)"
+  },
+  "Becoming.LearnedGrouping.repetition_joins_words": {
+   "module": "Becoming.LearnedGrouping",
+   "category": "model-witness",
+   "reason": "a computed fact about grouping one supplied list by the bond of that list read as a log"
+  },
+  "Becoming.PartialReadout.direct_exact_unreversed": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "a fact about the constructed two-bit channel model, which has no evident reading as a run or world"
+  },
+  "Becoming.PartialReadout.direct_not_sound": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "a fact about the constructed two-bit channel model, which has no evident reading as a run or world"
+  },
+  "Becoming.PartialReadout.direct_right_once": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "one evaluation at one channel of the constructed model"
+  },
+  "Becoming.PartialReadout.exactWithin_univ_iff": {
+   "module": "Becoming.PartialReadout",
+   "category": "general-structure",
+   "reason": "on the whole domain, an exact partial reading is a decoder in the sense of `Readout.Decodes`, for every type; it joins two core notions, and the run forms are `PartialReadout.Runs`"
+  },
+  "Becoming.PartialReadout.lumpedWithin_univ_iff": {
+   "module": "Becoming.PartialReadout",
+   "category": "general-structure",
+   "reason": "on the whole domain, lumping within the domain is `Learning.Lumped`, for every type; it joins two core notions, and the run forms are `PartialReadout.Runs`"
+  },
+  "Becoming.PartialReadout.negated_exact": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "a fact about the constructed channel model (double reversal read exactly)"
+  },
+  "Becoming.PartialReadout.parity_exact": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "a fact about the constructed channel model (exactness surviving compression); the general law is read on runs as `Runs.retained_exact`"
+  },
+  "Becoming.PartialReadout.safe_of_holds": {
+   "module": "Becoming.PartialReadout",
+   "category": "support",
+   "reason": "a statement using only the prelude: a true proposition follows from any hypotheses"
+  },
+  "Becoming.PartialReadout.signal_no_exact": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "the channel model's instance of `ExactWithin.lumped`; the general law is read on runs as `Runs.exact_lumped`"
+  },
+  "Becoming.PartialReadout.signal_sound_silent": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "the channel model's instance of `SoundWithin.silent`; the general law is read on runs as `Runs.sound_silent`"
+  },
+  "Becoming.RouteFormation.reversal_unseen": {
+   "module": "Becoming.RouteFormation",
+   "category": "support",
+   "reason": "invariance of the module's own expression evaluation under reversing the join order when the primitives agree, with no reading as a process, run or world"
+  },
+  "Becoming.RouteFormation.two_socket_routes": {
+   "module": "Becoming.RouteFormation",
+   "category": "model-witness",
+   "reason": "a computed list: the routes the supplied grammar generates with two sockets"
   }
  }
 }

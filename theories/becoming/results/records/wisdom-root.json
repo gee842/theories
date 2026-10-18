@@ -724,6 +724,18 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+      "role": "proof",
+      "sha256": "5289aee24c348830c51d9e4973b485f7bbda82c9beb0114805650daeb41deb40",
+      "declarations": [
+        "Becoming.Derivation.Derives.sound",
+        "Becoming.Derivation.closure_throughout_iff",
+        "Becoming.Derivation.relative_throughout",
+        "Becoming.Derivation.common_basis_iff_common_closure",
+        "Becoming.Derivation.pointwise_iff_common"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
       "role": "proof",
       "sha256": "b8c6fabc4ed4ff3c63898d1660abca7e6e83d446abe2b2df5975568212a16fac",
@@ -1280,6 +1292,12 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json",
+      "role": "receipt",
+      "sha256": "75429d3bd34fa847dd885fcb4195ab1935845952cc8e0d8f8ddb9c32ae35f2f9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1499,6 +1517,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T204907.920360Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Derivation",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -1679,6 +1704,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: withMove, toWithMove, ofWithMove, ofWithMove_toWithMove, toWithMove_ofWithMove, world, world_active, configurations, world_fixes_run, Bisimulation, Alike, trace, trace, tests from Unfolding.lean to Labelled.lean; along from Dependence.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (ContinuingRevision.lean, Dependence.lean, Roles.lean, Space.lean, Unfolding.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Derivation; verdicts in port-q.md), bound to core receipt 20261018T204907.920360Z. Every core statement has an empty axiom report; where the periphery proof was classical, the core proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
+      "zh": "2026年10月18日，F3Q 将探究与组合族移入核心：所引声明旁加上核心陈述（Derivation），绑定到核心回执；核心陈述的公理报告皆为空，外围经典证明处核心证明为构造性或明示其假设；外围引用保留到清扫退役其模块。无新结果，论断不变。"
     }
   ],
   "text_versions": [

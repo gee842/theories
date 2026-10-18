@@ -1,13 +1,14 @@
 {
   "status": "passed",
-  "utc": "20261018T203356.753598Z",
+  "utc": "20261018T204907.920360Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261018T203356.753598Z",
+  "retained_run": "becoming-checks/20261018T204907.920360Z",
   "spine_modules": [
     "Becoming.World",
     "Becoming.Frame",
     "Becoming.Labelled",
     "Becoming.Inquiry",
+    "Becoming.Derivation",
     "Becoming.ClassifiedBeliefProcesses",
     "Becoming.MoveOutcomeProcesses",
     "Becoming.Recurrence",
@@ -169,6 +170,11 @@
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
+    "Becoming.PartialReadout",
+    "Becoming.CodeAcquisition",
+    "Becoming.RouteFormation",
+    "Becoming.ResponseLearning",
+    "Becoming.LearnedGrouping",
     "Becoming.Unrolling",
     "Becoming.Labels",
     "Becoming.ParityReadings",
@@ -264,6 +270,7 @@
     "Becoming.Frame",
     "Becoming.Labelled",
     "Becoming.Inquiry",
+    "Becoming.Derivation",
     "Becoming.ClassifiedBeliefProcesses",
     "Becoming.MoveOutcomeProcesses",
     "Becoming.Recurrence",
@@ -425,6 +432,11 @@
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
+    "Becoming.PartialReadout",
+    "Becoming.CodeAcquisition",
+    "Becoming.RouteFormation",
+    "Becoming.ResponseLearning",
+    "Becoming.LearnedGrouping",
     "Becoming.Unrolling",
     "Becoming.Labels",
     "Becoming.ParityReadings",
@@ -562,6 +574,7 @@
     "Becoming.Labelled",
     "InquirySufficiency",
     "Becoming.Inquiry",
+    "Becoming.Derivation",
     "Becoming.ClassifiedBeliefProcesses",
     "Becoming.Recurrence",
     "Becoming.MoveOutcomeProcesses",
@@ -719,6 +732,12 @@
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
+    "Becoming.PartialReadout",
+    "Becoming.CodeAcquisition",
+    "Becoming.ReducedRuns",
+    "Becoming.RouteFormation",
+    "Becoming.ResponseLearning",
+    "Becoming.LearnedGrouping",
     "Becoming.Unrolling",
     "Becoming.Labels",
     "Becoming.ParityReadings",
@@ -753,7 +772,6 @@
     "Becoming.OrderWorlds",
     "Becoming.PassageWorlds",
     "Becoming.RecurrenceRuns",
-    "Becoming.ReducedRuns",
     "Becoming.ReferencePlanTraces",
     "Becoming.RetrodictionRuns",
     "Becoming.RevisionRuns",
@@ -785,6 +803,7 @@
     "Becoming.Labelled",
     "InquirySufficiency",
     "Becoming.Inquiry",
+    "Becoming.Derivation",
     "Becoming.ClassifiedBeliefProcesses",
     "Becoming.Recurrence",
     "Becoming.MoveOutcomeProcesses",
@@ -942,6 +961,12 @@
     "Becoming.Runs",
     "Becoming.CourseWorlds",
     "Becoming.LearnableRuns",
+    "Becoming.PartialReadout",
+    "Becoming.CodeAcquisition",
+    "Becoming.ReducedRuns",
+    "Becoming.RouteFormation",
+    "Becoming.ResponseLearning",
+    "Becoming.LearnedGrouping",
     "Becoming.Unrolling",
     "Becoming.Labels",
     "Becoming.ParityReadings",
@@ -976,7 +1001,6 @@
     "Becoming.OrderWorlds",
     "Becoming.PassageWorlds",
     "Becoming.RecurrenceRuns",
-    "Becoming.ReducedRuns",
     "Becoming.ReferencePlanTraces",
     "Becoming.RetrodictionRuns",
     "Becoming.RevisionRuns",
@@ -1144,6 +1168,7 @@
     "Becoming.Labelled": "becoming/Becoming/Labelled.lean",
     "InquirySufficiency": "inquiry-root/sufficiency/InquirySufficiency.lean",
     "Becoming.Inquiry": "becoming/Becoming/Inquiry.lean",
+    "Becoming.Derivation": "becoming/Becoming/Derivation.lean",
     "Becoming.ClassifiedBeliefProcesses": "becoming/Becoming/ClassifiedBeliefProcesses.lean",
     "Becoming.Recurrence": "becoming/Becoming/Recurrence.lean",
     "Becoming.MoveOutcomeProcesses": "becoming/Becoming/MoveOutcomeProcesses.lean",
@@ -1301,6 +1326,12 @@
     "Becoming.Runs": "becoming/Becoming/Runs.lean",
     "Becoming.CourseWorlds": "becoming/Becoming/CourseWorlds.lean",
     "Becoming.LearnableRuns": "becoming/Becoming/LearnableRuns.lean",
+    "Becoming.PartialReadout": "becoming/Becoming/PartialReadout.lean",
+    "Becoming.CodeAcquisition": "becoming/Becoming/CodeAcquisition.lean",
+    "Becoming.ReducedRuns": "becoming/Becoming/ReducedRuns.lean",
+    "Becoming.RouteFormation": "becoming/Becoming/RouteFormation.lean",
+    "Becoming.ResponseLearning": "becoming/Becoming/ResponseLearning.lean",
+    "Becoming.LearnedGrouping": "becoming/Becoming/LearnedGrouping.lean",
     "Becoming.Unrolling": "becoming/Becoming/Unrolling.lean",
     "Becoming.Labels": "becoming/Becoming/Labels.lean",
     "Becoming.ParityReadings": "becoming/Becoming/ParityReadings.lean",
@@ -1335,7 +1366,6 @@
     "Becoming.OrderWorlds": "becoming/Becoming/OrderWorlds.lean",
     "Becoming.PassageWorlds": "becoming/Becoming/PassageWorlds.lean",
     "Becoming.RecurrenceRuns": "becoming/Becoming/RecurrenceRuns.lean",
-    "Becoming.ReducedRuns": "becoming/Becoming/ReducedRuns.lean",
     "Becoming.ReferencePlanTraces": "becoming/Becoming/ReferencePlanTraces.lean",
     "Becoming.RetrodictionRuns": "becoming/Becoming/RetrodictionRuns.lean",
     "Becoming.RevisionRuns": "becoming/Becoming/RevisionRuns.lean",
@@ -1503,6 +1533,7 @@
     "Becoming.Labelled": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb",
     "InquirySufficiency": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
     "Becoming.Inquiry": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
+    "Becoming.Derivation": "5289aee24c348830c51d9e4973b485f7bbda82c9beb0114805650daeb41deb40",
     "Becoming.ClassifiedBeliefProcesses": "5c31f7b23393b28d49936c54134a8fca7ced36f62de9d6a102d3c1929a4e3ede",
     "Becoming.Recurrence": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9",
     "Becoming.MoveOutcomeProcesses": "fe7d2a5fb0b31e8aa7bd9c470d6b9ae9c7f3ba57d54081e784cfd36e5f148b39",
@@ -1660,6 +1691,12 @@
     "Becoming.Runs": "f4272f9a8c26ac02592554fcf4acc9bd7bba73a0b52d8f4dd1ba4ff6f505757e",
     "Becoming.CourseWorlds": "d8987a40c80315f597353c21f73ad8419fdb3ee920ca53e84bd023746d75aff5",
     "Becoming.LearnableRuns": "a4bbc0e554f94f9580cd2284472db14845e32199655489ecb2f5cab388661616",
+    "Becoming.PartialReadout": "c3dc0de256358ae8ea257d067816a305a8b4792d1a6343d314daa3a4564e3305",
+    "Becoming.CodeAcquisition": "57eaf0c2e6485e101c57106d645549e6d7cd602ab6683eed9b16d2ea1145f501",
+    "Becoming.ReducedRuns": "2e8a8cd695856746cdd35d833f97a13a184036e4b203f65acfad3a67f65871ef",
+    "Becoming.RouteFormation": "63d52422585d568061674ef17d43db5ecf94417f76f95492efba790d67ffc88b",
+    "Becoming.ResponseLearning": "fb57ed096d1805385c92ad807125e93799e6baafe3a54a02b572466b20c2fa8f",
+    "Becoming.LearnedGrouping": "a28f82e7ac01b822d23293e3f4a23783e68c38da27bde7f5294ccc2558b63632",
     "Becoming.Unrolling": "e1f475c25fd877b0ccf8006a5eb06ceb909ad00150fd9ace8b55cc3dad5d3cd0",
     "Becoming.Labels": "af228924c9d09d8fa60d71b3f19f063c4c3fed4f422137b99ee2f736d8a3468b",
     "Becoming.ParityReadings": "16bf4090c7f93e33410dfeda2ef0a1212e35bba0202ad87f3e50f05c5e19fc09",
@@ -1694,7 +1731,6 @@
     "Becoming.OrderWorlds": "67251059a820f2a15d945de358943be0d62a932a2a794dc8146f14420b16d1a6",
     "Becoming.PassageWorlds": "cb2f3baccfeee52451b0a36f0f984035b7bbd2e08668c4fcb58ffddadf788503",
     "Becoming.RecurrenceRuns": "c8418a92d67dbdf3a4077dfb46f517e7aa0bd9ac894c816c04e6a70b11de866d",
-    "Becoming.ReducedRuns": "2e8a8cd695856746cdd35d833f97a13a184036e4b203f65acfad3a67f65871ef",
     "Becoming.ReferencePlanTraces": "48283dd9095560ed68f8e8035cf9c288e3fd7932650194362f470978ea1728c0",
     "Becoming.RetrodictionRuns": "4791f7bb5afc9a6722511670696b0057777cfbce270e9166b8974300a7908707",
     "Becoming.RevisionRuns": "d30624774745421ac755086ed145390a8b1398ec26f9250288418ada2fef2bce",
@@ -1712,7 +1748,7 @@
     "Becoming.TailRuns": "5f7a07c96afc15ebab827366a3eca23329816236fe9f433a46bf10fdfe083211",
     "Becoming.TallyWorlds": "bcb7f8571a4a499a5d7ddbbb6fcd0a8c36c46eadad442928557360e746a01f4d",
     "Becoming.WeightedTraces": "bd52c1f97228b5554496167afa728e30ff3640fc872b3393a41c3cd1eeaa54dd",
-    "Becoming": "a80f3ad54dde415708711aff44f191c3114e15b2694c2400664e86505c66b48a",
+    "Becoming": "ddc008a3f7c74f5abf0fa2a158146708bbae255da847a6ac636d2ced827169f9",
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
     "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
     "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
@@ -1851,13 +1887,18 @@
     "Becoming.SupportGatedWebsInherited": "33079d825c309f91a24eed0d25a848d0b86db0ddaa8874088570b866d0126f61"
   },
   "checker_sha256": {
-    "check_becoming.py": "82cf1f1b0de5d1fbb64c389e0ec8a27b226f4165ae462c331a7c12b0e2239b44",
+    "check_becoming.py": "cc997873daca1923dd39a7bddc04ff99145942fdadfc0751f446528377103671",
     "check.py": "4f9cb94de69bd0e7da6bc7ab1ae1cfd26e2d5848dabda5cbb88aebc36ac52da3"
   },
   "source_commit": {
-    "main": "a9263e8b5f3c17d4cd7647b5499e40bc355a4e48",
+    "main": "de7ec058b63ed1d7d17e5c6556e8f1af774d9f6d",
     "copied": [
-      "Becoming.ActivationCapacity.lean",
+      "Becoming.CodeAcquisition.lean",
+      "Becoming.Derivation.lean",
+      "Becoming.LearnedGrouping.lean",
+      "Becoming.PartialReadout.lean",
+      "Becoming.ResponseLearning.lean",
+      "Becoming.RouteFormation.lean",
       "Becoming.lean",
       "check_becoming.py"
     ]
@@ -1868,7 +1909,21 @@
     "fresh": false,
     "ran": [
       "version.log",
-      "BecomingActivationCapacitySignatures.log",
+      "Becoming.PartialReadout.log",
+      "BecomingPartialReadoutAxiomAudit.log",
+      "BecomingPartialReadoutSignatures.log",
+      "Becoming.CodeAcquisition.log",
+      "BecomingCodeAcquisitionAxiomAudit.log",
+      "BecomingCodeAcquisitionSignatures.log",
+      "Becoming.RouteFormation.log",
+      "BecomingRouteFormationAxiomAudit.log",
+      "BecomingRouteFormationSignatures.log",
+      "Becoming.ResponseLearning.log",
+      "BecomingResponseLearningAxiomAudit.log",
+      "BecomingResponseLearningSignatures.log",
+      "Becoming.LearnedGrouping.log",
+      "BecomingLearnedGroupingAxiomAudit.log",
+      "BecomingLearnedGroupingSignatures.log",
       "Becoming.log",
       "BecomingAxiomAudit.log",
       "BecomingSignatures.log",
@@ -1938,7 +1993,11 @@
       "EnvironmentAudit.log",
       "BridgeEnvironmentAudit.log",
       "Controls.log",
-      "Becoming.ActivationCapacity.PreludeOnly.log",
+      "Becoming.PartialReadout.PreludeOnly.log",
+      "Becoming.CodeAcquisition.PreludeOnly.log",
+      "Becoming.RouteFormation.PreludeOnly.log",
+      "Becoming.ResponseLearning.PreludeOnly.log",
+      "Becoming.LearnedGrouping.PreludeOnly.log",
       "Becoming.PreludeOnly.log"
     ],
     "reused": {
@@ -2061,6 +2120,18 @@
       "BecomingInquirySignatures.log": {
         "utc": "20261016T130738.412710Z",
         "retained": "/private/tmp/claude-501/-Users-ren-theories/e4915bb3-7e85-42e2-8805-85300b752629/scratchpad/fresh-run/becoming-checks/20261016T130738.412710Z"
+      },
+      "Becoming.Derivation.log": {
+        "utc": "20261018T154708.086323Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-f3q-inquiry-b33c94/5832afd8-1030-4234-8614-81c2112e20c5/scratchpad/tree"
+      },
+      "BecomingDerivationAxiomAudit.log": {
+        "utc": "20261018T154708.086323Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-f3q-inquiry-b33c94/5832afd8-1030-4234-8614-81c2112e20c5/scratchpad/tree"
+      },
+      "BecomingDerivationSignatures.log": {
+        "utc": "20261018T155143.758581Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T155143.758581Z"
       },
       "Becoming.ClassifiedBeliefProcesses.log": {
         "utc": "20261017T110157.214014Z",
@@ -3894,6 +3965,10 @@
         "utc": "20261018T203329.287238Z",
         "retained": "scratch build, not retained: /Users/ren/theories/.claude/worktrees/f3r-renewal-7dcd3a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming"
       },
+      "BecomingActivationCapacitySignatures.log": {
+        "utc": "20261018T203356.753598Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3r-renewal-7dcd3a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T203356.753598Z"
+      },
       "Becoming.Narrowing.log": {
         "utc": "20261018T153129.908186Z",
         "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories--claude-worktrees-f3j-judgment-cd75fa/552e6b2f-56a4-4be4-95fe-bdf96e2927a1/scratchpad/tree"
@@ -3939,6 +4014,18 @@
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
       "BecomingLearnableRunsSignatures.log": {
+        "utc": "20261018T183920.923524Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
+      },
+      "Becoming.ReducedRuns.log": {
+        "utc": "20261018T152551.160112Z",
+        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/c3e4b8d7-a251-443a-8c20-cbde5d7d59c6/scratchpad/w1build"
+      },
+      "BecomingReducedRunsAxiomAudit.log": {
+        "utc": "20261018T183920.923524Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
+      },
+      "BecomingReducedRunsSignatures.log": {
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
@@ -4347,18 +4434,6 @@
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
       "BecomingRecurrenceRunsSignatures.log": {
-        "utc": "20261018T183920.923524Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
-      },
-      "Becoming.ReducedRuns.log": {
-        "utc": "20261018T152551.160112Z",
-        "retained": "scratch build, not retained: /private/tmp/claude-501/-Users-ren-theories/c3e4b8d7-a251-443a-8c20-cbde5d7d59c6/scratchpad/w1build"
-      },
-      "BecomingReducedRunsAxiomAudit.log": {
-        "utc": "20261018T183920.923524Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
-      },
-      "BecomingReducedRunsSignatures.log": {
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
@@ -5694,6 +5769,10 @@
         "utc": "20261016T130738.412710Z",
         "retained": "/private/tmp/claude-501/-Users-ren-theories/e4915bb3-7e85-42e2-8805-85300b752629/scratchpad/fresh-run/becoming-checks/20261016T130738.412710Z"
       },
+      "Becoming.Derivation.PreludeOnly.log": {
+        "utc": "20261018T155143.758581Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3q-inquiry-b33c94/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T155143.758581Z"
+      },
       "Becoming.ClassifiedBeliefProcesses.PreludeOnly.log": {
         "utc": "20261018T134446.673561Z",
         "retained": "/Users/ren/theories/.claude/worktrees/f1/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z"
@@ -6302,6 +6381,10 @@
         "utc": "20261018T201753.515165Z",
         "retained": "/Users/ren/theories/.claude/worktrees/f3j-s1-land/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z"
       },
+      "Becoming.ActivationCapacity.PreludeOnly.log": {
+        "utc": "20261018T203356.753598Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/f3r-renewal-7dcd3a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T203356.753598Z"
+      },
       "Becoming.Narrowing.PreludeOnly.log": {
         "utc": "20261018T153430.187729Z",
         "retained": "/private/tmp/claude-501/-Users-ren-theories--claude-worktrees-f3j-judgment-cd75fa/552e6b2f-56a4-4be4-95fe-bdf96e2927a1/scratchpad/dry2/becoming-checks/20261018T153430.187729Z"
@@ -6315,6 +6398,10 @@
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
       "Becoming.LearnableRuns.PreludeOnly.log": {
+        "utc": "20261018T183920.923524Z",
+        "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
+      },
+      "Becoming.ReducedRuns.PreludeOnly.log": {
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
@@ -6454,10 +6541,6 @@
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
       },
-      "Becoming.ReducedRuns.PreludeOnly.log": {
-        "utc": "20261018T183920.923524Z",
-        "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
-      },
       "Becoming.ReferencePlanTraces.PreludeOnly.log": {
         "utc": "20261018T183920.923524Z",
         "retained": "/Users/ren/theories/.claude/worktrees/w-reroot/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z"
@@ -6558,6 +6641,9 @@
       "Becoming.Inquiry.log": "b73ab2c8caf934e0ed9a595e0fcd2b1f0182f637f6e8fbee35054694962cef08",
       "BecomingInquiryAxiomAudit.log": "116a3cea4b7e8eeefad06b0785164f46fdddc25dc8103e83ecac7f50d83809ca",
       "BecomingInquirySignatures.log": "cb3e88af68c44574984af7669d8a47a20431b048128114404f7bc04147f9f0b3",
+      "Becoming.Derivation.log": "e513c1e997f8aa607d7d1d742fa562f46cbc23b3853ec6640c21613867dc1cee",
+      "BecomingDerivationAxiomAudit.log": "02345e4c55401e54835d7209fab55a4f599bc0f2d9e3c993665d468637b2c91e",
+      "BecomingDerivationSignatures.log": "b98a500267cbaa26b4fdfb44b21a83cd8137d6bf49744caa60ba703944a070c8",
       "Becoming.ClassifiedBeliefProcesses.log": "669b8e09213fbba69b6a821f11746de6e477570188255f8b8c343e3881d76c14",
       "BecomingClassifiedBeliefProcessesAxiomAudit.log": "0bf9d9d4b8e7dc26e6db523e9501e0fab91fd82170f8cd5283358bd4b1bdfaf7",
       "BecomingClassifiedBeliefProcessesSignatures.log": "95466b11b6b37ff3d725b2b2e0122fa7ff8a0ed5a5bb92e7a320efdc0e387a4d",
@@ -7029,6 +7115,24 @@
       "Becoming.LearnableRuns.log": "2972cdfa588d10850cd7cecf3cf58846905085ae685a46a9293e832854aa1489",
       "BecomingLearnableRunsAxiomAudit.log": "d59d261129a03cf5d914ee0c6b1b7871f19d8f31b1e8f65eb3732d98c060a14e",
       "BecomingLearnableRunsSignatures.log": "84c60dc3c793c8cab1f6dcb72fb7393459b3d6015a74d3bb205778cc4be5807b",
+      "Becoming.PartialReadout.log": "d20a9aa56df181cffe297bace60ebdb874e432c20ed581e16b15d153cb330861",
+      "BecomingPartialReadoutAxiomAudit.log": "45b8d7ebe226a1906a1eb3b3620ca513b03dcc42c0b0e67fb728b4174fea4c3e",
+      "BecomingPartialReadoutSignatures.log": "09850147447dd326b6703e07396d1e22c6bfb44d8bc524c3984a1761588ce214",
+      "Becoming.CodeAcquisition.log": "1f03c36cc2158cae8cc5ba19c486098e9cf7e643645895f72a1c6ab67cc50ce0",
+      "BecomingCodeAcquisitionAxiomAudit.log": "cc3891b5773a7a813246957ddf598dc4ba97d604d7d4bb52b609d80b6d086822",
+      "BecomingCodeAcquisitionSignatures.log": "d1585372ea35bec095b5a032a13e71d1f128a322e4a6e4e2084e4fe4e32eba2f",
+      "Becoming.ReducedRuns.log": "d77c41faa9b8c36274e18e7ee5ca0b1be9248df493b44b2f388b47e0f9b240e6",
+      "BecomingReducedRunsAxiomAudit.log": "8e4268038fd8073522295e8315c35ede56fc91138920312befa63c87fdace686",
+      "BecomingReducedRunsSignatures.log": "b36f188cf37845345ca76b5284618dd9db16e90f01757ddb36ae93b7ff94fed0",
+      "Becoming.RouteFormation.log": "263a82ce0a39773d07b4bad578edacaeb4180ed3e195c4d8c2d528ca18e63415",
+      "BecomingRouteFormationAxiomAudit.log": "97b98600e4656eefcd9b84852b09a9999732c2c235e4b0f79f4da7cd15baa656",
+      "BecomingRouteFormationSignatures.log": "a4f77277f2fd22a4340af8a1b7654cf721e0cc38a1ca237af43b7522f85df379",
+      "Becoming.ResponseLearning.log": "4cea6903a2063f38ebb4169b427b261a368c7ef2d51a9c062a4c782264a2a0ce",
+      "BecomingResponseLearningAxiomAudit.log": "5dbbe2954b1c6df383ce29c7191c89231b5f6d42bf3a65135e0abf248269ae69",
+      "BecomingResponseLearningSignatures.log": "2b2a28cb240b2412f641653821f2a617ff2fc7e25fd86f7a8828983d693d75aa",
+      "Becoming.LearnedGrouping.log": "828ffcc941f2c1962ef85cb0f19462b6eeb3dd611e48fc6777377d473c2a25e3",
+      "BecomingLearnedGroupingAxiomAudit.log": "911140678b7a9546cd50b17969e51f73567ce64f0d322358e2de7f77cfcadd9e",
+      "BecomingLearnedGroupingSignatures.log": "7a239da24ddb985a7c6d630f1782ec052306f2503e55169990374d398e4b25d5",
       "Becoming.Unrolling.log": "55c19190d5ab6ccb58027de57ac64827cb091cb00a0ce9b4771bd3705afb0eec",
       "BecomingUnrollingAxiomAudit.log": "8becfc97f4bcfd2e139001c4c380ff61277e4eac11e146a55f84c50a313d67c8",
       "BecomingUnrollingSignatures.log": "3a903c31fa7299392811dcd8d005e69f792c578c3fd9a09a3566e3472fec3b6e",
@@ -7131,9 +7235,6 @@
       "Becoming.RecurrenceRuns.log": "1aadadffce0574e456f13a10ac331d76ff83fc7894583c50457af6b131ea00fd",
       "BecomingRecurrenceRunsAxiomAudit.log": "849dda7a191ca336e90bf4b6b509e90b0665d5d44aa5676e38c4e301fb06238c",
       "BecomingRecurrenceRunsSignatures.log": "2ea06c94227eba20edf427f3d574ca7e4463434937fccd03b8a652d37a5e8bce",
-      "Becoming.ReducedRuns.log": "d77c41faa9b8c36274e18e7ee5ca0b1be9248df493b44b2f388b47e0f9b240e6",
-      "BecomingReducedRunsAxiomAudit.log": "8e4268038fd8073522295e8315c35ede56fc91138920312befa63c87fdace686",
-      "BecomingReducedRunsSignatures.log": "b36f188cf37845345ca76b5284618dd9db16e90f01757ddb36ae93b7ff94fed0",
       "Becoming.ReferencePlanTraces.log": "72787398dc610b5c9761dd622a63242ee0043c4d46e589ce6b313c2d2a9200c1",
       "BecomingReferencePlanTracesAxiomAudit.log": "3b1dac94d5b5027af49fcd52fef295996e4a8014cced7fe06cf4278e37db9c53",
       "BecomingReferencePlanTracesSignatures.log": "33c02c54aac8a6e79bf3108f752aa8535fc02b06a3be3e81d3a870035baab47c",
@@ -7185,9 +7286,9 @@
       "Becoming.WeightedTraces.log": "b8559e248d719d5024849274ce94696db04dbde5917106efedee8cdd14b625c0",
       "BecomingWeightedTracesAxiomAudit.log": "2f65f20af7b447aa567e3dbc2b1aadd84d1cb81b4f2e49188763126d5edde305",
       "BecomingWeightedTracesSignatures.log": "9c279d448f5dc823c0dc8550d45d0efa77961679b8fd70395d6023420cbc5d7b",
-      "Becoming.log": "2858a994dc2f946535392ae704e95acfc83b7f9e65b3f992d1c4cb11746aeda7",
-      "BecomingAxiomAudit.log": "80651454a4021c929efc57daa1c017779fb9e9da3a4fd6d87c709959bdd2b06f",
-      "BecomingSignatures.log": "5c9a942815219b228bcb914dbb43386b185dcfe9337259b16b56f85fa48d0570",
+      "Becoming.log": "fc5dfc4355e42b3f9e766341f9c59da78d5014ba3219c8a757152056ad3a9f36",
+      "BecomingAxiomAudit.log": "f76010952d8d16e80a3e041121acf2e6161f1d542dbccf01f37f99ef9d829bfa",
+      "BecomingSignatures.log": "a91b5dc657f46c6f852dee9c8a90518b8bb911527704d710cee9455d2d2929fc",
       "GenerativeComparison.log": "4737465ba06dbcf9896aca98711c3ea30eb8f6f45a945555723b050b0d272338",
       "GenerativeComparisonAxiomAudit.log": "32d01d01f71d9047e8992895775a524734f4faeaec26aef66a960255f92184e4",
       "PracticalJudgment.log": "2629dbbcc1e2643a920d692e88e9b31432d228cd0383ff046605ae202a6cd33c",
@@ -7276,9 +7377,9 @@
       "JointInterpretationAxiomAudit.log": "1b6aefa939d46c258e5db0f630accdb4fe7ab77ba387f0ccce6d8517cebf4f0d",
       "AlignmentDirection.log": "41e33fa91972a43170effad4e008449eb29a7b631fcb61287f26482ccb62e46c",
       "AlignmentDirectionAxiomAudit.log": "0a3e76af74f0f479a3b9ca3610844e6ffb525f9992516efb75c65555dd3d4879",
-      "Becoming.Bridge.log": "40444bee498b965a51416f0117396b647312f23aa2d6b921f15f0be82d9650ac",
-      "BecomingBridgeAxiomAudit.log": "7f2cf1b43e1bb88c90af4738d2d8e839478b3b10320f88ac47cfafcbeb6cb5c4",
-      "BecomingBridgeSignatures.log": "2f92949a7b6812810f8d921e64572f921207d25fbdc4e7b78cbc4b6440d4259d",
+      "Becoming.Bridge.log": "891b79f634126ad94daf328bc11ff5fbbe4540428cf2afcbcf89726b4fe6d94b",
+      "BecomingBridgeAxiomAudit.log": "be608ab02cd5f658c0f050196c073777fc9aff24a26328129084de8bb87a7532",
+      "BecomingBridgeSignatures.log": "6b5c737872587a857b1af1aaeb4cea1c03b111389c43fd3980863717f6ecd3ff",
       "ExplanatoryUniversality.log": "e75230f670b0cc608c8b1f631b67085d79bf13f92a8eb8c866c7781d97011412",
       "ExplanatoryUniversalityAxiomAudit.log": "2b1eb57d5d9a802a99ae184033f72d12828c8be2e3e9285a1b4e5357aaa301eb",
       "ExplanatoryJointness.log": "bec2d5b759267260db472748551056b79114b712c780972196d236c59087a598",
@@ -7315,9 +7416,9 @@
       "ExplanatoryGuardedProgramsAxiomAudit.log": "140bb523e0efe90cecaab0d5ec9cf7b8884a7a7111e314a8c449fc0db43da457",
       "ExplanatoryGranularityBoundary.log": "070c07477d6afd49467dc476dab0b127d4c8969ad9866bbcffdda41d27a81bbd",
       "ExplanatoryGranularityBoundaryAxiomAudit.log": "4d32bf0cf873ef9525f0f3a4552db811b2fab3de5f81845f46260f00a2331455",
-      "Becoming.GranularityBridge.log": "b83eae30b8098572e697b17489e2cc1e70a6a5072b757e00698f340b75924bef",
-      "BecomingGranularityBridgeAxiomAudit.log": "ed6f7960c19b56f6f4af4673b646b8a3b54ded365343fa49f7993d441c20e695",
-      "BecomingGranularityBridgeSignatures.log": "0e4586083b78f66bc271e8ce42abd6b1b383b1a3a6b93ab4fad5543c1b70d328",
+      "Becoming.GranularityBridge.log": "c8fbf2eb3276930065a62d1de91e1559b7d9d7dbc17bae6c1452c4aa8a6bab13",
+      "BecomingGranularityBridgeAxiomAudit.log": "de1c3653839bd50775d22c5f1c589a1f78a26df7eae73918a49a254a62da7d11",
+      "BecomingGranularityBridgeSignatures.log": "fc19b0814e2794f15a9188ab6c63121f549c56dbc6a500fe678c722b519b7be1",
       "GenerativeLossComparison.log": "36a8cdc6e9cb58d5f76eb225cd5a83c7895bcdd6d71d609205a2b6c811607b92",
       "GenerativeLossComparisonAxiomAudit.log": "aeddf885434d704d45613d49302890f0a107fc0ab0e6d851bb879e68df77e004",
       "Becoming.RepairComparison.log": "4c814b7fb1d172dbcc86b74ee7d900e4c15477bec522776ba372262f5555d582",
@@ -7354,12 +7455,12 @@
       "BecomingInstancesSignatures.log": "21473e7e6125871648f8ff79de458abe358b088975b178ed96feb5a58af9c8f1",
       "RenewalRecovery.log": "b7ec6b9a2d0381bea154476c53aceac5c2a15d238a077321ab24d229d34952f1",
       "RenewalRecoveryAxiomAudit.log": "2e8649bf4153e3550ef58467f84ff702d67b9956579e25023cb927f541767827",
-      "Becoming.RenewalBridge.log": "6a1655b09c1610993c0800e0db47f0241f53caa1c0f8f5833957f20f138aca5b",
-      "BecomingRenewalBridgeAxiomAudit.log": "25b1ecdb7ee79d005a066e08619314f0ca1033d8076b3ef49112383e7727a12c",
-      "BecomingRenewalBridgeSignatures.log": "3c758a8acc0491c37cb2add810da6b4c80e62fb5d720652aa23de6e4b74fc554",
-      "Becoming.CoursesBridge.log": "66719b79c0b52f1852d92781336a6c105bb8115a1a61fed29e298170cc3a4bd8",
-      "BecomingCoursesBridgeAxiomAudit.log": "474f66679bf4b4ed971976f45be5f124b8ef134de063b67965b4a121b0f9ed73",
-      "BecomingCoursesBridgeSignatures.log": "64055fb79da5919e80f8c40039a93a8f11f065ca1b94f776666d0a9627662274",
+      "Becoming.RenewalBridge.log": "49f0ffddb0affbe000191ba7d8e29bf7a48165dfe1d1e547fe255e97068e14aa",
+      "BecomingRenewalBridgeAxiomAudit.log": "196dcba15267fd6760747e628232c8f2ea391ae5a78712f9e01de4f1477361d7",
+      "BecomingRenewalBridgeSignatures.log": "0623983a9d0ec9c3220365fadb4d1c94d7f4835f989709bc16dc0a4dfad000af",
+      "Becoming.CoursesBridge.log": "dcec5787404801954a7c147e4665a894a545a295d780893e2efab9bce89b076e",
+      "BecomingCoursesBridgeAxiomAudit.log": "89e24863c06a802aa2834cdc3e2b5ff1d13f7f625a9ce948fd2adf11bdf6456c",
+      "BecomingCoursesBridgeSignatures.log": "8655e224135cf7dc89edbdf14cf383e6ce7f55d8762ae04e3d3d5a9c4628f7f5",
       "Becoming.GuardHorizonProcesses.log": "58e4a26db2301a1a53e2a67bdf7b97993a0b902d554e0e585e2c1ac01df52785",
       "BecomingGuardHorizonProcessesAxiomAudit.log": "0277ad9ec3e7e788897825038260ec473c9fef8ad9b9b61718bd3d056842821a",
       "BecomingGuardHorizonProcessesSignatures.log": "0f2073b34f61f8ee2b6edf0e21621d078c2464ec84278a1fe85ddc6dc5197157",
@@ -7402,33 +7503,33 @@
       "Becoming.UnitTraces.log": "3a757c8e119cb4f283d21a73b295aac928785875094ef88bcab9c082a18ea92a",
       "BecomingUnitTracesAxiomAudit.log": "7c8b1dfb9297c0ca400840c9d5fd1423e2f1f77c28f09daf0d69ad91bdb2d017",
       "BecomingUnitTracesSignatures.log": "379ecf20bb6dc2fbe5a188c0a2f9d2dfefd7dba6babe337c661a2747969782d9",
-      "Becoming.RuleNarrowingProcesses.log": "78b6182cede4c34b06ab8baf630d18f8a72495fd1e76cecba6bd5a6eabd36873",
-      "BecomingRuleNarrowingProcessesAxiomAudit.log": "15225405485f64419fea23f266adea56f257bf490875f8ce395ff03dd1cae46c",
-      "BecomingRuleNarrowingProcessesSignatures.log": "18a95f6b82d2921d6c8552c63dd994555619494ec141f028321f75799b8b31d8",
-      "Becoming.SeedReachProcesses.log": "3d549dac72fdc25a9ae339d6a9f2a1b2678a90f7b40923c3ba2bcaa893f80010",
-      "BecomingSeedReachProcessesAxiomAudit.log": "3f84575fcd6a2559d0b6b9b50d00603cfcb2e79220b0c1d49f58d9fc5ba9889b",
-      "BecomingSeedReachProcessesSignatures.log": "12c9605813bb104aec55e28b725eec68cfa6b0faba53e626e6af7371ce453471",
+      "Becoming.RuleNarrowingProcesses.log": "bb30514b5bd5d06c87938d48d021ec5c0da4cfa5ce6e2fa279154861c09d2af6",
+      "BecomingRuleNarrowingProcessesAxiomAudit.log": "2c45b5ce7146ae555c09c7cf2b6307cb00a9c5aeeefa01c6e23c0c61e251b611",
+      "BecomingRuleNarrowingProcessesSignatures.log": "9ec2ede47c606f9517ce343191715be7739e7230e261dba6a2cf49197cdce587",
+      "Becoming.SeedReachProcesses.log": "d4e14120639564f73c3fbcb7035f7ba0a09ab054b72ef91e9d7e5e51e9f8e6e5",
+      "BecomingSeedReachProcessesAxiomAudit.log": "43138a74ddd542d32854cb8b3e50bbf324a710f333adcde4d3faac2607446ac9",
+      "BecomingSeedReachProcessesSignatures.log": "f2395aef492d693d3b0ac9fa333908bd1fe6b01f629fc62ff45457042b7b3b30",
       "Becoming.ExtendedClaimFrames.log": "ebd1ea3f0b2b79f171986a4c42dac44ea2b04d7be10bca0bdbe5a8d9399aac3a",
       "BecomingExtendedClaimFramesAxiomAudit.log": "6409d84db97aa3a4c4c74da3ecda2cd9a4c6130b3727eb16754a78323e1c8a9f",
       "BecomingExtendedClaimFramesSignatures.log": "6cba0fb99453f06caa09eb0af1f4976651d8eb0e40858713d2e3f7258ffbdf0b",
-      "Becoming.ExtensionFrames.log": "5398f741a82abcd6c0790a8139f5593f42d08a0bded56854f62e949f06b15879",
-      "BecomingExtensionFramesAxiomAudit.log": "84711b7b9214880131fa58fd3ec766d15f59aba5f6907a169dd612bc966a6382",
-      "BecomingExtensionFramesSignatures.log": "5b90d1634b985dc594b7cf4736f8d41602523b7f31e932d306eff4a5379b8205",
-      "Becoming.InterfaceTraces.log": "9dadb03ac2e3bfdef191a74a480f8f8f96a3598dcf1f28925ff959c0c0538d08",
-      "BecomingInterfaceTracesAxiomAudit.log": "459f45f7537bfd2fddf9ef86a858d0a52f5fa235e968621744a403097c9375ea",
-      "BecomingInterfaceTracesSignatures.log": "9cd5e90ab82cd739dc21a5ab967322ba9c784f7b1f12d7d5e64ec0032b6bc62a",
-      "Becoming.ReachableFrames.log": "d90fb58bff785a7fc24e95c7c35acc045185c231005521826e737903f72c0e65",
-      "BecomingReachableFramesAxiomAudit.log": "38b443a66bc3985363cd25097d6b75f2411867dc8879562a46c27d804af7dd3d",
-      "BecomingReachableFramesSignatures.log": "cbc0889694cf71d484609ee9f3e04691d27f23a820122871c8abecf1a1c61a9f",
+      "Becoming.ExtensionFrames.log": "d12935815435e0d6464a2e6ed13103b6993c62871c1b18ab958df14e0d5f004d",
+      "BecomingExtensionFramesAxiomAudit.log": "dec1c6d178c349016432b564978affb88a500094b90816e167a151b48c1ba2da",
+      "BecomingExtensionFramesSignatures.log": "f2f8fdc753e05dfc2f6511bcf7dab99812cf6b4252e325c1be0ff865adecf24d",
+      "Becoming.InterfaceTraces.log": "4e88a4373583db16641c18f8bf408f293afdba2122f0e92ffef7b29930dd9a71",
+      "BecomingInterfaceTracesAxiomAudit.log": "df7b6b741bada91978d6f16c5fe72ee3c8670422d655762902240cc86641983c",
+      "BecomingInterfaceTracesSignatures.log": "cd7e8ce5c8b42efecddbeb8810f9a7039e1bedae1e874ce4ae6635b5516074ab",
+      "Becoming.ReachableFrames.log": "c11183378926d4bc6118a81b29ef5bcbc351d3e336f369d43339597ae07b8835",
+      "BecomingReachableFramesAxiomAudit.log": "ab80a224ddd0bd79dec6a3917bb3c8331b7d9657b2b607d8e8dbef417038447b",
+      "BecomingReachableFramesSignatures.log": "1d39b2403be5c984b0e34f3830c975cdfe1e1e976b4a6445090d5d9a3b81b433",
       "Becoming.StrictTransportRuns.log": "c37579c6e6f8fdac95acb4d7f97f1dd014b91966f325ec8837432957d892e83d",
       "BecomingStrictTransportRunsAxiomAudit.log": "3c2748fd02de1340cf5892a5ba0e4fb22d9098e3b8279d317bba72ea25f9c3bd",
       "BecomingStrictTransportRunsSignatures.log": "2c8bebd97650469a3340b931246ca2634e9139da55a8beb973d2479091c87713",
-      "Becoming.CouplingHistoryFrames.log": "63560d2426935240a5e801345344eb6c30e13a3312a1900b6c36e01770529530",
-      "BecomingCouplingHistoryFramesAxiomAudit.log": "b502f90f52a4c15bdb98cb9a21319894a055d46c7d8b8ce69e42305d4cd2f8e4",
-      "BecomingCouplingHistoryFramesSignatures.log": "42c019fb09a20a0c62dab06207dbd3a0d11062df18f554b5417d844538fb66f9",
-      "Becoming.CourseExtensionFrames.log": "dcf5c0c0af6e2e4d47041b46dde2afb7aa5c52d29ca1579e898e0277fb4e3285",
-      "BecomingCourseExtensionFramesAxiomAudit.log": "bf9db18768a407b55519bd1a55d710ba3183abf6863794319b9f225f124b3e17",
-      "BecomingCourseExtensionFramesSignatures.log": "cf85a6d3cb266fcc9f68d1dbef357779272bba062dc0dac8de2b1eafe145b4e3",
+      "Becoming.CouplingHistoryFrames.log": "759b7e0f9b2f97d91d36946aabe46094ced5f110bf0d2cb43521d14540986a7f",
+      "BecomingCouplingHistoryFramesAxiomAudit.log": "824080d7f21333bd25cbbd0bf0cca847cddfe4e78a302017eb1ccf173270cf4c",
+      "BecomingCouplingHistoryFramesSignatures.log": "9b7dffe23d18774d40b79a27671ccce4935f127e154d733833c8ee8ffd5eaf06",
+      "Becoming.CourseExtensionFrames.log": "d84d7e098fcce4754b07591d72ddf5e3d7d7cf0c06ad94ea62cc472b90211864",
+      "BecomingCourseExtensionFramesAxiomAudit.log": "a263b3dcb59ecf7159b616f0335458ec936de80dfb3b5a838f251a33210b2d37",
+      "BecomingCourseExtensionFramesSignatures.log": "28fac3cff9c062afbdf4d6f514bb07d25aab6edfdca38c80795dcbedcec5bda1",
       "Becoming.DerivationScopeProcesses.log": "ae376bd2f6576e50063ba0d0134a38bde5b5b1cf57a95b05edf389306cbc29c1",
       "BecomingDerivationScopeProcessesAxiomAudit.log": "f4177ecf80c9b7cb32743aa99ab160b7fc4b4c056c269b4a8a415b2cfca49bd3",
       "BecomingDerivationScopeProcessesSignatures.log": "9f2d4cb352b3169a40e613999147dccba1785ac1a6d86c9ed007e432c1d5e524",
@@ -7438,12 +7539,12 @@
       "Becoming.FeasibleProfileTraces.log": "ec56e8d21a1e3fde142b7927b0c59ee9e4276f9287eab8fae2754bea71298eb8",
       "BecomingFeasibleProfileTracesAxiomAudit.log": "240570ec7ab93c99e7c1e0a22361f94007aaeb0e95f340fcd5969c91cb6c1a38",
       "BecomingFeasibleProfileTracesSignatures.log": "e2b9ecbd1569c2dbaa7e94a1b984c6768f12b21cbba1005acef4980d932b78ee",
-      "Becoming.RuleRevisionTraces.log": "9aa03f670816b26e7b808432c321ddbd4ddbc61f52b029b9cb4fb8f0f1768844",
-      "BecomingRuleRevisionTracesAxiomAudit.log": "2f3e5b59ba829e697b7c4df1509ff28cb7690f846f4ec5387738c5692b2294ca",
-      "BecomingRuleRevisionTracesSignatures.log": "ee6f9d5b087b0099475680ef2517db7539090d4e9d299f1a361e328177631328",
-      "Becoming.SupportGatedWebs.log": "3550a7fc1d45ad5a5a312c59c57743a38dc7db7d12ab0859b63c7b3cd71b30c7",
-      "BecomingSupportGatedWebsAxiomAudit.log": "c8aa508758ac51bb076e705437c06d3ed682d3ce53cf47cb12a3ac005f8f6900",
-      "BecomingSupportGatedWebsSignatures.log": "c46a059fb6fc3384dfbf9d1144428e44478728a0cada90c207b311fdaae922b3",
+      "Becoming.RuleRevisionTraces.log": "c03d7a0688fcf217486b5089e717d3014dde37bb4c3d6ce3a077eda3ffbc0ec9",
+      "BecomingRuleRevisionTracesAxiomAudit.log": "cd7095dbd8a8a9fe38b38bb87afea1c54e4cda122ec7ebcb9b39a0f1faeeeea6",
+      "BecomingRuleRevisionTracesSignatures.log": "06748565a25b9076d8e5b6689c431132e400862814610d1ceaeb24e4ffcdc5c3",
+      "Becoming.SupportGatedWebs.log": "33fc15a640bd026bd077b096d63b997ef4973575d1ec037295e0be0acc2ce3aa",
+      "BecomingSupportGatedWebsAxiomAudit.log": "eec554d364fb4ccef500945c680be915a54bbfc8f2d22990a737d576ccb80e62",
+      "BecomingSupportGatedWebsSignatures.log": "1017a92d5aeb06be62f4168dfa5f50b7d3eea9b72c9bf921311ddd26ff520039",
       "Becoming.GuardHorizonProcessesInherited.log": "fca4345ea6ff73bf987b4642bf87c190a4817f92cacc8c78b5a539bbd441a672",
       "BecomingGuardHorizonProcessesInheritedAxiomAudit.log": "7b9292e74ec215accfcebbf3e533c21807764a633da7928d314aef6694438891",
       "BecomingGuardHorizonProcessesInheritedSignatures.log": "239104ae691505ebfe63849ae6231dca7719f5c173bd6e1365da416716dd6329",
@@ -7480,9 +7581,9 @@
       "Becoming.DephasingRunsInherited.log": "34996a2691bcf565b13159ef345c9cc29c34e64189781b49adadcfd504ed6f5d",
       "BecomingDephasingRunsInheritedAxiomAudit.log": "3923d36255379d525e6211bb23d4528b2ae27a48a22b7d3a932b2d1d1a2f56fa",
       "BecomingDephasingRunsInheritedSignatures.log": "009e63ad5e31cf66ba073e70e753387eae853cd66dcb3fe7e9ad3a0d0a63d2da",
-      "Becoming.DrawnAmountProcessesInherited.log": "fae3d3ac3472e7e9819329f204072707b24036255ad5758a80909e2d7563f83d",
-      "BecomingDrawnAmountProcessesInheritedAxiomAudit.log": "5518167c3512bad7e05fb72bc709b02c313e89602b8556ab9c87eabc404a31a5",
-      "BecomingDrawnAmountProcessesInheritedSignatures.log": "47316453b65b92dfcd1160bf34bfdd474f630fbec3e3ccc4528ab7ad5a74bd26",
+      "Becoming.DrawnAmountProcessesInherited.log": "5fa7c933782c68dbc614b743c6d01a3f754732efa3a4066020404abf93e58521",
+      "BecomingDrawnAmountProcessesInheritedAxiomAudit.log": "ec4c043d7db4719fcd5455fdd823c674b5a4a562ccc5515ad8532301646eea72",
+      "BecomingDrawnAmountProcessesInheritedSignatures.log": "699cf3b7ddff76bcc48fb2ae75c22ffb15c7c8b6e2059bd3b3ad4081d9bd6152",
       "Becoming.RuleHandoffTracesInherited.log": "3d21ca05c77d64b227512ee444f625e80d270a01472ef8752447508fffe1c4cf",
       "BecomingRuleHandoffTracesInheritedAxiomAudit.log": "3d58c81259b87efbc0fed0ed4930e77b9cfadd453ed7a7e463c2f1a33b841ae3",
       "BecomingRuleHandoffTracesInheritedSignatures.log": "02b72605af8b5f9da0376f552e2b56b1d22b320c565355d4013c987307efb27f",
@@ -7498,33 +7599,33 @@
       "Becoming.ReceptionTracesInherited.log": "da5c7eb0097f18f269307a97d5c9eaa2b9846226facf5617fb09163cbb2e45c6",
       "BecomingReceptionTracesInheritedAxiomAudit.log": "b883148e3a3efc771bc3e242895aabc3918cf866d34a4b85bccdbcc33b8c8677",
       "BecomingReceptionTracesInheritedSignatures.log": "aa3091f068f0a2990e380d9e6c0502f12aa8336cd9f1500dc0aaeb476e7d8310",
-      "Becoming.MoveOutcomeProcessesInherited.log": "48bbd01f8ed3cfc971eb52c925323732cf82752e0af09c567a01e528b4a8718a",
-      "BecomingMoveOutcomeProcessesInheritedAxiomAudit.log": "4555e63f725f99808cc9552a5e23ccd598b1bef19e48696f023e4a6f7d26b7b7",
-      "BecomingMoveOutcomeProcessesInheritedSignatures.log": "5f9e387ae0d618898fea22f5a51cc6516ad7f30921470e2da82076f892243acb",
-      "Becoming.RuleNarrowingProcessesInherited.log": "94c3b82cc839e474efeb3666b7bccdda72f622b8e7513b517309e7d17c6354d9",
-      "BecomingRuleNarrowingProcessesInheritedAxiomAudit.log": "1cb41dc2cf353e605a756428d6acdf37f3cbe8e1c64b5b8949e6b7cee61b620c",
-      "BecomingRuleNarrowingProcessesInheritedSignatures.log": "a6d1421a2b203894f8e1b3ccce5d93a2f5e2ae22710dc4f5e0617558d922c0f3",
-      "Becoming.ClassifiedFramesInherited.log": "9e960615932abf7f6d5990be643b677e97b3dc25be88e8ed06ae4d03123b41ac",
-      "BecomingClassifiedFramesInheritedAxiomAudit.log": "22304b224f3493ec3ad9f2b355a9526a827af9d07f86cbaacaf00e8f75d031d9",
-      "BecomingClassifiedFramesInheritedSignatures.log": "3c29c343d859239144bdb9c5d72706279abd38e43ffadc022e089cf16572ea1f",
-      "Becoming.InterfaceTracesInherited.log": "e238c70e42d21df295b4d2e9834475af88879e9444cb077df16c686d286eb179",
-      "BecomingInterfaceTracesInheritedAxiomAudit.log": "7afb1aa5d444e5072a8295a0c43daebfd1dd5cb3685fec1eab380741339e309f",
-      "BecomingInterfaceTracesInheritedSignatures.log": "4aab8dcb35b10a8b99214c442d4f564dae67f6845be9f511c68876ab86946b4c",
-      "Becoming.ReachableFramesInherited.log": "59832120dc21fac95bf54a1fe0431e1d9d8d35b7336bd49f54516ae0f75a78f0",
-      "BecomingReachableFramesInheritedAxiomAudit.log": "ed46e70558a7bff885d2996d4e148cbf94a5baf8cfbe043c7c7b230d4f792a5f",
-      "BecomingReachableFramesInheritedSignatures.log": "b9dcf86e502756cd9bf907efd8924bc827c66159823b5d6c8089c18ee1bffe81",
+      "Becoming.MoveOutcomeProcessesInherited.log": "58dc5e471635c51dbd284b3751b3ea90a8a7d5ce91eb48247b1542453b8043d3",
+      "BecomingMoveOutcomeProcessesInheritedAxiomAudit.log": "9b95b73addc6331fd7837c31667b08e7dd1311ad2835e24652c5f6125d58b207",
+      "BecomingMoveOutcomeProcessesInheritedSignatures.log": "1a1f2a4f59aa8581ce84ea0d8dcf2cc227da9560a7a149cf99b610021cd7fbc0",
+      "Becoming.RuleNarrowingProcessesInherited.log": "62ecb55616a590ee7e885952cd77681df8b0a41b07aed5c6002fd54375b5c592",
+      "BecomingRuleNarrowingProcessesInheritedAxiomAudit.log": "235fd3a2dffcb1f1521731b96478e71b78b7b76b67993d4fa75caea3da8a954b",
+      "BecomingRuleNarrowingProcessesInheritedSignatures.log": "498f583d9b89e6b7fbc826e74e7fa059b377740bcbc528ef3c9b03ea3ee5ce4b",
+      "Becoming.ClassifiedFramesInherited.log": "2edaebe31c7b2a4eae20cc1a829a892939e6edfdc63ab3ed88fe723a8cfdf0b4",
+      "BecomingClassifiedFramesInheritedAxiomAudit.log": "501c4c08528670562594d5da4c8a8997fc244a9800f0c167d112ea951336255d",
+      "BecomingClassifiedFramesInheritedSignatures.log": "342afb8b3e12cbec0305c77db1c77b494d3c8870a6d9ab9b72852db6dc426ed3",
+      "Becoming.InterfaceTracesInherited.log": "af38d89558b9bb89c376cc921682b81633d3479662391e1a82bcec2a40ca1c6f",
+      "BecomingInterfaceTracesInheritedAxiomAudit.log": "a04bdf74a56db20703078b4546653ad8dd8b304493cbd24d1feb312f08daa996",
+      "BecomingInterfaceTracesInheritedSignatures.log": "5ad809b16e87a8030128ff0d3d14c47eb7a70785c1652c530866cc4d7585f0ec",
+      "Becoming.ReachableFramesInherited.log": "cfb66f79e9fc37474c84696a101d8edb2cb9dba4d3fc736ef09fd11e41baa937",
+      "BecomingReachableFramesInheritedAxiomAudit.log": "1e8b97a40c8a47343ec75b7e9489d5d4b9c75aaf2fe8b7c15aee422b24c37502",
+      "BecomingReachableFramesInheritedSignatures.log": "b362169819d06e885aeac15473f7351ff4d8985b510edb8975718dd9c5d4577f",
       "Becoming.ContextArrivalTracesInherited.log": "4c2999259c34e5eeac531c5f0c88aa28f8b6d80dacd9823a541e970b3e97b635",
       "BecomingContextArrivalTracesInheritedAxiomAudit.log": "b833ae43e870549e6ffff6e521500d637dd337871105b033f48353bd88546032",
       "BecomingContextArrivalTracesInheritedSignatures.log": "1a1654cbb275614c346ca9d504bec3f218c93c14e48d1774bb54030b8b35c1b2",
-      "Becoming.RuleRevisionTracesInherited.log": "851d6520568d4d6a7994bce2aba174ee2ff399db16b8f74d538565cf56f68957",
-      "BecomingRuleRevisionTracesInheritedAxiomAudit.log": "61c15412d6f81c5c6e92ec8a811de3aa721e84ed6e412d34c0fa761500b0ddf9",
-      "BecomingRuleRevisionTracesInheritedSignatures.log": "e6adeb78cdb33ad81000d48ac4d7d4dd8ee7c8d6de71b8eaa220a000506ef5e7",
-      "Becoming.SupportGatedWebsInherited.log": "878ffd6562dcfd6960073ea77d3a78c11e09b791943f830fabc8078c655ca78c",
-      "BecomingSupportGatedWebsInheritedAxiomAudit.log": "960afeb3edccef2e2aca150a028156d9ab852acf30cc49bc32608875a6570417",
-      "BecomingSupportGatedWebsInheritedSignatures.log": "cc95d84b4933b8ea1649899c86f942587a01ffbae80a8c9a163ba11646865fc9",
-      "EnvironmentAudit.log": "a27587acf2b54ecc6e58e299d5feb2e6366a6bc0d44fc24da20e5bd8183b323a",
-      "BridgeEnvironmentAudit.log": "13ec013a89ff650c35cbf66150592c8f96b25bb9c74fbc6c45ebee2307fd404f",
-      "Controls.log": "588a430e6c8de27ac2f839dbae74dcaf889e4d34ed003f76da4d4e825618ff54",
+      "Becoming.RuleRevisionTracesInherited.log": "2d334ffdc587e3811fac3227fcd14f3e06d2a5694ea23eca2cb5f75785eda233",
+      "BecomingRuleRevisionTracesInheritedAxiomAudit.log": "4e3daee78c084256aab9cc9b5a2fb59b0bb85e0d03d725ab5c8105d932ed70d1",
+      "BecomingRuleRevisionTracesInheritedSignatures.log": "4f72cb8415468444993b4b51d73c566789682a6703fc57d67e8a472f5dab1dcc",
+      "Becoming.SupportGatedWebsInherited.log": "9a019d4183bd1d559fe4fba6b85353c98403cb8f4d0d33dccdfa7f644fc1ef66",
+      "BecomingSupportGatedWebsInheritedAxiomAudit.log": "4985bd1dcbd4681d0bcfe16bb98a3f483e6bb71cccccf156ab84228a6c9285fd",
+      "BecomingSupportGatedWebsInheritedSignatures.log": "12dde834a7cb6e5f0da4bdc46603272606ecdcab587039c7210845bfe181fdb2",
+      "EnvironmentAudit.log": "67809f95edf6c6628411670f5318de27ef1f105b9dcc4aac4a985997f14f58f7",
+      "BridgeEnvironmentAudit.log": "84625d4edc70fd34348374739ceeddc838a0965b47d41e501067472cd48fa3e5",
+      "Controls.log": "cad2c92541984e07158b8792347a79450149d0316583dabcfe6e2a16d9e87d94",
       "Becoming.World.PreludeOnly.log": "b6c92a6f2a9085a73e92dc965f2d1f32073f9c307664b0b4b8a36ac512200b5f",
       "GenerativeCore.PreludeOnly.log": "8b89f7b1018f5a43ae9994a797db0fc12d2d5fa076f5da8d895ce648ccee4367",
       "Becoming.Frame.PreludeOnly.log": "951016dff6a22d5c1ddb5c9b7ffd203053235c9ba1a2f59e92008cb94fe2c074",
@@ -7536,6 +7637,7 @@
       "Becoming.Labelled.PreludeOnly.log": "808874c278da0cf4a80c0d32980da38caf5523a20ba4bd43c7deb7cc0db87109",
       "InquirySufficiency.PreludeOnly.log": "cac5bbd3cc793b2b54fca50ca409a7e815c7161d517b461a8e15da84d6ad6d4e",
       "Becoming.Inquiry.PreludeOnly.log": "d1d169620db0fa516329c5a6cecd35064aa982ea84591c5eb569e636de721cde",
+      "Becoming.Derivation.PreludeOnly.log": "b8c780b40c98c69b2f2e0f9dc975131959442ccc7c96d978e1b6c4a34abb2721",
       "Becoming.ClassifiedBeliefProcesses.PreludeOnly.log": "35a0e7911d50ffe287b8242d3808de947374fe15b026b3e3ad396cb1d59cd9a7",
       "Becoming.Recurrence.PreludeOnly.log": "2de167fa3674c8e4898a32551e5d011f0c4ca29d673be7c0e6fb5970651fdbba",
       "Becoming.MoveOutcomeProcesses.PreludeOnly.log": "e0b9a876f3e187daf107f2f968ac3ead880d062e98474a39c6f42ef3cf8c4084",
@@ -7693,6 +7795,12 @@
       "Becoming.Runs.PreludeOnly.log": "0314c4bc9a2f9677dcdc3243bd640e5e1f72a6367a7ee5c1e9d29f40b8b91cc7",
       "Becoming.CourseWorlds.PreludeOnly.log": "c97527ec306d6b00204dffaac157f77888c76635fa4e7a528ace2d61167d9e47",
       "Becoming.LearnableRuns.PreludeOnly.log": "fa0facbcfa1d1d3c9ba12ecaf9273c52c83084cf6a321e49837eca8d0fbfc1bc",
+      "Becoming.PartialReadout.PreludeOnly.log": "4224b0fe5810005eaaa1a26e06450d1893097717ed5a148e4a4bdcdbb8124209",
+      "Becoming.CodeAcquisition.PreludeOnly.log": "eae9c276c019d3f0dfc12f0586321070165fadd9027af865a7a9babad1709768",
+      "Becoming.ReducedRuns.PreludeOnly.log": "2734dc183282c29f81f341b7bc1a0d8e9c687d5ef55b8880c357492516df7296",
+      "Becoming.RouteFormation.PreludeOnly.log": "b16b1857afd07148e259b526e100f1295e9d4606de869b53148eb8a07c289098",
+      "Becoming.ResponseLearning.PreludeOnly.log": "f5464e5373d40fcdd52c31ae3b98e1b611b9c1105ea7a90f0f17f7ebed7d0d89",
+      "Becoming.LearnedGrouping.PreludeOnly.log": "f9df4a6b2869a9552a9de7e143d5a90fb07c28cf86f5fba04889f9bf6ffe4c5c",
       "Becoming.Unrolling.PreludeOnly.log": "6a89070a00715a76c394c0c297c57fe69fb03962f722e5cf52aaa54afd23e81b",
       "Becoming.Labels.PreludeOnly.log": "08355e1cf8eb9df48ed6b676f8da2a61bf4692d2f3262fb37f6d3eebff015d60",
       "Becoming.ParityReadings.PreludeOnly.log": "455e839d926dd3fda283500c86dc96d14342c23687d19ae9706990aad1949182",
@@ -7727,7 +7835,6 @@
       "Becoming.OrderWorlds.PreludeOnly.log": "5c6d4ec9778fa8ef409e558b0f9c859eff11ae7f05d89204943019997e1b7f19",
       "Becoming.PassageWorlds.PreludeOnly.log": "ddd3772e45dd8fbe0e485c9c8c5efe6ce26b2a9e333d5b059e17513343633935",
       "Becoming.RecurrenceRuns.PreludeOnly.log": "87a7a7239ae1167d6a74dbd9550e53372ecc1f82a923d16f0a08b36936761178",
-      "Becoming.ReducedRuns.PreludeOnly.log": "2734dc183282c29f81f341b7bc1a0d8e9c687d5ef55b8880c357492516df7296",
       "Becoming.ReferencePlanTraces.PreludeOnly.log": "7c6171c87b27ea30a9202a2ba6ab0e888ada38fa4cbd0014a19a529e56a658d1",
       "Becoming.RetrodictionRuns.PreludeOnly.log": "b0a2e6b903de3877660b1b509746980080bc16ed1870aa6a5e7e935544673fff",
       "Becoming.RevisionRuns.PreludeOnly.log": "c8cef21b0dc46e3ea40214532a53eb5ef25a073f2d0e93a840244dd0231e56ea",
@@ -7745,7 +7852,7 @@
       "Becoming.TailRuns.PreludeOnly.log": "c977aa728d01112e1ae6042cf64b38f961c1c3b3502f6b3b57103902a25a940e",
       "Becoming.TallyWorlds.PreludeOnly.log": "cf83b9942cc61c1e4f870291da3c8636b7ffc78da487b87eadc4d7eb53c2695e",
       "Becoming.WeightedTraces.PreludeOnly.log": "c92810ab270ff574015486eb0f16b3a53e84bca1f1603bd2b50e044927b12c73",
-      "Becoming.PreludeOnly.log": "470787b6dc5aed5b8f0dc301e4bc44c7cfb3480d8bfa0f5d75e22bcf6de0aa44"
+      "Becoming.PreludeOnly.log": "2025b4c9106c9751ca261f4b58d010d4497c514582d35cd3bb469237b98fa2c6"
     }
   },
   "superseded_modules": {
@@ -9970,6 +10077,7 @@
     "Becoming.Labelled": 167,
     "InquirySufficiency": 107,
     "Becoming.Inquiry": 15,
+    "Becoming.Derivation": 83,
     "Becoming.ClassifiedBeliefProcesses": 4,
     "Becoming.Recurrence": 150,
     "Becoming.MoveOutcomeProcesses": 58,
@@ -10127,6 +10235,12 @@
     "Becoming.Runs": 56,
     "Becoming.CourseWorlds": 47,
     "Becoming.LearnableRuns": 22,
+    "Becoming.PartialReadout": 76,
+    "Becoming.CodeAcquisition": 207,
+    "Becoming.ReducedRuns": 8,
+    "Becoming.RouteFormation": 248,
+    "Becoming.ResponseLearning": 133,
+    "Becoming.LearnedGrouping": 138,
     "Becoming.Unrolling": 42,
     "Becoming.Labels": 49,
     "Becoming.ParityReadings": 24,
@@ -10161,7 +10275,6 @@
     "Becoming.OrderWorlds": 8,
     "Becoming.PassageWorlds": 4,
     "Becoming.RecurrenceRuns": 10,
-    "Becoming.ReducedRuns": 8,
     "Becoming.ReferencePlanTraces": 94,
     "Becoming.RetrodictionRuns": 4,
     "Becoming.RevisionRuns": 6,
@@ -10510,6 +10623,48 @@
       "propext"
     ],
     "Becoming.WebAt.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.PartialReadout.Channel.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.CodeAcquisition.Expr.join.injEq": [
+      "propext"
+    ],
+    "Becoming.CodeAcquisition.Expr.atom.injEq": [
+      "propext"
+    ],
+    "Becoming.CodeAcquisition.Code.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.CodeAcquisition.Evidence.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.CodeAcquisition.Learner.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.CodeAcquisition.Expr.twice.injEq": [
+      "propext"
+    ],
+    "Becoming.RouteFormation.FormationMove.place.injEq": [
+      "propext"
+    ],
+    "Becoming.RouteFormation.Program.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.RouteFormation.FormationMove.encounter.injEq": [
+      "propext"
+    ],
+    "Becoming.RouteFormation.Apparatus.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.RouteFormation.FormationMove.inspect.injEq": [
+      "propext"
+    ],
+    "Becoming.ResponseLearning.Teaching.mk.injEq": [
+      "propext"
+    ],
+    "Becoming.LearnedGrouping.State.mk.injEq": [
       "propext"
     ]
   },
@@ -13011,6 +13166,217 @@
         "Becoming.judgeProcess": [],
         "Becoming.sees": [],
         "Becoming.commonResponse_judge_iff": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.Derivation",
+      "spine": true,
+      "layer": "core",
+      "theorems": 32,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Becoming.Derivation.Holds"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Derivation.Throughout"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.Derivation.Derives"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.holds_nil"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Derives.sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.closed_throughout"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.relative_throughout"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.closure_throughout_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.discharged_throughout"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.no_countermodel"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.countermodel_excludes"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Derivation.withLemma"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.lemma_throughout"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Derivation.conjunction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.conjunction_derives"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.conjunction_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.conjunction_iff_basis"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.basis_iff_relative"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.common_basis_iff_common_closure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.pointwise_iff_common"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.pointwise_common_relative"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Derivation.rows"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.rows_each_met"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.rows_not_together"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.rows_not_pointwise"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Derivation.trivialBasis"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Derivation.isTrue"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.claim_under_itself"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.claim_not_throughout"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.claim_not_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.claim_implies_itself"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.closure_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.goal_closure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.relative"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.discharged"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.lemma_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.countermodel"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.common_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Derivation.Scope.common_relative"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.Derivation.Holds": [],
+        "Becoming.Derivation.Throughout": [],
+        "Becoming.Derivation.Derives": [],
+        "Becoming.Derivation.holds_nil": [],
+        "Becoming.Derivation.Derives.sound": [],
+        "Becoming.Derivation.closed_throughout": [],
+        "Becoming.Derivation.relative_throughout": [],
+        "Becoming.Derivation.closure_throughout_iff": [],
+        "Becoming.Derivation.discharged_throughout": [],
+        "Becoming.Derivation.no_countermodel": [],
+        "Becoming.Derivation.countermodel_excludes": [],
+        "Becoming.Derivation.withLemma": [],
+        "Becoming.Derivation.lemma_throughout": [],
+        "Becoming.Derivation.conjunction": [],
+        "Becoming.Derivation.conjunction_derives": [],
+        "Becoming.Derivation.conjunction_iff": [],
+        "Becoming.Derivation.conjunction_iff_basis": [],
+        "Becoming.Derivation.basis_iff_relative": [],
+        "Becoming.Derivation.common_basis_iff_common_closure": [],
+        "Becoming.Derivation.pointwise_iff_common": [],
+        "Becoming.Derivation.pointwise_common_relative": [],
+        "Becoming.Derivation.rows": [],
+        "Becoming.Derivation.rows_each_met": [],
+        "Becoming.Derivation.rows_not_together": [],
+        "Becoming.Derivation.rows_not_pointwise": [],
+        "Becoming.Derivation.trivialBasis": [],
+        "Becoming.Derivation.isTrue": [],
+        "Becoming.Derivation.claim_under_itself": [],
+        "Becoming.Derivation.claim_not_throughout": [],
+        "Becoming.Derivation.claim_not_closed": [],
+        "Becoming.Derivation.claim_implies_itself": [],
+        "Becoming.Derivation.Scope.closed": [],
+        "Becoming.Derivation.Scope.closure_iff": [],
+        "Becoming.Derivation.Scope.goal_closure": [],
+        "Becoming.Derivation.Scope.relative": [],
+        "Becoming.Derivation.Scope.discharged": [],
+        "Becoming.Derivation.Scope.lemma_closed": [],
+        "Becoming.Derivation.Scope.countermodel": [],
+        "Becoming.Derivation.Scope.common_iff": [],
+        "Becoming.Derivation.Scope.common_relative": []
       },
       "kernel_checked": true
     },
@@ -66827,6 +67193,1962 @@
       "kernel_checked": true
     },
     {
+      "module": "Becoming.PartialReadout",
+      "spine": true,
+      "layer": "core",
+      "theorems": 32,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.SoundWithin"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.ExactWithin"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.LumpedWithin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.ExactWithin.sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.ExactWithin.lumped"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.exactWithin_univ_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.lumpedWithin_univ_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.SectionWithin"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.throughSection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.ExactWithin.ofSection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.exact_exists_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.SoundWithin.silent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.SoundWithin.mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.LumpedWithin.finer"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.ExactWithin.retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.silent_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.silent_not_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.SafeWithin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.safe_of_holds"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.PartialReadout.Channel"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.signal"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.bit"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.every"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.unreversed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.reference"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.paired"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.decodePair"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.direct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.paired_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.signal_not_lumped"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.signal_no_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.signal_sound_silent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.direct_exact_unreversed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.direct_not_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.direct_right_once"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.parity_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.negated_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.Runs.prefixBefore"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.PartialReadout.Runs.featureAt"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.exact_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.exact_lumped"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.sound_silent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.sound_mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.finer_lumped"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.retained_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.silent_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.silent_not_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.exact_exists_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.PartialReadout.Runs.exact_iff_restsFrom"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.PartialReadout.SoundWithin": [],
+        "Becoming.PartialReadout.ExactWithin": [],
+        "Becoming.PartialReadout.LumpedWithin": [],
+        "Becoming.PartialReadout.ExactWithin.sound": [],
+        "Becoming.PartialReadout.ExactWithin.lumped": [],
+        "Becoming.PartialReadout.exactWithin_univ_iff": [],
+        "Becoming.PartialReadout.lumpedWithin_univ_iff": [],
+        "Becoming.PartialReadout.SectionWithin": [],
+        "Becoming.PartialReadout.throughSection": [],
+        "Becoming.PartialReadout.ExactWithin.ofSection": [],
+        "Becoming.PartialReadout.exact_exists_iff": [],
+        "Becoming.PartialReadout.SoundWithin.silent": [],
+        "Becoming.PartialReadout.SoundWithin.mono": [],
+        "Becoming.PartialReadout.LumpedWithin.finer": [],
+        "Becoming.PartialReadout.ExactWithin.retained": [],
+        "Becoming.PartialReadout.silent_sound": [],
+        "Becoming.PartialReadout.silent_not_exact": [],
+        "Becoming.PartialReadout.SafeWithin": [],
+        "Becoming.PartialReadout.safe_of_holds": [],
+        "Becoming.PartialReadout.Channel": [],
+        "Becoming.PartialReadout.signal": [],
+        "Becoming.PartialReadout.bit": [],
+        "Becoming.PartialReadout.every": [],
+        "Becoming.PartialReadout.unreversed": [],
+        "Becoming.PartialReadout.reference": [],
+        "Becoming.PartialReadout.paired": [],
+        "Becoming.PartialReadout.decodePair": [],
+        "Becoming.PartialReadout.direct": [],
+        "Becoming.PartialReadout.paired_exact": [],
+        "Becoming.PartialReadout.signal_not_lumped": [],
+        "Becoming.PartialReadout.signal_no_exact": [],
+        "Becoming.PartialReadout.signal_sound_silent": [],
+        "Becoming.PartialReadout.direct_exact_unreversed": [],
+        "Becoming.PartialReadout.direct_not_sound": [],
+        "Becoming.PartialReadout.direct_right_once": [],
+        "Becoming.PartialReadout.parity_exact": [],
+        "Becoming.PartialReadout.negated_exact": [],
+        "Becoming.PartialReadout.Runs.prefixBefore": [],
+        "Becoming.PartialReadout.Runs.featureAt": [],
+        "Becoming.PartialReadout.Runs.exact_sound": [],
+        "Becoming.PartialReadout.Runs.exact_lumped": [],
+        "Becoming.PartialReadout.Runs.sound_silent": [],
+        "Becoming.PartialReadout.Runs.sound_mono": [],
+        "Becoming.PartialReadout.Runs.finer_lumped": [],
+        "Becoming.PartialReadout.Runs.retained_exact": [],
+        "Becoming.PartialReadout.Runs.silent_sound": [],
+        "Becoming.PartialReadout.Runs.silent_not_exact": [],
+        "Becoming.PartialReadout.Runs.exact_exists_iff": [],
+        "Becoming.PartialReadout.Runs.exact_iff_restsFrom": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.CodeAcquisition",
+      "spine": true,
+      "layer": "core",
+      "theorems": 39,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.sub_add_of_le"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.le_sub_of_add_le"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.le_of_add_le_left"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.CodeAcquisition.Expr"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.CodeAcquisition.Code"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.eval"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.p0"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.p1"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.orderProbe"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.CodeAcquisition.Evidence"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.observe"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.acquire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.probe_readings"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.acquired_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.acquired_every_expression"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.rename"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.renamed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.renaming_keeps_values"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.operationDraw"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.acquisitionDraw"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.acquisition_draw"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.CodeAcquisition.Learner"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.trialRecords"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.single"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.valueOf"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.orderValues"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.readEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.interpretationFromRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.records_supply_evidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.records_form_interpretation"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.train"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.train_of_le"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.training_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.training_installs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.training_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.training_short"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.trained_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.trained_execution_stock"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.primitiveEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.separated"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.primitives_not_lumped"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.primitives_no_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.usual"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.switched"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.novel"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.initial"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.novel_not_probe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.novel_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.installed_not_executed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.missing_composite_no_code"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.reversed_composite_switches"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.wrong_order_fails_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.equal_primitives_unresolved"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.nonuniform"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.nonuniform_agrees_on_probes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.nonuniform_fails_transfer"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.pick"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.choice_keeps_content"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.CodeAcquisition.trainProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_installs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_rests_when_short"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_code_transfers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_evidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.step_then_execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.novel_after_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.CodeAcquisition.installed_without_execution"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.CodeAcquisition.sub_add_of_le": [],
+        "Becoming.CodeAcquisition.le_sub_of_add_le": [],
+        "Becoming.CodeAcquisition.le_of_add_le_left": [],
+        "Becoming.CodeAcquisition.Expr": [],
+        "Becoming.CodeAcquisition.Code": [],
+        "Becoming.CodeAcquisition.eval": [],
+        "Becoming.CodeAcquisition.p0": [],
+        "Becoming.CodeAcquisition.p1": [],
+        "Becoming.CodeAcquisition.orderProbe": [],
+        "Becoming.CodeAcquisition.Evidence": [],
+        "Becoming.CodeAcquisition.observe": [],
+        "Becoming.CodeAcquisition.acquire": [],
+        "Becoming.CodeAcquisition.probe_readings": [],
+        "Becoming.CodeAcquisition.acquired_exact": [],
+        "Becoming.CodeAcquisition.acquired_every_expression": [],
+        "Becoming.CodeAcquisition.rename": [],
+        "Becoming.CodeAcquisition.renamed": [],
+        "Becoming.CodeAcquisition.renaming_keeps_values": [],
+        "Becoming.CodeAcquisition.operationDraw": [],
+        "Becoming.CodeAcquisition.acquisitionDraw": [],
+        "Becoming.CodeAcquisition.acquisition_draw": [],
+        "Becoming.CodeAcquisition.Learner": [],
+        "Becoming.CodeAcquisition.trialRecords": [],
+        "Becoming.CodeAcquisition.single": [],
+        "Becoming.CodeAcquisition.valueOf": [],
+        "Becoming.CodeAcquisition.orderValues": [],
+        "Becoming.CodeAcquisition.readEvidence": [],
+        "Becoming.CodeAcquisition.interpretationFromRecords": [],
+        "Becoming.CodeAcquisition.records_supply_evidence": [],
+        "Becoming.CodeAcquisition.records_form_interpretation": [],
+        "Becoming.CodeAcquisition.train": [],
+        "Becoming.CodeAcquisition.train_of_le": [],
+        "Becoming.CodeAcquisition.training_records": [],
+        "Becoming.CodeAcquisition.training_installs": [],
+        "Becoming.CodeAcquisition.training_stock": [],
+        "Becoming.CodeAcquisition.training_short": [],
+        "Becoming.CodeAcquisition.execute": [],
+        "Becoming.CodeAcquisition.trained_execution": [],
+        "Becoming.CodeAcquisition.trained_execution_stock": [],
+        "Becoming.CodeAcquisition.primitiveEvidence": [],
+        "Becoming.CodeAcquisition.separated": [],
+        "Becoming.CodeAcquisition.primitives_not_lumped": [],
+        "Becoming.CodeAcquisition.primitives_no_exact": [],
+        "Becoming.CodeAcquisition.usual": [],
+        "Becoming.CodeAcquisition.switched": [],
+        "Becoming.CodeAcquisition.novel": [],
+        "Becoming.CodeAcquisition.initial": [],
+        "Becoming.CodeAcquisition.novel_not_probe": [],
+        "Becoming.CodeAcquisition.novel_execution": [],
+        "Becoming.CodeAcquisition.installed_not_executed": [],
+        "Becoming.CodeAcquisition.missing_composite_no_code": [],
+        "Becoming.CodeAcquisition.reversed_composite_switches": [],
+        "Becoming.CodeAcquisition.wrong_order_fails_transfer": [],
+        "Becoming.CodeAcquisition.equal_primitives_unresolved": [],
+        "Becoming.CodeAcquisition.nonuniform": [],
+        "Becoming.CodeAcquisition.nonuniform_agrees_on_probes": [],
+        "Becoming.CodeAcquisition.nonuniform_fails_transfer": [],
+        "Becoming.CodeAcquisition.pick": [],
+        "Becoming.CodeAcquisition.choice_keeps_content": [],
+        "Becoming.CodeAcquisition.trainProcess": [],
+        "Becoming.CodeAcquisition.step_iff": [],
+        "Becoming.CodeAcquisition.step_records": [],
+        "Becoming.CodeAcquisition.step_installs": [],
+        "Becoming.CodeAcquisition.step_stock": [],
+        "Becoming.CodeAcquisition.step_rests_when_short": [],
+        "Becoming.CodeAcquisition.step_code_transfers": [],
+        "Becoming.CodeAcquisition.step_evidence": [],
+        "Becoming.CodeAcquisition.step_then_execute": [],
+        "Becoming.CodeAcquisition.novel_after_step": [],
+        "Becoming.CodeAcquisition.installed_without_execution": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.ReducedRuns",
+      "spine": true,
+      "layer": "core",
+      "theorems": 4,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.ReducedRuns.runs_decoder_iff_of_section"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ReducedRuns.trace_foldl"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ReducedRuns.course_reduced"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ReducedRuns.run_reduced"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.ReducedRuns.runs_decoder_iff_of_section": [],
+        "Becoming.ReducedRuns.trace_foldl": [],
+        "Becoming.ReducedRuns.course_reduced": [],
+        "Becoming.ReducedRuns.run_reduced": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.RouteFormation",
+      "spine": true,
+      "layer": "core",
+      "theorems": 70,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.append_nil"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.replicate_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.and_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.and_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.not_mem_of_all"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Becoming.RouteFormation.Route"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.dispatch"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.RouteFormation.Program"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.operate"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.routeFor"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.programFor"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.programFor_operates"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.generatedRoutes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.two_socket_routes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.mem_two_socket"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.fits"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.own_program_fits"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.fits_agrees"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.probe_identifies_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.accepted_transfers"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.extent"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.equal_primitives_repeat"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.reversal_unseen"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.extended_transfers"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.RouteFormation.Apparatus"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.fromLearner"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.place"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.assemble"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.inspect"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.discard"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.attempt"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.search"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.develop"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.respond"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.place_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.place_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.assemble_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.inspect_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.discard_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.attempt_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.search_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_stock"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.encounter"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.reconsider"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.sub_add_add"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.encounter_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.reconsider_stock"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.prepared"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.developed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.interpretation_no_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.wrong_route_replaced"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_keeps_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.formed_answers_novel"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.example_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.no_parts_blocks"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.partial_assembly"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.formed_short"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.switched_third_route"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.damaged"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.verdict_not_program"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.collapsed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.duplicated"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.old_records_admit_duplicate"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.repertoire_forms_failing_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.novel_record_separates"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.corrected"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.further"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.fresh_record_rebuilds"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.repaired_answers_further"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.repair_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.discrepancy_no_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.unobserved_keeps_wrong"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.RouteFormation.FormationMove"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.formationStep"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.formationProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.course_of_moves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.step_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.course_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.place_step_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.inspect_installed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.installed_of_test"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.inspection_transfers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.extended_inspection_transfers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.inspection_installs_own"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.training_no_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_replaces"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_executes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_removed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_no_parts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_partial"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_short"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_switched"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_collapsed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.develop_course_unobserved"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.RouteFormation.repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.repair_course_rebuilds"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.repair_course_further"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.repair_course_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.RouteFormation.repair_course_no_parts"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.RouteFormation.append_nil": [],
+        "Becoming.RouteFormation.replicate_append": [],
+        "Becoming.RouteFormation.and_left": [],
+        "Becoming.RouteFormation.and_right": [],
+        "Becoming.RouteFormation.not_mem_of_all": [],
+        "Becoming.RouteFormation.Route": [],
+        "Becoming.RouteFormation.dispatch": [],
+        "Becoming.RouteFormation.Program": [],
+        "Becoming.RouteFormation.operate": [],
+        "Becoming.RouteFormation.routeFor": [],
+        "Becoming.RouteFormation.programFor": [],
+        "Becoming.RouteFormation.programFor_operates": [],
+        "Becoming.RouteFormation.generatedRoutes": [],
+        "Becoming.RouteFormation.two_socket_routes": [],
+        "Becoming.RouteFormation.mem_two_socket": [],
+        "Becoming.RouteFormation.fits": [],
+        "Becoming.RouteFormation.own_program_fits": [],
+        "Becoming.RouteFormation.fits_agrees": [],
+        "Becoming.RouteFormation.probe_identifies_route": [],
+        "Becoming.RouteFormation.accepted_transfers": [],
+        "Becoming.RouteFormation.extent": [],
+        "Becoming.RouteFormation.equal_primitives_repeat": [],
+        "Becoming.RouteFormation.reversal_unseen": [],
+        "Becoming.RouteFormation.extended_transfers": [],
+        "Becoming.RouteFormation.Apparatus": [],
+        "Becoming.RouteFormation.fromLearner": [],
+        "Becoming.RouteFormation.place": [],
+        "Becoming.RouteFormation.assemble": [],
+        "Becoming.RouteFormation.inspect": [],
+        "Becoming.RouteFormation.discard": [],
+        "Becoming.RouteFormation.attempt": [],
+        "Becoming.RouteFormation.search": [],
+        "Becoming.RouteFormation.develop": [],
+        "Becoming.RouteFormation.respond": [],
+        "Becoming.RouteFormation.place_stock": [],
+        "Becoming.RouteFormation.place_parts": [],
+        "Becoming.RouteFormation.assemble_stock": [],
+        "Becoming.RouteFormation.inspect_stock": [],
+        "Becoming.RouteFormation.discard_stock": [],
+        "Becoming.RouteFormation.attempt_stock": [],
+        "Becoming.RouteFormation.search_stock": [],
+        "Becoming.RouteFormation.develop_stock": [],
+        "Becoming.RouteFormation.encounter": [],
+        "Becoming.RouteFormation.reconsider": [],
+        "Becoming.RouteFormation.sub_add_add": [],
+        "Becoming.RouteFormation.encounter_stock": [],
+        "Becoming.RouteFormation.reconsider_stock": [],
+        "Becoming.RouteFormation.prepared": [],
+        "Becoming.RouteFormation.developed": [],
+        "Becoming.RouteFormation.interpretation_no_route": [],
+        "Becoming.RouteFormation.wrong_route_replaced": [],
+        "Becoming.RouteFormation.develop_keeps_records": [],
+        "Becoming.RouteFormation.formed_answers_novel": [],
+        "Becoming.RouteFormation.example_account": [],
+        "Becoming.RouteFormation.no_parts_blocks": [],
+        "Becoming.RouteFormation.partial_assembly": [],
+        "Becoming.RouteFormation.formed_short": [],
+        "Becoming.RouteFormation.switched_third_route": [],
+        "Becoming.RouteFormation.damaged": [],
+        "Becoming.RouteFormation.verdict_not_program": [],
+        "Becoming.RouteFormation.collapsed": [],
+        "Becoming.RouteFormation.duplicated": [],
+        "Becoming.RouteFormation.old_records_admit_duplicate": [],
+        "Becoming.RouteFormation.repertoire_forms_failing_route": [],
+        "Becoming.RouteFormation.novel_record_separates": [],
+        "Becoming.RouteFormation.corrected": [],
+        "Becoming.RouteFormation.further": [],
+        "Becoming.RouteFormation.fresh_record_rebuilds": [],
+        "Becoming.RouteFormation.repaired_answers_further": [],
+        "Becoming.RouteFormation.repair_account": [],
+        "Becoming.RouteFormation.discrepancy_no_parts": [],
+        "Becoming.RouteFormation.unobserved_keeps_wrong": [],
+        "Becoming.RouteFormation.FormationMove": [],
+        "Becoming.RouteFormation.formationStep": [],
+        "Becoming.RouteFormation.formationProcess": [],
+        "Becoming.RouteFormation.course_of_moves": [],
+        "Becoming.RouteFormation.trace_iff": [],
+        "Becoming.RouteFormation.step_stock": [],
+        "Becoming.RouteFormation.course_stock": [],
+        "Becoming.RouteFormation.place_step_parts": [],
+        "Becoming.RouteFormation.inspect_installed": [],
+        "Becoming.RouteFormation.installed_of_test": [],
+        "Becoming.RouteFormation.inspection_transfers": [],
+        "Becoming.RouteFormation.extended_inspection_transfers": [],
+        "Becoming.RouteFormation.inspection_installs_own": [],
+        "Becoming.RouteFormation.training_no_route": [],
+        "Becoming.RouteFormation.develop_course_replaces": [],
+        "Becoming.RouteFormation.develop_course_records": [],
+        "Becoming.RouteFormation.develop_course_executes": [],
+        "Becoming.RouteFormation.develop_course_account": [],
+        "Becoming.RouteFormation.develop_course_removed": [],
+        "Becoming.RouteFormation.develop_course_no_parts": [],
+        "Becoming.RouteFormation.develop_course_partial": [],
+        "Becoming.RouteFormation.develop_course_short": [],
+        "Becoming.RouteFormation.develop_course_switched": [],
+        "Becoming.RouteFormation.develop_course_collapsed": [],
+        "Becoming.RouteFormation.develop_course_unobserved": [],
+        "Becoming.RouteFormation.repair": [],
+        "Becoming.RouteFormation.repair_course_rebuilds": [],
+        "Becoming.RouteFormation.repair_course_further": [],
+        "Becoming.RouteFormation.repair_course_account": [],
+        "Becoming.RouteFormation.repair_course_no_parts": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.ResponseLearning",
+      "spine": true,
+      "layer": "core",
+      "theorems": 64,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.add_sub_of_le'"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.exists_add_of_le"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.ResponseLearning.Teaching"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.blank"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.source"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.sendWith"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.send"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.lesson"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.basic"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.extended"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.learn"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.programRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.response_within_stock"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.joint"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.sender_kept"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.regroup"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.sendWith_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.send_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.lesson_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.send_delivers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.send_no_response"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.SameInterface"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.respond_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.sendWith_interface"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.send_interface"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.lesson_interface"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.learn_through_interface"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.basic_lesson_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.reconstructs_program"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.successor_keeps"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.cohort"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.every_generation_holds"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.routeFor_generated"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.every_generation_corresponds"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.selective"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.joint00"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.firstLearner"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.formed_teacher_teaches"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.execution_stock_interrupts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.teacher_changes_evidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.faithful_loses_distinction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.stock_keeps_content"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.lessons_change_program"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.misleadingPeer"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.revisedPeer"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.peer_repairs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.peer_keeps_error_example"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.short_receiver_not_repaired"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.distinction_lost_every_generation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.reconstruction_teaches_later"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.duplicate_reconstructed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.limitedCohort"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.limited_changes_then_stays"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.limited_fails_task"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.deliver"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.ResponseLearning.queryProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.lesson_foldl"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.lesson_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.course_records_follow_sender"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.basic_course_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.course_record_fits_departing"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.extended_course_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.extended_course_separates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.step_delivers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.step_no_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.course_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.course_without_composite"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.course_reversed_composite"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.learned_selective_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.learned_selective_loses_distinction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.learned_depends_on_course"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.learned_blocked_short"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.succession_step_keeps"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.orbit_cohort"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.orbit_limited"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.run_generation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.succession_keeps_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.succession_keeps_lost_distinction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.succession_stabilizes_change"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.formed_succession_teaches"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.formed_succession_second"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.execution_stock_succession_blocked"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.peer_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.ResponseLearning.peer_keeps_error"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.ResponseLearning.add_sub_of_le'": [],
+        "Becoming.ResponseLearning.exists_add_of_le": [],
+        "Becoming.ResponseLearning.Teaching": [],
+        "Becoming.ResponseLearning.blank": [],
+        "Becoming.ResponseLearning.source": [],
+        "Becoming.ResponseLearning.sendWith": [],
+        "Becoming.ResponseLearning.send": [],
+        "Becoming.ResponseLearning.lesson": [],
+        "Becoming.ResponseLearning.basic": [],
+        "Becoming.ResponseLearning.extended": [],
+        "Becoming.ResponseLearning.learn": [],
+        "Becoming.ResponseLearning.programRecords": [],
+        "Becoming.ResponseLearning.response_within_stock": [],
+        "Becoming.ResponseLearning.joint": [],
+        "Becoming.ResponseLearning.sender_kept": [],
+        "Becoming.ResponseLearning.regroup": [],
+        "Becoming.ResponseLearning.sendWith_stock": [],
+        "Becoming.ResponseLearning.send_stock": [],
+        "Becoming.ResponseLearning.lesson_stock": [],
+        "Becoming.ResponseLearning.send_delivers": [],
+        "Becoming.ResponseLearning.send_no_response": [],
+        "Becoming.ResponseLearning.SameInterface": [],
+        "Becoming.ResponseLearning.respond_congr": [],
+        "Becoming.ResponseLearning.sendWith_interface": [],
+        "Becoming.ResponseLearning.send_interface": [],
+        "Becoming.ResponseLearning.lesson_interface": [],
+        "Becoming.ResponseLearning.learn_through_interface": [],
+        "Becoming.ResponseLearning.basic_lesson_records": [],
+        "Becoming.ResponseLearning.reconstructs_program": [],
+        "Becoming.ResponseLearning.successor": [],
+        "Becoming.ResponseLearning.successor_keeps": [],
+        "Becoming.ResponseLearning.cohort": [],
+        "Becoming.ResponseLearning.every_generation_holds": [],
+        "Becoming.ResponseLearning.routeFor_generated": [],
+        "Becoming.ResponseLearning.every_generation_corresponds": [],
+        "Becoming.ResponseLearning.selective": [],
+        "Becoming.ResponseLearning.joint00": [],
+        "Becoming.ResponseLearning.firstLearner": [],
+        "Becoming.ResponseLearning.formed_teacher_teaches": [],
+        "Becoming.ResponseLearning.execution_stock_interrupts": [],
+        "Becoming.ResponseLearning.teacher_changes_evidence": [],
+        "Becoming.ResponseLearning.faithful_loses_distinction": [],
+        "Becoming.ResponseLearning.stock_keeps_content": [],
+        "Becoming.ResponseLearning.lessons_change_program": [],
+        "Becoming.ResponseLearning.misleadingPeer": [],
+        "Becoming.ResponseLearning.revisedPeer": [],
+        "Becoming.ResponseLearning.peer_repairs": [],
+        "Becoming.ResponseLearning.peer_keeps_error_example": [],
+        "Becoming.ResponseLearning.short_receiver_not_repaired": [],
+        "Becoming.ResponseLearning.distinction_lost_every_generation": [],
+        "Becoming.ResponseLearning.reconstruction_teaches_later": [],
+        "Becoming.ResponseLearning.duplicate_reconstructed": [],
+        "Becoming.ResponseLearning.limitedCohort": [],
+        "Becoming.ResponseLearning.limited_changes_then_stays": [],
+        "Becoming.ResponseLearning.limited_fails_task": [],
+        "Becoming.ResponseLearning.deliver": [],
+        "Becoming.ResponseLearning.queryProcess": [],
+        "Becoming.ResponseLearning.lesson_foldl": [],
+        "Becoming.ResponseLearning.lesson_trace": [],
+        "Becoming.ResponseLearning.trace_iff": [],
+        "Becoming.ResponseLearning.course_records_follow_sender": [],
+        "Becoming.ResponseLearning.basic_course_records": [],
+        "Becoming.ResponseLearning.course_record_fits_departing": [],
+        "Becoming.ResponseLearning.extended_course_records": [],
+        "Becoming.ResponseLearning.extended_course_separates": [],
+        "Becoming.ResponseLearning.step_delivers": [],
+        "Becoming.ResponseLearning.step_no_response": [],
+        "Becoming.ResponseLearning.course_stock": [],
+        "Becoming.ResponseLearning.course_without_composite": [],
+        "Becoming.ResponseLearning.course_reversed_composite": [],
+        "Becoming.ResponseLearning.learned_selective_stock": [],
+        "Becoming.ResponseLearning.learned_selective_loses_distinction": [],
+        "Becoming.ResponseLearning.learned_depends_on_course": [],
+        "Becoming.ResponseLearning.learned_blocked_short": [],
+        "Becoming.ResponseLearning.succession_step_keeps": [],
+        "Becoming.ResponseLearning.orbit_cohort": [],
+        "Becoming.ResponseLearning.orbit_limited": [],
+        "Becoming.ResponseLearning.run_generation": [],
+        "Becoming.ResponseLearning.succession_keeps_correspondence": [],
+        "Becoming.ResponseLearning.succession_keeps_lost_distinction": [],
+        "Becoming.ResponseLearning.succession_stabilizes_change": [],
+        "Becoming.ResponseLearning.formed_succession_teaches": [],
+        "Becoming.ResponseLearning.formed_succession_second": [],
+        "Becoming.ResponseLearning.execution_stock_succession_blocked": [],
+        "Becoming.ResponseLearning.peer_repair": [],
+        "Becoming.ResponseLearning.peer_keeps_error": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "Becoming.LearnedGrouping",
+      "spine": true,
+      "layer": "core",
+      "theorems": 41,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "Becoming.LearnedGrouping.Sound"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.LearnedGrouping.State"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.word"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.wordFirst"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.wordRest"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.spelled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.two_word_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.idealBond"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.ideal_two_word"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.decodePair"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.decodeChunk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.decodes_words"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.assembleMessage"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.parse"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.receive"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.expose"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.act"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.broadenAfterFailure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.receive_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.expose_stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.receive_short"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broaden_stock"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.context"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.additional"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.utterance"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.intended"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.ready"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.experienced"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.narrow"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.broadened"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.context_forms_bond"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.context_groups_words"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.context_assembles"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.unexposed_unparsed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.grouping_reaches_program"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.response_keeps_log"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.history_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.parsed_short"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.gap_breaks_edge"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.reordered"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.counts_agree"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.order_changes_grouping"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broaden_reaches_context"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.parsed_keeps"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broaden_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broaden_one_form"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LearnedGrouping.learnerFavored"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.repetition_joins_words"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Becoming.LearnedGrouping.reception"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.step_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.trace_end"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.expose_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.along"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.total_kept"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.still_without_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broadening_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.grouping_assembles"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.reception_changes_parse"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.response_keeps_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.support_used"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.parse_without_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.order_not_frequency"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Becoming.LearnedGrouping.narrowCourse"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broadening_after_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.parsed_not_broadened"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broadening_keeps_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LearnedGrouping.broadening_parses_one_form"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.LearnedGrouping.Sound": [],
+        "Becoming.LearnedGrouping.State": [],
+        "Becoming.LearnedGrouping.word": [],
+        "Becoming.LearnedGrouping.wordFirst": [],
+        "Becoming.LearnedGrouping.wordRest": [],
+        "Becoming.LearnedGrouping.spelled": [],
+        "Becoming.LearnedGrouping.two_word_iff": [],
+        "Becoming.LearnedGrouping.idealBond": [],
+        "Becoming.LearnedGrouping.ideal_two_word": [],
+        "Becoming.LearnedGrouping.decodePair": [],
+        "Becoming.LearnedGrouping.decodeChunk": [],
+        "Becoming.LearnedGrouping.decodes_words": [],
+        "Becoming.LearnedGrouping.assembleMessage": [],
+        "Becoming.LearnedGrouping.parse": [],
+        "Becoming.LearnedGrouping.receive": [],
+        "Becoming.LearnedGrouping.expose": [],
+        "Becoming.LearnedGrouping.act": [],
+        "Becoming.LearnedGrouping.broadenAfterFailure": [],
+        "Becoming.LearnedGrouping.receive_stock": [],
+        "Becoming.LearnedGrouping.expose_stock": [],
+        "Becoming.LearnedGrouping.receive_short": [],
+        "Becoming.LearnedGrouping.broaden_stock": [],
+        "Becoming.LearnedGrouping.context": [],
+        "Becoming.LearnedGrouping.additional": [],
+        "Becoming.LearnedGrouping.utterance": [],
+        "Becoming.LearnedGrouping.intended": [],
+        "Becoming.LearnedGrouping.ready": [],
+        "Becoming.LearnedGrouping.experienced": [],
+        "Becoming.LearnedGrouping.narrow": [],
+        "Becoming.LearnedGrouping.broadened": [],
+        "Becoming.LearnedGrouping.context_forms_bond": [],
+        "Becoming.LearnedGrouping.context_groups_words": [],
+        "Becoming.LearnedGrouping.context_assembles": [],
+        "Becoming.LearnedGrouping.unexposed_unparsed": [],
+        "Becoming.LearnedGrouping.grouping_reaches_program": [],
+        "Becoming.LearnedGrouping.response_keeps_log": [],
+        "Becoming.LearnedGrouping.history_account": [],
+        "Becoming.LearnedGrouping.parsed_short": [],
+        "Becoming.LearnedGrouping.gap_breaks_edge": [],
+        "Becoming.LearnedGrouping.reordered": [],
+        "Becoming.LearnedGrouping.counts_agree": [],
+        "Becoming.LearnedGrouping.order_changes_grouping": [],
+        "Becoming.LearnedGrouping.broaden_reaches_context": [],
+        "Becoming.LearnedGrouping.parsed_keeps": [],
+        "Becoming.LearnedGrouping.broaden_prefix": [],
+        "Becoming.LearnedGrouping.broaden_one_form": [],
+        "Becoming.LearnedGrouping.learnerFavored": [],
+        "Becoming.LearnedGrouping.repetition_joins_words": [],
+        "Becoming.LearnedGrouping.reception": [],
+        "Becoming.LearnedGrouping.step_iff": [],
+        "Becoming.LearnedGrouping.trace_end": [],
+        "Becoming.LearnedGrouping.expose_trace": [],
+        "Becoming.LearnedGrouping.along": [],
+        "Becoming.LearnedGrouping.total_kept": [],
+        "Becoming.LearnedGrouping.still_without_support": [],
+        "Becoming.LearnedGrouping.broadening_trace": [],
+        "Becoming.LearnedGrouping.grouping_assembles": [],
+        "Becoming.LearnedGrouping.reception_changes_parse": [],
+        "Becoming.LearnedGrouping.response_keeps_history": [],
+        "Becoming.LearnedGrouping.support_used": [],
+        "Becoming.LearnedGrouping.parse_without_support": [],
+        "Becoming.LearnedGrouping.order_not_frequency": [],
+        "Becoming.LearnedGrouping.narrowCourse": [],
+        "Becoming.LearnedGrouping.broadening_after_failure": [],
+        "Becoming.LearnedGrouping.parsed_not_broadened": [],
+        "Becoming.LearnedGrouping.broadening_keeps_prefix": [],
+        "Becoming.LearnedGrouping.broadening_parses_one_form": []
+      },
+      "kernel_checked": true
+    },
+    {
       "module": "Becoming.Unrolling",
       "spine": true,
       "layer": "core",
@@ -69247,37 +71569,6 @@
         "Becoming.RecurrenceRuns.keptRun": [],
         "Becoming.RecurrenceRuns.keptRun_present": [],
         "Becoming.RecurrenceRuns.return_keeps_history": []
-      },
-      "kernel_checked": true
-    },
-    {
-      "module": "Becoming.ReducedRuns",
-      "spine": true,
-      "layer": "core",
-      "theorems": 4,
-      "declarations": [
-        {
-          "kind": "theorem",
-          "name": "Becoming.ReducedRuns.runs_decoder_iff_of_section"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.ReducedRuns.trace_foldl"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.ReducedRuns.course_reduced"
-        },
-        {
-          "kind": "theorem",
-          "name": "Becoming.ReducedRuns.run_reduced"
-        }
-      ],
-      "axiom_dependencies": {
-        "Becoming.ReducedRuns.runs_decoder_iff_of_section": [],
-        "Becoming.ReducedRuns.trace_foldl": [],
-        "Becoming.ReducedRuns.course_reduced": [],
-        "Becoming.ReducedRuns.run_reduced": []
       },
       "kernel_checked": true
     },
@@ -89266,23 +91557,37 @@
     }
   ],
   "artifact_sha256": {
-    "Becoming.ActivationCapacity.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.ActivationCapacity.lean": "639cd0ec42302ecfcbee194213099f790d0640f05a46781b5e5f25f7b7c76569",
     "Becoming.Bridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ClassifiedFramesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.CodeAcquisition.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.CodeAcquisition.lean": "57eaf0c2e6485e101c57106d645549e6d7cd602ab6683eed9b16d2ea1145f501",
+    "Becoming.CodeAcquisition.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.CouplingHistoryFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.CourseExtensionFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.CoursesBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Derivation.lean": "5289aee24c348830c51d9e4973b485f7bbda82c9beb0114805650daeb41deb40",
     "Becoming.DrawnAmountProcessesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ExtensionFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.GranularityBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.InterfaceTraces.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.InterfaceTracesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.LearnedGrouping.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.LearnedGrouping.lean": "a28f82e7ac01b822d23293e3f4a23783e68c38da27bde7f5294ccc2558b63632",
+    "Becoming.LearnedGrouping.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.MoveOutcomeProcessesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.PartialReadout.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.PartialReadout.lean": "c3dc0de256358ae8ea257d067816a305a8b4792d1a6343d314daa3a4564e3305",
+    "Becoming.PartialReadout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ReachableFrames.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.ReachableFramesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RenewalBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.ResponseLearning.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.ResponseLearning.lean": "fb57ed096d1805385c92ad807125e93799e6baafe3a54a02b572466b20c2fa8f",
+    "Becoming.ResponseLearning.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.RouteFormation.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.RouteFormation.lean": "63d52422585d568061674ef17d43db5ecf94417f76f95492efba790d67ffc88b",
+    "Becoming.RouteFormation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RuleNarrowingProcesses.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RuleNarrowingProcessesInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.RuleRevisionTraces.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -89290,10 +91595,8 @@
     "Becoming.SeedReachProcesses.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.SupportGatedWebs.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.SupportGatedWebsInherited.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.lean": "a80f3ad54dde415708711aff44f191c3114e15b2694c2400664e86505c66b48a",
+    "Becoming.lean": "ddc008a3f7c74f5abf0fa2a158146708bbae255da847a6ac636d2ced827169f9",
     "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "BecomingActivationCapacitySignatures.lean": "a0e7d8883926d48624f87cb5c2ab0412ba5a756faa418755dd5c1aa8eb299e66",
-    "BecomingActivationCapacitySignatures.log": "6e1eca3b58af6a4de24ccfa19a6ecddaf9d163e293ccd10dfc28963497dd6e92",
     "BecomingAxiomAudit.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingAxiomAudit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "BecomingBridgeAxiomAudit.lean": "c49e91c23f34d9a01cfccfec885bf9c5ff99a03bf45da4a2ee2f55b6cac9a37b",
@@ -89304,6 +91607,10 @@
     "BecomingClassifiedFramesInheritedAxiomAudit.log": "f33bd8628fa3ec848d6f140792b620be1e84a06f76ef7cbeb0bbb8b21b929059",
     "BecomingClassifiedFramesInheritedSignatures.lean": "bc871fdaa612febe7261358b4b92824f717226ddcb88cd91d9f1c442d5ee804b",
     "BecomingClassifiedFramesInheritedSignatures.log": "27541526b2f933bfba5e03d4a5a9954a5633ff582a2cc65918d7115852cf53bb",
+    "BecomingCodeAcquisitionAxiomAudit.lean": "b45fedfe440b3dc50b2f7765dd9fa4f667f53bc5fdb81b3517d57b9f32b036be",
+    "BecomingCodeAcquisitionAxiomAudit.log": "bd573207ef28e0826f987a4f9374e96b3853534205504bda0e861d960bd40d9a",
+    "BecomingCodeAcquisitionSignatures.lean": "80aaf0ce35cbcbbb2dff63b5a54cadbb564ba09c80b76ada405939c445703867",
+    "BecomingCodeAcquisitionSignatures.log": "3c4dfb61c0335e8aac43abd6ad882058441fad4b54c9e9d7092400dcb2859f38",
     "BecomingCouplingHistoryFramesAxiomAudit.lean": "302b7103f5bf98d1043fca313230e5e108e1814c34ed40628c261b366edd84f9",
     "BecomingCouplingHistoryFramesAxiomAudit.log": "03aac366dc0e714b5172bdf4e8c7cd03855fff13c11f482029d5ddd2b8566cb9",
     "BecomingCouplingHistoryFramesSignatures.lean": "3205fb89fb91196eb9056ce104b5eb0e71a7e37c97d1042b92328ad95826b528",
@@ -89336,10 +91643,18 @@
     "BecomingInterfaceTracesInheritedSignatures.log": "9d1c41d6803d3f8e83f647541acc582aefc9b431588ae7adac77664355ddfd75",
     "BecomingInterfaceTracesSignatures.lean": "409ab229f1499391bfa319824a0f02bc1664b5f16cddb1ab40ffe522a75237ef",
     "BecomingInterfaceTracesSignatures.log": "cd108de51415708c36395a9b0548e6f4d517e0715c2ae60b204e40226e309a82",
+    "BecomingLearnedGroupingAxiomAudit.lean": "243b3fdaa3a1b68f7d7c9a92e2cdcc2f59b845489cd63940eef3d89337e80cb3",
+    "BecomingLearnedGroupingAxiomAudit.log": "a086ed35e270bf3bedd299b50c15e87f097e1aee0ac168a64a66798b958db5e7",
+    "BecomingLearnedGroupingSignatures.lean": "7b089dbd5ad0c5c14e701710c37d629575c32f9d5199cb0b1adabb683677db5b",
+    "BecomingLearnedGroupingSignatures.log": "42bb6d1dc1f9d78b0ac71a92cf098fdfc5f80ccec2a0216303ad92af4fc44514",
     "BecomingMoveOutcomeProcessesInheritedAxiomAudit.lean": "1fe9d88a0107d255199b76d667ff339e976c185b597aa48c18db46d7a48979b1",
     "BecomingMoveOutcomeProcessesInheritedAxiomAudit.log": "9a124eff6760fd8c5b3ddc499fb40a1ed102bce73fa54445e029043f7641aa1c",
     "BecomingMoveOutcomeProcessesInheritedSignatures.lean": "a1ccb618c59fabe1b6798465efbadb1387ad76bbf345816f417aee4bbd2edb4e",
     "BecomingMoveOutcomeProcessesInheritedSignatures.log": "a77345fdbc102d6ea72be4cc6b08d094484bee5eac3ce367a7bcd902e0193f90",
+    "BecomingPartialReadoutAxiomAudit.lean": "44adf7e2b4229fa601eca78122f76019fedea3778194626c8cd3b4914979708f",
+    "BecomingPartialReadoutAxiomAudit.log": "74f075173cd0755435ebbcfb6ee2c05577fe1ce669848144a7e2fc1680ab8060",
+    "BecomingPartialReadoutSignatures.lean": "5fd1a8d8f9e0a8fb15939f334379c200e2f9196496a5746f6d0dae443d88681b",
+    "BecomingPartialReadoutSignatures.log": "fc51ae7f970a75e07711ac74711f0056c0fad266181359df2d03bedc29f56532",
     "BecomingReachableFramesAxiomAudit.lean": "410d5d9f5d83b8ec892b35166e5c3f5a44877d22e7cb5140fda7b5bafbe5e5a7",
     "BecomingReachableFramesAxiomAudit.log": "91c67214b3328be3278238de6ce542a139b3dbf0c28d8694d6a929ec42842dde",
     "BecomingReachableFramesInheritedAxiomAudit.lean": "b19a5025820dba3a7d9c4b317e6fc9c3a9c997b9110dc848859b9c33d0ad51fd",
@@ -89352,6 +91667,14 @@
     "BecomingRenewalBridgeAxiomAudit.log": "7bb9a1ad1f85bb68cae4fbd492adc0e2a3b79c97babe2b5382a9cfb91667bc87",
     "BecomingRenewalBridgeSignatures.lean": "e8cd74ae91338dcc4b107a8eeca73ce2bd4f305b1ed1f1e396581f8c53efc67c",
     "BecomingRenewalBridgeSignatures.log": "27e291a7558d4c9cdc9a80b2c114bfaeb021febf46bae48e27b9eeb0ce84bdd9",
+    "BecomingResponseLearningAxiomAudit.lean": "3510ec293e9f8291c4093892bd26fb75bd99394fdcc3c499a1ebc83b89b8a597",
+    "BecomingResponseLearningAxiomAudit.log": "eb4874fe62d2219a5602388a1afa51901e79a450fe562952f5ce8833e82da311",
+    "BecomingResponseLearningSignatures.lean": "99aa897c8e0aa265a67cb09e665876a7a547b41f30f19618387716ddef789a5e",
+    "BecomingResponseLearningSignatures.log": "6c490ff5f8b6c38e1c69d6fb245eb7dd567ebb8c73f528448780d559cb9843c0",
+    "BecomingRouteFormationAxiomAudit.lean": "438dcc3ed68c3cbb3c39e61d7cc347c4d6f0dde7b24cafea0262b60184f63e34",
+    "BecomingRouteFormationAxiomAudit.log": "52505ec1add8f432da759b625bf01c92de930c6acf1b801fc199cff592b13ea8",
+    "BecomingRouteFormationSignatures.lean": "d41cf23452655a6d4dc2bb6b0a948e2bbe6785a0947d9ab6576eb6e93e47fe31",
+    "BecomingRouteFormationSignatures.log": "d831331cbb76e8e1da04c2ed351b19153cf151e364a8b7258010196fe8476c02",
     "BecomingRuleNarrowingProcessesAxiomAudit.lean": "58c54a4a723038c0e55d03a515a76f58c49c4f6fa3be903bcf59fc7efd561f2c",
     "BecomingRuleNarrowingProcessesAxiomAudit.log": "8522977c9de823e032b274af9ad4064d2a45ccb6ae64d55ae64e7bb145e03942",
     "BecomingRuleNarrowingProcessesInheritedAxiomAudit.lean": "6e41cbf55959ba4d2b9484fc9d098428af68f8e8ad15ed0c1d9d65354165629c",
@@ -89386,9 +91709,9 @@
     "BridgeEnvironmentAudit.log": "d15b53ed338e0af4723368bce5cbe0a20fd4f4735210793d1590dd8b931b6be4",
     "Controls.lean": "889320e9c37a781d4e846a48dfebbce63579a4050230e4f2e75d25883c808e30",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "EnvironmentAudit.lean": "c8624869025a03c0eb98d962267a3ae728a066e73fb3e54e319abc3229c14d06",
-    "EnvironmentAudit.log": "fccbe61cfbf638afa8c53a5612d6863720168312d88370eb261593c521a5ee9d",
-    "check_becoming.py": "82cf1f1b0de5d1fbb64c389e0ec8a27b226f4165ae462c331a7c12b0e2239b44",
+    "EnvironmentAudit.lean": "a466d047b3e2d2cef668a3c758e82922dac7c3e7d0bfb57d25c20da8288d1238",
+    "EnvironmentAudit.log": "efa2810808275b724d81e6b938fa9eb3289aebf0521763e5af2d256c8359b0af",
+    "check_becoming.py": "cc997873daca1923dd39a7bddc04ff99145942fdadfc0751f446528377103671",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }

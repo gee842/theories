@@ -44,6 +44,13 @@ for m in receipt.get('modules', []):
             home.setdefault(d['name'], m['module'])
 
 TABLES = {**port_q.FAMILY, **port_q.JOINS}
+# Records that cite the core receipt without a binding to it, and why.
+NO_BINDING = {
+    'derivation-soundness': ('its alias `InquiryRoot.WholeDischarge.derivation_sound_constructively` names a declaration of '
+                             '`WholeTheoryDischarge`, which is not in the run; a binding would make the registry require '
+                             'the core receipt, which lists the `InquiryRoot` namespace, to list it too. As before, the core '
+                             'receipt is a reference, not a binding'),
+}
 
 
 def table(module):
@@ -108,13 +115,14 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
         law['declarations'] = out
     if from_canonical:
         d['canonical_source'] = max(set(from_canonical), key=from_canonical.count)
-    if d.get('proof_bindings') is not None:
+    rid = f.rsplit('/', 1)[-1][:-5]
+    if d.get('proof_bindings') is not None and rid not in NO_BINDING:
         bound = {(b['source'], b['receipt']) for b in d['proof_bindings']}
         for src in added:
             if (src, RECEIPT) not in bound:
                 d['proof_bindings'].append(binding(src))
-        if RECEIPT not in by_path:
-            refs.append({'path': RECEIPT, 'role': 'receipt', 'sha256': h(RECEIPT), 'declarations': []})
+    if RECEIPT not in by_path:
+        refs.append({'path': RECEIPT, 'role': 'receipt', 'sha256': h(RECEIPT), 'declarations': []})
     for src in added:
         by_path[src]['sha256'] = h(src)
     if json.dumps(d, ensure_ascii=False) == before:
@@ -123,7 +131,9 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     note = ('18 October 2026, F3Q, the port of the inquiry and composition family into the core (Ren: '
             '"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction '
             'of unification"): the core statements of the cited declarations are added beside them ('
-            + ', '.join(mods) + '; verdicts in port-q.md), bound to core receipt ' + RID
+            + ', '.join(mods) + '; verdicts in port-q.md), '
+            + (f'with core receipt {RID} as a reference and no binding ({NO_BINDING[rid]})' if rid in NO_BINDING
+               else 'bound to core receipt ' + RID)
             + (', and the canonical source is the core module' if from_canonical else '')
             + '. Every core statement has an empty axiom report; where the periphery proof was classical, the core '
               'proof is constructive or names its hypothesis (port-q.md). The periphery references stay until the '
