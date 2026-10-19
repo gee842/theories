@@ -79,7 +79,7 @@
     {
       "path": "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
       "role": "statement",
-      "sha256": "db4e8efd15ea20d9c49030db97d9886613dfc9a32285062b0eb8d74f2698f2ba",
+      "sha256": "f506023b44641cdfa741fad155fed697454913e19900f5dcdd22aa4149a71b14",
       "declarations": []
     },
     {
@@ -314,6 +314,10 @@
     {
       "en": "19 October 2026, N7 (the reading pass on \"correction\"): Title: \"corrective access\" read as access for a stop, which is what the counterexample and next_delta concern (ordinary shutdown blocked during recovery). \"Correct\" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the field now states the structure meant. The claim is unchanged.",
       "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：标题：“纠正入口”读作停止入口，反例与 next_delta 所涉即此（恢复期间普通停机被阻）。“纠正”预设了关系之外的标准，即一条对的进程和一个要去除的错误（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）；此字段现陈述所指的结构。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R19 (the review of 19 October, fixed): ALIGNMENT-THROUGH-CHANGE.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R19（10月19日审查的修正）：ALIGNMENT-THROUGH-CHANGE.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
     }
   ]
 }

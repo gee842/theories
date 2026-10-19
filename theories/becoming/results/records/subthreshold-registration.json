@@ -298,7 +298,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "cbfca85bdfe0ed104b80cd16d08776da57cdfb8e90515a6deaec5fc0186dc589",
+      "sha256": "53458fc5e35fe790760c3780de83e5cf9a63d5c47b05489ed32c8d5dad6bb2d1",
       "declarations": []
     },
     {
@@ -691,6 +691,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R19 (the review of 19 October, fixed): THE-THEORY-OF-BECOMING.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R19（10月19日审查的修正）：THE-THEORY-OF-BECOMING.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
     }
   ]
 }
