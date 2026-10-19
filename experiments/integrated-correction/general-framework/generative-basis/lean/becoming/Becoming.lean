@@ -81,6 +81,7 @@ import Becoming.Significance
 import Becoming.Interdependence
 import Becoming.Feeding
 import Becoming.Feedback
+import Becoming.Cuts
 import Becoming.EdgeClosure
 import Becoming.SeedReach
 import Becoming.ScopedReach
@@ -964,6 +965,15 @@ readings of the unfolding (`Becoming.Labelled`).
   the levels with and without it as the continuation condition does; the comparison of any two flows is decided
   within what their difference reaches. The continuation condition enters only as a hypothesis of three
   witnesses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
+* `Becoming.Cuts` (L4): which links a closure needs, with no premise. Removing links changes
+  no closure exactly where every removed link is bypassed, its ends staying within each other's
+  closure under what remains; joining one link adds exactly what passes through it. Attaching a
+  formation that takes part in no link changes no closure among the others, so every link of a
+  relation grown by attachment separates its ends when cut, and after one more link is joined,
+  cutting a grown link changes no closure exactly where the joined link crosses it. On the base,
+  every system is what it is without a condition exactly where those taking part in it lie in one
+  system through the others; a condition two formations take part in joins their systems as one
+  link would, and a formation taking part only in one condition is alone without it.
 * `Becoming.EdgeClosure` (L4): the seed–edge closure, what the process whose steps are the
   edges reaches from a seed, and the core's closure under a relation as this closure from one
   seed.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check the peripheral instances of the Becoming core's laws in material preparation and grown fragmentation.
 
-`PreparationCorrespondence` imports `Becoming.Copying`, `Becoming.Feedback`, `Becoming.Readout` and
+`PreparationCorrespondence` imports `Becoming.Copying`, `Becoming.Cuts`, `Becoming.Feedback`, `Becoming.Readout` and
 `GrownFragmentation` (with `MaterialMaturation`, which use Lean's standard library and its tactics), so
 it is compiled with Lean 4.30.0-rc2, as the other instance modules are, with the installed Mathlib on
 the path (`SYSTEMS_MATHLIB_PROJECT`, default `~/repos/生生不息`), though it imports none. This checker
@@ -39,13 +39,14 @@ ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 # Declarations that add no axiom and must have empty reports; the others mention the
 # periphery's routing, graphs or rational returns, whose library lemmas use the standard axioms.
 EMPTY = {"Becoming.PreparationCorrespondence." + n for n in
-         ["unit", "use_unit", "adjacent", "connected_of_adjacent", "connected_iff_within"]}
+         ["unit", "use_unit", "adjacent", "connected_of_adjacent", "connected_iff_within",
+          "AttachedBelow", "initial_attached"]}
 AUDIT = re.compile(r"'([^']+)' (?:does not depend on any axioms|depends on axioms: \[([^\]]*)\])")
 # Seconds allowed for each Lean run; a heavily loaded machine may need more.
 TIMEOUT = int(os.environ.get("LEAN_TIMEOUT", "900"))
 
 SCOPE = (
-    "On the Becoming core's laws of copying, closure and judging through a reduction: "
+    "On the Becoming core's laws of copying, closure, cuts and judging through a reduction: "
     "MaterialMaturation's route is copying a recipe from a pool with one unit of support drawn per "
     "attachment (route_some_iff), so by Copying.empties_iff preparation completes with an empty "
     "residual pool exactly when the pool is a permutation of the recipe and the recipe is no longer "
@@ -53,7 +54,13 @@ SCOPE = (
     "connected by the bonds is lying within the closure under them (connected_iff_within); a "
     "component holding its root and closed on every remaining bond is that closure by "
     "closure_iff_certified (component_is_closure, certificate_exact_split_by_core), and a certified "
-    "cut leaves its two ends apart by not_within_of_closed (cut_separates). The two grown graphs "
+    "cut leaves its two ends apart by not_within_of_closed (cut_separates). The bonds read both "
+    "ways are Cuts.Links (adjacent_iff_links); division keeps them grown by attachment whatever the "
+    "word (develop_attached), so by Cuts.attached_link_separates every bond of every body grown by "
+    "division separates its ends when cut (bond_cut_separates, every_grown_bond_separates), and "
+    "after one aggregation, by Cuts.joined_cut_unchanged_iff, cutting a grown bond changes no "
+    "connection exactly where the aggregated bond crosses it (aggregate_cut_unchanged_iff), the "
+    "reinforced chain's bypass being a case (reinforced_cut_unchanged). The two grown graphs "
     "share a parent summary and differ in mean cut return, so by Readout.no_judge_of_merged no "
     "function of the summary gives both (no_parent_summary_predictor_by_core). The production law, "
     "sampling, recipe, stocks and growth histories keep the earlier modules' scope; correspondence to "

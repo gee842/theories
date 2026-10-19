@@ -1,0 +1,432 @@
+{
+  "files_checked": 1245,
+  "links_checked": 67080,
+  "broken": 0,
+  "broken_by_kind": {},
+  "broken_by_role": {},
+  "by_directory": {},
+  "list": [],
+  "not_in_repository": [
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-SOURCE-READING.md",
+      "line": 11,
+      "target": "../../../../sources/12-claude-ai-chats/2026-05-02_生生不息的出处_1bd809e5.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/FOUNDATION.zh.md",
+      "line": 118,
+      "target": "../2026-10-02-friend-conversation/transcript.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/FOUNDATION.zh.md",
+      "line": 118,
+      "target": "../2026-10-02-friend-conversation/README.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/README.md",
+      "line": 20,
+      "target": "../../experiments/guardian-anarchy/README.md",
+      "kind": "in-submodule",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/README.md",
+      "line": 21,
+      "target": "../../experiments/guardian-anarchy/asset-prompts.json",
+      "kind": "in-submodule",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/README.md",
+      "line": 29,
+      "target": "../../experiments/guardian-anarchy/dist/index.html",
+      "kind": "in-submodule",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/edition-02/SOURCE-NOTES.zh.md",
+      "line": 21,
+      "target": "../../2026-10-02-friend-conversation/transcript.md#L23",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/edition-02/SOURCE-NOTES.zh.md",
+      "line": 23,
+      "target": "../../../sources/12-claude-ai-chats/2024-06-11_Wamo_Community_Consensus_for_Chiang_Mai_2024_6be1114c.md#L8",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/edition-02/SOURCE-NOTES.zh.md",
+      "line": 24,
+      "target": "../../../sources/12-claude-ai-chats/2026-03-18_American_individualism_as_ideological_extremism_8cbca0df.md#L42",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/edition-02/SOURCE-NOTES.zh.md",
+      "line": 26,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md#L486",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/SYNTHESIS.zh.md",
+      "line": 107,
+      "target": "../../2026-10-02-friend-conversation/transcript.md#L409",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/SYNTHESIS.zh.md",
+      "line": 108,
+      "target": "../../../sources/12-claude-ai-chats/2026-03-18_American_individualism_as_ideological_extremism_8cbca0df.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/SYNTHESIS.zh.md",
+      "line": 108,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md#L532",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/SYNTHESIS.zh.md",
+      "line": 109,
+      "target": "../../../sources/12-claude-ai-chats/2024-06-11_Wamo_Community_Consensus_for_Chiang_Mai_2024_6be1114c.md#L8",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 13,
+      "target": "../../../sources/12-claude-ai-chats/2026-03-18_American_individualism_as_ideological_extremism_8cbca0df.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 15,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 35,
+      "target": "../../../sources/12-claude-ai-chats/2024-06-11_Wamo_Community_Consensus_for_Chiang_Mai_2024_6be1114c.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 35,
+      "target": "../../../sources/12-claude-ai-chats/2024-05-17_Invitation_to_Ethereum_Foundation_Recap_and_Collaboration_fo_10981931.md#L36",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 37,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 47,
+      "target": "../../../sources/12-claude-ai-chats/2024-11-03_The_Dangers_of_Unchecked_Power_Optimization_3d74c0c1.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 59,
+      "target": "../../../sources/12-claude-ai-chats/2026-03-26_Status_drives_and_cognitive_mechanisms_f5b356e8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory-inspirations.md",
+      "line": 93,
+      "target": "../../2026-10-02-friend-conversation/transcript.md#L333",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory.md",
+      "line": 19,
+      "target": "../../2026-10-02-friend-conversation/transcript.md#L409",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory.md",
+      "line": 22,
+      "target": "../../../experiments/guardian-anarchy/dist/app.js#L14",
+      "kind": "in-submodule",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory.md",
+      "line": 22,
+      "target": "../../../experiments/guardian-anarchy/dist/index.html#L129",
+      "kind": "in-submodule",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-soi-si-lom-5-2/README.md",
+      "line": 7,
+      "target": "../../sources/18-friend-conversations/2026-10-04-soi-si-lom-5-2/original.m4a",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-soi-si-lom-5-2/README.md",
+      "line": 8,
+      "target": "../../sources/18-friend-conversations/2026-10-04-soi-si-lom-5-2/README.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "drafts/2026-10-04-soi-si-lom-5-2/README.md",
+      "line": 9,
+      "target": "../../sources/18-friend-conversations/2026-10-04-soi-si-lom-5-2/README.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "experiments/README.md",
+      "line": 12,
+      "target": "guardian-anarchy/README.md",
+      "kind": "in-submodule",
+      "role": "live"
+    },
+    {
+      "file": "output/pdf/generative-chiang-mai-2045.md",
+      "line": 42,
+      "target": "../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/architecture-for-a-living-earth/chiang-mai-2025/CONNECTIONS-AND-EVIDENCE.md",
+      "line": 17,
+      "target": "../../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/architecture-for-a-living-earth/chiang-mai-2025/CONNECTIONS-AND-EVIDENCE.md",
+      "line": 19,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-11_大同的技术可实现性_893f7a0e.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/architecture-for-a-living-earth/chiang-mai-2025/CONNECTIONS-AND-EVIDENCE.md",
+      "line": 20,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-30_Generativity_as_environmental_stewardship_439667f8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/architecture-for-a-living-earth/chiang-mai-2025/CONNECTIONS-AND-EVIDENCE.md",
+      "line": 21,
+      "target": "../../../sources/12-claude-ai-chats/2024-07-29_Balancing_Ideological_Diversity_in_Society_1b72f4a8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/architecture-for-a-living-earth/chiang-mai-2025/README.md",
+      "line": 71,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-30_Generativity_as_environmental_stewardship_439667f8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/architecture-for-a-living-earth/chiang-mai-2025/README.md",
+      "line": 83,
+      "target": "../../../sources/12-claude-ai-chats/2024-07-29_Balancing_Ideological_Diversity_in_Society_1b72f4a8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/architecture-for-a-living-earth/chiang-mai-2025/README.md",
+      "line": 91,
+      "target": "../../../sources/12-claude-ai-chats/2026-04-11_大同的技术可实现性_893f7a0e.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/the-fork-and-cooperative-infrastructure/README.md",
+      "line": 17,
+      "target": "../../sources/12-claude-ai-chats/2026-02-17_机器人替代与资本主义循环的危机_4c948b50.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/the-fork-and-cooperative-infrastructure/README.md",
+      "line": 21,
+      "target": "../../sources/12-claude-ai-chats/2026-02-09_Fully_automated_production_and_its_future_implications_38a64dc7.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/the-fork-and-cooperative-infrastructure/README.md",
+      "line": 23,
+      "target": "../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "theories/the-fork-and-cooperative-infrastructure/README.md",
+      "line": 78,
+      "target": "../../sources/12-claude-ai-chats/2026-02-17_机器人替代与资本主义循环的危机_4c948b50.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/foundations/generative-worldmaking.md",
+      "line": 33,
+      "target": "../../sources/12-claude-ai-chats/2026-04-11_大同的技术可实现性_893f7a0e.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/foundations/generative-worldmaking.md",
+      "line": 53,
+      "target": "../../sources/12-claude-ai-chats/2026-04-30_Generativity_as_environmental_stewardship_439667f8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/foundations/generative-worldmaking.md",
+      "line": 65,
+      "target": "../../sources/12-claude-ai-chats/2026-03-14_Cultural_differences_in_future_thinking_self_versus_family_a43e08a1.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/foundations/generative-worldmaking.md",
+      "line": 81,
+      "target": "../../sources/12-claude-ai-chats/2026-04-16_Recent_conversation_insights_96d77b9f.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/foundations/possibility-map.md",
+      "line": 329,
+      "target": "../../sources/12-claude-ai-chats/2026-04-30_Generativity_as_environmental_stewardship_439667f8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-abundance-source-reading.md",
+      "line": 23,
+      "target": "../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-abundance-source-reading.md",
+      "line": 37,
+      "target": "../../sources/12-claude-ai-chats/2026-02-07_Human_future_in_an_AI-dominated_world_f4493370.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-abundance-source-reading.md",
+      "line": 51,
+      "target": "../../sources/12-claude-ai-chats/2026-02-09_Fully_automated_production_and_its_future_implications_38a64dc7.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-abundance-source-reading.md",
+      "line": 69,
+      "target": "../../sources/12-claude-ai-chats/2026-02-17_机器人替代与资本主义循环的危机_4c948b50.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-meta-level-reading.md",
+      "line": 33,
+      "target": "../../sources/12-claude-ai-chats/2024-07-29_Balancing_Ideological_Diversity_in_Society_1b72f4a8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-meta-level-reading.md",
+      "line": 34,
+      "target": "../../sources/12-claude-ai-chats/2026-03-14_Cultural_differences_in_future_thinking_self_versus_family_a43e08a1.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-meta-level-reading.md",
+      "line": 35,
+      "target": "../../sources/12-claude-ai-chats/2026-04-11_大同的技术可实现性_893f7a0e.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-meta-level-reading.md",
+      "line": 36,
+      "target": "../../sources/12-claude-ai-chats/2026-04-16_Recent_conversation_insights_96d77b9f.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-meta-level-reading.md",
+      "line": 37,
+      "target": "../../sources/12-claude-ai-chats/2026-04-28_Generative_over_destructive_ethics_e1839922.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-09-07-meta-level-reading.md",
+      "line": 38,
+      "target": "../../sources/12-claude-ai-chats/2026-04-30_Generativity_as_environmental_stewardship_439667f8.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/2026-10-03-airplane-conversation-seeds.md",
+      "line": 5,
+      "target": "../../sources/18-friend-conversations/2026-10-01-airplane/README.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/research/related-work.md",
+      "line": 53,
+      "target": "../../sources/12-claude-ai-chats/2026-03-23_Collaborative_world-building_through_shared_principles_fefd8d50.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/worlds/05-exploration-community.md",
+      "line": 5,
+      "target": "../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    },
+    {
+      "file": "worldbuilding/worlds/06-city-of-shared-quests.md",
+      "line": 5,
+      "target": "../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md",
+      "kind": "ignored-by-git",
+      "role": "live"
+    }
+  ],
+  "scope": "Relative links and #anchors in live and generated Markdown (paths.py roles); history, evidence, sources and scratch are frozen and not checked. Paths must match tracked or untracked files exactly. Targets inside a submodule or excluded by .gitignore are listed under not_in_repository, not counted."
+}

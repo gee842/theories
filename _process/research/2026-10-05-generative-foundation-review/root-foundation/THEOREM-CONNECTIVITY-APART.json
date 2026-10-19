@@ -1671,6 +1671,21 @@
    "module": "Becoming.HistoryIdeals",
    "category": "restates",
    "reason": "The case of words of `Stretches.run_goesOn` (a run's history goes on), stated on the base for every process."
+  },
+  "Becoming.Cuts.Attaches.listed_once": {
+   "module": "Becoming.Cuts",
+   "category": "general-structure",
+   "reason": "a law of any relation grown by a list of attachments; the base has no lists of links or growth by attachment to read it on (its laws of cutting and joining one link are read on the base by Flow.system_unchanged_without_iff and Flow.withinSystem_two_takers_iff), and it is read in the periphery on bodies grown by division (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff)"
+  },
+  "Becoming.Cuts.Attaches.suffix": {
+   "module": "Becoming.Cuts",
+   "category": "general-structure",
+   "reason": "a law of any relation grown by a list of attachments; the base has no lists of links or growth by attachment to read it on (its laws of cutting and joining one link are read on the base by Flow.system_unchanged_without_iff and Flow.withinSystem_two_takers_iff), and it is read in the periphery on bodies grown by division (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff)"
+  },
+  "Becoming.Cuts.joined_cut_unchanged_iff": {
+   "module": "Becoming.Cuts",
+   "category": "general-structure",
+   "reason": "a law of any relation grown by a list of attachments; the base has no lists of links or growth by attachment to read it on (its laws of cutting and joining one link are read on the base by Flow.system_unchanged_without_iff and Flow.withinSystem_two_takers_iff), and it is read in the periphery on bodies grown by division (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff)"
   }
  }
 }

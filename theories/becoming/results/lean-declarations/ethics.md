@@ -1223,35 +1223,46 @@ Definitions and types:
 <a id="module-eec9d88a220d"></a>
 
 <details>
-<summary>PreparationCorrespondence.lean — 16 explicit declarations</summary>
+<summary>PreparationCorrespondence.lean — 27 explicit declarations</summary>
 
 [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean`
 
-Imports: `Becoming.Copying`, `Becoming.Feedback`, `Becoming.Readout`, `GrownFragmentation`
+Imports: `Becoming.Copying`, `Becoming.Cuts`, `Becoming.Feedback`, `Becoming.Readout`, `GrownFragmentation`
 
 | Theorem or lemma | Line |
 |---|---:|
-| [Becoming.PreparationCorrespondence.use_unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L42) | 42 |
-| [Becoming.PreparationCorrespondence.countOf_eq_count](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L48) | 48 |
-| [Becoming.PreparationCorrespondence.mem_iff_countOf_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L56) | 56 |
-| [Becoming.PreparationCorrespondence.erase_eq_remove](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L59) | 59 |
-| [Becoming.PreparationCorrespondence.route_some_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L69) | 69 |
-| [Becoming.PreparationCorrespondence.preparation_empties_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L99) | 99 |
-| [Becoming.PreparationCorrespondence.preparation_leaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L118) | 118 |
-| [Becoming.PreparationCorrespondence.connected_of_adjacent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L138) | 138 |
-| [Becoming.PreparationCorrespondence.connected_iff_within](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L143) | 143 |
-| [Becoming.PreparationCorrespondence.component_is_closure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L158) | 158 |
-| [Becoming.PreparationCorrespondence.certificate_exact_split_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L166) | 166 |
-| [Becoming.PreparationCorrespondence.cut_separates](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L182) | 182 |
-| [Becoming.PreparationCorrespondence.returns_differ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L195) | 195 |
-| [Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L200) | 200 |
+| [Becoming.PreparationCorrespondence.use_unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L53) | 53 |
+| [Becoming.PreparationCorrespondence.countOf_eq_count](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L59) | 59 |
+| [Becoming.PreparationCorrespondence.mem_iff_countOf_pos](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L67) | 67 |
+| [Becoming.PreparationCorrespondence.erase_eq_remove](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L70) | 70 |
+| [Becoming.PreparationCorrespondence.route_some_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L80) | 80 |
+| [Becoming.PreparationCorrespondence.preparation_empties_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L110) | 110 |
+| [Becoming.PreparationCorrespondence.preparation_leaves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L129) | 129 |
+| [Becoming.PreparationCorrespondence.connected_of_adjacent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L149) | 149 |
+| [Becoming.PreparationCorrespondence.connected_iff_within](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L154) | 154 |
+| [Becoming.PreparationCorrespondence.component_is_closure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L169) | 169 |
+| [Becoming.PreparationCorrespondence.certificate_exact_split_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L177) | 177 |
+| [Becoming.PreparationCorrespondence.cut_separates](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L193) | 193 |
+| [Becoming.PreparationCorrespondence.returns_differ](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L206) | 206 |
+| [Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L211) | 211 |
+| [Becoming.PreparationCorrespondence.adjacent_iff_links](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L230) | 230 |
+| [Becoming.PreparationCorrespondence.connected_iff_links](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L253) | 253 |
+| [Becoming.PreparationCorrespondence.divide_attached](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L262) | 262 |
+| [Becoming.PreparationCorrespondence.develop_attached](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L288) | 288 |
+| [Becoming.PreparationCorrespondence.initial_attached](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L300) | 300 |
+| [Becoming.PreparationCorrespondence.cut_attached](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L304) | 304 |
+| [Becoming.PreparationCorrespondence.bond_cut_separates](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L318) | 318 |
+| [Becoming.PreparationCorrespondence.every_grown_bond_separates](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L329) | 329 |
+| [Becoming.PreparationCorrespondence.aggregate_cut_unchanged_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L336) | 336 |
+| [Becoming.PreparationCorrespondence.reinforced_cut_unchanged](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L362) | 362 |
 
 Definitions and types:
 
-- `def` [Becoming.PreparationCorrespondence.unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L40) (L40)
-- `def` [Becoming.PreparationCorrespondence.adjacent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L136) (L136)
+- `def` [Becoming.PreparationCorrespondence.unit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L51) (L51)
+- `def` [Becoming.PreparationCorrespondence.adjacent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L147) (L147)
+- `def` [Becoming.PreparationCorrespondence.AttachedBelow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean#L258) (L258)
 
 </details>
 

@@ -12,9 +12,9 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 265 | 9,969 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 266 | 9,993 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
-| [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,523 |
+| [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 71 | 1,864 |
 | [Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
@@ -212,6 +212,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [CrossSituational.lean](lean-declarations/becoming-core.md#module-03b040af0e79) | Becoming pure core |
 | [CrossedClaims.lean](lean-declarations/ethics.md#module-e7f0db783db0) | Normative grounding and generative direction |
 | [CutCoverageAudit.lean](lean-declarations/ethics.md#module-17d9a609f504) | Normative grounding and generative direction |
+| [Cuts.lean](lean-declarations/becoming-core.md#module-7573e98940d6) | Becoming pure core |
 | [Decidedness.lean](lean-declarations/becoming-core.md#module-54715c46f69e) | Becoming pure core |
 | [DeductiveNecessity.lean](lean-declarations/core.md#module-ad4338bdc8a0) | Generative core and relational structure |
 | [DenseOrder.lean](lean-declarations/abstraction.md#module-8080157d8373) | Abstraction, applicability and constitution |

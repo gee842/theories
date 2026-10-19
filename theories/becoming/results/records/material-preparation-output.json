@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
+  "reviewed_at_utc": "2026-10-19T05:28:49+00:00",
   "claim": {
     "zh": "对每个目标配方、材料池与路由支持量：route 以空剩余池完成，当且仅当池是配方的一个排列且配方长度不超过支持量，此时剩余支持为支持量减配方长度；实际 routeTrace 对每个输入保留放置与剩余材料，route 恰是它的投影。八单位支持下的指定八槽配方是实例：整池完成恰好要求四 A 四 B。",
     "en": "For every target recipe, pool and routing support: route completes with an empty residual pool exactly when the pool is a permutation of the recipe and the recipe is no longer than the support, the remaining support then being the support less the recipe's length; the actual routeTrace keeps placed and residual material for every input, and route is its projection. The specified eight-slot recipe under eight support units is an instance: whole-pool completion requires exactly four A and four B."
@@ -103,7 +103,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean",
       "role": "proof",
-      "sha256": "32313d6fd4e8b13481a98fa820f7640b11125352abe15af1b58c0fe506272d95",
+      "sha256": "4766457e81ff53ef8ab94f4b7109e4b62e138f409b8d239e0d9ecb6695565e85",
       "declarations": [
         "Becoming.PreparationCorrespondence.unit",
         "Becoming.PreparationCorrespondence.use_unit",
@@ -116,6 +116,12 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261019T052332.277017Z/verification.json",
+      "role": "receipt",
+      "sha256": "47998617eaed359ca3d520848a0900f516e9367f50c95fe28620262f914d4de6",
+      "declarations": []
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261015T161348.626052Z/verification.json",
       "role": "receipt",
       "sha256": "d27cc6120230332870127bb8981c8ee0787a4dab09f7e1c65eb5d885fcb414a9",
@@ -124,7 +130,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_preparation_correspondence.py",
       "role": "provenance",
-      "sha256": "573fcfa1e98e12d5935c739b9983f5847b140da183f5b177e98f0a890c8c1338",
+      "sha256": "ea3a13897293cf5492f69ba5a3c5037dc2d60a5298515ea355581b50da98c680",
       "declarations": []
     },
     {
@@ -180,7 +186,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261015T161348.626052Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261019T052332.277017Z/verification.json",
       "sha256_pointer": "/source_sha256/PreparationCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -223,6 +229,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Copying.lean, Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, K1: PreparationCorrespondence re-pointed after reading the change: K1 added to PreparationCorrespondence a section reading Becoming.Cuts (study section 190; Ren, 19 October 2026: \"let's make these limited, non general laws, into general ones\"); the earlier declarations are unchanged, the declarations this record cites among them. Instance receipt 20261019T052332.277017Z; the claim is unchanged.",
+      "zh": "2026年10月19日，K1：读过改动后，PreparationCorrespondence 重新指向：新增一节读 Becoming.Cuts，本记录所引声明不变。实例回执 20261019T052332.277017Z；论断不变。"
     }
   ]
 }

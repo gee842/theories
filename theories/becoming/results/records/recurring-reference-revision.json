@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "cbfca85bdfe0ed104b80cd16d08776da57cdfb8e90515a6deaec5fc0186dc589",
+      "sha256": "662a32738fcee0142ffd75678de04e2d5c59b8a28c96c2a073672f582e3a8449",
       "declarations": []
     },
     {
@@ -618,6 +618,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, K1 (Becoming.Cuts): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in sections 8 and 9: K1 added the connectivity rerun on its landing tree to the \"Integration of the spine\" row of section 8.2, and section 9 now names the K1 core receipt and its counts (263 core modules, 9,919 theorems). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，K1（Becoming.Cuts）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8、9 节改动：K1 在第 8.2 节“脊柱的整合”一行加上其落地树上的连通性重测，第 9 节改为 K1 的核心回执及其计数（263 个核心模块，9,919 条定理）。重新指向前已读。论断不变。"
     }
   ]
 }

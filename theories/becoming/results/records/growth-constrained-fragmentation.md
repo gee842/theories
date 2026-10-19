@@ -7,7 +7,7 @@
 
 Editable record: [growth-constrained-fragmentation.json](growth-constrained-fragmentation.json) · [Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:33:55.801236+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-19T05:28:49+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 <a id="主张-claim"></a>
 ## Claim
@@ -36,6 +36,7 @@ Boundary source: [GrownFragmentation.lean](../../../../experiments/integrated-co
 ## Dependencies and related results
 
 - **formal-reuse**: [risk-certificate-outcome-distinction](risk-certificate-outcome-distinction.md). Reuses Becoming.Readout.no_judge_of_merged: the two grown graphs have the same parent summary and different mean cut returns, so no function of the summary gives both (PreparationCorrespondence.no_parent_summary_predictor_by_core).
+- **formal-reuse**: [which-links-a-closure-needs](which-links-a-closure-needs.md). Reuses Cuts.attached_link_separates and Cuts.joined_cut_unchanged_iff: the bonds read both ways are Cuts.Links, division keeps them grown by attachment, so every grown bond separates its ends and the reinforced chain's bypass is the join law (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff).
 
 **Used by:** [recurrent-chain-assembly](recurrent-chain-assembly.md)
 
@@ -49,7 +50,8 @@ Boundary source: [GrownFragmentation.lean](../../../../experiments/integrated-co
 | integration | [GROWN-FRAGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) | — |
 | proof | [Feedback.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean) | `Becoming.ClosedUnder`, `Becoming.WithinClosure`, `Becoming.closure_iff_certified`, `Becoming.not_within_of_closed` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
-| proof | [PreparationCorrespondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean) | `Becoming.PreparationCorrespondence.adjacent`, `Becoming.PreparationCorrespondence.connected_of_adjacent`, `Becoming.PreparationCorrespondence.connected_iff_within`, `Becoming.PreparationCorrespondence.component_is_closure`, `Becoming.PreparationCorrespondence.certificate_exact_split_by_core`, `Becoming.PreparationCorrespondence.cut_separates`, `Becoming.PreparationCorrespondence.returns_differ`, `Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core` |
+| proof | [PreparationCorrespondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean) | `Becoming.PreparationCorrespondence.adjacent`, `Becoming.PreparationCorrespondence.connected_of_adjacent`, `Becoming.PreparationCorrespondence.connected_iff_within`, `Becoming.PreparationCorrespondence.component_is_closure`, `Becoming.PreparationCorrespondence.certificate_exact_split_by_core`, `Becoming.PreparationCorrespondence.cut_separates`, `Becoming.PreparationCorrespondence.returns_differ`, `Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core`, `Becoming.PreparationCorrespondence.adjacent_iff_links`, `Becoming.PreparationCorrespondence.connected_iff_links`, `Becoming.PreparationCorrespondence.AttachedBelow`, `Becoming.PreparationCorrespondence.divide_attached`, `Becoming.PreparationCorrespondence.develop_attached`, `Becoming.PreparationCorrespondence.initial_attached`, `Becoming.PreparationCorrespondence.cut_attached`, `Becoming.PreparationCorrespondence.bond_cut_separates`, `Becoming.PreparationCorrespondence.every_grown_bond_separates`, `Becoming.PreparationCorrespondence.aggregate_cut_unchanged_iff`, `Becoming.PreparationCorrespondence.reinforced_cut_unchanged` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261019T052332.277017Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261015T161348.626052Z/verification.json) | — |
 | provenance | [check_preparation_correspondence.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_preparation_correspondence.py) | — |
 | proof | [Courses.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean) | `Becoming.Courses.system_iff_certified`, `Becoming.Courses.not_within_system_of_closed` |
@@ -59,6 +61,8 @@ Boundary source: [GrownFragmentation.lean](../../../../experiments/integrated-co
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
+| proof | [Cuts.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean) | `Becoming.Cuts.attached_link_separates`, `Becoming.Cuts.joined_cut_unchanged_iff` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -67,7 +71,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse completed fragmentation; the new chain continuation covers one structural class, leaving changing generative laws and actual fracture to explain.
 
-Aliases: `GrownFragmentation.certificate_exact_split`, `Becoming.closure_iff_certified`, `Becoming.not_within_of_closed`, `Becoming.Courses.system_iff_certified`, `Becoming.Courses.not_within_system_of_closed`
+Aliases: `GrownFragmentation.certificate_exact_split`, `Becoming.closure_iff_certified`, `Becoming.not_within_of_closed`, `Becoming.Courses.system_iff_certified`, `Becoming.Courses.not_within_system_of_closed`, `Becoming.PreparationCorrespondence.bond_cut_separates`, `Becoming.PreparationCorrespondence.aggregate_cut_unchanged_iff`
 
 <a id="沿革-history"></a>
 ## History
@@ -84,4 +88,5 @@ Aliases: `GrownFragmentation.certificate_exact_split`, `Becoming.closure_iff_cer
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: Feedback.lean. Rebound to core receipt 20261018T062828.251326Z after reading the change. The claim is unchanged.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Feedback.lean). The claim is unchanged.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean, Feedback.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
+- 19 October 2026, K1: K1 added to PreparationCorrespondence a section reading Becoming.Cuts (study section 190; Ren, 19 October 2026: "let's make these limited, non general laws, into general ones"); the earlier declarations are unchanged. The example theorems are now cases of general laws: every bond of every body grown by division separates its ends when cut (bond_cut_separates, every_grown_bond_separates, by Cuts.attached_link_separates), and after one aggregation a grown bond is bypassed exactly where the aggregated bond crosses it (aggregate_cut_unchanged_iff, by Cuts.joined_cut_unchanged_iff), the reinforced chain being a case (reinforced_cut_unchanged). Instance receipt 20261019T052332.277017Z; the claim and its scope are unchanged.
 - 2 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](growth-constrained-fragmentation.json).

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-08T19:33:55.801236+00:00",
+  "reviewed_at_utc": "2026-10-19T05:28:49+00:00",
   "claim": {
     "zh": "实际生长得到的两种同组成连接图限制一边断裂后的后继；精确连通证书和共同准备计算保留断裂规律改变造成的排序反转。",
     "en": "Two actually grown graphs with matched composition constrain successors after one-edge removal; exact connectivity certificates and common-preparation calculations retain a cut-law ranking reversal."
@@ -29,7 +29,9 @@
     "Becoming.closure_iff_certified",
     "Becoming.not_within_of_closed",
     "Becoming.Courses.system_iff_certified",
-    "Becoming.Courses.not_within_system_of_closed"
+    "Becoming.Courses.not_within_system_of_closed",
+    "Becoming.PreparationCorrespondence.bond_cut_separates",
+    "Becoming.PreparationCorrespondence.aggregate_cut_unchanged_iff"
   ],
   "dependencies": [
     {
@@ -38,6 +40,14 @@
       "detail": {
         "zh": "复用 Becoming.Readout.no_judge_of_merged：组成相同的两个生长图切割回报不同，故亲代摘要的任何函数都不同时给出二者（PreparationCorrespondence.no_parent_summary_predictor_by_core）。",
         "en": "Reuses Becoming.Readout.no_judge_of_merged: the two grown graphs have the same parent summary and different mean cut returns, so no function of the summary gives both (PreparationCorrespondence.no_parent_summary_predictor_by_core)."
+      }
+    },
+    {
+      "id": "which-links-a-closure-needs",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Cuts.attached_link_separates and Cuts.joined_cut_unchanged_iff: the bonds read both ways are Cuts.Links, division keeps them grown by attachment, so every grown bond separates its ends and the reinforced chain's bypass is the join law (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff).",
+        "zh": "复用 Cuts.attached_link_separates 与 Cuts.joined_cut_unchanged_iff：双向读的键即 Cuts.Links，分裂使它们保持依附式生长，所以每条生长出的键都分开其两端，加固链的绕行即连接规律。"
       }
     }
   ],
@@ -103,7 +113,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean",
       "role": "proof",
-      "sha256": "32313d6fd4e8b13481a98fa820f7640b11125352abe15af1b58c0fe506272d95",
+      "sha256": "4766457e81ff53ef8ab94f4b7109e4b62e138f409b8d239e0d9ecb6695565e85",
       "declarations": [
         "Becoming.PreparationCorrespondence.adjacent",
         "Becoming.PreparationCorrespondence.connected_of_adjacent",
@@ -112,8 +122,25 @@
         "Becoming.PreparationCorrespondence.certificate_exact_split_by_core",
         "Becoming.PreparationCorrespondence.cut_separates",
         "Becoming.PreparationCorrespondence.returns_differ",
-        "Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core"
+        "Becoming.PreparationCorrespondence.no_parent_summary_predictor_by_core",
+        "Becoming.PreparationCorrespondence.adjacent_iff_links",
+        "Becoming.PreparationCorrespondence.connected_iff_links",
+        "Becoming.PreparationCorrespondence.AttachedBelow",
+        "Becoming.PreparationCorrespondence.divide_attached",
+        "Becoming.PreparationCorrespondence.develop_attached",
+        "Becoming.PreparationCorrespondence.initial_attached",
+        "Becoming.PreparationCorrespondence.cut_attached",
+        "Becoming.PreparationCorrespondence.bond_cut_separates",
+        "Becoming.PreparationCorrespondence.every_grown_bond_separates",
+        "Becoming.PreparationCorrespondence.aggregate_cut_unchanged_iff",
+        "Becoming.PreparationCorrespondence.reinforced_cut_unchanged"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261019T052332.277017Z/verification.json",
+      "role": "receipt",
+      "sha256": "47998617eaed359ca3d520848a0900f516e9367f50c95fe28620262f914d4de6",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261015T161348.626052Z/verification.json",
@@ -124,7 +151,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_preparation_correspondence.py",
       "role": "provenance",
-      "sha256": "573fcfa1e98e12d5935c739b9983f5847b140da183f5b177e98f0a890c8c1338",
+      "sha256": "ea3a13897293cf5492f69ba5a3c5037dc2d60a5298515ea355581b50da98c680",
       "declarations": []
     },
     {
@@ -171,6 +198,21 @@
       "role": "receipt",
       "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
+      "role": "proof",
+      "sha256": "fbfe48e0e05f9c1c949974c0db59147fbd24d58698a3a8debc5bf9a4779f4567",
+      "declarations": [
+        "Becoming.Cuts.attached_link_separates",
+        "Becoming.Cuts.joined_cut_unchanged_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json",
+      "role": "receipt",
+      "sha256": "344fec8520c9db87e7a2c4f007e3d1176f10b40a8059cb6cc4bb26d9aa75e4cc",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -190,7 +232,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/PreparationCorrespondence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261015T161348.626052Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/preparation-correspondence-checks/20261019T052332.277017Z/verification.json",
       "sha256_pointer": "/source_sha256/PreparationCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -199,6 +241,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Cuts",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -258,6 +307,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean, Feedback.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, K1: K1 added to PreparationCorrespondence a section reading Becoming.Cuts (study section 190; Ren, 19 October 2026: \"let's make these limited, non general laws, into general ones\"); the earlier declarations are unchanged. The example theorems are now cases of general laws: every bond of every body grown by division separates its ends when cut (bond_cut_separates, every_grown_bond_separates, by Cuts.attached_link_separates), and after one aggregation a grown bond is bypassed exactly where the aggregated bond crosses it (aggregate_cut_unchanged_iff, by Cuts.joined_cut_unchanged_iff), the reinforced chain being a case (reinforced_cut_unchanged). Instance receipt 20261019T052332.277017Z; the claim and its scope are unchanged.",
+      "zh": "2026年10月19日，K1：PreparationCorrespondence 新增一节读 Becoming.Cuts（研究第 190 节）。示例定理成为一般规律的情形：经分裂生长的每个身体的每条键被切断时两端分开，一次聚合后生长出的键被绕过恰在聚合键跨过它之处，加固链是一例。实例回执 20261019T052332.277017Z；论断与范围不变。"
     }
   ]
 }
