@@ -80,7 +80,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
       "role": "proof",
-      "sha256": "155397773e108135657a02b6d5f849ec8f9f438b2bad21acfdce0796311de76f",
+      "sha256": "de7b9c193bf4b6d4ca7518d1078ac3ac2122533021e536e4437936d41f3f10bb",
       "declarations": [
         "Becoming.liftsFromEach_iff",
         "Becoming.liftsFromEach_of_sameJointTests",
@@ -124,6 +124,12 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -136,7 +142,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Composition",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -188,6 +194,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Composition.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Composition.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Composition.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Composition.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Composition.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Composition.lean, takes as its final section JointPlanFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Composition.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Composition.lean，以末节收入 JointPlanFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
     }
   ]
 }

@@ -333,7 +333,7 @@ Records: [worlds-are-runs](../../../../theories/becoming/results/records/worlds-
 - **Apart by design.** Of the 481 apart, 50 are general structure by design and 431 are apart otherwise. The roots' categories are unchanged: model witness 205, support 86, general structure 33, logical strength 10, restates 10, calibration 2.
 - **Records by best class.** Two records' best theorem is in the G3 class (113 on the Process family, 115 before); the rest are unchanged. The periphery has no forwarder target or G3 statement, and its classes are unchanged.
 
-**After R32: the tree without forwarders, copies and reading modules.** On `31ad67cec` (core receipt 20261019T225814.056669Z), after R32 removed 173 pure forwarders, 61 copies of statements stated elsewhere and two helpers only a removed copy used, and folded 26 reading and small modules into the modules they read ([study §223](BECOMING-RENEWAL-READING.md#223-forwarders-copies-and-reading-modules-r32)), against the baseline above:
+**After R32: the tree without forwarders, copies and reading modules.** On `43c074c86` (core receipt 20261019T231053.882924Z; the same counts on `31ad67cec`, receipt 20261019T225814.056669Z, before the docs followed the removals), after R32 removed 173 pure forwarders, 61 copies of statements stated elsewhere and two helpers only a removed copy used, and folded 26 reading and small modules into the modules they read ([study §223](BECOMING-RENEWAL-READING.md#223-forwarders-copies-and-reading-modules-r32)), against the baseline above:
 
 | Class | Baseline (R31's tree) | After R32 |
 |---|---:|---:|

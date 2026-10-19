@@ -188,7 +188,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "role": "proof",
-      "sha256": "40ef738225fdabbd52e0e5aed597d24eb0403ea8e3b662eef89dd90b773962e8",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
       "declarations": [
         "Becoming.Naturals.succ_ne_self"
       ]
@@ -220,7 +220,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
+      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec",
       "declarations": []
     },
     {
@@ -250,7 +250,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
       "role": "proof",
-      "sha256": "1a23536871b205b2ea3de5052b5acca68365c8a9b5864af09b5d64b695bbb95c",
+      "sha256": "e6ac9fce2643b3238a9832b235c0a3be6d2cb9cac9a108dfce0f748a04971d9f",
       "declarations": [
         "Becoming.Stock.Balanced",
         "Becoming.Stock.cycles_need",
@@ -282,6 +282,12 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -294,14 +300,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -809,6 +815,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: ContinuingRevision.next_ne (now Naturals.succ_ne_self). Proof bindings (ContinuingRevision.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: ContinuingRevision.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：ContinuingRevision.next_ne（现为 Naturals.succ_ne_self）。证明绑定（ContinuingRevision.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：ContinuingRevision.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Prelude.lean, Stock.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Stock.lean, takes as its final section StockTraces, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Prelude.lean、Stock.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Stock.lean，以末节收入 StockTraces（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
     }
   ]
 }

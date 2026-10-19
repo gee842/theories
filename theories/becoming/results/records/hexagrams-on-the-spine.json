@@ -25,7 +25,7 @@
         "Becoming.Hexagram.same",
         "Becoming.Hexagram.same_eq",
         "Becoming.Hexagram.same_self",
-        "Becoming.Hexagram.both",
+        "Becoming.bool_of_and_true",
         "Becoming.ListTests.or_cases",
         "Becoming.ListTests.not_not",
         "Becoming.Hexagram.eqb",
@@ -390,7 +390,6 @@
         "Becoming.Hexagram.allBroken_absorbing",
         "Becoming.Hexagram.allPaired",
         "Becoming.Hexagram.arising_recurs",
-        "Becoming.Hexagram.both",
         "Becoming.Hexagram.bottom_turns",
         "Becoming.Hexagram.ceasing_recurs",
         "Becoming.Hexagram.changes",
@@ -478,17 +477,18 @@
         "Becoming.Hexagram.yang_not_goAlike",
         "Becoming.Hexagram.yang_not_lumped"
       ],
-      "sha256": "19767c5935db713d90cbc391ab0f42fe4af93cc56c5d4fb292e4c7944bb23cda"
+      "sha256": "a638ec73d081088eb8f8c7a6a6ad860f7f5f32223b4c5373931c9a841c9f6b5d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "role": "proof",
-      "sha256": "40ef738225fdabbd52e0e5aed597d24eb0403ea8e3b662eef89dd90b773962e8",
+      "sha256": "e2f4d15ab266b4e2f08fc352be8b4e8c5ebc763fce76a238f6f5e4a5640a8b24",
       "declarations": [
         "Becoming.ListTests.or_cases",
         "Becoming.ListTests.false_of_not",
         "Becoming.ListTests.not_not",
-        "Becoming.ListTests.not_eq_true_of_false"
+        "Becoming.ListTests.not_eq_true_of_false",
+        "Becoming.bool_of_and_true"
       ]
     },
     {
@@ -511,7 +511,7 @@
         "Becoming.Branching.Lossless",
         "Becoming.Branching.KeepsPossibilities"
       ],
-      "sha256": "56b06dd533e36a4765c25fe57ed6e52f82bd8f63101aebc6fdf0cf2f5dfb05ca"
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
@@ -541,7 +541,7 @@
         "Becoming.Branching.law_keeps_iff",
         "Becoming.Branching.law_lossless_iff"
       ],
-      "sha256": "5f5cba5eca64ea4b0ba49984646f35147f16364b185940fcfb28e96153c7f7f1"
+      "sha256": "9408f96fc097057836f4702faccedb6c19fc7615d38a97cb469ab8575c4106af"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
@@ -549,12 +549,12 @@
       "declarations": [
         "Becoming.Learning.Lumped"
       ],
-      "sha256": "613ad4df30647812c1ef061c21869857803ce961513cac044e0b71f6e09a0a0a"
+      "sha256": "6cc062e616f894f91b5a359f6890f3306de01d9a6f3f45fb8ae43d4e9f937aff"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
       "role": "proof",
-      "sha256": "521ea373e884a5151208fef0dc9eebec0622b735828e97597ac430b85456cb10",
+      "sha256": "3a715548d879ab3374975fbbf2d43ab35dbd53dd467b60288c463c5973f75d9a",
       "declarations": [
         "Becoming.Learning.goAlike_iff_lumped"
       ]
@@ -590,13 +590,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b"
+      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -645,19 +645,25 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Hexagrams",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -671,14 +677,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -699,14 +705,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LearningRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -812,6 +818,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Hexagram.either (now ListTests.or_cases); Hexagram.false_of_not (now ListTests.false_of_not); Hexagram.opposite_opposite (now ListTests.not_not); Hexagram.opposite_true (now ListTests.not_eq_true_of_false). Proof bindings (Branching.lean, Hexagrams.lean, Learning.lean, LearningRuns.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Branching.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Hexagrams.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Learning.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LearningRuns.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Hexagram.either（现为 ListTests.or_cases）；Hexagram.false_of_not（现为 ListTests.false_of_not）；Hexagram.opposite_opposite（现为 ListTests.not_not）；Hexagram.opposite_true（现为 ListTests.not_eq_true_of_false）。证明绑定（Branching.lean、Hexagrams.lean、Learning.lean、LearningRuns.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Branching.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Hexagrams.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Learning.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LearningRuns.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed, with the statement kept under one name: Hexagram.both (now bool_of_and_true). Proof bindings (Branching.lean, Hexagrams.lean, Learning.lean, LearningRuns.lean, Prelude.lean, Recurrence.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Branching.lean, takes as its final section RecurrenceRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Hexagrams.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Learning.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; LearningRuns.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Prelude.lean, twelve statements stated in two or more modules each, stated here once under the name kept; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：删去，陈述以一个名称保留：Hexagram.both（现为 bool_of_and_true）。证明绑定（Branching.lean、Hexagrams.lean、Learning.lean、LearningRuns.lean、Prelude.lean、Recurrence.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Branching.lean，以末节收入 RecurrenceRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Hexagrams.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Learning.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；LearningRuns.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Prelude.lean，十二条原先在两个或更多模块中各自陈述的命题，在此以保留的名称陈述一次；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
     }
   ]
 }

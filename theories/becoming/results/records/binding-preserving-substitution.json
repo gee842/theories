@@ -31,9 +31,7 @@
   "aliases": [
     "Generative.InferentialSubstitution.all_terms_agree_iff_positions",
     "Becoming.Readout.agree_iff_parts",
-    "Becoming.Readout.supplied_agree_iff_parts",
-    "Becoming.Courses.steps_agree_iff_levels",
-    "Becoming.Courses.supplied_agree_iff_levels"
+    "Becoming.Readout.supplied_agree_iff_parts"
   ],
   "dependencies": [],
   "related": [
@@ -166,11 +164,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "role": "proof",
-      "sha256": "0f4f137c56c565fe3206d38d85e7f5af6803c5a5a5294bb2e1252b7e49d02ce8",
-      "declarations": [
-        "Becoming.Courses.steps_agree_iff_levels",
-        "Becoming.Courses.supplied_agree_iff_levels"
-      ]
+      "sha256": "58a4c83e59a96cc6157d98d3a176c2b1e0d5d49673a0c94fea01d3b4f03e2adf",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json",
@@ -219,6 +214,12 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -252,7 +253,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -310,6 +311,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Courses.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Courses.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Courses.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Courses.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Courses.steps_agree_iff_levels (now Readout.agree_iff_parts); Courses.supplied_agree_iff_levels (now Readout.supplied_agree_iff_parts). Proof bindings (Courses.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Courses.lean, takes as its final sections RetrodictionRuns, CandidateRuns, ReducedRuns, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Courses.steps_agree_iff_levels（现为 Readout.agree_iff_parts）；Courses.supplied_agree_iff_levels（现为 Readout.supplied_agree_iff_parts）。证明绑定（Courses.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Courses.lean，以末节收入 RetrodictionRuns、CandidateRuns、ReducedRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
     }
   ]
 }

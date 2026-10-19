@@ -14,8 +14,8 @@
     "en": "A family of histories is a law's exactly where it holds its splices, and histories fix a law up to its dead ends."
   },
   "claim": {
-    "zh": "设 S 为配置类型，A 为动作类型，历史是一对序列 g : ℕ → S 与 m : ℕ → A。律 P 容许历史（Admits P g m），指历史的每一步都是 P 的一步；运行的历史为其律所容许（Run.admits）。一族历史 H 所显示的律（ShownBy H）以 H 中历史所走的各步为步；它是容许 H 中每段历史的最小的律（ShownBy.admits、shownBy_le_iff）。一族历史含有它的拼接（SpliceClosed H），指每个由它自己的步组成的序列都在族中。律的历史族含有它的拼接（admits_spliceClosed）；一族历史恰在含有它的拼接时是某个律的历史族，它所显示的律就是这样一个律（family_iff）。一族历史一致（ConsistentFamily H），指其中任何两段历史从不以同一动作把同一配置带到两处；它所显示的律恰在这时确定（shownBy_determined_iff），一族历史恰在含有它的拼接且一致时是某个确定的律的历史族（determined_family_iff）。律的活的步（live P）是它的某段历史所走的步；律与它的活的步容许同样的历史（admits_live_iff），两个律恰在活的步相同时容许同样的历史（same_histories_iff），活的律没有死路（live_live），死路的那一步不是活的（DeadEnd.not_live）。所以不计死路的律与含有拼接的历史族一一对应：拼接与死路就是律与历史之间的全部规律。会停止的历史下没有死路：两个律恰在步相同时有同样的有限历史（same_finite_histories_iff）；一族有限历史恰在由它的步组成时，即空序列不移动、序列是第一步接其余时，是某个律的有限历史族（MadeOfSteps、finite_family_iff）。死路是不终止历史的事实。不加前提。",
-    "en": "Let S be a type of configurations and A one of moves; a history is a pair of sequences g : ℕ → S and m : ℕ → A. A law P admits a history (Admits P g m) where every step the history takes is a step of P; a run's history is admitted by its law (Run.admits). The law a family of histories H shows (ShownBy H) has as steps the steps its histories take; it is the least law admitting each history of H (ShownBy.admits, shownBy_le_iff). A family holds its splices (SpliceClosed H) where every sequence made of its own steps is in it. The histories of a law hold their splices (admits_spliceClosed), and a family is the family of some law's histories exactly where it holds its splices, the law it shows being one such law (family_iff). A family is consistent (ConsistentFamily H) where no two of its histories take one move at one configuration to two outcomes; the law it shows is determined exactly then (shownBy_determined_iff), and a family is the family of a determined law's histories exactly where it holds its splices and is consistent (determined_family_iff). The live steps of a law (live P) are those some history of it takes; a law and its live steps admit the same histories (admits_live_iff), two laws admit the same histories exactly where they have the same live steps (same_histories_iff), the live law has no dead end (live_live), and the dead end's step is not live (DeadEnd.not_live). So laws up to their dead ends and families holding their splices correspond one to one: splicing and dead ends are the whole law of law and history. With histories that stop no dead end remains: two laws have the same finite histories exactly where they have the same steps (same_finite_histories_iff), and a family of finite histories is a law's exactly where it is made of its steps, the empty course going nowhere and a course being a first step followed by the rest (MadeOfSteps, finite_family_iff). The dead end is a fact of unending histories. No premise."
+    "zh": "设 S 为配置类型，A 为动作类型，历史是一对序列 g : ℕ → S 与 m : ℕ → A。律 P 容许历史（Admits P g m），指历史的每一步都是 P 的一步；运行的历史为其律所容许（Run.step）。一族历史 H 所显示的律（ShownBy H）以 H 中历史所走的各步为步；它是容许 H 中每段历史的最小的律（ShownBy.admits、shownBy_le_iff）。一族历史含有它的拼接（SpliceClosed H），指每个由它自己的步组成的序列都在族中。律的历史族含有它的拼接（admits_spliceClosed）；一族历史恰在含有它的拼接时是某个律的历史族，它所显示的律就是这样一个律（family_iff）。一族历史一致（ConsistentFamily H），指其中任何两段历史从不以同一动作把同一配置带到两处；它所显示的律恰在这时确定（shownBy_determined_iff），一族历史恰在含有它的拼接且一致时是某个确定的律的历史族（determined_family_iff）。律的活的步（live P）是它的某段历史所走的步；律与它的活的步容许同样的历史（admits_live_iff），两个律恰在活的步相同时容许同样的历史（same_histories_iff），活的律没有死路（live_live），死路的那一步不是活的（DeadEnd.not_live）。所以不计死路的律与含有拼接的历史族一一对应：拼接与死路就是律与历史之间的全部规律。会停止的历史下没有死路：两个律恰在步相同时有同样的有限历史（same_finite_histories_iff）；一族有限历史恰在由它的步组成时，即空序列不移动、序列是第一步接其余时，是某个律的有限历史族（MadeOfSteps、finite_family_iff）。死路是不终止历史的事实。不加前提。",
+    "en": "Let S be a type of configurations and A one of moves; a history is a pair of sequences g : ℕ → S and m : ℕ → A. A law P admits a history (Admits P g m) where every step the history takes is a step of P; a run's history is admitted by its law (Run.step). The law a family of histories H shows (ShownBy H) has as steps the steps its histories take; it is the least law admitting each history of H (ShownBy.admits, shownBy_le_iff). A family holds its splices (SpliceClosed H) where every sequence made of its own steps is in it. The histories of a law hold their splices (admits_spliceClosed), and a family is the family of some law's histories exactly where it holds its splices, the law it shows being one such law (family_iff). A family is consistent (ConsistentFamily H) where no two of its histories take one move at one configuration to two outcomes; the law it shows is determined exactly then (shownBy_determined_iff), and a family is the family of a determined law's histories exactly where it holds its splices and is consistent (determined_family_iff). The live steps of a law (live P) are those some history of it takes; a law and its live steps admit the same histories (admits_live_iff), two laws admit the same histories exactly where they have the same live steps (same_histories_iff), the live law has no dead end (live_live), and the dead end's step is not live (DeadEnd.not_live). So laws up to their dead ends and families holding their splices correspond one to one: splicing and dead ends are the whole law of law and history. With histories that stop no dead end remains: two laws have the same finite histories exactly where they have the same steps (same_finite_histories_iff), and a family of finite histories is a law's exactly where it is made of its steps, the empty course going nowhere and a course being a first step followed by the rest (MadeOfSteps, finite_family_iff). The dead end is a fact of unending histories. No premise."
   },
   "hypotheses": [
     {
@@ -143,10 +143,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
       "role": "proof",
-      "sha256": "d4cf3c400cb4cbe65a7ede86103571ac37364e82eb6caeec73ff6cfdd59e1f51",
+      "sha256": "8c23a374071dcca7da22894475ddc902dcf8e89fdd5a936e5cfee6a79d49f8e9",
       "declarations": [
         "Becoming.Admits",
-        "Becoming.Run.admits",
         "Becoming.ShownBy",
         "Becoming.ShownBy.admits",
         "Becoming.shownBy_le_iff",
@@ -229,13 +228,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
+      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec",
       "declarations": []
     },
     {
@@ -321,12 +320,18 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Histories",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -584,6 +589,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Joint.lean to Laws.lean, Determined. Proof bindings (Frame.lean, Joint.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Frame.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Joint.lean, Determined moved to Laws.lean; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Joint.lean 到 Laws.lean：Determined。证明绑定（Frame.lean、Joint.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Frame.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Joint.lean，Determined 移到 Laws.lean；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Run.admits (now Run.step). The sentences that named removed declarations name the kept ones. Proof bindings (Histories.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Histories.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Run.admits（现为 Run.step）。提到删去之声明的句子改提保留者。证明绑定（Histories.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Histories.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
     }
   ]
 }

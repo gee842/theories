@@ -539,7 +539,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransport.lean",
       "role": "proof",
-      "sha256": "0a8a3e61aca7df9c7caa7997921530a0d62466e70e09dff36eba7c5c51181697",
+      "sha256": "f5d945b3e51c291482631f00c1d712746027b5c5f482d3416bbf2d6d70acb50e",
       "declarations": [
         "Becoming.StrictTransport.Strict",
         "Becoming.StrictTransport.Transitive",
@@ -600,6 +600,12 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -640,7 +646,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransport.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.StrictTransport",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -711,6 +717,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Frame.lean, LossMatching.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Frame.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LossMatching.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Frame.lean、LossMatching.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Frame.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LossMatching.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (StrictTransport.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: StrictTransport.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（StrictTransport.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：StrictTransport.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
     }
   ],
   "text_versions": [

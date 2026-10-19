@@ -491,12 +491,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b"
+      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -973,6 +973,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Continuation.lean to Clearing.lean, Clearing.flow, Clearing.web; from Feedback.lean to BoundedSignificance.lean, Clearing.system_whole, Flow.bounded_system_whole, Flow.feeding_unrestricted_of_common; from Regions.lean to Clearing.lean, Clearing.alongDependence; from Significance.lean to Retaining.lean, bounded. Proof bindings (Continuation.lean, Feedback.lean, Interdependence.lean, Regions.lean, Significance.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Continuation.lean, the witness Clearing moved to Clearing.lean; Feedback.lean, the conditional theorems moved to BoundedSignificance.lean; comparison_within_reach proved with no condition, statement unchanged; Interdependence.lean, the conditional theorems moved to BoundedSignificance.lean; imports Clearing, not Significance; Regions.lean, Clearing's losing beyond the dependence moved to Clearing.lean; Significance.lean, what takes no condition moved to Retaining.lean and Clearing.lean; the conditional theorems kept, statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Continuation.lean 到 Clearing.lean：Clearing.flow、Clearing.web；从 Feedback.lean 到 BoundedSignificance.lean：Clearing.system_whole、Flow.bounded_system_whole、Flow.feeding_unrestricted_of_common；从 Regions.lean 到 Clearing.lean：Clearing.alongDependence；从 Significance.lean 到 Retaining.lean：bounded。证明绑定（Continuation.lean、Feedback.lean、Interdependence.lean、Regions.lean、Significance.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Continuation.lean，见证 Clearing 移到 Clearing.lean；Feedback.lean，条件定理移到 BoundedSignificance.lean；comparison_within_reach 不经条件证明，陈述不变；Interdependence.lean，条件定理移到 BoundedSignificance.lean；导入 Clearing 而非 Significance；Regions.lean，Clearing 的依存之外的失去移到 Clearing.lean；Significance.lean，不带条件者移到 Retaining.lean 与 Clearing.lean；条件定理保留，陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
     }
   ],
   "text_versions": [

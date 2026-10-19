@@ -256,7 +256,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "role": "proof",
-      "sha256": "223247cc4c1632dd83a75fc69f9dbbca3ef4345a99a3cb676fe2f8ca3f9a66f4",
+      "sha256": "e7c3fd01f372115c0b598aad9aafc697c1974efc81aaef7000a588804ed232a7",
       "declarations": [
         "Becoming.WeaklyDecided",
         "Becoming.Undominated",
@@ -303,12 +303,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
       "role": "proof",
-      "sha256": "1018c328c008dcc56dc0294cb47730b7030ab25e0d969a742031f86148b94cbb",
+      "sha256": "bf3ecf28d3d7dd5b196ff64a69e1a8cfc7fcd329c7c35732aa77f650c6648525",
       "declarations": [
         "Becoming.Requirement.Served.successor",
         "Becoming.Lexical.BasicPriority.frontier_iff",
         "Becoming.Requirement.frontier_iff_undominated",
-        "Becoming.Requirement.frontier_exists"
+        "Becoming.Requirement.frontier_exists",
+        "Becoming.Requirement.Frontier.excluded",
+        "Becoming.Requirement.Required.performed",
+        "Becoming.Requirement.Required.means"
       ]
     },
     {
@@ -328,7 +331,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
       "role": "proof",
-      "sha256": "c2324647a14cb2c44574c87c2c93c0ac0f8465ca20b69a0845d94e46a4fa30ec",
+      "sha256": "4489746718a276ff4c11dad22b815b702c543d5427f2b153cf6a14b7e70e36d0",
       "declarations": [
         "Becoming.FrontierFrames.Priority",
         "Becoming.FrontierFrames.Options",
@@ -336,11 +339,8 @@
         "Becoming.FrontierFrames.Priority.anchor",
         "Becoming.FrontierFrames.Priority.no_trade",
         "Becoming.FrontierFrames.Priority.comparison",
-        "Becoming.FrontierFrames.excluded",
         "Becoming.FrontierFrames.Priority.choice_exists",
         "Becoming.FrontierFrames.choice_exists_iff_weakly",
-        "Becoming.FrontierFrames.performed",
-        "Becoming.FrontierFrames.means",
         "Becoming.FrontierFrames.nothing_required",
         "Becoming.FrontierFrames.Priority.kept_unrefuted",
         "Becoming.FrontierFrames.Priority.kept_required",
@@ -377,7 +377,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a",
       "declarations": []
     },
     {
@@ -402,6 +402,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
       "declarations": []
     }
   ],
@@ -429,7 +435,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -443,7 +449,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Frontier",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -457,7 +463,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FrontierFrames",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -609,6 +615,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Decidedness.lean, FrontierFrames.lean, Lexical.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Decidedness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; FrontierFrames.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Lexical.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Decidedness.lean、FrontierFrames.lean、Lexical.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Decidedness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；FrontierFrames.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Lexical.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: FrontierFrames.excluded (now Requirement.Frontier.excluded); FrontierFrames.means (now Requirement.Required.means); FrontierFrames.performed (now Requirement.Required.performed). Proof bindings (Decidedness.lean, Frontier.lean, FrontierFrames.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Decidedness.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Frontier.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; FrontierFrames.lean, takes as its final section AcceptanceFrames, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：FrontierFrames.excluded（现为 Requirement.Frontier.excluded）；FrontierFrames.means（现为 Requirement.Required.means）；FrontierFrames.performed（现为 Requirement.Required.performed）。证明绑定（Decidedness.lean、Frontier.lean、FrontierFrames.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Decidedness.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Frontier.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；FrontierFrames.lean，以末节收入 AcceptanceFrames（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
     }
   ],
   "text_versions": [

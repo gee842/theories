@@ -59,7 +59,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [SubstitutionCorrespondence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SubstitutionCorrespondence.lean) | `Becoming.SubstitutionCorrespondence.part`, `Becoming.SubstitutionCorrespondence.read`, `Becoming.SubstitutionCorrespondence.use`, `Becoming.SubstitutionCorrespondence.through`, `Becoming.SubstitutionCorrespondence.direct`, `Becoming.SubstitutionCorrespondence.supplied`, `Becoming.SubstitutionCorrespondence.supplies`, `Becoming.SubstitutionCorrespondence.all_terms_agree_iff_positions_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/substitution-correspondence-checks/20261015T161423.129149Z/verification.json) | — |
 | provenance | [check_substitution_correspondence.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_substitution_correspondence.py) | — |
-| proof | [Courses.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean) | `Becoming.Courses.steps_agree_iff_levels`, `Becoming.Courses.supplied_agree_iff_levels` |
+| proof | [Courses.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T172257.067968Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
@@ -68,6 +68,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -76,7 +77,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 The strict target still lacks the passage from local reference constitution to adequate warrant for the metainferential resources used here; repeating substitution or equating intelligible challenge with acceptance of the entire logic does not supply it.
 
-Aliases: `Generative.InferentialSubstitution.all_terms_agree_iff_positions`, `Becoming.Readout.agree_iff_parts`, `Becoming.Readout.supplied_agree_iff_parts`, `Becoming.Courses.steps_agree_iff_levels`, `Becoming.Courses.supplied_agree_iff_levels`
+Aliases: `Generative.InferentialSubstitution.all_terms_agree_iff_positions`, `Becoming.Readout.agree_iff_parts`, `Becoming.Readout.supplied_agree_iff_parts`
 
 <a id="沿革-history"></a>
 ## History
@@ -91,4 +92,5 @@ Aliases: `Generative.InferentialSubstitution.all_terms_agree_iff_positions`, `Be
 - 20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Courses.lean, Readout.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Courses.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Readout.lean, Readout.image removed for Image of Becoming.Mechanism. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Courses.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Courses.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.
 - 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Courses.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Courses.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.
+- 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Courses.steps_agree_iff_levels (now Readout.agree_iff_parts); Courses.supplied_agree_iff_levels (now Readout.supplied_agree_iff_parts). Proof bindings (Courses.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Courses.lean, takes as its final sections RetrodictionRuns, CandidateRuns, ReducedRuns, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.
 - 3 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](binding-preserving-substitution.json).

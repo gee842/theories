@@ -60,12 +60,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Derivation.lean",
       "role": "proof",
-      "sha256": "5289aee24c348830c51d9e4973b485f7bbda82c9beb0114805650daeb41deb40",
+      "sha256": "ea2c3feb81457ffeee9eedceb1042fe91faab3227a89bb33345d8b3f121dad40",
       "declarations": [
         "Becoming.Derivation.Derives.sound",
         "Becoming.Derivation.claim_not_closed",
-        "Becoming.Derivation.Scope.closed",
-        "Becoming.Derivation.Scope.closure_iff",
+        "Becoming.Derivation.closed_throughout",
+        "Becoming.Derivation.closure_throughout_iff",
         "Becoming.Derivation.Scope.goal_closure"
       ]
     },
@@ -166,6 +166,10 @@
     {
       "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Derivation.Scope.closed (now Derivation.closed_throughout); Derivation.Scope.closure_iff (now Derivation.closure_throughout_iff). Re-pointed after reading the change: Derivation.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Derivation.Scope.closed（现为 Derivation.closed_throughout）；Derivation.Scope.closure_iff（现为 Derivation.closure_throughout_iff）。读过改动后重新指向：Derivation.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
     }
   ]
 }

@@ -109,6 +109,7 @@ Aliases: —
 - 19 October 2026, E1: a progress entry and two related records (premises read off one exchange: which premises are readings and which are states of the law); study section 197. The target's wording is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
 - 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added. The claim is unchanged.
+- 20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.
 - 2 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](theory-of-becoming-foundation.json).
 
 <a id="earlier-text--早期文本"></a>

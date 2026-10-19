@@ -31,7 +31,7 @@
       "en": "Under a determined law, a description goes alike with the law exactly where it carries what it identifies into what it identifies. A split keeping the map's value and going alike relates configurations by a bisimulation and loses nothing the map takes, and the coarsest such split makes sense.",
       "declarations": [
         "Becoming.GoAlike",
-        "Becoming.Law.goAlike_process_iff",
+        "Becoming.Learning.goAlike_iff_lumped",
         "Becoming.Bisimulation",
         "Becoming.Law.kernel_bisimulation",
         "Becoming.Law.sameFuture_of_law",
@@ -130,11 +130,10 @@
       ]
     },
     {
-      "zh": "Law.goAlike_process_iff 是 Becoming.Learning 的 goAlike_iff_lumped 的实例（两者各自写成，证明相同）。Learning 中从时刻 i 起周期为 q + 1 的套索成立，恰当时刻 i 与 i + (q + 1) 是同一状态，所以状态有限恰当有套索。",
-      "en": "Law.goAlike_process_iff is the instance of Becoming.Learning's goAlike_iff_lumped, written independently with the same proof. Learning's lasso from moment i with period q + 1 holds exactly where moments i and i + (q + 1) are one state, so there are finitely many states exactly where there is a lasso.",
+      "zh": "在确定性律的过程（Law.process next）上，步骤经归并 π 同去，恰当被 π 归在一起的状态走到被 π 归在一起的状态：这就是 Becoming.Learning 的 goAlike_iff_lumped，本记录直接引用它。Learning 中从时刻 i 起周期为 q + 1 的套索成立，恰当时刻 i 与 i + (q + 1) 是同一状态，所以状态有限恰当有套索。",
+      "en": "On the process of a deterministic law (Law.process next), the steps go alike across a lumping π exactly where states π lumps together step to states π lumps together: this is Becoming.Learning's goAlike_iff_lumped, which the record cites directly. Learning's lasso from moment i with period q + 1 holds exactly where moments i and i + (q + 1) are one state, so there are finitely many states exactly where there is a lasso.",
       "declarations": [
         "Becoming.Learning.goAlike_iff_lumped",
-        "Becoming.Law.goAlike_process_iff",
         "Becoming.Learning.Lasso",
         "Becoming.lasso_iff_sameAhead",
         "Becoming.finitely_many_states_iff_lasso"
@@ -350,8 +349,8 @@
     {
       "id": "generalization-through-lumping",
       "detail": {
-        "zh": "Law.goAlike_process_iff 是其 goAlike_iff_lumped 的实例。",
-        "en": "Law.goAlike_process_iff is the instance of its goAlike_iff_lumped."
+        "zh": "其 goAlike_iff_lumped（在确定性律的过程上，步骤经一个归并同去，恰当归在一起的状态走到归在一起的状态）是本记录引用的定律。",
+        "en": "Its goAlike_iff_lumped (on a deterministic law's process the steps go alike across a lumping exactly where lumped states step to lumped states) is the law this record cites."
       }
     },
     {
@@ -366,7 +365,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
       "role": "proof",
-      "sha256": "ba47ef53b98e8bba54168a2009f59e60728072fff4fa0c29ee06a9c1c72b1b95",
+      "sha256": "db97ebfaa43524665e6494e37e9a3fcac4ba6cf5c75126f823d11f0ea0f7f62b",
       "declarations": [
         "Becoming.Motion.cancel",
         "Becoming.Motion.move",
@@ -397,9 +396,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/IdentificationRuns.lean",
       "role": "proof",
-      "sha256": "1672e2cdee0fd5dc0a825e797ae46242a3a65998be187d6a88dd88e771294a2e",
+      "sha256": "9564da982531bc1652257f0be08e69f99a2702ae957e61854af80099cb029867",
       "declarations": [
-        "Becoming.Law.goAlike_process_iff",
         "Becoming.Law.kernel_bisimulation",
         "Becoming.Law.sameFuture_of_law",
         "Becoming.Law.identifiesAlike_of_law",
@@ -463,7 +461,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "56b06dd533e36a4765c25fe57ed6e52f82bd8f63101aebc6fdf0cf2f5dfb05ca",
+      "sha256": "78c79cc4e644639a898d1615bcf77134e2d84bdfd7b720bced7acd8a41db2d9b",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.Law.orbit_add",
@@ -481,7 +479,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
       "role": "proof",
-      "sha256": "1bb5dce2da41351f81ed441fa9a057589597b6b5e20aae8dc6a21e9fd1b5e3f8",
+      "sha256": "e0bb60720f219d2348299c7ad2bc4eb7a885e1ea82660c9989599c3da7293b4b",
       "declarations": [
         "Becoming.Diagonal.revision_never_rests",
         "Becoming.Diagonal.flip_moves"
@@ -490,7 +488,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "613ad4df30647812c1ef061c21869857803ce961513cac044e0b71f6e09a0a0a",
+      "sha256": "6cc062e616f894f91b5a359f6890f3306de01d9a6f3f45fb8ae43d4e9f937aff",
       "declarations": [
         "Becoming.Learning.Lasso"
       ]
@@ -498,7 +496,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
       "role": "proof",
-      "sha256": "521ea373e884a5151208fef0dc9eebec0622b735828e97597ac430b85456cb10",
+      "sha256": "3a715548d879ab3374975fbbf2d43ab35dbd53dd467b60288c463c5973f75d9a",
       "declarations": [
         "Becoming.Learning.goAlike_iff_lumped"
       ]
@@ -512,13 +510,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
+      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec",
       "declarations": []
     },
     {
@@ -615,12 +613,18 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Description",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -641,21 +645,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Diagonal",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -669,14 +673,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/IdentificationRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.IdentificationRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LearningRuns",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -919,6 +923,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Mechanism.lean to Laws.lean, GoAlike. Proof bindings (Learning.lean, LearningRuns.lean, Mechanism.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Learning.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; LearningRuns.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Mechanism.lean 到 Laws.lean：GoAlike。证明绑定（Learning.lean、LearningRuns.lean、Mechanism.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Learning.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；LearningRuns.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Law.goAlike_process_iff (now Learning.goAlike_iff_lumped). The sentences that named removed declarations name the kept ones. Proof bindings (Description.lean, Diagonal.lean, IdentificationRuns.lean, Learning.lean, LearningRuns.lean, Recurrence.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Description.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Diagonal.lean, takes as its final section DiagonalRuns, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; IdentificationRuns.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Learning.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; LearningRuns.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Recurrence.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Law.goAlike_process_iff（现为 Learning.goAlike_iff_lumped）。提到删去之声明的句子改提保留者。证明绑定（Description.lean、Diagonal.lean、IdentificationRuns.lean、Learning.lean、LearningRuns.lean、Recurrence.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Description.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Diagonal.lean，以末节收入 DiagonalRuns（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；IdentificationRuns.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Learning.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；LearningRuns.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Recurrence.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
     }
   ],
   "text_versions": [

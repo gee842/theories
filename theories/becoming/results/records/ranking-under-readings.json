@@ -714,7 +714,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a",
       "declarations": []
     },
     {
@@ -1340,6 +1340,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Significance.lean to Retaining.lean, Web.Adds, Web.Includes.retains, Web.Retains, Web.Retains.not_added; from ValuationFrames.lean to Extension.lean, Comparison, Extension. Proof bindings (Significance.lean, ValuationFrames.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Significance.lean, what takes no condition moved to Retaining.lean and Clearing.lean; the conditional theorems kept, statements unchanged; ValuationFrames.lean, C on frames moved to Extension.lean. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Significance.lean 到 Retaining.lean：Web.Adds、Web.Includes.retains、Web.Retains、Web.Retains.not_added；从 ValuationFrames.lean 到 Extension.lean：Comparison、Extension。证明绑定（Significance.lean、ValuationFrames.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Significance.lean，不带条件者移到 Retaining.lean 与 Clearing.lean；条件定理保留，陈述不变；ValuationFrames.lean，框架上的 C 移到 Extension.lean。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节。论断不变。"
     }
   ],
   "text_versions": [

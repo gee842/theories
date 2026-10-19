@@ -255,7 +255,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "d16d73993547ce7e228cbb5c59926f43c5ecf97e8d4ca309978fc53cb3b32a5d",
+      "sha256": "e92d403cc2fc928b753a1c407e55dcd7c1f1188b60e6d5d7bc6e8e912b4a2be9",
       "declarations": [
         "Becoming.Contextual.world",
         "Becoming.Contextual.world_active",
@@ -271,15 +271,6 @@
         "Becoming.Flow.changeReadings_free_iff",
         "Becoming.Flow.changeReadings_glue_counting_rest",
         "Becoming.World.unity"
-      ]
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/BoundaryWorlds.lean",
-      "role": "proof",
-      "sha256": "ae2da89d28268590ca9d4555d638eb75de772955761096ee3cb23125c13af0fc",
-      "declarations": [
-        "Becoming.presupposition_iff_all_of_invariant",
-        "Becoming.bounded_invariant_iff"
       ]
     },
     {
@@ -307,7 +298,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
       "role": "proof",
-      "sha256": "d7f67ac97e0df73475890f3328aa02e0a61d8fab03308353e8961e5895427e0c",
+      "sha256": "d8cd1fe970f27c43e9953404dc6eee293cce545efb7cd2b95bf3e8d635815f12",
       "declarations": [
         "Becoming.Square.no_context_free_values"
       ]
@@ -332,7 +323,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
       "role": "proof",
-      "sha256": "85e714c74592a65be4a27bd3504314cd3b1465908f0ed3dec821334ab0f38c3f",
+      "sha256": "597a696fe502aa1fd1d667cef4788e2144612343e162d4fabd05f9fbee71ed16",
       "declarations": [
         "Becoming.World.withRest",
         "Becoming.World.withRest_balanced",
@@ -342,7 +333,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
       "role": "proof",
-      "sha256": "e7aaaf4035b7b92102eb8698345ea3893b403bbc1c6d4418c61d211e44a80f48",
+      "sha256": "4f6488bd1b12be7b1edf7af5c52638f566c66566cddecd32cbbc67e750cccc1d",
       "declarations": [
         "Becoming.BoundaryInvariant",
         "Becoming.SubTrue",
@@ -350,7 +341,9 @@
         "Becoming.boundaryInvariant_iff_conditional",
         "Becoming.boundaryInvariant_iff_all",
         "Becoming.not_subTrue_of_invariant",
-        "Becoming.Boundary"
+        "Becoming.Boundary",
+        "Becoming.presupposition_iff_all_of_invariant",
+        "Becoming.bounded_invariant_iff"
       ]
     },
     {
@@ -370,12 +363,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b"
+      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -471,12 +464,18 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -490,7 +489,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Quantum.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Quantum",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -504,14 +503,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Reading",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Boundaries",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -527,13 +526,6 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/BoundaryWorlds.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.BoundaryWorlds",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -726,6 +718,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Significance.lean to Retaining.lean, bounded. Proof bindings (Boundaries.lean, Context.lean, Reading.lean, Readings.lean, Significance.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Boundaries.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Context.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Reading.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Readings.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Significance.lean, what takes no condition moved to Retaining.lean and Clearing.lean; the conditional theorems kept, statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Significance.lean 到 Retaining.lean：bounded。证明绑定（Boundaries.lean、Context.lean、Reading.lean、Readings.lean、Significance.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Boundaries.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Context.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Reading.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Readings.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Significance.lean，不带条件者移到 Retaining.lean 与 Clearing.lean；条件定理保留，陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Moved with their full names: from BoundaryWorlds.lean to Boundaries.lean, bounded_invariant_iff, presupposition_iff_all_of_invariant. Proof bindings (Boundaries.lean, Quantum.lean, Reading.lean, Readings.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; Boundaries.lean, takes as its final sections BoundaryFlows, BoundaryWorlds, the modules reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them; Quantum.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Reading.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Readings.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：连同完整名称移动：从 BoundaryWorlds.lean 到 Boundaries.lean：bounded_invariant_iff、presupposition_iff_all_of_invariant。证明绑定（Boundaries.lean、Quantum.lean、Reading.lean、Readings.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；Boundaries.lean，以末节收入 BoundaryFlows、BoundaryWorlds（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去；Quantum.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Reading.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Readings.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
     }
   ],
   "text_versions": [

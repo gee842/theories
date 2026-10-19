@@ -161,7 +161,7 @@
         "Becoming.same_hull_same_refutations",
         "Becoming.NoStretchRefutes",
         "Becoming.Dense.noStretchRefutes",
-        "Becoming.remainder_noStretchRefutes"
+        "Becoming.remainder_not_refuted"
       ]
     },
     {
@@ -358,13 +358,11 @@
         "Becoming.Ideals.VerifiableBy.compl_refutable",
         "Becoming.Ideals.VerifiableBy.interior_iff",
         "Becoming.Ideals.avoids_iff_not_meets",
-        "Becoming.Ideals.hull_not_interior_compl",
         "Becoming.Ideals.interiorBy_largest",
         "Becoming.Ideals.interiorBy_verifiable",
         "Becoming.Ideals.interior_iff_meets",
         "Becoming.Ideals.interior_largest",
         "Becoming.Ideals.interior_open",
-        "Becoming.Ideals.interior_sub",
         "Becoming.Ideals.meets_open",
         "Becoming.Ideals.meets_principal_iff",
         "Becoming.Ideals.open_and",
@@ -416,7 +414,7 @@
         "Becoming.Stretches.verifiable_of_class",
         "Becoming.Stretches.verifiable_true_false",
         "Becoming.Stretches.verifyingClass",
-        "Becoming.Stretches.verifyingClass_iff",
+        "Becoming.verified_iff_interiorBy",
         "Becoming.Verifiable.compl_refutable",
         "Becoming.Verified",
         "Becoming.Verified.holds",
@@ -431,7 +429,6 @@
         "Becoming.remainder_iff_remainderBy",
         "Becoming.remainder_largest",
         "Becoming.remainder_meets_not_not",
-        "Becoming.remainder_noStretchRefutes",
         "Becoming.remainder_not_refuted",
         "Becoming.same_hull_same_refutations",
         "Becoming.split",
@@ -439,16 +436,15 @@
         "Becoming.verifiable_compl_refutable_markov",
         "Becoming.verifiable_iff_verifiableBy",
         "Becoming.verifiable_iff_verified",
-        "Becoming.verified_iff_interiorBy",
         "Becoming.verified_largest",
         "Becoming.verified_verifiable"
       ],
-      "sha256": "6f990665c726b3cfe1b802bc81c9a0272388ed754c602433464b7218b9d71f64"
+      "sha256": "cab47ad5e7f430ba120bb22eb345cd3b0e0c519dea025ab050356865801277c2"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
       "role": "proof",
-      "sha256": "810c0d1e289b7ebc41de7bcf9a6be38f823b5eff5a8bbe3c3e478d7c40d357b5"
+      "sha256": "258e3db3065bef5514d4f9b10d01ef5af5c5911b66246038844d648ec1026206"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
@@ -463,12 +459,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b"
+      "sha256": "70f8a9ce760d7fd1f44a02909a668dcfd59017858e2223943d879ea68ba068ec"
     },
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
@@ -480,12 +476,18 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Verification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Verification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -547,6 +549,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; HistoryIdeals.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；HistoryIdeals.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed as pure forwarders (each applied one law to its own binders), the law named instead: Ideals.hull_not_interior_compl (now Ideals.AdheresBy.not_interior_compl); Ideals.interior_sub (now Ideals.InteriorBy.holds); Stretches.verifyingClass_iff (now verified_iff_interiorBy); remainder_noStretchRefutes (now remainder_not_refuted). Proof bindings (Verification.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; HistoryIdeals.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; Verification.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (receipt, counts, connectivity under the measure that no longer counts restatement) follows R32. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：作为纯转发删去（各自只把一条律应用于自己的约束变量），改提该律：Ideals.hull_not_interior_compl（现为 Ideals.AdheresBy.not_interior_compl）；Ideals.interior_sub（现为 Ideals.InteriorBy.holds）；Stretches.verifyingClass_iff（现为 verified_iff_interiorBy）；remainder_noStretchRefutes（现为 remainder_not_refuted）。证明绑定（Verification.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；HistoryIdeals.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；Verification.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（回执、计数、不再计入重述的连通性度量）随 R32。论断不变。"
     }
   ]
 }

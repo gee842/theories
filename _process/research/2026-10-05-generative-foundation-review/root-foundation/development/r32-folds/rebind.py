@@ -89,13 +89,65 @@ DROPPED = {'Becoming.MoveFormation.zero_add', 'Becoming.MoveFormation.succ_add'}
 FORWARDERS = {r['old'] for r in _rows if r['why'] == 'pure forwarder (B10)'}
 removed = set(home_base) - set(home)
 assert removed == set(REMAP) | DROPPED, (sorted(removed - set(REMAP) - DROPPED), sorted(set(REMAP) | DROPPED - removed))
-for x, y in REMAP.items():
-    # a kept name the receipt does not list is a constant Lean generates (`Site.node.inj`) or the foundation's
-    assert y in home or not y.startswith('Becoming.') or y.endswith('.inj'), y
+# A kept name the receipt does not list is a constant Lean generates (`Site.node.inj`), a structure's field or
+# the foundation's: it is filed under the module of the declaration it belongs to, and a declaration list names
+# that declaration (the receipt elaborates `Run`, not its field `Run.step`); the history note names the kept name.
+LISTED = {}
+for x, y in list(REMAP.items()):
+    if y in home or not y.startswith('Becoming.'):
+        continue
+    parts = y.split('.')
+    owner = next(('.'.join(parts[:k]) for k in range(len(parts) - 1, 1, -1) if '.'.join(parts[:k]) in home), None)
+    assert owner, y
+    home[y] = home[owner]
+    LISTED[y] = owner
 MOVED = {x for x in home_base if x in home and home[x] != home_base[x]}
 UNIVERSE = set()
 
-TEXT = {}
+# The sentences naming a removed declaration name the kept one. A validation scope listing what an earlier
+# receipt checked keeps the names that receipt checked (it is evidence of that check).
+TEXT = {
+    'bounded-census-keeps-pace': [
+        ('the census law (Listed.coming_of_ceasing, Web.arising_of_ceasing)', 'the census law (Listed.coming_of_ceasing)'),
+        ('普查定律（Listed.coming_of_ceasing、Web.arising_of_ceasing）', '普查定律（Listed.coming_of_ceasing）'),
+    ],
+    'census-balance-under-continuation': [
+        ('Generalizes Web.arising_of_ceasing to', 'Generalizes Listed.coming_of_ceasing to'),
+        ('推广 Web.arising_of_ceasing 到', '推广 Listed.coming_of_ceasing 到'),
+        ('the bounded law (Web.ceasing_of_arising)', 'the bounded law (Listed.ceasing_of_coming)'),
+        ('推广有界定律（Web.ceasing_of_arising）', '推广有界定律（Listed.ceasing_of_coming）'),
+    ],
+    'consequence-revised-reference-plan': [
+        ('Registration.keeps_iff and Keeps', 'Learning.Training.keeps_through_iff and Keeps'),
+        ('Registration.keeps_iff 及 Keeps', 'Learning.Training.keeps_through_iff 及 Keeps'),
+    ],
+    'histories-fix-law-up-to-dead-ends': [
+        ("a run's history is admitted by its law (Run.admits)", "a run's history is admitted by its law (Run.step)"),
+        ('运行的历史为其律所容许（Run.admits）', '运行的历史为其律所容许（Run.step）'),
+    ],
+    'listing-once-is-decided-identity': [
+        ('(Flow.present_listsOnce_iff, Flow.present_numbers_iff)', '(listsOnce_iff_decided, numbers_iff_decided)'),
+        ('（Flow.present_listsOnce_iff、Flow.present_numbers_iff）', '（listsOnce_iff_decided、numbers_iff_decided）'),
+    ],
+    'losses-of-the-sum-over-histories': [
+        ('added to the sum over those dropped (Weights.truncation)', 'added to the sum over those dropped (Weights.sum_append)'),
+        ('所留之和加所弃之和（Weights.truncation）', '所留之和加所弃之和（Weights.sum_append）'),
+    ],
+    'only-the-order-of-change-registers': [
+        ('a census survives a stuttering (World.stutter_counted)', 'a census survives a stuttering (World.sample_counted)'),
+        ('普查经停顿保留（World.stutter_counted）', '普查经停顿保留（World.sample_counted）'),
+    ],
+    'the-split-that-makes-sense': [
+        ("Law.goAlike_process_iff is the instance of Becoming.Learning's goAlike_iff_lumped, written independently with the same proof.",
+         "On the process of a deterministic law (Law.process next), the steps go alike across a lumping π exactly where states π lumps together step to states π lumps together: this is Becoming.Learning's goAlike_iff_lumped, which the record cites directly."),
+        ('Law.goAlike_process_iff 是 Becoming.Learning 的 goAlike_iff_lumped 的实例（两者各自写成，证明相同）。',
+         '在确定性律的过程（Law.process next）上，步骤经归并 π 同去，恰当被 π 归在一起的状态走到被 π 归在一起的状态：这就是 Becoming.Learning 的 goAlike_iff_lumped，本记录直接引用它。'),
+        ('Law.goAlike_process_iff is the instance of its goAlike_iff_lumped.',
+         "Its goAlike_iff_lumped (on a deterministic law's process the steps go alike across a lumping exactly where lumped states step to lumped states) is the law this record cites."),
+        ('Law.goAlike_process_iff 是其 goAlike_iff_lumped 的实例。',
+         '其 goAlike_iff_lumped（在确定性律的过程上，步骤经一个归并同去，恰当归在一起的状态走到归在一起的状态）是本记录引用的定律。'),
+    ],
+}
 PATHFIX = {}
 STUDY = '_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md'
 CH = 'theories/becoming/chapters/'
@@ -121,7 +173,7 @@ LEAN_WHAT = {
 }
 for s, xs in _folded_into.items():
     LEAN_WHAT[s + '.lean'] = (
-        'takes, as its final section' + ('s ' if len(xs) > 1 else ' ') + ', '.join(xs)
+        'takes as its final section' + ('s ' if len(xs) > 1 else ' ') + ', '.join(xs)
         + ', the module' + ('s' if len(xs) > 1 else '') + ' reading it, folded in with declarations, names and statements unchanged; '
         'pure forwarders and copies removed where it had them',
         '以末节收入 ' + '、'.join(xs) + '（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去')
@@ -161,12 +213,16 @@ def bare(x):
     return x.split(P, 1)[1] if x.startswith(P) else x
 
 
-def remap(names, replaced):
+def remap(names, replaced, dropped):
     out = []
     for x in names:
+        if x in DROPPED:
+            dropped.append(x)
+            continue
         y = REMAP.get(x, x)
         if y != x:
             replaced.append((x, y))
+        y = LISTED.get(y, y)
         if y not in out:
             out.append(y)
     return out
@@ -196,7 +252,7 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     before = json.dumps(d, ensure_ascii=False)
     refs = d.get('references', [])
     by = {r['path']: r for r in refs}
-    moved, replaced, texts = [], [], 0
+    moved, replaced, dropped, texts = [], [], [], 0
     for old, new in TEXT.get(rid, []):
         hits = [(c, k) for c, k in strings(d) if old in c[k]]
         if not hits and any(new in c[k] for c, k in strings(d)):
@@ -207,7 +263,7 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
         texts += 1
     for law in d.get('laws', []) or []:
         if isinstance(law, dict) and law.get('declarations'):
-            law['declarations'] = remap(law['declarations'], replaced)
+            law['declarations'] = remap(law['declarations'], replaced, dropped)
     if isinstance(d.get('aliases'), list):
         replaced += [(x, REMAP[x]) for x in d['aliases'] if x in REMAP]
         d['aliases'] = [x for x in d['aliases'] if x not in REMAP]
@@ -227,9 +283,13 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
             continue
         keep = []
         for x in r['declarations']:
+            if x in DROPPED:
+                dropped.append(x)
+                continue
             y = REMAP.get(x, x)
             if y != x:
                 replaced.append((x, y))
+            y = LISTED.get(y, y)
             target = path_of[home[y]] if y in home else r['path']
             if target != r['path'] and (y != x or x in MOVED or r['path'] in GONE_FILES):
                 t = ref_for(target, r)
@@ -276,6 +336,9 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
             path = HISTORY_OF.get(LEANDIR + orec['source_paths'][m['module']])
             # Only modules since moved to the history folder; a live periphery module keeps its own receipt.
             if not hit or not path:
+                continue
+            # a history file the record already binds (to the receipt that checked those bytes) keeps that binding
+            if any(b['source'] == path for b in d['proof_bindings']):
                 continue
             assert h(path) == orec['source_sha256'][m['module']], (rid, m['module'])
             d['proof_bindings'].append({'source': path, 'receipt': old, 'sha256_pointer': '/source_sha256/' + m['module'],
@@ -334,11 +397,16 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     if rp:
         en += ' Removed, with the statement kept under one name: ' + '; '.join(f'{x} (now {y})' for x, y in rp) + '.'
         zh += '删去，陈述以一个名称保留：' + '；'.join(f'{x}（现为 {y}）' for x, y in rp) + '。'
+    if dropped:
+        ds = ', '.join(sorted({bare(x) for x in dropped}))
+        en += f' Removed with the copy that alone used them, so dropped from the lists: {ds}.'
+        zh += f'只为一个已删去的副本所用，随之删去，故从列表中去掉：{ds}。'
     if new_canon:
         en += f' The canonical source {short(canon)} was folded into {short(new_canon)} as its final section; it is now {short(new_canon)}.'
         zh += f'规范来源 {short(canon)} 已作为末节折入 {short(new_canon)}，现为 {short(new_canon)}。'
     if texts:
-        en += ' The sentence that named a removed declaration names the kept one.'
+        en += (' The sentence that named a removed declaration names the kept one.' if texts == 1 else
+               ' The sentences that named removed declarations name the kept ones.')
         zh += '提到删去之声明的句子改提保留者。'
     for path, old, hit in kept_alias:
         en += (f' {path}, in the Lean history folder with its bytes, is bound to receipt {old}, which elaborates '
@@ -372,3 +440,6 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     else:
         d.setdefault('history', []).append({'en': en, 'zh': zh})
     open(f, 'w').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
+    n += 1
+    print(rid, len(mv), len(rp) + len(rf), texts, sorted(set(rebound)), len(ps), short(new_canon) if new_canon else '')
+print(n, 'records changed')

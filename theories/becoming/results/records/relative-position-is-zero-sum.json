@@ -18,7 +18,7 @@
       "en": "Zero-sum is counting. A part's position is its amount counted once for each part (ahead) against the family's total (behind); over the family the ahead counts total what the behind counts total. Across every change of amounts the rise counts total what the fall counts total, so a part's change of position is the opposite of the change summed over the rest, and where it rises the rest's summed position falls.",
       "zh": "零和是计数。一个部分的位置，是它的量按部分数计入（在前）对全族之总（在后）；全族的在前计数之和等于在后计数之和。在量的每一变化中，升计数之和等于降计数之和，所以一个部分的位置变化恰是其余部分变化之和的相反；它升，则其余部分的位置之和降。",
       "declarations": [
-        "Becoming.RelativePosition.total_same",
+        "Becoming.total_const",
         "Becoming.RelativePosition.total_split",
         "Becoming.RelativePosition.positions_balance",
         "Becoming.RelativePosition.riseCount",
@@ -316,7 +316,6 @@
         "Becoming.RelativePosition.riseCount",
         "Becoming.RelativePosition.rise_needs_fall",
         "Becoming.RelativePosition.total_lt_of_mem",
-        "Becoming.RelativePosition.total_same",
         "Becoming.RelativePosition.total_split",
         "Becoming.Restored.Member",
         "Becoming.Restored.acting",
@@ -331,7 +330,15 @@
         "Becoming.Restored.takeAt",
         "Becoming.Restored.web"
       ],
-      "sha256": "34b323dc7786264a356c9b456b2e2b833a8ee36d55e567530973a9dbb32f7ed5"
+      "sha256": "4eac67fa30ede50817294b8f5c091be07735c2a6539a39a2867f4f6ebbbe566a"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "role": "proof",
+      "sha256": "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e",
+      "declarations": [
+        "Becoming.total_const"
+      ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
@@ -357,7 +364,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
+      "sha256": "21fea634c188ed811e2464d370cb70aa7098ae223d91cdb16747992e05cbda8a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -384,13 +391,26 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RelativePosition",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Evolution",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -427,6 +447,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Continuation.lean, the witness Clearing moved to Clearing.lean; Significance.lean, what takes no condition moved to Retaining.lean and Clearing.lean; the conditional theorems kept, statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Continuation.lean，见证 Clearing 移到 Clearing.lean；Significance.lean，不带条件者移到 Retaining.lean 与 Clearing.lean；条件定理保留，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Removed, with the statement kept under one name: RelativePosition.total_same (now total_const). Proof bindings (RelativePosition.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 223 added; RelativePosition.lean, pure forwarders and copies removed (B10, B9), uses pointed at the law they restate; imports follow the folds; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：删去，陈述以一个名称保留：RelativePosition.total_same（现为 total_const）。证明绑定（RelativePosition.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 223 节；RelativePosition.lean，纯转发与副本删去（B10、B9），用法改指所重述之律；导入随折入；保留的陈述不变。论断不变。"
     }
   ]
 }

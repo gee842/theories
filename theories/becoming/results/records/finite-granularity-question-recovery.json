@@ -51,6 +51,10 @@
     {
       "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): GranularityBridge.lean, in the Lean history folder with its bytes, is bound to receipt 20261018T222948.779875Z, which elaborates Becoming.cross_granularity_history_matches_of_em, so the alias stays checked. Proof bindings (Granularity.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Granularity.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：GranularityBridge.lean（连同字节在 Lean 历史目录中）绑定到回执 20261018T222948.779875Z，它精化了 Becoming.cross_granularity_history_matches_of_em，别名因此仍受检查。证明绑定（Granularity.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Granularity.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R32 (forwarders, copies and reading modules: pure forwarders removed, statements stated once, reading modules folded into the module they read): Proof bindings (Granularity.lean) rebound to core receipt 20261019T231053.882924Z. Re-pointed after reading the change: Granularity.lean, takes as its final section Grains, the module reading it, folded in with declarations, names and statements unchanged; pure forwarders and copies removed where it had them. The claim is unchanged.",
+      "zh": "2026年10月20日，R32（转发、副本与读取模块：纯转发删去，命题只陈述一次，读取模块折入其所读模块）：证明绑定（Granularity.lean）改到核心回执 20261019T231053.882924Z。读过改动后重新指向：Granularity.lean，以末节收入 Grains（读它的模块），声明、名称与陈述不变；其中的纯转发与副本删去。论断不变。"
     }
   ],
   "id": "finite-granularity-question-recovery",
@@ -201,7 +205,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
       "role": "proof",
-      "sha256": "86e8a037af43de4c61e044a7d46bc7ec9fc0c261bdea8fee98bd2d41b7b2f1a1",
+      "sha256": "af8f55f0a1661eaaa8941f9c60536d8db113cc4ab43b8abe577ecb5a9187a437",
       "declarations": [
         "Becoming.Frame.blocks",
         "Becoming.Frame.blocks_trace_iff",
@@ -245,6 +249,12 @@
       "role": "receipt",
       "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
+      "role": "receipt",
+      "sha256": "6ea918ef99c29d6911a506173194b82dde4acefe42dbb544952394e2730c517c",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -257,7 +267,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T231053.882924Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Granularity",
       "success_pointer": "/status",
       "success_value": "passed"
