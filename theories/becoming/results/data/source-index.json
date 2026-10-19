@@ -197,6 +197,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
