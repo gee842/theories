@@ -274,7 +274,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundaryWorlds.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/BoundaryWorlds.lean",
       "role": "proof",
       "sha256": "ae2da89d28268590ca9d4555d638eb75de772955761096ee3cb23125c13af0fc",
       "declarations": [
@@ -531,7 +531,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundaryWorlds.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/BoundaryWorlds.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.BoundaryWorlds",
       "success_pointer": "/status",

@@ -159,7 +159,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DiagonalRuns.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DiagonalRuns.lean",
       "role": "proof",
       "sha256": "6a5b57d8018324a9afcbd46659183efcf78192919e80c965bfedf70c3ad08066",
       "declarations": [
@@ -298,7 +298,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DiagonalRuns.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DiagonalRuns.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.DiagonalRuns",
       "success_pointer": "/status",

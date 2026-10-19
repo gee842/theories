@@ -132,7 +132,7 @@
     "zh": "维持、取用与修复是同一展开中分化的作用。旧 Law.level 给出修复窗口起点；每步净增通过 repair_window_progress 接到原维持支持测试。仅第一次取用不同的两段历史改变实际修复支持，后续名义输入并不等于实际供给。没有真实系统的经验对应。",
     "en": "Sustaining, drawing and repair differentiate roles within one unfolding. The inherited Law.level supplies the repair-window start; per-step progress through repair_window_progress feeds the original sustaining-support test. A first-draw difference changes actual repair support; later nominal inputs are not actual supply. No empirical correspondence to a real system is established."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SupportRecovery.lean",
   "aliases": [
     "RenewalRecovery.inactive_pair_absorbs",
     "RenewalRecovery.supported_repair_step",
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SupportRecovery.lean",
       "role": "proof",
       "sha256": "3f000483a6155cbddad0ec40dba64a650bb22085dbf01eeddd69fbdef4fa1d88",
       "declarations": [
@@ -363,7 +363,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SupportRecovery.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T190110.587858Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.SupportRecovery",
       "success_pointer": "/status",

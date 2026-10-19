@@ -3,6 +3,33 @@
   "root": "experiments/integrated-correction/general-framework/generative-basis/lean/history",
   "entries": [
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AcceptanceFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/AcceptanceFrames.lean",
+      "sha256": "64cf6576f54c28136390fd16c12c55838e4bbe886de02da6bc9a3d2eef15a25c",
+      "blob": "8740777f6a76d8fe12c2e80c3ac095487a9150a7",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.FrontierFrames as its final section AcceptanceFrames, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/AcceptanceFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundaryFlows.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/BoundaryFlows.lean",
+      "sha256": "51753b97e396601a07e41857fc5b378e540c731f419e7a8601beb61c3915366a",
+      "blob": "77a791d704e31a3bf90ed647587957745eefb1ef",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Boundaries as its final section BoundaryFlows, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundaryFlows.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundaryWorlds.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/BoundaryWorlds.lean",
+      "sha256": "ae2da89d28268590ca9d4555d638eb75de772955761096ee3cb23125c13af0fc",
+      "blob": "4fd0bfb8ebb4f52527e04e1444709a2cc4000596",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Boundaries as its final section BoundaryWorlds, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/BoundaryWorlds.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
       "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
@@ -10,6 +37,33 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CandidateRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CandidateRuns.lean",
+      "sha256": "dd87d90c3bc0f937206cb64c9f6554c6e9069cfcfdf3fd0e6b5afd9b72d941c2",
+      "blob": "1ec414e69888f9ccb03fa2dc8793b006edc21354",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Courses as its final section CandidateRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CandidateRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CaptureWorlds.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CaptureWorlds.lean",
+      "sha256": "15702ed25331913bcd844d1cbacff9a43aa9c836bc45f48eba4cf9f2d4844bec",
+      "blob": "bbe4cf092dd3c1391b699942d3eb3ea263f706df",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Capture as its final section CaptureWorlds, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CaptureWorlds.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusWebs.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CensusWebs.lean",
+      "sha256": "f662518a7806476489239615afa422223bfe52c8aeadce3a60db3bd4ad678517",
+      "blob": "7f3c21f73f4609279c296dd6d6ff555407856d90",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Listing as its final section CensusWebs, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CensusWebs.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClassifiedFramesInherited.lean",
@@ -39,6 +93,15 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTracesInherited.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CountdownCourses.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CountdownCourses.lean",
+      "sha256": "52960b174e6eccfe08b9d91ad532edfd4698130e61db45bf0bf6c991c3059f59",
+      "blob": "f62d5192197f9ee74c3bf6b3186554cbad1e68ef",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Countdown as its final section CountdownCourses, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CountdownCourses.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CouplingHistoryFrames.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CouplingHistoryFrames.lean",
       "sha256": "3a9ad9e744639725f881d46af82aa2322346f89e892dc04af494d4272db96e35",
@@ -64,6 +127,15 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CoursesBridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DependenceWebs.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DependenceWebs.lean",
+      "sha256": "5d1adba529a99ea08a54aacba85847f7089f8d115693728d8789eb39b3c76150",
+      "blob": "c4f1c49ad74b2e0f50096baf466fa6f7bb01fa58",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Units as its final section DependenceWebs, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DependenceWebs.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DephasingRuns.lean",
@@ -100,6 +172,15 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DescentRenewalRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DiagonalRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DiagonalRuns.lean",
+      "sha256": "6a5b57d8018324a9afcbd46659183efcf78192919e80c965bfedf70c3ad08066",
+      "blob": "d82f03ddb1e81248b830bec41f559a8e95a5bef0",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Diagonal as its final section DiagonalRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DiagonalRuns.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DispatchProcessesInherited.lean",
@@ -147,6 +228,15 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExactRecordRunsInherited.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangeFlows.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ExchangeFlows.lean",
+      "sha256": "382066f202ee155ae50c99c37dccecf87d68327782ebfc829387d38769a44ecb",
+      "blob": "43cbdcb1498a0f0ec0907b168323de8b708d035b",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Sampling as its final section ExchangeFlows, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangeFlows.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExtendedClaimFrames.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ExtendedClaimFrames.lean",
       "sha256": "7c41d13900064960bf0a4b3961f33b3677ed7b21d177bf87daa9d9db9e2218ce",
@@ -181,6 +271,15 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FormationTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Grains.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Grains.lean",
+      "sha256": "be8dba333566e4124d51e5f92147bfb87da72fb434338c5fbfdd4460b94c9bc2",
+      "blob": "68fe4817fe55e67ee2ee7b1e06c044030bb734eb",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Granularity as its final section Grains, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Grains.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean",
@@ -309,6 +408,24 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhaseTracesInherited.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPlanFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JointPlanFrames.lean",
+      "sha256": "c8e3c4099a2091ec11c8b83c285d068a7c224ff38c8f9182e6a475afcf631ede",
+      "blob": "84b338b00458a3dff2fff3f3c0015c5230eb88a9",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Composition as its final section JointPlanFrames, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPlanFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelWebs.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/LevelWebs.lean",
+      "sha256": "f7277d27b4e1a3f30854e8985014ff7257ab2f5fe097816dc5a315f4acf18991",
+      "blob": "66c6e9b68a4ed0a7170fc0b8e067d196d28b5396",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Entropy as its final section LevelWebs, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LevelWebs.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListTests.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ListTests.lean",
       "sha256": "ae36d0df480bb1b8443d2944bdf35b1c08c80b54c99cec2b883118f45b153616",
@@ -318,6 +435,15 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListTests.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedOutcomeFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ListedOutcomeFrames.lean",
+      "sha256": "73f00b7b3d25f39194f067624e42d3e41e4eaf190f3ee2dbb4fc8cb6da5a7b81",
+      "blob": "1b006cd16e3d78ac3dac7edc2dc05aec543d5072",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Likeness as its final section ListedOutcomeFrames, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListedOutcomeFrames.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/MoveOutcomeProcessesInherited.lean",
       "sha256": "9d96a2106cf189608a60911389582a596a910931ec057a8540972ee3c6369a23",
@@ -325,6 +451,15 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/MoveRuns.lean",
+      "sha256": "5eab66e34f017af276e80b4bd10ff42e5eefd6e09997a607849982af0b0d135d",
+      "blob": "de392f5bbb1ea45933111c9727157167ebd09ebf",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.MoveFormation as its final section MoveRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveRuns.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Naturals.lean",
@@ -343,6 +478,33 @@
       "batch": "R31-history",
       "reason": "R31 (20 October 2026): split along its two readings into Becoming.Stuttering, Becoming.Reordering and Becoming.IdleRemoval, declarations and names unchanged; bytes as on main 5c55b36f4",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderWorlds.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/OrderWorlds.lean",
+      "sha256": "02e05dc5ca8ad62882f966871fe34962a9215f7020afebb00e421febf2646c03",
+      "blob": "53c98158b0748d138b22b70fb3c4e3f7e936fe6c",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.OrderNormal as its final section OrderWorlds, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderWorlds.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PassageWorlds.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/PassageWorlds.lean",
+      "sha256": "cb2f3baccfeee52451b0a36f0f984035b7bbd2e08668c4fcb58ffddadf788503",
+      "blob": "8ef074f42f7af8a4af6cebd999aa421847b31bf9",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.OneStep as its final section PassageWorlds, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PassageWorlds.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PresentationFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/PresentationFrames.lean",
+      "sha256": "5379a0c898101ef2129bf0791038a7685bd4279e15baddff67a3d4de613240c7",
+      "blob": "724d95df742fbb618388840a26a617c7e8e04959",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Presentations as its final section PresentationFrames, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PresentationFrames.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean",
@@ -426,6 +588,24 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReconfigurationProcessesInherited.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RecurrenceRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RecurrenceRuns.lean",
+      "sha256": "c8418a92d67dbdf3a4077dfb46f517e7aa0bd9ac894c816c04e6a70b11de866d",
+      "blob": "39feb4714a3aca1b70a2a5b63ff6bc47a2ff1edb",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Branching as its final section RecurrenceRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RecurrenceRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReducedRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ReducedRuns.lean",
+      "sha256": "2e8a8cd695856746cdd35d833f97a13a184036e4b203f65acfad3a67f65871ef",
+      "blob": "f61e902a0227c29a5589f6ac50f1faf38f126392",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Courses as its final section ReducedRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReducedRuns.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
       "sha256": "ae3569b0dcb912f605231c5d903f188480158c35c552bb4cba9ee668be187cf7",
@@ -442,6 +622,24 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RetrodictionRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RetrodictionRuns.lean",
+      "sha256": "4791f7bb5afc9a6722511670696b0057777cfbce270e9166b8974300a7908707",
+      "blob": "b2fa0fb69ae4dab7112c2ac2362a3539abfb4c88",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Courses as its final section RetrodictionRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RetrodictionRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RevisionRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RevisionRuns.lean",
+      "sha256": "7173d611bd4214b8520c6962378540f67eb18befc69588f4812355895f59fdd5",
+      "blob": "aa325dd4fd86828f706d4bc5239e640bca10bbb2",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Revision as its final section RevisionRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RevisionRuns.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoffTraces.lean",
@@ -507,6 +705,15 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeedReachProcesses.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StockTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/StockTraces.lean",
+      "sha256": "53cc5808969456aeafd218d34426659682215a8e68ccd4e2a7332d475b5ee0ba",
+      "blob": "12b26d3ebf59e382bb7bb4e74811210ac4c5f70b",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Stock as its final section StockTraces, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StockTraces.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransportRuns.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/StrictTransportRuns.lean",
       "sha256": "9a1faf6f080cee6192ddefb691d9f4aa8779b2fc45bce3f97da86534e9f03454",
@@ -532,6 +739,33 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportGatedWebsInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SupportRecovery.lean",
+      "sha256": "3f000483a6155cbddad0ec40dba64a650bb22085dbf01eeddd69fbdef4fa1d88",
+      "blob": "2c44033a8e54977956e70a3d8eb4884c3ab0692f",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.RenewalFlow as its final section SupportRecovery, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportRecovery.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TailRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/TailRuns.lean",
+      "sha256": "25a205482b18328cde0d2bc6c825753eae950a1fcdf8d1235c905be81b6fbf1a",
+      "blob": "e42cf4123f165612607a33e1471668556c3189e1",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Tail as its final section TailRuns, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TailRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TallyWorlds.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/TallyWorlds.lean",
+      "sha256": "bcb7f8571a4a499a5d7ddbbb6fcd0a8c36c46eadad442928557360e746a01f4d",
+      "blob": "de2aa3678f07fb300e147c14d5f41c2991a6a23c",
+      "batch": "R32-history",
+      "reason": "R32 (20 October 2026): folded into Becoming.Counting as its final section TallyWorlds, declarations and names unchanged; bytes as on main ad2efa757",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TallyWorlds.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TestCodeFrames.lean",

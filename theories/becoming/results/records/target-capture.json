@@ -285,7 +285,7 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CaptureWorlds.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CaptureWorlds.lean",
       "role": "proof",
       "sha256": "15702ed25331913bcd844d1cbacff9a43aa9c836bc45f48eba4cf9f2d4844bec",
       "declarations": [
@@ -403,7 +403,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CaptureWorlds.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CaptureWorlds.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T071851.986246Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CaptureWorlds",
       "success_pointer": "/status",
