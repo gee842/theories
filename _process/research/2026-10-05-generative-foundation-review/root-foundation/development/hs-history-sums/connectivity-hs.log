@@ -1,11 +1,11 @@
 {
- "commit": "a1f09ece0ac44cf1d153c7aeea835cc736d1eb79",
- "sources_match_commit": false,
- "core_receipt_at_commit": "20261019T092027.048735Z",
+ "commit": "2399e6bcc00912a3728a896d5125b40bbd697382",
+ "sources_match_commit": true,
+ "core_receipt_at_commit": "20261019T141645.763808Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
- "tracked_modules": 279,
- "constants": 32881,
- "spine_theorems": 10429,
+ "tracked_modules": 295,
+ "constants": 35731,
+ "spine_theorems": 11453,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -26,23 +26,23 @@
   "Process reaches World family": false
  },
  "classes": {
-  "statement on both families": 161,
-  "statement on Process/Frame/Run/Trace": 2666,
-  "statement on World/Flow/Web": 3094,
-  "proof through a base family": 125,
-  "used by a theorem on the base": 3953,
-  "apart: own vocabulary": 391,
-  "apart: prelude-only statement": 39
+  "statement on both families": 163,
+  "statement on Process/Frame/Run/Trace": 3032,
+  "statement on World/Flow/Web": 3206,
+  "proof through a base family": 138,
+  "used by a theorem on the base": 4422,
+  "apart: own vocabulary": 449,
+  "apart: prelude-only statement": 43
  },
- "apart_used_by_nothing": 316,
- "apart_roots": 316,
+ "apart_used_by_nothing": 347,
+ "apart_roots": 348,
  "apart_roots_by_category": {
-  "model-witness": 169,
-  "support": 78,
-  "general-structure": 46,
+  "model-witness": 205,
+  "support": 86,
+  "general-structure": 30,
   "logical-strength": 10,
-  "restates": 12,
-  "calibration": 1
+  "restates": 15,
+  "calibration": 2
  },
  "apart_roots_unclassified": [],
  "register_entries_not_apart_roots": [],
@@ -68,6 +68,7 @@
   "Becoming.LabelledRoles": 2,
   "Becoming.LawThroughCoupling": 2,
   "Becoming.Hexagrams": 2,
+  "Becoming.HexagramSequences": 2,
   "Becoming.Persistence": 1,
   "Becoming.ActiveReading": 1,
   "Becoming.Counterfactual": 1,
@@ -75,25 +76,33 @@
   "Becoming.CourseRoles": 1
  },
  "apart_by_module": {
+  "Becoming.LeastLoss": [
+   47,
+   74
+  ],
+  "Becoming.HexagramSites": [
+   23,
+   103
+  ],
   "Becoming.Frontier": [
-   27,
+   23,
    84
   ],
   "Becoming.HexagramPlaces": [
-   21,
+   20,
    108
   ],
   "Becoming.Ideals": [
    16,
    99
   ],
-  "Becoming.WitnessRefinement": [
-   16,
-   44
-  ],
   "Becoming.IntegerOrder": [
    15,
    39
+  ],
+  "Becoming.HexagramLaws": [
+   13,
+   130
   ],
   "Becoming.CodeAcquisition": [
    13,
@@ -111,14 +120,6 @@
    11,
    19
   ],
-  "Becoming.FaultEnvelopes": [
-   11,
-   19
-  ],
-  "Becoming.Narrowing": [
-   11,
-   60
-  ],
   "Becoming.Quantum": [
    9,
    37
@@ -127,9 +128,9 @@
    9,
    101
   ],
-  "Becoming.HistoryIdeals": [
+  "Becoming.HexagramSequences": [
    9,
-   80
+   98
   ],
   "Becoming.ListFootprints": [
    9,
@@ -143,13 +144,13 @@
    8,
    85
   ],
-  "Becoming.PooledEnvelopes": [
-   8,
-   44
-  ],
   "Becoming.GuardHorizon": [
    8,
    32
+  ],
+  "Becoming.Verification": [
+   8,
+   91
   ],
   "Becoming.PositiveGround": [
    8,
@@ -167,6 +168,10 @@
    7,
    51
   ],
+  "Becoming.WitnessRefinement": [
+   7,
+   44
+  ],
   "Becoming.Sensitivity": [
    7,
    47
@@ -178,6 +183,10 @@
   "Becoming.Naturals": [
    6,
    18
+  ],
+  "Becoming.PooledEnvelopes": [
+   6,
+   44
   ],
   "Becoming.ChanceFloors": [
    6,
@@ -235,6 +244,10 @@
    4,
    31
   ],
+  "Becoming.Narrowing": [
+   4,
+   60
+  ],
   "Becoming.HistorySums": [
    4,
    41
@@ -258,6 +271,10 @@
   "Becoming.ListTests": [
    3,
    36
+  ],
+  "Becoming.FaultEnvelopes": [
+   3,
+   19
   ],
   "Becoming.CrossSituational": [
    3,
@@ -294,6 +311,10 @@
   "Becoming.Selection": [
    2,
    67
+  ],
+  "Becoming.Undecided": [
+   2,
+   64
   ],
   "Becoming.Revision": [
    2,
@@ -425,7 +446,7 @@
   ]
  },
  "components": {
-  "count": 59,
+  "count": 66,
   "theorems_outside_the_main_component": [
    "Becoming.Dispatch.add_three_assoc",
    "Becoming.GuardHorizon.coverage_transports",
@@ -443,8 +464,6 @@
    "Becoming.PartialReadout.safe_of_holds",
    "Becoming.Registration.retained_keeps",
    "Becoming.Requirement.Collective.no_common_plan",
-   "Becoming.Requirement.Settled.no_residual",
-   "Becoming.Requirement.residual_of_unfulfilled",
    "Becoming.Requirement.separate_not_joint",
    "Becoming.Routes.cond_zero_mul"
   ]
@@ -475,9 +494,9 @@
   "theorems_outside_the_main_component": []
  },
  "records_by_best_alias_class": {
-  "statement on both families": 26,
-  "statement on Process/Frame/Run/Trace": 106,
-  "statement on World/Flow/Web": 90,
+  "statement on both families": 27,
+  "statement on Process/Frame/Run/Trace": 115,
+  "statement on World/Flow/Web": 95,
   "proof through a base family": 1,
   "used by a theorem on the base": 6,
   "apart: own vocabulary": 1
