@@ -210,6 +210,7 @@ import Becoming.ResponseLearning
 import Becoming.LearnedGrouping
 import Becoming.ParityReadings
 import Becoming.FinerTraces
+import Becoming.HistorySums
 import Becoming.FormedLoops
 import Becoming.AttractionRuns
 import Becoming.BoundaryFlows
@@ -2248,6 +2249,22 @@ readings of the unfolding (`Becoming.Labelled`).
   with no premise. The finer courses of `n` steps are exactly the finer law's traces of `n` steps
   taking listed moves to listed configurations; the law of steps of positive weight is the finer
   law with the situation forgotten, and situations exist exactly where it has a course.
+* `Becoming.HistorySums` (L4): support, splitting, exact orders and the steps between of the sum
+  over histories, with no premise beyond what each theorem names. Where a weighting vanishes off
+  the steps a possibility admits, the sum vanishes wherever possibility does not reach the
+  reading. The transfer splits at every intermediate horizon, and the weight along a joined
+  course at its joint. The exact order `i` reads order `i` through each step's ground part and
+  order `i - 1` through its response part; above the horizon it vanishes for every weighting.
+  Where alternatives commute it is the sum over the courses with exactly `i` responses, taking
+  each step through one part loses nothing, the orders of `Becoming.Routes` are its partial sums
+  and the whole sum is the sum of all of them; for one configuration with ground one and response
+  `M` the exact order `i` is `binom n i * M ^ i`. With the first possible course in listed order,
+  whose alternatives do not commute, one step's sum is not the sum of its exact orders. What is
+  carried from a configuration to where a reading holds depends only on the weights of the steps
+  between them. Read on a process whose steps the weights read, these are laws of its traces: no
+  weight where no trace reaches, traces split at every number of moves, an exact order not zero
+  has a trace and a course of the parts with exactly that many responses, and the steps between are
+  those on a trace from the start to the reading.
 * `Becoming.FormedLoops` (L4): worlds whose loops form within them, with no premise. Up to a step,
   a world whose strengths are read off its own standing stands as the balanced world its couplings
   formed before that step carry. The witnesses of `Becoming.Closing` and `Becoming.Frequency` are

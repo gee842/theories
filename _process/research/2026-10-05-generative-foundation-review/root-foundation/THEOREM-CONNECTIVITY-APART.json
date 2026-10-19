@@ -1736,6 +1736,26 @@
    "module": "Becoming.HexagramSequences",
    "category": "restates",
    "reason": "PhaseCount_parity (Becoming.HexagramPlaces) restated in the count of unbroken lines: the count in phase has the other parity; the parity is read on the base by run_yangOdd and changes_run_yangOdd."
+  },
+  "Becoming.HistorySums.firstListed_not_comm": {
+   "module": "Becoming.HistorySums",
+   "category": "model-witness",
+   "reason": "a fact about one constructed weighting (the first possible course in listed order, on Option Nat): two of its alternatives do not commute, computed by evaluation"
+  },
+  "Becoming.HistorySums.grouping_needs_commuting": {
+   "module": "Becoming.HistorySums",
+   "category": "model-witness",
+   "reason": "a counterexample on one configuration with two moves: under the first-listed weighting one step's sum over histories is not the sum of its exact orders, so the grouping laws need alternatives that commute; their readings on processes are HistorySums.exactly_trace and HistorySums.exactly_responses_trace"
+  },
+  "Becoming.Routes.SelfLoop.exactly_eq": {
+   "module": "Becoming.HistorySums",
+   "category": "model-witness",
+   "reason": "the exact orders of the one-configuration self-loop with ground weight one and response weight M, computed as Loops.binom n i * M ^ i; the self-loop's world is on the base through RouteTraces"
+  },
+  "Becoming.Weights.along_append": {
+   "module": "Becoming.HistorySums",
+   "category": "support",
+   "reason": "the weight along an appended list of steps composes at the joint, by unfolding Weights.along; its process reading is HistorySums.trace_split_iff, through Weights.transfer_split"
   }
  }
 }
