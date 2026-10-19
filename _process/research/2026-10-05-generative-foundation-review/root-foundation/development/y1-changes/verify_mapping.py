@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the mapping of the 周易 and the 易传 onto the spine (Y1, Y2, Y3). usage, from anywhere:
+"""Check the mapping of the 周易 and the 易传 onto the spine (Y1, Y2, Y3, Y4). usage, from anywhere:
   python3 -B verify_mapping.py [--receipt PATH] [--chapter PATH]   # check, exit 1 on any failure
   python3 -B verify_mapping.py --table                             # print the chapter's passage table
 
@@ -10,8 +10,8 @@ Checks, each against the repository's own files:
      Wikisource's markup removed (character-variant markup -{…}-, links, templates, tags);
   3. every declaration a passage names is in the audited declaration list of a core receipt
      (default: the newest under becoming-checks/); names of Becoming.Hexagrams,
-     Becoming.HexagramPlaces and Becoming.HexagramLaws not yet in that receipt are checked against the modules' source and
-     reported as such;
+     Becoming.HexagramPlaces, Becoming.HexagramLaws and Becoming.HexagramSites not yet in that receipt are
+     checked against the modules' source and reported as such;
   4. the received order of Hexagrams.lean is the order of the preserved pages: page n is the
      n-th hexagram (第n卦), follows page n-1 by its link, and its trigram line (X下Y上) gives
      the six lines of the n-th entry of `order`;
@@ -19,15 +19,28 @@ Checks, each against the repository's own files:
      the lines of 坤 復 臨 泰 大壯 夬 乾 and 乾 姤 遯 否 觀 剝 坤, `sui` is 隨, and the law of
      waxing and waning carries 隨 → 中孚 → 蠱 → 小過 → 隨 and 乾 → 姤 → … → 坤 → 復 → … → 乾;
   6. the chapter's passage table, between its two markers, is the table printed by --table;
-  7. each configuration HexagramPlaces.lean names by its number (`def jiJi : Hexagram := number 63`)
-     carries in its doc comment the name of that page of the received order;
+  7. each configuration HexagramPlaces.lean or HexagramSites.lean names by its number
+     (`def jiJi : Hexagram := number 63`) carries in its doc comment the name of that page of the
+     received order;
   8. four censuses of the text match the lists of HexagramPlaces.lean: every 小象 line that states
      a place explicitly (位不當, 不當位, 未當位, 未得位; 位正當, 位當, 當位, 得位) is in
      `placeStatements` with what it says, every one that says 中正 or 正中 is in
      `centreStatements`, every one that says 乘剛 is in `fallStatements` at the seam below its
      line, and every 彖 that says 剛中而應 is in `middleOppositionStatements`, but for the
      exceptions named in EXCEPTIONS, each stated by its own theorem; the relation of each entry is
-     also recomputed here from the pages' trigram lines, as a cross-check of the lists.
+     also recomputed here from the pages' trigram lines, as a cross-check of the lists;
+  9. the censuses of HexagramSites.lean (王弼's readings, Y4), each recomputed from the pages:
+     under the second relation (初上無位: no place at the bottom and the top) every 小象 statement of
+     place holds with no exception, and no 小象 or 彖 statement of place is of the bottom or the top
+     but 需上六's, while 乾上九's 「貴而无位」 stands in the 文言 and the 繫辭上 (`topStatements`);
+     every 彖 clause of place (當位, 位當, 得位, 正位, 位正當; 位不當, 不當位, 未當位, 未得位, 失位)
+     is in `tuanPlaceStatements` (of one line) or `tuanWholeStatements` (of the whole); every 彖
+     that says 上下應 is in `answeredStatements`, with a sole line at the listed place; every line
+     text (爻辭) that says 中 is in `lineTextMiddle` (中行 in `middleCourseLines`) and every one
+     that says 位 in `lineTextPlace`; every 大象 that says 中, the configuration's own name left
+     out, sets the lower trigram's image within the upper one's (DAXIANG_WITHIN), and every 大象
+     that says 位 is of the 君子 (DAXIANG_PLACE); every 小象 line that says 中 is at a middle place
+     but the four of XIAOXIANG_MIDDLE_OTHER, each with its word.
 It checks text and names, not the proofs: the core checker proves the declarations."""
 import argparse
 import hashlib
@@ -64,6 +77,7 @@ def wikitext(rel):
 
 def clean(text):
     text = re.sub(r'-\{(?:[A-Za-z]\|)?|\}-', '', text)                 # character-variant markup
+    text = re.sub(r'\{\{yw\|([^{}]*)\}\}', r'\1', text)                  # the main text (原文) of a page with notes
     text = re.sub(r'\[\[(?:[^\]|]*\|)?([^\]]*)\]\]', r'\1', text)        # links: the shown text
     text = re.sub(r'\{\{另\|([^|}]*)\|[^}]*\}\}', r'\1', text)           # variant readings: the first
     text = re.sub(r'\{\{[^{}]*\}\}', '', text)                           # other templates
@@ -210,6 +224,149 @@ def census(failures, order, places_text):
     return {kind: (len(listed[kind]), len(EXCEPTIONS[kind])) for kind in found}
 
 
+# Y4: the censuses of HexagramSites.lean.
+PLACE_CLAUSE = re.compile('位不當|不當位|未當位|未得位|失位|位正當|位當|當位|得位|正位')
+NEGATIVE_CLAUSE = {'位不當', '不當位', '未當位', '未得位', '失位'}
+IMAGE = {'天': '乾', '地': '坤', '雷': '震', '風': '巽', '木': '巽', '水': '坎', '雲': '坎', '雨': '坎',
+         '泉': '坎', '火': '離', '明': '離', '電': '離', '山': '艮', '澤': '兌'}
+WITHIN = re.compile(r'(\S)中(?:有|生)(\S)|(\S)(?:在|入)(\S)中')
+# The 大象 that set the lower trigram's image within the upper one's, and those that say 位 (of the 君子).
+DAXIANG_WITHIN = {7, 15, 17, 24, 26, 36, 46, 49}
+DAXIANG_PLACE = {50: '君子以正位凝命', 52: '君子以思不出其位'}
+# The 小象 lines that say 中 at a place that is not middle, each with the word that says it.
+XIAOXIANG_MIDDLE_OTHER = {(11, 4): '中心', (24, 4): '中行', (51, 6): '中未得', (55, 4): '日中'}
+
+
+def line_texts(text):
+    """The line texts (爻辭) of a cleaned page, bottom to top (用九 and 用六 left out)."""
+    block = re.search(r"'''易經：'''\n((?:\*[*#].*\n?)+)", text)
+    return [line[2:] for line in block.group(1).splitlines() if line.startswith('*#')][:6]
+
+
+def da_xiang(text):
+    """The 大象 of a cleaned page: the first line of its 象."""
+    block = re.search(r"'''象曰：'''\n((?:\*[*#].*\n?)+)", text)
+    return next(line[2:] for line in block.group(1).splitlines() if line.startswith('**'))
+
+
+def sites_census(failures, order, sites_text):
+    """Check 9 (and 7 for HexagramSites.lean); returns counts for the summary."""
+    pages = [clean(wikitext(f'hexagrams/{n:02d}.json')) for n in range(1, 65)]
+    names = [clean(page(f'hexagrams/{n:02d}.json')['title']).split('/', 1)[1] for n in range(1, 65)]
+    for m in re.finditer(r'/-- (\S+) \((\d+)\)\. -/\ndef (\w+) : Hexagram := number (\d+)', sites_text):
+        if m.group(2) != m.group(4) or variant(names[int(m.group(4)) - 1]) != variant(m.group(1)):
+            failures.append(f'{m.group(3)} is number {m.group(4)}, not {m.group(1)} ({m.group(2)})')
+
+    def line(n, k):
+        return order[n - 1][k - 1]
+
+    def in_phase(n, k):
+        return line(n, k) == k % 2
+
+    def holds(n, k):
+        return 2 <= k <= 5 and in_phase(n, k)
+
+    def sole(n, k):
+        return all(line(n, i) != line(n, k) for i in range(1, 7) if i != k)
+
+    def trigrams(n):
+        tri = re.search(r'(\S)下(\S)上', pages[n - 1])
+        return tri.group(1), tri.group(2)
+
+    out = {}
+    # the 小象's statements of place under the second relation; none at the ends but 需上六's
+    place = set()
+    for n, text in enumerate(pages, 1):
+        for k, words in enumerate(xiang_lines(text), 1):
+            if any(w in words for w in NEG_PLACE):
+                place.add((n, k, False))
+            elif any(w in words for w in POS_PLACE):
+                place.add((n, k, True))
+    top = {(int(n), int(k), b == 'true') for n, k, b in
+           lean_list(sites_text, 'topStatements', r'\((\d+), \.p(\d), (true|false)\)')}
+    if {q for q in place if q[1] in (1, 6)} != {(5, 6, False)} or top != {(1, 6, False), (5, 6, False)}:
+        failures.append(f'statements of place at the ends: {sorted(q for q in place if q[1] in (1, 6))}, '
+                        f'topStatements {sorted(top)}')
+    for n, k, b in place | top:
+        if holds(n, k) != b:
+            failures.append(f'second relation: ({n}, {k}, {b}) does not hold on the pages')
+    if '貴而无位' not in pages[0] or '貴而无位' not in clean(wikitext('yizhuan/xici-shang.json')):
+        failures.append('乾上九 「貴而无位」 not found in the 文言 of 乾 and the 繫辭上')
+    out['小象 place, second relation'] = f'{len(place)} + 乾上九, no exception'
+    # the 彖's clauses of place
+    found, listed = {}, {}
+    for n, text in enumerate(pages, 1):
+        for m in PLACE_CLAUSE.finditer(tuan_text(text)):
+            key = (n, m.group(0) not in NEGATIVE_CLAUSE)
+            found[key] = found.get(key, 0) + 1
+    lines_ = [(int(n), int(k), b == 'true') for n, k, b in
+              lean_list(sites_text, 'tuanPlaceStatements', r'\((\d+), \.p(\d), (true|false)\)')]
+    wholes = [(int(n), b == 'true') for n, b in lean_list(sites_text, 'tuanWholeStatements', r'\((\d+), (true|false)\)')]
+    for n, _, b in lines_:
+        listed[(n, b)] = listed.get((n, b), 0) + 1
+    for n, b in wholes:
+        listed[(n, b)] = listed.get((n, b), 0) + 1
+    if found != listed:
+        failures.append(f'census 彖 place: in the text {sorted(found.items())}, listed {sorted(listed.items())}')
+    for n, k, b in lines_:
+        if not 2 <= k <= 5 or in_phase(n, k) != b:
+            failures.append(f'census 彖 place: ({n}, {k}, {b}) does not hold on the pages')
+    first = 0
+    for n, b in wholes:
+        between = [in_phase(n, k) for k in range(2, 6)]
+        if not all(x == b for x in between):
+            failures.append(f'census 彖 whole: ({n}, {b}) does not hold under the second relation')
+        first += all(in_phase(n, k) == b for k in range(1, 7))
+    out['彖 place'] = f'{len(lines_)} of one line + {len(wholes)} of the whole ({first} under the six places)'
+    # 上下應
+    answered = [(int(n), int(k)) for n, k in lean_list(sites_text, 'answeredStatements', r'\((\d+), \.p(\d)\)')]
+    if {n for n, _ in answered} != {n for n, text in enumerate(pages, 1) if '上下應' in tuan_text(text)}:
+        failures.append('census 上下應: the list differs from the 彖')
+    for n, k in answered:
+        if not sole(n, k):
+            failures.append(f'census 上下應: ({n}, {k}) is not a sole line')
+    out['彖 上下應'] = str(len(answered))
+    # the line texts
+    middle = {(n, k) for n, text in enumerate(pages, 1) for k, words in enumerate(line_texts(text), 1) if '中' in words}
+    course = {(n, k) for n, text in enumerate(pages, 1) for k, words in enumerate(line_texts(text), 1) if '中行' in words}
+    placed = {(n, k) for n, text in enumerate(pages, 1) for k, words in enumerate(line_texts(text), 1) if '位' in words}
+    for name, got in (('lineTextMiddle', middle), ('middleCourseLines', course), ('lineTextPlace', placed)):
+        want = {(int(n), int(k)) for n, k in lean_list(sites_text, name, r'\((\d+), \.p(\d)\)')}
+        if got != want:
+            failures.append(f'census {name}: in the text {sorted(got)}, listed {sorted(want)}')
+    if any(not 2 <= k <= 5 for _, k in middle) or any(not holds(n, k) for n, k in placed):
+        failures.append('census 爻辭: a 中 at an end, or a 位 not held')
+    out['爻辭 中'] = f'{len(middle)} ({sum(k in (2, 5) for _, k in middle)} middle, all between the ends)'
+    out['爻辭 位'] = str(len(placed))
+    # the 大象
+    within, at_place = set(), set()
+    for n, text in enumerate(pages, 1):
+        words = da_xiang(text).replace(names[n - 1], '')
+        if '中' in words:
+            within.add(n)
+            m = WITHIN.search(words)
+            outer, inner = (m.group(1), m.group(2)) if m and m.group(1) else (m.group(4), m.group(3)) if m else (None, None)
+            lower, upper = trigrams(n)
+            if IMAGE.get(outer) != upper or IMAGE.get(inner) != lower:
+                failures.append(f'census 大象 中: {names[n - 1]} does not set the lower trigram within the upper')
+        if '位' in words:
+            at_place.add(n)
+            if DAXIANG_PLACE.get(n, '\0') not in words:
+                failures.append(f'census 大象 位: {names[n - 1]} is not listed with its words')
+    if within != DAXIANG_WITHIN or at_place != set(DAXIANG_PLACE):
+        failures.append(f'census 大象: 中 at {sorted(within)}, 位 at {sorted(at_place)}')
+    out['大象 中'] = f'{len(within)}, each the lower trigram within the upper'
+    out['大象 位'] = f'{len(at_place)}, of the 君子'
+    # every 小象 line that says 中
+    said = {(n, k): words for n, text in enumerate(pages, 1) for k, words in enumerate(xiang_lines(text), 1)
+            if '中' in words}
+    other = {q for q in said if q[1] not in (2, 5)}
+    if other != set(XIAOXIANG_MIDDLE_OTHER) or any(XIAOXIANG_MIDDLE_OTHER[q] not in said[q] for q in other):
+        failures.append(f'census 小象 中: not at a middle place {sorted(other)}')
+    out['小象 中'] = f'{len(said)} ({len(said) - len(other)} middle)'
+    return out
+
+
 def wax_wane(s):
     a, b, c, d, e, f = s
     return (1 - f, a, b, c, d, e)
@@ -270,7 +427,11 @@ def main():
     laws = PKG / 'Becoming/HexagramLaws.lean'
     if not laws.exists():
         laws = HERE / 'y3/Becoming/HexagramLaws.lean'
-    from_source = lean_declarations(module) | lean_declarations(places) | lean_declarations(laws)
+    sites = PKG / 'Becoming/HexagramSites.lean'
+    if not sites.exists():
+        sites = HERE / 'y4/Becoming/HexagramSites.lean'
+    from_source = (lean_declarations(module) | lean_declarations(places) | lean_declarations(laws)
+                   | lean_declarations(sites))
     by_source = set()
     for p in passages:
         for d in p['declarations']:
@@ -332,6 +493,7 @@ def main():
 
     # 7 and 8. the named configurations and the censuses
     counts = census(failures, order, places.read_text())
+    sites_counts = sites_census(failures, order, sites.read_text())
 
     # 6. the chapter table
     if args.chapter.exists():
@@ -352,6 +514,7 @@ def main():
           f"{len(decls)} declarations; receipt {receipt.parent.name}"
           + (f'; {len(by_source)} Hexagrams names checked against the module source, not yet in the receipt' if by_source else ''))
     print('censuses (listed + exceptions): ' + ', '.join(f'{k} {v[0]} + {v[1]}' for k, v in counts.items()))
+    print('censuses of HexagramSites: ' + '; '.join(f'{k} {v}' for k, v in sites_counts.items()))
     print('order: 64 pages, trigrams and links agree' if not any('order' in f or 'page' in f for f in failures) else '')
     for f in failures:
         print('FAIL', f)
