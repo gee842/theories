@@ -909,11 +909,6 @@ theorem soleAny_waxWane : ∀ s : Hexagram, (soleAny s && soleAny (waxWane s)) =
   | ⟨a, b, c, d, e, f⟩ => by
     cases a <;> cases b <;> cases c <;> cases d <;> cases e <;> cases f <;> rfl
 
-theorem and_false_of_true : ∀ {x y : Bool}, (x && y) = false → x = true → y = false
-  | true, false, _, _ => rfl
-  | true, true, h, _ => Bool.noConfusion h
-  | false, _, _, h => Bool.noConfusion h
-
 /-- **A sole line never lasts a step.** -/
 theorem sole_waxWane_none {s : Hexagram} {k : Place} (h : sole s k = true) (k' : Place) :
     sole (waxWane s) k' = false :=

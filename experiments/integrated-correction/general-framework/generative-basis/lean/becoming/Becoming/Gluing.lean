@@ -104,8 +104,6 @@ theorem addParity_cancel : ∀ a b c,
     addParity (addParity b c) (addParity (addParity a b) c) = a := by
   decide
 theorem true_of_ne_false : ∀ b : Bool, ¬ b = false → b = true := by decide
-theorem cond_le_one : ∀ b : Bool, cond b 1 0 ≤ 1 := by decide
-
 /-- Conjunctions with one value agree where the other two do whenever the first is `true`. -/
 theorem and_congr_of : ∀ (b x y : Bool), (b = true → x = y) → (b && x) = (b && y)
   | true, _, _, same => same rfl

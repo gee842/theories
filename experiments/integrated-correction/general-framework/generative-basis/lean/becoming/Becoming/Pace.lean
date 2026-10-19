@@ -415,7 +415,7 @@ theorem dissolving {x y : O} (two : x ≠ y) (M : Nat) :
       have le : n ≤ M + 1 := Nat.le_of_lt_succ first
       congrArg mk ((early n le).trans (early' n le).symm)
     | .inr beyond =>
-      match gap_of_le beyond with
+      match le_dest beyond with
       | ⟨d, at_n⟩ =>
         have short : d < M :=
           Nat.lt_of_add_lt_add_left
@@ -548,7 +548,7 @@ theorem whole_fixed {next next' : S → S} {s s' : S} {N : Nat}
         match Nat.lt_or_ge m (N + 1) with
         | .inl lt => agree m lt
         | .inr ge =>
-          match gap_of_le (Nat.le_trans (Nat.le_succ_of_le within) ge) with
+          match le_dest (Nat.le_trans (Nat.le_succ_of_le within) ge) with
           | ⟨d, at_m⟩ =>
             have at_m' : m = i + d + (q + 1) := at_m.trans (Nat.add_right_comm i (q + 1) d)
             have earlier : i + d < m :=

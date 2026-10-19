@@ -321,20 +321,10 @@ theorem possibility_sum_of_mem {α : Type u} {g : α → Bool} {x : α} (holds :
       cases g b <;> rfl
 
 /-- The list lemmas below repeat `Openness`'s and `Population`'s at every universe. -/
-theorem mem_appended_left {α : Type u} {a : α} :
-    ∀ {l : List α} (l' : List α), a ∈ l → a ∈ l ++ l'
-  | _ :: _, _, .head _ => .head _
-  | _ :: _, l', .tail _ mem => .tail _ (mem_appended_left l' mem)
-
 theorem mem_appended_right {α : Type u} {a : α} {l' : List α} (mem : a ∈ l') :
     ∀ l : List α, a ∈ l ++ l'
   | [] => mem
   | _ :: l => .tail _ (mem_appended_right mem l)
-
-theorem mem_mapped {α : Type u} {β : Type v} (g : α → β) {a : α} :
-    ∀ {l : List α}, a ∈ l → g a ∈ l.map g
-  | _ :: _, .head _ => .head _
-  | _ :: _, .tail _ mem => .tail _ (mem_mapped g mem)
 
 theorem mem_joinMap {α : Type u} {β : Type v} (g : α → List β) {a : α} {b : β} (inner : b ∈ g a) :
     ∀ {l : List α}, a ∈ l → b ∈ joinMap g l

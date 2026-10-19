@@ -64,12 +64,6 @@ universe u v w
 
 /-! ## Arithmetic and lists -/
 
-theorem le_of_add_le_add : ∀ {a b c : Nat}, a + b ≤ a + c → b ≤ c
-  | 0, b, c, h => by rw [Nat.zero_add, Nat.zero_add] at h; exact h
-  | a + 1, b, c, h => by
-    rw [Nat.succ_add, Nat.succ_add] at h
-    exact le_of_add_le_add (Nat.le_of_succ_le_succ h)
-
 /-- What two draws need together is what the first needs and what the second needs from what
 the first leaves. -/
 theorem add_le_iff {a b n : Nat} : a + b ≤ n ↔ a ≤ n ∧ b ≤ n - a :=

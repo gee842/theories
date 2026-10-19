@@ -194,16 +194,6 @@ theorem obs_signed : ∀ i j : Fin 3, ∀ k m : Fin 4,
 /-- How an observable acts on a vector, as a signed permutation. -/
 def act (c : Cell) (v : Fin 4 → Int) (k : Fin 4) : Int := flip (negAt c k) (v (src c k))
 
-theorem int_zero_mul (x : Int) : 0 * x = 0 := by
-  cases x with
-  | ofNat n => exact congrArg Int.ofNat (Nat.zero_mul n)
-  | negSucc n => exact congrArg Int.negOfNat (Nat.zero_mul (n + 1))
-
-theorem int_zero_add (x : Int) : 0 + x = x := by
-  cases x with
-  | ofNat n => exact congrArg Int.ofNat (Nat.zero_add n)
-  | negSucc n => rfl
-
 theorem int_neg_one_mul (x : Int) : -1 * x = -x := by
   cases x with
   | ofNat n => exact congrArg Int.negOfNat (Nat.one_mul n)
@@ -223,27 +213,27 @@ theorem mulVec_signed (A : Mat4) (v : Fin 4 → Int) (k j : Fin 4) (b : Bool)
   rcases four j with h | h | h | h
   · subst h
     show sign b * v q₀ + 0 * v q₁ + 0 * v q₂ + 0 * v q₃ = _
-    repeat rw [int_zero_mul]
+    repeat rw [Integers.zero_mul]
     repeat rw [Int.add_zero]
-    repeat rw [int_zero_add]
+    repeat rw [Integers.zero_add]
     exact sign_mul b _
   · subst h
     show 0 * v q₀ + sign b * v q₁ + 0 * v q₂ + 0 * v q₃ = _
-    repeat rw [int_zero_mul]
+    repeat rw [Integers.zero_mul]
     repeat rw [Int.add_zero]
-    repeat rw [int_zero_add]
+    repeat rw [Integers.zero_add]
     exact sign_mul b _
   · subst h
     show 0 * v q₀ + 0 * v q₁ + sign b * v q₂ + 0 * v q₃ = _
-    repeat rw [int_zero_mul]
+    repeat rw [Integers.zero_mul]
     repeat rw [Int.add_zero]
-    repeat rw [int_zero_add]
+    repeat rw [Integers.zero_add]
     exact sign_mul b _
   · subst h
     show 0 * v q₀ + 0 * v q₁ + 0 * v q₂ + sign b * v q₃ = _
-    repeat rw [int_zero_mul]
+    repeat rw [Integers.zero_mul]
     repeat rw [Int.add_zero]
-    repeat rw [int_zero_add]
+    repeat rw [Integers.zero_add]
     exact sign_mul b _
 
 /-- The observable applied to a vector is its action as a signed permutation. -/

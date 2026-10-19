@@ -339,7 +339,7 @@ theorem history_stable {n s : Nat} (le : s ≤ n) (c : C) :
 /-- The history generated to stage `n` is the generated levels up to `n`. -/
 theorem history_agree (n : Nat) : AgreeUpTo (law.history present start n) (law.levels present start) n :=
   fun s le c =>
-    let ⟨d, gap⟩ := gap_of_le le
+    let ⟨d, gap⟩ := le_dest le
     (congrArg (fun m => law.history present start m s c) gap).trans
       (history_stable (Nat.le_refl s) c d)
 

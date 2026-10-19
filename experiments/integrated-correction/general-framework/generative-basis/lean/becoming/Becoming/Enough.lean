@@ -152,7 +152,7 @@ theorem assured_iff {s : S} {target : S → Prop} :
           ⟨r.act T, Eq.subst (motive := fun x => P.step (r.state T) (r.act T) x)
             (stays T (Nat.le_refl T)) (r.step T)⟩
       ⟨T, fun n late =>
-        match gap_of_le late with
+        match le_dest late with
         | ⟨d, gap⟩ => ⟨stays n late,
             (congrArg target ((congrArg r.state gap).trans (at_T d))).mpr meets⟩⟩⟩
 

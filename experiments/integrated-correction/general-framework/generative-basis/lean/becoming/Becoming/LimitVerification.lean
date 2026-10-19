@@ -354,7 +354,7 @@ theorem jointly_refutes {m m' : Method P} {K K' : Run P → Prop} (refutes : Ref
       have after : ∀ n, ∃ c, n ≤ c ∧ J c = true ∧ ∃ d, J (c + 1 + d) = true := fun n =>
         match recurs n with
         | ⟨c, le, yes⟩ => match recurs (c + 1) with
-          | ⟨_, le', yes'⟩ => match gap_of_le le' with
+          | ⟨_, le', yes'⟩ => match le_dest le' with
             | ⟨d, gap⟩ => ⟨c, le, yes, d,
                 Eq.subst (motive := fun x => J x = true) gap yes'⟩
       ⟨fun n => match after n with
@@ -376,7 +376,7 @@ theorem jointly_refutes {m m' : Method P} {K K' : Run P → Prop} (refutes : Ref
         | .inr ⟨t, yes⟩ => ⟨n + t, Nat.le_add_right n t, yes⟩
         | .inl below =>
           have none_ : ∀ k, n ≤ k → k < n + (a + b) → J k = false := fun _ le lt =>
-            match gap_of_le le with
+            match le_dest le with
             | ⟨t, gap⟩ => Eq.subst (motive := fun x => J x = false) gap.symm
                 (below t (Nat.lt_succ_of_lt (Nat.lt_of_add_lt_add_left
                   (Eq.subst (motive := fun x => x < n + (a + b)) gap lt))))
@@ -384,7 +384,7 @@ theorem jointly_refutes {m m' : Method P} {K K' : Run P → Prop} (refutes : Ref
             Nat.le_trans (Nat.le_add_right a b) (Nat.le_add_left (a + b) n)
           have end_b : b ≤ n + (a + b) :=
             Nat.le_trans (Nat.le_add_left b a) (Nat.le_add_left (a + b) n)
-          match gap_of_le end_a, gap_of_le end_b with
+          match le_dest end_a, le_dest end_b with
           | ⟨da, gap_a⟩, ⟨db, gap_b⟩ =>
             have kept₁ := mark_kept (p := fun k => (pending m m' k r).1) (J := J) (g := fun k => m k r) carry₁ yes_a da
               fun k le lt => none_ k (Nat.le_trans le_a le)
@@ -571,7 +571,7 @@ theorem recurs_not_verified (markov : Markov) {m : Method (process Bool)} (byRec
         true_ne_false' played ((flip k).trans (congrArg not (yes k le)))
     not_yes ((verifies (against m)).mp fun n =>
       match markov (fun j => (against m).act (n + j)) (fun all => not_yes ⟨n, fun k le =>
-          match gap_of_le le with
+          match le_dest le with
           | ⟨j, gap⟩ => eq_true_of_not_false ((flip k).symm.trans
               (Eq.subst (motive := fun x => (against m).act x = false) gap.symm (all j)))⟩) with
       | ⟨j, played⟩ => ⟨n + j, Nat.le_add_right n j, played⟩)
@@ -714,7 +714,7 @@ theorem settles_not_refuted (markov : Markov) {m : Method process} (byRecord : B
               yes ((moves k).symm.trans (stays k le)))
     not_recurs fun n =>
       match markov (fun j => m (n + j) (against m)) (fun all =>
-          not_recurs ((refutes (against m)).mp ⟨n, fun k le => match gap_of_le le with
+          not_recurs ((refutes (against m)).mp ⟨n, fun k le => match le_dest le with
             | ⟨j, gap⟩ => (moves k).trans (Eq.subst
                 (motive := fun c => toggle ((against m).state k) c = (against m).state k)
                 (Eq.subst (motive := fun x => m x (against m) = false) gap.symm (all j)).symm

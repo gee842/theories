@@ -398,7 +398,7 @@ theorem CoupledInto.succ {j : Nat} {d c : C} (into : CoupledInto cs part k prese
 /-- The last `i` couplings of a longer chain end where it ends. -/
 theorem CoupledInto.shorten {i j : Nat} {c : C} (into : CoupledInto cs part k present j c)
     (le : i ≤ j) : CoupledInto cs part k present i c :=
-  match into, gap_of_le le with
+  match into, le_dest le with
   | ⟨v, ends, chain⟩, ⟨r, split⟩ =>
     ⟨fun l => v (r + l),
       (congrArg v ((Nat.add_comm r i).trans split.symm)).trans ends,
@@ -415,7 +415,7 @@ theorem loop_of_coupledInto (every : ∀ c, c ∈ cs) {c : C} :
   | ⟨v, ends, chain⟩ =>
     match revisits_within cs v (fun n _ => every (v n)) with
     | ⟨i, _, lt, le, same⟩ =>
-      match gap_of_lt lt, gap_of_le (Nat.le_of_lt (Nat.lt_of_lt_of_le lt le)) with
+      match gap_of_lt lt, le_dest (Nat.le_of_lt (Nat.lt_of_lt_of_le lt le)) with
       | ⟨m, around⟩, ⟨r, rest⟩ =>
         ⟨v i,
           ⟨fun l => v (i + l), m + 1, Nat.succ_pos m, rfl,
@@ -659,7 +659,7 @@ theorem carried_le_add (t : Nat) (c : C) :
 /-- The carried amount never falls from an earlier step to a later one. -/
 theorem carried_mono_steps {s t : Nat} (le : s ≤ t) (c : C) :
     carried cs part σ k present δ s c ≤ carried cs part σ k present δ t c :=
-  match gap_of_le le with
+  match le_dest le with
   | ⟨r, split⟩ => Nat.le_trans (carried_le_add s c r)
       (Nat.le_of_eq (congrArg (fun x => carried cs part σ k present δ x c) split.symm))
 
@@ -1348,7 +1348,7 @@ theorem linear_lt_two_pow (c d : Nat) : ∃ a, c * a + d < 2 ^ a :=
 theorem poly_lt_two_pow (K n : Nat) : ∃ R, K * (R + 1) ^ n < 2 ^ R :=
   match linear_lt_two_pow n K with
   | ⟨a, below⟩ =>
-    match gap_of_le (Nat.succ_le_of_lt (two_pow_pos a)) with
+    match le_dest (Nat.succ_le_of_lt (two_pow_pos a)) with
     | ⟨R, split⟩ =>
       have top : R + 1 = 2 ^ a := (Nat.add_comm R 1).trans split.symm
       ⟨R, calc K * (R + 1) ^ n

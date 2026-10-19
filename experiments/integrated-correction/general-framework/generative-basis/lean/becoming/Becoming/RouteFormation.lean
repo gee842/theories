@@ -62,10 +62,6 @@ open CodeAcquisition
 
 /-! ## Lists used below -/
 
-theorem append_nil {α : Type} : ∀ l : List α, l ++ [] = l
-  | [] => rfl
-  | a :: l => congrArg (a :: ·) (append_nil l)
-
 theorem replicate_append {α : Type} (x : α) (n : Nat) :
     ∀ m, List.replicate m x ++ List.replicate n x = List.replicate (m + n) x
   | 0 => (congrArg (fun k => List.replicate k x) (Nat.zero_add n)).symm
@@ -117,8 +113,8 @@ theorem programFor_operates (c : Code) : ∀ e, operate (programFor c) e = eval 
       (operate (programFor c) b) = (bif c.reversed then eval c b ++ eval c a else eval c a ++ eval c b)
     rw [programFor_operates c a, programFor_operates c b]
     cases c.reversed with
-    | false => exact congrArg (eval c a ++ ·) (append_nil (eval c b))
-    | true => exact congrArg (eval c b ++ ·) (append_nil (eval c a))
+    | false => exact congrArg (eval c a ++ ·) (TreeSearch.append_nil (eval c b))
+    | true => exact congrArg (eval c b ++ ·) (TreeSearch.append_nil (eval c a))
   | .twice a => by
     show operate (programFor c) a ++ operate (programFor c) a = eval c a ++ eval c a
     rw [programFor_operates c a]

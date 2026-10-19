@@ -140,7 +140,7 @@ theorem rests_iff {next : S → S} {s : S} {target : S → Prop} :
       ∃ T, next (orbit next s T) = orbit next s T ∧ target (orbit next s T) :=
   ⟨fun ⟨T, rests⟩ => ⟨T, (rests T (Nat.le_refl T)).1, (rests T (Nat.le_refl T)).2⟩,
    fun ⟨T, fixed, meets⟩ => ⟨T, fun _ le =>
-     match gap_of_le le with
+     match le_dest le with
      | ⟨d, at_n⟩ =>
        have stay : ∀ k, orbit next s (T + k) = orbit next s T ∧ target (orbit next s (T + k)) :=
          fun k => match fixed_rests fixed meets k with

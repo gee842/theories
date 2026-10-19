@@ -400,10 +400,6 @@ theorem WLPO.of_lpo (lpo : LPO) : WLPO :=
 
 namespace Sensitivity
 
-theorem or_true : ∀ b : Bool, (b || true) = true
-  | true => rfl
-  | false => rfl
-
 end Sensitivity
 
 /-- Whether `s` has a `true` at some position up to `m`. -/
@@ -420,7 +416,7 @@ theorem seenBy_false {s : Nat → Bool} (all : ∀ n, s n = false) : ∀ m, seen
 theorem seenBy_at {s : Nat → Bool} : ∀ {k : Nat}, s k = true → seenBy s k = true
   | 0, yes => yes
   | k + 1, yes =>
-    ((congrArg (fun b => seenBy s k || b) yes).trans (Sensitivity.or_true (seenBy s k)) : _)
+    ((congrArg (fun b => seenBy s k || b) yes).trans (ChanceFloors.or_true (seenBy s k)) : _)
 
 theorem seenBy_from {s : Nat → Bool} {k : Nat} (yes : s k = true) :
     ∀ d, seenBy s (k + d) = true

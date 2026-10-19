@@ -312,7 +312,7 @@ theorem spread (p q : Nat) : ∀ n,
 /-! ## Most courses show the weights -/
 
 theorem two_mul_le_of_le {x y : Nat} (le : x ≤ y) : 2 * (x * y) ≤ x * x + y * y :=
-  match gap_of_le le with
+  match le_dest le with
   | ⟨e, at_y⟩ => by
     rw [at_y]
     have same : x * x + (x + e) * (x + e) = (x * (x + e) + x * (x + e)) + e * e := by
@@ -389,7 +389,7 @@ theorem weight_mul (p q u v : Nat) : ∀ w : List Bool,
 most `u ^ a · v ^ b · v ^ k`. -/
 theorem tilt_le {u v : Nat} (le : v ≤ u) {k a : Nat} (enough : k ≤ a) (b : Nat) :
     u ^ k * v ^ (a + b) ≤ (u ^ a * v ^ b) * v ^ k :=
-  match gap_of_le enough with
+  match le_dest enough with
   | ⟨e, at_a⟩ => by
     rw [at_a, Naturals.pow_add u k e, Nat.add_assoc, Naturals.pow_add v k (e + b), Naturals.pow_add v e b,
       mul_assoc_nat (u ^ k) (u ^ e)]

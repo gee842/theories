@@ -288,7 +288,7 @@ theorem statesBelow_shift {O : Type w} {o : Nat → O} {T N : Nat}
       rw [Nat.add_assoc T i q, Nat.add_assoc T (i + q) 1]
       exact Nat.add_le_add_left within T
     Identification.statesBelow_iff_lasso.mpr ⟨T + i, q, bound, fun u ge =>
-      match gap_of_le ge with
+      match le_dest ge with
       | ⟨d, at_u⟩ => by
         have ahead : T + i + d + (q + 1) = T + (i + d + (q + 1)) := by
           rw [Nat.add_assoc T i d, Nat.add_assoc T (i + d)]

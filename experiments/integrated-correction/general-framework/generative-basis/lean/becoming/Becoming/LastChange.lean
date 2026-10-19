@@ -62,7 +62,7 @@ def ChangesAgain (r : Run P) (T : Nat) : Prop := ∃ k, r.state (T + k + 1) ≠ 
 def StillFrom (r : Run P) (T : Nat) : Prop := ∀ k, r.state (T + k + 1) = r.state (T + k)
 
 theorem settles_of_still {r : Run P} {T : Nat} (still : StillFrom r T) : Enough.Settles r :=
-  ⟨T, fun _ late => match gap_of_le late with
+  ⟨T, fun _ late => match le_dest late with
     | ⟨k, gap⟩ => Eq.subst (motive := fun x => r.state (x + 1) = r.state x) gap.symm (still k)⟩
 
 /-- Rising positions of changes, with one more change later. -/
@@ -119,7 +119,7 @@ theorem changes_lt {r : Run P} {l : List S} (held : ∀ n, r.state n ∈ l)
           have below : f i ≤ f m := match Decidable.em (i < m) with
             | .inl i_lt => Nat.le_of_lt (Settling.rising changes.1 i m i_lt (Nat.le_refl m))
             | .inr nlt => Nat.le_of_eq (congrArg f (Nat.le_antisymm i_le (Nat.ge_of_not_lt nlt)))
-          match gap_of_le below with
+          match le_dest below with
           | ⟨d, gap⟩ => ⟨f i, d, 0,
               (congrArg (fun x => r.state (x + 1)) gap).symm.trans
                 ((atChanges_gt j_gt).symm.trans (same.symm.trans at_i)),
@@ -246,7 +246,7 @@ theorem rests_of_settles {s : S} {target : S → Prop}
           (Eq.subst (motive := fun k => Reach P (r.state 0) (r.state k)) (Nat.zero_add T) (r.reach 0 T)))
         ⟨r.act T, Eq.subst (motive := fun x => P.step (r.state T) (r.act T) x)
           (stays T (Nat.le_refl T)) (r.step T)⟩
-    ⟨T, fun n late => match gap_of_le late with
+    ⟨T, fun n late => match le_dest late with
       | ⟨d, gap⟩ => ⟨stays n late,
           (congrArg target ((congrArg r.state gap).trans (Enough.settled_at stays d))).mpr meets⟩⟩
 

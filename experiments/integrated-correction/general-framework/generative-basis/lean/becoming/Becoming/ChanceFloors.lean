@@ -67,8 +67,6 @@ theorem fulfillment_gives_chance_floor (domain : List Ω)
 def repair (demand oldWorks candidate : Ω → Bool) (h : Ω) : Bool :=
   target demand oldWorks h || candidate h
 
-theorem or_true (b : Bool) : (b || true) = true := match b with | true => rfl | false => rfl
-
 /-- **Repair fulfils the protection and covers the candidate.** -/
 theorem repair_covers_target_and_candidate (domain : List Ω)
     (demand oldWorks candidate : Ω → Bool) :

@@ -73,11 +73,6 @@ universe u u' v v' v'' w x x'
 
 namespace Granularity
 
-/-- A member of the first list is a member of the two joined, at every universe. -/
-theorem mem_joined_left {α : Type u} {a : α} {l : List α} (m : List α) : a ∈ l → a ∈ l ++ m
-  | .head _ => .head _
-  | .tail _ mem => .tail _ (mem_joined_left m mem)
-
 /-- A member of the second list is a member of the two joined, at every universe. -/
 theorem mem_joined_right {α : Type u} {a : α} : ∀ (l : List α) {m : List α}, a ∈ m → a ∈ l ++ m
   | [], _, mem => mem
@@ -95,7 +90,7 @@ theorem mem_encode {α : Type u} {β : Type v} {g : β → List α} {a : α} :
         | ⟨c, inside, at_c⟩ => ⟨c, .tail b inside, at_c⟩,
      fun ⟨c, inside, at_c⟩ => show a ∈ g b ++ Segmentation.encode g l from
       match mem_cons_split inside with
-      | .inl same => mem_joined_left (Segmentation.encode g l)
+      | .inl same => mem_appended_left (Segmentation.encode g l)
           (Eq.subst (motive := fun d => a ∈ g d) same at_c)
       | .inr inside => mem_joined_right (g b) ((mem_encode (l := l)).mpr ⟨c, inside, at_c⟩)⟩
 
@@ -108,7 +103,7 @@ theorem listed_through {X : Type u} {Y : Type u'} {R : X → Y → Prop}
   | x :: xs => match listed x, listed_through listed xs with
     | ⟨l, here⟩, ⟨L, rest⟩ => ⟨l ++ L, fun y =>
       ⟨fun ⟨z, mem, related⟩ => match mem_cons_split mem with
-        | .inl same => mem_joined_left L
+        | .inl same => mem_appended_left L
             ((here y).mp (Eq.subst (motive := fun w => R w y) same related))
         | .inr mem => mem_joined_right l ((rest y).mp ⟨z, mem, related⟩),
        fun mem => match ListTests.mem_append_iff.mp mem with
@@ -274,7 +269,7 @@ theorem outcomes_of_trace {P : Process S A}
     ∀ (word : List A) (s : S), ∃ l : List S, ∀ t, Trace P s word t ↔ t ∈ l
   | [], s => ⟨[s], fun _ =>
       ⟨fun path => Eq.subst (motive := fun x => x ∈ [s]) (trace_nil_iff.mp path) (.head []),
-       fun mem => Eq.subst (motive := fun x => Trace P s [] x) (Joining.eq_of_mem_singleton mem).symm
+       fun mem => Eq.subst (motive := fun x => Trace P s [] x) (CrossSituational.mem_singleton mem).symm
         (.nil s)⟩⟩
   | a :: rest, s => match outcomes s a with
     | ⟨first, listed⟩ => match Granularity.listed_through (R := fun m t => Trace P m rest t)
@@ -577,18 +572,18 @@ theorem Recipe.leads_iff_afterAny (F : Frame S A C) :
     ⟨fun ⟨_, same, holds⟩ =>
       ⟨φ, .head [], Eq.subst (motive := fun x => BranchingTest.Holds F x φ) same.symm holds⟩,
      fun ⟨_, mem, holds⟩ => ⟨s, rfl, Eq.subst (motive := fun ψ => BranchingTest.Holds F s ψ)
-        (Joining.eq_of_mem_singleton mem) holds⟩⟩
+        (CrossSituational.mem_singleton mem) holds⟩⟩
   | .move a, s, φ =>
     ⟨fun ⟨t, step, holds⟩ => ⟨.can a φ, .head [], t, step, holds⟩,
      fun ⟨_, mem, holds⟩ => Eq.subst (motive := fun ψ => BranchingTest.Holds F s ψ)
-        (Joining.eq_of_mem_singleton mem) holds⟩
+        (CrossSituational.mem_singleton mem) holds⟩
   | .guard g, s, φ =>
     ⟨fun ⟨_, ⟨same, passes⟩, holds⟩ =>
       ⟨.both g φ, .head [], passes,
         Eq.subst (motive := fun x => BranchingTest.Holds F x φ) same.symm holds⟩,
      fun ⟨_, mem, holds⟩ =>
       match Eq.subst (motive := fun ψ => BranchingTest.Holds F s ψ)
-          (Joining.eq_of_mem_singleton mem) holds with
+          (CrossSituational.mem_singleton mem) holds with
       | ⟨passes, holds'⟩ => ⟨s, ⟨rfl, passes⟩, holds'⟩⟩
   | .seq p q, s, φ =>
     ⟨fun ⟨t, ⟨m, first, second⟩, holds⟩ =>
@@ -602,7 +597,7 @@ theorem Recipe.leads_iff_afterAny (F : Frame S A C) :
   | .choice p q, s, φ =>
     ⟨fun ⟨t, leads, holds⟩ => match leads with
       | .inl first => match (Recipe.leads_iff_afterAny F p s φ).mp ⟨t, first, holds⟩ with
-        | ⟨χ, mem, holds'⟩ => ⟨χ, Granularity.mem_joined_left _ mem, holds'⟩
+        | ⟨χ, mem, holds'⟩ => ⟨χ, mem_appended_left _ mem, holds'⟩
       | .inr second => match (Recipe.leads_iff_afterAny F q s φ).mp ⟨t, second, holds⟩ with
         | ⟨χ, mem, holds'⟩ => ⟨χ, Granularity.mem_joined_right _ mem, holds'⟩,
      fun ⟨χ, mem, holds⟩ => match ListTests.mem_append_iff.mp mem with
@@ -672,12 +667,12 @@ theorem Recipe.outcomes {F : Frame S A C}
     ∀ (p : Recipe A C) (s : S), ∃ l : List S, ∀ t, Recipe.Leads F p s t ↔ t ∈ l
   | .skip, s => ⟨[s], fun _ =>
       ⟨fun same => Eq.subst (motive := fun x => x ∈ [s]) same (.head []),
-       fun mem => (Joining.eq_of_mem_singleton mem).symm⟩⟩
+       fun mem => (CrossSituational.mem_singleton mem).symm⟩⟩
   | .move a, s => outcomes s a
   | .guard φ, s => match decided s φ with
     | .inl passes => ⟨[s], fun _ =>
         ⟨fun ⟨same, _⟩ => Eq.subst (motive := fun x => x ∈ [s]) same (.head []),
-         fun mem => ⟨(Joining.eq_of_mem_singleton mem).symm, passes⟩⟩⟩
+         fun mem => ⟨(CrossSituational.mem_singleton mem).symm, passes⟩⟩⟩
     | .inr fails => ⟨[], fun _ => ⟨fun ⟨_, passes⟩ => absurd passes fails, fun mem => (nomatch mem)⟩⟩
   | .seq p q, s => match Recipe.outcomes outcomes decided p s with
     | ⟨first, listed⟩ => match Granularity.listed_through (R := fun m t => Recipe.Leads F q m t)
@@ -690,7 +685,7 @@ theorem Recipe.outcomes {F : Frame S A C}
     match Recipe.outcomes outcomes decided p s, Recipe.outcomes outcomes decided q s with
     | ⟨l, listed⟩, ⟨l', listed'⟩ => ⟨l ++ l', fun t =>
       ⟨fun lead => match lead with
-        | .inl first => Granularity.mem_joined_left l' ((listed t).mp first)
+        | .inl first => mem_appended_left l' ((listed t).mp first)
         | .inr second => Granularity.mem_joined_right l ((listed' t).mp second),
        fun mem => match ListTests.mem_append_iff.mp mem with
         | .inl inside => .inl ((listed t).mpr inside)

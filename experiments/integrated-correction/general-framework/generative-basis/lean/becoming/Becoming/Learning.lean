@@ -387,7 +387,7 @@ theorem index_mono (t : Nat) : ∀ d, index H o t ≤ index H o (t + d)
   | d + 1 => Nat.le_trans (index_mono t d) (index_le_succ (t + d))
 
 theorem index_mono_le {T t : Nat} (le : T ≤ t) : index H o T ≤ index H o t :=
-  let ⟨d, at_t⟩ := gap_of_le le
+  let ⟨d, at_t⟩ := le_dest le
   Eq.subst (motive := fun n => index H o T ≤ index H o n) at_t.symm (index_mono T d)
 
 /-- **The extrapolation by elimination never passes a candidate that accords.** Where candidate
@@ -458,7 +458,7 @@ theorem stable_unrefuted {f : Nat → Nat} (mono : ∀ t, f t ≤ f (t + 1)) {K 
     Nat.rec (motive := fun d => f T ≤ f (T + d)) (Nat.le_refl _)
       (fun d ih => Nat.le_trans ih (mono (T + d))) d
   have mono_le : ∀ {T t}, T ≤ t → f T ≤ f t := fun le =>
-    let ⟨d, at_t⟩ := gap_of_le le
+    let ⟨d, at_t⟩ := le_dest le
     Eq.subst (motive := fun n => f _ ≤ f n) at_t.symm (mono_add _ d)
   have climb : ∀ m T, K ≤ f T + m → ¬ ¬ ∃ T, ∀ t, T ≤ t → f t = f T := fun m =>
     Nat.rec (motive := fun m => ∀ T, K ≤ f T + m → ¬ ¬ ∃ T, ∀ t, T ≤ t → f t = f T)
@@ -500,7 +500,7 @@ theorem lasso_of_held {S : Type v} {next : S → S} {s : S} {l : List S}
   have back_to : Law.orbit next s (i + (q + 1)) = Law.orbit next s i :=
     (congrArg (Law.orbit next s) at_j).symm.trans same.symm
   ⟨i, q, Eq.subst (motive := fun n => n ≤ l.length) at_j within, fun _ later =>
-    let ⟨d, at_u⟩ := gap_of_le later
+    let ⟨d, at_u⟩ := le_dest later
     congrArg reg
       ((congrArg (fun n => Law.orbit next s (n + (q + 1))) at_u).trans
         ((congrArg (Law.orbit next s) (Nat.add_right_comm i d (q + 1))).trans
@@ -599,7 +599,7 @@ theorem lasso_accords {o : Nat → O} {i q : Nat} (repeats : Lasso o i q) : Acco
     match Nat.lt_or_ge t (i + q + 1) with
     | .inl early => nomatch (lasso_silent (o := o) (h := (i, q)) early).symm.trans claims
     | .inr within =>
-      let ⟨d, at_t⟩ := gap_of_le within
+      let ⟨d, at_t⟩ := le_dest within
       have at_t' : t = i + d + q + 1 :=
         at_t.trans ((Nat.add_right_comm (i + q) 1 d).trans
           (congrArg Nat.succ (Nat.add_right_comm i q d)))
@@ -662,7 +662,7 @@ theorem diag_mono (k : Nat) : ∀ d, diag (pairAt k) ≤ diag (pairAt (k + d))
   | d + 1 => Nat.le_trans (diag_mono k d) (diag_next (pairAt (k + d)))
 
 theorem diag_le {k k' : Nat} (le : k ≤ k') : diag (pairAt k) ≤ diag (pairAt k') :=
-  let ⟨d, at_k'⟩ := gap_of_le le
+  let ⟨d, at_k'⟩ := le_dest le
   Eq.subst (motive := fun n => diag (pairAt k) ≤ diag (pairAt n)) at_k'.symm (diag_mono k d)
 
 theorem tri_mono (m : Nat) : ∀ d, tri m ≤ tri (m + d)
@@ -744,7 +744,7 @@ theorem lasso_of_rest {T : Nat} (rests : ∀ t, T ≤ t → byElimination lassos
       Nat.le_trans (Nat.le_add_left T h.1)
         (Nat.le_trans later (Nat.le_trans (Nat.le_add_right u h.2) (Nat.le_succ _)))
     have held : index lassos o (u + h.2 + 1) = index lassos o T :=
-      let ⟨e, at_t⟩ := gap_of_le past_T
+      let ⟨e, at_t⟩ := le_dest past_T
       Eq.subst (motive := fun n => index lassos o n = index lassos o T) at_t.symm (stays e)
     have within : h.1 + h.2 + 1 ≤ u + h.2 + 1 :=
       Nat.succ_le_succ (Nat.add_le_add_right
@@ -770,7 +770,7 @@ theorem held_byElimination_bounded {S : Type v} {next : S → S} {s : S} {l : Li
   let ⟨bound, claims, stop⟩ := lasso_byElimination_bounded repeats
   have top : tri (i + q) + q < tri l.length :=
     Nat.lt_of_lt_of_le (place_lt i q)
-      (let ⟨d, at_l⟩ := gap_of_le within
+      (let ⟨d, at_l⟩ := le_dest within
        Eq.subst (motive := fun n => tri (i + q + 1) ≤ tri n) at_l.symm (tri_mono _ d))
   ⟨fun t => Nat.lt_of_le_of_lt (bound t) top,
    fun t later => claims t (Nat.le_trans within later), stop⟩
@@ -1130,7 +1130,7 @@ theorem rests : ∀ t, 3 ≤ t → byElimination lassos (prefixOf course t) = so
     have held : index lassos course t = 2 :=
       Nat.le_antisymm ((lasso_byElimination_bounded repeats).1 t)
         (Nat.le_trans (Nat.le_of_eq index_three.symm) (index_mono_le later))
-    let ⟨d, at_t⟩ := gap_of_le (Nat.le_trans (Nat.le_succ 2) later)
+    let ⟨d, at_t⟩ := le_dest (Nat.le_trans (Nat.le_succ 2) later)
     have at_t' : t = d + 1 + 1 := at_t.trans (Nat.add_comm 2 d)
     (congrArg (fun n => lasso (pairAt n) (prefixOf course t)) held).trans
       ((lasso_claims (h := (0, 1)) (Nat.le_trans (Nat.le_succ 2) later)).trans

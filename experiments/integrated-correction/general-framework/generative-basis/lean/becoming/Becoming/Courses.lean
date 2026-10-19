@@ -404,7 +404,7 @@ theorem run_settles [DecidableEq S] {k n : Nat} (few : k < 2 ∨ n < 2) (r : Run
   fun j le => match decEq (r.state (a + j)) (r.state a) with
     | isTrue e => e
     | isFalse away => by
-      have ⟨m, e⟩ := split_le le
+      have ⟨m, e⟩ := le_dest le
       subst e
       have twice := bracket r.state a j m back away
       exact match few with

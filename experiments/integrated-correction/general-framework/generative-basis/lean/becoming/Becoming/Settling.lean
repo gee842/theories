@@ -112,7 +112,7 @@ theorem roundIndex_from {i p : Nat} : ∀ c n, c ≤ p → roundIndex i p n = i 
 /-- From every step on, the index is at `i + c` at some step, for `c ≤ p`. -/
 theorem roundIndex_hits {i p c : Nat} (le : c ≤ p) (T : Nat) :
     ∃ n, T ≤ n ∧ roundIndex i p n = i + c :=
-  match gap_of_le (roundIndex_le i p T) with
+  match le_dest (roundIndex_le i p T) with
   | ⟨e, gap⟩ => ⟨T + (e + 1) + c, Nat.le_trans (Nat.le_add_right T (e + 1)) (Nat.le_add_right _ c),
       roundIndex_from c _ le (roundIndex_back e T gap.symm)⟩
 
@@ -221,7 +221,7 @@ theorem undoable_of_loop {r : Run P} (loop : ChangesInLoop r) :
     ∃ x a y, Reach P (r.state 0) x ∧ P.step x a y ∧ y ≠ x ∧ Reach P y x :=
   match loop with
   | ⟨i, p, c, back, le, changes⟩ =>
-    match gap_of_le le with
+    match le_dest le with
     | ⟨e, gap⟩ =>
       have ends : i + c + 1 + e = i + (p + 1) :=
         (Nat.add_right_comm (i + c) 1 e).trans
@@ -390,9 +390,9 @@ theorem lpo_of_settles (settle : ∀ r : Run process, r.state 0 = false → Enou
           | .inl le =>
             match hk : seen f (k + 1) with
             | false => rfl
-            | true => match gap_of_le le with
+            | true => match le_dest le with
               | ⟨e, gap⟩ => Bool.noConfusion (((congrArg (seen f) gap).trans (seen_stays f hk e)).symm.trans hT)
-          | .inr gt => match gap_of_le (Nat.le_of_lt (Nat.gt_of_not_le gt)) with
+          | .inr gt => match le_dest (Nat.le_of_lt (Nat.gt_of_not_le gt)) with
             | ⟨d, gap⟩ => (congrArg (seen f) gap).trans
                 ((Enough.settled_at (r := run f) stays d).trans hT)
         match hf : f k with

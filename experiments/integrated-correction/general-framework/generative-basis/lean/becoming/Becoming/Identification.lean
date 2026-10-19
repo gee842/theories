@@ -260,7 +260,7 @@ theorem lassos_agree {o o' : Nat → O} {i q i' q' : Nat} (lasso : Learning.Lass
     exact agree n (Nat.lt_of_lt_of_le before
       (Nat.add_le_add (Nat.le_add_right i (q + 1)) (Nat.le_add_right i' q')))
   | .inr after =>
-    match gap_of_le after with
+    match le_dest after with
     | ⟨d, at_n⟩ => exact (congrArg o at_n).trans ((late d).trans (congrArg o' at_n.symm))
 
 end Periods
@@ -428,7 +428,7 @@ theorem prefix_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
   have lasso : Learning.Lasso o 0 (M + 1) := fun u _ =>
     congrArg (fun k => if k = M + 1 then y else x) (period u)
   have lasso' : Learning.Lasso o' 1 M := fun u le =>
-    match gap_of_le le with
+    match le_dest le with
     | ⟨d, at_u⟩ =>
       congrArg (fun k => if k = M + 1 then y else x)
         ((congrArg (fun n => pos' (n + (M + 1))) at_u).trans
@@ -439,7 +439,7 @@ theorem prefix_short_twice {x y : O} (two : x ≠ y) (M : Nat) :
       have le : n ≤ M + 1 := Nat.le_of_lt_succ first
       congrArg (fun k => if k = M + 1 then y else x) ((early n le).trans (early' n le).symm)
     | .inr beyond =>
-      match gap_of_le beyond with
+      match le_dest beyond with
       | ⟨d, at_n⟩ =>
         have short : d < M :=
           Nat.lt_of_add_lt_add_left
@@ -499,7 +499,7 @@ theorem bounded_agree_exact {x y : O} (two : x ≠ y) (M M' : Nat) :
     match Nat.lt_or_ge n M' with
     | .inl before => (Learning.holdFrom_before o x before).symm
     | .inr after =>
-      match gap_of_le after with
+      match le_dest after with
       | ⟨j, at_n⟩ =>
         have short : j < M :=
           Nat.lt_of_add_lt_add_left
@@ -554,7 +554,7 @@ theorem lasso_of_fits {o : Nat → O} {N i q : Nat} (bound : StatesBelow o N)
     Learning.Lasso o i q := by
   let pos := Law.orbit (Learning.lassoNext i q) 0
   have lasso : Learning.Lasso (fun n => o (pos n)) i q := fun u le =>
-    match gap_of_le le with
+    match le_dest le with
     | ⟨d, at_u⟩ =>
       congrArg o ((congrArg (fun n => pos (n + (q + 1))) at_u).trans
         ((lassoPos_period d).trans (congrArg pos at_u.symm)))
@@ -562,7 +562,7 @@ theorem lasso_of_fits {o : Nat → O} {N i q : Nat} (bound : StatesBelow o N)
     match Nat.lt_or_ge m (i + q + 1) with
     | .inl early => congrArg o (lassoPos_early m (Nat.le_of_lt_succ early))
     | .inr late =>
-      match gap_of_le late with
+      match le_dest late with
       | ⟨d, at_m⟩ =>
         have at_m' : m = i + d + (q + 1) := at_m.trans (Nat.add_right_comm i (q + 1) d)
         have u_lt : i + d < m :=
@@ -834,7 +834,7 @@ theorem no_miss_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a +
         (Nat.le_trans (Nat.succ_le_succ (Nat.le_add_left b a)) within))
       fits
   have from_here : Learning.Lasso o s b := fun u le =>
-    match gap_of_le le with
+    match le_dest le with
     | ⟨d, at_u⟩ =>
       (congrArg (fun n => o (n + (b + 1))) at_u).trans
         ((congrArg o (Nat.add_assoc s d (b + 1))).trans
@@ -871,7 +871,7 @@ theorem byElimination_rests {N : Nat} (bound : StatesBelow o N) :
       let start := fun j => N + W * j
       have few : Learning.tri (i + q) + q + 1 ≤ Learning.tri N :=
         Nat.le_trans (Learning.place_lt i q)
-          (match gap_of_le within with
+          (match le_dest within with
            | ⟨d, at_N⟩ =>
              Eq.subst (motive := fun n => Learning.tri (i + q + 1) ≤ Learning.tri n) at_N.symm
                (Learning.tri_mono _ d))
@@ -913,7 +913,7 @@ theorem byElimination_rests {N : Nat} (bound : StatesBelow o N) :
                 (Eq.subst (motive := fun c => Learning.Misses c (o (s + d)))
                   (claim_is (s + d) ih) refuted))).trans ih) d
         intro t from_s refuted
-        match gap_of_le from_s with
+        match le_dest from_s with
         | ⟨d, at_t⟩ =>
           have at_t_k : k t = k s := (congrArg k at_t).trans (kept d)
           exact never t from_s

@@ -1,3 +1,5 @@
+import Becoming.Prelude
+
 /-!
 # Retrodiction: reading an earlier relation from later dated records
 
@@ -219,13 +221,6 @@ theorem bracket (c : Nat → R) (a j k : Nat) (back : c (a + (j + k)) = c a)
     away ((back.symm.trans ((congrArg c (Nat.add_assoc a j k)).symm.trans e)).symm)
   exact Nat.add_le_add first second
 
-theorem split_le : ∀ {j n : Nat}, j ≤ n → ∃ k, n = j + k
-  | 0, n, _ => ⟨n, (Nat.zero_add n).symm⟩
-  | _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
-  | j + 1, _ + 1, le =>
-    match split_le (Nat.le_of_succ_le_succ le) with
-    | ⟨k, e⟩ => ⟨k, (congrArg Nat.succ e).trans (Nat.succ_add j k).symm⟩
-
 /-- The course at `r` except one date `a + 1` at `r'`. -/
 def excursion (r r' : R) (a : Nat) (i : Nat) : R := if i = a + 1 then r' else r
 
@@ -262,7 +257,7 @@ theorem bracket_settles_iff {r r' : R} (two : r ≠ r') (a n k : Nat) :
     | isTrue lt, _ => .inl lt
     | isFalse _, isTrue lt => .inr lt
     | isFalse nk, isFalse nn => by
-      have ⟨m, e⟩ := split_le (Nat.le_of_not_lt nn)
+      have ⟨m, e⟩ := le_dest (Nat.le_of_not_lt nn)
       subst e
       have within : changes (excursion r r' a) a (2 + m) ≤ k := by
         rw [Nat.add_comm 2 m, excursion_changes two a m]
@@ -280,7 +275,7 @@ theorem bracket_settles_iff {r r' : R} (two : r ≠ r') (a n k : Nat) :
     match decEq (c (a + j)) (c a) with
     | isTrue e => e
     | isFalse away => by
-      have ⟨m, e⟩ := split_le le
+      have ⟨m, e⟩ := le_dest le
       subst e
       have twice := bracket c a j m back away
       exact match few with

@@ -603,7 +603,7 @@ theorem loop_of_coupledInto_succ {c : C} :
         | ⟨_, _, _, _, _, _, dMem, _⟩ => dMem) with
     | ⟨i, _, lt, le, same⟩ =>
       match gap_of_lt lt,
-          gap_of_le (Nat.le_of_lt (Nat.lt_of_lt_of_le lt (Nat.le_succ_of_le le))) with
+          le_dest (Nat.le_of_lt (Nat.lt_of_lt_of_le lt (Nat.le_succ_of_le le))) with
       | ⟨m, around⟩, ⟨r, rest⟩ =>
         ⟨v i,
           ⟨fun l => v (i + l), m + 1, Nat.succ_pos m, rfl,

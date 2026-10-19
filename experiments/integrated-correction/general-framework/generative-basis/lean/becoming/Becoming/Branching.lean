@@ -348,7 +348,7 @@ theorem Returns.run {s : S} (returns : Returns P s) :
                 (Eq.subst (motive := fun z => P.step (g as.length) (m as.length) z) closes
                   (steps as.length (Nat.lt_succ_self _))))⟩,
         start, fun n =>
-          match gap_of_le (lap_le as.length n) with
+          match le_dest (lap_le as.length n) with
           | ⟨e, gap⟩ =>
             Eq.subst (motive := fun z => Reach P (g (lap as.length n)) z) finish
               (positions_reach steps (e + 1) (lap as.length n)

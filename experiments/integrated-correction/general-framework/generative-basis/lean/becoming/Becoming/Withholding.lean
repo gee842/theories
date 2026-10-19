@@ -200,7 +200,7 @@ theorem waitsAll_withholding_stays {n : Nat} {a : α}
 theorem waitsAll_withholding_stays_le {n m : Nat} {a : α}
     (out : ¬ (Law.run (waitsAll up) s).state n a) (le : n ≤ m) :
     ¬ (Law.run (waitsAll up) s).state m a := by
-  let ⟨d, same⟩ := gap_of_le le
+  let ⟨d, same⟩ := le_dest le
   subst same
   exact waitsAll_withholding_stays out d
 
@@ -255,7 +255,7 @@ variable {up}
 theorem no_longer_chain {L : Nat} (none : ∀ b a, ¬ Chain up L b a) :
     ∀ n, L ≤ n → ∀ b a, ¬ Chain up n b a := by
   intro n le b a ch
-  let ⟨d, same⟩ := gap_of_le le
+  let ⟨d, same⟩ := le_dest le
   subst same
   let ⟨c, ch'⟩ := Chain.prefix d ch
   exact none b c ch'
@@ -464,7 +464,7 @@ it waits on, every formation of the ring gives at every step from step 3 on, fro
 theorem givesFirst_restores (s : Ring → Prop) :
     ∀ n, 3 ≤ n → ∀ a, (Law.run (givesFirst isFirst Waits) s).state n a := by
   intro n le a
-  let ⟨d, same⟩ := gap_of_le le
+  let ⟨d, same⟩ := le_dest le
   subst same
   rw [Nat.add_comm 3 d]
   cases a with

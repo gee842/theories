@@ -793,17 +793,6 @@ theorem RoleTotal.collapse {J : Joining F} (total : J.RoleTotal) {x : F} (alone 
 
 /-! ### Branching tests of roles where each fragment holds each role in listed occurrences -/
 
-theorem mem_map_of_mem {α : Type u} {β : Type v} (g : α → β) {a : α} {l : List α} (mem : a ∈ l) :
-    g a ∈ l.map g := by
-  induction mem with
-  | head rest => exact List.Mem.head (List.map g rest)
-  | tail b _ ih => exact List.Mem.tail (g b) ih
-
-theorem eq_of_mem_singleton {α : Type u} {a b : α} (mem : a ∈ [b]) : a = b := by
-  cases mem with
-  | head => rfl
-  | tail _ rest => exact nomatch rest
-
 theorem exists_of_mem_map {α : Type u} {β : Type v} {g : α → β} {b : β} :
     ∀ {l : List α}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
   | [], mem => by
@@ -829,7 +818,7 @@ theorem LocallyFinite.outcomes {J : Joining F} (finite : J.LocallyFinite) :
     | ⟨es, listed⟩ => ⟨es.map Sum.inr, fun t => match t with
       | .inl _ => ⟨fun step => (nomatch step), fun mem => match exists_of_mem_map mem with
           | ⟨_, _, same⟩ => nomatch same⟩
-      | .inr e => ⟨fun at_r => mem_map_of_mem Sum.inr ((listed e).mp at_r),
+      | .inr e => ⟨fun at_r => mem_mapped Sum.inr ((listed e).mp at_r),
           fun mem => match exists_of_mem_map mem with
           | ⟨_, mem', same⟩ => (listed e).mpr
               (Eq.subst (motive := fun d => d ∈ es) (Sum.inr.inj same) mem')⟩⟩
@@ -841,8 +830,8 @@ theorem LocallyFinite.outcomes {J : Joining F} (finite : J.LocallyFinite) :
       | .inr _ => ⟨fun step => (nomatch step), fun mem => nomatch mem⟩⟩
   | .inr e, .leave r => ⟨[.inl (e.at r)], fun t => match t with
       | .inl _ => ⟨fun at_r => by subst at_r; exact List.Mem.head [], fun mem =>
-          Sum.inl.inj (eq_of_mem_singleton mem)⟩
-      | .inr _ => ⟨fun step => (nomatch step), fun mem => nomatch eq_of_mem_singleton mem⟩⟩
+          Sum.inl.inj (CrossSituational.mem_singleton mem)⟩
+      | .inr _ => ⟨fun step => (nomatch step), fun mem => nomatch CrossSituational.mem_singleton mem⟩⟩
 
 /-- **Under excluded middle, where each fragment holds each role in listed occurrences, places are
 alike in their roles exactly where they pass the same branching tests.** -/
@@ -943,7 +932,7 @@ theorem FiniteOutcomes.retained_outcomes {J : Joining F} (finite : J.FiniteOutco
           cases Option.some.inj (at_i.symm.trans at_a)
           cases Option.some.inj (at_j.symm.trans at_b)
           subst formed
-          exact mem_map_of_mem (fun z => xs ++ [z]) ((listed z).mp joined),
+          exact mem_mapped (fun z => xs ++ [z]) ((listed z).mp joined),
          fun mem => match exists_of_mem_map mem with
           | ⟨z, mem', formed⟩ => ⟨a, b, z, at_i, at_j, (listed z).mpr mem', formed.symm⟩⟩⟩
     | none, _ => ⟨[], fun _ => ⟨fun ⟨_, _, _, at_a, _⟩ => (nomatch at_i.symm.trans at_a),

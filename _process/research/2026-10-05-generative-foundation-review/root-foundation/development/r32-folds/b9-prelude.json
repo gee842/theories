@@ -1,0 +1,220 @@
+{
+ "rows": [
+  {
+   "old": "Becoming.Sensitivity.or_true",
+   "new": "Becoming.ChanceFloors.or_true",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Sensitivity"
+  },
+  {
+   "old": "Becoming.Copying.le_of_add_le_add",
+   "new": "Becoming.le_of_add_le_add_left_core",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Copying"
+  },
+  {
+   "old": "Becoming.Joining.eq_of_mem_singleton",
+   "new": "Becoming.CrossSituational.mem_singleton",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Joining"
+  },
+  {
+   "old": "Becoming.Frequency.bif_le_one",
+   "new": "Becoming.cond_le_one",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Frequency"
+  },
+  {
+   "old": "Becoming.Granularity.mem_joined_left",
+   "new": "Becoming.mem_appended_left",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Granularity"
+  },
+  {
+   "old": "Becoming.HistorySums.bool_and_false",
+   "new": "Becoming.Hexagram.and_false_of_true",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.HistorySums"
+  },
+  {
+   "old": "Becoming.Square.int_zero_add",
+   "new": "Becoming.Integers.zero_add",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Quantum"
+  },
+  {
+   "old": "Becoming.Square.int_zero_mul",
+   "new": "Becoming.Integers.zero_mul",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Quantum"
+  },
+  {
+   "old": "Becoming.Joining.mem_map_of_mem",
+   "new": "Becoming.mem_mapped",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Joining"
+  },
+  {
+   "old": "Becoming.LoopReturn.sub_pos_of_lt",
+   "new": "Becoming.SupportGated.sub_pos_of_lt",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.LoopReturn"
+  },
+  {
+   "old": "Becoming.Retrodiction.split_le",
+   "new": "Becoming.le_dest",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Retrodiction"
+  },
+  {
+   "old": "Becoming.gap_of_le",
+   "new": "Becoming.le_dest",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.Recurrence"
+  },
+  {
+   "old": "Becoming.RouteFormation.append_nil",
+   "new": "Becoming.TreeSearch.append_nil",
+   "why": "same statement, kept in the prelude (B9)",
+   "module": "Becoming.RouteFormation"
+  }
+ ],
+ "keep": [
+  {
+   "keep": "Becoming.ChanceFloors.or_true",
+   "module": "Becoming.ChanceFloors"
+  },
+  {
+   "keep": "Becoming.le_of_add_le_add_left_core",
+   "module": "Becoming.Reordering"
+  },
+  {
+   "keep": "Becoming.CrossSituational.mem_singleton",
+   "module": "Becoming.CrossSituational"
+  },
+  {
+   "keep": "Becoming.cond_le_one",
+   "module": "Becoming.Gluing"
+  },
+  {
+   "keep": "Becoming.mem_appended_left",
+   "module": "Becoming.Weighted"
+  },
+  {
+   "keep": "Becoming.Hexagram.and_false_of_true",
+   "module": "Becoming.HexagramSites"
+  },
+  {
+   "keep": "Becoming.Integers.zero_add",
+   "module": "Becoming.Integers"
+  },
+  {
+   "keep": "Becoming.Integers.zero_mul",
+   "module": "Becoming.Integers"
+  },
+  {
+   "keep": "Becoming.mem_mapped",
+   "module": "Becoming.Weighted"
+  },
+  {
+   "keep": "Becoming.SupportGated.sub_pos_of_lt",
+   "module": "Becoming.RenewalFlow"
+  },
+  {
+   "keep": "Becoming.le_dest",
+   "module": "Becoming.Prelude"
+  },
+  {
+   "keep": "Becoming.TreeSearch.append_nil",
+   "module": "Becoming.TreeSearch"
+  }
+ ],
+ "left": [
+  {
+   "theorems": [
+    "Becoming.Closing.Onset.amount_after",
+    "Becoming.Frequency.SelfLoop.onset_amount"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.Courses.counting_sum_one",
+    "Becoming.Situations.sum_one",
+    "Becoming.TypicalRuns.sum_one"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.Exposed.holder_after",
+    "Becoming.Shuttle.next_off"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.Flow.excess_zero_of_le",
+    "Becoming.OneStep.Chain.excess_of_le"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.HistorySums.nonzero_of_le",
+    "Becoming.RouteTraces.nonzero_of_le"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.Loops.total_steps_shift",
+    "Becoming.total_steps_succ"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.LossMatching.distinct_map_on",
+    "Becoming.distinct_map_on"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.LossMatching.not_mem_middle",
+    "Becoming.not_mem_of_middle"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.Naturals.add_sub_cancel",
+    "RelationalRenewal.add_sub_self"
+   ],
+   "why": "a member outside the core"
+  },
+  {
+   "theorems": [
+    "Becoming.Net.distinct_append'",
+    "Becoming.distinct_append",
+    "Becoming.distinct_append_apart"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.Propagation.between_of_mem_steps",
+    "Becoming.between_of_mem_steps"
+   ],
+   "why": "the statement names a definition of the run"
+  },
+  {
+   "theorems": [
+    "Becoming.total_steps_add",
+    "Becoming.total_steps_split"
+   ],
+   "why": "the statement names a definition of the run"
+  }
+ ]
+}

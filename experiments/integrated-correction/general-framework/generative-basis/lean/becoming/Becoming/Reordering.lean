@@ -1953,11 +1953,6 @@ end Order.Arising
 
 /-! ### Bringing one exchange forward -/
 
-/-- Cancelling the same number added first. -/
-theorem le_of_add_le_add_left_core {S a b : Nat} (le : S + a ≤ S + b) : a ≤ b :=
-  le_of_add_le_add_right S (Nat.le_trans (Nat.le_of_eq (Nat.add_comm a S))
-    (Nat.le_trans le (Nat.le_of_eq (Nat.add_comm S b))))
-
 /-- The steps `S + d - 1`, …, `S + 1`, `S`: commuting at each in turn brings the exchange across
 step `S + d` to step `S`, each exchange between them one step later. -/
 def lowering (S : Nat) : Nat → List Nat

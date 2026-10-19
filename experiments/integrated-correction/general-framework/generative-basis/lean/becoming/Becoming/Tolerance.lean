@@ -237,7 +237,7 @@ theorem restored_stays (keeps : KeepsInclusion next) {n : Nat} {a : α}
     (restored : ∀ s, (Law.run next s).state n a) :
     ∀ m, n ≤ m → ∀ s, (Law.run next s).state m a := by
   intro m le
-  let ⟨d, same⟩ := gap_of_le le
+  let ⟨d, same⟩ := le_dest le
   subst same
   exact (worst_start keeps (n + d) a).mpr
     (rises_le keeps ((worst_start keeps n a).mp restored) d)
@@ -582,7 +582,7 @@ theorem spreads :
     (∀ n, 2 ≤ n → ∀ a, ¬ (Law.run (tolerating tol0 ups) oneWithheld).state n a) ∧
       (Law.run (tolerating tol0 ups) oneWithheld).state 1 first := by
   refine ⟨fun n le => ?_, AllBut.holds trivial (AllBut.holds trivial (AllBut.nil 0))⟩
-  let ⟨d, same⟩ := gap_of_le le
+  let ⟨d, same⟩ := le_dest le
   subst same
   exact total_stays tol0_spares_none total_at_two d
 

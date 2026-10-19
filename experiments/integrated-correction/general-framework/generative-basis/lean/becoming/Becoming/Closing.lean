@@ -226,7 +226,7 @@ theorem Coupled.append {v w : Nat → C} {i j : Nat} (cv : Coupled cs part k pre
     rw [Closing.join_below (Nat.le_of_lt before), Closing.join_below before]
     exact cv l before
   | inr after =>
-    obtain ⟨r, split⟩ := gap_of_le after
+    obtain ⟨r, split⟩ := le_dest after
     subst split
     rw [Closing.join_from meet r,
       show i + r + 1 = i + (r + 1) from rfl, Closing.join_from meet (r + 1)]

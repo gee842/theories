@@ -516,7 +516,7 @@ theorem lasso_iff_sameAhead {o : Nat → O} {i q : Nat} :
     Learning.Lasso o i q ↔ SameAhead o i (i + (q + 1)) :=
   ⟨fun lasso n => (lasso (i + n) (Nat.le_add_right i n)).symm.trans
       (congrArg o (Nat.add_right_comm i n (q + 1))),
-   fun same u later => match gap_of_le later with
+   fun same u later => match le_dest later with
     | ⟨d, at_u⟩ => by
       subst at_u
       exact (congrArg o (Nat.add_right_comm i d (q + 1))).trans (same d).symm⟩

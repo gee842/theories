@@ -126,10 +126,6 @@ theorem append_assoc {α : Type} : ∀ (a b c : List α), a ++ b ++ c = a ++ (b 
   | [], _, _ => rfl
   | x :: a, b, c => congrArg (x :: ·) (append_assoc a b c)
 
-theorem append_nil {α : Type} : ∀ (a : List α), a ++ [] = a
-  | [] => rfl
-  | x :: a => congrArg (x :: ·) (append_nil a)
-
 /-- **A fork's children are what the tree holds one turn further.** -/
 theorem child_locate (root : Tree) (address : Address) (l r : Tree)
     (h : ∀ suffix, locate root (address ++ suffix) = locate (.fork l r) suffix)

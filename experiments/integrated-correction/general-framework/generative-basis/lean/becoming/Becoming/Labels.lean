@@ -176,7 +176,7 @@ theorem table_predicts {next : S → S} {reg : S → R} {val : S → V} {l : Lis
   have closed : ∀ x, x ∈ l → next x ∈ l := fun x _ => world (next x)
   fun t late =>
     have proposed := Learnable.ahead_fixes (fun n => world (Law.orbit next s n)) reg t late
-    match gap_of_le (Nat.le_trans (Nat.le_add_right l.length _) late) with
+    match le_dest (Nat.le_trans (Nat.le_add_right l.length _) late) with
     | ⟨d, gap⟩ =>
       have at_t : Law.orbit next (Law.orbit next s d) l.length = Law.orbit next s t :=
         (Law.orbit_add next s d l.length).symm.trans

@@ -94,11 +94,6 @@ theorem filter_nil_of {p : M → Bool} :
       rw [filter_false xs hx]
       exact filter_nil_of fun m mem pm => nothing m (.tail x mem) pm
 
-theorem mem_singleton {m e : M} (mem : m ∈ [e]) : m = e := by
-  cases mem with
-  | head => rfl
-  | tail _ rest => exact nomatch rest
-
 theorem filter_singleton_of {p : M → Bool} {e : M} :
     ∀ (l : List M), Distinct l → e ∈ l → p e = true →
       (∀ m, m ∈ l → p m = true → m = e) → List.filter p l = [e]

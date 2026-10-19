@@ -126,10 +126,6 @@ theorem count_succ_off {on : Nat → Bool} {t : Nat} (no : on t = false) :
     count on (t + 1) = count on t :=
   congrArg (fun b => count on t + (bif b then 1 else 0)) no
 
-theorem bif_le_one : ∀ b : Bool, (bif b then 1 else 0) ≤ 1
-  | true => Nat.le_refl 1
-  | false => Nat.zero_le 1
-
 theorem bif_le (M : Nat) : ∀ b : Bool, (bif b then M else 0) ≤ M
   | true => Nat.le_refl M
   | false => Nat.zero_le M
@@ -145,7 +141,7 @@ theorem count_mono (on : Nat → Bool) {s t : Nat} (le : s ≤ t) : count on s �
 /-- A schedule marks at most every step. -/
 theorem count_le (on : Nat → Bool) : ∀ t, count on t ≤ t
   | 0 => Nat.le_refl 0
-  | t + 1 => Nat.add_le_add (count_le on t) (bif_le_one (on t))
+  | t + 1 => Nat.add_le_add (count_le on t) (cond_le_one (on t))
 
 /-- **Where the count rises past `N`'s, a step from `N` on is marked.** -/
 theorem marked_between (on : Nat → Bool) (N : Nat) :

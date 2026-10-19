@@ -55,13 +55,6 @@ theorem add_sub_le : ∀ a c d : Nat, a + c - d ≤ a + (c - d)
   | a, c + 1, d + 1 => Nat.le_trans (Nat.le_of_eq (Nat.succ_sub_succ (a + c) d))
       (Nat.le_trans (add_sub_le a c d) (Nat.le_of_eq (congrArg (a + ·) (Nat.succ_sub_succ c d).symm)))
 
-/-- What exceeds leaves a positive remainder. -/
-theorem sub_pos_of_lt : ∀ {d c : Nat}, d < c → 0 < c - d
-  | _, 0, less => absurd less (Nat.not_lt_zero _)
-  | 0, c + 1, _ => Nat.succ_pos c
-  | d + 1, c + 1, less => Nat.lt_of_lt_of_le (sub_pos_of_lt (Nat.lt_of_succ_lt_succ less))
-      (Nat.le_of_eq (Nat.succ_sub_succ c d).symm)
-
 /-- Within what is added, subtracting after adding is adding what remains. -/
 theorem add_sub_assoc_of_le : ∀ (a : Nat) {c d : Nat}, d ≤ c → a + c - d = a + (c - d)
   | _, _, 0, _ => rfl

@@ -147,18 +147,9 @@ theorem le_succ_cases {n K : Nat} (le : n ≤ K + 1) : n ≤ K ∨ n = K + 1 :=
   | .inl lt => Or.inl (Nat.le_of_lt_succ lt)
   | .inr ge => Or.inr (Nat.le_antisymm le ge)
 
-/-- How far `k` lies beyond `t`. -/
-theorem gap_of_le {t : Nat} : ∀ {k : Nat}, t ≤ k → ∃ d, k = t + d := by
-  intro k le
-  induction le with
-  | refl => exact ⟨0, rfl⟩
-  | step _ ih =>
-    let ⟨d, same⟩ := ih
-    exact ⟨d + 1, congrArg Nat.succ same⟩
-
 /-- How far `j` lies beyond `i`, at least one step. -/
 theorem gap_of_lt {i j : Nat} (lt : i < j) : ∃ d, j = i + (d + 1) :=
-  let ⟨d, same⟩ := gap_of_le lt
+  let ⟨d, same⟩ := le_dest lt
   ⟨d, same.trans (Nat.succ_add i d)⟩
 
 theorem mem_cons_split {x a : S} {l : List S} (mem : x ∈ a :: l) : x = a ∨ x ∈ l := by
@@ -306,7 +297,7 @@ theorem Marks.change_not_recurring {q : S → Nat} {g : Nat → S} (marks : Mark
     | succ m ih =>
       let ⟨t, le⟩ := ih
       let ⟨k, after, change⟩ := recurs t
-      let ⟨d, same⟩ := gap_of_le after
+      let ⟨d, same⟩ := le_dest after
       have up : q (g t) ≤ q (g k) := by rw [same]; exact marks.mono t d
       exact ⟨k + 1, Nat.lt_of_le_of_lt (Nat.le_trans le up) ((marks k).2 change)⟩
   let ⟨t, above⟩ := climb (sumOver q l + 1)
@@ -641,7 +632,7 @@ theorem returns_of_reachable {next : S → S} {all : List S} (every : ∀ s, s �
   let ⟨x, to⟩ := reachable_iff.mp reach
   let ⟨i, _, lt, le, same⟩ := revisits_within all (orbit next x) (fun _ _ => every _)
   let ⟨d, gap⟩ := gap_of_lt lt
-  let ⟨e, rest⟩ := gap_of_le (Nat.le_trans (Nat.le_of_lt lt) le)
+  let ⟨e, rest⟩ := le_dest (Nat.le_trans (Nat.le_of_lt lt) le)
   have back : orbit next (orbit next x i) (d + 1) = orbit next x i :=
     (orbit_add next x i (d + 1)).symm.trans ((congrArg (orbit next x) gap.symm).trans same.symm)
   have reached : orbit next (orbit next x i) e = s :=

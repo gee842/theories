@@ -345,7 +345,7 @@ theorem total_upto (g : Nat → Nat) (τ : Nat) :
 
 theorem total_upto_of_le (g : Nat → Nat) {τ T : Nat} (le : τ + 1 ≤ T) :
     total (steps 0 T) (fun s => bif Nat.ble s τ then g s else 0) = total (steps 0 (τ + 1)) g :=
-  match gap_of_le le with
+  match le_dest le with
   | ⟨m, split⟩ => (congrArg (fun T => total (steps 0 T) _) split).trans (total_upto g τ m)
 
 end Routes

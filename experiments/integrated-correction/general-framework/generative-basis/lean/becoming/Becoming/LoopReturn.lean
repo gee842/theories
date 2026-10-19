@@ -123,10 +123,6 @@ theorem eq_zero_of_add_le : ∀ {a b : Nat}, a + b ≤ b → a = 0
   | _, 0, le => Nat.eq_zero_of_le_zero le
   | _, _ + 1, le => eq_zero_of_add_le (Nat.le_of_succ_le_succ le)
 
-/-- Taking less than a number leaves something. -/
-theorem sub_pos_of_lt {a b : Nat} (lt : a < b) : 0 < b - a :=
-  Naturals.le_sub_of_add_le (a := a) (b := 1) lt
-
 /-- One raised to every exponent is one. -/
 theorem one_pow : ∀ n, 1 ^ n = 1
   | 0 => rfl
@@ -253,7 +249,7 @@ theorem sub_const_closes {f : Nat → Nat} {c d n : Nat} (sub : ∀ x, f x = x -
 closing turn is the least `n` with `n * c ≥ d`; with `c = 0` there is none for a positive `d`. -/
 theorem sub_const_open {f : Nat → Nat} {c d n : Nat} (sub : ∀ x, f x = x - c)
     (short : n * c < d) : 0 < (Law.run f d).state n :=
-  Nat.lt_of_lt_of_le (sub_pos_of_lt short) (Nat.le_of_eq (orbit_sub_const sub d n).symm)
+  Nat.lt_of_lt_of_le (SupportGated.sub_pos_of_lt short) (Nat.le_of_eq (orbit_sub_const sub d n).symm)
 
 /-- **The bound `d` is exact.** `Nat.pred` keeps no difference and is below every positive one, and
 under it the course is positive at every turn before `d`. -/
@@ -262,7 +258,7 @@ theorem closes_within_exact :
       ∀ d n, n < d → 0 < (Law.run Nat.pred d).state n :=
   ⟨rfl, fun _ pos => Nat.pred_lt (Nat.ne_of_gt pos),
    fun d n lt =>
-    match gap_of_le lt with
+    match le_dest lt with
     | ⟨e, same⟩ =>
       have eq : (Law.run Nat.pred d).state n = e + 1 :=
         (congrArg (fun x => (Law.run Nat.pred x).state n)

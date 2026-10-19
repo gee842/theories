@@ -1,0 +1,92 @@
+Branching.lean	351	gap_of_le	le_dest	code	match gap_of_le (lap_le as.length n) with
+Closing.lean	229	gap_of_le	le_dest	code	obtain ⟨r, split⟩ := gap_of_le after
+Counterfactual.lean	342	gap_of_le	le_dest	code	let ⟨d, gap⟩ := gap_of_le le
+Courses.lean	407	split_le	le_dest	code	have ⟨m, e⟩ := split_le le
+Description.lean	519	gap_of_le	le_dest	code	fun same u later => match gap_of_le later with
+Enough.lean	155	gap_of_le	le_dest	code	match gap_of_le late with
+Entropy.lean	1365	gap_of_le	le_dest	code	match gap_of_le from_, gap_of_le (Nat.le_trans from_ (Nat.le_trans sv (Nat.le_of_lt vu))) with
+Entropy.lean	1365	gap_of_le	le_dest	code	match gap_of_le from_, gap_of_le (Nat.le_trans from_ (Nat.le_trans sv (Nat.le_of_lt vu))) with
+Frequency.lean	144	bif_le_one	cond_le_one	code	| t + 1 => Nat.add_le_add (count_le on t) (bif_le_one (on t))
+Granularity.lean	93	mem_joined_left	mem_appended_left	code	| .inl same => mem_joined_left (Segmentation.encode g l)
+Granularity.lean	106	mem_joined_left	mem_appended_left	code	| .inl same => mem_joined_left L
+Granularity.lean	272	Joining.eq_of_mem_singleton	CrossSituational.mem_singleton	code	fun mem => Eq.subst (motive := fun x => Trace P s [] x) (Joining.eq_of_mem_singleton mem).symm
+Granularity.lean	575	Joining.eq_of_mem_singleton	CrossSituational.mem_singleton	code	(Joining.eq_of_mem_singleton mem) holds⟩⟩
+Granularity.lean	579	Joining.eq_of_mem_singleton	CrossSituational.mem_singleton	code	(Joining.eq_of_mem_singleton mem) holds⟩
+Granularity.lean	586	Joining.eq_of_mem_singleton	CrossSituational.mem_singleton	code	(Joining.eq_of_mem_singleton mem) holds with
+Granularity.lean	600	Granularity.mem_joined_left	mem_appended_left	code	| ⟨χ, mem, holds'⟩ => ⟨χ, Granularity.mem_joined_left _ mem, holds'⟩
+Granularity.lean	670	Joining.eq_of_mem_singleton	CrossSituational.mem_singleton	code	fun mem => (Joining.eq_of_mem_singleton mem).symm⟩⟩
+Granularity.lean	675	Joining.eq_of_mem_singleton	CrossSituational.mem_singleton	code	fun mem => ⟨(Joining.eq_of_mem_singleton mem).symm, passes⟩⟩⟩
+Granularity.lean	688	Granularity.mem_joined_left	mem_appended_left	code	| .inl first => Granularity.mem_joined_left l' ((listed t).mp first)
+HistorySums.lean	199	HistorySums.bool_and_false	Hexagram.and_false_of_true	code	moves all n p.2 (HistorySums.bool_and_false term here))).trans (W.mul_zero _)
+Identification.lean	263	gap_of_le	le_dest	code	match gap_of_le after with
+Identification.lean	431	gap_of_le	le_dest	code	match gap_of_le le with
+Identification.lean	442	gap_of_le	le_dest	code	match gap_of_le beyond with
+Identification.lean	502	gap_of_le	le_dest	code	match gap_of_le after with
+Identification.lean	557	gap_of_le	le_dest	code	match gap_of_le le with
+Identification.lean	565	gap_of_le	le_dest	code	match gap_of_le late with
+Identification.lean	837	gap_of_le	le_dest	code	match gap_of_le le with
+Identification.lean	874	gap_of_le	le_dest	code	(match gap_of_le within with
+Identification.lean	916	gap_of_le	le_dest	code	match gap_of_le from_s with
+Joining.lean	821	mem_map_of_mem	mem_mapped	code	| .inr e => ⟨fun at_r => mem_map_of_mem Sum.inr ((listed e).mp at_r),
+Joining.lean	833	eq_of_mem_singleton	CrossSituational.mem_singleton	code	Sum.inl.inj (eq_of_mem_singleton mem)⟩
+Joining.lean	834	eq_of_mem_singleton	CrossSituational.mem_singleton	code	| .inr _ => ⟨fun step => (nomatch step), fun mem => nomatch eq_of_mem_singleton mem⟩⟩
+Joining.lean	935	mem_map_of_mem	mem_mapped	code	exact mem_map_of_mem (fun z => xs ++ [z]) ((listed z).mp joined),
+Labels.lean	179	gap_of_le	le_dest	code	match gap_of_le (Nat.le_trans (Nat.le_add_right l.length _) late) with
+LastChange.lean	65	gap_of_le	le_dest	code	⟨T, fun _ late => match gap_of_le late with
+LastChange.lean	122	gap_of_le	le_dest	code	match gap_of_le below with
+LastChange.lean	249	gap_of_le	le_dest	code	⟨T, fun n late => match gap_of_le late with
+Learning.lean	390	gap_of_le	le_dest	code	let ⟨d, at_t⟩ := gap_of_le le
+Learning.lean	461	gap_of_le	le_dest	code	let ⟨d, at_t⟩ := gap_of_le le
+Learning.lean	503	gap_of_le	le_dest	code	let ⟨d, at_u⟩ := gap_of_le later
+Learning.lean	602	gap_of_le	le_dest	code	let ⟨d, at_t⟩ := gap_of_le within
+Learning.lean	665	gap_of_le	le_dest	code	let ⟨d, at_k'⟩ := gap_of_le le
+Learning.lean	747	gap_of_le	le_dest	code	let ⟨e, at_t⟩ := gap_of_le past_T
+Learning.lean	773	gap_of_le	le_dest	code	(let ⟨d, at_l⟩ := gap_of_le within
+Learning.lean	1133	gap_of_le	le_dest	code	let ⟨d, at_t⟩ := gap_of_le (Nat.le_trans (Nat.le_succ 2) later)
+LimitVerification.lean	357	gap_of_le	le_dest	code	| ⟨_, le', yes'⟩ => match gap_of_le le' with
+LimitVerification.lean	379	gap_of_le	le_dest	code	match gap_of_le le with
+LimitVerification.lean	387	gap_of_le	le_dest	code	match gap_of_le end_a, gap_of_le end_b with
+LimitVerification.lean	387	gap_of_le	le_dest	code	match gap_of_le end_a, gap_of_le end_b with
+LimitVerification.lean	574	gap_of_le	le_dest	code	match gap_of_le le with
+LimitVerification.lean	717	gap_of_le	le_dest	code	not_recurs ((refutes (against m)).mp ⟨n, fun k le => match gap_of_le le with
+LoopReturn.lean	252	sub_pos_of_lt	SupportGated.sub_pos_of_lt	code	Nat.lt_of_lt_of_le (sub_pos_of_lt short) (Nat.le_of_eq (orbit_sub_const sub d n).symm)
+LoopReturn.lean	261	gap_of_le	le_dest	code	match gap_of_le lt with
+Loops.lean	401	gap_of_le	le_dest	code	match into, gap_of_le le with
+Loops.lean	418	gap_of_le	le_dest	code	match gap_of_lt lt, gap_of_le (Nat.le_of_lt (Nat.lt_of_lt_of_le lt le)) with
+Loops.lean	662	gap_of_le	le_dest	code	match gap_of_le le with
+Loops.lean	1351	gap_of_le	le_dest	code	match gap_of_le (Nat.succ_le_of_lt (two_pow_pos a)) with
+Pace.lean	418	gap_of_le	le_dest	code	match gap_of_le beyond with
+Pace.lean	551	gap_of_le	le_dest	code	match gap_of_le (Nat.le_trans (Nat.le_succ_of_le within) ge) with
+Parting.lean	291	gap_of_le	le_dest	code	match gap_of_le ge with
+Quantum.lean	216	int_zero_mul	Integers.zero_mul	code	repeat rw [int_zero_mul]
+Quantum.lean	218	int_zero_add	Integers.zero_add	code	repeat rw [int_zero_add]
+Quantum.lean	222	int_zero_mul	Integers.zero_mul	code	repeat rw [int_zero_mul]
+Quantum.lean	224	int_zero_add	Integers.zero_add	code	repeat rw [int_zero_add]
+Quantum.lean	228	int_zero_mul	Integers.zero_mul	code	repeat rw [int_zero_mul]
+Quantum.lean	230	int_zero_add	Integers.zero_add	code	repeat rw [int_zero_add]
+Quantum.lean	234	int_zero_mul	Integers.zero_mul	code	repeat rw [int_zero_mul]
+Quantum.lean	236	int_zero_add	Integers.zero_add	code	repeat rw [int_zero_add]
+Recurrence.lean	152	gap_of_le	le_dest	code	let ⟨d, same⟩ := gap_of_le lt
+Recurrence.lean	300	gap_of_le	le_dest	code	let ⟨d, same⟩ := gap_of_le after
+Recurrence.lean	635	gap_of_le	le_dest	code	let ⟨e, rest⟩ := gap_of_le (Nat.le_trans (Nat.le_of_lt lt) le)
+Remainder.lean	606	gap_of_le	le_dest	code	gap_of_le (Nat.le_of_lt (Nat.lt_of_lt_of_le lt (Nat.le_succ_of_le le))) with
+Retrodiction.lean	258	split_le	le_dest	code	have ⟨m, e⟩ := split_le (Nat.le_of_not_lt nn)
+Retrodiction.lean	276	split_le	le_dest	code	have ⟨m, e⟩ := split_le le
+RouteFormation.lean	116	append_nil	TreeSearch.append_nil	code	| false => exact congrArg (eval c a ++ ·) (append_nil (eval c b))
+RouteFormation.lean	117	append_nil	TreeSearch.append_nil	code	| true => exact congrArg (eval c b ++ ·) (append_nil (eval c a))
+Routes.lean	348	gap_of_le	le_dest	code	match gap_of_le le with
+RuleCapture.lean	288	gap_of_le	le_dest	code	match gap_of_le (Nat.succ_le_of_lt lt) with
+Seeking.lean	143	gap_of_le	le_dest	code	match gap_of_le le with
+Sensitivity.lean	419	Sensitivity.or_true	ChanceFloors.or_true	code	((congrArg (fun b => seenBy s k || b) yes).trans (Sensitivity.or_true (seenBy s k)) : _)
+Settling.lean	115	gap_of_le	le_dest	code	match gap_of_le (roundIndex_le i p T) with
+Settling.lean	224	gap_of_le	le_dest	code	match gap_of_le le with
+Settling.lean	393	gap_of_le	le_dest	code	| true => match gap_of_le le with
+Settling.lean	395	gap_of_le	le_dest	code	| .inr gt => match gap_of_le (Nat.le_of_lt (Nat.gt_of_not_le gt)) with
+Tolerance.lean	240	gap_of_le	le_dest	code	let ⟨d, same⟩ := gap_of_le le
+Tolerance.lean	585	gap_of_le	le_dest	code	let ⟨d, same⟩ := gap_of_le le
+Typicality.lean	315	gap_of_le	le_dest	code	match gap_of_le le with
+Typicality.lean	392	gap_of_le	le_dest	code	match gap_of_le enough with
+Unrolling.lean	276	gap_of_le	le_dest	code	match gap_of_le late with
+Withholding.lean	203	gap_of_le	le_dest	code	let ⟨d, same⟩ := gap_of_le le
+Withholding.lean	258	gap_of_le	le_dest	code	let ⟨d, same⟩ := gap_of_le le
+Withholding.lean	467	gap_of_le	le_dest	code	let ⟨d, same⟩ := gap_of_le le

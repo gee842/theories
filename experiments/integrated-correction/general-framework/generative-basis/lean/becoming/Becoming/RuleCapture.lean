@@ -285,7 +285,7 @@ included. -/
 theorem uniform_locks (raises : Raises P favours f) (monotone : ReadsShare P M h)
     (uniform : ∀ x g, favours (h x g)) {c : S × R} {r r' : Nat} (first : reads r = true)
     (second : reads r' = true) (lt : r < r') : Locked M favours h (paced f h reads c (r' + 1)) :=
-  match gap_of_le (Nat.succ_le_of_lt lt) with
+  match le_dest (Nat.succ_le_of_lt lt) with
   | ⟨d, at_r'⟩ =>
     have fav : favours (paced f h reads c r').2 :=
       Eq.subst (motive := fun n => favours (paced f h reads c n).2) at_r'.symm

@@ -273,7 +273,7 @@ theorem learnable_iff_reading {next : S → S} {reg : S → R} {val : S → V} {
           G fun k => some (reg (Law.orbit next (Law.orbit next s t) k)) :=
   ⟨fun learnable => ⟨fromWorld next reg val l v₀, fromWorld_respects next reg val l v₀, fun s =>
       ⟨l.length, fun t late =>
-        match gap_of_le late with
+        match le_dest late with
         | ⟨d, gap⟩ =>
           have at_t : Law.orbit next (Law.orbit next s d) l.length = Law.orbit next s t :=
             (Law.orbit_add next s d l.length).symm.trans

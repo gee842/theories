@@ -1362,7 +1362,7 @@ theorem Revisits.recurs {T : Nat} (revisits : W.Revisits cs T) :
     Becoming.Revisits (fun n => W.config cs (T + n)) :=
   match revisits with
   | ⟨_, _, _, from_, sv, vu, _, same⟩ =>
-    match gap_of_le from_, gap_of_le (Nat.le_trans from_ (Nat.le_trans sv (Nat.le_of_lt vu))) with
+    match le_dest from_, le_dest (Nat.le_trans from_ (Nat.le_trans sv (Nat.le_of_lt vu))) with
     | ⟨i, si⟩, ⟨j, uj⟩ =>
       ⟨i, j, Nat.lt_of_add_lt_add_left (Nat.lt_of_le_of_lt (Nat.le_of_eq si.symm)
           (Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt sv vu) (Nat.le_of_eq uj))),

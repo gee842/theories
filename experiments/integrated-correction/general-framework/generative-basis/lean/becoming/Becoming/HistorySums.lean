@@ -174,10 +174,6 @@ theorem possibility_sum_false {α : Type u} {g : α → Bool} {l : List α}
   | false => rfl
   | true => exact Bool.noConfusion ((possibility_sum_of_mem here mem).symm.trans fails)
 
-theorem bool_and_false {b c : Bool} (fails : (b && c) = false) (holds : b = true) : c = false := by
-  subst holds
-  exact fails
-
 end HistorySums
 
 section Support
@@ -200,7 +196,7 @@ theorem Weights.transfer_zero_of_impossible (weight : S → A → S → R) (step
       exact (congrArg (fun y => W.mul y _) (off s p.1 p.2 here)).trans (W.zero_mul _)
     | true =>
       exact (congrArg (W.mul _) (Weights.transfer_zero_of_impossible weight step off g f offRead
-        moves all n p.2 (HistorySums.bool_and_false term here))).trans (W.mul_zero _)
+        moves all n p.2 (Hexagram.and_false_of_true term here))).trans (W.mul_zero _)
 
 end Support
 

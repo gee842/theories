@@ -548,4 +548,80 @@ theorem preimage_of_mem_map {α β : Type} {g : α → β} {b : β} :
 
 end Lists
 
+/-! ## Statements stated once (R32)
+
+Each of these was stated, in the same words, in two or more modules of the run; it is stated here once, under the name kept. -/
+
+namespace ChanceFloors
+
+theorem or_true (b : Bool) : (b || true) = true := match b with | true => rfl | false => rfl
+
+end ChanceFloors
+
+/-- Cancelling the same number added first. -/
+theorem le_of_add_le_add_left_core {S a b : Nat} (le : S + a ≤ S + b) : a ≤ b :=
+  le_of_add_le_add_right S (Nat.le_trans (Nat.le_of_eq (Nat.add_comm a S))
+    (Nat.le_trans le (Nat.le_of_eq (Nat.add_comm S b))))
+
+namespace CrossSituational
+
+theorem mem_singleton {m e : M} (mem : m ∈ [e]) : m = e := by
+  cases mem with
+  | head => rfl
+  | tail _ rest => exact nomatch rest
+
+end CrossSituational
+
+theorem cond_le_one : ∀ b : Bool, cond b 1 0 ≤ 1 := by decide
+
+theorem mem_appended_left {α : Type u} {a : α} :
+    ∀ {l : List α} (l' : List α), a ∈ l → a ∈ l ++ l'
+  | _ :: _, _, .head _ => .head _
+  | _ :: _, l', .tail _ mem => .tail _ (mem_appended_left l' mem)
+
+namespace Hexagram
+
+theorem and_false_of_true : ∀ {x y : Bool}, (x && y) = false → x = true → y = false
+  | true, false, _, _ => rfl
+  | true, true, h, _ => Bool.noConfusion h
+  | false, _, _, h => Bool.noConfusion h
+
+end Hexagram
+
+namespace Integers
+
+theorem zero_add : ∀ a : Int, 0 + a = a
+  | .ofNat n => congrArg Int.ofNat (Nat.zero_add n)
+  | .negSucc n => Int.subNatNat_of_sub_eq_succ (Nat.sub_zero (n + 1))
+
+theorem zero_mul : ∀ a : Int, 0 * a = 0
+  | .ofNat n => congrArg Int.ofNat (Nat.zero_mul n)
+  | .negSucc n => congrArg Int.negOfNat (Nat.zero_mul (n + 1))
+
+end Integers
+
+theorem mem_mapped {α : Type u} {β : Type v} (g : α → β) {a : α} :
+    ∀ {l : List α}, a ∈ l → g a ∈ l.map g
+  | _ :: _, .head _ => .head _
+  | _ :: _, .tail _ mem => .tail _ (mem_mapped g mem)
+
+namespace SupportGated
+
+/-- What exceeds leaves a positive remainder. -/
+theorem sub_pos_of_lt : ∀ {d c : Nat}, d < c → 0 < c - d
+  | _, 0, less => absurd less (Nat.not_lt_zero _)
+  | 0, c + 1, _ => Nat.succ_pos c
+  | d + 1, c + 1, less => Nat.lt_of_lt_of_le (sub_pos_of_lt (Nat.lt_of_succ_lt_succ less))
+      (Nat.le_of_eq (Nat.succ_sub_succ c d).symm)
+
+end SupportGated
+
+namespace TreeSearch
+
+theorem append_nil {α : Type} : ∀ (a : List α), a ++ [] = a
+  | [] => rfl
+  | x :: a => congrArg (x :: ·) (append_nil a)
+
+end TreeSearch
+
 end Becoming

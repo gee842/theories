@@ -152,10 +152,6 @@ theorem add_assoc (a b c : Int) : a + b + c = a + (b + c) :=
           rw [Nat.add_assoc, Nat.add_assoc])).trans
           (((Same.refl (pair a)).add (pair_add b c).symm).trans (pair_add a (b + c)).symm))))
 
-theorem zero_add : ∀ a : Int, 0 + a = a
-  | .ofNat n => congrArg Int.ofNat (Nat.zero_add n)
-  | .negSucc n => Int.subNatNat_of_sub_eq_succ (Nat.sub_zero (n + 1))
-
 theorem add_zero (a : Int) : a + 0 = a := Int.add_zero a
 
 theorem neg_add (a b : Int) : -(a + b) = -a + -b :=
@@ -209,10 +205,6 @@ theorem mul_comm : ∀ a b : Int, a * b = b * a
   | .ofNat m, .negSucc n => congrArg Int.negOfNat (Nat.mul_comm m (n + 1))
   | .negSucc m, .ofNat n => congrArg Int.negOfNat (Nat.mul_comm (m + 1) n)
   | .negSucc m, .negSucc n => congrArg Int.ofNat (Nat.mul_comm (m + 1) (n + 1))
-
-theorem zero_mul : ∀ a : Int, 0 * a = 0
-  | .ofNat n => congrArg Int.ofNat (Nat.zero_mul n)
-  | .negSucc n => congrArg Int.negOfNat (Nat.zero_mul (n + 1))
 
 theorem mul_zero (a : Int) : a * 0 = 0 := Int.mul_zero a
 
