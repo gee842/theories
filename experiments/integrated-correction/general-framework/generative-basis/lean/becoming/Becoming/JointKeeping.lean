@@ -395,8 +395,8 @@ open Viability RelationalRenewal
 /-- **A formation's activity kept under every course decides neither renewal nor what the run
 does to others.** In `Renewable` the focal formation is active at every configuration, so no
 course leaves that guard; the kernel conjunct is stated at this configuration (the same one-line
-proof serves every other), and it is a
-fact of the configuration, shared by every run from it (`Kernel.run`). From this one
+proof serves every other), and it is a fact of the configuration, shared by every run from it
+(`Kernel.run`). From this one
 configuration, one run renews and another consumes the condition of the sustaining formation,
 which ends from step 1 (`class_belongs_to_the_run`): renewing is a fact of the run. The
 sustaining formation's activity, unlike the focal one, is a guard that can fail: it is keepable
