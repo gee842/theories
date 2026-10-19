@@ -198,6 +198,7 @@ import Becoming.Closing
 import Becoming.Thresholds
 import Becoming.Observation
 import Becoming.Frequency
+import Becoming.MutualDependence
 import Becoming.Gain
 import Becoming.Gluing
 import Becoming.Runs
@@ -2163,6 +2164,19 @@ readings of the unfolding (`Becoming.Labelled`).
   polynomial. A coupling that stops does not recur, and settling is local; that every schedule
   settles is exactly a dichotomy on decided two-place families, which gives the limited principle
   of omniscience, even for schedules coupling at most once.
+* `Becoming.MutualDependence` (L4): formations whose continuations depend on one another, and the
+  pace it gives, with no premise beyond the hypotheses each statement names. Three readings, each
+  strictly stronger: every system the whole (sharing conditions throughout), every influence closure
+  the whole (mutual dependence, equivalently every reach closure), every feeding closure the whole
+  (mutual feeding); `Clearing` shares without mutual dependence and `Drawing`, a balanced pair each
+  taking from what the other requires, is mutually dependent and not fed. Under each, significance
+  bounded by the matching closure is the continuation condition, for any web of mutual feeding and
+  not only one common condition. Around a loop of couplings holding at every step, what reached its
+  condition at least doubles each turn, at the loop and downstream, while the carried amount stays
+  within `D * (1 + M) ^ t`: exponential both ways. A selection with transmission, carriers leaving
+  at least `a` and others at most `b`, raises the share ratio at least as `(a / b) ^ n`; under
+  balance a draw exceeding everything drawn before leaves more than half the stock at every step it
+  is met, and lasting `n` steps needs `2 ^ n - 1`.
 * `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking
