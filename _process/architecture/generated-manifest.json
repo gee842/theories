@@ -244,8 +244,8 @@
     "theories/becoming/results/records/two-act-worlds-carry-the-difference.md": "c1e480d2ad60053ff07c729c747e986dae064ea25b73c6e75a5e7e9a0cdc6ef2",
     "theories/becoming/results/records/worlds-are-runs.md": "e85206dc4db67fe4535100bc6e7166e57367a3c6e5987b3f7e7a82096d5a0aad",
     "theories/becoming/chapters/README.md": "964b128d39498339cbdafd497ced543e00e0b3ed9a79cd8533f0c04f42f73a6f",
-    "_process/research/README.md": "d9238ac0ca0c450ebef6a6949ead94b688a3036d0962d4dc57ac967c5dcc2618",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md": "674eda6e4c1d9c4369dec1b121260827c1b76a5c5771c7fb64a514726f75d8e8",
+    "_process/research/README.md": "5b3780ece764991dce6fec07b1de2b1a510f6463612ce5d84736d1ab28171868",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INDEX.md": "c10f14b20e1f5a9e19d64c81ba0f17b994be62d82245c0782f2501c77e585480",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/REVIEWS.md": "d86d62fa3e2c9f1e68fb52f5ccd2a48815988c5bfbb503c982b0bbc5e9a3baeb",
     "sources/README.md": "ac1d468a461f5b8d87c64a1f50a2d8abd7e3dcfb1c8131fe3e698d180f892b1a",
     "_process/DIRECTIVE-INDEX.md": "205cfce94787d593f4bdf15d3f06f302a2b8ae52a862dc03bbc7bba66bca0c14",
@@ -254,7 +254,7 @@
     "theories/becoming/results/ARGUMENTS-A-L.md": "3ac93ab25b7a2128914f4a0dd28b174bba2a7fc6a2ec97fc5ff7f3eef69300f4",
     "theories/becoming/results/ARGUMENTS-M-Z.md": "e1369f16c5b55ec8335da35ce784d5c0dff57e8b39ca3923ce069876b0043e97",
     "theories/becoming/results/SESSION-RESULTS.md": "64af826e5d9ca3d6ecee8878a721dda51fcff0dbfbb42019afad2c2ea3f511b6",
-    "theories/becoming/results/data/lean-index.json": "e6122fd25563f54b82644d108939f5711f4ea620005375794a265cbd60f510e7",
+    "theories/becoming/results/data/lean-index.json": "210502d308b5611b5b328116bafed4b96899109ec2aeb3283f877c669718e91d",
     "theories/becoming/results/data/source-index.json": "dcc4bc93e6f005731b56165e5da6e55ec42cf987f7f2561c40a3562fb4aff9fc",
     "theories/becoming/results/LEAN-INDEX.md": "2f83b3719eb6471a01641babb75ca9779556b7cccf861ccac5fbcef1faaeb527",
     "theories/becoming/results/LEAN-DECLARATIONS.md": "1dd10bf93ca7ed727c10a2c43867fceeb429dfd192df0c9c0915bf68154d71d3",
@@ -283,8 +283,8 @@
     "theories/becoming/results/records/a-law-through-a-projection-along-one-run.md": "a94df168a4fc668256d96d9e6927298b59b619f7a63c418c70fe3eee39d55a2d",
     "theories/becoming/results/records/what-finitely-many-labels-fix.md": "8239bf2983dc2ac9363a42295530c97914de90a5673b81d620cc9e364feeb03a",
     "theories/becoming/results/records/what-taking-all-excludes.md": "98b9275dfb96a9eb7e141d7f9f4acc9d175c91caf58cce8468f478a7467eb687",
-    "theories/becoming/results/records/what-a-pools-acts-respond-to.md": "224b634679d36a7e560797324acc3953f78cad8ed4cfcc778ac31ef1d4e61ab1",
-    "theories/becoming/results/records/a-law-through-coupling-along-one-run.md": "7c78e2c60df01f0fc9128806467c6c9bce6c28771ad9b172698ae699539109f1",
-    "theories/becoming/results/records/where-a-rising-take-ends.md": "bddfc1a69b9e9a4ef96a19d31d632c0dd776fd1226d89c96ae518d9838a08ed7"
+    "theories/becoming/results/records/what-a-pools-acts-respond-to.md": "aceff9cd4320b37240984a9740831b47f12ae2b6c1059f52c7684ac0a2756989",
+    "theories/becoming/results/records/a-law-through-coupling-along-one-run.md": "37a38cbd994794761a95518ea1e2a0d7900c9702debc74d86ccb514d90bedb2a",
+    "theories/becoming/results/records/where-a-rising-take-ends.md": "1b79e2b29e64bd927b4e7500c10db5a895aef1d69cb0a4cc94a264a6ea1d52e6"
   }
 }

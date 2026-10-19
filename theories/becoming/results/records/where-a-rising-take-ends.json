@@ -90,8 +90,8 @@
       "kind": "non-implication"
     },
     {
-      "en": "A reading of the seeker's ending as the boundary of 无明 or as a case of the meta-attractor: these read Ren's terms and wait on him.",
-      "zh": "把寻求者的终结读作无明的边界或元吸引子的情形：这些读 Ren 的术语，待他决定。",
+      "en": "That the rising take is a case of the meta-attractor: the rise is supplied here, not derived from what taking gains (D46).",
+      "zh": "上升的取用是元吸引子的情形：这里上升是提供的，不是由取用之所得推出（D46）。",
       "kind": "scope"
     }
   ],
@@ -109,12 +109,12 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T002234.676341Z）：Becoming.Exhaustion 的 27 项声明（23 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 186 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Takes that rise only at some steps; giving that grows with the take; how a take comes to rise; the readings of 无明 and of the meta-attractor, with Ren; an independent review.",
-    "zh": "只在某些步上升的取用；随取用增长的给予；取用如何开始上升；无明与元吸引子的读法，待 Ren；独立审查。"
+    "en": "Takes that rise only at some steps; giving that grows with the take; how a take comes to rise; a rising take derived from what taking gains (D46); an independent review.",
+    "zh": "只在某些步上升的取用；随取用增长的给予；取用如何开始上升；由取用之所得推出的上升之取用（D46）；独立审查。"
   },
   "correspondence": {
-    "en": "The chapter's open programme (section 8.2, \"Seeking, capture and runaway\") named \"exhaustion ending the seekers themselves where activity needs support\", and what-taking-all-excludes left how taking all that is given forms. Ren, 18 October 2026: \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\" (provenance, not warrant); the AI chose the item. \"More than now\" is MoreThanNow of Becoming.Seeking, read on the take; taking all is Flow.TakesAll of Becoming.Exclusion.",
-    "zh": "本章开放纲领（第 8.2 节，“Seeking, capture and runaway”）列出“exhaustion ending the seekers themselves where activity needs support”，what-taking-all-excludes 留下取尽所给如何形成。Ren，2026年10月18日：\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"（来历，不是根据）；此项由 AI 选定。“多于此刻”是 Becoming.Seeking 的 MoreThanNow，读在取用上；取尽所给是 Becoming.Exclusion 的 Flow.TakesAll。"
+    "en": "The chapter's open programme (section 8.2, \"Seeking, capture and runaway\") named \"exhaustion ending the seekers themselves where activity needs support\", and what-taking-all-excludes left how taking all that is given forms. Ren, 18 October 2026: \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\" (provenance, not warrant); the AI chose the item. \"More than now\" is MoreThanNow of Becoming.Seeking, read on the take; taking all is Flow.TakesAll of Becoming.Exclusion. The reading is D46 of DELEGATED-CHOICES.",
+    "zh": "本章开放纲领（第 8.2 节，“Seeking, capture and runaway”）列出“exhaustion ending the seekers themselves where activity needs support”，what-taking-all-excludes 留下取尽所给如何形成。Ren，2026年10月18日：\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"（来历，不是根据）；此项由 AI 选定。“多于此刻”是 Becoming.Seeking 的 MoreThanNow，读在取用上；取尽所给是 Becoming.Exclusion 的 Flow.TakesAll。读法是 DELEGATED-CHOICES 的 D46。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Exhaustion.lean",
   "aliases": [
@@ -194,7 +194,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "335b30be6f723fa3df4d95f5ec68843f9df8e25b7511105afb1b494d7016ee2b"
+      "sha256": "65bda0081c10042f59f649b33a22f81c553c98d8d717843e15e87470f9eb2c9c"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -220,6 +220,14 @@
     {
       "en": "18 October 2026: added (C2), on Ren's \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\", the AI choosing the item; study section 186; the readings of 无明 and of the meta-attractor wait on Ren.",
       "zh": "2026年10月18日：新增（C2），按 Ren 的\"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\"，此项由 AI 选定；研究第 186 节；无明与元吸引子的读法待 Ren。"
+    },
+    {
+      "en": "19 October 2026, C2 follow-up: the record said the readings of 无明 and of the meta-attractor wait on Ren; since his answer “integrate all, the theory is a whole, not stitched pieces, go ahead” no reading waits on him (D45), so D46 decides them (exhaustion ends the seeker, B2 extended; not a case of the meta-attractor, the rise being supplied). One item of does_not_show and the next step changed; before: \"Takes that rise only at some steps; giving that grows with the take; how a take comes to rise; the readings of 无明 and of the meta-attractor, with Ren; an independent review.\". The claim is unchanged.",
+      "zh": "2026年10月19日，C2 后续：本记录曾说无明与元吸引子的读法待 Ren；自他的回答起不再有读法等待他（D45），所以由 D46 决定（耗尽终结寻求者，B2 扩展；不是元吸引子的情形，上升是提供的）。“未表明”的一项与下一步改变；原文见英文。论断不变。"
+    },
+    {
+      "en": "19 October 2026, C2 follow-up (D46): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: section 186 (C2) now states its readings as D46 rather than waiting on Ren). The claim is unchanged.",
+      "zh": "2026年10月19日，C2 后续（D46）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
     }
   ]
 }

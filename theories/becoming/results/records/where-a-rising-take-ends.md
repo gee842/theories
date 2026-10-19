@@ -26,7 +26,7 @@
 
 - Takes that rise only at some steps or by less than a unit; giving that grows with the take; how a take comes to rise (what it gains).
 - That taking all that is given ends the taker: in Alone a full taker whose take does not rise continues.
-- A reading of the seeker's ending as the boundary of 无明 or as a case of the meta-attractor: these read Ren's terms and wait on him.
+- That the rising take is a case of the meta-attractor: the rise is supplied here, not derived from what taking gains (D46).
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
 
@@ -40,14 +40,14 @@ Canonical source: [Exhaustion.lean](../../../../experiments/integrated-correctio
 <a id="next--下一步"></a>
 ## Next
 
-Takes that rise only at some steps; giving that grows with the take; how a take comes to rise; the readings of 无明 and of the meta-attractor, with Ren; an independent review.
+Takes that rise only at some steps; giving that grows with the take; how a take comes to rise; a rising take derived from what taking gains (D46); an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-The chapter's open programme (section 8.2, "Seeking, capture and runaway") named "exhaustion ending the seekers themselves where activity needs support", and what-taking-all-excludes left how taking all that is given forms. Ren, 18 October 2026: "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable" (provenance, not warrant); the AI chose the item. "More than now" is MoreThanNow of Becoming.Seeking, read on the take; taking all is Flow.TakesAll of Becoming.Exclusion.
+The chapter's open programme (section 8.2, "Seeking, capture and runaway") named "exhaustion ending the seekers themselves where activity needs support", and what-taking-all-excludes left how taking all that is given forms. Ren, 18 October 2026: "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable" (provenance, not warrant); the AI chose the item. "More than now" is MoreThanNow of Becoming.Seeking, read on the take; taking all is Flow.TakesAll of Becoming.Exclusion. The reading is D46 of DELEGATED-CHOICES.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -74,6 +74,8 @@ Aliases: `where a rising take ends`, `多于此刻的取用终于何处`, `exhau
 ### History
 
 - 18 October 2026: added (C2), on Ren's "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable", the AI choosing the item; study section 186; the readings of 无明 and of the meta-attractor wait on Ren.
+- 19 October 2026, C2 follow-up: the record said the readings of 无明 and of the meta-attractor wait on Ren; since his answer “integrate all, the theory is a whole, not stitched pieces, go ahead” no reading waits on him (D45), so D46 decides them (exhaustion ends the seeker, B2 extended; not a case of the meta-attractor, the rise being supplied). One item of does_not_show and the next step changed; before: "Takes that rise only at some steps; giving that grows with the take; how a take comes to rise; the readings of 无明 and of the meta-attractor, with Ren; an independent review.". The claim is unchanged.
+- 19 October 2026, C2 follow-up (D46): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: section 186 (C2) now states its readings as D46 rather than waiting on Ren). The claim is unchanged.
 
 </details>
 

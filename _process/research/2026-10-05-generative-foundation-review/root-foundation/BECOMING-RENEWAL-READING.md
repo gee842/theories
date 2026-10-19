@@ -7592,8 +7592,8 @@ Supplied premises / correspondence: no axiom; balance at the condition; what is 
        formation that while active takes part with a take more than now; for the ending, no resumption; for the
        exhaustion of the renewal, Continuation's premises and a seeker active while the condition meets its need
 Evidence: Becoming.Exhaustion, 23 theorems, empty axiom reports; core receipt `20261019T002234.676341Z`; connectivity check passes, 441 apart of 9,671
-Boundary: takes that rise only at some steps; unbounded giving; how a take comes to rise (what it gains); the
-          readings of 无明 and of the meta-attractor, which wait on Ren
+Boundary: takes that rise only at some steps; unbounded giving; how a take comes to rise (what it gains), which
+          a case of the meta-attractor would need (D46)
 ```
 
 Ren, 18 October 2026: "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable" ([source](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md#rens-message-on-the-readings-of-l1-s1-and-s2)). The AI chose this item. The chapter's §8.2 row "Seeking, capture and runaway" listed "exhaustion ending the seekers themselves where activity needs support". The step C1 left (`what-taking-all-excludes`, `derived-extent-limits`) was "how taking all that is given forms".
@@ -7612,7 +7612,7 @@ Ren, 18 October 2026: "alright, generally agree, please make your own pareto fro
 
 **What this changes.** Exhaustion ends the seeker, not only its rises, where the seeking is a take more than now from a condition given within a bound. This holds under balance alone, with no need supplied. Where renewal depends on what it renews, the seeker's taking also ends the renewal for every formation depending on the condition at the need it falls below. Taking all that is given forms here as a stage of the rise, and it is not where the course rests. What ends the seeker is that its take keeps rising, not that it takes all: in `Alone`, taking all that is given without a rise continues. Read with `Becoming.Exclusion`: there the full taker is supposed to continue, and here full taking is a stage of a rise that ends.
 
-**Readings that wait on Ren.** Whether this is the boundary of 无明 reached by the seeker itself (B2 of `Becoming.Seeking`, D26), and whether a take more than now that ends the renewal is a case of the meta-attractor, read Ren's own terms. D44 declined (c), reading taking all as a case of the meta-attractor, in part because it needed a law of how taking all forms. This item supplies one such law; the reading stays with Ren.
+**Reading (D46, AI reading).** When this section was written it said these readings wait on Ren. Since his answer of 19 October, “integrate all, the theory is a whole, not stitched pieces, go ahead”, no reading waits on him (D45), and D46 decides them in the one account. B2 of 无明 is extended: where the seeking is a take more than now from a bounded giving, exhaustion ends the seeker itself. Taking all that is given is, in one way, a stage of a rise, not where the course rests. The item is not read as a case of the meta-attractor, since the rise is supplied, not derived from what taking gains; D44's (c) stands with that narrowed reason.
 
 **Not done.**
 - Takes that rise only at some steps, or by less than one unit at a step (rational amounts).

@@ -79,6 +79,7 @@ On 19 October 2026 Ren answered for the register as a whole, “integrate all, t
 | D43 | the other pending readings (18 October) | taken by Ren on the decision brief's recommendations: kept, narrowed, weakened or revised, item by item |
 | D44 | what taking all that is given excludes | adopted with exact scope: ending another serves taking all, not continuing; admission does not register it |
 | D45 | the readings in one account (19 October) | no reading ratified item by item, and none waiting on Ren; each decided by its place in one account, Part D within it; revises D3 (further generation, with D1), D19 (also the whole's knowing by its parts, never complete), D20 (situational awareness as 明 of one's own reach), D21 (the step of invariance a question of warrant), D26 (识, 理, seeking, 知足, 知止, 无明 and 明 as one structure), D37 and D39 (识 answered by option (b)) |
+| D46 | where a rising take ends (19 October) | adopted with exact scope: exhaustion ends the seeker (B2 extended); taking all as a stage of a rise; not a case of the meta-attractor |
 
 <a id="1-生生与生成的空间--生生-and-the-generative-space"></a>
 ## 1. 生生 and the generative space
@@ -522,6 +523,8 @@ L1, S1 and S2 are D40-D42.
 - Ren's words of 18 October 2026, “alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable”, read as also delegating the choice of the next items: C1 and its reading, D44 ([study section 183](BECOMING-RENEWAL-READING.md#183-what-taking-all-that-is-given-excludes-c1)).
 - Ren's answer of 19 October 2026 to Parts C and D of the decision brief, “integrate all, the theory is a whole, not stitched pieces, go ahead” ([words](../../../../sources/15-codex-theory-conversations/2026-10-19-integrate-all.md)): D45, and the revisions of D3, D19, D20, D21, D26, D37 and D39 dated that day.
 
+- Ren's answer of 19 October 2026, “integrate all, the theory is a whole, not stitched pieces, go ahead”, read with D45 as deciding the readings C2 had left to him: D46 ([study section 186](BECOMING-RENEWAL-READING.md#186-where-a-take-more-than-now-ends-c2)).
+
 <a id="13-一个说明--one-account"></a>
 ## 13. One account
 
@@ -566,3 +569,12 @@ Where: Parts [C](READINGS-PENDING-REN.md#c-the-register-itself-d-f-review-item-5
 **Reasons.** Ren's answer asks for one account. Under his directive of 17 October his words are provenance, so a reading of one of his terms is decided like any reading: his texts are evidence of the term's sense, and the work is its warrant. Where readings conflicted, the revision keeps the one whose theorems and whose fit with the rest are stronger. Part D is decided by the same standard: a name by its exact meaning within the account, a structure by joining it, an ownership by the board's rules, and a review by stating exactly what it did.
 
 **What would change it.** For each reading, what its decision lists. For the account, a reading it cannot place without contradiction, or a theorem showing one of its joins wrong. Ren can say otherwise of any of his terms; his words are then the provenance of a further revision, argued from the work.
+
+<a id="d46-多于此刻的取用终于何处--where-a-rising-take-ends"></a>
+### Where a rising take ends
+
+Where: chapter §6.7, “Where a take more than now ends”, and the exhaustion bullet of the seeking passage; the record [where-a-rising-take-ends](../../../../theories/becoming/results/records/where-a-rising-take-ends.md); study section 186 ([C2](BECOMING-RENEWAL-READING.md#186-where-a-take-more-than-now-ends-c2)). Decided in the one account of D45, where the readings of Ren's own terms no longer wait on him.
+
+**Decision.** Adopted with exact scope, in D45's links of knowing and of continuation. (1) **Exhaustion ends the seeker.** B2 of 无明 (D26, as revised in D45) is extended. Where the seeking is a take more than now from a condition given within a bound, exhaustion ends the seeker itself, not only its rises, under balance alone (`Flow.seeking_ends`). Where renewal depends on what it renews, it also ends every formation depending on the condition at the need the level falls below (`Flow.seeking_exhausts`). Seeking locked onto a target that cannot rest, pursued as taking, carries its own ending. (2) **Taking all, as a stage.** Taking all that is given forms, in one way, as a stage of such a rise, and it is not where the course rests. The full taker of D44 that continues is one whose take does not keep rising (`Alone.takes_all`). (3) **Not a case of the meta-attractor.** Here the rise is supplied. The meta-attractor's step, winning that buys more power to win (B5, `Becoming.Capture`), would derive the rise from what taking gains, and that law is open (the next step of target-capture: taking more yields more). So D44's (c) stands, its reason narrowed from “how taking all forms” to “how a take comes to rise from what it gains”.
+**Reasons.** (1) and (2) are the theorems read with D26 and D44. (3) keeps the term's sense: Ren's texts and `Becoming.Capture` read the meta-attractor as a selection by winning, which this law does not state.
+**What would change it.** A law deriving a rising take from what taking gains; takes that rise at some steps only; giving that grows with the take.
