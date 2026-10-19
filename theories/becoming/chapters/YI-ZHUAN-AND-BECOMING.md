@@ -1,10 +1,10 @@
 # 易传与生成／变化之论：周易的构形在脊柱上
 
-2026年10月19日。回应 Ren 的提问与要求（[原话](../../../sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md)）：我们的工作与周易、尤其易传的关系能否看见、能否建立；建立起来，成为库的一部分，在脊柱上有明确的对应。本章由 AI 撰写；Ren 的原话另存，是来源，不是任何主张的根据。表中与正文的每一条读法都是 AI 读法，依 [D47](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d47-易传在脊柱上的读法--the-readings-of-the-yi-zhuan-on-the-spine) 与 [D50](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d50-爻位之关系的读法--the-readings-of-the-relations-of-the-places) 在理论的一个说明之中成立或修改。
+2026年10月19日。回应 Ren 的提问与要求（[原话](../../../sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md)）：我们的工作与周易、尤其易传的关系能否看见、能否建立；建立起来，成为库的一部分，在脊柱上有明确的对应。本章由 AI 撰写；Ren 的原话另存，是来源，不是任何主张的根据。表中与正文的每一条读法都是 AI 读法，依 [D47](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d47-易传在脊柱上的读法--the-readings-of-the-yi-zhuan-on-the-spine) 、[D50](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d50-爻位之关系的读法--the-readings-of-the-relations-of-the-places)、[D51](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d51-卦之诸律的读法--the-readings-of-the-hexagram-laws) 与 @Y4-DECISION@ 在理论的一个说明之中成立或修改。
 
-**建成了什么。** 一是周易所描述的构形本身：六爻、每爻刚柔二值、一爻之变、消息之律、所传卦序，作为脊柱上的一个世界写入纯核心模块 [`Becoming.Hexagrams`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean)（71 条定理，无公理），脊柱对一切世界证明的律在这些构形上被检查，而不只是被断言。二是爻位之间的关系：正、应、比（承、乘）、中，作为在位上成立、带语境索引的读法，写入纯核心模块 [`Becoming.HexagramPlaces`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean)（108 条定理，无公理），并证明它们在错、综、一爻之变与消息之律之下怎样变，诸律都在脊柱的运行上读出（§2 末）。三是另外四条律与消息之律的普查：互、老少之爻与之卦、錯綜四对称、加一之律，以及消息之律的六条轨道，写入纯核心模块 [`Becoming.HexagramLaws`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean)（130 条定理，无公理），诸律也在脊柱的运行上读出（§2 末）。四是逐句对应：易传、经文与两种注疏的 69 段文字，逐字取自保存下来的维基文库版本，每段标明它与理论的关系（相合 37、定域 22、相分 10）和它对应的脊柱声明；另有四项普查，把彖与小象中某类关于爻位的明言逐一找出，在其卦上检查。五是检查：[`verify_mapping.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py) 核对每段文字在所存版本中逐字出现、每个声明在核心检查的审计清单之中、卦序与所存六十四页逐卦一致、所命名之卦与其页一致、四项普查与 Lean 的清单一致、本章的对应表与对应文件一致。结果记录是 [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md)、[place-relations-in-context](../results/records/place-relations-in-context.md) 与 [hexagram-world-laws](../results/records/hexagram-world-laws.md)。
+**建成了什么。** 一是周易所描述的构形本身：六爻、每爻刚柔二值、一爻之变、消息之律、所传卦序，作为脊柱上的一个世界写入纯核心模块 [`Becoming.Hexagrams`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean)（71 条定理，无公理），脊柱对一切世界证明的律在这些构形上被检查，而不只是被断言。二是爻位之间的关系：正、应、比（承、乘）、中，作为在位上成立、带语境索引的读法，写入纯核心模块 [`Becoming.HexagramPlaces`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean)（108 条定理，无公理），并证明它们在错、综、一爻之变与消息之律之下怎样变，诸律都在脊柱的运行上读出（§2）。三是另外四条律与消息之律的普查：互、老少之爻与之卦、錯綜四对称、加一之律，以及消息之律的六条轨道，写入纯核心模块 [`Becoming.HexagramLaws`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean)（130 条定理，无公理），诸律也在脊柱的运行上读出（§2）。四是王弼《周易略例》之读：初、上两位无定位，作为二至五位上的第二个关系；一爻与其余五爻皆相应（独应），作为一爻与其余诸爻之关系；两者写入纯核心模块 [`Becoming.HexagramSites`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean)（103 条定理，无公理），王弼于《辯位》所举之两难在其上证明，诸律也在脊柱的运行上读出（§2 末）。五是逐句对应：易传、经文、两种注疏与王弼《周易略例》的 88 段文字，逐字取自保存下来的维基文库版本，每段标明它与理论的关系（相合 50、定域 26、相分 12）和它对应的脊柱声明；另有十二项普查，把彖、小象、爻辭与大象中某类关于位或中的明言逐一找出，在其卦上检查。六是检查：[`verify_mapping.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py) 核对每段文字在所存版本中逐字出现、每个声明在核心检查的审计清单之中、卦序与所存六十四页逐卦一致、所命名之卦与其页一致、各项普查与 Lean 的清单或脚本所记之例外一致、本章的对应表与对应文件一致。结果记录是 [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md)、[place-relations-in-context](../results/records/place-relations-in-context.md)、[hexagram-world-laws](../results/records/hexagram-world-laws.md) 与 [fixed-places-and-sole-lines](../results/records/fixed-places-and-sole-lines.md)。
 
-**没有建成什么。** 这不是对周易整体的解释，也不说易传作者意谓这些律。吉凶悔吝的判断、说卦的取象、三材的指认、卦序（序卦）本身的次第之理、位的尊卑、初上两位是否有位、占筮与数术，都不在模块之中；相分之处保留为相分。
+**没有建成什么。** 这不是对周易整体的解释，也不说易传作者意谓这些律。吉凶悔吝的判断、说卦的取象、三材的指认、卦序（序卦）本身的次第之理、位的尊卑、卦主之“治”、占筮与数术，都不在模块之中；相分之处保留为相分。
 
 ## 1. 文本与版本
 
@@ -20,6 +20,16 @@
 | 六十四卦（卦辭、爻辭、彖、象，乾坤含文言） | 周易/乾 至 周易/未濟，循每页的“下一卦”链接 | 各页见清单 | 2022-02-16 至 2026-09-27 |
 | 孔穎達《周易正義》 | 周易正義/10 | 2384519 | 2024-04-01 |
 | 王夫之《周易外傳》卷五 | 船山遺書/周易外傳卷五 | 2633077 | 2025-12-14 |
+| 王弼《周易略例》（目录） | 周易略例 | 1381183 | 2018-03-10 |
+| 明彖 | 周易略例/明彖 | 2201353 | 2022-12-11 |
+| 明爻通變 | 周易略例/明爻通變 | 1161705 | 2017-07-22 |
+| 明卦適變通爻 | 周易略例/明卦適變通爻 | 194050 | 2009-02-13 |
+| 明象 | 周易略例/明象 | 389845 | 2013-07-30 |
+| 辯位 | 周易略例/辯位 | 194052 | 2009-02-13 |
+| 略例下 | 周易略例/略例下 | 194053 | 2009-02-13 |
+| 卦略 | 周易略例/卦略 | 194054 | 2009-02-13 |
+
+王弼《周易略例》八页于同日 08:40（UTC）以同一接口取得。此版于王弼之文的段落之后附邢璹之注，只有明彖以模板 `{{yw|…}}` 标出王弼之文（读时去掉模板）；本章所引皆王弼之段，邢璹之注只在一处读法中提及。此版“云”作“雲”、“繫辭”作“系辭”，略例下“為兌之主”作“為為兌之主”，引文照录。
 
 ## 2. 卦的世界
 
@@ -57,6 +67,21 @@
 - **老少与之卦。** 一爻或老或少（`Marked`）；下一步老爻变为其反而不再变，少爻如故（`MarkedLines.settle`）。此律合并（`MarkedLines.settle_merges`），一步即定：沿每一运行自第一步起诸爻已定，运行静止（`MarkedLines.run_settled`、`MarkedLines.run_rests`）；有老爻者被吸入无老爻者之中（`MarkedLines.drawn`），所以一构形复返，恰当无一爻为老（`MarkedLines.returns_iff`、`MarkedLines.process_returns_iff`）。本卦（`MarkedLines.shown`）不是此律所同行的归并：六爻皆少之乾与初爻为老之乾，分别至乾与姤（`MarkedLines.shown_not_goAlike`）；之卦（`MarkedLines.onward`）是（`MarkedLines.onward_goAlike`）。六爻皆老阳示乾，自第一步起运行所示为坤；皆老阴则反之（`MarkedLines.all_nines`、`MarkedLines.all_sixes`）。
 - **加一。** 以初爻为最低位，加一使最低之阴爻变阳、其下诸阳爻变阴（`addOne`、`carryAt`）；减一还原之，此律不合并（`addOne_lossless`）。它只有一条六十四步之轨：任一构形可由任一构形得到，每一构形首次复返在第六十四步（`addOne_reach`、`addOne_one_orbit`）。沿每一运行，2^(k−1) 步之后第 k 爻翻转，其下诸爻如故（`line_turns`）。
 - **消息之六轨。** 各缝之承与乘（`riseCount`、`fallCount`），加上初、上两爻相同之处，数出绕行一周的爻变（`changesAround`）；消息之律沿每一运行保持此数（`changesAround_run`、`changesAround_invariant`），其值为一、三或五，分别在十二、四十、十二个构形上（`changesAround_values`、`changesAround_counts`），所以此律虽不合并，乾不能至既濟（`qian_not_reach_jiJi`、`waxWane_not_reach_every`）。每一构形在六个起点之一的轨道上：乾、屯、蒙、需、隨、既濟（`orbitStarts`、`on_an_orbit`），各于第十二步首次复返，隨于第四步（`starts_return`）；轨道是律所同行的归并，律之所及保持轨道（`orbitIndex_goAlike`、`reach_keeps_orbit`）；六轨各含十二、十二、十二、十二、四、十二个构形，绕行一周之爻变为一、三、三、三、三、五（`orbit_census`）。
+
+### 王弼之读：初上无位与一爻之独应
+
+以下声明在 [`Becoming.HexagramSites`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean)，前缀 `Becoming.Hexagram.`。
+
+- **第二个关系：初上无位。** 二至五位依其奇偶有定位，初、上两位无定位（`betweenEnds`、`Between`）。一位之定位之正，在两端没有，在其间即其奇偶之正（`fixedPhase`、`fixedPhase_between`、`fixedPhase_end`）；一爻在位，恰当它在两端之间而当位（`holdsPlace`、`holdsPlace_iff`、`holdsPlace_inPhase`、`holdsPlace_ends`）。这是 `inPhase` 之旁的另一关系：在二至五位与之相同，在两端不说。
+- **王弼之两难。** 文言说乾上九“貴而无位”，小象说需上六“雖不當位”；二者一阳一阴，给上位任一奇偶，必有一个当位，没有一个奇偶使二者都不当位（`top_no_parity`）。二至五位之奇偶则由经文定出：小象之言定三、四、五位，中正之言定二位（`statements_fix_parity`、`centre_fixes_parity`，经 `parity_of_statement`）。小象明言位者二十六处皆在二至五位（`placeStatements_between`）；连同乾上九与需上六，二十八处在第二个关系下皆成立（`placeStatements_hold`、`xu_top_no_place`、`qian_top`）。
+- **彖言之位。** 彖言一爻之位者九处，皆在二至五位，皆与之相合（`tuanPlaceStatements`、`tuanPlaceStatements_agree`）；言整卦之位者五处（蹇、漸、歸妹、既濟、未濟），以二至五位读皆合，以六位读只既濟、未濟合（`tuanWholeStatements`、`tuanWhole_between`、`tuanWhole_six`）。中间四爻皆当位者恰是既濟、蹇、漸、家人，皆不当位者恰是未濟、歸妹、解、睽（`allHold_iff`、`noneHold_iff`）。
+- **在位上读。** 二至五位之定位是在四处的语境读法（`betweenPhase`）；它粘合为对整卦的读法，恰在中间四爻皆当位或皆不当位之处，没有去语境的框架在任何过程之下与之相合（`allHold_sites`、`noneHold_sites`、`between_glues_iff`、`between_no_free_frame`）。
+- **定位所示的与所不示的。** 两卦定位相同，二至五位之爻便相同（`SameBetween`、`sameBetween_phase`）；所以中间三缝之承、乘、比与中之高度之应皆由定位而定（`falls_iff_phase`、`rises_iff_phase`、`alternates_iff_phase`、`opposed_mid_told`、`inner_seams_told`）。初、上两爻变，定位不动，而其旁之缝与其高度之应翻转（`sameBetween_flip_end`、`alternates_flip_bottom`、`alternates_flip_top`、`ends_not_told`）。错使每一定位之正翻转，综在镜像之处翻转（`fixedPhase_complement`、`fixedPhase_reverse`、`fixedPhase_flip_self`）；互为错卦的两卦，在位之爻数相加为四（`placedCount`、`placedCount_complement`）。
+- **在消息之律之下。** 初位之爻升至二位，才取得定位之正，是它在初位之奇偶之反；二至五位之间，每升一位其定位之正翻转（`fixedPhase_waxWane_enters`、`fixedPhase_waxWane_rises`）。一步前后在位之爻数相加，再加初爻之正，等于四加五位之正（`placedCount_waxWane`）；一爻自二升至五，恰在其中两位在位（`course_between`）。定位之正不是律所同行的归并（`betweenPhases`、`betweenPhases_not_lumped`、`betweenPhases_not_goAlike`）：要跟随它，须看初位所入之爻。
+- **一爻之独应。** 两爻相应，是其值相异，不依其距（`answers`、`answers_symm`、`answers_self`、`answers_complement`）；对应之位之应与相邻之比，都是这个关系（`opposed_answers`、`alternates_answers`）。一爻与其余五爻皆相应，为独应（`others`、`sole`、`sole_answered`、`sole_of_answered`）：恰在五阳一阴或五阴一阳之卦（`sole_count`、`soleAny`、`soleAny_count`、`sole_any`、`none_sole`），其爻唯一（`sole_unique`），即纯卦之一爻变（`uniform`、`sole_iff_flip`、`sole_flip`）。错、综保持之（`sole_complement`、`sole_reverse`）。十二卦中，在二至五位当位者四、不当位者四，在两端者四（`soleList`、`sole_places`、`sole_any_phase`）：独应不依位与正。独应之卦只在其爻之高度相应（`sole_opposition`、`heightMark`），节之应同样只在一个高度，而无独应（`jie_one_opposed`）。独阴之下为乘、之上为承，独阳反之，其余之缝无起落（`sole_broken_seams`、`sole_unbroken_seams`）；上爻为独阴者恰是夬（`guai_iff`、`guai_sole`）。
+- **独应在消息之律之下。** 有独应之卦，一步之后没有独应（`soleAny_waxWane`、`sole_waxWane_none`），六步之后在原位复回（`sole_six`）；上位之独爻升出，留下纯卦，两步之后独爻自初位复入（`sole_top_passes`）。
+- **普查。** 彖言“上下應”者三处，皆是独应之爻（`answeredStatements`、`answeredStatements_sole`、`xiaoXu_answered`、`daYou_answered`）；履六三是独应之爻（`lv`、`lv_sole`），豐没有（`feng`、`feng_no_sole`）。爻辭言“中”者十一爻，皆在二至五位，五爻居中；言“中行”者五爻，居中者二（`lineTextMiddle`、`middleCourseLines`、`lineTextMiddle_places`）。爻辭言位只萃九五，在位（`lineTextPlace`、`lineTextPlace_holds`）。大象言“中”与“位”之处、小象言“中”之处，由检查脚本找出，与其所记之例外比较（§5）。
+- **沿展开读。** 以上诸律都在脊柱的运行上读出。沿消息之律的每一运行，定位之正随爻上升，六步之后皆翻转，一爻自二至五恰两处在位（`run_between_rises`、`run_placedCount`、`run_between_six`、`run_course_between`）；独应不延续一步，六步复回，在上者两步后自初复入（`run_sole`）；倒转之运行在镜像之处（`backward_between`、`backward_sole`）。沿一爻之变的每一运行，一步在两端，定位不动，只翻转其旁之缝与其高度之应；在其间，翻转该位之定位（`changes_run_between`、`changes_run_ends`）；变独爻即得纯卦，纯卦变一爻即得独应（`changes_run_sole`）。任一过程的运行在任一步所示之卦，定位与独应之诸律皆成立（`between_shown_along_runs`、`between_glue_along_run`、`sole_shown_along_run`、`answers_shown_along_run`）。
 
 ## 3. 三种关系
 
@@ -121,17 +146,36 @@
 | <a id="p-gen-diying"></a>「上下敵應，不相與也」 | 艮·彖 | 相合 | `Hexagram.halves`<br>`Hexagram.halves_glues_iff`<br>`Hexagram.gen_halves_glue`<br>`Hexagram.halves_no_free_frame`<br>`Hexagram.halves_indexed`<br>`Contextual.indexed_fits` | 敵應：每一高度两爻相同，上下两卦作为语境处处所示一致而粘合，没有一处相应，故“不相與”。相应之处，一个高度之爻在两卦中是两个主张；没有去语境的读法合于所有构形，带语境索引的读法则合。 |
 | <a id="p-gangzhong-erying"></a>「剛中而應」 | 師·彖 | 相合 | `Hexagram.middleUnbrokenOpposed`<br>`Hexagram.middleUnbrokenOpposed_eq`<br>`Hexagram.middleBrokenOpposed_eq`<br>`Hexagram.middleOppositionStatements`<br>`Hexagram.middleOppositionStatements_agree` | 彖言“剛中而應”者五卦：師、臨、无妄、萃、升；检查脚本在所存六十四页中找出全部五处，每卦居中之阳爻皆有应。剛中而應恰是中之高度相应，与“柔中而應”所指相同：一个关系，从其两端读。 |
 | <a id="p-tongren-dezhong"></a>「柔得位得中，而應乎乾」 | 同人·彖 | 相合 | `Hexagram.tongRen_second`<br>`Hexagram.inPhase`<br>`Hexagram.middle`<br>`Hexagram.opposed` | 六二为阴，当位，居中，其高度与上卦乾之九五相应。 |
-| <a id="p-xiaoxu-shangxia"></a>「柔得位而上下應之」 | 小畜·彖 | 定域 | `Hexagram.xiaoXu_fourth`<br>`Hexagram.opposed` | 六四为阴而当位；以对应之位论，只初九与之相应，中、上两个高度不相应。“上下應之”读的是一个阴爻与其余五个阳爻的关系，不是对应之位，此关系不在模块之中。 |
-| <a id="p-dayou-zunwei"></a>「柔得尊位，大中而上下應之」 | 大有·彖 | 相分 | `Hexagram.daYou_fifth`<br>`Hexagram.middle`<br>`Hexagram.inPhase`<br>`Hexagram.opposed` | 六五居中而不当位，只中之高度与九二相应。“尊位”是位的等级，理论不采（与《繫辭》“貴賤”之相分同）；“上下應之”与小畜同，不是对应之位。 |
+| <a id="p-xiaoxu-shangxia"></a>「柔得位而上下應之」 | 小畜·彖 | 相合 | `Hexagram.xiaoXu_fourth`<br>`Hexagram.opposed`<br>`Hexagram.sole`<br>`Hexagram.xiaoXu_answered`<br>`Hexagram.answeredStatements_sole` | 六四为阴而当位；以对应之位论，只初九与之相应。“上下應之”读作一个阴爻与其余五个阳爻皆相异：小畜六四是卦中唯一之阴爻，其余五爻皆与之相应。 |
+| <a id="p-dayou-zunwei"></a>「柔得尊位，大中而上下應之」 | 大有·彖 | 相分 | `Hexagram.daYou_fifth`<br>`Hexagram.middle`<br>`Hexagram.inPhase`<br>`Hexagram.opposed`<br>`Hexagram.sole`<br>`Hexagram.daYou_answered` | 六五居中而不当位，以对应之位论只与九二相应；“上下應之”是六五与其余五个阳爻皆相异，在律中。“尊位”是位的等级，理论不采（与《繫辭》“貴賤”之相分同），所以仍为相分。 |
 | <a id="p-guimei-chenggang"></a>「柔乘剛也」 | 歸妹·彖 | 相合 | `Hexagram.falls`<br>`Hexagram.guiMei_falls`<br>`Hexagram.rises_falls_ends` | 六三在九二之上，六五在九四之上，两处柔乘刚。自下而上，阳之起（承）与落（乘）次数之差由首尾两爻定：承之数加初爻，等于乘之数加上爻。 |
-| <a id="p-guai-chengwugang"></a>「柔乘五剛也」 | 夬·彖 | 定域 | `Hexagram.guai_falls`<br>`Hexagram.falls` | 以相邻之位论，上六只乘九五一刚，诸位之间只此一处落；“乘五剛”读的是一阴在五阳之上的整体，比相邻关系宽。 |
-| <a id="p-lv-weibudang"></a>「咥人之凶，位不當也」 | 履·六三·象 | 相合 | `Hexagram.placeStatements`<br>`Hexagram.placeStatements_agree`<br>`Hexagram.inPhase`<br>`Hexagram.xu_top_inPhase` | 小象明言位者二十七处（位不當、不當位、未當位、未得位；位正當、位當、當位），检查脚本在所存六十四页中逐一找出：二十六处与其爻是否当位相合，皆在三、四、五位；只有需上六一处相分（见下）。“凶”是判断，不在律中。 |
-| <a id="p-xu-shangliu"></a>「雖不當位，未大失也」 | 需·上六·象 | 相分 | `Hexagram.xu_top_inPhase`<br>`Hexagram.inPhase` | 上六阴居偶位，依奇偶是当位，象却说不当位。王弼《周易略例·辯位》以此句为初、上两位无定位之证（该文未存于本库，未核对）。模块对六位一律以奇偶定正，不采“初上无位”之读，所以此处相分。 |
+| <a id="p-guai-chengwugang"></a>「柔乘五剛也」 | 夬·彖 | 相合 | `Hexagram.guai_falls`<br>`Hexagram.falls`<br>`Hexagram.guai_iff`<br>`Hexagram.guai_sole`<br>`Hexagram.sole_broken_seams` | 以相邻之位论，上六只乘九五一刚，诸位之间只此一处落；“乘五剛”读作上六与其下五个阳爻皆相异：上爻为阴而与其余五爻皆相异者恰是夬，此阴爻之下是唯一之落。 |
+| <a id="p-lv-weibudang"></a>「咥人之凶，位不當也」 | 履·六三·象 | 相合 | `Hexagram.placeStatements`<br>`Hexagram.placeStatements_agree`<br>`Hexagram.inPhase`<br>`Hexagram.xu_top_inPhase`<br>`Hexagram.placeStatements_between`<br>`Hexagram.placeStatements_hold`<br>`Hexagram.holdsPlace` | 小象明言位者二十七处（位不當、不當位、未當位、未得位；位正當、位當、當位），检查脚本在所存六十四页中逐一找出：二十六处在三、四、五位，与其爻是否当位相合；需上六一处在上位。以初上无位之读，二十七处与《文言》乾上九“貴而无位”皆相合，没有例外。“凶”是判断，不在律中。 |
+| <a id="p-xu-shangliu"></a>「雖不當位，未大失也」 | 需·上六·象 | 相合 | `Hexagram.xu_top_inPhase`<br>`Hexagram.inPhase`<br>`Hexagram.xu_top_no_place`<br>`Hexagram.top_no_parity`<br>`Hexagram.holdsPlace`<br>`Hexagram.fixedPhase` | 上六阴居偶位，依六位之奇偶是当位，象却说不当位。王弼《周易略例·辯位》以此句与乾上九“貴而无位”为初、上无定位之证。模块有两个关系：依六位之奇偶，此处相分；依初上无位之读，上六无定位而不在位，象之言相合。 |
 | <a id="p-xu-zhongzheng"></a>「酒食，貞吉，以中正也」 | 需·九五·象 | 相合 | `Hexagram.centreStatements`<br>`Hexagram.centreStatements_agree`<br>`Hexagram.middle`<br>`Hexagram.inPhase`<br>`Hexagram.gen_fifth_out_of_phase` | 小象言“中正”“正中”者十处，检查脚本逐一找出：九处是居中而当位之爻；只有艮六五一处相分（见下）。 |
 | <a id="p-gen-zhongzheng"></a>「艮其輔，以中正也」 | 艮·六五·象 | 相分 | `Hexagram.gen_fifth_out_of_phase`<br>`Hexagram.middle`<br>`Hexagram.inPhase` | 六五居中，阴居奇位，依奇偶不当位，象却说中正：此处的“正”读作因得中而正，不是位之奇偶。模块不以中代正，所以相分。 |
 | <a id="p-tun-chenggang"></a>「六二之難，乘剛也」 | 屯·六二·象 | 相合 | `Hexagram.fallStatements`<br>`Hexagram.fallStatements_agree`<br>`Hexagram.falls` | 小象言“乘剛”者五处（屯六二、豫六五、噬嗑六二、困六三、震六二），检查脚本逐一找出：每处都是阴爻在阳爻之上，即其下之缝为落。 |
 | <a id="p-liuwei-shicheng"></a>「大明終始，六位時成」 | 乾·彖 | 定域 | `Hexagram.line_waxWane_above`<br>`Hexagram.inPhase_waxWane_above`<br>`Hexagram.phaseCount_parity`<br>`Hexagram.phase_qian_orbit` | 消息之律下，每爻逐步升经六位，其值不变，其正每升一位即翻转：一爻所示依其所处之位与时。当位之数每步改变奇偶，自乾十二步为三、二、三、二、三、二、三、四、三、四、三、四。“大明”之读不在律中。 |
 | <a id="p-tonggong-yiwei"></a>「二與四同功而異位，其善不同：二多譽，四多懼，近也」 | 《繫辭下》第八章 | 定域 | `Hexagram.odd`<br>`Hexagram.heightOf`<br>`Hexagram.middle`<br>`Hexagram.Seam` | 二、四同为偶位（同功）；二居下卦之中，四居上卦之下（異位）。“多譽”“多懼”是判断，“近”指四近于五，皆不在模块之中。 |
+| <a id="p-jian-dangwei"></a>「當位貞吉，以正邦也」 | 蹇·彖 | 相合 | `Hexagram.tuanWholeStatements`<br>`Hexagram.tuanWhole_between`<br>`Hexagram.tuanWhole_six`<br>`Hexagram.allHold_iff`<br>`Hexagram.jian3`<br>`Hexagram.holdsPlace` | 彖言整卦之位者五处（蹇“當位”、漸“進得位”、歸妹“位不當”、既濟“剛柔正而位當”、未濟“不當位”），检查脚本在所存六十四页中逐一找出。以二至五位读，五处皆合；以六位之奇偶读，只既濟、未濟两处合：蹇、漸初爻不当位，漸上爻亦然。中间四爻皆当位者恰是既濟、蹇、漸、家人四卦，彖于四卦皆言位或正。“貞吉”“正邦”是判断，不在律中。 |
+| <a id="p-guimei-weibudang"></a>「征凶，位不當也」 | 歸妹·彖 | 相合 | `Hexagram.noneHold_iff`<br>`Hexagram.tuanWhole_between`<br>`Hexagram.tuanWhole_six`<br>`Hexagram.holdsPlace` | 歸妹中间四爻皆不当位；中间四爻皆不当位者恰是未濟、歸妹、解、睽四卦。其初九、上六依六位之奇偶反而当位，所以此句只在初上无位之读下对整卦成立。“征凶”是判断，不在律中。 |
+| <a id="p-bi-shangxiaying"></a>「不寧方來，上下應也」 | 比·彖 | 相合 | `Hexagram.answeredStatements`<br>`Hexagram.answeredStatements_sole`<br>`Hexagram.sole`<br>`Hexagram.sole_answered`<br>`Hexagram.sole_unique` | 彖言“上下應”者三处（比、小畜、大有），检查脚本逐一找出：每处所说之爻都是卦中唯一之阳爻或阴爻（比九五、小畜六四、大有六五），与其余五爻皆相异，其余五爻亦各与之相应。这是一爻与其余诸爻之关系，比对应之位宽；有此一爻之卦恰十二，其爻唯一。 |
+| <a id="p-cui-youwei"></a>「萃有位，无咎」 | 萃·九五 | 相合 | `Hexagram.lineTextPlace`<br>`Hexagram.lineTextPlace_holds`<br>`Hexagram.holdsPlace`<br>`Hexagram.middle` | 爻辭明言位者只此一处，检查脚本在所存六十四页之爻辭中找出：九五居中，阳居奇位，当位，在初上之间而有定位。“无咎”是判断，不在律中。 |
+| <a id="p-tai-zhongxing"></a>「得尚于中行」 | 泰·九二 | 定域 | `Hexagram.lineTextMiddle`<br>`Hexagram.middleCourseLines`<br>`Hexagram.lineTextMiddle_places`<br>`Hexagram.betweenEnds`<br>`Hexagram.middle` | 爻辭言“中”者十一爻，检查脚本逐一找出：皆在二至五位，初上无一；其中居中者五（師九二、泰九二、家人六二、夬九五、豐六二）。言“中行”者五爻（泰九二、復六四、益六三、益六四、夬九五），居中者只泰九二、夬九五：爻辭之“中”多是中间，不都是居中之位。 |
+| <a id="p-xu-yanzaizhong"></a>「需于沙，衍在中也」 | 需·九二·象 | 定域 | `Hexagram.middle`<br>`Hexagram.betweenEnds` | 小象言“中”者五十一爻，检查脚本逐一找出：四十七爻居中（二、五位）；其余四处不是居中之读：泰六四“中心”、復六四“中行”、震上六“中未得”、豐九四“日中”。需九二居中。 |
+| <a id="p-shi-daxiang"></a>「地中有水，師」 | 師·象 | 定域 | `Hexagram.halves`<br>`Hexagram.middle` | 大象言“中”者八处（師、謙、隨、復、大畜、明夷、升、革），检查脚本逐一找出：每处都是下卦之象在上卦之象之中，是上下两体之关系，不是居中之位；言“位”者二处（鼎“正位凝命”、艮“思不出其位”），是君子之位，不是爻位。大象不言爻位之关系。 |
+| <a id="p-lueli-bianwei-top"></a>「唯《乾》上九《文言》雲：「貴而無位」，《需》上六雲：「雖不當位」。若以上為陰位邪？則《需》上六不得雲不當位也。若以上陽位邪？則《乾》上九不得雲貴而無位也」 | 王弼《周易略例·辯位》 | 相合 | `Hexagram.top_no_parity`<br>`Hexagram.qian_top`<br>`Hexagram.xu_top_no_place`<br>`Hexagram.fixedPhase`<br>`Hexagram.holdsPlace` | 王弼之两难：乾上九为阳，需上六为阴，文言与小象皆说其不在位；给上位任一奇偶，二者必有一个当位，没有一个奇偶使二者都不当位。以初上无位读之，二者皆不在位。所存本“云”作“雲”，照录。 |
+| <a id="p-lueli-bianwei-noplace"></a>「《象》無初上得位失位之文，又《系辭》但論三五、二四同功異位，亦不及初上」……「初上無陰陽定位，亦以明矣」 | 王弼《周易略例·辯位》 | 相合 | `Hexagram.betweenEnds`<br>`Hexagram.fixedPhase`<br>`Hexagram.fixedPhase_end`<br>`Hexagram.holdsPlace_iff`<br>`Hexagram.holdsPlace_ends`<br>`Hexagram.placeStatements_between`<br>`Hexagram.placeStatements_hold`<br>`Hexagram.statements_fix_parity`<br>`Hexagram.centre_fixes_parity` | 第二个关系：二至五位依奇偶有定位，初、上无定位，在两端之爻不在位。小象明言位者二十六处在三、四、五位，无一在初；需上六一处在上。以此读之，二十七处与文言乾上九“貴而无位”皆相合，没有例外。二至五位之奇偶亦由所言之位定出：小象之言定三、四、五位，中正之言定二位，与奇偶相合。 |
+| <a id="p-lueli-bianwei-zhongshi"></a>「然事不可無終始，卦不可無六爻，初上雖無陰陽本位，是終始之地也」……「卦以六爻為成，則不得不謂之六位時成也」 | 王弼《周易略例·辯位》 | 相合 | `Hexagram.fixedPhase_waxWane_enters`<br>`Hexagram.changes_run_ends`<br>`Hexagram.sole_top_passes`<br>`Hexagram.sole_six`<br>`Hexagram.sole_waxWane_none`<br>`Hexagram.run_between_six` | 初、上无定位，却是一爻进入与离开之处：消息之律下，新爻自初位入，升至二位才取得定位之正；一爻在初或上变动，二至五位之定位皆不变，只改变其旁之应与比。一爻对其余五爻之独应不能延续一步，六步后复回；在上之独爻升出，留下六爻皆同之卦，两步后自初位复入：终始之地。 |
+| <a id="p-lueli-shibian-xiang"></a>「夫應者，同誌之象也；位者，爻所處之象也；承乘者，逆順之象也；遠近者，險易之象也；內外者，出處之象也；初上者，始終之象也」 | 王弼《周易略例·明卦適變通爻》 | 定域 | `Hexagram.opposed`<br>`Hexagram.holdsPlace`<br>`Hexagram.rises`<br>`Hexagram.falls`<br>`Hexagram.halves`<br>`Hexagram.betweenEnds`<br>`Hexagram.answers`<br>`Hexagram.sole_top_passes` | 六种关系在律中各有其结构：應是同一高度两爻相异；位是二至五位上爻与奇偶相合；承乘是缝之起落；內外是上下两体；初上是无定位之两端，一爻自此入、自此出。遠近只是两位之距，律中两爻之关系不依距离。“同志”“逆順”“險易”“出處”是读法，不在律中。 |
+| <a id="p-lueli-tongbian-yingbi"></a>「近不必比，遠不必乖。同聲相應，高下不必均也」 | 王弼《周易略例·明爻通變》 | 相合 | `Hexagram.answers`<br>`Hexagram.answers_symm`<br>`Hexagram.opposed_answers`<br>`Hexagram.alternates_answers`<br>`Hexagram.opposed` | 两爻之相应只依其值相异，不依其距：对应之位（相距三）之应与相邻之比，是同一关系在不同两位上的读法，近者不必相应，远者可以相应。邢璹注以初四、二五、三上为“同聲相應”：在两体中同一高度，高下在不同之体。 |
+| <a id="p-lueli-mingtuan-zhu"></a>「一卦五陽而一陰，則一陰為之主矣。五陰而一陽，則一陽為之主矣」……「故陰爻雖賤，而為一卦之主者，處其至少之地也」 | 王弼《周易略例·明彖》 | 相合 | `Hexagram.sole`<br>`Hexagram.sole_count`<br>`Hexagram.soleAny_count`<br>`Hexagram.sole_unique`<br>`Hexagram.sole_iff_flip`<br>`Hexagram.sole_places`<br>`Hexagram.sole_any_phase` | 一爻与其余五爻皆相异，恰在五阳一阴或五阴一阳之卦；此爻唯一，十二卦即纯卦之一爻变，六位各二。十二之中，在二至五位而当位者四，不当位者四，在初上者四：此关系不依位与正。“主”在此读作其余诸爻皆与之相应之爻；“賤”是等级，不在律中。 |
+| <a id="p-lueli-xia-yiti"></a>「凡《彖》者，通論一卦之體者也。一卦之體，必由一爻為主。則指明一爻之美，以統一卦之義，大有之類是也。卦體不由乎一爻，則全以二體之義明之，豐卦之類是也」 | 王弼《周易略例·略例下》 | 定域 | `Hexagram.daYou_answered`<br>`Hexagram.feng_no_sole`<br>`Hexagram.soleAny_count`<br>`Hexagram.none_sole`<br>`Hexagram.halves` | 大有六五与其余五爻皆相异；豐无此爻，彖以上下两体读之。律中有独应之爻者只十二卦，其余五十二卦没有：“必由一爻為主”在此十二卦成立；王弼于他卦所举之主（居中、得位、有应之爻）是其他关系。“美”“統”不在律中。 |
+| <a id="p-lueli-lv"></a>「故《履》卦六三，為為兌之主，以應於《乾》。成卦之體，在斯一爻」 | 王弼《周易略例·略例下》 | 相合 | `Hexagram.lv_sole`<br>`Hexagram.sole`<br>`Hexagram.answeredStatements_sole` | 履六三是卦中唯一之阴爻，与其余五爻皆相异；彖“說而應乎乾”读作此爻与上体乾之三爻皆相应。所存本作“為為兌之主”，衍一“為”字，照录。 |
+| <a id="p-lueli-mingxiang"></a>「得意在忘象，得象在忘言」……「義茍在健，何必馬乎？類茍在順，何必牛乎？」 | 王弼《周易略例·明象》 | 定域 | `Learning.goAlike_iff_lumped`<br>`Hexagram.pairs_goAlike`<br>`Hexagram.yang_not_goAlike`<br>`Hexagram.betweenPhases_not_goAlike` | 意读作一个读法所能跟随者：一个读法可以只记其值而忘其构形，恰当律沿此读法同行（可归并）。一卦与其错之对是这样的读法；阳爻之数不是，二至五位之定位之正亦不是，后者须看初位所入之爻。“得意忘象”在律中只对同行之读法成立；马、牛之类的象不在模块之中。 |
+| <a id="p-lueli-bianwei-rank"></a>「夫位者，列貴賤之地，待才用之宅也」……「位有尊卑，爻有陰陽」 | 王弼《周易略例·辯位》 | 相分 | `Hexagram.holdsPlace`<br>`Hexagram.atSites_glues_iff`<br>`Contextual.indexed_fits`<br>`Web.significance_undetermined` | 王弼以位为贵贱之列、才用之宅，位有尊卑。模块中的位是语境之索引，爻与位之关系（定位、当位）不带等级与判断，律亦不决定意义；理论不采贵贱尊卑之读（与《繫辭》“貴賤”“天尊地卑”之相分同）。 |
+| <a id="p-lueli-mingtuan-zhizhong"></a>「夫眾不能治眾，治眾者，至寡者也」……「故眾之所以得咸存者，主必致一也」 | 王弼《周易略例·明彖》 | 相分 | `Hexagram.answers_symm`<br>`Hexagram.sole_answered`<br>`Hexagram.sole_unique`<br>`Hexagram.answers_shown_along_run` | 律中一爻与其余五爻之关系是对称的：它与五爻皆相异，五爻亦各与它相异；关系中没有“治”之方向，也没有一个律使众爻之存依赖于此一爻。“治眾”“主必致一”是统治之读，理论不采；理论读关系本身。 |
+| <a id="p-lueli-guale-yinwei"></a>「陽處陰位，謙也。故此一卦，皆以陽處陰為美也」……「故陽爻皆以居陰位為美」 | 王弼《周易略例·卦略》（履、大過） | 相分 | `Hexagram.inPhase`<br>`Hexagram.holdsPlace`<br>`Web.significance_undetermined` | 小象多以不当位为失，王弼于履、大過、大壯则以阳居阴位为美：同一关系（阳爻不当位）在不同之卦得相反之判断。律中只有关系，判断不由关系定；理论不采“美”之判断。 |
 | <a id="p-wen-budang"></a>「道有變動，故曰爻；爻有等，故曰物；物相雜，故曰文；文不當，故吉凶生焉」 | 《繫辭下》第八章 | 相分 | `Hexagram.inPhase`<br>`Hexagram.atSites_glues_iff`<br>`Web.significance_undetermined` | 爻与位相当与否，是带位之索引的关系（正）。“爻有等”是等级；“文不當，故吉凶生焉”把不当读作吉凶之源。律中的关系不带判断，动力学不决定意义。 |
 | <a id="p-zhongyao"></a>「若夫雜物撰德，辨是與非，則非其中爻不備」 | 《繫辭下》第七章 | 相合 | `Hexagram.nuclear`<br>`Hexagram.inner`<br>`Hexagram.nuclear_inner`<br>`Hexagram.run_inner`<br>`Hexagram.nuclear_merges`<br>`Hexagram.nuclear_loses` | 中爻是第二至第五爻。互卦以二、三、四爻为下卦，三、四、五爻为上卦：互之所成恰由中爻定，起点中爻相同的两个历程自第一步起即为一个历程；初、上两爻一步即失，此律合并，永失一种可能。“辨是與非”是判断，不在律中：律所说的只是互卦所读之处，恰是中爻。 |
 | <a id="p-xugua-shouwei"></a>「有天地，然後萬物生焉」……「物不可窮也，故受之以未濟；終焉」 | 《序卦》首尾 | 相合 | `Hexagram.process_returns_iff_ends`<br>`Hexagram.nuclear_rests_iff`<br>`Hexagram.nuclear_two_fixed_one_cycle`<br>`Hexagram.run_in_attractor`<br>`Hexagram.entry_counts`<br>`Hexagram.basin_counts` | 互之律下恰有四个构形复返：乾、坤不变，既濟、未濟相代；一切构形至迟第二步即入此四者，不再离开，依三、四两爻，十六归乾，十六归坤，三十二入既濟、未濟之相代。此四者恰是所传卦序首二卦与末二卦。序卦以天地始，以未濟终而说“物不可窮”：互之律下，既濟、未濟相代而不止，不是静止。 |
@@ -172,7 +216,17 @@
 
 **错与一爻之变。** 错使每一爻之正翻转，而保持每一处应与比（`inPhase_complement`、`opposed_complement`、`alternates_complement`）：互为错卦的两卦，当位之数相加为六，应之格局相同。一爻之变只动该位之正与其高度之应（`inPhase_flip_self`、`opposed_flip_self`、`opposed_flip_other`）。
 
-**四项普查：经文在这些关系上是否一致。** 小象明言位者二十七处，二十六处与奇偶相合，且都在三、四、五位；言中正、正中者十处，九处是居中而当位之爻；言乘刚者五处，皆是阴在阳上；彖言剛中而應者五处，皆是中之高度相应。普查由检查脚本在所存六十四页中找出这四类明言的全部，与 Lean 的清单逐一比较，Lean 在其卦上检查清单的每一项（`placeStatements_agree` 等）。所以这不是挑选出的例证：除两处之外，经文在这四类明言中一致使用这些关系。两处例外是需上六与艮六五，见 §6。
+**四项普查：经文在这些关系上是否一致。** 小象明言位者二十七处，二十六处与奇偶相合，且都在三、四、五位；言中正、正中者十处，九处是居中而当位之爻；言乘刚者五处，皆是阴在阳上；彖言剛中而應者五处，皆是中之高度相应。普查由检查脚本在所存六十四页中找出这四类明言的全部，与 Lean 的清单逐一比较，Lean 在其卦上检查清单的每一项（`placeStatements_agree` 等）。所以这不是挑选出的例证：除两处之外，经文在这四类明言中一致使用这些关系。两处例外是需上六与艮六五，见 §6；需上六在第二个关系下相合，见下。
+
+**初上无位：经文言位所用的关系。** 王弼《辯位》说：文言谓乾上九“貴而无位”，小象谓需上六“雖不當位”，一阳一阴；上位若有奇偶，二者必有一个当位（`top_no_parity`）。所以初、上无定位。模块把它写作二至五位上的第二个关系（`fixedPhase`、`holdsPlace`），在 `inPhase` 之旁，不取代它。以此读之，小象明言位者二十七处与乾上九皆成立，没有例外（`placeStatements_hold`）；彖言整卦之位者五处皆成立，以六位之奇偶读则只成立两处：蹇“當位”、漸“進得位”之初爻不当位，歸妹“位不當”之初、上两爻反而当位（`tuanWhole_between`、`tuanWhole_six`）。中间四爻皆当位者四卦（既濟、蹇、漸、家人），彖于四卦皆言位或正（`allHold_iff`）。二至五位之奇偶也由经文之言定出（`statements_fix_parity`、`centre_fixes_parity`）。所以彖与象言位，用的是第二个关系。需上六依六位之奇偶当位，与象相分（`xu_top_inPhase`）；依第二个关系不在位，与象相合（`xu_top_no_place`）：表中由相分改为相合。两个关系不互相修正，`inPhase` 说六位之奇偶，`holdsPlace` 说经文言位所用之关系。
+
+**两端是出入之处。** 定位不说两端，两端却不是无关：一爻在初或上变动，二至五位之定位不动，其旁之缝与其高度之应翻转（`ends_not_told`、`changes_run_ends`）；消息之律下，初位所入之爻升至二位，才取得定位之正，其正是它在初位之奇偶之反（`fixedPhase_waxWane_enters`），此后升至五，恰在两位在位（`run_course_between`）。所以定位之正不是律所同行的归并（`betweenPhases_not_goAlike`）：要跟随它，须看两端。王弼说“初上者，始終之象也”“是終始之地也”，在这里读作：两端不定位，而是一爻进入与离开之处，定位之变由此而来。
+
+**一爻与其余诸爻：独应。** 两爻之应只依其值相异，不依其距（`answers`）；对应之位之应与相邻之比都是它（`opposed_answers`、`alternates_answers`）。一爻与其余五爻皆相异，恰在五阳一阴或五阴一阳之卦，其爻唯一（`sole_count`、`sole_unique`）。小畜、大有之“上下應之”，比之“上下應”，夬之“柔乘五剛”，履六三之“成卦之體，在斯一爻”，都是这一关系（`answeredStatements_sole`、`guai_iff`、`lv_sole`）。它比对应之位与相邻之位宽；Y2 写为定域的小畜、夬两段现在相合，大有一段因“尊位”仍为相分。独应不依位与正：十二卦中，在二至五位当位者四、不当位者四，在两端者四（`sole_places`）。
+
+**独应不延续一步。** 消息之律下，有独应之卦一步之后没有独应（`soleAny_waxWane`），六步之后在原位复回（`sole_six`）；在上位之独爻升出，留下六爻皆同的纯卦，两步之后独爻自初位复入（`sole_top_passes`）。一爻之变下，变独爻即得纯卦，纯卦变一爻即得独应（`changes_run_sole`）。王弼以“主”读独应之爻：“夫眾不能治眾，治眾者，至寡者也”。律中此关系是对称的，此爻与五爻皆相异，五爻亦各与此爻相异（`answers_symm`）；没有“治”之方向，“主必致一”也不在律中：五十二卦没有独应之爻，王弼于此以“二體”读之，豐是其例（`feng_no_sole`）。所以表中“主”之读分为两段：一爻与其余诸爻之关系相合，“治眾”相分。
+
+**爻辭与大象：言中、言位之处。** 爻辭言“中”者十一爻，皆在二至五位，五爻居中；言“中行”者五爻，只泰九二、夬九五居中（`lineTextMiddle_places`）：爻辭之“中”多是中间，不都是居中之位。爻辭言位只萃九五“萃有位”，在位（`lineTextPlace_holds`）。大象言“中”者八处，每处是下卦之象在上卦之象之中（地中有水、澤中有雷之类），是两体之关系；言“位”者二处，鼎“正位凝命”、艮“思不出其位”，是君子之位，不是爻位。小象言“中”者五十一爻，四十七爻居中，其余四处（泰六四“中心”、復六四“中行”、震上六“中未得”、豐九四“日中”）不是居中之读。这些普查由检查脚本在所存六十四页中找出：彖与爻辭之清单与 Lean 的清单比较，大象与小象之“中”与脚本所记之例外比较；每项都以变异检验过。
 
 **中爻与互：一卦所归，由三、四两爻定。** 繫辭下“若夫雜物撰德，辨是與非，則非其中爻不備”，在互之律中有确切的读法：互之所成恰由中爻定，初、上两爻一步即失（`nuclear_inner`、`nuclear_merges`）；再一步，二、五两爻也失，只余三、四（`nuclear_two`）。所以一卦在互之下归于何处，由三、四两爻定：乾、坤，或既濟、未濟之相代（`basin_iff`）。“辨是與非”是判断，不在律中。互的这四个归宿恰是卦序首尾四卦（`process_returns_iff_ends`）：序卦以天地始，以未濟终而说“物不可窮也”，而互之律下既濟、未濟相代不止，是环而不是静止。这只是卦序上检查过的事实，不说卦序由互而排。
 
@@ -187,13 +241,15 @@
 - **继之者善，天地之大德曰生，復见天地之心。** 易传把善、大德与心归于天地之行。理论中动力学不决定意义：无物有意义与万物有意义，动力学两者都不排除（`Web.significance_undetermined`）。生命意义只在延续条件（`Unrestricted`）之下是定理（`g0_of_unrestricted`），此条件在理论中明示而不断言，其根据开放。
 - **天尊地卑，贵贱位矣；三多凶，五多功，贵贱之等；圣人之大宝曰位。** 构形之中乾坤互为错卦，律与错交换，倒转则律逆行：结构里没有尊卑。位有别，是语境的索引（`Contextual.indexed_fits`），不是等级。贵贱之位是社会等级，理论不采。
 - **柔得尊位；爻有等，文不當，故吉凶生焉。** 大有彖以五为尊位，繫辭下以爻有等级、文之不当为吉凶之源。模块中，正是爻与位之间不带判断的关系，位之有别是语境的索引；动力学不决定意义（`Web.significance_undetermined`）。与上一条贵贱之位同，不采。
-- **需上六“雖不當位”。** 上六阴居偶位，依奇偶当位，象却说不当位。王弼《周易略例·辯位》以此为初、上两位无定位之证（该文未存于本库，未核对）。模块对六位一律以奇偶定正（`xu_top_inPhase`），不采“初上无位”：若采之，是在二至五位上另立一个关系，而不是修正此关系。
+- **需上六“雖不當位”，依六位之奇偶。** 上六阴居偶位，依六位之奇偶当位（`xu_top_inPhase`），象却说不当位。王弼《辯位》以此与乾上九“貴而无位”为初、上无定位之证；模块把初上无位写作二至五位上的第二个关系，此句在其下相合（`xu_top_no_place`，§5），表中为相合。依六位之奇偶的相分如其所是地保留。
 - **艮六五“以中正也”。** 六五阴居奇位，依奇偶不当位（`gen_fifth_out_of_phase`）；此“正”读作因得中而正。模块中中与正是两个关系，不以中代正。
+- **位者，列貴賤之地；眾不能治眾，治眾者，至寡者也。** 王弼以位为贵贱之列、才用之宅，以独应之爻为“主”而“治眾”。模块中位是语境的索引，独应是对称的关系，没有治之方向（`answers_symm`）；与上面贵贱之位同，不采。
+- **陽處陰位為美。** 卦略于履、大過、大壯以阳居阴位为美，与小象多以不当位为失相反：同一关系在不同之卦得相反之判断。判断不由关系定（`Web.significance_undetermined`），理论不采。
 - **大衍之数，卜筮尚占。** 数术与占筮不在脊柱之中。任一由有限记录给出下一步的程序，都有它失误的历程（`Learning.no_prefix_fixes_next`、`Learning.diagonal_misses`）；知来只在历程有界、读法为律所同行之处成立。
 
 ## 7. 读法的标注与依据
 
-本章的读法都是 AI 读法。它们依 D45 在理论的一个说明中成立：经文是这些词句意义的证据，读法是否站得住，由它在理论中的位置论证。Ren 的话是来源。“七日來復”依消息卦的读法，这只是诸读法之一；“周流六虛”读作消息之律下爻的升降，“兼三材而兩之”只取六位二值的结构。爻位之关系：正依位之奇偶，六位一律；应依同一高度的上下两位；比依相邻两位之间的缝，承、乘依其方向；中依二、五两位。小畜、大有“上下應之”与夬“柔乘五剛”读的是一爻与其余诸爻的关系，比对应之位与相邻之位宽，表中写为定域或相分，不在模块之中。凡读法超出 Lean 所证者，表中写明不在律中。互、之卦与錯綜之读（[D51](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d51-卦之诸律的读法--the-readings-of-the-hexagram-laws)）：中爻依二至五爻；互读作律而迭用，传统多只取一步；老少依九、六为老、七、八为少，用九、用六读作六爻皆老（《左傳》昭公二十九年称乾之用九为“乾之坤”，未存于本库，未核对）；錯、綜之名依后世注家（明来知德），经文“錯綜其數”说的是数，表中写为定域。
+本章的读法都是 AI 读法。它们依 D45 在理论的一个说明中成立：经文是这些词句意义的证据，读法是否站得住，由它在理论中的位置论证。Ren 的话是来源。“七日來復”依消息卦的读法，这只是诸读法之一；“周流六虛”读作消息之律下爻的升降，“兼三材而兩之”只取六位二值的结构。爻位之关系：正依位之奇偶，六位一律；应依同一高度的上下两位；比依相邻两位之间的缝，承、乘依其方向；中依二、五两位。初上无位依王弼《辯位》读作二至五位上的第二个关系，在六位之奇偶之旁；小畜、大有、比之“上下應”，夬之“柔乘五剛”与履六三之“成卦之體”，读作一爻与其余五爻皆相异之独应；“主”只取此关系，不取“治”（@Y4-DECISION@）。凡读法超出 Lean 所证者，表中写明不在律中。互、之卦与錯綜之读（[D51](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d51-卦之诸律的读法--the-readings-of-the-hexagram-laws)）：中爻依二至五爻；互读作律而迭用，传统多只取一步；老少依九、六为老、七、八为少，用九、用六读作六爻皆老（《左傳》昭公二十九年称乾之用九为“乾之坤”，未存于本库，未核对）；錯、綜之名依后世注家（明来知德），经文“錯綜其數”说的是数，表中写为定域。
 
 ## 8. 未做之事
 
@@ -201,8 +257,8 @@
 - 大衍筮法中老少之爻的概率：之卦之律只说老少已定之后；《左傳》、京房的互体与卦变之说，以及来知德的錯綜之说，未存于本库。
 - 邵雍先天之序（以初爻为最高位的加一之律，自乾逐一递减至坤）只在模块文档中说明，未写成定理；互在 Y2 之位上的读法。
 - 吉凶悔吝与卦爻辞的判断、说卦的取象与方位、卦气与纳甲。
-- 王弼《周易略例》（明位、辯位等篇）未存于本库：“初上无位”与“一爻为主”（上下應之、乘五剛）之读未写入，也未与其文对照。
-- 普查只及彖与小象中的四类明言；爻辞、大象与文言中言位、言中之处，以及“時位”之读，未普查。
+- 王弼《周易略例》已存入本库（§1），“初上无位”与“一爻为主”之读已写入并与其文对照（§2、§5）。未做的：王弼《周易注》未存，其逐爻之读未对照；邢璹之注除明彖外未与王弼之文分开标记；王弼于独应之外所举之主（居中、得位、有应之爻），以及“時”与“位”合读（明卦適變通爻“卦者，時也”），未写入；明象之“忘象”只在一条读法中对照。
+- 普查已及彖、小象、爻辭与大象中言位、言中之处；文言中言位、言中之处未普查。
 - 与刻本的对校；历代注疏的系统比较（王弼、程颐、朱熹的读法未逐一对照）。
 - 一个独立的审读。
 
