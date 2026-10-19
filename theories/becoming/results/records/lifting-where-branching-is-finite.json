@@ -322,7 +322,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "124d078f9152a8bd4e11b38d367f13d41b2f04ee041d337a894cc7b8add2f2ee"
+      "sha256": "e6a7080e91391e723178e71ddab6b831bb28a91d58c8f59abf011c670a015361"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -352,9 +352,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
       "role": "receipt",
-      "sha256": "4d5163aee21ae8d61e09fc23b6eed4d112724344b71acc860c8eaa914a9cabdd",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
       "declarations": []
     }
   ],
@@ -382,7 +382,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -513,7 +513,7 @@
       "zh": "2026年10月18日，L2 与 C1（Becoming.Labels、Becoming.Exclusion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     },
     {
-      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Likeness.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T171240.509140Z after reading the change. The claim is unchanged."
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Likeness.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
     }
   ],
   "text_versions": [

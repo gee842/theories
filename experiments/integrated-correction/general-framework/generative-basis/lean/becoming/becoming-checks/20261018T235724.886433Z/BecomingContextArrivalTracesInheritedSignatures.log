@@ -1,0 +1,3 @@
+Becoming.ContextArrivalTracesInherited.changed_history_ends : ∀ (a : Unit) (word : List Unit) (finish : Bool × Nat),
+  ¬Generative.Trace (Generative.BecomingCompatibility.evolving Generative.BecomingCompatibility.changingRelation)
+      (true, 2) (a :: word) finish

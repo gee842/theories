@@ -213,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "3f2b0da5f3361c0a69870cc993c4a63937bd4679a9e9da94bafc790d65a5d18e",
+      "sha256": "e6a7080e91391e723178e71ddab6b831bb28a91d58c8f59abf011c670a015361",
       "declarations": []
     },
     {
@@ -243,7 +243,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
       "role": "proof",
-      "sha256": "5050f01032ca162bc9e23f0cdb707b6a270da2ccc0b53b00e0557c6b18f4c52f",
+      "sha256": "1a23536871b205b2ea3de5052b5acca68365c8a9b5864af09b5d64b695bbb95c",
       "declarations": [
         "Becoming.Stock.Balanced",
         "Becoming.Stock.cycles_need",
@@ -263,6 +263,12 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -275,7 +281,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -581,6 +587,9 @@
     {
       "en": "19 October 2026, F3Q (the port of the inquiry and composition family): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the connectivity rerun sentence of the \"Integration of the spine\" row) and section 9 (the core module counts and the current receipt). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，F3Q（探究与组合族移入核心）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（“脊柱的整合”行的连通性重测句）和第 9 节（核心模块计数与当前回执）改动。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Stock.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
     }
   ]
 }

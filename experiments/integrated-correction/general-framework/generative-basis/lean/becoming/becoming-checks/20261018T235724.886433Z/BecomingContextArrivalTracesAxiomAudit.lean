@@ -1,0 +1,4 @@
+import Becoming.ContextArrivalTraces
+#print axioms Becoming.ContextArrivalTraces.step_arrives
+#print axioms Becoming.ContextArrivalTraces.empty_support_no_arrival
+#print axioms Becoming.ContextArrivalTraces.changed_context_arrives

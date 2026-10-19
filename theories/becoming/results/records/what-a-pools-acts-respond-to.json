@@ -328,7 +328,7 @@
         "Becoming.Loop.escalation_follows",
         "Becoming.Loop.quiet_follows"
       ],
-      "sha256": "dabb239082e3ea10b17c9d1054837c36292f01d30d05d5981435526874b4babb"
+      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionPool.lean",
@@ -373,7 +373,7 @@
         "Becoming.Loop.web",
         "Becoming.Loop.quietWeb"
       ],
-      "sha256": "8e285d9a8b1952b58668e2dbd2f51f23598a40cdb6bb2f96271986ab6372a842"
+      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
@@ -382,7 +382,7 @@
         "Becoming.TimedResponse.ReachedBy",
         "Becoming.TimedResponse.coupling_alike_before"
       ],
-      "sha256": "d95c8a9fb4bd48f436ab9c010fe211740ddebad403b6cc56b9864a9fb2c573f9"
+      "sha256": "9673c5bc75201ebad87959ea6e694f53e1dad45bf9855185aa4c2ab625010642"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
@@ -393,7 +393,7 @@
         "Becoming.Web.AlikeThroughUpTo.trans",
         "Becoming.Clearing.dweller_spared"
       ],
-      "sha256": "3399211a1a4b5e08592f4bbdd6c5d288b14870e534def29aa447be3b33040d96"
+      "sha256": "6b82bfbdff6518183a8226f1e09e2ca3db6b5416de0f70844b19d627c8b2a9a9"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
@@ -409,7 +409,7 @@
         "Becoming.Flow.CoupledFromEither",
         "Becoming.thresholdOnly"
       ],
-      "sha256": "dd46c64db93e1eac72a21660f62953a4b1a9f3be6a56f82b2bd3d740bbdeff00"
+      "sha256": "33e56ce738d062804808d426049498435660fafcfbd29ae38b8695148536cf35"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
@@ -420,7 +420,7 @@
         "Becoming.Clearing.sparedFlow",
         "Becoming.Clearing.sparedWeb"
       ],
-      "sha256": "34bd0630b4d334ad07c88d57c86ff4dfae7ba8d0b824ae8768f24709aab4c593"
+      "sha256": "934d11a64a1b0972253eef6a7f8ffa7c06f9d28e99e61d54441e68876d2ecd12"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
@@ -463,7 +463,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "bf84cf41856804876bd548e8fb016e1c06fec139438ebae86ee8a5d66f4cef51"
+      "sha256": "e6a7080e91391e723178e71ddab6b831bb28a91d58c8f59abf011c670a015361"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -508,6 +508,9 @@
     {
       "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the \"Selection, causes and experiment\" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：G4 修订“选择、原因与实验”行（陈述了沿一个运行经耦合的判据，链接其记录）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Counterfactual.lean, Feedback.lean, Response.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean, TimedResponse.lean. The claim is unchanged."
     }
   ]
 }

@@ -1,0 +1,8 @@
+@Becoming.ContextArrivalTraces.step_arrives : ∀ {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  (R : I → S → A → I → S → Prop) {possible : I → Prop} {i j : I} {s t : S} {a : A},
+  possible i → (Becoming.evolvingLaw R).step (i, s) a (j, t) → Becoming.Arrives R possible s [a] t j
+@Becoming.ContextArrivalTraces.empty_support_no_arrival : ∀ {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  (R : I → S → A → I → S → Prop) (s : S) (a : A) (t : S) (j : I), ¬Becoming.Arrives R (fun x => False) s [a] t j
+Becoming.ContextArrivalTraces.changed_context_arrives : Becoming.Arrives Becoming.ChangingContext.relation
+    (fun i => i = false) 0 [()] 1 true ∧
+  true ≠ false

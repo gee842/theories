@@ -1,7 +1,7 @@
 # N6: the reading pass the N1 renaming left open (proposal to Ren)
 
 Board item N6, claimed in 77733b06b. Branch `n6-reading`, in its own worktree, rebased on main at
-9b9e7951b (after L1, S1, G1, G2, A1, F1, G3, L2, C1 and U2c landed). **Ren's yes, 19 October 2026:** “Yes to the N6 reading pass: reapply it on current main, rerun the checkers and land it through the queue. Keep the selection title as proposed; leave NAMES.md for later.” ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-19-n6-reading-pass-yes.md)). It lands through the queue after F3C.
+339ab0c29 (after L1, S1, G1, G2, A1, F1, G3, L2, C1, U2c, G4, F3E, A3 and F3C landed). **Ren's yes, 19 October 2026:** “Yes to the N6 reading pass: reapply it on current main, rerun the checkers and land it through the queue. Keep the selection title as proposed; leave NAMES.md for later.” ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-19-n6-reading-pass-yes.md)). It lands through the queue after F3C.
 
 N5 (b84e722ea) renamed 175 Lean declarations to the vocabulary adopted in section 7 of the
 [naming study](../../REGISTRATION-VOCABULARY-STUDY.md) and left the prose for a reading pass. This
@@ -105,8 +105,8 @@ count is checked again. Where main had rewritten a sentence since, the block was
 
 - Lean: `apply` refuses any edit that reaches code (`code_of` of every changed module equals the
   base's). The core checker passed in the tree on the changed files (receipt
-  `becoming-checks/20261018T171240.509140Z`), and `check_fallible_inquiry.py` passed for
-  `Becoming.FallibleInquiry` (receipt `fallible-inquiry-checks/20261018T174801.206046Z`); records
+  `becoming-checks/20261018T235724.886433Z`), and `check_fallible_inquiry.py` passed for
+  `Becoming.FallibleInquiry` (receipt `fallible-inquiry-checks/20261019T000109.055377Z`); records
   whose proofs sit in a changed file are rebound to the receipt covering it, after reading the
   change.
 - Records: the JSON round-trips; only the live fields listed above change, and each changed
@@ -114,14 +114,15 @@ count is checked again. Where main had rewritten a sentence since, the block was
   Eleven English statements were shortened to the render's limit of 300 characters; the
   shortened sentences say the same.
 - `make research-render` and `research-check` pass on the branch (the 82 reading-drift entries are
-  the base's; the argument pages and reading registers are unchanged). On 9b9e7951b
-  `research-links` reports no broken link, and `research-test` passes (171 tests, one skipped).
+  the base's; the argument pages and reading registers are unchanged). On 339ab0c29
+  `research-links` reports no broken link, and `research-test` passes.
   The receipts of the earlier runs on the branch (core 20261018T094652.463397Z and
-  20261018T101831.943492Z, FallibleInquiry 20261018T095146.390681Z and 20261018T102455.825667Z)
+  20261018T101831.943492Z and 20261018T171240.509140Z, FallibleInquiry 20261018T095146.390681Z,
+  20261018T102455.825667Z and 20261018T174801.206046Z)
   were for pre-rebase bytes and now bind nothing; they stay on the
   branch, and the integrator decides whether they land.
-  Generated pages whose content depends on untracked files (the Lean inventory, file counts,
-  the manifest) are left to be rendered in the main checkout at landing.
+  At landing the pages are rendered with untracked `.build/` folders and this kit's `checks/`
+  scratch excluded, and the Lean index pair is kept as main has it (as in G4's landing script).
 
 ## Readings touched (meaning kept)
 

@@ -1,0 +1,15 @@
+import Becoming.DescentRenewalRuns
+#print axioms Becoming.DescentRenewalRuns.no_renewal_free_tail
+#print axioms Becoming.DescentRenewalRuns.renewal_arbitrarily_late
+#print axioms Becoming.DescentRenewalRuns.renewal_within_rank
+#print axioms Becoming.DescentRenewalRuns.alternation
+#print axioms Becoming.DescentRenewalRuns.rank
+#print axioms Becoming.DescentRenewalRuns.alternation_state
+#print axioms Becoming.DescentRenewalRuns.alternatingRank_eq
+#print axioms Becoming.DescentRenewalRuns.actual_steps
+#print axioms Becoming.DescentRenewalRuns.period_two
+#print axioms Becoming.DescentRenewalRuns.restores_arbitrarily_late
+#print axioms Becoming.DescentRenewalRuns.restoration_raises_rank
+#print axioms Becoming.DescentRenewalRuns.unrenewed_first_step
+#print axioms Becoming.DescentRenewalRuns.no_new_configurations
+#print axioms Becoming.DescentRenewalRuns.every_score_bounded

@@ -1,0 +1,4 @@
+import Becoming.ContextArrivalTraces
+#check @Becoming.ContextArrivalTraces.step_arrives
+#check @Becoming.ContextArrivalTraces.empty_support_no_arrival
+#check @Becoming.ContextArrivalTraces.changed_context_arrives

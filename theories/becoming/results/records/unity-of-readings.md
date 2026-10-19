@@ -98,6 +98,7 @@ Ren, 14 October 2026: “why do we need "World"? wasn't this about the whole and
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 
 Aliases: `readings in context make one world`, `语境中的读法是一个世界`, `balance as gluing`, `平衡作为粘合`, `every world one run of exchange`, `每个世界是交换的一次运行`
 
@@ -118,6 +119,7 @@ Aliases: `readings in context make one world`, `语境中的读法是一个世�
 - 18 October 2026, G3 (Becoming.LawAlongRun): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: G3 added the Mechanism bullet on a law along one run, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: L2 and C1 added their bullets (what finitely many labels fix; what taking all that is given excludes, section 6.7), extended the D40 reading, revised the "Learning" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): declarations moved with their full Lean names, statements and proofs unchanged: world, world_active from Unfolding.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Unfolding.lean). The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Boundaries.lean, Context.lean, Quantum.lean, Readings.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 - 14 rebinding entries (2026-10-14 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](unity-of-readings.json).
 
 <a id="earlier-text--早期文本"></a>

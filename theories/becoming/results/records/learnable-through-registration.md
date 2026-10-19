@@ -109,6 +109,7 @@ Ren, 12 October 2026: “please, fully complete, 我觉得理更像是对结构�
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 
 Aliases: `learnability through registration`, `经识的可学性`
 
@@ -125,6 +126,7 @@ Aliases: `learnability through registration`, `经识的可学性`
 - 18 October 2026, L1 (Becoming.Unrolling): THE-THEORY-OF-BECOMING.md re-pointed after L1 added the bullets on what an extrapolation given nothing fixes, revised the "Learning" row of section 8.2 and the section 9 receipt and connectivity text; read before re-pointing. The claim is unchanged.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change since bd5252f96 (the section 8.2 row "Learning" that cites it now names Becoming.Labels (a table found rather than given, and whether fewer names suffice, stay open)). The claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Unfolding.lean). The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Identification.lean, Learnable.lean, LearnableRuns.lean, Learning.lean, Seeking.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 - 16 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](learnable-through-registration.json).
 
 </details>

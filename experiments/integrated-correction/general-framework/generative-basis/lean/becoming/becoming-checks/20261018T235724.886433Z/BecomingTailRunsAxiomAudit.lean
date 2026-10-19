@@ -1,0 +1,21 @@
+import Becoming.TailRuns
+#print axioms Becoming.TailRuns.FalseRule
+#print axioms Becoming.TailRuns.TrueRule
+#print axioms Becoming.TailRuns.VanishRule
+#print axioms Becoming.TailRuns.FalseDecided
+#print axioms Becoming.TailRuns.TrueDecided
+#print axioms Becoming.TailRuns.FalseRule.sequences
+#print axioms Becoming.TailRuns.falseRule_iff
+#print axioms Becoming.TailRuns.trueRule_iff
+#print axioms Becoming.TailRuns.VanishRule.sequences
+#print axioms Becoming.TailRuns.vanishRule_iff
+#print axioms Becoming.TailRuns.wlpo_iff_runs
+#print axioms Becoming.TailRuns.lpo_iff_runs
+#print axioms Becoming.TailRuns.changedByNoCondition_iff_runs
+#print axioms Becoming.TailRuns.insensitive_differs_iff_runs
+#print axioms Becoming.TailRuns.not_through_sensitive_iff_runs
+#print axioms Becoming.TailRuns.insensitive_differs_decides
+#print axioms Becoming.TailRuns.not_through_sensitive_decides
+#print axioms Becoming.TailRuns.vanishRule_iff_trueRule
+#print axioms Becoming.TailRuns.vanish_decides
+#print axioms Becoming.TailRuns.indicators_sum

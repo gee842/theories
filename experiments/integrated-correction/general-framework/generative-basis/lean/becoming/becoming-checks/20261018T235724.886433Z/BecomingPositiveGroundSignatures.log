@@ -1,0 +1,214 @@
+Becoming.PositiveGround.one_sub_succ : ∀ (n : Nat), 1 - (n + 1) = 0
+Becoming.PositiveGround.pos_succ : ∀ (n : Nat), 0 < Int.ofNat (n + 1)
+Becoming.PositiveGround.not_pos_negSucc : ∀ (n : Nat), ¬0 < Int.negSucc n
+Becoming.PositiveGround.pos_or_pos : ∀ (a b : Int), 0 < a + b → 0 < a ∨ 0 < b
+@Becoming.PositiveGround.positive_integral_has_positive_occurrence : ∀ {R : Type} (domain : List R)
+  (contribution : R → Int),
+  0 < Becoming.PositiveGround.finiteIntegral domain contribution → ∃ r, r ∈ domain ∧ 0 < contribution r
+@Becoming.PositiveGround.contingent_generation : ∀ {H A Q : Type} (F : Becoming.Frame H A Q) (living : Q → Prop)
+  (admitted : H → Prop) (before positive : H → Q → Prop),
+  Becoming.G0 F living positive →
+    (∀ (h : H), admitted h → ∃ q, living q ∧ F.realized h q ∧ ¬before h q) →
+      ∀ (h : H), admitted h → ∃ q, positive h q ∧ ¬before h q
+@Becoming.PositiveGround.certified_integral_reason : ∀ {H A Q R : Type} (F : Becoming.Frame H A Q) (living : Q → Prop)
+  (admitted : H → Prop) (before positive : H → Q → Prop) (reason : H → Prop),
+  Becoming.G0 F living positive →
+    (∀ (h : H) (q : Q), positive h q → reason h) →
+      ∀ (domain : List R) (contribution : H → R → Int) (meaning : R → Q),
+        (∀ (h : H),
+            admitted h →
+              ∀ (r : R),
+                r ∈ domain →
+                  0 < contribution h r → living (meaning r) ∧ F.realized h (meaning r) ∧ ¬before h (meaning r)) →
+          (∀ (h : H), admitted h → 0 < Becoming.PositiveGround.finiteIntegral domain (contribution h)) →
+            ∀ (h : H), admitted h → (∃ q, positive h q ∧ ¬before h q) ∧ reason h
+@Becoming.PositiveGround.certified_reason_on_scope : ∀ {H A C R O : Type} {k : Nat} (F : Becoming.Frame H A C)
+  (living : C → Prop) {sense : H → A → H → Fin k} {response : R → List A} {B : H → Prop}
+  {policy : Generative.InquirySufficiency.Policy A R k} (before positive : H → C → Prop) (reason : H → Prop),
+  Becoming.G0 F living positive →
+    (∀ (t : H) (c : C), positive t c → reason t) →
+      ∀ (domain : List O) (contribution : H → O → Int) (meaning : O → C),
+        (∀ (t : H),
+            Becoming.Scope F.P sense response B policy t →
+              ∀ (o : O),
+                o ∈ domain →
+                  0 < contribution t o → living (meaning o) ∧ F.realized t (meaning o) ∧ ¬before t (meaning o)) →
+          (∀ (t : H),
+              Becoming.Scope F.P sense response B policy t →
+                0 < Becoming.PositiveGround.finiteIntegral domain (contribution t)) →
+            ∀ (t : H), Becoming.Scope F.P sense response B policy t → (∃ c, positive t c ∧ ¬before t c) ∧ reason t
+@Becoming.PositiveGround.contingent_generation_of_unrestricted : ∀ {H A Q F' Pos : Type} (F : Becoming.Frame H A Q)
+  (living : Q → Prop) (admitted : H → Prop) (before : H → Q → Prop) {sig : Pos → Nat → F' → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F') (step : Q → Nat),
+      (∀ (h : H), admitted h → ∃ q, living q ∧ F.realized h q ∧ ¬before h q) →
+        ∀ (h : H), admitted h → ∃ q, F.relevance living sig formation step h q ∧ ¬before h q
+@Becoming.PositiveGround.every_situated_position_has_reason : ∀ {H A Q Pos R : Type} (F : Becoming.Frame H A Q)
+  (living : Q → Prop) (access : Pos → R → Prop) (admitted : R → H → Prop) (before positive : H → Q → Prop)
+  (Reason : Pos → R → Prop),
+  Becoming.G0 F living positive →
+    Becoming.PositionedArticulation access admitted before positive Reason →
+      ∀ (r : R),
+        (∀ (h : H), admitted r h → ∃ q, living q ∧ F.realized h q ∧ ¬before h q) → ∀ (p : Pos), access p r → Reason p r
+@Becoming.PositiveGround.every_situated_position_has_reason_of_unrestricted : ∀ {H A Q Pos R F' : Type}
+  (F : Becoming.Frame H A Q) (living : Q → Prop) (access : Pos → R → Prop) (admitted : R → H → Prop)
+  (before : H → Q → Prop) {sig : Pos → Nat → F' → Prop},
+  Becoming.Unrestricted sig →
+    ∀ (formation : Q → F') (step : Q → Nat) (Reason : Pos → R → Prop),
+      Becoming.PositionedArticulation access admitted before (F.relevance living sig formation step) Reason →
+        ∀ (r : R),
+          (∀ (h : H), admitted r h → ∃ q, living q ∧ F.realized h q ∧ ¬before h q) →
+            ∀ (p : Pos), access p r → Reason p r
+@Becoming.PositiveGround.route_reason_is_least : ∀ {H Q Pos R : Type} (access : Pos → R → Prop)
+  (admitted : R → H → Prop) (before positive : H → Q → Prop),
+  Becoming.PositionedArticulation access admitted before positive
+      (Becoming.PositiveGround.RouteReason access admitted before positive) ∧
+    ∀ (Reason : Pos → R → Prop),
+      Becoming.PositionedArticulation access admitted before positive Reason →
+        ∀ (p : Pos) (r : R), Becoming.PositiveGround.RouteReason access admitted before positive p r → Reason p r
+@Becoming.PositiveGround.route_reason_depends_only_on_access : ∀ {H Q Pos R : Type} (access : Pos → R → Prop)
+  (admitted : R → H → Prop) (before positive : H → Q → Prop) (p p' : Pos),
+  (∀ (r : R), access p r ↔ access p' r) →
+    ∀ (r : R),
+      Becoming.PositiveGround.RouteReason access admitted before positive p r ↔
+        Becoming.PositiveGround.RouteReason access admitted before positive p' r
+Becoming.PositiveGround.same_response_without_fixed_form : ∀ (m : Becoming.PositiveGround.FormationModel),
+  0 < Becoming.PositiveGround.magnitude m →
+    (∀ (branch : Bool),
+        ∃ q,
+          Becoming.PositiveGround.fresh q ∧
+            (Becoming.PositiveGround.futureFrame (Becoming.PositiveGround.respond Becoming.PositiveGround.initial)
+                    m).realized
+                branch q ∧
+              ¬Becoming.PositiveGround.prior branch q) ∧
+      ¬∃ q,
+          Becoming.PositiveGround.fresh q ∧
+            ∀ (branch : Bool),
+              (Becoming.PositiveGround.futureFrame (Becoming.PositiveGround.respond Becoming.PositiveGround.initial)
+                    m).realized
+                branch q
+Becoming.PositiveGround.positive_occurrence_correspondence : ∀ (m : Becoming.PositiveGround.FormationModel)
+  (branch : Bool) (r : Becoming.PositiveGround.Occurrence),
+  r ∈ Becoming.PositiveGround.positiveDomain →
+    0 <
+        Becoming.PositiveGround.contribution (Becoming.PositiveGround.respond Becoming.PositiveGround.initial) m branch
+          r →
+      Becoming.PositiveGround.fresh (Becoming.PositiveGround.occurrenceMeaning r) ∧
+        (Becoming.PositiveGround.futureFrame (Becoming.PositiveGround.respond Becoming.PositiveGround.initial)
+                m).realized
+            branch (Becoming.PositiveGround.occurrenceMeaning r) ∧
+          ¬Becoming.PositiveGround.prior branch (Becoming.PositiveGround.occurrenceMeaning r)
+Becoming.PositiveGround.positiveDomain_nodup : Becoming.PositiveGround.positiveDomain.Nodup
+Becoming.PositiveGround.fullDomain_nodup : Becoming.PositiveGround.fullDomain.Nodup
+Becoming.PositiveGround.positive_integral_and_adverse_full_change : ∀ (m : Becoming.PositiveGround.FormationModel),
+  0 < Becoming.PositiveGround.magnitude m →
+    ∀ (branch : Bool),
+      Becoming.PositiveGround.positiveDomain.Nodup ∧
+        Becoming.PositiveGround.fullDomain.Nodup ∧
+          0 <
+              Becoming.PositiveGround.finiteIntegral Becoming.PositiveGround.positiveDomain
+                (Becoming.PositiveGround.contribution (Becoming.PositiveGround.respond Becoming.PositiveGround.initial)
+                  m branch) ∧
+            Becoming.PositiveGround.finiteIntegral Becoming.PositiveGround.fullDomain
+                  (Becoming.PositiveGround.contribution
+                    (Becoming.PositiveGround.respond Becoming.PositiveGround.initial) m branch) =
+                -1 ∧
+              Becoming.PositiveGround.finiteIntegral Becoming.PositiveGround.fullDomain
+                  (Becoming.PositiveGround.contribution Becoming.PositiveGround.initial m branch) =
+                0
+Becoming.PositiveGround.response_preserves_joint_openness : ∀ (m : Becoming.PositiveGround.FormationModel),
+  (Becoming.PreservesBundles (Becoming.PositiveGround.futureFrame Becoming.PositiveGround.initial m) (fun x => True)
+      (Becoming.PositiveGround.futureFrame (Becoming.PositiveGround.respond Becoming.PositiveGround.initial) m) fun x =>
+      True) ∧
+    (Becoming.PositiveGround.respond Becoming.PositiveGround.initial).queryOpen = true
+Becoming.PositiveGround.live_one : Becoming.PositiveGround.live Becoming.PositiveGround.FormationModel.one
+Becoming.PositiveGround.live_two : Becoming.PositiveGround.live Becoming.PositiveGround.FormationModel.two
+Becoming.PositiveGround.barren_not_live : ¬Becoming.PositiveGround.live Becoming.PositiveGround.FormationModel.barren
+Becoming.PositiveGround.live_productive : ∀ (m : Becoming.PositiveGround.FormationModel),
+  Becoming.PositiveGround.live m → 0 < Becoming.PositiveGround.magnitude m
+Becoming.PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses : Becoming.PositiveGround.live
+    Becoming.PositiveGround.FormationModel.one ∧
+  Becoming.PositiveGround.live Becoming.PositiveGround.FormationModel.two ∧
+    ¬Becoming.PositiveGround.live Becoming.PositiveGround.FormationModel.barren ∧
+      Becoming.Narrowing.learn Becoming.PositiveGround.repertoire Becoming.PositiveGround.firstEvidence =
+          [Becoming.PositiveGround.rule Becoming.PositiveGround.FormationModel.one,
+            Becoming.PositiveGround.rule Becoming.PositiveGround.FormationModel.two] ∧
+        Becoming.Narrowing.answer
+              (Becoming.Narrowing.learn Becoming.PositiveGround.repertoire Becoming.PositiveGround.firstEvidence)
+              false =
+            none ∧
+          (∀ (m : Becoming.PositiveGround.FormationModel),
+              Becoming.PositiveGround.live m →
+                ∀ (branch : Bool),
+                  0 <
+                    Becoming.PositiveGround.finiteIntegral Becoming.PositiveGround.positiveDomain
+                      (Becoming.PositiveGround.contribution
+                        (Becoming.PositiveGround.respond Becoming.PositiveGround.initial) m branch)) ∧
+            (∀ (m : Becoming.PositiveGround.FormationModel),
+                Becoming.PositiveGround.live m →
+                  ∀ (branch : Bool),
+                    Becoming.PositiveGround.finiteIntegral Becoming.PositiveGround.positiveDomain
+                        (Becoming.PositiveGround.contribution Becoming.PositiveGround.initial m branch) =
+                      0) ∧
+              Becoming.Narrowing.revise
+                    (Becoming.Narrowing.learn Becoming.PositiveGround.repertoire Becoming.PositiveGround.firstEvidence)
+                    (false, true) =
+                  [Becoming.PositiveGround.rule Becoming.PositiveGround.FormationModel.one] ∧
+                Becoming.Narrowing.revise
+                      (Becoming.Narrowing.learn Becoming.PositiveGround.repertoire
+                        Becoming.PositiveGround.firstEvidence)
+                      (false, false) =
+                    [Becoming.PositiveGround.rule Becoming.PositiveGround.FormationModel.two] ∧
+                  Becoming.Narrowing.answer
+                        (Becoming.Narrowing.revise
+                          (Becoming.Narrowing.learn Becoming.PositiveGround.repertoire
+                            Becoming.PositiveGround.firstEvidence)
+                          (true, false))
+                        true =
+                      none ∧
+                    Becoming.Narrowing.learn Becoming.PositiveGround.repertoire
+                        (Becoming.Narrowing.acquire
+                          (Becoming.PositiveGround.rule Becoming.PositiveGround.FormationModel.barren) 1 [true]) =
+                      [Becoming.PositiveGround.rule Becoming.PositiveGround.FormationModel.barren]
+Becoming.PositiveGround.wider_scope_can_require_certificate_retraction : (∀
+    (m : Becoming.PositiveGround.FormationModel),
+    Becoming.PositiveGround.live m →
+      Becoming.PositiveGround.live m ∨ m = Becoming.PositiveGround.FormationModel.barren) ∧
+  ¬∀ (m : Becoming.PositiveGround.FormationModel),
+      Becoming.PositiveGround.live m ∨ m = Becoming.PositiveGround.FormationModel.barren →
+        ∀ (branch : Bool),
+          0 <
+            Becoming.PositiveGround.finiteIntegral Becoming.PositiveGround.positiveDomain
+              (Becoming.PositiveGround.contribution (Becoming.PositiveGround.respond Becoming.PositiveGround.initial) m
+                branch)
+Becoming.PositiveGround.g0_holds : Becoming.G0 Becoming.PositiveGround.wholeFrame Becoming.PositiveGround.fresh
+  Becoming.PositiveGround.g0Relevant
+Becoming.PositiveGround.respond_formation : ∀ (h : Becoming.PositiveGround.Continuation),
+  Becoming.PositiveGround.admittedAfter Becoming.PositiveGround.Act.respond h →
+    ∃ q,
+      Becoming.PositiveGround.fresh q ∧
+        Becoming.PositiveGround.wholeFrame.realized h q ∧ ¬Becoming.PositiveGround.priorIn h q
+Becoming.PositiveGround.nonendorsing_position_with_access_has_reason : Becoming.PositiveGround.RouteReason
+  Becoming.PositiveGround.access Becoming.PositiveGround.admittedAfter Becoming.PositiveGround.priorIn
+  Becoming.PositiveGround.g0Relevant Becoming.PositiveGround.nonEndorsingArtificial Becoming.PositiveGround.Act.respond
+Becoming.PositiveGround.endorsement_without_access_gets_no_route_reason : ¬Becoming.PositiveGround.RouteReason
+    Becoming.PositiveGround.access Becoming.PositiveGround.admittedAfter Becoming.PositiveGround.priorIn
+    Becoming.PositiveGround.g0Relevant Becoming.PositiveGround.endorsingHumanWithoutAccess
+    Becoming.PositiveGround.Act.respond
+Becoming.PositiveGround.endorsement_independence_is_supplied_by_articulation : Becoming.G0
+    Becoming.PositiveGround.wholeFrame Becoming.PositiveGround.fresh Becoming.PositiveGround.g0Relevant ∧
+  (∀ (h : Becoming.PositiveGround.Continuation),
+      Becoming.PositiveGround.admittedAfter Becoming.PositiveGround.Act.respond h →
+        ∃ q,
+          Becoming.PositiveGround.fresh q ∧
+            Becoming.PositiveGround.wholeFrame.realized h q ∧ ¬Becoming.PositiveGround.priorIn h q) ∧
+    ∃ Reason,
+      (∀ (p : Becoming.PositiveGround.Position) (a : Becoming.PositiveGround.Act),
+          Becoming.PositiveGround.access p a →
+            p.endorses = true →
+              Becoming.SecuresPositiveGround Becoming.PositiveGround.admittedAfter Becoming.PositiveGround.priorIn
+                  Becoming.PositiveGround.g0Relevant a →
+                Reason p a) ∧
+        Becoming.PositiveGround.access Becoming.PositiveGround.nonEndorsingArtificial
+            Becoming.PositiveGround.Act.respond ∧
+          ¬Reason Becoming.PositiveGround.nonEndorsingArtificial Becoming.PositiveGround.Act.respond

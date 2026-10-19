@@ -1,0 +1,2 @@
+import Becoming.ContextArrivalTracesInherited
+#print axioms Becoming.ContextArrivalTracesInherited.changed_history_ends

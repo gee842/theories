@@ -1,0 +1,9 @@
+import Becoming.TreeSearchRunsInherited
+#print axioms Becoming.TreeSearchRunsInherited.spent_le_step
+#print axioms Becoming.TreeSearchRunsInherited.found_located
+#print axioms Becoming.TreeSearchRunsInherited.found_real
+#print axioms Becoming.TreeSearchRunsInherited.exhausted_dead
+#print axioms Becoming.TreeSearchRunsInherited.steps_settle
+#print axioms Becoming.TreeSearchRunsInherited.inhabited_found
+#print axioms Becoming.TreeSearchRunsInherited.acquire_charges_run
+#print axioms Becoming.TreeSearchRunsInherited.search_then_dispatch

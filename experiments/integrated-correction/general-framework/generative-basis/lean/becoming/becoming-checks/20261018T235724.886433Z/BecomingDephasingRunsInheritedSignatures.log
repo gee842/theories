@@ -1,0 +1,54 @@
+Becoming.DephasingRunsInherited.x_norm_invariant : ∀ (w : Int),
+  Becoming.Invariant (Becoming.Law.process Generative.OperativeCoherence.xGate) fun v =>
+    Generative.OperativeCoherence.norm v = w
+Becoming.DephasingRunsInherited.z_norm_invariant : ∀ (w : Int),
+  Becoming.Invariant (Becoming.Law.process Generative.OperativeCoherence.zGate) fun v =>
+    Generative.OperativeCoherence.norm v = w
+Becoming.DephasingRunsInherited.x_norm_along : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.xGate)) (n : Nat),
+  Generative.OperativeCoherence.norm (r.state n) = Generative.OperativeCoherence.norm (r.state 0)
+Becoming.DephasingRunsInherited.z_norm_along : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.zGate)) (n : Nat),
+  Generative.OperativeCoherence.norm (r.state n) = Generative.OperativeCoherence.norm (r.state 0)
+@Becoming.DephasingRunsInherited.orders_negate : ∀ {v w w' : Generative.OperativeCoherence.Vec},
+  Generative.Trace (Becoming.DephasingRuns.operations Generative.OperativeCoherence.Vec) v
+      [Generative.OperativeCoherence.xGate, Generative.OperativeCoherence.zGate] w →
+    Generative.Trace (Becoming.DephasingRuns.operations Generative.OperativeCoherence.Vec) v
+        [Generative.OperativeCoherence.zGate, Generative.OperativeCoherence.xGate] w' →
+      w = Generative.OperativeCoherence.negVec w'
+@Becoming.DephasingRunsInherited.hadamard_prepares : ∀ {v : Generative.OperativeCoherence.Vec}
+  {t : Generative.OperativeCoherence.Joint},
+  Generative.Trace (Becoming.DephasingRuns.operations Generative.OperativeCoherence.Joint)
+      (Generative.OperativeCoherence.blankControl v) [Generative.OperativeCoherence.hControl] t →
+    t = Generative.OperativeCoherence.prepare v ∧
+      Generative.OperativeCoherence.controlDensity t =
+        { zz := Generative.OperativeCoherence.norm v, zo := Generative.OperativeCoherence.norm v,
+          oz := Generative.OperativeCoherence.norm v, oo := Generative.OperativeCoherence.norm v }
+@Becoming.DephasingRunsInherited.switched_course : ∀ {v : Generative.OperativeCoherence.Vec}
+  {t : Generative.OperativeCoherence.Joint},
+  Generative.Trace (Becoming.DephasingRuns.operations Generative.OperativeCoherence.Joint)
+      (Generative.OperativeCoherence.blankControl v)
+      [Generative.OperativeCoherence.hControl,
+        Generative.OperativeCoherence.switched Generative.OperativeCoherence.xGate Generative.OperativeCoherence.zGate]
+      t →
+    Generative.OperativeCoherence.controlDensity t =
+      { zz := Generative.OperativeCoherence.norm v, zo := -Generative.OperativeCoherence.norm v,
+        oz := -Generative.OperativeCoherence.norm v, oo := Generative.OperativeCoherence.norm v }
+@Becoming.DephasingRunsInherited.recording_dephases : ∀ {v : Generative.OperativeCoherence.Vec}
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.recordBranch)),
+  r.state 0 = Generative.OperativeCoherence.withBlank v →
+    Generative.OperativeCoherence.controlDensity (r.state 1) =
+      Generative.OperativeCoherence.dephase (Generative.OperativeCoherence.controlDensity (r.state 0))
+Becoming.DephasingRunsInherited.response_settles : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.dephase)) (n : Nat),
+  Generative.OperativeCoherence.response (r.state (n + 1)) =
+    (Generative.OperativeCoherence.mass (r.state 0), Generative.OperativeCoherence.mass (r.state 0),
+      2 * Generative.OperativeCoherence.mass (r.state 0))
+Becoming.DephasingRunsInherited.plus_kept_iff : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.dephase)) (n : Nat),
+  Generative.OperativeCoherence.plusMass (r.state (n + 1)) = Generative.OperativeCoherence.plusMass (r.state 0) ↔
+    (r.state 0).zo + (r.state 0).oz = 0
+Becoming.DephasingRunsInherited.plus_minus_along : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.OperativeCoherence.dephase)) (n : Nat),
+  Generative.OperativeCoherence.plusMass (r.state n) + Generative.OperativeCoherence.minusMass (r.state n) =
+    2 * Generative.OperativeCoherence.mass (r.state 0)

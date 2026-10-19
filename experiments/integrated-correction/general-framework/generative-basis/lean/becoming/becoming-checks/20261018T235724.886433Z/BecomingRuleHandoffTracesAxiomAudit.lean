@@ -1,0 +1,22 @@
+import Becoming.RuleHandoffTraces
+#print axioms Becoming.RuleHandoffTraces.none_ne_some
+#print axioms Becoming.RuleHandoffTraces.formation_trace
+#print axioms Becoming.RuleHandoffTraces.revision_trace
+#print axioms Becoming.RuleHandoffTraces.inherited_course_trace
+#print axioms Becoming.RuleHandoffTraces.successor_revision_trace
+#print axioms Becoming.RuleHandoffTraces.low_support_infeasible
+#print axioms Becoming.RuleHandoffTraces.review_step_keeps_roster
+#print axioms Becoming.RuleHandoffTraces.entry_without_review_disabled
+#print axioms Becoming.RuleHandoffTraces.proposal_step_keeps_rule
+#print axioms Becoming.RuleHandoffTraces.handoff_step_eq
+#print axioms Becoming.RuleHandoffTraces.handoff_step_keeps
+#print axioms Becoming.RuleHandoffTraces.handoffs_trace_eq
+#print axioms Becoming.RuleHandoffTraces.handoffs_trace_keeps
+#print axioms Becoming.RuleHandoffTraces.fork_step
+#print axioms Becoming.RuleHandoffTraces.branch_revises
+#print axioms Becoming.RuleHandoffTraces.integrate_enabled_iff
+#print axioms Becoming.RuleHandoffTraces.repeated_votes_disabled
+#print axioms Becoming.RuleHandoffTraces.wait_and_objection
+#print axioms Becoming.RuleHandoffTraces.handoff_access
+#print axioms Becoming.RuleHandoffTraces.handoff_without_participation
+#print axioms Becoming.RuleHandoffTraces.integration_without_revision

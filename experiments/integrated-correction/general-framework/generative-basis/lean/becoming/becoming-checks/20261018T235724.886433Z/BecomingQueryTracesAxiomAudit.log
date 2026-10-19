@@ -1,0 +1,10 @@
+'Becoming.QueryTraces.deliver' does not depend on any axioms
+'Becoming.QueryTraces.queryProcess' does not depend on any axioms
+'Becoming.QueryTraces.lesson_foldl' does not depend on any axioms
+'Becoming.QueryTraces.lesson_trace' does not depend on any axioms
+'Becoming.QueryTraces.trace_iff' does not depend on any axioms
+'Becoming.QueryTraces.course_records_follow_sender' does not depend on any axioms
+'Becoming.QueryTraces.basic_course_records' does not depend on any axioms
+'Becoming.QueryTraces.course_record_fits_departing_operation' does not depend on any axioms
+'Becoming.QueryTraces.extended_course_records' does not depend on any axioms
+'Becoming.QueryTraces.extended_course_separates_operations' does not depend on any axioms

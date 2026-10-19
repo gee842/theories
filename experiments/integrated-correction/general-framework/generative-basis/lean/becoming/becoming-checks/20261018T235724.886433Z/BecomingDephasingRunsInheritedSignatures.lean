@@ -1,0 +1,12 @@
+import Becoming.DephasingRunsInherited
+#check @Becoming.DephasingRunsInherited.x_norm_invariant
+#check @Becoming.DephasingRunsInherited.z_norm_invariant
+#check @Becoming.DephasingRunsInherited.x_norm_along
+#check @Becoming.DephasingRunsInherited.z_norm_along
+#check @Becoming.DephasingRunsInherited.orders_negate
+#check @Becoming.DephasingRunsInherited.hadamard_prepares
+#check @Becoming.DephasingRunsInherited.switched_course
+#check @Becoming.DephasingRunsInherited.recording_dephases
+#check @Becoming.DephasingRunsInherited.response_settles
+#check @Becoming.DephasingRunsInherited.plus_kept_iff
+#check @Becoming.DephasingRunsInherited.plus_minus_along

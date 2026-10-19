@@ -1,0 +1,4 @@
+import Becoming.ListedOutcomeFrames
+#print axioms Becoming.ListedOutcomeFrames.sameBranchingTests_fix_iff_llpoForDecided
+#print axioms Becoming.ListedOutcomeFrames.llpo_of_sameBranchingTests_fix
+#print axioms Becoming.ListedOutcomeFrames.alike_iff_sameBranchingTests_of_nowhereDecided

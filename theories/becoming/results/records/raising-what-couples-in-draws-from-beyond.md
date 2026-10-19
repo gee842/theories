@@ -74,7 +74,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-17-registration-dualist-vocabulary.md](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md) | — |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 
 Aliases: `favouring what reaches beyond`, `偏向伸出`, `raising what couples in`, `抬高所耦合者`, `draws from beyond`, `取自其外`, `nothing from nothing`, `无中不生有`
 
@@ -94,6 +94,7 @@ Aliases: `favouring what reaches beyond`, `偏向伸出`, `raising what couples 
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's layers start from Becoming.World and name Becoming.Labelled; the P69 paragraph says where the readings now live; counts, receipt and connectivity follow the W1 run). The claim is unchanged.
 - 18 October 2026, F2, joins into the core (Ren: "please, do them, reduce bridges and add more theory to the spine"): declarations moved with their full Lean names. The claim is unchanged.
 - 18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the "Selection, causes and experiment" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Selection.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 
 </details>
 

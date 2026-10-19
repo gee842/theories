@@ -1,0 +1,42 @@
+@Becoming.TestCodeFrames.kernel_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.Frame S A C} {p : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K},
+  Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds F) p →
+    Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds F) p →
+      ∀ (s s' : S), p.encode s = p.encode s' ↔ Becoming.SameBranchingTests F F s s'
+@Becoming.TestCodeFrames.alike_one_code : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.Frame S A C} {p : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K},
+  Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds F) p →
+    ∀ {s s' : S}, Becoming.Alike F F s s' → p.encode s = p.encode s'
+@Becoming.TestCodeFrames.kernels_same : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4} {K' : Type u_5}
+  {F : Becoming.Frame S A C} {p : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K}
+  {q : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K'},
+  Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds F) p →
+    Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds F) p →
+      Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds F) q →
+        Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds F) q →
+          ∀ (s s' : S), p.encode s = p.encode s' ↔ q.encode s = q.encode s'
+@Becoming.TestCodeFrames.matches_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4} {K' : Type u_5}
+  {F : Becoming.Frame S A C} {p : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K}
+  {q : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K'},
+  Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds F) p →
+    Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds F) q →
+      Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds F) q →
+        ∀ (k : K) (k' : K'),
+          Generative.ExplanatoryUniqueness.Matches p q k k' ↔
+            Generative.ExplanatoryUniqueness.Used p k ∧
+              Generative.ExplanatoryUniqueness.Used q k' ∧ ∀ (φ : Becoming.BranchingTest A C), p.read k φ ↔ q.read k' φ
+@Becoming.TestCodeFrames.aligned_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4} {K' : Type u_5}
+  {F : Becoming.Frame S A C} {p : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K}
+  {q : Generative.ExplanatoryUniqueness.Presentation S (Becoming.BranchingTest A C) K'},
+  Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds F) p →
+    Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds F) q →
+      Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds F) q →
+        ∀ (B : K → K' → Prop),
+          (∀ (s : S), B (p.encode s) (q.encode s)) →
+            (∀ (k : K) (k' k'' : K'), B k k' → B k k'' → k' = k'') →
+              ∀ {k : K} {k' : K'},
+                Generative.ExplanatoryUniqueness.Used p k →
+                  (B k k' ↔
+                    Generative.ExplanatoryUniqueness.Used p k ∧
+                      Generative.ExplanatoryUniqueness.Used q k' ∧
+                        ∀ (φ : Becoming.BranchingTest A C), p.read k φ ↔ q.read k' φ)

@@ -1,0 +1,45 @@
+@Becoming.ProjectedLawTraces.commuting_iff_factors : ∀ {S : Type u_1} {Q : Type u_2} {A : Type u_3} {next : S → A → S}
+  {reduced : Q → A → Q} {p : S → Q},
+  SystemsOrganization.Commuting next reduced p ↔
+    Becoming.FactorsThrough (SystemsOrganization.deterministic next) p (SystemsOrganization.deterministic reduced)
+@Becoming.ProjectedLawTraces.fibre_iff_goAlike : ∀ {S : Type u_1} {Q : Type u_2} {A : Type u_3} {next : S → A → S}
+  {p : S → Q}, SystemsOrganization.FibreConsistent next p ↔ Becoming.GoAlike (SystemsOrganization.deterministic next) p
+@Becoming.ProjectedLawTraces.commuting_iff_traces : ∀ {S : Type u_1} {Q : Type u_2} {A : Type u_3} {next : S → A → S}
+  {reduced : Q → A → Q} {p : S → Q},
+  SystemsOrganization.Commuting next reduced p ↔
+    ∀ (s : S) (word : List A) (t : S),
+      Generative.Trace (SystemsOrganization.deterministic next) s word t →
+        Generative.Trace (SystemsOrganization.deterministic reduced) (p s) word (p t)
+@Becoming.ProjectedLawTraces.traces_compose : ∀ {S : Type u_1} {Q : Type u_2} {R : Type u_3} {A : Type u_4}
+  {next : S → A → S} {middle : Q → A → Q} {last : R → A → R} {p : S → Q} {q : Q → R},
+  (∀ (s : S) (word : List A) (t : S),
+      Generative.Trace (SystemsOrganization.deterministic next) s word t →
+        Generative.Trace (SystemsOrganization.deterministic middle) (p s) word (p t)) →
+    (∀ (s : Q) (word : List A) (t : Q),
+        Generative.Trace (SystemsOrganization.deterministic middle) s word t →
+          Generative.Trace (SystemsOrganization.deterministic last) (q s) word (q t)) →
+      ∀ (s : S) (word : List A) (t : S),
+        Generative.Trace (SystemsOrganization.deterministic next) s word t →
+          Generative.Trace (SystemsOrganization.deterministic last) (q (p s)) word (q (p t))
+@Becoming.ProjectedLawTraces.coupled_trace : ∀ {S : Type u_1} {Q : Type u_2} {R : Type u_3} {A : Type u_4}
+  {next : S → A → S} (p : S → Q) (q : S → R) (left : Q → R → A → Q) (right : Q → R → A → R),
+  (∀ (s : S) (a : A), p (next s a) = left (p s) (q s) a) →
+    (∀ (s : S) (a : A), q (next s a) = right (p s) (q s) a) →
+      ∀ {s t : S} {word : List A},
+        Generative.Trace (SystemsOrganization.deterministic next) s word t →
+          Generative.Trace (SystemsOrganization.deterministic (SystemsOrganization.coupledNext left right)) (p s, q s)
+            word (p t, q t)
+Becoming.ProjectedLawTraces.wiring_recurrence : Generative.Trace
+    (SystemsOrganization.deterministic (SystemsOrganization.routed false)) (true, false) [()] (true, false) ∧
+  ¬Generative.Trace (SystemsOrganization.deterministic (SystemsOrganization.routed true)) (true, false) [()]
+        (true, false) ∧
+    Generative.Trace (SystemsOrganization.deterministic (SystemsOrganization.routed true)) (true, false) [(), ()]
+      (true, false)
+Becoming.ProjectedLawTraces.left_not_goAlike : ¬Becoming.GoAlike
+    (SystemsOrganization.deterministic (SystemsOrganization.routed true)) fun s => s.fst
+Becoming.ProjectedLawTraces.left_carries_no_law : ¬∃ P,
+    Becoming.Determined P ∧
+      Becoming.FactorsThrough (SystemsOrganization.deterministic (SystemsOrganization.routed true)) (fun s => s.fst) P
+@Becoming.ProjectedLawTraces.assembly_draws : ∀ {t : SystemsOrganization.Device},
+  SystemsOrganization.organization.step SystemsOrganization.raw SystemsOrganization.Event.assemble t →
+    SystemsOrganization.raw.spare = true ∧ t.spare = false ∧ SystemsOrganization.raw.fuel = 1 ∧ t.fuel = 0

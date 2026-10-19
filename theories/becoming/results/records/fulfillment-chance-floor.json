@@ -170,6 +170,12 @@
       "role": "receipt",
       "sha256": "92cab4ebbfc2d528b6ef7f154d25b4396dcdd3a3f3fc5e0825551a2d8c922679",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -196,7 +202,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -263,6 +269,9 @@
     {
       "en": "19 October 2026, F3C, the port of the correction family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (ChanceFloors, Weighted; verdicts in port-c.md), bound to core receipt 20261018T234635.457051Z, and the canonical source is the core module. The periphery and bridge references stay until the sweep retires them. No new result; the claim is unchanged.",
       "zh": "2026年10月19日，F3C 将纠正族移入核心：所引声明旁加上核心陈述（ChanceFloors、Weighted），绑定到核心回执；外围与桥接引用保留到清扫退役它们。无新结果，论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
     }
   ]
 }

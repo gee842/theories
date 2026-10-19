@@ -1,0 +1,40 @@
+@Becoming.DescentRenewalRuns.no_renewal_free_tail : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (r : Becoming.Run P) {renews : S → A → S → Prop} {unrenewed : S → S → Prop},
+  WellFounded unrenewed →
+    (∀ (n : Nat), ¬renews (r.state n) (r.act n) (r.state (n + 1)) → unrenewed (r.state (n + 1)) (r.state n)) →
+      ∀ (start : Nat), ¬∀ (n : Nat), start ≤ n → ¬renews (r.state n) (r.act n) (r.state (n + 1))
+@Becoming.DescentRenewalRuns.renewal_arbitrarily_late : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (r : Becoming.Run P) {renews : S → A → S → Prop} (decision : (s : S) → (a : A) → (t : S) → Decidable (renews s a t))
+  {unrenewed : S → S → Prop},
+  WellFounded unrenewed →
+    (∀ (n : Nat), ¬renews (r.state n) (r.act n) (r.state (n + 1)) → unrenewed (r.state (n + 1)) (r.state n)) →
+      ∀ (start : Nat), ∃ n, start ≤ n ∧ renews (r.state n) (r.act n) (r.state (n + 1))
+@Becoming.DescentRenewalRuns.renewal_within_rank : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (r : Becoming.Run P) {renews : S → A → S → Prop} (decision : (s : S) → (a : A) → (t : S) → Decidable (renews s a t))
+  (rank : S → Nat),
+  (∀ (n : Nat), ¬renews (r.state n) (r.act n) (r.state (n + 1)) → rank (r.state (n + 1)) < rank (r.state n)) →
+    ∀ (start : Nat), ∃ n, start ≤ n ∧ n ≤ start + rank (r.state start) ∧ renews (r.state n) (r.act n) (r.state (n + 1))
+Becoming.DescentRenewalRuns.alternation_state : ∀ (n : Nat),
+  Becoming.DescentRenewalRuns.alternation.state n = ContinuationRenewal.alternatingState n
+Becoming.DescentRenewalRuns.alternatingRank_eq : ∀ (n : Nat),
+  ContinuationRenewal.alternatingRank n =
+    Becoming.DescentRenewalRuns.rank (Becoming.DescentRenewalRuns.alternation.state n)
+Becoming.DescentRenewalRuns.actual_steps : ∀ (n : Nat),
+  ContinuationRenewal.alternatingStep (Becoming.DescentRenewalRuns.alternation.state n)
+    (Becoming.DescentRenewalRuns.alternation.state (n + 1))
+Becoming.DescentRenewalRuns.period_two : ∀ (n : Nat),
+  Becoming.DescentRenewalRuns.alternation.state (n + 2) = Becoming.DescentRenewalRuns.alternation.state n
+Becoming.DescentRenewalRuns.restores_arbitrarily_late : ∀ (start : Nat),
+  ∃ n, start ≤ n ∧ Becoming.DescentRenewalRuns.alternation.state n = false
+Becoming.DescentRenewalRuns.restoration_raises_rank : ∀ (n : Nat),
+  Becoming.DescentRenewalRuns.alternation.state n = false →
+    Becoming.DescentRenewalRuns.rank (Becoming.DescentRenewalRuns.alternation.state n) = 0 ∧
+      Becoming.DescentRenewalRuns.rank (Becoming.DescentRenewalRuns.alternation.state (n + 1)) = 1
+Becoming.DescentRenewalRuns.unrenewed_first_step : Becoming.DescentRenewalRuns.alternation.state 0 ≠ false ∧
+  Becoming.DescentRenewalRuns.rank (Becoming.DescentRenewalRuns.alternation.state 1) <
+    Becoming.DescentRenewalRuns.rank (Becoming.DescentRenewalRuns.alternation.state 0)
+Becoming.DescentRenewalRuns.no_new_configurations : ∀ (n : Nat),
+  Becoming.DescentRenewalRuns.alternation.state n = Becoming.DescentRenewalRuns.alternation.state 0 ∨
+    Becoming.DescentRenewalRuns.alternation.state n = Becoming.DescentRenewalRuns.alternation.state 1
+Becoming.DescentRenewalRuns.every_score_bounded : ∀ (score : Bool → Nat),
+  ∃ bound, ∀ (n : Nat), score (Becoming.DescentRenewalRuns.alternation.state n) ≤ bound

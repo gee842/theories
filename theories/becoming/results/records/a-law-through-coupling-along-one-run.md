@@ -62,7 +62,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Input: What the criterion up to a relation characterizes.
   - Preserved conditions: None beyond the process and the relation. [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean)
 - **formal-reuse**: [testing-within-registration](testing-within-registration.md). Reuses Web.AlikeThrough and thresholdOnly: coupling at a configuration is Web.AlikeThrough on the runs read through fixed conditions.
-  - Output: What registers alike in a formation at a step, under two level histories.
+  - Output: What is alike through a formation's couplings at a step, under two level histories.
   - Input: The relation the criterion is taken through.
   - Preserved conditions: Fixed conditions. [Testing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
 - **formal-reuse**: [becoming-dependence-dynamics](becoming-dependence-dynamics.md). Reuses Conditions.dependence and Dependence.along, which read a run through fixed conditions as a Web.
@@ -73,7 +73,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Output: Levels, requirements and needs read off configurations.
   - Input: The conditions coupling is stated on.
   - Preserved conditions: None. [Renewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
-- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below a threshold is not registered; here a level outside what a formation couples into decides its next coupling along a run.
+- related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below a threshold does not couple in; here a level outside what a formation couples into decides its next coupling along a run.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -93,6 +93,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-17-registration-dualist-vocabulary.md](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 
 Aliases: `law through coupling`, `经耦合的规律`, `criterion up to a relation`, `到关系为止的判据`, `law through registration`, `经识的规律`, `uncoupled level decides`, `未耦合的水平决定`
 
@@ -100,6 +101,7 @@ Aliases: `law through coupling`, `经耦合的规律`, `criterion up to a relati
 ### History
 
 - 18 October 2026: added (G4), on Ren's "Yes: claim G4 on the board — the criterion along one run with Becoming.Testing's registration as the projection — and prove it in scratch while the queue runs."; study section 185.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: LawAlongRun.lean, Likeness.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 
 </details>
 

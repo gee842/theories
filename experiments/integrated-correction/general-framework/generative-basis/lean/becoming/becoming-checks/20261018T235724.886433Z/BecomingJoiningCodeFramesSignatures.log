@@ -1,0 +1,65 @@
+@Becoming.JoiningCodeFrames.descends_iff : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryUniqueness.Presentation F (Becoming.BranchingTest (Becoming.Joining.Move F) Empty) K},
+  Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds J.frame) p →
+    Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds J.frame) p →
+      ((∃ L, Generative.ExplanatoryUniversality.RelExact p J L) ↔
+        ∀ (a a' b b' c c' : F),
+          Becoming.SameBranchingTests J.frame J.frame a a' →
+            Becoming.SameBranchingTests J.frame J.frame b b' →
+              Becoming.SameBranchingTests J.frame J.frame c c' → (J a b c ↔ J a' b' c'))
+@Becoming.JoiningCodeFrames.lift_exact_iff : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryUniqueness.Presentation F (Becoming.BranchingTest (Becoming.Joining.Move F) Empty) K},
+  Generative.ExplanatoryUniqueness.Exact (Becoming.BranchingTest.Holds J.frame) p →
+    Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds J.frame) p →
+      (Generative.ExplanatoryUniversality.RelExact p J (Generative.ExplanatoryUniversality.Lift p J) ↔
+        ∀ (a a' b b' c c' : F),
+          Becoming.SameBranchingTests J.frame J.frame a a' →
+            Becoming.SameBranchingTests J.frame J.frame b b' →
+              Becoming.SameBranchingTests J.frame J.frame c c' → (J a b c ↔ J a' b' c'))
+@Becoming.JoiningCodeFrames.separating_blocks : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryUniqueness.Presentation F (Becoming.BranchingTest (Becoming.Joining.Move F) Empty) K},
+  Generative.ExplanatoryUniqueness.Reduced (Becoming.BranchingTest.Holds J.frame) p →
+    ∀ {a a' b b' c c' : F},
+      Becoming.SameBranchingTests J.frame J.frame a a' →
+        Becoming.SameBranchingTests J.frame J.frame b b' →
+          Becoming.SameBranchingTests J.frame J.frame c c' →
+            J a b c → ¬J a' b' c' → ¬∃ L, Generative.ExplanatoryUniversality.RelExact p J L
+@Becoming.JoiningCodeFrames.readings_agree : ∀ {S : Type u_1} {A : Type u_2} {Q K : Type u_3}
+  {P : Generative.Process S A}
+  {p : Generative.ExplanatoryUniqueness.Presentation (Generative.ExplanatoryLocalUnits.Admitted P) Q K}
+  {L L' : K → K → K → Prop},
+  Generative.ExplanatoryUniversality.RelExact p (Generative.ExplanatoryLocalUnits.traceJoin P) L →
+    Generative.ExplanatoryUniversality.RelExact p (Generative.ExplanatoryLocalUnits.traceJoin P) L' →
+      ∀ {x y z : K},
+        Generative.ExplanatoryUniqueness.Used p x →
+          Generative.ExplanatoryUniqueness.Used p y → Generative.ExplanatoryUniqueness.Used p z → (L x y z ↔ L' x y z)
+@Becoming.JoiningCodeFrames.possible_iff_course : ∀ {F : Type u_1} {J : Becoming.Joining F}
+  {c : Generative.ExplanatoryJoiningContexts.Context F} {x : F},
+  Generative.ExplanatoryJoiningContexts.Possible J c x ↔
+    ∃ t, Generative.Trace J.frame.P x (Becoming.Joining.courseOf c) t
+@Becoming.JoiningCodeFrames.courseExact_iff : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryContextualStructure.Account F K},
+  Becoming.JoiningCodeFrames.CourseExact J p ↔
+    Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryContextualStructure.target J) p
+@Becoming.JoiningCodeFrames.courseReduced_iff : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryContextualStructure.Account F K},
+  Becoming.JoiningCodeFrames.CourseReduced J p ↔
+    Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryContextualStructure.target J) p
+@Becoming.JoiningCodeFrames.canonical_course_exact : ∀ {F : Type u_1} (J : Becoming.Joining F),
+  Becoming.JoiningCodeFrames.CourseExact J (Generative.ExplanatoryContextualStructure.canonical J)
+@Becoming.JoiningCodeFrames.codes_apart : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryContextualStructure.Account F K},
+  Becoming.JoiningCodeFrames.CourseExact J p →
+    ∀ {x y : F} {c : Generative.ExplanatoryJoiningContexts.Context F},
+      (∃ t, Generative.Trace J.frame.P x (Becoming.Joining.courseOf c) t) →
+        (¬∃ t, Generative.Trace J.frame.P y (Becoming.Joining.courseOf c) t) → p.encode x ≠ p.encode y
+@Becoming.JoiningCodeFrames.joinable_iff : ∀ {F : Type u_1} {K : Type u_2} {J : Becoming.Joining F}
+  {p : Generative.ExplanatoryContextualStructure.Account F K},
+  Becoming.JoiningCodeFrames.CourseExact J p →
+    ∀ (x y : F),
+      (∃ k, Generative.ExplanatoryContextualStructure.Operation J p (p.encode x) (p.encode y) k) ↔
+        ∃ z, Generative.Trace J.frame.P x [Becoming.Joining.Move.withRight y] z
+@Becoming.JoiningCodeFrames.sameTests_symm : ∀ {F : Type u_1} {J : Becoming.Joining F} {x y : F},
+  Becoming.SameTests J.frame J.frame x y → Becoming.SameTests J.frame J.frame y x
+@Becoming.JoiningCodeFrames.identity_roles_open : ∀ {F : Type u_1} (J : Becoming.Joining F),
+  ∃ keeps, Becoming.OpenMap J.roleFrame J.roleFrame (Becoming.Joining.placeMap keeps)

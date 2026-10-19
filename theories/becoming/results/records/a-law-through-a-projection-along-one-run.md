@@ -89,6 +89,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-17-registration-dualist-vocabulary.md](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 
 Aliases: `criterion along one run`, `沿一个运行的判据`, `law through a projection`, `经投影的规律`, `exact projection`, `精确投影`, `matching steps`, `匹配步`
 
@@ -103,6 +104,7 @@ Aliases: `criterion along one run`, `沿一个运行的判据`, `law through a p
 - 18 October 2026, F2, joins into the core (Ren: "please, do them, reduce bridges and add more theory to the spine"): declarations moved with their full Lean names. The claim is unchanged.
 - 18 October 2026, G4 (Becoming.LawThroughCoupling): the open item "the instance with Becoming.Testing's registration as the projection is not stated" is removed from does_not_show and next_delta, since a-law-through-coupling-along-one-run states it, up to a relation because coupling is not a projection; that record is added as related. This record's claims are unchanged.
 - 18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the "Selection, causes and experiment" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Experiment.lean, LawAlongRun.lean, Mechanism.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 
 </details>
 

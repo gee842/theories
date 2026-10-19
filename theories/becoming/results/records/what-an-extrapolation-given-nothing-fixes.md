@@ -65,7 +65,7 @@ The chapter's open programme (section 8.2, Learning) named "a learner given noth
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 
 Aliases: `what an extrapolation given nothing fixes`, `不被给予任何东西的外推所确定者`, `unrolling`, `展开`, `learnable exactly where a reading of the future`, `可学恰当是未来的读法`, `given nothing, not every learnable feature`, `不被给予任何东西，并非每个可学特征`
 
@@ -76,7 +76,7 @@ Aliases: `what an extrapolation given nothing fixes`, `不被给予任何东西�
 - 18 October 2026: the reading decided by the AI on Ren's words of 18 October ("alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable"), DELEGATED-CHOICES D40; the chapter labels it "AI reading, D40". The claim is unchanged.
 - 18 October 2026, L2 (Becoming.Labels): learning from finitely many values of the feature is stated in what-finitely-many-labels-fix, and the enough of seeking under undetermined laws landed as S1 (the-boundary-of-enough-under-undetermined-laws), so one item of does_not_show and the next step were narrowed. Before: does_not_show "Learning a feature from finitely many of its values; undetermined processes; rates beyond the stated bound."; next step "Learning from finitely many values of the feature (part of a reading given); the enough of seeking under undetermined laws (board item S1); an independent review.". The claim is unchanged.
 - 18 October 2026, L2 and C1 (Becoming.Labels, Becoming.Exclusion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change since bd5252f96 (the section 8.2 row "Learning" that cites it now names Becoming.Labels (a table found rather than given, and whether fewer names suffice, stay open), and the D40 reading extended with L2 states that the reading is a finite object). The claim is unchanged.
-- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md, Unrolling.lean. Rebound to receipt 20261018T171240.509140Z after reading the change. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md, Unrolling.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 
 </details>
 

@@ -1,0 +1,207 @@
+@Becoming.QueryTracesInherited.step_delivers : ∀ {x y : Generative.CompositionalTransmission.Exchange}
+  {e : Generative.CompositionalAcquisition.Expr},
+  Becoming.QueryTraces.queryProcess.step x e y →
+    x.receiver.blocked = false →
+      1 ≤ x.receiver.support →
+        ∀ {out : List Bool} {remaining : Nat},
+          Generative.CompositionalFormation.respond x.sender e = some (out, remaining) →
+            y.receiver.samples = x.receiver.samples ++ [(e, out)] ∧ y.sender.support = remaining
+@Becoming.QueryTracesInherited.step_adds_nothing_without_response : ∀
+  {x y : Generative.CompositionalTransmission.Exchange} {e : Generative.CompositionalAcquisition.Expr},
+  Becoming.QueryTraces.queryProcess.step x e y →
+    Generative.CompositionalFormation.respond x.sender e = none → y.receiver.samples = x.receiver.samples
+@Becoming.QueryTracesInherited.course_joint_support : ∀ {x y : Generative.CompositionalTransmission.Exchange}
+  {es : List Generative.CompositionalAcquisition.Expr},
+  Generative.Trace Becoming.QueryTraces.queryProcess x es y →
+    y.sender.support + y.sender.spent + y.receiver.support + y.receiver.spent =
+      x.sender.support + x.sender.spent + x.receiver.support + x.receiver.spent
+@Becoming.QueryTracesInherited.course_without_composite : ∀ {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual) 4,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] y →
+    Generative.CompositionalAcquisition.interpretationFromRecords y.receiver.samples = none
+@Becoming.QueryTracesInherited.course_reversed_composite : ∀ {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source { first := false, second := true, route := [true, false] } 7,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.basic y →
+    Generative.CompositionalAcquisition.interpretationFromRecords y.receiver.samples =
+      some Generative.CompositionalAcquisition.switched
+@Becoming.QueryTracesInherited.learned_selective_funded : ∀ {y : Generative.CompositionalTransmission.Exchange}
+  {z : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      { sender := Generative.CompositionalTransmission.source Generative.CompositionalTransmission.selective 70,
+        receiver := Generative.CompositionalTransmission.blank 100 80 }
+      Generative.CompositionalTransmission.basic y →
+    Generative.Trace Becoming.FormationTracesInherited.formationProcess y.receiver
+        [Becoming.FormationTracesInherited.FormationMove.develop] z →
+      z.installed = some Generative.CompositionalTransmission.selective
+@Becoming.QueryTracesInherited.learned_selective_loses_distinction : ∀
+  {y : Generative.CompositionalTransmission.Exchange} {z : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      { sender := Generative.CompositionalTransmission.source Generative.CompositionalTransmission.selective 7,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.basic y →
+    Generative.Trace Becoming.FormationTracesInherited.formationProcess y.receiver
+        [Becoming.FormationTracesInherited.FormationMove.develop] z →
+      z.installed = some Generative.CompositionalTransmission.selective ∧
+        Generative.CompositionalFormation.operate Generative.CompositionalTransmission.selective
+              Generative.CompositionalTransmission.joint00 =
+            Generative.CompositionalFormation.operate Generative.CompositionalTransmission.selective
+              Generative.CompositionalAcquisition.orderProbe ∧
+          Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+              Generative.CompositionalTransmission.joint00 ≠
+            Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+              Generative.CompositionalAcquisition.orderProbe
+@Becoming.QueryTracesInherited.learned_depends_on_course : ∀ {y y' : Generative.CompositionalTransmission.Exchange}
+  {z z' : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11,
+        receiver := Generative.CompositionalTransmission.blank 25 8 }
+      Generative.CompositionalTransmission.basic y →
+    Generative.Trace Becoming.FormationTracesInherited.formationProcess y.receiver
+        [Becoming.FormationTracesInherited.FormationMove.develop] z →
+      Generative.Trace Becoming.QueryTraces.queryProcess
+          {
+            sender :=
+              Generative.CompositionalTransmission.source
+                (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11,
+            receiver := Generative.CompositionalTransmission.blank 25 8 }
+          Generative.CompositionalTransmission.extended y' →
+        Generative.Trace Becoming.FormationTracesInherited.formationProcess y'.receiver
+            [Becoming.FormationTracesInherited.FormationMove.develop] z' →
+          z.installed = some Generative.CompositionalFormation.duplicated ∧
+            z'.installed =
+              some (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed)
+@Becoming.QueryTracesInherited.learned_blocked_short : ∀ {y : Generative.CompositionalTransmission.Exchange}
+  {z : Generative.CompositionalFormation.Frame},
+  Generative.Trace Becoming.QueryTraces.queryProcess
+      {
+        sender :=
+          Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11,
+        receiver := Generative.CompositionalTransmission.blank 5 8 }
+      Generative.CompositionalTransmission.extended y →
+    Generative.Trace Becoming.FormationTracesInherited.formationProcess y.receiver
+        [Becoming.FormationTracesInherited.FormationMove.develop] z →
+      z.installed = none
+Becoming.QueryTracesInherited.succession_step_keeps : ∀
+  (r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor))
+  {p : Generative.CompositionalFormation.Program} (n : Nat),
+  (r.state n).installed = some p →
+    p.route ∈ Generative.CompositionalFormation.generatedRoutes 2 →
+      p.first ≠ p.second →
+        7 ≤ (r.state n).support → (r.state (n + 1)).installed = some p ∧ 7 ≤ (r.state (n + 1)).support
+Becoming.QueryTracesInherited.orbit_cohort : ∀ (p : Generative.CompositionalFormation.Program) (n : Nat),
+  Becoming.Law.orbit Generative.CompositionalTransmission.successor (Generative.CompositionalTransmission.source p 7)
+      n =
+    Generative.CompositionalTransmission.cohort p n
+Becoming.QueryTracesInherited.orbit_limited : ∀ (n : Nat),
+  Becoming.Law.orbit Generative.CompositionalTransmission.successor
+      (Generative.CompositionalTransmission.source
+        (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 7)
+      n =
+    Generative.CompositionalTransmission.limitedCohort n
+@Becoming.QueryTracesInherited.run_cohort : ∀ {p : Generative.CompositionalFormation.Program}
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)},
+  r.state 0 = Generative.CompositionalTransmission.source p 7 →
+    ∀ (n : Nat), r.state n = Generative.CompositionalTransmission.cohort p n
+@Becoming.QueryTracesInherited.succession_keeps_correspondence : ∀ {c : Generative.CompositionalAcquisition.Code}
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)},
+  r.state 0 = Generative.CompositionalTransmission.source (Generative.CompositionalFormation.programFor c) 7 →
+    c.first ≠ c.second →
+      ∀ (n : Nat) (e : Generative.CompositionalAcquisition.Expr),
+        ∃ p,
+          (r.state n).installed = some p ∧
+            Generative.CompositionalFormation.operate p e = Generative.CompositionalAcquisition.eval c e
+@Becoming.QueryTracesInherited.succession_keeps_lost_distinction : ∀
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)},
+  r.state 0 = Generative.CompositionalTransmission.source Generative.CompositionalTransmission.selective 7 →
+    ∀ (n : Nat),
+      (r.state n).installed = some Generative.CompositionalTransmission.selective ∧
+        Generative.CompositionalFormation.operate Generative.CompositionalTransmission.selective
+              Generative.CompositionalTransmission.joint00 =
+            Generative.CompositionalFormation.operate Generative.CompositionalTransmission.selective
+              Generative.CompositionalAcquisition.orderProbe ∧
+          Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+              Generative.CompositionalTransmission.joint00 ≠
+            Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+              Generative.CompositionalAcquisition.orderProbe
+@Becoming.QueryTracesInherited.succession_stabilizes_change : ∀
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)},
+  r.state 0 =
+      Generative.CompositionalTransmission.source
+        (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 7 →
+    ∀ (n : Nat),
+      (r.state (n + 1)).installed = some Generative.CompositionalFormation.duplicated ∧
+        Generative.CompositionalFormation.operate Generative.CompositionalFormation.duplicated
+            Generative.CompositionalAcquisition.novel ≠
+          Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+            Generative.CompositionalAcquisition.novel
+@Becoming.QueryTracesInherited.formed_succession_teaches : ∀
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 25 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] (r.state 0) →
+    (r.state 0).installed =
+        some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual) ∧
+      (r.state 1).installed =
+        some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual)
+@Becoming.QueryTracesInherited.formed_succession_second : ∀
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 25 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] (r.state 0) →
+    (r.state 2).installed =
+      some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual)
+@Becoming.QueryTracesInherited.budget_succession_blocked : ∀
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)}
+  {y : Generative.CompositionalTransmission.Exchange},
+  Generative.Trace Becoming.FormationTracesInherited.formationProcess (Generative.CompositionalFormation.prepared 18 4)
+      [Becoming.FormationTracesInherited.FormationMove.develop] (r.state 0) →
+    Generative.Trace Becoming.QueryTraces.queryProcess
+        { sender := r.state 0, receiver := Generative.CompositionalTransmission.blank 25 8 }
+        Generative.CompositionalTransmission.basic y →
+      y.receiver.samples =
+          [(Generative.CompositionalAcquisition.p0, [false]), (Generative.CompositionalAcquisition.p1, [true])] ∧
+        (r.state 1).installed = none ∧ (r.state 1).blocked = true
+@Becoming.QueryTracesInherited.peer_repair : ∀
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)}
+  {y : Generative.CompositionalTransmission.Exchange} {z : Generative.CompositionalFormation.Frame},
+  r.state 0 =
+      Generative.CompositionalTransmission.source
+        (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11 →
+    Generative.Trace Becoming.QueryTraces.queryProcess
+        {
+          sender :=
+            Generative.CompositionalTransmission.source
+              (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 4,
+          receiver := r.state 1 }
+        [Generative.CompositionalAcquisition.novel] y →
+      Generative.Trace Becoming.FormationTracesInherited.formationProcess y.receiver
+          [Becoming.FormationTracesInherited.FormationMove.reconsider] z →
+        (r.state 1).installed = some Generative.CompositionalFormation.duplicated ∧
+          z.installed =
+              some (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) ∧
+            Generative.CompositionalFormation.respond z Generative.CompositionalFormation.further =
+              some ([false, false, false], 5)
+@Becoming.QueryTracesInherited.peer_keeps_error : ∀
+  {r : Becoming.Run (Becoming.Law.process Generative.CompositionalTransmission.successor)}
+  {y : Generative.CompositionalTransmission.Exchange} {z : Generative.CompositionalFormation.Frame},
+  r.state 0 =
+      Generative.CompositionalTransmission.source
+        (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11 →
+    Generative.Trace Becoming.QueryTraces.queryProcess
+        { sender := Generative.CompositionalTransmission.source Generative.CompositionalFormation.duplicated 5,
+          receiver := r.state 1 }
+        [Generative.CompositionalAcquisition.novel] y →
+      Generative.Trace Becoming.FormationTracesInherited.formationProcess y.receiver
+          [Becoming.FormationTracesInherited.FormationMove.reconsider] z →
+        z.installed = some Generative.CompositionalFormation.duplicated

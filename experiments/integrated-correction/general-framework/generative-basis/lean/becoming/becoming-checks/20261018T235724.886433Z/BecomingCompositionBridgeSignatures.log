@@ -1,0 +1,131 @@
+@Becoming.mem_map_image : ∀ {α : Type u_1} {β : Type u_2} (g : α → β) {a : α} {l : List α}, a ∈ l → g a ∈ List.map g l
+@Becoming.mem_map_preimage : ∀ {α : Type u_1} {β : Type u_2} {g : α → β} {b : β} {l : List α},
+  b ∈ List.map g l → ∃ a, a ∈ l ∧ g a = b
+@Becoming.Compact.translate : ∀ {X : Type u_1} {Q : Type u_2} {Q' : Type u_3} {domain : X → Prop} {truth : X → Q → Prop}
+  {truth' : X → Q' → Prop} (into : Q' → Q) (back : Q → Q'),
+  (∀ (q : Q), into (back q) = q) →
+    (∀ (q' : Q'), back (into q') = q') →
+      (∀ (x : X) (q' : Q'), truth' x q' ↔ truth x (into q')) →
+        Becoming.Compact domain truth → Becoming.Compact domain truth'
+@Becoming.jointBisimulation_iff : ∀ {S : Type u_1} {T : Type u_4} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O} {n : Generative.ExplanatoryJointness.Model T A O}
+  {R : S → T → Prop},
+  Generative.ExplanatoryJointness.Bisimulation m n R ↔
+    Becoming.JointBisimulation (Becoming.JointFrame.ofModel m) (Becoming.JointFrame.ofModel n) R
+@Becoming.JointTest.toTest_ofTest : ∀ {A : Type u_1} {O : Type u_2} (f : Generative.ExplanatoryJointness.Test A O),
+  (Becoming.JointTest.ofTest f).toTest = f
+@Becoming.JointTest.ofTest_toTest : ∀ {A : Type u_1} {O : Type u_2} (φ : Becoming.JointTest A O),
+  Becoming.JointTest.ofTest φ.toTest = φ
+@Becoming.JointTest.holds_toTest : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O} (φ : Becoming.JointTest A O) (s : S),
+  Becoming.JointTest.Holds (Becoming.JointFrame.ofModel m) s φ ↔ Generative.ExplanatoryJointness.Holds m s φ.toTest
+@Becoming.sameJointTests_iff_same : ∀ {S : Type u_1} {T : Type u_4} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O} {n : Generative.ExplanatoryJointness.Model T A O} {s : S} {t : T},
+  Becoming.SameJointTests (Becoming.JointFrame.ofModel m) (Becoming.JointFrame.ofModel n) s t ↔
+    Generative.ExplanatoryJointness.Same m n s t
+@Becoming.jointSeparated_iff : ∀ {T : Type u_3} {A : Type u_1} {O : Type u_2}
+  {n : Generative.ExplanatoryJointness.Model T A O},
+  Generative.ExplanatoryJointness.Separated n ↔
+    ∀ (t t' : T), Becoming.SameJointTests (Becoming.JointFrame.ofModel n) (Becoming.JointFrame.ofModel n) t t' → t = t'
+@Becoming.same_target_unique_by_core : ∀ {S : Type u_1} {T : Type u_4} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O} {n : Generative.ExplanatoryJointness.Model T A O},
+  Generative.ExplanatoryJointness.Separated n →
+    ∀ {s : S} {t t' : T},
+      Generative.ExplanatoryJointness.Same m n s t → Generative.ExplanatoryJointness.Same m n s t' → t = t'
+@Becoming.testsStable_ofModel : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O},
+  (∀ (s : S) (f : Generative.ExplanatoryJointness.Test A O),
+      ¬¬Generative.ExplanatoryJointness.Holds m s f → Generative.ExplanatoryJointness.Holds m s f) →
+    (Becoming.JointFrame.ofModel m).TestsStable
+@Becoming.stepCompact_ofModel : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O},
+  Generative.ExplanatoryJointness.StepCompact m → (Becoming.JointFrame.ofModel m).StepCompact
+@Becoming.jointCompact_ofModel : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O},
+  Generative.ExplanatoryJointness.JointCompact m → (Becoming.JointFrame.ofModel m).JointCompact
+@Becoming.compact_same_iff_bisimilar_of_stable : ∀ {S : Type u_1} {T : Type u_4} {A : Type u_2} {O : Type u_3}
+  {m : Generative.ExplanatoryJointness.Model S A O} {n : Generative.ExplanatoryJointness.Model T A O},
+  Generative.ExplanatoryJointness.StepCompact m →
+    Generative.ExplanatoryJointness.StepCompact n →
+      Generative.ExplanatoryJointness.JointCompact m →
+        Generative.ExplanatoryJointness.JointCompact n →
+          (∀ (s : S) (f : Generative.ExplanatoryJointness.Test A O),
+              ¬¬Generative.ExplanatoryJointness.Holds m s f → Generative.ExplanatoryJointness.Holds m s f) →
+            (∀ (t : T) (f : Generative.ExplanatoryJointness.Test A O),
+                ¬¬Generative.ExplanatoryJointness.Holds n t f → Generative.ExplanatoryJointness.Holds n t f) →
+              ∀ (s : S) (t : T),
+                Generative.ExplanatoryJointness.Same m n s t ↔
+                  ∃ R, Generative.ExplanatoryJointness.Bisimulation m n R ∧ R s t
+@Becoming.kernel_of_exact_reduced : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3} {C : Type u_4}
+  {m : Generative.ExplanatoryJointness.Model S A O}
+  {p : Generative.ExplanatoryUniqueness.Presentation S (Generative.ExplanatoryJointness.Test A O) C},
+  Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJointness.Holds m) p →
+    Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJointness.Holds m) p →
+      ∀ (s t : S),
+        p.encode s = p.encode t ↔
+          Becoming.SameJointTests (Becoming.JointFrame.ofModel m) (Becoming.JointFrame.ofModel m) s t
+@Becoming.matchesParts_of_exact_reduced : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3} {C : Type u_4}
+  {m : Generative.ExplanatoryJointness.Model S A O}
+  {p : Generative.ExplanatoryUniqueness.Presentation S (Generative.ExplanatoryJointness.Test A O) C},
+  Generative.ExplanatoryJointness.JointCompact m →
+    (∀ (s : S) (f : Generative.ExplanatoryJointness.Test A O),
+        ¬¬Generative.ExplanatoryJointness.Holds m s f → Generative.ExplanatoryJointness.Holds m s f) →
+      Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJointness.Holds m) p →
+        Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJointness.Holds m) p →
+          Becoming.MatchesParts m.joint m.joint fun s t => p.encode s = p.encode t
+@Becoming.code_joint_lifts_from_whole_of_stable : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3} {C : Type u_4}
+  {m : Generative.ExplanatoryJointness.Model S A O}
+  {p : Generative.ExplanatoryUniqueness.Presentation S (Generative.ExplanatoryJointness.Test A O) C},
+  Generative.ExplanatoryJointness.JointCompact m →
+    (∀ (s : S) (f : Generative.ExplanatoryJointness.Test A O),
+        ¬¬Generative.ExplanatoryJointness.Holds m s f → Generative.ExplanatoryJointness.Holds m s f) →
+      Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJointness.Holds m) p →
+        Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJointness.Holds m) p →
+          ∀ (s : S) (l r : C),
+            Generative.ExplanatoryJointness.codeJoint m p (p.encode s) l r ↔
+              ∃ x y, m.joint s x y ∧ p.encode x = l ∧ p.encode y = r
+@Becoming.JointPlan.realizes_ofPlan : ∀ {X : Type u_1} {Q : Type u_2} {J : X → X → X → Prop} {leaf : X → Q → Prop}
+  (plan : Generative.ExplanatoryJointness.Plan Q) (s : X),
+  Becoming.JointPlan.Realizes J leaf s (Becoming.JointPlan.ofPlan plan) ↔
+    Generative.ExplanatoryJointness.Realizes J leaf s plan
+@Becoming.joint_plan_lifts_of_stable : ∀ {S : Type u_1} {A : Type u_2} {O : Type u_3} {C : Type u_4} {Q : Type u_5}
+  {m : Generative.ExplanatoryJointness.Model S A O}
+  {p : Generative.ExplanatoryUniqueness.Presentation S (Generative.ExplanatoryJointness.Test A O) C},
+  Generative.ExplanatoryJointness.JointCompact m →
+    (∀ (s : S) (f : Generative.ExplanatoryJointness.Test A O),
+        ¬¬Generative.ExplanatoryJointness.Holds m s f → Generative.ExplanatoryJointness.Holds m s f) →
+      Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJointness.Holds m) p →
+        Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJointness.Holds m) p →
+          ∀ (leaf : S → Q → Prop) (read : C → Q → Prop),
+            (∀ (s : S) (q : Q), read (p.encode s) q ↔ leaf s q) →
+              ∀ (plan : Generative.ExplanatoryJointness.Plan Q) (s : S),
+                Generative.ExplanatoryJointness.Realizes (Generative.ExplanatoryJointness.codeJoint m p) read
+                    (p.encode s) plan ↔
+                  Generative.ExplanatoryJointness.Realizes m.joint leaf s plan
+@Becoming.JointPlan.draws_ofPlan : ∀ {R : Type u_1} (p : Generative.ExplanatoryJointness.Plan (List R)),
+  (Becoming.JointPlan.ofPlan p).draws = Generative.ExplanatoryFootprints.Requests p
+@Becoming.realized_requests_supported_by_core : ∀ {S : Type u_1} {R : Type u_2} {F : S → R → Prop}
+  {J : S → S → S → Prop},
+  Generative.ExplanatoryFootprints.Within F J →
+    Generative.ExplanatoryFootprints.Separate F J →
+      ∀ (p : Generative.ExplanatoryJointness.Plan (List R)) (s : S),
+        Generative.ExplanatoryJointness.Realizes J (Generative.ExplanatoryFootprints.Supported F) s p →
+          Generative.ExplanatoryFootprints.Supported F s (Generative.ExplanatoryFootprints.Requests p)
+@Becoming.code_plan_has_global_support_of_stable : ∀ {S : Type u_1} {R : Type u_2} {A : Type u_3} {O : Type u_4}
+  {C : Type u_5} {m : Generative.ExplanatoryJointness.Model S A O}
+  {account : Generative.ExplanatoryUniqueness.Presentation S (Generative.ExplanatoryJointness.Test A O) C},
+  Generative.ExplanatoryJointness.JointCompact m →
+    (∀ (s : S) (f : Generative.ExplanatoryJointness.Test A O),
+        ¬¬Generative.ExplanatoryJointness.Holds m s f → Generative.ExplanatoryJointness.Holds m s f) →
+      Generative.ExplanatoryUniqueness.Exact (Generative.ExplanatoryJointness.Holds m) account →
+        Generative.ExplanatoryUniqueness.Reduced (Generative.ExplanatoryJointness.Holds m) account →
+          ∀ (F : S → R → Prop),
+            Generative.ExplanatoryFootprints.Within F m.joint →
+              Generative.ExplanatoryFootprints.Separate F m.joint →
+                ∀ (read : C → List R → Prop),
+                  (∀ (s : S) (xs : List R),
+                      read (account.encode s) xs ↔ Generative.ExplanatoryFootprints.Supported F s xs) →
+                    ∀ (p : Generative.ExplanatoryJointness.Plan (List R)) (s : S),
+                      Generative.ExplanatoryJointness.Realizes (Generative.ExplanatoryJointness.codeJoint m account)
+                          read (account.encode s) p →
+                        Generative.ExplanatoryFootprints.Supported F s (Generative.ExplanatoryFootprints.Requests p)

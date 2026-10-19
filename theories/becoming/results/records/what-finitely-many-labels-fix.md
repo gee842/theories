@@ -65,7 +65,7 @@ The chapter's open programme (section 8.2, Learning) named "learning a target fr
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T171240.509140Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 
 Aliases: `what finitely many labels fix`, `有限多个标签所确定者`, `table of labelled names`, `带标签名字之表`, `learnable from finitely many labels`, `从有限多个标签可学`, `labels along the course`, `沿进程的标签`
 
@@ -73,7 +73,7 @@ Aliases: `what finitely many labels fix`, `有限多个标签所确定者`, `tab
 ### History
 
 - 18 October 2026: added (L2), on Ren's "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable", the AI choosing the item; study section 182; the reading is D40 of DELEGATED-CHOICES, extended with L2.
-- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Labels.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T171240.509140Z after reading the change. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Labels.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 
 </details>
 

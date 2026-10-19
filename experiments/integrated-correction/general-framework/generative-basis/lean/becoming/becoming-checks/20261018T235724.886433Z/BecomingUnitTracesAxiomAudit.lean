@@ -1,0 +1,24 @@
+import Becoming.UnitTraces
+#print axioms Becoming.UnitTraces.merge_assoc
+#print axioms Becoming.UnitTraces.associative
+#print axioms Becoming.UnitTraces.units_unique
+#print axioms Becoming.UnitTraces.boundaries_unique
+#print axioms Becoming.UnitTraces.left_unit_of_joined
+#print axioms Becoming.UnitTraces.right_unit_of_joined
+#print axioms Becoming.UnitTraces.common_unit_joins
+#print axioms Becoming.UnitTraces.left_unit_transport
+#print axioms Becoming.UnitTraces.right_unit_transport
+#print axioms Becoming.UnitTraces.stepsWord
+#print axioms Becoming.UnitTraces.steps
+#print axioms Becoming.UnitTraces.trace_cases
+#print axioms Becoming.UnitTraces.idleAt
+#print axioms Becoming.UnitTraces.stepTrace
+#print axioms Becoming.UnitTraces.oneStepImage
+#print axioms Becoming.UnitTraces.oneStep_reads_mp
+#print axioms Becoming.UnitTraces.oneStep_reads_mpr
+#print axioms Becoming.UnitTraces.oneStep_reads
+#print axioms Becoming.UnitTraces.neutral_of_iff
+#print axioms Becoming.UnitTraces.oneStep_functional
+#print axioms Becoming.UnitTraces.oneStep_associative
+#print axioms Becoming.UnitTraces.oneStep_has_units
+#print axioms Becoming.UnitTraces.oneStep_not_chain_complete

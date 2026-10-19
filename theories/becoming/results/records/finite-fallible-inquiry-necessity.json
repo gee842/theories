@@ -293,9 +293,9 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T174801.206046Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261019T000109.055377Z/verification.json",
       "role": "receipt",
-      "sha256": "a098c166b0135982d9f09739c87f889200762c1ae1b9d1af903b8eb88328c553",
+      "sha256": "1e507f72ebb35344b2d1d4e72cee99ad82d3ae46826a4dee5ef2fc023ffabc5d",
       "declarations": []
     }
   ],
@@ -309,7 +309,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261018T174801.206046Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261019T000109.055377Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -370,7 +370,7 @@
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: FallibleInquiry.lean. Rebound to the FallibleInquiry checker's receipt 20261018T063731.167536Z after reading the change. The claim is unchanged."
     },
     {
-      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. Rebound to receipt 20261018T174801.206046Z after reading the change. The claim is unchanged."
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. Rebound to receipt 20261019T000109.055377Z after reading the change. The claim is unchanged."
     }
   ]
 }

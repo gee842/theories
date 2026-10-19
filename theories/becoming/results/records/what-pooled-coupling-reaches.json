@@ -339,7 +339,7 @@
         "Becoming.Clearing.couples_resource",
         "Becoming.Clearing.clearerSide_closed"
       ],
-      "sha256": "dd46c64db93e1eac72a21660f62953a4b1a9f3be6a56f82b2bd3d740bbdeff00"
+      "sha256": "33e56ce738d062804808d426049498435660fafcfbd29ae38b8695148536cf35"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionGap.lean",
@@ -414,7 +414,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "bf84cf41856804876bd548e8fb016e1c06fec139438ebae86ee8a5d66f4cef51"
+      "sha256": "e6a7080e91391e723178e71ddab6b831bb28a91d58c8f59abf011c670a015361"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -479,6 +479,9 @@
     {
       "en": "18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the \"Selection, causes and experiment\" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月18日，G4（Becoming.LawThroughCoupling）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）改动：G4 修订“选择、原因与实验”行（陈述了沿一个运行经耦合的判据，链接其记录）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Counterfactual.lean, Feedback.lean, Likeness.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. The claim is unchanged."
     }
   ]
 }

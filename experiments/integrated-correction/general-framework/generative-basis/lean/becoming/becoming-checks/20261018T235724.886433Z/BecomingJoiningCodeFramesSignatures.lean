@@ -1,0 +1,13 @@
+import Becoming.JoiningCodeFrames
+#check @Becoming.JoiningCodeFrames.descends_iff
+#check @Becoming.JoiningCodeFrames.lift_exact_iff
+#check @Becoming.JoiningCodeFrames.separating_blocks
+#check @Becoming.JoiningCodeFrames.readings_agree
+#check @Becoming.JoiningCodeFrames.possible_iff_course
+#check @Becoming.JoiningCodeFrames.courseExact_iff
+#check @Becoming.JoiningCodeFrames.courseReduced_iff
+#check @Becoming.JoiningCodeFrames.canonical_course_exact
+#check @Becoming.JoiningCodeFrames.codes_apart
+#check @Becoming.JoiningCodeFrames.joinable_iff
+#check @Becoming.JoiningCodeFrames.sameTests_symm
+#check @Becoming.JoiningCodeFrames.identity_roles_open

@@ -113,6 +113,7 @@ Aliases: `what a pool's acts respond to`, `一组的动作回应什么`, `the ga
 - 18 October 2026, F2, joins into the core (Ren: "please, do them, reduce bridges and add more theory to the spine"): declarations moved with their full Lean names. The claim is unchanged.
 - 18 October 2026, G4 (Becoming.LawThroughCoupling): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G4 added a study section). The claim is unchanged.
 - 18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the "Selection, causes and experiment" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.
+- 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Counterfactual.lean, Feedback.lean, Response.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean, TimedResponse.lean. The claim is unchanged.
 
 </details>
 

@@ -205,6 +205,12 @@
       "role": "receipt",
       "sha256": "d87f0ffbdb0bafc510a5b95de2dd83714570dfc1ed7f1a6261578f8cb9125a79",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "role": "receipt",
+      "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -231,7 +237,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Context",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -293,6 +299,9 @@
     },
     {
       "en": "18 October 2026, F2 (Ren: \"please, do them, reduce bridges and add more theory to the spine\"): every theorem of BecomingCompatibility.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Context.lean; ContextArrivalTraces.lean states the rest (step_arrives, empty_support_no_arrival, changed_context_arrives). BecomingCompatibility.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged."
+    },
+    {
+      "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Context.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
     }
   ]
 }

@@ -1,0 +1,10 @@
+import Becoming.ProjectedLawTraces
+#check @Becoming.ProjectedLawTraces.commuting_iff_factors
+#check @Becoming.ProjectedLawTraces.fibre_iff_goAlike
+#check @Becoming.ProjectedLawTraces.commuting_iff_traces
+#check @Becoming.ProjectedLawTraces.traces_compose
+#check @Becoming.ProjectedLawTraces.coupled_trace
+#check @Becoming.ProjectedLawTraces.wiring_recurrence
+#check @Becoming.ProjectedLawTraces.left_not_goAlike
+#check @Becoming.ProjectedLawTraces.left_carries_no_law
+#check @Becoming.ProjectedLawTraces.assembly_draws
