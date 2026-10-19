@@ -77,7 +77,7 @@ CORE = ["Becoming.World", "Becoming.Frame", "Becoming.Labelled", "Becoming.Inqui
         "Becoming.Seeking", "Becoming.Roles", "Becoming.LabelledRoles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
-        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
+        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.LeastLoss", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
         "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.SupportRecovery", "Becoming.Admission", "Becoming.Exclusion", "Becoming.Exhaustion",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Lifting", "Becoming.Ranking", "Becoming.ActiveReading", "Becoming.LossMatching", "Becoming.StrictTransport", "Becoming.MatchedCourses",
@@ -1137,6 +1137,27 @@ SCOPE = (
     " at most m times the stock, while a whole unit passing in ever more, ever smaller "
     "transfers, each size with a least loss, arises without end and is taken without bound in"
     " amount. "
+    "LeastLoss: over amounts with an associative, commutative addition with nothing as its unit "
+    "and an order that addition keeps and cancels, with nothing least and possibly dense, the "
+    "losses of a stock that falls by them, added since a step, are within its value there; an "
+    "amount that does not rise from a step on and falls by at least a least loss at each step at "
+    "which a change happens, with its value there not within m copies of the least loss, does not "
+    "change at arbitrarily late steps, and with the premises read as far as can be refuted it is "
+    "not the case that after every step a later change stays unrefuted; in Archimedean amounts "
+    "a least loss above nothing suffices; with no least loss, in Archimedean amounts, for every "
+    "amount above nothing fewer than some count of steps lose at least it, and steps losing at "
+    "least it do not recur (the approach to rest), in whole numbers no more steps losing anything "
+    "than the stock counts; a family balanced and dissipated on with a least loss "
+    "rests the same way; whole numbers are Archimedean with least loss one, and the spine's "
+    "descents falls_not_recurring and falls_stop_unrefuted, the laws that taking from a family "
+    "dissipated on does not recur and is bounded by its stock over a stretch, that standing stops "
+    "changing, and the rest theorem of a world enclosed from some step on are proved again from "
+    "the law with their statements unchanged; dyadic amounts are dense and Archimedean, and in them a stock halving at every "
+    "step loses at every step with no least loss and never rests; in layered amounts a stock "
+    "falling by a least loss at every step lies beyond every multiple of it and never rests, and "
+    "they are not Archimedean; the halving stock approaches rest and falls at every step; over "
+    "finitely many configurations a law merging nothing loses nothing along an orbit, so a loss "
+    "above nothing needs a law that merges, and so along a run of every process. "
     "Units: at a unit splitting into r t finer units across each step, arising needing an active "
     "giver holds with no condition on r, the law of one exchange holds with change read in the "
     "unit and fails read in raw counts, a need counted in the same unit as the level leaves support "

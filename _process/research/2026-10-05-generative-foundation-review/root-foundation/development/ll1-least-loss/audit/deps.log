@@ -1,0 +1,21 @@
+Becoming.Flow.fed_from_beyond: [Becoming.falls_not_recurring]
+Becoming.Flow.rising_fed_from_beyond: [Becoming.falls_not_recurring]
+Becoming.Flow.taking_draws_in: [Becoming.falls_not_recurring]
+Becoming.Flow.taking_not_recurring_from: [Becoming.falls_not_recurring]
+Becoming.Flow.Balances.taking_not_recurring: [Becoming.falls_not_recurring]
+Becoming.Flow.Dissipative.opens: [Becoming.falls_not_recurring]
+Becoming.World.rests_unrefuted: [Becoming.falls_stop_unrefuted]
+Becoming.World.comes_to_rest_unrefuted: [Becoming.falls_stop_unrefuted]
+Becoming.World.rests_unrefuted_enclosed: [Becoming.falls_stop_unrefuted]
+Becoming.World.rests_unrefuted_around: [Becoming.falls_stop_unrefuted]
+Becoming.World.Finite.comes_to_rest_unrefuted: [Becoming.falls_stop_unrefuted]
+Becoming.World.rests_unrefuted_without_refinement: [Becoming.falls_stop_unrefuted]
+Becoming.World.rests_unrefuted_refinement_counted: [Becoming.falls_stop_unrefuted]
+Becoming.Flow.change_stops_unrefuted_around: [Becoming.falls_stop_unrefuted]
+Becoming.Web.generation_stops_unrefuted: [Becoming.falls_stop_unrefuted]
+Becoming.falls_not_recurring vs Becoming.whole_falls_not_recurring: same statement = true
+Becoming.falls_stop_unrefuted vs Becoming.whole_falls_stop_unrefuted: same statement = true
+Becoming.Flow.taking_not_recurring_from vs Becoming.Flow.taking_not_recurring_whole: same statement = true
+Becoming.Flow.takers_within_on vs Becoming.Flow.takers_within_on_whole: same statement = true
+Becoming.Flow.change_stops_unrefuted vs Becoming.Flow.change_stops_unrefuted_whole: same statement = true
+Becoming.World.rests_unrefuted_enclosed vs Becoming.World.rests_unrefuted_enclosed_whole: same statement = true

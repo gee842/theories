@@ -57,6 +57,7 @@ import Becoming.Refinement
 import Becoming.Counting
 import Becoming.Standing
 import Becoming.Resolution
+import Becoming.LeastLoss
 import Becoming.Entropy
 import Becoming.Units
 import Becoming.Imbalance
@@ -766,6 +767,29 @@ readings of the unfolding (`Becoming.Labelled`).
   unsupported formation is active at every step, its reserve falling at each. A least loss
   at each size bounds the takings of that size, but neither growth nor the amount: a whole
   unit can pass in ever more, ever smaller transfers without end.
+* `Becoming.LeastLoss` (L3): rest over amounts that may be dense. Every law of the rest family
+  reaches its conclusion through a descent on whole numbers, `falls_not_recurring` or
+  `falls_stop_unrefuted`; stated over amounts with an order that addition keeps and cancels,
+  with nothing least and possibly dense, the descent needs two premises the whole numbers
+  supplied: a least loss `ε` at each step at which the change counted happens, and the stock
+  lying within finitely many copies of `ε` (which Archimedean amounts give for every `ε` above
+  nothing). The losses of a falling stock, added, are within the stock in any amounts, so a
+  fall at every step exhausts nothing unless the losses do not shrink. With no least loss, in
+  Archimedean amounts, a closed amount comes arbitrarily near rest: for every `ε` above nothing,
+  fewer than some count of steps lose at least `ε` (the approach to rest); rest needs the least
+  loss as well. A family balanced and
+  dissipated on with a least loss comes to rest the same way. Whole numbers are the instance,
+  with `ε` one: the spine's two descents, its laws that taking from a closed family does not
+  recur and is bounded by the stock over a stretch, that standing stops changing, and the rest
+  theorem of an enclosed world are proved again from it with their statements unchanged. Each
+  premise is needed: in dyadic
+  amounts, dense and Archimedean, a stock halving at every step loses at every step, has no
+  least loss, and never rests; in layered amounts, a stock falling by a least loss at every
+  step lies beyond every multiple of it and never rests, and layered amounts are not
+  Archimedean; the halving stock approaches rest without reaching it. Over finitely many
+  configurations a law that merges nothing loses nothing along an orbit, and a process that merges
+  nothing loses nothing along a run, so a loss above nothing needs a merge: rest belongs to descriptions that lump and dissipate, and a finite law
+  that merges nothing returns (`Becoming.Recurrence`).
 * `Becoming.Entropy` (L3): what becoming leaves, and what holding it costs. In a balanced
   flow every change of a level is an exchange, so the history of exchanges grows at every
   change without a dissipation premise, and an exchange and its reverse restore every level but not the
