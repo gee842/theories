@@ -70,23 +70,18 @@ ROW = (
 
 target = PKG / 'Becoming/HexagramSites.lean'
 assert not target.exists(), target
-shutil.copyfile(HERE / 'Becoming/HexagramSites.lean', target)
 
 root = (PKG / 'Becoming.lean').read_text()
 root = once(root, 'import Becoming.HexagramPlaces\n', 'import Becoming.HexagramPlaces\nimport Becoming.HexagramSites\n')
-root = once(root, "  Four censuses of the 彖 and the 小象 are checked on their configurations; the chapter on the\n"
-                  "  易传 reads each passage.\n",
-            "  Four censuses of the 彖 and the 小象 are checked on their configurations; the chapter on the\n"
-            "  易传 reads each passage.\n" + BULLET)
-(PKG / 'Becoming.lean').write_text(root)
+Y2_END = ("  of the law backward, and of any process. Four censuses of the 彖 and the 小象 are checked on\n"
+          "  their configurations; the chapter on the 易传 reads each passage.\n")
+root = once(root, Y2_END, Y2_END + BULLET)
 
 chk = (PKG / 'check_becoming.py').read_text()
 chk = once(chk, '"Becoming.HexagramPlaces", ', '"Becoming.HexagramPlaces", "Becoming.HexagramSites", ')
-chk = once(chk, '    "the top line; the listed statements of four censuses of the text hold of their "\n'
-                '    "configurations. No ethical premise is used. "\n',
-           '    "the top line; the listed statements of four censuses of the text hold of their "\n'
-           '    "configurations. No ethical premise is used. "\n' + SCOPE)
-(PKG / 'check_becoming.py').write_text(chk)
+Y2_SCOPE_END = ('    "listed statements of four censuses of the text hold of their configurations. No ethical "\n'
+                '    "premise is used. "\n')
+chk = once(chk, Y2_SCOPE_END, Y2_SCOPE_END + SCOPE)
 
 readme = (PKG / 'README.md').read_text()
 lines = readme.splitlines(keepends=True)
@@ -94,5 +89,8 @@ hits = [i for i, line in enumerate(lines)
         if line.startswith('| L4 | [`Becoming.HexagramPlaces`](Becoming/HexagramPlaces.lean) |')]
 assert len(hits) == 1, hits
 lines.insert(hits[0] + 1, ROW)
+shutil.copyfile(HERE / 'Becoming/HexagramSites.lean', target)
+(PKG / 'Becoming.lean').write_text(root)
+(PKG / 'check_becoming.py').write_text(chk)
 (PKG / 'README.md').write_text(''.join(lines))
 print('integrated into', PKG)
