@@ -64,13 +64,13 @@ The remaining fallibility is real. A community can overlook a relevant possibili
 <a id="6-g0-and-the-ethical-place-of-knowledge"></a>
 ## 6. Living significance and the ethical place of knowledge
 
-Living significance states: **整体中的生及其继续生成具有基本正面规范意义。** Living and its further generation within the whole have basic positive normative significance. The theory does not assume this: it follows under [the continuation condition](THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance), whose warrant is open.
+Living significance states: **every living claim has significance from every standpoint** (`Valuation.Significant`). The theory does not assume this: it follows under [the continuation condition](THE-THEORY-OF-BECOMING.md#615-若任何东西的延续都有意义--if-the-continuation-of-anything-has-significance), whose warrant is open. It gives significance, not a positive valence, and the `living` readings do not include further generation. This account reads it together with the direction of 生生, generation generating generation, compared by widening what can form ([D1](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d1-生生的读法--how-生生-is-read)): on that reading, living and its further generation within the whole have basic positive normative significance. The valence and the further generation belong to that reading, not to the formal content.
 
 This affirms present life as well as future formation: rest, understanding, friendship, self-care and finite fulfillment need not justify themselves solely by producing successors. A particular institution need not persist forever. Ending a damaging arrangement can participate in a better continuation, while its actual losses remain real.
 
 Knowledge can contribute by making dependencies, possibilities, harm and effective responses available. Understanding can also be a present realization of life. Yet a true and competently grounded discovery can facilitate destruction, and a false belief can accidentally produce a benefit. These cases require the distinction between epistemic adequacy and ethical quality within the same activity.
 
-“Good is generative” therefore needs substantive content. Mere multiplication, complexity, persistence or information growth does not settle the whole comparison. Living significance supplies the positive direction; the declared practical commitments address improvement and loss, basic protection, bounded responsibility, and authorized feasible choice. E requires actual correspondence. Neither arbitrary weights nor universal obligations may be concealed in the meaning of generation.
+“Good is generative” therefore needs substantive content. Mere multiplication, complexity, persistence or information growth does not settle the whole comparison. Living significance, read with the direction of 生生 (§6), supplies the positive direction; the declared practical commitments address improvement and loss, basic protection, bounded responsibility, and authorized feasible choice. E requires actual correspondence. Neither arbitrary weights nor universal obligations may be concealed in the meaning of generation.
 
 The scoped priority of basic protection (basic-condition priority) is an additional substantive commitment. The responsibility and participatory standing of bounded responsibility are also substantive. They can be defended and disputed. Someone may accept living significance while contesting these elaborations; that disagreement is not automatically a logical inconsistency.
 
@@ -134,7 +134,7 @@ The endpoint is a defended proposal with clear routes for correction, not an imm
 
 <a id="16-compatibility-realization-and-the-scope-of-generative-value"></a>
 
-**§16 Compatibility, realization and the scope of generative value.** The basic positive significance of living does not require generativity to be the exclusive ground of value; eight Lean theorems and eleven empty dependency audits on compatibility at an inquiry profile ([investigation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-VALUE-NECESSITY.md)). Full text: [history](../history/PHILOSOPHICAL-ACCOUNT-rounds-2026-10-17.md#16-compatibility-realization-and-the-scope-of-generative-value).
+**§16 Compatibility, realization and the scope of generative value.** The significance of living, read in that round as basic positive significance (§6), does not require generativity to be the exclusive ground of value; eight Lean theorems and eleven empty dependency audits on compatibility at an inquiry profile ([investigation](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-VALUE-NECESSITY.md)). Full text: [history](../history/PHILOSOPHICAL-ACCOUNT-rounds-2026-10-17.md#16-compatibility-realization-and-the-scope-of-generative-value).
 
 <a id="17-living-formation-and-the-scope-of-significance"></a>
 
@@ -158,7 +158,7 @@ The endpoint is a defended proposal with clear routes for correction, not an imm
 
 <a id="22-positive-grounds-and-the-endpoint-of-the-two-questions"></a>
 
-**§22 Positive grounds and the endpoint of the two questions.** A complete ranking of possible futures is not a further threshold for basic positive significance ([assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md#26-positive-significance-is-the-target-whole-ranking-is-one-route)). Full text: [history](../history/PHILOSOPHICAL-ACCOUNT-rounds-2026-10-17.md#22-positive-grounds-and-the-endpoint-of-the-two-questions).
+**§22 Positive grounds and the endpoint of the two questions.** A complete ranking of possible futures is not a further threshold for basic positive significance, on the reading of §6 ([assessment](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIVING-VALUE-SCOPE.md#26-positive-significance-is-the-target-whole-ranking-is-one-route)). Full text: [history](../history/PHILOSOPHICAL-ACCOUNT-rounds-2026-10-17.md#22-positive-grounds-and-the-endpoint-of-the-two-questions).
 
 <a id="23-living-significance-through-dependence-and-impaired-regulation"></a>
 
@@ -198,7 +198,7 @@ The endpoint is a defended proposal with clear routes for correction, not an imm
 
 ## 32. Finish the two answers and preserve the compatibility claim
 
-The two further questions have determinate answers under the accepted ethical starting point: **living and its further generation within the whole have basic positive significance**. The additional practical commitments govern protection, responsibility, feasible comparison and faithful understanding of the case.
+The two further questions have determinate answers under the ethical starting point as §6 reads it: **living and its further generation within the whole have basic positive significance**. That is living significance (every living claim has significance from every standpoint, which follows under the continuation condition) read with the direction of 生生 (D1); the positive valence and the further generation belong to the reading, not to the formal content. The additional practical commitments govern protection, responsibility, feasible comparison and faithful understanding of the case.
 
 1. **Consciousness differentiates significance.** Enjoyment, suffering, understanding and experienced relationships introduce distinctive goods and vulnerabilities. Under living significance, living does not first have to become conscious before it can matter. This is a defended ethical commitment, not a new scientific demonstration of the value of every organization.
 2. **Further living can matter without an existing deprived claimant.** What is realized can have positive significance even when nobody previously existed to miss it. A favorable consideration does not alone establish that creation improves the whole or that someone must undertake it. Real losses, consent, actual responsibilities and feasible alternatives remain consequential.

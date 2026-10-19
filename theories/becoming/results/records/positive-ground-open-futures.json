@@ -87,8 +87,8 @@
     {
       "id": "one-axiom-yields-g0",
       "detail": {
-        "zh": "由 Becoming.Significance 的公理，偶然生成具有以意义读出的正面根据（contingent_generation_of_unrestricted）。",
-        "en": "From the axiom of Becoming.Significance, contingent generation has positive ground read from significance (contingent_generation_of_unrestricted)."
+        "zh": "在延续条件（Becoming.Significance 的 Unrestricted）之下，偶然生成具有以意义读出的正面根据（contingent_generation_of_unrestricted）。",
+        "en": "Under the continuation condition (`Unrestricted`, Becoming.Significance), contingent generation has positive ground read from significance (contingent_generation_of_unrestricted)."
       }
     }
   ],
@@ -471,6 +471,10 @@
     {
       "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, wording (R19, living significance stated as the Lean shows): the overview's summary said living significance gives living and further generation within the whole basic positive normative significance. It now says what the Lean shows: every living claim has significance from every standpoint (Valuation.Significant), and on a frame realized living content falls under the relevance read from significance (Frame.relevance, relevance_least); this gives significance, not a positive valence, and the readings of living do not include further generation, the direction of 生生 being read separately (D1). The summary marks the \"positive\" of this result's positive ground as the parameter of G0. The related detail for one-axiom-yields-g0 names the continuation condition instead of \"the axiom\". The claim, proofs and evidence are unchanged.",
+      "zh": "2026年10月19日，措辞（R19，按 Lean 所示陈述生生之意义）：概览摘要原说生生之意义给整体中的生及其继续生成以基本正面规范意义；现按 Lean 所示：每个生的主张从每个立场都有意义（Valuation.Significant），在一个框架上所实现的生的内容落在由意义读出的相关性之下（Frame.relevance、relevance_least）；它给出意义而非正面价值取向，living 的诸读法不包括继续生成，生生的方向另行读出（D1）。摘要标明本结果“正面根据”中的“正面”是 G0 的参数。one-axiom-yields-g0 的关联说明改称延续条件，不再称“公理”。论断、证明与证据不变。"
     }
   ],
   "overview": {
@@ -479,8 +483,8 @@
       "zh": "意义、比较与实践判断"
     },
     "summary": {
-      "en": "**Living significance: living and further generation within the whole have basic positive normative significance.** Humans and AI are differentiated formations within that relational unfolding. With warranted generative correspondence and an explicit practical articulation, generative contributions supply reasons applicable to any agent so situated, independently of its culture, identity or endorsement. A single response can secure **some generative good in every supported visible continuation while leaving its particular future form open**. Real generative possibilities and further evidence revision can both remain available. This positive conclusion requires neither a complete future integral nor proof that the whole becomes strictly better.",
-      "zh": "**生生之意义：整体中的生及其继续生成具有基本正面规范意义。** 人类与 AI 都在同一关系展开中分化形成。在有根据的生成对应及公开的直接实践解释下，生成贡献为处于相应关系中的任何行动者提供理由，不以其文化、身份或认同为条件。同一回应可以保证**每一种有根据的可见接续都有某种生成善，同时不固定其未来形态**。真实生成可能与进一步证据修订可以共同保留。这一正面结论无须完整未来积分或整体严格更好的证明。"
+      "en": "**Living significance: every living claim has significance from every standpoint; on a frame, realized living content falls under the relevance read from significance.** It gives significance, not a positive valence, and the readings of `living` do not include further generation; the direction of 生生 is read separately, by widening what can form (D1). The \"positive\" of this result's positive ground is the parameter of G0, not a valence that living significance supplies. Humans and AI are differentiated formations within that relational unfolding. With warranted generative correspondence and an explicit practical articulation, generative contributions supply reasons applicable to any agent so situated, independently of its culture, identity or endorsement. A single response can secure **some generative good in every supported visible continuation while leaving its particular future form open**. Real generative possibilities and further evidence revision can both remain available. This positive conclusion requires neither a complete future integral nor proof that the whole becomes strictly better.",
+      "zh": "**生生之意义：在主张层面，每个生的主张从每个立场都有意义；在一个框架上，所实现的生的内容落在由意义读出的相关性之下。** 它给出意义，而非正面的价值取向；`living` 的诸读法不包括继续生成；生生的方向另行读出，以扩展能够形成者来比较（D1）。本结果“正面根据”中的“正面”是 G0 的参数，不是生生之意义所给的价值取向。人类与 AI 都在同一关系展开中分化形成。在有根据的生成对应及公开的直接实践解释下，生成贡献为处于相应关系中的任何行动者提供理由，不以其文化、身份或认同为条件。同一回应可以保证**每一种有根据的可见接续都有某种生成善，同时不固定其未来形态**。真实生成可能与进一步证据修订可以共同保留。这一正面结论无须完整未来积分或整体严格更好的证明。"
     },
     "evidence": {
       "zh": "**生生之意义不是所采用的公理，也不是无条件证明的定理**：无公理的理论把它作为条件陈述，在延续条件之下它是定理（章节 §6.15，理论不断言这一条件）；对其内容的支持见其根据一章。Lean 检查从它推出什么，并在一个所给规律类中检查一个逐事件宽读法分不开的描述性区分；该区分认作生生，是读法与对应，不是 Lean 结果。前提足迹：正面结论只需生生之意义与实际对应，不需整体改善、完整排序或未来积分；同一回应在每条可见分支中都确保某种新生成而不固定其形态，新证据可撤回证书（经独立审查）。每个能通达回应的位置都有该理由，不论是否认同；这种认同无关性来自实践解释前提，而非生生之意义。在所给不可恢复磨损规律下（不含规范谓词的动力学）：更新内的形成每步不息；持续超出更新、磨损其所依存的更新组织的形成，总量有界、在明确时刻停止，并终止共享形成，尽管它起初形成得更多。一项支持理由不独自构成最终许可。",
