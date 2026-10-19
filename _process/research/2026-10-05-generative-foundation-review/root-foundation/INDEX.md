@@ -105,6 +105,6 @@ Every file of the study, by kind. The study's [overview](README.md) is the gener
 |---|---:|
 | `development/` | 1148 |
 | `reason-action-evidence/` | 1 |
-| `twentieth-review/` | 38 |
+| `twentieth-review/` | 39 |
 
 Retired files of this study are in [its history folder](../history/root-foundation/) (manifest there).
