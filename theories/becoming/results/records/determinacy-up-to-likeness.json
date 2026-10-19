@@ -96,13 +96,12 @@
       ]
     },
     {
-      "zh": "差别制造的二分只需以该动作由扣除后的配置出发的每一步到达条件的同一水平：此时或者那一部分造成差别，或者同一动作仍断裂依存；分开该水平的主张之下的相同之下的确定，以及确定，都是其情形。",
-      "en": "The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition: then either the part makes the difference or the same move still breaks the dependence; determinacy up to likeness under claims telling that level apart, and determinacy, are cases.",
+      "zh": "差别制造的二分只需以该动作由扣除后的配置出发的每一步到达条件的同一水平：此时或者那一部分造成差别，或者同一动作仍断裂依存；分开该水平的主张之下的相同之下的确定是其情形；确定之下的二分即 Joint 的 determined_dichotomy，只陈述一次。",
+      "en": "The dichotomy of difference-making needs only that every step by the move from the withheld configuration reaches one level of the condition: then either the part makes the difference or the same move still breaks the dependence; determinacy up to likeness under claims telling that level apart is a case, and the dichotomy under determinacy is Joint's determined_dichotomy, stated once.",
       "declarations": [
         "Becoming.Dependence.dichotomy_of_same_level",
         "Becoming.Dependence.dichotomy_of_determinedAt",
         "Becoming.Dependence.level_registers",
-        "Becoming.Dependence.dichotomy_of_determined",
         "Becoming.Dependence.determined_dichotomy"
       ]
     },
@@ -274,8 +273,8 @@
       "id": "joint-difference-making",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Joint 的 BreaksBy、MakesDifference 与 determined_dichotomy：二分只需动作之后的水平为一，确定是其情形（Dependence.dichotomy_of_determined）。",
-        "en": "Reuses Joint's BreaksBy, MakesDifference and determined_dichotomy: the dichotomy needs only one level after the move, and determinacy is a case (Dependence.dichotomy_of_determined)."
+        "zh": "复用 Joint 的 BreaksBy、MakesDifference 与 determined_dichotomy：二分只需动作之后的水平为一，确定之下的二分即 Joint 的 Dependence.determined_dichotomy。",
+        "en": "Reuses Joint's BreaksBy, MakesDifference and determined_dichotomy: the dichotomy needs only one level after the move, and the dichotomy under determinacy is Joint's Dependence.determined_dichotomy."
       },
       "interface": {
         "output": {
@@ -314,7 +313,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "970172a64cefdfc9fa4f56d5dd5e2ada589199858e4e2de83975559ab39e8929",
+      "sha256": "d9820a4b00db10c4d23cdc310073b4dfb994f7e1590b299f8f3d7310670b05f1",
       "declarations": [
         "Becoming.alike_configurations",
         "Becoming.determined_iff_named",
@@ -354,7 +353,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "f7ac655fc624ac91b34a001d83a3aa4d89f6ff42452cff653b0666de2700af38",
+      "sha256": "2abf9d672d75e72be1dcd0439331935098b72bcc3dc880aa3ca1ec144afe4d41",
       "declarations": [
         "Becoming.RespectsClaims",
         "Becoming.GoAlikeUnder",
@@ -380,7 +379,6 @@
         "Becoming.Dependence.dichotomy_of_same_level",
         "Becoming.Dependence.dichotomy_of_determinedAt",
         "Becoming.Dependence.level_registers",
-        "Becoming.Dependence.dichotomy_of_determined",
         "Becoming.Run.TakesThroughAlike",
         "Becoming.Run.not_fixesThroughAlike_of_untaken",
         "Becoming.Run.not_fixesThroughAlike_of_goAlikeUnder"
@@ -389,7 +387,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "6799a78a8351ac82ad9dc581c09c1099a80b8560c4cb53c3694eef262b2d578d",
+      "sha256": "e90cc67d33659d78dc348fdbf93defbfb9879414d16c0613656abf102fff3926",
       "declarations": [
         "Becoming.DeterminedAt",
         "Becoming.Alike",
@@ -453,7 +451,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9d48507a87c2037c9559a573a55a39fd6721fe0d9b9b5a1858be5d8c5465c742",
+      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448",
       "declarations": []
     },
     {
@@ -527,12 +525,18 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -560,14 +564,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -783,6 +787,10 @@
     {
       "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Branching.lean, Labelled.lean, Likeness.lean, Mechanism.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Branching.lean, the five notions and four orbit lemmas moved to Recurrence.lean; the five law_*_iff bridges are Iff.rfl; Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Likeness.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
       "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Branching.lean、Labelled.lean、Likeness.lean、Mechanism.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Branching.lean，五个概念与四条轨道引理移到 Recurrence.lean；五座 law_*_iff 桥为 Iff.rfl；Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Likeness.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: Dependence.dichotomy_of_determined (now Dependence.determined_dichotomy). The sentences that said a removed name proved something cite the kept statement. Proof bindings (Branching.lean, Labelled.lean, Likeness.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Branching.lean, the laws of every process moved to Recurrence.lean; Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; Likeness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：Dependence.dichotomy_of_determined（现为 Dependence.determined_dichotomy）。说删去之名证明了什么的句子改引保留的陈述。证明绑定（Branching.lean、Labelled.lean、Likeness.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Branching.lean，每个过程之律移到 Recurrence.lean；Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；Likeness.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
     }
   ],
   "text_versions": [

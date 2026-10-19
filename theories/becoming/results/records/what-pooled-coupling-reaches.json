@@ -28,12 +28,12 @@
       ]
     },
     {
-      "en": "With the rest of the exchange fixed and balance on what the closure couples into, where every member of a part lies beyond a pool's coupling closure, each formation within it couples the levels with and without the part alike at every step, and every selection through the pooled coupling of any group within it selects them alike; Flow.unselected_beyond_coupling_all is the case of one formation's closure.",
-      "zh": "其余交换固定、并在闭包所耦合入者上平衡时，一个部分的每个成员都在一组的耦合闭包之外，则闭包内每个形成在每一步都把有与无此部分的水平耦合得无别，经闭包内任一组合起来之耦合的每个选择都把它们选得相同；Flow.unselected_beyond_coupling_all 是一个形成之闭包的情形。",
+      "en": "With the rest of the exchange fixed and balance on what the closure couples into, where every member of a part lies beyond a pool's coupling closure, each formation within it couples the levels with and without the part alike at every step, and every selection through the pooled coupling of any group within it selects them alike; Flow.unselected_beyond_coupling_all, the law of one formation's closure, is proved as the case of the pool of that formation.",
+      "zh": "其余交换固定、并在闭包所耦合入者上平衡时，一个部分的每个成员都在一组的耦合闭包之外，则闭包内每个形成在每一步都把有与无此部分的水平耦合得无别，经闭包内任一组合起来之耦合的每个选择都把它们选得相同；一个形成之闭包的律 Flow.unselected_beyond_coupling_all 作为该形成之池的情形证明。",
       "declarations": [
         "Becoming.Flow.uncoupled_beyond_pool",
         "Becoming.Flow.unselected_beyond_pool",
-        "Becoming.Flow.unselected_beyond_coupling_all_of_pool"
+        "Becoming.Flow.unselected_beyond_coupling_all"
       ]
     },
     {
@@ -281,17 +281,12 @@
         "Becoming.Clearing.within_closure_unseparated",
         "Becoming.Flow.ActsAlikeOnPoolCoupled",
         "Becoming.Flow.ActsAlikeOnPoolCoupled.within",
-        "Becoming.Flow.WithinPoolCoupling",
         "Becoming.Flow.act_alike_pool",
         "Becoming.Flow.act_selected_by_pool",
         "Becoming.Flow.act_unselected_pool",
         "Becoming.Flow.apart_beyond_pool",
-        "Becoming.Flow.beyond_pool_coupling",
         "Becoming.Flow.consequence_unselected_pool",
         "Becoming.Flow.separating_member_beyond",
-        "Becoming.Flow.uncoupled_beyond_pool",
-        "Becoming.Flow.unselected_beyond_coupling_all_of_pool",
-        "Becoming.Flow.unselected_beyond_pool",
         "Becoming.Web.admission_separates_all",
         "Becoming.Web.member_separates_all",
         "Becoming.Web.pool_adds",
@@ -299,14 +294,9 @@
         "Becoming.Web.pooled_iff_member",
         "Becoming.Web.separates_all_iff",
         "Becoming.Web.separates_all_iff_member",
-        "Becoming.WithinClosureOf",
-        "Becoming.WithinClosureOf.of_member",
-        "Becoming.act_courses_unselected_pool",
-        "Becoming.closedUnder_withinClosureOf",
-        "Becoming.withinClosureOf_iff",
-        "Becoming.withinClosureOf_single"
+        "Becoming.act_courses_unselected_pool"
       ],
-      "sha256": "78ea73016d194e4759da763f0d68e987ece7db236069e2c7bfaf69f078c8975d"
+      "sha256": "8eaa75ce391c1e3ac87a6509eb9bb7464b4c96f358f4e4d3726ab95c23e0f09e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
@@ -320,9 +310,18 @@
         "Becoming.Web.class_selects",
         "Becoming.Web.admits_through",
         "Becoming.Flow.unselected_beyond_coupling_all",
-        "Becoming.Clearing.dweller_spared"
+        "Becoming.Clearing.dweller_spared",
+        "Becoming.Flow.WithinPoolCoupling",
+        "Becoming.Flow.beyond_pool_coupling",
+        "Becoming.Flow.uncoupled_beyond_pool",
+        "Becoming.Flow.unselected_beyond_pool",
+        "Becoming.WithinClosureOf",
+        "Becoming.WithinClosureOf.of_member",
+        "Becoming.closedUnder_withinClosureOf",
+        "Becoming.withinClosureOf_iff",
+        "Becoming.withinClosureOf_single"
       ],
-      "sha256": "77521997d7740ae8f728eedab98fafbb5a0ff8cb81fc8ca5c6c7b1d0e031e8f8"
+      "sha256": "319c94e1443e563dd60eadf127b18980644c89c735c248733928f954a089a5cb"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
@@ -383,7 +382,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "role": "proof",
-      "sha256": "6dbdfe672b8cc94aea03d87162781e4def99dec7672d7c357e3ece80f520a911",
+      "sha256": "f792178c5b2290a079a57b6811c7dd3ceecacc14ecc9db62a408f3bc8b3f5c6d",
       "declarations": [
         "Becoming.Decided.exists_not_in"
       ]
@@ -399,7 +398,7 @@
         "Becoming.ExchangeLaw.levels",
         "Becoming.ExchangeLaw.Feasible"
       ],
-      "sha256": "a6b7db425e8741a9e3b1c99aac45a2c8d12eb3431b4b73c5391b47e84b9a7089"
+      "sha256": "8d615dddf37bbe38a0dfbb3794224c0b574a63c0239fc0a49925dd6bcbf4e28d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T122313.319851Z/verification.json",
@@ -414,7 +413,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9d48507a87c2037c9559a573a55a39fd6721fe0d9b9b5a1858be5d8c5465c742"
+      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -431,20 +430,33 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionPool.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.SelectionPool",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -583,6 +595,10 @@
     {
       "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
       "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Moved with their full names: from SelectionPool.lean to Selection.lean, Flow.WithinPoolCoupling, Flow.beyond_pool_coupling, Flow.uncoupled_beyond_pool, Flow.unselected_beyond_pool, WithinClosureOf, WithinClosureOf.of_member, closedUnder_withinClosureOf, withinClosureOf_iff, withinClosureOf_single. Removed, with the statement kept under one name: Flow.unselected_beyond_coupling_all_of_pool (now Flow.unselected_beyond_coupling_all). The sentences that said a removed name proved something cite the kept statement. Proof bindings (Decidedness.lean, SelectionPool.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Selection.lean, the pool closure (WithinClosureOf, withinClosureOf_iff, withinClosureOf_single, Flow.WithinPoolCoupling, Flow.beyond_pool_coupling, Flow.uncoupled_beyond_pool, Flow.unselected_beyond_pool) moved in; Flow.unselected_beyond_coupling_all proved at the singleton pool, statement unchanged; SelectionPool.lean, the pool closure moved to Selection.lean; Flow.unselected_beyond_coupling_all_of_pool removed; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：连同完整名称移动：从 SelectionPool.lean 到 Selection.lean：Flow.WithinPoolCoupling、Flow.beyond_pool_coupling、Flow.uncoupled_beyond_pool、Flow.unselected_beyond_pool、WithinClosureOf、WithinClosureOf.of_member、closedUnder_withinClosureOf、withinClosureOf_iff、withinClosureOf_single。删去，陈述以一个名称保留：Flow.unselected_beyond_coupling_all_of_pool（现为 Flow.unselected_beyond_coupling_all）。说删去之名证明了什么的句子改引保留的陈述。证明绑定（Decidedness.lean、SelectionPool.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Decidedness.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Selection.lean，池的闭包（WithinClosureOf、withinClosureOf_iff、withinClosureOf_single、Flow.WithinPoolCoupling、Flow.beyond_pool_coupling、Flow.uncoupled_beyond_pool、Flow.unselected_beyond_pool）移入；Flow.unselected_beyond_coupling_all 在单元素池上证明，陈述不变；SelectionPool.lean，池的闭包移到 Selection.lean；删去 Flow.unselected_beyond_coupling_all_of_pool；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
     }
   ]
 }

@@ -153,7 +153,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
       "role": "proof",
-      "sha256": "544c2bfde86945c88682aca180db8ee6ea7371c6255a65a22bc944afedc6fd57",
+      "sha256": "b01d03a21e27823e6dedc1f52cd590b686b23a279187f0346518abac47c29117",
       "declarations": [
         "Becoming.ReferencePlan.flip",
         "Becoming.ReferencePlan.flip_twice",
@@ -226,10 +226,7 @@
         "Becoming.ReferencePlan.balanced",
         "Becoming.ReferencePlan.used_balanced",
         "Becoming.ReferencePlan.draws_held",
-        "Becoming.ReferencePlan.trace_conserves_of_law",
         "Becoming.ReferencePlan.covered",
-        "Becoming.ReferencePlan.added_keeps_of_law",
-        "Becoming.ReferencePlan.new_contact_choice_of_law",
         "Becoming.ReferencePlan.propose_answers",
         "Becoming.ReferencePlan.revise_registers_failure",
         "Becoming.ReferencePlan.frozenRule",
@@ -352,12 +349,18 @@
       "role": "receipt",
       "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ReferencePlan",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -535,6 +538,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Revision.lean: declarations moved in or out by W2). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: ReferencePlan.added_keeps_of_law (now ReferencePlan.added_keeps); ReferencePlan.new_contact_choice_of_law (now ReferencePlan.new_contact_choice); ReferencePlan.trace_conserves_of_law (now ReferencePlan.trace_conserves). Proof bindings (ReferencePlan.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: ReferencePlan.lean, added_keeps, new_contact_choice and trace_conserves carry the proofs through the laws; their _of_law twins removed, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：ReferencePlan.added_keeps_of_law（现为 ReferencePlan.added_keeps）；ReferencePlan.new_contact_choice_of_law（现为 ReferencePlan.new_contact_choice）；ReferencePlan.trace_conserves_of_law（现为 ReferencePlan.trace_conserves）。证明绑定（ReferencePlan.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：ReferencePlan.lean，added_keeps、new_contact_choice 与 trace_conserves 承载经律的证明；其 _of_law 孪生删去，陈述不变。论断不变。"
     }
   ]
 }

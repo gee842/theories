@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 301 | 11,758 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 302 | 11,732 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -72,6 +72,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [AlignmentInquiry.lean](lean-declarations/ethics.md#module-503febdf34f7) | Normative grounding and generative direction |
 | [AlignmentSuccession.lean](lean-declarations/other.md#module-69a93b1cf280) | Other formal studies |
 | [Alternatives.lean](lean-declarations/becoming-core.md#module-bb4c3946c175) | Becoming pure core |
+| [Amounts.lean](lean-declarations/becoming-core.md#module-c96bf02faba2) | Becoming pure core |
 | [ApplicabilityGrounding.lean](lean-declarations/abstraction.md#module-3a59dae65c20) | Abstraction, applicability and constitution |
 | [ApplicabilityProofs.lean](lean-declarations/abstraction.md#module-1c37938595ec) | Abstraction, applicability and constitution |
 | [ApplicationEvidence.lean](lean-declarations/shared.md#module-dd170fb920e6) | Organizational formation through revisable evaluation |

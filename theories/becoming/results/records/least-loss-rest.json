@@ -80,20 +80,20 @@
       ]
     },
     {
-      "en": "Whole numbers are the instance: the least loss is one and every stock lies within its own count of ones plus one, and whole numbers are Archimedean. From the law, the spine's two descents falls_not_recurring and falls_stop_unrefuted, Flow.taking_not_recurring_from, Flow.takers_within_on, Flow.change_stops_unrefuted and the rest theorem World.rests_unrefuted_enclosed are proved again with their statements unchanged.",
-      "zh": "整数是其实例：最小损失为一，每个存量都在其自身个数加一份一之内，整数是阿基米德的。由此律重新证明脊柱的两个下降 falls_not_recurring 与 falls_stop_unrefuted、Flow.taking_not_recurring_from、Flow.takers_within_on、Flow.change_stops_unrefuted 以及停息定理 World.rests_unrefuted_enclosed，陈述不变。",
+      "en": "Whole numbers are the instance: the least loss is one and every stock lies within its own count of ones plus one, and whole numbers are Archimedean. The rest family is proved as this instance, below the modules that state it: the spine's two descents falls_not_recurring (Becoming.Renewal) and falls_stop_unrefuted (Becoming.Space), Flow.taking_not_recurring_from and Flow.takers_within_on (Becoming.Dissipation) and Flow.change_stops_unrefuted (Becoming.Openness), through which the rest theorem World.rests_unrefuted_enclosed follows.",
+      "zh": "整数是其实例：最小损失为一，每个存量都在其自身个数加一份一之内，整数是阿基米德的。停息诸律作为这一实例证明，在陈述它们的模块之下：脊柱的两个下降 falls_not_recurring（Becoming.Renewal）与 falls_stop_unrefuted（Becoming.Space）、Flow.taking_not_recurring_from 与 Flow.takers_within_on（Becoming.Dissipation）以及 Flow.change_stops_unrefuted（Becoming.Openness），停息定理 World.rests_unrefuted_enclosed 经最后一条推出。",
       "declarations": [
         "Becoming.Amounts.whole",
         "Becoming.Amounts.whole_times_one",
         "Becoming.Amounts.whole_within",
         "Becoming.Amounts.whole_archimedean",
         "Becoming.Amounts.whole_sum",
-        "Becoming.whole_falls_not_recurring",
-        "Becoming.whole_falls_stop_unrefuted",
-        "Becoming.Flow.taking_not_recurring_whole",
-        "Becoming.Flow.takers_within_on_whole",
-        "Becoming.Flow.change_stops_unrefuted_whole",
-        "Becoming.World.rests_unrefuted_enclosed_whole"
+        "Becoming.falls_not_recurring",
+        "Becoming.falls_stop_unrefuted",
+        "Becoming.Flow.taking_not_recurring_from",
+        "Becoming.Flow.takers_within_on",
+        "Becoming.Flow.change_stops_unrefuted",
+        "Becoming.World.rests_unrefuted_enclosed"
       ]
     },
     {
@@ -287,8 +287,8 @@
       "id": "continued-change-needs-openness",
       "relation": "formal-reuse",
       "detail": {
-        "en": "Reuses what stands running down (Flow.RunsDown.standing_le, Flow.RunsDown.changes_iff), the census of what stands and enclosure around it to prove Flow.change_stops_unrefuted and World.rests_unrefuted_enclosed again from the least-loss law, statements unchanged.",
-        "zh": "复用所立者的下降（Flow.RunsDown.standing_le、Flow.RunsDown.changes_iff）、所立者的普查与围住它的步，由最小损失律重新证明 Flow.change_stops_unrefuted 与 World.rests_unrefuted_enclosed，陈述不变。"
+        "en": "Reuses what stands running down (Flow.RunsDown.standing_le, Flow.RunsDown.changes_iff), the census of what stands and enclosure around it to prove Flow.change_stops_unrefuted from the least-loss law, which Becoming.Openness does, World.rests_unrefuted_enclosed following through it.",
+        "zh": "复用所立者的下降（Flow.RunsDown.standing_le、Flow.RunsDown.changes_iff）、所立者的普查与围住它的步，由最小损失律证明 Flow.change_stops_unrefuted（Becoming.Openness 如此证明），World.rests_unrefuted_enclosed 经它推出。"
       }
     },
     {
@@ -335,6 +335,67 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
       "role": "proof",
       "declarations": [
+        "Becoming.Branching.Lossless.loses_nothing",
+        "Becoming.Branching.loss_needs_merge",
+        "Becoming.Dyadic",
+        "Becoming.Dyadic.add",
+        "Becoming.Dyadic.add_assoc'",
+        "Becoming.Dyadic.add_comm'",
+        "Becoming.Dyadic.add_le_add_right'",
+        "Becoming.Dyadic.amounts",
+        "Becoming.Dyadic.archimedean",
+        "Becoming.Dyadic.expand",
+        "Becoming.Dyadic.ext'",
+        "Becoming.Dyadic.half_below",
+        "Becoming.Dyadic.le",
+        "Becoming.Dyadic.le_of_add_le_add_right'",
+        "Becoming.Dyadic.le_trans'",
+        "Becoming.Dyadic.mul_assoc'",
+        "Becoming.Dyadic.mul_left_comm'",
+        "Becoming.Dyadic.mul_right_comm'",
+        "Becoming.Dyadic.num_pos",
+        "Becoming.Dyadic.pow_add'",
+        "Becoming.Dyadic.right_distrib'",
+        "Becoming.Dyadic.times_ge",
+        "Becoming.Dyadic.zero",
+        "Becoming.Dyadic.zero_add'",
+        "Becoming.Dyadic.zero_le'",
+        "Becoming.Halving.approaches_without_reaching",
+        "Becoming.Halving.falls",
+        "Becoming.Halving.falls_strictly",
+        "Becoming.Halving.loss",
+        "Becoming.Halving.loss_positive",
+        "Becoming.Halving.never_rests",
+        "Becoming.Halving.no_least_loss",
+        "Becoming.Halving.stock",
+        "Becoming.Law.Lossless.loses_nothing",
+        "Becoming.Law.Lossless.regains",
+        "Becoming.Law.loss_needs_merge",
+        "Becoming.Layered",
+        "Becoming.Layered.add",
+        "Becoming.Layered.add_le_add_right'",
+        "Becoming.Layered.amounts",
+        "Becoming.Layered.beyond_every_multiple",
+        "Becoming.Layered.ext'",
+        "Becoming.Layered.le",
+        "Becoming.Layered.le_of_add_le_add_right'",
+        "Becoming.Layered.le_trans'",
+        "Becoming.Layered.least",
+        "Becoming.Layered.least_positive",
+        "Becoming.Layered.loses",
+        "Becoming.Layered.never_rests",
+        "Becoming.Layered.not_archimedean",
+        "Becoming.Layered.stock",
+        "Becoming.Layered.times_coarse",
+        "Becoming.Layered.zero"
+      ],
+      "sha256": "59da0edf1b62b4dea9244f8d91fc2438f908cfb997e880ecfca538b54ef4928c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean",
+      "role": "proof",
+      "sha256": "1f59f510668e13d765089c63f40efb12f0d11af8ce53ba8d0b036a60a7b76893",
+      "declarations": [
         "Becoming.Amounts",
         "Becoming.Amounts.Archimedean",
         "Becoming.Amounts.add_le_add_left",
@@ -366,70 +427,9 @@
         "Becoming.Amounts.whole",
         "Becoming.Amounts.whole_archimedean",
         "Becoming.Amounts.whole_losing_steps",
-        "Becoming.Amounts.whole_sum",
         "Becoming.Amounts.whole_times_one",
-        "Becoming.Amounts.whole_within",
-        "Becoming.Branching.Lossless.loses_nothing",
-        "Becoming.Branching.loss_needs_merge",
-        "Becoming.Dyadic",
-        "Becoming.Dyadic.add",
-        "Becoming.Dyadic.add_assoc'",
-        "Becoming.Dyadic.add_comm'",
-        "Becoming.Dyadic.add_le_add_right'",
-        "Becoming.Dyadic.amounts",
-        "Becoming.Dyadic.archimedean",
-        "Becoming.Dyadic.expand",
-        "Becoming.Dyadic.ext'",
-        "Becoming.Dyadic.half_below",
-        "Becoming.Dyadic.le",
-        "Becoming.Dyadic.le_of_add_le_add_right'",
-        "Becoming.Dyadic.le_trans'",
-        "Becoming.Dyadic.mul_assoc'",
-        "Becoming.Dyadic.mul_left_comm'",
-        "Becoming.Dyadic.mul_right_comm'",
-        "Becoming.Dyadic.num_pos",
-        "Becoming.Dyadic.pow_add'",
-        "Becoming.Dyadic.right_distrib'",
-        "Becoming.Dyadic.times_ge",
-        "Becoming.Dyadic.zero",
-        "Becoming.Dyadic.zero_add'",
-        "Becoming.Dyadic.zero_le'",
-        "Becoming.Flow.change_stops_unrefuted_whole",
-        "Becoming.Flow.takers_within_on_whole",
-        "Becoming.Flow.taking_not_recurring_whole",
-        "Becoming.Halving.approaches_without_reaching",
-        "Becoming.Halving.falls",
-        "Becoming.Halving.falls_strictly",
-        "Becoming.Halving.loss",
-        "Becoming.Halving.loss_positive",
-        "Becoming.Halving.never_rests",
-        "Becoming.Halving.no_least_loss",
-        "Becoming.Halving.stock",
-        "Becoming.Law.Lossless.loses_nothing",
-        "Becoming.Law.Lossless.regains",
-        "Becoming.Law.loss_needs_merge",
-        "Becoming.Layered",
-        "Becoming.Layered.add",
-        "Becoming.Layered.add_le_add_right'",
-        "Becoming.Layered.amounts",
-        "Becoming.Layered.beyond_every_multiple",
-        "Becoming.Layered.ext'",
-        "Becoming.Layered.le",
-        "Becoming.Layered.le_of_add_le_add_right'",
-        "Becoming.Layered.le_trans'",
-        "Becoming.Layered.least",
-        "Becoming.Layered.least_positive",
-        "Becoming.Layered.loses",
-        "Becoming.Layered.never_rests",
-        "Becoming.Layered.not_archimedean",
-        "Becoming.Layered.stock",
-        "Becoming.Layered.times_coarse",
-        "Becoming.Layered.zero",
-        "Becoming.World.rests_unrefuted_enclosed_whole",
-        "Becoming.whole_falls_not_recurring",
-        "Becoming.whole_falls_stop_unrefuted"
-      ],
-      "sha256": "23e87fd14e948dd7ee016075b53821763a5cd27a7dedc595e50df3ba7bc6b196"
+        "Becoming.Amounts.whole_within"
+      ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T124334.350424Z/verification.json",
@@ -445,9 +445,10 @@
         "Becoming.Flow.DissipatesOn.replenishment_takers",
         "Becoming.Flow.BalancesOn.runs_down",
         "Becoming.Flow.takers_within_on",
-        "Becoming.Flow.taking_not_recurring_from"
+        "Becoming.Flow.taking_not_recurring_from",
+        "Becoming.Amounts.whole_sum"
       ],
-      "sha256": "820140f86f359309fd50ac1416cbe3ab8fe31d561beca57707dc33935ee5d867"
+      "sha256": "37c99f4c12d7fca90457cfe43a2a18fb8cc52dbe510e1919d5aa638653ec2ccf"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
@@ -461,7 +462,7 @@
         "Becoming.World.falls_of_ceases",
         "Becoming.World.rests_unrefuted_enclosed"
       ],
-      "sha256": "70ce2c4de75d1a2a8c7918f275875f110a14ea20ddb5427b9630e1515a481add"
+      "sha256": "e285f78504fa5ae4dcf078b20ab94d75cde9014ac79737210bd2cd17175a17c1"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
@@ -489,7 +490,7 @@
       "declarations": [
         "Becoming.falls_stop_unrefuted"
       ],
-      "sha256": "78d2733d6cb359a1f273f4ffbe63dd6f20ad67af536e5c6015da81b5aeed5af6"
+      "sha256": "abe4f2fd28a48e759ab3af0a8757b94f49ee365d87f9142b47faa8c8ffa9237d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
@@ -497,7 +498,7 @@
       "declarations": [
         "Becoming.falls_not_recurring"
       ],
-      "sha256": "469737b2180554148efd736cc21a323aaba416efbebc08117b5e658a710d2695"
+      "sha256": "23efa4c2ed7a38091b2d26cf42aee5a0c6a4c140ed4f67595f5389e8ed6e3382"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
@@ -508,18 +509,18 @@
         "Becoming.Law.Lossless",
         "Becoming.Law.Returns",
         "Becoming.Law.Lossless.returns",
-        "Becoming.Branching.Lossless"
+        "Becoming.Branching.Lossless",
+        "Becoming.Branching.Lossless.recurs"
       ],
-      "sha256": "c6d5aeb798d431034726d4842e3516081282bd19b637bf621caaccd1c4f4e493"
+      "sha256": "68782bae82a196b91e71f22c593fcc58ea3260b503d94cf1bc8acb15f9d65157"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
       "declarations": [
-        "Becoming.Branching.Lossless.recurs",
         "Becoming.Branching.law_lossless_iff"
       ],
-      "sha256": "970172a64cefdfc9fa4f56d5dd5e2ada589199858e4e2de83975559ab39e8929"
+      "sha256": "d9820a4b00db10c4d23cdc310073b4dfb994f7e1590b299f8f3d7310670b05f1"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ll1-least-loss/audit/LeastLossDeps.lean",
@@ -543,7 +544,7 @@
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "9d48507a87c2037c9559a573a55a39fd6721fe0d9b9b5a1858be5d8c5465c742"
+      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
@@ -556,19 +557,25 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LeastLoss.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LeastLoss",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T124334.350424Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -582,21 +589,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T124334.350424Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Renewal",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Openness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -610,15 +617,22 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Amounts.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Amounts",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -663,6 +677,10 @@
     {
       "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Branching.Lossless moved from Branching.lean to Recurrence.lean, with its full name. Proof bindings (Branching.lean, LeastLoss.lean, Openness.lean, Recurrence.lean, Space.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Branching.lean, the five notions and four orbit lemmas moved to Recurrence.lean; the five law_*_iff bridges are Iff.rfl; LeastLoss.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Openness.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; Space.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
       "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：Branching.Lossless 从 Branching.lean 移到 Recurrence.lean，名称不变。证明绑定（Branching.lean、LeastLoss.lean、Openness.lean、Recurrence.lean、Space.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Branching.lean，五个概念与四条轨道引理移到 Recurrence.lean；五座 law_*_iff 桥为 Iff.rfl；LeastLoss.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Openness.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；Space.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Moved with their full names: from Branching.lean to Recurrence.lean, Branching.Lossless.recurs; from LeastLoss.lean to Amounts.lean, Amounts, Amounts.Archimedean, Amounts.add_le_add_left, Amounts.add_swap, Amounts.add_zero, Amounts.approaches_rest, Amounts.family_loses, Amounts.family_rests, Amounts.family_rests_of_archimedean, Amounts.family_still, Amounts.few_large_losses, Amounts.few_large_losses_of_archimedean, Amounts.large_losses_from, Amounts.large_losses_within, Amounts.le_add_left, Amounts.le_add_right, Amounts.le_of_eq, Amounts.loses_times, Amounts.losses_within, Amounts.rests, Amounts.rests_of_archimedean, Amounts.rests_unrefuted, Amounts.still_le, Amounts.still_of_falls, Amounts.still_within, Amounts.sum, Amounts.times, Amounts.times_le, Amounts.whole, Amounts.whole_archimedean, Amounts.whole_losing_steps, Amounts.whole_times_one, Amounts.whole_within; from LeastLoss.lean to Dissipation.lean, Amounts.whole_sum. Removed, with the statement kept under one name: Flow.change_stops_unrefuted_whole (now Flow.change_stops_unrefuted); Flow.takers_within_on_whole (now Flow.takers_within_on); Flow.taking_not_recurring_whole (now Flow.taking_not_recurring_from); World.rests_unrefuted_enclosed_whole (now World.rests_unrefuted_enclosed); whole_falls_not_recurring (now falls_not_recurring); whole_falls_stop_unrefuted (now falls_stop_unrefuted). The sentences that said a removed name proved something cite the kept statement. Proof bindings (Branching.lean, Dissipation.lean, LeastLoss.lean, Openness.lean, Recurrence.lean, Renewal.lean, Space.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Branching.lean, the laws of every process moved to Recurrence.lean; Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged; LeastLoss.lean, the amounts and their laws moved to Amounts.lean, Amounts.whole_sum to Dissipation.lean; the six whole-number re-proofs removed; the countermodels and the laws of merging kept; Openness.lean, Flow.change_stops_unrefuted proved by Amounts.rests_unrefuted with no decision, statement unchanged; World.Finite.arising_iff_ceasing and World.Finite.comes_to_rest_unrefuted removed (one name per statement); Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; Renewal.lean, imports Becoming.Amounts; falls_not_recurring proved as the whole-number instance of Amounts.rests, statement unchanged; Space.lean, falls_stop_unrefuted proved as the whole-number instance of Amounts.rests_unrefuted, statement unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：连同完整名称移动：从 Branching.lean 到 Recurrence.lean：Branching.Lossless.recurs；从 LeastLoss.lean 到 Amounts.lean：Amounts、Amounts.Archimedean、Amounts.add_le_add_left、Amounts.add_swap、Amounts.add_zero、Amounts.approaches_rest、Amounts.family_loses、Amounts.family_rests、Amounts.family_rests_of_archimedean、Amounts.family_still、Amounts.few_large_losses、Amounts.few_large_losses_of_archimedean、Amounts.large_losses_from、Amounts.large_losses_within、Amounts.le_add_left、Amounts.le_add_right、Amounts.le_of_eq、Amounts.loses_times、Amounts.losses_within、Amounts.rests、Amounts.rests_of_archimedean、Amounts.rests_unrefuted、Amounts.still_le、Amounts.still_of_falls、Amounts.still_within、Amounts.sum、Amounts.times、Amounts.times_le、Amounts.whole、Amounts.whole_archimedean、Amounts.whole_losing_steps、Amounts.whole_times_one、Amounts.whole_within；从 LeastLoss.lean 到 Dissipation.lean：Amounts.whole_sum。删去，陈述以一个名称保留：Flow.change_stops_unrefuted_whole（现为 Flow.change_stops_unrefuted）；Flow.takers_within_on_whole（现为 Flow.takers_within_on）；Flow.taking_not_recurring_whole（现为 Flow.taking_not_recurring_from）；World.rests_unrefuted_enclosed_whole（现为 World.rests_unrefuted_enclosed）；whole_falls_not_recurring（现为 falls_not_recurring）；whole_falls_stop_unrefuted（现为 falls_stop_unrefuted）。说删去之名证明了什么的句子改引保留的陈述。证明绑定（Branching.lean、Dissipation.lean、LeastLoss.lean、Openness.lean、Recurrence.lean、Renewal.lean、Space.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Branching.lean，每个过程之律移到 Recurrence.lean；Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变；LeastLoss.lean，量及其律移到 Amounts.lean，Amounts.whole_sum 移到 Dissipation.lean；六个整数重证删去；反模型与合并之律保留；Openness.lean，Flow.change_stops_unrefuted 由 Amounts.rests_unrefuted 不经判定证明，陈述不变；删去 World.Finite.arising_iff_ceasing 与 World.Finite.comes_to_rest_unrefuted（每个陈述一个名称）；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；Renewal.lean，导入 Becoming.Amounts；falls_not_recurring 作为 Amounts.rests 的整数实例证明，陈述不变；Space.lean，falls_stop_unrefuted 作为 Amounts.rests_unrefuted 的整数实例证明，陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
     }
   ]
 }

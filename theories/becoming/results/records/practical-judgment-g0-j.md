@@ -109,6 +109,7 @@ Roles arise through shared living and formed dependence; causation, benefit and 
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json) | — |
 
 Aliases: `Practical judgment G0/J1–J4`, `Becoming.Judgment.better_iff_betterAt`, `Becoming.Judgment.frontier_exists`, `Becoming.exists_undominated`, `J1–J4 in the core`, `实践承诺在核心中`, `Becoming.FrontierFrames.Priority`, `Becoming.FrontierFrames.choice_exists_iff_weakly`, `Becoming.FrontierFrames.Priority.kept_required`, `Becoming.FrontierWorlds.sole_giver_required`, `Becoming.FrontierWorlds.Discharged.no_residual`
 
@@ -138,6 +139,7 @@ Aliases: `Practical judgment G0/J1–J4`, `Becoming.Judgment.better_iff_betterAt
 - 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
 - 19 October 2026, U5 (study section 208): FrontierWorlds gains the assignment and discharge laws of Frontier read on the world's moves (sole giver required and active; discharge leaves no residual step); its proof reference and binding move to core receipt 20261019T133615.720595Z. The statement and the warrant of the commitments are unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: Above, tierFrame, above_iff_frame from Lexical.lean to FrontierFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Decidedness.lean, Frontier.lean, FrontierFrames.lean, Lexical.lean). The claim is unchanged.
+- 20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Decidedness.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.
 - 9 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](practical-judgment-g0-j.json).
 
 <a id="earlier-text--早期文本"></a>

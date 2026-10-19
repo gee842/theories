@@ -36,8 +36,8 @@
       ]
     },
     {
-      "en": "Where configurations alike under the projection go alike, every run is consistent through it at every step; the converse fails: a run staying at one configuration of a process allowing every step is consistent through the identity, and the process does not go alike. Switching's missing state law follows from the criterion along its run.",
-      "zh": "经投影相同的配置同去之处，每个运行在每一步经它一致；反之不然：在允许每一步的过程中停在一个配置的运行经恒等一致，而过程不同去。Switching 缺少状态规律，可沿其运行由判据推出。",
+      "en": "Where configurations alike under the projection go alike, every run is consistent through it at every step; the converse fails: a run staying at one configuration of a process allowing every step is consistent through the identity, and the process does not go alike. Switching's run is inconsistent through the projection; its missing state law is Switching.no_state_law of Becoming.Mechanism.",
+      "zh": "经投影相同的配置同去之处，每个运行在每一步经它一致；反之不然：在允许每一步的过程中停在一个配置的运行经恒等一致，而过程不同去。Switching 的运行经投影不一致；它缺少状态规律，即 Becoming.Mechanism 的 Switching.no_state_law。",
       "declarations": [
         "Becoming.Run.consistent_of_goAlike",
         "Becoming.Constant.process",
@@ -45,7 +45,7 @@
         "Becoming.Constant.consistent",
         "Becoming.Constant.not_goAlike",
         "Becoming.Switching.inconsistent",
-        "Becoming.Switching.no_state_law_of_criterion"
+        "Becoming.Switching.no_state_law"
       ]
     },
     {
@@ -260,11 +260,10 @@
         "Becoming.Stuck.goAlike_not_matches",
         "Becoming.Stuck.process",
         "Becoming.Switching.inconsistent",
-        "Becoming.Switching.no_state_law_of_criterion",
         "Becoming.exact_law_iff",
         "Becoming.image_exact_iff"
       ],
-      "sha256": "d4c133750f4a962689da0b4e4da7e6e66e2e4957d94c3cdd1366a0e0a2d645fd"
+      "sha256": "2b640cfbe2f5ed3d428f626d675adf5c749ba3535c488324253102e88982a7e7"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
@@ -278,7 +277,8 @@
         "Becoming.goAlike_const",
         "Becoming.Coarse.process",
         "Becoming.Coarse.goAlike",
-        "Becoming.Switching.run"
+        "Becoming.Switching.run",
+        "Becoming.Switching.no_state_law"
       ],
       "sha256": "25b1a8e61f785d83f938706eceb5b98f13e590ebd9803c0c3c3f03eec9336b33"
     },
@@ -302,7 +302,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "6799a78a8351ac82ad9dc581c09c1099a80b8560c4cb53c3694eef262b2d578d",
+      "sha256": "e90cc67d33659d78dc348fdbf93defbfb9879414d16c0613656abf102fff3926",
       "declarations": [
         "Becoming.Consistent"
       ]
@@ -329,7 +329,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9d48507a87c2037c9559a573a55a39fd6721fe0d9b9b5a1858be5d8c5465c742"
+      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -359,12 +359,18 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "role": "receipt",
+      "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawAlongRun.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LawAlongRun",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -399,7 +405,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -519,6 +525,10 @@
     {
       "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Labelled.lean, Mechanism.lean, Unfolding.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Unfolding.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
       "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Labelled.lean、Mechanism.lean、Unfolding.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Unfolding.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: Switching.no_state_law_of_criterion (now Switching.no_state_law). The sentences that said a removed name proved something cite the kept statement. Proof bindings (Labelled.lean, LawAlongRun.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; LawAlongRun.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
+      "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：Switching.no_state_law_of_criterion（现为 Switching.no_state_law）。说删去之名证明了什么的句子改引保留的陈述。证明绑定（Labelled.lean、LawAlongRun.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；LawAlongRun.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
     }
   ]
 }
