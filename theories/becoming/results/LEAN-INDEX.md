@@ -19,7 +19,7 @@ Warrant of ethical premises, valid inference, recognition, motivation and implem
 <a id="覆盖范围--coverage"></a>
 ## Coverage
 
-The inventory contains **1,694 `.lean` paths and 1,298 distinct byte contents**, including 135 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
+The inventory contains **1,695 `.lean` paths and 1,299 distinct byte contents**, including 135 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
 
 | File role | Paths |
 |---|---:|
@@ -27,9 +27,9 @@ The inventory contains **1,694 `.lean` paths and 1,298 distinct byte contents**,
 | Development attempt | 801 |
 | Historical draft | 3 |
 | Imported archive | 23 |
-| Working source | 854 |
+| Working source | 855 |
 
-The working-source and audit entries contain **22,078 explicit theorem/lemma occurrences** and 33,121 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
+The working-source and audit entries contain **22,102 explicit theorem/lemma occurrences** and 33,154 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
 
 Hidden, ignored and untracked files are included; `.git`, `.lake`, `node_modules`, `.venv`, `venv`, `__pycache__` and other sessions' worktrees (`.claude/worktrees`) are excluded, and directory symlinks are not followed. Archives and attempts remain in the JSON inventory without repeating them in the main table; saved copies in run, check, snapshot and history folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.
 
@@ -49,7 +49,7 @@ The scan lists explicit theorem, lemma, def, abbrev, structure, inductive, opaqu
 | [Abstraction, applicability and constitution](#group-abstraction) | 45 |
 | [Concern and shared activity](#group-concern) | 15 |
 | [Organizational formation through revisable evaluation](#group-shared) | 66 |
-| [Generative core and relational structure](#group-core) | 136 |
+| [Generative core and relational structure](#group-core) | 137 |
 | [Other formal studies](#group-other) | 29 |
 
 <a id="group-becoming-core"></a>
@@ -1008,6 +1008,7 @@ Conceptual entry: [GENERATIVE-CORE-LEAN](../history/GENERATIVE-CORE-LEAN.md) (ea
 | [ProtectedScopeLimits](../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/ProtectedScopeLimits.lean) · [Names](lean-declarations/core.md#module-a915d0fcaf85) | 6 | 4 | [Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md) |
 | [RegeneratingPersistence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/RegeneratingPersistence.lean) · [Names](lean-declarations/core.md#module-d8a479331a75) | 10 | 3 | [Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md) |
 | [WholeQualityNaturalism](../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/WholeQualityNaturalism.lean) · [Names](lean-declarations/core.md#module-b4942b7409e4) | 25 | 18 | [Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MODULE-CLASSIFICATION.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md) |
+| [EntropyProduction](../../../experiments/integrated-correction/general-framework/generative-basis/lean/physics/EntropyProduction.lean) · [Names](lean-declarations/core.md#module-38befb7a7fdb) | 24 | 9 | [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/README.md) |
 
 <a id="group-other"></a>
 

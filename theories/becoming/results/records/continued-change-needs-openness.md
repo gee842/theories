@@ -120,7 +120,7 @@ The rests of space-and-its-parts makes a world's rest unrefutable through finite
 - related, not a proved adapter: [space-and-its-parts](space-and-its-parts.md). rests there assumes finiteness; the rest theorem replaces finiteness with censuses and enclosure, and rests_unrefuted is its finite case (World.Finite.comes_to_rest_unrefuted, P26).
 - related, not a proved adapter: [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md). Openness is exchange and inflow is gain: there, where the gain novelty needs comes from.
 
-**Used by:** [counting-standing-and-dependence](counting-standing-and-dependence.md) · [counting-under-enclosure](counting-under-enclosure.md) · [entropy-history-and-record](entropy-history-and-record.md) · [rest-at-every-resolution](rest-at-every-resolution.md) · [rest-with-refinement-counted](rest-with-refinement-counted.md) · [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md)
+**Used by:** [counting-standing-and-dependence](counting-standing-and-dependence.md) · [counting-under-enclosure](counting-under-enclosure.md) · [entropy-history-and-record](entropy-history-and-record.md) · [least-loss-from-entropy-production](least-loss-from-entropy-production.md) · [rest-at-every-resolution](rest-at-every-resolution.md) · [rest-with-refinement-counted](rest-with-refinement-counted.md) · [where-novelty-gain-comes-from](where-novelty-gain-comes-from.md)
 
 <a id="sources--来源"></a>
 ### Sources

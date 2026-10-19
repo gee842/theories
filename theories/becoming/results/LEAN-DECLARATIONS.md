@@ -22,7 +22,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 | [Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 45 | 981 |
 | [Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [Generative core and relational structure](lean-declarations/core.md) | 136 | 1,883 |
+| [Generative core and relational structure](lean-declarations/core.md) | 137 | 1,907 |
 | [Other formal studies](lean-declarations/other.md) | 29 | 873 |
 
 <a id="按名称查找--find-by-name"></a>
@@ -255,6 +255,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [EncounterChoice.lean](lean-declarations/inquiry.md#module-130b052828c4) | Attainable inquiry, contact and process laws |
 | [Enough.lean](lean-declarations/becoming-core.md#module-76ad8e8c0e8d) | Becoming pure core |
 | [Entropy.lean](lean-declarations/becoming-core.md#module-53f5f554b2a8) | Becoming pure core |
+| [EntropyProduction.lean](lean-declarations/core.md#module-38befb7a7fdb) | Generative core and relational structure |
 | [Enumeration.lean](lean-declarations/shared.md#module-2aa3f81f3ba3) | Organizational formation through revisable evaluation |
 | [EqualityGenerativity.lean](lean-declarations/abstraction.md#module-475eb20715c8) | Abstraction, applicability and constitution |
 | [EthicalOrientation.lean](lean-declarations/core.md#module-b65d39fd3ece) | Generative core and relational structure |

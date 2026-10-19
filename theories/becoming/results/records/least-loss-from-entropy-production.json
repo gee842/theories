@@ -1,0 +1,332 @@
+{
+  "schema_version": 2,
+  "id": "least-loss-from-entropy-production",
+  "title": {
+    "zh": "熵产生给出的最小损失",
+    "en": "The least loss from entropy production"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T09:00:00+00:00",
+  "statement": {
+    "zh": "读作可用功，第二定律是脊柱的第一律，被毁的㶲是记录；单靠它不给出耗散。每次取用都不可逆且量为整单位，或被毁㶲有不小于单位的下限（Landauer），就给出耗散；只在期望中的耗散几乎必然给出取用不复现。",
+    "en": "Read in available work, the second law is the spine's first law and destroyed exergy is the record; alone it gives no dissipation. Irreversible taking with whole units, or a floor of destruction at least the unit (Landauer), gives it; dissipation in expectation gives rest almost surely."
+  },
+  "laws": [
+    {
+      "en": "Read each unit of amount as u of available work relative to one environment, and let σ t f be the exergy formation f's exchange destroys across the step from t. The exergy balance says that over a closed family the formation gives, with what it destroys, exactly what it takes; the second law says no exchange destroys negative exergy.",
+      "declarations": [
+        "Becoming.EntropyProduction.ExergyBalance",
+        "Becoming.EntropyProduction.SecondLaw"
+      ]
+    },
+    {
+      "en": "Under the exergy balance and the second law, nothing comes from nothing at the unit: the second law read in available work is the spine's first law, and the exergy destroyed is the residue counted in units, the record of Flow.dissipatesOn_iff_conserved.",
+      "declarations": [
+        "Becoming.EntropyProduction.ExergyBalance.give_le",
+        "Becoming.EntropyProduction.gainless_of_secondLaw",
+        "Becoming.EntropyProduction.ExergyBalance.destroyed_eq_residue"
+      ]
+    },
+    {
+      "en": "The second law alone does not give dissipation: in Passing it holds with no exergy destroyed, at every unit, and the flow is not dissipative.",
+      "declarations": [
+        "Becoming.EntropyProduction.passing_balance",
+        "Becoming.EntropyProduction.secondLaw_not_dissipative"
+      ]
+    },
+    {
+      "en": "Where, in addition, every exchange that takes from a closed family destroys some exergy, the flow is dissipative: with whole units of amount, giving back strictly less is giving back at least one unit less.",
+      "declarations": [
+        "Becoming.EntropyProduction.Irreversible",
+        "Becoming.EntropyProduction.dissipative_of_irreversible"
+      ]
+    },
+    {
+      "en": "Where every exchange that takes destroys at least s, the loss counted at the unit u is at least every whole n with n u ≤ s, the flow is dissipative at every unit within s, and at an r-fold finer unit the loss is at least r units: a floor in energy, as Landauer's kT ln 2 per merged bit, survives refinement.",
+      "declarations": [
+        "Becoming.EntropyProduction.DestroysAtLeast",
+        "Becoming.EntropyProduction.loss_of_floor",
+        "Becoming.EntropyProduction.dissipative_of_floor",
+        "Becoming.EntropyProduction.loss_at_finer_unit"
+      ]
+    },
+    {
+      "en": "Where every exchange over a closed family destroys at least a (q + 1)th of the exergy it takes, the flow is dissipative in proportion q (Flow.DissipativeBy q), whatever the unit.",
+      "declarations": [
+        "Becoming.EntropyProduction.dissipativeBy_of_efficiency"
+      ]
+    },
+    {
+      "en": "Over runs drawn from a measure, dissipation in expectation (in expectation, replenishment and takers within uptake) follows from dissipation on every run, and from an exergy balance on each run with expected destruction of at least u for each formation that takes, single runs free to destroy negative exergy.",
+      "declarations": [
+        "Becoming.EntropyProduction.ExpectedDissipatesOn",
+        "Becoming.EntropyProduction.HasExpectations",
+        "Becoming.EntropyProduction.ExpectedDissipatesOn.of_pathwise",
+        "Becoming.EntropyProduction.ExpectedDissipatesOn.of_exergy"
+      ]
+    },
+    {
+      "en": "Balanced on each run and dissipated on in expectation from step T, the expected stock falls across each step by the expected takers, the expected takers over every stretch and the summed probabilities of taking are within the expected stock at T, and on almost every run, from some step on, no formation takes.",
+      "declarations": [
+        "Becoming.EntropyProduction.expected_runs_down",
+        "Becoming.EntropyProduction.expected_takers_within",
+        "Becoming.EntropyProduction.expected_stock_nonneg",
+        "Becoming.EntropyProduction.taking_probability_le",
+        "Becoming.EntropyProduction.taking_probability_within",
+        "Becoming.EntropyProduction.taking_not_recurring_ae"
+      ]
+    },
+    {
+      "en": "Dissipation in expectation is weaker than dissipation: in Fluctuation, balanced and closed on both runs and dissipated on in expectation at every step, one run gains, so its flow is neither gainless nor dissipative.",
+      "declarations": [
+        "Becoming.EntropyProduction.Fluctuation.flow",
+        "Becoming.EntropyProduction.Fluctuation.web",
+        "Becoming.EntropyProduction.Fluctuation.coin",
+        "Becoming.EntropyProduction.Fluctuation.integral_coin",
+        "Becoming.EntropyProduction.Fluctuation.balances",
+        "Becoming.EntropyProduction.Fluctuation.closed",
+        "Becoming.EntropyProduction.Fluctuation.gains_in_one_run"
+      ]
+    },
+    {
+      "en": "Where the entropy production S, in units of Boltzmann's constant, meets the integral fluctuation theorem E[exp(−S)] = 1, its expectation is not negative, and a run producing at most −a has probability at most exp(−a).",
+      "declarations": [
+        "Becoming.EntropyProduction.expected_production_nonneg",
+        "Becoming.EntropyProduction.gain_probability_le"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "Each unit of amount is read as u of available work (exergy) relative to one environment at one temperature; the exergy each exchange destroys is σ, real. These are hypotheses of the theorems, read as physics by correspondence, not axioms."
+    },
+    {
+      "en": "Conditions hold every amount; formations hold none, so a formation's exergy taken and not given back is destroyed, not stored. A store inside a process is counted as a condition."
+    },
+    {
+      "en": "The deterministic laws ask the exergy balance and its premises on every family without repetition closed across a step, at each step; the statistical laws ask balance on each run, expectations of the stock, uptake, replenishment and takers, and a finite measure for the almost-sure law."
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That any actual system's amounts are available work, that its exchanges meet these premises, or Landauer's bound itself: the step from physics to the Lean is a stated correspondence.",
+      "kind": "correspondence"
+    },
+    {
+      "en": "That the second law gives dissipation: it gives nothing from nothing; the strict part needs irreversibility of every taking exchange with whole units, or a floor.",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That strict irreversibility gives a least loss at a refining unit: a strict loss without a floor can fall below every unit; only a floor in energy or a proportion survives refinement.",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Pathwise rest from dissipation in expectation: single runs may gain and may take more often than their stock; the bound holds in expectation and rest almost surely.",
+      "kind": "scope"
+    },
+    {
+      "en": "The integral fluctuation theorem itself, or local detailed balance, from which stochastic thermodynamics derives it; both are hypotheses here.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "detail": {
+        "en": "Passing: finite, balanced, lossless and enclosed, never resting; it meets the exergy balance and the second law with nothing destroyed and is not dissipative (secondLaw_not_dissipative), the case of an isolated reversible exchange."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/physics/EntropyProduction.lean",
+      "detail": {
+        "en": "Fluctuation: one run of two gains while the family is dissipated on in expectation at every step (Fluctuation.gains_in_one_run)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "discrete-steps",
+    "no-evaluation"
+  ],
+  "validation_scope": {
+    "en": "Checked by the periphery checker with Lean 4.30.0-rc2 and the pinned Mathlib: 24 theorems and 33 declarations of EntropyProduction, each depending only on propext, Classical.choice and Quot.sound through Mathlib's reals and measures; the core modules it imports match passed receipts. The core does not import it. No independent review."
+  },
+  "next_delta": {
+    "en": "A core form with rational amounts and no Mathlib for the deterministic laws; the exchange-level Landauer bound from the second law and the memory's entropy; finite-time floors (thermodynamic length, the uncertainty relation) as instances of DestroysAtLeast; the rest family in expectation at a refining unit."
+  },
+  "correspondence": {
+    "en": "Physics read onto the spine. Gouy–Stodola: exergy destroyed is T0 times the entropy generated, never negative, so the second law in available work is the spine's first law and the destroyed exergy is the record of Flow.dissipatesOn_iff_conserved; Kelvin–Planck says no exchange draws that record back. Landauer (confirmed by Bérut et al. 2012 and Jun, Gavrilov and Bechhoefer 2014; its general derivation disputed by Norton): erasing a bit at temperature T destroys at least kT ln 2 in expectation, a floor for DestroysAtLeast wherever each taking exchange merges what it held. Whole units: carriers of one free energy each, as ATP or photons of one frequency. Fluctuation theorems (Jarzynski, Crooks, Seifert; observed by Wang et al. 2002 and Collin et al. 2005): single small runs gain, so the premise there is dissipation in expectation. Isolated reversible dynamics (Liouville; Poincaré recurrence) is Passing."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/physics/EntropyProduction.lean",
+  "aliases": [
+    "Becoming.EntropyProduction.ExergyBalance",
+    "Becoming.EntropyProduction.SecondLaw",
+    "Becoming.EntropyProduction.ExergyBalance.give_le",
+    "Becoming.EntropyProduction.gainless_of_secondLaw",
+    "Becoming.EntropyProduction.ExergyBalance.destroyed_eq_residue",
+    "Becoming.EntropyProduction.passing_balance",
+    "Becoming.EntropyProduction.secondLaw_not_dissipative",
+    "Becoming.EntropyProduction.Irreversible",
+    "Becoming.EntropyProduction.dissipative_of_irreversible",
+    "Becoming.EntropyProduction.DestroysAtLeast",
+    "Becoming.EntropyProduction.loss_of_floor",
+    "Becoming.EntropyProduction.dissipative_of_floor",
+    "Becoming.EntropyProduction.loss_at_finer_unit",
+    "Becoming.EntropyProduction.dissipativeBy_of_efficiency",
+    "Becoming.EntropyProduction.ExpectedDissipatesOn",
+    "Becoming.EntropyProduction.HasExpectations",
+    "Becoming.EntropyProduction.ExpectedDissipatesOn.of_pathwise",
+    "Becoming.EntropyProduction.ExpectedDissipatesOn.of_exergy",
+    "Becoming.EntropyProduction.expected_runs_down",
+    "Becoming.EntropyProduction.expected_takers_within",
+    "Becoming.EntropyProduction.expected_stock_nonneg",
+    "Becoming.EntropyProduction.taking_probability_le",
+    "Becoming.EntropyProduction.taking_probability_within",
+    "Becoming.EntropyProduction.taking_not_recurring_ae",
+    "Becoming.EntropyProduction.Fluctuation.flow",
+    "Becoming.EntropyProduction.Fluctuation.web",
+    "Becoming.EntropyProduction.Fluctuation.coin",
+    "Becoming.EntropyProduction.Fluctuation.integral_coin",
+    "Becoming.EntropyProduction.Fluctuation.balances",
+    "Becoming.EntropyProduction.Fluctuation.closed",
+    "Becoming.EntropyProduction.Fluctuation.gains_in_one_run",
+    "Becoming.EntropyProduction.expected_production_nonneg",
+    "Becoming.EntropyProduction.gain_probability_le"
+  ],
+  "dependencies": [
+    {
+      "id": "entropy-history-and-record",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.residue, Flow.Gainless, Flow.dissipatesOn_iff_conserved and Passing (Passing.lossless, Passing.passes); the exergy destroyed is the residue counted in units."
+      }
+    },
+    {
+      "id": "rest-at-every-resolution",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.DissipativeBy and Flow.DissipatesBy.of_each; bounded efficiency gives loss in proportion, the form that does not depend on the unit."
+      }
+    },
+    {
+      "id": "continued-change-needs-openness",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.Dissipative, Flow.ClosedAt, Flow.Balances.over and Flow.DissipatesOn.replenishment_takers; the almost-sure law is the statistical form of Flow.Balances.taking_not_recurring."
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "rest-with-refinement-counted",
+      "detail": {
+        "en": "There the refinement counted brings rest at every resolution; here a floor in energy counts r units at an r-fold finer unit."
+      }
+    },
+    {
+      "id": "premises-read-off-the-exchange",
+      "detail": {
+        "en": "There dissipation is a state of the law of exchange, not read off every exchange; here the physical premises under which it holds."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/physics/EntropyProduction.lean",
+      "role": "proof",
+      "sha256": "ac9db17a6316f10e8d92b60fb8adb5596def1cfb51b94999770d1a3ce43e0629",
+      "declarations": [
+        "Becoming.EntropyProduction.ExergyBalance",
+        "Becoming.EntropyProduction.SecondLaw",
+        "Becoming.EntropyProduction.ExergyBalance.give_le",
+        "Becoming.EntropyProduction.gainless_of_secondLaw",
+        "Becoming.EntropyProduction.ExergyBalance.destroyed_eq_residue",
+        "Becoming.EntropyProduction.passing_balance",
+        "Becoming.EntropyProduction.secondLaw_not_dissipative",
+        "Becoming.EntropyProduction.Irreversible",
+        "Becoming.EntropyProduction.dissipative_of_irreversible",
+        "Becoming.EntropyProduction.DestroysAtLeast",
+        "Becoming.EntropyProduction.loss_of_floor",
+        "Becoming.EntropyProduction.dissipative_of_floor",
+        "Becoming.EntropyProduction.loss_at_finer_unit",
+        "Becoming.EntropyProduction.dissipativeBy_of_efficiency",
+        "Becoming.EntropyProduction.ExpectedDissipatesOn",
+        "Becoming.EntropyProduction.HasExpectations",
+        "Becoming.EntropyProduction.ExpectedDissipatesOn.of_pathwise",
+        "Becoming.EntropyProduction.ExpectedDissipatesOn.of_exergy",
+        "Becoming.EntropyProduction.expected_runs_down",
+        "Becoming.EntropyProduction.expected_takers_within",
+        "Becoming.EntropyProduction.expected_stock_nonneg",
+        "Becoming.EntropyProduction.taking_probability_le",
+        "Becoming.EntropyProduction.taking_probability_within",
+        "Becoming.EntropyProduction.taking_not_recurring_ae",
+        "Becoming.EntropyProduction.Fluctuation.flow",
+        "Becoming.EntropyProduction.Fluctuation.web",
+        "Becoming.EntropyProduction.Fluctuation.coin",
+        "Becoming.EntropyProduction.Fluctuation.integral_coin",
+        "Becoming.EntropyProduction.Fluctuation.balances",
+        "Becoming.EntropyProduction.Fluctuation.closed",
+        "Becoming.EntropyProduction.Fluctuation.gains_in_one_run",
+        "Becoming.EntropyProduction.expected_production_nonneg",
+        "Becoming.EntropyProduction.gain_probability_le"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/physics/entropy-production-checks/20261019T082858.129214Z/verification.json",
+      "role": "receipt",
+      "sha256": "4172ca4f21f6dc399f0838f8d6a92b593578a69a57ea893060d3fc57eeb8db26"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/physics/check_entropy_production.py",
+      "role": "integration",
+      "sha256": "abc521419d95c06dd759112d31bd9738ea2764aee37ed153be6e69f33ec6e54f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+      "role": "statement",
+      "sha256": "1cba13043e8de03404856b080b92321dadaa80016770bd67b4dc48e30fc49a3d",
+      "declarations": [
+        "Becoming.Flow.residue",
+        "Becoming.Flow.Gainless",
+        "Becoming.Flow.dissipatesOn_iff_conserved",
+        "Becoming.Passing.passes",
+        "Becoming.Passing.lossless"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "statement",
+      "sha256": "820140f86f359309fd50ac1416cbe3ab8fe31d561beca57707dc33935ee5d867",
+      "declarations": [
+        "Becoming.Flow.Dissipative",
+        "Becoming.Flow.ClosedAt",
+        "Becoming.Flow.Balances.taking_not_recurring"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "role": "statement",
+      "sha256": "b42d52b2248274aa1999d0c0e77ffe01a3c86e29dd8ed79a8e9e3c05675d6a90",
+      "declarations": [
+        "Becoming.Flow.DissipativeBy",
+        "Becoming.Flow.DissipatesBy.of_each"
+      ]
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/physics/EntropyProduction.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/physics/entropy-production-checks/20261019T082858.129214Z/verification.json",
+      "sha256_pointer": "/source_sha256/EntropyProduction",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "Added for the question whether the opening's \"as in ours\" can stand: which accepted physical premises give the spine's dissipation, for which systems (board item T1)."
+    }
+  ],
+  "text_versions": []
+}

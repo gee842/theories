@@ -1085,7 +1085,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 **经验对应**
 
 - 共同条件与各机制的实际实现：识别与可区分的检验。
-- 实际展开是否满足各前提：活动需要支持、平衡、只有活跃者给予与取用、耗散、体现、储备与传递（`TransmitsWithin`）。
+- 实际展开是否满足各前提：活动需要支持、平衡、只有活跃者给予与取用、耗散、体现、储备与传递（`TransmitsWithin`）。所述的耗散（封闭家族中每次取用至少损失一个单位）强于统计的第二定律，`Passing` 是有限、被围住、无损、永不停息的世界。哪些物理前提给出它、对哪类系统，见 [least-loss-from-entropy-production](../results/records/least-loss-from-entropy-production.md)（外围模块 `EntropyProduction`）：读作可用功，第二定律给出无中不生有；耗散还需每次取用的交换都不可逆且量为整单位，或被毁的㶲有不小于单位的下限（Landauer 每合并一位 kT ln 2，这一下限在细分下仍成立）；被毁的㶲至少是所取的 1/(q+1) 时给出按比例的损失；只在期望中成立的耗散（涨落定理所允许的）仍使封闭家族的取用在几乎每次运行中终止（`taking_not_recurring_ae`）。某个系统的交换是否满足这些前提，仍是经验问题。
 - 智慧的实际形成：说明智慧怎样实际形成（[wisdom-root](../results/records/wisdom-root.md)）；其形式部分已在不用公理的规律所及范围内完成（[wisdom-root-part-one](../results/records/wisdom-root-part-one.md)），实际的人与 AI 是否经这些路线形成其理解与修订，是解释与经验的任务，不是进一步的证明。
 - 实际的外推与网络持有或能达到的类：一个实际网络的结构、起点与更新施加哪个归并，其与世界的对应（[generalization-through-lumping](../results/records/generalization-through-lumping.md)）。
 - 更强的方向假说：现实一般地发展出更共同、更有回应的更新。开放，不作为前提使用。
