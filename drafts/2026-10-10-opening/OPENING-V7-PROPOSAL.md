@@ -1,5 +1,7 @@
 # Opening, version 7: scope edits proposed for Ren
 
+**Applied 19 October 2026 with Ren's go** ([source](../../sources/15-codex-theory-conversations/2026-10-19-opening-v7.md)): the integrated text of the second review, with one correction in applying (Ren's clause "no one, not even the winner, wants to be where this race ends", which the integrated text had dropped, is kept); frozen as [OPENING-V7.md](OPENING-V7.md). The third pass's edits (nn), (oo), (oo′) and (pp) are agreed and take effect as T1 with LL1, Z1 and PT1 land; each lander applies its body edit with its note.
+
 AI proposal, 19 October 2026. Not applied. [OPENING.md](../../theories/becoming/OPENING.md) is in Ren's voice and changes only through a proposal to him. Board item R20 (fixes from the outside review of 19 October) lists "a proposal to Ren for OPENING's body"; this is that proposal's draft, offered to R20's owner.
 
 **What prompted it.** An outside reader's critique, which Ren received on 19 October, read the opening as claiming universal, empirical and ethical truth from proofs inside a model. The critique's own evidence was the footnotes, which already mark every such step as open, a reading or a judgment. So the reader did not misread the body: several body sentences assert what their notes take back. The v6 proposal ([history](history/OPENING-V6-PROPOSAL.md)) aimed that "no sentence of the main text says more than its footnote" and left the thesis sentence to Ren. This proposal takes up that sentence and the remaining ones.
