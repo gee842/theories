@@ -575,7 +575,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "4e129f5e3d48fe5531409b283d30c0c896f834d2f2b40e74796c7bd19c3111ae",
+      "sha256": "c6d5aeb798d431034726d4842e3516081282bd19b637bf621caaccd1c4f4e493",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.trajectory"
@@ -584,7 +584,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "60a43bae208eb28211003bdf046db891eafc73a59615d309b9a50e0be08ddf63",
+      "sha256": "25b1a8e61f785d83f938706eceb5b98f13e590ebd9803c0c3c3f03eec9336b33",
       "declarations": [
         "Becoming.GoAlike",
         "Becoming.GoAlike.runs_agree",
@@ -603,7 +603,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "84dc14ccc58aa05eccac81923378cd89ec3d7274077e5a9b75bbc77ee454e47d",
+      "sha256": "15caf541249d7cbc99c8e2dd83069225f18dfac154248d9cb03eb16328872775",
       "declarations": [
         "Becoming.Fork.label_couples"
       ]
@@ -611,7 +611,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "8dafce813eca451b6abc016eb088282d10bf104e47d4dfd93d50ba27b0372f7f",
+      "sha256": "6799a78a8351ac82ad9dc581c09c1099a80b8560c4cb53c3694eef262b2d578d",
       "declarations": [
         "Becoming.closedBy"
       ]
@@ -655,7 +655,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
       "role": "proof",
-      "sha256": "aa0e051de0783cc47458f5c4ec23a0ec1da2a636bf223c3c0570f07e2ded453d",
+      "sha256": "b9e294369470ba410778956ee412d0eef19f1c21df5e9a90df37b5f05f2e6c9a",
       "declarations": [
         "Becoming.World.withRest",
         "Becoming.ExchangeLaw.requirement_beyond_course"
@@ -664,7 +664,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "c0ffce10fb75c5660593dc868cf11bf92da1b8253fa22f48bb020607c894081a",
+      "sha256": "1e1fee594c030c30234cd829e409e069b86b60d1a9dacbbf6df83a969380c5e4",
       "declarations": [
         "Becoming.World.unity"
       ]
@@ -677,7 +677,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "afe41a64aa305bb1b9da0cfef9c0eea0ad0a9c6282e1c9ff09f9907ccfb19345"
+      "sha256": "9d48507a87c2037c9559a573a55a39fd6721fe0d9b9b5a1858be5d8c5465c742"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md",
@@ -747,6 +747,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -773,14 +779,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -794,7 +800,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -822,21 +828,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Reading",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1065,6 +1071,10 @@
     {
       "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
       "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Labelled.lean, Mechanism.lean, Reading.lean, Readings.lean, Recurrence.lean, Unfolding.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Reading.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Readings.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; Unfolding.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Labelled.lean、Mechanism.lean、Reading.lean、Readings.lean、Recurrence.lean、Unfolding.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Reading.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Readings.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；Unfolding.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
     }
   ],
   "text_versions": [

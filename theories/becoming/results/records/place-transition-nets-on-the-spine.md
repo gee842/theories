@@ -93,6 +93,7 @@ An outside critique of the opening said the theory proves the rules of its own i
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [OPENING-V7-PROPOSAL.md](../../../../drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json) | — |
 
 Aliases: `place/transition nets on the spine`, `Petri nets on the spine`, `脊柱上的库所/变迁网`, `siphon law`, `Becoming.Net.balances_iff`, `Becoming.Net.dissipative_iff`, `Becoming.Net.rests_unrefuted`, `Becoming.Net.siphon_empty`
 
@@ -101,6 +102,7 @@ Aliases: `place/transition nets on the spine`, `Petri nets on the spine`, `脊�
 
 - 19 October 2026: added (PT1), the instance theorem the opening proposal's second review ranked second; study section 203.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Continuation.lean: declarations moved in or out by W2; Counterfactual.lean: declarations moved in or out by W2). The claim is unchanged.
+- 20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (PlaceTransitionNets.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Openness.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; PlaceTransitionNets.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.
 
 </details>
 

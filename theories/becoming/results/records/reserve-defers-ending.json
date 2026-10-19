@@ -579,7 +579,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
+      "sha256": "643839a8686bd12f8b8bfc28fbad35b8829573d3db5ccafb54cd5e932156384a",
       "declarations": [
         "Becoming.Web.Supported",
         "Becoming.Web.Dependent",
@@ -606,7 +606,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f",
+      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
       "declarations": [
         "Becoming.total"
       ]
@@ -635,7 +635,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LabelledRoles.lean",
       "role": "proof",
-      "sha256": "9b44b75e5f51bb9d2088c16abc421eb2afa93f801880d68c2b0693821bbd6358",
+      "sha256": "14c9ba70a2fa06dd16975d92c7f76391a53f7ed5c7f894de1fe7724deb5355c0",
       "declarations": [
         "Becoming.Web.coextinct"
       ]
@@ -693,6 +693,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -705,14 +711,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LabelledRoles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LabelledRoles",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1074,6 +1080,10 @@
     {
       "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): One dependency interface now says that the principle is for an amount counted in whole units (twentieth review D5).",
       "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：一条依赖接口现在写明这条原则适用于以整单位计的量（第二十次审查 D5）。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (LabelledRoles.lean, World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Dependence.lean, the structure Dependence moved to World.lean; docstrings; LabelledRoles.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（LabelledRoles.lean、World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Dependence.lean，结构 Dependence 移到 World.lean；说明；LabelledRoles.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架。论断不变。"
     }
   ],
   "text_versions": [

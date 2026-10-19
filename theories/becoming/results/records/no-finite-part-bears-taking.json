@@ -517,7 +517,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f",
+      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
       "declarations": [
         "Becoming.Flow",
         "Becoming.total"
@@ -552,7 +552,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "610510c1f3b15bf6cd20cae89a0791cf108e3081548569edfa900add8248108c",
+      "sha256": "2ebe444d4c7d60d00f17eda4f65852d41704528692c54fef773006714a3ff42b",
       "declarations": []
     },
     {
@@ -564,7 +564,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652",
+      "sha256": "643839a8686bd12f8b8bfc28fbad35b8829573d3db5ccafb54cd5e932156384a",
       "declarations": [
         "Becoming.le_of_add_le_add_right"
       ]
@@ -634,6 +634,12 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -646,14 +652,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1078,6 +1084,10 @@
     {
       "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：Horizon.lean，导入 Becoming.Ideals；stretchOrder、Run.stretches 与两个等价移入；六条律由点的律证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Dependence.lean, World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Dependence.lean, the structure Dependence moved to World.lean; docstrings; Horizon.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Dependence.lean、World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Dependence.lean，结构 Dependence 移到 World.lean；说明；Horizon.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架。论断不变。"
     }
   ],
   "text_versions": [

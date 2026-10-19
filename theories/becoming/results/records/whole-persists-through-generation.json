@@ -256,7 +256,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f",
+      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
       "declarations": [
         "Becoming.Web"
       ]
@@ -314,6 +314,12 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -326,7 +332,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -695,6 +701,10 @@
     {
       "en": "19 October 2026, R22 (the names of the nineteenth review): BECOMING-UNIFICATION-PLAN.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: BECOMING-UNIFICATION-PLAN.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，R22（第十九次审查的名称）：BECOMING-UNIFICATION-PLAN.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：BECOMING-UNIFICATION-PLAN.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架。论断不变。"
     }
   ]
 }

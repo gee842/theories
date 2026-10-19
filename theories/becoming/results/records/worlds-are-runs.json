@@ -8,12 +8,26 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "reviewed_at_utc": "2026-10-19T18:24:27+00:00",
   "statement": {
-    "zh": "世界恰是其各步之网与交换所显之律的运行，网与交换上的每个运行都是世界；世界恰在这个运行遵从交换之律处平衡，计入其余时总是如此；交换律的可行进程与所携带的量都是这样的运行。",
-    "en": "A world is exactly a run of the law its webs and exchanges show, and every run on webs and exchanges is a world; a world balances exactly where that run follows the law of exchange, as each does with the rest counted; a feasible course of a law of exchange and the carried amount are such runs."
+    "en": "A world is a run by its type: its history is a run of every step on its webs and exchanges, and exactly a run of the law they show, and every run on webs and exchanges is a world; a world balances exactly where that run follows the law of exchange, as each does with the rest counted.",
+    "zh": "世界按其类型就是运行：其历史是网与交换上每一步的运行，恰是它们所显之律的运行，网与交换上的每个运行都是世界；世界恰在这个运行遵从交换之律处平衡，计入其余时总是如此。"
   },
   "laws": [
+    {
+      "en": "A world is one kind of relatum and its history, a run of the process admitting every step, whose configurations are its webs at each step and whose moves are its relata's exchanges; its web and flow read the history along the steps, a web being a dependence read along them, and a world built from a flow and a web has them back by rfl.",
+      "zh": "世界是一种关系项及其历史：容许每一步之过程的运行，构形是各步的网，移动是关系项的交换；它的网与流是沿步读出的历史，网是沿步读的依存；由流与网构造的世界以 rfl 给回它们。",
+      "declarations": [
+        "Becoming.Dependence",
+        "Becoming.everyStep",
+        "Becoming.World.web",
+        "Becoming.World.flow",
+        "Becoming.World.of",
+        "Becoming.World.of_web",
+        "Becoming.World.of_flow",
+        "Becoming.World.run_history"
+      ]
+    },
     {
       "zh": "世界在一步的网（位、活动、所需、需要量与所取）是配置，其关系项的交换是移动。每个世界都是它所显之律的运行，网与交换上的每个运行都是世界，两个读法恰好互相还原；运行之世界所显的律在运行之律之内；世界的网是其运行经其依存读出。",
       "en": "A world's web at a step (standings, activity, requirements, needs and drawing) is a configuration, and its relata's exchange a move. Every world is a run of the law it shows, every run on webs and exchanges is a world, and each reading returns the other exactly; the law a run's world shows lies within the run's law; a world's web is its run read through its dependences.",
@@ -115,12 +129,6 @@
   ],
   "does_not_show": [
     {
-      "zh": "世界按定义就是运行：世界仍不经过程而定义，两个读法以双向恰好的对应为一。",
-      "en": "That a world is a run by definition: worlds are still defined without processes, and the two readings are one by exact correspondence in both directions.",
-      "kind": "correspondence",
-      "witness": "Becoming.World.run_world"
-    },
-    {
       "zh": "每个过程都是某个世界之律：过程的配置不必是网；把运行的主张读作世界，既不保留移动也不保留位。",
       "en": "That every process is the law of some world: a process's configurations need not be webs, and reading a run's claims as a world keeps neither moves nor standings.",
       "kind": "non-implication",
@@ -145,8 +153,8 @@
       "witness": "Becoming.World.run_world"
     },
     {
-      "zh": "过程族与世界族按定义为一：两族以对应定理相遇；落地时 7,214 条脊柱定理中仍有 1,019 条按依存与两族都不相连（连通测量，不是定理）。",
-      "en": "That the process and world families are one by definition: they meet through correspondence theorems, and at landing 1,019 of 7,214 spine theorems were still apart by dependency (a measurement, not a theorem).",
+      "en": "That a process is a world, or that the spine's laws are stated once over the run: on R28's tree 485 of 11,684 spine theorems are apart from both families by dependency (a measurement, not a theorem).",
+      "zh": "过程是世界，或脊柱的规律对运行只陈述一次：R28 树上 11,684 条脊柱定理中 485 条按依存与两族都不相连（测量，不是定理）。",
       "kind": "scope"
     }
   ],
@@ -160,12 +168,12 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261016T124157.989030Z）：Becoming.Runs 的 35 项声明（21 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §165；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261016T124157.989030Z): the 35 declarations of Becoming.Runs, 21 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 165; not independently reviewed."
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T181519.226999Z): the 16 declarations of Becoming.World and the 30 of Becoming.Runs, 21 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study sections 165 and 219; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T181519.226999Z）：Becoming.World 的 16 项与 Becoming.Runs 的 30 项声明（共 21 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §165 与 §219；未经独立审查。"
   },
   "next_delta": {
-    "zh": "使同一化成为定义（会改已有陈述）；独立审查；对定义上的根的论证判断。",
-    "en": "Making the identification definitional, which would change existing statements; an independent review; an argued judgment on a definitional root."
+    "en": "Stating the spine's laws over every law of exchange, so that a law of worlds is one statement of runs, and folding back the companion modules; an independent review.",
+    "zh": "对每条交换之律陈述脊柱的规律，使世界之律是运行的一个陈述，并把配套模块折回；独立审查。"
   },
   "correspondence": {
     "zh": "Ren 2026-10-12：“let's go back to main track, yes, i do agree with your reading, there are no two realities”。本结果回答发布准备度复核的整合所见：脊柱有两个根（Process 与 World），以对应定理相连，前沿陈述在耦合阵列上。读法（AI 的，第一项按 R1 修订，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：运行是这一包的形式之根，不是世界之下的根基：运行是在共同的步指标上逐步读的展开，每步是什么、怎样继续，而这一指标本身是关系项自身进程的一种读法，凡交换不共有关系项处是一种选择（the-step-index-from-own-courses）；关系的起点是关系项自身的进程，运行是选定一种交错的读法。世界是同一展开读作同类关系项的交换；同一化恰好，所以二者是一个展开的一个读法，不是两物相连。世界对其运行无所增加；交换之律所加的，是平衡所说的位与交换的关系，作为运行之步的律。",
@@ -331,9 +339,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
       "role": "proof",
-      "sha256": "5e94e6e913c881b8817e618405d9d40e0431b54e8b969f4d3f7de820aa4fdfb2",
+      "sha256": "ca0881f14020e59fb978126a5cbc7d90d57267a4bfa5b06e601b1f9f6cdefafb",
       "declarations": [
-        "Becoming.WebAt",
         "Becoming.WebAt.dependence",
         "Becoming.World.webAt",
         "Becoming.World.law",
@@ -362,13 +369,14 @@
         "Becoming.ExchangeLaw.generation_runs",
         "Becoming.ExchangeLaw.courseWorld_generation",
         "Becoming.carriedRun",
-        "Becoming.carriedRun_level"
+        "Becoming.carriedRun_level",
+        "Becoming.World.run_history"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "84dc14ccc58aa05eccac81923378cd89ec3d7274077e5a9b75bbc77ee454e47d",
+      "sha256": "15caf541249d7cbc99c8e2dd83069225f18dfac154248d9cb03eb16328872775",
       "declarations": [
         "Becoming.World.exchangeRun"
       ]
@@ -376,29 +384,44 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f",
+      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
       "declarations": [
-        "Becoming.World.move"
+        "Becoming.World.move",
+        "Becoming.WebAt",
+        "Becoming.Dependence",
+        "Becoming.everyStep",
+        "Becoming.World.web",
+        "Becoming.World.flow",
+        "Becoming.World.of",
+        "Becoming.World.of_web",
+        "Becoming.World.of_flow"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "8dafce813eca451b6abc016eb088282d10bf104e47d4dfd93d50ba27b0372f7f",
+      "sha256": "6799a78a8351ac82ad9dc581c09c1099a80b8560c4cb53c3694eef262b2d578d",
       "declarations": [
         "Becoming.Shown",
         "Becoming.Shown.run",
         "Becoming.shown_le_iff",
         "Becoming.Run.shown_le",
         "Becoming.Frame.world",
-        "Becoming.Law.run",
+        "Becoming.Law.run"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "c6d5aeb798d431034726d4842e3516081282bd19b637bf621caaccd1c4f4e493",
+      "declarations": [
         "Becoming.Law.process"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
       "role": "proof",
-      "sha256": "aa0e051de0783cc47458f5c4ec23a0ec1da2a636bf223c3c0570f07e2ded453d",
+      "sha256": "b9e294369470ba410778956ee412d0eef19f1c21df5e9a90df37b5f05f2e6c9a",
       "declarations": [
         "Becoming.World.withRest",
         "Becoming.World.withRest_balanced"
@@ -407,7 +430,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
       "role": "proof",
-      "sha256": "c0ffce10fb75c5660593dc868cf11bf92da1b8253fa22f48bb020607c894081a",
+      "sha256": "1e1fee594c030c30234cd829e409e069b86b60d1a9dacbbf6df83a969380c5e4",
       "declarations": [
         "Becoming.Contextual.world",
         "Becoming.World.unity"
@@ -433,7 +456,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "6fbcfccbc89cc50050a4fafdfc9e3d4753270bd19c024ea3ad1f0d92d6ee8057",
+      "sha256": "78d2733d6cb359a1f273f4ffbe63dd6f20ad67af536e5c6015da81b5aeed5af6",
       "declarations": [
         "Becoming.World.ofRoles",
         "Becoming.World.Balanced",
@@ -467,7 +490,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "58b9fc1c27a970007227d9b2cca13d0a5ed3699e605491d897128ca128f774f7",
+      "sha256": "970172a64cefdfc9fa4f56d5dd5e2ada589199858e4e2de83975559ab39e8929",
       "declarations": [
         "Becoming.Branching.law_run_state"
       ]
@@ -552,33 +575,39 @@
       "role": "receipt",
       "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Runs",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Reading",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -592,7 +621,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -613,7 +642,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -627,15 +656,22 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -685,6 +721,10 @@
     {
       "en": "19 October 2026, R21 (the nineteenth review's fix list): Propagation.lean, Runs.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39; Runs.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Propagation.lean、Runs.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Propagation.lean，只改说明（名称、陈述与证明不变）：读法标为 D39；Runs.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): WebAt moved from Runs.lean to World.lean; Law.process moved from Labelled.lean to Recurrence.lean, with its full name. Added: Dependence, everyStep, World.web, World.flow, World.of, World.of_web, World.of_flow, World.run_history. Proof bindings (Branching.lean, Labelled.lean, Reading.lean, Readings.lean, Runs.lean, Space.lean, Unfolding.lean, World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Branching.lean, the five notions and four orbit lemmas moved to Recurrence.lean; the five law_*_iff bridges are Iff.rfl; Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Reading.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Readings.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Runs.lean, WebAt moved to World.lean; World.webAt and Run.world read the history; World.run_history added; root paragraph; Space.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Unfolding.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame. The statement now says a world is a run by its type, with a law for the definition; the boundary \"worlds are still defined without processes\" is removed, since it is now shown; the measurement boundary, the validation scope and the next step follow R28.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：WebAt 从 Runs.lean 移到 World.lean；Law.process 从 Labelled.lean 移到 Recurrence.lean，名称不变。新增：Dependence、everyStep、World.web、World.flow、World.of、World.of_web、World.of_flow、World.run_history。证明绑定（Branching.lean、Labelled.lean、Reading.lean、Readings.lean、Runs.lean、Space.lean、Unfolding.lean、World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Branching.lean，五个概念与四条轨道引理移到 Recurrence.lean；五座 law_*_iff 桥为 Iff.rfl；Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Reading.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Readings.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Runs.lean，WebAt 移到 World.lean；World.webAt 与 Run.world 读历史；新增 World.run_history；根的段落；Space.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Unfolding.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架。陈述改为世界按其类型就是运行，并为该定义增一条律；“世界仍不经过程而定义”这一界限已删去，因为现已证明；测量界限、验证范围与下一步随 R28。"
     }
   ],
   "text_versions": [

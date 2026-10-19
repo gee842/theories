@@ -743,7 +743,7 @@
         "Becoming.Hexagram.zagua_not_commutes",
         "Becoming.Hexagram.zagua_partners"
       ],
-      "sha256": "cd630151f70a37b9db04dae1cbf9b659c5cf9b07e1b44e698101c29f4d2e7bde"
+      "sha256": "f8e2ef70fe9fcab92a555066c10587e4bf5970aec89100eb926e9b1053bcfb2e"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T140534.048868Z/verification.json",
@@ -771,7 +771,7 @@
         "Becoming.Hexagram.pairOf",
         "Becoming.Hexagram.pairOf_complement"
       ],
-      "sha256": "64942101bf5806f1873409c288e77207f02782bc1e3798c3c021a9c6ebacfe88"
+      "sha256": "62e8e967b74ce61ba76074b1e83de9d9d3a2672e314ef6ef45fc695f87447336"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
@@ -800,7 +800,7 @@
         "Becoming.Hexagram.Symmetry",
         "Becoming.Hexagram.Symmetry.act"
       ],
-      "sha256": "cc17b1bafb66a0fddc63a9f0e69b68f0b3643d1ae15bf947b8bcde55dd2583b5"
+      "sha256": "f2c1c3d27588d4b23dc346ba328270277ac2cd20d166ac3b6b451a780b6a46ea"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
@@ -810,7 +810,7 @@
         "Becoming.Law.Commutes.paired_halfway",
         "Becoming.Law.Commutes.iterate"
       ],
-      "sha256": "7b2700274d96c1d5abec5e128e68b4073cc1a12f5c97187e60b412a6d4ea71d5"
+      "sha256": "bfd39a351ef04a1cda996a3bf4b33c98007b1463f73ffcf6866c1b9bc5de62f8"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
@@ -818,9 +818,10 @@
       "declarations": [
         "Becoming.Law.Lossless",
         "Becoming.Law.orbit",
-        "Becoming.Law.orbit_shift"
+        "Becoming.Law.orbit_shift",
+        "Becoming.Law.process"
       ],
-      "sha256": "4e129f5e3d48fe5531409b283d30c0c896f834d2f2b40e74796c7bd19c3111ae"
+      "sha256": "c6d5aeb798d431034726d4842e3516081282bd19b637bf621caaccd1c4f4e493"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
@@ -852,7 +853,7 @@
       "declarations": [
         "Becoming.GoAlike"
       ],
-      "sha256": "60a43bae208eb28211003bdf046db891eafc73a59615d309b9a50e0be08ddf63"
+      "sha256": "25b1a8e61f785d83f938706eceb5b98f13e590ebd9803c0c3c3f03eec9336b33"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
@@ -869,7 +870,7 @@
         "Becoming.World",
         "Becoming.Exchange"
       ],
-      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f"
+      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
@@ -884,10 +885,9 @@
       "role": "proof",
       "declarations": [
         "Becoming.exchange",
-        "Becoming.Law.run",
-        "Becoming.Law.process"
+        "Becoming.Law.run"
       ],
-      "sha256": "8dafce813eca451b6abc016eb088282d10bf104e47d4dfd93d50ba27b0372f7f"
+      "sha256": "6799a78a8351ac82ad9dc581c09c1099a80b8560c4cb53c3694eef262b2d578d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
@@ -895,7 +895,7 @@
       "declarations": [
         "Becoming.World.balances_iff_exchange"
       ],
-      "sha256": "84dc14ccc58aa05eccac81923378cd89ec3d7274077e5a9b75bbc77ee454e47d"
+      "sha256": "15caf541249d7cbc99c8e2dd83069225f18dfac154248d9cb03eb16328872775"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
@@ -1002,19 +1002,25 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T140534.048868Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.HexagramSequences",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T140534.048868Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.HexagramLaws",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1028,14 +1034,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Hexagrams",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Commuting",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1049,14 +1055,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1077,7 +1083,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T140534.048868Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1091,14 +1097,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1146,6 +1152,10 @@
     {
       "en": "19 October 2026, R21 (the nineteenth review's fix list): YI-ZHUAN-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: YI-ZHUAN-AND-BECOMING.md, the conditions of the laws read for 生生之謂易 named (O2). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，R21（第十九次审查的修正清单）：YI-ZHUAN-AND-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：YI-ZHUAN-AND-BECOMING.md，生生之謂易所读诸律的条件写明（O2）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Law.process moved from Labelled.lean to Recurrence.lean, with its full name. Proof bindings (Commuting.lean, HexagramLaws.lean, HexagramSequences.lean, Hexagrams.lean, Labelled.lean, Mechanism.lean, Recurrence.lean, Unfolding.lean, World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Commuting.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; HexagramLaws.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; HexagramSequences.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Hexagrams.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Labelled.lean, Law.process moved to Recurrence.lean; Frame.world built by World.of; header; Mechanism.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Recurrence.lean, imports the frame; Law.process, the five notions of every process and four orbit lemmas moved in; Law.Lossless, Merges, Returns, Reachable and KeepsPossibilities are abbreviations at Law.process with five unfolding lemmas; proofs take .mp/.mpr of them, statements unchanged; Unfolding.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：Law.process 从 Labelled.lean 移到 Recurrence.lean，名称不变。证明绑定（Commuting.lean、HexagramLaws.lean、HexagramSequences.lean、Hexagrams.lean、Labelled.lean、Mechanism.lean、Recurrence.lean、Unfolding.lean、World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Commuting.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；HexagramLaws.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；HexagramSequences.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Hexagrams.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Labelled.lean，Law.process 移到 Recurrence.lean；Frame.world 由 World.of 构造；开头说明；Mechanism.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Recurrence.lean，导入框架；Law.process、每个过程的五个概念与四条轨道引理移入；Law.Lossless、Merges、Returns、Reachable、KeepsPossibilities 是 Law.process 上的缩写，附五条展开引理；证明取其 .mp/.mpr，陈述不变；Unfolding.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架。论断不变。"
     }
   ]
 }

@@ -616,7 +616,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "aebe0aec2e7bd12dc5276288548dde7a645ca8b76f17e9cb0f14d07ffbacef71",
+      "sha256": "683adbf30ec5fb3a6784a1e355a175729da54a877e6f6b650b227749f33f1eb2",
       "declarations": [
         "Becoming.Web.valuation"
       ]
@@ -674,7 +674,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "d5ae417638d738670dd9337fdac364affe5ee42431848794a09eca40362fd67c",
+      "sha256": "d917161f9088bb9fac7cb81d19073edb7cf9b0684941d5857a666342e10fda8c",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.Web.Retains",
@@ -787,6 +787,12 @@
       "role": "receipt",
       "sha256": "6a2365e24d8c37fa26699dd0f7074bec68cc5eda9894cf09f8c5e8ee21d9f943",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -813,7 +819,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T174929.247241Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1283,6 +1289,10 @@
     {
       "en": "20 October 2026, R27 (the stepwise classes and loss): proof binding to Significance.lean rebound to core receipt 20261019T174929.247241Z. Re-pointed after reading the change: Significance.lean, a section on the stepwise classes and loss and Preemption.within_renewal_yet_loses added; nothing else changed. The claim is unchanged.",
       "zh": "2026年10月20日，R27（逐步类别与失去）：Significance.lean 的证明绑定改到核心回执 20261019T174929.247241Z。读过改动后重新指向：Significance.lean，新增逐步类别与失去一节及 Preemption.within_renewal_yet_loses；其余不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Significance.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Metaethics.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Significance.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Significance.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Metaethics.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变；Significance.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
     }
   ],
   "text_versions": [

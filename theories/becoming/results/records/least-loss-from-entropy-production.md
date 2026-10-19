@@ -87,6 +87,7 @@ Aliases: `Becoming.EntropyProduction.ExergyBalance`, `Becoming.EntropyProduction
 ### History
 
 - Added for the question whether the opening's "as in ours" can stand: which accepted physical premises give the spine's dissipation, for which systems (board item T1).
+- 20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: Entropy.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged; Resolution.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.
 
 </details>
 

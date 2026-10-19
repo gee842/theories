@@ -376,7 +376,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f",
+      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
       "declarations": [
         "Becoming.Web"
       ]
@@ -397,7 +397,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "afe41a64aa305bb1b9da0cfef9c0eea0ad0a9c6282e1c9ff09f9907ccfb19345"
+      "sha256": "9d48507a87c2037c9559a573a55a39fd6721fe0d9b9b5a1858be5d8c5465c742"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -451,6 +451,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "role": "receipt",
+      "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -484,7 +490,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -612,6 +618,10 @@
     {
       "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.",
       "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：THE-THEORY-OF-BECOMING.md 重新指向。R25 对所引文件的改动：THE-THEORY-OF-BECOMING.md，第二十次审查第一步（R25）：伦理的范围（延续条件）与次序（C）分开陈述（现状、§6.8、§6.12、§6.13、§6.15、§7.5、§8.3、§8.5、完整陈述）；基底的两种呈现确切陈述（§1、§9）；rising_recurs、falls_not_recurring 与 Flow.excess_bounded 标为自然数之量的事实（A 块、§1、§2、§4）；§8 重写为依次排列的十二项，原目标与领域表原样移至 theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md，连通度量的记录移至 THEOREM-CONNECTIVITY.md §10；第 11 条加限定。重新指向前已读；Lean 未改。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (World.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: World.lean, Dependence and WebAt moved in; Web is Dependence Nat; World is a relatum type with its history, a run of every step, read by World.web, World.flow and World.move, built by World.of; imports the frame; THE-THEORY-OF-BECOMING.md, §1 \"One base, the run\" replaces \"The two presentations, exactly\"; the theory stated in full item 1, §8.1 item 1, \"What this completeness is\" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.",
+      "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（World.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：World.lean，Dependence 与 WebAt 移入；Web 即 Dependence Nat；World 是关系项类型及其历史（每一步之运行），由 World.web、World.flow、World.move 读出，由 World.of 构造；导入框架；THE-THEORY-OF-BECOMING.md，§1“一个基底：运行”取代“两种呈现，确切地说”；完整陈述第 1 条、§8.1 第 1 项、“这种完整是什么”与 §9（层、导入树、回执、计数）随 R28。论断不变。"
     }
   ],
   "text_versions": [

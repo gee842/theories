@@ -112,11 +112,9 @@ for p in WHAT:
     out = subprocess.run(['git', 'show', f'{BASE}:{p}'], capture_output=True)
     base[p] = hashlib.sha256(out.stdout).hexdigest() if out.returncode == 0 else None
 
-module_of = {receipt['source_paths'][m] if isinstance(receipt.get('source_paths'), dict) else None: m
-             for m in receipt['source_sha256']}
-module_of = {p: m for p, m in module_of.items() if p}
-if not module_of:
-    module_of = {B + m.split('.', 1)[1].replace('.', '/') + '.lean': m for m in receipt['source_sha256'] if m.startswith('Becoming.')}
+LEANDIR = 'experiments/integrated-correction/general-framework/generative-basis/lean/'
+module_of = {LEANDIR + p: m for m, p in receipt['source_paths'].items()}
+assert module_of[B + 'World.lean'] == 'Becoming.World'
 elaborated = {}
 for m in receipt['modules']:
     elaborated[m['module']] = {x['name'] if isinstance(x, dict) else x for x in m.get('declarations', [])}
