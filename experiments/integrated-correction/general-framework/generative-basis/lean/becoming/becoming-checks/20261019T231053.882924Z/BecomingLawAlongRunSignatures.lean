@@ -1,0 +1,17 @@
+import Becoming.LawAlongRun
+#check @Becoming.Run.stepsThrough_record
+#check @Becoming.Run.record_least
+#check @Becoming.Run.record_determined_iff
+#check @Becoming.Run.law_through_iff
+#check @Becoming.Run.ConsistentThrough.earlier
+#check @Becoming.Run.no_law_later
+#check @Becoming.Run.consistent_id_iff
+#check @Becoming.Run.consistent_of_goAlike
+#check @Becoming.image_exact_iff
+#check @Becoming.exact_law_iff
+#check @Becoming.Constant.consistent
+#check @Becoming.Constant.not_goAlike
+#check @Becoming.Switching.inconsistent
+#check @Becoming.Stuck.goAlike_not_matches
+#check @Becoming.Coarse.matching
+#check @Becoming.Coarse.exact_law
