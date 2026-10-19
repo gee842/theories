@@ -114,8 +114,8 @@
   ],
   "does_not_show": [
     {
-      "en": "That a pool's response corrects anything, or which responses do; which law a member follows, or that it reads through coupling; which formations pool, or how a pool forms, lasts or resists capture.",
-      "zh": "一组的回应纠正任何东西，或哪些回应纠正；成员遵从哪个律，或它经耦合而读；哪些形成合起来，一组怎样形成、持续或抵抗劫持。",
+      "en": "That a pool's response closes any difference, or which responses do; which law a member follows, or that it reads through coupling; which formations pool, or how a pool forms, lasts or resists capture.",
+      "zh": "一组的回应闭合任何差别，或哪些回应如此；成员遵从哪个律，或它经耦合而读；哪些形成合起来，一组怎样形成、持续或抵抗劫持。",
       "kind": "non-implication"
     },
     {
@@ -151,12 +151,12 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T165934.927469Z）：Becoming.PoolResponse 的 21 项声明（18 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 184 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Which responses to what a pool separates correct the act, and toward what; how a member's law comes to respond to what it couples into (training); members reading one another's coupling directly; how pools form and last (target-capture); an independent review.",
-    "zh": "对一组所分开者的哪些回应纠正动作，朝向什么；成员的律怎样变得回应其所耦合入者（训练）；成员直接读彼此的耦合；组怎样形成与持续（target-capture）；独立审查。"
+    "en": "Which law closes rather than widens a difference a pool separates (where the two courses rejoin, and through whom, is stated in where-two-courses-rejoin); how a member's law comes to respond to what it couples into (training); members reading one another's coupling directly; how pools form and last (target-capture); an independent review.",
+    "zh": "哪个律闭合而非扩大一组所分开的差别（两个进程在何处、经谁重合，见 where-two-courses-rejoin）；成员的律怎样变得回应其所耦合入者（训练）；成员直接读彼此的耦合；组怎样形成与持续（target-capture）；独立审查。"
   },
   "correspondence": {
-    "en": "The chapter's section 7.4 read that what any member's acts do beyond its own coupling closure couples into some member of the pool \"and can be corrected there\", and what-pooled-coupling-reaches left open whether a pool's selection responds to what it separates; section 7.7 listed \"Coupling is not compliance\". Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's): what a pool does is a selection through its pooled coupling, so its acts respond to nothing beyond the union of its members' coupling closures, and within it only through members that couple a difference apart; a response reaches an actor's own act only through the actor's coupling closure, the structure correction and escalation share.",
-    "zh": "本章第 7.4 节读到，任何成员的动作在其自身耦合闭包之外所做的，耦合入组中的某个成员“并能在那里被纠正”；what-pooled-coupling-reaches 留下开放：一组的选择是否回应它所分开者；第 7.7 节列出“耦合不是服从”。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。读法（AI 的）：一组所做的是经其合起来之耦合的选择，所以它的动作不回应其成员耦合闭包之并以外的任何东西，在其内也只经把差别耦合得有别的成员；回应只经行动者的耦合闭包及于其自身的动作，这是纠正与升级共有的结构。"
+    "en": "The chapter's section 7.4 read that what any member's acts do beyond its own coupling closure couples into some member of the pool \"and can be corrected there\", and what-pooled-coupling-reaches left open whether a pool's selection responds to what it separates; section 7.7 listed \"Coupling is not compliance\". Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's): what a pool does is a selection through its pooled coupling, so its acts respond to nothing beyond the union of its members' coupling closures, and within it only through members that couple a difference apart; a response reaches an actor's own act only through the actor's coupling closure, the structure that closing a difference and widening it share.",
+    "zh": "本章第 7.4 节读到，任何成员的动作在其自身耦合闭包之外所做的，耦合入组中的某个成员“并能在那里被纠正”；what-pooled-coupling-reaches 留下开放：一组的选择是否回应它所分开者；第 7.7 节列出“耦合不是服从”。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。读法（AI 的）：一组所做的是经其合起来之耦合的选择，所以它的动作不回应其成员耦合闭包之并以外的任何东西，在其内也只经把差别耦合得有别的成员；回应只经行动者的耦合闭包及于其自身的动作，这是闭合差别与扩大差别共有的结构。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
   "aliases": [
@@ -276,6 +276,13 @@
       "detail": {
         "en": "Its pooled selections (Web.SelectsThroughAll) are the selections a pool's acts make where each member's law reads through its coupling.",
         "zh": "其合起来的选择（Web.SelectsThroughAll）正是每个成员之律都经其耦合而读时一组的动作所作的选择。"
+      }
+    },
+    {
+      "id": "where-two-courses-rejoin",
+      "detail": {
+        "en": "States what a response must do for the two courses to rejoin: a difference closes only through a different exchange with the condition, by exactly the gap, and where the rest reads through its coupling, through a formation that couples the two courses apart.",
+        "zh": "陈述回应要使两个进程重合须做什么：差别只经与该条件的不同交换而闭合，所交换的恰是差距；其余经其耦合而读时，经一个把两个进程耦合得有别的形成。"
       }
     }
   ],
@@ -458,12 +465,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c06c83d530c4e9d9cab77ef6d815b85867c8bb408a0766bcf82787c7fe02fd83"
+      "sha256": "5ffcd994305945c78199e9a1cf3a90ef3467fa5d7ef94a8dcec5c2371fe76150"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b6419a26c750148e2e17fca305ab49bf01a6b2a20cec1bfdc0022cba110b6d79"
+      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -527,6 +534,14 @@
     {
       "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G5 added a study section; THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the \"Selection, causes and experiment\" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): next_delta updated, since where-two-courses-rejoin states when the courses with and without an act rejoin (only through a different exchange with the condition, and where the rest reads through its coupling, through a formation coupling the courses apart); which law closes rather than widens a difference stays open. \"Correct\" is no longer used for this: the course without the act is a comparison, not a standard (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the reading and the first boundary are worded likewise. The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：next_delta 更新，因为 where-two-courses-rejoin 陈述了有动作与无动作的进程何时重合（只经与该条件的不同交换；其余经其耦合而读时，经把进程耦合得有别的形成）；哪个律闭合而非扩大差别仍开放。此处不再用“纠正”：无动作的进程是比较，不是标准（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）。读法与第一条界限照此措辞。论断不变。"
+    },
+    {
+      "en": "19 October 2026, M4 (Becoming.Rejoining): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M4 added a study section; THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

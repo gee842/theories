@@ -1,0 +1,17 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/unruffled-zhukovsky-85b330/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/m4-rejoining",
+  "modules": 52,
+  "ran": [
+    "Becoming.Rejoining",
+    "BecomingRejoiningAxiomAudit"
+  ],
+  "reused": 51,
+  "unclean": [],
+  "audits": {
+    "Becoming.Rejoining": {
+      "theorems": 20,
+      "declarations": 32,
+      "with_axioms": {}
+    }
+  }
+}

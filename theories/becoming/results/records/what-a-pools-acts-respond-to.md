@@ -31,7 +31,7 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- That a pool's response corrects anything, or which responses do; which law a member follows, or that it reads through coupling; which formations pool, or how a pool forms, lasts or resists capture.
+- That a pool's response closes any difference, or which responses do; which law a member follows, or that it reads through coupling; which formations pool, or how a pool forms, lasts or resists capture.
 - Members reading one another's coupling directly: here members coordinate only through conditions they couple into.
 - That the class-marking law is feasible: it takes one unit of each condition whatever stands, and serves to show that the bound is attained.
 - **Counterexample:** ExchangeLaw.response_not_fixed_by_coupling and Clearing.separated_unresponded: coupling a difference apart does not make a member respond to it. The law that exchanges nothing reads through every coupling, and in Clearing every pool holding the dweller separates the two worlds while everything outside the clearer's part exchanges alike in them. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean)
@@ -48,14 +48,14 @@ Canonical source: [PoolResponse.lean](../../../../experiments/integrated-correct
 <a id="next--下一步"></a>
 ## Next
 
-Which responses to what a pool separates correct the act, and toward what; how a member's law comes to respond to what it couples into (training); members reading one another's coupling directly; how pools form and last (target-capture); an independent review.
+Which law closes rather than widens a difference a pool separates (where the two courses rejoin, and through whom, is stated in where-two-courses-rejoin); how a member's law comes to respond to what it couples into (training); members reading one another's coupling directly; how pools form and last (target-capture); an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-The chapter's section 7.4 read that what any member's acts do beyond its own coupling closure couples into some member of the pool "and can be corrected there", and what-pooled-coupling-reaches left open whether a pool's selection responds to what it separates; section 7.7 listed "Coupling is not compliance". Ren, 18 October 2026: "what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?" and "please make your own pareto frontier decisions, and push the frontier" (provenance, not warrant); the AI chose the item. Reading (the AI's): what a pool does is a selection through its pooled coupling, so its acts respond to nothing beyond the union of its members' coupling closures, and within it only through members that couple a difference apart; a response reaches an actor's own act only through the actor's coupling closure, the structure correction and escalation share.
+The chapter's section 7.4 read that what any member's acts do beyond its own coupling closure couples into some member of the pool "and can be corrected there", and what-pooled-coupling-reaches left open whether a pool's selection responds to what it separates; section 7.7 listed "Coupling is not compliance". Ren, 18 October 2026: "what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?" and "please make your own pareto frontier decisions, and push the frontier" (provenance, not warrant); the AI chose the item. Reading (the AI's): what a pool does is a selection through its pooled coupling, so its acts respond to nothing beyond the union of its members' coupling closures, and within it only through members that couple a difference apart; a response reaches an actor's own act only through the actor's coupling closure, the structure that closing a difference and widening it share.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -78,6 +78,7 @@ The chapter's section 7.4 read that what any member's acts do beyond its own cou
   - Preserved conditions: Balance, presence and a common start before the deadline; response through coupling outside the source. [TimedResponse.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
 - related, not a proved adapter: [the-gap-for-ones-own-act](the-gap-for-ones-own-act.md). There the gap for one's own act, with the response derived from the law; here the response of a pool, and the gap read with the responder as the acting part and the actor as the pool.
 - related, not a proved adapter: [selection-through-registration](selection-through-registration.md). Its pooled selections (Web.SelectsThroughAll) are the selections a pool's acts make where each member's law reads through its coupling.
+- related, not a proved adapter: [where-two-courses-rejoin](where-two-courses-rejoin.md). States what a response must do for the two courses to rejoin: a difference closes only through a different exchange with the condition, by exactly the gap, and where the rest reads through its coupling, through a formation that couples the two courses apart.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -118,6 +119,8 @@ Aliases: `what a pool's acts respond to`, `一组的动作回应什么`, `the ga
 - 18 October 2026, C2 (Becoming.Exhaustion): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: C2 added a study section; THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the "Seeking, capture and runaway" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 - 19 October 2026, C2 follow-up (D46): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: section 186 (C2) now states its readings as D46 rather than waiting on Ren). The claim is unchanged.
 - 19 October 2026, G5 (Becoming.LawThroughChangingCoupling): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G5 added a study section; THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
+- 19 October 2026, M4 (Becoming.Rejoining): next_delta updated, since where-two-courses-rejoin states when the courses with and without an act rejoin (only through a different exchange with the condition, and where the rest reads through its coupling, through a formation coupling the courses apart); which law closes rather than widens a difference stays open. "Correct" is no longer used for this: the course without the act is a comparison, not a standard (Ren, 19 October 2026: "correct? this is a dualist word, are we drifting off?"); the reading and the first boundary are worded likewise. The claim is unchanged.
+- 19 October 2026, M4 (Becoming.Rejoining): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M4 added a study section; THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without "correction", replaced the "Which responses correct" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the "Selection, causes and experiment" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 
 </details>
 

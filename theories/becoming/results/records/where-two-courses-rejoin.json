@@ -1,0 +1,377 @@
+{
+  "schema_version": 2,
+  "id": "where-two-courses-rejoin",
+  "title": {
+    "zh": "两个进程在何处重合",
+    "en": "Where two courses rejoin"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F04",
+  "reviewed_at_utc": "2026-10-19T00:47:47+00:00",
+  "statement": {
+    "en": "Courses with and without an act that parted at a condition rejoin only across a step where they exchange with it differently, by exactly the gap; where the rest reads through its coupling, only through a formation coupling them apart. Beyond the responsive reach they stay apart.",
+    "zh": "有动作与无动作的进程在一个条件处分开之后，只在两者与它交换不同的一步重合，所交换的恰是差距；其余经其耦合而读时，只经一个把两者耦合得有别的形成。在回应所及之外，两者保持分开。"
+  },
+  "laws": [
+    {
+      "en": "Across a step at which two flows balanced at a condition take the same total from it and give it the same total, its levels are alike after the step exactly when they were alike before; over steps at which they exchange alike with it, the difference at the condition stays as it was.",
+      "zh": "在两条于某条件处平衡的流从它取得同样总量、给它同样总量的一步，其水平在此步之后相同，恰当之前相同；在两流与它交换相同的诸步上，此条件处的差别保持原样。",
+      "declarations": [
+        "Becoming.Flow.ExchangeAlikeWith",
+        "Becoming.Flow.level_alike_succ_iff",
+        "Becoming.Flow.level_alike_iff_of_alike"
+      ]
+    },
+    {
+      "en": "So a difference at a condition that opens or closes over some steps does so across a step at which the two flows exchange with it differently, found by deciding at each step whether the totals agree.",
+      "zh": "所以条件处的差别在某些步上开或合，都发生在两流与它交换不同的一步，逐步判定总量是否相同即可找到。",
+      "declarations": [
+        "Becoming.Flow.exchange_apart_of_change",
+        "Becoming.Flow.exchange_apart_of_closes",
+        "Becoming.Flow.exchange_apart_of_opens"
+      ]
+    },
+    {
+      "en": "Two totals over one list that differ differ at some member; so with the same formations present, where the two flows exchange with a condition differently across a step, some formation present takes from it or gives to it differently.",
+      "zh": "同一列表上不同的两个总量在某个成员处不同；所以出现的形成相同时，两流在某步与一个条件交换不同之处，有某个在场的形成从它取或给它不同。",
+      "declarations": [
+        "Becoming.exists_apart_of_total_ne",
+        "Becoming.Flow.formation_apart_of_exchange_apart"
+      ]
+    },
+    {
+      "en": "Over the steps from s, a balanced flow's level of a condition at the end, with what it took from it, is its level at the start, with what it gave. So where the difference closes, the levels at s and what the two flows exchanged with the condition over those steps make up the gap exactly.",
+      "zh": "在从 s 起的诸步上，平衡的流对一个条件的末水平加上它所取，等于始水平加上它所给。所以差别闭合之处，s 处的水平与两流在这些步上与此条件所交换的，恰好补足差距。",
+      "declarations": [
+        "Becoming.Flow.level_steps",
+        "Becoming.Flow.gap_made_up"
+      ]
+    },
+    {
+      "en": "Where both flows follow a law reading through the coupling of each formation outside a part, a formation outside the part exchanging differently with a condition couples the two courses apart. With the part acting alike after the act, a difference that changes, closing or opening, changes through such a formation, present and outside the part.",
+      "zh": "两流都遵从经部分之外各形成之耦合而读的律时，部分之外与一个条件交换不同的形成把两个进程耦合得有别。部分在动作之后行动相同时，开或合的差别都经这样一个在场、在部分之外的形成而变。",
+      "declarations": [
+        "Becoming.Flow.closer_couples_apart",
+        "Becoming.Flow.changes_through_coupling_apart",
+        "Becoming.Flow.closes_through_coupling_apart"
+      ]
+    },
+    {
+      "en": "Under the hypotheses of Flow.alike_beyond_response, with both flows balanced at a condition and nothing within the part's responsive reach taking from or giving to it from a step on, the difference at the condition at every later step is what it was at that step.",
+      "zh": "在 Flow.alike_beyond_response 的假设下，两流在一个条件处平衡、从某步起部分之回应所及之内无物从它取或给它时，此条件处的差别在之后每一步都与那一步相同。",
+      "declarations": [
+        "Becoming.Flow.stays_beyond_response"
+      ]
+    },
+    {
+      "en": "In Replenishing an actor takes one unit from a condition at step 0, and a responder coupling into it follows a law, reading through its coupling, that gives one unit where the level stands below its start. The difference opens at step 1 and the courses rejoin from step 2 on, through the responder, which gives back the unit taken and couples the two courses apart.",
+      "zh": "Replenishing 中，行动者在第 0 步从一个条件取一个单位；耦合入此条件的回应者遵从一个经其耦合而读的律，水平低于起点时给一个单位。差别在第 1 步开，自第 2 步起闭合，经回应者：它归还所取的单位，并把两个进程耦合得有别。",
+      "declarations": [
+        "Becoming.Replenishing.Member",
+        "Becoming.Replenishing.Cond",
+        "Becoming.Replenishing.lowered",
+        "Becoming.Replenishing.took",
+        "Becoming.Replenishing.gave",
+        "Becoming.Replenishing.level",
+        "Becoming.Replenishing.web",
+        "Becoming.Replenishing.flow",
+        "Becoming.Replenishing.part",
+        "Becoming.Replenishing.obs",
+        "Becoming.Replenishing.law",
+        "Becoming.Replenishing.balances",
+        "Becoming.Replenishing.through",
+        "Becoming.Replenishing.follows",
+        "Becoming.Replenishing.closes",
+        "Becoming.Replenishing.made_up",
+        "Becoming.Replenishing.rejoined",
+        "Becoming.Replenishing.closes_through"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Balance at the condition in both flows; the same formations present; for the closer, the law the rest follows and that it reads through coupling (ExchangeLaw.Through, Flow.Follows), and the part acting alike with the condition after the act; for the reach law, the hypotheses of Flow.alike_beyond_response and nothing within the reach exchanging with the condition from the step on.",
+      "zh": "不加公理。两流在此条件处平衡；出现的形成相同；就闭合者而言，其余所遵从的律及其经耦合而读（ExchangeLaw.Through、Flow.Follows），以及部分在动作之后与此条件的行动相同；就所及的规律而言，Flow.alike_beyond_response 的假设，以及从该步起所及之内无物与此条件交换。"
+    },
+    {
+      "en": "The course without the act is a comparison, not a standard: the laws do not say that rejoining it is better than keeping or widening the difference; which of these supports 生生 goes through the comparison and the condition of the chapter's section 6.15.",
+      "zh": "无动作的进程是比较，不是标准：这些规律不说重合优于保持或扩大差别；其中哪个支持生生，经本章第 6.15 节的比较与条件。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which law closes rather than widens a difference, or how a member's law comes to; that any response closes one: coupling a difference apart does not make a formation close it.",
+      "zh": "哪个律闭合而非扩大差别，或成员的律如何变成这样；任何回应都会闭合差别：把差别耦合得有别并不使一个形成闭合它。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That rejoining the course without the act is better than keeping or widening the difference; a difference carried at many conditions and the order in which they close.",
+      "zh": "重合于无动作的进程优于保持或扩大差别；在多个条件上承载的差别及其闭合的次序。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
+      "detail": {
+        "en": "Loop.response_returns: a response that returns to the actor through its coupling closure and ends the actor's support, the structure of rejoining with the opposite effect; and ExchangeLaw.response_not_fixed_by_coupling, where coupling a difference apart leaves it open.",
+        "zh": "Loop.response_returns：经行动者耦合闭包返回而终结其支持的回应，结构同于重合而效果相反；以及 ExchangeLaw.response_not_fixed_by_coupling：把差别耦合得有别而不闭合它。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T004321.279483Z): the 32 declarations of Becoming.Rejoining, 20 of them theorems, have empty axiom reports; the checker verifies core purity. Author self-review in study section 188; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T004321.279483Z）：Becoming.Rejoining 的 32 项声明（20 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 188 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "Which law closes rather than widens a difference, and how a member's law comes to (training); which of keeping, closing or widening a difference supports 生生, through section 6.15's comparison; differences at many conditions and the order of their closing; members reading one another's coupling directly; an independent review.",
+    "zh": "哪个律闭合而非扩大差别，成员的律如何变成这样（训练）；保持、闭合或扩大差别中哪个支持生生，经第 6.15 节的比较；多个条件上的差别及其闭合次序；成员直接读彼此的耦合；独立审查。"
+  },
+  "correspondence": {
+    "en": "what-a-pools-acts-respond-to left open which responses to what a pool separates \"correct\" the act; the chapter's section 7.7 listed \"Which responses correct\". Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Ren, 19 October 2026, on the item first named \"which responses correct\": \"correct? this is a dualist word, are we drifting off?\" The AI agreed: \"correct\" makes the course without the act a standard, so the item states where the two courses rejoin, the course without the act a comparison. Reading (the AI's): closing a difference and widening it are both loops through another's coupling and response; coupling makes either possible and the law followed decides which happens.",
+    "zh": "what-a-pools-acts-respond-to 留下开放：对一组所分开者的哪些回应“纠正”动作；本章第 7.7 节列出“哪些回应纠正”。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。Ren，2026年10月19日，就最初名为“哪些回应纠正”的此项：\"correct? this is a dualist word, are we drifting off?\" AI 同意：“纠正”使无动作的进程成为标准，所以此项陈述两个进程在何处重合，无动作的进程只作比较。读法（AI 的）：闭合差别与扩大差别都是经他者耦合与回应的回路；耦合使两者都可能，所遵从的律决定发生哪一个。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean",
+  "aliases": [
+    "where two courses rejoin",
+    "两个进程在何处重合",
+    "rejoining makes up the gap",
+    "重合补足差距",
+    "what closes a difference couples apart",
+    "闭合差别者耦合得有别",
+    "rejoining is a response",
+    "重合是一种回应"
+  ],
+  "dependencies": [
+    {
+      "id": "comparison-where-the-rest-responds",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.WithinResponse, Flow.RespondsThroughCoupling, Flow.alike_beyond_response and Flow.exchange_alike_beyond_response; the delta states that a difference nothing within the responsive reach exchanges with stays.",
+        "zh": "复用 Flow.WithinResponse、Flow.RespondsThroughCoupling、Flow.alike_beyond_response 与 Flow.exchange_alike_beyond_response；增量是陈述回应所及之内无物与之交换的差别保持不变。"
+      },
+      "interface": {
+        "output": {
+          "en": "A part's responsive reach, and confinement beyond it.",
+          "zh": "一个部分的回应所及，以及其外的限制。"
+        },
+        "input": {
+          "en": "A difference at a condition nothing within the reach exchanges with, kept at every later step.",
+          "zh": "所及之内无物与之交换的条件处的差别，在之后每一步保持。"
+        },
+        "conditions": {
+          "en": "The hypotheses of the reach law; balance at the condition.",
+          "zh": "所及规律的假设；此条件处的平衡。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses ExchangeLaw, ExchangeLaw.GivesAlike, ExchangeLaw.Through and Flow.Follows; the delta reads the formation closing a difference through the law it follows.",
+        "zh": "复用 ExchangeLaw、ExchangeLaw.GivesAlike、ExchangeLaw.Through 与 Flow.Follows；增量是经闭合差别者所遵从的律读它。"
+      },
+      "interface": {
+        "output": {
+          "en": "Laws of exchange reading through coupling, and flows following them.",
+          "zh": "经耦合而读的交换律，以及遵从它们的流。"
+        },
+        "input": {
+          "en": "A formation exchanging differently couples the two courses apart.",
+          "zh": "交换不同的形成把两个进程耦合得有别。"
+        },
+        "conditions": {
+          "en": "The law reads through the coupling of each formation outside the part.",
+          "zh": "此律经部分之外每个形成的耦合而读。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "what-a-pools-acts-respond-to",
+      "detail": {
+        "en": "There what a pool's acts can respond to; here what a response must do for the two courses to rejoin, with Loop's widening as the counterpart of Replenishing's rejoining.",
+        "zh": "那里是一组的动作能回应什么；这里是回应要使两个进程重合须做什么，以 Loop 的扩大对照 Replenishing 的重合。"
+      }
+    },
+    {
+      "id": "the-gap-for-ones-own-act",
+      "detail": {
+        "en": "The gap for one's own act says what an act cannot see; closing the difference it made then needs a formation outside the part that couples the difference apart.",
+        "zh": "自身动作的缺口说明动作看不到什么；闭合它所造成的差别，就需要部分之外把差别耦合得有别的形成。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.ExchangeAlikeWith",
+        "Becoming.Flow.changes_through_coupling_apart",
+        "Becoming.Flow.closer_couples_apart",
+        "Becoming.Flow.closes_through_coupling_apart",
+        "Becoming.Flow.exchange_apart_of_change",
+        "Becoming.Flow.exchange_apart_of_closes",
+        "Becoming.Flow.exchange_apart_of_opens",
+        "Becoming.Flow.formation_apart_of_exchange_apart",
+        "Becoming.Flow.gap_made_up",
+        "Becoming.Flow.level_alike_iff_of_alike",
+        "Becoming.Flow.level_alike_succ_iff",
+        "Becoming.Flow.level_steps",
+        "Becoming.Flow.stays_beyond_response",
+        "Becoming.Replenishing.Cond",
+        "Becoming.Replenishing.Member",
+        "Becoming.Replenishing.balances",
+        "Becoming.Replenishing.closes",
+        "Becoming.Replenishing.closes_through",
+        "Becoming.Replenishing.flow",
+        "Becoming.Replenishing.follows",
+        "Becoming.Replenishing.gave",
+        "Becoming.Replenishing.law",
+        "Becoming.Replenishing.level",
+        "Becoming.Replenishing.lowered",
+        "Becoming.Replenishing.made_up",
+        "Becoming.Replenishing.obs",
+        "Becoming.Replenishing.part",
+        "Becoming.Replenishing.rejoined",
+        "Becoming.Replenishing.through",
+        "Becoming.Replenishing.took",
+        "Becoming.Replenishing.web",
+        "Becoming.exists_apart_of_total_ne"
+      ],
+      "sha256": "a00c7d56033c7985142924d3df3cb1a470f42a63841e377b1e3f082bfcbf7d92"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.taken",
+        "Becoming.Flow.given",
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on",
+        "Becoming.total_congr",
+        "Becoming.steps"
+      ],
+      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Web",
+        "Becoming.Flow",
+        "Becoming.total"
+      ],
+      "sha256": "999ceade409bf662963fd7c75005f56a3413c84ca139506bd4d57ac42a62058f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.add_right_cancel"
+      ],
+      "sha256": "6a4a9d63449e8b3afa41d92d886302c1841d488e14d216b1fa9d280961aac652"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.GivesAlike",
+        "Becoming.ExchangeLaw.Through",
+        "Becoming.Flow.Follows"
+      ],
+      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.WithinResponse",
+        "Becoming.Flow.RespondsThroughCoupling",
+        "Becoming.Flow.alike_beyond_response",
+        "Becoming.Flow.exchange_alike_beyond_response"
+      ],
+      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Web.AlikeThrough",
+        "Becoming.Web.AlikeThroughUpTo",
+        "Becoming.Web.CoupledInto"
+      ],
+      "sha256": "33e56ce738d062804808d426049498435660fafcfbd29ae38b8695148536cf35"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T004321.279483Z/verification.json",
+      "role": "receipt",
+      "sha256": "b2518c51c25b8a20a6e877bab87f76d8f2e8fb7f3ce15c07911b4a5fe3110337"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
+      "role": "counterexample",
+      "declarations": [
+        "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
+        "Becoming.Loop.response_returns"
+      ],
+      "sha256": "2e6b7f783c387054999d4efabaf32a4720a6f038636ff7f9d5bfada891f8a90a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "5ffcd994305945c78199e9a1cf3a90ef3467fa5d7ef94a8dcec5c2371fe76150"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
+      "role": "provenance",
+      "sha256": "95ff59e72deb41238deea58d3192ae8bf4b22b75831324d7f6cd23d375b50b47"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
+      "role": "provenance",
+      "sha256": "a5296e9a8fb43255176faf4b9df88bed625bb14a09c2e3a4ec6fc22be3771b86"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-correct-is-dualist.md",
+      "role": "provenance",
+      "sha256": "ff3cf6f8b7fdf63f076e38db36568252442aa3c84fe145b6d9c1694c3168dbca"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T004321.279483Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Rejoining",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (M4), on Ren's \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\", the AI choosing the item, and named on Ren's \"correct? this is a dualist word, are we drifting off?\"; study section 188.",
+      "zh": "2026年10月19日：新增（M4），按 Ren 的\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"与\"please make your own pareto frontier decisions, and push the frontier\"，此项由 AI 选定，并按 Ren 的\"correct? this is a dualist word, are we drifting off?\"命名；研究第 188 节。"
+    }
+  ]
+}

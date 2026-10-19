@@ -97,6 +97,7 @@ Aliases: `law through changing coupling`, `经改变的耦合的规律`, `formin
 ### History
 
 - 19 October 2026: added (G5), on Ren's standing go "you have permission now, please see what else is there to do - keep pushing the frontier till finishing" and "continue" (19 October); study section 187.
+- 19 October 2026, M4 (Becoming.Rejoining): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M4 added a study section; THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without "correction", replaced the "Which responses correct" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the "Selection, causes and experiment" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 
 </details>
 

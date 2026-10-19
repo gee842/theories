@@ -119,6 +119,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LastChange.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawAlongRun.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnedGrouping.lean",
@@ -449,7 +450,8 @@
         "sources/15-codex-theory-conversations/2026-10-17-unification-follow-through.md",
         "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
         "sources/15-codex-theory-conversations/2026-10-18-spine-root-reroot.md",
-        "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md"
+        "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
+        "sources/15-codex-theory-conversations/2026-10-19-correct-is-dualist.md"
       ]
     },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md": {
@@ -2712,6 +2714,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlanTraces.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
@@ -5964,6 +5967,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Refinement.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
@@ -5996,7 +6000,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T130738.412710Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T003752.845229Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T004321.279483Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",

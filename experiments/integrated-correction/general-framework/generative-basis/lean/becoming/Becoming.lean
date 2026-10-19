@@ -242,6 +242,7 @@ import Becoming.SelectionGap
 import Becoming.SelectionReach
 import Becoming.SelectionPool
 import Becoming.PoolResponse
+import Becoming.Rejoining
 import Becoming.LawThroughCoupling
 import Becoming.LawThroughChangingCoupling
 import Becoming.Lexical
@@ -1057,6 +1058,15 @@ readings of the unfolding (`Becoming.Labelled`).
   difference has entered what it couples into. In `Clearing` what every pool holding the dweller
   separates goes unresponded outside the clearer's part; in `Loop` a response returns through the
   actor's coupling closure.
+* `Becoming.Rejoining` (L4): where the courses with and without an act rejoin. A difference
+  between the two courses opens or closes at a condition only across a step at which the two
+  flows exchange with it differently, and where they rejoin, what they exchanged with it makes up
+  the gap exactly. Where the rest follows a law reading through its coupling and the part acts
+  alike after the act, a difference changes only through a formation outside the part that
+  exchanges with the condition differently and couples the two courses apart; what nothing within
+  the responsive reach exchanges with stays as it was. In `Replenishing` a responder reading the
+  level gives back what the act took and the courses rejoin. The course without the act is a
+  comparison, not a standard.
 * `Becoming.LawThroughCoupling` (L4): a law through what a formation couples into, along one
   run. Up to an equivalence, some process going alike under it admits a run's steps up to a
   step exactly where any two of them alike under it, by the same move, end alike; the record
