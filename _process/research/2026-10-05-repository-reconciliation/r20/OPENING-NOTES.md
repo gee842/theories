@@ -1,0 +1,26 @@
+# R20d: OPENING's notes checked against the Lean
+
+AI record, 19 October 2026, board item R20. Only the footnote definitions of [OPENING](../../../../theories/becoming/OPENING.md) changed; its body, in Ren's voice, is byte-identical. The corrections come from "Notes that need changes" in the [v7 proposal](../../../../drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md#notes-that-need-changes). Each cited declaration was read in `Becoming/` before its note was rewritten, and each note fits the body sentence it annotates now, not the proposed one.
+
+| Note | Change | Lean read |
+|---|---|---|
+| `law` | `change_readings` is coming to be and ceasing to be, each read three ways, by definition; it does not relate arising to ceasing. With no premise, "two sides" means only the counting relation of `keep_pace` and `arising_recurs_iff`. The rise-with-fall sense is conditional. `World.separate` is cited for finiteness. | `Change.lean:499, 542, 591`; `Space.lean:1082, 1107`; `Dissipation.lean:798–808` |
+| `conditions` | Balance is stated as continuity for each condition (`ExchangeLaw.course_balances_iff`: the law never overdraws), and the bound on givers is placed in dissipation. `rise_with_fall` and `standing_with_fall` are added, with the decided equality of `fed_from_beyond` and `lpo_of_finite_ends`. The refinement sentence becomes `rests_unrefuted_without_refinement`: counting the refinement restates its hypothesis as dissipation (`withRefinement_dissipatesOn_iff`), and witnesses are fed by it. "Thriving" is said to exceed "active and supported". | `Flow.lean:260`; `Dissipation.lean:226`; `Counterfactual.lean:384`; `Continuation.lean:151`; `Counting.lean:1417`; `Resolution.lean:535, 679, 2385, 2530` |
+| `self` | "Cannot stay enclosed" replaces "cannot go on closed". Rest forbids only arising and ceasing. `Whole.needs_arising` and `needs_new` use neither balance nor dissipation. | `Openness.lean:722`; `Space.lean:197`; `Wholes.lean:177, 185` |
+| `count` | `Balances.uncoupled_beyond_influence` gives how far the counting reaches. | `Feedback.lean:251, 556` |
+| `axiom`, `sages` | The standpoint form of the step is added: `boundaryInvariant_iff_standpointInvariant` and `unrestricted_of_standpointInvariant`, with the presupposition and covering as hypotheses. | `Boundaries.lean:477–499` |
+| `good-evil` | `widens_iff_within_margin_at` is added. Self-enlargement is marked as reading, and what the step adds is stated. The mixed part is now `mixed_iff_adds` with `Retains.not_added` (under the condition), and `Transfer.unordered` is marked as constructed. | `Significance.lean:179, 227, 350, 511` |
+| `alignment` | §7.1–§7.4 rest on Lean results with neither the condition nor a practical premise, each under the conditions it names. Only §7.5 is argued. | `Selection.lean:183, 313`; `SelectionGap.lean:102`; `SelectionPool.lean:266`; `PoolResponse.lean:224` |
+| `guardian` | The kernel certifies proof against statement; that statement matches words is judgment. | — |
+| `cancer` | `rise_paid_from_beyond` (with `GainlessOn`) and `break_not_bounded` are added. "Thrive" becomes "go on, active and supported". | `SelectionReach.lean:111`; `Entropy.lean:138`; `Runaway.lean:193` |
+| `meta` | The loop "winning buys more power to win" is not on the spine. `Capture`'s `byRule` premise excludes the state writing the rule, and its docstring is not cited as support. | `Capture.lean:10, 108, 158` |
+| `no-law` | `World.contingent` is stated as seven premises, each met and failed by constructed worlds. "No struggle… among the laws" is read off the list of laws. | `Space.lean:1089` |
+| `turn` | The limits are `Invariant.locks_out`, `perturbation_reabsorbed` and `unsupported_stays_at`. "Any can turn" is not a theorem about every system. | `Attraction.lean:348`; `Capture.lean:158`; `Admission.lean:199, 251` |
+| `present` | Adds the chapter's reading of the words (strength, loops; D39), with `carriedWithin_lt_of_loop` and `runaway_of_returns`. | `Loops.lean:613`; `Frequency.lean:464` |
+| `aligned` | The overclaim "only the condition… the winner's own included" is removed. `Clearing.own_presupposition` and `feeding_unrestricted_of_common` are added, with the bounded reading marked as supplied. | `Boundaries.lean:668`; `Feedback.lean:359`; `Significance.lean:476` |
+| `transitions` | `Wholes` is persistence once formed. No law yet states the transition. | `Wholes.lean` (no transition law found in `Becoming/`) |
+| `collective` | `Whole.needs_arising` is cited, and "consumes" is marked unproved (`Whole` has no draws). The region sentence now rests on `retains_bounded_iff`, with `Retains.within` for whole ⇒ region and `centers_disagree` for the failed converse. | `Wholes.lean:177`; `Significance.lean:241, 247, 476, 498` |
+
+**Not taken.** The proposal reads `Pace.lean` as "the formal side of 'little time to react'". `pace_law` says how long a held rule must be held before its stretch fixes the course it generates (`L ≥ 2N − 1`). The chapter reads it as stability with adaptability (§4, item 7), and no recorded reading ties it to reaction time, so `[^present]` does not cite it.
+
+Checks: `make research-render`, `research-check` (no errors) and `research-links` (0 broken). Generated pages restored before commit.
