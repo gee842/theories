@@ -1,0 +1,2099 @@
+[
+ {
+  "id": "lao-02-you-wu-xiang-sheng",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-02",
+   "LE-R006"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第二章",
+  "fragments": [
+   "故有无相生，难易相成"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Negation.each_through_other",
+   "Becoming.Listed.coming_iff_ceasing",
+   "Becoming.Web.unceasing_iff_bounded",
+   "Becoming.World.arising_iff_ceasing",
+   "Becoming.ceasing_needs_arising"
+  ],
+  "records": [
+   "the-split-that-makes-sense",
+   "bounded-census-keeps-pace",
+   "ceasing-needs-arising"
+  ],
+  "relational": "Each term of a pair (有/无, 难/易, 长/短 …) is stated through the other; no term is given first and the pair is one relation read from two sides.",
+  "reading": "AI 的读法：第二章把六组对举说成“相生、相成、相较”，每一方经由另一方而成立。脊柱有两种确切的形式。其一是互为界说：二值否定的运行只有两个状态，每一个都经由另一个而得（`Negation.each_through_other`）。其二是生灭同步：在自某步起列出者不超过 B 的有界普查之下，开始成立的无尽复现恰当不再成立的无尽复现（`Listed.coming_iff_ceasing`，形成层面 `Web.unceasing_iff_bounded`；有限世界在活动可判定时亦然，`World.arising_iff_ceasing`）。但界无界增长时可以只生不灭，止息复现需要生起复现而反之不然（`ceasing_needs_arising`）。所以“相生”作为普遍律只在有界处精确，在开放处只剩单向。经文没有说数量同步，也没有给条件；条件是脊柱补上的。",
+  "reading_en": "AI reading: the paired terms of chapter 2 are defined through each other, which the spine has as a two-state reading where each state is had through the other; read as arising and ceasing, 'mutual generation' is exact under a bounded census and fails as a universal law in an open world, where arising can go on without ceasing.",
+  "gap": null
+ },
+ {
+  "id": "lao-33-si-er-bu-wang",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-33"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十三章",
+  "fragments": [
+   "死而不亡者寿"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Web.begins_within",
+   "Becoming.Web.ByPassing.begins_passed",
+   "Becoming.Web.ByPassing.ends_within",
+   "Becoming.Web.Whole.needs_new",
+   "Becoming.Generations.generations"
+  ],
+  "records": [
+   "a-pattern-lasts-through-passing",
+   "whole-persists-through-generation"
+  ],
+  "relational": "What lasts is a pattern carried across carriers, not a carrier; lasting is a relation of passing between brief formations.",
+  "reading": "AI 的读法：“死而不亡”把寿从个体的不死移到某种在死之后仍不亡的东西上。脊柱给出确切结构：一个从 T 起一直存在、而每个承载者都短暂的样式，在每 d 步之内必有承载者开始（`Web.begins_within`）；在传递前提下每次开始都是一次传递（`ByPassing.begins_passed`），传递一停，样式在一个跨度内结束（`ByPassing.ends_within`）；由终有一死的部分构成而一直活跃的整体只能经由不断新生的部分而持续（`Web.Whole.needs_new`，世代见证 `Generations.generations`）。经文未说“不亡”者是什么；王弼注读为“生之道不亡”。脊柱只断言持续的样式经传递而持续，不断言任何个体不死。",
+  "reading_en": "AI reading: 'dying without perishing' locates lasting in what is passed on; the spine proves that a pattern outlasting brief carriers lasts only through passing and that a lasting whole of mortal parts needs ever new parts, and it asserts no individual deathlessness.",
+  "gap": null
+ },
+ {
+  "id": "lao-09-chi-er-ying-zhi",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-09",
+   "LE-R017"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第九章",
+  "fragments": [
+   "持而盈之，不如其已",
+   "揣而棁之，不可长保",
+   "功遂身退，天之道"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "湍而群之，不可长保也",
+    "note": "郭店本异文，结构读法不变。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Law.more_never_rests",
+   "Becoming.Flow.beyond_given_bounded",
+   "Becoming.Flow.takesAll_of_more",
+   "Becoming.Flow.level_kept",
+   "Becoming.Web.Carries.arising_not_recurring",
+   "Becoming.Web.ByPassing.ends_within"
+  ],
+  "records": [
+   "seeking-boundary",
+   "where-a-rising-take-ends",
+   "what-taking-all-excludes",
+   "reserve-defers-ending",
+   "a-pattern-lasts-through-passing"
+  ],
+  "relational": "Holding-full and sharpening are relations of a formation to what feeds it; withdrawing when the work is done is a relation of carrier to pattern.",
+  "reading": "AI 的读法：第九章说持盈、揣锐不可长保，功成身退才合天之道。脊柱把这限定为确切范围：要求“比现在更多”的目标在任何静止处都不被满足（`Law.more_never_rests`）；在平衡之下，拿取超过所给者不能持续（`Flow.beyond_given_bounded`），递增的拿取终将拿尽所给（`Flow.takesAll_of_more`）。但在所给之内共同拿取时水平从不低于起点（`Flow.level_kept`），所以“盈”若只是保持一个所给能维持的水平，是可以长保的；不可长保的是需要不断加码的盈。储备只推迟终结而不逃脱它（`Web.Carries.arising_not_recurring`）。“身退”对应传递：样式靠传递而持续，承载者停止传递则样式在一个跨度内结束（`ByPassing.ends_within`）。郭店本作“湍而群之，不可长保也”，结构不变。",
+  "reading_en": "AI reading: what cannot be kept is a fullness that needs more than now, which never rests and under balance cannot outlast what is given; a level held within what is given is kept, so the chapter's universal form is scoped, and 'withdrawing when the work is done' matches lasting through passing.",
+  "gap": null
+ },
+ {
+  "id": "lao-11-dang-qi-wu",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-11",
+   "LE-R020",
+   "LE-R021",
+   "KR2002"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第十一章",
+  "fragments": [
+   "当其无，有车之用",
+   "故有之以为利，无之以为用"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Web.Admits",
+   "Becoming.Web.supported_iff_admits",
+   "Becoming.Flow.Balances.supported_iff_within_margin",
+   "Becoming.Web.Admits.mono",
+   "Becoming.Restoring.Inflow.widens"
+  ],
+  "records": [
+   "closing-needs-net-draw",
+   "significance-retained-within-margin",
+   "four-cases-of-a-part"
+  ],
+  "relational": "Use arises between the built structure (有) and the unoccupied room it bounds (无); neither alone gives the use.",
+  "reading": "AI 的读法：第十一章说器、室、车之用在“无”处，而利在“有”处，两者共同成用（v9.1 KR2002）。脊柱中能形成什么是由现有水平对其要求的容许决定的（`Web.supported_iff_admits`）；一个部分是否被支持，恰在其需要加上它的拿取不超过没有它时的水平加上它的给予（`Flow.Balances.supported_iff_within_margin`）。这一余裕就是“无之以为用”的确切对应：未被占用的部分决定还能容许什么；水平不低者容许低者所容许的一切（`Web.Admits.mono`），由外而来的给予扩大能形成者（`Restoring.Inflow.widens`）。剩余未对应的是空间形状：经文的“无”是被结构围成的空处，脊柱的余裕是数量差，不是被边界围成的区域。郭店本无此章。",
+  "reading_en": "AI reading: the use of the empty corresponds to admission by the margin that what stands leaves unoccupied, which the spine states exactly; what is left over is that chapter 11's empty is a bounded place, whereas the spine's margin is an amount.",
+  "gap": null
+ },
+ {
+  "id": "lao-40-fan-zhe-dao-zhi-dong",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-40",
+   "LE-R059",
+   "LE-R047",
+   "KR2014"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十章",
+  "fragments": [
+   "反者道之动",
+   "弱者道之用"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "返也者，道○（动）也",
+    "note": "郭店本作“返”，支持“返回”读法。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "反也者道之動也",
+    "note": "帛书乙本。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Law.lossless_iff_returns",
+   "Becoming.Law.Returns.undo",
+   "Becoming.Law.drawn_iff_not_returns",
+   "Becoming.Law.lost_stays",
+   "Becoming.Diagonal.Unfolds.never_returns",
+   "Becoming.Widening.closing_needs_less"
+  ],
+  "records": [
+   "recurrence-without-premise",
+   "attraction-is-not-returning",
+   "registration-within-what-it-registers",
+   "whether-a-loop-closes-a-difference"
+  ],
+  "relational": "Return is a relation of a configuration to its own course; weakness is read here as a link giving back less than it receives.",
+  "reading": "AI 的读法：“反者道之动”若读作“道的运动是返回”，脊柱给出它成立的确切范围：在有限多配置之内，一个律什么都不合并恰当每个配置都返回（`Law.lossless_iff_returns`），而“撤销即继续前行”（`Law.Returns.undo`）；每个确定的律恰吸入不返回者（`Law.drawn_iff_not_returns`），丧失的可能保持丧失（`Law.lost_stays`）；自我补全的展开族永不返回（`Diagonal.Unfolds.never_returns`）。所以返回不是道的普遍运动，而是无损失之处的运动。若把“反”读作“相反、转向对立面”，则对应另见第五十八章条目。“弱者道之用”的一个可检验读法（AI 的，较弱）：差异经环路闭合，恰需某一环节返还少于所受（`Widening.closing_needs_less`），即“弱”使回归可能。郭店本作“返也者，道○（动）也”，帛书乙作“反也者道之動也”。",
+  "reading_en": "AI reading: return is the motion exactly where a law loses nothing within finitely many configurations; where it merges, what is drawn never returns, and an unfolding family never returns, so 'return' is scoped rather than universal; a weaker reading takes 'weakness' as the link giving back less that closing needs.",
+  "gap": null
+ },
+ {
+  "id": "lao-40-you-sheng-yu-wu",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-40",
+   "LE-R060",
+   "LE-R061",
+   "TV-LAO-006",
+   "KR2013"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十章",
+  "fragments": [
+   "天下万物生于有，有生于无"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "天下之勿（物）生于又（有），生于亡。",
+    "note": "郭店本：并列的两个所从，没有“有生于无”的链。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "天下之物生於有﹦於無",
+    "note": "帛书乙本重文号，读作链或并列均可。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Flow.BalancesOn.comesToStand_iff",
+   "Becoming.Flow.rise_netGiver",
+   "Becoming.Flow.whole_rise_from_rest",
+   "Becoming.Flow.new_from_rest_or_open",
+   "Becoming.Flow.BalancesOn.arises_given"
+  ],
+  "records": [
+   "laws-of-one-step",
+   "where-novelty-gain-comes-from",
+   "life-as-condition-of-life"
+  ],
+  "relational": "Received text: a chain 无 → 有 → 万物; 郭店: things arise from 有 and from 亡 side by side. The spine reads arising from nothing locally, as a relatum given to by others.",
+  "reading": "AI 的读法：传世本是“无→有→万物”的生成链；郭店本作“生于又（有），生于亡”，是并列的两个所从；帛书乙“生於有﹦於無”用重文号，两读皆可（TV-LAO-006）。脊柱给出局部确切的形式：在平衡处，一个关系项跨一步开始成立，恰当它此前立于无、且所得多于所失（`Flow.BalancesOn.comesToStand_iff`）；生起需要一个活跃的给予者（`BalancesOn.arises_given`）；每次上升都是被给予的（`Flow.rise_netGiver`）。但对整体：在“无不生有”的第一律下，有限整体只从其余部分得益（`Flow.whole_rise_from_rest`），无尽的新颖由族外给予（`Flow.new_from_rest_or_open`）。所以“有生于无”在一个关系项从零开始成立、由他者给予的意义上成立；作为“全体之有出于无”的宇宙生成说，脊柱不断言它，第一律之下与之相冲。郭店的并列读法更接近脊柱。",
+  "reading_en": "AI reading: arising from nothing holds locally, where a relatum that stood at nothing is given more than is taken from it; as the whole of what is arising from nothing it is not asserted by the spine and conflicts with the first law, and the 郭店 parallel reading fits the spine better than the received chain.",
+  "gap": null
+ },
+ {
+  "id": "lao-42-dao-sheng-yi",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-42",
+   "LL-R001",
+   "LL-R002",
+   "LL-R003",
+   "LL-R004"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十二章",
+  "fragments": [
+   "道生一，一生二，二生三，三生万物"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "道生一﹦生二﹦生三﹦生",
+    "note": "帛书乙本以重文号书写同一序列。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.World.unity",
+   "Becoming.Refining.grow",
+   "Becoming.Refining.steady_within",
+   "Becoming.whole_not_in_pairs",
+   "Becoming.separation_faithful_iff"
+  ],
+  "records": [
+   "unity-of-readings",
+   "identification-where-bounded",
+   "separation-loses-the-relation"
+  ],
+  "relational": "A sequence of differentiations; the spine reads differentiation as refinement of readings within one run, not as production of separate things from a prior one.",
+  "reading": "AI 的读法：第四十二章以“生”串起一、二、三、万物，经文本身不确定一、二、三为何（atlas 限定 LL-R001–R004）。脊柱能承接的是“在一之中分化”：每个世界都是交换律的一个运行，其诸读法逐步粘合（`World.unity`）；严格细分每次增加一类（`Refining.grow`），在有限多配置中细分链在其类数之内停止（`Refining.steady_within`）。“二生三”有一个可检验的结构读法（AI 的，较弱）：三者整体可以持有一个任何两两都不给出的关系（`whole_not_in_pairs`），分开即丢失关系（`separation_faithful_iff`）。脊柱不支持把“生”读成时间上从一个先在者产出分离之物；它读作同一展开中读法的分化。帛书乙作“道生一﹦生二﹦生三﹦生”；郭店本无此章。",
+  "reading_en": "AI reading: the spine supports 'one, two, three, the many' as differentiation of readings within one run (each strict refinement adds a class; a whole can hold a relation no pair gives), not as production from a prior one, so the generative chain is scoped to that reading.",
+  "gap": null
+ },
+ {
+  "id": "lao-42-chong-qi-yi-wei-he",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-42",
+   "LL-R005",
+   "LL-R006",
+   "LL-R007",
+   "KR2105"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十二章",
+  "fragments": [
+   "万物负阴而抱阳，冲气以为和"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Flow.restores",
+   "Becoming.Flow.excess_lowers",
+   "Becoming.Widening.closes_within",
+   "Becoming.Widening.closing_needs_less"
+  ],
+  "records": [
+   "supported-renewal-recovery",
+   "own-count-misses-joint-excess",
+   "whether-a-loop-closes-a-difference"
+  ],
+  "relational": "和 is the joint outcome of two opposed bearings (负阴, 抱阳) through 冲气; no single side gives it.",
+  "reading": "AI 的读法：经文说万物负阴抱阳，以冲气为和；atlas 提醒这不是“任意阴加任意阳便和”的相加公式（LL-R007）。一个结构读法（AI 的）：和是两种相反作用经由中介而保持的状态。脊柱目前只有单向的部分：在平衡下，凡水平不低于起点处都有共同净给予，则水平在确定步数内恢复到 m 以上（`Flow.restores`）；共同过度拿取每步至少降低一单位（`Flow.excess_lowers`）；差异经环路闭合需要返还少于所受的环节（`Widening.closing_needs_less`、`Widening.closes_within`）。双向调节（高者抑、低者举）与其失败方式（单向、矫枉过正）没有被证明的定律，见缺口。",
+  "reading_en": "AI reading: read as a state kept by two opposed actions through a medium, 'harmony' has only one-sided counterparts on the spine (restoration from below, excess lowering, difference closing on a loop); the two-sided regulating law is a gap, stated under lao-77-tian-zhi-dao.",
+  "gap": {
+   "statement": "Same formal statement as the gap of lao-77-tian-zhi-dao (two-sided regulation of a level under balance, with corrections bounded by the distance to the level, and its two failure modes).",
+   "nearest": [
+    "Becoming.Flow.restores",
+    "Becoming.Flow.excess_lowers",
+    "Becoming.Widening.closes_within"
+   ],
+   "why_it_matters": "It would give 冲气以为和 a checked reading as regulation by opposed couplings, without reading 和 as a property of the whole unfolding."
+  }
+ },
+ {
+  "id": "lao-42-sun-zhi-er-yi",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-42",
+   "LL-R008",
+   "LL-R009"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十二章",
+  "fragments": [
+   "故物或损之而益，或益之而损"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Flow.Balances.admits_of_net_draw",
+   "Becoming.Flow.Balances.supported_of_net_give",
+   "Becoming.Flow.takesAll_of_more",
+   "Becoming.Flow.full_taking_ends",
+   "Becoming.Flow.excess_bounded"
+  ],
+  "records": [
+   "closing-needs-net-draw",
+   "where-a-rising-take-ends",
+   "what-taking-all-excludes",
+   "own-count-misses-joint-excess"
+  ],
+  "relational": "Whether removing or adding helps depends on the relation of the removed or added part to what others require, not on the part alone.",
+  "reading": "AI 的读法：经文保留“或”，即有时损而益、有时益而损（atlas 限定）。脊柱精确给出何时：一个部分若在 f 所需的每个条件上拿取不少于给予（净汲取者），撤去它后，凡 f 被支持之处其余水平仍容许 f（“开需要净给予”，`Flow.Balances.admits_of_net_draw`）；一个净给予者从不使任何被容许者失去支持（“闭需要净汲取”，`Flow.Balances.supported_of_net_give`）。所以“损之而益”恰在所损者是净汲取者之处；“益之而损”见于递增拿取终至拿尽所给（`Flow.takesAll_of_more`）、全拿者终结依赖者（`Flow.full_taking_ends`）、共同过度不能持续（`Flow.excess_bounded`）。经文的“或”被脊柱换成条件。",
+  "reading_en": "AI reading: the spine turns the chapter's 'sometimes' into a condition: withdrawing a part opens or keeps admission exactly where the part net-draws on what others require, and adding becomes loss where a rising or full take exhausts what is given.",
+  "gap": null
+ },
+ {
+  "id": "lao-16-gui-gen-yue-jing",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-16",
+   "LE-R023",
+   "LE-R024",
+   "KR2000",
+   "KR2001"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第十六章",
+  "fragments": [
+   "归根曰静，是谓复命"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "天道员员，各复其堇",
+    "note": "郭店本到此为止，无“归根曰静…知常曰明”。"
+   },
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "兽（守）中，○（笃）也",
+    "note": "郭店作“守中”，不作“守静”。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.World.comes_to_rest_unrefuted",
+   "Becoming.Flow.fed_from_beyond",
+   "Becoming.Flow.change_recurs_iff",
+   "Becoming.Web.revisits_of_bounded",
+   "Becoming.Settling.not_settles_of_recurs"
+  ],
+  "records": [
+   "continued-change-needs-openness",
+   "continuing-self-fed-from-beyond",
+   "returning-novelty-forgetting-on-levels",
+   "when-the-runs-of-a-process-settle"
+  ],
+  "relational": "Returning to the root is a relation of each thing to its own course; rest is read as what an enclosed exchange comes to.",
+  "reading": "AI 的读法：传世本说“各复归其根”，归根曰静，静曰复命。脊柱把“归根则静”限定在确切范围：在有普查、平衡、耗散，并且自某步起每步都围绕所立者封闭的世界中，“世界自某步起静止”不能被否定（`World.comes_to_rest_unrefuted`）；而持续的变化恰需要开放（`Flow.change_recurs_iff`），持续者必由外部供给（`Flow.fed_from_beyond`）。郭店本只有“天道员员，各复其堇（根）”，并作“兽（守）中”，没有“归根曰静，是谓复命，复命曰常，知常曰明”。在郭店的形式里，“复”是返回而非静止：保持在界内的部分会返回（`Web.revisits_of_bounded`），在环路中有变化则变化反复出现、不会安定（`Settling.not_settles_of_recurs`）。异文改变了结构读法：传世本是封闭则静，郭店本是有界则返。",
+  "reading_en": "AI reading: 'returning to the root is stillness' holds for an enclosed, dissipative exchange, where rest cannot be refuted, while continued change needs openness; the 郭店 text has only 'each returns to its root', which the spine reads as return within a bound, not rest.",
+  "gap": null
+ },
+ {
+  "id": "lao-16-zhi-chang-yue-ming",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-16",
+   "LE-R025",
+   "LE-R069",
+   "LL-R023",
+   "LL-R024",
+   "KR2001"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第十六章",
+  "fragments": [
+   "知常曰明。不知常，妄作凶"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "智（知）和曰明",
+    "note": "郭店第五十五章：明的对象是和。"
+   },
+   {
+    "source_id": "V130-LAO-MA",
+    "text_path": "evidence/texts/V130-LAO-MA.txt",
+    "fragment": "和曰常知和曰明",
+    "note": "帛书甲第五十五章同郭店。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "知常曰明",
+    "note": "帛书乙第五十五章同传世本。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Learning.goAlike_iff_lumped",
+   "Becoming.Learnable.learnable_iff",
+   "Becoming.Identification.bounded_induction",
+   "Becoming.Web.break_not_bounded",
+   "Becoming.Flow.policy_uses_after_failure",
+   "Becoming.Web.observed_raise_couples"
+  ],
+  "records": [
+   "generalization-through-lumping",
+   "learnable-through-registration",
+   "identification-where-bounded",
+   "runaway-distance-unregistered"
+  ],
+  "relational": "明 here is knowing the regularity of the course one acts within; 妄作 is acting through couplings that do not carry it.",
+  "reading": "AI 的读法：“知常曰明”与理论的“明”（看见自己所经由的耦合）在模型这条路线上结构相同：一个读法承载规律，恰当世界在它所合并者之间走得一样（`Learning.goAlike_iff_lumped`，即“理”）；在有限世界中，经由一个映射可学到的，恰是同一未来者特征终归一致的那些（`Learnable.learnable_iff`）；在有界情形，归纳即演绎（`Identification.bounded_induction`）。“不知常，妄作凶”对应 Runaway：一个不经由水平耦合进来的库存，在断裂之前没有任何耦合进来的东西给出到断裂的距离（`Web.break_not_bounded`），更大的库存只在失败之后才被使用（`Flow.policy_uses_after_failure`），而按水平耦合则立刻看见（`Web.observed_raise_couples`）。异文要紧：郭店第十六章无此句；第五十五章郭店作“和曰常，智（知）和曰明”，帛书甲同，帛书乙与传世本作“知和曰常，知常曰明”。在郭店与帛书甲，明是知“和”，不是知“复命”之常。理论的明另有两条路线（测量、他者合用耦合），经文未及。",
+  "reading_en": "AI reading: 'knowing the constant is 明' matches the theory's 明 on its model route (a lumping carries a law exactly where the world goes alike across it), and 'acting blindly brings harm' matches the law that nothing uncoupled bounds the distance to a break; in 郭店 and 帛书甲 chapter 55 the object of 明 is 和, not the constant of return.",
+  "gap": null
+ },
+ {
+  "id": "lao-25-you-wu-hun-cheng",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-25",
+   "TV-LAO-005"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第二十五章",
+  "fragments": [
+   "有物混成，先天地生",
+   "寂兮寥兮，独立而不改"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "蜀（独）立不亥（改）",
+    "note": "郭店本保留独立不改。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "獨立而不改",
+    "note": "帛书乙本。"
+   }
+  ],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.Pace.rule_kept",
+   "Becoming.Pace.rule_unreached",
+   "Becoming.Pace.never_reads_loses",
+   "Becoming.World.run_world",
+   "Becoming.exists_law_iff"
+  ],
+  "records": [
+   "how-fast-a-rule-may-change",
+   "worlds-are-runs",
+   "process-and-frame-as-readings"
+  ],
+  "relational": "Not relational as stated: a thing complete before heaven and earth, standing alone and unchanging, is a prior ground with no relatum.",
+  "reading": "AI 的读法：本章断言一个先于天地、独立、不改的“物”。这是理论不断言的：脊柱没有先在者，世界就是它的运行（`World.run_world`），规律从历史中读出、恰在历史一致处存在（`exists_law_iff`）。最近的结构是两层速度：一个从不读取快层的规则在每一步保持不变（`Pace.rule_kept`），快层遇到的任何东西都到不了它（`Pace.rule_unreached`）；但这只是展开之内的一种读法，而且这样的规则会丢失它所合并者（`Pace.never_reads_loses`），不是先于一切的独立者。郭店作“蜀（独）立不亥（改）”，帛书乙作“獨立而不改”，皆保留独立不改；王弼注把“不改”读作“返化终始，不失其常”，是关系性的读法（见注层）。这是本切片最直接的先在实体式表述。",
+  "reading_en": "AI reading: a thing formed before heaven and earth, standing alone and unchanging, is a prior independent ground that the spine does not assert; the nearest structure, a rule that reads nothing and so stays unchanged, is a reading within the run and loses what it merges.",
+  "gap": null
+ },
+ {
+  "id": "lao-25-zhou-xing-er-bu-dai",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-25",
+   "LE-R034",
+   "TV-LAO-005"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第二十五章",
+  "fragments": [
+   "周行而不殆，可以为天下母"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "蜀（独）立不亥（改），可以为天下母",
+    "note": "郭店本无“周行而不殆”。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "獨立而不改可",
+    "note": "帛书乙本“不改”后直接“可以為天地母”，无“周行而不殆”。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Law.lossless_iff_returns",
+   "Becoming.Web.revisits_of_bounded",
+   "Becoming.Flow.fed_from_beyond",
+   "Becoming.World.comes_to_rest_unrefuted",
+   "Becoming.Flow.change_recurs_iff"
+  ],
+  "records": [
+   "recurrence-without-premise",
+   "returning-novelty-forgetting-on-levels",
+   "continuing-self-fed-from-beyond",
+   "continued-change-needs-openness"
+  ],
+  "relational": "Circulating without exhaustion is a relation of a course to what feeds it.",
+  "reading": "AI 的读法：“周行而不殆”说循环运行而不竭。脊柱给出它成立之处：律无损且配置有限时每个配置都返回（`Law.lossless_iff_returns`），保持在界内的部分会返回（`Web.revisits_of_bounded`）；但耗散而封闭的世界会静止（`World.comes_to_rest_unrefuted`），持续变化恰需要开放（`Flow.change_recurs_iff`），持续者由外部供给（`Flow.fed_from_beyond`）。所以“不殆”只在无损循环或外部供给之下成立。版本要紧：郭店（“蜀（独）立不亥（改），可以为天下母”）与帛书乙（“獨立而不改可以為天地母”）都没有“周行而不殆”，这一断言只属于传世本。",
+  "reading_en": "AI reading: circulating without exhaustion holds for a lossless law within finitely many configurations or for a course fed from beyond, and an enclosed dissipative exchange rests; the clause is absent from 郭店 and 帛书乙, so the claim belongs to the received text only.",
+  "gap": null
+ },
+ {
+  "id": "lao-25-dao-fa-zi-ran",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-25",
+   "LE-R033",
+   "KR2106",
+   "KR2107",
+   "LL-R019"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第二十五章",
+  "fragments": [
+   "人法地，地法天，天法道，道法自然"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "○（地）法天，天法道，道法自○（然）",
+    "note": "郭店本同。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.exists_law_iff",
+   "Becoming.shown_determined_iff",
+   "Becoming.Run.keepHistory_shown",
+   "Becoming.World.run_world",
+   "Becoming.World.unity"
+  ],
+  "records": [
+   "process-and-frame-as-readings",
+   "histories-fix-law-up-to-dead-ends",
+   "worlds-are-runs",
+   "unity-of-readings"
+  ],
+  "relational": "Each level takes the next as its model; the chain ends in 自然, being so of itself, with no law-giver outside.",
+  "reading": "AI 的读法：取法链止于“自然”，第五十一章亦说“莫之命而常自然”：没有外在的命令者。脊柱与此结构相同：某个确定的律容许一个历史，恰当该历史一致（`exists_law_iff`）；历史所显示的律是确定的，恰当历史一致（`shown_determined_iff`）；保存历史的运行所显示的律只容许这一历史（`Run.keepHistory_shown`）；世界就是它的运行（`World.run_world`、`World.unity`）。即规律是从展开中读出的，不是从外加于展开的。未对应的部分：人、地、天、道的取法次序是一个层级，脊柱没有给这几层排序；“自然”在河上公注作“道性自然，无所法也”，在王弼注作“在方而法方，在圆而法圆”，两注不同（见注层与 notes）。郭店本作“道法自○（然）”。",
+  "reading_en": "AI reading: 'the way models itself on what is so of itself' matches the spine's result that a law is read off the unfolding (a determined law admits a history exactly where the history is consistent) with no law-giver outside; the hierarchy of 人, 地, 天, 道 has no counterpart.",
+  "gap": null
+ },
+ {
+  "id": "lao-32-shi-zhi-you-ming",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-32",
+   "LE-R042",
+   "KR2006",
+   "KR2308"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十二章",
+  "fragments": [
+   "始制有名",
+   "名亦既有，夫亦将知止",
+   "知止所以不殆"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Learning.goAlike_iff_lumped",
+   "Becoming.Readout.reading_single_iff",
+   "Becoming.Readout.law_through_iff",
+   "Becoming.Readout.no_judge_of_merged",
+   "Becoming.Law.identifiesAlike_of_law"
+  ],
+  "records": [
+   "generalization-through-lumping",
+   "where-a-move-is-formed",
+   "joint-correlation-reduced-dynamics",
+   "growth-constrained-fragmentation",
+   "the-split-that-makes-sense"
+  ],
+  "relational": "A name is a cut made in the uncarved; it holds as far as what it merges goes alike, and knowing where to stop is knowing that boundary.",
+  "reading": "AI 的读法：“始制有名”说名是在朴上做出的分割；“名亦既有，夫亦将知止”要求知道名的界限。脊柱把名读作合并（lumping）：一个可观测量经由一个归约读出的值是单值的，恰当它在归约所合并者之间相同（`Readout.reading_single_iff`）；某个确定律承载每一步，恰当归约所合并者被每个动作带到它所合并者（`Readout.law_through_iff`）；合并了可观测量所区分者的归约，任何判定者都不能经由它读出（`Readout.no_judge_of_merged`）；保持映射值且承载规律的最粗分割是有意义的分割（`Law.identifiesAlike_of_law`）。所以“知止”恰是知道名在何处承载规律、在何处不再承载。经文没有给界限的判据；判据是脊柱补上的。",
+  "reading_en": "AI reading: names are lumpings, and 'knowing where to stop' is knowing exactly where a lumping carries the law and where its readings stop being single-valued, which the spine states as equivalences.",
+  "gap": null
+ },
+ {
+  "id": "lao-01-ming-ke-ming",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-01",
+   "LE-R001",
+   "TV-LAO-001"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第一章",
+  "fragments": [
+   "道可道，非常道，名可名，非常名"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-MA",
+    "text_path": "evidence/texts/V130-LAO-MA.txt",
+    "fragment": "非恆道也",
+    "note": "帛书甲作“恆”。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Diagonal.claims_incomplete",
+   "Becoming.Frame.self_incomplete",
+   "Becoming.Diagonal.complete_iff_alike",
+   "Becoming.Diagonal.Unfolds.incomplete",
+   "Becoming.Diagonal.unfolding_open"
+  ],
+  "records": [
+   "registration-within-what-it-registers"
+  ],
+  "relational": "Saying and naming happen within what they say; the constant is what no saying from within completes.",
+  "reading": "AI 的读法：第一章平行地区分可道与常道、可名与常名（LE-R001）。脊柱的对角律给出相同的结构：没有一个按其所读者编号的断言族能实现每一种断言模式（`Diagonal.claims_incomplete`）；以自身配置为断言的框架不能实现关于配置的每种模式（`Frame.self_incomplete`）；在内部说出每个读法，恰当诸值之间没有可区分者（`Diagonal.complete_iff_alike`）；逐步补全的族在每一步都缺一样，永不闭合（`Unfolds.incomplete`、`unfolding_open`）。所以“可道者非常道”在“由内部说出”的意义上是定理。帛书甲作“非恆道也”（TV-LAO-001）：“恆”与“常”字异，结构读法不变。经文不断言常道存在于言说之外的某处；脊柱也不断言。",
+  "reading_en": "AI reading: what can be said from within is not the constant, as the diagonal law proves that no family of claims made within what it reads realizes every pattern, and completeness from within holds only where nothing can be told apart.",
+  "gap": null
+ },
+ {
+  "id": "lao-44-zhi-zu-zhi-zhi",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-44",
+   "LL-R011",
+   "KR2313"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十四章",
+  "fragments": [
+   "知足不辱，知止不殆，可以长久"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "智（知）足不辱，智（知）止不怠（殆）",
+    "note": "郭店本同义。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Law.rests_iff",
+   "Becoming.Law.more_never_rests",
+   "Becoming.Enough.law_possibly_iff_assured",
+   "Becoming.Flow.level_kept",
+   "Becoming.Flow.beyond_given_bounded"
+  ],
+  "records": [
+   "seeking-boundary",
+   "the-boundary-of-enough-under-undetermined-laws",
+   "what-taking-all-excludes",
+   "where-a-rising-take-ends"
+  ],
+  "relational": "Enough is a relation between a target and the course that meets it; lasting is the relation of a take to what is given.",
+  "reading": "AI 的读法：知足、知止而可以长久。脊柱的“足之界”：在确定律下，轨道静止且目标自某步起被满足，恰当它到达一个律保持不变且满足目标的状态（`Law.rests_iff`）；“比现在更多”在任何静止处都不被满足（`Law.more_never_rests`）；在确定律下，可能的足与保证的足是一回事（`Enough.law_possibly_iff_assured`）。“可以长久”对应：在所给之内共同拿取，水平从不低于起点（`Flow.level_kept`），超过所给的拿取不能持续（`Flow.beyond_given_bounded`）。条件明确：长久依赖于足的目标可在静止处被满足；经文没有说足的目标由谁设定，脊柱也不设定。郭店本作“智（知）足不辱，智（知）止不怠（殆）”。",
+  "reading_en": "AI reading: 'knowing enough' is a target that can be met at rest, which is exactly where a run can come to rest with its target met, while 'more than now' never rests; lasting matches taking within what is given, which keeps the level.",
+  "gap": null
+ },
+ {
+  "id": "lao-48-wei-dao-ri-sun",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-48",
+   "LL-R012",
+   "LL-R013",
+   "LL-R014",
+   "TV-LAO-008",
+   "KR2007",
+   "KR2008"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十八章",
+  "fragments": [
+   "为学日益",
+   "为道日损",
+   "损之又损，以至于无为"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "聞道者日云",
+    "note": "帛书乙本作“闻道”。"
+   },
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "为道者日员（损）",
+    "note": "郭店本。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Refining.grow",
+   "Becoming.Law.identifiesAlike_of_law",
+   "Becoming.Law.kernel_bisimulation",
+   "Becoming.Readout.futures_through_iff",
+   "Becoming.Readout.law_through_iff",
+   "Becoming.Pace.never_reads_loses"
+  ],
+  "records": [
+   "identification-where-bounded",
+   "the-split-that-makes-sense",
+   "derived-history-law-exactness",
+   "joint-correlation-reduced-dynamics",
+   "how-fast-a-rule-may-change"
+  ],
+  "relational": "Learning adds distinctions; the way removes them. Both are relations between a reading and what it tells apart.",
+  "reading": "AI 的读法：“为学日益”对应细分：严格细分每次增加一类（`Refining.grow`）。“为道日损”若读作逐步去掉区分（合并），脊柱给出它的确切底线：一个归约承载未来，恰当它只合并未来相同的配置（`Readout.futures_through_iff`）；保持映射值且承载规律的最粗分割是有意义的分割（`Law.identifiesAlike_of_law`），它的核是该律的互模拟（`Law.kernel_bisimulation`）；越过这一点再合并，规律不再经由归约被承载（`Readout.law_through_iff` 的反面），被合并者从此不再分开（`Pace.never_reads_loses`）。所以“损之又损”有下界：最粗的承载规律的读法，而不是零区分。经文说损至“无为”，没有说损至无区分；把“无为”与最粗承载读法对应是 AI 的读法。帛书乙作“聞道者日云”（TV-LAO-008），郭店作“为道者日员（损）”：修养活动的表述不同，结构不变。",
+  "reading_en": "AI reading: learning is refinement (each strict refinement adds a class), and daily removal is coarsening that loses nothing exactly down to the coarsest lumping that carries the law; past that point merging loses the law, so 'removing and removing again' has a floor.",
+  "gap": null
+ },
+ {
+  "id": "lao-37-wu-wei-er-wu-bu-wei",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-37",
+   "LE-R049",
+   "LE-R050",
+   "LE-R051",
+   "KR2007",
+   "KR2308"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十七章",
+  "fragments": [
+   "道常无为",
+   "而无不为",
+   "吾将镇之以无名之朴"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "亘（恒）亡为也",
+    "note": "郭店第三十七章。"
+   },
+   {
+    "source_id": "V130-LAO-MA",
+    "text_path": "evidence/texts/V130-LAO-MA.txt",
+    "fragment": "道恆無名",
+    "note": "帛书甲第三十七章。"
+   },
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "亡为而亡不为",
+    "note": "郭店第四十八章有此句。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.TwoClocks.one_course_two_laws",
+   "Becoming.partForms_iff",
+   "Becoming.partForms_and_restForms_iff",
+   "Becoming.Run.rest_driven_by_part",
+   "Becoming.exists_law_iff"
+  ],
+  "records": [
+   "where-a-move-is-formed",
+   "process-and-frame-as-readings"
+  ],
+  "relational": "Nothing is left undone while no separate doer is fixed: whose move a step is, is a reading of the coupling.",
+  "reading": "AI 的读法：“无为而无不为”有一个确切对应：同一个历程可以被两种关于“谁的动作”的律所容许，一种是部分的、一种是其余的，二者只在历程不经之处不同，所以历程不确定动作属于谁（`TwoClocks.one_course_two_laws`）；一个动作是部分的，恰当它是部分的策略（`partForms_iff`），既是部分的又是其余的动作处处相同（`partForms_and_restForms_iff`）。即：一切都发生了，而“由谁做”不是历程本身的事实。脊柱不支持更强的实践断言：侯王守之则万物自化、不行动而无不成，这些不是定理。“化而欲作，吾将镇之以无名之朴”引入一个中心对他者欲作的镇抑，是治理层的意志（见 lao-65）。异文：郭店第三十七章作“○（道）亘（恒）亡为也”，帛书甲乙作“道恆無名”，皆无“而无不为”；“亡为而亡不为”见于郭店第四十八章。",
+  "reading_en": "AI reading: 'doing nothing yet leaving nothing undone' matches the law that one course is admitted by a law where the move is the part's and by one where it is the rest's, so the course does not fix whose move it is; the practical claim that rulers' non-action makes all things transform of themselves is not a theorem, and 郭店 and 帛书 chapter 37 lack 'leaving nothing undone'.",
+  "gap": null
+ },
+ {
+  "id": "lao-51-sheng-er-bu-you",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-51",
+   "LL-R020",
+   "LL-R019",
+   "KR2004",
+   "KR2003"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第五十一章",
+  "fragments": [
+   "生而不有，为而不恃",
+   "长而不宰。是谓玄德"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "为而弗志（恃）也，成而弗居",
+    "note": "郭店第二章无“生而不有”。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "生之畜之生而弗有長而弗宰也是胃玄德",
+    "note": "帛书乙第十章无“为而不恃”。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.partForms_iff",
+   "Becoming.Run.rest_driven_by_part",
+   "Becoming.Pool.difference_belongs_to_the_joint",
+   "Becoming.Dependence.differenceOnlyTogether_iff",
+   "Becoming.Unrestricted",
+   "Becoming.Web.retains_agree"
+  ],
+  "records": [
+   "where-a-move-is-formed",
+   "joint-difference-making",
+   "axiom-decomposition"
+  ],
+  "relational": "Generating, acting and raising stand in relation to the generated without holding it, relying on it or steering its moves.",
+  "reading": "AI 的读法：生而不有、为而不恃、长而不宰。脊柱有三处结构相合。（1）“不宰”：动作是部分的，恰当它是部分自身的策略（`partForms_iff`）；当其余的规律以部分的策略为输入时，部分所做即其余所受（`Run.rest_driven_by_part`）——这正是“宰”的结构，脊柱两者都给出，不说哪个更好。（2）“不恃”：一个部分造成的差别不属于它自己：同一部分、同样的汲取，有一个其他汲取者时它造成差别，有两个时则不造成（`Pool.difference_belongs_to_the_joint`），差别可以只由共同者造成（`Dependence.differenceOnlyTogether_iff`）。（3）“不有”：脊柱没有占有关系。规范方向（宜不宰）只在延续条件之下：凡物之延续都有意义时，没有立场有特权（`Web.retains_agree`）；从“不宰”到“应当不宰”还需要比较承诺（C）与不变性一步，经文与脊柱都没有自行给出。异文：郭店第二章作“为而弗志（恃）也，成而弗居”而无“生而不有”；帛书乙第十章作“生而弗有長而弗宰也是胃玄德”，无“为而不恃”。",
+  "reading_en": "AI reading: 'not steering' matches the distinction between a move that is the part's own policy and a rest driven by another's policy, 'not relying' matches the law that the difference a part makes belongs to the joint activity, and the spine has no relation of possession; that one ought not to steer holds only under the continuation condition with the comparison commitment.",
+  "gap": null
+ },
+ {
+  "id": "lao-30-55-wu-zhuang-ze-lao",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-30",
+   "LAO-55",
+   "LE-R040"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十章；第五十五章",
+  "fragments": [
+   "物壮则老，是谓不道，不道早已",
+   "物壮则老，谓之不道，不道早已"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "是胃（谓）不道",
+    "note": "郭店第五十五章止于“不道”，无“不道早已”。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.more_needs_open",
+   "Becoming.Flow.more_exhausted",
+   "Becoming.Flow.more_needs_unrun",
+   "Becoming.Flow.seeking_ends",
+   "Becoming.Web.Whole.needs_new"
+  ],
+  "records": [
+   "seeking-boundary",
+   "where-a-rising-take-ends",
+   "whole-persists-through-generation"
+  ],
+  "relational": "Strength at its peak is a relation of a rising formation to what feeds it; 'early end' follows from that relation.",
+  "reading": "AI 的读法：“物壮则老，不道早已”。脊柱给出确切范围：每一步都满足的“比现在更多”需要开放世界，没有列表能容纳它所经过的配置（`more_needs_open`）；在列出所立者且自某步起每步耗散的封闭处，没有条件能在任意晚的步上升（`Flow.more_exhausted`）；“更多”需要一个外部（`Flow.more_needs_unrun`）；以递增拿取为生的寻求者会终结，终结是推出的（`Flow.seeking_ends`）。所以“壮则老”在封闭或所给有界时成立；有外部持续给予时，上升可以继续，而持续的整体只经由新部分持续（`Web.Whole.needs_new`）。王弼注把“壮”读作“武力暴兴”，限于兵强；河上公读法见注层。异文：郭店第五十五章作“勿（物）○（壮）则老，是胃（谓）不道”，无“不道早已”；郭店第三十章无此句。",
+  "reading_en": "AI reading: 'what is at its peak ages' holds where the exchange is enclosed or what is given is bounded, since more-than-now needs an open world and an enclosed exchange exhausts every rise; with giving from beyond, rise can continue, so the universal form is scoped.",
+  "gap": null
+ },
+ {
+  "id": "lao-30-qi-shi-hao-huan",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-30",
+   "LE-R040"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十章",
+  "fragments": [
+   "其事好还"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "是胃（谓）果而不强",
+    "note": "郭店第三十章。"
+   },
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "事好。长古之善为士者",
+    "note": "郭店本作“其事好”即接下章，无“还”。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.responds_to_own_level",
+   "Becoming.onLoop_succ_iff",
+   "Becoming.Withholding.withholding_returns",
+   "Becoming.not_onLoop_unread",
+   "Becoming.upstream_unread"
+  ],
+  "records": [
+   "how-loops-form",
+   "giving-that-waits-on-giving",
+   "loops-within-what-a-law-reads"
+  ],
+  "relational": "An act returns to the actor through the loop of couplings it lies on.",
+  "reading": "AI 的读法：“以兵强天下，其事好还”：所施者返回施者。脊柱给出返回的确切条件：响应自己所给水平的交换形成一个环（`responds_to_own_level`），环经由闭合而形成（`onLoop_succ_iff`）；在环上，扣留会绕环返回（`Withholding.withholding_returns`）。但没有环经过一个未被读取的水平（`not_onLoop_unread`），未被读取的水平下游只有它自己（`upstream_unread`）：不在环上的行为不返回。所以“好还”在所施者处于耦合之环上时成立，不是普遍律。异文要紧：郭店第三十章作“是胃（谓）果而不强。其…事好。”，后接他章，没有“还”字，也没有“师之所处，荆棘生焉”。在郭店本中，返回的断言不存在。",
+  "reading_en": "AI reading: an act returns to the actor exactly where it lies on a loop of couplings (withholding comes back around a loop, and no loop passes an unread level), so 'its affairs tend to return' is scoped; the 郭店 text has no 'return' here.",
+  "gap": null
+ },
+ {
+  "id": "lao-76-rou-ruo-sheng-zhi-tu",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-76",
+   "LL-R045",
+   "LL-R010",
+   "KR2012"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第七十六章",
+  "fragments": [
+   "人之生也柔弱，其死也坚强",
+   "故坚强者死之徒，柔弱者生之徒"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-MA",
+    "text_path": "evidence/texts/V130-LAO-MA.txt",
+    "fragment": "木強則恆",
+    "note": "帛书甲。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "木強則兢",
+    "note": "帛书乙。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Tolerance.tolerating_zero",
+   "Becoming.Tolerance.thin_absorbed",
+   "Becoming.Tolerance.kept_set",
+   "Becoming.Tolerance.Triad.spreads",
+   "Becoming.Tolerance.Triad.absorbed",
+   "Becoming.Tolerance.Triad.total_kept",
+   "Becoming.Withholding.withholding_absorbs"
+  ],
+  "records": [
+   "thresholds-of-waiting",
+   "restoring-giving-from-the-worst-start",
+   "giving-that-waits-on-giving"
+  ],
+  "relational": "Soft and hard are relations of a formation to what it waits on: how much of it may fail while it still gives.",
+  "reading": "AI 的读法：把“柔弱”读作容忍（一个形成可以缺少其所等待者中的若干而仍然给予），把“坚强”读作容忍为零（要求所等待者全部给予）。脊柱：容忍为零就是等待全部（`Tolerance.tolerating_zero`）；有记忆时，一处扣留终结它所达的全部给予（`Withholding.withholding_absorbs`）；三个互相等待的形成中，从一处扣留起，容忍 0 在第二步处处扣留，容忍 1 在一步内吸收（`Triad.spreads`、`Triad.absorbed`）；稀薄的扣留在容忍之内一步消散（`thin_absorbed`），每个只在其容忍之外等待的集合一直给予（`kept_set`）。所以“柔弱者生之徒”在“吸收局部失败”的意义上成立。界限同样确切：容忍不恢复全面扣留（`Triad.total_kept`），柔弱不是万能的。第七十八章“柔之胜刚”是跨律比较，脊柱只在见证中有，没有一般定律，见缺口。帛书甲作“木強則恆”，乙作“木強則兢”。",
+  "reading_en": "AI reading: read as tolerance, softness absorbs a thin withholding in one step while zero tolerance lets one withholding end all giving it reaches; tolerance restores nothing after total withholding, and the comparison 'the soft overcomes the hard' across laws is a gap.",
+  "gap": {
+   "statement": "Tolerance.course_mono: for tolerances `tol tol' : α → Nat` with `∀ a, tol a ≤ tol' a`, waits `ups : α → List α`, and starts `s s' : α → Prop` with `∀ a, s a → s' a`, for every step `n` and formation `a`, `(Law.run (Tolerance.tolerating tol ups) s).state n a → (Law.run (Tolerance.tolerating tol' ups) s').state n a`; with strictness witnessed in `Tolerance.Triad` from one withholding at step 2, and the bound that from total withholding no raise of tolerance restores a formation unless some formation spares all it waits on (`Tolerance.gives_needs_sparing`).",
+   "nearest": [
+    "Becoming.Tolerance.AllBut.mono_count",
+    "Becoming.Tolerance.KeepsInclusion.course",
+    "Becoming.Tolerance.tolerating_keeps",
+    "Becoming.Tolerance.Triad.spreads",
+    "Becoming.Tolerance.Triad.absorbed",
+    "Becoming.Tolerance.gives_needs_sparing"
+   ],
+   "why_it_matters": "It states 柔弱者生之徒 and 柔之胜刚 as a comparison of laws (more sparing never removes giving, from any start) rather than a three-formation example, together with its exact limit (tolerance absorbs and does not restore); today monotonicity holds only in the starting set (`KeepsInclusion`), not across tolerances."
+  }
+ },
+ {
+  "id": "lao-77-tian-zhi-dao",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-77",
+   "LL-R038",
+   "LL-R040"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第七十七章",
+  "fragments": [
+   "天之道，其犹张弓与",
+   "天之道，损有馀而补不足"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Widening.closing_needs_less",
+   "Becoming.Widening.closes_within",
+   "Becoming.Widening.never_closes_of_no_less",
+   "Becoming.Widening.closing_not_lossless",
+   "Becoming.Flow.restores",
+   "Becoming.Flow.excess_lowers"
+  ],
+  "records": [
+   "whether-a-loop-closes-a-difference",
+   "supported-renewal-recovery",
+   "own-count-misses-joint-excess"
+  ],
+  "relational": "Lowering the high and raising the low is a regulating relation between levels and what couples to them.",
+  "reading": "AI 的读法：“天之道，损有馀而补不足”，如张弓之高者抑、下者举。脊柱不支持把它当作展开整体的定律：环路每一环节返还不少于所受时，任何一圈都不闭合差异（`Widening.never_closes_of_no_less`），闭合需要一个返还少于所受的环节（`closing_needs_less`），返还低于所受的返回映射在 d 圈内闭合（`closes_within`），而闭合正差异的环不是无损的（`closing_not_lossless`）。单侧的部分也有：自下的恢复（`Flow.restores`）、过度拿取的降低（`Flow.excess_lowers`）。所以“损有余补不足”是某种调节耦合的性质，而不是天的普遍性质；双向调节的确切定律（含两种失败：单侧、矫枉过正而振荡）是缺口。经文把它归于“天之道”，这一归属理论不采纳。",
+  "reading_en": "AI reading: 'reducing excess and making up deficiency' is not a law of the whole unfolding on the spine (a loop closes a difference only through a link giving back less, and closing is not lossless); it is the property of a regulating coupling, and the two-sided law with its failure modes is a gap.",
+  "gap": {
+   "statement": "Flow.regulates: for a flow `L` and web `W` with `L.BalancesOn W [c] (T + k)` for every `k`, and a level `m`, suppose at every step `t ≥ T`: (i) if `m < W.level t c` then `L.given t c < L.taken t c` and `L.taken t c ≤ L.given t c + (W.level t c - m)`; (ii) if `W.level t c < m` then `L.taken t c < L.given t c` and `L.given t c ≤ L.taken t c + (m - W.level t c)`; (iii) if `W.level t c = m` then `L.taken t c = L.given t c`. Then the distance `(W.level t c - m) + (m - W.level t c)` never rises from `T` on and falls by at least one at each step at which it is positive, so `W.level t c = m` for every `t ≥ T + ((W.level T c - m) + (m - W.level T c))`. Exactness: without the bounds in (i)–(ii) some balanced flow has its level above `m` at every even step and below at every odd step from `T` (overcorrection oscillates); without (i) the level can stay above `m` at every step (one-sided restoration, `Flow.restores`, is not regulation).",
+   "nearest": [
+    "Becoming.Flow.restores",
+    "Becoming.Flow.excess_lowers",
+    "Becoming.Flow.net_give_raises_at",
+    "Becoming.Widening.closes_within",
+    "Becoming.Widening.closing_needs_less"
+   ],
+   "why_it_matters": "It gives 损有馀而补不足, 张弓 (77) and 冲气以为和 (42) a checked form as the property of a coupling that reads the level on both sides with bounded correction, with exactly where it fails (one side only, overcorrection), instead of a law of the whole; it also connects the Widening loop law to levels, and is likely shared with the Ru slice's 中和."
+  }
+ },
+ {
+  "id": "lao-77-ren-zhi-dao",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-77",
+   "LL-R038",
+   "LL-R039"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第七十七章",
+  "fragments": [
+   "人之道则不然",
+   "损不足以奉有馀"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.share_rises",
+   "Becoming.Flow.Balances.rise_paid_from_beyond",
+   "Becoming.Flow.rise_with_fall",
+   "Becoming.Flow.continuing_excludes",
+   "Becoming.Flow.rise_netGiver"
+  ],
+  "records": [
+   "target-capture",
+   "raising-what-couples-in-draws-from-beyond",
+   "rising-and-falling-in-one-exchange",
+   "what-taking-all-excludes",
+   "where-novelty-gain-comes-from"
+  ],
+  "relational": "What rises in one place is given from another within one exchange; the passage names the direction in which the low feeds the high.",
+  "reading": "AI 的读法：“损不足以奉有馀”是本切片最清楚的一种集体吸引子的描述。脊柱给出确切结构：每次上升都是被给予的（`Flow.rise_netGiver`）；在平衡的流中，一族的上升完全由族外给予（`Flow.Balances.rise_paid_from_beyond`）；同一交换中一员上升则另一员下降（`Flow.rise_with_fall`）；当一种目标的承载者留下更多后代时，其份额严格上升（`share_rises`）；持续的全拿者使旁边的其他拿取者无法继续（`Flow.continuing_excludes`）。这些是关于方向与来源的定律，不含评价；把它判为“不然”需要延续条件与比较承诺。",
+  "reading_en": "AI reading: 'taking from those who lack to offer to those who have more' matches the laws that every rise is given, a rise is given from beyond, one member rises only as another falls, and a carrier's share rises; the verdict that this is wrong needs the continuation condition and the comparison commitment.",
+  "gap": null
+ },
+ {
+  "id": "lao-31-bing-zhe-bu-xiang",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-31",
+   "LE-R041"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十一章",
+  "fragments": [
+   "夫佳兵者，不祥之器",
+   "不得已而用之，恬淡为上",
+   "胜而不美，而美之者，是乐杀人"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "○（用）兵则贵右",
+    "note": "郭店丙本，“兵者不祥之器”处残缺。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Unrestricted",
+   "Becoming.Flow.Balances.loses_iff_beyond_margin",
+   "Becoming.Transfer.unordered",
+   "Becoming.Web.Retains.not_added",
+   "Becoming.MatchedCourses.recovery_retains_loss"
+  ],
+  "records": [
+   "axiom-decomposition",
+   "significance-retained-within-margin",
+   "comparison-within-reach",
+   "finite-aggregation-within-restorable-basic-losses"
+  ],
+  "relational": "Force ends formations within the same relation the user belongs to; even the prevailing course carries the loss.",
+  "reading": "AI 的读法：本条是有条件的对应。在延续条件之下（`Unrestricted`：凡物之延续有意义），一个部分使某个有意义的延续丧失，恰在没有它时水平容许该形成而有它时超出余裕（`Flow.Balances.loses_iff_beyond_margin`）；以保留比较并不许可任何终结（`Web.Retains.not_added`）；两条各有对方所无的混合路径互不保留，排序需要一个度量（`Transfer.unordered`）——这对应“不得已而用之”：只有在没有一条路径保留另一条的一切时，才需要比较承诺。“胜而不美”对应：支持恢复后，已失去的仍然失去（`MatchedCourses.recovery_retains_loss` 的见证）。郭店丙本存“君子居则贵左，○（用）兵则贵右”，“不祥之器”处残缺。武（止戈）属于文字切片。",
+  "reading_en": "AI reading: under the continuation condition, ending formations loses continuations with significance, retaining-comparison licenses no ending, and mixed courses stay unordered until a measure is supplied, which is the structure of 'using it only when there is no alternative'; 'victory is not beautiful' matches that recovered support does not restore what was lost.",
+  "gap": null
+ },
+ {
+  "id": "lao-08-shan-li-wan-wu-er-bu-zheng",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-08",
+   "LE-R015",
+   "LE-R016",
+   "KR2202",
+   "KR2005"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第八章",
+  "fragments": [
+   "上善若水",
+   "水善利万物而不争"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-MA",
+    "text_path": "evidence/texts/V130-LAO-MA.txt",
+    "fragment": "善利萬物而有靜",
+    "note": "帛书甲：而有静。"
+   },
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "善利萬物而有爭",
+    "note": "帛书乙：而有争。"
+   }
+  ],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Flow.level_kept",
+   "Becoming.Flow.supported_of_within",
+   "Becoming.Flow.continuing_excludes",
+   "Becoming.Flow.alongside_not_all",
+   "Becoming.Flow.excess_of_takesAll"
+  ],
+  "records": [
+   "what-taking-all-excludes"
+  ],
+  "relational": "Benefiting all things without taking all is a relation among takers of one condition: joint taking within what is given versus one taker taking all.",
+  "reading": "AI 的读法：把“利万物而不争”读作在共同条件上的给予与拿取关系。脊柱：在所给之内共同拿取，水平从不低于起点（`Flow.level_kept`），共同历程使每个仅依赖该条件的形成保持被支持（`Flow.supported_of_within`）；而在一个全拿者旁边，任何其他拿取者都使共同拿取超过所给（`Flow.excess_of_takesAll`），持续的全拿者使旁边无他者能继续（`Flow.continuing_excludes`），能在他者旁持续的就不是全拿（`Flow.alongside_not_all`）。v9.1 KR2202 提醒“不争否定争夺而不否定为”。异文改变读法：帛书甲作“善利萬物而有靜”，帛书乙作“善利萬物而有爭”，该句中没有“不争”（章末“夫唯不爭”仍在）。郭店无此章。",
+  "reading_en": "AI reading: benefiting all things without contending matches joint taking within what is given, which keeps the level and every dependent supported, against a full taker, which excludes every other taker; in the 帛书 texts the clause reads 'and is still' or 'and contends', so 'without contending' is not in that clause.",
+  "gap": null
+ },
+ {
+  "id": "lao-22-fu-wei-bu-zheng",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-22",
+   "LE-R032",
+   "KR2202"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第二十二章",
+  "fragments": [
+   "夫唯不争，故天下莫能与之争"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.aboveAll_unique",
+   "Becoming.Law.aboveAll_never_rests",
+   "Becoming.Law.more_never_rests",
+   "Becoming.Law.rests_iff"
+  ],
+  "records": [
+   "seeking-boundary"
+  ],
+  "relational": "Contending is a relation of seekers to one another's standing; not entering it removes the relation.",
+  "reading": "AI 的读法：把“争”读作寻求“高于其余一切”的目标。脊柱：在一个状态上，“高于其余一切”至多被一个寻求者满足（`aboveAll_unique`）；在任何律下，两个都寻求“高于其余一切”的寻求者不能一起静止（`Law.aboveAll_never_rests`）；“比现在更多”永不静止（`Law.more_never_rests`），而可在静止处满足的目标才能安定（`Law.rests_iff`）。所以不以“高于其余”为目标者不在这个不能静止的结构之中，“莫能与之争”在这一意义上成立：争的关系需要双方都持这一目标。经文的“莫能与之争”若读作“因此无人能胜过他”，则是一个获胜的主张，脊柱不支持。",
+  "reading_en": "AI reading: read as seeking to stand above all others, contending is a target met by at most one seeker that two seekers can never meet together at rest; a formation that does not hold this target is outside that restless structure, whereas reading the line as a way to prevail is not supported.",
+  "gap": null
+ },
+ {
+  "id": "lao-64-wei-zhi-yu-wei-you",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-64",
+   "LL-R015",
+   "KR2111",
+   "KR2112",
+   "TV-LAO-011",
+   "TV-LAO-013"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第六十四章",
+  "fragments": [
+   "其安易持，其未兆易谋",
+   "为之于未有",
+   "合抱之木，生于毫末"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "亡又（有）也。○（治）之于其未乱",
+    "note": "郭店甲本。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Branching.loss_passes_juncture",
+   "Becoming.Branching.juncture_iff",
+   "Becoming.Branching.keeping_greatest",
+   "Becoming.Branching.lpo_of_junctures_found",
+   "Becoming.Closing.Onset.amount_before",
+   "Becoming.carried_le_polynomial_before"
+  ],
+  "records": [
+   "every-loss-passes-a-juncture",
+   "how-loops-form"
+  ],
+  "relational": "Acting before signs appear is a relation of a course to the junctures it passes before amounts show anything.",
+  "reading": "AI 的读法：其安易持、未兆易谋、为之于未有。脊柱：凡返回的配置之丧失都经过一个关节点（`Branching.loss_passes_juncture`），关节点是保持与丧失都有一步之处（`juncture_iff`），“保持”是保持该配置的最大子过程（`keeping_greatest`）——这就是“为之于未有”的位置。脊柱同时给出界限：在每个过程中找到每次丧失的关节点，等于有限全知原则（`lpo_of_junctures_found`），即找到关节点就是判定该配置能否再得；而环形成之前，携带量不显示它（`Closing.Onset.amount_before`），增长至多为多项式（`carried_le_polynomial_before`），所以“未兆”恰是量上看不出、只能从耦合读出之处。“合抱之木，生于毫末”与环形成之后的倍增相合。经文假定未兆时易谋；脊柱说易在可干预，难在可发现。郭店作“亡又（有）也。○（治）之于其未乱”。",
+  "reading_en": "AI reading: every loss passes a juncture where keeping and losing both have a step, which is the place to act 'before it exists'; but finding the juncture of every loss is the limited principle of omniscience, and before a loop forms the amounts do not show it, so what is easy to change is hard to find except through the couplings.",
+  "gap": null
+ },
+ {
+  "id": "lao-80-xiao-guo-gua-min",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-80",
+   "TV-LAO-012"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第八十章",
+  "fragments": [
+   "小国寡民",
+   "使民重死而不远徙",
+   "民至老死，不相往来"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "使民重死而遠徙",
+    "note": "帛书乙无“不”。"
+   },
+   {
+    "source_id": "V130-LAO-MA",
+    "text_path": "evidence/texts/V130-LAO-MA.txt",
+    "fragment": "使民重死而遠送",
+    "note": "帛书甲无“不”。"
+   }
+  ],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.World.forgets_of_bounded",
+   "Becoming.Flow.whole_recurs_of_rest_idle",
+   "Becoming.Flow.new_beyond_every",
+   "Becoming.Cuts.within_of_unlinked",
+   "Becoming.Flow.unselected_beyond_pool"
+  ],
+  "records": [
+   "returning-novelty-forgetting-on-levels",
+   "where-novelty-gain-comes-from",
+   "which-links-a-closure-needs",
+   "what-pooled-coupling-reaches"
+  ],
+  "relational": "The ideal cuts couplings between communities; each closure reaches only itself.",
+  "reading": "AI 的读法：本章的理想是小而封闭、彼此不相往来的共同体。在其“足”的部分（甘其食、安其居）它与知足条目相合；在“不相往来”的部分它与理论分歧。脊柱：未连接的形成只达及自身（`Cuts.within_of_unlinked`）；在合用耦合闭包之外，什么都不被选择（`Flow.unselected_beyond_pool`）；一个持续交换的有限整体会遗忘（`World.forgets_of_bounded`），其余部分不给净供给时有界整体返回并遗忘（`Flow.whole_recurs_of_rest_idle`），无尽的新颖要求在每个持有它的有限族之外都有交换（`Flow.new_beyond_every`）。所以这一理想保障的是返回与静止，不是生生的继续生成；在延续条件与 C 之下，收窄所失的有意义延续使它不能被判为更好。异文要紧：帛书乙作“使民重死而遠徙”，帛书甲作“使民重死而遠送”，皆无“不”（TV-LAO-012），封闭的读法因而只属于传世本这一句。",
+  "reading_en": "AI reading: the self-enclosed community diverges from the theory: an unlinked formation reaches only itself, a bounded whole that keeps exchanging returns and forgets, and endless novelty needs exchange beyond every finite family; the 'not moving far' clause lacks its negation in both 帛书 texts.",
+  "gap": null
+ },
+ {
+  "id": "lao-71-zhi-bu-zhi",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-71",
+   "LL-R041",
+   "LL-R042"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第七十一章",
+  "fragments": [
+   "知不知上，不知知病",
+   "夫唯病病，是以不病"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Undecided.liar_both_sides",
+   "Becoming.Undecided.rest_undecided",
+   "Becoming.Diagonal.revision_never_rests",
+   "Becoming.Diagonal.gap_unsaid",
+   "Becoming.Undecided.monotone_run_rests"
+  ],
+  "records": [
+   "revision-with-an-undecided-value",
+   "registration-within-what-it-registers"
+  ],
+  "relational": "Knowing is a relation of a reading to what it can and cannot settle; marking the unsettled as unsettled is itself a reading.",
+  "reading": "AI 的读法：把“知不知”读作保留未定值，把“不知知”读作把未定强作已定。脊柱有精确的两面：说谎者句的修正在二值下永不静止，在三值下静止于未定（`Undecided.liar_both_sides`）；凡二值修正无不动点之处，修正的运行只在留下未定之句时静止（`Undecided.rest_undecided`）；移动每个值的修正永不静止（`Diagonal.revision_never_rests`）；内部的成员说不出缺口（`Diagonal.gap_unsaid`）。“病病”——把病标为病——对应：在信息上单调的修正从未定值出发，第一步即静止（`Undecided.monotone_run_rests`）。经文只说上与病，没有说何处必须未定；脊柱说在没有不动点之处。",
+  "reading_en": "AI reading: 'knowing that one does not know' matches keeping the undecided value, with which revision rests where two-valued revision never rests, and 'taking not-knowing for knowing' matches forcing two values onto a claim without a fixed point.",
+  "gap": null
+ },
+ {
+  "id": "lao-58-qi-wu-zheng",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-58",
+   "LL-R027",
+   "LL-R028",
+   "LL-R029",
+   "KR2110"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第五十八章",
+  "fragments": [
+   "祸兮福之所倚，福兮祸之所伏",
+   "孰知其极？其无正",
+   "正复为奇"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Diagonal.negation_returns",
+   "Becoming.Negation.two_states",
+   "Becoming.Negation.each_through_other",
+   "Becoming.Diagonal.revision_never_rests",
+   "Becoming.Undecided.monotone_run_rests"
+  ],
+  "records": [
+   "registration-within-what-it-registers",
+   "the-split-that-makes-sense",
+   "revision-with-an-undecided-value"
+  ],
+  "relational": "Misfortune and fortune each lean on and hide the other; the pair is one alternating course.",
+  "reading": "AI 的读法：祸福相倚伏，正复为奇，其无正。脊柱：二值否定每两步返回（`Diagonal.negation_returns`），恰有两个状态，每个都转入另一个（`Negation.two_states`、`each_through_other`）；移动每个值的映射之修正永不静止（`Diagonal.revision_never_rests`）——这是“其无正”（没有一个定的终点）的确切形式。范围同样确切：在信息上单调的映射从未定值出发即静止（`Undecided.monotone_run_rests`），有不动点的修正会静止。所以“其无正”恰对移动每个值的修正成立，不是普遍律。经文的“孰知其极”也合于此：在没有不动点处，没有一个可以停下来的极。",
+  "reading_en": "AI reading: fortune and misfortune turning into each other match the two-state course of negation, and 'there is no fixed correct point' holds exactly for revisions that move every value, which never rest; where a fixed point exists, revision rests.",
+  "gap": null
+ },
+ {
+  "id": "lao-36-jiang-yu-xi-zhi",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-36"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十六章",
+  "fragments": [
+   "将欲歙之，必固张之",
+   "国之利器不可以示人"
+  ],
+  "variants": [],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.Flow.seeking_ends",
+   "Becoming.Flow.more_exhausted",
+   "Becoming.Web.pool_adds",
+   "Becoming.Web.separates_all_iff",
+   "Becoming.Flow.unselected_beyond_pool"
+  ],
+  "records": [
+   "where-a-rising-take-ends",
+   "seeking-boundary",
+   "what-pooled-coupling-reaches"
+  ],
+  "relational": "One will acts on another through the other's own course while keeping its means out of the other's coupling; the relation is steered from one side.",
+  "reading": "AI 的读法：本章有两层。作为自然律读，“将欲弱之，必固强之”与脊柱相合：以递增拿取为生者会终结（`Flow.seeking_ends`），封闭处的“更多”会耗尽（`Flow.more_exhausted`）。但经文的结构是一个意志对另一方的谋划：为使对方收缩而先使其扩张，并且“利器不可以示人”，把手段保持在对方耦合之外。这与理论分歧：理论的明经由合用耦合扩展，合用池分开其成员不全耦合相同者（`Web.separates_all_iff`），差异正是合用所加（`Web.pool_adds`），而在耦合闭包之外者不被选择（`Flow.unselected_beyond_pool`）——隐藏耦合正是使他者在闭包之外。王弼注读作“因物之性，令其自戮，不假刑”，减弱了诈术色彩，但仍是一方使另一方自毁。本章在兵家、法家的接受史中被读作术，属其他切片。",
+  "reading_en": "AI reading: as a natural law, a rising take ends and an enclosed 'more' is exhausted, which agrees; but the chapter's structure is one will steering another through its own course while keeping its means hidden, which diverges from 明 as widening pooled coupling, since hiding the coupling places others outside the closure.",
+  "gap": null
+ },
+ {
+  "id": "lao-65-fei-yi-ming-min",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-65"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第六十五章",
+  "fragments": [
+   "非以明民，将以愚之"
+  ],
+  "variants": [],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.Web.pool_adds",
+   "Becoming.Web.separates_all_iff",
+   "Becoming.Flow.unselected_beyond_pool",
+   "Becoming.Flow.response_alike_pool",
+   "Becoming.Web.break_not_bounded"
+  ],
+  "records": [
+   "what-pooled-coupling-reaches",
+   "what-a-pools-acts-respond-to",
+   "runaway-distance-unregistered"
+  ],
+  "relational": "One center shapes what the many can know; the knowing of the many is narrowed from one side.",
+  "reading": "AI 的读法：“非以明民，将以愚之”（并见第三章“常使民无知无欲”）是一个中心收窄众人认识的结构。这与理论分歧：池恰分开其成员不全耦合相同者（`Web.separates_all_iff`），差异是合用所加（`Web.pool_adds`），池对其闭包之外的作为不作响应（`Flow.response_alike_pool`），闭包之外者不被选择（`Flow.unselected_beyond_pool`）；收窄众人的耦合就是缩小全体能看见的范围，使到断裂的距离更无从耦合进来（`Web.break_not_bounded`）。须如实记下王弼注的读法：“明谓多见巧诈，蔽其朴也。愚谓无知守真，顺自然也”，即“明”指巧诈而非理论之明；但同章注又说“当务塞兑闭门，令无知无欲”，仍是一方关闭他者的通道。分歧在于结构（一方收窄多方），不在于“明”这个字。",
+  "reading_en": "AI reading: a center making the many less knowing diverges from 明 as pooled coupling, which separates exactly what not all members couple alike; 王弼 reads 明 here as cunning, but his note still has one side closing others' openings, so the divergence is structural, not verbal.",
+  "gap": null
+ },
+ {
+  "id": "lao-49-yi-bai-xing-xin-wei-xin",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-49"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十九章",
+  "fragments": [
+   "圣人无常心，以百姓心为心"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Web.separates_all_iff",
+   "Becoming.Web.pool_adds",
+   "Becoming.ExchangeLaw.acts_alike_all_iff",
+   "Becoming.Flow.unselected_beyond_pool"
+  ],
+  "records": [
+   "what-pooled-coupling-reaches",
+   "what-a-pools-acts-respond-to"
+  ],
+  "relational": "The sage's reading is not fixed in itself; it is the pooled reading of the many.",
+  "reading": "AI 的读法：“无常心，以百姓心为心”与理论的明的第三条路线（他者，合用耦合）结构相同：池恰分开其成员不全耦合相同者（`Web.separates_all_iff`），差异是合用在任何单个成员之上所加（`Web.pool_adds`），池经由耦合的响应是精确的（`ExchangeLaw.acts_alike_all_iff`）；界限同样确切：闭包之外者，池也看不见（`Flow.unselected_beyond_pool`）。这一章是第六十五章（愚民）在同一经文内的反向证据：老子的治理层并非只有一个中心收窄众人的结构。经文没有说百姓之心如何汇合，脊柱给出的是合用的条件。",
+  "reading_en": "AI reading: having no fixed mind and taking the people's minds as one's own matches 明 through pooled coupling, which separates exactly what not all members couple alike and is blind only beyond its closure; it is counter-evidence within the text to the one-center strand of chapter 65.",
+  "gap": null
+ },
+ {
+  "id": "lao-19-jue-sheng-qi-zhi",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LAO-19",
+   "LE-R029",
+   "TV-LAO-003",
+   "KR2307"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第十九章",
+  "fragments": [
+   "绝圣弃智，民利百倍"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "智（知）弃卞（辩）",
+    "note": "郭店：绝知弃辩。"
+   },
+   {
+    "source_id": "V130-LAO-GD",
+    "text_path": "evidence/texts/V130-LAO-GD.txt",
+    "fragment": "民复（復）季（孝）子（慈）",
+    "note": "郭店：绝伪弃○，民复孝慈。"
+   }
+  ],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Flow.Balances.admits_of_net_draw",
+   "Becoming.Flow.Balances.supported_of_net_give",
+   "Becoming.Flow.Balances.withheld",
+   "Becoming.Web.supported_iff_admits"
+  ],
+  "records": [
+   "closing-needs-net-draw",
+   "feedback-and-reach"
+  ],
+  "relational": "Cutting off X restores Y for the people: a relation between what is withdrawn and what others require.",
+  "reading": "AI 的读法：“绝 X，民 Y”的结构在脊柱中有确切条件：撤去一个部分后，凡 f 被支持之处其余水平仍容许 f，恰当该部分在 f 所需的每个条件上拿取不少于给予（`Flow.Balances.admits_of_net_draw`）；一个净给予者从不使被容许者失去支持（`supported_of_net_give`）；部分造成的差别由它拿取与给予的累计给出（`Flow.Balances.withheld`）。所以“绝而民利”恰在所绝者净汲取民之所需时成立；所绝者若是净给予者，绝之则损。异文改变了被绝之物：郭店作“○（绝）智（知）弃卞（辩）”与“○（绝）○（伪）弃○，民复（復）季（孝）子（慈）”，没有“绝圣”“绝仁弃义”（TV-LAO-003）。在郭店本中，本章不针对仁义；“民复孝慈”说的是撤去伪饰后关系恢复。",
+  "reading_en": "AI reading: 'cut off X and the people gain' holds exactly where X net-draws on what the people require, since withdrawing a net drawer never closes admission and withdrawing a net giver can; the 郭店 text cuts off knowing, disputation and artifice rather than sageliness, humaneness and rightness.",
+  "gap": null
+ },
+ {
+  "id": "lao-47-bu-chu-hu",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-47"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第四十七章",
+  "fragments": [
+   "不出户，知天下",
+   "其出弥远，其知弥少"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Learnable.learnable_iff",
+   "Becoming.Learnable.still_learnable_iff_lumped",
+   "Becoming.Learnable.not_rests_on_both",
+   "Becoming.Identification.bounded_induction",
+   "Becoming.Flow.unselected_beyond_pool"
+  ],
+  "records": [
+   "learnable-through-registration",
+   "identification-where-bounded",
+   "what-pooled-coupling-reaches"
+  ],
+  "relational": "Knowing the world without going out is a relation of one's lumping to how the world goes; going far changes which configurations one's lumping must cover.",
+  "reading": "AI 的读法：“不出户，知天下”在脊柱中有确切范围：在有限世界中，经由一个映射可学到的，恰是同一未来者特征终归一致的那些（`Learnable.learnable_iff`；静止律下恰是在映射合并之间相同者，`still_learnable_iff_lumped`）；有界时归纳即演绎（`Identification.bounded_induction`）。“其出弥远，其知弥少”有一个确切的意义：把范围扩展到经由映射相同而特征在任意晚处不同的配置，就没有外推能同时静止于两者（`Learnable.not_rests_on_both`）——走得更远，若仍用原来的合并，可学者变少。但在闭包之外什么都不被选择（`Flow.unselected_beyond_pool`）：不出户只知道户内耦合所及的天下。经文的普遍形式被限定为“世界在你的合并上走得一样之处”。",
+  "reading_en": "AI reading: knowing the world without going out holds exactly where the world is bounded and its features go alike across one's lumping; going farther with the same lumping can make features unlearnable, and nothing beyond one's coupling closure is selected at all.",
+  "gap": null
+ },
+ {
+  "id": "lao-05-tian-di-bu-ren",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-05"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第五章",
+  "fragments": [
+   "天地不仁，以万物为刍狗"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Unrestricted",
+   "Becoming.Web.retains_agree",
+   "Becoming.Web.Retains.not_added",
+   "Becoming.Transfer.unordered",
+   "Becoming.World.unity"
+  ],
+  "records": [
+   "axiom-decomposition",
+   "significance-retained-within-margin",
+   "comparison-within-reach",
+   "unity-of-readings"
+  ],
+  "relational": "Heaven and earth stand in no favoring relation to any thing; things are taken up and let go in the one course.",
+  "reading": "AI 的读法：“天地不仁”与理论的出发点相合：展开整体不被假定为善，理论不断言伦理公理；每个世界只是交换律的一个运行（`World.unity`），其中生成与退化都发生。“以万物为刍狗”作为对展开的描述也相合：事物在其中被用过即弃。但这不是关于意义的陈述。在延续条件之下（`Unrestricted`），凡物之延续都有意义，并且没有立场有特权（`Web.retains_agree`），以保留作比较并不许可任何终结（`Web.Retains.not_added`），混合部分无序（`Transfer.unordered`）。所以“不仁”在“展开无偏爱、无伦理谓词”的意义上成立；若把第五章下句“圣人不仁，以百姓为刍狗”读作实践立场，它与理论的条件伦理分歧。这是旧研究列为反压力的段落；它限定而不否定理论。",
+  "reading_en": "AI reading: 'heaven and earth are not humane' agrees with the theory's refusal to assume the unfolding good and with the absence of any ethical axiom; as a stance toward people it diverges from the conditional ethics, under which every continuation has significance and no standpoint is privileged.",
+  "gap": null
+ },
+ {
+  "id": "lao-79-he-da-yuan",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-79"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第七十九章",
+  "fragments": [
+   "和大怨，必有馀怨"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Law.lost_stays",
+   "Becoming.Law.merged_stays",
+   "Becoming.MatchedCourses.recovery_retains_loss",
+   "Becoming.Law.drawn_iff_not_returns"
+  ],
+  "records": [
+   "recurrence-without-premise",
+   "finite-aggregation-within-restorable-basic-losses",
+   "attraction-is-not-returning"
+  ],
+  "relational": "Reconciliation acts on a relation that already carries a loss; the loss stays in the relation.",
+  "reading": "AI 的读法：调和大怨，必有余怨。脊柱：丧失的可能保持丧失，在任何律下（`Law.lost_stays`）；被合并的配置保持合并，以后的步骤不再分开它们（`Law.merged_stays`）；支持恢复之后，已失去的主张仍然失去（`MatchedCourses.recovery_retains_loss` 的见证）；每个确定的律恰吸入不返回者（`Law.drawn_iff_not_returns`）。所以“和”之后有余，在损失已经发生之处是定律；本章接着以“执左契而不责于人”转向事前，与第六十四章“为之于未有”同一方向。经文没有说余怨能否经新的关系化解；脊柱也只说丢失者不返回，不说新形成者不能出现。",
+  "reading_en": "AI reading: 'reconciling a great grievance leaves a residue' matches the laws that a lost possibility stays lost and merged configurations stay merged, so recovery after loss retains the loss.",
+  "gap": null
+ },
+ {
+  "id": "lao-38-shi-dao-er-hou-de",
+  "tradition": "老子",
+  "layer": "经",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LAO-38",
+   "LE-R054",
+   "LE-R066",
+   "LE-R067",
+   "LE-R068",
+   "LE-R055"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "第三十八章",
+  "fragments": [
+   "故失道而后德，失德而后仁，失仁而后义，失义而后礼"
+  ],
+  "variants": [
+   {
+    "source_id": "V130-LAO-MB",
+    "text_path": "evidence/texts/V130-LAO-MB.txt",
+    "fragment": "故失道而后德失德而句仁失仁而句義",
+    "note": "帛书乙本同一序列。"
+   }
+  ],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.Refining.grow",
+   "Becoming.Law.merged_stays",
+   "Becoming.Flow.new_from_rest_or_open",
+   "Becoming.Web.Whole.needs_new",
+   "Becoming.Law.lost_stays"
+  ],
+  "records": [
+   "identification-where-bounded",
+   "recurrence-without-premise",
+   "where-novelty-gain-comes-from",
+   "whole-persists-through-generation"
+  ],
+  "relational": "A one-way ladder from an original fullness, each differentiation read as a loss of what came before.",
+  "reading": "AI 的读法：本章把道、德、仁、义、礼排成一条单向的丧失之梯：每一层都是前一层失去之后才出现，礼是“忠信之薄而乱之首”。这与理论分歧之处在于“起点完满、分化即丧失”的框架。脊柱中丧失是合并，丧失的保持丧失（`Law.lost_stays`、`Law.merged_stays`）；但分化本身不是丧失：严格细分增加一类（`Refining.grow`），新者由族外给予（`Flow.new_from_rest_or_open`），持续的整体只经由新部分持续（`Web.Whole.needs_new`）。理论中生成与退化不重叠，展开不假定从一个完满起点开始。所以本章作为“名目化的规范是关系变薄的迹象”的观察可以保留，作为普遍的退化史是理论不断言的。帛书乙同有此序列。",
+  "reading_en": "AI reading: the ladder from the way down to ritual reads every differentiation as loss from an original fullness, which the theory does not assert: loss on the spine is merging, while refinement adds classes and new forms are given from beyond.",
+  "gap": null
+ },
+ {
+  "id": "wb-40-38-yi-wu-wei-ben",
+  "tradition": "老子",
+  "layer": "注（王弼）",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LC-L008",
+   "LC-L007",
+   "LC-L001",
+   "KR2015",
+   "KR2016",
+   "KR2320",
+   "KR2092"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "王弼注 第四十章；第三十八章",
+  "fragments": [
+   "有之所始，以无为本，将欲全有，必反于无也",
+   "不能舍无以为体也"
+  ],
+  "variants": [],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.wholeLaw_insensitive",
+   "Becoming.ChangedByNoCondition.eq_of_agree_from",
+   "Becoming.changedByNoCondition_iff_rule",
+   "Becoming.Flow.whole_rise_from_rest",
+   "Becoming.Flow.BalancesOn.comesToStand_iff"
+  ],
+  "records": [
+   "what-a-law-of-the-whole-and-no-part-takes",
+   "where-novelty-gain-comes-from",
+   "laws-of-one-step"
+  ],
+  "relational": "Not relational at its root: 无 is the 本 and 体 of all 有, a ground on which every thing depends and which depends on none.",
+  "reading": "AI 的读法：王弼以“无”为“有”之本、之体，“将欲全有，必反于无”。这是先在根据式的结构，与理论从一个关系性展开开始相分歧，也超出经文（经文第四十章在郭店作并列的“生于有，生于亡”）。脊柱中最接近“万有皆依而无一部分能改变者”的结构是“整体之律而无部分”：一个由水平读出、任何单一条件都不改变的数，只由尾部决定（`ChangedByNoCondition.eq_of_agree_from`），其律对每个条件在每一步都不敏感（`wholeLaw_insensitive`）；但这样一个仍有差别的整体之律存在，恰当一个判定每个布尔序列是否全假的规则存在（`changedByNoCondition_iff_rule`，即以规则形式的 WLPO），核心不假定它。而“有”从“无”生在第一律下只在局部成立：一个关系项从零开始成立需要被他者给予（`Flow.BalancesOn.comesToStand_iff`），有限整体只从其余部分得益（`Flow.whole_rise_from_rest`）。所以“以无为本”在理论中至多是一种需要全知原则的整体读法，不是起点。v9.1 KR2092 记录了裴頠“可损盈欲，不可绝有”的反驳。",
+  "reading_en": "AI reading: 王弼's non-being as the root and substance of all being is a prior ground that diverges from the relational start; the spine's nearest structure, a law of the whole that no part changes, exists exactly where a WLPO rule does, which the core does not assume, and arising from nothing holds only locally, as being given by others.",
+  "gap": null
+ },
+ {
+  "id": "wb-57-chong-ben-xi-mo",
+  "tradition": "老子",
+  "layer": "注（王弼）",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LC-L010",
+   "LC-L007",
+   "LC2-WB-C58-CL02",
+   "KR2017"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "王弼注 第五十七章；第三十八章",
+  "fragments": [
+   "夫以道治国，崇本以息末，以正治国，立辟以攻末",
+   "守母以存其子，崇本以举其末"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Law.perturbation_reabsorbed",
+   "Becoming.Pace.byRule_reabsorbed",
+   "Becoming.Pace.rule_alike_until_reading",
+   "Becoming.Pace.rule_unreached",
+   "Becoming.share_rises"
+  ],
+  "records": [
+   "target-capture",
+   "how-fast-a-rule-may-change"
+  ],
+  "relational": "Outcomes (末) are kept by the rule that forms them (本); acting on outcomes alone leaves the rule unchanged.",
+  "reading": "AI 的读法：王弼对比“崇本以息末”与“立辟以攻末”：攻其末而本不立，末浅而复起。脊柱的确切对应是“持久的改变必须到达规则”：下一配置依赖规则而不依赖状态时，同一规则下的两个配置从下一步起轨道相同，只扰动状态会被重新吸收（`Law.perturbation_reabsorbed`）；两层运行中，两层的步都不读快层配置时，快层扰动在下一步被吸收（`Pace.byRule_reabsorbed`），在第一个读取步之前快层的差异到不了规则（`Pace.rule_alike_until_reading`），从不读取的规则任何快层所遇都到不了（`Pace.rule_unreached`）。理论第七章用 `share_rises` 与此同读“捕获”。限定：王弼的“本”在他处是“无”（见 wb-40-38），这里只取“本 = 生成末的规则”这一结构；把本读作规则是 AI 的读法。",
+  "reading_en": "AI reading: 'honor the root to still the branches' versus 'set up prohibitions to attack the branches' matches the law that perturbing the state alone is re-absorbed and a lasting change has to reach the rule; reading 本 as the rule is the AI's reading, since elsewhere 王弼's 本 is 无.",
+  "gap": null
+ },
+ {
+  "id": "wb-42-you-yan-you-yi",
+  "tradition": "老子",
+  "layer": "注（王弼）",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LC2-WB-C42-CL01"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "王弼注 第四十二章",
+  "fragments": [
+   "已谓之一，岂得无言乎。有言有一，非二如何",
+   "从无之有，数尽乎斯，过此以往，非道之流"
+  ],
+  "variants": [],
+  "kind": "scope",
+  "declarations": [
+   "Becoming.Diagonal.Unfolds.gap_new",
+   "Becoming.Diagonal.Unfolds.gaps_differ",
+   "Becoming.Diagonal.unfolding_open",
+   "Becoming.Diagonal.claims_incomplete"
+  ],
+  "records": [
+   "registration-within-what-it-registers"
+  ],
+  "relational": "Naming the one from within adds the naming to what is named: the count grows by the act of saying.",
+  "reading": "AI 的读法：王弼把一、二、三读作言说的展开：既称之为一，就有了言；有言有一，便是二。这与对角律结构相同：在内部说出所读者，每一步都留下自己的缺口，缺口在它之前的任何一步都没有被说出（`Diagonal.Unfolds.gap_new`），没有两个缺口相同（`gaps_differ`），展开永不闭合也永不返回（`unfolding_open`）。但王弼接着说“数尽乎斯，过此以往，非道之流”：数到三为止。脊柱给出相反的确切结论：补全永不停止。所以王弼的“有言则有二”与脊柱相合，“数尽于三”被脊柱纠正。",
+  "reading_en": "AI reading: 王弼's 'once called one, there is speech, and speech with the one makes two' matches the diagonal law that saying from within adds a new gap at every step, but his 'the count ends at three' is corrected by the same law, under which completion never closes.",
+  "gap": null
+ },
+ {
+  "id": "wb-02-bu-ke-pian-ju",
+  "tradition": "老子",
+  "layer": "注（王弼）",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LC-L002"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "王弼注 第二章",
+  "fragments": [
+   "喜怒同根，是非同门，故不可得偏举也"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.separation_faithful_iff",
+   "Becoming.copy_relates",
+   "Becoming.forgetting_unrelates",
+   "Becoming.Negation.each_through_other"
+  ],
+  "records": [
+   "separation-loses-the-relation",
+   "the-split-that-makes-sense"
+  ],
+  "relational": "Paired terms share one root; taking one side alone loses the relation that makes it what it is.",
+  "reading": "AI 的读法：王弼说喜怒同根、是非同门，不可偏举。脊柱：分开（把整体读作各部分之积）不增不减，恰当各部分不相关（`separation_faithful_iff`）；相关的部分分开读就失去关系。关系由耦合形成（`copy_relates`），遗忘一部分则使其不再相关（`forgetting_unrelates`）；二值否定的两个状态各经由对方而得（`Negation.each_through_other`）。所以“不可偏举”恰在两方相关之处成立；对于真正不相关的两方，偏举无损。王弼把此归于“自然不可偏举之明数”，脊柱给出何时为真。",
+  "reading_en": "AI reading: 'joy and anger share a root, so one cannot be raised alone' matches the law that separating a whole into its parts loses nothing exactly when the parts are unrelated, so one-sided raising loses the relation wherever the pair is related.",
+  "gap": null
+ },
+ {
+  "id": "wb-05-wan-wu-zi-xiang-zhi-li",
+  "tradition": "老子",
+  "layer": "注（王弼）",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LC-L003"
+  ],
+  "source_id": "DS01",
+  "text_path": "evidence/texts/DS01.txt",
+  "locator": "王弼注 第五章",
+  "fragments": [
+   "天地任自然，无为无造，万物自相治理，故不仁也"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.World.unity",
+   "Becoming.exists_law_iff",
+   "Becoming.TwoClocks.one_course_two_laws",
+   "Becoming.Run.rest_driven_by_part"
+  ],
+  "records": [
+   "unity-of-readings",
+   "process-and-frame-as-readings",
+   "where-a-move-is-formed"
+  ],
+  "relational": "Things order one another; no ordering comes from outside their mutual relations.",
+  "reading": "AI 的读法：王弼把“天地不仁”解释为天地无为无造、万物自相治理。这是本切片注层中最直接的关系性表述，与脊柱结构相同：每个世界是交换律的一个运行，其平衡就是其诸读法的粘合（`World.unity`）；规律从历史读出（`exists_law_iff`）；一方之所为即他方之所受（`Run.rest_driven_by_part`），而历程不确定动作属于谁（`TwoClocks.one_course_two_laws`）。王弼同时说“仁者必造立施化，有恩有为”，“造立施化，则物失其真”，即把关照读作外加的造作。理论不采纳这一推论：延续条件之下的伦理不是外加的施恩，而是关系中延续的意义，见 lao-05。",
+  "reading_en": "AI reading: 'things order one another' is the commentary layer's most direct relational statement and matches the spine's one run whose balance is the gluing of its readings, with law read off the history; 王弼's further inference that care is an external imposition is not adopted.",
+  "gap": null
+ },
+ {
+  "id": "hs-06-16-bu-si",
+  "tradition": "老子",
+  "layer": "注（河上公）",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LC-L013",
+   "LC-L015"
+  ],
+  "source_id": "LC-HS-UP",
+  "text_path": "evidence/texts/LC-HS-UP.txt",
+  "locator": "河上公注 第六章；第十六章",
+  "fragments": [
+   "人能养神则不死也",
+   "言安静者是为复还性命，使不死也"
+  ],
+  "variants": [
+   {
+    "source_id": "LC-HS-LOW",
+    "text_path": "evidence/texts/LC-HS-LOW.txt",
+    "fragment": "长生不死，世世以久",
+    "note": "河上公第五十四章注：读作世代相续时与 Generations 相合。"
+   }
+  ],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.Web.Carries.arising_not_recurring",
+   "Becoming.Web.Carries.lasts_within",
+   "Becoming.Web.Whole.needs_new",
+   "Becoming.Web.ByPassing.ends_within",
+   "Becoming.Generations.generations"
+  ],
+  "records": [
+   "reserve-defers-ending",
+   "whole-persists-through-generation",
+   "a-pattern-lasts-through-passing"
+  ],
+  "relational": "Not relational in its aim: the persistence of one self is secured by inner cultivation, not by passing within relations.",
+  "reading": "AI 的读法：河上公把谷神读作“养神则不死”，把复命读作“复还性命，使不死”。这是个体不死的养生读法，理论不断言。脊柱：在不被支持之后，有储备的形成在任意晚的步上不再生起，休眠推迟终结而不逃脱它（`Web.Carries.arising_not_recurring`），储备为 k 时至多再活跃 k 次（`Web.Carries.lasts_within`）；持续者是样式而非承载者：样式靠传递持续，传递停止则一个跨度内结束（`ByPassing.ends_within`），由有终部分构成的整体只经由新部分持续（`Web.Whole.needs_new`）。河上公第五十四章注“长生不死，世世以久”若读作世代相续，则与 `Generations.generations` 相合；第六、十六章的个体不死与之分歧。同一注内另有自我修正，见 hs-39-bu-ke-dan-yu。",
+  "reading_en": "AI reading: 河上公's 'nourishing the spirit, one does not die' is an individual deathlessness the theory does not assert: a reserve defers the end and does not escape it, and what lasts is a pattern passed on, which fits his lineage reading in chapter 54 but not the individual reading here.",
+  "gap": null
+ },
+ {
+  "id": "hs-39-bu-ke-dan-yu",
+  "tradition": "老子",
+  "layer": "注（河上公）",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LC2-HS-C39-CL02",
+   "LC2-HS-C39-CL03"
+  ],
+  "source_id": "LC-HS-LOW",
+  "text_path": "evidence/texts/LC-HS-LOW.txt",
+  "locator": "河上公注 第三十九章",
+  "fragments": [
+   "言谷当有盈缩虚实，不可但欲盈满无已时，将恐枯竭不为谷",
+   "言万物当随时生死，不可但欲长生无已时，将恐灭亡不为物"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Law.more_never_rests",
+   "Becoming.more_needs_open",
+   "Becoming.Flow.more_exhausted",
+   "Becoming.Flow.excess_bounded",
+   "Becoming.Web.Whole.needs_arising"
+  ],
+  "records": [
+   "seeking-boundary",
+   "where-a-rising-take-ends",
+   "own-count-misses-joint-excess",
+   "whole-persists-through-generation"
+  ],
+  "relational": "A valley is a valley through filling and emptying; things are things through living and dying in time.",
+  "reading": "AI 的读法：河上公说谷当有盈缩虚实，不可但欲盈满无已时；万物当随时生死，不可但欲长生无已时。脊柱：“比现在更多”永不静止（`Law.more_never_rests`），每步都满足的“更多”需要开放世界（`more_needs_open`），封闭处的“更多”会耗尽（`Flow.more_exhausted`），共同过度不能持续（`Flow.excess_bounded`）；持续的整体需要部分在任意晚的步生起（`Web.Whole.needs_arising`），即有生有死。本条与 hs-06-16-bu-si 在同一注本中互相牵制：第三十九章否定了“但欲长生无已时”，而第六、十六章许诺不死。理论支持第三十九章。",
+  "reading_en": "AI reading: 'a valley must fill and empty; wanting it always full dries it up; things must live and die in time; wanting endless life destroys them' matches the laws that more-than-now never rests and a lasting whole needs parts that keep arising, and it checks 河上公's own promises of deathlessness elsewhere.",
+  "gap": null
+ },
+ {
+  "id": "sz-16-fu-xing",
+  "tradition": "老子",
+  "layer": "注（苏辙）",
+  "atlas": "yidao-v1.3",
+  "atlas_ids": [
+   "LC-L030",
+   "LC2-SZ-C32-CL02"
+  ],
+  "source_id": "LC-SZ-ALL",
+  "text_path": "evidence/texts/LC-SZ-ALL.txt",
+  "locator": "苏辙《老子解》第十六章注",
+  "fragments": [
+   "惟復于性而後湛然常存矣",
+   "不以復性為明則皆世俗之智雖自謂明非明也"
+  ],
+  "variants": [],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.Pace.rule_kept",
+   "Becoming.Pace.rule_unreached",
+   "Becoming.Pace.never_reads_loses",
+   "Becoming.Web.Whole.needs_new",
+   "Becoming.Web.break_not_bounded"
+  ],
+  "records": [
+   "how-fast-a-rule-may-change",
+   "whole-persists-through-generation",
+   "runaway-distance-unregistered"
+  ],
+  "relational": "Not relational at its root: a nature (性) prior to all relations, recovered by turning back, persists unchanged.",
+  "reading": "AI 的读法：苏辙说天地山河皆变坏不常，“惟復于性而後湛然常存”，并以“復性”为明。这是固定本性的结构：一个先于关系、复归即得、恒常不变者。理论不断言它。脊柱中最接近“湛然常存”者是从不读取快层的规则：它在每一步保持（`Pace.rule_kept`），快层所遇都到不了它（`Pace.rule_unreached`）；但这是展开之内的一种读法，且这样的规则丢失它所合并者（`Pace.never_reads_loses`）。持续的整体只经由新部分持续（`Web.Whole.needs_new`）。在明的问题上分歧更直接：苏辙的明是复归本性，理论的明是看见所经由的耦合，而不经由水平耦合进来者，到断裂的距离无从读出（`Web.break_not_bounded`）。苏辙在本章注中引《易》，把学道排成始于穷理、中于尽性、终于复命（LC-L030），他在第十四章注中又引《楞严》“反流全一”（四库提要称其书“主於佛老同源”）；这一融合在本章注中把“复命”改成了复归本性的结构。",
+  "reading_en": "AI reading: 苏辙's 'only by returning to one's nature does one abide in constant clarity' posits a fixed nature prior to relations, which the theory does not assert; the nearest structure, a rule that never reads and so stays, is a reading within the run that loses what it merges, and his 明 as return to nature differs from 明 as seeing the coupling one acts through.",
+  "gap": null
+ },
+ {
+  "id": "sz-33-bi-jin-wei-ming",
+  "tradition": "老子",
+  "layer": "注（苏辙）",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LC2-SZ-C33-CL01",
+   "KR2011"
+  ],
+  "source_id": "LC-SZ-ALL",
+  "text_path": "evidence/texts/LC-SZ-ALL.txt",
+  "locator": "苏辙《老子解》第三十三章注；第十章注",
+  "fragments": [
+   "分别為智蔽盡為明",
+   "蔽盡則無分别故能自知",
+   "自一而二蔽之所自生"
+  ],
+  "variants": [],
+  "kind": "divergence",
+  "declarations": [
+   "Becoming.Diagonal.complete_iff_alike",
+   "Becoming.Diagonal.gap_unsaid",
+   "Becoming.Readout.no_judge_of_merged",
+   "Becoming.Web.pool_adds",
+   "Becoming.Learning.goAlike_iff_lumped"
+  ],
+  "records": [
+   "registration-within-what-it-registers",
+   "growth-constrained-fragmentation",
+   "what-pooled-coupling-reaches",
+   "generalization-through-lumping"
+  ],
+  "relational": "明 as the end of distinction: self-knowing is reached by removing every split, including the split of knower and known.",
+  "reading": "AI 的读法：苏辙以分别为智、蔽尽为明，“蔽盡則無分别故能自知”，并说“自一而二，蔽之所自生”。脊柱有一条与此精确对应的定理，但方向相反：一个内部的族说出每个读法，恰当诸值之间没有可区分者（`Diagonal.complete_iff_alike`）。也就是说，完全的自知只在无分别处成立，苏辙的等价是对的；但脊柱由此读出的是：有可区分者的世界中，内部总有说不出的缺口（`Diagonal.gap_unsaid`），合并了可观测量所区分者的读法不能判定它（`Readout.no_judge_of_merged`），而明经由合用耦合增加区分（`Web.pool_adds`）、经由承载规律的合并（`Learning.goAlike_iff_lumped`）。苏辙的明取消分别，理论的明扩大耦合。分歧在于方向，不在于等价本身。",
+  "reading_en": "AI reading: 苏辙's 'when obscuration is exhausted there is no distinction, so one knows oneself' matches the spine's equivalence that a family within says every reading exactly when nothing can be told apart, but the spine reads it the other way: where anything can be told apart, self-knowing from within is incomplete, and 明 widens coupling rather than ending distinction.",
+  "gap": null
+ },
+ {
+  "id": "sz-51-ji-er-wei-shi",
+  "tradition": "老子",
+  "layer": "注（苏辙）",
+  "atlas": "yidao-v1.3; atlas-v9.1",
+  "atlas_ids": [
+   "LC-L035",
+   "KR2003"
+  ],
+  "source_id": "LC-SZ-ALL",
+  "text_path": "evidence/texts/LC-SZ-ALL.txt",
+  "locator": "苏辙《老子解》第五十一章注",
+  "fragments": [
+   "物則不能自成逺近相取剛柔相交積而為勢"
+  ],
+  "variants": [],
+  "kind": "agreement",
+  "declarations": [
+   "Becoming.Pool.difference_belongs_to_the_joint",
+   "Becoming.Dependence.differenceOnlyTogether_iff",
+   "Becoming.Flow.rise_netGiver",
+   "Becoming.carriedFrom_carried",
+   "Becoming.onLoop_succ_iff"
+  ],
+  "records": [
+   "joint-difference-making",
+   "where-novelty-gain-comes-from",
+   "how-a-carried-difference-grows",
+   "how-loops-form"
+  ],
+  "relational": "Things cannot complete themselves; near and far take from each other, hard and soft interact, and what accumulates from that is 勢.",
+  "reading": "AI 的读法：苏辙解“势成之”：物不能自成，远近相取，刚柔相交，积而为势，而后兴亡治乱之变成。脊柱：每次上升都是被给予的（`Flow.rise_netGiver`）；一个部分造成的差别属于共同活动（`Pool.difference_belongs_to_the_joint`），差别可以只由共同者造成（`Dependence.differenceOnlyTogether_iff`）；携带量由耦合携带并携带自身（`carriedFrom_carried`），环经由闭合形成（`onLoop_succ_iff`），环形成后差异倍增。所以“积而为势”对应携带量在耦合之环上的积累。经文的“势成之”本身只有三字，此结构属苏辙的解，不是经文的。",
+  "reading_en": "AI reading: 苏辙's 'things cannot complete themselves; near and far take from each other, hard and soft interact, and accumulation becomes momentum' matches the laws that every rise is given, the difference a part makes belongs to the joint activity, and a carried amount grows along loops once they close.",
+  "gap": null
+ }
+]

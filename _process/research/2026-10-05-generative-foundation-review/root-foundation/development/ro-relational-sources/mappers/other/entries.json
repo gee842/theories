@@ -1,0 +1,1651 @@
+[
+  {
+    "id": "zhuangzi-qiwu-bi-chu-yu-shi",
+    "tradition": "庄子（内篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR2052"
+    ],
+    "source_id": "DS05",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/DS05.txt",
+    "locator": "齐物论",
+    "fragments": [
+      "彼出于是，是亦因彼。",
+      "方生方死，方死方生，方可方不可，方不可方可。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Run.part_act_eq_rest_act",
+      "Becoming.partForms_and_restForms_iff",
+      "Becoming.Web.change_readings",
+      "Becoming.Web.arising_recurs_iff",
+      "Becoming.separation_faithful_iff"
+    ],
+    "records": [
+      "where-a-move-is-formed",
+      "separation-loses-the-relation",
+      "coming-and-ceasing-keep-pace"
+    ],
+    "relational": "彼 and 是 are positions within one relation, each named only through the other; 生/死 and 可/不可 are one change seen from its two sides, not two things.",
+    "reading": "AI 读法：结构是\"一个动作，两面\"：每一步部分所做即其余所受，其余所做即部分所受（Run.part_act_eq_rest_act）；一个在任何地方有差别的动作至多由一方单独形成（partForms_and_restForms_iff）。\"方生方死\"对应生起与止息是一个变化的不同读法（Web.change_readings，按定义成立），有限族中生起反复恰当止息反复（arising_recurs_iff）。分开描述只在部分彼此无关时不丢东西（separation_faithful_iff），所以把彼、是分立就丢掉了关系。没有断言：彼是无别，或\"是\"可还原为\"彼\"。",
+    "reading_en": "One move, two sides: what the part does the rest undergoes (Run.part_act_eq_rest_act), and arising and ceasing are one change read two ways (Web.change_readings); describing 彼 and 是 apart is faithful only where they are unrelated (separation_faithful_iff). It does not assert that the two sides are the same.",
+    "gap": null
+  },
+  {
+    "id": "zhuangzi-qiwu-fen-cheng-hui",
+    "tradition": "庄子（内篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR2056"
+    ],
+    "source_id": "DS05",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/DS05.txt",
+    "locator": "齐物论",
+    "fragments": [
+      "其分也，成也；其成也，毁也。凡物无成与毁，复通为一。",
+      "恢恑憰怪，道通为一。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.change_readings",
+      "Becoming.keep_pace",
+      "Becoming.Law.lost_stays",
+      "Becoming.Law.drawn_iff_not_returns",
+      "Becoming.Law.DrawnInto.never_back"
+    ],
+    "records": [
+      "coming-and-ceasing-keep-pace",
+      "attraction-is-not-returning",
+      "recurrence-without-premise"
+    ],
+    "relational": "The division of one thing is the forming of another: 分 and 成 are one change read from the two things it relates; 通为一 joins them in the one unfolding.",
+    "reading": "AI 读法：\"其分也成也，其成也毁也\"与 change_readings 同构：同一变化，从被分者读是毁，从所成者读是成；keep_pace 给出数量上的界：有限族中任一时段内生成与止息之差不超过成员数。但\"凡物无成与毁\"作为普遍断言超出脊柱：脊柱保留真实损失——失去的可能性在任何定律下都保持失去（Law.lost_stays），每个不返回的构形都被吸入某个吸收区（drawn_iff_not_returns）且不再回来（DrawnInto.never_back）。所以\"通为一\"成立于\"一个变化的两种读法\"，不成立于\"没有损失\"。",
+    "reading_en": "One change read as division from one side and completion from the other matches Web.change_readings, and keep_pace bounds comings against ceasings; but \"no thing has completion or ruin\" fails as a universal, since a lost possibility stays lost under every law (Law.lost_stays) and what does not return is drawn in for good. 通为一 holds as one change read twice, not as the absence of loss.",
+    "gap": null
+  },
+  {
+    "id": "zhuangzi-qiwu-dao-shu-liang-xing",
+    "tradition": "庄子（内篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR2053",
+      "KR2058"
+    ],
+    "source_id": "DS05",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/DS05.txt",
+    "locator": "齐物论",
+    "fragments": [
+      "彼亦一是非，此亦一是非。",
+      "彼是莫得其偶，谓之道枢。",
+      "枢始得其环中，以应无穷。",
+      "是以圣人和之以是非，而休乎天均"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Contextual.indexed_fits",
+      "Becoming.Contextual.glues_iff_agree",
+      "Becoming.Contextual.fitsFree_iff",
+      "Becoming.Specker.noGlobal",
+      "Becoming.ParitySystem.contradicts_noGlobal"
+    ],
+    "records": [
+      "contextual-registration",
+      "gluing-under-parity",
+      "unity-of-readings"
+    ],
+    "relational": "Every 是非 is a verdict from a position in the relation; the 枢 is not one more position but the frame that holds each verdict with its position.",
+    "reading": "AI 读法：每个是非都是一个语境的判定。以语境为索引的框架适合所显示的一切（indexed_fits），这是\"枢得其环中以应无穷\"的形式部分；与语境无关的判定恰在各语境相交处一致时存在（glues_iff_agree, fitsFree_iff），在矛盾的语境系统中不存在（Specker.noGlobal, ParitySystem.contradicts_noGlobal）。\"两行\"对应保留带索引的两个判定，而不是选出一个无语境的胜者。剩余：脊柱仍有排除，主张可经耦合进来的差异被排除；齐物把一切是非置于同一层面，超出这里证明的东西。",
+    "reading_en": "Each 是非 is a context's verdict; the indexed frame fits everything shown (indexed_fits), the formal part of the hub at the ring's center, and a context-free verdict exists exactly where contexts agree where they meet (glues_iff_agree), failing for contradictory systems (Specker.noGlobal). 两行 keeps both indexed verdicts; levelling every 是非 goes beyond the spine, which still excludes claims through coupled difference.",
+    "gap": null
+  },
+  {
+    "id": "zhuangzi-qiushui-yi-dao-guan-zhi",
+    "tradition": "庄子（外篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9154",
+      "KR9155"
+    ],
+    "source_id": "R5DY001",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5DY001.txt",
+    "locator": "秋水",
+    "fragments": [
+      "以道觀之，物无貴賤；以物觀之，自貴而相賤；以俗觀之，貴賤不在己。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Clearing.centers_disagree",
+      "Becoming.bounded_rival",
+      "Becoming.boundaryInvariant_iff_standpointInvariant",
+      "Becoming.unrestricted_of_standpointInvariant",
+      "Becoming.Transfer.unordered",
+      "Becoming.Web.significance_undetermined"
+    ],
+    "records": [
+      "whole-first-and-bounded-centers",
+      "presupposition-scopes",
+      "axiom-decomposition"
+    ],
+    "relational": "贵贱 is read from a standpoint within the relation (the thing's own, convention's, the whole's); no 贵贱 is a thing's own property.",
+    "reading": "AI 读法：\"以物观之，自贵而相贱\"对应以依赖为界的中心：各形成的意义止于其区域时，各中心意见不一（Clearing.centers_disagree）；有界的意义是在已形成的边界内接受的延续条件规则（bounded_rival）。\"以道观之，物无贵贱\"对应跨立场不变：在前设与中心覆盖之下，跨边界不变与跨立场不变等价，此即延续条件（boundaryInvariant_iff_standpointInvariant, unrestricted_of_standpointInvariant）。延续条件本身不排序，排序需要一个度量（Transfer.unordered），与\"物无贵贱\"同构。没有断言：表示的动力学蕴含意义（significance_undetermined 证明不蕴含）；延续条件的依据仍开放。",
+    "reading_en": "Seen from each thing, bounded centers disagree (centers_disagree); seen without a privileged standpoint, standpoint invariance is the continuation condition (unrestricted_of_standpointInvariant), and that condition by itself ranks nothing (Transfer.unordered), which is 物无贵贱's structure. The dynamics do not entail the condition (significance_undetermined), so 以道观之 is not thereby warranted.",
+    "gap": null
+  },
+  {
+    "id": "zhuangzi-yangsheng-pao-ding",
+    "tradition": "庄子（内篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR2060",
+      "KR2061"
+    ],
+    "source_id": "DS06",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/DS06.txt",
+    "locator": "养生主",
+    "fragments": [
+      "依乎天理，批大郤，导大窾，因其固然",
+      "每至于族，吾见其难为，怵然为戒，视为止，行为迟"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Learning.goAlike_iff_lumped",
+      "Becoming.Learning.selects_right_through",
+      "Becoming.Learning.lumped_right_iff",
+      "Becoming.Branching.loss_passes_juncture"
+    ],
+    "records": [
+      "generalization-through-lumping",
+      "every-loss-passes-a-juncture"
+    ],
+    "relational": "The cut goes through the relation of blade and ox: the knife follows the joints the body already has (因其固然); skill is reading the body's own structure.",
+    "reading": "AI 读法：\"依乎天理…因其固然\"：通过一个读法的选择，只在关键之处跨该读法的归并一致时才对（selects_right_through）；结构与变化是同一个归并（goAlike_iff_lumped）。庖丁的读法沿着牛体自身的归并走。\"每至于族…视为止，行为迟\"：返回构形的每一次损失都经过一个岔口（loss_passes_juncture，至双重否定），\"族\"是失手之处，注意集中于此。没有断言：熟练保证不损；\"刀刃若新发于硎\"是故事中的结果。",
+    "reading_en": "Cutting along the ox's own joints is selection through a reading that is right only where what matters goes alike across its lumping (selects_right_through, goAlike_iff_lumped); slowing at the knots matches that every loss of a returning configuration passes a juncture (loss_passes_juncture). The blade's nineteen years are the story's outcome, not a theorem.",
+    "gap": null
+  },
+  {
+    "id": "zhuangzi-yingdiwang-hun-dun",
+    "tradition": "庄子（内篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "V3D06",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V3D06.txt",
+    "locator": "应帝王（浑沌寓言）",
+    "fragments": [
+      "儵與忽謀報渾沌之德，曰：「人皆有七竅，以視聽食息，此獨无有，嘗試鑿之。」",
+      "日鑿一竅，七日而渾沌死。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Flow.act_unselected",
+      "Becoming.Clearing.unselected",
+      "Becoming.Web.break_not_bounded"
+    ],
+    "records": [
+      "the-gap-for-ones-own-act",
+      "runaway-distance-unregistered",
+      "generalization-through-lumping"
+    ],
+    "relational": "儵 and 忽 act toward 浑沌 through their own kind (人皆有七窍); the act's consequence lies in 浑沌's relations, which their reading does not hold.",
+    "reading": "AI 读法：儵忽以\"人皆有七窍\"的读法选择，把浑沌与自己归并；凡映射归并的，通过它的选择都分不开（selects_not_right_of_parted）。行为只在耦合闭包之外有差别时，通过闭包的一切选择都错过它（Flow.act_unselected）；清除者的选择在任何一步都选不到\"居住者被终结\"（Clearing.unselected）。日凿一窍，七日而死：断裂之前，耦合进来的东西界定不了离断裂多远（Web.break_not_bounded，此处取其形式：唯一可能不满足的要求不按水平耦合）。剩余：\"报德\"是善意；脊柱只说善意经过自己的读法时到达何处，不评价动机。",
+    "reading_en": "儵 and 忽 select through their own reading (everyone has seven openings), which lumps 浑沌 with themselves, and what a map lumps no selection through it separates (selects_not_right_of_parted); the act's consequence lies beyond what their couplings select (Flow.act_unselected, Clearing.unselected), and day by day nothing that couples in bounds the distance to the break (break_not_bounded).",
+    "gap": null
+  },
+  {
+    "id": "zhuangzi-yingdiwang-ying-er-bu-cang",
+    "tradition": "庄子（内篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR2072"
+    ],
+    "source_id": "V3D06",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V3D06.txt",
+    "locator": "应帝王",
+    "fragments": [
+      "至人之用心若鏡，不將不迎，應而不藏，故能勝物而不傷。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Withholding.waitsAll_withholding_stays",
+      "Becoming.Withholding.gives_without_chain",
+      "Becoming.Withholding.withholding_returns",
+      "Becoming.Withholding.Ring.givesFirst_restores"
+    ],
+    "records": [
+      "giving-that-waits-on-giving",
+      "restoring-giving-from-the-worst-start"
+    ],
+    "relational": "The mirror is defined by its relation to what comes: it responds to each thing and keeps no trace of the last.",
+    "reading": "AI 读法：\"应而不藏\"是无记忆的回应。脊柱给出它成立的范围：有记忆时，停止给予便一直停止（waitsAll_withholding_stays）；无记忆时，凡无长度为 L 的等待链处，停止给予流走，L 步后从任何起点一切都给予（gives_without_chain），这是\"胜物而不伤\"成立之处。但在环上，即使无记忆，停止给予每绕一圈就回来（withholding_returns）；恢复需要另一条定律，即有一处无论所等待者如何都先给（Ring.givesFirst_restores）。所以\"不藏\"在无环处足以不伤，在有环处不够。",
+    "reading_en": "Responding without storing is memoryless response: withholding passes out wherever no chain of waits is long enough (gives_without_chain), but on a loop it returns every turn even without memory (withholding_returns), and restoring needs a law where someone gives first (givesFirst_restores). 不藏 suffices off loops, not on them.",
+    "gap": null
+  },
+  {
+    "id": "zhuangzi-shanmu-cai-bu-cai",
+    "tradition": "庄子（外篇，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9162",
+      "KR9163",
+      "KR9164"
+    ],
+    "source_id": "R5DY002",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5DY002.txt",
+    "locator": "山木",
+    "fragments": [
+      "周將處夫材與不材之間。材與不材之間，似之而非也，故未免乎累。",
+      "一龍一蛇，與時俱化，而无肯專爲",
+      "合則離，成則毀"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Parting.not_right_on_both",
+      "Becoming.Learning.no_prefix_fixes_next",
+      "Becoming.Viability.ChoicePoint.each_not_joint",
+      "Becoming.Viability.kernel_and_iff"
+    ],
+    "records": [
+      "identification-where-runs-part",
+      "conditions-kept-together"
+    ],
+    "relational": "Usefulness and uselessness are positions relative to what is met (the woodcutter, the host's goose); no fixed position stays safe across all that may be met.",
+    "reading": "AI 读法：\"材与不材之间\"仍是固定的外推。在岔口，两个前缀相同而后续分开，没有外推对两边都对（Parting.not_right_on_both）；对任一路程与任一步，前缀固定不了下一值（no_prefix_fixes_next）。ChoicePoint 给出具体系统：每个条件单独可保，两者一起不可保（each_not_joint）；没有路程离开两道防线一起，恰当没有路程离开其中任一（kernel_and_iff）。\"与时俱化，无肯专为\"对应不把任何前缀定为规则。没有断言：\"与时俱化\"就能免于累；脊柱只证明固定策略在岔口失败。",
+    "reading_en": "A fixed middle position is still a fixed extrapolation, and at a parting none is right on both continuations (Parting.not_right_on_both, no_prefix_fixes_next); ChoicePoint shows conditions each keepable and not jointly. Changing with the times is the absence of a fixed rule; that it escapes all 累 is not proved.",
+    "gap": null
+  },
+  {
+    "id": "guoxiang-zhu-du-hua",
+    "tradition": "郭象《庄子注》（注层，不是庄子经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR2079",
+      "KR2080",
+      "KR2081"
+    ],
+    "source_id": "XS04",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/XS04.txt",
+    "locator": "齐物论注",
+    "fragments": [
+      "造化者无主而物各自造",
+      "彼我相因形景俱生虽复玄合而非待也",
+      "物各反所宗于体中而不待乎外"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.Dependent",
+      "Becoming.Flow.fed_from_beyond",
+      "Becoming.Flow.unsupported_stays_at",
+      "Becoming.Flow.nothing_supported_stays",
+      "Becoming.exists_law_iff"
+    ],
+    "records": [
+      "continuing-self-fed-from-beyond",
+      "becoming-dependence-dynamics",
+      "support-from-the-supported"
+    ],
+    "relational": "郭象 keeps the correlation (彼我相因, 形景俱生) but denies that it is dependence (非待): each thing produces itself and its ground lies within (体中).",
+    "reading": "AI 读法（注层，是郭象之读，不是庄子之文）：\"无主\"与脊柱一致：某个确定定律恰在历史一致时容纳它（exists_law_iff），定律从展开读出，不需要外在造者。但\"非待\"\"不待乎外\"与脊柱冲突：一个形成只在其所依赖的条件支持它时活跃（Web.Dependent）；在平衡与耗散之下，持续的家族由外部供给，不能从某步起不靠外部（fed_from_beyond）；外部无物给予时，终点吸收（unsupported_stays_at）。\"独化\"把相关读成并存而非依赖，这是与以依赖为结构的一元关系本体的真实分歧，不是用词差异。",
+    "reading_en": "In 郭象's commentary (not the 庄子 text), \"no master\" agrees (a determined law is read off the consistent history, exists_law_iff), but \"not depending, not waiting on the outside\" conflicts with Web.Dependent and Flow.fed_from_beyond: activity needs support, and a continuing family is fed from beyond. 独化 reads correlation as co-occurrence without dependence.",
+    "gap": null
+  },
+  {
+    "id": "peiwei-chongyou-pian-wu-zi-zu",
+    "tradition": "裴頠《崇有论》（《晋书》所载）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR2090"
+    ],
+    "source_id": "V4DA002",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V4DA002.txt",
+    "locator": "崇有论",
+    "fragments": [
+      "夫品而為族，則所稟者偏，偏無自足，故憑乎外資。",
+      "濟有者皆有也"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Flow.fed_from_beyond",
+      "Becoming.Web.Dependent",
+      "Becoming.Flow.nothing_supported_stays",
+      "Becoming.Flow.unsupported_stays_at"
+    ],
+    "records": [
+      "continuing-self-fed-from-beyond",
+      "support-from-the-supported"
+    ],
+    "relational": "Each kind is partial and is supported by what lies outside it; what supports a being is itself a being.",
+    "reading": "AI 读法：\"偏无自足，故凭乎外资\"对应持续家族由外部供给（fed_from_beyond），活跃需要支持（Web.Dependent）。\"济有者皆有也\"对应\"只有活跃的形成给予\"这一前提下的定律：一旦无物被支持，在要求不放松时再无物被支持或活跃（nothing_supported_stays，文档语\"整体之外无物\"）：支持来自被支持者，不来自\"无\"。剩余：崇有论以\"有\"为本，与一元关系并不同一；对应只在依赖与供给的结构。这是同时代对郭象\"不待乎外\"的反证。",
+    "reading_en": "\"Partial, not self-sufficient, hence relying on outside support\" is Flow.fed_from_beyond with Web.Dependent; \"what supports beings are all beings\" matches that only active formations give, so once nothing is supported nothing is again (nothing_supported_stays). It is the same period's counter to 郭象's 不待乎外.",
+    "gap": null
+  },
+  {
+    "id": "huishi-li-wu",
+    "tradition": "惠施（《庄子·天下》所述，后学记载）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "locator": "莊子·雜篇·天下（惠施历物之意）",
+    "fragments": [
+      "至大無外，謂之大一；至小無內，謂之小一。",
+      "日方中方睨，物方生方死。",
+      "氾愛萬物，天地一體也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.change_readings",
+      "Becoming.Flow.nothing_supported_stays",
+      "Becoming.Flow.feeding_unrestricted_of_common",
+      "Becoming.Transfer.unordered"
+    ],
+    "records": [
+      "feeding-closure",
+      "levels-of-closure"
+    ],
+    "relational": "惠施's claims relate greatest and smallest, noon and decline, living and dying as readings of one whole; the last draws a conclusion about care from the whole's oneness.",
+    "reading": "AI 读法（据《天下》篇转述，是后学对惠施的记载）：\"日方中方睨，物方生方死\"对应生起与止息是一个变化的读法（change_readings）。\"至大无外\"有形式近邻：平衡流中\"整体之外无物\"（nothing_supported_stays 的文档语）。\"氾爱万物，天地一体\"从一体推出普爱；脊柱只在共同条件供给各方时给出这一步：以各中心供给闭包为界的意义，在共同供给条件下即延续条件（feeding_unrestricted_of_common）；而延续条件本身不排序（Transfer.unordered）。所以\"一体\"推\"泛爱\"在有共同供给条件的范围内成立，且这里的\"爱\"不带排序。",
+    "reading_en": "(As 天下 reports 惠施.) 物方生方死 matches change_readings; 天地一体 ⇒ 氾爱万物 holds on the spine only under a common feeding condition (feeding_unrestricted_of_common), and even then the condition orders nothing (Transfer.unordered).",
+    "gap": null,
+    "needs_source": "https://zh.wikisource.org/wiki/莊子/雜篇/天下"
+  },
+  {
+    "id": "mozi-jianai-zhong-bi-cong",
+    "tradition": "墨子（兼爱中）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4031"
+    ],
+    "source_id": "MS18",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/MS18.txt",
+    "locator": "兼爱中",
+    "fragments": [
+      "夫爱人者，人必从而爱之；利人者，人必从而利之；恶人者，人必从而恶之；害人者，人必从而害之。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
+      "Becoming.Widening.kept_of_identity",
+      "Becoming.Widening.loop_kept",
+      "Becoming.Widening.closes_within",
+      "Becoming.Widening.runs_away",
+      "Becoming.Withholding.withholding_returns"
+    ],
+    "records": [
+      "whether-a-loop-closes-a-difference",
+      "giving-that-waits-on-giving"
+    ],
+    "relational": "Love and harm are read as what returns along the relation between persons: the act's consequence comes back through the other.",
+    "reading": "AI 读法：\"必从而\"是普遍的回报律。脊柱：耦合界定回应而不固定回应，有经耦合读取的定律在两种历史下取得不同，也有在一切历史下交换一致的（response_not_fixed_by_coupling），所以\"必\"不由关系本身给出。它在环的每一环节都把收到的给回去时成立（kept_of_identity, loop_kept）；环节给回少于所收时差异在有限圈内关闭（closes_within）；环节至少加倍时失控（runs_away）。\"恶人者人必从而恶之\"在环上对应停止给予每圈返回（withholding_returns）。所以回报律在\"环节守恒\"的范围内成立，不是关系的必然。",
+    "reading_en": "The \"must\" of returned love and harm is not fixed by coupling (response_not_fixed_by_coupling); it holds where each link of the loop gives back what it receives (kept_of_identity, loop_kept), fades where links give back less (closes_within) and grows where they double (runs_away).",
+    "gap": null
+  },
+  {
+    "id": "mozi-jianai-xia-xian-cong-shi",
+    "tradition": "墨子（兼爱下）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9023",
+      "KR4029",
+      "KR4030"
+    ],
+    "source_id": "IS13",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS13.txt",
+    "locator": "兼爱下",
+    "fragments": [
+      "即必吾先从事乎爱利人之亲，然后人报我以爱利吾亲也。",
+      "投我以桃，报之以李。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Tolerance.worst_start",
+      "Becoming.Withholding.withholding_absorbs",
+      "Becoming.Withholding.Ring.givesFirst_restores",
+      "Becoming.Tolerance.restores_iff"
+    ],
+    "records": [
+      "giving-that-waits-on-giving",
+      "restoring-giving-from-the-worst-start",
+      "thresholds-of-waiting"
+    ],
+    "relational": "Giving is a relation of waiting: each gives when what it waits on gives; 墨子 asks who moves first.",
+    "reading": "AI 读法：在保持包含的定律下，最坏起点是全部停止给予（Tolerance.worst_start）；一处停止给予在其可达家族中结束一切给予（withholding_absorbs）。在各只在所等待者给予时才给予的环上，无人先给就不恢复；恢复需要\"先给\"这另一条定律（Ring.givesFirst_restores）；在先给定律下，从一切起点恢复恰当没有清晰的等待链进入（restores_iff）。\"吾先从事乎爱利人之亲\"正是先给。剩余：墨子以\"然后人报我\"为理由，是交换式论证；定理证明先给恢复环，不依赖对方回报的计算。",
+    "reading_en": "From the worst start, total withholding (worst_start), waiting-on-giving never restores; restoring needs someone who gives first (givesFirst_restores), exactly where no clear chain of waits leads in (restores_iff). 墨子's \"I first\" is that law; his warrant, the return, is an exchange argument the theorem does not need.",
+    "gap": null
+  },
+  {
+    "id": "mozi-jianai-zhong-shi-ren-ruo-ji",
+    "tradition": "墨子（兼爱中）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4031",
+      "KR8306"
+    ],
+    "source_id": "MS18",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/MS18.txt",
+    "locator": "兼爱中",
+    "fragments": [
+      "视人之国若视其国，视人之家若视其家，视人之身若视其身。",
+      "凡天下祸篡怨恨，其所以起者，以不相爱生也，是以仁者非之。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.boundaryInvariant_iff_standpointInvariant",
+      "Becoming.unrestricted_of_standpointInvariant",
+      "Becoming.Transfer.unordered",
+      "Becoming.Web.mixed_iff_adds",
+      "Becoming.Clearing.centers_disagree"
+    ],
+    "records": [
+      "axiom-decomposition",
+      "whole-first-and-bounded-centers",
+      "comparison-by-widening"
+    ],
+    "relational": "兼 is a relation of regard that crosses the boundary between one's own and another's; 别 stops it at one's own.",
+    "reading": "AI 读法：\"视人若视其\"是跨边界不变：在前设与中心覆盖之下，跨各自我边界不变恰等于跨立场不变，即延续条件（boundaryInvariant_iff_standpointInvariant, unrestricted_of_standpointInvariant）；以边界为止的中心彼此不一（centers_disagree），对应\"别\"。但延续条件本身不排序：混合即各加对方所缺（mixed_iff_adds），排序需要度量（Transfer.unordered）。所以\"兼以易别\"作为排序还需\"扩大更好\"（C）这一比较承诺；\"祸篡怨恨皆起于不相爱\"是单一原因的普遍断言，脊柱没有证明。",
+    "reading_en": "Regarding others' as one's own is boundary invariance, which given the presupposition is the continuation condition (unrestricted_of_standpointInvariant); but invariance orders nothing (Transfer.unordered), so ranking 兼 over 别 needs the comparison commitment C, and \"all disorder arises from not loving one another\" is a single-cause claim the spine does not prove.",
+    "gap": null
+  },
+  {
+    "id": "mozi-feigong",
+    "tradition": "墨子（非攻上）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4048"
+    ],
+    "source_id": "MS10",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/MS10.txt",
+    "locator": "非攻上",
+    "fragments": [
+      "此何也？以亏人自利也。",
+      "以亏人愈多，其不仁兹甚，罪益厚。",
+      "今至大为攻国，则弗知非，从而誉之，谓之义。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.Balances.loses_iff_beyond_margin",
+      "Becoming.Clearing.free_rider_loses",
+      "Becoming.Transfer.unordered",
+      "Becoming.Learning.selects_right_through",
+      "Becoming.Learning.selects_not_right_of_parted"
+    ],
+    "records": [
+      "significance-retained-within-margin",
+      "comparison-by-widening",
+      "generalization-through-lumping"
+    ],
+    "relational": "亏人自利 relates one's gain to another's loss in one exchange; 墨子 then compares acts by how much loss they bring.",
+    "reading": "AI 读法：\"亏人自利\"有确切对应：从立场 p，一个部分丢失一个有意义的延续，恰当没有它的水平容纳该形成，而它对所需某条件的净汲取超过余量（loses_iff_beyond_margin）；在延续条件下，清除者的部分丢失居住者（free_rider_loses）。\"亏人愈多，其不仁兹甚\"是标量累加；脊柱的比较是保留（扩大），混合部分不排序（Transfer.unordered），所以它只在一方保留另一方的范围内成立。\"至大为攻国则弗知非\"：通过一个读法的选择，只在关键之处跨其归并一致时才对（selects_right_through），把窃与攻国分开判断的读法不跟随关键之处，即墨子所说\"不知类\"。",
+    "reading_en": "亏人自利 is a part's net draw beyond the margin losing a continuation with significance (loses_iff_beyond_margin, free_rider_loses); \"the more loss, the worse\" is scalar aggregation, which holds only where one course retains the other (Transfer.unordered); praising the great attack while condemning the small theft is a selection not through what matters (selects_right_through).",
+    "gap": null
+  },
+  {
+    "id": "mojing-li-suo-de-er-xi",
+    "tradition": "墨经（经上，经层）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4034",
+      "KR4035",
+      "KR4070"
+    ],
+    "source_id": "IS16",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS16.txt",
+    "locator": "经上",
+    "fragments": [
+      "利，所得而喜也。",
+      "害，所得而恶也。",
+      "仁，体爱也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Valuation.premises_of_unrestricted",
+      "Becoming.Web.significance_undetermined",
+      "Becoming.Web.mixed_iff_adds",
+      "Becoming.Transfer.unordered"
+    ],
+    "records": [
+      "map-of-premises",
+      "comparison-by-widening"
+    ],
+    "relational": "利 and 害 are defined through a getter's response to what is got: the relation is between a holder and its gain; 仁 as 体爱 relates a part to its whole.",
+    "reading": "AI 读法（经层）：《经上》把利定义为\"所得而喜\"，害为\"所得而恶\"：评价落在得者对所得的反应上，而墨家\"交相利\"\"亏人自利\"的论证把这种利在人与人之间计算、加总。理论的意义是任何东西延续的意义（延续条件 §6.15，是条件，不是公理），不是得者的喜恶；在延续条件下，生命意义在\"主张的意义即某形成在某步之延续的意义\"的读法上成立（premises_of_unrestricted）；混合部分各加对方所缺，不能加总成排序（mixed_iff_adds, Transfer.unordered）。所以以\"所得而喜\"为单位的利是另一种价值单位：分歧。\"仁，体爱也\"把爱读作部分对所属整体之爱（体，分于兼也），这一部分是关系的，与整体先行一致。",
+    "reading_en": "The 经上 defines 利 as what is got and pleases and 害 as what is got and displeases, a getter's response, which the Mohist arguments then sum across persons; the theory's significance is of continuation, and mixed parts cannot be summed into an order (mixed_iff_adds, Transfer.unordered). The unit diverges; 仁 as 体爱, love as of a part within its whole, agrees.",
+    "gap": null
+  },
+  {
+    "id": "mozi-tianzhi",
+    "tradition": "墨子（天志上）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4027"
+    ],
+    "source_id": "MS02",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/MS02.txt",
+    "locator": "天志上",
+    "fragments": [
+      "顺天意者，义政也。反天意者，力政也。",
+      "顺天意者，兼相爱、交相利，必得赏；反天意者，别相恶、交相贼，必得罚。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.significance_undetermined",
+      "Becoming.bounded_rival",
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.Valuation.premises_of_unrestricted"
+    ],
+    "records": [
+      "map-of-premises",
+      "axiom-decomposition",
+      "presupposition-scopes"
+    ],
+    "relational": "The norm is a relation between a willing 天 and those who obey or defy it, enforced by reward and punishment; persons' relations to one another are warranted through this third.",
+    "reading": "AI 读法：天志把兼相爱、交相利的依据放在一个有意志的天及其赏罚上。理论不立伦理公理：延续条件是公开陈述的条件（§6.15）；表示的动力学不蕴含生命意义（significance_undetermined）；有界的对手规则与动力学一致（bounded_rival）；中心不沿依赖导出（center_not_derived）。天志引入另一种前提：一个意志加上赏罚，并以赏罚作为遵从的理由，把规范依据、动机与遵从合在一处，而理论要求三者区分。分歧：人格意志作为依据。",
+    "reading_en": "天志 warrants mutual love through a willing Heaven that rewards and punishes; the theory asserts no ethical axiom, states its condition openly, and shows the dynamics do not entail significance (significance_undetermined, bounded_rival). A personal will with sanctions is a different kind of premise, and it merges warrant with motivation and compliance.",
+    "gap": null
+  },
+  {
+    "id": "mozi-shangtong",
+    "tradition": "墨子（尚同上）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4045"
+    ],
+    "source_id": "IS15",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS15.txt",
+    "locator": "尚同上",
+    "fragments": [
+      "闻善而不善，皆以告其上。",
+      "上之所是必皆是之，上之所非必皆非之。",
+      "上有过则规谏之，下有善则傍荐之。",
+      "天子唯能壹同天下之义，是以天下治也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.member_separates_all",
+      "Becoming.Web.separates_all_iff_member",
+      "Becoming.Web.pooled_iff_member",
+      "Becoming.Web.pool_adds",
+      "Becoming.Learning.selects_not_right_of_parted"
+    ],
+    "records": [
+      "what-pooled-coupling-reaches",
+      "selection-through-registration"
+    ],
+    "relational": "Members report what they couple to the one above; the one above's verdict then binds every member; 规谏 runs the other way.",
+    "reading": "AI 读法：\"闻善不善皆以告其上\"是汇集：成员把两个历史耦合开时，其类即通过汇集耦合的选择（member_separates_all）；成员列出且可判定时，汇集恰分开某成员分开的东西（separates_all_iff_member）。但\"上之所是必皆是之\"要求每个成员的判定跟随上的判定：凡上的读法归并的，经它的选择都分不开（selects_not_right_of_parted）。汇集只在上所耦合一致者一切成员也都耦合一致时才等于上一人（pooled_iff_member）；否则差异正是汇集所加（pool_adds），而壹同取消了它在判定上的作用。尚同在\"告上完整忠实、规谏开放\"的范围内成立；\"壹同天下之义\"作为治的条件，脊柱不支持。",
+    "reading_en": "Reporting upward is pooling: a pool separates exactly what some member separates (separates_all_iff_member); but binding every verdict to the top's makes verdicts no finer than the top's reading (selects_not_right_of_parted), and the difference a pool adds (pool_adds) then does no work. 尚同 holds where reports are full and 规谏 open; uniform 义 as the condition of order is not supported.",
+    "gap": null
+  },
+  {
+    "id": "mojing-gu-xiao-da",
+    "tradition": "墨经（经说上，说层；释经上\"故，所得而后成也\"）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR0109",
+      "KR0110",
+      "KR4003"
+    ],
+    "source_id": "MS13",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/MS13.txt",
+    "locator": "经说上",
+    "fragments": [
+      "故，小故，有之不必然，无之必不然，体也，若有端。",
+      "大故，有之必然，无之必不然，若见之成见也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.Dependent",
+      "Becoming.Web.Supported",
+      "Becoming.Web.supported_iff_admits",
+      "Becoming.Web.coextinct",
+      "Becoming.Determined"
+    ],
+    "records": [
+      "becoming-dependence-dynamics",
+      "support-from-the-supported"
+    ],
+    "relational": "A 故 is a condition of a result: 小故 is a part-condition whose absence prevents it; 大故 is the condition whose presence brings it.",
+    "reading": "AI 读法（说层）：小故\"有之不必然，无之必不然\"恰是脊柱的依赖：一个形成只在其依赖的条件支持它时活跃（Web.Dependent），支持即站立水平的容纳（supported_iff_admits），依赖链到达不活跃者就终结其后（coextinct）。大故\"有之必然\"是充分性：脊柱从不由支持推出活跃；充分只在确定定律下成立，即从一个构形一个动作至多有一个后继（Determined）。所以小故有确切对应，大故的\"必然\"属于确定定律的范围，不属于依赖本身。",
+    "reading_en": "(说 layer.) 小故, \"with it not necessarily, without it necessarily not\", is exactly Web.Dependent; 大故's \"with it necessarily\" is sufficiency, which the spine never derives from support and which holds only under a determined law (Determined).",
+    "gap": null
+  },
+  {
+    "id": "mobian-qi-ran-suo-yi-ran",
+    "tradition": "墨辩（小取）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4008",
+      "KR4004",
+      "KR4006"
+    ],
+    "source_id": "IS17",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS17.txt",
+    "locator": "小取",
+    "fragments": [
+      "其然也同，其所以然不必同。",
+      "以名举实，以辞抒意，以说出故。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Confound.misattributes",
+      "Becoming.Confound.confounded",
+      "Becoming.Confound.varied_refutes",
+      "Becoming.Run.not_fixes_of_untaken",
+      "Becoming.apart_only_downstream"
+    ],
+    "records": [
+      "experiment-needs-return",
+      "observation-is-a-route"
+    ],
+    "relational": "One outcome, several routes: the same 然 can come through different 所以然, and naming, saying and explaining are three relations to what is.",
+    "reading": "AI 读法：\"其然也同，其所以然不必同\"即混淆：经结果读出的错误投影会错归（Confound.misattributes）；动作与隐藏位同步变化时，记录永远排除不了错误投影（confounded）；在隐藏位不同时变动动作才排除它（varied_refutes）。未被采取的动作，其结果不被记录固定（Run.not_fixes_of_untaken）。\"以说出故\"在脊柱上要求返回与变动，而不只是看到相同结果。观察是从被观察者出发的读法路线，只在其下游有差别（apart_only_downstream）。",
+    "reading_en": "Same outcome, different causes is the confound: read through the outcome, a wrong projection misattributes and is never excluded while the move moves with the hidden bit (Confound.confounded), and only varying the move against it excludes it (varied_refutes). 以说出故 needs return and variation, not the same outcome observed.",
+    "gap": null
+  },
+  {
+    "id": "mobian-lei-qu-lei-yu",
+    "tradition": "墨辩（小取）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4015",
+      "KR4016",
+      "KR4012",
+      "KR4009"
+    ],
+    "source_id": "IS17",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS17.txt",
+    "locator": "小取",
+    "fragments": [
+      "以类取，以类予。",
+      "车，木也；乘车，非乘木也。",
+      "辞之侔也，有所至而正。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Learning.determines_lumped_iff",
+      "Becoming.Learning.lumped_right_iff",
+      "Becoming.Learning.goAlike_iff_lumped",
+      "Becoming.Learning.selects_not_right_of_parted"
+    ],
+    "records": [
+      "generalization-through-lumping"
+    ],
+    "relational": "Inference goes by 类, a lumping of cases; 侔 carries a predicate across the lumping only as far as the relation goes alike.",
+    "reading": "AI 读法：\"以类取，以类予\"是经归并的推广：在跨 π 一致的函数中，有限数据固定 x 处的值恰当某个观察输入与 x 归并（determines_lumped_iff）；转移恰在世界跨归并一致时才对（lumped_right_iff）。\"车，木也；乘车，非乘木也\"：车与木在\"是\"上归并，在\"乘\"上不一致，所以侔\"有所至而正\"：推广只到世界跨归并一致之处。（《经说下》\"狂举\"，以牛马共有之齿尾分牛马，也是经不分开二者的特征去选择，见 selects_not_right_of_parted。）",
+    "reading_en": "Inference by kind is generalization through a lumping, right exactly where the world goes alike across it (lumped_right_iff, determines_lumped_iff); \"a cart is wood, riding a cart is not riding wood\" marks where the lumping stops going alike, which is 侔's \"correct up to a point\".",
+    "gap": null
+  },
+  {
+    "id": "gongsunlong-jian-bai",
+    "tradition": "公孙龙子（坚白论，经文；〈〉中注不计）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0061-S001"
+    ],
+    "source_id": "IS22",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS22.txt",
+    "locator": "坚白论",
+    "fragments": [
+      "得其白，得其坚，见与不见离。",
+      "不见离，一。一不相盈，故离。离也者，藏也。",
+      "无坚得白，其举也二；无白得坚，其举也二。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Contextual.indexed_fits",
+      "Becoming.Contextual.glues_iff_agree",
+      "Becoming.Contextual.fitsFree_iff",
+      "Becoming.Specker.noGlobal"
+    ],
+    "records": [
+      "contextual-registration",
+      "gluing-under-parity"
+    ],
+    "relational": "坚 and 白 are each shown only in one relation (touch, sight); 公孙龙 keeps them apart by the relation that shows them, while the 墨经 joins them in the stone.",
+    "reading": "AI 读法：视得白不得坚，拊得坚不得白，每个语境只显示一项。以语境为索引的框架适合所显示的一切（indexed_fits），这是\"离\"的确切部分。与语境无关的\"坚白石\"恰在各语境相交处一致时存在（glues_iff_agree, fitsFree_iff）；墨经\"坚白，不相外也\"（经上）、\"石一也，坚白二也，而在石\"（经说下）是这一黏合成立的情形。矛盾的语境系统没有全局放置（Specker.noGlobal）。所以离与盈各在其范围内成立：离是所显示者的索引，盈需要黏合；\"离也者藏也\"：一个语境不显示的，不是不在。",
+    "reading_en": "Each sense shows one of 坚/白, and the indexed frame fits all that is shown (indexed_fits), which is 离's exact part; the 墨经's \"hard and white are not outside each other, in the stone\" holds where the contexts glue (glues_iff_agree), and contradictory systems admit no global placement (Specker.noGlobal).",
+    "gap": null
+  },
+  {
+    "id": "gongsunlong-bai-ma",
+    "tradition": "公孙龙子（白马论，经文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4081"
+    ],
+    "source_id": "IS21",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS21.txt",
+    "locator": "白马论",
+    "fragments": [
+      "马者，所以命形也；白者，所以命色也；命色者，非命形也。故曰白马非马。",
+      "求马，黄、黑马皆可致；求白马，黄、黑马不可致。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.lumped_of_finer",
+      "Becoming.identifiesAlike_iff",
+      "Becoming.Web.separates_all_iff"
+    ],
+    "records": [
+      "generalization-through-lumping",
+      "configurations-alike-by-relation"
+    ],
+    "relational": "马 and 白马 are two ways of picking out what is asked for; their difference shows in what each request admits.",
+    "reading": "AI 读法：\"求马\"与\"求白马\"是两个选择：后者分开前者所归并的（黄马、黑马）。凡映射归并的，经它的选择都分不开（selects_not_right_of_parted）；读得更多，经所读形成的就更多（lumped_of_finer）；一个描述有意义，恰当它所认同者关系一致且它认同一切一致者（identifiesAlike_iff）。所以\"白马非马\"在\"两个选择不同一\"的意义上成立，不在\"白马不属于马\"的意义上成立。",
+    "reading_en": "Asking for a horse and asking for a white horse are two selections, the second separating what the first lumps (selects_not_right_of_parted, lumped_of_finer); 白马非马 holds as non-identity of selections, not as non-membership.",
+    "gap": null
+  },
+  {
+    "id": "sunzi-wu-yue-tong-zhou",
+    "tradition": "孙子兵法（九地）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9360",
+      "KR9362"
+    ],
+    "source_id": "IS18",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS18.txt",
+    "locator": "九地",
+    "fragments": [
+      "夫吴人与越人相恶也，当其同舟而济。遇风，其相救也，如左右手。",
+      "故善用兵者，携手若使一人，不得已也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.coextinct",
+      "Becoming.Web.Dependent",
+      "Becoming.Flow.feeding_unrestricted_of_common",
+      "Becoming.Clearing.centers_disagree"
+    ],
+    "records": [
+      "feeding-closure",
+      "levels-of-closure",
+      "becoming-dependence-dynamics"
+    ],
+    "relational": "Opposed parties come to depend on one condition (the boat); the dependence, not a decision, makes them act as one.",
+    "reading": "AI 读法：吴越相恶，是各自为界的中心彼此不一（centers_disagree）；同舟遇风，二者依赖同一条件，依赖链到达一个不活跃的关系项就终结链上一切（Web.coextinct, Web.Dependent）。在共同供给条件下，以各中心供给闭包为界的意义就是延续条件（feeding_unrestricted_of_common）：各自为界的意义已覆盖对方。\"不得已\"即此依赖，不是意志的结果。剩余：孙子以此为用兵之术（置之死地使之如一），脊柱只给依赖的结构，不推出\"相救\"的行为。",
+    "reading_en": "吴 and 越 as self-bounded centers disagree (centers_disagree); in the storm both depend on one boat, and a chain of dependence reaching an inactive relatum ends everything on it (coextinct); under a common feeding condition each center's bounded significance is already the continuation condition (feeding_unrestricted_of_common). 不得已 is that dependence; the rescuing behavior is not derived.",
+    "gap": null
+  },
+  {
+    "id": "sunzi-bu-zhan-er-qu-ren",
+    "tradition": "孙子兵法（谋攻）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR7009",
+      "KR7010"
+    ],
+    "source_id": "IS18",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS18.txt",
+    "locator": "谋攻",
+    "fragments": [
+      "不战而屈人之兵，善之善者也。",
+      "全国为上，破国次之",
+      "故上兵伐谋，其次伐交，其次伐兵，其下攻城。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.RelativePosition.change_opposed",
+      "Becoming.RelativePosition.rise_needs_fall",
+      "Becoming.RelativePosition.not_all_rise",
+      "Becoming.aboveAll_unique",
+      "Becoming.Law.aboveAll_never_rests",
+      "Becoming.Flow.race_ends_greatest"
+    ],
+    "records": [
+      "relative-position-is-zero-sum",
+      "seeking-boundary",
+      "where-a-rising-take-ends"
+    ],
+    "relational": "The relation to the other is a contest for position: the aim is that the other yields (屈), and the order of methods ranks how much of the other's whole is kept while it yields.",
+    "reading": "AI 读法：\"全国为上\"保全对方整体，在减少毁坏上与延续条件同向。但目标是\"屈人\"，即相对位置：一方位置之变是其余变化之和的反面（change_opposed），一方上升需要另一方下降（rise_needs_fall），没有变化提升每一方（not_all_rise）；\"高于一切他者\"在一个状态至多一方满足（aboveAll_unique），两个求高于一切者永不同时静止（aboveAll_never_rests）；在平衡与联合过量之下，竞赛随条件耗尽结束最大的部分（race_ends_greatest）。孙子以争位为前提，在其中减少损失；理论把争位本身的定律读出为零和与不止息，以整体关系的延续为方向。这是方向的分歧，不是对\"全国\"的否定。",
+    "reading_en": "全国为上 lowers destruction, but the aim, making the other yield, is relative position, which is zero-sum by counting (change_opposed, rise_needs_fall, not_all_rise), met by at most one (aboveAll_unique) and never at rest for two seekers (aboveAll_never_rests). 孙子 takes the contest as given and minimizes its cost; the theory states the contest's laws and takes the whole relation's continuation as its direction.",
+    "gap": null
+  },
+  {
+    "id": "sunzi-gui-dao",
+    "tradition": "孙子兵法（计、虚实）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR7004",
+      "KR7018",
+      "KR7089"
+    ],
+    "source_id": "IS18",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS18.txt",
+    "locator": "计；虚实",
+    "fragments": [
+      "兵者，诡道也。",
+      "故能而示之不能，用而示之不用",
+      "故形人而我无形，则我专而敌分。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.selects_alike_iff",
+      "Becoming.Web.Excludes.not_of_alike",
+      "Becoming.Confound.confounded",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Web.member_separates_all"
+    ],
+    "records": [
+      "selection-through-registration",
+      "testing-within-registration",
+      "experiment-needs-return"
+    ],
+    "relational": "诡 works on the relation through which the other knows: what is shown to the other is made to differ from what is.",
+    "reading": "AI 读法：选择恰到达耦合进来的东西（selects_alike_iff）；主张只经耦合进来的差异被排除（Excludes.not_of_alike）；与隐藏位同步变化的动作使错误投影永不被排除（Confound.confounded）。\"能而示之不能\"\"形人而我无形\"就是控制耦合进对方的东西，使对方的选择分不开所需分开的（selects_not_right_of_parted），同时使己方耦合分开对方（member_separates_all）。脊柱有其结构，但诡道的方向是收窄他者的明，而理论的明是扩大各方耦合所到达的。方向的分歧：以缩小对方之知为术。",
+    "reading_en": "Deception controls what couples into the other: a selection reaches exactly what couples in (selects_alike_iff), and a confound moving with the hidden bit is never excluded (Confound.confounded). The spine states the structure; 诡道's direction narrows the other's 明, opposite to widening what each coupling reaches.",
+    "gap": null
+  },
+  {
+    "id": "sunzi-qi-zheng",
+    "tradition": "孙子兵法（势、虚实）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR7015",
+      "KR7021"
+    ],
+    "source_id": "IS18",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS18.txt",
+    "locator": "势；虚实",
+    "fragments": [
+      "战势不过奇正，奇正之变，不可胜穷也。",
+      "奇正相生，如循环之无端，孰能穷之哉？",
+      "故其战胜不复，而应形于无穷。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Law.lossless_iff_returns",
+      "Becoming.keepHistory_new",
+      "Becoming.more_needs_open",
+      "Becoming.Learning.no_prefix_fixes_next",
+      "Becoming.Diagonal.Unfolds.never_returns"
+    ],
+    "records": [
+      "recurrence-without-premise",
+      "experiment-needs-return"
+    ],
+    "relational": "Two modes generate each other in a ring; their combinations, read along a history, never repeat.",
+    "reading": "AI 读法：\"如循环之无端\"与\"战胜不复\"看似相反，脊柱给出各自范围：在有限多构形中，不损失恰等于返回（lossless_iff_returns），这是构形层面的循环；保留下来的历史每一步都是新的（keepHistory_new），这是历史层面的不复。\"不可胜穷\"若指构形本身，需要开放世界（more_needs_open）；若指历史，有限构形上也成立。\"兵无成势\"：前缀固定不了下一值（no_prefix_fixes_next）。",
+    "reading_en": "The ring without end and \"victories do not repeat\" are both right at their scope: within finitely many configurations losing nothing is returning (lossless_iff_returns), while a kept history is new at every step (keepHistory_new); inexhaustible configurations need an open world (more_needs_open), inexhaustible histories do not.",
+    "gap": null
+  },
+  {
+    "id": "sunzi-zhi-bi-zhi-ji",
+    "tradition": "孙子兵法（谋攻、地形、用间）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR7024",
+      "KR7027",
+      "KR8308"
+    ],
+    "source_id": "IS18",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS18.txt",
+    "locator": "谋攻；地形；用间",
+    "fragments": [
+      "知彼知己，百战不殆",
+      "知敌之可击，知吾卒之可以击，而不知地形之不可以战，胜之半也。",
+      "先知者，不可取于鬼神，不可象于事，不可验于度，必取于人，知敌之情者也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.Web.separates_all_iff_member",
+      "Becoming.Web.tail_unexcluded",
+      "Becoming.Learning.no_prefix_fixes_next",
+      "Becoming.Web.Excludes.not_of_alike"
+    ],
+    "records": [
+      "selection-through-registration",
+      "what-pooled-coupling-reaches",
+      "testing-within-registration"
+    ],
+    "relational": "Knowing the other is a relation through those coupled to it (用间); it cannot come from analogy or measure without that coupling.",
+    "reading": "AI 读法：\"先知必取于人\"：选择在耦合闭包之外是盲的（unselected_beyond_coupling）；汇集恰分开某成员分开的东西（separates_all_iff_member），知敌之情要经过与敌耦合的成员。\"不可象于事，不可验于度\"：前缀固定不了下一值（no_prefix_fixes_next），无模型时有限前缀使其后开放（tail_unexcluded）。\"胜之半\"：经部分关键之处的选择只对一半。\"百战不殆\"作为普遍断言超出脊柱：知己知彼在耦合闭包内有效，闭包之外的条件仍不被选择。",
+    "reading_en": "Foreknowledge through people is selection through coupling: blind beyond the coupling closure (unselected_beyond_coupling), and a pool separates exactly what some member separates (separates_all_iff_member); not from analogy or measure, since no prefix fixes the next value (no_prefix_fixes_next). \"Never in peril\" is beyond the spine: what lies outside the closure stays unselected.",
+    "gap": null
+  },
+  {
+    "id": "hanfei-er-bing",
+    "tradition": "韩非子（二柄）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR3020",
+      "KR3021"
+    ],
+    "source_id": "IS09",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/IS09.txt",
+    "locator": "二柄",
+    "fragments": [
+      "二柄者，刑德也。何谓刑德？曰：杀戮之谓刑，庆赏之谓德。",
+      "今君人者释其刑德而使臣用之，则君反制于臣矣。",
+      "人臣之情非必能爱其君也，为重利之故也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.share_rises_through",
+      "Becoming.Law.perturbation_reabsorbed",
+      "Becoming.Captured.rule_perturbation_changes",
+      "Becoming.Pace.rule_at_reading",
+      "Becoming.Pace.byRule_reabsorbed"
+    ],
+    "records": [
+      "target-capture",
+      "how-fast-a-rule-may-change",
+      "selection-through-registration"
+    ],
+    "relational": "刑德 is a selection one position applies to another; 韩非 reads the relation as control between parties whose interests are opposed, and warns that whoever holds the selection holds the other.",
+    "reading": "AI 读法：二柄是一个选择：以赏选择所奖者，被选者份额上升（share_rises_through）；规则持有结果：下一构形只依赖规则时扰动状态被吸收（perturbation_reabsorbed），扰动规则则改变结果（Captured.rule_perturbation_changes）。\"释其刑德而使臣用之，则君反制于臣\"指出被选者握住规则的回路：在读取步，下一规则是 h 从快层构形给出的（Pace.rule_at_reading）。脊柱分别有这两部分，没有证明它们闭合成回路（见 gap）。分歧在于：韩非以\"人臣之情…为重利\"立论，把关系读成利益相反者之间的控制；\"德\"被定义为庆赏，缩为选择工具（10 月 6 日研究已保留此反例）。理论从实际关系出发，不从相反利益出发。",
+    "reading_en": "The two handles are a selection whose carriers gain share (share_rises_through), and the rule holds the outcome (perturbation_reabsorbed); \"the ruler is controlled by the minister\" is the loop in which the selected come to write the rule, whose parts the spine has (Pace.rule_at_reading, Capture) but whose closure it does not prove. 韩非 frames the relation as control between opposed interests and narrows 德 to reward, which diverges from starting with actual relations.",
+    "gap": {
+      "statement": "Capture through the rule (a join of Becoming.Pace and Becoming.Capture). In the paced course `Pace.paced f h reads`, let the fast configuration be a pair of counts (carriers c, others e) of a target and the rule a favour margin m : Nat. Hypotheses: (1) the fast step under margin m is a selection in which each carrier leaves at least a + m offspring and each other parent at most a, for a fixed a > 0 (the hypotheses of share_not_lower / share_rises at every step); (2) at a reading step (reads t = true) the next margin is h(c, e), with h monotone in the share (c * e' <= c' * e implies h(c, e) <= h(c', e')); off reading steps the margin is kept. Conclusions, from every start with c > 0 and e > 0: (i) the share does not fall at any step, and rises strictly at every step whose margin is positive; (ii) from the first reading step on, the margin at each reading step is at least the margin at the previous one; (iii) a change of the margin alone between reading steps is re-absorbed at the next reading step (the margin there is h of the share), so the course leaves a rising margin only through a change of h itself, not of the state or of the margin.",
+      "nearest": [
+        "Becoming.Pace.rule_at_reading",
+        "Becoming.Pace.byRule_reabsorbed",
+        "Becoming.share_not_lower",
+        "Becoming.share_rises",
+        "Becoming.Law.perturbation_reabsorbed",
+        "Becoming.Captured.rule_perturbation_changes"
+      ],
+      "why_it_matters": "The loop in which the selected come to write the selection rule is 韩非's 君反制于臣, 管子's 据有余而制不足 and the meta-attractor of the OPENING. Capture keeps \"winners shape the rule\" as a reading it does not derive (its module header: \"What is not derived: ... that winners shape the rule\"), Captured is a two-state example in which the rule keeps itself rather than being written from the state, and Pace states a rule that reads the fast level without any share; no theorem joins them. With the join, the spine would state where escape needs the rule's reading h changed rather than the state, which is the live form of the 6 October study's question of who may revise the rule."
+    }
+  },
+  {
+    "id": "shangjunshu-jin-shi",
+    "tradition": "商君书（卷五·禁使）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR3034",
+      "KR3035"
+    ],
+    "source_id": "LS08",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/LS08.txt",
+    "locator": "禁使",
+    "fragments": [
+      "夫置丞立监者，且以禁人之为利也；而丞监亦欲为利，则以何相禁？",
+      "夫事合而利异者，先王之所以为端也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.pooled_iff_member",
+      "Becoming.Web.pool_adds",
+      "Becoming.Clearing.pool_closes_gap",
+      "Becoming.Flow.act_selected_by_pool"
+    ],
+    "records": [
+      "what-pooled-coupling-reaches",
+      "the-gap-for-ones-own-act",
+      "what-a-pools-acts-respond-to"
+    ],
+    "relational": "Overseer and overseen are set in one task with opposed gains, so that each watches the other.",
+    "reading": "AI 读法：禁使看到，与被监者耦合一致的监者什么也不加（pooled_iff_member）：\"丞监亦欲为利，则以何相禁\"；差异才是汇集所加（pool_adds）。但它的设计是\"事合而利异\"：用相反的利益制造差异（另见 LS03\"君臣之利异\"）。脊柱上关闭一个行为之缺口的汇集，是与其准入被该行为改变的形成汇集（pool_closes_gap, act_selected_by_pool），即与受影响者汇集，而不是与利益相反的监视者汇集。理论从实际关系出发，不从相反利益出发：分歧。",
+    "reading_en": "禁使 sees that an overseer coupled like the overseen adds nothing (pooled_iff_member) and that difference is what a pool adds (pool_adds), but designs the difference as opposed gains; on the spine the gap for an act closes by pooling with the formation whose admission the act changes (pool_closes_gap), not with an opposed watcher.",
+    "gap": null
+  },
+  {
+    "id": "shangjunshu-ruo-min",
+    "tradition": "商君书（卷五·弱民）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR3052"
+    ],
+    "source_id": "LS08",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/LS08.txt",
+    "locator": "弱民",
+    "fragments": [
+      "民弱国强，民强国弱，故有道之国，务在弱民。",
+      "利出一孔，则国多物；出十孔，则国少物。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.RelativePosition.change_opposed",
+      "Becoming.Flow.Balances.rise_paid_from_beyond",
+      "Becoming.Withholding.withholding_absorbs",
+      "Becoming.Flow.Balances.consumption_ends_with_feeders",
+      "Becoming.Redundant.either_suffices"
+    ],
+    "records": [
+      "relative-position-is-zero-sum",
+      "raising-what-couples-in-draws-from-beyond",
+      "giving-that-waits-on-giving",
+      "feeding-closure"
+    ],
+    "relational": "State and people are set as rival positions: the state rises as the people fall, and all giving passes through one opening.",
+    "reading": "AI 读法：\"民弱国强\"把整体与其部分读成相对位置。相对位置确是零和（change_opposed），但整体的存量不是位置：一个家族在一步中的上升，至多是参与者从家族之外所取（rise_paid_from_beyond），国从民所取不是\"民与国\"整体的上升。\"利出一孔\"使一切给予经过一个给予者：一处停止给予在其可达家族中结束一切给予（withholding_absorbs）；一切供给都不受支持时，消耗至多持续存量水平那么多步（consumption_ends_with_feeders）；而两个可互替的供给者任一即足（Redundant.either_suffices）。《弱民》以\"有道\"称弱民（10 月 6 日研究保留的反例）：道被用来命名中心对其部分的争胜。分歧。",
+    "reading_en": "民弱国强 treats the whole and its part as rival positions; positions are zero-sum (change_opposed), but the whole's stock is not a position, and a family's rise is paid from beyond it (rise_paid_from_beyond). \"Profit from one opening\" hangs all giving on one giver whose withholding ends what it reaches (withholding_absorbs), where either of two feeders would suffice (either_suffices).",
+    "gap": null
+  },
+  {
+    "id": "shangjunshu-yi-shang-yi-xing-yi-jiao",
+    "tradition": "商君书（卷四·赏刑）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR3051",
+      "KR3050"
+    ],
+    "source_id": "LS07",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/LS07.txt",
+    "locator": "赏刑",
+    "fragments": [
+      "圣人之为国也：壹赏，壹刑，壹教。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.pooled_iff_member",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.share_rises_through"
+    ],
+    "records": [
+      "what-pooled-coupling-reaches",
+      "selection-through-registration",
+      "target-capture"
+    ],
+    "relational": "All reward, punishment and teaching pass through one selection; every relation of the people to the state is read through it.",
+    "reading": "AI 读法：\"壹\"使一切选择经过一个耦合：汇集退化为一员（pooled_iff_member）；凡这一读法归并的，经它的选择都分不开（selects_not_right_of_parted）；其耦合闭包之外的选择是盲的（unselected_beyond_coupling）；被这一选择持有的承载者份额上升（share_rises_through）。商君书把壹作为为国之道；脊柱给出壹的代价：选择的到达收窄为一个读法，被选者向这一读法聚集。分歧在方向：以收窄明为治。",
+    "reading_en": "壹 passes every selection through one coupling, so the pool is one member (pooled_iff_member), what that reading lumps none can separate (selects_not_right_of_parted), and the selected carriers gain share (share_rises_through); the text takes this narrowing as the way to order a state.",
+    "gap": null
+  },
+  {
+    "id": "hanfei-wu-du",
+    "tradition": "韩非子（五蠹）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9300",
+      "KR9301"
+    ],
+    "source_id": "R5GV001",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5GV001.txt",
+    "locator": "五蠹",
+    "fragments": [
+      "人民衆而貨財寡，事力勞而供養薄，故民爭，雖倍賞累罰而不免於亂。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Pair.own_not_joint",
+      "Becoming.Flow.excess_bounded",
+      "Becoming.Flow.joint_excess_ends",
+      "Becoming.Stock.feasible_iff_covered"
+    ],
+    "records": [
+      "own-count-misses-joint-excess",
+      "draws-on-a-shared-stock"
+    ],
+    "relational": "The many draw on one stock; 争 is read from the relation of numbers to what is given, not from a nature of the people.",
+    "reading": "AI 读法：各自在一步所给之内取，合起来取得更多（Pair.own_not_joint）；联合过量 n 步，水平至少下降 n（excess_bounded），联合过量结束受门控的更新以及依赖它的一切形成（joint_excess_ends）。\"倍赏累罚而不免于乱\"：改变赏罚不改变存量律，一个存量路程可执行恰当被覆盖（Stock.feasible_iff_covered）。剩余：\"故民争\"是行为，脊柱推出的是终结，不是争；韩非以此论\"古今异\"，那一历史论断不在脊柱上。此处韩非不以人性而以数量关系立论，这一点是关系的。",
+    "reading_en": "Each takes within what the step gives while together they take more (Pair.own_not_joint), joint excess lowers the level and ends gated renewal (joint_excess_ends), and changing reward and punishment does not cover a stock (Stock.feasible_iff_covered). The contest (争) itself is not derived.",
+    "gap": null
+  },
+  {
+    "id": "guanzi-guoxu-gu-you-suo-cang",
+    "tradition": "管子（国蓄，轻重诸篇）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9320",
+      "KR9322"
+    ],
+    "source_id": "V3M04",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V3M04.txt",
+    "locator": "国蓄",
+    "fragments": [
+      "計本量委則足矣，然而民有飢餓不食者，何也？穀有所藏也。",
+      "夫往歲之糶賤，狗彘食人食，故來歲之民不足也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.supported_iff_admits",
+      "Becoming.Stock.feasible_iff_covered",
+      "Becoming.Stock.covered_iff_prefix",
+      "Becoming.Web.Carries.lasts"
+    ],
+    "records": [
+      "draws-on-a-shared-stock",
+      "reserve-defers-ending"
+    ],
+    "relational": "Sufficiency is a relation of the stock to each one at each step, not of the total to the count.",
+    "reading": "AI 读法：\"计本量委则足矣，然而民有饥饿\"：总量足不等于每人每步被支持；支持是站立水平对所需条件的容纳（supported_iff_admits），\"谷有所藏\"使水平不站在所需之处。\"往岁粜贱…来岁不足\"：存量 n 覆盖一个路程，恰当每一步 n 与此前的补充覆盖到此为止的一切汲取（covered_iff_prefix），前一年的耗用使后一年的前缀不被覆盖。储备只推迟终结，至多储备那么多步（Carries.lasts）。",
+    "reading_en": "Enough in total is not support for each at each step (supported_iff_admits), and a stock covers a course exactly where every prefix is covered (covered_iff_prefix), so last year's waste leaves this year's prefix uncovered.",
+    "gap": null
+  },
+  {
+    "id": "guanzi-guoxu-ju-you-yu",
+    "tradition": "管子（国蓄，轻重诸篇）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9325",
+      "KR3073"
+    ],
+    "source_id": "V3M04",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V3M04.txt",
+    "locator": "国蓄",
+    "fragments": [
+      "據有餘而制不足，故民無不累於上也。",
+      "斂積之以輕，散行之以重",
+      "利出於一孔者，其國無敵"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Withholding.withholding_absorbs",
+      "Becoming.Flow.Balances.consumption_ends_with_feeders",
+      "Becoming.Redundant.either_suffices",
+      "Becoming.share_rises",
+      "Becoming.RelativePosition.rise_needs_fall"
+    ],
+    "records": [
+      "giving-that-waits-on-giving",
+      "target-capture",
+      "relative-position-is-zero-sum"
+    ],
+    "relational": "The center holds the surplus and gives against the shortfall so that every member's support passes through it.",
+    "reading": "AI 读法：脊柱有其结构：一个给予者停止给予，在其可达家族中结束一切给予（withholding_absorbs）；一切供给不受支持时，消耗至多持续存量水平那么多步（consumption_ends_with_feeders）；两个可互替的供给者任一即足（either_suffices）。国蓄以此结构为术，使民\"无不累于上\"，并以\"其国无敌\"为目的，这是争胜的框架（相对位置零和，rise_needs_fall）。分歧在目的：使整体依赖一个给予者以便控制；理论读出的是这一依赖的代价。",
+    "reading_en": "Holding the surplus to command the shortfall makes every member's support pass through one giver, whose withholding ends all giving reached from it (withholding_absorbs), where two feeders would each suffice (either_suffices). 国蓄 uses the structure as a method of control aimed at having no rival.",
+    "gap": null
+  },
+  {
+    "id": "guiguzi-bai-he",
+    "tradition": "鬼谷子（捭阖）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR3062",
+      "KR3063"
+    ],
+    "source_id": "V3M11",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V3M11.txt",
+    "locator": "卷一·捭阖",
+    "fragments": [
+      "捭闔之道，以隂陽試之。",
+      "捭之者，開也，言也，陽也。",
+      "闔之者，閉也，黙也，隂也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.coupling_relates_and_unrelates",
+      "Becoming.Web.selects_alike_iff",
+      "Becoming.Web.Excludes.not_of_alike",
+      "Becoming.aboveAll_unique"
+    ],
+    "records": [
+      "selection-through-registration",
+      "separation-loses-the-relation"
+    ],
+    "relational": "Opening and closing are moves in the exchange with the other; 阴阳 here names the two moves, used to probe the other.",
+    "reading": "AI 读法：开与闭是同一耦合的两次作用：使两部分相关的耦合再作用时可使它们不相关，两次都不丢失东西（coupling_relates_and_unrelates）；选择恰到达耦合进来的（selects_alike_iff），排除只经耦合进来的差异（Excludes.not_of_alike），\"以阴阳试之\"即经开合控制对方所接收的。鬼谷子用之于说服与取胜（卷一另有\"合於彼而離於此，計謀不兩忠\"，V3M03），关系是工具，目的是居于他者之上（aboveAll_unique）。阴阳在此是两个说服动作的名字，不是生成的读法。分歧：以关系为操纵之术。",
+    "reading_en": "Opening and closing are one coupling acting twice, relating and unrelating (coupling_relates_and_unrelates), and probing works because a selection reaches exactly what couples in (selects_alike_iff); 鬼谷子 uses this to steer the other toward one's own advantage, with 阴阳 naming two moves of persuasion.",
+    "gap": null
+  },
+  {
+    "id": "zaahan-ci-you-gu-bi-you",
+    "tradition": "杂阿含经（经文，汉译）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR5009",
+      "KR5011"
+    ],
+    "source_id": "BS01",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/BS01.txt",
+    "locator": "第262、298经等",
+    "fragments": [
+      "所謂此有故彼有，此生故彼生",
+      "所謂此無故彼無，此滅故彼滅",
+      "如實正觀世間集者，則不生世間無見，如實正觀世間滅，則不生世間有見。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.Dependent",
+      "Becoming.Web.coextinct",
+      "Becoming.Web.kept_or_broken",
+      "Becoming.Web.change_readings",
+      "Becoming.Web.arising_recurs_iff"
+    ],
+    "records": [
+      "becoming-dependence-dynamics",
+      "coming-and-ceasing-keep-pace"
+    ],
+    "relational": "Each arising is read through what it arises with; the world's arising and ceasing are seen together, which removes both \"is\" and \"is not\" as fixed views.",
+    "reading": "AI 读法：\"此无故彼无，此灭故彼灭\"恰是依赖：活跃只在所依赖条件支持时（Web.Dependent），依赖链到达不活跃者就终结链上一切（coextinct）；每个满足的依赖在每步或保持或断开（kept_or_broken）。\"此有故彼有\"不能读成充分性：脊柱从不由支持推出活跃，它是依赖结构中的共起。\"见世间集则不生无见，见世间灭则不生有见\"：生起与止息是一个变化的读法（change_readings），有限族中生起反复恰当止息反复（arising_recurs_iff）。",
+    "reading_en": "\"This not being, that is not\" is dependence (Web.Dependent, coextinct); \"this being, that is\" is co-arising within dependence, not sufficiency, which the spine never derives; seeing arising removes the view \"is not\" and seeing ceasing removes \"is\", as arising and ceasing are one change read (change_readings, arising_recurs_iff).",
+    "gap": null
+  },
+  {
+    "id": "zaahan-ku-mie",
+    "tradition": "杂阿含经（经文，汉译）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR5012",
+      "KR5015"
+    ],
+    "source_id": "BS01",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/BS01.txt",
+    "locator": "苦集、苦灭诸经",
+    "fragments": [
+      "當來有愛，喜、貪俱，彼彼集著，是名苦集",
+      "若當來有愛，喜、貪俱，彼彼染著無餘斷，乃至息、沒，是名苦滅",
+      "取滅則有滅，有滅則生滅，生滅則老、病、死、憂、悲、惱、苦滅"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.coextinct",
+      "Becoming.Web.Whole.needs_arising",
+      "Becoming.Valuation.premises_of_unrestricted",
+      "Becoming.Web.significance_undetermined",
+      "Becoming.Flow.nothing_supported_stays"
+    ],
+    "records": [
+      "becoming-dependence-dynamics",
+      "whole-persists-through-generation",
+      "map-of-premises"
+    ],
+    "relational": "Suffering arises through a chain of conditions led by craving for future being; its ending is the chain's ending, down to the ending of birth.",
+    "reading": "AI 读法：链的结构与脊柱一致：取灭则有灭，有灭则生灭，是依赖链上的共灭（coextinct）。分歧在方向：苦灭以\"当来有爱\"（对未来之有的爱）的无余断为目的，直至\"有灭则生灭\"，以不再延续为解脱。延续条件（§6.15）以任何东西向未来的延续有意义为条件，在其下生命意义成立（premises_of_unrestricted）；持续的整体只通过其部分不断生起而持续（Whole.needs_arising）。两者方向相反。范围限定：阿含所断的是由贪驱动的生之环，不是整体的生生；汉传继承者内部也有不同声音（坛经\"一念絕即死，別處受生，是為大錯\"、唯识\"转舍转得\"），所以分歧落在\"苦灭即不再延续\"的读法上，不落在整个佛学上。脊柱也不证明延续条件为真（significance_undetermined）。",
+    "reading_en": "The chain's structure agrees (coextinction along dependence), but the direction diverges: ending craving for future being, down to \"being ceasing, birth ceases\", takes non-continuation as release, while the continuation condition takes the continuation of anything as significant and a lasting whole persists only through arising parts (Whole.needs_arising). The 阿含 target is a craving-driven loop, and Chinese successors (坛经, 唯识 转依) push back, so the divergence is with cessation read as non-continuation.",
+    "gap": null
+  },
+  {
+    "id": "zaahan-er-jian",
+    "tradition": "杂阿含经（经文，汉译）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR11300",
+      "KR11301"
+    ],
+    "source_id": "BS01",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/BS01.txt",
+    "locator": "第470经",
+    "fragments": [
+      "譬如士夫被一毒箭，不被第二毒箭",
+      "唯生一受，所謂身受，不生心受"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.responds_to_own_level",
+      "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
+      "Becoming.Widening.closing_needs_less",
+      "Becoming.Widening.closes_within",
+      "Becoming.Widening.runs_away"
+    ],
+    "records": [
+      "how-loops-form",
+      "whether-a-loop-closes-a-difference"
+    ],
+    "relational": "The first arrow is a relation to what strikes; the second is the response to one's own response.",
+    "reading": "AI 读法：第二支箭是对自身回应的回应：一个交换开始回应它所给予的水平，即形成单环（responds_to_own_level）。耦合界定回应而不固定回应（response_not_fixed_by_coupling），身受不固定心受。环要关闭一个差异，需某一环节给回少于所收（closing_needs_less）；返回映射低于所收时在 d 圈内关闭（closes_within）；加倍则失控（runs_away）。\"唯生一受\"对应差异经过而不成环。",
+    "reading_en": "The second arrow is a response to one's own response, a loop of one (responds_to_own_level); coupling bounds response without fixing it (response_not_fixed_by_coupling), and a loop closes a difference only where some link gives back less than it received (closing_needs_less, closes_within).",
+    "gap": null
+  },
+  {
+    "id": "tanjing-wu-nian",
+    "tradition": "六祖坛经（宗宝本，晚出层）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR5070",
+      "KR5072"
+    ],
+    "source_id": "HS08",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/HS08.txt",
+    "locator": "定慧品等",
+    "fragments": [
+      "無相者，於相而離相。",
+      "於念而無念。無住者，人之本性。",
+      "百物不思，當令念絕，即是法縛，即名邊見。",
+      "不思酬害"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.responds_to_own_level",
+      "Becoming.Widening.closing_needs_less",
+      "Becoming.Withholding.withholding_returns",
+      "Becoming.Web.Whole.needs_arising",
+      "Becoming.Flow.nothing_supported_stays"
+    ],
+    "records": [
+      "how-loops-form",
+      "whether-a-loop-closes-a-difference",
+      "giving-that-waits-on-giving",
+      "whole-persists-through-generation"
+    ],
+    "relational": "無念 is not the absence of thought but thought that does not fasten on itself; it stays in relation to what appears (於相) without fixing it.",
+    "reading": "AI 读法：\"於念而無念\"：回应继续，不形成对自身回应的环（responds_to_own_level 所述之环不成）。\"不思酬害\"：在等待之环上停止给予每圈返回（withholding_returns），关闭差异需要一个给回少于所收的环节（closing_needs_less），不以害酬害就是那一环节。\"百物不思，当令念绝，即是法缚，即名边见\"：断绝一切回应被判为偏见；脊柱上，持续的整体只通过部分不断生起而持续（Whole.needs_arising），一旦无物被支持便不再有（nothing_supported_stays）。这是汉传对\"止息\"读法的内部修正，与苦灭条对照。",
+    "reading_en": "無念 is response that does not loop on itself (responds_to_own_level); not repaying harm is the link that gives back less, which a loop needs to close a difference (closing_needs_less, against withholding_returns); and cutting off all thought is called bondage, as a lasting whole persists only through arising (Whole.needs_arising).",
+    "gap": null
+  },
+  {
+    "id": "tanjing-zi-xing",
+    "tradition": "六祖坛经（宗宝本，晚出层）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR5073"
+    ],
+    "source_id": "HS08",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/HS08.txt",
+    "locator": "行由品；般若品",
+    "fragments": [
+      "何期自性，本自清淨；何期自性，本不生滅；",
+      "自性，能生萬法。",
+      "一切萬法，不離自性。",
+      "被妄念浮雲蓋覆自性，不得明朗。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.Whole.needs_arising",
+      "Becoming.Web.Whole.needs_new",
+      "Becoming.more_not_at_rest",
+      "Becoming.identifiesAlike_iff",
+      "Becoming.Web.rename_unceasing"
+    ],
+    "records": [
+      "whole-persists-through-generation",
+      "ceasing-needs-arising",
+      "identity-across-steps"
+    ],
+    "relational": "All dharmas are placed in a 自性 that is originally pure, unborn and unceasing and that generates them; delusion covers it like cloud over the sun. The relation runs from a prior ground to what it produces.",
+    "reading": "AI 读法：这一组句子立一个本来清净、不生不灭、本无动摇而能生万法的自性，万法不离之，妄念如浮云盖覆之。这是先于关系的根据（本体）加上\"遮盖/显露\"的模型。脊柱上：持续的整体只通过部分不断生起而持续（Whole.needs_arising），且只通过不断出现的新部分（Whole.needs_new）；多于现在只能由变化满足（more_not_at_rest），一个\"本不生灭、本无动摇\"者不产生什么；同一性是对关系一致的描述（identifiesAlike_iff），逐步重新命名不改变依赖与不断生成（rename_unceasing），没有在关系之外的自性。这与中论\"若法有性相，则不待众缘而有\"的批评同向，也与坛经自身\"无住为本\"\"於相而离相\"有张力。分歧：本净能生的自性作为先在根据。若把自性读作空性而非实体，分歧减弱；但\"能生万法\"\"盖覆\"的文字支持本体读法。",
+    "reading_en": "These lines set a 自性 originally pure, unborn and unceasing, unmoving yet generating all dharmas, covered by deluded thought like cloud: a prior ground with a covering model. On the spine a lasting whole persists only through arising and ever new parts (Whole.needs_arising, needs_new), more than now is met only by change (more_not_at_rest), and identity is a description of how things relate (identifiesAlike_iff), not an own-nature. It diverges, and it is in tension with 中论 and with the 坛经's own 无住.",
+    "gap": null
+  },
+  {
+    "id": "zhonglun-yin-yuan-jia-ming",
+    "tradition": "中论（龙树偈，鸠摩罗什译）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR5039",
+      "KR5040",
+      "KR5041"
+    ],
+    "source_id": "HS03",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/HS03.txt",
+    "locator": "观四谛品等",
+    "fragments": [
+      "眾因緣生法，我說即是無，",
+      "亦為是假名，亦是中道義。",
+      "若一切不空，則無有生滅",
+      "苦若有定性，則無有修道；",
+      "定有則著常，定無則著斷；"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.identifiesAlike_iff",
+      "Becoming.Web.reidentify_dependent",
+      "Becoming.Web.rename_unceasing",
+      "Becoming.Web.Whole.needs_arising",
+      "Becoming.Web.change_readings"
+    ],
+    "records": [
+      "identity-across-steps",
+      "configurations-alike-by-relation",
+      "whole-persists-through-generation"
+    ],
+    "relational": "Whatever arises from conditions has no own-nature; its name is a designation over the conditions; arising, ceasing and practice need this lack of fixed nature.",
+    "reading": "AI 读法：\"众因缘生法…亦为是假名\"：一个描述有意义，恰当它所认同者关系一致且它认同一切一致者（identifiesAlike_iff），认同是对关系的描述，不是自性。逐步一一对应的重新命名保持依赖与不断生成不变（reidentify_dependent, rename_unceasing）：所实者是依赖，名可换。\"若一切不空则无有生灭\"：有固定自性者无生灭；脊柱上持续整体只通过部分生起而持续（Whole.needs_arising）。\"苦若有定性则无有修道\"：固定者不可转。\"定有著常，定无著断\"：生起与止息是一个变化的两种读法（change_readings），取一舍一即成常或断。剩余：二谛是两种读法，不是两个实在，与\"没有两个实在\"相容；偈中\"无\"（他本作\"空\"）的读法取决于译本与注。",
+    "reading_en": "What arises from conditions is identified by how it relates (identifiesAlike_iff), and a renaming at each step leaves dependence and unceasing generation unchanged (reidentify_dependent, rename_unceasing), so the name is designation; \"if nothing were empty there would be no arising and ceasing\" matches that a lasting whole persists only through arising (Whole.needs_arising).",
+    "gap": null
+  },
+  {
+    "id": "weishi-xun-xi",
+    "tradition": "成唯识论（玄奘糅译）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9451",
+      "KR9455",
+      "KR9461",
+      "KR9466",
+      "KR9456"
+    ],
+    "source_id": "R5BU001",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5BU001.txt",
+    "locator": "卷二熏习；卷九转依",
+    "fragments": [
+      "三法展轉因果同時，如炷生焰、焰生焦炷，亦如蘆束更互相依，因果俱時，理不傾動。",
+      "能熏識等，從種生時，即能為因，復熏成種",
+      "損本識中染種勢力，益本識內淨種功能",
+      "轉謂二分，轉捨、轉得。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.responds_to_own_level",
+      "Becoming.onLoop_succ_iff",
+      "Becoming.forms_by_closing",
+      "Becoming.Widening.runs_away",
+      "Becoming.Widening.closing_needs_less",
+      "Becoming.Widening.closes_within"
+    ],
+    "records": [
+      "how-loops-form",
+      "whether-a-loop-closes-a-difference"
+    ],
+    "relational": "Seed and manifest activity produce each other: what arises from a seed acts back and forms seed; transformation changes the loop's strengths rather than removing the relation.",
+    "reading": "AI 读法：\"从种生时即能为因，复熏成种\"：环经闭合形成（onLoop_succ_iff, forms_by_closing），一个交换开始回应自己所给的水平即成单环（responds_to_own_level）；\"数数现行熏习\"对应环节加倍时差异失控（runs_away）。\"损染种势力，益净种功能\"：关闭一个差异需某一环节给回少于所收（closing_needs_less），低于所收者在有限圈内关闭（closes_within）。\"转舍转得\"是转变而不是断灭。剩余：论中\"种现俱时\"（俱有因）与\"种种前后\"（同类因）分开（KR9456）；\"芦束互依，因果俱时\"是同一时刻的互依，脊柱以离散步为建模选择，在这里把它读作逐步的环，不是同一步的互依。",
+    "reading_en": "Seed and manifest producing each other is a loop formed by closing (onLoop_succ_iff, responds_to_own_level); repeated perfuming strengthens it (runs_away), and transforming it needs links that give back less (closing_needs_less). The text's simultaneous mutual support (reeds leaning on each other) is read here stepwise, a modelling choice of the spine.",
+    "gap": null
+  },
+  {
+    "id": "weishi-wei-shi-wu-jing",
+    "tradition": "成唯识论（玄奘糅译）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "R5BU001",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5BU001.txt",
+    "locator": "卷一（唯识无境）",
+    "fragments": [
+      "由假說我、法，有種種相轉。彼依識所變",
+      "外境隨情而施設故，非有如識；內識必依因緣生故，非無如境"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.apart_only_downstream",
+      "Becoming.Stationary.model_error",
+      "Becoming.Web.Excludes.not_of_alike",
+      "Becoming.Web.Dependent"
+    ],
+    "records": [
+      "observation-is-a-route",
+      "testing-within-registration",
+      "becoming-dependence-dynamics"
+    ],
+    "relational": "Self and things are what consciousness transforms into; outer objects are less real than consciousness, which depends on conditions. Knowing is given priority over what is known.",
+    "reading": "AI 读法：\"内识必依因缘生\"与依赖一致（Web.Dependent）。但\"彼依识所变\"\"外境…非有如识\"把被知者置于识之下：境随情施设，识非无。脊柱的读法相反：观察是从被观察者出发的读法路线，只在其下游有差别（apart_only_downstream）；一个错误的模型排除实际成立的东西（Stationary.model_error），被知者超出模型；排除只经耦合进来的差异（Excludes.not_of_alike），知是在一元展开之中分化出来的关系，不是先于境的根据。分歧：识对境的优先。范围限定：论亦说识非实（二空），并以\"转依\"为归；但\"境非有如识\"的不对称仍在。",
+    "reading_en": "\"Inner consciousness arises from conditions\" agrees with dependence, but \"self and things are what consciousness transforms into\" and \"outer objects are not real as consciousness is\" give knowing priority over the known. On the spine observation is a route of readings downstream of what it observes (apart_only_downstream), and a model can exclude what holds (Stationary.model_error); knowing differentiates within the unfolding rather than grounding it.",
+    "gap": null
+  },
+  {
+    "id": "huayan-liu-xiang",
+    "tradition": "华严一乘教义分齐章（法藏，六相义）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9477",
+      "KR9478",
+      "KR9481",
+      "KR9482"
+    ],
+    "source_id": "R5BU003",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5BU003.txt",
+    "locator": "义理分齐·六相",
+    "fragments": [
+      "又總即一舍，別即諸緣，同即互不相違，異即諸緣各別，成即諸緣辦果，壞即各住自法。",
+      "秖由異故，所以同耳。",
+      "若椽作舍去，即失本椽法故，舍義不得成。",
+      "本以別成總，由無別故總不成也"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.whole_not_in_pairs",
+      "Becoming.separation_faithful_iff",
+      "Becoming.relation_persists",
+      "Becoming.partForms_and_restForms_iff",
+      "Becoming.Web.change_readings"
+    ],
+    "records": [
+      "separation-loses-the-relation",
+      "where-a-move-is-formed"
+    ],
+    "relational": "The house is the relation of rafters and other conditions; each condition stays itself, and only so does the house stand.",
+    "reading": "AI 读法：\"总即一舍\"：有一种关系为整体所持而不为任何两部分持有（whole_not_in_pairs）；分开描述只在部分无关时不丢东西（separation_faithful_iff），所以\"别即诸缘\"不能替代\"总\"。\"秖由异故所以同\"\"本以别成总，由无别故总不成\"：整体需要分化的部分；一个在两方都有差别的动作至多由一方单独形成（partForms_and_restForms_iff）。\"若椽作舍去，即失本椽法故，舍义不得成\"：差异保留在整体之内。\"坏即各住自法\"：从部分读是各住，从整体读是坏，与 change_readings 的读法相同。",
+    "reading_en": "The whole holds a relation no two parts hold (whole_not_in_pairs), and the parts' description loses it (separation_faithful_iff); the house needs the rafter to stay a rafter, which is differentiation kept within the whole, and 坏 as each abiding in itself is one change read from the parts.",
+    "gap": null
+  },
+  {
+    "id": "huayan-shi-xuan",
+    "tradition": "华严一乘教义分齐章（法藏，十玄）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9485",
+      "KR9486",
+      "KR9487",
+      "KR9488"
+    ],
+    "source_id": "R5BU003",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5BU003.txt",
+    "locator": "义理分齐·十玄",
+    "fragments": [
+      "重重隱映互現",
+      "然此一多雖復互相含受，自在無礙，仍體不同也",
+      "隨其智取，舉一為首，餘則為伴。",
+      "此上十義同時相應，成一緣起，無有前後始終等別"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Diagonal.claims_incomplete",
+      "Becoming.Frame.self_incomplete",
+      "Becoming.Diagonal.complete_iff_alike",
+      "Becoming.Diagonal.Unfolds.unheld",
+      "Becoming.boundaryInvariant_iff_standpointInvariant"
+    ],
+    "records": [
+      "registration-within-what-it-registers",
+      "process-and-frame-as-readings"
+    ],
+    "relational": "Each condition reflects the others in layers, some shown and some hidden; one and many contain each other while their bodies stay distinct; any one can be taken as the center with the rest as companions.",
+    "reading": "AI 读法：\"举一为首，余则为伴\"与立场读法一致：任一处可为中心（跨立场不变的场景，boundaryInvariant_iff_standpointInvariant）。\"互相含受\"若读作每一处持有对一切的全部读法，与对角律冲突：没有一族以所读为索引的主张实现每一主张模式（claims_incomplete）；主张即自身构形的框架中，没有构形实现关于构形的每一模式（Frame.self_incomplete），除非诸值无可区分（complete_iff_alike）；展开家族所缺不能由有限读法储备持有（Unfolds.unheld）。但法藏自己限定了\"含\"：\"重重隐映\"（有隐有现）、\"仍体不同\"，正落在对角律允许的一侧：相关于一切，而不显示一切、不同一于一切。所以是范围而非分歧。\"同时相应，无有前后\"在此说十门不按次第，不是说展开无先后（见 notes 反审）。",
+    "reading_en": "Taking any one as the head with the rest as companions agrees with standpoint readings. If mutual containment meant each holds every reading of all, it would conflict with the diagonal law (claims_incomplete, Frame.self_incomplete) unless nothing were told apart (complete_iff_alike); but 法藏 limits it himself, with layers hidden and shown and bodies that stay distinct, which is the side the diagonal law allows.",
+    "gap": null
+  },
+  {
+    "id": "qingjing-jing",
+    "tradition": "太上老君说常清静经（传世本，道教经，晚出）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR9180",
+      "KR9184",
+      "KR9187",
+      "KR9188"
+    ],
+    "source_id": "R5DY004",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/R5DY004.txt",
+    "locator": "全经",
+    "fragments": [
+      "既有妄心，即驚其神；既驚其神，即著萬物；既著萬物，即生貪求；既生貪求，即是煩惱；",
+      "真靜應物，真常得性；常應常靜，常清靜矣。",
+      "清者濁之源，靜者動之基。",
+      "男清女濁"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.more_not_at_rest",
+      "Becoming.more_needs_open",
+      "Becoming.Flow.more_exhausted",
+      "Becoming.Law.rests_iff",
+      "Becoming.Law.perturbation_reabsorbed"
+    ],
+    "records": [
+      "seeking-boundary",
+      "the-boundary-of-enough-under-undetermined-laws"
+    ],
+    "relational": "The chain runs from a deluded mind through attachment to seeking; stillness is a relation to things (应物) that does not fasten.",
+    "reading": "AI 读法：\"即著万物，即生贪求\"：以\"多于现在\"为目标只能由变化满足（more_not_at_rest），每一步都满足需要开放世界（more_needs_open），封闭时耗尽（Flow.more_exhausted）；静止而目标满足，恰当到达一个定律不改变且满足目标的状态（Law.rests_iff，\"够\"的边界）。\"常应常静\"：回应而回到静；规则持有结果时单扰动状态被吸收（perturbation_reabsorbed）是形式近邻，不是同一陈述。范围：传世本此处有异文，\"静者动之基\"与竖排本\"動者靜之基\"并存（R5DY004 两式皆见），不能以此句立\"静为本\"的分歧；\"男清女浊\"把清浊配给固定的性别，是非关系的一支。",
+    "reading_en": "Seeking more than now is met only by change and needs an open world (more_not_at_rest, more_needs_open), and rest with the target met is reaching an unchanged state that meets it (rests_iff); \"always responding, always still\" has a formal neighbour in re-absorption, not the same statement. The editions disagree on 静者动之基 / 動者靜之基, so no divergence rests on that line, while 男清女浊 assigns fixed natures by sex, a non-relational strand.",
+    "gap": null
+  },
+  {
+    "id": "jikang-sheng-wu-ai-le",
+    "tradition": "嵇康《声无哀乐论》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR11200",
+      "KR11210"
+    ],
+    "source_id": "V7AE01",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V7AE01.txt",
+    "locator": "声无哀乐论",
+    "fragments": [
+      "夫殊方异俗，歌哭不同。",
+      "使错而用之，或闻哭而欢，或听歌而戚，然而哀乐之情均也。",
+      "躁静者，声之功也；哀乐者，情之主也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Contextual.indexed_fits",
+      "Becoming.Contextual.glues_iff_agree",
+      "Becoming.Contextual.fitsFree_iff",
+      "Becoming.ExchangeLaw.response_not_fixed_by_coupling"
+    ],
+    "records": [
+      "contextual-registration",
+      "unity-of-readings"
+    ],
+    "relational": "哀乐 is a relation of sound and hearer; the same sound meets different hearers with different 哀乐.",
+    "reading": "AI 读法：同一声音在不同习俗的听者那里引起相反的哀乐：哀乐是以听者为索引的读法，跨听者不黏合，所以没有与语境无关的\"声之哀乐\"（glues_iff_agree, fitsFree_iff）；以语境为索引的框架适合所显示的一切（indexed_fits）。\"躁静者，声之功也\"：躁静跨听者一致，在此范围内存在与语境无关的读法。耦合界定回应而不固定回应（response_not_fixed_by_coupling）。",
+    "reading_en": "The same sound brings joy to one hearer and grief to another, so 哀乐 is a hearer-indexed reading that does not glue across hearers (glues_iff_agree, fitsFree_iff), while 躁静 does; coupling bounds response without fixing it.",
+    "gap": null
+  },
+  {
+    "id": "jikang-wu-sheng-shan-e",
+    "tradition": "嵇康《声无哀乐论》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR11211"
+    ],
+    "source_id": "V7AE01",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/V7AE01.txt",
+    "locator": "声无哀乐论",
+    "fragments": [
+      "夫五色有好丑，五声有善恶，此物之自然也。",
+      "声音自当以善恶为主，则无关于哀乐"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Contextual.fitsFree_iff",
+      "Becoming.Web.significance_undetermined",
+      "Becoming.bounded_rival",
+      "Becoming.Clearing.center_not_derived"
+    ],
+    "records": [
+      "contextual-registration",
+      "map-of-premises"
+    ],
+    "relational": "Here the relation is cut: 善恶 is placed in the sound itself (物之自然), apart from any hearer.",
+    "reading": "AI 读法：同一篇在拆开声与情之后，把善恶放回声音自身：\"五声有善恶，此物之自然也\"，这是不依赖听者的内在评价。脊柱上，与语境无关的读法只在各语境相交处一致时存在（fitsFree_iff）；意义不是表示中的字段，表示的动力学不蕴含它（significance_undetermined），有界的对手规则与一切动力学定律一致只因为意义不是字段（bounded_rival）。内在的善恶是理论不作的断言：分歧，且出现在一篇本身高度关系化的文本中。",
+    "reading_en": "Having separated sound from feeling, 嵇康 places 善恶 in the sound itself as its nature, an evaluation independent of any hearer; on the spine a context-free reading exists only where contexts glue (fitsFree_iff), and significance is not a field of the representation (significance_undetermined, bounded_rival).",
+    "gap": null
+  },
+  {
+    "id": "wangchong-shizhi",
+    "tradition": "王充《论衡·实知篇》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR7050",
+      "KR7051"
+    ],
+    "source_id": "XS12",
+    "text_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1/evidence/texts/XS12.txt",
+    "locator": "实知篇",
+    "fragments": [
+      "先知之见，方来之事，无达视洞听之聪明，皆案兆察迹，推原事类。",
+      "不学自知，不问自晓，古今行事，未之有也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Learning.determines_lumped_iff",
+      "Becoming.Learning.lumped_right_iff",
+      "Becoming.Learning.no_prefix_fixes_next",
+      "Becoming.Web.Excludes.not_of_alike",
+      "Becoming.Web.tail_unexcluded"
+    ],
+    "records": [
+      "generalization-through-lumping",
+      "testing-within-registration"
+    ],
+    "relational": "Knowing what is coming is a relation through traces: inference from signs by kinds, never knowledge without contact.",
+    "reading": "AI 读法：\"案兆察迹，推原事类\"是经归并的推广：有限数据固定 x 处的值恰当某个观察输入与 x 归并（determines_lumped_iff），转移恰在世界跨归并一致时才对（lumped_right_iff）。\"不学自知…未之有也\"：主张只经耦合进来的差异被排除（Excludes.not_of_alike）；无模型时有限前缀使其后开放（tail_unexcluded），前缀固定不了下一值（no_prefix_fixes_next）。王充以此反对圣人生知，与脊柱一致。",
+    "reading_en": "Foreknowledge by signs and kinds is generalization through a lumping (determines_lumped_iff, lumped_right_iff); \"no one knows without learning\" matches that a claim is excluded only through a coupled difference (Excludes.not_of_alike) and that a finite prefix without a model leaves what follows open (tail_unexcluded).",
+    "gap": null
+  }
+]

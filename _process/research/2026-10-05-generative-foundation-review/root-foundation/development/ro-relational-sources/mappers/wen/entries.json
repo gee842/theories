@@ -1,0 +1,1581 @@
+[
+  {
+    "id": "zuo-xuan12-zhi-ge-wei-wu",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》邲之战后，楚子答潘党（传文，楚庄王语）",
+    "fragments": [
+      "夫文，止戈為武。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Widening.closing_needs_less",
+      "Becoming.Widening.never_closes_of_no_less",
+      "Becoming.Widening.cut_closes",
+      "Becoming.Widening.cut_reopened",
+      "Becoming.Widening.closes_within",
+      "Becoming.Widening.loop_kept"
+    ],
+    "records": [
+      "whether-a-loop-closes-a-difference"
+    ],
+    "relational": "The worth of force is read through what it does to the loop of force between parties: 武 is named by the stopping of 戈 passed back and forth, an act judged by the relation it ends, not by the strength of the actor. The reading is a speaker's normative gloss on a graph, made at the moment of declining to build a 京觀.",
+    "reading": "AI 读法：把“止戈”读作一环往复传递的差（兵来兵往）怎样才停。Widening 证明：环中至少有一环“回给的少于所受”，差才会关闭（closing_needs_less）；每一环都至少照原样传下去，则任何一轮都不关闭（never_closes_of_no_less）；一环全不回传是“截断”，当即关闭（cut_closes），但截断之后的环节仍可把差重新打开（cut_reopened）；回传映射处处小于所受时，差在有限轮内关闭（closes_within）。所以“止戈”在确切范围内成立：力量止住力量，只有当它成为回给更少的一环，并且此后各环不再放大。一次战胜只是截断，是否“止”取决于后续各环。没有断言：左传此句是楚庄王借字形说理，不是字源；律也不推出任何具体用兵是否正当。",
+    "reading_en": "The spine gives the exact range of 止戈: a loop of force closes only through a link that returns less than it received, a cut closes at once but can be reopened by what follows, and where every link passes on at least what it got nothing closes; so a victory is a cut, not yet a stopping. The sentence is a speaker's gloss, not an etymology.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-qi-de-guards",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》楚子答潘党，七德及其逐条自责",
+    "fragments": [
+      "夫武，禁暴、戢兵、保大、定功、安民、和眾、豐財者也，故使子孫無忘其章。",
+      "暴而不戢，安能保大？"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Viability.kernel_allOf_iff",
+      "Becoming.Viability.Keepable.each",
+      "Becoming.Viability.Keepable.mono",
+      "Becoming.Viability.ChoicePoint.each_not_joint",
+      "Becoming.Viability.ChoicePoint.no_rule_decides_joint",
+      "Becoming.Viability.keepable_and_iff_of_kernel_left"
+    ],
+    "records": [
+      "conditions-kept-together"
+    ],
+    "relational": "武 is defined by seven conditions the course must keep, most of them stated through others (暴 done to others, 兵 against others, 民, 眾, 財); the speaker then tests his own act against each, and infers one failure from another.",
+    "reading": "AI 读法：七德是一组必须一并保持的“守”。JointKeeping 证明：在每一历程下，“没有历程离开整组守”恰等于“没有历程离开其中任何一个”（kernel_allOf_iff）；但可保持性不同：一并可保持推出各自可保持（Keepable.each），反之不成立（ChoicePoint.each_not_joint），且没有任何由各自判断合成的规则能判定一并可保持（no_rule_decides_joint）。楚庄王“暴而不戢，安能保大”的推理形式是 Keepable.mono 的逆否：若“保大”这一守比“禁暴且戢兵”更窄，则后者不可保持时前者也不可保持。律在确切范围内修正列表的读法：七项逐条打勾，不能判定七项能否一并保持。没有断言：律不认可七项本身的内容（见“保大、定功”的权力框架条目）。",
+    "reading_en": "The seven virtues read as guards kept together: invariance decomposes guard by guard, but keepability does not (each keepable does not give jointly keepable, and no rule on the separate answers decides the joint one); the inference 暴而不戢安能保大 has the form of the contrapositive of Keepable.mono.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-jin-zai-ding-gong",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》楚子自责：定功、安民",
+    "fragments": [
+      "猶有晉在，焉得定功？",
+      "所違民欲猶多，民何安焉？"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Law.aboveAll_never_rests",
+      "Becoming.aboveAll_unique",
+      "Becoming.Settling.settles_no_undoable",
+      "Becoming.Settling.keeps_changing_iff",
+      "Becoming.LastChange.settles_iff_decided",
+      "Becoming.LastChange.not_not_settles"
+    ],
+    "records": [
+      "seeking-boundary",
+      "when-the-runs-of-a-process-settle",
+      "the-last-change-of-a-run"
+    ],
+    "relational": "A result is judged settled or not by what another formation can still do: while 晉 stands, the result can be undone. 安民 is measured by how many of the people's wishes the act goes against, i.e. by the response of those it acts on.",
+    "reading": "AI 读法：两条律恰合此推理。其一，Seeking：以“高于其余一切”为目标，一个状态下至多一个寻求者满足（aboveAll_unique），在任何律下两个这样的寻求者从不一起停息（Law.aboveAll_never_rests）；楚、晋同争诸侯之长，“定功”在两者都在时不可能停定。其二，Settling：凡历程都停定之处，没有可达的变化可被撤回（settles_no_undoable），所以晋在即一条可撤回的路线在；停定就是在每一步判定它是否还会变（LastChange.settles_iff_decided），胜者无从替对方判定。“所違民欲”把“安”读作受动者的响应。没有断言：律给出争长不息的结构，但不采纳“争长”这一目标；“功”仍是一方之功（见下一条）。",
+    "reading_en": "Two laws fit the inference exactly: two seekers of standing above all others never rest together, and where runs settle no reachable change can be undone; while 晉 stands a course undoing the result exists, so no 定功. The law states the structure of the contest without adopting its target.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-shi-zisun-frame",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》潘党请筑京观之辞与楚子之答",
+    "fragments": [
+      "臣聞克敵，必示子孫，以無忘武功。",
+      "武有七德，我無一焉，何以示子孫？"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Renewable.kept_part_not_renewal",
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.aboveAll_not_two",
+      "Becoming.Viability.Keepable.each"
+    ],
+    "records": [
+      "conditions-kept-together",
+      "derived-extent-limits",
+      "seeking-boundary"
+    ],
+    "relational": "Both the proposal and the answer measure force by what can be shown to one's own descendants (子孫) as one's lineage's merit (武功, 保大, 定功). Others enter as conditions of that merit. The restraint is real, but its standard is a state's lasting greatness.",
+    "reading": "AI 读法：此为分歧，不强合。潘党以“克敌示子孙”为京观之理；楚庄王的回答仍在同一框架内：七德是“可示子孙”的武功之章，其中保大、定功是本国之大与本国之功。理论不以任何形成体为中心：中心不沿依存导出（Clearing.center_not_derived）；一个形成体在每一历程下保持活动，既不决定更新，也不决定此运行对他者如何（Renewable.kept_part_not_renewal）；“高于其余”的目标两者不能并立（aboveAll_not_two）。所以“保大”与“生生”不同，不能把七德整体读作关系存续的伦理。可保留的是七德中以他者受动为尺度的部分（禁暴、安民、和眾）。",
+    "reading_en": "Divergence: the speech judges force by the merit a lineage can display (保大, 定功, 示子孫), a frame of power; the spine centers no formation, and a part kept active under every course decides neither renewal nor what the run does to others.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-li-ren-zhi-ji",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》楚子自责：豐財",
+    "fragments": [
+      "利人之幾，而安人之亂，以為己榮，何以豐財？"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Flow.rise_given",
+      "Becoming.Flow.rise_netGiver",
+      "Becoming.Flow.whole_rise_from_rest",
+      "Becoming.Flow.new_from_rest_or_open",
+      "Becoming.Branching.juncture_iff",
+      "Becoming.Branching.loss_passes_juncture"
+    ],
+    "records": [
+      "where-novelty-gain-comes-from",
+      "every-loss-passes-a-juncture"
+    ],
+    "relational": "One's own rise is read against another's critical point (幾) and disorder (亂): a gain taken from another's peril is not counted as 豐財.",
+    "reading": "AI 读法：每一次上升都是被给予的，来自其余或某一形成体（Flow.rise_given、rise_netGiver）；有限整体只从其外获得（whole_rise_from_rest）。所以“利人之幾”的得是整体内的转移，整体并未丰。此处“幾”指他者的危殆之机；其结构与 Junctures 的关口相同：保持与失去都有一步可走之处（juncture_iff），每一次失去都经过关口（loss_passes_juncture，至双重否定）。楚庄王否认借他者的关口取得的是“豐財”，律给出确切理由：部分之升而整体不升，必由他部分给出。没有断言：把“幾”读作关口是 AI 的结构读法，不是训诂；律不规定财之分配。",
+    "reading_en": "Every rise is given by the rest or by another formation, and a finite whole gains only from beyond it, so gain taken at another's juncture (幾) is a transfer, not 豐財; the passage's 幾 has the structure of a juncture, where keeping and losing both have a step.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-er-guo-bao-gu",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》楚子自责与结语",
+    "fragments": [
+      "今我使二國暴骨，暴矣；",
+      "其為先君宮，告成事而已，武非吾功也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.act_unselected",
+      "Becoming.Flow.consequence_unselected",
+      "Becoming.Clearing.pool_closes_gap",
+      "Becoming.Web.observed_raise_couples",
+      "Becoming.Loop.response_returns"
+    ],
+    "records": [
+      "the-gap-for-ones-own-act",
+      "wisdom-root-part-one",
+      "comparison-where-the-rest-responds"
+    ],
+    "relational": "The actor reads his own act through its consequences for both states' dead (二國), counting the enemy's dead with his own, and declines to claim the result as his merit.",
+    "reading": "AI 读法：对应“自己之行的缺口”。在两条平衡流中，经耦合闭包所作的每一选择都错过自己的行（Flow.act_unselected），行的后果不经闭包任何成员被选中（consequence_unselected）；与受者合并（pool）才闭合缺口（Clearing.pool_closes_gap）；经水平耦合的抬升立即传到（Web.observed_raise_couples），响应经行者的耦合闭包返回（Loop.response_returns）。楚庄王把“二國暴骨”算入对己行的评价，正是把受者纳入读法。律给出范围：自评只有经由与受者的耦合才可能达及后果。没有断言：传文是君主自述，律不保证他实际读对了。",
+    "reading_en": "Scope: one's own act and its consequences are missed by every selection through one's closure unless pooled with those affected; 楚庄王's counting both states' dead is such a pooled reading, and the law states when it can reach the consequences.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-guan-bing-wei",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》楚子自责：戢兵",
+    "fragments": [
+      "觀兵以威諸侯，兵不戢矣；"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.break_not_bounded",
+      "Becoming.Web.alikeThrough_raise",
+      "Becoming.break_carried_nowhere",
+      "Becoming.Thresholds.Draw.forms_at_break",
+      "Becoming.Widening.runs_away"
+    ],
+    "records": [
+      "runaway-distance-unregistered",
+      "loops-within-what-a-law-reads",
+      "whether-a-loop-closes-a-difference"
+    ],
+    "relational": "Displaying troops to awe the other lords relies on their response at a threshold (submission or alliance against): the display acts on a stock the actor does not read.",
+    "reading": "AI 读法：观兵示威依赖他者在阈值处的反应。Runaway/Thresholds 证明：一个不经水平耦合入 g 的存量，其抬升在断点前不传到（Web.alikeThrough_raise）；到断点的距离不耦合入（break_not_bounded），对每一条只读阈值之下的律都不被携带（break_carried_nowhere）；环在断点处形成（Draw.forms_at_break）；各环至少加倍时差失控（Widening.runs_away）。所以示威者无从读出距离他者反扑还有多远，楚庄王把观兵列为“兵不戢”有确切结构理由。没有断言：律不预言诸侯的实际反应。",
+    "reading_en": "Scope: a display of force acts on others' thresholds, and the distance to the break is carried nowhere for any law reading below the threshold, so the displayer cannot read how near the reversal is; this is the structure behind naming 觀兵 a failure of 戢兵.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-jing-guan-ming-wang",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》楚子言京观之古义",
+    "fragments": [
+      "古者明王，伐不敬，取其鯨鯢而封之，以為大戮，於是乎有京觀，以懲淫慝。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.Widening.never_closes_of_no_less",
+      "Becoming.Widening.runs_away",
+      "Becoming.ExchangeLaw.response_not_fixed_by_coupling"
+    ],
+    "records": [
+      "derived-extent-limits",
+      "whether-a-loop-closes-a-difference",
+      "what-a-pools-acts-respond-to"
+    ],
+    "relational": "Punitive display: the defeated are made 鯨鯢 (monsters), 不敬 is measured against the 明王's standing, and a mound of corpses is to deter. The speaker rejects the mound here only because the enemy dead were loyal, not the practice as such.",
+    "reading": "AI 读法：此为分歧，是把“止戈”读成非战主义的反例。楚庄王并未否定京观，只说此战不合其古义；古义以“明王”为中心、以“不敬”为罪、以敌为鯨鯢、以示众为惩。理论不导出中心（center_not_derived）；示众以惩是一环至少照原样回传的差，律只说这样的环不关闭（never_closes_of_no_less），加倍则失控（runs_away）；耦合限定响应而不确定响应（response_not_fixed_by_coupling），惩戒能否“懲”不由示众本身给定。理论对“懲”不给任何根据。此处“明王”是称号，与理论所读的“明”无关。",
+    "reading_en": "Divergence: the speech keeps the punitive mound as a rite of a central king against the 'irreverent'; the spine derives no center, and a display that returns at least what it received closes no loop, so the passage is a counterexample to reading 止戈 as rejecting force.",
+    "gap": null
+  },
+  {
+    "id": "zuo-xuan12-jing-guan-refusal",
+    "tradition": "左传",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/春秋左氏傳/宣公",
+    "locator": "《左传·宣公十二年》楚子不筑京观之理（标点据转录，待原页核对）",
+    "fragments": [
+      "今罪無所，而民皆盡忠，以死君命，又何以為京觀乎？"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Tolerance.gives_needs_sparing",
+      "Becoming.Tolerance.sparing_gives",
+      "Becoming.Tolerance.restores_iff",
+      "Becoming.Tolerance.waitsAll_never_restores",
+      "Becoming.Withholding.withholding_spreads",
+      "Becoming.Withholding.withholding_returns"
+    ],
+    "records": [
+      "restoring-giving-from-the-worst-start",
+      "giving-that-waits-on-giving",
+      "thresholds-of-waiting"
+    ],
+    "relational": "The enemy dead are re-described by their own relation (loyal to their ruler, dying at his command), not as monsters; the refusal is a restraint that does not wait on the other side's restraint.",
+    "reading": "AI 读法：Withholding/Tolerance 证明：在一条等待链上，开始时扣留者使下游扣留（withholding_spreads），在环上扣留回到自身（withholding_returns）；从全扣留出发，凡都等待者永不恢复（waitsAll_never_restores），恢复需要一个不等待所等之一切的形成体（gives_needs_sparing），这样的形成体此后每步都给（sparing_gives），恢复恰在没有“清链”之处（restores_iff）。楚庄王不筑京观，是不以对方的敌意为条件的一次克制，并把敌方死者按其自身关系重新描述。律给出确切范围：一次克制只是一步；要从相互扣留中恢复，需要持续不等待的给予，且网络中没有清链。传文没有断言此举恢复了和平，律也不这样推。",
+    "reading_en": "Scope: restoring giving from mutual withholding needs a formation that gives without waiting on what it waits on, at every step; the refusal of the mound is one such step and a relational re-description of the enemy dead, not a demonstrated restoration.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-wu-zhi-ge-gloss",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/12",
+    "locator": "《说文解字》卷十二下 戈部 武（引楚庄王；引号形式据转录，待原页核对）",
+    "fragments": [
+      "楚莊王曰：「夫武，定功戢兵。故止戈爲武。」"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Retrodiction.reading_right_iff",
+      "Becoming.Retrodiction.fits_iff_same",
+      "Becoming.CrossSituational.stands_iff",
+      "Becoming.CrossSituational.candidates_append",
+      "Becoming.CrossSituational.resolved_is_target",
+      "Becoming.Contextual.glues_iff_agree",
+      "Becoming.Contextual.indexed_fits"
+    ],
+    "records": [
+      "historical-source-binding",
+      "encounter-selection-and-revision",
+      "contextual-registration"
+    ],
+    "relational": "Xu Shen glosses the graph by quoting a speech: a normative reading made in one situation becomes the dictionary's analysis of the graph. Two relations are mixed: the graph's relation to its origin, and the word's relation to later use.",
+    "reading": "AI 读法：说文以楚庄王语为武的字形分析，把一处语境中的规范读法当成字形的来历。脊柱把两种关系分开：其一，字形来历是回溯问题：对早先“包”的解释给出实际内容，恰当每个给出同一包而内容不同的对手都被某一有日期的对照分开（Retrodiction.reading_right_iff）；左传之语晚于字形，不是这样的对照，甲骨金文字形才是。其二，词义在用例中立住：一个义项立住恰当每一条涉及该形的记录都提供它（CrossSituational.stands_iff）；后续记录的候选是先前候选中在其上仍立住者（candidates_append）；唯一候选是所指，只在覆盖条件下成立（resolved_is_target）。两种读法各在其语境中成立；语境相遇处不一致，便不能粘合为一个无语境读法（Contextual.glues_iff_agree），按语境标注的框架则容纳全部（indexed_fits）。没有断言：律不判楚庄王之规范读法无价值，只判它不是字源。",
+    "reading_en": "Scope: the gloss turns a speech's normative reading into a graph analysis; the spine separates retrodicting the graph's origin (needs dated controls that separate rival histories) from a sense standing in later records (every bearing record offers it), and keeps both readings indexed by context since they do not glue.",
+    "gap": {
+      "statement": "Readings written back into their own evidence. Extend CrossSituational to generations: generation k resolves the form from the records of generation k−1 (candidates of those records), and writes the records of generation k by offering exactly its resolved meaning. Prove: (i) once some generation resolves to e', every later generation resolves to e' (lock-in, a loop form of ResponseLearning.every_generation_holds); (ii) a meaning e ≠ e' resolved before the uptake is recoverable from the records of generations after it by no reading, and from the union of all records exactly where some pre-uptake record is kept (dated control in the sense of Retrodiction.reading_right_iff); (iii) where the uptake records omit the earlier meaning (coverage fails, as in CrossSituational.Omitted), the lock-in is to a unique candidate that is not the earlier meaning and that no later record excludes (the loop form of CrossSituational.Omitted.wrong_unique against CrossSituational.resolved_is_target).",
+      "nearest": [
+        "Becoming.CrossSituational.candidates_append",
+        "Becoming.CrossSituational.narrows",
+        "Becoming.CrossSituational.Omitted.wrong_unique",
+        "Becoming.ResponseLearning.every_generation_holds",
+        "Becoming.ResponseLearning.distinction_lost_every_generation",
+        "Becoming.Confound.confounded"
+      ],
+      "why_it_matters": "The 止戈 reading shows a reading that writes the records later readers learn from: once taken up it confirms itself, and only records kept from before the uptake separate it from the graph's history. The spine has static records (CrossSituational), a fixed hidden variable (Confound) and faithful teaching (ResponseLearning), but no law of a resolution that produces its own evidence. Honest weight: much of it follows by composing those laws, so it is ranked below the two other gaps."
+    }
+  },
+  {
+    "id": "shuowen-zhi-wei-zu-composite",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/02",
+    "locator": "《说文解字》卷二上 止部 止",
+    "fragments": [
+      "下基也。象艸木出有址，故以止爲足。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.CodeAcquisition.primitives_not_lumped",
+      "Becoming.CodeAcquisition.primitives_no_exact",
+      "Becoming.CodeAcquisition.missing_composite_no_code",
+      "Becoming.CodeAcquisition.reversed_composite_switches",
+      "Becoming.CodeAcquisition.wrong_order_fails_transfer",
+      "Becoming.CrossSituational.candidates_eq_iff"
+    ],
+    "records": [
+      "acquired-binding-compositional-use",
+      "separation-loses-the-relation",
+      "encounter-selection-and-revision"
+    ],
+    "relational": "The same two components, 戈 and 止, give two composites depending on how they relate: 止 as foot (going with the dagger-axe, the paleographic reading) or 止 as stopping (the 左传 reading). Xu Shen's own gloss of 止 gives the sense 足.",
+    "reading": "AI 读法：两种武的读法用同一对部件，差别全在部件之间的关系。CodeAcquisition 证明：只经原始部件读，组合的次序（关系）不被归并（primitives_not_lumped），任何只读部件的读法都不精确，必须有组合的探测（primitives_no_exact）；缺少组合的记录就给不出编码（missing_composite_no_code），组合记录颠倒则给出相反的编码（reversed_composite_switches），次序读错则在新表达上答错（wrong_order_fails_transfer）。对武而言，组合的探测是有日期的字形与用例；说文自己以“止爲足”训止，是支持“止为足形”的内部证据。两种读法保持分开：一为字形史，一为后起规范读法。没有断言：此律是二原子玩具编码，结构相同而非全面的文字学模型；古文字结论以原始材料为准。",
+    "reading_en": "Agreement: in the two-primitive code, the primitives alone never fix how a composite relates its parts and a composite record is needed; 武 is that case, since 戈 plus 止 reads as going armed or as stopping arms depending on the relation, and Xu Shen's own gloss 以止爲足 supports the foot reading.",
+    "gap": null
+  },
+  {
+    "id": "sunzi-huogong-bu-ke-fu",
+    "tradition": "兵家（孙子）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0417",
+      "E7009",
+      "KR7025"
+    ],
+    "source_id": "IS18",
+    "text_path": "evidence/texts/IS18.txt",
+    "locator": "《孙子兵法·火攻第十二》",
+    "fragments": [
+      "怒可以复喜，愠可以复悦，亡国不可以复存，死者不可以复生。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Law.lost_stays",
+      "Becoming.Law.Merges.loses",
+      "Becoming.Law.lossless_iff_returns",
+      "Becoming.Branching.loss_passes_juncture",
+      "Becoming.Branching.juncture_iff",
+      "Becoming.Settling.settles_no_undoable"
+    ],
+    "records": [
+      "recurrence-without-premise",
+      "every-loss-passes-a-juncture",
+      "when-the-runs-of-a-process-settle"
+    ],
+    "relational": "States of a formation (anger, pleasure) return; the loss of the formation itself (a state destroyed, a person dead) does not. The constraint on using force is read off what cannot return.",
+    "reading": "AI 读法：在每一律下，失去的可能保持失去（Law.lost_stays）；在有限多的配置中，合并永久失去一个可能（Merges.loses），不失去任何东西恰是能返回（lossless_iff_returns）。怒喜在一人之内往复，是无损可返回的变化；亡国、死者是失去，不返回。每一次失去都经过关口：保持与失去都有一步之处（loss_passes_juncture、juncture_iff）；所以可做的在关口之前。孙子由此推出主将不可因怒兴师，结构相合。没有断言：孙子的框架是“合于利而动”，求胜之术；律本身不含利害权衡。与兵家条目交叠，此处只取不可返回的结构。",
+    "reading_en": "Agreement: moods return because they lose nothing; a destroyed state or a death is a loss, and a possibility lost stays lost under every law, passing a juncture first; the passage's restraint on starting war rests on that structure, within a frame of advantage.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-huiyi",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E4021"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》六书段（会意）",
+    "fragments": [
+      "會意者，比類合誼，以見指撝，「武、信」是也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.whole_not_in_pairs",
+      "Becoming.copy_relates",
+      "Becoming.separation_faithful_iff",
+      "Becoming.Rectangular",
+      "Becoming.CodeAcquisition.primitives_no_exact",
+      "Becoming.Segmentation.reads_every_iff"
+    ],
+    "records": [
+      "separation-loses-the-relation",
+      "acquired-binding-compositional-use"
+    ],
+    "relational": "A 會意 graph shows a sense by joining components (比類合誼): the sense is held by the components together, not by either. The examples (武, 信) are Han analyses, partly re-readings.",
+    "reading": "AI 读法：会意的结构是“整体有、部分各自无”的关系。Description 证明：分别描述各部分恰在整体为“矩形”（各部分无关）时给回整体（separation_faithful_iff），有整体持有而任何两两之对都不持有的关系（whole_not_in_pairs），关系只由共同作用形成（copy_relates）。会意与逐词组合不同：逐词读法恰在每个词读对时把整个序列读对（Segmentation.reads_every_iff）；会意的义却要求组合本身的探测（CodeAcquisition.primitives_no_exact）。律给出范围：会意分析成立，需要一份关于部件关系的记录；许慎所举“武、信”的分析是汉代读法，律不认可其为造字原意。“比類合誼”是记号系统层面的关系，不直接是世界中的关系。",
+    "reading_en": "Scope: a 會意 sense is a relation the components hold only together, which separate description loses exactly where they are related, and unlike word-by-word reading it needs a record of the composite; the law does not certify Xu Shen's analyses of 武 and 信 as origins.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-xingsheng",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E4021"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》六书段（形声）",
+    "fragments": [
+      "形聲者，以事為名，取譬相成，「江、河」是也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.PartialReadout.ExactWithin.lumped",
+      "Becoming.PartialReadout.exact_exists_iff",
+      "Becoming.PartialReadout.LumpedWithin.finer",
+      "Becoming.PartialReadout.signal_no_exact",
+      "Becoming.PartialReadout.paired_exact",
+      "Becoming.CodeAcquisition.acquired_every_expression"
+    ],
+    "records": [
+      "control-coherence-loss",
+      "generalization-through-lumping",
+      "acquired-binding-compositional-use"
+    ],
+    "relational": "A word is written by pairing two partial readings: a category (事, the 形 component, e.g. 水) and a sound analogue (譬, the 聲 component, e.g. 工, 可). Each alone lumps many words; together they separate one. The relation is between sign readings (sound, category), not a relation in the world.",
+    "reading": "AI 读法：形声是两个粗读法的配对。PartialReadout 证明：精确读法要求特征被映射归并（ExactWithin.lumped），有截面时精确读法存在恰当特征在该域内被归并（exact_exists_iff），一个映射与另一个并读时归并保留（LumpedWithin.finer）；信道例中单读信号无精确读法（signal_no_exact），与参照配对则精确（paired_exact）。义符单读归并一切水类之词，声符单读归并同音之词，两者“相成”才分出一词。取得编码后，新组合也可读（CodeAcquisition.acquired_every_expression），这是形声能孳乳的结构。范围：大多数汉字是形声，故文字系统的主导结构是“声—类”两个归并的配对，是记号层面的关系；把文字整体读为世界关系的编码，须另有证据。配对律在信道模型中给出，一般律是 finer 与 exact_exists_iff。",
+    "reading_en": "Agreement at the sign level: 形聲 pairs a category reading and a sound reading, each lumping many words, so that together they read one word exactly, as in the spine's partial-readout laws; since most characters are 形聲, the script's dominant structure is this pairing of sign readings, not an encoding of world relations.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-phonetic-drift",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/10",
+    "locator": "《说文解字》卷十下 心部 恕、感",
+    "fragments": [
+      "仁也。从心如聲。",
+      "動人心也。从心咸聲。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.References.stays_iff",
+      "Becoming.ContactCourses.run_stays_iff",
+      "Becoming.References.inverted_fails",
+      "Becoming.Law.present_forgets",
+      "Becoming.Readout.no_judge_of_merged"
+    ],
+    "records": [
+      "consequence-revised-reference-plan",
+      "recurrence-without-premise",
+      "control-coherence-loss"
+    ],
+    "relational": "A phonetic component encodes the word's sound as pronounced when the graph was formed; the encoding is a relation between graph and speech that holds only while speech agrees with it.",
+    "reading": "AI 读法：声符是一份“装入的编码”。References 证明：信道改变后，装入的编码恰在新信道于编码输入处与旧信道一致时仍对（References.stays_iff），沿一列信道亦然（ContactCourses.run_stays_iff）；有限的现在遗忘其历史（Law.present_forgets）。“恕从如聲”“感从咸聲”，以今日通语读，声符已不给出字音（和从禾聲、理从里聲则仍一致），编码在语音变化处失效。失效之后部件便被重新读作意义，如“如心为恕”的后起说法（出处未定），这是读法在编码失效处转为再读的一例。没有断言：上古音中这些声符与字音如何相近，属音韵学，律不判定。",
+    "reading_en": "Agreement: a phonetic component is an installed encoding that stays right across a change of pronunciation exactly where the new pronunciation agrees at the encoded inputs; 恕 (如聲) and 感 (咸聲) no longer read in modern pronunciation, and the failed encoding opens the way to semantic re-readings such as 如心為恕.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-jiajie",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E4022",
+      "KR4063"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》六书第六项（假借）",
+    "fragments": [
+      "假借者，本無其事，依聲託事，「令、長」是也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.CrossSituational.candidates_eq_iff",
+      "Becoming.CrossSituational.stands_iff",
+      "Becoming.CrossSituational.candidates_snoc_bearing",
+      "Becoming.CrossSituational.resolves_iff",
+      "Becoming.Contextual.indexed_fits",
+      "Becoming.Readout.no_judge_of_merged"
+    ],
+    "records": [
+      "encounter-selection-and-revision",
+      "enacted-scene-binding",
+      "contextual-registration"
+    ],
+    "relational": "One graph carries words that share a sound; which word it carries is fixed only by the use in context, never by the graph.",
+    "reading": "AI 读法：假借是一个形承载多个义，形本身把它们归并，判定只能来自用例。Readout：经归并某族两员的约化，没有判者能读（no_judge_of_merged）。CrossSituational：一个义项立住恰当涉及该形的每一记录都提供它（stands_iff）；一条涉及该形的记录恰保留它所提供的候选（candidates_snoc_bearing）；对无重复的义库，形的候选恰为 [e]，当且仅当 e 在库中、每条涉及该形的记录都提供 e、且库中其余每一义都在某条涉及该形的记录中缺席（candidates_eq_iff，“判定即分开”）。按语境标注的框架容纳所显示的一切（Contextual.indexed_fits）。结构相合：假借字的读者以多处用例消去候选。atlas 的 KR4063 也据此提醒“同形未必同义”。",
+    "reading_en": "Agreement: a borrowed graph merges several words, so no judge reads them through the graph alone, and the word is resolved cross-situationally, a meaning standing exactly where every bearing record offers it.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-bushou",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E4023"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》编纂原则段与后叙“建首”段",
+    "fragments": [
+      "方以類聚，物以群分。同牽條屬，共理相貫。雜而不越，據形系聯。",
+      "分別部居，不相雜廁也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Learning.Lumped",
+      "Becoming.Learning.determines_lumped_iff",
+      "Becoming.Learning.goAlike_iff_lumped",
+      "Becoming.Learning.selects_right_through",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.PartialReadout.ExactWithin.lumped"
+    ],
+    "records": [
+      "generalization-through-lumping",
+      "selection-through-a-model-of-the-options"
+    ],
+    "relational": "The 540 部首 lump graphs by a shared component (據形) and link the groups by graphic adjacency (系聯); Xu Shen claims that sense coheres within a group (共理相貫).",
+    "reading": "AI 读法：部首是按字形的归并。Learning 证明：一个归并恰在它归并之处推广（determines_lumped_iff）；经映射的选择只在要紧之事于其归并上一致之处才对（selects_right_through）；映射归并在一起的，任何经它的选择都不能分开（selects_not_right_of_parted）。“共理相貫”即主张字义在部首归并上一致：对许多形声字的义符成立，对按形归部而义不相属者不成立。律给出确切范围，并修正其普遍形式。“據形系聯”把各部按形相接成一串，是归并之间的邻接，律不赋予它宇宙论意义。注意“共理”之理是许慎用语，不等于理论所读的“理”。",
+    "reading_en": "Scope: 部首 is a lumping by graphic form; a lumping is right about sense only where sense goes alike across it, which holds for many category components and fails for graphs grouped by shape alone, so the claim 共理相貫 holds in that exact range.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-yi-dao-hai",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4063"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字》后叙（建首、毕终）",
+    "fragments": [
+      "其建首也，立一為耑。",
+      "引而申之，以究萬原。畢終於亥，知化窮冥。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.Contextual.world",
+      "Becoming.Shown.run",
+      "Becoming.exists_law_iff",
+      "Becoming.Law.present_forgets"
+    ],
+    "records": [
+      "derived-extent-limits",
+      "unity-of-readings",
+      "process-and-frame-as-readings"
+    ],
+    "relational": "The order of the 部首 is set as a cosmogony: it begins at 一 and ends at 亥, so that reading the script is reading the generation of things (說文 一: 惟初太始，道立於一，造分天地，化成萬物). Relations are derived from a first one that divides.",
+    "reading": "AI 读法：此为分歧。许慎以“一”立端、以“亥”终，配合说文“一”下“惟初太始，道立於一，造分天地，化成萬物”，把部首次序当作万物由一分化的宇宙生成论。理论的“一”是一个关系展开，而非一个先在的“一”再分出天地；World 等基底不是“起点”；中心不沿依存导出（center_not_derived）；每段历史是它所显示之律的一次运行，无需前提（Shown.run），一致的历史才有确定之律（exists_law_iff）；有限的现在不保留其来源（present_forgets）。分歧在于“始一终亥”给出起点与终点的秩序，并把文字秩序等同于造化秩序。可保留的是“引而申之”中义由关系延伸的一面。",
+    "reading_en": "Divergence: the radical order from 一 to 亥 is a cosmogony in which a first one divides into heaven, earth and things; the theory's oneness is one relational unfolding with no first element, no derived center and no history held in the present, and it does not read the order of the script as the order of generation.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-cangjie-traces",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E4020",
+      "KR4065"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》仓颉作书段",
+    "fragments": [
+      "黃帝史官倉頡，見鳥獸蹄迒之跡，知分理之可相別異也，初造書契。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.conveyed_upstream",
+      "Becoming.Retrodiction.reading_right_iff",
+      "Becoming.Retrodiction.actual_candidate",
+      "Becoming.identifiesAlike_iff",
+      "Becoming.Learning.determines_lumped_iff"
+    ],
+    "records": [
+      "observation-is-a-route",
+      "historical-source-binding",
+      "configurations-alike-by-relation"
+    ],
+    "relational": "A trace relates to what left it; the founding idea is that patterns (分理) let kinds be told apart, so a mark can stand for what made it.",
+    "reading": "AI 读法：蹄迒之跡是由路线向下游传出的差：差只向下游走（conveyed_upstream）；读对一个早先的“包”，恰当给出同一包而内容不同的对手都被有日期的对照分开（Retrodiction.reading_right_iff），而实际历史总是候选（actual_candidate）。“知分理之可相別異”对应：一个描述有意义，恰当它所等同者关系相同、且等同凡相同者（identifiesAlike_iff）。结构相合：记号建立在“可读之迹分开种类”之上。没有断言：仓颉造字是传说，不是考古事实（atlas 已标此限），律只对应其所述结构。",
+    "reading_en": "Agreement: a trace is a difference carried downstream from what left it, read right only where rivals giving the same trace are told apart, and 分理之可相別異 is a description that identifies exactly what relates alike; the Cangjie story itself is legend.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-suru-li-shu",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4063"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》批评俗儒说字段",
+    "fragments": [
+      "乃猥曰：「馬頭人為長，人持十為斗，蟲者，屈中也。」",
+      "廷尉說律，至以字斷法：「苛人受錢，苛之字止句也。」"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Readout.reading_single_iff",
+      "Becoming.Readout.no_judge_of_merged",
+      "Becoming.Confound.misattributes",
+      "Becoming.Confound.varied_refutes",
+      "Becoming.Retrodiction.not_fits_of_separated"
+    ],
+    "records": [
+      "control-coherence-loss",
+      "experiment-needs-return",
+      "historical-source-binding"
+    ],
+    "relational": "Readers analyse the present clerical shape (隸) as if it showed the word's composition, and a legal judgment hangs on that reading; Xu Shen answers with older forms (古文, 史籀).",
+    "reading": "AI 读法：经约化读一个可观测量，恰在它于约化所合并者上一致时单值（Readout.reading_single_iff）；约化合并了两员而可观测量分开它们时，没有判者（no_judge_of_merged）。隶变合并了古文中不同的部件，俗儒以今形析字，是错误投射的误归（Confound.misattributes）；与之相违的有日期记录（古文、史籀）排除这一投射（varied_refutes、Retrodiction.not_fits_of_separated）。“以字斷法”是经合并读法作出对他人有后果的选择。许慎的批评与今日对“止戈为武”作字源的批评结构相同，而说文自己仍采止戈说，这是其内部张力。",
+    "reading_en": "Agreement: reading the clerical shape as the composition is reading through a reduction that merged distinct components, which misattributes and has no judge; dated older forms exclude it. Xu Shen's critique has the same structure as the modern critique of 止戈 as etymology, which he himself kept.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-que-ru",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E4024",
+      "E4023",
+      "KR4064"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》编纂原则段",
+    "fragments": [
+      "信而有證，稽譔其說。",
+      "其於所不知，蓋闕如也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.PartialReadout.SoundWithin.silent",
+      "Becoming.PartialReadout.silent_sound",
+      "Becoming.PartialReadout.silent_not_exact",
+      "Becoming.Identification.withBound",
+      "Becoming.Identification.withBound_accords",
+      "Becoming.Identification.withBound_earliest"
+    ],
+    "records": [
+      "identification-where-bounded"
+    ],
+    "relational": "The compiler's reading is bound to what the evidence settles: propose with evidence, leave a blank where the evidence does not decide.",
+    "reading": "AI 读法：可靠的读法在映射合并了特征值不同的两个配置之处保持沉默（SoundWithin.silent）；沉默是可靠的（silent_sound），但在非空域上不精确（silent_not_exact）。给定界时外推在 2N−1 之前沉默，此后每步相合（withBound、withBound_accords），没有外推能总是更早提出（withBound_earliest）：界给出沉默，不给出更早。“闕如”正是“只在证据定下之处提出”的规则。理论采用的中文“默”（stays silent）与此同构。没有断言：许慎自述不保证全书无误（atlas 已标此限）。",
+    "reading_en": "Agreement: a sound reading stays silent where the evidence merges cases with different values, and silence is sound though not exact; 闕如 is that rule, and the adopted Chinese term 默 for 'stays silent' has the same structure.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-shu-tong-wen",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4063"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》秦书同文、隶书段",
+    "fragments": [
+      "秦始皇帝初兼天下，丞相李斯乃奏同之，罷其不與秦文合者。",
+      "初有隸書，以趣約易，而古文由此絕矣。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Law.Merges.loses",
+      "Becoming.Law.merged_stays",
+      "Becoming.Readout.no_judge_of_merged",
+      "Becoming.ResponseLearning.distinction_lost_every_generation",
+      "Becoming.References.stays_iff"
+    ],
+    "records": [
+      "recurrence-without-premise",
+      "control-coherence-loss"
+    ],
+    "relational": "Regional variant codes (言語異聲，文字異形) are replaced by decree with one code from one center; the clerical script, chosen for ease, merges forms, and the older script is cut off.",
+    "reading": "AI 读法：在有限配置中合并永久失去可能（Law.Merges.loses），被合并者此后不再被分开（merged_stays），经合并的约化没有判者（Readout.no_judge_of_merged）；经由教学传递，失去的区分在每一代都保持失去（ResponseLearning.distinction_lost_every_generation）。“古文由此絕”是这一结构。另一面是统一编码使各地读法一致，差异可跨地区传达（参照 References.stays_iff）。范围：律给出合并的确切损失；“罷其不與秦文合者”是一中心以废除强加一码，处在兼并天下的权力框架中，与“约定俗成”所说在使用者之间形成的约定不同（见荀子正名条目的缺口）。",
+    "reading_en": "Scope: imposing one code merges variant distinctions, which stay merged and, passed through teaching, stay lost in every generation; the decree is a merge imposed from one center within a frame of conquest, unlike a convention formed among users.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xu-shi-gu",
+    "tradition": "说文解字叙（许慎）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR4063"
+    ],
+    "source_id": "V4MO003",
+    "text_path": "evidence/texts/V4MO003.txt",
+    "locator": "《说文解字叙》“文字者经艺之本”段与“鼎彝”段",
+    "fragments": [
+      "前人所以垂後，後人所以識古。",
+      "郡國亦往往於山川得鼎彝，其銘即前代之古文，皆自相似。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Law.present_forgets",
+      "Becoming.Law.withHistory_never_returns",
+      "Becoming.Retrodiction.reading_right_iff",
+      "Becoming.Retrodiction.change_unlocated",
+      "Becoming.ResponseLearning.every_generation_holds"
+    ],
+    "records": [
+      "recurrence-without-premise",
+      "historical-source-binding",
+      "entropy-history-and-record"
+    ],
+    "relational": "Writing is the relation through which the later reads the earlier; inscriptions found in the land are kept records that let the earlier script be read.",
+    "reading": "AI 读法：有限的现在遗忘（Law.present_forgets），保留历史者不返回（withHistory_never_returns）；所以早先只能经由保留下来的记录读出，读对恰当对手被有日期的对照分开（Retrodiction.reading_right_iff）；两端可见的变化，其中间每一步未定位（change_unlocated），古文到隶之间的每一变化需中间记录定位。经教学，每一代都持有所教的程序（ResponseLearning.every_generation_holds），这是“垂後”。鼎彝铭文是有日期的对照。结构相合。",
+    "reading_en": "Agreement: the present forgets its history, so the earlier is read only through kept records that separate rival histories, and a change seen at both ends is unlocated without intermediate records; bronze inscriptions are such dated controls.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-wang-yi-guan-san",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/01",
+    "locator": "《说文解字》卷一上 王部 王（引董仲舒、孔子）",
+    "fragments": [
+      "天下所歸往也。",
+      "三者，天、地、人也，而參通之者，王也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.withinClosureOf_iff",
+      "Becoming.Web.selects_alike_all_iff",
+      "Becoming.Flow.withinResponse_iff_coupling",
+      "Becoming.Flow.unselected_beyond_pool"
+    ],
+    "records": [
+      "derived-extent-limits",
+      "what-pooled-coupling-reaches",
+      "comparison-where-the-rest-responds"
+    ],
+    "relational": "Heaven, earth and humans are connected through one figure, to whom all return (歸往): relation routed through a center. The analysis of the graph is a Han cosmological-political reading (董仲舒).",
+    "reading": "AI 读法：此为分歧。说文以王为天下所归往、三才的贯通者，把关系的连通归于一个中心。理论中中心不沿依存导出（Clearing.center_not_derived）；一群体的闭包是其成员闭包之并（withinClosureOf_iff），合并的选择恰达及耦合入合并者的（selects_alike_all_iff），合并者在其耦合闭包之外是盲的（unselected_beyond_pool）；没有成员持有整体的连通。对照说文叙“蓋文字者，經藝之本，王政之始”，文字秩序本身被置于王政之下。古文字学一般把王的早期字形读作斧钺之形（权力之象），此处不展开。",
+    "reading_en": "Divergence: the gloss routes the connection of heaven, earth and humans through a king to whom all return; the spine derives no center, and a group's reach is the union of its members' closures with none holding the whole, so this is a non-relational strand of the script's Han reading.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-he-xiang-ying",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/02",
+    "locator": "《说文解字》卷二上 口部 和",
+    "fragments": [
+      "相譍也。从口禾聲。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Loop.response_returns",
+      "Becoming.Loop.returns",
+      "Becoming.Flow.withinResponse_iff_coupling",
+      "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
+      "Becoming.TimedResponse.pool_alike_before"
+    ],
+    "records": [
+      "comparison-where-the-rest-responds",
+      "what-a-pools-acts-respond-to"
+    ],
+    "relational": "和 is glossed as voices answering each other: a relation of response between two, not a property of either.",
+    "reading": "AI 读法：说文以“相譍”训和，即声相应答。脊柱给出应答的确切范围：响应经行者的耦合闭包返回（Loop.response_returns），差回到部分（Loop.returns）；可响应范围是耦合闭包的对偶（Flow.withinResponse_iff_coupling）；群体不早于差达到某一成员而响应（TimedResponse.pool_alike_before）；耦合限定响应而不确定响应（ExchangeLaw.response_not_fixed_by_coupling）。末一条说明“相譍”不等于“相同”：应答受耦合约束，内容却不由耦合给定，这正是和与同之分的结构基础。没有断言：说文此训是字义，不含史伯、晏子的论证（见下两条）。",
+    "reading_en": "Scope: 和 as mutual answering is a response relation; responses return only through coupling closures, and coupling bounds a response without fixing it, which is the structural ground of the 和/同 distinction.",
+    "gap": null
+  },
+  {
+    "id": "guoyu-shibo-he-sheng-wu",
+    "tradition": "国语（史伯）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0240",
+      "E0241",
+      "KR1128",
+      "KR8305"
+    ],
+    "source_id": "P06",
+    "text_path": "evidence/texts/P06.txt",
+    "locator": "《国语·郑语》史伯答郑桓公",
+    "fragments": [
+      "夫和实生物，同则不继。",
+      "以他平他谓之和，",
+      "故能丰长而物归之；",
+      "若以同裨同，尽乃弃矣。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.new_from_rest_or_open",
+      "Becoming.Flow.new_beyond_every",
+      "Becoming.Flow.whole_rise_from_rest",
+      "Becoming.Web.revisits_of_nonrising",
+      "Becoming.Flow.whole_recurs_of_rest_idle",
+      "Becoming.Law.Commutes.keeps_fixed"
+    ],
+    "records": [
+      "where-novelty-gain-comes-from",
+      "returning-novelty-forgetting-on-levels",
+      "what-a-commuting-law-keeps-apart"
+    ],
+    "relational": "Things come to be where one thing is balanced by another different from it (以他平他); adding the same to the same ends. Generation is located in the relation of differents, not in any one of them.",
+    "reading": "AI 读法：新由族外给出：在第一律下，每步皆新的族所得多于所出，来自其余或开放（Flow.new_from_rest_or_open）；无尽的新是越出每一有限族的交换（new_beyond_every）；有限整体只从其外获得（whole_rise_from_rest）。“同则不继”的确切形式：不获得的部分返回（Web.revisits_of_nonrising），其余不再净给时有界整体返回并遗忘（whole_recurs_of_rest_idle）。“以同裨同”：与对称交换的律保持对称所固定者不变（Law.Commutes.keeps_fixed），同加同不生出差。范围：律说新只能来自与他者的交换，并不说任何混合都生；新也不等于生生，生与衰不相交。史伯之语是对王政的劝诫，“物归之”带有向君归附的意味。",
+    "reading_en": "Scope: novelty is given only by exchange beyond the family, a part fed only by itself returns and forgets, and a law treating parts alike keeps the symmetric symmetric, which is the exact content of 以同裨同，尽乃弃矣; the law does not say every mixing generates, and novelty is not 生生.",
+    "gap": null
+  },
+  {
+    "id": "guoyu-shibo-xian-wang-za",
+    "tradition": "国语（史伯）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "KR1128"
+    ],
+    "source_id": "P06",
+    "text_path": "evidence/texts/P06.txt",
+    "locator": "《国语·郑语》史伯答郑桓公（先王成物、幽王去和）",
+    "fragments": [
+      "故先王以土与金木水火杂，以成百物。",
+      "去和而取同。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.Embodied.arises_given",
+      "Becoming.Flow.BalancesOn.arises_given",
+      "Becoming.Flow.rise_given",
+      "Becoming.Clearing.center_not_derived"
+    ],
+    "records": [
+      "generation-is-replenishment",
+      "laws-of-one-step",
+      "derived-extent-limits"
+    ],
+    "relational": "Things are made by a ruler who mixes five fixed kinds of stuff; 和 is the ruler's policy, and its loss (去和而取同) is a ruler's fault.",
+    "reading": "AI 读法：此为分歧。史伯把成物归于先王以五种既定之物相杂，生成由一个居外的制作者完成，五行是先在的类。理论只有一种关系项；生起需由参与其中的活动形成体给予（Web.Embodied.arises_given、Flow.BalancesOn.arises_given），每次上升都被给予（Flow.rise_given），中心不导出（Clearing.center_not_derived）。分歧在制作者与先在之类，而非“和”的关系结构本身。可保留的是上一条的“以他平他”。",
+    "reading_en": "Divergence: generation is credited to a former king mixing five given kinds, a maker outside the relation and fixed kinds; in the spine arising is given by formations taking part, with one kind of relatum and no derived center.",
+    "gap": null
+  },
+  {
+    "id": "zuo-zhao20-xian-qi-fou",
+    "tradition": "左传（晏子）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0242"
+    ],
+    "source_id": "P07",
+    "text_path": "evidence/texts/P07.txt",
+    "locator": "《左传·昭公二十年》晏子答齐侯论和同",
+    "fragments": [
+      "和如羹焉．",
+      "君所谓可．而有否焉．臣献其否．以成其可．",
+      "若以水济水．谁能食之．",
+      "据亦同也．焉得为和．"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.separates_all_iff",
+      "Becoming.Web.separates_all_iff_member",
+      "Becoming.Web.pool_adds",
+      "Becoming.Web.pooled_iff_member",
+      "Becoming.withinClosureOf_iff",
+      "Becoming.Web.selects_alike_all_iff"
+    ],
+    "records": [
+      "what-pooled-coupling-reaches"
+    ],
+    "relational": "Ruler and minister read one matter together: the minister marks the 否 within what the ruler calls 可. A minister who says yes whenever the ruler does (据) adds nothing.",
+    "reading": "AI 读法：把君臣共读读作合并的耦合。SelectionPool 证明：合并者分开的恰是其成员不全同样耦合者（Web.separates_all_iff），在成员列出且可判定时恰是某一成员所分开者（separates_all_iff_member）；差就是合并所加：某成员把两条历史耦合为同而成员不全如此时，有一经合并耦合的选择分开它们（Web.pool_adds）；某成员的耦合即合并者的耦合时，合并的选择恰是该成员的（pooled_iff_member）。“臣献其否以成其可”是 pool_adds；“以水济水”“据亦同也”是 pooled_iff_member：同者相加，什么也不加。结构相合。范围：晏子的合并是有等级的，“可”仍是君之可；律对成员对称，不含君臣之序。",
+    "reading_en": "Agreement: the minister's 否 within the ruler's 可 is what a pool adds where one member couples alike and another does not, and 据's echoing is the case where a member's couplings are the pool's, which adds nothing; the law is symmetric among members, the passage is hierarchical.",
+    "gap": null
+  },
+  {
+    "id": "zuo-zhao20-kuan-meng",
+    "tradition": "左传（晏子；仲尼曰）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0242"
+    ],
+    "source_id": "P07",
+    "text_path": "evidence/texts/P07.txt",
+    "locator": "《左传·昭公二十年》晏子“宰夫和之”与仲尼论宽猛",
+    "fragments": [
+      "宰夫和之．齐之以味．济其不及．以泄其过．",
+      "政宽则民慢．慢则纠之以猛．猛则民残．残则施之以宽．宽以济猛．猛以济宽．政是以和．"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.AssurancePlans.Regulation.opposite_moves",
+      "Becoming.AssurancePlans.Regulation.no_merged_move",
+      "Becoming.AssurancePlans.Regulation.respond_keeps",
+      "Becoming.AssurancePlans.Regulation.kept_along",
+      "Becoming.AssurancePlans.Regulation.next_move_changes"
+    ],
+    "records": [
+      "assured-route-criterion"
+    ],
+    "relational": "A range is kept by moves in opposite directions at its two ends (济其不及，以泄其过); the regulator reads the regulated (民) and alternates. The people are the regulated stock, not members of the reading.",
+    "reading": "AI 读法：在调节模型中：区间两端需要相反的动作（Regulation.opposite_moves）；经把两端合并的读法所选的任何一个动作都不能两端兼保（no_merged_move）；响应保持区间（respond_keeps），沿任意长的路线保持（kept_along）；一次成功的动作不会两次成功，响应改变它（next_move_changes）。“济其不及，以泄其过”“宽以济猛，猛以济宽”是这一结构。范围与分歧：这是两档玩具模型、即时响应；“政宽则民慢，慢则纠之以猛，猛则民残”描述的是迟到的读法造成两端越界的往复，模型没有覆盖（见缺口）。仲尼此语以民为被调节之量、以猛为手段，是治理框架，律不采纳。",
+    "reading_en": "Agreement in the toy model: a band needs opposite moves at its two ends, no move chosen through a reading that merges the ends keeps both, and the successful move must change; the passage's overshoot from a late reading (宽→慢→猛→残) is beyond the model, and its frame governs the people as a regulated stock.",
+    "gap": {
+      "statement": "Regulation with a late reading. On natural-number levels, let the rest move the level by at most d per step in either direction, and let a policy add or remove up to m ≥ d per step while reading the level ℓ steps late. Prove: (i) there is an exact least width W(d, m, ℓ), nondecreasing in ℓ and growing with ℓ·d, such that some such policy keeps the band [a, b] from every level in it exactly where b − a ≥ W(d, m, ℓ); (ii) every policy that reads the level through a lumping merging a level within W(d, m, ℓ)/2 of a with one within W(d, m, ℓ)/2 of b leaves the band from some start (the general form of Regulation.no_merged_move); (iii) with no drift, the policy that adds m while its ℓ-late reading is below a, removes m while it is above b and otherwise rests, leaves the band at both ends infinitely often from some start outside it exactly where ℓ·m exceeds a threshold fixed by b − a (the proof states it), and settles inside where it does not (the 宽→慢→猛→残 alternation as overshoot of a late response).",
+      "nearest": [
+        "Becoming.AssurancePlans.Regulation.opposite_moves",
+        "Becoming.AssurancePlans.Regulation.no_merged_move",
+        "Becoming.AssurancePlans.Regulation.next_move_changes",
+        "Becoming.Viability.kernel_and_iff",
+        "Becoming.Tolerance.restores_iff"
+      ],
+      "why_it_matters": "The 和 passages (济其不及以泄其过, 宽以济猛, and 中庸's 发而皆中节) state a range kept by opposite moves, and 宽猛 states the overshoot of a late response. The spine has this only as a two-level toy with an instant response. A general law would say when keeping a range needs a margin that grows with the lateness of the reading, which bears on every regulation that reads its object late, including oversight of fast-changing systems."
+    }
+  },
+  {
+    "id": "shuowen-de-wai-nei",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/10",
+    "locator": "《说文解字》卷十下 心部 悳（页面作悳）",
+    "fragments": [
+      "外得於人，内得於己也。从直从心。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.withinResponse_iff_coupling",
+      "Becoming.Loop.response_returns",
+      "Becoming.Web.selects_alike_iff",
+      "Becoming.Clearing.pool_closes_gap",
+      "Becoming.Flow.not_differs_beyond_response"
+    ],
+    "records": [
+      "comparison-where-the-rest-responds",
+      "selection-through-registration",
+      "the-gap-for-ones-own-act"
+    ],
+    "relational": "悳 is glossed by two sides of one relation: what is gained in relation to others (外得於人) and what is held in oneself (内得於己).",
+    "reading": "AI 读法：可响应范围是耦合闭包的对偶：g 在部分的可响应范围内，恰当某一成员在 g 的耦合闭包内（Flow.withinResponse_iff_coupling）；响应经行者的耦合闭包返回（Loop.response_returns）；选择恰达及耦合入者（Web.selects_alike_iff）。“外得於人”是他者的响应，“内得於己”是己之耦合，律给出两者恰为一关系的两面。范围：说文另有“德，升也”（彳部），此训属悳字；“得”的内容（何者为得）不由律给出。atlas 中韩非“庆赏之谓德”把德读作君主的赏柄，是相反的一线，此处不展开。",
+    "reading_en": "Scope: the gloss's outer gain from others and inner hold in oneself match the duality of responsive reach and coupling closure, two sides of one relation; what counts as gained is not given by the law.",
+    "gap": null
+  },
+  {
+    "id": "lunyu-shu-ji-suo-bu-yu",
+    "tradition": "论语",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0099-S001",
+      "KR1002"
+    ],
+    "source_id": "R01",
+    "text_path": "evidence/texts/R01.txt",
+    "locator": "《论语·卫灵公》十五之二四",
+    "fragments": [
+      "其恕乎！己所不欲，勿施于人。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Learning.selects_right_through",
+      "Becoming.Learning.selects_through_lumping",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Learning.values_right_lumped",
+      "Becoming.References.stays_iff"
+    ],
+    "records": [
+      "selection-through-a-model-of-the-options",
+      "consequence-revised-reference-plan"
+    ],
+    "relational": "恕 selects what to do to another through one's own case: the other's good is read through the lumping of one's own wants.",
+    "reading": "AI 读法：经映射的选择只在要紧之事于该映射的归并上一致之处对（Learning.selects_right_through）；经映射的选择就是经其归并的选择（selects_through_lumping）；映射归并在一起的两者，若要紧之事一真一假，任何经它的选择都分不开（selects_not_right_of_parted）。恕以“己所不欲”为映射为他者择：恰在他者之所欲不欲于此归并上与己一致之处对，在他者与己不同之处必误。律给出恕的确切范围，取代 COGNITION-LI 研究中手证的 ε 界。字形一层：说文“恕，仁也。从心如聲”，如为声符；“如心为恕”是后起的语义再读（出处未定），见声符漂移条目。",
+    "reading_en": "Scope: 恕 selects for another through one's own wants, and a selection through a map is right about what matters exactly where what matters goes alike across the map's lumping, so 恕 is right where the other's wants agree with one's own and cannot be right where they differ; this supersedes the earlier hand-proved bound.",
+    "gap": null
+  },
+  {
+    "id": "jinsilu-zhong-yi-ting",
+    "tradition": "近思录（程颐）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0003-S003",
+      "K0029",
+      "KR6090"
+    ],
+    "source_id": "S06",
+    "text_path": "evidence/texts/S06.txt",
+    "locator": "《近思录》卷一（程颐语，第29–30条前后）",
+    "fragments": [
+      "且试言一厅，则中央为中。一家则厅中非中而堂为中。言一国则堂非中而国之中为中。",
+      "如“三过其门不入”在禹稷之世为中，若“居陋巷”则非中也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Boundary",
+      "Becoming.SuperTrue",
+      "Becoming.SubTrue",
+      "Becoming.superTrue_iff",
+      "Becoming.boundaryInvariant_iff_determinate",
+      "Becoming.Contextual.indexed_fits"
+    ],
+    "records": [
+      "presupposition-scopes",
+      "unity-of-readings"
+    ],
+    "relational": "中 is a relation of a place to the boundary drawn (hall, house, state) and of an act to its time (禹稷 versus 颜子): the same spot or act is 中 under one boundary and not under another.",
+    "reading": "AI 读法：一个关于自身的断言依边界如何划定而定：边界是含 f 并对关系封闭的区域（Boundary）；超真是无论如何划定都成立（SuperTrue），次真是在某一可容许划定下成立（SubTrue）；有可容许边界时，超真即不变的次真（superTrue_iff）；不变性即确定性（boundaryInvariant_iff_determinate）。程颐指出“中”对厅、家、国的划定不变式不成立，是次真而非超真；禹稷与颜子之例把边界换成时势。按语境标注的框架容纳全部（Contextual.indexed_fits）。结构相合。",
+    "reading_en": "Agreement: 中 holds as the boundary is drawn at one region and not at another, so it is sub-true and not boundary-invariant, exactly the spine's distinction; the 禹稷/颜子 case indexes it by time.",
+    "gap": null
+  },
+  {
+    "id": "jinsilu-zhong-tian-ran",
+    "tradition": "近思录（程颐）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0003-S003"
+    ],
+    "source_id": "S06",
+    "text_path": "evidence/texts/S06.txt",
+    "locator": "《近思录》卷一（程颐语）",
+    "fragments": [
+      "识得则事事物物上皆天然有个中在那上，不待人安排也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.boundaryInvariant_iff_determinate",
+      "Becoming.superTrue_iff",
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.Contextual.glues_iff_agree"
+    ],
+    "records": [
+      "presupposition-scopes",
+      "derived-extent-limits",
+      "unity-of-readings"
+    ],
+    "relational": "Right after making 中 relative to the boundary, the text says every thing has a 中 by nature (天然), not arranged by people: a pre-given standard in each thing.",
+    "reading": "AI 读法：此为分歧，或至少是张力。前一条已表明“中”随边界与时势而变；此句却说每一事物上天然有一个中，不待安排。若读作“中由情境的关系定下，不由人任意安排”，则与理论相合；但在理学语境中“天然”指天理先在于物，是每物先有之准，理论不承认这样的先在标准：不变式断言恰是确定的（boundaryInvariant_iff_determinate），而“中”已被表明不是不变式；语境只在相遇处一致时才粘合为无语境读法（Contextual.glues_iff_agree）。两种读法都标为 AI 读法，不强合。",
+    "reading_en": "Divergence: having shown 中 to be relative to the boundary and the time, the text asserts a 中 present by nature in every thing; read as a pre-given standard (天理), this conflicts with the spine, where a claim that changes with the boundary is not determinate and contexts that disagree do not glue.",
+    "gap": null
+  },
+  {
+    "id": "sunzi-yong-jian",
+    "tradition": "兵家（孙子）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0418",
+      "E7011",
+      "KR7027",
+      "C0287-S001",
+      "C0103-S005"
+    ],
+    "source_id": "IS18",
+    "text_path": "evidence/texts/IS18.txt",
+    "locator": "《孙子兵法·用间第十三》",
+    "fragments": [
+      "先知者，不可取于鬼神，不可象于事，不可验于度，必取于人，知敌之情者也。",
+      "生间者，反报也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.ExchangeLaw.Through.alike_off_downstream",
+      "Becoming.apart_only_downstream",
+      "Becoming.conveyed_upstream",
+      "Becoming.route_forms_by_closing",
+      "Becoming.Flow.unselected_beyond_coupling"
+    ],
+    "records": [
+      "observation-is-a-route",
+      "selection-through-registration"
+    ],
+    "relational": "Knowledge of the other comes only through persons who stand in relation to the other (间, the one in the gap between), and a living go-between must return to report.",
+    "reading": "AI 读法：观察只经路线（ExchangeLaw.Through.alike_off_downstream）；只在下游才分开（apart_only_downstream）；差只向下游传（conveyed_upstream）；形成的路线经过在其形成之步作用的耦合（route_forms_by_closing）；在耦合闭包之外选择是盲的（Flow.unselected_beyond_coupling）。“不可取于鬼神，不可象于事，不可验于度”即没有路线就没有读法；“必取于人”是经耦合形成体的路线；“生间反报”是路线必须回到读者。说文“閒，隟也。从門从月”：门缝透月光，间的字形本身是一条穿过缝隙的通路。范围：孙子的框架是知敌以胜，律无此框架。",
+    "reading_en": "Agreement: observation goes only by a route, apart only downstream, and selection is blind beyond the coupling closure; 必取于人 is a route through a coupled formation and 生间反报 is the route returning, within a frame of winning that the law does not carry.",
+    "gap": null
+  },
+  {
+    "id": "xunzi-hua-yi-shi",
+    "tradition": "荀子",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0073-S002",
+      "KR1108"
+    ],
+    "source_id": "IS05",
+    "text_path": "evidence/texts/IS05.txt",
+    "locator": "《荀子·正名》",
+    "fragments": [
+      "状同而为异所者，虽可合，谓之二实。",
+      "状变而实无别而为异者，谓之化。",
+      "有化而无别，谓之一实。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.World.fixed_iff",
+      "Becoming.World.balanced_reidentify_iff",
+      "Becoming.Web.no_join",
+      "Becoming.Twins.naming_not_identifiesAlike",
+      "Becoming.Twins.left_alike_right",
+      "Becoming.identifiesAlike_iff"
+    ],
+    "records": [
+      "identity-across-steps",
+      "configurations-alike-by-relation"
+    ],
+    "relational": "Things are counted by relation: same appearance in different places is two (所 is a relation); changed appearance without separation is one thing changing (化).",
+    "reading": "AI 读法：“二实”以“所”计数，所是关系：一个描述有意义，恰当它等同关系相同者、并等同凡相同者（identifiesAlike_iff）；把在每一关系上都相同的两者分开命名没有意义（Twins.naming_not_identifiesAlike、left_alike_right），而处所不同即关系不同，故为二。“化”是跨步的同一：在平衡世界中，守恒在一步上固定一关系项的同一，恰当此步之后没有其他关系项与它所处相同（World.fixed_iff）；使世界平衡的命名恰是守恒内的一一延续（balanced_reidentify_iff）。范围：荀子未说“实无别”由何判定，律说由谁延续谁判定。说文“化，教行也”是另一义，见下。",
+    "reading_en": "Agreement: 荀子 counts 实 by relation (different 所 makes two; naming apart what is alike in every relation makes no sense), and 化 is identity across a step, which conservation fixes exactly where nothing else stands after the step as the relatum does.",
+    "gap": null
+  },
+  {
+    "id": "xunzi-tong-ze-tong-zhi",
+    "tradition": "荀子",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0051-S003",
+      "E0149",
+      "KR1109"
+    ],
+    "source_id": "IS05",
+    "text_path": "evidence/texts/IS05.txt",
+    "locator": "《荀子·正名》",
+    "fragments": [
+      "然后随而命之，同则同之，异则异之。",
+      "犹使同实者莫不同名也。",
+      "名无固宜，约之以命，约定俗成谓之宜，异于约则谓之不宜。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.IdentifiesAlike",
+      "Becoming.identifiesAlike_iff",
+      "Becoming.IdentifiesAlike.unique",
+      "Becoming.identifiesAlike_id_iff",
+      "Becoming.CodeAcquisition.renaming_keeps_values",
+      "Becoming.References.stays_iff"
+    ],
+    "records": [
+      "configurations-alike-by-relation",
+      "the-split-that-makes-sense"
+    ],
+    "relational": "Names follow likeness of relation (同则同之，异则异之); which sign is used is free (名无固宜) and becomes fitting by agreement taken up in practice among users (约定俗成).",
+    "reading": "AI 读法：描述有意义恰当它等同相同者、且只等同相同者（identifiesAlike_iff）——“同则同之，异则异之”；有意义的描述等同同样的配置（IdentifiesAlike.unique）——“同实者莫不同名”；对配置直接命名有意义，恰当相同的配置是一个（identifiesAlike_id_iff）。“名无固宜”：原子与编码一起改名，每个值都不变（CodeAcquisition.renaming_keeps_values），哪一个名不由所名者决定。“约定俗成”是编码在使用者之间形成并保持；脊柱只有单向取得（给定编码、教师）与已装入编码在信道变化下的保持（References.stays_iff），没有编码在使用者关系中形成的律（见缺口）。结构相合，缺约定一环。",
+    "reading_en": "Agreement: naming makes sense exactly where it identifies what relates alike and only that, and renaming signs with the code keeps every value (名无固宜); what the spine lacks is the code formed between users (约定俗成).",
+    "gap": {
+      "statement": "A code formed between formations (约定俗成). Let formations f and g exchange along a run, each holding a code c_f(t), c_g(t) : M → F from a listed finite set of meanings M to forms F. At each step each sends, for the meanings in use, the form its code gives; a formation adopts the form it receives for m where its own differs and a supplied rule reading only the received forms and the two codes says so. Prove on the base: (i) agreement is kept: where c_f(t) m = c_g(t) m, they agree at m at every later step; (ii) a difference f sends by the form for m is read by g, through the inverse of c_g(t), as m exactly where c_f(t) and c_g(t) agree at m (the cross-formation form of References.stays_iff); (iii) no form is privileged: for every bijection σ of F, the course from σ ∘ c_f(0), σ ∘ c_g(0) is σ composed with the course from c_f(0), c_g(0) (the course form of CodeAcquisition.renaming_keeps_values); (iv) the agreed code is fixed by the starts and the order of exchange, not by M: two starts differing by a σ that moves some used form reach different agreed codes; (v) the imposed case: replacing every formation's code by one code c* makes them agree at every m and loses, for each formation, exactly the separations its own code made that c* merges (Law.Merges.loses read on codes).",
+      "nearest": [
+        "Becoming.References.stays_iff",
+        "Becoming.ContactCourses.run_stays_iff",
+        "Becoming.CodeAcquisition.renaming_keeps_values",
+        "Becoming.ResponseLearning.reconstructs_program",
+        "Becoming.ResponseLearning.learn_through_interface",
+        "Becoming.Segmentation.bond_unique",
+        "Becoming.identifiesAlike_id_iff",
+        "Becoming.Law.Merges.loses"
+      ],
+      "why_it_matters": "A sign system's meaning is a relation kept among its users: 名无固宜，约定俗成谓之宜, and 書同文 is its imposed counterpart. The spine has acquisition from a supplied code or a teacher (CodeAcquisition, ResponseLearning, LearnedGrouping) and the persistence of an installed encoding (References), but no law in which the code forms within the relation of those who use it. Without it, the script, names and the theory's own controlled vocabulary are treated as supplied rather than formed, which is the independent-entity framing the method asks to avoid."
+    }
+  },
+  {
+    "id": "liushao-jie-shi",
+    "tradition": "人物志（刘劭）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0247-S003",
+      "E0439",
+      "C0031-S003",
+      "C0300-S001",
+      "KR7040",
+      "KR7041"
+    ],
+    "source_id": "XS07",
+    "text_path": "evidence/texts/XS07.txt",
+    "locator": "刘劭《人物志·接识》",
+    "fragments": [
+      "能识同体之善，而或失异量之美。",
+      "法制之人，以分数为度，故能识较方直之量，而不贵变化之术。",
+      "取同体也，则接论而相得；取异体也，虽历久而不知。",
+      "一流之人，能识一流之善。二流之人，能识二流之美。尽有诸流，则亦能兼达众材。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.SelectsThrough",
+      "Becoming.Web.selects_alike_iff",
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.withinClosureOf_iff",
+      "Becoming.Web.separates_all_iff_member",
+      "Becoming.Web.selects_alike_all_iff"
+    ],
+    "records": [
+      "selection-through-registration",
+      "what-pooled-coupling-reaches",
+      "selection-through-a-model-of-the-options"
+    ],
+    "relational": "Recognizing another's worth goes through one's own kind of capacity: each 流 recognizes its own 流 and misses others; holding all 流 reaches all. Recognition is a relation between the recognizer's makeup and the recognized.",
+    "reading": "AI 读法：这是本切片最强的对应。选择恰达及耦合入者：两条历史被经 g 之耦合的每一选择同样选中，恰当它们经 g 之耦合无别（Web.selects_alike_iff）；在耦合闭包之外选择是盲的（Flow.unselected_beyond_coupling），所以“取异体也，虽历久而不知”：时间不补耦合。“法制之人以分数为度……不贵变化之术”：映射归并在一起的，任何经它的选择都分不开（Learning.selects_not_right_of_parted）。“兼达”：一群体的闭包是成员闭包之并（withinClosureOf_iff），合并者分开恰是某一成员分开者（separates_all_iff_member），合并的选择恰达及耦合入合并者的（selects_alike_all_iff）。刘劭的“识”与理论所读之“识”（自身历程经其耦合所成之归并）结构平行，但不等同；刘劭用于品鉴人材，框架是选官。",
+    "reading_en": "Agreement, the slice's strongest: recognition reaches exactly what couples into the recognizer and is blind beyond the coupling closure however long (历久而不知), a lumping by measure cannot separate what it merges, and holding all kinds reaches the union of their closures (兼达众材).",
+    "gap": null
+  },
+  {
+    "id": "shuowen-shi-chang-zhi",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/03",
+    "locator": "《说文解字》卷三上 言部 識",
+    "fragments": [
+      "常也。一曰知也。从言戠聲。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.SelectsThrough",
+      "Becoming.Web.selects_alike_iff",
+      "Becoming.Learning.selects_through_lumping",
+      "Becoming.Law.present_forgets",
+      "Becoming.ResponseLearning.every_generation_holds"
+    ],
+    "records": [
+      "selection-through-registration",
+      "recurrence-without-premise"
+    ],
+    "relational": "The graph's glosses give 識 as marking or keeping (常, read by commentators variously) and as knowing: a relation between a mark and what it keeps.",
+    "reading": "AI 读法：说文给识两义：常（注家异读，有记识之义）与知。命名研究在 18 日把“记录”“登记”之义从识移出（改为前段、耦合入），识只留给派生结构：形成体自身的后续历程经其自身耦合所成之归并而走（Web.SelectsThrough、selects_alike_iff、Learning.selects_through_lumping）。说文之“常/记”义对应的是有限现在遗忘而须保留前段（Law.present_forgets）与代代持有（ResponseLearning.every_generation_holds），而不是派生结构。这里检查的结论是：当前读法是理论的约定、AI 标注，字书不单独支持它，亦不排除它（“一曰知也”与之相近）。",
+    "reading_en": "Scope: the dictionary gives 識 as marking or keeping and as knowing; the current term keeps 識 only for the derived structure (a formation's course factoring through its own couplings' lumping), which the gloss neither singles out nor excludes, so the reading stays the theory's, labelled as the AI's.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-ming-zhao",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/07",
+    "locator": "《说文解字》卷七上 朙部 朙",
+    "fragments": [
+      "照也。从月从囧。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.observed_raise_couples",
+      "Becoming.Web.alikeThrough_raise",
+      "Becoming.ExchangeLaw.Through.alike_off_downstream",
+      "Becoming.Web.selects_alike_all_iff",
+      "Becoming.conveyed_upstream"
+    ],
+    "records": [
+      "wisdom-root-part-one",
+      "observation-is-a-route",
+      "what-pooled-coupling-reaches"
+    ],
+    "relational": "The graph shows moonlight entering through a window (囧): brightness as what reaches inside through an opening, a relation of passage, not a state of the room.",
+    "reading": "AI 读法：朙从月从囧，月光经窗入室。经水平耦合，任何正的抬升在每一步把网分开（Web.observed_raise_couples）；不耦合的存量在断点前的抬升不传到（alikeThrough_raise）；观察只经路线（ExchangeLaw.Through.alike_off_downstream）。理论所读的“明”（AI 读法）是看见自己所经的耦合，是关系而非状态；字形中的“照”同样是经开口的通过关系。范围：字形不提供“看见自己所经之耦合”的反身一面，那是理论的读法；“明王”等称号义与此无关。",
+    "reading_en": "Scope: the graph pictures light reaching inside through an opening, a relation of passage that matches the spine's laws of what passes through coupling; the reflexive side of the theory's 明 (seeing the coupling one acts through) is the theory's reading, not the graph's.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-ming-zi-ming",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/02",
+    "locator": "《说文解字》卷二上 口部 名",
+    "fragments": [
+      "自命也。从口从夕。夕者，冥也。冥不相見，故以口自名。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.route_forms_by_closing",
+      "Becoming.ExchangeLaw.Through.alike_off_downstream",
+      "Becoming.apart_only_downstream",
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.identifiesAlike_iff"
+    ],
+    "records": [
+      "observation-is-a-route",
+      "configurations-alike-by-relation"
+    ],
+    "relational": "A name arises between two who cannot see each other: where the route of sight is closed, the voice forms another route by which one makes oneself known.",
+    "reading": "AI 读法：观察只经路线（ExchangeLaw.Through.alike_off_downstream），只在下游分开（apart_only_downstream），耦合闭包之外不被选中（Flow.unselected_beyond_coupling）；形成的路线经过在其形成之步作用的耦合（route_forms_by_closing）。“冥不相見”是视觉路线不通，“以口自名”是另形成一条声音路线让对方分开自己。名由此是关系中形成的辨认，不是物上本有的标签；有意义的名等同关系相同者（identifiesAlike_iff）。没有断言：许慎对口夕的分析是汉代说解，古文字学未必同意。",
+    "reading_en": "Agreement: observation goes only by a route, so where sight cannot reach a name is a route formed by voice through which one is told apart; the name is a formed relation, not a label on a thing. The graph analysis is Xu Shen's.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-sheng-jin",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/06",
+    "locator": "《说文解字》卷六下 生部 生",
+    "fragments": [
+      "進也。象艸木生出土上。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.BalancesOn.comesToStand_iff",
+      "Becoming.Flow.BalancesOn.arises_given",
+      "Becoming.Web.Embodied.arises_given",
+      "Becoming.Web.Embodied.replenishes",
+      "Becoming.Web.Widens"
+    ],
+    "records": [
+      "laws-of-one-step",
+      "generation-is-replenishment",
+      "life-as-condition-of-life"
+    ],
+    "relational": "The graph shows a plant coming out above the ground: arising as a coming-through from what it grows from.",
+    "reading": "AI 读法：在一关系项上平衡时，它跨步立起，恰当它原先立于无、且所得多于所出（Flow.BalancesOn.comesToStand_iff）；生起需要活动的给予者（BalancesOn.arises_given、Web.Embodied.arises_given）；一个具身成员的生起补充其族（Embodied.replenishes）。“象艸木生出土上”把生画成从所生之地出来，与“生起由参与者给予”相合。范围：字义“進”只是生起与前进，不含“生生”；生生（读法 D1：生成生成着生成）及其方向由“拓宽”比较（Web.Widens），是理论之义，非字义；生成与衰败不相交，“进”不等于任何新组织。",
+    "reading_en": "Scope: the graph's coming out of the ground matches arising given by what takes part and coming to stand where given more than taken; the gloss 進 does not carry 生生, whose direction the theory compares by widening.",
+    "gap": null
+  },
+  {
+    "id": "guoxiang-zi-sheng",
+    "tradition": "郭象《庄子注》（注，非庄子正文）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0153-S004",
+      "KR2080",
+      "C0297-S001",
+      "E0436",
+      "KR2081"
+    ],
+    "source_id": "XS04",
+    "text_path": "evidence/texts/XS04.txt",
+    "locator": "郭象《齐物论》注（“大块噫气”“罔两问景”注）",
+    "fragments": [
+      "物之生也莫不块然而自生",
+      "我既不能生物物亦不能生我则我自然矣",
+      "故彼我相因形景俱生虽复玄合而非待也"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Flow.BalancesOn.arises_given",
+      "Becoming.Web.Embodied.arises_given",
+      "Becoming.Flow.rise_given",
+      "Becoming.Flow.whole_rise_from_rest",
+      "Becoming.Clearing.center_not_derived"
+    ],
+    "records": [
+      "laws-of-one-step",
+      "generation-is-replenishment",
+      "where-novelty-gain-comes-from"
+    ],
+    "relational": "Guo Xiang denies that anything produces another (物亦不能生我) and denies dependence (非待) while granting that self and other arise together like form and shadow (相因、俱生、玄合). He also denies an outside maker (造化者无主).",
+    "reading": "AI 读法：此为分歧，带一处相合。相合处：郭象否认有居外的造物者（同注“造化者无主”），理论也没有外在制作者，中心不导出（Clearing.center_not_derived）。分歧处：他否认物与物之间的生与待；脊柱证明生起需要活动的给予者（Flow.BalancesOn.arises_given、Web.Embodied.arises_given），每次上升都被给予（Flow.rise_given），有限整体只从其外获得（whole_rise_from_rest）。“形景俱生……而非待”承认共生而否认依存，是理论不能接受的切分：在理论中关系只由共同作用形成，依存就是关系。此为注层（郭象），非庄子正文之义。",
+    "reading_en": "Divergence with one agreement: Guo Xiang denies an outside maker (as the spine does) but also denies that things produce or depend on one another, granting only co-arising without dependence; the spine proves arising is given by active formations and every rise is given.",
+    "gap": null
+  },
+  {
+    "id": "guoxiang-tian-zong-ming",
+    "tradition": "郭象《庄子注》（注）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0153-S004"
+    ],
+    "source_id": "XS04",
+    "text_path": "evidence/texts/XS04.txt",
+    "locator": "郭象《齐物论》注（“天籁”注）",
+    "fragments": [
+      "即众窍比竹之属接乎有生之类会而共成一天耳",
+      "故天也者万物之总名也"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Contextual.world",
+      "Becoming.whole_not_in_pairs",
+      "Becoming.separation_faithful_iff",
+      "Becoming.withinClosureOf_iff",
+      "Becoming.Clearing.center_not_derived"
+    ],
+    "records": [
+      "unity-of-readings",
+      "separation-loses-the-relation",
+      "derived-extent-limits"
+    ],
+    "relational": "Heaven is not a separate being above things: it is what all things together form by meeting (会而共成一天), and the word 天 is the collective name.",
+    "reading": "AI 读法：相合处：无独立于物之上的天，天由众物相接相会而成；一个展开的诸读法是一个世界（Contextual.world），中心不导出（center_not_derived）。范围：郭象以“总名”说天，若读作“只是总和之名”，则与理论不同：整体持有任何两两之对都不持有的关系（whole_not_in_pairs），分别描述只在各部分无关时给回整体（separation_faithful_iff）；整体不是部分之和的名称。律给出“共成一天”的确切意义：相会所成的关系属于整体。",
+    "reading_en": "Scope: heaven as what things form by meeting, not a being above them, agrees with one unfolding with no center; but 'collective name' read as a mere sum is corrected by the law that a whole holds relations no pair holds.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-dao-suo-xing",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/02",
+    "locator": "《说文解字》卷二下 辵部 道",
+    "fragments": [
+      "所行道也。从辵从𩠐。一達謂之道。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Shown",
+      "Becoming.Shown.run",
+      "Becoming.Shown.runs_of_new",
+      "Becoming.shown_determined_iff",
+      "Becoming.exists_law_iff",
+      "Becoming.Shown.agrees"
+    ],
+    "records": [
+      "process-and-frame-as-readings"
+    ],
+    "relational": "A way is what is walked: the road and the walking are not two; 一達 is a way that goes through to one place.",
+    "reading": "AI 读法：一段历史所显示的律就是它所走的步（Shown）；每段历史都是它所显示之律的一次运行，无需前提（Shown.run）；不重访配置的历史，其所显示之律只容许这段历史（runs_of_new）；所显示之律确定恰当历史一致（shown_determined_iff），某一确定律容许它亦然（exists_law_iff）；每一确定律都重复所显示者（Shown.agrees）。“所行道也”与“律即所走之步”结构相近：道不在行之外。范围：说文之道是道路之道；老子、易传之道属其他切片，不能以此等同 Shown 或任何脊柱项。",
+    "reading_en": "Scope: the road as what is walked parallels the law a history shows being the steps it takes, with every history a run of the law it shows; this is the concrete road sense only, not the 道 of the Laozi or the Yi.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-li-zhi-yu",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/01",
+    "locator": "《说文解字》卷一上 玉部 理",
+    "fragments": [
+      "治玉也。从玉，里聲。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Learning.Lumped",
+      "Becoming.Learning.goAlike_iff_lumped",
+      "Becoming.Learning.lumped_right_iff",
+      "Becoming.carries_law_iff",
+      "Becoming.Learning.selects_right_through"
+    ],
+    "records": [
+      "generalization-through-lumping",
+      "the-split-that-makes-sense",
+      "selection-through-a-model-of-the-options"
+    ],
+    "relational": "理 is working jade along its own grain: the worker's cuts follow the stone's pattern; the pattern belongs to the relation of work and material.",
+    "reading": "AI 读法：理论之“理”是结构与变化之律的建模，即一个律所一致经过的归并。结构与变化是一个归并（Learning.goAlike_iff_lumped）；转移恰在世界于归并上一致之处对（lumped_right_iff）；投影承载律，恰当在其下相同的配置走向相同（carries_law_iff）。治玉顺纹：下刀对，恰在玉沿纹理一致之处。范围：“治玉”是对材料的动作，后世引申为纹理、条理、道理；律对应的是“顺其所一致处”这一结构，而不是把字源当作理论之理的根据。庄子“依乎天理”、戴震“理也者情之不爽失也”属他切片。",
+    "reading_en": "Scope: working jade along its grain is acting where the material goes alike, which is the structure of a lumping a law goes alike across; the gloss is the act on material, later extended, and is not the warrant of the theory's 理.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-yi-san-shuo",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/09",
+    "locator": "《说文解字》卷九下 易部 易",
+    "fragments": [
+      "蜥易，蝘蜓，守宮也。象形。《祕書》說：日月爲易，象陰陽也。一曰从勿。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Contextual.indexed_fits",
+      "Becoming.Contextual.glues_iff_agree",
+      "Becoming.Contextual.fitsFree_iff",
+      "Becoming.CrossSituational.candidates_snoc_bearing",
+      "Becoming.PartialReadout.silent_sound"
+    ],
+    "records": [
+      "contextual-registration",
+      "unity-of-readings"
+    ],
+    "relational": "Three analyses of one graph are kept side by side, each with its source (象形 lizard; 祕書 sun and moon; 一曰 勿), without choosing.",
+    "reading": "AI 读法：许慎并列三说并各标来源，不合并。按语境标注的框架容纳所显示的一切（Contextual.indexed_fits）；无语境框架相合，恰当诸语境在每一配置处粘合（fitsFree_iff），粘合恰当相遇处一致（glues_iff_agree）；三说在相遇处不一致，故不能合成一个无语境读法。一条涉及该形的记录恰保留它所提供的候选（CrossSituational.candidates_snoc_bearing）；未定时沉默是可靠的（PartialReadout.silent_sound）。这正是理论要求的“读法保留标签”的方法。易传诸义已由 Y1 处理，此处只取字形层。",
+    "reading_en": "Agreement in method: the dictionary keeps three labelled analyses of one graph side by side, which is the indexed frame that fits everything shown when contexts do not glue; the Yi's own senses are handled by Y1.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-hua-jiao-xing",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/08",
+    "locator": "《说文解字》卷八上 𠤎部 化",
+    "fragments": [
+      "教行也。从𠤎从人，𠤎亦聲。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.CrossSituational.stands_iff",
+      "Becoming.CrossSituational.stands_false_iff",
+      "Becoming.World.fixed_iff",
+      "Becoming.Flow.withinResponse_iff_coupling",
+      "Becoming.identifiesAlike_id_iff"
+    ],
+    "records": [
+      "encounter-selection-and-revision",
+      "identity-across-steps",
+      "configurations-alike-by-relation"
+    ],
+    "relational": "說文's 化 is teaching taking effect in people (a relation of influence), unlike 荀子's 化 (identity kept across changed appearance); one character, two relational structures.",
+    "reading": "AI 读法：同一“化”字：说文为“教行”，是一方之教在他方生效（可响应范围与耦合闭包的对偶，Flow.withinResponse_iff_coupling）；荀子为“状变而实无别”，是跨步的同一（World.fixed_iff）。一个义项立住恰当每条涉及该形的记录都提供它（CrossSituational.stands_iff），任一记录不提供即不立（stands_false_iff）；跨这些文本，没有一个化之义立住。所以单字受控词表必须在域内规定一义，并可直接命名有意义只在相同者为一时（identifiesAlike_id_iff）。范围：这是单字词表可行性的检验，不判定哪一义“正”。",
+    "reading_en": "Scope: 化 is teaching taking effect in 說文 and identity across changed appearance in 荀子; no single sense stands across the records, so a single-character controlled term must stipulate one sense within its domain.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-yi-wei-yi",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/12",
+    "locator": "《说文解字》卷十二下 我部 義、我",
+    "fragments": [
+      "己之威儀也。從我、羊。",
+      "施身自謂也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.Renewable.kept_part_not_renewal",
+      "Becoming.Flow.act_unselected",
+      "Becoming.separation_faithful_iff"
+    ],
+    "records": [
+      "derived-extent-limits",
+      "conditions-kept-together",
+      "the-gap-for-ones-own-act"
+    ],
+    "relational": "義 is glossed as one's own dignified bearing, from 我 (the self, a graph containing 戈, which 說文 also notes as an old form of 殺); the measure is the self's display, not a relation of fitting.",
+    "reading": "AI 读法：此为分歧。说文以“己之威儀”训義，以我（自称；我字从戈，说文又记“一曰古殺字”）为部件，標准在自身之仪表。理论的评价是整体关系之变，中心不导出（Clearing.center_not_derived），一部分的保持不决定更新与对他者之作用（Renewable.kept_part_not_renewal），自身之行经自身闭包被错过（Flow.act_unselected）。中庸“义者宜也”是关系之宜，属儒家切片。另：我、義、武都含戈，字形把力量放在自身与规范的核心，这是记号层的事实，不推出伦理。",
+    "reading_en": "Divergence: 義 glossed as the self's dignified bearing, built on 我 (which contains 戈), measures by the self's display; the spine centers no formation and evaluates the whole relation's change. The graph fact that 我, 義 and 武 all contain 戈 yields no ethics.",
+    "gap": null
+  },
+  {
+    "id": "shuowen-xi-ji",
+    "tradition": "说文解字（许慎）",
+    "atlas": null,
+    "atlas_ids": [],
+    "source_id": null,
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/說文解字/12",
+    "locator": "《说文解字》卷十二下 系部 系",
+    "fragments": [
+      "繋也。从糸丿聲。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.copy_relates",
+      "Becoming.relation_persists",
+      "Becoming.forgetting_unrelates",
+      "Becoming.separation_faithful_iff",
+      "Becoming.Rectangular"
+    ],
+    "records": [
+      "separation-loses-the-relation"
+    ],
+    "relational": "系 is to tie with a cord: relation pictured as a third thing (a cord) between two.",
+    "reading": "AI 读法：系训繋，以丝绳系物，把关系画成两者之间的第三物。脊柱中关系不是另一物：整体“矩形”即各部分无关（Rectangular），分别描述恰在矩形处给回整体（separation_faithful_iff）；关系由共同作用形成（copy_relates），在各自无损的律下持续（relation_persists），由遗忘一部分而解除（forgetting_unrelates）。律修正“系”的图像：关系是整体不可分解的方式，不是连接两物的绳。早先 jian 研究以“間→系→一”为原语，已由 World/Flow/Web 与“配置由它怎样关系而定”的记录取代。",
+    "reading_en": "Scope: 系 pictures relation as a cord, a third thing between two; in the spine a relation is the whole's failure to be rectangular, formed by joint action and lasting under separate lossless laws, not an added entity.",
+    "gap": null
+  }
+]

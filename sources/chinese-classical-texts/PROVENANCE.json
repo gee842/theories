@@ -1,0 +1,1252 @@
+{
+ "atlases": [
+  {
+   "id": "yidao-v1.3",
+   "title": "周易易传与道德经体系图 v1.3.0",
+   "zip_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/周易易传与道德经体系图-v1.3.0.zip",
+   "zip_sha256": "4ddc4adb2bb3ed14da4191ef6d81120e836f24a6c3dc4ad48bd09207cfde0413",
+   "zip_bytes": 23410000,
+   "prefix": "yi-dao-system-v1.3/"
+  },
+  {
+   "id": "atlas-v9.1",
+   "title": "观其会通 · 中国传统思想研究图谱 v9.1.0",
+   "zip_path": "/Users/ren/Documents/Codex/2026-10-13/referenced-chatgpt-conversation-this-is-an/outputs/chinese-thought-atlas-v9.1.zip",
+   "zip_sha256": "bb2929d2e179f6d9dbbc8b4c43f13a9d4be92323c860fe246942b93dc4555f2b",
+   "zip_bytes": 78036347,
+   "prefix": "chinese-thought-atlas-v9.1/"
+  }
+ ],
+ "files": [
+  {
+   "file": "atlas-v9.1/evidence/texts/BS01.txt",
+   "sha256": "da60c6b5b16d1a893e68a4d4eafeae8963c994362615d269f7b02c5b6c1df221",
+   "bytes": 1758395,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/BS01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "BS01",
+    "title": "雜阿含經（T0099，50卷）",
+    "url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/master/T/T02/T02n0099.xml",
+    "edition_note": "CBETA 官方 xml-p5 数字校订文本，基础为《大正新修大藏经》；本文引用正文并保留繁体，非手稿影像核对。GitHub master 可更新，本次已保存 XML 与提取正文快照。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/DS05.txt",
+   "sha256": "3c501460d500817610214dd3d1afc0baba6d0aef3349e15daf603a7811efa16c",
+   "bytes": 11675,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/DS05.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "DS05",
+    "title": "莊子/齊物論",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%8E%8A%E5%AD%90/%E9%BD%8A%E7%89%A9%E8%AB%96",
+    "edition_note": "维基文库公开转录本，简体转换页；提供可访问原文，不冒称权威校勘定本。原页面繁简、标点及异文提示按引文保留。页面传统作者题署不当作成书史结论。引文以主文为准，删除夹注；节引句末标点可调整，异文另注。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/DS06.txt",
+   "sha256": "e034ef524361a4d2c6e89f5d2313ec01e4066eb9657375f07111b23c0d29c47d",
+   "bytes": 2324,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/DS06.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "DS06",
+    "title": "莊子/養生主",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%8E%8A%E5%AD%90/%E9%A4%8A%E7%94%9F%E4%B8%BB",
+    "edition_note": "维基文库公开转录本，简体转换页；提供可访问原文，不冒称权威校勘定本。原页面繁简、标点及异文提示按引文保留。页面传统作者题署不当作成书史结论。引文以主文为准，删除夹注；节引句末标点可调整，异文另注。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/HS03.txt",
+   "sha256": "57db3fcaadaa72eabfd619de06b4801b584a599f37e0371cc5502bb1333c5ee6",
+   "bytes": 161295,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/HS03.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "HS03",
+    "title": "中论",
+    "url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/master/T/T30/T30n1564.xml",
+    "edition_note": "CBETA 官方 xml-p5 数字文本（大正藏经号 T30n1564），保留传统字形；正文及 TEI 原文件缓存供复核。在线阅读：https://cbetaonline.dila.edu.tw/zh/T30n1564_001 。引文仅核对本次所用片段，未作梵汉对勘。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/HS08.txt",
+   "sha256": "7195bb7722876b7526125cd4c49e11c4f1f6fc0b905e07bab8a54717ee7753b0",
+   "bytes": 99795,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/HS08.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "HS08",
+    "title": "六祖大师法宝坛经（宗宝本）",
+    "url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/master/T/T48/T48n2008.xml",
+    "edition_note": "CBETA 官方 xml-p5 数字文本（大正藏经号 T48n2008），保留传统字形；正文及 TEI 原文件缓存供复核。在线阅读：https://cbetaonline.dila.edu.tw/zh/T48n2008_001 。引文仅核对本次所用片段，未作梵汉对勘。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS01.txt",
+   "sha256": "f35e2f065bfb9ea9b8b0cb18c3e215a90e902368af47bbda391d759813d63d34",
+   "bytes": 14728,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS01",
+    "title": "荀子/王制篇",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%8D%80%E5%AD%90/%E7%8E%8B%E5%88%B6%E7%AF%87",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS03.txt",
+   "sha256": "ca73e9e2565c12d5741951ecd6b910eb30ae65d0857abc7b2d303c7b247b1cfe",
+   "bytes": 15061,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS03.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS03",
+    "title": "荀子/礼論篇",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%8D%80%E5%AD%90/%E7%A6%AE%E8%AB%96%E7%AF%87",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS05.txt",
+   "sha256": "d5010f6b43861156c7993c26250e067439b4e4680a79c733049d9ae6f6ff20e9",
+   "bytes": 10486,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS05.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS05",
+    "title": "荀子/正名篇",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%8D%80%E5%AD%90/%E6%AD%A3%E5%90%8D%E7%AF%87",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS06.txt",
+   "sha256": "e1cb1a75921790a7736faf0c7574e4edd0813bdd2cdfa0d907adad6d6ca71398",
+   "bytes": 21424,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS06.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS06",
+    "title": "荀子/性惡篇",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%8D%80%E5%AD%90/%E6%80%A7%E6%83%A1%E7%AF%87",
+    "edition_note": "维基文库公开传世文本，正文夹有唐杨倞注及后人引文；本组只引正文，不把夹注当作荀子原文。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS07.txt",
+   "sha256": "2cbb861c741220e0008ea813ca6d62d70c44743238fdbd6fdb37bc3fcc3b4715",
+   "bytes": 6538,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS07.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS07",
+    "title": "荀子/天論篇",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%8D%80%E5%AD%90/%E5%A4%A9%E8%AB%96%E7%AF%87",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS09.txt",
+   "sha256": "30df7453603b5aa31d8aff6d072a5582a92b464f241f8a51998163e534de3644",
+   "bytes": 3234,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS09.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS09",
+    "title": "韩非子/二柄",
+    "url": "https://zh.wikisource.org/zh-hans/%E9%9F%93%E9%9D%9E%E5%AD%90/%E4%BA%8C%E6%9F%84",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS13.txt",
+   "sha256": "bd881e23615b2c8e7098c7058ee3c1fea5b64961aaf2ade38c1c69509a87a423",
+   "bytes": 9770,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS13.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS13",
+    "title": "墨子/兼愛下",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E5%85%BC%E6%84%9B%E4%B8%8B",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS15.txt",
+   "sha256": "18d6d5b85efecdc8316fc49406e54fc7d724ba396769ab1a20f4c5c76fb14458",
+   "bytes": 2911,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS15.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS15",
+    "title": "墨子/尚同上",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E5%B0%9A%E5%90%8C%E4%B8%8A",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS16.txt",
+   "sha256": "b909c1e20d52364ebdcac07fbfb8d88324b5adc48db4ebe8b98b0cc062f4311b",
+   "bytes": 2383,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS16.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS16",
+    "title": "墨子/经上",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E7%B6%93%E4%B8%8A",
+    "edition_note": "维基文库公开文本；《墨经》多讹脱，断句及个别字训争议较大；只用相对可辨的句段，释义仍须对校学术注本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS17.txt",
+   "sha256": "3afcc7731366cfe821ff24e9fbfd54e94d3e8731934a5e42ae21b8cb247936e1",
+   "bytes": 3607,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS17.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS17",
+    "title": "墨子/小取",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E5%B0%8F%E5%8F%96",
+    "edition_note": "维基文库公开传世文本；非权威校勘定本；采用页面简体转换字形，标点为整理者所加。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS18.txt",
+   "sha256": "6a52f042110382f59e7a4fd0d57eefd7e245a4d1aa68e589f5b32e08a5198518",
+   "bytes": 31172,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS18.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS18",
+    "title": "孫子兵法",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%AD%AB%E5%AD%90%E5%85%B5%E6%B3%95",
+    "edition_note": "维基文库传世《孙子兵法》，页面兼收附录；本组只引用十三篇正文，不引用后附佚文。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS21.txt",
+   "sha256": "92bc3b8c44cf1199ea291ea61109ce578e2c568870b4156e1c64da0e96b06bcc",
+   "bytes": 6212,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS21.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS21",
+    "title": "公孫龍子/2",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%85%AC%E5%AD%AB%E9%BE%8D%E5%AD%90/2",
+    "edition_note": "维基文库《白马论》正文夹宋谢希深注；本组引号内仅取正文，夹注中的政治寓意不视为原作者本义。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/IS22.txt",
+   "sha256": "11672a9c55f74925df8ecab7491e8cf05c8448c9c1a7a24ee010d3549d9a1bf4",
+   "bytes": 7873,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/IS22.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "IS22",
+    "title": "公孫龍子/5",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%85%AC%E5%AD%AB%E9%BE%8D%E5%AD%90/5",
+    "edition_note": "维基文库《坚白论》正文夹宋谢希深注；只引正文，保留论辩与文本解释争议。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/LS07.txt",
+   "sha256": "a3173ec49784ac3f453e6bd6e2a481fe15ba33d31fff5cee8b0b4433707d71d4",
+   "bytes": 13528,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/LS07.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "LS07",
+    "title": "《商君书》卷四",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%95%86%E5%90%9B%E6%9B%B8/%E5%8D%B7%E5%9B%9B",
+    "edition_note": "维基文库公开转录、简体转换页面；不是本项目重新校勘的学术定本。保留所见字词，异文及句读需据专业校本再审。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/LS08.txt",
+   "sha256": "ce9e79689766d0c98286f7c5de2f3762189342c0d46539cba8684ae652332a6b",
+   "bytes": 18111,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/LS08.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "LS08",
+    "title": "《商君书》卷五",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%95%86%E5%90%9B%E6%9B%B8/%E5%8D%B7%E4%BA%94",
+    "edition_note": "维基文库公开转录、简体转换页面；不是本项目重新校勘的学术定本。保留所见字词，异文及句读需据专业校本再审。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/MS02.txt",
+   "sha256": "f79070ff73f1ca98991ec967f269e05eddc7aee2a9b2283dc6ee427ec900241d",
+   "bytes": 5092,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/MS02.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "MS02",
+    "title": "墨子·天志上",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E5%A4%A9%E5%BF%97%E4%B8%8A",
+    "edition_note": "维基文库 /zh-hans/ 公开电子文本；繁简自动转换，非本项目完成的学术校勘本。墨辩六篇存在脱误、异读和断句问题；引用保持网页文字，网页作者栏不视为全篇均由墨翟亲撰的证据。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/MS10.txt",
+   "sha256": "aca3301bfd12593f6bd1d13eaba6469076b81e146b1fed5dccdd98c4c91928d9",
+   "bytes": 1719,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/MS10.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "MS10",
+    "title": "墨子·非攻上",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E9%9D%9E%E6%94%BB%E4%B8%8A",
+    "edition_note": "维基文库 /zh-hans/ 公开电子文本；繁简自动转换，非本项目完成的学术校勘本。墨辩六篇存在脱误、异读和断句问题；引用保持网页文字，网页作者栏不视为全篇均由墨翟亲撰的证据。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/MS13.txt",
+   "sha256": "0e82a9cdedfebe68f4119b6d3f1f7a2603e6c799296849d4200c49ccdc493896",
+   "bytes": 5966,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/MS13.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "MS13",
+    "title": "墨子·經說上",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E7%B6%93%E8%AA%AA%E4%B8%8A",
+    "edition_note": "维基文库 /zh-hans/ 公开电子文本；繁简自动转换，非本项目完成的学术校勘本。墨辩六篇存在脱误、异读和断句问题；引用保持网页文字，网页作者栏不视为全篇均由墨翟亲撰的证据。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/MS18.txt",
+   "sha256": "33cd50179e02d16dd4e9384d4b15026888b0b6853318936ba65b8bb3224cae70",
+   "bytes": 4825,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/MS18.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "MS18",
+    "title": "墨子·兼愛中",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%A2%A8%E5%AD%90/%E5%85%BC%E6%84%9B%E4%B8%AD",
+    "edition_note": "维基文库 /zh-hans/ 公开电子文本；繁简自动转换，非本项目完成的学术校勘本。墨辩六篇存在脱误、异读和断句问题；引用保持网页文字，网页作者栏不视为全篇均由墨翟亲撰的证据。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/P06.txt",
+   "sha256": "0ae44f719ddce142263398aec0c483a623671234f763a5638d1b41d1a5b06fc8",
+   "bytes": 21482,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/P06.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "P06",
+    "title": "《国语·郑语》",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%9C%8B%E8%AA%9E/%E5%8D%B716",
+    "edition_note": "维基文库公开古籍转录；引文核对正文并剔除夹注。未进行刻本影像或现代点校本校勘。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/P07.txt",
+   "sha256": "51814b1c9d7141415c72cd642ad3ef697523021fbd7fb65a83b86f306ef889b4",
+   "bytes": 181876,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/P07.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "P07",
+    "title": "《左传·昭公二十年》",
+    "url": "https://zh.wikisource.org/zh-hans/%E6%98%A5%E7%A7%8B%E5%B7%A6%E6%B0%8F%E5%82%B3/%E6%98%AD%E5%85%AC",
+    "edition_note": "维基文库公开古籍转录；引文核对正文并剔除夹注。未进行刻本影像或现代点校本校勘。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R01.txt",
+   "sha256": "745dbeccf3382758ce89cb0dae5400c78f8c0321a8f1fac687bfb894674eec99",
+   "bytes": 77763,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R01",
+    "title": "《论语》",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%AB%96%E8%AA%9E/%E5%85%A8%E8%A6%BD",
+    "edition_note": "维基文库公开转录、zh-hans 简体转换；并非经核实的学术校勘版。只核验本文所引字句，不保证全文版本无误。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R02.txt",
+   "sha256": "9512f50d3e87714167c96495f1791779d20991c3147f8c56e3e1d71558b22c2b",
+   "bytes": 139839,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R02.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R02",
+    "title": "《孟子》",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%AD%9F%E5%AD%90/%E5%85%A8%E8%A6%BD",
+    "edition_note": "维基文库公开转录、zh-hans 简体转换；并非经核实的学术校勘版。只核验本文所引字句，不保证全文版本无误。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R03.txt",
+   "sha256": "ec8a1cc31d66a8ec14cc0c3f9488ec9abfc8ddbf110b9ac00fbade6bede5a2a8",
+   "bytes": 6797,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R03.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R03",
+    "title": "《礼记·大学》",
+    "url": "https://zh.wikisource.org/zh-hans/%E7%A6%AE%E8%A8%98/%E5%A4%A7%E5%AD%B8",
+    "edition_note": "维基文库公开转录、zh-hans 简体转换；并非经核实的学术校勘版。只核验本文所引字句，不保证全文版本无误。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R04.txt",
+   "sha256": "858fe977b3f34c7e0b27a0d6f34971aee126e9aef0f8a74eb12e4a9a1327a750",
+   "bytes": 13655,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R04.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R04",
+    "title": "《礼记·中庸》",
+    "url": "https://zh.wikisource.org/zh-hans/%E7%A6%AE%E8%A8%98/%E4%B8%AD%E5%BA%B8",
+    "edition_note": "维基文库公开转录、zh-hans 简体转换；并非经核实的学术校勘版。只核验本文所引字句，不保证全文版本无误。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R05.txt",
+   "sha256": "22d9193bf2ff8f4e6ff870551bbad07daf2ff9b49e4edc2ccfe898e0f9985d2a",
+   "bytes": 10738,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R05.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R05",
+    "title": "《礼记·礼运》",
+    "url": "https://zh.wikisource.org/zh-hans/%E7%A6%AE%E8%A8%98/%E7%A6%AE%E9%81%8B",
+    "edition_note": "维基文库公开转录、zh-hans 简体转换；并非经核实的学术校勘版。只核验本文所引字句，不保证全文版本无误。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R5BU001.txt",
+   "sha256": "a3dcabb13272edd34cf91d03736b40f1fac26c2a96f357b3e4374908eb2ff644",
+   "bytes": 294034,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R5BU001.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R5BU001",
+    "title": "成唯识论",
+    "url": "https://cbetaonline.dila.edu.tw/zh/T31n1585_001",
+    "immutable_url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T31/T31n1585.xml",
+    "edition_note": "CBETA 官方 TEI P5 固定提交 dbdea41071e1e260ad84b72faefd4587333cf76d；完整XML头部与非商业传播许可随存。保留lem正文、排除note/rdg异读；仅审本轮登记语段，未校勘底本影像及梵藏平行本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R5BU003.txt",
+   "sha256": "2b85009d3a62fdc7135a905d5b0d66aa8f065f66dc22cf8ac7b022bf3ddb8ba3",
+   "bytes": 153992,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R5BU003.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R5BU003",
+    "title": "华严一乘教义分齐章",
+    "url": "https://cbetaonline.dila.edu.tw/zh/T45n1866_001",
+    "immutable_url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T45/T45n1866.xml",
+    "edition_note": "CBETA 官方 TEI P5 固定提交 dbdea41071e1e260ad84b72faefd4587333cf76d；完整XML头部与非商业传播许可随存。保留lem正文、排除note/rdg异读；仅审本轮登记语段，未校勘底本影像及梵藏平行本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R5CM001.txt",
+   "sha256": "7264b26472eb4a48547e88f043b7176dfa194ab1f094860fd10300e85bd80c5f",
+   "bytes": 12021,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R5CM001.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R5CM001",
+    "title": "《春秋繁露》卷十（深察名号、实性等）",
+    "url": "https://zh.wikisource.org/zh-hant/%E6%98%A5%E7%A7%8B%E7%B9%81%E9%9C%B2/%E5%8D%B710",
+    "oldid": "1498332",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=1498332",
+    "edition_note": "维基文库公开转录；保存实际 HTML 与正文。所引语段已上下文审读，未完成影印或多版本校勘。卷十题署不能替代具体篇章作者考证。",
+    "license_note": "古代原著公版；维基文库转录署名、编辑记录和站点许可保留于原始 HTML。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R5DY001.txt",
+   "sha256": "54805ee3c1420c9f6ada5a67fccf7ca2ec30becc5577fd186311df6129c056c2",
+   "bytes": 11085,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R5DY001.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R5DY001",
+    "title": "《庄子·秋水》",
+    "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90/%E7%A7%8B%E6%B0%B4",
+    "oldid": "11117703",
+    "immutable_url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90/%E7%A7%8B%E6%B0%B4?oldid=11117703",
+    "edition_note": "维基文库实际读取的转录本；未与影像或权威校勘本逐字对校。外篇寓言发言不当历史人物实录，通篇同书不等于齐物论或郭象之义全同。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R5DY002.txt",
+   "sha256": "bb2502b606433462e81556bc1fe399ffcf7fab9f6ee87cc2924abb7dfc82623c",
+   "bytes": 8694,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R5DY002.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R5DY002",
+    "title": "《庄子·山木》",
+    "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90/%E5%B1%B1%E6%9C%A8",
+    "oldid": "11117707",
+    "immutable_url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90/%E5%B1%B1%E6%9C%A8?oldid=11117707",
+    "edition_note": "维基文库实际读取的转录本；未与影像或权威校勘本逐字对校。前两则寓言分别保留庄子与市南宜僚说话层，不把处世譬喻当成保证免害的现实技术。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R5DY004.txt",
+   "sha256": "273dcd09fe8c97625eb6490fd51876d1e4b550e7a76c8f36865fa0b445dfbcba",
+   "bytes": 4709,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R5DY004.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R5DY004",
+    "title": "《太上老君说常清静经》传世本",
+    "url": "https://zh.wikisource.org/wiki/%E5%A4%AA%E4%B8%8A%E8%80%81%E5%90%9B%E8%AA%AA%E5%B8%B8%E6%B8%85%E9%9D%9C%E7%B6%93",
+    "oldid": "11132026",
+    "immutable_url": "https://zh.wikisource.org/wiki/%E5%A4%AA%E4%B8%8A%E8%80%81%E5%90%9B%E8%AA%AA%E5%B8%B8%E6%B8%85%E9%9D%9C%E7%B6%93?oldid=11132026",
+    "edition_note": "维基文库实际读取的转录本；未与影像或权威校勘本逐字对校。老君曰、葛玄曰等为经内题署；不据神授叙事认定作者或先秦成书。本轮取横排正文，竖排在静者动之基、真静应物等处有异文，另记候选，不混读。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R5GV001.txt",
+   "sha256": "56c89a09a440b822276cd8332c2c09f77cee04b8b30416cfd7509b91fae9a1e3",
+   "bytes": 14388,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R5GV001.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R5GV001",
+    "title": "《韩非子·五蠹》",
+    "url": "https://zh.wikisource.org/wiki/%E9%9F%93%E9%9D%9E%E5%AD%90/%E4%BA%94%E8%A0%B9",
+    "oldid": 2642850,
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E9%9F%93%E9%9D%9E%E5%AD%90/%E4%BA%94%E8%A0%B9&oldid=2642850",
+    "edition_note": "维基文库公开转录正文，保留行内异文提示；不是已与影像逐字校勘的权威定本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/R9FIXSW001.txt",
+   "sha256": "c02480408be40209b1e146c14f99dd0171e7826733024d5914fae5ff859c30d2",
+   "bytes": 456,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/R9FIXSW001.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "R9FIXSW001",
+    "title": "《思問錄內篇》目所不見段（同治四年曾氏金陵本書影）",
+    "url": "https://dl.ndl.go.jp/pid/2598861/1/3",
+    "edition_note": "日本國立國會圖書館藏《船山遺書》第92冊，書誌ID 000007627890，請求記號082.6-O124s；NDL書目標曾氏金陵刊、同治4（1865）。第3圖右半牌記同治四年湘鄉曾氏刊于金陵節署，第3圖左半為思問錄內篇起首。只逐字核驗目所不見段（圖3至圖4），不宣稱全書校勘。",
+    "rights_note": "國立國會圖書館 National Diet Library, JAPAN；官方manifest Access Restrictions=PDM。古籍原文為公版，保留館藏署名、圖片與manifest來源；本項目不重新授權第三方數據。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/S01.txt",
+   "sha256": "0c79d0a6ff3c97e4d459dabae045f4843baaefc6a01686e9ae163ea8c20bcc10",
+   "bytes": 11411,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/S01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "S01",
+    "title": "通書",
+    "url": "https://zh.wikisource.org/zh-hans/%E9%80%9A%E6%9B%B8",
+    "edition_note": "维基文库公开转录文本，简体显示；不是本项目完成的学术校勘本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/S02.txt",
+   "sha256": "7f18bf4e031a25fb86be588e09b28f7d3d460a8d8ceb8054f77f651e0dc1a40b",
+   "bytes": 5194,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/S02.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "S02",
+    "title": "正蒙/01",
+    "url": "https://zh.wikisource.org/zh-hans/%E6%AD%A3%E8%92%99/01",
+    "edition_note": "维基文库公开转录文本，简体显示；不是本项目完成的学术校勘本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/S05.txt",
+   "sha256": "c52a86a278350348e8c7c8d437fa9d0369e7e2ec512d3249e42aaedfb2e0d02a",
+   "bytes": 6747,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/S05.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "S05",
+    "title": "正蒙/17",
+    "url": "https://zh.wikisource.org/zh-hans/%E6%AD%A3%E8%92%99/17",
+    "edition_note": "维基文库简体转录；页面题干称篇，规范篇名乾称篇。天人合一句实际见本篇；部分转录字有疑点，避免据此作校勘结论。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/S06.txt",
+   "sha256": "8e64db1cdaeb1fa37aa131dc15b951ede6ed4af4f2a3b8295485c44fd97695c3",
+   "bytes": 21012,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/S06.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "S06",
+    "title": "近思錄/卷01",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%BF%91%E6%80%9D%E9%8C%84/%E5%8D%B701",
+    "edition_note": "维基文库带夹注转录；本项目区分所辑语录与夹注，不将夹注当北宋原话。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/S09.txt",
+   "sha256": "3454675135aa2096023a44890430a1c47221db58b13cc35e977215c538f35262",
+   "bytes": 22927,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/S09.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "S09",
+    "title": "四書章句集注/大學章句",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%9B%9B%E6%9B%B8%E7%AB%A0%E5%8F%A5%E9%9B%86%E6%B3%A8/%E5%A4%A7%E5%AD%B8%E7%AB%A0%E5%8F%A5",
+    "edition_note": "维基文库简体转录；本表此来源的概念义项均取朱熹注，不倒署为先秦原义；补传是朱熹补写。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/S10.txt",
+   "sha256": "9114abd500c0e0bb051ad432c25c2d8d1ad690152686db6d003c5e8ac90ca63a",
+   "bytes": 82299,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/S10.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "S10",
+    "title": "傳習錄/卷上",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%82%B3%E7%BF%92%E9%8C%84/%E5%8D%B7%E4%B8%8A",
+    "edition_note": "维基文库公开转录文本，简体显示；不是本项目完成的学术校勘本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/S14.txt",
+   "sha256": "0647b2df4d62a5fd208cbd7ab16c7225459e3bec9bc70e85dc1f3a1ccd30f588",
+   "bytes": 49282,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/S14.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "S14",
+    "title": "朱子語類/098",
+    "url": "https://zh.wikisource.org/zh-hans/%E6%9C%B1%E5%AD%90%E8%AA%9E%E9%A1%9E/098",
+    "edition_note": "维基文库公开转录文本，简体显示；不是本项目完成的学术校勘本。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V3D06.txt",
+   "sha256": "2526bd52280ab5961aac529702c4f67ae420c178aadee5ce0d53e3e8ef4e52a5",
+   "bytes": 4404,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V3D06.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V3D06",
+    "title": "莊子/應帝王",
+    "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90/%E6%87%89%E5%B8%9D%E7%8E%8B",
+    "oldid": "11117690",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E8%8E%8A%E5%AD%90/%E6%87%89%E5%B8%9D%E7%8E%8B&oldid=11117690",
+    "edition_note": "维基文库公开转录；保留不转换字形。未与出土材料或学术校勘本对校。《庄子》内篇的篇章归属，不等于各句作者已被独立考定。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V3M04.txt",
+   "sha256": "75d6c639c5b056fce9e1f61c248ac981f73bf6eca024e8d813f96c97b50f79bb",
+   "bytes": 6275,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V3M04.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V3M04",
+    "title": "管子/第73篇國蓄",
+    "url": "https://zh.wikisource.org/wiki/%E7%AE%A1%E5%AD%90/%E7%AC%AC73%E7%AF%87%E5%9C%8B%E8%93%84",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E7%AE%A1%E5%AD%90/%E7%AC%AC73%E7%AF%87%E5%9C%8B%E8%93%84&oldid=2325787",
+    "edition_note": "网页篇题署管仲不代表本报告判定管仲亲笔；只核对第七十三篇国蓄转录。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V3M11.txt",
+   "sha256": "baaeea0a685c6885cf3d696dc74cfc8f54d0f67d7672859f2460dfa7cc1921fa",
+   "bytes": 27015,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V3M11.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V3M11",
+    "title": "鬼谷子/卷01",
+    "url": "https://zh.wikisource.org/wiki/%E9%AC%BC%E8%B0%B7%E5%AD%90/%E5%8D%B701",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E9%AC%BC%E8%B0%B7%E5%AD%90/%E5%8D%B701&oldid=2276561",
+    "edition_note": "网页正文、尖括号传统注文、○案校语混排；本次引文仅取括号外正文。题陶宏景注不视为作者和注者归属已定。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V3Q01.txt",
+   "sha256": "f5b1878516044a27055fe7e90637f9112f934b4bd48fa358534e3327dbaf22ca",
+   "bytes": 114068,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V3Q01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V3Q01",
+    "title": "孟子字義疏證",
+    "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%E5%AD%97%E7%BE%A9%E7%96%8F%E8%AD%89",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E5%AD%9F%E5%AD%90%E5%AD%97%E7%BE%A9%E7%96%8F%E8%AD%89&oldid=2632070",
+    "edition_note": "维基文库公开转录；固定 oldid 与正文快照留存。未与写刻本影像或学术校勘本对校。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V3Q02.txt",
+   "sha256": "e20c9a16b628e901ec7a28814490fe249eb6a873d82ac337f9743a1a1e296834",
+   "bytes": 70102,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V3Q02.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V3Q02",
+    "title": "明夷待訪錄",
+    "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%A4%B7%E5%BE%85%E8%A8%AA%E9%8C%84",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E6%98%8E%E5%A4%B7%E5%BE%85%E8%A8%AA%E9%8C%84&oldid=2583858",
+    "edition_note": "维基文库公开转录；固定 oldid 与正文快照留存。未与写刻本影像或学术校勘本对校。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V4DA002.txt",
+   "sha256": "c7a330e9bf740df9e16e298b23a328a01cf2cae07dc4f2931c0799c0b88a754f",
+   "bytes": 28564,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V4DA002.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V4DA002",
+    "title": "《晋书》卷三十五·裴頠传所载《崇有论》",
+    "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8/%E5%8D%B7035",
+    "edition_note": "维基文库公开转录，实际获取 HTML 与正文快照；非影像核校本。来源载体为唐修晋书，裴頠传明示“乃著崇有之论…曰”；仅其引文归裴頠，不将传记叙述、史评一并归他。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V4MO003.txt",
+   "sha256": "1d27f6b3c107eb31ee94f7ce8d990926ed62661a08640baee5113542fc361730",
+   "bytes": 9550,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V4MO003.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V4MO003",
+    "title": "许慎《说文解字叙》",
+    "url": "https://zh.wikisource.org/zh-hant/說文解字/15",
+    "oldid": "2607988",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=2607988",
+    "edition_note": "维基文库公开转录，实际取得版本 oldid=2607988；未完成影印校勘。正文、旧注及具名按语按表达逐项分层，原字不暗改。",
+    "license_note": "古代及严复原作已属公版；维基文库转录署名与站点许可保留，原页及HTML可追溯。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V4SO005.txt",
+   "sha256": "0cdaa0ae04ec6184b63df1087ef6a55483f6d056e6fe7cd0d250df38fc1650e2",
+   "bytes": 171195,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V4SO005.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V4SO005",
+    "title": "《仁學》",
+    "url": "https://zh.wikisource.org/zh-hant/%E4%BB%81%E5%AD%B8",
+    "oldid": "2641377",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=仁學&oldid=2641377",
+    "edition_note": "维基文库繁体网页转录；本轮保存实际页面HTML及抽取文本，未冒称权威校勘本。界说第4条网页有“男安”等疑字，未用于校改或作为可靠异文。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/V7AE01.txt",
+   "sha256": "6dd07ae75a836d93cb2d9001c75e928f8ad40b668fbd1cae22f2a17b6634cb2a",
+   "bytes": 20732,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/V7AE01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "V7AE01",
+    "title": "《声无哀乐论》",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%81%B2%E7%84%A1%E5%93%80%E6%A8%82%E8%AB%96",
+    "oldid": "2605363",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=2605363",
+    "edition_note": "维基文库简体显示的传世正文转录，读取时oldid 2605363。正文有缺闭引号和个别异常标点，按秦客/主人显式提示区分声部，原字原标点保留。本轮未完成与四部丛刊影印或点校本的逐字校勘。",
+    "rights_note": "古代作品底本属公有领域；维基文库转录和网页保留原贡献者署名与CC BY-SA条款，原HTML/URL保留，不重新授权第三方材料。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/XS04.txt",
+   "sha256": "537fbcded14faf098a1ccdff42b9268a555eea0986fec67ee005ae5c82947dc8",
+   "bytes": 69143,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/XS04.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "XS04",
+    "title": "郭象《庄子注》卷一（逍遥游、齐物论）",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%8D%97%E8%8F%AF%E7%9C%9F%E7%B6%93%20%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%80",
+    "edition_note": "维基文库公开转录本，实际读取全文并核对所引片段；非现代学术校勘定本。四部丛刊影印本对应的OCR转录，正文、郭注及陆氏音义混排；引文仅取可辨认郭注，加现代标点，保留“各当其分”等本页字形，不用别本改写。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/XS07.txt",
+   "sha256": "4e0e87cbda566da7e642717268024e204de5e0bb7ec898c33b0157b78652a08f",
+   "bytes": 2359,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/XS07.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "XS07",
+    "title": "刘劭《人物志·接识》",
+    "url": "https://zh.wikisource.org/zh-hans/%E4%BA%BA%E7%89%A9%E5%BF%97/%E6%8E%A5%E8%AD%98",
+    "edition_note": "维基文库公开转录本，实际读取全文并核对所引片段；非现代学术校勘定本。本条引文已区分正文与后注，未将现代附注归于古人。"
+   }
+  },
+  {
+   "file": "atlas-v9.1/evidence/texts/XS12.txt",
+   "sha256": "101968305f11bdd6caa9098ce37d48dbd39a942ac70a170ecdac2858aeb3372b",
+   "bytes": 13373,
+   "archive_member": "chinese-thought-atlas-v9.1/evidence/texts/XS12.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "XS12",
+    "title": "王充《论衡·实知篇》",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%AB%96%E8%A1%A1/78",
+    "edition_note": "维基文库公开转录本，实际读取全文并核对所引片段；非现代学术校勘定本。本条引文已区分正文与后注，未将现代附注归于古人。"
+   }
+  },
+  {
+   "file": "wikisource/Page_文淵閣四庫全書_0009冊.djvu__162.json",
+   "sha256": "c38f4ef8d6da970f69c870a99ad255fd41ba2b41191c9f7488e64d14ad9031cc",
+   "bytes": 2758,
+   "title": "Page:文淵閣四庫全書 0009冊.djvu/162",
+   "revid": 11127459,
+   "timestamp": "2026-10-13T10:37:11Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/春秋左氏傳__宣公.json",
+   "sha256": "42140f78cedc2043b753245c9d05e5d56673dcffc0bf8a8317f16122a5044f5d",
+   "bytes": 43035,
+   "title": "春秋左氏傳/宣公",
+   "revid": 2676002,
+   "timestamp": "2026-03-21T10:11:19Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/朱子語類__001.json",
+   "sha256": "81e245e6cc0a4833bde1ba4a4689dcde629a40143fd455870a3c68a3949318cb",
+   "bytes": 18301,
+   "title": "朱子語類/001",
+   "revid": 1536260,
+   "timestamp": "2019-02-01T13:30:06Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/禮記正義__52.json",
+   "sha256": "83076987fbcaf8880a809d893ed5bee04fb05bacefbfc2c5ad5bc28a04c7008b",
+   "bytes": 66400,
+   "title": "禮記正義/52",
+   "revid": 10041524,
+   "timestamp": "2026-09-21T14:02:46Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/莊子__天下.json",
+   "sha256": "07f4eebb58a136cb8ccf5cd620d88ebd8ed98dcd3134e4b7f0c89e75ac0c4ec4",
+   "bytes": 10643,
+   "title": "莊子/天下",
+   "revid": 11117721,
+   "timestamp": "2026-10-03T03:34:19Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__01.json",
+   "sha256": "cf561f738c3932042e7f38ebb309feb18270433e4da426ddcf155a201fdaeaea",
+   "bytes": 111658,
+   "title": "說文解字/01",
+   "revid": 2665967,
+   "timestamp": "2026-03-04T10:43:29Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__02.json",
+   "sha256": "e071db894821a4019d9f80261c59edb79c33f7a8aab60e2c62ee0ec28f17af98",
+   "bytes": 42946,
+   "title": "說文解字/02",
+   "revid": 1559144,
+   "timestamp": "2019-04-22T05:38:39Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__03.json",
+   "sha256": "e781bdbdfa60b89fd1a8fbf1c2f0c07a6dda169e08e7ca6898309b8cc6273aa3",
+   "bytes": 43381,
+   "title": "說文解字/03",
+   "revid": 2012003,
+   "timestamp": "2021-01-04T12:18:46Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__06.json",
+   "sha256": "aaa9c1ea944112da87002b4ede58fdf70f9796c508f3c73e9b057a2e8f74ec05",
+   "bytes": 44700,
+   "title": "說文解字/06",
+   "revid": 1962671,
+   "timestamp": "2020-08-31T07:08:06Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__07.json",
+   "sha256": "749c3a15b1521c49ba8e5cfd0b40dd87638d508960ae37a6b0adf97f4cf0a26c",
+   "bytes": 45082,
+   "title": "說文解字/07",
+   "revid": 1870775,
+   "timestamp": "2020-06-05T17:40:35Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__08.json",
+   "sha256": "7482cbb9ab55494d32e031d2e78bf771562a95679563add974613e6aec9a73fa",
+   "bytes": 48338,
+   "title": "說文解字/08",
+   "revid": 1566246,
+   "timestamp": "2019-05-21T10:47:48Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__09.json",
+   "sha256": "fe11e260d698e37e33121d94ef66a79c9c301bcefd5d3ba395377c5a2d0f60ce",
+   "bytes": 26521,
+   "title": "說文解字/09",
+   "revid": 2025949,
+   "timestamp": "2021-04-12T07:11:14Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__10.json",
+   "sha256": "2510dd9e1c5c57063a1be59c5da41c808628919d8a22f6a08abb307ee71207fe",
+   "bytes": 49670,
+   "title": "說文解字/10",
+   "revid": 2026004,
+   "timestamp": "2021-04-13T02:58:06Z",
+   "form": "api-response"
+  },
+  {
+   "file": "wikisource/說文解字__12.json",
+   "sha256": "9f2a0332d0ad099e157609d2e80b62b77eaac74587936db3e3cf208ebe602fb4",
+   "bytes": 44678,
+   "title": "說文解字/12",
+   "revid": 1559174,
+   "timestamp": "2019-04-22T06:13:38Z",
+   "form": "api-response"
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/DS01.txt",
+   "sha256": "406c0334574ee1e704fe9c0f91467794a70b465691a2cf676ba587c921de1e33",
+   "bytes": 89430,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/DS01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "DS01",
+    "title": "道德經 (王弼本)",
+    "url": "https://zh.wikisource.org/zh-hans/%E9%81%93%E5%BE%B7%E7%B6%93%20%28%E7%8E%8B%E5%BC%BC%E6%9C%AC%29",
+    "edition_note": "维基文库公开转录本，简体转换页；提供可访问原文，不冒称权威校勘定本。原页面繁简、标点及异文提示按引文保留。王弼注文与经文分列，本组除明确标明者均引经文。引文以主文为准，删除夹注；节引句末标点可调整，异文另注。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/DS02.txt",
+   "sha256": "8d83498593d03daabb65d6c15ab6f61ea3c6546726e0e4082ded3cc051ed946e",
+   "bytes": 8922,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/DS02.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "DS02",
+    "title": "周易/繫辭上",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%91%A8%E6%98%93/%E7%B9%AB%E8%BE%AD%E4%B8%8A",
+    "edition_note": "维基文库公开转录本，简体转换页；提供可访问原文，不冒称权威校勘定本。原页面繁简、标点及异文提示按引文保留。页面传统作者题署不当作成书史结论。引文以主文为准，删除夹注；节引句末标点可调整，异文另注。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/DS03.txt",
+   "sha256": "79dbf2c744908b60fa55b58fbe5025c6be0993095da69e68b7570780a29bcdb5",
+   "bytes": 8422,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/DS03.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "DS03",
+    "title": "周易/繫辭下",
+    "url": "https://zh.wikisource.org/zh-hans/%E5%91%A8%E6%98%93/%E7%B9%AB%E8%BE%AD%E4%B8%8B",
+    "edition_note": "维基文库公开转录本，简体转换页；提供可访问原文，不冒称权威校勘定本。原页面繁简、标点及异文提示按引文保留。页面传统作者题署不当作成书史结论。当前网页为九章分法，不将网页章序视为跨版本通用章序。引文以主文为准，删除夹注；节引句末标点可调整，异文另注。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/LC-HS-LOW.txt",
+   "sha256": "5ef47f4d73d14f81603bb06a3f50dcda661dc572ca9795c2da107011d324a4f3",
+   "bytes": 43836,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/LC-HS-LOW.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "LC-HS-LOW",
+    "title": "老子河上公章句·德经",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%80%81%E5%AD%90%E6%B2%B3%E4%B8%8A%E5%85%AC%E7%AB%A0%E5%8F%A5/%E5%BE%B7%E7%B6%93",
+    "oldid": "1552800",
+    "edition_note": "维基文库公开转录；经文与注文同页，以章节及注句定位。保留页面字形，不冒称校勘定本。全页冻结不代表全页已精读或穷尽抽取。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/LC-HS-UP.txt",
+   "sha256": "9720fbb9c44e5c13f9adab4b94d0d10f628599a4380cdcd743d055bdd8e8266b",
+   "bytes": 39262,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/LC-HS-UP.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "LC-HS-UP",
+    "title": "老子河上公章句·道经",
+    "url": "https://zh.wikisource.org/zh-hans/%E8%80%81%E5%AD%90%E6%B2%B3%E4%B8%8A%E5%85%AC%E7%AB%A0%E5%8F%A5/%E4%B8%8A",
+    "oldid": "2019760",
+    "edition_note": "维基文库公开转录；经文与注文同页，以章节及注句定位。保留页面字形，不冒称校勘定本。全页冻结不代表全页已精读或穷尽抽取。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/LC-SZ-ALL.txt",
+   "sha256": "4b45008f08478aee78a1b88612088e19edfe4943c99b8479b22176f3b797f68f",
+   "bytes": 74956,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/LC-SZ-ALL.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "LC-SZ-ALL",
+    "title": "苏辙老子解（四库全书本）全览",
+    "url": "https://zh.wikisource.org/zh/%E8%80%81%E5%AD%90%E8%A7%A3_(%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC)/%E5%85%A8%E8%A6%BD",
+    "oldid": "633454",
+    "edition_note": "维基文库公开转录；经文与注文同页，以章节及注句定位。保留页面字形，不冒称校勘定本。全页冻结不代表全页已精读或穷尽抽取。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-CY.txt",
+   "sha256": "4be026c822250aff3bafc6d62983bac396638cfe3f0487aeefedbb09c62af323",
+   "bytes": 98208,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-CY.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-CY",
+    "title": "伊川易傳",
+    "url": "https://zh.wikisource.org/wiki/%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3",
+    "oldid": "1313743",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=1313743",
+    "edition_note": "维基文库公开转录，不是本项目校勘定本；保留原字与标点。四库本页面有图像字及转录讹字，纯文本抽取不含图像中文字，故只选用已读且不依赖该缺字处的注段。页题全覽不代表实际载齐全书。 普通《伊川易傳》页实际为节录并有跳卦，不能按四卷标题推称全量。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-CY2.txt",
+   "sha256": "c3d411760b17c68388363fea22ea38b522cfb3f547e0de6e0f626a7fe33870e4",
+   "bytes": 97321,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-CY2.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-CY2",
+    "title": "伊川易傳 (四庫全書本)/卷2",
+    "url": "https://zh.wikisource.org/wiki/%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72",
+    "oldid": "11131282",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=11131282",
+    "edition_note": "维基文库公开转录，不是本项目校勘定本；保留原字与标点。四库本页面有图像字及转录讹字，纯文本抽取不含图像中文字，故只选用已读且不依赖该缺字处的注段。页题全覽不代表实际载齐全书。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-CY3.txt",
+   "sha256": "324916fabcd65867328c6e6a7a5e885de8e53d4b8f44963d1923d4624130044b",
+   "bytes": 105014,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-CY3.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-CY3",
+    "title": "伊川易傳 (四庫全書本)/卷3",
+    "url": "https://zh.wikisource.org/wiki/%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B73",
+    "oldid": "11131283",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=11131283",
+    "edition_note": "维基文库公开转录，不是本项目校勘定本；保留原字与标点。四库本页面有图像字及转录讹字，纯文本抽取不含图像中文字，故只选用已读且不依赖该缺字处的注段。页题全覽不代表实际载齐全书。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-CY4.txt",
+   "sha256": "7cbdef4e5b4e591a6f2d4bfac6fdcfd837e3721d63a78531c53122bc5e21018c",
+   "bytes": 104093,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-CY4.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-CY4",
+    "title": "伊川易傳 (四庫全書本)/卷4",
+    "url": "https://zh.wikisource.org/wiki/%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B74",
+    "oldid": "11131284",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=11131284",
+    "edition_note": "维基文库公开转录，不是本项目校勘定本；保留原字与标点。四库本页面有图像字及转录讹字，纯文本抽取不含图像中文字，故只选用已读且不依赖该缺字处的注段。页题全覽不代表实际载齐全书。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-HX01.txt",
+   "sha256": "a640c1998d551abf72e64fc6225951d2dd0ecd856a8088bcadf04d50f2294f33",
+   "bytes": 12979,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-HX01.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-HX01",
+    "title": "周易/彖",
+    "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%BD%96",
+    "oldid": "2492524",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93/%E5%BD%96&oldid=2492524",
+    "edition_note": "维基文库公开转录，不转换字形；不是校勘定本。保留网页标点与异文，未据现代释义改字；《易传》传统作者题署不作为作者确定证据。",
+    "rights_note": "古典文本公版；维基文库转录保留来源归属及网站许可说明；项目释读与原典分开。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-HX02.txt",
+   "sha256": "7cacb26ea1a7626d79320cbca8d1d23366b12714b96a5bbfc0843b5222ca3c58",
+   "bytes": 3766,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-HX02.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-HX02",
+    "title": "周易/大象",
+    "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E8%B1%A1",
+    "oldid": "2611149",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93/%E5%A4%A7%E8%B1%A1&oldid=2611149",
+    "edition_note": "维基文库公开转录，不转换字形；不是校勘定本。保留网页标点与异文，未据现代释义改字；《易传》传统作者题署不作为作者确定证据。",
+    "rights_note": "古典文本公版；维基文库转录保留来源归属及网站许可说明；项目释读与原典分开。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-OW-SG.txt",
+   "sha256": "29e59af36a37b77e9e738621c91e533658819ec2316ccac9466926b7c9b3bf2e",
+   "bytes": 4092,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-OW-SG.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-OW-SG",
+    "title": "易傳/說卦",
+    "url": "https://zh.wikisource.org/wiki/易傳/說卦",
+    "edition_note": "维基文库不转换页面正文；网页标点及异文照录，非校勘定本。",
+    "rights_note": "古典文本公版；维基文库转录保留来源归属及网站许可说明；项目释读与原典分开。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-OW-WY.txt",
+   "sha256": "bf8c92fc38a4165af88a3bb0e5633b6cdc9513fa9fcfb0c6a2e9f32d934a450d",
+   "bytes": 8247,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-OW-WY.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-OW-WY",
+    "title": "周易/文言",
+    "url": "https://zh.wikisource.org/wiki/周易/文言",
+    "edition_note": "维基文库不转换页面正文；网页标点及异文照录，非校勘定本。含主段与标为校詁版的重复文本；本贡献不以该标签推定学术权威。",
+    "rights_note": "古典文本公版；维基文库转录保留来源归属及网站许可说明；项目释读与原典分开。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-OW-XG.txt",
+   "sha256": "0dd9c453819d07f7df6d3924e0d8089a196fb644d0d4c1c142162f941c36b304",
+   "bytes": 3427,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-OW-XG.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-OW-XG",
+    "title": "易傳/序卦",
+    "url": "https://zh.wikisource.org/wiki/易傳/序卦",
+    "edition_note": "维基文库不转换页面正文；网页标点及异文照录，非校勘定本。",
+    "rights_note": "古典文本公版；维基文库转录保留来源归属及网站许可说明；项目释读与原典分开。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-OW-ZG.txt",
+   "sha256": "8c5de10b5ffebedb9f6a4e32c25e370ffb9d70c585ac77b133a0815411d8a0de",
+   "bytes": 2125,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-OW-ZG.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-OW-ZG",
+    "title": "易傳/雜卦",
+    "url": "https://zh.wikisource.org/wiki/易傳/雜卦",
+    "edition_note": "维基文库不转换页面正文；网页标点及异文照录，非校勘定本。含主段与标为校詁版的重复文本；本贡献不以该标签推定学术权威。",
+    "rights_note": "古典文本公版；维基文库转录保留来源归属及网站许可说明；项目释读与原典分开。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-WF1.txt",
+   "sha256": "8aa53e9022ff51aa1133302e3f7693ea9043cde63b472cf4b4ae699d8a29ffd0",
+   "bytes": 16622,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-WF1.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-WF1",
+    "title": "周易外传·系辞上传第一章",
+    "url": "https://www.xuges.com/mj/w/wfz/zywz/65.htm",
+    "edition_note": "虚阁网2023年整理初校的公开古典原文转录；GB18030解码冻结，未用该站现代导论作论证。不是影印校勘本，若干正文可见讹字，选引仍须将来对船山全书等校勘；本次只对列明三篇及所引句完成语境阅读。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-WF64.txt",
+   "sha256": "d31c4eb75d0c0fc5934934fd99c7d26db96d6b553e2b7d11dede9717fa431a73",
+   "bytes": 11988,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-WF64.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-WF64",
+    "title": "周易外传·未济",
+    "url": "https://www.xuges.com/mj/w/wfz/zywz/64.htm",
+    "edition_note": "虚阁网2023年整理初校的公开古典原文转录；GB18030解码冻结，未用该站现代导论作论证。不是影印校勘本，若干正文可见讹字，选引仍须将来对船山全书等校勘；本次只对列明三篇及所引句完成语境阅读。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YD-ZX7.txt",
+   "sha256": "b064a23844b0d45f0ed7162603099a48693882a930303ce7335f5622fbea68d2",
+   "bytes": 20403,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YD-ZX7.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YD-ZX7",
+    "title": "原本周易本義 (四庫全書本)/卷07",
+    "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B707",
+    "oldid": "527369",
+    "immutable_url": "https://zh.wikisource.org/w/index.php?oldid=527369",
+    "edition_note": "维基文库公开转录，不是本项目校勘定本；保留原字与标点。四库本页面有图像字及转录讹字，纯文本抽取不含图像中文字，故只选用已读且不依赖该缺字处的注段。页题全覽不代表实际载齐全书。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YWH-H11.txt",
+   "sha256": "739ce1a3428aa9b63ac0d0a1a26824636e3a2beca7cda8376c46bdfb463ed813",
+   "bytes": 5729,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YWH-H11.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YWH-H11",
+    "title": "周易正義/07.11",
+    "url": "https://zh.wikisource.org/wiki/周易正義/07.11",
+    "edition_note": "维基文库公开转录；保存整页正文与原 HTML，不冒称校勘定本。略例页含王弼正文及邢璹夹注；正义页含经传、王弼或韩康伯注、孔颖达疏，各引用按层标明。字形与疑误照录。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  },
+  {
+   "file": "yidao-v1.3/evidence/texts/YWH-H4.txt",
+   "sha256": "e7793d13f580f2f8bc2d9c78f6a897a2ec7f6bfe1cc8262a502d49a924958996",
+   "bytes": 10121,
+   "archive_member": "yi-dao-system-v1.3/evidence/texts/YWH-H4.txt",
+   "form": "archive-member",
+   "atlas_source": {
+    "id": "YWH-H4",
+    "title": "周易正義/07.04",
+    "url": "https://zh.wikisource.org/wiki/周易正義/07.04",
+    "edition_note": "维基文库公开转录；保存整页正文与原 HTML，不冒称校勘定本。略例页含王弼正文及邢璹夹注；正义页含经传、王弼或韩康伯注、孔颖达疏，各引用按层标明。字形与疑误照录。",
+    "rights_note": "古典正文公版；电子转录来源及其许可保留，不以网页转录冒称校勘定本。"
+   }
+  }
+ ],
+ "work": "Chinese classical texts quoted by the passage map of board item RO: the 易传 and its commentaries, the 老子 with the 王弼, 河上公 and 苏辙 commentaries and the 郭店 and 帛书 witnesses, the 儒家 line from the 论语 to 戴震, the 说文解字 and the 左传 (止戈为武), 庄子 and 玄学, 墨辩 and 名家, 兵家, 法家, 管子 and 鬼谷子, the Buddhist texts received in China, 嵇康 and 王充.",
+ "edition": "Two kinds of file. (1) Texts of two atlases built with Codex, each copied byte for byte from the atlas archive named in `atlases` (the archive member is given per file, with the atlas's own record of the text in `atlas_source`: its title, URL and edition note). The atlases' texts are electronic transcriptions: 71 of the 79 from Chinese Wikisource, five from CBETA (the 雜阿含經, 中論, 壇經, 成唯識論 and 華嚴五教章), two from xuges.com (王夫之《周易外傳》) and one checked against a scan of the National Diet Library (王夫之《思問錄》); the atlases do not claim them to be collated editions, and the excavated witnesses are the atlases' transcriptions. (2) Chinese Wikisource pages the atlases do not hold, at the revisions named per file. Neither kind is collated with a printed edition.",
+ "retrieval": "Archive members: read on 19 October 2026 from the two archives in the external store, verified by their SHA-256 before reading. Wikisource pages: MediaWiki API, action=query, prop=revisions, rvprop=ids|timestamp|content, rvslots=main, format=json, formatversion=2, redirects=1, with a user agent naming the repository, on 19 October 2026 (fetch_wikisource.py in the RO kit, which never overwrites a file).",
+ "forms": {
+  "archive-member": "The archive member, byte for byte.",
+  "api-response": "The API's response body, byte for byte as received."
+ },
+ "license": "The texts are pre-modern and in the public domain. Wikisource's punctuation and markup are CC BY-SA 4.0. The five CBETA texts are CBETA's digital editions of the 大正藏, kept with attribution under CBETA's terms for non-commercial distribution; the xuges.com and National Diet Library notes are in `atlas_source`. The atlases themselves were built for this work.",
+ "markup": "Wikisource wikitext carries character-variant markup, templates and links; a reading strips them (clean() in verify_ro.py) and keeps the content of {{yw|…}} and {{+|…}}.",
+ "reading_scope": "Only the passages the map quotes were read closely, each in its chapter; retaining whole texts does not imply reading them whole.",
+ "used_by": [
+  "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+  "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json"
+ ]
+}

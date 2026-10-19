@@ -1,0 +1,1681 @@
+[
+  {
+    "id": "ru-tansitong-xiang-ren-ou",
+    "tradition": "谭嗣同《仁学》（引汉儒训诂）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "V4SO005",
+    "text_path": "evidence/texts/V4SO005.txt",
+    "locator": "《仁学》，引汉儒“相人偶”训",
+    "fragments": [
+      "漢儒訓仁為相人偶。人於人不相偶，尚安有世界？",
+      "不相人偶，見我切也，不仁矣"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.separation_admits_extra",
+      "Becoming.forgetting_unrelates",
+      "Becoming.whole_not_in_pairs",
+      "Becoming.Flow.region_not_a_cut",
+      "Becoming.relation_persists"
+    ],
+    "records": [
+      "separation-loses-the-relation",
+      "conveyance-crosses-the-boundary"
+    ],
+    "relational": "仁 is read as the mutual pairing of persons (相偶); 不仁 is the self cut out of the pairing (見我切). What relates is person to person; the self differentiates only as a pole of the pairing.",
+    "reading": "AI 的读法：谭嗣同借汉儒“相人偶”把仁读作人与人相偶这一关系本身，并把“不相偶”读作“见我切”——把自己从关系中切出来。脊柱上对应的结构是：把总是一起变化的两部分分开描述，失去的关系会以多出来的组合重新出现（separation_admits_extra）；遗忘一部分就使它与其余不再相关（forgetting_unrelates）；延续中的族群的区域不是一个切口（Flow.region_not_a_cut）。“尚安有世界”是比脊柱更强的断言：脊柱只证明分开描述会丢失关系，并不证明没有相偶就没有世界。层次：这是晚清作者对汉儒训诂的引用，不是经文，也不是郑注原文。",
+    "reading_en": "Tan reads 仁 through the Han gloss as persons pairing with each other and 不仁 as the self cut out of the pairing; the spine proves the matching structure, that describing jointly varying parts separately loses their relation, but not Tan's stronger claim that without pairing there is no world.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhengxuan-ren-zhe-ren-ye",
+    "tradition": "郑玄《礼记注》（中庸“仁者人也”注）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0003"
+    ],
+    "source_id": "R04",
+    "text_path": null,
+    "needs_source": "https://zh.wikisource.org/wiki/禮記正義/卷五十二",
+    "locator": "《礼记·中庸》“仁者人也”郑注（atlas 仅有经文 R04 与谭嗣同转引 V4SO005；注文待整合者核对页面）",
+    "fragments": [
+      "人也，讀如相人偶之人，以人意相存問之言。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.whole_not_in_pairs",
+      "Becoming.separation_admits_extra",
+      "Becoming.Contextual.glues_iff_agree",
+      "Becoming.Specker.no_whole"
+    ],
+    "records": [
+      "separation-loses-the-relation",
+      "contextual-registration"
+    ],
+    "relational": "郑玄 glosses 人 in 仁者人也 as the 人 of 相人偶: two persons attending to and asking after each other. The relation is a pair relation, formed in mutual regard (存問).",
+    "reading": "AI 的读法：郑注把“仁者人也”的“人”读作“相人偶”之人，即两人以意相存问。这是一个二元（成对）关系的读法。脊柱给出它的范围：有些关系由整体持有而不由任何一对持有（whole_not_in_pairs：三者中任意两者可以任意，三者一起却不可以），而各语境各自一致也可以拼不成一个整体（Specker.no_whole）。所以“相人偶”抓住了成对的关系，但成对关系不穷尽关系的场。层次对照：同一句经文，朱熹《中庸章句》（R09）读作“人，指人身而言。具此生理”，把仁落在一个具有生理的人身上，是先有承载者的读法；郑注是关系的读法。两者不可混为一层。",
+    "reading_en": "Zheng Xuan reads 仁者人也 as persons in mutual regard, a pair relation; the spine bounds it, since some relations are held by the whole and by no pair, so pairing does not exhaust the field (Zhu Xi's later gloss on the same line, 人身 bearing 生理, is a bearer-first reading on a different layer).",
+    "gap": null
+  },
+  {
+    "id": "ru-zhongyong-qinqin-zhi-sha",
+    "tradition": "《礼记·中庸》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0003",
+      "E1002",
+      "KR1063"
+    ],
+    "source_id": "R04",
+    "text_path": "evidence/texts/R04.txt",
+    "locator": "中庸·哀公问政段",
+    "fragments": [
+      "仁者人也，亲亲为大；义者宜也，尊贤为大。",
+      "亲亲之杀，尊贤之等，礼所生也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Transfer.unordered",
+      "Becoming.Clearing.centers_disagree",
+      "Becoming.Valuation.significant_iff_held",
+      "Becoming.unrestricted_iff_presupposed_along",
+      "Becoming.Flow.withinInfluence_of_withinFeeding"
+    ],
+    "records": [
+      "whole-first-and-bounded-centers",
+      "held-lives-g0-is-centering",
+      "presupposition-scopes"
+    ],
+    "relational": "仁 is placed in human relating (人也), and then graded: nearness of kin (亲亲之杀) and rank of worth (尊贤之等) give the measure from which 礼 arises. The relations are real, but the gradient is asserted from a centre.",
+    "reading": "AI 的读法：经文先把仁放在人与人的关系中（关系的），随即说亲亲有“杀”（递减）、尊贤有“等”，礼由此而生。脊柱中嵌套的闭包确有次第（喂养闭包在影响闭包之内：Flow.withinInfluence_of_withinFeeding），但这是“触及到哪里”的事实，不是“意义多少”的度量。延续条件下混合的部分不被排序（Transfer.unordered：排序需要一个度量）；以各自依赖为界的中心彼此不一致（Clearing.centers_disagree）；在立场不变的步骤下，意义在一个边界之内成立只能通过对一切成立（unrestricted_iff_presupposed_along）。所以“亲亲之杀”作为意义的递减是理论没有断言的，不是它的定理。分歧不在于有无亲疏，而在于把亲疏读成意义的等差。",
+    "reading_en": "The text grounds 仁 in human relating and then grades it by kinship and worth as the source of 礼; the spine has nested closures (a fact of reach) but no graded measure of significance, and under the invariance step significance within a boundary holds only by holding for everything, so the gradient is asserted, not derived.",
+    "gap": null
+  },
+  {
+    "id": "ru-lunyu-ji-yu-li-er-li-ren",
+    "tradition": "《论语》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0012",
+      "KR1003"
+    ],
+    "source_id": "R01",
+    "text_path": "evidence/texts/R01.txt",
+    "locator": "雍也·30",
+    "fragments": [
+      "夫仁者，己欲立而立人，己欲达而达人。能近取譬，可谓仁之方也已。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Excluding.three_courses",
+      "Becoming.Flow.level_kept",
+      "Becoming.Viability.ChoicePoint.each_not_joint",
+      "Becoming.Viability.ChoicePoint.no_rule_decides_joint",
+      "Becoming.Learning.lumped_right_iff"
+    ],
+    "records": [
+      "what-taking-all-excludes",
+      "conditions-kept-together",
+      "generalization-through-lumping"
+    ],
+    "relational": "One's own standing and another's are taken together (立己 with 立人); the method (方) takes the near case, oneself, as the likeness for the other. The relation runs both ways and the self is one pole of it.",
+    "reading": "AI 的读法：“己欲立而立人”说自己的立与他人的立一起成立，不以排除对方为条件。脊柱给出它成立的确切范围：同样的成员，三种走法——两者都超取则都终结，一方取尽则另一方被排除，各取其一则合取在所给之内、三者都持续（Excluding.three_courses）；合取在所给之内，水平永不下降（Flow.level_kept）。但各自可保持不等于共同可保持（ChoicePoint.each_not_joint），且没有任何依据各自情况的规则能判定共同情况（no_rule_decides_joint）。“能近取譬”是以自身为模型推及他人：这种推及恰在世界在这个归并上同样变化之处才正确（Learning.lumped_right_iff）。所以经文的“立人”在合取不超出所给、且他人与己在相关处同样变化时成立，不是普遍成立。",
+    "reading_en": "Establishing oneself together with others holds exactly where joint taking stays within what is given (three courses, level kept); each being keepable does not make both keepable, and taking oneself as the likeness for another is right only where the other goes alike across that lumping.",
+    "gap": null
+  },
+  {
+    "id": "ru-lunyu-shu",
+    "tradition": "《论语》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0099-S001",
+      "E0011",
+      "KR1002"
+    ],
+    "source_id": "R01",
+    "text_path": "evidence/texts/R01.txt",
+    "locator": "卫灵公·24（又见颜渊·2）",
+    "fragments": [
+      "其恕乎！己所不欲，勿施于人。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Learning.selects_right_through",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Relabel.valued_alike_iff",
+      "Becoming.Learning.lumped_right_iff",
+      "Becoming.Flow.act_unselected"
+    ],
+    "records": [
+      "selection-through-a-model-of-the-options",
+      "generalization-through-lumping",
+      "the-gap-for-ones-own-act"
+    ],
+    "relational": "恕 selects what one does to another through one's own valuation: the other is modelled as like oneself. The relation is real (施于人), but it is read through a model centred on the self.",
+    "reading": "AI 的读法：恕是通过自己的好恶来选择施于他人的行为，即通过一个把他人与己归为一类的模型来选择。脊柱的结构：通过一个映射选择，恰在所关心的性质在映射归并处取同值时才正确（selects_right_through、lumped_right_iff）；映射把两项归并而所关心的性质在其中一项成立、另一项不成立时，没有任何经由这个映射的选择能把它们分开，那需要更细的映射（selects_not_right_of_parted）；两个选项被每个经由映射的估值同样看待，恰在映射把它们绑在一起时（Relabel.valued_alike_iff）。所以“己所不欲勿施于人”在他人的好恶与己在相关处同样变化时可靠；在他人与己不同之处，它会系统地看不见差别。否定形式（勿施）比肯定形式要求更少，但同样受这个范围限制。",
+    "reading_en": "恕 selects acts toward another through one's own valuation, a model lumping the other with oneself; the spine says such selection is right exactly where what matters goes alike across that lumping and blind wherever the lumping ties what differs for the other.",
+    "gap": null
+  },
+  {
+    "id": "ru-lunyu-he-er-bu-tong",
+    "tradition": "《论语》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0050-S001",
+      "C0054-S001",
+      "E0001",
+      "KR1000"
+    ],
+    "source_id": "R01",
+    "text_path": "evidence/texts/R01.txt",
+    "locator": "子路·23",
+    "fragments": [
+      "君子和而不同，小人同而不和。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.pool_adds",
+      "Becoming.withinClosureOf_iff",
+      "Becoming.Law.Merges.loses",
+      "Becoming.Law.Merges.not_both_return",
+      "Becoming.ScopedReach.alternating_beyond_scopes"
+    ],
+    "records": [
+      "what-pooled-coupling-reaches",
+      "recurrence-without-premise",
+      "attraction-is-not-returning"
+    ],
+    "relational": "和 holds differing parties in one relation; 同 makes them alike. What differentiates is kept within the joint, not removed by it.",
+    "reading": "AI 的读法：和是不同者在一个关系中相持，同是使之相同。脊柱上：池化的耦合所增加的恰是差别——成员在某处耦合不同，池化的选择就能做到任何单一成员做不到的选择（Web.pool_adds），而池化闭包恰是成员闭包的并（withinClosureOf_iff），所以相同成员的池化什么也不增加；两个构形被合并，二者不能都回返（Merges.not_both_return），有限构形中合并永久丢失一个可能（Merges.loses）；交替的不同范围能到达任一范围单独到不了之处（alternating_beyond_scopes）。这与“和而不同”的结构相同：保留差别的共同关系比求同多出可达之处。经文是对君子与小人相处方式的评价，脊柱只给出结构，不给出“君子”“小人”的评价。",
+    "reading_en": "A joint that keeps its members different reaches what no member reaches (the pool adds exactly the difference), while making alike merges and loses possibilities; this is the structure of 和而不同, without the passage's evaluation of persons.",
+    "gap": null
+  },
+  {
+    "id": "ru-lunyu-zheng-ming",
+    "tradition": "《论语》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0051-S001",
+      "E0028",
+      "E1051",
+      "KR1020"
+    ],
+    "source_id": "R01",
+    "text_path": "evidence/texts/R01.txt",
+    "locator": "子路·3",
+    "fragments": [
+      "名不正，则言不顺；言不顺，则事不成",
+      "刑罚不中，则民无所措手足"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.carries_law_iff",
+      "Becoming.Twins.naming_not_identifiesAlike",
+      "Becoming.IdentifiesAlike.carries",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Web.rename_tenure"
+    ],
+    "records": [
+      "projection-carrying-a-law",
+      "process-and-frame-as-readings",
+      "selection-through-a-model-of-the-options"
+    ],
+    "relational": "Names, speech, affairs, rites and penalties are linked as a chain of conditions; a fault in naming propagates to whether people can act at all. The relation is between a naming and what it is used to coordinate.",
+    "reading": "AI 的读法：前两环有脊柱对应：一个投影（命名）恰在被它归为同类的构形同样变化时承载一条规律（carries_law_iff），这时描述才“顺”；把在一切关系中都相同的两个后继区分开来的命名不成立（Twins.naming_not_identifiesAlike）；命名把应当分开的东西绑在一起时，经由它的选择无法选对（selects_not_right_of_parted），这是“事不成”的结构。同时标签本身什么也不承载（Web.rename_tenure 等：改名保持由关系定义的读法），所以“正”不是找到一个本来正确的名字，而是命名与它所归并之物的变化相合。后面的环（礼乐不兴→刑罚不中→民无所措手足）是经文断言的连锁，脊柱不证明。经文语境中的“正名”还指名分（君臣之名），由施政者来正，这一点理论不支持：命名的合宜在于是否承载规律，不在于谁来定。",
+    "reading_en": "The first links hold on the spine: a naming carries a law exactly where what it lumps goes alike, and a naming tying what differs makes selection through it fail; the further chain to penalties and people's conduct is asserted, and the authority that rectifies names is not a structure the theory supports.",
+    "gap": null
+  },
+  {
+    "id": "ru-xunzi-ming-wu-gu-yi",
+    "tradition": "《荀子·正名》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0051-S003",
+      "E0149",
+      "KR1108",
+      "KR1109"
+    ],
+    "source_id": "IS05",
+    "text_path": "evidence/texts/IS05.txt",
+    "locator": "正名篇",
+    "fragments": [
+      "名无固宜，约之以命，约定俗成谓之宜，异于约则谓之不宜。",
+      "同则同之，异则异之。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.rename_renewingIn",
+      "Becoming.Web.rename_tenure",
+      "Becoming.Twins.naming_not_identifiesAlike",
+      "Becoming.IdentifiesAlike.carries",
+      "Becoming.carries_law_iff"
+    ],
+    "records": [
+      "identity-across-steps",
+      "projection-carrying-a-law",
+      "process-and-frame-as-readings"
+    ],
+    "relational": "A name's fit is not in the thing (无固宜) but formed in joint use (约定俗成); yet naming must follow sameness and difference among things (同则同之，异则异之). Fit is a relation between users, names and what goes alike.",
+    "reading": "AI 的读法：两半各有脊柱对应。“名无固宜”：标签什么也不承载——改名保持一切由关系定义的读法（Web.rename_renewingIn、Web.rename_tenure）。“同则同之，异则异之”：命名把在一切关系中都相同的东西分开就不成立（Twins.naming_not_identifiesAlike），而在构形由相似决定之处，成立的描述承载一条规律（IdentifiesAlike.carries、carries_law_iff）。所以名的“宜”由约定，名的“实”由同异，二者并不冲突，这与脊柱的结构相同。剩余：荀子接着说“其民莫敢托为奇辞以乱正名”，由王者制名并禁止乱名，把约定的形成交给单一中心；而约定在众多使用者之间如何形成、如何保持，脊柱没有定理（见 gap）。",
+    "reading_en": "Names have no fixed fit (labels carry nothing; renaming keeps every relationally defined reading) yet must follow sameness and difference (a naming that tells apart what is alike does not make sense); how a shared naming forms among many users, which Xunzi hands to the king, has no law on the spine.",
+    "gap": {
+      "statement": "For a finite list of formations each holding a naming map n_i : Config → Name at every step, and a law of naming in which each formation's next map is read through its couplings (for instance: adopt the map of the least-indexed formation it couples with, itself included), prove (1) the maps come to rest all alike from some step on exactly where the coupling closure of every formation is the whole, and give the exact bound on the step; (2) for every renaming σ of names, the run from σ ∘ n reaches σ ∘ (the rest reached from n), so the configurations named fix no name (名无固宜); and (3) the shared map reached carries a law exactly where configurations alike under it go alike (carries_law_iff), so fit (宜) and carrying (实) are independent conditions.",
+      "nearest": [
+        "Becoming.Web.rename_tenure",
+        "Becoming.Twins.naming_not_identifiesAlike",
+        "Becoming.carries_law_iff",
+        "Becoming.withinClosureOf_iff",
+        "Becoming.Contextual.glues_iff_agree"
+      ],
+      "why_it_matters": "The spine shows that labels carry nothing but has no law of how a joint naming forms and holds through use; shared readings between people and between people and AI systems are exactly such joint namings, and Xunzi's own text shows the alternative (a single centre fixing names) that the theory would need to answer structurally."
+    }
+  },
+  {
+    "id": "ru-xunzi-qun-fen-yi",
+    "tradition": "《荀子·王制》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0005-S002",
+      "C0034-S002",
+      "C0054-S004",
+      "E0140",
+      "KR0101",
+      "KR0102",
+      "KR0103"
+    ],
+    "source_id": "IS01",
+    "text_path": "evidence/texts/IS01.txt",
+    "locator": "王制篇",
+    "fragments": [
+      "人何以能群？曰：分。分何以能行？曰：义。",
+      "故义以分则和，和则一，一则多力，多力则彊，彊则胜物"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.WithinJoint",
+      "Becoming.Flow.level_kept",
+      "Becoming.Exceeding.own_not_joint",
+      "Becoming.Flow.joint_excess_ends",
+      "Becoming.Excluding.three_courses"
+    ],
+    "records": [
+      "own-count-misses-joint-excess",
+      "what-taking-all-excludes",
+      "relative-position-is-zero-sum"
+    ],
+    "relational": "The joint (群) is possible through division (分) made to hold by fitness (义). The parts differentiate within the joint; but the joint is then turned outward to overcome things (胜物).",
+    "reading": "AI 的读法：“群”以“分”为条件，有脊柱对应：各成员各取在所给之内（WithinOwn）不保证合取在所给之内（Exceeding.own_not_joint），合取在所给之内水平不降（Flow.level_kept），合取超出则依赖者终结（Flow.joint_excess_ends）；三种走法中只有分取的走法使全部持续（Excluding.three_courses）。所以“分”在合取被限制在所给之内时是共同延续的条件，这是成立的范围。剩余与分歧：经文接着把群的力量导向“胜物”，把其余视为要克服的对象；而且分在多个条件之间如何可行，脊柱只有单一条件的定律（见 gap）。",
+    "reading_en": "The joint holds through division where division keeps joint taking within what is given (own counts miss joint excess; within it the level is kept); Xunzi then turns the joint toward overcoming things, and division across several conditions has no law on the spine.",
+    "gap": {
+      "statement": "On a flow with finitely many conditions listed, let each formation f present at step t have a need n_f and a list A_f of conditions it can take from. A division at t assigns to each f amounts from the conditions in A_f summing to n_f. Prove: (1) a division with joint taking within what is given at every condition (Flow.WithinJoint at each c) exists exactly where, for every sublist S of the formations, the sum of their needs is at most the sum of what is given at the conditions some member of S can take from (a Hall-type condition, decided for finite lists, with no axiom); (2) under such a division at every step the level of every condition is kept (Flow.level_kept, conditionwise); (3) where the condition fails at a step, every taking that meets every need has joint excess at some condition, so Flow.joint_excess_ends applies there.",
+      "nearest": [
+        "Becoming.Flow.WithinJoint",
+        "Becoming.Flow.level_kept",
+        "Becoming.Excluding.three_courses",
+        "Becoming.Flow.joint_excess_ends",
+        "Becoming.Exceeding.own_not_joint"
+      ],
+      "why_it_matters": "Xunzi's claim that a joint lasts through division is the classical form of a structure the spine states only one condition at a time; the record relative-position-is-zero-sum lists several shared conditions with different needs as open, and the exact division condition would say when differentiation among parts, rather than restraint at one condition, keeps a joint."
+    }
+  },
+  {
+    "id": "ru-xunzi-li-qi-yu-fen",
+    "tradition": "《荀子·礼论》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0010-S002",
+      "KR1096",
+      "E1006"
+    ],
+    "source_id": "IS03",
+    "text_path": "evidence/texts/IS03.txt",
+    "locator": "礼论篇首",
+    "fragments": [
+      "求而无度量分界，则不能不争；争则乱，乱则穷。",
+      "使欲必不穷于物，物必不屈于欲。两者相持而长，是礼之所起也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Flow.joint_excess_ends",
+      "Becoming.Flow.joint_excess_ends_at",
+      "Becoming.Flow.level_kept",
+      "Becoming.Exceeding.own_not_joint",
+      "Becoming.Web.generation_needs_replenishment"
+    ],
+    "records": [
+      "own-count-misses-joint-excess",
+      "what-taking-all-excludes",
+      "generation-is-replenishment"
+    ],
+    "relational": "Wanting (欲) and things (物) are two sides of one relation: each must not exhaust the other, and both grow while they hold each other (相持而长). The bound (度量分界) is a bound on the relation, not on either side alone.",
+    "reading": "AI 的读法：“求而无度量分界……乱则穷”与脊柱的合取超取定律同构：合取超出所给的每一步都使水平下降，在更新依赖于被更新者时，降到需要之下的合取超取终结依赖它的形成（Flow.joint_excess_ends、joint_excess_ends_at），而各自不超取并不防止合取超取（Exceeding.own_not_joint）。“两者相持而长”对应合取在所给之内时水平不降（Flow.level_kept），以及生成携带补充的要求（Web.generation_needs_replenishment）。经文把这一界限归于“先王”制礼；脊柱只给出界限是延续的条件，不给出谁来定界。",
+    "reading_en": "Seeking without a measured bound exhausts what it draws on, while wants and things that hold each other both grow: the spine's joint-excess law and its converse (joint taking within what is given keeps the level) have exactly this structure, though who sets the bound is not part of it.",
+    "gap": null
+  },
+  {
+    "id": "ru-xunzi-gui-jian-you-deng",
+    "tradition": "《荀子·礼论》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0162-S002",
+      "E8425",
+      "KR9024"
+    ],
+    "source_id": "IS03",
+    "text_path": "evidence/texts/IS03.txt",
+    "locator": "礼论篇·养与别",
+    "fragments": [
+      "君子既得其养，又好其别。曷谓别？曰：贵贱有等，长幼有差，贫富轻重皆有称者也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.RelativePosition.positions_balance",
+      "Becoming.RelativePosition.rise_needs_fall",
+      "Becoming.RelativePosition.not_all_rise",
+      "Becoming.Flow.ends_at_race_end",
+      "Becoming.Flow.level_kept"
+    ],
+    "records": [
+      "relative-position-is-zero-sum",
+      "own-count-misses-joint-excess"
+    ],
+    "relational": "After nurture (养), 礼 adds distinction (别): graded positions (贵贱有等). The positions are relative to one another; the grading is asserted as part of what 礼 keeps.",
+    "reading": "AI 的读法：荀子在“养”之外加上“别”，把贵贱的等级当作礼所维持的东西。脊柱对相对位置有无前提的定律：一个部分相对其余的位置按计数是零和的（RelativePosition.positions_balance），没有任何变化使每个部分的位置上升（not_all_rise），一个部分的上升需要另一个部分的下降（rise_needs_fall）；而在合取超取中终结一个部分的是它对条件的依赖，不是它的位置（Flow.ends_at_race_end）。延续所需的是合取在所给之内（Flow.level_kept），这不需要任何等级。所以“养”的部分与脊柱一致（见 ru-xunzi-li-qi-yu-fen），“别”的部分是理论没有的断言：等级不承载延续，且按计数是零和的。注意“分”（分工、分取）与“等”（位置的贵贱）是两件事，此条只针对后者。",
+    "reading_en": "Xunzi adds graded rank (别) to nurture (养) as what 礼 keeps; on the spine relative position is zero-sum by counting and what ends a part is its dependence, not its position, while continuation needs only joint taking within what is given, so the rank is asserted, not carried by the structure.",
+    "gap": null
+  },
+  {
+    "id": "ru-xunzi-xing-e",
+    "tradition": "《荀子·性恶》（经，附杨倞注）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0152",
+      "E0153",
+      "KR1115"
+    ],
+    "source_id": "IS06",
+    "text_path": "evidence/texts/IS06.txt",
+    "locator": "性恶篇首（〈〉内为杨倞注）",
+    "fragments": [
+      "人之性恶，其善者伪也。",
+      "伪，为也，矫也，矫其本性也。",
+      "故圣人化性而起伪"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.significance_undetermined",
+      "Becoming.adaptive_state_law_iff",
+      "Becoming.Pace.rule_at_reading",
+      "Becoming.same_histories_iff",
+      "Becoming.Learning.no_prefix_fixes_next"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "how-fast-a-rule-may-change",
+      "histories-fix-law-up-to-dead-ends"
+    ],
+    "relational": "性 is what is given; 伪 is what is formed by acting. Xunzi's 化性 makes nature changeable within relations of practice, but 性恶 assigns the given a fixed negative value before any relation.",
+    "reading": "AI 的读法：此条有两层。经文“化性而起伪”说性可被化，是形成的而非固定的（见 ru-xunzi-zheng-ming-wei-cheng 的一致条）。但“人之性恶”给未经形成的所与先赋一个价值，这是理论不做的：被表示的动力学不蕴含任何意义（Web.significance_undetermined），一个规律在活的步骤之外持有什么，没有历史显示（same_histories_iff），前缀不固定下一步（no_prefix_fixes_next）。理论中“规则改变状态的规律”只在规则对状态没有差别处才有状态自己的规律（adaptive_state_law_iff），规则只在读取步改变（Pace.rule_at_reading），这些都不给所与定善恶。杨倞注“矫其本性”比经文更强：把伪读成矫正一个固定的本性，是注的层次，不是荀子的“化”。分歧对称地适用于孟子的性善（见 ru-mengzi-xing-shan）。",
+    "reading_en": "化性而起伪 makes nature formed rather than fixed, which the spine supports; but 性恶 gives the unformed given a value before any relation, which the theory does not assert (the dynamics fix no significance), and Yang Liang's gloss 矫其本性 hardens it further into a fixed nature to be bent.",
+    "gap": null
+  },
+  {
+    "id": "ru-xunzi-zheng-ming-wei-cheng",
+    "tradition": "《荀子·正名》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0018-S001",
+      "E1005",
+      "KR1101",
+      "KR1102",
+      "KR1103"
+    ],
+    "source_id": "IS05",
+    "text_path": "evidence/texts/IS05.txt",
+    "locator": "正名篇·性情虑伪",
+    "fragments": [
+      "不事而自然谓之性。",
+      "心虑而能为之动谓之伪；虑积焉，能习焉，而后成谓之伪。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Pace.rule_at_reading",
+      "Becoming.Pace.rule_kept",
+      "Becoming.adaptive_state_law_iff",
+      "Becoming.Captured.rule_perturbation_changes",
+      "Becoming.Law.perturbation_reabsorbed"
+    ],
+    "records": [
+      "how-fast-a-rule-may-change",
+      "target-capture",
+      "projection-carrying-a-law"
+    ],
+    "relational": "性 is what goes of itself; 伪 is formed when deliberation accumulates and practice settles (虑积…能习…而后成). A formation's working law is itself formed in its relations of practice.",
+    "reading": "AI 的读法：“虑积焉，能习焉，而后成”与脊柱的规则形成结构相同：规则只在读取步改变，读取步的下一条规则由那里的快构形给出（Pace.rule_at_reading），其余步保持（Pace.rule_kept）；状态只在规则对它没有差别时才有自己的规律（adaptive_state_law_iff）；扰动规则改变结果（Captured.rule_perturbation_changes），而只扰动状态在下一步就被吸收（Law.perturbation_reabsorbed）。所以“伪”对应的是被形成的规则，“性”对应的是规则不起作用时状态自己的走向。这支持“性不是固定的”：一个形成的有效规律是在实践中形成的。脊柱不说所成之伪为善。",
+    "reading_en": "What goes of itself (性) and what accumulated deliberation and practice form (伪) match the spine's rule formed at reading steps over a state with its own law only where the rule makes no difference; the effective law is formed, not fixed, though nothing here makes the formed rule good.",
+    "gap": null
+  },
+  {
+    "id": "ru-xunzi-tian-xing-you-chang",
+    "tradition": "《荀子·天论》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0154",
+      "E1007",
+      "KR1116"
+    ],
+    "source_id": "IS07",
+    "text_path": "evidence/texts/IS07.txt",
+    "locator": "天论篇首",
+    "fragments": [
+      "天行有常，不为尧存，不为桀亡。应之以治则吉，应之以乱则凶。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.significance_undetermined",
+      "Becoming.exists_law_iff",
+      "Becoming.Law.alike_iff_sameFuture",
+      "Becoming.Run.fixes_of_takes",
+      "Becoming.Flow.Balances.comparison_within_response"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "experiment-needs-return",
+      "comparison-where-the-rest-responds"
+    ],
+    "relational": "天 is a regular course (常) that does not answer to anyone's worth; outcomes come from how one responds to it (应之). 天 and the responding part are read in one course, with no will on 天's side.",
+    "reading": "AI 的读法：“天行有常，不为尧存，不为桀亡”对应：规律从展开中读出，某个确定的规律容纳一段历史恰在这段历史一致之处（exists_law_iff），确定规律下构形相同恰在其未来相同（Law.alike_iff_sameFuture），而动力学本身不蕴含任何意义或评价（Web.significance_undetermined）。“应之以治则吉”对应：走过的一步被固定（Run.fixes_of_takes），比较在部分的回应可达范围内决定（comparison_within_response）。这是与董仲舒“天意”（见 ru-dongzhongshu-tian-yi）相反的一条：天不是意志。注意：经文后半转向“制天命而用之”（见 ru-xunzi-zhi-tian-ming），那一部分是分歧。",
+    "reading_en": "Heaven's course is regular and answers to no one's worth, while outcomes follow from the response: the spine reads laws off the unfolding with no significance in the dynamics and fixes outcomes by the moves taken, the opposite of 天 as a will.",
+    "gap": null
+  },
+  {
+    "id": "ru-xunzi-zhi-tian-ming",
+    "tradition": "《荀子·天论》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0156"
+    ],
+    "source_id": "IS07",
+    "text_path": "evidence/texts/IS07.txt",
+    "locator": "天论篇末",
+    "fragments": [
+      "大天而思之，孰与物畜而制之！从天而颂之，孰与制天命而用之！"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Flow.beyond_influence",
+      "Becoming.Web.break_not_bounded",
+      "Becoming.Clearing.loses_beyond",
+      "Becoming.Flow.consequence_unselected",
+      "Becoming.Overshoot.ends_through_feeder"
+    ],
+    "records": [
+      "feedback-and-reach",
+      "runaway-distance-unregistered",
+      "loss-beyond-a-region",
+      "feeding-closure"
+    ],
+    "relational": "Here the relation to the rest is one of keeping and using (物畜而制之、制天命而用之): the rest becomes material for one part's purposes.",
+    "reading": "AI 的读法：这一句把人与其余的关系读成“畜而制之”“制而用之”，其余是供一个部分使用的材料。脊柱给出的结构与之相冲突：一个部分不能控制超出其影响闭包之外的东西（Flow.beyond_influence），断点之前没有任何耦合进来的东西界定还有多远（Web.break_not_bounded），自身行为超出耦合闭包的后果不被选中（Flow.consequence_unselected），一个部分可以在自身与其来源之内保持一切而在其外失去（Clearing.loses_beyond），而喂养闭包之内的损失会经由喂养者回到自身（Overshoot.ends_through_feeder）。所以“制天命而用之”所设想的制驭超出部分的可达范围，并把整体当作部分的资源，这是分歧，不是同一结构。",
+    "reading_en": "Treating the rest as material to be kept and used conflicts with the spine: a part cannot steer beyond its influence closure, cannot register how far off a break is, and can keep everything within itself and its source while losing beyond it.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-jian-niu-wei-jian-yang",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "梁惠王上·7",
+    "fragments": [
+      "是乃仁术也，见牛未见羊也。",
+      "是以君子远庖厨也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.Flow.act_unselected",
+      "Becoming.Flow.consequence_unselected",
+      "Becoming.Web.SelectsThrough.widen",
+      "Becoming.Web.observed_level_couples"
+    ],
+    "records": [
+      "selection-through-registration",
+      "the-gap-for-ones-own-act",
+      "testing-within-registration"
+    ],
+    "relational": "The response (不忍) follows what is seen: the ox is coupled into the king's perception, the sheep is not. The relation that moves is the one registered.",
+    "reading": "AI 的读法：“见牛未见羊”与脊柱的选择盲区同构：在耦合闭包之外，经由闭包内任何形成的选择对有无该部分一视同仁（Flow.unselected_beyond_coupling）；行为只在无人耦合的条件上不同，则行为者自身也不能把两种走向分开（Flow.act_unselected），行为超出闭包的后果不被任何成员选中（Flow.consequence_unselected）；在一个条件中的任何差别，凡以水平耦合进来，就使历史不同（observed_level_couples），更多耦合使选择保持并扩大（SelectsThrough.widen）。分歧点：孟子接着说“君子远庖厨”，即安排自己不去耦合，这在脊柱上是缩小选择所经的耦合，它不保持羊或牛的延续，只是使回应不形成。",
+    "reading_en": "The king's mercy follows what is coupled into his seeing (the ox, not the sheep), as the spine's selection is blind beyond the coupling closure; Mencius' advice to keep away from the kitchen narrows the coupling, which keeps no animal alive and only keeps the response from forming.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-ce-yin",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0014-S002",
+      "E0036",
+      "KR1027"
+    ],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "公孙丑上·6",
+    "fragments": [
+      "今人乍见孺子将入于井，皆有怵惕恻隐之心；非所以内交于孺子之父母也，非所以要誉于乡党朋友也"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.Balances.comparison_within_response",
+      "Becoming.Flow.WithinResponse",
+      "Becoming.Web.observed_level_couples",
+      "Becoming.Flow.beyond_gives_nothing",
+      "Becoming.Flow.withinInfluence_of_withinFeeding"
+    ],
+    "records": [
+      "comparison-where-the-rest-responds",
+      "testing-within-registration",
+      "feeding-closure",
+      "levels-of-closure"
+    ],
+    "relational": "The child's danger enters what the onlooker registers, and the response arises there, not through what the onlooker depends on (非所以内交…). The response runs beyond one's feeding closure.",
+    "reading": "AI 的读法：脊柱给出这一段成立的确切范围。回应只能在登记所及之处形成：凡以水平耦合进来的差别使历史不同（observed_level_couples），比较在部分的回应可达范围之内决定（comparison_within_response、WithinResponse）。孟子强调这回应不经由利害（非所以内交、非所以要誉），即不在喂养闭包内：喂养闭包外的东西不给自己所需之物任何东西（Flow.beyond_gives_nothing），但喂养闭包在影响闭包之内（withinInfluence_of_withinFeeding），所以对陌生孩子的危险的登记在影响闭包内是可能的。脊柱不能给出的是“皆有”：回应在 Response 中是被供给的前提，PoolResponse 证明耦合不固定回应（什么也不交换的规律经由每个耦合）。所以“人皆有恻隐之心”在登记与回应这两层上，登记是必要条件且可证，回应的普遍性是断言。",
+    "reading_en": "Mencius' response to the child beyond any interest fits the spine's range (registration needs coupling and may lie beyond the feeding closure but within influence), yet that every person has it is not derived: response is a supplied premise and coupling does not fix it.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-tui-en",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "梁惠王上·7",
+    "fragments": [
+      "故推恩足以保四海，不推恩无以保妻子。",
+      "善推其所为而已矣。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Overshoot.ends_through_feeder",
+      "Becoming.Flow.beyond_gives_nothing",
+      "Becoming.Flow.Balances.consumption_ends_with_feeders",
+      "Becoming.Renewable.kept_part_not_renewal",
+      "Becoming.Web.SelectsThrough.widen"
+    ],
+    "records": [
+      "feeding-closure",
+      "levels-of-closure",
+      "conditions-kept-together"
+    ],
+    "relational": "Care extends from the near outward (推); keeping the nearest depends on what lies further out. The near and the far are one web of dependence.",
+    "reading": "AI 的读法：“不推恩无以保妻子”有确切的脊柱范围：一个形成的延续依赖其喂养闭包；闭包内的损失可以经由喂养者回到一个本已保持自身支持的形成（Overshoot.ends_through_feeder），喂养者都无支持的消耗至多持续其所消耗者的水平那么多步（consumption_ends_with_feeders）。所以当妻子的延续依赖于恩所未及之处时，不推则不保，这是成立的。“推恩足以保四海”是充分性的断言，脊柱给出反例结构：在每一走法下保持一个部分的活动，既不决定更新，也不决定这次运行对其他形成做什么（Renewable.kept_part_not_renewal）。“推”作为选择的扩大有对应（SelectsThrough.widen），但扩大选择不等于保住所及之物。",
+    "reading_en": "Not extending care cannot keep even the nearest, where the nearest depends on what care has not reached (a loss within the feeding closure returns through a feeder); that extension suffices to keep the whole is not derived, since keeping a part decides neither renewal nor what the run does to others.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-qinqin-renmin-aiwu",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0012-S001",
+      "E0058",
+      "E1022",
+      "KR1044",
+      "KR1045"
+    ],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "尽心上·45",
+    "fragments": [
+      "君子之于物也，爱之而弗仁；于民也，仁之而弗亲。亲亲而仁民，仁民而爱物。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Flow.withinInfluence_of_withinFeeding",
+      "Becoming.Transfer.unordered",
+      "Becoming.Clearing.centers_disagree",
+      "Becoming.Lexical.Above",
+      "Becoming.BoundaryInvariant",
+      "Becoming.unrestricted_iff_presupposed_along"
+    ],
+    "records": [
+      "levels-of-closure",
+      "whole-first-and-bounded-centers",
+      "presupposition-scopes",
+      "protection-priority-excludes-uniform-aggregation"
+    ],
+    "relational": "Responses are graded by relation (亲→仁→爱) and extend to all things; nothing is excluded, but the grade falls with distance from the centre. The relational field is whole; the measure on it is centred.",
+    "reading": "AI 的读法：一致的部分：嵌套确实存在（喂养闭包在影响闭包内：Flow.withinInfluence_of_withinFeeding），而且孟子的序列延伸到“物”，不排除任何东西，比以自身依赖为界的读法更宽。分歧的部分：把这种嵌套读成回应或意义的等差。延续条件下混合的部分无序（Transfer.unordered：排序需要一个度量）；以依赖为界的不同中心彼此不一致（Clearing.centers_disagree）；在不变性的步骤下，从一个立场在边界内有意义只能通过对一切有意义（unrestricted_iff_presupposed_along、BoundaryInvariant）。脊柱有两层的字典序（Lexical.Above）作为定义，但没有按闭包层级分层的序，也没有它在各立场间是否一致的定理。所以差等是被断言的度量；理论能说的只是：次第是“触及”的事实，不是“意义”的度量（见 gap）。",
+    "reading_en": "Mencius' gradient (kin, people, things) includes everything but grades it by nearness; the spine has the nesting of closures yet leaves mixed parts unordered under the continuation condition and finds bounded centres disagreeing, and it has no order graded by closure level nor a theorem on whether such an order is the same from every standpoint.",
+    "gap": {
+      "statement": "For a web, a centre p and its closures (feeding ⊆ influence ⊆ reach ⊆ system ⊆ whole), let tier_p(f) be the least closure level from p holding f, and let Above_p be the lexical order on level paths that compares retained continuations with significance tier by tier from the nearest (the n-tier extension of Lexical.Above). Prove: (1) Above_p is a strict partial order that orders pairs the continuation condition leaves unordered (Transfer.unordered becomes ordered under Above_p); (2) Above_p and Above_q agree on two level paths exactly where tier_p and tier_q agree in order on the formations where the paths differ, with the clearer's web (Clearing.centers_disagree) as the instance where they part; (3) a tiering is BoundaryInvariant at every standpoint exactly where it is constant on every connected component, so under the invariance step the graded order collapses to the continuation condition's comparisons.",
+      "nearest": [
+        "Becoming.Lexical.Above",
+        "Becoming.Lexical.tierFrame",
+        "Becoming.Transfer.unordered",
+        "Becoming.Clearing.centers_disagree",
+        "Becoming.BoundaryInvariant",
+        "Becoming.Flow.withinInfluence_of_withinFeeding"
+      ],
+      "why_it_matters": "差等 (graded care by nearness) is the most used relational ethic in the Confucian line and the sharpest test of the invariance step; the theorem would say exactly which part of graded care survives (an order of attention that follows reach) and which does not (a standpoint-relative measure of significance), instead of leaving the comparison to prose."
+    }
+  },
+  {
+    "id": "ru-mengzi-si-duan-kuo-chong",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0040",
+      "KR1028"
+    ],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "公孙丑上·6",
+    "fragments": [
+      "凡有四端于我者，知皆扩而充之矣，若火之始然，泉之始达。",
+      "茍能充之，足以保四海；茍不充之，不足以事父母。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.responds_to_own_level",
+      "Becoming.Closing.Threshold.forms",
+      "Becoming.carried_le_polynomial_before",
+      "Becoming.carried_runaway",
+      "Becoming.Closing.Threshold.unforeseen"
+    ],
+    "records": [
+      "how-loops-form",
+      "how-a-carried-difference-grows",
+      "loops-within-what-a-law-reads"
+    ],
+    "relational": "The four beginnings are responses already in relation; extending them (扩充) lets them grow like a fire catching or a spring breaking through. Growth is of a responsiveness within relations, not of a substance.",
+    "reading": "AI 的读法：“若火之始然，泉之始达”的结构在脊柱上是回路的形成：一个交换开始回应它所给予的水平时形成一个自环（responds_to_own_level），在阈值处回路形成并从此加倍（Closing.Threshold.forms、carried_runaway），回路形成之前所携带的量至多是多项式的（carried_le_polynomial_before），而到达阈值之前的进程不显示它会不会形成（Threshold.unforeseen）。所以“端”经扩充而自我维持地增长，在回路形成的条件下成立。范围的修正：增长本身是中性的，脊柱上同样的结构也给出失控；“足以保四海”“不足以事父母”是断言，脊柱只说扩充前后增长的形态不同。",
+    "reading_en": "Beginnings that, once extended, grow like a fire catching match the spine's loop forming at a threshold and doubling thereafter (before it, growth is at most polynomial); the same structure also gives runaway, and that extension suffices to keep the four seas is asserted.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-niu-shan",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "告子上·8",
+    "fragments": [
+      "人见其濯濯也，以为未尝有材焉，此岂山之性也哉？",
+      "茍得其养，无物不长；茍失其养，无物不消。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.generation_needs_replenishment",
+      "Becoming.Confound.misattributes",
+      "Becoming.Learning.no_prefix_fixes_next",
+      "Becoming.Run.not_fixes_of_untaken",
+      "Becoming.Flow.joint_excess_ends"
+    ],
+    "records": [
+      "generation-is-replenishment",
+      "experiment-needs-return",
+      "learning-by-refutation"
+    ],
+    "relational": "The bare mountain is the outcome of a history of cutting and grazing against nightly regrowth; what one sees now is read wrongly as the mountain's nature. 性 is read off a history, and the history is relational (斧斤、牛羊、雨露).",
+    "reading": "AI 的读法：两点都有脊柱定律。其一，生成携带补充的要求：在后来的步骤仍有成员出现的族群，补充反复出现（Web.generation_needs_replenishment），而反复的取用超过补充会终结依赖者（Flow.joint_excess_ends），这是“得其养则长，失其养则消”。其二，“以为未尝有材”是错误的归因：错误的投影把不造成任何差别的东西读成差别（Confound.misattributes），前缀不固定下一步（no_prefix_fixes_next），未走过的一步不被固定（Run.not_fixes_of_untaken）——从濯濯的现状推断“性”就是从一段记录推断一条规律。这一段读出的性是历史的结果，与告子上·2“水之就下”的固定性相反（见 ru-mengzi-xing-shan）。",
+    "reading_en": "The bare mountain is the record of cutting and grazing outrunning regrowth, not the mountain's nature: the spine's laws that generation needs replenishment and that a record misattributes and fixes no untaken move carry this exactly.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-xing-shan",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0097-S102",
+      "KR9031",
+      "KR9035"
+    ],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "告子上·2",
+    "fragments": [
+      "人性之善也，犹水之就下也。人无有不善，水无有不下。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.significance_undetermined",
+      "Becoming.same_histories_iff",
+      "Becoming.Learning.no_prefix_fixes_next",
+      "Becoming.adaptive_state_law_iff",
+      "Becoming.Law.drawn_iff_not_returns"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "histories-fix-law-up-to-dead-ends",
+      "learning-by-refutation"
+    ],
+    "relational": "Nature is given a fixed direction with a value (善), like water's fixed tendency downward; the relations that act on it (搏而跃之) are treated as deflections of a prior tendency.",
+    "reading": "AI 的读法：此句给人性一个先于关系的固定方向并赋予价值，以水之就下作比。理论不断言这一点：被表示的动力学不蕴含意义（Web.significance_undetermined），规律在活的步骤之外持有什么没有历史显示（same_histories_iff），状态只在规则不起作用时有自己的规律（adaptive_state_law_iff）。若把“就下”读成吸引，脊柱也只说每个规律吸引恰是不回返者（Law.drawn_iff_not_returns），吸引本身不是善。孟子自己在下文承认“搏而跃之，可使过颡”，即走向由作用于它的关系决定。分歧与荀子“性恶”对称：两者都在关系之前给所与定值。",
+    "reading_en": "Mencius gives human nature a fixed, valued direction like water flowing down; the theory gives the given no value before relations (the dynamics fix no significance), and Mencius' own next line, that water can be made to leap, concedes that the course depends on what acts on it.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-wanwu-jiebei-jinxin",
+    "tradition": "《孟子》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0056",
+      "KR1192"
+    ],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "尽心上·1、尽心上·4",
+    "fragments": [
+      "尽其心者，知其性也。知其性，则知天矣。",
+      "万物皆备于我矣，反身而诚，乐莫大焉。强恕而行，求仁莫近焉。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Frame.self_incomplete",
+      "Becoming.Diagonal.claims_incomplete",
+      "Becoming.Flow.beyond_influence",
+      "Becoming.Web.Excludes.not_of_alike",
+      "Becoming.Flow.region_not_a_cut"
+    ],
+    "records": [
+      "testing-within-registration",
+      "feedback-and-reach",
+      "conveyance-crosses-the-boundary"
+    ],
+    "relational": "The self is read as holding its relations to all things (皆备于我), and knowing one's heart is read as a route to knowing 天. The whole is approached from within the self, then carried outward by 恕.",
+    "reading": "AI 的读法：一个读法成立，一个不成立。成立的：一个延续族群的区域不是切口，传递离开它（Flow.region_not_a_cut），所以“我”由与万物的关系构成，在这个意义上万物之关系“备于我”。不成立的：从自身穷尽整体。脊柱上，以自身构形为断言的框架没有一个构形实现所有关于构形的断言模式（Frame.self_incomplete、Diagonal.claims_incomplete）；一个断言只能经由耦合进来的差别被排除（Web.Excludes.not_of_alike）；影响闭包之外的东西从不与闭包成员所依赖的条件交换（Flow.beyond_influence）。所以“尽心知性知天”在部分的登记与影响所及之内成立，超出这个范围的“知天”不是由反身所能得到的。孟子紧接着说“强恕而行”，即还要向他人走出去，这与范围的修正方向一致。",
+    "reading_en": "That the self is made of its relations to all things holds (a continuing family's region is not a cut); that turning inward exhausts the whole does not, since no frame realizes every claim about itself and nothing beyond one's influence closure registers, so knowing 天 through one's heart holds only within one's reach.",
+    "gap": null
+  },
+  {
+    "id": "ru-mengzi-tian-bu-yan",
+    "tradition": "《孟子》（经，引《泰誓》）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "R02",
+    "text_path": "evidence/texts/R02.txt",
+    "locator": "万章上·5",
+    "fragments": [
+      "天不言，以行与事示之而已矣。",
+      "天视自我民视，天听自我民听"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.exists_law_iff",
+      "Becoming.Law.alike_iff_sameFuture",
+      "Becoming.Web.pooled_iff_member",
+      "Becoming.Flow.unselected_beyond_pool",
+      "Becoming.Clearing.pool_closes_gap"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "what-pooled-coupling-reaches"
+    ],
+    "relational": "天 does not speak; what 天 'gives' is read off acts and events and through the seeing and hearing of the people. 天 is read through relations, not as a speaker.",
+    "reading": "AI 的读法：“天不言，以行与事示之”对应规律从展开中读出（exists_law_iff、Law.alike_iff_sameFuture），没有一个在历史之外发话的来源。“天视自我民视”对应池化的登记：经由单一成员耦合的选择等于经由池化耦合的选择，恰在该成员视为相同的，每个成员也都视为相同之处（Web.pooled_iff_member），否则池化多出单一中心看不见的分别；池外的东西不被池化选择选中（unselected_beyond_pool），把被影响者纳入池中可以补上单一中心的盲区（Clearing.pool_closes_gap）。所以天在这里是经由众人的登记读出的，不是意志。剩余：孟子仍说“天与之”“天受之”，保留了给予者的语法；脊柱只承接“示之以行与事”的结构。",
+    "reading_en": "Heaven does not speak and is read off acts and events and through the people's seeing: the spine reads laws off the unfolding and pools registration across members, while Mencius' remaining grammar of 天 giving is not carried.",
+    "gap": null
+  },
+  {
+    "id": "ru-daxue-ben-mo",
+    "tradition": "《礼记·大学》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0128-S001",
+      "C0129-S001",
+      "E0062",
+      "E0065",
+      "KR1057",
+      "KR1058",
+      "KR1059"
+    ],
+    "source_id": "R03",
+    "text_path": "evidence/texts/R03.txt",
+    "locator": "大学经一章",
+    "fragments": [
+      "心正而后身修，身修而后家齐，家齐而后国治，国治而后天下平。",
+      "其本乱而末治者否矣。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.AdmitsWithin.narrow",
+      "Becoming.Web.includes_iff_within_every",
+      "Becoming.Viability.kernel_and_iff",
+      "Becoming.Clearing.loses_beyond",
+      "Becoming.Viability.ChoicePoint.each_not_joint",
+      "Becoming.whole_not_in_pairs"
+    ],
+    "records": [
+      "loss-beyond-a-region",
+      "conditions-kept-together",
+      "separation-loses-the-relation"
+    ],
+    "relational": "Heart, person, household, state and world are nested; order is said to pass from the inner to the outer, and disorder at the root rules out order at the branches. The nesting is relational; the passage asserts a direction of conditioning.",
+    "reading": "AI 的读法：经文含两个方向，脊柱分别给出。必要性方向（“其本乱而末治者否矣”：外有序则内有序）成立：一个部分的水平在一个区域内容纳的，在其内的每个区域都容纳（Web.AdmitsWithin.narrow），包含恰是在每个区域内成立（includes_iff_within_every）；对每一走法都不离开的守护而言，共同守护恰是各自守护（Viability.kernel_and_iff）。充分性方向（“身修而后家齐…”）不普遍成立：可以在自身与来源之内保持一切而在其外失去（Clearing.loses_beyond），各自可保持而共同不可保持（ChoicePoint.each_not_joint），而且外层的关系可以由整体持有而不由任何部分持有（whole_not_in_pairs）。所以大学的次第作为条件链是“内是外的必要条件”，不是“内足以致外”；atlas 自己的界限说明也指出它不是经验证明的普遍因果链。",
+    "reading_en": "The necessity direction (no ordered branches with a disordered root) holds, since what holds within a region holds within every region inside it; the sufficiency chain (an ordered person orders the household and outward) fails in general, since a part can keep everything within itself and its source while losing beyond, and the outer relation can be held by the whole and by no part.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhongyong-zhi-zhong-he",
+    "tradition": "《礼记·中庸》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "R04",
+    "text_path": "evidence/texts/R04.txt",
+    "locator": "中庸首章",
+    "fragments": [
+      "喜怒哀乐之未发，谓之中；发而皆中节，谓之和。",
+      "致中和，天地位焉，万物育焉。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Flow.Balances.admits_unreached",
+      "Becoming.Flow.Balances.comparison_within_reach",
+      "Becoming.Flow.WithinReach",
+      "Becoming.Clearing.loses_beyond",
+      "Becoming.Web.AdmitsWithin.narrow"
+    ],
+    "records": [
+      "comparison-within-reach",
+      "feedback-and-reach",
+      "loss-beyond-a-region"
+    ],
+    "relational": "The measure of a part's responses (中节) is set in relation to the whole (天地位、万物育). The passage links the part's balance to the whole's order.",
+    "reading": "AI 的读法：“发而皆中节”是部分的回应保持在度之内；“致中和，天地位焉，万物育焉”把部分的中和与整体的位育连起来。脊柱给出这一联系成立的范围：部分未触及的东西，有它无它同样被容纳（Flow.Balances.admits_unreached），任何覆盖部分可达范围的意义，比较有无它的水平时与延续条件一致（comparison_within_reach）。所以部分的中和决定的是它可达范围之内的位育；超出可达范围的天地之位不由它决定，而且部分可以在其内保持一切而在其外失去（Clearing.loses_beyond）。范围的修正：这是“在所及之内”的命题，不是“致中和即天地位”。朱熹注把它读成“天地万物本吾一体”，那是注的层次（见程颢“一体”条）。",
+    "reading_en": "A part's measured responses decide what lies within its reach (what it does not reach is admitted alike with and without it), so 致中和 orders 天地 and 万物 only within that reach, not as such.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhongyong-bing-yu-bing-xing",
+    "tradition": "《礼记·中庸》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0075",
+      "KR1194"
+    ],
+    "source_id": "R04",
+    "text_path": "evidence/texts/R04.txt",
+    "locator": "中庸·仲尼祖述段",
+    "fragments": [
+      "万物并育而不相害，道并行而不相悖。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Excluding.three_courses",
+      "Becoming.Flow.level_kept",
+      "Becoming.Viability.Plan.zip_keeps",
+      "Becoming.Viability.ChoicePoint.no_rule_decides_joint",
+      "Becoming.Contextual.glues_iff_agree",
+      "Becoming.Specker.no_whole"
+    ],
+    "records": [
+      "what-taking-all-excludes",
+      "joint-plan-composition",
+      "conditions-kept-together",
+      "gluing-under-parity",
+      "contextual-registration"
+    ],
+    "relational": "Many things grow together without harming one another; many ways run side by side without contradiction. Plurality is held within one whole.",
+    "reading": "AI 的读法：两半各有一个成立的范围。“并育而不相害”：同样的成员可以分取而全部持续，也可以一方取尽而排除另一方（Excluding.three_courses），合取在所给之内水平不降（Flow.level_kept）；两部分的计划同时运行，在联合步投影到各部分、计划相容时保持两者的守护（Viability.Plan.zip_keeps），但没有依据各自可保持性的规则判定共同可保持性（no_rule_decides_joint）。“并行而不相悖”：各语境所显示的恰在交界处一致时才拼合（Contextual.glues_iff_agree），而各语境各自一致仍可以不是任何整体的部分（Specker.no_whole）。所以经文描述的“天地之所以为大”在这些条件下成立，不是无条件的。",
+    "reading_en": "Growing together without harm holds where joint taking stays within what is given and plans are compatible, and ways running side by side without contradiction hold where readings agree where contexts meet; neither is unconditional.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhongyong-cheng-zi-cheng",
+    "tradition": "《礼记·中庸》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "R04",
+    "text_path": "evidence/texts/R04.txt",
+    "locator": "中庸·诚者自成段",
+    "fragments": [
+      "诚者自成也；而道，自道也。",
+      "诚者，物之终始，不诚无物。",
+      "成己，仁也；成物，知也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.SelfBearing.stands",
+      "Becoming.Web.SelfBearing.met_iff",
+      "Becoming.Web.Whole.needs_arising",
+      "Becoming.Web.Embodied.replenishes",
+      "Becoming.Web.change_readings"
+    ],
+    "records": [
+      "whole-persists-through-generation",
+      "generation-is-replenishment",
+      "coming-and-ceasing-keep-pace"
+    ],
+    "relational": "诚 is self-completing (自成) and is the beginning and end of things; completing oneself is already completing things (成物). Self and things are formed in one movement.",
+    "reading": "AI 的读法：“自成”在脊柱上的对应是：依赖于自身的具身关系项在活动期间作为条件存立（Web.SelfBearing.stands），它的自我依赖恰在它活动时被满足，不记录活动以外的任何东西（SelfBearing.met_iff）。“物之终始，不诚无物”对应：出现与消失是同一变化的三种读法（Web.change_readings），一个整体只经由其部分不断生成而持续（Web.Whole.needs_arising）。“成己…所以成物”对应：具身成员的出现补充其族群（Web.Embodied.replenishes）。范围：脊柱中的“自成”只是活动本身，记录不了更多；经文中诚作为“天之道”与“至诚无息”的德性含义，以及“成己”必然“成物”，不由这些定律给出。",
+    "reading_en": "Self-completion matches a self-bearing relatum standing while active (its self-dependence records nothing beyond activity), and 不诚无物 matches a whole persisting only through its parts' generation; 诚 as the way of heaven, and that completing oneself always completes things, go beyond these laws.",
+    "gap": null
+  },
+  {
+    "id": "ru-liyun-da-tong-xiao-kang",
+    "tradition": "《礼记·礼运》（经）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0028-S001",
+      "E0009",
+      "E0076",
+      "KR1072"
+    ],
+    "source_id": "R05",
+    "text_path": "evidence/texts/R05.txt",
+    "locator": "礼运篇首",
+    "fragments": [
+      "故人不独亲其亲，不独子其子",
+      "力，恶其不出于身也，不必为己。",
+      "各亲其亲，各子其子，货力为己"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.bounded_whole",
+      "Becoming.Flow.within_closure_iff_retains",
+      "Becoming.Clearing.centers_disagree",
+      "Becoming.Clearing.free_rider_loses",
+      "Becoming.unrestricted_iff_presupposed_along"
+    ],
+    "records": [
+      "whole-first-and-bounded-centers",
+      "feeding-closure",
+      "presupposition-scopes",
+      "axiom-decomposition"
+    ],
+    "relational": "大同 does not bound care by one's own kin (不独亲其亲) and does not direct effort to oneself (不必为己); 小康 bounds both by the household (各亲其亲、为己). Two ways of drawing the region within which continuation counts.",
+    "reading": "AI 的读法：大同与小康在脊柱上对应两种边界的划法。小康的“各亲其亲，货力为己”是以各自依赖为界的意义：以依赖为界的中心容许搭便车者并彼此不一致（Clearing.centers_disagree、free_rider_loses）。大同的“不独亲其亲”是以整体为界的意义：以整体为界的意义就是延续条件（bounded_whole）；在一个形成的喂养闭包是整体之处，两者在每个比较上一致（Flow.within_closure_iff_retains），否则分开。从小康到大同需要的是不变性的步骤（unrestricted_iff_presupposed_along），这是条件，理论不断言它。范围的修正：经文把大同说成过去曾行之道，是叙述，不是推导；脊柱只说两种边界各给出什么，以及它们在哪里分开。",
+    "reading_en": "小康 bounds care by the household and 大同 by the whole: the spine shows bounded centres license the free rider and disagree, that significance bounded by the whole is the continuation condition, and that the move from one to the other is the invariance step, a condition the theory does not assert.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhoudunyi-shi",
+    "tradition": "周敦颐《通书》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0042-S004",
+      "E0223",
+      "E6003",
+      "KR6007",
+      "KR6008"
+    ],
+    "source_id": "S01",
+    "text_path": "evidence/texts/S01.txt",
+    "locator": "势第二十七",
+    "fragments": [
+      "极重不可反。识其重而亟反之，可也。反之，力也。识不早，力不易也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Law.drawn_iff_not_returns",
+      "Becoming.Law.DrawnInto.never_back",
+      "Becoming.Widening.closes_within",
+      "Becoming.Widening.closes_within_exact",
+      "Becoming.Web.break_not_bounded"
+    ],
+    "records": [
+      "attraction-is-not-returning",
+      "whether-a-loop-closes-a-difference",
+      "runaway-distance-unregistered"
+    ],
+    "relational": "势 is the weighting of the whole's tendencies (轻重); reversal depends on recognizing the weight early. What can be done depends on where the course already is.",
+    "reading": "AI 的读法：三处都有脊柱定律。“极重不可反”：每个规律吸引的恰是不回返的构形（Law.drawn_iff_not_returns），被吸入的不再回来（DrawnInto.never_back）。“识不早，力不易”：一个低于所接收的回返映射在差额那么多轮内闭合，这个界是确切的（Widening.closes_within、closes_within_exact）——偏得越多，收回所需越多。“识”之难：断点之前没有任何耦合进来的东西界定还有多远（Web.break_not_bounded）。所以周敦颐说的是吸引、闭合的轮数与登记的界限，与脊柱同构。“天乎？人也”把责任归于人，这一归属脊柱不处理。",
+    "reading_en": "Extreme weight cannot be reversed, reversal takes force, and late recognition makes it harder: the spine proves that what is drawn in never returns, that closing a difference takes as many turns as the difference, and that nothing coupled in bounds the distance to the break.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhangzai-tai-xu-ji-qi",
+    "tradition": "张载《正蒙·太和》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0141-S003",
+      "E0197",
+      "KR6028"
+    ],
+    "source_id": "S02",
+    "text_path": "evidence/texts/S02.txt",
+    "locator": "太和篇第一",
+    "fragments": [
+      "气之聚散于太虚，犹冰凝释于水，知太虚即气，则无无。",
+      "太虚不能无气，气不能不聚而为万物，万物不能不散而为太虚。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Web.change_readings",
+      "Becoming.Web.arising_recurs_iff",
+      "Becoming.keep_pace",
+      "Becoming.Web.Whole.needs_arising",
+      "Becoming.Web.Whole.arises_part"
+    ],
+    "records": [
+      "coming-and-ceasing-keep-pace",
+      "whole-persists-through-generation",
+      "process-and-frame-as-readings"
+    ],
+    "relational": "Gathering and dispersing are one process in one continuum (太虚即气); there is no void apart from it (无无). Things are passing forms (客形) of one unfolding.",
+    "reading": "AI 的读法：“聚散”“凝释”是同一变化：出现与消失、形成与解散、存立与不存立是同一变化的三种读法（Web.change_readings）；有限族群中出现反复恰在消失反复时（arising_recurs_iff），任一段中出现与消失之差至多为成员数（keep_pace）；整体只经由部分的生成而持续（Whole.needs_arising）。“太虚不能无气……不能不散而为太虚”的循环与这些定律同构。剩余：张载的“气”可被读成一种基质，脊柱不设任何基质，只有活动、依赖与存立的变化；此条只承接“一个连续体中的聚散”这一结构，不承接气作为质料。",
+    "reading_en": "Gathering and dispersing in one continuum match the spine's reading of arising and ceasing as one change, recurring together in a finite family; the spine carries the structure, not 气 as a stuff.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhangzai-min-bao-wu-yu",
+    "tradition": "张载《正蒙·乾称》（西铭）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0215",
+      "E6024",
+      "KR6097"
+    ],
+    "source_id": "S05",
+    "text_path": "evidence/texts/S05.txt",
+    "locator": "乾称篇第十七·西铭段（atlas 篇名作“干称”）",
+    "fragments": [
+      "故天地之塞，吾其体；天地之帅，吾其性。民吾同胞，物吾与也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Flow.region_not_a_cut",
+      "Becoming.Flow.boundary_crossed",
+      "Becoming.Brood.descent_connected",
+      "Becoming.Flow.descent_reaches",
+      "Becoming.Web.Whole.arises_part"
+    ],
+    "records": [
+      "conveyance-crosses-the-boundary",
+      "living-on-and-descent",
+      "whole-persists-through-generation"
+    ],
+    "relational": "One's body is what fills heaven and earth and one's nature what leads them; people are siblings and things companions. The self is a place in the whole, and kinship is extended along the whole's generation.",
+    "reading": "AI 的读法：“天地之塞，吾其体”对应：延续族群的区域不是切口，传递穿过边界（Flow.region_not_a_cut、boundary_crossed）。“民吾同胞”对应：每一代由前一代给出的世代由后裔相连（Brood.descent_connected），在关系中立的条件下，看重一个形成的任何事件会到达其后裔的每个活事件（Flow.descent_reaches）。所以“同胞”“吾与”在结构上是同源与边界不成切口。剩余与分歧：西铭接着说“大君者，吾父母宗子；其大臣，宗子之家相也”，把整体组织成家族的尊卑角色，这一层是断言的等级，不在脊柱上；Flow.descent_reaches 还依赖关系中立这个前提。",
+    "reading_en": "My body as what fills heaven and earth and all people as siblings match the spine's results that a continuing family's region is no cut and that generations are connected by descent; the household ranking the 西铭 then lays over the whole is asserted, not carried.",
+    "gap": null
+  },
+  {
+    "id": "ru-chenghao-yi-ti",
+    "tradition": "程颢（《近思录》卷一第20条）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0014-S003",
+      "E0227",
+      "KR6082"
+    ],
+    "source_id": "S06",
+    "text_path": "evidence/texts/S06.txt",
+    "locator": "卷一第20条（程颢语）",
+    "fragments": [
+      "仁者以天地万物为一体，莫非己也。",
+      "如手足不仁，气已不贯"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.BoundaryInvariant",
+      "Becoming.unrestricted_iff_presupposed_along",
+      "Becoming.boundaryInvariant_iff_conditional",
+      "Becoming.Web.observed_level_couples",
+      "Becoming.Flow.unselected_beyond_coupling"
+    ],
+    "records": [
+      "presupposition-scopes",
+      "axiom-decomposition",
+      "whole-first-and-bounded-centers",
+      "selection-through-registration"
+    ],
+    "relational": "仁 is to take heaven, earth and all things as one body with oneself; 不仁 is numbness, the loss of connection (气已不贯). The self's region is drawn at the whole.",
+    "reading": "AI 的读法：内容上一致，地位上分歧。“手足不仁，气已不贯”的结构在脊柱上成立：凡以水平耦合进来的差别才使历史有别（Web.observed_level_couples），耦合闭包之外选择是盲的（Flow.unselected_beyond_coupling）——麻木就是耦合断了。“以天地万物为一体”对应：把自己的边界画在整体，在每个容许区域上不变的前提，恰是延续条件（unrestricted_iff_presupposed_along、BoundaryInvariant），而不变性恰是从前提到延续条件的条件句（boundaryInvariant_iff_conditional）。分歧在地位：程颢把一体说成仁之所是，是体认到的事实；理论把它作为延续条件加上不变性的步骤，条件本身不被断言，其根据与必要性是开放的。",
+    "reading_en": "Numbness as lost connection matches the spine (only what couples in registers), and taking all things as one body with oneself matches the continuation condition reached by the invariance step; but Cheng Hao states it as what 仁 is, while the theory holds it as a condition it does not assert.",
+    "gap": null
+  },
+  {
+    "id": "ru-chenghao-sheng-yi",
+    "tradition": "二程（《近思录》卷一第22–23条，传统归程颢）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "S06",
+    "text_path": "evidence/texts/S06.txt",
+    "locator": "卷一第22–23条",
+    "fragments": [
+      "观天地生物气象。",
+      "万物之生意最可观，此元者善之长也。斯可谓仁也。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.significance_undetermined",
+      "Becoming.g0_of_unrestricted",
+      "Becoming.Web.widens_iff_retains_adds",
+      "Becoming.Unrestricted",
+      "Becoming.Transfer.unordered"
+    ],
+    "records": [
+      "comparison-by-widening",
+      "one-axiom-yields-g0",
+      "significance-retained-within-margin"
+    ],
+    "relational": "One observes the whole's generating (生物气象) and names the vitality of things (生意) the first of goods (善之长) and 仁. Generation is seen in relation and then valued.",
+    "reading": "AI 的读法：内容上与条件下的定理一致，地位上分歧。在延续条件之下，生命意义在每个框架上对每种“生”的读法成立（g0_of_unrestricted），把“更好”读作保持并增加有意义者时就是扩大可形成者（Web.widens_iff_retains_adds），这与“生意……善之长”的内容相合。但理论不断言条件（Unrestricted 只是一个前提）：在无物有意义处每条路径保持每条路径，动力学不蕴含生命意义（Web.significance_undetermined）；条件本身不排序，混合的部分无序（Transfer.unordered），排序在于把扩大称为更好（C）和不变性的步骤。王夫之引“程子谓雞雛可以觀仁”，读作“觀天地化機之仁也”（V4SO001），同样把生成称为仁，是另一层的读法。所以“生即仁”在理论中是条件下的定理，在程颢是直接的认取。",
+    "reading_en": "Naming the vitality of things the first of goods and 仁 agrees in content with theorems under the continuation condition, but the theory holds the condition unasserted and the dynamics fix no value, so Cheng Hao's direct identification diverges in status (Wang Fuzhi's reading of the chick passage does the same on another layer).",
+    "gap": null
+  },
+  {
+    "id": "ru-chengyi-gan-ying",
+    "tradition": "二程（《近思录》卷一第12条；第34条明道语）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "S06",
+    "text_path": "evidence/texts/S06.txt",
+    "locator": "卷一第12条、第34条",
+    "fragments": [
+      "有感必有应。凡有动皆为感，感则必有应。所应复为感，所感复有应，所以不已也。",
+      "天地之间，只有一个感与应而已。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Widening.loop_kept",
+      "Becoming.Widening.closing_needs_less",
+      "Becoming.Widening.nothing_between",
+      "Becoming.forms_by_closing",
+      "Becoming.Flow.Balances.comparison_within_response"
+    ],
+    "records": [
+      "whether-a-loop-closes-a-difference",
+      "how-loops-form",
+      "comparison-where-the-rest-responds"
+    ],
+    "relational": "Every movement is a stimulus that gets a response, and the response becomes a new stimulus: the whole is one web of mutual response (只有一个感与应), unceasing because it loops.",
+    "reading": "AI 的读法：“所应复为感，所感复有应，所以不已”是一个回路。脊柱给出“不已”成立的确切条件：每个环节至少传出所接收的，回路就保持差别（Widening.loop_kept）；回路闭合需要某个环节传出少于所接收（closing_needs_less）；整数强度下回路要么在第一轮闭合、要么保持、要么失控，没有中间（nothing_between）；回路由连接一条链的耦合闭合而形成（forms_by_closing）。所以感应不已恰在没有环节衰减时成立。“有感必有应”作为普遍断言是前提：在 Response 中回应是被供给的，而比较在回应可达范围内决定（comparison_within_response）。“天地之间只有一个感与应”是关系本体的强表述，脊柱的回路定律承接其结构，不承接其普遍性。",
+    "reading_en": "Response becoming stimulus again is a loop, and the spine gives the exact condition for 不已: a loop keeps a difference where no link gives back less, and closing needs such a link; that every stimulus is answered is a supplied premise, not a theorem.",
+    "gap": null
+  },
+  {
+    "id": "ru-chengyi-fu-tiandi-zhi-xin",
+    "tradition": "程颐《周易程氏传》复卦彖注（易道包 CL-CY-011）",
+    "atlas": "yidao-v1.3",
+    "atlas_ids": [
+      "CL-CY-011"
+    ],
+    "source_id": "YD-CY2",
+    "text_path": "evidence/texts/YD-CY2.txt",
+    "locator": "复卦·彖传注",
+    "fragments": [
+      "一陽復於下乃天地生物之心也",
+      "盖不知動之端乃天地之心也"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Law.lossless_iff_returns",
+      "Becoming.Flow.whole_not_new_of_rest_idle",
+      "Becoming.Flow.new_from_rest_or_open",
+      "Becoming.Law.rests_iff",
+      "Becoming.Web.arising_recurs_iff"
+    ],
+    "records": [
+      "recurrence-without-premise",
+      "where-novelty-gain-comes-from",
+      "seeking-boundary"
+    ],
+    "relational": "Return (复) is the first stirring of movement at the bottom; the whole's 'heart' is seen in the beginning of movement, not in stillness. Generation is read in the course of return.",
+    "reading": "AI 的读法：程颐把复卦的一阳来复读作“天地生物之心”，并纠正以静见天地之心的旧说：天地之心在“动之端”。脊柱对应：有限构形中无损的规律恰是回返的规律（Law.lossless_iff_returns），有界整体中不断的生成是回返（Flow.whole_not_new_of_rest_idle），新的东西由其余或跨边界给出（new_from_rest_or_open）；“静”不是停止：规律的止息由一个满足目标的停留步刻画（Law.rests_iff），那仍是一步。所以“动之端”而非“静”与脊柱一致。范围与分歧：把回返称为“天地生物之心”赋予天地一个“心”，这一语法脊柱不承接（见朱熹“无心之心”条）；回返本身也不是善。",
+    "reading_en": "Cheng Yi sees the whole's 'heart' in the first stirring of return rather than in stillness; the spine agrees that lossless laws are exactly returning ones and that unceasing generation in a bounded whole is return, but does not carry the attribution of a heart to heaven and earth.",
+    "gap": null
+  },
+  {
+    "id": "ru-chengyi-xing-ji-li",
+    "tradition": "程颐（《近思录》卷一第38条）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0097-S004",
+      "E0199",
+      "KR6095"
+    ],
+    "source_id": "S06",
+    "text_path": "evidence/texts/S06.txt",
+    "locator": "卷一第38条（程颐语）",
+    "fragments": [
+      "性即理也。天下之理，原其所自，未有不善。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.exists_law_iff",
+      "Becoming.same_histories_iff",
+      "Becoming.Web.significance_undetermined",
+      "Becoming.Learning.goAlike_iff_lumped",
+      "Becoming.adaptive_state_law_iff"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "histories-fix-law-up-to-dead-ends",
+      "wisdom-root"
+    ],
+    "relational": "性 is identified with 理, and 理 at its origin is said to be wholly good. The law is placed before and above the course, and given a value at its source.",
+    "reading": "AI 的读法：两处分歧。其一，规律的地位：脊柱中规律从展开中读出，某个确定规律容纳一段历史恰在历史一致之处（exists_law_iff），两个规律容纳同样的历史恰在它们有同样的活的步骤之处，死端无历史显示（same_histories_iff）；理作为对结构与变化之规律的建模，是在归并下同样变化的东西（Learning.goAlike_iff_lumped）。“原其所自”把理放在历史之前，是理论没有的。其二，价值：“未有不善”给规律赋予源头上的善，而动力学不蕴含意义（Web.significance_undetermined）。这条与程颐“动之端”条不同：那条在变化中读心，这条在变化之前立理。",
+    "reading_en": "Identifying nature with 理 and calling 理 at its origin wholly good places the law before the course and gives it a value at its source; on the spine a law is read off histories (two laws admitting the same histories differ only in dead ends) and the dynamics carry no value.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhuxi-wu-xin-zhi-xin",
+    "tradition": "朱熹（《朱子语类》卷九十八，论西铭）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "S14",
+    "text_path": "evidence/texts/S14.txt",
+    "locator": "卷九十八·张子书一（西铭），人杰录",
+    "fragments": [
+      "安得谓天地无心、情乎！",
+      "程先生说‘天地以生物为心’，最好，此乃是无心之心也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Web.significance_undetermined",
+      "Becoming.exists_law_iff",
+      "Becoming.Law.alike_iff_sameFuture",
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.Web.generation_needs_replenishment"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "generation-is-replenishment",
+      "whole-first-and-bounded-centers"
+    ],
+    "relational": "Heaven and earth are said to have a heart, namely generating things, but a heart without a mind (无心之心): a direction of the whole with no deliberating centre.",
+    "reading": "AI 的读法：朱熹在“天地有心”与“天地无志”之间取了中间：天地以生物为心，但是“无心之心”。脊柱给出这一中间立场成立的范围：生成携带补充的要求（Web.generation_needs_replenishment），规律从展开中读出（exists_law_iff、Law.alike_iff_sameFuture），所以“以生物为心”可以读成整体之生成的规律性；中心不是沿依赖导出的（Clearing.center_not_derived），动力学不蕴含意义（Web.significance_undetermined），所以“无心”——没有一个审议的中心——与脊柱一致。范围的修正：朱熹仍用“心、情”的语法并反问“安得谓天地无心”，脊柱不承接这一语法；它承接的只是“无心之心”所指的无中心的规律性。",
+    "reading_en": "Zhu Xi's 'heart without a mind' reads the whole's generating as a direction with no deliberating centre, which the spine supports (laws read off the unfolding, no centre derived), while his insistence that heaven and earth do have a heart keeps a grammar the spine does not carry.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhuxi-li-yi-fen-shu",
+    "tradition": "朱熹（《朱子语类》卷九十八，论西铭）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0220",
+      "KR6035"
+    ],
+    "source_id": "S14",
+    "text_path": "evidence/texts/S14.txt",
+    "locator": "卷九十八·论西铭“理一而分殊”",
+    "fragments": [
+      "言理一而不言分殊，则为墨氏兼爱；言分殊而不言理一，则为杨氏为我。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Transfer.unordered",
+      "Becoming.Clearing.centers_disagree",
+      "Becoming.Clearing.free_rider_loses",
+      "Becoming.Contextual.indexed_fits",
+      "Becoming.Contextual.fitsFree_iff",
+      "Becoming.Lexical.Above"
+    ],
+    "records": [
+      "whole-first-and-bounded-centers",
+      "significance-retained-within-margin",
+      "contextual-registration",
+      "gluing-under-parity"
+    ],
+    "relational": "One pattern (理一) holds across differentiated positions (分殊): the same 理 gives different duties at different places in the relations. Both one and many are kept.",
+    "reading": "AI 的读法：朱熹指出两种失败，各有脊柱对应。“理一而不言分殊”：对一切有意义而无度量，混合的部分无序（Transfer.unordered：排序需要一个度量）。“分殊而不言理一”：以各自依赖为界的中心容许搭便车者并彼此不一致（Clearing.centers_disagree、free_rider_loses）。而“理一分殊”本身有一个成立的结构：语境索引的读法符合一切所示（Contextual.indexed_fits），而无语境的读法只在各语境一致时存在（fitsFree_iff）——同一规律在不同位置给出不同的读法。范围：脊柱给出“一规律、诸语境读法”的结构，但“分殊”所含的等差（亲疏之分）需要一个度量，脊柱只有两层字典序的定义（Lexical.Above），没有按关系层级分层的序（见孟子“亲亲而仁民”条的 gap）。层次：墨、杨在此是朱熹的论辩性概括，不是两家原文。",
+    "reading_en": "Zhu Xi's two failures match the spine (significance for all without a measure leaves mixed parts unordered; centres bounded by their own dependence disagree), and one law read differently in each context matches context-indexed readings; the grading inside 分殊 needs a measure the spine does not have.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhuxi-li-qi-er-wu",
+    "tradition": "朱熹（《朱子语录》，戴震《孟子字义疏证》注中所引）",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "V3Q01",
+    "text_path": "evidence/texts/V3Q01.txt",
+    "locator": "《孟子字义疏证》卷上·理，〈〉内引朱子语",
+    "fragments": [
+      "理與氣決是二物，但在物上看，則二物渾淪，不可分開各在一處，然不害二物之各為一物也。",
+      "則疑此氣是依傍道理行",
+      "若有理則止是個淨潔空闊底世界，無形跡，他卻不會造作"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.exists_law_iff",
+      "Becoming.same_histories_iff",
+      "Becoming.shown_determined_iff",
+      "Becoming.Run.keepHistory_shown",
+      "Becoming.Law.alike_iff_sameFuture"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "histories-fix-law-up-to-dead-ends"
+    ],
+    "relational": "理 and 气 are two things, inseparable in any thing yet each one thing; 气 'goes along' 理, and 理 alone would be a clean, empty world. Relations are read through two prior kinds, with 理 logically first.",
+    "reading": "AI 的读法：这是此线中最清楚的“两种实在”的结构，与脊柱冲突。脊柱上没有两种实在：过程与框架都是展开的读法；某个确定规律容纳一段历史恰在历史一致之处（exists_law_iff），一段历史所显示的规律恰在历史一致处是确定的（shown_determined_iff），保持其历史的运行所显示的规律只容纳这段历史（Run.keepHistory_shown），两个规律容纳同样历史恰在活的步骤相同时，规律在活的步骤之外持有的东西（死端）没有历史显示（same_histories_iff）。所以一个先于历史给出的“理”，相对于历史只多出从未走过的步；“净洁空阔底世界”在脊柱上没有对应物。朱熹自己在此留有余地（“不消如此說……皆不可得而推究”），说的是逻辑上的先后，不是时间上的；但即使是逻辑上的先在，也是理论所不立的。层次：这是戴震在注中引用的朱子语，用来批评，引用不是朱熹原书的上下文。",
+    "reading_en": "Zhu Xi's 理 and 气 as two things, with 气 going along 理 and 理 alone a clean empty world, is a two-realities structure the spine rejects: a law is read off the histories, and a law given before them adds only steps never taken.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhuxi-benyi-qi-li",
+    "tradition": "朱熹《周易本义》系辞上注（易道包 CL-ZX-011）",
+    "atlas": "yidao-v1.3",
+    "atlas_ids": [
+      "CL-ZX-011"
+    ],
+    "source_id": "YD-ZX7",
+    "text_path": "evidence/texts/YD-ZX7.txt",
+    "locator": "系辞上传·一阴一阳之谓道，本义注",
+    "fragments": [
+      "隂陽迭運者氣也其理則所謂道"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Learning.goAlike_iff_lumped",
+      "Becoming.Law.alike_iff_sameFuture",
+      "Becoming.carries_law_iff",
+      "Becoming.exists_law_iff",
+      "Becoming.same_histories_iff"
+    ],
+    "records": [
+      "wisdom-root",
+      "projection-carrying-a-law",
+      "process-and-frame-as-readings"
+    ],
+    "relational": "The alternation of yin and yang is the course (气); its pattern (理) is what the text calls 道. Pattern is read in the alternation.",
+    "reading": "AI 的读法：在这条注中，理是阴阳交替这一进程的“理”，即进程的规律性。脊柱对应：规律在确定规律下由“未来相同”读出（Law.alike_iff_sameFuture），理作为对结构与变化之规律的建模，是在归并下同样变化的东西（Learning.goAlike_iff_lumped），一个投影恰在其归并之物同样变化时承载规律（carries_law_iff）。在这一句的范围内，理是进程的规律，与脊柱一致。范围的修正：朱熹在同书别处说“卦爻隂陽皆形而下者其理則道也”（CL-ZX-014），把理放到形而上，与气分层，那就是“理气二物”的分歧（见 ru-zhuxi-li-qi-er-wu）。此条只取“迭运之理”这一义。",
+    "reading_en": "Here 理 is the pattern of the alternating course, which matches the spine's law read off what goes alike; elsewhere Zhu Xi places 理 above form, apart from 气, which is the divergence recorded separately.",
+    "gap": null
+  },
+  {
+    "id": "ru-zhuxi-ge-wu-bu-zhuan",
+    "tradition": "朱熹《大学章句》格物补传",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E6008",
+      "KR6016"
+    ],
+    "source_id": "S09",
+    "text_path": "evidence/texts/S09.txt",
+    "locator": "传第五章，朱熹补传",
+    "fragments": [
+      "莫不因其已知之理而益穷之，以求至乎其极。",
+      "至于用力之久，而一旦豁然贯通焉。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.Learning.no_prefix_fixes_next",
+      "Becoming.Learning.rest_unrefuted",
+      "Becoming.Diagonal.claims_incomplete",
+      "Becoming.Confound.varied_refutes",
+      "Becoming.Learning.diagonal_open"
+    ],
+    "records": [
+      "learning-by-refutation",
+      "identification-where-bounded",
+      "experiment-needs-return"
+    ],
+    "relational": "Knowing proceeds from 理 already known to more, thing by thing, until at once everything connects (贯通). Knower and things are related through investigation.",
+    "reading": "AI 的读法：“因其已知之理而益穷之”与脊柱的学习结构一致：以变化的行动反驳错误的投影（Confound.varied_refutes），在套索进程上，“消除会停下来”是未被反驳的，但前缀从不显示它停下了（Learning.rest_unrefuted、no_prefix_fixes_next）。“一旦豁然贯通”声称一个完成：众物表里精粗无不到。脊柱上没有一族由其所读者索引的断言能实现每一种断言模式（Diagonal.claims_incomplete），对角线始终开放（Learning.diagonal_open）。所以格物作为逐步的反驳与归并是成立的；豁然贯通作为“无不到”的完成超出范围，至多是“未被反驳的停下”。层次：这是朱熹为《大学》补写的传，不是经文。",
+    "reading_en": "Extending known patterns thing by thing matches learning by refutation; the sudden complete penetration (豁然贯通) exceeds it, since an end of refutation is unrefuted but never shown by a prefix and no family of claims realizes every pattern.",
+    "gap": null
+  },
+  {
+    "id": "ru-wangyangming-xin-wai-wu-li",
+    "tradition": "王守仁《传习录》上",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [],
+    "source_id": "S10",
+    "text_path": "evidence/texts/S10.txt",
+    "locator": "传习录上·32",
+    "fragments": [
+      "心外无理，心外无事。"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.unread_carried_nowhere",
+      "Becoming.Web.break_not_bounded",
+      "Becoming.Flow.consequence_unselected",
+      "Becoming.Flow.beyond_influence",
+      "Becoming.Frame.self_incomplete"
+    ],
+    "records": [
+      "loops-within-what-a-law-reads",
+      "runaway-distance-unregistered",
+      "the-gap-for-ones-own-act"
+    ],
+    "relational": "Pattern and affairs are said to have no place outside the heart: the relation between knower and world is folded into the knowing side.",
+    "reading": "AI 的读法：在传习录上卷的语境中，“心外无理”首先指行为之理（孝之理不在父身上），这一义见 WANG-YANGMING 章的整体重建，不在此重做。此条只取字面的普遍义：“心外无事”。脊柱上这是分歧：没有任何东西读取的差别不被带到任何地方，但它仍然在那里——储量仍高出 d（unread_carried_nowhere）；断点之前没有耦合进来的东西界定还有多远（Web.break_not_bounded）；自身行为超出耦合闭包的后果不被选中却照样发生（Flow.consequence_unselected）；影响闭包之外的东西从不与闭包内所依赖的条件交换（Flow.beyond_influence）。所以登记之外有事，且事之理不在登记之内穷尽（Frame.self_incomplete）。王夫之“目所不見非無色也”（见 ru-wangfuzhi-mu-suo-bu-jian）是此线内部的反驳。",
+    "reading_en": "Read as a general claim (no affairs outside the heart), this diverges from the spine, where a difference nothing reads is still there though carried nowhere and the consequences of one's act beyond one's coupling still occur; the narrower sense (the pattern of conduct lies in the responding relation) is left to the existing Wang Yangming chapter.",
+    "gap": null
+  },
+  {
+    "id": "ru-wangyangming-zhi-xing-he-yi",
+    "tradition": "王守仁《传习录》上",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E6009",
+      "KR6019"
+    ],
+    "source_id": "S10",
+    "text_path": "evidence/texts/S10.txt",
+    "locator": "传习录上·徐爱录",
+    "fragments": [
+      "知是行的主意，行是知的功夫；知是行之始，行是知之成。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Run.fixes_of_takes",
+      "Becoming.Run.not_fixes_of_untaken",
+      "Becoming.Run.generalizes",
+      "Becoming.Confound.varied_refutes",
+      "Becoming.Learning.no_prefix_fixes_next"
+    ],
+    "records": [
+      "experiment-needs-return",
+      "learning-by-refutation"
+    ],
+    "relational": "Knowing and acting are one process seen from two ends: knowing begins acting and acting completes knowing. Neither is a separate faculty.",
+    "reading": "AI 的读法：“行是知之成”与脊柱的实验结构一致：走过的一步被固定，每个容纳运行步骤的确定过程都把它送到运行所到之处（Run.fixes_of_takes）；未走过的一步不被固定（Run.not_fixes_of_untaken）；一次场合代表其类中的每个构形，恰在步骤经由投影成为确定过程之处（Run.generalizes）；以变化的行动反驳错误的投影（Confound.varied_refutes）。所以关于一个行动之结果的知，恰在行动中完成；未行之知是未固定的。WANG-YANGMING 章已有一个较早的整体重建（旧词汇、旧模块），此条把其中“知行”一点接到脊柱的实验定律上，不重做该章。",
+    "reading_en": "Acting completes knowing: on the spine a move taken is fixed and an untaken move is not, so knowledge of an act's outcome is completed only in taking it, which links the older Wang Yangming chapter to the experiment laws.",
+    "gap": null
+  },
+  {
+    "id": "ru-daizhen-li-qing-yu",
+    "tradition": "戴震《孟子字义疏证》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0152-S008",
+      "E0471",
+      "C0136-S005",
+      "E0473",
+      "KR6039"
+    ],
+    "source_id": "V3Q01",
+    "text_path": "evidence/texts/V3Q01.txt",
+    "locator": "卷上·理",
+    "fragments": [
+      "理也者，情之不爽失也；未有情不得而理得者也。",
+      "欲，其物；理，其則也。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Learning.lumped_right_iff",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Learning.goAlike_iff_lumped",
+      "Becoming.exists_law_iff",
+      "Becoming.carries_law_iff"
+    ],
+    "records": [
+      "generalization-through-lumping",
+      "selection-through-a-model-of-the-options",
+      "process-and-frame-as-readings",
+      "projection-carrying-a-law"
+    ],
+    "relational": "理 is the pattern of feelings and desires when they do not miss (不爽失); it is the rule (則) of the things themselves (欲，其物). Pattern lies in the relations of living beings, not above them.",
+    "reading": "AI 的读法：戴震的两句与脊柱同构。“欲，其物；理，其則”：规律是从所发生者读出的（exists_law_iff），一个投影恰在其归并之物同样变化时承载规律（carries_law_iff），理作为建模是归并下同样变化者（goAlike_iff_lumped），不是第二种实在。“理也者，情之不爽失也”：一个归并的推及恰在世界在其归并处取同值时才对（Learning.lumped_right_iff）；把情所区分的东西归为一类，经由它的选择无法选对（selects_not_right_of_parted）——“情不得而理得”在结构上不可能。这是对朱熹“理气二物”（见该条）的此线内部的反驳。",
+    "reading_en": "Dai Zhen's 理 as the rule of desires themselves and as feelings not missing matches the spine: a law is read off what happens, and a lumping is right exactly where what it lumps goes alike, so a 理 that misses feelings cannot select rightly.",
+    "gap": null
+  },
+  {
+    "id": "ru-daizhen-yi-li-sha-ren",
+    "tradition": "戴震《孟子字义疏证》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E0477"
+    ],
+    "source_id": "V3Q01",
+    "text_path": "evidence/texts/V3Q01.txt",
+    "locator": "卷上·理（十）",
+    "fragments": [
+      "尊者以理責卑，長者以理責幼，貴者以理責賤，雖失，謂之順",
+      "於是下之人不能以天下之同情、天下所同欲達之於上",
+      "人死於法，猶有憐之者；死於理，其誰憐之！"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Relabel.valued_alike_iff",
+      "Becoming.Learning.selects_not_right_of_parted",
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.Flow.unselected_beyond_pool",
+      "Becoming.Clearing.pool_closes_gap",
+      "Becoming.Flow.act_unselected_pool"
+    ],
+    "records": [
+      "selection-through-a-model-of-the-options",
+      "what-pooled-coupling-reaches",
+      "the-gap-for-ones-own-act"
+    ],
+    "relational": "One position's 理 is applied to others while their feelings and desires cannot reach it (不能…達之於上). The relation is one-way: the selection runs through one centre's model, and the others' registration is cut off.",
+    "reading": "AI 的读法：“以理杀人”的结构在脊柱上是：经由一个映射的每个估值对两个选项一视同仁，恰在映射把它们绑在一起时（Relabel.valued_alike_iff），经由它的选择不能分开它所绑在一起的（selects_not_right_of_parted）；选择在选择者的耦合闭包之外是盲的（Flow.unselected_beyond_coupling），一个池的行为对其耦合闭包之外的后果同样不被选中（act_unselected_pool）。戴震的对治“以天下之同情、天下所同欲”在结构上是池化：池外的东西不被池化选择选中（unselected_beyond_pool），池化可以补上单一中心的盲区（Clearing.pool_closes_gap）。“死于理，其谁怜之”说的是：当伤害被一个归并归入“合理”时，它在选择中消失了。",
+    "reading_en": "Killing by 理 is selection through one position's model that ties together what the others' feelings separate, with their registration cut off; the spine proves such selection blind to what the model ties and shows pooling the others' coupling closes the gap, which is Dai Zhen's remedy.",
+    "gap": null
+  },
+  {
+    "id": "ru-daizhen-gong-sui-qi-sheng",
+    "tradition": "戴震《孟子字义疏证》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0014-S006",
+      "KR6091"
+    ],
+    "source_id": "V3Q01",
+    "text_path": "evidence/texts/V3Q01.txt",
+    "locator": "卷下·仁义礼智",
+    "fragments": [
+      "仁者，生生之德也",
+      "一人遂其生，推之而與天下共遂其生，仁也。"
+    ],
+    "kind": "scope",
+    "declarations": [
+      "Becoming.unrestricted_iff_presupposed_along",
+      "Becoming.Flow.within_closure_iff_retains",
+      "Becoming.Excluding.three_courses",
+      "Becoming.Flow.level_kept",
+      "Becoming.g0_of_unrestricted"
+    ],
+    "records": [
+      "presupposition-scopes",
+      "axiom-decomposition",
+      "what-taking-all-excludes",
+      "one-axiom-yields-g0"
+    ],
+    "relational": "仁 is the virtue of continuing generation; one's own living on is extended to the living on of all together (共遂其生). The self's continuation and the whole's are one movement of extension.",
+    "reading": "AI 的读法：“一人遂其生，推之而与天下共遂其生”在脊柱上分两步。第一步，自身的延续依赖其喂养闭包；在喂养闭包是整体之处，有界的意义与延续条件在每个比较上一致（Flow.within_closure_iff_retains），否则需要不变性的步骤才从自身推到整体（unrestricted_iff_presupposed_along）。第二步，“共遂”可行的条件：合取在所给之内时全部持续（Excluding.three_courses、Flow.level_kept）。“仁者，生生之德也”把生生称为德，与条件下的定理同内容（g0_of_unrestricted），地位上是断言。所以此句在“推”需要不变性步骤、“共”需要合取在所给之内这两个条件下成立。",
+    "reading_en": "Extending one's own living on to all living on together needs the invariance step (or a feeding closure that is the whole) and is feasible where joint taking stays within what is given; calling continuing generation 仁 agrees in content with theorems under the condition, not with the theory's assertions.",
+    "gap": null
+  },
+  {
+    "id": "ru-huangzongxi-tianxia-wei-zhu",
+    "tradition": "黄宗羲《明夷待访录·原君》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "C0052-S002",
+      "E0482",
+      "KR6045",
+      "C0164-S005",
+      "E0481"
+    ],
+    "source_id": "V3Q02",
+    "text_path": "evidence/texts/V3Q02.txt",
+    "locator": "原君",
+    "fragments": [
+      "古者以天下為主，君為客",
+      "以我之大私為天下之大公。"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.Flow.TakesAll",
+      "Becoming.Flow.continuing_excludes",
+      "Becoming.Flow.full_taking_ends",
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.Clearing.centers_disagree"
+    ],
+    "records": [
+      "what-taking-all-excludes",
+      "whole-first-and-bounded-centers"
+    ],
+    "relational": "The whole (天下) is what is served; the one who holds office is a guest within it. The inversion (以君為主) makes one centre's own region pass for the whole.",
+    "reading": "AI 的读法：两处有脊柱定律。“以我之大私为天下之大公”：一个中心把自身区域当作整体，而中心不是沿依赖导出的（Clearing.center_not_derived），以依赖为界的中心彼此不一致（centers_disagree）。“天下之利尽归于己”的结构：一个取尽所给的形成若持续，旁边不留其他取者（Flow.continuing_excludes、TakesAll），取尽者与其他取者并存时，每个依赖者终结，取尽者自己也在内（Flow.full_taking_ends）。“天下为主，君为客”与此相反：部分在整体之中，不把整体当作自己的。此条只承接结构；经文的“古者”是叙述，不是推导。",
+    "reading_en": "Passing one's own region off as the whole matches the spine's centres not derived along dependence, and the one who takes all leaves no other taker and, alongside another, ends every dependent including itself; 天下为主 reverses this, though its 'in antiquity' is narrative.",
+    "gap": null
+  },
+  {
+    "id": "ru-dongzhongshu-tian-yi",
+    "tradition": "董仲舒《春秋繁露·深察名号》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E8405",
+      "KR9006"
+    ],
+    "source_id": "R5CM001",
+    "text_path": "evidence/texts/R5CM001.txt",
+    "locator": "深察名号篇·王教论证",
+    "fragments": [
+      "天生民性有善質而未能善，於是為之立王以善之，此天意也。",
+      "王承天意以成民之性為任者也"
+    ],
+    "kind": "divergence",
+    "declarations": [
+      "Becoming.Web.significance_undetermined",
+      "Becoming.Clearing.center_not_derived",
+      "Becoming.exists_law_iff",
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.Clearing.pool_closes_gap"
+    ],
+    "records": [
+      "process-and-frame-as-readings",
+      "whole-first-and-bounded-centers",
+      "what-pooled-coupling-reaches"
+    ],
+    "relational": "Heaven is an agent with intent (天意) that sets up one centre (王) to complete the nature of everyone else. The relation is top-down through a will.",
+    "reading": "AI 的读法：这是此线中“天作为意志”的最清楚的一处，与理论冲突。脊柱上规律从展开中读出（exists_law_iff），动力学不蕴含任何意义或意图（Web.significance_undetermined），中心不是沿依赖导出的（Clearing.center_not_derived）。“王承天意以成民之性”还把他者之性的形成交给一个中心，而单一中心的选择在其耦合闭包之外是盲的（Flow.unselected_beyond_coupling），池化才能补上（Clearing.pool_closes_gap）。对照：荀子“天行有常，不为尧存”（见该条）与孟子“天不言，以行与事示之”都离这一读法更远。",
+    "reading_en": "Heaven with an intent that installs one centre to complete everyone's nature is the clearest reading of 天 as a will in the line; the spine reads laws off the unfolding with no intent in the dynamics and derives no centre, and a single centre's selection is blind beyond its coupling.",
+    "gap": null
+  },
+  {
+    "id": "ru-wangfuzhi-mu-suo-bu-jian",
+    "tradition": "王夫之《思问录·内篇》",
+    "atlas": "atlas-v9.1",
+    "atlas_ids": [
+      "E6030",
+      "KR6053"
+    ],
+    "source_id": "R9FIXSW001",
+    "text_path": "evidence/texts/R9FIXSW001.txt",
+    "locator": "思问录内篇第一叶，目所不见段（同治四年金陵本）",
+    "fragments": [
+      "目所不見非無色也耳所不聞非無聲也言所不通非無義也"
+    ],
+    "kind": "agreement",
+    "declarations": [
+      "Becoming.unread_carried_nowhere",
+      "Becoming.Web.break_not_bounded",
+      "Becoming.Thresholds.Draw.forms_at_break",
+      "Becoming.Flow.unselected_beyond_coupling",
+      "Becoming.Learning.diagonal_open"
+    ],
+    "records": [
+      "loops-within-what-a-law-reads",
+      "runaway-distance-unregistered",
+      "subthreshold-registration"
+    ],
+    "relational": "What is not seen is not thereby absent: the seen and the unseen are in one world, and knowing that one does not know (知有其不知) is a relation to what lies beyond registration.",
+    "reading": "AI 的读法：与脊柱同构：没有任何东西读取的差别不被带到任何地方，但储量仍高出（unread_carried_nowhere）；断点之前没有耦合进来的东西界定它还有多远（Web.break_not_bounded）；断点前的规律对储量的耦合强度为零，而储量在回路上（Thresholds.Draw.forms_at_break）；选择在耦合闭包之外是盲的（Flow.unselected_beyond_coupling）。所以“不见”是登记的界限，不是世界的界限。这是此线内部对“心外无事”的反驳，也是“知有其不知”的结构：对角线始终开放（Learning.diagonal_open）。",
+    "reading_en": "What the eye does not see is not without colour: the spine proves a difference nothing reads is still there though carried nowhere, and nothing coupled in bounds the distance to a break, so the unseen is a limit of registration, not of the world.",
+    "gap": null
+  }
+]
