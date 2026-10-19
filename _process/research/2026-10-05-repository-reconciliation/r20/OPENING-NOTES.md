@@ -1,6 +1,6 @@
 # R20d: OPENING's notes checked against the Lean
 
-AI record, 19 October 2026, board item R20. Only the footnote definitions of [OPENING](../../../../theories/becoming/OPENING.md) changed; its body, in Ren's voice, is byte-identical. The corrections come from "Notes that need changes" in the [v7 proposal](../../../../drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md#notes-that-need-changes). Each cited declaration was read in `Becoming/` before its note was rewritten, and each note fits the body sentence it annotates now, not the proposed one.
+AI record, 19 October 2026, board item R20. Only the footnote definitions of [OPENING](../../../../theories/becoming/OPENING.md) changed; its body, in Ren's voice, is byte-identical. The corrections come from "Notes that need changes" in the [v7 proposal](../../../../drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md#notes-that-need-changes). Each cited declaration was read in `Becoming/` before its note was rewritten, and each note fits the body sentence it annotates now, not the proposed one.
 
 | Note | Change | Lean read |
 |---|---|---|

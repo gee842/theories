@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "batch": "opening-v7",
+  "date": "2026-10-19T10:44:12+00:00",
+  "base_commit": "8eb118e85e600663352c947158b4ea9d5411457e",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md",
+      "sha256": "e2ddf919ebc5b99564193fc19f26a4068fd5652728819d6a50699f5a96b3ce64",
+      "blob": "4f5dfeb2a593b258d1eb9cc9ea4224afbb6f4b5b",
+      "reason": "applied: the version 7 proposal; the applied text is theories/becoming/OPENING.md (19 October 2026)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V7.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V7.md",
+      "sha256": "d212927860760f4ebe5396cb6597ff3fbdc46d390c56b0225ee3b03d5eb3073c",
+      "blob": "576e0e27ec150443cb3e20decb686380eca4b996",
+      "reason": "frozen: the applied version 7 of the opening (19 October 2026)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V7.md"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "_process/research/2026-10-05-repository-reconciliation/r20/OPENING-NOTES.md",
+      "old_sha256": "3ede6b9585ad97b4f6bb51e5d3f576793dea70a46b1618ccefc56e800403eac6",
+      "new_sha256": "6f919a7360708f1e8f42d2d71f4c59fd0fc616db42bfac6e1eeeaaa3113ec770",
+      "references": 1
+    },
+    {
+      "path": "drafts/2026-10-10-opening/README.md",
+      "old_sha256": "8a9f5d37e878478b6fb6d12b492fa6a85c2415f414d6ae93485b795fae0552a0",
+      "new_sha256": "f33827cb26816aa9dd3194cacec70deb366a253bf14342e9e0515bcedec96438",
+      "references": 1
+    }
+  ],
+  "history_roots": [
+    "drafts/2026-10-10-opening/history"
+  ],
+  "generated_pages_to_rerender": [],
+  "verification_errors": []
+}

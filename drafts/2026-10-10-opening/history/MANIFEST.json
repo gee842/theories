@@ -82,6 +82,24 @@
       "batch": "K1",
       "reason": "superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca)",
       "plan_entry": "drafts/2026-10-10-opening/OPENING-V6.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md",
+      "sha256": "e2ddf919ebc5b99564193fc19f26a4068fd5652728819d6a50699f5a96b3ce64",
+      "blob": "4f5dfeb2a593b258d1eb9cc9ea4224afbb6f4b5b",
+      "batch": "opening-v7",
+      "reason": "applied: the version 7 proposal; the applied text is theories/becoming/OPENING.md (19 October 2026)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md"
+    },
+    {
+      "old_path": "drafts/2026-10-10-opening/OPENING-V7.md",
+      "new_path": "drafts/2026-10-10-opening/history/OPENING-V7.md",
+      "sha256": "d212927860760f4ebe5396cb6597ff3fbdc46d390c56b0225ee3b03d5eb3073c",
+      "blob": "576e0e27ec150443cb3e20decb686380eca4b996",
+      "batch": "opening-v7",
+      "reason": "frozen: the applied version 7 of the opening (19 October 2026)",
+      "plan_entry": "drafts/2026-10-10-opening/OPENING-V7.md"
     }
   ]
 }
