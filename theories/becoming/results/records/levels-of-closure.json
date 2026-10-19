@@ -449,7 +449,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "717efff02ff69a7d915253bc96eb34ce3df12530d493d348ee0e59a96b3dfb83",
+      "sha256": "d5ae417638d738670dd9337fdac364affe5ee42431848794a09eca40362fd67c",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.bounded"
@@ -553,6 +553,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T174929.247241Z/verification.json",
+      "role": "receipt",
+      "sha256": "6a2365e24d8c37fa26699dd0f7074bec68cc5eda9894cf09f8c5e8ee21d9f943",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -579,7 +585,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T174929.247241Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -885,6 +891,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Continuation.lean, EdgeClosure.lean, Feedback.lean, Interdependence.lean, Significance.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R27 (the stepwise classes and loss): proof binding to Significance.lean rebound to core receipt 20261019T174929.247241Z. Re-pointed after reading the change: Significance.lean, a section on the stepwise classes and loss and Preemption.within_renewal_yet_loses added; nothing else changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R27（逐步类别与失去）：Significance.lean 的证明绑定改到核心回执 20261019T174929.247241Z。读过改动后重新指向：Significance.lean，新增逐步类别与失去一节及 Preemption.within_renewal_yet_loses；其余不变。论断不变。"
     }
   ],
   "text_versions": [

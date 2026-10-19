@@ -103,6 +103,7 @@ Ren's statement of the continuation condition, which Ren then called an axiom, i
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T174929.247241Z/verification.json) | — |
 
 Aliases: `Becoming.Web.Retains.of_fewer`, `Becoming.Web.retains_bounded_iff`, `Becoming.Web.Retains.within`, `Becoming.Clearing.admitted_all_without`, `Becoming.Clearing.free_rider_loses`, `Becoming.Clearing.dependenceRegion`, `Becoming.Clearing.centers_disagree`
 
@@ -140,6 +141,7 @@ Aliases: `Becoming.Web.Retains.of_fewer`, `Becoming.Web.retains_bounded_iff`, `B
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Continuation.lean, Significance.lean). The claim is unchanged.
 - 19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The claim is unchanged.
+- 20 October 2026, R27 (the stepwise classes and loss): proof binding to Significance.lean rebound to core receipt 20261019T174929.247241Z. Re-pointed after reading the change: Significance.lean, a section on the stepwise classes and loss and Preemption.within_renewal_yet_loses added; nothing else changed. The claim is unchanged.
 - 57 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](whole-first-and-bounded-centers.json).
 
 <a id="earlier-text--早期文本"></a>

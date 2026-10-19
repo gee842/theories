@@ -103,6 +103,7 @@ Ren, 14 October 2026: “why do we need "World"? wasn't this about the whole and
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T174929.247241Z/verification.json) | — |
 
 Aliases: `readings in context make one world`, `语境中的读法是一个世界`, `balance as gluing`, `平衡作为粘合`, `every world one run of exchange`, `每个世界是交换的一次运行`
 
@@ -135,6 +136,7 @@ Aliases: `readings in context make one world`, `语境中的读法是一个世�
 - 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Significance.lean re-pointed after reading the change (Significance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 0 (premise card C) or section 8 (the open programme): E1 rewrote card C's bullet on what the independence measures, the necessity row of section 8.1, and added a sentence and three records to the section 8.2 row on one relational start. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: presupposition_iff_all_of_invariant, bounded_invariant_iff from Readings.lean to BoundaryWorlds.lean; indexed, FitsFree, fitsFree_iff from Context.lean to ContextArrivalTraces.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Boundaries.lean, Context.lean, Labelled.lean, Readings.lean, Significance.lean, Unfolding.lean). The claim is unchanged.
+- 20 October 2026, R27 (the stepwise classes and loss): proof binding to Significance.lean rebound to core receipt 20261019T174929.247241Z. Re-pointed after reading the change: Significance.lean, a section on the stepwise classes and loss and Preemption.within_renewal_yet_loses added; nothing else changed. The claim is unchanged.
 - 14 rebinding entries (2026-10-14 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](unity-of-readings.json).
 
 <a id="earlier-text--早期文本"></a>

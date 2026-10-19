@@ -92,6 +92,7 @@ Aliases: `the game of relative position`, `相对位置的博弈`, `zero-sum gam
 - 19 October 2026: added (Z1), to state on the spine what the opening's note [^aligned] called "a matter of counting, not yet stated on the formal spine", and to prove where "all its winners will lose" holds; study section 200.
 - 19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Continuation.lean: declarations moved in or out by W2; Significance.lean: declarations moved in or out by W2). The claim is unchanged.
+- 20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: Significance.lean, a section on the stepwise classes and loss and Preemption.within_renewal_yet_loses added; nothing else changed. The claim is unchanged.
 
 </details>
 
