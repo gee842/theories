@@ -17,9 +17,9 @@ the AI chose the item. No premise enters beyond what each theorem names.
   (`Dependence.alikeAt_equivalence`), so the criterion of `Becoming.LawThroughCoupling` holds
   through it: some process going alike in what `g` couples into admits a run's steps up to `t`
   exactly where they are consistent under it (`Run.law_through_dependence_iff`). Fixed conditions
-  are the instance (`Dependence.conditions_alikeAt_iff`). Along a run it is the relation between
-  two steps each read through the dependence of its own step (`Web.AlikeAcross`,
-  `Dependence.alikeAt_iff_alikeAcross`).
+  are the instance (`Dependence.conditions_alikeAt_iff`; along a run,
+  `Run.consistent_conditions_iff`). Along a run it is the relation between two steps each read
+  through the dependence of its own step (`Web.AlikeAcross`, `Dependence.alikeAt_iff_alikeAcross`).
 * **Testing's coupling fixes the dependence of one step.** `Web.AlikeThrough` of `Becoming.Testing`,
   read at step `t` between the levels standing at two steps of the run, is the coupling with the
   dependence fixed at the configuration of step `t` (`Dependence.fixedAt`,
@@ -194,6 +194,13 @@ theorem consistentUnder_congr (r : Run P) {E E' : S → S → Prop} {t : Nat}
    fun consistent n m before before' same act =>
      (agree (n + 1) (m + 1) before before').mpr (consistent n m before before'
        ((agree n m (Nat.le_of_lt before) (Nat.le_of_lt before')).mp same) act)⟩
+
+/-- **Fixed conditions are the instance along a run**: through fixed conditions, consistency under
+the changing coupling is consistency under the coupling of `Becoming.LawThroughCoupling`. -/
+theorem consistent_conditions_iff (K : Conditions S F C) (r : Run P) (obs : F → C → Prop) (g : F)
+    (t : Nat) :
+    r.ConsistentUnder (K.dependence.AlikeAt obs g) t ↔ r.ConsistentUnder (K.AlikeAt obs g) t :=
+  r.consistentUnder_congr fun _ _ _ _ => Dependence.conditions_alikeAt_iff K obs g _ _
 
 /-- **Unchanged dependences give one criterion.** Where `g`'s dependences up to `t` are those of
 step `k`, the run is consistent under the changing coupling exactly where it is consistent under

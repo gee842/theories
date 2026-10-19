@@ -9,8 +9,8 @@
   "unclean": [],
   "audits": {
     "Becoming.LawThroughChangingCoupling": {
-      "theorems": 24,
-      "declarations": 34,
+      "theorems": 25,
+      "declarations": 35,
       "with_axioms": {}
     }
   }

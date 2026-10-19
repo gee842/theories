@@ -35,7 +35,7 @@ laws = [
               '这是等价关系，所以某个在其上同去的过程容许一个运行在某步之前的各步，恰在它耦合相同的场合以相同的动作通向它耦合相同的场合之处。'
               '固定条件是其实例。',
         'declarations': d('Dependence.AdmitsAt', 'Dependence.AlikeAt', 'Dependence.alikeAt_equivalence',
-                          'Dependence.conditions_alikeAt_iff', 'Run.law_through_dependence_iff'),
+                          'Dependence.conditions_alikeAt_iff', 'Run.consistent_conditions_iff', 'Run.law_through_dependence_iff'),
     },
     {
         'en': 'Along a run this is the relation between two steps each read through its own step\'s dependence. '
@@ -121,10 +121,10 @@ record = {
     'standard_boundaries': ['no-ethical-premise', 'no-evaluation', 'discrete-steps', 'formal-not-empirical',
                             'names-provisional', 'omission-not-refutation'],
     'validation_scope': {
-        'en': f'Machine-checked by the consolidated Lean 4.29.1 checker (receipt {receipt_id}): the 24 theorems of '
+        'en': f'Machine-checked by the consolidated Lean 4.29.1 checker (receipt {receipt_id}): the 25 theorems of '
               'Becoming.LawThroughChangingCoupling have empty axiom reports; the checker verifies core purity. '
               f'Author self-review in study section {section}; not independently reviewed.',
-        'zh': f'Lean 4.29.1 合并检查器实查（回执 {receipt_id}）：Becoming.LawThroughChangingCoupling 的 24 项定理公理报告为空；'
+        'zh': f'Lean 4.29.1 合并检查器实查（回执 {receipt_id}）：Becoming.LawThroughChangingCoupling 的 25 项定理公理报告为空；'
               f'检查器并核对核心纯净。作者自审见研究第 {section} 节；未经独立审查。',
     },
     'next_delta': {

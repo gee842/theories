@@ -59,7 +59,7 @@ lines[idx[0] + 1:idx[0] + 1] = [
     'that changes along the run (no premise): with dependences read off the configuration, what a formation couples into '
     'at each occasion, through the dependence it then has, is an equivalence (`Dependence.alikeAt_equivalence`), so some '
     'process going alike in it admits a run\'s steps exactly where they are consistent under it '
-    '(`Run.law_through_dependence_iff`); fixed conditions are the instance (`Dependence.conditions_alikeAt_iff`); along a '
+    '(`Run.law_through_dependence_iff`); fixed conditions are the instance (`Dependence.conditions_alikeAt_iff`, `Run.consistent_conditions_iff`); along a '
     'run it is `Web.AlikeAcross` (`Dependence.alikeAt_iff_alikeAcross`), and `Web.AlikeThrough` at one step fixes that '
     'step\'s dependence (`Dependence.alikeThrough_iff_fixedAt`, `Web.alikeAcross_iff_alikeThrough`); unchanged dependences '
     'give one criterion (`Run.consistent_unchanged_iff`); in `Changing` a dissolving dependence carries a law the coupling '

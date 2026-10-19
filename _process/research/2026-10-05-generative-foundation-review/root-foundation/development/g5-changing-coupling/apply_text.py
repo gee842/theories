@@ -43,7 +43,7 @@ spine = sum(st.values())
 audits = log_d['spine_declaration_audits']
 order = len(r['compile_order'])
 fmt = lambda n: f'{n:,}'
-assert st['Becoming.LawThroughChangingCoupling'] == 24, st['Becoming.LawThroughChangingCoupling']
+assert st['Becoming.LawThroughChangingCoupling'] == 25, st['Becoming.LawThroughChangingCoupling']
 
 # Source: Ren's 19 October "continue", verbatim.
 SOURCE = ROOT / 'sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md'
@@ -79,7 +79,7 @@ Delta: section {g4} (Becoming.LawThroughCoupling) stated the criterion along one
        criteria agree; on one determined process a dissolving dependence carries a law the coupling fixed at the start
        lacks, and a forming one breaks a law it has
 Supplied premises / correspondence: dependences read off the configuration; what a formation observes is fixed; no axiom
-Evidence: Becoming.LawThroughChangingCoupling, 24 theorems, empty axiom reports; core receipt `{NEW_R}`; connectivity
+Evidence: Becoming.LawThroughChangingCoupling, 25 theorems, empty axiom reports; core receipt `{NEW_R}`; connectivity
           check passes, {APART} apart of {fmt(spine)}, none in Becoming.LawThroughChangingCoupling
 Boundary: observation that changes along the run; which dependences an actual formation forms along an unfolding; how
           many steps settle whether a law at the coupling holds
@@ -92,7 +92,7 @@ Ren, 18 October 2026: "{REN}" ([source]({SRC_LINK})); on 19 October Ren wrote "c
 **The move.** `Dependence` (of `Becoming.Dependence`) reads requirements and needs off the configuration. Each configuration is read through the dependence the formation has there: two are alike in what `g` couples into when the levels at each admit `g` through `g`'s dependence there alike, and the conditions it observes stand alike (`Dependence.AlikeAt`). Because the dependence is a function of the configuration, this is still a relation on configurations, and an equivalence.
 
 **What is proved** (`Becoming.LawThroughChangingCoupling`).
-- **The criterion** (`Run.law_through_dependence_iff`): from `Dependence.alikeAt_equivalence` and G4's `Run.law_under_iff`. Fixed conditions are the instance (`Dependence.conditions_alikeAt_iff`, by definition). Along a run it is the relation between two steps each read through its own step's dependence (`Web.AlikeAcross`, `Dependence.alikeAt_iff_alikeAcross`, by definition).
+- **The criterion** (`Run.law_through_dependence_iff`): from `Dependence.alikeAt_equivalence` and G4's `Run.law_under_iff`. Fixed conditions are the instance (`Dependence.conditions_alikeAt_iff`, by definition; along a run, `Run.consistent_conditions_iff`). Along a run it is the relation between two steps each read through its own step's dependence (`Web.AlikeAcross`, `Dependence.alikeAt_iff_alikeAcross`, by definition).
 - **Testing's coupling fixes a step's dependence** (`Dependence.alikeThrough_iff_fixedAt`, by definition): `Web.AlikeThrough` at step `t`, between the levels standing at two steps of the run, is the coupling through the conditions fixed at step `t`'s configuration (`Dependence.fixedAt`). Where the dependence at the two steps compared is the one at `t`, it is the changing coupling (`Web.alikeAcross_iff_alikeThrough`).
 - **Unchanged dependences give one criterion**: consistency reads a relation only on the run's configurations up to `t` (`Run.consistentUnder_congr`); so where `g`'s dependences up to `t` are those of step `k` (`Dependence.Unchanged`), the run is consistent under the changing coupling exactly where it is under the coupling fixed at step `k` (`Run.consistent_unchanged_iff`).
 - **Where dependences form or dissolve, neither gives the other** (`Changing`): one level rising by one each step, a determined process. Depending on the level with need 2 only at level 0 (`Changing.dissolving`, which dissolves across the first step, `Changing.dissolves`), the run is consistent at every step under the changing coupling (`Changing.dissolving_consistent`); with the dependence of level 0 held fixed, levels 0 and 1 are coupled alike and lead to 1 and 2, coupled apart (`Changing.dissolving_fixed_inconsistent`, `Changing.dissolving_fixed_no_law`). Depending on it with need 2 from level 1 on (`Changing.forming`, formed across the first step, `Changing.forms`), the coupling fixed at the start depends on nothing and is consistent at every step (`Changing.forming_fixed_consistent`), while under the changing coupling levels 0 and 2 are coupled alike and lead to 1 and 3, coupled apart (`Changing.forming_inconsistent`, `Changing.forming_no_law`).
@@ -106,7 +106,7 @@ Ren, 18 October 2026: "{REN}" ([source]({SRC_LINK})); on 19 October Ren wrote "c
 **Self-review.** The statements were read against the Lean.
 - The new criterion is G4's applied to a new equivalence; the delta is the relation read through changing dependence, its bridges and the comparison with the fixed coupling, not a new criterion.
 - `Run.consistent_unchanged_iff` takes the reference step `k` arbitrary, not necessarily before `t`; the hypothesis is that every step up to `t` has `k`'s dependence for `g`.
-- The first scratch build reported `propext` in three witness theorems, through `Nat.succ_ne_zero`; replaced by `Nat.noConfusion`, the second build had `with_axioms` empty: 24 theorems, `unclean` empty; core receipt `{NEW_R}` passed ({core_n} core modules).
+- The first scratch build reported `propext` in three witness theorems, through `Nat.succ_ne_zero`; replaced by `Nat.noConfusion`, the second build had `with_axioms` empty. The first landing run's connectivity check found `Dependence.conditions_alikeAt_iff` apart (its statement is on neither base family); its use along a run is now stated, `Run.consistent_conditions_iff`, and the core checker was rerun: 25 theorems, `unclean` empty, `with_axioms` empty; core receipt `{NEW_R}` passed ({core_n} core modules).
 
 '''
 s = once(s, '## Ren’s words quoted in passages that exist only in the Chinese edition',
