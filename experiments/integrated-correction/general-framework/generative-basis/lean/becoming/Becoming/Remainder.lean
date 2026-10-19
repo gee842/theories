@@ -775,7 +775,7 @@ end Settles
 namespace Loops.Once
 
 /-- **It reads the first step only.** Every coupling of the loop of `Loops.Once` reads the level at
-the first step, so order one is exact at every step from every start (`Remainder.Once.exact`, through
+the first step, so order one is exact at every step from every start (`Once.exact`, through
 `exact_of_reading_before`). -/
 theorem reads_first :
     ∀ u s d c, CouplesAt [()] (fun _ => false) strengths (fun _ => [()]) u s d c → s < 1 :=
@@ -823,14 +823,6 @@ theorem finite_order_iff_no_loop
         carriedWithin cs part σ k present δ j t c = carried cs part σ k present δ t c) ↔
       ∀ e, Upstream cs part k present e c → ¬ OnLoop cs part k present e :=
   (finite_order_iff_bounded c).trans (bounded_iff_no_loop always c)
-
-/-- **`Loops.Once.exact` as an instance**, of `exact_of_reading_before` and
-`Loops.Once.reads_first`. -/
-theorem Once.exact (δ : Unit → Nat) (t : Nat) :
-    carriedWithin [()] (fun _ => false) (fun _ _ _ => 0) Loops.Once.strengths (fun _ => [()]) δ 1 t
-        () =
-      carried [()] (fun _ => false) (fun _ _ _ => 0) Loops.Once.strengths (fun _ => [()]) δ t () :=
-  exact_of_reading_before Loops.Once.reads_first δ t ()
 
 end Remainder
 

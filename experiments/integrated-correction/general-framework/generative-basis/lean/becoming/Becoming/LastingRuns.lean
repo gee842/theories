@@ -226,7 +226,7 @@ theorem determined_lasts_iff_courses {guard : S → Prop} {n : Nat} {s : S} :
      fun every d _ k bound =>
       Eq.mpr (congrArg guard (Lasting.orbit_eq_history next s d k).symm)
         (every _ _ (Courses.orbit_trace next k s)
-          (Eq.mpr (congrArg (· ≤ n) (Courses.length_units k)) bound))⟩
+          (Eq.mpr (congrArg (· ≤ n) (Branching.units_length k)) bound))⟩
 
 /-- **For a determined law and a decided target, a course reaches the target exactly where not
 every course stays outside it**: some course of at most `n` moves of the law's process ends in the
@@ -274,7 +274,7 @@ theorem reaches_excludes_courses {target seed : S → Prop}
     ¬ ∃ K : S → Prop, (∃ s, seed s ∧ K s) ∧ (∀ x, K x → ¬ target x) ∧
       ∀ x, K x → K (next x) :=
   Lasting.reaches_excludes fun s seeded => match reaches s seeded with
-    | ⟨_, reach, inside⟩ => match Courses.reach_iff_orbit.mp reach with
+    | ⟨_, reach, inside⟩ => match Branching.law_reach_iff.mp reach with
       | ⟨n, at_n⟩ => ⟨n, Eq.mpr (congrArg target at_n) inside⟩
 
 end Determined

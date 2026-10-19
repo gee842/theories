@@ -66,20 +66,13 @@ namespace Law
 
 variable {S : Type u} {R : Type v} {K : Type w}
 
-/-- Under a determined law, going alike is carrying what is lumped into what is lumped. This is
-`Becoming.Learning`'s `goAlike_iff_lumped`, written independently with the same proof, and is
-stated here as its instance. -/
-theorem goAlike_process_iff {next : S → S} {π : S → K} :
-    GoAlike (process next) π ↔ ∀ s s', π s = π s' → π (next s) = π (next s') :=
-  Learning.goAlike_iff_lumped
-
 /-- A split that keeps the map's value and carries a law relates configurations by a
 bisimulation of the law framed by the map. -/
 theorem kernel_bisimulation {next : S → S} {o : S → R} {π : S → K}
     (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π) :
     Bisimulation (frameBy next o) (frameBy next o) (fun s s' => π s = π s') :=
   fun s s' same =>
-    have ahead : π (next s) = π (next s') := goAlike_process_iff.mp alike s s' same
+    have ahead : π (next s) = π (next s') := Learning.goAlike_iff_lumped.mp alike s s' same
     ⟨fun _ => ⟨fun h => (keeps s s' same).symm.trans h, fun h => (keeps s s' same).trans h⟩,
      fun _ _ to => ⟨next s', rfl, by cases to; exact ahead⟩,
      fun _ _ to => ⟨next s, rfl, by cases to; exact ahead⟩⟩
@@ -139,22 +132,22 @@ theorem sameFuture_of_goAlike {next : S → S} {o : S → R} (alike : GoAlike (p
   intro s s' e n
   induction n with
   | zero => exact e
-  | succ n ih => exact goAlike_process_iff.mp alike _ _ ih
+  | succ n ih => exact Learning.goAlike_iff_lumped.mp alike _ _ ih
 
 /-- **The map's present value makes sense by itself exactly where it carries a law**: a condition
 on one step. -/
 theorem now_identifiesAlike_iff_goAlike {next : S → S} {o : S → R} :
     IdentifiesAlike (frameBy next o) o ↔ GoAlike (process next) o :=
   now_identifiesAlike_iff.trans
-    ⟨fun fixes => goAlike_process_iff.mpr fun s s' e => fixes s s' e 1, sameFuture_of_goAlike⟩
+    ⟨fun fixes => Learning.goAlike_iff_lumped.mpr fun s s' e => fixes s s' e 1, sameFuture_of_goAlike⟩
 
 /-- **The part read through the map alone makes sense exactly where the rest makes no difference
 to its next value.** -/
 theorem part_identifiesAlike_iff_step {X : Type u} {C : Type v} {next : X × C → X × C} :
     IdentifiesAlike (frameBy next Prod.fst) Prod.fst ↔ ∀ x c c', (next (x, c)).1 = (next (x, c')).1 := by
-  refine now_identifiesAlike_iff_goAlike.trans ⟨fun alike x c c' => goAlike_process_iff.mp alike _ _ rfl, ?_⟩
+  refine now_identifiesAlike_iff_goAlike.trans ⟨fun alike x c c' => Learning.goAlike_iff_lumped.mp alike _ _ rfl, ?_⟩
   intro every
-  apply goAlike_process_iff.mpr
+  apply Learning.goAlike_iff_lumped.mpr
   intro s s' e
   cases s with
   | mk x c =>
@@ -299,19 +292,6 @@ section AnyProcess
 
 variable {S : Type u} {A : Type v} {R : Type w} {P : Process S A}
 
-/-- **Where a run takes a different value through the map at every moment, each moment is its
-own state.** -/
-theorem new_each {reg : S → R} {r : Run P}
-    (new : ∀ t t', reg (r.state t) = reg (r.state t') → t = t') {t t' : Nat}
-    (same : SameAhead (Parting.course reg r) t t') : t = t' :=
-  SameAhead.new_each new same
-
-/-- **A run's course through the map has finitely many states exactly where it repeats from some
-step.** -/
-theorem states_iff_lasso (reg : S → R) (r : Run P) :
-    (∃ L, StatesBelow (Parting.course reg r) L) ↔ ∃ i q, Lasso (Parting.course reg r) i q :=
-  finitely_many_states_iff_lasso
-
 /-- **A bounded prefix fixes a run's course.** Two runs whose courses through the map have at most
 `N` and `N'` states and which are alike through it before `N + N' - 1` are alike at every step. -/
 theorem prefix_fixes {reg : S → R} {r r' : Run P} {N N' : Nat}
@@ -319,43 +299,6 @@ theorem prefix_fixes {reg : S → R} {r r' : Run P} {N N' : Nat}
     (agree : ∀ n, n < N + N' - 1 → reg (r.state n) = reg (r'.state n)) :
     ∀ n, reg (r.state n) = reg (r'.state n) :=
   Identification.prefix_fixes bound bound' (prefix_congr agree)
-
-/-- **Two moments of a run with at most `N` states are one state exactly where the courses from
-them agree for `N + N - 1` steps.** -/
-theorem sameAhead_iff_below {reg : S → R} {r : Run P} {N : Nat}
-    (bound : StatesBelow (Parting.course reg r) N) {t t' : Nat} :
-    SameAhead (Parting.course reg r) t t' ↔
-      ∀ n, n < N + N - 1 → reg (r.state (t + n)) = reg (r.state (t' + n)) :=
-  Identification.sameAhead_iff_below bound
-
-/-- **Moore's bound along a run, the values decided.** Two moments of a run with at most `N`
-states are one state exactly where the courses from them agree for `N - 1` steps. -/
-theorem sameAhead_iff_classes {reg : S → R} {r : Run P} {N : Nat}
-    (bound : StatesBelow (Parting.course reg r) N)
-    (values : ∀ n m, Decided (reg (r.state n) = reg (r.state m))) {t t' : Nat} :
-    SameAhead (Parting.course reg r) t t' ↔
-      ∀ n, n < N - 1 → reg (r.state (t + n)) = reg (r.state (t' + n)) :=
-  Identification.sameAhead_iff_classes bound values
-
-/-- **Moore's bound along a run, with no premise.** -/
-theorem sameAhead_iff_within {reg : S → R} {r : Run P} {N : Nat}
-    (bound : StatesBelow (Parting.course reg r) N) {t t' : Nat} :
-    SameAhead (Parting.course reg r) t t' ↔
-      ∀ n, n < N - 1 → reg (r.state (t + n)) = reg (r.state (t' + n)) :=
-  Identification.sameAhead_iff_within bound
-
-/-- **The extrapolation given the bound misses at no step of a run with at most `N` states.** -/
-theorem withBound_accords [DecidableEq R] {reg : S → R} {r : Run P} {N : Nat}
-    (bound : StatesBelow (Parting.course reg r) N) :
-    Accords (Identification.withBound N) (Parting.course reg r) :=
-  Identification.withBound_accords bound
-
-/-- **On a run whose course through the map repeats, elimination over the lasso candidates comes
-to be right at a step that is found.** -/
-theorem rests_of_lasso [DecidableEq R] {reg : S → R} {r : Run P} {i q : Nat}
-    (repeats : Lasso (Parting.course reg r) i q) :
-    ∃ T, ∀ t, T ≤ t → Parting.RightAt (byElimination lassos) reg r t :=
-  Identification.rests_of_lasso repeats
 
 end AnyProcess
 
@@ -531,19 +474,6 @@ variable {A : Type u} {B : Type v}
 theorem separated_congr {whole whole' : A × B → Prop} (same : ∀ p, whole p ↔ whole' p)
     {p : A × B} : Separated whole p → Separated whole' p :=
   fun ⟨⟨b, held⟩, ⟨a, held'⟩⟩ => ⟨⟨b, (same _).mp held⟩, ⟨a, (same _).mp held'⟩⟩
-
-/-- **Describing each part by itself keeps every combination a law's courses reach.** -/
-theorem separated_of_reached {next : A × B → A × B} {whole : A × B → Prop} {n : Nat} {p : A × B}
-    (reached : Courses.reachedFrom next whole n p) :
-    Separated (Courses.reachedFrom next whole n) p :=
-  separated_of_whole reached
-
-/-- **Describing the parts separately adds nothing to what a law's courses reach exactly where
-the reached whole is rectangular.** -/
-theorem separation_faithful_iff_reached {next : A × B → A × B} {whole : A × B → Prop} {n : Nat} :
-    (∀ p, Separated (Courses.reachedFrom next whole n) p → Courses.reachedFrom next whole n p) ↔
-      Rectangular (Courses.reachedFrom next whole n) :=
-  separation_faithful_iff
 
 end Separation
 

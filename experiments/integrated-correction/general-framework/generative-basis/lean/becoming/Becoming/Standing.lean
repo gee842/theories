@@ -94,8 +94,8 @@ def pairs {β : Type} : List α → List β → List (α × β)
 
 theorem mem_pairs {β : Type} {a : α} {b : β} :
     ∀ {l : List α} {m : List β}, a ∈ l → b ∈ m → (a, b) ∈ pairs l m
-  | _ :: _, _, .head _, mem => mem_append_left _ (mem_map_of mem)
-  | _ :: _, _, .tail _ listed, mem => mem_append_right _ (mem_pairs listed mem)
+  | _ :: _, _, .head _, mem => mem_append_of_left _ (mem_map_of mem)
+  | _ :: _, _, .tail _ listed, mem => mem_append_of_right _ (mem_pairs listed mem)
 
 /-! ## Counting what stands -/
 
@@ -719,7 +719,7 @@ theorem dependingQueue_census (n c : Nat → Nat) :
     | (f, _) => ⟨fun ⟨holds, common⟩ => Eq.subst (motive := fun x =>
           (f, x) ∈ (Queue.line n c t).map (·, (0 : Nat))) common.symm
           (mem_map_of (g := (·, (0 : Nat))) (((Queue.listed t).2 f).mp holds)),
-        fun mem => match exists_of_mem_map mem with
+        fun mem => match preimage_of_mem_map mem with
         | ⟨k, listed, same⟩ => ⟨Eq.subst (motive := fun x => Queue.holds n c x t)
             (congrArg Prod.fst same) (((Queue.listed t).2 k).mpr listed),
           (congrArg Prod.snd same).symm⟩⟩⟩
@@ -825,7 +825,7 @@ theorem dependingRing_counts {n c a : Nat → Nat} {M : Nat} (tally : Tally n c 
           (i, x) ∈ (Ring.seated n c M t).map (·, Ring.first M))
           (Fin.eq_of_val_eq (i := Ring.first M) (j := j) first.symm)
           (mem_map_of (g := (·, Ring.first M)) (((census t).2 i).mp held)),
-        fun mem => match exists_of_mem_map mem with
+        fun mem => match preimage_of_mem_map mem with
         | ⟨k, listed, same⟩ => ⟨Eq.subst (motive := fun x => Ring.holds n c M x t)
             (congrArg Prod.fst same) (((census t).2 k).mpr listed),
           congrArg Fin.val (congrArg Prod.snd same).symm⟩⟩⟩,

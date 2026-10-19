@@ -143,14 +143,6 @@ variable {α : Type} {F C : Type}
 
 /-! ## Lists -/
 
-theorem mem_append_left {a : α} {l : List α} (m : List α) : a ∈ l → a ∈ l ++ m
-  | .head _ => .head _
-  | .tail _ mem => .tail _ (mem_append_left m mem)
-
-theorem mem_append_right {a : α} : ∀ (l : List α) {m : List α}, a ∈ m → a ∈ l ++ m
-  | [], _, mem => mem
-  | _ :: l, _, mem => .tail _ (mem_append_right l mem)
-
 /-! ## Total standing -/
 
 /-- The census law read of standing: under a census of what stands, conditions ceasing to
@@ -220,8 +212,8 @@ theorem Enclosed.aroundStanding [DecidableEq C] {t : Nat} (enclosed : L.Enclosed
     (stand : Nat → List C) : L.AroundStanding stand t :=
   match enclosed.around (stand t ++ stand (t + 1)) with
   | ⟨es, distinct, within, closed⟩ =>
-    ⟨es, distinct, fun c mem => within c (mem_append_left _ mem),
-     fun c mem => within c (mem_append_right _ mem), closed⟩
+    ⟨es, distinct, fun c mem => within c (mem_append_of_left _ mem),
+     fun c mem => within c (mem_append_of_right _ mem), closed⟩
 
 /-- Without decided equality, a step enclosed by some family is not not enclosed around
 what stands (`Enclosed.around_not_not`). -/
@@ -229,8 +221,8 @@ theorem Enclosed.aroundStanding_not_not {t : Nat} (enclosed : L.Enclosed t)
     (stand : Nat → List C) : ¬¬ L.AroundStanding stand t :=
   fun no => enclosed.around_not_not (stand t ++ stand (t + 1))
     fun ⟨es, distinct, within, closed⟩ => no ⟨es, distinct,
-      fun c mem => within c (mem_append_left _ mem),
-      fun c mem => within c (mem_append_right _ mem), closed⟩
+      fun c mem => within c (mem_append_of_left _ mem),
+      fun c mem => within c (mem_append_of_right _ mem), closed⟩
 
 /-- A member of a family dissipated on across the step falling lowers the family's stock:
 it is taken from (`Flow.BalancesOn.fall_lowers`). -/
@@ -716,12 +708,12 @@ def gather (l : Nat → List α) : Nat → List α
 
 theorem gather_self {l : Nat → List α} {a : α} : ∀ {s : Nat}, a ∈ l s → a ∈ gather l s
   | 0, mem => mem
-  | _ + 1, mem => mem_append_left _ mem
+  | _ + 1, mem => mem_append_of_left _ mem
 
 theorem mem_gather {l : Nat → List α} {a : α} {s : Nat} (mem : a ∈ l s) :
     ∀ {n}, s ≤ n → a ∈ gather l n
   | _, .refl => gather_self mem
-  | m + 1, .step within => mem_append_right (l (m + 1)) (mem_gather mem within)
+  | m + 1, .step within => mem_append_of_right (l (m + 1)) (mem_gather mem within)
 
 /-- A determination failing at `N` and holding at a later `T` came to be across a step
 from `N` on. -/
@@ -864,13 +856,6 @@ theorem Listed.lpo_of_few
 namespace World
 
 variable {w : World}
-
-/-- Read of activity: under a census, where arising does not recur, not unboundedly many
-relata are ever active. -/
-theorem few_active [∀ t x, Decidable (w.web.active t x)] {alive : Nat → List w.Relatum}
-    (census : w.web.Census alive) (quiet : ¬ w.ArisingRecurs) :
-    ¬ ∀ L : List w.Relatum, ∃ t x, w.web.active t x ∧ ¬ x ∈ L :=
-  Listed.few_of_quiet (p := fun x t => w.web.active t x) census quiet
 
 /-- In every world to which the rest theorem applies, with enclosure from some step on not
 refuted, not unboundedly many relata are ever active and not unboundedly many ever stand

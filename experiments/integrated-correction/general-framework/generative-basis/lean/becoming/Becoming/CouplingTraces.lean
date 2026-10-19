@@ -131,21 +131,16 @@ def couplingProcess (cs : List C) (part : F → Bool) (k : Nat → F → C → N
     (present : Nat → List F) : Process C Nat :=
   ⟨fun d u c => ∃ s, CouplesAt cs part k present u s d c⟩
 
-/-- **A coupling is a step of the coupling process.** -/
-theorem couples_iff_step {d c : C} :
-    Couples cs part k present d c ↔ ∃ u, (couplingProcess cs part k present).step d u c :=
-  couples_iff_couplesAt
-
 /-- **What lies upstream is what the coupling process reaches.** -/
 theorem upstream_iff_reach {e c : C} :
     Upstream cs part k present e c ↔ Reach (couplingProcess cs part k present) e c :=
   ⟨fun ⟨v, j, start, ends, chain⟩ =>
-    match (chain_iff_trace j).mp ⟨v, start, ends, fun i lt => couples_iff_step.mp (chain i lt)⟩ with
+    match (chain_iff_trace j).mp ⟨v, start, ends, fun i lt => couples_iff_couplesAt.mp (chain i lt)⟩ with
     | ⟨as, _, tr⟩ => ⟨as, tr⟩,
    fun ⟨as, tr⟩ =>
     match (chain_iff_trace as.length).mpr ⟨as, rfl, tr⟩ with
     | ⟨v, start, ends, steps⟩ =>
-      ⟨v, as.length, start, ends, fun i lt => couples_iff_step.mpr (steps i lt)⟩⟩
+      ⟨v, as.length, start, ends, fun i lt => couples_iff_couplesAt.mpr (steps i lt)⟩⟩
 
 /-- **A loop through `e` is a trace of the coupling process of one step or more from `e` back to
 `e`.** -/
@@ -153,14 +148,14 @@ theorem onLoop_iff_trace {e : C} :
     OnLoop cs part k present e ↔
       ∃ u us, Trace (couplingProcess cs part k present) e (u :: us) e :=
   ⟨fun ⟨v, m, pos, start, back, chain⟩ =>
-    match (chain_iff_trace m).mp ⟨v, start, back, fun i lt => couples_iff_step.mp (chain i lt)⟩ with
+    match (chain_iff_trace m).mp ⟨v, start, back, fun i lt => couples_iff_couplesAt.mp (chain i lt)⟩ with
     | ⟨as, len, tr⟩ => match as, len, tr with
       | [], len, _ => absurd (Eq.subst (motive := fun x => 0 < x) len.symm pos) (Nat.lt_irrefl 0)
       | u :: us, _, tr => ⟨u, us, tr⟩,
    fun ⟨u, us, tr⟩ =>
     match (chain_iff_trace (us.length + 1)).mpr ⟨u :: us, rfl, tr⟩ with
     | ⟨v, start, back, steps⟩ =>
-      ⟨v, us.length + 1, Nat.succ_pos _, start, back, fun i lt => couples_iff_step.mpr (steps i lt)⟩⟩
+      ⟨v, us.length + 1, Nat.succ_pos _, start, back, fun i lt => couples_iff_couplesAt.mpr (steps i lt)⟩⟩
 
 /-- **The retrace process.** It steps from the level of `c` at step `t` back, by a coupling acting
 at a step `u` before `t`, to the level of `d` at the step `s` that the coupling reads. -/
@@ -313,7 +308,7 @@ read, a step of the coupling process from `c` into `c` is read by a formation ou
 theorem self_step_reads {reads : Nat → F → C → Bool} {c : C} {u : Nat}
     (step : (couplingProcess cs part (restrictReads reads k) present).step c u c) :
     ∃ u' h, h ∈ present u' ∧ part h = false ∧ reads u' h c = true :=
-  self_coupling_reads (couples_iff_step.mpr ⟨u, step⟩)
+  self_coupling_reads (couples_iff_couplesAt.mpr ⟨u, step⟩)
 
 /-- **The routes of the restricted strengths are routes of reading**, formed by the same step. -/
 theorem reach_readCouplings {reads : Nat → F → C → Nat → C → Bool} {T : Nat} {c e : C}
@@ -393,7 +388,7 @@ theorem recurs_iff_steps {d c : C} :
     CouplingRecurs cs part k present d c ↔
       ∀ N, ∃ u, (couplingProcess cs part (strengthsFrom N k) present).step d u c :=
   couplingRecurs_iff.trans
-    ⟨fun from_ N => couples_iff_step.mp (from_ N), fun from_ N => couples_iff_step.mpr (from_ N)⟩
+    ⟨fun from_ N => couples_iff_couplesAt.mp (from_ N), fun from_ N => couples_iff_couplesAt.mpr (from_ N)⟩
 
 /-- **A schedule has settled by `N` exactly where every step of the couplings from `N` on is a step
 of the couplings from every later step.** -/
@@ -401,8 +396,8 @@ theorem settled_iff_steps {N : Nat} :
     SettledFrom cs part k present N ↔
       ∀ d u c, (couplingProcess cs part (strengthsFrom N k) present).step d u c →
         ∀ N', ∃ u', (couplingProcess cs part (strengthsFrom N' k) present).step d u' c :=
-  ⟨fun settled d u c step => recurs_iff_steps.mp (settled d c (couples_iff_step.mpr ⟨u, step⟩)),
-   fun steps d c from_ => match couples_iff_step.mp from_ with
+  ⟨fun settled d u c step => recurs_iff_steps.mp (settled d c (couples_iff_couplesAt.mpr ⟨u, step⟩)),
+   fun steps d c from_ => match couples_iff_couplesAt.mp from_ with
     | ⟨u, step⟩ => recurs_iff_steps.mpr (steps d u c step)⟩
 
 /-- **Couplings that read the current level at every step have settled from the start.** Where
@@ -415,7 +410,7 @@ theorem settled_zero_of_always
     ∀ d u c, (couplingProcess cs part (strengthsFrom 0 k) present).step d u c →
       ∀ N', ∃ u', (couplingProcess cs part (strengthsFrom N' k) present).step d u' c :=
   settled_iff_steps.mp (settledFrom_zero_of_always fun d c couples =>
-    match couples_iff_step.mp couples with
+    match couples_iff_couplesAt.mp couples with
     | ⟨u, step⟩ => fun t => match (always d u c step t).2 with
       | ⟨h, mem, out, _, dMem, pos⟩ => ⟨h, mem, out, dMem, pos⟩)
 

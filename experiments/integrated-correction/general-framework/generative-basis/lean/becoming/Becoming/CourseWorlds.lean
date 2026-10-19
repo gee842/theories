@@ -494,14 +494,6 @@ theorem formedWorld_balanced (reads : ReadsBefore κ) :
   (ExchangeLaw.courseWorld_balanced_iff (ExchangeLaw.carryingRead_nonanticipating reads)).mpr
     fun t _ => Nat.le_trans (Nat.le_of_eq (total_zero (present t))) (Nat.zero_le _)
 
-/-- **A formed world stands at the carried amount of the strengths it reads off its own
-standings.** -/
-theorem formedWorld_level (reads : ReadsBefore κ) (t : Nat) (c : C) :
-    (formedWorld cs part σ κ present δ).web.level t (.inr c) =
-      carried cs part σ (κ fun s d => (formedWorld cs part σ κ present δ).web.level s (.inr d))
-        present δ t c :=
-  formedCourse_eq_carried reads t c
-
 /-- **Before a loop of its own couplings forms upstream, a formed world's standings grow at most
 polynomially.** With every condition listed, the part giving no gap, starting levels at most `D`
 and the strengths it reads off its own standings summing to at most `M` into each condition: where
@@ -523,7 +515,7 @@ theorem formedWorld_le_polynomial_before (reads : ReadsBefore κ) (every : ∀ c
     {t : Nat} (le : t ≤ T) :
     (formedWorld cs part (fun _ _ _ => 0) κ present δ).web.level t (.inr c) ≤
       D * Loops.orderSum M n t :=
-  Nat.le_trans (Nat.le_of_eq (formedWorld_level reads t c))
+  Nat.le_trans (Nat.le_of_eq (formedCourse_eq_carried reads t c))
     (carried_le_polynomial_before every noLoop long bounded into le)
 
 end Formed

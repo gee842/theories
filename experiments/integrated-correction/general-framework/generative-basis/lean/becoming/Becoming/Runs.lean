@@ -136,10 +136,6 @@ theorem Run.world_move (t : Nat) : r.world.move t = r.act t :=
 theorem Run.world_run (t : Nat) : r.world.run.state t = r.state t ∧ r.world.run.act t = r.act t :=
   ⟨rfl, rfl⟩
 
-/-- The law a run's world shows lies within the run's law. -/
-theorem Run.world_law_le : ∀ x m y, r.world.law.step x m y → P.step x m y :=
-  r.shown_le
-
 end RunWorld
 
 /-- **A world's web is its run read through its dependences.** -/
@@ -201,17 +197,13 @@ theorem restRun_web (t : Nat) (g d : w.Relatum) :
 
 end World
 
-/-- **Every run of the law of exchange on webs is a balanced world.** -/
-theorem Run.world_balanced {R : Type} (r : Run (exchangeAt R)) : r.world.Balanced :=
-  r.step
-
 /-- **Balanced worlds and runs of the law of exchange are one.** The balanced world's run read as
 a world is the world, and a run read as a world and back is the run. -/
 theorem World.balancedRun_world (w : World) (balanced : w.Balanced) :
     (w.balancedRun balanced).world = w ∧
       ∀ {R : Type} (r : Run (exchangeAt R)) (t : Nat),
-        (r.world.balancedRun (Run.world_balanced r)).state t = r.state t ∧
-          (r.world.balancedRun (Run.world_balanced r)).act t = r.act t :=
+        (r.world.balancedRun (Run.step r)).state t = r.state t ∧
+          (r.world.balancedRun (Run.step r)).act t = r.act t :=
   ⟨rfl, fun _ _ => ⟨rfl, rfl⟩⟩
 
 /-! ## A course of a law of exchange is a run -/

@@ -1,0 +1,262 @@
+Actuation.lean	184	beq_ne	ListTests.beq_false_iff	code	rw [beq_ne h, Bool.and_false]
+Actuation.lean	196	beq_ne	ListTests.beq_false_iff	code	rw [beq_ne h, Bool.and_false]
+Actuation.lean	311	passes_iff_run	ListTests.option_any_true_iff	code	(passes_iff_run interface p s).trans
+CensusCounts.lean	69	cancel_add_right	add_right_cancel	code	⟨k, before, cancel_add_right c (across.trans
+CensusCounts.lean	94	ceasings_counts	counts_total	code	fun t => ⟨rfl, ceasings_counts t, comings_counts t⟩
+CensusCounts.lean	94	comings_counts	counts_total	code	fun t => ⟨rfl, ceasings_counts t, comings_counts t⟩
+CensusCounts.lean	147	ceasings_exist_iff	counts_iff_decided	code	(ceasings_exist_iff alive t).trans
+CodeAcquisition.lean	249	le_of_add_le_left	Naturals.le_of_add_le_right	code	rw [train_of_le (le_of_add_le_left enough), acquired_exact c distinct]
+CodeAcquisition.lean	250	le_sub_of_add_le	Naturals.le_sub_of_add_le	code	exact if_pos (le_sub_of_add_le enough)
+CodeAcquisition.lean	256	le_sub_of_add_le	Naturals.le_sub_of_add_le	code	(congrArg (· + 7) (sub_add_of_le (le_sub_of_add_le enough))).trans
+CodeAcquisition.lean	257	le_of_add_le_left	Naturals.le_of_add_le_right	code	(sub_add_of_le (le_of_add_le_left enough))
+Composition.lean	818	liftsFromEach_of_kernel	liftsFromEach_iff_of_kernel	code	liftsFromEach_of_kernel sense (JointAlike.matchesParts F)
+Composition.lean	826	liftsFromEach_of_kernel	liftsFromEach_iff_of_kernel	code	liftsFromEach_of_kernel kernel (SameJointTests.matchesParts compact stable)
+Contacts.lean	106	Registration.keeps_iff	Learning.Training.keeps_through_iff	code	(Registration.keeps_iff (alike := fun s => Learning.Training.AgreeOn (V := Bool) (D s))
+ContextualRuns.lean	71	total_const	total_const	code	(Eq.subst (motive := fun y => _ ≤ y) (total_const c _) bound)
+ContextualRuns.lean	124	chsh_in_context	CHSH.indexed_met	code	(Eq.subst (motive := fun x => x + 1 ≤ CHSH.pairs.length) (chsh_in_context r t)
+ContextualRuns.lean	135	square_in_context	Square.indexed_met	code	(Eq.subst (motive := fun x => x + 1 ≤ Square.lines.length) (square_in_context r t)
+ContextualRuns.lean	155	Specker.noGlobal_of_contradiction	Specker.noGlobal	code	Specker.local_) Specker.noGlobal_of_contradiction respects
+ContextualRuns.lean	164	Square.noGlobal_of_contradiction	Square.noGlobal	code	Square.local_) Square.noGlobal_of_contradiction respects
+ContingentPlans.lean	148	passes_iff_run	ListTests.option_any_true_iff	code	(passes_iff_run m p s).trans
+ContingentPlans.lean	179	passes_iff_run	ListTests.option_any_true_iff	code	fun s m' => (passes_iff_run m p s).mp (all s m')⟩
+ContingentPlans.lean	184	chosen_none_iff	ListTests.find_none_iff	code	(chosen_none_iff m [] plans).mpr fun _ _ => rfl
+ContingentPlans.lean	204	chosen_isSome_iff	ListTests.find_isSome_iff	code	(chosen_isSome_iff m states plans).trans
+ContingentPlans.lean	213	chosen_none_iff	ListTests.find_none_iff	code	(chosen_none_iff m states plans).trans
+Copying.lean	139	append_regroup	ListTests.append_assoc	code	⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (append_regroup _ _ _))⟩
+Copying.lean	323	append_regroup	ListTests.append_assoc	code	append_regroup, Naturals.sub_sub, Nat.add_assoc]
+Copying.lean	375	append_regroup	ListTests.append_assoc	code	(done'.trans (append_regroup built [x] xs).symm)
+Copying.lean	772	append_regroup	ListTests.append_assoc	code	⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (append_regroup _ _ _))⟩
+Copying.lean	812	append_regroup	ListTests.append_assoc	code	rw [append_regroup, ListTests.length_append] at ih
+Copying.lean	823	append_regroup	ListTests.append_assoc	code	rw [append_regroup] at h
+Copying.lean	1140	mul_regroup	mul_assoc_nat	code	_ = k * (2 * 2 ^ n) := mul_regroup k 2 (2 ^ n)
+CounterfactualRuns.lean	60	ExchangeLaw.world_balances_iff	ExchangeLaw.course_balances_iff	code	(ExchangeLaw.world_balances_iff na present start W)
+CounterfactualRuns.lean	67	ExchangeLaw.world_balances_iff	ExchangeLaw.course_balances_iff	code	((ExchangeLaw.world_balances_iff na present start W).mpr feasible)
+Counting.lean	210	exists_of_mem_map	preimage_of_mem_map	code	⟨fun mem => match exists_of_mem_map mem with
+Counting.lean	1736	exists_of_mem_map	preimage_of_mem_map	code	match exists_of_mem_map held with
+Counting.lean	1757	exists_of_mem_map	preimage_of_mem_map	code	⟨fun held => match exists_of_mem_map held with
+CouplingTraces.lean	138	couples_iff_step.mp	couples_iff_couplesAt.mp	code	match (chain_iff_trace j).mp ⟨v, start, ends, fun i lt => couples_iff_step.mp (chain i lt)⟩ with
+CouplingTraces.lean	143	couples_iff_step.mpr	couples_iff_couplesAt.mpr	code	⟨v, as.length, start, ends, fun i lt => couples_iff_step.mpr (steps i lt)⟩⟩
+CouplingTraces.lean	151	couples_iff_step.mp	couples_iff_couplesAt.mp	code	match (chain_iff_trace m).mp ⟨v, start, back, fun i lt => couples_iff_step.mp (chain i lt)⟩ with
+CouplingTraces.lean	158	couples_iff_step.mpr	couples_iff_couplesAt.mpr	code	⟨v, us.length + 1, Nat.succ_pos _, start, back, fun i lt => couples_iff_step.mpr (steps i lt)⟩⟩
+CouplingTraces.lean	311	couples_iff_step.mpr	couples_iff_couplesAt.mpr	code	self_coupling_reads (couples_iff_step.mpr ⟨u, step⟩)
+CouplingTraces.lean	391	couples_iff_step.mp	couples_iff_couplesAt.mp	code	⟨fun from_ N => couples_iff_step.mp (from_ N), fun from_ N => couples_iff_step.mpr (from_ N)⟩
+CouplingTraces.lean	391	couples_iff_step.mpr	couples_iff_couplesAt.mpr	code	⟨fun from_ N => couples_iff_step.mp (from_ N), fun from_ N => couples_iff_step.mpr (from_ N)⟩
+CouplingTraces.lean	399	couples_iff_step.mpr	couples_iff_couplesAt.mpr	code	⟨fun settled d u c step => recurs_iff_steps.mp (settled d c (couples_iff_step.mpr ⟨u, step⟩)),
+CouplingTraces.lean	400	couples_iff_step.mp	couples_iff_couplesAt.mp	code	fun steps d c from_ => match couples_iff_step.mp from_ with
+CouplingTraces.lean	413	couples_iff_step.mp	couples_iff_couplesAt.mp	code	match couples_iff_step.mp couples with
+CourseRoles.lean	96	World.kind_balanced_iff_roles	Flow.roles_balances	code	World.kind_balanced_iff_roles _ _
+CourseWorlds.lean	518	formedWorld_level	formedCourse_eq_carried	code	Nat.le_trans (Nat.le_of_eq (formedWorld_level reads t c))
+Courses.lean	254	reach_iff_orbit.mpr	Branching.law_reach_iff.mpr	code	(⟨fun avoids n => avoids _ (reach_iff_orbit.mpr ⟨n, rfl⟩),
+Courses.lean	255	reach_iff_orbit.mp	Branching.law_reach_iff.mp	code	fun avoids _ reach => match reach_iff_orbit.mp reach with
+Courses.lean	275	reach_iff_orbit.mp	Branching.law_reach_iff.mp	code	fun _ reach => match reach_iff_orbit.mp reach with
+Courses.lean	285	length_units	Branching.units_length	code	Eq.mpr (congrArg (· ≤ n) (length_units k)) bound, inside⟩⟩
+Courses.lean	992	length_units	Branching.units_length	code	(congrArg (Law.orbit next q) (length_units n))).symm⟩,
+CrossSituational.lean	128	mem_filter.mp	ListTests.mem_filter_iff.mp	code	⟨(mem_filter.mp inside).1, (mem_filter.mp inside).2,
+CrossSituational.lean	128	mem_filter.mp	ListTests.mem_filter_iff.mp	code	⟨(mem_filter.mp inside).1, (mem_filter.mp inside).2,
+CrossSituational.lean	129	mem_filter.mpr	ListTests.mem_filter_iff.mpr	code	fun _ mem pm => mem_singleton (kept ▸ mem_filter.mpr ⟨mem, pm⟩)⟩,
+CrossSituational.lean	252	mem_filter.trans	ListTests.mem_filter_iff.trans	code	mem_filter.trans ⟨fun ⟨mem, st⟩ => ⟨mem, stands_iff.mp st⟩, fun ⟨mem, all⟩ => ⟨mem, stands_iff.mpr all⟩⟩
+CrossSituational.lean	321	mem_filter.mp	ListTests.mem_filter_iff.mp	code	(mem_filter.mp ((candidates_append rep rs more) ▸ later)).1
+CrossSituational.lean	328	mem_filter.trans	ListTests.mem_filter_iff.trans	code	exact mem_filter.trans ⟨fun ⟨mem, st⟩ => ⟨mem, stands_iff.mp st⟩,
+Derivation.lean	278	closed	Derivation.closed_throughout	code	closed fun _ t inScope => Becoming.Scope.secures sound t inScope
+Descent.lean	295	other_other	Mutualism.other_twice	code	have onto (c : Relatum) : ∃ y, other y = c := ⟨other c, other_other c⟩
+Entropy.lean	845	mem_append_left	mem_append_of_left	code	| _ :: _, _, .head _, mem => mem_append_left _ mem
+Entropy.lean	846	mem_append_right	mem_append_of_right	code	| a' :: _, _, .tail _ inner, mem => mem_append_right (g a') (EntropyLists.mem_joinMap inner mem)
+Entropy.lean	1015	length_of_map	length_map	code	(length_of_map (W.level t) cs)
+Entropy.lean	1023	length_of_map	length_map	code	(length_of_map (W.level t) cs)
+Entropy.lean	1809	map_congr	map_eq_of	code	map_congr (fun x => match x with
+ExchangePremises.lean	640	World.withRest_acting	Flow.readOff_acting	code	⟨World.withRest_balanced, World.withRest_acting, World.withRest_taking,
+ExchangePremises.lean	640	World.withRest_taking	Flow.readOff_taking	code	⟨World.withRest_balanced, World.withRest_acting, World.withRest_taking,
+Experiment.lean	292	not_not	ListTests.not_not	code	not_not (states n).1
+FormedLoops.lean	67	formedWorld_level	formedCourse_eq_carried	code	⟨(formedWorld_level reads t c).trans (carried_before t le t (Nat.le_refl t) c).symm,
+Gluing.lean	781	beq_self	beq_self	code	((congr (congrArg addParity (congrArg (· && x m) (beq_self m)))
+HexagramLaws.lean	116	both	bool_of_and_true	code	(fun _ mem same => not_mem_of_memb (ListTests.false_of_not (both h).1)
+HexagramLaws.lean	118	both	bool_of_and_true	code	(nodup_of_distinctb (both h).2)
+HexagramLaws.lean	683	both	bool_of_and_true	code	| ⟨q, mem, holds⟩ => match both holds with
+HexagramLaws.lean	684	both	bool_of_and_true	code	| ⟨rule, which⟩ => match both rule with
+HexagramLaws.lean	719	both	bool_of_and_true	code	| ⟨q, mem, holds⟩ => match both holds with
+HexagramLaws.lean	720	both	bool_of_and_true	code	| ⟨rule, which⟩ => match both rule with
+HexagramLaws.lean	852	both	bool_of_and_true	code	have ⟨h5, sf⟩ := both all
+HexagramLaws.lean	853	both	bool_of_and_true	code	have ⟨h4, se⟩ := both h5
+HexagramLaws.lean	854	both	bool_of_and_true	code	have ⟨h3, sd⟩ := both h4
+HexagramLaws.lean	855	both	bool_of_and_true	code	have ⟨h2, sc⟩ := both h3
+HexagramLaws.lean	856	both	bool_of_and_true	code	have ⟨sa, sb⟩ := both h2
+HexagramPlaces.lean	973	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => same_eq (both h).1
+HexagramPlaces.lean	974	both	bool_of_and_true	code	| _ :: _, h, q, .tail _ mem => placesHold_sound (both h).2 q mem
+HexagramPlaces.lean	998	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => both (both h).1
+HexagramPlaces.lean	998	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => both (both h).1
+HexagramPlaces.lean	999	both	bool_of_and_true	code	| _ :: _, h, q, .tail _ mem => centresHold_sound (both h).2 q mem
+HexagramPlaces.lean	1022	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => (both h).1
+HexagramPlaces.lean	1023	both	bool_of_and_true	code	| _ :: _, h, q, .tail _ mem => fallsHold_sound (both h).2 q mem
+HexagramPlaces.lean	1041	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => (both h).1
+HexagramPlaces.lean	1042	both	bool_of_and_true	code	| _ :: _, h, n, .tail _ mem => middleOppositionsHold_sound (both h).2 n mem
+HexagramSequences.lean	146	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => (both h).1
+HexagramSequences.lean	147	both	bool_of_and_true	code	| _ :: _, h, s, .tail _ mem => of_allOf (both h).2 s mem
+HexagramSequences.lean	237	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => (both h).1
+HexagramSequences.lean	238	both	bool_of_and_true	code	| _ :: _, h, q, .tail _ mem => of_followsb (both h).2 q mem
+HexagramSequences.lean	277	both	bool_of_and_true	code	cases eq_of_eqb (both both').1
+HexagramSequences.lean	278	both	bool_of_and_true	code	cases eq_of_eqb (both both').2
+HexagramSequences.lean	382	both	bool_of_and_true	code	have changed : st'.1 = flip q st.1 := eq_of_eqb (both found).1
+HexagramSequences.lean	383	both	bool_of_and_true	code	⟨st.1, fun same' => differs_ne (both found).2
+HexagramSequences.lean	469	act_act	Symmetry.act_self	code	(follows.back commutes (act_act g) (step_of_stepb pair) (step_of_stepb onward))
+HexagramSites.lean	110	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => (both h).1
+HexagramSites.lean	111	both	bool_of_and_true	code	| _ :: _, h, x, .tail _ mem => all_sound p (both h).2 x mem
+HexagramSites.lean	198	both	bool_of_and_true	code	(both h).2
+HexagramSites.lean	299	both	bool_of_and_true	code	have h := both (all_sound (fun (q : Nat × Place × Bool) => betweenEnds q.2.1 &&
+HexagramSites.lean	301	both	bool_of_and_true	code	⟨h.1, same_eq (both h.2).1, same_eq (both h.2).2⟩
+HexagramSites.lean	301	both	bool_of_and_true	code	⟨h.1, same_eq (both h.2).1, same_eq (both h.2).2⟩
+HexagramSites.lean	396	both	bool_of_and_true	code	have h123 := both h
+HexagramSites.lean	397	both	bool_of_and_true	code	have h12 := both h123.1
+HexagramSites.lean	398	both	bool_of_and_true	code	have h1 := both h12.1
+HexagramSites.lean	415	both	bool_of_and_true	code	have h123 := both h
+HexagramSites.lean	416	both	bool_of_and_true	code	have h12 := both h123.1
+HexagramSites.lean	417	both	bool_of_and_true	code	have h1 := both h12.1
+HexagramSites.lean	994	both	bool_of_and_true	code	have h := both (all_sound (fun (q : Nat × Place) => middle q.2 && (inPhase (number q.1) q.2 && holdsPlace (number q.1) q.2))
+HexagramSites.lean	996	both	bool_of_and_true	code	⟨h.1, (both h.2).1, (both h.2).2⟩
+HexagramSites.lean	996	both	bool_of_and_true	code	⟨h.1, (both h.2).1, (both h.2).2⟩
+Hexagrams.lean	131	both	bool_of_and_true	code	match both h with
+Hexagrams.lean	132	both	bool_of_and_true	code	| ⟨h5, e6⟩ => match both h5 with
+Hexagrams.lean	133	both	bool_of_and_true	code	| ⟨h4, e5⟩ => match both h4 with
+Hexagrams.lean	134	both	bool_of_and_true	code	| ⟨h3, e4⟩ => match both h3 with
+Hexagrams.lean	135	both	bool_of_and_true	code	| ⟨h2, e3⟩ => match both h2 with
+Hexagrams.lean	280	both	bool_of_and_true	code	| .inl turned => match both turned with
+Hexagrams.lean	282	both	bool_of_and_true	code	| .inr changed => match both changed with
+Hexagrams.lean	293	both	bool_of_and_true	code	| _ :: _, h, _, .head _ => paired_of_pairedb (both h).1
+Hexagrams.lean	294	both	bool_of_and_true	code	| _ :: _, h, q, .tail _ mem => paired_of_allPaired (both h).2 q mem
+HistoryIdeals.lean	333	Ideals.principal_le_principal_iff.mp	Ideals.principal_le_iff.mp	code	⟨fun same => prefix_antisymm (Ideals.principal_le_principal_iff.mp same.le)
+HistoryIdeals.lean	334	Ideals.principal_le_principal_iff.mp	Ideals.principal_le_iff.mp	code	(Ideals.principal_le_principal_iff.mp same.ge),
+HistoryIdeals.lean	554	Ideals.Refutable.hull_not_not	Ideals.RefutableBy.not_not	code	fun refutable => Ideals.Refutable.hull_not_not refutable (finiteOr_hull K (traceIdeal a)) fun
+HistoryIdeals.lean	606	Ideals.hull_contains	Ideals.AdheresBy.of	code	fun r' inside => Ideals.hull_contains ⟨r', inside, Ideals.Ideal.Same.refl _⟩)⟩
+HistoryIdeals.lean	673	Ideals.principal_le_principal_iff.mpr	Ideals.principal_le_iff.mpr	code	(Ideals.principal_le_principal_iff.mpr ⟨Nat.zero_le 1, unit_agree _ _ 0⟩) with
+Ideals.lean	212	principal_le_principal_iff.mpr	Ideals.principal_le_iff.mpr	code	Ideal.LE.trans hJ.le (principal_le_principal_iff.mpr hpr),
+Ideals.lean	213	principal_le_principal_iff.mpr	Ideals.principal_le_iff.mpr	code	Ideal.LE.trans hK.le (principal_le_principal_iff.mpr hqr)⟩⟩
+Ideals.lean	360	principal_le_principal_iff.mpr	Ideals.principal_le_iff.mpr	code	fun hpq hq => hc.lower hq (principal_le_principal_iff.mpr hpq)
+Ideals.lean	416	principal_mem	Preorder.refl	code	| ⟨p, hp, blocked⟩ => ⟨p, hp, fun h => blocked _ h (principal_mem P p)⟩,
+Ideals.lean	461	hull_contains	AdheresBy.of	code	⟨fun ⟨_, hI, hp⟩ => hI p hp, fun ⟨I, hI, hp⟩ => ⟨I, hull_contains hI, hp⟩⟩
+Ideals.lean	468	hull_contains	AdheresBy.of	code	⟨least _ (hull_closed C) (fun _ => hull_contains) I, hull_least hh contains⟩
+Ideals.lean	472	hull_contains	AdheresBy.of	code	⟨hull_least hc fun _ h => h, hull_contains⟩
+Ideals.lean	542	principal_le_principal_iff.mpr	Ideals.principal_le_iff.mpr	code	(principal_le_principal_iff.mpr fun e => nomatch e) with
+Ideals.lean	557	principal_mem	Preorder.refl	code	| ⟨false, _, blocked⟩ => absurd (principal_mem chain false)
+Ideals.lean	846	principal_le_principal_iff	Ideals.principal_le_iff	code	⟨fun _ _ => principal_le_principal_iff, principal_compact P,
+Identification.lean	1115	not_not_bool	ListTests.not_not	code	not_not_bool (Negation.course a)
+Identification.lean	1651	Decided.exists_within	Decided.exists_listed	code	match Decided.exists_within (l := l) (fun x inx =>
+Identification.lean	1652	Decided.exists_within	Decided.exists_listed	code	Decided.exists_within (l := l) fun y iny => (values x y inx iny).not) with
+IdentificationRuns.lean	75	goAlike_process_iff.mp	Learning.goAlike_iff_lumped.mp	code	have ahead : π (next s) = π (next s') := goAlike_process_iff.mp alike s s' same
+IdentificationRuns.lean	135	goAlike_process_iff.mp	Learning.goAlike_iff_lumped.mp	code	| succ n ih => exact goAlike_process_iff.mp alike _ _ ih
+IdentificationRuns.lean	142	goAlike_process_iff.mpr	Learning.goAlike_iff_lumped.mpr	code	⟨fun fixes => goAlike_process_iff.mpr fun s s' e => fixes s s' e 1, sameFuture_of_goAlike⟩
+IdentificationRuns.lean	148	goAlike_process_iff.mp	Learning.goAlike_iff_lumped.mp	code	refine now_identifiesAlike_iff_goAlike.trans ⟨fun alike x c c' => goAlike_process_iff.mp alike _ _ rfl, ?_⟩
+IdentificationRuns.lean	150	goAlike_process_iff.mpr	Learning.goAlike_iff_lumped.mpr	code	apply goAlike_process_iff.mpr
+JoiningCodes.lean	55	codes_contextSame	Presentations.equal_codes_same_answers	code	fun equal => impossible ((codes_contextSame exact equal c).mp possible)
+JoiningCodes.lean	62	codes_contextSame	Presentations.equal_codes_same_answers	code	(ContextSame.composable_iff (codes_contextSame exact atX) (codes_contextSame exact atY)).mp
+JoiningCodes.lean	62	codes_contextSame	Presentations.equal_codes_same_answers	code	(ContextSame.composable_iff (codes_contextSame exact atX) (codes_contextSame exact atY)).mp
+JoiningCodes.lean	73	codes_contextSame	Presentations.equal_codes_same_answers	code	(reduced d z (ContextSame.joined fn (codes_contextSame exact atX) (codes_contextSame exact atY)
+JoiningCodes.lean	73	codes_contextSame	Presentations.equal_codes_same_answers	code	(reduced d z (ContextSame.joined fn (codes_contextSame exact atX) (codes_contextSame exact atY)
+LastingRuns.lean	229	Courses.length_units	Branching.units_length	code	(Eq.mpr (congrArg (· ≤ n) (Courses.length_units k)) bound))⟩
+LastingRuns.lean	277	Courses.reach_iff_orbit.mp	Branching.law_reach_iff.mp	code	| ⟨_, reach, inside⟩ => match Courses.reach_iff_orbit.mp reach with
+LevelWebs.lean	40	falls_not_recurring_from_floor	falls_not_recurring	code	falls_not_recurring_from_floor (fun t => W.level t c) T
+LevelWebs.lean	65	length_of_map	length_map	code	fun same => ⟨length_of_map (W.level t) cs, (W.config_total cs t).trans same⟩⟩
+Likeness.lean	1445	even_or_odd	Pulse.parity	code	match even_or_odd n with
+LimitVerification.lean	229	not_eq_true_of_false	ListTests.not_eq_true_of_false	code	not_eq_true_of_false (clear_false_of_true (s := fun j => succeeds j r) yes lt)
+LimitVerification.lean	537	not_eq_true_of_false	ListTests.not_eq_true_of_false	code	| k + 1, le => not_eq_true_of_false (no k (Nat.le_of_succ_le_succ le))⟩,
+LimitVerification.lean	712	toggle_true	ListTests.not_ne_self	code	| ⟨k, le, yes⟩ => toggle_true _
+Listing.lean	517	Web.arising_of_ceasing	Listed.coming_of_ceasing	comment	/-- **The census law for any listing of what is active** (`Web.arising_of_ceasing`): with a
+ListingRefutations.lean	280	Web.stock_zero_of_within	total_zero_of_within	code	(fun t later => mul_zero_of (Web.stock_zero_of_within fun c mem => (lists.2 c).mp mem)
+MoveFormation.lean	678	MoveFormation.add_sub_left	Naturals.add_sub_cancel_left	code	((MoveFormation.add_sub_left (r.state 0).2.length n).symm.trans
+MutualDependence.lean	112	withinInfluence_iff_withinReach.mp	WithinClosure.converse.mp	code	⟨fun dependent f g => withinInfluence_iff_withinReach.mp (dependent g f),
+MutualDependence.lean	113	withinInfluence_iff_withinReach.mpr	WithinClosure.converse.mpr	code	fun reach f g => withinInfluence_iff_withinReach.mpr (reach g f)⟩
+OneStep.lean	320	exists_of_mem_map	preimage_of_mem_map	code	exists_of_mem_map (Eq.subst (motive := fun l => p ∈ l) realizes.1.symm mem)
+OneStep.lean	427	exists_of_mem_map	preimage_of_mem_map	code	⟨fun ⟨x, y, mem, exchanges⟩ => match exists_of_mem_map mem with
+OneStep.lean	443	exists_of_mem_map	preimage_of_mem_map	code	fun _ mem => match exists_of_mem_map mem with
+OneStep.lean	451	exists_of_mem_map	preimage_of_mem_map	code	fun _ mem => match exists_of_mem_map mem with
+OneStep.lean	706	exists_of_mem_map	preimage_of_mem_map	code	| .inl first => match exists_of_mem_map first with
+OneStep.lean	708	exists_of_mem_map	preimage_of_mem_map	code	| .inr second => match exists_of_mem_map second with
+OneStep.lean	783	exists_of_mem_map	preimage_of_mem_map	code	(fun _ first second => match exists_of_mem_map first, exists_of_mem_map second with
+OneStep.lean	783	exists_of_mem_map	preimage_of_mem_map	code	(fun _ first second => match exists_of_mem_map first, exists_of_mem_map second with
+OneStep.lean	823	exists_of_mem_map	preimage_of_mem_map	code	match exists_of_mem_map mem with
+OneStep.lean	946	mem_append_right	mem_append_of_right	code	.tail _ (mem_append_right (unitList (P t) (u t)) (.head []))
+OneStep.lean	1952	exists_of_mem_map	preimage_of_mem_map	code	fun _ mem => match exists_of_mem_map mem with
+OneStep.lean	2222	exists_of_mem_map	preimage_of_mem_map	code	fun _ inside last => match exists_of_mem_map inside, mem_cons_cases last with
+OneStep.lean	2227	mem_append_right	mem_append_of_right	code	mem_append_right _ (.head [])
+OneStep.lean	2231	mem_append_left	mem_append_of_left	code	mem_append_left _ (mem_map_of (steps_of_within (Nat.zero_le a)
+OneStep.lean	2351	node_injective	Site.node.inj	code	((congrArg (fun x => track σ ρ x t) (node_injective same)).trans
+OneStep.lean	2364	exists_of_mem_map	preimage_of_mem_map	code	match exists_of_mem_map mem with
+Openness.lean	215	mem_append_left	mem_append_of_left	code	⟨es, distinct, fun c mem => within c (mem_append_left _ mem),
+Openness.lean	216	mem_append_right	mem_append_of_right	code	fun c mem => within c (mem_append_right _ mem), closed⟩
+Openness.lean	224	mem_append_left	mem_append_of_left	code	fun c mem => within c (mem_append_left _ mem),
+Openness.lean	225	mem_append_right	mem_append_of_right	code	fun c mem => within c (mem_append_right _ mem), closed⟩
+Openness.lean	711	mem_append_left	mem_append_of_left	code	| _ + 1, mem => mem_append_left _ mem
+Openness.lean	716	mem_append_right	mem_append_of_right	code	| m + 1, .step within => mem_append_right (l (m + 1)) (mem_gather mem within)
+PlaceTransitionNets.lean	666	inl_inj	inl_injective	code	⟨distinct_append' (distinct_map inl_inj distinct)
+PlaceTransitionNets.lean	667	inr_inj	inr_injective	code	(distinct_map inr_inj (keep_distinct distinct'))
+PlaceTransitionNets.lean	675	inr_not_mem_inl	inr_not_mem	code	| .inl inside => absurd inside inr_not_mem_inl
+PlaceTransitionNets.lean	676	inr_inj	inr_injective	code	| .inr outside => (mem_keep.mp (mem_of_map inr_inj outside)).2⟩⟩⟩
+PlaceTransitionNets.lean	688	inr_inj	inr_injective	code	(total_le_of_support (distinct_map inr_inj distinct) fun a _ positive =>
+PlaceTransitionNets.lean	714	inr_inj	inr_injective	code	⟨ps.map Sum.inr, distinct_map inr_inj distinct, fun _ present c out =>
+PlaceTransitionNets.lean	779	bools_distinct	Shuttle.distinct	code	⟨cycle_fires.world_balanced one, world_counted bools_distinct ListTests.mem_bools bools_distinct ListTests.mem_bools,
+PlaceTransitionNets.lean	779	bools_distinct	Shuttle.distinct	code	⟨cycle_fires.world_balanced one, world_counted bools_distinct ListTests.mem_bools bools_distinct ListTests.mem_bools,
+PlaceTransitionNets.lean	780	bools_distinct	Shuttle.distinct	code	world_embodied, world_enclosed bools_distinct ListTests.mem_bools⟩
+PlaceTransitionNets.lean	786	bools_distinct	Shuttle.distinct	code	((dissipative_iff bools_distinct ListTests.mem_bools).mp dissipative 0 true (.head _))
+Population.lean	1161	DependenceCensus.over_stretch_on	Listed.over_stretch_on	code	DependenceCensus.over_stretch_on fun s _ _ => census s
+Population.lean	1203	Census.over_stretch_on	Listed.over_stretch_on	code	Census.over_stretch_on W fun s _ _ => census s
+Prelude.lean	239	beq_true_iff.mpr	ListTests.decide_true_iff.mpr	code	false_iff_not.trans ⟨fun n e => n (beq_true_iff.mpr e), fun n e => n (beq_true_iff.mp e)⟩
+Prelude.lean	239	beq_true_iff.mp	ListTests.decide_true_iff.mp	code	false_iff_not.trans ⟨fun n e => n (beq_true_iff.mpr e), fun n e => n (beq_true_iff.mp e)⟩
+Prelude.lean	288	beq_true_iff.mp	ListTests.decide_true_iff.mp	code	| true => exact ⟨fun _ => mem_cons_iff.mpr (.inl (beq_true_iff.mp h)), fun _ => rfl⟩
+PresentationFrames.lean	62	Tests.kernel_iff	Presentations.reduced_exact_kernel	code	Tests.kernel_iff (canonical_exact F) (canonical_reduced ext _) s s'
+Propagation.lean	388	mem_steps_of_between	steps_of_within	code	mem_steps_of_between (Nat.zero_le s)
+Reading.lean	252	Flow.adopt_balances	Flow.withImbalance_balances	code	⟨Flow.adopt_balances, Flow.adopt_acting, Flow.adopt_taking,
+Reading.lean	252	Flow.adopt_acting	Flow.readOff_acting	code	⟨Flow.adopt_balances, Flow.adopt_acting, Flow.adopt_taking,
+Reading.lean	252	Flow.adopt_taking	Flow.readOff_taking	code	⟨Flow.adopt_balances, Flow.adopt_acting, Flow.adopt_taking,
+Reading.lean	442	World.withRest_acting	Flow.readOff_acting	code	⟨World.withRest_balanced, World.withRest_acting, World.withRest_taking,
+Reading.lean	442	World.withRest_taking	Flow.readOff_taking	code	⟨World.withRest_balanced, World.withRest_acting, World.withRest_taking,
+ReferencePlan.lean	254	Registration.keeps_iff	Learning.Training.keeps_through_iff	comment	/-- Direct reuse of `Registration.keeps_iff`, not a second definition of selection through a
+ReferencePlan.lean	259	Registration.keeps_iff	Learning.Training.keeps_through_iff	code	(Registration.keeps_iff
+ReferencePlan.lean	267	Contacts.added_gains	Contacts.retired_loses	comment	/-- A new contact gains a choice: an instance of `Contacts.added_gains`. -/
+ReferencePlan.lean	271	Contacts.added_gains	Contacts.retired_loses	code	Contacts.added_gains (List.Mem.head m) absent
+ReferencePlan.lean	430	Stock.total_zero	total_zero	code	(Stock.trace_balance balanced h).trans (congrArg (s.fuel + ·) (Stock.total_zero as))
+ReferencePlan.lean	432	Stock.total_zero	total_zero	code	(congrArg (t.used + ·) (Stock.total_zero as)).symm.trans (Stock.trace_balance used_balanced h)
+ReferencePlanTraces.lean	424	first_installed_choice	ReferencePlan.first_new_selection	code	exact first_installed_choice
+Refinement.lean	128	Decided.exists_within	Decided.exists_listed	code	match Decided.exists_within (l := r) fun a inside => decided j x a mem (within a inside) with
+Refinement.lean	159	Decided.exists_within	Decided.exists_listed	code	match Decided.exists_within (l := l) (fun x mem => Decided.exists_within (l := l)
+Refinement.lean	159	Decided.exists_within	Decided.exists_listed	code	match Decided.exists_within (l := l) (fun x mem => Decided.exists_within (l := l)
+RelativePosition.lean	83	total_same	total_const	code	(total_mul ps.length a ps).trans (total_same (total ps a) ps).symm
+RelativePosition.lean	102	total_same	total_const	code	((congr (congrArg (· + ·) (total_mul ps.length b ps)) (total_same (total ps a) ps)).trans
+RelativePosition.lean	104	total_same	total_const	code	((congr (congrArg (· + ·) (total_mul ps.length a ps)) (total_same (total ps b) ps)).symm.trans
+RelativePosition.lean	171	total_same	total_const	code	Nat.le_trans (total_le ps greatest) (Nat.le_of_eq (total_same (a g) ps))
+Remainder.lean	778	Remainder.Once.exact	Once.exact	comment	the first step, so order one is exact at every step from every start (`Remainder.Once.exact`, through
+Resolution.lean	1694	distinct	Asymptote.distinct	code	fun dissipative => Flow.exchange_not_recurring balances dissipative distinct (T := 0)
+Resolution.lean	2527	Circulation.distinct	Asymptote.distinct	code	Circulation.dissipative Circulation.distinct (fun t _ => Circulation.closed t) unrefined
+ResponseLearning.lean	132	add_sub_of_le'	add_sub_of_le	code	rw [Nat.add_left_comm, add_sub_of_le' le, Nat.add_comm]
+Revision.lean	327	Stock.trace_mono	trace_map	code	⟨Stock.trace_mono (fun _ _ _ h => step_iff.mp h),
+Revision.lean	328	Stock.trace_mono	trace_map	code	Stock.trace_mono (fun _ _ _ h => step_iff.mpr h)⟩
+RouteFormation.lean	79	and_left	ListTests.and_left	code	| _ :: _, all, .head _ => of_decide_eq_true (and_left all) rfl
+RouteFormation.lean	80	and_right	ListTests.and_right	code	| _ :: _, all, .tail _ mem => not_mem_of_all (and_right all) mem
+RouteFormation.lean	166	and_left	ListTests.and_left	code	| _ :: _, fit, _, _, .head _ => of_decide_eq_true (and_left fit)
+RouteFormation.lean	167	and_right	ListTests.and_right	code	| _ :: rest, fit, e, answer, .tail _ mem => fits_agrees p rest (and_right fit) e answer mem
+Routes.lean	384	Routes.total_mul_right	Loops.total_mul_const	code	(total_congr (fun d => Routes.total_mul_right
+RuleHandoff.lean	256	run_is_trace	RuleHandoff.trace_iff_run	code	nonadopting_trace_keeps_rule (run_is_trace h) hn
+Runs.lean	205	Run.world_balanced	Run.step	code	(r.world.balancedRun (Run.world_balanced r)).state t = r.state t ∧
+Runs.lean	206	Run.world_balanced	Run.step	code	(r.world.balancedRun (Run.world_balanced r)).act t = r.act t :=
+Sampling.lean	123	mem_steps_of_between	steps_of_within	code	mem_steps_of_between le (Nat.lt_of_lt_of_le lt
+Sampling.lean	474	mem_steps_of_between	steps_of_within	code	fun t from_ below => balances t (mem_steps_of_between from_ below) c mem
+Settling.lean	272	path_seq	Branching.trace_positions	code	match path_seq a back with
+SharedCodes.lean	831	symmetric_kept	Law.KeepsRelation.run	code	(congrArg (τ m) agree).trans (symmetric_kept keeps symmetric n i m).symm
+SharedCodes.lean	1036	impose_reads	SharedCodes.self_reads_iff	code	∀ m n', ReadsAs (impose c X i) (impose c X j m) n' ↔ n' = m).trans (impose_reads c X i j),
+SharedCodes.lean	1173	append_nil	ListTests.append_nil	code	| 0 => ⟨[], (append_nil _).symm⟩
+SharedCodes.lean	1177	append_assoc	ListTests.append_assoc	code	⟨more ++ r.act n, (r.step n).trans ((congrArg (· ++ r.act n) pre).trans (append_assoc _ _ _))⟩
+SharedCodes.lean	1209	append_nil	ListTests.append_nil	code	| 0 => ⟨h, [], (append_nil rs).symm⟩
+SharedCodes.lean	1218	append_assoc	ListTests.append_assoc	code	(append_assoc rs more [writes e]))⟩
+SharedCodes.lean	1297	not_moves	ListTests.not_ne_self	code	(m := ()) (fun x => not_moves x) 1 false (three_agree.1)
+SharedCodes.lean	1303	not_moves	ListTests.not_ne_self	code	(m := ()) (fun x => not_moves x) 1 false (three_agree.2.1)
+SharedCodes.lean	1308	not_moves	ListTests.not_ne_self	code	(m := ()) (fun x => not_moves x) 1 false (three_agree.2.2)
+Space.lean	1109	arisingRecurs_ofRoles	Web.roles_unceasing	code	(arisingRecurs_ofRoles _ _).mpr Accretion.unceasing
+Space.lean	1116	arisingRecurs_ofRoles	Web.roles_unceasing	code	match (arisingRecurs_ofRoles _ _).mp arising 0 with
+Standing.lean	97	mem_append_left	mem_append_of_left	code	| _ :: _, _, .head _, mem => mem_append_left _ (mem_map_of mem)
+Standing.lean	98	mem_append_right	mem_append_of_right	code	| _ :: _, _, .tail _ listed, mem => mem_append_right _ (mem_pairs listed mem)
+Standing.lean	722	exists_of_mem_map	preimage_of_mem_map	code	fun mem => match exists_of_mem_map mem with
+Standing.lean	828	exists_of_mem_map	preimage_of_mem_map	code	fun mem => match exists_of_mem_map mem with
+Typicality.lean	383	mul_mul_mul	Naturals.mul_mul_mul_comm	code	rw [← weight_mul p q u v w, mul_mul_mul]
+Typicality.lean	386	mul_mul_mul	Naturals.mul_mul_mul_comm	code	rw [← weight_mul p q u v w, mul_mul_mul]
+Verification.lean	318	principal_le_principal_iff.mpr	Ideals.principal_le_iff.mpr	code	fun hpq hp => hc.upper hp (principal_le_principal_iff.mpr hpq)
+Verification.lean	378	principal_mem	Preorder.refl	code	| ⟨false, _, blocked⟩ => absurd (principal_mem chain false)
+Verification.lean	675	remainder_noStretchRefutes	remainder_not_refuted	code	fun outside => refutable.noStretchRefutes_not_not (remainder_noStretchRefutes K) r
+Verification.lean	767	verifyingClass_iff.mpr	verified_iff_interiorBy.mpr	code	⟨fun verifiable r => ⟨fun inside => verifyingClass_iff.mpr (verifiable r inside),
+Verification.lean	768	verifyingClass_iff.mp	verified_iff_interiorBy.mp	code	fun meets => (verifyingClass_iff.mp meets).holds⟩,

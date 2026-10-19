@@ -1359,13 +1359,6 @@ theorem two_mul_inj : ∀ m n : Nat, 2 * m = 2 * n → m = n
   | m + 1, n + 1, same =>
     congrArg (· + 1) (two_mul_inj m n (succ_inj (succ_inj same)))
 
-/-- Every number is even or odd. -/
-theorem even_or_odd : ∀ n : Nat, (∃ k, n = 2 * k) ∨ ∃ k, n = 2 * k + 1
-  | 0 => .inl ⟨0, rfl⟩
-  | n + 1 => match even_or_odd n with
-    | .inl ⟨k, e⟩ => .inr ⟨k, congrArg (· + 1) e⟩
-    | .inr ⟨k, e⟩ => .inl ⟨k + 1, congrArg (· + 1) e⟩
-
 /-- Whether a Boolean value is `true` is decided. -/
 theorem decided_true (b : Bool) : Decided (b = true) :=
   match b with
@@ -1449,7 +1442,7 @@ theorem Interleave.odd {α β : Nat → Prop} {k : Nat} : Interleave α β (2 * 
 
 theorem Interleave.decided {α β : Nat → Prop} (decided : ∀ k, Decided (α k))
     (decided' : ∀ k, Decided (β k)) (n : Nat) : Decided (Interleave α β n) :=
-  match even_or_odd n with
+  match Pulse.parity n with
   | .inl ⟨k, e⟩ => Eq.subst (motive := fun x => Decided (Interleave α β x)) e.symm
       (match decided k with
        | .inl holds => .inl (Interleave.even.mpr holds)

@@ -574,10 +574,6 @@ theorem undelivered_fails : ¬ Served demand oldService fun _ => False :=
 /-- Where transfer harms a contributor's basic life, the two basic protections cross. -/
 def crossed (transfer : Bool) (claim : Bool) : Prop := transfer = claim
 
-theorem crossed_unranked :
-    ¬ Above crossed Crossed.noGain true false ∧ ¬ Above crossed Crossed.noGain false true :=
-  Crossed.incomparable
-
 end Handover
 
 namespace Collective

@@ -103,9 +103,9 @@ theorem survive_data_iff {S : Type u} {D : S → I → Prop} (s t : S)
     (decided : ∀ i, D t i ∨ ¬ D t i) :
     (∀ select, Learning.Training.Through (Learning.Training.AgreeOn (V := Bool) (D s)) select →
       Learning.Training.Through (Learning.Training.AgreeOn (D t)) select) ↔ ∀ i, D s i → D t i :=
-  (Registration.keeps_iff (alike := fun s => Learning.Training.AgreeOn (V := Bool) (D s))
-    (s := s) (t := t) (fun _ _ _ => rfl) (fun _ _ h i m => (h i m).symm)
-    (fun _ _ _ h k i m => (h i m).trans (k i m))).symm.trans (keeps_data_iff s t decided)
+  (Learning.Training.keeps_through_iff (old := Learning.Training.AgreeOn (V := Bool) (D s))
+    (new := Learning.Training.AgreeOn (D t)) (fun _ _ _ => rfl) (fun _ _ h i m => (h i m).symm)
+    (fun _ _ _ h k i m => (h i m).trans (k i m))).trans (keeps_data_iff s t decided)
 
 /-! ### Contact plans: the data held by a list -/
 
@@ -130,12 +130,6 @@ theorem retired_loses {D D' : List I} {i : I} (held : i ∈ D) (retired : i ∉ 
     Learning.Training.Through (AgreeOn D) (fun x : I → Bool => x i = true) ∧
       ¬ Learning.Training.Through (AgreeOn D') (fun x : I → Bool => x i = true) :=
   ⟨through_at_iff.mpr held, fun h => retired (through_at_iff.mp h)⟩
-
-/-- An added contact gains its selection. -/
-theorem added_gains {D D' : List I} {i : I} (added : i ∈ D') (absent : i ∉ D) :
-    Learning.Training.Through (AgreeOn D') (fun x : I → Bool => x i = true) ∧
-      ¬ Learning.Training.Through (AgreeOn D) (fun x : I → Bool => x i = true) :=
-  retired_loses added absent
 
 /-- Along every trace whose steps retain contacts, every selection is kept. -/
 theorem trace_keeps_of_retains {S : Type u} {A : Type v} {P : Process S A} {plan : S → List I}

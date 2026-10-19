@@ -706,14 +706,6 @@ def ExchangeLaw.world {R : Type} (law : ExchangeLaw R R) (present : Nat → List
     (start : R → Nat) (W : Web R R) : World :=
   World.ofKind (law.course present start) (law.courseWeb present start W)
 
-/-- **The counterfactual is a world.** Under a law of what has stood, the world of the course
-balances exactly where the course is feasible. -/
-theorem ExchangeLaw.world_balances_iff {R : Type} {law : ExchangeLaw R R}
-    (na : law.Nonanticipating) (present : Nat → List R) (start : R → Nat) (W : Web R R) :
-    (law.world present start W).flow.Balances (law.world present start W).web ↔
-      law.Feasible present start :=
-  ExchangeLaw.course_balances_iff (present := present) (start := start) na W
-
 /-- The part's move formed within the unfolding by a law of the part: what `act` takes and gives
 at the configuration, the stage and the history so far. -/
 def ExchangeLaw.policy (act : ExchangeLaw F C) (x : Nat × (Nat → C → Nat)) :

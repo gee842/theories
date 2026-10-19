@@ -64,10 +64,6 @@ theorem total_append (q : A → Nat) : ∀ xs ys : List A, total (xs ++ ys) q = 
   | x :: xs, ys =>
     (congrArg (q x + ·) (total_append q xs ys)).trans (Nat.add_assoc _ _ _).symm
 
-theorem total_zero : ∀ as : List A, total as (fun _ => 0) = 0
-  | [] => rfl
-  | _ :: as => (Nat.zero_add _).trans (total_zero as)
-
 /-! ## Balance -/
 
 /-- Across every step, what stands after it and what it draws equal what stood before it and
@@ -211,11 +207,6 @@ theorem product_feasible_iff {S' : Type u} {R : Process S' A} {draw replenish : 
   feasible_product_iff.trans
     ⟨fun ⟨c, f⟩ => ⟨(feasible_iff_covered as n).mp c, f⟩,
      fun ⟨c, f⟩ => ⟨(feasible_iff_covered as n).mpr c, f⟩⟩
-
-/-- Steps that imply steps carry traces. -/
-theorem trace_mono {P Q : Process S A} (imp : ∀ s a t, P.step s a t → Q.step s a t)
-    {s t : S} {as : List A} (h : Trace P s as t) : Trace Q s as t :=
-  trace_map (f := fun x => x) imp h
 
 /-! ## Coverage over stretches -/
 

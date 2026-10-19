@@ -419,22 +419,6 @@ def Priority (F : Frame S A C) (basic living : C → Prop) (better : S → S →
 
 variable {F : Frame S A C} {basic living : C → Prop} {better : S → S → Prop}
 
-/-- The lexical order of what a frame realizes meets the condition. -/
-theorem Priority.above : Priority F basic living (Lexical.Frame.Above F basic living) :=
-  BasicPriority.above
-
-/-- Under the condition, `better` is the lexical order of what the configurations realize. -/
-theorem Priority.iff (priority : Priority F basic living better) (s t : S) :
-    better s t ↔ Lexical.Frame.Above F basic living s t :=
-  BasicPriority.iff priority s t
-
-theorem Priority.irrefl (priority : Priority F basic living better) (s : S) : ¬ better s s :=
-  BasicPriority.irrefl priority s
-
-theorem Priority.trans (priority : Priority F basic living better) {s t u : S}
-    (first : better s t) (second : better t u) : better s u :=
-  BasicPriority.trans priority first second
-
 /-- **A kept basic claim anchors the comparison**: a configuration realizing every basic claim `t`
 realizes and a basic claim `t` lacks is better than `t`, whatever the living claims. -/
 theorem Priority.anchor (priority : Priority F basic living better) {s t : S}
@@ -475,11 +459,6 @@ theorem basicPriority_iff_priority {H C' G : Type} {basic : H → C' → Prop} {
 /-- The options at `s`: the configurations one move of the frame's process reaches from `s`. -/
 def Options (F : Frame S A C) (s : S) (t : S) : Prop := ∃ a, F.P.step s a t
 
-/-- **An option another option betters is not chosen.** -/
-theorem excluded {s t u : S} (option : Options F s u) (beats : better u t) :
-    ¬ Frontier (Options F s) better t :=
-  Frontier.excluded option beats
-
 /-- **J1/J2 leave some option chosen** where the options from `s` are listed and whether one
 betters another is weakly decided on them. -/
 theorem Priority.choice_exists (priority : Priority F basic living better) {s : S} (x : S)
@@ -514,18 +493,6 @@ theorem choice_exists_iff_weakly :
         (fun t mem => irreflexive t ((exact t).mpr mem))
         (fun t u v mt mu mv => transitive t u v ((exact t).mpr mt) ((exact u).mpr mu) ((exact v).mpr mv)) with
     | ⟨t, undominated⟩ => ⟨t, (frontier_iff_undominated exact).mpr undominated⟩⟩
-
-/-- **A task required of the choice is performed by whichever option is chosen.** -/
-theorem performed {s t : S} {task : S → Prop} (required : Required (Frontier (Options F s) better) task)
-    (chosen : Frontier (Options F s) better t) : task t :=
-  Required.performed required chosen
-
-/-- **What every chosen option performing a required task performs is required.** -/
-theorem means {s : S} {task means : S → Prop}
-    (required : Required (Frontier (Options F s) better) task)
-    (law : ∀ t, Frontier (Options F s) better t → task t → means t) :
-    Required (Frontier (Options F s) better) means :=
-  Required.means required law
 
 /-- **Where no move is possible, nothing is required.** -/
 theorem nothing_required {s : S} {task : S → Prop} (stuck : ∀ a t, ¬ F.P.step s a t) :
@@ -572,59 +539,6 @@ def classifiedOn (F : Frame S A (Sum I J)) (basic living : I → Prop) (q : J �
     (Lexical.Frame.fresh F) q
 
 variable {F : Frame S A (Sum I J)} {basic living : I → Prop} {a b : S}
-
-/-- **With no fresh content basic, the comparison is the one with the fresh contents as gains.** -/
-theorem classifiedOn_none_iff :
-    classifiedOn F basic living (fun _ => False) a b ↔
-      Lexical.Above (fun s i => basic i ∧ Lexical.Frame.old F s i)
-        (Lexical.adjoin (fun s i => living i ∧ Lexical.Frame.old F s i) (Lexical.Frame.fresh F)) a b :=
-  classified_none_iff
-
-/-- **The criterion under every classification on a frame**: above under every classification
-exactly where the fresh contents of `b` are kept and `a` is above with them as gains, where whether
-`b` realizes each fresh content, and the tie at each classification, are decided. -/
-theorem classifiedOn_robust_iff_of_decided (held : ∀ j, Decided (Lexical.Frame.fresh F b j))
-    (tie : ∀ q : J → Prop, Decided (∀ j, Lexical.Frame.fresh F a j → q j → Lexical.Frame.fresh F b j)) :
-    (∀ q, classifiedOn F basic living q a b) ↔
-      Included (Lexical.Frame.fresh F b) (Lexical.Frame.fresh F a) ∧
-        Lexical.Above (fun s i => basic i ∧ Lexical.Frame.old F s i)
-          (Lexical.adjoin (fun s i => living i ∧ Lexical.Frame.old F s i) (Lexical.Frame.fresh F)) a b :=
-  classified_robust_iff_of_decided held tie
-
-/-- **The criterion on a frame with excluded middle named.** -/
-theorem classifiedOn_robust_iff_of_em (em : ∀ r : Prop, Decided r) :
-    (∀ q, classifiedOn F basic living q a b) ↔
-      Included (Lexical.Frame.fresh F b) (Lexical.Frame.fresh F a) ∧
-        Lexical.Above (fun s i => basic i ∧ Lexical.Frame.old F s i)
-          (Lexical.adjoin (fun s i => living i ∧ Lexical.Frame.old F s i) (Lexical.Frame.fresh F)) a b :=
-  classified_robust_iff_of_em em
-
-/-- **Two extreme classifications suffice on a frame**, with the same decisions. -/
-theorem classifiedOn_extremes_iff_of_decided (held : ∀ j, Decided (Lexical.Frame.fresh F b j))
-    (tie : ∀ q : J → Prop, Decided (∀ j, Lexical.Frame.fresh F a j → q j → Lexical.Frame.fresh F b j)) :
-    (∀ q, classifiedOn F basic living q a b) ↔
-      classifiedOn F basic living (fun _ => False) a b ∧ classifiedOn F basic living (fun _ => True) a b :=
-  classified_extremes_iff_of_decided held tie
-
-/-- **Formation required of the choice under every classification**: where every option lacking
-the formation is bettered, with the fresh contents as gains, by an option keeping its fresh
-contents, the formation is required of the choice at `s` under every classification, the options
-listed, the comparisons weakly decided, the formation decided and the decisions of the criterion
-named. -/
-theorem classifiedOn_required {s : S} {formed : S → Prop} (x : S) (rest : List S)
-    (exact : ∀ t, Options F s t ↔ t ∈ x :: rest)
-    (weakly : ∀ (q : J → Prop) t u, Options F s t → Options F s u →
-      WeaklyDecided (classifiedOn F basic living q t u))
-    (decidedFormed : ∀ t, Options F s t → Decided (formed t))
-    (held : ∀ t j, Options F s t → Decided (Lexical.Frame.fresh F t j))
-    (tie : ∀ (q : J → Prop) t u, Options F s t → Options F s u →
-      Decided (∀ j, Lexical.Frame.fresh F t j → q j → Lexical.Frame.fresh F u j))
-    (construction : ∀ t, Options F s t → ¬ formed t →
-      ∃ u, Options F s u ∧ Included (Lexical.Frame.fresh F t) (Lexical.Frame.fresh F u) ∧
-        Lexical.Above (fun s i => basic i ∧ Lexical.Frame.old F s i)
-          (Lexical.adjoin (fun s i => living i ∧ Lexical.Frame.old F s i) (Lexical.Frame.fresh F)) u t) :
-    ∀ q, Required (Frontier (Options F s) (classifiedOn F basic living q)) formed :=
-  required_under_every_classification x rest exact weakly decidedFormed held tie construction
 
 end Classified
 

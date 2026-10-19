@@ -176,12 +176,6 @@ theorem withinResponse_thresholdOnly_iff {g : F} :
       | .inr ⟨_, .inr no, _⟩ => False.elim no) within⟩,
    fun ⟨_, member, within⟩ => withinResponse_of_withinReach member within⟩
 
-/-- The reach closure is the converse of the influence closure: `g` lies within `h`'s reach
-closure exactly when `h` lies within `g`'s influence closure. -/
-theorem withinReach_iff_withinInfluence {h g : F} :
-    L.WithinReach W h g ↔ L.WithinInfluence W g h :=
-  WithinClosure.converse (rel := L.AffectedBy W)
-
 /-- With the rest of the exchange fixed, the rest responds through its couplings, whatever
 couples in: outside the part, the flow with the part withheld exchanges as the flow does. -/
 theorem respondsThroughCoupling_withhold :

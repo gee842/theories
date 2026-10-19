@@ -72,22 +72,12 @@ theorem replicate_append {α : Type} (x : α) (n : Nat) :
   | m + 1 => (congrArg (x :: ·) (replicate_append x n m)).trans
       (congrArg (fun k => List.replicate k x) (Nat.succ_add m n).symm)
 
-theorem and_left {a b : Bool} : (a && b) = true → a = true := by
-  cases a with
-  | false => exact fun h => h
-  | true => exact fun _ => rfl
-
-theorem and_right {a b : Bool} : (a && b) = true → b = true := by
-  cases a with
-  | false => exact fun h => Bool.noConfusion h
-  | true => exact fun h => h
-
 /-- An element some list member differs from at every position is not in it. -/
 theorem not_mem_of_all {α : Type} [DecidableEq α] {x : α} :
     ∀ {l : List α}, (l.all fun y => decide (x ≠ y)) = true → x ∉ l
   | [], _, mem => nomatch mem
-  | _ :: _, all, .head _ => of_decide_eq_true (and_left all) rfl
-  | _ :: _, all, .tail _ mem => not_mem_of_all (and_right all) mem
+  | _ :: _, all, .head _ => of_decide_eq_true (ListTests.and_left all) rfl
+  | _ :: _, all, .tail _ mem => not_mem_of_all (ListTests.and_right all) mem
 
 /-! ## Programs -/
 
@@ -173,8 +163,8 @@ theorem fits_agrees (p : Program) :
     ∀ (samples : List (Expr × List Bool)), fits p samples = true →
       ∀ e answer, (e, answer) ∈ samples → operate p e = answer
   | [], _, _, _, mem => nomatch mem
-  | _ :: _, fit, _, _, .head _ => of_decide_eq_true (and_left fit)
-  | _ :: rest, fit, e, answer, .tail _ mem => fits_agrees p rest (and_right fit) e answer mem
+  | _ :: _, fit, _, _, .head _ => of_decide_eq_true (ListTests.and_left fit)
+  | _ :: rest, fit, e, answer, .tail _ mem => fits_agrees p rest (ListTests.and_right fit) e answer mem
 
 /-- **Among the routes of two sockets, the composite probe identifies the code's route**, where
 its primitives differ. -/

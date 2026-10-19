@@ -351,27 +351,11 @@ variable {S : Type u} {A : Type v} {C' : Type w} {K : Type x} {K' : Type u}
   {F : Frame S A C'} {p : Presentation S (BranchingTest A C') K}
   {q : Presentation S (BranchingTest A C') K'}
 
-/-- **An exact reduced presentation of a frame's branching tests gives one code exactly to the
-configurations passing the same branching tests.** -/
-theorem kernel_iff (hp : Exact (BranchingTest.Holds F) p) (rp : Reduced (BranchingTest.Holds F) p)
-    (s s' : S) : p.encode s = p.encode s' ↔ SameBranchingTests F F s s' :=
-  reduced_exact_kernel hp rp s s'
-
 /-- **Alike configurations get one code** from every reduced presentation of the branching
 tests. -/
 theorem alike_one_code (rp : Reduced (BranchingTest.Holds F) p) {s s' : S}
     (alike : Alike F F s s') : p.encode s = p.encode s' :=
   rp s s' alike.sameBranchingTests
-
-theorem kernels_same (hp : Exact (BranchingTest.Holds F) p) (rp : Reduced (BranchingTest.Holds F) p)
-    (hq : Exact (BranchingTest.Holds F) q) (rq : Reduced (BranchingTest.Holds F) q) (s s' : S) :
-    p.encode s = p.encode s' ↔ q.encode s = q.encode s' :=
-  reduced_presentations_same_kernel hp rp hq rq s s'
-
-theorem matches_iff (hp : Exact (BranchingTest.Holds F) p) (hq : Exact (BranchingTest.Holds F) q)
-    (rq : Reduced (BranchingTest.Holds F) q) (k : K) (k' : K') :
-    Matches p q k k' ↔ Used p k ∧ Used q k' ∧ ∀ φ, p.read k φ ↔ q.read k' φ :=
-  matches_iff_equal_answers hp hq rq k k'
 
 theorem aligned_iff (hp : Exact (BranchingTest.Holds F) p) (hq : Exact (BranchingTest.Holds F) q)
     (rq : Reduced (BranchingTest.Holds F) q) (B : K → K' → Prop)

@@ -287,14 +287,9 @@ theorem move_idle (s : Bool × Bool) (a b : Move) (u : Bool × Bool) :
     process.step s a u ↔ process.step s b u :=
   Iff.rfl
 
-theorem not_not (b : Bool) : (!!b) = b :=
-  match b with
-  | true => rfl
-  | false => rfl
-
 /-- The hidden bit comes back every two steps. -/
 theorem hidden_two (n : Nat) : (states (n + 2)).1 = (states n).1 :=
-  not_not (states n).1
+  ListTests.not_not (states n).1
 
 /-- Moving in step with the hidden bit: left, right, left, right, … -/
 def aligned : Nat → Move

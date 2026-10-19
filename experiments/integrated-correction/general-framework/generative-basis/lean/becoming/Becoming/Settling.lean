@@ -244,18 +244,6 @@ def consAct (a : A) (h : Nat → A) : Nat → A
   | 0 => a
   | k + 1 => h k
 
-/-- A finite path as configurations and actions along it, given an action for the steps beyond. -/
-theorem path_seq (d : A) {x y : S} {as : List A} (path : Trace P x as y) :
-    ∃ g : Nat → S, ∃ h : Nat → A, g 0 = x ∧ g as.length = y ∧
-      ∀ k, k < as.length → P.step (g k) (h k) (g (k + 1)) := by
-  induction path with
-  | nil s => exact ⟨fun _ => s, fun _ => d, rfl, rfl, fun k lt => absurd lt (Nat.not_lt_zero k)⟩
-  | @cons s m _ a _ step _ ih =>
-    exact match ih with
-    | ⟨g, h, start, finish, steps⟩ => ⟨consSeq s g, consAct a h, rfl, finish, fun
-        | 0, _ => Eq.subst (motive := fun z => P.step s a z) start.symm step
-        | k + 1, lt => steps k (Nat.lt_of_succ_lt_succ lt)⟩
-
 /-- A finite path prefixed to configurations and actions admissible for `N` steps. -/
 theorem path_then {x y : S} {as : List A} (path : Trace P x as y) {N : Nat} {g : Nat → S}
     {h : Nat → A} (start : g 0 = y) (steps : ∀ k, k < N → P.step (g k) (h k) (g (k + 1))) :
@@ -281,7 +269,7 @@ theorem recurs_of_undoable {s x y : S} {a : A} (reach : Reach P s x) (step : P.s
     ∃ r : Run P, r.state 0 = s ∧ ChangeRecurs r :=
   match reach, undo with
   | ⟨as, path⟩, ⟨bs, back⟩ =>
-    match path_seq a back with
+    match Branching.trace_positions a back with
     | ⟨g, h, start, finish, steps⟩ =>
       have steps₁ : ∀ k, k < bs.length + 1 →
           P.step (consSeq x g k) (consAct a h k) (consSeq x g (k + 1)) := fun

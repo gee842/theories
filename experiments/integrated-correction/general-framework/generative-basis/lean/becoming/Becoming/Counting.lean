@@ -201,22 +201,13 @@ variable {α : Type}
 
 /-! ## Lists -/
 
-/-- What a mapped list holds is the value of some member. -/
-theorem exists_of_mem_map {β : Type} {g : α → β} {b : β} :
-    ∀ {l : List α}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
-  | [], mem => nomatch mem
-  | a :: _, mem => match mem_cons_cases mem with
-    | .inl same => ⟨a, .head _, same.symm⟩
-    | .inr mem => match exists_of_mem_map mem with
-      | ⟨x, listed, same⟩ => ⟨x, .tail a listed, same⟩
-
 /-- Mapping a list one to one on its members keeps it without repetition. -/
 theorem distinct_map_on {β : Type} {g : α → β} :
     ∀ {l : List α}, (∀ a b, a ∈ l → b ∈ l → g a = g b → a = b) → Distinct l →
       Distinct (l.map g)
   | [], _, _ => trivial
   | a :: l, inj, ⟨fresh, distinct⟩ =>
-    ⟨fun mem => match exists_of_mem_map mem with
+    ⟨fun mem => match preimage_of_mem_map mem with
       | ⟨b, listed, same⟩ => fresh (Eq.subst (motive := (· ∈ l))
           (inj b a (.tail a listed) (.head l) same) listed),
      distinct_map_on (fun x y first second => inj x y (.tail a first) (.tail a second))
@@ -1742,7 +1733,7 @@ variable {n c M} {a : Nat → Nat}
 
 /-- A place held means the queue is not empty. -/
 theorem occupied {i : Fin (size M)} {t : Nat} (held : holds n c M i t) : 0 < n t :=
-  match exists_of_mem_map held with
+  match preimage_of_mem_map held with
   | ⟨_, listed, _⟩ => OpenQueue.occupied ⟨steps_mem listed, steps_within listed⟩
 
 /-- The front's place is held while the queue is not empty. -/
@@ -1763,7 +1754,7 @@ theorem holds_iff (tally : Tally n c a) (bounded : ∀ t, n t ≤ M) {t k s : Na
     (spanned : k ∈ EnclosedQueue.span n c a t)
     (inside : ∀ j, Queue.holds n c j s → j ∈ EnclosedQueue.span n c a t) :
     holds n c M (seat M k) s ↔ Queue.holds n c k s :=
-  ⟨fun held => match exists_of_mem_map held with
+  ⟨fun held => match preimage_of_mem_map held with
     | ⟨j, listed, same⟩ =>
       have member : Queue.holds n c j s := ⟨steps_mem listed, steps_within listed⟩
       have there := inside j member

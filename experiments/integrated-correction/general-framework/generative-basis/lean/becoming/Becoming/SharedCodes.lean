@@ -823,18 +823,12 @@ theorem keeps_both (exchanges : KeepsExchange T π) (renames : KeepsRenaming T �
     have renamed : Relabels (fun i => i) τ (fun i m => X (π i) m) Y := image
     fun i m => (renames _ _ renamed i m).trans (congrArg (τ m) (exchanges _ _ exchanged i m))
 
-/-- **A symmetry of the start that a law keeps is kept at every step.** -/
-theorem symmetric_kept (keeps : Law.KeepsRelation T (Relabels π τ)) {X : I → M → F}
-    (symmetric : Relabels π τ X X) (n : Nat) :
-    Relabels π τ ((Law.run T X).state n) ((Law.run T X).state n) :=
-  keeps.run symmetric n
-
 /-- **Formations that a kept symmetry exchanges agree only on a form the renaming fixes.** -/
 theorem agrees_only_fixed (keeps : Law.KeepsRelation T (Relabels π τ)) {X : I → M → F}
     (symmetric : Relabels π τ X X) (n : Nat) (i : I) (m : M)
     (agree : (Law.run T X).state n i m = (Law.run T X).state n (π i) m) :
     τ m ((Law.run T X).state n i m) = (Law.run T X).state n i m :=
-  (congrArg (τ m) agree).trans (symmetric_kept keeps symmetric n i m).symm
+  (congrArg (τ m) agree).trans (Law.KeepsRelation.run keeps symmetric n i m).symm
 
 /-- **Agreement needs a broken symmetry.** Where the renaming moves every form at `m`, a law
 keeping the exchange of formations by `π` together with that renaming never brings formations it
@@ -973,12 +967,6 @@ theorem impose_loses_iff {c : M → F} {X : I → M → F} {i : I} {m m' : M} :
 theorem source_loses_nothing {X : I → M → F} (q : I) (m m' : M) : ¬ Loses X (impose (X q) X) q m m' :=
   fun ⟨told, merged⟩ => told merged
 
-/-- **Every formation reads every other** after an imposition, at every sense, exactly where the
-imposed code tells the senses apart. -/
-theorem impose_reads (c : M → F) (X : I → M → F) (i j : I) :
-    (∀ m n, ReadsAs (impose c X i) (impose c X j m) n ↔ n = m) ↔ TellsApart c :=
-  self_reads_iff c
-
 variable [DecidableEq I] [DecidableEq M]
 
 /-- **A form every formation holds at a sense stays under every later order of exchange**, under
@@ -1045,7 +1033,7 @@ theorem run_from_imposition {adopt : (M → F) → (M → F) → M → Bool} (r 
         fun h => (stays i n').trans (h.trans (stays j m).symm)⟩
     (⟨fun h m n' => (same m n').symm.trans (h m n'), fun h m n' => (same m n').trans (h m n')⟩ :
       (∀ m n', ReadsAs (r.state (n + k) i) (r.state (n + k) j m) n' ↔ n' = m) ↔
-        ∀ m n', ReadsAs (impose c X i) (impose c X j m) n' ↔ n' = m).trans (impose_reads c X i j),
+        ∀ m n', ReadsAs (impose c X i) (impose c X j m) n' ↔ n' = m).trans (SharedCodes.self_reads_iff c),
    fun i m m' => (loses i m m').trans impose_loses_iff,
    fun q source m m' lost => match (loses q m m').mp lost with
     | ⟨told, merged⟩ => source_loses_nothing q m m' ⟨told, (source m).symm.trans (merged.trans (source m'))⟩⟩
@@ -1177,24 +1165,16 @@ theorem kept_bars {rs more : List R} {e e' : M} (h : resolve bears offers rep rs
   mem_singleton ((unique_eq_some_iff.mp h) ▸
     narrows (more := more) ((unique_eq_some_iff.mp h') ▸ List.Mem.head []))
 
-theorem append_nil {α : Type u} : ∀ l : List α, l ++ [] = l
-  | [] => rfl
-  | a :: l => congrArg (a :: ·) (append_nil l)
-
-theorem append_assoc {α : Type u} : ∀ (l m k : List α), (l ++ m) ++ k = l ++ (m ++ k)
-  | [], _, _ => rfl
-  | a :: l, m, k => congrArg (a :: ·) (append_assoc l m k)
-
 /-- Records only added to: each step appends the records it adds. -/
 def adding : Process (List R) (List R) := ⟨fun rs more rs' => rs' = rs ++ more⟩
 
 /-- Along a run that only adds records, every later list begins with the first. -/
 theorem adding_prefix (r : Run (adding (R := R))) : ∀ n, ∃ more, r.state n = r.state 0 ++ more
-  | 0 => ⟨[], (append_nil _).symm⟩
+  | 0 => ⟨[], (ListTests.append_nil _).symm⟩
   | n + 1 =>
     match adding_prefix r n with
     | ⟨more, pre⟩ =>
-      ⟨more ++ r.act n, (r.step n).trans ((congrArg (· ++ r.act n) pre).trans (append_assoc _ _ _))⟩
+      ⟨more ++ r.act n, (r.step n).trans ((congrArg (· ++ r.act n) pre).trans (ListTests.append_assoc _ _ _))⟩
 
 /-- **Where records are only added, a resolution can be lost but never replaced.** Along every run
 that only adds records, uptakes of outside readings included, no later records resolve the form
@@ -1226,7 +1206,7 @@ theorem kept_rests (exact : WritesExactly bears offers writes) {rs : List R} {e 
     (h : resolve bears offers rep rs = some e) :
     ∀ n, resolve bears offers rep ((Law.run (keep bears offers rep writes) rs).state n) = some e ∧
       ∃ more, (Law.run (keep bears offers rep writes) rs).state n = rs ++ more
-  | 0 => ⟨h, [], (append_nil rs).symm⟩
+  | 0 => ⟨h, [], (ListTests.append_nil rs).symm⟩
   | n + 1 =>
     match kept_rests exact h n with
     | ⟨resolved, more, pre⟩ =>
@@ -1235,7 +1215,7 @@ theorem kept_rests (exact : WritesExactly bears offers writes) {rs : List R} {e 
         keep_of_resolved resolved
       ⟨next ▸ resolve_kept exact resolved,
        more ++ [writes e], next.trans ((congrArg (· ++ [writes e]) pre).trans
-        (append_assoc rs more [writes e]))⟩
+        (ListTests.append_assoc rs more [writes e]))⟩
 
 end WrittenBack
 
@@ -1311,25 +1291,21 @@ theorem three_agree :
     (Law.run ordered start).state 1 false () = (Law.run ordered start).state 1 true () :=
   ⟨rfl, rfl, rfl⟩
 
-theorem not_moves (x : Bool) : (!x) ≠ x := fun h => match x, h with
-  | false, h => Bool.noConfusion h
-  | true, h => Bool.noConfusion h
-
 /-- **A centre privileges a formation**: it keeps every renaming and breaks the exchange. -/
 theorem centre_breaks_exchange : ¬ KeepsExchange centre not :=
   fun keeps => never_agrees_of_both keeps (centre_keeps_renaming (fun _ => not)) start_symmetric
-    (m := ()) (fun x => not_moves x) 1 false (three_agree.1)
+    (m := ()) (fun x => ListTests.not_ne_self x) 1 false (three_agree.1)
 
 /-- **A preferred form is privileged**: the law keeps the exchange of formations and breaks the
 renaming. -/
 theorem preferred_breaks_renaming : ¬ KeepsRenaming preferred (fun _ => not) :=
   fun keeps => never_agrees_of_both preferred_keeps_exchange keeps start_symmetric
-    (m := ()) (fun x => not_moves x) 1 false (three_agree.2.1)
+    (m := ()) (fun x => ListTests.not_ne_self x) 1 false (three_agree.2.1)
 
 /-- **An order of exchange privileges no form and breaks the exchange of formations.** -/
 theorem ordered_breaks_exchange : ¬ KeepsExchange ordered not :=
   fun keeps => never_agrees_of_both keeps (ordered_keeps_renaming (fun _ => not)) start_symmetric
-    (m := ()) (fun x => not_moves x) 1 false (three_agree.2.2)
+    (m := ()) (fun x => ListTests.not_ne_self x) 1 false (three_agree.2.2)
 
 /-- Two senses (`false`, `true`) and two forms: the first formation's code names each sense by
 itself, the second by its negation. -/

@@ -94,19 +94,6 @@ theorem DistinctUnder.length_le {R : X → X → Prop} (refl : ∀ x, R x x) :
       Eq.subst (motive := fun n => s.length + 1 ≤ n) shorter
         (Nat.succ_le_succ (DistinctUnder.length_le refl tail inner))
 
-/-- Searching a list is decided where the determination is decided at each member
-(`Decided.exists_mem` of `Becoming.Decidedness`, for types of every universe). -/
-theorem Decided.exists_within {P : X → Prop} :
-    ∀ {l : List X}, (∀ x, x ∈ l → Decided (P x)) → Decided (∃ x, x ∈ l ∧ P x)
-  | [], _ => .inr fun ⟨_, mem, _⟩ => nomatch mem
-  | x :: l, decided => match decided x (.head l) with
-    | .inl holds => .inl ⟨x, .head l, holds⟩
-    | .inr fails => match Decided.exists_within (l := l) fun y mem => decided y (.tail x mem) with
-      | .inl ⟨y, mem, holds⟩ => .inl ⟨y, .tail x mem, holds⟩
-      | .inr absent => .inr fun ⟨y, mem, holds⟩ => match mem_cons_split mem with
-        | .inl same => fails (Eq.subst (motive := P) same holds)
-        | .inr later => absent ⟨y, later, holds⟩
-
 /-- **The decisions of finitely many propositions are together refuted by nothing.** -/
 theorem not_not_within {P : X → Prop} (each : ∀ x, ¬ ¬ P x) :
     ∀ l : List X, ¬ ¬ ∀ x, x ∈ l → P x
@@ -138,7 +125,7 @@ theorem Refining.grow (refining : Refining R)
     (mem' : y ∈ l) (joined : R j x y) (parted : ¬ R (j + 1) x y) :
     ∃ z, z ∈ l ∧ DistinctUnder (R (j + 1)) (z :: r) :=
   have kept : DistinctUnder (R (j + 1)) r := apart.mono fun _ _ related => refining.finer related
-  match Decided.exists_within (l := r) fun a inside => decided j x a mem (within a inside) with
+  match Decided.exists_listed (l := r) fun a inside => decided j x a mem (within a inside) with
   | .inr absent => ⟨x, mem, fun c inside related => absent ⟨c, inside, refining.finer related⟩, kept⟩
   | .inl ⟨a, inside, toA⟩ =>
     -- `a` is the one member of `r` joined to `x`, and so to `y`, at step `j`.
@@ -169,7 +156,7 @@ theorem Refining.steady_or_grown (refining : Refining R)
       have bound : j + s.length ≤ l.length :=
         Eq.subst (motive := fun n => n ≤ l.length) (Nat.add_comm s.length j)
           (Nat.le_trans long (apart'.length_le (refining.refl j) within'))
-      match Decided.exists_within (l := l) (fun x mem => Decided.exists_within (l := l)
+      match Decided.exists_listed (l := l) (fun x mem => Decided.exists_listed (l := l)
           fun y mem' => (decided j x y mem mem').and (decided (j + 1) x y mem mem').not) with
       | .inr absent => .inl ⟨j, bound, fun x y mem mem' joined =>
         (decided (j + 1) x y mem mem').of_not_not fun parted => absent ⟨x, mem, y, mem', joined, parted⟩⟩

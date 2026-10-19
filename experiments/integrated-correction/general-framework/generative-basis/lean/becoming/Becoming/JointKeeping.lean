@@ -117,13 +117,6 @@ theorem Keepable.each {P : Process S A} {g₁ g₂ : S → Prop} {s : S}
     (both : Keepable P (fun x => g₁ x ∧ g₂ x) s) : Keepable P g₁ s ∧ Keepable P g₂ s :=
   ⟨both.left, both.right⟩
 
-/-- **Within finitely many configurations, a family that keeps moving is keepable from each
-member.** `Onward.KeepsMoving.run`, which builds the run with no decidability and no selection,
-read as keepability. -/
-theorem Keepable.of_keepsMoving {P : Process S A} {all : List S} (every : ∀ x, x ∈ all)
-    {K : S → Prop} (moving : Onward.KeepsMoving P K) {s : S} (held : K s) : Keepable P K s :=
-  Onward.KeepsMoving.run every moving held
-
 /-- **Where the first guard lies in the kernel, keeping both is keeping the second alone**:
 every run from the start stays within the first guard (`Kernel.run`). -/
 theorem keepable_and_iff_of_kernel_left {P : Process S A} {g₁ g₂ : S → Prop} {s : S}

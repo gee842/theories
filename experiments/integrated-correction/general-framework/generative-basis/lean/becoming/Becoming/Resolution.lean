@@ -1688,13 +1688,10 @@ theorem units_eq : ∀ t, units t = halving t
 theorem takes_whole (t : Nat) : flow.take t () () = halving (t + 1) :=
   units_eq (t + 1)
 
-theorem distinct : Distinct [()] :=
-  ⟨(fun mem => nomatch mem), trivial⟩
-
 /-- So no fixed proportion of what is taken is lost: by the exchange law, for no `q` is the flow
 dissipative in proportion `q`. -/
 theorem not_dissipativeBy (q : Nat) : ¬ flow.DissipativeBy q :=
-  fun dissipative => Flow.exchange_not_recurring balances dissipative distinct (T := 0)
+  fun dissipative => Flow.exchange_not_recurring balances dissipative Asymptote.distinct (T := 0)
     (fun t _ => closed t) (R := halving) rfl (fun _ _ => rfl) (fun _ _ => Nat.succ_pos 1) 1
     fun N => ⟨N, (), Nat.le_refl N, .head _, Nat.le_of_eq ((takes_whole N).symm.trans
       (Nat.one_mul _).symm)⟩
@@ -2527,7 +2524,7 @@ theorem refinement_feeds_witnesses (split : Nat → Nat)
       Alternation.embodied Alternation.balances Alternation.dissipative
       Alternation.arising_recurs T ⟨fun t _ => Alternation.enclosed t, unrefined⟩,
    fun unrefined => Flow.taking_needs_refinement (split := fun _ => 1) Circulation.balances
-      Circulation.dissipative Circulation.distinct (fun t _ => Circulation.closed t) unrefined
+      Circulation.dissipative Asymptote.distinct (fun t _ => Circulation.closed t) unrefined
       fun N => ⟨N, Nat.le_refl N, Nat.succ_pos _⟩,
    fun unrefined => Flow.taking_needs_refinement (Asymptote.balances split)
       (Asymptote.dissipative split) Asymptote.distinct (fun t _ => Asymptote.closed split t)

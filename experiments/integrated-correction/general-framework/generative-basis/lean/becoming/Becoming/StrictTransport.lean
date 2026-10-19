@@ -124,15 +124,6 @@ theorem strict_below_along {F : Frame S A C} {Le : S → S → Prop} (trans : Tr
   | n + 1 => strict_below_of_compatible trans compatible
       (strict_below_along trans compatible r anchor gainsNone n) (gainsNone n)
 
-/-- **Strict comparison among reachable configurations supplies a reason** where the link is
-supplied. -/
-theorem reachable_reason {P : Process S A} {s : S} {Le : S → S → Prop} {Reason : S → S → Prop}
-    (trans : Transitive Le) (link : SuppliesReason Le (Reach P s) (fun t => t) Reason)
-    {baseline original improved : S} (reachedBaseline : Reach P s baseline)
-    (reachedImproved : Reach P s improved) (anchor : Strict Le baseline original)
-    (improvement : Le original improved) : Reason baseline improved :=
-  reason_of_strict_above trans link reachedBaseline reachedImproved anchor improvement
-
 /-! ## Weaker rules, audited -/
 
 /-- Finishing, or a repair after an interruption of the given length. -/

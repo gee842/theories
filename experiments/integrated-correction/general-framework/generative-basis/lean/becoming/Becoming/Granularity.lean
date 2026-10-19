@@ -787,12 +787,6 @@ theorem Recipe.Advance.leaves {F : Frame S A C} {p p' : Recipe A C} {s t : S}
     (advance : Recipe.Advance F p s p' t) : Recipe.Leaves F p s p' t :=
   Reach.of_step (a := ()) advance
 
-/-- Partial courses compose. -/
-theorem Recipe.Leaves.trans {F : Frame S A C} {p q r : Recipe A C} {s t z : S}
-    (first : Recipe.Leaves F p s q t) (second : Recipe.Leaves F q t r z) :
-    Recipe.Leaves F p s r z :=
-  Reach.trans first second
-
 /-- What remains of a recipe after one advance, carried on to the end, carries the recipe to the
 end. -/
 theorem Recipe.Advance.resume {F : Frame S A C} {p p' : Recipe A C} {s t : S}

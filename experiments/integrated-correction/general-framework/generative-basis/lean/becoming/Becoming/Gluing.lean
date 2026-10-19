@@ -517,11 +517,6 @@ theorem openings_contradict : paritySystem.Contradicts openings :=
     | .b => rfl
     | .c => rfl, rfl⟩
 
-/-- P72's `noGlobal`, from the contradiction. -/
-theorem noGlobal_of_contradiction : NoGlobal support :=
-  fun ⟨v, all⟩ => ParitySystem.contradicts_noGlobal openings_contradict
-    ⟨v, fun k => (support_iff k v).mpr (all k)⟩
-
 /-- **Every mixture of placements meets at most two of the three openings on average.** -/
 theorem mixture_le (mix : List (Box → Bool)) :
     total mix (fun v => total openings (fun k => cond (paritySystem.met k v) 1 0)) + mix.length ≤
@@ -659,11 +654,6 @@ theorem cells_even : ∀ p, p ∈ cells → oddOver lines (fun l => counts l p) 
 column requires odd parity. -/
 theorem lines_contradict : paritySystem.Contradicts lines := ⟨cells_even, rfl⟩
 
-/-- `noGlobal`, from the contradiction. -/
-theorem noGlobal_of_contradiction : NoGlobal support :=
-  fun ⟨v, all⟩ => ParitySystem.contradicts_noGlobal lines_contradict
-    ⟨v, fun l => (support_iff l v).mpr (all l)⟩
-
 /-- **Every mixture of context-free assignments meets at most five of the six lines on
 average.** -/
 theorem mixture_le (mix : List (Cell → Bool)) :
@@ -729,10 +719,6 @@ theorem shift : ∀ a b d : Bool, addParity (addParity b d) (addParity a b) = ad
 theorem cross : ∀ a b : Bool, addParity (addParity b a) (addParity a b) = false := by decide
 theorem returns : ∀ a p : Bool, addParity a (addParity p a) = p := by decide
 theorem eq_of_even : ∀ c p : Bool, addParity c p = false → p = c := by decide
-
-theorem beq_self : ∀ n, Nat.beq n n = true
-  | 0 => rfl
-  | n + 1 => beq_self n
 
 theorem beq_of_ne {a b : Nat} (ne : a ≠ b) : Nat.beq a b = false :=
   match same : Nat.beq a b with

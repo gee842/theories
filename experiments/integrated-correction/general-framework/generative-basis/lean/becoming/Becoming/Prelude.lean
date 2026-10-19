@@ -235,11 +235,8 @@ theorem and_right {a b : Bool} (h : (a && b) = true) : b = true := (and_true_iff
 theorem decide_true_iff {p : Prop} [Decidable p] : decide p = true ↔ p :=
   ⟨of_decide_eq_true, decide_eq_true⟩
 
-/-- Equality tested by a decided equality is equality. -/
-theorem beq_true_iff [DecidableEq α] {a b : α} : (a == b) = true ↔ a = b := decide_true_iff
-
 theorem beq_false_iff [DecidableEq α] {a b : α} : (a == b) = false ↔ a ≠ b :=
-  false_iff_not.trans ⟨fun n e => n (beq_true_iff.mpr e), fun n e => n (beq_true_iff.mp e)⟩
+  false_iff_not.trans ⟨fun n e => n (ListTests.decide_true_iff.mpr e), fun n e => n (ListTests.decide_true_iff.mp e)⟩
 
 /-! ## Membership -/
 
@@ -288,7 +285,7 @@ theorem contains_true_iff [DecidableEq α] {a : α} : ∀ {l : List α}, l.conta
   | b :: l => by
     show (match a == b with | true => true | false => List.elem a l) = true ↔ a ∈ b :: l
     cases h : (a == b) with
-    | true => exact ⟨fun _ => mem_cons_iff.mpr (.inl (beq_true_iff.mp h)), fun _ => rfl⟩
+    | true => exact ⟨fun _ => mem_cons_iff.mpr (.inl (ListTests.decide_true_iff.mp h)), fun _ => rfl⟩
     | false => exact ⟨fun e => .tail b (contains_true_iff.mp e),
         fun m => (mem_cons_iff.mp m).elim (fun e => absurd e (beq_false_iff.mp h))
           contains_true_iff.mpr⟩

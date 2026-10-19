@@ -58,10 +58,6 @@ variable (L : Flow F C) (W : Web F C)
 
 /-! ## The scope of “within the self”, along affecting -/
 
-/-- **Every formation lies within the self as drawn somewhere along affecting**: at the whole. -/
-theorem subTrue_member (f g : F) : SubTrue (Boundary (L.Affects W) f) (fun region => region g) :=
-  Becoming.subTrue_member f g
-
 /-- **Along affecting, “everything within the self has the property” is super-true exactly when
 everything has it.** -/
 theorem superTrue_all_iff (f : F) {s : F → Prop} :
@@ -101,14 +97,6 @@ theorem superTrue_level_free (f : F) (sig : Pos → Nat → F → Prop) (p : Pos
   Becoming.superTrue_level_free (L.FedFrom W) (L.Shares W) f sig p
 
 /-! ## The step, along affecting -/
-
-/-- **Along affecting, invariance is determinacy**: the presupposition is invariant across the
-boundaries drawn along affecting exactly when, sub-true, it is super-true. -/
-theorem boundaryInvariant_iff_determinate {f : F} {sig : Pos → Nat → F → Prop} {p : Pos} :
-    BoundaryInvariant (Boundary (L.Affects W) f) (SignificantWithin sig p) ↔
-      (SubTrue (Boundary (L.Affects W) f) (SignificantWithin sig p) →
-        SuperTrue (Boundary (L.Affects W) f) (SignificantWithin sig p)) :=
-  Becoming.boundaryInvariant_iff_determinate
 
 /-- **Along affecting, invariance is extension to the whole**: holding as the boundary is drawn
 anywhere along affecting, the presupposition holds as it is drawn at the whole. -/
@@ -175,17 +163,6 @@ theorem unrestricted_of_presupposed {center : Pos → F} {sig : Pos → Nat → 
     Unrestricted sig :=
   Becoming.unrestricted_of_presupposed (fun p _ => ⟨_, Boundary.whole (center p), trivial⟩)
     presupposed invariant
-
-/-- **Along affecting, invariance across boundaries is invariance across standpoints.** Where every
-formation lies within some center's reach closure and every standpoint's presupposition is sub-true
-along affecting, the presupposition is invariant across each self's boundaries exactly when
-significance is standpoint-invariant. -/
-theorem boundaryInvariant_iff_standpointInvariant {center : Pos → F}
-    (centers : ∀ g, ∃ q, L.WithinReach W (center q) g) {sig : Pos → Nat → F → Prop}
-    (presupposed : ∀ p, SubTrue (Boundary (L.Affects W) (center p)) (SignificantWithin sig p)) :
-    (∀ p, BoundaryInvariant (Boundary (L.Affects W) (center p)) (SignificantWithin sig p)) ↔
-      StandpointInvariant sig :=
-  Becoming.boundaryInvariant_iff_standpointInvariant centers presupposed
 
 /-- **Living significance at the level of claims, from the premises along affecting**, on every
 reading in which a claim's significance from a standpoint is that of some formation's continuation

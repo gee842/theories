@@ -107,8 +107,8 @@ namespace Hexagram
 
 theorem all_sound {α : Type} (p : α → Bool) : ∀ {l : List α}, l.all p = true → ∀ x, x ∈ l → p x = true
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => (both h).1
-  | _ :: _, h, x, .tail _ mem => all_sound p (both h).2 x mem
+  | _ :: _, h, _, .head _ => (bool_of_and_true h).1
+  | _ :: _, h, x, .tail _ mem => all_sound p (bool_of_and_true h).2 x mem
 
 theorem all_complete {α : Type} (p : α → Bool) :
     ∀ {l : List α}, (∀ x, x ∈ l → p x = true) → l.all p = true
@@ -195,7 +195,7 @@ theorem holdsPlace_iff : ∀ (s : Hexagram) (k : Place), holdsPlace s k = true �
 
 /-- **Holding a place is narrower than being in phase**: it is being in phase between the ends. -/
 theorem holdsPlace_inPhase {s : Hexagram} {k : Place} (h : holdsPlace s k = true) : inPhase s k = true :=
-  (both h).2
+  (bool_of_and_true h).2
 
 /-- **No line holds the bottom or the top place.** -/
 theorem holdsPlace_ends (s : Hexagram) : holdsPlace s .p1 = false ∧ holdsPlace s .p6 = false := ⟨rfl, rfl⟩
@@ -296,9 +296,9 @@ its line's phase under both relations.** -/
 theorem tuanPlaceStatements_agree : ∀ q, q ∈ tuanPlaceStatements →
     betweenEnds q.2.1 = true ∧ inPhase (number q.1) q.2.1 = q.2.2 ∧ holdsPlace (number q.1) q.2.1 = q.2.2 :=
   fun q mem =>
-    have h := both (all_sound (fun (q : Nat × Place × Bool) => betweenEnds q.2.1 &&
+    have h := bool_of_and_true (all_sound (fun (q : Nat × Place × Bool) => betweenEnds q.2.1 &&
       (same (inPhase (number q.1) q.2.1) q.2.2 && same (holdsPlace (number q.1) q.2.1) q.2.2)) rfl q mem)
-    ⟨h.1, same_eq (both h.2).1, same_eq (both h.2).2⟩
+    ⟨h.1, same_eq (bool_of_and_true h.2).1, same_eq (bool_of_and_true h.2).2⟩
 
 /-- Every line between the ends holds its place. -/
 def allHold (s : Hexagram) : Bool := inPhase s .p2 && inPhase s .p3 && inPhase s .p4 && inPhase s .p5
@@ -393,9 +393,9 @@ def betweenPhase (s : Hexagram) (q : Between) : Bool := inPhase s q.place
 
 theorem allHold_sites (s : Hexagram) : allHold s = true ↔ ∀ q, betweenPhase s q = true :=
   ⟨fun h =>
-    have h123 := both h
-    have h12 := both h123.1
-    have h1 := both h12.1
+    have h123 := bool_of_and_true h
+    have h12 := bool_of_and_true h123.1
+    have h1 := bool_of_and_true h12.1
     fun
     | .q2 => h1.1
     | .q3 => h1.2
@@ -412,9 +412,9 @@ theorem allHold_sites (s : Hexagram) : allHold s = true ↔ ∀ q, betweenPhase 
 
 theorem noneHold_sites (s : Hexagram) : noneHold s = true ↔ ∀ q, betweenPhase s q = false :=
   ⟨fun h =>
-    have h123 := both h
-    have h12 := both h123.1
-    have h1 := both h12.1
+    have h123 := bool_of_and_true h
+    have h12 := bool_of_and_true h123.1
+    have h1 := bool_of_and_true h12.1
     fun
     | .q2 => ListTests.false_of_not h1.1
     | .q3 => ListTests.false_of_not h1.2
@@ -991,9 +991,9 @@ def lineTextPlace : List (Nat × Place) := [(45, .p5)]
 theorem lineTextPlace_holds : ∀ q, q ∈ lineTextPlace →
     middle q.2 = true ∧ inPhase (number q.1) q.2 = true ∧ holdsPlace (number q.1) q.2 = true :=
   fun q mem =>
-    have h := both (all_sound (fun (q : Nat × Place) => middle q.2 && (inPhase (number q.1) q.2 && holdsPlace (number q.1) q.2))
+    have h := bool_of_and_true (all_sound (fun (q : Nat × Place) => middle q.2 && (inPhase (number q.1) q.2 && holdsPlace (number q.1) q.2))
       rfl q mem)
-    ⟨h.1, (both h.2).1, (both h.2).2⟩
+    ⟨h.1, (bool_of_and_true h.2).1, (bool_of_and_true h.2).2⟩
 
 /-! ## Along the unfolding -/
 

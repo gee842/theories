@@ -228,18 +228,6 @@ theorem renewing_keeps_support {f : F} (renewing : W.RenewingIn f) (t : Nat) :
 theorem lost_consumed {c : C} : W.Lost c → W.Consumed c
   | ⟨g, T, ⟨depends, _, _⟩, below⟩ => ⟨g, T, depends, below⟩
 
-/-- A dependence holding at `T` and not at a later `t` dissolved across a step between. -/
-theorem dissolves_between {T t : Nat} {g : F} {c : C} (le : T ≤ t)
-    (held : W.requires T g c) (gone : ¬ W.requires t g c) :
-    ¬ ∀ s, T ≤ s → s < t → ¬ W.Dissolves s g c :=
-  ceases_at_a_step (p := fun s => W.requires s g c) le held gone
-
-/-- A dependence absent at `T` and holding at a later `t` formed across a step between. -/
-theorem forms_between {T t : Nat} {g : F} {c : C} (le : T ≤ t)
-    (absent : ¬ W.requires T g c) (held : W.requires t g c) :
-    ¬ ∀ s, T ≤ s → s < t → ¬ W.Forms s g c :=
-  arises_at_a_step (p := fun s => W.requires s g c) le absent held
-
 /-- Every met dependence is kept or broken across each step. -/
 theorem kept_or_broken {t : Nat} {g : F} {c : C} (depends : W.requires t g c)
     (met : W.need t g c ≤ W.level t c) : W.Kept t g c ∨ W.Broken t g c :=

@@ -401,12 +401,6 @@ theorem NecessarilyDrawnInto.possibly {R : S → Prop} {s : S}
   match drawn.2 r start with
   | ⟨_, inside⟩ => start ▸ r.possiblyDrawnInto (start ▸ drawn.1) inside
 
-/-- **Lock-in along the course.** Possibly drawn into a region the process never leaves, from
-where the course enters it the configuration it started from cannot be had again. -/
-theorem PossiblyDrawnInto.never_back {R : S → Prop} (invariant : Invariant P R) {s t : S}
-    (outside : ¬ R s) (inside : R t) : ¬ Reach P t s :=
-  invariant.locks_out inside outside
-
 /-- **Possibly drawn is losing oneself on some course.** A configuration is possibly drawn into
 some region the process never leaves exactly where some course from it leads where it cannot be
 had again. -/

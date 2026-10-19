@@ -271,51 +271,11 @@ namespace Scope
 variable {S A R Index : Type} {k : Nat} {P : Process S A} {sense : S → A → S → Fin k}
   {response : R → List A} {B : S → Prop} {policy : Policy A R k} {basis : Index → S → Prop}
 
-/-- **Derived claims hold over the scope where the basis does.** -/
-theorem closed (rootHolds : ∀ i, Throughout (Becoming.Scope P sense response B policy) (basis i)) :
-    ∀ q, Derives basis [] q → Throughout (Becoming.Scope P sense response B policy) q :=
-  closed_throughout rootHolds
-
-/-- **The whole closure holds over the scope exactly where its basis does.** -/
-theorem closure_iff :
-    (∀ q, Derives basis [] q → Throughout (Becoming.Scope P sense response B policy) q) ↔
-      ∀ i, Throughout (Becoming.Scope P sense response B policy) (basis i) :=
-  closure_throughout_iff
-
 /-- **Every claim derived from a sound policy's goal holds over its scope.** -/
 theorem goal_closure {safe : S → A → S → Prop} {goal : S → Prop}
     (sound : Sound P safe goal sense response policy B) :
     ∀ q, Derives (fun _ : Unit => goal) [] q → Throughout (Becoming.Scope P sense response B policy) q :=
-  closed fun _ t inScope => Becoming.Scope.secures sound t inScope
-
-/-- **A claim derived under local premises holds over the scope wherever its premises hold.** -/
-theorem relative (rootHolds : ∀ i, Throughout (Becoming.Scope P sense response B policy) (basis i))
-    {context : List (S → Prop)} {p : S → Prop} (proof : Derives basis context p) :
-    ∀ t, Becoming.Scope P sense response B policy t → Holds context t → p t :=
-  relative_throughout rootHolds proof
-
-/-- **Local premises holding over the scope are discharged.** -/
-theorem discharged
-    (rootHolds : ∀ i, Throughout (Becoming.Scope P sense response B policy) (basis i))
-    {context : List (S → Prop)} {p : S → Prop}
-    (premisesHold : ∀ q, q ∈ context → Throughout (Becoming.Scope P sense response B policy) q)
-    (proof : Derives basis context p) : Throughout (Becoming.Scope P sense response B policy) p :=
-  discharged_throughout rootHolds premisesHold proof
-
-/-- **A derived lemma added to the basis keeps the closure over the scope.** -/
-theorem lemma_closed
-    (rootHolds : ∀ i, Throughout (Becoming.Scope P sense response B policy) (basis i))
-    {lemma : S → Prop} (lemmaProof : Derives basis [] lemma) :
-    ∀ p, Derives (withLemma basis lemma) [] p →
-      Throughout (Becoming.Scope P sense response B policy) p :=
-  lemma_throughout rootHolds lemmaProof
-
-/-- **A configuration of the scope where a claim fails excludes it from the closure.** -/
-theorem countermodel
-    (rootHolds : ∀ i, Throughout (Becoming.Scope P sense response B policy) (basis i))
-    {p : S → Prop} (failing : ∃ t, Becoming.Scope P sense response B policy t ∧ ¬ p t) :
-    ¬ Derives basis [] p :=
-  countermodel_excludes rootHolds failing
+  Derivation.closed_throughout fun _ t inScope => Becoming.Scope.secures sound t inScope
 
 /-- **With a finite basis, each derived claim met somewhere in the scope is one configuration of
 the scope meeting them all.** -/

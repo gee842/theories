@@ -165,10 +165,6 @@ theorem mem_of_contains : ∀ {l : List Nat} {i : Nat}, l.contains i = true → 
 theorem trace_iff_run {s t : State} {es : List Event} : Trace process s es t ↔ run s es = some t :=
   trace_ofPartial_iff step
 
-theorem run_is_trace {s t : State} {es : List Event} (h : run s es = some t) :
-    Trace process s es t :=
-  trace_iff_run.mpr h
-
 theorem admitted_requires_review {s t : State} {c : Nat} {b : Ballot}
     (h : step s (.enroll c b) = some t) :
     s.reviews.any (fun e => e.2 == c) = true ∧ governance s b = true := by
@@ -257,7 +253,7 @@ theorem nonadopting_trace_keeps_rule : ∀ {s t : State} {es : List Event},
 
 theorem nonadopting_history_inherits {s t : State} {es : List Event} (h : run s es = some t)
     (hn : ∀ e, e ∈ es → nonAdopting e = true) : t.rule = s.rule :=
-  nonadopting_trace_keeps_rule (run_is_trace h) hn
+  nonadopting_trace_keeps_rule (RuleHandoff.trace_iff_run.mpr h) hn
 
 /-- **Every course without adoption keeps the rule**, through the gate. -/
 theorem rule_inherited {s t : State} {es : List Event} (path : Trace process s es t)

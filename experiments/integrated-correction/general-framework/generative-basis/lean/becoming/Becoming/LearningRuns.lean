@@ -190,53 +190,6 @@ theorem byElimination_through_prefix [DecidableEq R] (H : Nat → List R → Opt
       byElimination H (prefixOf (Parting.course reg r) t) = byElimination H (prefixOf (Parting.course reg r') t) :=
   Learning.byElimination_through_prefix (prefix_congr same)
 
-/-- **Every candidate elimination passed along a run missed at an earlier step of the run.** -/
-theorem missed_before [DecidableEq R] {H : Nat → List R → Option R} {reg : S → R} {r : Run P}
-    (t k : Nat) (below : k < index H (Parting.course reg r) t) :
-    ∃ s, s < t ∧ index H (Parting.course reg r) s = k ∧ MissesAt (H k) (Parting.course reg r) s :=
-  Learning.missed_before t k below
-
-/-- **Learning over classes along a run.** Where candidate `j` of class `c` misses at no
-step of the run's course through the map, the current candidate of elimination over the merged
-classes is never beyond place `tri (c + j) + j`. -/
-theorem merged_bound [DecidableEq R] (G : Nat → Nat → List R → Option R) {reg : S → R}
-    {r : Run P} {c j : Nat} (holds : Accords (G c j) (Parting.course reg r)) :
-    ∀ t, index (merged G) (Parting.course reg r) t ≤ tri (c + j) + j :=
-  Learning.merged_bound G holds
-
-/-- **Where elimination over the lasso candidates is right from some step on along a run, the
-run's course through the map repeats from some step.** -/
-theorem lasso_of_right [DecidableEq R] {reg : S → R} {r : Run P} {T : Nat}
-    (right : ∀ t, T ≤ t → Parting.RightAt (byElimination lassos) reg r t) :
-    ∃ i q, Lasso (Parting.course reg r) i q :=
-  lasso_of_rest right
-
-/-- **Generalization from a run.** Within the features that go alike across the map's lumping,
-the values at the configurations a run passed before `t` fix the value at `s` exactly where `s`
-is lumped with one of them, given two values. -/
-theorem determines_iff_lumped_alike [DecidableEq R] {V : Type x} {reg : S → R} (r : Run P)
-    (t : Nat) {s : S} {y z : V} (two : y ≠ z) :
-    Determines (Lumped (V := V) reg) (· ∈ prefixOf r.state t) s ↔
-      ∃ d, d ∈ prefixOf r.state t ∧ reg d = reg s :=
-  determines_lumped_iff two
-
-/-- **The value carried over from a run is right exactly where the world takes one value at the
-two.** A feature going alike across the lumping and fitting the world `f` at the
-configurations a run passed before `t` takes at `s` its value at a passed configuration `d`
-lumped with `s`; it is right at `s` exactly where `f` takes one value at `d` and `s`. -/
-theorem carried_right_iff {V : Type x} {reg : S → R} {r : Run P} {t : Nat} {f g : S → V}
-    {s d : S} (lumped : Lumped reg g) (fits : ∀ c, c ∈ prefixOf r.state t → g c = f c)
-    (passed : d ∈ prefixOf r.state t) (same : reg d = reg s) : g s = f s ↔ f d = f s :=
-  lumped_right_iff lumped fits passed same
-
-/-- **A world going alike across the lumping is learned from a run at every configuration
-lumped with one the run passed.** -/
-theorem world_carried_right {V : Type x} {reg : S → R} {r : Run P} {t : Nat} {f g : S → V}
-    {s d : S} (world : Lumped reg f) (lumped : Lumped reg g)
-    (fits : ∀ c, c ∈ prefixOf r.state t → g c = f c) (passed : d ∈ prefixOf r.state t)
-    (same : reg d = reg s) : g s = f s :=
-  lumped_world_right world lumped fits passed same
-
 end AnyProcess
 
 /-! ## Training on the prefixes of runs -/

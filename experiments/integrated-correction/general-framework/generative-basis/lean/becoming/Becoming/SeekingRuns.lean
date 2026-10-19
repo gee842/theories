@@ -68,22 +68,6 @@ section AnyProcess
 
 variable {S : Type u} {A : Type v} {P : Process S A}
 
-/-- **Along a run of any process, more than now is met only by a change of configuration.** -/
-theorem more_not_at_rest {q : S → Nat} (r : Run P) {n : Nat}
-    (more : MoreThanNow q r.state n) : r.state (n + 1) ≠ r.state n :=
-  Becoming.more_not_at_rest more
-
-/-- **A run of any process meeting more than now at every step passes through configurations no
-list holds.** -/
-theorem more_needs_open {q : S → Nat} (r : Run P) (more : ∀ n, MoreThanNow q r.state n) :
-    ¬ ∃ l : List S, ∀ n, r.state n ∈ l :=
-  Becoming.more_needs_open more
-
-/-- Along such a run every configuration is new. -/
-theorem more_new {q : S → Nat} (r : Run P) (more : ∀ n, MoreThanNow q r.state n) :
-    ∀ i j, i < j → r.state i ≠ r.state j :=
-  Becoming.more_new more
-
 end AnyProcess
 
 section Determined
@@ -125,10 +109,6 @@ theorem aboveAll_never_rests {I : Type} {q : I → S → Nat} {i j : I} (other :
     (r : Run (Law.process next)) (n : Nat) :
     ¬ (next (r.state n) = r.state n ∧ ∀ k, AboveAll q k (r.state n)) :=
   fun ⟨fixed, all⟩ => Law.aboveAll_never_rests other next ⟨r.state n, fixed, all⟩
-
-/-- **Counting on is a run meeting more than now at every step.** -/
-theorem succ_more (s : Nat) : ∀ n, MoreThanNow id (Law.run Nat.succ s).state n :=
-  Becoming.succ_more s
 
 /-- Two seekers never both stand above all others at a configuration of any run. -/
 theorem aboveAll_not_two {A : Type v} {P : Process S A} {I : Type} {q : I → S → Nat} {i j : I}

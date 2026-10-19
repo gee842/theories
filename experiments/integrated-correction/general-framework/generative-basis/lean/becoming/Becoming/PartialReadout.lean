@@ -245,12 +245,6 @@ theorem direct_not_sound : ¬ SoundWithin every signal bit direct :=
 /-- The direct reading is right on the unreversed `false` channel. -/
 theorem direct_right_once : direct (signal ⟨false, false⟩) = some (bit ⟨false, false⟩) := rfl
 
-/-- **Keeping only the parity of the pair keeps exactness**: retaining every datum is not
-needed. -/
-theorem parity_exact :
-    ExactWithin every (fun h => Bool.xor (paired h).1 (paired h).2) bit direct :=
-  paired_exact
-
 /-- **A negated copy read back by negation is exact.** -/
 theorem negated_exact : ExactWithin every (fun h => !h.value) bit (fun b => some (!b))
   | ⟨false, _⟩, _ => rfl
@@ -271,46 +265,11 @@ def prefixBefore (g : S → R) (t : Nat) (r : Run P) : List R :=
 /-- The feature `f` of a run's configuration at step `t`. -/
 def featureAt (f : S → V) (t : Nat) (r : Run P) : V := f (r.state t)
 
-/-- **A reading of the prefix exact on a domain of runs is sound there.** -/
-theorem exact_sound {D : Run P → Prop} {g : S → R} {f : S → V} {t : Nat}
-    {answer : List R → Option V} (exact : ExactWithin D (prefixBefore g t) (featureAt f t) answer) :
-    SoundWithin D (prefixBefore g t) (featureAt f t) answer :=
-  exact.sound
-
-/-- **An exact reading of the prefix needs lumping**: runs of the domain with one prefix before
-`t` have one feature value at `t`. -/
-theorem exact_lumped {D : Run P → Prop} {g : S → R} {f : S → V} {t : Nat}
-    {answer : List R → Option V} (exact : ExactWithin D (prefixBefore g t) (featureAt f t) answer) :
-    LumpedWithin D (prefixBefore g t) (featureAt f t) :=
-  exact.lumped
-
-/-- **A sound reading stays silent where the prefix leaves the feature open**. -/
-theorem sound_silent {D : Run P → Prop} {g : S → R} {f : S → V} {t : Nat}
-    {answer : List R → Option V} (sound : SoundWithin D (prefixBefore g t) (featureAt f t) answer)
-    {r r' : Run P} (inD : D r) (inD' : D r') (same : prefixBefore g t r = prefixBefore g t r')
-    (different : f (r.state t) ≠ f (r'.state t)) : answer (prefixBefore g t r) = none :=
-  sound.silent inD inD' same different
-
-/-- **Soundness on a domain of runs holds on every smaller one.** -/
-theorem sound_mono {D D' : Run P → Prop} {g : S → R} {f : S → V} {t : Nat}
-    {answer : List R → Option V} (sound : SoundWithin D (prefixBefore g t) (featureAt f t) answer)
-    (within : ∀ r, D' r → D r) : SoundWithin D' (prefixBefore g t) (featureAt f t) answer :=
-  sound.mono within
-
 /-- **Lumping survives reading a second map's prefix beside the first.** -/
 theorem finer_lumped {R' : Type w} {D : Run P → Prop} {g : S → R} {f : S → V} {t : Nat}
     (lumped : LumpedWithin D (prefixBefore g t) (featureAt f t)) (g' : S → R') :
     LumpedWithin D (fun r => (prefixBefore g t r, prefixBefore g' t r)) (featureAt f t) :=
   lumped.finer (prefixBefore g' t)
-
-/-- **A faithfully retained prefix keeps exactness.** -/
-theorem retained_exact {M : Type w} {D : Run P → Prop} {g : S → R} {f : S → V} {t : Nat}
-    {answer : List R → Option V} (exact : ExactWithin D (prefixBefore g t) (featureAt f t) answer)
-    (retain : List R → M) (read : M → List R)
-    (faithful : ∀ r, D r → read (retain (prefixBefore g t r)) = prefixBefore g t r) :
-    ExactWithin D (fun r => retain (prefixBefore g t r)) (featureAt f t)
-      (fun m => answer (read m)) :=
-  exact.retained retain read faithful
 
 /-- **Staying silent on every prefix is sound** on every domain of runs. -/
 theorem silent_sound (D : Run P → Prop) (g : S → R) (f : S → V) (t : Nat) :
@@ -321,14 +280,6 @@ theorem silent_sound (D : Run P → Prop) (g : S → R) (f : S → V) (t : Nat) 
 theorem silent_not_exact {D : Run P → Prop} (g : S → R) (f : S → V) (t : Nat) {r : Run P}
     (inD : D r) : ¬ ExactWithin D (prefixBefore g t) (featureAt f t) (fun _ => none) :=
   PartialReadout.silent_not_exact (prefixBefore g t) (featureAt f t) inD
-
-/-- **With a section of the prefix over a domain of runs, some reading of the prefix is exact at
-`t` exactly where runs of the domain with one prefix before `t` have one feature value at `t`.** -/
-theorem exact_exists_iff {D : Run P → Prop} {g : S → R} {f : S → V} {t : Nat}
-    {pick : List R → Option (Run P)} (sec : SectionWithin D (prefixBefore g t) pick) :
-    (∃ answer, ExactWithin D (prefixBefore g t) (featureAt f t) answer) ↔
-      LumpedWithin D (prefixBefore g t) (featureAt f t) :=
-  PartialReadout.exact_exists_iff sec
 
 end AnyProcess
 

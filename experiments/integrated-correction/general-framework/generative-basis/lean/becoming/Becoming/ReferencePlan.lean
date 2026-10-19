@@ -251,24 +251,24 @@ theorem added_keeps (m : List Nat) (i : Nat) :
     Registration.Keeps AgreeOn m (i :: m) :=
   (Contacts.keeps_iff_retains (fun p : List Nat => p) m (i :: m)).mpr fun _ h => List.Mem.tail i h
 
-/-- Direct reuse of `Registration.keeps_iff`, not a second definition of selection through a
+/-- Direct reuse of `Learning.Training.keeps_through_iff`, not a second definition of selection through a
 lumping. -/
 theorem old_selections_remain (m : List Nat) (i : Nat) :
     ∀ select, Learning.Training.Through (AgreeOn m) select →
       Learning.Training.Through (AgreeOn (i :: m)) select :=
-  (Registration.keeps_iff
+  (Learning.Training.keeps_through_iff
     (fun _ _ _ => rfl) (fun _ _ h j hj => (h j hj).symm)
-    (fun _ _ _ h k j hj => (h j hj).trans (k j hj))).mp (added_keeps m i)
+    (fun _ _ _ h k j hj => (h j hj).trans (k j hj))).mpr (added_keeps m i)
 
 theorem choice_at_contact {m : List Nat} {i : Nat} (mem : i ∈ m) :
     Learning.Training.Through (AgreeOn m) (fun x => x i = true) :=
   fun _ _ h => ⟨fun hx => (h i mem).symm.trans hx, fun hy => (h i mem).trans hy⟩
 
-/-- A new contact gains a choice: an instance of `Contacts.added_gains`. -/
+/-- A new contact gains a choice: an instance of `Contacts.retired_loses`. -/
 theorem new_contact_choice (m : List Nat) (i : Nat) (absent : i ∉ m) :
     Learning.Training.Through (AgreeOn (i :: m)) (fun x => x i = true) ∧
       ¬ Learning.Training.Through (AgreeOn m) (fun x => x i = true) :=
-  Contacts.added_gains (List.Mem.head m) absent
+  Contacts.retired_loses (List.Mem.head m) absent
 
 /-! The native history has two repairs, no resource reset and no external
 calibration labels. Both rounds use exactly `choose`. -/
@@ -343,11 +343,6 @@ theorem second_new_selection :
 /-- Only constructed and installed contacts participate in this lumping. -/
 def alikeOnInstalled (s : State) : (Nat → Bool) → (Nat → Bool) → Prop :=
   AgreeOn (s.installed.map Sample.address)
-
-theorem first_installed_choice :
-    Learning.Training.Through (alikeOnInstalled repairedFirst) (fun x => x 0 = true) ∧
-      ¬ Learning.Training.Through (alikeOnInstalled initial) (fun x => x 0 = true) :=
-  first_new_selection
 
 theorem second_installed_choice :
     Learning.Training.Through (alikeOnInstalled repairedSecond) (fun x => x 1 = true) ∧
@@ -432,9 +427,9 @@ theorem draws_held : Stock.DrawsHeld P State.fuel use := by
 theorem trace_conserves {s t : State} {as : List Act} (h : Trace P s as t) :
     t.fuel + t.used = s.fuel + s.used :=
   have fuel : t.fuel + total as use = s.fuel :=
-    (Stock.trace_balance balanced h).trans (congrArg (s.fuel + ·) (Stock.total_zero as))
+    (Stock.trace_balance balanced h).trans (congrArg (s.fuel + ·) (total_zero as))
   have used : t.used = s.used + total as use :=
-    (congrArg (t.used + ·) (Stock.total_zero as)).symm.trans (Stock.trace_balance used_balanced h)
+    (congrArg (t.used + ·) (total_zero as)).symm.trans (Stock.trace_balance used_balanced h)
   calc t.fuel + t.used = t.fuel + (s.used + total as use) := congrArg (t.fuel + ·) used
     _ = (t.fuel + total as use) + s.used :=
         (congrArg (t.fuel + ·) (Nat.add_comm _ _)).trans (Nat.add_assoc _ _ _).symm

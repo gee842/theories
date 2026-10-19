@@ -375,16 +375,6 @@ end Strength
 
 namespace Propagation
 
-/-- A step from `T` on and before `T + N` is among the `N` steps from `T`. -/
-theorem mem_steps_of_between : ∀ {T N j : Nat}, T ≤ j → j < T + N → j ∈ steps T N
-  | T, 0, _, le, lt => absurd (Nat.lt_of_le_of_lt le lt) (Nat.lt_irrefl T)
-  | T, N + 1, _, le, lt =>
-    match Nat.eq_or_lt_of_le le with
-    | .inl same => same ▸ .head _
-    | .inr later =>
-      .tail _ (mem_steps_of_between later
-        (Nat.lt_of_lt_of_le lt (Nat.le_of_eq (Nat.add_right_comm T 1 N).symm)))
-
 /-- A step among the `N` steps from `T` is from `T` on and before `T + N`. -/
 theorem between_of_mem_steps : ∀ {T N j : Nat}, j ∈ steps T N → T ≤ j ∧ j < T + N
   | T, N + 1, _, .head _ => ⟨Nat.le_refl T, Nat.lt_add_of_pos_right (Nat.succ_pos N)⟩
@@ -395,7 +385,7 @@ theorem between_of_mem_steps : ∀ {T N j : Nat}, j ∈ steps T N → T ≤ j �
 
 /-- A step up to `t` is among the first `t + 1` steps. -/
 theorem mem_steps_upto {s t : Nat} (le : s ≤ t) : s ∈ steps 0 (t + 1) :=
-  mem_steps_of_between (Nat.zero_le s)
+  steps_of_within (Nat.zero_le s)
     (Nat.lt_of_le_of_lt le (Nat.lt_of_lt_of_le (Nat.lt_succ_self t)
       (Nat.le_of_eq (Nat.zero_add (t + 1)).symm)))
 

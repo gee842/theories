@@ -388,12 +388,6 @@ end Lumping
 
 /-! ## Truncation, cancellation, memory and loops -/
 
-/-- **What a truncation misses is exactly the part left out:** the sum over all courses is the
-sum over those kept with the sum over those dropped, for every weighting. -/
-theorem Weights.truncation {R : Type w} (W : Weights R) {α : Type u} (kept dropped : List α)
-    (f : α → R) : W.sum (kept ++ dropped) f = W.add (W.sum kept f) (W.sum dropped f) :=
-  Weights.sum_append f kept dropped
-
 /-- **Where alternatives cannot cancel, a truncation bounds the whole from below.** -/
 theorem counting_truncation_le {α : Type u} (kept dropped : List α) (f : α → Nat) :
     counting.sum kept f ≤ counting.sum (kept ++ dropped) f :=

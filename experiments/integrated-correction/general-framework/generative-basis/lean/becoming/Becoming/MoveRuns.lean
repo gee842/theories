@@ -97,38 +97,6 @@ theorem formed_of_finer (r : Run P) {π : S → K} {π' : S → K'}
     Learning.Lumped (fun n => π' (r.state n)) r.act :=
   lumped_of_finer formed fun i j same => finer (r.state i) (r.state j) same
 
-/-- **Along a run, through the reading that tells nothing apart, the moves are formed exactly where
-the run takes one move throughout.** -/
-theorem formed_const_iff (r : Run P) (k : K) :
-    Learning.Lumped (fun _ => k) r.act ↔ ∀ i j, r.act i = r.act j :=
-  lumped_const_iff k
-
-/-- **A run's moves are a law of its configurations exactly where some relation giving at most one
-move at each configuration gives every move of the run.** -/
-theorem formed_iff_singleValued (r : Run P) :
-    Learning.Lumped r.state r.act ↔
-      ∃ R : S → A → Prop, Readout.SingleValued R ∧ ∀ n, R (r.state n) (r.act n) :=
-  lumped_iff_singleValued
-
-/-- **The reading of a run is contained in every relation giving its moves.** -/
-theorem reading_le_run (r : Run P) {R : S → A → Prop} (gives : ∀ n, R (r.state n) (r.act n))
-    {s : S} {a : A} : Readout.Reading r.state r.act s a → R s a :=
-  reading_le gives
-
-/-- **On the first `N` steps of a run, a policy of the configuration gives its moves exactly where
-they never differ at one configuration**, with equality of configurations decided. -/
-theorem formed_upto_iff [DecidableEq S] (r : Run P) (N : Nat) :
-    (∀ i j, i < N → j < N → r.state i = r.state j → r.act i = r.act j) ↔
-      ∃ policy : S → A, ∀ n, n < N → r.act n = policy (r.state n) :=
-  lumped_upto_iff N
-
-/-- **The record of a run excludes every policy exactly where a configuration recurs with the move
-varied**, with equality of configurations and of moves decided. -/
-theorem no_policy_upto_iff [DecidableEq S] [DecidableEq A] (r : Run P) (N : Nat) :
-    (¬ ∃ policy : S → A, ∀ n, n < N → r.act n = policy (r.state n)) ↔
-      ∃ i j, i < N ∧ j < N ∧ r.state i = r.state j ∧ r.act i ≠ r.act j :=
-  Becoming.no_policy_upto_iff N
-
 end AnyProcess
 
 section Supplied

@@ -146,10 +146,6 @@ theorem OpenMap.alike_iff {F : Frame S A C} {G : Frame S' A C} {f : S → S'} (o
   ⟨fun alike => (opens.alike s).symm.trans (alike.trans (opens.alike s')),
    fun alike => (opens.alike s).trans (alike.trans (opens.alike s').symm)⟩
 
-/-- The identity is open. -/
-theorem openMap_id (F : Frame S A C) : OpenMap F F fun s => s :=
-  Bisimulation.eq F
-
 /-- Open maps compose. -/
 theorem OpenMap.comp {F : Frame S A C} {G : Frame S' A C} {H : Frame S'' A C} {f : S → S'}
     {g : S' → S''} (first : OpenMap F G f) (second : OpenMap G H g) :

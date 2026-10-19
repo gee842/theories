@@ -49,38 +49,6 @@ section Moments
 
 variable {S : Type u} {A : Type v} {V : Type w} {P : Process S A}
 
-/-- **Two moments of a run are selected alike by every selection through its course through the
-map exactly when the map takes one value at them.** -/
-theorem selected_alike_iff (reg : S → V) (r : Run P) {j k : Nat} :
-    (∀ select : (Nat → V) → Nat → Prop, Equivariant select →
-      (select (Parting.course reg r) j ↔ select (Parting.course reg r) k)) ↔
-      reg (r.state j) = reg (r.state k) :=
-  Relabel.selected_alike_iff
-
-/-- **Two moments of a run are valued alike by every valuation through its course through the
-map exactly when the map takes one value at them.** -/
-theorem valued_alike_iff (reg : S → V) (r : Run P) {j k : Nat} :
-    (∀ value : (Nat → V) → Nat → V, EquivariantValue value →
-      value (Parting.course reg r) j = value (Parting.course reg r) k) ↔
-      reg (r.state j) = reg (r.state k) :=
-  Relabel.valued_alike_iff
-
-/-- **A moment of a run is singled out exactly where the map sets it apart from every other.**
-Some selection through the course, selecting at most one moment at each course, selects `k`
-exactly when no other moment of the run takes `k`'s value through the map. -/
-theorem singled_iff_untied (reg : S → V) (r : Run P) {k : Nat} :
-    (∃ select : (Nat → V) → Nat → Prop, Equivariant select ∧
-      (∀ m i i', select m i → select m i' → i = i') ∧ select (Parting.course reg r) k) ↔
-      ∀ j, j ≠ k → reg (r.state j) ≠ reg (r.state k) :=
-  Relabel.singled_iff_untied
-
-/-- **A choice of one moment through the course chooses a moment the map sets apart from every
-other.** -/
-theorem choice_untied {rule : (Nat → V) → Option Nat} (equivariant : EquivariantChoice rule)
-    {reg : S → V} {r : Run P} {k : Nat} (chosen : rule (Parting.course reg r) = some k) :
-    ∀ j, j ≠ k → reg (r.state j) ≠ reg (r.state k) :=
-  equivariant.untied chosen
-
 /-- **Along a run taking one value throughout, a choice of one moment through the course
 withholds.** So it does along a run at rest. -/
 theorem choice_withholds_of_constant {rule : (Nat → V) → Option Nat}
@@ -119,16 +87,6 @@ theorem values_lumped {W : Type x} {value : (Nat → V) → Nat → W}
     Learning.Lumped (Parting.course reg r) (value (Parting.course reg r)) :=
   Learning.values_lumped equivariant (Parting.course reg r)
 
-/-- **Where a feature separates two moments the map lumps, no selection through the course
-selects exactly the moments meeting it.** That takes a finer map. -/
-theorem selects_not_right_of_parted {select : (Nat → V) → Nat → Prop}
-    (equivariant : Equivariant select) {reg : S → V} {r : Run P} {target : S → Prop} {j k : Nat}
-    (tie : reg (r.state j) = reg (r.state k)) (holds : target (r.state j))
-    (fails : ¬ target (r.state k)) :
-    ¬ ∀ i, select (Parting.course reg r) i ↔ target (r.state i) :=
-  Learning.selects_not_right_of_parted equivariant (p := fun i => target (r.state i)) tie holds
-    fails
-
 /-- **A feature read off the map is selected by reading it through the course.** -/
 theorem selects_right_of_reads {reg : S → V} {r : Run P} {target : S → Prop} (q : V → Prop)
     (reads : ∀ s, target s ↔ q (reg s)) :
@@ -136,14 +94,6 @@ theorem selects_right_of_reads {reg : S → V} {r : Run P} {target : S → Prop}
       ∀ i, q (Parting.course reg r i) ↔ target (r.state i) :=
   Learning.selects_right_of_reads (r := Parting.course reg r) (p := fun i => target (r.state i)) q
     fun i => reads (r.state i)
-
-/-- **Where a feature parts two moments the map lumps, no valuation through the course gives
-each moment its value.** -/
-theorem values_not_right_of_parted {W : Type x} {value : (Nat → V) → Nat → W}
-    (equivariant : EquivariantValue value) {reg : S → V} {r : Run P} {f : S → W} {j k : Nat}
-    (tie : reg (r.state j) = reg (r.state k)) (parted : f (r.state j) ≠ f (r.state k)) :
-    ¬ ∀ i, value (Parting.course reg r) i = f (r.state i) :=
-  Learning.values_not_right_of_parted equivariant (f := fun i => f (r.state i)) tie parted
 
 /-- **A feature read off the map is valued by reading it through the course.** -/
 theorem values_right_of_reads {W : Type x} {reg : S → V} {r : Run P} {f : S → W} (h : V → W)

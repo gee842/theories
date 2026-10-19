@@ -121,11 +121,6 @@ theorem same_self : ∀ a : Bool, same a a = true
   | true => rfl
   | false => rfl
 
-theorem both : ∀ {x y : Bool}, (x && y) = true → x = true ∧ y = true
-  | true, true, _ => ⟨rfl, rfl⟩
-  | true, false, h => Bool.noConfusion h
-  | false, _, h => Bool.noConfusion h
-
 /-- Two hexagrams agree at every line. -/
 def eqb (s t : Hexagram) : Bool :=
   same s.l1 t.l1 && same s.l2 t.l2 && same s.l3 t.l3 && same s.l4 t.l4 && same s.l5 t.l5 &&
@@ -133,11 +128,11 @@ def eqb (s t : Hexagram) : Bool :=
 
 theorem eq_of_eqb : ∀ {s t : Hexagram}, eqb s t = true → s = t
   | ⟨_, _, _, _, _, _⟩, ⟨_, _, _, _, _, _⟩, h =>
-    match both h with
-    | ⟨h5, e6⟩ => match both h5 with
-      | ⟨h4, e5⟩ => match both h4 with
-        | ⟨h3, e4⟩ => match both h3 with
-          | ⟨h2, e3⟩ => match both h2 with
+    match bool_of_and_true h with
+    | ⟨h5, e6⟩ => match bool_of_and_true h5 with
+      | ⟨h4, e5⟩ => match bool_of_and_true h4 with
+        | ⟨h3, e4⟩ => match bool_of_and_true h3 with
+          | ⟨h2, e3⟩ => match bool_of_and_true h2 with
             | ⟨e1, e2⟩ => by
               cases same_eq e1
               cases same_eq e2
@@ -282,9 +277,9 @@ def pairedb (s t : Hexagram) : Bool :=
 
 theorem paired_of_pairedb {s t : Hexagram} (h : pairedb s t = true) : Paired s t :=
   match ListTests.or_cases h with
-  | .inl turned => match both turned with
+  | .inl turned => match bool_of_and_true turned with
     | ⟨other, eq⟩ => .inl ⟨ne_of_eqb (ListTests.false_of_not other), eq_of_eqb eq⟩
-  | .inr changed => match both changed with
+  | .inr changed => match bool_of_and_true changed with
     | ⟨fixed, eq⟩ => .inr ⟨eq_of_eqb fixed, eq_of_eqb eq⟩
 
 /-- Every pair of a list is paired, told line by line. -/
@@ -295,8 +290,8 @@ def allPaired : List (Hexagram × Hexagram) → Bool
 theorem paired_of_allPaired : ∀ {l : List (Hexagram × Hexagram)}, allPaired l = true →
     ∀ q, q ∈ l → Paired q.1 q.2
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => paired_of_pairedb (both h).1
-  | _ :: _, h, q, .tail _ mem => paired_of_allPaired (both h).2 q mem
+  | _ :: _, h, _, .head _ => paired_of_pairedb (bool_of_and_true h).1
+  | _ :: _, h, q, .tail _ mem => paired_of_allPaired (bool_of_and_true h).2 q mem
 
 /-- **Two by two, each pair of the order is turned over or changed in every line**
 (二二相耦，非覆即變). -/

@@ -970,8 +970,8 @@ def placesHold : List (Nat × Place × Bool) → Bool
 theorem placesHold_sound : ∀ {l : List (Nat × Place × Bool)}, placesHold l = true →
     ∀ q, q ∈ l → inPhase (number q.1) q.2.1 = q.2.2
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => same_eq (both h).1
-  | _ :: _, h, q, .tail _ mem => placesHold_sound (both h).2 q mem
+  | _ :: _, h, _, .head _ => same_eq (bool_of_and_true h).1
+  | _ :: _, h, q, .tail _ mem => placesHold_sound (bool_of_and_true h).2 q mem
 
 /-- **Every explicit statement of place in the 小象 but one agrees with the phase of its line.** -/
 theorem placeStatements_agree : ∀ q, q ∈ placeStatements → inPhase (number q.1) q.2.1 = q.2.2 :=
@@ -995,8 +995,8 @@ def centresHold : List (Nat × Place) → Bool
 theorem centresHold_sound : ∀ {l : List (Nat × Place)}, centresHold l = true →
     ∀ q, q ∈ l → middle q.2 = true ∧ inPhase (number q.1) q.2 = true
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => both (both h).1
-  | _ :: _, h, q, .tail _ mem => centresHold_sound (both h).2 q mem
+  | _ :: _, h, _, .head _ => bool_of_and_true (bool_of_and_true h).1
+  | _ :: _, h, q, .tail _ mem => centresHold_sound (bool_of_and_true h).2 q mem
 
 /-- **Every statement of the middle in its place in the 小象 but one is of a middle line in
 phase.** -/
@@ -1019,8 +1019,8 @@ def fallsHold : List (Nat × Seam) → Bool
 theorem fallsHold_sound : ∀ {l : List (Nat × Seam)}, fallsHold l = true →
     ∀ q, q ∈ l → falls (number q.1) q.2 = true
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => (both h).1
-  | _ :: _, h, q, .tail _ mem => fallsHold_sound (both h).2 q mem
+  | _ :: _, h, _, .head _ => (bool_of_and_true h).1
+  | _ :: _, h, q, .tail _ mem => fallsHold_sound (bool_of_and_true h).2 q mem
 
 /-- **Every statement of a broken line over an unbroken one in the 小象 is of a fall at the seam
 below the line.** -/
@@ -1038,8 +1038,8 @@ def middleOppositionsHold : List Nat → Bool
 theorem middleOppositionsHold_sound : ∀ {l : List Nat}, middleOppositionsHold l = true →
     ∀ n, n ∈ l → middleUnbrokenOpposed (number n) = true
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => (both h).1
-  | _ :: _, h, n, .tail _ mem => middleOppositionsHold_sound (both h).2 n mem
+  | _ :: _, h, _, .head _ => (bool_of_and_true h).1
+  | _ :: _, h, n, .tail _ mem => middleOppositionsHold_sound (bool_of_and_true h).2 n mem
 
 /-- **Every configuration the 彖 says 剛中而應 of has an unbroken middle line opposed**, so, by
 `middleUnbrokenOpposed_eq`, its middle height opposed. -/

@@ -274,16 +274,6 @@ theorem counts_total {q : α → Prop} [∀ a, Decidable (q a)] :
   | a :: as => ⟨mark (q a), total as (fun a => mark (q a)), indicates_mark (q a), counts_total as,
       rfl⟩
 
-/-- Where a procedure decides activity, `comings` is the count of what comes to be. -/
-theorem comings_counts {as : List α} {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] (t : Nat) :
-    Counts as (fun a => ComesToBe (p a) t) (comings as p t) :=
-  counts_total as
-
-/-- Where a procedure decides activity, `ceasings` is the count of what ceases. -/
-theorem ceasings_counts {as : List α} {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] (t : Nat) :
-    Counts as (fun a => CeasesToBe (p a) t) (ceasings as p t) :=
-  counts_total as
-
 /-- `n` totals, across a list of steps, the counts of `q t` on the members `fam t` listed at each
 step `t`. -/
 def CountsAcross (fam : Nat → List α) (q : Nat → α → Prop) : List Nat → Nat → Prop

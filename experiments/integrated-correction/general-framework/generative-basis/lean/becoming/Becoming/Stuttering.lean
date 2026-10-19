@@ -699,10 +699,6 @@ theorem stutter_premises_iff (stutter : Stutter ρ) (once : w.flow.Once) :
     fun ⟨δ, transmits⟩ => ⟨δ, fun c =>
       (Flow.stutter_transmitsWithin_iff (X := w.Relatum) stutter).mpr (transmits c)⟩⟩⟩
 
-/-- A census survives a stuttering. -/
-theorem stutter_counted (counted : w.Counted) : (w.sample ρ).Counted :=
-  sample_counted (w := w) (σ := ρ) counted
-
 /-- And returns from it where each step is read at a step given for it. -/
 theorem stutter_counted_of_section {σ : Nat → Nat} (section_ : ∀ s, ρ (σ s) = s)
     (counted : (w.sample ρ).Counted) : w.Counted :=

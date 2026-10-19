@@ -60,15 +60,6 @@ theorem sub_add_of_le : ∀ {n m : Nat}, n ≤ m → m - n + n = m
     (congrArg (· + (n + 1)) (Nat.succ_sub_succ m n)).trans
       (congrArg Nat.succ (sub_add_of_le (Nat.le_of_succ_le_succ le)))
 
-theorem le_sub_of_add_le : ∀ {a b n : Nat}, a + b ≤ n → b ≤ n - a
-  | 0, b, n, le => show b ≤ n from (Nat.zero_add b) ▸ le
-  | a + 1, b, 0, le => absurd (Nat.le_trans (Nat.le_add_right (a + 1) b) le) (Nat.not_succ_le_zero a)
-  | a + 1, b, n + 1, le =>
-    (Nat.succ_sub_succ n a).symm ▸ le_sub_of_add_le (a := a) (Nat.le_of_succ_le_succ ((Nat.succ_add a b) ▸ le))
-
-theorem le_of_add_le_left : ∀ {a b n : Nat}, a + b ≤ n → a ≤ n :=
-  fun le => Nat.le_trans (Nat.le_add_right _ _) le
-
 /-! ## Expressions and codes -/
 
 /-- Expressions: two atoms, joining two expressions, doubling one. -/
@@ -255,15 +246,15 @@ def execute (s : Learner) (e : Expr) : Option (List Bool × Nat) :=
 theorem trained_execution (c : Code) (s : Learner) (e : Expr) (distinct : c.first ≠ c.second)
     (enough : 7 + operationDraw c e ≤ s.stock) :
     execute (train c s) e = some (eval c e, s.stock - 7 - operationDraw c e) := by
-  rw [train_of_le (le_of_add_le_left enough), acquired_exact c distinct]
-  exact if_pos (le_sub_of_add_le enough)
+  rw [train_of_le (Naturals.le_of_add_le_right enough), acquired_exact c distinct]
+  exact if_pos (Naturals.le_sub_of_add_le enough)
 
 /-- **What the step and the execution leave makes up the stock before.** -/
 theorem trained_execution_stock (c : Code) (s : Learner) (e : Expr)
     (enough : 7 + operationDraw c e ≤ s.stock) :
     (s.stock - 7 - operationDraw c e) + operationDraw c e + 7 = s.stock :=
-  (congrArg (· + 7) (sub_add_of_le (le_sub_of_add_le enough))).trans
-    (sub_add_of_le (le_of_add_le_left enough))
+  (congrArg (· + 7) (sub_add_of_le (Naturals.le_sub_of_add_le enough))).trans
+    (sub_add_of_le (Naturals.le_of_add_le_right enough))
 
 /-! ## What the primitives alone carry -/
 

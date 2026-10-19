@@ -68,12 +68,6 @@ variable {P : Type}
 
 /-! ## Zero-sum as counting -/
 
-/-- A constant counted once for each member of a list. -/
-theorem total_same (k : Nat) : ∀ ps : List P, total ps (fun _ => k) = ps.length * k
-  | [] => (Nat.zero_mul k).symm
-  | _ :: ps => (Nat.add_comm k _).trans
-      ((congrArg (· + k) (total_same k ps)).trans (Nat.succ_mul _ k).symm)
-
 /-- The total over a family with `p` in it: `p`'s amount and the total over the rest. -/
 theorem total_split (q : P → Nat) (pre : List P) (p : P) (post : List P) :
     total (pre ++ p :: post) q = q p + total (pre ++ post) q :=
@@ -86,7 +80,7 @@ against the family's total (behind); over the family the ahead counts total what
 counts total. -/
 theorem positions_balance (ps : List P) (a : P → Nat) :
     total ps (fun p => ps.length * a p) = total ps (fun _ => total ps a) :=
-  (total_mul ps.length a ps).trans (total_same (total ps a) ps).symm
+  (total_mul ps.length a ps).trans (total_const (total ps a) ps).symm
 
 /-- Across a change of amounts from `a` to `b`, what raises `p`'s position: its new amount
 counted once for each part, with the family's old total. -/
@@ -105,9 +99,9 @@ total what the falls total. -/
 theorem change_balances (ps : List P) (a b : P → Nat) :
     total ps (riseCount ps a b) = total ps (fallCount ps a b) :=
   (total_add (fun p => ps.length * b p) (fun _ => total ps a) ps).trans
-    ((congr (congrArg (· + ·) (total_mul ps.length b ps)) (total_same (total ps a) ps)).trans
+    ((congr (congrArg (· + ·) (total_mul ps.length b ps)) (total_const (total ps a) ps)).trans
       ((Nat.add_comm _ _).trans
-        ((congr (congrArg (· + ·) (total_mul ps.length a ps)) (total_same (total ps b) ps)).symm.trans
+        ((congr (congrArg (· + ·) (total_mul ps.length a ps)) (total_const (total ps b) ps)).symm.trans
           (total_add (fun p => ps.length * a p) (fun _ => total ps b) ps).symm)))
 
 /-- A part's change of position is the opposite of the change summed over the rest: in the
@@ -174,7 +168,7 @@ def Greatest (ps : List P) (a : P → Nat) (g : P) : Prop :=
 amount counted once for each part. -/
 theorem greatest_not_behind {ps : List P} {a : P → Nat} {g : P} (greatest : Greatest ps a g) :
     total ps a ≤ ps.length * a g :=
-  Nat.le_trans (total_le ps greatest) (Nat.le_of_eq (total_same (a g) ps))
+  Nat.le_trans (total_le ps greatest) (Nat.le_of_eq (total_const (a g) ps))
 
 /-- Every nonempty family has a greatest part. -/
 theorem greatest_exists (a : P → Nat) :

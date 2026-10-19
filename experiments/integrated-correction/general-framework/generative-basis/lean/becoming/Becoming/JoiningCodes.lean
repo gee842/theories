@@ -48,25 +48,18 @@ variable {F : Type u} {C : Type v} {D : Type w}
 /-- Which contexts are possible for a fragment. -/
 def possibleAnswers (J : Joining F) (x : F) (c : Context F) : Prop := c.Possible J x
 
-/-- **Codes reading the possible contexts exactly are given only to fragments agreeing on
-contexts.** -/
-theorem codes_contextSame {J : Joining F} {p : Presentation F (Context F) C}
-    (exact : Exact (possibleAnswers J) p) {x y : F} (equal : p.encode x = p.encode y) :
-    ContextSame J x y :=
-  equal_codes_same_answers exact equal
-
 /-- **A context possible for one fragment and not for another gives them different codes.** -/
 theorem codes_apart_of_possible {J : Joining F} {p : Presentation F (Context F) C}
     (exact : Exact (possibleAnswers J) p) {x y : F} {c : Context F} (possible : c.Possible J x)
     (impossible : ¬ c.Possible J y) : p.encode x ≠ p.encode y :=
-  fun equal => impossible ((codes_contextSame exact equal c).mp possible)
+  fun equal => impossible ((Presentations.equal_codes_same_answers exact equal c).mp possible)
 
 /-- **The codes of two fragments join exactly where the fragments do.** -/
 theorem image_domain_iff {J : Joining F} {p : Presentation F (Context F) C}
     (exact : Exact (possibleAnswers J) p) (x y : F) :
     (∃ c, J.image p.encode (p.encode x) (p.encode y) c) ↔ J.Composable x y :=
   ⟨fun ⟨_, _, _, z, atX, atY, _, joined⟩ =>
-    (ContextSame.composable_iff (codes_contextSame exact atX) (codes_contextSame exact atY)).mp
+    (ContextSame.composable_iff (Presentations.equal_codes_same_answers exact atX) (Presentations.equal_codes_same_answers exact atY)).mp
       ⟨z, joined⟩,
    fun ⟨z, joined⟩ => ⟨p.encode z, image_of J p.encode joined⟩⟩
 
@@ -77,7 +70,7 @@ theorem image_realized_iff {J : Joining F} (fn : J.Functional) {p : Presentation
     (exact : Exact (possibleAnswers J) p) (reduced : Reduced (possibleAnswers J) p) {x y z : F}
     (joined : J x y z) (c : C) : J.image p.encode (p.encode x) (p.encode y) c ↔ p.encode z = c :=
   ⟨fun ⟨_, _, d, atX, atY, atD, joined'⟩ =>
-    (reduced d z (ContextSame.joined fn (codes_contextSame exact atX) (codes_contextSame exact atY)
+    (reduced d z (ContextSame.joined fn (Presentations.equal_codes_same_answers exact atX) (Presentations.equal_codes_same_answers exact atY)
       joined' joined)).symm.trans atD,
    fun at_ => ⟨x, y, z, rfl, rfl, at_, joined⟩⟩
 

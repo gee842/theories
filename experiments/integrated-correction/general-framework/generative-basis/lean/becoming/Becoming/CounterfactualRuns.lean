@@ -57,14 +57,14 @@ theorem ExchangeLaw.world_exchange_iff {R : Type} {law : ExchangeLaw R R}
         (law.levels present start (t + 1))) ↔
       law.Feasible present start :=
   (law.world present start W).balances_iff_exchange.symm.trans
-    (ExchangeLaw.world_balances_iff na present start W)
+    (ExchangeLaw.course_balances_iff (present := present) (start := start) na W)
 
 /-- The course, where feasible, as a run of the law of exchange. -/
 def ExchangeLaw.worldRun {R : Type} {law : ExchangeLaw R R} (na : law.Nonanticipating)
     {present : Nat → List R} {start : R → Nat} (W : Web R R)
     (feasible : law.Feasible present start) : Run (exchange R) :=
   (law.world present start W).exchangeRun
-    ((ExchangeLaw.world_balances_iff na present start W).mpr feasible)
+    ((ExchangeLaw.course_balances_iff (present := present) (start := start) na W).mpr feasible)
 
 /-- **What a determined law adds to a history is exactly the moves the history never takes.** A
 determined law steps from `s` by `a` beyond what a run of it shows (`Shown`) exactly where it

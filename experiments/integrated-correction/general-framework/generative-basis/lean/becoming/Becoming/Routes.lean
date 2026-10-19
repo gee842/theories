@@ -328,10 +328,6 @@ theorem cond_zero_mul (b : Bool) (r l : Nat) :
   | true => exact Nat.zero_mul l
   | false => rfl
 
-theorem total_mul_right {α : Type} (q : α → Nat) (g : Nat) (as : List α) :
-    total as (fun a => q a * g) = total as q * g :=
-  (total_congr (fun a => Nat.mul_comm (q a) g) as).trans ((total_mul g q as).trans (Nat.mul_comm _ _))
-
 /-- Restricting the steps before `τ + 1 + m` to those up to `τ`. -/
 theorem total_upto (g : Nat → Nat) (τ : Nat) :
     ∀ m, total (steps 0 (τ + 1 + m)) (fun s => bif Nat.ble s τ then g s else 0) =
@@ -385,7 +381,7 @@ theorem give_split (l : Nat → C → Nat) (t : Nat) (c : C) :
           (steps 0 (t + 1)) (present t)).trans
         (total_congr (fun s =>
           (total_swap (fun h d => (bif part h then 0 else k t h c s d) * l s d) cs (present t)).trans
-            (total_congr (fun d => Routes.total_mul_right
+            (total_congr (fun d => Loops.total_mul_const
               (fun h => bif part h then 0 else k t h c s d) (l s d) (present t)) cs)) _)))))
 
 /-- **What is carried from given levels is linear in them.** Up to `T`, what the strengths carry

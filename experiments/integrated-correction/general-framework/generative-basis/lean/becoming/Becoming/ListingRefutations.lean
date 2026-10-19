@@ -71,12 +71,6 @@ namespace Web
 
 variable {F C : Type} {W : Web F C}
 
-/-- A stock that is nothing over a family is nothing over every family with no other
-members. -/
-theorem stock_zero_of_within {ds es : List C} {t : Nat} (within : ∀ c, c ∈ es → c ∈ ds)
-    (zero : W.stock ds t = 0) : W.stock es t = 0 :=
-  total_zero_of_within within zero
-
 end Web
 
 namespace Flow
@@ -283,7 +277,7 @@ theorem taking_needs_refinement_listing {split : Nat → Nat}
   not_of_listsOnce cs fun _ lists recurs =>
     taking_needs_refinement balances dissipative lists.1
       (fun t later => (closed t later).widen fun c mem => (lists.2 c).mpr mem)
-      (fun t later => mul_zero_of (Web.stock_zero_of_within fun c mem => (lists.2 c).mp mem)
+      (fun t later => mul_zero_of (total_zero_of_within fun c mem => (lists.2 c).mp mem)
         (split t) (unrefined t later))
       fun M => match recurs M with
         | ⟨t, later, takes⟩ =>

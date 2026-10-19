@@ -164,17 +164,10 @@ def principal (P : Preorder α) (p : α) : Ideal P where
   lower h k := P.trans h k
   directed hp hq := ⟨p, P.refl p, hp, hq⟩
 
-theorem principal_mem (P : Preorder α) (p : α) : (principal P p).mem p := P.refl p
-
 /-- **A finite history is below an ideal exactly where the ideal holds its last stretch.** -/
 theorem principal_le_iff {P : Preorder α} {p : α} {I : Ideal P} :
     Ideal.LE (principal P p) I ↔ I.mem p :=
   ⟨fun h => h p (P.refl p), fun h _ hq => I.lower hq h⟩
-
-/-- Finite histories are ordered as their stretches. -/
-theorem principal_le_principal_iff {P : Preorder α} {p q : α} :
-    Ideal.LE (principal P p) (principal P q) ↔ P.le p q :=
-  principal_le_iff
 
 /-- A directed set: nonempty, any two of its elements below a third of them. -/
 structure Directed (P : Preorder α) (S : α → Prop) : Prop where
@@ -216,8 +209,8 @@ theorem principalFamily_directed (I : Ideal P) : Directed (idealOrder P) (princi
   ⟨match I.nonempty with | ⟨p, hp⟩ => ⟨principal P p, p, hp, Ideal.Same.refl _⟩,
    fun ⟨_, hp, hJ⟩ ⟨_, hq, hK⟩ => match I.directed hp hq with
      | ⟨r, hr, hpr, hqr⟩ => ⟨principal P r, ⟨r, hr, Ideal.Same.refl _⟩,
-         Ideal.LE.trans hJ.le (principal_le_principal_iff.mpr hpr),
-         Ideal.LE.trans hK.le (principal_le_principal_iff.mpr hqr)⟩⟩
+         Ideal.LE.trans hJ.le (Ideals.principal_le_iff.mpr hpr),
+         Ideal.LE.trans hK.le (Ideals.principal_le_iff.mpr hqr)⟩⟩
 
 /-- **Every ideal is the union of the finite histories below it.** -/
 theorem union_principalFamily (I : Ideal P) :
@@ -364,7 +357,7 @@ theorem closed_iff_within_principal {C : Ideal P → Prop} (hc : ScottClosed C) 
 
 /-- The stretches whose finite histories a closed class holds are a lower set. -/
 theorem principal_lower {C : Ideal P → Prop} (hc : ScottClosed C) : Lower P (fun p => C (principal P p)) :=
-  fun hpq hq => hc.lower hq (principal_le_principal_iff.mpr hpq)
+  fun hpq hq => hc.lower hq (Ideals.principal_le_iff.mpr hpq)
 
 /-- **A class is closed exactly where it is the class of ideals within a lower set.** -/
 theorem closed_iff_lower (C : Ideal P → Prop) :
@@ -415,17 +408,12 @@ theorem Refutable.closed {C : Ideal P → Prop} (refutable : Refutable C)
   ⟨fun hI hJI => stable _ (refutable.lower_not_not hI hJI),
    fun D hd hD => stable _ (refutable.unions_not_not D hd hD)⟩
 
-/-- A refutable class holds the ideals of its hull, up to double negation. -/
-theorem Refutable.hull_not_not {C : Ideal P → Prop} (refutable : Refutable C) {I : Ideal P}
-    (hI : Hull C I) : ¬ ¬ C I :=
-  RefutableBy.not_not refutable hI
-
 /-- **A closed class is refutable exactly where every ideal outside it has an element whose
 finite history it does not hold.** -/
 theorem ScottClosed.refutable_iff {C : Ideal P → Prop} (hc : ScottClosed C) :
     Refutable C ↔ ∀ I, ¬ C I → ∃ p, I.mem p ∧ ¬ C (principal P p) :=
   ⟨fun refutable I outside => match refutable I outside with
-     | ⟨p, hp, blocked⟩ => ⟨p, hp, fun h => blocked _ h (principal_mem P p)⟩,
+     | ⟨p, hp, blocked⟩ => ⟨p, hp, fun h => blocked _ h (Preorder.refl P p)⟩,
    fun located I outside => match located I outside with
      | ⟨_, hp, notHeld⟩ => ⟨_, hp, fun _ hJ hpJ => notHeld (hc.principal_of_mem hJ hpJ)⟩⟩
 
@@ -459,9 +447,6 @@ theorem hull_iff_within_content {C : Ideal P → Prop} {I : Ideal P} :
     Hull C I ↔ Within P (Content C) I :=
   Iff.rfl
 
-theorem hull_contains {C : Ideal P → Prop} {I : Ideal P} (hI : C I) : Hull C I :=
-  AdheresBy.of hI
-
 theorem hull_closed (C : Ideal P → Prop) : ScottClosed (Hull C) :=
   closed_of_iff (within_closed (Content C)) fun _ => Iff.rfl
 
@@ -473,21 +458,18 @@ theorem hull_least {C E : Ideal P → Prop} (he : ScottClosed E) (sub : ∀ I, C
 
 /-- **The hull has the class's content.** -/
 theorem hull_content (C : Ideal P → Prop) (p : α) : Content (Hull C) p ↔ Content C p :=
-  ⟨fun ⟨_, hI, hp⟩ => hI p hp, fun ⟨I, hI, hp⟩ => ⟨I, hull_contains hI, hp⟩⟩
+  ⟨fun ⟨_, hI, hp⟩ => hI p hp, fun ⟨I, hI, hp⟩ => ⟨I, AdheresBy.of hI, hp⟩⟩
 
 /-- **A closed class holding the class and below every closed class holding it holds exactly the
 hull's ideals.** -/
 theorem hull_unique {C H : Ideal P → Prop} (hh : ScottClosed H) (contains : ∀ I, C I → H I)
     (least : ∀ E, ScottClosed E → (∀ I, C I → E I) → ∀ I, H I → E I) (I : Ideal P) :
     H I ↔ Hull C I :=
-  ⟨least _ (hull_closed C) (fun _ => hull_contains) I, hull_least hh contains⟩
-
-theorem hull_hull {C : Ideal P → Prop} {I : Ideal P} (hI : Hull (Hull C) I) : Hull C I :=
-  AdheresBy.adheres hI
+  ⟨least _ (hull_closed C) (fun _ => AdheresBy.of) I, hull_least hh contains⟩
 
 /-- A closed class is its own hull. -/
 theorem ScottClosed.hull_iff {C : Ideal P → Prop} (hc : ScottClosed C) (I : Ideal P) : Hull C I ↔ C I :=
-  ⟨hull_least hc fun _ h => h, hull_contains⟩
+  ⟨hull_least hc fun _ h => h, AdheresBy.of⟩
 
 /-- **Any two stretches of an ideal of the hull are extended by one stretch of an ideal of the
 class.** -/
@@ -557,7 +539,7 @@ theorem refutable_closed_iff :
     match (law Bool chain (fun J => J.mem true ∨ φ)
         fun _ outside => absurd (fun h => outside (.inr h)) notNot).lower
         (I := principal chain true) (J := principal chain false) (.inl (chain.refl true))
-        (principal_le_principal_iff.mpr fun e => nomatch e) with
+        (Ideals.principal_le_iff.mpr fun e => nomatch e) with
     | .inl atTrue => nomatch (atTrue rfl : false = true)
     | .inr holds => holds,
    fun dne _ _ _ refutable => refutable.closed fun _ => dne _⟩
@@ -572,7 +554,7 @@ theorem closed_refutable_iff :
     match law Bool chain (Within chain fun b => b = false) (within_closed _) (chain.cut φ)
         (fun within => notNot fun h => nomatch (within true fun _ => h : true = false)) with
     | ⟨true, hp, _⟩ => hp rfl
-    | ⟨false, _, blocked⟩ => absurd (principal_mem chain false)
+    | ⟨false, _, blocked⟩ => absurd (Preorder.refl chain false)
         (blocked (principal chain false) fun b hb => match b, hb with
           | false, _ => rfl
           | true, hb => nomatch (hb rfl : false = true)),
@@ -861,7 +843,7 @@ theorem CompactBasis.equivalence_backward_unique (R : CompactBasis P D e)
 
 /-- **The ideals are their own case**: finite histories are a compact basis of the ideals. -/
 theorem principal_basis (P : Preorder α) : CompactBasis P (idealComplete P) (principal P) :=
-  ⟨fun _ _ => principal_le_principal_iff, principal_compact P,
+  ⟨fun _ _ => Ideals.principal_le_iff, principal_compact P,
    fun I => ⟨match I.nonempty with | ⟨p, hp⟩ => ⟨p, principal_le_iff.mpr hp⟩,
      fun hp hq => match I.directed (principal_le_iff.mp hp) (principal_le_iff.mp hq) with
        | ⟨r, hr, hpr, hqr⟩ => ⟨r, principal_le_iff.mpr hr, hpr, hqr⟩⟩,

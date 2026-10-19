@@ -106,17 +106,11 @@ def MutuallyFed (L : Flow F C) (W : Web F C) : Prop :=
 
 variable {L : Flow F C} {W : Web F C}
 
-/-- **Influence and reach are converse.** `g` lies within `f`'s influence closure exactly where `f`
-lies within `g`'s reach closure. -/
-theorem withinInfluence_iff_withinReach {f g : F} :
-    L.WithinInfluence W f g ↔ L.WithinReach W g f :=
-  WithinClosure.converse.symm
-
 /-- **Mutual dependence read forward.** A flow is mutually dependent exactly where every reach
 closure is the whole. -/
 theorem mutuallyDependent_iff_reach : L.MutuallyDependent W ↔ ∀ f g, L.WithinReach W f g :=
-  ⟨fun dependent f g => withinInfluence_iff_withinReach.mp (dependent g f),
-   fun reach f g => withinInfluence_iff_withinReach.mpr (reach g f)⟩
+  ⟨fun dependent f g => WithinClosure.converse.mpr (dependent g f),
+   fun reach f g => WithinClosure.converse.mp (reach g f)⟩
 
 /-- Mutual feeding gives mutual dependence. -/
 theorem MutuallyFed.mutuallyDependent (fed : L.MutuallyFed W) : L.MutuallyDependent W :=
@@ -132,12 +126,6 @@ dependent. -/
 theorem mutuallyDependent_of_common {c : C} (common : ∀ g, W.DependsOn g c ∧ L.Exchanges g c) :
     L.MutuallyDependent W :=
   mutuallyDependent_iff_reach.mpr (reach_whole_of_common common)
-
-/-- One condition that every formation takes part in, requires and gives to at one step makes a
-flow mutually fed. -/
-theorem mutuallyFed_of_common {t : Nat} {c : C}
-    (common : ∀ g, g ∈ L.present t ∧ W.requires t g c ∧ 0 < L.give t g c) : L.MutuallyFed W :=
-  feeding_whole_of_common common
 
 /-- **Sharing conditions throughout, bounded significance is the continuation condition.**
 Significance bounded by each center's system is the continuation condition. -/
@@ -174,10 +162,6 @@ theorem shares_not_mutual : flow.SharesThroughout web ∧ ¬ flow.MutuallyDepend
 end Clearing
 
 namespace Overshoot
-
-/-- **`Overshoot` is mutually fed**: each formation feeds the other's condition. -/
-theorem mutuallyFed : flow.MutuallyFed web :=
-  closure_whole
 
 end Overshoot
 

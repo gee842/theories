@@ -54,11 +54,6 @@ namespace ContextualRuns
 
 variable {σ A : Type} {P : Process σ A}
 
-theorem total_const {α : Type} (c : Nat) : ∀ l : List α, total l (fun _ => c) = l.length * c
-  | [] => (Nat.zero_mul c).symm
-  | _ :: l => (Nat.add_comm c _).trans
-      ((congrArg (· + c) (total_const c l)).trans (Nat.succ_mul _ c).symm)
-
 /-! ## Context-free descriptions of a run -/
 
 /-- The context-free readings of the first `n` configurations of a run, the latest first. -/
@@ -122,46 +117,28 @@ theorem cycle_run_iff (n : Nat) (pol : Nat → Bool) (close : Bool) (r : Run P) 
 def chshInContext : Contextual σ (Bool × Bool) CHSH.Outcome Bool :=
   ⟨CHSH.paritySystem.within, fun _ k => CHSH.inPair k⟩
 
-/-- **Outcomes in context win all four pairs at every step of every run.** -/
-theorem chsh_in_context (r : Run P) (t : Nat) :
-    total CHSH.pairs (fun k =>
-      cond (CHSH.paritySystem.met k ((chshInContext (σ := σ)).shows (r.state t) k)) 1 0) = 4 :=
-  CHSH.indexed_met
-
 /-- **So the world of outcomes in context is context-free at no step.** -/
 theorem chsh_in_context_not_free (r : Run P) (t : Nat) :
     ¬ (chshInContext (σ := σ)).FreeAt P r t :=
   fun free => Nat.not_succ_le_self 4
-    (Eq.subst (motive := fun x => x + 1 ≤ CHSH.pairs.length) (chsh_in_context r t)
+    (Eq.subst (motive := fun x => x + 1 ≤ CHSH.pairs.length) CHSH.indexed_met
       (ParitySystem.world_met_le CHSH.pairs_contradict rfl free))
 
 /-- The square's values read in their line, at every configuration. -/
 def squareInContext : Contextual σ Square.Line Square.Cell Bool :=
   ⟨Square.paritySystem.within, fun _ l => Square.inLine l⟩
 
-/-- **Values in context meet all six lines at every step of every run.** -/
-theorem square_in_context (r : Run P) (t : Nat) :
-    total Square.lines (fun l =>
-      cond (Square.paritySystem.met l ((squareInContext (σ := σ)).shows (r.state t) l)) 1 0) = 6 :=
-  Square.indexed_met
-
 /-- **So the world of values in context is context-free at no step.** -/
 theorem square_in_context_not_free (r : Run P) (t : Nat) :
     ¬ (squareInContext (σ := σ)).FreeAt P r t :=
   fun free => Nat.not_succ_le_self 6
-    (Eq.subst (motive := fun x => x + 1 ≤ Square.lines.length) (square_in_context r t)
+    (Eq.subst (motive := fun x => x + 1 ≤ Square.lines.length) Square.indexed_met
       (ParitySystem.world_met_le Square.lines_contradict rfl free))
 
 /-- Specker's openings, each showing the gem in its first box, at every configuration:
 `Specker.world` on every configuration. -/
 def speckerAt : Contextual σ Specker.Opening Specker.Box Bool :=
   ⟨Specker.within, fun _ k y => Specker.marks (Specker.first k) y⟩
-
-/-- **Each opening read by its own placement meets all three, at every step of every run.** -/
-theorem specker_in_context (r : Run P) (t : Nat) :
-    total Specker.openings (fun k =>
-      cond (Specker.paritySystem.met k ((speckerAt (σ := σ)).shows (r.state t) k)) 1 0) = 3 :=
-  Specker.indexed_met
 
 /-- **The world of Specker's readings is context-free at no step of any run.** -/
 theorem specker_not_free (r : Run P) (t : Nat) : ¬ (speckerAt (σ := σ)).FreeAt P r t :=
@@ -175,7 +152,7 @@ theorem specker_respecting_not_free (X : Contextual σ Specker.Opening Specker.B
     (same : X.within = Specker.within) {r : Run P} {t : Nat}
     (respects : X.Respects Specker.support (r.state t)) : ¬ X.FreeAt P r t :=
   fun free => X.not_glues (Eq.subst (motive := fun w => Local w Specker.support) same.symm
-      Specker.local_) Specker.noGlobal_of_contradiction respects
+      Specker.local_) Specker.noGlobal respects
     ((X.glues_iff_freeAt P r t).mpr free)
 
 /-- **Every contextual system of the square respecting the lines' possibilities at a step of a run is
@@ -184,7 +161,7 @@ theorem square_respecting_not_free (X : Contextual σ Square.Line Square.Cell Bo
     (same : X.within = Square.within) {r : Run P} {t : Nat}
     (respects : X.Respects Square.support (r.state t)) : ¬ X.FreeAt P r t :=
   fun free => X.not_glues (Eq.subst (motive := fun w => Local w Square.support) same.symm
-      Square.local_) Square.noGlobal_of_contradiction respects
+      Square.local_) Square.noGlobal respects
     ((X.glues_iff_freeAt P r t).mpr free)
 
 /-- **The parity law at a step of a run.** With the claims listed without repetition and the

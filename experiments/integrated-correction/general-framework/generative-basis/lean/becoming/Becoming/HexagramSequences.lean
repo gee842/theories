@@ -143,8 +143,8 @@ def allOf (p : Hexagram → Bool) : List Hexagram → Bool
 theorem of_allOf {p : Hexagram → Bool} :
     ∀ {l : List Hexagram}, allOf p l = true → ∀ s, s ∈ l → p s = true
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => (both h).1
-  | _ :: _, h, s, .tail _ mem => of_allOf (both h).2 s mem
+  | _ :: _, h, _, .head _ => (bool_of_and_true h).1
+  | _ :: _, h, s, .tail _ mem => of_allOf (bool_of_and_true h).2 s mem
 
 /-- **A property checked on the received order holds of every configuration** (`mem_order`). -/
 theorem every_of_order {p : Hexagram → Bool} (checked : allOf p order = true) (s : Hexagram) :
@@ -234,8 +234,8 @@ def followsb (good : α → α → Bool) : List (α × α) → Bool
 theorem of_followsb {good : α → α → Bool} :
     ∀ {l : List (α × α)}, followsb good l = true → ∀ q, q ∈ l → good q.1 q.2 = true
   | [], _, _, mem => nomatch mem
-  | _ :: _, h, _, .head _ => (both h).1
-  | _ :: _, h, q, .tail _ mem => of_followsb (both h).2 q mem
+  | _ :: _, h, _, .head _ => (bool_of_and_true h).1
+  | _ :: _, h, q, .tail _ mem => of_followsb (bool_of_and_true h).2 q mem
 
 /-- A member of a list is at some place in it. -/
 theorem memberAt_of_mem {d s : α} : ∀ {l : List α}, s ∈ l → ∃ n, n < l.length ∧ memberAt d l n = s
@@ -274,8 +274,8 @@ theorem step_of_stepb {s t : Hexagram} {l : List Hexagram} (h : stepb s t l = tr
     (s, t) ∈ steps l :=
   match anyStep_sound h with
   | ⟨(s', t'), mem, both'⟩ => by
-    cases eq_of_eqb (both both').1
-    cases eq_of_eqb (both both').2
+    cases eq_of_eqb (bool_of_and_true both').1
+    cases eq_of_eqb (bool_of_and_true both').2
     exact mem
 
 /-- A law that follows a list takes a listed step. -/
@@ -379,8 +379,8 @@ theorem reads_of_readsb {next : Hexagram → Hexagram} {l : List Hexagram} (foll
   match anyStep_sound h with
   | ⟨st, mem, inner⟩ => match anyStep_sound inner with
     | ⟨st', mem', found⟩ =>
-      have changed : st'.1 = flip q st.1 := eq_of_eqb (both found).1
-      ⟨st.1, fun same' => differs_ne (both found).2
+      have changed : st'.1 = flip q st.1 := eq_of_eqb (bool_of_and_true found).1
+      ⟨st.1, fun same' => differs_ne (bool_of_and_true found).2
         ((congrArg (fun x => x.line k) ((congrArg next changed).symm.trans (follows st' mem'))).symm.trans
           (same'.trans (congrArg (fun x => x.line k) (follows st mem))))⟩
 
@@ -461,15 +461,12 @@ theorem Follows.back {α : Type u} {next σ : α → α} {l : List α} (follows 
     ((congrArg next (follows _ pair).symm).trans
       (Law.Commutes.paired_halfway commutes exchange (k := 1) (follows _ pair)).2)
 
-theorem act_act : ∀ (g : Symmetry) (s : Hexagram), g.act (g.act s) = s :=
-  fun g s => (Symmetry.act_comp g g s).symm.trans (congrArg (fun h => Symmetry.act h s) (Symmetry.comp_self g))
-
 /-- A list goes on from a pair by a symmetry to another configuration, told line by line. -/
 theorem follows_not_commutes {next : Hexagram → Hexagram} {l : List Hexagram} (follows : Follows next l)
     (g : Symmetry) {s t : Hexagram} (pair : stepb s (g.act s) l = true)
     (onward : stepb (g.act s) t l = true) (other : eqb t s = false) : ¬ Law.Commutes next g.act :=
   fun commutes => ne_of_eqb other
-    (follows.back commutes (act_act g) (step_of_stepb pair) (step_of_stepb onward))
+    (follows.back commutes (Symmetry.act_self g) (step_of_stepb pair) (step_of_stepb onward))
 
 /-- **No law running the received order commutes with 錯, 綜 or both**: each pair of the order is
 a step of one of them, and a law commuting with it would go back. -/

@@ -421,7 +421,7 @@ theorem first_round_registers {t : State} (first : Trace P initial firstRound t)
       ¬ Learning.Training.Through (alikeOnInstalled initial) (fun x => x 0 = true) := by
   have e := firstRound_trace.mp first
   subst e
-  exact first_installed_choice
+  exact ReferencePlan.first_new_selection
 
 /-- **The second round gains the choice at contact 1 through the installed contacts**, which the
 first repair did not have. -/

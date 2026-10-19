@@ -172,8 +172,6 @@ theorem draw_conserves {s t : State} {c d : Nat} (h : draw c d s = some t) :
 
 theorem beq_self {α : Type} [DecidableEq α] (n : α) : (n == n) = true := decide_eq_true rfl
 
-theorem beq_ne {a b : Nat} (h : a ≠ b) : (a == b) = false := beq_false_iff.mpr h
-
 /-- **An unsigned command is not issued.** -/
 theorem issue_unsigned (s : State) (h : s.signed = false) : issue s = none := by
   unfold issue
@@ -183,7 +181,7 @@ theorem issue_unsigned (s : State) (h : s.signed = false) : issue s = none := by
 /-- **A command whose credential is not the epoch is not issued.** -/
 theorem issue_stale (s : State) (h : s.credential ≠ s.epoch) : issue s = none := by
   unfold issue
-  rw [beq_ne h, Bool.and_false]
+  rw [ListTests.beq_false_iff.mpr h, Bool.and_false]
   rfl
 
 /-- **An undelivered command is not enacted.** -/
@@ -195,7 +193,7 @@ theorem enact_undelivered (s : State) (h : s.delivered = false) : enact s = none
 /-- **A command whose credential is no longer the epoch is not enacted.** -/
 theorem enact_revoked (s : State) (h : s.credential ≠ s.epoch) : enact s = none := by
   unfold enact
-  rw [beq_ne h, Bool.and_false]
+  rw [ListTests.beq_false_iff.mpr h, Bool.and_false]
   rfl
 
 /-! ## The protocol where its conditions hold -/
@@ -310,7 +308,7 @@ theorem run_iff (p : Plan Query Bool) (s u : State) :
 /-- **A plan passes exactly where the installation has a trace along it ending completed.** -/
 theorem passes_iff (p : Plan Query Bool) (s : State) :
     passes interface p s = true ↔ ∃ o u, Trace installation s (planMoves p o) u ∧ u.completed = true :=
-  (passes_iff_run interface p s).trans
+  ListTests.option_any_true_iff.trans
     ⟨fun ⟨u, ran, done⟩ => match (run_iff p s u).mp ran with
       | ⟨o, tr⟩ => ⟨o, u, tr, done⟩,
      fun ⟨o, u, tr, done⟩ => ⟨u, (run_iff p s u).mpr ⟨o, tr⟩, done⟩⟩

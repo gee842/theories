@@ -84,35 +84,6 @@ theorem filter_false {p : M → Bool} {m : M} (ms : List M) (h : p m = false) :
 
 theorem false_ne_true : (false = true) → False := fun h => nomatch h
 
-theorem mem_filter {p : M → Bool} {m : M} :
-    ∀ {l : List M}, m ∈ List.filter p l ↔ m ∈ l ∧ p m = true
-  | [] => ⟨fun h => (nomatch h), fun h => nomatch h.1⟩
-  | x :: xs => by
-    cases hx : p x with
-    | true =>
-      rw [filter_true xs hx]
-      constructor
-      · intro mem
-        cases mem with
-        | head => exact ⟨.head xs, hx⟩
-        | tail _ mem' =>
-          have inner := (mem_filter (l := xs)).mp mem'
-          exact ⟨.tail x inner.1, inner.2⟩
-      · intro both
-        cases both.1 with
-        | head => exact .head _
-        | tail _ mem' => exact .tail x ((mem_filter (l := xs)).mpr ⟨mem', both.2⟩)
-    | false =>
-      rw [filter_false xs hx]
-      constructor
-      · intro mem
-        have inner := (mem_filter (l := xs)).mp mem
-        exact ⟨.tail x inner.1, inner.2⟩
-      · intro both
-        cases both.1 with
-        | head => exact (false_ne_true (hx.symm.trans both.2)).elim
-        | tail _ mem' => exact (mem_filter (l := xs)).mpr ⟨mem', both.2⟩
-
 theorem filter_nil_of {p : M → Bool} :
     ∀ {l : List M}, (∀ m, m ∈ l → p m = true → False) → List.filter p l = []
   | [], _ => rfl
@@ -154,8 +125,8 @@ theorem filter_eq_singleton_iff {p : M → Bool} {l : List M} (distinct : Distin
     List.filter p l = [e] ↔ e ∈ l ∧ p e = true ∧ ∀ m, m ∈ l → p m = true → m = e :=
   ⟨fun kept =>
     have inside : e ∈ List.filter p l := kept ▸ List.Mem.head []
-    ⟨(mem_filter.mp inside).1, (mem_filter.mp inside).2,
-     fun _ mem pm => mem_singleton (kept ▸ mem_filter.mpr ⟨mem, pm⟩)⟩,
+    ⟨(ListTests.mem_filter_iff.mp inside).1, (ListTests.mem_filter_iff.mp inside).2,
+     fun _ mem pm => mem_singleton (kept ▸ ListTests.mem_filter_iff.mpr ⟨mem, pm⟩)⟩,
    fun ⟨mem, pe, only⟩ => filter_singleton_of l distinct mem pe only⟩
 
 theorem filter_congr {p q : M → Bool} (same : ∀ m, p m = q m) :
@@ -278,7 +249,7 @@ theorem stands_false_iff {m : M} :
 theorem mem_candidates {rep : List M} {rs : List R} {m : M} :
     m ∈ candidates bears offers rep rs ↔
       m ∈ rep ∧ ∀ r, r ∈ rs → bears r = true → offers r m = true :=
-  mem_filter.trans ⟨fun ⟨mem, st⟩ => ⟨mem, stands_iff.mp st⟩, fun ⟨mem, all⟩ => ⟨mem, stands_iff.mpr all⟩⟩
+  ListTests.mem_filter_iff.trans ⟨fun ⟨mem, st⟩ => ⟨mem, stands_iff.mp st⟩, fun ⟨mem, all⟩ => ⟨mem, stands_iff.mpr all⟩⟩
 
 /-- **Resolution is separation.** For a repertoire without repeats, the candidates of a form are
 exactly `[e]` when `e` is in the repertoire, every record bearing on the form offers it, and
@@ -347,14 +318,14 @@ theorem candidates_snoc_other (rep : List M) (rs : List R) {r : R} (other : bear
 /-- **A meaning ruled out stays ruled out.** -/
 theorem narrows {rep : List M} {rs more : List R} {m : M}
     (later : m ∈ candidates bears offers rep (rs ++ more)) : m ∈ candidates bears offers rep rs :=
-  (mem_filter.mp ((candidates_append rep rs more) ▸ later)).1
+  (ListTests.mem_filter_iff.mp ((candidates_append rep rs more) ▸ later)).1
 
 /-- **A candidate stays one exactly while every later bearing record offers it.** -/
 theorem stays_iff {rep : List M} {rs more : List R} {m : M} :
     m ∈ candidates bears offers rep (rs ++ more) ↔
       m ∈ candidates bears offers rep rs ∧ ∀ r, r ∈ more → bears r = true → offers r m = true := by
   rw [candidates_append]
-  exact mem_filter.trans ⟨fun ⟨mem, st⟩ => ⟨mem, stands_iff.mp st⟩,
+  exact ListTests.mem_filter_iff.trans ⟨fun ⟨mem, st⟩ => ⟨mem, stands_iff.mp st⟩,
     fun ⟨mem, all⟩ => ⟨mem, stands_iff.mpr all⟩⟩
 
 /-! ## Coverage -/

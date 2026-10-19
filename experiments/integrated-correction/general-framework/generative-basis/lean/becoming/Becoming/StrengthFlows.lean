@@ -160,15 +160,6 @@ theorem measure_alike_read {T N : Nat} {L L' : Flow Unit Bool} {W W' : Web Unit 
   ⟨(follows () rfl t c).1.trans (alike.1.trans (follows' () rfl t c).1.symm),
    (follows () rfl t c).2.trans (alike.2.trans (follows' () rfl t c).2.symm)⟩
 
-/-- **No finite strength, between the flows the square law gives.** For every `k`, not every two
-flows the law giving its condition the square of its level gives under histories differing at most
-in the level at the start have their exchange gap at most `k` times that level's gap. -/
-theorem square_no_finite_strength (present : Nat → List Unit) (k : Nat) :
-    ¬ ∀ l l' : Nat → Unit → Nat, (∀ s' e, ¬ (s' = 0 ∧ e = ()) → l s' e = l' s' e) →
-      (flowUnder Propagation.Square.law present l).exchangeGap
-          (flowUnder Propagation.Square.law present l') 0 () () ≤ k * gap (l 0 ()) (l' 0 ()) :=
-  Propagation.Square.not_respondsWithin k
-
 /-! ## Strength between two acts' worlds -/
 
 section Worlds

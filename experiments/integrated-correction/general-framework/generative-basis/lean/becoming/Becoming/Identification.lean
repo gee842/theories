@@ -1111,13 +1111,8 @@ end LeastBound
 
 section CubicRest
 
-/-- Two negations are none. -/
-theorem not_not_bool : ∀ b : Bool, (!(!b)) = b
-  | true => rfl
-  | false => rfl
-
 theorem course_two (a : Nat) : Negation.course (a + 2) = Negation.course a :=
-  not_not_bool (Negation.course a)
+  ListTests.not_not (Negation.course a)
 
 theorem course_even (a : Nat) : ∀ e, Negation.course (a + 2 * e) = Negation.course a
   | 0 => rfl
@@ -1653,8 +1648,8 @@ theorem sameFuture_iff_classes {l : List S} (closed : ∀ s, s ∈ l → next s 
     Law.SameFuture next o s s' ↔
       ∀ n, n < l.length - 1 → o (Law.orbit next s n) = o (Law.orbit next s' n) :=
   ⟨fun same n _ => same n, fun agree =>
-    match Decided.exists_within (l := l) (fun x inx =>
-        Decided.exists_within (l := l) fun y iny => (values x y inx iny).not) with
+    match Decided.exists_listed (l := l) (fun x inx =>
+        Decided.exists_listed (l := l) fun y iny => (values x y inx iny).not) with
     | .inr absent => fun n =>
       (values _ _ (orbit_held closed mem n) (orbit_held closed mem' n)).of_not_not fun differ =>
         absent ⟨_, orbit_held closed mem n, _, orbit_held closed mem' n, differ⟩

@@ -138,18 +138,6 @@ def adopt (L : Flow F C) (W : Web F C) : Web (Option F) C :=
 
 variable {W : Web F C}
 
-/-- With the rest counted, every flow balances. -/
-theorem adopt_balances : (L.withImbalance W).Balances (L.adopt W) :=
-  withImbalance_balances
-
-/-- With the rest counted, only active relata give. -/
-theorem adopt_acting : (L.withImbalance W).Acting (L.adopt W) :=
-  readOff_acting
-
-/-- With the rest counted, only active relata take, and only what they draw on. -/
-theorem adopt_taking : (L.withImbalance W).Taking (L.adopt W) :=
-  readOff_taking
-
 /-- A formation of the flow takes part with the rest counted exactly where it takes part. -/
 theorem some_mem_present {t : Nat} {g : F} :
     some g ∈ (L.withImbalance W).present t ↔ g ∈ L.present t :=
@@ -261,7 +249,7 @@ theorem reading_glue (start : C → Nat) (need : Nat → F → C → Nat) :
       ((law.course present start).withImbalance (law.readWeb present start need)).Taking
         ((law.course present start).adopt (law.readWeb present start need)) ∧
       ((law.course present start).adopt (law.readWeb present start need)).Dependent :=
-  ⟨Flow.adopt_balances, Flow.adopt_acting, Flow.adopt_taking,
+  ⟨Flow.withImbalance_balances, Flow.readOff_acting, Flow.readOff_taking,
    Flow.adopt_dependent_iff.mpr fun t g exchanging => readWeb_dependent start need t g exchanging⟩
 
 /-- Under a law of what has stood, the rest is never active exactly where the course is
@@ -390,14 +378,6 @@ theorem withRest_balanced : w.withRest.Balanced :=
   | none => rfl
   | some d => Flow.withImbalance_balances (L := w.flow) (W := w.web) t d
 
-/-- With the rest counted, only active relata give. -/
-theorem withRest_acting : w.withRest.Acting :=
-  Flow.readOff_acting
-
-/-- With the rest counted, only active relata take, and only what they draw on. -/
-theorem withRest_taking : w.withRest.Taking :=
-  Flow.readOff_taking
-
 /-- A relatum of the world exchanges with the rest counted exactly where it exchanges. -/
 theorem withRest_exchanging_iff {t : Nat} {x : w.Relatum} :
     w.restFlow.Exchanging t (some x) ↔ w.flow.Exchanging t x :=
@@ -459,7 +439,7 @@ theorem readWorld_glue :
       (law.readWorld present start need).withRest.Acting ∧
       (law.readWorld present start need).withRest.Taking ∧
       (law.readWorld present start need).withRest.Dependent :=
-  ⟨World.withRest_balanced, World.withRest_acting, World.withRest_taking,
+  ⟨World.withRest_balanced, Flow.readOff_acting, Flow.readOff_taking,
    World.withRest_dependent_iff.mpr fun t x exchanging =>
      readWeb_dependent (law := law) (present := present) start need t x exchanging⟩
 

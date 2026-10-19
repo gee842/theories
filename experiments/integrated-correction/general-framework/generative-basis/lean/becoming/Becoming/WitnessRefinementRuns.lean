@@ -312,15 +312,6 @@ theorem test_step_completes {test : H → Bool} (describe : H → Arrangement) {
 
 /-! ## The computed processes are instances -/
 
-/-- **The audit's candidates move by inspection**: an inspection step of `audit` is a step of
-`inspection` on the candidates, for the audit's roster, fault sets and diagnostic answer. -/
-theorem audit_step_inspection {extended : Bool} {reports : Reports}
-    {s t : PooledEnvelopes.Situation}
-    (step : (WitnessRefinement.audit extended).step s (some reports) t) :
-    (inspection (auditRoster extended) (auditFaults extended) diagnostic).step s.candidates reports
-      t.candidates :=
-  step_candidates step
-
 /-- **The inquiry's candidates move by testing**: an inspection step of `inquiry` is a step of
 `testing` on the candidates, for the inspection's law. -/
 theorem inquiry_step_testing {q : Inspection} {s t : PooledEnvelopes.Situation}

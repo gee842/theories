@@ -61,17 +61,12 @@ namespace Becoming
 
 variable {α : Type}
 
-/-- Adding the same on the right cancels. -/
-theorem cancel_add_right {a b : Nat} : ∀ c : Nat, a + c = b + c → a = b
-  | 0, same => same
-  | c + 1, same => cancel_add_right c (Nat.succ.inj same)
-
 /-- Two numbers balancing across a step, the ceased among those before it, are a tally there. -/
 theorem tally_step {n n' c a : Nat} (le : c ≤ n) (across : n' + c = n + a) :
     ∃ k, n = k + c ∧ n' = k + a :=
   match exists_add_of_le le with
   | ⟨k, before⟩ =>
-    ⟨k, before, cancel_add_right c (across.trans
+    ⟨k, before, add_right_cancel c (across.trans
       ((congrArg (· + a) before).trans (Nat.add_right_comm k c a)))⟩
 
 /-- What a listed family counts across each step, as relations: `n` counts what holds at each
@@ -96,7 +91,7 @@ theorem FamilyCounts.tally {p : α → Nat → Prop} {l : Nat → List α} {n c 
 theorem familyCounts_decided {p : α → Nat → Prop} [∀ x t, Decidable (p x t)] (l : Nat → List α) :
     FamilyCounts p l (fun t => (l t).length) (fun t => ceasings (l t) p t)
       (fun t => comings (l (t + 1)) p t) :=
-  fun t => ⟨rfl, ceasings_counts t, comings_counts t⟩
+  fun _ => ⟨rfl, counts_total _, counts_total _⟩
 
 /-- Counts given by values agreeing with them at each step are counts. -/
 theorem FamilyCounts.of_eq {p : α → Nat → Prop} {l : Nat → List α} {n c a n' c' a' : Nat → Nat}
@@ -135,13 +130,6 @@ theorem CountsOf.tally {alive : Nat → List w.Relatum} {n c a : Nat → Nat}
     (census : w.web.Census alive) (counted : w.CountsOf alive n c a) : Tally n c a :=
   Becoming.FamilyCounts.tally census counted
 
-/-- **A ceasing count across a step exists exactly where activity after the step is decided at
-each relatum active before it.** -/
-theorem ceasings_exist_iff (alive : Nat → List w.Relatum) (t : Nat) :
-    (∃ d, Counts (alive t) (fun x => CeasesToBe (fun s => w.web.active s x) t) d) ↔
-      ∀ x, x ∈ alive t → Decided (CeasesToBe (fun s => w.web.active s x) t) :=
-  counts_iff_decided
-
 /-- **A coming count across a step exists exactly where activity before the step is decided at
 each relatum active after it.** -/
 theorem comings_exist_iff (alive : Nat → List w.Relatum) (t : Nat) :
@@ -156,7 +144,7 @@ theorem ceasings_exist_iff_listed {alive : Nat → List w.Relatum} (census : w.w
     (t : Nat) :
     (∃ d, Counts (alive t) (fun x => CeasesToBe (fun s => w.web.active s x) t) d) ↔
       ∀ x, x ∈ alive t → WeaklyDecided (x ∈ alive (t + 1)) :=
-  (ceasings_exist_iff alive t).trans
+  counts_iff_decided.trans
     ⟨fun decided x mem => match decided x mem with
       | .inl ceases => .inl fun listed => ceases.2 (((census (t + 1)).2 x).mpr listed)
       | .inr stays => .inr fun missing => stays

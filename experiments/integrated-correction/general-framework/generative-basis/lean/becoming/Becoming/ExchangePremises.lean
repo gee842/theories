@@ -637,7 +637,7 @@ theorem reading_glue {R : Type} {rel : ExchangeRelation R R} {present : Nat → 
     {L : Flow R R} {l : Nat → R → Nat} (runs : rel.Runs present l L) (need : Nat → R → R → Nat) :
     (world rel present L l need).withRest.Balanced ∧ (world rel present L l need).withRest.Acting ∧
       (world rel present L l need).withRest.Taking ∧ (world rel present L l need).withRest.Dependent :=
-  ⟨World.withRest_balanced, World.withRest_acting, World.withRest_taking,
+  ⟨World.withRest_balanced, Flow.readOff_acting, Flow.readOff_taking,
    World.withRest_dependent_iff.mpr fun t x exchanging => readWeb_dependent runs need t x exchanging⟩
 
 /-- Every exchange open under every history. -/

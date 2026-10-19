@@ -79,14 +79,6 @@ theorem Keeps.trans {alike : S → X → X → Prop} {s t u : S}
     (st : Keeps alike s t) (tu : Keeps alike t u) : Keeps alike s u :=
   fun x y h => st x y (tu x y h)
 
-/-- The criterion is exact, not an automatic consequence of being a revision. -/
-theorem keeps_iff {alike : S → X → X → Prop} {s t : S}
-    (refl : ∀ x, alike s x x) (symm : ∀ x y, alike s x y → alike s y x)
-    (trans : ∀ x y z, alike s x y → alike s y z → alike s x z) :
-    Keeps alike s t ↔
-      ∀ select, Learning.Training.Through (alike s) select → Learning.Training.Through (alike t) select :=
-  (Learning.Training.keeps_through_iff refl symm trans).symm
-
 /-- This includes the lumping through a web's couplings without equating propositions by propext. -/
 theorem web_keeps_iff {F C : Type} {W : Web F C} {obs obs' : F → C → Prop}
     {f : F} {t u : Nat} :
@@ -332,8 +324,8 @@ theorem step_iff {s t : State} {a : Act} :
 
 theorem trace_iff {s t : State} {w : List Act} :
     Trace P s w t ↔ Trace (productProcess (Stock.process draw restore) linkProcess) s w t :=
-  ⟨Stock.trace_mono (fun _ _ _ h => step_iff.mp h),
-   Stock.trace_mono (fun _ _ _ h => step_iff.mpr h)⟩
+  ⟨trace_map (fun _ _ _ h => step_iff.mp h),
+   trace_map (fun _ _ _ h => step_iff.mpr h)⟩
 
 /-- The stock of Revising is balanced and drawn only from what is held. -/
 theorem stock_balanced_held : Stock.Balanced P (fun s => s.1) draw restore ∧

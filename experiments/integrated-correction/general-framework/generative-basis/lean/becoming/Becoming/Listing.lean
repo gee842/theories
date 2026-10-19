@@ -514,14 +514,14 @@ theorem Listed.of_listing {p : α → Nat → Prop} {l : Nat → List α} (lists
   fun t => ⟨(listOnce_listsOnce (l t) (dec t)).1,
     fun a => (lists t a).trans ((listOnce_listsOnce (l t) (dec t)).2 a).symm⟩
 
-/-- **The census law for any listing of what is active** (`Web.arising_of_ceasing`): with a
+/-- **The census law for any listing of what is active** (`Listed.coming_of_ceasing`): with a
 list of what is active at each step, possibly with repetition, and identity among the listed
 decided, ceasing at arbitrarily late steps needs arising at arbitrarily late steps. -/
 theorem Web.arising_of_ceasing_listing {F C : Type} (W : Web F C)
     [∀ t f, Decidable (W.active t f)] {l : Nat → List F} (lists : ∀ t f, W.active t f ↔ f ∈ l t)
     (dec : ∀ t a b, a ∈ l t → b ∈ l t → Decidable (a = b))
     (ceasing : ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f) : W.Unceasing :=
-  W.arising_of_ceasing (Listed.of_listing (p := fun f t => W.active t f) lists dec) ceasing
+  Listed.coming_of_ceasing (Listed.of_listing (p := fun f t => W.active t f) lists dec) ceasing
 
 /-! ## A sum over a family listing a member twice -/
 
@@ -1007,42 +1007,6 @@ variable {F C : Type}
 namespace Flow
 
 variable {L : Flow F C}
-
-/-- **What takes part in a step can be listed once exactly where identity among it is decided.** -/
-theorem present_listsOnce_iff (t : Nat) :
-    (∃ s, ListsOnce s (L.present t)) ↔ IdentityDecided (L.present t) :=
-  listsOnce_iff_decided
-
-/-- **What takes part in a step has a number exactly where identity among it is decided.** -/
-theorem present_numbers_iff (t : Nat) :
-    (∃ n, Numbers (L.present t) n) ↔ IdentityDecided (L.present t) :=
-  numbers_iff_decided
-
-/-- The number of what takes part in a step is one number. -/
-theorem present_number_unique {t n n' : Nat} (first : Numbers (L.present t) n)
-    (second : Numbers (L.present t) n') : n = n' :=
-  first.unique second
-
-/-- The number of what takes part in a step is at most the places in the step's list. -/
-theorem present_number_le {t n : Nat} (numbers : Numbers (L.present t) n) :
-    n ≤ (L.present t).length :=
-  numbers.le_length
-
-/-- Any two lists listing once what takes part in a step have one length. -/
-theorem present_listsOnce_length {t : Nat} {s s' : List F} (lists : ListsOnce s (L.present t))
-    (lists' : ListsOnce s' (L.present t)) : s.length = s'.length :=
-  lists.length_eq lists'
-
-/-- A law holding wherever what takes part in a step is listed once holds where identity among it
-is decided. -/
-theorem present_of_listsOnce {B : Prop} {t : Nat} (decided : IdentityDecided (L.present t))
-    (law : ∀ s, ListsOnce s (L.present t) → B) : B :=
-  of_listsOnce decided law
-
-/-- What takes part in a step, counted by name, is counted up to identity of names. -/
-theorem present_numbers_iff_by_eq {t n : Nat} :
-    Numbers (L.present t) n ↔ NumbersBy Eq (L.present t) n :=
-  numbers_iff_numbersBy_eq
 
 /-- **A step listing one relatum twice numbers one relatum in two places.** -/
 theorem present_repeated {t : Nat} {a : F} (twice : L.present t = [a, a]) :

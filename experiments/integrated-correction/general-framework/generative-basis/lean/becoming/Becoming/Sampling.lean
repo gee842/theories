@@ -112,14 +112,6 @@ theorem between_of_mem_steps : ∀ {T N j : Nat}, j ∈ steps T N → T ≤ j �
       | ⟨le, lt⟩ => ⟨Nat.le_of_succ_le le,
           Nat.lt_of_lt_of_le lt (Nat.le_of_eq (Nat.add_right_comm T 1 N))⟩
 
-/-- A fine step between the ends of a stretch of steps lies in it. -/
-theorem mem_steps_of_between : ∀ {T N j : Nat}, T ≤ j → j < T + N → j ∈ steps T N
-  | _, 0, _, le, lt => absurd lt (Nat.not_lt_of_le le)
-  | T, N + 1, j, le, lt => match le with
-    | .refl => .head _
-    | .step le' => .tail _ (mem_steps_of_between (Nat.succ_le_succ le')
-        (Nat.lt_of_lt_of_le lt (Nat.le_of_eq (Nat.add_right_comm T 1 N).symm)))
-
 theorem mem_span {σ : Nat → Nat} (strict : Strict σ) {s j : Nat} (mem : j ∈ span σ s) :
     σ s ≤ j ∧ j < σ (s + 1) :=
   match between_of_mem_steps mem with
@@ -128,7 +120,7 @@ theorem mem_span {σ : Nat → Nat} (strict : Strict σ) {s j : Nat} (mem : j �
 
 theorem span_mem {σ : Nat → Nat} (strict : Strict σ) {s j : Nat} (le : σ s ≤ j)
     (lt : j < σ (s + 1)) : j ∈ span σ s :=
-  mem_steps_of_between le (Nat.lt_of_lt_of_le lt
+  steps_of_within le (Nat.lt_of_lt_of_le lt
     (Nat.le_of_eq (add_sub_of_le (Nat.le_of_lt (strict s))).symm))
 
 /-- The last fine step of a coarse step lies in it, and the step after it is the next
@@ -479,7 +471,7 @@ theorem BalancesOn.sample {cs : List C} {s : Nat} (strict : Strict σ)
   fun c mem =>
     have stretch := balance_over_stretch_on (q := fun t => W.level t c)
       (x := fun j => L.taken j c) (y := fun j => L.given j c) (σ s) (σ (s + 1) - σ s)
-      fun t from_ below => balances t (mem_steps_of_between from_ below) c mem
+      fun t from_ below => balances t (steps_of_within from_ below) c mem
     have ends : W.level (σ (s + 1)) c + total (span σ s) (fun j => L.taken j c) =
         W.level (σ s) c + total (span σ s) (fun j => L.given j c) :=
       Eq.subst (motive := fun n => W.level n c + total (span σ s) (fun j => L.taken j c) =
@@ -783,24 +775,6 @@ theorem sample_counted (counted : w.Counted) : (w.sample σ).Counted :=
 
 theorem sample_finite (finite : w.Finite) : (w.sample σ).Finite :=
   finite
-
-theorem sample_acting (strict : Strict σ) (held : w.web.Held σ) (acting : w.Acting) :
-    (w.sample σ).Acting :=
-  Flow.sample_acting (F := w.Relatum) strict held acting
-
-theorem sample_taking (strict : Strict σ) (held : w.web.Held σ) (drawing : w.web.DrawingHeld σ)
-    (taking : w.Taking) : (w.sample σ).Taking :=
-  Flow.sample_taking (F := w.Relatum) strict held drawing taking
-
-/-- Arising at arbitrarily late coarse steps is arising at arbitrarily late fine steps. -/
-theorem sample_arisingRecurs [∀ t x, Decidable (w.web.active t x)] (strict : Strict σ)
-    (arising : (w.sample σ).ArisingRecurs) : w.ArisingRecurs :=
-  Web.sample_unceasing strict arising
-
-/-- Ceasing at arbitrarily late coarse steps is ceasing at arbitrarily late fine steps. -/
-theorem sample_ceasingRecurs [∀ t x, Decidable (w.web.active t x)] (strict : Strict σ)
-    (ceasing : (w.sample σ).CeasingRecurs) : w.CeasingRecurs :=
-  Web.sample_ceasing strict ceasing
 
 /-- What survives reading a world at coarser steps: activity needing support, balance
 (each relatum being listed once at every step), dissipation, embodiment and a census. -/

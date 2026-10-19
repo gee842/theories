@@ -249,10 +249,6 @@ those of the flow and the web themselves. -/
 def ofKind {R : Type} (L : Flow R R) (W : Web R R) : World :=
   World.of R L W
 
-theorem arisingRecurs_ofRoles {F C : Type} (L : Flow F C) (W : Web F C) :
-    (ofRoles L W).ArisingRecurs ↔ W.Unceasing :=
-  W.roles_unceasing
-
 theorem ceasingRecurs_ofRoles {F C : Type} (L : Flow F C) (W : Web F C) :
     (ofRoles L W).CeasingRecurs ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
   ⟨fun ceasing N => match ceasing N with
@@ -1110,14 +1106,14 @@ theorem separate :
     (accretion.ArisingRecurs ∧ ¬ accretion.CeasingRecurs ∧ ¬ accretion.Finite) ∧
     (attrition.CeasingRecurs ∧ ¬ attrition.ArisingRecurs ∧ ¬ attrition.Finite) :=
   have accretionArising : accretion.ArisingRecurs :=
-    (arisingRecurs_ofRoles _ _).mpr Accretion.unceasing
+    (Web.roles_unceasing _).mpr Accretion.unceasing
   have accretionQuiet : ¬ accretion.CeasingRecurs := fun ceasing =>
     match (ceasingRecurs_ofRoles _ _).mp ceasing 0 with
     | ⟨t, f, _, ceases⟩ => Accretion.never_ceases t f ceases
   have attritionCeasing : attrition.CeasingRecurs :=
     (ceasingRecurs_ofRoles _ _).mpr Attrition.ceasing
   have attritionQuiet : ¬ attrition.ArisingRecurs := fun arising =>
-    match (arisingRecurs_ofRoles _ _).mp arising 0 with
+    match (Web.roles_unceasing _).mp arising 0 with
     | ⟨t, f, _, arises⟩ => Attrition.nothing_arises t f arises
   ⟨⟨accretionArising, accretionQuiet,
     fun finite => accretionQuiet ((arising_iff_ceasing finite).mp accretionArising)⟩,

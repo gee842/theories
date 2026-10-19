@@ -107,11 +107,6 @@ theorem run_some {m : Interface S Q A} {p : Plan Q A} {s after : S} {answer : Bo
   rw [h]
   rfl
 
-/-- **A plan passes exactly where its run reaches an achieved configuration.** -/
-theorem passes_iff_run (m : Interface S Q A) (p : Plan Q A) (s : S) :
-    passes m p s = true ↔ ∃ t, run m p s = some t ∧ m.achieved t = true :=
-  option_any_true_iff
-
 /-! ## Execution is a trace -/
 
 /-- **The interface as a process.** Probing query `q` with answer `b` moves to the configuration
@@ -150,7 +145,7 @@ theorem run_iff_trace (m : Interface S Q A) (p : Plan Q A) (s t : S) :
 /-- **A plan passes exactly where it completes.** -/
 theorem passes_iff_completes (m : Interface S Q A) (p : Plan Q A) (s : S) :
     passes m p s = true ↔ Completes m p s :=
-  (passes_iff_run m p s).trans
+  ListTests.option_any_true_iff.trans
     ⟨fun ⟨t, ran, achieved⟩ => match (run_iff_trace m p s t).mp ran with
       | ⟨answer, path⟩ => ⟨answer, t, path, achieved⟩,
      fun ⟨answer, t, path, achieved⟩ => ⟨t, (run_iff_trace m p s t).mpr ⟨answer, path⟩, achieved⟩⟩
@@ -174,16 +169,6 @@ theorem valid_iff_passes (m : Interface S Q A) (states : List S) (p : Plan Q A) 
 
 /-! ## Selection -/
 
-/-- **Some plan is selected exactly when some listed plan is valid.** -/
-theorem chosen_isSome_iff (m : Interface S Q A) (states : List S) (plans : List (Plan Q A)) :
-    (choose m states plans).isSome = true ↔ ∃ p, p ∈ plans ∧ valid m states p = true :=
-  find_isSome_iff
-
-/-- **No plan is selected exactly when every listed plan is invalid.** -/
-theorem chosen_none_iff (m : Interface S Q A) (states : List S) (plans : List (Plan Q A)) :
-    choose m states plans = none ↔ ∀ p, p ∈ plans → valid m states p = false :=
-  find_none_iff
-
 /-- **A selected plan is listed, the belief is not empty, and the plan's run reaches an achieved
 configuration from every configuration believed.** -/
 theorem chosen_sound (m : Interface S Q A) (states : List S) (plans : List (Plan Q A))
@@ -191,12 +176,12 @@ theorem chosen_sound (m : Interface S Q A) (states : List S) (plans : List (Plan
     states ≠ [] ∧ p ∈ plans ∧ ∀ s, s ∈ states → ∃ t, run m p s = some t ∧ m.achieved t = true :=
   match (valid_iff_passes m states p).mp (find_some h) with
   | ⟨nonempty, all⟩ => ⟨nonempty, mem_of_find_some h,
-      fun s m' => (passes_iff_run m p s).mp (all s m')⟩
+      fun s m' => ListTests.option_any_true_iff.mp (all s m')⟩
 
 /-- **An empty belief certifies no plan.** -/
 theorem empty_belief_none (m : Interface S Q A) (plans : List (Plan Q A)) :
     choose m [] plans = none :=
-  (chosen_none_iff m [] plans).mpr fun _ _ => rfl
+  ListTests.find_none_iff.mpr fun _ _ => rfl
 
 /-- **A selected plan's execution from a believed configuration probes, receives an answer and
 the configuration after it, responds by the branch of that answer and reaches an achieved
@@ -216,7 +201,7 @@ a nonempty belief.** -/
 theorem selected_iff_completes (m : Interface S Q A) (states : List S) (plans : List (Plan Q A)) :
     (choose m states plans).isSome = true ↔
       ∃ p, p ∈ plans ∧ states ≠ [] ∧ ∀ s, s ∈ states → Completes m p s :=
-  (chosen_isSome_iff m states plans).trans
+  ListTests.find_isSome_iff.trans
     ⟨fun ⟨p, mem, v⟩ => ⟨p, mem, (valid_iff m states p).mp v⟩,
      fun ⟨p, mem, completes⟩ => ⟨p, mem, (valid_iff m states p).mpr completes⟩⟩
 
@@ -225,7 +210,7 @@ nonempty belief.** -/
 theorem none_selected_iff (m : Interface S Q A) (states : List S) (plans : List (Plan Q A)) :
     choose m states plans = none ↔
       ∀ p, p ∈ plans → ¬ (states ≠ [] ∧ ∀ s, s ∈ states → Completes m p s) :=
-  (chosen_none_iff m states plans).trans
+  ListTests.find_none_iff.trans
     ⟨fun all p mem completes => false_iff_not.mp (all p mem) ((valid_iff m states p).mpr completes),
      fun none p mem => false_iff_not.mpr fun v => none p mem ((valid_iff m states p).mp v)⟩
 

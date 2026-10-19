@@ -178,9 +178,6 @@ theorem true_of_not_clear {s : Nat → Bool} {k : Nat} (no : clear s k = false) 
   | .inl c => (true_ne_false' c no).elim
   | .inr ⟨j, _, _, yes⟩ => ⟨j, yes⟩
 
-theorem not_eq_true_of_false {b : Bool} (no : b = false) : (!b) = true :=
-  Eq.subst (motive := fun c => (!c) = true) no.symm rfl
-
 theorem eq_true_of_not_false : ∀ {b : Bool}, (!b) = false → b = true
   | true, _ => rfl
   | false, no => nomatch no
@@ -229,7 +226,7 @@ theorem someSucceeded_byRecord (byPrefixes : ByPrefixes succeeds) :
 
 theorem someSucceeded_of {r : Run P} {j k : Nat} (yes : succeeds j r = true) (lt : j < k) :
     someSucceeded succeeds k r = true :=
-  not_eq_true_of_false (clear_false_of_true (s := fun j => succeeds j r) yes lt)
+  ListTests.not_eq_true_of_false (clear_false_of_true (s := fun j => succeeds j r) yes lt)
 
 theorem succeeds_of_some {r : Run P} {k : Nat} (yes : someSucceeded succeeds k r = true) :
     Succeeds succeeds r :=
@@ -537,7 +534,7 @@ theorem notLastMove_byRecord : ByRecord notLastMove :=
 theorem notLastMove_verifies : Verifies notLastMove EventuallyFalse :=
   fun _ => ⟨fun ⟨n, no⟩ => ⟨n + 1, fun k le => match k, le with
       | 0, le => absurd le (Nat.not_succ_le_zero n)
-      | k + 1, le => not_eq_true_of_false (no k (Nat.le_of_succ_le_succ le))⟩,
+      | k + 1, le => ListTests.not_eq_true_of_false (no k (Nat.le_of_succ_le_succ le))⟩,
     fun ⟨n, yes⟩ => ⟨n, fun k le => ListTests.false_of_not (yes (k + 1) (Nat.le_succ_of_le le))⟩⟩
 
 /-- **A run from some step on `false` throughout does not recur.** -/
@@ -703,8 +700,6 @@ theorem against_state {m : Method process} (byRecord : ByRecord m) (k : Nat) :
       (m k (run (stage (againstNext m) (k + 1)))) = _ by
     rw [last, byRecord k _ _ agree])
 
-theorem toggle_true (b : Bool) : toggle b true ≠ b := ListTests.not_ne_self b
-
 /-- **Under Markov's principle no method fixed by the record refutes settling in the limit.** The
 run changing where the method says yes settles exactly where its yes does not recur. -/
 theorem settles_not_refuted (markov : Markov) {m : Method process} (byRecord : ByRecord m) :
@@ -714,7 +709,7 @@ theorem settles_not_refuted (markov : Markov) {m : Method process} (byRecord : B
     have not_recurs : ¬ YesRecurs m (against m) := fun recurs =>
       match (refutes (against m)).mpr recurs with
       | ⟨T, stays⟩ => match recurs T with
-        | ⟨k, le, yes⟩ => toggle_true _
+        | ⟨k, le, yes⟩ => ListTests.not_ne_self _
             (Eq.subst (motive := fun c => toggle ((against m).state k) c = (against m).state k)
               yes ((moves k).symm.trans (stays k le)))
     not_recurs fun n =>

@@ -374,19 +374,16 @@ theorem weight_pow (p q : Nat) : ∀ w : List Bool, weight p q w = p ^ ones w * 
     show q * weight p q w = p ^ ones w * (q ^ zeros w * q)
     rw [weight_pow p q w, Nat.mul_comm (q ^ zeros w) q, mul_turn]
 
-theorem mul_mul_mul (a b c d : Nat) : (a * b) * (c * d) = (a * c) * (b * d) := by
-  rw [mul_assoc_nat, mul_turn b c d, ← mul_assoc_nat]
-
 /-- **Weights multiply step by step.** -/
 theorem weight_mul (p q u v : Nat) : ∀ w : List Bool,
     weight p q w * weight u v w = weight (p * u) (q * v) w
   | [] => rfl
   | true :: w => by
     show (p * weight p q w) * (u * weight u v w) = (p * u) * weight (p * u) (q * v) w
-    rw [← weight_mul p q u v w, mul_mul_mul]
+    rw [← weight_mul p q u v w, Naturals.mul_mul_mul_comm]
   | false :: w => by
     show (q * weight p q w) * (v * weight u v w) = (q * v) * weight (p * u) (q * v) w
-    rw [← weight_mul p q u v w, mul_mul_mul]
+    rw [← weight_mul p q u v w, Naturals.mul_mul_mul_comm]
 
 /-- Tilting toward ones: with `v ≤ u` and at least `k` of `a` ones, `u ^ k · v ^ (a + b)` is at
 most `u ^ a · v ^ b · v ^ k`. -/

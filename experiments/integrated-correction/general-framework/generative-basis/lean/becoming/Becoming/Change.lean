@@ -316,15 +316,6 @@ theorem falling_recurs {as : List α} {q : α → Nat → Nat} {B : Nat}
     | ⟨t, within, fell⟩ => match total_pos as fell with
       | ⟨a, mem, falls⟩ => ⟨t, a, steps_mem within, mem, falls⟩
 
-/-- `falls_not_recurring` of `Becoming.Renewal` is the floor for one amount: an amount that
-never rises from some step on does not fall at arbitrarily late steps. -/
-theorem falls_not_recurring_from_floor (q : Nat → Nat) (T : Nat)
-    (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) : ¬ ∀ N, ∃ n, N ≤ n ∧ q (n + 1) < q n :=
-  fun falls => match rising_recurs (as := [()]) (q := fun _ => q)
-      (fun N => match falls N with
-        | ⟨n, later, down⟩ => ⟨n, (), later, .head [], excess_pos.mpr down⟩) T with
-  | ⟨t, _, later, _, up⟩ => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le (excess_pos.mp up) (still t later))
-
 /-! ## Coming to be and ceasing to be -/
 
 /-- A determination comes to be across the step from `t`: it fails at `t` and holds after
@@ -565,15 +556,6 @@ variable [∀ t f, Decidable (W.active t f)]
 instance (t : Nat) (f : F) : Decidable (W.Arises t f) := instDecidableAnd
 
 instance (t : Nat) (f : F) : Decidable (W.Ceases t f) := instDecidableAnd
-
-/-- Over any stretch, the members of a finite family of formations active at the end with
-those that ceased are those active at the start with those that arose. -/
-theorem activity_over_stretch (fs : List F) (S n : Nat) :
-    total fs (fun f => mark (W.active (S + n) f)) +
-        total (steps S n) (fun t => total fs fun f => mark (W.Ceases t f)) =
-      total fs (fun f => mark (W.active S f)) +
-        total (steps S n) (fun t => total fs fun f => mark (W.Arises t f)) :=
-  held_over_stretch (p := fun f t => W.active t f) S n
 
 /-- In a finite family of formations, arising recurs exactly when ceasing recurs. -/
 theorem arising_recurs_iff (fs : List F) :

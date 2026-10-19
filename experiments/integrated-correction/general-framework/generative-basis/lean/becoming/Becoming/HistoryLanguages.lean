@@ -179,12 +179,6 @@ theorem same_future_extends (L : List A → Prop) {h k : List A} (same : SameFut
   fun suffix => (future_update L h extension suffix).trans
     ((same (extension ++ suffix)).trans (future_update L k extension suffix).symm)
 
-/-- **For a process's language the profile after a course is the union of the languages from where
-the course can end.** -/
-theorem future_iff_reach {S : Type u} (P : Process S A) (s : S) (past suffix : List A) :
-    Future (Feasible P s) past suffix ↔ ∃ middle, Trace P s past middle ∧ Feasible P middle suffix :=
-  feasible_append_iff
-
 theorem letterwise_append (L : List A → Prop) :
     ∀ h k : List A, Letterwise L (h ++ k) ↔ Letterwise L h ∧ Letterwise L k
   | [], _ => ⟨fun held => ⟨True.intro, held⟩, fun held => held.2⟩

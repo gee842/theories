@@ -245,19 +245,14 @@ theorem orbit_trace (next : S → S) : ∀ (k : Nat) (s : S),
   | k + 1, s => .cons rfl (Eq.mpr (congrArg (Trace (Law.process next) (next s)
       (List.replicate k ())) (Law.orbit_shift next s k)) (orbit_trace next k (next s)))
 
-/-- **What a determined law's process reaches is its orbit.** -/
-theorem reach_iff_orbit {s t : S} : Reach (Law.process next) s t ↔ ∃ n, Law.orbit next s n = t :=
-  ⟨fun ⟨_, path⟩ => ⟨_, (trace_orbit path).symm⟩,
-   fun ⟨n, at_n⟩ => ⟨_, at_n ▸ orbit_trace next n s⟩⟩
-
 /-- **Never reaching on courses.** No configuration a determined law's process reaches from `s`
 is in the target exactly when some set containing `s` avoids the target and is closed under the
 law. -/
 theorem avoids_iff_closed_reach {s : S} :
     (∀ t, Reach (Law.process next) s t → ¬ target t) ↔
       ∃ K : S → Prop, K s ∧ (∀ x, K x → ¬ target x) ∧ ∀ x, K x → K (next x) :=
-  (⟨fun avoids n => avoids _ (reach_iff_orbit.mpr ⟨n, rfl⟩),
-    fun avoids _ reach => match reach_iff_orbit.mp reach with
+  (⟨fun avoids n => avoids _ (Branching.law_reach_iff.mpr ⟨n, rfl⟩),
+    fun avoids _ reach => match Branching.law_reach_iff.mp reach with
       | ⟨n, at_n⟩ => at_n ▸ avoids n⟩ :
       (∀ t, Reach (Law.process next) s t → ¬ target t) ↔ ∀ n, ¬ target (Law.orbit next s n)).trans
     avoids_iff_closed
@@ -277,13 +272,8 @@ theorem some_avoids_iff_reach {seed : S → Prop} :
 on the courses of the law's process. -/
 theorem fixed_avoids_reach {x : S} (fixed : next x = x) (outside : ¬ target x) :
     ∀ t, Reach (Law.process next) x t → ¬ target t :=
-  fun _ reach => match reach_iff_orbit.mp reach with
+  fun _ reach => match Branching.law_reach_iff.mp reach with
     | ⟨n, at_n⟩ => Eq.mp (congrArg (fun z => ¬ target z) at_n) (Lasting.fixed_avoids fixed outside n)
-
-/-- `k` unit moves. -/
-theorem length_units : ∀ k : Nat, (List.replicate k ()).length = k
-  | 0 => rfl
-  | k + 1 => congrArg Nat.succ (length_units k)
 
 /-- A course of at most `n` moves of a determined law's process reaches the target exactly when
 the orbit meets it within `n` steps. -/
@@ -292,7 +282,7 @@ theorem course_reaches_iff_orbit {n : Nat} {s : S} :
       ∃ k, k ≤ n ∧ target (Law.orbit next s k) :=
   ⟨fun ⟨plan, _, path, bound, inside⟩ => ⟨plan.length, bound, trace_orbit path ▸ inside⟩,
    fun ⟨k, bound, inside⟩ => ⟨List.replicate k (), _, orbit_trace next k s,
-     Eq.mpr (congrArg (· ≤ n) (length_units k)) bound, inside⟩⟩
+     Eq.mpr (congrArg (· ≤ n) (Branching.units_length k)) bound, inside⟩⟩
 
 /-- **The funnel law on courses.** A course of at most `n` moves of a determined law's process
 reaches the target exactly when a funnel holds the start at level `n`. -/
@@ -816,16 +806,6 @@ theorem runs_no_restore (π : S → K) {r r' : Run P} {n : Nat}
       restore ((reducedRun π r').state m) = r'.state m :=
   fun ⟨restore, back⟩ => no_restore merged different ⟨restore, (back n).1, (back n).2⟩
 
-/-- **Decoding an observable of two runs from their reduced runs.** At a date where the reduced
-runs agree, a decoder of the reduced runs right for an observable at both runs exists exactly
-when the observable agrees on them there. -/
-theorem runs_decoder_pair_iff {V : Type x} (π : S → K) (f : S → V) {r r' : Run P} {n : Nat}
-    (merged : (reducedRun π r).state n = (reducedRun π r').state n) :
-    (∃ g : K → V, g ((reducedRun π r).state n) = f (r.state n) ∧
-        g ((reducedRun π r').state n) = f (r'.state n)) ↔
-      f (r.state n) = f (r'.state n) :=
-  decoder_pair_iff (π := π) (f := f) (s := r.state n) (s' := r'.state n) merged
-
 /-- The configurations of a run's first `n` steps, latest first. -/
 def visited (r : Run P) : Nat → List S
   | 0 => []
@@ -874,28 +854,6 @@ theorem no_run_judge_of_merged {V : Type x} (π : S → K) (f : S → V) (r : Ru
     ((mem_visited r).mpr ⟨k, lk, rfl⟩) merged apart
     ⟨judge, fun _ mem => match (mem_visited r).mp mem with
       | ⟨i, li, at_i⟩ => Eq.mp (congrArg (fun x => judge (π x) = f x) at_i) (judges i li)⟩
-
-/-- **Two steps of a web agree under every reading through its conditions exactly where every
-condition stands at the same level**, where every reading reads a step only through the levels
-of the conditions and each condition's level is read directly by some reading. -/
-theorem steps_agree_iff_levels {F C X : Type} {Y : X → Type y} (W : Web F C)
-    {read : (x : X) → Nat → Y x} {use : C → X}
-    (through : ThroughParts (fun t c => W.level t c) read)
-    (direct : ReadsDirectly (fun t c => W.level t c) read use) {t t' : Nat} :
-    (∀ x, read x t = read x t') ↔ ∀ c, W.level t c = W.level t' c :=
-  agree_iff_parts through direct
-
-/-- **A replacement agrees with a step of a web under every reading exactly where it supplies
-every condition's level**: where each reading of the replacement is the reading of the step it
-supplies, it agrees with step `t` under every reading exactly where the supplied step stands
-at `t`'s level at every condition. -/
-theorem supplied_agree_iff_levels {F C X T : Type} {Y : X → Type y} (W : Web F C)
-    {read : (x : X) → Nat → Y x} {use : C → X} {replaced : (x : X) → T → Y x} {supply : T → Nat}
-    (through : ThroughParts (fun t c => W.level t c) read)
-    (direct : ReadsDirectly (fun t c => W.level t c) read use)
-    (supplies : ∀ x u, replaced x u = read x (supply u)) {u : T} {t : Nat} :
-    (∀ x, replaced x u = read x t) ↔ ∀ c, W.level (supply u) c = W.level t c :=
-  supplied_agree_iff_parts through direct supplies
 
 end Readout
 
@@ -969,15 +927,6 @@ theorem claims_floor {S : Type u} {A : Type v} {C : Type w} (F : Frame S A C) {d
      | ⟨hd, ho⟩ => (readsN s).mpr (fulfilled s mem ((readsD s).mp hd) ((readsO s).mp ho)),
    mass_mono weight fun _ _ _ => rfl⟩
 
-/-- **Every selection of the formations drawing on a condition is within its standing exactly
-when all of them together are.** At a step of a web, for a listed family of formations, the
-needs on one condition of every selection are within the condition's level exactly when the
-needs of the whole family are. -/
-theorem selections_within_iff {F C : Type} (W : Web F C) (t : Nat) (c : C) (fs : List F) :
-    (∀ sel : F → Bool, mass fs (fun f => W.need t f c) sel ≤ W.level t c) ↔
-      mass fs (fun f => W.need t f c) (fun _ => true) ≤ W.level t c :=
-  every_event_within_iff
-
 /-- Two formations, each needing the whole standing, two, of one condition. -/
 def twoDrawers : Web Bool Unit :=
   ⟨fun _ _ => 2, fun _ _ => True, fun _ _ _ => True, fun _ _ _ => 2, fun _ _ _ => True⟩
@@ -1025,21 +974,6 @@ section Feedback
 
 variable {F C : Type} (L : Flow F C) (W : Web F C)
 
-/-- **A certificate of a formation's system.** A region of formations is the system of `f`, the
-closure under taking part in a common condition, exactly when it holds `f`, is closed under
-sharing a condition and lies within `f`'s system. -/
-theorem system_iff_certified {region : F → Prop} {f : F} :
-    (∀ g, region g ↔ L.WithinSystem W f g) ↔
-      region f ∧ ClosedUnder (L.Shares W) region ∧ ∀ g, region g → L.WithinSystem W f g :=
-  closure_iff_certified (rel := L.Shares W)
-
-/-- **Certified regions apart are systems apart.** Where a region closed under sharing a
-condition holds `f` but not `g`, `g` is not in `f`'s system. -/
-theorem not_within_system_of_closed {region : F → Prop} {f g : F}
-    (closed : ClosedUnder (L.Shares W) region) (holds : region f) (outside : ¬ region g) :
-    ¬ L.WithinSystem W f g :=
-  not_within_of_closed closed holds outside
-
 end Feedback
 
 /-! ## Description: relations among parts along the courses of a law -/
@@ -1055,7 +989,7 @@ def reachedFrom (next : X → X) (whole : X → Prop) (n : Nat) (p : X) : Prop :
 theorem reachedFrom_iff {next : X → X} {whole : X → Prop} {n : Nat} {p : X} :
     reachedFrom next whole n p ↔ ∃ q, whole q ∧ Law.orbit next q n = p :=
   ⟨fun ⟨q, held, path⟩ => ⟨q, held, ((trace_orbit path).trans
-     (congrArg (Law.orbit next q) (length_units n))).symm⟩,
+     (congrArg (Law.orbit next q) (Branching.units_length n))).symm⟩,
    fun ⟨q, held, at_n⟩ => ⟨q, held, at_n ▸ orbit_trace next n q⟩⟩
 
 theorem reachedFrom_zero {next : X → X} {whole : X → Prop} {p : X} :
@@ -1151,17 +1085,6 @@ theorem extension_frontier_exists (x : S) (rest : List S)
     ∃ a, Undominated (x :: rest) (fun b a => Extension F living a b) a :=
   exists_undominated x rest weakly (fun _ _ => Extension.irrefl)
     (fun _ _ _ _ _ _ first second => Extension.trans second first)
-
-/-- **What every member lacking it is extended in is required of the generative frontier.** On a
-listed menu of a frame's configurations, with extension and the task decided on the menu, every
-configuration no member extends performs the task exactly when every member lacking the task is
-extended by some member. -/
-theorem extension_frontier_has_iff {task : S → Prop} {menu : List S}
-    (decidedExtension : ∀ a b, a ∈ menu → b ∈ menu → Decided (Extension F living b a))
-    (decidedTask : ∀ a, a ∈ menu → Decided (task a)) :
-    (∀ a, Undominated menu (fun b a => Extension F living a b) a → task a) ↔
-      ∀ a, a ∈ menu → ¬ task a → ∃ b, b ∈ menu ∧ Extension F living a b :=
-  undominated_has_iff decidedExtension decidedTask
 
 end Undominated
 

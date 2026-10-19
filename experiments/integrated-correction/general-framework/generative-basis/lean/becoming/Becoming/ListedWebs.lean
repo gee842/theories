@@ -55,39 +55,6 @@ section Census
 
 variable {W : Web F C} [∀ t f, Decidable (W.active t f)] {alive : Nat → List F}
 
-/-- **The census balance across a step.** Under a census of a web, the formations active after a
-step with those that ceased across it are those active before it with those that arose. -/
-theorem across (census : W.Census alive) (t : Nat) :
-    (alive (t + 1)).length + total (alive t) (fun f => mark (W.Ceases t f)) =
-      (alive t).length + total (alive (t + 1)) (fun f => mark (W.Arises t f)) :=
-  Listed.across census t
-
-/-- **Ceasings are at most arisings with those active at the start.** Under a census, over any
-stretch. -/
-theorem ceasings_within (census : W.Census alive) (S n : Nat) :
-    total (steps S n) (fun t => total (alive t) fun f => mark (W.Ceases t f)) ≤
-      (alive S).length + total (steps S n) (fun t => total (alive (t + 1)) fun f =>
-        mark (W.Arises t f)) :=
-  Listed.ceasings_within census S n
-
-/-- **Arisings are at most ceasings with those active at the end.** Under a census, over any
-stretch: where at most `B` are active, at most `B` more arise than cease. -/
-theorem arisings_within (census : W.Census alive) (S n : Nat) :
-    total (steps S n) (fun t => total (alive (t + 1)) fun f => mark (W.Arises t f)) ≤
-      (alive (S + n)).length + total (steps S n) (fun t => total (alive t) fun f =>
-        mark (W.Ceases t f)) :=
-  Listed.comings_within census S n
-
-/-- **The rate law of a web.** Under a census with at most `B t` formations active at each step
-`t`, where from each step the arisings over some stretch outnumber the bound at its end, some
-formation ceases at arbitrarily late steps. -/
-theorem ceasing_of_outpacing (census : W.Census alive) {B : Nat → Nat}
-    (bounded : ∀ t, (alive t).length ≤ B t)
-    (outpacing : ∀ N, ∃ n, B (N + n) <
-      total (steps N n) fun t => total (alive (t + 1)) fun f => mark (W.Arises t f)) :
-    ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
-  Listed.ceasing_of_outpacing census bounded outpacing
-
 end Census
 
 /-! ## A finite family of formations -/
@@ -95,21 +62,6 @@ end Census
 section Family
 
 variable (W : Web F C) [∀ t f, Decidable (W.active t f)]
-
-/-- **Arising and ceasing keep pace in a finite family.** Over any stretch, the arisings and the
-ceasings of the members of a finite list of formations differ by at most its length. -/
-theorem keep_pace (fs : List F) (S n : Nat) :
-    total (steps S n) (fun t => total fs fun f => mark (W.Arises t f)) ≤
-        fs.length + total (steps S n) (fun t => total fs fun f => mark (W.Ceases t f)) ∧
-      total (steps S n) (fun t => total fs fun f => mark (W.Ceases t f)) ≤
-        fs.length + total (steps S n) (fun t => total fs fun f => mark (W.Arises t f)) :=
-  Becoming.keep_pace (as := fs) (p := fun f t => W.active t f) S n
-
-/-- **What ceases at no later step stays active.** A formation active at step `S` that ceases
-across no step from `S` on is active at every later step. -/
-theorem persists {f : F} {S : Nat} (active : W.active S f)
-    (unceasing : ∀ t, S ≤ t → ¬ W.Ceases t f) : ∀ n, W.active (S + n) f :=
-  Becoming.persists (p := fun t => W.active t f) active unceasing
 
 end Family
 
@@ -119,19 +71,6 @@ section Stretch
 
 variable {W : Web F C}
 
-/-- **Ceasing needs arising, on a web.** With a list holding exactly the formations active at `N`,
-each once, and no formation arising across the stretch of `n` steps from `N`: every formation
-active at a step of the stretch is on the list, every formation ceasing there is on it, and those
-active at the end with those that ceased since `N` number the list. -/
-theorem ceasing_needs_arising [∀ t f, Decidable (W.active t f)] {l : List F} {N n : Nat}
-    (lists : Distinct l ∧ ∀ f, W.active N f ↔ f ∈ l)
-    (none : ∀ s f, N ≤ s → s < N + n → ¬ W.Arises s f) :
-    (∀ k, k ≤ n → ∀ f, W.active (N + k) f → f ∈ l) ∧
-      (∀ s f, N ≤ s → s < N + n → W.Ceases s f → f ∈ l) ∧
-      total l (fun f => mark (W.active (N + n) f)) +
-          total (steps N n) (fun t => total l fun f => mark (W.Ceases t f)) = l.length :=
-  Becoming.ceasing_needs_arising (p := fun f t => W.active t f) lists none
-
 /-- **With nothing arising from a step on, ceasing does not recur.** Where a list covers the
 formations active at `N` and no formation arises at any step from `N` on, it is not the case that
 some formation ceases at arbitrarily late steps. No decidability is needed. -/
@@ -139,14 +78,6 @@ theorem ceasing_not_recurring {l : List F} {N : Nat} (covers : ∀ f, W.active N
     (none : ∀ s f, N ≤ s → ¬ W.Arises s f) : ¬ ∀ M, ∃ t f, M ≤ t ∧ W.Ceases t f :=
   Covers.ceasing_not_recurring (p := fun f t => W.active t f) covers
     fun _ s f from_ _ => none s f from_
-
-/-- **Recurring ceasing, found step by step.** Where some formation ceases at arbitrarily late
-steps, for every `k` there are `k` distinct steps from `N`, all before some step, at each of which
-some formation ceases. -/
-theorem ceasing_steps_found (ceasing : ∀ M, ∃ t f, M ≤ t ∧ W.Ceases t f) (N : Nat) :
-    ∀ k, ∃ E U, Distinct E ∧ E.length = k ∧ N ≤ U ∧
-      ∀ t, t ∈ E → N ≤ t ∧ t < U ∧ ∃ f, W.Ceases t f :=
-  Becoming.ceasing_steps_found (p := fun f t => W.active t f) ceasing N
 
 end Stretch
 

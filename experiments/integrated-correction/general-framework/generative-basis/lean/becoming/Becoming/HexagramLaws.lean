@@ -113,9 +113,9 @@ def distinctb : List Hexagram → Bool
 theorem nodup_of_distinctb : ∀ {l : List Hexagram}, distinctb l = true → l.Nodup
   | [], _ => List.Pairwise.nil
   | _ :: l, h => List.Pairwise.cons
-      (fun _ mem same => not_mem_of_memb (ListTests.false_of_not (both h).1)
+      (fun _ mem same => not_mem_of_memb (ListTests.false_of_not (bool_of_and_true h).1)
         (Eq.subst (motive := fun x => x ∈ l) same.symm mem))
-      (nodup_of_distinctb (both h).2)
+      (nodup_of_distinctb (bool_of_and_true h).2)
 
 /-- **The received order lists each configuration once**, so a count over it is a count of
 configurations (with `mem_order`). -/
@@ -680,8 +680,8 @@ def pairedByChange (s : Hexagram) : Bool :=
 theorem pairedByChange_sound {s : Hexagram} (h : pairedByChange s = true) :
     ∃ q, q ∈ pairs order ∧ reverse q.1 = q.1 ∧ q.2 = complement q.1 ∧ (s = q.1 ∨ s = q.2) :=
   match any_sound h with
-  | ⟨q, mem, holds⟩ => match both holds with
-    | ⟨rule, which⟩ => match both rule with
+  | ⟨q, mem, holds⟩ => match bool_of_and_true holds with
+    | ⟨rule, which⟩ => match bool_of_and_true rule with
       | ⟨fixed, changed⟩ =>
         ⟨q, mem, eq_of_eqb fixed, eq_of_eqb changed, match ListTests.or_cases which with
           | .inl first => .inl (eq_of_eqb first)
@@ -716,8 +716,8 @@ def pairedByBoth (s : Hexagram) : Bool :=
 theorem pairedByBoth_sound {s : Hexagram} (h : pairedByBoth s = true) :
     ∃ q, q ∈ pairs order ∧ q.2 = reverse q.1 ∧ q.2 = complement q.1 ∧ (s = q.1 ∨ s = q.2) :=
   match any_sound h with
-  | ⟨q, mem, holds⟩ => match both holds with
-    | ⟨rule, which⟩ => match both rule with
+  | ⟨q, mem, holds⟩ => match bool_of_and_true holds with
+    | ⟨rule, which⟩ => match bool_of_and_true rule with
       | ⟨turned, changed⟩ =>
         ⟨q, mem, eq_of_eqb turned, eq_of_eqb changed, match ListTests.or_cases which with
           | .inl first => .inl (eq_of_eqb first)
@@ -849,11 +849,11 @@ theorem settle_fixed_iff : ∀ m : MarkedLines, settle m = m ↔ staysAll m = tr
         Marked.stays_of_settle hd, Marked.stays_of_settle he, Marked.stays_of_settle hf]
       rfl,
      fun all => by
-      have ⟨h5, sf⟩ := both all
-      have ⟨h4, se⟩ := both h5
-      have ⟨h3, sd⟩ := both h4
-      have ⟨h2, sc⟩ := both h3
-      have ⟨sa, sb⟩ := both h2
+      have ⟨h5, sf⟩ := bool_of_and_true all
+      have ⟨h4, se⟩ := bool_of_and_true h5
+      have ⟨h3, sd⟩ := bool_of_and_true h4
+      have ⟨h2, sc⟩ := bool_of_and_true h3
+      have ⟨sa, sb⟩ := bool_of_and_true h2
       show (⟨a.settle, b.settle, c.settle, d.settle, e.settle, f.settle⟩ : MarkedLines) =
         ⟨a, b, c, d, e, f⟩
       rw [Marked.settle_of_stays sa, Marked.settle_of_stays sb, Marked.settle_of_stays sc,

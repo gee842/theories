@@ -613,17 +613,7 @@ theorem distinct_append' {α : Type} : ∀ {l m : List α}, Distinct l → Disti
       | .inr outside => apart a (.head l) outside,
      distinct_append' distinct distinct' fun b mem => apart b (.tail a mem)⟩
 
-theorem inl_inj : ∀ a b : T, (Sum.inl a : T ⊕ P) = Sum.inl b → a = b :=
-  fun _ _ same => Sum.inl.inj same
-
-theorem inr_inj : ∀ a b : P, (Sum.inr a : T ⊕ P) = Sum.inr b → a = b :=
-  fun _ _ same => Sum.inr.inj same
-
 theorem inl_not_mem_inr {f : T} {l : List P} : ¬ (Sum.inl f : T ⊕ P) ∈ l.map Sum.inr :=
-  fun mem => match preimage_of_mem_map mem with
-  | ⟨_, _, same⟩ => nomatch same
-
-theorem inr_not_mem_inl {p : P} {l : List T} : ¬ (Sum.inr p : T ⊕ P) ∈ l.map Sum.inl :=
   fun mem => match preimage_of_mem_map mem with
   | ⟨_, _, same⟩ => nomatch same
 
@@ -673,8 +663,8 @@ def worldAlive (y : P → Nat) (σ : Nat → List T) (M₀ : P → Nat) (ts : Li
 theorem world_counted (distinct : Distinct ts) (every : ∀ f, f ∈ ts) (distinct' : Distinct ps)
     (every' : ∀ p, p ∈ ps) : (N.world y σ M₀).Counted :=
   ⟨worldAlive N y σ M₀ ts ps, fun _ =>
-    ⟨distinct_append' (distinct_map inl_inj distinct)
-        (distinct_map inr_inj (keep_distinct distinct'))
+    ⟨distinct_append' (distinct_map inl_injective distinct)
+        (distinct_map inr_injective (keep_distinct distinct'))
         fun _ inside outside => match preimage_of_mem_map inside with
           | ⟨_, _, same⟩ => inl_not_mem_inr (Eq.subst (motive := fun x => x ∈ _) same.symm outside),
      fun x => match x with
@@ -682,8 +672,8 @@ theorem world_counted (distinct : Distinct ts) (every : ∀ f, f ∈ ts) (distin
       | .inr p => ⟨fun positive => mem_append_of_right _
             (mem_map_of (mem_keep.mpr ⟨every' p, positive⟩)),
           fun mem => match mem_append_cases mem with
-            | .inl inside => absurd inside inr_not_mem_inl
-            | .inr outside => (mem_keep.mp (mem_of_map inr_inj outside)).2⟩⟩⟩
+            | .inl inside => absurd inside inr_not_mem
+            | .inr outside => (mem_keep.mp (mem_of_map inr_injective outside)).2⟩⟩⟩
 
 /-- Over a family without repetition outside which a transition exchanges nothing, its exchange
 totals what it is over the places. -/
@@ -695,7 +685,7 @@ theorem world_total_eq [DecidableEq T] [DecidableEq P] (distinct : Distinct ps)
     (total_le_of_support distinct' fun a _ positive => match a with
       | .inl g => absurd (Nat.lt_of_lt_of_le positive (Nat.le_of_eq (places g))) (Nat.lt_irrefl 0)
       | .inr p => mem_map_of (every p))
-    (total_le_of_support (distinct_map inr_inj distinct) fun a _ positive =>
+    (total_le_of_support (distinct_map inr_injective distinct) fun a _ positive =>
       match decideMem a cs with
       | .isTrue mem => mem
       | .isFalse out => absurd (Nat.lt_of_lt_of_le positive (Nat.le_of_eq (outside a out)))
@@ -721,7 +711,7 @@ theorem world_dissipative [DecidableEq T] [DecidableEq P] (distinct : Distinct p
 /-- Every step of the world is enclosed by the places. -/
 theorem world_enclosed (distinct : Distinct ps) (every : ∀ p, p ∈ ps) (t : Nat) :
     (N.world y σ M₀).flow.Enclosed t :=
-  ⟨ps.map Sum.inr, distinct_map inr_inj distinct, fun _ present c out =>
+  ⟨ps.map Sum.inr, distinct_map inr_injective distinct, fun _ present c out =>
     match preimage_of_mem_map present, c with
     | ⟨_, _, same⟩, .inl _ => Eq.subst (motive := fun x =>
         N.worldTake y x (.inl _) = 0 ∧ N.worldGive y x (.inl _) = 0) same ⟨rfl, rfl⟩
@@ -779,9 +769,6 @@ theorem cycle_marking : ∀ n p, cycle.marking cycleRun cycleStart n p = cycle.p
 theorem cycle_fires : cycle.Fires cycleRun cycleStart :=
   fun n p => Nat.le_of_eq (cycle_marking n p).symm
 
-theorem bools_distinct : Distinct [true, false] :=
-  ⟨fun mem => (match mem with | .tail _ no => nomatch no), ⟨fun no => (nomatch no), trivial⟩⟩
-
 /-- Every premise of the rest law holds of the cycle but dissipation: it balances, has a census,
 is embodied, and every step is enclosed. -/
 theorem cycle_premises :
@@ -789,14 +776,14 @@ theorem cycle_premises :
       (cycle.world one cycleRun cycleStart).Counted ∧
       (cycle.world one cycleRun cycleStart).Embodied ∧
       ∀ t, (cycle.world one cycleRun cycleStart).flow.Enclosed t :=
-  ⟨cycle_fires.world_balanced one, world_counted bools_distinct ListTests.mem_bools bools_distinct ListTests.mem_bools,
-    world_embodied, world_enclosed bools_distinct ListTests.mem_bools⟩
+  ⟨cycle_fires.world_balanced one, world_counted Shuttle.distinct ListTests.mem_bools Shuttle.distinct ListTests.mem_bools,
+    world_embodied, world_enclosed Shuttle.distinct ListTests.mem_bools⟩
 
 /-- The cycle conserves its token: its transitions do not lose, so its flow is not
 dissipative. -/
 theorem cycle_not_dissipative : ¬ (cycle.flow one cycleRun).Dissipative :=
   fun dissipative => Nat.not_succ_le_self 1
-    ((dissipative_iff bools_distinct ListTests.mem_bools).mp dissipative 0 true (.head _))
+    ((dissipative_iff Shuttle.distinct ListTests.mem_bools).mp dissipative 0 true (.head _))
 
 /-- Place `true` gains or loses its token at every step. -/
 theorem cycle_flips (t : Nat) :

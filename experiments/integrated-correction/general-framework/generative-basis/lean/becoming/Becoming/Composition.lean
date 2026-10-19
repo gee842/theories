@@ -807,12 +807,6 @@ theorem liftsFromEach_iff_of_kernel {J : S → S → S → Prop} {π : S → K} 
     ⟨fun matching => matching.transport kernel,
      fun matching => matching.transport fun s s' => (kernel s s').symm⟩
 
-/-- Where a description identifies exactly the configurations a relation matching parts relates,
-the parts read through it lift from every configuration it describes. -/
-theorem liftsFromEach_of_kernel {J : S → S → S → Prop} {π : S → K} {R : S → S → Prop}
-    (kernel : ∀ s s', π s = π s' ↔ R s s') (matching : MatchesParts J J R) : LiftsFromEach J π :=
-  (liftsFromEach_iff_of_kernel kernel).mpr matching
-
 /-- A description identifies exactly the jointly alike configurations. -/
 def IdentifiesJointAlike (F : JointFrame S A C) (π : S → K) : Prop :=
   ∀ s s', π s = π s' ↔ JointAlike F F s s'
@@ -821,7 +815,7 @@ def IdentifiesJointAlike (F : JointFrame S A C) (π : S → K) : Prop :=
 from every configuration it describes**, with no premise. -/
 theorem IdentifiesJointAlike.lifts {F : JointFrame S A C} {π : S → K}
     (sense : IdentifiesJointAlike F π) : LiftsFromEach F.joint π :=
-  liftsFromEach_of_kernel sense (JointAlike.matchesParts F)
+  (liftsFromEach_iff_of_kernel sense).mpr (JointAlike.matchesParts F)
 
 /-- **Through a description identifying exactly the configurations passing the same joint tests,
 the parts lift from every configuration it describes**, where the pairs of parts are compact and
@@ -829,7 +823,7 @@ the tests stable. -/
 theorem liftsFromEach_of_sameJointTests {F : JointFrame S A C} {π : S → K}
     (kernel : ∀ s s', π s = π s' ↔ SameJointTests F F s s') (compact : F.JointCompact)
     (stable : F.TestsStable) : LiftsFromEach F.joint π :=
-  liftsFromEach_of_kernel kernel (SameJointTests.matchesParts compact stable)
+  (liftsFromEach_iff_of_kernel kernel).mpr (SameJointTests.matchesParts compact stable)
 
 end Descriptions
 

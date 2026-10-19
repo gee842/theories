@@ -317,7 +317,7 @@ theorem Realizes.stock_after (realizes : L.Realizes W t es P k e) :
 /-- Each passage of a shown pattern is the passage of a member. -/
 theorem Realizes.member (realizes : L.Realizes W t es P k e) {p : Passage} (mem : p ∈ P) :
     ∃ c, c ∈ es ∧ L.passage W t c = p :=
-  exists_of_mem_map (Eq.subst (motive := fun l => p ∈ l) realizes.1.symm mem)
+  preimage_of_mem_map (Eq.subst (motive := fun l => p ∈ l) realizes.1.symm mem)
 
 end Flow
 
@@ -424,7 +424,7 @@ theorem roles_passage (t : Nat) (c : C) : L.roles.passage W.roles t (.inr c) = L
 
 /-- Read with one kind of relatum, something exchanges exactly where it did. -/
 theorem roles_exchangesAt : L.roles.ExchangesAt t ↔ L.ExchangesAt t :=
-  ⟨fun ⟨x, y, mem, exchanges⟩ => match exists_of_mem_map mem with
+  ⟨fun ⟨x, y, mem, exchanges⟩ => match preimage_of_mem_map mem with
     | ⟨f, present, same⟩ => match x, y, same, exchanges with
       | _, .inr c, rfl, exchanges => ⟨f, c, present, exchanges⟩
       | _, .inl _, rfl, .inl takes => absurd takes (Nat.lt_irrefl 0)
@@ -440,7 +440,7 @@ theorem Realizes.roles (realizes : L.Realizes W t es P k e) :
 
 theorem BalancesOn.roles (balances : L.BalancesOn W es t) :
     L.roles.BalancesOn W.roles (es.map .inr) t :=
-  fun _ mem => match exists_of_mem_map mem with
+  fun _ mem => match preimage_of_mem_map mem with
   | ⟨c, inside, same⟩ => Eq.subst (motive := fun x =>
         W.roles.level (t + 1) x + L.roles.taken t x = W.roles.level t x + L.roles.given t x) same
       ((congrArg (W.level (t + 1) c + ·) (L.roles_taken t c)).trans ((balances c inside).trans
@@ -448,7 +448,7 @@ theorem BalancesOn.roles (balances : L.BalancesOn W es t) :
 
 theorem DissipatesOn.roles (dissipates : L.DissipatesOn es t) :
     L.roles.DissipatesOn (es.map .inr) t :=
-  fun _ mem => match exists_of_mem_map mem with
+  fun _ mem => match preimage_of_mem_map mem with
   | ⟨f, present, same⟩ => Eq.subst (motive := fun x =>
         total (es.map .inr) (L.roles.give t x) + sign (total (es.map .inr) (L.roles.take t x)) ≤
           total (es.map .inr) (L.roles.take t x)) same
@@ -703,9 +703,9 @@ theorem unitList_units : ∀ (P : List Passage) (u : Nat) (f : Part), f ∈ unit
     ∃ i j, f = .unit i j ∧ i < P.length
   | [], _, _, mem => nomatch mem
   | _ :: P, _, _, mem => match mem_append_cases mem with
-    | .inl first => match exists_of_mem_map first with
+    | .inl first => match preimage_of_mem_map first with
       | ⟨j, _, same⟩ => ⟨0, j, same.symm, Nat.succ_pos _⟩
-    | .inr second => match exists_of_mem_map second with
+    | .inr second => match preimage_of_mem_map second with
       | ⟨g, inner, same⟩ => match unitList_units P _ g inner with
         | ⟨i, j, unit, lt⟩ => ⟨i + 1, j, same.symm.trans (congrArg Part.up unit),
             Nat.succ_lt_succ lt⟩
@@ -780,7 +780,7 @@ theorem distinct_unitList : ∀ (P : List Passage) (u : Nat), Distinct (unitList
           | ⟨_, _, ha, _⟩, ⟨_, _, hb, _⟩ => ha.trans ((up_unit_injective
               ((congrArg Part.up ha).symm.trans (same.trans (congrArg Part.up hb)))).trans hb.symm))
         (distinct_unitList P _))
-      (fun _ first second => match exists_of_mem_map first, exists_of_mem_map second with
+      (fun _ first second => match preimage_of_mem_map first, preimage_of_mem_map second with
         | ⟨_, _, isFirst⟩, ⟨g, inner, isSecond⟩ => match unitList_units P _ g inner with
           | ⟨_, _, unit, _⟩ => Nat.noConfusion (congrArg Part.index
               ((congrArg Part.up unit).symm.trans (isSecond.trans isFirst.symm))))
@@ -820,7 +820,7 @@ theorem member_mem {m i : Nat} {o : Nat → Prop} (lt : i < m) :
 
 theorem of_mem_family {m : Nat} {o : Nat → Prop} {c : Place o} (mem : c ∈ family m o) :
     ∃ i, i < m ∧ c = .member i :=
-  match exists_of_mem_map mem with
+  match preimage_of_mem_map mem with
   | ⟨i, inside, same⟩ =>
     ⟨i, Nat.lt_of_lt_of_le (steps_within inside) (Nat.le_of_eq (Nat.zero_add _)), same.symm⟩
 
@@ -943,7 +943,7 @@ theorem takers_count {k : Nat → Nat} (sgn : sign (total (P t) Passage.taken) �
     (whole_count sgn kX (whole_total (P t) kX))
 
 theorem outer_mem : Part.outer ∈ (flow P u o).present t :=
-  .tail _ (mem_append_right (unitList (P t) (u t)) (.head []))
+  .tail _ (mem_append_of_right (unitList (P t) (u t)) (.head []))
 
 /-- What exchanges beyond the family exchanges at the step it belongs to. -/
 theorem beyond_moves : ∀ (f : Part) {s : Nat} {h : o s},
@@ -1949,7 +1949,7 @@ theorem RealizesGivers.roles (realizes : L.RealizesGivers W t es P k r e) :
 
 theorem CapacityAt.roles {g : Nat} (capacity : L.CapacityAt es t g) :
     L.roles.CapacityAt (es.map .inr) t g :=
-  fun _ mem => match exists_of_mem_map mem with
+  fun _ mem => match preimage_of_mem_map mem with
   | ⟨f, present, same⟩ => Eq.subst (motive := fun x => total (es.map .inr) (L.roles.give t x) ≤ g)
       same (Nat.le_trans (Nat.le_of_eq (total_map Sum.inr (L.roles.give t (.inl f)) es))
         (capacity f present))
@@ -2209,9 +2209,6 @@ def Site.point {o : Nat → Prop} : Site o → Nat × Nat
   | .node x => x
   | .beyond _ _ => (0, 0)
 
-theorem node_injective {x y : Nat × Nat} (same : (Site.node x : Site o) = .node y) : x = y :=
-  congrArg Site.point same
-
 theorem total_present (t : Nat) (q : Relatum → Nat) :
     total ((flow σ ρ P d g o).present t) q =
       total (steps 0 ((d t).length + (g t).length)) (fun a => q (.numbered a)) + q .outer :=
@@ -2222,16 +2219,16 @@ theorem distinct_present (t : Nat) : Distinct ((flow σ ρ P d g o).present t) :
   distinct_append (distinct_map numbered_injective (steps_distinct 0 _))
     (show ¬ Relatum.outer ∈ ([] : List Relatum) ∧ Distinct ([] : List Relatum) from
       ⟨fun nothing => (nomatch nothing), trivial⟩)
-    fun _ inside last => match exists_of_mem_map inside, mem_cons_cases last with
+    fun _ inside last => match preimage_of_mem_map inside, mem_cons_cases last with
       | ⟨_, _, same⟩, .inl outer => nomatch same.trans outer
       | _, .inr nothing => nomatch nothing
 
 theorem outer_mem (t : Nat) : Relatum.outer ∈ (flow σ ρ P d g o).present t :=
-  mem_append_right _ (.head [])
+  mem_append_of_right _ (.head [])
 
 theorem numbered_mem {t a : Nat} (lt : a < (d t).length + (g t).length) :
     Relatum.numbered a ∈ (flow σ ρ P d g o).present t :=
-  mem_append_left _ (mem_map_of (steps_of_within (Nat.zero_le a)
+  mem_append_of_left _ (mem_map_of (steps_of_within (Nat.zero_le a)
     (Nat.lt_of_lt_of_le lt (Nat.le_of_eq (Nat.zero_add _).symm))))
 
 /-! ### At one step -/
@@ -2351,7 +2348,7 @@ theorem passages {t : Nat} (sumd : total (d t) (fun y => y) = total (P t) Passag
 
 theorem distinct_family (t : Nat) : Distinct (family ρ P o t) :=
   distinct_map_on (fun j j' _ _ same => some_inj ((track_origin σ ρ links.forth t j).symm.trans
-      ((congrArg (fun x => track σ ρ x t) (node_injective same)).trans
+      ((congrArg (fun x => track σ ρ x t) (Site.node.inj same)).trans
         (track_origin σ ρ links.forth t j'))))
     (steps_distinct 0 _)
 
@@ -2364,7 +2361,7 @@ theorem mem_family {t j : Nat} (lt : j < (P t).length) :
 omit links in
 theorem of_mem_family {t : Nat} {c : Site o} (mem : c ∈ family ρ P o t) :
     ∃ j, j < (P t).length ∧ c = .node (origin ρ t j) :=
-  match exists_of_mem_map mem with
+  match preimage_of_mem_map mem with
   | ⟨j, inside, same⟩ =>
     ⟨j, Nat.lt_of_lt_of_le (steps_within inside) (Nat.le_of_eq (Nat.zero_add _)), same.symm⟩
 

@@ -315,7 +315,7 @@ theorem open_iff_meets_principal {C : Ideal P → Prop} (hc : Open C) (I : Ideal
 /-- The stretches whose finite histories an open class holds are an upper set. -/
 theorem principal_upper {C : Ideal P → Prop} (hc : Open C) :
     Upper P (fun p => C (principal P p)) :=
-  fun hpq hp => hc.upper hp (principal_le_principal_iff.mpr hpq)
+  fun hpq hp => hc.upper hp (Ideals.principal_le_iff.mpr hpq)
 
 /-- **A class is open exactly where it is the class of ideals meeting an upper set.** -/
 theorem open_iff_upper (C : Ideal P → Prop) :
@@ -375,7 +375,7 @@ theorem verifiable_compl_refutable_iff :
     match law Bool chain (Meets fun b => b = true) (meets_open _).verifiable (chain.cut φ)
         (fun outside => notNot fun h => outside ⟨true, fun _ => h, rfl⟩) with
     | ⟨true, hp, _⟩ => hp rfl
-    | ⟨false, _, blocked⟩ => absurd (principal_mem chain false)
+    | ⟨false, _, blocked⟩ => absurd (Preorder.refl chain false)
         (blocked (principal chain false) fun ⟨_, hb, e⟩ => nomatch (hb e : false = true)),
    fun dne _ _ _ verifiable => VerifiableBy.compl_refutable verifiable fun _ => dne _⟩
 
@@ -413,9 +413,6 @@ theorem interior_iff_meets (C : Ideal P → Prop) (I : Ideal P) :
 theorem interior_open (C : Ideal P → Prop) : Open (Interior C) :=
   verifiable_open (interiorBy_verifiable C)
 
-theorem interior_sub {C : Ideal P → Prop} {I : Ideal P} (hI : Interior C I) : C I :=
-  InteriorBy.holds hI
-
 /-- **The interior is the largest open subclass.** -/
 theorem interior_largest {C E : Ideal P → Prop} (he : Open E) (sub : ∀ I, E I → C I)
     {I : Ideal P} (hI : E I) : Interior C I :=
@@ -425,11 +422,6 @@ theorem interior_largest {C E : Ideal P → Prop} (he : Open E) (sub : ∀ I, E 
 theorem Open.interior_iff {C : Ideal P → Prop} (hc : Open C) (I : Ideal P) :
     Interior C I ↔ C I :=
   VerifiableBy.interior_iff hc.verifiable
-
-/-- **The hull of a class meets no ideal of the interior of its complement.** -/
-theorem hull_not_interior_compl {C : Ideal P → Prop} {I : Ideal P} (hI : Hull C I) :
-    ¬ Interior (fun J => ¬ C J) I :=
-  AdheresBy.not_interior_compl hI
 
 end Classes
 
@@ -670,10 +662,6 @@ theorem Dense.noStretchRefutes {K : Run P → Prop} (dense : Dense K) : NoStretc
   fun r h none_ => match dense r h with
     | ⟨r', inside, agree⟩ => none_ r' agree inside
 
-/-- **No stretch refutes the remainder.** -/
-theorem remainder_noStretchRefutes (K : Run P → Prop) : NoStretchRefutes (Remainder K) :=
-  remainder_not_refuted K
-
 /-- **A refutable reading refuted by no stretch excludes nothing**, up to double negation. -/
 theorem Refutable.noStretchRefutes_not_not {K : Run P → Prop} (refutable : Refutable K)
     (unrefuted : NoStretchRefutes K) (r : Run P) : ¬ ¬ K r :=
@@ -684,7 +672,7 @@ theorem Refutable.noStretchRefutes_not_not {K : Run P → Prop} (refutable : Ref
 to.** -/
 theorem Refutable.remainder_not_not {K : Run P → Prop} (refutable : Refutable (Remainder K))
     {r : Run P} (adheres : Adheres K r) : ¬ ¬ K r :=
-  fun outside => refutable.noStretchRefutes_not_not (remainder_noStretchRefutes K) r
+  fun outside => refutable.noStretchRefutes_not_not (remainder_not_refuted K) r
     fun rest => outside (rest adheres)
 
 /-! ### A practice that keeps a favoured verdict -/
@@ -772,17 +760,12 @@ theorem open_compl_adheres {C : Ideals.Ideal (stretchOrder P) → Prop} (hc : Id
 def verifyingClass (K : Run P → Prop) : Ideals.Ideal (stretchOrder P) → Prop :=
   Ideals.Meets fun e : Run P × Nat => ∀ r' : Run P, r'.stretches.mem e → K r'
 
-/-- A run lies in the verifying class exactly where it is verified in the reading. -/
-theorem verifyingClass_iff {K : Run P → Prop} {r : Run P} :
-    verifyingClass K r.stretches ↔ Verified K r :=
-  verified_iff_interiorBy.symm
-
 /-- **A reading is verifiable exactly where it is the reading of its verifying class**, which is
 open. -/
 theorem verifiable_iff_class {K : Run P → Prop} :
     Verifiable K ↔ ∀ r, K r ↔ verifyingClass K r.stretches :=
-  ⟨fun verifiable r => ⟨fun inside => verifyingClass_iff.mpr (verifiable r inside),
-     fun meets => (verifyingClass_iff.mp meets).holds⟩,
+  ⟨fun verifiable r => ⟨fun inside => verified_iff_interiorBy.mp (verifiable r inside),
+     fun meets => (verified_iff_interiorBy.mpr meets).holds⟩,
    fun h => verifiable_iff_open.mpr ⟨_, Ideals.meets_open _, h⟩⟩
 
 /-- **Verifiable readings are closed under meets**: verifying both is verifying each. -/

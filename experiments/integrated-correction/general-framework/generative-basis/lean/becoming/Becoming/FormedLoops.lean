@@ -64,7 +64,7 @@ theorem formedWorld_before (reads : ReadsBefore κ) {T t : Nat} (le : t ≤ T) (
           present δ).web.level t (.inr c) ∧
       (carriedWorld cs part σ (strengthsBefore T (formedCouplings cs part σ κ present δ))
           present δ).Balanced :=
-  ⟨(formedWorld_level reads t c).trans (carried_before t le t (Nat.le_refl t) c).symm,
+  ⟨(formedCourse_eq_carried reads t c).trans (carried_before t le t (Nat.le_refl t) c).symm,
    carriedWorld_balanced⟩
 
 end Formed

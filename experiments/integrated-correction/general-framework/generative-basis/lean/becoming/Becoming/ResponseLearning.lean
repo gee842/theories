@@ -58,9 +58,6 @@ open CodeAcquisition RouteFormation
 
 /-! ## Arithmetic used below -/
 
-theorem add_sub_of_le' {m k : Nat} (le : m ≤ k) : m + (k - m) = k :=
-  (Nat.add_comm m (k - m)).trans (sub_add_of_le le)
-
 /-! ## Teaching pairs -/
 
 /-- A sender and a receiver. -/
@@ -132,7 +129,7 @@ theorem response_within_stock (s : Apparatus) (e : Expr) {out : List Bool} {left
 def joint (x : Teaching) : Nat := x.sender.stock + x.sender.drawn + x.receiver.stock + x.receiver.drawn
 
 theorem sender_kept {rem ss ds : Nat} (le : rem ≤ ss) : rem + (ds + (ss - rem)) = ss + ds := by
-  rw [Nat.add_left_comm, add_sub_of_le' le, Nat.add_comm]
+  rw [Nat.add_left_comm, add_sub_of_le le, Nat.add_comm]
 
 theorem regroup (a b c d : Nat) : a + b + c + d = (a + b) + (c + d) := Nat.add_assoc (a + b) c d
 

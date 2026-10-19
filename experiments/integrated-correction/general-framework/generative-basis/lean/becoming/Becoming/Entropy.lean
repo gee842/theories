@@ -842,8 +842,8 @@ def configurationsWithin (n K : Nat) : List (List Nat) :=
 
 theorem EntropyLists.mem_joinMap {α β : Type} {g : α → List β} {b : β} :
     ∀ {as : List α} {a : α}, a ∈ as → b ∈ g a → b ∈ EntropyLists.joinMap as g
-  | _ :: _, _, .head _, mem => mem_append_left _ mem
-  | a' :: _, _, .tail _ inner, mem => mem_append_right (g a') (EntropyLists.mem_joinMap inner mem)
+  | _ :: _, _, .head _, mem => mem_append_of_left _ mem
+  | a' :: _, _, .tail _ inner, mem => mem_append_of_right (g a') (EntropyLists.mem_joinMap inner mem)
 
 theorem head_splits : ∀ K, (0, K) ∈ splits K
   | 0 => .head _
@@ -998,10 +998,6 @@ theorem distinct_configurationsWithin (n K : Nat) : Distinct (configurationsWith
   distinct_joinMap (distinct_configurations n) (distinct_downFrom K) fun _ _ _ _ _ ink ink' =>
     (total_of_mem_configurations ink).symm.trans (total_of_mem_configurations ink')
 
-theorem length_of_map {α β : Type} (g : α → β) : ∀ l : List α, (l.map g).length = l.length
-  | [] => rfl
-  | _ :: l => congrArg (· + 1) (length_of_map g l)
-
 namespace Web
 
 variable {W : Web F C} {cs : List C}
@@ -1016,7 +1012,7 @@ its stock. -/
 theorem config_within {t K : Nat} (le : W.stock cs t ≤ K) :
     W.config cs t ∈ configurationsWithin cs.length K :=
   Eq.subst (motive := fun n => W.config cs t ∈ configurationsWithin n K)
-    (length_of_map (W.level t) cs)
+    (length_map (W.level t) cs)
     (mem_configurationsWithin (Nat.le_trans (Nat.le_of_eq (W.config_total cs t)) le))
 
 /-- A family's configuration is among the configurations of its members totalling its
@@ -1024,7 +1020,7 @@ stock. -/
 theorem config_exact {t K : Nat} (same : W.stock cs t = K) :
     W.config cs t ∈ configurations cs.length K :=
   Eq.subst (motive := fun n => W.config cs t ∈ configurations n K)
-    (length_of_map (W.level t) cs)
+    (length_map (W.level t) cs)
     (Eq.subst (motive := fun k => W.config cs t ∈ configurations (W.config cs t).length k)
       ((W.config_total cs t).trans same) (mem_configurations (W.config cs t)))
 
@@ -1673,13 +1669,6 @@ theorem no_arrow {all : List w.Relatum} (distinct : Distinct all)
 
 end World
 
-/-- Lists agreeing member by member under two maps are mapped alike. -/
-theorem map_congr {α β : Type} {g h : α → β} (same : ∀ a, g a = h a) :
-    ∀ l : List α, l.map g = l.map h
-  | [] => rfl
-  | a :: l => show g a :: l.map g = h a :: l.map h from
-      (congrArg (· :: l.map g) (same a)).trans (congrArg (h a :: ·) (map_congr same l))
-
 /-! ## A unit carried back and forth -/
 
 namespace Passing
@@ -1817,7 +1806,7 @@ theorem counted : world.Counted :=
             (Nat.lt_of_lt_of_le Nat.one_pos (Nat.le_of_eq (holds_self (side t)).symm))⟩⟩⟩
 
 theorem config_back (T : Nat) : web.config all (T + 2) = web.config all T :=
-  map_congr (fun x => match x with
+  map_eq_of (fun x => match x with
     | none => rfl
     | some b => congrArg (holds b) (ListTests.not_not (side T))) all
 

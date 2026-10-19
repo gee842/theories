@@ -330,8 +330,8 @@ def SameHistory : History A → History A → Prop
 theorem historyIdeal_same_iff : ∀ h k : History A,
     Ideals.Ideal.Same (historyIdeal h) (historyIdeal k) ↔ SameHistory h k
   | .finite _, .finite _ =>
-    ⟨fun same => prefix_antisymm (Ideals.principal_le_principal_iff.mp same.le)
-        (Ideals.principal_le_principal_iff.mp same.ge),
+    ⟨fun same => prefix_antisymm (Ideals.principal_le_iff.mp same.le)
+        (Ideals.principal_le_iff.mp same.ge),
      fun e => by subst e; exact Ideals.Ideal.Same.refl _⟩
   | .finite w, .infinite a => ⟨fun same => trace_not_le_principal a w same.ge, False.elim⟩
   | .infinite a, .finite w => ⟨fun same => trace_not_le_principal a w same.le, False.elim⟩
@@ -551,7 +551,7 @@ theorem finiteOr_hull (K : (Nat → A) → Prop) (I : Ideals.Ideal (prefixOrder 
 not refutable.** -/
 theorem finiteOr_not_refutable (K : (Nat → A) → Prop) (a : Nat → A)
     (outside : ∀ b, (∀ n, a n = b n) → ¬ K b) : ¬ Ideals.Refutable (FiniteOr K) :=
-  fun refutable => Ideals.Refutable.hull_not_not refutable (finiteOr_hull K (traceIdeal a)) fun
+  fun refutable => Ideals.RefutableBy.not_not refutable (finiteOr_hull K (traceIdeal a)) fun
     | .inl ⟨w, same⟩ => trace_not_le_principal a w same.le
     | .inr ⟨b, hb, same⟩ => outside b (trace_le_trace_iff.mp same.le) hb
 
@@ -603,7 +603,7 @@ theorem adheres_iff_closed {K : Run P → Prop} {r : Run P} :
   ⟨fun adheres _ hc sub => Ideals.hull_least hc
       (fun _ ⟨r', inside, same⟩ => hc.same (sub r' inside) same.symm) (adheres_iff_hull.mp adheres),
    fun all => adheres_iff_hull.mpr (all _ (Ideals.hull_closed _)
-      fun r' inside => Ideals.hull_contains ⟨r', inside, Ideals.Ideal.Same.refl _⟩)⟩
+      fun r' inside => Ideals.AdheresBy.of ⟨r', inside, Ideals.Ideal.Same.refl _⟩)⟩
 
 /-- **The closure is unique**: a closed class of histories holding a reading's runs, and below every
 closed class holding them, holds exactly the runs adhering to the reading. -/
@@ -670,7 +670,7 @@ theorem refutable_closed_iff :
         fun _ outside => absurd (fun h => outside (.inr h)) notNot).lower
         (I := Ideals.principal _ (unitRun, 1)) (J := Ideals.principal _ (unitRun, 0))
         (.inl ((stretchOrder _).refl _))
-        (Ideals.principal_le_principal_iff.mpr ⟨Nat.zero_le 1, unit_agree _ _ 0⟩) with
+        (Ideals.principal_le_iff.mpr ⟨Nat.zero_le 1, unit_agree _ _ 0⟩) with
     | .inl atOne => absurd atOne.1 (Nat.not_succ_le_zero 0)
     | .inr holds => holds,
    fun dne _ _ P C refutable =>

@@ -662,17 +662,6 @@ theorem succ_add (a : Nat) : ∀ n : Nat, (a + 1) + n = (a + n) + 1
   | 0 => rfl
   | n + 1 => congrArg Nat.succ (succ_add a n)
 
-theorem succ_sub_succ (n : Nat) : ∀ m : Nat, (n + 1) - (m + 1) = n - m
-  | 0 => rfl
-  | m + 1 => congrArg Nat.pred (succ_sub_succ n m)
-
-/-- What is added to `a` is what remains when `a` is taken away again. -/
-theorem add_sub_left : ∀ a n : Nat, a + n - a = n
-  | 0, n => zero_add n
-  | a + 1, n =>
-    (congrArg (fun k => k - (a + 1)) (succ_add a n)).trans
-      ((succ_sub_succ (a + n) a).trans (add_sub_left a n))
-
 end MoveFormation
 
 section Kept
@@ -686,7 +675,7 @@ theorem Run.keepHistory_formed (r : Run (keepHistory P)) :
     ∃ policy : S × List (S × A) → A, Readout.Decodes r.state r.act policy :=
   ⟨fun h => r.act (h.2.length - (r.state 0).2.length), fun n =>
     congrArg r.act
-      ((MoveFormation.add_sub_left (r.state 0).2.length n).symm.trans
+      ((Naturals.add_sub_cancel_left (r.state 0).2.length n).symm.trans
         (congrArg (fun k => k - (r.state 0).2.length) (keepHistory_length r n).symm))⟩
 
 end Kept

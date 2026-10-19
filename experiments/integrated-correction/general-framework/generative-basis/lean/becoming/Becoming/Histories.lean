@@ -77,10 +77,6 @@ variable {S : Type u} {A : Type v}
 def Admits (P : Process S A) (g : Nat → S) (m : Nat → A) : Prop :=
   ∀ n, P.step (g n) (m n) (g (n + 1))
 
-/-- A run's history is admitted by its law. -/
-theorem Run.admits {P : Process S A} (r : Run P) : Admits P r.state r.act :=
-  r.step
-
 /-- The law a family of histories shows: the steps its histories take. -/
 def ShownBy (H : (Nat → S) → (Nat → A) → Prop) : Process S A :=
   ⟨fun s a t => ∃ g m n, H g m ∧ g n = s ∧ m n = a ∧ g (n + 1) = t⟩

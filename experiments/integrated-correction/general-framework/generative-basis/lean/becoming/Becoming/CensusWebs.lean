@@ -35,16 +35,6 @@ section Census
 
 variable {F C : Type} (W : Web F C)
 
-/-- **The census of a web over a stretch, with no decidedness.** Where what is active is listed
-at each step of the stretch, each formation once, and the ceasings and arisings across it are
-counted, the list at the end with what ceased is the list at the start with what arose. -/
-theorem listed_over_stretch {l : Nat → List F} {S : Nat} (n : Nat) {A D : Nat}
-    (listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (l s) ∧ ∀ f, W.active s f ↔ f ∈ l s)
-    (ceased : CountsAcross l (fun t f => W.Ceases t f) (steps S n) D)
-    (arose : CountsAcross (fun t => l (t + 1)) (fun t f => W.Arises t f) (steps S n) A) :
-    (l (S + n)).length + D = (l S).length + A :=
-  Counts.listed_over_stretch (p := fun f t => W.active t f) n listing ceased arose
-
 /-- **Over any stretch of a web, wherever a listed family's arisings and ceasings are counted,
 they differ by at most its members.** No decidedness is assumed. -/
 theorem keep_pace {fs : List F} {S n A D : Nat}
@@ -52,23 +42,6 @@ theorem keep_pace {fs : List F} {S n A D : Nat}
     (ceased : CountsAcross (fun _ => fs) (fun t f => W.Ceases t f) (steps S n) D) :
     A ≤ fs.length + D ∧ D ≤ fs.length + A :=
   CountsAcross.keep_pace (p := fun f t => W.active t f) arose ceased
-
-/-- **Where a procedure decides a web's activity, its marks count the formations of a family
-arising across a step.** -/
-theorem arisings_count [∀ t f, Decidable (W.active t f)] (fs : List F) (t : Nat) :
-    Counts fs (fun f => W.Arises t f) (comings fs (fun f s => W.active s f) t) :=
-  comings_counts (as := fs) (p := fun f s => W.active s f) t
-
-/-- **And those ceasing.** -/
-theorem ceasings_count [∀ t f, Decidable (W.active t f)] (fs : List F) (t : Nat) :
-    Counts fs (fun f => W.Ceases t f) (ceasings fs (fun f s => W.active s f) t) :=
-  ceasings_counts (as := fs) (p := fun f s => W.active s f) t
-
-/-- **A census of what is active in a web decides identity among the formations active at each
-step.** -/
-theorem census_identityDecided {l : Nat → List F} (listed : Listed (fun f t => W.active t f) l)
-    (t : Nat) : IdentityDecided (l t) :=
-  listed.identityDecided t
 
 /-- **A family's stock once per member is one number**: two lists listing the family once give
 it the same stock at every step. -/

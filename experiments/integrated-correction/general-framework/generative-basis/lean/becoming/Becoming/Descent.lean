@@ -283,11 +283,6 @@ theorem apart_sustenance_connected : (apart.sustenance own sig).Connected
   | (.flower, _), (.bee, _), _, alive' =>
       Reach.of_step (a := ()) ⟨.inr (.inl ⟨rfl, rfl, Nat.zero_lt_one⟩), alive'⟩
 
-/-- The other of the other is the relatum itself. -/
-theorem other_other : ∀ x : Relatum, other (other x) = x
-  | .bee => rfl
-  | .flower => rfl
-
 /-- Where the identification enters: relabelling the conditions of the bee and the flower
 each onto the other keeps co-participation and interaction, which do not connect them,
 and disconnects living on, which does. -/
@@ -297,7 +292,7 @@ theorem relabel_sustenance :
       (apart.interaction own sig).Connected) ∧
     (apart.sustenance own sig).Connected ∧
       ¬ ((apart.relabel other).sustenance own sig).Connected :=
-  have onto (c : Relatum) : ∃ y, other y = c := ⟨other c, other_other c⟩
+  have onto (c : Relatum) : ∃ y, other y = c := ⟨other c, Mutualism.other_twice c⟩
   ⟨Web.relabel_valuation_connected onto own sig, Web.relabel_interaction_connected onto own sig,
    apart_sustenance_connected own sig, fun connected =>
     Relatum.noConfusion (Invariant.reach

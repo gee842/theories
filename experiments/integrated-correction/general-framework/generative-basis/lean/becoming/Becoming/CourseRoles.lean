@@ -53,10 +53,6 @@ theorem roles_give (t : Nat) (f c : R) :
     (ofRoles L W).flow.give t (.inl f) (.inr c) = (ofKind L W).flow.give t f c :=
   rfl
 
-/-- **The two readings of a flow and a web of one kind balance together**, with no premise. -/
-theorem kind_balanced_iff_roles : (ofKind L W).Balanced ↔ (ofRoles L W).Balanced :=
-  (L.roles_balances (W := W)).symm
-
 end World
 
 namespace CourseRoles
@@ -97,7 +93,7 @@ theorem give_eq (t : Nat) (f c : R) :
 
 /-- **The two readings of one course balance together**, with no premise. -/
 theorem balanced_iff : (law.world present start W).Balanced ↔ (law.courseWorld present start W).Balanced :=
-  World.kind_balanced_iff_roles _ _
+  (Flow.roles_balances _).symm
 
 /-- **One run of exchange.** Where the course is feasible, the run of exchange read from the
 one-kind world and the run read from the two-role world stand at the same levels at every step. -/

@@ -1149,19 +1149,6 @@ instance decideDissolves (W : Web F C) [∀ t g c, Decidable (W.requires t g c)]
     (g : F) (c : C) : Decidable (W.Dissolves t g c) :=
   instDecidableAnd
 
-/-- The census balance read of dependence, over a stretch at each step of which the
-dependences are listed: the dependences holding at the end with those that dissolved are
-those holding at the start with those that formed (`Listed.over_stretch_on`). -/
-theorem DependenceCensus.over_stretch_on {W : Web F C} [∀ t g c, Decidable (W.requires t g c)]
-    {deps : Nat → List (F × C)} {S n : Nat}
-    (listing : ∀ s, S ≤ s → s ≤ S + n →
-      Distinct (deps s) ∧ ∀ d, W.requires s d.1 d.2 ↔ d ∈ deps s) :
-    (deps (S + n)).length + total (steps S n) (fun t => total (deps t) fun d =>
-      mark (W.Dissolves t d.1 d.2)) =
-      (deps S).length + total (steps S n) (fun t => total (deps (t + 1)) fun d =>
-        mark (W.Forms t d.1 d.2)) :=
-  Listed.over_stretch_on (p := fun (d : F × C) t => W.requires t d.1 d.2) listing
-
 /-- The census balance read of dependence: over any stretch, the dependences holding at the
 end with those that dissolved are those holding at the start with those that formed
 (`Listed.over_stretch`). -/
@@ -1171,7 +1158,7 @@ theorem DependenceCensus.over_stretch {W : Web F C} [∀ t g c, Decidable (W.req
       mark (W.Dissolves t d.1 d.2)) =
       (deps S).length + total (steps S n) (fun t => total (deps (t + 1)) fun d =>
         mark (W.Forms t d.1 d.2)) :=
-  DependenceCensus.over_stretch_on fun s _ _ => census s
+  Listed.over_stretch_on (p := fun (d : F × C) t => W.requires t d.1 d.2) fun s _ _ => census s
 
 variable (W : Web F C) [∀ t f, Decidable (W.active t f)]
 
@@ -1196,21 +1183,6 @@ theorem unceasing_of_growth {alive : Nat → List F} (census : W.Census alive)
         (fun f mem => ((census (t + 1)).2 f).mpr mem) up with
       | ⟨f, _, arises⟩ => ⟨t, f, from_, arises⟩
 
-/-- Under a census, ceasing at arbitrarily late steps needs arising at arbitrarily late
-steps (`Listed.coming_of_ceasing`): with finitely many formations active at each step,
-nothing keeps ceasing unless something keeps arising. -/
-theorem arising_of_ceasing {alive : Nat → List F} (census : W.Census alive)
-    (ceasing : ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f) : W.Unceasing :=
-  Listed.coming_of_ceasing census ceasing
-
-/-- With at most `B` formations active at each step from some step on, arising at
-arbitrarily late steps needs ceasing at arbitrarily late steps
-(`Listed.ceasing_of_coming`). -/
-theorem ceasing_of_arising {alive : Nat → List F} (census : W.Census alive) {T B : Nat}
-    (bounded : ∀ t, T ≤ t → (alive t).length ≤ B) (arising : W.Unceasing) :
-    ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
-  Listed.ceasing_of_coming census bounded arising
-
 /-- So with at most `B` formations active at each step from some step on, some formation
 arises at arbitrarily late steps exactly when some formation ceases at arbitrarily late
 steps: the law for finitely many formations (`unceasing_iff`) needs only a count bounded
@@ -1220,18 +1192,6 @@ theorem unceasing_iff_bounded {alive : Nat → List F} (census : W.Census alive)
     W.Unceasing ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
   Listed.coming_iff_ceasing census bounded
 
-/-- The census balance read of activity, over a stretch at each step of which the active
-formations are listed: the formations active at the end with those that ceased are those
-active at the start with those that arose (`Listed.over_stretch_on`). Nothing is asked of
-the steps outside the stretch. -/
-theorem Census.over_stretch_on {alive : Nat → List F} {S n : Nat}
-    (listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (alive s) ∧ ∀ f, W.active s f ↔ f ∈ alive s) :
-    (alive (S + n)).length + total (steps S n) (fun t => total (alive t) fun f =>
-      mark (W.Ceases t f)) =
-      (alive S).length + total (steps S n) (fun t => total (alive (t + 1)) fun f =>
-        mark (W.Arises t f)) :=
-  Listed.over_stretch_on (p := fun f t => W.active t f) listing
-
 /-- The census balance read of activity: over any stretch, the formations active at the end
 with those that ceased are those active at the start with those that arose
 (`Listed.over_stretch`). -/
@@ -1240,7 +1200,7 @@ theorem Census.over_stretch {alive : Nat → List F} (census : W.Census alive) (
       mark (W.Ceases t f)) =
       (alive S).length + total (steps S n) (fun t => total (alive (t + 1)) fun f =>
         mark (W.Arises t f)) :=
-  Census.over_stretch_on W fun s _ _ => census s
+  Listed.over_stretch_on (p := fun f t => W.active t f) fun s _ _ => census s
 
 end Web
 

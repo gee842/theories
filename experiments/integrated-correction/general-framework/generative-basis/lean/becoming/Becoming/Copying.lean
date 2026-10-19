@@ -76,10 +76,6 @@ theorem add_le_iff {a b n : Nat} : a + b ≤ n ↔ a ≤ n ∧ b ≤ n - a :=
   ⟨fun h => ⟨Nat.le_trans (Nat.le_add_right a b) h, Naturals.le_sub_of_add_le h⟩,
    fun ⟨le, h⟩ => Nat.le_trans (Nat.add_le_add_left h a) (Nat.le_of_eq (add_sub_of_le le))⟩
 
-theorem mul_regroup (a b : Nat) : ∀ c : Nat, a * b * c = a * (b * c)
-  | 0 => rfl
-  | c + 1 => (congrArg (· + a * b) (mul_regroup a b c)).trans (Nat.left_distrib a (b * c) b).symm
-
 /-- What holds of both branches holds of the choice. -/
 theorem ite_cases {β : Sort v} {c : Prop} [inst : Decidable c] {a b : β} (P : β → Prop)
     (pos : c → P a) (neg : ¬ c → P b) : P (if c then a else b) :=
@@ -90,10 +86,6 @@ theorem ite_cases {β : Sort v} {c : Prop} [inst : Decidable c] {a b : β} (P : 
 section Lists
 
 variable {β : Type u}
-
-theorem append_regroup : ∀ (a b c : List β), a ++ b ++ c = a ++ (b ++ c)
-  | [], _, _ => rfl
-  | x :: xs, b, c => congrArg (x :: ·) (append_regroup xs b c)
 
 theorem append_cancel : ∀ (l : List β) {a b : List β}, l ++ a = l ++ b → a = b
   | [], _, _, h => h
@@ -144,7 +136,7 @@ theorem extends_along {P : Process S A} {out : S → List β} (ext : Extends P o
   | _, _, _ :: _, .cons step tail =>
     match ext _ _ _ step, extends_along ext tail with
     | ⟨first, h1⟩, ⟨rest, h2⟩ =>
-      ⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (append_regroup _ _ _))⟩
+      ⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (ListTests.append_assoc _ _ _))⟩
 
 /-- **An output is extended along every course exactly when every step extends it.** -/
 theorem extends_along_iff {P : Process S A} {out : S → List β} :
@@ -328,7 +320,7 @@ theorem copies : ∀ (prev : Option α) (built word pool : List α) (free used :
     show steps draw xs.length (tick draw ⟨prev, x :: xs, built, pool, free, used⟩) = _
     rw [tick_cons, if_pos ⟨pos, first⟩,
       copies (some x) (built ++ [x]) xs (remove x pool) _ _ rest more,
-      append_regroup, Naturals.sub_sub, Nat.add_assoc]
+      ListTests.append_assoc, Naturals.sub_sub, Nat.add_assoc]
     all_goals rfl
 
 /-- A completed copy was supplied and covered. -/
@@ -380,7 +372,7 @@ theorem built_iff : ∀ (prev : Option α) (built word pool : List α) (free use
       | isTrue pos, isTrue first =>
         rw [tick_cons, if_pos ⟨pos, first⟩] at done'
         have ⟨rest, more⟩ := (built_iff (some x) (built ++ [x]) xs _ _ _).mp
-          (done'.trans (append_regroup built [x] xs).symm)
+          (done'.trans (ListTests.append_assoc built [x] xs).symm)
         exact ⟨supplies_cons_iff.mpr ⟨pos, rest⟩, add_le_iff.mpr ⟨first, more⟩⟩
       | isFalse absent, _ =>
         have fixed : tick draw ⟨prev, x :: xs, built, pool, free, used⟩ =
@@ -777,7 +769,7 @@ theorem readSteps_extends (read : Nat → Option α) :
     match readStep_extends draw s (read s.built.length),
       readSteps_extends read n (readTick draw read s) with
     | ⟨first, h1⟩, ⟨rest, h2⟩ =>
-      ⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (append_regroup _ _ _))⟩
+      ⟨first ++ rest, h2.trans ((congrArg (· ++ rest) h1).trans (ListTests.append_assoc _ _ _))⟩
 
 /-- **A copy reading through `read` reproduces a word exactly when every site reads
 the word's token there, the pool supplies the word and the support covers what it draws.** -/
@@ -817,7 +809,7 @@ theorem reading_iff (read : Nat → Option α) : ∀ (word pending : List α) (p
           subst e
           have ih := reading_iff read xs ps (some y) (built ++ [y]) (remove y pool)
             (free - draw prev y) (used + draw prev y) lengths'
-          rw [append_regroup, ListTests.length_append] at ih
+          rw [ListTests.append_assoc, ListTests.length_append] at ih
           exact ih.trans ⟨fun ⟨reads, rest, more⟩ =>
               ⟨⟨hr, reads⟩, supplies_cons_iff.mpr ⟨pos, rest⟩, add_le_iff.mpr ⟨first, more⟩⟩,
             fun ⟨⟨_, reads⟩, supplies, covered⟩ =>
@@ -828,7 +820,7 @@ theorem reading_iff (read : Nat → Option α) : ∀ (word pending : List α) (p
             ⟨some y, ps, built ++ [y], remove y pool, free - draw prev y, used + draw prev y⟩
           exact ⟨fun same => by
               have h := grown.symm.trans same
-              rw [append_regroup] at h
+              rw [ListTests.append_assoc] at h
               exact absurd (List.cons.inj (append_cancel built h)).1 ne,
             fun ⟨reads, _⟩ => absurd (Option.some.inj (hr.symm.trans reads.1)) ne⟩
       | isFalse absent, _ =>
@@ -1145,7 +1137,7 @@ def required : Nat → Nat → Nat
 
 theorem two_mul_pow (k n : Nat) : 2 * k * 2 ^ n = k * 2 ^ (n + 1) :=
   calc 2 * k * 2 ^ n = k * 2 * 2 ^ n := congrArg (· * 2 ^ n) (Nat.mul_comm 2 k)
-    _ = k * (2 * 2 ^ n) := mul_regroup k 2 (2 ^ n)
+    _ = k * (2 * 2 ^ n) := mul_assoc_nat k 2 (2 ^ n)
     _ = k * (2 ^ n * 2) := congrArg (k * ·) (Nat.mul_comm 2 (2 ^ n))
 
 /-- **What doubling draws.** `required n k` and the `k` units of the start make `k * 2 ^ n`. -/
