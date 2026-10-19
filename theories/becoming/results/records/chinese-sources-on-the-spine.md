@@ -30,14 +30,14 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-verify_ro.py passes: 248 passages (95 agreements, 94 exact scopes, 59 divergences), every fragment verbatim in its preserved text (93 files bound by SHA-256), 487 declarations in the current receipt, 117 records, the atlas ids in an excerpt rebuilt from the two archives, and the chapter's tables. Five mappers drafted; the integrator checked every quotation, declaration and record and read every reading, correcting six (study section 207). Not independently reviewed; no collation with a printed edition.
+verify_ro.py passes: 248 passages (95 agreements, 94 exact scopes, 59 divergences), every fragment verbatim in its preserved text (93 files bound by SHA-256), 578 declarations in the current receipt, 119 records, the atlas ids in an excerpt rebuilt from the two archives, and the chapter's tables. Five mappers drafted; the integrator checked every quotation, declaration and record and read every reading, correcting six (study section 207). Not independently reviewed; no collation with a printed edition.
 
 Canonical source: [CHINESE-SOURCES-AND-BECOMING.md](../../chapters/CHINESE-SOURCES-AND-BECOMING.md)
 
 <a id="next--下一步"></a>
 ## Next
 
-Six gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; a code formed between formations; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws. Then the earlier Chinese chapters' superseded parts moved to history.
+Five gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws. Then the earlier Chinese chapters' superseded parts moved to history.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -54,6 +54,7 @@ Ren, 19 October 2026, after sharing the 易道体系图 v1.3.0: “整个中国�
 - related, not a proved adapter: [relative-position-is-zero-sum](relative-position-is-zero-sum.md). Cited by passages of the map.
 - related, not a proved adapter: [place-relations-in-context](place-relations-in-context.md). Cited by passages of the map.
 - related, not a proved adapter: [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md). Closes the seventh gap, the supplements of the hexagram world (Y5).
+- related, not a proved adapter: [a-code-formed-between-formations](a-code-formed-between-formations.md). Closes the second gap (a code formed between formations); the passages 同则同之, 名无固宜, the 說文's 止戈 gloss and 书同文 are re-pointed to its laws.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -78,6 +79,7 @@ Aliases: `the Chinese sources on the spine`, `中国思想诸传统在脊柱上`
 - 19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208; THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.
 - 19 October 2026, Y5: the seventh gap of the chapter's section 8 (the supplements of the hexagram world) is closed by the record hexagram-arrangements-and-laws (study section 209, decision D55); nine passages cite it, and the chapter's claim, quoted from the 易传 chapter, that the order is the orbit of no law is corrected; CHINESE-SOURCES-AND-BECOMING.md, passages.json, THE-THEORY-OF-BECOMING.md re-pointed after reading the change. The claim is unchanged.
+- 19 October 2026, SC (a code formed between formations): the second gap closed by Becoming.SharedCodes (a-code-formed-between-formations); four passages re-pointed to its laws (declarations, the record, the sentence of each reading that named the gap) and the gap marked closed in the map and in chapter sections 5.4, 8 and 11; the next step lists the five gaps still open; the counts verify_ro.py reports brought to 578 declarations and 119 records; CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.
 
 </details>
 

@@ -179,6 +179,7 @@ import Becoming.Postponement
 import Becoming.Novelty
 import Becoming.Reading
 import Becoming.PlaceTransitionNets
+import Becoming.SharedCodes
 import Becoming.ExchangePremises
 import Becoming.Readings
 import Becoming.Coupling
@@ -1728,6 +1729,23 @@ readings of the unfolding (`Becoming.Labelled`).
   every rival is ruled out by a bearing record no family world with the rival explains; where
   words are recovered, every sequence is read exactly when each word's records separate its
   meaning.
+* `Becoming.SharedCodes` (L4): a code formed between formations, with no premise beyond what each
+  law names. Codes map senses to forms and change only by hearing, a process of the spine. Hearing
+  makes no form; a group's agreement is kept exactly through the hearings closed for it, and
+  agreement of all is a rest under every rule. After an order of hearings each formation holds
+  the start's form of its origin, so an order forms agreement from every start exactly where it
+  gives every formation one origin, and the forms an order can make shared are exactly the forms
+  in use; where each takes at once the code a pointer gives it, every start agrees exactly where
+  the pointer's paths have met, and being joined through couplings is not enough. A formation reads another's form for a sense as that sense exactly where their codes
+  agree there; agreement formed sense by sense can merge senses. Hearing keeps every renaming of
+  forms, and a law keeping an exchange of formations with a renaming that moves every form never
+  brings a symmetric disagreement to agreement (`Law.KeepsRelation`, `Law.Commutes.keeps_fixed`):
+  agreement needs a centre, a preferred form or an order of hearing. An imposed code makes all
+  agree, its source loses nothing, and what it merges comes back only from a form kept outside
+  it. A reading written back into the records later generations read rests at once; later
+  records do not recover what came before (`Law.merged_stays`), records kept from before bar a
+  different resolution, and where records are only added a resolution can be lost but never
+  replaced.
 * `Becoming.Likeness` (L3): the laws stated with equality, completed up to likeness, with no
   premise. A description carries a law up to likeness exactly where some equivalence
   registering the claims makes configurations go alike, the law stated with equality being the

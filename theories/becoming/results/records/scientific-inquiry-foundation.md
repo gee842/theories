@@ -127,6 +127,7 @@ Aliases: —
 - 19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208). The claim is unchanged.
 - 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.
 - 19 October 2026, Y5 (Becoming.HexagramSequences): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y5 added a study section). The claim is unchanged.
+- 19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section). The claim is unchanged.
 - 3 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](scientific-inquiry-foundation.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -89,7 +89,31 @@ FIXES = {
         'why': 'the 四庫 page holding 程頤 易傳序; the page breaks the line after 至著者'},
     'shuowen-wu-zhi-ge-gloss': {
         'fragments': ['楚莊王曰：“夫武，定功戢兵。故止戈爲武。”'],
-        'why': 'the page quotes with “ ” (the mapper gave 「」)'},
+        'declarations_add': ['Becoming.SharedCodes.written_rests',
+                             'Becoming.SharedCodes.resolved_alike_merged',
+                             'Becoming.SharedCodes.no_reading_recovers',
+                             'Becoming.SharedCodes.omitted_rest',
+                             'Becoming.SharedCodes.kept_bars',
+                             'Becoming.SharedCodes.added_never_replaced',
+                             'Becoming.SharedCodes.Gloss.taken_up_locks',
+                             'Becoming.SharedCodes.Gloss.uptake_loses'],
+        'records_add': ['a-code-formed-between-formations'],
+        'reading_sub': [('没有断言：律不判楚庄王之规范读法无价值，只判它不是字源。',
+                         ('写回（SharedCodes）：读法一旦写入后人所读的记录，自下一代起即静止并自我确认（written_rests、Gloss.taken_up_locks）；判定相同的历史被合并，'
+                          '后来的记录读不回此前（resolved_alike_merged、no_reading_recovers）；遗漏之下所静止者不是此前记录所判定之义（omitted_rest）。'
+                          '只有保留下来的此前记录阻止另一种判定（kept_bars），只增补的记录使判定失去而不被替换（added_never_replaced、Gloss.uptake_loses）：止为足之读仍可读，'
+                          '靠的是甲骨金文这些保留下来的此前记录。没有断言：律不判楚庄王之规范读法无价值，只判它不是字源。'))],
+        'reading_en_sub': [('and keeps both readings indexed by context since they do not glue.',
+                            ('and keeps both readings indexed by context since they do not glue; written back into the records '
+                             'later readers learn from, the reading rests at once and confirms itself, and only records kept from '
+                             'before (the bone and bronze forms) bar it (SharedCodes: written_rests, kept_bars, '
+                             'added_never_replaced).'))],
+        'gap_closed': ('SC (Becoming.SharedCodes, record a-code-formed-between-formations, study section 210); the '
+                       'statement above is kept as proposed, and where the laws differ from it the record and the study '
+                       'section say so (the coupling-closure form proposed for 名无固宜 is false, Path.never_agree).'),
+        'why': ('the page quotes with “ ” (the mapper gave 「」); SC: Becoming.SharedCodes proved the code formed '
+                'between formations the reading named as a gap; its laws and record added and the sentence that '
+                'named the gap replaced (both languages)')},
     'huishi-li-wu': {
         'fragments': ['至大无外，謂之大一；至小无內，謂之小一。', '日方中方睨，物方生方死。', '氾愛萬物，天地一體也。'],
         'why': 'the page writes 无 (the mapper gave 無)'},
@@ -258,6 +282,72 @@ FIXES = {
         'gap_closed': 'Y5 (Becoming.HexagramSequences): waxWane_moves, run_never_rests, never_comes_to_rest, '
                       'changes_run_never_rests.',
         'why': 'Y5 stated the lemma the reading named as a gap'},
+    'xunzi-tong-ze-tong-zhi': {
+        'declarations_add': ['Becoming.SharedCodes.run_held',
+                             'Becoming.SharedCodes.kept_iff',
+                             'Becoming.SharedCodes.run_agrees_every_start_iff',
+                             'Becoming.SharedCodes.reads_iff',
+                             'Becoming.SharedCodes.run_renamed',
+                             'Becoming.SharedCodes.never_agrees_of_both',
+                             'Becoming.SharedCodes.TwoFormations.three_agree'],
+        'records_add': ['a-code-formed-between-formations'],
+        'reading_sub': [(('“约定俗成”是编码在使用者之间形成并保持；脊柱只有单向取得（给定编码、教师）与已装入编码在信道变化下的保持（References.stays_iff），没有编码在使用者关系中形成的律（见缺口）。'
+                          '结构相合，缺约定一环。'),
+                         ('“约定俗成”是编码在使用者之间形成并保持（SharedCodes）：听取不造新形（run_held），一组在某义上的相合恰经对它封闭的听取而保持（kept_iff）；所成之形由起点与听取次序固定，'
+                          '一个次序恰在给每个形成同一来源时从每个起点都形成相合（run_agrees_every_start_iff）；形成之间恰在编码相合处互读其别（reads_iff，'
+                          'References.stays_iff 的形成之间形式）。不特许任何形式（run_renamed），而既不特许形式也不特许形成者的律永不使对称的分歧相合（never_agrees_of_both）'
+                          '：约定之成要打破一个对称，中心、偏好之形与听取次序各是一途（TwoFormations.three_agree），约定俗成是次序一途。结构相合，约定一环已补上。'))],
+        'reading_en_sub': [('what the spine lacks is the code formed between users (约定俗成).',
+                            ('the code formed between users (约定俗成) is now SharedCodes: hearing makes no form, agreement is kept '
+                             'exactly through closed hearings, the start and the order fix the form, users read each other where '
+                             'codes agree, and a law privileging neither form nor user never settles a symmetric disagreement, so '
+                             'convention breaks a symmetry by the order of use.'))],
+        'gap_closed': ('SC (Becoming.SharedCodes, record a-code-formed-between-formations, study section 210); the '
+                       'statement above is kept as proposed, and where the laws differ from it the record and the study '
+                       'section say so (the coupling-closure form proposed for 名无固宜 is false, Path.never_agree).'),
+        'why': ('SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its '
+                'laws and record added and the sentence that named the gap replaced (both languages)')},
+    'ru-xunzi-ming-wu-gu-yi': {
+        'declarations_add': ['Becoming.SharedCodes.run_renamed_tells_apart_iff',
+                             'Becoming.SharedCodes.renamed_carries_iff',
+                             'Becoming.SharedCodes.never_agrees_of_both',
+                             'Becoming.SharedCodes.TwoFormations.three_agree',
+                             'Becoming.SharedCodes.follow_agrees_iff',
+                             'Becoming.SharedCodes.Path.never_agree'],
+        'records_add': ['a-code-formed-between-formations'],
+        'reading_sub': [('剩余：荀子接着说“其民莫敢托为奇辞以乱正名”，由王者制名并禁止乱名，把约定的形成交给单一中心；而约定在众多使用者之间如何形成、如何保持，脊柱没有定理（见 gap）。',
+                         ('荀子接着说“其民莫敢托为奇辞以乱正名”，由王者制名并禁止乱名，把约定的形成交给单一中心。SharedCodes 给出两者的关系：改名不改变编码所分别者，'
+                          '也不改变它是否承载规律（run_renamed_tells_apart_iff、renamed_carries_iff）；'
+                          '既不特许形式也不特许形成者的律永不使对称的分歧相合（never_agrees_of_both），中心、'
+                          '偏好之形与听取次序各打破一个对称而在一步内相合（TwoFormations.three_agree）：王者制名是中心一途，约定俗成是次序一途。缺口原拟的陈述（各取其所耦合者中最小编号者之码，'
+                          '恰在每个耦合闭包为全体时静止为同）不成立：在路 a–c–b 上两端各为其耦合中最小者，永不相合（Path.never_agree）；指针律之下相合恰是指针之路相遇（follow_agrees_iff）'
+                          '。'))],
+        'reading_en_sub': [('how a shared naming forms among many users, which Xunzi hands to the king, has no law on the spine.',
+                            ('how a shared naming forms among many users, which Xunzi hands to the king, is SharedCodes: renaming '
+                             'changes neither what a code tells apart nor what it carries, and a law privileging neither name nor '
+                             'user never settles a symmetric disagreement, so a centre (the king), a preferred form or the order '
+                             "of use must break the symmetry; the gap's coupling-closure form is false (Path.never_agree)."))],
+        'gap_closed': ('SC (Becoming.SharedCodes, record a-code-formed-between-formations, study section 210); the '
+                       'statement above is kept as proposed, and where the laws differ from it the record and the study '
+                       'section say so (the coupling-closure form proposed for 名无固宜 is false, Path.never_agree).'),
+        'why': ('SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its '
+                'laws and record added and the sentence that named the gap replaced (both languages)')},
+    'shuowen-xu-shu-tong-wen': {
+        'declarations_add': ['Becoming.SharedCodes.run_from_imposition',
+                             'Becoming.SharedCodes.source_loses_nothing',
+                             'Becoming.SharedCodes.run_imposed_stays',
+                             'Becoming.SharedCodes.outside_needed',
+                             'Becoming.SharedCodes.outside_returns'],
+        'records_add': ['a-code-formed-between-formations'],
+        'reading_sub': [('与“约定俗成”所说在使用者之间形成的约定不同（见荀子正名条目的缺口）。',
+                         ('与“约定俗成”所说在使用者之间形成的约定不同。SharedCodes 给出强加编码的确切律：强加使所有人在每一义上相合，每个形成恰失去其编码所分而强加编码所合并者，'
+                          '被强加其编码的形成一无所失（run_from_imposition、source_loses_nothing）；此后在任何听取次序与规则下强加编码保持（run_imposed_stays），'
+                          '被合并的分别只从强加之外保留的形式回来（outside_needed），从这样的形式则一步即回（outside_returns）。“古文由此絕”是外面再无保留旧形之处。'))],
+        'reading_en_sub': [('unlike a convention formed among users.',
+                            ('unlike a convention formed among users; its loss stays under every later exchange and comes back '
+                             'only from a form kept outside the imposition (SharedCodes: run_from_imposition, outside_needed).'))],
+        'why': ('SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its '
+                'laws and record added and the sentence that named the gap replaced (both languages)')},
 }
 
 
@@ -339,6 +429,10 @@ def main():
                 if old not in p['reading']:
                     problems.append(f'{pid}: reading correction does not apply: {old}')
                 p['reading'] = p['reading'].replace(old, new)
+            for old, new in fix.get('reading_en_sub', []):
+                if old not in p['reading_en']:
+                    problems.append(f'{pid}: English reading correction does not apply: {old}')
+                p['reading_en'] = p['reading_en'].replace(old, new)
             if fix:
                 p['corrected'] = fix['why']
             if not src.startswith('wikisource/'):

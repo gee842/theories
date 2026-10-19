@@ -79,7 +79,7 @@ The earlier 义理·拓扑 (§四, §九) argues that a fixed-point-free symmetr
 - related, not a proved adapter: [selection-through-a-model-of-the-options](selection-through-a-model-of-the-options.md). Relabel.Equivariant.tied keeps a tie through an exchange in selection; Law.Commutes.keeps_fixed is the fixed case for a law of change, and Law.Commutes.apart the free case. No instance theorem.
 - related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). The nuclear law 互 is an instance: nuclear_run_act is Law.Commutes.iterate with nuclear_act, and run_complement_apart is Law.Commutes.apart with nuclear_complement and complement_moves.
 
-**Used by:** [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md) · [hexagram-world-laws](hexagram-world-laws.md)
+**Used by:** [a-code-formed-between-formations](a-code-formed-between-formations.md) · [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md) · [hexagram-world-laws](hexagram-world-laws.md)
 
 <a id="sources--来源"></a>
 ### Sources

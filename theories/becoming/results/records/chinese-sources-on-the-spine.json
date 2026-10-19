@@ -50,12 +50,12 @@
     "nondual-method-not-proof"
   ],
   "validation_scope": {
-    "en": "verify_ro.py passes: 248 passages (95 agreements, 94 exact scopes, 59 divergences), every fragment verbatim in its preserved text (93 files bound by SHA-256), 487 declarations in the current receipt, 117 records, the atlas ids in an excerpt rebuilt from the two archives, and the chapter's tables. Five mappers drafted; the integrator checked every quotation, declaration and record and read every reading, correcting six (study section 207). Not independently reviewed; no collation with a printed edition.",
-    "zh": "verify_ro.py 通过：248 段（相合 95、定域 94、相分 59），每段原文逐字见于所存文本（93 个文件以 SHA-256 绑定），487 个声明在现行回执中，117 份记录，图谱编号在由两个存档重建的摘录中，以及章节之表。五个映射者起草；整合者核对每条引文、声明与记录，通读每条读法，改正六处（研究第 207 节）。未经独立审查；未与刻本对校。"
+    "en": "verify_ro.py passes: 248 passages (95 agreements, 94 exact scopes, 59 divergences), every fragment verbatim in its preserved text (93 files bound by SHA-256), 578 declarations in the current receipt, 119 records, the atlas ids in an excerpt rebuilt from the two archives, and the chapter's tables. Five mappers drafted; the integrator checked every quotation, declaration and record and read every reading, correcting six (study section 207). Not independently reviewed; no collation with a printed edition.",
+    "zh": "verify_ro.py 通过：248 段（相合 95、定域 94、相分 59），每段原文逐字见于所存文本（93 个文件以 SHA-256 绑定），578 个声明在现行回执中，119 份记录，图谱编号在由两个存档重建的摘录中，以及章节之表。五个映射者起草；整合者核对每条引文、声明与记录，通读每条读法，改正六处（研究第 207 节）。未经独立审查；未与刻本对校。"
   },
   "next_delta": {
-    "en": "Six gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; a code formed between formations; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws. Then the earlier Chinese chapters' superseded parts moved to history.",
-    "zh": "六项缺口，各先认领再写：水平的双向调节及迟到读法之形；在形成之间形成的编码；经由规则的捕获；以闭包层级分等的次序；跨多个条件的分；跨律比较容忍。然后把较早各中国章节中被取代的部分移入历史。"
+    "en": "Five gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws. Then the earlier Chinese chapters' superseded parts moved to history.",
+    "zh": "五项缺口，各先认领再写：水平的双向调节及迟到读法之形；经由规则的捕获；以闭包层级分等的次序；跨多个条件的分；跨律比较容忍。然后把较早各中国章节中被取代的部分移入历史。"
   },
   "correspondence": {
     "en": "Ren, 19 October 2026, after sharing the 易道体系图 v1.3.0: “整个中国思想的源头，道家，易经，以及整个文字符号系统，包括武（止戈 ），和一些其他的理论体系中，例如儒家，也延续了这一套“relational ontology”，因此，我希望你好好阅读，把两者之间的关系map出来，可以用sub agents，然后再体系性的整合进我们的理论” (provenance, not warrant). The chapter maps 248 passages of the 易传 beyond Y1–Y4, the 老子 with three commentaries and the excavated witnesses, the 儒家 line, the script with 止戈, 庄子 and 玄学, 墨辩 and 名家, 兵家, 法家, 管子 and 纵横, the Buddhist lines received in China, and others. Reading (the AI's, D54): the thesis holds for what the lines start from and observe, its universal forms mostly need a scope, and four non-relational overlays recur, each answered inside its tradition.",
@@ -109,18 +109,25 @@
         "en": "Closes the seventh gap, the supplements of the hexagram world (Y5).",
         "zh": "补上第七项缺口，卦的世界的补充（Y5）。"
       }
+    },
+    {
+      "id": "a-code-formed-between-formations",
+      "detail": {
+        "en": "Closes the second gap (a code formed between formations); the passages 同则同之, 名无固宜, the 說文's 止戈 gloss and 书同文 are re-pointed to its laws.",
+        "zh": "补上第二项缺口（在形成之间形成的编码）；同则同之、名无固宜、说文止戈之释与书同文四段改指向其律。"
+      }
     }
   ],
   "references": [
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "statement",
-      "sha256": "be2f6f4c314a7804a3d171a9b4ba5684ca0755443ceb6972eff8d2875afafc30"
+      "sha256": "c7ee3eea16bdf6486cb2c30bc80b2d5f5958f58dd120195d434098d453513dd2"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
       "role": "integration",
-      "sha256": "1ce2255c93fac9f33115c63f26a6c4f9fcf246519e1ea2f61c2e1113ed1de67b"
+      "sha256": "a604c21a4a85091e5c269e4d13ba94b6b4906a4ed6763b5703e8431048e044ca"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
@@ -140,7 +147,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "4e156fbdeade975089eea5f8e55bd8259b357e0e029325d1b63ba999e761490b"
+      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
     },
     {
       "path": "sources/chinese-classical-texts/PROVENANCE.json",
@@ -177,6 +184,10 @@
     {
       "en": "19 October 2026, Y5: the seventh gap of the chapter's section 8 (the supplements of the hexagram world) is closed by the record hexagram-arrangements-and-laws (study section 209, decision D55); nine passages cite it, and the chapter's claim, quoted from the 易传 chapter, that the order is the orbit of no law is corrected; CHINESE-SOURCES-AND-BECOMING.md, passages.json, THE-THEORY-OF-BECOMING.md re-pointed after reading the change. The claim is unchanged.",
       "zh": "2026年10月19日，Y5：章第 8 节第七项缺口（卦的世界的补充）由记录 hexagram-arrangements-and-laws 补上（研究第 209 节，决定 D55）；九段引之，章中引自易传章的“卦序不是任何律的轨道”之说已更正；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): the second gap closed by Becoming.SharedCodes (a-code-formed-between-formations); four passages re-pointed to its laws (declarations, the record, the sentence of each reading that named the gap) and the gap marked closed in the map and in chapter sections 5.4, 8 and 11; the next step lists the five gaps still open; the counts verify_ro.py reports brought to 578 declarations and 119 records; CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：第二项缺口由 Becoming.SharedCodes（a-code-formed-between-formations）补上；四段改指向其律（声明、记录、各读法中指称缺口的那一句），缺口在对应表与章节第 5.4、8、11 节标为已补上；下一步只列尚未补上的五项缺口；verify_ro.py 所报计数更新为 578 个声明、119 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。评估其余不变。"
     }
   ]
 }

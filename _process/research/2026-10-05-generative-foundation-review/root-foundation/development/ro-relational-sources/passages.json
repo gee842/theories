@@ -5009,12 +5009,19 @@
     "Becoming.Web.rename_tenure",
     "Becoming.Twins.naming_not_identifiesAlike",
     "Becoming.IdentifiesAlike.carries",
-    "Becoming.carries_law_iff"
+    "Becoming.carries_law_iff",
+    "Becoming.SharedCodes.run_renamed_tells_apart_iff",
+    "Becoming.SharedCodes.renamed_carries_iff",
+    "Becoming.SharedCodes.never_agrees_of_both",
+    "Becoming.SharedCodes.TwoFormations.three_agree",
+    "Becoming.SharedCodes.follow_agrees_iff",
+    "Becoming.SharedCodes.Path.never_agree"
    ],
    "records": [
     "identity-across-steps",
     "projection-carrying-a-law",
-    "process-and-frame-as-readings"
+    "process-and-frame-as-readings",
+    "a-code-formed-between-formations"
    ],
    "atlas_ids": [
     {
@@ -5035,8 +5042,8 @@
     }
    ],
    "relational": "A name's fit is not in the thing (无固宜) but formed in joint use (约定俗成); yet naming must follow sameness and difference among things (同则同之，异则异之). Fit is a relation between users, names and what goes alike.",
-   "reading": "AI 的读法：两半各有脊柱对应。“名无固宜”：标签什么也不承载——改名保持一切由关系定义的读法（Web.rename_renewingIn、Web.rename_tenure）。“同则同之，异则异之”：命名把在一切关系中都相同的东西分开就不成立（Twins.naming_not_identifiesAlike），而在构形由相似决定之处，成立的描述承载一条规律（IdentifiesAlike.carries、carries_law_iff）。所以名的“宜”由约定，名的“实”由同异，二者并不冲突，这与脊柱的结构相同。剩余：荀子接着说“其民莫敢托为奇辞以乱正名”，由王者制名并禁止乱名，把约定的形成交给单一中心；而约定在众多使用者之间如何形成、如何保持，脊柱没有定理（见 gap）。",
-   "reading_en": "Names have no fixed fit (labels carry nothing; renaming keeps every relationally defined reading) yet must follow sameness and difference (a naming that tells apart what is alike does not make sense); how a shared naming forms among many users, which Xunzi hands to the king, has no law on the spine.",
+   "reading": "AI 的读法：两半各有脊柱对应。“名无固宜”：标签什么也不承载——改名保持一切由关系定义的读法（Web.rename_renewingIn、Web.rename_tenure）。“同则同之，异则异之”：命名把在一切关系中都相同的东西分开就不成立（Twins.naming_not_identifiesAlike），而在构形由相似决定之处，成立的描述承载一条规律（IdentifiesAlike.carries、carries_law_iff）。所以名的“宜”由约定，名的“实”由同异，二者并不冲突，这与脊柱的结构相同。荀子接着说“其民莫敢托为奇辞以乱正名”，由王者制名并禁止乱名，把约定的形成交给单一中心。SharedCodes 给出两者的关系：改名不改变编码所分别者，也不改变它是否承载规律（run_renamed_tells_apart_iff、renamed_carries_iff）；既不特许形式也不特许形成者的律永不使对称的分歧相合（never_agrees_of_both），中心、偏好之形与听取次序各打破一个对称而在一步内相合（TwoFormations.three_agree）：王者制名是中心一途，约定俗成是次序一途。缺口原拟的陈述（各取其所耦合者中最小编号者之码，恰在每个耦合闭包为全体时静止为同）不成立：在路 a–c–b 上两端各为其耦合中最小者，永不相合（Path.never_agree）；指针律之下相合恰是指针之路相遇（follow_agrees_iff）。",
+   "reading_en": "Names have no fixed fit (labels carry nothing; renaming keeps every relationally defined reading) yet must follow sameness and difference (a naming that tells apart what is alike does not make sense); how a shared naming forms among many users, which Xunzi hands to the king, is SharedCodes: renaming changes neither what a code tells apart nor what it carries, and a law privileging neither name nor user never settles a symmetric disagreement, so a centre (the king), a preferred form or the order of use must break the symmetry; the gap's coupling-closure form is false (Path.never_agree).",
    "mapper": "ru",
    "gap": {
     "statement": "For a finite list of formations each holding a naming map n_i : Config → Name at every step, and a law of naming in which each formation's next map is read through its couplings (for instance: adopt the map of the least-indexed formation it couples with, itself included), prove (1) the maps come to rest all alike from some step on exactly where the coupling closure of every formation is the whole, and give the exact bound on the step; (2) for every renaming σ of names, the run from σ ∘ n reaches σ ∘ (the rest reached from n), so the configurations named fix no name (名无固宜); and (3) the shared map reached carries a law exactly where configurations alike under it go alike (carries_law_iff), so fit (宜) and carrying (实) are independent conditions.",
@@ -5047,8 +5054,10 @@
      "Becoming.withinClosureOf_iff",
      "Becoming.Contextual.glues_iff_agree"
     ],
-    "why_it_matters": "The spine shows that labels carry nothing but has no law of how a joint naming forms and holds through use; shared readings between people and between people and AI systems are exactly such joint namings, and Xunzi's own text shows the alternative (a single centre fixing names) that the theory would need to answer structurally."
-   }
+    "why_it_matters": "The spine shows that labels carry nothing but has no law of how a joint naming forms and holds through use; shared readings between people and between people and AI systems are exactly such joint namings, and Xunzi's own text shows the alternative (a single centre fixing names) that the theory would need to answer structurally.",
+    "closed": "SC (Becoming.SharedCodes, record a-code-formed-between-formations, study section 210); the statement above is kept as proposed, and where the laws differ from it the record and the study section say so (the coupling-closure form proposed for 名无固宜 is false, Path.never_agree)."
+   },
+   "corrected": "SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its laws and record added and the sentence that named the gap replaced (both languages)"
   },
   {
    "id": "ru-xunzi-qun-fen-yi",
@@ -6973,17 +6982,26 @@
     "Becoming.CrossSituational.candidates_append",
     "Becoming.CrossSituational.resolved_is_target",
     "Becoming.Contextual.glues_iff_agree",
-    "Becoming.Contextual.indexed_fits"
+    "Becoming.Contextual.indexed_fits",
+    "Becoming.SharedCodes.written_rests",
+    "Becoming.SharedCodes.resolved_alike_merged",
+    "Becoming.SharedCodes.no_reading_recovers",
+    "Becoming.SharedCodes.omitted_rest",
+    "Becoming.SharedCodes.kept_bars",
+    "Becoming.SharedCodes.added_never_replaced",
+    "Becoming.SharedCodes.Gloss.taken_up_locks",
+    "Becoming.SharedCodes.Gloss.uptake_loses"
    ],
    "records": [
     "historical-source-binding",
     "encounter-selection-and-revision",
-    "contextual-registration"
+    "contextual-registration",
+    "a-code-formed-between-formations"
    ],
    "atlas_ids": [],
    "relational": "Xu Shen glosses the graph by quoting a speech: a normative reading made in one situation becomes the dictionary's analysis of the graph. Two relations are mixed: the graph's relation to its origin, and the word's relation to later use.",
-   "reading": "AI 读法：说文以楚庄王语为武的字形分析，把一处语境中的规范读法当成字形的来历。脊柱把两种关系分开：其一，字形来历是回溯问题：对早先“包”的解释给出实际内容，恰当每个给出同一包而内容不同的对手都被某一有日期的对照分开（Retrodiction.reading_right_iff）；左传之语晚于字形，不是这样的对照，甲骨金文字形才是。其二，词义在用例中立住：一个义项立住恰当每一条涉及该形的记录都提供它（CrossSituational.stands_iff）；后续记录的候选是先前候选中在其上仍立住者（candidates_append）；唯一候选是所指，只在覆盖条件下成立（resolved_is_target）。两种读法各在其语境中成立；语境相遇处不一致，便不能粘合为一个无语境读法（Contextual.glues_iff_agree），按语境标注的框架则容纳全部（indexed_fits）。没有断言：律不判楚庄王之规范读法无价值，只判它不是字源。",
-   "reading_en": "Scope: the gloss turns a speech's normative reading into a graph analysis; the spine separates retrodicting the graph's origin (needs dated controls that separate rival histories) from a sense standing in later records (every bearing record offers it), and keeps both readings indexed by context since they do not glue.",
+   "reading": "AI 读法：说文以楚庄王语为武的字形分析，把一处语境中的规范读法当成字形的来历。脊柱把两种关系分开：其一，字形来历是回溯问题：对早先“包”的解释给出实际内容，恰当每个给出同一包而内容不同的对手都被某一有日期的对照分开（Retrodiction.reading_right_iff）；左传之语晚于字形，不是这样的对照，甲骨金文字形才是。其二，词义在用例中立住：一个义项立住恰当每一条涉及该形的记录都提供它（CrossSituational.stands_iff）；后续记录的候选是先前候选中在其上仍立住者（candidates_append）；唯一候选是所指，只在覆盖条件下成立（resolved_is_target）。两种读法各在其语境中成立；语境相遇处不一致，便不能粘合为一个无语境读法（Contextual.glues_iff_agree），按语境标注的框架则容纳全部（indexed_fits）。写回（SharedCodes）：读法一旦写入后人所读的记录，自下一代起即静止并自我确认（written_rests、Gloss.taken_up_locks）；判定相同的历史被合并，后来的记录读不回此前（resolved_alike_merged、no_reading_recovers）；遗漏之下所静止者不是此前记录所判定之义（omitted_rest）。只有保留下来的此前记录阻止另一种判定（kept_bars），只增补的记录使判定失去而不被替换（added_never_replaced、Gloss.uptake_loses）：止为足之读仍可读，靠的是甲骨金文这些保留下来的此前记录。没有断言：律不判楚庄王之规范读法无价值，只判它不是字源。",
+   "reading_en": "Scope: the gloss turns a speech's normative reading into a graph analysis; the spine separates retrodicting the graph's origin (needs dated controls that separate rival histories) from a sense standing in later records (every bearing record offers it), and keeps both readings indexed by context since they do not glue; written back into the records later readers learn from, the reading rests at once and confirms itself, and only records kept from before (the bone and bronze forms) bar it (SharedCodes: written_rests, kept_bars, added_never_replaced).",
    "mapper": "wen",
    "gap": {
     "statement": "Readings written back into their own evidence. Extend CrossSituational to generations: generation k resolves the form from the records of generation k−1 (candidates of those records), and writes the records of generation k by offering exactly its resolved meaning. Prove: (i) once some generation resolves to e', every later generation resolves to e' (lock-in, a loop form of ResponseLearning.every_generation_holds); (ii) a meaning e ≠ e' resolved before the uptake is recoverable from the records of generations after it by no reading, and from the union of all records exactly where some pre-uptake record is kept (dated control in the sense of Retrodiction.reading_right_iff); (iii) where the uptake records omit the earlier meaning (coverage fails, as in CrossSituational.Omitted), the lock-in is to a unique candidate that is not the earlier meaning and that no later record excludes (the loop form of CrossSituational.Omitted.wrong_unique against CrossSituational.resolved_is_target).",
@@ -6995,9 +7013,10 @@
      "Becoming.ResponseLearning.distinction_lost_every_generation",
      "Becoming.Confound.confounded"
     ],
-    "why_it_matters": "The 止戈 reading shows a reading that writes the records later readers learn from: once taken up it confirms itself, and only records kept from before the uptake separate it from the graph's history. The spine has static records (CrossSituational), a fixed hidden variable (Confound) and faithful teaching (ResponseLearning), but no law of a resolution that produces its own evidence. Honest weight: much of it follows by composing those laws, so it is ranked below the two other gaps."
+    "why_it_matters": "The 止戈 reading shows a reading that writes the records later readers learn from: once taken up it confirms itself, and only records kept from before the uptake separate it from the graph's history. The spine has static records (CrossSituational), a fixed hidden variable (Confound) and faithful teaching (ResponseLearning), but no law of a resolution that produces its own evidence. Honest weight: much of it follows by composing those laws, so it is ranked below the two other gaps.",
+    "closed": "SC (Becoming.SharedCodes, record a-code-formed-between-formations, study section 210); the statement above is kept as proposed, and where the laws differ from it the record and the study section say so (the coupling-closure form proposed for 名无固宜 is false, Path.never_agree)."
    },
-   "corrected": "the page quotes with “ ” (the mapper gave 「」)"
+   "corrected": "the page quotes with “ ” (the mapper gave 「」); SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its laws and record added and the sentence that named the gap replaced (both languages)"
   },
   {
    "id": "shuowen-zhi-wei-zu-composite",
@@ -7400,11 +7419,17 @@
     "Becoming.Law.merged_stays",
     "Becoming.Readout.no_judge_of_merged",
     "Becoming.ResponseLearning.distinction_lost_every_generation",
-    "Becoming.References.stays_iff"
+    "Becoming.References.stays_iff",
+    "Becoming.SharedCodes.run_from_imposition",
+    "Becoming.SharedCodes.source_loses_nothing",
+    "Becoming.SharedCodes.run_imposed_stays",
+    "Becoming.SharedCodes.outside_needed",
+    "Becoming.SharedCodes.outside_returns"
    ],
    "records": [
     "recurrence-without-premise",
-    "control-coherence-loss"
+    "control-coherence-loss",
+    "a-code-formed-between-formations"
    ],
    "atlas_ids": [
     {
@@ -7413,9 +7438,10 @@
     }
    ],
    "relational": "Regional variant codes (言語異聲，文字異形) are replaced by decree with one code from one center; the clerical script, chosen for ease, merges forms, and the older script is cut off.",
-   "reading": "AI 读法：在有限配置中合并永久失去可能（Law.Merges.loses），被合并者此后不再被分开（merged_stays），经合并的约化没有判者（Readout.no_judge_of_merged）；经由教学传递，失去的区分在每一代都保持失去（ResponseLearning.distinction_lost_every_generation）。“古文由此絕”是这一结构。另一面是统一编码使各地读法一致，差异可跨地区传达（参照 References.stays_iff）。范围：律给出合并的确切损失；“罷其不與秦文合者”是一中心以废除强加一码，处在兼并天下的权力框架中，与“约定俗成”所说在使用者之间形成的约定不同（见荀子正名条目的缺口）。",
-   "reading_en": "Scope: imposing one code merges variant distinctions, which stay merged and, passed through teaching, stay lost in every generation; the decree is a merge imposed from one center within a frame of conquest, unlike a convention formed among users.",
-   "mapper": "wen"
+   "reading": "AI 读法：在有限配置中合并永久失去可能（Law.Merges.loses），被合并者此后不再被分开（merged_stays），经合并的约化没有判者（Readout.no_judge_of_merged）；经由教学传递，失去的区分在每一代都保持失去（ResponseLearning.distinction_lost_every_generation）。“古文由此絕”是这一结构。另一面是统一编码使各地读法一致，差异可跨地区传达（参照 References.stays_iff）。范围：律给出合并的确切损失；“罷其不與秦文合者”是一中心以废除强加一码，处在兼并天下的权力框架中，与“约定俗成”所说在使用者之间形成的约定不同。SharedCodes 给出强加编码的确切律：强加使所有人在每一义上相合，每个形成恰失去其编码所分而强加编码所合并者，被强加其编码的形成一无所失（run_from_imposition、source_loses_nothing）；此后在任何听取次序与规则下强加编码保持（run_imposed_stays），被合并的分别只从强加之外保留的形式回来（outside_needed），从这样的形式则一步即回（outside_returns）。“古文由此絕”是外面再无保留旧形之处。",
+   "reading_en": "Scope: imposing one code merges variant distinctions, which stay merged and, passed through teaching, stay lost in every generation; the decree is a merge imposed from one center within a frame of conquest, unlike a convention formed among users; its loss stays under every later exchange and comes back only from a form kept outside the imposition (SharedCodes: run_from_imposition, outside_needed).",
+   "mapper": "wen",
+   "corrected": "SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its laws and record added and the sentence that named the gap replaced (both languages)"
   },
   {
    "id": "shuowen-xu-shi-gu",
@@ -7911,11 +7937,19 @@
     "Becoming.IdentifiesAlike.unique",
     "Becoming.identifiesAlike_id_iff",
     "Becoming.CodeAcquisition.renaming_keeps_values",
-    "Becoming.References.stays_iff"
+    "Becoming.References.stays_iff",
+    "Becoming.SharedCodes.run_held",
+    "Becoming.SharedCodes.kept_iff",
+    "Becoming.SharedCodes.run_agrees_every_start_iff",
+    "Becoming.SharedCodes.reads_iff",
+    "Becoming.SharedCodes.run_renamed",
+    "Becoming.SharedCodes.never_agrees_of_both",
+    "Becoming.SharedCodes.TwoFormations.three_agree"
    ],
    "records": [
     "configurations-alike-by-relation",
-    "the-split-that-makes-sense"
+    "the-split-that-makes-sense",
+    "a-code-formed-between-formations"
    ],
    "atlas_ids": [
     {
@@ -7932,8 +7966,8 @@
     }
    ],
    "relational": "Names follow likeness of relation (同则同之，异则异之); which sign is used is free (名无固宜) and becomes fitting by agreement taken up in practice among users (约定俗成).",
-   "reading": "AI 读法：描述有意义恰当它等同相同者、且只等同相同者（identifiesAlike_iff）——“同则同之，异则异之”；有意义的描述等同同样的配置（IdentifiesAlike.unique）——“同实者莫不同名”；对配置直接命名有意义，恰当相同的配置是一个（identifiesAlike_id_iff）。“名无固宜”：原子与编码一起改名，每个值都不变（CodeAcquisition.renaming_keeps_values），哪一个名不由所名者决定。“约定俗成”是编码在使用者之间形成并保持；脊柱只有单向取得（给定编码、教师）与已装入编码在信道变化下的保持（References.stays_iff），没有编码在使用者关系中形成的律（见缺口）。结构相合，缺约定一环。",
-   "reading_en": "Agreement: naming makes sense exactly where it identifies what relates alike and only that, and renaming signs with the code keeps every value (名无固宜); what the spine lacks is the code formed between users (约定俗成).",
+   "reading": "AI 读法：描述有意义恰当它等同相同者、且只等同相同者（identifiesAlike_iff）——“同则同之，异则异之”；有意义的描述等同同样的配置（IdentifiesAlike.unique）——“同实者莫不同名”；对配置直接命名有意义，恰当相同的配置是一个（identifiesAlike_id_iff）。“名无固宜”：原子与编码一起改名，每个值都不变（CodeAcquisition.renaming_keeps_values），哪一个名不由所名者决定。“约定俗成”是编码在使用者之间形成并保持（SharedCodes）：听取不造新形（run_held），一组在某义上的相合恰经对它封闭的听取而保持（kept_iff）；所成之形由起点与听取次序固定，一个次序恰在给每个形成同一来源时从每个起点都形成相合（run_agrees_every_start_iff）；形成之间恰在编码相合处互读其别（reads_iff，References.stays_iff 的形成之间形式）。不特许任何形式（run_renamed），而既不特许形式也不特许形成者的律永不使对称的分歧相合（never_agrees_of_both）：约定之成要打破一个对称，中心、偏好之形与听取次序各是一途（TwoFormations.three_agree），约定俗成是次序一途。结构相合，约定一环已补上。",
+   "reading_en": "Agreement: naming makes sense exactly where it identifies what relates alike and only that, and renaming signs with the code keeps every value (名无固宜); the code formed between users (约定俗成) is now SharedCodes: hearing makes no form, agreement is kept exactly through closed hearings, the start and the order fix the form, users read each other where codes agree, and a law privileging neither form nor user never settles a symmetric disagreement, so convention breaks a symmetry by the order of use.",
    "mapper": "wen",
    "gap": {
     "statement": "A code formed between formations (约定俗成). Let formations f and g exchange along a run, each holding a code c_f(t), c_g(t) : M → F from a listed finite set of meanings M to forms F. At each step each sends, for the meanings in use, the form its code gives; a formation adopts the form it receives for m where its own differs and a supplied rule reading only the received forms and the two codes says so. Prove on the base: (i) agreement is kept: where c_f(t) m = c_g(t) m, they agree at m at every later step; (ii) a difference f sends by the form for m is read by g, through the inverse of c_g(t), as m exactly where c_f(t) and c_g(t) agree at m (the cross-formation form of References.stays_iff); (iii) no form is privileged: for every bijection σ of F, the course from σ ∘ c_f(0), σ ∘ c_g(0) is σ composed with the course from c_f(0), c_g(0) (the course form of CodeAcquisition.renaming_keeps_values); (iv) the agreed code is fixed by the starts and the order of exchange, not by M: two starts differing by a σ that moves some used form reach different agreed codes; (v) the imposed case: replacing every formation's code by one code c* makes them agree at every m and loses, for each formation, exactly the separations its own code made that c* merges (Law.Merges.loses read on codes).",
@@ -7947,8 +7981,10 @@
      "Becoming.identifiesAlike_id_iff",
      "Becoming.Law.Merges.loses"
     ],
-    "why_it_matters": "A sign system's meaning is a relation kept among its users: 名无固宜，约定俗成谓之宜, and 書同文 is its imposed counterpart. The spine has acquisition from a supplied code or a teacher (CodeAcquisition, ResponseLearning, LearnedGrouping) and the persistence of an installed encoding (References), but no law in which the code forms within the relation of those who use it. Without it, the script, names and the theory's own controlled vocabulary are treated as supplied rather than formed, which is the independent-entity framing the method asks to avoid."
-   }
+    "why_it_matters": "A sign system's meaning is a relation kept among its users: 名无固宜，约定俗成谓之宜, and 書同文 is its imposed counterpart. The spine has acquisition from a supplied code or a teacher (CodeAcquisition, ResponseLearning, LearnedGrouping) and the persistence of an installed encoding (References), but no law in which the code forms within the relation of those who use it. Without it, the script, names and the theory's own controlled vocabulary are treated as supplied rather than formed, which is the independent-entity framing the method asks to avoid.",
+    "closed": "SC (Becoming.SharedCodes, record a-code-formed-between-formations, study section 210); the statement above is kept as proposed, and where the laws differ from it the record and the study section say so (the coupling-closure form proposed for 名无固宜 is false, Path.never_agree)."
+   },
+   "corrected": "SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its laws and record added and the sentence that named the gap replaced (both languages)"
   },
   {
    "id": "liushao-jie-shi",

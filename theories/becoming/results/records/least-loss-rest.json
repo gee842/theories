@@ -537,13 +537,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "35d9d3183693d72ac9add8535fa1d6cacca92b55b502548d01419cef5bc5d870"
+      "sha256": "0a463207d3f51e269320fd0bbe5ba566d5600309126134ad52b552ff2f130b2a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "4e156fbdeade975089eea5f8e55bd8259b357e0e029325d1b63ba999e761490b"
+      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
     }
   ],
   "proof_bindings": [
@@ -635,6 +635,10 @@
     {
       "en": "19 October 2026, Y5 (Becoming.HexagramSequences): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y5 added a study section; THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.",
       "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section; THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

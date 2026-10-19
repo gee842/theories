@@ -910,7 +910,7 @@
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "be2f6f4c314a7804a3d171a9b4ba5684ca0755443ceb6972eff8d2875afafc30"
+      "sha256": "c7ee3eea16bdf6486cb2c30bc80b2d5f5958f58dd120195d434098d453513dd2"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
@@ -928,7 +928,7 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
       "role": "integration",
       "declarations": [],
-      "sha256": "1ce2255c93fac9f33115c63f26a6c4f9fcf246519e1ea2f61c2e1113ed1de67b"
+      "sha256": "a604c21a4a85091e5c269e4d13ba94b6b4906a4ed6763b5703e8431048e044ca"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
@@ -940,13 +940,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "35d9d3183693d72ac9add8535fa1d6cacca92b55b502548d01419cef5bc5d870"
+      "sha256": "0a463207d3f51e269320fd0bbe5ba566d5600309126134ad52b552ff2f130b2a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "4e156fbdeade975089eea5f8e55bd8259b357e0e029325d1b63ba999e761490b"
+      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
     },
     {
       "path": "sources/chinese-classical-texts/yidao-v1.3/evidence/texts/YD-OW-ZG.txt",
@@ -1102,6 +1102,10 @@
     {
       "en": "19 October 2026: added (Y5), closing the seventh gap of chinese-sources-on-the-spine; study section 209, decision D55. The claim in the 易传 chapter's open items that the order is the orbit of no law is corrected there and kept here as a counterexample.",
       "zh": "2026年10月19日：新增（Y5），补上 chinese-sources-on-the-spine 的第七项缺口；研究第 209 节，决定 D55。易传章未做之事中“卦序不是任何律的轨道”之说已在该章更正，在此作为反例保留。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md, CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section; CHINESE-SOURCES-AND-BECOMING.md: SC marked the second gap closed in sections 8 and 11, corrected section 5.4 and re-pointed four passages in the tables; THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts; passages.json: SC re-pointed four passages (declarations, record, readings) and marked the second gap closed, through build_passages.py's FIXES). The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，BECOMING-RENEWAL-READING.md、CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。论断不变。"
     }
   ]
 }

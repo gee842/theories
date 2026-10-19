@@ -434,6 +434,8 @@ Ren 的原话以引文标出，其余是 AI 的阐述。
 
 读法是 AI 的（D48）。
 
+**在形成之间形成的编码**（[Becoming.SharedCodes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean)；记录 [a-code-formed-between-formations](../results/records/a-code-formed-between-formations.md)）。每个形成持有一个从义到形的编码，只经听取而改变：听者在一条读两个编码的给定规则允许处，取说者给一义之形；听取是脊柱的一个过程。听取不造新形（`run_held`）。一组在某义上的相合恰经对它封闭的听取而保持（`kept_iff`），全体相合在每条规则下都是静止（`all_agree_rest`）。所成之形由起点与听取的次序固定：一个次序恰在给每个形成同一来源时，从每个起点都形成相合（`run_agrees_every_start_iff`），在用的任何形都可成为共有之形（`run_shared_iff_in_use`）。经耦合相连并不够：路的两端各取其自身与所耦合者中编号最小者，两端永不相合（`Path.never_agree`）。一个形成恰在两编码于某义相合处，把对方之形读作所指之义（`reads_iff`），逐义形成的相合可以合并诸义（`TwoFormations.homonym`）。不特许任何形式（`run_renamed`）；既不特许形式也不特许形成者的律，永不使对称的分歧相合（`never_agrees_of_both`）：中心、偏好之形或听取的次序打破对称（`TwoFormations.three_agree`）。强加的编码使所有人相合；每个形成失去其编码所分而强加编码所合并者，只有强加之外保留的形式能把它带回（`run_from_imposition`、`outside_needed`）。写回后代所读记录的读法即刻静止，合并此前的历史，只为此前保留下来的记录所阻（`written_rests`、`resolved_alike_merged`、`kept_bars`）；记录只增补处，判定可失去而不被替换（`added_never_replaced`）。读法是 AI 的（D56）：约定俗成是以使用的次序打破对称，荀子自己的王者制名是第一途，即中心；同则同之说的是改名所不能改者；书同文是强加的编码，外面不保留旧形则其合并不回（“古文由此絕”）；说文之止戈为武是写回其证据的读法，只有止为足的甲骨金文字形这些此前的记录阻止它。这些都不说共有的、强加的或保留的编码支持还是损害生生。
+
 <a id="5-评价的形成--how-evaluation-forms"></a>
 ## 5. 评价的形成
 
@@ -1049,7 +1051,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 
 **采用的读法**
 
-下面每项是一个读法：对已检查内容的解释，由 AI 连同其论证采用。论证与会改变每项读法的东西在[决定记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)中，编号 D1–D50。诸读法作为一个说明成立，每项由它在其中的位置决定，两项不合处由这个说明在其间决定（D45，下面最后一项）。它们不改动任何定理，也不给任何规律加前提，更好的论证修订它们。
+下面每项是一个读法：对已检查内容的解释，由 AI 连同其论证采用。论证与会改变每项读法的东西在[决定记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md)中，编号 D1–D56。诸读法作为一个说明成立，每项由它在其中的位置决定，两项不合处由这个说明在其间决定（D45，下面最后一项）。它们不改动任何定理，也不给任何规律加前提，更好的论证修订它们。
 
 - 生生读作生成者生成新的生成：所形成者保存、恢复、传递或创造进一步形成的条件与生成者，所以一个进程连同状态一起改变能形成者与形成的能力；生成的空间是当下能形成者，生生的方向以其扩大比较；2026-10-07 的三种范围是所计者的范围；生命意义与 C 共用这一读法，继续之间以可能性比较（D1、D22，2026-10-18 修订）。
 - “生成的”“退化的”指部分对能形成者的扩大与缩小，保持不变是中性的，互相超出是混合的；在形成的层次上是更新的形成与消耗的形成；活动的读法不采用，生起／止息仍是它的名称（D2）。

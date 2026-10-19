@@ -70,12 +70,12 @@ d['history'].append({
     'en': f'19 October 2026, SC (a code formed between formations): the second gap closed by '
           f'Becoming.SharedCodes ({RID}); four passages re-pointed to its laws (declarations, the record, the sentence of '
           f'each reading that named the gap) and the gap marked closed in the map and in chapter sections 5.4, 8 and 11; '
-          f'the next step lists the {len(gaps_en)} gaps still open'
+          f'the next step lists the {EN[len(gaps_en)].lower()} gaps still open'
           f'{" (the gaps closed earlier leave the list too)" if dropped > 1 else ""}; the counts '
           f'verify_ro.py reports brought to {decls} declarations and {recs} records; {", ".join(sorted(set(files)))} '
           're-pointed after reading the change. The assessment is otherwise unchanged.',
     'zh': f'2026年10月19日，SC（在形成之间形成的编码）：第二项缺口由 Becoming.SharedCodes（{RID}）补上；四段改指向其律（声明、记录、各读法'
-          f'中指称缺口的那一句），缺口在对应表与章节第 5.4、8、11 节标为已补上；下一步只列尚未补上的 {len(gaps_zh)} 项缺口'
+          f'中指称缺口的那一句），缺口在对应表与章节第 5.4、8、11 节标为已补上；下一步只列尚未补上的{ZH[len(gaps_zh)]}项缺口'
           f'{"（此前已补上的也移出）" if dropped > 1 else ""}；verify_ro.py 所报计数更新为 {decls} 个声明、{recs} 份记录；读过改动后，'
           f'{"、".join(sorted(set(files)))} 重新指向。评估其余不变。'})
 PATH.write_text(json.dumps(d, ensure_ascii=False, indent=2) + '\n')

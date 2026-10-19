@@ -690,7 +690,7 @@
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "4e156fbdeade975089eea5f8e55bd8259b357e0e029325d1b63ba999e761490b"
+      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -829,6 +829,10 @@
     {
       "en": "19 October 2026, Y5 (Becoming.HexagramSequences): YI-ZHUAN-AND-BECOMING.md re-pointed after reading the change (the opening names the fifth module, Becoming.HexagramSequences, and counts 90 passages; section 2 gains a subsection on the arrangements of the 傳, section 5 points, section 7 a reading line, and section 8 corrects the claim that the order is the orbit of no law; the passage table holds two more passages and the U5 follow-up's 非覆即變). The claim is unchanged.",
       "zh": "2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，YI-ZHUAN-AND-BECOMING.md 重新指向（开篇列第五个模块 Becoming.HexagramSequences，计 90 段；第 2 节增传中诸排列一小节，第 5 节增要点，第 7 节增一条读法，第 8 节更正“卦序不是任何律的轨道”之说；对应表增两段，并含 U5 后续对非覆即變的改动）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }
