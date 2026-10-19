@@ -81,6 +81,7 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json) | — |
 
 Aliases: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_passes_iff_markov`, `Becoming.Refutable.not_not`, `what a finite history refutes`, `有限历史所否证者`, `finite refutability`, `有限可否证`, `adherence`, `附着`
 
@@ -108,6 +109,7 @@ Aliases: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_passes_if
 - 19 October 2026, Y5 (Becoming.HexagramSequences): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.
 - 19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Horizon.lean). The claim is unchanged.
+- 20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Proof bindings (Horizon.lean) rebound to core receipt 20261019T172902.786054Z. Re-pointed after reading the change: Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged; THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.
 - 21 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-finite-history-refutes.json).
 
 <a id="earlier-text--早期文本"></a>

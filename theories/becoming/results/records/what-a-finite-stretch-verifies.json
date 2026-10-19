@@ -448,12 +448,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
       "role": "proof",
-      "sha256": "19161d16cca2039862b97f9f85da653acdde091e0121bca8c7b69024a7b2fdf2"
+      "sha256": "48aee7d9177373f4a58bdb33afab7fdf940a0b77d9b57ef41f38a64058fffb5b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "3a6fbda06682450ad43535712810ab573ff67302d35a541b240c6dbdbdfea008"
+      "sha256": "610510c1f3b15bf6cd20cae89a0791cf108e3081548569edfa900add8248108c"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T130853.816105Z/verification.json",
@@ -517,6 +517,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Horizon.lean: declarations moved in or out by W2). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: HistoryIdeals.lean, the four declarations moved to Horizon and the five Stretches restatements of Horizon's laws removed; Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：读过改动后重新指向：HistoryIdeals.lean，四个声明移到 Horizon，Horizon 之律的五个 Stretches 重述删去；Horizon.lean，导入 Becoming.Ideals；stretchOrder、Run.stretches 与两个等价移入；六条律由点的律证明，陈述不变。论断不变。"
     }
   ]
 }

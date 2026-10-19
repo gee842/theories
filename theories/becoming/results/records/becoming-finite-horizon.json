@@ -258,7 +258,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "3a6fbda06682450ad43535712810ab573ff67302d35a541b240c6dbdbdfea008",
+      "sha256": "610510c1f3b15bf6cd20cae89a0791cf108e3081548569edfa900add8248108c",
       "declarations": [
         "Becoming.Run.cons",
         "Becoming.Run.AgreeUpTo",
@@ -387,12 +387,18 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json",
+      "role": "receipt",
+      "sha256": "9f331d8ca3172c64ce547521d1ec35a491808e6cffc9fa24ae479daffc27464f",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -841,6 +847,10 @@
     {
       "en": "19 October 2026, R22 (the names of the nineteenth review): BECOMING-UNIFICATION-PLAN.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: BECOMING-UNIFICATION-PLAN.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，R22（第十九次审查的名称）：BECOMING-UNIFICATION-PLAN.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：BECOMING-UNIFICATION-PLAN.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Proof bindings (Horizon.lean) rebound to core receipt 20261019T172902.786054Z. Re-pointed after reading the change: Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：证明绑定（Horizon.lean）改到核心回执 20261019T172902.786054Z。读过改动后重新指向：Horizon.lean，导入 Becoming.Ideals；stretchOrder、Run.stretches 与两个等价移入；六条律由点的律证明，陈述不变。论断不变。"
     }
   ],
   "text_versions": [

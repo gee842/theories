@@ -102,6 +102,7 @@ Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json) | — |
 
 Aliases: `where a run goes on`, `运行在何处延续`, `a run is a course into a return`, `运行是通向返回的路径`, `keeps moving`, `保持运动`, `run without a selection`, `不用选取时的运行`, `dependent choice`, `依赖选择`, `searched run`, `搜索的运行`
 
@@ -133,6 +134,7 @@ Aliases: `where a run goes on`, `运行在何处延续`, `a run is a course into
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Decidedness.lean, Horizon.lean, Recurrence.lean). The claim is unchanged.
 - 19 October 2026, R21 (the nineteenth review's fix list): Onward.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Onward.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. The claim is unchanged.
+- 20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Proof bindings (Horizon.lean) rebound to core receipt 20261019T172902.786054Z. Re-pointed after reading the change: Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged. The claim is unchanged.
 - 6 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-a-run-goes-on.json).
 
 <a id="earlier-text--早期文本"></a>

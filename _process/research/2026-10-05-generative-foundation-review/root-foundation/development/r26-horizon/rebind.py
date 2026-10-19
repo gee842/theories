@@ -171,7 +171,12 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     zh += '论断不变。'
     last = d['history'][-1] if d.get('history') else {}
     if last.get('en', '').startswith('20 October 2026, R26'):
-        last['en'], last['zh'] = en, zh
+        # A second pass (with a render log) adds what it re-pointed to the first pass's note.
+        if ps:
+            last['en'] = last['en'].replace(' The claim is unchanged.', ' Also re-pointed after reading the change: '
+                                            + '; '.join(p.rsplit('/', 1)[-1] + ', ' + WHAT[p][0] for p in ps) + '. The claim is unchanged.')
+            last['zh'] = last['zh'].replace('论断不变。', '另读过改动后重新指向：'
+                                            + '；'.join(p.rsplit('/', 1)[-1] + '，' + WHAT[p][1] for p in ps) + '。论断不变。')
     else:
         d['history'].append({'en': en, 'zh': zh})
     open(f, 'w').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')

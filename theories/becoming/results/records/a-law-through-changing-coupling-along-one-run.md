@@ -111,6 +111,7 @@ Aliases: `law through changing coupling`, `经改变的耦合的规律`, `formin
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Labelled.lean, Likeness.lean, Testing.lean). The claim is unchanged.
 - 19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
 - 19 October 2026, R23 (the refutation laws however a family is listed): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.
+- 20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.
 
 </details>
 

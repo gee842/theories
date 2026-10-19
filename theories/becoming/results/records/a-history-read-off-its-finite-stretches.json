@@ -63,11 +63,11 @@
       "declarations": [
         "Becoming.refutable_iff_refutableBy",
         "Becoming.adheres_iff_adheresBy",
-        "Becoming.Stretches.not_not",
-        "Becoming.Stretches.adheres_least",
-        "Becoming.Stretches.adheres_iff",
-        "Becoming.Stretches.not_refutable_of_adheres",
-        "Becoming.Stretches.refutable_adheres_iff"
+        "Becoming.Refutable.not_not",
+        "Becoming.Refutable.adheres_least",
+        "Becoming.Refutable.adheres_iff",
+        "Becoming.not_refutable_of_adheres",
+        "Becoming.refutable_adheres_iff"
       ]
     },
     {
@@ -393,8 +393,8 @@
       "id": "what-a-finite-history-refutes",
       "relation": "formal-reuse",
       "detail": {
-        "en": "Reuses Becoming.Horizon's Run.AgreeUpTo, Refutable and Adheres: the order of stretches is agreement up to the earlier horizon, and Horizon's laws are derived here as the case of runs.",
-        "zh": "复用 Becoming.Horizon 的 Run.AgreeUpTo、Refutable 与 Adheres：片段之序是到较早之界的一致，Horizon 的律在此作为运行情形推出。"
+        "en": "Reuses Becoming.Horizon's Run.AgreeUpTo, Refutable and Adheres: the order of stretches is agreement up to the earlier horizon, and Horizon's laws are the case of runs of the laws of points, which Becoming.Horizon proves them from (R26).",
+        "zh": "复用 Becoming.Horizon 的 Run.AgreeUpTo、Refutable 与 Adheres：片段之序是到较早之界的一致，Horizon 的律是点的律的运行情形，Becoming.Horizon 由之证明（R26）。"
       },
       "interface": {
         "output": {
@@ -520,17 +520,14 @@
         "Becoming.HistoryIdeals.prefixOrder",
         "Becoming.HistoryIdeals.sequence_stretch_iff",
         "Becoming.HistoryIdeals.traceIdeal",
-        "Becoming.Run.stretches",
         "Becoming.Run.stretches_le_iff",
         "Becoming.Run.stretches_not_principal",
         "Becoming.Stretches.GoesOn",
         "Becoming.Stretches.Settles",
         "Becoming.Stretches.adherence_unique",
         "Becoming.Stretches.adheres_content",
-        "Becoming.Stretches.adheres_iff",
         "Becoming.Stretches.adheres_iff_closed",
         "Becoming.Stretches.adheres_joint",
-        "Becoming.Stretches.adheres_least",
         "Becoming.Stretches.avoids_adheres",
         "Becoming.Stretches.avoids_refutable",
         "Becoming.Stretches.avoids_runs",
@@ -543,11 +540,8 @@
         "Becoming.Stretches.goesOn_run",
         "Becoming.Stretches.histories_representation",
         "Becoming.Stretches.inherited_histories",
-        "Becoming.Stretches.not_not",
-        "Becoming.Stretches.not_refutable_of_adheres",
         "Becoming.Stretches.pickedRun",
         "Becoming.Stretches.principal_settles",
-        "Becoming.Stretches.refutable_adheres_iff",
         "Becoming.Stretches.refutable_closed_iff",
         "Becoming.Stretches.refutable_of_class",
         "Becoming.Stretches.run_goesOn",
@@ -561,15 +555,12 @@
         "Becoming.Stretches.unitCut",
         "Becoming.Stretches.within_order_iff",
         "Becoming.Stretches.within_refutable",
-        "Becoming.adheres_iff_adheresBy",
         "Becoming.adheres_iff_hull",
         "Becoming.closed_iff_within_lower",
         "Becoming.refutable_holds_iff",
-        "Becoming.refutable_iff_refutableBy",
-        "Becoming.runClass",
-        "Becoming.stretchOrder"
+        "Becoming.runClass"
       ],
-      "sha256": "19161d16cca2039862b97f9f85da653acdde091e0121bca8c7b69024a7b2fdf2"
+      "sha256": "48aee7d9177373f4a58bdb33afab7fdf940a0b77d9b57ef41f38a64058fffb5b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
@@ -587,9 +578,13 @@
         "Becoming.Sequences.process",
         "Becoming.Sequences.agree_iff",
         "Becoming.Markov",
-        "Becoming.refutable_passes_iff_markov"
+        "Becoming.refutable_passes_iff_markov",
+        "Becoming.Run.stretches",
+        "Becoming.adheres_iff_adheresBy",
+        "Becoming.refutable_iff_refutableBy",
+        "Becoming.stretchOrder"
       ],
-      "sha256": "3a6fbda06682450ad43535712810ab573ff67302d35a541b240c6dbdbdfea008"
+      "sha256": "610510c1f3b15bf6cd20cae89a0791cf108e3081548569edfa900add8248108c"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryLanguages.lean",
@@ -665,7 +660,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
+      "sha256": "f8485efeb53df8969b6c7c3dbbcb72a99146db256949a31c8428eff0b7e8d55f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-integrate-all.md",
@@ -702,6 +697,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json",
+      "role": "receipt",
+      "sha256": "9f331d8ca3172c64ce547521d1ec35a491808e6cffc9fa24ae479daffc27464f",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -714,14 +715,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T020248.454200Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.HistoryIdeals",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -820,6 +821,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Horizon.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Run.stretches, adheres_iff_adheresBy, refutable_iff_refutableBy, stretchOrder moved from HistoryIdeals.lean to Horizon.lean with their full names and proofs. The removed restatements Stretches.adheres_iff, Stretches.adheres_least, Stretches.not_not, Stretches.not_refutable_of_adheres, Stretches.refutable_adheres_iff are replaced by Horizon's laws, which state the same on runs and are now proved from the laws of points. Proof bindings (HistoryIdeals.lean, Horizon.lean) rebound to core receipt 20261019T172902.786054Z. Re-pointed after reading the change: HistoryIdeals.lean, the four declarations moved to Horizon and the five Stretches restatements of Horizon's laws removed; Horizon.lean, imports Becoming.Ideals; stretchOrder, Run.stretches and the two equivalences moved in; six laws proved from the laws of points, statements unchanged; THE-THEORY-OF-BECOMING.md, the paragraph on what a finite stretch refutes cites Refutable.not_not, proved in Horizon from the law for points; §9 counts and receipt follow R26. The claim is unchanged.",
+      "zh": "2026年10月20日，R26（Horizon 的否证律由理想之律推出；看板规则 9）：Run.stretches、adheres_iff_adheresBy、refutable_iff_refutableBy、stretchOrder 连同完整名称与证明从 HistoryIdeals.lean 移到 Horizon.lean。删去的重述 Stretches.adheres_iff、Stretches.adheres_least、Stretches.not_not、Stretches.not_refutable_of_adheres、Stretches.refutable_adheres_iff 改为 Horizon 的律，它们在运行上陈述相同，现由点的律证明。证明绑定（HistoryIdeals.lean、Horizon.lean）改到核心回执 20261019T172902.786054Z。读过改动后重新指向：HistoryIdeals.lean，四个声明移到 Horizon，Horizon 之律的五个 Stretches 重述删去；Horizon.lean，导入 Becoming.Ideals；stretchOrder、Run.stretches 与两个等价移入；六条律由点的律证明，陈述不变；THE-THEORY-OF-BECOMING.md，有限片段所否证者一段改引 Refutable.not_not（Horizon 由点的律证明）；§9 计数与回执随 R26。论断不变。"
     }
   ]
 }
