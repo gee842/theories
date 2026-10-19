@@ -61,6 +61,20 @@ This module states the continuation condition on the spine and what follows from
   Under the continuation condition the part loses a continuation with significance
   (`Preemption.not_undermining_yet_loses`). The stepwise reading counts only dependences that
   have been met; retaining also counts what can still form.
+* **The stepwise classes and loss.** Levels below a need are exceeded by every level path that
+  admits the formation there (`Web.exceeded_of_below`). So an undermining event, through
+  dependences on its condition that hold across its step at no smaller need, leaves the levels
+  exceeded by every level path that meets those dependences after the step
+  (`Web.UnderminingOn.exceeded`): the levels with a part do not include such levels without it,
+  and keeping what can form excludes undermining there (`Web.Includes.not_undermining`). From a
+  standpoint at which those continuations have significance, nothing is retained along the other
+  path (`Web.UnderminingOn.not_retains`), and under the continuation condition from every
+  standpoint (`Web.UnderminingOn.not_retains_unrestricted`). The converse fails: the preempting
+  drawer's event is within renewal and not undermining, and its part does not keep what can form
+  (`Preemption.within_renewal_yet_loses`). Undermining, where the levels without the part meet the
+  dependences, is a sign of loss; neither renewal nor its absence of undermining is a sign of
+  keeping, and loss itself is exactly a net draw beyond the margin
+  (`Flow.Balances.loses_iff_beyond_margin`).
 * **The whole first.** Where fewer continuations have significance, more is retained
   (`Web.Retains.of_fewer`). Significance bounded by a region retains what is admitted within
   the region (`Web.retains_bounded_iff`). Under the continuation condition, what retains in the whole retains
@@ -257,6 +271,66 @@ theorem Retains.within {sig : Pos → Nat → F → Prop} (unrestricted : Unrest
     {l l' : Nat → C → Nat} (retains : W.Retains sig p l l') (region : Pos → F → Prop) :
     W.Retains (bounded region) p l l' :=
   retains.of_fewer fun p t f _ => unrestricted (p, t, f)
+
+/-! ## The stepwise classes and loss
+
+Undermining, a stepwise class of a formation's event, and the order on what can form read the
+same levels. Where the levels fall below a need, every level path admitting the formation there
+exceeds them. So an undermining event, through dependences that hold across its step at no smaller
+need, leaves the levels short of what every level path meeting those dependences after the step
+admits; the levels with a part that undermines do not include the levels without it wherever
+these meet the dependences. An event within renewal gives no such guarantee in the other direction
+(`Preemption.within_renewal_yet_loses`). -/
+
+/-- **Levels below a need are exceeded by every path admitting the formation there.** -/
+theorem exceeded_of_below {l : Nat → C → Nat} {s : Nat} {g : F} {c : C} (requires : W.requires s g c)
+    (below : W.level s c < W.need s g c) (admits : W.Admits (l s) s g) : W.Exceeds l W.level :=
+  ⟨s, g, admits, fun admitted => Nat.not_le_of_gt below (admitted c requires)⟩
+
+/-- **An undermining event leaves the levels exceeded.** Where every dependence on the condition
+holds across the step at no smaller need, and a level path admits after the step every formation
+depending on the condition before it, that path exceeds the levels. -/
+theorem UnderminingOn.exceeded {l : Nat → C → Nat} {t : Nat} {f : F} {c : C}
+    (undermining : W.UnderminingOn t f c)
+    (holds : ∀ g, W.requires t g c → W.requires (t + 1) g c ∧ W.need t g c ≤ W.need (t + 1) g c)
+    (admits : ∀ g, W.requires t g c → W.Admits (l (t + 1)) (t + 1) g) : W.Exceeds l W.level :=
+  match undermining with
+  | ⟨_, g, depends, _, below⟩ =>
+    exceeded_of_below (holds g depends).1
+      (Nat.lt_of_lt_of_le below (holds g depends).2) (admits g depends)
+
+/-- **Keeping what can form excludes undermining where the other path meets the dependences.** The
+levels include a level path admitting after a step every formation depending on a condition before
+it, through dependences that hold across the step at no smaller need, only if no event at the step
+undermines that condition. -/
+theorem Includes.not_undermining {l : Nat → C → Nat} (includes : W.Includes W.level l) {t : Nat}
+    {f : F} {c : C}
+    (holds : ∀ g, W.requires t g c → W.requires (t + 1) g c ∧ W.need t g c ≤ W.need (t + 1) g c)
+    (admits : ∀ g, W.requires t g c → W.Admits (l (t + 1)) (t + 1) g) : ¬ W.UnderminingOn t f c :=
+  fun undermining => includes.not_exceeded (undermining.exceeded holds admits)
+
+/-- **An undermining event loses what has significance.** Under the same hypotheses, from a
+standpoint at which the continuation after the step of every formation depending on the condition
+has significance, the levels do not retain what has significance along the other path. -/
+theorem UnderminingOn.not_retains {l : Nat → C → Nat} {t : Nat} {f : F} {c : C}
+    (undermining : W.UnderminingOn t f c)
+    (holds : ∀ g, W.requires t g c → W.requires (t + 1) g c ∧ W.need t g c ≤ W.need (t + 1) g c)
+    (admits : ∀ g, W.requires t g c → W.Admits (l (t + 1)) (t + 1) g)
+    {sig : Pos → Nat → F → Prop} {p : Pos} (significant : ∀ g, W.requires t g c → sig p (t + 1) g) :
+    ¬ W.Retains sig p W.level l :=
+  match undermining with
+  | ⟨_, g, depends, _, below⟩ => fun retains =>
+    Nat.not_le_of_gt (Nat.lt_of_lt_of_le below (holds g depends).2)
+      (retains (t + 1) g (significant g depends) (admits g depends) c (holds g depends).1)
+
+/-- **Under the continuation condition an undermining event loses from every standpoint.** -/
+theorem UnderminingOn.not_retains_unrestricted {l : Nat → C → Nat} {t : Nat} {f : F} {c : C}
+    (undermining : W.UnderminingOn t f c)
+    (holds : ∀ g, W.requires t g c → W.requires (t + 1) g c ∧ W.need t g c ≤ W.need (t + 1) g c)
+    (admits : ∀ g, W.requires t g c → W.Admits (l (t + 1)) (t + 1) g)
+    {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) (p : Pos) :
+    ¬ W.Retains sig p W.level l :=
+  undermining.not_retains holds admits fun g _ => unrestricted (p, t + 1, g)
 
 end Web
 
@@ -584,6 +658,24 @@ theorem not_undermining_yet_loses {l : Nat → Unit → Nat}
     | 0 => Nat.zero_le _
     | _ + 1 => Nat.zero_le _, adds,
    fun retains => retains.not_added adds⟩
+
+/-- **Within renewal, yet closing a possibility.** The drawer's event at the first step is within
+renewal, since no dependence on the condition has formed for the step to keep, and is not
+undermining; yet the levels with the drawer's part do not include those without it. So no event's
+being within renewal or not undermining shows that a part keeps what can form: the stepwise
+classes count only dependences that have formed. -/
+theorem within_renewal_yet_loses {l : Nat → Unit → Nat}
+    (without : flow.WithheldLevels drawerPart web l) :
+    web.RenewingAt 0 true ∧ ¬ web.UnderminingAt 0 true ∧ ¬ web.Includes web.level l :=
+  ⟨⟨rfl, fun _ _ g requires => match g, requires with
+    | true, no => (nomatch no)
+    | false, no => absurd no (Nat.lt_irrefl 0)⟩,
+   fun ⟨(), _, g, requires, _⟩ => match g, requires with
+    | true, no => no
+    | false, no => Nat.lt_irrefl 0 no,
+   fun includes => Nat.not_succ_le_zero 0
+     (includes 1 false (fun () _ => Nat.le_of_eq (without.unique withheld 1 ()).symm) ()
+       (Nat.succ_pos 0))⟩
 
 end Preemption
 

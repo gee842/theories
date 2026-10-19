@@ -1,0 +1,27 @@
+@Becoming.RetrodictionRuns.runs_fits_iff_same : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {Q : Type u_3} {O : Type u_4} (emit : S → Q → O) (g r : Becoming.Run P) (ps : List (Nat × Q)),
+  Becoming.Retrodiction.Fits (fun g => g.state) emit g (Becoming.Retrodiction.acquire (fun g => g.state) emit r ps) ↔
+    Becoming.Retrodiction.acquire (fun g => g.state) emit g ps =
+      Becoming.Retrodiction.acquire (fun g => g.state) emit r ps
+@Becoming.RetrodictionRuns.runs_agreed_reading_actual : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  {Q : Type u_3} {O : Type u_4} {X : Type u_5} {Pk : Type u_6} {V : Type u_7} (emit : S → Q → O) (packet : S → X → Pk)
+  (content : X → V) (F : Becoming.Run P → Prop) (Admitted : X → Prop) (d : Nat) (r : Becoming.Run P) (s : X)
+  (ps : List (Nat × Q)) (v : V),
+  F r →
+    Admitted s →
+      (∀ (g : Becoming.Run P) (t : X),
+          F g →
+            Becoming.Retrodiction.Fits (fun g => g.state) emit g
+                (Becoming.Retrodiction.acquire (fun g => g.state) emit r ps) →
+              Admitted t → packet (g.state d) t = packet (r.state d) s → content t = v) →
+        content s = v
+@Becoming.RetrodictionRuns.runs_change_unlocated : ∀ {S : Type u_1} [inst : DecidableEq S] {s s' : S},
+  s ≠ s' →
+    ∀ (a j m : Nat),
+      ∃ g g',
+        Becoming.Retrodiction.changes g.state a (j + 1 + (m + 1)) = 1 ∧
+          Becoming.Retrodiction.changes g'.state a (j + 1 + (m + 1)) = 1 ∧
+            g.state a = s ∧
+              g'.state a = s ∧
+                g.state (a + (j + 1 + (m + 1))) = s' ∧
+                  g'.state (a + (j + 1 + (m + 1))) = s' ∧ g.state (a + j + 1) = s' ∧ g'.state (a + j + 1) = s

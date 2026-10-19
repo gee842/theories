@@ -1,0 +1,19 @@
+@Becoming.ReducedRuns.runs_decoder_iff_of_section : ∀ {S : Type u_1} {K : Type u_2} {V : Type u_3} {π : S → K}
+  {f : S → V} (sec : K → S),
+  (∀ (k : K), π (sec k) = k) →
+    ((∃ g,
+        ∀ (r : Becoming.Run (Becoming.Courses.anyChange S)) (n : Nat),
+          f (r.state n) = g ((Becoming.Courses.reducedRun π r).state n)) ↔
+      Becoming.Learning.Lumped π f)
+@Becoming.ReducedRuns.trace_foldl : ∀ {S : Type u_1} {A : Type u_2} {f : S → A → S} {s t : S} {plan : List A},
+  Generative.Trace (Becoming.Assurance.ofMap f) s plan t → t = List.foldl f s plan
+@Becoming.ReducedRuns.course_reduced : ∀ {S : Type u_1} {K : Type u_2} {A : Type u_3} (next : S → A → S) (π : S → K)
+  (reduced : K → A → K),
+  (∀ (s : S) (a : A), π (next s a) = reduced (π s) a) →
+    ∀ {s t : S} {plan : List A},
+      Generative.Trace (Becoming.Assurance.ofMap next) s plan t → π t = List.foldl reduced (π s) plan
+@Becoming.ReducedRuns.run_reduced : ∀ {S : Type u_1} {K : Type u_2} {A : Type u_3} (next : S → A → S) (π : S → K)
+  (reduced : K → A → K),
+  (∀ (s : S) (a : A), π (next s a) = reduced (π s) a) →
+    ∀ (r : Becoming.Run (Becoming.Assurance.ofMap next)) (n : Nat),
+      (Becoming.Courses.reducedRun π r).state n = List.foldl reduced (π (r.state 0)) (r.window 0 n)

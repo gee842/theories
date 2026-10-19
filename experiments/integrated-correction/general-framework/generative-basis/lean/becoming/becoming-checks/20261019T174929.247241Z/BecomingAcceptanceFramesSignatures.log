@@ -1,0 +1,24 @@
+@Becoming.AcceptanceFrames.access_iff : ∀ {S A C : Type} {F : Becoming.Frame S A C} (s : S) (access : S → Prop)
+  (q : S → Int) (lift : Int),
+  0 < lift →
+    ((∀ (x : S × Bool),
+        Becoming.Acceptance.Best (fun y => Becoming.FrontierFrames.Options F s y.fst)
+            (Becoming.Acceptance.AcceptScore q lift) x →
+          access x.fst) ↔
+      ∀ (t : S), Becoming.Acceptance.Best (Becoming.FrontierFrames.Options F s) q t → access t)
+@Becoming.AcceptanceFrames.no_access : ∀ {S A C : Type} {F : Becoming.Frame S A C} (s : S) (access : S → Prop)
+  (q : S → Int),
+  (∀ (t : S), Becoming.Acceptance.Best (Becoming.FrontierFrames.Options F s) q t → ¬access t) →
+    ¬∃ t, Becoming.Acceptance.Best (Becoming.FrontierFrames.Options F s) q t ∧ access t
+@Becoming.AcceptanceFrames.restriction_loss : ∀ {S A C : Type} {F : Becoming.Frame S A C} {s : S} (q : S → Int)
+  (u v : S),
+  Becoming.Acceptance.Best (fun x => True) q u →
+    Becoming.Acceptance.Best (Becoming.FrontierFrames.Options F s) q v →
+      0 ≤ q u - q v ∧ ∀ (t : S), Becoming.FrontierFrames.Options F s t → q u - q v ≤ q u - q t
+@Becoming.AcceptanceFrames.estimate_bound : ∀ {S A C : Type} {F : Becoming.Frame S A C} {s : S}
+  (actual estimate : S → Int) (err : Int),
+  (∀ (t : S), Becoming.FrontierFrames.Options F s t → actual t - err ≤ estimate t) →
+    (∀ (t : S), Becoming.FrontierFrames.Options F s t → estimate t ≤ actual t + err) →
+      ∀ (chosen : S),
+        Becoming.Acceptance.Best (Becoming.FrontierFrames.Options F s) estimate chosen →
+          ∀ (t : S), Becoming.FrontierFrames.Options F s t → actual t - actual chosen ≤ 2 * err

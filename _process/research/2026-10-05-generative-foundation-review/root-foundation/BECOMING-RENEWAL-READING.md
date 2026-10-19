@@ -9278,3 +9278,34 @@ Output → input: the laws of what a finite history refutes have one reason, the
 **What changed in the Lean.** `Becoming.Horizon` gains the import of `Becoming.Ideals` (which imports nothing, so no cycle and no new dependency of the core on anything outside it), four declarations moved in from `Becoming.HistoryIdeals` with their full names and proofs (`stretchOrder`, `Run.stretches`, `refutable_iff_refutableBy`, `adheres_iff_adheresBy`), and new proofs of six of its laws through them: each is one application of the law for points (`Ideals.RefutableBy.not_not`, `Ideals.RefutableBy.adheres_least`, `Ideals.RefutableBy.adheres_iff`, `Ideals.not_refutableBy_of_adheres`, `Ideals.refutableBy_adheres_iff`, `Ideals.AdheresBy.closed`). The direct proofs go. `Adheres.of`, `Adheres.mono`, `Adheres.adheres` and `not_verifiable_of_adheres` keep their direct proofs: the first three unpack the definition, and `Becoming.Ideals` has no verifiability. `Becoming.HistoryIdeals` loses the four moved declarations and the five `Stretches.*` theorems that restated Horizon's laws (`Stretches.not_not`, `Stretches.adheres_least`, `Stretches.adheres_iff`, `Stretches.not_refutable_of_adheres`, `Stretches.refutable_adheres_iff`); records that cited them cite Horizon's laws, which state the same on runs. Theorems: Horizon 30 → 32, HistoryIdeals 80 → 73, the core five fewer.
 
 **Self-review.** The self-review note of section 189 (A4-L) ("`Stretches.not_not` and the four laws after it restate Horizon's statements on purpose ... Horizon's own proofs stand") is what rule 9 now forbids; it stays as history of that landing. `refutable_adheres_iff` through the law for points is longer than its direct proof (the stretch `(r, h)` is unpacked both ways); it is kept so, because the reason it holds is the law for points. The universe levels of `stretchOrder` (runs of `Process S A`, `S : Type u`, `A : Type v`) are those HistoryIdeals used.
+
+<a id="217-the-stepwise-classes-and-loss-r27"></a>
+## 217. The stepwise classes and loss (R27)
+
+```text
+Result(s): significance-retained-within-margin (advanced)
+Delta: the twentieth review (D2, F13) found that no theorem relates the order on what can form
+       (Includes, Widens, Retains) to the stepwise classes of an event (within renewal,
+       undermining), the one theorem relating them being a divergence
+       (Preemption.not_undermining_yet_loses). Becoming.Significance now states both directions:
+       levels below a need are exceeded by every path admitting the formation there
+       (Web.exceeded_of_below); an undermining event, through dependences on its condition holding
+       across the step at no smaller need, leaves the levels exceeded by every path meeting those
+       dependences after the step (Web.UnderminingOn.exceeded), so keeping what can form excludes
+       undermining there (Web.Includes.not_undermining), and from a standpoint at which those
+       continuations have significance nothing is retained (Web.UnderminingOn.not_retains; under
+       the continuation condition from every standpoint, .not_retains_unrestricted); the converse
+       fails, the preempting drawer's event being within renewal and not undermining while its part
+       closes a possibility (Preemption.within_renewal_yet_loses).
+Premises: the dependences on the undermined condition hold across the step at no smaller need,
+       and the compared path meets them after the step; for significance, that those continuations
+       have significance from the standpoint. No balance or flow premise: the laws read one web.
+Output → input: the stepwise classes read the order on what can form in one direction; together
+       with the margin law (loss exactly where the net draw passes the margin) this is the relation
+       D2 asked for. The reading "generative at the level of formations = renewing" is not a
+       theorem: renewal is no sign of keeping.
+```
+
+**Why both premises.** Undermining compares the level after the step with the need *at* the step; admission after the step reads the need after it. Where a dependence weakens or dissolves across the step, the formation may be admitted after it although the level fell, so the theorem asks that the dependence hold at no smaller need. Where the compared path does not meet the dependence after the step (a part that only shares a fall others cause), the levels with the part are not shown to lose anything, so the theorem asks that it does; with the path the levels without a part, this is the margin law's condition read at one condition and one step.
+
+**What it does not show.** Nothing about consuming or arising (the whole-run classes): a run's consuming a condition is read over its whole course, while inclusion compares two paths at every step, and no law here relates them. Whether a part that undermines also adds elsewhere (mixed) is not decided: the laws show only that the levels with it do not include the levels without it.

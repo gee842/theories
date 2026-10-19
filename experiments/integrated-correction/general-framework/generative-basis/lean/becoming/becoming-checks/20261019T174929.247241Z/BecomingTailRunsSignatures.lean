@@ -1,0 +1,14 @@
+import Becoming.TailRuns
+#check @Becoming.TailRuns.falseRule_iff
+#check @Becoming.TailRuns.trueRule_iff
+#check @Becoming.TailRuns.vanishRule_iff
+#check @Becoming.TailRuns.wlpo_iff_runs
+#check @Becoming.TailRuns.lpo_iff_runs
+#check @Becoming.TailRuns.changedByNoCondition_iff_runs
+#check @Becoming.TailRuns.insensitive_differs_iff_runs
+#check @Becoming.TailRuns.not_through_sensitive_iff_runs
+#check @Becoming.TailRuns.insensitive_differs_decides
+#check @Becoming.TailRuns.not_through_sensitive_decides
+#check @Becoming.TailRuns.vanishRule_iff_trueRule
+#check @Becoming.TailRuns.vanish_decides
+#check @Becoming.TailRuns.indicators_sum

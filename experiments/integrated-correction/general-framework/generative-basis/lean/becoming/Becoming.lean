@@ -990,7 +990,11 @@ readings of the unfolding (`Becoming.Labelled`).
   significance. Retaining is
   inclusion and adding is exceeding, so a part loses a continuation with significance
   exactly where its net draw exceeds the margin. A drawer taking a condition before any
-  dependence on it forms is living on the stepwise reading and still loses a possibility.
+  dependence on it forms is living on the stepwise reading and still loses a possibility:
+  its event is within renewal and the part does not keep what can form. Conversely, an
+  undermining event, through dependences holding across its step at no smaller need, leaves the
+  levels exceeded by every path meeting those dependences after it, so a part that keeps what can
+  form does not undermine there.
   What retains in the whole retains within every region, while centers bounded by their
   dependence license the free rider and disagree. Where nothing has significance nothing
   is ordered, so the continuation condition is needed. The reading is the AI's, adopted on Ren's delegation of 15
