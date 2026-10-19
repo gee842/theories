@@ -13,6 +13,14 @@ Read [the shared method](../theories/becoming/chapters/NONDUAL-METHOD.md) before
 
 The [map](../MAP.md) says where to start and what each top-level directory holds; [REPOSITORY-LAYOUT](REPOSITORY-LAYOUT.md) gives the rules for where new material goes.
 
+### Running the checks
+
+You need Python 3.9 or later (standard library only), git, and ripgrep for the strict check and for rendering. The Lean check also needs [elan](https://github.com/leanprover/elan) with the toolchain pinned in the package's [`lean-toolchain`](../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/lean-toolchain) (Lean 4.29.1; the core needs no Mathlib).
+
+- `make research-test` runs the tests of the shared tools.
+- `make research-check` checks records, evidence bindings, preservation hashes and generated pages. A stale directory index is reported there without failing. `make research-check-strict`, which CI runs, fails on it.
+- `python3 -B experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py` compiles the core and audits the axioms of every declaration ([checker](../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)). It writes `becoming-verification.json` and a run folder in `becoming-checks/` beside it. With `BECOMING_OUT=<dir>` both go to that directory instead, and the repository is left untouched. Steps whose inputs match an earlier passed step are reused from `~/.cache/becoming-lean` (moved by `BECOMING_LEAN_CACHE`). `BECOMING_FRESH=1` runs every step, `BECOMING_JOBS` sets how many Lean runs go at once (half the cores by default), `LEAN_TIMEOUT` sets the seconds per Lean run (600 by default), and `LEAN` names a Lean binary. Run one checker at a time on a shared checkout. CI reruns it when the Lean root changes, and keeps the receipt as a workflow artifact.
+
 <a id="discovery-and-evidence--检索与证据"></a>
 ## Discovery and evidence
 
