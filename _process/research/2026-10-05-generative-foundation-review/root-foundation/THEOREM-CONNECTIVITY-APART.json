@@ -1581,6 +1581,96 @@
    "module": "Becoming.Joining",
    "category": "general-structure",
    "reason": "every finite joining tree lifts where a description lifts a joining: a law of every joining on any type of fragments; the bridge read it on the periphery's joining studies, and left with the F3 sweep"
+  },
+  "Becoming.Ideals.Closed.hull_iff": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "A closed class is its own hull: `hull_least` with `hull_contains`, a one-line unpacking; at runs, a reading holding every run adhering to it holds exactly those runs, and adhering itself is the least closed class (`Stretches.adheres_iff_closed`)."
+  },
+  "Becoming.Ideals.Ideal.Same.trans": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "Transitivity of holding the same stretches, a one-line lemma of the module's own definitions."
+  },
+  "Becoming.Ideals.Preorder.Equiv.refl": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "Reflexivity of an order's equivalence (each element below itself both ways), a one-line lemma of the module's own definitions."
+  },
+  "Becoming.Ideals.avoids_principal_iff": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "A finite history avoids `F` exactly where no element of `F` lies below its stretch: the definition of `Avoids` unpacked (`Iff.rfl`)."
+  },
+  "Becoming.Ideals.content_false": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "The empty class has no content: a one-line unpacking of `Content`."
+  },
+  "Becoming.Ideals.false_closed": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "The empty class is closed: a one-line unpacking of `Closed` (a directed set of ideals is nonempty)."
+  },
+  "Becoming.Ideals.false_refutable": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "The empty class is refuted at any stretch of any ideal: a one-line unpacking of `Refutable`."
+  },
+  "Becoming.Ideals.within_false": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "No ideal lies within the empty set of stretches, since an ideal has a stretch: a one-line unpacking."
+  },
+  "Becoming.Ideals.restrict_false_none": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "The empty set's order has no ideal: a one-line unpacking of `Ideal.nonempty`."
+  },
+  "Becoming.Ideals.hull_hull": {
+   "module": "Becoming.Ideals",
+   "category": "restates",
+   "reason": "The hull's idempotence, `AdheresBy.adheres` read on the hull; its case of runs is Horizon's `Adheres.adheres` (a run adhering to the runs that adhere to a reading adheres to it), already on the base."
+  },
+  "Becoming.Ideals.hull_iff_within_content": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "The hull is the class within the content: the two definitions unpacked (`Iff.rfl`); at runs it is `adheres_iff_adheresBy`."
+  },
+  "Becoming.Ideals.idealOrder_equiv_iff": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "Equivalence in the order of ideals is holding the same stretches: a one-line unpacking of `idealOrder`."
+  },
+  "Becoming.Ideals.lower_unique_of_two": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "Two lower sets giving one class are the same set: `lower_unique` applied twice, a one-line corollary."
+  },
+  "Becoming.Ideals.sup_congr": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "Directed suprema of two sets holding the same elements are equivalent: the fields of `DirectedComplete` unpacked; the histories of a process are such an order (`idealComplete`)."
+  },
+  "Becoming.Ideals.sup_mono": {
+   "module": "Becoming.Ideals",
+   "category": "support",
+   "reason": "A directed supremum lies below that of a larger directed set: the fields of `DirectedComplete` unpacked."
+  },
+  "Becoming.HistoryIdeals.classification": {
+   "module": "Becoming.HistoryIdeals",
+   "category": "restates",
+   "reason": "The case of words of `Stretches.classification`, which states for the histories of every process that one settling, or going on with a stretch beyond each horizon picked, is a finite history or the history of a run; on the process of all sequences its stretches and the words are one order read two ways (`HistoryIdeals.sequence_stretch_iff`, `Stretches.sequences_le_iff`)."
+  },
+  "Becoming.HistoryIdeals.principal_settles": {
+   "module": "Becoming.HistoryIdeals",
+   "category": "restates",
+   "reason": "The case of words of `Stretches.principal_settles` (a finite history settles), stated on the base for every process."
+  },
+  "Becoming.HistoryIdeals.trace_goesOn": {
+   "module": "Becoming.HistoryIdeals",
+   "category": "restates",
+   "reason": "The case of words of `Stretches.run_goesOn` (a run's history goes on), stated on the base for every process."
   }
  }
 }

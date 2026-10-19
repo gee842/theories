@@ -116,6 +116,7 @@ import Becoming.Viability
 import Becoming.Keeping
 import Becoming.ListTests
 import Becoming.Naturals
+import Becoming.Ideals
 import Becoming.ContingentPlans
 import Becoming.Actuation
 import Becoming.TreeSearch
@@ -140,6 +141,7 @@ import Becoming.Composition
 import Becoming.Joining
 import Becoming.Granularity
 import Becoming.HistoryLanguages
+import Becoming.HistoryIdeals
 import Becoming.Coverage
 import Becoming.Presentations
 import Becoming.Carriers
@@ -1332,6 +1334,14 @@ readings of the unfolding (`Becoming.Labelled`).
 * `Becoming.Naturals` (L2): the subtraction and order laws of drawn amounts (no premise):
   cancellation, `sub_sub`, `le_sub_of_add_le` and the bounds of a sum, proved by recursion where
   the prelude uses `propext`.
+* `Becoming.Ideals` (L2): a history read off its finite stretches, as an ideal of their order
+  (no premise; it imports nothing). A refutable reading holds, up to double negation, where a
+  point adheres, and what adheres is closed. A class of ideals is closed exactly where it is the
+  class within a lower set, its content. A refutable class is closed, and a closed class
+  refutable, each up to a step that, asked of every order and class, is exactly double-negation
+  elimination. The least closed hull, avoidance and a lower set's order; the completion:
+  directed-complete, compact exactly at finite histories, a monotone map extended continuously
+  and uniquely, and a compact basis that generates fixing its completion.
 * `Becoming.ContingentPlans` (L3): contingent plans, probe then respond by the answer (no
   premise): a plan's run is a trace of the interface's process (`run_iff_trace`,
   `passes_iff_completes`); a plan is selected for a listed belief exactly where a listed plan
@@ -1498,6 +1508,19 @@ readings of the unfolding (`Becoming.Labelled`).
   of words is realized exactly by the law of its histories (`realizes_feasible`); continuation
   profiles, letterwise stability and the obstruction that locates a changed profile; the bounded
   language, the latch and the gate.
+* `Becoming.HistoryIdeals` (L3): histories as ideals of their finite stretches (no premise). A
+  run is the ideal of the stretches it passes through. The laws of `Becoming.Ideals` are read on
+  the histories of every process, and the laws of `Becoming.Horizon` on what a finite history
+  refutes are their case of runs. Adhering is the least closed class, with no double negation; a
+  run lies in a closed class where each of its stretches is a stretch of the class; asked of every
+  process, a refutable class is closed, and a closed class refutable, each exactly under
+  double-negation elimination. Avoidance, a lower set's own histories, and the completion at
+  runs: no run is compact, and a continuous reading is fixed at every run by its finite
+  histories. A history that settles, or goes on with its stretches picked, is a finite history
+  or a run, and telling which on the histories cut at a sequence's first `true` is the limited
+  principle of omniscience. Words and histories under prefix; for the process of all sequences,
+  the runs' histories are the infinite histories of words; prefix-closed languages give closed
+  classes of histories.
 * `Becoming.Coverage` (L3): a placement course and the global cover it builds (no premise): a
   course of placements covers a board exactly where its tiles and the rest make up the board up to
   order, with no event order; where allowed tiles join opposite colours the balance is kept, so

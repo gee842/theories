@@ -42,14 +42,14 @@ Canonical source: [Horizon.lean](../../../../experiments/integrated-correction/g
 <a id="next--下一步"></a>
 ## Next
 
-An independent review; IdealWarrant's order form on posets (the general mathematical line, outside the spine for now).
+An independent review; what a finite history verifies, read on the order of stretches (a-history-read-off-its-finite-stretches).
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
 <a id="correspondence--对应"></a>
 ### Correspondence
 
-Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read PrefixSafety as a join candidate: Becoming.Horizon stated what no finite prefix decides, not what a finite history refutes. This result states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences; its classical theorems become the core laws with double negation and Markov's principle. IdealWarrant generalizes it to posets and belongs to the general mathematical line Ren left outside the spine for now. On runs, agreement up to horizons gives the prefix topology: a refutable reading is closed and a verifiable one open, adherence is closure, closed readings are the safety properties of Alpern and Schneider (1985) and dense ones, such as eventual occurrence, their liveness properties; refutation and verification from finite data are those of Kelly (1996). Readings (the AI's, which Ren took on 16 October 2026): what a finite prefix can show is that a run lies outside a refutable reading; that a run lies inside is only not refuted; and refuting by tests means finding a failed test where it is only known that not all pass.
+Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read PrefixSafety as a join candidate: Becoming.Horizon stated what no finite prefix decides, not what a finite history refutes. This result states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences; its classical theorems become the core laws with double negation and Markov's principle. IdealWarrant generalizes it to posets; on 19 October 2026 its content was stated in the core (Becoming.Ideals, Becoming.HistoryIdeals), and this result is the case of runs there (a-history-read-off-its-finite-stretches). On runs, agreement up to horizons gives the prefix topology: a refutable reading is closed and a verifiable one open, adherence is closure, closed readings are the safety properties of Alpern and Schneider (1985) and dense ones, such as eventual occurrence, their liveness properties; refutation and verification from finite data are those of Kelly (1996). Readings (the AI's, which Ren took on 16 October 2026): what a finite prefix can show is that a run lies outside a refutable reading; that a run lies inside is only not refuted; and refuting by tests means finding a failed test where it is only known that not all pass.
 
 <a id="dependencies--依赖"></a>
 ### Dependencies
@@ -58,6 +58,9 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
   - Output: Agreement up to a horizon (Run.AgreeUpTo).
   - Input: Refutability and adherence of a reading are defined by it.
   - Preserved conditions: None. [Horizon.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean)
+- related, not a proved adapter: [a-history-read-off-its-finite-stretches](a-history-read-off-its-finite-stretches.md). There the laws of ideals of any order, read on the histories of every process: this record's laws are derived there as the case of runs, adhering is the least closed class, and each step between refutable and closed classes is, asked of every process, exactly double-negation elimination.
+
+**Used by:** [a-history-read-off-its-finite-stretches](a-history-read-off-its-finite-stretches.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -98,6 +101,8 @@ Aliases: `Becoming.Refutable`, `Becoming.Adheres`, `Becoming.refutable_passes_if
 - 19 October 2026, A4 (Ren 19 October: "integrate all, the theory is a whole, not stitched pieces, go ahead"): The eighteenth review counts as the review this record asked for (DELEGATED-CHOICES D45 (4)), so the validation scope says that it reviewed the record (AI, read-only, no Lean rebuild), in place of "not independently reviewed". The claim is unchanged.
 - 19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.
 - 19 October 2026, N7 (the reading pass on "correction"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of "correction" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.
+- 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals; study section 189): IdealWarrant's order form is stated in the core, so next_delta drops it (former: "An independent review; IdealWarrant's order form on posets (the general mathematical line, outside the spine for now).") and the correspondence sentence on IdealWarrant now says where it is stated (former: "IdealWarrant generalizes it to posets and belongs to the general mathematical line Ren left outside the spine for now."). a-history-read-off-its-finite-stretches is added as related. This record's claims are unchanged.
+- 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
 - 21 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](what-a-finite-history-refutes.json).
 
 <a id="earlier-text--早期文本"></a>

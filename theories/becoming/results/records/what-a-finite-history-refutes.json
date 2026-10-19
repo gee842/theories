@@ -136,12 +136,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: Becoming.Horizon has 34 theorems, and the 33 new declarations have empty axiom reports. The periphery instance PrefixSafetyCorrespondence is checked by its own checker (Lean 4.30.0-rc2; five correspondences with empty axiom reports, the other four with standard axioms only), PrefixSafety matching the completion package receipt. Author counterreview in study section 145; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
-    "zh": "独立审查；IdealWarrant 在偏序上的形式（一般数学线，暂留脊柱外）。",
-    "en": "An independent review; IdealWarrant's order form on posets (the general mathematical line, outside the spine for now)."
+    "en": "An independent review; what a finite history verifies, read on the order of stretches (a-history-read-off-its-finite-stretches).",
+    "zh": "独立审查；有限历史所证实者，在片段之序上读出（a-history-read-off-its-finite-stretches）。"
   },
   "correspondence": {
-    "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 PrefixSafety 读作待接入的律：Becoming.Horizon 陈述了有限前缀不决定什么，未陈述有限历史否证什么。本结果对每个过程陈述它，PrefixSafety 的前缀拓扑是所有序列过程的实例，其经典定理成为核心律加双重否定与 Markov 原则。IdealWarrant 在偏序上推广它，属 Ren 暂留脊柱外的一般数学线。在运行上，到界一致给出前缀拓扑：可否证的读法是闭的，可证实的是开的，附着即闭包；闭的读法是 Alpern 与 Schneider（1985）的安全性质，稠密的（如终于发生）是其活性性质；由有限数据否证与证实，即 Kelly（1996）的否证与证实。读法（AI 的，Ren 2026-10-16 已取）：有限前段能显示的，是运行在可否证读法之外；运行在其内只是未被否证；由测试否证，须在只知并非全部通过时找到失败的测试。",
-    "en": "Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read PrefixSafety as a join candidate: Becoming.Horizon stated what no finite prefix decides, not what a finite history refutes. This result states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences; its classical theorems become the core laws with double negation and Markov's principle. IdealWarrant generalizes it to posets and belongs to the general mathematical line Ren left outside the spine for now. On runs, agreement up to horizons gives the prefix topology: a refutable reading is closed and a verifiable one open, adherence is closure, closed readings are the safety properties of Alpern and Schneider (1985) and dense ones, such as eventual occurrence, their liveness properties; refutation and verification from finite data are those of Kelly (1996). Readings (the AI's, which Ren took on 16 October 2026): what a finite prefix can show is that a run lies outside a refutable reading; that a run lies inside is only not refuted; and refuting by tests means finding a failed test where it is only known that not all pass."
+    "zh": "Ren 2026-10-16 对 I4 归类表选择“Closest gaps first”。归类表把 PrefixSafety 读作待接入的律：Becoming.Horizon 陈述了有限前缀不决定什么，未陈述有限历史否证什么。本结果对每个过程陈述它，PrefixSafety 的前缀拓扑是所有序列过程的实例，其经典定理成为核心律加双重否定与 Markov 原则。IdealWarrant 在偏序上推广它；2026年10月19日其内容在核心中陈述（Becoming.Ideals、Becoming.HistoryIdeals），本结果是那里的运行情形（a-history-read-off-its-finite-stretches）。在运行上，到界一致给出前缀拓扑：可否证的读法是闭的，可证实的是开的，附着即闭包；闭的读法是 Alpern 与 Schneider（1985）的安全性质，稠密的（如终于发生）是其活性性质；由有限数据否证与证实，即 Kelly（1996）的否证与证实。读法（AI 的，Ren 2026-10-16 已取）：有限前段能显示的，是运行在可否证读法之外；运行在其内只是未被否证；由测试否证，须在只知并非全部通过时找到失败的测试。",
+    "en": "Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification table. The table read PrefixSafety as a join candidate: Becoming.Horizon stated what no finite prefix decides, not what a finite history refutes. This result states it for every process, with PrefixSafety's prefix topology as the instance of the process of all sequences; its classical theorems become the core laws with double negation and Markov's principle. IdealWarrant generalizes it to posets; on 19 October 2026 its content was stated in the core (Becoming.Ideals, Becoming.HistoryIdeals), and this result is the case of runs there (a-history-read-off-its-finite-stretches). On runs, agreement up to horizons gives the prefix topology: a refutable reading is closed and a verifiable one open, adherence is closure, closed readings are the safety properties of Alpern and Schneider (1985) and dense ones, such as eventual occurrence, their liveness properties; refutation and verification from finite data are those of Kelly (1996). Readings (the AI's, which Ren took on 16 October 2026): what a finite prefix can show is that a run lies outside a refutable reading; that a run lies inside is only not refuted; and refuting by tests means finding a failed test where it is only known that not all pass."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
   "aliases": [
@@ -181,7 +181,15 @@
       }
     }
   ],
-  "related": [],
+  "related": [
+    {
+      "id": "a-history-read-off-its-finite-stretches",
+      "detail": {
+        "en": "There the laws of ideals of any order, read on the histories of every process: this record's laws are derived there as the case of runs, adhering is the least closed class, and each step between refutable and closed classes is, asked of every process, exactly double-negation elimination.",
+        "zh": "那里是任意序的理想之律，读在每个过程的历史上：本记录的律在那里作为运行情形推出，附着是最小的闭类，可否证类与闭类之间的每一步，对每个过程要求时恰是双重否定消去。"
+      }
+    }
+  ],
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
@@ -276,7 +284,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "2aef20279901b3d848306e67b4e1c2b8f9a6f6cba3ade0dde40437fbc73cfe30"
+      "sha256": "cbfca85bdfe0ed104b80cd16d08776da57cdfb8e90515a6deaec5fc0186dc589"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -466,6 +474,14 @@
     {
       "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals; study section 189): IdealWarrant's order form is stated in the core, so next_delta drops it (former: \"An independent review; IdealWarrant's order form on posets (the general mathematical line, outside the spine for now).\") and the correspondence sentence on IdealWarrant now says where it is stated (former: \"IdealWarrant generalizes it to posets and belongs to the general mathematical line Ren left outside the spine for now.\"). a-history-read-off-its-finite-stretches is added as related. This record's claims are unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals；研究第 189 节）：IdealWarrant 的序形式已在核心中陈述，所以 next_delta 删去它，correspondence 中关于 IdealWarrant 的一句改为说明它在何处陈述（原文：“IdealWarrant 在偏序上推广它，属 Ren 暂留脊柱外的一般数学线。”）。加入 a-history-read-off-its-finite-stretches 为相关。本记录的论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
+      "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

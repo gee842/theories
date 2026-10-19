@@ -1287,6 +1287,128 @@ Contains 49 textual `#print axioms` commands; their results belong to the origin
 
 </details>
 
+<a id="module-a56162725449"></a>
+
+<details>
+<summary>IdealsCorrespondence.lean — 103 explicit declarations</summary>
+
+[Source](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean) · [Theory](../../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean`
+
+Imports: `Becoming.Ideals`, `Becoming.HistoryIdeals`, `IdealWarrant`, `CompletionRole`, `HistoryIdeals`
+
+| Theorem or lemma | Line |
+|---|---:|
+| [Becoming.IdealsCorrespondence.ofCore_toCore](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L104) | 104 |
+| [Becoming.IdealsCorrespondence.toCore_ofCore](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L106) | 106 |
+| [Becoming.IdealsCorrespondence.toCore_principal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L108) | 108 |
+| [Becoming.IdealsCorrespondence.le_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L111) | 111 |
+| [Becoming.IdealsCorrespondence.lowerBasis_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L115) | 115 |
+| [Becoming.IdealsCorrespondence.admits_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L119) | 119 |
+| [Becoming.IdealsCorrespondence.content_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L123) | 123 |
+| [Becoming.IdealsCorrespondence.finiteRefutable_iff_refutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L128) | 128 |
+| [Becoming.IdealsCorrespondence.scottHull_iff_hull](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L136) | 136 |
+| [Becoming.IdealsCorrespondence.respects_iff_avoids](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L140) | 140 |
+| [Becoming.IdealsCorrespondence.avoidingBasis_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L144) | 144 |
+| [Becoming.IdealsCorrespondence.directedFamily_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L148) | 148 |
+| [Becoming.IdealsCorrespondence.familyUnion_same](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L159) | 159 |
+| [Becoming.IdealsCorrespondence.scottClosed_iff_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L167) | 167 |
+| [Becoming.IdealsCorrespondence.closed_of_finiteRefutable](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L180) | 180 |
+| [Becoming.IdealsCorrespondence.refutable_scottClosed_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L186) | 186 |
+| [Becoming.IdealsCorrespondence.scottClosed_refutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L192) | 192 |
+| [Becoming.IdealsCorrespondence.finiteRefutable_iff_scottClosed_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L204) | 204 |
+| [Becoming.IdealsCorrespondence.scottClosed_iff_lower_basis_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L209) | 209 |
+| [Becoming.IdealsCorrespondence.finiteRefutable_iff_lower_basis_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L217) | 217 |
+| [Becoming.IdealsCorrespondence.lower_basis_unique_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L224) | 224 |
+| [Becoming.IdealsCorrespondence.basis_eq_content_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L232) | 232 |
+| [Becoming.IdealsCorrespondence.permitted_eq_content_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L239) | 239 |
+| [Becoming.IdealsCorrespondence.admits_refutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L247) | 247 |
+| [Becoming.IdealsCorrespondence.hull_least_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L255) | 255 |
+| [Becoming.IdealsCorrespondence.hull_preserves_content_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L262) | 262 |
+| [Becoming.IdealsCorrespondence.hull_unique_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L272) | 272 |
+| [Becoming.IdealsCorrespondence.respects_iff_admits_avoiding_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L284) | 284 |
+| [Becoming.IdealsCorrespondence.respects_scottClosed_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L290) | 290 |
+| [Becoming.IdealsCorrespondence.respects_unique_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L296) | 296 |
+| [Becoming.IdealsCorrespondence.refutable_eq_admits_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L305) | 305 |
+| [Becoming.IdealsCorrespondence.hull_joint_content_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L313) | 313 |
+| [Becoming.IdealsCorrespondence.empty_finiteRefutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L319) | 319 |
+| [Becoming.IdealsCorrespondence.empty_scottClosed_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L323) | 323 |
+| [Becoming.IdealsCorrespondence.admits_empty_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L326) | 326 |
+| [Becoming.IdealsCorrespondence.lowerPoset_order](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L331) | 331 |
+| [Becoming.IdealsCorrespondence.lift_admits_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L335) | 335 |
+| [Becoming.IdealsCorrespondence.lift_order_iff_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L340) | 340 |
+| [Becoming.IdealsCorrespondence.lift_restrict_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L348) | 348 |
+| [Becoming.IdealsCorrespondence.restrict_lift_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L353) | 353 |
+| [Becoming.IdealsCorrespondence.empty_lower_no_ideal_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L359) | 359 |
+| [Becoming.IdealsCorrespondence.directed_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L371) | 371 |
+| [Becoming.IdealsCorrespondence.monotone_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L381) | 381 |
+| [Becoming.IdealsCorrespondence.compact_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L385) | 385 |
+| [Becoming.IdealsCorrespondence.extend_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L390) | 390 |
+| [Becoming.IdealsCorrespondence.extend_principal_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L397) | 397 |
+| [Becoming.IdealsCorrespondence.idealDirected_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L404) | 404 |
+| [Becoming.IdealsCorrespondence.extend_continuous_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L411) | 411 |
+| [Becoming.IdealsCorrespondence.extend_unique_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L437) | 437 |
+| [Becoming.IdealsCorrespondence.unique_continuous_extension_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L473) | 473 |
+| [Becoming.IdealsCorrespondence.idealCompact_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L483) | 483 |
+| [Becoming.IdealsCorrespondence.compact_iff_principal_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L495) | 495 |
+| [Becoming.IdealsCorrespondence.basisRole_compactBasis](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L502) | 502 |
+| [Becoming.IdealsCorrespondence.unique_basis_representation_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L523) | 523 |
+| [Becoming.IdealsCorrespondence.positive_reading_membership_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L549) | 549 |
+| [Becoming.IdealsCorrespondence.positive_readings_separate_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L556) | 556 |
+| [Becoming.IdealsCorrespondence.toList_length](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L577) | 577 |
+| [Becoming.IdealsCorrespondence.toList_ofList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L580) | 580 |
+| [Becoming.IdealsCorrespondence.getElem_toList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L583) | 583 |
+| [Becoming.IdealsCorrespondence.prefix_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L588) | 588 |
+| [Becoming.IdealsCorrespondence.ofList_toList_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L607) | 607 |
+| [Becoming.IdealsCorrespondence.prefix_ofList_toList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L611) | 611 |
+| [Becoming.IdealsCorrespondence.ofList_prefix_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L615) | 615 |
+| [Becoming.IdealsCorrespondence.le_toList_of_prefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L620) | 620 |
+| [Becoming.IdealsCorrespondence.prefix_of_le_toList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L626) | 626 |
+| [Becoming.IdealsCorrespondence.prefix_ofList_of_le](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L631) | 631 |
+| [Becoming.IdealsCorrespondence.le_of_prefix_ofList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L636) | 636 |
+| [Becoming.IdealsCorrespondence.letter_eq_getElem](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L642) | 642 |
+| [Becoming.IdealsCorrespondence.initial_toList_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L649) | 649 |
+| [Becoming.IdealsCorrespondence.listIdeal_mem_toList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L685) | 685 |
+| [Becoming.IdealsCorrespondence.wordIdeal_mem_ofList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L690) | 690 |
+| [Becoming.IdealsCorrespondence.le_iff_listIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L695) | 695 |
+| [Becoming.IdealsCorrespondence.principal_listIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L705) | 705 |
+| [Becoming.IdealsCorrespondence.trace_listIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L711) | 711 |
+| [Becoming.IdealsCorrespondence.history_listIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L719) | 719 |
+| [Becoming.IdealsCorrespondence.settles_of_bounded](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L727) | 727 |
+| [Becoming.IdealsCorrespondence.decided_classical](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L740) | 740 |
+| [Becoming.IdealsCorrespondence.ideal_classification_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L762) | 762 |
+| [Becoming.IdealsCorrespondence.historyPrefix_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L773) | 773 |
+| [Becoming.IdealsCorrespondence.history_order_iff_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L783) | 783 |
+| [Becoming.IdealsCorrespondence.historyIdeal_injective_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L798) | 798 |
+| [Becoming.IdealsCorrespondence.refutable_of_wordIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L817) | 817 |
+| [Becoming.IdealsCorrespondence.finiteOnly_wordIdeal_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L825) | 825 |
+| [Becoming.IdealsCorrespondence.trace_wordIdeal_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L833) | 833 |
+| [Becoming.IdealsCorrespondence.propertyClass_wordIdeal_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L840) | 840 |
+| [Becoming.IdealsCorrespondence.propertyClass_not_refutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L853) | 853 |
+| [Becoming.IdealsCorrespondence.finiteOnly_not_refutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L860) | 860 |
+| [Becoming.IdealsCorrespondence.recurrence_ideal_not_refutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L870) | 870 |
+| [Becoming.IdealsCorrespondence.represented_ideal_not_refutable_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L878) | 878 |
+| [Becoming.IdealsCorrespondence.tracePrefix_prefix_initialWord](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L884) | 884 |
+| [Becoming.IdealsCorrespondence.initialWord_prefix_tracePrefix](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L891) | 891 |
+| [Becoming.IdealsCorrespondence.history_admitted_iff_by_core](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L900) | 900 |
+
+Definitions and types:
+
+- `def` [Becoming.IdealsCorrespondence.order](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L79) (L79)
+- `def` [Becoming.IdealsCorrespondence.toCore](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L87) (L87)
+- `def` [Becoming.IdealsCorrespondence.ofCore](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L94) (L94)
+- `def` [Becoming.IdealsCorrespondence.coreClass](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L101) (L101)
+- `def` [Becoming.IdealsCorrespondence.toComplete](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L376) (L376)
+- `def` [Becoming.IdealsCorrespondence.isoEquivalence](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L508) (L508)
+- `def` [Becoming.IdealsCorrespondence.toList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L572) (L572)
+- `def` [Becoming.IdealsCorrespondence.ofList](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L575) (L575)
+- `def` [Becoming.IdealsCorrespondence.listIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L664) (L664)
+- `def` [Becoming.IdealsCorrespondence.wordIdeal](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L675) (L675)
+- `def` [Becoming.IdealsCorrespondence.ofHistory](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/completion/formal/IdealsCorrespondence.lean#L701) (L701)
+
+</details>
+
 <a id="module-ecba5d8a9232"></a>
 
 <details>
