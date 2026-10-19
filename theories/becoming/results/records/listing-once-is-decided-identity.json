@@ -157,8 +157,8 @@
     }
   ],
   "limitations": {
-    "zh": "30 个不需前提的用处中只有 6 个作为推论证明，其余由陈述分类；计数关系项不能不加前提；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
-    "en": "Of the 30 uses needing no premise, 6 are proved as corollaries and the rest classified from their statements; counting relata cannot be made free of a premise; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
+    "zh": "30 个不需前提的用处中，6 个在 Becoming.Listing、22 个在 Becoming.ListingRefutations 作为推论证明（其中规律陈述在类型上取 [DecidableEq] 的 7 个保留该实例，只去掉 Distinct），其余 2 个是见证内部、其列表按构造不重复的律；计数关系项不能不加前提；读法是 AI 的，依 Ren 的交托采用；不含伦理谓词。",
+    "en": "Of the 30 uses needing no premise, 6 are proved as corollaries in Becoming.Listing and 22 in Becoming.ListingRefutations (the seven of these whose law's statement takes [DecidableEq] on its type keep that instance and drop Distinct only); the other 2 are laws inside witnesses whose lists are without repetition by construction; counting relata cannot be made free of a premise; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
   },
   "validation_scope": {
     "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Listing 的 85 项定理全部空依赖，其中含 IdentityDecided、ListsOnce、listsOnce_iff_decided、not_not_listsOnce、listOnce、Numbers、numbers_iff_decided、not_of_listsOnce、World.Enumerated、World.finite_iff、World.Enumerated.not_recurring、Flow.enclosed_iff、Flow.dissipative_iff与 Doubled.needs_once；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §101；尚无独立审查。当前回执 20261019T092027.048735Z：Becoming.Listing 有 112 项声明、94 项定理，公理报告全为空，含 Flow.present_* 一节。",
@@ -376,8 +376,8 @@
     }
   ],
   "next_delta": {
-    "zh": "把其余 24 个不需前提的用处证明为推论。",
-    "en": "Prove the other 24 uses needing no premise as corollaries."
+    "zh": "把 World.Indiscernible 与 Becoming.Unfolding 的 Alike 连起来，并在相似已定的有限框架上按相似计数构形。",
+    "en": "Connect World.Indiscernible with the Alike of Becoming.Unfolding, and count configurations up to likeness on finite frames where likeness is decided."
   },
   "history": [
     {

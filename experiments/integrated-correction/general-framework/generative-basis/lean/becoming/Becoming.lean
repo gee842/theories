@@ -195,6 +195,7 @@ import Becoming.Typicality
 import Becoming.Situations
 import Becoming.Propagation
 import Becoming.Regulation
+import Becoming.ListingRefutations
 import Becoming.Loops
 import Becoming.Remainder
 import Becoming.Routes
@@ -2045,6 +2046,13 @@ readings of the unfolding (`Becoming.Labelled`).
   positive exactly along a route in time of positive strengths, on routes of `TimedResponse`'s
   spread where they are registered; carried differences add. A held difference arrives without
   bound through a chain, and a loop of strength one doubles it every step.
+* `Becoming.ListingRefutations` (L4): the refutation laws hold however a family is listed. Each law
+  whose other hypotheses read its family through membership only and whose conclusion is a
+  refutation holds with no `Distinct` (`not_of_listsOnce`), and with no decided identity except
+  where the law's own statement takes `[DecidableEq]` (the fed-from-beyond and boundary laws): the
+  fed-from-beyond laws of `Becoming.Continuation` (`Web.generation_fed_from_beyond_listing` among
+  them), the opening, drawing-in and rest laws of `Becoming.Dissipation` and `Becoming.Roles`,
+  `Flow.taking_needs_refinement_listing`, and the boundary laws of `Becoming.Standpoints`.
 * `Becoming.Regulation` (L4): a level held from both sides, and a level read late, with no premise
   beyond what each law names. With balance, the joint exchange at a condition is within the gap to
   `m` on both sides exactly where the next level lies between `m` and the level; within the gap
