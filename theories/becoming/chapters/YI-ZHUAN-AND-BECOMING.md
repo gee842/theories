@@ -129,7 +129,7 @@
 | <a id="p-gu-wanwu"></a>「鼓萬物而不與聖人同憂」 | 《繫辭上》第五章 | 相合 | `Web.significance_undetermined` | 律鼓动万物，自身不带关切：无物有意义与万物有意义，动力学两者都不排除。 |
 | <a id="p-jianzhi"></a>「仁者見之謂之仁，知者見之謂之知」 | 《繫辭上》第五章 | 相合 | `Web.change_readings`<br>`Learning.goAlike_iff_lumped`<br>`Hexagram.pairs_goAlike`<br>`Hexagram.yang_not_goAlike` | 同一展开有多种读法；一种读法承载律，恰当律在其归并上同行：错卦之对承载，阳爻之数不承载。 |
 | <a id="p-rixin"></a>「富有之謂大業，日新之謂盛德」 | 《繫辭上》第五章 | 相合 | `Hexagram.waxWane_returns`<br>`Law.withHistory_never_returns`<br>`Hexagram.kept_history_unlisted` | 构形皆复返，而带着历史的展开永不复返，不被任何清单所含：无往不复与日新是同一律的两层读法；大业、盛德之评价不在律中。 |
-| <a id="p-shengsheng"></a>「生生之謂易」 | 《繫辭上》第五章 | 定域 | `Hexagram.wane_drawn`<br>`Hexagram.wane_loses`<br>`World.living_crosses`<br>`World.arising_opens`<br>`Web.generation_fed_from_beyond` | 脊柱上的变化比生生宽：它也含合并与可能之失；生生作为生成之持续，需要开放，并由外部供给。 |
+| <a id="p-shengsheng"></a>「生生之謂易」 | 《繫辭上》第五章 | 定域 | `Hexagram.wane_drawn`<br>`Hexagram.wane_loses`<br>`World.living_crosses`<br>`World.arising_opens`<br>`Web.generation_fed_from_beyond` | 脊柱上的变化比生生宽：它也含合并与可能之失；生生作为生成之持续有其条件：在有计数、有承载、平衡且耗散的世界中，无尽的生起排除从某步起每步封闭；耗散、被围住而成员不断生起的有限族，不能从某步起每步都无外部供给（双重否定的形式）。 |
 | <a id="p-jishu-zhilai"></a>「極數知來之謂占」 | 《繫辭上》第五章 | 定域 | `Learning.no_prefix_fixes_next`<br>`Learning.diagonal_misses`<br>`Identification.bounded_agree`<br>`Learning.goAlike_iff_lumped` | 一般而言没有有限前缀定得下一步；知来只在历程有界、读法为律所同行之处成立；以数占筮不被支持。 |
 | <a id="p-buce"></a>「陰陽不測之謂神」 | 《繫辭上》第五章 | 相合 | `Learning.diagonal_misses`<br>`Web.tail_unexcluded` | 对任一外推，皆有其失误的历程；没有模型时，有限前缀不排除其后的任何走向。 |
 | <a id="p-gantong"></a>「易，无思也，无為也，寂然不動，感而遂通天下之故」 | 《繫辭上》第十章 | 定域 | `Web.observed_level_couples`<br>`Flow.uncoupled_beyond_coupling` | 感即耦合：经耦合而入的差别得以传达；耦合闭包之外者不被区分，“通天下”恰止于耦合所及。 |
@@ -215,7 +215,7 @@
 
 **感与几：止于耦合所及。** 咸彖“咸，感也”与繫辭“感而遂通”，读作耦合：经水平耦合的条件，差别传入（`Web.observed_level_couples`）；耦合闭包之外，什么也不被区分（`Flow.uncoupled_beyond_coupling`），选择也不能及（`Flow.unselected_beyond_coupling`）。“通天下之故”于是恰止于耦合所及。几也是一样：断裂所系的条件若不以水平耦合入读法，则断裂之前，没有经耦合而入的东西界定断裂有多远（`Web.break_not_bounded`），经耦合的策略只在失败之后动用更大储备（`Flow.policy_uses_after_failure`）。“知幾其神乎”说的难处，在这里是一条律：几的先见，只在相关条件已耦合入读法时可能。这也是文言“亢之為言也，知進而不知退”的结构：只知进者，所失只在断裂时登记。
 
-**生生之谓易：变化比生生宽。** 理论中的变化包括生成与退化，两者不重叠；生生是生成之持续（D1），不是任何新的组织。只入阴爻之律是一种变化，它合并、失去可能（`wane_drawn`、`wane_loses`）。活着跨越生起与止息，不由二者的反复决定（`World.living_crosses`）。生成之持续需要开放（`World.arising_opens`），并由外部供给（`Web.generation_fed_from_beyond`）。所以“生生之謂易”在理论中是定域：易（变化）不尽是生生；生生是变化中的一种历程，有它的条件。
+**生生之谓易：变化比生生宽。** 理论中的变化包括生成与退化，两者不重叠；生生是生成之持续（D1），不是任何新的组织。只入阴爻之律是一种变化，它合并、失去可能（`wane_drawn`、`wane_loses`）。活着跨越生起与止息，不由二者的反复决定（`World.living_crosses`）。生成之持续有其条件：在有计数、有承载、平衡且耗散的世界中，无尽的生起排除从某步起每步封闭（`World.arising_opens`）；耗散、被围住而成员不断生起的有限族，不能从某步起每步都无外部供给（`Web.generation_fed_from_beyond`，双重否定的形式）。所以“生生之謂易”在理论中是定域：易（变化）不尽是生生；生生是变化中的一种历程，有它的条件。
 
 **自强不息与外部供给。** “天行健，君子以自強不息”是劝勉，不是本体论断。若把“自强”读作只凭自身而不息，平衡而耗散的交换中没有这样的部分：持续者由外部供给（`Flow.fed_from_beyond`）。若读作在耦合之中尽其自身之分，则与理论相合。
 

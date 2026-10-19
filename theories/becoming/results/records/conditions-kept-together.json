@@ -48,7 +48,7 @@
       ]
     },
     {
-      "en": "Keeping a part decides neither renewal nor what the run does to others: in Renewable no course leaves the guard \"the focal formation is active\" from any configuration, while from one configuration one run renews and another consumes the sustaining formation's condition, which ends.",
+      "en": "Keeping a part decides neither renewal nor what the run does to others: in Renewable no course leaves the guard \"the focal formation is active\" from the starting configuration, while from that configuration one run renews and another consumes the sustaining formation's condition, which ends.",
       "zh": "保持一个部分既不决定更新，也不决定运行对他者做了什么：在 Renewable 中，从任何构形都没有进程离开“焦点形成活动”这一守卫，而从同一构形，一次运行更新，另一次消耗维持者的条件，后者终结。",
       "declarations": [
         "Becoming.Renewable.kept_part_not_renewal"
