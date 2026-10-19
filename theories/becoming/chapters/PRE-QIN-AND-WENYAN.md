@@ -1,5 +1,7 @@
 # 从先秦到文言传统：生成、关切与治道的竞争解释
 
+**2026-10-19：** 诸传统与本理论的逐段对应，以及本章哪些部分保留、扩展或被取代，见[《中国思想的关系本体与生成之论》](CHINESE-SOURCES-AND-BECOMING.md#9-较早各章的位置)。
+
 2026-10-06。回应 Ren：“对，你应该研究整个先秦，甚至整个文言文。”[原话与来源](../../../sources/15-codex-theory-conversations/2026-10-06-pre-qin-and-wenyan-scope.md)。本文是 AI 研究综合，具体文本解释与理论对应保留各自的证据范围。
 
 **研究状态（2026-10-06 更新）：方向可行，路径已初步探通；研究尚未完成，可以继续探索。** Ren 已[明确确认并要求记录](../../../sources/15-codex-theory-conversations/2026-10-06-classical-direction-feasible-and-open.md)。已有成果及下一步入口继续保留；具体考释与理论主张按各自证据状态推进。

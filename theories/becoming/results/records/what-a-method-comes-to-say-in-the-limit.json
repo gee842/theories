@@ -409,12 +409,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3f65146837bd6ca6cf8151e6c65bc75b8fd8da100095864f86f3ac4771828ee7"
+      "sha256": "82022e4bd076d642efc487f16f25c3d7056f96f12affe538d66137cb040433a3"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1ddfee53a7bd7ac82b803152e9a573ec36f2886b1d948e98dd21ed5d8ab660b7"
+      "sha256": "d2a7b59c703e01a81c7aaa0c6587caeb6a2b3797d9733dca0eafa9eefadc026e"
     }
   ],
   "proof_bindings": [
@@ -430,6 +430,10 @@
     {
       "en": "19 October 2026: added (O2), the next step of what-a-finite-stretch-verifies (readings verifiable or refutable in the limit, joined to the laws of settling and learning); study section 206.",
       "zh": "2026年10月19日：新增（O2），承接 what-a-finite-stretch-verifies 的下一步（极限中可证实或可否证的读法，与止定和学习之律相接）；研究第 206 节。"
+    },
+    {
+      "en": "19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section; THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.",
+      "zh": "2026年10月19日，RO（中国思想诸传统在脊柱上）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

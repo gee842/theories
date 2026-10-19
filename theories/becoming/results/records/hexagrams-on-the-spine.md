@@ -80,7 +80,7 @@ Ren, 19 October 2026, asked whether the relation of the work to the 周易, abov
 - related, not a proved adapter: [place-relations-in-context](place-relations-in-context.md). The relations of the places (正, 應, 比, 中) read in context on these configurations, and their laws under the same changes.
 - related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). Four more laws on these configurations (the nuclear law, the cast, the four symmetries, the counter) and the six orbits of the law of waxing and waning.
 
-**Used by:** [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md) · [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md) (application)
+**Used by:** [chinese-sources-on-the-spine](chinese-sources-on-the-spine.md) (interpretive) · [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md) · [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md) (application)
 
 <a id="sources--来源"></a>
 ### Sources

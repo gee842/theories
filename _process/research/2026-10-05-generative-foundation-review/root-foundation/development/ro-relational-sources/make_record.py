@@ -53,18 +53,17 @@ record = {
     'family': 'F01',
     'reviewed_at_utc': NOW,
     'statement': {
-        'en': (f'{n} passages of nine parts of Chinese thought, quoted verbatim from preserved texts, are each tied to '
-               f'the spine as agreement, exact scope or divergence. The relational start holds across the lines; '
-               f'their universal forms mostly need a scope; four non-relational overlays recur, each answered inside '
-               f'its own tradition.'),
+        'en': (f'{n} passages of nine parts of Chinese thought, quoted verbatim, are tied to the spine as agreement, '
+               f'exact scope or divergence. The relational start holds across the lines; their universal forms mostly '
+               f'need a scope; four non-relational overlays recur, each answered inside its tradition.'),
         'zh': (f'中国思想九个部分的 {n} 段文字，从所存文本逐字引出，逐段以相合、定域或相分对应到脊柱。关系性的起点贯穿诸线；其全称形式'
                f'大多需要定域；四种非关系之层反复出现，各在本传统内部得到回应。')},
     'hypotheses': [{
-        'en': ('No Lean is added and no premise is supplied: each passage is tied to audited declarations and records '
-               'as they stand, and its kind and reading are the AI\'s (D' + d + '). "Relational" is tested by the '
-               'method\'s requirement that a passage read the relation first and let the terms differentiate within it; '
-               'its opposites are a prior ground, a nature or value fixed before relations, a will or single centre, '
-               'and a contest or rank. That is a requirement of method, not a proof of the ontology.'),
+        'en': ('No Lean and no premise is added: each passage is tied to audited declarations and records as they '
+               'stand; its kind and reading are the AI\'s (D' + d + '). A passage counts as relational when it reads the '
+               'relation first and lets the terms differentiate within it, not from a prior ground, a nature or value '
+               'fixed before relations, a will or single centre, or a contest or rank: a method requirement, not a '
+               'proof of the ontology.'),
         'zh': ('不新增 Lean，不加前提：每段对应到现有的已审计声明与记录，其关系类别与读法是 AI 的（D' + d + '）。“关系的”以方法的要求检验：'
                '先读关系，让诸项在其中分化；其反面是先在的根据、先于关系而定的性或价值、意志或单一中心、争胜与等级。这是方法的要求，'
                '不是本体论的证明。')}],
@@ -77,10 +76,10 @@ record = {
                 'a dominant thread and a position within each tradition.'),
          'zh': '一种关系本体是每一家的学说或注疏传统的共识；它是一条主导的线索，也是每一传统内部的一个立场。',
          'kind': 'non-implication'},
-        {'en': ('That the graphs of the script encode a relational ontology: the script is relational as a system of '
-                'readings, while most graphs pair a category and a sound, and the most cosmological analyses are '
-                'centred. That 武 means 止戈 by origin: the paleographic reading is kept beside the speech\'s.'),
-         'zh': '文字的字形编码了一种关系本体：文字作为读法系统是关系的，而多数字形是类与声的配对，最具宇宙论分量的字说有中心。'
+        {'en': ('That the graphs encode a relational ontology: the script is relational as a system of readings, while '
+                'most graphs pair a category and a sound. That 武 means 止戈 by origin: the paleographic reading is kept '
+                'beside the speech\'s.'),
+         'zh': '文字的字形编码了一种关系本体：文字作为读法系统是关系的，而多数字形是类与声的配对。'
                '武的本义是止戈：字形史之读与楚庄王之语分开保留。',
          'kind': 'scope'},
         {'en': ('That a divergence of status (a text asserting what the theory gives only under the continuation '
@@ -141,8 +140,8 @@ record = {
         {'path': PROVENANCE, 'role': 'provenance', 'sha256': sha(PROVENANCE)},
         {'path': SOURCE, 'role': 'provenance', 'sha256': sha(SOURCE)}],
     'proof_bindings': [],
-    'progress': [{'en': f'Study section {section}: what was found, the corrections and the gaps.',
-                  'zh': f'研究第 {section} 节：所得、所改与缺口。', 'source': ANCHOR}],
+    'progress': [{'en': 'What the map found, the six corrections and the seven gaps.',
+                  'zh': '对应所得、六处改正与七项缺口。', 'source': ANCHOR}],
     'history': [{'en': (f'19 October 2026: added (RO), on Ren\'s request to map and integrate the relational ontology '
                         f'of Chinese thought; study section {section}; readings D{d}.'),
                  'zh': f'2026年10月19日：新增（RO），按 Ren 关于对应并整合中国思想之关系本体的要求；研究第 {section} 节；读法 D{d}。'}],

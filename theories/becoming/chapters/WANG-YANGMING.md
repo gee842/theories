@@ -1,5 +1,7 @@
 # 王阳明与生成理论：一体之仁、知行与工夫的整体整合
 
+**2026-10-19：** 诸传统与本理论的逐段对应，以及本章哪些部分保留、扩展或被取代，见[《中国思想的关系本体与生成之论》](CHINESE-SOURCES-AND-BECOMING.md#9-较早各章的位置)。
+
 **后续方向，2026年10月7日：** Ren 提议从生成核心的内生演化作用建立“本然良知”，并要求记入项目上下文、继续推进。[当前演化研究](LIANGZHI-EVOLUTION.md)已有19项传递、17项发展重建的实际 Lean 检查，以及分项原始经验评估。[最新实践整合](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md)以生生正面判准解释手段误认、目的改变、知情拒绝和既有承担；原典权变、差等与拟归家书保留原说内容和现代重构界限。新增20项 Lean 声明检查实际支持交接、失败恢复、不同次序和有限结束，不以交接可行性证明仁或普遍规范权威。本章的整体重构保留，良知完整生成与无假设普遍证明仍继续。
 
 2026年10月7日。回应 Ren [「先完成王阳明」](../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md)。本章是原典约束下的比较与理论整合，不把阳明改写为一组现代反馈机制，也不把他的本体主张直接列为生成理论的公理。遵循[非二元方法](NONDUAL-METHOD.md)，服务于[整个生成实现的伦理质量怎样构成普遍实践根据](../history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)。

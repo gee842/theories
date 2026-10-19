@@ -463,12 +463,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3f65146837bd6ca6cf8151e6c65bc75b8fd8da100095864f86f3ac4771828ee7"
+      "sha256": "82022e4bd076d642efc487f16f25c3d7056f96f12affe538d66137cb040433a3"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1ddfee53a7bd7ac82b803152e9a573ec36f2886b1d948e98dd21ed5d8ab660b7"
+      "sha256": "d2a7b59c703e01a81c7aaa0c6587caeb6a2b3797d9733dca0eafa9eefadc026e"
     },
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
@@ -493,6 +493,10 @@
     {
       "en": "19 October 2026, O2: the next step taken. Readings verified or refuted in the limit are stated in Becoming.LimitVerification (record what-a-method-comes-to-say-in-the-limit, study section 206); the scope item naming them is removed and the next step revised. THE-THEORY-OF-BECOMING.md re-pointed after reading: since this record's reviewed hash the chapter gained the paragraph on what a method comes to say in the limit after this record's paragraph, and its section 8 and 9 rows changed. The claim is unchanged.",
       "zh": "2026年10月19日，O2：下一步已完成。极限中被证实或被否证的读法在 Becoming.LimitVerification 中陈述（记录 what-a-method-comes-to-say-in-the-limit，研究第 206 节）；删去指出它们的范围项，修订下一步。读过后 THE-THEORY-OF-BECOMING.md 重新指向：自本记录所审哈希以来，该章在本记录段落之后加入了关于方法在极限中所能说出者的段落，第 8、9 节各行有改动。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section; THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.",
+      "zh": "2026年10月19日，RO（中国思想诸传统在脊柱上）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

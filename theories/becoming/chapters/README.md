@@ -8,7 +8,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 ## Files in this directory
 
-1 canonical, 1 reference, 33 kept, 1 generated, 18 Chinese edition.
+1 canonical, 1 reference, 34 kept, 1 generated, 18 Chinese edition.
 
 | File | Title | Status | Role in section 11 | Note |
 |---|---|---|---|---|
@@ -19,15 +19,16 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [ALIGNMENT-THROUGH-CHANGE.md](ALIGNMENT-THROUGH-CHANGE.md) | Generative alignment through change | kept | Statement source | Cited in §7; statement source of three records. |
 | [BASIC-CONFLICT-JUDGMENT.md](BASIC-CONFLICT-JUDGMENT.md) | Judgment when basic claims conflict | kept | Statement source | Statement source of [finite-aggregation-within-restorable-basic-losses](../results/records/finite-aggregation-within-restorable-basic-losses.md). |
 | [BECOMING-FOUNDATION.md](BECOMING-FOUNDATION.md) | Theory of Becoming: foundational scope | kept | Foundation study | The foundational scope of 9 October 2026, live in part (banner of 19 October 2026). Statement source of the open target [theory-of-becoming-foundation](../results/records/theory-of-becoming-foundation.md) (§8.1). Its §4 (what the target with no added substantive axiom requires), the remaining inferences of its §5 audit and its §9 (the three claims in "the whole") are stated only there; its other sections are held by §1, the records and the theory stated in full. |
+| [CHINESE-SOURCES-AND-BECOMING.md](CHINESE-SOURCES-AND-BECOMING.md) | 中国思想的关系本体与生成之论：诸传统在脊柱上的对应 | kept | Statement source | The Chinese sources passage by passage on the spine (19 October 2026); statement source of [chinese-sources-on-the-spine](../results/records/chinese-sources-on-the-spine.md). The entry point for the Chinese sources; its §9 says what each chapter below keeps, extends and supersedes. |
 | [CHOICE-AND-GENERATIVE-CONTEXT.md](CHOICE-AND-GENERATIVE-CONTEXT.md) | Joint choice, limited aggregation and context | kept | Statement source | Statement source of [open-form-realization-under-revision](../results/records/open-form-realization-under-revision.md). |
 | [COGNITION-LEARNING-AND-EVOLUTION.md](COGNITION-LEARNING-AND-EVOLUTION.md) | Cognition, learning and evolution within becoming | kept | Statement source | The active cognition goal; states the laws of learning. |
-| [DAO-AND-GENERATIVITY.md](DAO-AND-GENERATIVITY.md) | 生成论与“道”：生成、德与善能否贯通 | kept | Open direction | Open direction on the classical texts. |
+| [DAO-AND-GENERATIVITY.md](DAO-AND-GENERATIVITY.md) | 生成论与“道”：生成、德与善能否贯通 | kept | Open direction | Open direction on the classical texts; as the entry point for the Chinese sources replaced by CHINESE-SOURCES-AND-BECOMING (19 October 2026). |
 | [ETHICAL-LEARNING.md](ETHICAL-LEARNING.md) | Ethical learning: how concern forms, acquires grounds and keeps changing | kept | Statement source | Statement source of [organizational-formation-from-generative-comparison](../results/records/organizational-formation-from-generative-comparison.md); Ren redirected its sections 55–74. |
 | [FORMAL-CORE.md](FORMAL-CORE.md) | Formal core of relational generativity | kept | Historical, pinned | Historical (5 October 2026), stays for the same reason. |
 | [FORMAL-SPECIFICATION.md](FORMAL-SPECIFICATION.md) | Formal specification for physical formation, renewal and shared capability | kept | Historical, pinned | Historical (5 October 2026), stays for the same reason. |
 | [G0-WARRANT.md](G0-WARRANT.md) | The warrant for living significance: how its starting commitment is supported | kept | Foundation study | Written on 9 October 2026, when living significance was an adopted axiom. It is now a condition, and the former conditional part is §6.15, so its framing is historical. It is kept for its analysis of what each kind of support contributes. |
 | [GENERATED-LOGIC.md](GENERATED-LOGIC.md) | Conditions of becoming and logical rules | kept | Statement source | Statement source of [constitutive-binding-assessment](../results/records/constitutive-binding-assessment.md). |
-| [HANZI-AND-THEORY-TREE.md](HANZI-AND-THEORY-TREE.md) | 汉字、组合与理论树：建立有根据的局部对应 | kept | Open direction | An open method direction. |
+| [HANZI-AND-THEORY-TREE.md](HANZI-AND-THEORY-TREE.md) | 汉字、组合与理论树：建立有根据的局部对应 | kept | Open direction | An open method direction; its 武 reading and vocabulary table replaced by CHINESE-SOURCES-AND-BECOMING §5.4 and §6 (19 October 2026). |
 | [KNOWLEDGE.md](KNOWLEDGE.md) | Knowledge within becoming | kept | Statement source | Cited by §3. |
 | [LIANGZHI-EVOLUTION.md](LIANGZHI-EVOLUTION.md) | 本然良知的生成演化 | kept | Open direction | The goal statement of the liangzhi-evolution goal. |
 | [MARKET-DYNAMICS-MATH.md](MARKET-DYNAMICS-MATH.md) | Market renewal selection and capture | kept | Statement source | Defines the market update law that the four market records take as hypothesis; kept with the chapter above. |
@@ -39,11 +40,11 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [PHILOSOPHICAL-ACCOUNT.md](PHILOSOPHICAL-ACCOUNT.md) | A philosophy of becoming for knowing and living | kept | Statement source | The synthesis of knowing and wisdom; cited by §3. |
 | [PLURAL-SYSTEMS-AND-CORRECTION.md](PLURAL-SYSTEMS-AND-CORRECTION.md) | Responsive transformation: plural systems, shared trials and parent/subsystem relationships | kept | Statement source | Its section 15 is Ren's framing of responsive transformation of 9 October 2026, the current formulation. |
 | [PRACTICAL-JUDGMENT.md](PRACTICAL-JUDGMENT.md) | Practical judgment | kept | Statement source | Statement source of the record [practical-judgment-g0-j](../results/records/practical-judgment-g0-j.md). |
-| [PRE-QIN-AND-WENYAN.md](PRE-QIN-AND-WENYAN.md) | 从先秦到文言传统：生成、关切与治道的竞争解释 | kept | Open direction | Open direction on competing explanations. |
+| [PRE-QIN-AND-WENYAN.md](PRE-QIN-AND-WENYAN.md) | 从先秦到文言传统：生成、关切与治道的竞争解释 | kept | Open direction | Open direction on competing explanations; as the entry point replaced by CHINESE-SOURCES-AND-BECOMING (19 October 2026). |
 | [RELATIONS-ACROSS-SCALES.md](RELATIONS-ACROSS-SCALES.md) | Relations across scales | kept | Statement source | Current argument; seven Lean modules, two of them joined to the spine. |
 | [SCIENTIFIC-PHILOSOPHY.md](SCIENTIFIC-PHILOSOPHY.md) | Scientific philosophy and the generative conditions of knowing | kept | Statement source | Statement source of the open target on scientific inquiry (§8.1). |
 | [THE-THEORY-OF-EVOLUTION.md](THE-THEORY-OF-EVOLUTION.md) | The Theory of Evolution | kept | Programme chapter | The chapter of the separately authorized evolution programme (goal `theory-of-evolution`), written on 8 and 9 October 2026 and cited by §2 and §8.2. It holds the programme's six completion requirements, its current theoretical focus and its next connection, which this chapter does not restate; two experiment checkers read its requirement rows. |
-| [WANG-YANGMING.md](WANG-YANGMING.md) | 王阳明与生成理论：一体之仁、知行与工夫的整体整合 | kept | Open direction | The classical comparison with Wang Yangming, kept with the three chapters above. |
+| [WANG-YANGMING.md](WANG-YANGMING.md) | 王阳明与生成理论：一体之仁、知行与工夫的整体整合 | kept | Open direction | The classical comparison with Wang Yangming, kept with the three chapters above; 知行合一 and 心外无事 on the spine in CHINESE-SOURCES-AND-BECOMING (19 October 2026). |
 | [WISDOM-AND-CONTEXT.md](WISDOM-AND-CONTEXT.md) | Wisdom, context and the common core | kept | Statement source | Statement source of the open target [wisdom-root](../results/records/wisdom-root.md) (§8.1). |
 | [YI-ZHUAN-AND-BECOMING.md](YI-ZHUAN-AND-BECOMING.md) | 易传与生成／变化之论：周易的构形在脊柱上 | kept | Statement source | The 易传 passage by passage on the spine (19 October 2026); statement source of [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md), [place-relations-in-context](../results/records/place-relations-in-context.md), [hexagram-world-laws](../results/records/hexagram-world-laws.md) and [fixed-places-and-sole-lines](../results/records/fixed-places-and-sole-lines.md). |
 | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.md) | Zero-axiom Practical judgment | kept | Statement source | Statement source of the open target [universal-practical-warrant](../results/records/universal-practical-warrant.md) (§8.1). |

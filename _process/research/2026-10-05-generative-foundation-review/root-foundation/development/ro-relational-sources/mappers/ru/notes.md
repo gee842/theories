@@ -116,12 +116,12 @@ These are structural matches: the same relation, condition and direction, not sh
 
 All three were written 6–7 October in older vocabulary, before the spine's present modules. They are kept as scope and history. They are superseded as entry points for the passages entered here.
 
-- **[WANG-YANGMING.md](theories/becoming/chapters/WANG-YANGMING.md)**
+- **[WANG-YANGMING.md](../../../../../../../../theories/becoming/chapters/WANG-YANGMING.md)**
   - What it is: a holistic reconstruction of 致良知, 知行合一 and 心即理. It rests on `SituatedPractice.lean` (under `experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/`), which has 12 declarations, 8 of them with empty axiom reports, and a `Fits` judgement on whole histories whose ethical standing the chapter itself says the definition does not establish.
   - **Kept:** its main finding, that the 心即理 of conduct concerns the responding side of a relation and is not an ontology of mind, and its counter-reading section.
   - **Extended:** 知行合一 now links to the experiment laws (a move taken is fixed, an untaken one is not; `ru-wangyangming-zhi-xing-he-yi`). The general form of 心外无事 is recorded as a divergence with spine witnesses (`ru-wangyangming-xin-wai-wu-li`).
   - **Superseded:** its non-spine module and older terms ("本然良知", "生成核心") as the formal entry point. A spine port of `SituatedPractice` would be needed before the chapter's formal claims could be cited as spine results.
-- **[LIANGZHI-EVOLUTION.md](theories/becoming/chapters/LIANGZHI-EVOLUTION.md)**
+- **[LIANGZHI-EVOLUTION.md](../../../../../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md)**
   - What it is: the evolution of 良知 through transmission, development and handoff, with 19, 17 and 20 Lean declarations in `ConsequenceTransmission`, `DevelopedResponse` and `SupportHandoff` under `experiments/shared-renewal-capability/…`, outside the spine.
   - **Kept** as an empirical-and-mechanism study. It says itself that a supplied repair reaction does not represent 仁.
   - Its question, how responsiveness forms, now has spine neighbours:
@@ -129,7 +129,7 @@ All three were written 6–7 October in older vocabulary, before the spine's pre
     - `PoolResponse`: coupling does not fix response;
     - `Descent`.
   - **Not superseded**: the spine has no theorem on the formation of response to another's loss, and by design takes response as a premise (see `ru-mengzi-ce-yin`). The chapter's modules would join the spine by instance theorems, not be replaced.
-- **[WENYAN-CONFUCIAN.md](_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-CONFUCIAN.md)**
+- **[WENYAN-CONFUCIAN.md](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WENYAN-CONFUCIAN.md)**
   - What it is: the 6 October first round, with three routes (论语 relation-practice, 孟子 端 and 推扩, 荀子 性 and 伪).
   - Its diagnoses are now spine-checked one by one:
 

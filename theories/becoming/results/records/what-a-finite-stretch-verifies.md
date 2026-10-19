@@ -96,6 +96,7 @@ Aliases: `what a finite stretch verifies`, `有限片段所证实者`, `open cla
 
 - 19 October 2026: added (O1), the next step of a-history-read-off-its-finite-stretches (what a finite stretch verifies, the open classes) and the formal side of the demarcation comparison of the scientific-inquiry target; study section 205.
 - 19 October 2026, O2: the next step taken. Readings verified or refuted in the limit are stated in Becoming.LimitVerification (record what-a-method-comes-to-say-in-the-limit, study section 206); the scope item naming them is removed and the next step revised. THE-THEORY-OF-BECOMING.md re-pointed after reading: since this record's reviewed hash the chapter gained the paragraph on what a method comes to say in the limit after this record's paragraph, and its section 8 and 9 rows changed. The claim is unchanged.
+- 19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section; THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.
 
 </details>
 

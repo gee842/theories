@@ -36,7 +36,7 @@ Readings of 8 October 2026 and later · [Repository home](../../../README.md) ·
 <a id="覆盖与证据含义--coverage-and-evidence"></a>
 ## Coverage and evidence
 
-This reading edition covers **141 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 82 entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
+This reading edition covers **142 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 82 entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
 
 | Category | Meaning |
 |---|---|
@@ -68,6 +68,7 @@ Identifiers follow source filenames. A Lean link identifies a particular corresp
 | [`autonomous-method-formation`](ARGUMENTS-A-L.md#autonomous-method-formation) | Forming and replacing a mathematical method connection | learning |
 | [`basic-conflict-judgment`](ARGUMENTS-A-L.md#basic-conflict-judgment) | Judgment when basic claims conflict | ethical argument |
 | [`becoming-foundation`](ARGUMENTS-A-L.md#becoming-foundation) | Theory of Becoming: foundational scope | foundation |
+| [`chinese-sources-and-becoming`](ARGUMENTS-A-L.md#chinese-sources-and-becoming) | The relational ontology of Chinese thought and the theory of becoming: the traditions on the spine | classical comparison |
 | [`choice-and-generative-context`](ARGUMENTS-A-L.md#choice-and-generative-context) | Joint choice, limited aggregation and context | ethical argument |
 | [`claims`](ARGUMENTS-A-L.md#claims) | Registered claims and historical ledger | navigation |
 | [`claims-and-paid-action`](ARGUMENTS-A-L.md#claims-and-paid-action) | Claims, actual action and continuing protection | ethics interface |

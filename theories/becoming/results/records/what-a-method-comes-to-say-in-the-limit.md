@@ -92,6 +92,7 @@ Aliases: `what a method comes to say in the limit`, `方法在极限中所能说
 ### History
 
 - 19 October 2026: added (O2), the next step of what-a-finite-stretch-verifies (readings verifiable or refutable in the limit, joined to the laws of settling and learning); study section 206.
+- 19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section; THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.
 
 </details>
 

@@ -352,6 +352,30 @@
     "status_code": "relative-result-universal-open"
   },
   {
+    "id": "chinese-sources-and-becoming",
+    "source": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+    "title_zh": "中国思想的关系本体与生成之论：诸传统在脊柱上的对应",
+    "title_en": "The relational ontology of Chinese thought and the theory of becoming: the traditions on the spine",
+    "category": "classical-comparison",
+    "status": "逐句对应已检查；无新 Lean / Passage map checked; no new Lean",
+    "argument_zh": "中国思想九个部分的 248 段文字取自保存的文本，逐段标明相合、定域或相分，以及所对应的声明与记录。“延续一种关系本体”这一论题被检验：在起点与观察上成立，全称形式大多需要定域，四种非关系之层各在本传统内部得到回应。",
+    "argument_en": "248 passages of nine parts of Chinese thought, quoted from preserved texts, are each mapped to declarations and records as agreement, exact scope or divergence. The thesis that these lines continue one relational ontology is tested: it holds for their start and observation, their universal forms mostly need a scope, and four non-relational overlays are each answered inside their tradition.",
+    "significance_zh": "中国思想与理论的关系成为库中可检查的部分；相分与非关系之层保留，使原典能反过来检验理论。",
+    "significance_en": "The relation of Chinese thought to the theory becomes a checked part of the library, with the divergences and non-relational overlays kept so that the texts can test the theory.",
+    "scope_zh": "读法为 AI 读法（D54）；不新增 Lean；不解释任何一家之整体，不说作者意谓这些律；未与刻本对校。",
+    "scope_en": "The readings are the AI's (D54); no new Lean. Not an interpretation of any line as a whole, nor a claim that its authors meant these laws; not collated with printed editions.",
+    "next_zh": "建议：七项缺口各自认领并写成 Lean；较早各中国章节中被取代的部分移入历史；独立审读。",
+    "next_en": "Proposed: the seven gaps, each claimed and written in Lean; the superseded parts of the earlier Chinese chapters moved to history; an independent review.",
+    "lean": [],
+    "evidence": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
+      "sources/chinese-classical-texts/PROVENANCE.json",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md"
+    ],
+    "source_sha256": "66c4b62b6714976306c3dd3a24c0d17dd1672df487c0020a36a2eb2a9ac5f483"
+  },
+  {
     "id": "choice-and-generative-context",
     "title_zh": "共同选择、有限合并与情境",
     "title_en": "Joint choice, limited aggregation and context",

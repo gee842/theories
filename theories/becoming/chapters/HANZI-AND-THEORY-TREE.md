@@ -1,5 +1,7 @@
 # 汉字、组合与理论树：建立有根据的局部对应
 
+**2026-10-19：** 诸传统与本理论的逐段对应，以及本章哪些部分保留、扩展或被取代，见[《中国思想的关系本体与生成之论》](CHINESE-SOURCES-AND-BECOMING.md#9-较早各章的位置)。
+
 2026-10-06。回应 Ren 提出的单字、双字或组合与理论树概念是否有许多一一映射的问题，以及“武＝止戈”的例子。[原话](../../../sources/15-codex-theory-conversations/2026-10-06-hanzi-and-theory-tree.md)另存。本文是 AI 研究综合，承接[先秦与文言研究](PRE-QIN-AND-WENYAN.md)。
 
 **研究状态（2026-10-06 更新）：方向可行，路径已初步探通；研究尚未完成，可以继续探索。** Ren 已[明确确认并要求记录](../../../sources/15-codex-theory-conversations/2026-10-06-classical-direction-feasible-and-open.md)。已有成果及下一步入口继续保留；具体考释与理论主张按各自证据状态推进。

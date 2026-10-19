@@ -114,6 +114,7 @@ Aliases: `a history read off its finite stretches`, `从有限片段读出的历
 - 19 October 2026, V (what a collective's continuation needs): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: V added decision D48). The claim is unchanged.
 - 19 October 2026, Y2 (Becoming.HexagramPlaces): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y2 added D50, its index row and its lineage line). The claim is unchanged.
 - 19 October 2026, O1: the next step taken. What a finite stretch verifies (the open classes) is stated in Becoming.Verification (record what-a-finite-stretch-verifies, study section 205); the scope item saying it was not stated is removed and the next step revised. THE-THEORY-OF-BECOMING.md re-pointed after reading: since this record's reviewed hash the chapter gained the paragraphs on what a finite stretch verifies and on what a method comes to say in the limit (O2, landed with O1) after this record's paragraph, and its section 8 and 9 rows changed. The claim is unchanged.
+- 19 October 2026, RO (the Chinese sources on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.
 
 </details>
 

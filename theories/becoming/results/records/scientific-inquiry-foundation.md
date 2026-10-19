@@ -123,6 +123,7 @@ Aliases: —
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. The claim is unchanged.
 - 19 October 2026, O1: progress entry for the formal side of the demarcation comparison (record what-a-finite-stretch-verifies, study section 205). The target, its status and its next step are unchanged: the comparison on actual inquiries remains.
 - 19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.
+- 19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section). The claim is unchanged.
 - 3 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](scientific-inquiry-foundation.json).
 
 <a id="earlier-text--早期文本"></a>

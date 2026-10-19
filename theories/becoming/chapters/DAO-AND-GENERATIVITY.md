@@ -1,5 +1,7 @@
 # 生成论与“道”：生成、德与善能否贯通
 
+**2026-10-19：** 诸传统与本理论的逐段对应，以及本章哪些部分保留、扩展或被取代，见[《中国思想的关系本体与生成之论》](CHINESE-SOURCES-AND-BECOMING.md#9-较早各章的位置)。
+
 2026年10月6日。研究方向来自 [Ren 的提问与研究要求](../../../sources/15-codex-theory-conversations/2026-10-06-dao-and-generative-grounding.md)。本文是 AI 协助完成的哲学研究与综合；Ren 的原话另存，具体论证由本文负责。
 
 **研究状态（2026-10-06 更新）：方向可行，路径已初步探通；研究尚未完成，可以继续探索。** Ren 已[明确确认并要求记录](../../../sources/15-codex-theory-conversations/2026-10-06-classical-direction-feasible-and-open.md)。已有成果及下一步入口继续保留；具体考释与理论主张按各自证据状态推进。
