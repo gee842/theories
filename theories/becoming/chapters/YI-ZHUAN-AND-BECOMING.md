@@ -2,7 +2,7 @@
 
 2026年10月19日。回应 Ren 的提问与要求（[原话](../../../sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md)）：我们的工作与周易、尤其易传的关系能否看见、能否建立；建立起来，成为库的一部分，在脊柱上有明确的对应。本章由 AI 撰写；Ren 的原话另存，是来源，不是任何主张的根据。表中与正文的每一条读法都是 AI 读法，依 [D47](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d47-易传在脊柱上的读法--the-readings-of-the-yi-zhuan-on-the-spine) 与 [D50](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d50-爻位之关系的读法--the-readings-of-the-relations-of-the-places) 在理论的一个说明之中成立或修改。
 
-**建成了什么。** 一是周易所描述的构形本身：六爻、每爻刚柔二值、一爻之变、消息之律、所传卦序，作为脊柱上的一个世界写入纯核心模块 [`Becoming.Hexagrams`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean)（71 条定理，无公理），脊柱对一切世界证明的律在这些构形上被检查，而不只是被断言。二是爻位之间的关系：正、应、比（承、乘）、中，作为在位上成立、带语境索引的读法，写入纯核心模块 [`Becoming.HexagramPlaces`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean)（108 条定理，无公理），并证明它们在错、综、一爻之变与消息之律之下怎样变，诸律都在脊柱的运行上读出（§2 末）。三是逐句对应：易传、经文与两种注疏的 64 段文字，逐字取自保存下来的维基文库版本，每段标明它与理论的关系（相合 35、定域 19、相分 10）和它对应的脊柱声明；另有四项普查，把彖与小象中某类关于爻位的明言逐一找出，在其卦上检查。四是检查：[`verify_mapping.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py) 核对每段文字在所存版本中逐字出现、每个声明在核心检查的审计清单之中、卦序与所存六十四页逐卦一致、所命名之卦与其页一致、四项普查与 Lean 的清单一致、本章的对应表与对应文件一致。结果记录是 [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md) 与 [place-relations-in-context](../results/records/place-relations-in-context.md)。
+**建成了什么。** 一是周易所描述的构形本身：六爻、每爻刚柔二值、一爻之变、消息之律、所传卦序，作为脊柱上的一个世界写入纯核心模块 [`Becoming.Hexagrams`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean)（71 条定理，无公理），脊柱对一切世界证明的律在这些构形上被检查，而不只是被断言。二是爻位之间的关系：正、应、比（承、乘）、中，作为在位上成立、带语境索引的读法，写入纯核心模块 [`Becoming.HexagramPlaces`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean)（108 条定理，无公理），并证明它们在错、综、一爻之变与消息之律之下怎样变，诸律都在脊柱的运行上读出（§2 末）。三是另外四条律与消息之律的普查：互、老少之爻与之卦、錯綜四对称、加一之律，以及消息之律的六条轨道，写入纯核心模块 [`Becoming.HexagramLaws`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean)（132 条定理，无公理），诸律也在脊柱的运行上读出（§2 末）。四是逐句对应：易传、经文与两种注疏的 69 段文字，逐字取自保存下来的维基文库版本，每段标明它与理论的关系（相合 37、定域 22、相分 10）和它对应的脊柱声明；另有四项普查，把彖与小象中某类关于爻位的明言逐一找出，在其卦上检查。五是检查：[`verify_mapping.py`](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py) 核对每段文字在所存版本中逐字出现、每个声明在核心检查的审计清单之中、卦序与所存六十四页逐卦一致、所命名之卦与其页一致、四项普查与 Lean 的清单一致、本章的对应表与对应文件一致。结果记录是 [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md)、[place-relations-in-context](../results/records/place-relations-in-context.md) 与 [hexagram-world-laws](../results/records/hexagram-world-laws.md)。
 
 **没有建成什么。** 这不是对周易整体的解释，也不说易传作者意谓这些律。吉凶悔吝的判断、说卦的取象、三材的指认、卦序（序卦）本身的次第之理、位的尊卑、初上两位是否有位、占筮与数术，都不在模块之中；相分之处保留为相分。
 
@@ -46,6 +46,17 @@
 - **承与乘。** 承之数加初爻，等于乘之数加上爻（`rises_falls_ends`）：自下而上，阳之起与落的次数只差首尾两爻。
 - **沿展开读。** 以上诸律都在脊柱的运行上读出，不只是构形的性质。各位之正、各高度之应、各缝之比，在任何过程之下都没有去语境的框架与之相合，带语境索引的框架则合（`phases_no_free_frame`、`oppositions_no_free_frame`、`seams_no_free_frame`、`atSites_indexed`）。沿消息之律的每一运行（`Law.run`），每爻上升时其正翻转（`run_phase_rises`、`run_phase_enters`、`run_phaseCount`），比随其两爻而行（`run_carried`）；六步之后每一爻之正皆翻转，而应由正而定，所以每一处应皆保持（`run_six_turns`、`run_six_keeps`）；三步之后每一处应皆翻转（`run_three_turns`、`run_doubled_three`）；应之格局每一步都变，两步复得恰在两种相间的格局，自三处皆应六步一周（`run_opposition_moves`、`run_opposition_two_iff`、`run_opposition_cycle`）。沿一爻之变的每一运行，每一步翻转所变之爻的正与其高度之应，其余不动（`changes_run_phase`、`changes_run_opposition`）。倒转消息之律的运行，即是自倒转之卦逆行的运行，其上每一关系皆在镜像之处（`backward_run`、`backward_relations`）。任一过程的运行在任一步所示之卦，应皆由正而定（`shown_along_run`）。
 - **经文所说的构形与四项普查。** 逐句对应所引之卦，以其在所传卦序中的序数命名（`number`、`jiJi` 等；检查脚本核对其名与所存之页），经文所说其爻位之关系在其上检查（`jiJi_inPhase`、`weiJi_opposed`、`heng_opposed`、`xian_opposed`、`gen_halves_glue`、`tongRen_second`、`xiaoXu_fourth`、`daYou_fifth`、`guiMei_falls`、`guai_falls`）。四项普查列出经文中一类明言的全部：小象明言位者（`placeStatements`）、言中正或正中者（`centreStatements`）、言乘刚者（`fallStatements`），彖言剛中而應者（`middleOppositionStatements`）。检查脚本在所存六十四页中找出每一处，与 Lean 的清单比较；Lean 在其卦上检查清单的每一项（`placeStatements_agree`、`centreStatements_agree`、`fallStatements_agree`、`middleOppositionStatements_agree`）。经文与关系相分之处，构形如其所是地写出（`xu_top_inPhase`、`gen_fifth_out_of_phase`）。
+
+### 互、之卦、錯綜、加一与消息之六轨
+
+以下声明在 [`Becoming.HexagramLaws`](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean)，前缀 `Becoming.Hexagram.`；诸律都写在脊柱的运行上（`Law.run`、`Law.process`）。
+
+- **互。** 互以二、三、四爻为下卦，三、四、五爻为上卦（`nuclear`）。互之所成由中爻（二至五爻）定（`nuclear_inner`），所以起点中爻相同的两个运行自第一步起即为一个运行（`run_inner`）；初、上两爻一步即失：此律合并，永失一种可能（`nuclear_merges`、`nuclear_loses`）。两步之后只余三、四两爻，三叠成卦（`nuclear_two`、`run_two_middle`）。三、四两爻每步互换，是律所同行的归并（`innerPair_goAlike`）；阳爻之数不是：剝与比阳爻皆一，互之后一为坤、一为剝（`nuclear_yang_not_goAlike`）。
+- **互所归。** 乾、坤不动，既濟、未濟相代（`nuclear_two_fixed_one_cycle`）；运行停在起点，恰当起点为乾或坤（`nuclear_rests_iff`）。每一运行自第二步起在此四者之中，不再离开（`nuclear_two_attractor`、`attractor_absorbing`、`run_in_attractor`），其余构形皆被吸入而不复返（`outside_drawn`、`outside_not_returns`，经 `Law.Drawn.not_returns`），所以恰此四者复返（`returns_iff_attractor`、`nuclear_process_returns_iff`）：它们恰是所传卦序的首二卦与末二卦（`process_returns_iff_ends`）。四卦本在其中，十二卦第一步进入，四十八卦第二步进入（`entry_counts`）。归于何处由三、四两爻定：两爻皆阳者十六卦归乾，皆阴者十六卦归坤，相异者三十二卦入既濟、未濟之相代（`basin_iff`、`qian_basin`、`kun_basin`、`cycle_basin`、`basin_counts`、`run_rests_at`）。与消息之律（不合并，皆复返）、只入阴爻之律（尽归坤）并列，这是第三种形态：两个不动之卦加一个二步之环。
+- **錯綜四对称。** 不变、錯、綜、錯而綜（`Symmetry`、`Symmetry.act`）成一四元群：各为自身之逆，两两可交换（`Symmetry.act_comp`、`Symmetry.comp_self`、`Symmetry.comp_comm`）。互与四者皆交换（`nuclear_act`），故四者各把互的每一运行送为互的运行（`nuclear_run_act`）；没有构形是自身之錯（`complement_ne`），所以一卦与其錯卦的运行永不相遇（`run_complement_apart`）。以二进制值最小之卦为名（`classOf`），两卦同类恰当某一对称把一卦送为另一卦（`classOf_eq_iff`）：共二十类，八类各二卦，十二类各四卦（`class_census`）。诸类是互所同行的归并（`classes_goAlike`）；消息之律不同行于诸类，因为倒转使它逆行（`classes_not_goAlike_waxWane`）。倒转不变之八卦（乾坤、頤大過、坎離、中孚小過），恰是卦序以錯相配者；倒转与錯所得相同之八卦，恰是卦序中两者兼合之四对（泰否、隨蠱、漸歸妹、既濟未濟）（`turn_fixed_iff`、`both_fixed_iff`）。
+- **老少与之卦。** 一爻或老或少（`Marked`）；下一步老爻变为其反而不再变，少爻如故（`MarkedLines.settle`）。此律合并（`MarkedLines.settle_merges`），一步即定：沿每一运行自第一步起诸爻已定，运行静止（`MarkedLines.run_settled`、`MarkedLines.run_rests`）；有老爻者被吸入无老爻者之中（`MarkedLines.drawn`），所以一构形复返，恰当无一爻为老（`MarkedLines.returns_iff`、`MarkedLines.process_returns_iff`）。本卦（`MarkedLines.shown`）不是此律所同行的归并：六爻皆少之乾与初爻为老之乾，分别至乾与姤（`MarkedLines.shown_not_goAlike`）；之卦（`MarkedLines.onward`）是（`MarkedLines.onward_goAlike`）。六爻皆老阳示乾，自第一步起运行所示为坤；皆老阴则反之（`MarkedLines.all_nines`、`MarkedLines.all_sixes`）。
+- **加一。** 以初爻为最低位，加一使最低之阴爻变阳、其下诸阳爻变阴（`addOne`、`carryAt`）；减一还原之，此律不合并（`addOne_lossless`）。它只有一条六十四步之轨：任一构形可由任一构形得到，每一构形首次复返在第六十四步（`addOne_reach`、`addOne_one_orbit`）。沿每一运行，2^(k−1) 步之后第 k 爻翻转，其下诸爻如故（`line_turns`）。
+- **消息之六轨。** 各缝之承与乘（`riseCount`、`fallCount`），加上初、上两爻相同之处，数出绕行一周的爻变（`changesAround`）；消息之律沿每一运行保持此数（`changesAround_run`、`changesAround_invariant`），其值为一、三或五，分别在十二、四十、十二个构形上（`changesAround_values`、`changesAround_counts`），所以此律虽不合并，乾不能至既濟（`qian_not_reach_jiJi`、`waxWane_not_reach_every`）。每一构形在六个起点之一的轨道上：乾、屯、蒙、需、隨、既濟（`orbitStarts`、`on_an_orbit`），各于第十二步首次复返，隨于第四步（`starts_return`）；轨道是律所同行的归并，律之所及保持轨道（`orbitIndex_goAlike`、`reach_keeps_orbit`）；六轨各含十二、十二、十二、十二、四、十二个构形，绕行一周之爻变为一、三、三、三、三、五（`orbit_census`）。
 
 ## 3. 三种关系
 
@@ -163,6 +174,14 @@
 
 **四项普查：经文在这些关系上是否一致。** 小象明言位者二十七处，二十六处与奇偶相合，且都在三、四、五位；言中正、正中者十处，九处是居中而当位之爻；言乘刚者五处，皆是阴在阳上；彖言剛中而應者五处，皆是中之高度相应。普查由检查脚本在所存六十四页中找出这四类明言的全部，与 Lean 的清单逐一比较，Lean 在其卦上检查清单的每一项（`placeStatements_agree` 等）。所以这不是挑选出的例证：除两处之外，经文在这四类明言中一致使用这些关系。两处例外是需上六与艮六五，见 §6。
 
+**中爻与互：一卦所归，由三、四两爻定。** 繫辭下“若夫雜物撰德，辨是與非，則非其中爻不備”，在互之律中有确切的读法：互之所成恰由中爻定，初、上两爻一步即失（`nuclear_inner`、`nuclear_merges`）；再一步，二、五两爻也失，只余三、四（`nuclear_two`）。所以一卦在互之下归于何处，由三、四两爻定：乾、坤，或既濟、未濟之相代（`basin_iff`）。“辨是與非”是判断，不在律中。互的这四个归宿恰是卦序首尾四卦（`process_returns_iff_ends`）：序卦以天地始，以未濟终而说“物不可窮也”，而互之律下既濟、未濟相代不止，是环而不是静止。这只是卦序上检查过的事实，不说卦序由互而排。
+
+**之卦：本卦不承载律，之卦承载。** 老爻变而少爻不变，一步即定（`MarkedLines.run_settled`）。本卦相同，之卦可异：乾而六爻皆少，仍为乾；乾而初爻为老，则为姤（`MarkedLines.shown_not_goAlike`）。所以占得之本卦，对此律不是足够的读法，之卦是（`MarkedLines.onward_goAlike`）。这与“象与易简”是同一条律：一种读法承载律，恰当律在其归并上同行。“易窮則變，變則通，通則久”在此律之内成立：老（穷）则变，变后为少，不再变（久）；它在一切律上不成立，见上文“穷则变不是普遍律”。
+
+**錯綜：同一组对称，对一律是归并，对另一律不是。** 互与錯、綜皆交换，所以二十类是互所同行的归并（`classes_goAlike`）；消息之律与錯交换，倒转却使它逆行，所以它不同行于诸类（`classes_not_goAlike_waxWane`）。读法是否承载律，取决于律。孔穎達“非覆即變”在此更确切：倒转不变之八卦，恰是卦序以變相配者（`turn_fixed_iff`）。
+
+**不合并保证复返，不保证可达。** 消息之律不合并，每卦皆返，却分为六轨：绕行一周之爻变是守恒之数，取一、三、五（`changesAround_values`），所以十二消息卦之轨到不了既濟（`qian_not_reach_jiJi`）。加一之律同样不合并，却只一轨，任一构形可由任一构形得到（`addOne_reach`）。
+
 ## 6. 相分之处
 
 - **继之者善，天地之大德曰生，復见天地之心。** 易传把善、大德与心归于天地之行。理论中动力学不决定意义：无物有意义与万物有意义，动力学两者都不排除（`Web.significance_undetermined`）。生命意义只在延续条件（`Unrestricted`）之下是定理（`g0_of_unrestricted`），此条件在理论中明示而不断言，其根据开放。
@@ -174,11 +193,13 @@
 
 ## 7. 读法的标注与依据
 
-本章的读法都是 AI 读法。它们依 D45 在理论的一个说明中成立：经文是这些词句意义的证据，读法是否站得住，由它在理论中的位置论证。Ren 的话是来源。“七日來復”依消息卦的读法，这只是诸读法之一；“周流六虛”读作消息之律下爻的升降，“兼三材而兩之”只取六位二值的结构。爻位之关系：正依位之奇偶，六位一律；应依同一高度的上下两位；比依相邻两位之间的缝，承、乘依其方向；中依二、五两位。小畜、大有“上下應之”与夬“柔乘五剛”读的是一爻与其余诸爻的关系，比对应之位与相邻之位宽，表中写为定域或相分，不在模块之中。凡读法超出 Lean 所证者，表中写明不在律中。
+本章的读法都是 AI 读法。它们依 D45 在理论的一个说明中成立：经文是这些词句意义的证据，读法是否站得住，由它在理论中的位置论证。Ren 的话是来源。“七日來復”依消息卦的读法，这只是诸读法之一；“周流六虛”读作消息之律下爻的升降，“兼三材而兩之”只取六位二值的结构。爻位之关系：正依位之奇偶，六位一律；应依同一高度的上下两位；比依相邻两位之间的缝，承、乘依其方向；中依二、五两位。小畜、大有“上下應之”与夬“柔乘五剛”读的是一爻与其余诸爻的关系，比对应之位与相邻之位宽，表中写为定域或相分，不在模块之中。凡读法超出 Lean 所证者，表中写明不在律中。互、之卦与錯綜之读（[D51](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md#d51-卦之诸律的读法--the-readings-of-the-hexagram-laws)）：中爻依二至五爻；互读作律而迭用，传统多只取一步；老少依九、六为老、七、八为少，用九、用六读作六爻皆老（《左傳》昭公二十九年称乾之用九为“乾之坤”，未存于本库，未核对）；錯、綜之名依后世注家（明来知德），经文“錯綜其數”说的是数，表中写为定域。
 
 ## 8. 未做之事
 
-- 卦序（序卦）的次第之理：只检查了配对，卦序本身不是任何律的轨道。
+- 卦序（序卦）的次第之理：只检查了配对，以及首尾四卦恰是互之律下复返者（`process_returns_iff_ends`）；卦序本身不是任何律的轨道。
+- 大衍筮法中老少之爻的概率：之卦之律只说老少已定之后；《左傳》、京房的互体与卦变之说，以及来知德的錯綜之说，未存于本库。
+- 邵雍先天之序（以初爻为最高位的加一之律，自乾逐一递减至坤）只在模块文档中说明，未写成定理；互在 Y2 之位上的读法。
 - 吉凶悔吝与卦爻辞的判断、说卦的取象与方位、卦气与纳甲。
 - 王弼《周易略例》（明位、辯位等篇）未存于本库：“初上无位”与“一爻为主”（上下應之、乘五剛）之读未写入，也未与其文对照。
 - 普查只及彖与小象中的四类明言；爻辞、大象与文言中言位、言中之处，以及“時位”之读，未普查。

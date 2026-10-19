@@ -286,8 +286,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T080527.161049Z）：Becoming.HexagramPlaces 的 156 项声明（108 项定理）公理报告为空；检查器并核对核心纯净。逐句对应（64 段，其中 22 段引本模块）与四项普查由 verify_mapping.py 对照保存的维基文库版本与回执的声明清单检查。作者自审见研究第 195 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "王弼's reading that the bottom and top lines have no place, as a second relation on places 2 to 5, once the 《周易略例》 is preserved; the relation of one line to all the others (卦主); censuses of the line texts, the 大象 and the 文言; the nuclear law 互 and the cast of old and young lines on these sites (Y3); an independent review.",
-    "zh": "王弼“初上无位”之读，作为二至五位上的另一关系，待《周易略例》存入本库；一爻与其余诸爻的关系（卦主）；爻辞、大象与文言的普查；互卦与之卦在这些位上的律（Y3）；独立审查。"
+    "en": "王弼's reading that the bottom and top lines have no place, as a second relation on places 2 to 5, once the 《周易略例》 is preserved; the relation of one line to all the others (卦主); censuses of the line texts, the 大象 and the 文言; the nuclear law read on these sites; an independent review.",
+    "zh": "王弼“初上无位”之读，作为二至五位上的另一关系，待《周易略例》存入本库；一爻与其余诸爻的关系（卦主）；爻辞、大象与文言的普查；在这些位上读互；独立审查。"
   },
   "correspondence": {
     "en": "Continues hexagrams-on-the-spine (Y1), which listed the relations of the places as not done, on Ren's request of 19 October 2026, “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping” (provenance, not warrant). The chapter on the 易传 maps 22 passages that cite this module: 12 agreements, 5 exact scopes and 5 divergences. Reading (the AI's, D50): 正 is a relation of a line and its place, so a line's phase turns as it rises (六位時成); 應 is told by phase, so 未濟's 雖不當位，剛柔應也 is an entailment; 敵應 is where the two trigrams glue; the oppositions carry the law and the count in phase does not; the text agrees with the relations in four censuses except at 需's top line and 艮's fifth; the ranks of the places diverge.",
@@ -394,6 +394,13 @@
       "detail": {
         "en": "Another case of contexts that glue or do not; here every reading is decided and the failure to glue is located at the opposed heights.",
         "zh": "语境粘合与否的另一例；这里每一读法可判定，不粘合之处落在相应的高度上。"
+      }
+    },
+    {
+      "id": "hexagram-world-laws",
+      "detail": {
+        "en": "The nuclear law, the cast, the four symmetries, the counter and the six orbits of waxing and waning on the same configurations, using the rises and falls for the changes around.",
+        "zh": "同一些构形上的互、之卦、四种对称、加一与消息之六轨，以承、乘数出绕行一周之爻变。"
       }
     }
   ],
@@ -641,31 +648,31 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "8d90cbe0a320b21fd3f6941fb252c52ff7deff36e0f7e2117e259574413ed40c"
+      "sha256": "0e68e6bc9c2fbd153719ebe06b433007523ca2d90e2a3b14da62ff1572dd8172"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
       "role": "integration",
       "declarations": [],
-      "sha256": "1903dc9c7664595c4a1e720032c9bf9f81b0a26753a95c26a141bc4677194d82"
+      "sha256": "19ff998c64e53fbbf8ed5aacf8a3dbc9832efb579038779ff1f3d4301b6a2475"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "509e33246cdd1fbf39a86e584494629f58b50fd142da53f8ff7ff0e653d17674"
+      "sha256": "37c15bbea32b5a5033c34959c0d9700bc89351c4aa554d53df369b10ae7486c0"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "74f24f8be5d7cec103317634f07d7fd0755404450217e036824ffb7586ca9143"
+      "sha256": "048d366472bccf39a54e5c84e988e15cbc42ef87cd694eb6988fc161f789c0a8"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "1bb0cecc46f54281ef759a2bbfd9ad0fae646a01a7579cdd5bac3b33ed832adb"
+      "sha256": "4e12060d9822b30b936f601736cc0771e7f69cd6658d3f4f1f643b2f52e459fe"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -761,6 +768,10 @@
     {
       "en": "19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194; THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3: the nuclear law and the cast, listed in the next delta, are now the record hexagram-world-laws (study section 198, decision D51), stated on the configurations; reading them on these sites stays next; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 added its passages, chapter text, study section and section 1 paragraph). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3：下一步所列的互与之卦，现为记录 hexagram-world-laws（研究第 198 节，决定 D51），写在构形上；在这些位上读之仍是下一步；读过改动后，YI-ZHUAN-AND-BECOMING.md、passages.json、verify_mapping.py、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

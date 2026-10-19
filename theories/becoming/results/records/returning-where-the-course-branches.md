@@ -57,7 +57,7 @@ The laws along runs take the run as given; being drawn in within a bound is not 
 - Related, not a proved adapter: [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md). The same module: possibly and necessarily drawn.
 - Related, not a proved adapter: [where-a-run-goes-on](where-a-run-goes-on.md). Answers its next step: within finitely many configurations a run is a course into a return, with no decision and no selection; the laws along runs hold for every configuration that can keep moving, with no run given (lossless_returns_iff, lossless_no_rise, lossless_unlisted); asked of every process, a run is exactly dependent choice.
 
-**Used by:** [hexagrams-on-the-spine](hexagrams-on-the-spine.md) · [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md) · [where-a-run-goes-on](where-a-run-goes-on.md)
+**Used by:** [hexagram-world-laws](hexagram-world-laws.md) · [hexagrams-on-the-spine](hexagrams-on-the-spine.md) · [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md) · [where-a-run-goes-on](where-a-run-goes-on.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

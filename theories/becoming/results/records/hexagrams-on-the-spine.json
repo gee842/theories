@@ -362,6 +362,13 @@
         "en": "The relations of the places (正, 應, 比, 中) read in context on these configurations, and their laws under the same changes.",
         "zh": "在这些构形上以语境读出的爻位之关系（正、应、比、中），及其在同样变化之下的律。"
       }
+    },
+    {
+      "id": "hexagram-world-laws",
+      "detail": {
+        "en": "Four more laws on these configurations (the nuclear law, the cast, the four symmetries, the counter) and the six orbits of the law of waxing and waning.",
+        "zh": "这些构形上另四条律（互、之卦、四种对称、加一）与消息之律的六轨。"
+      }
     }
   ],
   "references": [
@@ -537,31 +544,31 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "8d90cbe0a320b21fd3f6941fb252c52ff7deff36e0f7e2117e259574413ed40c"
+      "sha256": "0e68e6bc9c2fbd153719ebe06b433007523ca2d90e2a3b14da62ff1572dd8172"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
       "role": "integration",
       "declarations": [],
-      "sha256": "1903dc9c7664595c4a1e720032c9bf9f81b0a26753a95c26a141bc4677194d82"
+      "sha256": "19ff998c64e53fbbf8ed5aacf8a3dbc9832efb579038779ff1f3d4301b6a2475"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "509e33246cdd1fbf39a86e584494629f58b50fd142da53f8ff7ff0e653d17674"
+      "sha256": "37c15bbea32b5a5033c34959c0d9700bc89351c4aa554d53df369b10ae7486c0"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "74f24f8be5d7cec103317634f07d7fd0755404450217e036824ffb7586ca9143"
+      "sha256": "048d366472bccf39a54e5c84e988e15cbc42ef87cd694eb6988fc161f789c0a8"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "1bb0cecc46f54281ef759a2bbfd9ad0fae646a01a7579cdd5bac3b33ed832adb"
+      "sha256": "4e12060d9822b30b936f601736cc0771e7f69cd6658d3f4f1f643b2f52e459fe"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -658,6 +665,10 @@
     {
       "en": "19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194; THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3: the related record hexagram-world-laws added (study section 198, decision D51); YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 added its passages, widened four passages of Y1 to its declarations, and added its chapter text, study section and section 1 paragraph). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3：加上相关记录 hexagram-world-laws（研究第 198 节，决定 D51）；读过改动后，YI-ZHUAN-AND-BECOMING.md、passages.json、verify_mapping.py、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向（Y3 增其段落，把 Y1 的四段扩至其声明，并增其章节文字、研究节与第 1 节段落）。论断不变。"
     }
   ]
 }

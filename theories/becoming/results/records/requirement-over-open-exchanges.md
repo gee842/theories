@@ -79,6 +79,7 @@ Aliases: `requirement over open exchanges`, `开放交换上的要求`, `Becomin
 ### History
 
 - 19 October 2026: added (E1), on the first target of chapter §8.1, the deductive necessity of the whole; study section 197.
+- 19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.
 
 </details>
 

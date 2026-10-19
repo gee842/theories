@@ -48,7 +48,7 @@ Canonical source: [HexagramPlaces.lean](../../../../experiments/integrated-corre
 <a id="next--下一步"></a>
 ## Next
 
-王弼's reading that the bottom and top lines have no place, as a second relation on places 2 to 5, once the 《周易略例》 is preserved; the relation of one line to all the others (卦主); censuses of the line texts, the 大象 and the 文言; the nuclear law 互 and the cast of old and young lines on these sites (Y3); an independent review.
+王弼's reading that the bottom and top lines have no place, as a second relation on places 2 to 5, once the 《周易略例》 is preserved; the relation of one line to all the others (卦主); censuses of the line texts, the 大象 and the 文言; the nuclear law read on these sites; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -73,6 +73,9 @@ Continues hexagrams-on-the-spine (Y1), which listed the relations of the places 
   - Input: opposition and phaseCount under waxWane.
   - Preserved conditions: None. [Learning.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
 - related, not a proved adapter: [gluing-under-parity](gluing-under-parity.md). Another case of contexts that glue or do not; here every reading is decided and the failure to glue is located at the opposed heights.
+- related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). The nuclear law, the cast, the four symmetries, the counter and the six orbits of waxing and waning on the same configurations, using the rises and falls for the changes around.
+
+**Used by:** [hexagram-world-laws](hexagram-world-laws.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -107,6 +110,7 @@ Aliases: `the relations of the places`, `爻位之关系`, `應`, `应`, `比`, 
 - 19 October 2026, U3 (theorems apart from the base): BECOMING-RENEWAL-READING.md, Hexagrams.lean, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U3 added study section 196; Hexagrams.lean: U3 added order_paired_by_law and proved revisits_within_order through order_length; THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, U3: the proof binding of Hexagrams.lean moves to core receipt 20261019T092027.048735Z, which checked the file as U3 changed it (new theorems only; the declarations this record cites are unchanged). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194; THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
+- 19 October 2026, Y3: the nuclear law and the cast, listed in the next delta, are now the record hexagram-world-laws (study section 198, decision D51), stated on the configurations; reading them on these sites stays next; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 added its passages, chapter text, study section and section 1 paragraph). The claim is unchanged.
 
 </details>
 
