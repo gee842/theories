@@ -20,6 +20,8 @@
 5. **关系优先。** 不采用引入分立的价值所有者、特殊中心或一方对另一方之主张的读法；总体化的读法以关系实际做什么回答。
 6. **不丢失。** 不采用的读法与其理由记录在案。
 
+**标准一的重述（2026-10-19，R21；第十九次审查 E5）。** Ren 的话是来源，不是根据（[AGENTS.md](../../../../AGENTS.md)；D45）。读法涉及 Ren 的用语时，他的文本是该用语所指的证据；读法凭它在理论的一个说明中的位置成立或修订，由工作论证。在此之前标准一写作“Ren 的原话优先……照原话”；下面以他的话为定读法者，按这一标准读，在说明中位置不同的由 D45 修订。上面的原文保留。
+
 **问“某读法是否是 Ren 的读法”的项。** 决定只说理论是否采用它为自己的读法，不说 Ren 持有什么；Ren 持有什么是 Ren 的陈述（§10）。
 
 **决定时发现已由 Ren 回答的。** 下列几项在第 8 节或计划中仍列为开放，而 Ren 的原话已经回答；这里照原话记录，它们是 Ren 的决定，不是 AI 的：
@@ -224,6 +226,8 @@
 **理由。** 作为对成员延续的过滤，几乎每个生命都会失去意义，因为几乎所有生命都经终结其他生命而延续；作为对他者的主张，它会加上主张的前提（关系，不是权利）；保留在公理之下不加前提，其边界就是 Ren 的相变；逐步读法会把先占的汲取者算作无损（`Preemption.not_undermining_yet_loses`）。
 **会改变它的。** Ren 把“不损”读作对行动的约束，而不是对进程的比较。
 
+**以现行用语重述（2026-10-19，R21；第十九次审查 E5）。** “保留在公理之下不加前提”读作：保留在理论 §6.15 的延续条件之下不加前提，理论不断言这一条件。退役的标签“公理”只在理论的词汇表中解释一次。上面的原文保留。
+
 <a id="d14-损的层次与形成的个体化--the-level-of-harm-and-the-individuation-of-formations"></a>
 ### D14. 损的层次与形成的个体化
 
@@ -251,6 +255,8 @@
 **决定。** 一、`Unrestricted` 读出公理：形成的索引读“anything”，一个形成在一步的延续读“its continuation into the future”，立场的索引不加限定地读“has significance”，没有中心特殊。二、A 读在活的内容上：这一读法是被迫的（`Widening.bare_forces_reason`），如此读，A 给出 D 与普遍理由（`universal_reason_of_unrestricted`）。三、重述是否替代 G0，已由 Ren 的折叠回答（2026-10-11）：G0 不再是公理，第一部分把它作为条件陈述，第二部分断言公理时它是定理。
 **理由。** 一、逐字合 Ren 的句子，并且它就是对任何东西的 G0（`unrestricted_iff_g0`）；二、见证迫使它。
 **会改变它的。** Ren 给“has significance”加限定。
+
+**以现行用语重述（2026-10-19，R21；第十九次审查 E5）。** 一、`Unrestricted` 读出延续条件（曾称“那一条公理”的句子）。三、G0 是生命意义，是条件，不是公理；在理论 §6.15 的延续条件之下它是定理（`g0_of_unrestricted`），理论两者都不断言。“第一部分”“第二部分”是退役的标签；原文说第二部分断言公理之处，没有任何断言。上面的原文保留。
 
 <a id="d44-取尽所给所排除的--what-taking-all-that-is-given-excludes"></a>
 ### D44. 取尽所给所排除的
@@ -281,6 +287,8 @@
 **决定。** 路线 (b) 不足以达到 G0 的辖域，两者照现状都保留：到达自身及其所依存者的路线 (b) 属第一部分（不用公理）；那一条公理是第二部分的断言。在 `Clearing` 中闭包的判决与公理的判决分开：所表示的边界恰是其依存的中心仍许可搭便车者（`Clearing.free_rider_loses`），所以路线 (b) 只在整体是一个供给闭包处到达整体。
 **理由。** 已检查的反例决定它；Ren 2026-10-10：“let's aim for a first, then try to archive b”；2026-10-11：先第一部分，再一条公理的情形。
 **会改变它的。** 一个不用公理、到达供给闭包之外的生命的推导。
+
+**以现行用语重述（2026-10-19，R21；第十九次审查 E5）。** 路线 (b) 不取条件；延续条件是理论 §6.15 的条件，理论不断言它，路线 (b) 达不到在它之下成立的范围。在 `Clearing` 中闭包的判决与条件的判决分开，如上。“先第一部分，再一条公理的情形”是工作的历史，不是决定的理由：理由是反例。上面的原文保留。
 
 <a id="d19-整体对自身的实现--the-whole-realizing-itself"></a>
 ### D19. 整体对自身的实现
@@ -315,6 +323,8 @@
 **会改变它的。** Ren 的“belief”所指不是预设所陈述的。
 
 **在一个说明中修订（2026-10-19，D45）。** 一至三不变。四不是 Ren 的陈述。不变之步是否成立是根据的问题（理论 §6.11、§8.5）；Ren 持有它与否是陈述，按他 2026-10-17 的指示，那是来源，不是根据。这一步作为根据的问题保持开放，不是等待 Ren 的问题。**改变了什么。** 四原要 Ren 的陈述。上面的原文保留。
+
+**以现行用语重述（2026-10-19，R21；第十九次审查 E5）。** 四中“第二部分的断言在预设之外所加的”读作：延续条件在预设之外所加的。这一条件不被断言（理论 §6.15）。上面的原文保留。
 
 <a id="d22-生成的空间读出-ren-的话--the-generative-space-reads-rens-words"></a>
 ### D22. 生成的空间读出 Ren 的话
@@ -588,7 +598,7 @@ L1、S1 与 S2 是 D40-D42。
 
 - **Ren 自己的文本与用语。** OPENING 及其脚注；静止的中文用语（归于静止或停）与标题“the rest theorem”（P58c 的工作板行）；Ren 命名的“closure bounds change”（[laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) 指出约束变化的是耗尽，不是封闭；名称仍属 Ren）；“识”与“理”作为 Ren 的读法；Ren 已确认的读法，以及 Ren 后来的话所决定的（D34 的“按情境”）；在 Ren 2026-10-15 的回答之后提出的读法（“按情境”连同其限定，见 D34；Ren 2026-10-16 已取 AI 对其说明的读法）。
 - **Ren 的陈述。** Ren 是否持有不变之步（D21）；任何“某读法是否是 Ren 的读法”。
-- **根据。** 第二部分那一条断言的规范根据；称生成的空间为好的根据（§6.13 的“应当”）；N 的哲学根据与 A 的外在论辩护；读法选择的哲学论证（[metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md)）。它们是要论证的主张，不是要选择的读法。
+- **根据。** 延续条件的规范根据（理论 §6.15；曾称“第二部分那一条断言”）；称生成的空间为好的根据（§6.13 的“应当”）；N 的哲学根据与 A 的外在论辩护；读法选择的哲学论证（[metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md)）。它们是要论证的主张，不是要选择的读法。
 - **I4。** 整合一线的所有者持有。
 - **Ren 保留的表示决定。** Ren 2026-10-11 的“(b) belongs to the representation, which needs my decision”与“re-found the representation (with my decision)”：离散的步、自然数的量、无穷多立着者处的普查（[laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) 的 (b) 类）、判定的相等与列出，照旧不变。
 - **审查的决定。** 两项记录（[seeking-boundary](../../../../theories/becoming/results/records/seeking-boundary.md)、[target-capture](../../../../theories/becoming/results/records/target-capture.md)）说是否需要独立审查由 Ren 决定：那是检查的决定，不是读法。

@@ -491,7 +491,7 @@ Ren 对何者构成伦理质量的回答（[来源](../../../sources/15-codex-th
 
 > 我的答案是生生不息 - 一种整体的，不断创造更多生的方向，而这个方向产生的可能性，多样性越高，复杂性/复杂结构的复杂度可以不断的上升，就是一个好的方向
 
-生命意义的对象是生生（Ren 的用语：整体中的生及其继续生成；伦理方向的对象）。“生”的几种范围都可以取，并可能得到不同的范围。生命意义是一个条件，不是公理（§5）。
+生命意义关于已实现的活的内容；生生（Ren 的用语：整体中的生及其继续生成）是伦理方向的对象，以扩大来比较（D1）。`living` 的读法不包括继续生成。“生”的几种范围都可以取，并可能得到不同的范围。生命意义是一个条件，不是公理（§5）。
 
 **刻画定理。** 在有某个活的主张的连通整体上，主张层面每个立场的生命意义等价于种子加两项边界中立（`Valuation.significant_iff`，[Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)）：
 
@@ -713,7 +713,7 @@ AI 以它自己的话提出（[来源](../../../sources/15-codex-theory-conversa
 
 本节逐处审计生命意义在核心与外围的用法，看每处对正面相关与 `living` 要求什么（[Becoming.Relevance](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean)，[研究 §64](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md)）。审计是干净的，其中一处读法是被迫的。在条件之下，以可能性读的 C 决定了 §6.5 留给读法选择的过度汲取。正面相关从意义读出，继续之间以可能性比较（见下）。
 
-- **每处用法都被解除（在条件之下；由 `Frame.relevance` 的定义）**（[one-axiom-yields-g0](../results/records/one-axiom-yields-g0.md)）。每处以生命意义（`G0`）为假设的定理，都对任意的正面相关成立。从意义读出，正面相关是已实现、其延续从每个立场都有意义的活的内容（`Frame.relevance`）。在条件之下，它在每个框架上、对 `living` 的每种读法满足生命意义（`g0_of_unrestricted`），并且是满足它的最小的正面相关，恰对已实现的活的内容成立（`relevance_least`）。两者都是对条件的一行展开。所以在条件之下，它解除每处用法；桥接对外围的接口与它导入的三项定理写出这一点（`inventory_g0_of_unrestricted`）。刻画是等价式；反模型取处处成立的意义就满足条件；两者都不受影响。
+- **每处用法都被解除（在条件之下；由 `Frame.relevance` 的定义）**（[one-axiom-yields-g0](../results/records/one-axiom-yields-g0.md)）。每处以生命意义（`G0`）为假设的定理，都对任意的正面相关成立。从意义读出，正面相关是已实现、其延续从每个立场都有意义的活的内容（`Frame.relevance`）。在条件之下，它在每个框架上、对 `living` 的每种读法满足生命意义（`g0_of_unrestricted`），并且是满足它的最小的正面相关，恰对已实现的活的内容成立（`relevance_least`）。两者都是对条件的一行展开。所以在条件之下，它解除每处用法；核心对原桥接导入的三项定理写出这一点（`g0_of_unrestricted`、`Extension.new_relevance`、`PositiveGround.contingent_generation_of_unrestricted`），对由界的生成也写出（`positive_ground_by_bound_of_unrestricted`）。刻画是等价式；反模型取处处成立的意义就满足条件；两者都不受影响。
 - **条件就是对任何东西的生命意义。** 在以各步上的形成为主张、每个主张都在某处实现的框架上，条件恰在生命意义以每个主张为活、以从每个立场的意义读正面相关时成立（`unrestricted_iff_g0`）；在每个依存网的水平路径上，每个主张都如此实现，所以在那里它直接成立（`Web.unrestricted_iff_paths_g0`）。所以条件不是外来的前提：它把生命意义的辖域从活的内容扩到任何东西，并把“正面”减弱为“有意义”。
 - **理由前提须读在活的内容上。** 一切都有意义时，以裸意义读的 A 给产生任何新内容（活的与否）的回应以理由；读在活的内容上，它给确保新的活的内容的回应以理由（`articulates_total`）。见证中唯一的新内容不活，前者仍迫使理由（`Widening.bare_forces_reason`）。读在活的内容上，A 给出 D，在条件之下，普遍理由不用种子、中立或连通前提就推出（`universal_reason_of_unrestricted`）。A 本身仍是前提，而且是一个中立前提（`Neutral`）。
 - **在条件之下，C 以可能性读**（[ranking-under-readings](../results/records/ranking-under-readings.md)）。可能性读法在一个继续的水平容许某形成之处记入它，活跃与否。对同一定律的继续，在条件之下按此读法的扩展就是保留且增加有意义者（`Ranking.possible_extends_iff`）。它像整段读法那样，把过度汲取者的不在场排在其在场之上，把节制排在过度汲取之上（有第三个形成时亦然），把共享排在以消耗取胜之上；它不扣下任何事件：恶性增殖者的第一个事件被记入，整段读法扣下它（`Ranking.malignant_possible`）。排序来自部分失去的，而不是不计形成本身。
@@ -926,7 +926,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 5. **排除**（[testing-within-registration](../results/records/testing-within-registration.md)）。主张只经所耦合入者的差别被排除（`Web.Excludes.not_of_alike`）。没有模型，有限的历史既不排除一个条件归于无的主张，也不排除它此后保持在无之上的主张，对任何形成、在任何观察之下都是如此（`Web.tail_unexcluded`）。相对于模型，排除是对模型与主张一起的排除（`Web.excludesWithin_iff_conjunction`）。
 6. **动作本会造成什么**（[experiment-needs-return](../results/records/experiment-needs-return.md)、[counterfactual-is-the-course](../results/records/counterfactual-is-the-course.md)）。在确定过程中，无论观察多少，记录都不固定运行未取之动作的任何结果（`Run.not_fixes_of_untaken`）。保留其全部历史的运行，关于自己的动作只固定所做的（`keepHistory_fixes_nothing_else`）。动作的反事实是同一个律生成的进程（`counterfactual_is_course`）：律固定它，一次运行的记录不固定它。
 7. **不能停息的目标与劫持**（[seeking-boundary](../results/records/seeking-boundary.md)、[target-capture](../results/records/target-capture.md)）。“比现在更多”每步都满足，就需要开放的世界（`more_needs_open`）。所立者从某步起每步衰减时，上升因耗尽而止，不是因够（`Flow.more_exhausted`）。“高于一切他者”在一个状态至多被一个寻求者满足，所以两个这样的寻求者从不同时停息（`aboveAll_unique`、`Law.aboveAll_never_rests`；由严格最大者的定义直接得出）。目标的每个携带者至少留下 a 个后代、其他每个亲代至多 b 个、且 b < a 时，携带者的份额上升（`share_rises`）。下一配置取决于规则而不取决于状态时，只扰动状态被重新吸收（`Law.perturbation_reabsorbed`）。
-8. **回路**（[how-a-carried-difference-grows](../results/records/how-a-carried-difference-grows.md)、[how-often-couplings-act](../results/records/how-often-couplings-act.md)）。一个条件的上游没有回路时，携带量的某个有限阶在那里每一步都精确（`carriedWithin_exact_of_no_loop`）。耦合每步都成立时，到达上游回路的经更长的路线不断到达，每个有限阶都有遗漏（`carriedWithin_lt_of_loop`）。强度为自然数时，每次返回至少使所到达者加倍，足够频繁的返回超过每个多项式（`runaway_of_returns`）。耦合稀疏地复现的自回路，至多携带多项式之量（`Frequency.Sparse.polynomial`）。
+8. **回路**（[how-a-carried-difference-grows](../results/records/how-a-carried-difference-grows.md)、[how-often-couplings-act](../results/records/how-often-couplings-act.md)）。一个条件的上游没有回路时，携带量的某个有限阶在那里每一步都精确（`carriedWithin_exact_of_no_loop`）。耦合每步都成立时，到达上游回路的经更长的路线不断到达，每个有限阶都有遗漏（`carriedWithin_lt_of_loop`）。强度为自然数时，每次返回至少使携带量（能到达的最大差别）加倍（`carried_doubles_return`），足够频繁的返回使之超过每个多项式（`runaway_of_returns`）；携带量由携带律达到，而携带律不是无增益的。耦合稀疏地复现的自回路，至多携带多项式之量（`Frequency.Sparse.polynomial`）。
 
 读法（AI 的，D45）：
 
@@ -1433,7 +1433,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 | 关系（读法层） | relation | （形成，条件，步）；关系层读法的主张 | `Web.relations` |
 | 评价 | valuation | 活、关系、区域、意义 | `Valuation` |
 | 自身区域 | own region | 已形成关系的区域，不是所有者 | `own` |
-| 意义 | significance | 立场下的正面意义；在延续条件之下读作延续的意义，不必是正面的；正面相关从意义读出，就是已实现的活的内容的意义（§6.12） | `sig` |
+| 意义 | significance | 立场下的意义：从一个立场看，一个主张（或一个形成在某步的延续）是否有意义；它不带正负；在延续条件之下读作延续的意义；正面相关从意义读出，就是已实现的活的内容的意义（§6.12） | `sig` |
 | 种子 | seed | 某个立场下某个活的主张有意义 | `Seed` |
 | 生命意义 | living significance | 在主张层面，每个活的主张从每个立场都有意义；在一个框架上，已实现的活的内容落在从意义读出的相关之下。它给的是意义，不是正面的价值取向；`living` 的读法不包含进一步的生成。不是公理：理论把它作为条件陈述，不用公理刻画其内容，动力学不决定它；以延续条件为假设，它是定理，是条件的实例化（§6.15） | `G0`、`Valuation.Significant`、`Web.significance_undetermined` |
 | 持有 | held | 一个活的主张在某个立场的自身区域中；每个活的主张都被持有时，生命意义恰等于处处自身意义加立场中立（AI 对 Ren 2026-10-10 提议中“想要延续者”的读法） | `Held`、`Unheld`、`significant_iff_held` |
@@ -1499,7 +1499,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 | 断裂（只在低于阈值时才读的储量的） | break (of a stock read only below a threshold) | 储量立于阈值时律只读它立着；断裂之前律是其立律，不读储量、没有经过它的回路，储量的抬高不被带到任何处；经过储量的回路在断裂处形成 | `ExchangeLaw.ReadsBelow`、`ExchangeLaw.standing`、`break_carried_nowhere`、`ExchangeLaw.ReadsBelow.standing_no_loop`、`Thresholds.Draw` |
 | 读入（每个条件的时程） | reading into (each condition, a schedule) | 形成与一个条件的交换只由为那个条件所标的水平决定；读一个时程者是对所有条件读得一样的特例；未读入的水平耦合强度为零 | `ExchangeLaw.ReadsInto`、`readCouplings`、`restrictInto`、`ExchangeLaw.ReadsAt.readsInto` |
 | 下游（储量之差的） | downstream (of a stock's difference) | 从储量出发、按到某步形成的所读路线可达的条件；只在储量上不同的进程在不在下游之处相同；所观察者是长度为零的路线 | `Upstream`、`conveyed_upstream`、`apart_only_downstream`、`upstream_succ_iff`、`Observation.Measure` |
-| 返回（绕回路） | return (around a loop) | 从一个条件回到它的按时间次序的耦合链：第一个耦合读起始之步起的水平，其后每个读前一个作用之后的水平；每次返回至少使到达者加倍 | `ChainInTime`、`Returns`、`carried_doubles_return`、`carried_returns`、`runaway_of_returns` |
+| 返回（绕回路） | return (around a loop) | 从一个条件回到它的按时间次序的耦合链：第一个耦合读起始之步起的水平，其后每个读前一个作用之后的水平；每次返回至少使携带量（能到达的最大差别，由携带律达到，携带律不是无增益的）加倍 | `ChainInTime`、`Returns`、`carried_doubles_return`、`carried_returns`、`runaway_of_returns` |
 | 耦合的频度 | how often couplings act | 有耦合作用的步之计数 a：能到达的最大差别至多是 D·(1 + M)^a，由自环达到；2^a 有多项式界时它亦然，不论强度 | `Frequency.count`、`Frequency.coupling`、`carried_le_count`、`carried_le_of_rare`、`Frequency.SelfLoop.polynomial_iff` |
 | 复现或停止 | recurs or stops | 每个判定的二元族每行在某处为真、或某行处处为假的二分；恰是每个时程都安定，给出有限全知原则 | `RecursOrStops`、`StopsBy`、`settled_iff_recursOrStops`、`settled_every_iff`、`lpo_of_settled` |
 | 反事实（进程） | counterfactual (course) | 同一交换律在部分另作时生成的进程；由动作固定，可行（从不取用多于所立与所给）时存在 | `counterfactual_fixed`、`ExchangeLaw.course_balances_iff`、`counterfactual_is_course` |

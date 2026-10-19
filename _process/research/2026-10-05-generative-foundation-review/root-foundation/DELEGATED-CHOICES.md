@@ -20,6 +20,8 @@ On 19 October 2026 Ren answered for the register as a whole, “integrate all, t
 5. **Relation first.** No reading is adopted that brings in separate owners of value, privileged centers, or claims of one party on another; totalizing readings are answered through what the relation actually does.
 6. **Nothing lost.** Declined readings and their reasons stay on record.
 
+**Standard 1 restated (19 October 2026, R21; nineteenth review E5).** Ren's words are provenance, not warrant ([AGENTS.md](../../../../AGENTS.md); D45). Where a reading concerns a term of Ren's, his texts are the evidence of what the term means, and the reading stands or is revised by its place in one account of the theory, argued from the work. Until this date standard 1 read “Ren's words first … the decision follows them”; the decisions below that cite his words as settling a reading are read with this standard, and D45 revises those whose place in the account differs. The original text above is kept.
+
 **Items asking whether a reading is Ren's.** The decision says only whether the theory adopts it as its reading, not what Ren holds; what Ren holds is Ren's to state (section 10).
 
 **Answered by Ren, found while deciding.** The following were still listed as open in section 8 or the plan, though Ren's words answer them; they are recorded here as Ren's words give them, as Ren's decisions, not the AI's:
@@ -200,6 +202,8 @@ Where: section 8, Ren's choices, first item; the records above.
 **Reasons.** As a filter on members' continuations, nearly every life would lose significance, for almost all life continues by ending other life; as a claim on others it would add a premise of claims (relations, not rights); retaining adds no premise under the axiom, and its boundary is Ren's phase transition; the stepwise reading would count a preemptive drawer as harmless (`Preemption.not_undermining_yet_loses`).
 **What would change it.** Ren reading “not harm” as a constraint on acts rather than a comparison of courses.
 
+**Restated in current terms (19 October 2026, R21; nineteenth review E5).** “Retaining adds no premise under the axiom” reads: retaining adds no premise under the continuation condition of chapter §6.15, which the theory does not assert. The retired label “the axiom” is explained once, in the chapter's glossary. The original text above is kept.
+
 <a id="d14-损的层次与形成的个体化--the-level-of-harm-and-the-individuation-of-formations"></a>
 ### The level of harm and the individuation of formations
 
@@ -221,6 +225,8 @@ Where: section 8, Ren's choices, first item; the records above.
 **Decision.** (1) `Unrestricted` reads the axiom: the formation index reads “anything”, a formation's continuation at a step “its continuation into the future”, and the standpoint index “has significance” unqualified, with no center privileged. (2) A is read on living content: the reading is forced (`Widening.bare_forces_reason`), and so read A gives D and the universal reason (`universal_reason_of_unrestricted`). (3) Whether the restatement replaces G0 is answered by Ren's fold (11 October 2026): G0 is no longer an axiom; Part I states it as a condition, and where Part II asserts the axiom it is a theorem.
 **Reasons.** (1) It follows Ren's sentence word by word, and it is G0 for anything (`unrestricted_iff_g0`). (2) The witness forces it.
 **What would change it.** Ren qualifying “has significance”.
+
+**Restated in current terms (19 October 2026, R21; nineteenth review E5).** (1) `Unrestricted` reads the continuation condition (the sentence once called “the one axiom”). (3) G0 is living significance, a condition, not an axiom; under the continuation condition of chapter §6.15 it is a theorem (`g0_of_unrestricted`), and the theory asserts neither. “Part I” and “Part II” are retired labels; nothing is asserted where the earlier text says Part II asserts the axiom. The original text above is kept.
 
 <a id="d44-取尽所给所排除的--what-taking-all-that-is-given-excludes"></a>
 ### What taking all that is given excludes
@@ -245,6 +251,8 @@ Where: section 8, Ren's choices, first item; the records above.
 **Decision.** Route (b) falls short of G0's scope, and both stay as they stand: route (b), reaching the self and what it depends on, belongs to Part I, with no axiom; the one axiom is Part II's assertion. In `Clearing` the closure's verdict and the axiom's come apart: a center whose represented boundary is exactly its dependence still licenses the free rider (`Clearing.free_rider_loses`), so route (b) reaches the whole only where the whole is one feeding closure.
 **Reasons.** A checked counterexample decides it; Ren, 10 October 2026: “let's aim for a first, then try to archive b”; 11 October 2026: Part I first, then the one-axiom case.
 **What would change it.** A derivation with no axiom that reaches lives outside the feeding closure.
+
+**Restated in current terms (19 October 2026, R21; nineteenth review E5).** Route (b) takes no condition; the continuation condition is the condition of chapter §6.15, which the theory does not assert, and route (b) falls short of what holds under it. In `Clearing` the closure's verdict and the condition's come apart, as above. The ordering “Part I first, then the one-axiom case” is history of the work, not the reason for the decision: the counterexample is. The original text above is kept.
 
 <a id="d19-整体对自身的实现--the-whole-realizing-itself"></a>
 ### The whole realizing itself
@@ -275,6 +283,8 @@ Where: section 8, Ren's choices, first item; the records above.
 **What would change it.** Ren's “belief” meaning something the presupposition does not state.
 
 **Revision in the one account (19 October 2026, D45).** (1)–(3) stand. (4) is not Ren's to state. Whether the step of invariance holds is a question of warrant (chapter §6.11, §8.5), and Ren's holding it, or not, would be testimony: provenance, not warrant, under his directive of 17 October 2026. The step stays open as warrant, not as a question pending Ren. **What changed.** (4) asked for Ren's testimony. The original text above is kept.
+
+**Restated in current terms (19 October 2026, R21; nineteenth review E5).** In (4), “what Part II's assertion adds beyond the presupposition” reads: what the continuation condition adds beyond the presupposition. The condition is not asserted (chapter §6.15). The original text above is kept.
 
 <a id="d22-生成的空间读出-ren-的话--the-generative-space-reads-rens-words"></a>
 ### The generative space reads Ren's words
@@ -508,7 +518,7 @@ L1, S1 and S2 are D40-D42.
 
 - **Ren's own texts and terms.** OPENING and its footnote; the Chinese term for coming to rest (归于静止 or 停) and the heading “the rest theorem” (the P58c row of the work board); “closure bounds change”, Ren's name ([laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) notes that running down, not closure, bounds change; the name stays Ren's); 识 and 理 as Ren's readings; readings Ren has confirmed, and those Ren's later words decide (D34's “situationally”); readings posed after Ren's reply of 15 October 2026 (“situationally” with its qualification, see D34; on 16 October 2026 Ren took the AI's reading of their clarification).
 - **Ren's testimony.** Whether Ren holds the step of invariance (D21); any question whether a reading is Ren's.
-- **Warrant.** The normative warrant of Part II's one assertion; the warrant for calling the generative space good (the “ought” of section 6.13); the philosophical warrant of N and the externalist defence of A; the philosophical argument for a reading choice ([metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md)). These are claims to be argued, not readings to be chosen.
+- **Warrant.** The normative warrant of the continuation condition (chapter §6.15; once “Part II's one assertion”); the warrant for calling the generative space good (the “ought” of section 6.13); the philosophical warrant of N and the externalist defence of A; the philosophical argument for a reading choice ([metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md)). These are claims to be argued, not readings to be chosen.
 - **I4.** Held by the integration stream's owner.
 - **Decisions of representation Ren reserved.** Ren, 11 October 2026: “(b) belongs to the representation, which needs my decision” and “re-found the representation (with my decision)”: discrete steps, natural-number amounts, the census where infinitely many stand (class (b) in [laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md)), decided equality and listing stay unchanged.
 - **Decisions of review.** Two records ([seeking-boundary](../../../../theories/becoming/results/records/seeking-boundary.md), [target-capture](../../../../theories/becoming/results/records/target-capture.md)) leave whether an independent review is needed to Ren; that is a decision about checking, not a reading.
