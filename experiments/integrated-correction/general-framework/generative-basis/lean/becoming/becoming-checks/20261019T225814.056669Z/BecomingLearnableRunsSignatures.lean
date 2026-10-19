@@ -1,0 +1,11 @@
+import Becoming.LearnableRuns
+#check @Becoming.LearnableRuns.prefix_eq
+#check @Becoming.LearnableRuns.predictsFrom_iff
+#check @Becoming.LearnableRuns.predicts_iff
+#check @Becoming.LearnableRuns.course_same
+#check @Becoming.LearnableRuns.prefixes_same
+#check @Becoming.LearnableRuns.agree_of_predicts_both
+#check @Becoming.LearnableRuns.not_predicts_on_both
+#check @Becoming.LearnableRuns.predicts_through
+#check @Becoming.LearnableRuns.learnable_iff
+#check @Becoming.LearnableRuns.still_learnable_iff_lumped

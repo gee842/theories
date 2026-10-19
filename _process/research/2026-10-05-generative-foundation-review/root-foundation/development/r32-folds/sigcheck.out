@@ -1,0 +1,5 @@
+kept names: 11330 agree, 0 differ, 0 missing
+removed copies: 60 agree with the kept name up to bound names, 1 to read
+COPY ('Becoming.OneStep.Chain.node_injective', 'Becoming.OneStep.Chain.Site.node.inj', '∀ {o : Nat → Prop} {x y : Nat × Nat}, Becoming.OneStep.Chain.Site.node x = Becoming.OneStep.Chain.Site.node y → x = y', None)
+removed forwarders: 173, absent from the new receipt: 173; dropped helpers: 2; removed names still present: []
+new names: 0 []
