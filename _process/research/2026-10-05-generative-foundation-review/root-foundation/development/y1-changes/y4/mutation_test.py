@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Y4: mutate each census (the Lean lists of Becoming.HexagramSites and the exceptions verify_mapping.py records), one
 at a time, and confirm that verify_mapping.py fails; every file is restored after each run.
-usage (from the repository root, with the module in the package): python3 -B mutation_test.py"""
+usage (from the repository root): python3 -B mutation_test.py
+(the module in the package if it is there, as verify_mapping.py reads it, else the kit's copy)"""
 import subprocess, sys
 from pathlib import Path
 K = Path('_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes')
 LEAN = Path('experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean')
+if not LEAN.exists():
+    LEAN = K / 'y4/Becoming/HexagramSites.lean'
 VM = K / 'verify_mapping.py'
 M = [
  (LEAN, '(9, .p4, true), (13, .p2, true)', '(13, .p2, true)', '彖 place: one statement dropped'),

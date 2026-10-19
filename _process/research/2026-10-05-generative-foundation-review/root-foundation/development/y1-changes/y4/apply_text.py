@@ -225,12 +225,12 @@ CHAPTER.write_text(chapter)
 canon = CANON.read_text()
 PARA = f'''
 
-**王弼's readings of the places.** 王弼's 《周易略例》, preserved here, reads two relations at other sites than these, and both are stated with no premise ([Becoming.HexagramSites]({LEAN})). In the second relation of phase the bottom and top places have no fixed place (初上无位): a line between them holds its place where it is in phase, and the ends say nothing (`holdsPlace`). His argument for it is a law of the text: 乾's top line is unbroken and 需's broken, the text says neither has a place, and no parity of the top place makes both true (`top_no_parity`). Under the second relation every listed statement of place in the 彖 and the 小象 holds, while the parity of six places fails four (`placeStatements_hold`, `tuanWhole_between`, `tuanWhole_six`). The ends are where a line enters and leaves: the phase a line takes at place 2 is set at the bottom, so the second relation is not a lumping the law goes alike across (`fixedPhase_waxWane_enters`, `betweenPhases_not_goAlike`). Two lines answer where they differ, at any two places; a line answered by all others (一爻為主, 上下應之, 乘五剛) is unique, in twelve configurations, independent of place and phase (`sole_unique`, `sole_places`), and never lasts a step of waxing and waning: at the top it passes out, leaving a uniform configuration, and two steps on a sole line stands at the bottom (`soleAny_waxWane`, `sole_top_passes`). Every law is read along the runs of the spine.
+**王弼's readings of the places.** 王弼's 《周易略例》, preserved here, reads two relations of the places at other sites than those above, and both are stated with no premise ([Becoming.HexagramSites]({LEAN})). In the second relation of phase the bottom and top places have no fixed place (初上无位): a line between them holds its place where it is in phase, and the ends say nothing (`holdsPlace`). His argument for it is a law of the text: 乾's top line is unbroken and 需's broken, the text says neither has a place, and no parity of the top place makes both true (`top_no_parity`). Under the second relation every listed statement of place in the 彖 and the 小象 holds, while the parity of six places fails four (`placeStatements_hold`, `tuanWhole_between`, `tuanWhole_six`). The ends are where a line enters and leaves: the phase a line takes at place 2 is set at the bottom, so the second relation is not a lumping the law goes alike across (`fixedPhase_waxWane_enters`, `betweenPhases_not_goAlike`). Two lines answer where they differ, at any two places; a line answered by all others (一爻為主, 上下應之, 乘五剛) is unique, in twelve configurations, independent of place and phase (`sole_unique`, `sole_places`), and never lasts a step of waxing and waning: at the top it passes out, leaving a uniform configuration, and two steps on a sole line stands at the bottom (`soleAny_waxWane`, `sole_top_passes`). Every law is read along the runs of the spine.
 
 *Readings* [AI reading, {DN}]. The 彖 and the 象 speak of place by the second relation, beside the parity of six places, which stays as stated. 王弼's 主 is the sole line, a symmetric relation; his 治眾, the ranks of the places and the 美 of a line out of phase diverge. Eight further censuses of the 彖, the line texts, the 大象 and the 小象 are in the chapter on the 易传. Record: {RECORD}.'''
-y2_para = [m for m in re.finditer(r'^\*Readings\* \[AI reading, D50\]\..*\n', canon, re.M)]
-assert len(y2_para) == 1, len(y2_para)
-end = y2_para[0].end() - 1
+y3_para = [m for m in re.finditer(r'^\*Readings\* \[AI reading, D51\]\..*\n', canon, re.M)]
+assert len(y3_para) == 1, len(y3_para)
+end = y3_para[0].end() - 1
 canon = canon[:end] + PARA + canon[end:]
 COUNTS = re.compile(r'There are \d+ dependency components, with \d+ spine theorems outside the main one; \d+ statements '
                     r'use both families\.')
@@ -285,11 +285,11 @@ CANON.write_text(canon)
 
 zh = CANON_ZH.read_text()
 lines = zh.split('\n')
-at = [i for i, line in enumerate(lines) if line.startswith('**爻位之关系。**')]
+at = [i for i, line in enumerate(lines) if line.startswith('**卦的世界上的诸律。**')]
 assert len(at) == 1
 lines.insert(at[0] + 1, '')
 lines.insert(at[0] + 2, (
-    f'**王弼之读。** 王弼《周易略例》（已存入本库）在另外的位上读两个关系，这里不加前提地写出（[Becoming.HexagramSites]({LEAN})）。'
+    f'**王弼之读。** 王弼《周易略例》（已存入本库）在上文之外的位上读爻位的两个关系，这里不加前提地写出（[Becoming.HexagramSites]({LEAN})）。'
     '第二个关系中，初、上两位无定位（初上无位）：两端之间的爻当位即在位，两端不说（`holdsPlace`）。他为此所立之论是经文之言的律：'
     '乾上九为阳，需上六为阴，经文说二者皆不在位，上位任一奇偶都不能使二者皆成立（`top_no_parity`）。在第二个关系下，'
     '彖与小象所列言位之句皆成立，六位之奇偶则有四处不成立（`placeStatements_hold`、`tuanWhole_between`、`tuanWhole_six`）。'
