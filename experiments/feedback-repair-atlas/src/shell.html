@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A worked Lean application: explore feedback, gradual learning, setbacks and retry across six abstraction levels.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>Feedback and repair atlas</title>
+<style>
+  :root { color-scheme:light dark; --foreground:light-dark(#242424,#ededed); --background:light-dark(#fafafa,#191919); --muted:light-dark(#eeeeec,#282828); --muted-foreground:light-dark(#60605d,#b4b4ad); --border:light-dark(#d2d2ce,#474743); --primary:light-dark(#242424,#ededed); --primary-foreground:light-dark(#fafafa,#191919); --viz-series-1:light-dark(#286a9a,#8dc6ef); --viz-series-2:light-dark(#aa5a26,#edaa72); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--background); color:var(--foreground); font:400 16px/1.5 system-ui,sans-serif; }
+  main { max-width:1120px; margin:auto; padding:28px 24px 48px; }
+  h2,h3,strong { font-weight:500; }
+  h2 { margin:8px 0 16px; font-size:1.65em; }
+  h3 { margin:0 0 8px; font-size:1.15em; }
+  p { margin:16px 0; }
+  button,input,select { font:inherit; }
+  button,select { cursor:pointer; }
+  button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible { outline:3px solid var(--viz-series-1); outline-offset:3px; }
+  .btn { border:1px solid var(--border); border-radius:20px; padding:8px 13px; background:var(--muted); color:var(--foreground); white-space:normal; max-width:100%; }
+  .btn:hover { filter:brightness(.95); }
+  .btn[aria-pressed="true"],.btn-primary { background:var(--primary); color:var(--primary-foreground); }
+  .btn:disabled { opacity:.45; cursor:default; }
+  .btn-block { width:100%; }
+  .viz-controls { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:14px 0; }
+  .form-label { display:grid; gap:6px; flex:1 1 240px; min-width:0; }
+  .form-select { padding:9px 12px; width:100%; min-width:0; border:1px solid var(--border); border-radius:12px; background:var(--muted); color:var(--foreground); }
+  .form-range { width:100%; accent-color:var(--viz-series-1); min-height:24px; }
+  .form-check { display:flex; align-items:center; gap:10px; }
+  .form-check-input { width:18px; height:18px; accent-color:var(--viz-series-1); }
+  .progress { height:8px; border-radius:4px; background:var(--muted); overflow:hidden; }
+  .progress-bar { height:100%; background:var(--viz-series-1); transition:width .2s; }
+  .card { padding:18px; background:var(--muted); border-radius:12px; }
+  .text-small { font-size:13px; }
+  .text-muted { color:var(--muted-foreground); }
+  .tabular-nums { font-variant-numeric:tabular-nums; }
+  .viz-badge { display:inline-block; padding:3px 8px; background:var(--muted); border-radius:6px; }
+  pre,code { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
+  @media(max-width:520px) { main { padding:20px 16px 36px; } .btn { min-height:44px; } .form-select { min-height:44px; } }
+  @media(prefers-reduced-motion:reduce) { .progress-bar { transition:none; } }
+</style>
+<script>
+// Optional local persistence. Failure or disabled storage never blocks the atlas.
+(() => {
+  const key='feedback-repair-atlas-v2';
+  let state=null;
+  try { state=JSON.parse(localStorage.getItem(key)); } catch {}
+  window.openai={widgetState:state,setWidgetState:async next=>{
+    window.openai.widgetState=next;
+    try { localStorage.setItem(key,JSON.stringify(next)); } catch {}
+  }};
+})();
+</script>
+</head>
+<body><main>
+<!--__ATLAS_FRAGMENT__-->
+</main></body>
+</html>

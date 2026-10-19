@@ -1,0 +1,28 @@
+name: Feedback atlas
+on:
+  push:
+    paths:
+      - 'experiments/feedback-repair-atlas/**'
+      - 'experiments/integrated-correction/general-framework/generative-basis/lean/**'
+      - '.github/workflows/feedback-atlas.yml'
+  pull_request:
+    paths:
+      - 'experiments/feedback-repair-atlas/**'
+      - 'experiments/integrated-correction/general-framework/generative-basis/lean/**'
+      - '.github/workflows/feedback-atlas.yml'
+permissions:
+  contents: read
+jobs:
+  reproducible-atlas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check displayed source bindings and reproducible page
+        run: python3 -B experiments/feedback-repair-atlas/build.py --check
+      - name: Check executable interaction dynamics
+        run: node --test experiments/feedback-repair-atlas/tests/dynamics.test.cjs
+      - name: Check fail-closed source binding
+        run: python3 -B -m unittest discover -s experiments/feedback-repair-atlas/tests -p 'test_*.py'
