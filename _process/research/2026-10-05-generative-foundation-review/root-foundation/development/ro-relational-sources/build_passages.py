@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build passages.json of board item RO from the five mappers' entries (mappers/<slice>/entries.json),
-and preserve the atlas texts they quote. usage: python3 -B build_passages.py [--preserve]
+and preserve the atlas texts they quote. usage: python3 -B build_passages.py [--preserve | --check]
 
 - Each entry is normalized: its tradition into the chapter's sections, its text into a path under
   sources/chinese-classical-texts/ (an atlas text, or a Wikisource page retrieved by
@@ -11,7 +11,10 @@ and preserve the atlas texts they quote. usage: python3 -B build_passages.py [--
   sources/chinese-classical-texts/<atlas>/ (never over an existing file) and PROVENANCE.json is written.
 The mappers' readings are the AI's; this script does not change them, except where FIXES says
 (a source, locator or fragments replaced, or a sentence of a reading replaced after review, or, where a later item
-proved what an entry computed or its gap named, declarations and records added and the gap marked closed)."""
+proved what an entry computed or its gap named, declarations and records added and the gap marked closed).
+passages.json changes only through FIXES, never in place: a build rewrites the whole file, so an edit made
+in place would be lost on the next build. With --check nothing is written: the file is compared with the
+build, and differs only where it was edited in place (verify_ro.py runs it)."""
 import argparse
 import hashlib
 import json
@@ -375,7 +378,9 @@ def source_path(e, atlas_of_text):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--preserve', action='store_true')
+    ap.add_argument('--check', action='store_true')
     args = ap.parse_args()
+    assert not (args.preserve and args.check), '--check writes nothing'
     archives = {a['id']: zipfile.ZipFile(a['zip_path']) for a in ATLASES}
     members = {a['id']: {n[len(a['prefix']):] for n in archives[a['id']].namelist()} for a in ATLASES}
     index = {}
@@ -510,8 +515,15 @@ def main():
                   'divergence': '相分：原文所断言者，理论不断言，或与理论的结构相冲突。'},
         'passages': passages,
     }
-    (HERE / 'passages.json').write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n')
-    print(f'{len(passages)} passages written')
+    out = json.dumps(data, ensure_ascii=False, indent=1) + '\n'
+    if args.check:
+        if (HERE / 'passages.json').read_text() != out:
+            problems.append('passages.json differs from the build: change it through FIXES, not in place')
+        else:
+            print('passages.json is the build')
+    else:
+        (HERE / 'passages.json').write_text(out)
+        print(f'{len(passages)} passages written')
     for x in problems:
         print('PROBLEM', x)
     return 1 if problems else 0

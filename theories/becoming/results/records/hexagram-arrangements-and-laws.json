@@ -934,7 +934,7 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "88e86f6636ede3b957516a43cc7f527151869b3d7baab37489698dacf37c0a10"
+      "sha256": "e5348b6e9515f059da8803af9b9e60a9572a559fb08b5c7e0dda96a4f8d892ff"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
@@ -1106,6 +1106,10 @@
     {
       "en": "19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md, CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section; CHINESE-SOURCES-AND-BECOMING.md: SC marked the second gap closed in sections 8 and 11, corrected section 5.4 and re-pointed four passages in the tables; THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts; passages.json: SC re-pointed four passages (declarations, record, readings) and marked the second gap closed, through build_passages.py's FIXES). The claim is unchanged.",
       "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，BECOMING-RENEWAL-READING.md、CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RO's map guard: verify_ro.py re-pointed after reading the change (it also runs build_passages.py --check where the archives are present, so passages.json is checked to be the build of the mappers' entries and FIXES, and an edit made in place fails). The claim is unchanged.",
+      "zh": "2026年10月19日，RO 对应表的检查：读过改动后，verify_ro.py 重新指向（在存档在场时它也运行 build_passages.py --check，检查 passages.json 就是由映射者条目与 FIXES 构建的结果，就地改动不再通过）。论断不变。"
     }
   ]
 }

@@ -16,13 +16,16 @@ Checks, each against the repository's own files:
      (default: the newest under becoming-checks/), or, for a module of this kit not yet landed, in
      its source, reported as such;
   5. every record a passage names exists, and no passage id repeats one of the Y1 passage map;
-  6. the chapter's passage tables, between their markers, are the tables printed by --table.
+  6. the chapter's passage tables, between their markers, are the tables printed by --table;
+  7. where the archives are present, passages.json is what build_passages.py builds from the mappers'
+     entries and its FIXES (build_passages.py --check), so no edit was made in place.
 It checks text and names, not the proofs: the core checker proves the declarations."""
 import argparse
 import hashlib
 import html
 import json
 import re
+import subprocess
 import sys
 import zipfile
 from pathlib import Path
@@ -262,6 +265,15 @@ def main():
                 failures.append(f'chapter table for {t} differs from passages.json (print it with --table)')
     else:
         failures.append(f'no chapter at {args.chapter}')
+
+    # 7. the map is the build: passages.json changes only through build_passages.py's FIXES
+    if full is not None:
+        build = subprocess.run([sys.executable, '-B', str(HERE / 'build_passages.py'), '--check'],
+                               capture_output=True, text=True)
+        if build.returncode:
+            failures += ([x[len('PROBLEM '):] for x in build.stdout.splitlines() if x.startswith('PROBLEM ')]
+                         or [f'build_passages.py --check failed: {build.stderr.strip()[-300:]}'])
+        rebuilt += '; passages.json is the build'
 
     kinds = {k: sum(p['kind'] == k for p in passages) for k in KIND_ZH}
     per = {t: sum(p['tradition'] == t for p in passages) for t in TRADITIONS}
