@@ -884,7 +884,7 @@
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "cfc03c248abb2f904a5a4d35242ca453bcf2fd42bd35cfb7352403cc4eac63c1"
+      "sha256": "4e5547d2b3e38a0545c17ac38c72e361e230489cc39a04628b2d09cfd2f12e64"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -999,6 +999,10 @@
     {
       "en": "19 October 2026, Y4 (Becoming.HexagramSites): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (section 11: the statement-source row of the chapter on the 易传 now also names fixed-places-and-sole-lines; Y4 also added the section 1 paragraph on 王弼's readings of the places after this record's, and the earlier changes since this record bound the file are in sections it does not cite). The claim is unchanged.",
       "zh": "2026年10月19日，Y4（Becoming.HexagramSites）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（第 11 节易传一章的陈述来源行增列 fixed-places-and-sole-lines；第 1 节在本记录的段落之后增加王弼之读一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, PT1 (place/transition nets on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，PT1（脊柱上的库所/变迁网）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

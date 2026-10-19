@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 285 | 10,921 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 286 | 10,994 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -599,6 +599,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PhasePeriodSelection.lean](lean-declarations/inquiry.md#module-96e1d00a32d0) | Attainable inquiry, contact and process laws |
 | [PhasePeriodUniversal.lean](lean-declarations/inquiry.md#module-669a6ea433f9) | Attainable inquiry, contact and process laws |
 | [PhaseRecoveredContact.lean](lean-declarations/inquiry.md#module-b51b3a4c7541) | Attainable inquiry, contact and process laws |
+| [PlaceTransitionNets.lean](lean-declarations/becoming-core.md#module-5e2e120f84b5) | Becoming pure core |
 | [PlasticityPreparation.lean](lean-declarations/shared.md#module-c527ff17c751) | Organizational formation through revisable evaluation |
 | [PlasticityWitness.lean](lean-declarations/shared.md#module-ac933f076498) | Organizational formation through revisable evaluation |
 | [PluralRecords.lean](lean-declarations/abstraction.md#module-2a54e07465df) | Abstraction, applicability and constitution |

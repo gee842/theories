@@ -114,6 +114,7 @@ Aliases: `初上无位`, `初上無位`, `初上无阴阳定位`, `辯位`, `卦
 ### History
 
 - 19 October 2026: added (Y4), continuing Y2 on Ren's “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping”; study section 202, decision D53.
+- 19 October 2026, PT1 (place/transition nets on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: PT1 added a study section; THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.
 
 </details>
 

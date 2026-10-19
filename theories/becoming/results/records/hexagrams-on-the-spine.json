@@ -562,13 +562,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "f5fdf985480d90d91077602176980412b4afc4eb982c774213000d017998c84a"
+      "sha256": "580e8c08fa6d5b616e179b92202020bd2c3d0117723ba51d30401ad341892c7c"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "cfc03c248abb2f904a5a4d35242ca453bcf2fd42bd35cfb7352403cc4eac63c1"
+      "sha256": "4e5547d2b3e38a0545c17ac38c72e361e230489cc39a04628b2d09cfd2f12e64"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -689,6 +689,10 @@
     {
       "en": "19 October 2026, Y4 (王弼's readings of the places, record fixed-places-and-sole-lines, study section 202): YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md, PROVENANCE.json re-pointed after reading the change (Y4 added its passages, censuses, chapter text, study section, canonical paragraph and the preserved pages of the 《周易略例》). The claim is unchanged.",
       "zh": "2026年10月19日，Y4（王弼之读，记录 fixed-places-and-sole-lines，研究第 202 节）：读过改动后，YI-ZHUAN-AND-BECOMING.md、passages.json、verify_mapping.py、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md、PROVENANCE.json 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, PT1 (place/transition nets on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: PT1 added a study section; THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，PT1（脊柱上的库所/变迁网）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }
