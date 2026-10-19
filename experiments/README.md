@@ -9,7 +9,7 @@ Executable research. Rewritten 17 October 2026 in the repository restructure; th
 | [integrated-correction](integrated-correction/README.md) | Parent of the Lean spine and its periphery; the selective-handoff pilot |
 | [agentdojo-evidence-boundary](agentdojo-evidence-boundary/README.md) | Agent maintenance and correction-action tests |
 | [circular-construction](circular-construction/README.md) | Speculative engineering experiment applying Ren's theories (30 Sept 2026) |
-| [guardian-anarchy](guardian-anarchy/README.md) | Local only by Ren's instruction of 4 Oct 2026; do not push or deploy |
+| `guardian-anarchy/` | Local only by Ren's instruction of 4 Oct 2026; kept on this machine and not tracked (ignored since 19 October 2026); do not push or deploy |
 | [learned-claim-agents](learned-claim-agents/README.md) | AI-authored study with a written protocol (6 Oct 2026) |
 | [market-generativity](market-generativity/README.md) | Executable counterpart of the market dynamics chapter |
 | [motor-learning-cost](motor-learning-cost/README.md) | Secondary analysis of a public PNAS motor-learning dataset |

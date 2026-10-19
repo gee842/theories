@@ -17,8 +17,8 @@
 
 制作资料：
 
-- [网站源文件](../../experiments/guardian-anarchy/README.md)
-- [三幅插图的完整提示词与文件记录](../../experiments/guardian-anarchy/asset-prompts.json)
+- 网站源文件 `experiments/guardian-anarchy/README.md`（仅在本机，不入仓库）
+- 三幅插图的完整提示词与文件记录 `experiments/guardian-anarchy/asset-prompts.json`（仅在本机）
 - [河谷生活原图](../../output/guardian-anarchy-images/guardian-valley.png)
 - [基础设施剖面原图](../../output/guardian-anarchy-images/guardian-cutaway.png)
 - [实验室与沉浸世界原图](../../output/guardian-anarchy-images/guardian-futures-diptych.png)
@@ -26,6 +26,6 @@
 
 历史第一版曾生成私有托管副本；用户此后明确要求仅本地。本轮没有撤销该历史副本，也不再将它作为当前交付入口。后续不推送、不上传、不部署。
 
-[本地第一版网站](../../experiments/guardian-anarchy/dist/index.html)
+本地第一版网站 `experiments/guardian-anarchy/dist/index.html`（仅在本机）
 
 [实际网站预览](../../output/guardian-anarchy-preview.jpg)

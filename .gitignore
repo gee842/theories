@@ -20,3 +20,6 @@ node_modules/
 # Scratch, never tracked (REPOSITORY-LAYOUT)
 /tmp/
 /work/
+
+# Local-only project (gitlink without a remote; untracked 19 October 2026, R20)
+experiments/guardian-anarchy/
