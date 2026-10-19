@@ -1,0 +1,17 @@
+{
+  "tree": "/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/md1-mutual-dependence",
+  "modules": 47,
+  "ran": [
+    "Becoming.MutualDependence",
+    "BecomingMutualDependenceAxiomAudit"
+  ],
+  "reused": 46,
+  "unclean": [],
+  "audits": {
+    "Becoming.MutualDependence": {
+      "theorems": 33,
+      "declarations": 42,
+      "with_axioms": {}
+    }
+  }
+}
