@@ -69,7 +69,7 @@ Connect normative grounds across intelligence, evaluation of ends, formation of 
 
 **README overview:** Advancing AI alignment
 
-The framework makes the purposes of intelligence, and the rules by which those purposes are formed and revised, objects of ethical evaluation. It can assess human instructions, institutional objectives and AI goals against actual living and further shared generation. The direction argument is complete at its explicit-axiom scope; checked local results also connect rule revision to actual generation while allowing the realized form to change.
+The framework makes the purposes of intelligence, and the rules by which those purposes are formed and revised, objects of ethical evaluation. Under the continuation condition and the practical commitments, it can assess human instructions, institutional objectives and AI goals against actual living and further shared generation. The direction argument is a reviewed argument within those conditions, not a Lean theorem, and it proves neither compliance nor reliability in deployment; checked local results also connect rule revision to actual generation while allowing the realized form to change.
 
 **Next:** Develop situated ways to recognize ethically relevant relations and preserve warranted reasons through learning, changed purposes and action. Test actual correspondence and implementation in concrete cases; normative applicability does not guarantee behavioral convergence.
 
@@ -197,7 +197,7 @@ Establish the deductive necessity of the Theory of Becoming as a whole without a
 
 Deductive necessity lies in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and evaluation under the conditional alignment route remain differentiated within the same reality.
 
-**Next:** Zero premises first (11 October): remove premises and derive the most general version of each law of the theory without axiom, zero premises first. Inventory where each main theorem uses a premise, finiteness, enclosure or decidability; restate each localizable law for every world as “Y iff Z”, Z holding of that world at the steps and relata the proof uses, with the selection theorems as corollaries; state the commitments of the representation openly; test each law against weakening the representation. The selection tables are not extended further, and no premise is claimed derived where the representation proves it contingent.
+**Next:** Establish the deductive necessity of the whole: that its determinations are internally related moments of one unfolding, not a collection of laws each holding of every represented world. Settle whether every becoming can be represented with discrete steps and natural-number amounts, on which rest, novelty needing gain and the setting of runaway by frequency depend, and state the laws with real amounts and continuous time. The zero-premise line of 11 October is carried through: the laws of the theory without axiom are stated for every world so represented, each with its local conditions written into it; the counting laws that needed decided activity also hold over counted censuses, with no decision procedure; naming, for every finite world meeting the eight premises, a step after which nothing arises would give the limited principle of omniscience (`World.lpo_of_finite_ends`); and the commitments of the representation are stated on the premise card.
 
 [becoming-context-coherence](theories/becoming/results/records/becoming-context-coherence.md): `recorded-checked`
 
@@ -259,9 +259,9 @@ Prove a universal metaethics of all intelligence, explaining interconnection and
 
 [2026-10-07-universal-intelligence-session-goal](sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) · [UNIFIED-ETHICAL-GROUNDING](theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) · [2026-10-08-positive-generative-direction](sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) · [2026-10-08-universal-metaethics-name-and-readme](sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) · [2026-10-08-readme-research-progress-and-push](sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md) · [2026-10-09-theory-of-becoming-name](sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-name.md) · [2026-10-09-monist-evaluator-grounding](sources/15-codex-theory-conversations/2026-10-09-monist-evaluator-grounding.md) · [2026-10-09-one-theory-unification](sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)
 
-**README overview:** Developing the Universal Metaethical Core
+**README overview:** Developing significance, comparison and practical judgment
 
-We are developing the significance-and-comparison core (section 6) into increasingly specific ethics. Living significance and explicit practical commitments already support comparison, basic protection, bounded responsibility, transfer and appropriate ending. Current extensions address conflicting claims, uncertain classification and revisable judgment.
+We are developing the significance-and-comparison core (section 6) into increasingly specific ethics. Under the continuation condition, living significance and explicit practical commitments support comparison, basic protection, bounded responsibility, transfer and appropriate ending. Current extensions address conflicting claims, uncertain classification and revisable judgment.
 
 **Next:** Extend justified comparisons where serious losses and fair chances conflict; establish the particular living relationships that change a concrete choice, including when a changed situation warrants revising an undertaking.
 

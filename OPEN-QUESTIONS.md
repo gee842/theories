@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-Where the theory is open: the open targets, the open programme of the canonical chapter, and the decisions that wait on Ren. A completed result's own next step is on its record page.
+Where the theory is open: the open targets, the open programme of the canonical chapter, and what lies beyond the readings. No reading waits on anyone: each is decided by its place in one account of the theory (decision D45). A completed result's own next step is on its record page.
 
 <a id="registered-results"></a>
 <a id="已登记成果--registered-results"></a>
@@ -52,13 +52,16 @@ Target: establish that the core’s common relations are indispensable across al
 - [Section 8.7, empirical correspondence](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#87-empirical-correspondence)
 - [Section 8.8, review status](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#88-review-status)
 
-## Decisions pending Ren
+<a id="decisions-pending-ren"></a>
+## Beyond the readings
 
-- [Section 8.4, what stays Ren's](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-what-stays-rens)
-- [Section 8.3, readings decided on Ren's delegation (Ren can reverse any)](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-decided-on-rens-delegation)
-- [The work board's decisions pending Ren](_process/BECOMING-WORKBOARD.md#decisions-pending-ren)
+The readings are decided by argument and can be revised by a better one. What changes only through a proposal is the author's own text and authorizations: the body of the opening, the curated generativity chain, the goal scopes and their states, and the licence. The choice of results featured on the home page is open to revision on argument.
+
+- [Section 8.3, readings adopted, each with its argument](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-decided-on-rens-delegation)
+- [Section 8.4, open readings, and the texts that change only by proposal](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-what-stays-rens)
+- [The work board: what changes only by proposal](_process/BECOMING-WORKBOARD.md#decisions-pending-ren)
 - The state of each scope not yet marked: [Connected explanation of cognition, learning and evolutionary psychology](GOALS.md#cognition-learning-evolution), [Common problems and revisable purposes](GOALS.md#collective-problems), [Generative alignment](GOALS.md#generative-alignment), [Generative foundation and continuity](GOALS.md#generative-foundation), [How generative relations change: session objective](GOALS.md#generative-relation-change-session), [Generative evolution of Liangzhi](GOALS.md#liangzhi-evolution), [Complete theoretical integration of meta-attractors](GOALS.md#meta-attractor-integration-session), [Continuing normative grounding direction](GOALS.md#normative-grounding), [Scientific inquiry foundation session](GOALS.md#scientific-inquiry-session), [Theory of Becoming — current first priority](GOALS.md#theory-of-becoming), [The Theory of Evolution](GOALS.md#theory-of-evolution), [Universal metaethics of all intelligence](GOALS.md#universal-intelligence-session), [Constitution and formation of wisdom](GOALS.md#wisdom-root-session), [Independent axiom-free practical judgment](GOALS.md#zero-axiom-session).
-- The choice of [the results featured on the home page](README.md#what-is-established).
+- The choice of [the results featured on the home page](README.md#what-is-established), open to revision.
 
 <a id="discovery-and-evidence--检索与证据"></a>
 ## Discovery and evidence

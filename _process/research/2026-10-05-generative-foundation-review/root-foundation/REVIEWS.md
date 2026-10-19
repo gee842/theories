@@ -10,6 +10,7 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-06 | [CORE-TREE-CONTINUATION-REVIEW.md](CORE-TREE-CONTINUATION-REVIEW.md) | Core/tree continuation: independent review and scope |
 | 2026-10-06 | [EVALUATIVE-PLASTICITY-REVIEW.md](EVALUATIVE-PLASTICITY-REVIEW.md) | Prospective review of paid evaluative plasticity |
 | 2026-10-06 | [SELECTIVE-HANDOFF-REVIEW.md](SELECTIVE-HANDOFF-REVIEW.md) | Selective reuse of a historical correction: prospective review |
+| 2026-10-06 | [SSBX-REPOSITORY-REVIEW.md](SSBX-REPOSITORY-REVIEW.md) | 早期《生生不息》仓库审读：哪些可以并入生成／变化之论 |
 | 2026-10-10 | [CONTINUATION-GROUNDING-REVIEW.md](CONTINUATION-GROUNDING-REVIEW.md) | Independent review: continuation grounding W1–W5 (plan W8) |
 | 2026-10-16 | [BECOMING-RELEASE-READINESS-REVIEW.md](BECOMING-RELEASE-READINESS-REVIEW.md) | Release-readiness review of the Theory of Becoming |
 |  | [BECOMING-EIGHTEENTH-REVIEW.md](BECOMING-EIGHTEENTH-REVIEW.md) · [Chinese edition](BECOMING-EIGHTEENTH-REVIEW.zh.md) | Eighteenth independent review: P107–P127 and I4b |
