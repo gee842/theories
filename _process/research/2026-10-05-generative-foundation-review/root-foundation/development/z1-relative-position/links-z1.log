@@ -1,55 +1,12 @@
 python3 -B tools/research/research.py links
 {
-  "files_checked": 1256,
-  "links_checked": 67925,
+  "files_checked": 1267,
+  "links_checked": 69033,
   "broken": 0,
   "broken_by_kind": {},
   "broken_by_role": {},
   "by_directory": {},
   "list": [],
-  "not_in_repository": [
-    {
-      "file": "drafts/2026-10-04-guardian-anarchy/README.md",
-      "line": 20,
-      "target": "../../experiments/guardian-anarchy/README.md",
-      "kind": "in-submodule",
-      "role": "live"
-    },
-    {
-      "file": "drafts/2026-10-04-guardian-anarchy/README.md",
-      "line": 21,
-      "target": "../../experiments/guardian-anarchy/asset-prompts.json",
-      "kind": "in-submodule",
-      "role": "live"
-    },
-    {
-      "file": "drafts/2026-10-04-guardian-anarchy/README.md",
-      "line": 29,
-      "target": "../../experiments/guardian-anarchy/dist/index.html",
-      "kind": "in-submodule",
-      "role": "live"
-    },
-    {
-      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory.md",
-      "line": 22,
-      "target": "../../../experiments/guardian-anarchy/dist/app.js#L14",
-      "kind": "in-submodule",
-      "role": "live"
-    },
-    {
-      "file": "drafts/2026-10-04-guardian-anarchy/review-round-02/theory.md",
-      "line": 22,
-      "target": "../../../experiments/guardian-anarchy/dist/index.html#L129",
-      "kind": "in-submodule",
-      "role": "live"
-    },
-    {
-      "file": "experiments/README.md",
-      "line": 12,
-      "target": "guardian-anarchy/README.md",
-      "kind": "in-submodule",
-      "role": "live"
-    }
-  ],
+  "not_in_repository": [],
   "scope": "Relative links and #anchors in live and generated Markdown (paths.py roles); history, evidence, sources and scratch are frozen and not checked. Paths must match tracked or untracked files exactly. Targets inside a submodule or excluded by .gitignore are listed under not_in_repository, not counted."
 }

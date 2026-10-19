@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 283 | 10,778 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 284 | 10,818 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -717,6 +717,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [RelationalReduction.lean](lean-declarations/core.md#module-a366181ec98a) | Generative core and relational structure |
 | [RelationalRenewal.lean](lean-declarations/becoming-core.md#module-bc794121a016) | Becoming pure core |
 | [RelationsAcrossScales.lean](lean-declarations/learning.md#module-ba4d9be09079) | Learning, prediction and dynamics |
+| [RelativePosition.lean](lean-declarations/becoming-core.md#module-4c9313b71ded) | Becoming pure core |
 | [Relevance.lean](lean-declarations/becoming-core.md#module-c2adebdbf900) | Becoming pure core |
 | [Remainder.lean](lean-declarations/becoming-core.md#module-1146fda0cc0e) | Becoming pure core |
 | [RemainingDependency.lean](lean-declarations/abstraction.md#module-c1c11c83ec55) | Abstraction, applicability and constitution |

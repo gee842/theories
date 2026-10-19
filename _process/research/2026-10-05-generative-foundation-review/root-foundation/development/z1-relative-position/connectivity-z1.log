@@ -1,11 +1,11 @@
 {
- "commit": "4e9a133dde94104165fc3fc15e4f68a306b44cec",
+ "commit": "7ca3a3eb2eeaeed762489017e0b1eecdc20b6247",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261019T083809.972869Z",
+ "core_receipt_at_commit": "20261019T110924.527968Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
- "tracked_modules": 274,
- "constants": 32694,
- "spine_theorems": 10322,
+ "tracked_modules": 284,
+ "constants": 33933,
+ "spine_theorems": 10744,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -27,20 +27,20 @@
  },
  "classes": {
   "statement on both families": 161,
-  "statement on Process/Frame/Run/Trace": 2587,
-  "statement on World/Flow/Web": 3109,
-  "proof through a base family": 125,
-  "used by a theorem on the base": 3850,
-  "apart: own vocabulary": 447,
-  "apart: prelude-only statement": 43
+  "statement on Process/Frame/Run/Trace": 2788,
+  "statement on World/Flow/Web": 3162,
+  "proof through a base family": 126,
+  "used by a theorem on the base": 4066,
+  "apart: own vocabulary": 402,
+  "apart: prelude-only statement": 39
  },
- "apart_used_by_nothing": 348,
- "apart_roots": 348,
+ "apart_used_by_nothing": 320,
+ "apart_roots": 320,
  "apart_roots_by_category": {
-  "model-witness": 168,
-  "general-structure": 70,
-  "support": 85,
-  "logical-strength": 12,
+  "model-witness": 171,
+  "support": 79,
+  "general-structure": 47,
+  "logical-strength": 10,
   "restates": 12,
   "calibration": 1
  },
@@ -76,24 +76,12 @@
  },
  "apart_by_module": {
   "Becoming.Frontier": [
-   34,
+   27,
    84
-  ],
-  "Becoming.Presentations": [
-   25,
-   36
   ],
   "Becoming.HexagramPlaces": [
    21,
    108
-  ],
-  "Becoming.IntegerOrder": [
-   17,
-   39
-  ],
-  "Becoming.Lexical": [
-   17,
-   56
   ],
   "Becoming.Ideals": [
    16,
@@ -103,27 +91,31 @@
    16,
    44
   ],
-  "Becoming.Acceptance": [
-   16,
-   17
+  "Becoming.IntegerOrder": [
+   15,
+   39
   ],
-  "Becoming.FaultEnvelopes": [
+  "Becoming.HexagramLaws": [
    13,
-   19
+   130
   ],
   "Becoming.CodeAcquisition": [
    13,
    39
   ],
+  "Becoming.Acceptance": [
+   12,
+   17
+  ],
   "Becoming.PartialReadout": [
    12,
    32
   ],
-  "Becoming.Listing": [
-   11,
-   85
-  ],
   "Becoming.StrictTransport": [
+   11,
+   19
+  ],
+  "Becoming.FaultEnvelopes": [
    11,
    19
   ],
@@ -183,6 +175,10 @@
    7,
    47
   ],
+  "Becoming.Lexical": [
+   7,
+   56
+  ],
   "Becoming.Naturals": [
    6,
    18
@@ -195,13 +191,9 @@
    6,
    23
   ],
-  "Becoming.Decidedness": [
+  "Becoming.Presentations": [
    5,
-   65
-  ],
-  "Becoming.Hexagrams": [
-   5,
-   71
+   36
   ],
   "Becoming.LocalUnits": [
    5,
@@ -291,6 +283,10 @@
    2,
    46
   ],
+  "Becoming.Decidedness": [
+   2,
+   65
+  ],
   "Becoming.ActiveReading": [
    2,
    14
@@ -298,6 +294,10 @@
   "Becoming.Selection": [
    2,
    67
+  ],
+  "Becoming.Undecided": [
+   2,
+   64
   ],
   "Becoming.Revision": [
    2,
@@ -429,7 +429,7 @@
   ]
  },
  "components": {
-  "count": 60,
+  "count": 59,
   "theorems_outside_the_main_component": [
    "Becoming.Dispatch.add_three_assoc",
    "Becoming.GuardHorizon.coverage_transports",
@@ -447,14 +447,9 @@
    "Becoming.PartialReadout.safe_of_holds",
    "Becoming.Registration.retained_keeps",
    "Becoming.Requirement.Collective.no_common_plan",
-   "Becoming.Requirement.Handover.served",
-   "Becoming.Requirement.Handover.undelivered_fails",
-   "Becoming.Requirement.Served.not_of_gap",
-   "Becoming.Requirement.Served.successor",
    "Becoming.Requirement.Settled.no_residual",
    "Becoming.Requirement.residual_of_unfulfilled",
    "Becoming.Requirement.separate_not_joint",
-   "Becoming.Requirement.served_of_handover",
    "Becoming.Routes.cond_zero_mul"
   ]
  },
@@ -485,10 +480,10 @@
  },
  "records_by_best_alias_class": {
   "statement on both families": 26,
-  "statement on Process/Frame/Run/Trace": 103,
-  "statement on World/Flow/Web": 90,
+  "statement on Process/Frame/Run/Trace": 110,
+  "statement on World/Flow/Web": 93,
   "proof through a base family": 1,
-  "used by a theorem on the base": 7,
+  "used by a theorem on the base": 6,
   "apart: own vocabulary": 1
  },
  "records_resting_only_on_apart_theorems": [

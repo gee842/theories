@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-265 registered results: 249 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 666 curated edges join 219 results to the results they draw on.
+266 registered results: 250 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 669 curated edges join 220 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -163,6 +163,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [registration-within-what-it-registers][] ← <a id="registration-within-what-it-registers--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [relata-counted-up-to-indiscernibility][] ← <a id="relata-counted-up-to-indiscernibility--listing-once-is-decided-identity"></a>[listing-once-is-decided-identity][]
 - [relational-reading-comparison][] ← <a id="relational-reading-comparison--relational-renewal-classification"></a>[relational-renewal-classification][]
+- [relative-position-is-zero-sum][] ← <a id="relative-position-is-zero-sum--own-count-misses-joint-excess"></a>[own-count-misses-joint-excess][] · <a id="relative-position-is-zero-sum--derived-extent-limits"></a>[derived-extent-limits][] · <a id="relative-position-is-zero-sum--whole-first-and-bounded-centers"></a>[whole-first-and-bounded-centers][]
 - [represented-boundary-against-dependence][] ← <a id="represented-boundary-against-dependence--becoming-stepwise-reading"></a>[becoming-stepwise-reading][] · <a id="represented-boundary-against-dependence--derived-extent-limits"></a>[derived-extent-limits][] · <a id="represented-boundary-against-dependence--support-from-the-supported"></a>[support-from-the-supported][]
 - [requirement-over-open-exchanges][] ← <a id="requirement-over-open-exchanges--premises-read-off-the-exchange"></a>[premises-read-off-the-exchange][] · <a id="requirement-over-open-exchanges--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
 - [reserve-defers-ending][] ← <a id="reserve-defers-ending--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][] · <a id="reserve-defers-ending--becoming-renewal-reading"></a>[becoming-renewal-reading][] · <a id="reserve-defers-ending--life-as-condition-of-life"></a>[life-as-condition-of-life][] · <a id="reserve-defers-ending--more-needs-renewers"></a>[more-needs-renewers][]
@@ -405,6 +406,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [relational-generative-comparison]: theories/becoming/results/records/relational-generative-comparison.md
 [relational-reading-comparison]: theories/becoming/results/records/relational-reading-comparison.md
 [relational-renewal-classification]: theories/becoming/results/records/relational-renewal-classification.md
+[relative-position-is-zero-sum]: theories/becoming/results/records/relative-position-is-zero-sum.md
 [renewing-consuming-formation]: theories/becoming/results/records/renewing-consuming-formation.md
 [represented-boundary-against-dependence]: theories/becoming/results/records/represented-boundary-against-dependence.md
 [requirement-over-open-exchanges]: theories/becoming/results/records/requirement-over-open-exchanges.md

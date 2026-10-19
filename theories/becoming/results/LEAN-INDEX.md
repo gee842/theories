@@ -19,17 +19,17 @@ Warrant of ethical premises, valid inference, recognition, motivation and implem
 <a id="覆盖范围--coverage"></a>
 ## Coverage
 
-The inventory contains **1,692 `.lean` paths and 1,297 distinct byte contents**, including 134 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
+The inventory contains **1,694 `.lean` paths and 1,298 distinct byte contents**, including 135 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
 
 | File role | Paths |
 |---|---:|
 | Audit driver | 13 |
-| Development attempt | 800 |
+| Development attempt | 801 |
 | Historical draft | 3 |
 | Imported archive | 23 |
-| Working source | 853 |
+| Working source | 854 |
 
-The working-source and audit entries contain **22,038 explicit theorem/lemma occurrences** and 33,062 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
+The working-source and audit entries contain **22,078 explicit theorem/lemma occurrences** and 33,121 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
 
 Hidden, ignored and untracked files are included; `.git`, `.lake`, `node_modules`, `.venv`, `venv`, `__pycache__` and other sessions' worktrees (`.claude/worktrees`) are excluded, and directory symlinks are not followed. Archives and attempts remain in the JSON inventory without repeating them in the main table; saved copies in run, check, snapshot and history folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.
 
@@ -40,7 +40,7 @@ The scan lists explicit theorem, lemma, def, abbrev, structure, inductive, opaqu
 
 | Direction | Working sources and audit entries |
 |---|---:|
-| [Becoming pure core](#group-becoming-core) | 283 |
+| [Becoming pure core](#group-becoming-core) | 284 |
 | [Normative grounding and generative direction](#group-ethics) | 139 |
 | [Valuation development and liangzhi](#group-valuation) | 19 |
 | [Attainable inquiry, contact and process laws](#group-inquiry) | 71 |
@@ -268,6 +268,7 @@ Conceptual entry: [THE-THEORY-OF-BECOMING §9](../chapters/THE-THEORY-OF-BECOMIN
 | [Regrouping](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean) · [Names](lean-declarations/becoming-core.md#module-f74de29583d3) | 24 | 9 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked |
 | [RegroupingSelection](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean) · [Names](lean-declarations/becoming-core.md#module-e5f3e2f92610) | 11 | 0 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked |
 | [Rejoining](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Rejoining.lean) · [Names](lean-declarations/becoming-core.md#module-585d560964c5) | 20 | 12 | [Theory](../chapters/THE-THEORY-OF-BECOMING.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked |
+| [RelativePosition](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean) · [Names](lean-declarations/becoming-core.md#module-4c9313b71ded) | 40 | 19 | [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked |
 | [Relevance](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean) · [Names](lean-declarations/becoming-core.md#module-c2adebdbf900) | 31 | 8 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked |
 | [Remainder](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean) · [Names](lean-declarations/becoming-core.md#module-1146fda0cc0e) | 58 | 8 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked |
 | [Renewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean) · [Names](lean-declarations/becoming-core.md#module-122ecfb273f5) | 1 | 4 | [Theory](../chapters/THE-THEORY-OF-BECOMING-REFERENCE.md) · [Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md) · [Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md) · Core receipt: core layer, bytes as checked |

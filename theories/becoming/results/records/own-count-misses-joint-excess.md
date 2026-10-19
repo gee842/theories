@@ -75,7 +75,7 @@ Ren's proposal says that the self can become rigid and “has to count the dynam
 - related, not a proved adapter: [derived-extent-limits](derived-extent-limits.md). What the derived extent does not reach: one way, the horizon of the want and the clearer.
 - related, not a proved adapter: [relational-renewal-classification](relational-renewal-classification.md). RenewalBridge gives the support-gated family's staying below for good and ending as instances of Flow.stays_below_at and ends_below_at, with jointly_ends.
 
-**Used by:** [consumption-ends-with-feeders](consumption-ends-with-feeders.md) · [derived-extent-limits](derived-extent-limits.md)
+**Used by:** [consumption-ends-with-feeders](consumption-ends-with-feeders.md) · [derived-extent-limits](derived-extent-limits.md) · [relative-position-is-zero-sum](relative-position-is-zero-sum.md)
 
 <a id="sources--来源"></a>
 ### Sources
