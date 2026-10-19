@@ -237,8 +237,8 @@
       "id": "whole-first-and-bounded-centers",
       "relation": "formal-reuse",
       "detail": {
-        "en": "Reuses Clearing.free_rider_loses.",
-        "zh": "复用 Clearing.free_rider_loses。"
+        "en": "Reuses Clearing.clearer_loses_dweller.",
+        "zh": "复用 Clearing.clearer_loses_dweller。"
       },
       "interface": {
         "output": {
@@ -331,7 +331,7 @@
         "Becoming.Restored.takeAt",
         "Becoming.Restored.web"
       ],
-      "sha256": "5f941cb59922ad7b174b1c27ee1129cd2e3f5b4b92ba3380f1a146a4424788f2"
+      "sha256": "34b323dc7786264a356c9b456b2e2b833a8ee36d55e567530973a9dbb32f7ed5"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
@@ -339,15 +339,15 @@
       "declarations": [
         "Becoming.Flow.joint_excess_ends"
       ],
-      "sha256": "a51dd4bda16baea5e25e25031f11f3d018e1df0e98ab854bb460047c83ba14ca"
+      "sha256": "8606d794204c4f68e4ad963dc8642ebb1a1d8dc4750c58625e5ca219a8efc564"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
       "declarations": [
-        "Becoming.Clearing.free_rider_loses"
+        "Becoming.Clearing.clearer_loses_dweller"
       ],
-      "sha256": "d917161f9088bb9fac7cb81d19073edb7cf9b0684941d5857a666342e10fda8c"
+      "sha256": "962dcce61063d96cfdc1785b77a7e524df0397e1d2d6ac25b03f9f18310ea7df"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T110924.527968Z/verification.json",
@@ -357,7 +357,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "dfe98addb79966e18bd133428bc9c20deec8321fc006024853510b00dcb4fd50"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -367,7 +367,7 @@
     {
       "path": "theories/becoming/OPENING.md",
       "role": "provenance",
-      "sha256": "6309a51032584cc0175e24a323c792aa1914c50c8eb7e17a6c1c78d8692ebf82"
+      "sha256": "81631c941fe67689c7bfddce470dcc0e708db1e1086083e3b8199dc4461124f9"
     },
     {
       "path": "drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md",
@@ -378,12 +378,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-19-opening-v7.md",
       "role": "provenance",
       "sha256": "25f8fcd495c36dd9129ea1f2f45a97e323c7a71cdc53c9dabbdb4de95d6987a6"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T110924.527968Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RelativePosition",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -409,6 +415,10 @@
     {
       "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: Significance.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：读过改动后重新指向：Significance.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Clearing.free_rider_loses (now Clearing.clearer_loses_dweller). Proof bindings (RelativePosition.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Continuation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; RelativePosition.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Significance.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: OPENING.md, the footnotes name the renamed declarations; the body is unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Clearing.free_rider_loses（现为 Clearing.clearer_loses_dweller）。证明绑定（RelativePosition.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Continuation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；RelativePosition.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Significance.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：OPENING.md，脚注改用改名后的声明名；正文不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

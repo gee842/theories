@@ -710,7 +710,7 @@
     {
       "path": "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
       "role": "integration",
-      "sha256": "b5ba7d8e6b15b4f0519f92289608fd5dcf24c27fce5c53ab7cb0bc0b88d3bed3",
+      "sha256": "14a393d7f52ff04d2e3c22e97c65050b3d2b4f3d1fb3a22d4ad51da8388ce4b0",
       "declarations": []
     },
     {
@@ -817,7 +817,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "15caf541249d7cbc99c8e2dd83069225f18dfac154248d9cb03eb16328872775",
+      "sha256": "40e3a36f79faf60560037490d9b849c89349ba9210c42d96fadcca0252004b7c",
       "declarations": [
         "Becoming.Frame.arises_iff",
         "Becoming.Frame.claims_recur_iff"
@@ -826,7 +826,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "e90cc67d33659d78dc348fdbf93defbfb9879414d16c0613656abf102fff3926",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
       "declarations": [
         "Becoming.withMove",
         "Becoming.Run.toWithMove",
@@ -848,7 +848,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "1e0b6616ca3363962d90aa0f33cdd871fa20700e9c5a5f48e88b9f817d5ee546",
+      "sha256": "9362bf5b5fd33c18a818364390f228f7dab080e0df35fcc6d8ce0e85631f1ccd",
       "declarations": [
         "Becoming.Web.roles",
         "Becoming.Web.roles_supported",
@@ -867,7 +867,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "abe4f2fd28a48e759ab3af0a8757b94f49ee365d87f9142b47faa8c8ffa9237d",
+      "sha256": "78d3c86b42afecb2bfc36fe01e1996895975ecebb340fc96b611828b79faf259",
       "declarations": [
         "Becoming.World.ofRoles",
         "Becoming.World.arisingRecurs_ofRoles",
@@ -908,7 +908,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
       "role": "proof",
-      "sha256": "aec58a5e44bb81a651d90cce8e6fd33c216f10f51f67fd024ab234b002091acd",
+      "sha256": "4dfefe2395300f60b0f99bec0a73cb428151076f5679ccef270256c91f7aa064",
       "declarations": [
         "Becoming.Learning.Training.keeps_through_iff",
         "Becoming.Learning.Training.lost_choice",
@@ -918,7 +918,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
       "role": "proof",
-      "sha256": "b01d03a21e27823e6dedc1f52cd590b686b23a279187f0346518abac47c29117",
+      "sha256": "d696cc2fa355c252b0e97be25539ac0a9c4d22e88732ab09e6c900b7dd5928fc",
       "declarations": [
         "Becoming.ReferencePlan.complete_history",
         "Becoming.ReferencePlan.first_installed_choice",
@@ -1069,16 +1069,16 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
       "role": "proof",
-      "sha256": "f5bffe78448db5731ab8a050dc2db1f03d45ff56a25e7e1b9eb64a798350db35",
+      "sha256": "996a292e6581262ab219effec8b48c3d5a6d99017ba24144bb3a2071e75b45d6",
       "declarations": [
         "Becoming.Frame.relevance",
-        "Becoming.g0_of_unrestricted",
+        "Becoming.livingSignificance_of_unrestricted",
         "Becoming.relevance_least",
-        "Becoming.g0_relevance_iff",
+        "Becoming.livingSignificance_relevance_iff",
         "Becoming.Ranking.possible_tie",
         "Becoming.Ranking.readings_rank_presence",
         "Becoming.Ranking.sharing_presence",
-        "Becoming.Ranking.Rest.rest_ranked_below"
+        "Becoming.Ranking.Pause.pause_ranked_below"
       ]
     },
     {
@@ -1346,7 +1346,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
       "role": "proof",
-      "sha256": "070e71ed2c96012eff00bbdd0966dab29e3bdb8f7bb12c7657e63d1d49e02bad",
+      "sha256": "c23cd4eacf3966b21bfb9ffe52ddbe1b9a9352531d8a9025c52d8e0ba7a56d59",
       "declarations": [
         "Becoming.Handoff.Run.novel_by_handoff",
         "Becoming.Handoff.Run.relevance_by_handoff_of_unrestricted"
@@ -1405,6 +1405,12 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1452,21 +1458,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1494,14 +1500,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Revision",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ReferencePlan",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1550,7 +1556,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Relevance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1620,7 +1626,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1634,7 +1640,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Handoff",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1896,6 +1902,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Counterfactual.lean, Labelled.lean, ReferencePlan.lean, Space.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; ReferencePlan.lean, added_keeps, new_contact_choice and trace_conserves carry the proofs through the laws; their _of_law twins removed, statements unchanged; Space.lean, falls_stop_unrefuted proved as the whole-number instance of Amounts.rests_unrefuted, statement unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Counterfactual.lean、Labelled.lean、ReferencePlan.lean、Space.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；ReferencePlan.lean，added_keeps、new_contact_choice 与 trace_conserves 承载经律的证明；其 _of_law 孪生删去，陈述不变；Space.lean，falls_stop_unrefuted 作为 Amounts.rests_unrefuted 的整数实例证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Ranking.Rest.rest_ranked_below (now Ranking.Pause.pause_ranked_below); g0_of_unrestricted (now livingSignificance_of_unrestricted); g0_relevance_iff (now livingSignificance_relevance_iff). Proof bindings (Handoff.lean, Labelled.lean, ReferencePlan.lean, Relevance.lean, Revision.lean, Roles.lean, Space.lean, Unfolding.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Handoff.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ReferencePlan.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Relevance.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Revision.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Roles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Space.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Unfolding.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; WISDOM-AND-CONTEXT.md, names follow the R30 rename table. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Ranking.Rest.rest_ranked_below（现为 Ranking.Pause.pause_ranked_below）；g0_of_unrestricted（现为 livingSignificance_of_unrestricted）；g0_relevance_iff（现为 livingSignificance_relevance_iff）。证明绑定（Handoff.lean、Labelled.lean、ReferencePlan.lean、Relevance.lean、Revision.lean、Roles.lean、Space.lean、Unfolding.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Handoff.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ReferencePlan.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Relevance.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Revision.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Roles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Space.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Unfolding.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；WISDOM-AND-CONTEXT.md，名称随 R30 改名表。论断不变。"
     }
   ],
   "text_versions": [

@@ -129,12 +129,12 @@
       "zh": "写回后代所读记录的判定自下一代起静止，合并判定相同的历史，所以后来的读法读不回它们；遗漏之下静止于所指之外；保留的记录阻止不同的判定；记录只增补处，判定可失去而不被替换。",
       "declarations": [
         "Becoming.SharedCodes.resolve",
-        "Becoming.SharedCodes.generation",
+        "Becoming.SharedCodes.nextCohort",
         "Becoming.SharedCodes.WritesExactly",
         "Becoming.SharedCodes.written_rests",
-        "Becoming.SharedCodes.every_generation_resolves",
+        "Becoming.SharedCodes.every_cohort_resolves",
         "Becoming.SharedCodes.resolved_alike_merged",
-        "Becoming.SharedCodes.generation_merges",
+        "Becoming.SharedCodes.nextCohort_merges",
         "Becoming.SharedCodes.no_reading_recovers",
         "Becoming.SharedCodes.covered_rest",
         "Becoming.SharedCodes.omitted_rest",
@@ -342,7 +342,7 @@
         "Becoming.SharedCodes.Gloss.uptake_loses",
         "Becoming.SharedCodes.Gloss.zero_ne_one",
         "Becoming.SharedCodes.Hearing",
-        "Becoming.SharedCodes.Image",
+        "Becoming.SharedCodes.Relabels",
         "Becoming.SharedCodes.KeepsExchange",
         "Becoming.SharedCodes.KeepsRenaming",
         "Becoming.SharedCodes.Loses",
@@ -401,14 +401,14 @@
         "Becoming.SharedCodes.broadcast_reaches",
         "Becoming.SharedCodes.changes_iff",
         "Becoming.SharedCodes.covered_rest",
-        "Becoming.SharedCodes.every_generation_resolves",
+        "Becoming.SharedCodes.every_cohort_resolves",
         "Becoming.SharedCodes.exchange",
         "Becoming.SharedCodes.follow",
         "Becoming.SharedCodes.follow_agrees_iff",
         "Becoming.SharedCodes.follow_state",
-        "Becoming.SharedCodes.generation",
-        "Becoming.SharedCodes.generation_merges",
-        "Becoming.SharedCodes.generation_of_resolved",
+        "Becoming.SharedCodes.nextCohort",
+        "Becoming.SharedCodes.nextCohort_merges",
+        "Becoming.SharedCodes.nextCohort_of_resolved",
         "Becoming.SharedCodes.hear",
         "Becoming.SharedCodes.hearBy",
         "Becoming.SharedCodes.hearBy_held",
@@ -490,7 +490,7 @@
         "Becoming.SharedCodes.window_runBy",
         "Becoming.SharedCodes.written_rests"
       ],
-      "sha256": "45b3a090995a36d23dcc0a84dbdb3ba59ff5be899902bedbb2e103328d1a5257"
+      "sha256": "e3165c84ae0d77f99e148ab8ba3e87321594a3e37d702c835c3c7535d175549c"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
@@ -505,7 +505,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "68782bae82a196b91e71f22c593fcc58ea3260b503d94cf1bc8acb15f9d65157"
+      "sha256": "56b06dd533e36a4765c25fe57ed6e52f82bd8f63101aebc6fdf0cf2f5dfb05ca"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CrossSituational.lean",
@@ -520,34 +520,40 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0a463207d3f51e269320fd0bbe5ba566d5600309126134ad52b552ff2f130b2a"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "provenance",
-      "sha256": "c7ee3eea16bdf6486cb2c30bc80b2d5f5958f58dd120195d434098d453513dd2"
+      "sha256": "fb0fe2f00847be4c15585e3b382efb117f41290592c9d9332236d053a6d2107c"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
       "role": "provenance",
-      "sha256": "6d97988bc215d4e5dfa3ac0a9841365c3dc91f21bcbd873891e99d252f3e7a47"
+      "sha256": "8d83044cfd7c728aaa21e10b1fa6cf9a113ce31ca0299279c9ec89ba25eb8c5b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.SharedCodes",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -601,6 +607,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Commuting.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：Commuting.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: SharedCodes.Image (now SharedCodes.Relabels); SharedCodes.every_generation_resolves (now SharedCodes.every_cohort_resolves); SharedCodes.generation (now SharedCodes.nextCohort); SharedCodes.generation_merges (now SharedCodes.nextCohort_merges); SharedCodes.generation_of_resolved (now SharedCodes.nextCohort_of_resolved). Proof bindings (SharedCodes.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: passages.json, rebuilt: the declarations and the names in the readings follow the R30 table, each so corrected passage marked; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; SharedCodes.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: CHINESE-SOURCES-AND-BECOMING.md, names follow the R30 rename table; the passage tables are the rebuilt map. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：SharedCodes.Image（现为 SharedCodes.Relabels）；SharedCodes.every_generation_resolves（现为 SharedCodes.every_cohort_resolves）；SharedCodes.generation（现为 SharedCodes.nextCohort）；SharedCodes.generation_merges（现为 SharedCodes.nextCohort_merges）；SharedCodes.generation_of_resolved（现为 SharedCodes.nextCohort_of_resolved）。证明绑定（SharedCodes.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：passages.json，重建：声明与读法中的名称随 R30 改名表，每个如此更正的段落有标注；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；SharedCodes.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：CHINESE-SOURCES-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为重建之图。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

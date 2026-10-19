@@ -14,8 +14,8 @@
     "en": "The move is read within the configuration, a world's moves being its relata's exchanges; a history is a run of the law it shows, the correspondence not an identity, the gap being memory; a claim is a relatum."
   },
   "claim": {
-    "zh": "设 P 是配置类型 S、动作类型 A 上的过程。把动作读入配置（withMove P，配置为 S × A，只有一个标签），P 的运行就是同一个运行的两种读法（Run.toWithMove、Run.ofWithMove、Run.ofWithMove_toWithMove、Run.toWithMove_ofWithMove）；这时律留开下一个动作（withMove_open），它确定，恰当 P 确定且 P 取一步之处只有一个动作（withMove_determined_iff）。动作由配置的一个策略形成时（closedBy P policy），每一步都是动作留开时的一步（closedBy_withMove）；P 确定则它仍确定（closedBy_determined），从同一配置出发的两个运行每一步都相同（closedBy_runs_agree，经 Becoming.Mechanism 的 GoAlike.runs_agree）。忘掉 GenerativeCore 的 productProcess 中联合一步的动作，留下各部分忘掉动作后的一步（unlabelled_product_le）；Fork 中两个按同一律分岔的部分，共享动作时不能同时走不同的路，各自先忘掉动作时能（Fork.label_couples）。世界 w 中，从第 t 步起的动作是其关系项的交换（Exchange、World.move）：在场的关系项取与给什么。交换之律（exchange R）说：每个关系项在一步之后的水平连同从它被取的，等于之前的水平连同给它的。w 平衡，恰当其水平以其交换为动作按这条律运行（World.balances_iff_exchange，按定义）；跨一步，恰当它在那里的每个家族上平衡（World.exchange_step_iff）；这时 w 是这条律的运行（World.exchangeRun）。律固定一步之后的每个水平（exchange_agrees）；动作相同、起点在每个关系项上相同的两个运行，每一步在每个关系项上都相同（exchange_runs_agree）；Circulation 中一次循环与没有交换留下同样的水平（Circulation.standings_leave_exchange），动作相同而起点不同的运行每一步都不同（Circulation.start_needed）。对任何配置序列 g 与动作序列 m，它所显示的律（Shown g m）恰有它的各步；序列是它的运行（Shown.run），它是序列为其运行的最小的律（shown_le_iff），也包含在每个以这些配置与动作为运行的律之中（Run.shown_le）。Shown g m 确定，恰当序列一致：从不以同一动作把同一配置带到两处（Consistent、shown_determined_iff）；恰在这时有确定的律容许这个序列（exists_law_iff，经 Becoming.Mechanism 的 carries_law_iff 与 goAlike_id_iff）；容许它的每个确定的律在它的各步上与它相同（Shown.agrees）。对应不是同一：DeadEnd 中一条律有一步而没有运行（DeadEnd.no_history）；Splice 中重访一个配置的历史所显示的律容许一个运行，它从任何一步起都不是这段历史（Splice.spliced）；序列从不重访时，它所显示的律从它的某个配置出发的每个运行，都是从那里起的这个序列（eq_of_new、Shown.runs_of_new），所以沿保留历史的运行（Becoming.Experiment 的 keepHistory），它所显示的律只容许它（Run.keepHistory_shown）。对框架 F 与运行 r，F.world r 是一个世界：关系项是 F 的主张，每个恰在实现处活跃，没有流，没有立着、依存或汲取（Frame.world、Frame.world_active）；主张的生起就是它开始被实现（Frame.arises_iff）；一步之后的配置记录此前实现了什么时，某种读法的主张在该步之后是新的，恰当有一个跨这一步生起（Frame.novel_iff_arises）；在每步都可判定的有限主张家族中，开始被实现复现恰当不再被实现复现（Frame.claims_recur_iff，由 Becoming.Change 的 coming_recurs_iff）。以配置为主张（Frame.configurations），两个运行的世界在活动上相同，它们每一步都相同（Frame.world_fixes_run）。不用 Lean 公理。",
-    "en": "Let P be a process on configurations S with moves A. Read with the move inside the configuration (withMove P, on S × A with one label), P's runs are one run read two ways (Run.toWithMove, Run.ofWithMove, Run.ofWithMove_toWithMove, Run.toWithMove_ofWithMove); the law then leaves the next move open (withMove_open), and it is determined exactly where P is determined and, wherever P takes a step, only one move exists (withMove_determined_iff). Where the move is formed by a policy of the configuration (closedBy P policy), each step is a step of the law with the move left open (closedBy_withMove); a determined P stays determined (closedBy_determined), and two runs from one configuration agree at every step (closedBy_runs_agree, through GoAlike.runs_agree of Becoming.Mechanism). Forgetting the move of a joint step of GenerativeCore's productProcess leaves a step of each part with its move forgotten (unlabelled_product_le); in Fork two parts forking by one law cannot go different ways at once with the move shared, and can with the move forgotten in each part first (Fork.label_couples). In a world w the move across the step from t is its relata's exchange (Exchange, World.move): what the relata present take and give. The law of exchange (exchange R) says that each relatum's standing after a step with what is taken from it equals its standing before with what is given to it. w balances exactly where its standings run by this law with its exchanges as moves (World.balances_iff_exchange, by definition), across one step exactly where it balances on every family there (World.exchange_step_iff), and is then a run of the law (World.exchangeRun). The law fixes each standing after a step (exchange_agrees); two runs with the same moves, starting alike at every relatum, agree at every relatum at every step (exchange_runs_agree); in Circulation a circulation and no exchange leave the same standings (Circulation.standings_leave_exchange), and runs with the same moves from different starts differ at every step (Circulation.start_needed). For any sequence of configurations g and moves m, the law it shows (Shown g m) has exactly its steps; the sequence is a run of it (Shown.run), it is the least law the sequence is a run of (shown_le_iff), and it lies within every law of which a run has these configurations and moves (Run.shown_le). Shown g m is determined exactly where the sequence is consistent, never taking one move at one configuration to two outcomes (Consistent, shown_determined_iff), and exactly then some determined law admits the sequence (exists_law_iff, through carries_law_iff and goAlike_id_iff of Becoming.Mechanism); every determined law admitting it agrees with it on its steps (Shown.agrees). The correspondence is not an identity: in DeadEnd a law has a step and no run (DeadEnd.no_history); in Splice a history that revisits a configuration shows a law admitting a run that is the history from no step on (Splice.spliced); where a sequence never revisits, every run of the law it shows from one of its configurations is the sequence from there on (eq_of_new, Shown.runs_of_new), so along a run keeping its history (keepHistory of Becoming.Experiment) the law it shows admits only it (Run.keepHistory_shown). For a frame F and a run r, F.world r is a world whose relata are F's claims, each active exactly where realized, with no flow and nothing standing, depending or drawing (Frame.world, Frame.world_active); a claim arises exactly where it comes to be realized (Frame.arises_iff); where the configuration after a step records what was realized before it, a claim of a reading is new after the step exactly where one arises across it (Frame.novel_iff_arises); in a finite family of claims decided at each step, coming to be realized recurs exactly where ceasing to be realized recurs (Frame.claims_recur_iff, by coming_recurs_iff of Becoming.Change). With the configurations as claims (Frame.configurations), two runs whose worlds agree in activity agree at every step (Frame.world_fixes_run). No Lean axiom is used."
+    "zh": "设 P 是配置类型 S、动作类型 A 上的过程。把动作读入配置（withMove P，配置为 S × A，只有一个标签），P 的运行就是同一个运行的两种读法（Run.toWithMove、Run.ofWithMove、Run.ofWithMove_toWithMove、Run.toWithMove_ofWithMove）；这时律留开下一个动作（withMove_open），它确定，恰当 P 确定且 P 取一步之处只有一个动作（withMove_determined_iff）。动作由配置的一个策略形成时（closedBy P policy），每一步都是动作留开时的一步（closedBy_withMove）；P 确定则它仍确定（closedBy_determined），从同一配置出发的两个运行每一步都相同（closedBy_runs_agree，经 Becoming.Mechanism 的 GoAlike.runs_agree）。忘掉 GenerativeCore 的 productProcess 中联合一步的动作，留下各部分忘掉动作后的一步（unlabelled_product_le）；Fork 中两个按同一律分岔的部分，共享动作时不能同时走不同的路，各自先忘掉动作时能（Fork.label_couples）。世界 w 中，从第 t 步起的动作是其关系项的交换（Exchange、World.move）：在场的关系项取与给什么。交换之律（exchange R）说：每个关系项在一步之后的水平连同从它被取的，等于之前的水平连同给它的。w 平衡，恰当其水平以其交换为动作按这条律运行（World.balances_iff_exchange，按定义）；跨一步，恰当它在那里的每个家族上平衡（World.exchange_step_iff）；这时 w 是这条律的运行（World.exchangeRun）。律固定一步之后的每个水平（exchange_agrees）；动作相同、起点在每个关系项上相同的两个运行，每一步在每个关系项上都相同（exchange_runs_agree）；Circulation 中一次循环与没有交换留下同样的水平（Labelled.Circulation.standings_leave_exchange），动作相同而起点不同的运行每一步都不同（Labelled.Circulation.start_needed）。对任何配置序列 g 与动作序列 m，它所显示的律（Shown g m）恰有它的各步；序列是它的运行（Shown.run），它是序列为其运行的最小的律（shown_le_iff），也包含在每个以这些配置与动作为运行的律之中（Run.shown_le）。Shown g m 确定，恰当序列一致：从不以同一动作把同一配置带到两处（Consistent、shown_determined_iff）；恰在这时有确定的律容许这个序列（exists_law_iff，经 Becoming.Mechanism 的 carries_law_iff 与 goAlike_id_iff）；容许它的每个确定的律在它的各步上与它相同（Shown.agrees）。对应不是同一：DeadEnd 中一条律有一步而没有运行（DeadEnd.no_history）；Splice 中重访一个配置的历史所显示的律容许一个运行，它从任何一步起都不是这段历史（Splice.spliced）；序列从不重访时，它所显示的律从它的某个配置出发的每个运行，都是从那里起的这个序列（eq_of_new、Shown.runs_of_new），所以沿保留历史的运行（Becoming.Experiment 的 keepHistory），它所显示的律只容许它（Run.keepHistory_shown）。对框架 F 与运行 r，F.world r 是一个世界：关系项是 F 的主张，每个恰在实现处活跃，没有流，没有立着、依存或汲取（Frame.world、Frame.world_active）；主张的生起就是它开始被实现（Frame.arises_iff）；一步之后的配置记录此前实现了什么时，某种读法的主张在该步之后是新的，恰当有一个跨这一步生起（Frame.novel_iff_arises）；在每步都可判定的有限主张家族中，开始被实现复现恰当不再被实现复现（Frame.claims_recur_iff，由 Becoming.Change 的 coming_recurs_iff）。以配置为主张（Frame.configurations），两个运行的世界在活动上相同，它们每一步都相同（Frame.world_fixes_run）。不用 Lean 公理。",
+    "en": "Let P be a process on configurations S with moves A. Read with the move inside the configuration (withMove P, on S × A with one label), P's runs are one run read two ways (Run.toWithMove, Run.ofWithMove, Run.ofWithMove_toWithMove, Run.toWithMove_ofWithMove); the law then leaves the next move open (withMove_open), and it is determined exactly where P is determined and, wherever P takes a step, only one move exists (withMove_determined_iff). Where the move is formed by a policy of the configuration (closedBy P policy), each step is a step of the law with the move left open (closedBy_withMove); a determined P stays determined (closedBy_determined), and two runs from one configuration agree at every step (closedBy_runs_agree, through GoAlike.runs_agree of Becoming.Mechanism). Forgetting the move of a joint step of GenerativeCore's productProcess leaves a step of each part with its move forgotten (unlabelled_product_le); in Fork two parts forking by one law cannot go different ways at once with the move shared, and can with the move forgotten in each part first (Fork.label_couples). In a world w the move across the step from t is its relata's exchange (Exchange, World.move): what the relata present take and give. The law of exchange (exchange R) says that each relatum's standing after a step with what is taken from it equals its standing before with what is given to it. w balances exactly where its standings run by this law with its exchanges as moves (World.balances_iff_exchange, by definition), across one step exactly where it balances on every family there (World.exchange_step_iff), and is then a run of the law (World.exchangeRun). The law fixes each standing after a step (exchange_agrees); two runs with the same moves, starting alike at every relatum, agree at every relatum at every step (exchange_runs_agree); in Circulation a circulation and no exchange leave the same standings (Labelled.Circulation.standings_leave_exchange), and runs with the same moves from different starts differ at every step (Labelled.Circulation.start_needed). For any sequence of configurations g and moves m, the law it shows (Shown g m) has exactly its steps; the sequence is a run of it (Shown.run), it is the least law the sequence is a run of (shown_le_iff), and it lies within every law of which a run has these configurations and moves (Run.shown_le). Shown g m is determined exactly where the sequence is consistent, never taking one move at one configuration to two outcomes (Consistent, shown_determined_iff), and exactly then some determined law admits the sequence (exists_law_iff, through carries_law_iff and goAlike_id_iff of Becoming.Mechanism); every determined law admitting it agrees with it on its steps (Shown.agrees). The correspondence is not an identity: in DeadEnd a law has a step and no run (DeadEnd.no_history); in Splice a history that revisits a configuration shows a law admitting a run that is the history from no step on (Splice.spliced); where a sequence never revisits, every run of the law it shows from one of its configurations is the sequence from there on (eq_of_new, Shown.runs_of_new), so along a run keeping its history (keepHistory of Becoming.Experiment) the law it shows admits only it (Run.keepHistory_shown). For a frame F and a run r, F.world r is a world whose relata are F's claims, each active exactly where realized, with no flow and nothing standing, depending or drawing (Frame.world, Frame.world_active); a claim arises exactly where it comes to be realized (Frame.arises_iff); where the configuration after a step records what was realized before it, a claim of a reading is new after the step exactly where one arises across it (Frame.novel_iff_arises); in a finite family of claims decided at each step, coming to be realized recurs exactly where ceasing to be realized recurs (Frame.claims_recur_iff, by coming_recurs_iff of Becoming.Change). With the configurations as claims (Frame.configurations), two runs whose worlds agree in activity agree at every step (Frame.world_fixes_run). No Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -58,8 +58,8 @@
     "Becoming.World.exchange_step_iff",
     "Becoming.World.exchangeRun",
     "Becoming.exchange_runs_agree",
-    "Becoming.Circulation.standings_leave_exchange",
-    "Becoming.Circulation.start_needed",
+    "Becoming.Labelled.Circulation.standings_leave_exchange",
+    "Becoming.Labelled.Circulation.start_needed",
     "Becoming.Shown",
     "Becoming.shown_le_iff",
     "Becoming.Consistent",
@@ -294,8 +294,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "detail": {
-        "zh": "水平不固定交换，交换只从一个起点固定水平：Circulation 中一次循环与没有交换留下同样的水平，动作相同而起点不同的运行处处不同（Circulation.standings_leave_exchange、Circulation.start_needed）。",
-        "en": "Standings do not fix the exchange, and the exchange fixes standings only from a beginning: in Circulation a circulation and no exchange leave the same standings, and runs with the same moves from different starts differ everywhere (Circulation.standings_leave_exchange, Circulation.start_needed)."
+        "zh": "水平不固定交换，交换只从一个起点固定水平：Circulation 中一次循环与没有交换留下同样的水平，动作相同而起点不同的运行处处不同（Labelled.Circulation.standings_leave_exchange、Labelled.Circulation.start_needed）。",
+        "en": "Standings do not fix the exchange, and the exchange fixes standings only from a beginning: in Circulation a circulation and no exchange leave the same standings, and runs with the same moves from different starts differ everywhere (Labelled.Circulation.standings_leave_exchange, Labelled.Circulation.start_needed)."
       }
     }
   ],
@@ -311,7 +311,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "15caf541249d7cbc99c8e2dd83069225f18dfac154248d9cb03eb16328872775",
+      "sha256": "40e3a36f79faf60560037490d9b849c89349ba9210c42d96fadcca0252004b7c",
       "declarations": [
         "Becoming.withMove_determined_iff",
         "Becoming.closedBy_determined",
@@ -338,7 +338,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
       "declarations": [
         "Becoming.Exchange",
         "Becoming.Exchange.taken",
@@ -351,7 +351,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "e90cc67d33659d78dc348fdbf93defbfb9879414d16c0613656abf102fff3926",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
       "declarations": [
         "Becoming.withMove",
         "Becoming.Run.toWithMove",
@@ -364,11 +364,11 @@
         "Becoming.unlabelled",
         "Becoming.unlabelled_product_le",
         "Becoming.exchange",
-        "Becoming.Circulation.one",
-        "Becoming.Circulation.round",
-        "Becoming.Circulation.idle",
-        "Becoming.Circulation.standings_leave_exchange",
-        "Becoming.Circulation.start_needed",
+        "Becoming.Labelled.Circulation.one",
+        "Becoming.Labelled.Circulation.round",
+        "Becoming.Labelled.Circulation.idle",
+        "Becoming.Labelled.Circulation.standings_leave_exchange",
+        "Becoming.Labelled.Circulation.start_needed",
         "Becoming.Shown",
         "Becoming.Shown.run",
         "Becoming.shown_le_iff",
@@ -391,16 +391,16 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.BalancesOn"
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "role": "proof",
-      "sha256": "92398607078bc1be31412ca2780efbc43473115b1088e4816be447d3b6c277ab",
+      "sha256": "6c5857388eca443bd20f5b411b5ef424b01e54b67b12e3bfefe5c54591db1eae",
       "declarations": [
         "Becoming.Web.Arises"
       ]
@@ -428,7 +428,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "b83ce782e66e6372274efa1ab62fdbb5419b20825f8ee03cdad016dc1750c5bf",
+      "sha256": "fd1d911058d7f5fffe1d139022004de88c586616c5675b61b6848dfd6c2727d9",
       "declarations": [
         "Becoming.Determined"
       ]
@@ -470,13 +470,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448",
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
       "declarations": []
     },
     {
@@ -562,27 +562,33 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Arising",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -602,7 +608,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Joint",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -630,14 +636,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -909,6 +915,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Labelled.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Labelled.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Circulation.idle (now Labelled.Circulation.idle); Circulation.one (now Labelled.Circulation.one); Circulation.round (now Labelled.Circulation.round); Circulation.standings_leave_exchange (now Labelled.Circulation.standings_leave_exchange); Circulation.start_needed (now Labelled.Circulation.start_needed); Generation (now Arising); Generation.lean (now Arising.lean). Proof bindings (Arising.lean, Flow.lean, Joint.lean, Labelled.lean, Unfolding.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Arising.lean, the module Generation renamed Arising; Web.generation_* are Web.embodiedArising_*, Web.Regenerating is Web.ActiveRenewer; statements unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Joint.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Unfolding.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Circulation.idle（现为 Labelled.Circulation.idle）；Circulation.one（现为 Labelled.Circulation.one）；Circulation.round（现为 Labelled.Circulation.round）；Circulation.standings_leave_exchange（现为 Labelled.Circulation.standings_leave_exchange）；Circulation.start_needed（现为 Labelled.Circulation.start_needed）；Generation（现为 Arising）；Generation.lean（现为 Arising.lean）。证明绑定（Arising.lean、Flow.lean、Joint.lean、Labelled.lean、Unfolding.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Arising.lean，模块 Generation 改名为 Arising；Web.generation_* 现为 Web.embodiedArising_*，Web.Regenerating 现为 Web.ActiveRenewer；陈述不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Joint.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Unfolding.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

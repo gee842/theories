@@ -72,9 +72,9 @@
       "declarations": [
         "Becoming.Web.Dependent",
         "Becoming.Web.commute_dependent",
-        "Becoming.Crossing.world",
-        "Becoming.Crossing.split",
-        "Becoming.Crossing.order_registers"
+        "Becoming.Order.Crossing.world",
+        "Becoming.Order.Crossing.split",
+        "Becoming.Order.Crossing.order_registers"
       ]
     },
     {
@@ -83,9 +83,9 @@
       "declarations": [
         "Becoming.Flow.Acting",
         "Becoming.Flow.Commuted.acting",
-        "Becoming.Arising.world",
-        "Becoming.Arising.split",
-        "Becoming.Arising.order_registers"
+        "Becoming.Order.Arising.world",
+        "Becoming.Order.Arising.split",
+        "Becoming.Order.Arising.order_registers"
       ]
     },
     {
@@ -112,10 +112,10 @@
       "zh": "只给两侧而无足迹的 Reorders 可以交换每个包含它们的足迹都相连的交换，这样做破坏活动需要支持与只有活跃者给予：这两个前提恰沿不相连交换的交换而保持。不加前提。",
       "en": "Plain Reorders, its sides given without a footprint, can commute exchanges that every containing footprint joins, and doing so breaks activity needing support and only active relata giving: these two premises carry exactly along commutations of exchanges not joined. No premise is added.",
       "declarations": [
-        "Becoming.Crossing.joined",
-        "Becoming.Crossing.reorders_joined",
-        "Becoming.Arising.joined",
-        "Becoming.Arising.reorders_joined"
+        "Becoming.Order.Crossing.joined",
+        "Becoming.Order.Crossing.reorders_joined",
+        "Becoming.Order.Arising.joined",
+        "Becoming.Order.Arising.reorders_joined"
       ]
     },
     {
@@ -212,8 +212,8 @@
     "Becoming.Reorders",
     "Becoming.Reorders.laws",
     "Becoming.Reorders.totals",
-    "Becoming.Crossing.order_registers",
-    "Becoming.Arising.order_registers",
+    "Becoming.Order.Crossing.order_registers",
+    "Becoming.Order.Arising.order_registers",
     "commutation",
     "交换次序",
     "Mazurkiewicz traces",
@@ -223,8 +223,8 @@
     "Becoming.Footprinted.split",
     "Becoming.Footprinted.reorder_premises",
     "Becoming.Reorders.counts",
-    "Becoming.Crossing.reorders_joined",
-    "Becoming.Arising.reorders_joined",
+    "Becoming.Order.Crossing.reorders_joined",
+    "Becoming.Order.Arising.reorders_joined",
     "footprint",
     "足迹",
     "Becoming.listed_splice",
@@ -291,7 +291,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
       "role": "proof",
-      "sha256": "134440129950054c33acf91a5739f8a965f7b3fd4c1a01c6dde87d6f62433220",
+      "sha256": "f14441de1c2dead8301cf465e364811302a649a945f60309cf4f72b6c33f5876",
       "declarations": [
         "Becoming.Flow.SameExchange",
         "Becoming.Flow.Commuted",
@@ -343,28 +343,28 @@
         "Becoming.Reorders.laws",
         "Becoming.Reorders.totals",
         "Becoming.firstSide",
-        "Becoming.Crossing.act",
-        "Becoming.Crossing.standing",
-        "Becoming.Crossing.web",
-        "Becoming.Crossing.take",
-        "Becoming.Crossing.present",
-        "Becoming.Crossing.flow",
-        "Becoming.Crossing.world",
-        "Becoming.Crossing.balances",
-        "Becoming.Crossing.dependent",
-        "Becoming.Crossing.split",
-        "Becoming.Crossing.order_registers",
-        "Becoming.Arising.act",
-        "Becoming.Arising.standing",
-        "Becoming.Arising.web",
-        "Becoming.Arising.give",
-        "Becoming.Arising.present",
-        "Becoming.Arising.flow",
-        "Becoming.Arising.world",
-        "Becoming.Arising.balances",
-        "Becoming.Arising.acting",
-        "Becoming.Arising.split",
-        "Becoming.Arising.order_registers",
+        "Becoming.Order.Crossing.act",
+        "Becoming.Order.Crossing.standing",
+        "Becoming.Order.Crossing.web",
+        "Becoming.Order.Crossing.take",
+        "Becoming.Order.Crossing.present",
+        "Becoming.Order.Crossing.flow",
+        "Becoming.Order.Crossing.world",
+        "Becoming.Order.Crossing.balances",
+        "Becoming.Order.Crossing.dependent",
+        "Becoming.Order.Crossing.split",
+        "Becoming.Order.Crossing.order_registers",
+        "Becoming.Order.Arising.act",
+        "Becoming.Order.Arising.standing",
+        "Becoming.Order.Arising.web",
+        "Becoming.Order.Arising.give",
+        "Becoming.Order.Arising.present",
+        "Becoming.Order.Arising.flow",
+        "Becoming.Order.Arising.world",
+        "Becoming.Order.Arising.balances",
+        "Becoming.Order.Arising.acting",
+        "Becoming.Order.Arising.split",
+        "Becoming.Order.Arising.order_registers",
         "Becoming.Footprinted",
         "Becoming.Footprinted.world",
         "Becoming.Footprinted.Contains",
@@ -395,16 +395,16 @@
         "Becoming.comings_of_iff",
         "Becoming.ceasings_of_iff",
         "Becoming.Reorders.counts",
-        "Becoming.Crossing.joined",
-        "Becoming.Crossing.reorders_joined",
-        "Becoming.Arising.joined",
-        "Becoming.Arising.reorders_joined"
+        "Becoming.Order.Crossing.joined",
+        "Becoming.Order.Crossing.reorders_joined",
+        "Becoming.Order.Arising.joined",
+        "Becoming.Order.Arising.reorders_joined"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.Acting",
@@ -414,7 +414,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "37c99f4c12d7fca90457cfe43a2a18fb8cc52dbe510e1919d5aa638653ec2ccf",
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79",
       "declarations": [
         "Becoming.Flow.Dissipative"
       ]
@@ -430,7 +430,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "1e0b6616ca3363962d90aa0f33cdd871fa20700e9c5a5f48e88b9f817d5ee546",
+      "sha256": "9362bf5b5fd33c18a818364390f228f7dab080e0df35fcc6d8ce0e85631f1ccd",
       "declarations": [
         "Becoming.Web.Embodied"
       ]
@@ -452,13 +452,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448",
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
       "declarations": []
     },
     {
@@ -534,26 +534,32 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Order",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -567,7 +573,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -771,6 +777,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Dissipation.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Dissipation.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Arising.act (now Order.Arising.act); Arising.acting (now Order.Arising.acting); Arising.balances (now Order.Arising.balances); Arising.flow (now Order.Arising.flow); Arising.give (now Order.Arising.give); Arising.joined (now Order.Arising.joined); Arising.order_registers (now Order.Arising.order_registers); Arising.present (now Order.Arising.present); Arising.reorders_joined (now Order.Arising.reorders_joined); Arising.split (now Order.Arising.split); Arising.standing (now Order.Arising.standing); Arising.web (now Order.Arising.web); Arising.world (now Order.Arising.world); Crossing.act (now Order.Crossing.act); Crossing.balances (now Order.Crossing.balances); Crossing.dependent (now Order.Crossing.dependent); Crossing.flow (now Order.Crossing.flow); Crossing.joined (now Order.Crossing.joined); Crossing.order_registers (now Order.Crossing.order_registers); Crossing.present (now Order.Crossing.present); Crossing.reorders_joined (now Order.Crossing.reorders_joined); Crossing.split (now Order.Crossing.split); Crossing.standing (now Order.Crossing.standing); Crossing.take (now Order.Crossing.take); Crossing.web (now Order.Crossing.web); Crossing.world (now Order.Crossing.world). Proof bindings (Dissipation.lean, Flow.lean, Order.lean, Roles.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Order.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Roles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Arising.act（现为 Order.Arising.act）；Arising.acting（现为 Order.Arising.acting）；Arising.balances（现为 Order.Arising.balances）；Arising.flow（现为 Order.Arising.flow）；Arising.give（现为 Order.Arising.give）；Arising.joined（现为 Order.Arising.joined）；Arising.order_registers（现为 Order.Arising.order_registers）；Arising.present（现为 Order.Arising.present）；Arising.reorders_joined（现为 Order.Arising.reorders_joined）；Arising.split（现为 Order.Arising.split）；Arising.standing（现为 Order.Arising.standing）；Arising.web（现为 Order.Arising.web）；Arising.world（现为 Order.Arising.world）；Crossing.act（现为 Order.Crossing.act）；Crossing.balances（现为 Order.Crossing.balances）；Crossing.dependent（现为 Order.Crossing.dependent）；Crossing.flow（现为 Order.Crossing.flow）；Crossing.joined（现为 Order.Crossing.joined）；Crossing.order_registers（现为 Order.Crossing.order_registers）；Crossing.present（现为 Order.Crossing.present）；Crossing.reorders_joined（现为 Order.Crossing.reorders_joined）；Crossing.split（现为 Order.Crossing.split）；Crossing.standing（现为 Order.Crossing.standing）；Crossing.take（现为 Order.Crossing.take）；Crossing.web（现为 Order.Crossing.web）；Crossing.world（现为 Order.Crossing.world）。证明绑定（Dissipation.lean、Flow.lean、Order.lean、Roles.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Order.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Roles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

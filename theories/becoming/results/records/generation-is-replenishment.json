@@ -26,7 +26,7 @@
       "en": "Its arising therefore replenishes every family containing it, and where embodied members of a family arise at arbitrarily late steps, the family's replenishment recurs at arbitrarily late steps, whatever is taken: generation carries the requirement itself, not through the uptake it brings.",
       "declarations": [
         "Becoming.Web.Embodied.replenishes",
-        "Becoming.Web.generation_needs_replenishment"
+        "Becoming.Web.embodiedArising_needs_replenishment"
       ]
     },
     {
@@ -36,14 +36,14 @@
         "Becoming.Flow.DissipatesOn.takes_of_gives",
         "Becoming.Web.Embodied.arising_lowers_on",
         "Becoming.Web.Embodied.arising_lowers",
-        "Becoming.Web.generation_not_recurring_on"
+        "Becoming.Web.embodiedArising_not_recurring_on"
       ]
     },
     {
       "zh": "所以在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不一直封闭：从任一步起，此后有参与的形成与其外的关系项交换，这不能被否证。",
       "en": "So under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: that after any step some formation taking part exchanges with a relatum outside it cannot be refuted.",
       "declarations": [
-        "Becoming.Web.generation_opens"
+        "Becoming.Web.embodiedArising_opens"
       ]
     },
     {
@@ -58,15 +58,15 @@
       "zh": "家族从某步起被围住（某个包含它的不重复有限家族跨每步封闭）时，它不从任何一步起一直向内：从任一步起，此后有关系项给予家族而从家族之外取用，这不能被否证；有限个关系项就是全部时，体现的关系项不在任意晚的步生起。",
       "en": "Where the family is enclosed around from some step on (some finite family without repetition containing it closed across each step), it is inward from no step on: that after any step some relatum gives to the family and takes from beyond it cannot be refuted; if finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps.",
       "declarations": [
-        "Becoming.Web.generation_draws_in",
-        "Becoming.Web.generation_not_recurring"
+        "Becoming.Web.embodiedArising_draws_in",
+        "Becoming.Web.embodiedArising_not_recurring"
       ]
     },
     {
       "zh": "于是生成不复现的一般定律的前提（一个量从不上升，每次生起都使它下降），对被耗散家族中体现成员的生起，由平衡、耗散与体现推出。",
       "en": "The premise of the general law that generation does not recur (a quantity that never rises and is lowered by every arising) thus follows, for the arisings of embodied members of a family dissipated on, from balance, dissipation and embodiment.",
       "declarations": [
-        "Becoming.Web.dissipation_generation_not_recurring"
+        "Becoming.Web.dissipation_arising_not_recurring"
       ]
     },
     {
@@ -166,10 +166,10 @@
         "Becoming.Flow.rising_draws_in_from",
         "Becoming.Web.Embodied.given_of_arises_at",
         "Becoming.Web.Embodied.replenishes_at",
-        "Becoming.Web.generation_needs_replenishment_from",
+        "Becoming.Web.embodiedArising_needs_replenishment_from",
         "Becoming.Web.Embodied.arising_lowers_at",
-        "Becoming.Web.generation_not_recurring_from",
-        "Becoming.Web.generation_draws_in_from"
+        "Becoming.Web.embodiedArising_not_recurring_from",
+        "Becoming.Web.embodiedArising_draws_in_from"
       ]
     }
   ],
@@ -195,8 +195,8 @@
       "en": "Dissipation (Dissipative, see no-finite-part-bears-taking) is a physical premise, used only for the conclusions under dissipation; it constrains only steps at which some finite family is closed (Spray)."
     },
     {
-      "zh": "generation_opens 的结论（家族不封闭）可以由与家族无关的交换满足（SprayShuttle），所以“家族须从其外汲入”另需家族被围住（Around：某个包含它的不重复有限家族跨每步封闭；generation_draws_in）。",
-      "en": "The conclusion of generation_opens, that the family is not closed, can be met by exchange unrelated to the family (SprayShuttle), so that the family must draw in from beyond it needs, in addition, the family enclosed around (Around: some finite family without repetition containing it closed across each step; generation_draws_in)."
+      "zh": "embodiedArising_opens 的结论（家族不封闭）可以由与家族无关的交换满足（SprayShuttle），所以“家族须从其外汲入”另需家族被围住（Around：某个包含它的不重复有限家族跨每步封闭；embodiedArising_draws_in）。",
+      "en": "The conclusion of embodiedArising_opens, that the family is not closed, can be met by exchange unrelated to the family (SprayShuttle), so that the family must draw in from beyond it needs, in addition, the family enclosed around (Around: some finite family without repetition containing it closed across each step; embodiedArising_draws_in)."
     }
   ],
   "does_not_show": [
@@ -264,8 +264,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "generation_opens 的结论可以由与家族无关的交换满足（SprayShuttle.spray_shuttle、opens_anyway）：两方如 Shuttle 来回传递，一个汇每步从一个辅助关系项取一份又还给它；汇与不断新的关系项交换，没有一步被封闭，耗散空成立；两方在任意晚的步生起，给予家族的关系项只从家族取用，汇从不与两方交换，家族的存量恒为一，而家族从任何一步起都不封闭；没有一步围住它（独立审查 K1）。",
-        "en": "The conclusion of generation_opens can be met by exchange unrelated to the family (SprayShuttle.spray_shuttle, opens_anyway): two sides hand one standing back and forth as in Shuttle, while a sink takes one unit from an auxiliary relatum at every step and gives it back; the sink exchanges with ever new relata, so no step is enclosed and dissipation holds vacuously; the sides arise at arbitrarily late steps, every relatum giving to the family takes only from it, the sink never exchanges with the sides, and the family's stock is one at every step, yet the family is not closed from any step on; no step encloses it around (independent review, K1)."
+        "zh": "embodiedArising_opens 的结论可以由与家族无关的交换满足（SprayShuttle.spray_shuttle、opens_anyway）：两方如 Shuttle 来回传递，一个汇每步从一个辅助关系项取一份又还给它；汇与不断新的关系项交换，没有一步被封闭，耗散空成立；两方在任意晚的步生起，给予家族的关系项只从家族取用，汇从不与两方交换，家族的存量恒为一，而家族从任何一步起都不封闭；没有一步围住它（独立审查 K1）。",
+        "en": "The conclusion of embodiedArising_opens can be met by exchange unrelated to the family (SprayShuttle.spray_shuttle, opens_anyway): two sides hand one standing back and forth as in Shuttle, while a sink takes one unit from an auxiliary relatum at every step and gives it back; the sink exchanges with ever new relata, so no step is enclosed and dissipation holds vacuously; the sides arise at arbitrarily late steps, every relatum giving to the family takes only from it, the sink never exchanges with the sides, and the family's stock is one at every step, yet the family is not closed from any step on; no step encloses it around (independent review, K1)."
       }
     },
     {
@@ -304,18 +304,18 @@
   "aliases": [
     "Becoming.Web.Embodied.given_of_arises",
     "Becoming.Web.Embodied.replenishes",
-    "Becoming.Web.generation_needs_replenishment",
+    "Becoming.Web.embodiedArising_needs_replenishment",
     "Becoming.Flow.DissipatesOn.takes_of_gives",
     "Becoming.Web.Embodied.arising_lowers",
-    "Becoming.Web.generation_opens",
-    "Becoming.Web.generation_not_recurring",
+    "Becoming.Web.embodiedArising_opens",
+    "Becoming.Web.embodiedArising_not_recurring",
     "Becoming.Shuttle.shuttle",
     "Becoming.Throughput.throughput",
     "Becoming.Throughput.frontier",
     "Becoming.Flicker.flicker",
     "Becoming.Brood.not_dissipative",
-    "Becoming.Web.generation_not_recurring_on",
-    "Becoming.Web.generation_draws_in",
+    "Becoming.Web.embodiedArising_not_recurring_on",
+    "Becoming.Web.embodiedArising_draws_in",
     "Becoming.SprayShuttle.spray_shuttle",
     "Becoming.Throughput.draws_in",
     "Becoming.Web.ComesToStand",
@@ -405,8 +405,8 @@
       "id": "becoming-renewal-reading",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "generation_opens 用 falls_not_recurring。",
-        "en": "generation_opens uses falls_not_recurring."
+        "zh": "embodiedArising_opens 用 falls_not_recurring。",
+        "en": "embodiedArising_opens uses falls_not_recurring."
       },
       "interface": {
         "output": {
@@ -429,8 +429,8 @@
     {
       "id": "unceasing-generation-needs-renewal",
       "detail": {
-        "zh": "回答第五次审查 I3：该记录的流形式中生起只经由取用起作用；这里体现的生起本身承担要求。该记录的 dissipation_generation_not_recurring 所设的物理前提，对封闭家族中体现成员的生起被推出。",
-        "en": "Answers I3 of the fifth review: in that record's flow form arising works only through uptake, while here embodied arising carries the requirement itself. The physical premise supplied to that record's dissipation_generation_not_recurring is derived for the arisings of embodied members of a closed family."
+        "zh": "回答第五次审查 I3：该记录的流形式中生起只经由取用起作用；这里体现的生起本身承担要求。该记录的 dissipation_arising_not_recurring 所设的物理前提，对封闭家族中体现成员的生起被推出。",
+        "en": "Answers I3 of the fifth review: in that record's flow form arising works only through uptake, while here embodied arising carries the requirement itself. The physical premise supplied to that record's dissipation_arising_not_recurring is derived for the arisings of embodied members of a closed family."
       }
     },
     {
@@ -459,16 +459,16 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "1e0b6616ca3363962d90aa0f33cdd871fa20700e9c5a5f48e88b9f817d5ee546",
+      "sha256": "9362bf5b5fd33c18a818364390f228f7dab080e0df35fcc6d8ce0e85631f1ccd",
       "declarations": [
         "Becoming.Web.Embodied.comesToStand",
         "Becoming.Web.Embodied.coming",
         "Becoming.Web.Embodied.given_of_arises",
         "Becoming.Web.Embodied.replenishes",
-        "Becoming.Web.generation_needs_replenishment",
+        "Becoming.Web.embodiedArising_needs_replenishment",
         "Becoming.Web.Embodied.arising_lowers",
-        "Becoming.Web.generation_opens",
-        "Becoming.Web.generation_not_recurring",
+        "Becoming.Web.embodiedArising_opens",
+        "Becoming.Web.embodiedArising_not_recurring",
         "Becoming.Shuttle.even",
         "Becoming.Shuttle.holder",
         "Becoming.Shuttle.stands",
@@ -509,8 +509,8 @@
         "Becoming.Brood.brood",
         "Becoming.Brood.not_dissipative",
         "Becoming.Web.Embodied.arising_lowers_on",
-        "Becoming.Web.generation_not_recurring_on",
-        "Becoming.Web.generation_draws_in",
+        "Becoming.Web.embodiedArising_not_recurring_on",
+        "Becoming.Web.embodiedArising_draws_in",
         "Becoming.Throughput.around",
         "Becoming.Throughput.draws_in",
         "Becoming.SprayShuttle.Relatum",
@@ -532,10 +532,10 @@
         "Becoming.SprayShuttle.taking_opens_anyway",
         "Becoming.Web.Embodied.given_of_arises_at",
         "Becoming.Web.Embodied.replenishes_at",
-        "Becoming.Web.generation_needs_replenishment_from",
+        "Becoming.Web.embodiedArising_needs_replenishment_from",
         "Becoming.Web.Embodied.arising_lowers_at",
-        "Becoming.Web.generation_not_recurring_from",
-        "Becoming.Web.generation_draws_in_from"
+        "Becoming.Web.embodiedArising_not_recurring_from",
+        "Becoming.Web.embodiedArising_draws_in_from"
       ]
     },
     {
@@ -560,7 +560,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "37c99f4c12d7fca90457cfe43a2a18fb8cc52dbe510e1919d5aa638653ec2ccf",
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79",
       "declarations": [
         "Becoming.Flow.standing_lowers_on",
         "Becoming.Flow.standing_lowers",
@@ -592,7 +592,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
       "declarations": [
         "Becoming.Web.ComesToStand",
         "Becoming.Flow.Balances.standing_given",
@@ -629,28 +629,28 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
       "declarations": [
         "Becoming.Flow",
         "Becoming.total"
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "role": "proof",
-      "sha256": "92398607078bc1be31412ca2780efbc43473115b1088e4816be447d3b6c277ab",
+      "sha256": "6c5857388eca443bd20f5b411b5ef424b01e54b67b12e3bfefe5c54591db1eae",
       "declarations": [
         "Becoming.Web.Arises",
         "Becoming.Web.Unceasing",
         "Becoming.Web.stock",
-        "Becoming.Web.dissipation_generation_not_recurring",
+        "Becoming.Web.dissipation_arising_not_recurring",
         "Becoming.Web.Rises"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
+      "sha256": "d6981e453120fd09887ab35e6d67e6703eda58368afde9c185912afdb0eaff65",
       "declarations": [
         "Becoming.Distinct"
       ]
@@ -680,7 +680,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
       "declarations": []
     },
     {
@@ -753,26 +753,32 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -786,7 +792,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1187,6 +1193,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Dissipation.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged; Renewal.lean, imports Becoming.Amounts; falls_not_recurring proved as the whole-number instance of Amounts.rests, statement unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Dissipation.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变；Renewal.lean，导入 Becoming.Amounts；falls_not_recurring 作为 Amounts.rests 的整数实例证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Generation.lean (now Arising.lean); Web.dissipation_generation_not_recurring (now Web.dissipation_arising_not_recurring); Web.generation_draws_in (now Web.embodiedArising_draws_in); Web.generation_draws_in_from (now Web.embodiedArising_draws_in_from); Web.generation_needs_replenishment (now Web.embodiedArising_needs_replenishment); Web.generation_needs_replenishment_from (now Web.embodiedArising_needs_replenishment_from); Web.generation_not_recurring (now Web.embodiedArising_not_recurring); Web.generation_not_recurring_from (now Web.embodiedArising_not_recurring_from); Web.generation_not_recurring_on (now Web.embodiedArising_not_recurring_on); Web.generation_opens (now Web.embodiedArising_opens); dissipation_generation_not_recurring (now dissipation_arising_not_recurring); generation_draws_in (now embodiedArising_draws_in); generation_opens (now embodiedArising_opens). Proof bindings (Dissipation.lean, Flow.lean, Roles.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Arising.lean, the module Generation renamed Arising; Web.generation_* are Web.embodiedArising_*, Web.Regenerating is Web.ActiveRenewer; statements unchanged; Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Population.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Roles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Generation.lean（现为 Arising.lean）；Web.dissipation_generation_not_recurring（现为 Web.dissipation_arising_not_recurring）；Web.generation_draws_in（现为 Web.embodiedArising_draws_in）；Web.generation_draws_in_from（现为 Web.embodiedArising_draws_in_from）；Web.generation_needs_replenishment（现为 Web.embodiedArising_needs_replenishment）；Web.generation_needs_replenishment_from（现为 Web.embodiedArising_needs_replenishment_from）；Web.generation_not_recurring（现为 Web.embodiedArising_not_recurring）；Web.generation_not_recurring_from（现为 Web.embodiedArising_not_recurring_from）；Web.generation_not_recurring_on（现为 Web.embodiedArising_not_recurring_on）；Web.generation_opens（现为 Web.embodiedArising_opens）；dissipation_generation_not_recurring（现为 dissipation_arising_not_recurring）；generation_draws_in（现为 embodiedArising_draws_in）；generation_opens（现为 embodiedArising_opens）。证明绑定（Dissipation.lean、Flow.lean、Roles.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Arising.lean，模块 Generation 改名为 Arising；Web.generation_* 现为 Web.embodiedArising_*，Web.Regenerating 现为 Web.ActiveRenewer；陈述不变；Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Population.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Roles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

@@ -101,10 +101,10 @@
         "Becoming.lumped_iff_singleValued",
         "Becoming.reading_le",
         "Becoming.rest_differs_of_varied",
-        "Becoming.Coupling.zero_add",
-        "Becoming.Coupling.succ_add",
-        "Becoming.Coupling.succ_sub_succ",
-        "Becoming.Coupling.add_sub_left",
+        "Becoming.MoveFormation.zero_add",
+        "Becoming.MoveFormation.succ_add",
+        "Becoming.MoveFormation.succ_sub_succ",
+        "Becoming.MoveFormation.add_sub_left",
         "Becoming.Run.keepHistory_formed"
       ]
     },
@@ -124,9 +124,9 @@
       "zh": "见证：同一段进程由部分的动作之律与其余的动作之律容许，两者只在进程不到之处不同；动作对其律不起作用的部分对其余封闭，而它的动作是其余的；部分不动而动作交替时，部分不形成动作；由两者是否不同形成的动作不由任一方单独形成。",
       "en": "Witnesses: one course admitted by the part's law of the move and by the rest's, which differ only where it never goes; a part to whose law the move makes no difference, closed against the rest while its move is the rest's; a part standing still while the move alternates, which does not form it; a move formed by whether the two differ, formed by neither alone.",
       "declarations": [
-        "Becoming.Coupling.alt",
-        "Becoming.Coupling.ne_not",
-        "Becoming.Coupling.alt_ne",
+        "Becoming.MoveFormation.alt",
+        "Becoming.MoveFormation.ne_not",
+        "Becoming.MoveFormation.alt_ne",
         "Becoming.TwoClocks.byPart",
         "Becoming.TwoClocks.byRest",
         "Becoming.TwoClocks.together",
@@ -190,7 +190,7 @@
   ],
   "counterexamples": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveFormation.lean",
       "detail": {
         "zh": "Parity：动作是部分与其余是否不同；沿进程它不经部分的配置形成，也不经其余的配置形成，只经联合配置形成：并非每个动作都是某一方的。",
         "en": "Parity: the move is whether the part and the rest differ; along the course it is formed through neither the part's configurations nor the rest's, only through the joint configuration: not every move is one side's."
@@ -206,8 +206,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T153317.850533Z）：Becoming.Coupling 的 72 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §131；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T153317.850533Z): the 72 declarations of Becoming.Coupling, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 131; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T153317.850533Z）：Becoming.MoveFormation 的 72 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §131；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T153317.850533Z): the 72 declarations of Becoming.MoveFormation, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 131; not independently reviewed."
   },
   "next_delta": {
     "zh": "部分在动作中的份额在本记录的运行上陈述；反事实之动作经部分自身的耦合读出；非确定之律的后继由什么形成；连续时间；独立审查。",
@@ -217,7 +217,7 @@
     "zh": "Ren 2026-10-12 对律与历史是同一展开的两种读法：“yes, i do agree with your reading, there are no two realities”；2026-10-14 对从关系开始的重建：“please, finish all”。本结果回答 process-and-frame-as-readings 与 counterfactual-is-the-course 的 next_delta：动作何时在展开之内形成（总可如此读，其余形成它），何时是部分自己的（恰当它经部分的配置形成；一段进程只在配置复现而动作不同之处固定这一点）。读法（AI 的，依 Ren 的交托采用）：行与受是同一个动作的两面；输入是其余的配置，外来的标签是表示略去其形成的动作；动作是谁的是关于未走之进程的主张；读得越多，越多是自己的；封闭不是自己的；所做之事的新需要开放或增长。",
     "en": "Ren, 12 October 2026, on law and history as one unfolding read two ways: “yes, i do agree with your reading, there are no two realities”; 14 October 2026, on the relation-first re-founding: “please, finish all”. This result answers the next_delta of process-and-frame-as-readings and counterfactual-is-the-course: when a move is formed within the unfolding (it can always be read so, its rest forming it) and when it is the part's own (exactly where it is formed through the part's configuration; one course fixes this only where a configuration recurs with the move varied). Readings (the AI's, adopted on Ren's delegation): acting and undergoing are one move read from its two sides; an input is the rest's configuration, and a label from outside is a move whose forming the representation leaves out; whose move it is, is a claim about courses not taken; reading more, more is one's own; closed is not own; novelty in what is done needs openness or growth."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveFormation.lean",
   "aliases": [
     "where a move is formed",
     "动作在哪里形成",
@@ -469,9 +469,9 @@
   ],
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveFormation.lean",
       "role": "proof",
-      "sha256": "aea2cb3ab18e3996f5564a87440f534dc786b765767ed8e2051f386963fc8c6d",
+      "sha256": "be0922de76e191de597c71bc3ba4c5f4395b05b92b4152e6a8e6ba0149cd5c03",
       "declarations": [
         "Becoming.coupled",
         "Becoming.Run.part",
@@ -525,15 +525,15 @@
         "Becoming.policyUpto_taken",
         "Becoming.no_policy_upto_iff",
         "Becoming.rest_differs_of_varied",
-        "Becoming.Coupling.zero_add",
-        "Becoming.Coupling.succ_add",
-        "Becoming.Coupling.succ_sub_succ",
-        "Becoming.Coupling.add_sub_left",
+        "Becoming.MoveFormation.zero_add",
+        "Becoming.MoveFormation.succ_add",
+        "Becoming.MoveFormation.succ_sub_succ",
+        "Becoming.MoveFormation.add_sub_left",
         "Becoming.Run.keepHistory_formed",
         "Becoming.ExchangeLaw.ofMoves_lumped_stage",
-        "Becoming.Coupling.alt",
-        "Becoming.Coupling.ne_not",
-        "Becoming.Coupling.alt_ne",
+        "Becoming.MoveFormation.alt",
+        "Becoming.MoveFormation.ne_not",
+        "Becoming.MoveFormation.alt_ne",
         "Becoming.TwoClocks.byPart",
         "Becoming.TwoClocks.byRest",
         "Becoming.TwoClocks.together",
@@ -567,7 +567,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "b83ce782e66e6372274efa1ab62fdbb5419b20825f8ee03cdad016dc1750c5bf",
+      "sha256": "fd1d911058d7f5fffe1d139022004de88c586616c5675b61b6848dfd6c2727d9",
       "declarations": [
         "Becoming.Determined"
       ]
@@ -575,7 +575,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "68782bae82a196b91e71f22c593fcc58ea3260b503d94cf1bc8acb15f9d65157",
+      "sha256": "56b06dd533e36a4765c25fe57ed6e52f82bd8f63101aebc6fdf0cf2f5dfb05ca",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.trajectory"
@@ -603,7 +603,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "15caf541249d7cbc99c8e2dd83069225f18dfac154248d9cb03eb16328872775",
+      "sha256": "40e3a36f79faf60560037490d9b849c89349ba9210c42d96fadcca0252004b7c",
       "declarations": [
         "Becoming.Fork.label_couples"
       ]
@@ -611,7 +611,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "e90cc67d33659d78dc348fdbf93defbfb9879414d16c0613656abf102fff3926",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
       "declarations": [
         "Becoming.closedBy"
       ]
@@ -672,12 +672,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md",
@@ -759,13 +759,19 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Coupling",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveFormation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.MoveFormation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -778,14 +784,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Joint",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -806,7 +812,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -848,7 +854,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1085,6 +1091,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Counterfactual.lean, Labelled.lean, Readout.lean, Recurrence.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; Readout.lean, Readout.image removed for Image of Becoming.Mechanism; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Counterfactual.lean、Labelled.lean、Readout.lean、Recurrence.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；Readout.lean，删去 Readout.image，改用 Becoming.Mechanism 的 Image；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Coupling (now MoveFormation); Coupling.add_sub_left (now MoveFormation.add_sub_left); Coupling.alt (now MoveFormation.alt); Coupling.alt_ne (now MoveFormation.alt_ne); Coupling.lean (now MoveFormation.lean); Coupling.ne_not (now MoveFormation.ne_not); Coupling.succ_add (now MoveFormation.succ_add); Coupling.succ_sub_succ (now MoveFormation.succ_sub_succ); Coupling.zero_add (now MoveFormation.zero_add). Proof bindings (Joint.lean, Labelled.lean, MoveFormation.lean, Recurrence.lean, Unfolding.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Joint.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; MoveFormation.lean, the module and namespace Coupling renamed MoveFormation; statements unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Unfolding.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Coupling（现为 MoveFormation）；Coupling.add_sub_left（现为 MoveFormation.add_sub_left）；Coupling.alt（现为 MoveFormation.alt）；Coupling.alt_ne（现为 MoveFormation.alt_ne）；Coupling.lean（现为 MoveFormation.lean）；Coupling.ne_not（现为 MoveFormation.ne_not）；Coupling.succ_add（现为 MoveFormation.succ_add）；Coupling.succ_sub_succ（现为 MoveFormation.succ_sub_succ）；Coupling.zero_add（现为 MoveFormation.zero_add）。证明绑定（Joint.lean、Labelled.lean、MoveFormation.lean、Recurrence.lean、Unfolding.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Joint.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；MoveFormation.lean，模块与命名空间 Coupling 改名为 MoveFormation；陈述不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Unfolding.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

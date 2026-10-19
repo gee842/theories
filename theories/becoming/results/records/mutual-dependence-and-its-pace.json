@@ -55,7 +55,7 @@
       "zh": "在每步都成立的 m + 1 个耦合构成的回路上，链每步前进一个耦合，回路每 m + 1 步把到达其条件者送回；R 周之后，那里所携带的量（能到达的最大差别）至少是原先到达者的 2^R 倍，沿每步都成立的耦合往下游的每个条件亦然。",
       "declarations": [
         "Becoming.CoupledAlways.chainInTime",
-        "Becoming.returns_of_coupledAlways",
+        "Becoming.roundTrip_of_coupledAlways",
         "Becoming.carried_pow_around",
         "Becoming.carried_pow_downstream"
       ]
@@ -247,8 +247,8 @@
       "id": "how-often-couplings-act",
       "relation": "formal-reuse",
       "detail": {
-        "en": "Reuses carried_returns, carried_le_count, Frequency.count_always, ChainInTime, Returns and carried_along_in_time of Becoming.Frequency.",
-        "zh": "复用 Becoming.Frequency 的 carried_returns、carried_le_count、Frequency.count_always、ChainInTime、Returns 与 carried_along_in_time。"
+        "en": "Reuses carried_roundTrip, carried_le_count, Frequency.count_always, ChainInTime, Returns and carried_along_in_time of Becoming.Frequency.",
+        "zh": "复用 Becoming.Frequency 的 carried_roundTrip、carried_le_count、Frequency.count_always、ChainInTime、Returns 与 carried_along_in_time。"
       },
       "interface": {
         "output": {
@@ -351,10 +351,10 @@
         "Becoming.exponential_around",
         "Becoming.others_bounded",
         "Becoming.pow_le_drawnBefore",
-        "Becoming.returns_of_coupledAlways",
+        "Becoming.roundTrip_of_coupledAlways",
         "Becoming.share_ratio_pow"
       ],
-      "sha256": "5b737ea7b7fb5e4799f36200ced5f5078d12b4aa13d8c68475e0fd6a15cf8ca7"
+      "sha256": "0d7d9d0358fd9618f79f9bb1ed4f775a2675ea8d83b21a1dc955311438ddff66"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
@@ -379,11 +379,11 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
       "role": "proof",
       "declarations": [
-        "Becoming.carried_returns",
+        "Becoming.carried_roundTrip",
         "Becoming.carried_le_count",
         "Becoming.carried_along_in_time"
       ],
-      "sha256": "27ae3aed2fa0079d056b5c81702c1d242d87e72e39daa94a40e49351c649491e"
+      "sha256": "77f1f6946de52b2eee15e9685d1ff1bbf244eb86a4f435e494f313da762d7ef8"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
@@ -402,33 +402,39 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "8439768c3368a26997ec7539eb9e1dd889f7098b830eb7943e89df96b857c7b3"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "fdc6d36933075d29deb11ca8e31ee2553912d39cd11275400c0c5886494b8c0e"
+      "sha256": "4f2053c41e5fb4d73494c83dbf5046a42adfb62ad4685f1a6c758e72542d1a38"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "21700e33ed207345eeda2606d1ef5504e43359083caa84fcf8df855a4b7b3c94"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "theories/becoming/OPENING.md",
       "role": "provenance",
-      "sha256": "8c4a71ee3a59d034df85e2a962144016be0329b5102ef12989d2bfce1eb50196"
+      "sha256": "81631c941fe67689c7bfddce470dcc0e708db1e1086083e3b8199dc4461124f9"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-entangled-mutual-dependence.md",
       "role": "provenance",
       "sha256": "e8d86f98ad9435b3420f92bb5e92454dd974c85119e674310a3b5ff1c058506e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MutualDependence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T144846.235357Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.MutualDependence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -482,6 +488,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 220 added; OPENING.md, footnote [^conditions] cites Becoming.Amounts and the rest theorem itself, proved from the law; the body is unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 220 节；OPENING.md，脚注 [^conditions] 引 Becoming.Amounts 与由此律证明的停息定理本身；正文不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: carried_returns (now carried_roundTrip); returns_of_coupledAlways (now roundTrip_of_coupledAlways). Proof bindings (MutualDependence.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: DELEGATED-CHOICES.md, names follow the R30 rename table; Frequency.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; MutualDependence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; OPENING.md, the footnotes name the renamed declarations; the body is unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：carried_returns（现为 carried_roundTrip）；returns_of_coupledAlways（现为 roundTrip_of_coupledAlways）。证明绑定（MutualDependence.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：DELEGATED-CHOICES.md，名称随 R30 改名表；Frequency.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；MutualDependence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；OPENING.md，脚注改用改名后的声明名；正文不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

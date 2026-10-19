@@ -153,7 +153,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
       "role": "proof",
-      "sha256": "b01d03a21e27823e6dedc1f52cd590b686b23a279187f0346518abac47c29117",
+      "sha256": "d696cc2fa355c252b0e97be25539ac0a9c4d22e88732ab09e6c900b7dd5928fc",
       "declarations": [
         "Becoming.ReferencePlan.flip",
         "Becoming.ReferencePlan.flip_twice",
@@ -181,7 +181,7 @@
         "Becoming.ReferencePlan.propose_from_mismatch",
         "Becoming.ReferencePlan.propose_without_mismatch",
         "Becoming.ReferencePlan.checked_pair_correct",
-        "Becoming.ReferencePlan.Alike",
+        "Becoming.ReferencePlan.AgreeOn",
         "Becoming.ReferencePlan.added_keeps",
         "Becoming.ReferencePlan.old_selections_remain",
         "Becoming.ReferencePlan.choice_at_contact",
@@ -277,7 +277,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
       "role": "proof",
-      "sha256": "aec58a5e44bb81a651d90cce8e6fd33c216f10f51f67fd024ab234b002091acd",
+      "sha256": "4dfefe2395300f60b0f99bec0a73cb428151076f5679ccef270256c91f7aa064",
       "declarations": []
     },
     {
@@ -301,7 +301,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Contacts.lean",
       "role": "proof",
-      "sha256": "8c3bd357368ab209b4a3606de99d8b005223c5d4889dc745399be9007681b008",
+      "sha256": "9604105c4325866e3308f0a4eda15693d4589aa6878fef032c207b1c4ffc903e",
       "declarations": [
         "Becoming.Contacts.keeps_iff_retains",
         "Becoming.Contacts.added_gains",
@@ -355,19 +355,25 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ReferencePlan",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Contacts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Contacts",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -542,6 +548,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: ReferencePlan.added_keeps_of_law (now ReferencePlan.added_keeps); ReferencePlan.new_contact_choice_of_law (now ReferencePlan.new_contact_choice); ReferencePlan.trace_conserves_of_law (now ReferencePlan.trace_conserves). Proof bindings (ReferencePlan.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: ReferencePlan.lean, added_keeps, new_contact_choice and trace_conserves carry the proofs through the laws; their _of_law twins removed, statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：ReferencePlan.added_keeps_of_law（现为 ReferencePlan.added_keeps）；ReferencePlan.new_contact_choice_of_law（现为 ReferencePlan.new_contact_choice）；ReferencePlan.trace_conserves_of_law（现为 ReferencePlan.trace_conserves）。证明绑定（ReferencePlan.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：ReferencePlan.lean，added_keeps、new_contact_choice 与 trace_conserves 承载经律的证明；其 _of_law 孪生删去，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: ReferencePlan.Alike (now ReferencePlan.AgreeOn). Proof bindings (Contacts.lean, ReferencePlan.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Contacts.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ReferencePlan.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Revision.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：ReferencePlan.Alike（现为 ReferencePlan.AgreeOn）。证明绑定（Contacts.lean、ReferencePlan.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Contacts.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ReferencePlan.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Revision.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     }
   ]
 }

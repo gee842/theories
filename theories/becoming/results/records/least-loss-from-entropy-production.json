@@ -199,7 +199,7 @@
       "id": "entropy-history-and-record",
       "relation": "formal-reuse",
       "detail": {
-        "en": "Reuses Flow.residue, Flow.Gainless, Flow.dissipatesOn_iff_conserved and Passing (Passing.lossless, Passing.passes); the exergy destroyed is the residue counted in units."
+        "en": "Reuses Flow.residue, Flow.Gainless, Flow.dissipatesOn_iff_conserved and Passing (Passing.conserving, Passing.passes); the exergy destroyed is the residue counted in units."
       }
     },
     {
@@ -285,19 +285,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "role": "statement",
-      "sha256": "4ee06476e0c463b085124e253cdac10eab612e114179a7774e95183e34b4a72b",
+      "sha256": "74d044668c508278200b0afc0c01de558fcc298a12ce62f8ecb3666b0f260a04",
       "declarations": [
         "Becoming.Flow.residue",
         "Becoming.Flow.Gainless",
         "Becoming.Flow.dissipatesOn_iff_conserved",
         "Becoming.Passing.passes",
-        "Becoming.Passing.lossless"
+        "Becoming.Passing.conserving"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "statement",
-      "sha256": "37c99f4c12d7fca90457cfe43a2a18fb8cc52dbe510e1919d5aa638653ec2ccf",
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79",
       "declarations": [
         "Becoming.Flow.Dissipative",
         "Becoming.Flow.ClosedAt",
@@ -334,6 +334,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Passing.lossless (now Passing.conserving). Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Entropy.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Passing.lossless（现为 Passing.conserving）。读过改动后重新指向：Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Entropy.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     }
   ],
   "text_versions": []

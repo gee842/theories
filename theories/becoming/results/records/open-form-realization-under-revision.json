@@ -53,8 +53,8 @@
       "id": "positive-ground-open-futures",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "positive_ground_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 generation_by_bound 输出送入其形成前提。",
-        "en": "positive_ground_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes generation_by_bound output into its formation premise."
+        "zh": "securesNewContent_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 newContent_by_bound 输出送入其形成前提。",
+        "en": "securesNewContent_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes newContent_by_bound output into its formation premise."
       },
       "interface": {
         "output": {
@@ -62,8 +62,8 @@
           "en": "Under G0, actual new generation in each history supplies some new positive ground per history without one fixed form."
         },
         "input": {
-          "zh": "新组合的最后一步需要把有限界限内的逐历史生成见证传递为正面根据；generation_by_bound 已提供旧定理所需的 formed 输入。",
-          "en": "The final step consumes the inherited inference to turn per-history bounded-generation witnesses into positive ground; generation_by_bound supplies its required formed input."
+          "zh": "新组合的最后一步需要把有限界限内的逐历史生成见证传递为正面根据；newContent_by_bound 已提供旧定理所需的 formed 输入。",
+          "en": "The final step consumes the inherited inference to turn per-history bounded-generation witnesses into positive ground; newContent_by_bound supplies its required formed input."
         },
         "conditions": {
           "zh": "同一 admitted、before、boundedInventory 和显式 G0；实际执行、当前下降、交接与生成对应未被取消。",
@@ -76,8 +76,8 @@
       "id": "one-axiom-yields-g0",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "P89 调用 inventory_g0_of_unrestricted 与 g0_of_unrestricted，补齐旧正面根据的正式实例与共同运行上的形式。",
-        "en": "P89 calls inventory_g0_of_unrestricted and g0_of_unrestricted to complete the exact old positive-ground instance and its form on a shared run."
+        "zh": "P89 调用 inventory_g0_of_unrestricted 与 livingSignificance_of_unrestricted，补齐旧正面根据的正式实例与共同运行上的形式。",
+        "en": "P89 calls inventory_g0_of_unrestricted and livingSignificance_of_unrestricted to complete the exact old positive-ground instance and its form on a shared run."
       },
       "interface": {
         "output": {
@@ -85,8 +85,8 @@
           "en": "Relevance read from significance satisfies G0 under Unrestricted."
         },
         "input": {
-          "zh": "原 positive_ground_by_bound 所需的 G0，以及共同 Frame 中新实现取得 relevance 的条件。",
-          "en": "The G0 premise of the original positive_ground_by_bound and the premise giving relevance to novel realization in the shared Frame."
+          "zh": "原 securesNewContent_by_bound 所需的 G0，以及共同 Frame 中新实现取得 relevance 的条件。",
+          "en": "The G0 premise of the original securesNewContent_by_bound and the premise giving relevance to novel realization in the shared Frame."
         },
         "conditions": {
           "zh": "同一有界清单、同一新形成见证、原执行与交接条件；Unrestricted 保持显式。",
@@ -272,11 +272,11 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
       "role": "proof",
-      "sha256": "070e71ed2c96012eff00bbdd0966dab29e3bdb8f7bb12c7657e63d1d49e02bad",
+      "sha256": "c23cd4eacf3966b21bfb9ffe52ddbe1b9a9352531d8a9025c52d8e0ba7a56d59",
       "declarations": [
         "Becoming.Handoff.handed_off_progress",
-        "Becoming.Handoff.generation_by_bound",
-        "Becoming.Handoff.positive_ground_by_bound",
+        "Becoming.Handoff.newContent_by_bound",
+        "Becoming.Handoff.securesNewContent_by_bound",
         "Becoming.Handoff.each_fixed_rule_finishes",
         "Becoming.Handoff.each_rule_local_progress",
         "Becoming.Handoff.revising_run_stays_unfinished",
@@ -286,8 +286,8 @@
         "Becoming.Handoff.realized_form_need_not_be_fixed",
         "Becoming.Handoff.Run.novel_by_handoff",
         "Becoming.Handoff.Run.relevance_by_handoff_of_unrestricted",
-        "Becoming.Handoff.positive_ground_by_bound_of_unrestricted",
-        "Becoming.Handoff.revised_generation_by_bound_of_unrestricted"
+        "Becoming.Handoff.securesNewContent_by_bound_of_unrestricted",
+        "Becoming.Handoff.revised_newContent_by_bound_of_unrestricted"
       ]
     },
     {
@@ -299,11 +299,11 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
       "role": "proof",
-      "sha256": "dbc0511c40bcc1a043809a145d98a30e4d7882ffc684c5ee22d30158facab9a0",
+      "sha256": "1dbef098b4640337d092165e7b5477e5535baa634e4f8955428ce2148b0f62da",
       "declarations": [
-        "Becoming.PositiveGround.contingent_generation"
+        "Becoming.SecuredContent.contingent_newContent"
       ]
     },
     {
@@ -322,6 +322,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
     }
   ],
@@ -356,7 +362,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Handoff",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -369,9 +375,9 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SecuredContent",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -455,6 +461,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (RenewalBound.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Handoff.generation_by_bound (now Handoff.newContent_by_bound); Handoff.positive_ground_by_bound (now Handoff.securesNewContent_by_bound); Handoff.positive_ground_by_bound_of_unrestricted (now Handoff.securesNewContent_by_bound_of_unrestricted); Handoff.revised_generation_by_bound_of_unrestricted (now Handoff.revised_newContent_by_bound_of_unrestricted); PositiveGround (now SecuredContent); PositiveGround.contingent_generation (now SecuredContent.contingent_newContent); PositiveGround.lean (now SecuredContent.lean); g0_of_unrestricted (now livingSignificance_of_unrestricted); generation_by_bound (now newContent_by_bound); positive_ground_by_bound (now securesNewContent_by_bound). Proof bindings (Handoff.lean, SecuredContent.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Handoff.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; SecuredContent.lean, the module and namespace PositiveGround renamed SecuredContent, contingent_generation* contingent_newContent*, the binder positive relevance; statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Handoff.generation_by_bound（现为 Handoff.newContent_by_bound）；Handoff.positive_ground_by_bound（现为 Handoff.securesNewContent_by_bound）；Handoff.positive_ground_by_bound_of_unrestricted（现为 Handoff.securesNewContent_by_bound_of_unrestricted）；Handoff.revised_generation_by_bound_of_unrestricted（现为 Handoff.revised_newContent_by_bound_of_unrestricted）；PositiveGround（现为 SecuredContent）；PositiveGround.contingent_generation（现为 SecuredContent.contingent_newContent）；PositiveGround.lean（现为 SecuredContent.lean）；g0_of_unrestricted（现为 livingSignificance_of_unrestricted）；generation_by_bound（现为 newContent_by_bound）；positive_ground_by_bound（现为 securesNewContent_by_bound）。证明绑定（Handoff.lean、SecuredContent.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Handoff.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；SecuredContent.lean，模块与命名空间 PositiveGround 改名为 SecuredContent，contingent_generation* 现为 contingent_newContent*，约束变量 positive 现为 relevance；陈述不变。论断不变。"
     }
   ]
 }

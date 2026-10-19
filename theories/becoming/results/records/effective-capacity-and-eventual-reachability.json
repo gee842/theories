@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "同一活动中准备、共同激活和解除条件形成不同后续。Trace 拼接携带同一实际中间配置；history_meaning 保持旧历史的实现含义。当前新增量是有界细化及旧共同活动应用，祖先可达／当前形成／行使的区分与原接触形成证据由既有可能性接口保留。",
-    "en": "Preparation, joint activation and release differentiate continuations within one activity. Trace concatenation retains the same intermediate configuration; history_meaning preserves the original realization semantics. The delta is a bounded refinement and application to an existing common activity. The prior possibility interface retains the ancestral-reachability/formed-condition/exercise distinction and its actual contact-formation evidence."
+    "zh": "同一活动中准备、共同激活和解除条件形成不同后续。Trace 拼接携带同一实际中间配置；twoSteps_meaning 保持旧历史的实现含义。当前新增量是有界细化及旧共同活动应用，祖先可达／当前形成／行使的区分与原接触形成证据由既有可能性接口保留。",
+    "en": "Preparation, joint activation and release differentiate continuations within one activity. Trace concatenation retains the same intermediate configuration; twoSteps_meaning preserves the original realization semantics. The delta is a bounded refinement and application to an existing common activity. The prior possibility interface retains the ancestral-reachability/formed-condition/exercise distinction and its actual contact-formation evidence."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActivationCapacity.lean",
   "aliases": [
@@ -165,7 +165,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "e90cc67d33659d78dc348fdbf93defbfb9879414d16c0613656abf102fff3926",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
       "declarations": [
         "Becoming.WithinMoves",
         "Becoming.WithinMoves.before",
@@ -198,7 +198,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
       "role": "proof",
-      "sha256": "736684efb2ae75a365cc5389405d4c5e5ed8fcde33e6dcafc5bd3f724b60c12a",
+      "sha256": "82457897cff6be2468ce7b78cdf297010b5faccc2982f223063e5594a9eaf122",
       "declarations": [
         "Becoming.Activation.realized"
       ]
@@ -232,6 +232,12 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -258,7 +264,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bundles",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -272,7 +278,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -366,6 +372,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Labelled.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Labelled.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: history_meaning (now twoSteps_meaning). Proof bindings (Bundles.lean, Labelled.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Bundles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：history_meaning（现为 twoSteps_meaning）。证明绑定（Bundles.lean、Labelled.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Bundles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     }
   ]
 }

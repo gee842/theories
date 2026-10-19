@@ -32,14 +32,14 @@
       "declarations": [
         "Becoming.RuleCapture.favours_throughout",
         "Becoming.RuleCapture.favouring_locks",
-        "Becoming.RuleCapture.Counts.margin",
-        "Becoming.RuleCapture.Counts.margin_favours",
-        "Becoming.RuleCapture.Counts.margin_le",
-        "Becoming.RuleCapture.Counts.byMargin",
-        "Becoming.RuleCapture.Counts.byMargin_reads",
-        "Becoming.RuleCapture.Counts.margin_course",
-        "Becoming.RuleCapture.Counts.rises_strictly",
-        "Becoming.RuleCapture.Counts.rises_strictly_along"
+        "Becoming.RuleCapture.CarrierCounts.margin",
+        "Becoming.RuleCapture.CarrierCounts.margin_favours",
+        "Becoming.RuleCapture.CarrierCounts.margin_le",
+        "Becoming.RuleCapture.CarrierCounts.byMargin",
+        "Becoming.RuleCapture.CarrierCounts.byMargin_reads",
+        "Becoming.RuleCapture.CarrierCounts.margin_course",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly_along"
       ]
     },
     {
@@ -75,36 +75,36 @@
       "declarations": [
         "Becoming.RuleCapture.order_kept",
         "Becoming.RuleCapture.perturbation_keeps_below",
-        "Becoming.RuleCapture.Counts.select_mono",
-        "Becoming.RuleCapture.Counts.perturbation_keeps_below_counts"
+        "Becoming.RuleCapture.CarrierCounts.select_mono",
+        "Becoming.RuleCapture.CarrierCounts.perturbation_keeps_below_counts"
       ]
     },
     {
       "en": "Counts: two counts, the second positive, ordered by cross-multiplication, the comparison of share_not_lower. Selection multiplies each kind by what the rule gives it; it does not lower the share under a favouring rule nor raise it under a disfavouring one, and favouring and disfavouring are kept upward and downward. Under the proportional reading, from a rule that favours and is not above the population's own proportion, the share and the rule fall at no step; from one that disfavours and is not below it, they rise at none. A threshold reading is monotone where its lower rule is not above its upper one, and favours at every share where both favour.",
       "zh": "计数：两个计数，第二个为正，以交叉相乘排序，即 share_not_lower 的比较。选择以规则给各类之数乘各类；在偏向的规则下不降低份额，在不偏向的规则下不提高份额，偏向与不偏向分别向上、向下保持。在比例读法下，从一个偏向、且不高于人口自身比例的规则起，份额与规则在任何一步都不降；从一个不偏向、且不低于它的规则起，二者在任何一步都不升。阈值读法在其下规则不高于上规则时单调，二者都偏向时在每个份额都偏向。",
       "declarations": [
-        "Becoming.RuleCapture.Counts",
-        "Becoming.RuleCapture.Counts.mul_right_comm_nat",
-        "Becoming.RuleCapture.Counts.mul_mul_mul_comm_nat",
-        "Becoming.RuleCapture.Counts.order",
-        "Becoming.RuleCapture.Counts.favours",
-        "Becoming.RuleCapture.Counts.disfavours",
-        "Becoming.RuleCapture.Counts.select",
-        "Becoming.RuleCapture.Counts.raises",
-        "Becoming.RuleCapture.Counts.lowers",
-        "Becoming.RuleCapture.Counts.upper",
-        "Becoming.RuleCapture.Counts.lower",
-        "Becoming.RuleCapture.Counts.share_not_lower_counts",
-        "Becoming.RuleCapture.Counts.proportional",
-        "Becoming.RuleCapture.Counts.proportional_reads",
-        "Becoming.RuleCapture.Counts.proportional_locks",
-        "Becoming.RuleCapture.Counts.proportional_locks_down",
-        "Becoming.RuleCapture.Counts.threshold",
-        "Becoming.RuleCapture.Counts.threshold_above",
-        "Becoming.RuleCapture.Counts.threshold_below",
-        "Becoming.RuleCapture.Counts.threshold_reads",
-        "Becoming.RuleCapture.Counts.threshold_favours",
-        "Becoming.RuleCapture.Counts.always_step"
+        "Becoming.RuleCapture.CarrierCounts",
+        "Becoming.RuleCapture.CarrierCounts.mul_right_comm_nat",
+        "Becoming.RuleCapture.CarrierCounts.mul_mul_mul_comm_nat",
+        "Becoming.RuleCapture.CarrierCounts.order",
+        "Becoming.RuleCapture.CarrierCounts.favours",
+        "Becoming.RuleCapture.CarrierCounts.disfavours",
+        "Becoming.RuleCapture.CarrierCounts.select",
+        "Becoming.RuleCapture.CarrierCounts.raises",
+        "Becoming.RuleCapture.CarrierCounts.lowers",
+        "Becoming.RuleCapture.CarrierCounts.upper",
+        "Becoming.RuleCapture.CarrierCounts.lower",
+        "Becoming.RuleCapture.CarrierCounts.share_not_lower_counts",
+        "Becoming.RuleCapture.CarrierCounts.proportional",
+        "Becoming.RuleCapture.CarrierCounts.proportional_reads",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks_down",
+        "Becoming.RuleCapture.CarrierCounts.threshold",
+        "Becoming.RuleCapture.CarrierCounts.threshold_above",
+        "Becoming.RuleCapture.CarrierCounts.threshold_below",
+        "Becoming.RuleCapture.CarrierCounts.threshold_reads",
+        "Becoming.RuleCapture.CarrierCounts.threshold_favours",
+        "Becoming.RuleCapture.CarrierCounts.always_step"
       ]
     }
   ],
@@ -139,11 +139,11 @@
         "zh": "没有起点条件，锁定不成立：阈值读法 hi/lo 每步都读，从 lo 下二比一的承载者起（一个反对读法、晚一步被读的在行规则），份额在每个偶数步下降、规则在每个奇数步下降，无尽，进程在任何一步两个方向都不锁定（Alternating.alternates、Alternating.never_locked）；其起点是锁定的构形把规则反转（Alternating.before_locked）。"
       },
       "declarations": [
-        "Becoming.RuleCapture.Counts.hi",
-        "Becoming.RuleCapture.Counts.lo",
-        "Becoming.RuleCapture.Counts.twoToOne",
-        "Becoming.RuleCapture.Counts.lo_le_hi",
-        "Becoming.RuleCapture.Counts.hi_not_le_lo",
+        "Becoming.RuleCapture.CarrierCounts.hi",
+        "Becoming.RuleCapture.CarrierCounts.lo",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.lo_le_hi",
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_lo",
         "Becoming.RuleCapture.Alternating.course",
         "Becoming.RuleCapture.Alternating.course_step",
         "Becoming.RuleCapture.Alternating.before_locked",
@@ -178,8 +178,8 @@
         "Becoming.RuleCapture.Second.oneToOne",
         "Becoming.RuleCapture.Second.course",
         "Becoming.RuleCapture.Second.second_exact",
-        "Becoming.RuleCapture.Counts.hi_not_le_twoToOne",
-        "Becoming.RuleCapture.Counts.twoToOne_le_hi"
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne_le_hi"
       ]
     }
   ],
@@ -218,7 +218,7 @@
     "Becoming.RuleCapture.perturbation_absorbed",
     "Becoming.RuleCapture.uniform_locks",
     "Becoming.RuleCapture.favouring_locks",
-    "Becoming.RuleCapture.Counts.margin_course"
+    "Becoming.RuleCapture.CarrierCounts.margin_course"
   ],
   "dependencies": [
     {
@@ -248,8 +248,8 @@
       "id": "target-capture",
       "relation": "formal-reuse",
       "detail": {
-        "en": "Reuses share_not_lower's comparison as the share order of counts (Counts.share_not_lower_counts) and mul_assoc_nat; the delta is the rule that Capture supposes holds the outcome, here read from the share and shown to hold it.",
-        "zh": "复用 share_not_lower 的比较作为计数的份额序（Counts.share_not_lower_counts）与 mul_assoc_nat；增量是 Capture 所设持住结果的规则，这里从份额读出，并证明它持住结果。"
+        "en": "Reuses share_not_lower's comparison as the share order of counts (CarrierCounts.share_not_lower_counts) and mul_assoc_nat; the delta is the rule that Capture supposes holds the outcome, here read from the share and shown to hold it.",
+        "zh": "复用 share_not_lower 的比较作为计数的份额序（CarrierCounts.share_not_lower_counts）与 mul_assoc_nat；增量是 Capture 所设持住结果的规则，这里从份额读出，并证明它持住结果。"
       },
       "interface": {
         "output": {
@@ -300,45 +300,45 @@
         "Becoming.RuleCapture.Alternating.lt_four",
         "Becoming.RuleCapture.Alternating.never_locked",
         "Becoming.RuleCapture.Alternating.odd",
-        "Becoming.RuleCapture.Counts",
-        "Becoming.RuleCapture.Counts.always_step",
-        "Becoming.RuleCapture.Counts.byMargin",
-        "Becoming.RuleCapture.Counts.byMargin_reads",
-        "Becoming.RuleCapture.Counts.disfavours",
-        "Becoming.RuleCapture.Counts.favours",
-        "Becoming.RuleCapture.Counts.hi",
-        "Becoming.RuleCapture.Counts.hi_not_le_lo",
-        "Becoming.RuleCapture.Counts.hi_not_le_twoToOne",
-        "Becoming.RuleCapture.Counts.lo",
-        "Becoming.RuleCapture.Counts.lo_le_hi",
-        "Becoming.RuleCapture.Counts.lower",
-        "Becoming.RuleCapture.Counts.lowers",
-        "Becoming.RuleCapture.Counts.margin",
-        "Becoming.RuleCapture.Counts.margin_course",
-        "Becoming.RuleCapture.Counts.margin_favours",
-        "Becoming.RuleCapture.Counts.margin_le",
-        "Becoming.RuleCapture.Counts.mul_mul_mul_comm_nat",
-        "Becoming.RuleCapture.Counts.mul_right_comm_nat",
-        "Becoming.RuleCapture.Counts.order",
-        "Becoming.RuleCapture.Counts.perturbation_keeps_below_counts",
-        "Becoming.RuleCapture.Counts.proportional",
-        "Becoming.RuleCapture.Counts.proportional_locks",
-        "Becoming.RuleCapture.Counts.proportional_locks_down",
-        "Becoming.RuleCapture.Counts.proportional_reads",
-        "Becoming.RuleCapture.Counts.raises",
-        "Becoming.RuleCapture.Counts.rises_strictly",
-        "Becoming.RuleCapture.Counts.rises_strictly_along",
-        "Becoming.RuleCapture.Counts.select",
-        "Becoming.RuleCapture.Counts.select_mono",
-        "Becoming.RuleCapture.Counts.share_not_lower_counts",
-        "Becoming.RuleCapture.Counts.threshold",
-        "Becoming.RuleCapture.Counts.threshold_above",
-        "Becoming.RuleCapture.Counts.threshold_below",
-        "Becoming.RuleCapture.Counts.threshold_favours",
-        "Becoming.RuleCapture.Counts.threshold_reads",
-        "Becoming.RuleCapture.Counts.twoToOne",
-        "Becoming.RuleCapture.Counts.twoToOne_le_hi",
-        "Becoming.RuleCapture.Counts.upper",
+        "Becoming.RuleCapture.CarrierCounts",
+        "Becoming.RuleCapture.CarrierCounts.always_step",
+        "Becoming.RuleCapture.CarrierCounts.byMargin",
+        "Becoming.RuleCapture.CarrierCounts.byMargin_reads",
+        "Becoming.RuleCapture.CarrierCounts.disfavours",
+        "Becoming.RuleCapture.CarrierCounts.favours",
+        "Becoming.RuleCapture.CarrierCounts.hi",
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_lo",
+        "Becoming.RuleCapture.CarrierCounts.hi_not_le_twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.lo",
+        "Becoming.RuleCapture.CarrierCounts.lo_le_hi",
+        "Becoming.RuleCapture.CarrierCounts.lower",
+        "Becoming.RuleCapture.CarrierCounts.lowers",
+        "Becoming.RuleCapture.CarrierCounts.margin",
+        "Becoming.RuleCapture.CarrierCounts.margin_course",
+        "Becoming.RuleCapture.CarrierCounts.margin_favours",
+        "Becoming.RuleCapture.CarrierCounts.margin_le",
+        "Becoming.RuleCapture.CarrierCounts.mul_mul_mul_comm_nat",
+        "Becoming.RuleCapture.CarrierCounts.mul_right_comm_nat",
+        "Becoming.RuleCapture.CarrierCounts.order",
+        "Becoming.RuleCapture.CarrierCounts.perturbation_keeps_below_counts",
+        "Becoming.RuleCapture.CarrierCounts.proportional",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks",
+        "Becoming.RuleCapture.CarrierCounts.proportional_locks_down",
+        "Becoming.RuleCapture.CarrierCounts.proportional_reads",
+        "Becoming.RuleCapture.CarrierCounts.raises",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly",
+        "Becoming.RuleCapture.CarrierCounts.rises_strictly_along",
+        "Becoming.RuleCapture.CarrierCounts.select",
+        "Becoming.RuleCapture.CarrierCounts.select_mono",
+        "Becoming.RuleCapture.CarrierCounts.share_not_lower_counts",
+        "Becoming.RuleCapture.CarrierCounts.threshold",
+        "Becoming.RuleCapture.CarrierCounts.threshold_above",
+        "Becoming.RuleCapture.CarrierCounts.threshold_below",
+        "Becoming.RuleCapture.CarrierCounts.threshold_favours",
+        "Becoming.RuleCapture.CarrierCounts.threshold_reads",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne",
+        "Becoming.RuleCapture.CarrierCounts.twoToOne_le_hi",
+        "Becoming.RuleCapture.CarrierCounts.upper",
         "Becoming.RuleCapture.Locked",
         "Becoming.RuleCapture.Raises",
         "Becoming.RuleCapture.ReadsShare",
@@ -364,7 +364,7 @@
         "Becoming.RuleCapture.turn_locked",
         "Becoming.RuleCapture.uniform_locks"
       ],
-      "sha256": "69c1d416d8d1c18291fcd64b01d34fb34385a9057bee1151eeeee915edf6cedb"
+      "sha256": "7768492fdfbac5ba5185d2386d40d41b8cd985c4ad5f91202ede720df2b72e38"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean",
@@ -374,7 +374,7 @@
         "Becoming.Pace.turn",
         "Becoming.Pace.paced_succ"
       ],
-      "sha256": "8b8e648cac9b36cb77fcb70c4c6b7d88ce763b6269ad6cb69c4296fd2db98205"
+      "sha256": "3922045438a69b971700156e48b71308a95cf8a09598c48f5930b7c8821f96be"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
@@ -391,7 +391,7 @@
       "declarations": [
         "Becoming.Ideals.Preorder"
       ],
-      "sha256": "e5a22639f61ddca75b88eca04c105ecb83870953fee0e51c850bab1f1fc529e2"
+      "sha256": "551ca9ab4d45f307fa2c403a5caf1dab903d3c35772e9414de6321a7ffdcd923"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T151254.157652Z/verification.json",
@@ -401,33 +401,39 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "8439768c3368a26997ec7539eb9e1dd889f7098b830eb7943e89df96b857c7b3"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "fdc6d36933075d29deb11ca8e31ee2553912d39cd11275400c0c5886494b8c0e"
+      "sha256": "4f2053c41e5fb4d73494c83dbf5046a42adfb62ad4685f1a6c758e72542d1a38"
     },
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "integration",
-      "sha256": "257a20bf7540644e0fb76fbb1a1c05cad5cf50940f86e6742fcdece8d9db0e3e"
+      "sha256": "fb0fe2f00847be4c15585e3b382efb117f41290592c9d9332236d053a6d2107c"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
       "role": "integration",
-      "sha256": "6d97988bc215d4e5dfa3ac0a9841365c3dc91f21bcbd873891e99d252f3e7a47"
+      "sha256": "8d83044cfd7c728aaa21e10b1fa6cf9a113ce31ca0299279c9ec89ba25eb8c5b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T151254.157652Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RuleCapture",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -477,6 +483,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 220 added; Pace.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 220 节；Pace.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Counts.share_not_lower_counts (now CarrierCounts.share_not_lower_counts); RuleCapture.Counts (now RuleCapture.CarrierCounts); RuleCapture.Counts.always_step (now RuleCapture.CarrierCounts.always_step); RuleCapture.Counts.byMargin (now RuleCapture.CarrierCounts.byMargin); RuleCapture.Counts.byMargin_reads (now RuleCapture.CarrierCounts.byMargin_reads); RuleCapture.Counts.disfavours (now RuleCapture.CarrierCounts.disfavours); RuleCapture.Counts.favours (now RuleCapture.CarrierCounts.favours); RuleCapture.Counts.hi (now RuleCapture.CarrierCounts.hi); RuleCapture.Counts.hi_not_le_lo (now RuleCapture.CarrierCounts.hi_not_le_lo); RuleCapture.Counts.hi_not_le_twoToOne (now RuleCapture.CarrierCounts.hi_not_le_twoToOne); RuleCapture.Counts.lo (now RuleCapture.CarrierCounts.lo); RuleCapture.Counts.lo_le_hi (now RuleCapture.CarrierCounts.lo_le_hi); RuleCapture.Counts.lower (now RuleCapture.CarrierCounts.lower); RuleCapture.Counts.lowers (now RuleCapture.CarrierCounts.lowers); RuleCapture.Counts.margin (now RuleCapture.CarrierCounts.margin); RuleCapture.Counts.margin_course (now RuleCapture.CarrierCounts.margin_course); RuleCapture.Counts.margin_favours (now RuleCapture.CarrierCounts.margin_favours); RuleCapture.Counts.margin_le (now RuleCapture.CarrierCounts.margin_le); RuleCapture.Counts.mul_mul_mul_comm_nat (now RuleCapture.CarrierCounts.mul_mul_mul_comm_nat); RuleCapture.Counts.mul_right_comm_nat (now RuleCapture.CarrierCounts.mul_right_comm_nat); RuleCapture.Counts.order (now RuleCapture.CarrierCounts.order); RuleCapture.Counts.perturbation_keeps_below_counts (now RuleCapture.CarrierCounts.perturbation_keeps_below_counts); RuleCapture.Counts.proportional (now RuleCapture.CarrierCounts.proportional); RuleCapture.Counts.proportional_locks (now RuleCapture.CarrierCounts.proportional_locks); RuleCapture.Counts.proportional_locks_down (now RuleCapture.CarrierCounts.proportional_locks_down); RuleCapture.Counts.proportional_reads (now RuleCapture.CarrierCounts.proportional_reads); RuleCapture.Counts.raises (now RuleCapture.CarrierCounts.raises); RuleCapture.Counts.rises_strictly (now RuleCapture.CarrierCounts.rises_strictly); RuleCapture.Counts.rises_strictly_along (now RuleCapture.CarrierCounts.rises_strictly_along); RuleCapture.Counts.select (now RuleCapture.CarrierCounts.select); RuleCapture.Counts.select_mono (now RuleCapture.CarrierCounts.select_mono); RuleCapture.Counts.share_not_lower_counts (now RuleCapture.CarrierCounts.share_not_lower_counts); RuleCapture.Counts.threshold (now RuleCapture.CarrierCounts.threshold); RuleCapture.Counts.threshold_above (now RuleCapture.CarrierCounts.threshold_above); RuleCapture.Counts.threshold_below (now RuleCapture.CarrierCounts.threshold_below); RuleCapture.Counts.threshold_favours (now RuleCapture.CarrierCounts.threshold_favours); RuleCapture.Counts.threshold_reads (now RuleCapture.CarrierCounts.threshold_reads); RuleCapture.Counts.twoToOne (now RuleCapture.CarrierCounts.twoToOne); RuleCapture.Counts.twoToOne_le_hi (now RuleCapture.CarrierCounts.twoToOne_le_hi); RuleCapture.Counts.upper (now RuleCapture.CarrierCounts.upper). Proof bindings (RuleCapture.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: DELEGATED-CHOICES.md, names follow the R30 rename table; passages.json, rebuilt: the declarations and the names in the readings follow the R30 table, each so corrected passage marked; Ideals.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Pace.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; RuleCapture.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; CHINESE-SOURCES-AND-BECOMING.md, names follow the R30 rename table; the passage tables are the rebuilt map; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Counts.share_not_lower_counts（现为 CarrierCounts.share_not_lower_counts）；RuleCapture.Counts（现为 RuleCapture.CarrierCounts）；RuleCapture.Counts.always_step（现为 RuleCapture.CarrierCounts.always_step）；RuleCapture.Counts.byMargin（现为 RuleCapture.CarrierCounts.byMargin）；RuleCapture.Counts.byMargin_reads（现为 RuleCapture.CarrierCounts.byMargin_reads）；RuleCapture.Counts.disfavours（现为 RuleCapture.CarrierCounts.disfavours）；RuleCapture.Counts.favours（现为 RuleCapture.CarrierCounts.favours）；RuleCapture.Counts.hi（现为 RuleCapture.CarrierCounts.hi）；RuleCapture.Counts.hi_not_le_lo（现为 RuleCapture.CarrierCounts.hi_not_le_lo）；RuleCapture.Counts.hi_not_le_twoToOne（现为 RuleCapture.CarrierCounts.hi_not_le_twoToOne）；RuleCapture.Counts.lo（现为 RuleCapture.CarrierCounts.lo）；RuleCapture.Counts.lo_le_hi（现为 RuleCapture.CarrierCounts.lo_le_hi）；RuleCapture.Counts.lower（现为 RuleCapture.CarrierCounts.lower）；RuleCapture.Counts.lowers（现为 RuleCapture.CarrierCounts.lowers）；RuleCapture.Counts.margin（现为 RuleCapture.CarrierCounts.margin）；RuleCapture.Counts.margin_course（现为 RuleCapture.CarrierCounts.margin_course）；RuleCapture.Counts.margin_favours（现为 RuleCapture.CarrierCounts.margin_favours）；RuleCapture.Counts.margin_le（现为 RuleCapture.CarrierCounts.margin_le）；RuleCapture.Counts.mul_mul_mul_comm_nat（现为 RuleCapture.CarrierCounts.mul_mul_mul_comm_nat）；RuleCapture.Counts.mul_right_comm_nat（现为 RuleCapture.CarrierCounts.mul_right_comm_nat）；RuleCapture.Counts.order（现为 RuleCapture.CarrierCounts.order）；RuleCapture.Counts.perturbation_keeps_below_counts（现为 RuleCapture.CarrierCounts.perturbation_keeps_below_counts）；RuleCapture.Counts.proportional（现为 RuleCapture.CarrierCounts.proportional）；RuleCapture.Counts.proportional_locks（现为 RuleCapture.CarrierCounts.proportional_locks）；RuleCapture.Counts.proportional_locks_down（现为 RuleCapture.CarrierCounts.proportional_locks_down）；RuleCapture.Counts.proportional_reads（现为 RuleCapture.CarrierCounts.proportional_reads）；RuleCapture.Counts.raises（现为 RuleCapture.CarrierCounts.raises）；RuleCapture.Counts.rises_strictly（现为 RuleCapture.CarrierCounts.rises_strictly）；RuleCapture.Counts.rises_strictly_along（现为 RuleCapture.CarrierCounts.rises_strictly_along）；RuleCapture.Counts.select（现为 RuleCapture.CarrierCounts.select）；RuleCapture.Counts.select_mono（现为 RuleCapture.CarrierCounts.select_mono）；RuleCapture.Counts.share_not_lower_counts（现为 RuleCapture.CarrierCounts.share_not_lower_counts）；RuleCapture.Counts.threshold（现为 RuleCapture.CarrierCounts.threshold）；RuleCapture.Counts.threshold_above（现为 RuleCapture.CarrierCounts.threshold_above）；RuleCapture.Counts.threshold_below（现为 RuleCapture.CarrierCounts.threshold_below）；RuleCapture.Counts.threshold_favours（现为 RuleCapture.CarrierCounts.threshold_favours）；RuleCapture.Counts.threshold_reads（现为 RuleCapture.CarrierCounts.threshold_reads）；RuleCapture.Counts.twoToOne（现为 RuleCapture.CarrierCounts.twoToOne）；RuleCapture.Counts.twoToOne_le_hi（现为 RuleCapture.CarrierCounts.twoToOne_le_hi）；RuleCapture.Counts.upper（现为 RuleCapture.CarrierCounts.upper）。证明绑定（RuleCapture.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：DELEGATED-CHOICES.md，名称随 R30 改名表；passages.json，重建：声明与读法中的名称随 R30 改名表，每个如此更正的段落有标注；Ideals.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Pace.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；RuleCapture.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；CHINESE-SOURCES-AND-BECOMING.md，名称随 R30 改名表；逐句对应表为重建之图；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

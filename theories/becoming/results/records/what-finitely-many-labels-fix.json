@@ -38,9 +38,9 @@
       "en": "In a world a list of N holds, where configurations with the same future through the map have features agreeing from some step on, the extrapolation given the table of the N configurations as many steps on as the list is long, each named by its first N - 1 values through the map and labelled with its feature, rests in accord with the feature along every orbit and every run, from the bound of the extrapolation given nothing on; so a feature is learnable exactly where the extrapolation given some table of at most N labelled names of N - 1 values learns it.",
       "zh": "在由 N 个构形的列表容纳的世界中，经映射未来相同的构形其特征自某步起一致之处，被给予世界之表（列表长度那么多步之后的 N 个构形，各以其经映射的前 N - 1 个值命名、以其特征为标签）的外推，自不被给予任何东西的外推之界起，沿每条轨道与每次运行与特征相合而停息；所以一个特征可学，恰当被给予某个至多 N 个、各 N - 1 个值的带标签名字之表的外推学得它。",
       "declarations": [
-        "Becoming.Learnable.table_rests",
+        "Becoming.Learnable.table_predicts",
         "Becoming.Learnable.learnable_iff_table",
-        "Becoming.LearnableRuns.table_rests",
+        "Becoming.LearnableRuns.table_predicts",
         "Becoming.LearnableRuns.learnable_iff_table"
       ]
     },
@@ -48,7 +48,7 @@
       "en": "Every value the feature takes from the step an extrapolation given a table rests on is a label of an entry of the table; where the law leaves every configuration unchanged, every value the feature takes is.",
       "zh": "自被给予表的外推停息之步起，特征所取的每个值都是表中某条目的标签；律使每个构形不变之处，特征所取的每个值都是。",
       "declarations": [
-        "Becoming.Learnable.label_of_rests",
+        "Becoming.Learnable.label_of_predicts",
         "Becoming.Learnable.labels_of_still",
         "Becoming.LearnableRuns.labels_of_still"
       ]
@@ -57,9 +57,9 @@
       "en": "Where the map also carries the feature, every feature is learned by the extrapolation given nothing in a world a list holds, from the bound on, along every orbit and every run, and unrolled it proposes the feature at every step ahead: the labels before the bound fix every later one.",
       "zh": "映射也带着特征之处，在由一个列表容纳的世界中，每个特征都由不被给予任何东西的外推自界起、沿每条轨道与每次运行学得；展开后它提出此后每一步的特征：界之前的标签确定此后的每一个。",
       "declarations": [
-        "Becoming.Learnable.rests_with_labels",
+        "Becoming.Learnable.predicts_with_labels",
         "Becoming.Learnable.ahead_with_labels",
-        "Becoming.LearnableRuns.rests_with_labels",
+        "Becoming.LearnableRuns.predicts_with_labels",
         "Becoming.LearnableRuns.ahead_with_labels"
       ]
     }
@@ -152,24 +152,24 @@
         "Becoming.Learnable.decBegins",
         "Becoming.Learnable.entryOf",
         "Becoming.Learnable.entryOf_name_length",
-        "Becoming.Learnable.label_of_rests",
+        "Becoming.Learnable.label_of_predicts",
         "Becoming.Learnable.labels_of_still",
         "Becoming.Learnable.learnable_iff_table",
         "Becoming.Learnable.length_map",
         "Becoming.Learnable.mem_map_of",
-        "Becoming.Learnable.rests_with_labels",
+        "Becoming.Learnable.predicts_with_labels",
         "Becoming.Learnable.tableOf",
         "Becoming.Learnable.tableOf_length",
         "Becoming.Learnable.tableOf_names",
-        "Becoming.Learnable.table_rests",
+        "Becoming.Learnable.table_predicts",
         "Becoming.LearnableRuns.ahead_with_labels",
         "Becoming.LearnableRuns.labels_of_still",
         "Becoming.LearnableRuns.learnable_iff_table",
-        "Becoming.LearnableRuns.rests_with_labels",
-        "Becoming.LearnableRuns.table_rests",
+        "Becoming.LearnableRuns.predicts_with_labels",
+        "Becoming.LearnableRuns.table_predicts",
         "Becoming.Learning.prefix_map"
       ],
-      "sha256": "887940bccfc9cc555b43f9ef1eaf35462f0bb1b97bd28e698dc7e1fe391b624b"
+      "sha256": "c49da3ed4b3205e9d0c1f79b551b87e60805a185187aa7ba71e2c44a81a11d24"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T154830.591298Z/verification.json",
@@ -179,12 +179,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2802ff8087414012138996cf36c203f8f429d0009782782b7adee19e71dc6a79"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -202,12 +202,18 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labels.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labels",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -264,6 +270,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Learnable.label_of_rests (now Learnable.label_of_predicts); Learnable.rests_with_labels (now Learnable.predicts_with_labels); Learnable.table_rests (now Learnable.table_predicts); LearnableRuns.rests_with_labels (now LearnableRuns.predicts_with_labels); LearnableRuns.table_rests (now LearnableRuns.table_predicts). Proof bindings (Labels.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Labels.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Learnable.label_of_rests（现为 Learnable.label_of_predicts）；Learnable.rests_with_labels（现为 Learnable.predicts_with_labels）；Learnable.table_rests（现为 Learnable.table_predicts）；LearnableRuns.rests_with_labels（现为 LearnableRuns.predicts_with_labels）；LearnableRuns.table_rests（现为 LearnableRuns.table_predicts）。证明绑定（Labels.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Labels.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

@@ -41,8 +41,8 @@
       "declarations": [
         "Becoming.Web.Unceasing.rises",
         "Becoming.Web.RenewedBy",
-        "Becoming.Web.Regenerating",
-        "Becoming.Web.Unceasing.regeneration_recurs"
+        "Becoming.Web.ActiveRenewer",
+        "Becoming.Web.Unceasing.activeRenewer_recurs"
       ]
     },
     {
@@ -72,7 +72,7 @@
       "zh": "若一个量从不上升而每次生起都使它下降（耗散），生成不是不息的；一个总水平不变的封闭循环可以维持不息的生成。",
       "en": "If a quantity never rises and every arising lowers it (dissipation), generation is not unceasing; a closed cycle whose total stays constant sustains unceasing generation.",
       "declarations": [
-        "Becoming.Web.dissipation_generation_not_recurring",
+        "Becoming.Web.dissipation_arising_not_recurring",
         "Becoming.Recycle.web",
         "Becoming.Recycle.renews",
         "Becoming.Recycle.closed_unceasing"
@@ -134,8 +134,8 @@
       "en": "The flow form (uptake_needs_replenishment, replenishment_recurs, renewing_recurs): the flow balances the web, and uptake is positive at arbitrarily late steps, or formations taking from the family at their first active step (ArisesTaking) arise at arbitrarily late steps."
     },
     {
-      "zh": "耗散（dissipation_generation_not_recurring）：一个量从不上升，而每次生起都使它下降。家族的总水平是这样的量，仅当每次生起都使它下降；总水平预设各条件的单位可公度。对每次生起都耗散的量（例如自由能），这是物理前提。",
-      "en": "Dissipation (dissipation_generation_not_recurring): a quantity never rises and every arising lowers it. A family's total level is such a quantity only when every arising lowers it, and the total presupposes commensurable units. For a quantity every arising dissipates, free energy for instance, this is a physical premise."
+      "zh": "耗散（dissipation_arising_not_recurring）：一个量从不上升，而每次生起都使它下降。家族的总水平是这样的量，仅当每次生起都使它下降；总水平预设各条件的单位可公度。对每次生起都耗散的量（例如自由能），这是物理前提。",
+      "en": "Dissipation (dissipation_arising_not_recurring): a quantity never rises and every arising lowers it. A family's total level is such a quantity only when every arising lowers it, and the total presupposes commensurable units. For a quantity every arising dissipates, free energy for instance, this is a physical premise."
     },
     {
       "zh": "“不息”只读生起在任意晚的步复现，不读“更多”、多样性或复杂性。",
@@ -184,31 +184,31 @@
   ],
   "counterexamples": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "detail": {
-        "zh": "更新不蕴含生成（Tide.renewal_without_arising）：潮水由月亮更新，在任意晚的步上升，月亮的更新复现，而没有任何生起；这是在本结果自身意义上的严格性。Renewable 见证（Renewable.renewal_without_generation）是“依存保持，没有生起”，其中没有上升。",
-        "en": "Renewal does not imply generation (Tide.renewal_without_arising): a tide the moon renews rises at arbitrarily late steps and the moon's renewing recurs while nothing arises; this is strictness in this result's own sense. The `Renewable` witness (Renewable.renewal_without_generation) is “dependence kept, no arising”, with no rise."
+        "zh": "更新不蕴含生成（Tide.renewal_without_arising）：潮水由月亮更新，在任意晚的步上升，月亮的更新复现，而没有任何生起；这是在本结果自身意义上的严格性。Renewable 见证（Renewable.renewal_without_arising）是“依存保持，没有生起”，其中没有上升。",
+        "en": "Renewal does not imply generation (Tide.renewal_without_arising): a tide the moon renews rises at arbitrarily late steps and the moon's renewing recurs while nothing arises; this is strictness in this result's own sense. The `Renewable` witness (Renewable.renewal_without_arising) is “dependence kept, no arising”, with no rise."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "detail": {
         "zh": "消耗前提不涉及生起的形成（Tide.unrelated_depletion）：一个不依存、也不汲取任何条件的闪现者在每个奇数步生起，每次都由与它无关的潮落满足消耗前提，全部前提成立。",
         "en": "The depletion premise does not involve the arising formation (Tide.unrelated_depletion): a flicker that depends and draws on nothing arises at every odd step, each time meeting the premise through the unrelated fall of a tide, and every premise holds."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "detail": {
         "zh": "正面见证只空洞地满足消耗前提（Oscillation.arises_on_rise）：振荡者只在源把条件恢复之时生起，即在上升之步，在下一步才汲取。",
         "en": "The positive witness meets the depletion premise only vacuously (Oscillation.arises_on_rise): the oscillator arises only when the source has restored its condition, at a rise, and draws at the next step."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "detail": {
-        "zh": "没有耗散，封闭的有限家族可以不息（Recycle.closed_unceasing）：一个单位在两个池之间循环，总水平恒为一，全部前提成立，生成不息；dissipation_generation_not_recurring 需要每次生起都使所论的量下降。",
-        "en": "Without dissipation a closed finite family can be unceasing (Recycle.closed_unceasing): one unit cycles between two pools, the total stays one, every premise holds and generation is unceasing; dissipation_generation_not_recurring needs every arising to lower the quantity concerned."
+        "zh": "没有耗散，封闭的有限家族可以不息（Recycle.closed_unceasing）：一个单位在两个池之间循环，总水平恒为一，全部前提成立，生成不息；dissipation_arising_not_recurring 需要每次生起都使所论的量下降。",
+        "en": "Without dissipation a closed finite family can be unceasing (Recycle.closed_unceasing): one unit cycles between two pools, the total stays one, every premise holds and generation is unceasing; dissipation_arising_not_recurring needs every arising to lower the quantity concerned."
       }
     },
     {
@@ -233,14 +233,14 @@
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "detail": {
         "zh": "接连生起不证明不息（Growth.ceases）：形成在汲取不被更新的条件时接连生起，以消耗为条件的生起不复现。",
         "en": "Arising one after another does not certify unceasing generation (Growth.ceases): formations arise while drawing an unrenewed condition, and arising on a consumed condition does not recur."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "detail": {
         "zh": "逐步读法与生成分离（Oscillation.readings）：一个不息地再生起的形成（振荡者），在工作候选的逐步读法下没有一个活的生起事件；两步周期的读法记入它。",
         "en": "The stepwise reading and generation come apart (Oscillation.readings): a formation arising again and again (the oscillator) has no living arising under the stepwise working candidate; the reading over cycles of two includes it."
@@ -266,8 +266,8 @@
     "no-evaluation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Becoming.Generation 的当前字节绑定回执 20261014T091930.724493Z）：Becoming.Generation 的定理与 Becoming.Flow 中流的形式的定理公理报告为空；检查器并核对核心纯净。作者反审见整合文档；第四次独立审查（见来源）的更正在整合文档中处理，第五次审查这些更正并补出流的形式只用到取用与命名造成的生起，第六次接受这些更正。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Generation bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Generation and the flow-form theorems of Becoming.Flow have empty axiom reports; core purity verified. Author counterreview in the integration note; the fourth independent review (see sources) is handled there, the fifth reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, and the sixth accepted them."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Becoming.Arising 的当前字节绑定回执 20261014T091930.724493Z）：Becoming.Arising 的定理与 Becoming.Flow 中流的形式的定理公理报告为空；检查器并核对核心纯净。作者反审见整合文档；第四次独立审查（见来源）的更正在整合文档中处理，第五次审查这些更正并补出流的形式只用到取用与命名造成的生起，第六次接受这些更正。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Arising bound to receipt 20261014T091930.724493Z): the theorems of Becoming.Arising and the flow-form theorems of Becoming.Flow have empty axiom reports; core purity verified. Author counterreview in the integration note; the fourth independent review (see sources) is handled there, the fifth reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, and the sixth accepted them."
   },
   "next_delta": {
     "zh": "陈述可能性、多样性与复杂性的上升；把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通；检验生成成分能否进入 living 的读法而不重复“不损”所放弃的。",
@@ -277,17 +277,17 @@
     "zh": "Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。本结果只形式化“不断…生”，并把它陈述在整体的继续上，这是作者的读法；依 Ren 的交托，第二个“生”是进一步的生成，即能形成者连同进一步形成的条件与生成者，以消耗为条件的生起由比较分类，比较读的是能形成者（DELEGATED-CHOICES D3，以其在一个说明中的位置修订，D45）。在这些前提下，由不被更新的条件承担的生起不能不息；在继续的层面，这与 Ren 所说的生成与退化不重叠相合（作者的读法）；在单个事件的层面，Arises 包括以消耗为条件的生起。所以结果支持来源中 AI 修正说明的看法，即“持续形成新组织”的“持续”已排除消耗型；它没有证明每个非消耗的样式都能不息。作者进一步诠释：在耗散之下，任何有限部分都不能独自不息，不息属于更大的展开（AI 论证；对流中的取用，no-finite-part-bears-taking 在耗散前提下证明了它）。实际展开是否满足消耗前提、RenewedBy、流的对应与耗散，是经验问题。新名称是审查的建议，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
     "en": "Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). This result formalizes only “unceasingly … 生” and states it on the whole's continuation, which is the author's reading; on Ren's delegation the second 生 is further generation, what can form together with the conditions and generators of further forming, and arising on depletion is classed by the comparison, which reads what can form (DELEGATED-CHOICES D3, revised by its place in one account, D45). Under these premises, arising borne by unrenewed conditions cannot be unceasing; at the level of continuation this accords with Ren's statement that generation and degeneration do not overlap (the author's reading), while at the level of single events Arises includes arising on a consumed condition. So the result supports the source's AI correction note that the “持续” of “持续形成新组织” already excludes the consuming type; it does not show that every non-consuming pattern can be unceasing. The author further interprets: under dissipation no finite part is unceasing on its own, and unceasing generation belongs to a larger unfolding (an AI argument; for taking in flows, no-finite-part-bears-taking proves it under the dissipation premise). Whether actual unfoldings meet the depletion premise, RenewedBy, the flow correspondence and dissipation is an empirical question. The new names are the reviewer's suggestions, adopted under Ren's naming rule (DELEGATED-CHOICES D36)."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
   "aliases": [
     "Becoming.Web.depletes_iff",
     "Becoming.Web.depletion_not_recurring",
     "Becoming.Web.Unceasing.rises",
-    "Becoming.Web.Unceasing.regeneration_recurs",
+    "Becoming.Web.Unceasing.activeRenewer_recurs",
     "Becoming.Web.substitution_defers",
-    "Becoming.Web.dissipation_generation_not_recurring",
+    "Becoming.Web.dissipation_arising_not_recurring",
     "Becoming.Flow.replenishment_recurs",
     "Becoming.Flow.renewing_recurs",
-    "Becoming.Renewable.renewal_without_generation",
+    "Becoming.Renewable.renewal_without_arising",
     "Becoming.Tide.unrelated_depletion",
     "Becoming.Tide.renewal_without_arising",
     "Becoming.Growth.ceases",
@@ -307,8 +307,8 @@
       "id": "becoming-renewal-reading",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "总水平原则是该结果的下降原则 falls_not_recurring 用于有限家族的总和；renewal_without_generation 复用其可更新条件的过程与 withinRenewal 运行。",
-        "en": "The total-level principle is that result's descent principle falls_not_recurring applied to a finite family's total; renewal_without_generation reuses its renewable process and its run within renewal."
+        "zh": "总水平原则是该结果的下降原则 falls_not_recurring 用于有限家族的总和；renewal_without_arising 复用其可更新条件的过程与 withinRenewal 运行。",
+        "en": "The total-level principle is that result's descent principle falls_not_recurring applied to a finite family's total; renewal_without_arising reuses its renewable process and its run within renewal."
       },
       "interface": {
         "output": {
@@ -392,7 +392,7 @@
           "zh": "无附加条件。",
           "en": "No added conditions."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Restoration.lean"
       }
     }
   ],
@@ -428,8 +428,8 @@
     {
       "id": "generation-is-replenishment",
       "detail": {
-        "zh": "回答第五次审查 I3：体现的关系项的生起本身需要补充，不经由取用；本结果 dissipation_generation_not_recurring 的前提，对封闭家族中体现成员的生起，由平衡、耗散与体现推出。",
-        "en": "Answers I3 of the fifth review: the arising of an embodied relatum needs replenishment itself, not through uptake; the premise of this result's dissipation_generation_not_recurring follows, for the arisings of embodied members of a closed family, from balance, dissipation and embodiment."
+        "zh": "回答第五次审查 I3：体现的关系项的生起本身需要补充，不经由取用；本结果 dissipation_arising_not_recurring 的前提，对封闭家族中体现成员的生起，由平衡、耗散与体现推出。",
+        "en": "Answers I3 of the fifth review: the arising of an embodied relatum needs replenishment itself, not through uptake; the premise of this result's dissipation_arising_not_recurring follows, for the arisings of embodied members of a closed family, from balance, dissipation and embodiment."
       }
     },
     {
@@ -449,9 +449,9 @@
   ],
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "role": "proof",
-      "sha256": "92398607078bc1be31412ca2780efbc43473115b1088e4816be447d3b6c277ab",
+      "sha256": "6c5857388eca443bd20f5b411b5ef424b01e54b67b12e3bfefe5c54591db1eae",
       "declarations": [
         "Becoming.Web.Arises",
         "Becoming.Web.Unceasing",
@@ -460,7 +460,7 @@
         "Becoming.Web.Still",
         "Becoming.Web.Depletes",
         "Becoming.Web.RenewedBy",
-        "Becoming.Web.Regenerating",
+        "Becoming.Web.ActiveRenewer",
         "Becoming.Web.stock",
         "Becoming.Web.rises_or_still",
         "Becoming.Web.depletes_iff",
@@ -468,9 +468,9 @@
         "Becoming.Web.stock_lt",
         "Becoming.Web.depletion_not_recurring",
         "Becoming.Web.Unceasing.rises",
-        "Becoming.Web.Unceasing.regeneration_recurs",
+        "Becoming.Web.Unceasing.activeRenewer_recurs",
         "Becoming.Web.substitution_defers",
-        "Becoming.Web.dissipation_generation_not_recurring",
+        "Becoming.Web.dissipation_arising_not_recurring",
         "Becoming.Tide.web",
         "Becoming.Tide.renews",
         "Becoming.Tide.unrelated_depletion",
@@ -493,9 +493,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "e90cc67d33659d78dc348fdbf93defbfb9879414d16c0613656abf102fff3926",
+      "sha256": "94bb18753807b3dd2c6d83c5d2e38e9b1a60d6f23a1b1fa7261c55e8d0e5f53c",
       "declarations": [
-        "Becoming.Renewable.renewal_without_generation",
+        "Becoming.Renewable.renewal_without_arising",
         "Becoming.Renewable.withinRenewal"
       ]
     },
@@ -525,15 +525,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
       "declarations": [
         "Becoming.Web"
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Restoration.lean",
       "role": "proof",
-      "sha256": "4d7b89144e1ed6b7222507861a6a760c6e20f1c560bdd6c745aab15c8b110374",
+      "sha256": "15ca795c65405065276fa214f3a151c19f31fc9c8923e2e37e37554b17ee8aa7",
       "declarations": [
         "Becoming.Web.RenewingInWithin"
       ]
@@ -547,7 +547,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
       "declarations": []
     },
     {
@@ -571,7 +571,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.uptake",
@@ -602,7 +602,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "role": "proof",
-      "sha256": "9ce3b5aeecbe77a984f8f1fcd06a4620e92171000018497ab1141c9d0be192c7",
+      "sha256": "31c9f040b34879b3fed56747978c9c86ab484cfe5458f0542fecff17567c5f67",
       "declarations": [
         "Becoming.TideFlip.flip",
         "Becoming.TideFlip.flipped",
@@ -651,33 +651,39 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Arising",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1122,6 +1128,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Labelled.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Labelled.lean, Law.run and Law.run_state moved to Recurrence.lean; Renewal.lean, imports Becoming.Amounts; falls_not_recurring proved as the whole-number instance of Amounts.rests, statement unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Labelled.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Labelled.lean，Law.run 与 Law.run_state 移到 Recurrence.lean；Renewal.lean，导入 Becoming.Amounts；falls_not_recurring 作为 Amounts.rests 的整数实例证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Generation (now Arising); Generation.lean (now Arising.lean); Renewable.renewal_without_generation (now Renewable.renewal_without_arising); Return.lean (now Restoration.lean); Web.Regenerating (now Web.ActiveRenewer); Web.Unceasing.regeneration_recurs (now Web.Unceasing.activeRenewer_recurs); Web.dissipation_generation_not_recurring (now Web.dissipation_arising_not_recurring); dissipation_generation_not_recurring (now dissipation_arising_not_recurring); renewal_without_generation (now renewal_without_arising). Proof bindings (Arising.lean, Flow.lean, Labelled.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Arising.lean, the module Generation renamed Arising; Web.generation_* are Web.embodiedArising_*, Web.Regenerating is Web.ActiveRenewer; statements unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Identity.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Restoration.lean, the module Return renamed Restoration; Web.Returns and Web.ReturnsWithin are Web.Restored and Web.RestoredWithin; statements unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Generation（现为 Arising）；Generation.lean（现为 Arising.lean）；Renewable.renewal_without_generation（现为 Renewable.renewal_without_arising）；Return.lean（现为 Restoration.lean）；Web.Regenerating（现为 Web.ActiveRenewer）；Web.Unceasing.regeneration_recurs（现为 Web.Unceasing.activeRenewer_recurs）；Web.dissipation_generation_not_recurring（现为 Web.dissipation_arising_not_recurring）；dissipation_generation_not_recurring（现为 dissipation_arising_not_recurring）；renewal_without_generation（现为 renewal_without_arising）。证明绑定（Arising.lean、Flow.lean、Labelled.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Arising.lean，模块 Generation 改名为 Arising；Web.generation_* 现为 Web.embodiedArising_*，Web.Regenerating 现为 Web.ActiveRenewer；陈述不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Identity.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Restoration.lean，模块 Return 改名为 Restoration；Web.Returns 与 Web.ReturnsWithin 现为 Web.Restored 与 Web.RestoredWithin；陈述不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

@@ -160,31 +160,31 @@
       ]
     },
     {
-      "zh": "环：主张 0, …, n 成环，相邻者以相等或相异相关（Cycle.system），每个主张沿其关系被计两次；所以相异关系为奇数个时这些关系矛盾，混合平均至多满足 n + 1 个中的 n 个；为偶数个时沿环走出的赋值满足全部关系，二者互斥（Cycle.met_iff_even）。",
-      "en": "A cycle: the claims 0, …, n in a cycle, neighbours related as equal or different (Cycle.system), each claim counted twice along its relations; so with an odd number of differ relations they contradict and mixtures meet at most n of the n + 1 on average; with an even number the assignment walked along the cycle meets them all, and the two exclude each other (Cycle.met_iff_even).",
+      "zh": "环：主张 0, …, n 成环，相邻者以相等或相异相关（Gluing.Cycle.system），每个主张沿其关系被计两次；所以相异关系为奇数个时这些关系矛盾，混合平均至多满足 n + 1 个中的 n 个；为偶数个时沿环走出的赋值满足全部关系，二者互斥（Gluing.Cycle.met_iff_even）。",
+      "en": "A cycle: the claims 0, …, n in a cycle, neighbours related as equal or different (Gluing.Cycle.system), each claim counted twice along its relations; so with an odd number of differ relations they contradict and mixtures meet at most n of the n + 1 on average; with an even number the assignment walked along the cycle meets them all, and the two exclude each other (Gluing.Cycle.met_iff_even).",
       "declarations": [
-        "Becoming.Cycle.down",
-        "Becoming.Cycle.system",
-        "Becoming.Cycle.edges",
-        "Becoming.Cycle.polarity",
-        "Becoming.Cycle.length_edges",
-        "Becoming.Cycle.lt_of_mem_down",
-        "Becoming.Cycle.shift",
-        "Becoming.Cycle.cross",
-        "Becoming.Cycle.returns",
-        "Becoming.Cycle.eq_of_even",
-        "Becoming.Cycle.beq_self",
-        "Becoming.Cycle.beq_of_ne",
-        "Becoming.Cycle.telescope",
-        "Becoming.Cycle.counts_even",
-        "Becoming.Cycle.contradicts",
-        "Becoming.Cycle.mixture_le",
-        "Becoming.Cycle.miss",
-        "Becoming.Cycle.pick",
-        "Becoming.Cycle.value_pair",
-        "Becoming.Cycle.walk",
-        "Becoming.Cycle.walk_meets",
-        "Becoming.Cycle.met_iff_even"
+        "Becoming.Gluing.Cycle.down",
+        "Becoming.Gluing.Cycle.system",
+        "Becoming.Gluing.Cycle.edges",
+        "Becoming.Gluing.Cycle.polarity",
+        "Becoming.Gluing.Cycle.length_edges",
+        "Becoming.Gluing.Cycle.lt_of_mem_down",
+        "Becoming.Gluing.Cycle.shift",
+        "Becoming.Gluing.Cycle.cross",
+        "Becoming.Gluing.Cycle.returns",
+        "Becoming.Gluing.Cycle.eq_of_even",
+        "Becoming.Gluing.Cycle.beq_self",
+        "Becoming.Gluing.Cycle.beq_of_ne",
+        "Becoming.Gluing.Cycle.telescope",
+        "Becoming.Gluing.Cycle.counts_even",
+        "Becoming.Gluing.Cycle.contradicts",
+        "Becoming.Gluing.Cycle.mixture_le",
+        "Becoming.Gluing.Cycle.miss",
+        "Becoming.Gluing.Cycle.pick",
+        "Becoming.Gluing.Cycle.value_pair",
+        "Becoming.Gluing.Cycle.walk",
+        "Becoming.Gluing.Cycle.walk_meets",
+        "Becoming.Gluing.Cycle.met_iff_even"
       ]
     },
     {
@@ -338,7 +338,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
       "role": "proof",
-      "sha256": "9aa095384e86cc03aca22f77935a45fcbb5d204914b35d7910544d8c74f3a20f",
+      "sha256": "612afbdb800f3fa4ce54b6166779ae8f6360ecce3177a441bf3be9530a1a3c5f",
       "declarations": [
         "Becoming.addParity",
         "Becoming.oddOver",
@@ -431,28 +431,28 @@
         "Becoming.Square.inLine",
         "Becoming.Square.inLine_support",
         "Becoming.Square.indexed_met",
-        "Becoming.Cycle.down",
-        "Becoming.Cycle.system",
-        "Becoming.Cycle.edges",
-        "Becoming.Cycle.polarity",
-        "Becoming.Cycle.length_edges",
-        "Becoming.Cycle.lt_of_mem_down",
-        "Becoming.Cycle.shift",
-        "Becoming.Cycle.cross",
-        "Becoming.Cycle.returns",
-        "Becoming.Cycle.eq_of_even",
-        "Becoming.Cycle.beq_self",
-        "Becoming.Cycle.beq_of_ne",
-        "Becoming.Cycle.telescope",
-        "Becoming.Cycle.counts_even",
-        "Becoming.Cycle.contradicts",
-        "Becoming.Cycle.mixture_le",
-        "Becoming.Cycle.miss",
-        "Becoming.Cycle.pick",
-        "Becoming.Cycle.value_pair",
-        "Becoming.Cycle.walk",
-        "Becoming.Cycle.walk_meets",
-        "Becoming.Cycle.met_iff_even"
+        "Becoming.Gluing.Cycle.down",
+        "Becoming.Gluing.Cycle.system",
+        "Becoming.Gluing.Cycle.edges",
+        "Becoming.Gluing.Cycle.polarity",
+        "Becoming.Gluing.Cycle.length_edges",
+        "Becoming.Gluing.Cycle.lt_of_mem_down",
+        "Becoming.Gluing.Cycle.shift",
+        "Becoming.Gluing.Cycle.cross",
+        "Becoming.Gluing.Cycle.returns",
+        "Becoming.Gluing.Cycle.eq_of_even",
+        "Becoming.Gluing.Cycle.beq_self",
+        "Becoming.Gluing.Cycle.beq_of_ne",
+        "Becoming.Gluing.Cycle.telescope",
+        "Becoming.Gluing.Cycle.counts_even",
+        "Becoming.Gluing.Cycle.contradicts",
+        "Becoming.Gluing.Cycle.mixture_le",
+        "Becoming.Gluing.Cycle.miss",
+        "Becoming.Gluing.Cycle.pick",
+        "Becoming.Gluing.Cycle.value_pair",
+        "Becoming.Gluing.Cycle.walk",
+        "Becoming.Gluing.Cycle.walk_meets",
+        "Becoming.Gluing.Cycle.met_iff_even"
       ]
     },
     {
@@ -494,7 +494,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
       "declarations": [
         "Becoming.count",
         "Becoming.total_le",
@@ -505,7 +505,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
+      "sha256": "d6981e453120fd09887ab35e6d67e6703eda58368afde9c185912afdb0eaff65",
       "declarations": [
         "Becoming.Distinct",
         "Becoming.search",
@@ -516,7 +516,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
       "declarations": [
         "Becoming.total"
       ]
@@ -524,17 +524,17 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "fdc6d36933075d29deb11ca8e31ee2553912d39cd11275400c0c5886494b8c0e"
+      "sha256": "4f2053c41e5fb4d73494c83dbf5046a42adfb62ad4685f1a6c758e72542d1a38"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-15-delegated-choices.md",
@@ -600,12 +600,18 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Gluing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -619,14 +625,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Population",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -640,7 +646,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -784,6 +790,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Cycle.beq_of_ne (now Gluing.Cycle.beq_of_ne); Cycle.beq_self (now Gluing.Cycle.beq_self); Cycle.contradicts (now Gluing.Cycle.contradicts); Cycle.counts_even (now Gluing.Cycle.counts_even); Cycle.cross (now Gluing.Cycle.cross); Cycle.down (now Gluing.Cycle.down); Cycle.edges (now Gluing.Cycle.edges); Cycle.eq_of_even (now Gluing.Cycle.eq_of_even); Cycle.length_edges (now Gluing.Cycle.length_edges); Cycle.lt_of_mem_down (now Gluing.Cycle.lt_of_mem_down); Cycle.met_iff_even (now Gluing.Cycle.met_iff_even); Cycle.miss (now Gluing.Cycle.miss); Cycle.mixture_le (now Gluing.Cycle.mixture_le); Cycle.pick (now Gluing.Cycle.pick); Cycle.polarity (now Gluing.Cycle.polarity); Cycle.returns (now Gluing.Cycle.returns); Cycle.shift (now Gluing.Cycle.shift); Cycle.system (now Gluing.Cycle.system); Cycle.telescope (now Gluing.Cycle.telescope); Cycle.value_pair (now Gluing.Cycle.value_pair); Cycle.walk (now Gluing.Cycle.walk); Cycle.walk_meets (now Gluing.Cycle.walk_meets). Proof bindings (Flow.lean, Gluing.lean, Population.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: DELEGATED-CHOICES.md, names follow the R30 rename table; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Gluing.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Population.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Cycle.beq_of_ne（现为 Gluing.Cycle.beq_of_ne）；Cycle.beq_self（现为 Gluing.Cycle.beq_self）；Cycle.contradicts（现为 Gluing.Cycle.contradicts）；Cycle.counts_even（现为 Gluing.Cycle.counts_even）；Cycle.cross（现为 Gluing.Cycle.cross）；Cycle.down（现为 Gluing.Cycle.down）；Cycle.edges（现为 Gluing.Cycle.edges）；Cycle.eq_of_even（现为 Gluing.Cycle.eq_of_even）；Cycle.length_edges（现为 Gluing.Cycle.length_edges）；Cycle.lt_of_mem_down（现为 Gluing.Cycle.lt_of_mem_down）；Cycle.met_iff_even（现为 Gluing.Cycle.met_iff_even）；Cycle.miss（现为 Gluing.Cycle.miss）；Cycle.mixture_le（现为 Gluing.Cycle.mixture_le）；Cycle.pick（现为 Gluing.Cycle.pick）；Cycle.polarity（现为 Gluing.Cycle.polarity）；Cycle.returns（现为 Gluing.Cycle.returns）；Cycle.shift（现为 Gluing.Cycle.shift）；Cycle.system（现为 Gluing.Cycle.system）；Cycle.telescope（现为 Gluing.Cycle.telescope）；Cycle.value_pair（现为 Gluing.Cycle.value_pair）；Cycle.walk（现为 Gluing.Cycle.walk）；Cycle.walk_meets（现为 Gluing.Cycle.walk_meets）。证明绑定（Flow.lean、Gluing.lean、Population.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：DELEGATED-CHOICES.md，名称随 R30 改名表；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Gluing.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Population.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

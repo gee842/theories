@@ -74,7 +74,7 @@
       "en": "A class of ideals is closed where it is closed downward and under directed unions. It is closed exactly where it is the class of the ideals within a lower set of stretches; that set is unique and is the class's content, the stretches of its ideals.",
       "zh": "理想的类是闭的：它向下封闭且对有向并封闭。它闭恰在它是落在某个片段下集之内的理想之类之处；该集唯一，就是类的内容，即其理想的片段。",
       "declarations": [
-        "Becoming.Ideals.Closed",
+        "Becoming.Ideals.ScottClosed",
         "Becoming.Ideals.Lower",
         "Becoming.Ideals.Within",
         "Becoming.Ideals.Content",
@@ -124,7 +124,7 @@
       "declarations": [
         "Becoming.Ideals.Refutable",
         "Becoming.Ideals.Refutable.closed",
-        "Becoming.Ideals.Closed.refutable_iff",
+        "Becoming.Ideals.ScottClosed.refutable_iff",
         "Becoming.Ideals.within_refutable_iff",
         "Becoming.Ideals.refutable_closed_iff",
         "Becoming.Ideals.closed_refutable_iff"
@@ -213,9 +213,9 @@
       "en": "A history settles where one of its stretches reaches the latest horizon among them, and goes on where it has stretches beyond every horizon. One that settles is a finite history; one that goes on, with a stretch beyond each horizon picked, is the history of the run read off the picks.",
       "zh": "历史止定：它的某个片段达到其中最晚之界；历史继续：它有超出每一界的片段。止定的是有限历史；继续的，挑出超出每一界的片段，就是由所挑者读出之运行的历史。",
       "declarations": [
-        "Becoming.Stretches.Settles",
+        "Becoming.Stretches.HasLatest",
         "Becoming.Stretches.GoesOn",
-        "Becoming.Stretches.settles_principal",
+        "Becoming.Stretches.hasLatest_principal",
         "Becoming.Stretches.pickedRun",
         "Becoming.Stretches.goesOn_run"
       ]
@@ -225,7 +225,7 @@
       "zh": "所以对每个过程，止定的、或挑出片段而继续的历史，是有限历史或运行；有限历史止定，运行的历史继续。",
       "declarations": [
         "Becoming.Stretches.classification",
-        "Becoming.Stretches.principal_settles",
+        "Becoming.Stretches.principal_hasLatest",
         "Becoming.Stretches.run_goesOn"
       ]
     },
@@ -436,8 +436,8 @@
       "declarations": [
         "Becoming.Ideals.AdheresBy",
         "Becoming.Ideals.Avoids",
-        "Becoming.Ideals.Closed",
-        "Becoming.Ideals.Closed.refutable_iff",
+        "Becoming.Ideals.ScottClosed",
+        "Becoming.Ideals.ScottClosed.refutable_iff",
         "Becoming.Ideals.Compact",
         "Becoming.Ideals.CompactBasis",
         "Becoming.Ideals.Content",
@@ -499,7 +499,7 @@
         "Becoming.Ideals.unique_continuous_extension",
         "Becoming.Ideals.within_refutable_iff"
       ],
-      "sha256": "e5a22639f61ddca75b88eca04c105ecb83870953fee0e51c850bab1f1fc529e2"
+      "sha256": "551ca9ab4d45f307fa2c403a5caf1dab903d3c35772e9414de6321a7ffdcd923"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
@@ -523,7 +523,7 @@
         "Becoming.Run.stretches_le_iff",
         "Becoming.Run.stretches_not_principal",
         "Becoming.Stretches.GoesOn",
-        "Becoming.Stretches.Settles",
+        "Becoming.Stretches.HasLatest",
         "Becoming.Stretches.adherence_unique",
         "Becoming.Stretches.adheres_content",
         "Becoming.Stretches.adheres_iff_closed",
@@ -541,7 +541,7 @@
         "Becoming.Stretches.histories_representation",
         "Becoming.Stretches.inherited_histories",
         "Becoming.Stretches.pickedRun",
-        "Becoming.Stretches.principal_settles",
+        "Becoming.Stretches.principal_hasLatest",
         "Becoming.Stretches.refutable_closed_iff",
         "Becoming.Stretches.refutable_of_class",
         "Becoming.Stretches.run_goesOn",
@@ -551,7 +551,7 @@
         "Becoming.Stretches.sequences_le_iff",
         "Becoming.Stretches.sequences_same_iff",
         "Becoming.Stretches.sequences_within_iff",
-        "Becoming.Stretches.settles_principal",
+        "Becoming.Stretches.hasLatest_principal",
         "Becoming.Stretches.unitCut",
         "Becoming.Stretches.within_order_iff",
         "Becoming.Stretches.within_refutable",
@@ -560,7 +560,7 @@
         "Becoming.refutable_holds_iff",
         "Becoming.runClass"
       ],
-      "sha256": "48aee7d9177373f4a58bdb33afab7fdf940a0b77d9b57ef41f38a64058fffb5b"
+      "sha256": "74ea574974c39e59511d42a61984d3530a5c1e2a40a9ab724fa22f8cc6cc4075"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
@@ -584,7 +584,7 @@
         "Becoming.refutable_iff_refutableBy",
         "Becoming.stretchOrder"
       ],
-      "sha256": "2ebe444d4c7d60d00f17eda4f65852d41704528692c54fef773006714a3ff42b"
+      "sha256": "12a357aa3b8ea6aad625f599fabf7dc64a4fc4b0058173747488e916e9f17f0b"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryLanguages.lean",
@@ -655,12 +655,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3929fab3ae92b05cfea6ea7bad32f216ea36ef35f7da6f39490a141c38c04077"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-integrate-all.md",
@@ -675,7 +675,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdealsTraces.lean",
       "role": "proof",
-      "sha256": "a80e25cb90570d03dbcc766c994d84854f180311b6fa7fe97a3e658161201beb",
+      "sha256": "beaff249304d68b61a2588ee2c7866363b2ae8bb30ed2d0aceaceebbdde8414d",
       "declarations": [
         "Becoming.HistoryIdealsTraces.HistoryOf",
         "Becoming.HistoryIdealsTraces.classification",
@@ -709,26 +709,32 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T020248.454200Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Ideals",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T172902.786054Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.HistoryIdeals",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -777,7 +783,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdealsTraces.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.HistoryIdealsTraces",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -847,6 +853,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Ideals.Closed (now Ideals.ScottClosed); Ideals.Closed.refutable_iff (now Ideals.ScottClosed.refutable_iff); Stretches.Settles (now Stretches.HasLatest); Stretches.principal_settles (now Stretches.principal_hasLatest); Stretches.settles_principal (now Stretches.hasLatest_principal). Proof bindings (HistoryIdeals.lean, HistoryIdealsTraces.lean, Horizon.lean, Ideals.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: HistoryIdeals.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; HistoryIdealsTraces.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Horizon.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Ideals.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Ideals.Closed（现为 Ideals.ScottClosed）；Ideals.Closed.refutable_iff（现为 Ideals.ScottClosed.refutable_iff）；Stretches.Settles（现为 Stretches.HasLatest）；Stretches.principal_settles（现为 Stretches.principal_hasLatest）；Stretches.settles_principal（现为 Stretches.hasLatest_principal）。证明绑定（HistoryIdeals.lean、HistoryIdealsTraces.lean、Horizon.lean、Ideals.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：HistoryIdeals.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；HistoryIdealsTraces.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Horizon.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Ideals.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

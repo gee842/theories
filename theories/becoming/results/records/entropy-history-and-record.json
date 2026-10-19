@@ -18,7 +18,7 @@
       "zh": "家族自 T 起交换的历史从不缩减；这不用平衡。",
       "en": "The history of a family's exchanges since T never shrinks; this uses no balance premise.",
       "declarations": [
-        "Becoming.Flow.history",
+        "Becoming.Flow.exchangeCount",
         "Becoming.Flow.history_mono"
       ]
     },
@@ -42,7 +42,7 @@
       "en": "Zero: the first law at a fixed unit is nothing from nothing, losing nothing is getting back exactly, and dissipation is the first law with a least loss.",
       "declarations": [
         "Becoming.Flow.Gainless",
-        "Becoming.Flow.Lossless",
+        "Becoming.Flow.Conserving",
         "Becoming.Flow.Dissipative.gainless"
       ]
     },
@@ -117,7 +117,7 @@
       "declarations": [
         "Becoming.Web.Revisits",
         "Becoming.Flow.Balances.changes_within",
-        "Becoming.Flow.Balances.changes_within_lossless",
+        "Becoming.Flow.Balances.changes_within_conserving",
         "Becoming.Flow.Balances.rests_of_never_revisits",
         "Becoming.Flow.Balances.unending_change_revisits",
         "Becoming.World.arising_revisits",
@@ -196,11 +196,11 @@
       "zh": "在这一界限之内不合并的规律带回起点（起作用的是界限而不是不合并：后继规律不合并且永不回返）；当下遗忘所保留的历史；箭头或耗散排除不合并的规律。",
       "en": "Within that bound a law merging nothing brings the start back (the bound does the work, not losing alone: the successor law merges nothing and never returns); the present forgets the kept history; and an arrow or dissipation rules out a law merging nothing.",
       "declarations": [
-        "Becoming.Flow.Balances.returns_of_lossless",
+        "Becoming.Flow.Balances.returns_of_conserving",
         "Becoming.Law.succ_open",
         "Becoming.Flow.Balances.present_forgets",
-        "Becoming.Flow.Balances.not_lossless_of_arrow",
-        "Becoming.Flow.Balances.not_lossless_of_dissipates"
+        "Becoming.Flow.Balances.not_conserving_of_arrow",
+        "Becoming.Flow.Balances.not_conserving_of_dissipates"
       ]
     }
   ],
@@ -210,8 +210,8 @@
       "en": "Flow.history_mono itself uses no balance premise; connecting a level change to an exchange (Flow.Balances.exchanges_of_change), restoring levels under a reversal (Flow.Balances.restores_levels_not_history), and the other conditional results use balance and their stated local hypotheses."
     },
     {
-      "zh": "第一律（Flow.GainlessOn、Flow.Gainless：每个不重复的封闭家族得回的至多是所取）与无损（Flow.LosslessOn、Flow.Lossless）是定理的假设，不是公理；固定单位的自然数量。",
-      "en": "The first law (Flow.GainlessOn, Flow.Gainless: every closed family without repetition gets back at most what is taken from it) and losing nothing (Flow.LosslessOn, Flow.Lossless) are hypotheses of the theorems, not axioms; natural-number amounts at a fixed unit."
+      "zh": "第一律（Flow.GainlessOn、Flow.Gainless：每个不重复的封闭家族得回的至多是所取）与无损（Flow.ConservingOn、Flow.Conserving）是定理的假设，不是公理；固定单位的自然数量。",
+      "en": "The first law (Flow.GainlessOn, Flow.Gainless: every closed family without repetition gets back at most what is taken from it) and losing nothing (Flow.ConservingOn, Flow.Conserving) are hypotheses of the theorems, not axioms; natural-number amounts at a fixed unit."
     },
     {
       "zh": "确定的变化（Web.Determined：自 T 起下一步的构型是当前构型的函数）是合并定理的假设；脊柱的流以步为索引，不要求它。",
@@ -275,8 +275,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "detail": {
-        "zh": "Settling：一个单位传递一次，无损，从不复返而停息，不耗散，停息合并了构型，接受单位一边的水平是箭头（Settling.settles、Settling.merges）：从不复返不推出耗散。",
-        "en": "Settling: one unit passes once, losslessly; the world never revisits and rests, is not dissipative, its rest merges configurations, and the level of the side receiving the unit is an arrow (Settling.settles, Settling.merges): never revisiting does not give dissipation."
+        "zh": "Settling：一个单位传递一次，无损，从不复返而停息，不耗散，停息合并了构型，接受单位一边的水平是箭头（Entropy.Settling.settles、Entropy.Settling.merges）：从不复返不推出耗散。",
+        "en": "Settling: one unit passes once, losslessly; the world never revisits and rests, is not dissipative, its rest merges configurations, and the level of the side receiving the unit is an arrow (Entropy.Settling.settles, Entropy.Settling.merges): never revisiting does not give dissipation."
       }
     },
     {
@@ -314,9 +314,9 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
   "aliases": [
     "Becoming.Flow.Gainless",
-    "Becoming.Flow.Lossless",
+    "Becoming.Flow.Conserving",
     "Becoming.Flow.Reverses",
-    "Becoming.Flow.history",
+    "Becoming.Flow.exchangeCount",
     "Becoming.Flow.Balances.restores_levels_not_history",
     "Becoming.Flow.Reverses.gainlessOn_iff",
     "Becoming.Flow.Dissipative.irreversible",
@@ -340,9 +340,9 @@
     "Becoming.Passing.history_without_arrow",
     "Becoming.Gathering.gathers",
     "Becoming.Flow.Balances.recurs",
-    "Becoming.Flow.Balances.returns_of_lossless",
+    "Becoming.Flow.Balances.returns_of_conserving",
     "Becoming.Flow.Balances.present_forgets",
-    "Becoming.Flow.Balances.not_lossless_of_arrow",
+    "Becoming.Flow.Balances.not_conserving_of_arrow",
     "Becoming.Web.Arrow.marks",
     "Becoming.Flow.balancesOn_withRecord"
   ],
@@ -444,20 +444,20 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "role": "proof",
-      "sha256": "4ee06476e0c463b085124e253cdac10eab612e114179a7774e95183e34b4a72b",
+      "sha256": "74d044668c508278200b0afc0c01de558fcc298a12ce62f8ecb3666b0f260a04",
       "declarations": [
         "Becoming.Flow.GainlessOn",
-        "Becoming.Flow.LosslessOn",
+        "Becoming.Flow.ConservingOn",
         "Becoming.Flow.Gainless",
-        "Becoming.Flow.Lossless",
+        "Becoming.Flow.Conserving",
         "Becoming.Flow.Reverses",
         "Becoming.Flow.exchanges",
         "Becoming.Flow.DissipatesOn.gainlessOn",
         "Becoming.Flow.Dissipative.gainless",
-        "Becoming.Flow.LosslessOn.gainlessOn",
-        "Becoming.Flow.Lossless.gainless",
+        "Becoming.Flow.ConservingOn.gainlessOn",
+        "Becoming.Flow.Conserving.gainless",
         "Becoming.Flow.eq_zero_of_add_sign_le",
-        "Becoming.Flow.DissipatesOn.idle_of_lossless",
+        "Becoming.Flow.DissipatesOn.idle_of_conserving",
         "Becoming.Flow.Reverses.mem",
         "Becoming.Flow.Reverses.mem_back",
         "Becoming.Flow.Reverses.take_total",
@@ -505,7 +505,7 @@
         "Becoming.Flow.Balances.stock_lost",
         "Becoming.Flow.DissipatesOn.takers_le_lost",
         "Becoming.Flow.DissipatesOn.exchanges_le_takers",
-        "Becoming.Flow.LosslessOn.lost_zero",
+        "Becoming.Flow.ConservingOn.lost_zero",
         "Becoming.Flow.dissipated_succ",
         "Becoming.Flow.dissipated_mono",
         "Becoming.Flow.DissipatesOn.dissipated_rises",
@@ -515,7 +515,7 @@
         "Becoming.Flow.Balances.history_within",
         "Becoming.Flow.Balances.loss_ceases",
         "Becoming.Flow.residue",
-        "Becoming.Flow.losslessOn_withRecord_iff",
+        "Becoming.Flow.conservingOn_withRecord_iff",
         "Becoming.Flow.GainlessOn.conserves_residue",
         "Becoming.Flow.dissipatesOn_iff_conserved",
         "Becoming.Flow.GainlessOn.residues_lost",
@@ -566,7 +566,7 @@
         "Becoming.nonrising_between",
         "Becoming.Flow.Balances.never_revisits",
         "Becoming.Flow.Balances.changes_within",
-        "Becoming.Flow.Balances.changes_within_lossless",
+        "Becoming.Flow.Balances.changes_within_conserving",
         "Becoming.Flow.Balances.rests_of_never_revisits",
         "Becoming.Flow.Balances.unending_change_revisits",
         "Becoming.Web.Arrow",
@@ -591,13 +591,13 @@
         "Becoming.Flow.Balances.orbit_held",
         "Becoming.Flow.Balances.recurs",
         "Becoming.Flow.Balances.arrow_stops",
-        "Becoming.Flow.Balances.returns_of_lossless",
+        "Becoming.Flow.Balances.returns_of_conserving",
         "Becoming.Flow.Balances.present_forgets",
-        "Becoming.Flow.Balances.not_lossless_of_arrow",
-        "Becoming.Flow.Balances.not_lossless_of_dissipates",
+        "Becoming.Flow.Balances.not_conserving_of_arrow",
+        "Becoming.Flow.Balances.not_conserving_of_dissipates",
         "Becoming.mark_mono",
         "Becoming.le_of_add_le_add_left",
-        "Becoming.Flow.history",
+        "Becoming.Flow.exchangeCount",
         "Becoming.Flow.history_mono",
         "Becoming.Flow.CarriesHistory",
         "Becoming.Flow.exchanges_pos",
@@ -632,7 +632,7 @@
         "Becoming.Passing.total_at",
         "Becoming.Passing.holds_side",
         "Becoming.Passing.balances",
-        "Becoming.Passing.lossless",
+        "Becoming.Passing.conserving",
         "Becoming.Passing.closed",
         "Becoming.Passing.reverses",
         "Becoming.Passing.embodied",
@@ -651,19 +651,19 @@
         "Becoming.Passing.determined",
         "Becoming.Passing.apart",
         "Becoming.Passing.history_without_arrow",
-        "Becoming.Settling.settled",
-        "Becoming.Settling.level",
-        "Becoming.Settling.flow",
-        "Becoming.Settling.web",
-        "Becoming.Settling.world",
-        "Becoming.Settling.balances",
-        "Becoming.Settling.lossless",
-        "Becoming.Settling.closed",
-        "Becoming.Settling.changed",
-        "Becoming.Settling.rest",
-        "Becoming.Settling.third",
-        "Becoming.Settling.merges",
-        "Becoming.Settling.settles",
+        "Becoming.Entropy.Settling.settled",
+        "Becoming.Entropy.Settling.level",
+        "Becoming.Entropy.Settling.flow",
+        "Becoming.Entropy.Settling.web",
+        "Becoming.Entropy.Settling.world",
+        "Becoming.Entropy.Settling.balances",
+        "Becoming.Entropy.Settling.conserving",
+        "Becoming.Entropy.Settling.closed",
+        "Becoming.Entropy.Settling.changed",
+        "Becoming.Entropy.Settling.rest",
+        "Becoming.Entropy.Settling.third",
+        "Becoming.Entropy.Settling.merges",
+        "Becoming.Entropy.Settling.settles",
         "Becoming.Gathering.unit",
         "Becoming.Gathering.level",
         "Becoming.Gathering.flow",
@@ -676,7 +676,7 @@
         "Becoming.Gathering.unit_mem",
         "Becoming.Gathering.sums_eq",
         "Becoming.Gathering.balances",
-        "Becoming.Gathering.lossless",
+        "Becoming.Gathering.conserving",
         "Becoming.Gathering.enclosed",
         "Becoming.Gathering.gathers"
       ]
@@ -694,7 +694,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "68782bae82a196b91e71f22c593fcc58ea3260b503d94cf1bc8acb15f9d65157",
+      "sha256": "56b06dd533e36a4765c25fe57ed6e52f82bd8f63101aebc6fdf0cf2f5dfb05ca",
       "declarations": [
         "Becoming.Revisits",
         "Becoming.revisits_of_held",
@@ -729,7 +729,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "37c99f4c12d7fca90457cfe43a2a18fb8cc52dbe510e1919d5aa638653ec2ccf",
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79",
       "declarations": [
         "Becoming.Flow.DissipatesOn",
         "Becoming.Flow.Dissipative",
@@ -741,7 +741,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.taken",
@@ -753,7 +753,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "abe4f2fd28a48e759ab3af0a8757b94f49ee365d87f9142b47faa8c8ffa9237d",
+      "sha256": "78d3c86b42afecb2bfc36fe01e1996895975ecebb340fc96b611828b79faf259",
       "declarations": [
         "Becoming.World.Finite",
         "Becoming.World.Embodied",
@@ -766,7 +766,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
       "declarations": [
         "Becoming.World"
       ]
@@ -780,13 +780,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf",
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448",
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
       "declarations": []
     },
     {
@@ -848,12 +848,18 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Entropy",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -867,7 +873,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -881,28 +887,28 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1144,6 +1150,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: Law.Reachable.earlier (now Branching.Reachable.earlier). The sentences that said a removed name proved something cite the kept statement. Proof bindings (Dissipation.lean, Openness.lean, Recurrence.lean, Space.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged; Openness.lean, Flow.change_stops_unrefuted proved by Amounts.rests_unrefuted with no decision, statement unchanged; World.Finite.arising_iff_ceasing and World.Finite.comes_to_rest_unrefuted removed (one name per statement); Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; Space.lean, falls_stop_unrefuted proved as the whole-number instance of Amounts.rests_unrefuted, statement unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：Law.Reachable.earlier（现为 Branching.Reachable.earlier）。说删去之名证明了什么的句子改引保留的陈述。证明绑定（Dissipation.lean、Openness.lean、Recurrence.lean、Space.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变；Openness.lean，Flow.change_stops_unrefuted 由 Amounts.rests_unrefuted 不经判定证明，陈述不变；删去 World.Finite.arising_iff_ceasing 与 World.Finite.comes_to_rest_unrefuted（每个陈述一个名称）；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；Space.lean，falls_stop_unrefuted 作为 Amounts.rests_unrefuted 的整数实例证明，陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Flow.Balances.changes_within_lossless (now Flow.Balances.changes_within_conserving); Flow.Balances.not_lossless_of_arrow (now Flow.Balances.not_conserving_of_arrow); Flow.Balances.not_lossless_of_dissipates (now Flow.Balances.not_conserving_of_dissipates); Flow.Balances.returns_of_lossless (now Flow.Balances.returns_of_conserving); Flow.DissipatesOn.idle_of_lossless (now Flow.DissipatesOn.idle_of_conserving); Flow.Lossless (now Flow.Conserving); Flow.Lossless.gainless (now Flow.Conserving.gainless); Flow.LosslessOn (now Flow.ConservingOn); Flow.LosslessOn.gainlessOn (now Flow.ConservingOn.gainlessOn); Flow.LosslessOn.lost_zero (now Flow.ConservingOn.lost_zero); Flow.history (now Flow.exchangeCount); Flow.losslessOn_withRecord_iff (now Flow.conservingOn_withRecord_iff); Gathering.lossless (now Gathering.conserving); Passing.lossless (now Passing.conserving); Settling.balances (now Entropy.Settling.balances); Settling.changed (now Entropy.Settling.changed); Settling.closed (now Entropy.Settling.closed); Settling.flow (now Entropy.Settling.flow); Settling.level (now Entropy.Settling.level); Settling.lossless (now Entropy.Settling.conserving); Settling.merges (now Entropy.Settling.merges); Settling.rest (now Entropy.Settling.rest); Settling.settled (now Entropy.Settling.settled); Settling.settles (now Entropy.Settling.settles); Settling.third (now Entropy.Settling.third); Settling.web (now Entropy.Settling.web); Settling.world (now Entropy.Settling.world). Proof bindings (Dissipation.lean, Entropy.lean, Flow.lean, Recurrence.lean, Space.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Entropy.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Space.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Flow.Balances.changes_within_lossless（现为 Flow.Balances.changes_within_conserving）；Flow.Balances.not_lossless_of_arrow（现为 Flow.Balances.not_conserving_of_arrow）；Flow.Balances.not_lossless_of_dissipates（现为 Flow.Balances.not_conserving_of_dissipates）；Flow.Balances.returns_of_lossless（现为 Flow.Balances.returns_of_conserving）；Flow.DissipatesOn.idle_of_lossless（现为 Flow.DissipatesOn.idle_of_conserving）；Flow.Lossless（现为 Flow.Conserving）；Flow.Lossless.gainless（现为 Flow.Conserving.gainless）；Flow.LosslessOn（现为 Flow.ConservingOn）；Flow.LosslessOn.gainlessOn（现为 Flow.ConservingOn.gainlessOn）；Flow.LosslessOn.lost_zero（现为 Flow.ConservingOn.lost_zero）；Flow.history（现为 Flow.exchangeCount）；Flow.losslessOn_withRecord_iff（现为 Flow.conservingOn_withRecord_iff）；Gathering.lossless（现为 Gathering.conserving）；Passing.lossless（现为 Passing.conserving）；Settling.balances（现为 Entropy.Settling.balances）；Settling.changed（现为 Entropy.Settling.changed）；Settling.closed（现为 Entropy.Settling.closed）；Settling.flow（现为 Entropy.Settling.flow）；Settling.level（现为 Entropy.Settling.level）；Settling.lossless（现为 Entropy.Settling.conserving）；Settling.merges（现为 Entropy.Settling.merges）；Settling.rest（现为 Entropy.Settling.rest）；Settling.settled（现为 Entropy.Settling.settled）；Settling.settles（现为 Entropy.Settling.settles）；Settling.third（现为 Entropy.Settling.third）；Settling.web（现为 Entropy.Settling.web）；Settling.world（现为 Entropy.Settling.world）。证明绑定（Dissipation.lean、Entropy.lean、Flow.lean、Recurrence.lean、Space.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Entropy.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Space.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

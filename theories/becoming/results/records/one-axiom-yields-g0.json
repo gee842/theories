@@ -36,7 +36,7 @@
       "en": "Where a claim's significance from a standpoint in a valuation is that of its formation's continuation at its step, the continuation condition gives living significance at the level of claims (every living claim significant from every standpoint), self-significance at every standpoint, both neutralities (relational and standpoint) and a seed where some claim lives, with no connection used.",
       "declarations": [
         "Becoming.Valuation",
-        "Becoming.G0",
+        "Becoming.LivingSignificance",
         "Becoming.Valuation.premises_of_unrestricted"
       ]
     },
@@ -59,7 +59,7 @@
         "Becoming.Web.Admits",
         "Becoming.Web.Retains",
         "Becoming.Web.Adds",
-        "Becoming.Web.paths_g0_comparison"
+        "Becoming.Web.paths_livingSignificance_comparison"
       ]
     },
     {
@@ -74,7 +74,7 @@
       "en": "Positive relevance read from significance is realized living content whose continuation has significance from every standpoint; under the continuation condition it satisfies living significance on every frame for every reading of living, and it is the least positive relevance satisfying living significance: it holds of exactly the realized living content, and every positive relevance satisfying living significance holds wherever it does.",
       "declarations": [
         "Becoming.Frame.relevance",
-        "Becoming.g0_of_unrestricted",
+        "Becoming.livingSignificance_of_unrestricted",
         "Becoming.relevance_least"
       ]
     },
@@ -82,16 +82,16 @@
       "zh": "在主张是某步的形成、每个主张都在某处实现的框架上，延续条件恰在生生之意义以每个主张为活、以从每个立场的意义读正面相关时成立；每个网的水平路径都是这样的框架。",
       "en": "On a frame whose claims are formations at steps, each realized somewhere, the continuation condition holds exactly when living significance holds with every claim living and positive relevance read as significance from every standpoint; the level paths of every web are such a frame.",
       "declarations": [
-        "Becoming.unrestricted_iff_g0",
+        "Becoming.unrestricted_iff_livingSignificance",
         "Becoming.Web.paths_somewhere",
-        "Becoming.Web.unrestricted_iff_paths_g0"
+        "Becoming.Web.unrestricted_iff_paths_livingSignificance"
       ]
     },
     {
       "zh": "一切都有意义时，以裸意义确保根据就是确保任何新内容，所以以裸意义读的 A 给有通达、产生任何新内容（活的与否）的回应以理由，读在活的内容上的 A 给确保新的活的内容的回应以理由。",
       "en": "Where everything has significance, securing ground with bare significance is securing any new content, so A read with bare significance supplies a reason for every response with access yielding any new content, living or not, and A read on living content one for every response securing new living content.",
       "declarations": [
-        "Becoming.securesPositiveGround_total",
+        "Becoming.securesNewContent_total",
         "Becoming.articulatesLiving",
         "Becoming.articulates_total"
       ]
@@ -256,19 +256,19 @@
     "Becoming.Web.significant_of_unrestricted",
     "Becoming.Conditions.significant_of_unrestricted",
     "Becoming.Web.paths",
-    "Becoming.Web.paths_g0_comparison",
+    "Becoming.Web.paths_livingSignificance_comparison",
     "Becoming.Web.significance_undetermined",
     "Becoming.Frame.relevance",
     "Becoming.articulatesLiving",
     "Becoming.BareSignificance.valuation",
     "Becoming.BareSignificance.admitted",
     "Becoming.BareSignificance.before",
-    "Becoming.g0_of_unrestricted",
+    "Becoming.livingSignificance_of_unrestricted",
     "Becoming.relevance_least",
-    "Becoming.unrestricted_iff_g0",
+    "Becoming.unrestricted_iff_livingSignificance",
     "Becoming.Web.paths_somewhere",
-    "Becoming.Web.unrestricted_iff_paths_g0",
-    "Becoming.securesPositiveGround_total",
+    "Becoming.Web.unrestricted_iff_paths_livingSignificance",
+    "Becoming.securesNewContent_total",
     "Becoming.articulates_total",
     "Becoming.positioned_articulation_of_articulatesLiving",
     "Becoming.universal_reason_living",
@@ -279,15 +279,15 @@
     "Becoming.new_realization_of_unrestricted",
     "Becoming.contingent_generation_of_unrestricted",
     "Becoming.every_situated_position_has_reason_of_unrestricted",
-    "Becoming.g0_relevance_iff"
+    "Becoming.livingSignificance_relevance_iff"
   ],
   "dependencies": [
     {
       "id": "metaethical-core-characterization",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Valuation、Significant、SelfGood、Seed、transmits、shares、Neutral、Within、G0、Extension 与 Comparison；原刻画保持其范围。P44 另复用 SecuresPositiveGround、articulates、PositionedArticulation 与 universal_reason 的论证，给出读在活的内容上的 A 与不用连通的普遍理由。",
-        "en": "Reuses Valuation, Significant, SelfGood, Seed, transmits, shares, Neutral, Within, G0, Extension and Comparison; the earlier characterization keeps its scope. P44 also reuses SecuresPositiveGround, articulates, PositionedArticulation and the argument of universal_reason, giving A read on living content and the universal reason with no connection."
+        "zh": "复用 Valuation、Significant、SelfSignificance、Seed、transmits、shares、Neutral、Within、G0、Extension 与 Comparison；原刻画保持其范围。P44 另复用 SecuresNewContent、articulates、PositionedArticulation 与 universal_reason 的论证，给出读在活的内容上的 A 与不用连通的普遍理由。",
+        "en": "Reuses Valuation, Significant, SelfSignificance, Seed, transmits, shares, Neutral, Within, G0, Extension and Comparison; the earlier characterization keeps its scope. P44 also reuses SecuresNewContent, articulates, PositionedArticulation and the argument of universal_reason, giving A read on living content and the universal reason with no connection."
       },
       "interface": {
         "output": {
@@ -447,8 +447,8 @@
       "id": "positive-ground-open-futures",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "contingent_generation_of_unrestricted 以从意义读出的正面相关实例化 contingent_generation_has_positive_ground。",
-        "en": "contingent_generation_of_unrestricted instantiates contingent_generation_has_positive_ground with positive relevance read from significance."
+        "zh": "contingent_newContent_of_unrestricted 以从意义读出的正面相关实例化 contingent_generation_has_positive_ground。",
+        "en": "contingent_newContent_of_unrestricted instantiates contingent_generation_has_positive_ground with positive relevance read from significance."
       },
       "interface": {
         "output": {
@@ -515,8 +515,8 @@
     {
       "id": "protection-priority-excludes-uniform-aggregation",
       "detail": {
-        "zh": "那里的 g0_recognizes_traded_gains 以 G0 为假设，由同一实例化解除（未写成 Lean，模块不在桥接的导入之内）；g0_leaves_ordering_open 的模型中取处处成立的意义，公理成立，公理同样不约束次序。",
-        "en": "Its g0_recognizes_traded_gains takes G0 as a hypothesis and is discharged by the same instantiation (not written in Lean, the module being outside the bridge's imports); in the model of g0_leaves_ordering_open significance everywhere satisfies the axiom, which leaves the ordering open as well."
+        "zh": "那里的 g0_recognizes_traded_gains 以 G0 为假设，由同一实例化解除（未写成 Lean，模块不在桥接的导入之内）；livingSignificance_leaves_ordering_open 的模型中取处处成立的意义，公理成立，公理同样不约束次序。",
+        "en": "Its g0_recognizes_traded_gains takes G0 as a hypothesis and is discharged by the same instantiation (not written in Lean, the module being outside the bridge's imports); in the model of livingSignificance_leaves_ordering_open significance everywhere satisfies the axiom, which leaves the ordering open as well."
       }
     },
     {
@@ -552,7 +552,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "d917161f9088bb9fac7cb81d19073edb7cf9b0684941d5857a666342e10fda8c",
+      "sha256": "962dcce61063d96cfdc1785b77a7e524df0397e1d2d6ac25b03f9f18310ea7df",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.bounded",
@@ -567,12 +567,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "a097434899a37211935add41f6e5e88336bfc0286ede0776ebef48889cadced4",
+      "sha256": "456fff2668715d568bd3916ca95e15c20a0b0f71f035f5d32760f2f7ca32837e",
       "declarations": [
         "Becoming.Conditions.significant_of_unrestricted",
         "Becoming.Web.paths",
-        "Becoming.Web.paths_g0_comparison",
-        "Becoming.G0",
+        "Becoming.Web.paths_livingSignificance_comparison",
+        "Becoming.LivingSignificance",
         "Becoming.Extension",
         "Becoming.Comparison",
         "Becoming.Conditions.valuation"
@@ -581,13 +581,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "683adbf30ec5fb3a6784a1e355a175729da54a877e6f6b650b227749f33f1eb2",
+      "sha256": "64287f400d32ad4fa954e614aa17088085beadfa5ac101e98bc617fd66d46d56",
       "declarations": [
         "Becoming.Within",
         "Becoming.Neutral",
         "Becoming.Valuation",
         "Becoming.Valuation.Significant",
-        "Becoming.Valuation.SelfGood",
+        "Becoming.Valuation.SelfSignificance",
         "Becoming.Valuation.Seed",
         "Becoming.Valuation.transmits",
         "Becoming.Valuation.shares",
@@ -622,25 +622,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
       "role": "proof",
-      "sha256": "f5bffe78448db5731ab8a050dc2db1f03d45ff56a25e7e1b9eb64a798350db35",
+      "sha256": "996a292e6581262ab219effec8b48c3d5a6d99017ba24144bb3a2071e75b45d6",
       "declarations": [
         "Becoming.Frame.relevance",
         "Becoming.articulatesLiving",
         "Becoming.BareSignificance.valuation",
         "Becoming.BareSignificance.admitted",
         "Becoming.BareSignificance.before",
-        "Becoming.g0_of_unrestricted",
+        "Becoming.livingSignificance_of_unrestricted",
         "Becoming.relevance_least",
-        "Becoming.unrestricted_iff_g0",
+        "Becoming.unrestricted_iff_livingSignificance",
         "Becoming.Web.paths_somewhere",
-        "Becoming.Web.unrestricted_iff_paths_g0",
-        "Becoming.securesPositiveGround_total",
+        "Becoming.Web.unrestricted_iff_paths_livingSignificance",
+        "Becoming.securesNewContent_total",
         "Becoming.articulates_total",
         "Becoming.positioned_articulation_of_articulatesLiving",
         "Becoming.universal_reason_living",
         "Becoming.universal_reason_of_unrestricted",
         "Becoming.BareSignificance.bare_forces_reason",
-        "Becoming.g0_relevance_iff"
+        "Becoming.livingSignificance_relevance_iff"
       ]
     },
     {
@@ -688,12 +688,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
@@ -755,10 +755,10 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
       "role": "proof",
-      "sha256": "449da66544600601c6e18980509eeafd7f083a3aaaea18a5abca9848b292685d",
+      "sha256": "0c325c82c1fbb58aa61c40934238229a6ecfca7af5754bd53f8348eb2d4aad22",
       "declarations": [
         "Becoming.Extension.new_relevance",
-        "Becoming.G0.new_realization"
+        "Becoming.LivingSignificance.new_realization"
       ]
     },
     {
@@ -768,14 +768,14 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
       "role": "proof",
-      "sha256": "dbc0511c40bcc1a043809a145d98a30e4d7882ffc684c5ee22d30158facab9a0",
+      "sha256": "1dbef098b4640337d092165e7b5477e5535baa634e4f8955428ce2148b0f62da",
       "declarations": [
-        "Becoming.PositiveGround.contingent_generation_of_unrestricted",
-        "Becoming.PositiveGround.every_situated_position_has_reason_of_unrestricted",
-        "Becoming.PositiveGround.contingent_generation",
-        "Becoming.PositiveGround.every_situated_position_has_reason"
+        "Becoming.SecuredContent.contingent_newContent_of_unrestricted",
+        "Becoming.SecuredContent.every_situated_position_has_reason_of_unrestricted",
+        "Becoming.SecuredContent.contingent_newContent",
+        "Becoming.SecuredContent.every_situated_position_has_reason"
       ]
     },
     {
@@ -813,19 +813,25 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -853,7 +859,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Relevance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -888,21 +894,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Alternatives",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SecuredContent",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1273,6 +1279,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: G0 (now LivingSignificance); G0.new_realization (now LivingSignificance.new_realization); PositiveGround (now SecuredContent); PositiveGround.contingent_generation (now SecuredContent.contingent_newContent); PositiveGround.contingent_generation_of_unrestricted (now SecuredContent.contingent_newContent_of_unrestricted); PositiveGround.every_situated_position_has_reason (now SecuredContent.every_situated_position_has_reason); PositiveGround.every_situated_position_has_reason_of_unrestricted (now SecuredContent.every_situated_position_has_reason_of_unrestricted); PositiveGround.lean (now SecuredContent.lean); SecuresPositiveGround (now SecuresNewContent); SelfGood (now SelfSignificance); Valuation.SelfGood (now Valuation.SelfSignificance); Web.paths_g0_comparison (now Web.paths_livingSignificance_comparison); Web.unrestricted_iff_paths_g0 (now Web.unrestricted_iff_paths_livingSignificance); contingent_generation_of_unrestricted (now contingent_newContent_of_unrestricted); g0_leaves_ordering_open (now livingSignificance_leaves_ordering_open); g0_of_unrestricted (now livingSignificance_of_unrestricted); g0_relevance_iff (now livingSignificance_relevance_iff); securesPositiveGround_total (now securesNewContent_total); unrestricted_iff_g0 (now unrestricted_iff_livingSignificance). Proof bindings (Alternatives.lean, Metaethics.lean, Relevance.lean, SecuredContent.lean, Significance.lean, ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Alternatives.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Metaethics.lean, G0 is LivingSignificance, g0_* livingSignificance_*, Valuation.SelfGood Valuation.SelfSignificance, SecuresPositiveGround SecuresNewContent, the binder positive relevance; the module header is structural; statements unchanged; Relevance.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; SecuredContent.lean, the module and namespace PositiveGround renamed SecuredContent, contingent_generation* contingent_newContent*, the binder positive relevance; statements unchanged; Significance.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：G0（现为 LivingSignificance）；G0.new_realization（现为 LivingSignificance.new_realization）；PositiveGround（现为 SecuredContent）；PositiveGround.contingent_generation（现为 SecuredContent.contingent_newContent）；PositiveGround.contingent_generation_of_unrestricted（现为 SecuredContent.contingent_newContent_of_unrestricted）；PositiveGround.every_situated_position_has_reason（现为 SecuredContent.every_situated_position_has_reason）；PositiveGround.every_situated_position_has_reason_of_unrestricted（现为 SecuredContent.every_situated_position_has_reason_of_unrestricted）；PositiveGround.lean（现为 SecuredContent.lean）；SecuresPositiveGround（现为 SecuresNewContent）；SelfGood（现为 SelfSignificance）；Valuation.SelfGood（现为 Valuation.SelfSignificance）；Web.paths_g0_comparison（现为 Web.paths_livingSignificance_comparison）；Web.unrestricted_iff_paths_g0（现为 Web.unrestricted_iff_paths_livingSignificance）；contingent_generation_of_unrestricted（现为 contingent_newContent_of_unrestricted）；g0_leaves_ordering_open（现为 livingSignificance_leaves_ordering_open）；g0_of_unrestricted（现为 livingSignificance_of_unrestricted）；g0_relevance_iff（现为 livingSignificance_relevance_iff）；securesPositiveGround_total（现为 securesNewContent_total）；unrestricted_iff_g0（现为 unrestricted_iff_livingSignificance）。证明绑定（Alternatives.lean、Metaethics.lean、Relevance.lean、SecuredContent.lean、Significance.lean、ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Alternatives.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Metaethics.lean，G0 现为 LivingSignificance，g0_* 现为 livingSignificance_*，Valuation.SelfGood 现为 Valuation.SelfSignificance，SecuresPositiveGround 现为 SecuresNewContent，约束变量 positive 现为 relevance；模块标题改为结构性的；陈述不变；Relevance.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；SecuredContent.lean，模块与命名空间 PositiveGround 改名为 SecuredContent，contingent_generation* 现为 contingent_newContent*，约束变量 positive 现为 relevance；陈述不变；Significance.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

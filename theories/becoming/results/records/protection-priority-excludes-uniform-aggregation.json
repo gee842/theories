@@ -90,8 +90,8 @@
     "en": "Checks one constructed situation; what it excludes is natural-number (unit-step) scores, not aggregation in general. It does not show that J2 is right elsewhere, that the protected condition is basic, or that bounded-sensitivity rivals fail; in this situation the two cannot be told apart. The record ID's \"uniform aggregation\" means unit-step aggregation."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 检查通过（运行 20261008T192627.406862Z）：ProtectionPriorityRival 15项定理／25项声明审计（11项无依赖；1项 propext；5项 propext 与 Quot.sound；8项另含 Classical.choice）；无自定义公理、sorry 或 native_decide；与 RenewingFormation 同一回执及控制例。2026-10-09 独立审查附更正后接受了首版（10项定理）；更名、新增 g0_leaves_ordering_open 与有界评分定理均经 Lean 检查，审查者未复审更正版；见 GENERATIVE-DISCRIMINATION-REVIEW。",
-    "en": "Successful Lean 4.29.1 check (run 20261008T192627.406862Z): ProtectionPriorityRival 15 theorems/25 declaration audits (11 with no dependency, 1 propext, 5 propext and Quot.sound, 8 also Classical.choice); no custom axiom, sorry or native_decide; same receipt and controls as RenewingFormation. An independent review on 9 October accepted the first version (10 theorems) with corrections; the renames, g0_leaves_ordering_open and the bounded-score theorems are Lean-checked, but the reviewer did not re-review the corrected version; see GENERATIVE-DISCRIMINATION-REVIEW."
+    "zh": "Lean 4.29.1 检查通过（运行 20261008T192627.406862Z）：ProtectionPriorityRival 15项定理／25项声明审计（11项无依赖；1项 propext；5项 propext 与 Quot.sound；8项另含 Classical.choice）；无自定义公理、sorry 或 native_decide；与 RenewingFormation 同一回执及控制例。2026-10-09 独立审查附更正后接受了首版（10项定理）；更名、新增 livingSignificance_leaves_ordering_open 与有界评分定理均经 Lean 检查，审查者未复审更正版；见 GENERATIVE-DISCRIMINATION-REVIEW。",
+    "en": "Successful Lean 4.29.1 check (run 20261008T192627.406862Z): ProtectionPriorityRival 15 theorems/25 declaration audits (11 with no dependency, 1 propext, 5 propext and Quot.sound, 8 also Classical.choice); no custom axiom, sorry or native_decide; same receipt and controls as RenewingFormation. An independent review on 9 October accepted the first version (10 theorems) with corrections; the renames, livingSignificance_leaves_ordering_open and the bounded-score theorems are Lean-checked, but the reviewer did not re-review the corrected version; see GENERATIVE-DISCRIMINATION-REVIEW."
   },
   "references": [
     {
@@ -145,7 +145,7 @@
     {
       "path": "theories/becoming/chapters/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "67c2b988822ac12e40f4654346632a7d0ddab4353103df51869b98e75773e57f",
+      "sha256": "4eca9b3040f3b25cf9981bb43acb3767c818e847d04e1e2d9cc1e1a47a2283d4",
       "declarations": []
     },
     {
@@ -163,11 +163,11 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "a097434899a37211935add41f6e5e88336bfc0286ede0776ebef48889cadced4",
+      "sha256": "456fff2668715d568bd3916ca95e15c20a0b0f71f035f5d32760f2f7ca32837e",
       "declarations": [
         "Becoming.Comparison.climbs",
         "Becoming.Comparison.outgrows",
-        "Becoming.G0",
+        "Becoming.LivingSignificance",
         "Becoming.Comparison",
         "Becoming.Extension"
       ]
@@ -214,18 +214,18 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
       "role": "proof",
-      "sha256": "eeea6e78d049be462575a142ed25676efa07763ddbe6037766af3937a4d0f5e9",
+      "sha256": "6a55541a983ca38a56daf3f78985a374cb7ed3c66f76c8165bf1ac7ac1444e80",
       "declarations": [
         "Becoming.ScoreRepresentation.above_satisfies_comparison",
         "Becoming.ScoreRepresentation.never_outranked",
-        "Becoming.ScoreRepresentation.g0_leaves_ordering_open",
+        "Becoming.ScoreRepresentation.livingSignificance_leaves_ordering_open",
         "Becoming.ScoreRepresentation.comparison_does_not_yield_priority",
         "Becoming.ScoreRepresentation.every_nat_score_outranks",
         "Becoming.ScoreRepresentation.no_nat_score_represents",
         "Becoming.ScoreRepresentation.above_iff",
         "Becoming.ScoreRepresentation.ratio_agrees",
         "Becoming.ScoreRepresentation.bounded_score_represents",
-        "Becoming.ScoreRepresentation.g0_recognizes_gains",
+        "Becoming.ScoreRepresentation.livingSignificance_recognizes_gains",
         "Becoming.ScoreRepresentation.successor_extends"
       ]
     },
@@ -256,6 +256,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
     }
   ],
@@ -290,7 +296,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ScoreRepresentation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -304,7 +310,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -405,6 +411,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: climbs, outgrows, G0, Comparison, Extension from Metaethics.lean to ValuationFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Lexical.lean, ScoreRepresentation.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: G0 (now LivingSignificance); ScoreRepresentation.g0_leaves_ordering_open (now ScoreRepresentation.livingSignificance_leaves_ordering_open); ScoreRepresentation.g0_recognizes_gains (now ScoreRepresentation.livingSignificance_recognizes_gains); g0_leaves_ordering_open (now livingSignificance_leaves_ordering_open). Proof bindings (ScoreRepresentation.lean, ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: ScoreRepresentation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; G0-WARRANT.md, names follow the R30 rename table. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：G0（现为 LivingSignificance）；ScoreRepresentation.g0_leaves_ordering_open（现为 ScoreRepresentation.livingSignificance_leaves_ordering_open）；ScoreRepresentation.g0_recognizes_gains（现为 ScoreRepresentation.livingSignificance_recognizes_gains）；g0_leaves_ordering_open（现为 livingSignificance_leaves_ordering_open）。证明绑定（ScoreRepresentation.lean、ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：ScoreRepresentation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；G0-WARRANT.md，名称随 R30 改名表。论断不变。"
     }
   ]
 }

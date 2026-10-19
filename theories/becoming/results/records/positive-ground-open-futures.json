@@ -35,7 +35,7 @@
     "zh": "生成内容通过同一活动内已有分支、生产关系与共同回应形成。每个固定生产模型都容许两条真实未来分支；两个仍活的幅度模型另表认识未定。证据过滤不执行回应，认识增强不冒充新增生。已形成感知、预测和探究结果提供可见未来的解释根据；除回执中明确编译的真值保持与范围传递例外，不宣称新完成全部同一历史的机制组合。",
     "en": "New content forms through prior activity, a productive relation and the common response in one unfolding. Each fixed productive model admits two real future branches; two surviving magnitude models separately represent epistemic uncertainty. Evidence filtering does not perform the response, so increased recognition is not new life. Existing formed perception, prediction and inquiry results ground visible futures interpretively; apart from the explicitly compiled truth-retention and scope-transfer examples, no new full same-history mechanism composition is asserted."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
   "aliases": [
     "PositiveGroundUncertainty.positive_integral_has_positive_occurrence",
     "PositiveGroundUncertainty.contingent_generation_has_positive_ground",
@@ -87,8 +87,8 @@
     {
       "id": "one-axiom-yields-g0",
       "detail": {
-        "zh": "在延续条件（Becoming.Significance 的 Unrestricted）之下，偶然生成具有以意义读出的正面根据（contingent_generation_of_unrestricted）。",
-        "en": "Under the continuation condition (`Unrestricted`, Becoming.Significance), contingent generation has positive ground read from significance (contingent_generation_of_unrestricted)."
+        "zh": "在延续条件（Becoming.Significance 的 Unrestricted）之下，偶然生成具有以意义读出的正面根据（contingent_newContent_of_unrestricted）。",
+        "en": "Under the continuation condition (`Unrestricted`, Becoming.Significance), contingent generation has positive ground read from significance (contingent_newContent_of_unrestricted)."
       }
     }
   ],
@@ -235,9 +235,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "a097434899a37211935add41f6e5e88336bfc0286ede0776ebef48889cadced4",
+      "sha256": "456fff2668715d568bd3916ca95e15c20a0b0f71f035f5d32760f2f7ca32837e",
       "declarations": [
-        "Becoming.G0"
+        "Becoming.LivingSignificance"
       ]
     },
     {
@@ -251,7 +251,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
       "role": "proof",
-      "sha256": "736684efb2ae75a365cc5389405d4c5e5ed8fcde33e6dcafc5bd3f724b60c12a",
+      "sha256": "82457897cff6be2468ce7b78cdf297010b5faccc2982f223063e5594a9eaf122",
       "declarations": [
         "Becoming.preserves_of_transport",
         "Becoming.Frame.map_preserves"
@@ -274,20 +274,20 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
       "role": "proof",
-      "sha256": "dbc0511c40bcc1a043809a145d98a30e4d7882ffc684c5ee22d30158facab9a0",
+      "sha256": "1dbef098b4640337d092165e7b5477e5535baa634e4f8955428ce2148b0f62da",
       "declarations": [
-        "Becoming.PositiveGround.positive_integral_has_positive_occurrence",
-        "Becoming.PositiveGround.contingent_generation",
-        "Becoming.PositiveGround.certified_integral_reason",
-        "Becoming.PositiveGround.same_response_without_fixed_form",
-        "Becoming.PositiveGround.positive_occurrence_correspondence",
-        "Becoming.PositiveGround.positive_integral_and_adverse_full_change",
-        "Becoming.PositiveGround.response_preserves_joint_openness",
-        "Becoming.PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses",
-        "Becoming.PositiveGround.wider_scope_can_require_certificate_retraction",
-        "Becoming.PositiveGround.contingent_generation_of_unrestricted"
+        "Becoming.SecuredContent.positive_integral_has_positive_occurrence",
+        "Becoming.SecuredContent.contingent_newContent",
+        "Becoming.SecuredContent.certified_integral_reason",
+        "Becoming.SecuredContent.same_response_without_fixed_form",
+        "Becoming.SecuredContent.positive_occurrence_correspondence",
+        "Becoming.SecuredContent.positive_integral_and_adverse_full_change",
+        "Becoming.SecuredContent.response_preserves_joint_openness",
+        "Becoming.SecuredContent.acquired_evidence_secures_content_and_leaves_both_opennesses",
+        "Becoming.SecuredContent.wider_scope_can_require_certificate_retraction",
+        "Becoming.SecuredContent.contingent_newContent_of_unrestricted"
       ]
     },
     {
@@ -306,6 +306,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
     }
   ],
@@ -375,7 +381,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bundles",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -388,15 +394,15 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SecuredContent",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -495,6 +501,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: G0 from Metaethics.lean to ValuationFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Bundles.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: G0 (now LivingSignificance); PositiveGround (now SecuredContent); PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses (now SecuredContent.acquired_evidence_secures_content_and_leaves_both_opennesses); PositiveGround.certified_integral_reason (now SecuredContent.certified_integral_reason); PositiveGround.contingent_generation (now SecuredContent.contingent_newContent); PositiveGround.contingent_generation_of_unrestricted (now SecuredContent.contingent_newContent_of_unrestricted); PositiveGround.lean (now SecuredContent.lean); PositiveGround.positive_integral_and_adverse_full_change (now SecuredContent.positive_integral_and_adverse_full_change); PositiveGround.positive_integral_has_positive_occurrence (now SecuredContent.positive_integral_has_positive_occurrence); PositiveGround.positive_occurrence_correspondence (now SecuredContent.positive_occurrence_correspondence); PositiveGround.response_preserves_joint_openness (now SecuredContent.response_preserves_joint_openness); PositiveGround.same_response_without_fixed_form (now SecuredContent.same_response_without_fixed_form); PositiveGround.wider_scope_can_require_certificate_retraction (now SecuredContent.wider_scope_can_require_certificate_retraction); contingent_generation_of_unrestricted (now contingent_newContent_of_unrestricted). Proof bindings (Bundles.lean, SecuredContent.lean, ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Bundles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; SecuredContent.lean, the module and namespace PositiveGround renamed SecuredContent, contingent_generation* contingent_newContent*, the binder positive relevance; statements unchanged; ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：G0（现为 LivingSignificance）；PositiveGround（现为 SecuredContent）；PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses（现为 SecuredContent.acquired_evidence_secures_content_and_leaves_both_opennesses）；PositiveGround.certified_integral_reason（现为 SecuredContent.certified_integral_reason）；PositiveGround.contingent_generation（现为 SecuredContent.contingent_newContent）；PositiveGround.contingent_generation_of_unrestricted（现为 SecuredContent.contingent_newContent_of_unrestricted）；PositiveGround.lean（现为 SecuredContent.lean）；PositiveGround.positive_integral_and_adverse_full_change（现为 SecuredContent.positive_integral_and_adverse_full_change）；PositiveGround.positive_integral_has_positive_occurrence（现为 SecuredContent.positive_integral_has_positive_occurrence）；PositiveGround.positive_occurrence_correspondence（现为 SecuredContent.positive_occurrence_correspondence）；PositiveGround.response_preserves_joint_openness（现为 SecuredContent.response_preserves_joint_openness）；PositiveGround.same_response_without_fixed_form（现为 SecuredContent.same_response_without_fixed_form）；PositiveGround.wider_scope_can_require_certificate_retraction（现为 SecuredContent.wider_scope_can_require_certificate_retraction）；contingent_generation_of_unrestricted（现为 contingent_newContent_of_unrestricted）。证明绑定（Bundles.lean、SecuredContent.lean、ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Bundles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；SecuredContent.lean，模块与命名空间 PositiveGround 改名为 SecuredContent，contingent_generation* 现为 contingent_newContent*，约束变量 positive 现为 relevance；陈述不变；ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     }
   ],
   "overview": {

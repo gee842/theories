@@ -2,6 +2,8 @@
 """R30 (20 October 2026), one notion, one name: rename, rebind and re-point the records.
 
 Usage (from the checkout root): python3 -B rebind.py BASE RECEIPT_ID [RENDER_LOG]
+The first pass (no RENDER_LOG) renames and rebinds; the second, after `make research-render`, only re-points the
+references the render log reports drifted, adding to the R30 history note.
 
 BASE is the main commit R30 was built on; RECEIPT_ID the passing core receipt of R30's checker run.
 
@@ -88,7 +90,8 @@ DOCS = {
                                                                  'R30 改名表并入在 FIXES 之后施行的改名'),
     RF + 'development/y1-changes/passages.json': ('the declarations and the names in four readings follow the R30 table',
                                                   '四个读法中的声明与名称随 R30 改名表'),
-    STUDY: ('section 221 added', '新增第 221 节'),
+    STUDY: ('section 221 added; the links of earlier sections to the renamed modules\' files follow the table, their text unchanged',
+            '新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变'),
     PKG + 'Becoming.lean': ('imports and notes follow the module renames', '导入与说明随模块改名'),
     PKG + 'README.md': ('module rows, declaration names and the import order follow R30', '模块行、声明名与导入次序随 R30'),
     PKG + 'README.zh.md': ('module rows, declaration names and the import order follow R30', '模块行、声明名与导入次序随 R30'),
@@ -167,7 +170,9 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     d0 = json.load(open(f))
     before = json.dumps(d0, ensure_ascii=False)
     hits = []
-    d = walk(d0, None, hits)
+    # The renaming is not idempotent (a namespace move would be applied twice), so the second pass, with the
+    # render log, only re-points.
+    d = walk(d0, None, hits) if not DRIFT else d0
     rid = d['id']
     for x in d.get('aliases') or []:
         assert x not in REN, (rid, x)

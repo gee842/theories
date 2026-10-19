@@ -19,8 +19,8 @@
       "en": "An extrapolation proposes a value of the feature from the prefix of a course through the map: the course through the map of a configuration's orbit (course); proposing the feature's value at every step from T on is resting from T (RestsFrom), and resting is resting from some T (Rests).",
       "declarations": [
         "Becoming.Learnable.course",
-        "Becoming.Learnable.RestsFrom",
-        "Becoming.Learnable.Rests"
+        "Becoming.Learnable.PredictsFrom",
+        "Becoming.Learnable.Predicts"
       ]
     },
     {
@@ -36,17 +36,17 @@
       "zh": "在两处都停息的外推，其特征从某步起一致；所以特征在任意晚处不同时，没有外推在两处都停息；律使两个配置不变、映射不分开它们而特征不同时即如此。",
       "en": "An extrapolation resting on both has features agreeing from some step on; so where they differ at arbitrarily late steps no extrapolation rests on both, already where the law leaves both configurations unchanged, the map does not tell them apart and their features differ.",
       "declarations": [
-        "Becoming.Learnable.agree_of_rests_both",
-        "Becoming.Learnable.not_rests_on_both",
+        "Becoming.Learnable.agree_of_predicts_both",
+        "Becoming.Learnable.not_predicts_on_both",
         "Becoming.Learnable.orbit_of_still",
-        "Becoming.Learnable.still_not_rests_on_both"
+        "Becoming.Learnable.still_not_predicts_on_both"
       ]
     },
     {
       "zh": "特征从映射读出时，经映射之值上的套索候选的外推，其所提出的值经读出，在被列表所持的世界中从辨识的界起停息；它不被给予配置、其数目或特征的任何值。",
       "en": "Where the feature is read off the map, the extrapolation over the lasso candidates on the values through the map, its proposals read off, rests on the feature in every world a list holds from the identification bound on; it is given neither the configurations, nor how many there are, nor any value of the feature.",
       "declarations": [
-        "Becoming.Learnable.rests_through"
+        "Becoming.Learnable.predicts_through"
       ]
     },
     {
@@ -64,7 +64,7 @@
       "en": "Features going alike across the map's lumping are learnable; under a law leaving every configuration unchanged, exactly those are.",
       "declarations": [
         "Becoming.Learnable.learnable_of_lumped",
-        "Becoming.Learnable.still_lumped_of_rests",
+        "Becoming.Learnable.still_lumped_of_predicts",
         "Becoming.Learnable.still_learnable_iff_lumped"
       ]
     },
@@ -74,9 +74,9 @@
       "declarations": [
         "Becoming.Learnable.Pair.still",
         "Becoming.Learnable.Pair.stays",
-        "Becoming.Learnable.Pair.first_not_rests",
+        "Becoming.Learnable.Pair.first_not_predicts",
         "Becoming.Learnable.Pair.not_lumped",
-        "Becoming.Learnable.Pair.whole_rests"
+        "Becoming.Learnable.Pair.whole_predicts"
       ]
     },
     {
@@ -84,16 +84,16 @@
       "en": "Along runs: a determined law's run gives an extrapolation its orbit's prefix, so the extrapolation rests on the run exactly where it rests on that orbit; runs beginning alike in the map's frame give every extrapolation one prefix; where a list holds the world, a feature is learnable along every run exactly where such runs have features agreeing from some step on, under a still law where it goes alike across the map's lumping.",
       "declarations": [
         "Becoming.LearnableRuns.course",
-        "Becoming.LearnableRuns.RestsFrom",
-        "Becoming.LearnableRuns.Rests",
+        "Becoming.LearnableRuns.PredictsFrom",
+        "Becoming.LearnableRuns.Predicts",
         "Becoming.LearnableRuns.prefix_eq",
-        "Becoming.LearnableRuns.restsFrom_iff",
-        "Becoming.LearnableRuns.rests_iff",
+        "Becoming.LearnableRuns.predictsFrom_iff",
+        "Becoming.LearnableRuns.predicts_iff",
         "Becoming.LearnableRuns.course_same",
         "Becoming.LearnableRuns.prefixes_same",
-        "Becoming.LearnableRuns.agree_of_rests_both",
-        "Becoming.LearnableRuns.not_rests_on_both",
-        "Becoming.LearnableRuns.rests_through",
+        "Becoming.LearnableRuns.agree_of_predicts_both",
+        "Becoming.LearnableRuns.not_predicts_on_both",
+        "Becoming.LearnableRuns.predicts_through",
         "Becoming.LearnableRuns.learnable_iff",
         "Becoming.LearnableRuns.still_learnable_iff_lumped"
       ]
@@ -101,8 +101,8 @@
   ],
   "hypotheses": [
     {
-      "zh": "不加公理。经映射之值的可判定相等（DecidableEq R）只作为套索外推与 fromLaw 的条件，在 rests_through 的陈述与 learnable_iff 的证明中；特征之值的可判定相等（DecidableEq V）只在 missed_on_one。",
-      "en": "No axiom. Decidable equality of the values through the map (DecidableEq R) appears only as a condition of the lasso extrapolation and of fromLaw, in the statement of rests_through and the proof of learnable_iff; decidable equality of feature values (DecidableEq V) only in missed_on_one."
+      "zh": "不加公理。经映射之值的可判定相等（DecidableEq R）只作为套索外推与 fromLaw 的条件，在 predicts_through 的陈述与 learnable_iff 的证明中；特征之值的可判定相等（DecidableEq V）只在 missed_on_one。",
+      "en": "No axiom. Decidable equality of the values through the map (DecidableEq R) appears only as a condition of the lasso extrapolation and of fromLaw, in the statement of predicts_through and the proof of learnable_iff; decidable equality of feature values (DecidableEq V) only in missed_on_one."
     },
     {
       "zh": "每条定理的条件写在其中：经映射的未来相同；特征在任意晚处不同；轨道或世界被列表所持；特征从映射读出（val s = g (reg s)）；律使配置不变。",
@@ -118,7 +118,7 @@
       "zh": "充分一侧的外推依律、映射、特征与列表所建；不被给予什么的外推只对从映射现在之值读出的特征证明。",
       "en": "The extrapolation of the sufficient side is built from the law, the map, the feature and the list; an extrapolation given nothing is shown only for features read off the map's present value.",
       "kind": "scope",
-      "witness": "Becoming.Learnable.rests_through"
+      "witness": "Becoming.Learnable.predicts_through"
     },
     {
       "zh": "一般的律下，可学不推出经映射之归并同去：读出映射下一值的特征可学而不必同去。",
@@ -145,8 +145,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
       "detail": {
-        "zh": "Pair：映射取第一个坐标时，没有外推在 (true, false) 与 (true, true) 两处都在第二个坐标上停息（Pair.first_not_rests）。",
-        "en": "Pair: with the map taking the first coordinate, no extrapolation rests on the second at both (true, false) and (true, true) (Pair.first_not_rests)."
+        "zh": "Pair：映射取第一个坐标时，没有外推在 (true, false) 与 (true, true) 两处都在第二个坐标上停息（Pair.first_not_predicts）。",
+        "en": "Pair: with the map taking the first coordinate, no extrapolation rests on the second at both (true, false) and (true, true) (Pair.first_not_predicts)."
       }
     }
   ],
@@ -318,20 +318,20 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
       "role": "proof",
-      "sha256": "52e663ec60662412b362dd242ef444f1a1de22d9a46f9bfb6cf9fa69c7629ca6",
+      "sha256": "8de70e5d4dcb020ee2e9325cb6ebb103122b3083c02b769e59df1c5316f70cee",
       "declarations": [
         "Becoming.Learnable.course",
-        "Becoming.Learnable.RestsFrom",
-        "Becoming.Learnable.Rests",
+        "Becoming.Learnable.PredictsFrom",
+        "Becoming.Learnable.Predicts",
         "Becoming.Learnable.prefixes_same",
         "Becoming.Learnable.claim_not_right_on_both",
         "Becoming.Learnable.missed_on_one",
-        "Becoming.Learnable.agree_of_rests_both",
-        "Becoming.Learnable.not_rests_on_both",
+        "Becoming.Learnable.agree_of_predicts_both",
+        "Becoming.Learnable.not_predicts_on_both",
         "Becoming.Learnable.orbit_of_still",
-        "Becoming.Learnable.still_not_rests_on_both",
-        "Becoming.Learnable.still_lumped_of_rests",
-        "Becoming.Learnable.rests_through",
+        "Becoming.Learnable.still_not_predicts_on_both",
+        "Becoming.Learnable.still_lumped_of_predicts",
+        "Becoming.Learnable.predicts_through",
         "Becoming.Learnable.firstFit_congr",
         "Becoming.Learnable.fromLawAt",
         "Becoming.Learnable.fromLaw",
@@ -340,9 +340,9 @@
         "Becoming.Learnable.still_learnable_iff_lumped",
         "Becoming.Learnable.Pair.still",
         "Becoming.Learnable.Pair.stays",
-        "Becoming.Learnable.Pair.first_not_rests",
+        "Becoming.Learnable.Pair.first_not_predicts",
         "Becoming.Learnable.Pair.not_lumped",
-        "Becoming.Learnable.Pair.whole_rests"
+        "Becoming.Learnable.Pair.whole_predicts"
       ]
     },
     {
@@ -385,7 +385,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "68782bae82a196b91e71f22c593fcc58ea3260b503d94cf1bc8acb15f9d65157",
+      "sha256": "56b06dd533e36a4765c25fe57ed6e52f82bd8f63101aebc6fdf0cf2f5dfb05ca",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.Law.SameFuture"
@@ -399,12 +399,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
@@ -443,19 +443,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
       "role": "proof",
-      "sha256": "c0950e5cbd3afb785f8884f8476b2b1871f725ef2e1bcb4754bd56f2b3867c64",
+      "sha256": "d15ca6bb0f5f5ed2a35f1eb464061f50768bf4662a3aa64f26c5a51b4ff9acd7",
       "declarations": [
         "Becoming.LearnableRuns.course",
-        "Becoming.LearnableRuns.RestsFrom",
-        "Becoming.LearnableRuns.Rests",
+        "Becoming.LearnableRuns.PredictsFrom",
+        "Becoming.LearnableRuns.Predicts",
         "Becoming.LearnableRuns.prefix_eq",
-        "Becoming.LearnableRuns.restsFrom_iff",
-        "Becoming.LearnableRuns.rests_iff",
+        "Becoming.LearnableRuns.predictsFrom_iff",
+        "Becoming.LearnableRuns.predicts_iff",
         "Becoming.LearnableRuns.course_same",
         "Becoming.LearnableRuns.prefixes_same",
-        "Becoming.LearnableRuns.agree_of_rests_both",
-        "Becoming.LearnableRuns.not_rests_on_both",
-        "Becoming.LearnableRuns.rests_through",
+        "Becoming.LearnableRuns.agree_of_predicts_both",
+        "Becoming.LearnableRuns.not_predicts_on_both",
+        "Becoming.LearnableRuns.predicts_through",
         "Becoming.LearnableRuns.learnable_iff",
         "Becoming.LearnableRuns.still_learnable_iff_lumped"
       ]
@@ -507,12 +507,18 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learnable",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -540,14 +546,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LearnableRuns",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -702,6 +708,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Recurrence.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Recurrence.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Learnable.Pair.first_not_rests (now Learnable.Pair.first_not_predicts); Learnable.Pair.whole_rests (now Learnable.Pair.whole_predicts); Learnable.Rests (now Learnable.Predicts); Learnable.RestsFrom (now Learnable.PredictsFrom); Learnable.agree_of_rests_both (now Learnable.agree_of_predicts_both); Learnable.not_rests_on_both (now Learnable.not_predicts_on_both); Learnable.rests_through (now Learnable.predicts_through); Learnable.still_lumped_of_rests (now Learnable.still_lumped_of_predicts); Learnable.still_not_rests_on_both (now Learnable.still_not_predicts_on_both); LearnableRuns.Rests (now LearnableRuns.Predicts); LearnableRuns.RestsFrom (now LearnableRuns.PredictsFrom); LearnableRuns.agree_of_rests_both (now LearnableRuns.agree_of_predicts_both); LearnableRuns.not_rests_on_both (now LearnableRuns.not_predicts_on_both); LearnableRuns.restsFrom_iff (now LearnableRuns.predictsFrom_iff); LearnableRuns.rests_iff (now LearnableRuns.predicts_iff); LearnableRuns.rests_through (now LearnableRuns.predicts_through); Pair.first_not_rests (now Pair.first_not_predicts); rests_through (now predicts_through). Proof bindings (Learnable.lean, LearnableRuns.lean, Recurrence.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Learnable.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; LearnableRuns.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Learnable.Pair.first_not_rests（现为 Learnable.Pair.first_not_predicts）；Learnable.Pair.whole_rests（现为 Learnable.Pair.whole_predicts）；Learnable.Rests（现为 Learnable.Predicts）；Learnable.RestsFrom（现为 Learnable.PredictsFrom）；Learnable.agree_of_rests_both（现为 Learnable.agree_of_predicts_both）；Learnable.not_rests_on_both（现为 Learnable.not_predicts_on_both）；Learnable.rests_through（现为 Learnable.predicts_through）；Learnable.still_lumped_of_rests（现为 Learnable.still_lumped_of_predicts）；Learnable.still_not_rests_on_both（现为 Learnable.still_not_predicts_on_both）；LearnableRuns.Rests（现为 LearnableRuns.Predicts）；LearnableRuns.RestsFrom（现为 LearnableRuns.PredictsFrom）；LearnableRuns.agree_of_rests_both（现为 LearnableRuns.agree_of_predicts_both）；LearnableRuns.not_rests_on_both（现为 LearnableRuns.not_predicts_on_both）；LearnableRuns.restsFrom_iff（现为 LearnableRuns.predictsFrom_iff）；LearnableRuns.rests_iff（现为 LearnableRuns.predicts_iff）；LearnableRuns.rests_through（现为 LearnableRuns.predicts_through）；Pair.first_not_rests（现为 Pair.first_not_predicts）；rests_through（现为 predicts_through）。证明绑定（Learnable.lean、LearnableRuns.lean、Recurrence.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Learnable.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；LearnableRuns.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": []

@@ -294,7 +294,7 @@ Integration: 支持门控定律的 overdraw_crosses_support、permanently_below�
 
 ### 8.1 回程：按回到的时间给更新分级
 
-[Becoming.Return](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)（L3）：
+[Becoming.Return](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Restoration.lean)（L3）：
 
 | 声明 | 内容 |
 |---|---|
@@ -702,7 +702,7 @@ Boundary: 不含伦理谓词；不陈述“更多”、多样性与复杂性；�
 Integration: §7.3 第 4 项与判据 (d) 部分承接；substitution-preserves-consumption 的下一步（替代条件有代价时替代链的去向）由 Relay 部分承接
 ```
 
-[Becoming.Generation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean)（L3）：
+[Becoming.Generation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean)（L3）：
 
 | 声明 | 内容 |
 |---|---|

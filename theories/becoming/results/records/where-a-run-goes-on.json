@@ -90,10 +90,10 @@
       "zh": "对每个过程要求从每个保持运动的族的每个成员出发都有留在族中的运行，恰是依赖选择：全的关系从每个起点有沿它的序列。",
       "en": "A run staying in the family from every member of every family that keeps moving, asked of every process, is exactly dependent choice: a total relation has a sequence along it from every start.",
       "declarations": [
-        "Becoming.Onward.DependentSelection",
+        "Becoming.Onward.DependentChoice",
         "Becoming.Onward.moveOf",
         "Becoming.Onward.moveOf_eq",
-        "Becoming.Onward.runs_iff_selection"
+        "Becoming.Onward.runs_iff_dependentChoice"
       ]
     }
   ],
@@ -147,8 +147,8 @@
     "en": "The laws along runs where nothing lists the configurations (for instance through a test and an enumeration); being drawn in within a bound; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：有限多配置之内，无尽地进行者靠回转而进行，路径本身显出它在何处返回，不需选取，延续从展开读出；配置不受界时，无尽的进行在能搜索移动处给出，对每个过程要求每个能继续运动的配置都开始一个运行，恰是依赖选择。分支无穷时每个长度的路径不给出运行（扇），是 König 引理（1927）对无穷分支的树不成立；有限的情形即 König 引理。依赖选择是标准名，核心名 DependentSelection 沿 Lasting 的“选取”；选取是每步取一个延续的函数，不是一个选取者。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): within finitely many configurations, whatever goes on without end does so by coming round; the course itself shows where it returns, nothing is selected, and going on is read off the unfolding; where the configurations are not bounded, going on without end is given where the moves can be searched, and asked of every process, that every configuration that can keep moving starts a run is exactly dependent choice. Courses of every length giving no run where branching is infinite (the fan) is the failure of König's lemma (1927) for infinitely branching trees, and the finite case is König's lemma. Dependent choice is the standard name; the core name DependentSelection follows Lasting's selection, a function taking a continuation at each step, not a selector."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 returning-where-the-course-branches 的 next_delta 与 lifting-where-branching-is-finite 的 next_delta 第二项。读法（AI 的，Ren 2026-10-18 取，DELEGATED-CHOICES D43）：有限多配置之内，无尽地进行者靠回转而进行，路径本身显出它在何处返回，不需选取，延续从展开读出；配置不受界时，无尽的进行在能搜索移动处给出，对每个过程要求每个能继续运动的配置都开始一个运行，恰是依赖选择。分支无穷时每个长度的路径不给出运行（扇），是 König 引理（1927）对无穷分支的树不成立；有限的情形即 König 引理。依赖选择是标准名，核心名 DependentChoice 沿 Lasting 的“选取”；选取是每步取一个延续的函数，不是一个选取者。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of returning-where-the-course-branches and the second item of the next_delta of lifting-where-branching-is-finite. Readings (the AI's, taken by Ren on 18 October 2026, DELEGATED-CHOICES D43): within finitely many configurations, whatever goes on without end does so by coming round; the course itself shows where it returns, nothing is selected, and going on is read off the unfolding; where the configurations are not bounded, going on without end is given where the moves can be searched, and asked of every process, that every configuration that can keep moving starts a run is exactly dependent choice. Courses of every length giving no run where branching is infinite (the fan) is the failure of König's lemma (1927) for infinitely branching trees, and the finite case is König's lemma. Dependent choice is the standard name; the core name DependentChoice follows Lasting's selection, a function taking a continuation at each step, not a selector."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
   "aliases": [
@@ -286,7 +286,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
       "role": "proof",
-      "sha256": "a68f1a36d6189f92aae665a1103297e0af7af60ddaeecaa0b9aee93119d02b03",
+      "sha256": "e8128786c01524fb1e8e901eff9dcb97ccbcaac72efe5a8594428c36b6e809cc",
       "declarations": [
         "Becoming.Onward.continues_of_run",
         "Becoming.Onward.unbounded_of_run",
@@ -324,10 +324,10 @@
         "Becoming.Onward.searchedRun_within",
         "Becoming.Onward.decidedTest",
         "Becoming.Onward.decidedTest_finds",
-        "Becoming.Onward.DependentSelection",
+        "Becoming.Onward.DependentChoice",
         "Becoming.Onward.moveOf",
         "Becoming.Onward.moveOf_eq",
-        "Becoming.Onward.runs_iff_selection"
+        "Becoming.Onward.runs_iff_dependentChoice"
       ]
     },
     {
@@ -366,7 +366,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "68782bae82a196b91e71f22c593fcc58ea3260b503d94cf1bc8acb15f9d65157",
+      "sha256": "56b06dd533e36a4765c25fe57ed6e52f82bd8f63101aebc6fdf0cf2f5dfb05ca",
       "declarations": [
         "Becoming.revisits_within",
         "Becoming.gap_of_lt",
@@ -392,7 +392,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
-      "sha256": "2ebe444d4c7d60d00f17eda4f65852d41704528692c54fef773006714a3ff42b",
+      "sha256": "12a357aa3b8ea6aad625f599fabf7dc64a4fc4b0058173747488e916e9f17f0b",
       "declarations": [
         "Becoming.Run.cons"
       ]
@@ -408,12 +408,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -490,12 +490,18 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Onward",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -523,7 +529,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -537,7 +543,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -681,6 +687,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Moved with their full names: from Branching.lean to Recurrence.lean, Branching.Lossless.no_rise, Branching.Lossless.returns. Proof bindings (Branching.lean, Decidedness.lean, Recurrence.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Branching.lean, the laws of every process moved to Recurrence.lean; Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Recurrence.lean, the laws of every process (Branching's Merges.not_lossless, Reachable.earlier, lost_stays, Returns.reachable, Lossless.returns and others), Law.run, Law.run_state and Run.onward moved in; Law.lost_stays, Law.Lossless.returns, Law.Lossless.unlisted and Law.rise_not_lossless are their one-line cases at the law's run; Law.Merges.not_lossless, Law.Reachable.earlier and Law.Returns.reachable removed; statements kept unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：连同完整名称移动：从 Branching.lean 到 Recurrence.lean：Branching.Lossless.no_rise、Branching.Lossless.returns。证明绑定（Branching.lean、Decidedness.lean、Recurrence.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Branching.lean，每个过程之律移到 Recurrence.lean；Decidedness.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Recurrence.lean，每个过程之律（Branching 的 Merges.not_lossless、Reachable.earlier、lost_stays、Returns.reachable、Lossless.returns 等）、Law.run、Law.run_state 与 Run.onward 移入；Law.lost_stays、Law.Lossless.returns、Law.Lossless.unlisted、Law.rise_not_lossless 是它们在律之运行上的一行情形；删去 Law.Merges.not_lossless、Law.Reachable.earlier、Law.Returns.reachable；保留的陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: DependentSelection (now DependentChoice); Onward.DependentSelection (now Onward.DependentChoice); Onward.runs_iff_selection (now Onward.runs_iff_dependentChoice). Proof bindings (Horizon.lean, Onward.lean, Recurrence.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Horizon.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Onward.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：DependentSelection（现为 DependentChoice）；Onward.DependentSelection（现为 Onward.DependentChoice）；Onward.runs_iff_selection（现为 Onward.runs_iff_dependentChoice）。证明绑定（Horizon.lean、Onward.lean、Recurrence.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Horizon.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Onward.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

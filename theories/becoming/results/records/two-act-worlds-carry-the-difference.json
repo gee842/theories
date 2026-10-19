@@ -329,8 +329,8 @@
       "id": "how-often-couplings-act",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用时程的计数（Frequency.count）、返回（Returns）、按耦合之步的界（carried_le_count）、频繁返回的失控（runaway_of_returns）与自环和稀疏时程的见证（SelfLoop、Sparse）。",
-        "en": "Reuses the count of a schedule (Frequency.count), returns (Returns), the bound by coupling steps (carried_le_count), runaway through frequent returns (runaway_of_returns), and the self-loop and sparse-schedule witnesses (SelfLoop, Sparse)."
+        "zh": "复用时程的计数（Frequency.count）、返回（Returns）、按耦合之步的界（carried_le_count）、频繁返回的失控（runaway_of_roundTrip）与自环和稀疏时程的见证（SelfLoop、Sparse）。",
+        "en": "Reuses the count of a schedule (Frequency.count), returns (Returns), the bound by coupling steps (carried_le_count), runaway through frequent returns (runaway_of_roundTrip), and the self-loop and sparse-schedule witnesses (SelfLoop, Sparse)."
       }
     },
     {
@@ -355,7 +355,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
       "role": "proof",
-      "sha256": "0081dd1e0bc5d2d64f91826165501c739130eeb9c499b0c3db9e501eccec316a",
+      "sha256": "76e38d2d27cbd5ba58b218cb98fa01f3738331aadde8489c07099355165199f2",
       "declarations": [
         "Becoming.ExchangeLaw.actWorld",
         "Becoming.TwoActs",
@@ -514,12 +514,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
       "role": "proof",
-      "sha256": "27ae3aed2fa0079d056b5c81702c1d242d87e72e39daa94a40e49351c649491e",
+      "sha256": "77f1f6946de52b2eee15e9685d1ff1bbf244eb86a4f435e494f313da762d7ef8",
       "declarations": [
         "Becoming.Frequency.count",
-        "Becoming.Returns",
+        "Becoming.RoundTrip",
         "Becoming.carried_le_count",
-        "Becoming.runaway_of_returns",
+        "Becoming.runaway_of_roundTrip",
         "Becoming.Frequency.SelfLoop.polynomial_iff",
         "Becoming.Frequency.Sparse.inexact"
       ]
@@ -550,7 +550,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/p130-frontier-on-base/REPORT.md",
@@ -608,12 +608,18 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CourseWorlds",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -669,7 +675,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Frequency",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -728,6 +734,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Counterfactual.lean, Remainder.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Counterfactual.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Remainder.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Counterfactual.lean、Remainder.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Counterfactual.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Remainder.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Returns (now RoundTrip); runaway_of_returns (now runaway_of_roundTrip). Proof bindings (CourseWorlds.lean, Frequency.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: CourseWorlds.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Frequency.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Returns（现为 RoundTrip）；runaway_of_returns（现为 runaway_of_roundTrip）。证明绑定（CourseWorlds.lean、Frequency.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：CourseWorlds.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Frequency.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

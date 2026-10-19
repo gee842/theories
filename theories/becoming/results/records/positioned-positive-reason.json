@@ -31,7 +31,7 @@
     "zh": "具体见证沿用 PositiveGroundUncertainty 的构造：接续包括所发生的回应、仍活的形成模型与未来分支；所见范围是取得证据后仍活的模型。位置的载体与认同字段只用于显示它们不进入理由。通达与现实能力、权限的对应须在应用中说明。",
     "en": "The concrete witness reuses the PositiveGroundUncertainty construction: a continuation records the response, a surviving formation model and a future branch; the visible scope is the models still live after acquired evidence. Position substrate and endorsement fields appear only to show that they do not enter the reason. Correspondence of access to real capacity and authority must be stated in each application."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
   "aliases": [
     "PositionedPositiveReason.every_situated_position_has_reason",
     "PositionedPositiveReason.route_reason_is_least",
@@ -58,8 +58,8 @@
           "en": "One response has some new positive ground in every grounded continuation."
         },
         "input": {
-          "zh": "D 的前件 SecuresPositiveGround：回应在每段所见接续中确保正面新内容。",
-          "en": "D's antecedent SecuresPositiveGround: the response secures positive new content in every visible continuation."
+          "zh": "D 的前件 SecuresNewContent：回应在每段所见接续中确保正面新内容。",
+          "en": "D's antecedent SecuresNewContent: the response secures positive new content in every visible continuation."
         },
         "conditions": {
           "zh": "同一 G0、同一库存与先前内容；所见范围按回应索引；不加入 C、整体无损或 Better。",
@@ -189,20 +189,20 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "683adbf30ec5fb3a6784a1e355a175729da54a877e6f6b650b227749f33f1eb2",
+      "sha256": "64287f400d32ad4fa954e614aa17088085beadfa5ac101e98bc617fd66d46d56",
       "declarations": [
         "Becoming.PositionedArticulation",
-        "Becoming.SecuresPositiveGround",
+        "Becoming.SecuresNewContent",
         "Becoming.positioned_articulation_of_articulates"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "a097434899a37211935add41f6e5e88336bfc0286ede0776ebef48889cadced4",
+      "sha256": "456fff2668715d568bd3916ca95e15c20a0b0f71f035f5d32760f2f7ca32837e",
       "declarations": [
         "Becoming.universal_reason",
-        "Becoming.G0"
+        "Becoming.LivingSignificance"
       ]
     },
     {
@@ -223,22 +223,22 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
       "role": "proof",
-      "sha256": "dbc0511c40bcc1a043809a145d98a30e4d7882ffc684c5ee22d30158facab9a0",
+      "sha256": "1dbef098b4640337d092165e7b5477e5535baa634e4f8955428ce2148b0f62da",
       "declarations": [
-        "Becoming.PositiveGround.every_situated_position_has_reason",
-        "Becoming.PositiveGround.route_reason_is_least",
-        "Becoming.PositiveGround.route_reason_depends_only_on_access",
-        "Becoming.PositiveGround.g0_holds",
-        "Becoming.PositiveGround.barren_not_live",
-        "Becoming.PositiveGround.live_productive",
-        "Becoming.PositiveGround.respond_formation",
-        "Becoming.PositiveGround.nonendorsing_position_with_access_has_reason",
-        "Becoming.PositiveGround.endorsement_without_access_gets_no_route_reason",
-        "Becoming.PositiveGround.endorsement_independence_is_supplied_by_articulation",
-        "Becoming.PositiveGround.contingent_generation",
-        "Becoming.PositiveGround.every_situated_position_has_reason_of_unrestricted"
+        "Becoming.SecuredContent.every_situated_position_has_reason",
+        "Becoming.SecuredContent.route_reason_is_least",
+        "Becoming.SecuredContent.route_reason_depends_only_on_access",
+        "Becoming.SecuredContent.livingSignificance_holds",
+        "Becoming.SecuredContent.barren_not_live",
+        "Becoming.SecuredContent.live_productive",
+        "Becoming.SecuredContent.respond_formation",
+        "Becoming.SecuredContent.nonendorsing_position_with_access_has_reason",
+        "Becoming.SecuredContent.endorsement_without_access_gets_no_route_reason",
+        "Becoming.SecuredContent.endorsement_independence_is_supplied_by_articulation",
+        "Becoming.SecuredContent.contingent_newContent",
+        "Becoming.SecuredContent.every_situated_position_has_reason_of_unrestricted"
       ]
     },
     {
@@ -263,6 +263,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
     }
   ],
@@ -311,21 +317,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SecuredContent.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.SecuredContent",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -417,6 +423,10 @@
     {
       "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Metaethics.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Metaethics.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Metaethics.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Metaethics.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: G0 (now LivingSignificance); PositiveGround (now SecuredContent); PositiveGround.barren_not_live (now SecuredContent.barren_not_live); PositiveGround.contingent_generation (now SecuredContent.contingent_newContent); PositiveGround.endorsement_independence_is_supplied_by_articulation (now SecuredContent.endorsement_independence_is_supplied_by_articulation); PositiveGround.endorsement_without_access_gets_no_route_reason (now SecuredContent.endorsement_without_access_gets_no_route_reason); PositiveGround.every_situated_position_has_reason (now SecuredContent.every_situated_position_has_reason); PositiveGround.every_situated_position_has_reason_of_unrestricted (now SecuredContent.every_situated_position_has_reason_of_unrestricted); PositiveGround.g0_holds (now SecuredContent.livingSignificance_holds); PositiveGround.lean (now SecuredContent.lean); PositiveGround.live_productive (now SecuredContent.live_productive); PositiveGround.nonendorsing_position_with_access_has_reason (now SecuredContent.nonendorsing_position_with_access_has_reason); PositiveGround.respond_formation (now SecuredContent.respond_formation); PositiveGround.route_reason_depends_only_on_access (now SecuredContent.route_reason_depends_only_on_access); PositiveGround.route_reason_is_least (now SecuredContent.route_reason_is_least); SecuresPositiveGround (now SecuresNewContent). Proof bindings (Metaethics.lean, SecuredContent.lean, ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Metaethics.lean, G0 is LivingSignificance, g0_* livingSignificance_*, Valuation.SelfGood Valuation.SelfSignificance, SecuresPositiveGround SecuresNewContent, the binder positive relevance; the module header is structural; statements unchanged; SecuredContent.lean, the module and namespace PositiveGround renamed SecuredContent, contingent_generation* contingent_newContent*, the binder positive relevance; statements unchanged; ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：G0（现为 LivingSignificance）；PositiveGround（现为 SecuredContent）；PositiveGround.barren_not_live（现为 SecuredContent.barren_not_live）；PositiveGround.contingent_generation（现为 SecuredContent.contingent_newContent）；PositiveGround.endorsement_independence_is_supplied_by_articulation（现为 SecuredContent.endorsement_independence_is_supplied_by_articulation）；PositiveGround.endorsement_without_access_gets_no_route_reason（现为 SecuredContent.endorsement_without_access_gets_no_route_reason）；PositiveGround.every_situated_position_has_reason（现为 SecuredContent.every_situated_position_has_reason）；PositiveGround.every_situated_position_has_reason_of_unrestricted（现为 SecuredContent.every_situated_position_has_reason_of_unrestricted）；PositiveGround.g0_holds（现为 SecuredContent.livingSignificance_holds）；PositiveGround.lean（现为 SecuredContent.lean）；PositiveGround.live_productive（现为 SecuredContent.live_productive）；PositiveGround.nonendorsing_position_with_access_has_reason（现为 SecuredContent.nonendorsing_position_with_access_has_reason）；PositiveGround.respond_formation（现为 SecuredContent.respond_formation）；PositiveGround.route_reason_depends_only_on_access（现为 SecuredContent.route_reason_depends_only_on_access）；PositiveGround.route_reason_is_least（现为 SecuredContent.route_reason_is_least）；SecuresPositiveGround（现为 SecuresNewContent）。证明绑定（Metaethics.lean、SecuredContent.lean、ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Metaethics.lean，G0 现为 LivingSignificance，g0_* 现为 livingSignificance_*，Valuation.SelfGood 现为 Valuation.SelfSignificance，SecuresPositiveGround 现为 SecuresNewContent，约束变量 positive 现为 relevance；模块标题改为结构性的；陈述不变；SecuredContent.lean，模块与命名空间 PositiveGround 改名为 SecuredContent，contingent_generation* 现为 contingent_newContent*，约束变量 positive 现为 relevance；陈述不变；ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     }
   ]
 }

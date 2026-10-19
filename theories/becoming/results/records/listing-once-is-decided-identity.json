@@ -14,8 +14,8 @@
     "en": "A list can be listed once exactly where identity among its members is decided, and sums and counts once per member are then one number; laws refuting something need nothing, and laws that sum or count need it only as a local condition."
   },
   "claim": {
-    "zh": "一个列表的成员之间同一已定（IdentityDecided l），指其中任何两个成员相同或不同已定。s 把 l 列出一次（ListsOnce s l），指 s 不重复（Distinct）且与 l 成员相同。不重复的列表决定其成员之间的同一（Distinct.identityDecided）；成员之间同一已定时，有一个与之成员相同的不重复列表（listsOnce_of_decided，构造性地由 listOnce 给出）；所以列表恰在成员之间同一已定时能列出一次（listsOnce_iff_decided），而它能列出一次从不能被否证（not_not_listsOnce）。成员相同的不重复列表有同样的每个量的总和与同样的长度（total_eq_of_same、ListsOnce.total_eq、ListsOnce.length_eq）；列表所含关系项的数目（Numbers）唯一（Numbers.unique），恰在成员之间同一已定时存在（numbers_iff_decided）；重复只会增加（Numbers.le_length、ListsOnce.total_le）。处处列出一次时否证某事的律，对该列表不加前提地否证它（not_of_listsOnce）；所以结论是否证的律对任何列出方式的家族成立（Flow.Dissipative.opens_listing、Flow.Dissipative.finite_taking_not_recurring_listing、Flow.taking_draws_in_listing、Web.generation_not_recurring_listing、Flow.taking_not_recurring_listing），在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）。用到这一承诺之处它是局部的：一步被封闭（或围绕一个家族被封闭）恰在有一个跨此步封闭、成员之间同一已定的家族时（Flow.enclosed_iff、Flow.around_iff）；世界有限恰在可枚举且关系项之间同一已定时（World.finite_iff）；耗散就是每个封闭家族按成员读一次时的耗散（Flow.dissipative_iff）；每个普查决定其所列者之间的同一（Listed.identityDecided），任何带同一判定的列出给出普查（Listed.of_listing）。重复并非无害：在 Doubled 中流平衡并耗散，把来到停息的条件列两次的家族是封闭的而没有在其上耗散，其存量不降，列一次则降（Doubled.needs_once）。不加前提。读在流的步上：参与一步者恰在其间同一已定时能列出一次并有数目（Flow.present_listsOnce_iff、Flow.present_numbers_iff）；一步把同一关系项列两次，则在两处只数得一个关系项（Flow.present_repeated）；一个类型上的每个流都把每一步列出一次，恰当该类型上的同一已定（Flow.present_listsOnce_all_iff）。清点归入此类的其余 22 条律在 Becoming.ListingRefutations 中以同样方式证明，不需 Distinct（Flow.fed_from_beyond_listing、Web.generation_fed_from_beyond_listing、Flow.More.opens_listing、Web.generation_opens_listing、Flow.taking_draws_in_from_listing、Web.generation_draws_in_listing、Flow.rising_not_recurring_listing、Flow.taking_needs_refinement_listing、Flow.boundary_crossed_listing、Flow.region_not_a_cut_listing 等），因为从外供给与区域边界作为割都是成员的事（Flow.FedFromBeyond.of_within、Flow.cut_of_same）；规律陈述在类型上取同一已定（[DecidableEq]）的 7 条保留它，其余 15 条不需。",
-    "en": "Identity among a list's members is decided (IdentityDecided l) where for any two members it is decided whether they are the same. s lists l once (ListsOnce s l) where s is without repetition (Distinct) and has the members of l. A list without repetition decides identity among its members (Distinct.identityDecided); where identity among a list's members is decided, some list without repetition has exactly its members (listsOnce_of_decided, constructively by listOnce); so a list can be listed once exactly where identity among its members is decided (listsOnce_iff_decided), and that it can be is never refuted (not_not_listsOnce). Lists without repetition with the same members have the same total of every quantity and the same length (total_eq_of_same, ListsOnce.total_eq, ListsOnce.length_eq); the number of relata a list holds (Numbers) is one number (Numbers.unique) and exists exactly where identity among its members is decided (numbers_iff_decided); repetition only adds (Numbers.le_length, ListsOnce.total_le). A law refuting something wherever a list is listed once refutes it of the list with no premise (not_of_listsOnce); so the laws whose conclusion is a refutation hold of every family however listed (Flow.Dissipative.opens_listing, Flow.Dissipative.finite_taking_not_recurring_listing, Flow.taking_draws_in_listing, Web.generation_not_recurring_listing, Flow.taking_not_recurring_listing), and under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world (World.Enumerated, World.Enumerated.not_recurring). Where the commitment is used it is local: a step is enclosed, or enclosed around a family, exactly where some family closed across it has decided identity among its members (Flow.enclosed_iff, Flow.around_iff); a world is finite exactly where it is enumerated and identity among its relata is decided (World.finite_iff); dissipation is dissipation on every closed family read once per member (Flow.dissipative_iff); every census decides identity among what it lists (Listed.identityDecided), and any listing with identity decided gives a census (Listed.of_listing). Repetition is not harmless: in Doubled the flow balances and dissipates, the family listing twice the condition that comes to stand is closed and not dissipated on, and its stock does not fall, while listed once it falls (Doubled.needs_once). No premise. Read on a flow's steps, what takes part in a step can be listed once, and has a number, exactly where identity among it is decided (Flow.present_listsOnce_iff, Flow.present_numbers_iff); a step listing one relatum twice numbers one relatum in two places (Flow.present_repeated); and every flow on a type lists each step once exactly where identity on the type is decided (Flow.present_listsOnce_all_iff). The other 22 laws the inventory classed so are proved the same way in Becoming.ListingRefutations, with no Distinct (Flow.fed_from_beyond_listing, Web.generation_fed_from_beyond_listing, Flow.More.opens_listing, Web.generation_opens_listing, Flow.taking_draws_in_from_listing, Web.generation_draws_in_listing, Flow.rising_not_recurring_listing, Flow.taking_needs_refinement_listing, Flow.boundary_crossed_listing, Flow.region_not_a_cut_listing and the rest), being fed from beyond and the boundary of a region as a cut being matters of membership (Flow.FedFromBeyond.of_within, Flow.cut_of_same); the seven whose law's statement takes decided identity on its type ([DecidableEq]) keep it, the other fifteen need none."
+    "zh": "一个列表的成员之间同一已定（IdentityDecided l），指其中任何两个成员相同或不同已定。s 把 l 列出一次（ListsOnce s l），指 s 不重复（Distinct）且与 l 成员相同。不重复的列表决定其成员之间的同一（Distinct.identityDecided）；成员之间同一已定时，有一个与之成员相同的不重复列表（listsOnce_of_decided，构造性地由 listOnce 给出）；所以列表恰在成员之间同一已定时能列出一次（listsOnce_iff_decided），而它能列出一次从不能被否证（not_not_listsOnce）。成员相同的不重复列表有同样的每个量的总和与同样的长度（total_eq_of_same、ListsOnce.total_eq、ListsOnce.length_eq）；列表所含关系项的数目（Numbers）唯一（Numbers.unique），恰在成员之间同一已定时存在（numbers_iff_decided）；重复只会增加（Numbers.le_length、ListsOnce.total_le）。处处列出一次时否证某事的律，对该列表不加前提地否证它（not_of_listsOnce）；所以结论是否证的律对任何列出方式的家族成立（Flow.Dissipative.opens_listing、Flow.Dissipative.finite_taking_not_recurring_listing、Flow.taking_draws_in_listing、Web.embodiedArising_not_recurring_listing、Flow.taking_not_recurring_listing），在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）。用到这一承诺之处它是局部的：一步被封闭（或围绕一个家族被封闭）恰在有一个跨此步封闭、成员之间同一已定的家族时（Flow.enclosed_iff、Flow.around_iff）；世界有限恰在可枚举且关系项之间同一已定时（World.finite_iff）；耗散就是每个封闭家族按成员读一次时的耗散（Flow.dissipative_iff）；每个普查决定其所列者之间的同一（Listed.identityDecided），任何带同一判定的列出给出普查（Listed.of_listing）。重复并非无害：在 Doubled 中流平衡并耗散，把来到停息的条件列两次的家族是封闭的而没有在其上耗散，其存量不降，列一次则降（Doubled.needs_once）。不加前提。读在流的步上：参与一步者恰在其间同一已定时能列出一次并有数目（Flow.present_listsOnce_iff、Flow.present_numbers_iff）；一步把同一关系项列两次，则在两处只数得一个关系项（Flow.present_repeated）；一个类型上的每个流都把每一步列出一次，恰当该类型上的同一已定（Flow.present_listsOnce_all_iff）。清点归入此类的其余 22 条律在 Becoming.ListingRefutations 中以同样方式证明，不需 Distinct（Flow.fed_from_beyond_listing、Web.embodiedArising_fed_from_beyond_listing、Flow.More.opens_listing、Web.embodiedArising_opens_listing、Flow.taking_draws_in_from_listing、Web.embodiedArising_draws_in_listing、Flow.rising_not_recurring_listing、Flow.taking_needs_refinement_listing、Flow.boundary_crossed_listing、Flow.region_not_a_cut_listing 等），因为从外供给与区域边界作为割都是成员的事（Flow.FedFromBeyond.of_within、Flow.cut_of_same）；规律陈述在类型上取同一已定（[DecidableEq]）的 7 条保留它，其余 15 条不需。",
+    "en": "Identity among a list's members is decided (IdentityDecided l) where for any two members it is decided whether they are the same. s lists l once (ListsOnce s l) where s is without repetition (Distinct) and has the members of l. A list without repetition decides identity among its members (Distinct.identityDecided); where identity among a list's members is decided, some list without repetition has exactly its members (listsOnce_of_decided, constructively by listOnce); so a list can be listed once exactly where identity among its members is decided (listsOnce_iff_decided), and that it can be is never refuted (not_not_listsOnce). Lists without repetition with the same members have the same total of every quantity and the same length (total_eq_of_same, ListsOnce.total_eq, ListsOnce.length_eq); the number of relata a list holds (Numbers) is one number (Numbers.unique) and exists exactly where identity among its members is decided (numbers_iff_decided); repetition only adds (Numbers.le_length, ListsOnce.total_le). A law refuting something wherever a list is listed once refutes it of the list with no premise (not_of_listsOnce); so the laws whose conclusion is a refutation hold of every family however listed (Flow.Dissipative.opens_listing, Flow.Dissipative.finite_taking_not_recurring_listing, Flow.taking_draws_in_listing, Web.embodiedArising_not_recurring_listing, Flow.taking_not_recurring_listing), and under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world (World.Enumerated, World.Enumerated.not_recurring). Where the commitment is used it is local: a step is enclosed, or enclosed around a family, exactly where some family closed across it has decided identity among its members (Flow.enclosed_iff, Flow.around_iff); a world is finite exactly where it is enumerated and identity among its relata is decided (World.finite_iff); dissipation is dissipation on every closed family read once per member (Flow.dissipative_iff); every census decides identity among what it lists (Listed.identityDecided), and any listing with identity decided gives a census (Listed.of_listing). Repetition is not harmless: in Doubled the flow balances and dissipates, the family listing twice the condition that comes to stand is closed and not dissipated on, and its stock does not fall, while listed once it falls (Doubled.needs_once). No premise. Read on a flow's steps, what takes part in a step can be listed once, and has a number, exactly where identity among it is decided (Flow.present_listsOnce_iff, Flow.present_numbers_iff); a step listing one relatum twice numbers one relatum in two places (Flow.present_repeated); and every flow on a type lists each step once exactly where identity on the type is decided (Flow.present_listsOnce_all_iff). The other 22 laws the inventory classed so are proved the same way in Becoming.ListingRefutations, with no Distinct (Flow.fed_from_beyond_listing, Web.embodiedArising_fed_from_beyond_listing, Flow.More.opens_listing, Web.embodiedArising_opens_listing, Flow.taking_draws_in_from_listing, Web.embodiedArising_draws_in_listing, Flow.rising_not_recurring_listing, Flow.taking_needs_refinement_listing, Flow.boundary_crossed_listing, Flow.region_not_a_cut_listing and the rest), being fed from beyond and the boundary of a region as a cut being matters of membership (Flow.FedFromBeyond.of_within, Flow.cut_of_same); the seven whose law's statement takes decided identity on its type ([DecidableEq]) keep it, the other fifteen need none."
   },
   "hypotheses": [
     {
@@ -168,7 +168,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
       "role": "proof",
-      "sha256": "06cb3317ead8bb6e53e3c340215697de1a789ec6719e147e57215f1811f8527e",
+      "sha256": "fccc03640f1171612e1d5e80e5fda1499e827bba0aeee5e4ee7cee4f3ff8d991",
       "declarations": [
         "Becoming.IdentityDecided",
         "Becoming.ListsOnce",
@@ -211,7 +211,7 @@
         "Becoming.Flow.taking_draws_in_listing",
         "Becoming.Flow.standing_lowers_listing",
         "Becoming.Flow.standing_lowers_decided",
-        "Becoming.Web.generation_not_recurring_listing",
+        "Becoming.Web.embodiedArising_not_recurring_listing",
         "Becoming.Flow.taking_not_recurring_listing",
         "Becoming.World.Enumerated",
         "Becoming.World.finite_iff",
@@ -241,14 +241,14 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListingRefutations.lean",
       "role": "proof",
-      "sha256": "38bd8f9f27741b473e49c76811de824c2e7024215fa78278a3aca1d2b6714c4d",
+      "sha256": "046be7e762fcf60e374efe995025c578792c61899296469032f329ff31db6395",
       "declarations": [
         "Becoming.Flow.fed_from_beyond_listing",
-        "Becoming.Web.generation_fed_from_beyond_listing",
+        "Becoming.Web.embodiedArising_fed_from_beyond_listing",
         "Becoming.Flow.More.opens_listing",
-        "Becoming.Web.generation_opens_listing",
+        "Becoming.Web.embodiedArising_opens_listing",
         "Becoming.Flow.taking_draws_in_from_listing",
-        "Becoming.Web.generation_draws_in_listing",
+        "Becoming.Web.embodiedArising_draws_in_listing",
         "Becoming.Flow.rising_not_recurring_listing",
         "Becoming.Flow.taking_needs_refinement_listing",
         "Becoming.Flow.boundary_crossed_listing",
@@ -260,7 +260,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "78d075634e3bd1a64a8f6769a22b5563f8748a1843c3cabfa07efe0790b52ba2",
+      "sha256": "d6981e453120fd09887ab35e6d67e6703eda58368afde9c185912afdb0eaff65",
       "declarations": [
         "Becoming.Distinct"
       ]
@@ -268,7 +268,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "abe4f2fd28a48e759ab3af0a8757b94f49ee365d87f9142b47faa8c8ffa9237d",
+      "sha256": "78d3c86b42afecb2bfc36fe01e1996895975ecebb340fc96b611828b79faf259",
       "declarations": [
         "Becoming.World.rests_unrefuted",
         "Becoming.World.Finite"
@@ -299,13 +299,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "7e9ca596ebb86c65501173f4f9fc09adc37843e12f621a8927f704c484af1568",
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448",
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
       "declarations": []
     },
     {
@@ -373,26 +373,32 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Listing",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Population",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -413,7 +419,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListingRefutations.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T170714.008572Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ListingRefutations",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -641,6 +647,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Decidedness.lean, Openness.lean, Space.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Decidedness.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged; Openness.lean, Flow.change_stops_unrefuted proved by Amounts.rests_unrefuted with no decision, statement unchanged; World.Finite.arising_iff_ceasing and World.Finite.comes_to_rest_unrefuted removed (one name per statement); Space.lean, falls_stop_unrefuted proved as the whole-number instance of Amounts.rests_unrefuted, statement unchanged; THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Decidedness.lean、Openness.lean、Space.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Decidedness.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变；Openness.lean，Flow.change_stops_unrefuted 由 Amounts.rests_unrefuted 不经判定证明，陈述不变；删去 World.Finite.arising_iff_ceasing 与 World.Finite.comes_to_rest_unrefuted（每个陈述一个名称）；Space.lean，falls_stop_unrefuted 作为 Amounts.rests_unrefuted 的整数实例证明，陈述不变；THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Web.generation_draws_in_listing (now Web.embodiedArising_draws_in_listing); Web.generation_fed_from_beyond_listing (now Web.embodiedArising_fed_from_beyond_listing); Web.generation_not_recurring_listing (now Web.embodiedArising_not_recurring_listing); Web.generation_opens_listing (now Web.embodiedArising_opens_listing). Proof bindings (Listing.lean, ListingRefutations.lean, Population.lean, Space.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Listing.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ListingRefutations.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Population.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Space.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Web.generation_draws_in_listing（现为 Web.embodiedArising_draws_in_listing）；Web.generation_fed_from_beyond_listing（现为 Web.embodiedArising_fed_from_beyond_listing）；Web.generation_not_recurring_listing（现为 Web.embodiedArising_not_recurring_listing）；Web.generation_opens_listing（现为 Web.embodiedArising_opens_listing）。证明绑定（Listing.lean、ListingRefutations.lean、Population.lean、Space.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Listing.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ListingRefutations.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Population.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Space.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }

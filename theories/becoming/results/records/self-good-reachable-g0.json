@@ -60,8 +60,8 @@
       "id": "positive-ground-open-futures",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "reach_is_g0 与 self_good_derives_reachable_g0 的结论使用同一 GenerativeComparison.G0 谓词；本结果为该谓词在可及库存上的成立提供由 S0 出发的推导，不改变原结果的证明与范围。",
-        "en": "reach_is_g0 and self_good_derives_reachable_g0 conclude the same GenerativeComparison.G0 predicate; this result supplies a derivation from S0 of that predicate on the reachable inventory, without changing the earlier proof or scope."
+        "zh": "reach_is_livingSignificance 与 selfSignificance_derives_reachable_livingSignificance 的结论使用同一 GenerativeComparison.G0 谓词；本结果为该谓词在可及库存上的成立提供由 S0 出发的推导，不改变原结果的证明与范围。",
+        "en": "reach_is_livingSignificance and selfSignificance_derives_reachable_livingSignificance conclude the same GenerativeComparison.G0 predicate; this result supplies a derivation from S0 of that predicate on the reachable inventory, without changing the earlier proof or scope."
       },
       "interface": {
         "output": {
@@ -244,19 +244,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "683adbf30ec5fb3a6784a1e355a175729da54a877e6f6b650b227749f33f1eb2",
+      "sha256": "64287f400d32ad4fa954e614aa17088085beadfa5ac101e98bc617fd66d46d56",
       "declarations": [
-        "Becoming.Valuation.SelfGood",
+        "Becoming.Valuation.SelfSignificance",
         "Becoming.Valuation.transmits"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "a097434899a37211935add41f6e5e88336bfc0286ede0776ebef48889cadced4",
+      "sha256": "456fff2668715d568bd3916ca95e15c20a0b0f71f035f5d32760f2f7ca32837e",
       "declarations": [
         "Becoming.Valuation.reaches",
-        "Becoming.G0"
+        "Becoming.LivingSignificance"
       ]
     },
     {
@@ -297,14 +297,14 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
       "role": "proof",
-      "sha256": "49bd56600517a5dbc6d0fc1c44cb5c6183dffdaaa45f1903275345b38ca92277",
+      "sha256": "93ed03fc3d8f550a7c00502816d1b981201541cf1bcb75505c572978d8f3b955",
       "declarations": [
-        "Becoming.ProfileReach.self_good_reaches_at_least_as_connected",
+        "Becoming.ProfileReach.selfSignificance_reaches_at_least_as_connected",
         "Becoming.ProfileReach.strict_indexed_rival_inconsistent",
         "Becoming.ProfileReach.chain_preserves",
         "Becoming.ProfileReach.tolerant_chain_reaches",
-        "Becoming.ProfileReach.reach_is_g0",
-        "Becoming.ProfileReach.self_good_derives_reachable_g0",
+        "Becoming.ProfileReach.reach_is_livingSignificance",
+        "Becoming.ProfileReach.selfSignificance_derives_reachable_livingSignificance",
         "Becoming.ProfileReach.formed_other_has_significance",
         "Becoming.ProfileReach.threshold_rival_is_consistent_without_tolerance",
         "Becoming.ProfileReach.tolerant_standpoint_reaches_stranger",
@@ -314,7 +314,7 @@
         "Becoming.ProfileReach.valuation",
         "Becoming.ProfileReach.tolerant_iff_neutral",
         "Becoming.ProfileReach.reach_relations_iff",
-        "Becoming.ProfileReach.selfGood_valuation"
+        "Becoming.ProfileReach.selfSignificance_valuation"
       ]
     },
     {
@@ -345,6 +345,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
     }
   ],
@@ -386,21 +392,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ProfileReach",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -500,6 +506,10 @@
     {
       "en": "20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Proof bindings (Metaethics.lean) rebound to core receipt 20261019T181519.226999Z. Re-pointed after reading the change: Metaethics.lean, worlds built by World.of instead of the anonymous constructor, or the orbit forms of Law.* read through the unfolding lemmas, or a docstring no longer saying the module does not import the frame; statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R28（按定义的一个基底：世界按其类型就是运行；Web 即 Dependence Nat；Law.* 即 Law.process 的概念）：证明绑定（Metaethics.lean）改到核心回执 20261019T181519.226999Z。读过改动后重新指向：Metaethics.lean，世界改由 World.of 构造而非匿名构造子，或 Law.* 的轨道形式经展开引理读出，或说明不再说本模块不导入框架；陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: G0 (now LivingSignificance); ProfileReach.reach_is_g0 (now ProfileReach.reach_is_livingSignificance); ProfileReach.selfGood_valuation (now ProfileReach.selfSignificance_valuation); ProfileReach.self_good_derives_reachable_g0 (now ProfileReach.selfSignificance_derives_reachable_livingSignificance); ProfileReach.self_good_reaches_at_least_as_connected (now ProfileReach.selfSignificance_reaches_at_least_as_connected); Valuation.SelfGood (now Valuation.SelfSignificance); reach_is_g0 (now reach_is_livingSignificance); self_good_derives_reachable_g0 (now selfSignificance_derives_reachable_livingSignificance). Proof bindings (Metaethics.lean, ProfileReach.lean, ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Metaethics.lean, G0 is LivingSignificance, g0_* livingSignificance_*, Valuation.SelfGood Valuation.SelfSignificance, SecuresPositiveGround SecuresNewContent, the binder positive relevance; the module header is structural; statements unchanged; ProfileReach.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：G0（现为 LivingSignificance）；ProfileReach.reach_is_g0（现为 ProfileReach.reach_is_livingSignificance）；ProfileReach.selfGood_valuation（现为 ProfileReach.selfSignificance_valuation）；ProfileReach.self_good_derives_reachable_g0（现为 ProfileReach.selfSignificance_derives_reachable_livingSignificance）；ProfileReach.self_good_reaches_at_least_as_connected（现为 ProfileReach.selfSignificance_reaches_at_least_as_connected）；Valuation.SelfGood（现为 Valuation.SelfSignificance）；reach_is_g0（现为 reach_is_livingSignificance）；self_good_derives_reachable_g0（现为 selfSignificance_derives_reachable_livingSignificance）。证明绑定（Metaethics.lean、ProfileReach.lean、ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Metaethics.lean，G0 现为 LivingSignificance，g0_* 现为 livingSignificance_*，Valuation.SelfGood 现为 Valuation.SelfSignificance，SecuresPositiveGround 现为 SecuresNewContent，约束变量 positive 现为 relevance；模块标题改为结构性的；陈述不变；ProfileReach.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
     }
   ]
 }

@@ -36,8 +36,8 @@
       ]
     },
     {
-      "zh": "所以：有形成从家族取用，就有成员下降，不论别的成员是否上升；一个事件的每一步上家族都被耗散且有形成从中取用，这个事件就消耗家族，Becoming.Generation 作为对应前提给出的 Depletes 由此得出。",
-      "en": "So a formation taking from the family makes some member fall, whether or not another rises; an event at each of whose steps the family is dissipated on and taken from depletes it, so the Depletes that Becoming.Generation supplies as a correspondence premise follows.",
+      "zh": "所以：有形成从家族取用，就有成员下降，不论别的成员是否上升；一个事件的每一步上家族都被耗散且有形成从中取用，这个事件就消耗家族，Becoming.Arising 作为对应前提给出的 Depletes 由此得出。",
+      "en": "So a formation taking from the family makes some member fall, whether or not another rises; an event at each of whose steps the family is dissipated on and taken from depletes it, so the Depletes that Becoming.Arising supplies as a correspondence premise follows.",
       "declarations": [
         "Becoming.Flow.Balances.falls_of_taking",
         "Becoming.Flow.Balances.depletes",
@@ -162,8 +162,8 @@
     "en": "A one-step form for when a fall is a ceasing to stand (the level reaching zero); a version with rational amounts; whether arising that is not embodied has its own form of the one exchange; the empirical correspondence of dissipation and accompaniment in actual unfoldings."
   },
   "correspondence": {
-    "zh": "Ren 的提议要求解释“生成、维持、转化、退化与消失”在同一展开中（2026-10-08-theory-of-becoming-priority）。coming-and-ceasing-keep-pace 不加前提地证明，有限家族中开始成立与不再成立在长程上同步；本结果证明，在平衡与耗散之下，一次上升在它自己的那一步上就伴随另一个成员的下降。作者把这读作该范围在一步之内的一种形式内容（AI 论证）：在被耗散的家族中，生起不是可以单独发生的事件，它与另一个成员的下降是同一次交换的两面。在流的读法中，Becoming.Generation 的两个对应前提（RenewedBy、Depletes）化归为平衡、只有活跃者给予、耗散与事件之步上的取用；实际展开是否满足这些是经验问题。“上升”“下降”“同一交换”是 AI 的用语，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
-    "en": "Ren's proposal asks to explain formation, persistence, transformation, degeneration and dissolution within one unfolding (2026-10-08-theory-of-becoming-priority). coming-and-ceasing-keep-pace proves, with no premise, that in a finite family coming to be and ceasing to be keep pace in the long run; this result proves that under balance and dissipation a rise is accompanied at its own step by another member's fall. The author reads this as one formal content of that scope within a single step (an AI argument): in a family dissipated on, arising is not an event that can happen alone; it and another member's fall are two sides of one exchange. Read through flows, the two correspondence premises of Becoming.Generation (RenewedBy, Depletes) reduce to balance, only active formations giving, dissipation and taking at the event's steps; whether actual unfoldings meet them is an empirical question. ‘Rising’, ‘falling’ and ‘one exchange’ are the AI's terms, adopted under Ren's naming rule (DELEGATED-CHOICES D36)."
+    "zh": "Ren 的提议要求解释“生成、维持、转化、退化与消失”在同一展开中（2026-10-08-theory-of-becoming-priority）。coming-and-ceasing-keep-pace 不加前提地证明，有限家族中开始成立与不再成立在长程上同步；本结果证明，在平衡与耗散之下，一次上升在它自己的那一步上就伴随另一个成员的下降。作者把这读作该范围在一步之内的一种形式内容（AI 论证）：在被耗散的家族中，生起不是可以单独发生的事件，它与另一个成员的下降是同一次交换的两面。在流的读法中，Becoming.Arising 的两个对应前提（RenewedBy、Depletes）化归为平衡、只有活跃者给予、耗散与事件之步上的取用；实际展开是否满足这些是经验问题。“上升”“下降”“同一交换”是 AI 的用语，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
+    "en": "Ren's proposal asks to explain formation, persistence, transformation, degeneration and dissolution within one unfolding (2026-10-08-theory-of-becoming-priority). coming-and-ceasing-keep-pace proves, with no premise, that in a finite family coming to be and ceasing to be keep pace in the long run; this result proves that under balance and dissipation a rise is accompanied at its own step by another member's fall. The author reads this as one formal content of that scope within a single step (an AI argument): in a family dissipated on, arising is not an event that can happen alone; it and another member's fall are two sides of one exchange. Read through flows, the two correspondence premises of Becoming.Arising (RenewedBy, Depletes) reduce to balance, only active formations giving, dissipation and taking at the event's steps; whether actual unfoldings meet them is an empirical question. ‘Rising’, ‘falling’ and ‘one exchange’ are the AI's terms, adopted under Ren's naming rule (DELEGATED-CHOICES D36)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
   "aliases": [
@@ -269,7 +269,7 @@
           "zh": "平衡；事件之步上家族被耗散且有形成从中取用。",
           "en": "Balance; at the event's steps the family is dissipated on and some formation takes from it."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean"
       }
     },
     {
@@ -339,7 +339,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "37c99f4c12d7fca90457cfe43a2a18fb8cc52dbe510e1919d5aa638653ec2ccf",
+      "sha256": "f22c4d760412ac525a5dc3c461ca148e4e0267bd572c495818b30071a8acdd79",
       "declarations": [
         "Becoming.Flow.DissipatesOn",
         "Becoming.Flow.Dissipative",
@@ -363,7 +363,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "c7810b7497774d5aa82a7ee9f8c25fa14e27013ab559f28b8ef23c957016c47a",
+      "sha256": "8555f7df723a7aaf777f23a50a4f8fe5a0ac67f6dfcbfb63ad2057429521b024",
       "declarations": [
         "Becoming.Flow.taken",
         "Becoming.Flow.Balances",
@@ -385,7 +385,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "role": "proof",
-      "sha256": "ca9419769d958084450388b9e6b308958dceff8e8a3e8784422cbbf2fdd9579a",
+      "sha256": "0048ae463171224698bfacf7616ff69b7fa167336d90deaf3ea9324da4b2fcbe",
       "declarations": [
         "Becoming.Flow"
       ]
@@ -393,7 +393,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "1e0b6616ca3363962d90aa0f33cdd871fa20700e9c5a5f48e88b9f817d5ee546",
+      "sha256": "9362bf5b5fd33c18a818364390f228f7dab080e0df35fcc6d8ce0e85631f1ccd",
       "declarations": [
         "Becoming.Web.Embodied.comesToStand",
         "Becoming.Web.Embodied.arising_with_fall",
@@ -417,9 +417,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Arising.lean",
       "role": "proof",
-      "sha256": "92398607078bc1be31412ca2780efbc43473115b1088e4816be447d3b6c277ab",
+      "sha256": "6c5857388eca443bd20f5b411b5ef424b01e54b67b12e3bfefe5c54591db1eae",
       "declarations": [
         "Becoming.Web.Rises",
         "Becoming.Web.Falls",
@@ -435,7 +435,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b90b8ce11b33402eb6567dd7d070eaeeb6704b924a6382853e198922c5c57fdf"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
@@ -491,33 +491,39 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Dissipation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -863,6 +869,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Proof bindings (Dissipation.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Dissipation.lean, Amounts.whole_sum moved in; Flow.takers_within_on and Flow.taking_not_recurring_from proved through Becoming.Amounts, statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：证明绑定（Dissipation.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Dissipation.lean，Amounts.whole_sum 移入；Flow.takers_within_on 与 Flow.taking_not_recurring_from 经 Becoming.Amounts 证明，陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Generation (now Arising); Generation.lean (now Arising.lean). Proof bindings (Dissipation.lean, Flow.lean, Roles.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Arising.lean, the module Generation renamed Arising; Web.generation_* are Web.embodiedArising_*, Web.Regenerating is Web.ActiveRenewer; statements unchanged; Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Roles.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Generation（现为 Arising）；Generation.lean（现为 Arising.lean）。证明绑定（Dissipation.lean、Flow.lean、Roles.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Arising.lean，模块 Generation 改名为 Arising；Web.generation_* 现为 Web.embodiedArising_*，Web.Regenerating 现为 Web.ActiveRenewer；陈述不变；Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Roles.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ],
   "text_versions": [

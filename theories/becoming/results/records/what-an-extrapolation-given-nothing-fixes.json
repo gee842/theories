@@ -34,8 +34,8 @@
       "declarations": [
         "Becoming.Learnable.ReadOff",
         "Becoming.Learnable.reading",
-        "Becoming.Learnable.reading_rests",
-        "Becoming.Learnable.reading_rests_from"
+        "Becoming.Learnable.reading_predicts",
+        "Becoming.Learnable.reading_predicts_from"
       ]
     },
     {
@@ -150,8 +150,8 @@
         "Becoming.Learnable.learnable_iff_reading",
         "Becoming.Learnable.readAt",
         "Becoming.Learnable.reading",
-        "Becoming.Learnable.reading_rests",
-        "Becoming.Learnable.reading_rests_from",
+        "Becoming.Learnable.reading_predicts",
+        "Becoming.Learnable.reading_predicts_from",
         "Becoming.Learnable.reads_of_agree",
         "Becoming.LearnableRuns.ahead_fixes",
         "Becoming.LearnableRuns.future_eq",
@@ -164,7 +164,7 @@
         "Becoming.Learning.unroll",
         "Becoming.Learning.unroll_prefix"
       ],
-      "sha256": "cdb34d3144aee0e364b0d82131b81028df10570a54bb7c7c13f41384ee0e0c71"
+      "sha256": "6585733d9762f157523181bf30b8825e4e3d8e8fb56fd32229db1f42c7cbb135"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T070401.460540Z/verification.json",
@@ -174,12 +174,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "6a9fa8e743bdda23b1a79716245737a8edfaf1e6470e2c1002a4527c7898df14"
+      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0409a470398ff077a8ea506fedde61b1132ff487d54dd24e12cbf4171b7aa448"
+      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -197,12 +197,18 @@
       "role": "receipt",
       "sha256": "5ff8cceae947d3c3bacba7144a68d144126cc739e92e7c43fb448f51966f5665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "role": "receipt",
+      "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unrolling.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unrolling",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -271,6 +277,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：读过改动后重新指向：THE-THEORY-OF-BECOMING.md，引用删去名称的句子改引保留者；§9（层、导入树、回执、计数）随 R29。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Learnable.reading_rests (now Learnable.reading_predicts); Learnable.reading_rests_from (now Learnable.reading_predicts_from). Proof bindings (Unrolling.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Unrolling.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Learnable.reading_rests（现为 Learnable.reading_predicts）；Learnable.reading_rests_from（现为 Learnable.reading_predicts_from）。证明绑定（Unrolling.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Unrolling.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
     }
   ]
 }
