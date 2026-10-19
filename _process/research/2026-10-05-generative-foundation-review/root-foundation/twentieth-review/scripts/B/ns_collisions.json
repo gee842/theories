@@ -1,0 +1,2380 @@
+[
+{
+"ns": "Becoming.Restoring.Inflow",
+"mods": {
+"Becoming.Admission": 5,
+"Becoming.Significance": 1
+},
+"pairs": [
+[
+"Becoming.Admission",
+"Becoming.Significance",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Transfer",
+"mods": {
+"Becoming.Admission": 11,
+"Becoming.Regrouping": 14,
+"Becoming.Significance": 1
+},
+"pairs": [
+[
+"Becoming.Admission",
+"Becoming.Regrouping",
+"imports",
+7
+],
+[
+"Becoming.Admission",
+"Becoming.Significance",
+"imports",
+5
+],
+[
+"Becoming.Significance",
+"Becoming.Regrouping",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Law",
+"mods": {
+"Becoming.Attraction": 33,
+"Becoming.Branching": 3,
+"Becoming.Commuting": 13,
+"Becoming.Distinguishing": 9,
+"Becoming.Identification": 33,
+"Becoming.IdentificationRuns": 15,
+"Becoming.Labelled": 3,
+"Becoming.LeastLoss": 3,
+"Becoming.Mechanism": 2,
+"Becoming.Recurrence": 40,
+"Becoming.Seeking": 4,
+"Becoming.SeekingRuns": 1,
+"Becoming.SharedCodes": 3
+},
+"pairs": [
+[
+"Becoming.Attraction",
+"Becoming.Branching",
+"imports",
+2
+],
+[
+"Becoming.Attraction",
+"Becoming.Commuting",
+"imports",
+0
+],
+[
+"Becoming.Attraction",
+"Becoming.Distinguishing",
+"imports",
+0
+],
+[
+"Becoming.Attraction",
+"Becoming.IdentificationRuns",
+"imports",
+0
+],
+[
+"Becoming.Attraction",
+"Becoming.LeastLoss",
+"imports",
+0
+],
+[
+"Becoming.Attraction",
+"Becoming.SeekingRuns",
+"imports",
+0
+],
+[
+"Becoming.Attraction",
+"Becoming.SharedCodes",
+"imports",
+0
+],
+[
+"Becoming.Branching",
+"Becoming.Commuting",
+"imports",
+0
+],
+[
+"Becoming.Branching",
+"Becoming.Distinguishing",
+"imports",
+0
+],
+[
+"Becoming.Branching",
+"Becoming.IdentificationRuns",
+"imports",
+0
+],
+[
+"Becoming.Branching",
+"Becoming.LeastLoss",
+"imports",
+0
+],
+[
+"Becoming.Branching",
+"Becoming.SeekingRuns",
+"imports",
+0
+],
+[
+"Becoming.Branching",
+"Becoming.SharedCodes",
+"imports",
+0
+],
+[
+"Becoming.Commuting",
+"Becoming.SharedCodes",
+"imports",
+1
+],
+[
+"Becoming.Distinguishing",
+"Becoming.Commuting",
+"imports",
+0
+],
+[
+"Becoming.Distinguishing",
+"Becoming.IdentificationRuns",
+"imports",
+0
+],
+[
+"Becoming.Distinguishing",
+"Becoming.SharedCodes",
+"imports",
+0
+],
+[
+"Becoming.Identification",
+"Becoming.Commuting",
+"imports",
+0
+],
+[
+"Becoming.Identification",
+"Becoming.Distinguishing",
+"imports",
+1
+],
+[
+"Becoming.Identification",
+"Becoming.IdentificationRuns",
+"imports",
+2
+],
+[
+"Becoming.Identification",
+"Becoming.SharedCodes",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.Attraction",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.Branching",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.Commuting",
+"imports",
+2
+],
+[
+"Becoming.Labelled",
+"Becoming.Distinguishing",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.IdentificationRuns",
+"imports",
+1
+],
+[
+"Becoming.Labelled",
+"Becoming.LeastLoss",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.Mechanism",
+"imports",
+2
+],
+[
+"Becoming.Labelled",
+"Becoming.SeekingRuns",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.SharedCodes",
+"imports",
+1
+],
+[
+"Becoming.Mechanism",
+"Becoming.Branching",
+"imports",
+0
+],
+[
+"Becoming.Mechanism",
+"Becoming.Commuting",
+"imports",
+0
+],
+[
+"Becoming.Mechanism",
+"Becoming.Distinguishing",
+"imports",
+0
+],
+[
+"Becoming.Mechanism",
+"Becoming.IdentificationRuns",
+"imports",
+0
+],
+[
+"Becoming.Mechanism",
+"Becoming.LeastLoss",
+"imports",
+0
+],
+[
+"Becoming.Mechanism",
+"Becoming.SeekingRuns",
+"imports",
+1
+],
+[
+"Becoming.Mechanism",
+"Becoming.SharedCodes",
+"imports",
+0
+],
+[
+"Becoming.Recurrence",
+"Becoming.Attraction",
+"imports",
+13
+],
+[
+"Becoming.Recurrence",
+"Becoming.Branching",
+"imports",
+0
+],
+[
+"Becoming.Recurrence",
+"Becoming.Commuting",
+"imports",
+3
+],
+[
+"Becoming.Recurrence",
+"Becoming.Distinguishing",
+"imports",
+0
+],
+[
+"Becoming.Recurrence",
+"Becoming.Identification",
+"imports",
+0
+],
+[
+"Becoming.Recurrence",
+"Becoming.IdentificationRuns",
+"imports",
+0
+],
+[
+"Becoming.Recurrence",
+"Becoming.Labelled",
+"imports",
+1
+],
+[
+"Becoming.Recurrence",
+"Becoming.LeastLoss",
+"imports",
+3
+],
+[
+"Becoming.Recurrence",
+"Becoming.Mechanism",
+"imports",
+1
+],
+[
+"Becoming.Recurrence",
+"Becoming.Seeking",
+"imports",
+2
+],
+[
+"Becoming.Recurrence",
+"Becoming.SeekingRuns",
+"imports",
+1
+],
+[
+"Becoming.Recurrence",
+"Becoming.SharedCodes",
+"imports",
+0
+],
+[
+"Becoming.Seeking",
+"Becoming.Commuting",
+"imports",
+0
+],
+[
+"Becoming.Seeking",
+"Becoming.IdentificationRuns",
+"imports",
+0
+],
+[
+"Becoming.Seeking",
+"Becoming.SeekingRuns",
+"imports",
+0
+],
+[
+"Becoming.Seeking",
+"Becoming.SharedCodes",
+"imports",
+0
+]
+],
+"not_co_imported": [
+[
+"Becoming.Attraction",
+"Becoming.Identification"
+],
+[
+"Becoming.Attraction",
+"Becoming.Mechanism"
+],
+[
+"Becoming.Attraction",
+"Becoming.Seeking"
+],
+[
+"Becoming.Branching",
+"Becoming.Identification"
+],
+[
+"Becoming.Branching",
+"Becoming.Seeking"
+],
+[
+"Becoming.Commuting",
+"Becoming.IdentificationRuns"
+],
+[
+"Becoming.Commuting",
+"Becoming.LeastLoss"
+],
+[
+"Becoming.Commuting",
+"Becoming.SeekingRuns"
+],
+[
+"Becoming.Distinguishing",
+"Becoming.LeastLoss"
+],
+[
+"Becoming.Distinguishing",
+"Becoming.Seeking"
+],
+[
+"Becoming.Distinguishing",
+"Becoming.SeekingRuns"
+],
+[
+"Becoming.Identification",
+"Becoming.Labelled"
+],
+[
+"Becoming.Identification",
+"Becoming.LeastLoss"
+],
+[
+"Becoming.Identification",
+"Becoming.Mechanism"
+],
+[
+"Becoming.Identification",
+"Becoming.Seeking"
+],
+[
+"Becoming.Identification",
+"Becoming.SeekingRuns"
+],
+[
+"Becoming.IdentificationRuns",
+"Becoming.LeastLoss"
+],
+[
+"Becoming.IdentificationRuns",
+"Becoming.SeekingRuns"
+],
+[
+"Becoming.IdentificationRuns",
+"Becoming.SharedCodes"
+],
+[
+"Becoming.Labelled",
+"Becoming.Seeking"
+],
+[
+"Becoming.LeastLoss",
+"Becoming.Seeking"
+],
+[
+"Becoming.LeastLoss",
+"Becoming.SeekingRuns"
+],
+[
+"Becoming.LeastLoss",
+"Becoming.SharedCodes"
+],
+[
+"Becoming.Mechanism",
+"Becoming.Seeking"
+],
+[
+"Becoming.SeekingRuns",
+"Becoming.SharedCodes"
+]
+],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Clearing",
+"mods": {
+"Becoming.Boundaries": 7,
+"Becoming.Continuation": 13,
+"Becoming.Feedback": 20,
+"Becoming.Interdependence": 7,
+"Becoming.MutualDependence": 1,
+"Becoming.PoolResponse": 1,
+"Becoming.Regions": 9,
+"Becoming.RelativePosition": 6,
+"Becoming.Selection": 8,
+"Becoming.SelectionPool": 11,
+"Becoming.Significance": 4,
+"Becoming.Standpoints": 9,
+"Becoming.Testing": 12
+},
+"pairs": [
+[
+"Becoming.Continuation",
+"Becoming.Boundaries",
+"imports",
+4
+],
+[
+"Becoming.Continuation",
+"Becoming.Feedback",
+"imports",
+6
+],
+[
+"Becoming.Continuation",
+"Becoming.Interdependence",
+"imports",
+7
+],
+[
+"Becoming.Continuation",
+"Becoming.MutualDependence",
+"imports",
+3
+],
+[
+"Becoming.Continuation",
+"Becoming.PoolResponse",
+"imports",
+3
+],
+[
+"Becoming.Continuation",
+"Becoming.Regions",
+"imports",
+7
+],
+[
+"Becoming.Continuation",
+"Becoming.RelativePosition",
+"imports",
+6
+],
+[
+"Becoming.Continuation",
+"Becoming.Selection",
+"imports",
+5
+],
+[
+"Becoming.Continuation",
+"Becoming.SelectionPool",
+"imports",
+5
+],
+[
+"Becoming.Continuation",
+"Becoming.Significance",
+"imports",
+5
+],
+[
+"Becoming.Continuation",
+"Becoming.Standpoints",
+"imports",
+7
+],
+[
+"Becoming.Continuation",
+"Becoming.Testing",
+"imports",
+5
+],
+[
+"Becoming.Feedback",
+"Becoming.Boundaries",
+"imports",
+3
+],
+[
+"Becoming.Feedback",
+"Becoming.MutualDependence",
+"imports",
+2
+],
+[
+"Becoming.Feedback",
+"Becoming.PoolResponse",
+"imports",
+2
+],
+[
+"Becoming.Feedback",
+"Becoming.Selection",
+"imports",
+3
+],
+[
+"Becoming.Feedback",
+"Becoming.SelectionPool",
+"imports",
+3
+],
+[
+"Becoming.Feedback",
+"Becoming.Testing",
+"imports",
+4
+],
+[
+"Becoming.Interdependence",
+"Becoming.Boundaries",
+"imports",
+1
+],
+[
+"Becoming.Interdependence",
+"Becoming.Feedback",
+"imports",
+1
+],
+[
+"Becoming.Interdependence",
+"Becoming.MutualDependence",
+"imports",
+0
+],
+[
+"Becoming.Interdependence",
+"Becoming.PoolResponse",
+"imports",
+0
+],
+[
+"Becoming.Interdependence",
+"Becoming.Selection",
+"imports",
+0
+],
+[
+"Becoming.Interdependence",
+"Becoming.SelectionPool",
+"imports",
+0
+],
+[
+"Becoming.Interdependence",
+"Becoming.Testing",
+"imports",
+0
+],
+[
+"Becoming.Regions",
+"Becoming.Boundaries",
+"imports",
+3
+],
+[
+"Becoming.Regions",
+"Becoming.Feedback",
+"imports",
+5
+],
+[
+"Becoming.Regions",
+"Becoming.Interdependence",
+"imports",
+5
+],
+[
+"Becoming.Regions",
+"Becoming.MutualDependence",
+"imports",
+0
+],
+[
+"Becoming.Regions",
+"Becoming.PoolResponse",
+"imports",
+2
+],
+[
+"Becoming.Regions",
+"Becoming.RelativePosition",
+"imports",
+1
+],
+[
+"Becoming.Regions",
+"Becoming.Selection",
+"imports",
+1
+],
+[
+"Becoming.Regions",
+"Becoming.SelectionPool",
+"imports",
+5
+],
+[
+"Becoming.Regions",
+"Becoming.Significance",
+"imports",
+6
+],
+[
+"Becoming.Regions",
+"Becoming.Standpoints",
+"imports",
+0
+],
+[
+"Becoming.Regions",
+"Becoming.Testing",
+"imports",
+1
+],
+[
+"Becoming.Selection",
+"Becoming.PoolResponse",
+"imports",
+1
+],
+[
+"Becoming.Selection",
+"Becoming.SelectionPool",
+"imports",
+1
+],
+[
+"Becoming.SelectionPool",
+"Becoming.PoolResponse",
+"imports",
+2
+],
+[
+"Becoming.Significance",
+"Becoming.Boundaries",
+"imports",
+0
+],
+[
+"Becoming.Significance",
+"Becoming.Feedback",
+"imports",
+0
+],
+[
+"Becoming.Significance",
+"Becoming.Interdependence",
+"imports",
+2
+],
+[
+"Becoming.Significance",
+"Becoming.MutualDependence",
+"imports",
+0
+],
+[
+"Becoming.Significance",
+"Becoming.PoolResponse",
+"imports",
+0
+],
+[
+"Becoming.Significance",
+"Becoming.RelativePosition",
+"imports",
+1
+],
+[
+"Becoming.Significance",
+"Becoming.Selection",
+"imports",
+0
+],
+[
+"Becoming.Significance",
+"Becoming.SelectionPool",
+"imports",
+0
+],
+[
+"Becoming.Significance",
+"Becoming.Standpoints",
+"imports",
+0
+],
+[
+"Becoming.Significance",
+"Becoming.Testing",
+"imports",
+0
+],
+[
+"Becoming.Testing",
+"Becoming.MutualDependence",
+"imports",
+0
+],
+[
+"Becoming.Testing",
+"Becoming.PoolResponse",
+"imports",
+0
+],
+[
+"Becoming.Testing",
+"Becoming.Selection",
+"imports",
+5
+],
+[
+"Becoming.Testing",
+"Becoming.SelectionPool",
+"imports",
+3
+]
+],
+"not_co_imported": [
+[
+"Becoming.Boundaries",
+"Becoming.MutualDependence"
+],
+[
+"Becoming.Boundaries",
+"Becoming.PoolResponse"
+],
+[
+"Becoming.Boundaries",
+"Becoming.RelativePosition"
+],
+[
+"Becoming.Boundaries",
+"Becoming.Selection"
+],
+[
+"Becoming.Boundaries",
+"Becoming.SelectionPool"
+],
+[
+"Becoming.Boundaries",
+"Becoming.Standpoints"
+],
+[
+"Becoming.Boundaries",
+"Becoming.Testing"
+],
+[
+"Becoming.Feedback",
+"Becoming.RelativePosition"
+],
+[
+"Becoming.Feedback",
+"Becoming.Standpoints"
+],
+[
+"Becoming.Interdependence",
+"Becoming.RelativePosition"
+],
+[
+"Becoming.Interdependence",
+"Becoming.Standpoints"
+],
+[
+"Becoming.MutualDependence",
+"Becoming.PoolResponse"
+],
+[
+"Becoming.MutualDependence",
+"Becoming.RelativePosition"
+],
+[
+"Becoming.MutualDependence",
+"Becoming.Selection"
+],
+[
+"Becoming.MutualDependence",
+"Becoming.SelectionPool"
+],
+[
+"Becoming.MutualDependence",
+"Becoming.Standpoints"
+],
+[
+"Becoming.PoolResponse",
+"Becoming.RelativePosition"
+],
+[
+"Becoming.PoolResponse",
+"Becoming.Standpoints"
+],
+[
+"Becoming.RelativePosition",
+"Becoming.Selection"
+],
+[
+"Becoming.RelativePosition",
+"Becoming.SelectionPool"
+],
+[
+"Becoming.RelativePosition",
+"Becoming.Standpoints"
+],
+[
+"Becoming.RelativePosition",
+"Becoming.Testing"
+],
+[
+"Becoming.Selection",
+"Becoming.Standpoints"
+],
+[
+"Becoming.SelectionPool",
+"Becoming.Standpoints"
+],
+[
+"Becoming.Standpoints",
+"Becoming.Testing"
+]
+],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Branching",
+"mods": {
+"Becoming.Branching": 76,
+"Becoming.Commuting": 7,
+"Becoming.Junctures": 43,
+"Becoming.LeastLoss": 2
+},
+"pairs": [
+[
+"Becoming.Branching",
+"Becoming.Commuting",
+"imports",
+1
+],
+[
+"Becoming.Branching",
+"Becoming.Junctures",
+"imports",
+4
+],
+[
+"Becoming.Branching",
+"Becoming.LeastLoss",
+"imports",
+1
+],
+[
+"Becoming.Junctures",
+"Becoming.Commuting",
+"imports",
+1
+]
+],
+"not_co_imported": [
+[
+"Becoming.Commuting",
+"Becoming.LeastLoss"
+],
+[
+"Becoming.Junctures",
+"Becoming.LeastLoss"
+]
+],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Twins",
+"mods": {
+"Becoming.Branching": 3,
+"Becoming.Labelled": 1,
+"Becoming.Unfolding": 10
+},
+"pairs": [
+[
+"Becoming.Labelled",
+"Becoming.Branching",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.Unfolding",
+"imports",
+1
+],
+[
+"Becoming.Unfolding",
+"Becoming.Branching",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Coarse",
+"mods": {
+"Becoming.Branching": 8,
+"Becoming.LawAlongRun": 2,
+"Becoming.Mechanism": 4
+},
+"pairs": [
+[
+"Becoming.Mechanism",
+"Becoming.Branching",
+"imports",
+1
+],
+[
+"Becoming.Mechanism",
+"Becoming.LawAlongRun",
+"imports",
+2
+]
+],
+"not_co_imported": [
+[
+"Becoming.Branching",
+"Becoming.LawAlongRun"
+]
+],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Confound",
+"mods": {
+"Becoming.Branching": 1,
+"Becoming.Experiment": 18
+},
+"pairs": [
+[
+"Becoming.Experiment",
+"Becoming.Branching",
+"imports",
+6
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Captured",
+"mods": {
+"Becoming.Branching": 6,
+"Becoming.Capture": 4
+},
+"pairs": [
+[
+"Becoming.Capture",
+"Becoming.Branching",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Accretion",
+"mods": {
+"Becoming.Change": 5,
+"Becoming.Openness": 4
+},
+"pairs": [
+[
+"Becoming.Change",
+"Becoming.Openness",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": [
+"Becoming.Change",
+"Becoming.Openness"
+]
+},
+{
+"ns": "Becoming.Specker",
+"mods": {
+"Becoming.Context": 18,
+"Becoming.Gluing": 9
+},
+"pairs": [
+[
+"Becoming.Context",
+"Becoming.Gluing",
+"imports",
+8
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.ChangingContext",
+"mods": {
+"Becoming.Context": 2,
+"Becoming.ContextArrivalTraces": 3
+},
+"pairs": [
+[
+"Becoming.Context",
+"Becoming.ContextArrivalTraces",
+"imports",
+1
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Lone",
+"mods": {
+"Becoming.Continuation": 3,
+"Becoming.Dissipation": 11
+},
+"pairs": [
+[
+"Becoming.Dissipation",
+"Becoming.Continuation",
+"imports",
+4
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Alone",
+"mods": {
+"Becoming.Continuation": 5,
+"Becoming.Exhaustion": 1
+},
+"pairs": [
+[
+"Becoming.Continuation",
+"Becoming.Exhaustion",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Copying",
+"mods": {
+"Becoming.Copying": 106,
+"Becoming.Pace": 3
+},
+"pairs": [
+[
+"Becoming.Copying",
+"Becoming.Pace",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": [
+"Becoming.Copying",
+"Becoming.Pace"
+]
+},
+{
+"ns": "Becoming.Pinned",
+"mods": {
+"Becoming.Correspondence": 1,
+"Becoming.Dependence": 5,
+"Becoming.Labelled": 4
+},
+"pairs": [
+[
+"Becoming.Dependence",
+"Becoming.Correspondence",
+"imports",
+1
+],
+[
+"Becoming.Dependence",
+"Becoming.Labelled",
+"imports",
+4
+],
+[
+"Becoming.Labelled",
+"Becoming.Correspondence",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Mutualism",
+"mods": {
+"Becoming.Correspondence": 6,
+"Becoming.Descent": 3,
+"Becoming.Roles": 16
+},
+"pairs": [
+[
+"Becoming.Correspondence",
+"Becoming.Descent",
+"imports",
+1
+],
+[
+"Becoming.Roles",
+"Becoming.Correspondence",
+"imports",
+7
+],
+[
+"Becoming.Roles",
+"Becoming.Descent",
+"imports",
+5
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Loop",
+"mods": {
+"Becoming.Counterfactual": 7,
+"Becoming.PoolResponse": 1,
+"Becoming.Response": 20,
+"Becoming.Weighted": 2
+},
+"pairs": [
+[
+"Becoming.Counterfactual",
+"Becoming.PoolResponse",
+"imports",
+4
+],
+[
+"Becoming.Response",
+"Becoming.Counterfactual",
+"imports",
+9
+],
+[
+"Becoming.Response",
+"Becoming.PoolResponse",
+"imports",
+6
+]
+],
+"not_co_imported": [
+[
+"Becoming.Counterfactual",
+"Becoming.Weighted"
+],
+[
+"Becoming.PoolResponse",
+"Becoming.Weighted"
+],
+[
+"Becoming.Response",
+"Becoming.Weighted"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.Weighted"
+]
+},
+{
+"ns": "Becoming.OpenQueue",
+"mods": {
+"Becoming.Counting": 12,
+"Becoming.Standing": 1
+},
+"pairs": [
+[
+"Becoming.Counting",
+"Becoming.Standing",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.CrossSituational",
+"mods": {
+"Becoming.Courses": 1,
+"Becoming.CrossSituational": 36
+},
+"pairs": [
+[
+"Becoming.CrossSituational",
+"Becoming.Courses",
+"imports",
+1
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Coverage",
+"mods": {
+"Becoming.Coverage": 34,
+"Becoming.Decidedness": 1
+},
+"pairs": [
+[
+"Becoming.Decidedness",
+"Becoming.Coverage",
+"imports",
+1
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Crossing",
+"mods": {
+"Becoming.Dependence": 11,
+"Becoming.Labelled": 8,
+"Becoming.Order": 13
+},
+"pairs": [
+[
+"Becoming.Dependence",
+"Becoming.Labelled",
+"imports",
+6
+],
+[
+"Becoming.Dependence",
+"Becoming.Order",
+"imports",
+0
+]
+],
+"not_co_imported": [
+[
+"Becoming.Labelled",
+"Becoming.Order"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.Order"
+]
+},
+{
+"ns": "Becoming.Renewable",
+"mods": {
+"Becoming.Dependence": 3,
+"Becoming.Horizon": 5,
+"Becoming.Joint": 10,
+"Becoming.JointKeeping": 1,
+"Becoming.Labelled": 14,
+"Becoming.LabelledRoles": 2,
+"Becoming.Renewal": 3
+},
+"pairs": [
+[
+"Becoming.Dependence",
+"Becoming.Horizon",
+"imports",
+0
+],
+[
+"Becoming.Dependence",
+"Becoming.Joint",
+"imports",
+0
+],
+[
+"Becoming.Dependence",
+"Becoming.JointKeeping",
+"imports",
+0
+],
+[
+"Becoming.Dependence",
+"Becoming.Labelled",
+"imports",
+3
+],
+[
+"Becoming.Dependence",
+"Becoming.LabelledRoles",
+"imports",
+0
+],
+[
+"Becoming.Horizon",
+"Becoming.JointKeeping",
+"imports",
+0
+],
+[
+"Becoming.Horizon",
+"Becoming.LabelledRoles",
+"imports",
+1
+],
+[
+"Becoming.Joint",
+"Becoming.JointKeeping",
+"imports",
+0
+],
+[
+"Becoming.Labelled",
+"Becoming.Horizon",
+"imports",
+3
+],
+[
+"Becoming.Labelled",
+"Becoming.Joint",
+"imports",
+1
+],
+[
+"Becoming.Labelled",
+"Becoming.JointKeeping",
+"imports",
+4
+],
+[
+"Becoming.Labelled",
+"Becoming.LabelledRoles",
+"imports",
+1
+],
+[
+"Becoming.Renewal",
+"Becoming.Dependence",
+"imports",
+0
+],
+[
+"Becoming.Renewal",
+"Becoming.Horizon",
+"imports",
+1
+],
+[
+"Becoming.Renewal",
+"Becoming.Joint",
+"imports",
+1
+],
+[
+"Becoming.Renewal",
+"Becoming.JointKeeping",
+"imports",
+1
+],
+[
+"Becoming.Renewal",
+"Becoming.Labelled",
+"imports",
+2
+],
+[
+"Becoming.Renewal",
+"Becoming.LabelledRoles",
+"imports",
+1
+]
+],
+"not_co_imported": [
+[
+"Becoming.Horizon",
+"Becoming.Joint"
+],
+[
+"Becoming.Joint",
+"Becoming.LabelledRoles"
+],
+[
+"Becoming.JointKeeping",
+"Becoming.LabelledRoles"
+]
+],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Dip",
+"mods": {
+"Becoming.Dependence": 6,
+"Becoming.Return": 1
+},
+"pairs": [
+[
+"Becoming.Dependence",
+"Becoming.Return",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Brood",
+"mods": {
+"Becoming.Descent": 12,
+"Becoming.Roles": 13
+},
+"pairs": [
+[
+"Becoming.Roles",
+"Becoming.Descent",
+"imports",
+6
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Provisioned",
+"mods": {
+"Becoming.Descent": 1,
+"Becoming.Reserve": 8
+},
+"pairs": [
+[
+"Becoming.Reserve",
+"Becoming.Descent",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Sleeper",
+"mods": {
+"Becoming.Descent": 1,
+"Becoming.Reserve": 3
+},
+"pairs": [
+[
+"Becoming.Reserve",
+"Becoming.Descent",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Motion",
+"mods": {
+"Becoming.Description": 5,
+"Becoming.IdentificationRuns": 5
+},
+"pairs": [
+[
+"Becoming.Description",
+"Becoming.IdentificationRuns",
+"imports",
+5
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Settling",
+"mods": {
+"Becoming.Entropy": 13,
+"Becoming.Settling": 29
+},
+"pairs": [],
+"not_co_imported": [
+[
+"Becoming.Entropy",
+"Becoming.Settling"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.Entropy",
+"Becoming.Settling"
+]
+},
+{
+"ns": "Becoming.Drawdown",
+"mods": {
+"Becoming.Evolution": 15,
+"Becoming.Transmission": 1
+},
+"pairs": [
+[
+"Becoming.Evolution",
+"Becoming.Transmission",
+"imports",
+6
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Trophic",
+"mods": {
+"Becoming.Feedback": 42,
+"Becoming.Response": 8
+},
+"pairs": [
+[
+"Becoming.Feedback",
+"Becoming.Response",
+"imports",
+11
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Expansion",
+"mods": {
+"Becoming.Flow": 11,
+"Becoming.Order": 2,
+"Becoming.Population": 4
+},
+"pairs": [
+[
+"Becoming.Flow",
+"Becoming.Order",
+"imports",
+3
+],
+[
+"Becoming.Flow",
+"Becoming.Population",
+"imports",
+7
+],
+[
+"Becoming.Population",
+"Becoming.Order",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Oscillation",
+"mods": {
+"Becoming.Flow": 7,
+"Becoming.Generation": 10,
+"Becoming.Population": 4
+},
+"pairs": [
+[
+"Becoming.Flow",
+"Becoming.Population",
+"imports",
+3
+],
+[
+"Becoming.Generation",
+"Becoming.Flow",
+"imports",
+4
+],
+[
+"Becoming.Generation",
+"Becoming.Population",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Cycle",
+"mods": {
+"Becoming.Flow": 6,
+"Becoming.Gluing": 22,
+"Becoming.Population": 4
+},
+"pairs": [
+[
+"Becoming.Flow",
+"Becoming.Gluing",
+"imports",
+0
+],
+[
+"Becoming.Flow",
+"Becoming.Population",
+"imports",
+5
+],
+[
+"Becoming.Population",
+"Becoming.Gluing",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": [
+"Becoming.Gluing"
+]
+},
+{
+"ns": "Becoming.Requirement",
+"mods": {
+"Becoming.Frontier": 31,
+"Becoming.FrontierFrames": 1
+},
+"pairs": [
+[
+"Becoming.Frontier",
+"Becoming.FrontierFrames",
+"imports",
+1
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Requirement.Formation",
+"mods": {
+"Becoming.Frontier": 42,
+"Becoming.FrontierFrames": 14
+},
+"pairs": [
+[
+"Becoming.Frontier",
+"Becoming.FrontierFrames",
+"imports",
+22
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Lexical",
+"mods": {
+"Becoming.FrontierFrames": 21,
+"Becoming.Lexical": 44
+},
+"pairs": [
+[
+"Becoming.Lexical",
+"Becoming.FrontierFrames",
+"imports",
+11
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Choosing",
+"mods": {
+"Becoming.Histories": 14,
+"Becoming.Likeness": 2,
+"Becoming.Postponement": 2
+},
+"pairs": [
+[
+"Becoming.Histories",
+"Becoming.Likeness",
+"imports",
+3
+],
+[
+"Becoming.Histories",
+"Becoming.Postponement",
+"imports",
+4
+]
+],
+"not_co_imported": [
+[
+"Becoming.Likeness",
+"Becoming.Postponement"
+]
+],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Stretches",
+"mods": {
+"Becoming.HistoryIdeals": 44,
+"Becoming.Verification": 14
+},
+"pairs": [
+[
+"Becoming.HistoryIdeals",
+"Becoming.Verification",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Routes.SelfLoop",
+"mods": {
+"Becoming.HistorySums": 1,
+"Becoming.Routes": 3
+},
+"pairs": [
+[
+"Becoming.Routes",
+"Becoming.HistorySums",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": [
+"Becoming.HistorySums",
+"Becoming.Routes"
+]
+},
+{
+"ns": "Becoming.Sequences",
+"mods": {
+"Becoming.Horizon": 11,
+"Becoming.Verification": 4
+},
+"pairs": [
+[
+"Becoming.Horizon",
+"Becoming.Verification",
+"imports",
+6
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Ideals",
+"mods": {
+"Becoming.Ideals": 127,
+"Becoming.Verification": 53
+},
+"pairs": [
+[
+"Becoming.Ideals",
+"Becoming.Verification",
+"imports",
+24
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Identification",
+"mods": {
+"Becoming.Identification": 92,
+"Becoming.Labels": 2
+},
+"pairs": [
+[
+"Becoming.Identification",
+"Becoming.Labels",
+"imports",
+1
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Fork",
+"mods": {
+"Becoming.Identity": 2,
+"Becoming.Unfolding": 5
+},
+"pairs": [],
+"not_co_imported": [
+[
+"Becoming.Identity",
+"Becoming.Unfolding"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.Identity",
+"Becoming.Unfolding"
+]
+},
+{
+"ns": "Becoming.Overshoot",
+"mods": {
+"Becoming.Interdependence": 12,
+"Becoming.MutualDependence": 1
+},
+"pairs": [
+[
+"Becoming.Interdependence",
+"Becoming.MutualDependence",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Viability",
+"mods": {
+"Becoming.JointKeeping": 14,
+"Becoming.Keeping": 34,
+"Becoming.Viability": 31
+},
+"pairs": [
+[
+"Becoming.Keeping",
+"Becoming.JointKeeping",
+"imports",
+1
+],
+[
+"Becoming.Viability",
+"Becoming.JointKeeping",
+"imports",
+3
+],
+[
+"Becoming.Viability",
+"Becoming.Keeping",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Circulation",
+"mods": {
+"Becoming.Labelled": 5,
+"Becoming.Resolution": 17
+},
+"pairs": [],
+"not_co_imported": [
+[
+"Becoming.Labelled",
+"Becoming.Resolution"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.Labelled",
+"Becoming.Resolution"
+]
+},
+{
+"ns": "Becoming.Predation",
+"mods": {
+"Becoming.LabelledRoles": 1,
+"Becoming.Roles": 9
+},
+"pairs": [
+[
+"Becoming.Roles",
+"Becoming.LabelledRoles",
+"imports",
+4
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Learning",
+"mods": {
+"Becoming.Labels": 1,
+"Becoming.Learning": 98,
+"Becoming.LearningRuns": 4,
+"Becoming.Unrolling": 6
+},
+"pairs": [
+[
+"Becoming.Learning",
+"Becoming.Labels",
+"imports",
+1
+],
+[
+"Becoming.Learning",
+"Becoming.LearningRuns",
+"imports",
+1
+],
+[
+"Becoming.Learning",
+"Becoming.Unrolling",
+"imports",
+1
+],
+[
+"Becoming.Unrolling",
+"Becoming.Labels",
+"imports",
+0
+]
+],
+"not_co_imported": [
+[
+"Becoming.Labels",
+"Becoming.LearningRuns"
+],
+[
+"Becoming.LearningRuns",
+"Becoming.Unrolling"
+]
+],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Learnable",
+"mods": {
+"Becoming.Labels": 17,
+"Becoming.Learnable": 18,
+"Becoming.Unrolling": 12
+},
+"pairs": [
+[
+"Becoming.Learnable",
+"Becoming.Labels",
+"imports",
+6
+],
+[
+"Becoming.Learnable",
+"Becoming.Unrolling",
+"imports",
+4
+],
+[
+"Becoming.Unrolling",
+"Becoming.Labels",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.LearnableRuns",
+"mods": {
+"Becoming.Labels": 5,
+"Becoming.LearnableRuns": 13,
+"Becoming.Unrolling": 4
+},
+"pairs": [
+[
+"Becoming.LearnableRuns",
+"Becoming.Labels",
+"imports",
+6
+],
+[
+"Becoming.LearnableRuns",
+"Becoming.Unrolling",
+"imports",
+4
+],
+[
+"Becoming.Unrolling",
+"Becoming.Labels",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Switching",
+"mods": {
+"Becoming.LawAlongRun": 2,
+"Becoming.Mechanism": 8,
+"Becoming.Pace": 5
+},
+"pairs": [
+[
+"Becoming.Mechanism",
+"Becoming.LawAlongRun",
+"imports",
+1
+],
+[
+"Becoming.Mechanism",
+"Becoming.Pace",
+"imports",
+0
+]
+],
+"not_co_imported": [
+[
+"Becoming.LawAlongRun",
+"Becoming.Pace"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.Pace"
+]
+},
+{
+"ns": "Becoming.Learning.Training",
+"mods": {
+"Becoming.Learning": 6,
+"Becoming.Revision": 2
+},
+"pairs": [
+[
+"Becoming.Learning",
+"Becoming.Revision",
+"imports",
+1
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Halving",
+"mods": {
+"Becoming.LeastLoss": 8,
+"Becoming.Order": 3
+},
+"pairs": [],
+"not_co_imported": [
+[
+"Becoming.LeastLoss",
+"Becoming.Order"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.LeastLoss",
+"Becoming.Order"
+]
+},
+{
+"ns": "Becoming.Parting",
+"mods": {
+"Becoming.Likeness": 7,
+"Becoming.Parting": 63
+},
+"pairs": [
+[
+"Becoming.Likeness",
+"Becoming.Parting",
+"imports",
+0
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": [
+"Becoming.Likeness",
+"Becoming.Parting"
+]
+},
+{
+"ns": "Becoming.Loops.Once",
+"mods": {
+"Becoming.Loops": 6,
+"Becoming.Remainder": 4
+},
+"pairs": [
+[
+"Becoming.Loops",
+"Becoming.Remainder",
+"imports",
+1
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Separate",
+"mods": {
+"Becoming.Metaethics": 3,
+"Becoming.ValuationFrames": 3
+},
+"pairs": [
+[
+"Becoming.Metaethics",
+"Becoming.ValuationFrames",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Model",
+"mods": {
+"Becoming.Metaethics": 11,
+"Becoming.ValuationFrames": 6
+},
+"pairs": [
+[
+"Becoming.Metaethics",
+"Becoming.ValuationFrames",
+"imports",
+8
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Throughput",
+"mods": {
+"Becoming.Openness": 5,
+"Becoming.Roles": 14
+},
+"pairs": [
+[
+"Becoming.Roles",
+"Becoming.Openness",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Pace",
+"mods": {
+"Becoming.Pace": 32,
+"Becoming.RuleCapture": 2
+},
+"pairs": [
+[
+"Becoming.Pace",
+"Becoming.RuleCapture",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Shuttle",
+"mods": {
+"Becoming.Persistence": 7,
+"Becoming.Roles": 16
+},
+"pairs": [
+[
+"Becoming.Roles",
+"Becoming.Persistence",
+"imports",
+6
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.TimedResponse",
+"mods": {
+"Becoming.PoolResponse": 1,
+"Becoming.TimedResponse": 18
+},
+"pairs": [
+[
+"Becoming.TimedResponse",
+"Becoming.PoolResponse",
+"imports",
+2
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Ranking",
+"mods": {
+"Becoming.Ranking": 45,
+"Becoming.Relevance": 17
+},
+"pairs": [
+[
+"Becoming.Ranking",
+"Becoming.Relevance",
+"imports",
+12
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Ranking.ThirdParty",
+"mods": {
+"Becoming.Ranking": 13,
+"Becoming.Relevance": 1
+},
+"pairs": [
+[
+"Becoming.Ranking",
+"Becoming.Relevance",
+"imports",
+3
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+},
+{
+"ns": "Becoming.Widening",
+"mods": {
+"Becoming.Relevance": 4,
+"Becoming.Widening": 49
+},
+"pairs": [],
+"not_co_imported": [
+[
+"Becoming.Relevance",
+"Becoming.Widening"
+]
+],
+"modules_sharing_nothing": [
+"Becoming.Relevance",
+"Becoming.Widening"
+]
+},
+{
+"ns": "Becoming.SupportDrawn",
+"mods": {
+"Becoming.Runaway": 1,
+"Becoming.Testing": 11
+},
+"pairs": [
+[
+"Becoming.Testing",
+"Becoming.Runaway",
+"imports",
+5
+]
+],
+"not_co_imported": [],
+"modules_sharing_nothing": []
+}
+]

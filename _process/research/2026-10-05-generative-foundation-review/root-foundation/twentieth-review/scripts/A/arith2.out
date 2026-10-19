@@ -1,0 +1,93 @@
+strict prelude-only theorems 1512 of 11680
+in shared modules 108 outside 1404 modules with any 175
+[('Becoming.OneStep', 56), ('Becoming.Resolution', 45), ('Becoming.Gluing', 44), ('Becoming.Copying', 39), ('Becoming.IntegerOrder', 39), ('Becoming.Typicality', 38), ('Becoming.Loops', 37), ('Becoming.Propagation', 36), ('Becoming.Order', 31), ('Becoming.Flow', 29), ('Becoming.Entropy', 28), ('Becoming.Integers', 27), ('Becoming.ContinuingRevision', 26), ('Becoming.ListTests', 24), ('Becoming.Testing', 21), ('Becoming.LimitVerification', 20), ('Becoming.RuleHandoff', 20), ('Becoming.Weighted', 20), ('Becoming.FallibleInquiry', 19), ('Becoming.HexagramSites', 19), ('Becoming.RouteFormation', 19), ('Becoming.Sensitivity', 19), ('Becoming.Frequency', 18), ('Becoming.Naturals', 18), ('Becoming.Likeness', 17), ('Becoming.OrderNormal', 17), ('Becoming.Population', 17), ('Becoming.ReferencePlan', 17), ('Becoming.Change', 16), ('Becoming.HexagramPlaces', 16)]
+statement shapes proved in >1 module 89 theorems involved 213
+7 ['Becoming.couple_couple@Description:278', 'Becoming.Turnover.swap_swap@Identity:1333', 'Becoming.TideFlip.swap_swap@Identity:1458', 'Becoming.Lineage.swap_swap@Identity:1780', 'Becoming.Succession.swap_swap@Identity:1894', 'Becoming.Dormancy.swap_swap@Identity:2011', 'Becoming.Hibernation.swap_swap@Persistence:308'] | : ∀ v0, v1 (v1 v0) = v0
+5 ['Becoming.Clear.of_not@Change:430', 'Becoming.Hexagram.not_true_eq@HexagramSites:425', 'Becoming.Hexagram.false_of_not@Hexagrams:293', 'Becoming.Limit.eq_true_of_not_false@LimitVerification:184', 'Becoming.Tail.false_of_not_eq_true@Tail:109'] | : ∀ {v0 : Bool}, (!v0) = v1 → v0 = v2
+5 ['Becoming.Frontier.burning_self@Dissipation:868', 'Becoming.Passing.holds_self@Entropy:1745', 'Becoming.OneStep.Witness.hit_self@OneStep:773', 'Becoming.Cascade.upto_self@Reserve:829', 'Becoming.Brood.standing_self@Roles:994'] | : ∀ v0, v1 v0 v0 = 1
+4 ['Becoming.Captured.not_ne@Branching:1389', 'Becoming.Enough.Free.not_ne_self@Enough:176', 'Becoming.Identification.not_ne_bool@Identification:1120', 'Becoming.Learning.not_moves@Learning:1054'] | : ∀ v0 : Bool, (!v0) ≠ v0
+4 ['Becoming.ContinuingRevision.use_pos@ContinuingRevision:458', 'Becoming.halving_pos@Resolution:1425', 'Becoming.quarter_pos@Resolution:1429', 'Becoming.Doubling.double_pos@Units:312'] | : ∀ v0, 0 < v1 v0
+4 ['Becoming.Hexagram.nuclear_jiJi@HexagramLaws:271', 'Becoming.Hexagram.nuclear_weiJi@HexagramLaws:273', 'Becoming.orderNext_closes@HexagramSequences:323', 'Becoming.Hexagram.feng_no_sole@HexagramSites:975'] | : v0 v1 = v2
+4 ['Becoming.beq_self@HexagramSequences:686', 'Becoming.Loops.beq_self@Loops:133', 'Becoming.beq_self@OrderNormal:865', 'Becoming.SharedCodes.Gloss.beq_self@SharedCodes:1452'] | : ∀ v0 : Nat, Nat.beq v0 v0 = v1
+4 ["Becoming.Dyadic.mul_left_comm'@LeastLoss:530", 'Becoming.Loops.mul_left_comm_nat@Loops:1300', 'Becoming.mul_turn@Resolution:146', 'Becoming.Typicality.left_comm@Typicality:72'] | (v0 v1 v2 : Nat) : v0 * (v1 * v2) = v1 * (v0 * v2)
+3 ['Becoming.Specker.marks_self@Context:239', 'Becoming.addParity_self@Gluing:95', 'Becoming.stepBeyond_self@Persistence:657'] | : ∀ v0, v1 v0 v0 = v2
+3 ['Becoming.Passing.not_not@Entropy:1741', 'Becoming.Hexagram.opposite_opposite@Hexagrams:135', 'Becoming.SharedCodes.TwoFormations.not_not@SharedCodes:1250'] | : ∀ v0 : Bool, (!!v0) = v0
+3 ['Becoming.FallibleInquiry.Witness.balanced@FallibleInquiry:288', 'Becoming.Replenishing.balances@Rejoining:383', 'Becoming.TimedResponse.Delayed.balanced@TimedResponse:254'] | (v0 : Bool) : (v1 v0).Balances (v2 v0)
+3 ['Becoming.FinerTraces.mem_cons_split@FinerTraces:50', 'Becoming.Interleavings.mem_cons_split@Interleavings:56', 'Becoming.mem_cons_cases@Population:111'] | {v0 v1 : α} {v2 : List α} : v1 ∈ v0 :: v2 → v1 = v0 ∨ v1 ∈ v2
+3 ['Becoming.FinerTraces.of_mem_map@FinerTraces:62', 'Becoming.image_of_mem_map@Gluing:157', 'Becoming.LossMatching.mem_map_inv@LossMatching:45'] | {v0 : α → β} {v1 : β} : ∀ {v2 : List α}, v1 ∈ l.map v0 → ∃ v3, v3 ∈ v2 ∧ v0 v3 = v1
+3 ['Becoming.FinerTraces.two_listed@FinerTraces:211', 'Becoming.Net.bools_every@PlaceTransitionNets:809', 'Becoming.Shuttle.every@Roles:1218'] | : ∀ v0 : Bool, v0 ∈ [v1, v2]
+3 ['Becoming.Frequency.Rows.or_cases@Frequency:815', 'Becoming.Hexagram.either@Hexagrams:129', "Becoming.Limit.or_cases'@LimitVerification:280"] | : ∀ {v0 v1 : Bool}, (v0 || v1) = v2 → v0 = v2 ∨ v1 = v2
+3 ['Becoming.Hexagram.opposite_false@Hexagrams:696', 'Becoming.Hexagram.opposite_true@Hexagrams:700', 'Becoming.Tail.not_eq_true_of_false@Tail:113'] | : ∀ {v0 : Bool}, v0 = v1 → (!v0) = v2
+3 ['Becoming.HistoryIdeals.units_length@HistoryIdeals:475', 'Becoming.Trickle.conduits_length@Resolution:2091', 'Becoming.Undecided.upto_length@Undecided:435'] | : ∀ v0, (v1 v0).length = v0
+3 ['Becoming.sub_eq_zero_of_le@Imbalance:46', 'Becoming.Propagation.sub_zero_of_le@Propagation:109', 'Becoming.SupportGated.sub_eq_zero_of_le@RenewalFlow:59'] | : ∀ {v0 v1 : Nat}, v0 ≤ v1 → v0 - v1 = 0
+3 ["Becoming.Dyadic.pow_add'@LeastLoss:533", 'Becoming.Loops.pow_add_nat@Loops:1308', 'Becoming.Typicality.pow_add_nat@Typicality:367'] | (v0 v1 : Nat) : ∀ v2, v0 ^ (v1 + v2) = v0 ^ v1 * v0 ^ v2
+3 ['Becoming.ListTests.not_true_iff@ListTests:49', 'Becoming.not_eq_true_iff@OrderNormal:1290', 'Becoming.not_eq_false_iff@OrderNormal:1294'] | : ∀ {v0 : Bool}, (!v0) = v1 ↔ v0 = v2
+3 ['Becoming.bool_eq_of_iff@OrderNormal:106', 'Becoming.RuleHandoff.bool_eq_of_iff@RuleHandoff:563', 'Becoming.WeightedTraces.bool_eq_of_iff@WeightedTraces:108'] | : ∀ {v0 v1 : Bool}, (v0 = v2 ↔ v1 = v2) → v0 = v1
+3 ['Becoming.mem_append_either@OrderNormal:1103', "Becoming.Net.mem_append_cases'@PlaceTransitionNets:624", 'Becoming.Propagation.mem_append_cases@Propagation:442'] | {α : Type} {v0 : α} : ∀ {v1 v2 : List α}, v0 ∈ v1 ++ v2 → v0 ∈ v1 ∨ v0 ∈ v2
+2 ['Becoming.mul_assoc_nat@Capture:62', 'Becoming.Loops.mul_assoc_nat@Loops:179'] | : ∀ v0 v1 v2 : Nat, v0 * v1 * v2 = v0 * (v1 * v2)
+2 ['Becoming.Carriers.static_ne_toggle@Carriers:186', 'Becoming.Dephasing.prepared_ne_coherent@Dephasing:353'] | : v0 ≠ v1
+2 ['Becoming.exists_add_of_le@CensusCounts:65', 'Becoming.ResponseLearning.exists_add_of_le@ResponseLearning:64'] | : ∀ {v0 v1 : Nat}, v0 ≤ v1 → ∃ v2, v1 = v2 + v0
+2 ['Becoming.Clear.cases@Change:406', 'Becoming.bool_cases@OrderNormal:1286'] | : ∀ v0 : Bool, v0 = v1 ∨ v0 = v2
+2 ['Becoming.Clear.not_both@Change:414', "Becoming.Limit.true_ne_false'@LimitVerification:100"] | {v0 : Bool} (v1 : v0 = v2) (v3 : v0 = v4) : False
+2 ['Becoming.Clear.and_left@Change:417', 'Becoming.RuleHandoff.and_left@RuleHandoff:142'] | : ∀ {v0 v1 : Bool}, (v0 && v1) = v2 → v0 = v2
+2 ['Becoming.Clear.and_right@Change:421', 'Becoming.RuleHandoff.and_right@RuleHandoff:146'] | : ∀ {v0 v1 : Bool}, (v0 && v1) = v2 → v1 = v2
+2 ['Becoming.Closing.ble_false_of_lt@Closing:79', 'Becoming.Routes.ble_false_of_lt@Routes:313'] | : ∀ {v0 v1 : Nat}, v1 < v0 → Nat.ble v0 v1 = v2
+2 ['Becoming.Specker.flip_ne@Context:249', 'Becoming.Coupling.ne_not@Coupling:720'] | : ∀ v0 : Bool, v0 ≠ !v0
+2 ['Becoming.Exceeding.live_of_present@Continuation:522', 'Becoming.Race.live_of_present@RelativePosition:381'] | : ∀ v0 v1, v1 ∈ v2 v0 → v3 v0
+2 ['Becoming.Copying.sub_twice@Copying:67', 'Becoming.Naturals.sub_sub@Naturals:44'] | (v0 v1 : Nat) : ∀ v2 : Nat, v0 - v1 - v2 = v0 - (v1 + v2)
+2 ['Becoming.Copying.add_sub_back@Copying:71', 'Becoming.add_sub_of_le@Dependence:132'] | : ∀ {v0 v1 : Nat}, v0 ≤ v1 → v0 + (v1 - v0) = v1
+2 ['Becoming.Copying.cancel_right@Copying:84', 'Becoming.add_right_cancel@Dependence:113'] | : ∀ {v0 v1 : Nat} (v2 : Nat), v0 + v2 = v1 + v2 → v0 = v1
+2 ['Becoming.Copying.le_sub_of_add@Copying:88', 'Becoming.Naturals.le_sub_of_add_le@Naturals:68'] | {v0 v1 v2 : Nat} (v3 : v0 + v1 ≤ v2) : v1 ≤ v2 - v0
+2 ['Becoming.Copying.add_sub_left@Copying:98', 'Becoming.Propagation.add_sub_self_left@Propagation:126'] | : ∀ (v0 v1 : Nat), v0 + v1 - v0 = v1
+2 ['Becoming.Shared.dependent@Correspondence:460', 'Becoming.SupportDrawn.dependent@Testing:959'] | (v0 : Nat → Nat) : (v1 v0).Dependent
+2 ['Becoming.ExchangeLaw.sub_add_back@Counterfactual:372', 'Becoming.Naturals.sub_add_cancel@Naturals:34'] | : ∀ {v0 v1 : Nat}, v1 ≤ v0 → v0 - v1 + v1 = v0
+2 ['Becoming.World.queue_premised@Counting:291', 'Becoming.World.sourcedQueue_holds@Standing:172'] | (v0 v1 : Nat → Nat) : (v2 v0 v1).Dependent ∧ (v2 v0 v1).Balanced ∧ (v2 v0 v1).Acting ∧ (v2 v0 v1).Taking ∧ (v2
+2 ['Becoming.Courses.counting_sum_one@Courses:1007', 'Becoming.Situations.sum_one@Situations:94'] | {α : Type v0} : ∀ v1 : List α, counting.sum v1 (fun _ => 1) = l.length
+2 ['Becoming.CrossSituational.and_eq_true@CrossSituational:203', 'Becoming.ListTests.and_true_iff@ListTests:38'] | : ∀ {v0 v1 : Bool}, (v0 && v1) = v2 ↔ v0 = v2 ∧ v1 = v2
+2 ['Becoming.le_of_add_le_add_right@Dependence:108', 'Becoming.Identification.le_of_add_right@Identification:1208'] | : ∀ {v0 v1 : Nat} (v2 : Nat), v0 + v2 ≤ v1 + v2 → v0 ≤ v1
+2 ['Becoming.Dephasing.dephase_merges_preparations@Dephasing:196', 'Becoming.ProjectedLaws.formation_preserves_cell_values@ProjectedLaws:245'] | : v0 v1 = v0 v2
+2 ['Becoming.flipIf_self@Description:158', 'Becoming.Hexagram.same_self@Hexagrams:120'] | : ∀ v0 : Bool, v1 v0 v0 = v2
+2 ['Becoming.Dispatch.two_mul@Dispatch:268', 'Becoming.Doubling.two_mul_eq@Units:316'] | (v0 : Nat) : 2 * v0 = v0 + v0
+2 ['Becoming.Frontier.burning_at@Dissipation:872', 'Becoming.OneStep.Witness.hit_pos@OneStep:777'] | : ∀ v0 v1, 0 < v2 v0 v1 → v0 = v1
+2 ['Becoming.preimage_of_mem_map@Entropy:875', 'Becoming.Net.exists_of_mem_map@PlaceTransitionNets:608'] | {α β : Type} {v0 : α → β} {v1 : β} : ∀ {v2 : List α}, v1 ∈ l.map v0 → ∃ v3, v3 ∈ v2 ∧ v0 v3 = v1
+2 ['Becoming.Seeker.level_pos@Exhaustion:230', 'Becoming.Ranking.ThirdParty.stops_supports@Ranking:647'] | : ∀ v0, 1 ≤ v1 v0
+2 ['Becoming.FinerTraces.mem_append_split@FinerTraces:54', 'Becoming.mem_append_cases@OneStep:125'] | {v0 : α} : ∀ {v1 v2 : List α}, v0 ∈ v1 ++ v2 → v0 ∈ v1 ∨ v0 ∈ v2
+2 ['Becoming.FinerTraces.lt_of_mem_upto@FinerTraces:79', 'Becoming.Cycle.lt_of_mem_down@Gluing:730'] | : ∀ {v0 v1 : Nat}, v1 ∈ v2 v0 → v1 < v0
+2 ['Becoming.FinerTraces.mem_upto@FinerTraces:85', 'Becoming.Undecided.mem_upto@Undecided:439'] | : ∀ {v0 v1 : Nat}, v1 < v0 → v1 ∈ v2 v0
+2 ['Cycle.ones@Flow:912', 'Repeated.ones@Population:1504'] | : ∀ v0, v1 (v2 v0) (fun _ => 1) = v0
+2 ['Becoming.Frequency.Rows.or_left@Frequency:819', 'Becoming.Hexagram.or_left_true@HexagramSites:123'] | : ∀ {v0 : Bool} (v1 : Bool), v0 = v2 → (v0 || v1) = v2
+2 ['Becoming.Frequency.Rows.or_right@Frequency:823', 'Becoming.Hexagram.or_right_true@HexagramSites:126'] | : ∀ (v0 : Bool) {v1 : Bool}, v1 = v2 → (v0 || v1) = v2
+2 ['Becoming.add_one_sub_self@Gain:85', 'Becoming.succ_sub_self@Order:164'] | : ∀ v0 : Nat, v0 + 1 - v0 = 1
+2 ['Becoming.Relay.reserve_succ_le@Generation:385', 'Becoming.Cascade.never_rises@Reserve:865'] | : ∀ v0 v1, v2 (v0 + 1) v1 ≤ v2 v0 v1
+2 ['Becoming.Granularity.mem_joined_split@Granularity:87', 'Becoming.mem_appended_split@JointPlans:54'] | {α : Type v0} {v1 : α} : ∀ {v2 v3 : List α}, v1 ∈ v2 ++ v3 → v1 ∈ v2 ∨ v1 ∈ v3
+2 ['Becoming.Hexagram.neither@HexagramLaws:103', 'Becoming.Hexagram.or_false_split@HexagramSites:130'] | : ∀ {v0 v1 : Bool}, (v0 || v1) = v2 → v0 = v2 ∧ v1 = v2
+2 ['Becoming.Hexagram.same_not_left@HexagramPlaces:567', 'Becoming.turnedBy_not@HexagramSequences:506'] | : ∀ v0 v1 : Bool, v2 (!v0) v1 = !v2 v0 v1
+2 ['Becoming.HistorySums.nonzero_of_le@HistorySums:633', 'Becoming.RouteTraces.nonzero_of_le@RouteTraces:39'] | : ∀ {v0 v1 : Nat}, v0 ≤ v1 → v2 v0 = v3 → v2 v1 = v3
+2 ['Becoming.IntegerOrder.sub_self@IntegerOrder:70', 'Becoming.Integers.add_right_neg@Integers:173'] | (v0 : Int) : v0 + -v0 = 0
+2 ['Becoming.Integers.nat_add_right_cancel@Integers:30', 'Becoming.Naturals.add_right_cancel@Naturals:54'] | {v0 v1 : Nat} : ∀ {v2 : Nat}, v0 + v2 = v1 + v2 → v0 = v1
+2 ["Becoming.Dyadic.mul_assoc'@LeastLoss:520", 'Becoming.mul_regroup@Resolution:142'] | (v0 v1 : Nat) : ∀ v2, v0 * v1 * v2 = v0 * (v1 * v2)
+2 ["Becoming.Dyadic.mul_right_comm'@LeastLoss:527", 'Becoming.RuleCapture.Counts.mul_right_comm_nat@RuleCapture:392'] | (v0 v1 v2 : Nat) : v0 * v1 * v2 = v0 * v2 * v1
+2 ['Becoming.skip_le@Likeness:505', 'Becoming.skipAt_le@Recurrence:133'] | : ∀ v0 v1, v2 v0 v1 ≤ v1 + 1
+2 ['Becoming.LLPO.succ_ne_zero@Likeness:1354', 'Becoming.ScoreRepresentation.succ_ne_zero@ScoreRepresentation:62'] | (v0 : Nat) : v0 + 1 ≠ 0
+2 ['Becoming.Limit.false_of_not_true@LimitVerification:503', 'Becoming.Tail.false_of_not_true@Tail:105'] | : ∀ {v0 : Bool}, ¬ v0 = v1 → v0 = v2
+2 ['Becoming.mem_middle@Listing:189', 'Becoming.LossMatching.mem_middle_of@LossMatching:66'] | {v0 : α} {v1 : List α} : ∀ v2 : List α, v0 ∈ v2 ++ v0 :: v1
+2 ['Becoming.Loops.total_mul_const@Loops:165', 'Becoming.Routes.total_mul_right@Routes:336'] | {α : Type} (v0 : α → Nat) (v1 : Nat) (v2 : List α) : v3 v2 (fun v4 => v0 v4 * v1) = v3 v2 v0 * v1
+2 ['Becoming.Loops.add_mul_nat@Loops:186', 'Becoming.add_mul_split@Resolution:149'] | (v0 v1 : Nat) : ∀ v2, (v0 + v1) * v2 = v0 * v2 + v1 * v2
+2 ['Becoming.carriedWithin_exact@Loops:333', 'Becoming.Remainder.carriedWithin_exact@Remainder:818'] | : ∀ v0 v1, v1 ≤ v0 → ∀ v2, v3 v4 v5 σ v6 v7 δ v0 v1 v2 = v8 v4 v5 σ v6 v7 δ v1 v2
+2 ['Becoming.Loops.mul_mul_mul_comm_nat@Loops:1304', 'Becoming.RuleCapture.Counts.mul_mul_mul_comm_nat@RuleCapture:396'] | (v0 v1 v2 v3 : Nat) : v0 * v1 * (v2 * v3) = v0 * v2 * (v1 * v3)
+2 ['Becoming.LossMatching.map_length_eq@LossMatching:62', 'Becoming.length_map@OneStep:143'] | (v0 : α → β) : ∀ v1 : List α, (l.map v0).length = l.length
+2 ['Becoming.Narrowing.encode_inj@Narrowing:193', 'Becoming.Undecided.embed_inj@Undecided:199'] | : ∀ {v0 v1 : Bool}, v2 v0 = v2 v1 → v0 = v1
+2 ['Becoming.Naturals.add_sub_cancel@Naturals:27', 'Becoming.ExchangeLaw.add_sub_same@Reading:293'] | (v0 : Nat) : ∀ v1 : Nat, v0 + v1 - v1 = v0
+2 ['Becoming.mem_append_of_left@OrderNormal:1111', "Becoming.Net.mem_append_left'@PlaceTransitionNets:616"] | {α : Type} {v0 : α} : ∀ {v1 : List α} (v2 : List α), v0 ∈ v1 → v0 ∈ v1 ++ v2
+2 ['Becoming.mem_append_of_right@OrderNormal:1115', "Becoming.Net.mem_append_right'@PlaceTransitionNets:620"] | {α : Type} {v0 : α} : ∀ (v1 : List α) {v2 : List α}, v0 ∈ v2 → v0 ∈ v1 ++ v2
+2 ['Becoming.Parting.and_both@Parting:350', 'Becoming.bool_of_and_true@Weighted:328'] | {v0 v1 : Bool} (v2 : (v0 && v1) = v3) : v0 = v3 ∧ v1 = v3
+2 ['Becoming.Parting.and_of@Parting:353', 'Becoming.bool_and_true@Weighted:323'] | {v0 v1 : Bool} (v2 : v0 = v3) (v4 : v1 = v3) : (v0 && v1) = v3
+2 ['Becoming.Shuttle.alternates@Persistence:1070', 'Becoming.alternating_turns@Return:211'] | : ∀ v0, (v1 v0 = 1 ∧ v1 (v0 + 1) = 0) ∨ (v1 v0 = 0 ∧ v1 (v0 + 1) = 1)
+2 ['Becoming.Propagation.add_congr@Propagation:140', 'Becoming.Trickle.add_eq@Resolution:2129'] | {v0 v1 v2 v3 : Nat} (v4 : v0 = v1) (v5 : v2 = v3) : v0 + v2 = v1 + v3
+2 ['Becoming.Ranking.ThirdParty.over_le_stops@Ranking:709', 'Becoming.ScoreRepresentation.ratio_bounded@ScoreRepresentation:186'] | : ∀ v0, v1 v0 ≤ v2 v0
+2 ['Becoming.Cascade.upto_after@Reserve:825', 'Becoming.Brood.standing_before@Roles:998'] | : ∀ v0, v1 (v0 + 1) v0 = 0
+2 ['Becoming.vanishIndicator_eq_of_agree@Sensitivity:296', 'Becoming.neverIndicator_eq_of_agree@Tail:334'] | {α β : Nat → Nat} (v0 : Nat) (v1 : ∀ v2, v0 ≤ v2 → α v2 = β v2) : v3 v4 α = v3 v4 β
+2 ['Becoming.tailLaw_nonanticipating@Sensitivity:321', 'Becoming.neverLaw_nonanticipating@Tail:383'] | : (v0 v1).Nonanticipating
+2 ['Becoming.tailLaw_insensitive@Sensitivity:332', 'Becoming.neverLaw_insensitive@Tail:387'] | (v0 v1 : Nat) : (v2 v3).InsensitiveAt v0 () v1
+2 ['Becoming.tailLaw_not_sensitive@Sensitivity:337', 'Becoming.neverLaw_not_sensitive@Tail:391'] | (v0 : Nat) : ¬ (v1 v2).Sensitive () v0
+2 ['Becoming.tailLaw_differs@Sensitivity:341', 'Becoming.neverLaw_differs@Tail:395'] | (v0 v1 : Nat) : (v2 v3).take v0 () (fun _ _ => 0) v1 ≠ (v2 v3).take v0 () (fun _ _ => 1) v1

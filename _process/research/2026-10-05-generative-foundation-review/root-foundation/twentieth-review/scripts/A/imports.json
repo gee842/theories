@@ -1,0 +1,2142 @@
+{
+"mods": {
+"Becoming.Acceptance": {
+"imports": [
+"Becoming.IntegerOrder"
+],
+"lines": 318
+},
+"Becoming.AcceptanceFrames": {
+"imports": [
+"Becoming.Acceptance",
+"Becoming.FrontierFrames",
+"Becoming.Frame"
+],
+"lines": 69
+},
+"Becoming.ActivationCapacity": {
+"imports": [
+"Becoming.Bundles",
+"Becoming.Recurrence",
+"Becoming.Labelled"
+],
+"lines": 99
+},
+"Becoming.ActiveReading": {
+"imports": [
+"Becoming.Ranking",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 189
+},
+"Becoming.Actuation": {
+"imports": [
+"Becoming.ContingentPlans",
+"Becoming.Naturals"
+],
+"lines": 583
+},
+"Becoming.Admission": {
+"imports": [
+"Becoming.Space"
+],
+"lines": 825
+},
+"Becoming.Alternatives": {
+"imports": [
+"Becoming.Metaethics",
+"Becoming.Relevance",
+"Becoming.Lifting",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 295
+},
+"Becoming.Assurance": {
+"imports": [
+"Becoming.Joint",
+"Becoming.Inquiry"
+],
+"lines": 238
+},
+"Becoming.AssurancePlans": {
+"imports": [
+"Becoming.Assurance"
+],
+"lines": 335
+},
+"Becoming.Attraction": {
+"imports": [
+"Becoming.Recurrence",
+"Becoming.Labelled"
+],
+"lines": 475
+},
+"Becoming.AttractionRuns": {
+"imports": [
+"Becoming.Branching"
+],
+"lines": 170
+},
+"Becoming.Boundaries": {
+"imports": [
+"Becoming.Feedback",
+"Becoming.Metaethics"
+],
+"lines": 719
+},
+"Becoming.BoundaryFlows": {
+"imports": [
+"Becoming.Boundaries",
+"Becoming.Interdependence"
+],
+"lines": 214
+},
+"Becoming.BoundaryWorlds": {
+"imports": [
+"Becoming.Boundaries"
+],
+"lines": 91
+},
+"Becoming.Branching": {
+"imports": [
+"Becoming.Unfolding",
+"Becoming.Attraction",
+"Becoming.Capture"
+],
+"lines": 1420
+},
+"Becoming.BranchingCorrespondence": {
+"imports": [
+"Becoming.Granularity",
+"Becoming.Presentations"
+],
+"lines": 146
+},
+"Becoming.Bundles": {
+"imports": [
+"Becoming.Lexical",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 421
+},
+"Becoming.CandidateRuns": {
+"imports": [
+"Becoming.Courses"
+],
+"lines": 77
+},
+"Becoming.Capture": {
+"imports": [
+"Becoming.Evolution",
+"Becoming.Locality",
+"Becoming.Recurrence"
+],
+"lines": 181
+},
+"Becoming.CaptureWorlds": {
+"imports": [
+"Becoming.Capture"
+],
+"lines": 71
+},
+"Becoming.Carriers": {
+"imports": [
+"Becoming.Unfolding"
+],
+"lines": 311
+},
+"Becoming.CensusBinding": {
+"imports": [
+"Becoming.CensusCounts",
+"Becoming.Standing"
+],
+"lines": 869
+},
+"Becoming.CensusCounts": {
+"imports": [
+"Becoming.Counting",
+"Becoming.Decidedness"
+],
+"lines": 672
+},
+"Becoming.CensusWebs": {
+"imports": [
+"Becoming.Listing"
+],
+"lines": 96
+},
+"Becoming.ChanceFloors": {
+"imports": [
+"Becoming.Weighted"
+],
+"lines": 112
+},
+"Becoming.Change": {
+"imports": [
+"Becoming.Flow"
+],
+"lines": 671
+},
+"Becoming.ClassifiedBeliefProcesses": {
+"imports": [
+"Becoming.Inquiry"
+],
+"lines": 59
+},
+"Becoming.Closing": {
+"imports": [
+"Becoming.Remainder",
+"Becoming.Recurrence"
+],
+"lines": 656
+},
+"Becoming.CodeAcquisition": {
+"imports": [
+"Becoming.PartialReadout",
+"Becoming.Assurance"
+],
+"lines": 414
+},
+"Becoming.Commuting": {
+"imports": [
+"Becoming.Junctures",
+"Becoming.Hexagrams",
+"Becoming.LearningRuns"
+],
+"lines": 256
+},
+"Becoming.Composition": {
+"imports": [
+"Becoming.Likeness",
+"Becoming.JointPlans"
+],
+"lines": 933
+},
+"Becoming.ContactCourses": {
+"imports": [
+"Becoming.Contacts",
+"Becoming.Assurance"
+],
+"lines": 77
+},
+"Becoming.Contacts": {
+"imports": [
+"Becoming.Revision"
+],
+"lines": 252
+},
+"Becoming.Context": {
+"imports": [],
+"lines": 425
+},
+"Becoming.ContextArrivalTraces": {
+"imports": [
+"Becoming.Context",
+"Becoming.Frame"
+],
+"lines": 296
+},
+"Becoming.ContextualRuns": {
+"imports": [
+"Becoming.ParityReadings",
+"Becoming.Parting",
+"Becoming.ContextArrivalTraces"
+],
+"lines": 234
+},
+"Becoming.ContingentPlans": {
+"imports": [
+"Becoming.Frame",
+"Becoming.ListTests"
+],
+"lines": 256
+},
+"Becoming.Continuation": {
+"imports": [
+"Becoming.Roles"
+],
+"lines": 1027
+},
+"Becoming.ContinuingRevision": {
+"imports": [
+"Becoming.Labelled",
+"Becoming.ReferencePlan",
+"Becoming.Stock"
+],
+"lines": 589
+},
+"Becoming.ContinuingRuns": {
+"imports": [
+"Becoming.ContinuingRevision"
+],
+"lines": 170
+},
+"Becoming.CopyCourses": {
+"imports": [
+"Becoming.Courses"
+],
+"lines": 220
+},
+"Becoming.Copying": {
+"imports": [
+"Becoming.Gated"
+],
+"lines": 1234
+},
+"Becoming.Correspondence": {
+"imports": [
+"Becoming.Labelled",
+"Becoming.Metaethics",
+"Becoming.Roles",
+"Becoming.ValuationFrames"
+],
+"lines": 632
+},
+"Becoming.Countdown": {
+"imports": [
+"Becoming.Assurance"
+],
+"lines": 339
+},
+"Becoming.CountdownCourses": {
+"imports": [
+"Becoming.Countdown"
+],
+"lines": 58
+},
+"Becoming.Counterfactual": {
+"imports": [
+"Becoming.Response",
+"Becoming.Recurrence"
+],
+"lines": 812
+},
+"Becoming.CounterfactualRuns": {
+"imports": [
+"Becoming.Runs"
+],
+"lines": 166
+},
+"Becoming.Counting": {
+"imports": [
+"Becoming.Openness"
+],
+"lines": 4632
+},
+"Becoming.Coupling": {
+"imports": [
+"Becoming.Counterfactual",
+"Becoming.Readout",
+"Becoming.Mechanism"
+],
+"lines": 829
+},
+"Becoming.CouplingTraces": {
+"imports": [
+"Becoming.FormedLoops",
+"Becoming.Frame"
+],
+"lines": 499
+},
+"Becoming.CourseRoles": {
+"imports": [
+"Becoming.Runs",
+"Becoming.CounterfactualRuns"
+],
+"lines": 112
+},
+"Becoming.CourseWorlds": {
+"imports": [
+"Becoming.Routes",
+"Becoming.Frequency",
+"Becoming.Observation"
+],
+"lines": 647
+},
+"Becoming.Courses": {
+"imports": [
+"Becoming.Lasting",
+"Becoming.Countdown",
+"Becoming.Retrodiction",
+"Becoming.Copying",
+"Becoming.CrossSituational",
+"Becoming.Readout",
+"Becoming.Weighted",
+"Becoming.Description",
+"Becoming.Feedback",
+"Becoming.Decidedness",
+"Becoming.Metaethics",
+"Becoming.Parting",
+"Becoming.ValuationFrames"
+],
+"lines": 1188
+},
+"Becoming.Coverage": {
+"imports": [
+"Becoming.Frame",
+"Becoming.Integers",
+"Becoming.Decidedness"
+],
+"lines": 255
+},
+"Becoming.CrossSituational": {
+"imports": [
+"Becoming.Segmentation"
+],
+"lines": 462
+},
+"Becoming.Cuts": {
+"imports": [
+"Becoming.Feedback"
+],
+"lines": 797
+},
+"Becoming.Decidedness": {
+"imports": [
+"Becoming.Space",
+"Becoming.Recurrence"
+],
+"lines": 1026
+},
+"Becoming.Dependence": {
+"imports": [
+"Becoming.Renewal",
+"Becoming.World",
+"the"
+],
+"lines": 966
+},
+"Becoming.DependenceWebs": {
+"imports": [
+"Becoming.Units",
+"Becoming.Reserve"
+],
+"lines": 59
+},
+"Becoming.Dephasing": {
+"imports": [
+"Becoming.Branching",
+"Becoming.Readout",
+"Becoming.Integers"
+],
+"lines": 453
+},
+"Becoming.Derivation": {
+"imports": [
+"Becoming.Inquiry"
+],
+"lines": 338
+},
+"Becoming.Descent": {
+"imports": [
+"Becoming.Correspondence",
+"Becoming.Evolution",
+"Becoming.Reserve"
+],
+"lines": 480
+},
+"Becoming.Description": {
+"imports": [
+"Becoming.Diagonal",
+"Becoming.Context",
+"Becoming.Learning",
+"the"
+],
+"lines": 537
+},
+"Becoming.Diagonal": {
+"imports": [
+"Becoming.Recurrence"
+],
+"lines": 295
+},
+"Becoming.DiagonalRuns": {
+"imports": [
+"Becoming.Diagonal",
+"Becoming.Branching"
+],
+"lines": 172
+},
+"Becoming.Dispatch": {
+"imports": [
+"Becoming.Actuation",
+"Becoming.TreeSearch"
+],
+"lines": 482
+},
+"Becoming.Dissipation": {
+"imports": [
+"Becoming.Population"
+],
+"lines": 1387
+},
+"Becoming.Distinguishing": {
+"imports": [
+"Becoming.Identification",
+"Becoming.Likeness"
+],
+"lines": 288
+},
+"Becoming.EdgeClosure": {
+"imports": [
+"Becoming.Feedback",
+"Becoming.Frame"
+],
+"lines": 63
+},
+"Becoming.Enough": {
+"imports": [
+"Becoming.SeekingRuns"
+],
+"lines": 238
+},
+"Becoming.Entropy": {
+"imports": [
+"Becoming.Resolution",
+"Becoming.Recurrence"
+],
+"lines": 2163
+},
+"Becoming.Evolution": {
+"imports": [
+"Becoming.Change"
+],
+"lines": 629
+},
+"Becoming.ExchangeFlows": {
+"imports": [
+"Becoming.Evolution",
+"Becoming.Sampling"
+],
+"lines": 87
+},
+"Becoming.ExchangePremises": {
+"imports": [
+"Becoming.Reading",
+"Becoming.Change"
+],
+"lines": 729
+},
+"Becoming.Exclusion": {
+"imports": [
+"Becoming.Continuation",
+"Becoming.Admission"
+],
+"lines": 396
+},
+"Becoming.Exhaustion": {
+"imports": [
+"Becoming.Seeking",
+"Becoming.Exclusion"
+],
+"lines": 289
+},
+"Becoming.Experiment": {
+"imports": [
+"Becoming.Joint",
+"Becoming.Recurrence"
+],
+"lines": 365
+},
+"Becoming.FallibleInquiry": {
+"imports": [
+"Becoming.Counterfactual",
+"Becoming.TimedResponse",
+"Becoming.Imbalance",
+"ScientificInquiryNecessity"
+],
+"lines": 516
+},
+"Becoming.FaultEnvelopes": {
+"imports": [
+"Becoming.ListTests"
+],
+"lines": 217
+},
+"Becoming.Feedback": {
+"imports": [
+"Becoming.Interdependence"
+],
+"lines": 1664
+},
+"Becoming.Feeding": {
+"imports": [
+"Becoming.Interdependence"
+],
+"lines": 744
+},
+"Becoming.FinerTraces": {
+"imports": [
+"Becoming.Situations",
+"Becoming.WeightedTraces",
+"GenerativeCore"
+],
+"lines": 226
+},
+"Becoming.Flow": {
+"imports": [
+"Becoming.Generation"
+],
+"lines": 1090
+},
+"Becoming.FormedLoops": {
+"imports": [
+"Becoming.CourseWorlds"
+],
+"lines": 164
+},
+"Becoming.Fragments": {
+"imports": [
+"Becoming.Presentations",
+"Becoming.Joining"
+],
+"lines": 246
+},
+"Becoming.Frame": {
+"imports": [
+"GenerativeCore"
+],
+"lines": 120
+},
+"Becoming.Frequency": {
+"imports": [
+"Becoming.Closing"
+],
+"lines": 1040
+},
+"Becoming.Frontier": {
+"imports": [
+"Becoming.Lexical"
+],
+"lines": 744
+},
+"Becoming.FrontierFrames": {
+"imports": [
+"Becoming.Frontier",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 633
+},
+"Becoming.FrontierWorlds": {
+"imports": [
+"Becoming.Frontier"
+],
+"lines": 143
+},
+"Becoming.Gain": {
+"imports": [
+"Becoming.Novelty"
+],
+"lines": 373
+},
+"Becoming.Gated": {
+"imports": [
+"Becoming.Frame"
+],
+"lines": 213
+},
+"Becoming.Generation": {
+"imports": [
+"Becoming.Return"
+],
+"lines": 602
+},
+"Becoming.Gluing": {
+"imports": [
+"Becoming.Context",
+"Becoming.Population"
+],
+"lines": 851
+},
+"Becoming.Grains": {
+"imports": [
+"Becoming.Granularity"
+],
+"lines": 114
+},
+"Becoming.Granularity": {
+"imports": [
+"Becoming.Joining",
+"Becoming.Segmentation"
+],
+"lines": 1345
+},
+"Becoming.GuardHorizon": {
+"imports": [
+"Becoming.Acceptance",
+"Becoming.Viability",
+"Becoming.Keeping"
+],
+"lines": 423
+},
+"Becoming.Handoff": {
+"imports": [
+"Becoming.PositiveGround",
+"Becoming.RenewalBound"
+],
+"lines": 356
+},
+"Becoming.HexagramLaws": {
+"imports": [
+"Becoming.HexagramPlaces",
+"Becoming.Commuting"
+],
+"lines": 1326
+},
+"Becoming.HexagramPlaces": {
+"imports": [
+"Becoming.Hexagrams",
+"Becoming.Context",
+"Becoming.ContextArrivalTraces",
+"Becoming.LearningRuns"
+],
+"lines": 1259
+},
+"Becoming.HexagramSequences": {
+"imports": [
+"Becoming.HexagramLaws",
+"Becoming.HexagramSites",
+"Becoming.Seeking",
+"Becoming.Unfolding",
+"Becoming.Flow"
+],
+"lines": 1200
+},
+"Becoming.HexagramSites": {
+"imports": [
+"Becoming.HexagramPlaces"
+],
+"lines": 1194
+},
+"Becoming.Hexagrams": {
+"imports": [
+"Becoming.Branching",
+"Becoming.Learning",
+"Becoming.LearningRuns"
+],
+"lines": 764
+},
+"Becoming.Histories": {
+"imports": [
+"Becoming.Unfolding"
+],
+"lines": 424
+},
+"Becoming.HistoryIdeals": {
+"imports": [
+"Becoming.Ideals",
+"Becoming.Horizon",
+"Becoming.HistoryLanguages",
+"Becoming.Change"
+],
+"lines": 1041
+},
+"Becoming.HistoryIdealsTraces": {
+"imports": [
+"Becoming.HistoryIdeals"
+],
+"lines": 141
+},
+"Becoming.HistoryLanguages": {
+"imports": [
+"Becoming.Histories"
+],
+"lines": 378
+},
+"Becoming.HistorySums": {
+"imports": [
+"Becoming.Routes",
+"Becoming.FinerTraces"
+],
+"lines": 839
+},
+"Becoming.Horizon": {
+"imports": [
+"Becoming.Labelled",
+"Becoming.Return"
+],
+"lines": 416
+},
+"Becoming.HorizonWebs": {
+"imports": [
+"Becoming.Dependence"
+],
+"lines": 142
+},
+"Becoming.Ideals": {
+"imports": [],
+"lines": 921
+},
+"Becoming.Identification": {
+"imports": [
+"Becoming.Description",
+"Becoming.Refinement"
+],
+"lines": 1978
+},
+"Becoming.IdentificationRuns": {
+"imports": [
+"Becoming.LearningRuns",
+"Becoming.Courses"
+],
+"lines": 603
+},
+"Becoming.Identity": {
+"imports": [
+"Becoming.Population"
+],
+"lines": 2078
+},
+"Becoming.Imbalance": {
+"imports": [
+"Becoming.Locality",
+"Becoming.Resolution"
+],
+"lines": 220
+},
+"Becoming.Inquiry": {
+"imports": [
+"Becoming.Frame",
+"InquirySufficiency"
+],
+"lines": 95
+},
+"Becoming.IntegerOrder": {
+"imports": [
+"Becoming.Integers"
+],
+"lines": 213
+},
+"Becoming.Integers": {
+"imports": [],
+"lines": 245
+},
+"Becoming.Interdependence": {
+"imports": [
+"Becoming.Significance"
+],
+"lines": 572
+},
+"Becoming.Interleavings": {
+"imports": [
+"Becoming.Frame"
+],
+"lines": 886
+},
+"Becoming.Irreversibility": {
+"imports": [
+"Becoming.Unfolding"
+],
+"lines": 61
+},
+"Becoming.Joining": {
+"imports": [
+"Becoming.Likeness"
+],
+"lines": 1057
+},
+"Becoming.JoiningCodes": {
+"imports": [
+"Becoming.JoiningContexts",
+"Becoming.BranchingCorrespondence"
+],
+"lines": 180
+},
+"Becoming.JoiningContexts": {
+"imports": [
+"Becoming.LocalUnits"
+],
+"lines": 269
+},
+"Becoming.JoiningRoles": {
+"imports": [
+"Becoming.JoiningCodes"
+],
+"lines": 273
+},
+"Becoming.Joint": {
+"imports": [
+"Becoming.Labelled",
+"Becoming.Return"
+],
+"lines": 752
+},
+"Becoming.JointCorrespondence": {
+"imports": [
+"Becoming.Composition",
+"Becoming.Presentations"
+],
+"lines": 191
+},
+"Becoming.JointKeeping": {
+"imports": [
+"Becoming.Keeping",
+"Becoming.Labelled",
+"Becoming.Onward"
+],
+"lines": 418
+},
+"Becoming.JointPhase": {
+"imports": [
+"Becoming.Dephasing",
+"Becoming.ProjectedLaws"
+],
+"lines": 246
+},
+"Becoming.JointPlanFrames": {
+"imports": [
+"Becoming.Composition"
+],
+"lines": 70
+},
+"Becoming.JointPlans": {
+"imports": [],
+"lines": 126
+},
+"Becoming.Junctures": {
+"imports": [
+"Becoming.Branching",
+"Becoming.Undecided",
+"Becoming.ListTests"
+],
+"lines": 536
+},
+"Becoming.Keeping": {
+"imports": [
+"Becoming.Viability",
+"InquirySufficiency"
+],
+"lines": 509
+},
+"Becoming.Labelled": {
+"imports": [
+"Becoming.Frame",
+"Becoming.Generation",
+"Becoming.Recurrence"
+],
+"lines": 983
+},
+"Becoming.LabelledRoles": {
+"imports": [
+"Becoming.Horizon",
+"Becoming.Roles",
+"Becoming.Inquiry",
+"Becoming.Testing"
+],
+"lines": 182
+},
+"Becoming.Labels": {
+"imports": [
+"Becoming.Unrolling"
+],
+"lines": 371
+},
+"Becoming.LastChange": {
+"imports": [
+"Becoming.Settling"
+],
+"lines": 297
+},
+"Becoming.Lasting": {
+"imports": [
+"Becoming.Viability",
+"Becoming.Recurrence",
+"Becoming.Likeness"
+],
+"lines": 1154
+},
+"Becoming.LastingRuns": {
+"imports": [
+"Becoming.Courses"
+],
+"lines": 299
+},
+"Becoming.LawAlongRun": {
+"imports": [
+"Becoming.Unfolding"
+],
+"lines": 253
+},
+"Becoming.LawThroughChangingCoupling": {
+"imports": [
+"Becoming.LawThroughCoupling"
+],
+"lines": 327
+},
+"Becoming.LawThroughCoupling": {
+"imports": [
+"Becoming.LawAlongRun",
+"Becoming.Testing",
+"Becoming.Likeness"
+],
+"lines": 272
+},
+"Becoming.Learnable": {
+"imports": [
+"Becoming.Identification",
+"Becoming.Seeking"
+],
+"lines": 323
+},
+"Becoming.LearnableRuns": {
+"imports": [
+"Becoming.Branching",
+"Becoming.Learnable",
+"Becoming.Parting"
+],
+"lines": 184
+},
+"Becoming.LearnedGrouping": {
+"imports": [
+"Becoming.RouteFormation",
+"Becoming.Segmentation"
+],
+"lines": 485
+},
+"Becoming.Learning": {
+"imports": [
+"Becoming.Selection"
+],
+"lines": 1151
+},
+"Becoming.LearningRuns": {
+"imports": [
+"Becoming.LearnableRuns",
+"Becoming.Parting"
+],
+"lines": 493
+},
+"Becoming.LeastLoss": {
+"imports": [
+"Becoming.Resolution",
+"Becoming.Recurrence",
+"Becoming.Branching"
+],
+"lines": 907
+},
+"Becoming.LevelCoupling": {
+"imports": [
+"Becoming.Observation"
+],
+"lines": 612
+},
+"Becoming.LevelWebs": {
+"imports": [
+"Becoming.Entropy",
+"Becoming.Space",
+"Becoming.Population"
+],
+"lines": 69
+},
+"Becoming.Lexical": {
+"imports": [
+"Becoming.Metaethics",
+"Becoming.Decidedness"
+],
+"lines": 588
+},
+"Becoming.Lifting": {
+"imports": [
+"Becoming.Metaethics",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 125
+},
+"Becoming.Likeness": {
+"imports": [
+"Becoming.Branching",
+"Becoming.Histories",
+"Becoming.Decidedness",
+"Becoming.Refinement"
+],
+"lines": 2438
+},
+"Becoming.LimitVerification": {
+"imports": [
+"Becoming.Verification",
+"Becoming.Enough"
+],
+"lines": 741
+},
+"Becoming.ListFootprints": {
+"imports": [
+"Becoming.Weighted",
+"Becoming.Decidedness",
+"Becoming.JointPlans"
+],
+"lines": 130
+},
+"Becoming.ListTests": {
+"imports": [],
+"lines": 249
+},
+"Becoming.ListedOutcomeFrames": {
+"imports": [
+"Becoming.Likeness"
+],
+"lines": 70
+},
+"Becoming.ListedWebs": {
+"imports": [
+"Becoming.Identity",
+"Becoming.Locality",
+"Becoming.Space"
+],
+"lines": 217
+},
+"Becoming.Listing": {
+"imports": [
+"Becoming.Decidedness",
+"Becoming.Sampling",
+"Becoming.Resolution"
+],
+"lines": 1069
+},
+"Becoming.LocalUnits": {
+"imports": [
+"Becoming.Fragments"
+],
+"lines": 472
+},
+"Becoming.Locality": {
+"imports": [
+"Becoming.Dissipation"
+],
+"lines": 716
+},
+"Becoming.Loops": {
+"imports": [
+"Becoming.Propagation"
+],
+"lines": 1622
+},
+"Becoming.LossMatching": {
+"imports": [
+"Becoming.Population",
+"Becoming.Metaethics",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 495
+},
+"Becoming.MatchedCourses": {
+"imports": [
+"Becoming.LossMatching",
+"Becoming.StrictTransport"
+],
+"lines": 401
+},
+"Becoming.Mechanism": {
+"imports": [
+"Becoming.Experiment"
+],
+"lines": 418
+},
+"Becoming.Metaethics": {
+"imports": [
+"Becoming.Dependence"
+],
+"lines": 441
+},
+"Becoming.MoveOutcomeProcesses": {
+"imports": [
+"Becoming.Inquiry",
+"Becoming.Recurrence",
+"Becoming.Labelled"
+],
+"lines": 288
+},
+"Becoming.MoveRuns": {
+"imports": [
+"Becoming.Coupling"
+],
+"lines": 179
+},
+"Becoming.MutualDependence": {
+"imports": [
+"Becoming.Feedback",
+"Becoming.Frequency",
+"Becoming.Capture",
+"Becoming.Response"
+],
+"lines": 513
+},
+"Becoming.Narrowing": {
+"imports": [
+"Becoming.Inquiry"
+],
+"lines": 595
+},
+"Becoming.NarrowingRuns": {
+"imports": [
+"Becoming.Narrowing"
+],
+"lines": 155
+},
+"Becoming.Naturals": {
+"imports": [],
+"lines": 88
+},
+"Becoming.Novelty": {
+"imports": [
+"Becoming.Entropy",
+"Becoming.Imbalance"
+],
+"lines": 318
+},
+"Becoming.Observation": {
+"imports": [
+"Becoming.Thresholds"
+],
+"lines": 566
+},
+"Becoming.OneStep": {
+"imports": [
+"Becoming.Counting",
+"Becoming.Sampling"
+],
+"lines": 3660
+},
+"Becoming.Onward": {
+"imports": [
+"Becoming.Horizon",
+"Becoming.Parting"
+],
+"lines": 423
+},
+"Becoming.Openness": {
+"imports": [
+"Becoming.Premises"
+],
+"lines": 1320
+},
+"Becoming.Order": {
+"imports": [
+"Becoming.Sampling"
+],
+"lines": 3443
+},
+"Becoming.OrderNormal": {
+"imports": [
+"Becoming.Order"
+],
+"lines": 1474
+},
+"Becoming.OrderWorlds": {
+"imports": [
+"Becoming.OrderNormal"
+],
+"lines": 112
+},
+"Becoming.Pace": {
+"imports": [
+"Becoming.Identification",
+"Becoming.IdentificationRuns",
+"Becoming.Capture",
+"Becoming.SeekingRuns"
+],
+"lines": 586
+},
+"Becoming.ParityReadings": {
+"imports": [
+"Becoming.Readings",
+"Becoming.Gluing",
+"Becoming.Quantum",
+"Becoming.ContextArrivalTraces"
+],
+"lines": 190
+},
+"Becoming.PartialReadout": {
+"imports": [
+"Becoming.Readout",
+"Becoming.LearnableRuns"
+],
+"lines": 353
+},
+"Becoming.Parting": {
+"imports": [
+"Becoming.Distinguishing",
+"Becoming.Lasting"
+],
+"lines": 730
+},
+"Becoming.PassageWorlds": {
+"imports": [
+"Becoming.OneStep"
+],
+"lines": 72
+},
+"Becoming.Passing": {
+"imports": [
+"Becoming.Wholes"
+],
+"lines": 314
+},
+"Becoming.Persistence": {
+"imports": [
+"Becoming.Identity",
+"Becoming.Unfolding"
+],
+"lines": 1162
+},
+"Becoming.PlaceTransitionNets": {
+"imports": [
+"Becoming.Reading",
+"Becoming.Continuation",
+"Becoming.Openness"
+],
+"lines": 913
+},
+"Becoming.PoolResponse": {
+"imports": [
+"Becoming.SelectionPool",
+"Becoming.TimedResponse",
+"Becoming.Decidedness"
+],
+"lines": 453
+},
+"Becoming.PooledEnvelopes": {
+"imports": [
+"Becoming.Reconfiguration"
+],
+"lines": 617
+},
+"Becoming.Population": {
+"imports": [
+"Becoming.Change"
+],
+"lines": 1628
+},
+"Becoming.PositiveGround": {
+"imports": [
+"Becoming.Bundles",
+"Becoming.Narrowing",
+"Becoming.Relevance"
+],
+"lines": 487
+},
+"Becoming.Postponement": {
+"imports": [
+"Becoming.Histories"
+],
+"lines": 203
+},
+"Becoming.Premises": {
+"imports": [
+"Becoming.Space"
+],
+"lines": 1216
+},
+"Becoming.PresentationFrames": {
+"imports": [
+"Becoming.Presentations"
+],
+"lines": 178
+},
+"Becoming.Presentations": {
+"imports": [
+"Becoming.Composition"
+],
+"lines": 387
+},
+"Becoming.ProfileReach": {
+"imports": [
+"Becoming.EdgeClosure",
+"Becoming.Metaethics",
+"Becoming.ValuationFrames"
+],
+"lines": 292
+},
+"Becoming.ProjectedLaws": {
+"imports": [
+"Becoming.Readout",
+"Becoming.Mechanism"
+],
+"lines": 292
+},
+"Becoming.Propagation": {
+"imports": [
+"Becoming.Counterfactual",
+"Becoming.TimedResponse"
+],
+"lines": 1413
+},
+"Becoming.Quantum": {
+"imports": [
+"Becoming.Context"
+],
+"lines": 483
+},
+"Becoming.Ranking": {
+"imports": [
+"Becoming.Metaethics",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 744
+},
+"Becoming.Reading": {
+"imports": [
+"Becoming.Counterfactual",
+"Becoming.Imbalance",
+"Becoming.Premises"
+],
+"lines": 481
+},
+"Becoming.Readings": {
+"imports": [
+"Becoming.Reading",
+"Becoming.Context",
+"Becoming.Boundaries",
+"Becoming.ContextArrivalTraces",
+"Becoming.Unfolding"
+],
+"lines": 214
+},
+"Becoming.Readout": {
+"imports": [
+"Becoming.Learning",
+"Becoming.Assurance",
+"Becoming.Mechanism"
+],
+"lines": 337
+},
+"Becoming.Reconfiguration": {
+"imports": [
+"Becoming.Transactions"
+],
+"lines": 643
+},
+"Becoming.Recurrence": {
+"imports": [],
+"lines": 619
+},
+"Becoming.RecurrenceRuns": {
+"imports": [
+"Becoming.Branching"
+],
+"lines": 103
+},
+"Becoming.ReducedRuns": {
+"imports": [
+"Becoming.Courses"
+],
+"lines": 73
+},
+"Becoming.ReferencePlan": {
+"imports": [
+"Becoming.Revision",
+"Becoming.Counterfactual",
+"Becoming.Stock",
+"Becoming.Contacts"
+],
+"lines": 511
+},
+"Becoming.ReferencePlanTraces": {
+"imports": [
+"Becoming.ReferencePlan"
+],
+"lines": 522
+},
+"Becoming.Refinement": {
+"imports": [
+"Becoming.Decidedness",
+"Becoming.Recurrence"
+],
+"lines": 207
+},
+"Becoming.Regions": {
+"imports": [
+"Becoming.Admission",
+"Becoming.Continuation"
+],
+"lines": 395
+},
+"Becoming.Regrouping": {
+"imports": [
+"Becoming.Significance",
+"Becoming.Counterfactual",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 318
+},
+"Becoming.RegroupingSelection": {
+"imports": [
+"Becoming.Regrouping",
+"Becoming.Revision",
+"Becoming.Unfolding"
+],
+"lines": 190
+},
+"Becoming.Regulation": {
+"imports": [
+"Becoming.Continuation",
+"Becoming.Propagation",
+"Becoming.Change"
+],
+"lines": 1966
+},
+"Becoming.Rejoining": {
+"imports": [
+"Becoming.PoolResponse"
+],
+"lines": 460
+},
+"Becoming.RelativePosition": {
+"imports": [
+"Becoming.Significance"
+],
+"lines": 639
+},
+"Becoming.Relevance": {
+"imports": [
+"Becoming.Boundaries",
+"Becoming.Ranking",
+"Becoming.Inquiry"
+],
+"lines": 565
+},
+"Becoming.Remainder": {
+"imports": [
+"Becoming.Loops"
+],
+"lines": 883
+},
+"Becoming.Renewal": {
+"imports": [
+"RelationalRenewal",
+"the"
+],
+"lines": 96
+},
+"Becoming.RenewalBound": {
+"imports": [
+"Becoming.Recurrence",
+"Becoming.Renewal",
+"Becoming.Labelled"
+],
+"lines": 251
+},
+"Becoming.RenewalFlow": {
+"imports": [
+"Becoming.Continuation"
+],
+"lines": 338
+},
+"Becoming.Reserve": {
+"imports": [
+"Becoming.Roles"
+],
+"lines": 1107
+},
+"Becoming.Resolution": {
+"imports": [
+"Becoming.Openness"
+],
+"lines": 2556
+},
+"Becoming.Response": {
+"imports": [
+"Becoming.Testing"
+],
+"lines": 648
+},
+"Becoming.ResponseLearning": {
+"imports": [
+"Becoming.RouteFormation",
+"Becoming.Branching"
+],
+"lines": 641
+},
+"Becoming.Retrodiction": {
+"imports": [],
+"lines": 331
+},
+"Becoming.RetrodictionRuns": {
+"imports": [
+"Becoming.Courses"
+],
+"lines": 82
+},
+"Becoming.Return": {
+"imports": [
+"Becoming.Dependence"
+],
+"lines": 339
+},
+"Becoming.Revision": {
+"imports": [
+"Becoming.Learning",
+"Becoming.Stock",
+"Becoming.Joint"
+],
+"lines": 365
+},
+"Becoming.RevisionRuns": {
+"imports": [
+"Becoming.Revision"
+],
+"lines": 84
+},
+"Becoming.Roles": {
+"imports": [
+"Becoming.Locality"
+],
+"lines": 1596
+},
+"Becoming.RouteFormation": {
+"imports": [
+"Becoming.CodeAcquisition",
+"Becoming.ReducedRuns"
+],
+"lines": 782
+},
+"Becoming.RouteTraces": {
+"imports": [
+"Becoming.FormedLoops",
+"Becoming.WeightedTraces",
+"GenerativeCore"
+],
+"lines": 112
+},
+"Becoming.Routes": {
+"imports": [
+"Becoming.Weighted",
+"Becoming.Loops"
+],
+"lines": 527
+},
+"Becoming.RuleCapture": {
+"imports": [
+"Becoming.Pace",
+"Becoming.Ideals"
+],
+"lines": 824
+},
+"Becoming.RuleHandoff": {
+"imports": [
+"Becoming.Assurance",
+"Becoming.Gated",
+"Becoming.Narrowing"
+],
+"lines": 579
+},
+"Becoming.Runaway": {
+"imports": [
+"Becoming.Testing"
+],
+"lines": 246
+},
+"Becoming.Runs": {
+"imports": [
+"Becoming.Reading",
+"Becoming.Propagation",
+"Becoming.Branching"
+],
+"lines": 286
+},
+"Becoming.Sampling": {
+"imports": [
+"Becoming.Locality",
+"Becoming.Premises"
+],
+"lines": 1043
+},
+"Becoming.ScopedReach": {
+"imports": [
+"Becoming.SeedReach"
+],
+"lines": 233
+},
+"Becoming.ScoreRepresentation": {
+"imports": [
+"Becoming.Lexical",
+"Becoming.Frame",
+"Becoming.ValuationFrames"
+],
+"lines": 223
+},
+"Becoming.SeedReach": {
+"imports": [
+"Becoming.EdgeClosure"
+],
+"lines": 187
+},
+"Becoming.Seeking": {
+"imports": [
+"Becoming.Locality",
+"Becoming.Recurrence"
+],
+"lines": 194
+},
+"Becoming.SeekingRuns": {
+"imports": [
+"Becoming.Branching",
+"Becoming.Seeking",
+"Becoming.Capture"
+],
+"lines": 163
+},
+"Becoming.Segmentation": {
+"imports": [],
+"lines": 360
+},
+"Becoming.Selection": {
+"imports": [
+"Becoming.Testing",
+"Becoming.Capture"
+],
+"lines": 933
+},
+"Becoming.SelectionGap": {
+"imports": [
+"Becoming.Selection",
+"Becoming.Counterfactual"
+],
+"lines": 192
+},
+"Becoming.SelectionPool": {
+"imports": [
+"Becoming.SelectionGap",
+"Becoming.Decidedness"
+],
+"lines": 582
+},
+"Becoming.SelectionReach": {
+"imports": [
+"Becoming.Selection",
+"Becoming.Entropy"
+],
+"lines": 262
+},
+"Becoming.SelectionRuns": {
+"imports": [
+"Becoming.Parting"
+],
+"lines": 166
+},
+"Becoming.Sensitivity": {
+"imports": [
+"Becoming.Counterfactual"
+],
+"lines": 659
+},
+"Becoming.SensitivityWebs": {
+"imports": [
+"Becoming.Tail",
+"Becoming.Propagation"
+],
+"lines": 93
+},
+"Becoming.Settling": {
+"imports": [
+"Becoming.Enough",
+"Becoming.Change"
+],
+"lines": 419
+},
+"Becoming.SharedCodes": {
+"imports": [
+"Becoming.Commuting",
+"Becoming.CrossSituational",
+"Becoming.Mechanism"
+],
+"lines": 1506
+},
+"Becoming.Significance": {
+"imports": [
+"Becoming.Regions",
+"Becoming.Metaethics"
+],
+"lines": 590
+},
+"Becoming.SituationTraces": {
+"imports": [
+"Becoming.FinerTraces",
+"Becoming.TypicalRuns"
+],
+"lines": 325
+},
+"Becoming.Situations": {
+"imports": [
+"Becoming.Typicality",
+"Becoming.Joint"
+],
+"lines": 719
+},
+"Becoming.Space": {
+"imports": [
+"Becoming.Evolution",
+"Becoming.Reserve"
+],
+"lines": 1174
+},
+"Becoming.Standing": {
+"imports": [
+"Becoming.Counting"
+],
+"lines": 856
+},
+"Becoming.Standpoints": {
+"imports": [
+"Becoming.Descent",
+"Becoming.Continuation"
+],
+"lines": 442
+},
+"Becoming.Stock": {
+"imports": [
+"Becoming.Flow",
+"Becoming.Frame"
+],
+"lines": 612
+},
+"Becoming.StockTraces": {
+"imports": [
+"Becoming.Stock"
+],
+"lines": 47
+},
+"Becoming.StrengthFlows": {
+"imports": [
+"Becoming.CourseWorlds"
+],
+"lines": 217
+},
+"Becoming.StrictTransport": {
+"imports": [
+"Becoming.Frame"
+],
+"lines": 206
+},
+"Becoming.Substitution": {
+"imports": [
+"Becoming.Dependence"
+],
+"lines": 291
+},
+"Becoming.Succession": {
+"imports": [
+"Becoming.Continuation"
+],
+"lines": 134
+},
+"Becoming.SummaryFutures": {
+"imports": [
+"Becoming.Readout"
+],
+"lines": 63
+},
+"Becoming.SupportRecovery": {
+"imports": [
+"Becoming.RenewalFlow"
+],
+"lines": 140
+},
+"Becoming.Tail": {
+"imports": [
+"Becoming.Sensitivity"
+],
+"lines": 526
+},
+"Becoming.TailRuns": {
+"imports": [
+"Becoming.Tail",
+"Becoming.Labelled"
+],
+"lines": 184
+},
+"Becoming.TallyWorlds": {
+"imports": [
+"Becoming.Counting"
+],
+"lines": 102
+},
+"Becoming.Testing": {
+"imports": [
+"Becoming.Feedback"
+],
+"lines": 1568
+},
+"Becoming.Thresholds": {
+"imports": [
+"Becoming.Closing",
+"Becoming.Runaway"
+],
+"lines": 670
+},
+"Becoming.TimedResponse": {
+"imports": [
+"Becoming.Response"
+],
+"lines": 310
+},
+"Becoming.Tolerance": {
+"imports": [
+"Becoming.Withholding",
+"Becoming.FaultEnvelopes",
+"Becoming.Labelled"
+],
+"lines": 611
+},
+"Becoming.Tower": {
+"imports": [
+"Becoming.Sampling"
+],
+"lines": 98
+},
+"Becoming.Transactions": {
+"imports": [
+"Becoming.Actuation",
+"Becoming.TreeSearch",
+"Becoming.FaultEnvelopes"
+],
+"lines": 850
+},
+"Becoming.Transmission": {
+"imports": [
+"Becoming.Premises"
+],
+"lines": 904
+},
+"Becoming.TreeSearch": {
+"imports": [
+"Becoming.Branching",
+"Becoming.ListTests",
+"Becoming.Naturals"
+],
+"lines": 435
+},
+"Becoming.TypicalRuns": {
+"imports": [
+"Becoming.Typicality",
+"Becoming.Parting",
+"Becoming.CrossSituational",
+"Becoming.FinerTraces"
+],
+"lines": 264
+},
+"Becoming.Typicality": {
+"imports": [
+"Becoming.Identification",
+"Becoming.Weighted"
+],
+"lines": 499
+},
+"Becoming.Undecided": {
+"imports": [
+"Becoming.Diagonal",
+"Becoming.Labelled"
+],
+"lines": 780
+},
+"Becoming.Unfolding": {
+"imports": [
+"Becoming.Labelled",
+"Becoming.Mechanism",
+"Becoming.Space"
+],
+"lines": 508
+},
+"Becoming.Units": {
+"imports": [
+"Becoming.Resolution"
+],
+"lines": 467
+},
+"Becoming.Unrolling": {
+"imports": [
+"Becoming.LearnableRuns"
+],
+"lines": 373
+},
+"Becoming.ValuationFrames": {
+"imports": [
+"Becoming.Inquiry",
+"Becoming.Labelled",
+"Becoming.Significance"
+],
+"lines": 448
+},
+"Becoming.Verification": {
+"imports": [
+"Becoming.HistoryIdeals"
+],
+"lines": 861
+},
+"Becoming.Viability": {
+"imports": [
+"Becoming.Frame"
+],
+"lines": 312
+},
+"Becoming.Weighted": {
+"imports": [
+"Becoming.Capture",
+"Becoming.Resolution"
+],
+"lines": 676
+},
+"Becoming.WeightedTraces": {
+"imports": [
+"Becoming.Weighted",
+"GenerativeCore"
+],
+"lines": 202
+},
+"Becoming.Wholes": {
+"imports": [
+"Becoming.Identity"
+],
+"lines": 499
+},
+"Becoming.Widening": {
+"imports": [
+"Becoming.Frequency",
+"Becoming.Lasting",
+"Becoming.Naturals"
+],
+"lines": 527
+},
+"Becoming.Withholding": {
+"imports": [
+"Becoming.Recurrence",
+"Becoming.Labelled"
+],
+"lines": 486
+},
+"Becoming.WitnessRefinement": {
+"imports": [
+"Becoming.PooledEnvelopes",
+"Becoming.Readout"
+],
+"lines": 676
+},
+"Becoming.WitnessRefinementRuns": {
+"imports": [
+"Becoming.WitnessRefinement"
+],
+"lines": 334
+},
+"Becoming.World": {
+"imports": [],
+"lines": 85
+}
+},
+"leaves": [
+"Becoming.AcceptanceFrames",
+"Becoming.ActivationCapacity",
+"Becoming.ActiveReading",
+"Becoming.Alternatives",
+"Becoming.AssurancePlans",
+"Becoming.AttractionRuns",
+"Becoming.BoundaryFlows",
+"Becoming.BoundaryWorlds",
+"Becoming.CandidateRuns",
+"Becoming.CaptureWorlds",
+"Becoming.Carriers",
+"Becoming.CensusBinding",
+"Becoming.CensusWebs",
+"Becoming.ChanceFloors",
+"Becoming.ClassifiedBeliefProcesses",
+"Becoming.ContactCourses",
+"Becoming.ContextualRuns",
+"Becoming.ContinuingRuns",
+"Becoming.CopyCourses",
+"Becoming.CountdownCourses",
+"Becoming.CouplingTraces",
+"Becoming.CourseRoles",
+"Becoming.Coverage",
+"Becoming.Cuts",
+"Becoming.DependenceWebs",
+"Becoming.Derivation",
+"Becoming.DiagonalRuns",
+"Becoming.Dispatch",
+"Becoming.ExchangeFlows",
+"Becoming.ExchangePremises",
+"Becoming.Exhaustion",
+"Becoming.FallibleInquiry",
+"Becoming.Feeding",
+"Becoming.FrontierWorlds",
+"Becoming.Gain",
+"Becoming.Grains",
+"Becoming.GuardHorizon",
+"Becoming.Handoff",
+"Becoming.HexagramSequences",
+"Becoming.HistoryIdealsTraces",
+"Becoming.HistorySums",
+"Becoming.HorizonWebs",
+"Becoming.Interleavings",
+"Becoming.Irreversibility",
+"Becoming.JoiningRoles",
+"Becoming.JointCorrespondence",
+"Becoming.JointKeeping",
+"Becoming.JointPhase",
+"Becoming.JointPlanFrames",
+"Becoming.LabelledRoles",
+"Becoming.Labels",
+"Becoming.LastChange",
+"Becoming.LastingRuns",
+"Becoming.LawThroughChangingCoupling",
+"Becoming.LearnedGrouping",
+"Becoming.LeastLoss",
+"Becoming.LevelCoupling",
+"Becoming.LevelWebs",
+"Becoming.LimitVerification",
+"Becoming.ListFootprints",
+"Becoming.ListedOutcomeFrames",
+"Becoming.ListedWebs",
+"Becoming.MatchedCourses",
+"Becoming.MoveOutcomeProcesses",
+"Becoming.MoveRuns",
+"Becoming.MutualDependence",
+"Becoming.NarrowingRuns",
+"Becoming.OrderWorlds",
+"Becoming.PassageWorlds",
+"Becoming.Passing",
+"Becoming.Persistence",
+"Becoming.PlaceTransitionNets",
+"Becoming.Postponement",
+"Becoming.PresentationFrames",
+"Becoming.ProfileReach",
+"Becoming.RecurrenceRuns",
+"Becoming.ReferencePlanTraces",
+"Becoming.RegroupingSelection",
+"Becoming.Regulation",
+"Becoming.Rejoining",
+"Becoming.RelativePosition",
+"Becoming.ResponseLearning",
+"Becoming.RetrodictionRuns",
+"Becoming.RevisionRuns",
+"Becoming.RouteTraces",
+"Becoming.RuleCapture",
+"Becoming.RuleHandoff",
+"Becoming.ScopedReach",
+"Becoming.ScoreRepresentation",
+"Becoming.SelectionReach",
+"Becoming.SelectionRuns",
+"Becoming.SensitivityWebs",
+"Becoming.SharedCodes",
+"Becoming.SituationTraces",
+"Becoming.Standpoints",
+"Becoming.StockTraces",
+"Becoming.StrengthFlows",
+"Becoming.Substitution",
+"Becoming.Succession",
+"Becoming.SummaryFutures",
+"Becoming.SupportRecovery",
+"Becoming.TailRuns",
+"Becoming.TallyWorlds",
+"Becoming.Tolerance",
+"Becoming.Tower",
+"Becoming.Transmission",
+"Becoming.Widening",
+"Becoming.WitnessRefinementRuns"
+]
+}

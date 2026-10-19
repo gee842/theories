@@ -1,0 +1,121 @@
+0 AcceptanceFrames <- 
+0 ActivationCapacity <- 
+0 ActiveReading <- 
+0 Alternatives <- 
+0 AssurancePlans <- 
+0 Carriers <- 
+0 CensusBinding <- 
+0 ChanceFloors <- 
+0 Coverage <- 
+0 Cuts <- 
+0 Derivation <- 
+0 Dispatch <- 
+0 ExchangePremises <- 
+0 Exhaustion <- 
+0 FrontierWorlds <- 
+0 Grains <- 
+0 GuardHorizon <- 
+0 Handoff <- 
+0 HexagramSequences <- 
+0 HistoryIdealsTraces <- 
+0 HistorySums <- 
+0 Interleavings <- 
+0 Irreversibility <- 
+0 JoiningRoles <- 
+0 JointCorrespondence <- 
+0 JointKeeping <- 
+0 JointPhase <- 
+0 LabelledRoles <- 
+0 Labels <- 
+0 LastChange <- 
+0 LawThroughChangingCoupling <- 
+0 LearnedGrouping <- 
+0 LeastLoss <- 
+0 LevelCoupling <- 
+0 LimitVerification <- 
+0 ListFootprints <- 
+0 MatchedCourses <- 
+0 MutualDependence <- 
+0 NarrowingRuns <- 
+0 Passing <- 
+0 PlaceTransitionNets <- 
+0 PresentationFrames <- 
+0 ProfileReach <- 
+0 Regulation <- 
+0 Rejoining <- 
+0 RelativePosition <- 
+0 ResponseLearning <- 
+0 RuleCapture <- 
+0 RuleHandoff <- 
+0 ScopedReach <- 
+0 ScoreRepresentation <- 
+0 SelectionReach <- 
+0 SharedCodes <- 
+0 SummaryFutures <- 
+0 SupportRecovery <- 
+0 Tolerance <- 
+0 Widening <- 
+0 WitnessRefinementRuns <- 
+1 BranchingCorrespondence <- JoiningCodes,
+1 CensusCounts <- CensusBinding,
+1 CodeAcquisition <- RouteFormation,
+1 ContingentPlans <- Actuation,
+1 Dephasing <- JointPhase,
+1 Exclusion <- Exhaustion,
+1 Fragments <- LocalUnits,
+1 FrontierFrames <- AcceptanceFrames,
+1 HexagramLaws <- HexagramSequences,
+1 HexagramSites <- HexagramSequences,
+1 HistoryLanguages <- HistoryIdeals,
+1 IntegerOrder <- Acceptance,
+1 JoiningCodes <- JoiningRoles,
+1 JoiningContexts <- JoiningCodes,
+1 Junctures <- Commuting,
+1 LawAlongRun <- LawThroughCoupling,
+1 LawThroughCoupling <- LawThroughChangingCoupling,
+1 Lifting <- Alternatives,
+1 LocalUnits <- JoiningContexts,
+1 Pace <- RuleCapture,
+1 PartialReadout <- CodeAcquisition,
+1 PooledEnvelopes <- WitnessRefinement,
+1 PoolResponse <- Rejoining,
+1 PositiveGround <- Handoff,
+1 ProjectedLaws <- JointPhase,
+1 Reconfiguration <- PooledEnvelopes,
+1 RenewalBound <- Handoff,
+1 RenewalFlow <- SupportRecovery,
+1 SeedReach <- ScopedReach,
+1 SelectionGap <- SelectionPool,
+1 SelectionPool <- PoolResponse,
+1 Settling <- LastChange,
+1 StrictTransport <- MatchedCourses,
+1 Transactions <- Reconfiguration,
+1 Undecided <- Junctures,
+1 Unrolling <- Labels,
+1 Verification <- LimitVerification,
+1 Withholding <- Tolerance,
+1 WitnessRefinement <- WitnessRefinementRuns,
+1 World <- Dependence,
+2 Acceptance <- AcceptanceFrames,GuardHorizon,
+2 Actuation <- Dispatch,Transactions,
+2 Bundles <- ActivationCapacity,PositiveGround,
+2 Commuting <- HexagramLaws,SharedCodes,
+2 EdgeClosure <- ProfileReach,SeedReach,
+2 Enough <- LimitVerification,Settling,
+2 FaultEnvelopes <- Transactions,Tolerance,
+2 Frontier <- FrontierWorlds,FrontierFrames,
+2 HexagramPlaces <- HexagramSites,HexagramLaws,
+2 Hexagrams <- Commuting,HexagramPlaces,
+2 HistoryIdeals <- HistoryIdealsTraces,Verification,
+2 Ideals <- HistoryIdeals,RuleCapture,
+2 JointPlans <- Composition,ListFootprints,
+2 RouteFormation <- LearnedGrouping,ResponseLearning,
+2 TreeSearch <- Dispatch,Transactions,
+3 Integers <- Dephasing,Coverage,IntegerOrder,
+3 Lexical <- Bundles,Frontier,ScoreRepresentation,
+3 Narrowing <- NarrowingRuns,PositiveGround,RuleHandoff,
+3 Naturals <- Actuation,Widening,TreeSearch,
+4 ListTests <- ContingentPlans,FaultEnvelopes,Junctures,TreeSearch,
+4 Presentations <- BranchingCorrespondence,Fragments,JointCorrespondence,PresentationFrames,
+12 ValuationFrames <- ActiveReading,Alternatives,Bundles,Correspondence,Courses,FrontierFrames,Lifting,LossMatching,ProfileReach,Ranking,Regrouping,ScoreRepresentation,
+15 Labelled <- ActivationCapacity,Attraction,ContinuingRevision,Correspondence,Horizon,Joint,JointKeeping,MoveOutcomeProcesses,RenewalBound,TailRuns,Withholding,Tolerance,Undecided,Unfolding,ValuationFrames,

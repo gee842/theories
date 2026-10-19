@@ -1,0 +1,9453 @@
+{
+"exact": [
+[
+{
+"full": "Becoming.Dependence.determined_dichotomy",
+"module": "Becoming.Joint",
+"line": 148
+},
+{
+"full": "Becoming.Dependence.dichotomy_of_determined",
+"module": "Becoming.Likeness",
+"line": 2425
+},
+"{ P : v0 v1 v2 } ( determined : Determined P ) { withhold : v3 → v1 → v1 } { v4 : v3 } { v5 : v1 } { v6 : v2 } { v7 : v3 } { v8 : v9 } ( breaks : BreaksBy P v5 v6 v7 v8 ) { v10 : v1 } ( v11 : step ( withhold v4 v5 ) v6 v10 ) ( v12 : requires ( withhold v4 v5 ) v7 v8 ) ( met : need ( withhold v4 v5 ) v7 v8 ≤ level ( withhold v4 v5 ) v8 ) : MakesDifference P withhold v4 v5 v6 v7 v8 ∨ BreaksBy P ( withhold v4 v5 ) v6 v7 v8"
+],
+[
+{
+"full": "Becoming.carriedWithin_exact_of_no_loop",
+"module": "Becoming.Loops",
+"line": 463
+},
+{
+"full": "Becoming.Remainder.carriedWithin_exact_of_no_loop",
+"module": "Becoming.Remainder",
+"line": 826
+},
+"( every : ∀ v0 , v0 ∈ v1 ) { v0 : v2 } ( v3 : ∀ v4 , Upstream v1 part v5 present v4 v0 → ¬ OnLoop v1 part v5 present v4 ) { v6 : Nat } ( v7 : length ≤ v6 + 1 ) ( v8 : Nat ) : carriedWithin v1 part v9 v5 present v10 v6 v8 v0 = carried v1 part v9 v5 present v10 v8 v0"
+],
+[
+{
+"full": "Becoming.Branching.trace_positions",
+"module": "Becoming.Branching",
+"line": 422
+},
+{
+"full": "Becoming.Settling.path_seq",
+"module": "Becoming.Settling",
+"line": 248
+},
+"( v0 : v1 ) { x v2 : v3 } { v4 : List v1 } ( path : v5 P x v4 v2 ) : ∃ v6 : Nat → v3 , ∃ v7 : Nat → v1 , v6 0 = x ∧ v6 length = v2 ∧ ∀ v8 , v8 < length → step ( v6 v8 ) ( v7 v8 ) ( v6 ( v8 + 1 ) )"
+],
+[
+{
+"full": "Becoming.whole_falls_stop_unrefuted",
+"module": "Becoming.LeastLoss",
+"line": 429
+},
+{
+"full": "Becoming.falls_stop_unrefuted",
+"module": "Becoming.Space",
+"line": 149
+},
+"{ v0 : Nat → Nat } { v1 : Nat } ( still : ∀ v2 , v1 ≤ v2 → v0 ( v2 + 1 ) ≤ v0 v2 ) : ¬ ∀ v3 , v1 ≤ v3 → ¬ ¬ ∃ v4 , v3 ≤ v4 ∧ v0 ( v4 + 1 ) < v0 v4"
+],
+[
+{
+"full": "Becoming.whole_falls_not_recurring",
+"module": "Becoming.LeastLoss",
+"line": 421
+},
+{
+"full": "Becoming.falls_not_recurring",
+"module": "Becoming.Renewal",
+"line": 58
+},
+"( rank : Nat → Nat ) ( v0 : Nat ) ( v1 : ∀ v2 , v0 ≤ v2 → rank ( v2 + 1 ) ≤ rank v2 ) : ¬ ∀ v3 , ∃ v2 , v3 ≤ v2 ∧ rank ( v2 + 1 ) < rank v2"
+],
+[
+{
+"full": "Becoming.preimage_of_mem_map",
+"module": "Becoming.Entropy",
+"line": 875
+},
+{
+"full": "Becoming.Net.exists_of_mem_map",
+"module": "Becoming.PlaceTransitionNets",
+"line": 608
+},
+"{ v0 v1 : Type } { v2 : v0 → v1 } { v3 : v1 } : ∀ { v4 : List v0 } , v3 ∈ map v2 → ∃ v5 , v5 ∈ v4 ∧ v2 v5 = v3"
+],
+[
+{
+"full": "Becoming.Loops.total_mul_const",
+"module": "Becoming.Loops",
+"line": 165
+},
+{
+"full": "Becoming.Routes.total_mul_right",
+"module": "Becoming.Routes",
+"line": 336
+},
+"{ v0 : Type } ( v1 : v0 → Nat ) ( v2 : Nat ) ( v3 : List v0 ) : total v3 ( fun v4 = > v1 v4 * v2 ) = total v3 v1 * v2"
+],
+[
+{
+"full": "Becoming.distinct_append_apart",
+"module": "Becoming.OrderNormal",
+"line": 1119
+},
+{
+"full": "Becoming.Net.distinct_append'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 631
+},
+"{ v0 : Type } : ∀ { v1 v2 : List v0 } , Distinct v1 → Distinct v2 → ( ∀ v3 , v3 ∈ v1 → ¬ v3 ∈ v2 ) → Distinct ( v1 + + v2 )"
+],
+[
+{
+"full": "Becoming.distinct_map",
+"module": "Becoming.Population",
+"line": 127
+},
+{
+"full": "Becoming.SituationTraces.distinct_map",
+"module": "Becoming.SituationTraces",
+"line": 67
+},
+"{ v0 : v1 → v2 } ( v3 : ∀ v4 v5 , v0 v4 = v0 v5 → v4 = v5 ) : ∀ { v6 : List v1 } , Distinct v6 → Distinct ( map v0 )"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.Nonanticipating.through_sensitive",
+"module": "Becoming.Counterfactual",
+"line": 537
+},
+{
+"full": "Becoming.ExchangeLaw.Nonanticipating.through_sensitive_of_every",
+"module": "Becoming.Sensitivity",
+"line": 207
+},
+"( v0 : Nonanticipating ) { v1 : List v2 } ( every : ∀ v3 , v3 ∈ v1 ) ( v4 : Web v5 v2 ) ( part : v5 → Bool ) : Through v4 Sensitive part"
+],
+[
+{
+"full": "Becoming.FinerTraces.of_mem_map",
+"module": "Becoming.FinerTraces",
+"line": 62
+},
+{
+"full": "Becoming.image_of_mem_map",
+"module": "Becoming.Gluing",
+"line": 157
+},
+{
+"full": "Becoming.LossMatching.mem_map_inv",
+"module": "Becoming.LossMatching",
+"line": 45
+},
+"{ v0 : v1 → v2 } { v3 : v2 } : ∀ { v4 : List v1 } , v3 ∈ map v0 → ∃ v5 , v5 ∈ v4 ∧ v0 v5 = v3"
+],
+[
+{
+"full": "Becoming.Granularity.mem_joined_split",
+"module": "Becoming.Granularity",
+"line": 87
+},
+{
+"full": "Becoming.mem_appended_split",
+"module": "Becoming.JointPlans",
+"line": 54
+},
+"{ v0 : Type v1 } { v2 : v0 } : ∀ { v3 v4 : List v0 } , v2 ∈ v3 + + v4 → v2 ∈ v3 ∨ v2 ∈ v4"
+],
+[
+{
+"full": "Becoming.mem_append_of_left",
+"module": "Becoming.OrderNormal",
+"line": 1111
+},
+{
+"full": "Becoming.Net.mem_append_left'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 616
+},
+"{ v0 : Type } { v1 : v0 } : ∀ { v2 : List v0 } ( v3 : List v0 ) , v1 ∈ v2 → v1 ∈ v2 + + v3"
+],
+[
+{
+"full": "Becoming.mem_append_of_right",
+"module": "Becoming.OrderNormal",
+"line": 1115
+},
+{
+"full": "Becoming.Net.mem_append_right'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 620
+},
+"{ v0 : Type } { v1 : v0 } : ∀ ( v2 : List v0 ) { v3 : List v0 } , v1 ∈ v3 → v1 ∈ v2 + + v3"
+],
+[
+{
+"full": "Becoming.mem_append_either",
+"module": "Becoming.OrderNormal",
+"line": 1103
+},
+{
+"full": "Becoming.Net.mem_append_cases'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 624
+},
+{
+"full": "Becoming.Propagation.mem_append_cases",
+"module": "Becoming.Propagation",
+"line": 442
+},
+"{ v0 : Type } { v1 : v0 } : ∀ { v2 v3 : List v0 } , v1 ∈ v2 + + v3 → v1 ∈ v2 ∨ v1 ∈ v3"
+],
+[
+{
+"full": "Becoming.not_mem_of_middle",
+"module": "Becoming.Listing",
+"line": 194
+},
+{
+"full": "Becoming.LossMatching.not_mem_middle",
+"module": "Becoming.LossMatching",
+"line": 70
+},
+"{ v0 : v1 } : ∀ { v2 v3 : List v1 } , Distinct ( v2 + + v0 : : v3 ) → ¬ v0 ∈ v2 + + v3"
+],
+[
+{
+"full": "Becoming.carriedWithin_exact",
+"module": "Becoming.Loops",
+"line": 333
+},
+{
+"full": "Becoming.Remainder.carriedWithin_exact",
+"module": "Becoming.Remainder",
+"line": 818
+},
+": ∀ v0 v1 , v1 ≤ v0 → ∀ v2 , carriedWithin v3 part v4 v5 present v6 v0 v1 v2 = carried v3 part v4 v5 present v6 v1 v2"
+],
+[
+{
+"full": "Becoming.Exceeding.gated",
+"module": "Becoming.Continuation",
+"line": 536
+},
+{
+"full": "Becoming.Excluding.gated",
+"module": "Becoming.Exclusion",
+"line": 271
+},
+{
+"full": "Becoming.Race.gated",
+"module": "Becoming.RelativePosition",
+"line": 394
+},
+": ∀ v0 v1 , v1 ∈ present v0 → 0 < give v0 v1 ( ) → requires v0 v1 ( ) ∧ 1 ≤ need v0 v1 ( )"
+],
+[
+{
+"full": "Becoming.Propagation.add_congr",
+"module": "Becoming.Propagation",
+"line": 140
+},
+{
+"full": "Becoming.Trickle.add_eq",
+"module": "Becoming.Resolution",
+"line": 2129
+},
+"{ v0 v1 v2 v3 : Nat } ( v4 : v0 = v1 ) ( v5 : v2 = v3 ) : v0 + v2 = v1 + v3"
+],
+[
+{
+"full": "Becoming.FinerTraces.mem_append_split",
+"module": "Becoming.FinerTraces",
+"line": 54
+},
+{
+"full": "Becoming.mem_append_cases",
+"module": "Becoming.OneStep",
+"line": 125
+},
+"{ v0 : v1 } : ∀ { v2 v3 : List v1 } , v0 ∈ v2 + + v3 → v0 ∈ v2 ∨ v0 ∈ v3"
+],
+[
+{
+"full": "Becoming.Parting.and_of",
+"module": "Becoming.Parting",
+"line": 353
+},
+{
+"full": "Becoming.bool_and_true",
+"module": "Becoming.Weighted",
+"line": 323
+},
+"{ v0 v1 : Bool } ( v2 : v0 = v3 ) ( v4 : v1 = v3 ) : ( v0 & & v1 ) = v3"
+],
+[
+{
+"full": "Becoming.Switching.no_state_law_of_criterion",
+"module": "Becoming.LawAlongRun",
+"line": 215
+},
+{
+"full": "Becoming.Switching.no_state_law",
+"module": "Becoming.Mechanism",
+"line": 410
+},
+"{ v0 : Nat } ( two : 2 ≤ v0 ) : ¬ ∃ v1 : v2 Bool Unit , Determined v1 ∧ StepsThrough fst v1 v0"
+],
+[
+{
+"full": "Becoming.Loops.mul_mul_mul_comm_nat",
+"module": "Becoming.Loops",
+"line": 1304
+},
+{
+"full": "Becoming.RuleCapture.Counts.mul_mul_mul_comm_nat",
+"module": "Becoming.RuleCapture",
+"line": 396
+},
+"( v0 v1 v2 v3 : Nat ) : v0 * v1 * ( v2 * v3 ) = v0 * v2 * ( v1 * v3 )"
+],
+[
+{
+"full": "Becoming.World.Finite.comes_to_rest_unrefuted",
+"module": "Becoming.Openness",
+"line": 642
+},
+{
+"full": "Becoming.World.rests_unrefuted",
+"module": "Becoming.Space",
+"line": 338
+},
+"( finite : Finite ) ( balanced : Balanced ) ( dissipative : Dissipative ) ( embodied : ArisingEmbodied ) : ¬ ¬ ∃ v0 , RestsFrom v0"
+],
+[
+{
+"full": "Becoming.FinerTraces.mem_cons_split",
+"module": "Becoming.FinerTraces",
+"line": 50
+},
+{
+"full": "Becoming.Interleavings.mem_cons_split",
+"module": "Becoming.Interleavings",
+"line": 56
+},
+{
+"full": "Becoming.mem_cons_cases",
+"module": "Becoming.Population",
+"line": 111
+},
+"{ v0 v1 : v2 } { v3 : List v2 } : v1 ∈ v0 : : v3 → v1 = v0 ∨ v1 ∈ v3"
+],
+[
+{
+"full": "Becoming.mem_middle",
+"module": "Becoming.Listing",
+"line": 189
+},
+{
+"full": "Becoming.LossMatching.mem_middle_of",
+"module": "Becoming.LossMatching",
+"line": 66
+},
+"{ v0 : v1 } { v2 : List v1 } : ∀ v3 : List v1 , v0 ∈ v3 + + v0 : : v2"
+],
+[
+{
+"full": "Becoming.Joining.appended_assoc",
+"module": "Becoming.Decidedness",
+"line": 990
+},
+{
+"full": "Becoming.HistoryLanguages.append_assoc'",
+"module": "Becoming.HistoryLanguages",
+"line": 59
+},
+": ∀ v0 v1 v2 : List v3 , v0 + + v1 + + v2 = v0 + + ( v1 + + v2 )"
+],
+[
+{
+"full": "Becoming.Parting.and_both",
+"module": "Becoming.Parting",
+"line": 350
+},
+{
+"full": "Becoming.bool_of_and_true",
+"module": "Becoming.Weighted",
+"line": 328
+},
+"{ v0 v1 : Bool } ( both : ( v0 & & v1 ) = v2 ) : v0 = v2 ∧ v1 = v2"
+],
+[
+{
+"full": "Becoming.Copying.sub_twice",
+"module": "Becoming.Copying",
+"line": 67
+},
+{
+"full": "Becoming.Naturals.sub_sub",
+"module": "Becoming.Naturals",
+"line": 44
+},
+"( v0 v1 : Nat ) : ∀ v2 : Nat , v0 - v1 - v2 = v0 - ( v1 + v2 )"
+],
+[
+{
+"full": "Becoming.Copying.cancel_right",
+"module": "Becoming.Copying",
+"line": 84
+},
+{
+"full": "Becoming.add_right_cancel",
+"module": "Becoming.Dependence",
+"line": 113
+},
+": ∀ { v0 v1 : Nat } ( v2 : Nat ) , v0 + v2 = v1 + v2 → v0 = v1"
+],
+[
+{
+"full": "Becoming.CrossSituational.and_eq_true",
+"module": "Becoming.CrossSituational",
+"line": 203
+},
+{
+"full": "Becoming.ListTests.and_true_iff",
+"module": "Becoming.ListTests",
+"line": 38
+},
+{
+"full": "Becoming.band_true_iff",
+"module": "Becoming.OrderNormal",
+"line": 113
+},
+": ∀ { v0 v1 : Bool } , ( v0 & & v1 ) = v2 ↔ v0 = v2 ∧ v1 = v2"
+],
+[
+{
+"full": "Becoming.le_of_add_le_add_right",
+"module": "Becoming.Dependence",
+"line": 108
+},
+{
+"full": "Becoming.Identification.le_of_add_right",
+"module": "Becoming.Identification",
+"line": 1208
+},
+": ∀ { v0 v1 : Nat } ( v2 : Nat ) , v0 + v2 ≤ v1 + v2 → v0 ≤ v1"
+],
+[
+{
+"full": "Becoming.Frequency.Rows.or_cases",
+"module": "Becoming.Frequency",
+"line": 815
+},
+{
+"full": "Becoming.Limit.or_cases'",
+"module": "Becoming.LimitVerification",
+"line": 280
+},
+": ∀ { v0 v1 : Bool } , ( v0 | | v1 ) = v2 → v0 = v2 ∨ v1 = v2"
+],
+[
+{
+"full": "Becoming.Hexagram.neither",
+"module": "Becoming.HexagramLaws",
+"line": 103
+},
+{
+"full": "Becoming.Hexagram.or_false_split",
+"module": "Becoming.HexagramSites",
+"line": 130
+},
+": ∀ { x v0 : Bool } , ( x | | v0 ) = v1 → x = v1 ∧ v0 = v1"
+],
+[
+{
+"full": "Becoming.Hexagram.line_flip_self",
+"module": "Becoming.HexagramPlaces",
+"line": 659
+},
+{
+"full": "Becoming.Hexagram.flip_line",
+"module": "Becoming.HexagramSequences",
+"line": 139
+},
+": ∀ ( v0 : Place ) ( v1 : Hexagram ) , ( flip v0 v1 ) . line v0 = ! line v0"
+],
+[
+{
+"full": "Becoming.Integers.nat_add_right_cancel",
+"module": "Becoming.Integers",
+"line": 30
+},
+{
+"full": "Becoming.Naturals.add_right_cancel",
+"module": "Becoming.Naturals",
+"line": 54
+},
+"{ v0 v1 : Nat } : ∀ { v2 : Nat } , v0 + v2 = v1 + v2 → v0 = v1"
+],
+[
+{
+"full": "Becoming.Dyadic.pow_add'",
+"module": "Becoming.LeastLoss",
+"line": 533
+},
+{
+"full": "Becoming.Loops.pow_add_nat",
+"module": "Becoming.Loops",
+"line": 1308
+},
+"( v0 x : Nat ) : ∀ v1 , v0 ^ ( x + v1 ) = v0 ^ x * v0 ^ v1"
+],
+[
+{
+"full": "Becoming.Loops.add_mul_nat",
+"module": "Becoming.Loops",
+"line": 186
+},
+{
+"full": "Becoming.add_mul_split",
+"module": "Becoming.Resolution",
+"line": 149
+},
+"( v0 v1 : Nat ) : ∀ v2 , ( v0 + v1 ) * v2 = v0 * v2 + v1 * v2"
+],
+[
+{
+"full": "Becoming.steps_of_within",
+"module": "Becoming.Population",
+"line": 761
+},
+{
+"full": "Becoming.Propagation.mem_steps_of_between",
+"module": "Becoming.Propagation",
+"line": 397
+},
+{
+"full": "Becoming.mem_steps_of_between",
+"module": "Becoming.Sampling",
+"line": 116
+},
+": ∀ { v0 v1 v2 : Nat } , v0 ≤ v2 → v2 < v0 + v1 → v2 ∈ steps v0 v1"
+],
+[
+{
+"full": "Becoming.Propagation.between_of_mem_steps",
+"module": "Becoming.Propagation",
+"line": 407
+},
+{
+"full": "Becoming.between_of_mem_steps",
+"module": "Becoming.Sampling",
+"line": 105
+},
+": ∀ { v0 v1 v2 : Nat } , v2 ∈ steps v0 v1 → v0 ≤ v2 ∧ v2 < v0 + v1"
+],
+[
+{
+"full": "Becoming.Courses.counting_sum_one",
+"module": "Becoming.Courses",
+"line": 1007
+},
+{
+"full": "Becoming.Situations.sum_one",
+"module": "Becoming.Situations",
+"line": 94
+},
+"{ v0 : Type v1 } : ∀ v2 : List v0 , sum v2 ( fun v3 = > 1 ) = length"
+],
+[
+{
+"full": "Becoming.Hexagram.line_complement",
+"module": "Becoming.HexagramPlaces",
+"line": 579
+},
+{
+"full": "Becoming.Hexagram.complement_line",
+"module": "Becoming.HexagramSequences",
+"line": 131
+},
+": ∀ ( v0 : Hexagram ) ( v1 : Place ) , ( complement v0 ) . line v1 = ! line v1"
+],
+[
+{
+"full": "Becoming.Run.withClock_part",
+"module": "Becoming.Coupling",
+"line": 386
+},
+{
+"full": "Becoming.Run.ofWithMove_toWithMove",
+"module": "Becoming.Labelled",
+"line": 73
+},
+"( v0 : Run P ) ( v1 : Nat ) : state v1 = state v1 ∧ act v1 = act v1"
+],
+[
+{
+"full": "Becoming.Dyadic.mul_assoc'",
+"module": "Becoming.LeastLoss",
+"line": 520
+},
+{
+"full": "Becoming.mul_regroup",
+"module": "Becoming.Resolution",
+"line": 142
+},
+"( v0 v1 : Nat ) : ∀ v2 , v0 * v1 * v2 = v0 * ( v1 * v2 )"
+],
+[
+{
+"full": "Becoming.Dyadic.right_distrib'",
+"module": "Becoming.LeastLoss",
+"line": 524
+},
+{
+"full": "Becoming.Regulation.add_mul'",
+"module": "Becoming.Regulation",
+"line": 1239
+},
+"( v0 v1 v2 : Nat ) : ( v0 + v1 ) * v2 = v0 * v2 + v1 * v2"
+],
+[
+{
+"full": "Becoming.Dyadic.mul_left_comm'",
+"module": "Becoming.LeastLoss",
+"line": 530
+},
+{
+"full": "Becoming.Loops.mul_left_comm_nat",
+"module": "Becoming.Loops",
+"line": 1300
+},
+{
+"full": "Becoming.mul_turn",
+"module": "Becoming.Resolution",
+"line": 146
+},
+{
+"full": "Becoming.Typicality.left_comm",
+"module": "Becoming.Typicality",
+"line": 72
+},
+"( v0 v1 v2 : Nat ) : v0 * ( v1 * v2 ) = v1 * ( v0 * v2 )"
+],
+[
+{
+"full": "Becoming.Copying.add_sub_back",
+"module": "Becoming.Copying",
+"line": 71
+},
+{
+"full": "Becoming.add_sub_of_le",
+"module": "Becoming.Dependence",
+"line": 132
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → v0 + ( v1 - v0 ) = v1"
+],
+[
+{
+"full": "Becoming.Copying.le_sub_of_add",
+"module": "Becoming.Copying",
+"line": 88
+},
+{
+"full": "Becoming.Naturals.le_sub_of_add_le",
+"module": "Becoming.Naturals",
+"line": 68
+},
+"{ v0 v1 v2 : Nat } ( v3 : v0 + v1 ≤ v2 ) : v1 ≤ v2 - v0"
+],
+[
+{
+"full": "Becoming.Copying.length_appended",
+"module": "Becoming.Copying",
+"line": 126
+},
+{
+"full": "Becoming.ListTests.length_append",
+"module": "Becoming.ListTests",
+"line": 182
+},
+": ∀ ( v0 v1 : List v2 ) , ( v0 + + v1 ) . length = length + length"
+],
+[
+{
+"full": "Becoming.HistorySums.nonzero_of_le",
+"module": "Becoming.HistorySums",
+"line": 633
+},
+{
+"full": "Becoming.RouteTraces.nonzero_of_le",
+"module": "Becoming.RouteTraces",
+"line": 39
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → nonzero v0 = v2 → nonzero v1 = v2"
+],
+[
+{
+"full": "Becoming.LossMatching.map_length_eq",
+"module": "Becoming.LossMatching",
+"line": 62
+},
+{
+"full": "Becoming.length_map",
+"module": "Becoming.OneStep",
+"line": 143
+},
+"( v0 : v1 → v2 ) : ∀ v3 : List v1 , ( map v0 ) . length = length"
+],
+[
+{
+"full": "Becoming.bool_eq_of_iff",
+"module": "Becoming.OrderNormal",
+"line": 106
+},
+{
+"full": "Becoming.WeightedTraces.bool_eq_of_iff",
+"module": "Becoming.WeightedTraces",
+"line": 108
+},
+": ∀ { v0 v1 : Bool } , ( v0 = v2 ↔ v1 = v2 ) → v0 = v1"
+],
+[
+{
+"full": "Becoming.mul_assoc_nat",
+"module": "Becoming.Capture",
+"line": 62
+},
+{
+"full": "Becoming.Loops.mul_assoc_nat",
+"module": "Becoming.Loops",
+"line": 179
+},
+": ∀ v0 v1 v2 : Nat , v0 * v1 * v2 = v0 * ( v1 * v2 )"
+],
+[
+{
+"full": "Becoming.exists_add_of_le",
+"module": "Becoming.CensusCounts",
+"line": 65
+},
+{
+"full": "Becoming.ResponseLearning.exists_add_of_le",
+"module": "Becoming.ResponseLearning",
+"line": 64
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → ∃ v2 , v1 = v2 + v0"
+],
+[
+{
+"full": "Becoming.Clear.not_both",
+"module": "Becoming.Change",
+"line": 414
+},
+{
+"full": "Becoming.Limit.true_ne_false'",
+"module": "Becoming.LimitVerification",
+"line": 100
+},
+"{ v0 : Bool } ( v1 : v0 = v2 ) ( v3 : v0 = v4 ) : False"
+],
+[
+{
+"full": "Becoming.Clear.and_left",
+"module": "Becoming.Change",
+"line": 417
+},
+{
+"full": "Becoming.RuleHandoff.and_left",
+"module": "Becoming.RuleHandoff",
+"line": 142
+},
+": ∀ { v0 v1 : Bool } , ( v0 & & v1 ) = v2 → v0 = v2"
+],
+[
+{
+"full": "Becoming.Clear.and_right",
+"module": "Becoming.Change",
+"line": 421
+},
+{
+"full": "Becoming.RuleHandoff.and_right",
+"module": "Becoming.RuleHandoff",
+"line": 146
+},
+": ∀ { v0 v1 : Bool } , ( v0 & & v1 ) = v2 → v1 = v2"
+],
+[
+{
+"full": "Becoming.World.arising_iff_ceasing_of_decidable",
+"module": "Becoming.Decidedness",
+"line": 755
+},
+{
+"full": "Becoming.World.Finite.arising_iff_ceasing",
+"module": "Becoming.Openness",
+"line": 407
+},
+{
+"full": "Becoming.World.arising_iff_ceasing",
+"module": "Becoming.Space",
+"line": 274
+},
+"[ ∀ v0 x , Decidable ( active v0 x ) ] ( finite : Finite ) : ArisingRecurs ↔ CeasingRecurs"
+],
+[
+{
+"full": "Becoming.Dependence.alikeAt_equivalence",
+"module": "Becoming.LawThroughChangingCoupling",
+"line": 74
+},
+{
+"full": "Becoming.Conditions.alikeAt_equivalence",
+"module": "Becoming.LawThroughCoupling",
+"line": 154
+},
+"( obs : v0 → v1 → Prop ) ( v2 : v0 ) : v3 ( AlikeAt obs v2 )"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.sub_add_back",
+"module": "Becoming.Counterfactual",
+"line": 372
+},
+{
+"full": "Becoming.Naturals.sub_add_cancel",
+"module": "Becoming.Naturals",
+"line": 34
+},
+": ∀ { v0 v1 : Nat } , v1 ≤ v0 → v0 - v1 + v1 = v0"
+],
+[
+{
+"full": "Becoming.HistoryIdeals.length_append",
+"module": "Becoming.HistoryIdeals",
+"line": 217
+},
+{
+"full": "Becoming.Joining.length_appended",
+"module": "Becoming.Joining",
+"line": 887
+},
+{
+"full": "Becoming.length_append",
+"module": "Becoming.Population",
+"line": 107
+},
+": ∀ v0 v1 : List v2 , ( v0 + + v1 ) . length = length + length"
+],
+[
+{
+"full": "Becoming.Dyadic.mul_right_comm'",
+"module": "Becoming.LeastLoss",
+"line": 527
+},
+{
+"full": "Becoming.RuleCapture.Counts.mul_right_comm_nat",
+"module": "Becoming.RuleCapture",
+"line": 392
+},
+"( v0 v1 v2 : Nat ) : v0 * v1 * v2 = v0 * v2 * v1"
+],
+[
+{
+"full": "Becoming.Clear.of_not",
+"module": "Becoming.Change",
+"line": 430
+},
+{
+"full": "Becoming.Hexagram.not_true_eq",
+"module": "Becoming.HexagramSites",
+"line": 425
+},
+{
+"full": "Becoming.Hexagram.false_of_not",
+"module": "Becoming.Hexagrams",
+"line": 293
+},
+{
+"full": "Becoming.Limit.eq_true_of_not_false",
+"module": "Becoming.LimitVerification",
+"line": 184
+},
+{
+"full": "Becoming.Tail.false_of_not_eq_true",
+"module": "Becoming.Tail",
+"line": 109
+},
+": ∀ { v0 : Bool } , ( ! v0 ) = v1 → v0 = v2"
+],
+[
+{
+"full": "Becoming.Closing.ble_false_of_lt",
+"module": "Becoming.Closing",
+"line": 79
+},
+{
+"full": "Becoming.Routes.ble_false_of_lt",
+"module": "Becoming.Routes",
+"line": 313
+},
+": ∀ { v0 v1 : Nat } , v1 < v0 → ble v0 v1 = v2"
+],
+[
+{
+"full": "Becoming.OpenQueue.outside",
+"module": "Becoming.Counting",
+"line": 410
+},
+{
+"full": "Becoming.Exposed.outside",
+"module": "Becoming.Openness",
+"line": 977
+},
+{
+"full": "Becoming.World.Scatter.outside",
+"module": "Becoming.Premises",
+"line": 406
+},
+{
+"full": "Becoming.World.Hatch.outside",
+"module": "Becoming.Premises",
+"line": 983
+},
+"( v0 : List Relatum ) : ¬ ground ( beyond ( map index ) ) ∈ v0"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.still_levels",
+"module": "Becoming.ExchangePremises",
+"line": 328
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_levels",
+"module": "Becoming.Reading",
+"line": 298
+},
+{
+"full": "Becoming.ExchangeLaw.unresponsive_levels",
+"module": "Becoming.Reading",
+"line": 304
+},
+": ∀ v0 v1 , levels single ( fun v2 = > 1 ) v0 v1 = 1"
+],
+[
+{
+"full": "Becoming.total_zero",
+"module": "Becoming.Flow",
+"line": 125
+},
+{
+"full": "Becoming.Stock.total_zero",
+"module": "Becoming.Stock",
+"line": 67
+},
+": ∀ v0 : List v1 , total v0 ( fun v2 = > 0 ) = 0"
+],
+[
+{
+"full": "Becoming.Hexagram.opposite_false",
+"module": "Becoming.Hexagrams",
+"line": 696
+},
+{
+"full": "Becoming.Hexagram.opposite_true",
+"module": "Becoming.Hexagrams",
+"line": 700
+},
+{
+"full": "Becoming.Tail.not_eq_true_of_false",
+"module": "Becoming.Tail",
+"line": 113
+},
+": ∀ { v0 : Bool } , v0 = v1 → ( ! v0 ) = v2"
+],
+[
+{
+"full": "Becoming.sub_eq_zero_of_le",
+"module": "Becoming.Imbalance",
+"line": 46
+},
+{
+"full": "Becoming.Propagation.sub_zero_of_le",
+"module": "Becoming.Propagation",
+"line": 109
+},
+{
+"full": "Becoming.SupportGated.sub_eq_zero_of_le",
+"module": "Becoming.RenewalFlow",
+"line": 59
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → v0 - v1 = 0"
+],
+[
+{
+"full": "Becoming.ListTests.not_true_iff",
+"module": "Becoming.ListTests",
+"line": 49
+},
+{
+"full": "Becoming.not_eq_true_iff",
+"module": "Becoming.OrderNormal",
+"line": 1290
+},
+{
+"full": "Becoming.not_eq_false_iff",
+"module": "Becoming.OrderNormal",
+"line": 1294
+},
+": ∀ { v0 : Bool } , ( ! v0 ) = v1 ↔ v0 = v2"
+],
+[
+{
+"full": "Becoming.Naturals.add_sub_cancel",
+"module": "Becoming.Naturals",
+"line": 27
+},
+{
+"full": "Becoming.ExchangeLaw.add_sub_same",
+"module": "Becoming.Reading",
+"line": 293
+},
+"( v0 : Nat ) : ∀ v1 : Nat , v0 + v1 - v1 = v0"
+],
+[
+{
+"full": "Becoming.FinerTraces.mem_upto",
+"module": "Becoming.FinerTraces",
+"line": 85
+},
+{
+"full": "Becoming.Undecided.mem_upto",
+"module": "Becoming.Undecided",
+"line": 439
+},
+": ∀ { v0 v1 : Nat } , v1 < v0 → v1 ∈ upto v0"
+],
+[
+{
+"full": "Becoming.Copying.add_sub_left",
+"module": "Becoming.Copying",
+"line": 98
+},
+{
+"full": "Becoming.Propagation.add_sub_self_left",
+"module": "Becoming.Propagation",
+"line": 126
+},
+": ∀ ( v0 v1 : Nat ) , v0 + v1 - v0 = v1"
+],
+[
+{
+"full": "Becoming.FallibleInquiry.Witness.balanced",
+"module": "Becoming.FallibleInquiry",
+"line": 288
+},
+{
+"full": "Becoming.TimedResponse.Delayed.balanced",
+"module": "Becoming.TimedResponse",
+"line": 254
+},
+"( v0 : Bool ) : ( flow v0 ) . Balances ( web v0 )"
+],
+[
+{
+"full": "Becoming.Limit.false_of_not_true",
+"module": "Becoming.LimitVerification",
+"line": 503
+},
+{
+"full": "Becoming.Tail.false_of_not_true",
+"module": "Becoming.Tail",
+"line": 105
+},
+": ∀ { v0 : Bool } , ¬ v0 = v1 → v0 = v2"
+],
+[
+{
+"full": "Becoming.Exposed.holder_after",
+"module": "Becoming.Openness",
+"line": 1014
+},
+{
+"full": "Becoming.Shuttle.next_off",
+"module": "Becoming.Persistence",
+"line": 1030
+},
+": ∀ v0 , stands ( holder v0 ) ( v0 + 1 ) = 0"
+],
+[
+{
+"full": "Becoming.Countdown.none_ne_some",
+"module": "Becoming.Countdown",
+"line": 107
+},
+{
+"full": "Becoming.Viability.none_ne_some",
+"module": "Becoming.Viability",
+"line": 259
+},
+"{ x : v0 } : ( none : Option v0 ) ≠ some x"
+],
+[
+{
+"full": "Becoming.Copying.append_empty",
+"module": "Becoming.Copying",
+"line": 118
+},
+{
+"full": "Becoming.HistoryLanguages.append_nil'",
+"module": "Becoming.HistoryLanguages",
+"line": 55
+},
+{
+"full": "Becoming.Joining.appended_nil",
+"module": "Becoming.Joining",
+"line": 883
+},
+": ∀ v0 : List v1 , v0 + + [ ] = v0"
+],
+[
+{
+"full": "Becoming.Shared.dependent",
+"module": "Becoming.Correspondence",
+"line": 460
+},
+{
+"full": "Becoming.SupportDrawn.dependent",
+"module": "Becoming.Testing",
+"line": 959
+},
+{
+"full": "Becoming.Attracting.dependent_web",
+"module": "Becoming.Testing",
+"line": 1120
+},
+"( level : Nat → Nat ) : ( web level ) . Dependent"
+],
+[
+{
+"full": "Becoming.Clear.cases",
+"module": "Becoming.Change",
+"line": 406
+},
+{
+"full": "Becoming.bool_cases",
+"module": "Becoming.OrderNormal",
+"line": 1286
+},
+": ∀ v0 : Bool , v0 = v1 ∨ v0 = v2"
+],
+[
+{
+"full": "Becoming.Mutualism.other_other",
+"module": "Becoming.Descent",
+"line": 287
+},
+{
+"full": "Becoming.Mutualism.other_twice",
+"module": "Becoming.Roles",
+"line": 799
+},
+": ∀ x : Relatum , other ( other x ) = x"
+],
+[
+{
+"full": "Becoming.Dispatch.two_mul",
+"module": "Becoming.Dispatch",
+"line": 268
+},
+{
+"full": "Becoming.Doubling.two_mul_eq",
+"module": "Becoming.Units",
+"line": 316
+},
+"( v0 : Nat ) : 2 * v0 = v0 + v0"
+],
+[
+{
+"full": "Becoming.Passing.not_not",
+"module": "Becoming.Entropy",
+"line": 1741
+},
+{
+"full": "Becoming.Hexagram.opposite_opposite",
+"module": "Becoming.Hexagrams",
+"line": 135
+},
+{
+"full": "Becoming.SharedCodes.TwoFormations.not_not",
+"module": "Becoming.SharedCodes",
+"line": 1250
+},
+": ∀ v0 : Bool , ( ! ! v0 ) = v0"
+],
+[
+{
+"full": "Becoming.FinerTraces.two_listed",
+"module": "Becoming.FinerTraces",
+"line": 211
+},
+{
+"full": "Becoming.Net.bools_every",
+"module": "Becoming.PlaceTransitionNets",
+"line": 809
+},
+": ∀ v0 : Bool , v0 ∈ [ v1 , v2 ]"
+],
+[
+{
+"full": "Becoming.add_one_sub_self",
+"module": "Becoming.Gain",
+"line": 85
+},
+{
+"full": "Becoming.succ_sub_self",
+"module": "Becoming.Order",
+"line": 164
+},
+": ∀ v0 : Nat , v0 + 1 - v0 = 1"
+],
+[
+{
+"full": "Becoming.Captured.not_ne",
+"module": "Becoming.Branching",
+"line": 1389
+},
+{
+"full": "Becoming.Enough.Free.not_ne_self",
+"module": "Becoming.Enough",
+"line": 176
+},
+{
+"full": "Becoming.Identification.not_ne_bool",
+"module": "Becoming.Identification",
+"line": 1120
+},
+{
+"full": "Becoming.Learning.not_moves",
+"module": "Becoming.Learning",
+"line": 1054
+},
+": ∀ v0 : Bool , ( ! v0 ) ≠ v0"
+],
+[
+{
+"full": "Becoming.Lone.fed",
+"module": "Becoming.Continuation",
+"line": 420
+},
+{
+"full": "Becoming.Successive.fed",
+"module": "Becoming.Succession",
+"line": 105
+},
+"( v0 : Nat ) : FedFromBeyond [ . pool ] v0"
+],
+[
+{
+"full": "Becoming.Exceeding.live_of_present",
+"module": "Becoming.Continuation",
+"line": 522
+},
+{
+"full": "Becoming.Race.live_of_present",
+"module": "Becoming.RelativePosition",
+"line": 381
+},
+": ∀ v0 v1 , v1 ∈ present v0 → live v0"
+],
+[
+{
+"full": "Becoming.IntegerOrder.sub_self",
+"module": "Becoming.IntegerOrder",
+"line": 70
+},
+{
+"full": "Becoming.Integers.add_right_neg",
+"module": "Becoming.Integers",
+"line": 173
+},
+"( v0 : Int ) : v0 + - v0 = 0"
+],
+[
+{
+"full": "Becoming.World.stutter_counted",
+"module": "Becoming.Order",
+"line": 810
+},
+{
+"full": "Becoming.World.sample_counted",
+"module": "Becoming.Sampling",
+"line": 780
+},
+"( counted : Counted ) : ( sample v0 ) . Counted"
+],
+[
+{
+"full": "Becoming.ContinuingRevision.next_ne",
+"module": "Becoming.ContinuingRevision",
+"line": 176
+},
+{
+"full": "Becoming.Naturals.succ_ne_self",
+"module": "Becoming.Naturals",
+"line": 84
+},
+"( v0 : Nat ) : v0 + 1 ≠ v0"
+],
+[
+{
+"full": "Becoming.Hexagram.beq_self",
+"module": "Becoming.HexagramSequences",
+"line": 686
+},
+{
+"full": "Becoming.Loops.beq_self",
+"module": "Becoming.Loops",
+"line": 133
+},
+{
+"full": "Becoming.beq_self",
+"module": "Becoming.OrderNormal",
+"line": 865
+},
+{
+"full": "Becoming.SharedCodes.Gloss.beq_self",
+"module": "Becoming.SharedCodes",
+"line": 1452
+},
+": ∀ v0 : Nat , beq v0 v0 = v1"
+],
+[
+{
+"full": "Becoming.Turnover.swap_swap",
+"module": "Becoming.Identity",
+"line": 1333
+},
+{
+"full": "Becoming.TideFlip.swap_swap",
+"module": "Becoming.Identity",
+"line": 1458
+},
+{
+"full": "Becoming.Lineage.swap_swap",
+"module": "Becoming.Identity",
+"line": 1780
+},
+{
+"full": "Becoming.Succession.swap_swap",
+"module": "Becoming.Identity",
+"line": 1894
+},
+{
+"full": "Becoming.Dormancy.swap_swap",
+"module": "Becoming.Identity",
+"line": 2011
+},
+{
+"full": "Becoming.Hibernation.swap_swap",
+"module": "Becoming.Persistence",
+"line": 308
+},
+": ∀ v0 , swap ( swap v0 ) = v0"
+],
+[
+{
+"full": "Becoming.LLPO.succ_ne_zero",
+"module": "Becoming.Likeness",
+"line": 1354
+},
+{
+"full": "Becoming.ScoreRepresentation.succ_ne_zero",
+"module": "Becoming.ScoreRepresentation",
+"line": 62
+},
+"( v0 : Nat ) : v0 + 1 ≠ 0"
+],
+[
+{
+"full": "Becoming.Lapse.unsupported",
+"module": "Becoming.Order",
+"line": 964
+},
+{
+"full": "Becoming.Seed.dark",
+"module": "Becoming.Reserve",
+"line": 545
+},
+{
+"full": "Becoming.Viable.dark",
+"module": "Becoming.Reserve",
+"line": 596
+},
+{
+"full": "Becoming.Dwindle.unsupported",
+"module": "Becoming.Resolution",
+"line": 2054
+},
+"( v0 : Nat ) : ¬ Supported v0 ( )"
+],
+[
+{
+"full": "Becoming.Specker.flip_ne",
+"module": "Becoming.Context",
+"line": 249
+},
+{
+"full": "Becoming.Coupling.ne_not",
+"module": "Becoming.Coupling",
+"line": 720
+},
+": ∀ v0 : Bool , v0 ≠ ! v0"
+],
+[
+{
+"full": "Becoming.Attrition.nothing_arises",
+"module": "Becoming.Change",
+"line": 666
+},
+{
+"full": "Becoming.Countless.never",
+"module": "Becoming.Wholes",
+"line": 378
+},
+": ∀ v0 v1 , ¬ Arises v0 v1"
+],
+[
+{
+"full": "Becoming.Mutualism.apart_not_connected",
+"module": "Becoming.Correspondence",
+"line": 604
+},
+{
+"full": "Becoming.Brood.not_coparticipating",
+"module": "Becoming.Descent",
+"line": 239
+},
+": ¬ ( valuation own sig ) . Connected"
+],
+[
+{
+"full": "Becoming.Mutualism.apart_not_interacting",
+"module": "Becoming.Correspondence",
+"line": 613
+},
+{
+"full": "Becoming.Brood.not_interacting",
+"module": "Becoming.Descent",
+"line": 247
+},
+{
+"full": "Becoming.Drowsy.not_interacting",
+"module": "Becoming.Descent",
+"line": 394
+},
+": ¬ ( interaction own sig ) . Connected"
+],
+[
+{
+"full": "Becoming.Spray.unenclosed",
+"module": "Becoming.Dissipation",
+"line": 1318
+},
+{
+"full": "Becoming.ExchangeLaw.spreading_not_enclosed",
+"module": "Becoming.ExchangePremises",
+"line": 535
+},
+{
+"full": "Becoming.Exposed.open_at",
+"module": "Becoming.Openness",
+"line": 981
+},
+{
+"full": "Becoming.Holding.open_at",
+"module": "Becoming.Openness",
+"line": 1052
+},
+{
+"full": "Becoming.SprayShuttle.unenclosed",
+"module": "Becoming.Roles",
+"line": 1512
+},
+"( v0 : Nat ) : ¬ Enclosed v0"
+],
+[
+{
+"full": "Becoming.Frontier.enclosed",
+"module": "Becoming.Dissipation",
+"line": 1003
+},
+{
+"full": "Becoming.Lone.enclosed",
+"module": "Becoming.Dissipation",
+"line": 1232
+},
+{
+"full": "Becoming.Gathering.enclosed",
+"module": "Becoming.Entropy",
+"line": 2129
+},
+{
+"full": "Becoming.Emission.enclosed",
+"module": "Becoming.Resolution",
+"line": 1869
+},
+{
+"full": "Becoming.Alternation.enclosed",
+"module": "Becoming.Resolution",
+"line": 1981
+},
+{
+"full": "Becoming.Trickle.enclosed",
+"module": "Becoming.Resolution",
+"line": 2323
+},
+"( v0 : Nat ) : Enclosed v0"
+],
+[
+{
+"full": "Becoming.Provision.parent_beyond",
+"module": "Becoming.Feeding",
+"line": 558
+},
+{
+"full": "Becoming.Clearing.dweller_beyond",
+"module": "Becoming.Interdependence",
+"line": 539
+},
+": ¬ WithinFeeding web . v0 . v1"
+],
+[
+{
+"full": "Becoming.Hexagram.pairs_goAlike_of_commutes",
+"module": "Becoming.Commuting",
+"line": 228
+},
+{
+"full": "Becoming.Hexagram.pairs_goAlike",
+"module": "Becoming.Hexagrams",
+"line": 647
+},
+": GoAlike ( process waxWane ) pairOf"
+],
+[
+{
+"full": "Becoming.Loop.responds_by_law",
+"module": "Becoming.Counterfactual",
+"line": 784
+},
+{
+"full": "Becoming.Loop.responds",
+"module": "Becoming.Response",
+"line": 601
+},
+": RespondsThroughCoupling quiet web quietWeb paired firstPart"
+],
+[
+{
+"full": "Becoming.Net.bools_distinct",
+"module": "Becoming.PlaceTransitionNets",
+"line": 806
+},
+{
+"full": "Becoming.Shuttle.distinct",
+"module": "Becoming.Roles",
+"line": 1222
+},
+{
+"full": "Becoming.SituationTraces.distinct_two",
+"module": "Becoming.SituationTraces",
+"line": 120
+},
+": Distinct [ v0 , v1 ]"
+],
+[
+{
+"full": "Becoming.Asymptote.distinct",
+"module": "Becoming.Resolution",
+"line": 1513
+},
+{
+"full": "Becoming.Circulation.distinct",
+"module": "Becoming.Resolution",
+"line": 1706
+},
+{
+"full": "Becoming.SituationTraces.distinct_unit",
+"module": "Becoming.SituationTraces",
+"line": 116
+},
+": Distinct [ ( ) ]"
+],
+[
+{
+"full": "Becoming.Turnover.pool_not_renewed",
+"module": "Becoming.Identity",
+"line": 1347
+},
+{
+"full": "Becoming.Hibernation.pool_not_renewed",
+"module": "Becoming.Persistence",
+"line": 324
+},
+": ¬ Renewed . pool"
+],
+[
+{
+"full": "Becoming.Assurance.Branch.not_determined",
+"module": "Becoming.Assurance",
+"line": 153
+},
+{
+"full": "Becoming.Coarse.not_determined",
+"module": "Becoming.Mechanism",
+"line": 360
+},
+": ¬ Determined process"
+],
+[
+{
+"full": "Becoming.Specker.local_",
+"module": "Becoming.Context",
+"line": 218
+},
+{
+"full": "Becoming.Square.local_",
+"module": "Becoming.Context",
+"line": 341
+},
+{
+"full": "Becoming.ParitySystem.local_",
+"module": "Becoming.Gluing",
+"line": 386
+},
+": Local within support"
+],
+[
+{
+"full": "Becoming.Choosing.early_not_determined",
+"module": "Becoming.Histories",
+"line": 419
+},
+{
+"full": "Becoming.Twins.not_determined",
+"module": "Becoming.Unfolding",
+"line": 389
+},
+": ¬ Determined P"
+],
+[
+{
+"full": "Becoming.Dormancy.consumed",
+"module": "Becoming.Identity",
+"line": 2055
+},
+{
+"full": "Becoming.Hibernation.pool_consumed",
+"module": "Becoming.Persistence",
+"line": 321
+},
+": Consumed . pool"
+],
+[
+{
+"full": "Becoming.Flow.byOccurrence_dissipative",
+"module": "Becoming.Listing",
+"line": 950
+},
+{
+"full": "Becoming.Flow.roles_dissipative",
+"module": "Becoming.Roles",
+"line": 374
+},
+": Dissipative ↔ Dissipative"
+],
+[
+{
+"full": "Becoming.Transfer.balances",
+"module": "Becoming.Admission",
+"line": 751
+},
+{
+"full": "Becoming.Exceeding.balances",
+"module": "Becoming.Continuation",
+"line": 517
+},
+{
+"full": "Becoming.Alone.balances",
+"module": "Becoming.Continuation",
+"line": 592
+},
+{
+"full": "Becoming.Downstream.balances",
+"module": "Becoming.Continuation",
+"line": 669
+},
+{
+"full": "Becoming.Mortal.balances",
+"module": "Becoming.Continuation",
+"line": 760
+},
+{
+"full": "Becoming.Clearing.balances",
+"module": "Becoming.Continuation",
+"line": 911
+},
+{
+"full": "Becoming.Unrelated.balances",
+"module": "Becoming.Descent",
+"line": 453
+},
+{
+"full": "Becoming.Frontier.balances",
+"module": "Becoming.Dissipation",
+"line": 930
+},
+{
+"full": "Becoming.Rooted.balances",
+"module": "Becoming.Dissipation",
+"line": 1053
+},
+{
+"full": "Becoming.Lone.balances",
+"module": "Becoming.Dissipation",
+"line": 1175
+},
+{
+"full": "Becoming.Passing.balances",
+"module": "Becoming.Entropy",
+"line": 1796
+},
+{
+"full": "Becoming.Settling.balances",
+"module": "Becoming.Entropy",
+"line": 1973
+},
+{
+"full": "Becoming.Gathering.balances",
+"module": "Becoming.Entropy",
+"line": 2097
+},
+{
+"full": "Becoming.Drawdown.balances",
+"module": "Becoming.Evolution",
+"line": 385
+},
+{
+"full": "Becoming.Excluding.balances",
+"module": "Becoming.Exclusion",
+"line": 255
+},
+{
+"full": "Becoming.Sharing.balances",
+"module": "Becoming.Exclusion",
+"line": 337
+},
+{
+"full": "Becoming.Seeker.balances",
+"module": "Becoming.Exhaustion",
+"line": 216
+},
+{
+"full": "Becoming.Trophic.balances",
+"module": "Becoming.Feedback",
+"line": 952
+},
+{
+"full": "Becoming.Margin.balances",
+"module": "Becoming.Feedback",
+"line": 1567
+},
+{
+"full": "Becoming.Late.balances",
+"module": "Becoming.Feedback",
+"line": 1630
+},
+{
+"full": "Becoming.Provision.balances",
+"module": "Becoming.Feeding",
+"line": 508
+},
+{
+"full": "Becoming.Growing.balances",
+"module": "Becoming.Flow",
+"line": 689
+},
+{
+"full": "Becoming.Overshoot.balances",
+"module": "Becoming.Interdependence",
+"line": 350
+},
+{
+"full": "Becoming.Doubled.balances",
+"module": "Becoming.Listing",
+"line": 566
+},
+{
+"full": "Becoming.Drawing.balances",
+"module": "Becoming.MutualDependence",
+"line": 213
+},
+{
+"full": "Becoming.DoublingDraw.balances",
+"module": "Becoming.MutualDependence",
+"line": 489
+},
+{
+"full": "Becoming.Crossing.balances",
+"module": "Becoming.Order",
+"line": 1838
+},
+{
+"full": "Becoming.Arising.balances",
+"module": "Becoming.Order",
+"line": 1935
+},
+{
+"full": "Becoming.Regulation.Overshooting.balances",
+"module": "Becoming.Regulation",
+"line": 450
+},
+{
+"full": "Becoming.Regulation.OneSided.balances",
+"module": "Becoming.Regulation",
+"line": 506
+},
+{
+"full": "Becoming.Race.balances",
+"module": "Becoming.RelativePosition",
+"line": 376
+},
+{
+"full": "Becoming.Restored.balances",
+"module": "Becoming.RelativePosition",
+"line": 516
+},
+{
+"full": "Becoming.Famine.balances",
+"module": "Becoming.Reserve",
+"line": 701
+},
+{
+"full": "Becoming.Provisioned.balances",
+"module": "Becoming.Reserve",
+"line": 1081
+},
+{
+"full": "Becoming.Loop.balances",
+"module": "Becoming.Response",
+"line": 577
+},
+{
+"full": "Becoming.EmbodiedSource.balances",
+"module": "Becoming.Roles",
+"line": 1141
+},
+{
+"full": "Becoming.Shuttle.balances",
+"module": "Becoming.Roles",
+"line": 1234
+},
+{
+"full": "Becoming.Throughput.balances",
+"module": "Becoming.Roles",
+"line": 1320
+},
+{
+"full": "Becoming.SprayShuttle.balances",
+"module": "Becoming.Roles",
+"line": 1497
+},
+{
+"full": "Becoming.Successive.balances",
+"module": "Becoming.Succession",
+"line": 70
+},
+{
+"full": "Becoming.Prey.balances",
+"module": "Becoming.Testing",
+"line": 1219
+},
+{
+"full": "Becoming.TwoGivers.balances",
+"module": "Becoming.Transmission",
+"line": 843
+},
+": Balances web"
+],
+[
+{
+"full": "Becoming.Transfer.acting",
+"module": "Becoming.Admission",
+"line": 757
+},
+{
+"full": "Becoming.Exceeding.acting",
+"module": "Becoming.Continuation",
+"line": 527
+},
+{
+"full": "Becoming.Unrelated.acting",
+"module": "Becoming.Descent",
+"line": 457
+},
+{
+"full": "Becoming.Rooted.acting",
+"module": "Becoming.Dissipation",
+"line": 1099
+},
+{
+"full": "Becoming.Drawdown.acting",
+"module": "Becoming.Evolution",
+"line": 399
+},
+{
+"full": "Becoming.Excluding.acting",
+"module": "Becoming.Exclusion",
+"line": 259
+},
+{
+"full": "Becoming.Trophic.acting",
+"module": "Becoming.Feedback",
+"line": 959
+},
+{
+"full": "Becoming.Provision.acting",
+"module": "Becoming.Feeding",
+"line": 514
+},
+{
+"full": "Becoming.Overshoot.acting",
+"module": "Becoming.Interdependence",
+"line": 358
+},
+{
+"full": "Becoming.Arising.acting",
+"module": "Becoming.Order",
+"line": 1944
+},
+{
+"full": "Becoming.Race.acting",
+"module": "Becoming.RelativePosition",
+"line": 386
+},
+{
+"full": "Becoming.Restored.acting",
+"module": "Becoming.RelativePosition",
+"line": 521
+},
+{
+"full": "Becoming.Clearing.acting",
+"module": "Becoming.RelativePosition",
+"line": 567
+},
+{
+"full": "Becoming.Provisioned.acting",
+"module": "Becoming.Reserve",
+"line": 1086
+},
+{
+"full": "Becoming.Emission.acting",
+"module": "Becoming.Resolution",
+"line": 1887
+},
+{
+"full": "Becoming.EmbodiedSource.acting",
+"module": "Becoming.Roles",
+"line": 1146
+},
+{
+"full": "Becoming.Shuttle.acting",
+"module": "Becoming.Roles",
+"line": 1242
+},
+{
+"full": "Becoming.Throughput.acting",
+"module": "Becoming.Roles",
+"line": 1326
+},
+{
+"full": "Becoming.SprayShuttle.acting",
+"module": "Becoming.Roles",
+"line": 1502
+},
+{
+"full": "Becoming.Successive.acting",
+"module": "Becoming.Succession",
+"line": 97
+},
+{
+"full": "Becoming.TwoGivers.acting",
+"module": "Becoming.Transmission",
+"line": 853
+},
+": Acting web"
+],
+[
+{
+"full": "Becoming.Transfer.taking",
+"module": "Becoming.Admission",
+"line": 765
+},
+{
+"full": "Becoming.Rooted.taking",
+"module": "Becoming.Dissipation",
+"line": 1093
+},
+{
+"full": "Becoming.Drawdown.taking",
+"module": "Becoming.Evolution",
+"line": 406
+},
+{
+"full": "Becoming.Trophic.taking",
+"module": "Becoming.Feedback",
+"line": 966
+},
+{
+"full": "Becoming.Provision.taking",
+"module": "Becoming.Feeding",
+"line": 519
+},
+{
+"full": "Becoming.Overshoot.taking",
+"module": "Becoming.Interdependence",
+"line": 363
+},
+{
+"full": "Becoming.Emission.taking",
+"module": "Becoming.Resolution",
+"line": 1891
+},
+{
+"full": "Becoming.World.SelfDrawing.taking",
+"module": "Becoming.Space",
+"line": 394
+},
+": Taking web"
+],
+[
+{
+"full": "Becoming.Branching.OneWay.determined",
+"module": "Becoming.Branching",
+"line": 775
+},
+{
+"full": "Becoming.Branching.Transit.determined",
+"module": "Becoming.Branching",
+"line": 860
+},
+{
+"full": "Becoming.Confound.determined",
+"module": "Becoming.Experiment",
+"line": 282
+},
+{
+"full": "Becoming.Shock.determined",
+"module": "Becoming.Joint",
+"line": 312
+},
+{
+"full": "Becoming.Pool.determined",
+"module": "Becoming.Joint",
+"line": 404
+},
+{
+"full": "Becoming.Blocked.determined",
+"module": "Becoming.Joint",
+"line": 602
+},
+{
+"full": "Becoming.Changing.determined",
+"module": "Becoming.LawThroughChangingCoupling",
+"line": 231
+},
+{
+"full": "Becoming.Unseen.determined",
+"module": "Becoming.LawThroughCoupling",
+"line": 225
+},
+{
+"full": "Becoming.Switching.determined",
+"module": "Becoming.Mechanism",
+"line": 400
+},
+": Determined process"
+],
+[
+{
+"full": "Becoming.Specker.noGlobal",
+"module": "Becoming.Context",
+"line": 224
+},
+{
+"full": "Becoming.Square.noGlobal",
+"module": "Becoming.Context",
+"line": 352
+},
+{
+"full": "Becoming.Specker.noGlobal_of_contradiction",
+"module": "Becoming.Gluing",
+"line": 529
+},
+{
+"full": "Becoming.Square.noGlobal_of_contradiction",
+"module": "Becoming.Gluing",
+"line": 671
+},
+": NoGlobal support"
+],
+[
+{
+"full": "Becoming.Rooted.census",
+"module": "Becoming.Dissipation",
+"line": 1082
+},
+{
+"full": "Becoming.Expansion.census",
+"module": "Becoming.Population",
+"line": 1390
+},
+{
+"full": "Becoming.Cycle.census",
+"module": "Becoming.Population",
+"line": 1415
+},
+": Census present"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.responsive_not_dissipative",
+"module": "Becoming.ExchangePremises",
+"line": 363
+},
+{
+"full": "Becoming.Brood.not_dissipative",
+"module": "Becoming.Roles",
+"line": 1037
+},
+": ¬ Dissipative"
+],
+[
+{
+"full": "Becoming.Tandem.census",
+"module": "Becoming.Identity",
+"line": 1694
+},
+{
+"full": "Becoming.Accretion.census",
+"module": "Becoming.Openness",
+"line": 438
+},
+{
+"full": "Becoming.Oscillation.census",
+"module": "Becoming.Population",
+"line": 1439
+},
+{
+"full": "Becoming.Emission.census",
+"module": "Becoming.Resolution",
+"line": 1806
+},
+": Census alive"
+],
+[
+{
+"full": "Becoming.Model.articulation_neutrality_is_needed",
+"module": "Becoming.Metaethics",
+"line": 429
+},
+{
+"full": "Becoming.Model.seed_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 331
+},
+{
+"full": "Becoming.Model.relational_neutrality_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 340
+},
+{
+"full": "Becoming.Model.standpoint_neutrality_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 361
+},
+{
+"full": "Becoming.Model.connection_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 385
+},
+": let v0"
+],
+[
+{
+"full": "Becoming.Lapse.carried",
+"module": "Becoming.Order",
+"line": 968
+},
+{
+"full": "Becoming.Cascade.carries",
+"module": "Becoming.Reserve",
+"line": 870
+},
+{
+"full": "Becoming.ShortCascade.carries",
+"module": "Becoming.Reserve",
+"line": 912
+},
+": Carries reserve"
+],
+[
+{
+"full": "Becoming.Trickle.sides_distinct",
+"module": "Becoming.Resolution",
+"line": 2193
+},
+{
+"full": "Becoming.SprayShuttle.sides_distinct",
+"module": "Becoming.Roles",
+"line": 1477
+},
+": Distinct sides"
+],
+[
+{
+"full": "Becoming.Revising.determined",
+"module": "Becoming.Revision",
+"line": 171
+},
+{
+"full": "Becoming.Twins.one_determined",
+"module": "Becoming.Unfolding",
+"line": 394
+},
+": Determined P"
+],
+[
+{
+"full": "Becoming.Transfer.dependent",
+"module": "Becoming.Admission",
+"line": 774
+},
+{
+"full": "Becoming.Exceeding.dependent",
+"module": "Becoming.Continuation",
+"line": 530
+},
+{
+"full": "Becoming.Alone.dependent",
+"module": "Becoming.Continuation",
+"line": 594
+},
+{
+"full": "Becoming.Downstream.dependent",
+"module": "Becoming.Continuation",
+"line": 681
+},
+{
+"full": "Becoming.Mortal.dependent",
+"module": "Becoming.Continuation",
+"line": 766
+},
+{
+"full": "Becoming.Clearing.dependent",
+"module": "Becoming.Continuation",
+"line": 919
+},
+{
+"full": "Becoming.Drowsy.dependent",
+"module": "Becoming.Descent",
+"line": 357
+},
+{
+"full": "Becoming.Rooted.dependent",
+"module": "Becoming.Dissipation",
+"line": 1104
+},
+{
+"full": "Becoming.Drawdown.dependent",
+"module": "Becoming.Evolution",
+"line": 421
+},
+{
+"full": "Becoming.Slack.dependent",
+"module": "Becoming.Evolution",
+"line": 519
+},
+{
+"full": "Becoming.Excluding.dependent",
+"module": "Becoming.Exclusion",
+"line": 268
+},
+{
+"full": "Becoming.Sharing.dependent",
+"module": "Becoming.Exclusion",
+"line": 343
+},
+{
+"full": "Becoming.Seeker.dependent",
+"module": "Becoming.Exhaustion",
+"line": 237
+},
+{
+"full": "Becoming.Trophic.dependent",
+"module": "Becoming.Feedback",
+"line": 979
+},
+{
+"full": "Becoming.Trophic.responsive_dependent",
+"module": "Becoming.Feedback",
+"line": 1017
+},
+{
+"full": "Becoming.Clearing.spared_dependent",
+"module": "Becoming.Feedback",
+"line": 1390
+},
+{
+"full": "Becoming.Provision.dependent",
+"module": "Becoming.Feeding",
+"line": 526
+},
+{
+"full": "Becoming.Dormancy.dependent",
+"module": "Becoming.Identity",
+"line": 2038
+},
+{
+"full": "Becoming.Overshoot.dependent",
+"module": "Becoming.Interdependence",
+"line": 374
+},
+{
+"full": "Becoming.Mixed.dependent",
+"module": "Becoming.Metaethics",
+"line": 346
+},
+{
+"full": "Becoming.Crossing.dependent",
+"module": "Becoming.Order",
+"line": 1847
+},
+{
+"full": "Becoming.Race.dependent",
+"module": "Becoming.RelativePosition",
+"line": 389
+},
+{
+"full": "Becoming.Restored.dependent",
+"module": "Becoming.RelativePosition",
+"line": 526
+},
+{
+"full": "Becoming.Famine.transformed_dependent",
+"module": "Becoming.Reserve",
+"line": 748
+},
+{
+"full": "Becoming.Circulation.dependent",
+"module": "Becoming.Resolution",
+"line": 1686
+},
+{
+"full": "Becoming.Loop.dependent",
+"module": "Becoming.Response",
+"line": 587
+},
+{
+"full": "Becoming.Loop.quiet_dependent",
+"module": "Becoming.Response",
+"line": 596
+},
+{
+"full": "Becoming.Mutualism.dependent",
+"module": "Becoming.Roles",
+"line": 773
+},
+{
+"full": "Becoming.Predation.dependent",
+"module": "Becoming.Roles",
+"line": 846
+},
+{
+"full": "Becoming.Wilting.dependent",
+"module": "Becoming.Roles",
+"line": 915
+},
+{
+"full": "Becoming.Shuttle.dependent",
+"module": "Becoming.Roles",
+"line": 1247
+},
+{
+"full": "Becoming.Throughput.dependent",
+"module": "Becoming.Roles",
+"line": 1331
+},
+{
+"full": "Becoming.SprayShuttle.dependent",
+"module": "Becoming.Roles",
+"line": 1507
+},
+{
+"full": "Becoming.World.grazing_dependent",
+"module": "Becoming.Space",
+"line": 808
+},
+{
+"full": "Becoming.Prey.dependent",
+"module": "Becoming.Testing",
+"line": 1227
+},
+{
+"full": "Becoming.TwoGivers.dependent",
+"module": "Becoming.Transmission",
+"line": 860
+},
+": Dependent"
+],
+[
+{
+"full": "Becoming.Clearing.dissipative",
+"module": "Becoming.Continuation",
+"line": 932
+},
+{
+"full": "Becoming.Frontier.dissipative",
+"module": "Becoming.Dissipation",
+"line": 947
+},
+{
+"full": "Becoming.Lone.dissipative",
+"module": "Becoming.Dissipation",
+"line": 1182
+},
+{
+"full": "Becoming.Spray.dissipative",
+"module": "Becoming.Dissipation",
+"line": 1322
+},
+{
+"full": "Becoming.ExchangeLaw.still_dissipative",
+"module": "Becoming.ExchangePremises",
+"line": 357
+},
+{
+"full": "Becoming.Doubled.dissipative",
+"module": "Becoming.Listing",
+"line": 572
+},
+{
+"full": "Becoming.World.novel_dissipative",
+"module": "Becoming.Premises",
+"line": 719
+},
+{
+"full": "Becoming.World.hatch_dissipative",
+"module": "Becoming.Premises",
+"line": 1006
+},
+{
+"full": "Becoming.World.finiteHatch_dissipative",
+"module": "Becoming.Premises",
+"line": 1138
+},
+{
+"full": "Becoming.Circulation.dissipative",
+"module": "Becoming.Resolution",
+"line": 1680
+},
+{
+"full": "Becoming.Emission.dissipative",
+"module": "Becoming.Resolution",
+"line": 1863
+},
+{
+"full": "Becoming.Alternation.dissipative",
+"module": "Becoming.Resolution",
+"line": 2005
+},
+{
+"full": "Becoming.Trickle.dissipative",
+"module": "Becoming.Resolution",
+"line": 2281
+},
+{
+"full": "Becoming.Throughput.dissipative",
+"module": "Becoming.Roles",
+"line": 1367
+},
+{
+"full": "Becoming.SprayShuttle.dissipative",
+"module": "Becoming.Roles",
+"line": 1516
+},
+{
+"full": "Becoming.Successive.dissipative",
+"module": "Becoming.Succession",
+"line": 77
+},
+": Dissipative"
+],
+[
+{
+"full": "Becoming.Loop.replyLaw_nonanticipating",
+"module": "Becoming.Counterfactual",
+"line": 749
+},
+{
+"full": "Becoming.ExchangeLaw.sprouting_nonanticipating",
+"module": "Becoming.ExchangePremises",
+"line": 443
+},
+": Nonanticipating"
+],
+[
+{
+"full": "Becoming.Passing.embodied",
+"module": "Becoming.Entropy",
+"line": 1812
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_embodied",
+"module": "Becoming.ExchangePremises",
+"line": 379
+},
+{
+"full": "Becoming.Emission.embodied",
+"module": "Becoming.Resolution",
+"line": 1818
+},
+{
+"full": "Becoming.Alternation.embodied",
+"module": "Becoming.Resolution",
+"line": 1977
+},
+{
+"full": "Becoming.Trickle.embodied",
+"module": "Becoming.Resolution",
+"line": 2187
+},
+": Embodied"
+],
+[
+{
+"full": "Becoming.Passing.counted",
+"module": "Becoming.Entropy",
+"line": 1818
+},
+{
+"full": "Becoming.ExchangeLaw.spreading_counted",
+"module": "Becoming.ExchangePremises",
+"line": 544
+},
+{
+"full": "Becoming.World.hatch_counted",
+"module": "Becoming.Premises",
+"line": 1019
+},
+{
+"full": "Becoming.Emission.counted",
+"module": "Becoming.Resolution",
+"line": 1815
+},
+{
+"full": "Becoming.Alternation.counted",
+"module": "Becoming.Resolution",
+"line": 1974
+},
+{
+"full": "Becoming.Trickle.counted",
+"module": "Becoming.Resolution",
+"line": 2184
+},
+": Counted"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.still_balanced",
+"module": "Becoming.ExchangePremises",
+"line": 341
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_balanced",
+"module": "Becoming.ExchangePremises",
+"line": 344
+},
+{
+"full": "Becoming.World.hatch_balanced",
+"module": "Becoming.Premises",
+"line": 994
+},
+{
+"full": "Becoming.World.finiteHatch_balanced",
+"module": "Becoming.Premises",
+"line": 1130
+},
+{
+"full": "Becoming.World.withRest_balanced",
+"module": "Becoming.Reading",
+"line": 393
+},
+{
+"full": "Becoming.World.grazing_balanced",
+"module": "Becoming.Space",
+"line": 777
+},
+": Balanced"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.still_transmitting",
+"module": "Becoming.ExchangePremises",
+"line": 392
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_transmitting",
+"module": "Becoming.ExchangePremises",
+"line": 395
+},
+{
+"full": "Becoming.Delay.fine_transmitting",
+"module": "Becoming.Sampling",
+"line": 959
+},
+": Transmitting"
+],
+[
+{
+"full": "Becoming.Hexagram.order_nodup",
+"module": "Becoming.HexagramLaws",
+"line": 127
+},
+{
+"full": "Becoming.PositiveGround.positiveDomain_nodup",
+"module": "Becoming.PositiveGround",
+"line": 297
+},
+{
+"full": "Becoming.PositiveGround.fullDomain_nodup",
+"module": "Becoming.PositiveGround",
+"line": 302
+},
+": Nodup"
+],
+[
+{
+"full": "Becoming.Flow.byOccurrence_once",
+"module": "Becoming.Listing",
+"line": 910
+},
+{
+"full": "Becoming.Strobe.once",
+"module": "Becoming.Sampling",
+"line": 866
+},
+": Once"
+],
+[
+{
+"full": "Becoming.World.strained_finite",
+"module": "Becoming.Premises",
+"line": 315
+},
+{
+"full": "Becoming.World.morsel_finite",
+"module": "Becoming.Premises",
+"line": 487
+},
+{
+"full": "Becoming.World.lossless_finite",
+"module": "Becoming.Premises",
+"line": 549
+},
+{
+"full": "Becoming.World.latent_finite",
+"module": "Becoming.Premises",
+"line": 594
+},
+{
+"full": "Becoming.World.novel_finite",
+"module": "Becoming.Premises",
+"line": 707
+},
+{
+"full": "Becoming.World.finiteHatch_finite",
+"module": "Becoming.Premises",
+"line": 1124
+},
+{
+"full": "Becoming.World.shuttle_finite",
+"module": "Becoming.Space",
+"line": 356
+},
+{
+"full": "Becoming.World.selfDrawing_finite",
+"module": "Becoming.Space",
+"line": 415
+},
+{
+"full": "Becoming.World.mutualism_finite",
+"module": "Becoming.Space",
+"line": 438
+},
+{
+"full": "Becoming.World.drawdown_finite",
+"module": "Becoming.Space",
+"line": 465
+},
+{
+"full": "Becoming.World.grazing_finite",
+"module": "Becoming.Space",
+"line": 754
+},
+": Finite"
+],
+[
+{
+"full": "Becoming.World.withRest_acting",
+"module": "Becoming.Reading",
+"line": 399
+},
+{
+"full": "Becoming.World.grazing_acting",
+"module": "Becoming.Space",
+"line": 789
+},
+": Acting"
+],
+[
+{
+"full": "Becoming.World.withRest_taking",
+"module": "Becoming.Reading",
+"line": 403
+},
+{
+"full": "Becoming.World.grazing_taking",
+"module": "Becoming.Space",
+"line": 796
+},
+": Taking"
+],
+[
+{
+"full": "Becoming.Emission.arising_recurs",
+"module": "Becoming.Resolution",
+"line": 1883
+},
+{
+"full": "Becoming.Alternation.arising_recurs",
+"module": "Becoming.Resolution",
+"line": 2021
+},
+{
+"full": "Becoming.World.shuttle_arising",
+"module": "Becoming.Space",
+"line": 359
+},
+{
+"full": "Becoming.World.grazing_arising",
+"module": "Becoming.Space",
+"line": 773
+},
+": ArisingRecurs"
+]
+],
+"shape": [
+[
+{
+"full": "Becoming.HistorySums.possibility_exactly_trace",
+"module": "Becoming.HistorySums",
+"line": 745
+},
+{
+"full": "Becoming.RouteTraces.possibility_within_trace",
+"module": "Becoming.RouteTraces",
+"line": 65
+},
+"( v0 : v1 v2 v3 ) ( v4 v5 : v2 → v3 → v2 → Nat ) ( v6 : ∀ v7 v8 v9 , v10 ( v4 v7 v8 v9 + v5 v7 v8 v9 ) = v11 ↔ v12 v7 v8 v9 ) ( v13 : List v3 ) ( v14 : List v2 ) ( v15 : ∀ v8 , v8 ∈ v13 ) ( v16 : ∀ v7 , v7 ∈ v14 ) ( v17 : v2 → Nat ) ( v18 v19 : Nat ) ( v7 : v2 ) ( v20 : v21 ( fun v7 v8 v9 = > v10 ( v4 v7 v8 v9 ) ) ( fun v7 v8 v9 = > v10 ( v5 v7 v8 v9 ) ) v13 v14 ( fun v7 = > v10 ( v17 v7 ) ) v18 v19 v7 = v11 ) : ∃ v22 v9 , length = v19 ∧ v23 v0 v7 v22 v9 ∧ v10 ( v17 v9 ) = v11"
+],
+[
+{
+"full": "Becoming.HistorySums.exactly_trace",
+"module": "Becoming.HistorySums",
+"line": 734
+},
+{
+"full": "Becoming.RouteTraces.within_trace",
+"module": "Becoming.RouteTraces",
+"line": 52
+},
+"( v0 : v1 v2 v3 ) ( v4 v5 : v2 → v3 → v2 → Nat ) ( v6 : ∀ v7 v8 v9 , v10 ( v4 v7 v8 v9 + v5 v7 v8 v9 ) = v11 ↔ v12 v7 v8 v9 ) ( v13 : List v3 ) ( v14 : List v2 ) ( v15 : ∀ v8 , v8 ∈ v13 ) ( v16 : ∀ v7 , v7 ∈ v14 ) ( v17 : v2 → Nat ) ( v18 v19 : Nat ) ( v7 : v2 ) ( v20 : v10 ( v21 v4 v5 v13 v14 v17 v18 v19 v7 ) = v11 ) : ∃ v22 v9 , length = v19 ∧ v23 v0 v7 v22 v9 ∧ v10 ( v17 v9 ) = v11"
+],
+[
+{
+"full": "Becoming.Dependence.determined_dichotomy",
+"module": "Becoming.Joint",
+"line": 148
+},
+{
+"full": "Becoming.Dependence.dichotomy_of_determined",
+"module": "Becoming.Likeness",
+"line": 2425
+},
+"{ v0 : v1 v2 v3 } ( v4 : v5 v0 ) { v6 : v7 → v2 → v2 } { v8 : v7 } { v9 : v2 } { v10 : v3 } { v11 : v7 } { v12 : v13 } ( v14 : v15 v0 v9 v10 v11 v12 ) { v16 : v2 } ( v17 : v18 ( v6 v8 v9 ) v10 v16 ) ( v19 : v20 ( v6 v8 v9 ) v11 v12 ) ( v21 : v22 ( v6 v8 v9 ) v11 v12 ≤ v23 ( v6 v8 v9 ) v12 ) : v24 v0 v6 v8 v9 v10 v11 v12 ∨ v15 v0 ( v6 v8 v9 ) v10 v11 v12"
+],
+[
+{
+"full": "Becoming.Flow.unselected_beyond_coupling_all",
+"module": "Becoming.Selection",
+"line": 339
+},
+{
+"full": "Becoming.Flow.unselected_beyond_coupling_all_of_pool",
+"module": "Becoming.SelectionPool",
+"line": 277
+},
+"{ v0 : Nat → v1 → Nat } ( v2 : v3 v4 v5 v0 ) { v6 : v7 } ( v8 : ∀ v9 v10 v11 , v12 v5 v13 v6 v10 → v14 v13 v10 v11 → v15 v5 [ v11 ] v9 ) ( v16 : ∀ v17 , v4 v17 = v18 → ¬ v12 v5 v13 v6 v17 ) { v19 : v7 → Prop } ( v20 : ∀ v10 , v19 v10 → v12 v5 v13 v6 v10 ) { v9 : Nat } ( v21 : v22 v13 v19 v9 v23 ) : v23 v24 ↔ v23 v0"
+],
+[
+{
+"full": "Becoming.Diagonal.unfolding_open",
+"module": "Becoming.Diagonal",
+"line": 270
+},
+{
+"full": "Becoming.DiagonalRuns.unfoldingRun_open",
+"module": "Becoming.DiagonalRuns",
+"line": 132
+},
+"( v0 : Nat ) ( v1 : Nat → Nat → Bool ) : ( ∀ v2 , ¬ v3 Eq ( v4 v2 ) ( v5 ( fun v6 = > ! v6 ) ( v4 v2 ) ) ) ∧ ( ∀ v2 v7 , ¬ ∀ v8 , v3 Eq ( v4 ( v2 + 1 + v7 ) ) v8 → v3 Eq ( v4 v2 ) v8 ) ∧ ¬ ∀ v2 , ∃ v9 , v9 < v0 ∧ ∀ v10 , v1 v9 v10 = v5 ( fun v6 = > ! v6 ) ( v4 v2 ) v10"
+],
+[
+{
+"full": "Becoming.Weights.Hom.exactly",
+"module": "Becoming.HistorySums",
+"line": 330
+},
+{
+"full": "Becoming.Weights.Hom.within",
+"module": "Becoming.Routes",
+"line": 118
+},
+"( v0 : v1 v2 v3 ) ( v4 v5 : v6 → v7 → v6 → v8 ) ( v9 : List v7 ) ( v10 : List v6 ) ( v11 : v6 → v8 ) : ∀ v12 v13 v14 , map ( v15 v4 v5 v9 v10 v11 v12 v13 v14 ) = v15 ( fun v14 v16 v17 = > map ( v4 v14 v16 v17 ) ) ( fun v14 v16 v17 = > map ( v5 v14 v16 v17 ) ) v9 v10 ( fun v14 = > map ( v11 v14 ) ) v12 v13 v14"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.ReadsInto.restrict",
+"module": "Becoming.Observation",
+"line": 252
+},
+{
+"full": "Becoming.ExchangeLaw.ReadsAt.restrict",
+"module": "Becoming.Thresholds",
+"line": 146
+},
+"( v0 : v1 v2 v3 ) { v4 : Nat → v5 → v6 → Nat → v6 → Nat } ( v7 : ∀ v8 v9 v10 v11 v12 , v2 v9 = v13 → v11 ≤ v8 → v14 v8 v9 v10 v11 v12 ( v4 v8 v9 v10 v11 v12 ) ) : ∀ v8 v9 v10 v11 v12 , v2 v9 = v13 → v11 ≤ v8 → v14 v8 v9 v10 v11 v12 ( v15 v3 v4 v8 v9 v10 v11 v12 )"
+],
+[
+{
+"full": "Becoming.Run.law_through_dependence_iff",
+"module": "Becoming.LawThroughChangingCoupling",
+"line": 180
+},
+{
+"full": "Becoming.Run.law_through_coupling_iff",
+"module": "Becoming.LawThroughCoupling",
+"line": 186
+},
+"( v0 : v1 v2 v3 v4 ) ( v5 : v6 v7 ) ( v8 : v3 → v4 → Prop ) ( v9 : v3 ) ( v10 : Nat ) : ( ∃ v11 : v12 v2 v13 , v14 v11 id ( v15 v8 v9 ) ∧ ∀ v16 , v16 < v10 → v17 ( v18 v16 ) ( v19 v16 ) ( v18 ( v16 + 1 ) ) ) ↔ v20 ( v15 v8 v9 ) v10"
+],
+[
+{
+"full": "Becoming.JointBisimulation.comp",
+"module": "Becoming.Composition",
+"line": 265
+},
+{
+"full": "Becoming.Bisimulation.comp",
+"module": "Becoming.Labelled",
+"line": 320
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v1 v8 v3 v4 } { v9 : v2 → v6 → Prop } { v10 : v6 → v8 → Prop } ( v11 : v12 v0 v5 v9 ) ( v13 : v12 v5 v7 v10 ) : v12 v0 v7 fun v14 v15 = > ∃ v16 , v9 v14 v16 ∧ v10 v16 v15"
+],
+[
+{
+"full": "Becoming.carriedWithin_exact_of_no_loop",
+"module": "Becoming.Loops",
+"line": 463
+},
+{
+"full": "Becoming.Remainder.carriedWithin_exact_of_no_loop",
+"module": "Becoming.Remainder",
+"line": 826
+},
+"( v0 : ∀ v1 , v1 ∈ v2 ) { v1 : v3 } ( v4 : ∀ v5 , v6 v2 v7 v8 v9 v5 v1 → ¬ v10 v2 v7 v8 v9 v5 ) { v11 : Nat } ( v12 : length ≤ v11 + 1 ) ( v13 : Nat ) : v14 v2 v7 v15 v8 v9 v16 v11 v13 v1 = v17 v2 v7 v15 v8 v9 v16 v13 v1"
+],
+[
+{
+"full": "Becoming.Ranking.whole_run_ranks",
+"module": "Becoming.Ranking",
+"line": 276
+},
+{
+"full": "Becoming.Ranking.possible_ranks",
+"module": "Becoming.Relevance",
+"line": 336
+},
+"( v0 : v1 ) ( v2 : 0 < v3 ) ( v4 : v5 ≤ v3 ) ( v6 : v3 ≤ v7 ) { v8 : Nat } ( v9 : ∀ v10 , v8 ≤ v10 → v11 + v12 v10 < v13 v10 ) { v14 : v15 → v15 → Prop } ( v16 : v17 ( v18 ( v19 v0 ) ) v14 ) : v14 . v20 . v21"
+],
+[
+{
+"full": "Becoming.Branching.trace_positions",
+"module": "Becoming.Branching",
+"line": 422
+},
+{
+"full": "Becoming.Settling.path_seq",
+"module": "Becoming.Settling",
+"line": 248
+},
+"( v0 : v1 ) { v2 v3 : v4 } { v5 : List v1 } ( v6 : v7 v8 v2 v5 v3 ) : ∃ v9 : Nat → v4 , ∃ v10 : Nat → v1 , v9 0 = v2 ∧ v9 length = v3 ∧ ∀ v11 , v11 < length → v12 ( v9 v11 ) ( v10 v11 ) ( v9 ( v11 + 1 ) )"
+],
+[
+{
+"full": "Becoming.OutcomesListed.alike_iff_sameBranchingTests",
+"module": "Becoming.Likeness",
+"line": 1727
+},
+{
+"full": "Becoming.ListedOutcomeFrames.alike_iff_sameBranchingTests_of_nowhereDecided",
+"module": "Becoming.ListedOutcomeFrames",
+"line": 59
+},
+"( v0 : v1 ) ( v2 : ∃ v3 : List v4 , ∀ v5 , v5 ∈ v3 ) ( v6 : ∃ v3 : List v7 , ∀ v8 , v8 ∈ v3 ) ( v9 : v10 v11 ) ( v12 : v10 v13 ) { v14 : v15 } { v16 : v17 } : v18 v11 v13 v14 v16 ↔ v19 v11 v13 v14 v16"
+],
+[
+{
+"full": "Becoming.JointAlike.step",
+"module": "Becoming.Composition",
+"line": 306
+},
+{
+"full": "Becoming.Alike.step",
+"module": "Becoming.Labelled",
+"line": 357
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v2 } { v8 : v6 } ( v9 : v10 v0 v5 v7 v8 ) { v11 : v3 } { v12 : v2 } ( v13 : v13 v7 v11 v12 ) : ∃ v14 , v13 v8 v11 v14 ∧ v10 v0 v5 v12 v14"
+],
+[
+{
+"full": "Becoming.SameBranchingTests.inverse_functional",
+"module": "Becoming.BranchingCorrespondence",
+"line": 62
+},
+{
+"full": "Becoming.SameJointTests.inverse_functional",
+"module": "Becoming.JointCorrespondence",
+"line": 78
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } ( v7 : ∀ v8 v9 , v10 v0 v0 v8 v9 → v8 = v9 ) { v8 v9 : v2 } { v11 : v6 } ( v12 : v10 v0 v5 v8 v11 ) ( v13 : v10 v0 v5 v9 v11 ) : v8 = v9"
+],
+[
+{
+"full": "Becoming.SameJointTests.functional",
+"module": "Becoming.Composition",
+"line": 174
+},
+{
+"full": "Becoming.JointAlike.functional",
+"module": "Becoming.Composition",
+"line": 363
+},
+{
+"full": "Becoming.Alike.functional",
+"module": "Becoming.Likeness",
+"line": 621
+},
+{
+"full": "Becoming.SameBranchingTests.functional",
+"module": "Becoming.Likeness",
+"line": 628
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } ( v7 : ∀ v8 v9 , v10 v5 v5 v8 v9 → v8 = v9 ) { v11 : v2 } { v8 v9 : v6 } ( v12 : v10 v0 v5 v11 v8 ) ( v13 : v10 v0 v5 v11 v9 ) : v8 = v9"
+],
+[
+{
+"full": "Becoming.Joining.slots_alike",
+"module": "Becoming.Joining",
+"line": 560
+},
+{
+"full": "Becoming.Joining.slots_sameBranchingTests",
+"module": "Becoming.JoiningRoles",
+"line": 69
+},
+"{ v0 : v1 v2 } { v3 : v1 v4 } { v5 : v6 v0 } { v7 : v6 v3 } ( v8 : v9 v10 v10 ( . inr v5 ) ( . inr v7 ) ) ( v11 : v12 ) : v9 v10 v10 ( . inl ( at v11 ) ) ( . inl ( at v11 ) )"
+],
+[
+{
+"full": "Becoming.boundaryInvariant_iff_all",
+"module": "Becoming.Boundaries",
+"line": 381
+},
+{
+"full": "Becoming.presupposition_iff_all_of_invariant",
+"module": "Becoming.BoundaryWorlds",
+"line": 42
+},
+"{ v0 : ( v1 → Prop ) → Prop } ( v2 : v0 fun v3 = > True ) { v4 : v5 → Nat → v1 → Prop } { v6 : v5 } ( v7 : v8 v0 ( v9 v4 v6 ) ) : v10 v0 ( v9 v4 v6 ) ↔ ∀ v11 v12 , v4 v6 v11 v12"
+],
+[
+{
+"full": "Becoming.World.queue_premised",
+"module": "Becoming.Counting",
+"line": 291
+},
+{
+"full": "Becoming.World.embodiedQueue_premised",
+"module": "Becoming.Counting",
+"line": 300
+},
+{
+"full": "Becoming.World.sourcedQueue_holds",
+"module": "Becoming.Standing",
+"line": 172
+},
+"( v0 v1 : Nat → Nat ) : ( v2 v0 v1 ) . v3 ∧ ( v2 v0 v1 ) . v4 ∧ ( v2 v0 v1 ) . v5 ∧ ( v2 v0 v1 ) . v6 ∧ ( v2 v0 v1 ) . v7 ∧ ( v2 v0 v1 ) . v8 ∧ ( v2 v0 v1 ) . v9"
+],
+[
+{
+"full": "Becoming.SameBranchingTests.trans",
+"module": "Becoming.BranchingCorrespondence",
+"line": 55
+},
+{
+"full": "Becoming.SameJointTests.trans",
+"module": "Becoming.Composition",
+"line": 167
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v1 v8 v3 v4 } { v9 : v2 } { v10 : v6 } { v11 : v8 } ( v12 : v13 v0 v5 v9 v10 ) ( v14 : v13 v5 v7 v10 v11 ) : v13 v0 v7 v9 v11"
+],
+[
+{
+"full": "Becoming.Ranking.whole_run_extends",
+"module": "Becoming.Ranking",
+"line": 261
+},
+{
+"full": "Becoming.Ranking.possible_extends",
+"module": "Becoming.Relevance",
+"line": 324
+},
+"( v0 : v1 ) ( v2 : 0 < v3 ) ( v4 : v5 ≤ v3 ) ( v6 : v3 ≤ v7 ) { v8 : Nat } ( v9 : ∀ v10 , v8 ≤ v10 → v11 + v12 v10 < v13 v10 ) : v14 ( v15 ( v16 v0 ) ) . v17 . v18"
+],
+[
+{
+"full": "Becoming.whole_falls_stop_unrefuted",
+"module": "Becoming.LeastLoss",
+"line": 429
+},
+{
+"full": "Becoming.falls_stop_unrefuted",
+"module": "Becoming.Space",
+"line": 149
+},
+"{ v0 : Nat → Nat } { v1 : Nat } ( v2 : ∀ v3 , v1 ≤ v3 → v0 ( v3 + 1 ) ≤ v0 v3 ) : ¬ ∀ v4 , v1 ≤ v4 → ¬ ¬ ∃ v5 , v4 ≤ v5 ∧ v0 ( v5 + 1 ) < v0 v5"
+],
+[
+{
+"full": "Becoming.JointAlike.trans",
+"module": "Becoming.Composition",
+"line": 290
+},
+{
+"full": "Becoming.Alike.trans",
+"module": "Becoming.Labelled",
+"line": 345
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v1 v8 v3 v4 } { v9 : v2 } { v10 : v6 } { v11 : v8 } : v12 v0 v5 v9 v10 → v12 v5 v7 v10 v11 → v12 v0 v7 v9 v11"
+],
+[
+{
+"full": "Becoming.Flow.rise_lowers_on",
+"module": "Becoming.Dissipation",
+"line": 593
+},
+{
+"full": "Becoming.Flow.standing_lowers_on",
+"module": "Becoming.Dissipation",
+"line": 599
+},
+{
+"full": "Becoming.Flow.fall_lowers_on",
+"module": "Becoming.Openness",
+"line": 237
+},
+"( v0 : v1 v2 ) { v3 : List v4 } { v5 : Nat } ( v6 : v7 v3 v5 ) { v8 : v4 } ( v9 : v8 ∈ v3 ) ( v10 : v11 v5 v8 ) : v12 v3 ( v5 + 1 ) < v12 v3 v5"
+],
+[
+{
+"full": "Becoming.World.enclosed_change_bound_iff_counted",
+"module": "Becoming.CensusCounts",
+"line": 560
+},
+{
+"full": "Becoming.World.enclosed_standing_bound_iff",
+"module": "Becoming.Standing",
+"line": 463
+},
+"( v0 : v1 → Bool ) : ( ∀ v2 : v3 , v4 v0 → ( ∃ v5 , ∀ v6 , v5 ≤ v6 → v7 v6 ) → v8 fun v9 v10 v11 = > ∃ v5 v12 , v13 v5 v12 v9 v10 v11 ) ↔ v14 v0"
+],
+[
+{
+"full": "Becoming.falls_not_recurring_from_floor",
+"module": "Becoming.Change",
+"line": 321
+},
+{
+"full": "Becoming.whole_falls_not_recurring",
+"module": "Becoming.LeastLoss",
+"line": 421
+},
+{
+"full": "Becoming.falls_not_recurring",
+"module": "Becoming.Renewal",
+"line": 58
+},
+"( v0 : Nat → Nat ) ( v1 : Nat ) ( v2 : ∀ v3 , v1 ≤ v3 → v0 ( v3 + 1 ) ≤ v0 v3 ) : ¬ ∀ v4 , ∃ v3 , v4 ≤ v3 ∧ v0 ( v3 + 1 ) < v0 v3"
+],
+[
+{
+"full": "Becoming.JointAlike.holds_iff",
+"module": "Becoming.Composition",
+"line": 328
+},
+{
+"full": "Becoming.Alike.holds_iff",
+"module": "Becoming.Likeness",
+"line": 596
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } : ∀ ( v7 : v8 v3 v4 ) { v9 : v2 } { v10 : v6 } , v11 v0 v5 v9 v10 → ( v12 v0 v9 v7 ↔ v12 v5 v10 v7 )"
+],
+[
+{
+"full": "Becoming.JointAlike.realized",
+"module": "Becoming.Composition",
+"line": 300
+},
+{
+"full": "Becoming.Alike.realized",
+"module": "Becoming.Labelled",
+"line": 350
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v2 } { v8 : v6 } ( v9 : v10 v0 v5 v7 v8 ) ( v11 : v4 ) : v12 v7 v11 ↔ v12 v8 v11"
+],
+[
+{
+"full": "Becoming.balance_not_tally",
+"module": "Becoming.Population",
+"line": 737
+},
+{
+"full": "Becoming.TallyWorlds.balance_not_shown",
+"module": "Becoming.TallyWorlds",
+"line": 60
+},
+": v0 ( fun v1 = > 0 ) ( fun v1 = > 1 ) ( fun v1 = > 1 ) ∧ ¬ v2 ( fun v1 = > 0 ) ( fun v1 = > 1 ) ( fun v1 = > 1 )"
+],
+[
+{
+"full": "Becoming.couples_before_mono",
+"module": "Becoming.Closing",
+"line": 135
+},
+{
+"full": "Becoming.Upstream.before_mono",
+"module": "Becoming.Observation",
+"line": 106
+},
+"{ v0 v1 : Nat } ( v2 : v0 ≤ v1 ) { v3 v4 : v5 } ( v6 : v7 v8 v9 ( v10 v0 v11 ) v12 v3 v4 ) : v7 v8 v9 ( v10 v1 v11 ) v12 v3 v4"
+],
+[
+{
+"full": "Becoming.World.finite_counting_binds_iff_counted",
+"module": "Becoming.CensusCounts",
+"line": 619
+},
+{
+"full": "Becoming.World.finite_standing_binds_iff",
+"module": "Becoming.Standing",
+"line": 598
+},
+"( v0 : v1 → Bool ) : ( ∀ v2 : v3 , v4 v0 → v5 → v6 fun v7 v8 v9 = > ∀ v10 , 0 < v9 v10 → 0 < v7 v10 ) ↔ v11 v0 ∨ v12 v0"
+],
+[
+{
+"full": "Becoming.JointBisimulation.converse",
+"module": "Becoming.Composition",
+"line": 259
+},
+{
+"full": "Becoming.Bisimulation.converse",
+"module": "Becoming.Labelled",
+"line": 314
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v2 → v6 → Prop } ( v8 : v9 v0 v5 v7 ) : v9 v5 v0 fun v10 v11 = > v7 v11 v10"
+],
+[
+{
+"full": "Becoming.alike_of_sameBranchingTests_outcomes_iff",
+"module": "Becoming.Likeness",
+"line": 2350
+},
+{
+"full": "Becoming.ListedOutcomeFrames.sameBranchingTests_fix_iff_llpoForDecided",
+"module": "Becoming.ListedOutcomeFrames",
+"line": 38
+},
+": ( ∀ ( v0 : Type ) ( v1 v2 : v3 v0 Unit Empty ) ( v4 v5 : v0 ) , v6 v1 → v6 v2 → v7 v1 v2 v4 v5 → v8 v1 v2 v4 v5 ) ↔ v9"
+],
+[
+{
+"full": "Becoming.tailLaw_differs",
+"module": "Becoming.Sensitivity",
+"line": 341
+},
+{
+"full": "Becoming.neverLaw_differs",
+"module": "Becoming.Tail",
+"line": 395
+},
+"( v0 v1 : Nat ) : ( v2 v3 ) . v4 v0 ( ) ( fun v5 v5 = > 0 ) v1 ≠ ( v2 v3 ) . v4 v0 ( ) ( fun v5 v5 = > 1 ) v1"
+],
+[
+{
+"full": "Becoming.preimage_of_mem_map",
+"module": "Becoming.Entropy",
+"line": 875
+},
+{
+"full": "Becoming.Net.exists_of_mem_map",
+"module": "Becoming.PlaceTransitionNets",
+"line": 608
+},
+"{ v0 v1 : Type } { v2 : v0 → v1 } { v3 : v1 } : ∀ { v4 : List v0 } , v3 ∈ map v2 → ∃ v5 , v5 ∈ v4 ∧ v2 v5 = v3"
+],
+[
+{
+"full": "Becoming.Loops.total_mul_const",
+"module": "Becoming.Loops",
+"line": 165
+},
+{
+"full": "Becoming.Routes.total_mul_right",
+"module": "Becoming.Routes",
+"line": 336
+},
+"{ v0 : Type } ( v1 : v0 → Nat ) ( v2 : Nat ) ( v3 : List v0 ) : v4 v3 ( fun v5 = > v1 v5 * v2 ) = v4 v3 v1 * v2"
+],
+[
+{
+"full": "Becoming.distinct_append_apart",
+"module": "Becoming.OrderNormal",
+"line": 1119
+},
+{
+"full": "Becoming.Net.distinct_append'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 631
+},
+"{ v0 : Type } : ∀ { v1 v2 : List v0 } , v3 v1 → v3 v2 → ( ∀ v4 , v4 ∈ v1 → ¬ v4 ∈ v2 ) → v3 ( v1 + + v2 )"
+],
+[
+{
+"full": "Becoming.SameBranchingTests.symm",
+"module": "Becoming.BranchingCorrespondence",
+"line": 50
+},
+{
+"full": "Becoming.SameJointTests.symm",
+"module": "Becoming.Composition",
+"line": 162
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v2 } { v8 : v6 } ( v9 : v10 v0 v5 v7 v8 ) : v10 v5 v0 v8 v7"
+],
+[
+{
+"full": "Becoming.JointAlike.sameJointTests",
+"module": "Becoming.Composition",
+"line": 357
+},
+{
+"full": "Becoming.Alike.sameBranchingTests",
+"module": "Becoming.Likeness",
+"line": 615
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v2 } { v8 : v6 } ( v9 : v10 v0 v5 v7 v8 ) : v11 v0 v5 v7 v8"
+],
+[
+{
+"full": "Becoming.distinct_map",
+"module": "Becoming.Population",
+"line": 127
+},
+{
+"full": "Becoming.SituationTraces.distinct_map",
+"module": "Becoming.SituationTraces",
+"line": 67
+},
+"{ v0 : v1 → v2 } ( v3 : ∀ v4 v5 , v0 v4 = v0 v5 → v4 = v5 ) : ∀ { v6 : List v1 } , v7 v6 → v7 ( map v0 )"
+],
+[
+{
+"full": "Becoming.World.counting_binds_iff_counted",
+"module": "Becoming.CensusCounts",
+"line": 348
+},
+{
+"full": "Becoming.World.standing_binds_iff",
+"module": "Becoming.Standing",
+"line": 269
+},
+"( v0 : v1 → Bool ) : ( ∀ v2 : v3 , v4 v0 → v5 fun v6 v7 v8 = > ∀ v9 , 0 < v8 v9 → 0 < v6 v9 ) ↔ v10 v0"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.Nonanticipating.through_sensitive",
+"module": "Becoming.Counterfactual",
+"line": 537
+},
+{
+"full": "Becoming.ExchangeLaw.Nonanticipating.through_sensitive_of_every",
+"module": "Becoming.Sensitivity",
+"line": 207
+},
+"( v0 : v1 ) { v2 : List v3 } ( v4 : ∀ v5 , v5 ∈ v2 ) ( v6 : v7 v8 v3 ) ( v9 : v8 → Bool ) : v10 v6 v11 v9"
+],
+[
+{
+"full": "Becoming.World.finite_change_bound_iff_counted",
+"module": "Becoming.CensusCounts",
+"line": 646
+},
+{
+"full": "Becoming.World.finite_standing_bound_iff",
+"module": "Becoming.Standing",
+"line": 632
+},
+"( v0 : v1 → Bool ) : ( ∀ v2 : v3 , v4 v0 → v5 → v6 fun v7 v8 v9 = > ∃ v10 , v11 0 v10 v7 v8 v9 ) ↔ v12 v0"
+],
+[
+{
+"full": "Becoming.JointAlike.symm",
+"module": "Becoming.Composition",
+"line": 285
+},
+{
+"full": "Becoming.Alike.symm",
+"module": "Becoming.Labelled",
+"line": 340
+},
+"{ v0 : v1 v2 v3 v4 } { v5 : v1 v6 v3 v4 } { v7 : v2 } { v8 : v6 } : v9 v0 v5 v7 v8 → v9 v5 v0 v8 v7"
+],
+[
+{
+"full": "Becoming.Joining.fragment_not_alike_occurrence",
+"module": "Becoming.Joining",
+"line": 553
+},
+{
+"full": "Becoming.Joining.fragment_not_sameBranchingTests_occurrence",
+"module": "Becoming.JoiningRoles",
+"line": 76
+},
+"{ v0 : v1 v2 } { v3 : v1 v4 } ( v5 : v2 ) ( v6 : v7 v3 ) : ¬ v8 v9 v9 ( . inl v5 ) ( . inr v6 )"
+],
+[
+{
+"full": "Becoming.FinerTraces.of_mem_map",
+"module": "Becoming.FinerTraces",
+"line": 62
+},
+{
+"full": "Becoming.image_of_mem_map",
+"module": "Becoming.Gluing",
+"line": 157
+},
+{
+"full": "Becoming.LossMatching.mem_map_inv",
+"module": "Becoming.LossMatching",
+"line": 45
+},
+"{ v0 : v1 → v2 } { v3 : v2 } : ∀ { v4 : List v1 } , v3 ∈ map v0 → ∃ v5 , v5 ∈ v4 ∧ v0 v5 = v3"
+],
+[
+{
+"full": "Becoming.Hexagram.phases_no_free_frame",
+"module": "Becoming.HexagramPlaces",
+"line": 1067
+},
+{
+"full": "Becoming.Hexagram.oppositions_no_free_frame",
+"module": "Becoming.HexagramPlaces",
+"line": 1076
+},
+{
+"full": "Becoming.Hexagram.seams_no_free_frame",
+"module": "Becoming.HexagramPlaces",
+"line": 1085
+},
+{
+"full": "Becoming.Hexagram.between_no_free_frame",
+"module": "Becoming.HexagramSites",
+"line": 462
+},
+"{ v0 : Type } ( v1 : v2 v3 v0 ) : ¬ ∃ v4 : v5 v3 v0 ( Unit × Bool ) , v1 = v1 ∧ ( v6 v7 ) . v8 v4"
+],
+[
+{
+"full": "Becoming.Hexagram.all_congr",
+"module": "Becoming.HexagramSites",
+"line": 119
+},
+{
+"full": "Becoming.WitnessRefinementRuns.any_congr",
+"module": "Becoming.WitnessRefinementRuns",
+"line": 217
+},
+"{ v0 : Type } { v1 v2 : v0 → Bool } ( v3 : ∀ v4 , v1 v4 = v2 v4 ) : ∀ v5 : List v0 , v6 v1 = v6 v2"
+],
+[
+{
+"full": "Becoming.Ideals.Closed.same",
+"module": "Becoming.Ideals",
+"line": 337
+},
+{
+"full": "Becoming.Ideals.Open.same",
+"module": "Becoming.Verification",
+"line": 289
+},
+"{ v0 : v1 v2 → Prop } ( v3 : v4 v0 ) { v5 v6 : v1 v2 } ( v7 : v0 v5 ) ( v8 : v9 v5 v6 ) : v0 v6"
+],
+[
+{
+"full": "Becoming.distinct_append",
+"module": "Becoming.OneStep",
+"line": 134
+},
+{
+"full": "Becoming.SituationTraces.distinct_append",
+"module": "Becoming.SituationTraces",
+"line": 58
+},
+": ∀ { v0 v1 : List v2 } , v3 v0 → v3 v1 → ( ∀ v4 , v4 ∈ v0 → ¬ v4 ∈ v1 ) → v3 ( v0 + + v1 )"
+],
+[
+{
+"full": "Becoming.vanishIndicator_eq_of_agree",
+"module": "Becoming.Sensitivity",
+"line": 296
+},
+{
+"full": "Becoming.neverIndicator_eq_of_agree",
+"module": "Becoming.Tail",
+"line": 334
+},
+"{ v0 v1 : Nat → Nat } ( v2 : Nat ) ( v3 : ∀ v4 , v2 ≤ v4 → v0 v4 = v1 v4 ) : v5 v6 v0 = v5 v6 v1"
+],
+[
+{
+"full": "Becoming.Granularity.mem_joined_split",
+"module": "Becoming.Granularity",
+"line": 87
+},
+{
+"full": "Becoming.mem_appended_split",
+"module": "Becoming.JointPlans",
+"line": 54
+},
+"{ v0 : Type v1 } { v2 : v0 } : ∀ { v3 v4 : List v0 } , v2 ∈ v3 + + v4 → v2 ∈ v3 ∨ v2 ∈ v4"
+],
+[
+{
+"full": "Becoming.mem_append_of_left",
+"module": "Becoming.OrderNormal",
+"line": 1111
+},
+{
+"full": "Becoming.Net.mem_append_left'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 616
+},
+"{ v0 : Type } { v1 : v0 } : ∀ { v2 : List v0 } ( v3 : List v0 ) , v1 ∈ v2 → v1 ∈ v2 + + v3"
+],
+[
+{
+"full": "Becoming.mem_append_of_right",
+"module": "Becoming.OrderNormal",
+"line": 1115
+},
+{
+"full": "Becoming.Net.mem_append_right'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 620
+},
+"{ v0 : Type } { v1 : v0 } : ∀ ( v2 : List v0 ) { v3 : List v0 } , v1 ∈ v3 → v1 ∈ v2 + + v3"
+],
+[
+{
+"full": "Becoming.Shuttle.alternates",
+"module": "Becoming.Persistence",
+"line": 1070
+},
+{
+"full": "Becoming.alternating_turns",
+"module": "Becoming.Return",
+"line": 211
+},
+": ∀ v0 , ( v1 v0 = 1 ∧ v1 ( v0 + 1 ) = 0 ) ∨ ( v1 v0 = 0 ∧ v1 ( v0 + 1 ) = 1 )"
+],
+[
+{
+"full": "Becoming.Web.commute_active_away",
+"module": "Becoming.Order",
+"line": 1635
+},
+{
+"full": "Becoming.Web.commute_level_away",
+"module": "Becoming.OrderNormal",
+"line": 1168
+},
+"{ v0 : Nat } { v1 : v2 } ( v3 : v0 ≠ v4 + 1 ) : ( v5 v4 v6 v7 ) . v8 v0 v1 = v8 v0 v1"
+],
+[
+{
+"full": "Becoming.mem_append_either",
+"module": "Becoming.OrderNormal",
+"line": 1103
+},
+{
+"full": "Becoming.Net.mem_append_cases'",
+"module": "Becoming.PlaceTransitionNets",
+"line": 624
+},
+{
+"full": "Becoming.Propagation.mem_append_cases",
+"module": "Becoming.Propagation",
+"line": 442
+},
+"{ v0 : Type } { v1 : v0 } : ∀ { v2 v3 : List v0 } , v1 ∈ v2 + + v3 → v1 ∈ v2 ∨ v1 ∈ v3"
+],
+[
+{
+"full": "Becoming.World.queue_meets",
+"module": "Becoming.Counting",
+"line": 704
+},
+{
+"full": "Becoming.World.embodiedQueue_meets",
+"module": "Becoming.Counting",
+"line": 718
+},
+{
+"full": "Becoming.World.sourcedQueue_meets",
+"module": "Becoming.Standing",
+"line": 197
+},
+"( v0 v1 : Nat → Nat ) { v2 : v3 → Bool } ( v4 : v2 . v5 = v6 ) : ( v7 v0 v1 ) . v8 v2"
+],
+[
+{
+"full": "Becoming.not_mem_of_middle",
+"module": "Becoming.Listing",
+"line": 194
+},
+{
+"full": "Becoming.LossMatching.not_mem_middle",
+"module": "Becoming.LossMatching",
+"line": 70
+},
+"{ v0 : v1 } : ∀ { v2 v3 : List v1 } , v4 ( v2 + + v0 : : v3 ) → ¬ v0 ∈ v2 + + v3"
+],
+[
+{
+"full": "Becoming.carriedWithin_exact",
+"module": "Becoming.Loops",
+"line": 333
+},
+{
+"full": "Becoming.Remainder.carriedWithin_exact",
+"module": "Becoming.Remainder",
+"line": 818
+},
+": ∀ v0 v1 , v1 ≤ v0 → ∀ v2 , v3 v4 v5 v6 v7 v8 v9 v0 v1 v2 = v10 v4 v5 v6 v7 v8 v9 v1 v2"
+],
+[
+{
+"full": "Becoming.Hexagram.waxWane_apart",
+"module": "Becoming.Commuting",
+"line": 216
+},
+{
+"full": "Becoming.Hexagram.run_complement_apart",
+"module": "Becoming.HexagramLaws",
+"line": 554
+},
+"( v0 : v1 ) ( v2 : Nat ) : ( v3 v4 ( v5 v0 ) ) . v6 v2 ≠ ( v3 v4 v0 ) . v6 v2"
+],
+[
+{
+"full": "Becoming.Exceeding.gated",
+"module": "Becoming.Continuation",
+"line": 536
+},
+{
+"full": "Becoming.Excluding.gated",
+"module": "Becoming.Exclusion",
+"line": 271
+},
+{
+"full": "Becoming.Race.gated",
+"module": "Becoming.RelativePosition",
+"line": 394
+},
+": ∀ v0 v1 , v1 ∈ v2 v0 → 0 < v3 v0 v1 ( ) → v4 v0 v1 ( ) ∧ 1 ≤ v5 v0 v1 ( )"
+],
+[
+{
+"full": "Becoming.Lasting.TwoChains.branching",
+"module": "Becoming.Lasting",
+"line": 1056
+},
+{
+"full": "Becoming.Chains.outcomesListed",
+"module": "Becoming.Likeness",
+"line": 2175
+},
+"( v0 : ∀ v1 , v2 ( v3 v1 ) ) ( v4 : ∀ v1 , v2 ( v5 v1 ) ) : v6 ( v7 v3 v5 )"
+],
+[
+{
+"full": "Becoming.World.openQueue_census",
+"module": "Becoming.Counting",
+"line": 454
+},
+{
+"full": "Becoming.World.sourcedQueue_standing",
+"module": "Becoming.Standing",
+"line": 212
+},
+"( v0 v1 : Nat → Nat ) : ( v2 v0 v1 ) . v3 fun v4 = > ( v5 v0 v1 v4 ) . map . v6"
+],
+[
+{
+"full": "Becoming.Ideals.closed_of_iff",
+"module": "Becoming.Ideals",
+"line": 345
+},
+{
+"full": "Becoming.Ideals.open_of_iff",
+"module": "Becoming.Verification",
+"line": 293
+},
+"{ v0 v1 : v2 v3 → Prop } ( v4 : v5 v0 ) ( v6 : ∀ v7 , v0 v7 ↔ v1 v7 ) : v5 v1"
+],
+[
+{
+"full": "Becoming.Propagation.add_congr",
+"module": "Becoming.Propagation",
+"line": 140
+},
+{
+"full": "Becoming.Trickle.add_eq",
+"module": "Becoming.Resolution",
+"line": 2129
+},
+"{ v0 v1 v2 v3 : Nat } ( v4 : v0 = v1 ) ( v5 : v2 = v3 ) : v0 + v2 = v1 + v3"
+],
+[
+{
+"full": "Becoming.Actuation.conserved_trace",
+"module": "Becoming.Actuation",
+"line": 435
+},
+{
+"full": "Becoming.ReferencePlan.trace_conserves",
+"module": "Becoming.ReferencePlan",
+"line": 171
+},
+{
+"full": "Becoming.ReferencePlan.trace_conserves_of_law",
+"module": "Becoming.ReferencePlan",
+"line": 444
+},
+"{ v0 v1 : v2 } { v3 : List v4 } ( v5 : v6 v7 v0 v3 v1 ) : v8 + v9 = v8 + v9"
+],
+[
+{
+"full": "Becoming.Web.Includes.trans",
+"module": "Becoming.Admission",
+"line": 296
+},
+{
+"full": "Becoming.Web.Widens.trans",
+"module": "Becoming.Regions",
+"line": 170
+},
+"{ v0 v1 v2 : Nat → v3 → Nat } ( v4 : v5 v0 v1 ) ( v6 : v5 v1 v2 ) : v5 v0 v2"
+],
+[
+{
+"full": "Becoming.FinerTraces.mem_append_split",
+"module": "Becoming.FinerTraces",
+"line": 54
+},
+{
+"full": "Becoming.mem_append_cases",
+"module": "Becoming.OneStep",
+"line": 125
+},
+"{ v0 : v1 } : ∀ { v2 v3 : List v1 } , v0 ∈ v2 + + v3 → v0 ∈ v2 ∨ v0 ∈ v3"
+],
+[
+{
+"full": "Becoming.Ideals.principal_lower",
+"module": "Becoming.Ideals",
+"line": 366
+},
+{
+"full": "Becoming.Ideals.principal_upper",
+"module": "Becoming.Verification",
+"line": 316
+},
+"{ v0 : v1 v2 → Prop } ( v3 : v4 v0 ) : v5 v2 ( fun v6 = > v0 ( v7 v2 v6 ) )"
+],
+[
+{
+"full": "Becoming.Parting.and_of",
+"module": "Becoming.Parting",
+"line": 353
+},
+{
+"full": "Becoming.bool_and_true",
+"module": "Becoming.Weighted",
+"line": 323
+},
+"{ v0 v1 : Bool } ( v2 : v0 = v3 ) ( v4 : v1 = v3 ) : ( v0 & & v1 ) = v3"
+],
+[
+{
+"full": "Becoming.WithinClosure.trans",
+"module": "Becoming.Feedback",
+"line": 176
+},
+{
+"full": "Becoming.Flow.WithinFeedingAcross.trans",
+"module": "Becoming.Feeding",
+"line": 272
+},
+{
+"full": "Becoming.Flow.WithinFeeding.trans",
+"module": "Becoming.Interdependence",
+"line": 130
+},
+"{ v0 v1 v2 : v3 } ( v4 : v5 v6 v0 v1 ) ( v7 : v5 v6 v1 v2 ) : v5 v6 v0 v2"
+],
+[
+{
+"full": "Becoming.Switching.no_state_law_of_criterion",
+"module": "Becoming.LawAlongRun",
+"line": 215
+},
+{
+"full": "Becoming.Switching.no_state_law",
+"module": "Becoming.Mechanism",
+"line": 410
+},
+"{ v0 : Nat } ( v1 : 2 ≤ v0 ) : ¬ ∃ v2 : v3 Bool Unit , v4 v2 ∧ v5 fst v2 v0"
+],
+[
+{
+"full": "Becoming.Loops.mul_mul_mul_comm_nat",
+"module": "Becoming.Loops",
+"line": 1304
+},
+{
+"full": "Becoming.RuleCapture.Counts.mul_mul_mul_comm_nat",
+"module": "Becoming.RuleCapture",
+"line": 396
+},
+"( v0 v1 v2 v3 : Nat ) : v0 * v1 * ( v2 * v3 ) = v0 * v2 * ( v1 * v3 )"
+],
+[
+{
+"full": "Becoming.World.Finite.comes_to_rest_unrefuted",
+"module": "Becoming.Openness",
+"line": 642
+},
+{
+"full": "Becoming.World.rests_unrefuted",
+"module": "Becoming.Space",
+"line": 338
+},
+"( v0 : v1 ) ( v2 : v3 ) ( v4 : v5 ) ( v6 : v7 ) : ¬ ¬ ∃ v8 , v9 v8"
+],
+[
+{
+"full": "Becoming.ReferencePlan.run_trace",
+"module": "Becoming.ReferencePlan",
+"line": 199
+},
+{
+"full": "Becoming.RuleHandoff.run_is_trace",
+"module": "Becoming.RuleHandoff",
+"line": 176
+},
+"{ v0 v1 : v2 } { v3 : List v4 } ( v5 : v6 v0 v3 = some v1 ) : v7 v8 v0 v3 v1"
+],
+[
+{
+"full": "Becoming.FinerTraces.mem_cons_split",
+"module": "Becoming.FinerTraces",
+"line": 50
+},
+{
+"full": "Becoming.Interleavings.mem_cons_split",
+"module": "Becoming.Interleavings",
+"line": 56
+},
+{
+"full": "Becoming.mem_cons_cases",
+"module": "Becoming.Population",
+"line": 111
+},
+{
+"full": "Becoming.Readout.member_cons_cases",
+"module": "Becoming.Readout",
+"line": 259
+},
+"{ v0 v1 : v2 } { v3 : List v2 } : v1 ∈ v0 : : v3 → v1 = v0 ∨ v1 ∈ v3"
+],
+[
+{
+"full": "Becoming.Ideals.Closed.hull_iff",
+"module": "Becoming.Ideals",
+"line": 489
+},
+{
+"full": "Becoming.Ideals.Open.interior_iff",
+"module": "Becoming.Verification",
+"line": 425
+},
+"{ v0 : v1 v2 → Prop } ( v3 : v4 v0 ) ( v5 : v1 v2 ) : v6 v0 v5 ↔ v0 v5"
+],
+[
+{
+"full": "Becoming.mem_middle",
+"module": "Becoming.Listing",
+"line": 189
+},
+{
+"full": "Becoming.LossMatching.mem_middle_of",
+"module": "Becoming.LossMatching",
+"line": 66
+},
+"{ v0 : v1 } { v2 : List v1 } : ∀ v3 : List v1 , v0 ∈ v3 + + v0 : : v2"
+],
+[
+{
+"full": "Becoming.Joining.appended_assoc",
+"module": "Becoming.Decidedness",
+"line": 990
+},
+{
+"full": "Becoming.HistoryLanguages.append_assoc'",
+"module": "Becoming.HistoryLanguages",
+"line": 59
+},
+": ∀ v0 v1 v2 : List v3 , v0 + + v1 + + v2 = v0 + + ( v1 + + v2 )"
+],
+[
+{
+"full": "Becoming.Hexagram.opposed_reverse",
+"module": "Becoming.HexagramPlaces",
+"line": 643
+},
+{
+"full": "Becoming.Hexagram.sole_reverse",
+"module": "Becoming.HexagramSites",
+"line": 795
+},
+": ∀ ( v0 : v1 ) ( v2 : v3 ) , v4 ( v5 v0 ) ( v6 v2 ) = v4 v0 v2"
+],
+[
+{
+"full": "Becoming.Parting.and_both",
+"module": "Becoming.Parting",
+"line": 350
+},
+{
+"full": "Becoming.bool_of_and_true",
+"module": "Becoming.Weighted",
+"line": 328
+},
+"{ v0 v1 : Bool } ( v2 : ( v0 & & v1 ) = v3 ) : v0 = v3 ∧ v1 = v3"
+],
+[
+{
+"full": "Becoming.Copying.sub_twice",
+"module": "Becoming.Copying",
+"line": 67
+},
+{
+"full": "Becoming.Naturals.sub_sub",
+"module": "Becoming.Naturals",
+"line": 44
+},
+"( v0 v1 : Nat ) : ∀ v2 : Nat , v0 - v1 - v2 = v0 - ( v1 + v2 )"
+],
+[
+{
+"full": "Becoming.Copying.cancel_right",
+"module": "Becoming.Copying",
+"line": 84
+},
+{
+"full": "Becoming.add_right_cancel",
+"module": "Becoming.Dependence",
+"line": 113
+},
+": ∀ { v0 v1 : Nat } ( v2 : Nat ) , v0 + v2 = v1 + v2 → v0 = v1"
+],
+[
+{
+"full": "Becoming.CrossSituational.and_eq_true",
+"module": "Becoming.CrossSituational",
+"line": 203
+},
+{
+"full": "Becoming.ListTests.and_true_iff",
+"module": "Becoming.ListTests",
+"line": 38
+},
+{
+"full": "Becoming.band_true_iff",
+"module": "Becoming.OrderNormal",
+"line": 113
+},
+": ∀ { v0 v1 : Bool } , ( v0 & & v1 ) = v2 ↔ v0 = v2 ∧ v1 = v2"
+],
+[
+{
+"full": "Becoming.le_of_add_le_add_right",
+"module": "Becoming.Dependence",
+"line": 108
+},
+{
+"full": "Becoming.Identification.le_of_add_right",
+"module": "Becoming.Identification",
+"line": 1208
+},
+": ∀ { v0 v1 : Nat } ( v2 : Nat ) , v0 + v2 ≤ v1 + v2 → v0 ≤ v1"
+],
+[
+{
+"full": "Becoming.Frequency.Rows.or_cases",
+"module": "Becoming.Frequency",
+"line": 815
+},
+{
+"full": "Becoming.Hexagram.either",
+"module": "Becoming.Hexagrams",
+"line": 129
+},
+{
+"full": "Becoming.Limit.or_cases'",
+"module": "Becoming.LimitVerification",
+"line": 280
+},
+": ∀ { v0 v1 : Bool } , ( v0 | | v1 ) = v2 → v0 = v2 ∨ v1 = v2"
+],
+[
+{
+"full": "Becoming.Frequency.Rows.or_left",
+"module": "Becoming.Frequency",
+"line": 819
+},
+{
+"full": "Becoming.Hexagram.or_left_true",
+"module": "Becoming.HexagramSites",
+"line": 123
+},
+": ∀ { v0 : Bool } ( v1 : Bool ) , v0 = v2 → ( v0 | | v1 ) = v2"
+],
+[
+{
+"full": "Becoming.Frequency.Rows.or_right",
+"module": "Becoming.Frequency",
+"line": 823
+},
+{
+"full": "Becoming.Hexagram.or_right_true",
+"module": "Becoming.HexagramSites",
+"line": 126
+},
+": ∀ ( v0 : Bool ) { v1 : Bool } , v1 = v2 → ( v0 | | v1 ) = v2"
+],
+[
+{
+"full": "Becoming.Hexagram.neither",
+"module": "Becoming.HexagramLaws",
+"line": 103
+},
+{
+"full": "Becoming.Hexagram.or_false_split",
+"module": "Becoming.HexagramSites",
+"line": 130
+},
+": ∀ { v0 v1 : Bool } , ( v0 | | v1 ) = v2 → v0 = v2 ∧ v1 = v2"
+],
+[
+{
+"full": "Becoming.Hexagram.line_flip_self",
+"module": "Becoming.HexagramPlaces",
+"line": 659
+},
+{
+"full": "Becoming.Hexagram.flip_line",
+"module": "Becoming.HexagramSequences",
+"line": 139
+},
+": ∀ ( v0 : v1 ) ( v2 : v3 ) , ( v4 v0 v2 ) . v5 v0 = ! v5 v0"
+],
+[
+{
+"full": "Becoming.Integers.nat_add_right_cancel",
+"module": "Becoming.Integers",
+"line": 30
+},
+{
+"full": "Becoming.Naturals.add_right_cancel",
+"module": "Becoming.Naturals",
+"line": 54
+},
+"{ v0 v1 : Nat } : ∀ { v2 : Nat } , v0 + v2 = v1 + v2 → v0 = v1"
+],
+[
+{
+"full": "Becoming.Dyadic.pow_add'",
+"module": "Becoming.LeastLoss",
+"line": 533
+},
+{
+"full": "Becoming.Loops.pow_add_nat",
+"module": "Becoming.Loops",
+"line": 1308
+},
+{
+"full": "Becoming.Typicality.pow_add_nat",
+"module": "Becoming.Typicality",
+"line": 367
+},
+"( v0 v1 : Nat ) : ∀ v2 , v0 ^ ( v1 + v2 ) = v0 ^ v1 * v0 ^ v2"
+],
+[
+{
+"full": "Becoming.Loops.add_mul_nat",
+"module": "Becoming.Loops",
+"line": 186
+},
+{
+"full": "Becoming.add_mul_split",
+"module": "Becoming.Resolution",
+"line": 149
+},
+"( v0 v1 : Nat ) : ∀ v2 , ( v0 + v1 ) * v2 = v0 * v2 + v1 * v2"
+],
+[
+{
+"full": "Becoming.Upstream.single",
+"module": "Becoming.Observation",
+"line": 87
+},
+{
+"full": "Becoming.CouplesAlways.recurs",
+"module": "Becoming.Remainder",
+"line": 491
+},
+"{ v0 v1 : v2 } ( v3 : v4 v5 v6 v7 v8 v0 v1 ) : v9 v5 v6 v7 v8 v0 v1"
+],
+[
+{
+"full": "Becoming.steps_of_within",
+"module": "Becoming.Population",
+"line": 761
+},
+{
+"full": "Becoming.Propagation.mem_steps_of_between",
+"module": "Becoming.Propagation",
+"line": 397
+},
+{
+"full": "Becoming.mem_steps_of_between",
+"module": "Becoming.Sampling",
+"line": 116
+},
+": ∀ { v0 v1 v2 : Nat } , v0 ≤ v2 → v2 < v0 + v1 → v2 ∈ v3 v0 v1"
+],
+[
+{
+"full": "Becoming.Propagation.between_of_mem_steps",
+"module": "Becoming.Propagation",
+"line": 407
+},
+{
+"full": "Becoming.between_of_mem_steps",
+"module": "Becoming.Sampling",
+"line": 105
+},
+": ∀ { v0 v1 v2 : Nat } , v2 ∈ v3 v0 v1 → v0 ≤ v2 ∧ v2 < v0 + v1"
+],
+[
+{
+"full": "Becoming.Courses.counting_sum_one",
+"module": "Becoming.Courses",
+"line": 1007
+},
+{
+"full": "Becoming.Situations.sum_one",
+"module": "Becoming.Situations",
+"line": 94
+},
+"{ v0 : Type v1 } : ∀ v2 : List v0 , sum v2 ( fun v3 = > 1 ) = length"
+],
+[
+{
+"full": "Becoming.Dephasing.run_settles",
+"module": "Becoming.Dephasing",
+"line": 300
+},
+{
+"full": "Becoming.Hexagram.MarkedLines.run_settled",
+"module": "Becoming.HexagramLaws",
+"line": 878
+},
+"( v0 : v1 ) : ∀ v2 , ( v3 v4 v0 ) . v5 ( v2 + 1 ) = v4 v0"
+],
+[
+{
+"full": "Becoming.Hexagram.line_complement",
+"module": "Becoming.HexagramPlaces",
+"line": 579
+},
+{
+"full": "Becoming.Hexagram.complement_line",
+"module": "Becoming.HexagramSequences",
+"line": 131
+},
+": ∀ ( v0 : v1 ) ( v2 : v3 ) , ( v4 v0 ) . v5 v2 = ! v5 v2"
+],
+[
+{
+"full": "Becoming.Run.withClock_part",
+"module": "Becoming.Coupling",
+"line": 386
+},
+{
+"full": "Becoming.Run.ofWithMove_toWithMove",
+"module": "Becoming.Labelled",
+"line": 73
+},
+"( v0 : v1 v2 ) ( v3 : Nat ) : v4 v3 = v4 v3 ∧ v5 v3 = v5 v3"
+],
+[
+{
+"full": "Becoming.Excluding.second_lasting",
+"module": "Becoming.Exclusion",
+"line": 298
+},
+{
+"full": "Becoming.Seeker.lasting",
+"module": "Becoming.Exhaustion",
+"line": 253
+},
+": ∀ v0 , v1 ( 0 + v0 + 1 ) . v2 → v1 ( 0 + v0 ) . v2"
+],
+[
+{
+"full": "Becoming.Dyadic.mul_assoc'",
+"module": "Becoming.LeastLoss",
+"line": 520
+},
+{
+"full": "Becoming.mul_regroup",
+"module": "Becoming.Resolution",
+"line": 142
+},
+"( v0 v1 : Nat ) : ∀ v2 , v0 * v1 * v2 = v0 * ( v1 * v2 )"
+],
+[
+{
+"full": "Becoming.Dyadic.right_distrib'",
+"module": "Becoming.LeastLoss",
+"line": 524
+},
+{
+"full": "Becoming.Regulation.add_mul'",
+"module": "Becoming.Regulation",
+"line": 1239
+},
+"( v0 v1 v2 : Nat ) : ( v0 + v1 ) * v2 = v0 * v2 + v1 * v2"
+],
+[
+{
+"full": "Becoming.Dyadic.mul_left_comm'",
+"module": "Becoming.LeastLoss",
+"line": 530
+},
+{
+"full": "Becoming.Loops.mul_left_comm_nat",
+"module": "Becoming.Loops",
+"line": 1300
+},
+{
+"full": "Becoming.mul_turn",
+"module": "Becoming.Resolution",
+"line": 146
+},
+{
+"full": "Becoming.Typicality.left_comm",
+"module": "Becoming.Typicality",
+"line": 72
+},
+"( v0 v1 v2 : Nat ) : v0 * ( v1 * v2 ) = v1 * ( v0 * v2 )"
+],
+[
+{
+"full": "Becoming.CodeAcquisition.step_iff",
+"module": "Becoming.CodeAcquisition",
+"line": 358
+},
+{
+"full": "Becoming.Handoff.step_iff",
+"module": "Becoming.Handoff",
+"line": 313
+},
+"{ v0 v1 : v2 } { v3 : v4 } : v5 v0 v3 v1 ↔ v1 = v6 v3 v0"
+],
+[
+{
+"full": "Becoming.Copying.add_sub_back",
+"module": "Becoming.Copying",
+"line": 71
+},
+{
+"full": "Becoming.add_sub_of_le",
+"module": "Becoming.Dependence",
+"line": 132
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → v0 + ( v1 - v0 ) = v1"
+],
+[
+{
+"full": "Becoming.Copying.le_sub_of_add",
+"module": "Becoming.Copying",
+"line": 88
+},
+{
+"full": "Becoming.Naturals.le_sub_of_add_le",
+"module": "Becoming.Naturals",
+"line": 68
+},
+"{ v0 v1 v2 : Nat } ( v3 : v0 + v1 ≤ v2 ) : v1 ≤ v2 - v0"
+],
+[
+{
+"full": "Becoming.Copying.length_appended",
+"module": "Becoming.Copying",
+"line": 126
+},
+{
+"full": "Becoming.ListTests.length_append",
+"module": "Becoming.ListTests",
+"line": 182
+},
+": ∀ ( v0 v1 : List v2 ) , ( v0 + + v1 ) . length = length + length"
+],
+[
+{
+"full": "Becoming.HistorySums.nonzero_of_le",
+"module": "Becoming.HistorySums",
+"line": 633
+},
+{
+"full": "Becoming.RouteTraces.nonzero_of_le",
+"module": "Becoming.RouteTraces",
+"line": 39
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → v2 v0 = v3 → v2 v1 = v3"
+],
+[
+{
+"full": "Becoming.LossMatching.map_length_eq",
+"module": "Becoming.LossMatching",
+"line": 62
+},
+{
+"full": "Becoming.length_map",
+"module": "Becoming.OneStep",
+"line": 143
+},
+"( v0 : v1 → v2 ) : ∀ v3 : List v1 , ( map v0 ) . length = length"
+],
+[
+{
+"full": "Becoming.bool_eq_of_iff",
+"module": "Becoming.OrderNormal",
+"line": 106
+},
+{
+"full": "Becoming.RuleHandoff.bool_eq_of_iff",
+"module": "Becoming.RuleHandoff",
+"line": 563
+},
+{
+"full": "Becoming.WeightedTraces.bool_eq_of_iff",
+"module": "Becoming.WeightedTraces",
+"line": 108
+},
+": ∀ { v0 v1 : Bool } , ( v0 = v2 ↔ v1 = v2 ) → v0 = v1"
+],
+[
+{
+"full": "Becoming.Net.inl_inj",
+"module": "Becoming.PlaceTransitionNets",
+"line": 640
+},
+{
+"full": "Becoming.inl_injective",
+"module": "Becoming.Roles",
+"line": 133
+},
+": ∀ v0 v1 : v2 , ( inl v0 : v2 ⊕ v3 ) = inl v1 → v0 = v1"
+],
+[
+{
+"full": "Becoming.Net.inr_inj",
+"module": "Becoming.PlaceTransitionNets",
+"line": 643
+},
+{
+"full": "Becoming.inr_injective",
+"module": "Becoming.Roles",
+"line": 136
+},
+": ∀ v0 v1 : v2 , ( inr v0 : v3 ⊕ v2 ) = inr v1 → v0 = v1"
+],
+[
+{
+"full": "Becoming.mul_assoc_nat",
+"module": "Becoming.Capture",
+"line": 62
+},
+{
+"full": "Becoming.Loops.mul_assoc_nat",
+"module": "Becoming.Loops",
+"line": 179
+},
+": ∀ v0 v1 v2 : Nat , v0 * v1 * v2 = v0 * ( v1 * v2 )"
+],
+[
+{
+"full": "Becoming.exists_add_of_le",
+"module": "Becoming.CensusCounts",
+"line": 65
+},
+{
+"full": "Becoming.ResponseLearning.exists_add_of_le",
+"module": "Becoming.ResponseLearning",
+"line": 64
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → ∃ v2 , v1 = v2 + v0"
+],
+[
+{
+"full": "Becoming.Clear.not_both",
+"module": "Becoming.Change",
+"line": 414
+},
+{
+"full": "Becoming.Limit.true_ne_false'",
+"module": "Becoming.LimitVerification",
+"line": 100
+},
+"{ v0 : Bool } ( v1 : v0 = v2 ) ( v3 : v0 = v4 ) : False"
+],
+[
+{
+"full": "Becoming.Clear.and_left",
+"module": "Becoming.Change",
+"line": 417
+},
+{
+"full": "Becoming.RuleHandoff.and_left",
+"module": "Becoming.RuleHandoff",
+"line": 142
+},
+": ∀ { v0 v1 : Bool } , ( v0 & & v1 ) = v2 → v0 = v2"
+],
+[
+{
+"full": "Becoming.Clear.and_right",
+"module": "Becoming.Change",
+"line": 421
+},
+{
+"full": "Becoming.RuleHandoff.and_right",
+"module": "Becoming.RuleHandoff",
+"line": 146
+},
+": ∀ { v0 v1 : Bool } , ( v0 & & v1 ) = v2 → v1 = v2"
+],
+[
+{
+"full": "Becoming.World.arising_iff_ceasing_of_decidable",
+"module": "Becoming.Decidedness",
+"line": 755
+},
+{
+"full": "Becoming.World.Finite.arising_iff_ceasing",
+"module": "Becoming.Openness",
+"line": 407
+},
+{
+"full": "Becoming.World.arising_iff_ceasing",
+"module": "Becoming.Space",
+"line": 274
+},
+"[ ∀ v0 v1 , Decidable ( v2 v0 v1 ) ] ( v3 : v4 ) : v5 ↔ v6"
+],
+[
+{
+"full": "Becoming.Flow.WithinFeedingAcross.of_fedAcross",
+"module": "Becoming.Feeding",
+"line": 278
+},
+{
+"full": "Becoming.Flow.WithinFeeding.of_fedBy",
+"module": "Becoming.Interdependence",
+"line": 135
+},
+"{ v0 v1 : v2 × Nat } ( v3 : v4 v5 v0 v1 ) : v6 v5 v7 v7"
+],
+[
+{
+"full": "Becoming.Dependence.alikeAt_equivalence",
+"module": "Becoming.LawThroughChangingCoupling",
+"line": 74
+},
+{
+"full": "Becoming.Conditions.alikeAt_equivalence",
+"module": "Becoming.LawThroughCoupling",
+"line": 154
+},
+"( v0 : v1 → v2 → Prop ) ( v3 : v1 ) : v4 ( v5 v0 v3 )"
+],
+[
+{
+"full": "Becoming.JointBisimulation.eq",
+"module": "Becoming.Composition",
+"line": 250
+},
+{
+"full": "Becoming.Bisimulation.eq",
+"module": "Becoming.Labelled",
+"line": 308
+},
+"( v0 : v1 v2 v3 v4 ) : v5 v0 v0 fun v6 v7 = > v6 = v7"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.sub_add_back",
+"module": "Becoming.Counterfactual",
+"line": 372
+},
+{
+"full": "Becoming.Naturals.sub_add_cancel",
+"module": "Becoming.Naturals",
+"line": 34
+},
+": ∀ { v0 v1 : Nat } , v1 ≤ v0 → v0 - v1 + v1 = v0"
+],
+[
+{
+"full": "Becoming.HistoryIdeals.length_append",
+"module": "Becoming.HistoryIdeals",
+"line": 217
+},
+{
+"full": "Becoming.Joining.length_appended",
+"module": "Becoming.Joining",
+"line": 887
+},
+{
+"full": "Becoming.length_append",
+"module": "Becoming.Population",
+"line": 107
+},
+": ∀ v0 v1 : List v2 , ( v0 + + v1 ) . length = length + length"
+],
+[
+{
+"full": "Becoming.placed_distinct",
+"module": "Becoming.Listing",
+"line": 860
+},
+{
+"full": "Becoming.OneStep.Witness.distinct_unitList",
+"module": "Becoming.OneStep",
+"line": 804
+},
+": ∀ ( v0 : List v1 ) ( v2 : Nat ) , v3 ( v4 v0 v2 )"
+],
+[
+{
+"full": "Becoming.SameBranchingTests.refl",
+"module": "Becoming.BranchingCorrespondence",
+"line": 46
+},
+{
+"full": "Becoming.SameJointTests.refl",
+"module": "Becoming.Composition",
+"line": 158
+},
+{
+"full": "Becoming.JointAlike.refl",
+"module": "Becoming.Composition",
+"line": 281
+},
+{
+"full": "Becoming.Alike.refl",
+"module": "Becoming.Labelled",
+"line": 336
+},
+"( v0 : v1 v2 v3 v4 ) ( v5 : v2 ) : v6 v0 v0 v5 v5"
+],
+[
+{
+"full": "Becoming.Flow.withinInfluence_of_withinFeeding",
+"module": "Becoming.Feedback",
+"line": 305
+},
+{
+"full": "Becoming.Flow.withinSystem_of_withinInfluence",
+"module": "Becoming.Feedback",
+"line": 310
+},
+{
+"full": "Becoming.Flow.withinSystem_of_withinReach",
+"module": "Becoming.Feedback",
+"line": 323
+},
+{
+"full": "Becoming.Flow.WithinFeeding.across",
+"module": "Becoming.Feeding",
+"line": 263
+},
+"{ v0 v1 : v2 } ( v3 : v4 v5 v0 v1 ) : v6 v5 v0 v1"
+],
+[
+{
+"full": "Becoming.Flow.takers_le_uptake",
+"module": "Becoming.Flow",
+"line": 446
+},
+{
+"full": "Becoming.Flow.renewers_le_replenishment",
+"module": "Becoming.OneStep",
+"line": 1881
+},
+"( v0 : List v1 ) ( v2 : Nat ) : v3 v0 v2 ≤ v4 v0 v2"
+],
+[
+{
+"full": "Becoming.Dyadic.mul_right_comm'",
+"module": "Becoming.LeastLoss",
+"line": 527
+},
+{
+"full": "Becoming.RuleCapture.Counts.mul_right_comm_nat",
+"module": "Becoming.RuleCapture",
+"line": 392
+},
+"( v0 v1 v2 : Nat ) : v0 * v1 * v2 = v0 * v2 * v1"
+],
+[
+{
+"full": "Becoming.transpose_transpose",
+"module": "Becoming.Persistence",
+"line": 626
+},
+{
+"full": "Becoming.Relabel.swap_swap",
+"module": "Becoming.Selection",
+"line": 430
+},
+"( v0 v1 v2 : v3 ) : v4 v0 v1 ( v4 v0 v1 v2 ) = v2"
+],
+[
+{
+"full": "Becoming.Branching.FedWithin.keeps",
+"module": "Becoming.Branching",
+"line": 279
+},
+{
+"full": "Becoming.Flow.ClosedAcross.fedClosed",
+"module": "Becoming.Feeding",
+"line": 258
+},
+"{ v0 : v1 → Prop } ( v2 : v3 v4 v0 ) : v5 v4 v0"
+],
+[
+{
+"full": "Becoming.Clear.of_not",
+"module": "Becoming.Change",
+"line": 430
+},
+{
+"full": "Becoming.Hexagram.not_true_eq",
+"module": "Becoming.HexagramSites",
+"line": 425
+},
+{
+"full": "Becoming.Hexagram.false_of_not",
+"module": "Becoming.Hexagrams",
+"line": 293
+},
+{
+"full": "Becoming.Limit.eq_true_of_not_false",
+"module": "Becoming.LimitVerification",
+"line": 184
+},
+{
+"full": "Becoming.Tail.false_of_not_eq_true",
+"module": "Becoming.Tail",
+"line": 109
+},
+": ∀ { v0 : Bool } , ( ! v0 ) = v1 → v0 = v2"
+],
+[
+{
+"full": "Becoming.Closing.ble_false_of_lt",
+"module": "Becoming.Closing",
+"line": 79
+},
+{
+"full": "Becoming.Routes.ble_false_of_lt",
+"module": "Becoming.Routes",
+"line": 313
+},
+": ∀ { v0 v1 : Nat } , v1 < v0 → v2 v0 v1 = v3"
+],
+[
+{
+"full": "Becoming.OpenQueue.outside",
+"module": "Becoming.Counting",
+"line": 410
+},
+{
+"full": "Becoming.Exposed.outside",
+"module": "Becoming.Openness",
+"line": 977
+},
+{
+"full": "Becoming.World.Scatter.outside",
+"module": "Becoming.Premises",
+"line": 406
+},
+{
+"full": "Becoming.World.Hatch.outside",
+"module": "Becoming.Premises",
+"line": 983
+},
+"( v0 : List v1 ) : ¬ v2 ( v3 ( map v4 ) ) ∈ v0"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.still_levels",
+"module": "Becoming.ExchangePremises",
+"line": 328
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_levels",
+"module": "Becoming.Reading",
+"line": 298
+},
+{
+"full": "Becoming.ExchangeLaw.unresponsive_levels",
+"module": "Becoming.Reading",
+"line": 304
+},
+": ∀ v0 v1 , v2 v3 ( fun v4 = > 1 ) v0 v1 = 1"
+],
+[
+{
+"full": "Becoming.total_zero",
+"module": "Becoming.Flow",
+"line": 125
+},
+{
+"full": "Becoming.Stock.total_zero",
+"module": "Becoming.Stock",
+"line": 67
+},
+": ∀ v0 : List v1 , v2 v0 ( fun v3 = > 0 ) = 0"
+],
+[
+{
+"full": "Becoming.Cycle.ones",
+"module": "Becoming.Flow",
+"line": 912
+},
+{
+"full": "Becoming.Repeated.ones",
+"module": "Becoming.Population",
+"line": 1504
+},
+": ∀ v0 , v1 ( v2 v0 ) ( fun v3 = > 1 ) = v0"
+],
+[
+{
+"full": "Becoming.Hexagram.same_not_left",
+"module": "Becoming.HexagramPlaces",
+"line": 567
+},
+{
+"full": "Becoming.Hexagram.turnedBy_not",
+"module": "Becoming.HexagramSequences",
+"line": 506
+},
+": ∀ v0 v1 : Bool , v2 ( ! v0 ) v1 = ! v2 v0 v1"
+],
+[
+{
+"full": "Becoming.Hexagram.opposite_false",
+"module": "Becoming.Hexagrams",
+"line": 696
+},
+{
+"full": "Becoming.Hexagram.opposite_true",
+"module": "Becoming.Hexagrams",
+"line": 700
+},
+{
+"full": "Becoming.Tail.not_eq_true_of_false",
+"module": "Becoming.Tail",
+"line": 113
+},
+": ∀ { v0 : Bool } , v0 = v1 → ( ! v0 ) = v2"
+],
+[
+{
+"full": "Becoming.Ideals.avoids_closed",
+"module": "Becoming.Ideals",
+"line": 510
+},
+{
+"full": "Becoming.Ideals.meets_open",
+"module": "Becoming.Verification",
+"line": 299
+},
+"( v0 : v1 → Prop ) : v2 ( v3 ( v4 := v4 ) v0 )"
+],
+[
+{
+"full": "Becoming.sub_eq_zero_of_le",
+"module": "Becoming.Imbalance",
+"line": 46
+},
+{
+"full": "Becoming.Propagation.sub_zero_of_le",
+"module": "Becoming.Propagation",
+"line": 109
+},
+{
+"full": "Becoming.SupportGated.sub_eq_zero_of_le",
+"module": "Becoming.RenewalFlow",
+"line": 59
+},
+": ∀ { v0 v1 : Nat } , v0 ≤ v1 → v0 - v1 = 0"
+],
+[
+{
+"full": "Becoming.ListTests.not_true_iff",
+"module": "Becoming.ListTests",
+"line": 49
+},
+{
+"full": "Becoming.not_eq_true_iff",
+"module": "Becoming.OrderNormal",
+"line": 1290
+},
+{
+"full": "Becoming.not_eq_false_iff",
+"module": "Becoming.OrderNormal",
+"line": 1294
+},
+": ∀ { v0 : Bool } , ( ! v0 ) = v1 ↔ v0 = v2"
+],
+[
+{
+"full": "Becoming.Narrowing.encode_inj",
+"module": "Becoming.Narrowing",
+"line": 193
+},
+{
+"full": "Becoming.Undecided.embed_inj",
+"module": "Becoming.Undecided",
+"line": 199
+},
+": ∀ { v0 v1 : Bool } , v2 v0 = v2 v1 → v0 = v1"
+],
+[
+{
+"full": "Becoming.Naturals.add_sub_cancel",
+"module": "Becoming.Naturals",
+"line": 27
+},
+{
+"full": "Becoming.ExchangeLaw.add_sub_same",
+"module": "Becoming.Reading",
+"line": 293
+},
+"( v0 : Nat ) : ∀ v1 : Nat , v0 + v1 - v1 = v0"
+],
+[
+{
+"full": "Becoming.le_of_mem_downFrom",
+"module": "Becoming.Entropy",
+"line": 993
+},
+{
+"full": "Becoming.Law.le_of_mem_upto",
+"module": "Becoming.Identification",
+"line": 1860
+},
+": ∀ { v0 v1 : Nat } , v1 ∈ v2 v0 → v1 ≤ v0"
+],
+[
+{
+"full": "Becoming.FinerTraces.lt_of_mem_upto",
+"module": "Becoming.FinerTraces",
+"line": 79
+},
+{
+"full": "Becoming.Cycle.lt_of_mem_down",
+"module": "Becoming.Gluing",
+"line": 730
+},
+": ∀ { v0 v1 : Nat } , v1 ∈ v2 v0 → v1 < v0"
+],
+[
+{
+"full": "Becoming.FinerTraces.mem_upto",
+"module": "Becoming.FinerTraces",
+"line": 85
+},
+{
+"full": "Becoming.Undecided.mem_upto",
+"module": "Becoming.Undecided",
+"line": 439
+},
+": ∀ { v0 v1 : Nat } , v1 < v0 → v1 ∈ v2 v0"
+],
+[
+{
+"full": "Becoming.Hexagram.nuclear_complement",
+"module": "Becoming.HexagramLaws",
+"line": 455
+},
+{
+"full": "Becoming.Hexagram.nuclear_reverse",
+"module": "Becoming.HexagramLaws",
+"line": 459
+},
+{
+"full": "Becoming.Hexagram.complement_reverse",
+"module": "Becoming.HexagramLaws",
+"line": 462
+},
+{
+"full": "Becoming.Hexagram.waxWane_complement",
+"module": "Becoming.Hexagrams",
+"line": 594
+},
+": ∀ v0 : v1 , v2 ( v3 v0 ) = v3 ( v2 v0 )"
+],
+[
+{
+"full": "Becoming.Hexagram.opposition_waxWane",
+"module": "Becoming.HexagramPlaces",
+"line": 797
+},
+{
+"full": "Becoming.Hexagram.reverse_wax",
+"module": "Becoming.Hexagrams",
+"line": 597
+},
+": ∀ v0 : v1 , v2 ( v3 v0 ) = v4 ( v2 v0 )"
+],
+[
+{
+"full": "Becoming.tailLaw_insensitive",
+"module": "Becoming.Sensitivity",
+"line": 332
+},
+{
+"full": "Becoming.neverLaw_insensitive",
+"module": "Becoming.Tail",
+"line": 387
+},
+"( v0 v1 : Nat ) : ( v2 v3 ) . v4 v0 ( ) v1"
+],
+[
+{
+"full": "Becoming.Copying.add_sub_left",
+"module": "Becoming.Copying",
+"line": 98
+},
+{
+"full": "Becoming.Propagation.add_sub_self_left",
+"module": "Becoming.Propagation",
+"line": 126
+},
+": ∀ ( v0 v1 : Nat ) , v0 + v1 - v0 = v1"
+],
+[
+{
+"full": "Becoming.FallibleInquiry.Witness.balanced",
+"module": "Becoming.FallibleInquiry",
+"line": 288
+},
+{
+"full": "Becoming.Replenishing.balances",
+"module": "Becoming.Rejoining",
+"line": 383
+},
+{
+"full": "Becoming.TimedResponse.Delayed.balanced",
+"module": "Becoming.TimedResponse",
+"line": 254
+},
+"( v0 : Bool ) : ( v1 v0 ) . v2 ( v3 v0 )"
+],
+[
+{
+"full": "Becoming.Relay.reserve_succ_le",
+"module": "Becoming.Generation",
+"line": 385
+},
+{
+"full": "Becoming.Cascade.never_rises",
+"module": "Becoming.Reserve",
+"line": 865
+},
+": ∀ v0 v1 , v2 ( v0 + 1 ) v1 ≤ v2 v0 v1"
+],
+[
+{
+"full": "Becoming.Hexagram.fallStatements_agree",
+"module": "Becoming.HexagramPlaces",
+"line": 1022
+},
+{
+"full": "Becoming.Hexagram.tuanWhole_between",
+"module": "Becoming.HexagramSites",
+"line": 338
+},
+{
+"full": "Becoming.Hexagram.answeredStatements_sole",
+"module": "Becoming.HexagramSites",
+"line": 960
+},
+": ∀ v0 , v0 ∈ v1 → v2 ( v3 v4 ) v5 = v6"
+],
+[
+{
+"full": "Becoming.Limit.false_of_not_true",
+"module": "Becoming.LimitVerification",
+"line": 503
+},
+{
+"full": "Becoming.Tail.false_of_not_true",
+"module": "Becoming.Tail",
+"line": 105
+},
+": ∀ { v0 : Bool } , ¬ v0 = v1 → v0 = v2"
+],
+[
+{
+"full": "Becoming.Flow.withinInfluence_iff_withinReach",
+"module": "Becoming.MutualDependence",
+"line": 111
+},
+{
+"full": "Becoming.Flow.withinReach_iff_withinInfluence",
+"module": "Becoming.Response",
+"line": 180
+},
+"{ v0 v1 : v2 } : v3 v4 v0 v1 ↔ v5 v4 v1 v0"
+],
+[
+{
+"full": "Becoming.Exposed.holder_after",
+"module": "Becoming.Openness",
+"line": 1014
+},
+{
+"full": "Becoming.Shuttle.next_off",
+"module": "Becoming.Persistence",
+"line": 1030
+},
+": ∀ v0 , v1 ( v2 v0 ) ( v0 + 1 ) = 0"
+],
+[
+{
+"full": "Becoming.PatternRelay.stopped_by_passing",
+"module": "Becoming.Passing",
+"line": 249
+},
+{
+"full": "Becoming.Gauged.balances",
+"module": "Becoming.Testing",
+"line": 854
+},
+"( v0 : Nat ) : ( v1 v0 ) . v2 ( v3 v0 )"
+],
+[
+{
+"full": "Becoming.Once.unsupported",
+"module": "Becoming.Reserve",
+"line": 973
+},
+{
+"full": "Becoming.Strobe.coarse_quiet",
+"module": "Becoming.Sampling",
+"line": 287
+},
+"( v0 : Nat ) : ¬ ( v1 v2 ) . v3 v0 ( )"
+],
+[
+{
+"full": "Becoming.tailLaw_not_sensitive",
+"module": "Becoming.Sensitivity",
+"line": 337
+},
+{
+"full": "Becoming.neverLaw_not_sensitive",
+"module": "Becoming.Tail",
+"line": 391
+},
+"( v0 : Nat ) : ¬ ( v1 v2 ) . v3 ( ) v0"
+],
+[
+{
+"full": "Becoming.Countdown.none_ne_some",
+"module": "Becoming.Countdown",
+"line": 107
+},
+{
+"full": "Becoming.ListTests.none_ne_some",
+"module": "Becoming.ListTests",
+"line": 245
+},
+{
+"full": "Becoming.Viability.none_ne_some",
+"module": "Becoming.Viability",
+"line": 259
+},
+"{ v0 : v1 } : ( none : Option v1 ) ≠ some v0"
+],
+[
+{
+"full": "Becoming.Web.renewed_not_consumed",
+"module": "Becoming.Dependence",
+"line": 267
+},
+{
+"full": "Becoming.Web.renewing_not_consuming",
+"module": "Becoming.Dependence",
+"line": 271
+},
+{
+"full": "Becoming.Web.Returns.not_consumed",
+"module": "Becoming.Return",
+"line": 115
+},
+"{ v0 : v1 } ( v2 : v3 v0 ) : ¬ v4 v0"
+],
+[
+{
+"full": "Becoming.Hexagram.nuclear_yang_not_lumped",
+"module": "Becoming.HexagramLaws",
+"line": 222
+},
+{
+"full": "Becoming.Hexagram.classes_not_lumped_waxWane",
+"module": "Becoming.HexagramLaws",
+"line": 665
+},
+{
+"full": "Becoming.Hexagram.MarkedLines.shown_not_lumped",
+"module": "Becoming.HexagramLaws",
+"line": 908
+},
+{
+"full": "Becoming.Hexagram.phaseCount_not_lumped",
+"module": "Becoming.HexagramPlaces",
+"line": 756
+},
+{
+"full": "Becoming.Hexagram.nuclear_yangOdd_not_lumped",
+"module": "Becoming.HexagramSequences",
+"line": 823
+},
+{
+"full": "Becoming.Hexagram.betweenPhases_not_lumped",
+"module": "Becoming.HexagramSites",
+"line": 634
+},
+{
+"full": "Becoming.Hexagram.yang_not_lumped",
+"module": "Becoming.Hexagrams",
+"line": 656
+},
+": ¬ v0 v1 ( fun v2 = > v1 ( v3 v2 ) )"
+],
+[
+{
+"full": "Becoming.Identification.course_two",
+"module": "Becoming.Identification",
+"line": 1124
+},
+{
+"full": "Becoming.RenewalBound.period_two",
+"module": "Becoming.RenewalBound",
+"line": 211
+},
+{
+"full": "Becoming.Shifts.odd_two",
+"module": "Becoming.Wholes",
+"line": 287
+},
+"( v0 : Nat ) : v1 ( v0 + 2 ) = v1 v0"
+],
+[
+{
+"full": "Becoming.Copying.append_empty",
+"module": "Becoming.Copying",
+"line": 118
+},
+{
+"full": "Becoming.HistoryLanguages.append_nil'",
+"module": "Becoming.HistoryLanguages",
+"line": 55
+},
+{
+"full": "Becoming.Joining.appended_nil",
+"module": "Becoming.Joining",
+"line": 883
+},
+": ∀ v0 : List v1 , v0 + + [ ] = v0"
+],
+[
+{
+"full": "Becoming.Shared.dependent",
+"module": "Becoming.Correspondence",
+"line": 460
+},
+{
+"full": "Becoming.SupportDrawn.dependent",
+"module": "Becoming.Testing",
+"line": 959
+},
+{
+"full": "Becoming.Attracting.dependent_web",
+"module": "Becoming.Testing",
+"line": 1120
+},
+"( v0 : Nat → Nat ) : ( v1 v0 ) . v2"
+],
+[
+{
+"full": "Becoming.EnclosedQueue.span_distinct",
+"module": "Becoming.Counting",
+"line": 1011
+},
+{
+"full": "Becoming.OneStep.Chain.distinct_family",
+"module": "Becoming.OneStep",
+"line": 2382
+},
+"( v0 : Nat ) : v1 ( v2 v3 v4 v5 v0 )"
+],
+[
+{
+"full": "Becoming.Dephasing.preparation_from_blank",
+"module": "Becoming.Dephasing",
+"line": 127
+},
+{
+"full": "Becoming.JointPhase.summary_recovers_control",
+"module": "Becoming.JointPhase",
+"line": 142
+},
+": ∀ v0 : v1 , v2 ( v3 v0 ) = v4 v0"
+],
+[
+{
+"full": "Becoming.Dephasing.x_preserves_norm",
+"module": "Becoming.Dephasing",
+"line": 134
+},
+{
+"full": "Becoming.Dephasing.z_preserves_norm",
+"module": "Becoming.Dephasing",
+"line": 137
+},
+{
+"full": "Becoming.Hexagram.pairOf_complement",
+"module": "Becoming.Hexagrams",
+"line": 628
+},
+": ∀ v0 : v1 , v2 ( v3 v0 ) = v2 v0"
+],
+[
+{
+"full": "Becoming.Dephasing.dephase_preserves_diagonal",
+"module": "Becoming.Dephasing",
+"line": 152
+},
+{
+"full": "Becoming.Dephasing.dephase_preserves_mass",
+"module": "Becoming.Dephasing",
+"line": 154
+},
+{
+"full": "Becoming.Hexagram.changesAround_waxWane",
+"module": "Becoming.HexagramLaws",
+"line": 1165
+},
+{
+"full": "Becoming.Hexagram.orbitIndex_waxWane",
+"module": "Becoming.HexagramLaws",
+"line": 1291
+},
+{
+"full": "Becoming.Hexagram.yangOdd_complement",
+"module": "Becoming.HexagramSequences",
+"line": 787
+},
+"( v0 : v1 ) : v2 ( v3 v0 ) = v2 v0"
+],
+[
+{
+"full": "Becoming.Frontier.burning_at",
+"module": "Becoming.Dissipation",
+"line": 872
+},
+{
+"full": "Becoming.OneStep.Witness.hit_pos",
+"module": "Becoming.OneStep",
+"line": 777
+},
+": ∀ v0 v1 , 0 < v2 v0 v1 → v0 = v1"
+],
+[
+{
+"full": "Becoming.Requirement.Handover.crossed_unranked",
+"module": "Becoming.Frontier",
+"line": 577
+},
+{
+"full": "Becoming.Lexical.Crossed.incomparable",
+"module": "Becoming.Lexical",
+"line": 537
+},
+": ¬ v0 v1 v2 v3 v4 ∧ ¬ v0 v1 v2 v4 v3"
+],
+[
+{
+"full": "Becoming.Cycle.length_edges",
+"module": "Becoming.Gluing",
+"line": 726
+},
+{
+"full": "Becoming.Law.upto_length",
+"module": "Becoming.Identification",
+"line": 1701
+},
+": ∀ v0 , ( v1 v0 ) . length = v0 + 1"
+],
+[
+{
+"full": "Becoming.Hexagram.innerPair_lumped",
+"module": "Becoming.HexagramLaws",
+"line": 213
+},
+{
+"full": "Becoming.Hexagram.classes_lumped",
+"module": "Becoming.HexagramLaws",
+"line": 654
+},
+{
+"full": "Becoming.Hexagram.MarkedLines.onward_lumped",
+"module": "Becoming.HexagramLaws",
+"line": 920
+},
+{
+"full": "Becoming.Hexagram.orbitIndex_lumped",
+"module": "Becoming.HexagramLaws",
+"line": 1297
+},
+{
+"full": "Becoming.Hexagram.opposition_lumped",
+"module": "Becoming.HexagramPlaces",
+"line": 802
+},
+{
+"full": "Becoming.Hexagram.yangOdd_lumped",
+"module": "Becoming.HexagramSequences",
+"line": 792
+},
+{
+"full": "Becoming.Hexagram.pairs_lumped",
+"module": "Becoming.Hexagrams",
+"line": 636
+},
+": v0 v1 ( fun v2 = > v1 ( v3 v2 ) )"
+],
+[
+{
+"full": "Becoming.Ideals.hull_closed",
+"module": "Becoming.Ideals",
+"line": 465
+},
+{
+"full": "Becoming.Ideals.interior_open",
+"module": "Becoming.Verification",
+"line": 413
+},
+{
+"full": "Becoming.verified_verifiable",
+"module": "Becoming.Verification",
+"line": 470
+},
+{
+"full": "Becoming.remainder_noStretchRefutes",
+"module": "Becoming.Verification",
+"line": 674
+},
+"( v0 : v1 v2 → Prop ) : v3 ( v4 v0 )"
+],
+[
+{
+"full": "Becoming.Changing.dissolving_consistent",
+"module": "Becoming.LawThroughChangingCoupling",
+"line": 257
+},
+{
+"full": "Becoming.Unseen.consistent_observing",
+"module": "Becoming.LawThroughCoupling",
+"line": 262
+},
+"( v0 : Nat ) : v1 ( v2 v3 ( ) ) v0"
+],
+[
+{
+"full": "Becoming.Clear.cases",
+"module": "Becoming.Change",
+"line": 406
+},
+{
+"full": "Becoming.bool_cases",
+"module": "Becoming.OrderNormal",
+"line": 1286
+},
+": ∀ v0 : Bool , v0 = v1 ∨ v0 = v2"
+],
+[
+{
+"full": "Becoming.Dephasing.recordBranch_involution",
+"module": "Becoming.Dephasing",
+"line": 222
+},
+{
+"full": "Becoming.Mutualism.other_other",
+"module": "Becoming.Descent",
+"line": 287
+},
+{
+"full": "Becoming.Hexagram.reverse_reverse",
+"module": "Becoming.HexagramLaws",
+"line": 465
+},
+{
+"full": "Becoming.Hexagram.complement_complement",
+"module": "Becoming.Hexagrams",
+"line": 272
+},
+{
+"full": "Becoming.Mutualism.other_twice",
+"module": "Becoming.Roles",
+"line": 799
+},
+": ∀ v0 : v1 , v2 ( v2 v0 ) = v0"
+],
+[
+{
+"full": "Becoming.Dispatch.two_mul",
+"module": "Becoming.Dispatch",
+"line": 268
+},
+{
+"full": "Becoming.Doubling.two_mul_eq",
+"module": "Becoming.Units",
+"line": 316
+},
+"( v0 : Nat ) : 2 * v0 = v0 + v0"
+],
+[
+{
+"full": "Becoming.Passing.not_not",
+"module": "Becoming.Entropy",
+"line": 1741
+},
+{
+"full": "Becoming.Hexagram.opposite_opposite",
+"module": "Becoming.Hexagrams",
+"line": 135
+},
+{
+"full": "Becoming.SharedCodes.TwoFormations.not_not",
+"module": "Becoming.SharedCodes",
+"line": 1250
+},
+": ∀ v0 : Bool , ( ! ! v0 ) = v0"
+],
+[
+{
+"full": "Becoming.Flow.closedAcross_within",
+"module": "Becoming.Feeding",
+"line": 283
+},
+{
+"full": "Becoming.Flow.fedClosed_within",
+"module": "Becoming.Interdependence",
+"line": 140
+},
+"( v0 : v1 ) : v2 v3 ( v4 v3 v0 )"
+],
+[
+{
+"full": "Becoming.FinerTraces.two_listed",
+"module": "Becoming.FinerTraces",
+"line": 211
+},
+{
+"full": "Becoming.Net.bools_every",
+"module": "Becoming.PlaceTransitionNets",
+"line": 809
+},
+{
+"full": "Becoming.Shuttle.every",
+"module": "Becoming.Roles",
+"line": 1218
+},
+": ∀ v0 : Bool , v0 ∈ [ v1 , v2 ]"
+],
+[
+{
+"full": "Becoming.add_one_sub_self",
+"module": "Becoming.Gain",
+"line": 85
+},
+{
+"full": "Becoming.succ_sub_self",
+"module": "Becoming.Order",
+"line": 164
+},
+": ∀ v0 : Nat , v0 + 1 - v0 = 1"
+],
+[
+{
+"full": "Becoming.Hexagram.subOne_addOne",
+"module": "Becoming.HexagramLaws",
+"line": 1015
+},
+{
+"full": "Becoming.Hexagram.orderBack_next",
+"module": "Becoming.HexagramSequences",
+"line": 325
+},
+{
+"full": "Becoming.Hexagram.orderNext_back",
+"module": "Becoming.HexagramSequences",
+"line": 328
+},
+"( v0 : v1 ) : v2 ( v3 v0 ) = v0"
+],
+[
+{
+"full": "Becoming.Hexagram.partner_partner",
+"module": "Becoming.HexagramSequences",
+"line": 968
+},
+{
+"full": "Becoming.MatchedCourses.b2_correspondence_involutive",
+"module": "Becoming.MatchedCourses",
+"line": 255
+},
+"( v0 : v1 ) : v2 ( v2 v0 ) = v0"
+],
+[
+{
+"full": "Becoming.Predation.fox_ends",
+"module": "Becoming.LabelledRoles",
+"line": 61
+},
+{
+"full": "Becoming.Predation.hare_ends",
+"module": "Becoming.Roles",
+"line": 849
+},
+": ∀ v0 , 2 < v0 → ¬ v1 v0 . v2"
+],
+[
+{
+"full": "Becoming.transpose_left",
+"module": "Becoming.Persistence",
+"line": 615
+},
+{
+"full": "Becoming.Relabel.swap_left",
+"module": "Becoming.Selection",
+"line": 417
+},
+"( v0 v1 : v2 ) : v3 v0 v1 v0 = v1"
+],
+[
+{
+"full": "Becoming.transpose_right",
+"module": "Becoming.Persistence",
+"line": 618
+},
+{
+"full": "Becoming.Relabel.swap_right",
+"module": "Becoming.Selection",
+"line": 419
+},
+"( v0 v1 : v2 ) : v3 v0 v1 v1 = v0"
+],
+[
+{
+"full": "Becoming.Cascade.upto_after",
+"module": "Becoming.Reserve",
+"line": 825
+},
+{
+"full": "Becoming.Brood.standing_before",
+"module": "Becoming.Roles",
+"line": 998
+},
+": ∀ v0 , v1 ( v0 + 1 ) v0 = 0"
+],
+[
+{
+"full": "Becoming.Clearing.dweller_alike_gone",
+"module": "Becoming.Selection",
+"line": 675
+},
+{
+"full": "Becoming.Clearing.withheld_alike_for_clearer",
+"module": "Becoming.SelectionPool",
+"line": 548
+},
+"( v0 : Nat ) : v1 v2 . v3 v4 v5 v0"
+],
+[
+{
+"full": "Becoming.Captured.not_ne",
+"module": "Becoming.Branching",
+"line": 1389
+},
+{
+"full": "Becoming.Enough.Free.not_ne_self",
+"module": "Becoming.Enough",
+"line": 176
+},
+{
+"full": "Becoming.Identification.not_ne_bool",
+"module": "Becoming.Identification",
+"line": 1120
+},
+{
+"full": "Becoming.Learning.not_moves",
+"module": "Becoming.Learning",
+"line": 1054
+},
+": ∀ v0 : Bool , ( ! v0 ) ≠ v0"
+],
+[
+{
+"full": "Becoming.Lone.fed",
+"module": "Becoming.Continuation",
+"line": 420
+},
+{
+"full": "Becoming.Clearing.fed",
+"module": "Becoming.Continuation",
+"line": 956
+},
+{
+"full": "Becoming.Frontier.around",
+"module": "Becoming.Dissipation",
+"line": 1007
+},
+{
+"full": "Becoming.Successive.fed",
+"module": "Becoming.Succession",
+"line": 105
+},
+"( v0 : Nat ) : v1 [ . v2 ] v0"
+],
+[
+{
+"full": "Becoming.Exceeding.live_of_present",
+"module": "Becoming.Continuation",
+"line": 522
+},
+{
+"full": "Becoming.Race.live_of_present",
+"module": "Becoming.RelativePosition",
+"line": 381
+},
+": ∀ v0 v1 , v1 ∈ v2 v0 → v3 v0"
+],
+[
+{
+"full": "Becoming.Dephasing.returns",
+"module": "Becoming.Dephasing",
+"line": 416
+},
+{
+"full": "Becoming.Hexagram.waxWane_process_returns",
+"module": "Becoming.Hexagrams",
+"line": 428
+},
+"( v0 : v1 ) : v2 ( v3 v4 ) v0"
+],
+[
+{
+"full": "Becoming.Flow.balances_iff_on",
+"module": "Becoming.Flow",
+"line": 341
+},
+{
+"full": "Becoming.Flow.mutuallyDependent_iff_reach",
+"module": "Becoming.MutualDependence",
+"line": 117
+},
+": v0 v1 ↔ ∀ v2 v3 , v4 v1 v2 v3"
+],
+[
+{
+"full": "Becoming.Pulse.even_even",
+"module": "Becoming.Flow",
+"line": 1006
+},
+{
+"full": "Becoming.Identification.course_double",
+"module": "Becoming.Identification",
+"line": 1131
+},
+": ∀ v0 , v1 ( 2 * v0 ) = v2"
+],
+[
+{
+"full": "Becoming.HistoryIdeals.units_length",
+"module": "Becoming.HistoryIdeals",
+"line": 475
+},
+{
+"full": "Becoming.Slow.length",
+"module": "Becoming.Openness",
+"line": 512
+},
+{
+"full": "Becoming.Trickle.conduits_length",
+"module": "Becoming.Resolution",
+"line": 2091
+},
+{
+"full": "Becoming.Undecided.upto_length",
+"module": "Becoming.Undecided",
+"line": 435
+},
+": ∀ v0 , ( v1 v0 ) . length = v0"
+],
+[
+{
+"full": "Becoming.Ideals.false_refutable",
+"module": "Becoming.Ideals",
+"line": 447
+},
+{
+"full": "Becoming.Ideals.false_closed",
+"module": "Becoming.Ideals",
+"line": 450
+},
+{
+"full": "Becoming.Ideals.open_false",
+"module": "Becoming.Verification",
+"line": 402
+},
+": v0 ( fun v1 : v2 v3 = > False )"
+],
+[
+{
+"full": "Becoming.IntegerOrder.sub_self",
+"module": "Becoming.IntegerOrder",
+"line": 70
+},
+{
+"full": "Becoming.Integers.add_right_neg",
+"module": "Becoming.Integers",
+"line": 173
+},
+"( v0 : Int ) : v0 + - v0 = 0"
+],
+[
+{
+"full": "Becoming.skip_le",
+"module": "Becoming.Likeness",
+"line": 505
+},
+{
+"full": "Becoming.skipAt_le",
+"module": "Becoming.Recurrence",
+"line": 133
+},
+": ∀ v0 v1 , v2 v0 v1 ≤ v1 + 1"
+],
+[
+{
+"full": "Becoming.World.stutter_counted",
+"module": "Becoming.Order",
+"line": 810
+},
+{
+"full": "Becoming.Footprinted.commute_contains",
+"module": "Becoming.Order",
+"line": 2232
+},
+{
+"full": "Becoming.Web.sample_dependent",
+"module": "Becoming.Sampling",
+"line": 162
+},
+{
+"full": "Becoming.Flow.sample_dissipative",
+"module": "Becoming.Sampling",
+"line": 596
+},
+{
+"full": "Becoming.World.sample_dependent",
+"module": "Becoming.Sampling",
+"line": 767
+},
+{
+"full": "Becoming.World.sample_dissipative",
+"module": "Becoming.Sampling",
+"line": 774
+},
+{
+"full": "Becoming.World.sample_embodied",
+"module": "Becoming.Sampling",
+"line": 777
+},
+{
+"full": "Becoming.World.sample_counted",
+"module": "Becoming.Sampling",
+"line": 780
+},
+{
+"full": "Becoming.World.sample_finite",
+"module": "Becoming.Sampling",
+"line": 784
+},
+"( v0 : v1 ) : ( v2 v3 ) . v1"
+],
+[
+{
+"full": "Becoming.Web.AlikeThroughAll.refl",
+"module": "Becoming.Selection",
+"line": 164
+},
+{
+"full": "Becoming.Web.AlikeThrough.refl",
+"module": "Becoming.Testing",
+"line": 238
+},
+"( v0 : Nat ) : v1 v2 v3 v4 v4 v0"
+],
+[
+{
+"full": "Becoming.Gauged.dependent",
+"module": "Becoming.Testing",
+"line": 862
+},
+{
+"full": "Becoming.Thresholds.Draw.nonanticipating",
+"module": "Becoming.Thresholds",
+"line": 547
+},
+"( v0 : Nat ) : ( v1 v0 ) . v2"
+],
+[
+{
+"full": "Becoming.ActiveReading.absent_dependent",
+"module": "Becoming.ActiveReading",
+"line": 73
+},
+{
+"full": "Becoming.Requirement.Formation.decided_basis",
+"module": "Becoming.Frontier",
+"line": 360
+},
+{
+"full": "Becoming.Requirement.Formation.decided_formed",
+"module": "Becoming.Frontier",
+"line": 416
+},
+"( v0 : v1 ) : v2 ( v3 v0 )"
+],
+[
+{
+"full": "Becoming.Closing.Threshold.reads",
+"module": "Becoming.Closing",
+"line": 550
+},
+{
+"full": "Becoming.Rooted.present_distinct",
+"module": "Becoming.Dissipation",
+"line": 1078
+},
+{
+"full": "Becoming.EndOfPath.finite",
+"module": "Becoming.Likeness",
+"line": 1150
+},
+{
+"full": "Becoming.StrictTransport.cutoff_transitive",
+"module": "Becoming.StrictTransport",
+"line": 151
+},
+"( v0 : Nat ) : v1 ( v2 v0 )"
+],
+[
+{
+"full": "Becoming.ContinuingRevision.next_ne",
+"module": "Becoming.ContinuingRevision",
+"line": 176
+},
+{
+"full": "Becoming.Naturals.succ_ne_self",
+"module": "Becoming.Naturals",
+"line": 84
+},
+"( v0 : Nat ) : v0 + 1 ≠ v0"
+],
+[
+{
+"full": "Becoming.flipIf_self",
+"module": "Becoming.Description",
+"line": 158
+},
+{
+"full": "Becoming.Hexagram.same_self",
+"module": "Becoming.Hexagrams",
+"line": 120
+},
+": ∀ v0 : Bool , v1 v0 v0 = v2"
+],
+[
+{
+"full": "Becoming.couple_couple",
+"module": "Becoming.Description",
+"line": 278
+},
+{
+"full": "Becoming.Turnover.swap_swap",
+"module": "Becoming.Identity",
+"line": 1333
+},
+{
+"full": "Becoming.TideFlip.swap_swap",
+"module": "Becoming.Identity",
+"line": 1458
+},
+{
+"full": "Becoming.Lineage.swap_swap",
+"module": "Becoming.Identity",
+"line": 1780
+},
+{
+"full": "Becoming.Succession.swap_swap",
+"module": "Becoming.Identity",
+"line": 1894
+},
+{
+"full": "Becoming.Dormancy.swap_swap",
+"module": "Becoming.Identity",
+"line": 2011
+},
+{
+"full": "Becoming.Hibernation.swap_swap",
+"module": "Becoming.Persistence",
+"line": 308
+},
+": ∀ v0 , v1 ( v1 v0 ) = v0"
+],
+[
+{
+"full": "Becoming.distinct_configurations",
+"module": "Becoming.Entropy",
+"line": 965
+},
+{
+"full": "Becoming.Requirement.Routes.decided_fresh",
+"module": "Becoming.Frontier",
+"line": 676
+},
+{
+"full": "Becoming.steps_distinct",
+"module": "Becoming.Population",
+"line": 767
+},
+": ∀ v0 v1 , v2 ( v3 v0 v1 )"
+],
+[
+{
+"full": "Becoming.FrontierFrames.Priority.above",
+"module": "Becoming.FrontierFrames",
+"line": 423
+},
+{
+"full": "Becoming.Lasting.lasts_ladder",
+"module": "Becoming.Lasting",
+"line": 147
+},
+{
+"full": "Becoming.Lasting.lasts_necessary",
+"module": "Becoming.Lasting",
+"line": 164
+},
+{
+"full": "Becoming.Lasting.reaches_funnel",
+"module": "Becoming.Lasting",
+"line": 557
+},
+{
+"full": "Becoming.Lasting.reaches_basin",
+"module": "Becoming.Lasting",
+"line": 581
+},
+": v0 v1 v2 v3 ( v4 v1 v2 v3 )"
+],
+[
+{
+"full": "Becoming.Handoff.revising_state",
+"module": "Becoming.Handoff",
+"line": 318
+},
+{
+"full": "Becoming.Run.world_webAt",
+"module": "Becoming.Runs",
+"line": 128
+},
+{
+"full": "Becoming.Run.world_move",
+"module": "Becoming.Runs",
+"line": 132
+},
+"( v0 : Nat ) : v1 v0 = v2 v0"
+],
+[
+{
+"full": "Becoming.Hexagram.beq_self",
+"module": "Becoming.HexagramSequences",
+"line": 686
+},
+{
+"full": "Becoming.Loops.beq_self",
+"module": "Becoming.Loops",
+"line": 133
+},
+{
+"full": "Becoming.beq_self",
+"module": "Becoming.OrderNormal",
+"line": 865
+},
+{
+"full": "Becoming.SharedCodes.Gloss.beq_self",
+"module": "Becoming.SharedCodes",
+"line": 1452
+},
+": ∀ v0 : Nat , v1 v0 v0 = v2"
+],
+[
+{
+"full": "Becoming.LLPO.succ_ne_zero",
+"module": "Becoming.Likeness",
+"line": 1354
+},
+{
+"full": "Becoming.ScoreRepresentation.succ_ne_zero",
+"module": "Becoming.ScoreRepresentation",
+"line": 62
+},
+"( v0 : Nat ) : v0 + 1 ≠ 0"
+],
+[
+{
+"full": "Becoming.Flow.ActingAt.roles",
+"module": "Becoming.OneStep",
+"line": 1987
+},
+{
+"full": "Becoming.Flow.TakingAt.roles",
+"module": "Becoming.OneStep",
+"line": 1993
+},
+{
+"full": "Becoming.Flow.Commuted.symm",
+"module": "Becoming.Order",
+"line": 1286
+},
+{
+"full": "Becoming.Web.Commuted.symm",
+"module": "Becoming.Order",
+"line": 1342
+},
+"( v0 : v1 v2 v3 ) : v1 v4 v3"
+],
+[
+{
+"full": "Becoming.Lapse.unsupported",
+"module": "Becoming.Order",
+"line": 964
+},
+{
+"full": "Becoming.Seed.dark",
+"module": "Becoming.Reserve",
+"line": 545
+},
+{
+"full": "Becoming.Viable.dark",
+"module": "Becoming.Reserve",
+"line": 596
+},
+{
+"full": "Becoming.Dwindle.unsupported",
+"module": "Becoming.Resolution",
+"line": 2054
+},
+{
+"full": "Becoming.Slowing.unbounded",
+"module": "Becoming.Return",
+"line": 295
+},
+"( v0 : Nat ) : ¬ v1 v0 ( )"
+],
+[
+{
+"full": "Becoming.Flow.adopt_balances",
+"module": "Becoming.Reading",
+"line": 142
+},
+{
+"full": "Becoming.Flow.adopt_acting",
+"module": "Becoming.Reading",
+"line": 146
+},
+{
+"full": "Becoming.Flow.adopt_taking",
+"module": "Becoming.Reading",
+"line": 150
+},
+{
+"full": "Becoming.SupportGated.balances",
+"module": "Becoming.RenewalFlow",
+"line": 138
+},
+{
+"full": "Becoming.Once.carries",
+"module": "Becoming.Reserve",
+"line": 976
+},
+{
+"full": "Becoming.Asymptote.taking",
+"module": "Becoming.Resolution",
+"line": 1537
+},
+{
+"full": "Becoming.Asymptote.acting",
+"module": "Becoming.Resolution",
+"line": 1540
+},
+": ( v0 v1 ) . v2 ( v3 v1 )"
+],
+[
+{
+"full": "Becoming.ActiveReading.contest_extends_active",
+"module": "Becoming.ActiveReading",
+"line": 146
+},
+{
+"full": "Becoming.Ranking.possible_contest",
+"module": "Becoming.Relevance",
+"line": 388
+},
+{
+"full": "Becoming.Ranking.ThirdParty.possible_extends",
+"module": "Becoming.Relevance",
+"line": 419
+},
+": v0 ( v1 v2 ) . v3 . v4"
+],
+[
+{
+"full": "Becoming.CodeAcquisition.primitives_no_exact",
+"module": "Becoming.CodeAcquisition",
+"line": 285
+},
+{
+"full": "Becoming.PartialReadout.signal_no_exact",
+"module": "Becoming.PartialReadout",
+"line": 224
+},
+": ¬ ∃ v0 , v1 v2 v3 v4 v0"
+],
+[
+{
+"full": "Becoming.Specker.flip_ne",
+"module": "Becoming.Context",
+"line": 249
+},
+{
+"full": "Becoming.Coupling.ne_not",
+"module": "Becoming.Coupling",
+"line": 720
+},
+": ∀ v0 : Bool , v0 ≠ ! v0"
+],
+[
+{
+"full": "Becoming.WithinClosure.refl",
+"module": "Becoming.Feedback",
+"line": 172
+},
+{
+"full": "Becoming.Flow.WithinFeedingAcross.refl",
+"module": "Becoming.Feeding",
+"line": 268
+},
+{
+"full": "Becoming.Flow.WithinFeeding.refl",
+"module": "Becoming.Interdependence",
+"line": 126
+},
+"( v0 : v1 ) : v2 v3 v0 v0"
+],
+[
+{
+"full": "Becoming.Limit.noneFailed_verifies",
+"module": "Becoming.LimitVerification",
+"line": 200
+},
+{
+"full": "Becoming.Limit.noneFailed_refutes",
+"module": "Becoming.LimitVerification",
+"line": 207
+},
+{
+"full": "Becoming.Limit.someSucceeded_verifies",
+"module": "Becoming.LimitVerification",
+"line": 239
+},
+{
+"full": "Becoming.Limit.someSucceeded_refutes",
+"module": "Becoming.LimitVerification",
+"line": 244
+},
+{
+"full": "Becoming.Few.listed",
+"module": "Becoming.Openness",
+"line": 844
+},
+": v0 ( v1 v2 ) ( v3 v2 )"
+],
+[
+{
+"full": "Becoming.Repeated.census",
+"module": "Becoming.Population",
+"line": 1508
+},
+{
+"full": "Becoming.Circulation.standing",
+"module": "Becoming.Resolution",
+"line": 1718
+},
+": v0 fun v1 = > [ ( ) ]"
+],
+[
+{
+"full": "Becoming.Accretion.never_ceases",
+"module": "Becoming.Change",
+"line": 641
+},
+{
+"full": "Becoming.Attrition.nothing_arises",
+"module": "Becoming.Change",
+"line": 666
+},
+{
+"full": "Becoming.Countless.never",
+"module": "Becoming.Wholes",
+"line": 378
+},
+": ∀ v0 v1 , ¬ v2 v0 v1"
+],
+[
+{
+"full": "Becoming.Specker.marks_self",
+"module": "Becoming.Context",
+"line": 239
+},
+{
+"full": "Becoming.addParity_self",
+"module": "Becoming.Gluing",
+"line": 95
+},
+{
+"full": "Becoming.Cycle.beq_self",
+"module": "Becoming.Gluing",
+"line": 741
+},
+{
+"full": "Becoming.stepBeyond_self",
+"module": "Becoming.Persistence",
+"line": 657
+},
+": ∀ v0 , v1 v0 v0 = v2"
+],
+[
+{
+"full": "Becoming.Mutualism.apart_not_connected",
+"module": "Becoming.Correspondence",
+"line": 604
+},
+{
+"full": "Becoming.Mutualism.apart_not_interacting",
+"module": "Becoming.Correspondence",
+"line": 613
+},
+{
+"full": "Becoming.Brood.not_coparticipating",
+"module": "Becoming.Descent",
+"line": 239
+},
+{
+"full": "Becoming.Brood.not_interacting",
+"module": "Becoming.Descent",
+"line": 247
+},
+{
+"full": "Becoming.Drowsy.not_interacting",
+"module": "Becoming.Descent",
+"line": 394
+},
+{
+"full": "Becoming.Net.cycle_not_dissipative",
+"module": "Becoming.PlaceTransitionNets",
+"line": 825
+},
+": ¬ ( v0 v1 v2 ) . v3"
+],
+[
+{
+"full": "Becoming.Brood.descent_connected",
+"module": "Becoming.Descent",
+"line": 231
+},
+{
+"full": "Becoming.Net.world_embodied",
+"module": "Becoming.PlaceTransitionNets",
+"line": 683
+},
+": ( v0 v1 v2 v3 ) . v4"
+],
+[
+{
+"full": "Becoming.Frontier.burning_self",
+"module": "Becoming.Dissipation",
+"line": 868
+},
+{
+"full": "Becoming.Passing.holds_self",
+"module": "Becoming.Entropy",
+"line": 1745
+},
+{
+"full": "Becoming.OneStep.Witness.hit_self",
+"module": "Becoming.OneStep",
+"line": 773
+},
+{
+"full": "Becoming.Cascade.upto_self",
+"module": "Becoming.Reserve",
+"line": 829
+},
+{
+"full": "Becoming.Brood.standing_self",
+"module": "Becoming.Roles",
+"line": 994
+},
+": ∀ v0 , v1 v0 v0 = 1"
+],
+[
+{
+"full": "Becoming.Rooted.growers_distinct",
+"module": "Becoming.Dissipation",
+"line": 1071
+},
+{
+"full": "Becoming.distinct_splits",
+"module": "Becoming.Entropy",
+"line": 934
+},
+{
+"full": "Becoming.distinct_downFrom",
+"module": "Becoming.Entropy",
+"line": 999
+},
+{
+"full": "Becoming.Requirement.Formation.decided_linked",
+"module": "Becoming.Frontier",
+"line": 354
+},
+{
+"full": "Becoming.Accretion.alive_distinct",
+"module": "Becoming.Openness",
+"line": 433
+},
+{
+"full": "Becoming.Expansion.distinct",
+"module": "Becoming.Population",
+"line": 1370
+},
+{
+"full": "Becoming.Cycle.distinct",
+"module": "Becoming.Population",
+"line": 1403
+},
+{
+"full": "Becoming.Inactive.distinct",
+"module": "Becoming.Population",
+"line": 1571
+},
+{
+"full": "Becoming.SituationTraces.distinct_upto",
+"module": "Becoming.SituationTraces",
+"line": 91
+},
+{
+"full": "Becoming.Tower.reads_strict",
+"module": "Becoming.Tower",
+"line": 63
+},
+{
+"full": "Becoming.TypicalRuns.distinct_courses",
+"module": "Becoming.TypicalRuns",
+"line": 192
+},
+": ∀ v0 , v1 ( v2 v0 )"
+],
+[
+{
+"full": "Becoming.Spray.unenclosed",
+"module": "Becoming.Dissipation",
+"line": 1318
+},
+{
+"full": "Becoming.ExchangeLaw.spreading_not_enclosed",
+"module": "Becoming.ExchangePremises",
+"line": 535
+},
+{
+"full": "Becoming.World.accretion_unbounded",
+"module": "Becoming.Openness",
+"line": 456
+},
+{
+"full": "Becoming.Exposed.open_at",
+"module": "Becoming.Openness",
+"line": 981
+},
+{
+"full": "Becoming.Holding.open_at",
+"module": "Becoming.Openness",
+"line": 1052
+},
+{
+"full": "Becoming.Circulation.not_dissipativeBy",
+"module": "Becoming.Resolution",
+"line": 1711
+},
+{
+"full": "Becoming.Alternation.not_dissipativeBy",
+"module": "Becoming.Resolution",
+"line": 2027
+},
+{
+"full": "Becoming.Trickle.not_dissipativeBy",
+"module": "Becoming.Resolution",
+"line": 2347
+},
+{
+"full": "Becoming.SprayShuttle.unenclosed",
+"module": "Becoming.Roles",
+"line": 1512
+},
+"( v0 : Nat ) : ¬ v1 v0"
+],
+[
+{
+"full": "Becoming.Passing.closed",
+"module": "Becoming.Entropy",
+"line": 1806
+},
+{
+"full": "Becoming.Passing.changes",
+"module": "Becoming.Entropy",
+"line": 1835
+},
+{
+"full": "Becoming.Passing.revisits",
+"module": "Becoming.Entropy",
+"line": 1853
+},
+{
+"full": "Becoming.Settling.closed",
+"module": "Becoming.Entropy",
+"line": 1983
+},
+{
+"full": "Becoming.World.Hatch.closed",
+"module": "Becoming.Premises",
+"line": 964
+},
+{
+"full": "Becoming.World.FiniteHatch.closed",
+"module": "Becoming.Premises",
+"line": 1108
+},
+{
+"full": "Becoming.Trickle.sides_closed",
+"module": "Becoming.Resolution",
+"line": 2317
+},
+{
+"full": "Becoming.Undecided.chain_closed",
+"module": "Becoming.Undecided",
+"line": 538
+},
+"( v0 : Nat ) : v1 v2 v0"
+],
+[
+{
+"full": "Becoming.Midway.inserted_changes_tests",
+"module": "Becoming.Granularity",
+"line": 1339
+},
+{
+"full": "Becoming.Unbounded.not_alike",
+"module": "Becoming.Likeness",
+"line": 2339
+},
+": ¬ v0 v1 v1 . v2 . v3"
+],
+[
+{
+"full": "Becoming.Hexagram.changes_returns",
+"module": "Becoming.Hexagrams",
+"line": 349
+},
+{
+"full": "Becoming.World.finiteHatch_drawn",
+"module": "Becoming.Transmission",
+"line": 660
+},
+"( v0 : v1 ) : v2 v3 v0"
+],
+[
+{
+"full": "Becoming.Web.reidentify_dependent",
+"module": "Becoming.Identity",
+"line": 215
+},
+{
+"full": "Becoming.World.withoutIdle_counted",
+"module": "Becoming.Order",
+"line": 3378
+},
+": ( v0 v1 ) . v2 ↔ v2"
+],
+[
+{
+"full": "Becoming.Ranking.ThirdParty.over_le_stops",
+"module": "Becoming.Ranking",
+"line": 709
+},
+{
+"full": "Becoming.ScoreRepresentation.ratio_bounded",
+"module": "Becoming.ScoreRepresentation",
+"line": 186
+},
+": ∀ v0 , v1 v0 ≤ v2 v0"
+],
+[
+{
+"full": "Becoming.AttractionRuns.ratchet_false_never_returns",
+"module": "Becoming.AttractionRuns",
+"line": 132
+},
+{
+"full": "Becoming.AttractionRuns.ratchet_true_not_drawn",
+"module": "Becoming.AttractionRuns",
+"line": 140
+},
+{
+"full": "Becoming.Hexagram.nuclear_yang_not_goAlike",
+"module": "Becoming.HexagramLaws",
+"line": 226
+},
+{
+"full": "Becoming.Hexagram.classes_not_goAlike_waxWane",
+"module": "Becoming.HexagramLaws",
+"line": 668
+},
+{
+"full": "Becoming.Hexagram.MarkedLines.shown_not_goAlike",
+"module": "Becoming.HexagramLaws",
+"line": 916
+},
+{
+"full": "Becoming.Hexagram.phaseCount_not_goAlike",
+"module": "Becoming.HexagramPlaces",
+"line": 759
+},
+{
+"full": "Becoming.Hexagram.nuclear_yangOdd_not_goAlike",
+"module": "Becoming.HexagramSequences",
+"line": 826
+},
+{
+"full": "Becoming.Hexagram.betweenPhases_not_goAlike",
+"module": "Becoming.HexagramSites",
+"line": 637
+},
+{
+"full": "Becoming.Hexagram.yang_not_goAlike",
+"module": "Becoming.Hexagrams",
+"line": 659
+},
+{
+"full": "Becoming.Transfer.merged_not_respects",
+"module": "Becoming.Regrouping",
+"line": 283
+},
+": ¬ v0 ( v1 v2 ) v3"
+],
+[
+{
+"full": "Becoming.Regimes.extension",
+"module": "Becoming.Bundles",
+"line": 361
+},
+{
+"full": "Becoming.Requirement.Formation.left_above_idle",
+"module": "Becoming.Frontier",
+"line": 385
+},
+{
+"full": "Becoming.Requirement.Formation.left_above_overbuild",
+"module": "Becoming.Frontier",
+"line": 391
+},
+": v0 v1 v2 . v3 . v4"
+],
+[
+{
+"full": "Becoming.Accretion.rises",
+"module": "Becoming.Change",
+"line": 644
+},
+{
+"full": "Becoming.Sharing.within",
+"module": "Becoming.Exclusion",
+"line": 339
+},
+": ∀ v0 , v1 v0 ( )"
+],
+[
+{
+"full": "Becoming.ContinuingRevision.use_pos",
+"module": "Becoming.ContinuingRevision",
+"line": 458
+},
+{
+"full": "Becoming.halving_pos",
+"module": "Becoming.Resolution",
+"line": 1425
+},
+{
+"full": "Becoming.quarter_pos",
+"module": "Becoming.Resolution",
+"line": 1429
+},
+{
+"full": "Becoming.Doubling.double_pos",
+"module": "Becoming.Units",
+"line": 312
+},
+": ∀ v0 , 0 < v1 v0"
+],
+[
+{
+"full": "Becoming.Mutualism.connected",
+"module": "Becoming.Correspondence",
+"line": 590
+},
+{
+"full": "Becoming.Mutualism.apart_sustenance_connected",
+"module": "Becoming.Descent",
+"line": 272
+},
+{
+"full": "Becoming.Drowsy.sustenance_connected",
+"module": "Becoming.Descent",
+"line": 390
+},
+": ( v0 v1 v2 ) . v3"
+],
+[
+{
+"full": "Becoming.Frontier.enclosed",
+"module": "Becoming.Dissipation",
+"line": 1003
+},
+{
+"full": "Becoming.Lone.enclosed",
+"module": "Becoming.Dissipation",
+"line": 1232
+},
+{
+"full": "Becoming.Gathering.enclosed",
+"module": "Becoming.Entropy",
+"line": 2129
+},
+{
+"full": "Becoming.Cascade.embodied",
+"module": "Becoming.Reserve",
+"line": 842
+},
+{
+"full": "Becoming.Emission.enclosed",
+"module": "Becoming.Resolution",
+"line": 1869
+},
+{
+"full": "Becoming.Alternation.enclosed",
+"module": "Becoming.Resolution",
+"line": 1981
+},
+{
+"full": "Becoming.Trickle.enclosed",
+"module": "Becoming.Resolution",
+"line": 2323
+},
+"( v0 : Nat ) : v1 v0"
+],
+[
+{
+"full": "Becoming.Drawdown.descends_same",
+"module": "Becoming.Evolution",
+"line": 447
+},
+{
+"full": "Becoming.Drawdown.descends_varied",
+"module": "Becoming.Evolution",
+"line": 450
+},
+{
+"full": "Becoming.TwoGivers.descends_first",
+"module": "Becoming.Transmission",
+"line": 873
+},
+{
+"full": "Becoming.TwoGivers.descends_second",
+"module": "Becoming.Transmission",
+"line": 876
+},
+": v0 v1 0 . v2 . v3"
+],
+[
+{
+"full": "Becoming.Seeker.level_pos",
+"module": "Becoming.Exhaustion",
+"line": 230
+},
+{
+"full": "Becoming.Ranking.ThirdParty.stops_supports",
+"module": "Becoming.Ranking",
+"line": 647
+},
+": ∀ v0 , 1 ≤ v1 v0"
+],
+[
+{
+"full": "Becoming.Clearing.reach_centred",
+"module": "Becoming.Feedback",
+"line": 1488
+},
+{
+"full": "Becoming.Provision.parent_beyond",
+"module": "Becoming.Feeding",
+"line": 558
+},
+{
+"full": "Becoming.Clearing.dweller_beyond",
+"module": "Becoming.Interdependence",
+"line": 539
+},
+": ¬ v0 v1 . v2 . v3"
+],
+[
+{
+"full": "Becoming.Unbounded.sameBranchingTests",
+"module": "Becoming.Likeness",
+"line": 2312
+},
+{
+"full": "Becoming.Twins.left_alike_right",
+"module": "Becoming.Unfolding",
+"line": 405
+},
+": v0 v1 v1 . v2 . v3"
+],
+[
+{
+"full": "Becoming.Replenishing.through",
+"module": "Becoming.Rejoining",
+"line": 393
+},
+{
+"full": "Becoming.RuleCapture.Counts.lowers",
+"module": "Becoming.RuleCapture",
+"line": 441
+},
+": v0 ( v1 v2 ) v3 v4"
+],
+[
+{
+"full": "Becoming.Branching.OneWay.returns",
+"module": "Becoming.Branching",
+"line": 778
+},
+{
+"full": "Becoming.Twins.determinedAt",
+"module": "Becoming.Branching",
+"line": 1257
+},
+{
+"full": "Becoming.Coarse.first_determinedAt",
+"module": "Becoming.Branching",
+"line": 1315
+},
+{
+"full": "Becoming.Activation.together_all",
+"module": "Becoming.Bundles",
+"line": 189
+},
+{
+"full": "Becoming.Hexagram.waxWane_returns",
+"module": "Becoming.Hexagrams",
+"line": 424
+},
+": ∀ v0 , v1 v2 v0"
+],
+[
+{
+"full": "Becoming.Hexagram.pairs_goAlike_of_commutes",
+"module": "Becoming.Commuting",
+"line": 228
+},
+{
+"full": "Becoming.Trophic.near_closed",
+"module": "Becoming.Feedback",
+"line": 1090
+},
+{
+"full": "Becoming.Clearing.alongDependence_closed",
+"module": "Becoming.Feedback",
+"line": 1329
+},
+{
+"full": "Becoming.Clearing.clearerReach_closed",
+"module": "Becoming.Feedback",
+"line": 1466
+},
+{
+"full": "Becoming.Hexagram.innerPair_goAlike",
+"module": "Becoming.HexagramLaws",
+"line": 217
+},
+{
+"full": "Becoming.Hexagram.classes_goAlike",
+"module": "Becoming.HexagramLaws",
+"line": 660
+},
+{
+"full": "Becoming.Hexagram.MarkedLines.onward_goAlike",
+"module": "Becoming.HexagramLaws",
+"line": 924
+},
+{
+"full": "Becoming.Hexagram.orbitIndex_goAlike",
+"module": "Becoming.HexagramLaws",
+"line": 1301
+},
+{
+"full": "Becoming.Hexagram.opposition_goAlike",
+"module": "Becoming.HexagramPlaces",
+"line": 807
+},
+{
+"full": "Becoming.Hexagram.yangOdd_goAlike",
+"module": "Becoming.HexagramSequences",
+"line": 795
+},
+{
+"full": "Becoming.Hexagram.pairs_goAlike",
+"module": "Becoming.Hexagrams",
+"line": 647
+},
+": v0 ( v1 v2 ) v3"
+],
+[
+{
+"full": "Becoming.Loop.responds_by_law",
+"module": "Becoming.Counterfactual",
+"line": 784
+},
+{
+"full": "Becoming.Trophic.responds_through_coupling",
+"module": "Becoming.Response",
+"line": 357
+},
+{
+"full": "Becoming.Loop.responds",
+"module": "Becoming.Response",
+"line": 601
+},
+": v0 v1 v2 v3 v4 v5"
+],
+[
+{
+"full": "Becoming.Dephasing.not_lossless",
+"module": "Becoming.Dephasing",
+"line": 363
+},
+{
+"full": "Becoming.Hexagram.nuclear_loses",
+"module": "Becoming.HexagramLaws",
+"line": 172
+},
+{
+"full": "Becoming.Hexagram.wane_loses",
+"module": "Becoming.Hexagrams",
+"line": 574
+},
+": ¬ v0 ( v1 v2 )"
+],
+[
+{
+"full": "Becoming.Flow.Dissipative.gainless",
+"module": "Becoming.Entropy",
+"line": 173
+},
+{
+"full": "Becoming.Flow.Lossless.gainless",
+"module": "Becoming.Entropy",
+"line": 179
+},
+{
+"full": "Becoming.World.withRest_embodied_balanced",
+"module": "Becoming.ExchangePremises",
+"line": 310
+},
+{
+"full": "Becoming.RecursOrStops.lpo",
+"module": "Becoming.Frequency",
+"line": 717
+},
+{
+"full": "Becoming.EitherNever.of_nowhereDecided",
+"module": "Becoming.Likeness",
+"line": 1314
+},
+{
+"full": "Becoming.EitherThroughout.of_nowhereDecided",
+"module": "Becoming.Likeness",
+"line": 1324
+},
+{
+"full": "Becoming.LLPO.of_lpo",
+"module": "Becoming.Likeness",
+"line": 1391
+},
+{
+"full": "Becoming.LLPO.of_forDecided",
+"module": "Becoming.Likeness",
+"line": 1398
+},
+{
+"full": "Becoming.LLPO.of_eitherThroughout",
+"module": "Becoming.Likeness",
+"line": 1507
+},
+{
+"full": "Becoming.World.Dependent.carried",
+"module": "Becoming.Premises",
+"line": 153
+},
+{
+"full": "Becoming.ExchangeLaw.ReadsFinitely.nonanticipating",
+"module": "Becoming.Sensitivity",
+"line": 137
+},
+{
+"full": "Becoming.WLPO.of_lpo",
+"module": "Becoming.Sensitivity",
+"line": 402
+},
+{
+"full": "Becoming.World.Embodied.arising",
+"module": "Becoming.Space",
+"line": 238
+},
+{
+"full": "Becoming.TailRuns.vanish_decides",
+"module": "Becoming.TailRuns",
+"line": 171
+},
+"( v0 : v1 ) : v2"
+],
+[
+{
+"full": "Becoming.Trophic.wolves_unreached",
+"module": "Becoming.Feedback",
+"line": 1179
+},
+{
+"full": "Becoming.ProjectedLaws.exchange_unavailable_before_formation",
+"module": "Becoming.ProjectedLaws",
+"line": 257
+},
+": ¬ v0 v1 v2 . v3"
+],
+[
+{
+"full": "Becoming.Hexagram.changes_keeps",
+"module": "Becoming.Hexagrams",
+"line": 361
+},
+{
+"full": "Becoming.Clearing.shares_not_mutual",
+"module": "Becoming.MutualDependence",
+"line": 171
+},
+": v0 v1 ∧ ¬ v2 v1"
+],
+[
+{
+"full": "Becoming.Crossing.ending_dependent",
+"module": "Becoming.Labelled",
+"line": 639
+},
+{
+"full": "Becoming.Crossing.transforming_dependent",
+"module": "Becoming.Labelled",
+"line": 644
+},
+{
+"full": "Becoming.Crossing.restoring_dependent",
+"module": "Becoming.Labelled",
+"line": 650
+},
+{
+"full": "Becoming.Net.law_nonanticipating",
+"module": "Becoming.PlaceTransitionNets",
+"line": 186
+},
+{
+"full": "Becoming.SupportGatedWebs.fluctuating_dependent",
+"module": "Becoming.RenewalFlow",
+"line": 324
+},
+{
+"full": "Becoming.Asymptote.dissipative",
+"module": "Becoming.Resolution",
+"line": 1517
+},
+{
+"full": "Becoming.Asymptote.dependent",
+"module": "Becoming.Resolution",
+"line": 1529
+},
+{
+"full": "Becoming.Flow.sample_once",
+"module": "Becoming.Sampling",
+"line": 437
+},
+{
+"full": "Becoming.tailLaw_nonanticipating",
+"module": "Becoming.Sensitivity",
+"line": 321
+},
+{
+"full": "Becoming.neverLaw_nonanticipating",
+"module": "Becoming.Tail",
+"line": 383
+},
+": ( v0 v1 ) . v2"
+],
+[
+{
+"full": "Becoming.Net.bools_distinct",
+"module": "Becoming.PlaceTransitionNets",
+"line": 806
+},
+{
+"full": "Becoming.Shuttle.distinct",
+"module": "Becoming.Roles",
+"line": 1222
+},
+{
+"full": "Becoming.Diversion.places_distinct",
+"module": "Becoming.SelectionReach",
+"line": 201
+},
+{
+"full": "Becoming.SituationTraces.distinct_two",
+"module": "Becoming.SituationTraces",
+"line": 120
+},
+": v0 [ v1 , v2 ]"
+],
+[
+{
+"full": "Becoming.Exit.leaves",
+"module": "Becoming.Attraction",
+"line": 435
+},
+{
+"full": "Becoming.CodeAcquisition.primitives_not_lumped",
+"module": "Becoming.CodeAcquisition",
+"line": 278
+},
+{
+"full": "Becoming.Irreversibility.deadEnd_no_return",
+"module": "Becoming.Irreversibility",
+"line": 34
+},
+{
+"full": "Becoming.PartialReadout.signal_not_lumped",
+"module": "Becoming.PartialReadout",
+"line": 220
+},
+{
+"full": "Becoming.Reconfiguration.shared_cause_no_step",
+"module": "Becoming.Reconfiguration",
+"line": 592
+},
+": ¬ v0 v1 v2 v3"
+],
+[
+{
+"full": "Becoming.AttractionRuns.ratchet_merges",
+"module": "Becoming.AttractionRuns",
+"line": 128
+},
+{
+"full": "Becoming.clock_determined",
+"module": "Becoming.Coupling",
+"line": 376
+},
+{
+"full": "Becoming.Dephasing.process_merges",
+"module": "Becoming.Dephasing",
+"line": 359
+},
+{
+"full": "Becoming.Hexagram.nuclear_process_merges",
+"module": "Becoming.HexagramLaws",
+"line": 168
+},
+{
+"full": "Becoming.Hexagram.MarkedLines.settle_process_merges",
+"module": "Becoming.HexagramLaws",
+"line": 874
+},
+{
+"full": "Becoming.Hexagram.wane_process_merges",
+"module": "Becoming.Hexagrams",
+"line": 579
+},
+{
+"full": "Becoming.Diversion.diverting_balances",
+"module": "Becoming.Selection",
+"line": 821
+},
+{
+"full": "Becoming.Diversion.undiverted_balances",
+"module": "Becoming.Selection",
+"line": 827
+},
+{
+"full": "Becoming.Diversion.supplying_balances",
+"module": "Becoming.Selection",
+"line": 831
+},
+{
+"full": "Becoming.Diversion.diverting_acting",
+"module": "Becoming.Selection",
+"line": 843
+},
+{
+"full": "Becoming.Diversion.diverting_taking",
+"module": "Becoming.Selection",
+"line": 848
+},
+{
+"full": "Becoming.neverIndicator_changedByNoCondition",
+"module": "Becoming.Tail",
+"line": 352
+},
+{
+"full": "Becoming.Attracting.lower_balances",
+"module": "Becoming.Testing",
+"line": 1111
+},
+{
+"full": "Becoming.Attracting.higher_balances",
+"module": "Becoming.Testing",
+"line": 1116
+},
+": v0 ( v1 v2 )"
+],
+[
+{
+"full": "Becoming.Dephasing.dephase_merges_preparations",
+"module": "Becoming.Dephasing",
+"line": 196
+},
+{
+"full": "Becoming.ProjectedLaws.formation_preserves_cell_values",
+"module": "Becoming.ProjectedLaws",
+"line": 245
+},
+": v0 v1 = v0 v2"
+],
+[
+{
+"full": "Becoming.Clearing.reaches_dweller",
+"module": "Becoming.Feedback",
+"line": 1432
+},
+{
+"full": "Becoming.Viability.ChoicePoint.joint_keepable",
+"module": "Becoming.JointKeeping",
+"line": 233
+},
+{
+"full": "Becoming.ProjectedLaws.exchange_available_after_formation",
+"module": "Becoming.ProjectedLaws",
+"line": 260
+},
+": v0 v1 v2 . v3"
+],
+[
+{
+"full": "Becoming.Lexical.Repair.above",
+"module": "Becoming.Lexical",
+"line": 520
+},
+{
+"full": "Becoming.PartialReadout.paired_exact",
+"module": "Becoming.PartialReadout",
+"line": 213
+},
+{
+"full": "Becoming.PartialReadout.direct_exact_unreversed",
+"module": "Becoming.PartialReadout",
+"line": 236
+},
+{
+"full": "Becoming.ReferencePlan.complete_history",
+"module": "Becoming.ReferencePlan",
+"line": 325
+},
+{
+"full": "Becoming.RuleHandoff.formation_trace",
+"module": "Becoming.RuleHandoff",
+"line": 411
+},
+{
+"full": "Becoming.RuleHandoff.revision_trace",
+"module": "Becoming.RuleHandoff",
+"line": 414
+},
+": v0 v1 v2 v3 v4"
+],
+[
+{
+"full": "Becoming.Flow.byOccurrence_balances",
+"module": "Becoming.Listing",
+"line": 963
+},
+{
+"full": "Becoming.Flow.byOccurrence_acting",
+"module": "Becoming.Listing",
+"line": 969
+},
+{
+"full": "Becoming.Flow.byOccurrence_taking",
+"module": "Becoming.Listing",
+"line": 974
+},
+{
+"full": "Becoming.TailRuns.vanishRule_iff_trueRule",
+"module": "Becoming.TailRuns",
+"line": 167
+},
+": v0 v1 ↔ v0 v2"
+],
+[
+{
+"full": "Becoming.Famine.transformed_not_undermining",
+"module": "Becoming.Reserve",
+"line": 770
+},
+{
+"full": "Becoming.World.grazing_browser_ends",
+"module": "Becoming.Space",
+"line": 855
+},
+": ¬ v0 1 . v1"
+],
+[
+{
+"full": "Becoming.Asymptote.distinct",
+"module": "Becoming.Resolution",
+"line": 1513
+},
+{
+"full": "Becoming.Circulation.distinct",
+"module": "Becoming.Resolution",
+"line": 1706
+},
+{
+"full": "Becoming.SituationTraces.distinct_unit",
+"module": "Becoming.SituationTraces",
+"line": 116
+},
+": v0 [ ( ) ]"
+],
+[
+{
+"full": "Becoming.Transfer.withheld",
+"module": "Becoming.Admission",
+"line": 794
+},
+{
+"full": "Becoming.Ratchet.false_drawn",
+"module": "Becoming.Attraction",
+"line": 392
+},
+{
+"full": "Becoming.Exit.keeps",
+"module": "Becoming.Attraction",
+"line": 431
+},
+{
+"full": "Becoming.Loop.replyLaw_through",
+"module": "Becoming.Counterfactual",
+"line": 760
+},
+{
+"full": "Becoming.Loop.escalation_follows",
+"module": "Becoming.Counterfactual",
+"line": 770
+},
+{
+"full": "Becoming.Loop.quiet_follows",
+"module": "Becoming.Counterfactual",
+"line": 778
+},
+{
+"full": "Becoming.Trophic.wolves_withheld",
+"module": "Becoming.Feedback",
+"line": 1156
+},
+{
+"full": "Becoming.Trophic.farWolves_withheld",
+"module": "Becoming.Feedback",
+"line": 1250
+},
+{
+"full": "Becoming.JointPhase.summary_update_exact",
+"module": "Becoming.JointPhase",
+"line": 149
+},
+{
+"full": "Becoming.LearnedGrouping.spelled",
+"module": "Becoming.LearnedGrouping",
+"line": 86
+},
+{
+"full": "Becoming.PositiveGround.g0_holds",
+"module": "Becoming.PositiveGround",
+"line": 430
+},
+{
+"full": "Becoming.Reconfiguration.combined_draw_steps",
+"module": "Becoming.Reconfiguration",
+"line": 615
+},
+{
+"full": "Becoming.ReferencePlan.draws_held",
+"module": "Becoming.ReferencePlan",
+"line": 435
+},
+{
+"full": "Becoming.Clearing.withheld",
+"module": "Becoming.Regions",
+"line": 273
+},
+{
+"full": "Becoming.RuleCapture.Counts.raises",
+"module": "Becoming.RuleCapture",
+"line": 426
+},
+{
+"full": "Becoming.RuleHandoff.rule_kept",
+"module": "Becoming.RuleHandoff",
+"line": 216
+},
+{
+"full": "Becoming.Clearing.restLaw_through",
+"module": "Becoming.SelectionPool",
+"line": 464
+},
+{
+"full": "Becoming.Clearing.rest_follows",
+"module": "Becoming.SelectionPool",
+"line": 468
+},
+{
+"full": "Becoming.Clearing.rest_follows_spared",
+"module": "Becoming.SelectionPool",
+"line": 472
+},
+{
+"full": "Becoming.Prey.withheld",
+"module": "Becoming.Testing",
+"line": 1234
+},
+": v0 v1 v2 v3"
+],
+[
+{
+"full": "Becoming.Ratchet.false_never_returns",
+"module": "Becoming.Attraction",
+"line": 396
+},
+{
+"full": "Becoming.Ratchet.true_not_drawn",
+"module": "Becoming.Attraction",
+"line": 403
+},
+{
+"full": "Becoming.Exit.not_invariant",
+"module": "Becoming.Attraction",
+"line": 439
+},
+{
+"full": "Becoming.Hexagram.wane_breaks",
+"module": "Becoming.Commuting",
+"line": 232
+},
+{
+"full": "Becoming.evenBoxes_not_determined",
+"module": "Becoming.Description",
+"line": 203
+},
+{
+"full": "Becoming.Presentations.full_not_reduced",
+"module": "Becoming.Presentations",
+"line": 232
+},
+{
+"full": "Becoming.RuleCapture.Counts.hi_not_le_lo",
+"module": "Becoming.RuleCapture",
+"line": 617
+},
+{
+"full": "Becoming.RuleCapture.Counts.hi_not_le_twoToOne",
+"module": "Becoming.RuleCapture",
+"line": 619
+},
+{
+"full": "Becoming.SharedCodes.TwoFormations.centre_breaks_exchange",
+"module": "Becoming.SharedCodes",
+"line": 1323
+},
+{
+"full": "Becoming.SharedCodes.TwoFormations.ordered_breaks_exchange",
+"module": "Becoming.SharedCodes",
+"line": 1334
+},
+": ¬ v0 v1 v2"
+],
+[
+{
+"full": "Becoming.Branching.Transit.before_returns",
+"module": "Becoming.Branching",
+"line": 890
+},
+{
+"full": "Becoming.Lasting.Fan.root_unbounded",
+"module": "Becoming.Lasting",
+"line": 1136
+},
+{
+"full": "Becoming.Generations.whole",
+"module": "Becoming.Wholes",
+"line": 222
+},
+{
+"full": "Becoming.Gaps.whole",
+"module": "Becoming.Wholes",
+"line": 412
+},
+": v0 v1 . v2"
+],
+[
+{
+"full": "Becoming.Activation.PastRelease.not_both",
+"module": "Becoming.Bundles",
+"line": 316
+},
+{
+"full": "Becoming.Requirement.Formation.not_basis_overbuild",
+"module": "Becoming.Frontier",
+"line": 376
+},
+{
+"full": "Becoming.Turnover.pool_not_renewed",
+"module": "Becoming.Identity",
+"line": 1347
+},
+{
+"full": "Becoming.Joining.Once.passage_alone",
+"module": "Becoming.Joining",
+"line": 1028
+},
+{
+"full": "Becoming.Hibernation.pool_not_renewed",
+"module": "Becoming.Persistence",
+"line": 324
+},
+{
+"full": "Becoming.PositiveGround.barren_not_live",
+"module": "Becoming.PositiveGround",
+"line": 358
+},
+": ¬ v0 . v1"
+],
+[
+{
+"full": "Becoming.Hexagram.nuclear_jiJi",
+"module": "Becoming.HexagramLaws",
+"line": 271
+},
+{
+"full": "Becoming.Hexagram.nuclear_weiJi",
+"module": "Becoming.HexagramLaws",
+"line": 273
+},
+{
+"full": "Becoming.Hexagram.orderNext_closes",
+"module": "Becoming.HexagramSequences",
+"line": 323
+},
+{
+"full": "Becoming.Hexagram.feng_no_sole",
+"module": "Becoming.HexagramSites",
+"line": 975
+},
+": v0 v1 = v2"
+],
+[
+{
+"full": "Becoming.Constant.not_goAlike",
+"module": "Becoming.LawAlongRun",
+"line": 201
+},
+{
+"full": "Becoming.Twins.naming_not_identifiesAlike",
+"module": "Becoming.Unfolding",
+"line": 437
+},
+": ¬ v0 v1 id"
+],
+[
+{
+"full": "Becoming.Assurance.Branch.not_determined",
+"module": "Becoming.Assurance",
+"line": 153
+},
+{
+"full": "Becoming.CrossingContexts.not_joinClosed",
+"module": "Becoming.ContextArrivalTraces",
+"line": 234
+},
+{
+"full": "Becoming.Hexagram.waxWane_not_runsOrder",
+"module": "Becoming.HexagramSequences",
+"line": 448
+},
+{
+"full": "Becoming.Choosing.early_not_determined",
+"module": "Becoming.Histories",
+"line": 419
+},
+{
+"full": "Becoming.Sequences.recurs_not_refutable",
+"module": "Becoming.Horizon",
+"line": 372
+},
+{
+"full": "Becoming.Sequences.eventually_not_refutable",
+"module": "Becoming.Horizon",
+"line": 381
+},
+{
+"full": "Becoming.Coarse.not_determined",
+"module": "Becoming.Mechanism",
+"line": 360
+},
+{
+"full": "Becoming.OneStep.vanishing_not_continues",
+"module": "Becoming.OneStep",
+"line": 3631
+},
+{
+"full": "Becoming.Twins.not_determined",
+"module": "Becoming.Unfolding",
+"line": 389
+},
+{
+"full": "Becoming.Sequences.recurs_not_verifiable",
+"module": "Becoming.Verification",
+"line": 852
+},
+": ¬ v0 v1"
+],
+[
+{
+"full": "Becoming.AssurancePlans.Routes.left_adequate",
+"module": "Becoming.AssurancePlans",
+"line": 259
+},
+{
+"full": "Becoming.AssurancePlans.Routes.right_adequate",
+"module": "Becoming.AssurancePlans",
+"line": 265
+},
+{
+"full": "Becoming.Ratchet.absorbing",
+"module": "Becoming.Attraction",
+"line": 389
+},
+{
+"full": "Becoming.Ratchet.true_returns",
+"module": "Becoming.Attraction",
+"line": 400
+},
+{
+"full": "Becoming.Branching.OneWay.atTrue_invariant",
+"module": "Becoming.Branching",
+"line": 789
+},
+{
+"full": "Becoming.Branching.Transit.atAfter_invariant",
+"module": "Becoming.Branching",
+"line": 880
+},
+{
+"full": "Becoming.Hexagram.changes_symmetric",
+"module": "Becoming.Commuting",
+"line": 246
+},
+{
+"full": "Becoming.Specker.local_",
+"module": "Becoming.Context",
+"line": 218
+},
+{
+"full": "Becoming.Specker.unforced",
+"module": "Becoming.Context",
+"line": 255
+},
+{
+"full": "Becoming.Square.local_",
+"module": "Becoming.Context",
+"line": 341
+},
+{
+"full": "Becoming.Square.unforced",
+"module": "Becoming.Context",
+"line": 378
+},
+{
+"full": "Becoming.ExchangeLaw.sprouting_feasible",
+"module": "Becoming.ExchangePremises",
+"line": 459
+},
+{
+"full": "Becoming.FaultEnvelopes.one_fault_separation",
+"module": "Becoming.FaultEnvelopes",
+"line": 206
+},
+{
+"full": "Becoming.FaultEnvelopes.correlated_four_separation",
+"module": "Becoming.FaultEnvelopes",
+"line": 209
+},
+{
+"full": "Becoming.Trophic.fed_closed",
+"module": "Becoming.Feedback",
+"line": 1042
+},
+{
+"full": "Becoming.Fragment.passage_traced",
+"module": "Becoming.Fragments",
+"line": 214
+},
+{
+"full": "Becoming.ParitySystem.local_",
+"module": "Becoming.Gluing",
+"line": 386
+},
+{
+"full": "Becoming.Hexagram.nuclear_inner",
+"module": "Becoming.HexagramLaws",
+"line": 149
+},
+{
+"full": "Becoming.Hexagram.attractor_absorbing",
+"module": "Becoming.HexagramLaws",
+"line": 307
+},
+{
+"full": "Becoming.Hexagram.yangOdd_goAlike_changes",
+"module": "Becoming.HexagramSequences",
+"line": 799
+},
+{
+"full": "Becoming.Clearing.fedClosed",
+"module": "Becoming.Interdependence",
+"line": 498
+},
+{
+"full": "Becoming.Limit.Sequences.lastMove_refutes",
+"module": "Becoming.LimitVerification",
+"line": 530
+},
+{
+"full": "Becoming.Limit.Sequences.notLastMove_verifies",
+"module": "Becoming.LimitVerification",
+"line": 545
+},
+{
+"full": "Becoming.Net.cycle_fires",
+"module": "Becoming.PlaceTransitionNets",
+"line": 803
+},
+{
+"full": "Becoming.Presentations.short_exact",
+"module": "Becoming.Presentations",
+"line": 222
+},
+{
+"full": "Becoming.Presentations.full_exact",
+"module": "Becoming.Presentations",
+"line": 224
+},
+{
+"full": "Becoming.Presentations.short_reduced",
+"module": "Becoming.Presentations",
+"line": 226
+},
+{
+"full": "Becoming.RuleCapture.Counts.lo_le_hi",
+"module": "Becoming.RuleCapture",
+"line": 615
+},
+{
+"full": "Becoming.RuleCapture.Counts.twoToOne_le_hi",
+"module": "Becoming.RuleCapture",
+"line": 621
+},
+{
+"full": "Becoming.SharedCodes.TwoFormations.crossing_keeps_exchange",
+"module": "Becoming.SharedCodes",
+"line": 1270
+},
+{
+"full": "Becoming.SharedCodes.TwoFormations.preferred_keeps_exchange",
+"module": "Becoming.SharedCodes",
+"line": 1300
+},
+{
+"full": "Becoming.Generations.listed",
+"module": "Becoming.Wholes",
+"line": 225
+},
+{
+"full": "Becoming.Gaps.listed",
+"module": "Becoming.Wholes",
+"line": 423
+},
+": v0 v1 v2"
+],
+[
+{
+"full": "Becoming.Carriers.static_ne_toggle",
+"module": "Becoming.Carriers",
+"line": 186
+},
+{
+"full": "Becoming.Dephasing.prepared_ne_coherent",
+"module": "Becoming.Dephasing",
+"line": 353
+},
+": v0 ≠ v1"
+],
+[
+{
+"full": "Becoming.Hexagram.complement_moves",
+"module": "Becoming.Commuting",
+"line": 212
+},
+{
+"full": "Becoming.Undecided.rotate_moves",
+"module": "Becoming.Undecided",
+"line": 767
+},
+": v0 Eq v1"
+],
+[
+{
+"full": "Becoming.Requirement.Formation.basis_left",
+"module": "Becoming.Frontier",
+"line": 374
+},
+{
+"full": "Becoming.Requirement.Formation.basis_right",
+"module": "Becoming.Frontier",
+"line": 375
+},
+{
+"full": "Becoming.Dormancy.consumed",
+"module": "Becoming.Identity",
+"line": 2055
+},
+{
+"full": "Becoming.Joining.Once.start_self",
+"module": "Becoming.Joining",
+"line": 1025
+},
+{
+"full": "Becoming.Hibernation.pool_consumed",
+"module": "Becoming.Persistence",
+"line": 321
+},
+{
+"full": "Becoming.Hibernation.renewing",
+"module": "Becoming.Persistence",
+"line": 327
+},
+{
+"full": "Becoming.PositiveGround.live_one",
+"module": "Becoming.PositiveGround",
+"line": 350
+},
+{
+"full": "Becoming.PositiveGround.live_two",
+"module": "Becoming.PositiveGround",
+"line": 354
+},
+{
+"full": "Becoming.Famine.hare_embodied",
+"module": "Becoming.Reserve",
+"line": 733
+},
+{
+"full": "Becoming.Wilting.embodied",
+"module": "Becoming.Roles",
+"line": 911
+},
+{
+"full": "Becoming.Wilting.selfBearing",
+"module": "Becoming.Roles",
+"line": 913
+},
+": v0 . v1"
+],
+[
+{
+"full": "Becoming.Coarse.matching",
+"module": "Becoming.LawAlongRun",
+"line": 241
+},
+{
+"full": "Becoming.Coarse.goAlike",
+"module": "Becoming.Mechanism",
+"line": 365
+},
+": v0 v1 fst"
+],
+[
+{
+"full": "Becoming.eitherThroughout_iff_eitherNever",
+"module": "Becoming.Likeness",
+"line": 1286
+},
+{
+"full": "Becoming.eitherNever_iff_llpoForDecided",
+"module": "Becoming.Likeness",
+"line": 1478
+},
+{
+"full": "Becoming.eitherThroughout_iff_llpoForDecided",
+"module": "Becoming.Likeness",
+"line": 1503
+},
+{
+"full": "Becoming.TailRuns.wlpo_iff_runs",
+"module": "Becoming.TailRuns",
+"line": 103
+},
+{
+"full": "Becoming.TailRuns.lpo_iff_runs",
+"module": "Becoming.TailRuns",
+"line": 109
+},
+": v0 ↔ v1"
+],
+[
+{
+"full": "Becoming.Flow.byOccurrence_dissipative",
+"module": "Becoming.Listing",
+"line": 950
+},
+{
+"full": "Becoming.Web.roles_dependent",
+"module": "Becoming.Roles",
+"line": 216
+},
+{
+"full": "Becoming.Web.roles_unceasing",
+"module": "Becoming.Roles",
+"line": 268
+},
+{
+"full": "Becoming.Flow.roles_dissipative",
+"module": "Becoming.Roles",
+"line": 374
+},
+": v0 ↔ v0"
+],
+[
+{
+"full": "Becoming.Transfer.balances",
+"module": "Becoming.Admission",
+"line": 751
+},
+{
+"full": "Becoming.Transfer.acting",
+"module": "Becoming.Admission",
+"line": 757
+},
+{
+"full": "Becoming.Transfer.taking",
+"module": "Becoming.Admission",
+"line": 765
+},
+{
+"full": "Becoming.Ratchet.merges",
+"module": "Becoming.Attraction",
+"line": 386
+},
+{
+"full": "Becoming.Branching.OneWay.determined",
+"module": "Becoming.Branching",
+"line": 775
+},
+{
+"full": "Becoming.Branching.OneWay.merges",
+"module": "Becoming.Branching",
+"line": 783
+},
+{
+"full": "Becoming.Branching.Transit.determined",
+"module": "Becoming.Branching",
+"line": 860
+},
+{
+"full": "Becoming.Branching.fork_lossless",
+"module": "Becoming.Branching",
+"line": 943
+},
+{
+"full": "Becoming.Activation.together_retained",
+"module": "Becoming.Bundles",
+"line": 187
+},
+{
+"full": "Becoming.Carriers.static_total",
+"module": "Becoming.Carriers",
+"line": 123
+},
+{
+"full": "Becoming.Carriers.toggle_total",
+"module": "Becoming.Carriers",
+"line": 125
+},
+{
+"full": "Becoming.Carriers.static_determined",
+"module": "Becoming.Carriers",
+"line": 127
+},
+{
+"full": "Becoming.Carriers.toggle_determined",
+"module": "Becoming.Carriers",
+"line": 129
+},
+{
+"full": "Becoming.Carriers.static_symmetric",
+"module": "Becoming.Carriers",
+"line": 131
+},
+{
+"full": "Becoming.Carriers.toggle_symmetric",
+"module": "Becoming.Carriers",
+"line": 133
+},
+{
+"full": "Becoming.Carriers.static_unique_predecessor",
+"module": "Becoming.Carriers",
+"line": 137
+},
+{
+"full": "Becoming.Carriers.toggle_unique_predecessor",
+"module": "Becoming.Carriers",
+"line": 141
+},
+{
+"full": "Becoming.Carriers.negation_bool_bijection",
+"module": "Becoming.Carriers",
+"line": 148
+},
+{
+"full": "Becoming.Carriers.static_renaming_invariant",
+"module": "Becoming.Carriers",
+"line": 166
+},
+{
+"full": "Becoming.Carriers.toggle_renaming_invariant",
+"module": "Becoming.Carriers",
+"line": 169
+},
+{
+"full": "Becoming.Carriers.static_symmetry_candidate",
+"module": "Becoming.Carriers",
+"line": 178
+},
+{
+"full": "Becoming.Carriers.toggle_symmetry_candidate",
+"module": "Becoming.Carriers",
+"line": 182
+},
+{
+"full": "Becoming.Specker.noGlobal",
+"module": "Becoming.Context",
+"line": 224
+},
+{
+"full": "Becoming.Square.noGlobal",
+"module": "Becoming.Context",
+"line": 352
+},
+{
+"full": "Becoming.Exceeding.balances",
+"module": "Becoming.Continuation",
+"line": 517
+},
+{
+"full": "Becoming.Exceeding.acting",
+"module": "Becoming.Continuation",
+"line": 527
+},
+{
+"full": "Becoming.Alone.balances",
+"module": "Becoming.Continuation",
+"line": 592
+},
+{
+"full": "Becoming.Downstream.balances",
+"module": "Becoming.Continuation",
+"line": 669
+},
+{
+"full": "Becoming.Mortal.balances",
+"module": "Becoming.Continuation",
+"line": 760
+},
+{
+"full": "Becoming.Clearing.balances",
+"module": "Becoming.Continuation",
+"line": 911
+},
+{
+"full": "Becoming.Dephasing.merges",
+"module": "Becoming.Dephasing",
+"line": 356
+},
+{
+"full": "Becoming.Unrelated.balances",
+"module": "Becoming.Descent",
+"line": 453
+},
+{
+"full": "Becoming.Unrelated.acting",
+"module": "Becoming.Descent",
+"line": 457
+},
+{
+"full": "Becoming.Frontier.balances",
+"module": "Becoming.Dissipation",
+"line": 930
+},
+{
+"full": "Becoming.Rooted.balances",
+"module": "Becoming.Dissipation",
+"line": 1053
+},
+{
+"full": "Becoming.Rooted.census",
+"module": "Becoming.Dissipation",
+"line": 1082
+},
+{
+"full": "Becoming.Rooted.taking",
+"module": "Becoming.Dissipation",
+"line": 1093
+},
+{
+"full": "Becoming.Rooted.acting",
+"module": "Becoming.Dissipation",
+"line": 1099
+},
+{
+"full": "Becoming.Lone.balances",
+"module": "Becoming.Dissipation",
+"line": 1175
+},
+{
+"full": "Becoming.Passing.distinct",
+"module": "Becoming.Entropy",
+"line": 1768
+},
+{
+"full": "Becoming.Passing.balances",
+"module": "Becoming.Entropy",
+"line": 1796
+},
+{
+"full": "Becoming.Settling.balances",
+"module": "Becoming.Entropy",
+"line": 1973
+},
+{
+"full": "Becoming.Gathering.balances",
+"module": "Becoming.Entropy",
+"line": 2097
+},
+{
+"full": "Becoming.Drawdown.balances",
+"module": "Becoming.Evolution",
+"line": 385
+},
+{
+"full": "Becoming.Drawdown.acting",
+"module": "Becoming.Evolution",
+"line": 399
+},
+{
+"full": "Becoming.Drawdown.taking",
+"module": "Becoming.Evolution",
+"line": 406
+},
+{
+"full": "Becoming.Excluding.balances",
+"module": "Becoming.Exclusion",
+"line": 255
+},
+{
+"full": "Becoming.Excluding.acting",
+"module": "Becoming.Exclusion",
+"line": 259
+},
+{
+"full": "Becoming.Sharing.balances",
+"module": "Becoming.Exclusion",
+"line": 337
+},
+{
+"full": "Becoming.Seeker.balances",
+"module": "Becoming.Exhaustion",
+"line": 216
+},
+{
+"full": "Becoming.Confound.determined",
+"module": "Becoming.Experiment",
+"line": 282
+},
+{
+"full": "Becoming.Confound.moveDecides_determined",
+"module": "Becoming.Experiment",
+"line": 327
+},
+{
+"full": "Becoming.Trophic.balances",
+"module": "Becoming.Feedback",
+"line": 952
+},
+{
+"full": "Becoming.Trophic.acting",
+"module": "Becoming.Feedback",
+"line": 959
+},
+{
+"full": "Becoming.Trophic.taking",
+"module": "Becoming.Feedback",
+"line": 966
+},
+{
+"full": "Becoming.Trophic.responsive_balances",
+"module": "Becoming.Feedback",
+"line": 994
+},
+{
+"full": "Becoming.Trophic.responsive_acting",
+"module": "Becoming.Feedback",
+"line": 1001
+},
+{
+"full": "Becoming.Trophic.responsive_taking",
+"module": "Becoming.Feedback",
+"line": 1008
+},
+{
+"full": "Becoming.Clearing.spared_balances",
+"module": "Becoming.Feedback",
+"line": 1384
+},
+{
+"full": "Becoming.Margin.balances",
+"module": "Becoming.Feedback",
+"line": 1567
+},
+{
+"full": "Becoming.Late.balances",
+"module": "Becoming.Feedback",
+"line": 1630
+},
+{
+"full": "Becoming.Provision.balances",
+"module": "Becoming.Feeding",
+"line": 508
+},
+{
+"full": "Becoming.Provision.acting",
+"module": "Becoming.Feeding",
+"line": 514
+},
+{
+"full": "Becoming.Provision.taking",
+"module": "Becoming.Feeding",
+"line": 519
+},
+{
+"full": "Becoming.Growing.balances",
+"module": "Becoming.Flow",
+"line": 689
+},
+{
+"full": "Becoming.Specker.openings_contradict",
+"module": "Becoming.Gluing",
+"line": 522
+},
+{
+"full": "Becoming.Specker.noGlobal_of_contradiction",
+"module": "Becoming.Gluing",
+"line": 529
+},
+{
+"full": "Becoming.CHSH.pairs_contradict",
+"module": "Becoming.Gluing",
+"line": 587
+},
+{
+"full": "Becoming.Square.lines_contradict",
+"module": "Becoming.Gluing",
+"line": 668
+},
+{
+"full": "Becoming.Square.noGlobal_of_contradiction",
+"module": "Becoming.Gluing",
+"line": 671
+},
+{
+"full": "Becoming.Hexagram.nuclear_merges",
+"module": "Becoming.HexagramLaws",
+"line": 164
+},
+{
+"full": "Becoming.Hexagram.MarkedLines.settle_merges",
+"module": "Becoming.HexagramLaws",
+"line": 868
+},
+{
+"full": "Becoming.Hexagram.addOne_lossless",
+"module": "Becoming.HexagramLaws",
+"line": 1021
+},
+{
+"full": "Becoming.Hexagram.gen_halves_glue",
+"module": "Becoming.HexagramPlaces",
+"line": 910
+},
+{
+"full": "Becoming.Hexagram.orderNext_runsOrder",
+"module": "Becoming.HexagramSequences",
+"line": 318
+},
+{
+"full": "Becoming.Hexagram.orderNext_lossless",
+"module": "Becoming.HexagramSequences",
+"line": 332
+},
+{
+"full": "Becoming.Hexagram.changes_merges",
+"module": "Becoming.Hexagrams",
+"line": 356
+},
+{
+"full": "Becoming.Hexagram.waxWane_lossless",
+"module": "Becoming.Hexagrams",
+"line": 419
+},
+{
+"full": "Becoming.Hexagram.wane_merges",
+"module": "Becoming.Hexagrams",
+"line": 544
+},
+{
+"full": "Becoming.HistoryLanguages.Bounded.prefixClosed",
+"module": "Becoming.HistoryLanguages",
+"line": 142
+},
+{
+"full": "Becoming.HistoryLanguages.unrestricted_stable",
+"module": "Becoming.HistoryLanguages",
+"line": 323
+},
+{
+"full": "Becoming.Merge.noSplit",
+"module": "Becoming.Identity",
+"line": 1578
+},
+{
+"full": "Becoming.Confluence.noSplit",
+"module": "Becoming.Identity",
+"line": 1636
+},
+{
+"full": "Becoming.Tandem.census",
+"module": "Becoming.Identity",
+"line": 1694
+},
+{
+"full": "Becoming.Overshoot.balances",
+"module": "Becoming.Interdependence",
+"line": 350
+},
+{
+"full": "Becoming.Overshoot.acting",
+"module": "Becoming.Interdependence",
+"line": 358
+},
+{
+"full": "Becoming.Overshoot.taking",
+"module": "Becoming.Interdependence",
+"line": 363
+},
+{
+"full": "Becoming.Shock.determined",
+"module": "Becoming.Joint",
+"line": 312
+},
+{
+"full": "Becoming.Pool.determined",
+"module": "Becoming.Joint",
+"line": 404
+},
+{
+"full": "Becoming.Blocked.determined",
+"module": "Becoming.Joint",
+"line": 602
+},
+{
+"full": "Becoming.Changing.determined",
+"module": "Becoming.LawThroughChangingCoupling",
+"line": 231
+},
+{
+"full": "Becoming.Unseen.determined",
+"module": "Becoming.LawThroughCoupling",
+"line": 225
+},
+{
+"full": "Becoming.Limit.Sequences.lastMove_byRecord",
+"module": "Becoming.LimitVerification",
+"line": 525
+},
+{
+"full": "Becoming.Limit.Sequences.notLastMove_byRecord",
+"module": "Becoming.LimitVerification",
+"line": 540
+},
+{
+"full": "Becoming.Doubled.balances",
+"module": "Becoming.Listing",
+"line": 566
+},
+{
+"full": "Becoming.Joining.atMostOnce_neutral",
+"module": "Becoming.LocalUnits",
+"line": 245
+},
+{
+"full": "Becoming.MatchedCourses.allClaims_distinct",
+"module": "Becoming.MatchedCourses",
+"line": 297
+},
+{
+"full": "Becoming.Switching.determined",
+"module": "Becoming.Mechanism",
+"line": 400
+},
+{
+"full": "Becoming.Overshoot.mutuallyFed",
+"module": "Becoming.MutualDependence",
+"line": 179
+},
+{
+"full": "Becoming.Drawing.balances",
+"module": "Becoming.MutualDependence",
+"line": 213
+},
+{
+"full": "Becoming.Drawing.mutuallyDependent",
+"module": "Becoming.MutualDependence",
+"line": 225
+},
+{
+"full": "Becoming.DoublingDraw.balances",
+"module": "Becoming.MutualDependence",
+"line": 489
+},
+{
+"full": "Becoming.OneStep.swapped_continues",
+"module": "Becoming.OneStep",
+"line": 3580
+},
+{
+"full": "Becoming.Accretion.census",
+"module": "Becoming.Openness",
+"line": 438
+},
+{
+"full": "Becoming.Halving.stutter",
+"module": "Becoming.Order",
+"line": 923
+},
+{
+"full": "Becoming.Lapse.carried",
+"module": "Becoming.Order",
+"line": 968
+},
+{
+"full": "Becoming.Crossing.balances",
+"module": "Becoming.Order",
+"line": 1838
+},
+{
+"full": "Becoming.Arising.balances",
+"module": "Becoming.Order",
+"line": 1935
+},
+{
+"full": "Becoming.Arising.acting",
+"module": "Becoming.Order",
+"line": 1944
+},
+{
+"full": "Becoming.Expansion.census",
+"module": "Becoming.Population",
+"line": 1390
+},
+{
+"full": "Becoming.Cycle.census",
+"module": "Becoming.Population",
+"line": 1415
+},
+{
+"full": "Becoming.Oscillation.census",
+"module": "Becoming.Population",
+"line": 1439
+},
+{
+"full": "Becoming.World.strained_but",
+"module": "Becoming.Premises",
+"line": 319
+},
+{
+"full": "Becoming.World.unbalanced_but",
+"module": "Becoming.Premises",
+"line": 330
+},
+{
+"full": "Becoming.World.scatter_but",
+"module": "Becoming.Premises",
+"line": 418
+},
+{
+"full": "Becoming.World.morsel_but",
+"module": "Becoming.Premises",
+"line": 495
+},
+{
+"full": "Becoming.World.lossless_but",
+"module": "Becoming.Premises",
+"line": 558
+},
+{
+"full": "Becoming.World.latent_but",
+"module": "Becoming.Premises",
+"line": 598
+},
+{
+"full": "Becoming.World.multitude_but",
+"module": "Becoming.Premises",
+"line": 621
+},
+{
+"full": "Becoming.World.novel_but",
+"module": "Becoming.Premises",
+"line": 743
+},
+{
+"full": "Becoming.World.Hatch.kin_distinct",
+"module": "Becoming.Premises",
+"line": 959
+},
+{
+"full": "Becoming.World.FiniteHatch.kin_distinct",
+"module": "Becoming.Premises",
+"line": 1104
+},
+{
+"full": "Becoming.Propagation.distinct_two",
+"module": "Becoming.Propagation",
+"line": 1203
+},
+{
+"full": "Becoming.ReferencePlan.propose_answers",
+"module": "Becoming.ReferencePlan",
+"line": 472
+},
+{
+"full": "Becoming.ReferencePlan.frozen_blind",
+"module": "Becoming.ReferencePlan",
+"line": 484
+},
+{
+"full": "Becoming.Regulation.Overshooting.balances",
+"module": "Becoming.Regulation",
+"line": 450
+},
+{
+"full": "Becoming.Regulation.OneSided.balances",
+"module": "Becoming.Regulation",
+"line": 506
+},
+{
+"full": "Becoming.Race.balances",
+"module": "Becoming.RelativePosition",
+"line": 376
+},
+{
+"full": "Becoming.Race.acting",
+"module": "Becoming.RelativePosition",
+"line": 386
+},
+{
+"full": "Becoming.Restored.balances",
+"module": "Becoming.RelativePosition",
+"line": 516
+},
+{
+"full": "Becoming.Restored.acting",
+"module": "Becoming.RelativePosition",
+"line": 521
+},
+{
+"full": "Becoming.Clearing.acting",
+"module": "Becoming.RelativePosition",
+"line": 567
+},
+{
+"full": "Becoming.Famine.balances",
+"module": "Becoming.Reserve",
+"line": 701
+},
+{
+"full": "Becoming.Cascade.carries",
+"module": "Becoming.Reserve",
+"line": 870
+},
+{
+"full": "Becoming.Cascade.decays",
+"module": "Becoming.Reserve",
+"line": 873
+},
+{
+"full": "Becoming.ShortCascade.carries",
+"module": "Becoming.Reserve",
+"line": 912
+},
+{
+"full": "Becoming.ShortCascade.decays",
+"module": "Becoming.Reserve",
+"line": 915
+},
+{
+"full": "Becoming.Provisioned.balances",
+"module": "Becoming.Reserve",
+"line": 1081
+},
+{
+"full": "Becoming.Provisioned.acting",
+"module": "Becoming.Reserve",
+"line": 1086
+},
+{
+"full": "Becoming.Emission.census",
+"module": "Becoming.Resolution",
+"line": 1806
+},
+{
+"full": "Becoming.Emission.acting",
+"module": "Becoming.Resolution",
+"line": 1887
+},
+{
+"full": "Becoming.Emission.taking",
+"module": "Becoming.Resolution",
+"line": 1891
+},
+{
+"full": "Becoming.Trickle.sides_distinct",
+"module": "Becoming.Resolution",
+"line": 2193
+},
+{
+"full": "Becoming.Trickle.losesAtEverySize",
+"module": "Becoming.Resolution",
+"line": 2304
+},
+{
+"full": "Becoming.Loop.balances",
+"module": "Becoming.Response",
+"line": 577
+},
+{
+"full": "Becoming.Loop.quiet_balances",
+"module": "Becoming.Response",
+"line": 584
+},
+{
+"full": "Becoming.Revising.determined",
+"module": "Becoming.Revision",
+"line": 171
+},
+{
+"full": "Becoming.EmbodiedSource.balances",
+"module": "Becoming.Roles",
+"line": 1141
+},
+{
+"full": "Becoming.EmbodiedSource.acting",
+"module": "Becoming.Roles",
+"line": 1146
+},
+{
+"full": "Becoming.Shuttle.balances",
+"module": "Becoming.Roles",
+"line": 1234
+},
+{
+"full": "Becoming.Shuttle.acting",
+"module": "Becoming.Roles",
+"line": 1242
+},
+{
+"full": "Becoming.Throughput.balances",
+"module": "Becoming.Roles",
+"line": 1320
+},
+{
+"full": "Becoming.Throughput.acting",
+"module": "Becoming.Roles",
+"line": 1326
+},
+{
+"full": "Becoming.SprayShuttle.sides_distinct",
+"module": "Becoming.Roles",
+"line": 1477
+},
+{
+"full": "Becoming.SprayShuttle.balances",
+"module": "Becoming.Roles",
+"line": 1497
+},
+{
+"full": "Becoming.SprayShuttle.acting",
+"module": "Becoming.Roles",
+"line": 1502
+},
+{
+"full": "Becoming.Strobe.twice_strict",
+"module": "Becoming.Sampling",
+"line": 255
+},
+{
+"full": "Becoming.SharedCodes.Gloss.distinct",
+"module": "Becoming.SharedCodes",
+"line": 1464
+},
+{
+"full": "Becoming.World.SelfDrawing.taking",
+"module": "Becoming.Space",
+"line": 394
+},
+{
+"full": "Becoming.StrictTransport.continuation_first_transitive",
+"module": "Becoming.StrictTransport",
+"line": 184
+},
+{
+"full": "Becoming.Successive.balances",
+"module": "Becoming.Succession",
+"line": 70
+},
+{
+"full": "Becoming.Successive.acting",
+"module": "Becoming.Succession",
+"line": 97
+},
+{
+"full": "Becoming.Prey.balances",
+"module": "Becoming.Testing",
+"line": 1219
+},
+{
+"full": "Becoming.TwoGivers.balances",
+"module": "Becoming.Transmission",
+"line": 843
+},
+{
+"full": "Becoming.TwoGivers.acting",
+"module": "Becoming.Transmission",
+"line": 853
+},
+{
+"full": "Becoming.Undecided.neg_monotone",
+"module": "Becoming.Undecided",
+"line": 703
+},
+{
+"full": "Becoming.Twins.one_determined",
+"module": "Becoming.Unfolding",
+"line": 394
+},
+{
+"full": "Becoming.Sequences.eventually_verifiable",
+"module": "Becoming.Verification",
+"line": 836
+},
+{
+"full": "Becoming.Sequences.eventually_dense",
+"module": "Becoming.Verification",
+"line": 840
+},
+{
+"full": "Becoming.Sequences.recurs_dense",
+"module": "Becoming.Verification",
+"line": 845
+},
+": v0 v1"
+],
+[
+{
+"full": "Becoming.ExchangeLaw.responsive_not_dissipative",
+"module": "Becoming.ExchangePremises",
+"line": 363
+},
+{
+"full": "Becoming.ExchangeLaw.still_not_embodied",
+"module": "Becoming.ExchangePremises",
+"line": 373
+},
+{
+"full": "Becoming.ExchangeLaw.sprouting_not_transmitting",
+"module": "Becoming.ExchangePremises",
+"line": 505
+},
+{
+"full": "Becoming.Layered.not_archimedean",
+"module": "Becoming.LeastLoss",
+"line": 806
+},
+{
+"full": "Becoming.Joining.atMostOnce_not_chainComplete",
+"module": "Becoming.LocalUnits",
+"line": 266
+},
+{
+"full": "Becoming.Fragment.stepsImage_not_chainComplete",
+"module": "Becoming.LocalUnits",
+"line": 465
+},
+{
+"full": "Becoming.Emission.not_balanced",
+"module": "Becoming.Resolution",
+"line": 1910
+},
+{
+"full": "Becoming.Alternation.not_balanced",
+"module": "Becoming.Resolution",
+"line": 2034
+},
+{
+"full": "Becoming.Brood.not_dissipative",
+"module": "Becoming.Roles",
+"line": 1037
+},
+{
+"full": "Becoming.World.restless_world",
+"module": "Becoming.Space",
+"line": 557
+},
+": ¬ v0"
+],
+[
+{
+"full": "Becoming.IntegerOrder.nonneg_one",
+"module": "Becoming.IntegerOrder",
+"line": 39
+},
+{
+"full": "Becoming.Emission.dissipativeBy",
+"module": "Becoming.Resolution",
+"line": 1898
+},
+": v0 1"
+],
+[
+{
+"full": "Becoming.Model.articulation_neutrality_is_needed",
+"module": "Becoming.Metaethics",
+"line": 429
+},
+{
+"full": "Becoming.Model.seed_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 331
+},
+{
+"full": "Becoming.Model.relational_neutrality_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 340
+},
+{
+"full": "Becoming.Model.standpoint_neutrality_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 361
+},
+{
+"full": "Becoming.Model.connection_is_needed",
+"module": "Becoming.ValuationFrames",
+"line": 385
+},
+": let v0"
+],
+[
+{
+"full": "Becoming.Transfer.dependent",
+"module": "Becoming.Admission",
+"line": 774
+},
+{
+"full": "Becoming.Accretion.unceasing",
+"module": "Becoming.Change",
+"line": 638
+},
+{
+"full": "Becoming.Exceeding.dependent",
+"module": "Becoming.Continuation",
+"line": 530
+},
+{
+"full": "Becoming.Alone.dependent",
+"module": "Becoming.Continuation",
+"line": 594
+},
+{
+"full": "Becoming.Downstream.dependent",
+"module": "Becoming.Continuation",
+"line": 681
+},
+{
+"full": "Becoming.Mortal.dependent",
+"module": "Becoming.Continuation",
+"line": 766
+},
+{
+"full": "Becoming.Clearing.dependent",
+"module": "Becoming.Continuation",
+"line": 919
+},
+{
+"full": "Becoming.Clearing.dissipative",
+"module": "Becoming.Continuation",
+"line": 932
+},
+{
+"full": "Becoming.Loop.replyLaw_nonanticipating",
+"module": "Becoming.Counterfactual",
+"line": 749
+},
+{
+"full": "Becoming.Drowsy.dependent",
+"module": "Becoming.Descent",
+"line": 357
+},
+{
+"full": "Becoming.Frontier.dissipative",
+"module": "Becoming.Dissipation",
+"line": 947
+},
+{
+"full": "Becoming.Rooted.dependent",
+"module": "Becoming.Dissipation",
+"line": 1104
+},
+{
+"full": "Becoming.Lone.dissipative",
+"module": "Becoming.Dissipation",
+"line": 1182
+},
+{
+"full": "Becoming.Spray.dissipative",
+"module": "Becoming.Dissipation",
+"line": 1322
+},
+{
+"full": "Becoming.Passing.lossless",
+"module": "Becoming.Entropy",
+"line": 1802
+},
+{
+"full": "Becoming.Passing.embodied",
+"module": "Becoming.Entropy",
+"line": 1812
+},
+{
+"full": "Becoming.Passing.counted",
+"module": "Becoming.Entropy",
+"line": 1818
+},
+{
+"full": "Becoming.Settling.lossless",
+"module": "Becoming.Entropy",
+"line": 1978
+},
+{
+"full": "Becoming.Gathering.lossless",
+"module": "Becoming.Entropy",
+"line": 2124
+},
+{
+"full": "Becoming.Drawdown.dependent",
+"module": "Becoming.Evolution",
+"line": 421
+},
+{
+"full": "Becoming.Slack.dependent",
+"module": "Becoming.Evolution",
+"line": 519
+},
+{
+"full": "Becoming.ExchangeLaw.still_balanced",
+"module": "Becoming.ExchangePremises",
+"line": 341
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_balanced",
+"module": "Becoming.ExchangePremises",
+"line": 344
+},
+{
+"full": "Becoming.ExchangeLaw.still_dissipative",
+"module": "Becoming.ExchangePremises",
+"line": 357
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_embodied",
+"module": "Becoming.ExchangePremises",
+"line": 379
+},
+{
+"full": "Becoming.ExchangeLaw.still_transmitting",
+"module": "Becoming.ExchangePremises",
+"line": 392
+},
+{
+"full": "Becoming.ExchangeLaw.responsive_transmitting",
+"module": "Becoming.ExchangePremises",
+"line": 395
+},
+{
+"full": "Becoming.ExchangeLaw.sprouting_nonanticipating",
+"module": "Becoming.ExchangePremises",
+"line": 443
+},
+{
+"full": "Becoming.ExchangeLaw.spreading_counted",
+"module": "Becoming.ExchangePremises",
+"line": 544
+},
+{
+"full": "Becoming.Excluding.dependent",
+"module": "Becoming.Exclusion",
+"line": 268
+},
+{
+"full": "Becoming.Sharing.dependent",
+"module": "Becoming.Exclusion",
+"line": 343
+},
+{
+"full": "Becoming.Seeker.dependent",
+"module": "Becoming.Exhaustion",
+"line": 237
+},
+{
+"full": "Becoming.Trophic.dependent",
+"module": "Becoming.Feedback",
+"line": 979
+},
+{
+"full": "Becoming.Trophic.responsive_dependent",
+"module": "Becoming.Feedback",
+"line": 1017
+},
+{
+"full": "Becoming.Clearing.spared_dependent",
+"module": "Becoming.Feedback",
+"line": 1390
+},
+{
+"full": "Becoming.Provision.dependent",
+"module": "Becoming.Feeding",
+"line": 526
+},
+{
+"full": "Becoming.Hexagram.order_nodup",
+"module": "Becoming.HexagramLaws",
+"line": 127
+},
+{
+"full": "Becoming.Dormancy.dependent",
+"module": "Becoming.Identity",
+"line": 2038
+},
+{
+"full": "Becoming.Overshoot.dependent",
+"module": "Becoming.Interdependence",
+"line": 374
+},
+{
+"full": "Becoming.Joining.Once.roleTotal",
+"module": "Becoming.Joining",
+"line": 1013
+},
+{
+"full": "Becoming.Amounts.whole_archimedean",
+"module": "Becoming.LeastLoss",
+"line": 402
+},
+{
+"full": "Becoming.Dyadic.archimedean",
+"module": "Becoming.LeastLoss",
+"line": 636
+},
+{
+"full": "Becoming.Doubled.dissipative",
+"module": "Becoming.Listing",
+"line": 572
+},
+{
+"full": "Becoming.Flow.byOccurrence_once",
+"module": "Becoming.Listing",
+"line": 910
+},
+{
+"full": "Becoming.Joining.atMostOnce_functional",
+"module": "Becoming.LocalUnits",
+"line": 209
+},
+{
+"full": "Becoming.Joining.atMostOnce_assoc",
+"module": "Becoming.LocalUnits",
+"line": 212
+},
+{
+"full": "Becoming.Joining.atMostOnce_has_units",
+"module": "Becoming.LocalUnits",
+"line": 250
+},
+{
+"full": "Becoming.Fragment.stepsImage_functional",
+"module": "Becoming.LocalUnits",
+"line": 441
+},
+{
+"full": "Becoming.Fragment.stepsImage_assoc",
+"module": "Becoming.LocalUnits",
+"line": 444
+},
+{
+"full": "Becoming.Fragment.stepsImage_has_units",
+"module": "Becoming.LocalUnits",
+"line": 454
+},
+{
+"full": "Becoming.Mixed.dependent",
+"module": "Becoming.Metaethics",
+"line": 346
+},
+{
+"full": "Becoming.Crossing.dependent",
+"module": "Becoming.Order",
+"line": 1847
+},
+{
+"full": "Becoming.Net.relay_pure",
+"module": "Becoming.PlaceTransitionNets",
+"line": 338
+},
+{
+"full": "Becoming.PositiveGround.positiveDomain_nodup",
+"module": "Becoming.PositiveGround",
+"line": 297
+},
+{
+"full": "Becoming.PositiveGround.fullDomain_nodup",
+"module": "Becoming.PositiveGround",
+"line": 302
+},
+{
+"full": "Becoming.World.strained_finite",
+"module": "Becoming.Premises",
+"line": 315
+},
+{
+"full": "Becoming.World.morsel_finite",
+"module": "Becoming.Premises",
+"line": 487
+},
+{
+"full": "Becoming.World.lossless_finite",
+"module": "Becoming.Premises",
+"line": 549
+},
+{
+"full": "Becoming.World.latent_finite",
+"module": "Becoming.Premises",
+"line": 594
+},
+{
+"full": "Becoming.World.novel_finite",
+"module": "Becoming.Premises",
+"line": 707
+},
+{
+"full": "Becoming.World.novel_dissipative",
+"module": "Becoming.Premises",
+"line": 719
+},
+{
+"full": "Becoming.World.mutualism_premised",
+"module": "Becoming.Premises",
+"line": 805
+},
+{
+"full": "Becoming.World.hatch_balanced",
+"module": "Becoming.Premises",
+"line": 994
+},
+{
+"full": "Becoming.World.hatch_dissipative",
+"module": "Becoming.Premises",
+"line": 1006
+},
+{
+"full": "Becoming.World.hatch_counted",
+"module": "Becoming.Premises",
+"line": 1019
+},
+{
+"full": "Becoming.World.finiteHatch_finite",
+"module": "Becoming.Premises",
+"line": 1124
+},
+{
+"full": "Becoming.World.finiteHatch_balanced",
+"module": "Becoming.Premises",
+"line": 1130
+},
+{
+"full": "Becoming.World.finiteHatch_dissipative",
+"module": "Becoming.Premises",
+"line": 1138
+},
+{
+"full": "Becoming.World.finiteHatch_premised",
+"module": "Becoming.Premises",
+"line": 1151
+},
+{
+"full": "Becoming.World.withRest_balanced",
+"module": "Becoming.Reading",
+"line": 393
+},
+{
+"full": "Becoming.World.withRest_acting",
+"module": "Becoming.Reading",
+"line": 399
+},
+{
+"full": "Becoming.World.withRest_taking",
+"module": "Becoming.Reading",
+"line": 403
+},
+{
+"full": "Becoming.Race.dependent",
+"module": "Becoming.RelativePosition",
+"line": 389
+},
+{
+"full": "Becoming.Restored.dependent",
+"module": "Becoming.RelativePosition",
+"line": 526
+},
+{
+"full": "Becoming.Famine.transformed_dependent",
+"module": "Becoming.Reserve",
+"line": 748
+},
+{
+"full": "Becoming.Circulation.dissipative",
+"module": "Becoming.Resolution",
+"line": 1680
+},
+{
+"full": "Becoming.Circulation.dependent",
+"module": "Becoming.Resolution",
+"line": 1686
+},
+{
+"full": "Becoming.Circulation.exchange_recurs",
+"module": "Becoming.Resolution",
+"line": 1727
+},
+{
+"full": "Becoming.Emission.counted",
+"module": "Becoming.Resolution",
+"line": 1815
+},
+{
+"full": "Becoming.Emission.embodied",
+"module": "Becoming.Resolution",
+"line": 1818
+},
+{
+"full": "Becoming.Emission.dissipative",
+"module": "Becoming.Resolution",
+"line": 1863
+},
+{
+"full": "Becoming.Emission.arising_recurs",
+"module": "Becoming.Resolution",
+"line": 1883
+},
+{
+"full": "Becoming.Alternation.counted",
+"module": "Becoming.Resolution",
+"line": 1974
+},
+{
+"full": "Becoming.Alternation.embodied",
+"module": "Becoming.Resolution",
+"line": 1977
+},
+{
+"full": "Becoming.Alternation.dissipative",
+"module": "Becoming.Resolution",
+"line": 2005
+},
+{
+"full": "Becoming.Alternation.arising_recurs",
+"module": "Becoming.Resolution",
+"line": 2021
+},
+{
+"full": "Becoming.Trickle.counted",
+"module": "Becoming.Resolution",
+"line": 2184
+},
+{
+"full": "Becoming.Trickle.embodied",
+"module": "Becoming.Resolution",
+"line": 2187
+},
+{
+"full": "Becoming.Trickle.dissipative",
+"module": "Becoming.Resolution",
+"line": 2281
+},
+{
+"full": "Becoming.Loop.dependent",
+"module": "Becoming.Response",
+"line": 587
+},
+{
+"full": "Becoming.Loop.quiet_dependent",
+"module": "Becoming.Response",
+"line": 596
+},
+{
+"full": "Becoming.Mutualism.dependent",
+"module": "Becoming.Roles",
+"line": 773
+},
+{
+"full": "Becoming.Predation.dependent",
+"module": "Becoming.Roles",
+"line": 846
+},
+{
+"full": "Becoming.Wilting.dependent",
+"module": "Becoming.Roles",
+"line": 915
+},
+{
+"full": "Becoming.Shuttle.dependent",
+"module": "Becoming.Roles",
+"line": 1247
+},
+{
+"full": "Becoming.Throughput.dependent",
+"module": "Becoming.Roles",
+"line": 1331
+},
+{
+"full": "Becoming.Throughput.dissipative",
+"module": "Becoming.Roles",
+"line": 1367
+},
+{
+"full": "Becoming.SprayShuttle.dependent",
+"module": "Becoming.Roles",
+"line": 1507
+},
+{
+"full": "Becoming.SprayShuttle.dissipative",
+"module": "Becoming.Roles",
+"line": 1516
+},
+{
+"full": "Becoming.Strobe.once",
+"module": "Becoming.Sampling",
+"line": 866
+},
+{
+"full": "Becoming.Delay.fine_transmitting",
+"module": "Becoming.Sampling",
+"line": 959
+},
+{
+"full": "Becoming.Pointer.readsFinitely",
+"module": "Becoming.Sensitivity",
+"line": 606
+},
+{
+"full": "Becoming.World.shuttle_finite",
+"module": "Becoming.Space",
+"line": 356
+},
+{
+"full": "Becoming.World.shuttle_arising",
+"module": "Becoming.Space",
+"line": 359
+},
+{
+"full": "Becoming.World.selfDrawing_finite",
+"module": "Becoming.Space",
+"line": 415
+},
+{
+"full": "Becoming.World.mutualism_finite",
+"module": "Becoming.Space",
+"line": 438
+},
+{
+"full": "Becoming.World.drawdown_finite",
+"module": "Becoming.Space",
+"line": 465
+},
+{
+"full": "Becoming.World.throughput_arising",
+"module": "Becoming.Space",
+"line": 571
+},
+{
+"full": "Becoming.World.grazing_finite",
+"module": "Becoming.Space",
+"line": 754
+},
+{
+"full": "Becoming.World.grazing_arising",
+"module": "Becoming.Space",
+"line": 773
+},
+{
+"full": "Becoming.World.grazing_balanced",
+"module": "Becoming.Space",
+"line": 777
+},
+{
+"full": "Becoming.World.grazing_acting",
+"module": "Becoming.Space",
+"line": 789
+},
+{
+"full": "Becoming.World.grazing_taking",
+"module": "Becoming.Space",
+"line": 796
+},
+{
+"full": "Becoming.World.grazing_dependent",
+"module": "Becoming.Space",
+"line": 808
+},
+{
+"full": "Becoming.Successive.dissipative",
+"module": "Becoming.Succession",
+"line": 77
+},
+{
+"full": "Becoming.Prey.dependent",
+"module": "Becoming.Testing",
+"line": 1227
+},
+{
+"full": "Becoming.TwoGivers.dependent",
+"module": "Becoming.Transmission",
+"line": 860
+},
+": v0"
+]
+]
+}

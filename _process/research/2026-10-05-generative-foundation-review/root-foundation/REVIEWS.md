@@ -14,6 +14,7 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-16 | [BECOMING-RELEASE-READINESS-REVIEW.md](BECOMING-RELEASE-READINESS-REVIEW.md) | Release-readiness review of the Theory of Becoming |
 | 2026-10-18 | [BECOMING-NINETEENTH-REVIEW.md](BECOMING-NINETEENTH-REVIEW.md) | Nineteenth review: what was checked after the eighteenth and never reviewed |
 | 2026-10-19 | [SSBX-REPOSITORY-REVIEW.md](SSBX-REPOSITORY-REVIEW.md) | 早期《生生不息》仓库审读：哪些可以并入生成／变化之论 |
+| 2026-10-20 | [BECOMING-TWENTIETH-REVIEW.md](BECOMING-TWENTIETH-REVIEW.md) | Twentieth review: the theory as one whole — completion, unification, coherence, elegance, redundancy |
 |  | [BECOMING-EIGHTEENTH-REVIEW.md](BECOMING-EIGHTEENTH-REVIEW.md) · [Chinese edition](BECOMING-EIGHTEENTH-REVIEW.zh.md) | Eighteenth independent review: P107–P127 and I4b |
 |  | [BECOMING-GENERAL-LAWS-REVIEW.md](BECOMING-GENERAL-LAWS-REVIEW.md) · [Chinese edition](BECOMING-GENERAL-LAWS-REVIEW.zh.md) | Independent review of the general laws (seventeenth) |
 
