@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check Y1's mapping of the 周易 and the 易传 onto the spine. usage, from anywhere:
+"""Check the mapping of the 周易 and the 易传 onto the spine (Y1, Y2). usage, from anywhere:
   python3 -B verify_mapping.py [--receipt PATH] [--chapter PATH]   # check, exit 1 on any failure
   python3 -B verify_mapping.py --table                             # print the chapter's passage table
 
@@ -9,15 +9,25 @@ Checks, each against the repository's own files:
   2. every fragment of passages.json occurs verbatim in the wikitext of its page, read with
      Wikisource's markup removed (character-variant markup -{…}-, links, templates, tags);
   3. every declaration a passage names is in the audited declaration list of a core receipt
-     (default: the newest under becoming-checks/); names of Becoming.Hexagrams not yet in that
-     receipt are checked against the module's source and reported as such;
+     (default: the newest under becoming-checks/); names of Becoming.Hexagrams and
+     Becoming.HexagramPlaces not yet in that receipt are checked against the modules' source and
+     reported as such;
   4. the received order of Hexagrams.lean is the order of the preserved pages: page n is the
      n-th hexagram (第n卦), follows page n-1 by its link, and its trigram line (X下Y上) gives
      the six lines of the n-th entry of `order`;
   5. the names the chapter gives to configurations are right: `rising k` and `falling k` are
      the lines of 坤 復 臨 泰 大壯 夬 乾 and 乾 姤 遯 否 觀 剝 坤, `sui` is 隨, and the law of
      waxing and waning carries 隨 → 中孚 → 蠱 → 小過 → 隨 and 乾 → 姤 → … → 坤 → 復 → … → 乾;
-  6. the chapter's passage table, between its two markers, is the table printed by --table.
+  6. the chapter's passage table, between its two markers, is the table printed by --table;
+  7. each configuration HexagramPlaces.lean names by its number (`def jiJi : Hexagram := number 63`)
+     carries in its doc comment the name of that page of the received order;
+  8. four censuses of the text match the lists of HexagramPlaces.lean: every 小象 line that states
+     a place explicitly (位不當, 不當位, 未當位, 未得位; 位正當, 位當, 當位, 得位) is in
+     `placeStatements` with what it says, every one that says 中正 or 正中 is in
+     `centreStatements`, every one that says 乘剛 is in `fallStatements` at the seam below its
+     line, and every 彖 that says 剛中而應 is in `middleOppositionStatements`, but for the
+     exceptions named in EXCEPTIONS, each stated by its own theorem; the relation of each entry is
+     also recomputed here from the pages' trigram lines, as a cross-check of the lists.
 It checks text and names, not the proofs: the core checker proves the declarations."""
 import argparse
 import hashlib
@@ -71,8 +81,12 @@ def table(passages):
 
 def lean_declarations(path):
     """Full names of the declarations of one Lean file, by its namespaces."""
+    return lean_declarations_text(path.read_text())
+
+
+def lean_declarations_text(text):
     names, stack = set(), []
-    for line in path.read_text().splitlines():
+    for line in text.splitlines():
         m = re.match(r'namespace\s+(\S+)', line)
         if m:
             stack.append(m.group(1))
@@ -108,6 +122,92 @@ def def_table(path, name):
 def variant(name):
     """One form of the two names Wikisource writes either way (恆/恒, 遯/遁)."""
     return name.replace('恆', '恒').replace('遯', '遁')
+
+
+# Census entries the text states and the relation does not give, each with the theorem stating the
+# configuration as it is: 需's top line is in phase (its 小象 says 雖不當位), and 艮's fifth line is
+# middle and out of phase (its 小象 says 以中正也).
+EXCEPTIONS = {
+    'place': {(5, 6, False): 'Becoming.Hexagram.xu_top_inPhase'},
+    'centre': {(52, 5): 'Becoming.Hexagram.gen_fifth_out_of_phase'},
+    'fall': {},
+    'middle': {},
+}
+NEG_PLACE = ('位不當', '不當位', '未當位', '未得位')
+POS_PLACE = ('位正當', '位當', '當位', '得位')
+
+
+def xiang_lines(text):
+    """The 小象 of the six lines of a cleaned page, bottom to top (用九 and 用六 left out)."""
+    block = re.search(r"'''象曰：'''\n((?:\*[*#].*\n?)+)", text)
+    return [line[2:] for line in block.group(1).splitlines() if line.startswith('*#')][:6]
+
+
+def tuan_text(text):
+    """The 彖 of a cleaned page."""
+    block = re.search(r"'''彖曰：'''\n((?:\*\*.*\n?)+)", text)
+    return block.group(1) if block else ''
+
+
+def lean_list(source, name, pattern):
+    """The entries of a list literal `def NAME : … := [ … ]` of a Lean source, by a pattern."""
+    body = source[source.index(f'def {name} : '):]
+    start = body.index(':= [') + 4
+    return [m.groups() for m in re.finditer(pattern, body[start:body.index(']', start)])]
+
+
+def census(failures, order, places_text):
+    """Checks 7 and 8, on the cleaned pages; returns the size of each list and its exceptions."""
+    pages = [clean(wikitext(f'hexagrams/{n:02d}.json')) for n in range(1, 65)]
+    names = [clean(page(f'hexagrams/{n:02d}.json')['title']).split('/', 1)[1] for n in range(1, 65)]
+    for m in re.finditer(r'/-- (\S+) \((\d+)\)\. -/\ndef (\w+) : Hexagram := number (\d+)', places_text):
+        if m.group(2) != m.group(4) or variant(names[int(m.group(4)) - 1]) != variant(m.group(1)):
+            failures.append(f'{m.group(3)} is number {m.group(4)}, not {m.group(1)} ({m.group(2)})')
+
+    def in_phase(n, k):
+        return order[n - 1][k - 1] == k % 2
+
+    found = {'place': set(), 'centre': set(), 'fall': set(), 'middle': set()}
+    for n, text in enumerate(pages, 1):
+        for k, line in enumerate(xiang_lines(text), 1):
+            if any(w in line for w in NEG_PLACE):
+                found['place'].add((n, k, False))
+            elif any(w in line for w in POS_PLACE):
+                found['place'].add((n, k, True))
+            if '中正也' in line or '正中也' in line:
+                found['centre'].add((n, k))
+            if '乘剛' in line:
+                found['fall'].add((n, k - 1))
+        if '剛中而應' in tuan_text(text):
+            found['middle'].add(n)
+    listed = {
+        'place': {(int(n), int(k), b == 'true') for n, k, b in
+                  lean_list(places_text, 'placeStatements', r'\((\d+), \.p(\d), (true|false)\)')},
+        'centre': {(int(n), int(k)) for n, k in
+                   lean_list(places_text, 'centreStatements', r'\((\d+), \.p(\d)\)')},
+        'fall': {(int(n), int(lo)) for n, lo, _ in
+                 lean_list(places_text, 'fallStatements', r'\((\d+), \.s(\d)(\d)\)')},
+        'middle': {int(n) for (n,) in lean_list(places_text, 'middleOppositionStatements', r'(\d+)')},
+    }
+    holds = {
+        'place': lambda q: in_phase(q[0], q[1]) == q[2],
+        'centre': lambda q: q[1] in (2, 5) and in_phase(*q),
+        'fall': lambda q: order[q[0] - 1][q[1] - 1] == 1 and order[q[0] - 1][q[1]] == 0,
+        'middle': lambda n: order[n - 1][1] != order[n - 1][4],
+    }
+    declared = lean_declarations_text(places_text)
+    for kind in found:
+        exceptions = set(EXCEPTIONS[kind])
+        if found[kind] != listed[kind] | exceptions or listed[kind] & exceptions:
+            failures.append(f'census {kind}: in the text, not listed: {sorted(found[kind] - listed[kind] - exceptions)}; '
+                            f'listed, not in the text: {sorted(listed[kind] - found[kind])}')
+        for q in listed[kind]:
+            if not holds[kind](q):
+                failures.append(f'census {kind}: {q} does not hold on the pages')
+        for q, theorem in EXCEPTIONS[kind].items():
+            if holds[kind](q) or theorem not in declared:
+                failures.append(f'census {kind}: exception {q} holds, or {theorem} is not in the module')
+    return {kind: (len(listed[kind]), len(EXCEPTIONS[kind])) for kind in found}
 
 
 def wax_wane(s):
@@ -164,7 +264,10 @@ def main():
     module = PKG / 'Becoming/Hexagrams.lean'
     if not module.exists():
         module = HERE / 'Becoming/Hexagrams.lean'
-    from_source = lean_declarations(module)
+    places = PKG / 'Becoming/HexagramPlaces.lean'
+    if not places.exists():
+        places = HERE / 'y2/Becoming/HexagramPlaces.lean'
+    from_source = lean_declarations(module) | lean_declarations(places)
     by_source = set()
     for p in passages:
         for d in p['declarations']:
@@ -224,6 +327,9 @@ def main():
     if orbit != want_f + want_r[1:6] or s != (1,) * 6:
         failures.append(f'the orbit of 乾 is {orbit}')
 
+    # 7 and 8. the named configurations and the censuses
+    counts = census(failures, order, places.read_text())
+
     # 6. the chapter table
     if args.chapter.exists():
         text = args.chapter.read_text()
@@ -242,6 +348,7 @@ def main():
           f"{kinds['divergence']} divergence), {sum(len(p['fragments']) for p in passages)} fragments, "
           f"{len(decls)} declarations; receipt {receipt.parent.name}"
           + (f'; {len(by_source)} Hexagrams names checked against the module source, not yet in the receipt' if by_source else ''))
+    print('censuses (listed + exceptions): ' + ', '.join(f'{k} {v[0]} + {v[1]}' for k, v in counts.items()))
     print('order: 64 pages, trigrams and links agree' if not any('order' in f or 'page' in f for f in failures) else '')
     for f in failures:
         print('FAIL', f)

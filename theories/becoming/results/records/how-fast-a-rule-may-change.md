@@ -79,6 +79,7 @@ Aliases: `how fast a rule may change`, `规则可以多快地改变`, `the pace 
 ### History
 
 - 19 October 2026: added (V), on Ren's "does our theories fully cover this?" with a pasted account of social viability, "please, spawn a swarm of subagents, think hard, let's fully complete this" and "I agree with your push back, let's think about how to resolve them elegantly"; study section 193.
+- 19 October 2026, Y2 (Becoming.HexagramPlaces): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y2 added a study section; THE-THEORY-OF-BECOMING.md: Y2 added the section 1 paragraph on the relations of the places with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.
 
 </details>
 

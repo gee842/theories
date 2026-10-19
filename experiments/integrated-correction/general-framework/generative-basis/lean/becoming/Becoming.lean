@@ -96,6 +96,7 @@ import Becoming.Regrouping
 import Becoming.Selection
 import Becoming.Learning
 import Becoming.Hexagrams
+import Becoming.HexagramPlaces
 import Becoming.Withholding
 import Becoming.Widening
 import Becoming.Pace
@@ -1132,6 +1133,22 @@ readings of the unfolding (`Becoming.Labelled`).
   Read as claims, a frame and a world, the lines arise and cease at arbitrarily late steps
   (`Frame.claims_recur_iff`); any sixty-five steps revisit, and the kept history is held by no
   list. What the passages of the text say beyond these laws is read in the chapter on the 易传.
+* `Becoming.HexagramPlaces` (L4): the relations of the places of a hexagram, read in context,
+  with no premise. A line is in phase where its value is its place's parity (正), the two lines
+  at one height of the two trigrams are opposed where they differ (應), adjacent lines
+  alternate, rise or fall across their seam (比, 承, 乘), and the middle height is lines 2 and 5
+  (中). Each relation is a reading indexed by its sites (`Contextual`): it glues to a reading of
+  the whole configuration exactly where every site shows the same, so the phases glue only at
+  既濟 and 未濟, and the two trigrams read as contexts glue exactly where no height is opposed,
+  no frame of context-free claims fitting the heights. Opposition is told by phase: the lines
+  at a height are opposed exactly where both or neither are in phase. The complement turns every
+  phase and keeps every opposition; the change of a line turns its phase and its height's
+  opposition and nothing else. Under the law of waxing and waning a line's phase turns at every
+  rise, so the count in phase changes parity at every step (3, 2, 3, ... from 乾), while the
+  oppositions run under the same law on three cells, a lumping the law goes alike across.
+  Each law is read along the runs of the spine: of waxing and waning, of the change of one line,
+  of the law backward, and of any process. Four censuses of the 彖 and the 小象 are checked on
+  their configurations; the chapter on the 易传 reads each passage.
 * `Becoming.Withholding` (L3): giving that waits on giving. With memory (a formation gives
   where it gave and all it waits on gave), a formation gives at a step exactly where every
   formation within that many waits of it gave at the start; withholding stays, spreads

@@ -173,8 +173,8 @@
       "kind": "correspondence"
     },
     {
-      "en": "The judgments of fortune (吉凶悔吝), the images of 說卦, the order's own reasons (序卦), divination and number lore, and the relations of the places (應, 比, 中, 正).",
-      "zh": "吉凶悔吝之判断、說卦的取象、卦序本身的次第之理、占筮与数术，以及爻位之间的应、比、中、正。",
+      "en": "The judgments of fortune (吉凶悔吝), the images of 說卦, the order's own reasons (序卦), divination and number lore; the relations of the places are in place-relations-in-context.",
+      "zh": "吉凶悔吝之判断、說卦的取象、卦序本身的次第之理、占筮与数术；爻位之关系见 place-relations-in-context。",
       "kind": "scope"
     },
     {
@@ -197,8 +197,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T060745.666273Z）：Becoming.Hexagrams 的 97 项声明（71 项定理）公理报告为空；检查器并核对核心纯净。逐句对应（44 段）由 verify_mapping.py 对照保存的维基文库版本与回执的声明清单检查。作者自审见研究第 192 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "The relations of the places (應, 比, 中, 正) as indexed readings in context; the order's own reasons; comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.",
-    "zh": "爻位的应、比、中、正作为带语境索引的读法；卦序本身的次第之理；与王弼、程颐、朱熹之读法的比较；与刻本对校；独立审查。"
+    "en": "The order's own reasons; comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.",
+    "zh": "卦序本身的次第之理；与王弼、程颐、朱熹之读法的比较；与刻本对校；独立审查。"
   },
   "correspondence": {
     "en": "Ren, 19 October 2026, asked whether the relation of the work to the 周易, above all the 易传, can be seen and built, then: “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping” (provenance, not warrant). The chapter on the 易传 maps 44 passages, quoted from preserved revisions, to the declarations they correspond to: 24 agreements, 14 exact scopes and 6 divergences. Reading (the AI's, D47): 无往不復 holds exactly where a law merges nothing, and 日新 is the same law with its history kept; 窮則變 is not a law; 生生之謂易 is a scope, change being wider than 生生; 繼之者善 and the ranks of 天尊地卑 diverge.",
@@ -352,6 +352,13 @@
       "detail": {
         "en": "The merging law is a case: every configuration but all broken is drawn in and does not return.",
         "zh": "只入阴爻之律是一例：除全阴外的每一构形都被吸入而不复返。"
+      }
+    },
+    {
+      "id": "place-relations-in-context",
+      "detail": {
+        "en": "The relations of the places (正, 應, 比, 中) read in context on these configurations, and their laws under the same changes.",
+        "zh": "在这些构形上以语境读出的爻位之关系（正、应、比、中），及其在同样变化之下的律。"
       }
     }
   ],
@@ -527,31 +534,31 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "46d6c2aa170d23a1be753a64c3a10f8e1ab0eae5f288bb8f552d2034a92c99ba"
+      "sha256": "8d90cbe0a320b21fd3f6941fb252c52ff7deff36e0f7e2117e259574413ed40c"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
       "role": "integration",
       "declarations": [],
-      "sha256": "e957ee7c9f050b67b9073e577d8352db7ea03caeb33084382143c21fe94f6adb"
+      "sha256": "1903dc9c7664595c4a1e720032c9bf9f81b0a26753a95c26a141bc4677194d82"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "13bd0948c108015eff92a12b9a214113ff4e0fd9626010d5a6e478b22c15f0b0"
+      "sha256": "509e33246cdd1fbf39a86e584494629f58b50fd142da53f8ff7ff0e653d17674"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "2f3302f7114fae4f9ef78f1cdf13923bd978b244f7f87f67aea4575b01663971"
+      "sha256": "0e2b8b223debe7575ec6707fd2334b36c9adbfeffb25923c4e54a9e9ece525ba"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "e79338372f91b3b160a6cfc4545d0e3090511cb1a282d5bcfd883ef6d946b212"
+      "sha256": "627a7f17747e450bf70e8407eec73107cff009b8f8e5dcccc0514ab22e1cccc2"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -618,6 +625,10 @@
     {
       "en": "19 October 2026, V (what a collective's continuation needs): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V added study section 193). The claim is unchanged.",
       "zh": "2026年10月19日，V（集体延续所需）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y2 (the relations of the places): the relations of the places, listed as not shown and as the next delta, are now the record place-relations-in-context (study section 195, decision D50); YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y2 added its passages, its censuses and their checks, its chapter text, its study section and its section 1 paragraph). The claim is unchanged.",
+      "zh": "2026年10月19日，Y2（爻位之关系）：原列为未示与下一步的爻位之关系，现为记录 place-relations-in-context（研究第 195 节，决定 D50）；读过改动后，YI-ZHUAN-AND-BECOMING.md、passages.json、verify_mapping.py、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

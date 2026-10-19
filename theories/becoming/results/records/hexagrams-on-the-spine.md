@@ -28,7 +28,7 @@
 ## Does not show
 
 - What any passage of the 周易 or the 易传 claims beyond these laws; the passage map of the chapter states, passage by passage, agreement, exact scope or divergence, and its readings are the AI's.
-- The judgments of fortune (吉凶悔吝), the images of 說卦, the order's own reasons (序卦), divination and number lore, and the relations of the places (應, 比, 中, 正).
+- The judgments of fortune (吉凶悔吝), the images of 說卦, the order's own reasons (序卦), divination and number lore; the relations of the places are in place-relations-in-context.
 - That returning, waxing or waning is good or supports 生生; the module has no ethical predicate and no ranking of configurations.
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -43,7 +43,7 @@ Canonical source: [Hexagrams.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-The relations of the places (應, 比, 中, 正) as indexed readings in context; the order's own reasons; comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.
+The order's own reasons; comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -77,6 +77,9 @@ Ren, 19 October 2026, asked whether the relation of the work to the 周易, abov
   - Preserved conditions: The reading of a line decided (Bool equality). [Unfolding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
 - related, not a proved adapter: [where-a-run-goes-on](where-a-run-goes-on.md). Within finitely many configurations a run comes round; the received order is such a list, and the chapter reads 序卦's close (未濟) with run_iff_continues and the kept history.
 - related, not a proved adapter: [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md). The merging law is a case: every configuration but all broken is drawn in and does not return.
+- related, not a proved adapter: [place-relations-in-context](place-relations-in-context.md). The relations of the places (正, 應, 比, 中) read in context on these configurations, and their laws under the same changes.
+
+**Used by:** [place-relations-in-context](place-relations-in-context.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -105,6 +108,7 @@ Aliases: `the sixty-four hexagrams on the spine`, `六十四卦在脊柱上`, `�
 
 - 19 October 2026: added (Y1), on Ren's “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping”, after his question on the relation of the work to the 周易 and the 易传; study section 192.
 - 19 October 2026, V (what a collective's continuation needs): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V added study section 193). The claim is unchanged.
+- 19 October 2026, Y2 (the relations of the places): the relations of the places, listed as not shown and as the next delta, are now the record place-relations-in-context (study section 195, decision D50); YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y2 added its passages, its censuses and their checks, its chapter text, its study section and its section 1 paragraph). The claim is unchanged.
 
 </details>
 

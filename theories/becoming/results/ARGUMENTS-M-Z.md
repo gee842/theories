@@ -1760,15 +1760,15 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **Status:** Passage map checked; Lean checked
 
-**Argument:** The configurations the 周易 describes (six two-valued lines, the change of a line, the law of waxing and waning, the received order) are a world of the pure core, on which the spine's laws are checked. 44 passages of the 易传, the classic and two commentaries, quoted from preserved revisions, are each mapped to declarations as agreement, exact scope or divergence.
+**Argument:** The configurations the 周易 describes (six two-valued lines, the change of a line, the law of waxing and waning, the received order) are a world of the pure core, on which the spine's laws are checked; the relations of the places (正, 應, 比, 中) are contextual readings at their sites, read along the runs of the spine. 64 passages of the 易传, the classic and two commentaries, quoted from preserved revisions, are each mapped to declarations as agreement, exact scope or divergence, and four censuses check every statement of a kind about the places in the 彖 and the 小象.
 
 **Significance:** The relation of a classical text to the theory becomes a checked part of the library, with the divergences kept so that the text can challenge the theory.
 
-**Scope:** 71 Lean theorems with empty axiom reports; the readings are the AI's (D47). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons and divination are outside it.
+**Scope:** 179 Lean theorems with empty axiom reports; the readings are the AI's (D47, D50). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons, the ranks of the places and divination are outside it.
 
-**Next:** Proposed: the relations of the places as indexed readings in context; comparison with the readings of 王弼, 程頤 and 朱熹; collation with a printed edition.
+**Next:** Proposed: 王弼's readings (初上无位, the ruling line) once the 《周易略例》 is preserved; censuses of the line texts and the 大象; comparison with the readings of 程頤 and 朱熹; collation with a printed edition.
 
-**Lean correspondence:** [Hexagrams.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean)
+**Lean correspondence:** [Hexagrams.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean) · [HexagramPlaces.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean)
 
 Correspondence covers only the stated premises and subclaims; source existence does not establish a fresh check of the current version.
 

@@ -1676,6 +1676,86 @@
    "module": "Becoming.Hexagrams",
    "category": "model-witness",
    "reason": "Each pair of the received order (序卦) is turned over or changed in every line: a fact about the text's one constructed list, checked line by line, not a law of the unfolding; the order serves the base as the list holding every configuration (mem_order)."
+  },
+  "Becoming.Hexagram.weiJi_opposed": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 未濟 (剛柔應): a fact about one configuration of the text, checked on it; the laws it instances are read on the base by shown_along_run."
+  },
+  "Becoming.Hexagram.heng_opposed": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 恒 (剛柔皆應): a fact about one configuration of the text, checked on it; the laws it instances are read on the base by shown_along_run."
+  },
+  "Becoming.Hexagram.xian_opposed": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 咸 (二氣感應): a fact about one configuration of the text, checked on it; the laws it instances are read on the base by shown_along_run."
+  },
+  "Becoming.Hexagram.gen_halves_glue": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 艮 (上下敵應): a fact about one configuration of the text, checked on it; the laws it instances are read on the base by run_doubled_three."
+  },
+  "Becoming.Hexagram.tongRen_second": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 同人's second line: a fact about one configuration of the text, checked on it; the laws it instances are read on the base by shown_along_run."
+  },
+  "Becoming.Hexagram.xiaoXu_fourth": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 小畜's fourth line: a fact about one configuration of the text, checked on it; the laws it instances are read on the base by shown_along_run."
+  },
+  "Becoming.Hexagram.daYou_fifth": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 大有's fifth line: a fact about one configuration of the text, checked on it; the laws it instances are read on the base by shown_along_run."
+  },
+  "Becoming.Hexagram.guiMei_falls": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 歸妹 (柔乘剛): a fact about one configuration of the text, checked on it; the laws it instances are read on the base by run_carried."
+  },
+  "Becoming.Hexagram.guai_falls": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 彖 says of 夬 (柔乘五剛): a fact about one configuration of the text, checked on it; the laws it instances are read on the base by run_carried."
+  },
+  "Becoming.Hexagram.xu_top_inPhase": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 小象 says of 需's top line, where it parts from the parity of its place: a fact about one configuration of the text, checked on it; the laws it instances are read on the base by run_phase_rises."
+  },
+  "Becoming.Hexagram.gen_fifth_out_of_phase": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "What the 小象 says of 艮's fifth line, where it parts from the parity of its place: a fact about one configuration of the text, checked on it; the laws it instances are read on the base by run_phase_rises."
+  },
+  "Becoming.Hexagram.placeStatements_agree": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "The census of the 小象's statements of place (位當, 位不當, ...) holds of each listed configuration: a fact about the text's list, found in the preserved pages by verify_mapping.py and checked here; the relation is read on the base by run_phase_rises and changes_run_phase."
+  },
+  "Becoming.Hexagram.centreStatements_agree": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "The census of the 小象's statements of 中正 and 正中 holds of each listed configuration: a fact about the text's list, found in the preserved pages by verify_mapping.py and checked here; the relation is read on the base by run_phase_rises."
+  },
+  "Becoming.Hexagram.fallStatements_agree": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "The census of the 小象's statements of 乘剛 holds of each listed configuration: a fact about the text's list, found in the preserved pages by verify_mapping.py and checked here; the relation is read on the base by run_carried."
+  },
+  "Becoming.Hexagram.middleOppositionStatements_agree": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "model-witness",
+   "reason": "The census of the 彖's statements of 剛中而應 holds of each listed configuration: a fact about the text's list, found in the preserved pages by verify_mapping.py and checked here; the relation is read on the base by shown_along_run."
+  },
+  "Becoming.Hexagram.opposition_six": {
+   "module": "Becoming.HexagramPlaces",
+   "category": "restates",
+   "reason": "Six steps of the law keep every opposition: restated on the base by run_six_keeps, the same law along every run of waxing and waning, derived there from the phases."
   }
  }
 }

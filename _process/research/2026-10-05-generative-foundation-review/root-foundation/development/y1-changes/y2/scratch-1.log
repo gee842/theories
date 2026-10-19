@@ -1,0 +1,144 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/great-stonebraker-6e3c8b/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y2",
+  "modules": 45,
+  "ran": [
+    "Becoming.HexagramPlaces",
+    "BecomingHexagramPlacesAxiomAudit"
+  ],
+  "reused": 44,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramPlaces": {
+      "theorems": 84,
+      "declarations": 131,
+      "with_axioms": {
+        "Becoming.Hexagram.number": [
+          "propext"
+        ],
+        "Becoming.Hexagram.xu": [
+          "propext"
+        ],
+        "Becoming.Hexagram.xiaoXu": [
+          "propext"
+        ],
+        "Becoming.Hexagram.tongRen": [
+          "propext"
+        ],
+        "Becoming.Hexagram.daYou": [
+          "propext"
+        ],
+        "Becoming.Hexagram.xian": [
+          "propext"
+        ],
+        "Becoming.Hexagram.heng": [
+          "propext"
+        ],
+        "Becoming.Hexagram.guai": [
+          "propext"
+        ],
+        "Becoming.Hexagram.gen": [
+          "propext"
+        ],
+        "Becoming.Hexagram.guiMei": [
+          "propext"
+        ],
+        "Becoming.Hexagram.jiJi": [
+          "propext"
+        ],
+        "Becoming.Hexagram.weiJi": [
+          "propext"
+        ],
+        "Becoming.Hexagram.jiJi_inPhase": [
+          "propext"
+        ],
+        "Becoming.Hexagram.weiJi_out_of_phase": [
+          "propext"
+        ],
+        "Becoming.Hexagram.inPhase_all_iff": [
+          "propext"
+        ],
+        "Becoming.Hexagram.inPhase_none_iff": [
+          "propext"
+        ],
+        "Becoming.Hexagram.phases_glue_iff": [
+          "propext"
+        ],
+        "Becoming.Hexagram.alternates_all_iff": [
+          "propext"
+        ],
+        "Becoming.Hexagram.seams_glue_iff": [
+          "propext"
+        ],
+        "Becoming.Hexagram.weiJi_opposed": [
+          "propext"
+        ],
+        "Becoming.Hexagram.heng_opposed": [
+          "propext"
+        ],
+        "Becoming.Hexagram.xian_opposed": [
+          "propext"
+        ],
+        "Becoming.Hexagram.gen_halves_glue": [
+          "propext"
+        ],
+        "Becoming.Hexagram.tongRen_second": [
+          "propext"
+        ],
+        "Becoming.Hexagram.xiaoXu_fourth": [
+          "propext"
+        ],
+        "Becoming.Hexagram.daYou_fifth": [
+          "propext"
+        ],
+        "Becoming.Hexagram.guiMei_falls": [
+          "propext"
+        ],
+        "Becoming.Hexagram.guai_falls": [
+          "propext"
+        ],
+        "Becoming.Hexagram.placesHold": [
+          "propext"
+        ],
+        "Becoming.Hexagram.placesHold_sound": [
+          "propext"
+        ],
+        "Becoming.Hexagram.placeStatements_agree": [
+          "propext"
+        ],
+        "Becoming.Hexagram.xu_top_inPhase": [
+          "propext"
+        ],
+        "Becoming.Hexagram.centresHold": [
+          "propext"
+        ],
+        "Becoming.Hexagram.centresHold_sound": [
+          "propext"
+        ],
+        "Becoming.Hexagram.centreStatements_agree": [
+          "propext"
+        ],
+        "Becoming.Hexagram.gen_fifth_out_of_phase": [
+          "propext"
+        ],
+        "Becoming.Hexagram.fallsHold": [
+          "propext"
+        ],
+        "Becoming.Hexagram.fallsHold_sound": [
+          "propext"
+        ],
+        "Becoming.Hexagram.fallStatements_agree": [
+          "propext"
+        ],
+        "Becoming.Hexagram.middleOppositionsHold": [
+          "propext"
+        ],
+        "Becoming.Hexagram.middleOppositionsHold_sound": [
+          "propext"
+        ],
+        "Becoming.Hexagram.middleOppositionStatements_agree": [
+          "propext"
+        ]
+      }
+    }
+  }
+}

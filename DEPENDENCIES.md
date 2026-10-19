@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-255 registered results: 239 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 633 curated edges join 209 results to the results they draw on.
+256 registered results: 240 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 636 curated edges join 210 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -142,6 +142,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [organizational-rule-inheritance][] ← <a id="organizational-rule-inheritance--recurrent-chain-assembly"></a>[recurrent-chain-assembly][] *(interpretive)*
 - [own-count-misses-joint-excess][] ← <a id="own-count-misses-joint-excess--more-needs-renewers"></a>[more-needs-renewers][] · <a id="own-count-misses-joint-excess--renewing-consuming-formation"></a>[renewing-consuming-formation][] *(interpretive)* · <a id="own-count-misses-joint-excess--laws-of-one-step"></a>[laws-of-one-step][]
 - [pending-task-context-applicability][] ← <a id="pending-task-context-applicability--acquired-revision-of-pending-task"></a>[acquired-revision-of-pending-task][]
+- [place-relations-in-context][] ← <a id="place-relations-in-context--hexagrams-on-the-spine"></a>[hexagrams-on-the-spine][] · <a id="place-relations-in-context--contextual-registration"></a>[contextual-registration][] · <a id="place-relations-in-context--generalization-through-lumping"></a>[generalization-through-lumping][]
 - [positioned-positive-reason][] ← <a id="positioned-positive-reason--positive-ground-open-futures"></a>[positive-ground-open-futures][]
 - [practical-judgment-g0-j][] ← <a id="practical-judgment-g0-j--becoming-return-grades"></a>[becoming-return-grades][] *(interpretive)* · <a id="practical-judgment-g0-j--substitution-preserves-consumption"></a>[substitution-preserves-consumption][] *(interpretive)*
 - [prefix-observation-loss][] ← <a id="prefix-observation-loss--finite-granularity-question-recovery"></a>[finite-granularity-question-recovery][]
@@ -370,6 +371,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [organizational-rule-inheritance]: theories/becoming/results/records/organizational-rule-inheritance.md
 [own-count-misses-joint-excess]: theories/becoming/results/records/own-count-misses-joint-excess.md
 [pending-task-context-applicability]: theories/becoming/results/records/pending-task-context-applicability.md
+[place-relations-in-context]: theories/becoming/results/records/place-relations-in-context.md
 [positioned-positive-reason]: theories/becoming/results/records/positioned-positive-reason.md
 [positive-ground-open-futures]: theories/becoming/results/records/positive-ground-open-futures.md
 [practical-judgment-g0-j]: theories/becoming/results/records/practical-judgment-g0-j.md

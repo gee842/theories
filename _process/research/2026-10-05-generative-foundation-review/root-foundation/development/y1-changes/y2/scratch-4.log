@@ -1,0 +1,18 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/great-stonebraker-6e3c8b/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y2",
+  "modules": 45,
+  "ran": [
+    "Becoming.HexagramPlaces",
+    "BecomingHexagramPlacesAxiomAudit"
+  ],
+  "reused": 44,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramPlaces": {
+      "theorems": 108,
+      "declarations": 156,
+      "with_axioms": {}
+    }
+  }
+}
+exit 0

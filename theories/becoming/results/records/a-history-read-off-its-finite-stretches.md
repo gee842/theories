@@ -110,6 +110,7 @@ Aliases: `a history read off its finite stretches`, `从有限片段读出的历
 - 19 October 2026: added (A4-L), on decision D45 (4) and Ren's “integrate all, the theory is a whole, not stitched pieces, go ahead” (19 October); study section 189.
 - 19 October 2026, Y1 (Becoming.Hexagrams): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y1 added D47, its index row and its lineage line). The claim is unchanged.
 - 19 October 2026, V (what a collective's continuation needs): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: V added decision D48). The claim is unchanged.
+- 19 October 2026, Y2 (Becoming.HexagramPlaces): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y2 added D50, its index row and its lineage line). The claim is unchanged.
 
 </details>
 
