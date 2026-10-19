@@ -1,0 +1,13 @@
+import Becoming.ListedWebs
+#check @Becoming.ListedWebs.across
+#check @Becoming.ListedWebs.ceasings_within
+#check @Becoming.ListedWebs.arisings_within
+#check @Becoming.ListedWebs.ceasing_of_outpacing
+#check @Becoming.ListedWebs.keep_pace
+#check @Becoming.ListedWebs.persists
+#check @Becoming.ListedWebs.ceasing_needs_arising
+#check @Becoming.ListedWebs.ceasing_not_recurring
+#check @Becoming.ListedWebs.ceasing_steps_found
+#check @Becoming.ListedWebs.forced_iff_more
+#check @Becoming.ListedWebs.forces_iff_noSplit
+#check @Becoming.ListedWebs.rests_unrefuted_iff

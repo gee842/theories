@@ -1,0 +1,10 @@
+'Becoming.SupportRecovery.absorbs' does not depend on any axioms
+'Becoming.SupportRecovery.repair_step' does not depend on any axioms
+'Becoming.SupportRecovery.window_progress' does not depend on any axioms
+'Becoming.SupportRecovery.pulse' does not depend on any axioms
+'Becoming.SupportRecovery.same_later_inputs' does not depend on any axioms
+'Becoming.SupportRecovery.pulse_levels' does not depend on any axioms
+'Becoming.SupportRecovery.supported_pulse_recovers' does not depend on any axioms
+'Becoming.SupportRecovery.unsupported_pulse_ends' does not depend on any axioms
+'Becoming.SupportRecovery.recovered_neither' does not depend on any axioms
+'Becoming.SupportRecovery.recovered_web_neither' does not depend on any axioms

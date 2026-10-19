@@ -1,0 +1,23 @@
+import Becoming.LawAlongRun
+#print axioms Becoming.Run.ConsistentThrough
+#print axioms Becoming.Run.recordThrough
+#print axioms Becoming.Run.stepsThrough_record
+#print axioms Becoming.Run.record_least
+#print axioms Becoming.Run.record_determined_iff
+#print axioms Becoming.Run.law_through_iff
+#print axioms Becoming.Run.ConsistentThrough.earlier
+#print axioms Becoming.Run.no_law_later
+#print axioms Becoming.Run.consistent_id_iff
+#print axioms Becoming.Run.consistent_of_goAlike
+#print axioms Becoming.MatchesThrough
+#print axioms Becoming.image_exact_iff
+#print axioms Becoming.exact_law_iff
+#print axioms Becoming.Constant.process
+#print axioms Becoming.Constant.run
+#print axioms Becoming.Constant.consistent
+#print axioms Becoming.Constant.not_goAlike
+#print axioms Becoming.Switching.inconsistent
+#print axioms Becoming.Stuck.process
+#print axioms Becoming.Stuck.goAlike_not_matches
+#print axioms Becoming.Coarse.matching
+#print axioms Becoming.Coarse.exact_law

@@ -385,7 +385,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   unfolding; renewal and consumption belong to the run.
 * `Becoming.Dependence` (L1): dependence forms, holds, breaks and dissolves across
   steps; the outcomes of a loss where activity needs support; stepwise readings of
-  events and their relations; the arithmetic the layers share.
+  events and their relations.
 * `Becoming.Restoration` (L1): renewal graded by the time to return; readings over cycles.
 * `Becoming.Horizon` (L1): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
@@ -1092,8 +1092,8 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   influence closure registers within it. What a part has not reached before a step is admitted
   alike with and without it there, and any significance covering what the part reaches compares
   the levels with and without it as the continuation condition does; the comparison of any two flows is decided
-  within what their difference reaches. The continuation condition enters only as a hypothesis of three
-  witnesses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
+  within what their difference reaches. The continuation condition does not enter; the three
+  witnesses taking it as a hypothesis are in `Becoming.BoundedSignificance`. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
 * `Becoming.BoundedSignificance` (L2): where significance bounded by a region meets the continuation condition,
   as a hypothesis or a conclusion. Bounded by the whole it is the condition (`bounded_whole`);
   within a feeding closure that is the whole the verdict is the condition's

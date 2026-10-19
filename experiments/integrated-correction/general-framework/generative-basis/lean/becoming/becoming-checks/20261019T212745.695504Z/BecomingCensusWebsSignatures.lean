@@ -1,0 +1,9 @@
+import Becoming.CensusWebs
+#check @Becoming.CensusWebs.listed_over_stretch
+#check @Becoming.CensusWebs.keep_pace
+#check @Becoming.CensusWebs.arisings_count
+#check @Becoming.CensusWebs.ceasings_count
+#check @Becoming.CensusWebs.census_identityDecided
+#check @Becoming.CensusWebs.stock_eq
+#check @Becoming.CensusWebs.stock_le
+#check @Becoming.CensusWebs.indiscernible_numbers_unique

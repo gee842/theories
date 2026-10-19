@@ -52,8 +52,8 @@ uniqueness of the factor is stated at every fragment rather than as an equality 
 The readings of these results are the AI's, adopted on Ren's delegation of 15 October 2026
 (DELEGATED-CHOICES D33). No ethical predicate is used.
 
-`Joining.appended_assoc` is in `Becoming.Decidedness`, so the modules using it do not import the
-frame (board item W).
+The associativity of appending, `ListTests.append_assoc`, is in `Becoming.Prelude`, so the modules
+using it do not import the frame (board item W).
 -/
 
 namespace Becoming

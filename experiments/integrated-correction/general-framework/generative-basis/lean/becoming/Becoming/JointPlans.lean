@@ -15,7 +15,7 @@ used, or shared across branches.
   also the two parts' footprints share nothing (`PartsApart`), it repeats nothing
   (`JointPlan.nodup_of_realizes`), so the root's footprint supports it (`Supports`,
   `JointPlan.supports_of_realizes`). Two facts of lists carry this at every universe
-  (`mem_appended_split`, `nodup_append_of_apart`).
+  (`ListTests.mem_append_iff` of `Becoming.Prelude`, and `nodup_append_of_apart`).
 
 Nothing here reads a frame or a labelled process. These declarations were stated in
 `Becoming.Composition` and are moved here unchanged, with their names, so that the modules using

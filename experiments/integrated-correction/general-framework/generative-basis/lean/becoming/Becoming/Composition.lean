@@ -107,8 +107,7 @@ ranking or axiom occurs.
 
 Joint plans and exclusive footprints for any ternary relation (`JointPlan`, `JointPlan.Realizes`,
 `JointPlan.draws`, `PartsWithin`, `PartsApart`, `Supports`, `JointPlan.within_of_realizes`,
-`JointPlan.nodup_of_realizes`, `JointPlan.supports_of_realizes`, `mem_appended_split`,
-`nodup_append_of_apart`) are in `Becoming.JointPlans`, so the modules using them do not import the
+`JointPlan.nodup_of_realizes`, `JointPlan.supports_of_realizes`, `nodup_append_of_apart`) are in `Becoming.JointPlans`, so the modules using them do not import the
 frame (board item W).
 -/
 

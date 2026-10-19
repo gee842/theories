@@ -58,16 +58,14 @@ they are stated over natural weights, with no real numbers and no probability me
 are of courses, or, in `Becoming.Situations`, of situations.
 
 The AM–GM step `2·x·y ≤ x·x + y·y` is proved on the way (`two_mul_le`). The arithmetic uses
-the core's inductive forms of distributivity, associativity and powers (`add_mul_split`,
-`mul_assoc_nat`, with `left_comm`, and `pow_add_nat`), since the prelude's forms of these laws use propositional
-extensionality. Ren took the reading of their words on 16 October 2026.
+the core's inductive forms of distributivity, associativity and powers in `Becoming.Prelude`
+(`add_mul_split`, `mul_assoc_nat`, `mul_turn` and `Naturals.pow_add`), since Lean's prelude forms of
+these laws use propositional extensionality. Ren took the reading of their words on 16 October 2026.
 -/
 
 namespace Becoming
 
 namespace Typicality
-
-/-! ## Arithmetic without extensionality -/
 
 /-! ## Courses and their weights -/
 

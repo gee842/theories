@@ -92,11 +92,6 @@ open RelationalRenewal
 
 universe u v
 
-/-! ## Arithmetic
-
-Lemmas on natural numbers used throughout the layers, each with an empty axiom report; the
-prelude's versions of the cancellation lemmas carry `propext`. -/
-
 /-! ## Change is made at a step -/
 
 /-- What holds at `T` and fails at a later `t` ceased across some step between them. -/

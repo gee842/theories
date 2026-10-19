@@ -137,8 +137,6 @@ namespace Becoming
 
 variable {F C : Type}
 
-/-! ## Products, regrouped without `propext` -/
-
 /-! ## A unit that may refine -/
 
 namespace Flow

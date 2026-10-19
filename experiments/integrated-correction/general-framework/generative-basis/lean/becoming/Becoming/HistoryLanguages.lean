@@ -50,8 +50,6 @@ namespace HistoryLanguages
 
 variable {A : Type v}
 
-/-! ## Support: lists, proved without propositional extensionality -/
-
 /-! ## A prefix-closed language and the law of its histories -/
 
 /-- A language is closed under prefixes: an admitted course has every prefix admitted. -/
