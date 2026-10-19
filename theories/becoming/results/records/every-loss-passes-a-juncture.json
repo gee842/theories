@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-19T10:25:15+00:00",
   "statement": {
-    "en": "Where s returns, every course to a configuration that cannot have s again passes, not not, a juncture: one step there keeps s to be had and one loses it. Finding it is deciding reach (LPO for every process). Keeping the steps that keep s keeps s, the largest that does.",
-    "zh": "s 返回时，每条到达不能再得 s 之配置的路径，不非地经过一个关节：那里一步保住 s 可得，一步失去它。找到它即判定可达（对每个过程为 LPO）。保留保住 s 之步者保住 s，是这样的最大者。"
+    "en": "Where s returns, every course to a configuration that cannot have s again passes, not not, a juncture: one step there keeps s to be had and one loses it. Finding it is deciding reach (LPO for every process). Keeping the steps that keep s keeps s, the largest that does on its course from s.",
+    "zh": "s 返回时，每条到达不能再得 s 之配置的路径，不非地经过一个关节：那里一步保住 s 可得，一步失去它。找到它即判定可达（对每个过程为 LPO）。保留保住 s 之步者保住 s，在自 s 起的路径上是这样的最大者。"
   },
   "laws": [
     {
@@ -378,6 +378,10 @@
     {
       "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
       "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1b: the statement's last clause said keeping is the largest sub-process that keeps s; `keeping_greatest` holds every sub-process keeping s on that sub-process's course from s, so the clause now says \"on its course from s\", as law 5 already did. The laws, their declarations and the proof bindings are unchanged.",
+      "zh": "2026年10月19日，X1b：陈述末句原说保持是保住 s 的最大子过程；`keeping_greatest` 只在每个保住 s 之子过程自 s 起的路径上包含它，故末句改为“在自 s 起的路径上”，与规律 5 一致。规律、其声明与证明绑定不变。"
     }
   ]
 }
