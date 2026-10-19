@@ -399,12 +399,14 @@ OLD_EN = ('The ranks of the places (尊位, 貴賤); whether the bottom and top 
           '《周易略例》, not preserved here.')
 OLD_ZH = ('位的尊卑（尊位、贵贱），初上两位是否有位（初上无位），一爻为众爻所应（上下應之、乘五剛），以及四项普查之外'
           '关于位的言说（爻辞、大象、文言）；王弼《周易略例》未存于本库，未对照。')
-assert scope['en'] == OLD_EN and scope['zh'] == OLD_ZH, scope
+assert scope['en'].startswith(OLD_EN) and scope['zh'].startswith(OLD_ZH), scope
+# Keep what later items added after Y2's text (Y2b: the censuses of the sixty-four by each count).
+rest_en, rest_zh = scope['en'][len(OLD_EN):], scope['zh'][len(OLD_ZH):]
 scope['en'] = ('The ranks of the places (尊位, 貴賤); the reading with no fixed place at the bottom and top (初上无位), '
                'the line answered by all others (上下應之, 乘五剛), the censuses of the line texts and the 大象, and '
-               '王弼\'s 《周易略例》 are in fixed-places-and-sole-lines; the 文言\'s statements of place.')
+               '王弼\'s 《周易略例》 are in fixed-places-and-sole-lines; the 文言\'s statements of place.') + rest_en
 scope['zh'] = ('位的尊卑（尊位、贵贱）；初上无位之读、一爻为众爻所应（上下應之、乘五剛）、爻辭与大象之普查与王弼《周易略例》，'
-               '见 fixed-places-and-sole-lines；文言中关于位的言说。')
+               '见 fixed-places-and-sole-lines；文言中关于位的言说。') + rest_zh
 NEXT_EN = ('王弼\'s reading that the bottom and top lines have no place, as a second relation on places 2 to 5, once '
            'the 《周易略例》 is preserved; the relation of one line to all the others (卦主); censuses of the line '
            'texts, the 大象 and the 文言; ')
