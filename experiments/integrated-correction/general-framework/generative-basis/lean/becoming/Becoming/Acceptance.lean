@@ -76,7 +76,7 @@ theorem acceptance_factorization {A : Type} (allowed : A → Prop)
         have h : q a + lift ≤ q a + 0 := opt (a, true) ha
         exact absurd (lt_of_lt_of_le positive (le_of_add_le_add_left h)) (lt_irrefl 0)
     subst accepted
-    exact ⟨rfl, ha, fun b hb => le_of_add_le_add_right (opt (b, true) hb)⟩
+    exact ⟨rfl, ha, fun b hb => IntegerOrder.le_of_add_le_add_right (opt (b, true) hb)⟩
   · intro ⟨accepted, ha, opt⟩
     have e : accept = true := accepted
     subst e

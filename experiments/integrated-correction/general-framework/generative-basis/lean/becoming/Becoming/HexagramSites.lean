@@ -120,13 +120,6 @@ theorem all_congr {α : Type} {p q : α → Bool} (h : ∀ x, p x = q x) : ∀ l
   | [] => rfl
   | a :: l => (congrArg (fun b => b && l.all p) (h a)).trans (congrArg (fun b => q a && b) (all_congr h l))
 
-theorem or_left_true : ∀ {x : Bool} (y : Bool), x = true → (x || y) = true
-  | true, _, _ => rfl
-
-theorem or_right_true : ∀ (x : Bool) {y : Bool}, y = true → (x || y) = true
-  | true, true, _ => rfl
-  | false, true, _ => rfl
-
 theorem same_comm : ∀ x y : Bool, same x y = same y x
   | true, true => rfl
   | true, false => rfl
@@ -417,19 +410,16 @@ theorem allHold_sites (s : Hexagram) : allHold s = true ↔ ∀ q, betweenPhase 
     rw [h2, h3, h4, h5]
     rfl⟩
 
-theorem not_true_eq : ∀ {b : Bool}, (!b) = true → b = false
-  | false, _ => rfl
-
 theorem noneHold_sites (s : Hexagram) : noneHold s = true ↔ ∀ q, betweenPhase s q = false :=
   ⟨fun h =>
     have h123 := both h
     have h12 := both h123.1
     have h1 := both h12.1
     fun
-    | .q2 => not_true_eq h1.1
-    | .q3 => not_true_eq h1.2
-    | .q4 => not_true_eq h12.2
-    | .q5 => not_true_eq h123.2,
+    | .q2 => ListTests.false_of_not h1.1
+    | .q3 => ListTests.false_of_not h1.2
+    | .q4 => ListTests.false_of_not h12.2
+    | .q5 => ListTests.false_of_not h123.2,
    fun all => by
     have h2 : inPhase s .p2 = false := all .q2
     have h3 : inPhase s .p3 = false := all .q3
@@ -721,12 +711,12 @@ theorem soleAny_count : ∀ s : Hexagram, soleAny s = (yang s == 1 || yang s == 
     cases a <;> cases b <;> cases c <;> cases d <;> cases e <;> cases f <;> rfl
 
 theorem sole_any {s : Hexagram} : ∀ {k : Place}, sole s k = true → soleAny s = true
-  | .p1, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ h))))
-  | .p2, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h))))
-  | .p3, h => or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h)))
-  | .p4, h => or_left_true _ (or_left_true _ (or_right_true _ h))
-  | .p5, h => or_left_true _ (or_right_true _ h)
-  | .p6, h => or_right_true _ h
+  | .p1, h => ListTests.or_left _ (ListTests.or_left _ (ListTests.or_left _ (ListTests.or_left _ (ListTests.or_left _ h))))
+  | .p2, h => ListTests.or_left _ (ListTests.or_left _ (ListTests.or_left _ (ListTests.or_left _ (ListTests.or_right _ h))))
+  | .p3, h => ListTests.or_left _ (ListTests.or_left _ (ListTests.or_left _ (ListTests.or_right _ h)))
+  | .p4, h => ListTests.or_left _ (ListTests.or_left _ (ListTests.or_right _ h))
+  | .p5, h => ListTests.or_left _ (ListTests.or_right _ h)
+  | .p6, h => ListTests.or_right _ h
 
 theorem none_sole {s : Hexagram} (h : soleAny s = false) : ∀ k, sole s k = false :=
   have h5 := neither h

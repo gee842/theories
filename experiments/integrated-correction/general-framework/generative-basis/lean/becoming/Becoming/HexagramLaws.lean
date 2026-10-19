@@ -113,7 +113,7 @@ def distinctb : List Hexagram → Bool
 theorem nodup_of_distinctb : ∀ {l : List Hexagram}, distinctb l = true → l.Nodup
   | [], _ => List.Pairwise.nil
   | _ :: l, h => List.Pairwise.cons
-      (fun _ mem same => not_mem_of_memb (false_of_not (both h).1)
+      (fun _ mem same => not_mem_of_memb (ListTests.false_of_not (both h).1)
         (Eq.subst (motive := fun x => x ∈ l) same.symm mem))
       (nodup_of_distinctb (both h).2)
 
@@ -230,11 +230,11 @@ def attractorb (s : Hexagram) : Bool :=
   eqb s allUnbroken || eqb s allBroken || eqb s jiJi || eqb s weiJi
 
 theorem attractor_of_attractorb {s : Hexagram} (h : attractorb s = true) : NuclearAttractor s :=
-  match either h with
+  match ListTests.or_cases h with
   | .inr w => .inr (.inr (.inr (eq_of_eqb w)))
-  | .inl h3 => match either h3 with
+  | .inl h3 => match ListTests.or_cases h3 with
     | .inr j => .inr (.inr (.inl (eq_of_eqb j)))
-    | .inl h2 => match either h2 with
+    | .inl h2 => match ListTests.or_cases h2 with
       | .inr k => .inr (.inl (eq_of_eqb k))
       | .inl q => .inl (eq_of_eqb q)
 
@@ -666,7 +666,7 @@ theorem classes_not_goAlike_waxWane : ¬ GoAlike (Law.process waxWane) classOf :
 theorem any_sound {p : Hexagram × Hexagram → Bool} :
     ∀ {l : List (Hexagram × Hexagram)}, l.any p = true → ∃ q, q ∈ l ∧ p q = true
   | [], h => Bool.noConfusion h
-  | q :: _, h => match either h with
+  | q :: _, h => match ListTests.or_cases h with
     | .inl here => ⟨q, .head _, here⟩
     | .inr there => match any_sound there with
       | ⟨q', mem, holds⟩ => ⟨q', .tail _ mem, holds⟩
@@ -683,7 +683,7 @@ theorem pairedByChange_sound {s : Hexagram} (h : pairedByChange s = true) :
   | ⟨q, mem, holds⟩ => match both holds with
     | ⟨rule, which⟩ => match both rule with
       | ⟨fixed, changed⟩ =>
-        ⟨q, mem, eq_of_eqb fixed, eq_of_eqb changed, match either which with
+        ⟨q, mem, eq_of_eqb fixed, eq_of_eqb changed, match ListTests.or_cases which with
           | .inl first => .inl (eq_of_eqb first)
           | .inr second => .inr (eq_of_eqb second)⟩
 
@@ -719,7 +719,7 @@ theorem pairedByBoth_sound {s : Hexagram} (h : pairedByBoth s = true) :
   | ⟨q, mem, holds⟩ => match both holds with
     | ⟨rule, which⟩ => match both rule with
       | ⟨turned, changed⟩ =>
-        ⟨q, mem, eq_of_eqb turned, eq_of_eqb changed, match either which with
+        ⟨q, mem, eq_of_eqb turned, eq_of_eqb changed, match ListTests.or_cases which with
           | .inl first => .inl (eq_of_eqb first)
           | .inr second => .inr (eq_of_eqb second)⟩
 
@@ -1223,7 +1223,7 @@ def visitsFrom (next : Hexagram → Hexagram) (s : Hexagram) : Nat → Hexagram 
 theorem visits_sound {next : Hexagram → Hexagram} {s : Hexagram} :
     ∀ {n : Nat} {x : Hexagram}, visitsFrom next s n x = true → ∃ k, k < n ∧ Law.orbit next x k = s
   | 0, _, h => Bool.noConfusion h
-  | _ + 1, x, h => match either h with
+  | _ + 1, x, h => match ListTests.or_cases h with
     | .inl here => ⟨0, Nat.succ_pos _, eq_of_eqb here⟩
     | .inr later => match visits_sound later with
       | ⟨k, lt, at_k⟩ => ⟨k + 1, Nat.succ_lt_succ lt, (Law.orbit_shift next x k).trans at_k⟩
@@ -1236,7 +1236,7 @@ def onOrbit (s : Hexagram) : List (Hexagram × Nat) → Bool
 theorem onOrbit_sound {s : Hexagram} : ∀ {l : List (Hexagram × Nat)}, onOrbit s l = true →
     ∃ q, q ∈ l ∧ ∃ k, k < q.2 ∧ Law.orbit waxWane q.1 k = s
   | [], h => Bool.noConfusion h
-  | q :: _, h => match either h with
+  | q :: _, h => match ListTests.or_cases h with
     | .inl here => match visits_sound here with
       | ⟨k, lt, at_k⟩ => ⟨q, .head _, k, lt, at_k⟩
     | .inr there => match onOrbit_sound there with

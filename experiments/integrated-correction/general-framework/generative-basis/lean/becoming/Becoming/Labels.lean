@@ -120,10 +120,6 @@ def entryOf (next : S → S) (reg : S → R) (val : S → V) (l : List S) (x : S
 def tableOf (next : S → S) (reg : S → R) (val : S → V) (l : List S) : List (List R × V) :=
   l.map (entryOf next reg val l)
 
-theorem length_map {α β : Type _} (g : α → β) : ∀ l : List α, (l.map g).length = l.length
-  | [] => rfl
-  | _ :: l => congrArg Nat.succ (length_map g l)
-
 /-- A member of a mapped list is the image of a member. -/
 theorem mem_map_of {α β : Type _} {g : α → β} : ∀ {l : List α} {b : β}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
   | [], _, mem => nomatch mem

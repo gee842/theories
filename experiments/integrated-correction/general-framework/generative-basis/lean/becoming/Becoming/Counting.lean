@@ -1406,7 +1406,7 @@ theorem replaced_attains :
           (t + 1) = 2 :=
   ⟨rfl, fun t => (congrArg (· + _) (finiteQueue_counts (Swap.tally fun _ => true)
       (Swap.change_bound fun _ => true) (t + 1)).1).trans (congrArg (1 + ·)
-        ((congrArg (_ + ·) (mark_zero fun c => Bool.noConfusion (Clear.and_right c))).symm.trans
+        ((congrArg (_ + ·) (mark_zero fun c => Bool.noConfusion (ListTests.and_right c))).symm.trans
           (Swap.counted (fun _ => true) (t + 1))))⟩
 
 /-- That arising does not recur in a finite world meeting the eight premises

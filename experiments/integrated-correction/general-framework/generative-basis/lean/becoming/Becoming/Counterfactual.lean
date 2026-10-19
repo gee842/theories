@@ -367,18 +367,9 @@ theorem totals_under (na : law.Nonanticipating) (n : Nat) (c : C) :
   ⟨total_congr_on fun f _ => (na n f _ _ (history_agree n) c).1,
    total_congr_on fun f _ => (na n f _ _ (history_agree n) c).2⟩
 
-/-- What is taken away, added back, restores what was there, where no more is taken than is
-there. -/
-theorem sub_add_back : ∀ {m k : Nat}, k ≤ m → m - k + k = m
-  | _, 0, _ => rfl
-  | 0, k + 1, le => absurd le (Nat.not_succ_le_zero k)
-  | m + 1, k + 1, le =>
-    (congrArg (· + (k + 1)) (Nat.succ_sub_succ m k)).trans
-      (congrArg Nat.succ (sub_add_back (Nat.le_of_succ_le_succ le)))
-
 /-- `m - k` with `k` added back is `m` exactly when `k ≤ m`. -/
 theorem sub_add_back_iff {m k : Nat} : m - k + k = m ↔ k ≤ m :=
-  ⟨fun back => Nat.le_trans (Nat.le_add_left k (m - k)) (Nat.le_of_eq back), sub_add_back⟩
+  ⟨fun back => Nat.le_trans (Nat.le_add_left k (m - k)) (Nat.le_of_eq back), Naturals.sub_add_cancel⟩
 
 /-- **The counterfactual exists where it is feasible.** Under a law of what has stood, the flow
 the law generates balances on the levels it generates exactly where the law never takes more

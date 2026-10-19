@@ -347,12 +347,6 @@ theorem anyOf_of_mem {α : Type _} {p : α → Bool} {x : α} :
       rw [anyOf_of_mem mem passes]
       cases p y <;> rfl
 
-theorem and_both {b c : Bool} (both : (b && c) = true) : b = true ∧ c = true := by
-  cases b <;> cases c <;> cases both <;> exact ⟨rfl, rfl⟩
-
-theorem and_of {b c : Bool} (hb : b = true) (hc : c = true) : (b && c) = true := by
-  rw [hb, hc]; rfl
-
 /-- The members of a list that pass a test. -/
 def keepIf {α : Type _} (p : α → Bool) : List α → List α
   | [] => []
@@ -461,11 +455,11 @@ theorem live_succ_iff (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ al
     live P moves all (m + 1) y = true ↔ ∃ a z, P.step y a z ∧ live P moves all m z = true :=
   ⟨fun open_ => match anyOf_true open_ with
     | ⟨a, _, inner⟩ => match anyOf_true inner with
-      | ⟨z, _, both⟩ => ⟨a, z, of_decide_eq_true (and_both both).1, (and_both both).2⟩,
+      | ⟨z, _, both⟩ => ⟨a, z, of_decide_eq_true (bool_of_and_true both).1, (bool_of_and_true both).2⟩,
    fun ⟨a, z, step, rest⟩ =>
      show anyOf moves (fun a => anyOf all fun z => decide (P.step y a z) && live P moves all m z) =
        true from
-     anyOf_of_mem (every_move a) (anyOf_of_mem (every z) (and_of (decide_eq_true step) rest))⟩
+     anyOf_of_mem (every_move a) (anyOf_of_mem (every z) (bool_and_true (decide_eq_true step) rest))⟩
 
 theorem live_of_run (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all) (r : Run P) :
     ∀ m n, live P moves all m (r.state n) = true
@@ -499,10 +493,10 @@ def advance (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
     moves (match live_persists every_move every y.2 with
       | ⟨a, z, step, rest⟩ => ⟨a, every_move a,
           anyOf_of_mem (p := fun z => decide (P.step y.1 a z) && live P moves all all.length z)
-            (every z) (and_of (decide_eq_true step) rest)⟩)
+            (every z) (bool_and_true (decide_eq_true step) rest)⟩)
   let z := choose (fun z => decide (P.step y.1 a.1 z) && live P moves all all.length z) all
     (anyOf_true a.2)
-  ⟨(a.1, ⟨z.1, (and_both z.2).2⟩), of_decide_eq_true (and_both z.2).1⟩
+  ⟨(a.1, ⟨z.1, (bool_of_and_true z.2).2⟩), of_decide_eq_true (bool_of_and_true z.2).1⟩
 
 /-- The configurations reached by advancing `n` times. -/
 def advanced (every_move : ∀ a, a ∈ moves) (every : ∀ x, x ∈ all)
@@ -581,7 +575,7 @@ theorem run_in_candidates (every_move : ∀ a, a ∈ moves) (every : ∀ x, x �
     ∀ t, r.state t ∈ candidates P moves all reg s (Learning.prefixOf (course reg r) t)
   | 0 => Eq.subst (motive := fun x => x ∈ [s]) start.symm (.head _)
   | t + 1 => mem_keepIf.mpr ⟨every _, anyOf_of_mem (run_in_candidates every_move every r start t)
-      (and_of (decide_eq_true rfl) (anyOf_of_mem (every_move (r.act t)) (decide_eq_true (r.step t))))⟩
+      (bool_and_true (decide_eq_true rfl) (anyOf_of_mem (every_move (r.act t)) (decide_eq_true (r.step t))))⟩
 
 theorem candidates_run : ∀ (record : List R) (y : S),
     y ∈ candidates P moves all reg s record → ∀ q : Run P, q.state 0 = y →
@@ -594,7 +588,7 @@ theorem candidates_run : ∀ (record : List R) (y : S),
     ⟨q, start.trans at_s, rfl, fun n => congrArg q.state (Nat.zero_add n)⟩
   | v :: record, y, mem, q, start =>
     match anyOf_true (mem_keepIf.mp mem).2 with
-    | ⟨x, inside, both⟩ => match anyOf_true (and_both both).2 with
+    | ⟨x, inside, both⟩ => match anyOf_true (bool_of_and_true both).2 with
       | ⟨a, _, moved⟩ =>
         have into : P.step x a (q.state 0) :=
           Eq.subst (motive := fun z => P.step x a z) start.symm (of_decide_eq_true moved)
@@ -605,7 +599,7 @@ theorem candidates_run : ∀ (record : List R) (y : S),
                v :: record by
              rw [recorded]
              exact congrArg (· :: record)
-               ((congrArg reg (follows 0)).trans (of_decide_eq_true (and_both both).1)),
+               ((congrArg reg (follows 0)).trans (of_decide_eq_true (bool_of_and_true both).1)),
            fun n => (congrArg r'.state ((Nat.add_assoc _ _ _).trans
              (congrArg _ (Nat.add_comm 1 n)))).trans (follows (n + 1))⟩
 
@@ -706,7 +700,7 @@ theorem free_open [DecidableEq V] {x y : V} (two : x ≠ y) (pred : List V → O
 theorem free_never_right (pred : List Bool → Option Bool) :
     ∃ r : Run (free Bool), ∀ t, ¬ RightAt pred id r t :=
   ⟨freeRun (Learning.diagonal pred (fun b => !b) false), fun _ right =>
-    match Learning.diagonal_misses pred Identification.not_ne_bool false right with
+    match Learning.diagonal_misses pred ListTests.not_ne_self false right with
     | ⟨_, made, differs⟩ => differs (Option.some.inj (made.symm.trans right))⟩
 
 /-- Free branching on two values is held by a list of two configurations. -/
@@ -721,7 +715,7 @@ theorem free_unbounded :
     ∃ r : Run (free Bool), ∀ N, ¬ StatesBelow (course id r) N :=
   ⟨freeRun (Learning.diagonal (Learning.byElimination Learning.lassos) (fun b => !b) false),
    fun _ bound => match Identification.statesBelow_iff_lasso.mp bound with
-     | ⟨_, _, _, lasso⟩ => Learning.diagonal_not_lasso Identification.not_ne_bool false lasso⟩
+     | ⟨_, _, _, lasso⟩ => Learning.diagonal_not_lasso ListTests.not_ne_self false lasso⟩
 
 end Free
 

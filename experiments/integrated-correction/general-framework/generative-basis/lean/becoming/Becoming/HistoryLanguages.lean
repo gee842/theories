@@ -52,14 +52,6 @@ variable {A : Type v}
 
 /-! ## Support: lists, proved without propositional extensionality -/
 
-theorem append_nil' : ∀ l : List A, l ++ [] = l
-  | [] => rfl
-  | a :: l => congrArg (List.cons a) (append_nil' l)
-
-theorem append_assoc' : ∀ l m n : List A, l ++ m ++ n = l ++ (m ++ n)
-  | [], _, _ => rfl
-  | a :: l, m, n => congrArg (List.cons a) (append_assoc' l m n)
-
 /-! ## A prefix-closed language and the law of its histories -/
 
 /-- A language is closed under prefixes: an admitted course has every prefix admitted. -/
@@ -78,10 +70,10 @@ theorem trace_iff {L : List A → Prop} (closed : PrefixClosed L) :
       (Trace (law L) before word after ↔ after = before ++ word ∧ L after)
   | before, [], _, admitted =>
     ⟨fun path => match trace_nil_iff.mp path with
-      | same => ⟨same ▸ (append_nil' before).symm, same ▸ admitted⟩,
-     fun ⟨same, _⟩ => trace_nil_iff.mpr (same.trans (append_nil' before)).symm⟩
+      | same => ⟨same ▸ (ListTests.append_nil before).symm, same ▸ admitted⟩,
+     fun ⟨same, _⟩ => trace_nil_iff.mpr (same.trans (ListTests.append_nil before)).symm⟩
   | before, a :: rest, _, _ =>
-    have shift : before ++ [a] ++ rest = before ++ (a :: rest) := append_assoc' before [a] rest
+    have shift : before ++ [a] ++ rest = before ++ (a :: rest) := ListTests.append_assoc before [a] rest
     ⟨fun path => match trace_cons_iff.mp path with
       | ⟨_, ⟨first, middle⟩, tail⟩ =>
         have tail := first ▸ tail
@@ -181,7 +173,7 @@ def Letterwise (L : List A → Prop) : List A → Prop
 theorem future_update (L : List A → Prop) (h extension suffix : List A) :
     Future L (h ++ extension) suffix ↔ Future L h (extension ++ suffix) :=
   show L (h ++ extension ++ suffix) ↔ L (h ++ (extension ++ suffix)) from
-    (append_assoc' h extension suffix) ▸ Iff.rfl
+    (ListTests.append_assoc h extension suffix) ▸ Iff.rfl
 
 /-- **Histories with one profile keep one profile after a common extension.** -/
 theorem same_future_extends (L : List A → Prop) {h k : List A} (same : SameFuture L h k)
@@ -252,20 +244,20 @@ theorem locate_first_obstruction (L : List A → Prop) [DecidablePred L] :
     ∀ (start word : List A), L start → Letterwise L word → ¬ L (start ++ word) →
       ∃ pre a suffix, word = pre ++ (a :: suffix) ∧ L (start ++ pre) ∧ L [a] ∧
         ¬ L ((start ++ pre) ++ [a])
-  | start, [], admitted, _, blocked => absurd ((append_nil' start).symm ▸ admitted) blocked
+  | start, [], admitted, _, blocked => absurd ((ListTests.append_nil start).symm ▸ admitted) blocked
   | start, a :: word, admitted, letters, blocked =>
     if next : L (start ++ [a]) then
       have later : ¬ L ((start ++ [a]) ++ word) :=
-        fun held => blocked ((append_assoc' start [a] word) ▸ held)
+        fun held => blocked ((ListTests.append_assoc start [a] word) ▸ held)
       match locate_first_obstruction L (start ++ [a]) word next letters.2 later with
       | ⟨pre, b, suffix, same, held, letter, stuck⟩ =>
         ⟨a :: pre, b, suffix, congrArg (List.cons a) same,
-         (append_assoc' start [a] pre) ▸ held, letter,
+         (ListTests.append_assoc start [a] pre) ▸ held, letter,
          fun reached => stuck ((congrArg (fun xs => xs ++ [b])
-           (append_assoc' start [a] pre)).symm ▸ reached)⟩
+           (ListTests.append_assoc start [a] pre)).symm ▸ reached)⟩
     else
-      ⟨[], a, word, rfl, (append_nil' start).symm ▸ admitted, letters.1,
-       fun reached => next ((congrArg (fun xs => xs ++ [a]) (append_nil' start)) ▸ reached)⟩
+      ⟨[], a, word, rfl, (ListTests.append_nil start).symm ▸ admitted, letters.1,
+       fun reached => next ((congrArg (fun xs => xs ++ [a]) (ListTests.append_nil start)) ▸ reached)⟩
 
 /-- **A decided obstruction locates a changed profile**: an admitted prefix of the word, whose next
 letter is admitted alone and blocked after it, and whose profile differs from the start's. -/

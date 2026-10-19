@@ -1,4 +1,4 @@
-import Becoming.Joint
+import Becoming.Laws
 import Becoming.Inquiry
 
 /-!
@@ -157,12 +157,6 @@ end Branch
 
 /-! ## Laws of change -/
 
-/-- A law of change read as a process: the move `a` takes `s` to `f s a`. -/
-def ofMap (f : S → A → S) : Process S A := ⟨fun s a t => t = f s a⟩
-
-theorem ofMap_determined (f : S → A → S) : Determined (ofMap f) :=
-  fun _ _ _ _ step step' => step.trans step'.symm
-
 /-- **Under a law of change, a plan completes exactly when the goal holds where the law
 takes the configuration.** -/
 theorem completes_ofMap_iff (f : S → A → S) {goal : S → Prop} :
@@ -182,43 +176,6 @@ theorem completes_ofMap_single (f : S → A → S) {goal : S → Prop} (s : S) (
   completes_ofMap_iff f s [a]
 
 /-! ## Partial laws -/
-
-/-- A partial law read as a process: the move `a` takes `s` to `t` where `f s a = some t`. -/
-def ofPartial (f : S → A → Option S) : Process S A := ⟨fun s a t => f s a = some t⟩
-
-theorem ofPartial_determined (f : S → A → Option S) : Determined (ofPartial f) :=
-  fun _ _ _ _ step step' => Option.some.inj (step.symm.trans step')
-
-theorem none_ne_some {α : Type u} {x : α} : (none : Option α) ≠ some x :=
-  fun same => nomatch same
-
-/-- Running a partial law along a course; `none` where a move is impossible. -/
-def runPartial (f : S → A → Option S) : S → List A → Option S
-  | s, [] => some s
-  | s, a :: rest => (f s a).bind fun t => runPartial f t rest
-
-/-- **The traces of a partial law are exactly the courses its run completes.** -/
-theorem trace_ofPartial_iff (f : S → A → Option S) :
-    ∀ {s t : S} {plan : List A}, Trace (ofPartial f) s plan t ↔ runPartial f s plan = some t
-  | s, t, [] =>
-    ⟨fun path => match path with | .nil _ => rfl,
-     fun ran => match (Option.some.inj ran : s = t) with | rfl => .nil s⟩
-  | s, t, a :: rest =>
-    ⟨fun path => match path with
-      | .cons (m := m) step tail =>
-        show (f s a).bind (fun u => runPartial f u rest) = some t from
-          (congrArg (fun o => o.bind fun u => runPartial f u rest) step).trans
-            ((trace_ofPartial_iff f).mp tail),
-     fun ran =>
-      match moved : f s a with
-      | none => by
-          have impossible : (f s a).bind (fun u => runPartial f u rest) = some t := ran
-          rw [moved] at impossible
-          exact absurd (show (none : Option S) = some t from impossible) none_ne_some
-      | some m => by
-          have onward : (f s a).bind (fun u => runPartial f u rest) = some t := ran
-          rw [moved] at onward
-          exact .cons moved ((trace_ofPartial_iff f).mpr onward)⟩
 
 /-- **Under a partial law, a plan completes exactly when its run ends in the goal.** -/
 theorem completes_ofPartial_iff (f : S → A → Option S) {goal : S → Prop} {s : S}

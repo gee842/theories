@@ -1,4 +1,4 @@
-import Becoming.Order
+import Becoming.IdleRemoval
 
 /-!
 # The order of exchanges completed: normal form, census, least footprint
@@ -101,18 +101,6 @@ predicate, ranking or axiom occurs.
 namespace Becoming
 
 /-! ## Booleans, excess and searching -/
-
-/-- Two Booleans true exactly together are equal. -/
-theorem bool_eq_of_iff : ∀ {a b : Bool}, (a = true ↔ b = true) → a = b
-  | true, true, _ => rfl
-  | false, false, _ => rfl
-  | true, false, same => Bool.noConfusion (same.mp rfl)
-  | false, true, same => Bool.noConfusion (same.mpr rfl)
-
-/-- Both of two Booleans are true exactly where their conjunction is. -/
-theorem band_true_iff : ∀ {a b : Bool}, (a && b) = true ↔ a = true ∧ b = true
-  | true, _ => ⟨fun h => ⟨rfl, h⟩, fun h => h.2⟩
-  | false, _ => ⟨fun h => Bool.noConfusion h, fun h => Bool.noConfusion h.1⟩
 
 /-- Where `a ≤ b`, `a` with the excess of `b` over it is `b`. -/
 theorem add_excess_of_le {a b : Nat} (le : a ≤ b) : a + excess b a = b :=
@@ -552,7 +540,7 @@ theorem apartBelow_iff {w : Nat → Nat} {e a : Nat} : ∀ d : Nat,
     apartBelow apart w e a d = true ↔ ∀ p, a ≤ p → p < a + d → apart (w p) e = true
   | 0 => ⟨fun _ _ from_ below => absurd below (Nat.not_lt_of_le from_), fun _ => rfl⟩
   | d + 1 => show (apart (w (a + d)) e && apartBelow apart w e a d) = true ↔ _ from
-    band_true_iff.trans
+    ListTests.and_true_iff.trans
       ⟨fun ⟨last, rest⟩ p from_ below => match Nat.lt_or_ge p (a + d) with
         | .inl lt => (apartBelow_iff d).mp rest p from_ lt
         | .inr ge => Eq.subst (motive := fun k => apart (w k) e = true)
@@ -568,7 +556,7 @@ def freeAt (apart : Nat → Nat → Bool) (pos w : Nat → Nat) (A e : Nat) : Bo
 
 theorem freeAt_iff {pos w : Nat → Nat} {A e : Nat} :
     freeAt apart pos w A e = true ↔ A ≤ pos e ∧ ∀ p, A ≤ p → p < pos e → apart (w p) e = true :=
-  band_true_iff.trans
+  ListTests.and_true_iff.trans
     ⟨fun ⟨le, all⟩ =>
       have le' := Nat.le_of_ble_eq_true le
       ⟨le', fun p from_ below => (apartBelow_iff _).mp all p from_
@@ -862,10 +850,6 @@ section Boundary
 
 variable {joined : Nat → Nat → Prop} {S m : Nat}
 
-theorem beq_self : ∀ n : Nat, Nat.beq n n = true
-  | 0 => rfl
-  | n + 1 => beq_self n
-
 /-- Whether two functions agree at each of the `n` numbers from `a`. -/
 def agreeFrom (f g : Nat → Nat) : Nat → Nat → Bool
   | _, 0 => true
@@ -875,7 +859,7 @@ theorem agreeFrom_iff {f g : Nat → Nat} : ∀ (a n : Nat),
     agreeFrom f g a n = true ↔ ∀ i, a ≤ i → i < a + n → f i = g i
   | _, 0 => ⟨fun _ _ from_ below => absurd below (Nat.not_lt_of_le from_), fun _ => rfl⟩
   | a, n + 1 => show (Nat.beq (f a) (g a) && agreeFrom f g (a + 1) n) = true ↔ _ from
-    band_true_iff.trans
+    ListTests.and_true_iff.trans
       ⟨fun ⟨here, rest⟩ i from_ below => match Nat.decEq i a with
         | .isTrue same => Eq.subst (motive := fun k => f k = g k) same.symm
             (Nat.eq_of_beq_eq_true here)
@@ -1100,26 +1084,10 @@ end Footprinted
 
 section Census
 
-theorem mem_append_either {α : Type} {a : α} : ∀ {l m : List α}, a ∈ l ++ m → a ∈ l ∨ a ∈ m
-  | [], _, mem => .inr mem
-  | b :: l, _, mem => match mem_cons_cases mem with
-    | .inl same => .inl (Eq.subst (motive := fun x => x ∈ b :: l) same.symm (.head _))
-    | .inr mem' => match mem_append_either mem' with
-      | .inl here => .inl (.tail _ here)
-      | .inr there => .inr there
-
-theorem mem_append_of_left {α : Type} {a : α} : ∀ {l : List α} (m : List α), a ∈ l → a ∈ l ++ m
-  | _ :: _, _, .head _ => .head _
-  | _ :: _, m, .tail _ mem => .tail _ (mem_append_of_left m mem)
-
-theorem mem_append_of_right {α : Type} {a : α} : ∀ (l : List α) {m : List α}, a ∈ m → a ∈ l ++ m
-  | [], _, mem => mem
-  | _ :: l, _, mem => .tail _ (mem_append_of_right l mem)
-
 theorem distinct_append_apart {α : Type} : ∀ {l m : List α}, Distinct l → Distinct m →
     (∀ a, a ∈ l → ¬ a ∈ m) → Distinct (l ++ m)
   | [], _, _, distinct, _ => distinct
-  | b :: _, _, ⟨fresh, distinct⟩, distinct', apart => ⟨fun mem => match mem_append_either mem with
+  | b :: _, _, ⟨fresh, distinct⟩, distinct', apart => ⟨fun mem => match mem_append_cases mem with
       | .inl here => fresh here
       | .inr there => apart b (.head _) there,
     distinct_append_apart distinct distinct' fun a mem => apart a (.tail _ mem)⟩
@@ -1148,7 +1116,7 @@ theorem listed_splice {α : Type} {p p' : α → Nat → Prop} {l : Nat → List
          fun x => ⟨fun holds => match (mix x).mp holds with
              | .inl ⟨yes, at_a⟩ => mem_append_of_left _ (mem_keep.mpr ⟨((listed a).2 x).mp at_a, yes⟩)
              | .inr ⟨no, at_b⟩ => mem_append_of_right _ (mem_keep.mpr ⟨((listed b).2 x).mp at_b, no⟩),
-           fun mem => (mix x).mpr (match mem_append_either mem with
+           fun mem => (mix x).mpr (match mem_append_cases mem with
              | .inl here => .inl ⟨(mem_keep.mp here).2, ((listed a).2 x).mpr (mem_keep.mp here).1⟩
              | .inr there => .inr ⟨(mem_keep.mp there).2,
                  ((listed b).2 x).mpr (mem_keep.mp there).1⟩)⟩⟩)
@@ -1287,10 +1255,6 @@ theorem bool_cases : ∀ b : Bool, b = true ∨ b = false
   | true => .inl rfl
   | false => .inr rfl
 
-theorem not_eq_true_iff : ∀ {b : Bool}, (!b) = true ↔ b = false
-  | true => ⟨fun h => Bool.noConfusion h, fun h => Bool.noConfusion h⟩
-  | false => ⟨fun _ => rfl, fun _ => rfl⟩
-
 theorem not_eq_false_iff : ∀ {b : Bool}, (!b) = false ↔ b = true
   | true => ⟨fun _ => rfl, fun _ => rfl⟩
   | false => ⟨fun h => Bool.noConfusion h, fun h => Bool.noConfusion h⟩
@@ -1317,7 +1281,7 @@ theorem least_contains (decided : DecidesIdle L W idle) : (least L W idle).Conta
 /-- The least footprint touches a relatum exactly where it is not idle. -/
 theorem least_touch_iff (decided : DecidesIdle L W idle) {n : Nat} {x : X} :
     (least L W idle).touch n x = true ↔ ¬ (¬ x ∈ L.present n ∧ W.Unmoved n x) :=
-  not_eq_true_iff.trans ⟨fun no still => Bool.noConfusion (((decided n x).mpr still).symm.trans no),
+  ListTests.not_true_iff.trans ⟨fun no still => Bool.noConfusion (((decided n x).mpr still).symm.trans no),
     fun not_idle => match bool_cases (idle n x) with
       | .inl yes => absurd ((decided n x).mp yes) not_idle
       | .inr no => no⟩
@@ -1330,7 +1294,7 @@ theorem least_le (decided : DecidesIdle L W idle) {touch : Nat → X → Bool}
   match bool_cases (touch n x) with
   | .inl yes => yes
   | .inr no => Bool.noConfusion
-      (((decided n x).mpr (contains n x no)).symm.trans (not_eq_true_iff.mp touched))
+      (((decided n x).mpr (contains n x no)).symm.trans (ListTests.not_true_iff.mp touched))
 
 /-- So it joins least: exchanges it joins, every containing footprint joins. -/
 theorem least_joined (decided : DecidesIdle L W idle) {touch : Nat → X → Bool}
@@ -1361,8 +1325,8 @@ theorem least_exists_iff [DecidableEq X] (L : Flow X X) (W : Web X X) :
         ∀ n x, touch₀ n x = true → touch n x = true) ↔
     ∃ idle : Nat → X → Bool, DecidesIdle L W idle :=
   ⟨fun ⟨touch₀, contains₀, least₀⟩ => ⟨fun n x => !touch₀ n x, fun n x =>
-     ⟨fun idleTrue => contains₀ n x (not_eq_true_iff.mp idleTrue),
-      fun still => not_eq_true_iff.mpr (match bool_cases (touch₀ n x) with
+     ⟨fun idleTrue => contains₀ n x (ListTests.not_true_iff.mp idleTrue),
+      fun still => ListTests.not_true_iff.mpr (match bool_cases (touch₀ n x) with
         | .inr no => no
         | .inl yes =>
           have contains₁ : (⟨L, W, fun n' x' => if n' = n ∧ x' = x then false else touch₀ n' x'⟩ :
@@ -1402,15 +1366,15 @@ theorem decidesIdle_iff [DecidableEq X] :
   ⟨fun ⟨idle, decided⟩ => ⟨fun n x => !idle n x, fun n x out =>
      not_eq_false_iff.trans ((decided n x).trans ⟨fun both => both.2, fun still => ⟨out, still⟩⟩)⟩,
    fun ⟨moves, decided⟩ => ⟨fun n x => !inList x (L.present n) && !moves n x, fun n x =>
-     band_true_iff.trans
+     ListTests.and_true_iff.trans
        ⟨fun ⟨out, still⟩ =>
           have out' : ¬ x ∈ L.present n := fun mem =>
-            Bool.noConfusion ((inList_iff.mpr mem).symm.trans (not_eq_true_iff.mp out))
-          ⟨out', (decided n x out').mp (not_eq_true_iff.mp still)⟩,
-        fun ⟨out, still⟩ => ⟨not_eq_true_iff.mpr (match bool_cases (inList x (L.present n)) with
+            Bool.noConfusion ((inList_iff.mpr mem).symm.trans (ListTests.not_true_iff.mp out))
+          ⟨out', (decided n x out').mp (ListTests.not_true_iff.mp still)⟩,
+        fun ⟨out, still⟩ => ⟨ListTests.not_true_iff.mpr (match bool_cases (inList x (L.present n)) with
             | .inl yes => absurd (inList_iff.mp yes) out
             | .inr no => no),
-          not_eq_true_iff.mpr ((decided n x out).mpr still)⟩⟩⟩⟩
+          ListTests.not_true_iff.mpr ((decided n x out).mpr still)⟩⟩⟩⟩
 
 end Footprinted
 

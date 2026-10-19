@@ -1,6 +1,5 @@
 import Becoming.Branching
-import Becoming.ListTests
-import Becoming.Naturals
+import Becoming.Prelude
 
 /-!
 # Tree search: a finite inspection, read as the run of a determined law

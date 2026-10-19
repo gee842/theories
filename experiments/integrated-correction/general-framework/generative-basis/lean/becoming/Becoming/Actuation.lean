@@ -1,5 +1,5 @@
 import Becoming.ContingentPlans
-import Becoming.Naturals
+import Becoming.Prelude
 
 /-!
 # Actuation: recognition, delivery and enactment as consecutive steps of one installation

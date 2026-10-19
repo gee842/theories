@@ -40,7 +40,8 @@ conditions a formation actually requires and takes part in.
   transitive, and the four cases exclude one another (`Web.Widens.not_reverse`,
   `Web.Widens.trans`, `Web.Widens.not_keeps`, `Web.Widens.not_mixed`,
   `Web.Keeps.not_mixed`). No significance, standpoint or boundary enters.
-* **Losing beyond the dependence.** In `Clearing`, the levels without the clearer's part
+* **Losing beyond the dependence** (the witness `Clearing`, stated in `Becoming.Clearing`). In
+  `Clearing`, the levels without the clearer's part
   exist (`Clearing.withheld`): the resource rises by one at each step and the habitat
   stays at two.
   - At every step the clearer is active and supported. Within itself and the source that
@@ -62,12 +63,12 @@ conditions a formation actually requires and takes part in.
   - over a region covering every condition it requires, where its requirements do not
     tighten, it keeps its own support (`Web.RenewingOver.keeps_own`), yet it may still
     undermine another: the clearer renews over its resource at every step and undermines
-    at step one (`Clearing.renewing_over_resource`);
+    at step one (`Clearing.renewing_over_resource`, in `Becoming.Clearing`);
   - over a region omitting a condition it requires, its own draw can undermine its own
     dependence, and it loses its support while renewing over the region
     (`Omitted.loses_own`).
 
-The region `Clearing.alongDependence` is the clearer with the source that feeds the one
+The region `Clearing.alongDependence` (`Becoming.Clearing`) is the clearer with the source that feeds the one
 condition it requires. On formations it is the reach of the extent `Becoming.Continuation`
 derives along dependence.
 
@@ -244,91 +245,6 @@ theorem RenewingOver.keeps_own {region : C → Prop} {t : Nat} {f : F}
   | ⟨had, need⟩ => Nat.le_trans need (renewing.2 c (covers c had) (Or.inl had) f had).2
 
 end Web
-
-/-! ## Losing beyond the dependence -/
-
-namespace Clearing
-
-open Frontier (unburnt burning)
-
-/-- The clearer's part. -/
-def clearerPart : Formation → Bool
-  | .source => false
-  | .clearer => true
-  | .dweller => false
-
-/-- The clearer and the source that feeds the one condition it requires. -/
-def alongDependence : Formation → Prop
-  | .source => True
-  | .clearer => True
-  | .dweller => False
-
-/-- The levels without the clearer's part: the resource rises by one at each step, the
-habitat stays at two, and the source burns its fuels as before. -/
-def withheldLevel (t : Nat) : Place → Nat
-  | .resource => t + 1
-  | .habitat => 2
-  | .fuel n => 2 * unburnt n t
-
-theorem withheld : flow.WithheldLevels clearerPart web withheldLevel :=
-  ⟨fun t c => match c with
-    | .resource => rfl
-    | .habitat => rfl
-    | .fuel n => show 2 * unburnt n (t + 1) + (2 * burning n t + 0) = 2 * unburnt n t from
-        (Nat.left_distrib 2 _ _).symm.trans (congrArg (2 * ·) (Frontier.burns n t)),
-   fun c => match c with
-    | .resource => rfl
-    | .habitat => rfl
-    | .fuel _ => rfl⟩
-
-/-- Without the clearer's part the dweller is admitted at every step. -/
-theorem admitted_without {l : Nat → Place → Nat}
-    (without : flow.WithheldLevels clearerPart web l) (t : Nat) :
-    web.Admits (l t) t .dweller :=
-  fun c requires => match c, requires with
-  | .habitat, _ => Nat.le_trans (Nat.le_succ 1)
-      (Nat.le_of_eq (without.unique withheld t .habitat).symm)
-  | .resource, no => nomatch no
-  | .fuel _, no => nomatch no
-
-/-- With the clearer's part the dweller is not supported from the third step on. -/
-theorem unsupported_with (n : Nat) : ¬ web.Supported (n + 2) .dweller :=
-  fun supported => Nat.not_succ_le_zero 0 (supported .habitat trivial)
-
-/-- The clearer's part narrows what can form: the levels without it include those with it,
-and some formation is admitted without it and not with it. -/
-theorem narrows {l : Nat → Place → Nat} (without : flow.WithheldLevels clearerPart web l) :
-    web.Includes l web.level ∧ web.Exceeds l web.level :=
-  ⟨balances.opens_nothing without fun _ _ => Nat.zero_le _,
-   ⟨2, .dweller, admitted_without without 2, unsupported_with 0⟩⟩
-
-/-- Continuing while losing beyond its dependence. At every step the clearer is active and
-supported, and within itself and the source, the levels with its part admit everything the
-levels without it admit. From the third step on, beyond them, the dweller is admitted
-without the clearer's part and not with it. -/
-theorem loses_beyond {l : Nat → Place → Nat} (without : flow.WithheldLevels clearerPart web l) :
-    (∀ t, web.active t .clearer ∧ web.Supported t .clearer ∧
-      web.AdmitsWithin alongDependence (web.level t) (l t) t) ∧
-    ∀ n, web.LosesBeyond alongDependence (web.level (n + 2)) (l (n + 2)) (n + 2) :=
-  ⟨fun t => ⟨trivial, dependent t .clearer trivial, fun f member _ => match f, member with
-      | .source, _ => fun _ no => (nomatch no)
-      | .clearer, _ => dependent t .clearer trivial⟩,
-   fun n => ⟨.dweller, fun no => no, admitted_without without (n + 2), unsupported_with n⟩⟩
-
-/-- Renewing over its resource. At every step the clearer is within renewal over its
-resource, the one condition it requires, so it keeps its own support; at step one its draw on
-the habitat undermines, and it is not within renewal. -/
-theorem renewing_over_resource :
-    (∀ t, web.RenewingOver (· = .resource) t .clearer) ∧
-      (∀ t c, web.requires t .clearer c → c = .resource) ∧
-      web.UnderminingAt 1 .clearer ∧ ¬ web.RenewingAt 1 .clearer :=
-  match undermines_within_renewal with
-  | ⟨_, _, _, only, _, renewed, _, _, undermining, _⟩ =>
-    ⟨fun t => ⟨trivial, fun c same => match c, same with
-        | _, rfl => fun _ g requires => renewed t g requires⟩,
-     only, undermining, fun renewing => renewing.not_undermining undermining⟩
-
-end Clearing
 
 /-! A represented region omitting a requirement: one formation requires two conditions,
 and across the first step it draws on the one its region omits. -/

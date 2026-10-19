@@ -1,0 +1,16 @@
+'Becoming.Frame.self_incomplete' does not depend on any axioms
+'Becoming.DiagonalRuns.Completion' does not depend on any axioms
+'Becoming.DiagonalRuns.run_unfolds' does not depend on any axioms
+'Becoming.DiagonalRuns.unfolds_iff' does not depend on any axioms
+'Becoming.DiagonalRuns.incomplete' does not depend on any axioms
+'Becoming.DiagonalRuns.gap_new' does not depend on any axioms
+'Becoming.DiagonalRuns.gaps_differ' does not depend on any axioms
+'Becoming.DiagonalRuns.never_returns' does not depend on any axioms
+'Becoming.DiagonalRuns.unheld' does not depend on any axioms
+'Becoming.DiagonalRuns.complete_iff_alike' does not depend on any axioms
+'Becoming.DiagonalRuns.unfoldingRun' does not depend on any axioms
+'Becoming.DiagonalRuns.unfoldingRun_open' does not depend on any axioms
+'Becoming.DiagonalRuns.revision_never_rests' does not depend on any axioms
+'Becoming.DiagonalRuns.negation_never_rests' does not depend on any axioms
+'Becoming.DiagonalRuns.negation_returns' does not depend on any axioms
+'Becoming.DiagonalRuns.frame_gap' does not depend on any axioms

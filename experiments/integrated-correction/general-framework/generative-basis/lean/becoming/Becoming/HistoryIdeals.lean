@@ -179,17 +179,13 @@ variable {A : Type v}
 /-- Words ordered by prefix: `v` is below `w` where `w` extends it. -/
 def prefixOrder (A : Type v) : Ideals.Preorder (List A) where
   le v w := ∃ t, v ++ t = w
-  refl v := ⟨[], HistoryLanguages.append_nil' v⟩
+  refl v := ⟨[], ListTests.append_nil v⟩
   trans := fun ⟨t, e⟩ ⟨t', e'⟩ =>
-    ⟨t ++ t', (HistoryLanguages.append_assoc' _ t t').symm.trans ((congrArg (· ++ t') e).trans e')⟩
-
-theorem length_append : ∀ v t : List A, (v ++ t).length = v.length + t.length
-  | [], t => (Nat.zero_add t.length).symm
-  | _ :: v, t => (congrArg (· + 1) (length_append v t)).trans (Nat.succ_add _ _).symm
+    ⟨t ++ t', (ListTests.append_assoc _ t t').symm.trans ((congrArg (· ++ t') e).trans e')⟩
 
 theorem length_le_of_le {v w : List A} (h : (prefixOrder A).le v w) : v.length ≤ w.length := by
   obtain ⟨t, rfl⟩ := h
-  rw [length_append]
+  rw [ListTests.length_append]
   exact Nat.le_add_right _ _
 
 theorem append_eq_self : ∀ {v s : List A}, v ++ s = v → s = []
@@ -206,19 +202,19 @@ theorem prefix_antisymm {v w : List A} (h : (prefixOrder A).le v w) (k : (prefix
   obtain ⟨t, e⟩ := h
   obtain ⟨t', e'⟩ := k
   have whole : v ++ (t ++ t') = v :=
-    (HistoryLanguages.append_assoc' v t t').symm.trans ((congrArg (· ++ t') e).trans e')
+    (ListTests.append_assoc v t t').symm.trans ((congrArg (· ++ t') e).trans e')
   have ht : t = [] := append_eq_nil_left (append_eq_self whole)
   subst ht
-  exact (HistoryLanguages.append_nil' v).symm.trans e
+  exact (ListTests.append_nil v).symm.trans e
 
 /-- A word extending `w` and no longer than it is `w`. -/
 theorem eq_of_le_of_length_le {w r : List A} (h : (prefixOrder A).le w r)
     (len : r.length ≤ w.length) : w = r := by
   obtain ⟨t, rfl⟩ := h
   cases t with
-  | nil => exact (HistoryLanguages.append_nil' w).symm
+  | nil => exact (ListTests.append_nil w).symm
   | cons _ t =>
-    rw [length_append] at len
+    rw [ListTests.length_append] at len
     exact absurd (Nat.le_trans len (Nat.le_add_right w.length t.length)) (Nat.not_succ_le_self _)
 
 /-- A word is an initial word of a sequence: its moves are the sequence's first moves. -/

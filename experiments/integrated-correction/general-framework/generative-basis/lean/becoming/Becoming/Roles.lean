@@ -1215,10 +1215,6 @@ def web : Web Bool Bool where
   need _ _ _ := 1
   draws _ _ _ := False
 
-theorem every : ∀ x : Bool, x ∈ [true, false]
-  | true => .head _
-  | false => .tail _ (.head _)
-
 theorem distinct : Distinct [true, false] :=
   ⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩
 
@@ -1274,11 +1270,11 @@ theorem shuttle : flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
     (∀ x, web.Embodied x ∧ web.SelfBearing x) ∧ (∀ t, flow.ClosedAt [true, false] t) ∧
     web.Unceasing ∧ ¬ flow.Dissipative :=
   ⟨balances, acting, dependent, embodied,
-   fun _ _ _ c outside => absurd (every c) outside,
+   fun _ _ _ c outside => absurd (ListTests.mem_bools c) outside,
    fun N => match recurs true N with
     | ⟨t, later, arises⟩ => ⟨t, true, later, arises⟩,
    fun dissipative => Nat.not_succ_le_self 1 (dissipative [true, false] 0 distinct
-     (fun _ _ c outside => absurd (every c) outside) true (.head _))⟩
+     (fun _ _ c outside => absurd (ListTests.mem_bools c) outside) true (.head _))⟩
 
 end Shuttle
 

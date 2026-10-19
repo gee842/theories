@@ -1,6 +1,6 @@
 import Becoming.Frequency
 import Becoming.Lasting
-import Becoming.Naturals
+import Becoming.Prelude
 
 /-!
 # LoopReturn: whether a loop closes, keeps or widens a difference
@@ -122,14 +122,6 @@ theorem stays_from_fixed {f : Nat → Nat} {d k : Nat} (fixed : f ((Law.run f d)
 theorem eq_zero_of_add_le : ∀ {a b : Nat}, a + b ≤ b → a = 0
   | _, 0, le => Nat.eq_zero_of_le_zero le
   | _, _ + 1, le => eq_zero_of_add_le (Nat.le_of_succ_le_succ le)
-
-/-- Taking at least all of a number leaves nothing. The same law is declared as
-`Becoming.sub_eq_zero_of_le` (`Becoming.Imbalance`) and in `Becoming.RenewalFlow`, neither in this
-module's imports; a later fold into `Becoming.Naturals` can merge the three. -/
-theorem sub_eq_zero_of_le {n m : Nat} (le : n ≤ m) : n - m = 0 := by
-  induction le with
-  | refl => exact Nat.sub_self n
-  | step _ ih => exact congrArg Nat.pred ih
 
 /-- Taking less than a number leaves something. -/
 theorem sub_pos_of_lt {a b : Nat} (lt : a < b) : 0 < b - a :=
@@ -410,7 +402,7 @@ theorem returnMap_doubles {g : Nat → Nat} {gs : List (Nat → Nat)}
 /-- Two to the next exponent, times a number, is twice two to the exponent times it. -/
 theorem two_pow_succ_mul (n d : Nat) : 2 ^ (n + 1) * d = 2 ^ n * d + 2 ^ n * d :=
   (congrArg (· * d) (Nat.pow_succ 2 n)).trans
-    ((Loops.mul_assoc_nat (2 ^ n) 2 d).trans
+    ((mul_assoc_nat (2 ^ n) 2 d).trans
       ((congrArg (2 ^ n * ·) (Nat.two_mul d)).trans (Nat.left_distrib (2 ^ n) d d)))
 
 /-- **Doubling links run away.** Where a loop has a link and every link gives on at least twice
@@ -464,7 +456,7 @@ theorem returnMap_scaling : ∀ (as : List Nat) (x : Nat), returnMap (scaling as
   | [], x => (Nat.one_mul x).symm
   | a :: as, x =>
     (returnMap_scaling as (a * x)).trans
-      ((Loops.mul_assoc_nat (strength as) a x).symm.trans
+      ((mul_assoc_nat (strength as) a x).symm.trans
         (congrArg (· * x) (Nat.mul_comm (strength as) a)))
 
 /-- **The course of a loop of multiplying links.** After `n` turns the difference is the product
@@ -475,7 +467,7 @@ theorem orbit_scaling (as : List Nat) (d : Nat) :
   | n + 1 =>
     (returnMap_scaling as _).trans
       ((congrArg (strength as * ·) (orbit_scaling as d n)).trans
-        ((Loops.mul_assoc_nat (strength as) _ d).symm.trans
+        ((mul_assoc_nat (strength as) _ d).symm.trans
           (congrArg (· * d) ((Nat.mul_comm (strength as) _).trans (Nat.pow_succ _ n).symm))))
 
 /-- **Whole-number strengths have nothing between.** In a loop of links multiplying by

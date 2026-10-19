@@ -47,29 +47,10 @@ section Lists
 
 variable {α : Type u'} {β : Type v'}
 
-theorem mem_cons_split {a b : α} {l : List α} : b ∈ a :: l → b = a ∨ b ∈ l
-  | .head _ => .inl rfl
-  | .tail _ mem => .inr mem
-
-theorem mem_append_split {b : α} : ∀ {l m : List α}, b ∈ l ++ m → b ∈ l ∨ b ∈ m
-  | [], _, mem => .inr mem
-  | a :: l, _, mem => match mem_cons_split mem with
-    | .inl same => .inl (Eq.subst (motive := fun x => x ∈ a :: l) same.symm (.head l))
-    | .inr rest => match mem_append_split rest with
-      | .inl inside => .inl (.tail a inside)
-      | .inr outside => .inr outside
-
-theorem of_mem_map {g : α → β} {b : β} : ∀ {l : List α}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
-  | [], mem => nomatch mem
-  | a :: _, mem => match mem_cons_split mem with
-    | .inl same => ⟨a, .head _, same.symm⟩
-    | .inr rest => match of_mem_map rest with
-      | ⟨a', inside, image⟩ => ⟨a', .tail a inside, image⟩
-
 theorem of_mem_joinMap {g : α → List β} {b : β} :
     ∀ {l : List α}, b ∈ joinMap g l → ∃ a, a ∈ l ∧ b ∈ g a
   | [], mem => nomatch mem
-  | a :: _, mem => match mem_append_split mem with
+  | a :: _, mem => match ListTests.mem_append_iff.mp mem with
     | .inl inside => ⟨a, .head _, inside⟩
     | .inr rest => match of_mem_joinMap rest with
       | ⟨a', found, inner⟩ => ⟨a', .tail a found, inner⟩
@@ -78,7 +59,7 @@ end Lists
 
 theorem lt_of_mem_upto : ∀ {n k : Nat}, k ∈ upto n → k < n
   | 0, _, mem => nomatch mem
-  | n + 1, _, mem => match mem_cons_split mem with
+  | n + 1, _, mem => match ListTests.mem_cons_iff.mp mem with
     | .inl same => Eq.subst (motive := fun x => x < n + 1) same.symm (Nat.lt_succ_self n)
     | .inr rest => Nat.lt_trans (lt_of_mem_upto rest) (Nat.lt_succ_self n)
 
@@ -95,7 +76,7 @@ variable {S : Type u} {A : Type v}
 theorem of_mem_openSteps {moves : List A} {all : List S} {p : A × S}
     (mem : p ∈ openSteps moves all) : p.1 ∈ moves ∧ p.2 ∈ all :=
   match of_mem_joinMap mem with
-  | ⟨_, move, inner⟩ => match of_mem_map inner with
+  | ⟨_, move, inner⟩ => match ListTests.mem_map_iff.mp inner with
     | ⟨_, reached, image⟩ =>
       Eq.subst (motive := fun x : A × S => x.1 ∈ moves ∧ x.2 ∈ all) image ⟨move, reached⟩
 
@@ -105,7 +86,7 @@ theorem of_mem_finerSteps {weight : S → A → S → Nat} {moves : List A} {all
     {x : A × S × Nat} (mem : x ∈ finerSteps weight moves all s) :
     (x.1 ∈ moves ∧ x.2.1 ∈ all) ∧ x.2.2 < weight s x.1 x.2.1 :=
   match of_mem_joinMap mem with
-  | ⟨_, step, inner⟩ => match of_mem_map inner with
+  | ⟨_, step, inner⟩ => match ListTests.mem_map_iff.mp inner with
     | ⟨_, below, image⟩ =>
       Eq.subst (motive := fun y : A × S × Nat =>
           (y.1 ∈ moves ∧ y.2.1 ∈ all) ∧ y.2.2 < weight s y.1 y.2.1) image
@@ -126,18 +107,18 @@ theorem mem_finer_iff (weight : S → A → S → Nat) (moves : List A) (all : L
         ∀ x, x ∈ h → x.1 ∈ moves ∧ x.2.1 ∈ all
   | 0, s, [] => ⟨fun _ => ⟨rfl, ⟨s, .nil s⟩, fun _ mem => nomatch mem⟩, fun _ => .head _⟩
   | 0, _, _ :: _ =>
-    ⟨fun mem => (match mem_cons_split mem with
+    ⟨fun mem => (match ListTests.mem_cons_iff.mp mem with
       | .inl same => nomatch same
       | .inr inside => nomatch inside),
      fun ⟨len, _, _⟩ => nomatch len⟩
   | _ + 1, _, [] =>
     ⟨fun mem => (match of_mem_joinMap mem with
-      | ⟨_, _, inner⟩ => match of_mem_map inner with
+      | ⟨_, _, inner⟩ => match ListTests.mem_map_iff.mp inner with
         | ⟨_, _, same⟩ => nomatch same),
      fun ⟨len, _, _⟩ => nomatch len⟩
   | n + 1, s, x :: h =>
     ⟨fun mem => (match of_mem_joinMap mem with
-      | ⟨y, here, inner⟩ => match of_mem_map inner with
+      | ⟨y, here, inner⟩ => match ListTests.mem_map_iff.mp inner with
         | ⟨h', rest, same⟩ =>
           match of_mem_finerSteps here, (mem_finer_iff weight moves all n y.2.1 h').mp rest with
           | ⟨listed, within⟩, ⟨len, ⟨t, path⟩, listed'⟩ =>
@@ -145,7 +126,7 @@ theorem mem_finer_iff (weight : S → A → S → Nat) (moves : List A) (all : L
                 (∃ t, Trace (finerLaw weight) s l t) ∧ ∀ z, z ∈ l → z.1 ∈ moves ∧ z.2.1 ∈ all)
               same
               ⟨congrArg (· + 1) len, ⟨t, .cons ⟨rfl, within⟩ path⟩, fun z mem =>
-                match mem_cons_split mem with
+                match ListTests.mem_cons_iff.mp mem with
                 | .inl at_y =>
                   Eq.subst (motive := fun w : A × S × Nat => w.1 ∈ moves ∧ w.2.1 ∈ all)
                     at_y.symm listed
@@ -207,11 +188,6 @@ theorem finer_exists_iff (weight : S → A → S → Nat) {moves : List A} {all 
 
 end Finer
 
-/-- Two values are listed. -/
-theorem two_listed : ∀ b : Bool, b ∈ [true, false]
-  | true => .head _
-  | false => .tail _ (.head _)
-
 /-- **On two values, the finer courses of `n` steps are exactly the finer law's traces of `n`
 steps.** -/
 theorem two_values_mem_iff (p q n : Nat) (s : Bool) (h : List (Unit × Bool × Nat)) :
@@ -219,7 +195,7 @@ theorem two_values_mem_iff (p q n : Nat) (s : Bool) (h : List (Unit × Bool × N
       h.length = n ∧ ∃ t, Trace (finerLaw (Typicality.stepWeight p q)) s h t :=
   (mem_finer_iff _ _ _ n s h).trans
     ⟨fun ⟨len, path, _⟩ => ⟨len, path⟩,
-     fun ⟨len, path⟩ => ⟨len, path, fun x _ => ⟨.head _, two_listed x.2.1⟩⟩⟩
+     fun ⟨len, path⟩ => ⟨len, path, fun x _ => ⟨.head _, ListTests.mem_bools x.2.1⟩⟩⟩
 
 end FinerTraces
 

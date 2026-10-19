@@ -175,7 +175,7 @@ theorem step_eq (on : Nat → Bool) (M D t : Nat) :
   cases hon : on t with
   | true =>
     exact (Loops.one_add_mul M _).symm.trans
-      ((Loops.mul_left_comm_nat (1 + M) D _).trans (congrArg (D * ·)
+      ((mul_turn (1 + M) D _).trans (congrArg (D * ·)
         ((Nat.mul_comm (1 + M) _).trans
           (congrArg ((1 + M) ^ ·) (count_succ_on hon).symm))))
   | false =>
@@ -247,7 +247,7 @@ theorem carried_le_of_rare {M D A n : Nat} {on : Nat → Bool} (start : ∀ c, �
         (Loops.pow_le_pow_base (rare t) M)))
       (Nat.le_of_eq ((congrArg (D * ·) ((Loops.mul_pow_nat A _ M).trans
         (congrArg (A ^ M * ·) (Loops.pow_mul_nat (t + 1) n M)))).trans
-        (Loops.mul_assoc_nat D _ _).symm)))
+        (mul_assoc_nat D _ _).symm)))
 
 /-- **The steps at which anything couples**: those at which the strengths into some listed
 condition are positive. -/
@@ -333,7 +333,7 @@ theorem carried_eq (on : Nat → Bool) (M D : Nat) : ∀ t,
     carried [()] (fun _ => false) (fun _ _ _ => 0) (strengths on M) (fun _ => [()]) (fun _ => D)
       t () = D * (1 + M) ^ count on t
   | 0 => (Nat.mul_one D).symm
-  | t + 1 => (carried_succ t ()).trans ((Propagation.add_congr (carried_eq on M D t)
+  | t + 1 => (carried_succ t ()).trans ((Naturals.add_congr (carried_eq on M D t)
       ((give on M t _).trans (congrArg (_ * ·) (carried_eq on M D t)))).trans (step_eq on M D t))
 
 /-- **A self-loop runs away exactly where it couples often, whatever its strength.** With strength
@@ -451,7 +451,7 @@ theorem carried_roundTrip {e : C} {T : Nat → Nat} :
   | 0, _ => Nat.le_of_eq (Nat.one_mul _)
   | R + 1, back =>
     Nat.le_trans (Nat.le_of_eq ((congrArg (· * _) (Loops.two_pow_succ R)).trans
-        (Loops.add_mul_nat _ _ _)))
+        (add_mul_split _ _ _)))
       (Nat.le_trans (Nat.add_le_add
           (carried_roundTrip R fun i lt => back i (Nat.lt_succ_of_lt lt))
           (carried_roundTrip R fun i lt => back i (Nat.lt_succ_of_lt lt)))
@@ -482,7 +482,7 @@ namespace Frequency.SelfLoop
 theorem couplesAt {on : Nat → Bool} {M u : Nat} (yes : on u = true) (strong : 0 < M) :
     CouplesAt [()] (fun _ => false) (strengths on M) (fun _ => [()]) u u () () :=
   ⟨(), .head _, rfl, Nat.le_refl u, .head _, Nat.lt_of_lt_of_le strong (Nat.le_of_eq
-    ((congrArg (fun b => bif b then M else 0) (Loops.beq_self u)).symm.trans
+    ((congrArg (fun b => bif b then M else 0) (beq_self u)).symm.trans
       (strengths_on yes () () u ()).symm))⟩
 
 /-- Where the schedule marks steps as late as one likes and the strength is positive, the
@@ -540,7 +540,7 @@ theorem bounds : ∀ u, u + 1 ≤ 2 ^ marks u ∧ 2 ^ marks u ≤ u + u + 1
       have eq : u + 1 = 2 ^ marks u := Nat.eq_of_beq_eq_true hb
       have up : 2 ^ marks (u + 1) = (u + 1) + (u + 1) :=
         (congrArg (2 ^ ·) (congrArg (fun b => marks u + (bif b then 1 else 0)) hb)).trans
-          ((Loops.two_pow_succ (marks u)).trans (Propagation.add_congr eq.symm eq.symm))
+          ((Loops.two_pow_succ (marks u)).trans (Naturals.add_congr eq.symm eq.symm))
       ⟨Nat.le_trans (Nat.add_le_add_left (Nat.succ_le_succ (Nat.zero_le u)) (u + 1))
           (Nat.le_of_eq up.symm),
         Nat.le_trans (Nat.le_of_eq up) (Nat.le_succ _)⟩
@@ -755,14 +755,14 @@ theorem of_couplesAt {q : Nat → Bool} {u s : Nat}
   | ⟨_, _, _, _, _, pos⟩ => match hb : (Nat.beq s u && (q u && clear q u)) with
     | false => absurd (Nat.lt_of_lt_of_le pos (Nat.le_of_eq
         (congrArg (fun b => bif b then 1 else 0) hb))) (Nat.lt_irrefl 0)
-    | true => ⟨Nat.eq_of_beq_eq_true (Clear.and_left hb), Clear.and_left (Clear.and_right hb),
-        Clear.and_right (Clear.and_right hb)⟩
+    | true => ⟨Nat.eq_of_beq_eq_true (ListTests.and_left hb), ListTests.and_left (ListTests.and_right hb),
+        ListTests.and_right (ListTests.and_right hb)⟩
 
 theorem couplesAt_first {q : Nat → Bool} {u : Nat} (c : clear q u = true) (yes : q u = true) :
     CouplesAt [()] (fun _ => false) (strengths q) (fun _ => [()]) u u () () :=
   ⟨(), .head _, rfl, Nat.le_refl u, .head _, Nat.lt_of_lt_of_le (Nat.succ_pos 0) (Nat.le_of_eq
     (congrArg (fun b => bif b then 1 else 0)
-      (Clear.and_both _ _ (Loops.beq_self u) (Clear.and_both _ _ yes c))).symm)⟩
+      (Clear.and_both _ _ (beq_self u) (Clear.and_both _ _ yes c))).symm)⟩
 
 /-- **It couples at most once.** -/
 theorem once {q : Nat → Bool} {u s u' s' : Nat}
@@ -812,18 +812,6 @@ theorem lpo_of_settled
 
 namespace Frequency.Rows
 
-theorem or_cases : ∀ {a b : Bool}, (a || b) = true → a = true ∨ b = true
-  | true, _, _ => .inl rfl
-  | false, _, yes => .inr yes
-
-theorem or_left : ∀ {a : Bool} (b : Bool), a = true → (a || b) = true
-  | true, _, _ => rfl
-  | false, _, no => nomatch no
-
-theorem or_right : ∀ (a : Bool) {b : Bool}, b = true → (a || b) = true
-  | true, _, _ => rfl
-  | false, _, yes => yes
-
 /-- Some `m ≤ u` at which `f` is `true`. -/
 def anyUpTo (f : Nat → Bool) : Nat → Bool
   | 0 => f 0
@@ -838,12 +826,12 @@ theorem anyUpTo_of {f : Nat → Bool} {m : Nat} (yes : f m = true) :
     ∀ {u}, m ≤ u → anyUpTo f u = true
   | 0, le => Eq.subst (motive := fun x => f x = true) (Nat.eq_zero_of_le_zero le) yes
   | _ + 1, le => match le_succ_cases le with
-    | .inl le' => or_left _ (anyUpTo_of yes le')
-    | .inr eq => or_right _ (Eq.subst (motive := fun x => f x = true) eq yes)
+    | .inl le' => ListTests.or_left _ (anyUpTo_of yes le')
+    | .inr eq => ListTests.or_right _ (Eq.subst (motive := fun x => f x = true) eq yes)
 
 theorem anyUpTo_true {f : Nat → Bool} : ∀ {u}, anyUpTo f u = true → ∃ m, m ≤ u ∧ f m = true
   | 0, yes => ⟨0, Nat.le_refl 0, yes⟩
-  | _ + 1, yes => match or_cases yes with
+  | _ + 1, yes => match ListTests.or_cases yes with
     | .inl before => match anyUpTo_true before with
       | ⟨m, le, ym⟩ => ⟨m, Nat.le_succ_of_le le, ym⟩
     | .inr now => ⟨_, Nat.le_refl _, now⟩
@@ -852,8 +840,8 @@ theorem allUpTo_true {g : Nat → Bool} : ∀ {s}, allUpTo g s = true → ∀ n,
   | 0, yes, _, le =>
     Eq.subst (motive := fun x => g x = true) (Nat.eq_zero_of_le_zero le).symm yes
   | _ + 1, yes, n, le => match le_succ_cases le with
-    | .inl le' => allUpTo_true (Clear.and_left yes) n le'
-    | .inr eq => Eq.subst (motive := fun x => g x = true) eq.symm (Clear.and_right yes)
+    | .inl le' => allUpTo_true (ListTests.and_left yes) n le'
+    | .inr eq => Eq.subst (motive := fun x => g x = true) eq.symm (ListTests.and_right yes)
 
 theorem allUpTo_of {g : Nat → Bool} : ∀ {s}, (∀ n, n ≤ s → g n = true) → allUpTo g s = true
   | 0, all => all 0 (Nat.le_refl 0)
@@ -875,7 +863,7 @@ theorem found_of_couplesAt {R : Nat → Nat → Bool} {u s : Nat}
   | ⟨_, _, _, _, _, pos⟩ => match hb : (Nat.ble s u && found R s u) with
     | false => absurd (Nat.lt_of_lt_of_le pos (Nat.le_of_eq
         (congrArg (fun b => bif b then 1 else 0) hb))) (Nat.lt_irrefl 0)
-    | true => Clear.and_right hb
+    | true => ListTests.and_right hb
 
 theorem couplesAt_of_found {R : Nat → Nat → Bool} {u s : Nat} (le : s ≤ u)
     (yes : found R s u = true) :
@@ -975,7 +963,7 @@ theorem count_always : ∀ t, count (fun _ => true) t = t
 /-- Marking the steps from `T`, none is counted up to `T`. -/
 theorem count_before (T : Nat) : ∀ t, t ≤ T → count (Nat.ble T) t = 0
   | 0, _ => rfl
-  | t + 1, le => (count_succ_off (Closing.ble_false_of_lt le)).trans
+  | t + 1, le => (count_succ_off (Naturals.ble_false_of_lt le)).trans
       (count_before T t (Nat.le_of_succ_le le))
 
 /-- Marking the steps from `T`, `r` are counted by `T + r`. -/

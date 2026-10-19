@@ -1,0 +1,93 @@
+{
+ "Becoming.Prelude": {
+  "after": "Becoming.Frame",
+  "en": "the lemmas on numbers, truth values, lists and options that the layers use, each stated once (no premise; it imports only Init): cancellation, subtraction and products of whole numbers (`add_right_cancel`, `Naturals.sub_sub`, `mul_assoc_nat`), what `all`, `any`, `contains`, `filter`, `find?`, `bind` and `map` test (`ListTests.all_true_iff`, `ListTests.find_none_iff`), and membership in joined and mapped lists (`mem_append_cases`, `preimage_of_mem_map`), proved by recursion where the prelude uses `propext`",
+  "zh": "各层所用的关于数、真值、列表与选项的引理，每条只陈述一次（不加前提；只导入 Init）：自然数的消去、减法与乘积（`add_right_cancel`、`Naturals.sub_sub`、`mul_assoc_nat`），`all`、`any`、`contains`、`filter`、`find?`、`bind` 与 `map` 检验什么（`ListTests.all_true_iff`、`ListTests.find_none_iff`），连接与映射之列表的成员（`mem_append_cases`、`preimage_of_mem_map`），在 Lean 自带版本用 `propext` 之处以递归证明",
+  "note": ["the lemmas on numbers, truth values, lists and options that the layers use, each stated once."]
+ },
+ "Becoming.Laws": {
+  "after": "Becoming.Frame",
+  "en": "the law-level notions the layers share, stated once just after the frame (no premise): determined processes (`Determined`), laws of change and partial laws read as processes and run along a course (`Assurance.ofMap`, `Assurance.ofPartial`, `Assurance.trace_ofPartial_iff`), and going alike under a description (`GoAlikeUnder`), with `GoAlike` its case at equality",
+  "zh": "各层共用的律层概念，在框架之后只陈述一次（不加前提）：确定的过程（`Determined`），读作过程并沿历程运行的变化律与部分律（`Assurance.ofMap`、`Assurance.ofPartial`、`Assurance.trace_ofPartial_iff`），以及在描述下同行（`GoAlikeUnder`），`GoAlike` 是它在相等处的情形",
+  "note": ["the law-level notions the layers share, stated once just after the frame (no premise):",
+           "determined processes (`Determined`), laws of change and partial laws read as processes and run",
+           "along a course (`Assurance.ofMap`, `Assurance.ofPartial`, `Assurance.trace_ofPartial_iff`), and",
+           "going alike under a description (`GoAlikeUnder`), with `GoAlike` its case at equality."]
+ },
+ "Becoming.Stuttering": {
+  "after": "Becoming.Order",
+  "en": "steps at which nothing happens (P78): read through a stuttering, a world meets the premises exactly where it meets them and keeps the totals, counts and recurrence of every stretch (`World.stutter_premises_iff`, `stutter_total`, `World.stutter_change_recurs_iff`), while rates and reserves counted in steps depend on the reading (`Expansion.more_step_relative`, `Lapse.reserve_step_relative`)",
+  "zh": "什么都不发生的步（P78）：经停顿读出，世界恰在其满足前提处满足前提，并保留每段的总量、计数与复现（`World.stutter_premises_iff`、`stutter_total`、`World.stutter_change_recurs_iff`），而以步计的速率与储备依读法而定（`Expansion.more_step_relative`、`Lapse.reserve_step_relative`）",
+  "note": ["steps at which nothing happens (P78). Read through a stuttering, a world meets the",
+           "premises exactly where it meets them and keeps the totals, counts and recurrence of every",
+           "stretch (`World.stutter_premises_iff`, `stutter_total`, `World.stutter_change_recurs_iff`),",
+           "while rates and reserves counted in steps depend on the reading",
+           "(`Expansion.more_step_relative`, `Lapse.reserve_step_relative`)."]
+ },
+ "Becoming.Reordering": {
+  "after": "Becoming.Stuttering",
+  "en": "exchanges taken in the other order (P78, P78b): commuting independent exchanges keeps balance, dissipation and embodiment; with a footprint containing the exchanges, commuting unjoined neighbouring exchanges keeps every premise and reaches exactly the renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`, `Footprinted.converse`); where the order carries dependence, every footprint joins the two exchanges (`Order.Crossing`, `Order.Arising`)",
+  "zh": "以另一顺序取的交换（P78、P78b）：交换独立的交换保持平衡、耗散与体现；给定覆盖交换的足迹，交换无交集的相邻交换保持全部前提，恰可达到保持其有交集交换偏序的重编号（`Footprinted.sorts_iff`、`Footprinted.converse`）；顺序承载依存之处，每个足迹都连接两个交换（`Order.Crossing`、`Order.Arising`）",
+  "note": ["exchanges taken in the other order (P78, P78b). Commuting independent exchanges",
+           "keeps balance, dissipation and embodiment; with a footprint containing the exchanges,",
+           "commuting unjoined neighbouring exchanges keeps every premise and reaches exactly the",
+           "renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`,",
+           "`Footprinted.converse`); where the order carries dependence, every footprint joins the two",
+           "exchanges (`Order.Crossing`, `Order.Arising`)."]
+ },
+ "Becoming.IdleRemoval": {
+  "after": "Becoming.Reordering",
+  "en": "a world with its idle steps removed: it meets the premises, has a census and keeps the totals and counts of every stretch exactly as the world does (`World.withoutIdle_premises`, `World.withoutIdle_counted`, `World.withoutIdle_totals`, `World.withoutIdle_counts`)",
+  "zh": "去掉空步的世界：它与原世界一样满足前提、有普查，并保留每段的总量与计数（`World.withoutIdle_premises`、`World.withoutIdle_counted`、`World.withoutIdle_totals`、`World.withoutIdle_counts`）",
+  "note": ["a world with its idle steps removed. It meets the premises, has a census and",
+           "keeps the totals and counts of every stretch exactly as the world does",
+           "(`World.withoutIdle_premises`, `World.withoutIdle_counted`, `World.withoutIdle_totals`,",
+           "`World.withoutIdle_counts`)."]
+ },
+ "Becoming.Retaining": {
+  "after": "Becoming.Regions",
+  "en": "retaining and adding, for any significance, with no condition on it (`Web.Retains`, `Web.Adds`): inclusion retains, fewer continuations with significance retain more, significance bounded by a region retains what is admitted within it (`Web.retains_bounded_iff`); the levels with a part retain what has significance without it exactly when its net draw stays within the margin (`Flow.Balances.retains_iff_within_margin`), and widen them exactly when it also brings one more formation within the margin (`Flow.Balances.widens_iff_within_margin`); in `Preemption` a part within renewal does not keep what can form",
+  "zh": "对任何意义的保留与增加，不加条件（`Web.Retains`、`Web.Adds`）：包含即保留，有意义的延续越少保留越多，以区域为界的意义保留其内所接纳者（`Web.retains_bounded_iff`）；有部分的水平恰在其净汲取不超出余量时保留无它时有意义者（`Flow.Balances.retains_iff_within_margin`），恰在它还把多一个形成带入余量时扩大之（`Flow.Balances.widens_iff_within_margin`）；在 `Preemption` 中更新之内的部分不保住能形成者",
+  "note": ["retaining and adding, for any significance, with no condition on it",
+           "(`Web.Retains`, `Web.Adds`). Inclusion retains, fewer continuations with significance retain",
+           "more, and significance bounded by a region retains what is admitted within it",
+           "(`Web.retains_bounded_iff`); the levels with a part retain what has significance without it",
+           "exactly when its net draw stays within the margin (`Flow.Balances.retains_iff_within_margin`)",
+           "and widen them exactly when it also brings one more formation within the margin",
+           "(`Flow.Balances.widens_iff_within_margin`); in `Preemption` a part within renewal does not",
+           "keep what can form (`Preemption.within_renewal_yet_loses`)."]
+ },
+ "Becoming.Clearing": {
+  "after": "Becoming.Retaining",
+  "en": "the witness `Clearing`, a source, a clearer and a dweller, with the facts that read no more than admission, regions and retaining: the clearer is active and renewed at every step while the dweller ends (`Clearing.undermines_within_renewal`), its part loses the dweller beyond its dependence and narrows the whole (`Clearing.loses_beyond`, `Clearing.narrows`), and centers bounded by their dependence disagree (`Clearing.centers_disagree`)",
+  "zh": "见证 `Clearing`：一个来源、一个清除者与一个栖居者，以及只读接纳、区域与保留的事实：清除者每步活跃并被更新，而栖居者终结（`Clearing.undermines_within_renewal`），其部分在依存之外失去栖居者并收窄整体（`Clearing.loses_beyond`、`Clearing.narrows`），以依存为界的中心彼此分歧（`Clearing.centers_disagree`）",
+  "note": ["the witness `Clearing`, a source, a clearer and a dweller, with the facts that",
+           "read no more than admission, regions and retaining. The clearer is active and renewed at every",
+           "step while the dweller ends (`Clearing.undermines_within_renewal`); its part loses the dweller",
+           "beyond its dependence and narrows the whole (`Clearing.loses_beyond`, `Clearing.narrows`); and",
+           "centers bounded by their dependence disagree (`Clearing.centers_disagree`)."]
+ },
+ "Becoming.Extension": {
+  "after": "Becoming.Clearing",
+  "en": "C on frames and on the level paths of a web, with no valuation and no condition: extension and comparison on a frame (`Extension`, `Comparison`, `LiftBetter`), a natural-number score satisfying C climbs and outgrows (`Comparison.climbs`, `Comparison.outgrows`), and on level paths an extension in which every claim counts as living is exactly a widening (`Web.paths_extension_iff_widens`, `Web.paths_comparison_widens`); that widening is better is the reading of “better”, not shown",
+  "zh": "框架与网之水平路径上的 C，不用赋值也不用条件：框架上的扩展与比较（`Extension`、`Comparison`、`LiftBetter`），满足 C 的自然数分数逐步上升并超过任何构型（`Comparison.climbs`、`Comparison.outgrows`），在水平路径上每个主张都算活着的扩展恰是扩大（`Web.paths_extension_iff_widens`、`Web.paths_comparison_widens`）；扩大更好是对“更好”的读法，不在此证明",
+  "note": ["C on frames and on the level paths of a web, with no valuation and no condition.",
+           "Extension and comparison on a frame (`Extension`, `Comparison`, `LiftBetter`); a",
+           "natural-number score satisfying C climbs and outgrows (`Comparison.climbs`,",
+           "`Comparison.outgrows`); on level paths an extension in which every claim counts as living is",
+           "exactly a widening (`Web.paths_extension_iff_widens`, `Web.paths_comparison_widens`). That",
+           "widening is better is the reading of “better”, not shown."]
+ },
+ "Becoming.BoundedSignificance": {
+  "after": "Becoming.Feedback",
+  "en": "where significance bounded by a region meets the continuation condition, as a hypothesis or a conclusion: bounded by the whole it is the condition (`bounded_whole`), within a feeding closure that is the whole the verdict is the condition's (`Flow.within_closure_iff_retains`), under a common feeding condition bounded significance is the condition (`Flow.feeding_unrestricted_of_common`), and in `Clearing` and `Trophic` the bounded verdict and the condition's part (`Clearing.within_closure_yet_loses`, `Clearing.reach_counts_dweller`, `Trophic.mixed_part`)",
+  "zh": "以区域为界的意义与延续条件相遇之处，条件作为假设或结论：以整体为界即条件（`bounded_whole`），供给闭包为整体时闭包内的判断即条件的判断（`Flow.within_closure_iff_retains`），在共同供给条件下有界意义即条件（`Flow.feeding_unrestricted_of_common`），在 `Clearing` 与 `Trophic` 中有界判断与条件的判断分开（`Clearing.within_closure_yet_loses`、`Clearing.reach_counts_dweller`、`Trophic.mixed_part`）",
+  "note": ["where significance bounded by a region meets the continuation condition,",
+           "as a hypothesis or a conclusion. Bounded by the whole it is the condition (`bounded_whole`);",
+           "within a feeding closure that is the whole the verdict is the condition's",
+           "(`Flow.within_closure_iff_retains`); under a common feeding condition bounded significance is",
+           "the condition (`Flow.feeding_unrestricted_of_common`); and in `Clearing` and `Trophic` the",
+           "bounded verdict and the condition's part (`Clearing.within_closure_yet_loses`,",
+           "`Clearing.reach_counts_dweller`, `Trophic.mixed_part`)."]
+ }
+}

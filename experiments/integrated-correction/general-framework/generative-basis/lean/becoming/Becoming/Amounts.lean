@@ -1,4 +1,4 @@
-import Becoming.Naturals
+import Becoming.Prelude
 
 /-!
 # Amounts: rest over amounts that may be dense
@@ -10,7 +10,7 @@ laws are its whole-number instance: `Becoming.Renewal` proves `falls_not_recurri
 `Amounts.rests`, `Becoming.Space` proves `falls_stop_unrefuted` from `Amounts.rests_unrefuted`, and
 `Becoming.Dissipation` and `Becoming.Openness` prove the family laws and the stopping of change from
 `Amounts.family_rests_of_archimedean`, `Amounts.losses_within` and `Amounts.rests_unrefuted`. It
-imports only the support of `Becoming.Naturals`, so it lies below every module that reads a level.
+imports only `Becoming.Prelude`, so it lies below every module that reads a level.
 
 * **Amounts.** An addition, associative and commutative with nothing as its unit, and an order
   that addition keeps and that cancels, with nothing least (`Amounts`). Nothing more is asked:

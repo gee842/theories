@@ -880,25 +880,17 @@ def retainedFrame (J : Joining F) : Frame (List F) (Nat × Nat) Empty :=
   ⟨⟨fun xs ij ys => ∃ a b z, slot xs ij.1 = some a ∧ slot xs ij.2 = some b ∧ J a b z ∧
       ys = xs ++ [z]⟩, fun _ c => nomatch c⟩
 
-theorem appended_nil : ∀ l : List F, l ++ [] = l
-  | [] => rfl
-  | a :: l => congrArg (List.cons a) (appended_nil l)
-
-theorem length_appended : ∀ l m : List F, (l ++ m).length = l.length + m.length
-  | [], m => (Nat.zero_add m.length).symm
-  | _ :: l, m => (congrArg Nat.succ (length_appended l m)).trans (Nat.succ_add _ _).symm
-
 /-- **A retained configuration keeps what it had**: along every course it is extended, by one
 fragment for each move. -/
 theorem retained_extends {J : Joining F} {xs ys : List F} {cmds : List (Nat × Nat)}
     (path : Trace J.retainedFrame.P xs cmds ys) : ∃ added, ys = xs ++ added ∧ added.length = cmds.length := by
   induction path with
-  | nil xs => exact ⟨[], (appended_nil xs).symm, rfl⟩
+  | nil xs => exact ⟨[], (ListTests.append_nil xs).symm, rfl⟩
   | cons step _ ih =>
     obtain ⟨_, _, z, _, _, _, formed⟩ := step
     obtain ⟨added, extended, counted⟩ := ih
     subst formed
-    exact ⟨z :: added, extended.trans (appended_assoc _ [z] added), congrArg Nat.succ counted⟩
+    exact ⟨z :: added, extended.trans (ListTests.append_assoc _ [z] added), congrArg Nat.succ counted⟩
 
 /-- **Alike retained configurations of equally many slots match every course of formation**: the
 matched course takes the same moves, ends alike, keeps the configuration it started from and keeps
@@ -914,9 +906,9 @@ theorem retained_history_matches {J : Joining F} {K : Joining G} {xs : List F} {
     match retained_extends path, retained_extends path' with
     | ⟨added, extended, counted⟩, ⟨added', extended', counted'⟩ =>
       ⟨finish', path', joined,
-       (congrArg List.length extended).trans ((length_appended xs added).trans
+       (congrArg List.length extended).trans ((ListTests.length_append xs added).trans
          ((congrArg (· + added.length) slots).trans ((congrArg (ys.length + ·) (counted.trans counted'.symm)).trans
-           ((length_appended ys added').symm.trans (congrArg List.length extended').symm)))),
+           ((ListTests.length_append ys added').symm.trans (congrArg List.length extended').symm)))),
        added', extended'⟩
 
 /-- **The self-joining test**: a configuration of one fragment can join its only slot with itself

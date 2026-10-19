@@ -365,13 +365,13 @@ theorem decidedTest_finds {K : S → Prop} [∀ s a t, Decidable (P.step s a t)]
     (enumerated : ∀ s a t, P.step s a t → ∃ n, e n = (a, t)) :
     Finds P K e (decidedTest P K e) :=
   ⟨fun _ _ passes =>
-    ⟨of_decide_eq_true (Parting.and_both passes).1, of_decide_eq_true (Parting.and_both passes).2⟩,
+    ⟨of_decide_eq_true (bool_of_and_true passes).1, of_decide_eq_true (bool_of_and_true passes).2⟩,
    fun s a t step kept =>
     match enumerated s a t step with
     | ⟨n, same⟩ =>
       ⟨n, (Eq.subst
         (motive := fun p : A × S => (decide (P.step s p.1 p.2) && decide (K p.2)) = true)
-        same.symm (Parting.and_of (decide_eq_true step) (decide_eq_true kept)) :
+        same.symm (bool_and_true (decide_eq_true step) (decide_eq_true kept)) :
           decidedTest P K e s n = true)⟩⟩
 
 /-! ## What a run takes in general -/

@@ -183,7 +183,7 @@ theorem counting_within_le_transfer (ground response : S → A → S → Nat) (m
           Nat.le_trans (Nat.mul_le_mul_left (ground s p.1 p.2)
               (counting_within_le_transfer ground response moves all f 0 n p.2))
             (Nat.le_trans (Nat.le_add_right _ _)
-              (Nat.le_of_eq (Loops.add_mul_nat _ _ _).symm)))
+              (Nat.le_of_eq (add_mul_split _ _ _).symm)))
         (Nat.le_of_eq (Routes.counting_sum _ _).symm))
   | j + 1, n + 1, s =>
     Nat.le_trans (Nat.le_of_eq (Routes.counting_sum _ _))
@@ -194,7 +194,7 @@ theorem counting_within_le_transfer (ground response : S → A → S → Nat) (m
                 (counting_within_le_transfer ground response moves all f (j + 1) n p.2))
               (Nat.mul_le_mul_left (response s p.1 p.2)
                 (counting_within_le_transfer ground response moves all f j n p.2)))
-            (Nat.le_of_eq (Loops.add_mul_nat _ _ _).symm))
+            (Nat.le_of_eq (add_mul_split _ _ _).symm))
         (Nat.le_of_eq (Routes.counting_sum _ _).symm))
 
 end Counting
@@ -215,7 +215,7 @@ theorem within_eq (M : Nat) : ∀ j n,
       ((Loops.orderSum_zero M n).trans (Loops.orderSum_zero M (n + 1)).symm)))
   | j + 1, n + 1 =>
     (Nat.add_zero _).trans
-      ((Propagation.add_congr ((Nat.one_mul _).trans (within_eq M (j + 1) n))
+      ((Naturals.add_congr ((Nat.one_mul _).trans (within_eq M (j + 1) n))
           (congrArg (M * ·) (within_eq M j n))).trans
         (Loops.orderSum_step M j n).symm)
 
@@ -310,11 +310,6 @@ theorem transfer_unit {S : Type} (weight : S → Unit → S → Nat) (all : List
     ((total_append _ [] (all.map fun m => ((), m))).trans
       ((Nat.add_zero _).trans (total_map (fun m => ((), m)) _ all)))
 
-theorem ble_false_of_lt : ∀ {a b : Nat}, b < a → Nat.ble a b = false
-  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
-  | _ + 1, 0, _ => rfl
-  | a + 1, b + 1, lt => @ble_false_of_lt a b (Nat.lt_of_succ_lt_succ lt)
-
 /-- Totals of a quantity that is either a total or nothing. -/
 theorem total_cond {α : Type} (b : Bool) (q : α → Nat) (as : List α) :
     total as (fun a => bif b then q a else 0) = bif b then total as q else 0 := by
@@ -348,7 +343,7 @@ theorem total_upto (g : Nat → Nat) (τ : Nat) :
     (steps_last (fun s => bif Nat.ble s τ then g s else 0) 0 (τ + 1 + m)).trans
       ((congrArg (· + _) (total_upto g τ m)).trans
         ((congrArg (fun b => total (steps 0 (τ + 1)) g + bif b then g (0 + (τ + 1 + m)) else 0)
-          (ble_false_of_lt (Nat.lt_of_lt_of_le (Nat.lt_succ_self τ)
+          (Naturals.ble_false_of_lt (Nat.lt_of_lt_of_le (Nat.lt_succ_self τ)
             (Nat.le_trans (Nat.le_add_right (τ + 1) m) (Nat.le_of_eq (Nat.zero_add _).symm))))).trans
           (Nat.add_zero _)))
 
@@ -413,13 +408,13 @@ theorem carriedFrom_eq_routes (l : Nat → C → Nat) {T : Nat} :
         (steps 0 T)).trans
         (Routes.total_upto_of_le (fun s => total cs fun d => respondAt part k present τ c s d * l s d)
           le)
-    (Propagation.add_congr (carriedFrom_eq_routes l τ (Nat.le_of_succ_le le) c)
+    (Naturals.add_congr (carriedFrom_eq_routes l τ (Nat.le_of_succ_le le) c)
         (give_split l τ c)).trans
       ((Nat.add_add_add_comm _ _ _ _).trans (congrArg (_ + ·)
         ((congrArg (_ + ·) restrict.symm).trans
           ((total_add _ _ _).symm.trans (total_congr (fun s =>
             (total_add _ _ cs).symm.trans (total_congr (fun d =>
-              (Loops.add_mul_nat (responseWeight part k present τ c s d)
+              (add_mul_split (responseWeight part k present τ c s d)
                 (bif Nat.ble s τ then respondAt part k present τ c s d else 0) (l s d)).symm) cs)) _)))))
 
 /-- What a source gives: one, at every horizon. -/
@@ -438,7 +433,7 @@ theorem routeSum_level (T n τ : Nat) (c : C) :
       carriedWithin cs part σ k present δ 0 τ c +
         total (steps 0 T) fun s => total cs fun d =>
           responseWeight part k present τ c s d * routeSum cs part σ k present δ T n (.level s d) :=
-  (Routes.transfer_unit _ _ _ n _).trans (Propagation.add_congr
+  (Routes.transfer_unit _ _ _ n _).trans (Naturals.add_congr
     ((congrArg (_ * ·) (routeSum_source T n)).trans (Nat.mul_one _))
     (Routes.total_routeCells cs T _))
 

@@ -251,7 +251,7 @@ def anyStep (p : α × α → Bool) : List (α × α) → Bool
 theorem anyStep_sound {p : α × α → Bool} :
     ∀ {l : List (α × α)}, anyStep p l = true → ∃ q, q ∈ l ∧ p q = true
   | [], h => Bool.noConfusion h
-  | q :: _, h => match either h with
+  | q :: _, h => match ListTests.or_cases h with
     | .inl here => ⟨q, .head _, here⟩
     | .inr there => match anyStep_sound there with
       | ⟨q', mem, holds⟩ => ⟨q', .tail _ mem, holds⟩
@@ -338,7 +338,7 @@ theorem orderNext_one_orbit :
 configuration is the start of a step of the order. -/
 theorem runsOrder_agrees {next : Hexagram → Hexagram} (runs : RunsOrder next) {s : Hexagram}
     (other : s ≠ weiJi) : next s = orderNext s :=
-  match either (every_of_order (p := fun s => eqb s weiJi || stepb s (orderNext s) order) rfl s) with
+  match ListTests.or_cases (every_of_order (p := fun s => eqb s weiJi || stepb s (orderNext s) order) rfl s) with
   | .inl last => absurd (eq_of_eqb last) other
   | .inr step => (runsOrder_iff.mp runs).step step
 
@@ -667,10 +667,6 @@ theorem mem_acrossFrom {s t : Hexagram} (mem : t ∈ acrossFrom s) : ∃ h h', t
   | _, .tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ mem)))))))) =>
     nomatch mem
 
-theorem beq_self : ∀ n : Nat, Nat.beq n n = true
-  | 0 => rfl
-  | n + 1 => beq_self n
-
 theorem beq_of_eq {n m : Nat} (same : n = m) : Nat.beq n m = true :=
   same ▸ beq_self n
 
@@ -680,16 +676,16 @@ commentators derives from 泰 and 否. -/
 theorem three_iff (s : Hexagram) :
     yang s = 3 ↔ s = tai ∨ s = pi ∨ ∃ h h', s = across h h' tai ∨ s = across h h' pi :=
   ⟨fun three =>
-    match either (every_of_order (p := fun s => !Nat.beq (yang s) 3 ||
+    match ListTests.or_cases (every_of_order (p := fun s => !Nat.beq (yang s) 3 ||
         (eqb s tai || eqb s pi || memb s (acrossFrom tai) || memb s (acrossFrom pi))) rfl s) with
-    | .inl not_three => absurd (beq_of_eq three) (fun e => Bool.noConfusion ((false_of_not not_three).symm.trans e))
-    | .inr found => match either found with
+    | .inl not_three => absurd (beq_of_eq three) (fun e => Bool.noConfusion ((ListTests.false_of_not not_three).symm.trans e))
+    | .inr found => match ListTests.or_cases found with
       | .inr from_pi => match mem_acrossFrom (mem_of_memb from_pi) with
         | ⟨h, h', e⟩ => .inr (.inr ⟨h, h', .inr e⟩)
-      | .inl rest => match either rest with
+      | .inl rest => match ListTests.or_cases rest with
         | .inr from_tai => match mem_acrossFrom (mem_of_memb from_tai) with
           | ⟨h, h', e⟩ => .inr (.inr ⟨h, h', .inl e⟩)
-        | .inl ends => match either ends with
+        | .inl ends => match ListTests.or_cases ends with
           | .inl e => .inl (eq_of_eqb e)
           | .inr e => .inr (.inl (eq_of_eqb e)),
    fun
@@ -897,7 +893,7 @@ theorem changes_run_trigram (r : Run changes) (n : Nat) (c : Half) (h : Height)
     (congrArg (fun t => trigramOdd t c) e).trans (trigramOdd_flip c h (r.state n)).1
   have counted : trigramOdd (r.state n) c = Nat.beq (count3 (trigramOf (r.state n) c) % 2) 1 :=
     congrArg (fun m => Nat.beq (m % 2) 1) (halfYang_trigram (r.state n) c)
-  ⟨⟨fun odd => (odd3_iff _).2.1.mp (counted.symm.trans (false_of_not (turns.symm.trans odd))),
+  ⟨⟨fun odd => (odd3_iff _).2.1.mp (counted.symm.trans (ListTests.false_of_not (turns.symm.trans odd))),
     fun is => turns.trans (congrArg (fun b => !b) (counted.trans ((odd3_iff _).2.1.mpr is)))⟩,
    (congrArg (fun t => trigramOdd t c.other) e).trans (trigramOdd_flip c h (r.state n)).2⟩
 
@@ -979,7 +975,7 @@ theorem zagua_last_eight :
       ∀ q, q ∈ steps (zagua.drop 56) → q.2 ≠ partner q.1 :=
   ⟨rfl, fun s mem => mem_of_memb
       (of_allOf (p := fun s => memb (partner s) (zagua.drop 56)) rfl s mem),
-   fun q mem => ne_of_eqb (false_of_not
+   fun q mem => ne_of_eqb (ListTests.false_of_not
       (of_followsb (good := fun s t => !eqb t (partner s)) (l := steps (zagua.drop 56)) rfl q mem))⟩
 
 /-- **The 雜卦 too is the run of no law commuting with 錯, 綜 or both**: it begins 乾, 坤, 比, 師,

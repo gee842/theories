@@ -405,14 +405,14 @@ theorem thresholdLaw_respondsByCrossing [DecidableEq C] {mark : F → Bool} (mar
     (congrArg (fun b => cond b
       (cond (Nat.beq t t) (cond (Nat.ble (W.need t h d) (W.need t h d)) 1 0) 0) 0) marked).trans
       ((congrArg (fun b => cond b (cond (Nat.ble (W.need t h d) (W.need t h d)) 1 0) 0)
-        (Loops.beq_self t)).trans
+        (beq_self t)).trans
         (congrArg (fun b => cond b 1 0) (Nat.ble_eq_true_of_le (Nat.le_refl _))))
   have after : cond (mark h) (cond (Nat.beq t t)
       (cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) 0 = 0 :=
     (congrArg (fun b => cond b (cond (Nat.beq t t)
       (cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) 0) marked).trans
       ((congrArg (fun b => cond b
-        (cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) (Loops.beq_self t)).trans
+        (cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) (beq_self t)).trans
         (congrArg (fun b => cond b 1 0) below))
   ⟨fun _ _ => W.need t h d, loweredAt (W.need t h d) t d,
    fun _ _ apart => (if_neg apart).symm, requires, Nat.le_refl _, unmet,

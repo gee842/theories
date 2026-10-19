@@ -139,17 +139,6 @@ variable {F C : Type}
 
 /-! ## Products, regrouped without `propext` -/
 
-theorem mul_regroup (a b : Nat) : ∀ c, a * b * c = a * (b * c)
-  | 0 => rfl
-  | c + 1 => (congrArg (· + a * b) (mul_regroup a b c)).trans (Nat.left_distrib a (b * c) b).symm
-
-theorem mul_turn (a b c : Nat) : a * (b * c) = b * (a * c) :=
-  (mul_regroup a b c).symm.trans ((congrArg (· * c) (Nat.mul_comm a b)).trans (mul_regroup b a c))
-
-theorem add_mul_split (a b : Nat) : ∀ c, (a + b) * c = a * c + b * c
-  | 0 => rfl
-  | c + 1 => (congrArg (· + (a + b)) (add_mul_split a b c)).trans (Nat.add_add_add_comm _ _ _ _)
-
 /-! ## A unit that may refine -/
 
 namespace Flow
@@ -384,7 +373,7 @@ theorem counts_of_amounts {r R k ℓ : Nat → Nat} {p B T : Nat} (base : R T = 
       _ ≤ refinedSum r (fun t => p * ℓ t) T n := refinedSum_mono each n
       _ = p * refinedSum r ℓ T n := refinedSum_mul r ℓ p T n
       _ ≤ p * (B * R (T + n)) := Nat.mul_le_mul_left p (amount n)
-      _ = p * B * R (T + n) := (mul_regroup p B _).symm)
+      _ = p * B * R (T + n) := (mul_assoc_nat p B _).symm)
     (units_pos base unit refining (Nat.le_add_right T n))
 
 /-! ## The quantum law on flows -/
@@ -862,10 +851,10 @@ theorem BalancesAt.gainers_lose {r : Nat → Nat} (balances : L.BalancesAt r W) 
               (Nat.mul_le_mul_left p (total_le_of_support distinct fun c mem _ =>
                 within c mem))))) _
     _ = p * (q * W.stock cs (t + 1) + L.replenishment cs t) :=
-        (congrArg (· + p * L.replenishment cs t) (mul_regroup p q _)).trans
+        (congrArg (· + p * L.replenishment cs t) (mul_assoc_nat p q _)).trans
           (Nat.left_distrib _ _ _).symm
     _ ≤ p * (q * (r t * W.stock cs t)) := Nat.mul_le_mul_left p (balances.lowersBy dissipates)
-    _ = p * q * (r t * W.stock cs t) := (mul_regroup p q _).symm
+    _ = p * q * (r t * W.stock cs t) := (mul_assoc_nat p q _).symm
 
 /-- Each relatum gaining at least `1/p` of the unit is given at least that: `R (t + 1)` for
 each is within `p` times what the list is given. -/
@@ -950,11 +939,11 @@ theorem BalancesAt.takers_lose {r : Nat → Nat} (balances : L.BalancesAt r W) {
             (Nat.le_of_eq ((total_mul p (fun f => total cs (L.take t f)) (L.present t)).trans
               (congrArg (p * ·) (total_swap (fun f c => L.take t f c) cs (L.present t))))))) _
     _ = p * ((q + 1) * W.stock cs (t + 1) + L.uptake cs t) :=
-        (congrArg (· + p * L.uptake cs t) (mul_regroup p (q + 1) _)).trans
+        (congrArg (· + p * L.uptake cs t) (mul_assoc_nat p (q + 1) _)).trans
           (Nat.left_distrib _ _ _).symm
     _ ≤ p * ((q + 1) * (r t * W.stock cs t)) :=
         Nat.mul_le_mul_left p (balances.lowersTaking dissipates)
-    _ = p * (q + 1) * (r t * W.stock cs t) := (mul_regroup p (q + 1) _).symm
+    _ = p * (q + 1) * (r t * W.stock cs t) := (mul_assoc_nat p (q + 1) _).symm
 
 /-- The exchange law. Balanced at a resolution that only refines and dissipative in
 proportion `q`, over a family without repetition closed at every step from `T` on, the times
@@ -969,7 +958,7 @@ theorem exchange_bound {r : Nat → Nat} (balances : L.BalancesAt r W) {q : Nat}
   Nat.le_trans (counts_of_amounts base unit refining
       (fun t _ => L.takersAbove_le R p cs t)
       (uptake_bound balances dissipative distinct closed base unit) n)
-    (Nat.le_of_eq (mul_regroup p (q + 1) _).symm)
+    (Nat.le_of_eq (mul_assoc_nat p (q + 1) _).symm)
 
 /-- So no formation takes at least `1/p` of the unit from the family at arbitrarily late
 steps. -/
@@ -1092,13 +1081,13 @@ theorem losesAtSize_of_each {q : Nat} {cs : List C} {t : Nat}
   fun f present takes => calc
     R (t + 1) + p * (q + 1) * total cs (L.give t f)
         = R (t + 1) + p * ((q + 1) * total cs (L.give t f)) :=
-          congrArg (R (t + 1) + ·) (mul_regroup p (q + 1) _)
+          congrArg (R (t + 1) + ·) (mul_assoc_nat p (q + 1) _)
     _ ≤ p * total cs (L.take t f) + p * (q * total cs (L.take t f)) :=
           Nat.add_le_add takes (Nat.mul_le_mul_left p (each f present))
     _ = p * (q + 1) * total cs (L.take t f) :=
           (Nat.left_distrib _ _ _).symm.trans ((congrArg (p * ·) ((Nat.add_comm _ _).trans
             ((congrArg (q * total cs (L.take t f) + ·) (Nat.one_mul _).symm).trans
-              (add_mul_split q 1 _).symm))).trans (mul_regroup p (q + 1) _).symm)
+              (add_mul_split q 1 _).symm))).trans (mul_assoc_nat p (q + 1) _).symm)
 
 /-- Balanced at a resolution, what a condition loses across a step is taken from it. -/
 theorem BalancesAt.loss_taken {r : Nat → Nat} (balances : L.BalancesAt r W) {R : Nat → Nat}
@@ -1128,11 +1117,11 @@ theorem BalancesAt.losers_lose {r : Nat → Nat} (balances : L.BalancesAt r W) {
               (Nat.mul_le_mul_left p (total_le_of_support distinct fun c mem _ =>
                 within c mem))))) _
     _ = p * ((q + 1) * W.stock cs (t + 1) + L.uptake cs t) :=
-        (congrArg (· + p * L.uptake cs t) (mul_regroup p (q + 1) _)).trans
+        (congrArg (· + p * L.uptake cs t) (mul_assoc_nat p (q + 1) _)).trans
           (Nat.left_distrib _ _ _).symm
     _ ≤ p * ((q + 1) * (r t * W.stock cs t)) :=
         Nat.mul_le_mul_left p (balances.lowersTaking dissipates)
-    _ = p * (q + 1) * (r t * W.stock cs t) := (mul_regroup p (q + 1) _).symm
+    _ = p * (q + 1) * (r t * W.stock cs t) := (mul_assoc_nat p (q + 1) _).symm
 
 /-- Each relatum losing at least `1/p` of the unit has at least that taken from it. -/
 theorem BalancesAt.losers_le {r : Nat → Nat} (balances : L.BalancesAt r W) (R : Nat → Nat)
@@ -1219,7 +1208,7 @@ theorem growth_bound {alive : Nat → List w.Relatum} (census : w.web.Census ali
   Nat.le_trans (counts_of_amounts base unit refining
       (fun t _ => balances.gainers_le R p t (alive (t + 1)))
       (given_bound census embodied balances dissipative enclosed base unit) n)
-    (Nat.le_of_eq (mul_regroup p q _).symm)
+    (Nat.le_of_eq (mul_assoc_nat p q _).symm)
 
 /-- So no relatum gains at least `1/p` of the unit at arbitrarily late steps. -/
 theorem growth_not_recurring (counted : w.Counted) (embodied : w.Embodied) {r : Nat → Nat}
@@ -1273,7 +1262,7 @@ theorem fall_bound {alive : Nat → List w.Relatum} (census : w.web.Census alive
   Nat.le_trans (counts_of_amounts base unit refining
       (fun t _ => balances.losers_le R p t (alive t))
       (taken_bound census embodied balances dissipative enclosed base unit) n)
-    (Nat.le_of_eq (mul_regroup p (q + 1) _).symm)
+    (Nat.le_of_eq (mul_assoc_nat p (q + 1) _).symm)
 
 /-- So no relatum loses at least `1/p` of the unit at arbitrarily late steps. -/
 theorem fall_not_recurring (counted : w.Counted) (embodied : w.Embodied) {r : Nat → Nat}
@@ -1416,9 +1405,9 @@ def quarter : Nat → Nat
 
 theorem quarter_eq : ∀ t, quarter t = halving t * halving t
   | 0 => rfl
-  | t + 1 => (congrArg (4 * ·) (quarter_eq t)).trans ((mul_regroup 2 2 _).trans
+  | t + 1 => (congrArg (4 * ·) (quarter_eq t)).trans ((mul_assoc_nat 2 2 _).trans
       ((congrArg (2 * ·) (mul_turn (halving t) 2 (halving t)).symm).trans
-        (mul_regroup 2 (halving t) (2 * halving t)).symm))
+        (mul_assoc_nat 2 (halving t) (2 * halving t)).symm))
 
 theorem halving_pos : ∀ t, 0 < halving t
   | 0 => Nat.one_pos
@@ -1464,7 +1453,7 @@ theorem powers_outgrow : ∀ (q m : Nat), ∃ n, m * powers q n < powers (q + 1)
         _ ≤ (k + 1) * (m * powers (k + 1) ((k + 1) * m)) + (k + 1) * powers (k + 1) ((k + 1) * m) :=
           Nat.add_le_add_left (Nat.mul_le_mul_left _ (powers_pos (Nat.succ_pos k) _)) _
         _ = ((k + 1) * m + (k + 1)) * powers (k + 1) ((k + 1) * m) :=
-          (congrArg (· + _) (mul_regroup _ _ _).symm).trans (add_mul_split _ _ _).symm
+          (congrArg (· + _) (mul_assoc_nat _ _ _).symm).trans (add_mul_split _ _ _).symm
         _ = (k + 1 + (k + 1) * m) * powers (k + 1) ((k + 1) * m) :=
           congrArg (· * _) (Nat.add_comm _ _)
         _ ≤ (k + 1) * powers (k + 1 + 1) ((k + 1) * m) := bernoulli_powers (k + 1) _)
@@ -1977,7 +1966,7 @@ theorem embodied : world.Embodied :=
 
 /-- The two sides are all there is, so every step is enclosed. -/
 theorem enclosed (t : Nat) : flow.Enclosed t :=
-  Flow.enclosed_of_finite Shuttle.distinct Shuttle.every t
+  Flow.enclosed_of_finite Shuttle.distinct ListTests.mem_bools t
 
 /-- The holder takes all it holds. -/
 theorem holder_takes (t : Nat) : 2 * halving t + 2 = stands (holder t) t * (2 * halving t + 2) :=
@@ -1995,7 +1984,7 @@ theorem holder_mem {es : List Bool} {t : Nat} (closed : flow.ClosedAt es t) : ho
 /-- What is given across a step totals at most all but one unit of the step after. -/
 theorem given_total {es : List Bool} (distinct : Distinct es) (t : Nat) (f : Bool) :
     total es (flow.give t f) ≤ 2 * halving t + 1 :=
-  Nat.le_trans (total_le_of_support distinct fun c _ _ => Shuttle.every c)
+  Nat.le_trans (total_le_of_support distinct fun c _ _ => ListTests.mem_bools c)
     (Nat.le_of_eq ((add_mul_split (stands true (t + 1)) (stands false (t + 1)) _).symm.trans
       ((congrArg (· * (2 * halving t + 1)) (stands_sum (t + 1))).trans (Nat.one_mul _))))
 
@@ -2124,22 +2113,19 @@ theorem given (t : Nat) (c : Relatum) :
     flow.given t c = halving t * (side (t + 1) c * (2 * (2 * halving t + 1))) :=
   (total_const _ _).trans (congrArg (· * _) (conduits_length (halving t)))
 
-theorem add_eq {a b c d : Nat} (h₁ : a = b) (h₂ : c = d) : a + c = b + d :=
-  (congrArg (· + c) h₁).trans (congrArg (b + ·) h₂)
-
 /-- What the holder holds, taken in `halving t` parts. -/
 theorem parts_taken (t : Nat) :
     halving t * (4 * (halving t + 1)) = 4 * (quarter t + halving t) :=
   (mul_turn _ _ _).trans (congrArg (4 * ·) ((Nat.left_distrib _ _ _).trans
-    (add_eq (quarter_eq t).symm (Nat.mul_one _))))
+    (Naturals.add_congr (quarter_eq t).symm (Nat.mul_one _))))
 
 /-- What the other side is given, in `halving t` parts. -/
 theorem parts_given (t : Nat) :
     halving t * (2 * (2 * halving t + 1)) = quarter (t + 1) + halving (t + 1) :=
   (mul_turn _ _ _).trans ((congrArg (2 * ·) ((Nat.left_distrib _ _ _).trans
-    (add_eq ((mul_turn _ _ _).trans (congrArg (2 * ·) (quarter_eq t).symm))
+    (Naturals.add_congr ((mul_turn _ _ _).trans (congrArg (2 * ·) (quarter_eq t).symm))
       (Nat.mul_one _)))).trans
-    ((Nat.left_distrib _ _ _).trans (congrArg (· + 2 * halving t) (mul_regroup 2 2 _).symm)))
+    ((Nat.left_distrib _ _ _).trans (congrArg (· + 2 * halving t) (mul_assoc_nat 2 2 _).symm)))
 
 /-- The flow balances at a unit quartering at each step. -/
 theorem balances : flow.BalancesAt (fun _ => 4) web :=
@@ -2150,10 +2136,10 @@ theorem balances : flow.BalancesAt (fun _ => 4) web :=
           congrArg (level (t + 1) c + ·) ((taken t c).trans (mul_turn _ _ _))
       _ = side (t + 1) c * (halving t * (2 * (2 * halving t + 1))) +
             side t c * (4 * (quarter t + halving t)) :=
-          add_eq (congrArg (side (t + 1) c * ·) (parts_given t).symm)
+          Naturals.add_congr (congrArg (side (t + 1) c * ·) (parts_given t).symm)
             (congrArg (side t c * ·) (parts_taken t))
       _ = 4 * level t c + flow.given t c :=
-          (Nat.add_comm _ _).trans (add_eq (mul_turn _ _ _)
+          (Nat.add_comm _ _).trans (Naturals.add_congr (mul_turn _ _ _)
             ((mul_turn _ _ _).trans (given t c).symm))
 
 theorem active_iff {t : Nat} {c : Relatum} : web.active t c ↔ 0 < side t c :=
@@ -2264,7 +2250,7 @@ theorem taken_total {es : List Relatum} {t : Nat} (closed : flow.ClosedAt es t)
 /-- Two units of the step after are lost per part. -/
 theorem part_loss (h : Nat) : 2 * (2 * h + 1) + 2 = 4 * (h + 1) :=
   (congrArg (· + 2) ((Nat.left_distrib 2 (2 * h) 1).trans
-    (congrArg (· + 2) (mul_regroup 2 2 h).symm))).trans
+    (congrArg (· + 2) (mul_assoc_nat 2 2 h).symm))).trans
     ((Nat.add_assoc _ _ _).trans (Nat.left_distrib 4 h 1).symm)
 
 /-- Over a family without repetition closed across a step, each part gives back at least
@@ -2282,7 +2268,7 @@ theorem dissipative : flow.Dissipative :=
     (loses_two distinct closed f)
 
 theorem double (h : Nat) : h + h = 2 * h :=
-  (add_eq (Nat.one_mul h).symm (Nat.one_mul h).symm).trans (add_mul_split 1 1 h).symm
+  (Naturals.add_congr (Nat.one_mul h).symm (Nat.one_mul h).symm).trans (add_mul_split 1 1 h).symm
 
 /-- A part taking at least `1/p` of the unit comes only while `halving t ≤ 2 p`. -/
 theorem large_early {t p : Nat} (large : quarter (t + 1) ≤ p * (4 * (halving t + 1))) :
@@ -2293,7 +2279,7 @@ theorem large_early {t p : Nat} (large : quarter (t + 1) ≤ p * (4 * (halving t
       (Nat.le_trans large (Nat.le_of_eq (mul_turn p 4 _)))) (Nat.succ_pos 3))
     (Nat.le_trans (Nat.mul_le_mul_left p (Nat.add_le_add_left (halving_pos t) _))
       (Nat.le_of_eq ((congrArg (p * ·) (double _)).trans
-        ((mul_turn p 2 _).trans ((mul_regroup 2 p _).symm.trans
+        ((mul_turn p 2 _).trans ((mul_assoc_nat 2 p _).symm.trans
           (Nat.mul_comm _ _)))))))
     (halving_pos t)
 
@@ -2306,7 +2292,7 @@ theorem losesAtEverySize : flow.LosesAtEverySize quarter :=
     have small : quarter (t + 1) ≤ 2 * (2 * (2 * p * (2 * p))) :=
       Nat.le_trans (Nat.le_of_eq (congrArg (4 * ·) (quarter_eq t)))
         (Nat.le_trans (Nat.mul_le_mul_left 4 (Nat.mul_le_mul early early))
-          (Nat.le_of_eq (mul_regroup 2 2 _)))
+          (Nat.le_of_eq (mul_assoc_nat 2 2 _)))
     Nat.le_trans (Nat.add_le_add_right (Nat.le_trans small (Nat.le_of_eq (Nat.mul_comm _ _))) _)
       (Nat.le_trans (Nat.le_of_eq ((Nat.add_comm _ _).trans (Nat.left_distrib _ _ _).symm))
         (Nat.mul_le_mul_left _ (loses_two distinct closed f)))⟩
@@ -2498,7 +2484,7 @@ theorem amount_sharp (q s : Nat) :
            (congrArg (m * ·) ((congrArg (· * powers (q + 1) n) (congrArg ((q + 1) * ·)
              (Nat.mul_one s).symm)).trans (balance.symm.trans (congrArg (· + _)
                ((congrArg (fun k => (q + 1) * (s * powers q k)) (Nat.zero_add n)).trans
-                 (mul_regroup _ _ _).symm))))).trans
+                 (mul_assoc_nat _ _ _).symm))))).trans
              ((Nat.left_distrib _ _ _).trans (congrArg (_ + m * ·) same.symm))
        _ ≤ (q + 1) * s * powers (q + 1) n +
              m * refinedSum (fun _ => q + 1) ((Geometric.flow q s).uptake [()]) 0 n :=

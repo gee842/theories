@@ -717,12 +717,8 @@ def alt : Nat → Bool
   | 0 => false
   | n + 1 => !alt n
 
-theorem ne_not : ∀ b : Bool, b ≠ !b
-  | false => fun same => nomatch same
-  | true => fun same => nomatch same
-
 theorem alt_ne (n : Nat) : alt n ≠ alt (n + 1) :=
-  ne_not (alt n)
+  ListTests.ne_not (alt n)
 
 end MoveFormation
 

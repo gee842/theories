@@ -69,9 +69,6 @@ namespace Typicality
 
 /-! ## Arithmetic without extensionality -/
 
-theorem left_comm (a b c : Nat) : a * (b * c) = b * (a * c) :=
-  (mul_assoc_nat a b c).symm.trans ((congrArg (· * c) (Nat.mul_comm a b)).trans (mul_assoc_nat b a c))
-
 /-! ## Courses and their weights -/
 
 /-- The ones of a course, its `true` steps. -/
@@ -251,7 +248,7 @@ theorem cross_false (p q : Nat) (w : List Bool) :
 
 /-- One step of weight `p` on a weighted amount. -/
 theorem split (p W A a : Nat) : (p * W) * (A + a) = p * (W * A) + W * (p * a) := by
-  rw [Nat.mul_add, mul_assoc_nat, mul_assoc_nat, left_comm p W a]
+  rw [Nat.mul_add, mul_assoc_nat, mul_assoc_nat, mul_turn p W a]
 
 theorem regroup (p q u a b : Nat) : (p * u + a) + (q * u + b) = (p + q) * u + (a + b) := by
   rw [Nat.add_add_add_comm, add_mul_split]
@@ -260,10 +257,10 @@ theorem regroup (p q u a b : Nat) : (p * u + a) + (q * u + b) = (p + q) * u + (a
 theorem steps_leave (p q x y : Nat) :
     p * (q * (2 * x + q)) + q * (p * (2 * y + p)) =
       (p * (2 * (q * y)) + q * (2 * (p * x))) + p * q * (p + q) := by
-  rw [← mul_assoc_nat p q, left_comm q p, ← mul_assoc_nat p q,
-    left_comm p 2 (q * y), ← mul_assoc_nat p q y, left_comm 2 (p * q) y,
-    left_comm q 2 (p * x), left_comm q p x, ← mul_assoc_nat p q x,
-    left_comm 2 (p * q) x,
+  rw [← mul_assoc_nat p q, mul_turn q p, ← mul_assoc_nat p q,
+    mul_turn p 2 (q * y), ← mul_assoc_nat p q y, mul_turn 2 (p * q) y,
+    mul_turn q 2 (p * x), mul_turn q p x, ← mul_assoc_nat p q x,
+    mul_turn 2 (p * q) x,
     Nat.mul_add (p * q) (2 * x), Nat.mul_add (p * q) (2 * y), Nat.mul_add (p * q) p q,
     Nat.add_add_add_comm, Nat.add_comm (p * q * (2 * x)) (p * q * (2 * y)),
     Nat.add_comm (p * q * q) (p * q * p)]
@@ -298,7 +295,7 @@ theorem step_weight (p q n : Nat) :
       (n + 1) * (p * q * (p + q) ^ (n + 1)) := by
   show _ = (n + 1) * (p * q * ((p + q) ^ n * (p + q)))
   rw [Nat.mul_comm ((p + q) ^ n) (p + q), mul_assoc_nat (p * q) (p + q),
-    left_comm (p * q) (p + q), left_comm (p + q) n, Nat.succ_mul]
+    mul_turn (p * q) (p + q), mul_turn (p + q) n, Nat.succ_mul]
 
 /-- **The spread is exact.** Over the courses of `n` steps, each weighted, `x·x + y·y` adds up
 to `2·x·y` plus `n·p·q·(p + q)^n`: the squared deviations add up to `n·p·q·(p + q)^n`. -/
@@ -355,20 +352,13 @@ variance bound of Chebyshev's inequality, in counting form. -/
 theorem typical (p q n d : Nat) :
     total (courses n) (offBy p q d) * d ≤ n * (p * q * (p + q) ^ n) :=
   have bound := total_le (offBy_le p q d) (courses n)
-  Identification.le_of_add_right (total (courses n) (fun w => weight p q w * cross p q w))
+  le_of_add_le_add_right (total (courses n) (fun w => weight p q w * cross p q w))
     (by
       rw [total_add, total_mul_right, spread] at bound
       rw [Nat.add_comm (n * _)]
       exact bound)
 
 /-! ## Concentration is exponential -/
-
-/-- `x ^ (a + b) = x ^ a · x ^ b`, by induction, without the prelude's form. -/
-theorem pow_add_nat (x a : Nat) : ∀ b, x ^ (a + b) = x ^ a * x ^ b
-  | 0 => (Nat.mul_one _).symm
-  | b + 1 => by
-    show x ^ (a + b) * x = x ^ a * (x ^ b * x)
-    rw [pow_add_nat x a b, mul_assoc_nat]
 
 /-- A course has as many ones and zeros as steps. -/
 theorem ones_add_zeros : ∀ w : List Bool, ones w + zeros w = w.length
@@ -384,10 +374,10 @@ theorem weight_pow (p q : Nat) : ∀ w : List Bool, weight p q w = p ^ ones w * 
     rw [weight_pow p q w, Nat.mul_comm (p ^ ones w) p, mul_assoc_nat]
   | false :: w => by
     show q * weight p q w = p ^ ones w * (q ^ zeros w * q)
-    rw [weight_pow p q w, Nat.mul_comm (q ^ zeros w) q, left_comm]
+    rw [weight_pow p q w, Nat.mul_comm (q ^ zeros w) q, mul_turn]
 
 theorem mul_mul_mul (a b c d : Nat) : (a * b) * (c * d) = (a * c) * (b * d) := by
-  rw [mul_assoc_nat, left_comm b c d, ← mul_assoc_nat]
+  rw [mul_assoc_nat, mul_turn b c d, ← mul_assoc_nat]
 
 /-- **Weights multiply step by step.** -/
 theorem weight_mul (p q u v : Nat) : ∀ w : List Bool,
@@ -406,7 +396,7 @@ theorem tilt_le {u v : Nat} (le : v ≤ u) {k a : Nat} (enough : k ≤ a) (b : N
     u ^ k * v ^ (a + b) ≤ (u ^ a * v ^ b) * v ^ k :=
   match gap_of_le enough with
   | ⟨e, at_a⟩ => by
-    rw [at_a, pow_add_nat u k e, Nat.add_assoc, pow_add_nat v k (e + b), pow_add_nat v e b,
+    rw [at_a, Naturals.pow_add u k e, Nat.add_assoc, Naturals.pow_add v k (e + b), Naturals.pow_add v e b,
       mul_assoc_nat (u ^ k) (u ^ e)]
     have left : v ^ k * (v ^ e * v ^ b) = v ^ e * (v ^ b * v ^ k) :=
       (Nat.mul_comm _ _).trans (mul_assoc_nat _ _ _)

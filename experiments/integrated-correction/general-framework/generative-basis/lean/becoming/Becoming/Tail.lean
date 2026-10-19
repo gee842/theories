@@ -102,18 +102,6 @@ theorem eq_zero_of_nonzero_false : ∀ {x : Nat}, nonzero x = false → x = 0
 def levelsFrom (α : Nat → Nat) (N : Nat) : Nat → Bool :=
   fun n => nonzero (α (N + n))
 
-theorem false_of_not_true : ∀ {b : Bool}, ¬ b = true → b = false
-  | false, _ => rfl
-  | true, no => absurd rfl no
-
-theorem false_of_not_eq_true : ∀ {b : Bool}, (!b) = true → b = false
-  | false, _ => rfl
-  | true, yes => Bool.noConfusion yes
-
-theorem not_eq_true_of_false : ∀ {b : Bool}, b = false → (!b) = true
-  | false, _ => rfl
-  | true, no => Bool.noConfusion no
-
 theorem add_eq {a b c d : Nat} (first : a = c) (second : b = d) : a + b = c + d :=
   (congrArg (· + b) first).trans (congrArg (c + ·) second)
 
@@ -314,7 +302,7 @@ theorem vanishesFrom_of {α : Nat → Nat} {N : Nat} (zero : ∀ m, N ≤ m → 
 theorem vanishesFrom_never_iff {α : Nat → Nat} :
     (∀ N, vanishesFrom decides α N = false) ↔ ¬ VanishFrom α :=
   ⟨fun never ⟨N, zero⟩ => Bool.noConfusion ((never N).symm.trans (vanishesFrom_of decides zero)),
-   fun stays N => Tail.false_of_not_true fun yes => stays ⟨N, vanishesFrom_true decides yes⟩⟩
+   fun stays N => ListTests.false_of_not_true fun yes => stays ⟨N, vanishesFrom_true decides yes⟩⟩
 
 /-- **The indicator of never vanishing, read off the rule twice**: `1` where the levels vanish from
 no condition on, else `0`. -/
@@ -478,7 +466,7 @@ theorem raisedFrom_false {α : Nat → Nat} {N : Nat} (quiet : raisedFrom decide
   fun _ le =>
     match Nat.le.dest le with
     | ⟨d, eq⟩ =>
-      eq ▸ Tail.eq_zero_of_nonzero_false (Tail.false_of_not_true fun yes =>
+      eq ▸ Tail.eq_zero_of_nonzero_false (ListTests.false_of_not_true fun yes =>
         @of_decide_eq_false _ (decides (Tail.levelsFrom α N)) quiet ⟨d, yes⟩)
 
 theorem raisedFrom_of {α : Nat → Nat} {N : Nat} (zero : ∀ m, N ≤ m → α m = 0) :
@@ -494,9 +482,9 @@ def vanishDecisionOfLPORule (α : Nat → Nat) : Decidable (VanishFrom α) :=
   | isTrue quiet =>
     isTrue
       (match quiet with
-       | ⟨N, yes⟩ => ⟨N, raisedFrom_false decides (Tail.false_of_not_eq_true yes)⟩)
+       | ⟨N, yes⟩ => ⟨N, raisedFrom_false decides (ListTests.false_of_not yes)⟩)
   | isFalse loud =>
-    isFalse fun ⟨N, zero⟩ => loud ⟨N, Tail.not_eq_true_of_false (raisedFrom_of decides zero)⟩
+    isFalse fun ⟨N, zero⟩ => loud ⟨N, ListTests.not_eq_true_of_false (raisedFrom_of decides zero)⟩
 
 /-- **The limited principle as a rule gives the weak one as a rule.** -/
 def wlpoRuleOfLPORule (s : Nat → Bool) : Decidable (∀ n, s n = false) :=
@@ -505,7 +493,7 @@ def wlpoRuleOfLPORule (s : Nat → Bool) : Decidable (∀ n, s n = false) :=
     isFalse fun all =>
       match found with
       | ⟨n, yes⟩ => Bool.noConfusion ((all n).symm.trans yes)
-  | isFalse absent => isTrue fun n => Tail.false_of_not_true fun yes => absent ⟨n, yes⟩
+  | isFalse absent => isTrue fun n => ListTests.false_of_not_true fun yes => absent ⟨n, yes⟩
 
 end LimitedRule
 
@@ -514,7 +502,7 @@ theorem LPO.of_rule (decides : ∀ s : Nat → Bool, Decidable (∃ n, s n = tru
   fun s =>
     match decides s with
     | isTrue found => .inl found
-    | isFalse absent => .inr fun n => Tail.false_of_not_true fun yes => absent ⟨n, yes⟩
+    | isFalse absent => .inr fun n => ListTests.false_of_not_true fun yes => absent ⟨n, yes⟩
 
 /-- **The decision of vanishing is exactly the limited principle as a rule.** -/
 theorem vanishDecision_iff_lpoRule :

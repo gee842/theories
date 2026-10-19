@@ -104,13 +104,6 @@ namespace WeightedTraces
 
 universe u v x
 
-/-- Two values that hold together are one. -/
-theorem bool_eq_of_iff : ∀ {b c : Bool}, (b = true ↔ c = true) → b = c
-  | true, true, _ => rfl
-  | true, false, h => Bool.noConfusion (h.mp rfl)
-  | false, true, h => Bool.noConfusion (h.mpr rfl)
-  | false, false, _ => rfl
-
 variable {S : Type u} {A : Type v} {K : Type x}
 
 /-- Some trace of `n` moves of `P` from `s` reaches a configuration whose description meets `g`. -/

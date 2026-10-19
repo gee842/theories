@@ -1,3 +1,5 @@
+import Becoming.Prelude
+
 /-!
 # Joint plans: nested decompositions of a ternary relation, and what their leaves draw on
 
@@ -50,21 +52,12 @@ section Footprints
 
 variable {S : Type u} {K : Type w'} {R : Type x'}
 
-/-- Membership in two lists joined is membership in one of them, at every universe. -/
-theorem mem_appended_split {α : Type u} {a : α} :
-    ∀ {l m : List α}, a ∈ l ++ m → a ∈ l ∨ a ∈ m
-  | [], _, mem => .inr mem
-  | _ :: l, _, .head _ => .inl (.head l)
-  | b :: _, _, .tail _ mem => match mem_appended_split mem with
-    | .inl inside => .inl (.tail b inside)
-    | .inr outside => .inr outside
-
 /-- Two lists without repetition and with no member in common join without repetition. -/
 theorem nodup_append_of_apart {α : Type u} :
     ∀ {l m : List α}, l.Nodup → m.Nodup → (∀ a, a ∈ l → a ∈ m → False) → (l ++ m).Nodup
   | [], _, _, distinct, _ => distinct
   | a :: l, _, .cons fresh distinct, distinct', apart =>
-    .cons (fun b mem same => match mem_appended_split mem with
+    .cons (fun b mem same => match ListTests.mem_append_iff.mp mem with
       | .inl inside => fresh b inside same
       | .inr outside => apart a (.head l) (Eq.subst (motive := fun x => x ∈ _) same.symm outside))
       (nodup_append_of_apart distinct distinct' fun b mem => apart b (.tail a mem))
@@ -94,7 +87,7 @@ theorem JointPlan.within_of_realizes {footprint : S → R → Prop} {J : S → S
     ∀ (p : JointPlan (List R)) (s : S), JointPlan.Realizes J (Supports footprint) s p →
       ∀ a, a ∈ p.draws → footprint s a
   | .leaf _, _, supports => supports.2
-  | .pair p q, s, ⟨l, r, joint, left, right⟩ => fun a mem => match mem_appended_split mem with
+  | .pair p q, s, ⟨l, r, joint, left, right⟩ => fun a mem => match ListTests.mem_append_iff.mp mem with
     | .inl inside => (within s l r joint).1 a (JointPlan.within_of_realizes within p l left a inside)
     | .inr outside => (within s l r joint).2 a (JointPlan.within_of_realizes within q r right a outside)
 

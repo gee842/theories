@@ -57,7 +57,8 @@ premise each law names.
   (`Trophic.responds_through_coupling`). The forest lies within the wolves' responsive reach,
   which the wolves' part does not reach (`Trophic.forest_within_response`); the reach is exactly
   the wolves, the deer and the forest (`Trophic.within_response_iff`), so the responsive comparison
-  of `Trophic.responsive_mixed` is decided among them (`Trophic.responsive_comparison`). In `Loop`
+  of `Trophic.responsive_mixed` (`Becoming.BoundedSignificance`) is decided among them
+  (`Trophic.responsive_comparison`, which proves the two excesses here, with no condition). In `Loop`
   a part's act changes what couples into another formation, the other responds, and the difference
   returns to the part's own support, which the part's own exchange never reaches
   (`Loop.returns`).
@@ -446,7 +447,7 @@ theorem within_response_iff {g : Formation} :
 significance covering, from `p`, the wolves, the deer and the forest at every step, the levels with
 the wolves and those of the flow in which the deer respond retain along each other exactly as they
 include each other: an instance of `Flow.Balances.comparison_within_response`. Each exceeds the
-other (`responsive_mixed`), so neither retains. The sun and the far formation need no
+other (as in `responsive_mixed` of `Becoming.BoundedSignificance`), so neither retains. The sun and the far formation need no
 significance. -/
 theorem responsive_comparison {Pos : Type} {sig : Pos → Nat → Formation → Prop} {p : Pos}
     (covers : ∀ t g, responsiveReach g → sig p t g) :
@@ -470,10 +471,21 @@ theorem responsive_comparison {Pos : Type} {sig : Pos → Nat → Formation → 
   have law := balances.comparison_within_response responsive_balances (fun _ => rfl) start
     responds_through_coupling (sig := sig) (p := p)
     fun t g notBeyond => covers t g (stable g notBeyond)
-  have mixed := responsive_mixed (sig := fun (_ : Unit) _ _ => True) (fun _ => trivial) ()
+  have forest : web.Exceeds web.level responsiveWeb.level :=
+    ⟨2, .forest, fun c requires => match c, requires with
+      | .growth, _ => Nat.succ_le_succ (Nat.zero_le 1)
+      | .herd, no => nomatch no
+      | .den, no => (nomatch no),
+     fun admits => Nat.not_succ_le_zero 0 (admits .growth trivial)⟩
+  have deer : web.Exceeds responsiveWeb.level web.level :=
+    ⟨1, .deer, fun c requires => match c, requires with
+      | .growth, no => nomatch no
+      | .herd, _ => Nat.le_refl 1
+      | .den, no => (nomatch no),
+     fun admits => Nat.not_succ_le_zero 0 (admits .herd trivial)⟩
   ⟨law.1, law.2.1,
-   fun retains => (law.1.mp retains).not_exceeded mixed.2.1,
-   fun retains => (law.2.1.mp retains).not_exceeded mixed.1⟩
+   fun retains => (law.1.mp retains).not_exceeded deer,
+   fun retains => (law.2.1.mp retains).not_exceeded forest⟩
 
 end Trophic
 

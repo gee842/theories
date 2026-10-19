@@ -73,7 +73,7 @@ has under their levels.** -/
 theorem exchangeGap_follows (follows : L.Follows law part W.level)
     (follows' : L'.Follows law part W'.level) {h : F} (out : part h = false) (t : Nat) (c : C) :
     L.exchangeGap L' t h c = law.exchangeGap t h c W.level W'.level :=
-  Propagation.add_congr
+  Naturals.add_congr
     ((congrArg (fun x => gap x (L'.take t h c)) (follows h out t c).1).trans
       (congrArg (gap (law.take t h W.level c)) (follows' h out t c).1))
     ((congrArg (fun x => gap x (L'.give t h c)) (follows h out t c).2).trans

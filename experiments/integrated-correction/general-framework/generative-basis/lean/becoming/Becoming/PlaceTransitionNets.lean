@@ -193,7 +193,7 @@ theorem course_eq (start : P → Nat) : (N.law y).course σ start = N.flow y σ 
 /-- What stands, less what is taken, with what is given, added back what was taken. -/
 theorem fire_add_back {M k g : Nat} (le : k ≤ M) : M - k + g + k = M + g :=
   (Nat.add_right_comm (M - k) g k).trans
-    (congrArg (· + g) (ExchangeLaw.sub_add_back le))
+    (congrArg (· + g) (Naturals.sub_add_cancel le))
 
 theorem le_of_fire_add_back {M k g : Nat} (back : M - k + g + k = M + g) : k ≤ M :=
   ExchangeLaw.sub_add_back_iff.mp
@@ -203,10 +203,10 @@ theorem le_of_fire_add_back {M k g : Nat} (back : M - k + g + k = M + g) : k ≤
 more is taken than stands. -/
 theorem fire_scaled {u M k g : Nat} (le : k ≤ M) : u * M + u * g - u * k = u * (M - k + g) :=
   have split : u * M = u * (M - k) + u * k :=
-    (congrArg (u * ·) (ExchangeLaw.sub_add_back le)).symm.trans (Nat.left_distrib u (M - k) k)
+    (congrArg (u * ·) (Naturals.sub_add_cancel le)).symm.trans (Nat.left_distrib u (M - k) k)
   (congrArg (· + u * g - u * k) split).trans
     ((congrArg (· - u * k) (Nat.add_right_comm (u * (M - k)) (u * k) (u * g))).trans
-      ((ExchangeLaw.add_sub_same (u * (M - k) + u * g) (u * k)).trans
+      ((Naturals.add_sub_cancel (u * (M - k) + u * g) (u * k)).trans
         (Nat.left_distrib u (M - k) g).symm))
 
 /-! ## Balance is the firing rule -/
@@ -604,34 +604,11 @@ def world (y : P → Nat) (σ : Nat → List T) (M₀ : P → Nat) : World :=
 
 variable {N}
 
-theorem exists_of_mem_map {α β : Type} {g : α → β} {b : β} :
-    ∀ {l : List α}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
-  | [], mem => nomatch mem
-  | a :: _, mem => match mem_cons_cases mem with
-    | .inl same => ⟨a, .head _, same.symm⟩
-    | .inr mem => match exists_of_mem_map mem with
-      | ⟨a', mem', same⟩ => ⟨a', .tail a mem', same⟩
-
-theorem mem_append_left' {α : Type} {a : α} : ∀ {l : List α} (m : List α), a ∈ l → a ∈ l ++ m
-  | _ :: _, _, .head _ => .head _
-  | _ :: _, m, .tail _ mem => .tail _ (mem_append_left' m mem)
-
-theorem mem_append_right' {α : Type} {a : α} : ∀ (l : List α) {m : List α}, a ∈ m → a ∈ l ++ m
-  | [], _, mem => mem
-  | b :: l, _, mem => .tail b (mem_append_right' l mem)
-
-theorem mem_append_cases' {α : Type} {a : α} : ∀ {l m : List α}, a ∈ l ++ m → a ∈ l ∨ a ∈ m
-  | [], _, mem => .inr mem
-  | _ :: _, _, .head _ => .inl (.head _)
-  | b :: _, _, .tail _ mem => match mem_append_cases' mem with
-    | .inl inside => .inl (.tail b inside)
-    | .inr outside => .inr outside
-
 theorem distinct_append' {α : Type} : ∀ {l m : List α}, Distinct l → Distinct m →
     (∀ a, a ∈ l → ¬ a ∈ m) → Distinct (l ++ m)
   | [], _, _, distinct, _ => distinct
   | a :: l, _, ⟨fresh, distinct⟩, distinct', apart =>
-    ⟨fun mem => match mem_append_cases' mem with
+    ⟨fun mem => match mem_append_cases mem with
       | .inl inside => fresh inside
       | .inr outside => apart a (.head l) outside,
      distinct_append' distinct distinct' fun b mem => apart b (.tail a mem)⟩
@@ -643,11 +620,11 @@ theorem inr_inj : ∀ a b : P, (Sum.inr a : T ⊕ P) = Sum.inr b → a = b :=
   fun _ _ same => Sum.inr.inj same
 
 theorem inl_not_mem_inr {f : T} {l : List P} : ¬ (Sum.inl f : T ⊕ P) ∈ l.map Sum.inr :=
-  fun mem => match exists_of_mem_map mem with
+  fun mem => match preimage_of_mem_map mem with
   | ⟨_, _, same⟩ => nomatch same
 
 theorem inr_not_mem_inl {p : P} {l : List T} : ¬ (Sum.inr p : T ⊕ P) ∈ l.map Sum.inl :=
-  fun mem => match exists_of_mem_map mem with
+  fun mem => match preimage_of_mem_map mem with
   | ⟨_, _, same⟩ => nomatch same
 
 /-- What the transitions fired take from a relatum is the flow's uptake at a place, and nothing
@@ -698,13 +675,13 @@ theorem world_counted (distinct : Distinct ts) (every : ∀ f, f ∈ ts) (distin
   ⟨worldAlive N y σ M₀ ts ps, fun _ =>
     ⟨distinct_append' (distinct_map inl_inj distinct)
         (distinct_map inr_inj (keep_distinct distinct'))
-        fun _ inside outside => match exists_of_mem_map inside with
+        fun _ inside outside => match preimage_of_mem_map inside with
           | ⟨_, _, same⟩ => inl_not_mem_inr (Eq.subst (motive := fun x => x ∈ _) same.symm outside),
      fun x => match x with
-      | .inl f => ⟨fun _ => mem_append_left' _ (mem_map_of (every f)), fun _ => trivial⟩
-      | .inr p => ⟨fun positive => mem_append_right' _
+      | .inl f => ⟨fun _ => mem_append_of_left _ (mem_map_of (every f)), fun _ => trivial⟩
+      | .inr p => ⟨fun positive => mem_append_of_right _
             (mem_map_of (mem_keep.mpr ⟨every' p, positive⟩)),
-          fun mem => match mem_append_cases' mem with
+          fun mem => match mem_append_cases mem with
             | .inl inside => absurd inside inr_not_mem_inl
             | .inr outside => (mem_keep.mp (mem_of_map inr_inj outside)).2⟩⟩⟩
 
@@ -729,7 +706,7 @@ theorem world_total_eq [DecidableEq T] [DecidableEq P] (distinct : Distinct ps)
 theorem world_dissipative [DecidableEq T] [DecidableEq P] (distinct : Distinct ps)
     (every : ∀ p, p ∈ ps) (loses : ∀ t f, f ∈ σ t → N.Loses y ps f) :
     (N.world y σ M₀).Dissipative :=
-  fun cs t distinct' closed _ present => match exists_of_mem_map present with
+  fun cs t distinct' closed _ present => match preimage_of_mem_map present with
   | ⟨f, fired, same⟩ =>
     Eq.subst (motive := fun x => total cs ((N.world y σ M₀).flow.give t x) +
         sign (total cs ((N.world y σ M₀).flow.take t x)) ≤
@@ -745,7 +722,7 @@ theorem world_dissipative [DecidableEq T] [DecidableEq P] (distinct : Distinct p
 theorem world_enclosed (distinct : Distinct ps) (every : ∀ p, p ∈ ps) (t : Nat) :
     (N.world y σ M₀).flow.Enclosed t :=
   ⟨ps.map Sum.inr, distinct_map inr_inj distinct, fun _ present c out =>
-    match exists_of_mem_map present, c with
+    match preimage_of_mem_map present, c with
     | ⟨_, _, same⟩, .inl _ => Eq.subst (motive := fun x =>
         N.worldTake y x (.inl _) = 0 ∧ N.worldGive y x (.inl _) = 0) same ⟨rfl, rfl⟩
     | _, .inr p => absurd (mem_map_of (every p)) out⟩
@@ -805,10 +782,6 @@ theorem cycle_fires : cycle.Fires cycleRun cycleStart :=
 theorem bools_distinct : Distinct [true, false] :=
   ⟨fun mem => (match mem with | .tail _ no => nomatch no), ⟨fun no => (nomatch no), trivial⟩⟩
 
-theorem bools_every : ∀ b : Bool, b ∈ [true, false]
-  | true => .head _
-  | false => .tail _ (.head _)
-
 /-- Every premise of the rest law holds of the cycle but dissipation: it balances, has a census,
 is embodied, and every step is enclosed. -/
 theorem cycle_premises :
@@ -816,14 +789,14 @@ theorem cycle_premises :
       (cycle.world one cycleRun cycleStart).Counted ∧
       (cycle.world one cycleRun cycleStart).Embodied ∧
       ∀ t, (cycle.world one cycleRun cycleStart).flow.Enclosed t :=
-  ⟨cycle_fires.world_balanced one, world_counted bools_distinct bools_every bools_distinct bools_every,
-    world_embodied, world_enclosed bools_distinct bools_every⟩
+  ⟨cycle_fires.world_balanced one, world_counted bools_distinct ListTests.mem_bools bools_distinct ListTests.mem_bools,
+    world_embodied, world_enclosed bools_distinct ListTests.mem_bools⟩
 
 /-- The cycle conserves its token: its transitions do not lose, so its flow is not
 dissipative. -/
 theorem cycle_not_dissipative : ¬ (cycle.flow one cycleRun).Dissipative :=
   fun dissipative => Nat.not_succ_le_self 1
-    ((dissipative_iff bools_distinct bools_every).mp dissipative 0 true (.head _))
+    ((dissipative_iff bools_distinct ListTests.mem_bools).mp dissipative 0 true (.head _))
 
 /-- Place `true` gains or loses its token at every step. -/
 theorem cycle_flips (t : Nat) :

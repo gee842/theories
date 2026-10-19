@@ -1,0 +1,15 @@
+import Becoming.MoveRuns
+#check @Becoming.MoveRuns.coupled_formed
+#check @Becoming.MoveRuns.part_policy
+#check @Becoming.MoveRuns.rest_policy
+#check @Becoming.MoveRuns.both_one_move
+#check @Becoming.MoveRuns.rest_differs
+#check @Becoming.MoveRuns.formed_of_finer
+#check @Becoming.MoveRuns.formed_const_iff
+#check @Becoming.MoveRuns.formed_iff_singleValued
+#check @Becoming.MoveRuns.reading_le_run
+#check @Becoming.MoveRuns.formed_upto_iff
+#check @Becoming.MoveRuns.no_policy_upto_iff
+#check @Becoming.MoveRuns.ofMoves_formed_stage
+#check @Becoming.MoveRuns.still_driven
+#check @Becoming.MoveRuns.parity_neither_alone

@@ -356,7 +356,7 @@ instance shuttle_decided : ∀ t x, Decidable (shuttle.web.active t x) :=
   fun t x => Nat.decLt 0 (Shuttle.stands x t)
 
 theorem shuttle_finite : shuttle.Finite :=
-  ⟨[true, false], Shuttle.distinct, Shuttle.every⟩
+  ⟨[true, false], Shuttle.distinct, ListTests.mem_bools⟩
 
 theorem shuttle_arising : shuttle.ArisingRecurs :=
   fun N => match Shuttle.recurs true N with
@@ -415,7 +415,7 @@ instance selfDrawing_decided : ∀ t x, Decidable (selfDrawing.web.active t x) :
   fun t x => Nat.decLt 0 (Shuttle.stands x t)
 
 theorem selfDrawing_finite : selfDrawing.Finite :=
-  ⟨[true, false], Shuttle.distinct, Shuttle.every⟩
+  ⟨[true, false], Shuttle.distinct, ListTests.mem_bools⟩
 
 /-- The same activity as `shuttle`, so arising and ceasing recur, while not every event is
 living in the stepwise reading: the holder draws on its own standing as it hands it on,
@@ -511,7 +511,7 @@ def unbalanced : World :=
 theorem unbalanced_world :
     unbalanced.Finite ∧ unbalanced.ArisingRecurs ∧ unbalanced.Dissipative ∧
     unbalanced.Embodied ∧ ¬ unbalanced.Balanced :=
-  ⟨⟨[true, false], Shuttle.distinct, Shuttle.every⟩, shuttle_arising,
+  ⟨⟨[true, false], Shuttle.distinct, ListTests.mem_bools⟩, shuttle_arising,
    Flow.still_dissipative, fun x => (Shuttle.embodied x).1,
    fun balanced => Nat.zero_ne_one (balanced 0 true)⟩
 
@@ -973,12 +973,12 @@ theorem leaking_world :
     ¬ leaking.Balanced ∧
     ∀ t, Leaking.flow.ClosedAt [true, false] t ∧
       0 < total [true, false] (Leaking.flow.take t (Shuttle.holder t)) :=
-  ⟨⟨[true, false], Shuttle.distinct, Shuttle.every⟩, shuttle_arising,
+  ⟨⟨[true, false], Shuttle.distinct, ListTests.mem_bools⟩, shuttle_arising,
    fun cs _ _ _ _ _ => Nat.le_trans
      (Nat.le_of_eq ((congrArg (· + _) (total_zero cs)).trans (Nat.zero_add _))) (sign_le _),
    fun x => (Shuttle.embodied x).1,
    fun balanced => Nat.not_succ_le_zero 0 (Nat.le_of_eq (balanced 0 false)),
-   fun t => ⟨fun _ _ c outside => absurd (Shuttle.every c) outside, Leaking.takes t⟩⟩
+   fun t => ⟨fun _ _ c outside => absurd (ListTests.mem_bools c) outside, Leaking.takes t⟩⟩
 
 namespace Undecided
 

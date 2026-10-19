@@ -273,7 +273,7 @@ theorem guarded_within [DecidablePred guard] {s : S} {d : Nat → A} : ∀ {n : 
     cases prior : guardedHistory f guard s d (n + 1) with
     | none =>
       rw [prior] at moved
-      exact absurd moved none_ne_some
+      exact absurd moved ListTests.none_ne_some
     | some u =>
       rw [prior] at moved
       have earlier := guarded_within prior
@@ -307,7 +307,7 @@ guard by `n`.** -/
 theorem guarded_none_iff [DecidablePred guard] {s : S} {d : Nat → A} (start : guard s)
     {n : Nat} :
     guardedHistory f guard s d n = none ↔ ¬ ∀ k, k ≤ n → guard (history f s d k) :=
-  ⟨fun stopped within => none_ne_some (stopped.symm.trans (guarded_agrees within)),
+  ⟨fun stopped within => ListTests.none_ne_some (stopped.symm.trans (guarded_agrees within)),
    fun leaves => by
     cases going : guardedHistory f guard s d n with
     | none => rfl

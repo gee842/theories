@@ -275,7 +275,7 @@ theorem carrying_twoActs (distinct : Distinct cs) :
           (((ExchangeLaw.carrying cs part σ k).withAct part
             (ExchangeLaw.ofMoves (giving fun _ _ _ => 0))).levels present (fun _ => 0)) c = 0 :=
       cond_of_true hp _ _
-    Nat.le_of_eq (Propagation.add_congr
+    Nat.le_of_eq (Naturals.add_congr
       (gap_eq_zero_iff.mpr ((Propagation.cond_same (part h) 0).trans
         (Propagation.cond_same (part h) 0).symm))
       ((congrArg (gap _) give').trans ((congrArg (gap · 0) give).trans (gap_zero _))) |>.trans

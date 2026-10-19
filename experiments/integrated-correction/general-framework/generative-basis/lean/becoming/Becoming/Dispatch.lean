@@ -265,9 +265,6 @@ theorem acquired_execution (fuel : Nat) (root : Tree) (ticket : Ticket) (s : Sta
   · rw [← Nat.add_assoc, Nat.add_right_comm, rsv']
     exact sub_add_cancel within
 
-theorem two_mul (n : Nat) : 2 * n = n + n :=
-  (Nat.succ_mul 1 n).trans (congrArg (· + n) (Nat.one_mul n))
-
 /-- **Every inhabited tree is found with its count of nodes as fuel, and its ticket carried
 out**, given twice that count and three more in reserve and time. -/
 theorem discovery_then_dispatch (root : Tree) (s : State)
@@ -283,7 +280,7 @@ theorem discovery_then_dispatch (root : Tree) (s : State)
   obtain ⟨ticket, found, route⟩ := inhabited_discovered (nodes root) root (Nat.le_refl _) inhabits
   have depth := located_depth_le root ticket.1 ticket.2 route
   have fits : nodes root + (ticket.1.length + 1 + 3) ≤ 2 * nodes root + 3 := by
-    rw [two_mul, Nat.add_assoc]
+    rw [Naturals.two_mul, Nat.add_assoc]
     exact Nat.add_le_add_left (Nat.add_le_add_right depth 3) _
   obtain ⟨after, acquired, success, done, _, _⟩ := acquired_execution (nodes root) root ticket s
     found signed fresh (Nat.le_trans fits stocked)

@@ -111,7 +111,7 @@ theorem realizes_iff_of_draws (p q : JointPlan (List R)) (s : List R) (same : p.
 theorem realizes_reassociate (p q r : JointPlan (List R)) (s : List R) :
     JointPlan.Realizes joint (Supports support) s (.pair (.pair p q) r) ↔
       JointPlan.Realizes joint (Supports support) s (.pair p (.pair q r)) :=
-  realizes_iff_of_draws _ _ s (Joining.appended_assoc p.draws q.draws r.draws)
+  realizes_iff_of_draws _ _ s (ListTests.append_assoc p.draws q.draws r.draws)
 
 /-- **Plans drawing on reorderings of one list are realized at the same lists.** -/
 theorem realizes_iff_of_perm (p q : JointPlan (List R)) (s : List R)

@@ -1,6 +1,7 @@
 import Becoming.Inquiry
 import Becoming.Labelled
 import Becoming.Significance
+import Becoming.Extension
 
 /-!
 # Valuations read on frames
@@ -11,14 +12,16 @@ module holds their readings on frames and runs of a labelled process: formed rel
 on claims (`Valuation.relations`, `Valuation.Connected`); living significance on a frame (`LivingSignificance`,
 `Valuation.livingSignificance`) and the reason a sound inquiry
 gives every position with access (`universal_reason`); access as a realized claim (`AccessAt`);
-extension and comparison on a frame (`Extension`, `Comparison`, `LiftBetter`); the instances on
-conditions read along a run (`Conditions.valuation` and what follows) and on separate formations
-(`Separate`); the models showing each hypothesis needed (`Model`); and the paths of a web
-(`Web.paths`), with the continuation condition read on them and on conditions along a run
-(`Conditions.significant_of_unrestricted`).
+the instances on conditions read along a run (`Conditions.valuation` and what follows) and on
+separate formations (`Separate`); the models showing each hypothesis needed (`Model`); and the
+continuation condition read on the paths of a web and on conditions along a run
+(`Web.paths_livingSignificance_comparison`, `Conditions.significant_of_unrestricted`).
+Extension and comparison on a frame (`Extension`, `Comparison`, `LiftBetter`) and the paths of a
+web (`Web.paths`) take no valuation and no condition; they are stated in `Becoming.Extension`.
 
 Every declaration moved here unchanged, with its name, from `Becoming.Metaethics` or
-`Becoming.Significance` (board item W). Every declaration has an empty axiom report.
+`Becoming.Significance` (board item W); those of `Becoming.Extension` moved on unchanged in R31.
+Every declaration has an empty axiom report.
 -/
 
 /-! ## Valuations read on frames (moved from `Becoming.Metaethics`) -/
@@ -101,83 +104,6 @@ theorem universal_reason {R : Type} {k : Nat} (F : Frame S A C) (V : Valuation P
 def AccessAt {R : Type} (F : Frame S A C) (claim : Pos → R → C) (s : S) (p : Pos) (r : R) :
     Prop :=
   F.realized s (claim p r)
-
-/-- A generative extension: the second configuration keeps every claim of the first
-and realizes some living claim the first does not. -/
-def Extension (F : Frame S A C) (living : C → Prop) (s t : S) : Prop :=
-  (∀ c, F.realized s c → F.realized t c) ∧
-    ∃ c, living c ∧ F.realized t c ∧ ¬ F.realized s c
-
-/-- C on the frame. `Better s t` says that `t` is strictly better. -/
-def Comparison (F : Frame S A C) (living : C → Prop) (Better : S → S → Prop) : Prop :=
-  ∀ s t, Extension F living s t → Better s t
-
-/-- **What C needs to see.** Where a comparison is read off a description of configurations and
-compares no description with itself, C makes the description tell every extension apart from its
-base: a description identifying a configuration with an extension of it supports no comparison
-satisfying C. -/
-theorem Comparison.separates {F : Frame S A C} {living : C → Prop} {D : Type} {π : S → D}
-    {compare : D → D → Prop} (irreflexive : ∀ d, ¬ compare d d)
-    (comparison : Comparison F living fun s t => compare (π s) (π t)) {s t : S}
-    (extension : Extension F living s t) : π s ≠ π t :=
-  fun same => irreflexive (π t) (Eq.subst (motive := fun d => compare d (π t)) same
-    (comparison s t extension))
-
-/-- No configuration extends itself. -/
-theorem Extension.irrefl {F : Frame S A C} {living : C → Prop} {s : S} :
-    ¬ Extension F living s s :=
-  fun ⟨_, _, _, now, before⟩ => before now
-
-/-- Extensions compose. -/
-theorem Extension.trans {F : Frame S A C} {living : C → Prop} {s t u : S}
-    (first : Extension F living s t) (second : Extension F living t u) : Extension F living s u :=
-  ⟨fun c held => second.1 c (first.1 c held),
-    let ⟨c, live, now, before⟩ := second.2
-    ⟨c, live, now, fun earlier => before (first.1 c earlier)⟩⟩
-
-/-- **A natural-number score satisfying C climbs.** Along an endless chain of extensions, a
-natural-number score whose strict order satisfies C rises by at least one at every link. -/
-theorem Comparison.climbs {F : Frame S A C} {living : C → Prop} {score : S → Nat}
-    (comparison : Comparison F living fun s t => score s < score t) {next : Nat → S}
-    (chain : ∀ i, Extension F living (next i) (next (i + 1))) :
-    ∀ m, score (next 0) + m ≤ score (next m)
-  | 0 => Nat.le_refl _
-  | m + 1 => Nat.le_trans (Nat.succ_le_succ (Comparison.climbs comparison chain m))
-      (comparison _ _ (chain m))
-
-/-- **No configuration stays above an endless chain of extensions.** A natural-number score
-satisfying C ranks some link of the chain above any configuration whatever: the link
-`score s + 1` steps along. The force is the unit step of the natural numbers: a bounded score
-(with values `k / (k + 1)`, say) can satisfy C without this. -/
-theorem Comparison.outgrows {F : Frame S A C} {living : C → Prop} {score : S → Nat}
-    (comparison : Comparison F living fun s t => score s < score t) {next : Nat → S}
-    (chain : ∀ i, Extension F living (next i) (next (i + 1))) (s : S) :
-    score s < score (next (score s + 1)) :=
-  Nat.le_trans (Nat.le_add_left (score s + 1) (score (next 0)))
-    (Comparison.climbs comparison chain (score s + 1))
-
-/-- L, conservative default: every outcome of `a` is better than every outcome of `b`. -/
-def LiftBetter (F : Frame S A C) (better : S → S → Prop) (s : S) (a b : A) : Prop :=
-  ∀ t, F.P.step s a t → ∀ t', F.P.step s b t' → better t t'
-
-theorem LiftBetter.trans {F : Frame S A C} {better : S → S → Prop} {s : S} {a b c : A}
-    (transitive : ∀ {x y z}, better x y → better y z → better x z)
-    (ab : LiftBetter F better s a b) (bc : LiftBetter F better s b c)
-    (live : Enabled F.P s b) : LiftBetter F better s a c :=
-  fun t ht t' ht' => match live with
-    | ⟨m, hm⟩ => transitive (ab t ht m hm) (bc m hm t' ht')
-
-theorem LiftBetter.irrefl {F : Frame S A C} {better : S → S → Prop} {s : S} {a : A}
-    (irreflexive : ∀ x, ¬ better x x) (live : Enabled F.P s a) : ¬ LiftBetter F better s a a :=
-  fun lifted => match live with
-    | ⟨t, ht⟩ => irreflexive t (lifted t ht t ht)
-
-/-- The default implies the weaker "some outcome beats some outcome" when both act. -/
-theorem LiftBetter.some {F : Frame S A C} {better : S → S → Prop} {s : S} {a b : A}
-    (lifted : LiftBetter F better s a b) (liveA : Enabled F.P s a) (liveB : Enabled F.P s b) :
-    ∃ t t', F.P.step s a t ∧ F.P.step s b t' ∧ better t t' :=
-  match liveA, liveB with
-  | ⟨t, ht⟩, ⟨t', ht'⟩ => ⟨t, t', ht, ht', lifted t ht t' ht'⟩
 
 section Reading
 
@@ -413,11 +339,6 @@ theorem Conditions.significant_of_unrestricted {S A Cond : Type} {P : Process S 
     (K.valuation r own fun p e => sig p e.2 e.1).Significant :=
   fun p e _ => unrestricted (p, e.2, e.1)
 
-/-- The frame of a web's level paths: a claim is a formation at a step, realized along a level
-path when the levels admit it there. Nothing steps. -/
-def Web.paths (W : Web F C) : Frame (Nat → C → Nat) Unit (F × Nat) :=
-  ⟨⟨fun _ _ _ => False⟩, fun l e => W.Admits (l e.2) e.2 e.1⟩
-
 /-- On level paths, under the continuation condition, living significance holds with unindexed significance for every reading of
 `living`, and so does C, with “better” read as retaining and adding what has significance. -/
 theorem Web.paths_livingSignificance_comparison (W : Web F C) {sig : Pos → Nat → F → Prop}
@@ -428,21 +349,5 @@ theorem Web.paths_livingSignificance_comparison (W : Web F C) {sig : Pos → Nat
    fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
      ⟨fun t f _ admits => keeps (f, t) admits,
       ⟨e.2, e.1, unrestricted (p, e.2, e.1), realized, fresh⟩⟩⟩
-
-/-- C with no axiom. On level paths, an extension in which every claim counts as living is exactly
-a widening. -/
-theorem Web.paths_extension_iff_widens (W : Web F C) {l l' : Nat → C → Nat} :
-    Extension W.paths (fun _ => True) l' l ↔ W.Widens l l' :=
-  ⟨fun ⟨keeps, e, _, realized, fresh⟩ => ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩,
-   fun ⟨includes, t, f, admits, not⟩ =>
-    ⟨fun e admits => includes e.2 e.1 admits, (f, t), trivial, admits, not⟩⟩
-
-/-- C with no axiom, by definition. On level paths, C holds for every reading of `living` with
-“better” read as widening what can form. The proof unfolds `Comparison` to `Extension`: that
-widening is better is supplied by the reading of “better”, not shown here. -/
-theorem Web.paths_comparison_widens (W : Web F C) (living : F × Nat → Prop) :
-    Comparison W.paths living fun l' l => W.Widens l l' :=
-  fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
-    ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩
 
 end Becoming

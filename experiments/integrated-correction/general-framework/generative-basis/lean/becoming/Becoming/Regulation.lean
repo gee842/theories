@@ -89,11 +89,11 @@ namespace Regulation
 
 /-- Where `m ≤ x`, the gap of `x` from `m` is what `x` has beyond `m`. -/
 theorem gap_of_le {x m : Nat} (le : m ≤ x) : gap x m = x - m :=
-  (congrArg ((x - m) + ·) (sub_zero_of_le le)).trans (Nat.add_zero _)
+  (congrArg ((x - m) + ·) (sub_eq_zero_of_le le)).trans (Nat.add_zero _)
 
 /-- Where `x ≤ m`, the gap of `x` from `m` is what `x` lacks of `m`. -/
 theorem gap_of_ge {x m : Nat} (le : x ≤ m) : gap x m = m - x :=
-  (congrArg (· + (m - x)) (sub_zero_of_le le)).trans (Nat.zero_add _)
+  (congrArg (· + (m - x)) (sub_eq_zero_of_le le)).trans (Nat.zero_add _)
 
 /-- `y` lies between `m` and `x`: on the side of `m` where `x` is, and no farther from `m` than
 `x`. At `x = m`, `y` is `m`. -/
@@ -132,7 +132,7 @@ theorem within_iff_between {x y k g m : Nat} (balance : y + k = x + g) :
   ⟨fun ⟨taking, giving⟩ =>
     ⟨fun mx =>
       have giving' : g ≤ k :=
-        Nat.le_trans giving (Nat.le_of_eq ((congrArg (k + ·) (sub_zero_of_le mx)).trans
+        Nat.le_trans giving (Nat.le_of_eq ((congrArg (k + ·) (sub_eq_zero_of_le mx)).trans
           (Nat.add_zero k)))
       ⟨le_of_add_le_add_right k
         (calc m + k ≤ m + (g + (x - m)) := Nat.add_le_add_left taking m
@@ -144,7 +144,7 @@ theorem within_iff_between {x y k g m : Nat} (balance : y + k = x + g) :
         (Nat.le_trans (Nat.le_of_eq balance) (Nat.add_le_add_left giving' x))⟩,
      fun xm =>
       have taking' : k ≤ g :=
-        Nat.le_trans taking (Nat.le_of_eq ((congrArg (g + ·) (sub_zero_of_le xm)).trans
+        Nat.le_trans taking (Nat.le_of_eq ((congrArg (g + ·) (sub_eq_zero_of_le xm)).trans
           (Nat.add_zero g)))
       ⟨le_of_add_le_add_right g
         (Nat.le_trans (Nat.le_of_eq balance.symm) (Nat.add_le_add_left taking' y)),
@@ -586,14 +586,14 @@ theorem sub_eq_of_add_eq {x y p q : Nat} (same : y + q = x + p) : x - y = q - p 
       (calc y + (q - p) + p = y + (p + (q - p)) := by rw [Nat.add_assoc, Nat.add_comm (q - p) p]
         _ = y + q := congrArg (y + ·) (add_sub_of_le pq)
         _ = x + p := same)
-    (congrArg (· - y) y_eq.symm).trans (add_sub_self_left y (q - p))
+    (congrArg (· - y) y_eq.symm).trans (Naturals.add_sub_cancel_left y (q - p))
   | .inr qp =>
     have x_eq : x + (p - q) = y := add_right_cancel q
       (calc x + (p - q) + q = x + (q + (p - q)) := by rw [Nat.add_assoc, Nat.add_comm (p - q) q]
         _ = x + p := congrArg (x + ·) (add_sub_of_le qp)
         _ = y + q := same.symm)
-    (sub_zero_of_le (Nat.le_trans (Nat.le_add_right x (p - q)) (Nat.le_of_eq x_eq))).trans
-      (sub_zero_of_le qp).symm
+    (sub_eq_zero_of_le (Nat.le_trans (Nat.le_add_right x (p - q)) (Nat.le_of_eq x_eq))).trans
+      (sub_eq_zero_of_le qp).symm
 
 /-! ### Rules that read late -/
 
@@ -822,7 +822,7 @@ theorem course_balances_of_pos {ρ : Rule} {δ : Record} {x₀ t : Nat}
   course_balances (match Nat.le_total ((ρ δ t).2 + (δ t).2)
       (course ρ δ x₀ t + ((ρ δ t).1 + (δ t).1)) with
     | .inl room => room
-    | .inr over => absurd ((sub_zero_of_le over ▸ pos : 0 < 0)) (Nat.lt_irrefl 0))
+    | .inr over => absurd ((sub_eq_zero_of_le over ▸ pos : 0 < 0)) (Nat.lt_irrefl 0))
 
 /-- **No rule reading `ℓ` steps late keeps a band narrower than `2 (ℓ + 1) d`.** For every rule
 reading `ℓ` late and every start, if the course stays within `[a, b]` at every step under every
@@ -851,8 +851,8 @@ def reversal (e : Nat × Nat) : Nat × Nat := (e.2 - e.1, e.1 - e.2)
 theorem reversal_evens (e : Nat × Nat) : (reversal e).1 + e.1 = (reversal e).2 + e.2 :=
   match Nat.le_total e.1 e.2 with
   | .inl le => (Nat.add_comm _ _).trans ((add_sub_of_le le).trans
-      ((Nat.zero_add e.2).symm.trans (congrArg (· + e.2) (sub_zero_of_le le).symm)))
-  | .inr le => (congrArg (· + e.1) (sub_zero_of_le le)).trans ((Nat.zero_add e.1).trans
+      ((Nat.zero_add e.2).symm.trans (congrArg (· + e.2) (sub_eq_zero_of_le le).symm)))
+  | .inr le => (congrArg (· + e.1) (sub_eq_zero_of_le le)).trans ((Nat.zero_add e.1).trans
       ((add_sub_of_le le).symm.trans (Nat.add_comm _ _)))
 
 /-- **The late return.** At each step after the first `ℓ + 1`, move back what the rest exchanged
@@ -867,7 +867,7 @@ theorem lateReturn_late (ℓ n : Nat) (δ : Record) :
     lateReturn ℓ δ (n + (ℓ + 1)) = reversal (δ n) :=
   (if_pos (Nat.lt_of_lt_of_le (Nat.lt_succ_self ℓ) (Nat.le_add_left (ℓ + 1) n))).trans
     (congrArg (fun s => reversal (δ s))
-      ((congrArg (· - (ℓ + 1)) (Nat.add_comm n (ℓ + 1))).trans (add_sub_self_left (ℓ + 1) n)))
+      ((congrArg (· - (ℓ + 1)) (Nat.add_comm n (ℓ + 1))).trans (Naturals.add_sub_cancel_left (ℓ + 1) n)))
 
 /-- The late return reads `ℓ` steps late. -/
 theorem lateReturn_readsLate (ℓ : Nat) : ReadsLate ℓ (lateReturn ℓ) := fun δ δ' t agree =>
@@ -1234,11 +1234,6 @@ theorem undershoot (relays : L.RelaysLate W c ℓ a b M) (balances : ∀ t, L.Ba
   pull_ramp relays balances band above ℓ (Nat.le_refl ℓ)
 
 /-! ### Arithmetic for the relay -/
-
-/-- `(i + j) * M = i * M + j * M`, with an empty axiom report. -/
-theorem add_mul' (i j M : Nat) : (i + j) * M = i * M + j * M :=
-  (Nat.mul_comm (i + j) M).trans ((Nat.left_distrib M i j).trans
-    ((congrArg (· + M * j) (Nat.mul_comm M i)).trans (congrArg (i * M + ·) (Nat.mul_comm M j))))
 
 /-- Up to `n`, a decidable property holds nowhere, or there is a first place where it holds. -/
 theorem first_or_nowhere {P : Nat → Prop} [DecidablePred P] :
@@ -1700,7 +1695,7 @@ theorem held_crosses (relays : L.RelaysLate W c ℓ a b M) (balances : ∀ t, L.
         (Nat.add_lt_add_right (ramp k (Nat.lt_succ_self k)) M)
     · rw [entry]
       exact Nat.lt_of_lt_of_le beyond (Nat.le_of_eq
-        ((congrArg (x₀ + ·) ((add_mul' ℓ (k + 1) M).trans (Nat.add_comm _ _))).trans
+        ((congrArg (x₀ + ·) ((add_mul_split ℓ (k + 1) M).trans (Nat.add_comm _ _))).trans
           (Nat.add_assoc _ _ _).symm))
 
 /-- **Past the threshold, a start held just below the band crosses without end.** With the level
@@ -1754,7 +1749,7 @@ theorem held_below_settles (relays : L.RelaysLate W c ℓ a b M)
   | succ k =>
     have within : x₀ + (ℓ + (k + 1)) * M ≤ b := by
       have sum : x₀ + (ℓ + (k + 1)) * M = x₀ + k * M + (ℓ * M + M) := by
-        rw [add_mul', Nat.succ_mul]
+        rw [add_mul_split, Nat.succ_mul]
         conv => lhs; simp only [Nat.add_comm, Nat.add_left_comm, Nat.add_assoc]
         conv => rhs; simp only [Nat.add_comm, Nat.add_left_comm, Nat.add_assoc]
       have sm : a + (ℓ * M + M) = a + (ℓ + 1) * M := congrArg (a + ·) (Nat.succ_mul ℓ M).symm
@@ -1889,7 +1884,7 @@ theorem relayFlow_late (ℓ a b M x₀ t : Nat) :
     (relayFlow ℓ a b M x₀).given (t + ℓ) () = (relay a b M (relayLevel ℓ a b M x₀ t)).1 ∧
       (relayFlow ℓ a b M x₀).taken (t + ℓ) () = (relay a b M (relayLevel ℓ a b M x₀ t)).2 := by
   have back : t + ℓ - ℓ = t :=
-    (congrArg (· - ℓ) (Nat.add_comm t ℓ)).trans (add_sub_self_left ℓ t)
+    (congrArg (· - ℓ) (Nat.add_comm t ℓ)).trans (Naturals.add_sub_cancel_left ℓ t)
   constructor
   · show (if ℓ ≤ t + ℓ then (relay a b M (relayLevel ℓ a b M x₀ (t + ℓ - ℓ))).1 else 0) + 0 = _
     rw [if_pos (Nat.le_add_left ℓ t), back]

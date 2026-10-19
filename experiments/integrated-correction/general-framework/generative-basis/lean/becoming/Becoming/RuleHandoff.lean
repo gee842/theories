@@ -139,14 +139,6 @@ def revision : List Event := [.propose 5 .timedTwo, .adopt fourVote]
 
 /-! ## Helpers on Booleans, lists and partial steps -/
 
-theorem and_left : ∀ {a b : Bool}, (a && b) = true → a = true
-  | true, _, _ => rfl
-  | false, _, h => nomatch h
-
-theorem and_right : ∀ {a b : Bool}, (a && b) = true → b = true
-  | true, _, h => h
-  | false, _, h => nomatch h
-
 theorem some_of_ite {β : Type} {c : Prop} {d : Decidable c} {x t : β} :
     (@ite _ c d (some x) none) = some t → x = t :=
   match d with
@@ -182,7 +174,7 @@ theorem admitted_requires_review {s t : State} {c : Nat} {b : Ballot}
     s.reviews.any (fun e => e.2 == c) = true ∧ governance s b = true := by
   rw [step] at h
   have cond := cond_of_ite h
-  exact ⟨and_right (and_left cond), and_right cond⟩
+  exact ⟨ListTests.and_right (ListTests.and_left cond), ListTests.and_right cond⟩
 
 theorem adoption_uses_recorded_proposal {s t : State} {b : Ballot}
     (h : step s (.adopt b) = some t) :
@@ -427,7 +419,7 @@ theorem successor_revision_trace :
   trace_iff_run.mpr successor_can_revise_inherited_rule
 
 theorem low_support_infeasible : ¬ Feasible process formed [.propose 5 .timedTwo, .adopt twoVote] :=
-  fun ⟨_, path⟩ => none_ne_some (low_support_cannot_revise.symm.trans (trace_iff_run.mp path))
+  fun ⟨_, path⟩ => ListTests.none_ne_some (low_support_cannot_revise.symm.trans (trace_iff_run.mp path))
 
 theorem review_step_keeps_roster {t : State} (step : process.step initial (.review 0 1) t) :
     t.roster = [0] :=
@@ -435,7 +427,7 @@ theorem review_step_keeps_roster {t : State} (step : process.step initial (.revi
     review_alone_does_not_confer_office)
 
 theorem entry_without_review_disabled : ¬ Enabled process initial (.enroll 1 allVote) :=
-  fun ⟨_, step⟩ => none_ne_some (office_without_review_fails.symm.trans step)
+  fun ⟨_, step⟩ => ListTests.none_ne_some (office_without_review_fails.symm.trans step)
 
 theorem proposal_step_keeps_rule {t : State} (step : process.step formed (.propose 5 .timedTwo) t) :
     t.rule = .majority :=
@@ -478,7 +470,7 @@ theorem branch_revises {t : State} (step : process.step formed (.handoff [0,1,2,
 theorem integrate_enabled_iff {s : State} {b : Ballot} :
     Enabled process s (.integrate b) ↔ technical s b = true :=
   ⟨fun ⟨u, step⟩ => Decidable.byContradiction fun fails =>
-      none_ne_some ((if_neg fails).symm.trans
+      ListTests.none_ne_some ((if_neg fails).symm.trans
         (step : (if technical s b = true then some { s with accepted := s.accepted + 1 }
           else none) = some u)),
    fun passes => ⟨_, if_pos passes⟩⟩
@@ -511,7 +503,7 @@ theorem handoff_without_participation {t : State} (step : process.step revised (
   Eq.subst (motive := fun x => x.rule = .timedTwo ∧ ¬ Enabled process x (.integrate twoVote))
     (handoff_step_eq step).symm
     ⟨copied_rule_without_participation_fails.1,
-     fun ⟨_, next⟩ => none_ne_some (copied_rule_without_participation_fails.2.symm.trans next)⟩
+     fun ⟨_, next⟩ => ListTests.none_ne_some (copied_rule_without_participation_fails.2.symm.trans next)⟩
 
 theorem integration_without_revision {t : State} (handed : process.step revised (.handoff [0,1]) t) :
     Enabled process t (.integrate twoVote) ∧
@@ -523,7 +515,7 @@ theorem integration_without_revision {t : State} (handed : process.step revised 
     ⟨match found : step (handoff revised [0,1]) (.integrate twoVote) with
       | some u => ⟨u, found⟩
       | none => absurd found enabling_one_operation_need_not_enable_revision.1,
-     fun ⟨_, path⟩ => none_ne_some (enabling_one_operation_need_not_enable_revision.2.symm.trans
+     fun ⟨_, path⟩ => ListTests.none_ne_some (enabling_one_operation_need_not_enable_revision.2.symm.trans
        (trace_iff_run.mp path))⟩
 
 theorem entry_step_requires {s t : State} {c : Nat} {b : Ballot}
@@ -559,12 +551,6 @@ theorem majority_integration_extends {s : State} {b : Ballot} (majority : s.rule
     Enabled process { s with rule := .timedTwo } (.integrate b) :=
   integrate_enabled_iff.mpr
     (majority_acceptance_survives_extension s b majority (integrate_enabled_iff.mp enabled))
-
-theorem bool_eq_of_iff : ∀ {x y : Bool}, (x = true ↔ y = true) → x = y
-  | true, true, _ => rfl
-  | false, false, _ => rfl
-  | true, false, same => (same.mp rfl).symm
-  | false, true, same => same.mpr rfl
 
 theorem counts_no_integration_reading :
     ¬ ∃ f : Nat × Nat × Nat → Bool,

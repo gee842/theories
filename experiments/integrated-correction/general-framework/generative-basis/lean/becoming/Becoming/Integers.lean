@@ -1,3 +1,4 @@
+import Becoming.Prelude
 /-!
 # Integers: the arithmetic of the core's integer models, constructively
 
@@ -26,11 +27,6 @@ namespace Becoming
 namespace Integers
 
 /-! ## Naturals -/
-
-theorem nat_add_right_cancel {a b : Nat} : ∀ {k : Nat}, a + k = b + k → a = b
-  | 0, same => same
-  | k + 1, same => nat_add_right_cancel (k := k)
-      (Nat.succ.inj (same : Nat.succ (a + k) = Nat.succ (b + k)))
 
 /-- Where `n - m` is `0`, `m` is `n` and the rest. -/
 theorem nat_sub_add_of_sub_zero : ∀ (m n : Nat), n - m = 0 → m - n + n = m
@@ -87,7 +83,7 @@ theorem Same.trans {x y z : Nat × Nat} (xy : Same x y) (yz : Same y z) : Same x
       _ = z.1 + x.2 + (y.1 + y.2) := by
           rw [nat_add_add_add_comm y.1 x.2 z.1 y.2, nat_add_add_add_comm z.1 x.2 y.1 y.2,
             Nat.add_comm y.1 z.1]
-  nat_add_right_cancel both
+  Naturals.add_right_cancel both
 
 theorem Same.add {x x' y y' : Nat × Nat} (xs : Same x x') (ys : Same y y') :
     Same (plus x y) (plus x' y') :=

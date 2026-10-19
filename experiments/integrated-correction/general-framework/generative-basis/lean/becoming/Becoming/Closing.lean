@@ -76,11 +76,6 @@ variable {F C : Type}
 
 namespace Closing
 
-theorem ble_false_of_lt : ∀ {a b : Nat}, b < a → Nat.ble a b = false
-  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
-  | _ + 1, 0, _ => rfl
-  | a + 1, b + 1, lt => @ble_false_of_lt a b (Nat.lt_of_succ_lt_succ lt)
-
 end Closing
 
 /-! ## Loops formed by a step -/
@@ -96,7 +91,7 @@ def strengthsBefore (T : Nat) (k : Nat → F → C → Nat → C → Nat) : Nat 
 
 theorem strengthsBefore_before {T u : Nat} (lt : u < T) (h : F) (c : C) (s : Nat) (d : C) :
     strengthsBefore T k u h c s d = k u h c s d :=
-  congrArg (fun b => bif b then 0 else k u h c s d) (Closing.ble_false_of_lt lt)
+  congrArg (fun b => bif b then 0 else k u h c s d) (Naturals.ble_false_of_lt lt)
 
 theorem strengthsBefore_from {T u : Nat} (le : T ≤ u) (h : F) (c : C) (s : Nat) (d : C) :
     strengthsBefore T k u h c s d = 0 :=
@@ -217,9 +212,9 @@ theorem Closing.join_from {v w : Nat → C} {i : Nat} (meet : v i = w 0) :
   | 0 => (Closing.join_below (Nat.le_refl i)).trans meet
   | r + 1 =>
     (congrArg (fun b => bif b then v (i + (r + 1)) else w (i + (r + 1) - i))
-      (Closing.ble_false_of_lt (Nat.lt_of_lt_of_le (Nat.lt_succ_self i)
+      (Naturals.ble_false_of_lt (Nat.lt_of_lt_of_le (Nat.lt_succ_self i)
         (Nat.add_le_add_left (Nat.succ_pos r) i)))).trans
-      (congrArg w (Propagation.add_sub_self_left i (r + 1)))
+      (congrArg w (Naturals.add_sub_cancel_left i (r + 1)))
 
 /-- **Chains join.** A chain ending where another starts, followed by it. -/
 theorem Coupled.append {v w : Nat → C} {i j : Nat} (cv : Coupled cs part k present v i)
@@ -365,7 +360,7 @@ theorem carried_before {T : Nat} :
     | .inl before => carried_before t (Nat.le_of_succ_le le) s before c
     | .inr now => by
       subst now
-      exact (carried_succ t c).trans ((Propagation.add_congr
+      exact (carried_succ t c).trans ((Naturals.add_congr
         (carried_before t (Nat.le_of_succ_le le) t (Nat.le_refl t) c)
         (total_congr (fun h =>
           (carriedGive_congr_strength fun s d => strengthsBefore_before le h c s d).trans
@@ -413,7 +408,7 @@ def amount (T D : Nat) : Nat → Nat :=
 theorem strengths_early {T u : Nat} (lt : u < T) (h c : Unit) (s : Nat) (d : Unit) :
     strengths T u h c s d = Loops.SelfLoop.strengths 0 u h c s d :=
   (congrArg (fun b => bif b then Loops.SelfLoop.strengths 1 u h c s d else 0)
-    (Closing.ble_false_of_lt lt)).trans (Propagation.cond_same (Nat.beq s u) 0).symm
+    (Naturals.ble_false_of_lt lt)).trans (Propagation.cond_same (Nat.beq s u) 0).symm
 
 theorem strengths_late {T u : Nat} (le : T ≤ u) (h c : Unit) (s : Nat) (d : Unit) :
     strengths T u h c s d = Loops.SelfLoop.strengths 1 u h c s d :=
@@ -440,7 +435,7 @@ theorem amount_before {T D : Nat} : ∀ t, t ≤ T → amount T D t = D
 theorem amount_after (T D : Nat) : ∀ r, amount T D (T + r) = D * 2 ^ r
   | 0 => (amount_before T (Nat.le_refl T)).trans (Nat.mul_one D).symm
   | r + 1 => (amount_succ_late (Nat.le_add_right T r)).trans
-      ((Propagation.add_congr (amount_after T D r) (amount_after T D r)).trans
+      ((Naturals.add_congr (amount_after T D r) (amount_after T D r)).trans
         ((Nat.left_distrib D _ _).symm.trans (congrArg (D * ·) (Loops.two_pow_succ r).symm)))
 
 /-- **It forms at step `T`.** -/
@@ -448,7 +443,7 @@ theorem forms (T : Nat) :
     OnLoop [()] (fun _ => false) (strengthsBefore (T + 1) (strengths T)) (fun _ => [()]) () :=
   responds_to_own_level ⟨(), .head _, rfl, Nat.le_refl T, .head _,
     Nat.lt_of_lt_of_le (Nat.succ_pos 0) (Nat.le_of_eq
-      ((congrArg (fun b => bif b then (1 : Nat) else 0) (Loops.beq_self T)).symm.trans
+      ((congrArg (fun b => bif b then (1 : Nat) else 0) (beq_self T)).symm.trans
         (strengths_late (Nat.le_refl T) () () T ()).symm))⟩
 
 /-- **It is not formed before step `T`.** -/
@@ -531,7 +526,7 @@ theorem formedCourse_eq_carried (reads : ReadsBefore κ) :
       | inl before => exact ih s before c
       | inr now =>
         subst now
-        exact (formedCourse_succ reads t c).trans ((Propagation.add_congr (ih t (Nat.le_refl t) c)
+        exact (formedCourse_succ reads t c).trans ((Naturals.add_congr (ih t (Nat.le_refl t) c)
           (total_congr (fun _ => carriedGive_congr fun s d sle _ _ _ => ih s sle d) _)).trans
           (carried_succ t c).symm)
   fun t c => upto t t (Nat.le_refl t) c
@@ -581,7 +576,7 @@ theorem level_succ (θ t : Nat) :
             ((Nat.add_zero _).trans (Nat.zero_mul _)))).trans
         ((Nat.add_zero _).trans (congrArg (fun b =>
           (bif b then (bif Nat.ble θ (level θ t) then 1 else 0) else 0) * level θ t)
-          (Loops.beq_self t)))))))
+          (beq_self t)))))))
 
 /-- **Up to the threshold the level rises by one at each step.** -/
 theorem level_before (θ : Nat) : ∀ t, t ≤ θ → level θ t = t
@@ -591,7 +586,7 @@ theorem level_before (θ : Nat) : ∀ t, t ≤ θ → level θ t = t
     (level_succ θ t).trans
       ((congrArg (fun x => x + (1 + ((bif Nat.ble θ x then 1 else 0) * x))) below).trans
         (congrArg (fun b => t + (1 + ((bif b then 1 else 0) * t)))
-          (Closing.ble_false_of_lt le) |>.trans
+          (Naturals.ble_false_of_lt le) |>.trans
           (congrArg (fun x => t + (1 + x)) (Nat.zero_mul t))))
 
 /-- The level never falls. -/
@@ -614,7 +609,7 @@ theorem level_after (θ : Nat) : ∀ r, level θ (θ + r) + 1 = (θ + 1) * 2 ^ r
     (congrArg (· + 1) grown).trans
       ((congrArg (fun x => level θ (θ + r) + x + 1) (Nat.add_comm 1 (level θ (θ + r)))).trans
         ((congrArg (· + 1) (Nat.add_comm (level θ (θ + r)) (level θ (θ + r) + 1))).trans
-          ((Propagation.add_congr (level_after θ r) (level_after θ r)).trans
+          ((Naturals.add_congr (level_after θ r) (level_after θ r)).trans
             ((Nat.left_distrib (θ + 1) _ _).symm.trans
               (congrArg ((θ + 1) * ·) (Loops.two_pow_succ r).symm)))))
 
@@ -626,7 +621,7 @@ theorem not_formed (θ : Nat) :
     | ⟨u, s, lt, _, _, _, _, _, positive⟩ =>
       have reached : Nat.ble θ (level θ u) = false :=
         (congrArg (fun x => Nat.ble θ x) (level_before θ u (Nat.le_of_lt lt))).trans
-          (Closing.ble_false_of_lt lt)
+          (Naturals.ble_false_of_lt lt)
       have zero : ∀ h, strengths θ u h () s () = 0 := by
         intro h
         show (bif Nat.beq s u then (bif Nat.ble θ (level θ u) then 1 else 0) else 0) = 0
@@ -644,7 +639,7 @@ theorem forms (θ : Nat) :
           ((Nat.ble_eq_true_of_le (Nat.le_refl θ)).symm.trans
             (congrArg (Nat.ble θ) (level_before θ θ (Nat.le_refl θ)).symm))).trans
         ((congrArg (fun b => bif b then (bif Nat.ble θ (level θ θ) then 1 else 0) else 0)
-          (Loops.beq_self θ)).symm.trans (strengths_eq θ θ false () θ ()).symm)))⟩
+          (beq_self θ)).symm.trans (strengths_eq θ θ false () θ ()).symm)))⟩
 
 /-- **Up to the threshold the course does not show it.** For every threshold beyond `θ`, the level
 is the same at every step up to `θ`. -/

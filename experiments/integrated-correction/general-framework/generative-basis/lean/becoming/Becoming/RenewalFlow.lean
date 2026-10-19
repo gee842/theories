@@ -55,12 +55,6 @@ theorem add_sub_le : ∀ a c d : Nat, a + c - d ≤ a + (c - d)
   | a, c + 1, d + 1 => Nat.le_trans (Nat.le_of_eq (Nat.succ_sub_succ (a + c) d))
       (Nat.le_trans (add_sub_le a c d) (Nat.le_of_eq (congrArg (a + ·) (Nat.succ_sub_succ c d).symm)))
 
-/-- Where nothing remains after subtracting, nothing does. -/
-theorem sub_eq_zero_of_le : ∀ {c d : Nat}, c ≤ d → c - d = 0
-  | 0, d, _ => Nat.zero_sub d
-  | _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
-  | c + 1, d + 1, le => (Nat.succ_sub_succ c d).trans (sub_eq_zero_of_le (Nat.le_of_succ_le_succ le))
-
 /-- What exceeds leaves a positive remainder. -/
 theorem sub_pos_of_lt : ∀ {d c : Nat}, d < c → 0 < c - d
   | _, 0, less => absurd less (Nat.not_lt_zero _)

@@ -981,10 +981,6 @@ namespace Joining
 
 variable {F : Type u} {G : Type v} {K : Type u'} {K' : Type v'}
 
-theorem appended_assoc : ∀ l m n : List F, l ++ m ++ n = l ++ (m ++ n)
-  | [], _, _ => rfl
-  | a :: l, m, n => congrArg (List.cons a) (appended_assoc l m n)
-
 end Joining
 
 end Becoming

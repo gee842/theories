@@ -402,7 +402,7 @@ theorem readsInto (T N : Nat) : (law T N).ReadsInto (fun _ => false) (reads T) :
   cases c with
   | true =>
     show cond (Nat.ble N (l t false)) 1 0 = cond (Nat.ble N (l' t false)) 1 0 ∧ (0 : Nat) = 0
-    rw [agree t false (Nat.le_refl t) (Loops.beq_self t)]
+    rw [agree t false (Nat.le_refl t) (beq_self t)]
     exact ⟨rfl, rfl⟩
   | false =>
     show (0 : Nat) = 0 ∧ cond (Nat.ble T t) (l t true) 0 = cond (Nat.ble T t) (l' t true) 0
@@ -411,7 +411,7 @@ theorem readsInto (T N : Nat) : (law T N).ReadsInto (fun _ => false) (reads T) :
     | true =>
       have read : reads T t () false t true = true := by
         show ((true && Nat.ble T t) && Nat.beq t t) = true
-        rw [hb, Loops.beq_self]
+        rw [hb, beq_self]
         rfl
       rw [agree t true (Nat.le_refl t) read]
       exact ⟨rfl, rfl⟩
@@ -431,7 +431,7 @@ theorem no_coupling_from_stock {T u s : Nat} {e : Bool} (lt : u < T) :
     | true => exact Bool.noConfusion read
     | false =>
       change ((true && Nat.ble T u) && Nat.beq s u) = true at read
-      rw [Closing.ble_false_of_lt lt] at read
+      rw [Naturals.ble_false_of_lt lt] at read
       exact Bool.noConfusion read
 
 /-- **Before `T`, downstream of the stock lies only the stock.** -/
@@ -459,7 +459,7 @@ theorem route_at (T : Nat) :
       (fun _ => [()]) true false :=
   couples_before_of_couplesAt ⟨(), .head _, rfl, Nat.le_refl T, .head _, by
     show 0 < cond ((true && Nat.ble T T) && Nat.beq T T) 1 0
-    rw [Nat.ble_eq_true_of_le (Nat.le_refl T), Loops.beq_self]
+    rw [Nat.ble_eq_true_of_le (Nat.le_refl T), beq_self]
     exact Nat.one_pos⟩
 
 /-- The draw reads the record into the stock at every step. -/
@@ -468,7 +468,7 @@ theorem record_into_stock (T u : Nat) :
       (fun _ => [()]) false true :=
   couples_before_of_couplesAt ⟨(), .head _, rfl, Nat.le_refl u, .tail _ (.head _), by
     show 0 < cond (Nat.beq u u) 1 0
-    rw [Loops.beq_self]
+    rw [beq_self]
     exact Nat.one_pos⟩
 
 /-- **At `T` the loop stock → record → draw forms.** -/
@@ -505,7 +505,7 @@ theorem couples_after {T N d : Nat} {L L' : Flow Unit Bool} {W W' : Web Unit Boo
       | false =>
         show (0 : Nat) = 0 ∧ cond (Nat.ble T t) (W.level t true) 0 =
           cond (Nat.ble T t) (W'.level t true) 0 by
-        rw [Closing.ble_false_of_lt lt]
+        rw [Naturals.ble_false_of_lt lt]
         exact ⟨rfl, rfl⟩)
   ⟨fun t le => ⟨(held t le).1 false (fun same => Bool.noConfusion same), (held t le).2⟩, by
     have now := held T (Nat.le_refl T)
@@ -554,7 +554,7 @@ theorem draw_responds {T N t : Nat} {L L' : Flow Unit Bool} {W W' : Web Unit Boo
     L.take t () true = 0 ∧ L'.take t () true = 1 :=
   ⟨(follows () rfl t true).1.trans (by
       show cond (Nat.ble N (W.level t false)) 1 0 = 0
-      rw [Closing.ble_false_of_lt below]
+      rw [Naturals.ble_false_of_lt below]
       rfl),
    (follows' () rfl t true).1.trans (by
       show cond (Nat.ble N (W'.level t false)) 1 0 = 1

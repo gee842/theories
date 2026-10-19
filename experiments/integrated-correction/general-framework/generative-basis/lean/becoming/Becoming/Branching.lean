@@ -1200,11 +1200,6 @@ namespace Captured
 /-- The rule keeps itself. -/
 theorem keeps (s : Bool × Bool) : (next s).2 = s.2 := rfl
 
-/-- A bit and its negation differ. -/
-theorem not_ne : ∀ g : Bool, (!g) ≠ g
-  | true => fun same => Bool.noConfusion same
-  | false => fun same => Bool.noConfusion same
-
 /-- **The configurations with a given rule are a region the law never leaves**: an instance of
 `Law.Absorbing`. -/
 theorem rule_region_absorbing (g : Bool) : Law.Absorbing next (fun s => s.2 = g) :=
@@ -1219,7 +1214,7 @@ instance of `Law.DrawnInto` and of `Law.Drawn.not_returns`. -/
 theorem state_perturbation_drawn (g : Bool) :
     Law.DrawnInto next (fun s => s = (g, g)) (!g, g) ∧ ¬ Law.Returns next (!g, g) :=
   have drawn : Law.DrawnInto next (fun s => s = (g, g)) (!g, g) :=
-    Law.perturbation_drawnInto byRule (x := g) fun same => not_ne g (congrArg Prod.fst same)
+    Law.perturbation_drawnInto byRule (x := g) fun same => ListTests.not_ne_self g (congrArg Prod.fst same)
   ⟨drawn, Law.Drawn.not_returns ⟨_, held_absorbing g, drawn⟩⟩
 
 /-- **A perturbed rule draws the state into the configuration the new rule holds**, and the
@@ -1227,7 +1222,7 @@ perturbed configuration never returns. -/
 theorem rule_perturbation_drawn (g : Bool) :
     Law.DrawnInto next (fun s => s = (!g, !g)) (g, !g) ∧ ¬ Law.Returns next (g, !g) :=
   have drawn : Law.DrawnInto next (fun s => s = (!g, !g)) (g, !g) :=
-    Law.perturbation_drawnInto byRule (x := !g) fun same => not_ne g (congrArg Prod.fst same).symm
+    Law.perturbation_drawnInto byRule (x := !g) fun same => ListTests.not_ne_self g (congrArg Prod.fst same).symm
   ⟨drawn, Law.Drawn.not_returns ⟨_, held_absorbing (!g), drawn⟩⟩
 
 end Captured

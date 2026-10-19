@@ -173,10 +173,6 @@ def alternate : Nat → Bool
 /-- The run that changes at every step. -/
 def alternating : Run process := ⟨alternate, fun _ => (), fun _ => trivial⟩
 
-theorem not_ne_self : ∀ b : Bool, (!b) ≠ b
-  | true => fun same => Bool.noConfusion same
-  | false => fun same => Bool.noConfusion same
-
 /-- **Every configuration can stay and meets the target, and still not every run rests.** In
 `Free`, with the target met everywhere, every configuration has a step that stays and meets the
 target, and some run from `false` rests with the target met; the alternating run from `false` does
@@ -187,7 +183,7 @@ theorem stays_meet_not_assured :
     ¬ Settles alternating ∧
     ¬ ∀ r : Run process, r.state 0 = false → Rests (fun _ => True) r :=
   have unsettled : ¬ Settles alternating := fun ⟨T, stays⟩ =>
-    not_ne_self (alternate T) (stays T (Nat.le_refl T))
+    ListTests.not_ne_self (alternate T) (stays T (Nat.le_refl T))
   ⟨fun _ => ⟨⟨(), trivial⟩, trivial⟩,
    possibly_rests_iff.mpr ⟨false, Reach.refl process false, ⟨(), trivial⟩, trivial⟩,
    unsettled,

@@ -10,8 +10,11 @@ proof”. Earlier that day Ren had ordered the levels at which harm is judged: �
 be the whole, and a weaker version is within the system that one is in, then the self”. This
 module states, with no premise beyond the representation, how far a formation's own feedback
 reaches, how far a part's exchange reaches, and that the comparison of the levels with and
-without a part is decided within what the part reaches. The continuation condition of `Becoming.Significance`
-enters only as a hypothesis of three witnesses.
+without a part is decided within what the part reaches. The module neither imports nor assumes
+the continuation condition of `Becoming.Significance`: the theorems named below that read
+significance under it (`Flow.feeding_unrestricted_of_common`, `Flow.bounded_system_whole`,
+`Clearing.system_whole`, `Clearing.reach_counts_dweller`, `Trophic.mediated_uncoupled`,
+`Trophic.responsive_mixed`, `Trophic.mixed_part`) are stated in `Becoming.BoundedSignificance`.
 
 * **Closures.** A region is closed under a relation when whatever a member bears the relation
   to is a member (`ClosedUnder`). A formation lies within another's closure when every closed
@@ -352,13 +355,6 @@ theorem feeding_whole_of_common {t : Nat} {c : C}
   fun f g => withinFeeding_iff.mpr
     (WithinClosure.of_rel ⟨t, rfl, c, (common f).2.1, (common g).1, (common g).2.2⟩)
 
-/-- Under a common condition that feeds, significance bounded by each center's feeding closure,
-the route without axiom of `Becoming.Interdependence`, is the continuation condition. -/
-theorem feeding_unrestricted_of_common {Pos : Type} {t : Nat} {c : C}
-    (common : ∀ g, g ∈ L.present t ∧ W.requires t g c ∧ 0 < L.give t g c) (center : Pos → F) :
-    Unrestricted (bounded fun q => L.WithinFeeding W (center q)) :=
-  fun i => feeding_whole_of_common common (center i.1) i.2.2
-
 /-- What lies beyond a formation's influence closure never exchanges with a condition that a
 member of the closure depends on. -/
 theorem beyond_influence {f g h : F} (within : L.WithinInfluence W f g)
@@ -613,8 +609,9 @@ theorem Balances.comparison_local (balances : L.Balances W) {l : Nat → C → N
 `p`, covers at each step the continuation of everything the part has reached before it, the
 levels with the part retain what has significance along the levels without it exactly when they
 include them, and the reverse, and neither adds a continuation with significance exactly when
-neither exceeds the other. These are the continuation condition's comparisons (`Web.retains_iff_includes`,
-`Web.adds_iff_exceeds`): this is `comparison_local` with the continuation condition's significance. -/
+neither exceeds the other. These are the comparisons the continuation condition gives
+(`Web.retains_iff_includes`, `Web.adds_iff_exceeds` of `Becoming.Significance`); here they follow
+from `comparison_local` with the significance that holds of everything, with no condition. -/
 theorem Balances.comparison_within_reach (balances : L.Balances W) {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {sig : Pos → Nat → F → Prop} {p : Pos}
     (covers : ∀ t g, L.ReachesBefore W part t g → sig p t g) :
@@ -622,14 +619,15 @@ theorem Balances.comparison_within_reach (balances : L.Balances W) {l : Nat → 
       (W.Retains sig p l W.level ↔ W.Includes l W.level) ∧
       (¬ W.Adds sig p W.level l ↔ ¬ W.Exceeds W.level l) ∧
       (¬ W.Adds sig p l W.level ↔ ¬ W.Exceeds l W.level) :=
-  have all : Unrestricted fun (_ : Pos) (_ : Nat) (_ : F) => True := fun _ => trivial
   have same := balances.comparison_local without (sig' := fun _ _ _ => True)
     fun t g reached => ⟨fun _ => trivial, fun _ => covers t g reached⟩
-  ⟨same.1.trans (Web.retains_iff_includes all p),
-   same.2.1.trans (Web.retains_iff_includes all p),
-   same.2.2.1.trans ⟨fun none exceeds => none ((Web.adds_iff_exceeds all p).mpr exceeds),
+  have all : ∀ m m' : Nat → C → Nat,
+      W.Retains (fun (_ : Pos) (_ : Nat) (_ : F) => True) p m m' ↔ W.Includes m m' :=
+    fun _ _ => ⟨fun retains t f => retains t f trivial, fun includes => includes.retains _ p⟩
+  ⟨same.1.trans (all _ _), same.2.1.trans (all _ _),
+   same.2.2.1.trans ⟨fun none ⟨t, g, admits, not⟩ => none ⟨t, g, trivial, admits, not⟩,
      fun none adds => none adds.exceeds⟩,
-   same.2.2.2.trans ⟨fun none exceeds => none ((Web.adds_iff_exceeds all p).mpr exceeds),
+   same.2.2.2.trans ⟨fun none ⟨t, g, admits, not⟩ => none ⟨t, g, trivial, admits, not⟩,
      fun none adds => none adds.exceeds⟩⟩
 
 /-- With significance decidable, the adding comparisons hold in positive form: for a significance
@@ -781,12 +779,6 @@ theorem Balances.closed_comparison (balances : L.Balances W) {l : Nat → C → 
       (¬ W.Adds (bounded region) p l W.level ↔ ¬ W.Exceeds l W.level) :=
   balances.comparison_within_reach without fun _ _ reached =>
     reaches_within_closed closed members reached.reaches
-
-/-- Where each center's system is the whole, significance bounded by the system is the continuation condition. -/
-theorem bounded_system_whole {center : Pos → F}
-    (connected : ∀ p g, L.WithinSystem W (center p) g) :
-    Unrestricted (bounded fun p => L.WithinSystem W (center p)) :=
-  fun i => connected i.1 i.2.2
 
 end Flow
 
@@ -1188,49 +1180,6 @@ theorem wolves_unreached : ¬ flow.Reaches web wolvesPart .forest :=
     | .wolves, _, .den, no, _ => nomatch no
     | .far, no, _, _, _ => nomatch no
 
-/-- The mediated effect does not show in the comparison that holds the rest of the exchange
-fixed. The wolves lie within the forest's influence closure, yet their part does not reach the
-forest: with the deer's browsing held as it is, the forest is supported with the part exactly
-where the levels without it admit it, at every step. So compared, the part narrows: the levels
-without it include those with it and admit the deer where those with it do not. Under the continuation condition
-it does not retain what has significance, from any standpoint. -/
-theorem mediated_uncoupled {l : Nat → Place → Nat}
-    (without : flow.WithheldLevels wolvesPart web l) {Pos : Type}
-    {sig : Pos → Nat → Formation → Prop} (unrestricted : Unrestricted sig) (p : Pos) :
-    flow.WithinInfluence web .forest .wolves ∧ ¬ flow.Reaches web wolvesPart .forest ∧
-      (∀ t, web.Supported t .forest ↔ web.Admits (l t) t .forest) ∧
-      web.Includes l web.level ∧ web.Exceeds l web.level ∧ ¬ web.Retains sig p web.level l :=
-  have deer := deer_without_wolves without
-  ⟨mediates.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.1, wolves_unreached,
-   fun t => balances.admits_unreached without wolves_unreached t,
-   balances.opens_nothing without fun _ _ => Nat.zero_le _, ⟨1, .deer, deer.1, deer.2⟩,
-   fun retains => retains.not_added ⟨1, .deer, unrestricted (p, 1, .deer), deer.1, deer.2⟩⟩
-
-/-- Compared with the flow in which the deer respond, the wolves' taking is mixed: with it the
-forest is admitted at the third step and without it not, and without it the deer are admitted at
-the second step and with it not. Under the continuation condition neither level path retains what has
-significance along the other. -/
-theorem responsive_mixed {Pos : Type} {sig : Pos → Nat → Formation → Prop}
-    (unrestricted : Unrestricted sig) (p : Pos) :
-    web.Exceeds web.level responsiveWeb.level ∧ web.Exceeds responsiveWeb.level web.level ∧
-      ¬ web.Retains sig p web.level responsiveWeb.level ∧
-      ¬ web.Retains sig p responsiveWeb.level web.level :=
-  have forest : web.Exceeds web.level responsiveWeb.level :=
-    ⟨2, .forest, fun c requires => match c, requires with
-      | .growth, _ => Nat.succ_le_succ (Nat.zero_le 1)
-      | .herd, no => nomatch no
-      | .den, no => (nomatch no),
-     fun admits => Nat.not_succ_le_zero 0 (admits .growth trivial)⟩
-  have deer : web.Exceeds responsiveWeb.level web.level :=
-    ⟨1, .deer, fun c requires => match c, requires with
-      | .growth, no => nomatch no
-      | .herd, _ => Nat.le_refl 1
-      | .den, no => (nomatch no),
-     fun admits => Nat.not_succ_le_zero 0 (admits .herd trivial)⟩
-  ⟨forest, deer,
-   fun retains => retains.not_added ((Web.adds_iff_exceeds unrestricted p).mpr deer),
-   fun retains => retains.not_added ((Web.adds_iff_exceeds unrestricted p).mpr forest)⟩
-
 /-- The two comparisons reach differently. The wolves' part does not reach the forest, while the
 difference between the flow with the wolves and the flow in which the deer respond reaches the
 forest before the third step: the deer's browsing of the growth differs at the second. -/
@@ -1263,28 +1212,6 @@ theorem far_system {g : Formation} (within : flow.WithinSystem web .far g) : g =
   within (fun x => x = .far) (fun _ y inside ⟨_, part, part'⟩ =>
     far_of_den (Eq.subst (motive := fun c => flow.TakesPart web y c)
       (den_of_far (Eq.subst (motive := fun x => flow.TakesPart web x _) inside part)) part')) rfl
-
-/-- A part with members beyond a system. From the far formation's standpoint, significance bounded
-by each formation's system judges the joint part of the far formation and the wolves as
-retaining, while under the continuation condition the part loses the deer: the comparison within the system holds
-for parts within it. -/
-theorem mixed_part {l : Nat → Place → Nat} (without : flow.WithheldLevels farWolvesPart web l)
-    {sig : Formation → Nat → Formation → Prop} (unrestricted : Unrestricted sig) :
-    farWolvesPart .far = true ∧ ¬ flow.WithinSystem web .far .wolves ∧
-      web.Retains (bounded (flow.WithinSystem web)) .far web.level l ∧
-      ¬ web.Retains sig .far web.level l :=
-  have admitted : web.Admits (l 1) 1 .deer := fun c requires => match c, requires with
-    | .growth, no => nomatch no
-    | .herd, _ => Nat.le_of_eq (without.unique farWolves_withheld 1 .herd).symm
-    | .den, no => nomatch no
-  ⟨rfl, fun within => Formation.noConfusion (far_system within),
-   fun _ g within _ => match g, far_system within with
-    | _, rfl => fun c requires => match c, requires with
-      | .growth, no => nomatch no
-      | .herd, no => nomatch no
-      | .den, _ => Nat.le_refl 1,
-   fun retains => retains.not_added ⟨1, .deer, unrestricted (.far, 1, .deer), admitted,
-     fun admits => Nat.not_succ_le_zero 0 (admits .herd trivial)⟩⟩
 
 end Trophic
 
@@ -1447,15 +1374,6 @@ theorem system_counts_dweller {l : Nat → Place → Nat}
    Web.retains_bounded_iff.mpr fun t => ((loses_beyond without).1 t).2.2.narrow
      fun _ within => within alongDependence alongDependence_closed trivial⟩
 
-/-- The clearer's web is one system: every formation lies within every other's system, so
-significance bounded by each formation's system is the continuation condition. Here the system does not separate
-from the whole; the reach closure does (`reach_counts_dweller`). -/
-theorem system_whole :
-    (∀ p g, flow.WithinSystem web p g) ∧ Unrestricted (bounded (flow.WithinSystem web)) :=
-  have whole : ∀ p g, flow.WithinSystem web p g := fun p g =>
-    (clearer_system p).symm.trans (clearer_system g)
-  ⟨whole, Flow.bounded_system_whole (center := id) whole⟩
-
 /-- The clearer and the dweller. -/
 def clearerReach : Formation → Prop
   | .source => False
@@ -1496,24 +1414,6 @@ theorem clearer_own : ∀ h, clearerPart h = true → h = .clearer
   | .source, no => nomatch no
   | .clearer, _ => rfl
   | .dweller, no => nomatch no
-
-/-- Significance bounded by each formation's reach closure is not the continuation condition, yet from the
-clearer's standpoint it judges the clearer's own part as the continuation condition does: the part loses the
-dweller. Bounded by the influence closure, the part retains (`system_counts_dweller`). -/
-theorem reach_counts_dweller {l : Nat → Place → Nat}
-    (without : flow.WithheldLevels clearerPart web l) :
-    ¬ Unrestricted (bounded (flow.WithinReach web)) ∧
-      web.Adds (bounded (flow.WithinReach web)) .clearer l web.level ∧
-      ¬ web.Retains (bounded (flow.WithinReach web)) .clearer web.level l ∧
-      (web.Retains (bounded (flow.WithinReach web)) .clearer web.level l ↔
-        web.Includes web.level l) :=
-  have adds : web.Adds (bounded (flow.WithinReach web)) .clearer l web.level :=
-    ⟨2, .dweller, reach_middle.1, admitted_without without 2, unsupported_with 0⟩
-  ⟨fun all => reach_middle.2.1 (all (.clearer, 0, .source)), adds,
-   fun retains => retains.not_added adds,
-   (balances.comparison_within_reach without (sig := bounded (flow.WithinReach web))
-     (p := Formation.clearer) fun _ _ reached =>
-       Flow.reaches_withinReach (Flow.own_within_reach clearer_own) reached.reaches).1⟩
 
 /-- The source's part. -/
 def sourcePart : Formation → Bool

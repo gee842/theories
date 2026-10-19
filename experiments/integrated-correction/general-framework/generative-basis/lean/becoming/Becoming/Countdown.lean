@@ -104,8 +104,6 @@ structure CountedWork (tick : S → Option S) (busy done : S → Prop) (work fue
   finish : ∀ s, busy s → 0 < fuel s → work s = 0 → ∃ t, tick s = some t ∧ done t
   stall : ∀ s, busy s → fuel s = 0 → tick s = none
 
-theorem none_ne_some {x : S} : (none : Option S) ≠ some x := fun same => nomatch same
-
 theorem eq_zero_of_add_eq {n : Nat} : ∀ k, n + k = k → n = 0
   | 0, same => same
   | k + 1, same => eq_zero_of_add_eq k (Nat.succ.inj same)
@@ -171,7 +169,7 @@ theorem completes_iff {tick : S → Option S} {busy done : S → Prop} {work fue
     | .inl covered => covered
     | .inr short =>
       absurd ((stalls_beyond counts (work s + 1) s pending short
-        (Nat.lt_succ_of_le short)).symm.trans ran) none_ne_some,
+        (Nat.lt_succ_of_le short)).symm.trans ran) ListTests.none_ne_some,
    fun covered =>
     match ticks_busy counts (work s) s pending (Nat.le_refl _)
         (Nat.le_of_succ_le covered) with
@@ -192,7 +190,7 @@ theorem pending_before {tick : S → Option S} {busy done : S → Prop} {work fu
   match Nat.lt_or_ge (fuel s) k with
   | .inl beyond =>
     absurd ((stalls_beyond counts k s pending
-      (Nat.le_trans (Nat.le_of_lt beyond) within) beyond).symm.trans ran) none_ne_some
+      (Nat.le_trans (Nat.le_of_lt beyond) within) beyond).symm.trans ran) ListTests.none_ne_some
   | .inr fueled =>
     match ticks_busy counts k s pending within fueled with
     | ⟨u, ran', pendingU, workU, _⟩ =>

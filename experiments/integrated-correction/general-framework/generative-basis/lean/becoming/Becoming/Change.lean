@@ -414,31 +414,19 @@ theorem false_of_not : ∀ b : Bool, (b = true → False) → b = false
 theorem not_both {b : Bool} (no : b = false) (yes : b = true) : False :=
   nomatch no.symm.trans yes
 
-theorem and_left : ∀ {b c : Bool}, (b && c) = true → b = true
-  | true, _, _ => rfl
-  | false, _, both => both
-
-theorem and_right : ∀ {b c : Bool}, (b && c) = true → c = true
-  | true, _, both => both
-  | false, _, both => nomatch both
-
 theorem and_both : ∀ (b c : Bool), b = true → c = true → (b && c) = true
   | true, true, _, _ => rfl
   | false, _, no, _ => nomatch no
   | true, false, _, no => nomatch no
 
-theorem of_not : ∀ {b : Bool}, (!b) = true → b = false
-  | false, _ => rfl
-  | true, no => nomatch no
-
 /-- With no `true` before `t`, none before an earlier step. -/
 theorem mono (s : Nat → Bool) {i : Nat} : ∀ {t}, i ≤ t → clear s t = true → clear s i = true
   | _, .refl, c => c
-  | _ + 1, .step le, c => mono s le (and_left c)
+  | _ + 1, .step le, c => mono s le (ListTests.and_left c)
 
 theorem false_before (s : Nat → Bool) {t : Nat} (c : clear s t = true) {i : Nat}
     (lt : i < t) : s i = false :=
-  of_not (and_right (mono s lt c))
+  ListTests.false_of_not (ListTests.and_right (mono s lt c))
 
 /-- Up to any step, nothing is `true` or some earlier step is the first `true`. -/
 theorem or_first (s : Nat → Bool) :

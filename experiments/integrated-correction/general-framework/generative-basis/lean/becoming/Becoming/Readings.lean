@@ -1,6 +1,5 @@
 import Becoming.Reading
 import Becoming.Context
-import Becoming.Boundaries
 import Becoming.ContextArrivalTraces
 import Becoming.Unfolding
 

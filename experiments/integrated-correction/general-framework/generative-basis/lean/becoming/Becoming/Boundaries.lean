@@ -1,5 +1,5 @@
 import Becoming.Feedback
-import Becoming.Metaethics
+import Becoming.BoundedSignificance
 
 /-!
 # Boundaries: the self's presupposition, however its boundary is drawn

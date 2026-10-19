@@ -104,14 +104,6 @@ def Distinct : List α → Prop
   | [] => True
   | a :: as => ¬ a ∈ as ∧ Distinct as
 
-theorem length_append : ∀ p q : List α, (p ++ q).length = p.length + q.length
-  | [], _ => (Nat.zero_add _).symm
-  | _ :: p, q => (congrArg Nat.succ (length_append p q)).trans (Nat.succ_add _ _).symm
-
-theorem mem_cons_cases {a b : α} {q : List α} : b ∈ a :: q → b = a ∨ b ∈ q
-  | .head _ => .inl rfl
-  | .tail _ mem => .inr mem
-
 theorem mem_map_of {g : α → β} {a : α} : ∀ {l : List α}, a ∈ l → g a ∈ l.map g
   | _ :: _, .head _ => .head _
   | _ :: _, .tail _ mem => .tail _ (mem_map_of mem)
@@ -158,8 +150,8 @@ theorem length_le_of_matched {S : α → β → Prop} : ∀ {l : List α} {m : L
                 ⟨b', mem_remove other (split ▸ mem_b'), paired'⟩)
             (fun x y b' mx my => once x y b' (.tail a mx) (.tail a my))
         have whole : m.length = (p ++ q).length + 1 :=
-          (congrArg List.length split).trans ((length_append p (b :: q)).trans
-            ((Nat.add_succ _ _).trans (congrArg Nat.succ (length_append p q).symm)))
+          (congrArg List.length split).trans ((ListTests.length_append p (b :: q)).trans
+            ((Nat.add_succ _ _).trans (congrArg Nat.succ (ListTests.length_append p q).symm)))
         whole ▸ Nat.succ_le_succ inner
 
 /-- A list without repetition whose members all belong to another list is no longer. -/
@@ -186,8 +178,8 @@ theorem count_le_of_sub {q : α → Nat} : ∀ {l m : List α}, Distinct l →
             mem_remove (fun same => fresh (Eq.subst (motive := fun x => x ∈ l) same mem))
               (split ▸ sub b (.tail a mem) positive)
         have whole : m.length = (p ++ r).length + 1 :=
-          (congrArg List.length split).trans ((length_append p (a :: r)).trans
-            ((Nat.add_succ _ _).trans (congrArg Nat.succ (length_append p r).symm)))
+          (congrArg List.length split).trans ((ListTests.length_append p (a :: r)).trans
+            ((Nat.add_succ _ _).trans (congrArg Nat.succ (ListTests.length_append p r).symm)))
         show sign (q a) + count l q ≤ m.length from
           (congrArg (· + count l q) (congrArg sign h)).symm ▸ whole ▸
             (Nat.add_comm (count l q) 1 ▸ Nat.succ_le_succ inner)

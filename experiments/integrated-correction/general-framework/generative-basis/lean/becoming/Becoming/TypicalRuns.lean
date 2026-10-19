@@ -60,13 +60,13 @@ theorem split_of_mem {a : α} : ∀ {l : List α}, a ∈ l → ∃ l₁ l₂, l 
     | ⟨l₁, l₂, same⟩ => ⟨b :: l₁, l₂, congrArg (b :: ·) same⟩
 
 theorem mem_of_mem_drop {a x : α} {l₁ l₂ : List α} (mem : x ∈ l₁ ++ l₂) : x ∈ l₁ ++ a :: l₂ :=
-  match FinerTraces.mem_append_split mem with
+  match ListTests.mem_append_iff.mp mem with
   | .inl inside => mem_appended_left _ inside
   | .inr outside => mem_appended_right (.tail a outside) l₁
 
 theorem mem_drop_or {a x : α} {l₁ l₂ : List α} (mem : x ∈ l₁ ++ a :: l₂) :
     x = a ∨ x ∈ l₁ ++ l₂ :=
-  match FinerTraces.mem_append_split mem with
+  match ListTests.mem_append_iff.mp mem with
   | .inl inside => .inr (mem_appended_left _ inside)
   | .inr (.head _) => .inl rfl
   | .inr (.tail _ outside) => .inr (mem_appended_right outside l₁)

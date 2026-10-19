@@ -1,6 +1,6 @@
 import Becoming.Frontier
 import Becoming.Frame
-import Becoming.ValuationFrames
+import Becoming.Extension
 
 /-!
 # The practical commitments on a frame: the moves a step can make, compared and required

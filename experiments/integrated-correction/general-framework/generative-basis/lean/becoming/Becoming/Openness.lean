@@ -801,10 +801,10 @@ theorem mem_pick (t a : Nat) : ∀ b : Bool, (clear s t && s t) = b →
     (passed s a t ↔ a ∈ found s t) → (passed s a (t + 1) ↔ a ∈ pick b t (found s t))
   | true, first, _ =>
     ⟨fun ⟨_, c, yes⟩ => Eq.subst (motive := fun x => x ∈ [t])
-        (Clear.first_unique s (Clear.and_left first) (Clear.and_right first) c yes) (.head []),
+        (Clear.first_unique s (ListTests.and_left first) (ListTests.and_right first) c yes) (.head []),
      fun mem => match mem_cons_cases mem with
       | .inl same => Eq.subst (motive := fun x => passed s x (t + 1)) same.symm
-          ⟨Nat.lt_succ_self t, Clear.and_left first, Clear.and_right first⟩
+          ⟨Nat.lt_succ_self t, ListTests.and_left first, ListTests.and_right first⟩
       | .inr no => nomatch no⟩
   | false, notFirst, before =>
     ⟨fun ⟨lt, c, yes⟩ => before.mp ⟨match Nat.lt_or_ge a t with
@@ -1282,8 +1282,8 @@ theorem exchange_needs :
         | .head _ => rfl
         | .tail _ no => (nomatch no))⟩⟩,
     leaking_world.2.2.2.2.1, leaking_world.2.2.1,
-    fun t => ⟨[true, false], Shuttle.distinct, fun c _ => Shuttle.every c,
-      fun c _ => Shuttle.every c, (leaking_world.2.2.2.2.2 t).1⟩,
+    fun t => ⟨[true, false], Shuttle.distinct, fun c _ => ListTests.mem_bools c,
+      fun c _ => ListTests.mem_bools c, (leaking_world.2.2.2.2.2 t).1⟩,
     fun N => ⟨N, Shuttle.holder N, Shuttle.holder N, Nat.le_refl N, .head _,
       .inl (takes N (Shuttle.holder N))⟩⟩,
    ⟨fun stand census => Throughput.unlisted (stand 0) (census 0).2 Throughput.fuel_stands,

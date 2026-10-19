@@ -388,16 +388,6 @@ structure CarrierCounts where
 
 namespace CarrierCounts
 
-/-- Factors of a product of three exchange their last two places. -/
-theorem mul_right_comm_nat (a b c : Nat) : a * b * c = a * c * b :=
-  (mul_assoc_nat a b c).trans ((congrArg (a * ·) (Nat.mul_comm b c)).trans (mul_assoc_nat a c b).symm)
-
-/-- The factors of a product of two products exchange their middle places. -/
-theorem mul_mul_mul_comm_nat (a b c d : Nat) : a * b * (c * d) = a * c * (b * d) :=
-  (mul_assoc_nat a b (c * d)).trans ((congrArg (a * ·) ((mul_assoc_nat b c d).symm.trans
-    ((congrArg (· * d) (Nat.mul_comm b c)).trans (mul_assoc_nat c b d)))).trans
-      (mul_assoc_nat a c (b * d)).symm)
-
 /-- **The share order**: the carriers stand to the others in `y` at least as in `x`, by
 cross-multiplication, as in `share_not_lower`. -/
 def order : Ideals.Preorder CarrierCounts where
@@ -405,11 +395,11 @@ def order : Ideals.Preorder CarrierCounts where
   refl _ := Nat.le_refl _
   trans {x y z} xy yz := Nat.le_of_mul_le_mul_right
     (calc x.carrier * z.other * y.other
-        = x.carrier * y.other * z.other := mul_right_comm_nat _ _ _
+        = x.carrier * y.other * z.other := Naturals.mul_right_comm _ _ _
       _ ≤ y.carrier * x.other * z.other := Nat.mul_le_mul_right _ xy
-      _ = y.carrier * z.other * x.other := mul_right_comm_nat _ _ _
+      _ = y.carrier * z.other * x.other := Naturals.mul_right_comm _ _ _
       _ ≤ z.carrier * y.other * x.other := Nat.mul_le_mul_right _ yz
-      _ = z.carrier * x.other * y.other := mul_right_comm_nat _ _ _) y.other_pos
+      _ = z.carrier * x.other * y.other := Naturals.mul_right_comm _ _ _) y.other_pos
 
 /-- The rule favours the carriers: each carrier leaves at least as many offspring as each other.
 Read of a population: the carriers are at least as many as the others. -/
@@ -427,7 +417,7 @@ theorem raises : Raises order favours select := fun x g fav =>
   calc x.carrier * (x.other * g.other)
       = x.carrier * x.other * g.other := (mul_assoc_nat _ _ _).symm
     _ ≤ x.carrier * x.other * g.carrier := Nat.mul_le_mul_left _ fav
-    _ = x.carrier * g.carrier * x.other := mul_right_comm_nat _ _ _
+    _ = x.carrier * g.carrier * x.other := Naturals.mul_right_comm _ _ _
 
 /-- **Selection by a rule favouring strictly raises the share strictly**, carriers present. -/
 theorem rises_strictly {x g : CarrierCounts} (some : 0 < x.carrier) (lt : g.other < g.carrier) :
@@ -435,12 +425,12 @@ theorem rises_strictly {x g : CarrierCounts} (some : 0 < x.carrier) (lt : g.othe
   calc x.carrier * (x.other * g.other)
       = x.carrier * x.other * g.other := (mul_assoc_nat _ _ _).symm
     _ < x.carrier * x.other * g.carrier := Nat.mul_lt_mul_of_pos_left lt (Nat.mul_pos some x.other_pos)
-    _ = x.carrier * g.carrier * x.other := mul_right_comm_nat _ _ _
+    _ = x.carrier * g.carrier * x.other := Naturals.mul_right_comm _ _ _
 
 /-- **Selection by a disfavouring rule does not raise the share.** -/
 theorem lowers : Raises (reverse order) disfavours select := fun x g dis =>
   calc x.carrier * g.carrier * x.other
-      = x.carrier * x.other * g.carrier := mul_right_comm_nat _ _ _
+      = x.carrier * x.other * g.carrier := Naturals.mul_right_comm _ _ _
     _ ≤ x.carrier * x.other * g.other := Nat.mul_le_mul_left _ dis
     _ = x.carrier * (x.other * g.other) := mul_assoc_nat _ _ _
 
@@ -464,9 +454,9 @@ theorem lower {g g' : CarrierCounts} (le : (reverse order).le g g') (dis : disfa
 theorem select_mono {x y g g' : CarrierCounts} (le : order.le x y) (le' : order.le g g') :
     order.le (select x g) (select y g') :=
   calc x.carrier * g.carrier * (y.other * g'.other)
-      = x.carrier * y.other * (g.carrier * g'.other) := mul_mul_mul_comm_nat _ _ _ _
+      = x.carrier * y.other * (g.carrier * g'.other) := Naturals.mul_mul_mul_comm _ _ _ _
     _ ≤ y.carrier * x.other * (g'.carrier * g.other) := Nat.mul_le_mul le le'
-    _ = y.carrier * g'.carrier * (x.other * g.other) := mul_mul_mul_comm_nat _ _ _ _
+    _ = y.carrier * g'.carrier * (x.other * g.other) := Naturals.mul_mul_mul_comm _ _ _ _
 
 /-- **The share order is the comparison of `share_not_lower`.** Carriers `ms` each leaving at least
 `a` offspring and others `es` each at most `b ≤ a`, others present before and after: the counts
@@ -698,7 +688,7 @@ theorem even : ∀ k, (course (2 * k)).1.carrier = (course (2 * k)).1.other * 2 
     show (course (2 * k + 1 + 1)).1.carrier = (course (2 * k + 1 + 1)).1.other * 2 ∧
       (course (2 * k + 1 + 1)).2 = lo
     rw [c2, o2]
-    exact ⟨mul_right_comm_nat _ _ _, r2⟩
+    exact ⟨Naturals.mul_right_comm _ _ _, r2⟩
 
 /-- At every odd step the others are twice the carriers and the rule in force favours the
 carriers. -/

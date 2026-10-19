@@ -61,11 +61,6 @@ open CodeAcquisition RouteFormation
 theorem add_sub_of_le' {m k : Nat} (le : m ≤ k) : m + (k - m) = k :=
   (Nat.add_comm m (k - m)).trans (sub_add_of_le le)
 
-theorem exists_add_of_le : ∀ {k n : Nat}, k ≤ n → ∃ m, n = m + k
-  | k, _, .refl => ⟨0, (Nat.zero_add k).symm⟩
-  | k, _, .step le => match exists_add_of_le le with
-    | ⟨m, same⟩ => ⟨m + 1, (congrArg Nat.succ same).trans (Nat.succ_add m k).symm⟩
-
 /-! ## Teaching pairs -/
 
 /-- A sender and a receiver. -/

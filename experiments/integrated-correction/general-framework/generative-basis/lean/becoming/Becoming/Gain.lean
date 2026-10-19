@@ -81,11 +81,6 @@ theorem map_eq_on {α : Type} {f g : α → Nat} :
   | a :: l, on => show f a :: l.map f = g a :: l.map g from
       congr (congrArg List.cons (on a (.head l))) (map_eq_on fun b mem => on b (.tail a mem))
 
-/-- One more unit than a number, less the number, is one. -/
-theorem add_one_sub_self : ∀ t : Nat, t + 1 - t = 1
-  | 0 => rfl
-  | t + 1 => (Nat.succ_sub_succ (t + 1) t).trans (add_one_sub_self t)
-
 /-- A member of a list of options headed by `none` that is `some a` lies in the tail. -/
 theorem some_mem_tail {α : Type} {a : α} {l : List (Option α)} : some a ∈ none :: l → some a ∈ l
   | .tail _ mem => mem
@@ -366,7 +361,7 @@ theorem counting_given_by_rest (t : Nat) :
   ⟨.head _, show t + 0 - (t + 1 + 0) + 0 < t + 1 + 0 - (t + 0) + 0 from
     Nat.lt_of_le_of_lt (Nat.le_of_eq (congrArg (· + 0) (sub_eq_zero_of_le (Nat.le_succ t))))
       (Nat.lt_of_lt_of_le (Nat.lt_succ_self 0)
-        (Nat.le_of_eq (congrArg (· + 0) (add_one_sub_self t)).symm))⟩
+        (Nat.le_of_eq (congrArg (· + 0) (succ_sub_self t)).symm))⟩
 
 end Flow
 

@@ -1,3 +1,4 @@
+import Becoming.Prelude
 import Becoming.Segmentation
 
 /-!
@@ -200,11 +201,6 @@ section Standing
 
 variable {R : Type u} {M : Type v}
 
-theorem and_eq_true : ∀ {a b : Bool}, (a && b) = true ↔ a = true ∧ b = true
-  | true, true => ⟨fun _ => ⟨rfl, rfl⟩, fun _ => rfl⟩
-  | true, false => ⟨fun h => (nomatch h), fun h => nomatch h.2⟩
-  | false, _ => ⟨fun h => (nomatch h), fun h => nomatch h.1⟩
-
 theorem implies_eq_true : ∀ {a c : Bool}, (!a || c) = true ↔ (a = true → c = true)
   | true, true => ⟨fun _ _ => rfl, fun _ => rfl⟩
   | true, false => ⟨fun h => (nomatch h), fun h => nomatch (h rfl)⟩
@@ -239,12 +235,12 @@ theorem stands_iff {m : M} :
   | [] => ⟨fun _ _ mem => (nomatch mem), fun _ => rfl⟩
   | r :: rs =>
     ⟨fun h =>
-      have both := and_eq_true.mp ((stands_cons r rs m).symm.trans h)
+      have both := ListTests.and_true_iff.mp ((stands_cons r rs m).symm.trans h)
       fun r' mem br => by
         cases mem with
         | head => exact implies_eq_true.mp both.1 br
         | tail _ mem' => exact (stands_iff.mp both.2) r' mem' br,
-     fun all => (stands_cons r rs m).trans (and_eq_true.mpr
+     fun all => (stands_cons r rs m).trans (ListTests.and_true_iff.mpr
       ⟨implies_eq_true.mpr (all r (.head rs)), stands_iff.mpr fun r' mem => all r' (.tail r mem)⟩)⟩
 
 /-- **A meaning fails to stand exactly when some record bearing on the form does not offer it.** -/

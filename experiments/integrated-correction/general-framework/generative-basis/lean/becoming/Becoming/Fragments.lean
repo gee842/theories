@@ -86,7 +86,7 @@ theorem joined_traced {P : Process S A} {f g h : Fragment S A} (joined : Joined 
 /-- **Putting fragments one after the other does not depend on the grouping.** -/
 theorem merge_assoc (f g h : Fragment S A) : merge (merge f g) h = merge f (merge g h) :=
   congrArg (fun w => (⟨f.start, w, h.finish⟩ : Fragment S A))
-    (Joining.appended_assoc f.word g.word h.word)
+    (ListTests.append_assoc f.word g.word h.word)
 
 /-- A pair joined is joint with what the second joins with. -/
 theorem joint_chain_left {P : Process S A} {f g h : Fragment S A} (first : Joint P f g)
@@ -135,7 +135,7 @@ theorem joined_idle_left {P : Process S A} {f : Fragment S A} (traced : Traced P
 theorem joined_idle_right {P : Process S A} {f : Fragment S A} (traced : Traced P f) :
     Joined P f (idle f.finish) f :=
   ⟨⟨traced, idle_traced P _, rfl⟩,
-   congrArg (fun w => (⟨f.start, w, f.finish⟩ : Fragment S A)) (Joining.appended_nil f.word)⟩
+   congrArg (fun w => (⟨f.start, w, f.finish⟩ : Fragment S A)) (ListTests.append_nil f.word)⟩
 
 /-- A probe: whether a fragment joins after, or before, the fragment staying at a configuration. -/
 inductive Probe (S : Type u) where

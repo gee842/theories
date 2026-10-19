@@ -1050,11 +1050,6 @@ end Model
 
 /-! ## Witnesses -/
 
-/-- Negation moves every truth value. -/
-theorem not_moves : ∀ b : Bool, (!b) ≠ b
-  | true => fun same => Bool.noConfusion same
-  | false => fun same => Bool.noConfusion same
-
 namespace Shift
 
 /-! Inputs are a position and a content. The lumping reads the content and forgets the

@@ -64,41 +64,17 @@ universe u v w
 
 /-! ## Arithmetic and lists -/
 
-theorem sub_twice (n a : Nat) : ∀ b : Nat, n - a - b = n - (a + b)
-  | 0 => rfl
-  | b + 1 => congrArg Nat.pred (sub_twice n a b)
-
-theorem add_sub_back : ∀ {m k : Nat}, m ≤ k → m + (k - m) = k
-  | 0, k, _ => Nat.zero_add k
-  | _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
-  | m + 1, k + 1, le => (congrArg (m + 1 + ·) (Nat.succ_sub_succ k m)).trans
-      ((Nat.add_right_comm m 1 (k - m)).trans
-        (congrArg (· + 1) (add_sub_back (Nat.le_of_succ_le_succ le))))
-
 theorem le_of_add_le_add : ∀ {a b c : Nat}, a + b ≤ a + c → b ≤ c
   | 0, b, c, h => by rw [Nat.zero_add, Nat.zero_add] at h; exact h
   | a + 1, b, c, h => by
     rw [Nat.succ_add, Nat.succ_add] at h
     exact le_of_add_le_add (Nat.le_of_succ_le_succ h)
 
-theorem cancel_right : ∀ {a b : Nat} (k : Nat), a + k = b + k → a = b
-  | _, _, 0, h => h
-  | _, _, k + 1, h => cancel_right k (Nat.succ.inj h)
-
-theorem le_sub_of_add {a b n : Nat} (h : a + b ≤ n) : b ≤ n - a :=
-  le_of_add_le_add (Nat.le_trans h
-    (Nat.le_of_eq (add_sub_back (Nat.le_trans (Nat.le_add_right a b) h)).symm))
-
 /-- What two draws need together is what the first needs and what the second needs from what
 the first leaves. -/
 theorem add_le_iff {a b n : Nat} : a + b ≤ n ↔ a ≤ n ∧ b ≤ n - a :=
-  ⟨fun h => ⟨Nat.le_trans (Nat.le_add_right a b) h, le_sub_of_add h⟩,
-   fun ⟨le, h⟩ => Nat.le_trans (Nat.add_le_add_left h a) (Nat.le_of_eq (add_sub_back le))⟩
-
-theorem add_sub_left : ∀ (a b : Nat), a + b - a = b
-  | 0, b => congrArg (· - 0) (Nat.zero_add b)
-  | a + 1, b => (congrArg (· - (a + 1)) (Nat.succ_add a b)).trans
-      ((Nat.succ_sub_succ (a + b) a).trans (add_sub_left a b))
+  ⟨fun h => ⟨Nat.le_trans (Nat.le_add_right a b) h, Naturals.le_sub_of_add_le h⟩,
+   fun ⟨le, h⟩ => Nat.le_trans (Nat.add_le_add_left h a) (Nat.le_of_eq (add_sub_of_le le))⟩
 
 theorem mul_regroup (a b : Nat) : ∀ c : Nat, a * b * c = a * (b * c)
   | 0 => rfl
@@ -115,24 +91,16 @@ section Lists
 
 variable {β : Type u}
 
-theorem append_empty : ∀ l : List β, l ++ [] = l
-  | [] => rfl
-  | x :: xs => congrArg (x :: ·) (append_empty xs)
-
 theorem append_regroup : ∀ (a b c : List β), a ++ b ++ c = a ++ (b ++ c)
   | [], _, _ => rfl
   | x :: xs, b, c => congrArg (x :: ·) (append_regroup xs b c)
-
-theorem length_appended : ∀ (a b : List β), (a ++ b).length = a.length + b.length
-  | [], _ => (Nat.zero_add _).symm
-  | _ :: a, b => (congrArg Nat.succ (length_appended a b)).trans (Nat.succ_add _ _).symm
 
 theorem append_cancel : ∀ (l : List β) {a b : List β}, l ++ a = l ++ b → a = b
   | [], _, _, h => h
   | _ :: xs, _, _, h => append_cancel xs (List.cons.inj h).2
 
 theorem ne_append_cons (l : List β) (x : β) (xs : List β) : l ≠ l ++ x :: xs :=
-  fun same => nomatch append_cancel l ((append_empty l).trans same)
+  fun same => nomatch append_cancel l ((ListTests.append_nil l).trans same)
 
 /-- The token at site `i`, if any. -/
 def nth : List β → Nat → Option β
@@ -172,7 +140,7 @@ def Extends (P : Process S A) (out : S → List β) : Prop :=
 
 theorem extends_along {P : Process S A} {out : S → List β} (ext : Extends P out) :
     ∀ {s t : S} {plan : List A}, Trace P s plan t → ∃ tail, out t = out s ++ tail
-  | _, _, [], .nil s => ⟨[], (append_empty (out s)).symm⟩
+  | _, _, [], .nil s => ⟨[], (ListTests.append_nil (out s)).symm⟩
   | _, _, _ :: _, .cons step tail =>
     match ext _ _ _ step, extends_along ext tail with
     | ⟨first, h1⟩, ⟨rest, h2⟩ =>
@@ -352,7 +320,7 @@ theorem copies : ∀ (prev : Option α) (built word pool : List α) (free used :
         ⟨lastOr prev word, [], built ++ word, removeAll word pool,
           free - use draw prev word, used + use draw prev word⟩
   | prev, built, [], pool, free, used, _, _ => by
-    exact congrArg (fun l => (⟨prev, [], l, pool, free, used⟩ : Scan α)) (append_empty built).symm
+    exact congrArg (fun l => (⟨prev, [], l, pool, free, used⟩ : Scan α)) (ListTests.append_nil built).symm
   | prev, built, x :: xs, pool, free, used, supplies, covered => by
     have ⟨pos, rest⟩ := supplies_cons_iff.mp supplies
     have ⟨first, more⟩ := add_le_iff.mp
@@ -360,7 +328,7 @@ theorem copies : ∀ (prev : Option α) (built word pool : List α) (free used :
     show steps draw xs.length (tick draw ⟨prev, x :: xs, built, pool, free, used⟩) = _
     rw [tick_cons, if_pos ⟨pos, first⟩,
       copies (some x) (built ++ [x]) xs (remove x pool) _ _ rest more,
-      append_regroup, sub_twice, Nat.add_assoc]
+      append_regroup, Naturals.sub_sub, Nat.add_assoc]
     all_goals rfl
 
 /-- A completed copy was supplied and covered. -/
@@ -403,7 +371,7 @@ theorem built_iff : ∀ (prev : Option α) (built word pool : List α) (free use
     (steps draw word.length ⟨prev, word, built, pool, free, used⟩).built = built ++ word ↔
       Supplies word pool ∧ use draw prev word ≤ free
   | _, _, [], pool, free, _ =>
-    ⟨fun _ => ⟨supplies_nil pool, Nat.zero_le free⟩, fun _ => (append_empty _).symm⟩
+    ⟨fun _ => ⟨supplies_nil pool, Nat.zero_le free⟩, fun _ => (ListTests.append_nil _).symm⟩
   | prev, built, x :: xs, pool, free, used =>
     ⟨fun done => by
       have done' : (steps draw xs.length
@@ -488,7 +456,7 @@ theorem empties_iff (prev : Option α) (built word pool : List α) (free used : 
     have done := copies draw prev built word pool free used supplies covered
     ⟨congrArg Scan.pending done,
      (congrArg Scan.pool done).trans ((nil_iff_countOf_zero _).mpr fun a =>
-        cancel_right (countOf a word)
+        add_right_cancel (countOf a word)
           ((countOf_removeAll word pool supplies a).trans ((same a).symm.trans (Nat.zero_add _).symm)))⟩⟩
 
 /-! ## Copies from one shared pool -/
@@ -573,11 +541,11 @@ theorem batch_all_iff (r : Nat) : ∀ (words : List (List α)) (pool : List α) 
       exact ⟨fun ⟨_, every⟩ =>
           have ⟨s2, t2⟩ := ih.mp every
           ⟨(supplies_append_iff w (joinAll ws) pool).mpr ⟨supplies, s2⟩,
-            add_le_iff.mpr ⟨covered, Nat.le_trans t2 (Nat.le_of_eq (sub_twice _ _ _))⟩⟩,
+            add_le_iff.mpr ⟨covered, Nat.le_trans t2 (Nat.le_of_eq (Naturals.sub_sub _ _ _))⟩⟩,
         fun ⟨s, total⟩ =>
           have s2 := ((supplies_append_iff w (joinAll ws) pool).mp s).2
           have t2 := (add_le_iff.mp total).2
-          ⟨rfl, ih.mpr ⟨s2, Nat.le_trans t2 (Nat.le_of_eq (sub_twice _ _ _).symm)⟩⟩⟩
+          ⟨rfl, ih.mpr ⟨s2, Nat.le_trans t2 (Nat.le_of_eq (Naturals.sub_sub _ _ _).symm)⟩⟩⟩
     | false =>
       exact ⟨fun ⟨ok, _⟩ => (nomatch ok), fun ⟨s, total⟩ =>
         have s1 := ((supplies_append_iff w (joinAll ws) pool).mp s).1
@@ -687,7 +655,7 @@ theorem use_word (first same differ : Nat) (x : α) (l : List α) :
 theorem midpoint_arith {A B C F e u U1 U2 U3 : Nat} (h1 : A + e * U1 = F + u * U1)
     (h3 : B + e * U3 = F + u * U3) (h2 : C + e * U2 = F + u * U2) (mid : U1 + U3 = 2 * U2) :
     A + B = 2 * C :=
-  cancel_right (e * (U1 + U3)) (calc
+  add_right_cancel (e * (U1 + U3)) (calc
     A + B + e * (U1 + U3) = (A + e * U1) + (B + e * U3) :=
         (congrArg (A + B + ·) (Nat.left_distrib e U1 U3)).trans
           (Nat.add_add_add_comm A B (e * U1) (e * U3))
@@ -734,7 +702,7 @@ theorem use_lt_iff (first same differ : Nat) {x y : α} {l m : List α}
   rw [← h1, Nat.add_right_comm (use (pairDraw first same differ) none (x :: l))] at h2
   -- h2 : C' + same * U + same * d = C + same * U + differ * d
   rw [Nat.add_right_comm (use (pairDraw first same differ) none (y :: m))] at h2
-  have turn := cancel_right (same * unlikeFrom x l) h2
+  have turn := add_right_cancel (same * unlikeFrom x l) h2
   -- turn : C' + same * d = C + differ * d
   constructor
   · intro less
@@ -790,21 +758,21 @@ theorem readSteps_fixed (read : Nat → Option α) {s : Scan α} (fixed : readTi
 
 theorem readStep_extends : ∀ (s : Scan α) (o : Option α),
     ∃ tail, (readStep draw s o).built = s.built ++ tail
-  | _, none => ⟨[], (append_empty _).symm⟩
+  | _, none => ⟨[], (ListTests.append_nil _).symm⟩
   | s, some x =>
     match s with
-    | ⟨_, [], _, _, _, _⟩ => ⟨[], (append_empty _).symm⟩
+    | ⟨_, [], _, _, _, _⟩ => ⟨[], (ListTests.append_nil _).symm⟩
     | ⟨prev, p :: xs, built, pool, free, used⟩ => by
       show ∃ tail, (if 0 < countOf x pool ∧ draw prev x ≤ free then
         (⟨some x, xs, built ++ [x], remove x pool, free - draw prev x, used + draw prev x⟩ :
           Scan α) else ⟨prev, p :: xs, built, pool, free, used⟩).built = built ++ tail
       exact ite_cases (fun r : Scan α => ∃ tail, r.built = built ++ tail)
-        (fun _ => ⟨[x], rfl⟩) (fun _ => ⟨[], (append_empty built).symm⟩)
+        (fun _ => ⟨[x], rfl⟩) (fun _ => ⟨[], (ListTests.append_nil built).symm⟩)
 
 /-- **The product of a reading copy only grows.** -/
 theorem readSteps_extends (read : Nat → Option α) :
     ∀ (n : Nat) (s : Scan α), ∃ tail, (readSteps draw read n s).built = s.built ++ tail
-  | 0, _ => ⟨[], (append_empty _).symm⟩
+  | 0, _ => ⟨[], (ListTests.append_nil _).symm⟩
   | n + 1, s =>
     match readStep_extends draw s (read s.built.length),
       readSteps_extends read n (readTick draw read s) with
@@ -820,7 +788,7 @@ theorem reading_iff (read : Nat → Option α) : ∀ (word pending : List α) (p
       Reads read built.length word ∧ Supplies word pool ∧ use draw prev word ≤ free)
   | [], _, prev, built, pool, free, used, _ =>
     ⟨fun _ => ⟨trivial, supplies_nil pool, Nat.zero_le free⟩,
-     fun _ => (append_empty built).symm⟩
+     fun _ => (ListTests.append_nil built).symm⟩
   | _ :: _, [], _, _, _, _, _, lengths => nomatch lengths
   | x :: xs, p :: ps, prev, built, pool, free, used, lengths => by
     have lengths' : ps.length = xs.length := Nat.succ.inj lengths
@@ -849,7 +817,7 @@ theorem reading_iff (read : Nat → Option α) : ∀ (word pending : List α) (p
           subst e
           have ih := reading_iff read xs ps (some y) (built ++ [y]) (remove y pool)
             (free - draw prev y) (used + draw prev y) lengths'
-          rw [append_regroup, length_appended] at ih
+          rw [append_regroup, ListTests.length_append] at ih
           exact ih.trans ⟨fun ⟨reads, rest, more⟩ =>
               ⟨⟨hr, reads⟩, supplies_cons_iff.mpr ⟨pos, rest⟩, add_le_iff.mpr ⟨first, more⟩⟩,
             fun ⟨⟨_, reads⟩, supplies, covered⟩ =>
@@ -1043,7 +1011,7 @@ theorem inspect_le_iff (ci ce : Nat) (t : List α) (ref : Nat → Option α) (i 
         have avail : 0 < countOf x [x] := by
           rw [countOf_self]
           exact Nat.succ_pos 0
-        have left : ce ≤ ci + ce - ci := Nat.le_of_eq (add_sub_left ci ce).symm
+        have left : ce ≤ ci + ce - ci := Nat.le_of_eq (Naturals.add_sub_cancel_left ci ce).symm
         exact congrArg Scan.built (if_pos ⟨fun h => ne h.symm, avail, left⟩)
       rw [broken, defects_break t t i ht ht ne, defects_self] at h
       exact absurd h (Nat.not_succ_le_zero 0),
@@ -1219,12 +1187,12 @@ theorem doubling_iff (d : Nat) : ∀ (n k m : Nat) (t : Nat × Nat),
         refine ⟨?_, ?_⟩
         · rw [split]
           exact add_le_iff.mpr ⟨first, more⟩
-        · rw [ended, two_mul_pow, sub_twice, split],
+        · rw [ended, two_mul_pow, Naturals.sub_sub, split],
      fun ⟨covered, ended⟩ => by
       rw [split] at covered ended
       have ⟨first, more⟩ := add_le_iff.mp covered
       refine .cons ⟨first, rfl⟩ ((doubling_iff d n (2 * k) (m - d * k) t).mpr ⟨more, ?_⟩)
-      rw [ended, two_mul_pow, sub_twice]⟩
+      rw [ended, two_mul_pow, Naturals.sub_sub]⟩
 
 /-- Doubling runs every number of rounds where the stock covers what they draw. -/
 theorem doubling_runs (d n k m : Nat) (covered : d * required n k ≤ m) :

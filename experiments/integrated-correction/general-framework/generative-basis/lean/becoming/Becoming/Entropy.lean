@@ -871,13 +871,6 @@ theorem mem_configurationsWithin {l : List Nat} {K : Nat} (le : total l (fun x =
     l ∈ configurationsWithin l.length K :=
   EntropyLists.mem_joinMap (mem_downFrom le) (mem_configurations l)
 
-/-- A member of a mapped list is the image of a member. -/
-theorem preimage_of_mem_map {α β : Type} {g : α → β} {b : β} :
-    ∀ {l : List α}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
-  | a :: _, .head _ => ⟨a, .head _, rfl⟩
-  | a :: _, .tail _ mem => match preimage_of_mem_map mem with
-    | ⟨a', inner, same⟩ => ⟨a', .tail a inner, same⟩
-
 theorem EntropyLists.mem_append_cases {α : Type} {x : α} {m : List α} :
     ∀ {l : List α}, x ∈ l ++ m → x ∈ l ∨ x ∈ m
   | [], mem => .inr mem
@@ -1738,10 +1731,6 @@ def all : List (Option Bool) := [none, some true, some false]
 /-- One is not zero. -/
 theorem one_ne_zero : ¬ (1 : Nat) = 0 := fun same => Nat.noConfusion same
 
-theorem not_not : ∀ b : Bool, (!!b) = b
-  | true => rfl
-  | false => rfl
-
 theorem holds_self : ∀ b, holds b b = 1
   | true => rfl
   | false => rfl
@@ -1807,7 +1796,7 @@ theorem closed (t : Nat) : flow.ClosedAt all t :=
   fun _ _ c out => absurd (every c) out
 
 theorem reverses (t : Nat) : flow.Reverses (t + 1) t :=
-  ⟨rfl, fun _ _ => rfl, fun _ c => congrArg (fun s => at_ s c) (not_not (side t))⟩
+  ⟨rfl, fun _ _ => rfl, fun _ c => congrArg (fun s => at_ s c) (ListTests.not_not (side t))⟩
 
 theorem embodied : world.Embodied := fun _ _ => Iff.rfl
 
@@ -1830,7 +1819,7 @@ theorem counted : world.Counted :=
 theorem config_back (T : Nat) : web.config all (T + 2) = web.config all T :=
   map_congr (fun x => match x with
     | none => rfl
-    | some b => congrArg (holds b) (not_not (side T))) all
+    | some b => congrArg (holds b) (ListTests.not_not (side T))) all
 
 theorem changes (T : Nat) : web.Changes all T := fun same =>
   one_ne_zero ((holds_self (side T)).symm.trans

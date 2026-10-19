@@ -121,15 +121,6 @@ variable {α β γ : Type} {F C : Type}
 
 /-! ## Lists and numbers -/
 
-/-- Membership in two lists joined is membership in one of them. -/
-theorem mem_append_cases {a : α} : ∀ {l m : List α}, a ∈ l ++ m → a ∈ l ∨ a ∈ m
-  | [], _, mem => .inr mem
-  | b :: l, _, mem => match mem_cons_cases mem with
-    | .inl same => .inl (Eq.subst (motive := fun x => x ∈ b :: l) same.symm (.head l))
-    | .inr mem => match mem_append_cases mem with
-      | .inl inside => .inl (.tail b inside)
-      | .inr outside => .inr outside
-
 /-- Two lists without repetition and with no member in common join without repetition. -/
 theorem distinct_append : ∀ {l m : List α}, Distinct l → Distinct m →
     (∀ a, a ∈ l → ¬ a ∈ m) → Distinct (l ++ m)
@@ -140,21 +131,6 @@ theorem distinct_append : ∀ {l m : List α}, Distinct l → Distinct m →
       | .inr outside => apart a (.head l) outside,
      distinct_append distinctL distinctM fun b mem => apart b (.tail a mem)⟩
 
-theorem length_map (g : α → β) : ∀ l : List α, (l.map g).length = l.length
-  | [] => rfl
-  | _ :: l => congrArg Nat.succ (length_map g l)
-
-theorem map_comp_eq (g : α → β) (h : β → γ) :
-    ∀ l : List α, (l.map g).map h = l.map fun a => h (g a)
-  | [] => rfl
-  | a :: l => congrArg (h (g a) :: ·) (map_comp_eq g h l)
-
-/-- Maps agreeing at every point agree on every list, with no function extensionality. -/
-theorem map_eq_of {g h : α → β} (same : ∀ a, g a = h a) : ∀ l : List α, l.map g = l.map h
-  | [] => rfl
-  | a :: l => show g a :: l.map g = h a :: l.map h from
-      congr (congrArg List.cons (same a)) (map_eq_of same l)
-
 theorem steps_succ_map (g : Nat → α) :
     ∀ T n, (steps (T + 1) n).map g = (steps T n).map fun i => g (i + 1)
   | _, 0 => rfl
@@ -164,12 +140,6 @@ theorem total_steps_succ (q : Nat → Nat) :
     ∀ T n, total (steps (T + 1) n) q = total (steps T n) fun i => q (i + 1)
   | _, 0 => rfl
   | T, n + 1 => congrArg (q (T + 1) + ·) (total_steps_succ q (T + 1) n)
-
-theorem map_eq_singleton {g : α → β} {b : β} :
-    ∀ {l : List α}, l.map g = [b] → ∃ a, l = [a] ∧ g a = b
-  | [], same => by cases same
-  | [a], same => ⟨a, rfl, by injection same⟩
-  | _ :: _ :: _, same => by injection same with _ rest; cases rest
 
 theorem sign_eq_one : ∀ {n : Nat}, 0 < n → sign n = 1
   | 0, pos => absurd pos (Nat.lt_irrefl 0)
@@ -723,7 +693,7 @@ theorem unitList_length : ∀ (P : List Passage) (u : Nat), u ≤ total P Passag
     (unitList P u).length = u
   | [], _, le => (Flow.eq_zero_of_le_zero le).symm
   | p :: P, u, le =>
-    (length_append _ _).trans ((congr (congrArg (· + ·)
+    (ListTests.length_append _ _).trans ((congr (congrArg (· + ·)
       ((length_map _ _).trans (steps_length 0 _)))
       ((length_map _ _).trans (unitList_length P _
         (excess_le_of (x := p.taken) (y := total P Passage.taken) le)))).trans

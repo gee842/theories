@@ -1,0 +1,18 @@
+Becoming.ListedOutcomeFrames.sameBranchingTests_fix_iff_llpoForDecided : (∀ (S : Type)
+    (F G : Becoming.Frame S Unit Empty) (s s' : S),
+    Becoming.OutcomesListed F →
+      Becoming.OutcomesListed G → Becoming.SameBranchingTests F G s s' → Becoming.Alike F G s s') ↔
+  Becoming.LLPOForDecided
+Becoming.ListedOutcomeFrames.llpo_of_sameBranchingTests_fix : (∀ (S : Type) (F G : Becoming.Frame S Unit Empty)
+    (s s' : S),
+    Becoming.OutcomesListed F →
+      Becoming.OutcomesListed G → Becoming.SameBranchingTests F G s s' → Becoming.Alike F G s s') →
+  Becoming.LLPO
+@Becoming.ListedOutcomeFrames.alike_iff_sameBranchingTests_of_nowhereDecided : ∀ {S : Type u_1} {S' : Type u_2}
+  {A : Type u_3} {C : Type u_4} {F : Becoming.Frame S A C} {G : Becoming.Frame S' A C},
+  Becoming.NowhereDecided →
+    (∃ l, ∀ (a : A), a ∈ l) →
+      (∃ l, ∀ (c : C), c ∈ l) →
+        Becoming.OutcomesListed F →
+          Becoming.OutcomesListed G →
+            ∀ {s : S} {s' : S'}, Becoming.Alike F G s s' ↔ Becoming.SameBranchingTests F G s s'

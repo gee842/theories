@@ -105,13 +105,6 @@ def gap (a b : Nat) : Nat := (a - b) + (b - a)
 
 namespace Propagation
 
-/-- As `Nat.sub_eq_zero_of_le`, with an empty axiom report. -/
-theorem sub_zero_of_le : ∀ {n m : Nat}, n ≤ m → n - m = 0
-  | 0, m, _ => Nat.zero_sub m
-  | n + 1, 0, le => absurd le (Nat.not_succ_le_zero n)
-  | n + 1, m + 1, le =>
-    (Nat.succ_sub_succ n m).trans (sub_zero_of_le (Nat.le_of_succ_le_succ le))
-
 /-- What is at most `a + m` leaves at most `m` once `a` is taken away. -/
 theorem sub_le_of_le_add : ∀ {b : Nat} (a : Nat) {m : Nat}, b ≤ a + m → b - a ≤ m
   | b, 0, m, le =>
@@ -122,23 +115,12 @@ theorem sub_le_of_le_add : ∀ {b : Nat} (a : Nat) {m : Nat}, b ≤ a + m → b 
       (sub_le_of_le_add a
         (Nat.le_of_succ_le_succ (Nat.le_trans le (Nat.le_of_eq (Nat.add_right_comm a 1 m)))))
 
-/-- As `Nat.add_sub_cancel_left`, with an empty axiom report. -/
-theorem add_sub_self_left : ∀ (a n : Nat), a + n - a = n
-  | 0, n => (congrArg (· - 0) (Nat.zero_add n)).trans (Nat.sub_zero n)
-  | a + 1, n =>
-    (congrArg (· - (a + 1)) (Nat.add_right_comm a 1 n)).trans
-      ((Nat.succ_sub_succ (a + n) a).trans (add_sub_self_left a n))
-
 /-- A rearrangement of five amounts, with an empty axiom report. -/
 theorem rearrange (b x u v w : Nat) : b + (x + u) + (v + w) = b + (v + (u + w)) + x :=
   (Nat.add_assoc b (x + u) (v + w)).trans
     ((congrArg (b + ·) ((Nat.add_assoc x u (v + w)).trans
       ((congrArg (x + ·) (Nat.add_left_comm u v w)).trans (Nat.add_comm x _)))).trans
       (Nat.add_assoc b _ x).symm)
-
-/-- Two equal summands give equal sums, with an empty axiom report. -/
-theorem add_congr {a b c d : Nat} (ab : a = b) (cd : c = d) : a + c = b + d :=
-  (congrArg (· + c) ab).trans (congrArg (b + ·) cd)
 
 end Propagation
 
@@ -157,8 +139,8 @@ theorem gap_zero (a : Nat) : gap a 0 = a :=
 
 /-- An amount with `m` added is `m` from the amount. -/
 theorem gap_add_self (a m : Nat) : gap (a + m) a = m :=
-  (congrArg (a + m - a + ·) (sub_zero_of_le (Nat.le_add_right a m))).trans
-    ((Nat.add_zero _).trans (add_sub_self_left a m))
+  (congrArg (a + m - a + ·) (sub_eq_zero_of_le (Nat.le_add_right a m))).trans
+    ((Nat.add_zero _).trans (Naturals.add_sub_cancel_left a m))
 
 /-- Each amount is at most the other with the gap added. -/
 theorem le_add_gap (a b : Nat) : a ≤ b + gap a b :=
@@ -171,11 +153,11 @@ theorem gap_le_of {a b m : Nat} (ab : a ≤ b + m) (ba : b ≤ a + m) : gap a b 
   match Nat.le_total a b with
   | .inl le =>
     Nat.le_trans
-      (Nat.le_of_eq ((congrArg (· + (b - a)) (sub_zero_of_le le)).trans (Nat.zero_add _)))
+      (Nat.le_of_eq ((congrArg (· + (b - a)) (sub_eq_zero_of_le le)).trans (Nat.zero_add _)))
       (sub_le_of_le_add a ba)
   | .inr le =>
     Nat.le_trans
-      (Nat.le_of_eq ((congrArg ((a - b) + ·) (sub_zero_of_le le)).trans (Nat.add_zero _)))
+      (Nat.le_of_eq ((congrArg ((a - b) + ·) (sub_eq_zero_of_le le)).trans (Nat.add_zero _)))
       (sub_le_of_le_add b ab)
 
 /-- **The gap, by bounds.** The gap of two amounts is at most `m` exactly where each is at most
@@ -438,18 +420,6 @@ theorem of_mem_map_pair {s : Nat} {x : Nat × C} :
       have inner := of_mem_map_pair later
       exact ⟨inner.1, .tail _ inner.2⟩
 
-/-- A member of two lists joined is a member of one of them. -/
-theorem mem_append_cases {α : Type} {a : α} : ∀ {l m : List α}, a ∈ l ++ m → a ∈ l ∨ a ∈ m
-  | [], _, mem => .inr mem
-  | b :: l, m, mem =>
-    have unfolded : a ∈ b :: (l ++ m) := mem
-    match unfolded with
-    | .head _ => .inl (.head _)
-    | .tail _ later =>
-      match mem_append_cases later with
-      | .inl here => .inl (.tail _ here)
-      | .inr there => .inr there
-
 end Propagation
 
 /-- The levels `(s, d)` with `s` among `ss` and `d` among `ds`. -/
@@ -467,7 +437,7 @@ theorem mem_cellsOf {ds : List C} {s : Nat} {d : C} (inDs : d ∈ ds) :
 theorem of_mem_cellsOf {ds : List C} {x : Nat × C} :
     ∀ {ss : List Nat}, x ∈ cellsOf ds ss → x.1 ∈ ss ∧ x.2 ∈ ds
   | s :: ss, mem =>
-    match Propagation.mem_append_cases mem with
+    match mem_append_cases mem with
     | .inl here =>
       have pair := Propagation.of_mem_map_pair here
       ⟨pair.1 ▸ .head ss, pair.2⟩
@@ -1125,8 +1095,8 @@ theorem carried_add (σ₁ σ₂ : Nat → F → C → Nat) (δ₁ δ₂ : C →
           exact (congrArg (k t h c s d * ·) (ih s (Propagation.le_of_mem_steps_upto mem) d)).trans
             (Nat.left_distrib _ _ _)
         refine (carried_succ t c).trans ?_
-        refine Eq.trans ?_ (Propagation.add_congr (carried_succ t c).symm (carried_succ t c).symm)
-        refine (Propagation.add_congr (ih t (Nat.le_refl t) c) ((total_congr_on each).trans
+        refine Eq.trans ?_ (Naturals.add_congr (carried_succ t c).symm (carried_succ t c).symm)
+        refine (Naturals.add_congr (ih t (Nat.le_refl t) c) ((total_congr_on each).trans
           (total_add _ _ _))).trans ?_
         exact Nat.add_add_add_comm _ _ _ _
   upto t t (Nat.le_refl t) c

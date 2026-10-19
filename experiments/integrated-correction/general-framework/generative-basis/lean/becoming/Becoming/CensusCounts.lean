@@ -61,12 +61,6 @@ namespace Becoming
 
 variable {α : Type}
 
-/-- What is at least `c` is something more than `c`. -/
-theorem exists_add_of_le : ∀ {c n : Nat}, c ≤ n → ∃ k, n = k + c
-  | _, _, .refl => ⟨0, (Nat.zero_add _).symm⟩
-  | _, _, .step le => match exists_add_of_le le with
-    | ⟨k, sum⟩ => ⟨k + 1, (congrArg (· + 1) sum).trans (Nat.succ_add k _).symm⟩
-
 /-- Adding the same on the right cancels. -/
 theorem cancel_add_right {a b : Nat} : ∀ c : Nat, a + c = b + c → a = b
   | 0, same => same

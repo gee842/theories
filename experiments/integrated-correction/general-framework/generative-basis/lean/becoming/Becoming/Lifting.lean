@@ -1,6 +1,5 @@
-import Becoming.Metaethics
 import Becoming.Frame
-import Becoming.ValuationFrames
+import Becoming.Extension
 
 /-!
 # The lifting rule L on a frame's responses

@@ -72,23 +72,6 @@ structure Dyadic where
 
 namespace Dyadic
 
-theorem mul_assoc' (a b : Nat) : ∀ c, a * b * c = a * (b * c)
-  | 0 => rfl
-  | c + 1 => (congrArg (· + a * b) (mul_assoc' a b c)).trans (Nat.left_distrib a (b * c) b).symm
-
-theorem right_distrib' (a b c : Nat) : (a + b) * c = a * c + b * c := by
-  rw [Nat.mul_comm, Nat.left_distrib, Nat.mul_comm c a, Nat.mul_comm c b]
-
-theorem mul_right_comm' (a b c : Nat) : a * b * c = a * c * b := by
-  rw [mul_assoc', Nat.mul_comm b c, ← mul_assoc']
-
-theorem mul_left_comm' (a b c : Nat) : a * (b * c) = b * (a * c) := by
-  rw [← mul_assoc', Nat.mul_comm a b, mul_assoc']
-
-theorem pow_add' (b x : Nat) : ∀ y, b ^ (x + y) = b ^ x * b ^ y
-  | 0 => (Nat.mul_one _).symm
-  | y + 1 => (congrArg (· * b) (pow_add' b x y)).trans (mul_assoc' _ _ _)
-
 theorem ext' : ∀ {a b : Dyadic}, a.num = b.num → a.exp = b.exp → a = b
   | ⟨_, _⟩, ⟨_, _⟩, rfl, rfl => rfl
 
@@ -104,20 +87,20 @@ def zero : Dyadic := ⟨0, 0⟩
 theorem le_trans' {a b c : Dyadic} (ab : le a b) (bc : le b c) : le a c :=
   Nat.le_of_mul_le_mul_right
     (calc a.num * 2 ^ c.exp * 2 ^ b.exp
-        = a.num * 2 ^ b.exp * 2 ^ c.exp := mul_right_comm' _ _ _
+        = a.num * 2 ^ b.exp * 2 ^ c.exp := Naturals.mul_right_comm _ _ _
       _ ≤ b.num * 2 ^ a.exp * 2 ^ c.exp := Nat.mul_le_mul_right _ ab
-      _ = b.num * 2 ^ c.exp * 2 ^ a.exp := mul_right_comm' _ _ _
+      _ = b.num * 2 ^ c.exp * 2 ^ a.exp := Naturals.mul_right_comm _ _ _
       _ ≤ c.num * 2 ^ b.exp * 2 ^ a.exp := Nat.mul_le_mul_right _ bc
-      _ = c.num * 2 ^ a.exp * 2 ^ b.exp := mul_right_comm' _ _ _)
+      _ = c.num * 2 ^ a.exp * 2 ^ b.exp := Naturals.mul_right_comm _ _ _)
     (Nat.two_pow_pos _)
 
 theorem add_assoc' (a b c : Dyadic) : add (add a b) c = add a (add b c) :=
   ext' (by
     show (a.num * 2 ^ b.exp + b.num * 2 ^ a.exp) * 2 ^ c.exp + c.num * 2 ^ (a.exp + b.exp)
       = a.num * 2 ^ (b.exp + c.exp) + (b.num * 2 ^ c.exp + c.num * 2 ^ b.exp) * 2 ^ a.exp
-    rw [right_distrib', right_distrib', pow_add' 2 a.exp b.exp, pow_add' 2 b.exp c.exp,
-      mul_assoc' a.num, mul_right_comm' b.num (2 ^ a.exp) (2 ^ c.exp),
-      mul_assoc' c.num (2 ^ b.exp) (2 ^ a.exp), Nat.mul_comm (2 ^ b.exp) (2 ^ a.exp),
+    rw [add_mul_split, add_mul_split, Naturals.pow_add 2 a.exp b.exp, Naturals.pow_add 2 b.exp c.exp,
+      mul_assoc_nat a.num, Naturals.mul_right_comm b.num (2 ^ a.exp) (2 ^ c.exp),
+      mul_assoc_nat c.num (2 ^ b.exp) (2 ^ a.exp), Nat.mul_comm (2 ^ b.exp) (2 ^ a.exp),
       Nat.add_assoc])
     (Nat.add_assoc _ _ _)
 
@@ -130,8 +113,8 @@ theorem zero_add' (a : Dyadic) : add zero a = a :=
 
 theorem expand (x y e f g : Nat) :
     (x * 2 ^ g + y * 2 ^ e) * 2 ^ (f + g) = x * 2 ^ f * (2 ^ g * 2 ^ g) + y * (2 ^ e * 2 ^ f * 2 ^ g) := by
-  rw [right_distrib', pow_add', mul_assoc' x, mul_left_comm' (2 ^ g) (2 ^ f), ← mul_assoc' x,
-    mul_assoc' y, ← mul_assoc' (2 ^ e)]
+  rw [add_mul_split, Naturals.pow_add, mul_assoc_nat x, mul_turn (2 ^ g) (2 ^ f), ← mul_assoc_nat x,
+    mul_assoc_nat y, ← mul_assoc_nat (2 ^ e)]
 
 theorem add_le_add_right' {a b : Dyadic} (c : Dyadic) (h : le a b) : le (add a c) (add b c) := by
   show (a.num * 2 ^ c.exp + c.num * 2 ^ a.exp) * 2 ^ (b.exp + c.exp)
@@ -183,7 +166,7 @@ theorem times_ge (n k : Nat) : ∀ m, le ⟨m * n, k⟩ (amounts.times m ⟨n, k
       ((Nat.zero_mul _).trans (Nat.zero_mul _).symm))
   | m + 1 => le_trans' (b := add ⟨m * n, k⟩ ⟨n, k⟩)
       (show (m + 1) * n * 2 ^ (k + k) ≤ (m * n * 2 ^ k + n * 2 ^ k) * 2 ^ k from by
-        rw [← right_distrib', Nat.succ_mul, pow_add', mul_assoc']
+        rw [← add_mul_split, Nat.succ_mul, Naturals.pow_add, mul_assoc_nat]
         exact Nat.le_refl _)
       (add_le_add_right' ⟨n, k⟩ (times_ge n k m))
 
@@ -209,8 +192,8 @@ def loss (t : Nat) : Dyadic := ⟨1, t + 1⟩
 
 theorem falls (t : Nat) : Dyadic.amounts.le (Dyadic.amounts.add (stock (t + 1)) (loss t)) (stock t) := by
   show (1 * 2 ^ (t + 1) + 1 * 2 ^ (t + 1)) * 2 ^ t ≤ 1 * 2 ^ ((t + 1) + (t + 1))
-  rw [Nat.one_mul, Nat.one_mul, ← Nat.mul_two, Dyadic.pow_add' 2 (t + 1) (t + 1),
-    Dyadic.mul_assoc', Nat.mul_comm 2 (2 ^ t)]
+  rw [Nat.one_mul, Nat.one_mul, ← Nat.mul_two, Naturals.pow_add 2 (t + 1) (t + 1),
+    mul_assoc_nat, Nat.mul_comm 2 (2 ^ t)]
   exact Nat.le_refl _
 
 theorem loss_positive (t : Nat) : ¬ Dyadic.amounts.le (loss t) Dyadic.amounts.zero :=

@@ -95,11 +95,11 @@ theorem Context.realizes_right (J : Joining F) (c : Context F) (a : F) (x y : F)
 /-- The course of a context spliced into another: the inner course, then the outer. -/
 theorem Context.course_splice (inner : Context F) :
     ∀ outer : Context F, (outer.splice inner).course = inner.course ++ outer.course
-  | .hole => (appended_nil inner.course).symm
+  | .hole => (ListTests.append_nil inner.course).symm
   | .left a c => (congrArg (fun l => l ++ [Move.withLeft a]) (Context.course_splice inner c)).trans
-      (appended_assoc inner.course c.course [.withLeft a])
+      (ListTests.append_assoc inner.course c.course [.withLeft a])
   | .right c a => (congrArg (fun l => l ++ [Move.withRight a]) (Context.course_splice inner c)).trans
-      (appended_assoc inner.course c.course [.withRight a])
+      (ListTests.append_assoc inner.course c.course [.withRight a])
 
 /-- **Contexts compose**: a spliced context realizes what the outer realizes from what the inner
 realizes. -/

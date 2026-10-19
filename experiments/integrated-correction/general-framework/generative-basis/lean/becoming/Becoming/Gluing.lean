@@ -153,14 +153,6 @@ theorem oddOver_map (g : α → β) (q : β → Bool) : ∀ l : List α,
   | [] => rfl
   | a :: l => congrArg (addParity (q (g a))) (oddOver_map g q l)
 
-/-- A member of a mapped list is the image of a member. -/
-theorem image_of_mem_map {g : α → β} {b : β} : ∀ {l : List α}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
-  | [], mem => nomatch mem
-  | a :: _, mem => match mem_cons_cases mem with
-    | .inl same => ⟨a, .head _, same.symm⟩
-    | .inr mem => match image_of_mem_map mem with
-      | ⟨a', found, same⟩ => ⟨a', .tail a found, same⟩
-
 /-! ### Counting what is odd -/
 
 theorem count_le_length (q : α → Bool) : ∀ l : List α, total l (fun a => cond (q a) 1 0) ≤ l.length
@@ -295,7 +287,7 @@ theorem pull_back {rs : List (ParityConstraint C)} {x : C} {p : ParityConstraint
   | [], _ => ⟨[], (fun _ mem => nomatch mem), (fun _ => rfl), rfl⟩
   | k' :: rest, sub =>
     match pull_back pmem rest (fun k mem => sub k (.tail k' mem)) with
-    | ⟨_, ksub, counts, odd⟩ => match image_of_mem_map (sub k' (.head rest)) with
+    | ⟨_, ksub, counts, odd⟩ => match preimage_of_mem_map (sub k' (.head rest)) with
       | ⟨r, rmem, same⟩ =>
         Eq.subst (motive := fun k => ∃ ks₀, (∀ k, k ∈ ks₀ → k ∈ rs) ∧
             (∀ c, oddOver ks₀ (fun r => r.counts c) = oddOver (k :: rest) (fun r => r.counts c)) ∧
@@ -338,7 +330,7 @@ theorem met_or_contradicts [DecidableEq C] : ∀ (xs : List C), Distinct xs →
       | .inr ⟨ks', sub', even', odd'⟩ => match pull_back pmem ks' sub' with
         | ⟨ks, sub, counts, odd⟩ => .inr ⟨ks, sub, (fun c mem => match c, mem with
             | _, .head _ => (counts x).trans (oddOver_false fun k found =>
-                match image_of_mem_map (sub' k found) with
+                match preimage_of_mem_map (sub' k found) with
                 | ⟨r, _, same⟩ => Eq.subst (motive := fun k => k.counts x = false) same
                     (eliminate_counts pivot r))
             | c, .tail _ mem => (counts c).trans (even' c mem)),
@@ -452,7 +444,7 @@ theorem lift_selection {all : List K} : ∀ rs : List (ParityConstraint C),
       ∃ ks : List K, (∀ k, k ∈ ks → k ∈ all) ∧ ks.map S.constraint = rs
   | [], _ => ⟨[], (fun _ mem => nomatch mem), rfl⟩
   | r :: rest, sub => match lift_selection rest (fun r' mem => sub r' (.tail r mem)) with
-    | ⟨ks, ksub, same⟩ => match image_of_mem_map (sub r (.head rest)) with
+    | ⟨ks, ksub, same⟩ => match preimage_of_mem_map (sub r (.head rest)) with
       | ⟨k, kmem, image⟩ => ⟨k :: ks, (fun k' mem => match k', mem with
           | _, .head _ => kmem
           | k', .tail _ mem => ksub k' mem),
@@ -827,7 +819,7 @@ theorem walk_meets {n : Nat} {pol : Nat → Bool} {close : Bool}
     ∀ k, k ∈ edges n → (system n pol close).support k (walk pol)
   | none, _ => (value_pair n (walk pol) (Nat.lt_succ_self n) (Nat.zero_lt_succ n)).trans
       ((addParity_false (walk pol n)).trans (eq_of_even close (walk pol n) even))
-  | some _, .tail _ mem => match image_of_mem_map mem with
+  | some _, .tail _ mem => match preimage_of_mem_map mem with
     | ⟨k, below, same⟩ =>
       Eq.subst (motive := fun j => (system n pol close).support j (walk pol)) same
         ((value_pair n (walk pol) (Nat.lt_succ_of_lt (lt_of_mem_down below))

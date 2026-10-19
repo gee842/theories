@@ -185,11 +185,6 @@ theorem of_listsOnce {B : Prop} {l : List α} (decided : IdentityDecided l)
 
 /-! ## Sums and counts once per member -/
 
-/-- `a` stands in the middle of a list. -/
-theorem mem_middle {a : α} {q : List α} : ∀ p : List α, a ∈ p ++ a :: q
-  | [] => .head q
-  | x :: p => .tail x (mem_middle p)
-
 /-- In a list without repetition, a member standing in the middle stands nowhere else. -/
 theorem not_mem_of_middle {a : α} : ∀ {p q : List α}, Distinct (p ++ a :: q) → ¬ a ∈ p ++ q
   | [], _, ⟨fresh, _⟩, mem => fresh mem

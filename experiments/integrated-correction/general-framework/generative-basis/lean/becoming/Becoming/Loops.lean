@@ -129,11 +129,6 @@ theorem ble_succ_self : ∀ n : Nat, Nat.ble (n + 1) n = false
   | 0 => rfl
   | n + 1 => ble_succ_self n
 
-/-- Every number equals itself. -/
-theorem beq_self : ∀ n : Nat, Nat.beq n n = true
-  | 0 => rfl
-  | n + 1 => beq_self n
-
 /-- `v` up to `n`, then `c`. -/
 def extend (v : Nat → C) (n : Nat) (c : C) : Nat → C :=
   fun i => bif Nat.ble i n then v i else c
@@ -175,25 +170,13 @@ theorem mul_lt_mul_of_pos {m a b : Nat} (pos : 0 < m) (lt : a < b) : m * a < m *
 theorem le_mul_of_pos {m : Nat} (pos : 0 < m) (n : Nat) : n ≤ m * n :=
   Nat.le_trans (Nat.le_of_eq (Nat.one_mul n).symm) (Nat.mul_le_mul_right n pos)
 
-/-- Products regroup, with no extensionality. -/
-theorem mul_assoc_nat : ∀ a b c : Nat, a * b * c = a * (b * c)
-  | _, _, 0 => rfl
-  | a, b, c + 1 => (Nat.mul_succ (a * b) c).trans
-      ((congrArg (· + a * b) (mul_assoc_nat a b c)).trans
-        ((Nat.mul_add a (b * c) b).symm.trans (congrArg (a * ·) (Nat.mul_succ b c).symm)))
-
-/-- A sum times a number, with no extensionality. -/
-theorem add_mul_nat (a b : Nat) : ∀ c, (a + b) * c = a * c + b * c
-  | 0 => rfl
-  | c + 1 => (congrArg (· + (a + b)) (add_mul_nat a b c)).trans (Nat.add_add_add_comm _ _ _ _)
-
 /-- Regrouping a product of three. -/
 theorem mul_swap (a b c : Nat) : a * b * c = b * (a * c) :=
   (congrArg (· * c) (Nat.mul_comm a b)).trans (mul_assoc_nat b a c)
 
 /-- One plus a number, times another. -/
 theorem one_add_mul (m x : Nat) : (1 + m) * x = x + m * x :=
-  (add_mul_nat 1 m x).trans (congrArg (· + m * x) (Nat.one_mul x))
+  (add_mul_split 1 m x).trans (congrArg (· + m * x) (Nat.one_mul x))
 
 end Loops
 
@@ -289,7 +272,7 @@ theorem carriedFrom_congr {l l' : Nat → C → Nat} :
       carriedFrom cs part σ k present δ l t c = carriedFrom cs part σ k present δ l' t c
   | 0, _, _ => rfl
   | t + 1, same, c =>
-    Propagation.add_congr
+    Naturals.add_congr
       (carriedFrom_congr t (fun s d lt dMem => same s d (Nat.lt_succ_of_lt lt) dMem) c)
       (total_congr_on fun _ _ => carriedGive_congr fun s d le dMem _ _ =>
         same s d (Nat.lt_succ_of_le le) dMem)
@@ -302,7 +285,7 @@ theorem carriedFrom_eq_carried {l : Nat → C → Nat} {c : C}
     ∀ t, carriedFrom cs part σ k present δ l t c = carried cs part σ k present δ t c
   | 0 => rfl
   | t + 1 =>
-    (Propagation.add_congr (carriedFrom_eq_carried alike t) (total_congr_on (alike t))).trans
+    (Naturals.add_congr (carriedFrom_eq_carried alike t) (total_congr_on (alike t))).trans
       (carried_succ t c).symm
 
 /-- **Every order is at most the carried amount.** -/
@@ -843,7 +826,7 @@ theorem missBound_add_withinBound (M D : Nat) :
         ((congrArg (_ + ·) (withinBound_zero M D t).symm).trans
           (missBound_add_withinBound M D 0 t))))
   | j + 1, t + 1 =>
-    (Nat.add_add_add_comm _ _ _ _).trans (Propagation.add_congr
+    (Nat.add_add_add_comm _ _ _ _).trans (Naturals.add_congr
       (missBound_add_withinBound M D (j + 1) t)
       ((Nat.mul_add M _ _).symm.trans (congrArg (M * ·) (missBound_add_withinBound M D j t))))
 
@@ -893,7 +876,7 @@ theorem orderSum_step (M j t : Nat) :
     orderSum M (j + 1) (t + 1) = orderSum M (j + 1) t + M * orderSum M j t :=
   (orderSum_succ M j (t + 1)).trans
     ((congrArg (1 + ·)
-      ((total_congr (fun i => (add_mul_nat (binom t i) (binom t (i + 1)) (M ^ (i + 1))).trans
+      ((total_congr (fun i => (add_mul_split (binom t i) (binom t (i + 1)) (M ^ (i + 1))).trans
           (Nat.add_comm _ _)) _).trans
         ((total_add _ _ _).trans (congrArg (_ + ·)
           ((total_congr (fun i => pow_step (binom t i) M i) _).trans
@@ -908,7 +891,7 @@ theorem withinBound_eq (M D : Nat) : ∀ j t, withinBound M D j t = D * orderSum
       ((Nat.mul_one D).symm.trans (congrArg (D * ·) (orderSum_zero M t).symm))
   | j + 1, 0 => (Nat.mul_one D).symm.trans (congrArg (D * ·) (orderSum_start M (j + 1)).symm)
   | j + 1, t + 1 =>
-    (Propagation.add_congr (withinBound_eq M D (j + 1) t)
+    (Naturals.add_congr (withinBound_eq M D (j + 1) t)
         (congrArg (M * ·) (withinBound_eq M D j t))).trans
       ((congrArg (_ + ·) ((mul_assoc_nat M D _).symm.trans
           ((congrArg (· * _) (Nat.mul_comm M D)).trans (mul_assoc_nat D M _)))).trans
@@ -1144,7 +1127,7 @@ theorem carried_eq (M D : Nat) : ∀ t,
     carried [()] (fun _ => false) (fun _ _ _ => 0) (strengths M) (fun _ => [()]) (fun _ => D) t () =
       geomBound M D t
   | 0 => rfl
-  | t + 1 => (carried_succ t ()).trans (Propagation.add_congr (carried_eq M D t)
+  | t + 1 => (carried_succ t ()).trans (Naturals.add_congr (carried_eq M D t)
       ((give M t _).trans (congrArg (M * ·) (carried_eq M D t))))
 
 /-- Its orders carry exactly the bound of what `j` orders can carry. -/
@@ -1153,7 +1136,7 @@ theorem carriedWithin_eq (M D : Nat) : ∀ j t,
       (fun _ => D) j t () = withinBound M D j t
   | 0, t => (carriedWithin_zero_quiet t ()).trans (withinBound_zero M D t).symm
   | _ + 1, 0 => rfl
-  | j + 1, t + 1 => Propagation.add_congr (carriedWithin_eq M D (j + 1) t)
+  | j + 1, t + 1 => Naturals.add_congr (carriedWithin_eq M D (j + 1) t)
       ((give M t _).trans (congrArg (M * ·) (carriedWithin_eq M D j t)))
 
 /-- **The accuracy of a cut is attained.** For the self-loop, with starting gap `D` and strength
@@ -1205,7 +1188,7 @@ theorem exact (δ : Unit → Nat) : ∀ t,
       (carriedWithin [()] (fun _ => false) (fun _ _ _ => 0) strengths (fun _ => [()]) δ 0)
     have whole := give_zero
       (carried [()] (fun _ => false) (fun _ _ _ => 0) strengths (fun _ => [()]) δ)
-    (Propagation.add_congr rfl (within.trans whole.symm)).trans
+    (Naturals.add_congr rfl (within.trans whole.symm)).trans
       (carried_succ (cs := [()]) (part := fun _ => false) (σ := fun _ _ _ => 0) (k := strengths)
         (present := fun _ => [()]) (δ := δ) 0 ()).symm
   | t + 2 =>
@@ -1213,7 +1196,7 @@ theorem exact (δ : Unit → Nat) : ∀ t,
       (carriedWithin [()] (fun _ => false) (fun _ _ _ => 0) strengths (fun _ => [()]) δ 0)
     have whole := give_succ t
       (carried [()] (fun _ => false) (fun _ _ _ => 0) strengths (fun _ => [()]) δ)
-    (Propagation.add_congr (exact δ (t + 1)) (within.trans whole.symm)).trans
+    (Naturals.add_congr (exact δ (t + 1)) (within.trans whole.symm)).trans
       (carried_succ (cs := [()]) (part := fun _ => false) (σ := fun _ _ _ => 0) (k := strengths)
         (present := fun _ => [()]) (δ := δ) (t + 1) ()).symm
 
@@ -1243,7 +1226,7 @@ def stationary (K : F → C → C → Nat) : Nat → F → C → Nat → C → N
 /-- What a stationary strength is at the current level. -/
 theorem stationary_now (K : F → C → C → Nat) (t : Nat) (h : F) (c d : C) :
     stationary K t h c t d = K h c d :=
-  congrArg (fun b => bif b then K h c d else 0) (Loops.beq_self t)
+  congrArg (fun b => bif b then K h c d else 0) (beq_self t)
 
 /-- **A stationary coupling holds at every step.** -/
 theorem couplesAlways_of_stationary {K : F → C → C → Nat} {hs : List F} {d c : C}
@@ -1297,25 +1280,13 @@ end Stationary
 
 namespace Loops
 
-theorem mul_left_comm_nat (a b c : Nat) : a * (b * c) = b * (a * c) :=
-  (mul_assoc_nat a b c).symm.trans
-    ((congrArg (· * c) (Nat.mul_comm a b)).trans (mul_assoc_nat b a c))
-
-theorem mul_mul_mul_comm_nat (a b c d : Nat) : a * b * (c * d) = a * c * (b * d) :=
-  (mul_assoc_nat a b (c * d)).trans ((congrArg (a * ·) (mul_left_comm_nat b c d)).trans
-    (mul_assoc_nat a c (b * d)).symm)
-
-theorem pow_add_nat (b x : Nat) : ∀ y, b ^ (x + y) = b ^ x * b ^ y
-  | 0 => (Nat.mul_one _).symm
-  | y + 1 => (congrArg (· * b) (pow_add_nat b x y)).trans (mul_assoc_nat _ _ _)
-
 theorem pow_mul_nat (b a : Nat) : ∀ n, (b ^ a) ^ n = b ^ (a * n)
   | 0 => rfl
-  | n + 1 => (congrArg (· * b ^ a) (pow_mul_nat b a n)).trans (pow_add_nat b (a * n) a).symm
+  | n + 1 => (congrArg (· * b ^ a) (pow_mul_nat b a n)).trans (Naturals.pow_add b (a * n) a).symm
 
 theorem mul_pow_nat (x y : Nat) : ∀ n, (x * y) ^ n = x ^ n * y ^ n
   | 0 => rfl
-  | n + 1 => (congrArg (· * (x * y)) (mul_pow_nat x y n)).trans (mul_mul_mul_comm_nat _ _ _ _)
+  | n + 1 => (congrArg (· * (x * y)) (mul_pow_nat x y n)).trans (Naturals.mul_mul_mul_comm _ _ _ _)
 
 theorem pow_le_pow_base {a b : Nat} (le : a ≤ b) : ∀ n, a ^ n ≤ b ^ n
   | 0 => Nat.le_refl 1
@@ -1358,7 +1329,7 @@ theorem sq_lt_two_pow : ∀ a, (a + 5) * (a + 5) < 2 ^ (a + 5)
         ((Nat.mul_comm 2 (a + 5)).trans ((Nat.mul_succ (a + 5) 1).trans
           (congrArg (· + (a + 5)) (Nat.mul_one _)))).symm)
     have expand : (a + 6) * (a + 6) = (a + 5) * (a + 5) + (2 * (a + 5) + 1) :=
-      (add_mul_nat (a + 5) 1 (a + 6)).trans ((Propagation.add_congr (Nat.mul_succ _ _)
+      (add_mul_split (a + 5) 1 (a + 6)).trans ((Naturals.add_congr (Nat.mul_succ _ _)
         (Nat.one_mul _)).trans ((Nat.add_assoc _ _ _).trans (congrArg (_ + ·) twice)))
     Nat.lt_of_le_of_lt (Nat.le_of_eq expand)
       (Nat.lt_of_lt_of_le (Nat.add_lt_add (sq_lt_two_pow a) (odd_lt_two_pow (a + 2)))
@@ -1369,7 +1340,7 @@ theorem linear_lt_two_pow (c d : Nat) : ∃ a, c * a + d < 2 ^ a :=
   ⟨c + d + 5, Nat.lt_of_le_of_lt
     (Nat.le_trans (Nat.add_le_add_left (Nat.le_trans (Nat.le_of_eq (Nat.mul_one d).symm)
         (Nat.mul_le_mul_left d (Nat.succ_le_succ (Nat.zero_le _)))) _)
-      (Nat.le_trans (Nat.le_of_eq (add_mul_nat c d _).symm)
+      (Nat.le_trans (Nat.le_of_eq (add_mul_split c d _).symm)
         (Nat.mul_le_mul_right _ (Nat.le_add_right (c + d) 5))))
     (sq_lt_two_pow (c + d))⟩
 
@@ -1383,7 +1354,7 @@ theorem poly_lt_two_pow (K n : Nat) : ∃ R, K * (R + 1) ^ n < 2 ^ R :=
       ⟨R, calc K * (R + 1) ^ n
           = K * 2 ^ (a * n) := congrArg (K * ·) ((congrArg (· ^ n) top).trans (pow_mul_nat 2 a n))
         _ < 2 ^ K * 2 ^ (a * n) := Nat.mul_lt_mul_of_pos_right (lt_two_pow K) (two_pow_pos _)
-        _ = 2 ^ (K + a * n) := (pow_add_nat 2 K (a * n)).symm
+        _ = 2 ^ (K + a * n) := (Naturals.pow_add 2 K (a * n)).symm
         _ ≤ 2 ^ R := pow_le_pow_exp (Nat.succ_pos 1) (Nat.le_of_lt_succ (Nat.lt_of_lt_of_le
             (Nat.lt_of_le_of_lt (Nat.le_of_eq ((Nat.add_comm K _).trans
               (congrArg (· + K) (Nat.mul_comm a n)))) below) (Nat.le_of_eq top.symm)))⟩
@@ -1532,7 +1503,7 @@ theorem polynomial_iff_no_loop (every : ∀ c, c ∈ cs) (K : F → C → C → 
             (fun t c => Nat.le_trans (Nat.le_of_eq (inflow_stationary K hs t c))
               (le_total_of_mem (q := inflowStationary cs part K hs) (every c))) t)
           (Nat.le_trans (Nat.mul_le_mul_left _ (Loops.orderSum_le_poly _ _ t))
-            (Nat.le_of_eq (Loops.mul_assoc_nat _ _ _).symm))⟩⟩
+            (Nat.le_of_eq (mul_assoc_nat _ _ _).symm))⟩⟩
 
 end Growth
 

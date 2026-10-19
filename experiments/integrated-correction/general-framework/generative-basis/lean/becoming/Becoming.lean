@@ -23,7 +23,9 @@ import Becoming.Irreversibility
 import Becoming.Histories
 import Becoming.Branching
 import Becoming.Listing
-import Becoming.Order
+import Becoming.Stuttering
+import Becoming.Reordering
+import Becoming.IdleRemoval
 import Becoming.OrderNormal
 import Becoming.OneStep
 import Becoming.Weighted
@@ -134,8 +136,7 @@ import Becoming.SummaryFutures
 import Becoming.Gated
 import Becoming.Viability
 import Becoming.Keeping
-import Becoming.ListTests
-import Becoming.Naturals
+import Becoming.Prelude
 import Becoming.Ideals
 import Becoming.ContingentPlans
 import Becoming.Actuation
@@ -303,11 +304,16 @@ import Becoming.RuleHandoff
 One relational unfolding, stated once, on one base: the run. The import tree starts at the
 foundation (`GenerativeCore`, `InquirySufficiency`, `RelationalRenewal`) and the frame
 (`Becoming.Frame`: processes and their runs); the unfolding's records, `Becoming.World`, stand
-on them, a world being a run by its type, and the four layers follow. The World family is the
+on them, a world being a run by its type. The World family is the
 standing-and-exchange reading of a run, by definition; the labelled process and the frame are
 read from the world's side in `Becoming.Labelled`.
 
-* `Becoming.World` (base): the records of the unfolding, with no premise among them. A
+Each note gives its module's layer, computed (`development/r31-support/layers.py` in the R31 kit):
+L0 is the base, `Becoming.World`, `Becoming.Frame` and `Becoming.Prelude`; L2 holds the modules
+whose source states the continuation condition or a valuation (`Unrestricted`, `Valuation`) and
+every module importing one of them; L1 holds the rest. No module imports one of a higher layer.
+
+* `Becoming.World` (L0): the records of the unfolding, with no premise among them. A
   dependence (levels, activity, what each formation requires, needs and draws at a
   configuration) and a web (a dependence read along the step index, `Web F C := Dependence Nat F
   C`), a flow (who takes part, what each takes and gives), an exchange (what the relata take and
@@ -316,15 +322,19 @@ read from the world's side in `Becoming.Labelled`.
   relata's exchanges (`World.web`, `World.flow`, `World.move` read it; `World.of` builds it),
   over `Nat` and `Prop`, importing the frame. Balance and the other premises are gluings or local
   states stated where they are used (`Becoming.Readings`).
-* `Becoming.Frame` (L1): a frame is a process with realized claims; runs,
+* `Becoming.Frame` (L0): a frame is a process with realized claims; runs,
   reachability, invariants and new realization.
+* `Becoming.Laws` (L1): the law-level notions the layers share, stated once just after the frame (no premise):
+  determined processes (`Determined`), laws of change and partial laws read as processes and run
+  along a course (`Assurance.ofMap`, `Assurance.ofPartial`, `Assurance.trace_ofPartial_iff`), and
+  going alike under a description (`GoAlikeUnder`), with `GoAlike` its case at equality.
 * `Becoming.Labelled` (L1): the labelled process and the frame as readings of the one
   unfolding: the move read within the configuration, the law a history shows, claims as relata,
   configurations alike by bisimulation; and the run readings of renewal, dependence, return and
   generation, whose laws are stated over the web without the frame.
-* `Becoming.Inquiry` (L2): the visible scope of an inquiry is what its actual
+* `Becoming.Inquiry` (L1): the visible scope of an inquiry is what its actual
   executions reach; a sound policy secures its goal there.
-* `Becoming.Derivation` (L2): premise-tracked derivation from a basis (no premise beyond what each
+* `Becoming.Derivation` (L1): premise-tracked derivation from a basis (no premise beyond what each
   theorem names): a derived claim holds wherever the basis and its local premises do
   (`Derives.sound`), so the whole closure holds throughout a domain exactly where the basis does
   (`closure_throughout_iff`) and a countermodel excludes a claim from it
@@ -332,22 +342,22 @@ read from the world's side in `Becoming.Labelled`.
   configuration (`pointwise_iff_common`), which rows met separately need not be
   (`rows_not_pointwise`); every law is read on the scope of an inquiry (`Scope.closure_iff`,
   `Scope.goal_closure`, `Scope.common_relative`).
-* `Becoming.ClassifiedBeliefProcesses` (L2): a narrowed belief whose inhabitation is decided
+* `Becoming.ClassifiedBeliefProcesses` (L1): a narrowed belief whose inhabitation is decided
   is empty or inhabited; where every narrowed belief's inhabitation is decided, every belief is
   classified through every depth, so bounded sufficiency is the implication form there.
-* `Becoming.MoveOutcomeProcesses` (L2): the outcomes of one move, with no premise. The moves of
+* `Becoming.MoveOutcomeProcesses` (L1): the outcomes of one move, with no premise. The moves of
   one process at a configuration cover another's exactly where every goal one move of the first
   completes, one move of the second completes; covering is a preorder carried along revisions,
   and no process ensures every goal another does not. Four processes on two configurations
   witness that more possible outcomes need not cover, that covering can remove a possibility, and
   that a summary can hide a loss. Joined to the core from the U2 ring by F2.
-* `Becoming.Recurrence` (L2): what every law of change keeps, loses and returns to, with
+* `Becoming.Recurrence` (L1): what every law of change keeps, loses and returns to, with
   no premise and no decidability. A list holding enough of a sequence holds two equal values;
   within finitely many configurations a law merges nothing exactly where every configuration
   returns, a rise needs a merge, and a merge loses a possibility for good; keeping its history,
   every law loses nothing, never returns and needs an open world, while a finite present
   forgets.
-* `Becoming.Diagonal` (L2): a registration within what it registers (P71), with no premise. A
+* `Becoming.Diagonal` (L1): a registration within what it registers (P71), with no premise. A
   family indexed by what it reads misses the gap of any map moving every value (Lawvere's
   diagonal); no family of claims is complete, and no frame realizes with its own configurations
   every claim about them; for values compared by equality, a registration within what it
@@ -355,29 +365,29 @@ read from the world's side in `Becoming.Labelled`.
   Completing is an unfolding, incomplete at every step, its gaps pairwise different, never
   returning and held by no finite stock, and one exists; revision by a map moving every value
   never rests, and the two-valued negation returns every two steps. The readings are the AI's.
-* `Becoming.Context` (L2): contextual registration (P72), with no premise. Registrations in
+* `Becoming.Context` (L1): contextual registration (P72), with no premise. Registrations in
   contexts glue exactly where contexts agree where they meet; a frame of context-free claims fits
   exactly where they glue at every configuration, and the frame indexed by context always fits,
   so context-free claims are a commitment of the representation; with local possibilities and no
   context-free reading no configuration respecting them glues, and where some context allows
   something they are the parts of no whole. Specker's three boxes and the Mermin–Peres square are
   witnesses. The readings are the AI's.
-* `Becoming.ContextArrivalTraces` (L2): arrival in a context along traces of the evolving law: a
+* `Becoming.ContextArrivalTraces` (L1): arrival in a context along traces of the evolving law: a
   step from a supported context arrives, from an empty support nothing arrives, and the context
   changes with the step. Joined to the core from the U2 ring by F2.
-* `Becoming.Quantum` (L2): the quantum realization of the Mermin–Peres square (P72q, written and
+* `Becoming.Quantum` (L1): the quantum realization of the Mermin–Peres square (P72q, written and
   checked by the owner of P64–P68). The nine two-qubit observables as integer matrices square to
   the identity, commute along each line, and multiply to minus the identity along the third
   column and to the identity along every other line; the values a nonzero vector shows jointly on
   a line are a possibility of the line, and every possibility is shown, so no context-free
   assignment is shown jointly on every line.
-* `Becoming.Renewal` (L3): every run read through conditions is one relational
+* `Becoming.Renewal` (L1): every run read through conditions is one relational
   unfolding; renewal and consumption belong to the run.
-* `Becoming.Dependence` (L3): dependence forms, holds, breaks and dissolves across
+* `Becoming.Dependence` (L1): dependence forms, holds, breaks and dissolves across
   steps; the outcomes of a loss where activity needs support; stepwise readings of
   events and their relations; the arithmetic the layers share.
-* `Becoming.Restoration` (L3): renewal graded by the time to return; readings over cycles.
-* `Becoming.Horizon` (L3): no finite stretch of a run decides whether its drawing
+* `Becoming.Restoration` (L1): renewal graded by the time to return; readings over cycles.
+* `Becoming.Horizon` (L1): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
   amounts is decided step by step. What a finite history refutes, with no premise, proved as
   the case of runs of the laws of points of `Becoming.Ideals` (a run read as the ideal of its
@@ -387,18 +397,18 @@ read from the world's side in `Becoming.Labelled`.
   has a horizon, which excluded middle gives; a reading made of
   tests holds where it adheres, and asked of every process its refutability is exactly
   Markov's principle.
-* `Becoming.Joint` (L3): difference-making, relative to a move that can still be taken
+* `Becoming.Joint` (L1): difference-making, relative to a move that can still be taken
   once a part is withheld and read as intended when the move determines the step,
   belongs to the joint activity among formations; over a formation's events the run-level outcome is
   fixed by the tail, while the step-level test singles out the breaking event.
-* `Becoming.Experiment` (L3): what varying one's own act tests, and what it needs. Relative
+* `Becoming.Experiment` (L1): what varying one's own act tests, and what it needs. Relative
   to determinacy, the record fixes what a move does at a configuration exactly where the run
   has taken it there; what one's act would have done otherwise is fixed only where the
   configuration returns, and a kept history never returns. Read through a projection the step
   factors through, one occasion stands for its whole class; a wrong projection misattributes,
   is never refuted by moves in step with what it leaves out, and is refuted by moves varied
   against it. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Mechanism` (L3): a projection of configuration carries a determined law exactly
+* `Becoming.Mechanism` (L1): a projection of configuration carries a determined law exactly
   where configurations alike under it go alike, the image of the step being the least
   candidate; what the step does not depend on is re-absorbed in one step; a system changing its
   own rule is one determined process on the joint configuration, and the state has a law of its
@@ -406,7 +416,7 @@ read from the world's side in `Becoming.Labelled`.
   where not yet taken. The standard causal model x′ = F(x, u, ε) is a determined process whose
   move is the input and the noise: an intervention is a move not taken, noise a move not
   represented. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Unfolding` (L3): one unfolding and its readings (P69). The labelled process and the
+* `Becoming.Unfolding` (L1): one unfolding and its readings (P69). The labelled process and the
   frame are readings of a world: read within the configuration the move changes no run and is
   what the law leaves open, and a world's move is its relata's exchange, balance being running by
   the law of exchange; every history is a run of the law it shows, the least one, determined
@@ -416,7 +426,7 @@ read from the world's side in `Becoming.Labelled`.
   and are named sensibly exactly where alike ones are one; determinacy as equality depends on
   names. Ren confirmed the reading of law and history; the other readings are the AI's. The
   readings needing only the frame and the world are stated in `Becoming.Labelled`.
-* `Becoming.LawAlongRun` (L3): a law through a projection along one run, and exactness. Some
+* `Becoming.LawAlongRun` (L1): a law through a projection along one run, and exactness. Some
   determined process on a description admits a run's steps read through it up to a step exactly
   where two of them alike under it, by the same move, reach configurations alike under it; the
   witness is the record read through the description, the least candidate, and once failed the
@@ -424,10 +434,10 @@ read from the world's side in `Becoming.Labelled`.
   history law. A run can show a law the process lacks. The image is an exact finite-path
   projection (`Generative.projection_exact_iff`) exactly where configurations alike match each
   other's steps up to the description; going alike does not give it.
-* `Becoming.Irreversibility` (L3): return belongs to the law, not to the occurring change: the
+* `Becoming.Irreversibility` (L1): return belongs to the law, not to the occurring change: the
   dead end never returns, the same change occurs under the dead end and the flip with different
   return, and a constant reading hides the loss. Stated by F2 from `BecomingReversibility`.
-* `Becoming.Histories` (L3): what histories fix (P76). A family of histories is the family of
+* `Becoming.Histories` (L1): what histories fix (P76). A family of histories is the family of
   some law's histories exactly where it holds every sequence made of its own steps, and of a
   determined law's exactly where it is also consistent; two laws admit the same histories exactly
   where they have the same live steps, so laws up to their dead ends and families holding their
@@ -435,7 +445,7 @@ read from the world's side in `Becoming.Labelled`.
   frames are determined up to likeness, configurations are alike exactly where they pass the same
   tests; with branching they need not (`Choosing`). The readings are the AI's, adopted on Ren's
   delegation of 15 October 2026.
-* `Becoming.Branching` (L3): R6's and P67's laws for every process, whose course branches
+* `Becoming.Branching` (L1): R6's and P67's laws for every process, whose course branches
   (P81). A configuration that returns can be had at every step, and every configuration
   returns exactly where every region the process never leaves keeps every possibility of
   its own; keeping every possibility does not give returning, merging nothing gives it along
@@ -446,9 +456,23 @@ read from the world's side in `Becoming.Labelled`.
   those needing equality are named with witnesses. Capture's rule region is absorbing and a
   perturbation of the state alone is drawn into what the rule holds. The readings are the AI's,
   adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Listing` (L3): What listing once commits to (P77). A list can be listed once exactly where identity among its members is decided (`listsOnce_iff_decided`); its number of members is unique and exists exactly then. Refutation laws need no such premise. Fixing every list's number up to relational indiscernibility in every world is equivalent to excluded middle (`World.numbers_indiscernible_iff_em`). Reading by occurrence keeps amounts and local laws without tracking occurrences across steps.
-* `Becoming.Order` (L3): The order of change (P78). Stuttering keeps the premises, stretch totals and recurrence, while rates and reserves counted in steps depend on the reading. For a given footprint containing the exchanges, commuting unjoined neighbouring exchanges keeps every premise and reaches exactly the renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`, `Footprinted.converse`). Removing idle steps keeps premises, censuses and totals.
-* `Becoming.OrderNormal` (L3): the order of exchanges completed (P88). For a symmetric joining
+* `Becoming.Listing` (L1): What listing once commits to (P77). A list can be listed once exactly where identity among its members is decided (`listsOnce_iff_decided`); its number of members is unique and exists exactly then. Refutation laws need no such premise. Fixing every list's number up to relational indiscernibility in every world is equivalent to excluded middle (`World.numbers_indiscernible_iff_em`). Reading by occurrence keeps amounts and local laws without tracking occurrences across steps.
+* `Becoming.Stuttering` (L1): steps at which nothing happens (P78). Read through a stuttering, a world meets the
+  premises exactly where it meets them and keeps the totals, counts and recurrence of every
+  stretch (`World.stutter_premises_iff`, `stutter_total`, `World.stutter_change_recurs_iff`),
+  while rates and reserves counted in steps depend on the reading
+  (`Expansion.more_step_relative`, `Lapse.reserve_step_relative`).
+* `Becoming.Reordering` (L1): exchanges taken in the other order (P78, P78b). Commuting independent exchanges
+  keeps balance, dissipation and embodiment; with a footprint containing the exchanges,
+  commuting unjoined neighbouring exchanges keeps every premise and reaches exactly the
+  renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`,
+  `Footprinted.converse`); where the order carries dependence, every footprint joins the two
+  exchanges (`Order.Crossing`, `Order.Arising`).
+* `Becoming.IdleRemoval` (L1): a world with its idle steps removed. It meets the premises, has a census and
+  keeps the totals and counts of every stretch exactly as the world does
+  (`World.withoutIdle_premises`, `World.withoutIdle_counted`, `World.withoutIdle_totals`,
+  `World.withoutIdle_counts`).
+* `Becoming.OrderNormal` (L1): the order of exchanges completed (P88). For a symmetric joining
   relation and a finite stretch of naturally named exchanges, arrangements are reachable exactly
   where they orient joined pairs alike. Decided apartness for distinct exchanges gives a
   lexicographically least, idempotent normal form; reachability is agreement of forms, and a
@@ -462,33 +486,33 @@ read from the world's side in `Becoming.Labelled`.
   no concrete undecidable-idleness world is given. The sides of reordering remain supplied;
   continuous-time correspondence remains open. The readings are the AI’s, adopted on Ren's
   delegation of 15 October 2026.
-* `Becoming.OneStep` (L3): All laws of one step and of families chosen step by step (P79). A pattern of one step is realized by a world exactly where it obeys the law of every step and the law of each named local condition (`OneStep.every_iff`, `OneStep.laws`); nonzero taking needs a taker and nonzero giving a giver. Givers, capacity and activity are characterized exactly. Runs on one family add chaining; for families chosen step by step, running down adds continuity counted at positive levels (`OneStep.step_runsDown_iff`), strictly weaker than tracking positions.
-* `Becoming.Weighted` (L3): Weighted histories and their losses (P82). Given weights with their laws and finite lists of moves and configurations, the sum of histories over a finite horizon is exactly stepwise transfer (`Weights.sum_courses`). Possibility is the core's trace relation, and counting preserves possibility. For a description with representatives, exact preservation at every horizon is exactly one-step lumpability (`Weights.lumped_iff`); truncation, cancellation, unkept memory and loops have explicit boundary witnesses.
-* `Becoming.Transmission` (L3): The exact conditions and boundary of transmission (P84). Transmission is exactly inheritance with a need bound (`Flow.transmitsWithin_iff`); where no dependence was held before, inheritance is the forming law, while the general forming/holding split uses decidedness. Dropping one dependence of a giver keeps the other premises and breaks binding transmission (`World.drop_but`). Under the named finite, balance, dissipation, embodiment and support conditions, a reading of drawing together with drawing being depending derives transmission (`World.transmitting_of_drawn`).
-* `Becoming.Succession` (L3): Fed without any source recurring (P85). `Successive.relay` gives a balanced, dissipative flow in which only active formations give, the pool is fed at every step, and each source participates and is active at its own step only. Continuing to be fed needs no source formation to recur. This advances continuing-self-fed-from-beyond and is not a separate result.
-* `Becoming.Attraction` (L3): for every determined law, with no premise, a configuration is
+* `Becoming.OneStep` (L1): All laws of one step and of families chosen step by step (P79). A pattern of one step is realized by a world exactly where it obeys the law of every step and the law of each named local condition (`OneStep.every_iff`, `OneStep.laws`); nonzero taking needs a taker and nonzero giving a giver. Givers, capacity and activity are characterized exactly. Runs on one family add chaining; for families chosen step by step, running down adds continuity counted at positive levels (`OneStep.step_runsDown_iff`), strictly weaker than tracking positions.
+* `Becoming.Weighted` (L1): Weighted histories and their losses (P82). Given weights with their laws and finite lists of moves and configurations, the sum of histories over a finite horizon is exactly stepwise transfer (`Weights.sum_courses`). Possibility is the core's trace relation, and counting preserves possibility. For a description with representatives, exact preservation at every horizon is exactly one-step lumpability (`Weights.lumped_iff`); truncation, cancellation, unkept memory and loops have explicit boundary witnesses.
+* `Becoming.Transmission` (L1): The exact conditions and boundary of transmission (P84). Transmission is exactly inheritance with a need bound (`Flow.transmitsWithin_iff`); where no dependence was held before, inheritance is the forming law, while the general forming/holding split uses decidedness. Dropping one dependence of a giver keeps the other premises and breaks binding transmission (`World.drop_but`). Under the named finite, balance, dissipation, embodiment and support conditions, a reading of drawing together with drawing being depending derives transmission (`World.transmitting_of_drawn`).
+* `Becoming.Succession` (L1): Fed without any source recurring (P85). `Successive.relay` gives a balanced, dissipative flow in which only active formations give, the pool is fed at every step, and each source participates and is active at its own step only. Continuing to be fed needs no source formation to recur. This advances continuing-self-fed-from-beyond and is not a separate result.
+* `Becoming.Attraction` (L1): for every determined law, with no premise, a configuration is
   drawn into an absorbing region exactly where it does not return, and what is drawn in never
   comes back; what can be had n steps on is absorbing and every lost possibility is drawn into
   it; of two merged configurations not both return; within finitely many configurations
   attraction is merging and what returns draws in everything else, while an open world
   separates them; under a process, entering an invariant region locks in. The readings are the
   AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Substitution` (L3): in the support-gated law, a consumer that substitutes
+* `Becoming.Substitution` (L1): in the support-gated law, a consumer that substitutes
   a condition persists and still consumes on the whole-run reading, while the stepwise
   reading credits it until the sustaining formation loses support and withholds it from
   then until it switches.
-* `Becoming.Arising` (L3): formations arise. Where arising depletes a finite family
+* `Becoming.Arising` (L1): formations arise. Where arising depletes a finite family
   of conditions, unceasing arising needs their renewal to recur; renewal does not
   imply arising; substitution among unrenewed conditions defers the end; and
   dissipation ends unceasing arising, while a closed cycle need not.
-* `Becoming.Flow` (L3): conditions as amounts that formations take and give. Uptake at
+* `Becoming.Flow` (L1): conditions as amounts that formations take and give. Uptake at
   arbitrarily late steps, as of formations that take arising without end, needs
   replenishment at arbitrarily late steps;
   more generation without end needs replenishment without bound and, with bounded
   capacity, renewers without bound; unceasing generation is not yet more. Every rise is
   given to and every fall taken from, so where members of a family rise at arbitrarily
   late steps, as in coming to stand, the rise from nothing, its replenishment recurs.
-* `Becoming.Stock` (L3): what a course draws, what replenishes it, and how long it can go on,
+* `Becoming.Stock` (L1): what a course draws, what replenishes it, and how long it can go on,
   for every process. Balance at each step is balance along every course; where steps draw only
   from what is held, a course is executable exactly where at each step the start and what was
   replenished before cover what was drawn, and, run jointly with a registration process, exactly
@@ -496,7 +520,7 @@ read from the world's side in `Becoming.Labelled`.
   return to cover the draw and holds exactly where the first pass is covered and it does; along
   every balanced run drawing without end needs replenishing without end, and with the stock
   bounded the two recur together. The stock along a run is a balanced `Flow`.
-* `Becoming.Change` (L3): what holds of every unfolding, with no premise about it.
+* `Becoming.Change` (L1): what holds of every unfolding, with no premise about it.
   Arising, forming and coming to stand, with ceasing, dissolving and ceasing to stand,
   are one change, read of activity, dependence and standing (read three ways, by
   definition: `Web.change_readings` holds by `Iff.rfl`). Over any stretch an amount
@@ -506,7 +530,7 @@ read from the world's side in `Becoming.Labelled`.
   many formations whose activity is decided, arising recurs exactly when ceasing
   recurs. Where the core states only a weaker form, the stronger form can imply the
   limited principle of omniscience (`LPO`), which has no constructive proof.
-* `Becoming.Population` (L3): how many formations are active. Under a census of the
+* `Becoming.Population` (L1): how many formations are active. Under a census of the
   active formations, with each formation taking part listed once and only active
   formations taking, more generation without end makes generation unceasing. Under a
   census, ceasing at arbitrarily late steps needs arising at arbitrarily late steps;
@@ -524,7 +548,7 @@ read from the world's side in `Becoming.Labelled`.
   ceasing across a step than were listed before it. Within a change bound, the count together
   with the steps of change staying within a number, change does not recur, while a step
   after which nothing changes needs omniscience in general.
-* `Becoming.Identity` (L3): which formation at one step continues which at the next.
+* `Becoming.Identity` (L1): which formation at one step continues which at the next.
   Labels carry nothing, while the pattern of names across steps carries identity; each
   step's relations, each condition's class and how many formations take and give do not
   depend on it, while a formation's class, the tenure of a dependence, undermining and
@@ -536,7 +560,7 @@ read from the world's side in `Becoming.Labelled`.
   two. The census balance holds under a continuation in two halves: without splits,
   ceasing recurring needs arising recurring; without merges, under a bounded census,
   arising recurring needs ceasing recurring.
-* `Becoming.Persistence` (L3): continuity across dormancy and identity read from relations
+* `Becoming.Persistence` (L1): continuity across dormancy and identity read from relations
   (P87). Keeping the names of what holds fixes the class of a formation holding throughout,
   strictly beyond activity and tenure continuity; where nothing holds it leaves the join open.
   A re-identification balances exactly where its continuation lies within conservation. In a
@@ -545,13 +569,13 @@ read from the world's side in `Becoming.Labelled`.
   laws are instantiated with both ends read through holding. The choice of holding and of
   conservation as the continuation remains a reading; classes under splits or merges,
   undermining under conservation and a mixed-reading census law remain open.
-* `Becoming.Wholes` (L3): a whole is active exactly while some part is, a coincidence of
+* `Becoming.Wholes` (L1): a whole is active exactly while some part is, a coincidence of
   activity rather than constitution. A persisting whole of brief parts, or of parts that
   end with finitely many active at once, persists only through their generation: parts
   never active at two steps `d` apart arise within every `d` steps, possibly the same
   parts again, and parts whose activity ends arise at arbitrarily late steps when the
   active ones are listed, ever new ones.
-* `Becoming.Dissipation` (L3): when every formation gives a closed family less than it
+* `Becoming.Dissipation` (L1): when every formation gives a closed family less than it
   takes from it, the family runs down and taking from it stops. A finite family from
   which taking recurs, whether of more, of generation or of maintenance, is open at
   arbitrarily late steps, though what opens it need not touch it; where each step's
@@ -565,7 +589,7 @@ read from the world's side in `Becoming.Labelled`.
   more for each formation taking from it: a member rising comes with another falling in
   the same exchange, and the depletion that `Becoming.Arising` supplies as a premise
   follows for an event at whose steps the family is dissipated on and taken from.
-* `Becoming.Locality` (L3): the laws of one step, with their condition inside them. Each
+* `Becoming.Locality` (L1): the laws of one step, with their condition inside them. Each
   holds of every world: where a premise selected for every step was used, the law states the
   condition the proof uses at the steps and relata where it uses it, so the selection results
   are corollaries and no premise is derived. With balance at a condition across a step, it
@@ -580,14 +604,14 @@ read from the world's side in `Becoming.Labelled`.
   With a list holding exactly what holds at one step and nothing coming to be after it, what
   holds later with what ceased number exactly those on it; ceasing recurring needs coming to
   be recurring wherever some list covers what holds at arbitrarily late steps.
-* `Becoming.Seeking` (L3): the boundary condition for 无明. Under a determined law, seeking
+* `Becoming.Seeking` (L1): the boundary condition for 无明. Under a determined law, seeking
   comes to rest with its target met exactly when it reaches a state the law leaves unchanged
   that meets it. A target of more than now is met only by change and, met at every step, needs
   an open world; a target of above all others is met by at most one seeker at a state. Where
   what stands is listed, rising without end needs steps at which what stands does not run down,
   and where it runs down from some step on the rises stop. The readings are the AI's, adopted on
   Ren's delegation of 15 October 2026.
-* `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
+* `Becoming.Roles` (L1): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands
   as a condition exactly while it is active, a formation depending on it lives only
@@ -600,10 +624,10 @@ read from the world's side in `Becoming.Labelled`.
   member of the family falling; without dissipation it need not. Where activity needs
   support, undermining an unchanged dependence leaves the relatum depending inactive after
   the step: its ending where it was active, no ending where it was dormant.
-* `Becoming.LabelledRoles` (L3): the run readings of `Becoming.Roles` and `Becoming.Dissipation`
+* `Becoming.LabelledRoles` (L1): the run readings of `Becoming.Roles` and `Becoming.Dissipation`
   (a web's activity along a run, ending together, the predation witness, a sequence's
   recurrence as a run).
-* `Becoming.Reserve` (L3): a reserve carries activity beyond support. `Dependent` is
+* `Becoming.Reserve` (L1): a reserve carries activity beyond support. `Dependent` is
   exactly the zero reserve; a reserve can be a held condition, and where none is
   represented it is supplied. Where a held condition carries the formations, moving
   their unsupported dependences onto it gives a `Dependent` reading by construction,
@@ -618,7 +642,7 @@ read from the world's side in `Becoming.Labelled`.
   omniscience. A relatum
   standing while active, absent earlier, came to stand before it was active: generation
   bears replenishment where standing rises, not where activity does.
-* `Becoming.Evolution` (L3): descent, transmission, variation and selection. A relatum
+* `Becoming.Evolution` (L1): descent, transmission, variation and selection. A relatum
   descends from a formation that takes part in a step, gives to it, and across which it
   comes to stand. Over any finite family of parents and offspring, the offspring's total
   with what transmission lowered is the parents' amounts weighted by their offspring with
@@ -629,14 +653,14 @@ read from the world's side in `Becoming.Labelled`.
   descendant's need is at most its condition's level at the giving step, plus the bound,
   met there only when the bound is zero, and in a balanced flow what is taken from and
   given to the condition in between sets that level.
-* `Becoming.Capture` (L3): how a target that cannot rest is selected and where the selection
+* `Becoming.Capture` (L1): how a target that cannot rest is selected and where the selection
   is held (B5 of the boundary for 无明). Carriers of a target leaving at least as many offspring
   as the others, the target's share among the offspring does not fall, and rises where they
   leave more; where what stands runs down from some step on, descent and so the selection stop;
   where the next configuration depends on the rule and not the state, perturbing the state alone
   is re-absorbed, the instance of `Becoming.Mechanism`'s re-absorption with the rule as the
   projection. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Space` (L3): the whole and its parts, one structure for Ren's proposal (an AI
+* `Becoming.Space` (L1): the whole and its parts, one structure for Ren's proposal (an AI
   reading). The space is every world, a world being relata read with one kind, their flow
   and their web. The laws stated with no premise hold of every world; in a finite world
   whose activity is decided arising recurs exactly when ceasing does; asked of every
@@ -649,7 +673,7 @@ read from the world's side in `Becoming.Labelled`.
   not, and ceasing recurring or not, occur both with every event living and with some event not
   living. Dissipation brings a finite, balanced world whose activity is decided and whose arising is
   embodied to rest, and each of these premises is needed.
-* `Becoming.Premises` (L3): the map of premises. Activity needing support makes activity
+* `Becoming.Premises` (L1): the map of premises. Activity needing support makes activity
   carried, embodiment makes whatever arises embodied, a finite world whose activity is
   decided has a census, and where only active relata take and the flow dissipates, only
   active relata give across an enclosed step, and every step of a finite world is
@@ -659,7 +683,7 @@ read from the world's side in `Becoming.Labelled`.
   finitely many ever active. A finite world whose activity is decided
   and which meets them comes to rest, by three of them. The premises are named, and a
   selection of them is a function to `Bool`.
-* `Becoming.Sampling` (L3): the laws of one step at coarser steps, the test of the
+* `Becoming.Sampling` (L1): the laws of one step at coarser steps, the test of the
   commitment to discrete steps. Read at strictly increasing times, balance on a family
   composes across a coarse step where each relatum is listed once at the fine steps inside,
   dissipation composes with no condition, closure is exact, and running down composes where
@@ -667,12 +691,12 @@ read from the world's side in `Becoming.Labelled`.
   exact conditions of coming to stand and ceasing to stand hold across the coarse step.
   Balance and dissipation do not compose back to the fine steps (fine imbalances cancel; a
   lossless fine step is outweighed), and acting, taking and transmission are step-relative.
-* `Becoming.Tower` (L3): continuous time as a tower of ever finer discrete readings (Ren, 12
+* `Becoming.Tower` (L1): continuous time as a tower of ever finer discrete readings (Ren, 12
   October 2026), each level read at strictly increasing times from the next. The laws pass to
   coarser levels, and the changes across a coarsest stretch, read at any level where what
   stands runs down at each fine step, number at most the total standing at its start: a bound
   independent of the level, so no Zeno-like subdivision of change.
-* `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
+* `Becoming.Openness` (L1): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
   every step from some step on is enclosed around it, standing stops changing, and so
@@ -695,7 +719,7 @@ read from the world's side in `Becoming.Labelled`.
   arises, so openness is necessary for arising without end and not sufficient; one
   meeting them with every step enclosed comes to rest, as does `hatch`, in which each of
   them binds.
-* `Becoming.Decidedness` (L3): decidedness made local (Ren, 11 October 2026: decidability
+* `Becoming.Decidedness` (L1): decidedness made local (Ren, 11 October 2026: decidability
   is "too dualist", then "please"). A proposition is decided where it holds or fails; a count
   is a relation, existing exactly where what it counts is decided, and where a procedure
   decides, its marks are the count. Between counts the census holds with no decidedness; in a
@@ -703,7 +727,7 @@ read from the world's side in `Becoming.Labelled`.
   none; decided from some step on, the recurrence law holds. The rest theorems of
   `Becoming.Space` and `Becoming.Openness` use no decision procedure. The readings are the
   AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Refinement` (L3): a chain of equivalences stops within its classes (P83c), with no
+* `Becoming.Refinement` (L1): a chain of equivalences stops within its classes (P83c), with no
   premise beyond the decisions it counts. Members a list holds that a relation keeps pairwise
   apart are no more than the list; where two members joined at one step are apart at the next, a
   list pairwise apart grows by one; so where each step's relation is decided among `N` members
@@ -712,7 +736,7 @@ read from the world's side in `Becoming.Labelled`.
   frames (`Becoming.Likeness`) are its instances. The decisions of finitely many propositions are
   together refuted by nothing. The readings are the AI's, adopted on Ren's delegation of 15 October
   2026.
-* `Becoming.Counting` (L3): what the premises add to the laws of counting, the tally being
+* `Becoming.Counting` (L1): what the premises add to the laws of counting, the tally being
   the whole law of counting with no premise (`Becoming.Population`). Premises lacking
   balance or embodiment leave counting free: every tally is the census of a world meeting
   every premise but embodiment, and of one meeting every premise but balance; together, with
@@ -746,7 +770,7 @@ read from the world's side in `Becoming.Labelled`.
   embodiment is selected with balance and dissipation, or with only active relata taking,
   dissipation and bounded transmission. With every step from some step on enclosed, where
   the premises of a selection bind, enclosure and binding add their laws each on its own.
-* `Becoming.Standing` (L3): what the premises add to the laws of counting what stands and
+* `Becoming.Standing` (L1): what the premises add to the laws of counting what stands and
   what depends. Where every relatum is embodied what stands is what is active; where
   embodiment is not selected, a queue whose members stand without acting, fed by a source
   active throughout and standing at nothing, meets every other premise whatever its counts.
@@ -760,7 +784,7 @@ read from the world's side in `Becoming.Labelled`.
   stands to what is active. The premises add nothing to the law of counting dependences,
   under any selection, with enclosure or in finite worlds, where at most some number hold at
   each step: they bear on dependence only together with activity, standing and descent.
-* `Becoming.Resolution` (L3): what the fixed unit of amounts carries in the rest and
+* `Becoming.Resolution` (L1): what the fixed unit of amounts carries in the rest and
   openness laws. Counted in natural numbers of one unit, dissipation loses at least a unit
   at every exchange; letting the unit split into finer units across each step separates
   the dynamics from that quantum. Splitting the unit is itself a change: counted as one more
@@ -788,8 +812,8 @@ read from the world's side in `Becoming.Labelled`.
   unsupported formation is active at every step, its reserve falling at each. A least loss
   at each size bounds the takings of that size, but neither growth nor the amount: a whole
   unit can pass in ever more, ever smaller transfers without end.
-* `Becoming.Amounts` (L2): rest over amounts that may be dense, below the rest family (it imports
-  only `Becoming.Naturals`). Over amounts with an order that addition keeps and cancels, with
+* `Becoming.Amounts` (L1): rest over amounts that may be dense, below the rest family (it imports
+  only `Becoming.Prelude`). Over amounts with an order that addition keeps and cancels, with
   nothing least and possibly dense, the losses of a falling stock, added, are within the stock;
   rest needs two premises the whole numbers supply: a least loss `ε` at each step at which the
   change counted happens, and the stock lying within finitely many copies of `ε` (which
@@ -801,7 +825,7 @@ read from the world's side in `Becoming.Labelled`.
   family does not recur and is bounded by the stock over a stretch (`Becoming.Dissipation`), and
   that standing stops changing (`Becoming.Openness`), through which the rest theorem of an
   enclosed world follows.
-* `Becoming.LeastLoss` (L3): that each premise of rest over amounts (`Becoming.Amounts`) is
+* `Becoming.LeastLoss` (L1): that each premise of rest over amounts (`Becoming.Amounts`) is
   needed, and rest and return. In dyadic amounts, dense and Archimedean, a stock halving at every
   step loses at every step, has no least loss, and never rests; in layered amounts, a stock falling
   by a least loss at every step lies beyond every multiple of it and never rests, and layered
@@ -810,7 +834,7 @@ read from the world's side in `Becoming.Labelled`.
   merges nothing along an orbit, so a loss above nothing needs a merge: rest belongs to
   descriptions that lump and dissipate, and a finite law that merges nothing returns
   (`Becoming.Recurrence`).
-* `Becoming.Entropy` (L3): what becoming leaves, and what holding it costs. In a balanced
+* `Becoming.Entropy` (L1): what becoming leaves, and what holding it costs. In a balanced
   flow every change of a level is an exchange, so the history of exchanges grows at every
   change without a dissipation premise, and an exchange and its reverse restore every level but not the
   history. Under the first law (nothing from nothing) the reverse of an exchange is within
@@ -828,13 +852,13 @@ read from the world's side in `Becoming.Labelled`.
   while merging none keeps change going and coming back. An arrow without end under exact
   conservation draws on relata beyond the family. In proportion, what is taken is at most
   `q + 1` times what is dissipated.
-* `Becoming.Units` (L3): the laws of one step at a finer unit, the test of the commitment
+* `Becoming.Units` (L1): the laws of one step at a finer unit, the test of the commitment
   to whole units. Arising needing an active giver holds at every resolution with no condition
   on the split; the law of one exchange holds with change read in the unit (read in raw counts
   it fails); a need is counted in the same unit as the level (Ren, 12 October 2026), so
   support does not depend on the grain of measurement; laws that count a loss over a stretch
   need a fixed unit or the refinement counted as a giving, as for rest.
-* `Becoming.Imbalance` (L3): imbalance counted as a relatum, proved equivalent first (Ren,
+* `Becoming.Imbalance` (L1): imbalance counted as a relatum, proved equivalent first (Ren,
   11 October 2026: "please"), adopted by Ren on 14 October 2026 (`Becoming.Reading`). Wherever
   the flow does not balance, the difference is counted as the exchange of one more relatum,
   never active and requiring nothing; then every flow balances, the flow balances on a family
@@ -842,7 +866,7 @@ read from the world's side in `Becoming.Labelled`.
   activity premises hold of the extended flow exactly where they hold of the flow and it
   balances there. Adopted, the landed laws keep their statements, with balance a local
   condition read as the rest idle. The readings are the AI's, adopted with the re-founding.
-* `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
+* `Becoming.Continuation` (L1): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed
   from beyond when something outside it is conveyed into a member: exactly a step that is
@@ -860,19 +884,19 @@ read from the world's side in `Becoming.Labelled`.
   one's continuation depends on; it ends with the want, and a clearer that meets every
   requirement derived here can still end a life it does not need. Ren's proposal of 10
   October 2026 (an AI reading).
-* `Becoming.RenewalFlow` (L3): every law of the support-gated renewal family is a balanced flow
+* `Becoming.RenewalFlow` (L1): every law of the support-gated renewal family is a balanced flow
   on its static web, so the family's restoration, its loss for good and the ending of joint
   drawing beyond renewal are instances of the laws of every balanced flow; on the webs, formation
   and the focal formation's own trajectory do not decide the class, formations each within
   renewal consume jointly, escalation consumes, and the seasonal web is neither renewing nor
   consuming.
-* `Becoming.SupportRecovery` (L3): recovery in the support-gated family (no premise): with both
+* `Becoming.SupportRecovery` (L1): recovery in the support-gated family (no premise): with both
   formations unsupported the level stays (`absorbs`); a window of supported net repair raises the
   level by at least its length (`window_progress`); two pulses with the same later inputs recover
   or end for good, and the recovered history is neither renewing nor consuming in the whole-time
   classification (`same_later_inputs`, `supported_pulse_recovers`, `unsupported_pulse_ends`,
   `recovered_neither`).
-* `Becoming.Admission` (L3): what can form next, and what a part opens or closes. Levels
+* `Becoming.Admission` (L1): what can form next, and what a part opens or closes. Levels
   admit a formation when they meet every requirement it has; support is admission by the
   levels that stand, gained only at a rise and lost only at a fall where requirements hold,
   and gained only from the supported, so the end absorbs where nothing beyond gives, each
@@ -883,7 +907,7 @@ read from the world's side in `Becoming.Labelled`.
   and opening needs a net give. Compared by inclusion, a part widens, narrows, keeps the
   same or is mixed, each exceeding the other, which inclusion does not order. Reading
   these as Ren's generative, degenerative and neutral is the AI's reading.
-* `Becoming.Exclusion` (L3): what taking all that is given excludes, with no ethical premise.
+* `Becoming.Exclusion` (L1): what taking all that is given excludes, with no ethical premise.
   A formation takes all that is given to a condition across a step where it takes part and
   takes from it at least all that the step gives to it; alongside it, any other taker makes
   the joint taking exceed what is given. So where renewal is given only by formations
@@ -895,7 +919,7 @@ read from the world's side in `Becoming.Labelled`.
   supported. Of a renewer and two takers, the first's continuation does not require the
   second's ending (all three continue where each takes one); taking all that is given does.
   The levels admit the second where it ends, so admission does not see the exclusion.
-* `Becoming.Exhaustion` (L3): where a take that is more than now ends, with no ethical premise.
+* `Becoming.Exhaustion` (L1): where a take that is more than now ends, with no ethical premise.
   Read on what a formation takes from a condition, "more than now" (`Becoming.Seeking`) rises by
   at least one at each step, so from a condition given at most `B` at each step the take comes
   to take all that is given within `B + 1` steps and then more than is given. Under balance such
@@ -905,7 +929,7 @@ read from the world's side in `Becoming.Labelled`.
   active while its need is met, the level falls below the need and every formation depending on
   the condition there ends. In `Alone` the same taker, taking all that is given without its take
   rising, continues.
-* `Becoming.Regions` (L3): self, system and whole, and represented boundaries. What a
+* `Becoming.Regions` (L1): self, system and whole, and represented boundaries. What a
   part's levels admit within a region they admit within every region inside it, what is
   lost beyond a region is lost beyond every region inside it, and nothing lies beyond
   the whole. The clearer continues and closes nothing within itself and the source it
@@ -913,25 +937,44 @@ read from the world's side in `Becoming.Labelled`.
   it. Renewal over a region of conditions is renewal at the step when the region covers
   every condition the formation takes part in, keeps its own support when it covers what
   it requires, and over a region omitting a requirement can lose its own support.
-* `Becoming.Metaethics` (L4): valuation and significance: the premise card,
+* `Becoming.Retaining` (L1): retaining and adding, for any significance, with no condition on it
+  (`Web.Retains`, `Web.Adds`). Inclusion retains, fewer continuations with significance retain
+  more, and significance bounded by a region retains what is admitted within it
+  (`Web.retains_bounded_iff`); the levels with a part retain what has significance without it
+  exactly when its net draw stays within the margin (`Flow.Balances.retains_iff_within_margin`)
+  and widen them exactly when it also brings one more formation within the margin
+  (`Flow.Balances.widens_iff_within_margin`); in `Preemption` a part within renewal does not
+  keep what can form (`Preemption.within_renewal_yet_loses`).
+* `Becoming.Clearing` (L1): the witness `Clearing`, a source, a clearer and a dweller, with the facts that
+  read no more than admission, regions and retaining. The clearer is active and renewed at every
+  step while the dweller ends (`Clearing.undermines_within_renewal`); its part loses the dweller
+  beyond its dependence and narrows the whole (`Clearing.loses_beyond`, `Clearing.narrows`); and
+  centers bounded by their dependence disagree (`Clearing.centers_disagree`).
+* `Becoming.Extension` (L1): C on frames and on the level paths of a web, with no valuation and no condition.
+  Extension and comparison on a frame (`Extension`, `Comparison`, `LiftBetter`); a
+  natural-number score satisfying C climbs and outgrows (`Comparison.climbs`,
+  `Comparison.outgrows`); on level paths an extension in which every claim counts as living is
+  exactly a widening (`Web.paths_extension_iff_widens`, `Web.paths_comparison_widens`). That
+  widening is better is the reading of “better”, not shown.
+* `Becoming.Metaethics` (L2): valuation and significance: the premise card,
   living significance's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
-* `Becoming.Lifting` (L4): the lifting rule L on a frame's responses: C lifts, P and N hold
+* `Becoming.Lifting` (L1): the lifting rule L on a frame's responses: C lifts, P and N hold
   with L, and two countermodels show that the choice of the rule is substantive and that
   transitivity needs a live middle response.
-* `Becoming.Ranking` (L4): what C ranks under each reading. Both the whole-run and the
+* `Becoming.Ranking` (L2): what C ranks under each reading. Both the whole-run and the
   stepwise reading rank sharing above winning by consumption and, in the two-part
   family, restraint above overdraw; for an overdrawing formation with an event that
   leaves every need met, only the whole-run reading ranks its absence above its
   occurrence.
-* `Becoming.ActiveReading` (L4): the reading of every active event beside the whole-run reading
+* `Becoming.ActiveReading` (L2): the reading of every active event beside the whole-run reading
   (no premise): the whole-run reading withholds a consumer's events, and living significance on it
   credits exactly the active events of non-consuming formations (`livingSignificance_wholeRun_iff`); under the
   reading of every active event an overdrawing formation leaves the two courses unranked, so C
   admits a comparison preferring the course with it (`overdraw_unranked`,
   `overdraw_admits_occurrence`), while sharing still extends winning by consumption
   (`contest_readings`).
-* `Becoming.LossMatching` (L4): strict loss matching for every frame: a strict match composes
+* `Becoming.LossMatching` (L1): strict loss matching for every frame: a strict match composes
   and is monotone; a generative extension is a match by identity, so a commitment making
   matching sufficient for strict priority contains C; such a commitment needs matching to be
   asymmetric, and with infinitely many losses a configuration matches itself. With losses listed
@@ -939,26 +982,26 @@ read from the world's side in `Becoming.Labelled`.
   a match exists exactly when the better loses no more in each class and fewer in all; losing a
   support every claim rests on is matched below nothing; a claim read at its time is settled
   from then on, so restored support re-realizes no missed claim.
-* `Becoming.StrictTransport` (L4): strict transport along a supplied comparison (the comparison is
+* `Becoming.StrictTransport` (L1): strict transport along a supplied comparison (the comparison is
   a hypothesis): a strict anchor is carried by weak steps on its side, through compatible
   relations, along runs that lose or gain no claim, and by faithful redescription, and a supplied
   link makes it a reason (`reason_of_strict_above`); a cutoff order prefers repair exactly below
   its cutoff, so compatible cutoffs disagree, and the finishing-first rival supplies no cutoff
   (`cutoffs_disagree`, `continuation_first_no_cutoff`).
-* `Becoming.MatchedCourses` (L4): comparison anchors for courses from one start that each secure
+* `Becoming.MatchedCourses` (L1): comparison anchors for courses from one start that each secure
   the claims of some positions (reading the claims as complete comparable basic losses is the
   premise `BasicAlike` or `BaseApart`, and sufficiency of matching, `Frame.SufficientMatching`, is
   a hypothesis): support returns while missed claims stay lost (`recovery_retains_loss`); counts
   of losses decide strict matches (`matches_iff`, `lost_counts`), which give the two anchors and
   their order under sufficiency (`conditional_outer_order`); where every claim rests on a base,
   the course losing it matches nothing (`fragile_b3_matches_nothing`).
-* `Becoming.Correspondence` (L4): which conditions relate. Under the discipline that a
+* `Becoming.Correspondence` (L2): which conditions relate. Under the discipline that a
   condition relates two events only when one draws on it and the other depends on it
   at a positive level, at any steps, idle conditions connect nothing, and connection through a
   condition is made by its living use. Read with one kind of relatum, the valuations keep
   their connection, and formations bearing on themselves relate directly, with no third
   condition.
-* `Becoming.Descent` (L4): relata related directly. Read with one kind of relatum, an
+* `Becoming.Descent` (L2): relata related directly. Read with one kind of relatum, an
   event is related to the relatum it lives on, drawing on it and depending on it at a
   positive need, which under `Dependent` stands at that step, and to the relata it
   descends from or that descend from it (`Becoming.Evolution`). An embodied relatum that
@@ -966,7 +1009,7 @@ read from the world's side in `Becoming.Labelled`.
   reaches the arisen relatum's living events, and generations each given by the one before
   are connected by descent alone. On Ren's delegation of 15 October 2026 these readings count as
   formed relations of continuation, not as direct valuations (DELEGATED-CHOICES D9).
-* `Becoming.Standpoints` (L4): whose continuation counts. Where every living claim is
+* `Becoming.Standpoints` (L2): whose continuation counts. Where every living claim is
   held, lying in the own region of some position, living significance is S0 at every position with
   standpoint neutrality, with neither connection nor relational neutrality; lives no
   position holds need relational neutrality from a held life, and each premise is needed.
@@ -984,7 +1027,7 @@ read from the world's side in `Becoming.Labelled`.
   neutrality as the continuation condition is the AI's reading of Ren's proposal of 10 October 2026,
   adopted on Ren's delegation of 15 October 2026. Living significance is no longer an axiom: Ren folded it on 11
   October 2026.
-* `Becoming.Significance` (L4): the continuation condition, the condition of chapter §6.15 (not asserted; Ren folded what was Part II
+* `Becoming.Significance` (L2): the continuation condition, the condition of chapter §6.15 (not asserted; Ren folded what was Part II
   into the theory without axiom as that conditional section on 16 October 2026).
   Ren's “for anything, its
   continuation into the future has significance” is read as boundary neutrality for the
@@ -1005,7 +1048,7 @@ read from the world's side in `Becoming.Labelled`.
   is ordered, so the continuation condition is needed. The reading is the AI's, adopted on Ren's delegation of 15
   October 2026. Living significance is a theorem of this condition and, since Ren folded it on 11 October 2026, no longer
   an axiom.
-* `Becoming.RelativePosition` (L4): the game of relative position. A part's position is its
+* `Becoming.RelativePosition` (L2): the game of relative position. A part's position is its
   amount read against the others' (its amount counted once for each part, against the family's
   total). Zero-sum is a counting law: across every change of amounts, whatever the amounts do,
   one part's change of position is the opposite of the change summed over the rest, no change
@@ -1019,11 +1062,11 @@ read from the world's side in `Becoming.Labelled`.
   greatest part that does not depend on what it draws down continues (`Clearing`); what it loses
   is a continuation with significance, and that loss needs a significance, such as the
   continuation condition.
-* `Becoming.ValuationFrames` (L4): the valuations of `Becoming.Metaethics` and the continuation
+* `Becoming.ValuationFrames` (L2): the valuations of `Becoming.Metaethics` and the continuation
   condition of `Becoming.Significance` read on frames and runs of a labelled process (the relations
   a valuation reads off a frame, living significance and `universal_reason`, comparison and
   extension, the models showing each hypothesis needed, the paths of a web).
-* `Becoming.Interdependence` (L4): how far the route without axiom reaches. What a
+* `Becoming.Interdependence` (L1): how far the route without axiom reaches. What a
   formation's continuation depends on is its feeding closure, the least region holding it
   that is closed under feeding, and nothing beyond the closure gives to what it requires.
   Under balance, with only active formations giving and activity needing support,
@@ -1034,11 +1077,11 @@ read from the world's side in `Becoming.Labelled`.
   bounded by a region is the continuation condition's wherever the losses lie within the region, and so on
   every comparison where a formation's feeding closure is the whole, while in the clearer's
   web the two part. The reading is the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Feeding` (L4): feeding across steps (P86). Possible carrying through a condition
+* `Becoming.Feeding` (L1): feeding across steps (P86). Possible carrying through a condition
   extends the feeding closure; local balance characterizes meeting needs, redundant feeders
   exhibit that losing one need not return, and withholding both can leave no balancing path.
   The module distinguishes support from activity and possible from actual carrying.
-* `Becoming.Feedback` (L4): what feedback registers and what a part reaches, with no premise
+* `Becoming.Feedback` (L1): what feedback registers and what a part reaches, with no premise
   beyond the representation. Closures under relations give five levels: a formation's feeding
   closure lies within its influence closure, what can affect it, and the influence closure and
   the reach closure, what its exchange can affect, lie within its system, the closure under
@@ -1051,7 +1094,14 @@ read from the world's side in `Becoming.Labelled`.
   the levels with and without it as the continuation condition does; the comparison of any two flows is decided
   within what their difference reaches. The continuation condition enters only as a hypothesis of three
   witnesses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Cuts` (L4): which links a closure needs, with no premise. Removing links changes
+* `Becoming.BoundedSignificance` (L2): where significance bounded by a region meets the continuation condition,
+  as a hypothesis or a conclusion. Bounded by the whole it is the condition (`bounded_whole`);
+  within a feeding closure that is the whole the verdict is the condition's
+  (`Flow.within_closure_iff_retains`); under a common feeding condition bounded significance is
+  the condition (`Flow.feeding_unrestricted_of_common`); and in `Clearing` and `Trophic` the
+  bounded verdict and the condition's part (`Clearing.within_closure_yet_loses`,
+  `Clearing.reach_counts_dweller`, `Trophic.mixed_part`).
+* `Becoming.Cuts` (L1): which links a closure needs, with no premise. Removing links changes
   no closure exactly where every removed link is bypassed, its ends staying within each other's
   closure under what remains; joining one link adds exactly what passes through it. Attaching a
   formation that takes part in no link changes no closure among the others, so every link of a
@@ -1060,21 +1110,21 @@ read from the world's side in `Becoming.Labelled`.
   every system is what it is without a condition exactly where those taking part in it lie in one
   system through the others; a condition two formations take part in joins their systems as one
   link would, and a formation taking part only in one condition is alone without it.
-* `Becoming.EdgeClosure` (L4): the seed–edge closure, what the process whose steps are the
+* `Becoming.EdgeClosure` (L1): the seed–edge closure, what the process whose steps are the
   edges reaches from a seed, and the core's closure under a relation as this closure from one
   seed.
-* `Becoming.SeedReach` (L4): reach from seeds is the least invariant, with no premise. A
+* `Becoming.SeedReach` (L1): reach from seeds is the least invariant, with no premise. A
   configuration is separated from the seeds by an invariant property exactly where it is not
   reached; that every process reaches every configuration not so separated is double-negation
   elimination, so a reach claim from a failed separation needs a path, not only the refuted
   absence of one. Stated by F2 from the U2 join `SeedReachProcesses`.
-* `Becoming.ScopedReach` (L4): reach through scopes and within histories, with no premise. What
+* `Becoming.ScopedReach` (L1): reach through scopes and within histories, with no premise. What
   one scope's steps reach the process reaches; grounds agreeing where domains meet, carried by
   each scope's steps, glue to an invariant; a family indexed by histories never leaves a history
   and reaches in each exactly what that history's process reaches. Alternating scopes reach beyond
   each scope, and covering every configuration by a scope does not give reach. Stated by F2 from
   `WholeGroundCoverage`.
-* `Becoming.Testing` (L4): what registers in a formation and what it can test, with no premise
+* `Becoming.Testing` (L1): what registers in a formation and what it can test, with no premise
   beyond balance on the conditions registered and the representation. A condition a formation
   depends on and does not observe registers only whether it meets the need; an observed one
   registers its level. A claim is refuted only through a difference in what registers, and
@@ -1088,18 +1138,19 @@ read from the world's side in `Becoming.Labelled`.
   support diverges, and where others respond to the stock itself a higher stock can end the
   formation first. The response hypotheses are supplied. The readings are the AI's, narrowed by
   the independent review and adopted on Ren's delegation of 15 October 2026 as narrowed.
-* `Becoming.Runaway` (L4): what a loop through its own registration cannot register. A policy
+* `Becoming.Runaway` (L1): what a loop through its own registration cannot register. A policy
   through registration, with the rest of the exchange fixed, is exchange following
   registration, so every such policy that keeps its support never uses a larger stock it does
   not observe. Before the break, for every horizon a world with the stock raised registers
   alike and lasts past it: how far off the break is does not register, while observing the stock
   registers it at once. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Response` (L4): where the rest responds through its registration, a supplied
+* `Becoming.Response` (L1): where the rest responds through its registration, a supplied
   premise, the comparison is decided within the part's responsive reach, its closure under
   affecting what is registered: the dual of the registration closure, and, registering support
   only, the union of the members' reach closures. Beyond it every formation registers and
   exchanges alike. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Counterfactual` (L4): the rest's exchange given by a law of what has stood, the
+* `Becoming.TimedResponse` (L1): Response through exchanges in their order.
+* `Becoming.Counterfactual` (L1): the rest's exchange given by a law of what has stood, the
   counterfactual of an act is the course the law gives: fixed by the act, existing exactly where
   feasible. Where the law reads only what each formation registers, P65's response premise is a
   theorem, and with finitely many conditions the registration is what the law is sensitive to;
@@ -1109,7 +1160,8 @@ read from the world's side in `Becoming.Labelled`.
   adds beyond a history (P69's `Shown`) is exactly the moves the history never takes, so the
   counterfactuals; with the part's act formed by a law, a run of `closedBy` is the course. The
   readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Selection` (L4): two histories are selected alike by every selection through a
+* `Becoming.Regrouping` (L1): Comparison under regrouping.
+* `Becoming.Selection` (L1): two histories are selected alike by every selection through a
   selector's registration exactly when it registers them alike; with the rest fixed, selection
   is blind beyond the registration closure, so an ending within a candidate's reach closure and
   beyond the selector's registration closure is not selected, while pooled registration selects
@@ -1118,21 +1170,21 @@ read from the world's side in `Becoming.Labelled`.
   options are selected alike by every selection through the model exactly when the model ties
   them, one is singled out exactly where the model separates it from every other, and tied
   options are valued alike.
-* `Becoming.SelectionGap` (L4): the gap for one's own act. Where the rest follows a law of
+* `Becoming.SelectionGap` (L1): the gap for one's own act. Where the rest follows a law of
   exchange reading through coupling and an act of the part differs only on conditions no member
   of the actor's coupling closure couples into, every selection through any member of the
   closure, the actor included, selects the flows with and without the act alike at every step,
   the rest's response derived from the law; with both acts laws, neither the second flow, nor the
   response, nor the levels are supplied. A consequence of the act beyond the closure is selected
   through no member of it.
-* `Becoming.SelectionReach` (L4): favouring what reaches beyond, in general. In a balanced flow,
+* `Becoming.SelectionReach` (L1): favouring what reaches beyond, in general. In a balanced flow,
   where a family containing what couples in gains nothing across a step, a rise of what couples
   in has a formation that gives it more than it takes from it and takes from beyond it; with
   equality decided, from a condition no member of the group couples into; the rise is paid from
   beyond in full. So every selection
   holding only where what couples in rises holds only on flows reaching beyond the coupling.
   `Diversion` is an instance, and its supplying flow, which gains, shows the premise binds.
-* `Becoming.SelectionPool` (L4): what selection through pooled coupling reaches. A pool's
+* `Becoming.SelectionPool` (L1): what selection through pooled coupling reaches. A pool's
   coupling closure is the union of its members' coupling closures, and with the rest of the
   exchange fixed, a part beyond it is selected alike by every selection through the pooled
   coupling of any group within it (both stated in `Becoming.Selection`, whose single formation's
@@ -1145,7 +1197,7 @@ read from the world's side in `Becoming.Labelled`.
   flows with and without the act alike, and a formation whose admission the act changes lies
   beyond the closure and separates the two through every pool holding it. In `Clearing`, pooling
   with the dweller closes the clearer's gap.
-* `Becoming.PoolResponse` (L4): what a pool's acts respond to. Where a law of exchange reads
+* `Becoming.PoolResponse` (L1): what a pool's acts respond to. Where a law of exchange reads
   through the coupling of each formation outside a part, a selection through the acts of a group
   outside it is a selection through the group's pooled coupling, and what the pool's acts
   separate some member couples apart, the members listed and decided. The bound is exact where
@@ -1157,7 +1209,7 @@ read from the world's side in `Becoming.Labelled`.
   difference has entered what it couples into. In `Clearing` what every pool holding the dweller
   separates goes unresponded outside the clearer's part; in `Loop` a response returns through the
   actor's coupling closure.
-* `Becoming.Rejoining` (L4): where the courses with and without an act rejoin. A difference
+* `Becoming.Rejoining` (L1): where the courses with and without an act rejoin. A difference
   between the two courses opens or closes at a condition only across a step at which the two
   flows exchange with it differently, and where they rejoin, what they exchanged with it makes up
   the gap exactly. Where the rest follows a law reading through its coupling and the part acts
@@ -1166,7 +1218,7 @@ read from the world's side in `Becoming.Labelled`.
   the responsive reach exchanges with stays as it was. In `Replenishing` a responder reading the
   level gives back what the act took and the courses rejoin. The course without the act is a
   comparison, not a standard.
-* `Becoming.LawThroughCoupling` (L4): a law through what a formation couples into, along one
+* `Becoming.LawThroughCoupling` (L1): a law through what a formation couples into, along one
   run. Up to an equivalence, some process going alike under it admits a run's steps up to a
   step exactly where any two of them alike under it, by the same move, end alike; the record
   read under it is the witness, once failed the criterion fails from then on, and through equal
@@ -1175,7 +1227,7 @@ read from the world's side in `Becoming.Labelled`.
   conditions. In `Unseen` the process is determined and a level the formation does not couple
   into decides what it next couples into, so no law holds at its coupling along the run;
   coupling into that level restores it.
-* `Becoming.LawThroughChangingCoupling` (L4): a law through coupling that changes along the run.
+* `Becoming.LawThroughChangingCoupling` (L1): a law through coupling that changes along the run.
   With dependences read off the configuration (`Dependence`), what a formation couples into at
   each occasion, through the dependence it then has, is an equivalence, so the criterion of
   `Becoming.LawThroughCoupling` holds through it; fixed conditions are the instance, and
@@ -1183,7 +1235,7 @@ read from the world's side in `Becoming.Labelled`.
   dependences do not change along the run the two criteria agree. In `Changing`, on one
   determined process, a dissolving dependence carries a law the coupling fixed at the start
   lacks, and a forming one breaks a law it has.
-* `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
+* `Becoming.Learning` (L1): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by
   refutation never passes a hypothesis that holds; where a list holds the world the lasso learner
@@ -1197,7 +1249,7 @@ read from the world's side in `Becoming.Labelled`.
   reads it, the modeling of the laws of structure and of change; the other readings are the AI's,
   adopted on Ren's delegation of 15 October 2026 or, for selection through a model, approved by
   Ren on 16 October 2026.
-* `Becoming.Hexagrams` (L4): the configurations of the 周易 as a world of the spine, with no
+* `Becoming.Hexagrams` (L1): the configurations of the 周易 as a world of the spine, with no
   premise. Six lines, each unbroken or broken, give sixty-four configurations, told apart and
   listed with no axiom; the received order holds every one, and each of its pairs is turned over
   or, where turning over gives the same hexagram, changed in every line. The change of one line
@@ -1213,7 +1265,7 @@ read from the world's side in `Becoming.Labelled`.
   Read as claims, a frame and a world, the lines arise and cease at arbitrarily late steps
   (`Frame.claims_recur_iff`); any sixty-five steps revisit, and the kept history is held by no
   list. What the passages of the text say beyond these laws is read in the chapter on the 易传.
-* `Becoming.HexagramPlaces` (L4): the relations of the places of a hexagram, read in context,
+* `Becoming.HexagramPlaces` (L1): the relations of the places of a hexagram, read in context,
   with no premise. A line is in phase where its value is its place's parity (正), the two lines
   at one height of the two trigrams are opposed where they differ (應), adjacent lines
   alternate, rise or fall across their seam (比, 承, 乘), and the middle height is lines 2 and 5
@@ -1229,7 +1281,7 @@ read from the world's side in `Becoming.Labelled`.
   Each law is read along the runs of the spine: of waxing and waning, of the change of one line,
   of the law backward, and of any process. Four censuses of the 彖 and the 小象 are checked on
   their configurations; the chapter on the 易传 reads each passage.
-* `Becoming.HexagramLaws` (L4): four more laws on the sixty-four configurations and the census
+* `Becoming.HexagramLaws` (L1): four more laws on the sixty-four configurations and the census
   of the law of waxing and waning, with no premise, stated along the runs of the spine. The
   nuclear law (互) merges: what it makes of a hexagram is fixed by the four inner lines, and
   within two steps every run is in 乾, 坤 or the turns of 既濟 and 未濟, exactly the four that
@@ -1243,7 +1295,7 @@ read from the world's side in `Becoming.Labelled`.
   sixty-four, line k turning every 2 ^ (k - 1) steps. The law of waxing and waning keeps the
   changes of line once round (承 and 乘 with the ends), one, three or five, and has six orbits,
   five of twelve steps and one of four.
-* `Becoming.HexagramSites` (L4): two relations of the places read at other sites, after 王弼's
+* `Becoming.HexagramSites` (L1): two relations of the places read at other sites, after 王弼's
   《周易略例》, with no premise. In the second relation of phase the bottom and top places have no
   fixed place (初上无位): a line between them holds its place where it is in phase, and the ends
   say nothing. No parity of the top place makes 需's and 乾's top lines both out of phase, as the
@@ -1257,7 +1309,7 @@ read from the world's side in `Becoming.Labelled`.
   waning: at the top it passes out, and two steps on a sole line stands at the bottom. Censuses
   of the 彖, the 小象 and the line texts are checked on their configurations; every law is read
   along runs.
-* `Becoming.HexagramSequences` (L4): what of the arrangements of the 傳 is a law, with no
+* `Becoming.HexagramSequences` (L1): what of the arrangements of the 傳 is a law, with no
   premise. A law runs the received order (序卦) exactly where it agrees everywhere but at 未濟
   with the law taking each to the next; only the one closing 未濟 to 乾 merges nothing, with one
   orbit of sixty-four. Every such law reads every line for every line, so no three-cell rule on
@@ -1272,7 +1324,7 @@ read from the world's side in `Becoming.Labelled`.
   run of waxing and waning rests or comes to rest. The stations of 說卦 ch. 5 are the run of no
   law commuting with 錯, 綜 or the rotation; 交 holds at every height of 泰 and none of 否, which
   every reading the complement keeps reads alike along their runs.
-* `Becoming.Withholding` (L3): giving that waits on giving. With memory (a formation gives
+* `Becoming.Withholding` (L1): giving that waits on giving. With memory (a formation gives
   where it gave and all it waits on gave), a formation gives at a step exactly where every
   formation within that many waits of it gave at the start; withholding stays, spreads
   downstream, and one withholding ends all giving in a family reached from it. Without memory
@@ -1280,7 +1332,7 @@ read from the world's side in `Becoming.Labelled`.
   no chain of waits is long enough and returns around every loop. More waiting is less giving
   under both laws, and in a ring of three a formation giving whatever it waits on restores
   every formation from the third step on, which no course of the law with memory does.
-* `Becoming.LoopReturn` (L4): whether a loop closes, keeps or widens a difference, read on runs
+* `Becoming.LoopReturn` (L1): whether a loop closes, keeps or widens a difference, read on runs
   of the return map. A loop closes a difference only through a link that gives back less than
   it received; a return map below what it receives closes within as many turns as the
   difference, exactly, and a closing loop merges; taking a constant off closes at the least
@@ -1288,7 +1340,7 @@ read from the world's side in `Becoming.Labelled`.
   nothing; monotone return maps settle or rise; doubling links run away. With whole-number
   strengths a loop closes at the first turn, keeps the difference or runs away, nothing
   between: closing gradually needs a link that is not a multiplication.
-* `Becoming.Pace` (L4): how fast a rule may change. A two-level course, the fast
+* `Becoming.Pace` (L1): how fast a rule may change. A two-level course, the fast
   configuration stepping by a rule that changes only at reading steps, is a run of one law. A
   rule that never reads is kept from then on: nothing the fast level meets reaches it, and under it
   what is lost stays lost and merges lose configurations; a fast difference reaches the rule
@@ -1296,7 +1348,7 @@ read from the world's side in `Becoming.Labelled`.
   stretch of `L` steps fixes every pair of courses with at most `N` states that held rules
   generate exactly when `L ≥ 2N - 1`; a course of configurations read whole is fixed by its
   first `N + 1` steps, exactly.
-* `Becoming.RuleCapture` (L4): a selection whose rule reads the share it selects. The fast step of
+* `Becoming.RuleCapture` (L1): a selection whose rule reads the share it selects. The fast step of
   `Pace`'s two-level course is a selection and the rule read at a reading step is a monotone
   function of the share. Where no rule turns against the reading the share falls at no step and the
   course is locked from the step after its first reading step; on counts, under a margin read from
@@ -1308,13 +1360,13 @@ read from the world's side in `Becoming.Labelled`.
   favour the others the lock needs its start condition: a rule against the reading read one step
   late alternates without end (`Alternating`), and a reversing perturbation carried across a
   threshold locks the course the other way (`Reversed`).
-* `Becoming.PatternPassing` (L4): a pattern that outlasts each of its carriers lasts only through
+* `Becoming.PatternPassing` (L1): a pattern that outlasts each of its carriers lasts only through
   passing. Read on a web whose activity is carrying, a pattern present at every step from `T`
   on with carriers brief for `d` has a carrier beginning within every `d` steps; under the
   passing premise every beginning is a passing, the pattern is passed across one of every `d`
   steps, one step with no carrier is followed by none with one, and where passing stops it ends
   within `d` steps. Each bound is attained in `PatternRelay`. The passing premise is supplied.
-* `Becoming.JointKeeping` (L4): conditions kept together, and a part kept under every course.
+* `Becoming.JointKeeping` (L1): conditions kept together, and a part kept under every course.
   No course leaves two guards, or a list of guards, together exactly where no course leaves
   any. Along some course this fails: in `ChoicePoint` each of two guards is keepable and the
   two together are not, and no rule on the separate keepabilities decides the joint one. In
@@ -1322,7 +1374,7 @@ read from the world's side in `Becoming.Labelled`.
   configuration, while from one configuration one run renews and another consumes the
   sustaining formation's condition: keeping a part decides neither renewal nor what the run
   does to others.
-* `Becoming.Tolerance` (L4): thresholds of waiting and the laws that restore giving. Under
+* `Becoming.Tolerance` (L1): thresholds of waiting and the laws that restore giving. Under
   the tolerating law a formation gives where all but its tolerance of what it waits on gave;
   tolerance zero is waiting on all. For every law keeping inclusion of configurations, giving
   at a step from every start is giving there from total withholding, from which giving only
@@ -1334,7 +1386,8 @@ read from the world's side in `Becoming.Labelled`.
   exactly no chain of `n` waits, and with memory no step restores. The certificate of
   `Becoming.FaultEnvelopes` read as a law of giving keeps a covered set giving under separated
   envelopes, and is available exactly where they are separated.
-* `Becoming.Undecided` (L2): the third value and revision, with no premise. With values true,
+* `Becoming.Revision` (L1): Selection when the lumping itself changes.
+* `Becoming.Undecided` (L1): the third value and revision, with no premise. With values true,
   undecided and false, undecided below the decided ones in information, a term with no constant
   is undecided where every sentence is, so a system with no constant stays wholly undecided, and
   evaluation is monotone in information. Revision of `N` sentences that speak only of one another,
@@ -1346,7 +1399,7 @@ read from the world's side in `Becoming.Labelled`.
   that rests, leaves a sentence undecided: the gap reappears as undecidedness. The run of a
   monotone map from the undecided value rests from its first step, so the gap of
   `Diagonal.gap_unsaid` needs a map that is not monotone.
-* `Becoming.Junctures` (L3): where a configuration can still be had again and where it is lost.
+* `Becoming.Junctures` (L1): where a configuration can still be had again and where it is lost.
   A juncture for `s` has a step after which `s` can still be had and one after which it cannot.
   Every loss of a returning `s` passes a juncture on its course, up to double negation; where it
   is decided along the course whether `s` can still be had, and for configurations a list holds
@@ -1354,7 +1407,7 @@ read from the world's side in `Becoming.Labelled`.
   limited principle of omniscience. Keeping the steps after which `s` can still be had keeps `s`
   and is the greatest sub-process that does; on its course it removes exactly the losing steps
   at junctures; losing never returns. Many options make no juncture.
-* `Becoming.Commuting` (L4): what a commuting law keeps apart. Where a law commutes with a map
+* `Becoming.Commuting` (L1): what a commuting law keeps apart. Where a law commutes with a map
   that moves every configuration, its runs from a configuration and from its image are never at
   one configuration at the same step: to merge what a symmetry tells apart a law must break it.
   No such law is constant; what the map fixes stays fixed along the run; rests
@@ -1363,7 +1416,7 @@ read from the world's side in `Becoming.Labelled`.
   map commuting with itself. Symmetric processes carry reach, returning and junctures, and each
   run has a mirror run never at the same configuration. In the Changes, waxing and waning never
   merges a hexagram with its complement, and the waning into 坤 breaks the symmetry.
-* `Becoming.Contacts` (L4): registration through addressed contacts. Registration by agreement
+* `Becoming.Contacts` (L1): registration through addressed contacts. Registration by agreement
   on data selects a value exactly where its address is in the data, and a change of data keeps
   every old selection exactly where it keeps the old data. A revision rule registers every
   failure exactly where it puts the failed address in the next plan; a rule blind to what failed
@@ -1373,7 +1426,10 @@ read from the world's side in `Becoming.Labelled`.
   channel exactly where the new channel agrees at the encoded inputs. `Revision`'s
   `Revising`, `ReferencePlan` and `ContinuingRevision` read their stock and contacts through
   `Stock` and `Contacts`.
-* `Becoming.Description` (L4): what a description keeps and loses (P70), with no premise.
+* `Becoming.RegroupingSelection` (L1): Regrouping content and retaining selections.
+* `Becoming.ReferencePlan` (L1): Acquired consequences revise the next reference plan.
+* `Becoming.ContinuingRevision` (L1): Successful activity supports its next revision across carriers.
+* `Becoming.Description` (L1): what a description keeps and loses (P70), with no premise.
   Describing the parts separately gives back the whole exactly where it is rectangular, the lost
   relation reappearing as extra combinations; three parts can be related as a whole while every two are free,
   and on Specker's pairs the pairs do not give the parity back; a relation forms only by joint
@@ -1387,7 +1443,7 @@ read from the world's side in `Becoming.Labelled`.
   law as `Learning.goAlike_iff_lumped` is its instance here, and finitely many states is P73's
   lasso. The readings are the AI's; Ren asked for the pair to be dug
   deeper and agreed with the reply that followed.
-* `Becoming.Identification` (L4): identification, what a bounded record fixes (P83), with no
+* `Becoming.Identification` (L1): identification, what a bounded record fixes (P83), with no
   premise beyond the bound on states. Two periods (Fine and Wilf): a course with period `p + 1`
   that comes back after `Q` steps at its first `p` steps does so at every step. Histories with at
   most `N` and `N'` states are fixed by their record before `N + N' - 1`, and for every `N` and
@@ -1410,7 +1466,7 @@ read from the world's side in `Becoming.Labelled`.
   premise the positions are decided instead of the values: joining, pair by pair, the positions
   the agreements join gives a labelling whose labels have one value each, and the bound for the
   labelling carries over. The readings are the AI's.
-* `Becoming.Learnable` (L4): what a learner can learn through its registration, with no
+* `Becoming.Learnable` (L1): what a learner can learn through its registration, with no
   premise. Two configurations with the same registered future give every learner the same
   record, so where their targets differ a claim is right on at most one, and a learner resting
   on both has targets that agree from some step on. In a world a list holds, some learner rests
@@ -1420,7 +1476,7 @@ read from the world's side in `Becoming.Labelled`.
   identification. Where the law leaves every configuration unchanged, the learnable targets are
   exactly those that go alike across the registration, `Becoming.Learning`'s lumping. The
   readings are the AI's.
-* `Becoming.Boundaries` (L4): the continuation condition decomposed. Along a relation a boundary of a
+* `Becoming.Boundaries` (L2): the continuation condition decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn
   somewhere, and boundary-invariant when, holding as drawn anywhere, it holds as drawn
@@ -1434,7 +1490,7 @@ read from the world's side in `Becoming.Labelled`.
   N_std. Sub-true along affecting, the presupposition compares every part within the reach
   closure as the continuation condition does, with no invariance. Covering, sub-truth and invariance are
   hypotheses. The readings are the AI's, adopted on Ren's delegation of 15 October 2026.
-* `Becoming.Relevance` (L4): the uses of living significance under the continuation condition. Read from significance,
+* `Becoming.Relevance` (L2): the uses of living significance under the continuation condition. Read from significance,
   positive relevance is realized living content whose continuation has significance;
   under the continuation condition living significance holds on every frame for every reading of `living`, this relevance
   being the least satisfying it, so every use of living significance, each a hypothesis for an arbitrary
@@ -1455,7 +1511,7 @@ read from the world's side in `Becoming.Labelled`.
   (`livingSignificance_relevance_iff`), and left the comparison of courses to the AI, which compares courses on
   possibilities.
 
-* `Becoming.Lexical` (L4): the lexical order of configurations by basic claims, then gains
+* `Becoming.Lexical` (L1): the lexical order of configurations by basic claims, then gains
   (`Above`), which asserts nothing; that a comparison is this order, protection first (J1/J2),
   is the condition `BasicPriority`, which theorems take. Adjoined contents, crossed growth, fresh
   gains and fresh basic claims; classification of fresh contents, with the decisions it needs
@@ -1463,13 +1519,13 @@ read from the world's side in `Becoming.Labelled`.
   classification holds generally exactly when excluded middle does; along a generative
   extension no decision is needed. Ported from `PracticalJudgment`, `ConcernExtension` and
   `ClassificationRobustJudgment` (F3J, 18 October 2026).
-* `Becoming.Frontier` (L4): the frontier of a comparison among eligible alternatives, what it
+* `Becoming.Frontier` (L1): the frontier of a comparison among eligible alternatives, what it
   requires, assignment, succession of service and discharge; the frontier exists where the
   comparison is weakly decided on a listed menu, and under `BasicPriority` it is the lexical
   frontier. Models: formation on a drawn amount (as steps of a process), handover of service,
   collective requirement, routes under classification. Ported from `PracticalJudgment`,
   `RelationalOrganization` and `AlignmentDirection` (F3J).
-* `Becoming.FrontierFrames` (L4): the practical commitments on a frame. J1/J2 as a condition on
+* `Becoming.FrontierFrames` (L1): the practical commitments on a frame. J1/J2 as a condition on
   the configurations of a frame, compared by the basic, then the living claims they realize
   (`Priority`): irreflexive and transitive, anchored by a kept basic claim, no trade of a basic
   claim for living ones, a generative extension never refuted to be better, C wherever it is
@@ -1480,70 +1536,70 @@ read from the world's side in `Becoming.Labelled`.
   chosen option, nothing is required where no move is possible, and a basic claim kept by an
   option keeping every basic claim of the options is never refuted at a chosen option and is
   required where decided. Fresh contents under every classification on a frame of two kinds.
-* `Becoming.FrontierWorlds` (L4): what a formation requires of a condition in a world, served
+* `Becoming.FrontierWorlds` (L1): what a formation requires of a condition in a world, served
   across a handover from one giver to another (`Served`): withdrawn giving needs the successor,
   a handover with no gap serves, and a gap refutes service. Joint plans and undertakings on the
   world's moves: a sole giver to what a formation requires is required, and active where only
   active formations give; a discharged undertaking leaves no residual step.
-* `Becoming.AcceptanceFrames` (L4): scores over the options of a step. Every option best by the
+* `Becoming.AcceptanceFrames` (L1): scores over the options of a step. Every option best by the
   score with acceptance keeps access exactly where every option best by the base score does;
   restricting to the options loses score, least among them; an option best by an estimate
   within `err` is within `2 * err` of every option.
-* `Becoming.ScoreRepresentation` (L4): C does not yield protection first: every comparison by
+* `Becoming.ScoreRepresentation` (L2): C does not yield protection first: every comparison by
   a natural-number score satisfying C outranks protection by enough gains, while a bounded
   rational score represents the lexical order. Ported from `ProtectionPriorityRival` (F3J).
-* `Becoming.Alternatives` (L4): alternatives of one history realizing configurations; C, P and
+* `Becoming.Alternatives` (L2): alternatives of one history realizing configurations; C, P and
   N on them, the survivors of an extension filter as lifted survivors, and two appraisals with
   different coherent selections. Ported from `GenerativeComparison` (F3J).
-* `Becoming.Bundles` (L4): joint bundles of claims over regions of configurations: carrying
+* `Becoming.Bundles` (L1): joint bundles of claims over regions of configurations: carrying
   whole profiles is preserving bundles; the same marginal realizations can lose a joint
   bundle; regimes of an activation law compared by their joint bundles, not their marginals.
   Ported from `JointContinuationClassification` and `RelationalGrounding` (F3J).
-* `Becoming.ActivationCapacity` (L4): effective capacity in the activation law (no premise): a
+* `Becoming.ActivationCapacity` (L1): effective capacity in the activation law (no premise): a
   configuration realizes both claims exactly when both are active (`joint_iff`); the joint content
   is realizable within one move from the coupled configuration and not from the initial one, so a
   preparation step changes the current capacity (`preparation_changes_capacity`); after the
   release no number of moves realizes it (`released_not_joint`, `release_loses_joint`), and the
   prepared configuration can still end one-sided (`prepared_can_end_one_sided`).
-* `Becoming.Narrowing` (L4): learning a rule by narrowing a belief through observation: a
+* `Becoming.Narrowing` (L1): learning a rule by narrowing a belief through observation: a
   belief over candidate rules narrowed by `After` on the pure observation of their values keeps
   exactly the fitting candidates; the answer procedure answers what the narrowed belief settles,
   safely and as the greatest safe answer; faithful acquisition answers correctly and re-encoding
   transports learning. Ported from `StandardsBridge` (F3J).
-* `Becoming.NarrowingRuns` (L4): narrowing along the runs of the pure observation. What the
+* `Becoming.NarrowingRuns` (L1): narrowing along the runs of the pure observation. What the
   belief `After` narrows settles is what the learned list answers; the answer is safe for it
   and, where it holds a rule, its greatest safe answer, the only one; along every run observing
   a candidate rule the answer from the record is the greatest safe answer and asserts the
   observed rule's values; re-encoding transports what the belief settles.
-* `Becoming.SecuredContent` (L4): secured new content with open future form: one response
+* `Becoming.SecuredContent` (L2): secured new content with open future form: one response
   can secure new living content in each admitted continuation without one fixed content in all;
   a finite signed integral certifies it where each positive occurrence means such content; with
   D every position with access has the reason, the least such reason fixed by access alone.
   Ported from `PositiveGroundUncertainty` and `PositionedPositiveReason` (F3J).
-* `Becoming.ProfileReach` (L4): how a standpoint's self-significance reaches beyond its own region
+* `Becoming.ProfileReach` (L2): how a standpoint's self-significance reaches beyond its own region
   through formed profiles: S0 with monotonicity reaches whatever is at least as connected;
   tolerance is relational neutrality on profiles, so `Valuation.reaches` carries significance
   along chains of small steps; threshold, present-aim, closed-self and persistence rivals mark
   the boundaries. Ported from `EvaluatorGrounding` (F3J).
-* `Becoming.RenewalBound` (L3): renewal recurs where activity without renewal descends a
+* `Becoming.RenewalBound` (L1): renewal recurs where activity without renewal descends a
   well-founded relation, with no decision for the negative form; arbitrarily late where decided,
   within the rank where a rank certifies it; along runs; the alternation renews for ever with
   bounded novelty. Ported from `ContinuationRenewal` (F3J).
-* `Becoming.Handoff` (L4): a remaining-step certificate handed between revised rules along one
+* `Becoming.Handoff` (L2): a remaining-step certificate handed between revised rules along one
   history gives formation within the bound, relevant under living significance or
   the continuation condition; without the handoff condition revised rules can fail for ever, and
   a real revision changes the formed outcome. Ported from `OpenFutureRevision` (F3J).
-* `Becoming.RuleHandoff` (L4): a gated rule handed on through enacted relations: only adoption
+* `Becoming.RuleHandoff` (L1): a gated rule handed on through enacted relations: only adoption
   changes the rule, handoff keeps the record and restricts participation without inventing it,
   integration is read off the enacted relations and not off coarse counts; one finite history
   of formation, revision and succession. Ported from `OrganizationalRuleInheritance` (F3J).
-* `Becoming.Assurance` (L2): when a plan secures its target, with no premise. For every
+* `Becoming.Assurance` (L1): when a plan secures its target, with no premise. For every
   process a completing plan runs, safely, into the goal; for every determined process the
   converse holds, so completion is exactly a safe run ending in the goal, and with no safety
   condition a run every endpoint of which meets the goal. A two-outcome process shows the
   converse fails without determination. For a law of change, a plan completes exactly when the
   goal holds where the law takes it; a partial law's traces are exactly its completed runs.
-* `Becoming.AssurancePlans` (L2): plans on determined, open and shut processes (no premise): under
+* `Becoming.AssurancePlans` (L1): plans on determined, open and shut processes (no premise): under
   a determined process a trace has one end, so some end meeting a goal is every end
   (`Trace.determined_end`, `every_end_of_some_end`); with every move open some end is not every
   end, and with none every claim about ends is vacuous (`Open.some_not_every`, `Shut.no_end`); an
@@ -1551,61 +1607,61 @@ read from the world's side in `Becoming.Labelled`.
   (`completes_itinerary`); in the regulation model opposite moves keep the band and merge nothing
   (`Regulation.kept_along`), and in the three-route model each adequate reading merges outcomes
   another tells apart, so no coarsest adequate description exists (`Routes.no_coarsest_adequate`).
-* `Becoming.Integers` (L2): constructive ring laws on `Int` (no premise): integers read as
+* `Becoming.Integers` (L1): constructive ring laws on `Int` (no premise): integers read as
   difference pairs of natural numbers, with the commutativity, associativity, negation,
   cancellation and multiplication laws the dephasing model uses, every one with an empty axiom
   report.
-* `Becoming.Segmentation` (L2): grouping a sequence by a relation between adjacent elements,
+* `Becoming.Segmentation` (L1): grouping a sequence by a relation between adjacent elements,
   for every alphabet and relation, with no premise. Grouping returns a partition exactly when
   each group is linked inside and opens against the next, and that partition is unique; encoded
   words are recovered exactly under two local conditions on adjacent pairs; a relation learned
   as the strict majority of observed transitions links each element to at most one successor;
   where words are recovered, reading every encoded sequence is right exactly when each word is
   read right.
-* `Becoming.Readout` (L4): what a reduction keeps of an observable and of a law, with no
+* `Becoming.Readout` (L1): what a reduction keeps of an observable and of a law, with no
   premise. What an observable reads through a reduction is single-valued exactly where it is
   lumped; on two merged configurations a decoder agreeing at both exists exactly when the
   observable agrees there, so nothing restores two merged configurations; a determined reduced
   law carries every step exactly when merged configurations go to merged ones, and a commuting
   reduced law commutes with every course.
-* `Becoming.Dephasing` (L4): the control–target dephasing model on integer amplitudes (no
+* `Becoming.Dephasing` (L1): the control–target dephasing model on integer amplitudes (no
   premise): dephasing keeps the diagonal and the mass and merges a prepared and a coherent state,
   so no decoder reads the response through the diagonal record and no uniform map restores it
   (`no_diagonal_response_decoder`, `no_uniform_dephase_inverse`, through `Readout`); recording
   into a branch reduces to dephasing and joint reversal restores the control; read as a law of
   change, dephasing settles, merges, is not lossless, and its runs meet (`settles`,
   `not_lossless`, `runs_meet`).
-* `Becoming.ProjectedLaws` (L4): projected laws of a deterministic law (no premise): a reduced law
+* `Becoming.ProjectedLaws` (L1): projected laws of a deterministic law (no premise): a reduced law
   commutes with the law exactly when the law factors through the projection, exactly when merged
   configurations go alike, and then along every word (`commuting_iff_factors`,
   `fibre_iff_goAlike`, `commuting_iff_traces`); with the same cells, crossed wiring leaves one
   cell no law of its own (`no_autonomous_left_law`), and in the device model formation and
   recurrence share one history that parts alone cannot keep
   (`parts_only_cannot_preserve_futures`).
-* `Becoming.JointPhase` (L4): joint phase on two registers (no premise): the interaction keeps
+* `Becoming.JointPhase` (L1): joint phase on two registers (no premise): the interaction keeps
   both local states and the basis masses while it changes the cross term, so the relation is told
   apart only through the joint (`same_interaction_distinguishes_relation`); no update of the local
   pair carries the law (`no_local_pair_update`, `local_pair_carries_no_law`); a summary retaining
   the control is exact along every finite word and omits the other relations
   (`every_finite_word_exact`, `summary_omits_other_relations`).
-* `Becoming.SummaryFutures` (L4): a summary can carry the futures and move the endpoint: the
+* `Becoming.SummaryFutures` (L1): a summary can carry the futures and move the endpoint: the
   process extending a history takes every word, so read through any summary its futures are
   carried, while read through a summary marking one history a step ends where the extended
   history's summary is not. Stated by F2 from `DerivedHistoryLaw`.
-* `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
+* `Becoming.Gated` (L1): what only a class of moves can change, with no premise. A quantity kept
   by every ungated step is kept along every ungated course, and conversely; a course that
   changes it passes the gate, at a gated step that itself changes it. One direction suffices: a
   course leaving a property the ungated steps preserve passes the gate, and a course ending where
   a property the ungated steps reflect holds started where it held or has a gated step after
   which it holds, nothing about the property decided. With the gate a proposition, the origin
   law is exactly double-negation elimination.
-* `Becoming.Viability` (L2): where no course leaves a guard, with no premise. No course from a
+* `Becoming.Viability` (L1): where no course leaves a guard, with no premise. No course from a
   configuration leaves the guard exactly when some certificate (a set within the guard that every
   step keeps) contains it; the viability kernel is the largest certificate. For a law of change
   driven by admissible disturbances, given one admissible disturbance, no history ever leaves the
   guard exactly when some set containing the start lies within the guard and is closed under
   every admissible disturbance; a guarded history stops exactly where the history leaves it.
-* `Becoming.Keeping` (L2): a guard kept through what is registered, with no premise. A class is
+* `Becoming.Keeping` (L1): a guard kept through what is registered, with no premise. A class is
   kept for `n` steps where the guard holds throughout it and, with steps to go, some move usable
   from it leaves, whatever the step registers, a class kept for one step fewer. A plan whose later
   moves follow what was registered keeps the class for its length; where the registrations are
@@ -1615,14 +1671,13 @@ read from the world's side in `Becoming.Labelled`.
   horizon. Two parts' plans run together keep both guards where joint steps project onto the
   parts and the joint moves are usable throughout, and every joint plan that keeps a guard has
   them usable.
-* `Becoming.ListTests` (L2): Boolean tests over lists and options (no premise): `all`, `any`,
-  `contains`, `filter`, `find?`, `bind` and `map` say what they test (`all_true_iff`,
-  `any_true_iff`, `find_none_iff`, `bind_eq_some`), proved by recursion where the prelude uses
-  `propext`.
-* `Becoming.Naturals` (L2): the subtraction and order laws of drawn amounts (no premise):
-  cancellation, `sub_sub`, `le_sub_of_add_le` and the bounds of a sum, proved by recursion where
-  the prelude uses `propext`.
-* `Becoming.Ideals` (L2): a history read off its finite stretches, as an ideal of their order
+* `Becoming.Prelude` (L0): the lemmas on numbers, truth values, lists and options that the layers
+  use, each stated once (no premise; it imports only Init): cancellation, subtraction and products
+  of whole numbers (`add_right_cancel`, `Naturals.sub_sub`, `mul_assoc_nat`), what `all`, `any`,
+  `contains`, `filter`, `find?`, `bind` and `map` test (`ListTests.all_true_iff`,
+  `ListTests.find_none_iff`), and membership in joined and mapped lists (`mem_append_cases`,
+  `preimage_of_mem_map`), proved by recursion where the prelude uses `propext`.
+* `Becoming.Ideals` (L1): a history read off its finite stretches, as an ideal of their order
   (no premise; it imports nothing). A refutable reading holds, up to double negation, where a
   point adheres, and what adheres is closed. A class of ideals is closed exactly where it is the
   class within a lower set, its content. A refutable class is closed, and a closed class
@@ -1630,55 +1685,55 @@ read from the world's side in `Becoming.Labelled`.
   elimination. The least closed hull, avoidance and a lower set's order; the completion:
   directed-complete, compact exactly at finite histories, a monotone map extended continuously
   and uniquely, and a compact basis that generates fixing its completion.
-* `Becoming.ContingentPlans` (L3): contingent plans, probe then respond by the answer (no
+* `Becoming.ContingentPlans` (L1): contingent plans, probe then respond by the answer (no
   premise): a plan's run is a trace of the interface's process (`run_iff_trace`,
   `passes_iff_completes`); a plan is selected for a listed belief exactly where a listed plan
   completes from every configuration of it (`selected_iff_completes`), an empty belief certifies
   none, and equal answers select the same response (`branch_congr`, `branch_incompatible`).
-* `Becoming.Actuation` (L3): issue, delivery and enactment of a command as moves of one
+* `Becoming.Actuation` (L1): issue, delivery and enactment of a command as moves of one
   installation (no premise): what each move needs (`issue_stale`, `enact_revoked`), the reserve
   and what is drawn conserved along every trace (`conserved_trace`), the protocol's exact effects
   (`protocol_exact`), and a timely inquiry keeping the requested change possible where an equally
   accurate slow one does not (`timely_run`, `late_probe_no_run`).
-* `Becoming.TreeSearch` (L3): a finite search of a route tree read as the run of a determined law
+* `Becoming.TreeSearch` (L1): a finite search of a route tree read as the run of a determined law
   (no premise): what is found is there (`discover_sound`), exhausted is absence within the
   frontier (`exhausted_dead`), enough fuel finds an inhabited tree (`inhabited_discovered`), and
   step `n` of every run reads as the scan with fuel `n` (`run_reads_scan`).
-* `Becoming.Dispatch` (L3): a found route re-read in the current installation before it is acted
+* `Becoming.Dispatch` (L1): a found route re-read in the current installation before it is acted
   on (no premise): dispatch fails without the route or the epoch (`dispatch_absent`,
   `dispatch_revoked`), a search followed by its dispatch completes and draws both
   (`acquired_execution`, `discovery_then_dispatch`), and a capture accepted as the current epoch
   passes the gate (`captured_epoch_passes`).
-* `Becoming.FaultEnvelopes` (L3): what a certificate over a roster of domains warrants under
+* `Becoming.FaultEnvelopes` (L1): what a certificate over a roster of domains warrants under
   supplied fault envelopes (no premise): soundness for every admitted fault set
   (`certificate_sound`), availability exactly where the envelope is separated
   (`availability_iff_separated`), and no warrant from duplication, an empty envelope or a stronger
   one (`duplicated_roster_same`, `stronger_envelope_no_new_acceptance`).
-* `Becoming.Transactions` (L3): a gate of certified readings and approvals, and the monitor
+* `Becoming.Transactions` (L1): a gate of certified readings and approvals, and the monitor
   process it makes (no premise): an open gate finds the route and keeps the scope (`gate_route`,
   `gate_within_scope`), a transaction has exact effects and blocks its replay (`execute_exact`,
   `replay_no_trace`), the scope guard refuses a forbidden command whatever the issuers
   (`guard_blocks_forbidden`), and correlated faults outside the model can admit one
   (`single_fault_model_admits_forbidden`).
-* `Becoming.Reconfiguration` (L3): fault envelopes induced by root causes, and the step that
+* `Becoming.Reconfiguration` (L1): fault envelopes induced by root causes, and the step that
   installs a new roster (no premise): readiness is a nonempty separated induced envelope
   (`ready_iff_nonempty_separated`); the step renews epoch and serial, keeps the scope and stales
   old requests (`step_renews`, `step_keeps_scope`, `step_stales_old_epoch`); two members of one
   cause are not redundant (`same_cause_not_redundant`), and a cause the formulas omit still breaks
   the model.
-* `Becoming.PooledEnvelopes` (L3): certificates over the pooled envelopes of several causal
+* `Becoming.PooledEnvelopes` (L1): certificates over the pooled envelopes of several causal
   models, and the inquiry process that narrows them (no premise): the actual model survives
   faithful tests and a certificate over the pool is sound (`pooled_certificate_sound`); each model
   can be ready while the pool is not (`every_candidate_ready_pool_not`); along every run the
   actual model stays a candidate (`actual_kept`), and an equally accurate slower inspection misses
   the deadline (`slow_misses_deadline`).
-* `Becoming.WitnessRefinement` (L4): a structural question read jointly with its fallible
+* `Becoming.WitnessRefinement` (L1): a structural question read jointly with its fallible
   witnesses (no premise): refinement keeps the actual model (`refine_keeps_actual`); on complete
   transcripts opposite answers are always told apart exactly where the envelopes are
   cross-separated (`complete_diagnosability_iff_cross_separation`, through
   `Readout.no_common_report_envelopes_iff`); a fifth witness resolves what four cannot and stays
   fallible, and the audit is a process whose runs only narrow the candidates.
-* `Becoming.WitnessRefinementRuns` (L4): inspection by fallible witnesses as a process for every
+* `Becoming.WitnessRefinementRuns` (L1): inspection by fallible witnesses as a process for every
   roster, fault sets and answers (`inspection`), and testing (`testing`); the audit and the
   inquiry move their candidates by them. A silent transcript keeps exactly the candidates
   admitting a fault set, a certificate after a step needs a candidate; after a complete
@@ -1688,35 +1743,35 @@ read from the world's side in `Becoming.Labelled`.
   changes nothing; a candidate admitting every failure is kept and blocks every later
   certificate; a test leaving no candidate certifies nothing, and a separated pool after a
   faithful test completes.
-* `Becoming.ChanceFloors` (L3): what pointwise fulfilment of a due protection gives under a finite
+* `Becoming.ChanceFloors` (L1): what pointwise fulfilment of a due protection gives under a finite
   law of chance (no premise): a chance floor (`fulfillment_gives_chance_floor`, through
   `mass_mono`), repair as an event that raises the mass (`repair_adds_new_protection`), and a
   route of positive chance missing exactly the due protection
   (`positive_chance_can_miss_due_protection`).
-* `Becoming.IntegerOrder` (L2): the order laws of `Int` without `propext` (no premise): through
+* `Becoming.IntegerOrder` (L1): the order laws of `Int` without `propext` (no premise): through
   the ring laws of `Becoming.Integers`, every order law reduces to a sum of naturals being natural
   and an integer or its negative being natural; comparison is decided by cases (`lt_or_le`),
   without excluded middle.
-* `Becoming.Acceptance` (L3): an accept bit given priority over a base score, and what it does not
+* `Becoming.Acceptance` (L1): an accept bit given priority over a base score, and what it does not
   protect (no premise): with a positive lift a choice is best exactly where it accepts and its
   move is best by the base score (`acceptance_factorization`), so acceptance restores no access
   the base optimum lacks; diverting the resource that keeps a requested change possible can be
   best (`accepting_optimum_can_destroy_access`), and a value computed without the restriction can
   prefer the wrong branch (`stale_value_shield_suboptimal`).
-* `Becoming.GuardHorizon` (L3): keeping a guard by a choice of moves, over a horizon, from
+* `Becoming.GuardHorizon` (L1): keeping a guard by a choice of moves, over a horizon, from
   readings (choice over the readings named where used): the controlled reading of `Viability`
   (`viable_succ_iff`, `certificate_viable`, `kernel_viable`); Bellman values bound every course
   kept within the guard (`bellman_bounds_safe`); a choice uniform on readings exists exactly where
   each reading has one good move, the converse with `Viability.ChoiceOver`
   (`uniform_policy_iff_fiber_feasible`); endpoint access can hide a gap that an overlapping
   handoff closes (`endpoint_access_hides_gap`, `overlapping_handoff_keeps_access`).
-* `Becoming.Countdown` (L2): counted work, kept properties of admitted courses and a reserved
+* `Becoming.Countdown` (L1): counted work, kept properties of admitted courses and a reserved
   exit, with no premise. An admitted course keeps a property exactly when every admitted step
   does; work done one unit per tick for one unit of fuel finishes in `work + 1` ticks exactly
   when the fuel covers them, and no shorter run finishes; where every admitted move stays valid
   and takes the exit or lowers a margin by one, every admitted course longer than the margin ends
   at the exit, a bound that is attained.
-* `Becoming.Lasting` (L2): lasting a number of steps, exhaustion and never reaching, with no
+* `Becoming.Lasting` (L1): lasting a number of steps, exhaustion and never reaching, with no
   premise. A start lasts `n` steps exactly when some ladder (levels within the guard, each
   admissible step going down one level) holds it at level `n`, and exactly when every necessary
   family holds it there; what no course leaves is what lasts every horizon. A start below level
@@ -1735,7 +1790,7 @@ read from the world's side in `Becoming.Labelled`.
   `EitherThroughout` is the lesser limited principle of omniscience (`LLPO`) for decided
   families, and gives `LLPO` for Boolean sequences (`Becoming.Likeness`). Where the
   branching is infinite it need not.
-* `Becoming.Copying` (L2): reproducing a sequence token by token from a shared pool, for every
+* `Becoming.Copying` (L1): reproducing a sequence token by token from a shared pool, for every
   alphabet and law of draws, with no premise. A copy completes exactly when the pool holds
   every token as often as the word uses it and the support covers what it draws; copies from
   one pool are all released exactly when the pool supplies the words together and the support
@@ -1747,14 +1802,14 @@ read from the world's side in `Becoming.Labelled`.
   defects exactly where the reference is faithful; doubling for `n` rounds from `k` units runs
   exactly when the stock covers a draw for each of the `k * (2 ^ n - 1)` units beyond the
   start.
-* `Becoming.Retrodiction` (L4): reading an earlier relation from later dated records, for every
+* `Becoming.Retrodiction` (L1): reading an earlier relation from later dated records, for every
   type of histories, dates, relations, probes and reports, with no premise. The actual history
   always fits its records; every explanation of an earlier packet by a family history fitting
   the records gives the actual content exactly when every family rival giving the same packet
   with another content is told apart by some dated control. Controls at both ends of a span
   settle every date between exactly when at most one change is admitted or no date lies
   strictly between; a change seen at both ends is not located.
-* `Becoming.CrossSituational` (L4): what a form names, read across the occasions it was met, for
+* `Becoming.CrossSituational` (L1): what a form names, read across the occasions it was met, for
   every type of records and meanings and every reading of bearing and offering, with no premise.
   For a repertoire without repeats a form resolves to a meaning exactly when every bearing record
   offers it and every other meaning is missing from some bearing record; later records only
@@ -1763,7 +1818,7 @@ read from the world's side in `Becoming.Labelled`.
   every rival is ruled out by a bearing record no family world with the rival explains; where
   words are recovered, every sequence is read exactly when each word's records separate its
   meaning.
-* `Becoming.SharedCodes` (L4): a code formed between formations, with no premise beyond what each
+* `Becoming.SharedCodes` (L1): a code formed between formations, with no premise beyond what each
   law names. Codes map senses to forms and change only by hearing, a process of the spine. Hearing
   makes no form; a group's agreement is kept exactly through the hearings closed for it, and
   agreement of all is a rest under every rule. After an order of hearings each formation holds
@@ -1780,7 +1835,7 @@ read from the world's side in `Becoming.Labelled`.
   records do not recover what came before (`Law.merged_stays`), records kept from before bar a
   different resolution, and where records are only added a resolution can be lost but never
   replaced.
-* `Becoming.Likeness` (L3): the laws stated with equality, completed up to likeness, with no
+* `Becoming.Likeness` (L1): the laws stated with equality, completed up to likeness, with no
   premise. A description carries a law up to likeness exactly where some equivalence
   registering the claims makes configurations go alike, the law stated with equality being the
   case where each description is its own claim; the image is then no longer the least carrier;
@@ -1791,7 +1846,7 @@ read from the world's side in `Becoming.Labelled`.
   within the number of pairs of configurations and, counting classes, within `N - 1` for one
   frame of `N` configurations, exactly, and `N + N' - 1` across two; deciding likeness for every
   finite frame is excluded middle.
-* `Becoming.Distinguishing` (L4): what tells configurations apart, and how deep, with no
+* `Becoming.Distinguishing` (L1): what tells configurations apart, and how deep, with no
   premise. Under a determined law read through a registration, in a world a list of `N`
   configurations holds, two configurations pass the same tests exactly where their registered
   futures agree for `N - 1` steps, exact for every `N ≥ 2` in a world `N` configurations hold
@@ -1801,32 +1856,32 @@ read from the world's side in `Becoming.Labelled`.
   the course of a law on `N` configurations; so the depth `N + N' - 1` between two branching
   frames, and the length `N + N' - 1` of the tests across two worlds, are exact for every pair.
   The readings are the AI's.
-* `Becoming.JointPlans` (L3): nested decompositions of any ternary relation and the footprints
+* `Becoming.JointPlans` (L1): nested decompositions of any ternary relation and the footprints
   their leaves draw on (no premise, no frame): realized plans with exclusive footprints draw on the
   root's footprint without repeating.
-* `Becoming.Composition` (L3): a whole and the parts it holds together, one more relation among
+* `Becoming.Composition` (L1): a whole and the parts it holds together, one more relation among
   configurations of the same unfolding. Jointly alike configurations pass the same joint tests
   with no premise; where moves and pairs of parts are compact and the tests stable, passing the
   same joint tests is joint likeness, and without stability that law is exactly excluded middle.
   A description lifts the parts exactly where what it identifies matches parts; realized nested
   plans with exclusive footprints draw on the root's footprint without repeating.
-* `Becoming.Joining` (L3): fragments that join, read through partners, roles and retained
+* `Becoming.Joining` (L1): fragments that join, read through partners, roles and retained
   references, each as a frame of the spine. A description lifts a joining exactly where having one
   code is a bisimulation of the partner frame, with no premise; open maps of joinings are the
   open maps of role frames, two joinings with alike roots have a common refinement, and reading
   through roles loses what retained references keep.
-* `Becoming.Granularity` (L3): one unfolding read at a coarser grain. A block names a finite
+* `Becoming.Granularity` (L1): one unfolding read at a coarser grain. A block names a finite
   course of the same unfolding, and every test of blocks is a finer test, with no premise; where
   the readings of two articulations agree, their histories of blocks match (excluded middle
   named). A recipe chooses at the configuration reached; whether it leads to where a test holds is
   one of finitely many tests, so configurations passing the same tests answer it alike, while
   reading every recipe as one test is exactly excluded middle. What remains of a recipe resumes
   where the course stands. Completed blocks and every nonempty prefix can hide a loss midway.
-* `Becoming.HistoryLanguages` (L3): languages of histories (no premise): a prefix-closed language
+* `Becoming.HistoryLanguages` (L1): languages of histories (no premise): a prefix-closed language
   of words is realized exactly by the law of its histories (`realizes_feasible`); continuation
   profiles, letterwise stability and the obstruction that locates a changed profile; the bounded
   language, the latch and the gate.
-* `Becoming.HistoryIdeals` (L3): histories as ideals of their finite stretches (no premise). A
+* `Becoming.HistoryIdeals` (L1): histories as ideals of their finite stretches (no premise). A
   run is the ideal of the stretches it passes through (`Becoming.Horizon`, which derives its laws
   of what a finite history refutes from those of `Becoming.Ideals`). The laws of `Becoming.Ideals`
   are read on the histories of every process. Adhering is the least closed class, with no double negation; a
@@ -1839,11 +1894,11 @@ read from the world's side in `Becoming.Labelled`.
   principle of omniscience. Words and histories under prefix; for the process of all sequences,
   the runs' histories are the infinite histories of words; prefix-closed languages give closed
   classes of histories.
-* `Becoming.HistoryIdealsTraces` (L3): the word half of `Becoming.HistoryIdeals` on the courses a
+* `Becoming.HistoryIdealsTraces` (L1): the word half of `Becoming.HistoryIdeals` on the courses a
   process can take (no premise): an ideal of feasible courses that settles, or goes on with its
   courses picked, is a history of the process, a feasible course settles, and a run's moves go
   on; a history of feasible courses need not be a run's moves (`history_without_run`).
-* `Becoming.Verification` (L4): what a finite stretch verifies, and what none can refute (no
+* `Becoming.Verification` (L1): what a finite stretch verifies, and what none can refute (no
   premise). A class of histories is open, holding every history above one it holds and a member
   of every directed family whose union it holds, exactly where it is the class meeting an upper
   set of stretches, fixed by its finite histories, and exactly where it is verifiable, with no
@@ -1856,72 +1911,72 @@ read from the world's side in `Becoming.Labelled`.
   finds against its hull; a refutable reading refuted by no stretch excludes nothing; a practice
   keeping verdicts within a favoured reading, never refuted by the record, exists exactly where
   that reading is dense.
-* `Becoming.Coverage` (L3): a placement course and the global cover it builds (no premise): a
+* `Becoming.Coverage` (L1): a placement course and the global cover it builds (no premise): a
   course of placements covers a board exactly where its tiles and the rest make up the board up to
   order, with no event order; where allowed tiles join opposite colours the balance is kept, so
   the board with two opposite corners removed has no cover (`mutilated_no_cover`), and balance
   does not determine coverability (`balance_does_not_determine_coverability`).
-* `Becoming.Presentations` (L3): exact and reduced presentations (no premise; extensionality of
+* `Becoming.Presentations` (L1): exact and reduced presentations (no premise; extensionality of
   predicates named where used): presentations exact for the same answers share one kernel and one
   alignment; a relation descends to codes exactly where it is saturated; the canonical
   presentation by all predicates; a frame's branching tests as questions.
-* `Becoming.PresentationFrames` (L3): presentations of a frame. Exact reduced presentations of a
+* `Becoming.PresentationFrames` (L1): presentations of a frame. Exact reduced presentations of a
   frame's branching tests correspond one to one; the canonical presentation reads every test,
   gives one code exactly to configurations passing the same tests where predicates are
   extensional, and every exact presentation factors through it; the joint relation of a joint
   frame descends to the codes exactly where it is the same for configurations passing the same
   tests; the frame realizing every predicate tells every two configurations apart and every
   relation descends to its codes.
-* `Becoming.Carriers` (L3): one carrier, several laws (no premise): `static`, `toggle` and their
+* `Becoming.Carriers` (L1): one carrier, several laws (no premise): `static`, `toggle` and their
   kin share carrier and feasible words; symmetry does not fix the law, and relational identity
   reads `static` and `toggle` as one recurrence; feasible words do not fix endpoints
   (`word_feasibility_does_not_determine_endpoints`).
-* `Becoming.BranchingCorrespondence` (L3): branching tests match the configurations of two frames
+* `Becoming.BranchingCorrespondence` (L1): branching tests match the configurations of two frames
   (excluded middle named): configurations passing the same tests match successors and are
   bisimilar, reachable configurations correspond one to one and steps are carried exactly
   (`SameBranchingTests.correspondence_of_em`); every bisimulation agrees with the tests.
-* `Becoming.JointCorrespondence` (L3): what a joint frame reaches by steps and parts (stability of
+* `Becoming.JointCorrespondence` (L1): what a joint frame reaches by steps and parts (stability of
   the tests named): joint tests carry pairs and steps exactly and match reachable configurations
   one to one; codes reading the joint tests lift the parts, the plans and exclusive support.
-* `Becoming.ListFootprints` (L3): lists as footprints (no premise): a plan is realized exactly
+* `Becoming.ListFootprints` (L1): lists as footprints (no premise): a plan is realized exactly
   where what its leaves draw on is supported, so reassociating or reordering a plan keeps whether
   it is realized (`realizes_iff_of_perm`).
-* `Becoming.Fragments` (L3): fragments of a process joined end to start (no premise): joining is
+* `Becoming.Fragments` (L1): fragments of a process joined end to start (no premise): joining is
   functional and associative with idle units; probes by the fragments that stay recover the ends
   and the joining and miss the course between (`probes_miss_course`).
-* `Becoming.LocalUnits` (L3): units of a joining (no premise): unique under associativity, shared
+* `Becoming.LocalUnits` (L1): units of a joining (no premise): unique under associativity, shared
   by what joins, carried by correspondences; chain completion is that a common unit suffices; on
   traced fragments the units are the fragments that stay, and the process that moves at most once
   has units but is not chain complete.
-* `Becoming.JoiningContexts` (L3): contexts of a joining as courses of its frame (no premise):
+* `Becoming.JoiningContexts` (L1): contexts of a joining as courses of its frame (no premise):
   agreeing on contexts is passing the same tests (`ContextSame.iff_sameTests`) and, for a
   functional joining, the largest compatible relation (`contextSame_iff_compatible`).
-* `Becoming.JoiningCodes` (L3): codes read against contexts and branching tests (excluded middle
+* `Becoming.JoiningCodes` (L1): codes read against contexts and branching tests (excluded middle
   named where used): the joining of codes, its domain and functionality; a test asked after a
   context; a presentation exact and reduced for the tests lifts a joining with listed outcomes
   (`FiniteOutcomes.lifts_of_exact`).
-* `Becoming.JoiningRoles` (L3): roles and retained references by branching tests (excluded middle
+* `Becoming.JoiningRoles` (L1): roles and retained references by branching tests (excluded middle
   and function extensionality named where used): units give every role; the traced fragments of
   the process that moves once collapse through roles and stay apart through retained references
   (`Fragment.once_codes_apart`).
-* `Becoming.Grains` (L3): what remained of reading at two grains (no premise; the decision of two
+* `Becoming.Grains` (L1): what remained of reading at two grains (no premise; the decision of two
   tests named where used): renaming into single-move blocks and reading finer returns the test
   (`BranchingTest.finer_rename`); either of two decided tests; histories of recipes are finer
   courses; configurations with no step and the same claims are alike (`Alike.of_stuck`).
-* `Becoming.Postponement` (L3): what linear tests see, with no premise. Postponing every branching
+* `Becoming.Postponement` (L1): what linear tests see, with no premise. Postponing every branching
   until it shows (a configuration becoming the family a course may have reached), two
   configurations pass the same linear tests exactly where they are alike, and a frame is alike to
   its postponement exactly where it is determined up to likeness: what linear tests do not see is
   exactly where the unfolding branches.
 
-* `Becoming.Novelty` (L3): returning, novelty and forgetting on the levels alone, with no premise.
+* `Becoming.Novelty` (L1): returning, novelty and forgetting on the levels alone, with no premise.
   Each law's condition is a state of the part written into it: a family whose stock stays within a
   bound returns; a family new at each of as many steps as there are configurations within a bound
   exceeds the bound at one of them, so what is new at every step exceeds every bound; no reading of a
   bounded configuration gives a record that never repeats or a count without bound, so a bounded
   family exchanged with without end, and a finite whole, forget; with loss at each change, change does
   not recur without end. Entropy's forms under the first law are cases.
-* `Becoming.Reading` (L4): activity, drawing and requirement read off the exchange, with no premise
+* `Becoming.Reading` (L1): activity, drawing and requirement read off the exchange, with no premise
   (Ren, 14 October 2026: "please, finish all", adopting the rest of the whole as a relatum). With
   activity read as exchanging and drawing as taking, only active relata give and take, for every flow;
   with the rest counted, every world balances and its balance is exactly the rest never active; under
@@ -1929,7 +1984,7 @@ read from the world's side in `Becoming.Labelled`.
   so the four premises tying readings of one exchange hold with no premise, and requirement is a
   counterfactual of the law that no course fixes. The readings are the AI's, adopted on Ren's
   delegation of 15 October 2026.
-* `Becoming.ExchangePremises` (L4): which of the remaining premises a reading of the exchange
+* `Becoming.ExchangePremises` (L1): which of the remaining premises a reading of the exchange
   settles, with no premise beyond the hypotheses named. The census is a reading wherever a step's
   exchange lies within finitely many relata: the relata that exchange are listed with no decision
   procedure, every finite world has a census with its rest counted, no world read off an exchange
@@ -1940,7 +1995,7 @@ read from the world's side in `Becoming.Labelled`.
   failed by another; with the rest counted, embodiment is closure and no dormancy. Requirement read
   as necessary response over a relation leaving several exchanges open gives activity needing
   support on every run; read as possible response it does not.
-* `Becoming.PlaceTransitionNets` (L4): place/transition nets (Petri nets; reaction networks with
+* `Becoming.PlaceTransitionNets` (L1): place/transition nets (Petri nets; reaction networks with
   whole-number counts), a formalism defined outside the theory by its own rules, read on the
   spine. The net is a law of exchange reading nothing, its course along a schedule is its flow,
   and along a firing sequence the levels the law generates are its markings. The flow balances
@@ -1952,14 +2007,14 @@ read from the world's side in `Becoming.Labelled`.
   weighted tokens, rest unrefuted (flow and world forms) and, for a place every producer of
   which consumes it, the joint-excess law as the siphon law hold of every such net; the
   conservative cycle and the fed place keep each premise needed.
-* `Becoming.Readings` (L4): one unfolding, read in context, with no premise. The readings in context
+* `Becoming.Readings` (L1): one unfolding, read in context, with no premise. The readings in context
   of a run are always one world of indexed claims, with no gluing; a description free of context is a
   gluing; balance is the gluing of the standing's and the exchange's readings of change, and with the
   rest counted every world is one run of the law of exchange. Under the same standard of invariance,
   significance from a standpoint holds within a boundary only by holding for everything, a
   restatement of `Becoming.Boundaries`. The readings are the AI's, adopted on Ren's delegation of 15
   October 2026.
-* `Becoming.MoveFormation` (L4): where a move is formed, with no premise beyond what each law names. In a
+* `Becoming.MoveFormation` (L1): where a move is formed, with no premise beyond what each law names. In a
   part and the rest coupled by one move formed within the whole, the move is the part's exactly
   where it is a policy of the part, the rest's exactly where it is a policy of the rest, and both
   only where it is the same everywhere; an own move closes the part and is the rest's input. Every
@@ -1967,7 +2022,7 @@ read from the world's side in `Becoming.Labelled`.
   clock, forms them; moves formed within a whole held by a list repeat, and every lasso is so
   formed. The record of one course fixes whose move it is only where a configuration recurs with
   the move varied; where nothing recurs, as with a kept history, every reading fits.
-* `Becoming.Sensitivity` (L4): the least registration with any number of conditions, with no
+* `Becoming.Sensitivity` (L1): the least registration with any number of conditions, with no
   premise beyond what each law names. A law reading finitely many conditions under each history,
   the list possibly depending on the history, reads through what it is sensitive to: sensitivity
   is the least registration it reads through, least up to double negation (every registration
@@ -1979,7 +2034,7 @@ read from the world's side in `Becoming.Labelled`.
   of the tail is sensitive to no condition and still differs, and the registrations it reads
   through have no least one; with the conditions numbered, every counterexample to the least
   registration gives the weak limited principle of omniscience.
-* `Becoming.Tail` (L4): what a law of the whole and no part takes, with no premise beyond what each
+* `Becoming.Tail` (L1): what a law of the whole and no part takes, with no premise beyond what each
   statement names. A number read off levels that no single condition changes is set by the tail
   alone; the law exchanging it reads what has stood and is insensitive to every condition, and where
   the number differs it has no least registration. With the conditions numbered, such a number, a
@@ -1988,7 +2043,7 @@ read from the world's side in `Becoming.Labelled`.
   is false throughout: the weak limited principle of omniscience as a rule. The decision of
   vanishing is exactly the limited principle as a rule, so the tail law takes the limited principle
   where a counterexample needs only the weak rule, which the indicator of never vanishing takes.
-* `Becoming.Courses` (L4): the apart laws read on the shared base, with no premise beyond what each
+* `Becoming.Courses` (L1): the apart laws read on the shared base, with no premise beyond what each
   law names. Laws stated for a sequence, a history, a law of change, a pool or a list of
   configurations are stated on the courses of a process, a frame's configurations or a web's
   conditions: an admissible history is a run of the disturbed process, a determined law's orbit
@@ -2001,7 +2056,7 @@ read from the world's side in `Becoming.Labelled`.
   definition changes. `Becoming.CoursesBridge`, outside the core, reads the comparison under every
   classification of fresh contents on a frame's configurations, where a generative extension
   needs no excluded middle.
-* `Becoming.Parting` (L4): what a record fixes where the course branches, with no premise beyond
+* `Becoming.Parting` (L1): what a record fixes where the course branches, with no premise beyond
   what each law names. Two runs part at a step where they register the same before it and differ
   at it; at a parting no learner, whatever it is given, the world included, is right on both.
   Where no two runs from a configuration part, not parting is kept along runs, and on a run held
@@ -2015,7 +2070,7 @@ read from the world's side in `Becoming.Labelled`.
   right at a step on every run exactly where no two runs part there. Where a list of N holds every
   configuration, a course of N steps from a configuration gives courses of every length, with no
   decidability (`Lasting.Continues`).
-* `Becoming.Onward` (L4): where a run goes on, with no premise beyond what each law names. Within
+* `Becoming.Onward` (L1): where a run goes on, with no premise beyond what each law names. Within
   finitely many configurations a run is a course into a return: a run starts at a configuration
   exactly where a course as long as the list of configurations does, exactly where courses of
   every length do and exactly where a course leads to a configuration that returns, with no
@@ -2025,14 +2080,14 @@ read from the world's side in `Becoming.Labelled`.
   recognizes, among enumerated moves, a step staying in the family, a run is built by search,
   with no selection. Asked of every process, a run from every member of every family that keeps
   moving is exactly dependent choice (`DependentChoice`).
-* `Becoming.Typicality` (L4): what counting says of the course that happens, with no premise.
+* `Becoming.Typicality` (L1): what counting says of the course that happens, with no premise.
   With natural weights p and q on two values, the squared deviations (q·a - p·b)² of the courses
   of n steps, weighted, add up exactly to n·p·q·(p + q)^n, so the courses deviating by at least d
   weigh, times d, at most that, out of (p + q)^n: the counting form of the law of large numbers.
   The weights are `Becoming.Weighted`'s counting weights of free branching. That the course which
   happens is typical is not derived: every course is a run. Concentration is exponential: for
   every u ≥ v, the courses with at least k ones weigh, times u^k·v^n, at most (p·u + q·v)^n·v^k.
-* `Becoming.Situations` (L4): what natural weights count, with no premise. Where each step is
+* `Becoming.Situations` (L1): what natural weights count, with no premise. Where each step is
   taken in as many situations as its weight, the law whose moves are the situations is
   determined, and a law whose steps are those of positive weight is it with the situation
   forgotten. Summing any reading over the finer courses is summing it over the courses, each
@@ -2045,7 +2100,7 @@ read from the world's side in `Becoming.Labelled`.
   taken by its weight of situations, for every process. Signed weights are pairs of counts of
   situations, those composing to adding and those composing to subtracting. Which situation
   happens is not a count.
-* `Becoming.Propagation` (L4): how much difference arrives, with no premise beyond what each law
+* `Becoming.Propagation` (L1): how much difference arrives, with no premise beyond what each law
   names. In two balanced flows a condition's gap changes across a step by exactly the difference
   given less the difference taken. An exchange is coupled to a level with strength at most `k`
   where changing that level alone changes what it exchanges by at most `k` times as much
@@ -2057,14 +2112,14 @@ read from the world's side in `Becoming.Labelled`.
   positive exactly along a route in time of positive strengths, on routes of `TimedResponse`'s
   spread where they are registered; carried differences add. A held difference arrives without
   bound through a chain, and a loop of strength one doubles it every step.
-* `Becoming.ListingRefutations` (L4): the refutation laws hold however a family is listed. Each law
+* `Becoming.ListingRefutations` (L2): the refutation laws hold however a family is listed. Each law
   whose other hypotheses read its family through membership only and whose conclusion is a
   refutation holds with no `Distinct` (`not_of_listsOnce`), and with no decided identity except
   where the law's own statement takes `[DecidableEq]` (the fed-from-beyond and boundary laws): the
   fed-from-beyond laws of `Becoming.Continuation` (`Web.embodiedArising_fed_from_beyond_listing` among
   them), the opening, drawing-in and rest laws of `Becoming.Dissipation` and `Becoming.Roles`,
   `Flow.taking_needs_refinement_listing`, and the boundary laws of `Becoming.Standpoints`.
-* `Becoming.Regulation` (L4): a level held from both sides, and a level read late, with no premise
+* `Becoming.Regulation` (L1): a level held from both sides, and a level read late, with no premise
   beyond what each law names. With balance, the joint exchange at a condition is within the gap to
   `m` on both sides exactly where the next level lies between `m` and the level; within the gap
   and opposing the departure on both sides, the gap falls by one a step and the level settles at
@@ -2075,7 +2130,7 @@ read from the world's side in `Becoming.Labelled`.
   relay overshoots its band by lateness times step; past `b + 2 ≤ a + (ℓ + 1) M` a start held
   below the band crosses both ends without end, within it every such start settles, and the
   relay runs for every start where `(ℓ + 1) M ≤ b + 1`, so the threshold is exact.
-* `Becoming.Loops` (L4): how a carried difference grows, with no premise beyond the strengths each
+* `Becoming.Loops` (L1): how a carried difference grows, with no premise beyond the strengths each
   statement names. The carried amount expands by order: order `j`, what routes of at most `j`
   responses carry, rises to the carried amount and is exact up to step `j`. Where no loop of
   couplings lies upstream of a condition, a finite order is exact there at every step and the
@@ -2084,7 +2139,7 @@ read from the world's side in `Becoming.Labelled`.
   at least one plus the product of its strengths. With the same formations and strengths at every
   step, a finite order is exact, and the most difference that can arrive is bounded by a
   polynomial, exactly where no loop lies upstream.
-* `Becoming.Remainder` (L4): what a cut loses, for every schedule of couplings, with no premise
+* `Becoming.Remainder` (L1): what a cut loses, for every schedule of couplings, with no premise
   beyond the strengths each statement names. The carried amount is order `j` plus what `j + 1`
   responses in turn carry from it, so a cut loses exactly that. Order `j` misses something exactly
   where a gap is conveyed through `j + 1` responses in time order, and it is exact from every start
@@ -2092,7 +2147,7 @@ read from the world's side in `Becoming.Labelled`.
   exactly where those chains are bounded. Where the schedule has settled, they are bounded exactly
   where no loop of the couplings that go on lies upstream, with no listing of every condition, and
   the most difference that can arrive grows faster than every polynomial only through such a loop.
-* `Becoming.Routes` (L4): the orders of a carried difference as a sum over histories, with no
+* `Becoming.Routes` (L1): the orders of a carried difference as a sum over histories, with no
   premise beyond what each statement names. For every weighting whose steps split into a ground
   and a response part, order `j` of the sum over histories is exact at every horizon up to `j`.
   Traced back in time, a route steps by one response to an earlier level, the level holding
@@ -2100,7 +2155,7 @@ read from the world's side in `Becoming.Labelled`.
   route points is order `j` of the carried amount, so each order, and the carried amount, is a
   sum over courses, a cut is a truncation, and a finite horizon is exact exactly where no loop
   lies upstream (stationary strengths).
-* `Becoming.Closing` (L4): how loops form within the unfolding, with no premise beyond the
+* `Becoming.Closing` (L1): how loops form within the unfolding, with no premise beyond the
   strengths each statement names. The loops formed by a step are the loops of the couplings
   acting before it, and a world's loops are those formed by some step. The loops formed by
   `T + 1` are those formed by `T` and those through a coupling acting at `T` that closes a
@@ -2109,7 +2164,7 @@ read from the world's side in `Becoming.Labelled`.
   not show whether it will. Strengths read off the course give a course that is the carried
   amount of the strengths it reads; in the threshold witness a loop forms at the step a level
   reaches the threshold and doubles from then on.
-* `Becoming.Thresholds` (L4): loops within what a law reads, and the break, with no premise
+* `Becoming.Thresholds` (L1): loops within what a law reads, and the break, with no premise
   beyond what each statement names. A law reading a schedule is coupled to every unread level with
   strength zero, so every coupling, chain and loop runs through levels read, and a loop forms at a
   step only through a formation reading there a level downstream of where it gives. For every law,
@@ -2117,7 +2172,7 @@ read from the world's side in `Becoming.Labelled`.
   only below a threshold, as one registering it without observing it does, carries a raise of the
   stock nowhere up to the break; before the break it is its standing law, with no loop through the
   stock, so the loop through the stock forms at the break, unforeseen.
-* `Becoming.Observation` (L4): observation as a route from what is observed, with no premise
+* `Becoming.Observation` (L1): observation as a route from what is observed, with no premise
   beyond what each statement names. A gap of one stock alone is conveyed only downstream of it, so
   the carried amount is zero elsewhere. For every law reading into each condition a schedule, two
   courses apart at the start only in a stock are alike at every condition not downstream of it by
@@ -2125,7 +2180,7 @@ read from the world's side in `Becoming.Labelled`.
   reads that lies downstream, observing the stock itself being the route of length zero. A route
   forms by closing, as a loop does; in the measurement witness the route stock → record and the loop
   through the draw form at the step the measurement starts, and the raise registers after it.
-* `Becoming.LevelCoupling` (L4): where a level couples into a formation, with no premise beyond
+* `Becoming.LevelCoupling` (L1): where a level couples into a formation, with no premise beyond
   what each statement names. Strength zero is exactly no response, and a response of an exchange
   to one level is a coupling of every strength array of the law and a route of length one. For a
   law reading through registration, a level neither depended on nor observed is coupled with
@@ -2135,14 +2190,14 @@ read from the world's side in `Becoming.Labelled`.
   admission there; where that admission is decided a crossing passes exactly where the condition
   is required with a positive need; an observed one can be responded to within its need: observing
   is exactly where a level can couple into a formation by level.
-* `Becoming.Interleavings` (L4): the step index read off the relata's own courses, with no premise
+* `Becoming.Interleavings` (L1): the step index read off the relata's own courses, with no premise
   beyond a local law (an exchange changes only the relata it touches, as their states determine).
   Two lists of exchanges giving every relatum the same own course reach the same configuration, and
   so do two traces of the exchange process; a scheduler builds an interleaving of given courses
   exactly where one exists; and the own courses fix the interleaving exactly where every exchange
   touches a relatum and every two share one. The shared index is a reading of the relations: beyond
   them it orders only exchanges sharing no relatum, which changes no configuration.
-* `Becoming.CensusCounts` (L4): the laws of counting where the counts exist, with no decision
+* `Becoming.CensusCounts` (L1): the laws of counting where the counts exist, with no decision
   procedure for activity and for every property of the counts. The counts of a census are taken as
   relations (`Counts`); across a step a ceasing or coming count exists exactly where, for each
   relatum listed at one end, whether it is listed at the other is weakly decided. Where they exist
@@ -2150,7 +2205,7 @@ read from the world's side in `Becoming.Labelled`.
   finite worlds hold of them; where a procedure decides activity, its marks are these counts. The
   laws where every selected premise binds (`World.binding_counting` and its family) still take
   the procedure.
-* `Becoming.CensusBinding` (L4): the rest of the laws of counting over counted censuses, with no
+* `Becoming.CensusBinding` (L1): the rest of the laws of counting over counted censuses, with no
   decision procedure for activity and for every property of the counts: where every premise
   binds, where the premises of each selection bind (with what binding adds: something active,
   something arising, both at one step), in finite worlds and under enclosure, with the
@@ -2158,14 +2213,14 @@ read from the world's side in `Becoming.Labelled`.
   balance and embodiment binding jointly, the enclosed and finite laws agreeing, and the reading
   on what stands. Each statement is its decided form in `Becoming.Counting` with the procedure
   and the pointwise condition removed.
-* `Becoming.Unrolling` (L4): what an extrapolation given nothing fixes, with no premise. Unrolled
+* `Becoming.Unrolling` (L1): what an extrapolation given nothing fixes, with no premise. Unrolled
   on its own proposals, the extrapolation by elimination over the lasso candidates proposes, in
   every world a list holds and from the identification bound on, the value through the map at
   every step ahead: the prefix alone fixes the whole future through the map. A feature is
   learnable through the map exactly where it is, from some step on along every orbit, a reading
   of that future, and the extrapolation given the reading learns it; given nothing, no
   extrapolation learns every learnable feature.
-* `Becoming.Labels` (L4): what finitely many labelled names fix, with no premise beyond a list.
+* `Becoming.Labels` (L1): what finitely many labelled names fix, with no premise beyond a list.
   The extrapolation given a table of labelled names (a name a finite future through the map, a
   label a value of the feature) unrolls the extrapolation given nothing and proposes the label of
   the first name its proposed future begins with. In a world a list of `N` holds, the table of
@@ -2173,13 +2228,13 @@ read from the world's side in `Becoming.Labelled`.
   feature is learnable exactly where the extrapolation given some table of at most `N` names of
   `N - 1` values learns it; its labels include every value the feature takes once it rests.
   Where the map also carries the feature, the labels before the bound fix every later one.
-* `Becoming.Enough` (L4): the boundary of enough on the runs of any process, with no premise. Some
+* `Becoming.Enough` (L1): the boundary of enough on the runs of any process, with no premise. Some
   run from a configuration comes to rest with its target met exactly where a reachable
   configuration that has a step that stays meets the target. Every run from it does exactly where
   every such configuration meets the target and every run from it settles; a process in which
   every configuration can stay and meets the target has a run that never settles. Under a
   determined law the two are one, and are the boundary of enough of `Becoming.Seeking`.
-* `Becoming.Settling` (L4): when the runs of a process keep changing, with no premise beyond a list
+* `Becoming.Settling` (L1): when the runs of a process keep changing, with no premise beyond a list
   where stated. A run that changes within a loop gives a run that goes round it and keeps
   changing; along a run a list holds, change that recurs is a change within a loop. So in a world
   a list holds, some run from a configuration keeps changing exactly where a configuration
@@ -2187,7 +2242,7 @@ read from the world's side in `Becoming.Labelled`.
   settles, or assured enough holds, there is none. That no run keeps changing does not give
   settling: in a process of two configurations, every run settling is the limited principle of
   omniscience.
-* `Becoming.LastChange` (L4): how often a run changes and what it takes to know it has stopped,
+* `Becoming.LastChange` (L1): how often a run changes and what it takes to know it has stopped,
   with no premise beyond a list, and decidable configurations, where stated. Along a run a list of
   `N` holds, with no change within a loop, there are fewer than `N` changes; such a run settles
   exactly where, at every step, whether it changes again is decided, and with decidable
@@ -2195,7 +2250,7 @@ read from the world's side in `Becoming.Labelled`.
   that every run with no reachable change that can be undone settles, for every process of
   decidable configurations in a world a list holds, is exactly that principle. With it, assured
   enough is every reachable stay meeting the target and no reachable change undoable.
-* `Becoming.LimitVerification` (L4): what a method comes to say in the limit (no premise beyond
+* `Becoming.LimitVerification` (L1): what a method comes to say in the limit (no premise beyond
   Markov's principle and decidable configurations, where stated). A method guesses yes or no at
   each horizon from the record so far; it verifies a reading in the limit where it converges to
   yes exactly on the runs inside, and refutes it in the limit where its yes recurs exactly there.
@@ -2208,7 +2263,7 @@ read from the world's side in `Becoming.Labelled`.
   by none. Identification in the limit verifies and refutes each hypothesis in the limit. From not
   recurring to stopping, and splitting a recurring disjunction, each give the limited principle of
   omniscience.
-* `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
+* `Becoming.Frequency` (L1): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return
   around a loop at least doubles what reached it, so frequent returns run away and rare coupling
@@ -2217,7 +2272,7 @@ read from the world's side in `Becoming.Labelled`.
   polynomial. A coupling that stops does not recur, and settling is local; that every schedule
   settles is exactly a dichotomy on decided two-place families, which gives the limited principle
   of omniscience, even for schedules coupling at most once.
-* `Becoming.MutualDependence` (L4): formations whose continuations depend on one another, and the
+* `Becoming.MutualDependence` (L2): formations whose continuations depend on one another, and the
   pace it gives, with no premise beyond the hypotheses each statement names. Three readings, each
   strictly stronger: every system the whole (sharing conditions throughout), every influence closure
   the whole (mutual dependence, equivalently every reach closure), every feeding closure the whole
@@ -2230,7 +2285,7 @@ read from the world's side in `Becoming.Labelled`.
   at least `a` and others at most `b`, raises the share ratio at least as `(a / b) ^ n`; under
   balance a draw exceeding everything drawn before leaves more than half the stock at every step it
   is met, and lasting `n` steps needs `2 ^ n - 1`.
-* `Becoming.Gain` (L3): where novelty's gain comes from, with no premise. With the rest of the
+* `Becoming.Gain` (L1): where novelty's gain comes from, with no premise. With the rest of the
   whole counted, every rise is given: across a step at which a family's stock rises, some relatum
   gives it more than it takes, a formation taking part or the rest, found by checking each one taking
   part. Under the first law a family without repetition that rises is given net by the rest or is
@@ -2239,7 +2294,7 @@ read from the world's side in `Becoming.Labelled`.
   step. Novelty needs gain, first visits without end included, and so does new formation without end
   where what forms requires a fixed amount within the family: no finite family closes over endless
   novelty. Counting on is given each unit by the rest.
-* `Becoming.Gluing` (L3): when readings in context glue, for parity, with no premise beyond the
+* `Becoming.Gluing` (L1): when readings in context glue, for parity, with no premise beyond the
   listed claims and contexts. A contradiction is a selection of contexts, repetition allowed,
   counting every claim an even number of times while the parities it requires add up to odd: every
   context-free assignment fails an odd number of its contexts. With equality of claims decided and
@@ -2251,7 +2306,7 @@ read from the world's side in `Becoming.Labelled`.
   Mermin–Peres square are instances. A cycle of claims related as equal or different is met by a
   context-free assignment exactly where the number of differ relations is even, and contradicts
   where it is odd.
-* `Becoming.Runs` (L3): the one root, with no premise. A world is a run by its type (its
+* `Becoming.Runs` (L1): the one root, with no premise. A world is a run by its type (its
   history, `Becoming.World`) and exactly a run of the law its webs and exchanges show, and every
   run on webs and exchanges is a world; a world balances exactly where it is a run of the law of
   exchange on webs, and with the rest counted every world is such a run. A law of exchange's course is a world, balanced exactly where the law is
@@ -2259,18 +2314,18 @@ read from the world's side in `Becoming.Labelled`.
   carry is the standing of a balanced world, a run of the law of exchange; an orbit is a run. So
   the run is the unfolding read step by step and the world the same unfolding read as relata
   exchanging, identified exactly.
-* `Becoming.CourseWorlds` (L4): the coupling-array frontier on the worlds of two acts under one
+* `Becoming.CourseWorlds` (L1): the coupling-array frontier on the worlds of two acts under one
   law, with no premise beyond what each law names. The gap between the two act worlds is at most
   the carried amount, attained by the carrying law, so the act worlds bound the difference exactly
   as every two balanced flows do; the laws of `Becoming.Loops`, `Becoming.Remainder`,
   `Becoming.Routes`, `Becoming.Closing`, `Becoming.Frequency`, `Becoming.Thresholds` and
   `Becoming.Observation` hold of those worlds.
-* `Becoming.LearnableRuns` (L4): what a learner reading a run's registration can learn, with no
+* `Becoming.LearnableRuns` (L1): what a learner reading a run's registration can learn, with no
   premise. A run of a determined law is its orbit and runs beginning alike in the frame of the
   registration give every learner the same record, so in a world a list holds a target is
   learnable along every run exactly where runs beginning alike have targets that agree from some
   step on.
-* `Becoming.PartialReadout` (L4): partial readout of a feature through a map on a domain (no
+* `Becoming.PartialReadout` (L1): partial readout of a feature through a map on a domain (no
   premise beyond what each theorem names; a section of the map is a hypothesis where a reading
   must be built): an exact reading is sound and needs the feature lumped (`ExactWithin.sound`,
   `ExactWithin.lumped`), and with a section one exists exactly then (`exact_exists_iff`); a sound
@@ -2278,45 +2333,45 @@ read from the world's side in `Becoming.Labelled`.
   channel model the signal alone is read by no exact reading and the signal with a reference is
   (`signal_no_exact`, `paired_exact`); on runs, an extrapolation rests on the feature from a step
   exactly where it reads the prefix exactly from then on (`Runs.exact_iff_predictsFrom`).
-* `Becoming.CodeAcquisition` (L4): acquiring a two-primitive code from probe records (supplied
+* `Becoming.CodeAcquisition` (L1): acquiring a two-primitive code from probe records (supplied
   code, probes and stock): the probe records give the code exactly and so every expression
   (`acquired_exact`, `acquired_every_expression`), while the primitive probes alone are lumped and
   read by no exact reading (`primitives_not_lumped`, `primitives_no_exact`); training draws on
   stock and installs the code, which answers a novel expression (`training_installs`,
   `novel_execution`); training is a process (`trainProcess`, `step_code_transfers`).
-* `Becoming.RouteFormation` (L4): forming a route that executes an acquired code (supplied parts,
+* `Becoming.RouteFormation` (L1): forming a route that executes an acquired code (supplied parts,
   grammar of routes and search): the code alone supplies no route (`interpretation_no_route`); a
   wrong route is built, tried and replaced, and the formed route answers a novel expression
   (`wrong_route_replaced`, `formed_answers_novel`), with every move keeping stock plus drawn
   (`course_stock`); old records can admit a wrong route that only a new record separates, and
   repair needs a fresh record and parts (`old_records_admit_duplicate`, `fresh_record_rebuilds`,
   `discrepancy_no_parts`); the moves form one process (`formationProcess`, `trace_iff`).
-* `Becoming.ResponseLearning` (L4): forming an operation from another formation's actual responses
+* `Becoming.ResponseLearning` (L1): forming an operation from another formation's actual responses
   (supplied programs, lessons and stock): a lesson keeps the pair's stock plus drawn and the
   receiver sees only responses (`lesson_stock`, `learn_through_interface`); the program is
   reconstructed and kept in every generation (`reconstructs_program`, `every_cohort_holds`),
   and so is a lost distinction, whatever the stock (`distinction_lost_every_cohort`,
   `stock_keeps_content`); succession is a law whose runs pass through the generations
   (`run_cohort`).
-* `Becoming.LearnedGrouping` (L4): received transitions form the grouping through which a formed
+* `Becoming.LearnedGrouping` (L1): received transitions form the grouping through which a formed
   operation reads an utterance (supplied sounds, decoder and encounters): grouping recovers the
   words of every two-word sequence exactly when six bond values hold (`two_word_iff`), which the
   supplied context's majority bonds give (`context_groups_words`), so the utterance parses and the
   formed operation answers it (`grouping_reaches_program`); a course with the same counts in
   another order does not (`order_not_frequency`); reception is a process (`reception`,
   `total_kept`).
-* `Becoming.ParityReadings` (L4): where the readings of one unfolding glue, with no premise beyond
+* `Becoming.ParityReadings` (L1): where the readings of one unfolding glue, with no premise beyond
   the listed claims and contexts. The registrations glue at a step of a run exactly where the
   world of readings is context-free there; for a parity system some world of readings respecting
   the possibilities is context-free at a step, and some frame of context-free claims of a process
   fits, exactly where no selection of contexts contradicts. Quantum registrations of the square
   exist at every configuration, leave the world of readings context-free at no step and fit no
   frame of context-free claims of any process.
-* `Becoming.FinerTraces` (L4): the situations counted are the courses of one determined process,
+* `Becoming.FinerTraces` (L1): the situations counted are the courses of one determined process,
   with no premise. The finer courses of `n` steps are exactly the finer law's traces of `n` steps
   taking listed moves to listed configurations; the law of steps of positive weight is the finer
   law with the situation forgotten, and situations exist exactly where it has a course.
-* `Becoming.HistorySums` (L4): support, splitting, exact orders and the steps between of the sum
+* `Becoming.HistorySums` (L1): support, splitting, exact orders and the steps between of the sum
   over histories, with no premise beyond what each theorem names. Where a weighting vanishes off
   the steps a possibility admits, the sum vanishes wherever possibility does not reach the
   reading. The transfer splits at every intermediate horizon, and the weight along a joined
@@ -2332,70 +2387,70 @@ read from the world's side in `Becoming.Labelled`.
   weight where no trace reaches, traces split at every number of moves, an exact order not zero
   has a trace and a course of the parts with exactly that many responses, and the steps between are
   those on a trace from the start to the reading.
-* `Becoming.FormedLoops` (L4): worlds whose loops form within them, with no premise. Up to a step,
+* `Becoming.FormedLoops` (L1): worlds whose loops form within them, with no premise. Up to a step,
   a world whose strengths are read off its own standing stands as the balanced world its couplings
   formed before that step carry. The witnesses of `Becoming.Closing` and `Becoming.Frequency` are
   balanced worlds: a self-loop acting from a step on, a threshold world whose loop of the couplings
   it reads off its own standing forms at the threshold and not before, and self-loops coupling on
   a schedule, the sparse one recurring without running away.
-* `Becoming.AttractionRuns` (L4): attraction on the process of a determined law: what every run is
+* `Becoming.AttractionRuns` (L1): attraction on the process of a determined law: what every run is
   drawn into.
-* `Becoming.BoundaryFlows` (L4): the self's boundaries drawn along what a flow relates.
-* `Becoming.BoundaryWorlds` (L4): the presupposition along what affects what in a world.
-* `Becoming.CandidateRuns` (L4): cross-situational resolution step by step along a run.
-* `Becoming.CaptureWorlds` (L4): a target's share among descendants.
-* `Becoming.CensusWebs` (L4): counts of arising and ceasing where they exist, and listing once.
-* `Becoming.ContactCourses` (L4): revision rules as processes, and encodings along a run of
+* `Becoming.BoundaryFlows` (L2): the self's boundaries drawn along what a flow relates.
+* `Becoming.BoundaryWorlds` (L2): the presupposition along what affects what in a world.
+* `Becoming.CandidateRuns` (L1): cross-situational resolution step by step along a run.
+* `Becoming.CaptureWorlds` (L1): a target's share among descendants.
+* `Becoming.CensusWebs` (L1): counts of arising and ceasing where they exist, and listing once.
+* `Becoming.ContactCourses` (L1): revision rules as processes, and encodings along a run of
   channels.
-* `Becoming.ContextualRuns` (L4): the parity bounds and the parts of no whole along the runs of any
+* `Becoming.ContextualRuns` (L1): the parity bounds and the parts of no whole along the runs of any
   process.
-* `Becoming.ContinuingRuns` (L4): the witness of continuing revision at yield nine, read along its
+* `Becoming.ContinuingRuns` (L1): the witness of continuing revision at yield nine, read along its
   run.
-* `Becoming.CopyCourses` (L4): the laws of copying on the courses and runs of its processes.
-* `Becoming.CountdownCourses` (L4): countdown on the courses of a partial law's process.
-* `Becoming.CounterfactualRuns` (L4): the course of an act on runs of the standard model and on the
+* `Becoming.CopyCourses` (L1): the laws of copying on the courses and runs of its processes.
+* `Becoming.CountdownCourses` (L1): countdown on the courses of a partial law's process.
+* `Becoming.CounterfactualRuns` (L1): the course of an act on runs of the standard model and on the
   course world.
-* `Becoming.CouplingTraces` (L4): couplings read as the steps of a process.
-* `Becoming.CourseRoles` (L4): one course, one kind or two roles.
-* `Becoming.DependenceWebs` (L4): support in a fixed unit, and coextinction with no reserve.
-* `Becoming.DiagonalRuns` (L4): completing a registration within what it registers, as a process.
-* `Becoming.ExchangeFlows` (L4): uniform descent, and what a sampled flow keeps of an absent
+* `Becoming.CouplingTraces` (L1): couplings read as the steps of a process.
+* `Becoming.CourseRoles` (L1): one course, one kind or two roles.
+* `Becoming.DependenceWebs` (L1): support in a fixed unit, and coextinction with no reserve.
+* `Becoming.DiagonalRuns` (L1): completing a registration within what it registers, as a process.
+* `Becoming.ExchangeFlows` (L1): uniform descent, and what a sampled flow keeps of an absent
   relatum.
-* `Becoming.HorizonWebs` (L4): the horizon in the support-gated law, on its webs.
-* `Becoming.IdentificationRuns` (L4): the states of a run and what a bounded record fixes.
-* `Becoming.JointPlanFrames` (L4): joint plans of joint frames: nested decompositions read through
+* `Becoming.HorizonWebs` (L1): the horizon in the support-gated law, on its webs.
+* `Becoming.IdentificationRuns` (L1): the states of a run and what a bounded record fixes.
+* `Becoming.JointPlanFrames` (L1): joint plans of joint frames: nested decompositions read through
   a description.
-* `Becoming.LastingRuns` (L4): lasting and reaching on runs and courses.
-* `Becoming.LearningRuns` (L4): what a run's registered record fixes and what a learner reaching it
+* `Becoming.LastingRuns` (L1): lasting and reaching on runs and courses.
+* `Becoming.LearningRuns` (L1): what a run's registered record fixes and what a learner reaching it
   does.
-* `Becoming.LevelWebs` (L4): laws of a condition's level and a family's configuration on a web.
-* `Becoming.ListedOutcomeFrames` (L4): what fixes likeness where each move has listed outcomes.
-* `Becoming.ListedWebs` (L4): the laws of listing what is active, read of a web's activity.
-* `Becoming.MoveRuns` (L4): where the moves of a run are formed.
-* `Becoming.OrderWorlds` (L4): the arrangements of a world's exchanges, and its readings in time.
-* `Becoming.PassageWorlds` (L4): what the stated laws of one step and the following of passages
+* `Becoming.LevelWebs` (L1): laws of a condition's level and a family's configuration on a web.
+* `Becoming.ListedOutcomeFrames` (L1): what fixes likeness where each move has listed outcomes.
+* `Becoming.ListedWebs` (L1): the laws of listing what is active, read of a web's activity.
+* `Becoming.MoveRuns` (L1): where the moves of a run are formed.
+* `Becoming.OrderWorlds` (L1): the arrangements of a world's exchanges, and its readings in time.
+* `Becoming.PassageWorlds` (L1): what the stated laws of one step and the following of passages
   give of worlds.
-* `Becoming.RecurrenceRuns` (L4): recurrence on the process of a determined law: merging, returning
+* `Becoming.RecurrenceRuns` (L1): recurrence on the process of a determined law: merging, returning
   and the kept history.
-* `Becoming.ReducedRuns` (L4): what a reduction keeps of the courses and runs of a law.
-* `Becoming.ReferencePlanTraces` (L4): revision of a reference plan as a process of the spine.
-* `Becoming.RetrodictionRuns` (L4): reading an earlier configuration of a run from later dated
+* `Becoming.ReducedRuns` (L1): what a reduction keeps of the courses and runs of a law.
+* `Becoming.ReferencePlanTraces` (L1): revision of a reference plan as a process of the spine.
+* `Becoming.RetrodictionRuns` (L1): reading an earlier configuration of a run from later dated
   records.
-* `Becoming.RevisionRuns` (L4): what the history of a run's registrations selects, and the
+* `Becoming.RevisionRuns` (L1): what the history of a run's registrations selects, and the
   reconstruction steps.
-* `Becoming.RouteTraces` (L4): the orders of a sum over a process's histories.
-* `Becoming.SeekingRuns` (L4): the boundary of enough on the unfolding.
-* `Becoming.SelectionRuns` (L4): a selection through a run's registered course.
-* `Becoming.SensitivityWebs` (L4): sensitivity on webs and flows: what depends on the whole, read
+* `Becoming.RouteTraces` (L1): the orders of a sum over a process's histories.
+* `Becoming.SeekingRuns` (L1): the boundary of enough on the unfolding.
+* `Becoming.SelectionRuns` (L1): a selection through a run's registered course.
+* `Becoming.SensitivityWebs` (L1): sensitivity on webs and flows: what depends on the whole, read
   off the courses.
-* `Becoming.SituationTraces` (L4): the counts of situations are counts of the traces of one
+* `Becoming.SituationTraces` (L1): the counts of situations are counts of the traces of one
   determined process.
-* `Becoming.StockTraces` (L4): when a course is executable on a stock, in closed form.
-* `Becoming.StrengthFlows` (L4): coupling strengths read off the flows a law gives.
-* `Becoming.TailRuns` (L4): the omniscience a law of the whole takes, stated of every run.
-* `Becoming.TallyWorlds` (L4): the counts a world's census can have.
-* `Becoming.TypicalRuns` (L4): what counting says of the records of runs of free branching.
-* `Becoming.WeightedTraces` (L4): integrating out and memory, on the traces of processes.
+* `Becoming.StockTraces` (L1): when a course is executable on a stock, in closed form.
+* `Becoming.StrengthFlows` (L1): coupling strengths read off the flows a law gives.
+* `Becoming.TailRuns` (L1): the omniscience a law of the whole takes, stated of every run.
+* `Becoming.TallyWorlds` (L1): the counts a world's census can have.
+* `Becoming.TypicalRuns` (L1): what counting says of the records of runs of free branching.
+* `Becoming.WeightedTraces` (L1): integrating out and memory, on the traces of processes.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

@@ -1,6 +1,6 @@
 import Becoming.Lexical
 import Becoming.Frame
-import Becoming.ValuationFrames
+import Becoming.Extension
 
 /-!
 # Joint bundles: what a region of configurations can realize together

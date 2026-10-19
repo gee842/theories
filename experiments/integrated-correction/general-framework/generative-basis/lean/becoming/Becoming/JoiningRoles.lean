@@ -190,7 +190,7 @@ theorem retained_pair_matches_of_em (em : ∀ p : Prop, Decided p) {J : Joining 
       ⟨a, b, z, at_i, at_j, joined, rfl⟩ with
   | ⟨_, ⟨a', b', z', at_i', at_j', joined', formed⟩, joinedT⟩ =>
     ⟨a', b', z', at_i', at_j', joined',
-     (length_appended xs [z]).trans ((congrArg (· + 1) slots).trans (length_appended ys [z']).symm),
+     (ListTests.length_append xs [z]).trans ((congrArg (· + 1) slots).trans (ListTests.length_append ys [z']).symm),
      Eq.subst (motive := fun w => SameBranchingTests J.retainedFrame K.retainedFrame (xs ++ [z]) w)
        formed joinedT⟩
 

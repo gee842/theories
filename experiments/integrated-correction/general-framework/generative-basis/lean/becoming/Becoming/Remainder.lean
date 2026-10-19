@@ -177,13 +177,13 @@ theorem carriedGive_add (t : Nat) (h : F) (c : C) (l m : Nat → C → Nat) :
     have first : carriedGive cs part σ k t h c l = σ t h c := carriedGive_of_part hp
     have second : carriedGive cs part (fun _ _ _ => 0) k t h c m = 0 := carriedGive_of_part hp
     (carriedGive_of_part hp).trans ((Nat.add_zero _).symm.trans
-      (Propagation.add_congr first.symm second.symm))
+      (Naturals.add_congr first.symm second.symm))
   | false =>
     (carriedGive_of_rest hp).trans
       ((total_congr_on fun _ _ => (total_congr_on fun _ _ => Nat.left_distrib _ _ _).trans
           (total_add _ _ _)).trans
         ((total_add _ _ _).trans
-          (Propagation.add_congr (carriedGive_of_rest hp).symm (carriedGive_of_rest hp).symm)))
+          (Naturals.add_congr (carriedGive_of_rest hp).symm (carriedGive_of_rest hp).symm)))
 
 /-- **What is carried is additive in the levels read.** Carried from two sets of levels together:
 what is carried from the first, with the starting gaps and the part's gaps, and what one response
@@ -193,7 +193,7 @@ theorem carriedFrom_add (l m : Nat → C → Nat) :
       carriedFrom cs part σ k present δ l t c + responded cs part k present m t c
   | 0, _ => rfl
   | t + 1, c =>
-    (Propagation.add_congr (carriedFrom_add l m t c)
+    (Naturals.add_congr (carriedFrom_add l m t c)
         ((total_congr_on fun h _ => carriedGive_add t h c l m).trans (total_add _ _ _))).trans
       (Nat.add_add_add_comm _ _ _ _)
 

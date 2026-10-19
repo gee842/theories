@@ -1116,11 +1116,6 @@ theorem not_not_bool : ∀ b : Bool, (!(!b)) = b
   | true => rfl
   | false => rfl
 
-/-- A negation moves every value. -/
-theorem not_ne_bool : ∀ b : Bool, (!b) ≠ b
-  | true, same => nomatch (same : false = true)
-  | false, same => nomatch (same : true = false)
-
 theorem course_two (a : Nat) : Negation.course (a + 2) = Negation.course a :=
   not_not_bool (Negation.course a)
 
@@ -1204,10 +1199,6 @@ theorem not_missed_of {v w : Bool} {c : Option Bool} (claims : c = some v) (same
     ¬ Learning.Misses c w :=
   Eq.subst (motive := fun c => ¬ Learning.Misses c w) claims.symm
     (Eq.subst (motive := fun x => ¬ Learning.Misses (some x) w) same.symm Learning.not_missed_self)
-
-theorem le_of_add_right : ∀ {a c : Nat} (b : Nat), a + b ≤ c + b → a ≤ c
-  | _, _, 0, le => le
-  | _, _, b + 1, le => le_of_add_right b (Nat.le_of_succ_le_succ le)
 
 theorem four_assoc (a x q : Nat) : a + x + q + 1 = a + (x + q + 1) :=
   congrArg (· + 1) (Nat.add_assoc a x q)
@@ -1311,7 +1302,7 @@ theorem odd_shift_runs {e h j a w i k : Nat} (fit : 2 * e + 1 + 2 * (h + 1) = n 
       Nat.le_trans (Nat.le_trans (Nat.succ_le_succ diag) late)
         (Eq.subst (motive := fun b => B ≤ b) (back_turn (a + d)).symm (Nat.le_add_right B (a + d)))
     have from_i : i ≤ B' + (a + d + 2 * (h + 1)) :=
-      le_of_add_right (2 * e) (Nat.le_of_succ_le_succ chain)
+      le_of_add_le_add_right (2 * e) (Nat.le_of_succ_le_succ chain)
     not_missed_of
       ((congrArg (fun t => Learning.lassos k (Learning.prefixOf o t)) at_t).trans
         ((claim _ from_i).trans (congrArg some (oddCycle_block n j u_le))))
@@ -1342,7 +1333,7 @@ theorem unit_shift_missed {j x i k : Nat} (inside : x + 1 ≤ n) (from_i : i ≤
     ((congrArg (fun p => Learning.lasso p (Learning.prefixOf (oddCycle n) ((n + 1) * j + x + 1)))
       pair).trans ((lasso_back (q := 0) from_i).trans
         (congrArg some (oddCycle_block n j (Nat.le_of_succ_le inside)))))
-    (fun same => not_ne_bool (Negation.course x)
+    (fun same => ListTests.not_ne_self (Negation.course x)
       (same.trans (oddCycle_block n j (x := x + 1) inside)).symm))
 
 /-- The current pair of elimination over the lasso candidates one step into turn `J` of the

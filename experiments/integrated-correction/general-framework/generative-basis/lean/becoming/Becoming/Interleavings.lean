@@ -53,10 +53,6 @@ section Lists
 
 variable {α : Type}
 
-theorem mem_cons_split {a b : α} {l : List α} : b ∈ a :: l → b = a ∨ b ∈ l
-  | .head _ => .inl rfl
-  | .tail _ mem => .inr mem
-
 theorem cons_ne_nil {a : α} {l : List α} : a :: l ≠ [] :=
   fun same => nomatch same
 
@@ -80,11 +76,11 @@ theorem split_first (p : α → Bool) : ∀ L : List α,
     | false =>
       match split_first p L with
       | .inl absent =>
-        exact .inl fun f mem => match mem_cons_split mem with
+        exact .inl fun f mem => match mem_cons_cases mem with
           | .inl same => by rw [same]; exact here
           | .inr rest => absent f rest
       | .inr ⟨A, f, B, split, before, found⟩ =>
-        exact .inr ⟨g :: A, f, B, by rw [split]; rfl, fun a mem => match mem_cons_split mem with
+        exact .inr ⟨g :: A, f, B, by rw [split]; rfl, fun a mem => match mem_cons_cases mem with
           | .inl same => by rw [same]; exact here
           | .inr rest => before a rest, found⟩
 
@@ -254,7 +250,7 @@ theorem shares_of_mem {e f : E} {x : X} (touchE : law.touches e x = true)
     (touchF : law.touches f x = true) : ∀ {xs : List X}, x ∈ xs → law.shares xs e f = true
   | y :: xs, mem => by
     show (law.touches e y && law.touches f y || law.shares xs e f) = true
-    match mem_cons_split mem with
+    match mem_cons_cases mem with
     | .inl same =>
       rw [← same, touchE, touchF]
       rfl
@@ -539,7 +535,7 @@ theorem ready_heads {c : X → List E} {e : E} : ∀ {xs : List X}, law.ready c 
     | false => rw [first] at h; exact Bool.noConfusion h
     | true =>
       rw [first] at h
-      match mem_cons_split mem with
+      match mem_cons_cases mem with
       | .inl same =>
         rw [same] at touch ⊢
         rw [touch] at first
@@ -580,7 +576,7 @@ theorem done_nil {c : X → List E} : ∀ {xs : List X}, done c xs = true → �
     match hy : c y with
     | [] =>
       rw [hy] at h
-      match mem_cons_split mem with
+      match mem_cons_cases mem with
       | .inl same => rw [same]; exact hy
       | .inr rest => exact done_nil h x rest
     | _ :: _ =>
@@ -654,7 +650,7 @@ theorem pick_some {c : X → List E} {all : List X} {e : E} {x : X} {m : List E}
     match hy : c y with
     | [] =>
       rw [pick_nil_head xs hy]
-      match mem_cons_split mem with
+      match mem_cons_cases mem with
       | .inl same => rw [same] at hx; exact nomatch (hy.symm.trans hx)
       | .inr rest => exact pick_some touch isReady hx rest
     | a :: m' =>
@@ -663,7 +659,7 @@ theorem pick_some {c : X → List E} {all : List X} {e : E} {x : X} {m : List E}
       | true => exact ⟨a, rfl⟩
       | false =>
         change ∃ e', law.pick c all xs = some e'
-        match mem_cons_split mem with
+        match mem_cons_cases mem with
         | .inl same =>
           rw [same] at hx touch
           have heads : a = e := cons_heads (hy.symm.trans hx)
@@ -770,7 +766,7 @@ theorem total_lt {c c' : X → List E} (le : ∀ x, (c x).length ≤ (c' x).leng
       total c xs + 1 ≤ total c' xs
   | y :: xs, mem => by
     show (c y).length + total c xs + 1 ≤ (c' y).length + total c' xs
-    match mem_cons_split mem with
+    match mem_cons_cases mem with
     | .inl same =>
       rw [Nat.add_right_comm]
       rw [same] at lt
@@ -784,7 +780,7 @@ theorem total_pos {c : X → List E} {x : X} {e : E} {m : List E} (hx : c x = e 
     ∀ {xs : List X}, x ∈ xs → 1 ≤ total c xs
   | y :: xs, mem => by
     show 1 ≤ (c y).length + total c xs
-    match mem_cons_split mem with
+    match mem_cons_cases mem with
     | .inl same =>
       rw [← same, hx]
       exact Nat.le_trans (Nat.succ_le_succ (Nat.zero_le m.length)) (Nat.le_add_right _ _)

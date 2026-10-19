@@ -83,21 +83,12 @@ theorem mem_joined_right {α : Type u} {a : α} : ∀ (l : List α) {m : List α
   | [], _, mem => mem
   | _ :: l, _, mem => .tail _ (mem_joined_right l mem)
 
-/-- A member of two joined lists is a member of one of them, at every universe. -/
-theorem mem_joined_split {α : Type u} {a : α} :
-    ∀ {l m : List α}, a ∈ l ++ m → a ∈ l ∨ a ∈ m
-  | [], _, mem => .inr mem
-  | _ :: l, _, .head _ => .inl (.head l)
-  | b :: _, _, .tail _ mem => match mem_joined_split mem with
-    | .inl inside => .inl (.tail b inside)
-    | .inr outside => .inr outside
-
 /-- **A member of a sequence of words written out is a member of one of its words.** -/
 theorem mem_encode {α : Type u} {β : Type v} {g : β → List α} {a : α} :
     ∀ {l : List β}, a ∈ Segmentation.encode g l ↔ ∃ b, b ∈ l ∧ a ∈ g b
   | [] => ⟨fun mem => (nomatch (show a ∈ ([] : List α) from mem)), fun ⟨_, mem, _⟩ => (nomatch mem)⟩
   | b :: l =>
-    ⟨fun mem => match mem_joined_split (l := g b)
+    ⟨fun mem => match (ListTests.mem_append_iff (l := g b)).mp
         (show a ∈ g b ++ Segmentation.encode g l from mem) with
       | .inl here => ⟨b, .head l, here⟩
       | .inr rest => match (mem_encode (l := l)).mp rest with
@@ -120,7 +111,7 @@ theorem listed_through {X : Type u} {Y : Type u'} {R : X → Y → Prop}
         | .inl same => mem_joined_left L
             ((here y).mp (Eq.subst (motive := fun w => R w y) same related))
         | .inr mem => mem_joined_right l ((rest y).mp ⟨z, mem, related⟩),
-       fun mem => match mem_joined_split mem with
+       fun mem => match ListTests.mem_append_iff.mp mem with
         | .inl inside => ⟨x, .head xs, (here y).mpr inside⟩
         | .inr outside => match (rest y).mpr outside with
           | ⟨z, mem, related⟩ => ⟨z, .tail x mem, related⟩⟩⟩
@@ -404,7 +395,7 @@ theorem Joining.retained_blocks_extend {F : Type u} {J : Joining F} {B : Type v}
   match Joining.retained_extends ((J.retainedFrame.blocks_trace_iff expand word).mp path) with
   | ⟨added, extended, counted⟩ =>
     ⟨⟨added, extended⟩, (congrArg List.length extended).trans
-      ((Joining.length_appended xs added).trans (congrArg (xs.length + ·) counted))⟩
+      ((ListTests.length_append xs added).trans (congrArg (xs.length + ·) counted))⟩
 
 /-! ## Recipes: finite guarded courses chosen at the configurations reached -/
 
@@ -614,7 +605,7 @@ theorem Recipe.leads_iff_afterAny (F : Frame S A C) :
         | ⟨χ, mem, holds'⟩ => ⟨χ, Granularity.mem_joined_left _ mem, holds'⟩
       | .inr second => match (Recipe.leads_iff_afterAny F q s φ).mp ⟨t, second, holds⟩ with
         | ⟨χ, mem, holds'⟩ => ⟨χ, Granularity.mem_joined_right _ mem, holds'⟩,
-     fun ⟨χ, mem, holds⟩ => match Granularity.mem_joined_split mem with
+     fun ⟨χ, mem, holds⟩ => match ListTests.mem_append_iff.mp mem with
       | .inl inside => match (Recipe.leads_iff_afterAny F p s φ).mpr ⟨χ, inside, holds⟩ with
         | ⟨t, first, holds'⟩ => ⟨t, .inl first, holds'⟩
       | .inr outside => match (Recipe.leads_iff_afterAny F q s φ).mpr ⟨χ, outside, holds⟩ with
@@ -701,7 +692,7 @@ theorem Recipe.outcomes {F : Frame S A C}
       ⟨fun lead => match lead with
         | .inl first => Granularity.mem_joined_left l' ((listed t).mp first)
         | .inr second => Granularity.mem_joined_right l ((listed' t).mp second),
-       fun mem => match Granularity.mem_joined_split mem with
+       fun mem => match ListTests.mem_append_iff.mp mem with
         | .inl inside => .inl ((listed t).mpr inside)
         | .inr outside => .inr ((listed' t).mpr outside)⟩⟩
 

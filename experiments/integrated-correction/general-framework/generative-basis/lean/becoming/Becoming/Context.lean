@@ -1,3 +1,5 @@
+import Becoming.Prelude
+
 /-!
 # Contextual worlds: claims shown in context
 
@@ -246,10 +248,6 @@ theorem marks_other : ∀ k, marks (first k) (second k) = false ∧ marks (secon
   | .bc => ⟨rfl, rfl⟩
   | .ca => ⟨rfl, rfl⟩
 
-theorem flip_ne : ∀ b : Bool, b ≠ !b
-  | true => fun h => nomatch h
-  | false => fun h => nomatch h
-
 /-- **No opening forces a box**: every box can show either way in every opening it belongs to,
 so whatever a box shows in one opening it can show in the other. -/
 theorem unforced : Unforced within support :=
@@ -258,7 +256,7 @@ theorem unforced : Unforced within support :=
         by
           show cond (marks (first k) (first k)) b (!b) ≠ cond (marks (first k) (second k)) b (!b)
           rw [marks_self, (marks_other k).1]
-          exact flip_ne b,
+          exact ListTests.ne_not b,
         by
           subst e
           show cond (marks (first k) (first k)) b (!b) = b
@@ -268,7 +266,7 @@ theorem unforced : Unforced within support :=
         by
           show cond (marks (second k) (first k)) b (!b) ≠ cond (marks (second k) (second k)) b (!b)
           rw [marks_self, (marks_other k).2]
-          exact fun h => flip_ne b h.symm,
+          exact fun h => ListTests.ne_not b h.symm,
         by
           subst e
           show cond (marks (second k) (second k)) b (!b) = b

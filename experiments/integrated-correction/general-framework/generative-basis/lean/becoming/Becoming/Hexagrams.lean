@@ -126,16 +126,6 @@ theorem both : ∀ {x y : Bool}, (x && y) = true → x = true ∧ y = true
   | true, false, h => Bool.noConfusion h
   | false, _, h => Bool.noConfusion h
 
-theorem either : ∀ {x y : Bool}, (x || y) = true → x = true ∨ y = true
-  | true, _, _ => .inl rfl
-  | false, true, _ => .inr rfl
-  | false, false, h => Bool.noConfusion h
-
-/-- A line value turned twice is the value. -/
-theorem opposite_opposite : ∀ b : Bool, (!!b) = b
-  | true => rfl
-  | false => rfl
-
 /-- Two hexagrams agree at every line. -/
 def eqb (s t : Hexagram) : Bool :=
   same s.l1 t.l1 && same s.l2 t.l2 && same s.l3 t.l3 && same s.l4 t.l4 && same s.l5 t.l5 &&
@@ -175,7 +165,7 @@ def memb (s : Hexagram) : List Hexagram → Bool
 
 theorem mem_of_memb {s : Hexagram} : ∀ {l : List Hexagram}, memb s l = true → s ∈ l
   | [], h => Bool.noConfusion h
-  | t :: _, h => match either h with
+  | t :: _, h => match ListTests.or_cases h with
     | .inl here => by
       cases eq_of_eqb here
       exact List.Mem.head _
@@ -272,8 +262,8 @@ def reverse : Hexagram → Hexagram
 theorem complement_complement : ∀ s : Hexagram, complement (complement s) = s
   | ⟨a, b, c, d, e, f⟩ => by
     show (⟨!!a, !!b, !!c, !!d, !!e, !!f⟩ : Hexagram) = ⟨a, b, c, d, e, f⟩
-    rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
-      opposite_opposite e, opposite_opposite f]
+    rw [ListTests.not_not a, ListTests.not_not b, ListTests.not_not c, ListTests.not_not d,
+      ListTests.not_not e, ListTests.not_not f]
 
 /-- Two consecutive members of the order are paired: the second is the first turned over, or,
 where turning over gives the same hexagram, the first changed in every line. -/
@@ -290,14 +280,10 @@ def pairs : List Hexagram → List (Hexagram × Hexagram)
 def pairedb (s t : Hexagram) : Bool :=
   (!eqb (reverse s) s && eqb t (reverse s)) || (eqb (reverse s) s && eqb t (complement s))
 
-theorem false_of_not : ∀ {b : Bool}, (!b) = true → b = false
-  | false, _ => rfl
-  | true, h => Bool.noConfusion h
-
 theorem paired_of_pairedb {s t : Hexagram} (h : pairedb s t = true) : Paired s t :=
-  match either h with
+  match ListTests.or_cases h with
   | .inl turned => match both turned with
-    | ⟨other, eq⟩ => .inl ⟨ne_of_eqb (false_of_not other), eq_of_eqb eq⟩
+    | ⟨other, eq⟩ => .inl ⟨ne_of_eqb (ListTests.false_of_not other), eq_of_eqb eq⟩
   | .inr changed => match both changed with
     | ⟨fixed, eq⟩ => .inr ⟨eq_of_eqb fixed, eq_of_eqb eq⟩
 
@@ -330,17 +316,17 @@ def flip : Place → Hexagram → Hexagram
 
 theorem flip_flip : ∀ (k : Place) (s : Hexagram), flip k (flip k s) = s
   | .p1, ⟨a, b, c, d, e, f⟩ =>
-    congrArg (fun x => (⟨x, b, c, d, e, f⟩ : Hexagram)) (opposite_opposite a)
+    congrArg (fun x => (⟨x, b, c, d, e, f⟩ : Hexagram)) (ListTests.not_not a)
   | .p2, ⟨a, b, c, d, e, f⟩ =>
-    congrArg (fun x => (⟨a, x, c, d, e, f⟩ : Hexagram)) (opposite_opposite b)
+    congrArg (fun x => (⟨a, x, c, d, e, f⟩ : Hexagram)) (ListTests.not_not b)
   | .p3, ⟨a, b, c, d, e, f⟩ =>
-    congrArg (fun x => (⟨a, b, x, d, e, f⟩ : Hexagram)) (opposite_opposite c)
+    congrArg (fun x => (⟨a, b, x, d, e, f⟩ : Hexagram)) (ListTests.not_not c)
   | .p4, ⟨a, b, c, d, e, f⟩ =>
-    congrArg (fun x => (⟨a, b, c, x, e, f⟩ : Hexagram)) (opposite_opposite d)
+    congrArg (fun x => (⟨a, b, c, x, e, f⟩ : Hexagram)) (ListTests.not_not d)
   | .p5, ⟨a, b, c, d, e, f⟩ =>
-    congrArg (fun x => (⟨a, b, c, d, x, f⟩ : Hexagram)) (opposite_opposite e)
+    congrArg (fun x => (⟨a, b, c, d, x, f⟩ : Hexagram)) (ListTests.not_not e)
   | .p6, ⟨a, b, c, d, e, f⟩ =>
-    congrArg (fun x => (⟨a, b, c, d, e, x⟩ : Hexagram)) (opposite_opposite f)
+    congrArg (fun x => (⟨a, b, c, d, e, x⟩ : Hexagram)) (ListTests.not_not f)
 
 /-- The change of one line: a step turns the line at one place into its opposite. -/
 def changes : Process Hexagram Place := ⟨fun s k t => t = flip k s⟩
@@ -413,7 +399,7 @@ def unwaxWane : Hexagram → Hexagram
 
 theorem unwax_wax : ∀ s : Hexagram, unwaxWane (waxWane s) = s
   | ⟨a, b, c, d, e, f⟩ =>
-    congrArg (fun x => (⟨a, b, c, d, e, x⟩ : Hexagram)) (opposite_opposite f)
+    congrArg (fun x => (⟨a, b, c, d, e, x⟩ : Hexagram)) (ListTests.not_not f)
 
 /-- **The law of waxing and waning merges nothing.** -/
 theorem waxWane_lossless : Law.Lossless waxWane :=
@@ -629,8 +615,8 @@ theorem pairOf_complement : ∀ s : Hexagram, pairOf (complement s) = pairOf s
   | ⟨_, _, _, _, _, true⟩ => rfl
   | ⟨a, b, c, d, e, false⟩ => by
     show (⟨!!a, !!b, !!c, !!d, !!e, false⟩ : Hexagram) = ⟨a, b, c, d, e, false⟩
-    rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
-      opposite_opposite e]
+    rw [ListTests.not_not a, ListTests.not_not b, ListTests.not_not c, ListTests.not_not d,
+      ListTests.not_not e]
 
 /-- **The law goes alike across the pairs of complements.** -/
 theorem pairs_lumped : Learning.Lumped pairOf (fun s => pairOf (waxWane s)) :=
@@ -697,10 +683,6 @@ theorem opposite_false : ∀ {b : Bool}, b = true → (!b) = false
   | true, _ => rfl
   | false, h => Bool.noConfusion h
 
-theorem opposite_true : ∀ {b : Bool}, b = false → (!b) = true
-  | false, _ => rfl
-  | true, h => Bool.noConfusion h
-
 /-- **Along every run of the law, a line comes to be unbroken at arbitrarily late steps.** -/
 theorem arising_recurs (s : Hexagram) :
     Recurs places (fun k => ComesToBe (fun n => lines.realized ((Law.run waxWane s).state n) k)) :=
@@ -711,7 +693,7 @@ theorem arising_recurs (s : Hexagram) :
       | false => match rises_between p 6 N v (by
             show (Law.orbit waxWane s (N + 6)).l1 = true
             rw [bottom_turns s N]
-            exact opposite_true v) with
+            exact ListTests.not_eq_true_of_false v) with
         | ⟨i, le, _, at_i, after⟩ => ⟨i, le, at_i, after⟩
       | true =>
         have low : p (N + 6) = false := by
@@ -721,7 +703,7 @@ theorem arising_recurs (s : Hexagram) :
         match rises_between p 6 (N + 6) low (by
             show (Law.orbit waxWane s (N + 6 + 6)).l1 = true
             rw [bottom_turns s (N + 6)]
-            exact opposite_true low) with
+            exact ListTests.not_eq_true_of_false low) with
         | ⟨i, le, _, at_i, after⟩ => ⟨i, Nat.le_trans (Nat.le_add_right N 6) le, at_i, after⟩
     match found with
     | ⟨i, le, at_i, after⟩ => ⟨i, .p1, le, .head _, not_true_of_false at_i, after⟩

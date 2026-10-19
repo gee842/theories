@@ -233,7 +233,7 @@ theorem someSucceeded_of {r : Run P} {j k : Nat} (yes : succeeds j r = true) (lt
 
 theorem succeeds_of_some {r : Run P} {k : Nat} (yes : someSucceeded succeeds k r = true) :
     Succeeds succeeds r :=
-  true_of_not_clear (Clear.of_not yes)
+  true_of_not_clear (ListTests.false_of_not yes)
 
 /-- **"Some test succeeds" is verified in the limit by "some test has succeeded so far".** -/
 theorem someSucceeded_verifies : Verifies (someSucceeded succeeds) (Succeeds succeeds) :=
@@ -267,8 +267,8 @@ theorem both_verifies {m m' : Method P} {K K' : Run P → Prop} (verifies : Veri
       | ⟨n, yes⟩, ⟨n', yes'⟩ => ⟨n + n', fun k le => Clear.and_both _ _
           (yes k (Nat.le_trans (Nat.le_add_right n n') le))
           (yes' k (Nat.le_trans (Nat.le_add_left n' n) le))⟩,
-    fun ⟨n, yes⟩ => ⟨(verifies r).mpr ⟨n, fun k le => Clear.and_left (yes k le)⟩,
-      (verifies' r).mpr ⟨n, fun k le => Clear.and_right (yes k le)⟩⟩⟩
+    fun ⟨n, yes⟩ => ⟨(verifies r).mpr ⟨n, fun k le => ListTests.and_left (yes k le)⟩,
+      (verifies' r).mpr ⟨n, fun k le => ListTests.and_right (yes k le)⟩⟩⟩
 
 theorem or_left' {a b : Bool} (yes : a = true) : (a || b) = true :=
   Eq.subst (motive := fun x => (x || b) = true) yes.symm rfl
@@ -276,10 +276,6 @@ theorem or_left' {a b : Bool} (yes : a = true) : (a || b) = true :=
 theorem or_right' : ∀ {a b : Bool}, b = true → (a || b) = true
   | true, _, _ => rfl
   | false, _, yes => yes
-
-theorem or_cases' : ∀ {a b : Bool}, (a || b) = true → a = true ∨ b = true
-  | true, _, _ => .inl rfl
-  | false, _, yes => .inr yes
 
 /-- Each guess has said yes since the last joint yes: the pending marks and the guesses now. -/
 def joint (p : Bool × Bool) (a b : Bool) : Bool := (p.1 || a) && (p.2 || b)
@@ -326,7 +322,7 @@ theorem jointly_byRecord {m m' : Method P} (byRecord : ByRecord m) (byRecord' : 
 /-- A mark set at `c + d`, with none at `c`, goes back to a yes of its guess at or after `c`. -/
 theorem mark_origin {p g : Nat → Bool} {c : Nat} (origin : ∀ k, p (k + 1) = true → (p k || g k) = true)
     (cleared : p c = false) : ∀ d, (p (c + d) || g (c + d)) = true → ∃ j, c ≤ j ∧ g j = true
-  | d, said => match or_cases' said with
+  | d, said => match ListTests.or_cases said with
     | .inr yes => ⟨c + d, Nat.le_add_right c d, yes⟩
     | .inl marked => match d with
       | 0 => (true_ne_false' marked cleared).elim
@@ -349,9 +345,9 @@ theorem jointly_refutes {m m' : Method P} {K K' : Run P → Prop} (refutes : Ref
   fun r =>
     let J := fun k => jointly m m' k r
     have origin₁ : ∀ k, (pending m m' (k + 1) r).1 = true →
-        ((pending m m' k r).1 || m k r) = true := fun _ marked => Clear.and_right marked
+        ((pending m m' k r).1 || m k r) = true := fun _ marked => ListTests.and_right marked
     have origin₂ : ∀ k, (pending m m' (k + 1) r).2 = true →
-        ((pending m m' k r).2 || m' k r) = true := fun _ marked => Clear.and_right marked
+        ((pending m m' k r).2 || m' k r) = true := fun _ marked => ListTests.and_right marked
     have carry₁ : ∀ k, J k = false → (pending m m' (k + 1) r).1 = ((pending m m' k r).1 || m k r) :=
       fun _ no => (mark_carried no).1
     have carry₂ : ∀ k, J k = false →
@@ -368,13 +364,13 @@ theorem jointly_refutes {m m' : Method P} {K K' : Run P → Prop} (refutes : Ref
         | ⟨c, le, yes, d, yes'⟩ =>
           match mark_origin (p := fun k => (pending m m' k r).1) (g := fun k => m k r) (c := c + 1)
               origin₁ (show (pending m m' (c + 1) r).1 = false from (mark_cleared yes).1) d
-              (Clear.and_left (c := (pending m m' (c + 1 + d) r).2 || m' (c + 1 + d) r) yes') with
+              (ListTests.and_left (b := (pending m m' (c + 1 + d) r).2 || m' (c + 1 + d) r) yes') with
           | ⟨j, le_j, said⟩ => ⟨j, Nat.le_trans le (Nat.le_trans (Nat.le_succ c) le_j), said⟩,
        fun n => match after n with
         | ⟨c, le, yes, d, yes'⟩ =>
           match mark_origin (p := fun k => (pending m m' k r).2) (g := fun k => m' k r) (c := c + 1)
               origin₂ (show (pending m m' (c + 1) r).2 = false from (mark_cleared yes).2) d
-              (Clear.and_right (b := (pending m m' (c + 1 + d) r).1 || m (c + 1 + d) r) yes') with
+              (ListTests.and_right (a := (pending m m' (c + 1 + d) r).1 || m (c + 1 + d) r) yes') with
           | ⟨j, le_j, said⟩ => ⟨j, Nat.le_trans le (Nat.le_trans (Nat.le_succ c) le_j), said⟩⟩
     have joint_recurs : YesRecurs m r → YesRecurs m' r → YesRecurs (jointly m m') r :=
       fun first second n => match first n, second n with
@@ -500,10 +496,6 @@ theorem built_eq (next : Nat → (Nat → Bool) → Bool) (k : Nat) :
   show (if k < k then stage next k k else if k = k then next k (stage next k) else false) = _ by
     rw [if_neg (Nat.lt_irrefl k), if_pos rfl]
 
-theorem false_of_not_true : ∀ {b : Bool}, ¬ b = true → b = false
-  | false, _ => rfl
-  | true, no => (no rfl).elim
-
 /-! ## Recurrence on the sequences of moves -/
 
 namespace Sequences
@@ -546,7 +538,7 @@ theorem notLastMove_verifies : Verifies notLastMove EventuallyFalse :=
   fun _ => ⟨fun ⟨n, no⟩ => ⟨n + 1, fun k le => match k, le with
       | 0, le => absurd le (Nat.not_succ_le_zero n)
       | k + 1, le => not_eq_true_of_false (no k (Nat.le_of_succ_le_succ le))⟩,
-    fun ⟨n, yes⟩ => ⟨n, fun k le => Clear.of_not (yes (k + 1) (Nat.le_succ_of_le le))⟩⟩
+    fun ⟨n, yes⟩ => ⟨n, fun k le => ListTests.false_of_not (yes (k + 1) (Nat.le_succ_of_le le))⟩⟩
 
 /-- **A run from some step on `false` throughout does not recur.** -/
 theorem not_recurs_of_eventuallyFalse {r : Run (process Bool)} (eventually : EventuallyFalse r) :
@@ -595,7 +587,7 @@ theorem eventuallyFalse_lpo
   fun s =>
     let first : Nat → Bool := fun j => s j && clear s j
     have marks : ∀ {j}, first j = true → s j = true ∧ clear s j = true := fun yes =>
-      ⟨Clear.and_left yes, Clear.and_right yes⟩
+      ⟨ListTests.and_left yes, ListTests.and_right yes⟩
     have once : ¬ Recurs (run first) := fun recurs =>
       match recurs 0 with
       | ⟨a, _, at_a⟩ => match recurs (a + 1) with
@@ -606,7 +598,7 @@ theorem eventuallyFalse_lpo
     match law (run first) once with
     | ⟨N, after⟩ => match Clear.or_first s N with
       | .inr ⟨j, _, _, yes⟩ => .inl ⟨j, yes⟩
-      | .inl c => .inr fun _ => false_of_not_true fun yes =>
+      | .inl c => .inr fun _ => ListTests.false_of_not_true fun yes =>
         match Clear.first_of_true s yes with
         | ⟨j, cj, yj⟩ => match Nat.lt_or_ge j N with
           | .inl lt => true_ne_false' yj (Clear.false_before s c lt)
@@ -627,7 +619,7 @@ theorem either_recurs_lpo
     | .inl none_ => .inr fun n => match none_ (n + 1) with
       | ⟨_, le, c⟩ => Clear.false_before s c le
     | .inr some_ => match some_ 0 with
-      | ⟨_, _, yes⟩ => .inl (true_of_not_clear (Clear.of_not yes))
+      | ⟨_, _, yes⟩ => .inl (true_of_not_clear (ListTests.false_of_not yes))
 
 end Sequences
 
@@ -635,7 +627,7 @@ end Sequences
 
 namespace Free
 
-open Enough.Free (process alternating not_ne_self)
+open Enough.Free (process alternating)
 
 /-- The run of the free process through the configurations `x`. -/
 def run (x : Nat → Bool) : Run process := ⟨x, fun _ => (), fun _ => trivial⟩
@@ -668,7 +660,7 @@ theorem settles_dense : Dense (Enough.Settles (P := process)) :=
 changes at every later step. -/
 theorem unsettled_dense : Dense fun r : Run process => ¬ Enough.Settles r :=
   fun r h => ⟨run (after r.state h not), fun ⟨T, stays⟩ =>
-      not_ne_self _ ((after_step r.state not (Nat.le_add_right h T)).symm.trans
+      ListTests.not_ne_self _ ((after_step r.state not (Nat.le_add_right h T)).symm.trans
         (stays (h + T) (Nat.le_add_left T h))),
     agree_after r h not⟩
 
@@ -711,7 +703,7 @@ theorem against_state {m : Method process} (byRecord : ByRecord m) (k : Nat) :
       (m k (run (stage (againstNext m) (k + 1)))) = _ by
     rw [last, byRecord k _ _ agree])
 
-theorem toggle_true (b : Bool) : toggle b true ≠ b := not_ne_self b
+theorem toggle_true (b : Bool) : toggle b true ≠ b := ListTests.not_ne_self b
 
 /-- **Under Markov's principle no method fixed by the record refutes settling in the limit.** The
 run changing where the method says yes settles exactly where its yes does not recur. -/

@@ -448,7 +448,7 @@ end Determined
 from the one before. -/
 theorem negation_never_rests (r : Run (Law.process not)) (n : Nat) :
     r.state (n + 1) ≠ r.state n :=
-  fun same => not_moves (r.state n) ((r.step n).symm.trans same)
+  fun same => ListTests.not_ne_self (r.state n) ((r.step n).symm.trans same)
 
 /-- **Two misses, then rest.** Along every run of negation from `false`, elimination over
 the lasso candidates through the identity proposes each value right from step `3` on. -/

@@ -103,7 +103,7 @@ theorem step_conserves {yield : Nat} {s t : State} {a : Act}
         cases Option.some.inj h
         refine ⟨?_, rfl, rfl⟩
         change (s.work.fuel - 1 + yield) + 1 = s.work.fuel + yield
-        rw [Nat.add_right_comm, ExchangeLaw.sub_add_back enough]
+        rw [Nat.add_right_comm, Naturals.sub_add_cancel enough]
       next => contradiction
     next => contradiction
 
@@ -173,21 +173,19 @@ def installedAt (m u g n : Nat) : State :=
 def successfulAt (m u g n : Nat) : State :=
   { installedAt m u g n with work := { (installedAt m u g n).work with response := true, fuel := m + 1, used := u+8 }, enabled := true }
 
-theorem next_ne (n : Nat) : n+1 ≠ n := Nat.succ_ne_self n
-
 theorem absent_key (n : Nat) : keyAt [sample n] (n+1) = false := by
   change (if n+1 = n then true else false) = false
-  exact if_neg (next_ne n)
+  exact if_neg (Naturals.succ_ne_self n)
 
 theorem acquired_key (n : Nat) : keyAt [sample n, sample (n+1)] (n+1) = true := by
   change (if n+1 = n then true else if n+1 = n+1 then true else false) = true
-  rw [if_neg (next_ne n), if_pos rfl]
+  rw [if_neg (Naturals.succ_ne_self n), if_pos rfl]
 
 theorem retained_sample (n : Nat) :
     ([sample n, sample (n+1)].filter (fun r => if r.address = n+1 then true else false)) =
       [sample (n+1)] := by
   dsimp only [List.filter, sample]
-  rw [if_neg (next_ne n).symm, if_pos rfl] <;> rfl
+  rw [if_neg (Naturals.succ_ne_self n).symm, if_pos rfl] <;> rfl
 
 theorem fail_step_at (y m u g n : Nat) :
     (selected y).step (readyAt m u g n) (.native (.perform (n+1) true)) (failedAt m u g n) := by
@@ -314,7 +312,7 @@ theorem singleton_member {x y : Nat} (h : x ∈ [y]) : x = y := by
   | tail _ h => cases h
 
 theorem next_absent (n : Nat) : n+1 ∉ [n] :=
-  fun h => next_ne n (singleton_member h)
+  fun h => Naturals.succ_ne_self n (singleton_member h)
 
 theorem new_available_choice (n : Nat) :
     Learning.Training.Through (ReferencePlan.alikeOnInstalled (installed n).work)
@@ -378,7 +376,7 @@ theorem retired_choice (n : Nat) :
       (fun x => x n = true) ∧
     ¬ Learning.Training.Through (ReferencePlan.alikeOnInstalled (ready (n+1)).work)
       (fun x => x n = true) := by
-  have absent : n ∉ [n+1] := fun h => next_ne n (singleton_member h).symm
+  have absent : n ∉ [n+1] := fun h => Naturals.succ_ne_self n (singleton_member h).symm
   exact ⟨choice_at_contact (List.Mem.head _), (new_contact_choice [n+1] n absent).2⟩
 
 /-- A clock only enumerates the already policy-checked seven operations; it adds no

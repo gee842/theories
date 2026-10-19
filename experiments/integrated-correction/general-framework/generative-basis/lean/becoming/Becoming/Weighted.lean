@@ -320,14 +320,6 @@ theorem possibility_sum_of_mem {α : Type u} {g : α → Bool} {x : α} (holds :
       rw [possibility_sum_of_mem holds mem]
       cases g b <;> rfl
 
-theorem bool_and_true {b c : Bool} (hb : b = true) (hc : c = true) : (b && c) = true := by
-  subst hb
-  subst hc
-  rfl
-
-theorem bool_of_and_true {b c : Bool} (both : (b && c) = true) : b = true ∧ c = true := by
-  cases b <;> cases c <;> cases both <;> exact ⟨rfl, rfl⟩
-
 /-- The list lemmas below repeat `Openness`'s and `Population`'s at every universe. -/
 theorem mem_appended_left {α : Type u} {a : α} :
     ∀ {l : List α} (l' : List α), a ∈ l → a ∈ l ++ l'

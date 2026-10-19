@@ -42,12 +42,6 @@ namespace Becoming
 
 variable {F C : Type}
 
-/-- As `Nat.sub_eq_zero_of_le`, with an empty axiom report. -/
-theorem sub_eq_zero_of_le : ∀ {n m : Nat}, n ≤ m → n - m = 0
-  | 0, m, _ => Nat.zero_sub m
-  | _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
-  | n + 1, m + 1, le => (Nat.succ_sub_succ n m).trans (sub_eq_zero_of_le (Nat.le_of_succ_le_succ le))
-
 /-- As `Nat.le_of_sub_eq_zero`, with an empty axiom report. -/
 theorem le_of_sub_eq_zero : ∀ {n m : Nat}, n - m = 0 → n ≤ m
   | 0, m, _ => Nat.zero_le m

@@ -1,0 +1,10 @@
+import Becoming.Capture
+#check @Becoming.le_offspringCount
+#check @Becoming.offspringCount_le
+#check @Becoming.share_not_lower
+#check @Becoming.share_rises
+#check @Becoming.Flow.descent_needs_unrun
+#check @Becoming.Flow.descent_exhausted
+#check @Becoming.Captured.byRule
+#check @Becoming.Captured.state_perturbation_returns
+#check @Becoming.Captured.rule_perturbation_changes

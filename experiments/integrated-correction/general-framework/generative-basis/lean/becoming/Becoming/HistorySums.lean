@@ -494,7 +494,7 @@ theorem exactly_eq (M : Nat) : ∀ i n,
       (congrArg (· * M ^ 0) ((Loops.binom_zero n).trans (Loops.binom_zero (n + 1)).symm))))
   | i + 1, n + 1 =>
     (Nat.add_zero _).trans
-      ((Propagation.add_congr ((Nat.one_mul _).trans (exactly_eq M (i + 1) n))
+      ((Naturals.add_congr ((Nat.one_mul _).trans (exactly_eq M (i + 1) n))
           (congrArg (M * ·) (exactly_eq M i n))).trans
         ((Nat.add_comm _ _).trans
           ((congrArg (· + Loops.binom n (i + 1) * M ^ (i + 1))

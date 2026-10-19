@@ -1,3 +1,4 @@
+import Becoming.Laws
 import Becoming.Labelled
 import Becoming.Restoration
 
@@ -80,11 +81,6 @@ open Generative
 universe u v
 
 variable {S : Type u} {A : Type v} {F C : Type}
-
-/-- The move determines the step: from a configuration, a move has at most one
-successor. -/
-def Determined (P : Process S A) : Prop :=
-  ∀ s a t t', P.step s a t → P.step s a t' → t = t'
 
 /-- Withholding the parts of `fs` one after another. -/
 def withholdAll (withhold : F → S → S) : List F → S → S

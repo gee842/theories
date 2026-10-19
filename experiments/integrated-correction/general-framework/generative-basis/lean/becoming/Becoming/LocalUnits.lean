@@ -406,7 +406,7 @@ theorem steps_reads_mp {a b c : Bool} : stepsImage a b c → Joining.atMostOnce 
     | .inr ⟨_, _, _⟩, .inl ⟨stays, _⟩ =>
       have second : false = b := (congrArg stepsWord stays).symm.trans atY
       have last : a = c :=
-        atX.symm.trans ((congrArg stepsWord (Joining.appended_nil x.val.word)).symm.trans
+        atX.symm.trans ((congrArg stepsWord (ListTests.append_nil x.val.word)).symm.trans
           ((congrArg (fun w => stepsWord (x.val.word ++ w)) stays).symm.trans
             ((congrArg stepsWord word).symm.trans atZ)))
       Eq.subst (motive := fun x => Joining.atMostOnce a x c) second

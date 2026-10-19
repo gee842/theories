@@ -313,9 +313,6 @@ theorem double_pos : ∀ n, 0 < double n
   | 0 => Nat.succ_pos 0
   | n + 1 => Nat.lt_of_lt_of_le (double_pos n) (Nat.le_add_right _ _)
 
-theorem two_mul_eq (n : Nat) : 2 * n = n + n :=
-  (Nat.succ_mul 1 n).trans (congrArg (· + n) (Nat.one_mul n))
-
 /-- Nothing takes part. -/
 def flow : Flow Unit Unit where
   present _ := []
@@ -334,14 +331,14 @@ def web : Web Unit Unit where
 condition runs down at that resolution. -/
 theorem runsDown (t : Nat) : flow.RunsDownOnAt (fun _ => 2) web [()] t :=
   ⟨⟨fun mem => (nomatch mem), trivial⟩, fun _ _ => .head [], fun _ _ => .head [],
-   fun _ _ => (two_mul_eq (double t)).symm, fun _ mem => nomatch mem⟩
+   fun _ _ => (Naturals.two_mul (double t)).symm, fun _ mem => nomatch mem⟩
 
 /-- Read in raw counts the law of one exchange fails: across every step the condition rises
 in raw counts, while nothing rises or falls in the unit and the total does not fall in it. -/
 theorem raw_reading_fails (t : Nat) :
     web.Rises t () ∧ ¬ (∃ c, web.RisesAt (fun _ => 2) t c ∨ web.FallsAt (fun _ => 2) t c) ∧
       ¬ web.stock [()] (t + 1) < 2 * web.stock [()] t :=
-  have even : double (t + 1) = 2 * double t := (two_mul_eq (double t)).symm
+  have even : double (t + 1) = 2 * double t := (Naturals.two_mul (double t)).symm
   ⟨Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right (double_pos t)) (Nat.le_refl _),
    fun ⟨_, changes⟩ => match changes with
     | .inl rises => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le rises (Nat.le_of_eq even))

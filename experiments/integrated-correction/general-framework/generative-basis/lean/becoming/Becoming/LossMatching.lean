@@ -1,7 +1,6 @@
 import Becoming.Population
-import Becoming.Metaethics
 import Becoming.Frame
-import Becoming.ValuationFrames
+import Becoming.Extension
 
 /-!
 # Strict loss matching: the general laws
@@ -42,35 +41,20 @@ namespace LossMatching
 
 variable {α β : Type}
 
-theorem mem_map_inv {g : α → β} {b : β} : ∀ {l : List α}, b ∈ l.map g → ∃ a, a ∈ l ∧ g a = b
-  | [], mem => nomatch mem
-  | a :: _, mem => match mem_cons_cases mem with
-    | .inl same => ⟨a, .head _, same.symm⟩
-    | .inr mem => match mem_map_inv mem with
-      | ⟨x, inL, same⟩ => ⟨x, .tail a inL, same⟩
-
 /-- Mapping a list by a function one to one on its members keeps it without repetition. -/
 theorem distinct_map_on {g : α → β} : ∀ {l : List α},
     (∀ a b, a ∈ l → b ∈ l → g a = g b → a = b) → Distinct l → Distinct (l.map g)
   | [], _, _ => trivial
   | a :: l, inj, ⟨fresh, distinct⟩ =>
-    ⟨fun mem => match mem_map_inv mem with
+    ⟨fun mem => match preimage_of_mem_map mem with
       | ⟨x, inL, same⟩ =>
         fresh (Eq.subst (motive := fun y => y ∈ l) (inj x a (.tail a inL) (.head l) same) inL),
      distinct_map_on (fun x y mx my => inj x y (.tail a mx) (.tail a my)) distinct⟩
 
-theorem map_length_eq (g : α → β) : ∀ l : List α, (l.map g).length = l.length
-  | [] => rfl
-  | _ :: l => congrArg Nat.succ (map_length_eq g l)
-
-theorem mem_middle_of {a : α} {q : List α} : ∀ p : List α, a ∈ p ++ a :: q
-  | [] => .head q
-  | x :: p => .tail x (mem_middle_of p)
-
 theorem not_mem_middle {a : α} : ∀ {p q : List α}, Distinct (p ++ a :: q) → ¬ a ∈ p ++ q
   | [], _, ⟨fresh, _⟩, mem => fresh mem
   | _ :: p, q, ⟨fresh, distinct⟩, mem => match mem_cons_cases mem with
-    | .inl ax => fresh (Eq.subst (motive := fun y => y ∈ p ++ a :: q) ax (mem_middle_of p))
+    | .inl ax => fresh (Eq.subst (motive := fun y => y ∈ p ++ a :: q) ax (mem_middle p))
     | .inr mem => not_mem_middle distinct mem
 
 /-- The total over a list with one member taken out of the middle. -/
@@ -190,15 +174,15 @@ theorem StrictLossMatch.length_lt {F : Frame S A C} {same : C → C → Prop} {b
       distinct_map_on (fun x y mx my same =>
         once x y ((listedB.2 x).mpr mx) ((listedB.2 y).mpr my) same) listedB.1
     have distinctAll : Distinct (e :: lb.map i) :=
-      ⟨fun mem => match mem_map_inv mem with
+      ⟨fun mem => match preimage_of_mem_map mem with
         | ⟨x, inL, same⟩ => freshE x ((listedB.2 x).mpr inL) same, distinctImage⟩
     have sub : ∀ c, c ∈ e :: lb.map i → c ∈ lw := fun c mem => match mem_cons_cases mem with
       | .inl same => heldW c (Eq.subst (motive := fun y => ¬ F.realized w y) same.symm lostE)
-      | .inr mem => match mem_map_inv mem with
+      | .inr mem => match preimage_of_mem_map mem with
         | ⟨x, inL, same⟩ => heldW c (Eq.subst (motive := fun y => ¬ F.realized w y) same
             (loss x ((listedB.2 x).mpr inL)))
     have bound : (lb.map i).length + 1 ≤ lw.length := length_le_of_sub distinctAll sub
-    Eq.subst (motive := fun n => n + 1 ≤ lw.length) (map_length_eq i lb) bound
+    Eq.subst (motive := fun n => n + 1 ≤ lw.length) (length_map i lb) bound
 
 /-- With its losses listed, no configuration is strictly matched against itself. -/
 theorem StrictLossMatch.irrefl {F : Frame S A C} {same : C → C → Prop} {s : S} {l : List C}
@@ -273,7 +257,7 @@ theorem StrictLossMatch.classCount_le {F : Frame S A C} {κ : C → K} {b w : S}
         (total_map i (fun c => mark (κ c = k)) lb).symm
     Nat.le_trans (Nat.le_of_eq moved)
       (marks_le_of_sub (q := fun c => κ c = k) (r := fun c => κ c = k) distinctImage listedW.1
-        fun c mem has => match mem_map_inv mem with
+        fun c mem has => match preimage_of_mem_map mem with
           | ⟨x, inL, same⟩ => ⟨(listedW.2 c).mp (Eq.subst (motive := fun y => ¬ F.realized w y)
               same (loss x ((listedB.2 x).mpr inL))), has⟩)
 
@@ -338,7 +322,7 @@ theorem exists_fresh [DecidableEq C] {image : C → C} {lb lw : List C} (distinc
   | .inr all => absurd shorter (Nat.not_lt_of_le (Nat.le_trans
       (length_le_of_sub distinctW fun e mem => match all e mem with
         | ⟨_, inMap, same⟩ => Eq.subst (motive := fun y => y ∈ lb.map image) same inMap)
-      (Nat.le_of_eq (map_length_eq image lb))))
+      (Nat.le_of_eq (length_map image lb))))
 
 /-- Sufficiency: the class counts and a strictly longer list of losses give a match. -/
 theorem strictLossMatch_of_counts [DecidableEq C] {F : Frame S A C} {κ : C → K} {b w : S}

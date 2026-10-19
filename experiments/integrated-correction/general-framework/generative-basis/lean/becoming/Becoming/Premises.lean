@@ -351,7 +351,7 @@ theorem draining_but :
      (fun _ _ _ _ _ gives => absurd gives (Nat.lt_irrefl 0))
      (fun _ => SelfDrawing.taking) (fun _ => leaking_world.2.2.1)
      (fun _ _ _ => Iff.rfl)
-     (fun _ => Finite.counted (w := draining) ⟨[true, false], Shuttle.distinct, Shuttle.every⟩)
+     (fun _ => Finite.counted (w := draining) ⟨[true, false], Shuttle.distinct, ListTests.mem_bools⟩)
      (fun _ => ⟨0, fun _ _ _ _ descends _ => absurd descends.2.1 (Nat.lt_irrefl 0)⟩)
      leaking_world.2.2.2.2.1,
    leaking_world.2.2.2.2.2⟩

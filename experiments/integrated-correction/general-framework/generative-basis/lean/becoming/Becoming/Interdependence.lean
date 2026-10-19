@@ -1,4 +1,4 @@
-import Becoming.Significance
+import Becoming.Clearing
 
 /-!
 # Interdependence: what returns along dependence
@@ -16,8 +16,10 @@ parts sustain them outlast others” and “constraint: a part that degrades its
 own supply”. Ren answered that a whole realizing, understanding and updating itself is “also
 under the selection rules and constraints in theory”, and that how this happens in practice
 “needs more thoughts”. This module states, with no premise beyond the representation, what a
-formation's continuation depends on, how far the constraint reaches, and where this route meets
-the continuation condition. The continuation condition enters only as a hypothesis of the comparisons.
+formation's continuation depends on, how far the constraint reaches, and how retaining within a
+bound compares with inclusion. Where this route meets the continuation condition is stated in
+`Becoming.BoundedSignificance`, after `Becoming.Significance`; this module neither imports nor
+assumes the condition.
 
 * **What a continuation depends on.** The continuation of a formation is fed by another at a
   step when the other gives to a condition it requires (`Flow.FedBy`). A region of formations
@@ -48,24 +50,19 @@ the continuation condition. The continuation condition enters only as a hypothes
   support across a step and still end through a feeder: what its continuation depends on
   reaches the continuation of its feeders.
 * **What lies beyond the closure need not return.** In `Clearing` the region along dependence
-  of `Becoming.Significance` is each formation's feeding closure
+  of `Becoming.Clearing` is each formation's feeding closure
   (`Clearing.dependenceRegion_iff`): the clearer with the source that feeds its resource, and
   the source and the dweller each alone. The dweller lies beyond the clearer's closure
   (`Clearing.dweller_beyond`). Everything within that closure is supported at every step and
   the clearer is active throughout, while the dweller ends (`Clearing.closure_supported`).
-* **Where the route meets the continuation condition.** Significance bounded by the whole is the continuation condition
-  (`bounded_whole`). One level path retains what has significance along another, for
+* **Retaining within a bound.** One level path retains what has significance along another, for
   significance bounded by a region, exactly as inclusion does wherever every formation the other
   path admits lies in the region or is admitted by the first
-  (`Web.retains_bounded_iff_includes`). Under the continuation condition the two verdicts then agree
-  (`Web.retains_bounded_iff_retains`). Where a formation's feeding closure is the whole, the
-  verdict within its closure is the continuation condition's on every comparison
-  (`Flow.within_closure_iff_retains`), as in `Overshoot` (`Overshoot.within_closure_iff_retains`).
-  The continuation condition's verdict always decides the verdict within every region (`Web.Retains.within`). In
-  `Clearing` the two part. From the clearer's standpoint its part retains what has significance
-  within its feeding closure. Under the continuation condition the part loses the dweller, and from the dweller's
-  standpoint, within the dweller's own closure, it loses the dweller too
-  (`Clearing.within_closure_yet_loses`).
+  (`Web.retains_bounded_iff_includes`). Where the route meets the continuation condition
+  (significance bounded by the whole is the condition, `bounded_whole`; within a feeding closure
+  that is the whole the verdict is the condition's, `Flow.within_closure_iff_retains`; in
+  `Clearing` the two part, `Clearing.within_closure_yet_loses`) is stated in
+  `Becoming.BoundedSignificance`.
 
 **AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D17).**
 - The feeding closure reads “what it actually depends on”. It is reached without axiom. How a
@@ -84,7 +81,8 @@ the continuation condition. The continuation condition enters only as a hypothes
   returns to no one, such as the dweller's.
 - Ren wrote that the whole can realize itself, “like us, we recognize that "we" are the
   universe/ecosystem that realizes its own existence”. A center whose represented boundary is
-  the whole holds the continuation condition's significance (`bounded_whole`). This route asks for a boundary
+  the whole holds the continuation condition's significance (`bounded_whole`, in
+  `Becoming.BoundedSignificance`). This route asks for a boundary
   that matches actual dependence, so it reaches that significance only where the dependence
   reaches the whole.
 
@@ -237,12 +235,7 @@ theorem Balances.consumption_ends_with_feeders (balances : L.Balances W) (acting
 
 end Flow
 
-/-! ## Where bounded significance meets the continuation condition -/
-
-/-- Significance bounded by the whole is the continuation condition: where each standpoint's region is the whole,
-nothing restricts significance. -/
-theorem bounded_whole : Unrestricted (bounded fun (_ : Pos) (_ : F) => True) :=
-  fun _ => trivial
+/-! ## Retaining within a bound -/
 
 namespace Web
 
@@ -260,30 +253,7 @@ theorem retains_bounded_iff_includes {region : Pos → F → Prop} {p : Pos}
     | .inr kept => kept,
    fun includes => includes.retains (bounded region) p⟩
 
-/-- Under the continuation condition, wherever every formation `l'` admits lies in `p`'s region or is admitted by
-`l`, the verdict of significance bounded by the region is the continuation condition's. -/
-theorem retains_bounded_iff_retains {sig : Pos → Nat → F → Prop}
-    (unrestricted : Unrestricted sig) {region : Pos → F → Prop} {p : Pos}
-    {l l' : Nat → C → Nat}
-    (covers : ∀ t f, W.Admits (l' t) t f → region p f ∨ W.Admits (l t) t f) :
-    W.Retains (bounded region) p l l' ↔ W.Retains sig p l l' :=
-  (retains_bounded_iff_includes covers).trans (retains_iff_includes unrestricted p).symm
-
 end Web
-
-namespace Flow
-
-variable {L : Flow F C} {W : Web F C}
-
-/-- Where a formation's feeding closure is the whole, under the continuation condition the verdict within its
-closure is the continuation condition's on every comparison. -/
-theorem within_closure_iff_retains {sig : F → Nat → F → Prop}
-    (unrestricted : Unrestricted sig) {p : F} (whole : ∀ f, L.WithinFeeding W p f)
-    {l l' : Nat → C → Nat} :
-    W.Retains (bounded (L.WithinFeeding W)) p l l' ↔ W.Retains sig p l l' :=
-  Web.retains_bounded_iff_retains unrestricted fun _ f _ => .inl (whole f)
-
-end Flow
 
 /-! ## Witnesses -/
 
@@ -483,13 +453,6 @@ theorem steady_continues :
    fun t f _ => supported t f,
    fun t f => ⟨trivial, supported t f⟩⟩
 
-/-- In this interdependent whole, under the continuation condition, the verdict within a formation's feeding
-closure is the continuation condition's, from either standpoint and on every comparison. -/
-theorem within_closure_iff_retains {sig : Bool → Nat → Bool → Prop}
-    (unrestricted : Unrestricted sig) (p : Bool) {l l' : Nat → Bool → Nat} :
-    web.Retains (bounded (flow.WithinFeeding web)) p l l' ↔ web.Retains sig p l l' :=
-  Flow.within_closure_iff_retains unrestricted (closure_whole p)
-
 end Overshoot
 
 namespace Clearing
@@ -551,21 +514,6 @@ theorem closure_supported :
     | .clearer, _ => dependent t .clearer trivial
     | .dweller, no => (nomatch no),
    fun _ => trivial, unsupported_with, dweller_beyond⟩
-
-/-- The route and the continuation condition part here. From the clearer's standpoint its part retains what has
-significance within its feeding closure. Under the continuation condition the part loses the dweller from every
-standpoint, and from the dweller's standpoint, within the dweller's own closure, it loses the
-dweller too. -/
-theorem within_closure_yet_loses {l : Nat → Place → Nat}
-    (without : flow.WithheldLevels clearerPart web l) {sig : Pos → Nat → Formation → Prop}
-    (unrestricted : Unrestricted sig) (p : Pos) :
-    web.Retains (bounded (flow.WithinFeeding web)) .clearer web.level l ∧
-      ¬ web.Retains sig p web.level l ∧
-      web.Adds (bounded (flow.WithinFeeding web)) .dweller l web.level :=
-  ⟨Web.retains_bounded_iff.mpr fun t => ((loses_beyond without).1 t).2.2.narrow
-      fun _ within => within alongDependence fedClosed trivial,
-   (clearer_loses_dweller without unrestricted p).2.1,
-   ⟨2, .dweller, Flow.WithinFeeding.refl _, admitted_without without 2, unsupported_with 0⟩⟩
 
 end Clearing
 

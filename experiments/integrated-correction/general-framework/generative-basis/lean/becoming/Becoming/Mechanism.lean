@@ -99,11 +99,6 @@ theorem Image.least {P : Process S A} {π : S → K} {Q : Process K A}
     (Image P π).step k a κ → Q.step k a κ
   | ⟨s, u, at_k, step, to⟩ => at_k ▸ to ▸ factors s a u step
 
-/-- Configurations alike under `π` go alike under `π`: wherever two configurations project
-alike, the same move takes them to configurations that project alike. -/
-def GoAlike (P : Process S A) (π : S → K) : Prop :=
-  ∀ s s' a u u', π s = π s' → P.step s a u → P.step s' a u' → π u = π u'
-
 /-- **The image is determined exactly where configurations alike go alike.** -/
 theorem image_determined_iff {P : Process S A} {π : S → K} :
     Determined (Image P π) ↔ GoAlike P π :=

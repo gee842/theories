@@ -59,7 +59,7 @@ theorem distinct_append : ∀ {l m : List α}, CrossSituational.Distinct l →
     CrossSituational.Distinct m → (∀ x, x ∈ l → ¬ x ∈ m) → CrossSituational.Distinct (l ++ m)
   | [], _, _, dm, _ => dm
   | a :: l, _, ⟨out, rest⟩, dm, apart =>
-    ⟨fun mem => match FinerTraces.mem_append_split mem with
+    ⟨fun mem => match ListTests.mem_append_iff.mp mem with
        | .inl inside => out inside
        | .inr outside => apart a (.head l) outside,
      distinct_append rest dm (fun x mem => apart x (.tail a mem))⟩
@@ -69,7 +69,7 @@ theorem distinct_map {g : α → β} (inj : ∀ a b, g a = g b → a = b) :
   | [], _ => trivial
   | a :: l, ⟨out, rest⟩ =>
     show ¬ g a ∈ l.map g ∧ CrossSituational.Distinct (l.map g) from
-    ⟨fun mem => match FinerTraces.of_mem_map mem with
+    ⟨fun mem => match ListTests.mem_map_iff.mp mem with
       | ⟨a', inside, same⟩ =>
         out (Eq.subst (motive := fun x => x ∈ l) (inj a' a same) inside),
      distinct_map inj rest⟩
@@ -133,7 +133,7 @@ variable {S : Type u} {A : Type v}
 theorem distinct_openSteps {moves : List A} {all : List S} (dm : CrossSituational.Distinct moves)
     (da : CrossSituational.Distinct all) : CrossSituational.Distinct (openSteps moves all) :=
   distinct_joinMap dm (fun _ _ => distinct_map (fun _ _ same => congrArg Prod.snd same) da)
-    (fun _ _ _ ina inb => match FinerTraces.of_mem_map ina, FinerTraces.of_mem_map inb with
+    (fun _ _ _ ina inb => match ListTests.mem_map_iff.mp ina, ListTests.mem_map_iff.mp inb with
       | ⟨_, _, ea⟩, ⟨_, _, eb⟩ => (congrArg Prod.fst ea).trans (congrArg Prod.fst eb).symm)
 
 theorem distinct_finerSteps (weight : S → A → S → Nat) {moves : List A} {all : List S}
@@ -142,7 +142,7 @@ theorem distinct_finerSteps (weight : S → A → S → Nat) {moves : List A} {a
   distinct_joinMap (distinct_openSteps dm da)
     (fun _ _ => distinct_map (fun _ _ same => congrArg (fun y : A × S × Nat => y.2.2) same)
       (distinct_upto _))
-    (fun _ _ _ ina inb => match FinerTraces.of_mem_map ina, FinerTraces.of_mem_map inb with
+    (fun _ _ _ ina inb => match ListTests.mem_map_iff.mp ina, ListTests.mem_map_iff.mp inb with
       | ⟨_, _, ea⟩, ⟨_, _, eb⟩ =>
         (congrArg (fun y : A × S × Nat => (y.1, y.2.1)) ea).trans
           (congrArg (fun y : A × S × Nat => (y.1, y.2.1)) eb).symm)
@@ -158,7 +158,7 @@ theorem distinct_finer (weight : S → A → S → Nat) {moves : List A} {all : 
     distinct_joinMap (distinct_finerSteps weight dm da s)
       (fun x _ => distinct_map (fun _ _ same => (List.cons.inj same).2)
         (distinct_finer weight dm da n x.2.1))
-      (fun _ _ _ inx iny => match FinerTraces.of_mem_map inx, FinerTraces.of_mem_map iny with
+      (fun _ _ _ inx iny => match ListTests.mem_map_iff.mp inx, ListTests.mem_map_iff.mp iny with
         | ⟨_, _, ex⟩, ⟨_, _, ey⟩ => (List.cons.inj (ex.trans ey.symm)).1)
 
 /-- A trace of `n` steps of the finer law from `s`, taking listed moves to listed

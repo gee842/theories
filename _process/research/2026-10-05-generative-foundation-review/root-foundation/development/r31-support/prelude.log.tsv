@@ -1,0 +1,506 @@
+Branching.lean	1217	not_ne	ListTests.not_ne_self	code	Law.perturbation_drawnInto byRule (x := g) fun same => not_ne g (congrArg Prod.fst same)
+Branching.lean	1225	not_ne	ListTests.not_ne_self	code	Law.perturbation_drawnInto byRule (x := !g) fun same => not_ne g (congrArg Prod.fst same).symm
+Change.lean	425	and_left	ListTests.and_left	code	| _ + 1, .step le, c => mono s le (and_left c)
+Change.lean	429	of_not	ListTests.false_of_not	code	of_not (and_right (mono s lt c))
+Change.lean	429	and_right	ListTests.and_right	code	of_not (and_right (mono s lt c))
+Closing.lean	94	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	congrArg (fun b => bif b then 0 else k u h c s d) (Closing.ble_false_of_lt lt)
+Closing.lean	215	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	(Closing.ble_false_of_lt (Nat.lt_of_lt_of_le (Nat.lt_succ_self i)
+Closing.lean	217	Propagation.add_sub_self_left	Naturals.add_sub_cancel_left	code	(congrArg w (Propagation.add_sub_self_left i (r + 1)))
+Closing.lean	363	Propagation.add_congr	Naturals.add_congr	code	exact (carried_succ t c).trans ((Propagation.add_congr
+Closing.lean	411	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	(Closing.ble_false_of_lt lt)).trans (Propagation.cond_same (Nat.beq s u) 0).symm
+Closing.lean	438	Propagation.add_congr	Naturals.add_congr	code	((Propagation.add_congr (amount_after T D r) (amount_after T D r)).trans
+Closing.lean	446	Loops.beq_self	beq_self	code	((congrArg (fun b => bif b then (1 : Nat) else 0) (Loops.beq_self T)).symm.trans
+Closing.lean	529	Propagation.add_congr	Naturals.add_congr	code	exact (formedCourse_succ reads t c).trans ((Propagation.add_congr (ih t (Nat.le_refl t) c)
+Closing.lean	579	Loops.beq_self	beq_self	code	(Loops.beq_self t)))))))
+Closing.lean	589	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	(Closing.ble_false_of_lt le) |>.trans
+Closing.lean	612	Propagation.add_congr	Naturals.add_congr	code	((Propagation.add_congr (level_after θ r) (level_after θ r)).trans
+Closing.lean	624	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	(Closing.ble_false_of_lt lt)
+Closing.lean	642	Loops.beq_self	beq_self	code	(Loops.beq_self θ)).symm.trans (strengths_eq θ θ false () θ ()).symm)))⟩
+Context.lean	257	flip_ne	ListTests.ne_not	code	exact flip_ne b,
+Context.lean	267	flip_ne	ListTests.ne_not	code	exact fun h => flip_ne b h.symm,
+ContinuingRevision.lean	106	ExchangeLaw.sub_add_back	Naturals.sub_add_cancel	code	rw [Nat.add_right_comm, ExchangeLaw.sub_add_back enough]
+ContinuingRevision.lean	178	next_ne	Naturals.succ_ne_self	code	exact if_neg (next_ne n)
+ContinuingRevision.lean	182	next_ne	Naturals.succ_ne_self	code	rw [if_neg (next_ne n), if_pos rfl]
+ContinuingRevision.lean	188	next_ne	Naturals.succ_ne_self	code	rw [if_neg (next_ne n).symm, if_pos rfl] <;> rfl
+ContinuingRevision.lean	315	next_ne	Naturals.succ_ne_self	code	fun h => next_ne n (singleton_member h)
+ContinuingRevision.lean	379	next_ne	Naturals.succ_ne_self	code	have absent : n ∉ [n+1] := fun h => next_ne n (singleton_member h).symm
+Copying.lean	76	le_sub_of_add	Naturals.le_sub_of_add_le	code	⟨fun h => ⟨Nat.le_trans (Nat.le_add_right a b) h, le_sub_of_add h⟩,
+Copying.lean	77	add_sub_back	add_sub_of_le	code	fun ⟨le, h⟩ => Nat.le_trans (Nat.add_le_add_left h a) (Nat.le_of_eq (add_sub_back le))⟩
+Copying.lean	103	append_empty	ListTests.append_nil	code	fun same => nomatch append_cancel l ((append_empty l).trans same)
+Copying.lean	143	append_empty	ListTests.append_nil	code	| _, _, [], .nil s => ⟨[], (append_empty (out s)).symm⟩
+Copying.lean	323	append_empty	ListTests.append_nil	code	exact congrArg (fun l => (⟨prev, [], l, pool, free, used⟩ : Scan α)) (append_empty built).symm
+Copying.lean	331	sub_twice	Naturals.sub_sub	code	append_regroup, sub_twice, Nat.add_assoc]
+Copying.lean	374	append_empty	ListTests.append_nil	code	⟨fun _ => ⟨supplies_nil pool, Nat.zero_le free⟩, fun _ => (append_empty _).symm⟩
+Copying.lean	459	cancel_right	add_right_cancel	code	cancel_right (countOf a word)
+Copying.lean	544	sub_twice	Naturals.sub_sub	code	add_le_iff.mpr ⟨covered, Nat.le_trans t2 (Nat.le_of_eq (sub_twice _ _ _))⟩⟩,
+Copying.lean	548	sub_twice	Naturals.sub_sub	code	⟨rfl, ih.mpr ⟨s2, Nat.le_trans t2 (Nat.le_of_eq (sub_twice _ _ _).symm)⟩⟩⟩
+Copying.lean	658	cancel_right	add_right_cancel	code	cancel_right (e * (U1 + U3)) (calc
+Copying.lean	705	cancel_right	add_right_cancel	code	have turn := cancel_right (same * unlikeFrom x l) h2
+Copying.lean	761	append_empty	ListTests.append_nil	code	| _, none => ⟨[], (append_empty _).symm⟩
+Copying.lean	764	append_empty	ListTests.append_nil	code	| ⟨_, [], _, _, _, _⟩ => ⟨[], (append_empty _).symm⟩
+Copying.lean	770	append_empty	ListTests.append_nil	code	(fun _ => ⟨[x], rfl⟩) (fun _ => ⟨[], (append_empty built).symm⟩)
+Copying.lean	775	append_empty	ListTests.append_nil	code	| 0, _ => ⟨[], (append_empty _).symm⟩
+Copying.lean	791	append_empty	ListTests.append_nil	code	fun _ => (append_empty built).symm⟩
+Copying.lean	820	length_appended	ListTests.length_append	code	rw [append_regroup, length_appended] at ih
+Copying.lean	1014	add_sub_left	Naturals.add_sub_cancel_left	code	have left : ce ≤ ci + ce - ci := Nat.le_of_eq (add_sub_left ci ce).symm
+Copying.lean	1190	sub_twice	Naturals.sub_sub	code	· rw [ended, two_mul_pow, sub_twice, split],
+Copying.lean	1195	sub_twice	Naturals.sub_sub	code	rw [ended, two_mul_pow, sub_twice]⟩
+Countdown.lean	172	none_ne_some	ListTests.none_ne_some	code	(Nat.lt_succ_of_le short)).symm.trans ran) none_ne_some,
+Countdown.lean	193	none_ne_some	ListTests.none_ne_some	code	(Nat.le_trans (Nat.le_of_lt beyond) within) beyond).symm.trans ran) none_ne_some
+Counterfactual.lean	372	sub_add_back	Naturals.sub_add_cancel	code	⟨fun back => Nat.le_trans (Nat.le_add_left k (m - k)) (Nat.le_of_eq back), sub_add_back⟩
+Counting.lean	1409	Clear.and_right	ListTests.and_right	code	((congrArg (_ + ·) (mark_zero fun c => Bool.noConfusion (Clear.and_right c))).symm.trans
+CourseWorlds.lean	278	Propagation.add_congr	Naturals.add_congr	code	Nat.le_of_eq (Propagation.add_congr
+Courses.lean	511	append_empty	ListTests.append_nil	code	| ⟨_, [], _, _, _, _⟩ => ⟨[], (append_empty _).symm⟩
+Courses.lean	516	append_empty	ListTests.append_nil	code	(fun _ => ⟨[x], rfl⟩) (fun _ => ⟨[], (append_empty _).symm⟩))
+Dispatch.lean	283	two_mul	Naturals.two_mul	code	rw [two_mul, Nat.add_assoc]
+Enough.lean	186	not_ne_self	ListTests.not_ne_self	code	not_ne_self (alternate T) (stays T (Nat.le_refl T))
+Entropy.lean	1799	not_not	ListTests.not_not	code	⟨rfl, fun _ _ => rfl, fun _ c => congrArg (fun s => at_ s c) (not_not (side t))⟩
+Entropy.lean	1822	not_not	ListTests.not_not	code	| some b => congrArg (holds b) (not_not (side T))) all
+FinerTraces.lean	53	mem_append_split	mem_append_cases	code	| a :: _, mem => match mem_append_split mem with
+FinerTraces.lean	62	mem_cons_split	mem_cons_cases	code	| n + 1, _, mem => match mem_cons_split mem with
+FinerTraces.lean	79	of_mem_map	preimage_of_mem_map	code	| ⟨_, move, inner⟩ => match of_mem_map inner with
+FinerTraces.lean	89	of_mem_map	preimage_of_mem_map	code	| ⟨_, step, inner⟩ => match of_mem_map inner with
+FinerTraces.lean	110	mem_cons_split	mem_cons_cases	code	⟨fun mem => (match mem_cons_split mem with
+FinerTraces.lean	116	of_mem_map	preimage_of_mem_map	code	| ⟨_, _, inner⟩ => match of_mem_map inner with
+FinerTraces.lean	121	of_mem_map	preimage_of_mem_map	code	| ⟨y, here, inner⟩ => match of_mem_map inner with
+FinerTraces.lean	129	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+FinerTraces.lean	198	two_listed	ListTests.mem_bools	code	fun ⟨len, path⟩ => ⟨len, path, fun x _ => ⟨.head _, two_listed x.2.1⟩⟩⟩
+Fragments.lean	89	Joining.appended_assoc	ListTests.append_assoc	code	(Joining.appended_assoc f.word g.word h.word)
+Fragments.lean	138	Joining.appended_nil	ListTests.append_nil	code	congrArg (fun w => (⟨f.start, w, f.finish⟩ : Fragment S A)) (Joining.appended_nil f.word)⟩
+Frequency.lean	178	Loops.mul_left_comm_nat	mul_turn	code	((Loops.mul_left_comm_nat (1 + M) D _).trans (congrArg (D * ·)
+Frequency.lean	250	Loops.mul_assoc_nat	mul_assoc_nat	code	(Loops.mul_assoc_nat D _ _).symm)))
+Frequency.lean	336	Propagation.add_congr	Naturals.add_congr	code	| t + 1 => (carried_succ t ()).trans ((Propagation.add_congr (carried_eq on M D t)
+Frequency.lean	454	Loops.add_mul_nat	add_mul_split	code	(Loops.add_mul_nat _ _ _)))
+Frequency.lean	485	Loops.beq_self	beq_self	code	((congrArg (fun b => bif b then M else 0) (Loops.beq_self u)).symm.trans
+Frequency.lean	543	Propagation.add_congr	Naturals.add_congr	code	((Loops.two_pow_succ (marks u)).trans (Propagation.add_congr eq.symm eq.symm))
+Frequency.lean	758	Clear.and_left	ListTests.and_left	code	| true => ⟨Nat.eq_of_beq_eq_true (Clear.and_left hb), Clear.and_left (Clear.and_right hb),
+Frequency.lean	758	Clear.and_left	ListTests.and_left	code	| true => ⟨Nat.eq_of_beq_eq_true (Clear.and_left hb), Clear.and_left (Clear.and_right hb),
+Frequency.lean	758	Clear.and_right	ListTests.and_right	code	| true => ⟨Nat.eq_of_beq_eq_true (Clear.and_left hb), Clear.and_left (Clear.and_right hb),
+Frequency.lean	759	Clear.and_right	ListTests.and_right	code	Clear.and_right (Clear.and_right hb)⟩
+Frequency.lean	759	Clear.and_right	ListTests.and_right	code	Clear.and_right (Clear.and_right hb)⟩
+Frequency.lean	765	Loops.beq_self	beq_self	code	(Clear.and_both _ _ (Loops.beq_self u) (Clear.and_both _ _ yes c))).symm)⟩
+Frequency.lean	829	or_left	ListTests.or_left	code	| .inl le' => or_left _ (anyUpTo_of yes le')
+Frequency.lean	830	or_right	ListTests.or_right	code	| .inr eq => or_right _ (Eq.subst (motive := fun x => f x = true) eq yes)
+Frequency.lean	834	or_cases	ListTests.or_cases	code	| _ + 1, yes => match or_cases yes with
+Frequency.lean	843	Clear.and_left	ListTests.and_left	code	| .inl le' => allUpTo_true (Clear.and_left yes) n le'
+Frequency.lean	844	Clear.and_right	ListTests.and_right	code	| .inr eq => Eq.subst (motive := fun x => g x = true) eq.symm (Clear.and_right yes)
+Frequency.lean	866	Clear.and_right	ListTests.and_right	code	| true => Clear.and_right hb
+Frequency.lean	966	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	| t + 1, le => (count_succ_off (Closing.ble_false_of_lt le)).trans
+Gain.lean	364	add_one_sub_self	succ_sub_self	code	(Nat.le_of_eq (congrArg (· + 0) (add_one_sub_self t)).symm))⟩
+Gluing.lean	290	image_of_mem_map	preimage_of_mem_map	code	| ⟨_, ksub, counts, odd⟩ => match image_of_mem_map (sub k' (.head rest)) with
+Gluing.lean	333	image_of_mem_map	preimage_of_mem_map	code	match image_of_mem_map (sub' k found) with
+Gluing.lean	447	image_of_mem_map	preimage_of_mem_map	code	| ⟨ks, ksub, same⟩ => match image_of_mem_map (sub r (.head rest)) with
+Gluing.lean	822	image_of_mem_map	preimage_of_mem_map	code	| some _, .tail _ mem => match image_of_mem_map mem with
+Granularity.lean	91	mem_joined_split	mem_append_cases	code	⟨fun mem => match mem_joined_split (l := g b)
+Granularity.lean	114	mem_joined_split	mem_append_cases	code	fun mem => match mem_joined_split mem with
+Granularity.lean	398	Joining.length_appended	ListTests.length_append	code	((Joining.length_appended xs added).trans (congrArg (xs.length + ·) counted))⟩
+Granularity.lean	608	Granularity.mem_joined_split	mem_append_cases	code	fun ⟨χ, mem, holds⟩ => match Granularity.mem_joined_split mem with
+Granularity.lean	695	Granularity.mem_joined_split	mem_append_cases	code	fun mem => match Granularity.mem_joined_split mem with
+HexagramLaws.lean	116	false_of_not	ListTests.false_of_not	code	(fun _ mem same => not_mem_of_memb (false_of_not (both h).1)
+HexagramLaws.lean	233	either	ListTests.or_cases	code	match either h with
+HexagramLaws.lean	235	either	ListTests.or_cases	code	| .inl h3 => match either h3 with
+HexagramLaws.lean	237	either	ListTests.or_cases	code	| .inl h2 => match either h2 with
+HexagramLaws.lean	669	either	ListTests.or_cases	code	| q :: _, h => match either h with
+HexagramLaws.lean	686	either	ListTests.or_cases	code	⟨q, mem, eq_of_eqb fixed, eq_of_eqb changed, match either which with
+HexagramLaws.lean	722	either	ListTests.or_cases	code	⟨q, mem, eq_of_eqb turned, eq_of_eqb changed, match either which with
+HexagramLaws.lean	1226	either	ListTests.or_cases	code	| _ + 1, x, h => match either h with
+HexagramLaws.lean	1239	either	ListTests.or_cases	code	| q :: _, h => match either h with
+HexagramSequences.lean	254	either	ListTests.or_cases	code	| q :: _, h => match either h with
+HexagramSequences.lean	341	either	ListTests.or_cases	code	match either (every_of_order (p := fun s => eqb s weiJi || stepb s (orderNext s) order) rfl s) with
+HexagramSequences.lean	671	beq_self	beq_self	code	same ▸ beq_self n
+HexagramSequences.lean	679	either	ListTests.or_cases	code	match either (every_of_order (p := fun s => !Nat.beq (yang s) 3 ||
+HexagramSequences.lean	681	false_of_not	ListTests.false_of_not	code	| .inl not_three => absurd (beq_of_eq three) (fun e => Bool.noConfusion ((false_of_not not_three).symm.trans e))
+HexagramSequences.lean	682	either	ListTests.or_cases	code	| .inr found => match either found with
+HexagramSequences.lean	685	either	ListTests.or_cases	code	| .inl rest => match either rest with
+HexagramSequences.lean	688	either	ListTests.or_cases	code	| .inl ends => match either ends with
+HexagramSequences.lean	896	false_of_not	ListTests.false_of_not	code	⟨⟨fun odd => (odd3_iff _).2.1.mp (counted.symm.trans (false_of_not (turns.symm.trans odd))),
+HexagramSequences.lean	978	false_of_not	ListTests.false_of_not	code	fun q mem => ne_of_eqb (false_of_not
+HexagramSites.lean	419	not_true_eq	ListTests.false_of_not	code	| .q2 => not_true_eq h1.1
+HexagramSites.lean	420	not_true_eq	ListTests.false_of_not	code	| .q3 => not_true_eq h1.2
+HexagramSites.lean	421	not_true_eq	ListTests.false_of_not	code	| .q4 => not_true_eq h12.2
+HexagramSites.lean	422	not_true_eq	ListTests.false_of_not	code	| .q5 => not_true_eq h123.2,
+HexagramSites.lean	714	or_left_true	ListTests.or_left	code	| .p1, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ h))))
+HexagramSites.lean	714	or_left_true	ListTests.or_left	code	| .p1, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ h))))
+HexagramSites.lean	714	or_left_true	ListTests.or_left	code	| .p1, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ h))))
+HexagramSites.lean	714	or_left_true	ListTests.or_left	code	| .p1, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ h))))
+HexagramSites.lean	714	or_left_true	ListTests.or_left	code	| .p1, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ h))))
+HexagramSites.lean	715	or_left_true	ListTests.or_left	code	| .p2, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h))))
+HexagramSites.lean	715	or_left_true	ListTests.or_left	code	| .p2, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h))))
+HexagramSites.lean	715	or_left_true	ListTests.or_left	code	| .p2, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h))))
+HexagramSites.lean	715	or_left_true	ListTests.or_left	code	| .p2, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h))))
+HexagramSites.lean	715	or_right_true	ListTests.or_right	code	| .p2, h => or_left_true _ (or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h))))
+HexagramSites.lean	716	or_left_true	ListTests.or_left	code	| .p3, h => or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h)))
+HexagramSites.lean	716	or_left_true	ListTests.or_left	code	| .p3, h => or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h)))
+HexagramSites.lean	716	or_left_true	ListTests.or_left	code	| .p3, h => or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h)))
+HexagramSites.lean	716	or_right_true	ListTests.or_right	code	| .p3, h => or_left_true _ (or_left_true _ (or_left_true _ (or_right_true _ h)))
+HexagramSites.lean	717	or_left_true	ListTests.or_left	code	| .p4, h => or_left_true _ (or_left_true _ (or_right_true _ h))
+HexagramSites.lean	717	or_left_true	ListTests.or_left	code	| .p4, h => or_left_true _ (or_left_true _ (or_right_true _ h))
+HexagramSites.lean	717	or_right_true	ListTests.or_right	code	| .p4, h => or_left_true _ (or_left_true _ (or_right_true _ h))
+HexagramSites.lean	718	or_left_true	ListTests.or_left	code	| .p5, h => or_left_true _ (or_right_true _ h)
+HexagramSites.lean	718	or_right_true	ListTests.or_right	code	| .p5, h => or_left_true _ (or_right_true _ h)
+HexagramSites.lean	719	or_right_true	ListTests.or_right	code	| .p6, h => or_right_true _ h
+Hexagrams.lean	168	either	ListTests.or_cases	code	| t :: _, h => match either h with
+Hexagrams.lean	265	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	265	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	265	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	265	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	266	opposite_opposite	ListTests.not_not	code	opposite_opposite e, opposite_opposite f]
+Hexagrams.lean	266	opposite_opposite	ListTests.not_not	code	opposite_opposite e, opposite_opposite f]
+Hexagrams.lean	284	either	ListTests.or_cases	code	match either h with
+Hexagrams.lean	286	false_of_not	ListTests.false_of_not	code	| ⟨other, eq⟩ => .inl ⟨ne_of_eqb (false_of_not other), eq_of_eqb eq⟩
+Hexagrams.lean	319	opposite_opposite	ListTests.not_not	code	congrArg (fun x => (⟨x, b, c, d, e, f⟩ : Hexagram)) (opposite_opposite a)
+Hexagrams.lean	321	opposite_opposite	ListTests.not_not	code	congrArg (fun x => (⟨a, x, c, d, e, f⟩ : Hexagram)) (opposite_opposite b)
+Hexagrams.lean	323	opposite_opposite	ListTests.not_not	code	congrArg (fun x => (⟨a, b, x, d, e, f⟩ : Hexagram)) (opposite_opposite c)
+Hexagrams.lean	325	opposite_opposite	ListTests.not_not	code	congrArg (fun x => (⟨a, b, c, x, e, f⟩ : Hexagram)) (opposite_opposite d)
+Hexagrams.lean	327	opposite_opposite	ListTests.not_not	code	congrArg (fun x => (⟨a, b, c, d, x, f⟩ : Hexagram)) (opposite_opposite e)
+Hexagrams.lean	329	opposite_opposite	ListTests.not_not	code	congrArg (fun x => (⟨a, b, c, d, e, x⟩ : Hexagram)) (opposite_opposite f)
+Hexagrams.lean	402	opposite_opposite	ListTests.not_not	code	congrArg (fun x => (⟨a, b, c, d, e, x⟩ : Hexagram)) (opposite_opposite f)
+Hexagrams.lean	618	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	618	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	618	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	618	opposite_opposite	ListTests.not_not	code	rw [opposite_opposite a, opposite_opposite b, opposite_opposite c, opposite_opposite d,
+Hexagrams.lean	619	opposite_opposite	ListTests.not_not	code	opposite_opposite e]
+Hexagrams.lean	696	opposite_true	ListTests.not_eq_true_of_false	code	exact opposite_true v) with
+Hexagrams.lean	706	opposite_true	ListTests.not_eq_true_of_false	code	exact opposite_true low) with
+HistoryIdeals.lean	182	HistoryLanguages.append_nil'	ListTests.append_nil	code	refl v := ⟨[], HistoryLanguages.append_nil' v⟩
+HistoryIdeals.lean	184	HistoryLanguages.append_assoc'	ListTests.append_assoc	code	⟨t ++ t', (HistoryLanguages.append_assoc' _ t t').symm.trans ((congrArg (· ++ t') e).trans e')⟩
+HistoryIdeals.lean	188	length_append	ListTests.length_append	code	rw [length_append]
+HistoryIdeals.lean	205	HistoryLanguages.append_assoc'	ListTests.append_assoc	code	(HistoryLanguages.append_assoc' v t t').symm.trans ((congrArg (· ++ t') e).trans e')
+HistoryIdeals.lean	208	HistoryLanguages.append_nil'	ListTests.append_nil	code	exact (HistoryLanguages.append_nil' v).symm.trans e
+HistoryIdeals.lean	215	HistoryLanguages.append_nil'	ListTests.append_nil	code	| nil => exact (HistoryLanguages.append_nil' w).symm
+HistoryIdeals.lean	217	length_append	ListTests.length_append	code	rw [length_append] at len
+HistoryLanguages.lean	73	append_nil'	ListTests.append_nil	code	| same => ⟨same ▸ (append_nil' before).symm, same ▸ admitted⟩,
+HistoryLanguages.lean	74	append_nil'	ListTests.append_nil	code	fun ⟨same, _⟩ => trace_nil_iff.mpr (same.trans (append_nil' before)).symm⟩
+HistoryLanguages.lean	76	append_assoc'	ListTests.append_assoc	code	have shift : before ++ [a] ++ rest = before ++ (a :: rest) := append_assoc' before [a] rest
+HistoryLanguages.lean	176	append_assoc'	ListTests.append_assoc	code	(append_assoc' h extension suffix) ▸ Iff.rfl
+HistoryLanguages.lean	247	append_nil'	ListTests.append_nil	code	| start, [], admitted, _, blocked => absurd ((append_nil' start).symm ▸ admitted) blocked
+HistoryLanguages.lean	251	append_assoc'	ListTests.append_assoc	code	fun held => blocked ((append_assoc' start [a] word) ▸ held)
+HistoryLanguages.lean	255	append_assoc'	ListTests.append_assoc	code	(append_assoc' start [a] pre) ▸ held, letter,
+HistoryLanguages.lean	257	append_assoc'	ListTests.append_assoc	code	(append_assoc' start [a] pre)).symm ▸ reached)⟩
+HistoryLanguages.lean	259	append_nil'	ListTests.append_nil	code	⟨[], a, word, rfl, (append_nil' start).symm ▸ admitted, letters.1,
+HistoryLanguages.lean	260	append_nil'	ListTests.append_nil	code	fun reached => next ((congrArg (fun xs => xs ++ [a]) (append_nil' start)) ▸ reached)⟩
+HistorySums.lean	497	Propagation.add_congr	Naturals.add_congr	code	((Propagation.add_congr ((Nat.one_mul _).trans (exactly_eq M (i + 1) n))
+Identification.lean	1305	le_of_add_right	le_of_add_le_add_right	code	le_of_add_right (2 * e) (Nat.le_of_succ_le_succ chain)
+Identification.lean	1336	not_ne_bool	ListTests.not_ne_self	code	(fun same => not_ne_bool (Negation.course x)
+IntegerOrder.lean	100	sub_self	Integers.add_right_neg	code	rw [sub_self]
+Integers.lean	86	nat_add_right_cancel	Naturals.add_right_cancel	code	nat_add_right_cancel both
+Interleavings.lean	79	mem_cons_split	mem_cons_cases	code	exact .inl fun f mem => match mem_cons_split mem with
+Interleavings.lean	83	mem_cons_split	mem_cons_cases	code	exact .inr ⟨g :: A, f, B, by rw [split]; rfl, fun a mem => match mem_cons_split mem with
+Interleavings.lean	253	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+Interleavings.lean	538	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+Interleavings.lean	579	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+Interleavings.lean	653	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+Interleavings.lean	662	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+Interleavings.lean	769	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+Interleavings.lean	783	mem_cons_split	mem_cons_cases	code	match mem_cons_split mem with
+Joining.lean	888	appended_nil	ListTests.append_nil	code	| nil xs => exact ⟨[], (appended_nil xs).symm, rfl⟩
+Joining.lean	893	appended_assoc	ListTests.append_assoc	code	exact ⟨z :: added, extended.trans (appended_assoc _ [z] added), congrArg Nat.succ counted⟩
+Joining.lean	909	length_appended	ListTests.length_append	code	(congrArg List.length extended).trans ((length_appended xs added).trans
+Joining.lean	911	length_appended	ListTests.length_append	code	((length_appended ys added').symm.trans (congrArg List.length extended').symm)))),
+JoiningContexts.lean	98	appended_nil	ListTests.append_nil	code	| .hole => (appended_nil inner.course).symm
+JoiningContexts.lean	100	appended_assoc	ListTests.append_assoc	code	(appended_assoc inner.course c.course [.withLeft a])
+JoiningContexts.lean	102	appended_assoc	ListTests.append_assoc	code	(appended_assoc inner.course c.course [.withRight a])
+JoiningRoles.lean	193	length_appended	ListTests.length_append	code	(length_appended xs [z]).trans ((congrArg (· + 1) slots).trans (length_appended ys [z']).symm),
+JoiningRoles.lean	193	length_appended	ListTests.length_append	code	(length_appended xs [z]).trans ((congrArg (· + 1) slots).trans (length_appended ys [z']).symm),
+JointPlans.lean	58	mem_appended_split	mem_append_cases	code	.cons (fun b mem same => match mem_appended_split mem with
+JointPlans.lean	88	mem_appended_split	mem_append_cases	code	| .pair p q, s, ⟨l, r, joint, left, right⟩ => fun a mem => match mem_appended_split mem with
+Labels.lean	136	length_map	length_map	code	length_map _ l
+Lasting.lean	276	none_ne_some	ListTests.none_ne_some	code	exact absurd moved none_ne_some
+Lasting.lean	310	none_ne_some	ListTests.none_ne_some	code	⟨fun stopped within => none_ne_some (stopped.symm.trans (guarded_agrees within)),
+Laws.lean	62	none_ne_some	ListTests.none_ne_some	code	exact absurd (show (none : Option S) = some t from impossible) none_ne_some
+LearningRuns.lean	451	not_moves	ListTests.not_ne_self	code	fun same => not_moves (r.state n) ((r.step n).symm.trans same)
+LeastLoss.lean	90	mul_right_comm'	Naturals.mul_right_comm	code	= a.num * 2 ^ b.exp * 2 ^ c.exp := mul_right_comm' _ _ _
+LeastLoss.lean	92	mul_right_comm'	Naturals.mul_right_comm	code	_ = b.num * 2 ^ c.exp * 2 ^ a.exp := mul_right_comm' _ _ _
+LeastLoss.lean	94	mul_right_comm'	Naturals.mul_right_comm	code	_ = c.num * 2 ^ a.exp * 2 ^ b.exp := mul_right_comm' _ _ _)
+LeastLoss.lean	101	right_distrib'	add_mul_split	code	rw [right_distrib', right_distrib', pow_add' 2 a.exp b.exp, pow_add' 2 b.exp c.exp,
+LeastLoss.lean	101	right_distrib'	add_mul_split	code	rw [right_distrib', right_distrib', pow_add' 2 a.exp b.exp, pow_add' 2 b.exp c.exp,
+LeastLoss.lean	101	pow_add'	Naturals.pow_add	code	rw [right_distrib', right_distrib', pow_add' 2 a.exp b.exp, pow_add' 2 b.exp c.exp,
+LeastLoss.lean	101	pow_add'	Naturals.pow_add	code	rw [right_distrib', right_distrib', pow_add' 2 a.exp b.exp, pow_add' 2 b.exp c.exp,
+LeastLoss.lean	102	mul_assoc'	mul_assoc_nat	code	mul_assoc' a.num, mul_right_comm' b.num (2 ^ a.exp) (2 ^ c.exp),
+LeastLoss.lean	102	mul_right_comm'	Naturals.mul_right_comm	code	mul_assoc' a.num, mul_right_comm' b.num (2 ^ a.exp) (2 ^ c.exp),
+LeastLoss.lean	103	mul_assoc'	mul_assoc_nat	code	mul_assoc' c.num (2 ^ b.exp) (2 ^ a.exp), Nat.mul_comm (2 ^ b.exp) (2 ^ a.exp),
+LeastLoss.lean	116	right_distrib'	add_mul_split	code	rw [right_distrib', pow_add', mul_assoc' x, mul_left_comm' (2 ^ g) (2 ^ f), ← mul_assoc' x,
+LeastLoss.lean	116	pow_add'	Naturals.pow_add	code	rw [right_distrib', pow_add', mul_assoc' x, mul_left_comm' (2 ^ g) (2 ^ f), ← mul_assoc' x,
+LeastLoss.lean	116	mul_assoc'	mul_assoc_nat	code	rw [right_distrib', pow_add', mul_assoc' x, mul_left_comm' (2 ^ g) (2 ^ f), ← mul_assoc' x,
+LeastLoss.lean	116	mul_left_comm'	mul_turn	code	rw [right_distrib', pow_add', mul_assoc' x, mul_left_comm' (2 ^ g) (2 ^ f), ← mul_assoc' x,
+LeastLoss.lean	116	mul_assoc'	mul_assoc_nat	code	rw [right_distrib', pow_add', mul_assoc' x, mul_left_comm' (2 ^ g) (2 ^ f), ← mul_assoc' x,
+LeastLoss.lean	117	mul_assoc'	mul_assoc_nat	code	mul_assoc' y, ← mul_assoc' (2 ^ e)]
+LeastLoss.lean	117	mul_assoc'	mul_assoc_nat	code	mul_assoc' y, ← mul_assoc' (2 ^ e)]
+LeastLoss.lean	169	right_distrib'	add_mul_split	code	rw [← right_distrib', Nat.succ_mul, pow_add', mul_assoc']
+LeastLoss.lean	169	pow_add'	Naturals.pow_add	code	rw [← right_distrib', Nat.succ_mul, pow_add', mul_assoc']
+LeastLoss.lean	169	mul_assoc'	mul_assoc_nat	code	rw [← right_distrib', Nat.succ_mul, pow_add', mul_assoc']
+LeastLoss.lean	195	Dyadic.pow_add'	Naturals.pow_add	code	rw [Nat.one_mul, Nat.one_mul, ← Nat.mul_two, Dyadic.pow_add' 2 (t + 1) (t + 1),
+LeastLoss.lean	196	Dyadic.mul_assoc'	mul_assoc_nat	code	Dyadic.mul_assoc', Nat.mul_comm 2 (2 ^ t)]
+LevelCoupling.lean	408	Loops.beq_self	beq_self	code	(Loops.beq_self t)).trans
+LevelCoupling.lean	415	Loops.beq_self	beq_self	code	(cond (Nat.ble (W.need t h d) (loweredAt (W.need t h d) t d t d)) 1 0) 0) (Loops.beq_self t)).trans
+Likeness.lean	1350	succ_ne_zero	Naturals.succ_ne_zero	code	| 0, n, same => succ_ne_zero (2 * n) same.symm
+Likeness.lean	1351	succ_ne_zero	Naturals.succ_ne_zero	code	| m + 1, 0, same => succ_ne_zero (2 * m) (succ_inj same)
+Likeness.lean	1357	succ_ne_zero	Naturals.succ_ne_zero	code	| 0, n + 1, same => absurd same.symm (succ_ne_zero (2 * n + 1))
+Likeness.lean	1358	succ_ne_zero	Naturals.succ_ne_zero	code	| m + 1, 0, same => absurd same (succ_ne_zero (2 * m + 1))
+LimitVerification.lean	236	Clear.of_not	ListTests.false_of_not	code	true_of_not_clear (Clear.of_not yes)
+LimitVerification.lean	270	Clear.and_left	ListTests.and_left	code	fun ⟨n, yes⟩ => ⟨(verifies r).mpr ⟨n, fun k le => Clear.and_left (yes k le)⟩,
+LimitVerification.lean	271	Clear.and_right	ListTests.and_right	code	(verifies' r).mpr ⟨n, fun k le => Clear.and_right (yes k le)⟩⟩⟩
+LimitVerification.lean	325	or_cases'	ListTests.or_cases	code	| d, said => match or_cases' said with
+LimitVerification.lean	348	Clear.and_right	ListTests.and_right	code	((pending m m' k r).1 || m k r) = true := fun _ marked => Clear.and_right marked
+LimitVerification.lean	350	Clear.and_right	ListTests.and_right	code	((pending m m' k r).2 || m' k r) = true := fun _ marked => Clear.and_right marked
+LimitVerification.lean	367	Clear.and_left	ListTests.and_left	code	(Clear.and_left (c := (pending m m' (c + 1 + d) r).2 || m' (c + 1 + d) r) yes') with
+LimitVerification.lean	373	Clear.and_right	ListTests.and_right	code	(Clear.and_right (b := (pending m m' (c + 1 + d) r).1 || m (c + 1 + d) r) yes') with
+LimitVerification.lean	541	Clear.of_not	ListTests.false_of_not	code	fun ⟨n, yes⟩ => ⟨n, fun k le => Clear.of_not (yes (k + 1) (Nat.le_succ_of_le le))⟩⟩
+LimitVerification.lean	590	Clear.and_left	ListTests.and_left	code	⟨Clear.and_left yes, Clear.and_right yes⟩
+LimitVerification.lean	590	Clear.and_right	ListTests.and_right	code	⟨Clear.and_left yes, Clear.and_right yes⟩
+LimitVerification.lean	601	false_of_not_true	ListTests.false_of_not_true	code	| .inl c => .inr fun _ => false_of_not_true fun yes =>
+LimitVerification.lean	622	Clear.of_not	ListTests.false_of_not	code	| ⟨_, _, yes⟩ => .inl (true_of_not_clear (Clear.of_not yes))
+LimitVerification.lean	630	not_ne_self	ListTests.not_ne_self	code	open Enough.Free (process alternating not_ne_self)
+LimitVerification.lean	663	not_ne_self	ListTests.not_ne_self	code	not_ne_self _ ((after_step r.state not (Nat.le_add_right h T)).symm.trans
+LimitVerification.lean	706	not_ne_self	ListTests.not_ne_self	code	theorem toggle_true (b : Bool) : toggle b true ≠ b := not_ne_self b
+ListFootprints.lean	114	Joining.appended_assoc	ListTests.append_assoc	code	realizes_iff_of_draws _ _ s (Joining.appended_assoc p.draws q.draws r.draws)
+LocalUnits.lean	409	Joining.appended_nil	ListTests.append_nil	code	atX.symm.trans ((congrArg stepsWord (Joining.appended_nil x.val.word)).symm.trans
+LoopReturn.lean	413	Loops.mul_assoc_nat	mul_assoc_nat	code	((Loops.mul_assoc_nat (2 ^ n) 2 d).trans
+LoopReturn.lean	467	Loops.mul_assoc_nat	mul_assoc_nat	code	((Loops.mul_assoc_nat (strength as) a x).symm.trans
+LoopReturn.lean	478	Loops.mul_assoc_nat	mul_assoc_nat	code	((Loops.mul_assoc_nat (strength as) _ d).symm.trans
+Loops.lean	175	mul_assoc_nat	mul_assoc_nat	code	(congrArg (· * c) (Nat.mul_comm a b)).trans (mul_assoc_nat b a c)
+Loops.lean	179	add_mul_nat	add_mul_split	code	(add_mul_nat 1 m x).trans (congrArg (· + m * x) (Nat.one_mul x))
+Loops.lean	275	Propagation.add_congr	Naturals.add_congr	code	Propagation.add_congr
+Loops.lean	288	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr (carriedFrom_eq_carried alike t) (total_congr_on (alike t))).trans
+Loops.lean	829	Propagation.add_congr	Naturals.add_congr	code	(Nat.add_add_add_comm _ _ _ _).trans (Propagation.add_congr
+Loops.lean	839	mul_assoc_nat	mul_assoc_nat	code	((Nat.mul_comm _ _).trans (mul_assoc_nat D _ _)))
+Loops.lean	861	mul_assoc_nat	mul_assoc_nat	code	(mul_assoc_nat b (M ^ i) M).symm.trans (Nat.mul_comm _ _)
+Loops.lean	879	add_mul_nat	add_mul_split	code	((total_congr (fun i => (add_mul_nat (binom t i) (binom t (i + 1)) (M ^ (i + 1))).trans
+Loops.lean	894	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr (withinBound_eq M D (j + 1) t)
+Loops.lean	896	mul_assoc_nat	mul_assoc_nat	code	((congrArg (_ + ·) ((mul_assoc_nat M D _).symm.trans
+Loops.lean	897	mul_assoc_nat	mul_assoc_nat	code	((congrArg (· * _) (Nat.mul_comm M D)).trans (mul_assoc_nat D M _)))).trans
+Loops.lean	1113	beq_self	beq_self	code	((Nat.add_zero _).trans (congrArg (fun b => (bif b then M else 0) * l t ()) (beq_self t))))
+Loops.lean	1123	beq_self	beq_self	code	((Nat.add_zero _).trans (congrArg (fun b => bif b then M else 0) (beq_self t))))
+Loops.lean	1130	Propagation.add_congr	Naturals.add_congr	code	| t + 1 => (carried_succ t ()).trans (Propagation.add_congr (carried_eq M D t)
+Loops.lean	1139	Propagation.add_congr	Naturals.add_congr	code	| j + 1, t + 1 => Propagation.add_congr (carriedWithin_eq M D (j + 1) t)
+Loops.lean	1191	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr rfl (within.trans whole.symm)).trans
+Loops.lean	1199	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr (exact δ (t + 1)) (within.trans whole.symm)).trans
+Loops.lean	1229	Loops.beq_self	beq_self	code	congrArg (fun b => bif b then K h c d else 0) (Loops.beq_self t)
+Loops.lean	1285	pow_add_nat	Naturals.pow_add	code	| n + 1 => (congrArg (· * b ^ a) (pow_mul_nat b a n)).trans (pow_add_nat b (a * n) a).symm
+Loops.lean	1289	mul_mul_mul_comm_nat	Naturals.mul_mul_mul_comm	code	| n + 1 => (congrArg (· * (x * y)) (mul_pow_nat x y n)).trans (mul_mul_mul_comm_nat _ _ _ _)
+Loops.lean	1332	add_mul_nat	add_mul_split	code	(add_mul_nat (a + 5) 1 (a + 6)).trans ((Propagation.add_congr (Nat.mul_succ _ _)
+Loops.lean	1332	Propagation.add_congr	Naturals.add_congr	code	(add_mul_nat (a + 5) 1 (a + 6)).trans ((Propagation.add_congr (Nat.mul_succ _ _)
+Loops.lean	1343	add_mul_nat	add_mul_split	code	(Nat.le_trans (Nat.le_of_eq (add_mul_nat c d _).symm)
+Loops.lean	1357	pow_add_nat	Naturals.pow_add	code	_ = 2 ^ (K + a * n) := (pow_add_nat 2 K (a * n)).symm
+Loops.lean	1380	mul_assoc_nat	mul_assoc_nat	code	(mul_assoc_nat _ _ _).symm))))))
+Loops.lean	1408	mul_assoc_nat	mul_assoc_nat	code	((Nat.mul_comm _ _).trans (mul_assoc_nat _ _ _).symm))))))
+Loops.lean	1506	Loops.mul_assoc_nat	mul_assoc_nat	code	(Nat.le_of_eq (Loops.mul_assoc_nat _ _ _).symm))⟩⟩
+LossMatching.lean	49	mem_map_inv	preimage_of_mem_map	code	⟨fun mem => match mem_map_inv mem with
+LossMatching.lean	57	mem_middle_of	mem_middle	code	| .inl ax => fresh (Eq.subst (motive := fun y => y ∈ p ++ a :: q) ax (mem_middle_of p))
+LossMatching.lean	177	mem_map_inv	preimage_of_mem_map	code	⟨fun mem => match mem_map_inv mem with
+LossMatching.lean	181	mem_map_inv	preimage_of_mem_map	code	| .inr mem => match mem_map_inv mem with
+LossMatching.lean	185	map_length_eq	length_map	code	Eq.subst (motive := fun n => n + 1 ≤ lw.length) (map_length_eq i lb) bound
+LossMatching.lean	260	mem_map_inv	preimage_of_mem_map	code	fun c mem has => match mem_map_inv mem with
+LossMatching.lean	325	map_length_eq	length_map	code	(Nat.le_of_eq (map_length_eq image lb))))
+MoveFormation.lean	721	ne_not	ListTests.ne_not	code	ne_not (alt n)
+Observation.lean	405	Loops.beq_self	beq_self	code	rw [agree t false (Nat.le_refl t) (Loops.beq_self t)]
+Observation.lean	414	Loops.beq_self	beq_self	code	rw [hb, Loops.beq_self]
+Observation.lean	434	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	rw [Closing.ble_false_of_lt lt] at read
+Observation.lean	462	Loops.beq_self	beq_self	code	rw [Nat.ble_eq_true_of_le (Nat.le_refl T), Loops.beq_self]
+Observation.lean	471	Loops.beq_self	beq_self	code	rw [Loops.beq_self]
+Observation.lean	508	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	rw [Closing.ble_false_of_lt lt]
+Observation.lean	557	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	rw [Closing.ble_false_of_lt below]
+OneStep.lean	696	length_append	ListTests.length_append	code	(length_append _ _).trans ((congr (congrArg (· + ·)
+Onward.lean	368	Parting.and_both	bool_of_and_true	code	⟨of_decide_eq_true (Parting.and_both passes).1, of_decide_eq_true (Parting.and_both passes).2⟩,
+Onward.lean	368	Parting.and_both	bool_of_and_true	code	⟨of_decide_eq_true (Parting.and_both passes).1, of_decide_eq_true (Parting.and_both passes).2⟩,
+Onward.lean	374	Parting.and_of	bool_and_true	code	same.symm (Parting.and_of (decide_eq_true step) (decide_eq_true kept)) :
+Openness.lean	804	Clear.and_left	ListTests.and_left	code	(Clear.first_unique s (Clear.and_left first) (Clear.and_right first) c yes) (.head []),
+Openness.lean	804	Clear.and_right	ListTests.and_right	code	(Clear.first_unique s (Clear.and_left first) (Clear.and_right first) c yes) (.head []),
+Openness.lean	807	Clear.and_left	ListTests.and_left	code	⟨Nat.lt_succ_self t, Clear.and_left first, Clear.and_right first⟩
+Openness.lean	807	Clear.and_right	ListTests.and_right	code	⟨Nat.lt_succ_self t, Clear.and_left first, Clear.and_right first⟩
+Openness.lean	1285	Shuttle.every	ListTests.mem_bools	code	fun t => ⟨[true, false], Shuttle.distinct, fun c _ => Shuttle.every c,
+Openness.lean	1286	Shuttle.every	ListTests.mem_bools	code	fun c _ => Shuttle.every c, (leaking_world.2.2.2.2.2 t).1⟩,
+OrderNormal.lean	1090	mem_append_either	mem_append_cases	code	| b :: _, _, ⟨fresh, distinct⟩, distinct', apart => ⟨fun mem => match mem_append_either mem with
+OrderNormal.lean	1119	mem_append_either	mem_append_cases	code	fun mem => (mix x).mpr (match mem_append_either mem with
+Parting.lean	458	and_both	bool_of_and_true	code	| ⟨z, _, both⟩ => ⟨a, z, of_decide_eq_true (and_both both).1, (and_both both).2⟩,
+Parting.lean	458	and_both	bool_of_and_true	code	| ⟨z, _, both⟩ => ⟨a, z, of_decide_eq_true (and_both both).1, (and_both both).2⟩,
+Parting.lean	462	and_of	bool_and_true	code	anyOf_of_mem (every_move a) (anyOf_of_mem (every z) (and_of (decide_eq_true step) rest))⟩
+Parting.lean	496	and_of	bool_and_true	code	(every z) (and_of (decide_eq_true step) rest)⟩)
+Parting.lean	499	and_both	bool_of_and_true	code	⟨(a.1, ⟨z.1, (and_both z.2).2⟩), of_decide_eq_true (and_both z.2).1⟩
+Parting.lean	499	and_both	bool_of_and_true	code	⟨(a.1, ⟨z.1, (and_both z.2).2⟩), of_decide_eq_true (and_both z.2).1⟩
+Parting.lean	578	and_of	bool_and_true	code	(and_of (decide_eq_true rfl) (anyOf_of_mem (every_move (r.act t)) (decide_eq_true (r.step t))))⟩
+Parting.lean	591	and_both	bool_of_and_true	code	| ⟨x, inside, both⟩ => match anyOf_true (and_both both).2 with
+Parting.lean	602	and_both	bool_of_and_true	code	((congrArg reg (follows 0)).trans (of_decide_eq_true (and_both both).1)),
+Parting.lean	703	Identification.not_ne_bool	ListTests.not_ne_self	code	match Learning.diagonal_misses pred Identification.not_ne_bool false right with
+Parting.lean	718	Identification.not_ne_bool	ListTests.not_ne_self	code	| ⟨_, _, _, lasso⟩ => Learning.diagonal_not_lasso Identification.not_ne_bool false lasso⟩
+PlaceTransitionNets.lean	196	ExchangeLaw.sub_add_back	Naturals.sub_add_cancel	code	(congrArg (· + g) (ExchangeLaw.sub_add_back le))
+PlaceTransitionNets.lean	206	ExchangeLaw.sub_add_back	Naturals.sub_add_cancel	code	(congrArg (u * ·) (ExchangeLaw.sub_add_back le)).symm.trans (Nat.left_distrib u (M - k) k)
+PlaceTransitionNets.lean	209	ExchangeLaw.add_sub_same	Naturals.add_sub_cancel	code	((ExchangeLaw.add_sub_same (u * (M - k) + u * g) (u * k)).trans
+PlaceTransitionNets.lean	611	mem_append_cases'	mem_append_cases	code	⟨fun mem => match mem_append_cases' mem with
+PlaceTransitionNets.lean	623	exists_of_mem_map	preimage_of_mem_map	code	fun mem => match exists_of_mem_map mem with
+PlaceTransitionNets.lean	627	exists_of_mem_map	preimage_of_mem_map	code	fun mem => match exists_of_mem_map mem with
+PlaceTransitionNets.lean	678	exists_of_mem_map	preimage_of_mem_map	code	fun _ inside outside => match exists_of_mem_map inside with
+PlaceTransitionNets.lean	681	mem_append_left'	mem_append_of_left	code	| .inl f => ⟨fun _ => mem_append_left' _ (mem_map_of (every f)), fun _ => trivial⟩
+PlaceTransitionNets.lean	682	mem_append_right'	mem_append_of_right	code	| .inr p => ⟨fun positive => mem_append_right' _
+PlaceTransitionNets.lean	684	mem_append_cases'	mem_append_cases	code	fun mem => match mem_append_cases' mem with
+PlaceTransitionNets.lean	709	exists_of_mem_map	preimage_of_mem_map	code	fun cs t distinct' closed _ present => match exists_of_mem_map present with
+PlaceTransitionNets.lean	725	exists_of_mem_map	preimage_of_mem_map	code	match exists_of_mem_map present, c with
+PlaceTransitionNets.lean	792	bools_every	ListTests.mem_bools	code	⟨cycle_fires.world_balanced one, world_counted bools_distinct bools_every bools_distinct bools_every,
+PlaceTransitionNets.lean	792	bools_every	ListTests.mem_bools	code	⟨cycle_fires.world_balanced one, world_counted bools_distinct bools_every bools_distinct bools_every,
+PlaceTransitionNets.lean	793	bools_every	ListTests.mem_bools	code	world_embodied, world_enclosed bools_distinct bools_every⟩
+PlaceTransitionNets.lean	799	bools_every	ListTests.mem_bools	code	((dissipative_iff bools_distinct bools_every).mp dissipative 0 true (.head _))
+Population.lean	153	length_append	ListTests.length_append	code	(congrArg List.length split).trans ((length_append p (b :: q)).trans
+Population.lean	154	length_append	ListTests.length_append	code	((Nat.add_succ _ _).trans (congrArg Nat.succ (length_append p q).symm)))
+Population.lean	181	length_append	ListTests.length_append	code	(congrArg List.length split).trans ((length_append p (a :: r)).trans
+Population.lean	182	length_append	ListTests.length_append	code	((Nat.add_succ _ _).trans (congrArg Nat.succ (length_append p r).symm)))
+Prelude.lean	96	mul_regroup	mul_assoc_nat	code	(mul_regroup a b c).symm.trans ((congrArg (· * c) (Nat.mul_comm a b)).trans (mul_regroup b a c))
+Prelude.lean	96	mul_regroup	mul_assoc_nat	code	(mul_regroup a b c).symm.trans ((congrArg (· * c) (Nat.mul_comm a b)).trans (mul_regroup b a c))
+Premises.lean	354	Shuttle.every	ListTests.mem_bools	code	(fun _ => Finite.counted (w := draining) ⟨[true, false], Shuttle.distinct, Shuttle.every⟩)
+Propagation.lean	142	sub_zero_of_le	sub_eq_zero_of_le	code	(congrArg (a + m - a + ·) (sub_zero_of_le (Nat.le_add_right a m))).trans
+Propagation.lean	143	add_sub_self_left	Naturals.add_sub_cancel_left	code	((Nat.add_zero _).trans (add_sub_self_left a m))
+Propagation.lean	156	sub_zero_of_le	sub_eq_zero_of_le	code	(Nat.le_of_eq ((congrArg (· + (b - a)) (sub_zero_of_le le)).trans (Nat.zero_add _)))
+Propagation.lean	160	sub_zero_of_le	sub_eq_zero_of_le	code	(Nat.le_of_eq ((congrArg ((a - b) + ·) (sub_zero_of_le le)).trans (Nat.add_zero _)))
+Propagation.lean	440	Propagation.mem_append_cases	mem_append_cases	code	match Propagation.mem_append_cases mem with
+Propagation.lean	1098	Propagation.add_congr	Naturals.add_congr	code	refine Eq.trans ?_ (Propagation.add_congr (carried_succ t c).symm (carried_succ t c).symm)
+Propagation.lean	1099	Propagation.add_congr	Naturals.add_congr	code	refine (Propagation.add_congr (ih t (Nat.le_refl t) c) ((total_congr_on each).trans
+Reading.lean	296	add_sub_same	Naturals.add_sub_cancel	code	((add_sub_same _ _).trans (responsive_levels t c))
+Reading.lean	303	add_sub_same	Naturals.add_sub_cancel	code	((add_sub_same _ _).trans (unresponsive_levels t c))
+ReferencePlan.lean	168	ExchangeLaw.sub_add_back	Naturals.sub_add_cancel	code	exact ⟨ExchangeLaw.sub_add_back enough, rfl⟩
+Regulation.lean	92	sub_zero_of_le	sub_eq_zero_of_le	code	(congrArg ((x - m) + ·) (sub_zero_of_le le)).trans (Nat.add_zero _)
+Regulation.lean	96	sub_zero_of_le	sub_eq_zero_of_le	code	(congrArg (· + (m - x)) (sub_zero_of_le le)).trans (Nat.zero_add _)
+Regulation.lean	135	sub_zero_of_le	sub_eq_zero_of_le	code	Nat.le_trans giving (Nat.le_of_eq ((congrArg (k + ·) (sub_zero_of_le mx)).trans
+Regulation.lean	147	sub_zero_of_le	sub_eq_zero_of_le	code	Nat.le_trans taking (Nat.le_of_eq ((congrArg (g + ·) (sub_zero_of_le xm)).trans
+Regulation.lean	589	add_sub_self_left	Naturals.add_sub_cancel_left	code	(congrArg (· - y) y_eq.symm).trans (add_sub_self_left y (q - p))
+Regulation.lean	595	sub_zero_of_le	sub_eq_zero_of_le	code	(sub_zero_of_le (Nat.le_trans (Nat.le_add_right x (p - q)) (Nat.le_of_eq x_eq))).trans
+Regulation.lean	596	sub_zero_of_le	sub_eq_zero_of_le	code	(sub_zero_of_le qp).symm
+Regulation.lean	825	sub_zero_of_le	sub_eq_zero_of_le	code	| .inr over => absurd ((sub_zero_of_le over ▸ pos : 0 < 0)) (Nat.lt_irrefl 0))
+Regulation.lean	854	sub_zero_of_le	sub_eq_zero_of_le	code	((Nat.zero_add e.2).symm.trans (congrArg (· + e.2) (sub_zero_of_le le).symm)))
+Regulation.lean	855	sub_zero_of_le	sub_eq_zero_of_le	code	| .inr le => (congrArg (· + e.1) (sub_zero_of_le le)).trans ((Nat.zero_add e.1).trans
+Regulation.lean	870	add_sub_self_left	Naturals.add_sub_cancel_left	code	((congrArg (· - (ℓ + 1)) (Nat.add_comm n (ℓ + 1))).trans (add_sub_self_left (ℓ + 1) n)))
+Regulation.lean	1698	add_mul'	add_mul_split	code	((congrArg (x₀ + ·) ((add_mul' ℓ (k + 1) M).trans (Nat.add_comm _ _))).trans
+Regulation.lean	1752	add_mul'	add_mul_split	code	rw [add_mul', Nat.succ_mul]
+Regulation.lean	1887	add_sub_self_left	Naturals.add_sub_cancel_left	code	(congrArg (· - ℓ) (Nat.add_comm t ℓ)).trans (add_sub_self_left ℓ t)
+Remainder.lean	180	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr first.symm second.symm))
+Remainder.lean	186	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr (carriedGive_of_rest hp).symm (carriedGive_of_rest hp).symm)))
+Remainder.lean	196	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr (carriedFrom_add l m t c)
+RenewalFlow.lean	153	sub_eq_zero_of_le	sub_eq_zero_of_le	code	((if_pos fOn).trans (sub_eq_zero_of_le more)))) (Nat.lt_irrefl 0)⟩
+Resolution.lean	376	mul_regroup	mul_assoc_nat	code	_ = p * B * R (T + n) := (mul_regroup p B _).symm)
+Resolution.lean	854	mul_regroup	mul_assoc_nat	code	(congrArg (· + p * L.replenishment cs t) (mul_regroup p q _)).trans
+Resolution.lean	857	mul_regroup	mul_assoc_nat	code	_ = p * q * (r t * W.stock cs t) := (mul_regroup p q _).symm
+Resolution.lean	942	mul_regroup	mul_assoc_nat	code	(congrArg (· + p * L.uptake cs t) (mul_regroup p (q + 1) _)).trans
+Resolution.lean	946	mul_regroup	mul_assoc_nat	code	_ = p * (q + 1) * (r t * W.stock cs t) := (mul_regroup p (q + 1) _).symm
+Resolution.lean	961	mul_regroup	mul_assoc_nat	code	(Nat.le_of_eq (mul_regroup p (q + 1) _).symm)
+Resolution.lean	1084	mul_regroup	mul_assoc_nat	code	congrArg (R (t + 1) + ·) (mul_regroup p (q + 1) _)
+Resolution.lean	1090	mul_regroup	mul_assoc_nat	code	(add_mul_split q 1 _).symm))).trans (mul_regroup p (q + 1) _).symm)
+Resolution.lean	1120	mul_regroup	mul_assoc_nat	code	(congrArg (· + p * L.uptake cs t) (mul_regroup p (q + 1) _)).trans
+Resolution.lean	1124	mul_regroup	mul_assoc_nat	code	_ = p * (q + 1) * (r t * W.stock cs t) := (mul_regroup p (q + 1) _).symm
+Resolution.lean	1211	mul_regroup	mul_assoc_nat	code	(Nat.le_of_eq (mul_regroup p q _).symm)
+Resolution.lean	1265	mul_regroup	mul_assoc_nat	code	(Nat.le_of_eq (mul_regroup p (q + 1) _).symm)
+Resolution.lean	1408	mul_regroup	mul_assoc_nat	code	| t + 1 => (congrArg (4 * ·) (quarter_eq t)).trans ((mul_regroup 2 2 _).trans
+Resolution.lean	1410	mul_regroup	mul_assoc_nat	code	(mul_regroup 2 (halving t) (2 * halving t)).symm))
+Resolution.lean	1456	mul_regroup	mul_assoc_nat	code	(congrArg (· + _) (mul_regroup _ _ _).symm).trans (add_mul_split _ _ _).symm
+Resolution.lean	1969	Shuttle.every	ListTests.mem_bools	code	Flow.enclosed_of_finite Shuttle.distinct Shuttle.every t
+Resolution.lean	1987	Shuttle.every	ListTests.mem_bools	code	Nat.le_trans (total_le_of_support distinct fun c _ _ => Shuttle.every c)
+Resolution.lean	2120	add_eq	Naturals.add_congr	code	(add_eq (quarter_eq t).symm (Nat.mul_one _))))
+Resolution.lean	2126	add_eq	Naturals.add_congr	code	(add_eq ((mul_turn _ _ _).trans (congrArg (2 * ·) (quarter_eq t).symm))
+Resolution.lean	2128	mul_regroup	mul_assoc_nat	code	((Nat.left_distrib _ _ _).trans (congrArg (· + 2 * halving t) (mul_regroup 2 2 _).symm)))
+Resolution.lean	2139	add_eq	Naturals.add_congr	code	add_eq (congrArg (side (t + 1) c * ·) (parts_given t).symm)
+Resolution.lean	2142	add_eq	Naturals.add_congr	code	(Nat.add_comm _ _).trans (add_eq (mul_turn _ _ _)
+Resolution.lean	2253	mul_regroup	mul_assoc_nat	code	(congrArg (· + 2) (mul_regroup 2 2 h).symm))).trans
+Resolution.lean	2271	add_eq	Naturals.add_congr	code	(add_eq (Nat.one_mul h).symm (Nat.one_mul h).symm).trans (add_mul_split 1 1 h).symm
+Resolution.lean	2282	mul_regroup	mul_assoc_nat	code	((mul_turn p 2 _).trans ((mul_regroup 2 p _).symm.trans
+Resolution.lean	2295	mul_regroup	mul_assoc_nat	code	(Nat.le_of_eq (mul_regroup 2 2 _)))
+Resolution.lean	2487	mul_regroup	mul_assoc_nat	code	(mul_regroup _ _ _).symm))))).trans
+ResponseLearning.lean	245	exists_add_of_le	exists_add_of_le	code	obtain ⟨m, rfl⟩ := exists_add_of_le enough
+Roles.lean	1273	every	ListTests.mem_bools	code	fun _ _ _ c outside => absurd (every c) outside,
+Roles.lean	1277	every	ListTests.mem_bools	code	(fun _ _ c outside => absurd (every c) outside) true (.head _))⟩
+Routes.lean	186	Loops.add_mul_nat	add_mul_split	code	(Nat.le_of_eq (Loops.add_mul_nat _ _ _).symm)))
+Routes.lean	197	Loops.add_mul_nat	add_mul_split	code	(Nat.le_of_eq (Loops.add_mul_nat _ _ _).symm))
+Routes.lean	218	Propagation.add_congr	Naturals.add_congr	code	((Propagation.add_congr ((Nat.one_mul _).trans (within_eq M (j + 1) n))
+Routes.lean	346	ble_false_of_lt	Naturals.ble_false_of_lt	code	(ble_false_of_lt (Nat.lt_of_lt_of_le (Nat.lt_succ_self τ)
+Routes.lean	411	Propagation.add_congr	Naturals.add_congr	code	(Propagation.add_congr (carriedFrom_eq_routes l τ (Nat.le_of_succ_le le) c)
+Routes.lean	417	Loops.add_mul_nat	add_mul_split	code	(Loops.add_mul_nat (responseWeight part k present τ c s d)
+Routes.lean	436	Propagation.add_congr	Naturals.add_congr	code	(Routes.transfer_unit _ _ _ n _).trans (Propagation.add_congr
+RuleCapture.lean	398	mul_right_comm_nat	Naturals.mul_right_comm	code	= x.carrier * y.other * z.other := mul_right_comm_nat _ _ _
+RuleCapture.lean	400	mul_right_comm_nat	Naturals.mul_right_comm	code	_ = y.carrier * z.other * x.other := mul_right_comm_nat _ _ _
+RuleCapture.lean	402	mul_right_comm_nat	Naturals.mul_right_comm	code	_ = z.carrier * x.other * y.other := mul_right_comm_nat _ _ _) y.other_pos
+RuleCapture.lean	420	mul_right_comm_nat	Naturals.mul_right_comm	code	_ = x.carrier * g.carrier * x.other := mul_right_comm_nat _ _ _
+RuleCapture.lean	428	mul_right_comm_nat	Naturals.mul_right_comm	code	_ = x.carrier * g.carrier * x.other := mul_right_comm_nat _ _ _
+RuleCapture.lean	433	mul_right_comm_nat	Naturals.mul_right_comm	code	= x.carrier * x.other * g.carrier := mul_right_comm_nat _ _ _
+RuleCapture.lean	457	mul_mul_mul_comm_nat	Naturals.mul_mul_mul_comm	code	= x.carrier * y.other * (g.carrier * g'.other) := mul_mul_mul_comm_nat _ _ _ _
+RuleCapture.lean	459	mul_mul_mul_comm_nat	Naturals.mul_mul_mul_comm	code	_ = y.carrier * g'.carrier * (x.other * g.other) := mul_mul_mul_comm_nat _ _ _ _
+RuleCapture.lean	691	mul_right_comm_nat	Naturals.mul_right_comm	code	exact ⟨mul_right_comm_nat _ _ _, r2⟩
+RuleHandoff.lean	177	and_right	ListTests.and_right	code	exact ⟨and_right (and_left cond), and_right cond⟩
+RuleHandoff.lean	177	and_left	ListTests.and_left	code	exact ⟨and_right (and_left cond), and_right cond⟩
+RuleHandoff.lean	177	and_right	ListTests.and_right	code	exact ⟨and_right (and_left cond), and_right cond⟩
+RuleHandoff.lean	422	none_ne_some	ListTests.none_ne_some	code	fun ⟨_, path⟩ => none_ne_some (low_support_cannot_revise.symm.trans (trace_iff_run.mp path))
+RuleHandoff.lean	430	none_ne_some	ListTests.none_ne_some	code	fun ⟨_, step⟩ => none_ne_some (office_without_review_fails.symm.trans step)
+RuleHandoff.lean	473	none_ne_some	ListTests.none_ne_some	code	none_ne_some ((if_neg fails).symm.trans
+RuleHandoff.lean	506	none_ne_some	ListTests.none_ne_some	code	fun ⟨_, next⟩ => none_ne_some (copied_rule_without_participation_fails.2.symm.trans next)⟩
+RuleHandoff.lean	518	none_ne_some	ListTests.none_ne_some	code	fun ⟨_, path⟩ => none_ne_some (enabling_one_operation_need_not_enable_revision.2.symm.trans
+RuleHandoff.lean	560	bool_eq_of_iff	bool_eq_of_iff	code	⟨f, bool_eq_of_iff (atFormed.trans integrate_enabled_iff),
+RuleHandoff.lean	561	bool_eq_of_iff	bool_eq_of_iff	code	bool_eq_of_iff (atRevised.trans integrate_enabled_iff)⟩
+ScoreRepresentation.lean	81	succ_ne_zero	Naturals.succ_ne_zero	code	| .basic, (zero : k + 1 = 0) => absurd zero (succ_ne_zero k)
+ScoreRepresentation.lean	95	succ_ne_zero	Naturals.succ_ne_zero	code	| 0, k + 1 => ⟨fun _ => .inl ⟨rfl, succ_ne_zero k⟩,
+ScoreRepresentation.lean	96	succ_ne_zero	Naturals.succ_ne_zero	code	fun _ => Above.anchor (fun _ _ => rfl) () rfl (succ_ne_zero k)⟩
+ScoreRepresentation.lean	97	succ_ne_zero	Naturals.succ_ne_zero	code	| m + 1, 0 => ⟨fun above => absurd above (Above.no_trade () rfl (succ_ne_zero m)),
+ScoreRepresentation.lean	98	succ_ne_zero	Naturals.succ_ne_zero	code	fun | .inl ⟨no, _⟩ => absurd no (succ_ne_zero m) | .inr ⟨no, _⟩ => absurd rfl no⟩
+ScoreRepresentation.lean	101	succ_ne_zero	Naturals.succ_ne_zero	code	| .inl ⟨_, notBack⟩ => absurd (fun _ held => absurd held (succ_ne_zero m)) notBack
+ScoreRepresentation.lean	102	succ_ne_zero	Naturals.succ_ne_zero	code	| .inr ⟨_, _, ⟨_, notBack⟩⟩ => .inr ⟨succ_ne_zero k, match Nat.lt_or_ge (k + 1) (m + 1) with
+ScoreRepresentation.lean	106	succ_ne_zero	Naturals.succ_ne_zero	code	| .inl ⟨no, _⟩ => absurd no (succ_ne_zero m)
+ScoreRepresentation.lean	107	succ_ne_zero	Naturals.succ_ne_zero	code	| .inr ⟨_, lt⟩ => .inr ⟨fun _ held => absurd held (succ_ne_zero k),
+ScoreRepresentation.lean	108	succ_ne_zero	Naturals.succ_ne_zero	code	fun _ held => absurd held (succ_ne_zero m),
+ScoreRepresentation.lean	120	succ_ne_zero	Naturals.succ_ne_zero	code	| m + 1, _ => Above.no_trade () rfl (succ_ne_zero m)
+ScoreRepresentation.lean	197	succ_ne_zero	Naturals.succ_ne_zero	code	| 0, k + 1 => ⟨fun _ => (above_iff 0 (k + 1)).mpr (.inl ⟨rfl, succ_ne_zero k⟩),
+ScoreRepresentation.lean	209	succ_ne_zero	Naturals.succ_ne_zero	code	⟨fun | .inl ⟨no, _⟩ => absurd no (succ_ne_zero m) | .inr ⟨_, lt⟩ => lt,
+ScoreRepresentation.lean	210	succ_ne_zero	Naturals.succ_ne_zero	code	fun lt => .inr ⟨succ_ne_zero k, lt⟩⟩).symm
+SharedCodes.lean	1251	not_not	ListTests.not_not	code	theorem start_symmetric : Relabels not (fun _ => not) start start := fun i _ => (not_not i).symm
+SharedCodes.lean	1449	beq_self	beq_self	code	fun e => ⟨rfl, beq_self e, fun n ne => show Nat.beq n e = false from
+SituationTraces.lean	62	FinerTraces.mem_append_split	mem_append_cases	code	⟨fun mem => match FinerTraces.mem_append_split mem with
+SituationTraces.lean	72	FinerTraces.of_mem_map	preimage_of_mem_map	code	⟨fun mem => match FinerTraces.of_mem_map mem with
+SituationTraces.lean	136	FinerTraces.of_mem_map	preimage_of_mem_map	code	(fun _ _ _ ina inb => match FinerTraces.of_mem_map ina, FinerTraces.of_mem_map inb with
+SituationTraces.lean	136	FinerTraces.of_mem_map	preimage_of_mem_map	code	(fun _ _ _ ina inb => match FinerTraces.of_mem_map ina, FinerTraces.of_mem_map inb with
+SituationTraces.lean	145	FinerTraces.of_mem_map	preimage_of_mem_map	code	(fun _ _ _ ina inb => match FinerTraces.of_mem_map ina, FinerTraces.of_mem_map inb with
+SituationTraces.lean	145	FinerTraces.of_mem_map	preimage_of_mem_map	code	(fun _ _ _ ina inb => match FinerTraces.of_mem_map ina, FinerTraces.of_mem_map inb with
+SituationTraces.lean	161	FinerTraces.of_mem_map	preimage_of_mem_map	code	(fun _ _ _ inx iny => match FinerTraces.of_mem_map inx, FinerTraces.of_mem_map iny with
+SituationTraces.lean	161	FinerTraces.of_mem_map	preimage_of_mem_map	code	(fun _ _ _ inx iny => match FinerTraces.of_mem_map inx, FinerTraces.of_mem_map iny with
+Space.lean	359	Shuttle.every	ListTests.mem_bools	code	⟨[true, false], Shuttle.distinct, Shuttle.every⟩
+Space.lean	418	Shuttle.every	ListTests.mem_bools	code	⟨[true, false], Shuttle.distinct, Shuttle.every⟩
+Space.lean	514	Shuttle.every	ListTests.mem_bools	code	⟨⟨[true, false], Shuttle.distinct, Shuttle.every⟩, shuttle_arising,
+Space.lean	976	Shuttle.every	ListTests.mem_bools	code	⟨⟨[true, false], Shuttle.distinct, Shuttle.every⟩, shuttle_arising,
+Space.lean	981	Shuttle.every	ListTests.mem_bools	code	fun t => ⟨fun _ _ c outside => absurd (Shuttle.every c) outside, Leaking.takes t⟩⟩
+StrengthFlows.lean	76	Propagation.add_congr	Naturals.add_congr	code	Propagation.add_congr
+Tail.lean	305	Tail.false_of_not_true	ListTests.false_of_not_true	code	fun stays N => Tail.false_of_not_true fun yes => stays ⟨N, vanishesFrom_true decides yes⟩⟩
+Tail.lean	469	Tail.false_of_not_true	ListTests.false_of_not_true	code	eq ▸ Tail.eq_zero_of_nonzero_false (Tail.false_of_not_true fun yes =>
+Tail.lean	485	Tail.false_of_not_eq_true	ListTests.false_of_not	code	| ⟨N, yes⟩ => ⟨N, raisedFrom_false decides (Tail.false_of_not_eq_true yes)⟩)
+Tail.lean	487	Tail.not_eq_true_of_false	ListTests.not_eq_true_of_false	code	isFalse fun ⟨N, zero⟩ => loud ⟨N, Tail.not_eq_true_of_false (raisedFrom_of decides zero)⟩
+Tail.lean	496	Tail.false_of_not_true	ListTests.false_of_not_true	code	| isFalse absent => isTrue fun n => Tail.false_of_not_true fun yes => absent ⟨n, yes⟩
+Tail.lean	505	Tail.false_of_not_true	ListTests.false_of_not_true	code	| isFalse absent => .inr fun n => Tail.false_of_not_true fun yes => absent ⟨n, yes⟩
+Thresholds.lean	579	Loops.beq_self	beq_self	code	rw [Loops.beq_self]
+Thresholds.lean	654	Closing.ble_false_of_lt	Naturals.ble_false_of_lt	code	rw [Closing.ble_false_of_lt below]
+TypicalRuns.lean	63	FinerTraces.mem_append_split	mem_append_cases	code	match FinerTraces.mem_append_split mem with
+TypicalRuns.lean	69	FinerTraces.mem_append_split	mem_append_cases	code	match FinerTraces.mem_append_split mem with
+Typicality.lean	251	left_comm	mul_turn	code	rw [Nat.mul_add, mul_assoc_nat, mul_assoc_nat, left_comm p W a]
+Typicality.lean	260	left_comm	mul_turn	code	rw [← mul_assoc_nat p q, left_comm q p, ← mul_assoc_nat p q,
+Typicality.lean	261	left_comm	mul_turn	code	left_comm p 2 (q * y), ← mul_assoc_nat p q y, left_comm 2 (p * q) y,
+Typicality.lean	261	left_comm	mul_turn	code	left_comm p 2 (q * y), ← mul_assoc_nat p q y, left_comm 2 (p * q) y,
+Typicality.lean	262	left_comm	mul_turn	code	left_comm q 2 (p * x), left_comm q p x, ← mul_assoc_nat p q x,
+Typicality.lean	262	left_comm	mul_turn	code	left_comm q 2 (p * x), left_comm q p x, ← mul_assoc_nat p q x,
+Typicality.lean	263	left_comm	mul_turn	code	left_comm 2 (p * q) x,
+Typicality.lean	298	left_comm	mul_turn	code	left_comm (p * q) (p + q), left_comm (p + q) n, Nat.succ_mul]
+Typicality.lean	298	left_comm	mul_turn	code	left_comm (p * q) (p + q), left_comm (p + q) n, Nat.succ_mul]
+Typicality.lean	355	Identification.le_of_add_right	le_of_add_le_add_right	code	Identification.le_of_add_right (total (courses n) (fun w => weight p q w * cross p q w))
+Typicality.lean	377	left_comm	mul_turn	code	rw [weight_pow p q w, Nat.mul_comm (q ^ zeros w) q, left_comm]
+Typicality.lean	380	left_comm	mul_turn	code	rw [mul_assoc_nat, left_comm b c d, ← mul_assoc_nat]
+Typicality.lean	399	pow_add_nat	Naturals.pow_add	code	rw [at_a, pow_add_nat u k e, Nat.add_assoc, pow_add_nat v k (e + b), pow_add_nat v e b,
+Typicality.lean	399	pow_add_nat	Naturals.pow_add	code	rw [at_a, pow_add_nat u k e, Nat.add_assoc, pow_add_nat v k (e + b), pow_add_nat v e b,
+Typicality.lean	399	pow_add_nat	Naturals.pow_add	code	rw [at_a, pow_add_nat u k e, Nat.add_assoc, pow_add_nat v k (e + b), pow_add_nat v e b,
+Units.lean	334	two_mul_eq	Naturals.two_mul	code	fun _ _ => (two_mul_eq (double t)).symm, fun _ mem => nomatch mem⟩
+Units.lean	341	two_mul_eq	Naturals.two_mul	code	have even : double (t + 1) = 2 * double t := (two_mul_eq (double t)).symm
+Viability.lean	266	none_ne_some	ListTests.none_ne_some	code	exact absurd moved none_ne_some
+WeightedTraces.lean	134	bool_eq_of_iff	bool_eq_of_iff	code	fun iff => bool_eq_of_iff ((reach n g s).trans (iff.trans (reach n g s').symm))⟩
+WeightedTraces.lean	152	bool_eq_of_iff	bool_eq_of_iff	code	Memory.not_of_steps step (fun _ => true) fun a b => bool_eq_of_iff
+CrossSituational.lean:237	and_eq_true.mp	ListTests.and_true_iff.mp
+CrossSituational.lean:242	and_eq_true.mpr	ListTests.and_true_iff.mpr
+OrderNormal.lean:543	band_true_iff.trans	ListTests.and_true_iff.trans
+OrderNormal.lean:559	band_true_iff.trans	ListTests.and_true_iff.trans
+OrderNormal.lean:862	band_true_iff.trans	ListTests.and_true_iff.trans
+OrderNormal.lean:1284	not_eq_true_iff.trans	ListTests.not_true_iff.trans
+OrderNormal.lean:1297	not_eq_true_iff.mp	ListTests.not_true_iff.mp
+OrderNormal.lean:1328	not_eq_true_iff.mp	ListTests.not_true_iff.mp
+OrderNormal.lean:1329	not_eq_true_iff.mpr	ListTests.not_true_iff.mpr
+OrderNormal.lean:1369	band_true_iff.trans	ListTests.and_true_iff.trans
+OrderNormal.lean:1372	not_eq_true_iff.mp	ListTests.not_true_iff.mp
+OrderNormal.lean:1373	not_eq_true_iff.mp	ListTests.not_true_iff.mp
+OrderNormal.lean:1374	not_eq_true_iff.mpr	ListTests.not_true_iff.mpr
+OrderNormal.lean:1377	not_eq_true_iff.mpr	ListTests.not_true_iff.mpr

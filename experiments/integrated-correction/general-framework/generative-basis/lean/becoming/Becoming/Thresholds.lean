@@ -576,7 +576,7 @@ theorem strength_pos {N t k : Nat} (within : (law (N + 1)).RespondsWithin t () t
         rfl
       | true => exact absurd ⟨Nat.eq_of_beq_eq_true hb, rfl⟩ off)
   have lower : (bif true && Nat.beq t t then N else N + 1) = N := by
-    rw [Loops.beq_self]
+    rw [beq_self]
     rfl
   have lhs : (law (N + 1)).exchangeGap t () true (fun _ _ => N + 1)
       (fun s e => bif e && Nat.beq s t then N else N + 1) = 1 := by
@@ -651,7 +651,7 @@ theorem diverges_at_break {N T : Nat} {L L' : Flow Unit Bool} {W W' : Web Unit B
     show L.give T () false + 0 = 0
     rw [(follows () rfl T false).2]
     show cond (Nat.ble (N + 1) (W.level T true)) 1 0 + 0 = 0
-    rw [Closing.ble_false_of_lt below]
+    rw [Naturals.ble_false_of_lt below]
     rfl
   have gives' : L'.given T false = 1 := by
     show total (L'.present T) (fun f => L'.give T f false) = 1

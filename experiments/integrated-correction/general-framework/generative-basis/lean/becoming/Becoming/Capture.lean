@@ -56,13 +56,6 @@ universe u v
 
 /-! ## A target's share among descendants -/
 
-/-- Multiplication of natural numbers associates, proved by recursion; the prelude's
-`Nat.mul_assoc` uses `propext`. -/
-theorem mul_assoc_nat : ∀ a b c : Nat, a * b * c = a * (b * c)
-  | _, _, 0 => rfl
-  | a, b, c + 1 => (Nat.mul_succ (a * b) c).trans ((congrArg (· + a * b) (mul_assoc_nat a b c)).trans
-      ((Nat.mul_add a (b * c) b).symm.trans (congrArg (a * ·) (Nat.mul_succ b c).symm)))
-
 section Share
 
 variable {α : Type}

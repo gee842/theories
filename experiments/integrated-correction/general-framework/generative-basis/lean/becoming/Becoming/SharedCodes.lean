@@ -1247,12 +1247,8 @@ namespace TwoFormations
 /-- Each formation gives the sense its own name as form: they disagree. -/
 def start : Bool → Unit → Bool := fun i _ => i
 
-theorem not_not : ∀ b : Bool, (!!b) = b
-  | false => rfl
-  | true => rfl
-
 /-- The start is symmetric under exchanging the formations together with the forms. -/
-theorem start_symmetric : Relabels not (fun _ => not) start start := fun i _ => (not_not i).symm
+theorem start_symmetric : Relabels not (fun _ => not) start start := fun i _ => (ListTests.not_not i).symm
 
 /-- **The order of exchange decides the form.** Along every run of hearing from the start, the
 formation `false` hearing `true` first brings both to `true`; `true` hearing `false` first brings
@@ -1448,10 +1444,6 @@ namespace Gloss
 def offersOne (r m : Nat) : Bool := Nat.beq m r
 
 def rep : List Nat := [0, 1]
-
-theorem beq_self : ∀ n : Nat, Nat.beq n n = true
-  | 0 => rfl
-  | n + 1 => beq_self n
 
 theorem exact : WritesExactly (fun _ : Nat => true) offersOne id :=
   fun e => ⟨rfl, beq_self e, fun n ne => show Nat.beq n e = false from

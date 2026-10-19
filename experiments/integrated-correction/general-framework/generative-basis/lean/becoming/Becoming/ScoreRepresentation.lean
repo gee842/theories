@@ -59,8 +59,6 @@ def frame : Frame Nat Unit Claim := ⟨⟨fun _ _ _ => False⟩, realized⟩
 def protect (k : Nat) (_ : Unit) : Prop := k = 0
 def gain (k : Nat) (i : Nat) : Prop := i < k
 
-theorem succ_ne_zero (k : Nat) : k + 1 ≠ 0 := fun same => Nat.noConfusion same
-
 /-- A generative extension starts past the protected alternative and adds gains. -/
 theorem extension_shape {a b : Nat} (extension : Extension frame living a b) : 1 ≤ a ∧ a < b :=
   match extension with
@@ -80,7 +78,7 @@ theorem extension_shape {a b : Nat} (extension : Extension frame living a b) : 1
 /-- **Past the protected alternative, one more gain extends.** -/
 theorem successor_extends (k : Nat) : Extension frame living (k + 1) (k + 1 + 1) :=
   ⟨fun c held => match c, held with
-    | .basic, (zero : k + 1 = 0) => absurd zero (succ_ne_zero k)
+    | .basic, (zero : k + 1 = 0) => absurd zero (Naturals.succ_ne_zero k)
     | .gain _, (lt : _ < k + 1) => Nat.lt_succ_of_lt lt,
    .gain (k + 1), True.intro, Nat.lt_succ_self (k + 1), Nat.lt_irrefl (k + 1)⟩
 
@@ -94,20 +92,20 @@ alternatives losing protection more gains are above. -/
 theorem above_iff : ∀ a b : Nat, Above protect gain a b ↔ (a = 0 ∧ b ≠ 0) ∨ (b ≠ 0 ∧ b < a)
   | 0, 0 => ⟨fun above => absurd above (Above.irrefl 0),
       fun | .inl ⟨_, no⟩ => absurd rfl no | .inr ⟨no, _⟩ => absurd rfl no⟩
-  | 0, k + 1 => ⟨fun _ => .inl ⟨rfl, succ_ne_zero k⟩,
-      fun _ => Above.anchor (fun _ _ => rfl) () rfl (succ_ne_zero k)⟩
-  | m + 1, 0 => ⟨fun above => absurd above (Above.no_trade () rfl (succ_ne_zero m)),
-      fun | .inl ⟨no, _⟩ => absurd no (succ_ne_zero m) | .inr ⟨no, _⟩ => absurd rfl no⟩
+  | 0, k + 1 => ⟨fun _ => .inl ⟨rfl, Naturals.succ_ne_zero k⟩,
+      fun _ => Above.anchor (fun _ _ => rfl) () rfl (Naturals.succ_ne_zero k)⟩
+  | m + 1, 0 => ⟨fun above => absurd above (Above.no_trade () rfl (Naturals.succ_ne_zero m)),
+      fun | .inl ⟨no, _⟩ => absurd no (Naturals.succ_ne_zero m) | .inr ⟨no, _⟩ => absurd rfl no⟩
   | m + 1, k + 1 =>
     ⟨fun above => match above with
-      | .inl ⟨_, notBack⟩ => absurd (fun _ held => absurd held (succ_ne_zero m)) notBack
-      | .inr ⟨_, _, ⟨_, notBack⟩⟩ => .inr ⟨succ_ne_zero k, match Nat.lt_or_ge (k + 1) (m + 1) with
+      | .inl ⟨_, notBack⟩ => absurd (fun _ held => absurd held (Naturals.succ_ne_zero m)) notBack
+      | .inr ⟨_, _, ⟨_, notBack⟩⟩ => .inr ⟨Naturals.succ_ne_zero k, match Nat.lt_or_ge (k + 1) (m + 1) with
           | .inl lt => lt
           | .inr ge => absurd (fun _ held => Nat.lt_of_lt_of_le held ge) notBack⟩,
      fun
-      | .inl ⟨no, _⟩ => absurd no (succ_ne_zero m)
-      | .inr ⟨_, lt⟩ => .inr ⟨fun _ held => absurd held (succ_ne_zero k),
-          fun _ held => absurd held (succ_ne_zero m),
+      | .inl ⟨no, _⟩ => absurd no (Naturals.succ_ne_zero m)
+      | .inr ⟨_, lt⟩ => .inr ⟨fun _ held => absurd held (Naturals.succ_ne_zero k),
+          fun _ held => absurd held (Naturals.succ_ne_zero m),
           ⟨fun _ held => Nat.lt_trans held lt, fun back => Nat.lt_irrefl _ (back (k + 1) lt)⟩⟩⟩
 
 /-- **The lexical order satisfies C here.** `Comparison`'s `Better s t` says `t` is above. -/
@@ -119,7 +117,7 @@ theorem above_satisfies_comparison : Comparison frame living fun s t => Above pr
 number. -/
 theorem never_outranked : ∀ k, 0 < k → ¬ Above protect gain k 0
   | 0, pos => absurd pos (Nat.lt_irrefl 0)
-  | m + 1, _ => Above.no_trade () rfl (succ_ne_zero m)
+  | m + 1, _ => Above.no_trade () rfl (Naturals.succ_ne_zero m)
 
 /-- A scalar order: protection weighs `w`, each gain one. -/
 def weighted (w : Nat) : Nat → Nat
@@ -196,7 +194,7 @@ theorem cross_iff (k m : Nat) :
 /-- **The bounded score agrees with the lexical order on every pair of alternatives.** -/
 theorem ratio_agrees : ∀ a b : Nat, ratioBetter b a ↔ Above protect gain a b
   | 0, 0 => ⟨fun lt => absurd lt (Nat.lt_irrefl 1), fun above => absurd above (Above.irrefl 0)⟩
-  | 0, k + 1 => ⟨fun _ => (above_iff 0 (k + 1)).mpr (.inl ⟨rfl, succ_ne_zero k⟩),
+  | 0, k + 1 => ⟨fun _ => (above_iff 0 (k + 1)).mpr (.inl ⟨rfl, Naturals.succ_ne_zero k⟩),
       fun _ => by
         show (k + 1) * 1 < 1 * (k + 1 + 1)
         rw [Nat.mul_one, Nat.one_mul]
@@ -208,8 +206,8 @@ theorem ratio_agrees : ∀ a b : Nat, ratioBetter b a ↔ Above protect gain a b
       fun above => absurd above (never_outranked (m + 1) (Nat.zero_lt_succ m))⟩
   | m + 1, k + 1 => (cross_iff k m).trans
       ((above_iff (m + 1) (k + 1)).trans
-        ⟨fun | .inl ⟨no, _⟩ => absurd no (succ_ne_zero m) | .inr ⟨_, lt⟩ => lt,
-         fun lt => .inr ⟨succ_ne_zero k, lt⟩⟩).symm
+        ⟨fun | .inl ⟨no, _⟩ => absurd no (Naturals.succ_ne_zero m) | .inr ⟨_, lt⟩ => lt,
+         fun lt => .inr ⟨Naturals.succ_ne_zero k, lt⟩⟩).symm
 
 /-- **A bounded score satisfies C and never ranks gains above protection**: the exclusion above
 depends on natural-number values, and bounded sensitivity is not excluded here. -/

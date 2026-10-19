@@ -67,8 +67,6 @@ theorem le_iff {a b : Int} : a ≤ b ↔ Int.NonNeg (b + -a) := Iff.rfl
 
 theorem lt_iff {a b : Int} : a < b ↔ a + 1 ≤ b := Iff.rfl
 
-theorem sub_self (a : Int) : a + -a = 0 := add_right_neg a
-
 /-- `(c + -b) + (b + -a) = c + -a`. -/
 theorem sub_add_sub (a b c : Int) : c + -b + (b + -a) = c + -a := by
   rw [add_assoc, ← add_assoc (-b) b (-a), add_left_neg, zero_add]
@@ -99,7 +97,7 @@ theorem sub_add_cancel (a b : Int) : a + -b + b = a := by
 
 theorem le_refl (a : Int) : a ≤ a := by
   show Int.NonNeg (a + -a)
-  rw [sub_self]
+  rw [Integers.add_right_neg]
   exact nonneg_zero
 
 theorem le_trans {a b c : Int} (ab : a ≤ b) (bc : b ≤ c) : a ≤ c := by
@@ -112,7 +110,7 @@ theorem le_antisymm {a b : Int} (ab : a ≤ b) (ba : b ≤ a) : a = b :=
     rw [← neg_sub a b]
     exact ba
   have zero : b + -a = 0 := eq_zero_of_nonneg_neg ab back
-  (add_right_cancel (zero.trans (add_right_neg a).symm)).symm
+  (Integers.add_right_cancel (zero.trans (add_right_neg a).symm)).symm
 
 theorem lt_irrefl (a : Int) : ¬ a < a := fun h => not_nonneg_neg_one (by
   have h' : Int.NonNeg (a + -(a + 1)) := h

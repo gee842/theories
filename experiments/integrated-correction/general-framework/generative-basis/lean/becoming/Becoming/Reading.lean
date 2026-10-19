@@ -289,23 +289,18 @@ def unresponsive : ExchangeLaw Unit Unit :=
 /-- A need of one at every step. -/
 def needOne : Nat → Unit → Unit → Nat := fun _ _ _ => 1
 
-/-- `n + m - m` is `n`, with an empty axiom report. -/
-theorem add_sub_same (n : Nat) : ∀ m : Nat, n + m - m = n
-  | 0 => rfl
-  | m + 1 => (Nat.succ_sub_succ (n + m) m).trans (add_sub_same n m)
-
 /-- From a level of one, the responsive law keeps the level at one. -/
 theorem responsive_levels : ∀ t c, responsive.levels single (fun _ => 1) t c = 1
   | 0, _ => rfl
   | t + 1, c => (levels_succ (law := responsive) (present := single) (start := fun _ => 1) t c).trans
-      ((add_sub_same _ _).trans (responsive_levels t c))
+      ((Naturals.add_sub_cancel _ _).trans (responsive_levels t c))
 
 /-- From a level of one, so does the unresponsive law. -/
 theorem unresponsive_levels : ∀ t c, unresponsive.levels single (fun _ => 1) t c = 1
   | 0, _ => rfl
   | t + 1, c =>
     (levels_succ (law := unresponsive) (present := single) (start := fun _ => 1) t c).trans
-      ((add_sub_same _ _).trans (unresponsive_levels t c))
+      ((Naturals.add_sub_cancel _ _).trans (unresponsive_levels t c))
 
 /-- Under the responsive law the formation requires its condition at need one at every step. -/
 theorem responsive_requires (t : Nat) :

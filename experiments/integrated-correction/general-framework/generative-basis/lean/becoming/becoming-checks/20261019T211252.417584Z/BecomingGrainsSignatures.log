@@ -1,0 +1,25 @@
+@Becoming.BranchingTest.finer_rename : ∀ {A B : Type u_1} {C : Type u_2} (expand : B → List A) (name : A → B),
+  (∀ (a : A), expand (name a) = [a]) →
+    ∀ (φ : Becoming.BranchingTest A C), Becoming.BranchingTest.finer expand (Becoming.BranchingTest.rename name φ) = φ
+@Becoming.BranchingTest.holds_either : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C} {s : S}
+  {φ ψ : Becoming.BranchingTest A C},
+  Becoming.Decided (Becoming.BranchingTest.Holds F s φ) →
+    Becoming.Decided (Becoming.BranchingTest.Holds F s ψ) →
+      (Becoming.BranchingTest.Holds F s (φ.either ψ) ↔
+        Becoming.BranchingTest.Holds F s φ ∨ Becoming.BranchingTest.Holds F s ψ)
+@Becoming.Frame.byRecipes_trace : ∀ {S : Type u_1} {A B : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {recipe : B → Becoming.Recipe A C} {s t : S} {word : List B},
+  Generative.Trace (F.byRecipes recipe).P s word t → ∃ w, Generative.Trace F.P s w t
+@Becoming.Alike.of_stuck : ∀ {S : Type u_1} {S' : Type u_2} {A : Type u_3} {C : Type u_4} {F : Becoming.Frame S A C}
+  {G : Becoming.Frame S' A C} {s : S} {s' : S'},
+  (∀ (c : C), F.realized s c ↔ G.realized s' c) →
+    (∀ (a : A) (t : S), ¬F.P.step s a t) → (∀ (a : A) (t : S'), ¬G.P.step s' a t) → Becoming.Alike F G s s'
+@Becoming.SameBranchingTests.of_stuck : ∀ {S : Type u_1} {S' : Type u_2} {A : Type u_3} {F : Becoming.Frame S A Empty}
+  {G : Becoming.Frame S' A Empty} {s : S} {s' : S'},
+  (∀ (a : A) (t : S), ¬F.P.step s a t) → (∀ (a : A) (t : S'), ¬G.P.step s' a t) → Becoming.SameBranchingTests F G s s'
+Becoming.Midway.exists_phase : ∀ (p : Becoming.Midway.Phase → Prop),
+  (∃ s, p s) ↔
+    p Becoming.Midway.Phase.origin ∨
+      p Becoming.Midway.Phase.risky ∨
+        p Becoming.Midway.Phase.safe ∨
+          p Becoming.Midway.Phase.ready ∨ p Becoming.Midway.Phase.blocked ∨ p Becoming.Midway.Phase.done

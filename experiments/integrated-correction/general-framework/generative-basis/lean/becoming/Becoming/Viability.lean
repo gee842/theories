@@ -256,8 +256,6 @@ def guardedHistory (f : S → A → S) (guard : S → Prop) [DecidablePred guard
 theorem guardedStep_none (f : S → A → S) (guard : S → Prop) [DecidablePred guard] (a : A) :
     guardedStep f guard a none = none := rfl
 
-theorem none_ne_some {x : S} : (none : Option S) ≠ some x := fun same => nomatch same
-
 /-- A guarded step goes on only from and into the guard. -/
 theorem ready_of_step {f : S → A → S} {guard : S → Prop} [DecidablePred guard] {a : A}
     {s t : S} (moved : guardedStep f guard a (some s) = some t) : guard s ∧ guard (f s a) := by
@@ -265,7 +263,7 @@ theorem ready_of_step {f : S → A → S} {guard : S → Prop} [DecidablePred gu
   by_cases ready : guard s ∧ guard (f s a)
   · exact ready
   · rw [if_neg ready] at moved
-    exact absurd moved none_ne_some
+    exact absurd moved ListTests.none_ne_some
 
 /-- Within the guard at both ends, a guarded step goes on. -/
 theorem step_of_ready {f : S → A → S} {guard : S → Prop} [DecidablePred guard] {a : A} {s : S}

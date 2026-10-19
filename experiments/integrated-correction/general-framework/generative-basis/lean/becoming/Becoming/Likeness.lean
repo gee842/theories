@@ -163,11 +163,6 @@ dependence) or by level. -/
 def RespectsClaims (claims : K → D → Prop) (E : K → K → Prop) : Prop :=
   ∀ k k', E k k' → ∀ d, claims k d ↔ claims k' d
 
-/-- Configurations whose descriptions `E` relates go, by one move, to configurations whose
-descriptions `E` relates: `GoAlike` with equality read as `E`. -/
-def GoAlikeUnder (P : Process S A) (π : S → K) (E : K → K → Prop) : Prop :=
-  ∀ s s' a u u', E (π s) (π s') → P.step s a u → P.step s' a u' → E (π u) (π u')
-
 /-- The image of `P` through `π` closed under `E`: `a` goes from `k` to `κ` where some step of
 `P` by `a` goes from a configuration whose description `E` relates to `k` to one whose description
 `E` relates to `κ`. -/
@@ -1350,21 +1345,17 @@ namespace LLPO
 theorem succ_inj {m n : Nat} (same : m + 1 = n + 1) : m = n :=
   congrArg Nat.pred same
 
-/-- No successor is zero (the prelude's `Nat.succ_ne_zero` depends on `propext`). -/
-theorem succ_ne_zero (n : Nat) : n + 1 ≠ 0 :=
-  fun same => Nat.noConfusion same
-
 /-- No even number is odd. -/
 theorem two_mul_ne_succ : ∀ m n : Nat, 2 * m ≠ 2 * n + 1
-  | 0, n, same => succ_ne_zero (2 * n) same.symm
-  | m + 1, 0, same => succ_ne_zero (2 * m) (succ_inj same)
+  | 0, n, same => Naturals.succ_ne_zero (2 * n) same.symm
+  | m + 1, 0, same => Naturals.succ_ne_zero (2 * m) (succ_inj same)
   | m + 1, n + 1, same => two_mul_ne_succ m n (succ_inj (succ_inj same))
 
 /-- Twice is one to one. -/
 theorem two_mul_inj : ∀ m n : Nat, 2 * m = 2 * n → m = n
   | 0, 0, _ => rfl
-  | 0, n + 1, same => absurd same.symm (succ_ne_zero (2 * n + 1))
-  | m + 1, 0, same => absurd same (succ_ne_zero (2 * m + 1))
+  | 0, n + 1, same => absurd same.symm (Naturals.succ_ne_zero (2 * n + 1))
+  | m + 1, 0, same => absurd same (Naturals.succ_ne_zero (2 * m + 1))
   | m + 1, n + 1, same =>
     congrArg (· + 1) (two_mul_inj m n (succ_inj (succ_inj same)))
 

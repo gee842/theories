@@ -165,7 +165,7 @@ theorem step_conserves {s t : State} {a : Act} (h : P.step s a t) :
     | some u =>
       rw [eq] at h
       cases Option.some.inj h
-      exact ⟨ExchangeLaw.sub_add_back enough, rfl⟩
+      exact ⟨Naturals.sub_add_cancel enough, rfl⟩
   next => contradiction
 
 /-- A single policy consumes the retained method and mismatch at every revision.

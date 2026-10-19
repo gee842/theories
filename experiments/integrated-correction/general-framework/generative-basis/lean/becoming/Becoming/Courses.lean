@@ -8,9 +8,8 @@ import Becoming.Weighted
 import Becoming.Description
 import Becoming.Feedback
 import Becoming.Decidedness
-import Becoming.Metaethics
 import Becoming.Parting
-import Becoming.ValuationFrames
+import Becoming.Extension
 
 /-!
 # Courses: the apart laws read on the shared base
@@ -509,12 +508,12 @@ theorem copy_empties_iff (prev : Option α) (built word pool : List α) (supply 
 
 /-- One move of the copy keeps its product as a prefix. -/
 theorem tick_extends : ∀ s : Scan α, ∃ tail, (tick draw s).built = s.built ++ tail
-  | ⟨_, [], _, _, _, _⟩ => ⟨[], (append_empty _).symm⟩
+  | ⟨_, [], _, _, _, _⟩ => ⟨[], (ListTests.append_nil _).symm⟩
   | ⟨prev, x :: xs, built, pool, supply, used⟩ =>
     Eq.mpr (congrArg (fun y : Scan α => ∃ tail, y.built = built ++ tail)
       (tick_cons draw prev x xs built pool supply used))
       (ite_cases (fun y : Scan α => ∃ tail, y.built = built ++ tail)
-        (fun _ => ⟨[x], rfl⟩) (fun _ => ⟨[], (append_empty _).symm⟩))
+        (fun _ => ⟨[x], rfl⟩) (fun _ => ⟨[], (ListTests.append_nil _).symm⟩))
 
 /-- **The product of the copy only grows along every course of its process.** -/
 theorem copy_grows : ∀ (s : Scan α) (plan : List Unit) (t : Scan α),
