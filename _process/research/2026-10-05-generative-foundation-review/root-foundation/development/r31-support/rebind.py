@@ -69,7 +69,12 @@ def homes(r):
 home, home_base = homes(receipt), homes(base_receipt)
 path_of = {m: LEANDIR + p for m, p in receipt['source_paths'].items()}
 module_of = {p: m for m, p in path_of.items()}
-GONE_FILES = {B + 'Order.lean', B + 'Naturals.lean', B + 'ListTests.lean'}
+HIST = LEANDIR + 'history/becoming/Becoming/'
+# Where the Lean history folder holds a former module's bytes (its MANIFEST).
+_manifest = json.load(open(LEANDIR + 'history/MANIFEST.json'))
+HISTORY_OF = {e['old_path']: e['new_path'] for e in _manifest['entries'] if e.get('old_path', '').endswith('.lean')}
+# The removed files, at their old paths and where research.py move put their bytes (history-moves.tsv).
+GONE_FILES = {d + f for d in (B, HIST) for f in ('Order.lean', 'Naturals.lean', 'ListTests.lean')}
 
 TABLE = json.load(open(os.path.join(HERE, 'dedup-table.json')))
 REMAP = {x: g['keep'] for g in TABLE['groups'] for x in g['delete']}
@@ -78,6 +83,10 @@ assert removed == set(REMAP), (sorted(removed - set(REMAP)), sorted(set(REMAP) -
 for x, y in REMAP.items():
     assert y in home, y
 MOVED = {x for x in home_base if x in home and home[x] != home_base[x]}
+# Removed copies whose printed type differs from the kept name's in universe level only (sigcheck.py).
+UNIVERSE = {'Becoming.length_append', 'Becoming.FinerTraces.mem_cons_split', 'Becoming.FinerTraces.mem_append_split',
+            'Becoming.Granularity.mem_joined_split', 'Becoming.mem_appended_split', 'Becoming.Learnable.length_map',
+            'Becoming.FinerTraces.of_mem_map'}
 
 TEXT = {
     'how-often-couplings-act': [
@@ -86,6 +95,13 @@ TEXT = {
         ('复用 carriedGive_congr_strength、Closing.ble_false_of_lt 与 Closing.Onset',
          '复用 carriedGive_congr_strength、Naturals.ble_false_of_lt 与 Closing.Onset'),
     ],
+}
+PATHFIX = {
+    ('exchanges-commute-unless-joined', B + 'Order.lean'): B + 'Reordering.lean',  # Order.Crossing, Order.Arising; commuting
+    ('least-footprint-where-idleness-decided', B + 'Order.lean'): B + 'Reordering.lean',  # Footprinted.Contains, sorts_iff
+    ('order-of-exchanges-is-the-invariant', B + 'Order.lean'): B + 'Reordering.lean',  # commutation, Precedes, converse
+    ('normal-forms-need-decided-apartness', B + 'Order.lean'): B + 'Reordering.lean',  # Footprinted, Reindexes, sorts_iff
+    ('only-the-order-of-change-registers', B + 'Order.lean'): B + 'Stuttering.lean',  # stuttering readings
 }
 STUDY = '_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md'
 CH = 'theories/becoming/chapters/'
@@ -210,6 +226,8 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     moved, replaced, texts = [], [], 0
     for old, new in TEXT.get(rid, []):
         hits = [(c, k) for c, k in strings(d) if old in c[k]]
+        if not hits and any(new in c[k] for c, k in strings(d)):
+            continue  # applied by an earlier run
         assert len(hits) == 1 and hits[0][0][hits[0][1]].count(old) == 1, (rid, old[:60], len(hits))
         c, k = hits[0]
         c[k] = c[k].replace(old, new)
@@ -268,12 +286,30 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
                 d['proof_bindings'].append(binding(path))
                 bound.add(path)
         d['proof_bindings'] = [b for b in d['proof_bindings'] if b['source'] not in GONE_FILES]
-    rebound, touched = [], set()
+    rebound, touched, kept_alias = [], set(), []
+    old_receipts = {b['receipt'] for b in d.get('proof_bindings', [])}
     for b in d.get('proof_bindings', []):
         if b['source'] in LEAN and b['receipt'] != RECEIPT:
             assert receipt['source_sha256'][module_of[b['source']]] == h(b['source'])
             b['receipt'] = RECEIPT
             rebound.append(short(b['source']))
+    # An alias that only the receipt left behind elaborated (a module since moved to the Lean history folder with
+    # its bytes) stays elaborated: the history file is bound to that receipt, as the F3 sweep's records do.
+    bound_now = {b['receipt'] for b in d.get('proof_bindings', [])}
+    for old in sorted(old_receipts - bound_now):
+        orec = json.load(open(old))
+        for m in orec['modules']:
+            names = {x['name'] if isinstance(x, dict) else x for x in m.get('declarations', [])}
+            hit = [a for a in d.get('aliases', []) or [] if a in names and a not in home]
+            path = HISTORY_OF.get(LEANDIR + orec['source_paths'][m['module']])
+            # Only modules since moved to the history folder; a live periphery module keeps its own receipt.
+            if not hit or not path:
+                continue
+            assert h(path) == orec['source_sha256'][m['module']], (rid, m['module'])
+            d['proof_bindings'].append({'source': path, 'receipt': old, 'sha256_pointer': '/source_sha256/' + m['module'],
+                                        'success_pointer': '/status', 'success_value': 'passed'})
+            assert any(r['path'] == path for r in refs) and any(r['path'] == old for r in refs), rid
+            kept_alias.append((short(path), old.split('/')[-2], hit))
     for r in refs:
         p = r['path']
         if p in GONE_FILES:
@@ -295,6 +331,14 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
                 and r['path'] != d.get('canonical_source') \
                 and not any(b['source'] == r['path'] for b in d.get('proof_bindings', [])):
             refs.remove(r)
+    # Evidence and counterexample paths still naming a removed file (references, bindings and the canonical
+    # source are settled above) name the split part holding what they cite.
+    paths_fixed = []
+    for c, k in list(strings(d)):
+        if c[k] in GONE_FILES:
+            new = PATHFIX[(rid, c[k].replace(HIST, B))]
+            paths_fixed.append((short(c[k]), short(new)))
+            c[k] = new
     if any(b['receipt'] == RECEIPT for b in d.get('proof_bindings', [])) and not any(r['path'] == RECEIPT for r in refs):
         refs.append({'path': RECEIPT, 'role': 'receipt', 'sha256': h(RECEIPT), 'declarations': []})
     if json.dumps(d, ensure_ascii=False) == before:
@@ -310,17 +354,31 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
         zh += '连同完整名称移动：' + '；'.join(f'从 {a} 到 {c}：' + '、'.join(xs) for (a, c), xs in sorted(groups.items())) + '。'
     rp = sorted({(bare(x), bare(y)) for x, y in replaced})
     if rp:
-        en += ' Removed, with the statement kept under one name: ' + '; '.join(f'{x} (now {y})' for x, y in rp) + '.'
-        zh += '删去，陈述以一个名称保留：' + '；'.join(f'{x}（现为 {y}）' for x, y in rp) + '。'
+        en += ' Removed, with the statement kept under one name: ' + '; '.join(
+            f'{x} (now {y}' + ('; the two differ in universe level only' if 'Becoming.' + x in UNIVERSE else '') + ')'
+            for x, y in rp) + '.'
+        zh += '删去，陈述以一个名称保留：' + '；'.join(
+            f'{x}（现为 {y}' + ('；二者只在宇宙层级上不同' if 'Becoming.' + x in UNIVERSE else '') + '）'
+            for x, y in rp) + '。'
     if new_canon:
         en += f' The canonical source {short(canon)} was split; it is now {short(new_canon)}.'
         zh += f'规范来源 {short(canon)} 已拆分，现为 {short(new_canon)}。'
     if texts:
         en += ' The sentence that named a removed declaration names the kept one.'
         zh += '提到删去之声明的句子改提保留者。'
+    for path, old, hit in kept_alias:
+        en += (f' {path}, in the Lean history folder with its bytes, is bound to receipt {old}, which elaborates '
+               + ', '.join(hit) + ', so the alias stays checked.')
+        zh += f'{path}（连同字节在 Lean 历史目录中）绑定到回执 {old}，它精化了 ' + '、'.join(hit) + '，别名因此仍受检查。'
     if rebound:
         en += f' Proof bindings ({", ".join(sorted(set(rebound)))}) rebound to core receipt {RID}.'
         zh += f'证明绑定（{"、".join(sorted(set(rebound)))}）改到核心回执 {RID}。'
+    pf = sorted(set(paths_fixed))
+    pf_en = (' The evidence and counterexample paths that named ' + '; '.join(f'{a} name {b}' for a, b in pf)
+             + ' (the split part holding what they cite).') if pf else ''
+    pf_zh = ('提到 ' + '；'.join(f'{a} 的证据与反例路径改提 {b}' for a, b in pf) + '（拆分后持有所引内容的部分）。') if pf else ''
+    en += pf_en
+    zh += pf_zh
     ps = sorted(touched)
     if ps:
         en += ' Re-pointed after reading the change: ' + '; '.join(short(p) + ', ' + WHAT[p][0] for p in ps) + '.'
@@ -329,6 +387,9 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     zh += '论断不变。'
     last = d['history'][-1] if d.get('history') else {}
     if last.get('en', '').startswith('20 October 2026, R31'):
+        if pf:
+            last['en'] = last['en'].replace(' The claim is unchanged.', pf_en + ' The claim is unchanged.')
+            last['zh'] = last['zh'].replace('论断不变。', pf_zh + '论断不变。')
         if ps:
             last['en'] = last['en'].replace(' The claim is unchanged.', ' Also re-pointed after reading the change: '
                                             + '; '.join(short(p) + ', ' + WHAT[p][0] for p in ps) + '. The claim is unchanged.')

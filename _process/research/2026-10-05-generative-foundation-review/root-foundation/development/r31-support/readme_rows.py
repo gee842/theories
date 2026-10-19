@@ -73,12 +73,21 @@ EDITS = {
          "（`Flow.Balances.comparison_within_difference`）；公理不出现，以它为假设的三个见证在 `Becoming.BoundedSignificance`；"),
     ],
     CH / 'THE-THEORY-OF-BECOMING.md': [
+        ("Lean: [Becoming.Order](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean).",
+         "Lean: [Becoming.Stuttering](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stuttering.lean), "
+         "[Becoming.Reordering](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean) and "
+         "[Becoming.IdleRemoval](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/IdleRemoval.lean), "
+         "the three parts of the former `Becoming.Order` (R31)."),
         ("The condition enters only as a hypothesis of three witnesses.",
          "The condition enters only as a hypothesis of three witnesses, stated since R31 in "
          "[Becoming.BoundedSignificance](../../../experiments/integrated-correction/general-framework/generative-basis/"
          "lean/becoming/Becoming/BoundedSignificance.lean)."),
     ],
     CH / 'THE-THEORY-OF-BECOMING.zh.md': [
+        ("见 [Becoming.Order](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)、",
+         "见原 `Becoming.Order` 的三部分（R31）[Becoming.Stuttering](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stuttering.lean)、"
+         "[Becoming.Reordering](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean)、"
+         "[Becoming.IdleRemoval](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/IdleRemoval.lean)、"),
         ("与 `universal_reason`、比较与扩展（`Comparison.outgrows`）、表明每个假设都需要的模型",
          "与 `universal_reason`、表明每个假设都需要的模型"),
         ("条件只作为三个见证的假设出现。",
