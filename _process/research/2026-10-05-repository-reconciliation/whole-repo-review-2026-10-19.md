@@ -132,3 +132,30 @@ Under D45 the work can decide these; none of them waits on Ren:
 3. Refresh the board's "Now" block, and add the no-trailer rule to AGENTS.md.
 4. Remove the clean merged worktrees and the `tmp_obj_*` files once no session uses them.
 5. Decide the Chinese snapshot's fate, and retire the 9 October chapters (§3.2–3.3).
+
+## 7. Outcome: R19, landed 19 October 2026
+
+Ren, the same day: "please spawn sub agents and fix them. we no longer need to take my past words as "truth" … reason" ([source](../../../sources/15-codex-theory-conversations/2026-10-19-reason-not-past-words.md)). The fixes were made on branch `r19-review` by this session with four Opus subagents, each on its own files. Every agent's work was read before landing. The tools are in [r19/](r19/).
+
+| Finding | What was done |
+|---|---|
+| §3.1 "positive significance" | Fixed in the chapter (item 10, premise card E, §5, §6.12, glossary), OPENING's `[^axiom]` footnote, the README lead, seven kept chapters and the record `positive-ground-open-futures`. Where a kept chapter's argument uses a positive valence or further generation, it now says that is its reading with the direction of 生生 (D1), which the formal content does not carry. |
+| §3.2 Ren's acceptance as standing; the one-axiom order | The canonical chapter gives reasons in about 86 places where it had cited Ren's approvals, orders or acceptance. Sections 1–6 come first because they hold the strongest content that needs no axiom, which stands whatever is decided about the condition's warrant. Quotes stay only as marked provenance. The same was done in the kept chapters and the Chinese edition. |
+| §3.2 process narration in §8 | Review bookkeeping markers were dropped; open items, counterexamples and scope were kept. |
+| §3.2 Chinese edition | It was not a frozen snapshot: landings patch new results into it. Its framing now matches the English: retired labels went from 411 hits to the retired-labels table only, and the banner is accurate. Some passages remain shorter than the English (for example the newest §6.7 paragraphs). |
+| §3.3 9 October chapters | `THEORY-OF-BECOMING` (and `.zh`) moved to `theories/becoming/history/` (move `R19-chapters`), bytes unchanged. `BECOMING-FOUNDATION` stays live in part under a banner naming its unique sections (§4, the remaining-inference column of §5, §9). `THE-THEORY-OF-EVOLUTION` stays as the evolution programme's chapter. |
+| §4 board "Now" | Refreshed. |
+| §4 commit trailers | AGENTS.md states the rule. Ren's words on names are recorded in the source of 19 October. |
+| §1 links into private sources | All 54 are now plain text with a note. |
+| §5 worktrees and git temp files | Four merged, clean, unused worktrees were removed: `a4l-ideals`, `f3-sweep`, `f3j-s1-land`, `f3j-s23-land`, about 12 GB. Eleven stale `tmp_obj_*` files were deleted. The other merged worktrees belong to Claude sessions still open, so they stay until those sessions are archived. |
+| Records | 26 records whose cited lines changed were read against the changed lines and re-pointed, each with a dated note. No claim changed. |
+
+Still open after R19:
+
+- the Lean docstrings that say "positively relevant", which need a checker run;
+- the `heald-2021` data's terms;
+- the `becoming-checks` run folders;
+- the hard-coded `/Users/ren` paths in about 15 scripts;
+- the unmerged branches `claude/f3j-judgment-cd75fa` and `claude/friendly-ellis-b2bb3b`;
+- `a2-chain`'s 31 uncommitted files;
+- the external PR #1.
