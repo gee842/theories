@@ -69,10 +69,12 @@
     "Becoming.Hexagram.Paired",
     "Becoming.Hexagram.pairs",
     "Becoming.Hexagram.order_paired",
+    "Becoming.Hexagram.order_paired_by_law",
+    "Becoming.Hexagram.six_steps",
     "Becoming.Hexagram.turn_fixed_iff",
     "Becoming.Hexagram.both_fixed_iff"
    ],
-   "reading": "对所传卦序逐对检验：每对之后一卦是前一卦倒转（覆），倒转不变者则六爻皆变（變）。倒转不变者八卦（乾坤、頤大過、坎離、中孚小過），恰是卦序以變相配者；倒转与六爻皆变所得相同者，恰是卦序中覆、變两者兼合之对（泰否、隨蠱、漸歸妹、既濟未濟）。"
+   "reading": "对所传卦序逐对检验：每对之后一卦是前一卦倒转（覆），倒转不变者则六爻皆变（變）。倒转不变者八卦（乾坤、頤大過、坎離、中孚小過），恰是卦序以變相配者；倒转与六爻皆变所得相同者，恰是卦序中覆、變两者兼合之对（泰否、隨蠱、漸歸妹、既濟未濟）。其中之“變”经消息之律读出：六爻皆变即沿消息之律走六步（six_steps），故所传每对之后一卦，或为前一卦之覆，或在倒转不变时为前一卦沿消息之律六步所至（order_paired_by_law）。"
   },
   {
    "id": "qiankun-chenglie",

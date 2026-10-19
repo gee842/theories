@@ -661,7 +661,7 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
       "role": "integration",
       "declarations": [],
-      "sha256": "4d5388bb32c6dedcd787f0c54d9b4bcccb216ed86d93310257b43b89e9b11a34"
+      "sha256": "4f0476d9e98e4fd8f3ded1df97d8869b11a1a28ff3353f227a9f0907f2ed7f59"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
@@ -815,6 +815,10 @@
     {
       "en": "19 October 2026, PT1 (place/transition nets on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: PT1 added a study section; THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.",
       "zh": "2026年10月19日，PT1（脊柱上的库所/变迁网）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (passages.json: the passage 非覆即變 (feifu) names order_paired_by_law and six_steps beside order_paired, and its reading adds that 變 is six steps along the law of waxing and waning; no other passage changed). The claim is unchanged.",
+      "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（passages.json：非覆即變一段（feifu）在 order_paired 旁加列 order_paired_by_law 与 six_steps，读法补一句：變即沿消息之律六步；其他段未变）。论断不变。"
     }
   ]
 }

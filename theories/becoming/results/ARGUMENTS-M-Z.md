@@ -82,7 +82,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [valuation-identification-bounds](#valuation-identification-bounds) | Bounds for identifying changed evaluation | identification mathematics | Checked conditional formal result |
 | [wang-yangming](#wang-yangming) | Wang Yangming, benevolence and situated practice | classical ethical | Integrated account; universal target open (source changed since reading) |
 | [wisdom-and-context](#wisdom-and-context) | Wisdom, context and the common core | philosophical epistemic | Conditional checks and philosophical application; root-of-wisdom target open (source changed since reading) |
-| [yi-zhuan-and-becoming](#yi-zhuan-and-becoming) | The 易传 and the theory of becoming: the configurations of the 周易 on the spine | classical comparison | Passage map checked; Lean checked |
+| [yi-zhuan-and-becoming](#yi-zhuan-and-becoming) | The 易传 and the theory of becoming: the configurations of the 周易 on the spine | classical comparison | Passage map checked; Lean checked (source changed since reading) |
 | [zero-axiom-practical-judgment](#zero-axiom-practical-judgment) | Zero-axiom practical judgment | normative foundation | Zero-axiom warrant unestablished; instrumental results checked (source changed since reading) |
 
 <a id="market-dynamics-math"></a>
@@ -1759,6 +1759,8 @@ Correspondence covers only the stated premises and subclaims; source existence d
 **Source:** [YI-ZHUAN-AND-BECOMING.md](../chapters/YI-ZHUAN-AND-BECOMING.md)
 
 **Status:** Passage map checked; Lean checked
+
+**Reading status:** the source changed after this reading (read version sha256 `3db2702447a6…`). The entry describes that earlier version; it awaits a reread before its hash is refreshed.
 
 **Argument:** The configurations the 周易 describes (six two-valued lines, the change of a line, the law of waxing and waning, the received order) are a world of the pure core, on which the spine's laws are checked; the relations of the places (正, 應, 比, 中) are contextual readings at their sites; the nuclear law 互, the cast of turning lines, the four symmetries of 錯 and 綜, the counter and the six orbits of waxing and waning are laws on that world; every law is read along the runs of the spine. 王弼's 初上无位 and the line answered by all others are two further relations. 88 passages of the 易传, the classic, two commentaries and 王弼's 《周易略例》, quoted from preserved revisions, are each mapped to declarations as agreement, exact scope or divergence, and twelve censuses check every statement of a kind about place and 中 in the 彖, the 小象, the line texts and the 大象.
 
