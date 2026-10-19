@@ -22,7 +22,7 @@
    "category": "model-witness",
    "reason": "the support condition of the CHSH parity system; a fact about one constructed system, and read at a run configuration the run would play no role (join removed by the integrator)"
   },
-  "Becoming.Contacts.Alike.refl": {
+  "Becoming.Contacts.AgreeOn.refl": {
    "module": "Becoming.Contacts",
    "category": "support",
    "reason": "Reflexivity of agreement on the contacts (every signal agrees with itself), a one-line lemma with no reading on the base."
@@ -182,7 +182,7 @@
    "category": "logical-strength",
    "reason": "States only that the Sigma-0-2 dichotomy RecursOrStops implies LPO; its statement of every coupling process is settled_every_iff_steps (CouplingTraces), which is joined and through which lpo_of_settled feeds the base."
   },
-  "Becoming.ReferencePlan.alike_iff_agreeOn": {
+  "Becoming.ReferencePlan.agreeOn_iff": {
    "module": "Becoming.ReferencePlan",
    "category": "support",
    "reason": "Iff.rfl between two names of agreement of signals on a list of addresses; the laws of agreement under a step's method are stated on the process in ReferencePlanTraces (revise_registers, revise_keeps, revise_keeps_selections, revise_gains_contact)."
@@ -272,7 +272,7 @@
    "category": "general-structure",
    "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
   },
-  "Becoming.Valuation.seed_of_selfGood": {
+  "Becoming.Valuation.seed_of_selfSignificance": {
    "module": "Becoming.Metaethics",
    "category": "general-structure",
    "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
@@ -807,23 +807,23 @@
    "category": "model-witness",
    "reason": "a computation in the constructed stage model: after one step of the left rule the direct-right rule completes instead, within the handoff bound (OpenFutureRevision, ported by F3J)"
   },
-  "Becoming.PositiveGround.acquired_evidence_secures_good_and_leaves_both_opennesses": {
-   "module": "Becoming.PositiveGround",
+  "Becoming.SecuredContent.acquired_evidence_secures_content_and_leaves_both_opennesses": {
+   "module": "Becoming.SecuredContent",
    "category": "model-witness",
    "reason": "a fact about the constructed formation model and its repertoire: the first observation rules out the barren magnitude, the positive integral is positive in every live model, and which magnitude holds stays open (PositiveGroundUncertainty, ported by F3J)"
   },
-  "Becoming.PositiveGround.positive_integral_and_adverse_full_change": {
-   "module": "Becoming.PositiveGround",
+  "Becoming.SecuredContent.positive_integral_and_adverse_full_change": {
+   "module": "Becoming.SecuredContent",
    "category": "model-witness",
    "reason": "a computation in the constructed formation model: a positive integral over the new aspect coexists with an adverse full signed change (PositiveGroundUncertainty, ported by F3J)"
   },
-  "Becoming.PositiveGround.route_reason_depends_only_on_access": {
-   "module": "Becoming.PositiveGround",
+  "Becoming.SecuredContent.route_reason_depends_only_on_access": {
+   "module": "Becoming.SecuredContent",
    "category": "general-structure",
    "reason": "a law of every access, admission and positivity relation on any type: positions alike in access are alike in the route reason (PositionedPositiveReason, ported by F3J)"
   },
-  "Becoming.PositiveGround.wider_scope_can_require_certificate_retraction": {
-   "module": "Becoming.PositiveGround",
+  "Becoming.SecuredContent.wider_scope_can_require_certificate_retraction": {
+   "module": "Becoming.SecuredContent",
    "category": "model-witness",
    "reason": "a fact about the constructed formation model: widening the admitted scope to the barren magnitude retracts the certificate (PositiveGroundUncertainty, ported by F3J)"
   },
@@ -1292,7 +1292,7 @@
    "category": "general-structure",
    "reason": "every finite joining tree lifts where a description lifts a joining: a law of every joining on any type of fragments; the bridge read it on the periphery's joining studies, and left with the F3 sweep"
   },
-  "Becoming.Ideals.Closed.hull_iff": {
+  "Becoming.Ideals.ScottClosed.hull_iff": {
    "module": "Becoming.Ideals",
    "category": "support",
    "reason": "A closed class is its own hull: `hull_least` with `hull_contains`, a one-line unpacking; at runs, a reading holding every run adhering to it holds exactly those runs, and adhering itself is the least closed class (`Stretches.adheres_iff_closed`)."
@@ -1727,7 +1727,7 @@
    "category": "general-structure",
    "reason": "Capture's share law iterated over generations, for any listing of offspring with carriers leaving at least a and others at most b; the base reads one step of it through support (CaptureWorlds.share_rises_of_unsupported), where the unsupported others leave none, so a reading on the base is the case b = 0 and adds no law"
   },
-  "Becoming.RuleCapture.Counts.share_not_lower_counts": {
+  "Becoming.RuleCapture.CarrierCounts.share_not_lower_counts": {
    "module": "Becoming.RuleCapture",
    "category": "restates",
    "reason": "restates share_not_lower (Becoming.Capture) in the share order of counts, to show that the order the laws of RuleCapture read on courses is the comparison of Capture; share_not_lower is read on worlds by CaptureWorlds, and the order on courses by every other law of RuleCapture"
