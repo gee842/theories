@@ -13,7 +13,7 @@ STATE = ('landed 2026-10-19, docs and records with no checker run: chapter §1 (
          'statement of record every-loss-passes-a-juncture (English and Chinese), and the reading in '
          '[study §199](research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) '
          'say that every loss passes a juncture where s returns (`loss_passes_juncture`) and that keeping is the '
-         'largest on its course from s (`keeping_greatest`); records re-pointed after reading (the cited text changed '
+         'largest on its course from s (`keeping_greatest`); 22 records re-pointed after reading, each where its cited text changed '
          'only in chapter §1 and §10 and study §199)')
 board = Path(BOARD).read_text(encoding='utf-8')
 history = Path(HISTORY).read_text(encoding='utf-8')
