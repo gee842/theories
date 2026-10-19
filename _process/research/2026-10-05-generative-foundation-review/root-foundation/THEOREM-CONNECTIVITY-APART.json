@@ -1756,6 +1756,11 @@
    "module": "Becoming.HistorySums",
    "category": "support",
    "reason": "the weight along an appended list of steps composes at the joint, by unfolding Weights.along; its process reading is HistorySums.trace_split_iff, through Weights.transfer_split"
+  },
+  "Becoming.share_ratio_pow": {
+   "module": "Becoming.MutualDependence",
+   "category": "general-structure",
+   "reason": "Capture's share law iterated over generations, for any listing of offspring with carriers leaving at least a and others at most b; the base reads one step of it through support (CaptureWorlds.share_rises_of_unsupported), where the unsupported others leave none, so a reading on the base is the case b = 0 and adds no law"
   }
  }
 }

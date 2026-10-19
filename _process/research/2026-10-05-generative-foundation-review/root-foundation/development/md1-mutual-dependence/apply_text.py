@@ -51,7 +51,7 @@ t = Path(conn_log).read_text() if conn_log.startswith('/') else (ROOT / conn_log
 conn = json.loads(t[t.index('{'):t.rindex('}') + 1])
 apart = sum(v for k, v in conn['classes'].items() if k.startswith('apart'))
 assert conn['spine_theorems'] == n_thm, (conn['spine_theorems'], n_thm)
-assert MODULE not in conn['apart_by_module'], conn['apart_by_module'].get(MODULE)
+assert conn['apart_by_module'].get(MODULE) == [3, N_THM_MOD], conn['apart_by_module'].get(MODULE)
 comps = conn['components']['count']
 outside = len(conn['components']['theorems_outside_the_main_component'])
 both = conn['classes']['statement on both families']
@@ -61,7 +61,10 @@ study_text = (ROOT / STUDY).read_text(encoding='utf-8')
 assert '(MD1)\n' not in study_text, 'study section already there'
 n = 1 + max(int(x) for x in re.findall(r'^## (\d+)\. ', study_text, re.M))
 sec = (HERE / 'study_md1.txt').read_text(encoding='utf-8').replace('{N}', str(n)).replace('{R}', receipt_id).replace(
-    '{CONN}', f'passes on the landing tree, {apart} apart of {fmt(n_thm)} theorems, none in {MODULE}')
+    '{CONN}', f'passes on the landing tree, {apart} apart of {fmt(n_thm)} theorems, 3 of the {N_THM_MOD} in {MODULE}: '
+    'the pace of a selection, stated for any listing of offspring (`carriers_grow`, `others_bounded` and their root '
+    '`share_ratio_pow`, registered as general structure: the base reads one step of it through support, where the '
+    'unsupported others leave none)')
 (ROOT / STUDY).write_text(study_text.rstrip('\n') + '\n\n' + sec.rstrip('\n') + '\n', encoding='utf-8')
 anchor = f'{n}-mutual-dependence-and-the-pace-it-gives-md1'
 
@@ -71,8 +74,9 @@ ANCHOR4 = '<a id="what-a-collectives-continuation-needs"></a>'
 para = (HERE / 'chapter_md1.txt').read_text(encoding='utf-8')
 m = re.search(r'There are (\d+) dependency components, with (\d+) spine theorems outside the main one; (\d+) statements use both families\.', ch)
 assert m, 'components sentence'
-NEWINT = (f'Rerun with MD1 (receipt {receipt_id}), it counts {apart} of {fmt(n_thm)}: none of the {N_THM_MOD} theorems '
-          f'of `{MODULE}` stands apart. There are {comps} dependency components, with {outside} spine '
+NEWINT = (f'Rerun with MD1 (receipt {receipt_id}), it counts {apart} of {fmt(n_thm)}: 3 of the {N_THM_MOD} theorems '
+          f'of `{MODULE}` stand apart, the pace of a selection stated for any listing of offspring (`share_ratio_pow`, '
+          f'registered). There are {comps} dependency components, with {outside} spine '
           f'theorems outside the main one; {both} statements use both families.')
 mr = re.search(r'\*\*The current receipt\.\*\* The \[current receipt\]\([^)]*\) is run `([^`]+)`, frozen in .*?It passed\. Its counts:', ch, re.S)
 assert mr and '\n' not in mr.group(0), 'receipt sentence'
