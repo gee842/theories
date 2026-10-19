@@ -1,14 +1,14 @@
 {
- "work": "周易 (卦辭、爻辭、彖、象) and 易傳 (繫辭上、繫辭下、文言、說卦、序卦), with two commentaries: 孔穎達《周易正義》卷十 and 王夫之《周易外傳》卷五",
+ "work": "周易 (卦辭、爻辭、彖、象) and 易傳 (繫辭上、繫辭下、文言、說卦、序卦), with two commentaries, 孔穎達《周易正義》卷十 and 王夫之《周易外傳》卷五, and 王弼's 《周易略例》 with the notes of 邢璹 as the edition gives them",
  "edition": "Chinese Wikisource (zh.wikisource.org), the revisions named per file. A punctuated electronic edition with chapter divisions; not a scan, and no collation against a printed edition is claimed.",
- "retrieval": "MediaWiki API, action=query, prop=revisions, rvprop=ids|timestamp|content, rvslots=main, format=json, formatversion=2, redirects=1, user agent naming the repository's contact, on 19 October 2026 between 05:33 and 05:35 UTC.",
+ "retrieval": "MediaWiki API, action=query, prop=revisions, rvprop=ids|timestamp|content, rvslots=main, format=json, formatversion=2, redirects=1, user agent naming the repository's contact, on 19 October 2026 between 05:33 and 05:35 UTC; the eight pages of 王弼's 《周易略例》 (lueli/) by the same request on 19 October 2026 at 08:40 UTC.",
  "forms": {
   "api-response": "The API's response body, byte for byte as received.",
   "page-object": "The page object of the API's response (query.pages[0]), written by the retrieval script with json.dump(ensure_ascii=False); the wikitext field is the revision's content unchanged, and wikitext_sha256 binds it. The sixty-four hexagram pages were read by following each page's next link from 周易/乾."
  },
  "license": "The texts are pre-modern and in the public domain; Wikisource's punctuation and markup are CC BY-SA 4.0.",
- "markup": "The wikitext carries Wikisource's character-variant markup (-{无}- and -{A|…}-); a reading strips it, and the mapping check in the Y1 kit does so explicitly.",
- "reading_scope": "The 繫辭 in full; in 文言 the commentary on 乾; in 序卦 the close; in the hexagram pages the judgment, the 彖 and the 象 of 乾、泰、剝、復、咸、豐、艮、未濟, and of every page the trigram line (X下Y上) and the position in the sequence. 說卦 was read for 窮理盡性 only. In the commentaries, only the passages the chapter quotes. Retaining whole pages does not imply reading them whole.",
+ "markup": "The wikitext carries Wikisource's character-variant markup (-{无}- and -{A|…}-); a reading strips it, and the mapping check in the Y1 kit does so explicitly. In the 《周易略例》 only the page 明彖 marks 王弼's text, with the template {{yw|…}}, which a reading unwraps; on the other pages 王弼's paragraphs and 邢璹's notes alternate unmarked. The edition writes 雲 for 云 and 系辭 for 繫辭, and its 略例下 reads 「為為兌之主」 with one 為 repeated; quotations keep its text.",
+ "reading_scope": "The 繫辭 in full; in 文言 the commentary on 乾; in 序卦 the close; in the hexagram pages the judgment, the 彖 and the 象 of 乾、泰、剝、復、咸、豐、艮、未濟, and of every page the trigram line (X下Y上) and the position in the sequence. 說卦 was read for 窮理盡性 only. In the commentaries, only the passages the chapter quotes. Retaining whole pages does not imply reading them whole. In 王弼's 《周易略例》, 辯位 and 明彖 were read whole and the other pages (明爻通變, 明卦適變通爻, 明象, 略例下, 卦略) for the passages the chapter quotes; the index page lists the pages. The censuses of the Y2 and Y4 kits find by script every statement of a kind in the 彖, the 小象, the 爻辭 and the 大象 of all sixty-four pages.",
  "used_by": [
   "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
   "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py"
@@ -865,6 +865,102 @@
    "bytes": 1520,
    "sha256": "c4f85d6a321b267d71c86a5a87d63411fb8426dc0ccf38c208efc86a314fefb2",
    "wikitext_sha256": "9dcd6ad074f7d0633872e3e83665e86bd3d2bc19a3ae23cb4ff0eb044e2b4a83"
+  },
+  {
+   "file": "lueli/index.json",
+   "title": "周易略例",
+   "pageid": 102280,
+   "revid": 1381183,
+   "revision_timestamp": "2018-03-10T03:55:24Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B&oldid=1381183",
+   "form": "api-response",
+   "bytes": 1649,
+   "sha256": "c89674b53f36c76dabcf68fe4da2ed072ebecaf1cf7d8723404022d2dacda163",
+   "wikitext_sha256": "df839dccc7fe8746d7bf59f2d3f9c854f5e2371bb1b21615ed564eaaf5b7d6f7"
+  },
+  {
+   "file": "lueli/mingtuan.json",
+   "title": "周易略例/明彖",
+   "pageid": 102281,
+   "revid": 2201353,
+   "revision_timestamp": "2022-12-11T19:34:27Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B%2F%E6%98%8E%E5%BD%96&oldid=2201353",
+   "form": "api-response",
+   "bytes": 3752,
+   "sha256": "fd52255f3dc7bb148e6469e528e93d750af0d2e7c1796eb94011f3ab1f4bd769",
+   "wikitext_sha256": "ae37938062e1502c80478e54e2073787a2d78694212da97ad2920db7bcf88732"
+  },
+  {
+   "file": "lueli/mingyao-tongbian.json",
+   "title": "周易略例/明爻通變",
+   "pageid": 102282,
+   "revid": 1161705,
+   "revision_timestamp": "2017-07-22T13:42:26Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B%2F%E6%98%8E%E7%88%BB%E9%80%9A%E8%AE%8A&oldid=1161705",
+   "form": "api-response",
+   "bytes": 6099,
+   "sha256": "a607515c9a0a575e59028dfad3c3b154cf4ce0ede9da540b550d9fbc116a4abb",
+   "wikitext_sha256": "05007715a32ef3bc66c506b3d480a025f2cefaac19bd9ec7d610facffaad05b2"
+  },
+  {
+   "file": "lueli/minggua-shibian-tongyao.json",
+   "title": "周易略例/明卦適變通爻",
+   "pageid": 102283,
+   "revid": 194050,
+   "revision_timestamp": "2009-02-13T18:38:09Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B%2F%E6%98%8E%E5%8D%A6%E9%81%A9%E8%AE%8A%E9%80%9A%E7%88%BB&oldid=194050",
+   "form": "api-response",
+   "bytes": 4445,
+   "sha256": "cc9936c22098879fc0715cf93a23a45f8a8e5e5d320ada6b3a4681c2c59c1fa6",
+   "wikitext_sha256": "413e6f78c0394596b25f66f32f6255719a9fd4c5fd94330466697874d7c9aeec"
+  },
+  {
+   "file": "lueli/mingxiang.json",
+   "title": "周易略例/明象",
+   "pageid": 102284,
+   "revid": 389845,
+   "revision_timestamp": "2013-07-30T14:06:45Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B%2F%E6%98%8E%E8%B1%A1&oldid=389845",
+   "form": "api-response",
+   "bytes": 2395,
+   "sha256": "80d8444038f865baf114f3ec5e65eb97b3e244629d0148f77db09b8578ab894a",
+   "wikitext_sha256": "5700155ce2fad676213ead12e332d3e17eddbcb53b3f824d33fd8f612eee2bda"
+  },
+  {
+   "file": "lueli/bianwei.json",
+   "title": "周易略例/辯位",
+   "pageid": 102285,
+   "revid": 194052,
+   "revision_timestamp": "2009-02-13T18:38:50Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B%2F%E8%BE%AF%E4%BD%8D&oldid=194052",
+   "form": "api-response",
+   "bytes": 1916,
+   "sha256": "2536ebd9707e10f6d45e9bf9f6e5725782f9999ec0b71bb80af0437a577ca853",
+   "wikitext_sha256": "8f6f6c2c007043d62729fba48ba21e02431c387e45db1e3754974989ad5f6970"
+  },
+  {
+   "file": "lueli/lueli-xia.json",
+   "title": "周易略例/略例下",
+   "pageid": 102286,
+   "revid": 194053,
+   "revision_timestamp": "2009-02-13T18:39:29Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B%2F%E7%95%A5%E4%BE%8B%E4%B8%8B&oldid=194053",
+   "form": "api-response",
+   "bytes": 3134,
+   "sha256": "ba2c660f6703bb15c39280cab494ffb937b587006d56d520dae5a4b592ce5840",
+   "wikitext_sha256": "dc2304238712cd855674b4f0bbef844ff6c6c5af145b7b09952b3b97e39c5c73"
+  },
+  {
+   "file": "lueli/guale.json",
+   "title": "周易略例/卦略",
+   "pageid": 102287,
+   "revid": 194054,
+   "revision_timestamp": "2009-02-13T18:39:58Z",
+   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B%2F%E5%8D%A6%E7%95%A5&oldid=194054",
+   "form": "api-response",
+   "bytes": 2614,
+   "sha256": "8e25ea7cad151a337d96811cc05160b22c3fcd68ce3aa0673c92cac5be0916ea",
+   "wikitext_sha256": "d894359830312ad38512aac7b5fd2d8725cc9f81eed0b190fb6c08742b59e1e2"
   }
  ]
 }
