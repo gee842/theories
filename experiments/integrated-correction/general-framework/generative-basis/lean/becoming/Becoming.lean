@@ -78,6 +78,7 @@ import Becoming.Correspondence
 import Becoming.Descent
 import Becoming.Standpoints
 import Becoming.Significance
+import Becoming.RelativePosition
 import Becoming.Interdependence
 import Becoming.Feeding
 import Becoming.Feedback
@@ -954,6 +955,20 @@ readings of the unfolding (`Becoming.Labelled`).
   is ordered, so the continuation condition is needed. The reading is the AI's, adopted on Ren's delegation of 15
   October 2026. Living significance is a theorem of this condition and, since Ren folded it on 11 October 2026, no longer
   an axiom.
+* `Becoming.RelativePosition` (L4): the game of relative position. A part's position is its
+  amount read against the others' (its amount counted once for each part, against the family's
+  total). Zero-sum is a counting law: across every change of amounts, whatever the amounts do,
+  one part's change of position is the opposite of the change summed over the rest, no change
+  raises every part's position, and a rise needs another part's fall; where every part draws
+  more a part's position can still fall; read on a flow by what each part has drawn, this needs
+  no hypothesis on the flow. Joined to `Flow.joint_excess_ends`: with balance, a race of
+  joint excess at a shared condition ends a part at its end exactly where the part then requires
+  the condition at a need above what the excess can have left and is active only while
+  supported, whatever its position; with renewal gated, the greatest parts end with the condition
+  for good. Each hypothesis is needed: ungated renewal restores the part (`Restored`), and a
+  greatest part that does not depend on what it draws down continues (`Clearing`); what it loses
+  is a continuation with significance, and that loss needs a significance, such as the
+  continuation condition.
 * `Becoming.Interdependence` (L4): how far the route without axiom reaches. What a
   formation's continuation depends on is its feeding closure, the least region holding it
   that is closed under feeding, and nothing beyond the closure gives to what it requires.
