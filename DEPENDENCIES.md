@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-276 registered results: 259 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 706 curated edges join 230 results to the results they draw on.
+277 registered results: 260 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 710 curated edges join 231 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -136,6 +136,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [market-supported-finite-transition][] ← <a id="market-supported-finite-transition--market-protected-continuation"></a>[market-protected-continuation][]
 - [more-needs-renewers][] ← <a id="more-needs-renewers--unceasing-generation-needs-renewal"></a>[unceasing-generation-needs-renewal][] · <a id="more-needs-renewers--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][]
 - [multivalued-joining-common-structure][] ← <a id="multivalued-joining-common-structure--branching-tests-bisimulation"></a>[branching-tests-bisimulation][]
+- [mutual-dependence-and-its-pace][] ← <a id="mutual-dependence-and-its-pace--levels-of-closure"></a>[levels-of-closure][] · <a id="mutual-dependence-and-its-pace--comparison-where-the-rest-responds"></a>[comparison-where-the-rest-responds][] · <a id="mutual-dependence-and-its-pace--how-often-couplings-act"></a>[how-often-couplings-act][] · <a id="mutual-dependence-and-its-pace--target-capture"></a>[target-capture][]
 - [naming-attention-coverage][] ← <a id="naming-attention-coverage--encounter-selection-and-revision"></a>[encounter-selection-and-revision][] *(interpretive)*
 - [necessarily-drawn-is-not-returning][] ← <a id="necessarily-drawn-is-not-returning--attraction-is-not-returning"></a>[attraction-is-not-returning][] · <a id="necessarily-drawn-is-not-returning--target-capture"></a>[target-capture][] · <a id="necessarily-drawn-is-not-returning--returning-where-the-course-branches"></a>[returning-where-the-course-branches][]
 - [no-finite-part-bears-taking][] ← <a id="no-finite-part-bears-taking--more-needs-renewers"></a>[more-needs-renewers][] · <a id="no-finite-part-bears-taking--becoming-renewal-reading"></a>[becoming-renewal-reading][]
@@ -385,6 +386,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [metaethical-core-characterization]: theories/becoming/results/records/metaethical-core-characterization.md
 [more-needs-renewers]: theories/becoming/results/records/more-needs-renewers.md
 [multivalued-joining-common-structure]: theories/becoming/results/records/multivalued-joining-common-structure.md
+[mutual-dependence-and-its-pace]: theories/becoming/results/records/mutual-dependence-and-its-pace.md
 [naming-attention-coverage]: theories/becoming/results/records/naming-attention-coverage.md
 [necessarily-drawn-is-not-returning]: theories/becoming/results/records/necessarily-drawn-is-not-returning.md
 [no-finite-part-bears-taking]: theories/becoming/results/records/no-finite-part-bears-taking.md

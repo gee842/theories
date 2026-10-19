@@ -91,7 +91,7 @@ Ren, 12 October 2026, on the loops: “how how accurate can we do that uh what i
 - related, not a proved adapter: [how-a-carried-difference-grows](how-a-carried-difference-grows.md). Its geometric bound holds counting only the steps at which couplings act and is attained by a self-loop; in the reading Ren called right, “only a loop makes a difference run away”, couplings at only some steps are closed both ways.
 - related, not a proved adapter: [how-loops-form](how-loops-form.md). The self-loop forming at T is the schedule coupling at every step from T, and its doubling after formation is an instance of the rate.
 
-**Used by:** [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
+**Used by:** [mutual-dependence-and-its-pace](mutual-dependence-and-its-pace.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
 
 <a id="sources--来源"></a>
 ### Sources

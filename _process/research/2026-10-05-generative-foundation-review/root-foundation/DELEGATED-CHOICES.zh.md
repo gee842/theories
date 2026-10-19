@@ -72,7 +72,7 @@
 | D36 | 名称 | AI 的工作名称采用；Ren 的用语仍属 Ren |
 | D37 | 任意多条件下的识；尾 | 形式上读作律的敏感，识本身属 Ren；尾取确切意义 |
 | D38 | 细分的计入；分辨率 | 两项都以确切范围采用；研究笔记照旧 |
-| D39 | 耦合强度与纠缠 | 以确切范围采用，识本身属 Ren；经修订由 Ren 取（10-18）：“heavily coupled into it”读作强度，“a highly entangled system”读作回路，不等同于量子的纠缠；（3）带审查的范围 |
+| D39 | 耦合强度与纠缠 | 以确切范围采用，识本身属 Ren；经修订由 Ren 取（10-18）：“heavily coupled into it”读作强度，“a highly entangled system”读作回路，不等同于量子的纠缠；（3）带审查的范围；修订（10-19，MD1）：“a highly entangled system”读作相互依存，回路由它推出 |
 | D40 | 不被给予任何东西的外推所确定者 | 以确切范围采用：由一个列表容纳的世界；读法是函数，不是被持有的模型；以 L2 扩展 |
 | D41 | 不确定之律下的够 | 以确切范围采用：可能是某一进程所允许者；过程一侧不是无明 |
 | D42 | 过程的运行何时安定 | 以确切范围采用：不永远变化不是安定；与 D34 的相似只在形式上；以 S3 扩展 |
@@ -388,6 +388,8 @@
 **修订，由 Ren 取（2026-10-18）。** （4）修订。Ren 的这句话有两个分句，由核心中已有的两种结构读出。“heavily coupled into it”是耦合强度，如（1）。“a highly entangled system”说耦合位于贯穿整体的回路上，所以一个动作的差别所做的会绕回来，没有有限的回应阶确定它：全部条件列出时，一个条件上游没有回路处，有限阶在那里精确（`carriedWithin_exact_of_no_loop`）；上游有被供给、且耦合每步成立的回路处，每一阶都有遗漏（`carriedWithin_lt_of_loop`），二者都在 `Becoming.Loops` 中。“highly”于是是回路上的强度与它们作用的频度；差别是否失控取决于两者，复现耦合的回路不必失控（`Frequency.Sparse.polynomial`，P123）。没有回路的强耦合之链是强耦合的，而不是纠缠的。等同于量子的纠缠仍不采用：二者共有的，即整体不能分为各自计算的部分，是类比。（3）以上面更正的范围保留：在什么也不取、因而创造量的律下，所持的差别不断到达；在第一定律下未表明，而在其余不净给出的有限整体中，水平留在存量之内（`Flow.whole_bounded_of_rest_idle`），所以无界的到达需要从外部带入的量，或被创造的量：这是理论对 Ren 的“we can't compounding forever”的形式。（1）与（2）不变。**改变了什么。** 上面的（4）只以强度读“entangled”；（3）现在有其范围。**会改变它的。** Ren 把“a highly entangled system”只读作强度；一个耦合交缠而 Ren 判为不纠缠的整体。论证在[决定简报](READINGS-PENDING-REN.md#a3-entangled-d39-4-and-the-scope-of-d39-3)中；Ren 的回答（[原话](../../../../sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md)）是其来源，不是其根据。上面的原文保留。
 
 **在一个说明中修订（2026-10-19，D45）。** （1）中关于识的一句如 D37 的修订回答：耦合强度度量一个形成耦合入一个水平有多强，是耦合的度量，不是识的。用采用的词汇，（1）中的“识的强弱”读作耦合入的强弱。其余如 2026-10-18 所修订，不变。上面的原文保留。
+
+**修订（2026-10-19，工作板 MD1）。** （4）再次修订。“a highly entangled system”读作相互依存：每个形成的影响闭包都是整体，所以每个延续都在某一间隔上受每个其他者的影响（`Flow.MutuallyDependent`，`Becoming.MutualDependence`）。处处共享条件（每个系统都是整体）是较弱的读法，相互供给（每个供给闭包都是整体）是较强的读法，每一个都严格强于前一个（`Clearing.shares_not_mutual`、`Drawing.mutual_not_fed`）。在相互依存之下，每一影响之链都位于贯穿整体的回路上（`Flow.mutuallyDependent_iff_reach`），这保留了 2026-10-18 回路读法的内容，并把它陈述在形成之间。承载依存的耦合在回路上每步都成立时，能到达的最大差别两边都按指数增长（`exponential_around`），所以“highly”仍是回路上的强度与其作用的频度。“heavily coupled into it”仍是耦合强度。**改了什么。** 2026-10-18 的文字把“entangled”读作条件之间回路上的耦合，开篇的注发现这只单向地把纠缠接到步速。相互依存是延续之间的关系，是理论的首要对象，回路读法由它推出。**会改变它的。** 三种读法都不能把握的“entangled”的意思。Ren 的回复（[原话](../../../../sources/15-codex-theory-conversations/2026-10-19-entangled-mutual-dependence.md)）是出处，不是依据。上面的文字保留。
 
 <a id="d26-学习与智慧--learning-and-wisdom"></a>
 ### D26. 学习与智慧

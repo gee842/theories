@@ -1,0 +1,443 @@
+{
+  "schema_version": 2,
+  "id": "mutual-dependence-and-its-pace",
+  "title": {
+    "en": "Mutual dependence, and the exponential pace that loops of couplings give",
+    "zh": "相互依存，与耦合回路给出的指数步速"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T14:51:35+00:00",
+  "statement": {
+    "en": "Mutual dependence (every influence closure the whole) lies strictly between sharing conditions and mutual feeding, and makes bounded significance the continuation condition. Around couplings acting at every step the most difference that can arrive is exponential both ways.",
+    "zh": "相互依存（每个影响闭包都是整体）严格介于共享条件与相互供给之间，并使有界的意义成为延续条件。在每步都作用的耦合回路上，能到达的最大差别两边都是指数。"
+  },
+  "laws": [
+    {
+      "en": "Three readings of a web whose closures are the whole: sharing conditions throughout (every system the whole), mutual dependence (every influence closure the whole: every continuation can be affected, at some remove, by every other) and mutual feeding (every feeding closure the whole). Mutual feeding gives mutual dependence, which gives sharing conditions throughout.",
+      "zh": "闭包为整体之网的三种读法：处处共享条件（每个系统都是整体）、相互依存（每个影响闭包都是整体：每个延续都在某一间隔上受每个其他者的影响）与相互供给（每个供给闭包都是整体）。相互供给给出相互依存，相互依存给出处处共享条件。",
+      "declarations": [
+        "Becoming.Flow.SharesThroughout",
+        "Becoming.Flow.MutuallyDependent",
+        "Becoming.Flow.MutuallyFed",
+        "Becoming.Flow.MutuallyFed.mutuallyDependent",
+        "Becoming.Flow.MutuallyDependent.sharesThroughout"
+      ]
+    },
+    {
+      "en": "Influence and reach are converse: g lies within f's influence closure exactly where f lies within g's reach closure. So a flow is mutually dependent exactly where every reach closure is the whole: whatever a formation affects can affect it back, and every link of affecting lies on a loop through the whole.",
+      "zh": "影响与所及互逆：g 在 f 的影响闭包之内，恰当 f 在 g 的所及闭包之内。所以流相互依存，恰当每个所及闭包都是整体：一个形成所影响的都能反过来影响它，每一影响之链都位于贯穿整体的回路上。",
+      "declarations": [
+        "Becoming.Flow.withinInfluence_iff_withinReach",
+        "Becoming.Flow.mutuallyDependent_iff_reach"
+      ]
+    },
+    {
+      "en": "One condition that every formation depends on and exchanges with makes a flow mutually dependent; one that every formation takes part in, requires and gives to at one step makes it mutually fed.",
+      "zh": "每个形成都依存于并与之交换的一个条件使流相互依存；每个形成在一步都参与、需要并给予的一个条件使流相互供给。",
+      "declarations": [
+        "Becoming.Flow.mutuallyDependent_of_common",
+        "Becoming.Flow.mutuallyFed_of_common"
+      ]
+    },
+    {
+      "en": "Under each reading, significance bounded by the matching closure of each center (its system, influence closure or feeding closure) is the continuation condition; for feeding this holds for any web of mutual feeding, not only around one common condition.",
+      "zh": "在每种读法下，以各中心相应闭包（系统、影响闭包或供给闭包）为界的意义就是延续条件；就供给而言，这对任何相互供给的网成立，不仅围绕一个共同条件。",
+      "declarations": [
+        "Becoming.Flow.SharesThroughout.unrestricted",
+        "Becoming.Flow.MutuallyDependent.unrestricted",
+        "Becoming.Flow.MutuallyFed.unrestricted"
+      ]
+    },
+    {
+      "en": "Around a loop of m + 1 couplings holding at every step, a chain advances one coupling a step and the loop returns what reached its condition every m + 1 steps; after R turns the carried amount there, the most difference that can arrive, is at least 2^R times what had reached it, and likewise at every condition downstream along couplings holding at every step.",
+      "zh": "在每步都成立的 m + 1 个耦合构成的回路上，链每步前进一个耦合，回路每 m + 1 步把到达其条件者送回；R 周之后，那里所携带的量（能到达的最大差别）至少是原先到达者的 2^R 倍，沿每步都成立的耦合往下游的每个条件亦然。",
+      "declarations": [
+        "Becoming.CoupledAlways.chainInTime",
+        "Becoming.returns_of_coupledAlways",
+        "Becoming.carried_pow_around",
+        "Becoming.carried_pow_downstream"
+      ]
+    },
+    {
+      "en": "With the part giving no gap after the start, starting gaps at most D and the strengths into each condition at most M, the carried amount at step t is at most D (1 + M)^t whatever the couplings, so around such a loop it is exponential both ways; where every listed condition is coupled at every step into every listed condition, the lower bound holds from every condition to every condition.",
+      "zh": "部分在起始之后不给出差，起始之差至多为 D，流入每个条件的强度至多为 M 时，第 t 步所携带的量不论耦合如何都至多为 D (1 + M)^t，所以在这样的回路上两边都是指数；每个列出的条件每步都耦合入每个列出的条件时，下界从每个条件到每个条件都成立。",
+      "declarations": [
+        "Becoming.carried_le_pow_always",
+        "Becoming.exponential_around",
+        "Becoming.CoupledThroughout",
+        "Becoming.CoupledThroughout.exponential"
+      ]
+    },
+    {
+      "en": "The pace of a selection: where at every generation each carrier of a target leaves at least a offspring and each other parent at most b, the carriers' offspring carry it and the others' next generation is among their offspring, the carriers grow at least as a^n, the others at most as b^n, and the carriers stand to the others at least (a/b)^n times as they stood.",
+      "zh": "选择的步速：每一代中，目标的每个携带者至少留下 a 个后代、其余每个亲本至多 b 个，携带者的后代携带它，其余的下一代在其后代之中时，携带者至少按 a^n 增长，其余至多按 b^n 增长，携带者对其余之比至少是起初的 (a/b)^n 倍。",
+      "declarations": [
+        "Becoming.carriers_grow",
+        "Becoming.others_bounded",
+        "Becoming.share_ratio_pow"
+      ]
+    },
+    {
+      "en": "A draw that exceeds everything drawn before: where each step's draw exceeds the sum of the earlier ones, two to the j is at most what was drawn before j plus one. Under balance with nothing given, what stands and what has been drawn add up to the starting stock, so everything drawn is within it; more than half the starting stock stands at every step such a draw is met, and lasting n steps needs a stock of at least 2^n - 1.",
+      "zh": "超过此前所取之总的汲取：每一步所取都超过此前之和时，2 的 j 次方至多是 j 之前所取加一。在平衡下、无所给出时，所余与所取相加为起始存量，所以所取都在其内；这样的汲取得以满足的每一步，都余下多于一半的起始存量，持续 n 步需要至少 2^n - 1 的存量。",
+      "declarations": [
+        "Becoming.drawnBefore",
+        "Becoming.pow_le_drawnBefore",
+        "Becoming.Flow.Balances.level_add_drawn",
+        "Becoming.Flow.Balances.drawn_within",
+        "Becoming.Flow.Balances.half_stands",
+        "Becoming.Flow.Balances.doubling_needs"
+      ]
+    },
+    {
+      "en": "Overshoot, in which each formation feeds the other's condition, is mutually fed.",
+      "zh": "在 Overshoot 中，每个形成供给对方的条件，它相互供给。",
+      "declarations": [
+        "Becoming.Overshoot.mutuallyFed"
+      ]
+    },
+    {
+      "en": "In DoublingDraw a stock of seven meets draws of one, two and four: the flow balances, four of the seven stand at the third step, more than half, nothing stands after it, and two to the third is the stock plus one, so the bound of doubling_needs is attained.",
+      "zh": "在 DoublingDraw 中，七的存量面对一、二、四的汲取：流平衡，第三步余七中之四，多于一半，此后为零，2 的三次方等于存量加一，所以 doubling_needs 的界被达到。",
+      "declarations": [
+        "Becoming.DoublingDraw.flow",
+        "Becoming.DoublingDraw.web",
+        "Becoming.DoublingDraw.balances",
+        "Becoming.DoublingDraw.exceeds",
+        "Becoming.DoublingDraw.half_then_none"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The readings and their order use no premise. The pace laws suppose couplings holding at every step around the loop and along the path, and, for the upper bound, the part giving no gap after the start, starting gaps at most D and strengths into each condition at most M. The pace of a selection supposes transmission. The draw laws suppose balance and nothing given at the condition across the stretch. The continuation condition appears only as the conclusion Unrestricted of the three bounded readings.",
+      "zh": "无公理。读法及其次序不用前提。步速规律假定回路上与路径上的耦合每步都成立；上界另假定部分在起始之后不给出差、起始之差至多为 D、流入每个条件的强度至多为 M。选择的步速假定传递。汲取规律假定该条件在这一段中平衡且无所给出。延续条件只作为三种有界读法的结论 Unrestricted 出现。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That a dependence acts as a coupling by level with positive strength at every step: this is where the formation-level readings and the condition-level pace laws meet, and it is supplied.",
+      "zh": "一个依存以水平耦合、每步以正强度作用：这是形成层面的读法与条件层面的步速规律相接之处，是给定的。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "That amounts, not differences, grow exponentially under the first law: the lower bounds are of the carried amount, attained under a law that creates amounts, and a finite whole to which the rest gives nothing net stays within its stock.",
+      "zh": "在第一定律下按指数增长的是量而不是差：下界是所携带的量的，在创造量的律下达到；其余不净给予的有限整体保持在其存量之内。",
+      "kind": "scope"
+    },
+    {
+      "en": "That the Earth is mutually dependent, how often its couplings act, how fast its draws grow, or that training a model is a selection with transmission.",
+      "zh": "地球相互依存、其耦合多常作用、其汲取增长多快，或训练一个模型是带传递的选择。",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MutualDependence.lean",
+      "detail": {
+        "en": "Sharing conditions throughout is not mutual dependence: in the clearer's web every system is the whole, while the dweller lies beyond the clearer's influence closure (Clearing.shares_not_mutual).",
+        "zh": "处处共享条件不是相互依存：在清除者的网中每个系统都是整体，而栖居者在清除者的影响闭包之外（Clearing.shares_not_mutual）。"
+      },
+      "declarations": [
+        "Becoming.Clearing.shares_not_mutual"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MutualDependence.lean",
+      "detail": {
+        "en": "Mutual dependence is not mutual feeding, nor mutual benefit: in Drawing two formations each take from the condition the other requires and nothing is given; the flow balances, the pair is mutually dependent, and neither lies within the other's feeding closure (Drawing.mutual_not_fed).",
+        "zh": "相互依存不是相互供给，也不是相互得益：在 Drawing 中，两个形成各从对方所需的条件取用而无所给出；流平衡，二者相互依存，谁也不在对方的供给闭包之内（Drawing.mutual_not_fed）。"
+      },
+      "declarations": [
+        "Becoming.Drawing.flow",
+        "Becoming.Drawing.web",
+        "Becoming.Drawing.balances",
+        "Becoming.Drawing.affected",
+        "Becoming.Drawing.mutuallyDependent",
+        "Becoming.Drawing.mutual_not_fed"
+      ]
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T144846.235357Z): the 42 declarations of Becoming.MutualDependence, 33 of them theorems, have empty axiom reports; the checker verifies core purity. Author self-review in study section 212; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T144846.235357Z）：Becoming.MutualDependence 的 42 项声明（33 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 212 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "A law joining a dependence to a coupling by level with a derived strength; the pace laws with real strengths or continuous time; a selection with noisy transmission; an independent review.",
+    "zh": "把依存接到以导出强度按水平耦合的规律；实数强度或连续时间下的步速规律；传递有噪声的选择；独立审查。"
+  },
+  "correspondence": {
+    "en": "Reads the opening's \"the whole Earth has become a highly entangled system\", \"heavily coupled into it\" and \"an exponential pace, which leaves us very little time to react\" (OPENING, Ren's voice; provenance, not warrant): \"entangled\" as mutual dependence, revising D39's loop reading of 18 October after Ren's reply of 19 October; \"exponential pace\" as the growth around loops of couplings acting at every step and, in a selection, as the share ratio's; \"little time\" through half_stands. The note [^present] cites this record. The readings are the AI's; study section 212.",
+    "zh": "读开篇的“the whole Earth has become a highly entangled system”“heavily coupled into it”与“an exponential pace, which leaves us very little time to react”（OPENING，Ren 的口吻；是出处，不是依据）：依 Ren 10 月 19 日的回复，“entangled”读作相互依存，修订 D39 10 月 18 日的回路读法；“exponential pace”读作每步都作用的耦合回路上的增长，在选择中读作份额之比的增长；“little time”经 half_stands 读出。注 [^present] 引本记录。读法是 AI 的；研究第 212 节。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MutualDependence.lean",
+  "aliases": [
+    "mutual dependence",
+    "相互依存",
+    "entangled",
+    "highly entangled system",
+    "exponential pace",
+    "mutually fed",
+    "shares conditions throughout",
+    "doubling draw",
+    "pace of a selection",
+    "Becoming.Flow.MutuallyDependent",
+    "Becoming.exponential_around",
+    "Becoming.share_ratio_pow",
+    "Becoming.Flow.Balances.half_stands"
+  ],
+  "dependencies": [
+    {
+      "id": "levels-of-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the closures of Becoming.Feedback (WithinSystem, WithinInfluence, WithinReach, WithinFeeding), their inclusions, reach_whole_of_common, feeding_whole_of_common and the witnesses Clearing and Static.",
+        "zh": "复用 Becoming.Feedback 的各闭包（WithinSystem、WithinInfluence、WithinReach、WithinFeeding）、其包含关系、reach_whole_of_common、feeding_whole_of_common 及见证 Clearing 与 Static。"
+      },
+      "interface": {
+        "output": {
+          "en": "The feeding closure lies within the influence closure, which lies within the system; one common condition makes the reach or feeding closures the whole.",
+          "zh": "供给闭包在影响闭包之内，影响闭包在系统之内；一个共同条件使所及闭包或供给闭包成为整体。"
+        },
+        "input": {
+          "en": "The three readings, their order and the bounded significances.",
+          "zh": "三种读法、其次序与有界的意义。"
+        },
+        "conditions": {
+          "en": "None beyond the hypotheses named.",
+          "zh": "除所列假设外无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    },
+    {
+      "id": "comparison-where-the-rest-responds",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses WithinClosure.converse of Becoming.Response.",
+        "zh": "复用 Becoming.Response 的 WithinClosure.converse。"
+      },
+      "interface": {
+        "output": {
+          "en": "A closure under the converse of a relation is the converse of the closure.",
+          "zh": "在关系之逆下的闭包是闭包之逆。"
+        },
+        "input": {
+          "en": "Influence and reach read as converse.",
+          "zh": "影响与所及读作互逆。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean"
+      }
+    },
+    {
+      "id": "how-often-couplings-act",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses carried_returns, carried_le_count, Frequency.count_always, ChainInTime, Returns and carried_along_in_time of Becoming.Frequency.",
+        "zh": "复用 Becoming.Frequency 的 carried_returns、carried_le_count、Frequency.count_always、ChainInTime、Returns 与 carried_along_in_time。"
+      },
+      "interface": {
+        "output": {
+          "en": "Each return around a loop at least doubles what reached it; the carried amount is at most D (1 + M) to the number of coupling steps.",
+          "zh": "绕回路的每次返回至少使到达者加倍；所携带的量至多为 D (1 + M) 的耦合步数次方。"
+        },
+        "input": {
+          "en": "Returns every turn around a loop of couplings holding at every step; every step marked.",
+          "zh": "在每步都成立的耦合回路上每周返回；每步都被标记。"
+        },
+        "conditions": {
+          "en": "Couplings holding at every step; bounded starts and strengths for the upper bound.",
+          "zh": "耦合每步都成立；上界另需起点与强度有界。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean"
+      }
+    },
+    {
+      "id": "target-capture",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses offspringCount, le_offspringCount, offspringCount_le and mul_assoc_nat of Becoming.Capture.",
+        "zh": "复用 Becoming.Capture 的 offspringCount、le_offspringCount、offspringCount_le 与 mul_assoc_nat。"
+      },
+      "interface": {
+        "output": {
+          "en": "A family of parents each leaving at least a (at most b) offspring leaves at least (at most) a (b) for each.",
+          "zh": "每个亲本至少（至多）留下 a（b）个后代的族，按每个亲本至少（至多）留下 a（b）个。"
+        },
+        "input": {
+          "en": "One generation of the iterated selection.",
+          "zh": "迭代选择的一代。"
+        },
+        "conditions": {
+          "en": "Transmission, as a hypothesis.",
+          "zh": "传递，作为假设。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "runaway-distance-unregistered",
+      "detail": {
+        "en": "Nothing coupled in by threshold bounds the distance to the break; half_stands adds that under a draw exceeding everything drawn before, what stands gives no warning.",
+        "zh": "经阈耦合入者不界定到断裂的距离；half_stands 补充：在超过此前所取之总的汲取下，所余并不预警。"
+      }
+    },
+    {
+      "id": "relative-position-is-zero-sum",
+      "detail": {
+        "en": "Drawing is a race in which each draws on what the other depends on: mutual dependence without mutual feeding.",
+        "zh": "Drawing 是各自汲取对方所依存者的竞逐：有相互依存而无相互供给。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MutualDependence.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Clearing.shares_not_mutual",
+        "Becoming.CoupledAlways.chainInTime",
+        "Becoming.CoupledThroughout",
+        "Becoming.CoupledThroughout.exponential",
+        "Becoming.DoublingDraw.balances",
+        "Becoming.DoublingDraw.exceeds",
+        "Becoming.DoublingDraw.flow",
+        "Becoming.DoublingDraw.half_then_none",
+        "Becoming.DoublingDraw.web",
+        "Becoming.Drawing.affected",
+        "Becoming.Drawing.balances",
+        "Becoming.Drawing.flow",
+        "Becoming.Drawing.mutual_not_fed",
+        "Becoming.Drawing.mutuallyDependent",
+        "Becoming.Drawing.web",
+        "Becoming.Flow.Balances.doubling_needs",
+        "Becoming.Flow.Balances.drawn_within",
+        "Becoming.Flow.Balances.half_stands",
+        "Becoming.Flow.Balances.level_add_drawn",
+        "Becoming.Flow.MutuallyDependent",
+        "Becoming.Flow.MutuallyDependent.sharesThroughout",
+        "Becoming.Flow.MutuallyDependent.unrestricted",
+        "Becoming.Flow.MutuallyFed",
+        "Becoming.Flow.MutuallyFed.mutuallyDependent",
+        "Becoming.Flow.MutuallyFed.unrestricted",
+        "Becoming.Flow.SharesThroughout",
+        "Becoming.Flow.SharesThroughout.unrestricted",
+        "Becoming.Flow.mutuallyDependent_iff_reach",
+        "Becoming.Flow.mutuallyDependent_of_common",
+        "Becoming.Flow.mutuallyFed_of_common",
+        "Becoming.Flow.withinInfluence_iff_withinReach",
+        "Becoming.Overshoot.mutuallyFed",
+        "Becoming.carried_le_pow_always",
+        "Becoming.carried_pow_around",
+        "Becoming.carried_pow_downstream",
+        "Becoming.carriers_grow",
+        "Becoming.drawnBefore",
+        "Becoming.exponential_around",
+        "Becoming.others_bounded",
+        "Becoming.pow_le_drawnBefore",
+        "Becoming.returns_of_coupledAlways",
+        "Becoming.share_ratio_pow"
+      ],
+      "sha256": "5b737ea7b7fb5e4799f36200ced5f5078d12b4aa13d8c68475e0fd6a15cf8ca7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.reach_whole_of_common",
+        "Becoming.Flow.feeding_whole_of_common",
+        "Becoming.Clearing.levels",
+        "Becoming.Clearing.system_whole"
+      ],
+      "sha256": "934d11a64a1b0972253eef6a7f8ffa7c06f9d28e99e61d54441e68876d2ecd12"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.WithinClosure.converse"
+      ],
+      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.carried_returns",
+        "Becoming.carried_le_count",
+        "Becoming.carried_along_in_time"
+      ],
+      "sha256": "ddc46bc4842f553ae98e43121ceddff53811270b7da137dbaf61c316bd93c0b7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.le_offspringCount",
+        "Becoming.offspringCount_le"
+      ],
+      "sha256": "a56802715a61e381d6e83afd4d8e2342f140847811666f86c92fc1f16f1c7b01"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T144846.235357Z/verification.json",
+      "role": "receipt",
+      "sha256": "b6b2c3b94e8f64b79776e089754ac9dce5c04096e007666751214c861f5ef3a2"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "086598bb3234878665890a5fb30fe8259f5703b14e5a00a23257312955da7cb7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+      "role": "integration",
+      "sha256": "e2528613c6ebe7b2afcc55c45b24c00c28e23f2bd9ccceeb0d13a217af1d0bb9"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "4fee08e5e878a0eb71b40e80deb95c09c5d22f6240277c74a2957f52af47c994"
+    },
+    {
+      "path": "theories/becoming/OPENING.md",
+      "role": "provenance",
+      "sha256": "de3e1a15a0b3dad4aee6a46a87eedae226963cbe0770c127c321222668c62c32"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-entangled-mutual-dependence.md",
+      "role": "provenance",
+      "sha256": "e8d86f98ad9435b3420f92bb5e92454dd974c85119e674310a3b5ff1c058506e"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MutualDependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T144846.235357Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.MutualDependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (MD1), to read \"highly entangled\" as mutual dependence and to join it to the exponential pace of couplings, of a selection and of a draw; study section 212.",
+      "zh": "2026年10月19日：新增（MD1），把“highly entangled”读作相互依存，并把它接到耦合、选择与汲取的指数步速；研究第 212 节。"
+    }
+  ]
+}

@@ -66,7 +66,7 @@ That taking more yields more offspring, that offspring carry their parents' targ
 - Related, not a proved adapter: [seeking-boundary](seeking-boundary.md). B1 and B2: where seeking can rest; here B5: how a target that cannot rest is selected and where the selection is held.
 - Related, not a proved adapter: [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md). Captured's rule region is an absorbing region; a perturbed state or rule is drawn in and never returns (P81).
 
-**Used by:** [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md) · [selection-through-registration](selection-through-registration.md)
+**Used by:** [mutual-dependence-and-its-pace](mutual-dependence-and-its-pace.md) · [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md) · [selection-through-registration](selection-through-registration.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
