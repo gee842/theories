@@ -158,6 +158,7 @@ import Becoming.Joining
 import Becoming.Granularity
 import Becoming.HistoryLanguages
 import Becoming.HistoryIdeals
+import Becoming.Verification
 import Becoming.Coverage
 import Becoming.Presentations
 import Becoming.PresentationFrames
@@ -259,6 +260,7 @@ import Becoming.Labels
 import Becoming.Enough
 import Becoming.Settling
 import Becoming.LastChange
+import Becoming.LimitVerification
 import Becoming.SelectionGap
 import Becoming.SelectionReach
 import Becoming.SelectionPool
@@ -1746,6 +1748,19 @@ readings of the unfolding (`Becoming.Labelled`).
   principle of omniscience. Words and histories under prefix; for the process of all sequences,
   the runs' histories are the infinite histories of words; prefix-closed languages give closed
   classes of histories.
+* `Becoming.Verification` (L4): what a finite stretch verifies, and what none can refute (no
+  premise). A class of histories is open, holding every history above one it holds and a member
+  of every directed family whose union it holds, exactly where it is the class meeting an upper
+  set of stretches, fixed by its finite histories, and exactly where it is verifiable, with no
+  premise either way; refuting is verifying the complement, and the step back is, asked of every
+  order, double-negation elimination (on runs it gives Markov's principle). Every reading is its
+  hull met with its remainder, holding wherever it is adhered to: the largest such part, refuted
+  by no finite stretch, met through every stretch up to double negation and outright where it is
+  decided whether the reading can still hold there; the disjunctive remainder is dense, asked of
+  every process, exactly under excluded middle. What a stretch finds against a reading is what it
+  finds against its hull; a refutable reading refuted by no stretch excludes nothing; a practice
+  keeping verdicts within a favoured reading, never refuted by the record, exists exactly where
+  that reading is dense.
 * `Becoming.Coverage` (L3): a placement course and the global cover it builds (no premise): a
   course of placements covers a board exactly where its tiles and the rest make up the board up to
   order, with no event order; where allowed tiles join opposite colours the balance is kept, so
@@ -2067,6 +2082,19 @@ readings of the unfolding (`Becoming.Labelled`).
   that every run with no reachable change that can be undone settles, for every process of
   decidable configurations in a world a list holds, is exactly that principle. With it, assured
   enough is every reachable stay meeting the target and no reachable change undoable.
+* `Becoming.LimitVerification` (L4): what a method comes to say in the limit (no premise beyond
+  Markov's principle and decidable configurations, where stated). A method guesses yes or no at
+  each horizon from the record so far; it verifies a reading in the limit where it converges to
+  yes exactly on the runs inside, and refutes it in the limit where its yes recurs exactly there.
+  A reading verified in the limit is a union of closed readings, one refuted in the limit a meet of
+  verifiable ones; readings of tests and "some test succeeds" are both; meets are kept, of readings
+  refuted in the limit by a joint guess. With decidable configurations "the last step changed
+  nothing" verifies settling in the limit; on the free process settling and its complement are
+  dense, settling is neither verifiable nor refutable, and under Markov's principle no method
+  refutes it in the limit; recurrence is refuted in the limit and under Markov's principle verified
+  by none. Identification in the limit verifies and refutes each hypothesis in the limit. From not
+  recurring to stopping, and splitting a recurring disjunction, each give the limited principle of
+  omniscience.
 * `Becoming.Frequency` (L4): how often couplings act, with no premise beyond the strengths and the
   schedule each statement names. Counting only the steps at which anything couples, the most
   difference that can arrive is at most `D * (1 + M) ^ a`, attained by a self-loop. Every return

@@ -1771,6 +1771,41 @@
    "module": "Becoming.LeastLoss",
    "category": "restates",
    "reason": "Branching.loss_needs_merge states it on a run of every process, needing only the run's configurations listed; at Law.process next it is this law through Branching.law_lossless_iff. The orbit form is proved where it stands, as Recurrence's Law.rise_not_lossless is beside Branching.rise_not_lossless"
+  },
+  "Becoming.Ideals.Open.interior_iff": {
+   "module": "Becoming.Verification",
+   "category": "support",
+   "reason": "An open class is its own interior: `VerifiableBy.interior_iff` with `Open.verifiable`, a one-line unpacking; at runs, a verifiable reading holds exactly its verified runs (`verifiable_iff_verified`)."
+  },
+  "Becoming.Ideals.hull_not_interior_compl": {
+   "module": "Becoming.Verification",
+   "category": "restates",
+   "reason": "The hull meets no ideal of the interior of the complement, `AdheresBy.not_interior_compl` read on classes; its case of runs is `Adheres.not_verified_compl`, stated on the base."
+  },
+  "Becoming.Ideals.interior_iff_meets": {
+   "module": "Becoming.Verification",
+   "category": "support",
+   "reason": "The interior is the class meeting the stretches only ideals of the class hold: the two definitions unpacked (`Iff.rfl`); at runs it is `Stretches.verifyingClass_iff`."
+  },
+  "Becoming.Ideals.interior_largest": {
+   "module": "Becoming.Verification",
+   "category": "support",
+   "reason": "The interior holds every open subclass: `interiorBy_largest` with `Open.verifiable`, a one-line corollary; at runs it is `verified_largest`."
+  },
+  "Becoming.Ideals.interior_open": {
+   "module": "Becoming.Verification",
+   "category": "support",
+   "reason": "The interior is open: `interiorBy_verifiable` with `verifiable_open`, a one-line corollary; at runs, being verified is verifiable (`verified_verifiable`)."
+  },
+  "Becoming.Ideals.interior_sub": {
+   "module": "Becoming.Verification",
+   "category": "support",
+   "reason": "The interior lies within the class: `InteriorBy.holds` read on classes, a one-line unpacking; at runs it is `Verified.holds`."
+  },
+  "Becoming.Ideals.verifiable_compl_refutable_iff": {
+   "module": "Becoming.Verification",
+   "category": "calibration",
+   "reason": "Asked of every order and class, the step from a verifiable class to a refutable complement is exactly double-negation elimination (two-element chain): a history only known not to lie outside a verifiable class does not thereby show the stretch that verifies it. On runs the same step gives Markov's principle (`verifiable_compl_refutable_markov`)."
   }
  }
 }
