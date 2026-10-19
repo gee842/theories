@@ -388,6 +388,8 @@ def render_views(records):
         lines = [H('#', title, former), '', README_MARKER if path == 'README.md' else MARKER, '',
                  ' · '.join(link(p, path, label) for p, label in NAV), '']
         if kind == 'home':
+            if config.get('readme_status'):
+                lines += ['> ' + config['readme_status'], '']
             if opening:
                 lines += [opening, '', '---', '']
             lead = markdown_file('readme_lead', path, config)

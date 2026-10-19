@@ -4,6 +4,8 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
+> This is ongoing, unfinished work: the theory, its proofs and its readings are still being developed and revised.
+
 ## Truth exists
 
 There is a set of universal invariants, a law of how anything comes to be, lasts, changes and passes away. In every universe, becoming happens, and the law follows.<sup><a id="ref-law"></a>[1](#note-law)</sup>
