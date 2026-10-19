@@ -101,6 +101,7 @@ import Becoming.Hexagrams
 import Becoming.HexagramPlaces
 import Becoming.HexagramLaws
 import Becoming.HexagramSites
+import Becoming.HexagramSequences
 import Becoming.Withholding
 import Becoming.Widening
 import Becoming.Pace
@@ -1233,6 +1234,21 @@ readings of the unfolding (`Becoming.Labelled`).
   waning: at the top it passes out, and two steps on a sole line stands at the bottom. Censuses
   of the 彖, the 小象 and the line texts are checked on their configurations; every law is read
   along runs.
+* `Becoming.HexagramSequences` (L4): what of the arrangements of the 傳 is a law, with no
+  premise. A law runs the received order (序卦) exactly where it agrees everywhere but at 未濟
+  with the law taking each to the next; only the one closing 未濟 to 乾 merges nothing, with one
+  orbit of sixty-four. Every such law reads every line for every line, so no three-cell rule on
+  a ring of six runs the order, waxing and waning among them, though 剝 to 復 is a step of the
+  straight shift (剝窮上反下); none commutes with 錯, 綜 or both, so no rearrangement of the places
+  with a mask runs it. Exchanging two lines (卦變) keeps the count of unbroken lines; an exchange
+  across the trigrams is a step of the law of exchange between them (損下益上 and 損上益下 at 損
+  and 益), and from 泰 and 否 the exchanges stay among the twenty with three unbroken lines. The
+  parity of the count turns at every step of waxing and waning and every change of a line, a
+  lumping both go alike across; for trigrams it is 陽卦奇，陰卦偶, and a change of a line turns
+  its trigram's class. The 雜卦 keeps the received order's pairs, the last eight interleaved. No
+  run of waxing and waning rests or comes to rest. The stations of 說卦 ch. 5 are the run of no
+  law commuting with 錯, 綜 or the rotation; 交 holds at every height of 泰 and none of 否, which
+  every reading the complement keeps reads alike along their runs.
 * `Becoming.Withholding` (L3): giving that waits on giving. With memory (a formation gives
   where it gave and all it waits on gave), a formation gives at a step exactly where every
   formation within that many waits of it gave at the start; withholding stays, spreads

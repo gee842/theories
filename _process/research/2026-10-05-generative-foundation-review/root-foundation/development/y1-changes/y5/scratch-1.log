@@ -1,0 +1,17 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories--claude-worktrees-charming-kirch-c0f953/d5c78993-5495-4bc3-a361-b6c0d8e26324/scratchpad/y5tree",
+  "modules": 54,
+  "ran": [
+    "Becoming.HexagramSequences",
+    "BecomingHexagramSequencesAxiomAudit"
+  ],
+  "reused": 53,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramSequences": {
+      "theorems": 94,
+      "declarations": 162,
+      "with_axioms": {}
+    }
+  }
+}

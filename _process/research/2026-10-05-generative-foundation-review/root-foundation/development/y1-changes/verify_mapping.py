@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the mapping of the 周易 and the 易传 onto the spine (Y1, Y2, Y3, Y4). usage, from anywhere:
+"""Check the mapping of the 周易 and the 易传 onto the spine (Y1, Y2, Y3, Y4, Y5). usage, from anywhere:
   python3 -B verify_mapping.py [--receipt PATH] [--chapter PATH]   # check, exit 1 on any failure
   python3 -B verify_mapping.py --table                             # print the chapter's passage table
 
@@ -10,8 +10,8 @@ Checks, each against the repository's own files:
      Wikisource's markup removed (character-variant markup -{…}-, links, templates, tags);
   3. every declaration a passage names is in the audited declaration list of a core receipt
      (default: the newest under becoming-checks/); names of Becoming.Hexagrams,
-     Becoming.HexagramPlaces, Becoming.HexagramLaws and Becoming.HexagramSites not yet in that receipt are
-     checked against the modules' source and reported as such;
+     Becoming.HexagramPlaces, Becoming.HexagramLaws, Becoming.HexagramSites and Becoming.HexagramSequences not
+     yet in that receipt are checked against the modules' source and reported as such;
   4. the received order of Hexagrams.lean is the order of the preserved pages: page n is the
      n-th hexagram (第n卦), follows page n-1 by its link, and its trigram line (X下Y上) gives
      the six lines of the n-th entry of `order`;
@@ -19,7 +19,7 @@ Checks, each against the repository's own files:
      the lines of 坤 復 臨 泰 大壯 夬 乾 and 乾 姤 遯 否 觀 剝 坤, `sui` is 隨, and the law of
      waxing and waning carries 隨 → 中孚 → 蠱 → 小過 → 隨 and 乾 → 姤 → … → 坤 → 復 → … → 乾;
   6. the chapter's passage table, between its two markers, is the table printed by --table;
-  7. each configuration HexagramPlaces.lean or HexagramSites.lean names by its number
+  7. each configuration HexagramPlaces.lean, HexagramSites.lean or HexagramSequences.lean names by its number
      (`def jiJi : Hexagram := number 63`) carries in its doc comment the name of that page of the
      received order;
   8. four censuses of the text match the lists of HexagramPlaces.lean: every 小象 line that states
@@ -40,7 +40,11 @@ Checks, each against the repository's own files:
      that says 位 in `lineTextPlace`; every 大象 that says 中, the configuration's own name left
      out, sets the lower trigram's image within the upper one's (DAXIANG_WITHIN), and every 大象
      that says 位 is of the 君子 (DAXIANG_PLACE); every 小象 line that says 中 is at a middle place
-     but the four of XIAOXIANG_MIDDLE_OTHER, each with its word.
+     but the four of XIAOXIANG_MIDDLE_OTHER, each with its word;
+ 10. the arrangements of HexagramSequences.lean (Y5): `zaguaNumbers` is the order in which the 雜卦 names the
+     configurations, read from the atlas's preserved text (ZAGUA, bound by RO's verify_ro.py) by the names of the
+     received order's pages; each trigram the module names (`Trigram.qian`, …) has the lines of TRIGRAM, and
+     `Trigram.stations` is the order in which 說卦 ch. 5 names them (帝出乎震 … 成言乎艮).
 It checks text and names, not the proofs: the core checker proves the declarations."""
 import argparse
 import hashlib
@@ -54,6 +58,7 @@ ROOT = HERE.parents[5]
 SRC = ROOT / 'sources/zhouyi-yizhuan'
 PKG = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming'
 CHAPTER = ROOT / 'theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md'
+ZAGUA = ROOT / 'sources/chinese-classical-texts/yidao-v1.3/evidence/texts/YD-OW-ZG.txt'
 BEGIN, END = '<!-- passage-map:begin -->', '<!-- passage-map:end -->'
 KIND_ZH = {'agreement': '相合', 'scope': '定域', 'divergence': '相分'}
 TRIGRAM = {'乾': (1, 1, 1), '兌': (1, 1, 0), '離': (1, 0, 1), '震': (1, 0, 0),
@@ -430,8 +435,11 @@ def main():
     sites = PKG / 'Becoming/HexagramSites.lean'
     if not sites.exists():
         sites = HERE / 'y4/Becoming/HexagramSites.lean'
+    sequences = PKG / 'Becoming/HexagramSequences.lean'
+    if not sequences.exists():
+        sequences = HERE / 'y5/Becoming/HexagramSequences.lean'
     from_source = (lean_declarations(module) | lean_declarations(places) | lean_declarations(laws)
-                   | lean_declarations(sites))
+                   | lean_declarations(sites) | lean_declarations(sequences))
     by_source = set()
     for p in passages:
         for d in p['declarations']:
@@ -495,6 +503,9 @@ def main():
     counts = census(failures, order, places.read_text())
     sites_counts = sites_census(failures, order, sites.read_text())
 
+    # 7 and 10. the named configurations and the arrangements of HexagramSequences.lean
+    arrangements = sequences_check(failures, sequences.read_text())
+
     # 6. the chapter table
     if args.chapter.exists():
         text = args.chapter.read_text()
@@ -515,10 +526,58 @@ def main():
           + (f'; {len(by_source)} Hexagrams names checked against the module source, not yet in the receipt' if by_source else ''))
     print('censuses (listed + exceptions): ' + ', '.join(f'{k} {v[0]} + {v[1]}' for k, v in counts.items()))
     print('censuses of HexagramSites: ' + '; '.join(f'{k} {v}' for k, v in sites_counts.items()))
+    print('arrangements of HexagramSequences: ' + '; '.join(f'{k} {v}' for k, v in arrangements.items()))
     print('order: 64 pages, trigrams and links agree' if not any('order' in f or 'page' in f for f in failures) else '')
     for f in failures:
         print('FAIL', f)
     return 1 if failures else 0
+
+
+def zagua_order(text, names):
+    """The received-order numbers of the configurations the 雜卦 names, in its order: the preserved text's first
+    edition (一篇) marks each name by the space its link left, and a name is the longest ending of the text before
+    such a space that is a page name of the received order."""
+    body = text[text.index('## 一篇'):text.index('## 校詁版')]
+    body = body[body.index('\n'):].replace('[编辑 ]', '')
+    index = {variant(n): i + 1 for i, n in enumerate(names)}
+    found = []
+    for seg in body.split(' ')[:-1]:
+        seg = seg.strip()
+        hit = next((index[variant(seg[-k:])] for k in (2, 1) if len(seg) >= k and variant(seg[-k:]) in index), None)
+        found.append(hit)
+    return found
+
+
+def sequences_check(failures, text):
+    """Checks 7 and 10 for HexagramSequences.lean; returns counts for the summary."""
+    names = [clean(page(f'hexagrams/{n:02d}.json')['title']).split('/', 1)[1] for n in range(1, 65)]
+    named = 0
+    for m in re.finditer(r'/-- (\S+) \((\d+)\)\. -/\ndef (\w+) : Hexagram := number (\d+)', text):
+        named += 1
+        if m.group(2) != m.group(4) or variant(names[int(m.group(4)) - 1]) != variant(m.group(1)):
+            failures.append(f'{m.group(3)} is number {m.group(4)}, not {m.group(1)} ({m.group(2)})')
+    body = text[text.index('def zaguaNumbers : List Nat :='):]
+    listed = [int(x) for x in re.findall(r'\d+', body[body.index('['):body.index(']')])]
+    if not ZAGUA.exists():
+        failures.append(f'no preserved 雜卦 at {ZAGUA.relative_to(ROOT)}')
+    elif zagua_order(ZAGUA.read_text(), names) != listed:
+        failures.append('zaguaNumbers is not the order in which the preserved 雜卦 names the configurations')
+    trigrams = {}
+    for m in re.finditer(r'/-- (\S)[.:][^-]*-/\ndef (\w+) : Bool × Bool × Bool := \((true|false), (true|false), '
+                         r'(true|false)\)', text):
+        lines = tuple(1 if v == 'true' else 0 for v in m.group(3, 4, 5))
+        trigrams[m.group(2)] = m.group(1)
+        if TRIGRAM.get(m.group(1)) != lines:
+            failures.append(f'Trigram.{m.group(2)} does not have the lines of {m.group(1)}')
+    if len(trigrams) != 8:
+        failures.append(f'{len(trigrams)} trigrams named, not eight')
+    stations = re.search(r'def stations : List \(Bool × Bool × Bool\) := \[([^\]]*)\]', text).group(1)
+    shown = ''.join(trigrams.get(s.strip(), '?') for s in stations.split(','))
+    said = re.search(r'帝出乎(\S)，齊乎(\S)，相見乎(\S)，致役乎(\S)，說言乎(\S)，戰乎(\S)，勞乎(\S)，成言乎(\S)。',
+                     clean(wikitext('yizhuan/shuogua.json')))
+    if not said or shown != ''.join(said.groups()):
+        failures.append(f'Trigram.stations ({shown}) is not the order of 說卦 ch. 5')
+    return {'named configurations': named, '雜卦 entries': len(listed), 'stations': shown}
 
 
 def clean_links_kept(text):
