@@ -26,7 +26,7 @@ Target: Ren's "unified, complete, enclosed, 0 axiom full theory", following the 
 
 - **Integrator:** not named on this page; rule 3's fallback applies. Name it here only on Ren's or that session's confirmation (review item B7). The 13 October Codex takeover (study §94-§111) is history.
 - **Main and receipts:** the landing queue below names each landing since 17 October with its core receipt; the latest core receipt is R32's `20261019T231053.882924Z` (20 October 2026). This page was rewritten on 17 October 2026 at `1d18d005c`.
-- **Queue:** empty; R32 landed (core receipt `20261019T231053.882924Z`); R33 next.
+- **Queue:** R33 at the head (frontier joins: one law along a run, learning in the limit, loops, collective laws on webs, interleavings building the world); R32 landed (core receipt `20261019T231053.882924Z`).
 
 ## Open claims
 
