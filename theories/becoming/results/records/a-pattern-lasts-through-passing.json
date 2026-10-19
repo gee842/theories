@@ -1,0 +1,213 @@
+{
+  "schema_version": 2,
+  "id": "a-pattern-lasts-through-passing",
+  "title": {
+    "en": "A pattern outlasting its carriers lasts through passing",
+    "zh": "比承载者更持久的样式经传递而持续"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T07:15:58+00:00",
+  "statement": {
+    "en": "A pattern present from T on whose carriers are brief for d has a carrier beginning within every d steps; under the passing premise it is passed across one of every d steps, one empty step ends it, and if passing stops it ends within d steps.",
+    "zh": "从 T 起存在、其承载者对 d 短暂的样式，在每 d 步之内有承载者开始；在传递前提下，它在每 d 步中的一步被传递，一步无承载者即结束，传递停止则在 d 步之内结束。"
+  },
+  "laws": [
+    {
+      "en": "Present at every step from T on, its carriers brief for d, some carrier begins within every d consecutive steps (an instance of Covered.arises_within).",
+      "zh": "从 T 起每一步都存在、其承载者对 d 短暂，则每 d 个连续步之内有承载者开始（Covered.arises_within 的实例）。",
+      "declarations": [
+        "Becoming.Web.carrying",
+        "Becoming.Web.carrying_iff",
+        "Becoming.Web.Present",
+        "Becoming.Web.begins_within"
+      ]
+    },
+    {
+      "en": "Under the passing premise every beginning is a passing, and the pattern is passed across one of every d consecutive steps from T on; PatternRelay attains the bound.",
+      "zh": "在传递前提下，每次开始都是一次传递，样式从 T 起在每 d 个连续步中的一步被传递；PatternRelay 达到此界。",
+      "declarations": [
+        "Becoming.Web.PassesAt",
+        "Becoming.Web.ByPassing",
+        "Becoming.Web.ByPassing.begins_passed",
+        "Becoming.Web.ByPassing.trace",
+        "Becoming.Web.ByPassing.passes_within",
+        "Becoming.PatternRelay.shifts"
+      ]
+    },
+    {
+      "en": "Under the passing premise a step with no carrier is followed by none with one; with carriers brief for d and no passing from T on, no formation carries it from T + d on, attained in PatternRelay.",
+      "zh": "在传递前提下，无承载者的一步之后再无有承载者的一步；承载者对 d 短暂且从 T 起无传递，则从 T + d 起无形成承载它，在 PatternRelay 中达到。",
+      "declarations": [
+        "Becoming.Web.ByPassing.present_back",
+        "Becoming.Web.ByPassing.empty_stays",
+        "Becoming.Web.ByPassing.ends_within",
+        "Becoming.PatternRelay.relay",
+        "Becoming.PatternRelay.stopped_relay"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom; the passing premise Web.ByPassing is a hypothesis, supplied as transmission is in Becoming.Evolution; every law is stated for any web, its activity read as carrying.",
+      "zh": "不加公理；传递前提 Web.ByPassing 是假设，如同 Becoming.Evolution 中的传承那样给定；每条定律对任何网陈述，其活动读作承载。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Whether carrying forms by passing, which formations pass, when or to which formations, or whether a pattern changes as it is passed.",
+      "zh": "承载是否经传递形成，哪些形成传递、何时、传给哪些形成，或样式在传递中是否改变。",
+      "kind": "scope"
+    },
+    {
+      "en": "Which patterns are worth passing, or what carrying one does to the carriers or to anything else.",
+      "zh": "哪些样式值得传递，或承载它对承载者或别的什么做了什么。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 29 declarations of Becoming.Passing, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.Passing 的 29 项声明（19 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Passing derived from descent (Flow.DescendsAt) rather than supplied; patterns that change as they pass; an independent review.",
+    "zh": "由世系（Flow.DescendsAt）导出传递而非给定；在传递中改变的样式；独立审查。"
+  },
+  "correspondence": {
+    "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; the AI's mapping found this one (forming the next members) partial: the whole persists through the generation of its parts, but no law of passing a pattern. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
+    "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；AI 的对照发现此条（形成下一代成员）部分承载：整体经其部分的生成而持续，但没有样式传递的定律。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean",
+  "aliases": [
+    "a pattern lasts through passing",
+    "样式经传递而持续",
+    "one empty step ends it",
+    "Becoming.Web.ByPassing.ends_within",
+    "forming the next members (reading)"
+  ],
+  "dependencies": [
+    {
+      "id": "whole-persists-through-generation",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Web.Brief, Web.Covered and Covered.arises_within: begins_within is its instance on the formations of the web as parts.",
+        "zh": "复用 Web.Brief、Web.Covered 与 Covered.arises_within：begins_within 是其以网中形成为部分的实例。"
+      },
+      "interface": {
+        "output": {
+          "en": "Parts covering the steps need a part arising within every d steps.",
+          "zh": "覆盖诸步的部分需要每 d 步之内有部分产生。"
+        },
+        "input": {
+          "en": "That a lasting pattern of brief carriers has carriers beginning.",
+          "zh": "短暂承载者的持久样式有承载者开始。"
+        },
+        "conditions": {
+          "en": "Carriers brief for d.",
+          "zh": "承载者对 d 短暂。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "transmission-is-inheritance-and-need",
+      "detail": {
+        "en": "The passing premise plays the role transmission plays in evolution: supplied, not derived.",
+        "zh": "传递前提所起的作用如同传承在演化中：给定，不导出。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.PatternRelay.brief",
+        "Becoming.PatternRelay.half_odd",
+        "Becoming.PatternRelay.passes",
+        "Becoming.PatternRelay.passesOdd",
+        "Becoming.PatternRelay.passesUntil",
+        "Becoming.PatternRelay.relay",
+        "Becoming.PatternRelay.shifted",
+        "Becoming.PatternRelay.shifts",
+        "Becoming.PatternRelay.stopped",
+        "Becoming.PatternRelay.stopped_brief",
+        "Becoming.PatternRelay.stopped_by_passing",
+        "Becoming.PatternRelay.stopped_quiet",
+        "Becoming.PatternRelay.stopped_relay",
+        "Becoming.PatternRelay.web",
+        "Becoming.Web.ByPassing",
+        "Becoming.Web.ByPassing.begins_passed",
+        "Becoming.Web.ByPassing.empty_stays",
+        "Becoming.Web.ByPassing.ends_within",
+        "Becoming.Web.ByPassing.passes_within",
+        "Becoming.Web.ByPassing.present_back",
+        "Becoming.Web.ByPassing.present_earlier",
+        "Becoming.Web.ByPassing.present_of_le",
+        "Becoming.Web.ByPassing.trace",
+        "Becoming.Web.PassesAt",
+        "Becoming.Web.Present",
+        "Becoming.Web.begins_within",
+        "Becoming.Web.carrying",
+        "Becoming.Web.carrying_active",
+        "Becoming.Web.carrying_iff"
+      ],
+      "sha256": "da2894e3f8c38f71ca0d08a4bc155f4a94745da7dffa807eb39739b10df62a70"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Web.Covered.arises_within"
+      ],
+      "sha256": "9eca72195aa67016adcb28c53ba805913d6eaa8dc5b0e7b24824d6e20fa6bc9f"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "role": "receipt",
+      "sha256": "55115129b7ca2bb308f98773de1ecf4bd5b5d51acf8f398e8b1ab8ee5eccf14a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "2f3302f7114fae4f9ef78f1cdf13923bd978b244f7f87f67aea4575b01663971"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "efd38fd4c55c4cfbeffb6e8e1640ca00f371baf75b82b6615493bdbac376cf1c"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
+      "role": "provenance",
+      "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Passing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (V), on Ren's \"does our theories fully cover this?\" with a pasted account of social viability, \"please, spawn a swarm of subagents, think hard, let's fully complete this\" and \"I agree with your push back, let's think about how to resolve them elegantly\"; study section 193.",
+      "zh": "2026年10月19日：新增（V），按 Ren 随一段社会可存续性文字所问的\"does our theories fully cover this?\"，以及\"please, spawn a swarm of subagents, think hard, let's fully complete this\"与\"I agree with your push back, let's think about how to resolve them elegantly\"；研究第 193 节。"
+    }
+  ]
+}

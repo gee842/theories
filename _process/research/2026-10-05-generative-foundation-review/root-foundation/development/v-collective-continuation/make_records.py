@@ -126,7 +126,7 @@ REC_DEP = dep('recurrence-without-premise', 'formal-reuse',
 record(
     'giving-that-waits-on-giving', 'Withholding',
     {'en': 'Giving that waits on giving', 'zh': '等待给出的给出'},
-    {'en': 'Where giving waits on giving: with memory one withholding ends all giving in a family it reaches, for good; '
+    {'en': 'Where giving waits on giving: with memory one withholding ends all giving in a family it reaches, from then on; '
            'without memory withholding passes out where no chain of waits is long enough and returns around every loop. '
            'More waiting is less giving.',
      'zh': '给出等待给出之处：有记忆时，一处扣留永久结束它所及之族的一切给出；无记忆时，扣留在没有足够长的等待链处消散，并沿每个回路复返。等待越多，给出越少。'},

@@ -672,3 +672,14 @@ L1、S1 与 S2 是 D40-D42。
 **决定。** 一、**三种关系。** 脊柱上有已检查之律陈述经文所描述的结构，为相合；脊柱表明此句在何处成立并修正其全称形式，为定域；经文断言理论不断言者，或与理论的结构名称冲突，为相分。相合不是印证：律不靠经文成立，律也不穷尽经文之义。二、**读法。** 逐句对应的 44 条读法各依其所述范围采用。其中：无往不复是有限构形之内的复返，恰在律不合并之处成立，日新是同一律带着历史；穷则变不是律，因为只入阴爻之律下坤为吸收态，失而不复之后延续者已改变其依存；一阴一阳不经判定地断言于一切世界，即排中律；象是归并，承载律恰当律在其上同行；感是耦合，几之先见只对耦合而入者可能；生生之谓易是定域，变化比生生宽，生生是生成之持续（D1），需要开放并由外部供给；道由器读出，与王夫之相合。三、**相分保留。** 继之者善、天地之大德曰生与天地之心，把理论只在延续条件之下给出的归于动力学；天尊地卑与爻位的等级不在结构之中；占筮与数术不在脊柱上。四、**不读入的。** 不说易传作者意谓这些律。一句有多种读法时，写明所取的一种（七日依消息卦）。
 **理由。** 经文自身的结构写作一个世界，其律因此被检查，而不是被断言。每条读法由它所列的声明论证；一段所说多于律时，表中写明不在律中。三种关系使比较既不成为标签，也不成为化约：古典文本只有在相分可见之处，才能反过来检验理论。
 **会改变它的。** 一条与某读法相矛盾的脊柱定律；由经文与注疏论证的、使某段关系类别改变的读法；在所引片段处与所存版本不同的刻本。
+
+<a id="d48-集体延续所需--what-a-collectives-continuation-needs"></a>
+### D48. 集体延续所需
+
+所在：本章第 4 节“集体延续所需”；记录 [giving-that-waits-on-giving](../../../../theories/becoming/results/records/giving-that-waits-on-giving.md)、[whether-a-loop-closes-a-difference](../../../../theories/becoming/results/records/whether-a-loop-closes-a-difference.md)、[how-fast-a-rule-may-change](../../../../theories/becoming/results/records/how-fast-a-rule-may-change.md)、[a-pattern-lasts-through-passing](../../../../theories/becoming/results/records/a-pattern-lasts-through-passing.md) 与 [conditions-kept-together](../../../../theories/becoming/results/records/conditions-kept-together.md)；研究第 193 节。在 D45 的一个说明中决定。
+
+**Ren 的原话。** 2026-10-19，随一段关于社会可存续性的八条约束：“does our theories fully cover this?”，然后：“please, spawn a swarm of subagents, think hard, let's fully complete this”与“I agree with your push back, let's think about how to resolve them elegantly”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md)）。他对反驳的同意是出处；每条反驳靠其定律成立。
+
+**决定。** 依所述范围采用。一、**五处改写。** 保持一个部分不是更新（`Renewable.kept_part_not_renewal`）；整体没有一个数，损失在断开的依存处（`Flow.act_unselected`、`Flow.favours_reaching_beyond`）；条件是联合，不是相乘：在每条进程下恰好分解，沿某条进程则不，且没有作用于各自可保持性的规则决定联合的可保持性（`Viability.kernel_and_iff`、`ChoicePoint.no_rule_decides_joint`）；反向回路须及于规则（`Law.perturbation_reabsorbed`），陈述为汇集耦合，不是利益对立；不变量是定律，不是公理。二、**四条定律的读法。** 陌生人之间的合作是等待给出的给出；等待越多，给出越少；不信任的螺旋是有记忆的扣留，它吸收一切，无记忆时则沿回路复返；使之恢复的是不等上一步就给出的律（守约、可执行的契约、不论上一步所得如何都行动的制度）。有界的冲突是只经一个给回少于所受之环节才闭合的回路（补偿、仲裁、吸收、退出即一次切断加上无来则无往的环节）；整数强度下没有逐步的闭合。稳定与适应是慢层以至少 `2N − 1` 步的段落读快层。形成下一代成员是样式在短暂承载者之间的传递。三、**纠错一条。** 二阶是改写规则的回路及于明的通路本身；三阶是偏向缩窄所耦合者的选择。四、**不读入的。** 没有“必须”：定律说进程在所述条件下做什么；分层、先给出的律或闭合的回路是否更好，是比较的事（§6.15），不是定律的事；传递承载它所承载的任何样式。
+**理由。** 每条读法由它所列的声明论证，每条反驳都是定理而非免责声明，因此那段文字的主张在它作出之处受到检查：其“任一因子为零”的一半在每条进程下成立，其乘积的主张沿选择不成立，其存续标准与更新分开。
+**会改变它的。** 由流导出等待关系的定律；实数强度下乘法逐步闭合的回路律；延续不经选择的集体（联合保持在那里会分解）；由世系导出传递。

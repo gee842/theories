@@ -174,12 +174,10 @@ stop = next((i for i, line in enumerate(hist) if line.startswith('## Lapsed clai
 last = max(i for i, line in enumerate(hist[:stop]) if line.startswith('| **'))
 hist.insert(last + 1, row)
 board = '\n'.join(lines)
-old_q = re.search(r"then V \(what a collective's continuation needs: [^)]*\), then W2 \(", board)
+old_q = re.search(r"R19 landed as `f0a887a61`, docs and records with no checker run\): V \(what a collective's continuation needs: [^)]*\), then W2 \(", board)
 assert old_q, 'queue sentence'
-board = board.replace(old_q.group(0), 'then W2 (')
-mq = re.search(r'Y1 landed as `928422fa2`, core receipt `20261019T060745\.666273Z`, ahead of W2\)', board)
-assert mq, 'landed list'
-board = board.replace(mq.group(0), mq.group(0)[:-1] + f'; V landed, core receipt `{receipt_id}`, ahead of W2)')
+board = board.replace(old_q.group(0), 'R19 landed as `f0a887a61`, docs and records with no checker run; '
+                      f'V landed, core receipt `{receipt_id}`, ahead of W2): W2 (')
 (ROOT / BOARD).write_text(board, encoding='utf-8')
 (ROOT / HISTORY).write_text('\n'.join(hist), encoding='utf-8')
 print('board row moved; receipt', receipt_id, 'apart', apart, 'theorems', n_thm, 'modules', n_mod, 'closure', closure)

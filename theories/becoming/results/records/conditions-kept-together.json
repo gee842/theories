@@ -1,0 +1,270 @@
+{
+  "schema_version": 2,
+  "id": "conditions-kept-together",
+  "title": {
+    "en": "Conditions kept together, and keeping a part",
+    "zh": "共同保持的条件，以及保持一个部分"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T07:15:58+00:00",
+  "statement": {
+    "en": "Under every course, guards decompose exactly; along some course they do not, and no rule on the separate keepabilities decides the joint one. No course leaving a part's guard decides neither renewal nor what the run does to others.",
+    "zh": "在每条进程下，守卫恰好分解；沿某条进程则不，且没有作用于各自可保持性的规则决定联合的可保持性。没有进程离开一个部分的守卫，既不决定更新，也不决定运行对他者做了什么。"
+  },
+  "laws": [
+    {
+      "en": "No course leaves two guards together exactly where no course leaves either, and for a list exactly where no course leaves any.",
+      "zh": "没有进程离开两个守卫的联合，恰当没有进程离开其中任一个；对一列守卫，恰当没有进程离开其中任何一个。",
+      "declarations": [
+        "Becoming.Viability.kernel_and_iff",
+        "Becoming.Viability.AllOf",
+        "Becoming.Viability.kernel_allOf_iff"
+      ]
+    },
+    {
+      "en": "A guard is keepable where some run stays within it; keepable together gives keepable each, and the converse fails in ChoicePoint; where either guard lies in the kernel, keeping both is keeping the other; likewise for n steps.",
+      "zh": "某次运行保持在守卫之内，则守卫可保持；联合可保持推出各自可保持，反之在 ChoicePoint 中不成立；任一守卫在核中时，保持两者即保持另一个；n 步亦然。",
+      "declarations": [
+        "Becoming.Viability.Keepable",
+        "Becoming.Viability.Keepable.each",
+        "Becoming.Viability.Keepable.of_keepsMoving",
+        "Becoming.Viability.keepable_and_iff_of_kernel_left",
+        "Becoming.Viability.keepable_and_iff_of_kernel_right",
+        "Becoming.Viability.KeptFor.each",
+        "Becoming.Viability.ChoicePoint.each_not_joint",
+        "Becoming.Viability.ChoicePoint.keptFor_each_not_joint"
+      ]
+    },
+    {
+      "en": "No rule on the separate answers decides the joint one: on ChoicePoint two configurations have both guards keepable and only one has them together; decisions exist, and for every F : Bool → Bool → Bool the joint decision is not F of the separate ones.",
+      "zh": "没有作用于各自答案的规则决定联合的答案：在 ChoicePoint 上两个构形两个守卫都可保持，只有一个可联合保持；判定存在，对每个 F : Bool → Bool → Bool，联合的判定都不是各自判定的 F。",
+      "declarations": [
+        "Becoming.Viability.ChoicePoint.joint_differs",
+        "Becoming.Viability.ChoicePoint.decisions_exist",
+        "Becoming.Viability.ChoicePoint.no_rule_decides_joint",
+        "Becoming.Viability.ChoicePoint.no_respecting_rule_decides_joint"
+      ]
+    },
+    {
+      "en": "Keeping a part decides neither renewal nor what the run does to others: in Renewable no course leaves the guard \"the focal formation is active\" from any configuration, while from one configuration one run renews and another consumes the sustaining formation's condition, which ends.",
+      "zh": "保持一个部分既不决定更新，也不决定运行对他者做了什么：在 Renewable 中，从任何构形都没有进程离开“焦点形成活动”这一守卫，而从同一构形，一次运行更新，另一次消耗维持者的条件，后者终结。",
+      "declarations": [
+        "Becoming.Renewable.kept_part_not_renewal"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise; which guards mark what each activity needs is supplied with each application.",
+      "zh": "不加公理，不加前提；哪些守卫标出每个活动所需，随每个应用给定。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which choices an actual collective's continuation goes through, or a measure of joint keeping.",
+      "zh": "实际集体的延续经过哪些选择，或联合保持的度量。",
+      "kind": "scope"
+    },
+    {
+      "en": "That a kept collective is better than another, or that renewing is better than consuming.",
+      "zh": "一个被保持的集体优于另一个，或更新优于消耗。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 40 declarations of Becoming.JointKeeping, 23 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.JointKeeping 的 40 项声明（23 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Joint keeping over a horizon with the choices given by a law of exchange; fault tolerance joined to Becoming.FaultEnvelopes; an independent review.",
+    "zh": "在一个时域上、由交换律给出选择的联合保持；容错与 Becoming.FaultEnvelopes 相连；独立审查。"
+  },
+  "correspondence": {
+    "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; the AI's mapping found this one carries two of the five pushbacks as laws: the product formula decides joint viability only under every course, and survival of a part is not renewal. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
+    "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；AI 的对照发现此条以定律承载五条反驳中的两条：乘积公式只在每条进程下决定联合可存续性，部分的存续不是更新。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointKeeping.lean",
+  "aliases": [
+    "conditions kept together",
+    "共同保持的条件",
+    "keeping a part is not renewal",
+    "Becoming.Viability.ChoicePoint.no_rule_decides_joint",
+    "Becoming.Renewable.kept_part_not_renewal",
+    "viability is not a product (reading)"
+  ],
+  "dependencies": [
+    {
+      "id": "becoming-renewal-reading",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Renewable.class_belongs_to_the_run: one configuration, one run renewing and one consuming.",
+        "zh": "复用 Renewable.class_belongs_to_the_run：同一构形，一次运行更新、一次消耗。"
+      },
+      "interface": {
+        "output": {
+          "en": "Renewal belongs to the run.",
+          "zh": "更新属于运行。"
+        },
+        "input": {
+          "en": "That keeping a part decides no renewal.",
+          "zh": "保持一个部分不决定更新。"
+        },
+        "conditions": {
+          "en": "The renewable process.",
+          "zh": "可更新过程。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean"
+      }
+    },
+    {
+      "id": "where-a-run-goes-on",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Onward.KeepsMoving.run for Keepable.of_keepsMoving.",
+        "zh": "为 Keepable.of_keepsMoving 复用 Onward.KeepsMoving.run。"
+      },
+      "interface": {
+        "output": {
+          "en": "A run from each member of a family that keeps moving.",
+          "zh": "持续移动之族每个成员出发的运行。"
+        },
+        "input": {
+          "en": "Keepability within finitely many configurations.",
+          "zh": "有限构形内的可保持性。"
+        },
+        "conditions": {
+          "en": "Finitely many configurations.",
+          "zh": "有限多个构形。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "finite-continuation-plans",
+      "detail": {
+        "en": "Keeping for n steps through moves taken; here kept jointly versus kept each.",
+        "zh": "经所取之移动保持 n 步；这里是联合保持与各自保持。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointKeeping.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Renewable.kept_part_not_renewal",
+        "Becoming.Viability.AllOf",
+        "Becoming.Viability.ChoicePoint.Config",
+        "Becoming.Viability.ChoicePoint.both",
+        "Becoming.Viability.ChoicePoint.decideBoth",
+        "Becoming.Viability.ChoicePoint.decideFirst",
+        "Becoming.Viability.ChoicePoint.decideSecond",
+        "Becoming.Viability.ChoicePoint.decisions_exist",
+        "Becoming.Viability.ChoicePoint.each_not_joint",
+        "Becoming.Viability.ChoicePoint.first",
+        "Becoming.Viability.ChoicePoint.first_closed",
+        "Becoming.Viability.ChoicePoint.jointRun",
+        "Becoming.Viability.ChoicePoint.joint_differs",
+        "Becoming.Viability.ChoicePoint.joint_keepable",
+        "Becoming.Viability.ChoicePoint.keptFor_each_not_joint",
+        "Becoming.Viability.ChoicePoint.leftRun",
+        "Becoming.Viability.ChoicePoint.leftState",
+        "Becoming.Viability.ChoicePoint.next",
+        "Becoming.Viability.ChoicePoint.no_respecting_rule_decides_joint",
+        "Becoming.Viability.ChoicePoint.no_rule_decides_joint",
+        "Becoming.Viability.ChoicePoint.process",
+        "Becoming.Viability.ChoicePoint.restRun",
+        "Becoming.Viability.ChoicePoint.rightRun",
+        "Becoming.Viability.ChoicePoint.rightState",
+        "Becoming.Viability.ChoicePoint.second",
+        "Becoming.Viability.ChoicePoint.second_closed",
+        "Becoming.Viability.ChoicePoint.split_leaves",
+        "Becoming.Viability.Keepable",
+        "Becoming.Viability.Keepable.each",
+        "Becoming.Viability.Keepable.left",
+        "Becoming.Viability.Keepable.mono",
+        "Becoming.Viability.Keepable.of_keepsMoving",
+        "Becoming.Viability.Keepable.right",
+        "Becoming.Viability.Keepable.start",
+        "Becoming.Viability.KeptFor.each",
+        "Becoming.Viability.KeptFor.guard_mono",
+        "Becoming.Viability.keepable_and_iff_of_kernel_left",
+        "Becoming.Viability.keepable_and_iff_of_kernel_right",
+        "Becoming.Viability.kernel_allOf_iff",
+        "Becoming.Viability.kernel_and_iff"
+      ],
+      "sha256": "6f163c04ea7bae5e065fe609abfcad1930637be5e275c5e69583f44820421745"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Viability.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Viability.Kernel",
+        "Becoming.Viability.Kernel.mono",
+        "Becoming.Viability.Kernel.run"
+      ],
+      "sha256": "365e15e172df651a7a12752a10219378171a100c19518446b84bf87ed1259268"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Renewable.class_belongs_to_the_run"
+      ],
+      "sha256": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
+      "role": "proof",
+      "sha256": "0a44e28e50b3e8b9761c1c10dcb8d072fa6dd1df644f32da5c8987e35ca3e418"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "role": "receipt",
+      "sha256": "55115129b7ca2bb308f98773de1ecf4bd5b5d51acf8f398e8b1ab8ee5eccf14a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "2f3302f7114fae4f9ef78f1cdf13923bd978b244f7f87f67aea4575b01663971"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "efd38fd4c55c4cfbeffb6e8e1640ca00f371baf75b82b6615493bdbac376cf1c"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
+      "role": "provenance",
+      "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointKeeping.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JointKeeping",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (V), on Ren's \"does our theories fully cover this?\" with a pasted account of social viability, \"please, spawn a swarm of subagents, think hard, let's fully complete this\" and \"I agree with your push back, let's think about how to resolve them elegantly\"; study section 193.",
+      "zh": "2026年10月19日：新增（V），按 Ren 随一段社会可存续性文字所问的\"does our theories fully cover this?\"，以及\"please, spawn a swarm of subagents, think hard, let's fully complete this\"与\"I agree with your push back, let's think about how to resolve them elegantly\"；研究第 193 节。"
+    }
+  ]
+}

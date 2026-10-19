@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "id": "giving-that-waits-on-giving",
+  "title": {
+    "en": "Giving that waits on giving",
+    "zh": "等待给出的给出"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T07:15:58+00:00",
+  "statement": {
+    "en": "Where giving waits on giving: with memory one withholding ends all giving in a family it reaches, from then on; without memory withholding passes out where no chain of waits is long enough and returns around every loop. More waiting is less giving.",
+    "zh": "给出等待给出之处：有记忆时，一处扣留永久结束它所及之族的一切给出；无记忆时，扣留在没有足够长的等待链处消散，并沿每个回路复返。等待越多，给出越少。"
+  },
+  "laws": [
+    {
+      "en": "With memory, a formation gives at step n exactly where every formation within n waits of it gave at the start; giving at n + 1 gives giving at n, so withholding stays; it spreads downstream along every chain of waits.",
+      "zh": "有记忆时，一个形成在第 n 步给出，恰当在 n 次等待之内的每个形成在开始时给出；第 n + 1 步给出推出第 n 步给出，因此扣留保持；扣留沿每条等待链向下游扩散。",
+      "declarations": [
+        "Becoming.Withholding.waitsAll",
+        "Becoming.Withholding.Chain",
+        "Becoming.Withholding.Within",
+        "Becoming.Withholding.waitsAll_closed",
+        "Becoming.Withholding.waitsAll_gives_earlier",
+        "Becoming.Withholding.waitsAll_withholding_stays",
+        "Becoming.Withholding.waitsAll_withholding_stays_le",
+        "Becoming.Withholding.withholding_spreads"
+      ]
+    },
+    {
+      "en": "One withholding ends all giving in a family reached from it: where every formation lies within d waits of b and b withholds at the start, every formation withholds at every step from d on; two courses withholding everywhere go on alike.",
+      "zh": "一处扣留结束它所及之族的一切给出：每个形成都在 b 的 d 次等待之内且 b 在开始时扣留，则从第 d 步起每个形成在每一步扣留；两条处处扣留的进程此后一致。",
+      "declarations": [
+        "Becoming.Withholding.withholding_absorbs",
+        "Becoming.Withholding.total_withholding_merges"
+      ]
+    },
+    {
+      "en": "Without memory, a formation gives at step n exactly where every formation with a chain of exactly n waits to it gave at the start; where no chain of L waits exists, every formation gives from step L on, whatever the start (exact in Line); on a loop of p waits, withholding returns at every multiple of p.",
+      "zh": "无记忆时，一个形成在第 n 步给出，恰当以恰好 n 次等待链到它的每个形成在开始时给出；不存在 L 次等待的链时，无论开始如何，每个形成从第 L 步起给出（在 Line 中精确）；在 p 次等待的回路上，扣留在 p 的每个倍数处复返。",
+      "declarations": [
+        "Becoming.Withholding.answers",
+        "Becoming.Withholding.answers_closed",
+        "Becoming.Withholding.no_longer_chain",
+        "Becoming.Withholding.gives_without_chain",
+        "Becoming.Withholding.Line.passes_out_exact",
+        "Becoming.Withholding.withholding_returns"
+      ]
+    },
+    {
+      "en": "More waiting, less giving: adding waits takes giving away at every step under both laws.",
+      "zh": "等待越多，给出越少：增加等待在两条律下都在每一步减少给出。",
+      "declarations": [
+        "Becoming.Withholding.waitsAll_more_waiting",
+        "Becoming.Withholding.answers_more_waiting"
+      ]
+    },
+    {
+      "en": "Restoring needs another law: in Ring, three formations each waiting on the one before, with memory all withhold from step 2, exactly; without memory the withholding circulates; under the law in which one formation gives whatever it waits on, every formation gives from step 3 on from every start, exactly.",
+      "zh": "恢复需要另一条律：在 Ring 中，三个形成各等待前一个，有记忆时从第 2 步起全部扣留，且恰好如此；无记忆时扣留循环；在一个形成不论所等待者如何都给出的律下，从每个开始，每个形成从第 3 步起给出，且恰好如此。",
+      "declarations": [
+        "Becoming.Withholding.givesFirst",
+        "Becoming.Withholding.Ring.waitsAll_absorbs_exact",
+        "Becoming.Withholding.Ring.answers_circulates",
+        "Becoming.Withholding.Ring.answers_returns",
+        "Becoming.Withholding.Ring.givesFirst_restores",
+        "Becoming.Withholding.Ring.givesFirst_restores_exact"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise about the formations or the relation of waiting: no finiteness, no decision of equality or of giving. The relation of waiting is given; every law is stated on runs Law.run of the two laws.",
+      "zh": "不加公理，对形成与等待关系不加前提：不要求有限，不要求相等或给出可判定。等待关系是给定的；每条定律都陈述在两条律的运行 Law.run 上。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "How the relation of waiting forms, or amounts of giving and thresholds of waiting (giving where at least k of what one waits on gave).",
+      "zh": "等待关系如何形成，或给出的数量与等待的阈值（所等待者中至少 k 个给出时才给出）。",
+      "kind": "scope"
+    },
+    {
+      "en": "Which laws that give first restore giving in a general family; that cooperation is good, or which giving supports 生生.",
+      "zh": "在一般的族中哪些先给出的律能恢复给出；合作是好的，或哪种给出支持生生。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 50 declarations of Becoming.Withholding, 38 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.Withholding 的 50 项声明（38 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Thresholds and amounts; restoring laws in general families; deriving the waiting relation from a flow; an independent review.",
+    "zh": "阈值与数量；一般族中的恢复律；由流导出等待关系；独立审查。"
+  },
+  "correspondence": {
+    "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; the AI's mapping found this one partly carried, through the selfishness spiral, and with no law. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
+    "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；AI 的对照发现此条只经自私螺旋部分承载，没有定律。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean",
+  "aliases": [
+    "giving that waits on giving",
+    "等待给出的给出",
+    "withholding absorbs",
+    "Becoming.Withholding.withholding_absorbs",
+    "Becoming.Withholding.withholding_returns",
+    "cooperation among strangers (reading)"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit and the run of a determined law, Law.run, whose states are the orbit.",
+        "zh": "复用 Law.orbit 与决定性律的运行 Law.run，其状态即轨道。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course of a determined law as a run of the spine.",
+          "zh": "决定性律的进程作为脊柱的运行。"
+        },
+        "input": {
+          "en": "The courses the laws are stated on.",
+          "zh": "诸定律所陈述的进程。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "how-a-carried-difference-grows",
+      "detail": {
+        "en": "Parallel, with no instance theorem: there a finite order is exact where no chain of couplings is long enough and what reaches a loop keeps arriving; here withholding passes out and returns.",
+        "zh": "平行，无实例定理：那里在没有足够长耦合链处有限阶精确，抵达回路者持续到来；这里扣留消散与复返。"
+      }
+    },
+    {
+      "id": "target-capture",
+      "detail": {
+        "en": "As a perturbed state is re-absorbed under one rule, giving is regained only under another law.",
+        "zh": "如同受扰状态在一条规则下被重新吸收，给出只在另一条律下恢复。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Withholding.Chain",
+        "Becoming.Withholding.Chain.append",
+        "Becoming.Withholding.Chain.iterate",
+        "Becoming.Withholding.Chain.last",
+        "Becoming.Withholding.Chain.last_of_eq",
+        "Becoming.Withholding.Chain.prefix",
+        "Becoming.Withholding.Chain.zero_eq",
+        "Becoming.Withholding.Line",
+        "Becoming.Withholding.Line.Waits",
+        "Becoming.Withholding.Line.firstWithheld",
+        "Becoming.Withholding.Line.no_chain_two",
+        "Becoming.Withholding.Line.passes_out_exact",
+        "Becoming.Withholding.Ring",
+        "Becoming.Withholding.Ring.Waits",
+        "Becoming.Withholding.Ring.answers_circulates",
+        "Becoming.Withholding.Ring.answers_first",
+        "Becoming.Withholding.Ring.answers_returns",
+        "Becoming.Withholding.Ring.answers_second",
+        "Becoming.Withholding.Ring.answers_third",
+        "Becoming.Withholding.Ring.givesFirst_first",
+        "Becoming.Withholding.Ring.givesFirst_restores",
+        "Becoming.Withholding.Ring.givesFirst_restores_exact",
+        "Becoming.Withholding.Ring.givesFirst_second",
+        "Becoming.Withholding.Ring.givesFirst_third",
+        "Becoming.Withholding.Ring.isFirst",
+        "Becoming.Withholding.Ring.loop",
+        "Becoming.Withholding.Ring.oneWithheld",
+        "Becoming.Withholding.Ring.rotate_first",
+        "Becoming.Withholding.Ring.rotate_second",
+        "Becoming.Withholding.Ring.rotate_third",
+        "Becoming.Withholding.Ring.waitsAll_absorbs_exact",
+        "Becoming.Withholding.Ring.within_two",
+        "Becoming.Withholding.Within",
+        "Becoming.Withholding.Within.mono",
+        "Becoming.Withholding.answers",
+        "Becoming.Withholding.answers_closed",
+        "Becoming.Withholding.answers_more_waiting",
+        "Becoming.Withholding.givesFirst",
+        "Becoming.Withholding.gives_without_chain",
+        "Becoming.Withholding.no_longer_chain",
+        "Becoming.Withholding.total_withholding_merges",
+        "Becoming.Withholding.waitsAll",
+        "Becoming.Withholding.waitsAll_closed",
+        "Becoming.Withholding.waitsAll_gives_earlier",
+        "Becoming.Withholding.waitsAll_more_waiting",
+        "Becoming.Withholding.waitsAll_withholding_stays",
+        "Becoming.Withholding.waitsAll_withholding_stays_le",
+        "Becoming.Withholding.withholding_absorbs",
+        "Becoming.Withholding.withholding_returns",
+        "Becoming.Withholding.withholding_spreads"
+      ],
+      "sha256": "b56112df45782fd28def6d31b6e6a6d52ec64d665e4f2163f2e1e7da61a01b99"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "role": "receipt",
+      "sha256": "55115129b7ca2bb308f98773de1ecf4bd5b5d51acf8f398e8b1ab8ee5eccf14a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "2f3302f7114fae4f9ef78f1cdf13923bd978b244f7f87f67aea4575b01663971"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "efd38fd4c55c4cfbeffb6e8e1640ca00f371baf75b82b6615493bdbac376cf1c"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
+      "role": "provenance",
+      "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Withholding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (V), on Ren's \"does our theories fully cover this?\" with a pasted account of social viability, \"please, spawn a swarm of subagents, think hard, let's fully complete this\" and \"I agree with your push back, let's think about how to resolve them elegantly\"; study section 193.",
+      "zh": "2026年10月19日：新增（V），按 Ren 随一段社会可存续性文字所问的\"does our theories fully cover this?\"，以及\"please, spawn a swarm of subagents, think hard, let's fully complete this\"与\"I agree with your push back, let's think about how to resolve them elegantly\"；研究第 193 节。"
+    }
+  ]
+}

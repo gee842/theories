@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 267 | 10,091 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 272 | 10,248 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -453,6 +453,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [JointContinuationClassification.lean](lean-declarations/ethics.md#module-2c0028cc241e) | Normative grounding and generative direction |
 | [JointCorrespondence.lean](lean-declarations/becoming-core.md#module-ec0340e4f7f6) | Becoming pure core |
 | [JointInterpretation.lean](lean-declarations/inquiry.md#module-6bb6c519ec52) | Attainable inquiry, contact and process laws |
+| [JointKeeping.lean](lean-declarations/becoming-core.md#module-923266ce0995) | Becoming pure core |
 | [JointPhase.lean](lean-declarations/becoming-core.md#module-5cfc0c3cee2e) | Becoming pure core |
 | [JointPlanFrames.lean](lean-declarations/becoming-core.md#module-803304e89e6a) | Becoming pure core |
 | [JointPracticeContinuation.lean](lean-declarations/ethics.md#module-4909b1cdd611) | Normative grounding and generative direction |
@@ -557,6 +558,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [OrganizationalRuleInheritance.lean](lean-declarations/ethics.md#module-d6cdb351c744) | Normative grounding and generative direction |
 | [OrganizedScaleLoop.lean](lean-declarations/learning.md#module-fa24e61409c5) | Learning, prediction and dynamics |
 | [OutcomeContinuation.lean](lean-declarations/core.md#module-c48ee824a0b3) | Generative core and relational structure |
+| [Pace.lean](lean-declarations/becoming-core.md#module-f1acf0f3e260) | Becoming pure core |
 | [PacketLawDerivation.lean](lean-declarations/inquiry.md#module-db5cafd783d9) | Attainable inquiry, contact and process laws |
 | [PaidArchiveReader.lean](lean-declarations/shared.md#module-dacef2fbbee5) | Organizational formation through revisable evaluation |
 | [PaidPreImport.lean](lean-declarations/shared.md#module-72d53bbb0ddb) | Organizational formation through revisable evaluation |
@@ -567,6 +569,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PartialRegimeTransition.lean](lean-declarations/other.md#module-5a3139fb2b49) | Other formal studies |
 | [Parting.lean](lean-declarations/becoming-core.md#module-cfce0a952f3b) | Becoming pure core |
 | [PassageWorlds.lean](lean-declarations/becoming-core.md#module-1ea3e5194a8f) | Becoming pure core |
+| [Passing.lean](lean-declarations/becoming-core.md#module-3b01f28c0e7a) | Becoming pure core |
 | [PatientConcern.lean](lean-declarations/concern.md#module-5ad0b8e8fd94) | Concern and shared activity |
 | [PendingTaskApplicability.lean](lean-declarations/other.md#module-2d39360c8f48) | Other formal studies |
 | [PeriodCostSelection.lean](lean-declarations/inquiry.md#module-e674e69e840d) | Attainable inquiry, contact and process laws |
@@ -883,9 +886,11 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [WholeQualityNaturalism.lean](lean-declarations/core.md#module-b4942b7409e4) | Generative core and relational structure |
 | [WholeTheoryDischarge.lean](lean-declarations/inquiry.md#module-ca1aed5ff8a7) | Attainable inquiry, contact and process laws |
 | [Wholes.lean](lean-declarations/becoming-core.md#module-708cbc7816ed) | Becoming pure core |
+| [Widening.lean](lean-declarations/becoming-core.md#module-fb766a828cd3) | Becoming pure core |
 | [WisdomFallibleJudgment.lean](lean-declarations/core.md#module-782abba8ef08) | Generative core and relational structure |
 | [WisdomGoalGrounds.lean](lean-declarations/ethics.md#module-3bd6cb85aa59) | Normative grounding and generative direction |
 | [WisdomResponseStructure.lean](lean-declarations/core.md#module-25c8adeade56) | Generative core and relational structure |
+| [Withholding.lean](lean-declarations/becoming-core.md#module-f047a0ccf338) | Becoming pure core |
 | [WitnessHull.lean](lean-declarations/abstraction.md#module-72d18a9b2453) | Abstraction, applicability and constitution |
 | [WitnessRefinement.lean](lean-declarations/becoming-core.md#module-0717096c6252) | Becoming pure core |
 | [World.lean](lean-declarations/becoming-core.md#module-7d8b73829c63) | Becoming pure core |

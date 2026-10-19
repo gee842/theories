@@ -63,6 +63,8 @@ Contains no ethical predicate; Whole is coincidence of activity, not constitutio
 - Related, not a proved adapter: [more-needs-renewers](more-needs-renewers.md). “More” is read there as the number of takers; this result speaks only of the parts' arising, not of growth in number.
 - Related, not a proved adapter: [theory-of-becoming-foundation](theory-of-becoming-foundation.md). Whole and parts: where parts are brief, or end with finitely many active at once, a whole persists through the generation of its parts. The whole deduction remains open.
 
+**Used by:** [a-pattern-lasts-through-passing](a-pattern-lasts-through-passing.md)
+
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
 

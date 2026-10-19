@@ -653,7 +653,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "provenance",
-      "sha256": "e5f1540b86903988c03f33167d2b81b7bb233fbad521aae991753ad1a70c8ba8"
+      "sha256": "6918818c932289d08979f4bf04789571533f414a85ac3bd7c116d447f29287d7"
     }
   ],
   "proof_bindings": [
@@ -729,6 +729,10 @@
     {
       "en": "19 October 2026, Y1 (Becoming.Hexagrams): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y1 added D47, its index row and its lineage line). The claim is unchanged.",
       "zh": "2026年10月19日，Y1（Becoming.Hexagrams）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, V (what a collective's continuation needs): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: V added decision D48). The claim is unchanged.",
+      "zh": "2026年10月19日，V（集体延续所需）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
     }
   ]
 }

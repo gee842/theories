@@ -104,6 +104,7 @@ Aliases: `the sixty-four hexagrams on the spine`, `六十四卦在脊柱上`, `�
 ### History
 
 - 19 October 2026: added (Y1), on Ren's “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping”, after his question on the relation of the work to the 周易 and the 易传; study section 192.
+- 19 October 2026, V (what a collective's continuation needs): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V added study section 193). The claim is unchanged.
 
 </details>
 

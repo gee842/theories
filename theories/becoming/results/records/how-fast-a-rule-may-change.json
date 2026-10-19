@@ -1,0 +1,269 @@
+{
+  "schema_version": 2,
+  "id": "how-fast-a-rule-may-change",
+  "title": {
+    "en": "How fast a rule may change",
+    "zh": "规则可以多快地改变"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T07:15:58+00:00",
+  "statement": {
+    "en": "A rule that never reads the fast level is unreached and loses what it merges; a fast difference reaches a rule only at a reading step. Given two values, a stretch of L steps fixes every pair of held courses with at most N states exactly when L ≥ 2N − 1.",
+    "zh": "从不读快层的规则不被触及，并失去它所合并者；快层的差别只在读取之步触及规则。给定两个值，L 步的段落确定每对至多 N 个状态的持守进程，恰当 L ≥ 2N − 1。"
+  },
+  "laws": [
+    {
+      "en": "A two-level course, the fast configuration stepping by a rule that changes only at reading steps, is a run of one law; a rule that never reads is kept, nothing the fast level meets reaches it, and under it what is lost stays lost and merges lose configurations.",
+      "zh": "两层进程（快构形依规则步进，规则只在读取之步改变）是一条律的运行；从不读取的规则保持不变，快层所遇的都触及不到它，在它之下失去的保持失去，合并失去构形。",
+      "declarations": [
+        "Becoming.Pace.paced",
+        "Becoming.Pace.paced_run",
+        "Becoming.Pace.rule_kept",
+        "Becoming.Pace.rule_unreached",
+        "Becoming.Pace.never_reads_lost",
+        "Becoming.Pace.never_reads_merged",
+        "Becoming.Pace.never_reads_loses",
+        "Becoming.Pace.byRule_reabsorbed"
+      ]
+    },
+    {
+      "en": "A fast difference reaches the rule only at a reading step: up to and including the first reading step the rule is the one at the start, exact in Copying; regaining what a fixed rule loses needs a change of rule (Switching).",
+      "zh": "快层的差别只在读取之步触及规则：直到并包括第一个读取之步，规则都是开始时的那个，在 Copying 中精确；恢复固定规则所失去的需要改变规则（Switching）。",
+      "declarations": [
+        "Becoming.Pace.rule_until_reading",
+        "Becoming.Pace.rule_alike_until_reading",
+        "Becoming.Pace.rule_at_reading",
+        "Becoming.Copying.rule_parts",
+        "Becoming.Switching.fixed_loses",
+        "Becoming.Switching.changing_regains"
+      ]
+    },
+    {
+      "en": "Given two values, a stretch of L steps fixes every pair of courses with at most N states that held rules generate exactly when L ≥ 2N − 1: shorter stretches dissolve (from prefix_short_twice), longer ones fix (from bounded_agree); within a paced course a rule held that long is fixed over its stretch.",
+      "zh": "给定两个值，L 步的段落确定由持守规则生成的每对至多 N 个状态的进程，恰当 L ≥ 2N − 1：更短的段落消散（由 prefix_short_twice），更长的确定（由 bounded_agree）；在分层进程中持守这么久的规则在其段落上被确定。",
+      "declarations": [
+        "Becoming.Pace.heldCourse",
+        "Becoming.Pace.held_statesBelow",
+        "Becoming.Pace.held_realizes",
+        "Becoming.Pace.dissolving",
+        "Becoming.Pace.held_fixed",
+        "Becoming.Pace.stretch_fixed",
+        "Becoming.Pace.StretchFixes",
+        "Becoming.Pace.pace_law"
+      ]
+    },
+    {
+      "en": "A course of configurations read whole, with at most N states, is fixed among every run of every law by its first N + 1 steps, exactly.",
+      "zh": "整体读取、至多 N 个状态的构形进程，在每条律的每次运行之间由其前 N + 1 步确定，且恰好如此。",
+      "declarations": [
+        "Becoming.Pace.whole_fixed",
+        "Becoming.Pace.whole_fixed_exact"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom; the fast law, the reading law and the reading steps are given; courses with at most N states are read through a map; the pace law quantifies over fast levels in Type, the fixing side in every universe.",
+      "zh": "不加公理；快律、读取律与读取之步是给定的；至多 N 个状态的进程经一个映射读取；步调律对 Type 中的快层量化，确定的一侧在每个宇宙中成立。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which rule a slow level reads into, that it reads at stretches of any length, or how many states an actual fast level has.",
+      "zh": "慢层读入哪条规则，它以任何长度的段落读取，或实际快层有多少状态。",
+      "kind": "scope"
+    },
+    {
+      "en": "That a layered pace is better than another; many levels and rules that change by chance.",
+      "zh": "一种分层步调优于另一种；多层与随机改变的规则。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 41 declarations of Becoming.Pace, 31 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.Pace 的 41 项声明（31 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Many levels; noisy rules; which reading law adapts; an independent review.",
+    "zh": "多层；有噪声的规则；哪条读取律能适应；独立审查。"
+  },
+  "correspondence": {
+    "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; the AI's mapping found this one (stability with adaptability) partial, with no law of the pace of a rule. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
+    "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；AI 的对照发现此条（稳定与适应）部分承载，没有关于规则步调的定律。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean",
+  "aliases": [
+    "how fast a rule may change",
+    "规则可以多快地改变",
+    "the pace law",
+    "Becoming.Pace.pace_law",
+    "stability with adaptability (reading)"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit and the run of a determined law, Law.run, whose states are the orbit.",
+        "zh": "复用 Law.orbit 与决定性律的运行 Law.run，其状态即轨道。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course of a determined law as a run of the spine.",
+          "zh": "决定性律的进程作为脊柱的运行。"
+        },
+        "input": {
+          "en": "The courses the laws are stated on.",
+          "zh": "诸定律所陈述的进程。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "identification-where-bounded",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses bounded_agree and the witness of prefix_short_twice: the pace law is identification read on held rules.",
+        "zh": "复用 bounded_agree 与 prefix_short_twice 的见证：步调律是在持守规则上读的辨认。"
+      },
+      "interface": {
+        "output": {
+          "en": "A bounded prefix fixes the course at the exact length N + N' − 1.",
+          "zh": "有界前缀在精确长度 N + N' − 1 处确定进程。"
+        },
+        "input": {
+          "en": "What a stretch of a held rule fixes.",
+          "zh": "持守规则的段落确定什么。"
+        },
+        "conditions": {
+          "en": "Courses with at most N states.",
+          "zh": "至多 N 个状态的进程。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "target-capture",
+      "detail": {
+        "en": "byRule_reabsorbed is the instance of Law.perturbation_reabsorbed on the two-level course.",
+        "zh": "byRule_reabsorbed 是 Law.perturbation_reabsorbed 在两层进程上的实例。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Copying.fast",
+        "Becoming.Copying.rule_parts",
+        "Becoming.Copying.slow",
+        "Becoming.Law.Reachable.back",
+        "Becoming.Pace.StretchFixes",
+        "Becoming.Pace.byRule_reabsorbed",
+        "Becoming.Pace.dissolving",
+        "Becoming.Pace.heldCourse",
+        "Becoming.Pace.held_fixed",
+        "Becoming.Pace.held_realizes",
+        "Becoming.Pace.held_statesBelow",
+        "Becoming.Pace.lassoStep",
+        "Becoming.Pace.lasso_statesBelow",
+        "Becoming.Pace.never_reads_course",
+        "Becoming.Pace.never_reads_loses",
+        "Becoming.Pace.never_reads_lost",
+        "Becoming.Pace.never_reads_merged",
+        "Becoming.Pace.pace_law",
+        "Becoming.Pace.paced",
+        "Becoming.Pace.paced_count",
+        "Becoming.Pace.paced_held",
+        "Becoming.Pace.paced_run",
+        "Becoming.Pace.paced_stretch",
+        "Becoming.Pace.paced_succ",
+        "Becoming.Pace.paced_zero",
+        "Becoming.Pace.rule_alike_until_reading",
+        "Becoming.Pace.rule_at_reading",
+        "Becoming.Pace.rule_kept",
+        "Becoming.Pace.rule_unreached",
+        "Becoming.Pace.rule_until_reading",
+        "Becoming.Pace.step",
+        "Becoming.Pace.stretch_fixed",
+        "Becoming.Pace.turn",
+        "Becoming.Pace.turn_byRule",
+        "Becoming.Pace.whole_fixed",
+        "Becoming.Pace.whole_fixed_exact",
+        "Becoming.Switching.back_at_four",
+        "Becoming.Switching.changing_regains",
+        "Becoming.Switching.fast",
+        "Becoming.Switching.fixed_loses",
+        "Becoming.Switching.slow"
+      ],
+      "sha256": "6cbf7e185c4d9cc04643b99ec906ff775a4a256086a13e7c825971925cbef5ec"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Identification.bounded_agree",
+        "Becoming.Identification.prefix_short_twice"
+      ],
+      "sha256": "389e050bf149ae8a5e3bc6e04a13c46a1f3f311bd367b7bc3821ccb1e171eda7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "role": "receipt",
+      "sha256": "55115129b7ca2bb308f98773de1ecf4bd5b5d51acf8f398e8b1ab8ee5eccf14a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "2f3302f7114fae4f9ef78f1cdf13923bd978b244f7f87f67aea4575b01663971"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "efd38fd4c55c4cfbeffb6e8e1640ca00f371baf75b82b6615493bdbac376cf1c"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
+      "role": "provenance",
+      "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Pace",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (V), on Ren's \"does our theories fully cover this?\" with a pasted account of social viability, \"please, spawn a swarm of subagents, think hard, let's fully complete this\" and \"I agree with your push back, let's think about how to resolve them elegantly\"; study section 193.",
+      "zh": "2026年10月19日：新增（V），按 Ren 随一段社会可存续性文字所问的\"does our theories fully cover this?\"，以及\"please, spawn a swarm of subagents, think hard, let's fully complete this\"与\"I agree with your push back, let's think about how to resolve them elegantly\"；研究第 193 节。"
+    }
+  ]
+}
