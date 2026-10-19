@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-256 registered results: 240 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 636 curated edges join 210 results to the results they draw on.
+258 registered results: 242 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 640 curated edges join 212 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -165,6 +165,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [residual-continuation-correspondence][] ← <a id="residual-continuation-correspondence--guarded-program-question-recovery"></a>[guarded-program-question-recovery][] · <a id="residual-continuation-correspondence--branching-tests-bisimulation"></a>[branching-tests-bisimulation][] · <a id="residual-continuation-correspondence--finite-trace-transport"></a>[finite-trace-transport][]
 - [rest-at-every-resolution][] ← <a id="rest-at-every-resolution--continued-change-needs-openness"></a>[continued-change-needs-openness][] · <a id="rest-at-every-resolution--no-finite-part-bears-taking"></a>[no-finite-part-bears-taking][] · <a id="rest-at-every-resolution--reserve-defers-ending"></a>[reserve-defers-ending][]
 - [rest-with-refinement-counted][] ← <a id="rest-with-refinement-counted--continued-change-needs-openness"></a>[continued-change-needs-openness][] · <a id="rest-with-refinement-counted--rest-at-every-resolution"></a>[rest-at-every-resolution][]
+- [restoring-giving-from-the-worst-start][] ← <a id="restoring-giving-from-the-worst-start--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="restoring-giving-from-the-worst-start--giving-that-waits-on-giving"></a>[giving-that-waits-on-giving][]
 - [retained-reference-joining-recovery][] ← <a id="retained-reference-joining-recovery--branching-tests-bisimulation"></a>[branching-tests-bisimulation][] · <a id="retained-reference-joining-recovery--unanchored-incidence-collapse"></a>[unanchored-incidence-collapse][]
 - [retrospective-source-binding][] ← <a id="retrospective-source-binding--acquired-binding-compositional-use"></a>[acquired-binding-compositional-use][] · <a id="retrospective-source-binding--encounter-control-and-retention"></a>[encounter-control-and-retention][] *(interpretive)*
 - [returning-novelty-forgetting-on-levels][] ← <a id="returning-novelty-forgetting-on-levels--entropy-history-and-record"></a>[entropy-history-and-record][] · <a id="returning-novelty-forgetting-on-levels--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="returning-novelty-forgetting-on-levels--imbalance-as-relatum"></a>[imbalance-as-relatum][]
@@ -193,6 +194,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [the-gap-for-ones-own-act][] ← <a id="the-gap-for-ones-own-act--selection-through-registration"></a>[selection-through-registration][] · <a id="the-gap-for-ones-own-act--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
 - [the-split-that-makes-sense][] ← <a id="the-split-that-makes-sense--configurations-alike-by-relation"></a>[configurations-alike-by-relation][] · <a id="the-split-that-makes-sense--projection-carrying-a-law"></a>[projection-carrying-a-law][] · <a id="the-split-that-makes-sense--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="the-split-that-makes-sense--registration-within-what-it-registers"></a>[registration-within-what-it-registers][]
 - [theory-of-becoming-foundation][] ← <a id="theory-of-becoming-foundation--becoming-context-coherence"></a>[becoming-context-coherence][] *(interpretive)* · <a id="theory-of-becoming-foundation--conditional-foundation-assessment"></a>[conditional-foundation-assessment][] *(interpretive)* · <a id="theory-of-becoming-foundation--control-coherence-loss"></a>[control-coherence-loss][] *(interpretive)*
+- [thresholds-of-waiting][] ← <a id="thresholds-of-waiting--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="thresholds-of-waiting--giving-that-waits-on-giving"></a>[giving-that-waits-on-giving][]
 - [timely-response-necessity][] ← <a id="timely-response-necessity--comparison-where-the-rest-responds"></a>[comparison-where-the-rest-responds][] · <a id="timely-response-necessity--testing-within-registration"></a>[testing-within-registration][] · <a id="timely-response-necessity--finite-fallible-inquiry-necessity"></a>[finite-fallible-inquiry-necessity][]
 - [trace-law-equivalence][] ← <a id="trace-law-equivalence--finite-trace-transport"></a>[finite-trace-transport][]
 - [transmission-independent-where-it-binds][] ← <a id="transmission-independent-where-it-binds--map-of-premises"></a>[map-of-premises][] · <a id="transmission-independent-where-it-binds--transmission-is-inheritance-and-need"></a>[transmission-is-inheritance-and-need][]
@@ -399,6 +401,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [residual-continuation-correspondence]: theories/becoming/results/records/residual-continuation-correspondence.md
 [rest-at-every-resolution]: theories/becoming/results/records/rest-at-every-resolution.md
 [rest-with-refinement-counted]: theories/becoming/results/records/rest-with-refinement-counted.md
+[restoring-giving-from-the-worst-start]: theories/becoming/results/records/restoring-giving-from-the-worst-start.md
 [retained-reference-joining-recovery]: theories/becoming/results/records/retained-reference-joining-recovery.md
 [retrospective-source-binding]: theories/becoming/results/records/retrospective-source-binding.md
 [returning-novelty-forgetting-on-levels]: theories/becoming/results/records/returning-novelty-forgetting-on-levels.md
@@ -428,6 +431,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [the-gap-for-ones-own-act]: theories/becoming/results/records/the-gap-for-ones-own-act.md
 [the-split-that-makes-sense]: theories/becoming/results/records/the-split-that-makes-sense.md
 [theory-of-becoming-foundation]: theories/becoming/results/records/theory-of-becoming-foundation.md
+[thresholds-of-waiting]: theories/becoming/results/records/thresholds-of-waiting.md
 [timely-response-necessity]: theories/becoming/results/records/timely-response-necessity.md
 [trace-law-equivalence]: theories/becoming/results/records/trace-law-equivalence.md
 [transition-grouping-word-partition]: theories/becoming/results/records/transition-grouping-word-partition.md

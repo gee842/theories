@@ -1,0 +1,298 @@
+{
+  "schema_version": 2,
+  "id": "restoring-giving-from-the-worst-start",
+  "title": {
+    "en": "Restoring giving from the worst start",
+    "zh": "从最坏的开始恢复给出"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T08:36:13+00:00",
+  "statement": {
+    "en": "For every law of giving that keeps inclusion, giving at step n from every start is giving at n from total withholding, from which giving only grows. Where a formation gives first, restoring by n is exactly no chain of n waits clear of sources.",
+    "zh": "对每条保持包含的给出之律，从每个开始在第 n 步给出即从全部扣留开始在第 n 步给出，而从全部扣留出发给出只增不减。一个形成先给出时，恢复到第 n 步恰当没有 n 次避开来源的等待链。"
+  },
+  "laws": [
+    {
+      "en": "A law keeping inclusion keeps it along its courses; the four laws waitsAll, answers, givesFirst and the tolerating law keep inclusion.",
+      "zh": "保持包含的律沿其进程保持包含；waitsAll、answers、givesFirst 与容忍律四条律保持包含。",
+      "declarations": [
+        "Becoming.Tolerance.KeepsInclusion",
+        "Becoming.Tolerance.KeepsInclusion.course",
+        "Becoming.Tolerance.waitsAll_keeps",
+        "Becoming.Tolerance.answers_keeps",
+        "Becoming.Tolerance.givesFirst_keeps",
+        "Becoming.Tolerance.tolerating_keeps"
+      ]
+    },
+    {
+      "en": "The worst start is total withholding: a formation gives at step n from every start exactly where it gives at n from the start at which nothing gives; from that start giving only grows, so restoring by n is restoring at every later step; where no formation gives at the step after total withholding, none gives at any step.",
+      "zh": "最坏的开始是全部扣留：一个形成从每个开始在第 n 步给出，恰当它从无一给出的开始在第 n 步给出；从该开始给出只增不减，故恢复到第 n 步即此后每一步都恢复；全部扣留后的下一步无一给出时，任何一步都无一给出。",
+      "declarations": [
+        "Becoming.Tolerance.allWithheld",
+        "Becoming.Tolerance.worst_start",
+        "Becoming.Tolerance.rises_from_withheld",
+        "Becoming.Tolerance.rises_le",
+        "Becoming.Tolerance.restored_stays",
+        "Becoming.Tolerance.withheld_kept"
+      ]
+    },
+    {
+      "en": "Under givesFirst, a clear chain of n waits into a formation (none of its formations after the first a source) makes it withhold at n from total withholding; with the sources decided, it gives at n from every start exactly where no clear chain of n waits leads into it, and where no clear chain is L long every formation gives from L on; a clear loop is never restored.",
+      "zh": "在 givesFirst 下，通入一个形成的 n 次避开来源的等待链（首个之后无一是来源）使它从全部扣留开始在第 n 步扣留；来源可判定时，它从每个开始在第 n 步给出，恰当没有 n 次避开来源的链通入它；没有 L 长的避开来源的链时，每个形成从第 L 步起给出；避开来源的回路永不恢复。",
+      "declarations": [
+        "Becoming.Tolerance.Clear",
+        "Becoming.Tolerance.Clear.last",
+        "Becoming.Tolerance.Clear.chain",
+        "Becoming.Tolerance.Clear.iterate",
+        "Becoming.Tolerance.clear_withholds",
+        "Becoming.Tolerance.gives_of_no_clear",
+        "Becoming.Tolerance.restores_iff",
+        "Becoming.Tolerance.restores_from",
+        "Becoming.Tolerance.clear_loop_withholds"
+      ]
+    },
+    {
+      "en": "Without memory, a formation gives at n from every start exactly where no chain of n waits leads into it, so giving first never restores later than waiting on all; with memory no step restores giving.",
+      "zh": "无记忆时，一个形成从每个开始在第 n 步给出，恰当没有 n 次等待链通入它，故先给出从不比等待全部更晚恢复；有记忆时没有一步恢复给出。",
+      "declarations": [
+        "Becoming.Tolerance.answers_restores_iff",
+        "Becoming.Tolerance.givesFirst_restores_of_answers",
+        "Becoming.Tolerance.waitsAll_never_restores"
+      ]
+    },
+    {
+      "en": "The ring of Becoming.Withholding has no clear chain of three waits, so its restoring from step 3 is an instance.",
+      "zh": "Becoming.Withholding 的环没有三次避开来源的等待链，故其从第 3 步起的恢复是一个实例。",
+      "declarations": [
+        "Becoming.Tolerance.Ring.no_clear_three",
+        "Becoming.Tolerance.Ring.isFirst_decided",
+        "Becoming.Tolerance.Ring.restores_from_three"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise about the formations or the relation of waiting: no finiteness and no decision of giving. The converse of restores_iff, and restores_from, take the decision of which formations are sources (∀ a, src a ∨ ¬ src a) as a hypothesis. Every main law is stated on runs Law.run.",
+      "zh": "不加公理，对形成与等待关系不加前提：不要求有限，不要求给出可判定。restores_iff 的逆向与 restores_from 以“哪些形成是来源可判定”（∀ a, src a ∨ ¬ src a）为假设。每条主要定律都陈述在运行 Law.run 上。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "How a law that gives first forms, or which formations come to be sources.",
+      "zh": "先给出的律如何形成，或哪些形成成为来源。",
+      "kind": "scope"
+    },
+    {
+      "en": "That restoring giving is good, or that a source should give.",
+      "zh": "恢复给出是好的，或来源应当给出。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T083316.966154Z): the 65 declarations of Becoming.Tolerance, 52 of them theorems, have empty axiom reports; the checker verifies core purity. Built and reviewed in one session, with no separate reviewer; author review in study section 194; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T083316.966154Z）：Becoming.Tolerance 的 65 项声明（52 项定理）公理报告为空；检查器并核对核心纯净。在一个会话中构建并审查，没有另设审查者；作者审查见研究第 194 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "How a restoring law forms from the relations; the worst start for laws that do not keep inclusion; an independent review.",
+    "zh": "恢复之律如何从关系中形成；不保持包含的律的最坏开始；独立审查。"
+  },
+  "correspondence": {
+    "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; V carried the fourth, cooperation among strangers, by Becoming.Withholding and left which laws restore giving in a general family open. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
+    "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；V 以 Becoming.Withholding 承载第四条（陌生人之间的合作），留下一般族中哪些律恢复给出待解。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
+  "aliases": [
+    "restoring giving from the worst start",
+    "从最坏的开始恢复给出",
+    "Becoming.Tolerance.worst_start",
+    "Becoming.Tolerance.restores_iff",
+    "institutions that act whatever was last received (reading)"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit and the run of a determined law, Law.run, whose states are the orbit.",
+        "zh": "复用 Law.orbit 与决定性律的运行 Law.run，其状态即轨道。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course of a determined law as a run of the spine.",
+          "zh": "决定性律的进程作为脊柱的运行。"
+        },
+        "input": {
+          "en": "The courses the laws are stated on.",
+          "zh": "诸定律所陈述的进程。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "giving-that-waits-on-giving",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the laws waitsAll, answers and givesFirst, chains of waits and their closed form answers_closed, and the ring of three.",
+        "zh": "复用 waitsAll、answers 与 givesFirst 三条律、等待链及其闭式 answers_closed，以及三元环。"
+      },
+      "interface": {
+        "output": {
+          "en": "The laws of giving that waits on giving, their chains and the ring.",
+          "zh": "等待给出的给出之律、其链与环。"
+        },
+        "input": {
+          "en": "The family whose restoring is characterized; the ring restated as an instance.",
+          "zh": "其恢复被刻画的族；环被重述为实例。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "target-capture",
+      "detail": {
+        "en": "As a perturbed state is re-absorbed under one rule, giving is regained only under another law; here exactly where every chain of waits passes a source.",
+        "zh": "如同受扰状态在一条规则下被重新吸收，给出只在另一条律下恢复；这里恰在每条等待链都经过来源处。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Tolerance.AllBut",
+        "Becoming.Tolerance.AllBut.found",
+        "Becoming.Tolerance.AllBut.mono_count",
+        "Becoming.Tolerance.AllBut.mono_set",
+        "Becoming.Tolerance.AllBut.of_length",
+        "Becoming.Tolerance.AllBut.of_length_le",
+        "Becoming.Tolerance.AllBut.withheld_iff",
+        "Becoming.Tolerance.AllBut.zero_all",
+        "Becoming.Tolerance.AllBut.zero_iff",
+        "Becoming.Tolerance.Clear",
+        "Becoming.Tolerance.Clear.append",
+        "Becoming.Tolerance.Clear.chain",
+        "Becoming.Tolerance.Clear.iterate",
+        "Becoming.Tolerance.Clear.last",
+        "Becoming.Tolerance.Clear.last_of_eq",
+        "Becoming.Tolerance.KeepsInclusion",
+        "Becoming.Tolerance.KeepsInclusion.course",
+        "Becoming.Tolerance.Listed",
+        "Becoming.Tolerance.Ring.isFirst_decided",
+        "Becoming.Tolerance.Ring.no_clear_three",
+        "Becoming.Tolerance.Ring.restores_from_three",
+        "Becoming.Tolerance.Triad",
+        "Becoming.Tolerance.Triad.absorbed",
+        "Becoming.Tolerance.Triad.firstOnly",
+        "Becoming.Tolerance.Triad.oneWithheld",
+        "Becoming.Tolerance.Triad.spreads",
+        "Becoming.Tolerance.Triad.step_first",
+        "Becoming.Tolerance.Triad.step_second",
+        "Becoming.Tolerance.Triad.step_third",
+        "Becoming.Tolerance.Triad.tol0",
+        "Becoming.Tolerance.Triad.tol0_spares_none",
+        "Becoming.Tolerance.Triad.tol1",
+        "Becoming.Tolerance.Triad.tol1_spares_none",
+        "Becoming.Tolerance.Triad.total_at_two",
+        "Becoming.Tolerance.Triad.total_kept",
+        "Becoming.Tolerance.Triad.ups",
+        "Becoming.Tolerance.allWithheld",
+        "Becoming.Tolerance.answers_keeps",
+        "Becoming.Tolerance.answers_restores_iff",
+        "Becoming.Tolerance.certified",
+        "Becoming.Tolerance.certified_available_iff",
+        "Becoming.Tolerance.certified_blocked",
+        "Becoming.Tolerance.certified_kept",
+        "Becoming.Tolerance.clear_loop_withholds",
+        "Becoming.Tolerance.clear_withholds",
+        "Becoming.Tolerance.givesFirst_keeps",
+        "Becoming.Tolerance.givesFirst_restores_of_answers",
+        "Becoming.Tolerance.gives_needs_sparing",
+        "Becoming.Tolerance.gives_of_no_clear",
+        "Becoming.Tolerance.kept_set",
+        "Becoming.Tolerance.restored_stays",
+        "Becoming.Tolerance.restores_from",
+        "Becoming.Tolerance.restores_iff",
+        "Becoming.Tolerance.rises_from_withheld",
+        "Becoming.Tolerance.rises_le",
+        "Becoming.Tolerance.sparing_gives",
+        "Becoming.Tolerance.thin_absorbed",
+        "Becoming.Tolerance.tolerating",
+        "Becoming.Tolerance.tolerating_keeps",
+        "Becoming.Tolerance.tolerating_zero",
+        "Becoming.Tolerance.total_stays",
+        "Becoming.Tolerance.waitsAll_keeps",
+        "Becoming.Tolerance.waitsAll_never_restores",
+        "Becoming.Tolerance.withheld_kept",
+        "Becoming.Tolerance.worst_start"
+      ],
+      "sha256": "3b25d41ace43dee151b03139a9df47b464991525fc7d0f2f463ba5f1b2b7eae0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean",
+      "role": "proof",
+      "sha256": "b56112df45782fd28def6d31b6e6a6d52ec64d665e4f2163f2e1e7da61a01b99"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083316.966154Z/verification.json",
+      "role": "receipt",
+      "sha256": "3a3ded5d10aeab31161be164deeb33d767f2f529249a89a3adc3152083bc74fc"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "cf299b825f6404cc7821102725967e9d250d6baa505b7a93035f91f823556a79"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "aee571dd4962f75ceb0da70210056ac2a90f0ca3092509a883d7bca87a5d2a62"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
+      "role": "provenance",
+      "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083316.966154Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Tolerance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (V2), taking two items of the open remainder that V (study section 193) named in chapter section 8.2, \"Collective continuation\": thresholds of waiting with the laws that restore giving in a general family, and fault tolerance joined to Becoming.FaultEnvelopes; study section 194.",
+      "zh": "2026年10月19日：新增（V2），承接 V（研究第 193 节）在第 8.2 节“集体延续”中列出的开放余项中的两项：等待的阈值与一般族中恢复给出的律，以及与 Becoming.FaultEnvelopes 相接的容错；研究第 194 节。"
+    }
+  ]
+}

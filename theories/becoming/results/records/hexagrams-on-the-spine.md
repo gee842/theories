@@ -109,6 +109,7 @@ Aliases: `the sixty-four hexagrams on the spine`, `六十四卦在脊柱上`, `�
 - 19 October 2026: added (Y1), on Ren's “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping”, after his question on the relation of the work to the 周易 and the 易传; study section 192.
 - 19 October 2026, V (what a collective's continuation needs): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V added study section 193). The claim is unchanged.
 - 19 October 2026, Y2 (the relations of the places): the relations of the places, listed as not shown and as the next delta, are now the record place-relations-in-context (study section 195, decision D50); YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y2 added its passages, its censuses and their checks, its chapter text, its study section and its section 1 paragraph). The claim is unchanged.
+- 19 October 2026, V2 (thresholds of waiting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V2 added study section 194; THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 "Collective continuation" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 

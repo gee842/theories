@@ -88,6 +88,7 @@ Aliases: `which links a closure needs`, `闭包需要哪些联系`, `cut changes
 - 19 October 2026, Y1 (Becoming.Hexagrams): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y1 added a study section; THE-THEORY-OF-BECOMING.md: Y1 added the section 1 paragraph on the configurations of the Changes with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts and receipt, and the section 11 row). The claim is unchanged.
 - 19 October 2026, V (what a collective's continuation needs): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V added study section 193). The claim is unchanged.
 - 19 October 2026, Y2 (Becoming.HexagramPlaces): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y2 added a study section). The claim is unchanged.
+- 19 October 2026, V2 (thresholds of waiting): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V2 added study section 194). The claim is unchanged.
 
 </details>
 

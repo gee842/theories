@@ -74,6 +74,7 @@ Aliases: `a pattern lasts through passing`, `样式经传递而持续`, `one emp
 
 - 19 October 2026: added (V), on Ren's "does our theories fully cover this?" with a pasted account of social viability, "please, spawn a swarm of subagents, think hard, let's fully complete this" and "I agree with your push back, let's think about how to resolve them elegantly"; study section 193.
 - 19 October 2026, Y2 (Becoming.HexagramPlaces): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y2 added a study section; THE-THEORY-OF-BECOMING.md: Y2 added the section 1 paragraph on the relations of the places with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.
+- 19 October 2026, V2 (thresholds of waiting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V2 added study section 194; THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 "Collective continuation" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 
