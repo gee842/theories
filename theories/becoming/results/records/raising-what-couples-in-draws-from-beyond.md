@@ -111,6 +111,7 @@ Aliases: `favouring what reaches beyond`, `偏向伸出`, `raising what couples 
 - 19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
 - 19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
+- 19 October 2026, R23 (the refutation laws however a family is listed): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.
 
 </details>
 

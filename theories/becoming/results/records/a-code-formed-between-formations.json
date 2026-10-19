@@ -525,7 +525,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "14f5b47cf9f46f6b6e3b92ab50e936f2ad06df22f617a1ca5f414eadcc7bc149"
+      "sha256": "8448debe3c0c17e26e50be2e03c52d29e3b1ee003333afb9ea7198437dbb0caf"
     },
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
@@ -571,6 +571,10 @@
     {
       "en": "19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，R22（第十九次审查的名称）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R23 (the refutation laws however a family is listed): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: THE-THEORY-OF-BECOMING.md, the listing paragraph and §8.2 row name Becoming.ListingRefutations; §9 counts and receipt follow R23. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R23（否证律对任何列出方式成立）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R23 改动之处改动：THE-THEORY-OF-BECOMING.md，列出一次一段与 §8.2 行写入 Becoming.ListingRefutations；§9 计数与回执随 R23。重新指向前已读。论断不变。"
     }
   ]
 }

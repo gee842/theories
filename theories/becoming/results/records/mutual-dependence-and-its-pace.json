@@ -402,7 +402,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "44140389dd14b17c78ed9dc4c7e173e61f88f00c7b3277798131934a10b472e5"
+      "sha256": "e74cad4f4a272338f9636fce4d764c94f0da3ac392c0eae181a478542cf0a271"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
@@ -458,6 +458,10 @@
     {
       "en": "19 October 2026, R22 (the names of the nineteenth review): DELEGATED-CHOICES.md, OPENING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: DELEGATED-CHOICES.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json); OPENING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，R22（第十九次审查的名称）：DELEGATED-CHOICES.md、OPENING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：DELEGATED-CHOICES.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）；OPENING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R23 (the refutation laws however a family is listed): BECOMING-RENEWAL-READING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: BECOMING-RENEWAL-READING.md, section 215 added. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R23（否证律对任何列出方式成立）：BECOMING-RENEWAL-READING.md 重新指向。自所审哈希以来，所引文件只在 R23 改动之处改动：BECOMING-RENEWAL-READING.md，新增第 215 节。重新指向前已读。论断不变。"
     }
   ]
 }
