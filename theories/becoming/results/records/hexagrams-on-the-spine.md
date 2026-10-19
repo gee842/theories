@@ -80,7 +80,7 @@ Ren, 19 October 2026, asked whether the relation of the work to the 周易, abov
 - related, not a proved adapter: [place-relations-in-context](place-relations-in-context.md). The relations of the places (正, 應, 比, 中) read in context on these configurations, and their laws under the same changes.
 - related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). Four more laws on these configurations (the nuclear law, the cast, the four symmetries, the counter) and the six orbits of the law of waxing and waning.
 
-**Used by:** [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md)
+**Used by:** [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md) (application)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -117,6 +117,7 @@ Aliases: `the sixty-four hexagrams on the spine`, `六十四卦在脊柱上`, `�
 - 19 October 2026, U3 (theorems apart from the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U3 added study section 196; THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: E1 added study section 194; THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
 - 19 October 2026, Y3: the related record hexagram-world-laws added (study section 198, decision D51); YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 added its passages, widened four passages of Y1 to its declarations, and added its chapter text, study section and section 1 paragraph). The claim is unchanged.
+- 19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section; THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apart, the section 3 item on the liar with a third value, glossary rows, section 8.2 and 8.3 items, and revised the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 

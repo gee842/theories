@@ -1,0 +1,353 @@
+{
+  "schema_version": 2,
+  "id": "revision-with-an-undecided-value",
+  "title": {
+    "en": "Revision with an undecided value",
+    "zh": "带未定值的修正"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:25:15+00:00",
+  "statement": {
+    "en": "With an undecided value below true and false, revision of N sentences speaking only of one another, run from all undecided, settles within N steps, exactly, at the least fixed point. Where two-valued revision has no fixed point, every fixed point leaves a sentence undecided.",
+    "zh": "有一个低于真与假的未定值时，只彼此言说的 N 个句子从全未定起的修正，在 N 步内停于最小不动点，此界确切。二值修正没有不动点时，每个不动点留下一个未定的句子。"
+  },
+  "laws": [
+    {
+      "en": "Three values with u below t and f in information and the strong tables; evaluation is monotone in information and agrees with the two-valued tables on decided values.",
+      "zh": "三个值，信息序上 u 低于 t 与 f，用强表；求值对信息序单调，在已定值上与二值表一致。",
+      "declarations": [
+        "Becoming.Undecided.Value",
+        "Becoming.Undecided.Le",
+        "Becoming.Undecided.Term",
+        "Becoming.Undecided.eval",
+        "Becoming.Undecided.eval_mono",
+        "Becoming.Undecided.eval_mono_below",
+        "Becoming.Undecided.eval_embed"
+      ]
+    },
+    {
+      "en": "A term with no constant is undecided where every sentence is, so a system with no constant stays wholly undecided along its run of revision.",
+      "zh": "不含常量的项在每个句子都未定处未定，所以不含常量的系统沿其修正之运行始终全未定。",
+      "declarations": [
+        "Becoming.Undecided.ConstantFree",
+        "Becoming.Undecided.eval_undecided",
+        "Becoming.Undecided.stays_undecided"
+      ]
+    },
+    {
+      "en": "Revision run from all undecided rises at every step; for N closed sentences it settles within N steps and stays, at the least fixed point; readings on a list that only rise settle by the list's length.",
+      "zh": "从全未定起的修正之运行每步上升；对 N 个封闭句子，它在 N 步内停住并保持，在最小不动点；列表上只升不降的读法按列表长度停住。",
+      "declarations": [
+        "Becoming.Undecided.revise",
+        "Becoming.Undecided.stage",
+        "Becoming.Undecided.Closed",
+        "Becoming.Undecided.Steady",
+        "Becoming.Undecided.stage_up",
+        "Becoming.Undecided.stage_mono",
+        "Becoming.Undecided.settles_within",
+        "Becoming.Undecided.settles",
+        "Becoming.Undecided.settled_from",
+        "Becoming.Undecided.stage_fixed",
+        "Becoming.Undecided.stage_le_fixed",
+        "Becoming.Undecided.least_fixed"
+      ]
+    },
+    {
+      "en": "The bound is exact: in the chain whose first sentence says true and each next denies the one before, N + 1 sentences are steady at step N + 1 and not at N.",
+      "zh": "此界确切：在首句说真、后句各否定前句的链中，N + 1 个句子在第 N + 1 步稳定，在第 N 步不稳定。",
+      "declarations": [
+        "Becoming.Undecided.chain",
+        "Becoming.Undecided.chain_undecided",
+        "Becoming.Undecided.chain_decided",
+        "Becoming.Undecided.chain_exact"
+      ]
+    },
+    {
+      "en": "The liar rests undecided, and a run of its revision rests exactly where it is undecided; the truth-teller keeps its start and rests undecided from all undecided.",
+      "zh": "说谎者停于未定，其修正之运行恰在它未定处停住；诚实者保持其起点，从全未定起停于未定。",
+      "declarations": [
+        "Becoming.Undecided.liar_rests",
+        "Becoming.Undecided.liar_rests_iff",
+        "Becoming.Undecided.truthTeller_keeps",
+        "Becoming.Undecided.truthTeller_rests"
+      ]
+    },
+    {
+      "en": "Where two-valued revision of a closed system has no fixed point, every fixed point and every resting run leaves a sentence undecided; the liar never rests with two values and rests undecided with three.",
+      "zh": "封闭系统的二值修正没有不动点时，每个不动点、每条停住的运行都留下一个未定句子；说谎者二值时从不停息，三值时停于未定。",
+      "declarations": [
+        "Becoming.Undecided.undecided_of_moves",
+        "Becoming.Undecided.least_undecided",
+        "Becoming.Undecided.rest_undecided",
+        "Becoming.Undecided.liar_two_valued_never_rests",
+        "Becoming.Undecided.liar_undecided",
+        "Becoming.Undecided.liar_both_sides"
+      ]
+    },
+    {
+      "en": "No map monotone in information moves every value; the run of a monotone map from the undecided value rests from its first step, so the diagonal's gap needs a map that is not monotone; a family of three-valued readings within what it reads is still incomplete.",
+      "zh": "对信息序单调的映射都不移动每个值；单调映射从未定值出发的运行从第一步起停住，所以对角线的缺口需要不单调的映射；在所读之中的三值读法族仍不完备。",
+      "declarations": [
+        "Becoming.Undecided.monotone_fixed",
+        "Becoming.Undecided.monotone_not_moves",
+        "Becoming.Undecided.neg_not_moves",
+        "Becoming.Undecided.monotone_run_rests",
+        "Becoming.Undecided.never_rests_not_monotone",
+        "Becoming.Undecided.moves_not_monotone",
+        "Becoming.Undecided.incomplete"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom; finitely many sentences closed among themselves (Closed) for the settling laws; the absence of a two-valued fixed point is a hypothesis of the undecided laws.",
+      "zh": "不加公理；停住诸律要求有限个彼此封闭的句子（Closed）；二值不动点不存在是未定诸律的假设。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Infinitely many sentences, where the least fixed point needs a limit stage; fixed points other than the least; how many sentences stay undecided.",
+      "zh": "无穷多个句子，那里最小不动点需要极限阶段；最小者之外的不动点；有多少句子保持未定。",
+      "kind": "scope"
+    },
+    {
+      "en": "That undecided is a third truth, or that the liar is resolved: the undecided value is what revision has not decided.",
+      "zh": "未定是第三种真，或说谎者被解决了：未定值是修正尚未决定者。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T102354.824114Z): the 90 declarations of Becoming.Undecided, 64 of them theorems, have empty axiom reports; the checker verifies core purity. Proved in a scratch kit by the session that claimed SG; author review in study section 199; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T102354.824114Z）：Becoming.Undecided 的 90 项声明（64 项定理）公理报告为空；检查器并核对核心纯净。由认领 SG 的会话在草稿中证明；作者审查见研究第 199 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Infinitely many sentences with a limit stage; a measure of what stays undecided; an independent review.",
+    "zh": "带极限阶段的无穷多个句子；对保持未定者的度量；独立审查。"
+  },
+  "correspondence": {
+    "en": "The earlier 义理·形式逻辑 (§三) states Kleene–Kripke revision and a 三值保守律 (U ⇏ ⊤), proved there only in instances (SSBX review §3.2, G3); the third value is read as 疑, what revision has not decided. Reading the AI's (D52); Ren's words are provenance, not warrant.",
+    "zh": "早期义理·形式逻辑（第三节）陈述 Kleene–Kripke 修正与三值保守律（U ⇏ ⊤），那里只就实例证明（SSBX 审读第 3.2 节 G3）；第三值读作疑，即修正尚未决定者。读法是 AI 的（D52）；Ren 的话是出处，不是依据。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean",
+  "aliases": [
+    "revision with an undecided value",
+    "带未定值的修正",
+    "the gap reappears as undecidedness",
+    "Kleene strong tables",
+    "Kripke least fixed point (finite case)",
+    "Becoming.Undecided.least_fixed",
+    "Becoming.Undecided.undecided_of_moves"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit, orbit_add, orbit_shift and the run of a determined law, Law.run, whose states are the orbit.",
+        "zh": "复用 Law.orbit、orbit_add、orbit_shift 与决定性律的运行 Law.run，其状态即轨道。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course of a determined law as a run of the spine.",
+          "zh": "决定性律的进程作为脊柱的运行。"
+        },
+        "input": {
+          "en": "The runs the laws are stated on.",
+          "zh": "诸定律所陈述的运行。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "registration-within-what-it-registers",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Diagonal.Moves, flip_moves, revision_never_rests, fixed_of_complete and Says.",
+        "zh": "复用 Diagonal.Moves、flip_moves、revision_never_rests、fixed_of_complete 与 Says。"
+      },
+      "interface": {
+        "output": {
+          "en": "A map moving every value never rests under revision; a complete family gives every map a fixed point.",
+          "zh": "移动每个值的映射在修正下从不停息；完备的读法族给每个映射一个不动点。"
+        },
+        "input": {
+          "en": "The fixed-point-free symmetry, the two-valued liar and the three-valued diagonal.",
+          "zh": "无不动点的对称、二值说谎者与三值对角线。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "every-loss-passes-a-juncture",
+      "detail": {
+        "en": "Becoming.Junctures uses settles_within to decide reach on listed configurations.",
+        "zh": "Becoming.Junctures 用 settles_within 在可列配置上判定可达。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Undecided.Bounded",
+        "Becoming.Undecided.Closed",
+        "Becoming.Undecided.ConstantFree",
+        "Becoming.Undecided.Le",
+        "Becoming.Undecided.Le.decided",
+        "Becoming.Undecided.Le.same_or_rises",
+        "Becoming.Undecided.Le.trans",
+        "Becoming.Undecided.Monotone",
+        "Becoming.Undecided.Steady",
+        "Becoming.Undecided.Steady.next",
+        "Becoming.Undecided.Term",
+        "Becoming.Undecided.Value",
+        "Becoming.Undecided.Value.conj",
+        "Becoming.Undecided.Value.decided",
+        "Becoming.Undecided.Value.disj",
+        "Becoming.Undecided.Value.embed",
+        "Becoming.Undecided.Value.neg",
+        "Becoming.Undecided.asBool",
+        "Becoming.Undecided.blank",
+        "Becoming.Undecided.chain",
+        "Becoming.Undecided.chain_closed",
+        "Becoming.Undecided.chain_decided",
+        "Becoming.Undecided.chain_exact",
+        "Becoming.Undecided.chain_undecided",
+        "Becoming.Undecided.conj_embed",
+        "Becoming.Undecided.conj_mono",
+        "Becoming.Undecided.disj_embed",
+        "Becoming.Undecided.disj_mono",
+        "Becoming.Undecided.each_or_some",
+        "Becoming.Undecided.embed_asBool",
+        "Becoming.Undecided.embed_inj",
+        "Becoming.Undecided.eval",
+        "Becoming.Undecided.eval_congr",
+        "Becoming.Undecided.eval_embed",
+        "Becoming.Undecided.eval_mono",
+        "Becoming.Undecided.eval_mono_below",
+        "Becoming.Undecided.eval_undecided",
+        "Becoming.Undecided.eval₂",
+        "Becoming.Undecided.incomplete",
+        "Becoming.Undecided.kept_from",
+        "Becoming.Undecided.least_fixed",
+        "Becoming.Undecided.least_undecided",
+        "Becoming.Undecided.liar",
+        "Becoming.Undecided.liar_both_sides",
+        "Becoming.Undecided.liar_closed",
+        "Becoming.Undecided.liar_rests",
+        "Becoming.Undecided.liar_rests_iff",
+        "Becoming.Undecided.liar_two_valued_moves",
+        "Becoming.Undecided.liar_two_valued_never_rests",
+        "Becoming.Undecided.liar_two_valued_run",
+        "Becoming.Undecided.liar_undecided",
+        "Becoming.Undecided.marked",
+        "Becoming.Undecided.marked_le",
+        "Becoming.Undecided.marked_mono",
+        "Becoming.Undecided.marked_rises",
+        "Becoming.Undecided.mem_upto",
+        "Becoming.Undecided.monotone_fixed",
+        "Becoming.Undecided.monotone_not_moves",
+        "Becoming.Undecided.monotone_run_rests",
+        "Becoming.Undecided.monotone_settles",
+        "Becoming.Undecided.moves_not_monotone",
+        "Becoming.Undecided.neg_decided",
+        "Becoming.Undecided.neg_embed",
+        "Becoming.Undecided.neg_fixed_iff",
+        "Becoming.Undecided.neg_mono",
+        "Becoming.Undecided.neg_monotone",
+        "Becoming.Undecided.neg_not_moves",
+        "Becoming.Undecided.never_rests_not_monotone",
+        "Becoming.Undecided.rest_undecided",
+        "Becoming.Undecided.revise",
+        "Becoming.Undecided.revise₂",
+        "Becoming.Undecided.rotate",
+        "Becoming.Undecided.rotate_moves",
+        "Becoming.Undecided.settled_from",
+        "Becoming.Undecided.settles",
+        "Becoming.Undecided.settles_within",
+        "Becoming.Undecided.some_undecided_or_none",
+        "Becoming.Undecided.stage",
+        "Becoming.Undecided.stage_fixed",
+        "Becoming.Undecided.stage_le_fixed",
+        "Becoming.Undecided.stage_mono",
+        "Becoming.Undecided.stage_up",
+        "Becoming.Undecided.stays_undecided",
+        "Becoming.Undecided.steady_or_rises",
+        "Becoming.Undecided.truthTeller",
+        "Becoming.Undecided.truthTeller_keeps",
+        "Becoming.Undecided.truthTeller_rests",
+        "Becoming.Undecided.undecided_of_moves",
+        "Becoming.Undecided.upto",
+        "Becoming.Undecided.upto_length"
+      ],
+      "sha256": "7465651219f869910b0f94ed8622f34ccd3d4a2b85ebd02d714f2abbb7670f33"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
+      "role": "proof",
+      "sha256": "d9bc94cb1a0f21534a53c0daac1ae6a7563f7ecd86a75c4724ca832b7eb95c4d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",
+      "role": "receipt",
+      "sha256": "076e24cd85ddc8338f94d8e8b75e3cde29d911a2cfef05c6e70d4ba1a08396f4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "b5bd1fa61bd0b236e48a84c198e1b5ac03c292c772d7072a38d40688f1a72b8b"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "b8461fa95b360591ec8cab5dcc24b8b4ece287611fb26ae20039e540b16d2c74"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
+      "role": "provenance",
+      "sha256": "8d59eec11ae07e213b069462f4b2eee39d70571c71dbc368a4ce30005487ed11"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Undecided",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (SG, general law G3 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated (\"please take a look of this … many insights can be integrated\", abridged as quoted with the review); study section 199.",
+      "zh": "2026年10月19日：新增（SG，早期《生生不息》仓库审读的一般律 G3），按 Ren 要求审读早期仓库中可并入者（“please take a look of this … many insights can be integrated”，节录，随审读引用）；研究第 199 节。"
+    }
+  ]
+}

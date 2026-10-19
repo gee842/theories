@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 280 | 10,645 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 283 | 10,780 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -130,6 +130,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [CommonCauseDiscovery.lean](lean-declarations/other.md#module-7ef37aae8095) | Other formal studies |
 | [CommonOrganization.lean](lean-declarations/other.md#module-4501154a9279) | Other formal studies |
 | [CommonTaskRevision.lean](lean-declarations/other.md#module-f3a330415bf8) | Other formal studies |
+| [Commuting.lean](lean-declarations/becoming-core.md#module-135f427c041b) | Becoming pure core |
 | [CompletionApplicability.lean](lean-declarations/core.md#module-b4ba5435b460) | Generative core and relational structure |
 | [CompletionAudit.lean](lean-declarations/valuation.md#module-3ae2f0d8deb5) | Valuation development and liangzhi |
 | [CompletionBoundaries.lean](lean-declarations/abstraction.md#module-c1591ec1fb8e) | Abstraction, applicability and constitution |
@@ -465,6 +466,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [JointPracticeContinuation.lean](lean-declarations/ethics.md#module-4909b1cdd611) | Normative grounding and generative direction |
 | [JointRiskRevision.lean](lean-declarations/ethics.md#module-bc23aff7b162) | Normative grounding and generative direction |
 | [JudgingCorrespondence.lean](lean-declarations/core.md#module-5f326a865ccb) | Generative core and relational structure |
+| [Junctures.lean](lean-declarations/becoming-core.md#module-cbfedf3df46d) | Becoming pure core |
 | [Keeping.lean](lean-declarations/becoming-core.md#module-67adbe44fe92) | Becoming pure core |
 | [KeptSupport.lean](lean-declarations/abstraction.md#module-c764abc871d9) | Abstraction, applicability and constitution |
 | [KitchenTransitions.lean](lean-declarations/ethics.md#module-74df76c70b6e) | Normative grounding and generative direction |
@@ -869,6 +871,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [TypedTruth.lean](lean-declarations/abstraction.md#module-77505a9c5a3f) | Abstraction, applicability and constitution |
 | [TypicalRuns.lean](lean-declarations/becoming-core.md#module-25f5b6fea4d4) | Becoming pure core |
 | [Typicality.lean](lean-declarations/becoming-core.md#module-a0da035da8f6) | Becoming pure core |
+| [Undecided.lean](lean-declarations/becoming-core.md#module-a7b787d516d4) | Becoming pure core |
 | [UnequalBasicLosses.lean](lean-declarations/ethics.md#module-1e5c5fb9e755) | Normative grounding and generative direction |
 | [Unfolding.lean](lean-declarations/becoming-core.md#module-05f6ca088224) | Becoming pure core |
 | [UnfoldingPreservation.lean](lean-declarations/core.md#module-cc65e367cbd3) | Generative core and relational structure |

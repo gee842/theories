@@ -1,0 +1,385 @@
+{
+  "schema_version": 2,
+  "id": "what-a-commuting-law-keeps-apart",
+  "title": {
+    "en": "What a commuting law keeps apart",
+    "zh": "交换之律保持什么分开"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:25:15+00:00",
+  "statement": {
+    "en": "Where a law commutes with a map moving every configuration, its runs from x and from the image of x are never at one configuration at the same step: to merge what a symmetry tells apart, a law must break it. The diagonal's never resting is the case of a map with itself.",
+    "zh": "律与一个移动每个配置的映射交换时，它从 x 与从 x 之像出发的运行在同一步从不在同一配置：要合并对称所分开者，律必须破此对称。对角线的从不停息是映射与自身交换的情形。"
+  },
+  "laws": [
+    {
+      "en": "A law commuting with σ has its run from σ x the image of its run from x; where σ moves every configuration the two runs never meet at a step, and a law that merges them does not commute.",
+      "zh": "与 σ 交换的律，从 σ x 出发的运行是从 x 出发之运行的像；σ 移动每个配置时，两条运行在同一步从不相遇，合并它们的律不交换。",
+      "declarations": [
+        "Becoming.Law.Commutes",
+        "Becoming.Law.Commutes.iterate",
+        "Becoming.Law.Commutes.apart",
+        "Becoming.Law.Commutes.breaks"
+      ]
+    },
+    {
+      "en": "No such law is constant; a run from what σ fixes stays where σ fixes; rests and returns come with their images.",
+      "zh": "这样的律不是常值的；从 σ 所固定者出发的运行停在 σ 所固定者之中；静止与返回与其像成对。",
+      "declarations": [
+        "Becoming.Law.Commutes.not_drawn_to_one",
+        "Becoming.Law.Commutes.keeps_fixed",
+        "Becoming.Law.Commutes.rest_paired",
+        "Becoming.Law.Commutes.returns_paired"
+      ]
+    },
+    {
+      "en": "Under an exchange a run holding a configuration's image k steps on holds every configuration's image k steps on and returns at 2k; the law goes alike across the pairs, as a lumping and as a process.",
+      "zh": "在对换下，k 步之后持有一个配置之像的运行，k 步之后持有每个配置之像，并在 2k 处返回；律在对之间同行，作为归并亦作为过程。",
+      "declarations": [
+        "Becoming.Law.Commutes.paired_halfway",
+        "Becoming.Law.Commutes.halfway_returns",
+        "Becoming.Law.Commutes.pairs_lumped",
+        "Becoming.Law.Commutes.pairs_goAlike"
+      ]
+    },
+    {
+      "en": "Every map commutes with itself, so a map moving every value never rests along its run (Diagonal.revision_never_rests as a case).",
+      "zh": "每个映射与自身交换，所以移动每个值的映射沿其运行从不停息（Diagonal.revision_never_rests 作为其情形）。",
+      "declarations": [
+        "Becoming.Law.Commutes.self_apart"
+      ]
+    },
+    {
+      "en": "A process symmetric under σ carries reach, returning and, under an exchange, junctures; every run has a mirror run never at the same configuration at the same step; a commuting law is a symmetric process.",
+      "zh": "在 σ 下对称的过程保持可达、返回，在对换下也保持关节；每条运行有一条镜像运行，在同一步从不在同一配置；交换之律是对称过程。",
+      "declarations": [
+        "Becoming.Branching.Symmetric",
+        "Becoming.Branching.Symmetric.reach",
+        "Becoming.Branching.Symmetric.returns",
+        "Becoming.Branching.Symmetric.juncture",
+        "Becoming.Branching.mirror",
+        "Becoming.Branching.mirror_apart",
+        "Becoming.Branching.law_symmetric"
+      ]
+    },
+    {
+      "en": "In the Changes the complement moves every hexagram and waxWane commutes with it: no number of steps brings a hexagram and its complement to one, the six steps to the complement are the pair halfway round the return of twelve, the going alike across pairs is the general law's instance, the waning into 坤 breaks the symmetry, and the change of one line is symmetric under the complement.",
+      "zh": "在周易中，错卦移动每一卦，消息律与之交换：任何步数都不使一卦与其错卦合一，六步到错卦是十二步返回的半途，在对之间同行是一般律的实例，尽归坤之消破此对称，一爻之变在错卦下对称。",
+      "declarations": [
+        "Becoming.Hexagram.complement_moves",
+        "Becoming.Hexagram.waxWane_apart",
+        "Becoming.Hexagram.waxWane_halfway",
+        "Becoming.Hexagram.pairs_goAlike_of_commutes",
+        "Becoming.Hexagram.wane_breaks",
+        "Becoming.Hexagram.flip_complement",
+        "Becoming.Hexagram.changes_symmetric",
+        "Becoming.Hexagram.changes_mirror_apart"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom; commuting and σ moving every configuration (or σ an exchange, or fixing x) are the hypotheses each law names; the laws are stated on runs Law.run and on processes.",
+      "zh": "不加公理；交换与 σ 移动每个配置（或 σ 为对换、或固定 x）是各定律所列的假设；定律陈述在运行 Law.run 与过程上。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Groups of symmetries (the four-group of 錯 and 綜, and 互), symmetries with fixed points beyond keeps_fixed, and which symmetries actual unfoldings keep.",
+      "zh": "对称群（錯与綜的四元群，以及互），keeps_fixed 之外有不动点的对称，实际展开保持哪些对称。",
+      "kind": "scope"
+    },
+    {
+      "en": "That keeping or erasing a difference is better; the earlier claim that «一» structurally does not exist.",
+      "zh": "保持或抹去一个差别更好；早期“«一»结构上不存在”的主张。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T102354.824114Z): the 28 declarations of Becoming.Commuting, 25 of them theorems, have empty axiom reports; the checker verifies core purity. Proved in a scratch kit by the session that claimed SG; author review in study section 199; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T102354.824114Z）：Becoming.Commuting 的 28 项声明（25 项定理）公理报告为空；检查器并核对核心纯净。由认领 SG 的会话在草稿中证明；作者审查见研究第 199 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Groups of symmetries and 互 (Y3, Becoming.HexagramLaws); an independent review.",
+    "zh": "对称群与互（Y3，Becoming.HexagramLaws）；独立审查。"
+  },
+  "correspondence": {
+    "en": "The earlier 义理·拓扑 (§四, §九) argues that a fixed-point-free symmetry is never erased by a law keeping it, proved there for instances only (SSBX review §3.2, G2); its table equating Borsuk–Ulam with the second law is not taken. Reading the AI's (D52); Ren's words are provenance, not warrant.",
+    "zh": "早期义理·拓扑（第四、九节）论证保持无不动点对称的律从不抹去它，那里只就实例证明（SSBX 审读第 3.2 节 G2）；其把 Borsuk–Ulam 等同于第二定律的表不取。读法是 AI 的（D52）；Ren 的话是出处，不是依据。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
+  "aliases": [
+    "what a commuting law keeps apart",
+    "交换之律保持什么分开",
+    "to merge what a symmetry tells apart, a law must break it",
+    "Becoming.Law.Commutes.apart",
+    "Becoming.Law.Commutes.breaks",
+    "Becoming.Hexagram.wane_breaks"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Law.orbit, orbit_add, orbit_shift and the run of a determined law, Law.run, whose states are the orbit.",
+        "zh": "复用 Law.orbit、orbit_add、orbit_shift 与决定性律的运行 Law.run，其状态即轨道。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course of a determined law as a run of the spine.",
+          "zh": "决定性律的进程作为脊柱的运行。"
+        },
+        "input": {
+          "en": "The runs the laws are stated on.",
+          "zh": "诸定律所陈述的运行。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "registration-within-what-it-registers",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Diagonal.Moves, flip_moves, revision_never_rests, fixed_of_complete and Says.",
+        "zh": "复用 Diagonal.Moves、flip_moves、revision_never_rests、fixed_of_complete 与 Says。"
+      },
+      "interface": {
+        "output": {
+          "en": "A map moving every value never rests under revision; a complete family gives every map a fixed point.",
+          "zh": "移动每个值的映射在修正下从不停息；完备的读法族给每个映射一个不动点。"
+        },
+        "input": {
+          "en": "The fixed-point-free symmetry, the two-valued liar and the three-valued diagonal.",
+          "zh": "无不动点的对称、二值说谎者与三值对角线。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean"
+      }
+    },
+    {
+      "id": "returning-where-the-course-branches",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Reach, Trace, Returns, Reach.map and law_returns_iff of Becoming.Branching.",
+        "zh": "复用 Becoming.Branching 的 Reach、Trace、Returns、Reach.map 与 law_returns_iff。"
+      },
+      "interface": {
+        "output": {
+          "en": "What a process can have again, step by step, and returning under a determined law.",
+          "zh": "过程逐步可再得什么，以及决定性律下的返回。"
+        },
+        "input": {
+          "en": "Where a configuration is lost, and what a symmetry carries.",
+          "zh": "配置在何处失去，对称承载什么。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean"
+      }
+    },
+    {
+      "id": "hexagrams-on-the-spine",
+      "relation": "application",
+      "detail": {
+        "en": "Applies the general law to waxWane, complement, waxWane_complement, six_steps, wane_six, pairOf and changes.",
+        "zh": "把一般律用于 waxWane、complement、waxWane_complement、six_steps、wane_six、pairOf 与 changes。"
+      },
+      "interface": {
+        "output": {
+          "en": "The law of waxing and waning commutes with the complement; the waning into 坤.",
+          "zh": "消息律与错卦交换；尽归坤之消。"
+        },
+        "input": {
+          "en": "The Changes as an instance.",
+          "zh": "周易作为实例。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean"
+      }
+    },
+    {
+      "id": "generalization-through-lumping",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Learning.Lumped and goAlike_iff_lumped.",
+        "zh": "复用 Learning.Lumped 与 goAlike_iff_lumped。"
+      },
+      "interface": {
+        "output": {
+          "en": "A determined law goes alike under a map exactly where its next value, read through the map, is lumped.",
+          "zh": "决定性律在一个映射下同行，恰当其下一值经映射读出时被归并。"
+        },
+        "input": {
+          "en": "The law goes alike across the pairs.",
+          "zh": "律在对之间同行。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean"
+      }
+    },
+    {
+      "id": "every-loss-passes-a-juncture",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Branching.Juncture: a symmetric exchange carries junctures.",
+        "zh": "复用 Branching.Juncture：对称的对换承载关节。"
+      },
+      "interface": {
+        "output": {
+          "en": "Junctures of a process.",
+          "zh": "过程的关节。"
+        },
+        "input": {
+          "en": "Junctures in pairs.",
+          "zh": "成对的关节。"
+        },
+        "conditions": {
+          "en": "σ an exchange.",
+          "zh": "σ 为对换。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Junctures.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "selection-through-a-model-of-the-options",
+      "detail": {
+        "en": "Relabel.Equivariant.tied keeps a tie through an exchange in selection; Law.Commutes.keeps_fixed is the fixed case for a law of change, and Law.Commutes.apart the free case. No instance theorem.",
+        "zh": "Relabel.Equivariant.tied 在选择中经对换保持并列；Law.Commutes.keeps_fixed 是变化之律的固定情形，Law.Commutes.apart 是自由情形。无实例定理。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Branching.Symmetric",
+        "Becoming.Branching.Symmetric.juncture",
+        "Becoming.Branching.Symmetric.reach",
+        "Becoming.Branching.Symmetric.returns",
+        "Becoming.Branching.law_symmetric",
+        "Becoming.Branching.mirror",
+        "Becoming.Branching.mirror_apart",
+        "Becoming.Hexagram.changes_mirror_apart",
+        "Becoming.Hexagram.changes_symmetric",
+        "Becoming.Hexagram.complement_moves",
+        "Becoming.Hexagram.flip_complement",
+        "Becoming.Hexagram.pairs_goAlike_of_commutes",
+        "Becoming.Hexagram.wane_breaks",
+        "Becoming.Hexagram.waxWane_apart",
+        "Becoming.Hexagram.waxWane_halfway",
+        "Becoming.Law.Commutes",
+        "Becoming.Law.Commutes.apart",
+        "Becoming.Law.Commutes.breaks",
+        "Becoming.Law.Commutes.halfway_returns",
+        "Becoming.Law.Commutes.iterate",
+        "Becoming.Law.Commutes.keeps_fixed",
+        "Becoming.Law.Commutes.not_drawn_to_one",
+        "Becoming.Law.Commutes.paired_halfway",
+        "Becoming.Law.Commutes.pairs_goAlike",
+        "Becoming.Law.Commutes.pairs_lumped",
+        "Becoming.Law.Commutes.rest_paired",
+        "Becoming.Law.Commutes.returns_paired",
+        "Becoming.Law.Commutes.self_apart"
+      ],
+      "sha256": "cfaec366fb423995c5e9972ddc05eccbbf81d055385537726e2c60b736ac96be"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Diagonal.revision_never_rests",
+        "Becoming.Diagonal.Moves"
+      ],
+      "sha256": "d9bc94cb1a0f21534a53c0daac1ae6a7563f7ecd86a75c4724ca832b7eb95c4d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "role": "proof",
+      "sha256": "58b9fc1c27a970007227d9b2cca13d0a5ed3699e605491d897128ca128f774f7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
+      "role": "proof",
+      "sha256": "8765e7c838064d509c8ab07a8b09aec9483a06e728fb864913a697df8b72789a"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "role": "proof",
+      "sha256": "aecbe2c2ece126e2fc1d04f901d900bd1619a931679ab3a584888cf0a6e1b4d0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Junctures.lean",
+      "role": "proof",
+      "sha256": "9725e0c734d6b409473d0a86bd6de41c9979e735d16e99e0644d5f9b9a1ddc72"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",
+      "role": "receipt",
+      "sha256": "076e24cd85ddc8338f94d8e8b75e3cde29d911a2cfef05c6e70d4ba1a08396f4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "b5bd1fa61bd0b236e48a84c198e1b5ac03c292c772d7072a38d40688f1a72b8b"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "b8461fa95b360591ec8cab5dcc24b8b4ece287611fb26ae20039e540b16d2c74"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
+      "role": "provenance",
+      "sha256": "8d59eec11ae07e213b069462f4b2eee39d70571c71dbc368a4ce30005487ed11"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Commuting",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (SG, general law G2 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated (\"please take a look of this … many insights can be integrated\", abridged as quoted with the review); study section 199.",
+      "zh": "2026年10月19日：新增（SG，早期《生生不息》仓库审读的一般律 G2），按 Ren 要求审读早期仓库中可并入者（“please take a look of this … many insights can be integrated”，节录，随审读引用）；研究第 199 节。"
+    }
+  ]
+}

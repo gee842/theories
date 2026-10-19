@@ -119,6 +119,7 @@ Aliases: `the nuclear law`, `互`, `互卦`, `中爻`, `the cast`, `之卦`, `�
 ### History
 
 - 19 October 2026: added (Y3), H1 to H5 of the SSBX review proved in the pure core; study section 198, decision D51.
+- 19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section; THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apart, the section 3 item on the liar with a third value, glossary rows, section 8.2 and 8.3 items, and revised the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 

@@ -1,0 +1,11 @@
+
+<a id="d{D}-关节交换之律与第三值--junctures-commuting-laws-and-the-third-value"></a>
+### D{D}. 关节、交换之律与第三值
+
+所在：本章第 1 节“配置在何处失去”“交换的律保持什么分开”，第 3 节“在所读之中的读法族”（第三值下的说谎者），以及词汇表；记录 [every-loss-passes-a-juncture](../../../../theories/becoming/results/records/every-loss-passes-a-juncture.md)、[what-a-commuting-law-keeps-apart](../../../../theories/becoming/results/records/what-a-commuting-law-keeps-apart.md) 与 [revision-with-an-undecided-value](../../../../theories/becoming/results/records/revision-with-an-undecided-value.md)；研究第 {S} 节。在 D45 的一个说明中决定。
+
+**Ren 的原话。** 2026-10-19，要求审读早期《生生不息》仓库中可并入者：“please take a look of this … many insights can be integrated”（节录，随[审读](SSBX-REPOSITORY-REVIEW.md)在提交 `c599d83db` 中引用；完整原话不在 `sources/` 中）。是出处；每条读法靠其定律成立。
+
+**决定。** 依所述范围采用。一、**机即关节。** 早期文本的机，即两个延续通向不同的开放之未来，读作把开放之未来取为一个仍可得的配置：x 对 s 是关节，当 x 有一步之后 s 仍可得，也有一步之后 s 不可得（`Branching.Juncture`）。同时多种可能的开放剖面未形式化。二、**关节处的护闭与成闭。** 护闭是保持，即保住 s 仍可再得的最大闭（`Branching.keeping`、`Branching.keeping_greatest`）；成闭是失去，即之后 s 不再可得的那些步（`Branching.losing_not_returns`）。二者是关节处的同一种操作，去掉失去之步或保持之步。三、**找到那处所问的。** 返回之配置的每次失去都经过一个关节，以双重否定的形式；找到它，就是判定 s 是否仍可再得；对每个过程都这样问，就是有限全知原理（`Branching.lpo_of_junctures_found`）。失去之处在每条路径上都在；它在哪里，在可达已判定处可知，例如配置由列表持有、步可判定时。四、**选项多不成关节**（`Branching.no_juncture_of_keeps`、`Branching.Many.no_juncture`）：需要两个选项，两个选项也不够。五、**对称所承载的。** 保持一个移动每个配置之对称的律，从不合并该对称所分开者（`Law.Commutes.apart`）；要合并它，律必须破此对称。在周易中，消息从不合并逐爻相反的阴阳，尽归坤之消破错（`Hexagram.waxWane_apart`、`Hexagram.wane_breaks`）。早期拓扑的“«一»结构上不存在”及其把 Borsuk–Ulam 等同于第二定律的表不取；取的是定律。六、**第三值疑。** 未定值是修正尚未决定者，不是第三种真，也不是叠加（审读的“不确定 ≠ 不可知”）。早期的“三值保守律”（U ⇏ ⊤）是不含常量之项的 `Undecided.eval_undecided`，沿运行则是 `Undecided.stays_undecided`。对角线的缺口表现为未定（`Undecided.undecided_of_moves`、`Undecided.rest_undecided`）。七、**不读入的。** 没有估值：哪个配置值得保持，保持或抹去一个差别是支持还是损害生生，哪些句子应当被决定，都是比较的事（§6.15）。
+**理由。** 每条读法列出它所依的声明，所说不多于它们所证。双重否定与 LPO 校准读作找到关节对展开所要求的，不读作证明的缺口。
+**会改变它的。** 一个关节处开放的形式剖面，为一个配置的读法所漏；一个不判定可达就为每次失去找到关节的过程（那里需要 LPO）；一条保持移动每个配置之对称、却合并一对的律（由 `Law.Commutes.apart` 不可能）。

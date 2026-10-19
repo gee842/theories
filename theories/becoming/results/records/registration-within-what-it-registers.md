@@ -51,7 +51,7 @@ The readings are indexed by what they read; Gödel's incompleteness and the halt
 - Related, not a proved adapter: [contextual-registration](contextual-registration.md). Another limit of projection: context-free values; here, holding every reading from within.
 - Related, not a proved adapter: [learning-by-refutation](learning-by-refutation.md). Its diagonal_misses and diagonal_unrested are the extrapolation's form, of the same form as gap_unsaid and revision_never_rests and a different object, written independently.
 
-**Used by:** [the-split-that-makes-sense](the-split-that-makes-sense.md)
+**Used by:** [revision-with-an-undecided-value](revision-with-an-undecided-value.md) · [the-split-that-makes-sense](the-split-that-makes-sense.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts
@@ -108,4 +108,5 @@ Aliases: `Becoming.Diagonal.gap_unsaid`, `Becoming.Diagonal.fixed_of_complete`, 
 - 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.
 - 19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
+- 19 October 2026, SG (junctures, commuting laws and the third value): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only where SG added text: SG added its records and open items to the "When the course branches" and "What a description keeps and loses" rows, a section 8.3 item and a rerun sentence in the integration row. Read before re-pointing. The claim is unchanged.
 - 32 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](registration-within-what-it-registers.json).

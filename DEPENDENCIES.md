@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-262 registered results: 246 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 653 curated edges join 216 results to the results they draw on.
+265 registered results: 249 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 665 curated edges join 219 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -65,6 +65,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [encounter-control-and-retention][] ← <a id="encounter-control-and-retention--encounter-selection-and-revision"></a>[encounter-selection-and-revision][] *(interpretive)* · <a id="encounter-control-and-retention--naming-attention-coverage"></a>[naming-attention-coverage][] *(interpretive)*
 - [encounter-selection-and-revision][] ← <a id="encounter-selection-and-revision--enacted-scene-binding"></a>[enacted-scene-binding][]
 - [entropy-history-and-record][] ← <a id="entropy-history-and-record--continued-change-needs-openness"></a>[continued-change-needs-openness][] · <a id="entropy-history-and-record--rest-at-every-resolution"></a>[rest-at-every-resolution][] · <a id="entropy-history-and-record--recurrence-without-premise"></a>[recurrence-without-premise][]
+- [every-loss-passes-a-juncture][] ← <a id="every-loss-passes-a-juncture--returning-where-the-course-branches"></a>[returning-where-the-course-branches][] · <a id="every-loss-passes-a-juncture--necessarily-drawn-is-not-returning"></a>[necessarily-drawn-is-not-returning][] · <a id="every-loss-passes-a-juncture--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] *(application)* · <a id="every-loss-passes-a-juncture--revision-with-an-undecided-value"></a>[revision-with-an-undecided-value][]
 - [every-origin-passes-the-gate][] ← <a id="every-origin-passes-the-gate--organizational-rule-inheritance"></a>[organizational-rule-inheritance][]
 - [evolution-on-descent][] ← <a id="evolution-on-descent--living-on-and-descent"></a>[living-on-and-descent][] · <a id="evolution-on-descent--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="evolution-on-descent--more-needs-renewers"></a>[more-needs-renewers][] · <a id="evolution-on-descent--generation-is-replenishment"></a>[generation-is-replenishment][]
 - [exchanges-commute-unless-joined][] ← <a id="exchanges-commute-unless-joined--only-the-order-of-change-registers"></a>[only-the-order-of-change-registers][]
@@ -174,6 +175,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [retrospective-source-binding][] ← <a id="retrospective-source-binding--acquired-binding-compositional-use"></a>[acquired-binding-compositional-use][] · <a id="retrospective-source-binding--encounter-control-and-retention"></a>[encounter-control-and-retention][] *(interpretive)*
 - [returning-novelty-forgetting-on-levels][] ← <a id="returning-novelty-forgetting-on-levels--entropy-history-and-record"></a>[entropy-history-and-record][] · <a id="returning-novelty-forgetting-on-levels--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="returning-novelty-forgetting-on-levels--imbalance-as-relatum"></a>[imbalance-as-relatum][]
 - [returning-where-the-course-branches][] ← <a id="returning-where-the-course-branches--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="returning-where-the-course-branches--process-and-frame-as-readings"></a>[process-and-frame-as-readings][]
+- [revision-with-an-undecided-value][] ← <a id="revision-with-an-undecided-value--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="revision-with-an-undecided-value--registration-within-what-it-registers"></a>[registration-within-what-it-registers][]
 - [rising-and-falling-in-one-exchange][] ← <a id="rising-and-falling-in-one-exchange--no-finite-part-bears-taking"></a>[no-finite-part-bears-taking][] · <a id="rising-and-falling-in-one-exchange--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="rising-and-falling-in-one-exchange--generation-is-replenishment"></a>[generation-is-replenishment][] · <a id="rising-and-falling-in-one-exchange--unceasing-generation-needs-renewal"></a>[unceasing-generation-needs-renewal][] · <a id="rising-and-falling-in-one-exchange--more-needs-renewers"></a>[more-needs-renewers][] · <a id="rising-and-falling-in-one-exchange--laws-of-one-step"></a>[laws-of-one-step][]
 - [risk-certificate-outcome-distinction][] ← <a id="risk-certificate-outcome-distinction--assured-route-criterion"></a>[assured-route-criterion][]
 - [runaway-distance-unregistered][] ← <a id="runaway-distance-unregistered--subthreshold-registration"></a>[subthreshold-registration][] · <a id="runaway-distance-unregistered--testing-within-registration"></a>[testing-within-registration][] · <a id="runaway-distance-unregistered--laws-of-one-step"></a>[laws-of-one-step][]
@@ -209,6 +211,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [unceasing-generation-needs-renewal][] ← <a id="unceasing-generation-needs-renewal--becoming-renewal-reading"></a>[becoming-renewal-reading][] · <a id="unceasing-generation-needs-renewal--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][] · <a id="unceasing-generation-needs-renewal--becoming-stepwise-reading"></a>[becoming-stepwise-reading][] · <a id="unceasing-generation-needs-renewal--becoming-return-grades"></a>[becoming-return-grades][]
 - [unity-of-readings][] ← <a id="unity-of-readings--contextual-registration"></a>[contextual-registration][] · <a id="unity-of-readings--process-and-frame-as-readings"></a>[process-and-frame-as-readings][] · <a id="unity-of-readings--premises-read-off-the-exchange"></a>[premises-read-off-the-exchange][] · <a id="unity-of-readings--axiom-decomposition"></a>[axiom-decomposition][]
 - [weights-count-situations][] ← <a id="weights-count-situations--typicality-by-counting"></a>[typicality-by-counting][] · <a id="weights-count-situations--sum-over-histories-exact"></a>[sum-over-histories-exact][] · <a id="weights-count-situations--losses-of-the-sum-over-histories"></a>[losses-of-the-sum-over-histories][]
+- [what-a-commuting-law-keeps-apart][] ← <a id="what-a-commuting-law-keeps-apart--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="what-a-commuting-law-keeps-apart--registration-within-what-it-registers"></a>[registration-within-what-it-registers][] · <a id="what-a-commuting-law-keeps-apart--returning-where-the-course-branches"></a>[returning-where-the-course-branches][] · <a id="what-a-commuting-law-keeps-apart--hexagrams-on-the-spine"></a>[hexagrams-on-the-spine][] *(application)* · <a id="what-a-commuting-law-keeps-apart--generalization-through-lumping"></a>[generalization-through-lumping][] · <a id="what-a-commuting-law-keeps-apart--every-loss-passes-a-juncture"></a>[every-loss-passes-a-juncture][]
 - [what-a-cut-loses][] ← <a id="what-a-cut-loses--how-a-carried-difference-grows"></a>[how-a-carried-difference-grows][] · <a id="what-a-cut-loses--how-much-difference-arrives"></a>[how-much-difference-arrives][] · <a id="what-a-cut-loses--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [what-a-finite-history-refutes][] ← <a id="what-a-finite-history-refutes--becoming-finite-horizon"></a>[becoming-finite-horizon][]
 - [what-a-law-of-the-whole-and-no-part-takes][] ← <a id="what-a-law-of-the-whole-and-no-part-takes--sensitivity-is-the-least-registration"></a>[sensitivity-is-the-least-registration][] · <a id="what-a-law-of-the-whole-and-no-part-takes--counterfactual-is-the-course"></a>[counterfactual-is-the-course][] · <a id="what-a-law-of-the-whole-and-no-part-takes--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][]
@@ -289,6 +292,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [encounter-control-and-retention]: theories/becoming/results/records/encounter-control-and-retention.md
 [encounter-selection-and-revision]: theories/becoming/results/records/encounter-selection-and-revision.md
 [entropy-history-and-record]: theories/becoming/results/records/entropy-history-and-record.md
+[every-loss-passes-a-juncture]: theories/becoming/results/records/every-loss-passes-a-juncture.md
 [every-origin-passes-the-gate]: theories/becoming/results/records/every-origin-passes-the-gate.md
 [evolution-on-descent]: theories/becoming/results/records/evolution-on-descent.md
 [exchanges-commute-unless-joined]: theories/becoming/results/records/exchanges-commute-unless-joined.md
@@ -414,6 +418,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [retrospective-source-binding]: theories/becoming/results/records/retrospective-source-binding.md
 [returning-novelty-forgetting-on-levels]: theories/becoming/results/records/returning-novelty-forgetting-on-levels.md
 [returning-where-the-course-branches]: theories/becoming/results/records/returning-where-the-course-branches.md
+[revision-with-an-undecided-value]: theories/becoming/results/records/revision-with-an-undecided-value.md
 [rising-and-falling-in-one-exchange]: theories/becoming/results/records/rising-and-falling-in-one-exchange.md
 [risk-certificate-outcome-distinction]: theories/becoming/results/records/risk-certificate-outcome-distinction.md
 [runaway-distance-unregistered]: theories/becoming/results/records/runaway-distance-unregistered.md
@@ -452,6 +457,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [unity-of-readings]: theories/becoming/results/records/unity-of-readings.md
 [versioned-request-completion]: theories/becoming/results/records/versioned-request-completion.md
 [weights-count-situations]: theories/becoming/results/records/weights-count-situations.md
+[what-a-commuting-law-keeps-apart]: theories/becoming/results/records/what-a-commuting-law-keeps-apart.md
 [what-a-cut-loses]: theories/becoming/results/records/what-a-cut-loses.md
 [what-a-finite-history-refutes]: theories/becoming/results/records/what-a-finite-history-refutes.md
 [what-a-law-of-the-whole-and-no-part-takes]: theories/becoming/results/records/what-a-law-of-the-whole-and-no-part-takes.md

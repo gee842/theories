@@ -1611,6 +1611,11 @@
    "module": "Becoming.HexagramLaws",
    "category": "support",
    "reason": "The received order lists each configuration once: a list lemma on the module's imported list, read with mem_order so that a count over the order counts configurations."
+  },
+  "Becoming.Undecided.incomplete": {
+   "module": "Becoming.Undecided",
+   "category": "general-structure",
+   "reason": "a law of every family of three-valued readings on any type (the diagonal with the rotation of the values, by Diagonal.fixed_of_complete); the run form of completion for every map moving every value is DiagonalRuns.incomplete, so an instance on a run would only fix the type"
   }
  }
 }

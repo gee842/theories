@@ -82,9 +82,10 @@
 | D46 | 多于此刻的取用终于何处（10-19） | 以确切范围采用：耗尽终结寻求者（B2 扩展）；取尽所给作为上升的一个阶段；不是元吸引子的情形 |
 | D47 | 易传在脊柱上的读法（10-19） | 三种关系：相合、定域、相分；逐句对应的 44 条读法以确切范围采用；相分保留 |
 | D48 | 集体延续所需（10-19） | 依所述范围采用：五处改写；四条律的读法；校正之点；不把“必须”读入律中 |
-| D49 | 闭与开在脊柱上的对照；九句的归与不归（10-19） | 依所述范围采用：每一种闭与开的每一相都落在已落地的律上，按焦点的开度与一切判词不取；护闭尚未证明；转读作回归则蕴含可；稳与元闭是同一结构；归与不归为三种情形 |
+| D49 | 闭与开在脊柱上的对照；九句的归与不归（10-19） | 依所述范围采用：每一种闭与开的每一相都落在已落地的律上，按焦点的开度与一切判词不取；护闭为关节处的保持（D52）；转读作回归则蕴含可；稳与元闭是同一结构；归与不归为三种情形 |
 | D50 | 爻位之关系的读法（10-19） | 正、应、比（承、乘）、中在其所在之处读作语境读法；引之的 22 条读法以确切范围采用；需上六、艮六五与位之等级保留为相分 |
 | D51 | 卦之诸律的读法（10-19） | 中爻与互（判断在律外）；互所归之四卦为卦序首尾，不说卦序由互而排；錯、綜为后世之名，定域；用九、用六为六爻皆老之卦；加一读作数位，邵雍与莱布尼茨未证明 |
+| D52 | 关节、交换之律与第三值（10-19） | 以确切范围采用：机为关节；护闭为关节处的保持，成闭为失去，不带估值；找到关节即判定可达（对每个过程为 LPO）；保持对称的律从不合并其所分开者；疑为修正尚未决定者 |
 
 <a id="1-生生与生成的空间--生生-and-the-generative-space"></a>
 ## 1. 生生与生成的空间
@@ -613,6 +614,8 @@ L1、S1 与 S2 是 D40-D42。
 - Ren 2026-10-19 关于周易与易传的要求，“我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md)）：D47（研究第 192 节）。
 - 同一要求，由看板项 Y2（爻位之关系）接续：D50（研究第 195 节）。
 
+- Ren 2026-10-19 要求审读早期《生生不息》仓库中可并入者，“please take a look of this … many insights can be integrated”（节录，随[审读](SSBX-REPOSITORY-REVIEW.md)引用）：D52（研究第 199 节）。
+
 <a id="13-一个说明--one-account"></a>
 ## 13. 一个说明
 
@@ -696,9 +699,9 @@ L1、S1 与 S2 是 D40-D42。
 
 **文本。** 闭的类型与开的四相，见间生论（[四、开闭](../../../../sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/04_补篇二_间生论_主篇/06_四、开闭.md)）、补篇一（[十、开闭；十一、伪开三型](../../../../sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/03_补篇一_间开本_致知版/04_卷三_判准.md)）与正篇（[卷六 开、闭、稳、真](../../../../sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/01_正篇_v13.2形式项总清与类型校正版/08_卷六_开、闭、稳、真.md)）；九句见早期仓库的 [README](../../../../sources/07-shengsheng-buxi/ssbx-repo/README.md)。框架是 Ren 的，类型是在他 2026 年 5 月的对话中起草的（[2026 年 9 月的语料词汇表](../../../history/2026-09-consolidation/GLOSSARY.md)，“闭”条）。这些文本是各用语之义的证据；读法由工作论证（D45）。
 
-**决定。** 依所述范围采用。一、**闭。** 每一型按其结构安放。闭本身是吸收区域，也可以持有所保持者（`Law.returning_absorbing`）。成闭是锁定（`Law.DrawnInto.never_back`、`Law.Drawn.not_returns`、`Invariant.locks_out`）。元闭是规则持住结果（`Law.rule_absorbing`、`Law.perturbation_reabsorbed`、`Captured.state_perturbation_drawn`、`Captured.rule_perturbation_drawn`）。伪开是从部分、一段或状态读出、而整个进程并没有的开：I 是部分（`Pair.own_not_joint`、`Flow.joint_excess_ends`、`Coarse.carries`、`Switching.no_state_law`）；II 是一段（`Renewable.prefix_does_not_decide`、`Web.break_not_bounded`）；III 是状态，即从状态看的元闭。护闭读作在路径分支处去掉那些步：经过它们之后某构形不再可得。这条律即关节律尚未证明（审读第 3.2 节，其中的 G1），章节如实写明；照此读法，护闭与成闭是关节处的同一种操作。成生之限与绝生之限取护闭与成闭的结构；英文的“close / keep open”是闭与护开的译名。二、**不取的。** 按焦点的开度（以焦点为下标的开，度量 O_F = Ω(U, A, R, T) 及其阈值），连同经它陈述的早期的“夺”；以及写进定义的判词（成闭为恶，护闭为中，伪开为闭之诈）。三、**开。** 未是本章的开放（`World.arising_opens`、`Flow.new_beyond_every`；D7）。可是进程继续（`Onward.run_iff_continues`）。应是交换响应一个水平（`ExchangeLaw.RespondsTo`）。转是回归（`Branching.Returns`、`Web.Returns`）、损失之后的转化（`Becoming.Dependence`）与重合（`Becoming.Rejoining`）。“开非更多”是保住每种可能而不回归（`Branching.Transit.keeps_not_returns`）。四相并不独立：转读作回归时，不加前提就蕴含可（`Onward.run_of_returning`）；在有限多个构形之内，可就是到达一个回归（`Onward.run_iff_returning`）。稳与元闭是同一结构，即扰动被吸回规则所持者，只是判词不同。四、**九句的归与不归。** 九句分两种，脊柱分三种。无损的回归（`Law.Lossless.returns`）是无所收的归，有不息而无生生（D5）。被吸入（`Law.Drawn.not_returns`、`Law.drawn_iff_lost`）是第三句的“收”，而它是不归。永不回转（`unheld_of_new`、`more_needs_open`）只在开放的世界中可能，是能续而生的不归。“极”读作律不改变的构形，便是静，不是熄，熄是停（D45）。五、**不读入的。** 早期文本的作者意指这些律；某一型的闭作为一型就是好或坏；护闭已经证明；四相是一个度量。
+**决定。** 依所述范围采用。一、**闭。** 每一型按其结构安放。闭本身是吸收区域，也可以持有所保持者（`Law.returning_absorbing`）。成闭是锁定（`Law.DrawnInto.never_back`、`Law.Drawn.not_returns`、`Invariant.locks_out`）。元闭是规则持住结果（`Law.rule_absorbing`、`Law.perturbation_reabsorbed`、`Captured.state_perturbation_drawn`、`Captured.rule_perturbation_drawn`）。伪开是从部分、一段或状态读出、而整个进程并没有的开：I 是部分（`Pair.own_not_joint`、`Flow.joint_excess_ends`、`Coarse.carries`、`Switching.no_state_law`）；II 是一段（`Renewable.prefix_does_not_decide`、`Web.break_not_bounded`）；III 是状态，即从状态看的元闭。护闭读作在路径分支处去掉那些步：经过它们之后某构形不再可得。这条律即关节律已在 `Becoming.Junctures` 中证明（`Branching.loss_passes_juncture`、`Branching.keeping_greatest`、`Branching.keeping_removes_at_juncture`；SG，D52）；照此读法，护闭与成闭是关节处的同一种操作。成生之限与绝生之限取护闭与成闭的结构；英文的“close / keep open”是闭与护开的译名。二、**不取的。** 按焦点的开度（以焦点为下标的开，度量 O_F = Ω(U, A, R, T) 及其阈值），连同经它陈述的早期的“夺”；以及写进定义的判词（成闭为恶，护闭为中，伪开为闭之诈）。三、**开。** 未是本章的开放（`World.arising_opens`、`Flow.new_beyond_every`；D7）。可是进程继续（`Onward.run_iff_continues`）。应是交换响应一个水平（`ExchangeLaw.RespondsTo`）。转是回归（`Branching.Returns`、`Web.Returns`）、损失之后的转化（`Becoming.Dependence`）与重合（`Becoming.Rejoining`）。“开非更多”是保住每种可能而不回归（`Branching.Transit.keeps_not_returns`）。四相并不独立：转读作回归时，不加前提就蕴含可（`Onward.run_of_returning`）；在有限多个构形之内，可就是到达一个回归（`Onward.run_iff_returning`）。稳与元闭是同一结构，即扰动被吸回规则所持者，只是判词不同。四、**九句的归与不归。** 九句分两种，脊柱分三种。无损的回归（`Law.Lossless.returns`）是无所收的归，有不息而无生生（D5）。被吸入（`Law.Drawn.not_returns`、`Law.drawn_iff_lost`）是第三句的“收”，而它是不归。永不回转（`unheld_of_new`、`more_needs_open`）只在开放的世界中可能，是能续而生的不归。“极”读作律不改变的构形，便是静，不是熄，熄是停（D45）。五、**不读入的。** 早期文本的作者意指这些律；某一型的闭作为一型就是好或坏；护闭已经证明；四相是一个度量。
 **理由。** 章节的术语表自己列出缺少这一对照。每一行由它所列的声明论证，每条声明的陈述都对照其行读过。早期仓库的 Lean 把判词写进定义，其 Kernel 塌缩（审读第 1 节），所以可以带过来的是词汇，安放在不带判词而成立的律上。以焦点为下标的开，把各自独立的所有者放在其所处的关系之前，一个关系的起点不这样做（D23）；定义中的判词藏进一个分量，而理论只在 §6.15 的条件之下陈述它。九句的三种情形来自对每个确定之律成立的律（D25、D32）：被吸入恰是不回归，所以归与不归的分界不落在九句放“收”之处。
-**会改变它的。** 关节律的证明（工作板上认领为 SG，模块 `Becoming.Junctures`；护闭由此有其锚点），或它的反例；使四相以不同于三的方式分开的律；由 Ren 的文本论证、把“收”读作无损回归而非被吸入的读法；Ren 文本中一种不经按焦点的开度陈述、而没有一行能安放的闭。
+**会改变它的。** 由 Ren 的文本论证、不同于关节处之保持的护闭读法（关节律已在 `Becoming.Junctures` 中证明，SG，D52，护闭由此有其锚点）；使四相以不同于三的方式分开的律；由 Ren 的文本论证、把“收”读作无损回归而非被吸入的读法；Ren 文本中一种不经按焦点的开度陈述、而没有一行能安放的闭。
 
 <a id="d50-爻位之关系的读法--the-readings-of-the-relations-of-the-places"></a>
 ### D50. 爻位之关系的读法
@@ -717,3 +720,14 @@ L1、S1 与 S2 是 D40-D42。
 **决定。** 一、**中爻与互。** 中爻是二至五爻；互读作律而迭用，传统多只取一步；“非其中爻不備”就互之所读为相合，其“辨是與非”是判断，律不承载。二、**卦序首尾。** 互所归之四卦恰是所传卦序之首二卦与末二卦，这是在卦序上检查过的事实，与《序卦》“有天地”与“物不可窮也，故受之以未濟；終焉”并读：互之下既濟、未濟相代而不止。不说卦序由互而排。三、**錯与綜。** 二名读作错卦与倒转，是后世注家之用（来知德）；经文“錯綜其數”说的是数，所以此段是定域。四、**之卦。** 老、少是变与不变，九、六为老，七、八为少；用九、用六是六爻皆老之卦（《左傳》称乾之用九为“乾之坤”，未存于本库，未核对）；在之卦之律内，“窮則變”读作老者一变而久；“吉”“无首”是判断，在律之外。五、**加一**把太极之逐层二分读作数位；邵雍先天之序与莱布尼茨的二进制之读只在模块文档中说明，未证明。六、**消息之六轨**以普查扩充剝之“消息盈虛”。七、**不读入的。** 不说作者意谓这些律，也不读《左傳》或京房的互体。
 **理由。** 每一陈述都是构形之律或关于经文之清单的事实，都已检查；每一读法只说律对此段显示了什么，判断留在外面，与 D47、D50 同。
 **会改变它的。** 一部存入本库、使某段关系类别改变的注疏（王弼、来知德、《左傳》）；彖或象中互之用的普查；一条与某读法相矛盾的脊柱定律。
+
+<a id="d52-关节交换之律与第三值--junctures-commuting-laws-and-the-third-value"></a>
+### D52. 关节、交换之律与第三值
+
+所在：本章第 1 节“配置在何处失去”“交换的律保持什么分开”，第 3 节“在所读之中的读法族”（第三值下的说谎者），以及词汇表；记录 [every-loss-passes-a-juncture](../../../../theories/becoming/results/records/every-loss-passes-a-juncture.md)、[what-a-commuting-law-keeps-apart](../../../../theories/becoming/results/records/what-a-commuting-law-keeps-apart.md) 与 [revision-with-an-undecided-value](../../../../theories/becoming/results/records/revision-with-an-undecided-value.md)；研究第 199 节。在 D45 的一个说明中决定。
+
+**Ren 的原话。** 2026-10-19，要求审读早期《生生不息》仓库中可并入者：“please take a look of this … many insights can be integrated”（节录，随[审读](SSBX-REPOSITORY-REVIEW.md)在提交 `c599d83db` 中引用；完整原话不在 `sources/` 中）。是出处；每条读法靠其定律成立。
+
+**决定。** 依所述范围采用。一、**机即关节。** 早期文本的机，即两个延续通向不同的开放之未来，读作把开放之未来取为一个仍可得的配置：x 对 s 是关节，当 x 有一步之后 s 仍可得，也有一步之后 s 不可得（`Branching.Juncture`）。同时多种可能的开放剖面未形式化。二、**关节处的护闭与成闭。** 护闭是保持，即保住 s 仍可再得的最大闭（`Branching.keeping`、`Branching.keeping_greatest`）；成闭是失去，即之后 s 不再可得的那些步（`Branching.losing_not_returns`）。二者是关节处的同一种操作，去掉失去之步或保持之步。三、**找到那处所问的。** 返回之配置的每次失去都经过一个关节，以双重否定的形式；找到它，就是判定 s 是否仍可再得；对每个过程都这样问，就是有限全知原理（`Branching.lpo_of_junctures_found`）。失去之处在每条路径上都在；它在哪里，在可达已判定处可知，例如配置由列表持有、步可判定时。四、**选项多不成关节**（`Branching.no_juncture_of_keeps`、`Branching.Many.no_juncture`）：需要两个选项，两个选项也不够。五、**对称所承载的。** 保持一个移动每个配置之对称的律，从不合并该对称所分开者（`Law.Commutes.apart`）；要合并它，律必须破此对称。在周易中，消息从不合并逐爻相反的阴阳，尽归坤之消破错（`Hexagram.waxWane_apart`、`Hexagram.wane_breaks`）。早期拓扑的“«一»结构上不存在”及其把 Borsuk–Ulam 等同于第二定律的表不取；取的是定律。六、**第三值疑。** 未定值是修正尚未决定者，不是第三种真，也不是叠加（审读的“不确定 ≠ 不可知”）。早期的“三值保守律”（U ⇏ ⊤）是不含常量之项的 `Undecided.eval_undecided`，沿运行则是 `Undecided.stays_undecided`。对角线的缺口表现为未定（`Undecided.undecided_of_moves`、`Undecided.rest_undecided`）。七、**不读入的。** 没有估值：哪个配置值得保持，保持或抹去一个差别是支持还是损害生生，哪些句子应当被决定，都是比较的事（§6.15）。
+**理由。** 每条读法列出它所依的声明，所说不多于它们所证。双重否定与 LPO 校准读作找到关节对展开所要求的，不读作证明的缺口。
+**会改变它的。** 一个关节处开放的形式剖面，为一个配置的读法所漏；一个不判定可达就为每次失去找到关节的过程（那里需要 LPO）；一条保持移动每个配置之对称、却合并一对的律（由 `Law.Commutes.apart` 不可能）。

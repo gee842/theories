@@ -103,6 +103,9 @@ import Becoming.Widening
 import Becoming.Pace
 import Becoming.Passing
 import Becoming.JointKeeping
+import Becoming.Undecided
+import Becoming.Junctures
+import Becoming.Commuting
 import Becoming.Tolerance
 import Becoming.Revision
 import Becoming.Contacts
@@ -1220,6 +1223,35 @@ readings of the unfolding (`Becoming.Labelled`).
   exactly no chain of `n` waits, and with memory no step restores. The certificate of
   `Becoming.FaultEnvelopes` read as a law of giving keeps a covered set giving under separated
   envelopes, and is available exactly where they are separated.
+* `Becoming.Undecided` (L2): the third value and revision, with no premise. With values true,
+  undecided and false, undecided below the decided ones in information, a term with no constant
+  is undecided where every sentence is, so a system with no constant stays wholly undecided, and
+  evaluation is monotone in information. Revision of `N` sentences that speak only of one another,
+  run from every sentence undecided, rises at every step and settles within `N` steps at the least
+  fixed point, a bound the chain of denials shows exact; readings on a list that only rise, and once
+  steady stay steady, are steady by the list's length. The liar rests undecided, and a run of its
+  revision rests exactly where it is undecided. Where the two-valued revision has no fixed point,
+  as for the liar (`Diagonal.revision_never_rests`), every fixed point, and every run of revision
+  that rests, leaves a sentence undecided: the gap reappears as undecidedness. The run of a
+  monotone map from the undecided value rests from its first step, so the gap of
+  `Diagonal.gap_unsaid` needs a map that is not monotone.
+* `Becoming.Junctures` (L3): where a configuration can still be had again and where it is lost.
+  A juncture for `s` has a step after which `s` can still be had and one after which it cannot.
+  Every loss of a returning `s` passes a juncture on its course, up to double negation; where it
+  is decided along the course whether `s` can still be had, and for configurations a list holds
+  with decided steps, the juncture is found; finding it for every loss of every process is the
+  limited principle of omniscience. Keeping the steps after which `s` can still be had keeps `s`
+  and is the greatest sub-process that does; on its course it removes exactly the losing steps
+  at junctures; losing never returns. Many options make no juncture.
+* `Becoming.Commuting` (L4): what a commuting law keeps apart. Where a law commutes with a map
+  that moves every configuration, its runs from a configuration and from its image are never at
+  one configuration at the same step: to merge what a symmetry tells apart a law must break it.
+  No such law is constant; what the map fixes stays fixed along the run; rests
+  and returns come in pairs; under an exchange a course holding a pair holds it halfway round a
+  return; the law goes alike across the pairs; `Diagonal.revision_never_rests` is the case of a
+  map commuting with itself. Symmetric processes carry reach, returning and junctures, and each
+  run has a mirror run never at the same configuration. In the Changes, waxing and waning never
+  merges a hexagram with its complement, and the waning into 坤 breaks the symmetry.
 * `Becoming.Contacts` (L4): registration through addressed contacts. Registration by agreement
   on data selects a value exactly where its address is in the data, and a change of data keeps
   every old selection exactly where it keeps the old data. A revision rule registers every

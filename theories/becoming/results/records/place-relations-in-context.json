@@ -666,13 +666,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "048d366472bccf39a54e5c84e988e15cbc42ef87cd694eb6988fc161f789c0a8"
+      "sha256": "b5bd1fa61bd0b236e48a84c198e1b5ac03c292c772d7072a38d40688f1a72b8b"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "4e12060d9822b30b936f601736cc0771e7f69cd6658d3f4f1f643b2f52e459fe"
+      "sha256": "b8461fa95b360591ec8cab5dcc24b8b4ece287611fb26ae20039e540b16d2c74"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -772,6 +772,10 @@
     {
       "en": "19 October 2026, Y3: the nuclear law and the cast, listed in the next delta, are now the record hexagram-world-laws (study section 198, decision D51), stated on the configurations; reading them on these sites stays next; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 added its passages, chapter text, study section and section 1 paragraph). The claim is unchanged.",
       "zh": "2026年10月19日，Y3：下一步所列的互与之卦，现为记录 hexagram-world-laws（研究第 198 节，决定 D51），写在构形上；在这些位上读之仍是下一步；读过改动后，YI-ZHUAN-AND-BECOMING.md、passages.json、verify_mapping.py、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section; THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apart, the section 3 item on the liar with a third value, glossary rows, section 8.2 and 8.3 items, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

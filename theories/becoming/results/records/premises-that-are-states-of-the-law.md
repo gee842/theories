@@ -88,6 +88,7 @@ Aliases: `states of the law of exchange`, `交换之律的状态`, `Becoming.Exc
 
 - 19 October 2026: added (E1), on the first target of chapter §8.1, the deductive necessity of the whole; study section 197.
 - 19 October 2026, Y3 (Becoming.HexagramLaws): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y3 added a study section). The claim is unchanged.
+- 19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section). The claim is unchanged.
 
 </details>
 

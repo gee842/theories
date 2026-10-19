@@ -1,0 +1,375 @@
+{
+  "schema_version": 2,
+  "id": "every-loss-passes-a-juncture",
+  "title": {
+    "en": "Every loss passes a juncture",
+    "zh": "每次失去都经过一个关节"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:25:15+00:00",
+  "statement": {
+    "en": "Where s returns, every course to a configuration that cannot have s again passes, not not, a juncture: one step there keeps s to be had and one loses it. Finding it is deciding reach (LPO for every process). Keeping the steps that keep s keeps s, the largest that does.",
+    "zh": "s 返回时，每条到达不能再得 s 之配置的路径，不非地经过一个关节：那里一步保住 s 可得，一步失去它。找到它即判定可达（对每个过程为 LPO）。保留保住 s 之步者保住 s，是这样的最大者。"
+  },
+  "laws": [
+    {
+      "en": "A juncture for s has a step after which s can still be had and a step after which it cannot; it can have s again, its two steps differ in outcome, it is possibly drawn in, and on the course of s it returns.",
+      "zh": "s 的关节有一步之后 s 仍可得，有一步之后 s 不可得；它可再得 s，两步结果不同，可能被吸入，在 s 的路径上它返回。",
+      "declarations": [
+        "Becoming.Branching.Juncture",
+        "Becoming.Branching.Juncture.reach",
+        "Becoming.Branching.Juncture.outcomes_differ",
+        "Becoming.Branching.Juncture.possiblyDrawn",
+        "Becoming.Branching.Juncture.returns"
+      ]
+    },
+    {
+      "en": "Where s returns, every course from s, or from a configuration that can have s, to one that cannot passes, up to double negation, a juncture at which it takes its losing step; so does every course of a configuration possibly drawn in.",
+      "zh": "s 返回时，从 s 或从可得 s 的配置到不可得 s 之配置的每条路径，在双重否定下，经过一个关节并在那里走出失去之步；可能被吸入之配置的每条路径亦然。",
+      "declarations": [
+        "Becoming.Branching.step_back",
+        "Becoming.Branching.loss_passes_juncture_from",
+        "Becoming.Branching.loss_passes_juncture",
+        "Becoming.Branching.PossiblyDrawn.passes_juncture"
+      ]
+    },
+    {
+      "en": "The juncture is found where it is decided along the course whether s can still be had, and for configurations a list holds with steps decided: a reading of reach that only rises settles by the list's length (through Undecided.settles_within) and decides reach.",
+      "zh": "沿路径已判定 s 是否仍可得之处，关节被找到；配置由列表持有、步已判定时亦然：只升不降的可达读法按列表长度停住（经 Undecided.settles_within），判定可达。",
+      "declarations": [
+        "Becoming.Branching.loss_passes_juncture_decided_from",
+        "Becoming.Branching.loss_passes_juncture_decided",
+        "Becoming.Branching.leadsWithin",
+        "Becoming.Branching.leadsWithin_sound",
+        "Becoming.Branching.leadsWithin_complete",
+        "Becoming.Branching.leads_settles",
+        "Becoming.Branching.leads_bound",
+        "Becoming.Branching.reach_iff_leads",
+        "Becoming.Branching.reach_decided_listed",
+        "Becoming.Branching.loss_passes_juncture_listed"
+      ]
+    },
+    {
+      "en": "Finding the juncture of every loss of every process gives the limited principle of omniscience: in Hidden, whether origin can be had again from fork is whether a sequence has a true value.",
+      "zh": "为每个过程的每次失去找到关节，推出有限全知原理：在 Hidden 中，从 fork 能否再得 origin，就是一个序列是否有 true 值。",
+      "declarations": [
+        "Becoming.Branching.Hidden.juncture_decides",
+        "Becoming.Branching.lpo_of_junctures_found"
+      ]
+    },
+    {
+      "en": "Keeping, the steps after which s can still be had, can have s from where the process can, keeps s, returns to s exactly where the process does and holds every sub-process keeping s on that sub-process's course from s; on its course it removes exactly the losing steps at junctures. Losing never returns to s.",
+      "zh": "保持，即之后 s 仍可得之步，从原过程可得 s 处可得 s，保住 s，恰在原过程返回 s 处返回 s，并在每个保住 s 之子过程自 s 起的路径上包含它；在自己的路径上，它恰去掉关节处的失去之步。失去从不回到 s。",
+      "declarations": [
+        "Becoming.Branching.keeping",
+        "Becoming.Branching.losing",
+        "Becoming.Branching.SubProcess",
+        "Becoming.Branching.Keeps",
+        "Becoming.Branching.juncture_iff",
+        "Becoming.Branching.reach_keeping_iff",
+        "Becoming.Branching.keeping_keeps",
+        "Becoming.Branching.keeping_returns_iff",
+        "Becoming.Branching.keeping_greatest",
+        "Becoming.Branching.keeping_removes_at_juncture",
+        "Becoming.Branching.losing_not_returns",
+        "Becoming.Branching.losing_loses"
+      ]
+    },
+    {
+      "en": "A process keeping s has no juncture on its course, however many options it has: Many has a step for every natural number and no juncture; OneWay's false, with two moves, is one.",
+      "zh": "保住 s 的过程在其路径上没有关节，不论选项多少：Many 对每个自然数有一步而无关节；OneWay 的 false 有两种动作，是一个关节。",
+      "declarations": [
+        "Becoming.Branching.no_juncture_of_keeps",
+        "Becoming.Branching.Many.no_juncture",
+        "Becoming.Branching.OneWay.juncture"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise on the process: the laws hold for every process; that s returns is a hypothesis of the loss laws, decided reach or listed configurations with decided steps of the found forms.",
+      "zh": "不加公理，对过程不加前提：定律对每个过程成立；s 返回是失去律的假设，已判定的可达或步已判定的可列配置是找到形式的假设。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Junctures for a set of configurations, or for a profile of several possibilities at once; which junctures actual unfoldings have.",
+      "zh": "一组配置的关节，或同时多种可能的剖面的关节；实际展开有哪些关节。",
+      "kind": "scope"
+    },
+    {
+      "en": "That keeping is better than losing, or which configuration ought to be kept.",
+      "zh": "保持优于失去，或哪个配置应当保持。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T102354.824114Z): the 60 declarations of Becoming.Junctures, 46 of them theorems, have empty axiom reports; the checker verifies core purity. Proved in a scratch kit by the session that claimed SG; author review in study section 199; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T102354.824114Z）：Becoming.Junctures 的 60 项声明（46 项定理）公理报告为空；检查器并核对核心纯净。由认领 SG 的会话在草稿中证明；作者审查见研究第 199 节；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "Junctures for sets and profiles; keeping at the level of rules; an independent review.",
+    "zh": "一组配置与剖面的关节；规则层的保持；独立审查。"
+  },
+  "correspondence": {
+    "en": "The earlier treatise's 机 (补篇一 §八, §十一), two continuations leading to different open futures, read with the open future as one configuration still to be had; 护闭 and 成闭 read as keeping and losing at a juncture (SSBX review §3.2, G1). Reading the AI's (D52); Ren's words are provenance, not warrant.",
+    "zh": "早期论著的机（补篇一第八、十一节），即两个延续通向不同的开放之未来，读作把开放之未来取为一个仍可得的配置；护闭与成闭读作关节处的保持与失去（SSBX 审读第 3.2 节 G1）。读法是 AI 的（D52）；Ren 的话是出处，不是依据。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Junctures.lean",
+  "aliases": [
+    "every loss passes a juncture",
+    "每次失去都经过一个关节",
+    "机 (AI reading)",
+    "护闭 as keeping (AI reading)",
+    "Becoming.Branching.loss_passes_juncture",
+    "Becoming.Branching.keeping_greatest",
+    "Becoming.Branching.lpo_of_junctures_found"
+  ],
+  "dependencies": [
+    {
+      "id": "returning-where-the-course-branches",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Reach, Trace, Returns, Reach.map and law_returns_iff of Becoming.Branching.",
+        "zh": "复用 Becoming.Branching 的 Reach、Trace、Returns、Reach.map 与 law_returns_iff。"
+      },
+      "interface": {
+        "output": {
+          "en": "What a process can have again, step by step, and returning under a determined law.",
+          "zh": "过程逐步可再得什么，以及决定性律下的返回。"
+        },
+        "input": {
+          "en": "Where a configuration is lost, and what a symmetry carries.",
+          "zh": "配置在何处失去，对称承载什么。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean"
+      }
+    },
+    {
+      "id": "necessarily-drawn-is-not-returning",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses PossiblyDrawn and possiblyDrawn_iff: a juncture is where possibly and necessarily drawn come apart.",
+        "zh": "复用 PossiblyDrawn 与 possiblyDrawn_iff：关节是可能被吸入与必然被吸入分开之处。"
+      },
+      "interface": {
+        "output": {
+          "en": "Being possibly drawn in is losing oneself on some course.",
+          "zh": "可能被吸入即在某条路径上失去自身。"
+        },
+        "input": {
+          "en": "Where on the course the loss happens.",
+          "zh": "失去发生在路径上何处。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean"
+      }
+    },
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "relation": "application",
+      "detail": {
+        "en": "Uses the limited principle of omniscience, LPO, as stated in Becoming.Change.",
+        "zh": "使用 Becoming.Change 中陈述的有限全知原理 LPO。"
+      },
+      "interface": {
+        "output": {
+          "en": "The principle a sequence of truth values has a true or is false throughout.",
+          "zh": "真值序列有 true 或处处为 false 的原理。"
+        },
+        "input": {
+          "en": "What finding every juncture amounts to.",
+          "zh": "找到每个关节等于什么。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
+      }
+    },
+    {
+      "id": "revision-with-an-undecided-value",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Undecided.settles_within to decide reach on listed configurations.",
+        "zh": "复用 Undecided.settles_within 在可列配置上判定可达。"
+      },
+      "interface": {
+        "output": {
+          "en": "Readings on a list that only rise settle by the list's length.",
+          "zh": "列表上只升不降的读法按列表长度停住。"
+        },
+        "input": {
+          "en": "Reach decided for listed configurations with decided steps.",
+          "zh": "步已判定的可列配置上的可达判定。"
+        },
+        "conditions": {
+          "en": "Configurations a list holds; steps decided.",
+          "zh": "配置由列表持有；步已判定。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "what-a-commuting-law-keeps-apart",
+      "detail": {
+        "en": "A symmetric process carries junctures in pairs under an exchange (Branching.Symmetric.juncture).",
+        "zh": "对称过程在对换下成对地承载关节（Branching.Symmetric.juncture）。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Junctures.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Branching.Hidden.Pos",
+        "Becoming.Branching.Hidden.chain_reach",
+        "Becoming.Branching.Hidden.fork_back",
+        "Becoming.Branching.Hidden.fromChain",
+        "Becoming.Branching.Hidden.fromFork",
+        "Becoming.Branching.Hidden.fromOrigin",
+        "Becoming.Branching.Hidden.juncture_decides",
+        "Becoming.Branching.Hidden.path",
+        "Becoming.Branching.Hidden.process",
+        "Becoming.Branching.Hidden.returns",
+        "Becoming.Branching.Hidden.sink_lost",
+        "Becoming.Branching.Hidden.sink_stuck",
+        "Becoming.Branching.Hidden.step",
+        "Becoming.Branching.Hidden.to_origin",
+        "Becoming.Branching.Juncture",
+        "Becoming.Branching.Juncture.outcomes_differ",
+        "Becoming.Branching.Juncture.possiblyDrawn",
+        "Becoming.Branching.Juncture.reach",
+        "Becoming.Branching.Juncture.returns",
+        "Becoming.Branching.Keeps",
+        "Becoming.Branching.LeadsSteady",
+        "Becoming.Branching.LeadsSteady.next",
+        "Becoming.Branching.Many.no_juncture",
+        "Becoming.Branching.Many.options",
+        "Becoming.Branching.Many.process",
+        "Becoming.Branching.OneWay.juncture",
+        "Becoming.Branching.PossiblyDrawn.passes_juncture",
+        "Becoming.Branching.SubProcess",
+        "Becoming.Branching.SubProcess.reach",
+        "Becoming.Branching.any_congr",
+        "Becoming.Branching.juncture_iff",
+        "Becoming.Branching.keeping",
+        "Becoming.Branching.keeping_greatest",
+        "Becoming.Branching.keeping_keeps",
+        "Becoming.Branching.keeping_removes_at_juncture",
+        "Becoming.Branching.keeping_returns_iff",
+        "Becoming.Branching.keeping_sub",
+        "Becoming.Branching.leadsWithin",
+        "Becoming.Branching.leadsWithin_complete",
+        "Becoming.Branching.leadsWithin_sound",
+        "Becoming.Branching.leadsWithin_up",
+        "Becoming.Branching.leads_bound",
+        "Becoming.Branching.leads_settles",
+        "Becoming.Branching.leads_steady_or_rises",
+        "Becoming.Branching.losing",
+        "Becoming.Branching.losing_loses",
+        "Becoming.Branching.losing_not_returns",
+        "Becoming.Branching.losing_sub",
+        "Becoming.Branching.loss_passes_juncture",
+        "Becoming.Branching.loss_passes_juncture_decided",
+        "Becoming.Branching.loss_passes_juncture_decided_from",
+        "Becoming.Branching.loss_passes_juncture_from",
+        "Becoming.Branching.loss_passes_juncture_listed",
+        "Becoming.Branching.lpo_of_junctures_found",
+        "Becoming.Branching.no_juncture_of_keeps",
+        "Becoming.Branching.reach_decided_listed",
+        "Becoming.Branching.reach_iff_leads",
+        "Becoming.Branching.reach_keeping_iff",
+        "Becoming.Branching.reach_keeping_of_trace",
+        "Becoming.Branching.step_back"
+      ],
+      "sha256": "9725e0c734d6b409473d0a86bd6de41c9979e735d16e99e0644d5f9b9a1ddc72"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Branching.possiblyDrawn_iff",
+        "Becoming.Branching.Returns"
+      ],
+      "sha256": "58b9fc1c27a970007227d9b2cca13d0a5ed3699e605491d897128ca128f774f7"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "accd86eb3c7ce0e8a24617843fbdf31a021941a82e29ed67bb03cd292a60d5a2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Undecided.lean",
+      "role": "proof",
+      "sha256": "7465651219f869910b0f94ed8622f34ccd3d4a2b85ebd02d714f2abbb7670f33"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",
+      "role": "receipt",
+      "sha256": "076e24cd85ddc8338f94d8e8b75e3cde29d911a2cfef05c6e70d4ba1a08396f4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "b5bd1fa61bd0b236e48a84c198e1b5ac03c292c772d7072a38d40688f1a72b8b"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "b8461fa95b360591ec8cab5dcc24b8b4ece287611fb26ae20039e540b16d2c74"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
+      "role": "provenance",
+      "sha256": "8d59eec11ae07e213b069462f4b2eee39d70571c71dbc368a4ce30005487ed11"
+    },
+    {
+      "path": "sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/03_补篇一_间开本_致知版/03_卷二_发生.md",
+      "role": "provenance",
+      "sha256": "566eeec8ed0df66a3019c4d30084e1559109fc029070eec94f90afb2ed2d5e5c"
+    },
+    {
+      "path": "sources/07-shengsheng-buxi/ssbx-repo/史料/生生不息论_三本文完整版/03_补篇一_间开本_致知版/04_卷三_判准.md",
+      "role": "provenance",
+      "sha256": "fa83d738836832904c235f2376e1d19db566acc297e0e2742677f51330208b09"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Junctures.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T102354.824114Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Junctures",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (SG, general law G1 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated (\"please take a look of this … many insights can be integrated\", abridged as quoted with the review); study section 199.",
+      "zh": "2026年10月19日：新增（SG，早期《生生不息》仓库审读的一般律 G1），按 Ren 要求审读早期仓库中可并入者（“please take a look of this … many insights can be integrated”，节录，随审读引用）；研究第 199 节。"
+    }
+  ]
+}
