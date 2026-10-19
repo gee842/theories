@@ -401,14 +401,18 @@ def render_views(records):
                     lines += ['*' + config['readme_featured_note'] + '*', '']
             if featured:
                 lines += [H('###', 'Laws of the theory without axiom (sections 1–6)', 'Leading results'), '',
-                          'Each law is proved in Lean with no axiom, under the conditions its record states.', '']
+                          'Each is checked in Lean on the pure core: every source declaration has an empty axiom report. That is a constructive discipline, not an absence of premises. '
+                          'Each holds under the hypotheses its record states, with the commitments of the representation (discrete steps, natural-number amounts); '
+                          'a result saying that something can happen is shown by a constructed example.', '']
                 for r in featured:
                     lines += result_block(r, path, '####')
             if conditional:
                 first, rest = conditional[0], conditional[1:]
                 lines += [H('###', 'Under the condition of section 6.15', 'Under the condition of section 6.15'), '',
                           'The theory does not assert this condition; ' + link(CANONICAL + '#615-if-the-continuation-of-anything-has-significance', path, 'section 6.15')
-                          + ' states what follows from it, and its warrant and necessity are open.', '']
+                          + ' states what follows from it. The condition gives the continuation of everything significance from every standpoint, so the results under it '
+                          'are the case of a significance that covers everything; the rules of comparison are derived without it, and the condition adds none. Comparison by widening (C) holds on level paths by definition. '
+                          'Open: the warrant of the condition, of C, and of the step of invariance from what one\'s own continuation needs to the continuation of anything.', '']
                 lines += result_block(first, path, '####')
                 if rest:
                     lines += ['Further results under the same condition and disclosed practical premises: '
@@ -442,7 +446,8 @@ def render_views(records):
         if kind == 'open':
             groups = open_question_links(config)
             targets = [r for r in records if r['kind'] == 'target']
-            lines += ['Where the theory is open: the open targets, the open programme of the canonical chapter, and the decisions that wait on Ren. '
+            lines += ['Where the theory is open: the open targets, the open programme of the canonical chapter, and what lies beyond the readings. '
+                      'No reading waits on anyone: each is decided by its place in one account of the theory (decision D45). '
                       'A completed result\'s own next step is on its record page.', '']
             lines += anchor_lines('registered-results', '已登记成果--registered-results')
             lines += [H('##', 'Open targets', 'Open targets'), '']
@@ -454,12 +459,15 @@ def render_views(records):
             if groups['programme']:
                 lines += [H('##', 'Open programme', 'Open programme'), ''] + ['- ' + link(x['path'], path, x['label']) for x in groups['programme']] + ['']
             unmarked = [g for g in goal_records if g.get('state') == 'unmarked']
-            lines += [H('##', 'Decisions pending Ren', 'Decisions pending Ren'), '']
+            lines += anchor_lines('decisions-pending-ren')
+            lines += [H('##', 'Beyond the readings', 'Beyond the readings'), '',
+                      'The readings are decided by argument and can be revised by a better one. What changes only through a proposal is the author\'s own text and authorizations: '
+                      'the body of the opening, the curated generativity chain, the goal scopes and their states, and the licence. The choice of results featured on the home page is open to revision on argument.', '']
             lines += ['- ' + link(x['path'], path, x['label']) for x in groups['pending_ren']]
             if unmarked:
                 lines += ['- The state of each scope not yet marked: ' + ', '.join(link('GOALS.md#' + g['id'], path, en(g['title'])) for g in unmarked) + '.']
             if config.get('readme_featured_note') and featured:
-                lines += ['- The choice of ' + link('README.md#what-is-established', path, 'the results featured on the home page') + '.']
+                lines += ['- The choice of ' + link('README.md#what-is-established', path, 'the results featured on the home page') + ', open to revision.']
             lines += ['']
         if kind == 'goals':
             lines += ['Directions preserve authorization and scope; completion status is obtained from linked result records where migrated. A goal belonging to another session is not silently assigned to the current session. '

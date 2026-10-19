@@ -8,7 +8,7 @@ The working repository of the Theory of Becoming: an account of how anything com
 
 Three kinds of statement are kept apart throughout:
 
-- **Laws proved in Lean.** Each holds under the conditions it names, and no axiom is assumed: the core's declarations have empty axiom reports.
+- **Laws proved in Lean.** Each holds under the hypotheses it names, with the commitments of the representation (discrete steps, natural-number amounts). The core's source declarations have empty axiom reports, so each law holds constructively; that is not an absence of premises. The laws that need no premise about the unfolding are identities by definition, arithmetic and consequences of finiteness; the dynamical content is in the conditional laws, and results saying that something can happen are shown by constructed examples.
 - **Readings and judgments.** What the laws mean for people, ethics and AI, labelled as readings.
 - **Open questions.** Including whether the one ethical step the theory states as a condition, that the continuation of anything has significance, can itself be derived.
 
@@ -26,7 +26,7 @@ The work is not licensed: [knowledge is a common good](COMMONS.md).
 
 ## How it got here
 
-The ideas began in writing from 2021 on: the fifteen earlier theory folders below, with their originals in `sources/`. The repository's first commit is from 6 September 2026; the formal theory was built in October 2026, in about 1,400 commits. The history is part of the work, and nothing is deleted:
+The ideas began in writing from 2021 on: the fifteen earlier theory folders below, with their originals in `sources/`. The repository's first commit is from 6 September 2026; the formal theory was built in October 2026, in more than 1,550 commits (1,568 in all by 19 October 2026). The history is part of the work, and nothing is deleted:
 
 - **Commits.** `git log` shows each step. Where an instruction governed a step, the commit message quotes it.
 - **`history/` folders.** Only the latest version of a document stays live. What it replaces moves byte for byte to a sibling `history/` folder, recorded in a manifest under [`_process/architecture/`](_process/architecture/), so earlier versions stay readable and linked.
@@ -37,7 +37,7 @@ Personal and third-party material (private chats, memories and conversations wit
 
 ## Check the proofs yourself
 
-The Lean package `Becoming` is in [`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/`](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md). Its core imports nothing outside itself, and every declaration of the core and its bridge has an empty axiom report: no `propext`, `Quot.sound` or `Classical.choice`. The core check needs Lean and Python 3 (standard library only), not Mathlib.
+The Lean package `Becoming` is in [`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/`](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md). Its core imports nothing outside itself, and every source declaration of the core has an empty axiom report: no `propext`, `Quot.sound` or `Classical.choice` (the only generated constants that depend on an axiom are constructor injectivity lemmas, on `propext`, which no source declaration uses). The core check needs Lean and Python 3 (standard library only), not Mathlib.
 
 1. Install [elan](https://github.com/leanprover/elan), then the toolchain: `elan toolchain install leanprover/lean4:v4.29.1`.
 2. From the repository root, with no cache and the receipt written outside the repository:

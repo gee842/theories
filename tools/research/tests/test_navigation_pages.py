@@ -114,7 +114,8 @@ class GoalAndOpenQuestionTests(unittest.TestCase):
         self.assertNotIn('### a title', page)
         self.assertIn('**Next:** t next', page)
         self.assertLess(page.index('## Open programme'), page.index('[Further proofs](README.md)'))
-        self.assertLess(page.index('## Decisions pending Ren'), page.index('[Ren decides](GOALS.md)'))
+        self.assertLess(page.index('## Beyond the readings'), page.index('[Ren decides](GOALS.md)'))
+        self.assertIn('decisions-pending-ren', anchors_from_text(page))
         self.assertIn('[later title](GOALS.md#later)', page)
         self.assertIn('registered-results', anchors_from_text(page))
 

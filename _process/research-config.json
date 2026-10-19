@@ -17,7 +17,7 @@
   "readme_status": "This is ongoing, unfinished work: the theory, its proofs and its readings are still being developed and revised.",
   "readme_lead": "_process/navigation/README-LEAD.md",
   "readme_repository": "_process/navigation/REPOSITORY.md",
-  "readme_featured_note": "Ordered as one argument about AI and human coordination, every law proved with no axiom: why a race to be more, or above all others, cannot come to rest; why each counting only its own draw can together end what all depend on, the winner included; what anything that wants to go on must count, and where that stops; why selection and policy through registration are blind to what does not register, how far the break is included; why reforming the state without changing the rule is re-absorbed; why what cannot be undone cannot be tested by trial; what closing and opening the future exactly take; and why relations and wholes go on only through joint action and continuing generation. Chosen for significance; the selection is open to revision.",
+  "readme_featured_note": "Ordered as one argument about AI and human coordination: why a race to be more, or above all others, cannot come to rest; why each counting only its own draw can together end what all depend on, the winner included; what anything that wants to go on must count, and where that stops; why selection and policy through a selector's couplings are blind to what does not couple in, including how far off the break is; why reforming the state without changing the rule is re-absorbed; why what cannot be undone cannot be tested by trial; what closing and opening the future exactly take; and why relations and wholes go on only through joint action and continuing generation. Each is checked in Lean on the pure core, whose source declarations have empty axiom reports; that is a constructive discipline, not an absence of premises, and each holds under the hypotheses its record states. Where a result says that something can happen, a constructed example shows that it can, not how often it does. Chosen for significance; the selection is open to revision.",
   "readme_featured_results": [
     "seeking-boundary",
     "own-count-misses-joint-excess",
@@ -98,16 +98,16 @@
     ],
     "pending_ren": [
       {
-        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-what-stays-rens",
-        "label": "Section 8.4, what stays Ren's"
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-decided-on-rens-delegation",
+        "label": "Section 8.3, readings adopted, each with its argument"
       },
       {
-        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#83-readings-decided-on-rens-delegation",
-        "label": "Section 8.3, readings decided on Ren's delegation (Ren can reverse any)"
+        "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#84-what-stays-rens",
+        "label": "Section 8.4, open readings, and the texts that change only by proposal"
       },
       {
         "path": "_process/BECOMING-WORKBOARD.md#decisions-pending-ren",
-        "label": "The work board's decisions pending Ren"
+        "label": "The work board: what changes only by proposal"
       }
     ]
   },
