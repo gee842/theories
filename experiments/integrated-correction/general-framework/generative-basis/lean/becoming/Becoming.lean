@@ -99,6 +99,7 @@ import Becoming.Learning
 import Becoming.Hexagrams
 import Becoming.HexagramPlaces
 import Becoming.HexagramLaws
+import Becoming.HexagramSites
 import Becoming.Withholding
 import Becoming.Widening
 import Becoming.Pace
@@ -1188,6 +1189,20 @@ readings of the unfolding (`Becoming.Labelled`).
   sixty-four, line k turning every 2 ^ (k - 1) steps. The law of waxing and waning keeps the
   changes of line once round (承 and 乘 with the ends), one, three or five, and has six orbits,
   five of twelve steps and one of four.
+* `Becoming.HexagramSites` (L4): two relations of the places read at other sites, after 王弼's
+  《周易略例》, with no premise. In the second relation of phase the bottom and top places have no
+  fixed place (初上无位): a line between them holds its place where it is in phase, and the ends
+  say nothing. No parity of the top place makes 需's and 乾's top lines both out of phase, as the
+  text says they are; under the second relation every listed statement of place in the 彖 and
+  the 小象 holds, while the parity of six places fails four. Configurations alike between the
+  ends have the same inner seams and middle opposition; changing an end line keeps every phase
+  between them. Under waxing and waning the line entering place 2 takes its phase from the
+  bottom, so the phases between the ends are not a lumping the law goes alike across. Two lines
+  answer where they differ, at any two places; a line answering every other is unique, in
+  twelve configurations, independent of place and phase, and never lasts a step of waxing and
+  waning: at the top it passes out, and two steps on a sole line stands at the bottom. Censuses
+  of the 彖, the 小象 and the line texts are checked on their configurations; every law is read
+  along runs.
 * `Becoming.Withholding` (L3): giving that waits on giving. With memory (a formation gives
   where it gave and all it waits on gave), a formation gives at a step exactly where every
   formation within that many waits of it gave at the start; withholding stays, spreads

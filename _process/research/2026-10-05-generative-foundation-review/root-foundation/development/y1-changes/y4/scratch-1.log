@@ -1,0 +1,17 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories--claude-worktrees-modest-solomon-0b03b5/8cbd26a9-74e2-4139-bbb6-f918d6860485/scratchpad/y4tree3",
+  "modules": 46,
+  "ran": [
+    "Becoming.HexagramSites",
+    "BecomingHexagramSitesAxiomAudit"
+  ],
+  "reused": 45,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramSites": {
+      "theorems": 103,
+      "declarations": 142,
+      "with_axioms": {}
+    }
+  }
+}
