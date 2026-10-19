@@ -83,7 +83,7 @@ theorem feeding_unrestricted_of_common {Pos : Type} {t : Nat} {c : C}
   fun i => feeding_whole_of_common common (center i.1) i.2.2
 
 /-- Where each center's system is the whole, significance bounded by the system is the continuation condition. -/
-theorem bounded_system_whole {center : Pos → F}
+theorem bounded_system_whole {Pos : Type} {center : Pos → F}
     (connected : ∀ p g, L.WithinSystem W (center p) g) :
     Unrestricted (bounded fun p => L.WithinSystem W (center p)) :=
   fun i => connected i.1 i.2.2
