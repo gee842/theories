@@ -50,7 +50,7 @@ As with the garden draft, the filename identifies generated material; precise mo
 
 ## Constructive conversation precursor
 
-Read: [Collaborative world-building through shared principles, 2026-03-23](../../sources/12-claude-ai-chats/2026-03-23_Collaborative_world-building_through_shared_principles_fefd8d50.md), all exported messages.
+Read: Collaborative world-building through shared principles, 2026-03-23 (private source, kept locally, not in the shared repository), all exported messages.
 
 The export distinguishes `HUMAN` and `ASSISTANT` messages. The human speaker proposes a constructive conversation in which a group builds from principles into values, rituals, and social behaviors. Later, the human speaker redirects the exercise from novelty toward understanding how people can deliberately build a better shared world.
 

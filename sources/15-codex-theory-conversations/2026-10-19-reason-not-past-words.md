@@ -17,6 +17,14 @@ On the review's findings, including that the canonical chapter introduces sectio
 >
 > reason, and I am sure you know what to do now
 
+## Earlier the same day: names
+
+Quoted in the message of commit `a5acc7cbf` (front pages without names):
+
+> don't mention ai, me, or you. knowledge doesn't care about names, it is what it is
+
+The session that made that commit also recorded, in its memory, that Ren asked for no `Co-Authored-By` trailer on commits. Those exact words were not preserved, so this record states the instruction without quoting it. On 19 October, 159 of the day's 169 commits still carried the trailer; AGENTS.md now states the rule.
+
 ## Context (AI-authored)
 
 - **Public history.** The repository stays public, and its history is not rewritten. The `.gitignore` of `cbe909fe9` governs only what is pushed from now on.

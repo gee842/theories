@@ -2,7 +2,7 @@
 
 **Status:** AI-drafted expansion of existing seed `W05`, following [Ren's correction](../archive/006-ren-meta-level-and-worlds.txt). A scenario and spatial brief, not an engineered space program. The name is provisional.
 
-**Sources:** [Ren's opening](../archive/001-ren-opening.txt); the `HUMAN` opening in [Autonomous Infrastructure for a Free Future, 2024-11-03](../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md); and Ren's `[2026-06-03T10:32]` prompt in [the speculative-future project export](../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md). These explicitly imagine freely associated communities building rockets and exploring the universe. Older assistant names, effortless transport, and established Mars settlements are not adopted here.
+**Sources:** [Ren's opening](../archive/001-ren-opening.txt); the `HUMAN` opening in Autonomous Infrastructure for a Free Future, 2024-11-03 (private source, kept locally, not in the shared repository); and Ren's `[2026-06-03T10:32]` prompt in [the speculative-future project export](../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md). These explicitly imagine freely associated communities building rockets and exploring the universe. Older assistant names, effortless transport, and established Mars settlements are not adopted here.
 
 **Map connections:** `W05`, `P02–P05`, `P07–P10`, `M01`, `M03`, `M06`, `M08–M10`, `T02–T04`, `T07–T08`.
 

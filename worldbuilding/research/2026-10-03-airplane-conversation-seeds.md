@@ -2,7 +2,7 @@
 
 Date: 2026-10-03 · Author: assistant · Status: unadopted seeds; none is project canon.
 
-Origin: [the airplane conversation of 2026-10-01](../../sources/18-friend-conversations/2026-10-01-airplane/README.md). Ren and a friend recorded about fifteen minutes of ideas on a flight, and Ren asked for the two ChatGPT-made texts to be added to his theories. Those texts do not separate the speakers, so nothing here is attributed to Ren. Timestamps are given as [file mm:ss] in the recovered transcript. The physical checks below are the assistant's general knowledge, with no new sources consulted. Treat them as orders of magnitude.
+Origin: the airplane conversation of 2026-10-01 (private source, kept locally, not in the shared repository). Ren and a friend recorded about fifteen minutes of ideas on a flight, and Ren asked for the two ChatGPT-made texts to be added to his theories. Those texts do not separate the speakers, so nothing here is attributed to Ren. Timestamps are given as [file mm:ss] in the recovered transcript. The physical checks below are the assistant's general knowledge, with no new sources consulted. Treat them as orders of magnitude.
 
 The theory side of the same conversation is in `theories/meta-attractor/README.md` (*Cosmic cancer as a film*) and `theories/drives-narrative-attractors-and-mind/README.md` (claims L, open question 15).
 

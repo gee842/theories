@@ -68,7 +68,7 @@ He followed it with:
 
 > 生生不息, this is the point
 
-[Ren, April 30, 2026](../../../sources/12-claude-ai-chats/2026-04-30_Generativity_as_environmental_stewardship_439667f8.md)
+Ren, April 30, 2026 (private source, kept locally, not in the shared repository)
 
 ## A city people can play together
 
@@ -80,7 +80,7 @@ They discuss what the game is teaching them. With local ecological advice, they 
 
 Recognition can take the form of friendship, a beautiful object, a remembered role in the story, a celebration, or the satisfaction of something living well. Competitive games can also award bounded prizes. Essential provision remains available to spectators, unsuccessful participants, and people who dislike games. A citywide invitation has quiet routes around it and ordinary ways to use the city.
 
-This develops Ren’s earlier argument that winning should not keep purchasing the power to decide how everyone else must play. The practical question is how a shared activity shapes desire: whether success makes people more able to help others begin, or gives an established group indefinite control of the next beginning. [Earlier game-design argument](../../../sources/12-claude-ai-chats/2024-07-29_Balancing_Ideological_Diversity_in_Society_1b72f4a8.md)
+This develops Ren’s earlier argument that winning should not keep purchasing the power to decide how everyone else must play. The practical question is how a shared activity shapes desire: whether success makes people more able to help others begin, or gives an established group indefinite control of the next beginning. Earlier game-design argument (private source, kept locally, not in the shared repository)
 
 ## 大同 as the character of daily relations
 
@@ -88,7 +88,7 @@ Here 大同 names a condition people are trying to sustain: no one is abandoned 
 
 The culture develops through repeated experience. A newcomer is helped and later knows how to welcome someone else. A repaired object returns to use. An association shares an invention, and another association improves it. A disagreement leads to a changed arrangement rather than expulsion from the means of life. Children grow up seeing that asking, contributing, resting, and reconsidering all have a place.
 
-Ren’s earlier 大同 conversation connects security with cooperative behavior while also emphasizing human drives and reinforcing feedback. That gives the city a cultural task alongside its infrastructure. The proposal expects material security and constructive experiences to make cooperation easier; it does not require that desire, pride, disagreement, or mistakes disappear. [Ren’s April 11 discussion](../../../sources/12-claude-ai-chats/2026-04-11_大同的技术可实现性_893f7a0e.md)
+Ren’s earlier 大同 conversation connects security with cooperative behavior while also emphasizing human drives and reinforcing feedback. That gives the city a cultural task alongside its infrastructure. The proposal expects material security and constructive experiences to make cooperation easier; it does not require that desire, pride, disagreement, or mistakes disappear. Ren’s April 11 discussion (private source, kept locally, not in the shared repository)
 
 A gardener may want a place to remain unchanged. A young association may want to build beside it. Their disagreement belongs in the city’s life. They can draw alternatives, try temporary arrangements, and decide that a particular construction should happen elsewhere. The ability to manufacture quickly makes such choices more practical. Affection and ecological time still give reasons to keep things.
 

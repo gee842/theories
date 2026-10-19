@@ -18,9 +18,9 @@
 
 ## 原始出处
 
-- [A] [10 月 2 日谈话自动转写](../../2026-10-02-friend-conversation/transcript.md#L23)，相应时间戳见正文；足够好基础设施见行 409，喜欢发展见行 441。
+- [A] 10 月 2 日谈话自动转写 (private source, kept locally, not in the shared repository)，相应时间戳见正文；足够好基础设施见行 409，喜欢发展见行 441。
 - [B] [Ren 的 6 月 4 日直接消息](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L234)，14:53 与 18:33 两段。嵌入的 agent 通知不作 Ren 原话。
-- [C] [Wamo 原始对话](../../../sources/12-claude-ai-chats/2024-06-11_Wamo_Community_Consensus_for_Chiang_Mai_2024_6be1114c.md#L8)，HUMAN 消息；附带宣传回顾的历史断言未作独立核实。
-- [D] [关系自我的原始消息](../../../sources/12-claude-ai-chats/2026-03-18_American_individualism_as_ideological_extremism_8cbca0df.md#L42)，HUMAN，13:23；14:22 同时批评把集体问题还原成个人转念。
+- [C] Wamo 原始对话 (private source, kept locally, not in the shared repository)，HUMAN 消息；附带宣传回顾的历史断言未作独立核实。
+- [D] 关系自我的原始消息 (private source, kept locally, not in the shared repository)，HUMAN，13:23；14:22 同时批评把集体问题还原成个人转念。
 - [E] [《方法博物馆：方向定稿》](../../../sources/11-human-solutions-museum/人类解决问题的方法博物馆-方向定稿.md#L1)，既有 AI 起草项目文本，非经验验证。
-- [F] [相互联系与合作的原始消息](../../../sources/12-claude-ai-chats/2026-04-19_仁义礼智信的本质与顺序_8cff1c7f.md#L486)，HUMAN，15:30。
+- [F] 相互联系与合作的原始消息 (private source, kept locally, not in the shared repository)，HUMAN，15:30。

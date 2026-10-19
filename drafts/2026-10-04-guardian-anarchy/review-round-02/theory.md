@@ -16,7 +16,7 @@
 
 可定位证据：
 
-- [10 月 2 日谈话:409](../../2026-10-02-friend-conversation/transcript.md#L409) 从 government、security、decent life 的基础自由，提出足够好、不必逐年变大的自主基础设施，随后才说树是 provider。原本就不只是生活服务的自动化。
+- 10 月 2 日谈话:409 (private source, kept locally, not in the shared repository) 从 government、security、decent life 的基础自由，提出足够好、不必逐年变大的自主基础设施，随后才说树是 provider。原本就不只是生活服务的自动化。
 - [6 月原始消息:236](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L236)讨论识别使系统失稳的行为模式、协调制止伤害、因应情境纠正，同时承认不能确保每个系统永远不失败。
 - [同一材料:248](../../../sources/14-claude-code-prompts/Users-ren-repos-speculative-future.md#L248)明确反对先验排除强 Guardian，认为集中、分散、强、弱是手段。
 - 主页面的全部“守护如何工作”情境见 [app.js:14](../../../experiments/guardian-anarchy/dist/app.js#L14)：平日、旱季、修复、新花园，全部是供水。页面对跨地方关系的具体解释也停在水与材料循环，见 [index.html:129](../../../experiments/guardian-anarchy/dist/index.html#L129)。

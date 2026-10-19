@@ -20,7 +20,7 @@ This continues the attribution discipline recorded in the [meta-level reading no
 
 ### 1. Freely associated lives were the purpose before the recursive-industry example
 
-[Autonomous Infrastructure for a Free Future](../../sources/12-claude-ai-chats/2024-11-03_Autonomous_Infrastructure_for_a_Free_Future_b0771353.md), HUMAN turns at **2024-11-03 07:35, 07:38, and 07:42**. These are successive versions of Ren’s own proposed 2045 setting, not assistant descriptions of him. The fullest is at 07:42, lines 174–180.
+Autonomous Infrastructure for a Free Future (private source, kept locally, not in the shared repository), HUMAN turns at **2024-11-03 07:35, 07:38, and 07:42**. These are successive versions of Ren’s own proposed 2045 setting, not assistant descriptions of him. The fullest is at 07:42, lines 174–180.
 
 Ren specifies an infrastructure platform providing necessities; UBI or universal basic services; free stores; and homes without rent. Association and culture are then open to choice. He includes the exact phrase:
 
@@ -34,7 +34,7 @@ The same turn includes spiritual communities, competitive societies, and collect
 
 ### 2. Automation, freedom from exploitation, and systems thinking form one argument
 
-[Human future in an AI-dominated world](../../sources/12-claude-ai-chats/2026-02-07_Human_future_in_an_AI-dominated_world_f4493370.md), HUMAN turns at **2026-02-07 19:28**, **2026-02-08 12:51**, and **2026-02-08 13:26**. The filename gives the conversation’s starting date, not the date of every message.
+Human future in an AI-dominated world (private source, kept locally, not in the shared repository), HUMAN turns at **2026-02-07 19:28**, **2026-02-08 12:51**, and **2026-02-08 13:26**. The filename gives the conversation’s starting date, not the date of every message.
 
 At 19:28 Ren connects people with a shared understanding to the ability to “automate everything production, have abundance for everyone.” At 12:51, lines 177–178:
 
@@ -48,7 +48,7 @@ The next sentence makes exit and freedom the outcome. The 13:26 turn explicitly 
 
 ### 3. The proposed automation covers the physical supply system
 
-[Fully automated production and its future implications](../../sources/12-claude-ai-chats/2026-02-09_Fully_automated_production_and_its_future_implications_38a64dc7.md), HUMAN turn at **2026-02-09 14:55**, lines 16–18:
+Fully automated production and its future implications (private source, kept locally, not in the shared repository), HUMAN turn at **2026-02-09 14:55**, lines 16–18:
 
 > If we can create a factory that produces robots that can build not only factories but other constructions, and automate logistics, agriculture, mining, what will the future be like?
 
@@ -66,7 +66,7 @@ At **15:31**, lines 274–275, he specifies enough necessities for everyone, hyg
 
 ### 4. Recursive industry is the mechanism, with resources explicitly named
 
-[机器人替代与资本主义循环的危机](../../sources/12-claude-ai-chats/2026-02-17_机器人替代与资本主义循环的危机_4c948b50.md), HUMAN turn at **2026-02-17 10:16**, lines 176–178. This complete turn explicitly criticizes an assistant draft for failing to explain automation’s potential. The central passage reads:
+机器人替代与资本主义循环的危机 (private source, kept locally, not in the shared repository), HUMAN turn at **2026-02-17 10:16**, lines 176–178. This complete turn explicitly criticizes an assistant draft for failing to explain automation’s potential. The central passage reads:
 
 > 如果一个ai工厂生产机器人，生产出的机器人还可以再盖一个工厂，并且可以去建设和维护其他的设施，自动化资源获取和配置，它就可以像一个生命体一样，自我繁殖，自我维持，就像一个生命体一样，在资源充分的情况下可以指数增长
 

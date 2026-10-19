@@ -8,7 +8,7 @@ The source lineage connects formation, knowing and further formation. The connec
 
 ### 2 May: interwoven formation, without a privileged substrate
 
-In the [original Chinese conversation](../../../../sources/12-claude-ai-chats/2026-05-02_生生不息的出处_1bd809e5.md), the **HUMAN** message at 20:26 says:
+In the original Chinese conversation (private source, kept locally, not in the shared repository), the **HUMAN** message at 20:26 says:
 
 > 没有其中一个是本体 - 并且这个递归，都是整体的一部分，互相交织的
 
