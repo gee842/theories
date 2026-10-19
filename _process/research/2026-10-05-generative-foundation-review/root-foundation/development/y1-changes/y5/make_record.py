@@ -37,7 +37,7 @@ core_id, section, decision = sys.argv[1], sys.argv[2], sys.argv[3]
 core_receipt = f'{PKG}/becoming-checks/{core_id}/verification.json'
 NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
 BOUND = ('HexagramSequences', 'HexagramSites', 'HexagramLaws', 'HexagramPlaces', 'Hexagrams', 'Commuting', 'Learning',
-         'Mechanism', 'Recurrence', 'Seeking', 'Frame', 'World', 'Labelled', 'Unfolding', 'Flow')
+         'Mechanism', 'Recurrence', 'Seeking', 'Frame', 'World', 'Generation', 'Labelled', 'Unfolding', 'Flow')
 
 
 def sha(path):
@@ -193,7 +193,8 @@ SPINE = {
     'Learning': ('Learning.Lumped', 'Learning.goAlike_iff_lumped'),
     'Mechanism': ('GoAlike',),
     'Frame': ('Run',),
-    'World': ('World', 'Exchange', 'Web.Rises'),
+    'World': ('World', 'Exchange'),
+    'Generation': ('Web.Rises',),
     'Labelled': ('exchange',),
     'Unfolding': ('World.balances_iff_exchange',),
     'Flow': ('Flow.Balances', 'Flow.Balances.rise_given', 'Flow.Balances.fall_taken'),
