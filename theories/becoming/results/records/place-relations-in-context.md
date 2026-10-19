@@ -102,6 +102,7 @@ Aliases: `the relations of the places`, `爻位之关系`, `應`, `应`, `比`, 
 
 - 19 October 2026: added (Y2), continuing Y1 on Ren's “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping”; study section 195, decision D50.
 - 19 October 2026, V2 (thresholds of waiting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: V2 added study section 194; THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 "Collective continuation" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.
+- 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.
 
 </details>
 

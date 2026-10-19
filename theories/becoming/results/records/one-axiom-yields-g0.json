@@ -552,7 +552,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "674d2e26dc8885ee19db6ee7585502b85465663a05c058c3121fde8deb3e969b",
+      "sha256": "738f90c9836ee4d42c0338c4b1cab6776e22b5a8f2c172f4f24ddc681855650b",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.bounded",
@@ -570,7 +570,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
+      "sha256": "74bb364a9301b95106d86c3e963426b4ebc0ece4c49290e4aabf718f162cfa98",
       "declarations": [
         "Becoming.Within",
         "Becoming.Neutral",
@@ -615,7 +615,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
       "role": "proof",
-      "sha256": "aae50d4e1220904e455a8f88f0b616d5ddd0b3c7f5a4b5a934d2db91ee4d022b",
+      "sha256": "4f164c02d96ceb1a6651332f5c20f69a6f92b1f6aeec288eae613347e3a33571",
       "declarations": [
         "Becoming.Frame.relevance",
         "Becoming.articulatesLiving",
@@ -763,7 +763,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
       "role": "proof",
-      "sha256": "4ff99039dd325dbb540298fba9b9b934fb87383e6dd00217243cf7b1454f698f",
+      "sha256": "dbc0511c40bcc1a043809a145d98a30e4d7882ffc684c5ee22d30158facab9a0",
       "declarations": [
         "Becoming.PositiveGround.contingent_generation_of_unrestricted",
         "Becoming.PositiveGround.every_situated_position_has_reason_of_unrestricted",
@@ -776,19 +776,25 @@
       "role": "receipt",
       "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -816,7 +822,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Relevance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -858,7 +864,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1197,6 +1203,10 @@
     {
       "en": "19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the record says that the consequences are instantiations of the condition's universal statement, and that counts of theorems taking it measure no further dependence. The claim is unchanged.",
       "zh": "2026年10月19日，R20(b)（理论章与 Lean 文字恰说 Lean 所表明的）：记录说明这些推论是条件之全称命题的实例化，以它为假设的定理之数不度量更多的依存。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean, PositiveGround.lean, Relevance.lean, Significance.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; PositiveGround.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; Relevance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; Significance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Metaethics.lean、PositiveGround.lean、Relevance.lean、Significance.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
     }
   ],
   "text_versions": [

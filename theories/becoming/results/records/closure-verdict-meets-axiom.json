@@ -346,7 +346,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "674d2e26dc8885ee19db6ee7585502b85465663a05c058c3121fde8deb3e969b",
+      "sha256": "738f90c9836ee4d42c0338c4b1cab6776e22b5a8f2c172f4f24ddc681855650b",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.bounded",
@@ -413,6 +413,12 @@
       "role": "receipt",
       "sha256": "79d2d4c12c9c90f46007b6186de47e17047575627cdea297b3f222f1244b076b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -425,7 +431,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -734,6 +740,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Significance.lean re-pointed after reading the change (Significance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Significance.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
     }
   ],
   "text_versions": [

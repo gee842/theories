@@ -163,7 +163,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
+      "sha256": "74bb364a9301b95106d86c3e963426b4ebc0ece4c49290e4aabf718f162cfa98",
       "declarations": [
         "Becoming.Comparison.climbs",
         "Becoming.Comparison.outgrows",
@@ -214,7 +214,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
       "role": "proof",
-      "sha256": "72efb3249ae577395515c3589cd7f01aa99f4f3f94d7d9251da0ebdb77d60365",
+      "sha256": "7ba12a8e4971cc22fb135908a5acc3a5425db6514db7b0a8ac574dafdb55de47",
       "declarations": [
         "Becoming.ScoreRepresentation.above_satisfies_comparison",
         "Becoming.ScoreRepresentation.never_outranked",
@@ -245,6 +245,12 @@
       "role": "receipt",
       "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -271,7 +277,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -285,7 +291,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ScoreRepresentation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -385,6 +391,10 @@
     {
       "en": "19 October 2026, R19 (the review of 19 October, fixed): G0-WARRANT.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.",
       "zh": "2026年10月19日，R19（10月19日审查的修正）：G0-WARRANT.md 读过改动后重新指向。R19 只改措辞：生命意义按 Lean 所证陈述（从每个立足点都有意义，不带正负；`living` 的读法不含继续生成）；以理由取代把 Ren 过去的话当作依据或地位之处；删去审查记账；一处链接随移入历史的章节更新。本记录所依的文字内容未变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean, ScoreRepresentation.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; ScoreRepresentation.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Metaethics.lean、ScoreRepresentation.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
     }
   ]
 }

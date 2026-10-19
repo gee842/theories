@@ -438,7 +438,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "aee571dd4962f75ceb0da70210056ac2a90f0ca3092509a883d7bca87a5d2a62"
+      "sha256": "144e6433e589331d42b23abde67583d116f831f6505f3236fdd9837340015c21"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -611,6 +611,10 @@
     {
       "en": "19 October 2026, V2 (thresholds of waiting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 \"Collective continuation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

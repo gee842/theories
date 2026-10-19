@@ -295,7 +295,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "674d2e26dc8885ee19db6ee7585502b85465663a05c058c3121fde8deb3e969b",
+      "sha256": "738f90c9836ee4d42c0338c4b1cab6776e22b5a8f2c172f4f24ddc681855650b",
       "declarations": [
         "Becoming.bounded",
         "Becoming.Web.Retains",
@@ -350,7 +350,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1a347dbc720d869e2d1c307c6f1adee2676209dde14f36cf6cc573684b108c32"
+      "sha256": "144e6433e589331d42b23abde67583d116f831f6505f3236fdd9837340015c21"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -385,12 +385,18 @@
       "role": "receipt",
       "sha256": "1182d296bfd637111591eb33277de93d008f28c1436b469969810422b5f7a991",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -731,6 +737,14 @@
     {
       "en": "19 October 2026, R20(b) (chapter and method say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change. R20(b) changed wording only: consequences of the continuation condition are stated as instantiations, witnesses for \"can\" claims are marked as witnesses, the rest laws' dependence on whole-unit amounts is named, definitional laws are said to be definitional, law_iff_em is a lemma, the pure core's axiom report is stated exactly, section 8.9 lists objections not yet answered, and \"generative\" no longer names any formation. No line this record relies on changed its content. The claim is unchanged.",
       "zh": "2026年10月19日，R20(b)（理论章与方法恰说 Lean 所表明的）：THE-THEORY-OF-BECOMING.md 读过改动后重新指向。R20(b) 只改措辞：延续条件的推论陈述为实例化，“可以”的见证标为见证，指明停息定律依赖整单位的量，定义性的规律说明是定义性的，law_iff_em 是引理，纯核心的公理报告确切陈述，第 8.9 节列出尚未回答的反对，“generative”不再指任何形成。本记录所依的文字内容未变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Significance.lean re-pointed after reading the change (Significance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Significance.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
+    },
+    {
+      "en": "19 October 2026, R20(b) landing: THE-THEORY-OF-BECOMING.md re-pointed after reading the change on main (Y2 and V2 paragraphs merged with R20(b)'s wording; premise card C now says that balance by reading leaves the rest idle, which under a law of what has stood is feasibility). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b) 落地：读过主线上的改动后，THE-THEORY-OF-BECOMING.md 重新指向（Y2、V2 的段落与 R20(b) 的措辞合并；前提卡 C 现说由读法成立的平衡留下其余不活跃，在已有之律下即可行性）。论断不变。"
     }
   ],
   "text_versions": [

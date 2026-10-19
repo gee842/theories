@@ -75,6 +75,7 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-17-registration-dualist-vocabulary.md](../../../../sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json) | — |
 
 Aliases: `gap for one's own act`, `自身动作的缺口`, `act unselected`, `动作不被选取`, `selection blind to the act`, `选择看不见动作`
 
@@ -109,6 +110,7 @@ Aliases: `gap for one's own act`, `自身动作的缺口`, `act unselected`, `�
 - 19 October 2026, V (what a collective's continuation needs): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): V added Widening to the "Selection, causes and experiment" row, a "Collective continuation" row and a rerun sentence in the integration row. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, Y2 (Becoming.HexagramPlaces): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y2 added the section 1 paragraph on the relations of the places with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.
 - 19 October 2026, V2 (thresholds of waiting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 "Collective continuation" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.
+- 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Selection.lean, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Selection.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.
 
 </details>
 

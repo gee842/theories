@@ -459,7 +459,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
+      "sha256": "74bb364a9301b95106d86c3e963426b4ebc0ece4c49290e4aabf718f162cfa98",
       "declarations": [
         "Becoming.Valuation",
         "Becoming.Valuation.significant_iff"
@@ -867,6 +867,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Re-pointed after reading the change (Correspondence.lean: the fold; Flow.lean: the fold; Metaethics.lean: the fold; Roles.lean: the fold). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Metaethics.lean 重新指向。论断不变。"
     }
   ],
   "text_versions": [

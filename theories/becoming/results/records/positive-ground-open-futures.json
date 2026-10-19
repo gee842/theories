@@ -235,7 +235,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "6a14b0709d01c9ec57dc14018c350d735ed9403e010954fed00ea37931582521",
+      "sha256": "74bb364a9301b95106d86c3e963426b4ebc0ece4c49290e4aabf718f162cfa98",
       "declarations": [
         "Becoming.G0"
       ]
@@ -276,7 +276,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
       "role": "proof",
-      "sha256": "4ff99039dd325dbb540298fba9b9b934fb87383e6dd00217243cf7b1454f698f",
+      "sha256": "dbc0511c40bcc1a043809a145d98a30e4d7882ffc684c5ee22d30158facab9a0",
       "declarations": [
         "Becoming.PositiveGround.positive_integral_has_positive_occurrence",
         "Becoming.PositiveGround.contingent_generation",
@@ -294,6 +294,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
       "role": "receipt",
       "sha256": "f1dbe8ef5d0cea652a1db7e6120da7bf931376f375f0167ba1ee2ee246b5f4d3",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
       "declarations": []
     }
   ],
@@ -356,7 +362,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -384,7 +390,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.PositiveGround",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -475,6 +481,10 @@
     {
       "en": "19 October 2026, wording (R19, living significance stated as the Lean shows): the overview's summary said living significance gives living and further generation within the whole basic positive normative significance. It now says what the Lean shows: every living claim has significance from every standpoint (Valuation.Significant), and on a frame realized living content falls under the relevance read from significance (Frame.relevance, relevance_least); this gives significance, not a positive valence, and the readings of living do not include further generation, the direction of 生生 being read separately (D1). The summary marks the \"positive\" of this result's positive ground as the parameter of G0. The related detail for one-axiom-yields-g0 names the continuation condition instead of \"the axiom\". The claim, proofs and evidence are unchanged.",
       "zh": "2026年10月19日，措辞（R19，按 Lean 所示陈述生生之意义）：概览摘要原说生生之意义给整体中的生及其继续生成以基本正面规范意义；现按 Lean 所示：每个生的主张从每个立场都有意义（Valuation.Significant），在一个框架上所实现的生的内容落在由意义读出的相关性之下（Frame.relevance、relevance_least）；它给出意义而非正面价值取向，living 的诸读法不包括继续生成，生生的方向另行读出（D1）。摘要标明本结果“正面根据”中的“正面”是 G0 的参数。one-axiom-yields-g0 的关联说明改称延续条件，不再称“公理”。论断、证明与证据不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean, PositiveGround.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; PositiveGround.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Metaethics.lean、PositiveGround.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
     }
   ],
   "overview": {

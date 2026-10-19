@@ -82,6 +82,7 @@ Aliases: `thresholds of waiting`, `等待的阈值`, `tolerance`, `Becoming.Tole
 ### History
 
 - 19 October 2026: added (V2), taking two items of the open remainder that V (study section 193) named in chapter section 8.2, "Collective continuation": thresholds of waiting with the laws that restore giving in a general family, and fault tolerance joined to Becoming.FaultEnvelopes; study section 194.
+- 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.
 
 </details>
 

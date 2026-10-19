@@ -93,6 +93,7 @@ Ren's proposal says “it can be anything that want's its continuation to have s
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T154159.148254Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json) | — |
 
 Aliases: `Becoming.Valuation.Held`, `Becoming.Valuation.Unheld`, `Becoming.Valuation.significant_iff_held`, `Becoming.Valuation.significant_iff_reached`, `Becoming.Valuation.own_transmission`, `Becoming.Valuation.significant_of_transmits`, `Becoming.Web.held_by_formations`, `Becoming.Web.significant_iff_self`, `Becoming.Apart.not_enough`, `Becoming.Unclaimed.held_is_needed`, `Becoming.Relayed.transmission_is_needed`
 
@@ -112,6 +113,7 @@ Aliases: `Becoming.Valuation.Held`, `Becoming.Valuation.Unheld`, `Becoming.Valua
 - 17 October 2026, U2 (unification follow-through; Ren: "let's fix all these"): Metaethics.lean, Standpoints.lean changed in comments only (retired labels replaced by the current terms); the integrator compared the code outside comments and found it unchanged. Every declaration this record names is still declared. Rebound to core receipt 20261017T113233.209872Z after reading the change; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Metaethics.lean). The claim is unchanged.
+- 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.
 - 52 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](held-lives-g0-is-centering.json).
 
 <a id="earlier-text--早期文本"></a>

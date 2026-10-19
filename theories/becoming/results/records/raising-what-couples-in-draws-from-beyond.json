@@ -205,7 +205,7 @@
         "Becoming.Diversion.diverting",
         "Becoming.Diversion.supplying"
       ],
-      "sha256": "6b82bfbdff6518183a8226f1e09e2ca3db6b5416de0f70844b19d627c8b2a9a9"
+      "sha256": "77521997d7740ae8f728eedab98fafbb5a0ff8cb81fc8ca5c6c7b1d0e031e8f8"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
@@ -229,7 +229,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "aee571dd4962f75ceb0da70210056ac2a90f0ca3092509a883d7bca87a5d2a62"
+      "sha256": "144e6433e589331d42b23abde67583d116f831f6505f3236fdd9837340015c21"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -240,6 +240,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
       "role": "receipt",
       "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
+      "role": "receipt",
+      "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
       "declarations": []
     }
   ],
@@ -253,7 +259,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -364,6 +370,10 @@
     {
       "en": "19 October 2026, V2 (thresholds of waiting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: V2 added the section 4 paragraph on thresholds of waiting and the laws that restore giving, revised the section 4 table row and reading on cooperation among strangers and the section 8.2 \"Collective continuation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，V2（等待的阈值）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Selection.lean, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Selection.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
+      "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Selection.lean、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
     }
   ]
 }
