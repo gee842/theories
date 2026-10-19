@@ -173,6 +173,7 @@ import Becoming.Grains
 import Becoming.Postponement
 import Becoming.Novelty
 import Becoming.Reading
+import Becoming.PlaceTransitionNets
 import Becoming.ExchangePremises
 import Becoming.Readings
 import Becoming.Coupling
@@ -1805,6 +1806,18 @@ readings of the unfolding (`Becoming.Labelled`).
   failed by another; with the rest counted, embodiment is closure and no dormancy. Requirement read
   as necessary response over a relation leaving several exchanges open gives activity needing
   support on every run; read as possible response it does not.
+* `Becoming.PlaceTransitionNets` (L4): place/transition nets (Petri nets; reaction networks with
+  whole-number counts), a formalism defined outside the theory by its own rules, read on the
+  spine. The net is a law of exchange reading nothing, its course along a schedule is its flow,
+  and along a firing sequence the levels the law generates are its markings. The flow balances
+  the markings exactly where the schedule is a firing sequence; enabling gives feasibility, which
+  is enabling exactly for pure nets fired one transition at a time (a catalyst and a concurrent
+  step are feasible and do not fire). For finitely many places the flow is dissipative exactly
+  where every fired transition loses weighted tokens (a strict P-subinvariant), and every step
+  is enclosed. So rising with falling, the bound of the consuming firings by the initial
+  weighted tokens, rest unrefuted (flow and world forms) and, for a place every producer of
+  which consumes it, the joint-excess law as the siphon law hold of every such net; the
+  conservative cycle and the fed place keep each premise needed.
 * `Becoming.Readings` (L4): one unfolding, read in context, with no premise. The readings in context
   of a run are always one world of indexed claims, with no gluing; a description free of context is a
   gluing; balance is the gluing of the standing's and the exchange's readings of change, and with the
