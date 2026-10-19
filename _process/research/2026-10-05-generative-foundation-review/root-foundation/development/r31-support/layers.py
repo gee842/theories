@@ -73,7 +73,7 @@ def order(core, mods, layer, prior):
     return out
 
 
-ROW = re.compile(r"^\| (base|L\d) \| \[`(Becoming\.[\w]+)`\]\(Becoming/[\w]+\.lean\) \| (.*) \|$")
+ROW = re.compile(r"^\| (base|基底|L\d) \| \[`(Becoming\.[\w]+)`\]\(Becoming/[\w]+\.lean\) \| (.*) \|$")
 
 
 def table(path, core, mods, layer, lang):
