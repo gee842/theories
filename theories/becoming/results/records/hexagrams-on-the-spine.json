@@ -40,8 +40,8 @@
       ]
     },
     {
-      "en": "Each pair of the received order is the first hexagram turned over or, where turning over gives the same hexagram, the first changed in every line.",
-      "zh": "所传卦序的每一对，后一卦是前一卦倒转；倒转不变者，则是前一卦六爻皆变。",
+      "en": "Each pair of the received order is the first hexagram turned over or, where turning over gives the same hexagram, the first changed in every line, which is six steps along the law of waxing and waning.",
+      "zh": "所传卦序的每一对，后一卦是前一卦倒转；倒转不变者，则是前一卦六爻皆变；六爻皆变即消息之律走六步。",
       "declarations": [
         "Becoming.Hexagram.complement",
         "Becoming.Hexagram.reverse",
@@ -53,7 +53,8 @@
         "Becoming.Hexagram.paired_of_pairedb",
         "Becoming.Hexagram.allPaired",
         "Becoming.Hexagram.paired_of_allPaired",
-        "Becoming.Hexagram.order_paired"
+        "Becoming.Hexagram.order_paired",
+        "Becoming.Hexagram.order_paired_by_law"
       ]
     },
     {
@@ -193,8 +194,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T060745.666273Z): the 97 declarations of Becoming.Hexagrams, 71 of them theorems, have empty axiom reports; the checker verifies core purity. The passage map (44 passages) is checked by verify_mapping.py against the preserved Wikisource revisions and the receipt's declaration list. Author self-review in study section 192; not independently reviewed.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T060745.666273Z）：Becoming.Hexagrams 的 97 项声明（71 项定理）公理报告为空；检查器并核对核心纯净。逐句对应（44 段）由 verify_mapping.py 对照保存的维基文库版本与回执的声明清单检查。作者自审见研究第 192 节；未经独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T092027.048735Z): the 98 declarations of Becoming.Hexagrams, 72 of them theorems, have empty axiom reports; the checker verifies core purity. The passage map (44 passages) is checked by verify_mapping.py against the preserved Wikisource revisions and the receipt's declaration list. Author self-review in study section 192; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T092027.048735Z）：Becoming.Hexagrams 的 98 项声明（72 项定理）公理报告为空；检查器并核对核心纯净。逐句对应（44 段）由 verify_mapping.py 对照保存的维基文库版本与回执的声明清单检查。作者自审见研究第 192 节；未经独立审查。"
   },
   "next_delta": {
     "en": "The order's own reasons; comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.",
@@ -220,7 +221,8 @@
     "Becoming.Hexagram.waxWane_returns",
     "Becoming.Hexagram.every_returns_iff",
     "Becoming.Hexagram.order_paired",
-    "Becoming.Hexagram.pairs_goAlike"
+    "Becoming.Hexagram.pairs_goAlike",
+    "Becoming.Hexagram.order_paired_by_law"
   ],
   "dependencies": [
     {
@@ -415,6 +417,7 @@
         "Becoming.Hexagram.order",
         "Becoming.Hexagram.order_length",
         "Becoming.Hexagram.order_paired",
+        "Becoming.Hexagram.order_paired_by_law",
         "Becoming.Hexagram.pairOf",
         "Becoming.Hexagram.pairOf_cases",
         "Becoming.Hexagram.pairOf_complement",
@@ -465,7 +468,7 @@
         "Becoming.Hexagram.yang_not_goAlike",
         "Becoming.Hexagram.yang_not_lumped"
       ],
-      "sha256": "4ec6567031da17ae079ebae3b54ea09eef7168cbdee9485452d407fb559a0995"
+      "sha256": "8765e7c838064d509c8ab07a8b09aec9483a06e728fb864913a697df8b72789a"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T060745.666273Z/verification.json",
@@ -552,13 +555,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "cf299b825f6404cc7821102725967e9d250d6baa505b7a93035f91f823556a79"
+      "sha256": "1503ac32f92a85d04497acfc77dd7e3cb2b1fd306be75d100ccca14a42655f7d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "144e6433e589331d42b23abde67583d116f831f6505f3236fdd9837340015c21"
+      "sha256": "44d452a1ad43e71f5169a32260237fbfc445dd6dea45067f548ee3b64559e8c4"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -571,12 +574,18 @@
       "role": "provenance",
       "declarations": [],
       "sha256": "e95b0cb2bd717b74a8025fbfccee17ba0cbfdce2d93c5360b3ff846ea1815b23"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "role": "receipt",
+      "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T060745.666273Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Hexagrams",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -637,6 +646,14 @@
     {
       "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
       "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (study section 196): law 2 gains order_paired_by_law, the received pairing read through the law (changing every line is six steps of waxing and waning, 非覆即變 with 變 as six steps of 消息); revisits_within_order now goes through order_length, its statement unchanged. The other laws are unchanged.",
+      "zh": "2026年10月19日，U3（研究第 196 节）：规律 2 新增 order_paired_by_law，所传之对经律读出（六爻皆变即消息六步，非覆即變之變读作消息六步）；revisits_within_order 改经 order_length 证明，陈述不变。其他规律不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U3 added study section 196; THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

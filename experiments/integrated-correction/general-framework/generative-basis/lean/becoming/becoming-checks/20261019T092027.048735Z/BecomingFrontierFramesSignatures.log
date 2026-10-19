@@ -1,0 +1,164 @@
+@Becoming.FrontierFrames.Priority.above : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop},
+  Becoming.FrontierFrames.Priority F basic living (Becoming.Lexical.Frame.Above F basic living)
+@Becoming.FrontierFrames.Priority.iff : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better →
+    ∀ (s t : S), better s t ↔ Becoming.Lexical.Frame.Above F basic living s t
+@Becoming.FrontierFrames.Priority.irrefl : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop}, Becoming.FrontierFrames.Priority F basic living better → ∀ (s : S), ¬better s s
+@Becoming.FrontierFrames.Priority.trans : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better → ∀ {s t u : S}, better s t → better t u → better s u
+@Becoming.FrontierFrames.Priority.anchor : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better →
+    ∀ {s t : S},
+      (∀ (c : C), basic c → F.realized t c → F.realized s c) →
+        ∀ (c : C), basic c → F.realized s c → ¬F.realized t c → better s t
+@Becoming.FrontierFrames.Priority.no_trade : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better →
+    ∀ {s t : S} (c : C), basic c → F.realized t c → ¬F.realized s c → ¬better s t
+@Becoming.FrontierFrames.Priority.not_not_of_extension : ∀ {S A C : Type} {F : Becoming.Frame S A C}
+  {basic living : C → Prop} {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better → ∀ {s t : S}, Becoming.Extension F living s t → ¬¬better t s
+@Becoming.FrontierFrames.Priority.comparison : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better →
+    (∀ (s t : S),
+        Becoming.Decided
+          (Becoming.Lexical.Included (fun c => basic c ∧ F.realized t c) fun c => basic c ∧ F.realized s c)) →
+      Becoming.Comparison F living fun s t => better t s
+@Becoming.FrontierFrames.basicPriority_iff_priority : ∀ {H C' G : Type} {basic : H → C' → Prop} {gain : H → G → Prop}
+  {better : H → H → Prop},
+  Becoming.Lexical.BasicPriority basic gain better ↔
+    Becoming.FrontierFrames.Priority (Becoming.Lexical.tierFrame basic gain) Becoming.Lexical.basicSide
+      Becoming.Lexical.gainSide better
+@Becoming.FrontierFrames.excluded : ∀ {S A C : Type} {F : Becoming.Frame S A C} {better : S → S → Prop} {s t u : S},
+  Becoming.FrontierFrames.Options F s u →
+    better u t → ¬Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better t
+@Becoming.FrontierFrames.Priority.choice_exists : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better →
+    ∀ {s : S} (x : S) (rest : List S),
+      (∀ (t : S), Becoming.FrontierFrames.Options F s t ↔ t ∈ x :: rest) →
+        (∀ (t u : S),
+            Becoming.FrontierFrames.Options F s t →
+              Becoming.FrontierFrames.Options F s u → Becoming.WeaklyDecided (better t u)) →
+          ∃ t, Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better t
+Becoming.FrontierFrames.choice_exists_iff_weakly : (∀ (S A C : Type) (F : Becoming.Frame S A C) (better : S → S → Prop)
+    (s x : S) (rest : List S),
+    (∀ (t : S), Becoming.FrontierFrames.Options F s t ↔ t ∈ x :: rest) →
+      (∀ (t : S), Becoming.FrontierFrames.Options F s t → ¬better t t) →
+        (∀ (t u v : S),
+            Becoming.FrontierFrames.Options F s t →
+              Becoming.FrontierFrames.Options F s u →
+                Becoming.FrontierFrames.Options F s v → better t u → better u v → better t v) →
+          ∃ t, Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better t) ↔
+  ∀ (p : Prop), Becoming.WeaklyDecided p
+@Becoming.FrontierFrames.performed : ∀ {S A C : Type} {F : Becoming.Frame S A C} {better : S → S → Prop} {s t : S}
+  {task : S → Prop},
+  Becoming.Requirement.Required (Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better) task →
+    Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better t → task t
+@Becoming.FrontierFrames.means : ∀ {S A C : Type} {F : Becoming.Frame S A C} {better : S → S → Prop} {s : S}
+  {task means : S → Prop},
+  Becoming.Requirement.Required (Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better) task →
+    (∀ (t : S), Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better t → task t → means t) →
+      Becoming.Requirement.Required (Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better) means
+@Becoming.FrontierFrames.nothing_required : ∀ {S A C : Type} {F : Becoming.Frame S A C} {better : S → S → Prop} {s : S}
+  {task : S → Prop},
+  (∀ (a : A) (t : S), ¬F.P.step s a t) →
+    ¬Becoming.Requirement.Required (Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better) task
+@Becoming.FrontierFrames.Priority.kept_unrefuted : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better →
+    ∀ {s u t : S},
+      Becoming.FrontierFrames.Options F s u →
+        (∀ (t : S) (c : C), Becoming.FrontierFrames.Options F s t → basic c → F.realized t c → F.realized u c) →
+          ∀ {c : C},
+            basic c →
+              F.realized u c →
+                Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better t → ¬¬F.realized t c
+@Becoming.FrontierFrames.Priority.kept_required : ∀ {S A C : Type} {F : Becoming.Frame S A C} {basic living : C → Prop}
+  {better : S → S → Prop},
+  Becoming.FrontierFrames.Priority F basic living better →
+    ∀ {s u : S} (x : S) (rest : List S),
+      (∀ (t : S), Becoming.FrontierFrames.Options F s t ↔ t ∈ x :: rest) →
+        (∀ (t t' : S),
+            Becoming.FrontierFrames.Options F s t →
+              Becoming.FrontierFrames.Options F s t' → Becoming.WeaklyDecided (better t t')) →
+          Becoming.FrontierFrames.Options F s u →
+            (∀ (t : S) (c : C), Becoming.FrontierFrames.Options F s t → basic c → F.realized t c → F.realized u c) →
+              ∀ {c : C},
+                basic c →
+                  F.realized u c →
+                    (∀ (t : S), Becoming.FrontierFrames.Options F s t → Becoming.Decided (F.realized t c)) →
+                      Becoming.Requirement.Required
+                        (Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s) better) fun t =>
+                        F.realized t c
+@Becoming.FrontierFrames.classifiedOn_none_iff : ∀ {S A I J : Type} {F : Becoming.Frame S A (I ⊕ J)}
+  {basic living : I → Prop} {a b : S},
+  Becoming.FrontierFrames.classifiedOn F basic living (fun x => False) a b ↔
+    Becoming.Lexical.Above (fun s i => basic i ∧ Becoming.Lexical.Frame.old F s i)
+      (Becoming.Lexical.adjoin (fun s i => living i ∧ Becoming.Lexical.Frame.old F s i)
+        (Becoming.Lexical.Frame.fresh F))
+      a b
+@Becoming.FrontierFrames.classifiedOn_robust_iff_of_decided : ∀ {S A I J : Type} {F : Becoming.Frame S A (I ⊕ J)}
+  {basic living : I → Prop} {a b : S},
+  (∀ (j : J), Becoming.Decided (Becoming.Lexical.Frame.fresh F b j)) →
+    (∀ (q : J → Prop),
+        Becoming.Decided (∀ (j : J), Becoming.Lexical.Frame.fresh F a j → q j → Becoming.Lexical.Frame.fresh F b j)) →
+      ((∀ (q : J → Prop), Becoming.FrontierFrames.classifiedOn F basic living q a b) ↔
+        Becoming.Lexical.Included (Becoming.Lexical.Frame.fresh F b) (Becoming.Lexical.Frame.fresh F a) ∧
+          Becoming.Lexical.Above (fun s i => basic i ∧ Becoming.Lexical.Frame.old F s i)
+            (Becoming.Lexical.adjoin (fun s i => living i ∧ Becoming.Lexical.Frame.old F s i)
+              (Becoming.Lexical.Frame.fresh F))
+            a b)
+@Becoming.FrontierFrames.classifiedOn_robust_iff_of_em : ∀ {S A I J : Type} {F : Becoming.Frame S A (I ⊕ J)}
+  {basic living : I → Prop} {a b : S},
+  (∀ (r : Prop), Becoming.Decided r) →
+    ((∀ (q : J → Prop), Becoming.FrontierFrames.classifiedOn F basic living q a b) ↔
+      Becoming.Lexical.Included (Becoming.Lexical.Frame.fresh F b) (Becoming.Lexical.Frame.fresh F a) ∧
+        Becoming.Lexical.Above (fun s i => basic i ∧ Becoming.Lexical.Frame.old F s i)
+          (Becoming.Lexical.adjoin (fun s i => living i ∧ Becoming.Lexical.Frame.old F s i)
+            (Becoming.Lexical.Frame.fresh F))
+          a b)
+@Becoming.FrontierFrames.classifiedOn_extremes_iff_of_decided : ∀ {S A I J : Type} {F : Becoming.Frame S A (I ⊕ J)}
+  {basic living : I → Prop} {a b : S},
+  (∀ (j : J), Becoming.Decided (Becoming.Lexical.Frame.fresh F b j)) →
+    (∀ (q : J → Prop),
+        Becoming.Decided (∀ (j : J), Becoming.Lexical.Frame.fresh F a j → q j → Becoming.Lexical.Frame.fresh F b j)) →
+      ((∀ (q : J → Prop), Becoming.FrontierFrames.classifiedOn F basic living q a b) ↔
+        Becoming.FrontierFrames.classifiedOn F basic living (fun x => False) a b ∧
+          Becoming.FrontierFrames.classifiedOn F basic living (fun x => True) a b)
+@Becoming.FrontierFrames.classifiedOn_required : ∀ {S A I J : Type} {F : Becoming.Frame S A (I ⊕ J)}
+  {basic living : I → Prop} {s : S} {formed : S → Prop} (x : S) (rest : List S),
+  (∀ (t : S), Becoming.FrontierFrames.Options F s t ↔ t ∈ x :: rest) →
+    (∀ (q : J → Prop) (t u : S),
+        Becoming.FrontierFrames.Options F s t →
+          Becoming.FrontierFrames.Options F s u →
+            Becoming.WeaklyDecided (Becoming.FrontierFrames.classifiedOn F basic living q t u)) →
+      (∀ (t : S), Becoming.FrontierFrames.Options F s t → Becoming.Decided (formed t)) →
+        (∀ (t : S) (j : J),
+            Becoming.FrontierFrames.Options F s t → Becoming.Decided (Becoming.Lexical.Frame.fresh F t j)) →
+          (∀ (q : J → Prop) (t u : S),
+              Becoming.FrontierFrames.Options F s t →
+                Becoming.FrontierFrames.Options F s u →
+                  Becoming.Decided
+                    (∀ (j : J), Becoming.Lexical.Frame.fresh F t j → q j → Becoming.Lexical.Frame.fresh F u j)) →
+            (∀ (t : S),
+                Becoming.FrontierFrames.Options F s t →
+                  ¬formed t →
+                    ∃ u,
+                      Becoming.FrontierFrames.Options F s u ∧
+                        Becoming.Lexical.Included (Becoming.Lexical.Frame.fresh F t)
+                            (Becoming.Lexical.Frame.fresh F u) ∧
+                          Becoming.Lexical.Above (fun s i => basic i ∧ Becoming.Lexical.Frame.old F s i)
+                            (Becoming.Lexical.adjoin (fun s i => living i ∧ Becoming.Lexical.Frame.old F s i)
+                              (Becoming.Lexical.Frame.fresh F))
+                            u t) →
+              ∀ (q : J → Prop),
+                Becoming.Requirement.Required
+                  (Becoming.Requirement.Frontier (Becoming.FrontierFrames.Options F s)
+                    (Becoming.FrontierFrames.classifiedOn F basic living q))
+                  formed

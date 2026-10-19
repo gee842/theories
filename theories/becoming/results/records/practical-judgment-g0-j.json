@@ -8,7 +8,7 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T23:15:00+00:00",
+  "reviewed_at_utc": "2026-10-19T09:27:15+00:00",
   "statement": {
     "zh": "生生之意义加公开的实践承诺与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。",
     "en": "Living significance with the explicit practical commitments and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility."
@@ -32,7 +32,12 @@
     "Practical judgment G0/J1–J4",
     "Becoming.Judgment.better_iff_betterAt",
     "Becoming.Judgment.frontier_exists",
-    "Becoming.exists_undominated"
+    "Becoming.exists_undominated",
+    "J1–J4 in the core",
+    "实践承诺在核心中",
+    "Becoming.FrontierFrames.Priority",
+    "Becoming.FrontierFrames.choice_exists_iff_weakly",
+    "Becoming.FrontierFrames.Priority.kept_required"
   ],
   "dependencies": [
     {
@@ -144,11 +149,16 @@
       "zh": "及时接续：回程等级、替代与实际交接给出按需要的支承、替代覆盖与有范围的比较理由；有利理由与基本保护优先分开。",
       "en": "Timely continuation: return grades, substitution and actual handoff give need-relative support, replacement coverage and scoped comparison reasons; a favorable reason is kept distinct from the priority of basic conditions.",
       "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md#timely-continuation-and-support"
+    },
+    {
+      "en": "J1–J4 in the pure core: Becoming.Lexical states J1/J2 as the condition BasicPriority and Becoming.Frontier states J3/J4, every PracticalJudgment declaration with a core counterpart and an empty axiom report; FrontierFrames reads them on a frame, the options of a configuration being what one move reaches, and FrontierWorlds reads service across a handover in a world. The one classical step of PracticalJudgment (finite_frontier) is weak excluded middle, now a hypothesis calibrated on frames (choice_exists_iff_weakly).",
+      "zh": "J1–J4 在纯核心中：Becoming.Lexical 把 J1/J2 陈述为条件 BasicPriority，Becoming.Frontier 陈述 J3/J4，PracticalJudgment 的每项声明在核心中都有对应，公理报告为空；FrontierFrames 在框架上读它们（一个构形的选项是一步移动所达），FrontierWorlds 在世界中读跨交接的服务。PracticalJudgment 唯一的经典步骤（finite_frontier）是弱排中律，现为假设，并在框架上校准（choice_exists_iff_weakly）。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#196-theorems-apart-from-the-base-largest-groups-first-the-practical-commitments-in-the-core-u3-u4"
     }
   ],
   "validation_scope": {
-    "zh": "既有独立完成审查接受明确公理的一般原则范围；30项定理／46项审计属于形式包，不是30个规范根据证明。及时接续部分是对既有已检查回程、替代与交接结果的解释性应用及作者反审；无新数学、编译、跨模块形式适配或新增独立验收。",
-    "en": "Existing independent completion review accepts the explicit-commitment general-principles scope. The 30 theorems/46 audits concern the formal package, not 30 proofs of normative warrant. The timely-continuation part is interpretive application and author counterreview of checked return, substitution and handoff results; no new mathematics, compilation, formal adapter or independent acceptance."
+    "en": "Independent completion review accepted the explicit-commitment scope; the 30 theorems of the original package concern its form, not normative warrant. Since 19 October 2026 (receipt 20261019T092027.048735Z) J1–J4 are stated in the pure core (Lexical, Frontier) and read on frames and worlds (FrontierFrames, 22 theorems; FrontierWorlds, 3), all with empty axiom reports; choice_exists_iff_weakly calibrates the choice at every step as weak excluded middle. Timely continuation is interpretive application. The commitments stay argued, not proved.",
+    "zh": "既有独立完成审查接受明确承诺的一般原则范围；原形式包的 30 项定理关乎形式，不是规范根据。2026年10月19日起（回执 20261019T092027.048735Z），J1–J4 在纯核心中陈述（Lexical、Frontier），并在框架与世界上读出（FrontierFrames 22 项定理，FrontierWorlds 3 项），公理报告皆空；choice_exists_iff_weakly 把每一步有被选者校准为弱排中律。及时接续部分是解释性应用。承诺仍是论证的，不是证明的。"
   },
   "references": [
     {
@@ -310,6 +320,50 @@
       "role": "receipt",
       "sha256": "3c40ea48ba97e221d435520ce8abbb1577b04d871cb49bfe7a7e9efd78fe9665",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
+      "role": "proof",
+      "sha256": "d86d6a921cb05ae244cc600903ae1100b8f1791d0eba7d350be615d7b6dbb550",
+      "declarations": [
+        "Becoming.FrontierFrames.Priority",
+        "Becoming.FrontierFrames.Options",
+        "Becoming.FrontierFrames.basicPriority_iff_priority",
+        "Becoming.FrontierFrames.Priority.anchor",
+        "Becoming.FrontierFrames.Priority.no_trade",
+        "Becoming.FrontierFrames.Priority.comparison",
+        "Becoming.FrontierFrames.excluded",
+        "Becoming.FrontierFrames.Priority.choice_exists",
+        "Becoming.FrontierFrames.choice_exists_iff_weakly",
+        "Becoming.FrontierFrames.performed",
+        "Becoming.FrontierFrames.means",
+        "Becoming.FrontierFrames.nothing_required",
+        "Becoming.FrontierFrames.Priority.kept_unrefuted",
+        "Becoming.FrontierFrames.Priority.kept_required"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "role": "receipt",
+      "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean",
+      "role": "proof",
+      "sha256": "b551db86b1ae56da175fb0a3c852a94fb4dd915594daf5b8cd71d2a6b3815e2b",
+      "declarations": [
+        "Becoming.FrontierWorlds.Served",
+        "Becoming.FrontierWorlds.Served.successor",
+        "Becoming.FrontierWorlds.served_of_handover",
+        "Becoming.FrontierWorlds.Served.not_of_gap"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "1503ac32f92a85d04497acfc77dd7e3cb2b1fd306be75d100ccca14a42655f7d",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -359,6 +413,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Inquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FrontierFrames",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FrontierWorlds",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -458,6 +526,10 @@
     {
       "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U4 (study section 196): J1–J4 recorded as stated in the pure core (Lexical, Frontier, since F3J) and read on frames and worlds (FrontierFrames, FrontierWorlds); the choice at a step calibrated as weak excluded middle; the validation scope restated to say so. The statement and the warrant of the commitments are unchanged.",
+      "zh": "2026年10月19日，U4（研究第 196 节）：记明 J1–J4 已在纯核心中陈述（Lexical、Frontier，自 F3J 起），并在框架与世界上读出（FrontierFrames、FrontierWorlds）；一步中的选择校准为弱排中律；验证范围据此重述。陈述与承诺的根据不变。"
     }
   ],
   "text_versions": [

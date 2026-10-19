@@ -38,11 +38,12 @@ Living significance with the explicit practical commitments supports preservatio
 
 1. Bridges closed: first mixed comparison, finite sacrifice limit, the four responses, responsibility, joint obligations, actual succession, conflict under imperfect evidence and faithful revision each receive principles with qualifications. [study](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md#2-what-closes-the-previously-named-gaps)
 2. Timely continuation: return grades, substitution and actual handoff give need-relative support, replacement coverage and scoped comparison reasons; a favorable reason is kept distinct from the priority of basic conditions. [study](../../chapters/PRACTICAL-JUDGMENT.md#timely-continuation-and-support)
+3. J1–J4 in the pure core: Becoming.Lexical states J1/J2 as the condition BasicPriority and Becoming.Frontier states J3/J4, every PracticalJudgment declaration with a core counterpart and an empty axiom report; FrontierFrames reads them on a frame, the options of a configuration being what one move reaches, and FrontierWorlds reads service across a handover in a world. The one classical step of PracticalJudgment (finite_frontier) is weak excluded middle, now a hypothesis calibrated on frames (choice_exists_iff_weakly). [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#196-theorems-apart-from-the-base-largest-groups-first-the-practical-commitments-in-the-core-u3-u4)
 
 <a id="evidence--证据"></a>
 ## Evidence
 
-Existing independent completion review accepts the explicit-commitment general-principles scope. The 30 theorems/46 audits concern the formal package, not 30 proofs of normative warrant. The timely-continuation part is interpretive application and author counterreview of checked return, substitution and handoff results; no new mathematics, compilation, formal adapter or independent acceptance.
+Independent completion review accepted the explicit-commitment scope; the 30 theorems of the original package concern its form, not normative warrant. Since 19 October 2026 (receipt 20261019T092027.048735Z) J1–J4 are stated in the pure core (Lexical, Frontier) and read on frames and worlds (FrontierFrames, 22 theorems; FrontierWorlds, 3), all with empty axiom reports; choice_exists_iff_weakly calibrates the choice at every step as weak excluded middle. Timely continuation is interpretive application. The commitments stay argued, not proved.
 
 Canonical source: [PRACTICAL-JUDGMENT.md](../../chapters/PRACTICAL-JUDGMENT.md)
 
@@ -101,8 +102,12 @@ Roles arise through shared living and formed dependence; causation, benefit and 
 | proof | [Frontier.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean) | `Becoming.Requirement.Served.successor`, `Becoming.Lexical.BasicPriority.frontier_iff`, `Becoming.Requirement.frontier_iff_undominated`, `Becoming.Requirement.frontier_exists` |
 | proof | [Inquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean) | `Becoming.commonResponse_judge_iff` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json) | — |
+| proof | [FrontierFrames.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean) | `Becoming.FrontierFrames.Priority`, `Becoming.FrontierFrames.Options`, `Becoming.FrontierFrames.basicPriority_iff_priority`, `Becoming.FrontierFrames.Priority.anchor`, `Becoming.FrontierFrames.Priority.no_trade`, `Becoming.FrontierFrames.Priority.comparison`, `Becoming.FrontierFrames.excluded`, `Becoming.FrontierFrames.Priority.choice_exists`, `Becoming.FrontierFrames.choice_exists_iff_weakly`, `Becoming.FrontierFrames.performed`, `Becoming.FrontierFrames.means`, `Becoming.FrontierFrames.nothing_required`, `Becoming.FrontierFrames.Priority.kept_unrefuted`, `Becoming.FrontierFrames.Priority.kept_required` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json) | — |
+| proof | [FrontierWorlds.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean) | `Becoming.FrontierWorlds.Served`, `Becoming.FrontierWorlds.Served.successor`, `Becoming.FrontierWorlds.served_of_handover`, `Becoming.FrontierWorlds.Served.not_of_gap` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 
-Aliases: `Practical judgment G0/J1–J4`, `Becoming.Judgment.better_iff_betterAt`, `Becoming.Judgment.frontier_exists`, `Becoming.exists_undominated`
+Aliases: `Practical judgment G0/J1–J4`, `Becoming.Judgment.better_iff_betterAt`, `Becoming.Judgment.frontier_exists`, `Becoming.exists_undominated`, `J1–J4 in the core`, `实践承诺在核心中`, `Becoming.FrontierFrames.Priority`, `Becoming.FrontierFrames.choice_exists_iff_weakly`, `Becoming.FrontierFrames.Priority.kept_required`
 
 <a id="history--沿革"></a>
 ### History
@@ -122,6 +127,7 @@ Aliases: `Practical judgment G0/J1–J4`, `Becoming.Judgment.better_iff_betterAt
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Re-pointed after reading the change (Return.lean: the fold). The claim is unchanged.
 - 18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core counterparts of the cited periphery and bridge declarations are cited (4 in Becoming.Frontier; 1 in Becoming.Inquiry; 8 in Becoming.Lexical), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.
 - 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.
+- 19 October 2026, U4 (study section 196): J1–J4 recorded as stated in the pure core (Lexical, Frontier, since F3J) and read on frames and worlds (FrontierFrames, FrontierWorlds); the choice at a step calibrated as weak excluded middle; the validation scope restated to say so. The statement and the warrant of the commitments are unchanged.
 - 9 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](practical-judgment-g0-j.json).
 
 <a id="earlier-text--早期文本"></a>
@@ -131,4 +137,4 @@ Aliases: `Practical judgment G0/J1–J4`, `Becoming.Judgment.better_iff_betterAt
 
 </details>
 
-Documentary review UTC: `2026-10-13T23:15:00+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-19T09:27:15+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

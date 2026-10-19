@@ -585,7 +585,7 @@
         "Becoming.Hexagram.reverse_wax",
         "Becoming.Hexagram.run_six_steps"
       ],
-      "sha256": "4ec6567031da17ae079ebae3b54ea09eef7168cbdee9485452d407fb559a0995"
+      "sha256": "8765e7c838064d509c8ab07a8b09aec9483a06e728fb864913a697df8b72789a"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
@@ -659,13 +659,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "cf299b825f6404cc7821102725967e9d250d6baa505b7a93035f91f823556a79"
+      "sha256": "1503ac32f92a85d04497acfc77dd7e3cb2b1fd306be75d100ccca14a42655f7d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "144e6433e589331d42b23abde67583d116f831f6505f3236fdd9837340015c21"
+      "sha256": "44d452a1ad43e71f5169a32260237fbfc445dd6dea45067f548ee3b64559e8c4"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -678,6 +678,12 @@
       "role": "provenance",
       "declarations": [],
       "sha256": "e95b0cb2bd717b74a8025fbfccee17ba0cbfdce2d93c5360b3ff846ea1815b23"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "role": "receipt",
+      "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -690,7 +696,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T080527.161049Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Hexagrams",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -743,6 +749,14 @@
     {
       "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
       "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): BECOMING-RENEWAL-READING.md, Hexagrams.lean, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U3 added study section 196; Hexagrams.lean: U3 added order_paired_by_law and proved revisits_within_order through order_length; THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，BECOMING-RENEWAL-READING.md、Hexagrams.lean、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3: the proof binding of Hexagrams.lean moves to core receipt 20261019T092027.048735Z, which checked the file as U3 changed it (new theorems only; the declarations this record cites are unchanged). The claim is unchanged.",
+      "zh": "2026年10月19日，U3：Hexagrams.lean 的证明绑定移到核心回执 20261019T092027.048735Z，该回执检查了 U3 改动后的文件（只新增定理；本记录所引声明不变）。论断不变。"
     }
   ]
 }

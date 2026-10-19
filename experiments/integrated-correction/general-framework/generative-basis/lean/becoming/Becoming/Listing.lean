@@ -76,6 +76,14 @@ decidedness and `Becoming.Imbalance` for balance: nothing is adopted, and no oth
   Names count what relations do not tell apart: where two relata are indiscernible, the list of
   both has two members by name and holds one relatum read through relations
   (`World.probe_named_apart`).
+* **What takes part in a step, counted.** Read on a flow's steps: what takes part in a step can
+  be listed once, and has a number, exactly where identity among it is decided
+  (`Flow.present_listsOnce_iff`, `Flow.present_numbers_iff`); the number is one, at most the
+  places in the step's list, and counted by name is counted up to identity of names
+  (`Flow.present_number_unique`, `Flow.present_number_le`, `Flow.present_numbers_iff_by_eq`); a
+  step listing one relatum twice numbers one relatum in two places (`Flow.present_repeated`); and
+  every flow on a type lists what takes part in each step once exactly where identity on the type
+  is decided (`Flow.present_listsOnce_all_iff`).
 
 **AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D30).** Listing once
 commits to no more than this: identity among what is summed or counted is decided where it is summed
@@ -994,5 +1002,68 @@ theorem BalancesOn.sample_byOccurrence [DecidableEq F] (σ : Nat → Nat) {cs : 
 end Flow
 
 end Occurrences
+
+/-! ## What takes part in a step, counted -/
+
+section Present
+
+variable {F C : Type}
+
+namespace Flow
+
+variable {L : Flow F C}
+
+/-- **What takes part in a step can be listed once exactly where identity among it is decided.** -/
+theorem present_listsOnce_iff (t : Nat) :
+    (∃ s, ListsOnce s (L.present t)) ↔ IdentityDecided (L.present t) :=
+  listsOnce_iff_decided
+
+/-- **What takes part in a step has a number exactly where identity among it is decided.** -/
+theorem present_numbers_iff (t : Nat) :
+    (∃ n, Numbers (L.present t) n) ↔ IdentityDecided (L.present t) :=
+  numbers_iff_decided
+
+/-- The number of what takes part in a step is one number. -/
+theorem present_number_unique {t n n' : Nat} (first : Numbers (L.present t) n)
+    (second : Numbers (L.present t) n') : n = n' :=
+  first.unique second
+
+/-- The number of what takes part in a step is at most the places in the step's list. -/
+theorem present_number_le {t n : Nat} (numbers : Numbers (L.present t) n) :
+    n ≤ (L.present t).length :=
+  numbers.le_length
+
+/-- Any two lists listing once what takes part in a step have one length. -/
+theorem present_listsOnce_length {t : Nat} {s s' : List F} (lists : ListsOnce s (L.present t))
+    (lists' : ListsOnce s' (L.present t)) : s.length = s'.length :=
+  lists.length_eq lists'
+
+/-- A law holding wherever what takes part in a step is listed once holds where identity among it
+is decided. -/
+theorem present_of_listsOnce {B : Prop} {t : Nat} (decided : IdentityDecided (L.present t))
+    (law : ∀ s, ListsOnce s (L.present t) → B) : B :=
+  of_listsOnce decided law
+
+/-- What takes part in a step, counted by name, is counted up to identity of names. -/
+theorem present_numbers_iff_by_eq {t n : Nat} :
+    Numbers (L.present t) n ↔ NumbersBy Eq (L.present t) n :=
+  numbers_iff_numbersBy_eq
+
+/-- **A step listing one relatum twice numbers one relatum in two places.** -/
+theorem present_repeated {t : Nat} {a : F} (twice : L.present t = [a, a]) :
+    Numbers (L.present t) 1 ∧ (L.present t).length = 2 :=
+  ⟨⟨[a], ⟨⟨(fun mem => nomatch mem), trivial⟩, fun x => twice ▸ ((repeated_same a).1 x).symm⟩, rfl⟩,
+   twice ▸ rfl⟩
+
+/-- **Every flow on a type lists what takes part in each step once exactly where identity on the
+type is decided.** -/
+theorem present_listsOnce_all_iff :
+    (∀ (L : Flow F C) (t : Nat), ∃ s, ListsOnce s (L.present t)) ↔ ∀ a b : F, Decided (a = b) :=
+  ⟨fun all => listsOnce_all_iff.mp fun l => all ⟨fun _ => l, fun _ _ _ => 0, fun _ _ _ => 0⟩ 0,
+   fun decided L t => listsOnce_all_iff.mpr decided (L.present t)⟩
+
+end Flow
+
+end Present
 
 end Becoming

@@ -8,14 +8,14 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-19T09:27:15+00:00",
   "statement": {
     "zh": "一个列表恰在其成员之间同一已定时能列出一次，按成员的和与计数于是唯一；否证之律不需要它，求和与计数之律只把它作为局部条件。",
     "en": "A list can be listed once exactly where identity among its members is decided, and sums and counts once per member are then one number; laws refuting something need nothing, and laws that sum or count need it only as a local condition."
   },
   "claim": {
-    "zh": "一个列表的成员之间同一已定（IdentityDecided l），指其中任何两个成员相同或不同已定。s 把 l 列出一次（ListsOnce s l），指 s 不重复（Distinct）且与 l 成员相同。不重复的列表决定其成员之间的同一（Distinct.identityDecided）；成员之间同一已定时，有一个与之成员相同的不重复列表（listsOnce_of_decided，构造性地由 listOnce 给出）；所以列表恰在成员之间同一已定时能列出一次（listsOnce_iff_decided），而它能列出一次从不能被否证（not_not_listsOnce）。成员相同的不重复列表有同样的每个量的总和与同样的长度（total_eq_of_same、ListsOnce.total_eq、ListsOnce.length_eq）；列表所含关系项的数目（Numbers）唯一（Numbers.unique），恰在成员之间同一已定时存在（numbers_iff_decided）；重复只会增加（Numbers.le_length、ListsOnce.total_le）。处处列出一次时否证某事的律，对该列表不加前提地否证它（not_of_listsOnce）；所以结论是否证的律对任何列出方式的家族成立（Flow.Dissipative.opens_listing、Flow.Dissipative.finite_taking_not_recurring_listing、Flow.taking_draws_in_listing、Web.generation_not_recurring_listing、Flow.taking_not_recurring_listing），在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）。用到这一承诺之处它是局部的：一步被封闭（或围绕一个家族被封闭）恰在有一个跨此步封闭、成员之间同一已定的家族时（Flow.enclosed_iff、Flow.around_iff）；世界有限恰在可枚举且关系项之间同一已定时（World.finite_iff）；耗散就是每个封闭家族按成员读一次时的耗散（Flow.dissipative_iff）；每个普查决定其所列者之间的同一（Listed.identityDecided），任何带同一判定的列出给出普查（Listed.of_listing）。重复并非无害：在 Doubled 中流平衡并耗散，把来到停息的条件列两次的家族是封闭的而没有在其上耗散，其存量不降，列一次则降（Doubled.needs_once）。不加前提。",
-    "en": "Identity among a list's members is decided (IdentityDecided l) where for any two members it is decided whether they are the same. s lists l once (ListsOnce s l) where s is without repetition (Distinct) and has the members of l. A list without repetition decides identity among its members (Distinct.identityDecided); where identity among a list's members is decided, some list without repetition has exactly its members (listsOnce_of_decided, constructively by listOnce); so a list can be listed once exactly where identity among its members is decided (listsOnce_iff_decided), and that it can be is never refuted (not_not_listsOnce). Lists without repetition with the same members have the same total of every quantity and the same length (total_eq_of_same, ListsOnce.total_eq, ListsOnce.length_eq); the number of relata a list holds (Numbers) is one number (Numbers.unique) and exists exactly where identity among its members is decided (numbers_iff_decided); repetition only adds (Numbers.le_length, ListsOnce.total_le). A law refuting something wherever a list is listed once refutes it of the list with no premise (not_of_listsOnce); so the laws whose conclusion is a refutation hold of every family however listed (Flow.Dissipative.opens_listing, Flow.Dissipative.finite_taking_not_recurring_listing, Flow.taking_draws_in_listing, Web.generation_not_recurring_listing, Flow.taking_not_recurring_listing), and under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world (World.Enumerated, World.Enumerated.not_recurring). Where the commitment is used it is local: a step is enclosed, or enclosed around a family, exactly where some family closed across it has decided identity among its members (Flow.enclosed_iff, Flow.around_iff); a world is finite exactly where it is enumerated and identity among its relata is decided (World.finite_iff); dissipation is dissipation on every closed family read once per member (Flow.dissipative_iff); every census decides identity among what it lists (Listed.identityDecided), and any listing with identity decided gives a census (Listed.of_listing). Repetition is not harmless: in Doubled the flow balances and dissipates, the family listing twice the condition that comes to stand is closed and not dissipated on, and its stock does not fall, while listed once it falls (Doubled.needs_once). No premise."
+    "zh": "一个列表的成员之间同一已定（IdentityDecided l），指其中任何两个成员相同或不同已定。s 把 l 列出一次（ListsOnce s l），指 s 不重复（Distinct）且与 l 成员相同。不重复的列表决定其成员之间的同一（Distinct.identityDecided）；成员之间同一已定时，有一个与之成员相同的不重复列表（listsOnce_of_decided，构造性地由 listOnce 给出）；所以列表恰在成员之间同一已定时能列出一次（listsOnce_iff_decided），而它能列出一次从不能被否证（not_not_listsOnce）。成员相同的不重复列表有同样的每个量的总和与同样的长度（total_eq_of_same、ListsOnce.total_eq、ListsOnce.length_eq）；列表所含关系项的数目（Numbers）唯一（Numbers.unique），恰在成员之间同一已定时存在（numbers_iff_decided）；重复只会增加（Numbers.le_length、ListsOnce.total_le）。处处列出一次时否证某事的律，对该列表不加前提地否证它（not_of_listsOnce）；所以结论是否证的律对任何列出方式的家族成立（Flow.Dissipative.opens_listing、Flow.Dissipative.finite_taking_not_recurring_listing、Flow.taking_draws_in_listing、Web.generation_not_recurring_listing、Flow.taking_not_recurring_listing），在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）。用到这一承诺之处它是局部的：一步被封闭（或围绕一个家族被封闭）恰在有一个跨此步封闭、成员之间同一已定的家族时（Flow.enclosed_iff、Flow.around_iff）；世界有限恰在可枚举且关系项之间同一已定时（World.finite_iff）；耗散就是每个封闭家族按成员读一次时的耗散（Flow.dissipative_iff）；每个普查决定其所列者之间的同一（Listed.identityDecided），任何带同一判定的列出给出普查（Listed.of_listing）。重复并非无害：在 Doubled 中流平衡并耗散，把来到停息的条件列两次的家族是封闭的而没有在其上耗散，其存量不降，列一次则降（Doubled.needs_once）。不加前提。读在流的步上：参与一步者恰在其间同一已定时能列出一次并有数目（Flow.present_listsOnce_iff、Flow.present_numbers_iff）；一步把同一关系项列两次，则在两处只数得一个关系项（Flow.present_repeated）；一个类型上的每个流都把每一步列出一次，恰当该类型上的同一已定（Flow.present_listsOnce_all_iff）。",
+    "en": "Identity among a list's members is decided (IdentityDecided l) where for any two members it is decided whether they are the same. s lists l once (ListsOnce s l) where s is without repetition (Distinct) and has the members of l. A list without repetition decides identity among its members (Distinct.identityDecided); where identity among a list's members is decided, some list without repetition has exactly its members (listsOnce_of_decided, constructively by listOnce); so a list can be listed once exactly where identity among its members is decided (listsOnce_iff_decided), and that it can be is never refuted (not_not_listsOnce). Lists without repetition with the same members have the same total of every quantity and the same length (total_eq_of_same, ListsOnce.total_eq, ListsOnce.length_eq); the number of relata a list holds (Numbers) is one number (Numbers.unique) and exists exactly where identity among its members is decided (numbers_iff_decided); repetition only adds (Numbers.le_length, ListsOnce.total_le). A law refuting something wherever a list is listed once refutes it of the list with no premise (not_of_listsOnce); so the laws whose conclusion is a refutation hold of every family however listed (Flow.Dissipative.opens_listing, Flow.Dissipative.finite_taking_not_recurring_listing, Flow.taking_draws_in_listing, Web.generation_not_recurring_listing, Flow.taking_not_recurring_listing), and under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world (World.Enumerated, World.Enumerated.not_recurring). Where the commitment is used it is local: a step is enclosed, or enclosed around a family, exactly where some family closed across it has decided identity among its members (Flow.enclosed_iff, Flow.around_iff); a world is finite exactly where it is enumerated and identity among its relata is decided (World.finite_iff); dissipation is dissipation on every closed family read once per member (Flow.dissipative_iff); every census decides identity among what it lists (Listed.identityDecided), and any listing with identity decided gives a census (Listed.of_listing). Repetition is not harmless: in Doubled the flow balances and dissipates, the family listing twice the condition that comes to stand is closed and not dissipated on, and its stock does not fall, while listed once it falls (Doubled.needs_once). No premise. Read on a flow's steps, what takes part in a step can be listed once, and has a number, exactly where identity among it is decided (Flow.present_listsOnce_iff, Flow.present_numbers_iff); a step listing one relatum twice numbers one relatum in two places (Flow.present_repeated); and every flow on a type lists each step once exactly where identity on the type is decided (Flow.present_listsOnce_all_iff)."
   },
   "hypotheses": [
     {
@@ -56,7 +56,11 @@
     "decided identity",
     "已定的同一",
     "Distinct",
-    "不重复"
+    "不重复",
+    "Becoming.Flow.present_listsOnce_iff",
+    "Becoming.Flow.present_numbers_iff",
+    "what takes part in a step, counted",
+    "参与一步者计数"
   ],
   "dependencies": [
     {
@@ -157,14 +161,14 @@
     "en": "Of the 30 uses needing no premise, 6 are proved as corollaries and the rest classified from their statements; counting relata cannot be made free of a premise; the readings are the AI's, adopted on Ren's delegation; no ethical predicate occurs."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Listing 的 85 项定理全部空依赖，其中含 IdentityDecided、ListsOnce、listsOnce_iff_decided、not_not_listsOnce、listOnce、Numbers、numbers_iff_decided、not_of_listsOnce、World.Enumerated、World.finite_iff、World.Enumerated.not_recurring、Flow.enclosed_iff、Flow.dissipative_iff与 Doubled.needs_once；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §101；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 85 theorems of Becoming.Listing all have empty axiom reports, among them IdentityDecided, ListsOnce, listsOnce_iff_decided, not_not_listsOnce, listOnce, Numbers, numbers_iff_decided, not_of_listsOnce, World.Enumerated, World.finite_iff, World.Enumerated.not_recurring, Flow.enclosed_iff, Flow.dissipative_iff and Doubled.needs_once. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §101 of the integration note; there is no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Listing 的 85 项定理全部空依赖，其中含 IdentityDecided、ListsOnce、listsOnce_iff_decided、not_not_listsOnce、listOnce、Numbers、numbers_iff_decided、not_of_listsOnce、World.Enumerated、World.finite_iff、World.Enumerated.not_recurring、Flow.enclosed_iff、Flow.dissipative_iff与 Doubled.needs_once；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §101；尚无独立审查。当前回执 20261019T092027.048735Z：Becoming.Listing 有 112 项声明、94 项定理，公理报告全为空，含 Flow.present_* 一节。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 85 theorems of Becoming.Listing all have empty axiom reports, among them IdentityDecided, ListsOnce, listsOnce_iff_decided, not_not_listsOnce, listOnce, Numbers, numbers_iff_decided, not_of_listsOnce, World.Enumerated, World.finite_iff, World.Enumerated.not_recurring, Flow.enclosed_iff, Flow.dissipative_iff and Doubled.needs_once. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §101 of the integration note; there is no independent review yet. Current receipt 20261019T092027.048735Z: Becoming.Listing has 112 declarations, 94 theorems, all with empty axiom reports, the Flow.present_* section among them."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
       "role": "proof",
-      "sha256": "17c0f4f7cdf2ab4f2da9e15b8712f39b262dfd3b5e231b5b1e6998ad1e2a02fa",
+      "sha256": "763de10d8fdc263ae836c510a8b5a8fac0891cdd8401a86999dc08247b23624c",
       "declarations": [
         "Becoming.IdentityDecided",
         "Becoming.ListsOnce",
@@ -222,7 +226,16 @@
         "Becoming.Doubled.dissipative",
         "Becoming.Doubled.closed",
         "Becoming.Doubled.comes",
-        "Becoming.Doubled.needs_once"
+        "Becoming.Doubled.needs_once",
+        "Becoming.Flow.present_listsOnce_iff",
+        "Becoming.Flow.present_numbers_iff",
+        "Becoming.Flow.present_number_unique",
+        "Becoming.Flow.present_number_le",
+        "Becoming.Flow.present_listsOnce_length",
+        "Becoming.Flow.present_of_listsOnce",
+        "Becoming.Flow.present_numbers_iff_by_eq",
+        "Becoming.Flow.present_repeated",
+        "Becoming.Flow.present_listsOnce_all_iff"
       ]
     },
     {
@@ -311,12 +324,18 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "role": "receipt",
+      "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Listing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -536,6 +555,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (study section 196): Listing.lean gained the section \"what takes part in a step, counted\", its laws read on a flow's steps (Flow.present_*); one sentence added to the claim. The earlier claim is unchanged.",
+      "zh": "2026年10月19日，U3（研究第 196 节）：Listing.lean 新增“参与一步者计数”一节，其规律在流的步上读出（Flow.present_*）；论断添一句。原论断不变。"
     }
   ]
 }

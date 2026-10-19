@@ -113,7 +113,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
       "role": "proof",
-      "sha256": "17c0f4f7cdf2ab4f2da9e15b8712f39b262dfd3b5e231b5b1e6998ad1e2a02fa",
+      "sha256": "763de10d8fdc263ae836c510a8b5a8fac0891cdd8401a86999dc08247b23624c",
       "declarations": [
         "Becoming.listsOnce_all_iff",
         "Becoming.repeated_same",
@@ -252,12 +252,18 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "role": "receipt",
+      "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Listing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -465,6 +471,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (study section 196): Listing.lean re-pointed after reading the change (a new section reads its laws on a flow's steps, Flow.present_*; listsOnce_all_iff is read on flows by Flow.present_listsOnce_all_iff); the declarations this record cites are unchanged, and its binding moves to core receipt 20261019T092027.048735Z. The claim is unchanged.",
+      "zh": "2026年10月19日，U3（研究第 196 节）：读过改动后，Listing.lean 重新指向（新一节在流的步上读其规律，Flow.present_*；listsOnce_all_iff 由 Flow.present_listsOnce_all_iff 在流上读出）；本记录所引声明不变，绑定移到核心回执 20261019T092027.048735Z。论断不变。"
     }
   ]
 }

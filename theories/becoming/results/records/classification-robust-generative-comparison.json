@@ -502,6 +502,25 @@
       "role": "receipt",
       "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
+      "role": "proof",
+      "sha256": "d86d6a921cb05ae244cc600903ae1100b8f1791d0eba7d350be615d7b6dbb550",
+      "declarations": [
+        "Becoming.FrontierFrames.classifiedOn",
+        "Becoming.FrontierFrames.classifiedOn_none_iff",
+        "Becoming.FrontierFrames.classifiedOn_robust_iff_of_decided",
+        "Becoming.FrontierFrames.classifiedOn_robust_iff_of_em",
+        "Becoming.FrontierFrames.classifiedOn_extremes_iff_of_decided",
+        "Becoming.FrontierFrames.classifiedOn_required"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "role": "receipt",
+      "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -602,6 +621,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FrontierFrames",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -668,6 +694,10 @@
     {
       "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
       "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Metaethics.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
+    },
+    {
+      "en": "19 October 2026, U3 (study section 196): the core laws of comparison under every classification read on a frame of two kinds, old contents compared by tier and fresh contents classified (Becoming.FrontierFrames.classifiedOn_*). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（研究第 196 节）：每种分类下比较的核心规律在两类内容的框架上读出（旧内容按层比较，新内容被分类；Becoming.FrontierFrames.classifiedOn_*）。论断不变。"
     }
   ]
 }

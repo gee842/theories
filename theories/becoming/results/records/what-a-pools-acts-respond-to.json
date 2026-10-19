@@ -470,7 +470,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "144e6433e589331d42b23abde67583d116f831f6505f3236fdd9837340015c21"
+      "sha256": "44d452a1ad43e71f5169a32260237fbfc445dd6dea45067f548ee3b64559e8c4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -574,6 +574,10 @@
     {
       "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Selection.lean, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Selection.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.",
       "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Selection.lean、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

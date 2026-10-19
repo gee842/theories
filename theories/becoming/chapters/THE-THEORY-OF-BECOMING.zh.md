@@ -100,7 +100,7 @@ Ren 的原话以引文标出，其余是 AI 的阐述。
 | 伦理 | A | 有通达、且在所见范围上确保本立场下的正面内容，即有一项支持理由（受话者一侧） | `articulates` | 外在论表述前提。在延续条件之下须读在活的内容上；以裸意义读则给任何新内容以理由（§6.12）〔AI 读法，D16〕 |
 | 实践 | C | 无损失且实现更多活的内容的扩展更好 | `Comparison` | 比较前提。继续之间以可能性比较，理由见 §6.12。有条件时，这就是条件自身的比较：它把过度汲取者的不在场排在其在场之上，而不扣下任何事件。在水平路径上，把“更好”读作保留且增加有意义者时，C 由延续条件推出（§6.8）。把“更好”读作扩大能形成的时，C 的无损扩展恰是扩大；这是定义上的（`Web.paths_comparison_widens`，§6.13），扩大更好是仍开放的根据 |
 | 实践 | L | 结果比较提升到多结果回应；保守默认是“每个结果都优于每个结果” | `LiftBetter` | 实质承诺（§6.5） |
-| 实践 | 实践承诺（J1–J4） | 完整比较与保留损失；基本条件优先；有界责任；正当可行的选择 | `PracticalJudgment`、`BetterAt` | AI 提出的附加承诺，作为实践规律的条件公开 |
+| 实践 | 实践承诺（J1–J4） | 完整比较与保留损失；基本条件优先；有界责任；正当可行的选择 | `Lexical.BasicPriority`、`Lexical.Frame.Above`（J1/J2），`Requirement.Frontier`、`Required`（J3/J4）；在框架上由 `FrontierFrames.Priority` 与 `FrontierFrames.Options` 读出（核心；公理报告为空） | AI 提出的附加承诺，作为实践规律的条件公开。需要经典原则之处，它是假设并附校准：每一步都有被选者需要弱排中律（`FrontierFrames.choice_exists_iff_weakly`，§8.6） |
 
 **不假定的内容。** 本理论不假定以下各项：
 
@@ -1476,7 +1476,7 @@ Ren 2026-10-11 问：“can we reduce is "for anything, its continuation into th
 | N_rel / N_std | 关系中立／立场中立 | `Valuation.transmits` / `Valuation.shares` |
 | 那一条公理；Ren 提议的公理 | 延续条件，陈述于 §6.15，不被断言 | `Unrestricted` |
 | G0/J 路线；G0 公理路线；显式公理路线 | 条件对齐路线：生命意义加实践承诺（§7） | — |
-| J1–J4 | 实践承诺 | `PracticalJudgment`、`BetterAt` |
+| J1–J4 | 实践承诺 | `PracticalJudgment`、`BetterAt`（外围，已被取代）；现为 `Lexical.BasicPriority` 与 `Requirement.Frontier`，在框架上为 `FrontierFrames.Priority` |
 | 第一部分；第一部分的总陈述 | 不用公理的理论；理论的总陈述 | — |
 | 第二部分 | 条件一节，§6.15 | — |
 | 普遍元伦理核心（Universal Metaethical Core） | 第 6 节，意义、比较与实践判断 | `Becoming.Metaethics` |

@@ -153,6 +153,7 @@ import Becoming.HistoryLanguages
 import Becoming.HistoryIdeals
 import Becoming.Coverage
 import Becoming.Presentations
+import Becoming.PresentationFrames
 import Becoming.Carriers
 import Becoming.BranchingCorrespondence
 import Becoming.JointCorrespondence
@@ -258,6 +259,9 @@ import Becoming.LawThroughCoupling
 import Becoming.LawThroughChangingCoupling
 import Becoming.Lexical
 import Becoming.Frontier
+import Becoming.FrontierFrames
+import Becoming.FrontierWorlds
+import Becoming.AcceptanceFrames
 import Becoming.ScoreRepresentation
 import Becoming.Alternatives
 import Becoming.Bundles
@@ -1306,6 +1310,24 @@ readings of the unfolding (`Becoming.Labelled`).
   frontier. Models: formation on a drawn amount (as steps of a process), handover of service,
   collective requirement, routes under classification. Ported from `PracticalJudgment`,
   `RelationalOrganization` and `AlignmentDirection` (F3J).
+* `Becoming.FrontierFrames` (L4): the practical commitments on a frame. J1/J2 as a condition on
+  the configurations of a frame, compared by the basic, then the living claims they realize
+  (`Priority`): irreflexive and transitive, anchored by a kept basic claim, no trade of a basic
+  claim for living ones, a generative extension never refuted to be better, C wherever it is
+  decided whether an extension adds a basic claim, and every two-tier condition that of its
+  tier frame. The options at a configuration are what one move of the process reaches
+  (`Options`): an option bettered by another is not chosen, J1/J2 leave one chosen where the
+  options are listed and the comparison weakly decided, a required task is performed by any
+  chosen option, nothing is required where no move is possible, and a basic claim kept by an
+  option keeping every basic claim of the options is never refuted at a chosen option and is
+  required where decided. Fresh contents under every classification on a frame of two kinds.
+* `Becoming.FrontierWorlds` (L4): what a formation requires of a condition in a world, served
+  across a handover from one giver to another (`Served`): withdrawn giving needs the successor,
+  a handover with no gap serves, and a gap refutes service.
+* `Becoming.AcceptanceFrames` (L4): scores over the options of a step. Every option best by the
+  score with acceptance keeps access exactly where every option best by the base score does;
+  restricting to the options loses score, least among them; an option best by an estimate
+  within `err` is within `2 * err` of every option.
 * `Becoming.ScoreRepresentation` (L4): C does not yield protection first: every comparison by
   a natural-number score satisfying C outranks protection by enough gains, while a bounded
   rational score represents the lexical order. Ported from `ProtectionPriorityRival` (F3J).
@@ -1630,6 +1652,13 @@ readings of the unfolding (`Becoming.Labelled`).
   predicates named where used): presentations exact for the same answers share one kernel and one
   alignment; a relation descends to codes exactly where it is saturated; the canonical
   presentation by all predicates; a frame's branching tests as questions.
+* `Becoming.PresentationFrames` (L3): presentations of a frame. Exact reduced presentations of a
+  frame's branching tests correspond one to one; the canonical presentation reads every test,
+  gives one code exactly to configurations passing the same tests where predicates are
+  extensional, and every exact presentation factors through it; the joint relation of a joint
+  frame descends to the codes exactly where it is the same for configurations passing the same
+  tests; the frame realizing every predicate tells every two configurations apart and every
+  relation descends to its codes.
 * `Becoming.Carriers` (L3): one carrier, several laws (no premise): `static`, `toggle` and their
   kin share carrier and feasible words; symmetry does not fix the law, and relational identity
   reads `static` and `toggle` as one recurrence; feasible words do not fix endpoints

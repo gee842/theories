@@ -147,16 +147,6 @@
    "category": "logical-strength",
    "reason": "Excluded middle gives NowhereDecided; a statement about principles of reasoning only (the frame form of NowhereDecided is ListedOutcomeFrames.alike_iff_sameBranchingTests_of_nowhereDecided)."
   },
-  "Becoming.Numbers.le_length": {
-   "module": "Becoming.Listing",
-   "category": "support",
-   "reason": "A list lemma: the number of members a list holds is at most its length."
-  },
-  "Becoming.Numbers.unique": {
-   "module": "Becoming.Listing",
-   "category": "support",
-   "reason": "A list lemma: the number of members a list holds is one number; its world form through relations is joined as CensusWebs.indiscernible_numbers_unique."
-  },
   "Becoming.Observation.Measure.listed": {
    "module": "Becoming.Observation",
    "category": "model-witness",
@@ -362,40 +352,15 @@
    "category": "model-witness",
    "reason": "A fact about Specker's three-box context model of Becoming.Context (with its non-root evenBoxes_glued, even_third, flipIf_self): parity on the boxes is glued from its pairs and not determined by them; the run-side form of the same relation, a whole no two parts hold, is joined as IdentificationRuns.parity_whole_not_in_pairs."
   },
-  "Becoming.exists_undominated_iff_weakly": {
-   "module": "Becoming.Decidedness",
-   "category": "logical-strength",
-   "reason": "Asked of every relation, undominated members exist exactly under weak excluded middle: a statement about excluded middle only."
-  },
   "Becoming.gap_le_iff": {
    "module": "Becoming.Propagation",
    "category": "support",
    "reason": "Arithmetic on natural numbers: the gap of two amounts is at most m exactly where each is at most the other plus m."
   },
-  "Becoming.listsOnce_all_iff": {
-   "module": "Becoming.Listing",
-   "category": "logical-strength",
-   "reason": "Every list over a type can be listed once exactly where identity on the type is decided: a statement about decided equality only; the world form (World.indiscernible_decided_iff_em) is on the base."
-  },
   "Becoming.nodup_iff_distinct": {
    "module": "Becoming.Composition",
    "category": "support",
    "reason": "A list lemma: List.Nodup agrees with the core's Distinct."
-  },
-  "Becoming.numbers_iff_decided": {
-   "module": "Becoming.Listing",
-   "category": "support",
-   "reason": "A list lemma: a list's number of members exists exactly where identity among them is decided (local decidedness of list members, no structure of the unfolding)."
-  },
-  "Becoming.numbers_iff_numbersBy_eq": {
-   "module": "Becoming.Listing",
-   "category": "support",
-   "reason": "A list lemma: counting by name is counting up to identity of names."
-  },
-  "Becoming.of_listsOnce": {
-   "module": "Becoming.Listing",
-   "category": "support",
-   "reason": "A list lemma: a law holding wherever a list is listed once holds where identity among its members is decided."
   },
   "Becoming.ownStanding_other": {
    "module": "Becoming.Testing",
@@ -411,11 +376,6 @@
    "module": "Becoming.Relevance",
    "category": "general-structure",
    "reason": "a law of every valuation or rule on any claims; the base supplies no reading of living, own or significance (the theory states them as conditions, chapter §6.15), so an instance on a world's relata would only fix the type"
-  },
-  "Becoming.repeated_same": {
-   "module": "Becoming.Listing",
-   "category": "support",
-   "reason": "A list fact about [a, a] and [a]: length counts places, not members."
   },
   "Becoming.responded_zero": {
    "module": "Becoming.Remainder",
@@ -577,31 +537,6 @@
    "category": "model-witness",
    "reason": "a fact about the two constructed pulse histories: they draw and contribute the same after the first step (RenewalRecovery, ported by F3R)"
   },
-  "Becoming.Lexical.BasicPriority.above": {
-   "module": "Becoming.Lexical",
-   "category": "general-structure",
-   "reason": "the lexical order on any two tiers of claims meets the condition `BasicPriority`; a law of every pair of claim families on any type (Becoming.Lexical, F3J)"
-  },
-  "Becoming.Lexical.BasicPriority.anchor": {
-   "module": "Becoming.Lexical",
-   "category": "general-structure",
-   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: restoring a lost basic claim while retaining the others is better (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Lexical.BasicPriority.irrefl": {
-   "module": "Becoming.Lexical",
-   "category": "general-structure",
-   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: nothing is better than itself (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Lexical.BasicPriority.no_trade": {
-   "module": "Becoming.Lexical",
-   "category": "general-structure",
-   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: losing a basic claim the other holds is never better (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Lexical.BasicPriority.trans": {
-   "module": "Becoming.Lexical",
-   "category": "general-structure",
-   "reason": "a law of every comparison satisfying the condition `BasicPriority` (J1/J2, a hypothesis) on any type of alternatives and claims; the base supplies no reading of the claims: the comparison is transitive (PracticalJudgment, ported by F3J)"
-  },
   "Becoming.Lexical.Ceiling.above": {
    "module": "Becoming.Lexical",
    "category": "model-witness",
@@ -626,16 +561,6 @@
    "module": "Becoming.Lexical",
    "category": "model-witness",
    "reason": "a fact about one constructed two-alternative model: celebration realizes the event, repair does not (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Lexical.classified_extremes_iff_of_decided": {
-   "module": "Becoming.Lexical",
-   "category": "general-structure",
-   "reason": "a law of every classification of fresh contents on any type: with the stated decisions, the two extreme classifications suffice (ClassificationRobustJudgment, ported by F3J)"
-  },
-  "Becoming.Lexical.classified_none_iff": {
-   "module": "Becoming.Lexical",
-   "category": "general-structure",
-   "reason": "a law of every classification on any type: with no fresh content basic, the comparison is the lexical one with the fresh contents adjoined as gains (ClassificationRobustJudgment, ported by F3J)"
   },
   "Becoming.Lexical.classified_robust_iff_iff_em": {
    "module": "Becoming.Lexical",
@@ -742,21 +667,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed handover model: a successor delivering nothing does not serve (AlignmentDirection, ported by F3J)"
   },
-  "Becoming.Requirement.Required.impossible": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a law of every menu on any type: an empty menu requires nothing (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Requirement.Required.means": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a law of every menu on any type: what every admissible alternative performing a requirement performs is required (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Requirement.Required.performed": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a one-line law of every menu on any type: a chosen admissible alternative performs what is required (PracticalJudgment, ported by F3J)"
-  },
   "Becoming.Requirement.Routes.none_robust": {
    "module": "Becoming.Frontier",
    "category": "model-witness",
@@ -771,11 +681,6 @@
    "module": "Becoming.Frontier",
    "category": "general-structure",
    "reason": "a law of every due, done and released relation on any type: a settled account leaves no residual (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Requirement.required_under_every_classification": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a law of every listed menu and classification on any type, with the decisions it needs as hypotheses: formation is required of the frontier under every classification (ClassificationRobustJudgment, ported by F3J)"
   },
   "Becoming.Requirement.residual_of_unfulfilled": {
    "module": "Becoming.Frontier",
@@ -1082,31 +987,6 @@
    "category": "support",
    "reason": "a one-line unpacking of the witness's configuration type: something exists among its six configurations exactly where one of them is it (ExplanatoryGranularityBoundary, ported by F3E)"
   },
-  "Becoming.Presentations.all_predicates_force_injective": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions: a presentation exact for all predicates gives distinct things distinct codes (ExplanatoryUniqueness, ported by F3E)"
-  },
-  "Becoming.Presentations.all_predicates_relation_recoverable": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions: under a presentation exact for all predicates every relation is read exactly through the codes (ExplanatoryUniversality, ported by F3E)"
-  },
-  "Becoming.Presentations.all_predicates_unique_correspondence": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions: two presentations exact for all predicates match their used codes one to one (ExplanatoryUniversality, ported by F3E)"
-  },
-  "Becoming.Presentations.canonical_exact": {
-   "module": "Becoming.Presentations",
-   "category": "support",
-   "reason": "a one-line unpacking of `canonical`: the presentation of each thing by its answers reads every answer exactly (ExplanatoryUniversality, ported by F3E)"
-  },
-  "Becoming.Presentations.canonical_factor": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions, with extensionality of predicates a named hypothesis: every exact presentation factors through the canonical one (ExplanatoryUniversality, ported by F3E)"
-  },
   "Becoming.Presentations.first_summary_cannot_answer_both": {
    "module": "Becoming.Presentations",
    "category": "model-witness",
@@ -1121,26 +1001,6 @@
    "module": "Becoming.Presentations",
    "category": "model-witness",
    "reason": "a fact about one constructed presentation of pairs of bits: the pair as code is not reduced for the first bit (ExplanatoryUniqueness, ported by F3E)"
-  },
-  "Becoming.Presentations.lift_exact_iff_saturated": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions: the image of a relation is its exact reading through an exact reduced presentation exactly where the relation is saturated (ExplanatoryUniversality, ported by F3E)"
-  },
-  "Becoming.Presentations.relation_descends_iff_saturated": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions: a relation descends to an exact reduced presentation exactly where it is saturated (ExplanatoryUniversality, ported by F3E)"
-  },
-  "Becoming.Presentations.relational_reading_unique_on_used": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions: exact readings of one relation agree on used codes (ExplanatoryUniversality, ported by F3E)"
-  },
-  "Becoming.Presentations.separating_relation_blocks_descent": {
-   "module": "Becoming.Presentations",
-   "category": "general-structure",
-   "reason": "a law of every presentation of any type of things by codes answering any type of questions: one pair of triples answering alike on which the relation differs blocks every exact reading (ExplanatoryUniversality, ported by F3E)"
   },
   "Becoming.Presentations.short_exact": {
    "module": "Becoming.Presentations",
@@ -1157,11 +1017,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed maintenance model (divert or keep the resource, accept or not): with positive diversion and lift the best choice accepts and diverts (CorrectionInfrastructure, ported by F3C)"
   },
-  "Becoming.Acceptance.approximate_score_bound": {
-   "module": "Becoming.Acceptance",
-   "category": "general-structure",
-   "reason": "a law of every integer score on any type of moves: a choice best by an estimate within `err` of the actual score is within `2 * err` of every allowed move (CorrectionInfrastructure, ported by F3C)"
-  },
   "Becoming.Acceptance.approximate_score_bound_tight": {
    "module": "Becoming.Acceptance",
    "category": "model-witness",
@@ -1172,20 +1027,10 @@
    "category": "model-witness",
    "reason": "a fact about the constructed maintenance model (divert or keep the resource, accept or not): every fixed weight for keeping access has a diversion value defeating it (CorrectionInfrastructure, ported by F3C)"
   },
-  "Becoming.Acceptance.every_optimum_has_access_iff": {
-   "module": "Becoming.Acceptance",
-   "category": "general-structure",
-   "reason": "a law of every integer score on any type of moves, with a positive lift for accepting: every best choice keeps access exactly where every best base move does (CorrectionInfrastructure, ported by F3C)"
-  },
   "Becoming.Acceptance.maintenance_weight_exact": {
    "module": "Becoming.Acceptance",
    "category": "model-witness",
    "reason": "a fact about the constructed maintenance model (divert or keep the resource, accept or not): a separate weight keeps access exactly where it exceeds the diversion value (CorrectionInfrastructure, ported by F3C)"
-  },
-  "Becoming.Acceptance.no_base_optimal_access": {
-   "module": "Becoming.Acceptance",
-   "category": "general-structure",
-   "reason": "a law of every integer score on any type of moves: where no best base move keeps access, none does (CorrectionInfrastructure, ported by F3C)"
   },
   "Becoming.Acceptance.recomputed_value_restores_branch": {
    "module": "Becoming.Acceptance",
@@ -1206,11 +1051,6 @@
    "module": "Becoming.Acceptance",
    "category": "model-witness",
    "reason": "a fact about the constructed two-step model of a branch and a last move: a value computed without the restriction prefers the branch whose allowed continuations score less (CorrectionInfrastructure, ported by F3C)"
-  },
-  "Becoming.Acceptance.unavoidable_score_loss": {
-   "module": "Becoming.Acceptance",
-   "category": "general-structure",
-   "reason": "a law of every integer score on any type of moves: the loss of a restricted best move is nonnegative and least among the allowed moves (CorrectionInfrastructure, ported by F3C)"
   },
   "Becoming.Acceptance.unrestricted_value_optimal": {
    "module": "Becoming.Acceptance",
@@ -1656,16 +1496,6 @@
    "module": "Becoming.HistoryIdeals",
    "category": "restates",
    "reason": "The case of words of `Stretches.run_goesOn` (a run's history goes on), stated on the base for every process."
-  },
-  "Becoming.Hexagram.order_length": {
-   "module": "Becoming.Hexagrams",
-   "category": "support",
-   "reason": "The received order lists sixty-four hexagrams: a one-line unpacking of the module's own list."
-  },
-  "Becoming.Hexagram.order_paired": {
-   "module": "Becoming.Hexagrams",
-   "category": "model-witness",
-   "reason": "Each pair of the received order (序卦) is turned over or changed in every line: a fact about the text's one constructed list, checked line by line, not a law of the unfolding; the order serves the base as the list holding every configuration (mem_order)."
   },
   "Becoming.Hexagram.weiJi_opposed": {
    "module": "Becoming.HexagramPlaces",

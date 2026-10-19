@@ -1,0 +1,10 @@
+@Becoming.FrontierWorlds.Served.successor : ∀ {w : Becoming.World} {f c old next : w.Relatum},
+  Becoming.FrontierWorlds.Served w f c old next →
+    ∀ {t : Nat}, w.web.requires t f c → ¬0 < w.flow.give t old c → 0 < w.flow.give t next c
+@Becoming.FrontierWorlds.served_of_handover : ∀ {w : Becoming.World} {f c old next : w.Relatum} (handover : Nat),
+  (∀ (t : Nat), t < handover → w.web.requires t f c → 0 < w.flow.give t old c) →
+    (∀ (t : Nat), handover ≤ t → w.web.requires t f c → 0 < w.flow.give t next c) →
+      Becoming.FrontierWorlds.Served w f c old next
+@Becoming.FrontierWorlds.Served.not_of_gap : ∀ {w : Becoming.World} {f c old next : w.Relatum} {t : Nat},
+  w.web.requires t f c →
+    ¬0 < w.flow.give t old c → ¬0 < w.flow.give t next c → ¬Becoming.FrontierWorlds.Served w f c old next

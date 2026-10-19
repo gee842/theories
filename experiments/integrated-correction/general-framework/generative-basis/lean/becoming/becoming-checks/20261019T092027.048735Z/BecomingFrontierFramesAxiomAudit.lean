@@ -1,0 +1,26 @@
+import Becoming.FrontierFrames
+#print axioms Becoming.FrontierFrames.Priority
+#print axioms Becoming.FrontierFrames.Priority.above
+#print axioms Becoming.FrontierFrames.Priority.iff
+#print axioms Becoming.FrontierFrames.Priority.irrefl
+#print axioms Becoming.FrontierFrames.Priority.trans
+#print axioms Becoming.FrontierFrames.Priority.anchor
+#print axioms Becoming.FrontierFrames.Priority.no_trade
+#print axioms Becoming.FrontierFrames.Priority.not_not_of_extension
+#print axioms Becoming.FrontierFrames.Priority.comparison
+#print axioms Becoming.FrontierFrames.basicPriority_iff_priority
+#print axioms Becoming.FrontierFrames.Options
+#print axioms Becoming.FrontierFrames.excluded
+#print axioms Becoming.FrontierFrames.Priority.choice_exists
+#print axioms Becoming.FrontierFrames.choice_exists_iff_weakly
+#print axioms Becoming.FrontierFrames.performed
+#print axioms Becoming.FrontierFrames.means
+#print axioms Becoming.FrontierFrames.nothing_required
+#print axioms Becoming.FrontierFrames.Priority.kept_unrefuted
+#print axioms Becoming.FrontierFrames.Priority.kept_required
+#print axioms Becoming.FrontierFrames.classifiedOn
+#print axioms Becoming.FrontierFrames.classifiedOn_none_iff
+#print axioms Becoming.FrontierFrames.classifiedOn_robust_iff_of_decided
+#print axioms Becoming.FrontierFrames.classifiedOn_robust_iff_of_em
+#print axioms Becoming.FrontierFrames.classifiedOn_extremes_iff_of_decided
+#print axioms Becoming.FrontierFrames.classifiedOn_required

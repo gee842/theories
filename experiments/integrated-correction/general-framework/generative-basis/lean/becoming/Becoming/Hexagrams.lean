@@ -27,7 +27,9 @@ chapter; what a passage claims beyond them is not in this module.
   enters at the bottom as its opposite (`waxWane`); run backward, every line falls one place
   (`unwaxWane`). The law merges nothing (`waxWane_lossless`), so by `Law.lossless_iff_returns`
   every configuration returns (`waxWane_returns`). Six steps change every line
-  (`six_steps`, `run_six_steps`), twelve have every configuration again (`twelve_steps`). From all lines broken, the
+  (`six_steps`, `run_six_steps`), twelve have every configuration again (`twelve_steps`), and
+  each pair of the received order is the first turned over or the first six steps on along the
+  law (`order_paired_by_law`). From all lines broken, the
   unbroken lines rise from the bottom one step at a time until all are unbroken, and the broken
   lines then rise in the same way (`waxing`, `waning`); the first return to all broken is at the
   twelfth step (`first_return`), the first unbroken line comes back at the seventh step from all
@@ -442,6 +444,16 @@ theorem twelve_steps (s : Hexagram) (n : Nat) :
       ((congrArg (fun x => Law.orbit waxWane x 6) (six_steps (Law.orbit waxWane s n))).trans
         ((six_steps _).trans (complement_complement _))))
 
+/-- **Each pair of the received order is linked by the law of waxing and waning**: the second is
+the first turned over, or, where turning over gives the same hexagram, the first six steps on along
+the law's run (非覆即變, the change in every line being six steps of waxing and waning). -/
+theorem order_paired_by_law : ∀ q, q ∈ pairs order →
+    (reverse q.1 ≠ q.1 ∧ q.2 = reverse q.1) ∨
+      (reverse q.1 = q.1 ∧ q.2 = (Law.run waxWane q.1).state 6) :=
+  fun q mem => match order_paired q mem with
+    | .inl turned => .inl turned
+    | .inr ⟨fixed, changed⟩ => .inr ⟨fixed, changed.trans (six_steps q.1).symm⟩
+
 /-- `k` unbroken lines from the bottom and the rest broken: 坤, 復, 臨, 泰, 大壯, 夬, 乾 for
 `k` from 0 to 6. -/
 def rising : Nat → Hexagram
@@ -735,10 +747,11 @@ theorem world_ceasing_recurs (s : Hexagram) :
 /-! ## Going on within the sixty-four -/
 
 /-- **Any sixty-five steps of a run of hexagrams revisit a configuration**, under every process
-on them. -/
+on them: sixty-four is the length of the received order (`order_length`), which holds every
+configuration. -/
 theorem revisits_within_order {A : Type} {P : Process Hexagram A} (r : Run P) :
     ∃ i j, i < j ∧ j ≤ 64 ∧ r.state i = r.state j :=
-  revisits_within order r.state (fun n _ => mem_order (r.state n))
+  order_length ▸ revisits_within order r.state (fun n _ => mem_order (r.state n))
 
 /-- **The law with its history kept is held by no list**, by `Law.withHistory_unlisted`. -/
 theorem kept_history_unlisted (h : Hexagram × List Hexagram) :

@@ -224,7 +224,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "144e6433e589331d42b23abde67583d116f831f6505f3236fdd9837340015c21",
+      "sha256": "44d452a1ad43e71f5169a32260237fbfc445dd6dea45067f548ee3b64559e8c4",
       "declarations": []
     },
     {
@@ -609,6 +609,10 @@
     {
       "en": "19 October 2026, R20(b) landing: THE-THEORY-OF-BECOMING.md re-pointed after reading the change on main (Y2 and V2 paragraphs merged with R20(b)'s wording; premise card C now says that balance by reading leaves the rest idle, which under a law of what has stood is feasibility). The claim is unchanged.",
       "zh": "2026年10月19日，R20(b) 落地：读过主线上的改动后，THE-THEORY-OF-BECOMING.md 重新指向（Y2、V2 的段落与 R20(b) 的措辞合并；前提卡 C 现说由读法成立的平衡留下其余不活跃，在已有之律下即可行性）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }
