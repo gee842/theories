@@ -1,5 +1,6 @@
 import Becoming.World
 import Becoming.Frame
+import Becoming.Laws
 import Becoming.Labelled
 import Becoming.Inquiry
 import Becoming.Derivation
@@ -71,6 +72,9 @@ import Becoming.Admission
 import Becoming.Exclusion
 import Becoming.Exhaustion
 import Becoming.Regions
+import Becoming.Retaining
+import Becoming.Clearing
+import Becoming.Extension
 import Becoming.Metaethics
 import Becoming.Lifting
 import Becoming.Ranking
@@ -87,6 +91,7 @@ import Becoming.RelativePosition
 import Becoming.Interdependence
 import Becoming.Feeding
 import Becoming.Feedback
+import Becoming.BoundedSignificance
 import Becoming.Cuts
 import Becoming.EdgeClosure
 import Becoming.SeedReach
