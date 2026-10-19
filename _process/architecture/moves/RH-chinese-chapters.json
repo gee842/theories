@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "batch": "RH-chinese-chapters",
+  "date": "2026-10-19T13:45:43+00:00",
+  "base_commit": "95da974ba5073ce6a84c55e0be102deda504a451",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+      "new_path": "theories/becoming/history/DAO-AND-GENERATIVITY.md",
+      "sha256": "6aea89d065086e39f159e310450b469e6fe865c08093e6fa73ccd06a4107174a",
+      "blob": "3341facd082cf069d61d2d1f959ff37473709e5a",
+      "reason": "the chapter on 道 as written on 6 October 2026, before the spine; its passage comparisons, the 51 reading and the old bridges are superseded by CHINESE-SOURCES-AND-BECOMING (sections 5.2 and 9 and its passage map), its arguments from generation to the good by sections 5 and 6.11-6.15 of the canonical chapter and by G0-WARRANT; what holds only here (the four kinds of judgment, the readings of 德 and 无为, the modern interpretations, passages the map does not carry) is restated in current terms in a new file at the old path",
+      "plan_entry": "theories/becoming/chapters/DAO-AND-GENERATIVITY.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md",
+      "new_path": "theories/becoming/history/HANZI-AND-THEORY-TREE.md",
+      "sha256": "7c6fb740e31bcab67c83c30a29f9a0b2b3f30ab5a780d37aa492376fafea5d7d",
+      "blob": "fd93f5e12d0861182ee283b22028968b16631b99",
+      "reason": "the chapter on characters and the theory tree as written on 6 October 2026, before the spine; its 武 working gloss and section 2 are superseded by CHINESE-SOURCES-AND-BECOMING section 6, its candidate vocabulary table and linear working order by the naming study's adopted vocabulary and CHINESE-SOURCES-AND-BECOMING section 5.4; what holds only here (the four kinds of correspondence, compounds and relation markers, the acceptance criteria) is kept in a new file at the old path",
+      "plan_entry": "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md",
+      "new_path": "theories/becoming/history/PRE-QIN-AND-WENYAN.md",
+      "sha256": "6ae2cfc16d0e7aa5b5c1fe5f26f3977d75dbed84a0c065fad0cf2e5ec191c880",
+      "blob": "b92b8f0efba51e916f376dc4c25161182f89a2d5",
+      "reason": "the chapter on pre-Qin and wenyan texts as written on 6 October 2026, before the spine; its competing-explanations frame, its rights wording on who may revise a rule and its write-back table are superseded by CHINESE-SOURCES-AND-BECOMING (passage map, sections 7 and 8) and the laws Pace and Clearing.pool_closes_gap; what holds only here (察今, 管子 内业, the requirement on how concern forms, the same-word counterexamples, the later wenyan distinctions, the 维摩经 reading, genre, the wenyan-language test) is kept in current terms in a new file at the old path",
+      "plan_entry": "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/WANG-YANGMING.md",
+      "new_path": "theories/becoming/history/WANG-YANGMING.md",
+      "sha256": "ab0a5fffb46dcf2b9013d78aa26dd06de4344d69c116620dee7e58556963d5d9",
+      "blob": "9450f54617d1b6cdf3c8dd98c8c70d2e03feb8f9",
+      "reason": "the chapter on 王阳明 as written on 7 October 2026, before the spine; its formal entry through the periphery module SituatedPractice and its old project framing (本然良知 from the generative core, 生成树) are superseded (CHINESE-SOURCES-AND-BECOMING sections 5.3 and 9: 知行合一 on the experiment laws, 心外无事 a divergence); the readings that hold only here (大学问, 心即理 in conduct, 知行, 致良知, 偏蔽 and 复通, 差等 and refusal, the competing explanation) are kept in current terms in a new file at the old path",
+      "plan_entry": "theories/becoming/chapters/WANG-YANGMING.md"
+    }
+  ],
+  "keep_references": true,
+  "rewritten": [],
+  "history_roots": [
+    "theories/becoming/history"
+  ],
+  "generated_pages_to_rerender": [
+    "theories/becoming/chapters/README.md",
+    "theories/becoming/results/ARGUMENTS-A-L.md",
+    "theories/becoming/results/ARGUMENTS-M-Z.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/SESSION-RESULTS.md",
+    "theories/becoming/results/data/lean-index.json",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/concern.md"
+  ],
+  "verification_errors": []
+}

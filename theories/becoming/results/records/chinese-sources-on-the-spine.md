@@ -37,7 +37,7 @@ Canonical source: [CHINESE-SOURCES-AND-BECOMING.md](../../chapters/CHINESE-SOURC
 <a id="next--下一步"></a>
 ## Next
 
-Five gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws. Then the earlier Chinese chapters' superseded parts moved to history.
+Five gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -80,6 +80,7 @@ Aliases: `the Chinese sources on the spine`, `中国思想诸传统在脊柱上`
 - 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.
 - 19 October 2026, Y5: the seventh gap of the chapter's section 8 (the supplements of the hexagram world) is closed by the record hexagram-arrangements-and-laws (study section 209, decision D55); nine passages cite it, and the chapter's claim, quoted from the 易传 chapter, that the order is the orbit of no law is corrected; CHINESE-SOURCES-AND-BECOMING.md, passages.json, THE-THEORY-OF-BECOMING.md re-pointed after reading the change. The claim is unchanged.
 - 19 October 2026, SC (a code formed between formations): the second gap closed by Becoming.SharedCodes (a-code-formed-between-formations); four passages re-pointed to its laws (declarations, the record, the sentence of each reading that named the gap) and the gap marked closed in the map and in chapter sections 5.4, 8 and 11; the next step lists the five gaps still open; the counts verify_ro.py reports brought to 578 declarations and 119 records; CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.
+- 19 October 2026 (RH): the four earlier Chinese chapters were handled passage by passage; each 6–7 October text moved byte for byte to theories/becoming/history/ (move batch RH-chinese-chapters), and the live chapter at its path keeps what this map and the spine do not carry; chapter §9 and §11 say so, and this step left the next delta. CHINESE-SOURCES-AND-BECOMING.md re-pointed after reading: since the reviewed hash only §9 and §11 changed, by this step. The claim is unchanged.
 
 </details>
 

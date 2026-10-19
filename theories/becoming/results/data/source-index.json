@@ -5343,13 +5343,19 @@
         "sources/chinese-classical-texts/PROVENANCE.json",
         "sources/chinese-classical-texts/README.md",
         "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+        "theories/becoming/chapters/G0-WARRANT.md",
         "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md",
         "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
         "theories/becoming/chapters/NONDUAL-METHOD.md",
         "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/WANG-YANGMING.md",
-        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md"
+        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
+        "theories/becoming/history",
+        "theories/becoming/history/DAO-AND-GENERATIVITY.md",
+        "theories/becoming/history/HANZI-AND-THEORY-TREE.md",
+        "theories/becoming/history/PRE-QIN-AND-WENYAN.md",
+        "theories/becoming/history/WANG-YANGMING.md"
       ]
     },
     "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md": {
@@ -6341,10 +6347,14 @@
         "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
         "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
         "theories/becoming/history",
+        "theories/becoming/history/DAO-AND-GENERATIVITY.md",
         "theories/becoming/history/EVALUATIVE-GROUNDING.md",
         "theories/becoming/history/EVALUATIVE-UPTAKE.md",
         "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
+        "theories/becoming/history/HANZI-AND-THEORY-TREE.md",
+        "theories/becoming/history/PRE-QIN-AND-WENYAN.md",
         "theories/becoming/history/THEORY-OF-BECOMING.md",
+        "theories/becoming/history/WANG-YANGMING.md",
         "theories/meta-attractor/COMMON-ORGANIZATION.md",
         "theories/meta-attractor/README.md"
       ]
@@ -6635,24 +6645,26 @@
       ]
     },
     "theories/becoming/chapters/WANG-YANGMING.md": {
-      "title": "王阳明与生成理论：一体之仁、知行与工夫的整体整合",
+      "title": "王阳明与生成／变化之论：一体之仁、知行与工夫",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MERGED-OBLIGATIONS-INTEGRATION.md",
-        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md",
-        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
         "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean",
         "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md",
+        "sources/chinese-classical-texts/atlas-v9.1/evidence/texts/S10.txt",
         "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+        "theories/becoming/chapters/G0-WARRANT.md",
         "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
         "theories/becoming/chapters/NONDUAL-METHOD.md",
         "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md",
-        "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/MANIFEST.json",
+        "theories/becoming/history/WANG-YANGMING.md"
       ]
     },
     "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md": {
@@ -7078,6 +7090,7 @@
         "theories/becoming/history/CONTROLLED-REFINEMENT.md",
         "theories/becoming/history/COST-SENSITIVE-LEARNING.md",
         "theories/becoming/history/CYBERNETICS.md",
+        "theories/becoming/history/DAO-AND-GENERATIVITY.md",
         "theories/becoming/history/DEEPER-GENERATIVE-ROOT.md",
         "theories/becoming/history/EMPIRICAL-SCOPE.md",
         "theories/becoming/history/ETHICAL-FOUNDATION.md",
@@ -7099,6 +7112,7 @@
         "theories/becoming/history/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md",
         "theories/becoming/history/GENERATIVE-SELECTION.md",
         "theories/becoming/history/GOAL-FORMATION-AND-REVISION.md",
+        "theories/becoming/history/HANZI-AND-THEORY-TREE.md",
         "theories/becoming/history/HUIGEN.md",
         "theories/becoming/history/INQUIRY-AND-MATHEMATICAL-IDENTITY.md",
         "theories/becoming/history/INQUIRY-REVISION.md",
@@ -7118,6 +7132,7 @@
         "theories/becoming/history/MODEL-FAMILY-REVISION.md",
         "theories/becoming/history/NEW-POSSIBILITIES.md",
         "theories/becoming/history/PAID-PREIMPORT-EVIDENCE.md",
+        "theories/becoming/history/PRE-QIN-AND-WENYAN.md",
         "theories/becoming/history/PREDICTION-ACTION.md",
         "theories/becoming/history/PREDICTION-PROTOCOL.md",
         "theories/becoming/history/PROTOCOL-COMPLETION.md",
@@ -7150,6 +7165,7 @@
         "theories/becoming/history/UPDATER-FORMATION.md",
         "theories/becoming/history/VALUATION-DEVELOPMENT.md",
         "theories/becoming/history/VALUATION-IDENTIFICATION-BOUNDS.md",
+        "theories/becoming/history/WANG-YANGMING.md",
         "theories/meta-attractor/COMMON-ORGANIZATION.md"
       ]
     },
@@ -7311,6 +7327,23 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
         "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
         "sources/15-codex-theory-conversations/2026-10-11-part-ii-into-part-i.md"
+      ]
+    },
+    "theories/becoming/history/WANG-YANGMING.md": {
+      "title": "王阳明与生成理论：一体之仁、知行与工夫的整体整合",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MERGED-OBLIGATIONS-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PRACTICE-TRANSFORMATION-ARGUMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-MATH.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/WANG-YANGMING-COMPLETION-SOURCES.md",
+        "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/development/WANG-YANGMING-BEFORE-2026-10-07-COMPLETION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/SituatedPractice.lean",
+        "sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md",
+        "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md"
       ]
     },
     "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md": {

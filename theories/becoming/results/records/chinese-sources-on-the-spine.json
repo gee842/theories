@@ -54,8 +54,8 @@
     "zh": "verify_ro.py 通过：248 段（相合 95、定域 94、相分 59），每段原文逐字见于所存文本（93 个文件以 SHA-256 绑定），578 个声明在现行回执中，119 份记录，图谱编号在由两个存档重建的摘录中，以及章节之表。五个映射者起草；整合者核对每条引文、声明与记录，通读每条读法，改正六处（研究第 207 节）。未经独立审查；未与刻本对校。"
   },
   "next_delta": {
-    "en": "Five gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws. Then the earlier Chinese chapters' superseded parts moved to history.",
-    "zh": "五项缺口，各先认领再写：水平的双向调节及迟到读法之形；经由规则的捕获；以闭包层级分等的次序；跨多个条件的分；跨律比较容忍。然后把较早各中国章节中被取代的部分移入历史。"
+    "en": "Five gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws.",
+    "zh": "五项缺口，各先认领再写：水平的双向调节及迟到读法之形；经由规则的捕获；以闭包层级分等的次序；跨多个条件的分；跨律比较容忍。"
   },
   "correspondence": {
     "en": "Ren, 19 October 2026, after sharing the 易道体系图 v1.3.0: “整个中国思想的源头，道家，易经，以及整个文字符号系统，包括武（止戈 ），和一些其他的理论体系中，例如儒家，也延续了这一套“relational ontology”，因此，我希望你好好阅读，把两者之间的关系map出来，可以用sub agents，然后再体系性的整合进我们的理论” (provenance, not warrant). The chapter maps 248 passages of the 易传 beyond Y1–Y4, the 老子 with three commentaries and the excavated witnesses, the 儒家 line, the script with 止戈, 庄子 and 玄学, 墨辩 and 名家, 兵家, 法家, 管子 and 纵横, the Buddhist lines received in China, and others. Reading (the AI's, D54): the thesis holds for what the lines start from and observe, its universal forms mostly need a scope, and four non-relational overlays recur, each answered inside its tradition.",
@@ -122,7 +122,7 @@
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "statement",
-      "sha256": "c7ee3eea16bdf6486cb2c30bc80b2d5f5958f58dd120195d434098d453513dd2"
+      "sha256": "7698c5ec4f075ba36c3940ffa62c6a61b98bbc829826b2cfe756db5b4cd7ed9d"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
@@ -188,6 +188,10 @@
     {
       "en": "19 October 2026, SC (a code formed between formations): the second gap closed by Becoming.SharedCodes (a-code-formed-between-formations); four passages re-pointed to its laws (declarations, the record, the sentence of each reading that named the gap) and the gap marked closed in the map and in chapter sections 5.4, 8 and 11; the next step lists the five gaps still open; the counts verify_ro.py reports brought to 578 declarations and 119 records; CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
       "zh": "2026年10月19日，SC（在形成之间形成的编码）：第二项缺口由 Becoming.SharedCodes（a-code-formed-between-formations）补上；四段改指向其律（声明、记录、各读法中指称缺口的那一句），缺口在对应表与章节第 5.4、8、11 节标为已补上；下一步只列尚未补上的五项缺口；verify_ro.py 所报计数更新为 578 个声明、119 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。评估其余不变。"
+    },
+    {
+      "en": "19 October 2026 (RH): the four earlier Chinese chapters were handled passage by passage; each 6–7 October text moved byte for byte to theories/becoming/history/ (move batch RH-chinese-chapters), and the live chapter at its path keeps what this map and the spine do not carry; chapter §9 and §11 say so, and this step left the next delta. CHINESE-SOURCES-AND-BECOMING.md re-pointed after reading: since the reviewed hash only §9 and §11 changed, by this step. The claim is unchanged.",
+      "zh": "2026年10月19日（RH）：四个较早的中国章节按段处理；各章 10月6日至7日的原文逐字节移入 theories/becoming/history/（移动批次 RH-chinese-chapters），同一路径上的现行章留下本映射与脊柱没有承载的部分；本章 §9 与 §11 已据此改写，这一步从下一步中删去。CHINESE-SOURCES-AND-BECOMING.md 读过改动后重新指向：自所审哈希以来只有 §9 与 §11 改动，即这一步。论断不变。"
     }
   ]
 }
