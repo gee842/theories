@@ -292,11 +292,6 @@
    "category": "logical-strength",
    "reason": "A rule deciding every Boolean sequence gives the proposition WLPO: pure logic; its run form is TailRuns.wlpo_iff_runs with TailRuns.falseRule_iff."
   },
-  "Becoming.Weights.truncation": {
-   "module": "Becoming.Weighted",
-   "category": "support",
-   "reason": "a sum over an appended list splits, for any weights (Weights.sum_append restated)"
-  },
   "Becoming.BareSignificance.bare_forces_reason": {
    "module": "Becoming.Relevance",
    "category": "model-witness",
@@ -513,7 +508,7 @@
    "reason": "a law of every supplied comparison on any type and every faithful redescription of it; the base supplies no reading of the comparison (GenerativeLossComparison, ported by F3R)"
   },
   "Becoming.SupportRecovery.same_later_inputs": {
-   "module": "Becoming.SupportRecovery",
+   "module": "Becoming.RenewalFlow",
    "category": "model-witness",
    "reason": "a fact about the two constructed pulse histories: they draw and contribute the same after the first step (RenewalRecovery, ported by F3R)"
   },
@@ -591,11 +586,6 @@
    "module": "Becoming.Frontier",
    "category": "model-witness",
    "reason": "a fact about the constructed formation model: two alternatives with the same report differ in basis (RelationalOrganization, ported by F3J)"
-  },
-  "Becoming.Requirement.Handover.crossed_unranked": {
-   "module": "Becoming.Frontier",
-   "category": "model-witness",
-   "reason": "a fact about the constructed handover model: crossed tiers leave the two alternatives unranked (AlignmentDirection, ported by F3J)"
   },
   "Becoming.Requirement.Handover.expansion_excluded": {
    "module": "Becoming.Frontier",
@@ -772,11 +762,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed channel model (double reversal read exactly)"
   },
-  "Becoming.PartialReadout.parity_exact": {
-   "module": "Becoming.PartialReadout",
-   "category": "model-witness",
-   "reason": "a fact about the constructed channel model (exactness surviving compression); the general law is read on runs as `Runs.retained_exact`"
-  },
   "Becoming.PartialReadout.safe_of_holds": {
    "module": "Becoming.PartialReadout",
    "category": "support",
@@ -863,7 +848,7 @@
    "reason": "a fact about the constructed finite occurrence model of degrees of connection: with tolerance along adjacent degrees a self-good standpoint reaches the stranger (EvaluatorGrounding, ported by F3J)"
   },
   "Becoming.BranchingTest.finer_rename": {
-   "module": "Becoming.Grains",
+   "module": "Becoming.Granularity",
    "category": "general-structure",
    "reason": "a law of every renaming of branching tests into blocks of single moves, on any type of moves and claims: read back at the finer grain the renamed test is the test itself, an equality of tests with no frame (ExplanatoryGranularity, ported by F3E)"
   },
@@ -923,7 +908,7 @@
    "reason": "a law of every plan over lists of any type of resources: reassociating a plan keeps where it is realized (ExplanatoryFootprints, ported by F3E)"
   },
   "Becoming.Midway.exists_phase": {
-   "module": "Becoming.Grains",
+   "module": "Becoming.Granularity",
    "category": "support",
    "reason": "a one-line unpacking of the witness's configuration type: something exists among its six configurations exactly where one of them is it (ExplanatoryGranularityBoundary, ported by F3E)"
   },
@@ -1327,11 +1312,6 @@
    "category": "support",
    "reason": "The empty set's order has no ideal: a one-line unpacking of `Ideal.nonempty`."
   },
-  "Becoming.Ideals.hull_hull": {
-   "module": "Becoming.Ideals",
-   "category": "restates",
-   "reason": "The hull's idempotence, `AdheresBy.adheres` read on the hull; its case of runs is Horizon's `Adheres.adheres` (a run adhering to the runs that adhere to a reading adheres to it), already on the base."
-  },
   "Becoming.Ideals.hull_iff_within_content": {
    "module": "Becoming.Ideals",
    "category": "support",
@@ -1622,11 +1602,6 @@
    "category": "support",
    "reason": "An open class is its own interior: `VerifiableBy.interior_iff` with `Open.verifiable`, a one-line unpacking; at runs, a verifiable reading holds exactly its verified runs (`verifiable_iff_verified`)."
   },
-  "Becoming.Ideals.hull_not_interior_compl": {
-   "module": "Becoming.Verification",
-   "category": "restates",
-   "reason": "The hull meets no ideal of the interior of the complement, `AdheresBy.not_interior_compl` read on classes; its case of runs is `Adheres.not_verified_compl`, stated on the base."
-  },
   "Becoming.Ideals.interior_iff_meets": {
    "module": "Becoming.Verification",
    "category": "support",
@@ -1641,11 +1616,6 @@
    "module": "Becoming.Verification",
    "category": "support",
    "reason": "The interior is open: `interiorBy_verifiable` with `verifiable_open`, a one-line corollary; at runs, being verified is verifiable (`verified_verifiable`)."
-  },
-  "Becoming.Ideals.interior_sub": {
-   "module": "Becoming.Verification",
-   "category": "support",
-   "reason": "The interior lies within the class: `InteriorBy.holds` read on classes, a one-line unpacking; at runs it is `Verified.holds`."
   },
   "Becoming.Ideals.verifiable_compl_refutable_iff": {
    "module": "Becoming.Verification",
@@ -1742,10 +1712,1052 @@
    "category": "support",
    "reason": "the counting step of the whole-number descent: an amount not rising whose later falls are not refuted exceeds every bound. Since R29 falls_stop_unrefuted is proved as the whole-number instance of Amounts.rests_unrefuted, so nothing on the base uses it; space-and-its-parts cites it"
   },
-  "Becoming.Copying.le_of_add_le_add": {
-   "module": "Becoming.Copying",
-   "category": "support",
-   "reason": "an arithmetic lemma of `Nat` proved without `propext`: adding the same amount on the left keeps no more than the order. Its only user, Copying.le_sub_of_add, was removed by R31 as a copy of Naturals.le_sub_of_add_le in Becoming.Prelude, so nothing uses it"
+  "Becoming.Ideals.AdheresBy.adheres": {
+   "module": "Becoming.Ideals",
+   "category": "restates",
+   "reason": "the hull's idempotence for any family of ideals (what adheres to the classes adhering to a class adheres to it); its case of runs is Horizon's `Adheres.adheres`, on the base. It took the entry of `Ideals.hull_hull`, the forwarder R32 removed"
+  },
+  "Becoming.Lexical.Crossed.incomparable": {
+   "module": "Becoming.Lexical",
+   "category": "model-witness",
+   "reason": "crossed tiers leave the two alternatives unranked; read in the constructed handover model of `Becoming.Frontier` (AlignmentDirection, ported by F3J). It took the entry of `Requirement.Handover.crossed_unranked`, the forwarder R32 removed"
+  },
+  "Becoming.PartialReadout.paired_exact": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "a fact about the constructed channel model (exactness surviving compression); the general law is read on runs as `Runs.retained_exact`. It took the entry of `PartialReadout.parity_exact`, the forwarder R32 removed"
+  }
+ },
+ "instances": {
+  "Becoming.boundaryInvariant_iff_determinate": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.Affects",
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.BoundaryFlows.boundaryInvariant_iff_determinate"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.BoundaryFlows.boundaryInvariant_iff_determinate` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.Affects`, `Becoming.Web`"
+  },
+  "Becoming.boundaryInvariant_iff_standpointInvariant": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.Affects",
+    "Becoming.Flow.WithinReach",
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.BoundaryFlows.boundaryInvariant_iff_standpointInvariant"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.BoundaryFlows.boundaryInvariant_iff_standpointInvariant` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.Affects`, `Becoming.Flow.WithinReach`, `Becoming.Web`"
+  },
+  "Becoming.subTrue_member": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.Affects",
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.BoundaryFlows.subTrue_member"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.BoundaryFlows.subTrue_member` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.Affects`, `Becoming.Web`"
+  },
+  "Becoming.bounded_invariant_iff": {
+   "base": [
+    "Becoming.Flow.Affects",
+    "Becoming.Flow.WithinReach",
+    "Becoming.World",
+    "Becoming.World.Relatum",
+    "Becoming.World.flow",
+    "Becoming.World.web"
+   ],
+   "forwarders": [
+    "Becoming.BoundaryWorlds.bounded_invariant_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.BoundaryWorlds.bounded_invariant_iff` stated, applying this law to `Becoming.Flow.Affects`, `Becoming.Flow.WithinReach`, `Becoming.World`, `Becoming.World.Relatum`, `Becoming.World.flow`, `Becoming.World.web`"
+  },
+  "Becoming.Listed.identityDecided": {
+   "base": [
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.CensusWebs.census_identityDecided"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.CensusWebs.census_identityDecided` stated, applying this law to `Becoming.Web`"
+  },
+  "Becoming.Counts.listed_over_stretch": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Arises",
+    "Becoming.Web.Ceases"
+   ],
+   "forwarders": [
+    "Becoming.CensusWebs.listed_over_stretch"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.CensusWebs.listed_over_stretch` stated, applying this law to `Becoming.Web`, `Becoming.Web.Arises`, `Becoming.Web.Ceases`"
+  },
+  "Becoming.Specker.indexed_met": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.ContextualRuns.specker_in_context"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ContextualRuns.specker_in_context` stated, applying this law to `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.undominated_has_iff": {
+   "base": [
+    "Becoming.Extension",
+    "Becoming.Frame"
+   ],
+   "forwarders": [
+    "Becoming.Courses.extension_frontier_has_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Courses.extension_frontier_has_iff` stated, applying this law to `Becoming.Extension`, `Becoming.Frame`"
+  },
+  "Becoming.not_within_of_closed": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.Shares",
+    "Becoming.Flow.WithinSystem",
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.Courses.not_within_system_of_closed"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Courses.not_within_system_of_closed` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.Shares`, `Becoming.Flow.WithinSystem`, `Becoming.Web`"
+  },
+  "Becoming.every_event_within_iff": {
+   "base": [
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.Courses.selections_within_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Courses.selections_within_iff` stated, applying this law to `Becoming.Web`"
+  },
+  "Becoming.Readout.agree_iff_parts": {
+   "base": [
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.Courses.steps_agree_iff_levels"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Courses.steps_agree_iff_levels` stated, applying this law to `Becoming.Web`"
+  },
+  "Becoming.Readout.supplied_agree_iff_parts": {
+   "base": [
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.Courses.supplied_agree_iff_levels"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Courses.supplied_agree_iff_levels` stated, applying this law to `Becoming.Web`"
+  },
+  "Becoming.closure_iff_certified": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.Shares",
+    "Becoming.Flow.WithinSystem",
+    "Becoming.Web"
+   ],
+   "forwarders": [
+    "Becoming.Courses.system_iff_certified"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Courses.system_iff_certified` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.Shares`, `Becoming.Flow.WithinSystem`, `Becoming.Web`"
+  },
+  "Becoming.Derivation.closure_throughout_iff": {
+   "base": [
+    "Becoming.Scope",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.Derivation.Scope.closure_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Derivation.Scope.closure_iff` stated, applying this law to `Becoming.Scope`, `Generative.Process`"
+  },
+  "Becoming.Derivation.countermodel_excludes": {
+   "base": [
+    "Becoming.Scope",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.Derivation.Scope.countermodel"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Derivation.Scope.countermodel` stated, applying this law to `Becoming.Scope`, `Generative.Process`"
+  },
+  "Becoming.Derivation.discharged_throughout": {
+   "base": [
+    "Becoming.Scope",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.Derivation.Scope.discharged"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Derivation.Scope.discharged` stated, applying this law to `Becoming.Scope`, `Generative.Process`"
+  },
+  "Becoming.Derivation.lemma_throughout": {
+   "base": [
+    "Becoming.Scope",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.Derivation.Scope.lemma_closed"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Derivation.Scope.lemma_closed` stated, applying this law to `Becoming.Scope`, `Generative.Process`"
+  },
+  "Becoming.Derivation.relative_throughout": {
+   "base": [
+    "Becoming.Scope",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.Derivation.Scope.relative"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Derivation.Scope.relative` stated, applying this law to `Becoming.Scope`, `Generative.Process`"
+  },
+  "Becoming.ListsOnce.length_eq": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.present"
+   ],
+   "forwarders": [
+    "Becoming.Flow.present_listsOnce_length"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Flow.present_listsOnce_length` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.present`"
+  },
+  "Becoming.Numbers.le_length": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.present"
+   ],
+   "forwarders": [
+    "Becoming.Flow.present_number_le"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Flow.present_number_le` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.present`"
+  },
+  "Becoming.Numbers.unique": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.present"
+   ],
+   "forwarders": [
+    "Becoming.Flow.present_number_unique"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Flow.present_number_unique` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.present`"
+  },
+  "Becoming.numbers_iff_decided": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.present"
+   ],
+   "forwarders": [
+    "Becoming.Flow.present_numbers_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Flow.present_numbers_iff` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.present`"
+  },
+  "Becoming.numbers_iff_numbersBy_eq": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.present"
+   ],
+   "forwarders": [
+    "Becoming.Flow.present_numbers_iff_by_eq"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Flow.present_numbers_iff_by_eq` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.present`"
+  },
+  "Becoming.of_listsOnce": {
+   "base": [
+    "Becoming.Flow",
+    "Becoming.Flow.present"
+   ],
+   "forwarders": [
+    "Becoming.Flow.present_of_listsOnce"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Flow.present_of_listsOnce` stated, applying this law to `Becoming.Flow`, `Becoming.Flow.present`"
+  },
+  "Becoming.Lexical.BasicPriority.above": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.Priority",
+    "Becoming.Lexical.Frame.Above"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.Priority.above"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.Priority.above` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.Priority`, `Becoming.Lexical.Frame.Above`"
+  },
+  "Becoming.Lexical.classified_extremes_iff_of_decided": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.classifiedOn",
+    "Becoming.Lexical.Frame.fresh"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.classifiedOn_extremes_iff_of_decided"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.classifiedOn_extremes_iff_of_decided` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.classifiedOn`, `Becoming.Lexical.Frame.fresh`"
+  },
+  "Becoming.Lexical.classified_none_iff": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.classifiedOn",
+    "Becoming.Lexical.Frame.fresh",
+    "Becoming.Lexical.Frame.old"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.classifiedOn_none_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.classifiedOn_none_iff` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.classifiedOn`, `Becoming.Lexical.Frame.fresh`, `Becoming.Lexical.Frame.old`"
+  },
+  "Becoming.Requirement.required_under_every_classification": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.Options",
+    "Becoming.FrontierFrames.classifiedOn",
+    "Becoming.Lexical.Frame.fresh",
+    "Becoming.Lexical.Frame.old"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.classifiedOn_required"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.classifiedOn_required` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.Options`, `Becoming.FrontierFrames.classifiedOn`, `Becoming.Lexical.Frame.fresh`, `Becoming.Lexical.Frame.old`"
+  },
+  "Becoming.Lexical.classified_robust_iff_of_decided": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.classifiedOn",
+    "Becoming.Lexical.Frame.fresh",
+    "Becoming.Lexical.Frame.old"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.classifiedOn_robust_iff_of_decided"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.classifiedOn_robust_iff_of_decided` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.classifiedOn`, `Becoming.Lexical.Frame.fresh`, `Becoming.Lexical.Frame.old`"
+  },
+  "Becoming.Lexical.classified_robust_iff_of_em": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.classifiedOn",
+    "Becoming.Lexical.Frame.fresh",
+    "Becoming.Lexical.Frame.old"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.classifiedOn_robust_iff_of_em"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.classifiedOn_robust_iff_of_em` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.classifiedOn`, `Becoming.Lexical.Frame.fresh`, `Becoming.Lexical.Frame.old`"
+  },
+  "Becoming.Requirement.Required.means": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.Options"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.means"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.means` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.Options`"
+  },
+  "Becoming.Requirement.Required.performed": {
+   "base": [
+    "Becoming.Frame",
+    "Becoming.FrontierFrames.Options"
+   ],
+   "forwarders": [
+    "Becoming.FrontierFrames.performed"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.FrontierFrames.performed` stated, applying this law to `Becoming.Frame`, `Becoming.FrontierFrames.Options`"
+  },
+  "Becoming.SameAhead.new_each": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.new_each"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.new_each` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Identification.rests_of_lasso": {
+   "base": [
+    "Becoming.Parting.RightAt",
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.rests_of_lasso"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.rests_of_lasso` stated, applying this law to `Becoming.Parting.RightAt`, `Becoming.Parting.course`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.Identification.sameAhead_iff_below": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.sameAhead_iff_below"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.sameAhead_iff_below` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Identification.sameAhead_iff_classes": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.sameAhead_iff_classes"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.sameAhead_iff_classes` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Identification.sameAhead_iff_within": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.sameAhead_iff_within"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.sameAhead_iff_within` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.separated_of_whole": {
+   "base": [
+    "Becoming.Courses.reachedFrom"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.separated_of_reached"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.separated_of_reached` stated, applying this law to `Becoming.Courses.reachedFrom`"
+  },
+  "Becoming.separation_faithful_iff": {
+   "base": [
+    "Becoming.Courses.reachedFrom"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.separation_faithful_iff_reached"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.separation_faithful_iff_reached` stated, applying this law to `Becoming.Courses.reachedFrom`"
+  },
+  "Becoming.finitely_many_states_iff_lasso": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.states_iff_lasso"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.states_iff_lasso` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.Identification.withBound_accords": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.IdentificationRuns.withBound_accords"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.IdentificationRuns.withBound_accords` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.Learning.lumped_right_iff": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.LearningRuns.carried_right_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.LearningRuns.carried_right_iff` stated, applying this law to `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Learning.determines_lumped_iff": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.LearningRuns.determines_iff_lumped_alike"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.LearningRuns.determines_iff_lumped_alike` stated, applying this law to `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Learning.lasso_of_rest": {
+   "base": [
+    "Becoming.Parting.RightAt",
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.LearningRuns.lasso_of_right"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.LearningRuns.lasso_of_right` stated, applying this law to `Becoming.Parting.RightAt`, `Becoming.Parting.course`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.Learning.merged_bound": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.LearningRuns.merged_bound"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.LearningRuns.merged_bound` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.Learning.missed_before": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.LearningRuns.missed_before"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.LearningRuns.missed_before` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.Learning.lumped_world_right": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.LearningRuns.world_carried_right"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.LearningRuns.world_carried_right` stated, applying this law to `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Listed.across": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Arises",
+    "Becoming.Web.Ceases",
+    "Becoming.Web.Census",
+    "Becoming.Web.instDecidableArises",
+    "Becoming.Web.instDecidableCeases"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.across"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.across` stated, applying this law to `Becoming.Web`, `Becoming.Web.Arises`, `Becoming.Web.Ceases`, `Becoming.Web.Census`, `Becoming.Web.instDecidableArises`, `Becoming.Web.instDecidableCeases`"
+  },
+  "Becoming.Listed.comings_within": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Arises",
+    "Becoming.Web.Ceases",
+    "Becoming.Web.Census",
+    "Becoming.Web.instDecidableArises",
+    "Becoming.Web.instDecidableCeases"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.arisings_within"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.arisings_within` stated, applying this law to `Becoming.Web`, `Becoming.Web.Arises`, `Becoming.Web.Ceases`, `Becoming.Web.Census`, `Becoming.Web.instDecidableArises`, `Becoming.Web.instDecidableCeases`"
+  },
+  "Becoming.ceasing_needs_arising": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Arises",
+    "Becoming.Web.Ceases",
+    "Becoming.Web.instDecidableCeases"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.ceasing_needs_arising"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.ceasing_needs_arising` stated, applying this law to `Becoming.Web`, `Becoming.Web.Arises`, `Becoming.Web.Ceases`, `Becoming.Web.instDecidableCeases`"
+  },
+  "Becoming.Listed.ceasing_of_outpacing": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Arises",
+    "Becoming.Web.Ceases",
+    "Becoming.Web.Census",
+    "Becoming.Web.instDecidableArises"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.ceasing_of_outpacing"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.ceasing_of_outpacing` stated, applying this law to `Becoming.Web`, `Becoming.Web.Arises`, `Becoming.Web.Ceases`, `Becoming.Web.Census`, `Becoming.Web.instDecidableArises`"
+  },
+  "Becoming.ceasing_steps_found": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Ceases"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.ceasing_steps_found"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.ceasing_steps_found` stated, applying this law to `Becoming.Web`, `Becoming.Web.Ceases`"
+  },
+  "Becoming.Listed.ceasings_within": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Arises",
+    "Becoming.Web.Ceases",
+    "Becoming.Web.Census",
+    "Becoming.Web.instDecidableArises",
+    "Becoming.Web.instDecidableCeases"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.ceasings_within"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.ceasings_within` stated, applying this law to `Becoming.Web`, `Becoming.Web.Arises`, `Becoming.Web.Ceases`, `Becoming.Web.Census`, `Becoming.Web.instDecidableArises`, `Becoming.Web.instDecidableCeases`"
+  },
+  "Becoming.keep_pace": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Arises",
+    "Becoming.Web.Ceases",
+    "Becoming.Web.instDecidableArises",
+    "Becoming.Web.instDecidableCeases"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.keep_pace"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.keep_pace` stated, applying this law to `Becoming.Web`, `Becoming.Web.Arises`, `Becoming.Web.Ceases`, `Becoming.Web.instDecidableArises`, `Becoming.Web.instDecidableCeases`"
+  },
+  "Becoming.persists": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Ceases"
+   ],
+   "forwarders": [
+    "Becoming.ListedWebs.persists"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.ListedWebs.persists` stated, applying this law to `Becoming.Web`, `Becoming.Web.Ceases`"
+  },
+  "Becoming.lumped_const_iff": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.act",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.MoveRuns.formed_const_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.MoveRuns.formed_const_iff` stated, applying this law to `Becoming.Run`, `Becoming.Run.act`, `Generative.Process`"
+  },
+  "Becoming.lumped_iff_singleValued": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.act",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.MoveRuns.formed_iff_singleValued"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.MoveRuns.formed_iff_singleValued` stated, applying this law to `Becoming.Run`, `Becoming.Run.act`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.lumped_upto_iff": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.act",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.MoveRuns.formed_upto_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.MoveRuns.formed_upto_iff` stated, applying this law to `Becoming.Run`, `Becoming.Run.act`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.no_policy_upto_iff": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.act",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.MoveRuns.no_policy_upto_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.MoveRuns.no_policy_upto_iff` stated, applying this law to `Becoming.Run`, `Becoming.Run.act`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.reading_le": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.act",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.MoveRuns.reading_le_run"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.MoveRuns.reading_le_run` stated, applying this law to `Becoming.Run`, `Becoming.Run.act`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.PartialReadout.exact_exists_iff": {
+   "base": [
+    "Becoming.PartialReadout.Runs.featureAt",
+    "Becoming.PartialReadout.Runs.prefixBefore",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PartialReadout.Runs.exact_exists_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PartialReadout.Runs.exact_exists_iff` stated, applying this law to `Becoming.PartialReadout.Runs.featureAt`, `Becoming.PartialReadout.Runs.prefixBefore`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.PartialReadout.ExactWithin.lumped": {
+   "base": [
+    "Becoming.PartialReadout.Runs.featureAt",
+    "Becoming.PartialReadout.Runs.prefixBefore",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PartialReadout.Runs.exact_lumped"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PartialReadout.Runs.exact_lumped` stated, applying this law to `Becoming.PartialReadout.Runs.featureAt`, `Becoming.PartialReadout.Runs.prefixBefore`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.PartialReadout.ExactWithin.sound": {
+   "base": [
+    "Becoming.PartialReadout.Runs.featureAt",
+    "Becoming.PartialReadout.Runs.prefixBefore",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PartialReadout.Runs.exact_sound"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PartialReadout.Runs.exact_sound` stated, applying this law to `Becoming.PartialReadout.Runs.featureAt`, `Becoming.PartialReadout.Runs.prefixBefore`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.PartialReadout.ExactWithin.retained": {
+   "base": [
+    "Becoming.PartialReadout.Runs.featureAt",
+    "Becoming.PartialReadout.Runs.prefixBefore",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PartialReadout.Runs.retained_exact"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PartialReadout.Runs.retained_exact` stated, applying this law to `Becoming.PartialReadout.Runs.featureAt`, `Becoming.PartialReadout.Runs.prefixBefore`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.PartialReadout.SoundWithin.mono": {
+   "base": [
+    "Becoming.PartialReadout.Runs.featureAt",
+    "Becoming.PartialReadout.Runs.prefixBefore",
+    "Becoming.Run",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PartialReadout.Runs.sound_mono"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PartialReadout.Runs.sound_mono` stated, applying this law to `Becoming.PartialReadout.Runs.featureAt`, `Becoming.PartialReadout.Runs.prefixBefore`, `Becoming.Run`, `Generative.Process`"
+  },
+  "Becoming.PartialReadout.SoundWithin.silent": {
+   "base": [
+    "Becoming.PartialReadout.Runs.featureAt",
+    "Becoming.PartialReadout.Runs.prefixBefore",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PartialReadout.Runs.sound_silent"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PartialReadout.Runs.sound_silent` stated, applying this law to `Becoming.PartialReadout.Runs.featureAt`, `Becoming.PartialReadout.Runs.prefixBefore`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Presentations.canonical_factor": {
+   "base": [
+    "Becoming.BranchingTest.Holds",
+    "Becoming.Frame"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.canonical_factor"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.canonical_factor` stated, applying this law to `Becoming.BranchingTest.Holds`, `Becoming.Frame`"
+  },
+  "Becoming.Presentations.canonical_factor_answers": {
+   "base": [
+    "Becoming.BranchingTest.Holds",
+    "Becoming.Frame"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.canonical_factor_answers"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.canonical_factor_answers` stated, applying this law to `Becoming.BranchingTest.Holds`, `Becoming.Frame`"
+  },
+  "Becoming.Presentations.relative_unique_correspondence": {
+   "base": [
+    "Becoming.BranchingTest.Holds",
+    "Becoming.Frame"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.correspondence"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.correspondence` stated, applying this law to `Becoming.BranchingTest.Holds`, `Becoming.Frame`"
+  },
+  "Becoming.Presentations.all_predicates_unique_correspondence": {
+   "base": [
+    "Becoming.Frame.realized",
+    "Becoming.PresentationFrames.everyPredicate",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.everyPredicate_correspondence"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.everyPredicate_correspondence` stated, applying this law to `Becoming.Frame.realized`, `Becoming.PresentationFrames.everyPredicate`, `Generative.Process`"
+  },
+  "Becoming.Presentations.all_predicates_force_injective": {
+   "base": [
+    "Becoming.Frame.realized",
+    "Becoming.PresentationFrames.everyPredicate",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.everyPredicate_injective"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.everyPredicate_injective` stated, applying this law to `Becoming.Frame.realized`, `Becoming.PresentationFrames.everyPredicate`, `Generative.Process`"
+  },
+  "Becoming.Presentations.all_predicates_relation_recoverable": {
+   "base": [
+    "Becoming.Frame.realized",
+    "Becoming.PresentationFrames.everyPredicate",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.everyPredicate_recoverable"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.everyPredicate_recoverable` stated, applying this law to `Becoming.Frame.realized`, `Becoming.PresentationFrames.everyPredicate`, `Generative.Process`"
+  },
+  "Becoming.Presentations.all_predicates_automatically_reduced": {
+   "base": [
+    "Becoming.Frame.realized",
+    "Becoming.PresentationFrames.everyPredicate",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.everyPredicate_reduced"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.everyPredicate_reduced` stated, applying this law to `Becoming.Frame.realized`, `Becoming.PresentationFrames.everyPredicate`, `Generative.Process`"
+  },
+  "Becoming.Presentations.all_predicates_every_relation": {
+   "base": [
+    "Becoming.Frame.realized",
+    "Becoming.PresentationFrames.everyPredicate",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.everyPredicate_saturated"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.everyPredicate_saturated` stated, applying this law to `Becoming.Frame.realized`, `Becoming.PresentationFrames.everyPredicate`, `Generative.Process`"
+  },
+  "Becoming.Presentations.all_predicates_separate": {
+   "base": [
+    "Becoming.Frame.realized",
+    "Becoming.PresentationFrames.everyPredicate",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.everyPredicate_separate"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.everyPredicate_separate` stated, applying this law to `Becoming.Frame.realized`, `Becoming.PresentationFrames.everyPredicate`, `Generative.Process`"
+  },
+  "Becoming.Presentations.separating_relation_blocks_descent": {
+   "base": [
+    "Becoming.BranchingTest.Holds",
+    "Becoming.JointFrame",
+    "Becoming.JointFrame.joint",
+    "Becoming.JointFrame.toFrame",
+    "Becoming.SameBranchingTests"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.joint_blocked"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.joint_blocked` stated, applying this law to `Becoming.BranchingTest.Holds`, `Becoming.JointFrame`, `Becoming.JointFrame.joint`, `Becoming.JointFrame.toFrame`, `Becoming.SameBranchingTests`"
+  },
+  "Becoming.Presentations.relation_descends_iff_saturated": {
+   "base": [
+    "Becoming.BranchingTest.Holds",
+    "Becoming.JointFrame",
+    "Becoming.JointFrame.joint",
+    "Becoming.JointFrame.toFrame"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.joint_descends_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.joint_descends_iff` stated, applying this law to `Becoming.BranchingTest.Holds`, `Becoming.JointFrame`, `Becoming.JointFrame.joint`, `Becoming.JointFrame.toFrame`"
+  },
+  "Becoming.Presentations.lift_exact_iff_saturated": {
+   "base": [
+    "Becoming.BranchingTest.Holds",
+    "Becoming.JointFrame",
+    "Becoming.JointFrame.joint",
+    "Becoming.JointFrame.toFrame"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.joint_image_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.joint_image_iff` stated, applying this law to `Becoming.BranchingTest.Holds`, `Becoming.JointFrame`, `Becoming.JointFrame.joint`, `Becoming.JointFrame.toFrame`"
+  },
+  "Becoming.Presentations.relational_reading_unique_on_used": {
+   "base": [
+    "Becoming.JointFrame",
+    "Becoming.JointFrame.joint"
+   ],
+   "forwarders": [
+    "Becoming.PresentationFrames.joint_reading_unique"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.PresentationFrames.joint_reading_unique` stated, applying this law to `Becoming.JointFrame`, `Becoming.JointFrame.joint`"
+  },
+  "Becoming.Presentations.reduced_presentations_same_kernel": {
+   "base": [
+    "Becoming.BranchingTest.Holds",
+    "Becoming.Frame"
+   ],
+   "forwarders": [
+    "Becoming.Presentations.Tests.kernels_same"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Presentations.Tests.kernels_same` stated, applying this law to `Becoming.BranchingTest.Holds`, `Becoming.Frame`"
+  },
+  "Becoming.more_needs_open": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SeekingRuns.more_needs_open"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SeekingRuns.more_needs_open` stated, applying this law to `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.more_new": {
+   "base": [
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SeekingRuns.more_new"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SeekingRuns.more_new` stated, applying this law to `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Relabel.EquivariantChoice.untied": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SelectionRuns.choice_untied"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SelectionRuns.choice_untied` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Relabel.selected_alike_iff": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SelectionRuns.selected_alike_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SelectionRuns.selected_alike_iff` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Learning.selects_not_right_of_parted": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SelectionRuns.selects_not_right_of_parted"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SelectionRuns.selects_not_right_of_parted` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Relabel.singled_iff_untied": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SelectionRuns.singled_iff_untied"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SelectionRuns.singled_iff_untied` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Relabel.valued_alike_iff": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SelectionRuns.valued_alike_iff"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SelectionRuns.valued_alike_iff` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Learning.values_not_right_of_parted": {
+   "base": [
+    "Becoming.Parting.course",
+    "Becoming.Run",
+    "Becoming.Run.state",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.SelectionRuns.values_not_right_of_parted"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.SelectionRuns.values_not_right_of_parted` stated, applying this law to `Becoming.Parting.course`, `Becoming.Run`, `Becoming.Run.state`, `Generative.Process`"
+  },
+  "Becoming.Propagation.Square.not_respondsWithin": {
+   "base": [
+    "Becoming.Flow.exchangeGap",
+    "Becoming.StrengthFlows.flowUnder"
+   ],
+   "forwarders": [
+    "Becoming.StrengthFlows.square_no_finite_strength"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.StrengthFlows.square_no_finite_strength` stated, applying this law to `Becoming.Flow.exchangeGap`, `Becoming.StrengthFlows.flowUnder`"
+  },
+  "Becoming.StrictTransport.reason_of_strict_above": {
+   "base": [
+    "Becoming.Reach",
+    "Generative.Process"
+   ],
+   "forwarders": [
+    "Becoming.StrictTransport.reachable_reason"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.StrictTransport.reachable_reason` stated, applying this law to `Becoming.Reach`, `Generative.Process`"
+  },
+  "Becoming.ceases_at_a_step": {
+   "base": [
+    "Becoming.Web",
+    "Becoming.Web.Dissolves"
+   ],
+   "forwarders": [
+    "Becoming.Web.dissolves_between"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.Web.dissolves_between` stated, applying this law to `Becoming.Web`, `Becoming.Web.Dissolves`"
+  },
+  "Becoming.Listed.few_of_quiet": {
+   "base": [
+    "Becoming.Web.Census",
+    "Becoming.World",
+    "Becoming.World.ArisingRecurs",
+    "Becoming.World.Relatum",
+    "Becoming.World.web"
+   ],
+   "forwarders": [
+    "Becoming.World.few_active"
+   ],
+   "reason": "R32: the instance on the base that the removed pure forwarder `Becoming.World.few_active` stated, applying this law to `Becoming.Web.Census`, `Becoming.World`, `Becoming.World.ArisingRecurs`, `Becoming.World.Relatum`, `Becoming.World.web`"
   }
  }
 }

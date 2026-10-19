@@ -652,18 +652,6 @@ end RecordCoupled
 
 /-! ## A part that keeps its history -/
 
-namespace MoveFormation
-
-theorem zero_add : ∀ n : Nat, 0 + n = n
-  | 0 => rfl
-  | n + 1 => congrArg Nat.succ (zero_add n)
-
-theorem succ_add (a : Nat) : ∀ n : Nat, (a + 1) + n = (a + n) + 1
-  | 0 => rfl
-  | n + 1 => congrArg Nat.succ (succ_add a n)
-
-end MoveFormation
-
 section Kept
 
 variable {S : Type u} {A : Type w} {P : Process S A}

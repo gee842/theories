@@ -1,0 +1,40 @@
+{
+ "about": "Apart-register entries retired by R32 (20 October 2026): each names a theorem R32 removed, a pure forwarder (B10) or a copy of a statement now stated once in Becoming.Prelude (B9). Bytes as they stood in THEOREM-CONNECTIVITY-APART.json.",
+ "roots": {
+  "Becoming.Copying.le_of_add_le_add": {
+   "module": "Becoming.Copying",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext`: adding the same amount on the left keeps no more than the order. Its only user, Copying.le_sub_of_add, was removed by R31 as a copy of Naturals.le_sub_of_add_le in Becoming.Prelude, so nothing uses it"
+  },
+  "Becoming.Ideals.hull_hull": {
+   "module": "Becoming.Ideals",
+   "category": "restates",
+   "reason": "The hull's idempotence, `AdheresBy.adheres` read on the hull; its case of runs is Horizon's `Adheres.adheres` (a run adhering to the runs that adhere to a reading adheres to it), already on the base."
+  },
+  "Becoming.Ideals.hull_not_interior_compl": {
+   "module": "Becoming.Verification",
+   "category": "restates",
+   "reason": "The hull meets no ideal of the interior of the complement, `AdheresBy.not_interior_compl` read on classes; its case of runs is `Adheres.not_verified_compl`, stated on the base."
+  },
+  "Becoming.Ideals.interior_sub": {
+   "module": "Becoming.Verification",
+   "category": "support",
+   "reason": "The interior lies within the class: `InteriorBy.holds` read on classes, a one-line unpacking; at runs it is `Verified.holds`."
+  },
+  "Becoming.PartialReadout.parity_exact": {
+   "module": "Becoming.PartialReadout",
+   "category": "model-witness",
+   "reason": "a fact about the constructed channel model (exactness surviving compression); the general law is read on runs as `Runs.retained_exact`"
+  },
+  "Becoming.Requirement.Handover.crossed_unranked": {
+   "module": "Becoming.Frontier",
+   "category": "model-witness",
+   "reason": "a fact about the constructed handover model: crossed tiers leave the two alternatives unranked (AlignmentDirection, ported by F3J)"
+  },
+  "Becoming.Weights.truncation": {
+   "module": "Becoming.Weighted",
+   "category": "support",
+   "reason": "a sum over an appended list splits, for any weights (Weights.sum_append restated)"
+  }
+ }
+}
