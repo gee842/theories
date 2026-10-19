@@ -1,0 +1,10 @@
+<a id="d{D}-经由规则的捕获之读--the-readings-of-capture-through-the-rule"></a>
+### D{D}. 经由规则的捕获之读
+
+所在：[《中国思想的关系本体与生成之论》](../../../../theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md)（§8，及其[逐句对应](development/ro-relational-sources/passages.json)中的二柄、据有余而制不足与壹）；总章 §4（“Capture through the rule”）与 §10（元闭）；记录 [capture-through-the-rule](../../../../theories/becoming/results/records/capture-through-the-rule.md)；研究第 {N} 节。在 D45 的一个说明中决定，用 D47 与 D54 的关系类别。
+
+**决定。** 依所述范围采用。一、**二柄。** 「今君人者释其刑德而使臣用之，则君反制于臣矣」读作一个从所选出者的份额读出的选择规则（`ReadsShare`）：锁定之后回路不回转（`locked_stays`），保持方向的规则之值的扰动在下一读取步被吸收（`perturbation_absorbed`），只有改变规则怎样读才离开（`uniform_locks`）。此段仍为相分：韩非把回路读成利益相反者之间的控制，并把德缩为庆赏；理论把它陈述为一个选择与其规则之间的关系。二、**据有余而制不足。** 依比例读法读：规则按各类所持之比例读出时，持多者被偏向而持更多（`Counts.proportional_locks`），持少者持更少（`Counts.proportional_locks_down`）。此段读作依存于一个给予者（`withholding_absorbs`）之读并存；其目的，使国无敌，仍为相分。三、**壹赏、壹刑、壹教。** 读作一个在每个份额都偏向同一方向的读法：每条进程自第二个读取步之后锁定，且确切（`uniform_locks`、`Second.second_exact`）。此段读作同一选择之池（`Web.pooled_iff_member`）之读并存。四、**“胜者塑造规则”。** 读作前提 `ReadsShare`，即对读法所设的假设；所推出的是这样的规则持住结果，而不是任何实际的规则读其所选出的份额。
+
+**理由。** 每条读法列出它所依的声明，所说不多于它们所证。三段所说的回路，脊柱原来只分别有其部分（`Becoming.Capture`、`Becoming.Pace`）；闭合它的诸律显示每段之中哪一部分是律、哪一部分是目的：锁定与离开是律；控制、等级与无敌是这些段落的方向，保留为相分。
+
+**会改变它的。** 由原文与注疏论证的、使所言之规则不读其所选出之份额的读法；一条与某读法相矛盾的脊柱定律；以实数份额、读份额以外之物的规则或多层陈述回路，而锁定在其下不成立。

@@ -1,0 +1,35 @@
+{
+ "what": "dry core run with Becoming.RuleCapture joined, on the branch (BECOMING_OUT outside the repository); the landing run on main gives the receipt that counts",
+ "utc": "20261019T140540.806407Z",
+ "status": "passed",
+ "source_commit": {
+  "main": "11a3c65e49dc6281b992748622fcb7dae59acd47",
+  "copied": [
+   "Becoming.RuleCapture.lean",
+   "Becoming.lean",
+   "check_becoming.py"
+  ]
+ },
+ "core_modules": 290,
+ "rule_capture": {
+  "theorems": 53,
+  "declarations": 74,
+  "kernel_checked": true,
+  "layer": "core"
+ },
+ "rule_capture_axioms_nonempty": [],
+ "market_names": {
+  "Becoming.Flow.Balances.rise_paid_from_beyond": [
+   "paid"
+  ],
+  "Becoming.Coverage.charge": [
+   "charge"
+  ]
+ },
+ "connectivity": {
+  "spine_theorems": 11248,
+  "apart": 481,
+  "apart_roots_unclassified": [],
+  "register_entries_not_apart_roots": []
+ }
+}

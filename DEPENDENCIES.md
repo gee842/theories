@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-277 registered results: 260 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 710 curated edges join 231 results to the results they draw on.
+278 registered results: 261 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 712 curated edges join 232 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -30,6 +30,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [becoming-spine-instances][] ← <a id="becoming-spine-instances--metaethical-core-characterization"></a>[metaethical-core-characterization][]
 - [becoming-stepwise-reading][] ← <a id="becoming-stepwise-reading--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][] · <a id="becoming-stepwise-reading--metaethical-core-characterization"></a>[metaethical-core-characterization][] · <a id="becoming-stepwise-reading--becoming-renewal-reading"></a>[becoming-renewal-reading][]
 - [bounded-census-keeps-pace][] ← <a id="bounded-census-keeps-pace--census-balance"></a>[census-balance][] · <a id="bounded-census-keeps-pace--ceasing-needs-arising"></a>[ceasing-needs-arising][] · <a id="bounded-census-keeps-pace--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="bounded-census-keeps-pace--space-and-its-parts"></a>[space-and-its-parts][] · <a id="bounded-census-keeps-pace--map-of-premises"></a>[map-of-premises][] · <a id="bounded-census-keeps-pace--more-needs-renewers"></a>[more-needs-renewers][]
+- [capture-through-the-rule][] ← <a id="capture-through-the-rule--how-fast-a-rule-may-change"></a>[how-fast-a-rule-may-change][] · <a id="capture-through-the-rule--target-capture"></a>[target-capture][]
 - [causal-models-as-processes][] ← <a id="causal-models-as-processes--experiment-needs-return"></a>[experiment-needs-return][] · <a id="causal-models-as-processes--joint-difference-making"></a>[joint-difference-making][]
 - [ceasing-needs-arising][] ← <a id="ceasing-needs-arising--census-balance"></a>[census-balance][] · <a id="ceasing-needs-arising--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="ceasing-needs-arising--more-needs-renewers"></a>[more-needs-renewers][] · <a id="ceasing-needs-arising--map-of-premises"></a>[map-of-premises][] · <a id="ceasing-needs-arising--space-and-its-parts"></a>[space-and-its-parts][] · <a id="ceasing-needs-arising--laws-of-one-step"></a>[laws-of-one-step][]
 - [census-balance][] ← <a id="census-balance--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="census-balance--more-needs-renewers"></a>[more-needs-renewers][] · <a id="census-balance--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][]
@@ -265,6 +266,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [binding-preserving-substitution]: theories/becoming/results/records/binding-preserving-substitution.md
 [bounded-census-keeps-pace]: theories/becoming/results/records/bounded-census-keeps-pace.md
 [branching-tests-bisimulation]: theories/becoming/results/records/branching-tests-bisimulation.md
+[capture-through-the-rule]: theories/becoming/results/records/capture-through-the-rule.md
 [causal-models-as-processes]: theories/becoming/results/records/causal-models-as-processes.md
 [ceasing-needs-arising]: theories/becoming/results/records/ceasing-needs-arising.md
 [census-balance]: theories/becoming/results/records/census-balance.md

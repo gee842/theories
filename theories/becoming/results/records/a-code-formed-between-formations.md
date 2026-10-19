@@ -97,6 +97,8 @@ Aliases: `a code formed between formations`, `shared codes`, `约定俗成`, `�
 ### History
 
 - 19 October 2026: added (SC), the second gap of RO's chapter on the Chinese sources; study section 210, readings D56.
+- 19 October 2026, RC (capture through the rule): passages.json re-pointed after reading the change (passages.json: RC: 二柄, 据有余而制不足 and 壹 cite Becoming.RuleCapture and its record, and 二柄's gap is marked closed). The claim is unchanged.
+- 19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.
 
 </details>
 

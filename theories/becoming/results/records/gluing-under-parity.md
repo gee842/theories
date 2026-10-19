@@ -122,6 +122,7 @@ Aliases: `when readings in context glue, for parity`, `奇偶约束下语境中�
 - 19 October 2026, SG (junctures, commuting laws and the third value): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only where SG added text: SG added its records and open items to the "When the course branches" and "What a description keeps and loses" rows, a section 8.3 item and a rerun sentence in the integration row. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
 - 19 October 2026, MD1 (mutual dependence and the pace it gives): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: MD1 revised D39 (mutual dependence for "a highly entangled system", the loops following from it), keeping its earlier text, with its index row and lineage bullet). The claim is unchanged.
+- 19 October 2026, RC (capture through the rule): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: RC added decision D57, its index row and a lineage line). The claim is unchanged.
 - 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](gluing-under-parity.json).
 
 <a id="earlier-text--早期文本"></a>

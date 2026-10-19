@@ -50,12 +50,12 @@
     "nondual-method-not-proof"
   ],
   "validation_scope": {
-    "en": "verify_ro.py passes: 248 passages (95 agreements, 94 exact scopes, 59 divergences), every fragment verbatim in its preserved text (93 files bound by SHA-256), 578 declarations in the current receipt, 119 records, the atlas ids in an excerpt rebuilt from the two archives, and the chapter's tables. Five mappers drafted; the integrator checked every quotation, declaration and record and read every reading, correcting six (study section 207). Not independently reviewed; no collation with a printed edition.",
-    "zh": "verify_ro.py 通过：248 段（相合 95、定域 94、相分 59），每段原文逐字见于所存文本（93 个文件以 SHA-256 绑定），578 个声明在现行回执中，119 份记录，图谱编号在由两个存档重建的摘录中，以及章节之表。五个映射者起草；整合者核对每条引文、声明与记录，通读每条读法，改正六处（研究第 207 节）。未经独立审查；未与刻本对校。"
+    "en": "verify_ro.py passes: 248 passages (95 agreements, 94 exact scopes, 59 divergences), every fragment verbatim in its preserved text (93 files bound by SHA-256), 584 declarations in the current receipt, 120 records, the atlas ids in an excerpt rebuilt from the two archives, and the chapter's tables. Five mappers drafted; the integrator checked every quotation, declaration and record and read every reading, correcting six (study section 207). Not independently reviewed; no collation with a printed edition.",
+    "zh": "verify_ro.py 通过：248 段（相合 95、定域 94、相分 59），每段原文逐字见于所存文本（93 个文件以 SHA-256 绑定），584 个声明在现行回执中，120 份记录，图谱编号在由两个存档重建的摘录中，以及章节之表。五个映射者起草；整合者核对每条引文、声明与记录，通读每条读法，改正六处（研究第 207 节）。未经独立审查；未与刻本对校。"
   },
   "next_delta": {
-    "en": "Five gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws.",
-    "zh": "五项缺口，各先认领再写：水平的双向调节及迟到读法之形；经由规则的捕获；以闭包层级分等的次序；跨多个条件的分；跨律比较容忍。"
+    "en": "Four gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; a graded order by closure level; division across several conditions; tolerance compared across laws.",
+    "zh": "四项缺口，各先认领再写：水平的双向调节及迟到读法之形；以闭包层级分等的次序；跨多个条件的分；跨律比较容忍。"
   },
   "correspondence": {
     "en": "Ren, 19 October 2026, after sharing the 易道体系图 v1.3.0: “整个中国思想的源头，道家，易经，以及整个文字符号系统，包括武（止戈 ），和一些其他的理论体系中，例如儒家，也延续了这一套“relational ontology”，因此，我希望你好好阅读，把两者之间的关系map出来，可以用sub agents，然后再体系性的整合进我们的理论” (provenance, not warrant). The chapter maps 248 passages of the 易传 beyond Y1–Y4, the 老子 with three commentaries and the excavated witnesses, the 儒家 line, the script with 止戈, 庄子 and 玄学, 墨辩 and 名家, 兵家, 法家, 管子 and 纵横, the Buddhist lines received in China, and others. Reading (the AI's, D54): the thesis holds for what the lines start from and observe, its universal forms mostly need a scope, and four non-relational overlays recur, each answered inside its tradition.",
@@ -116,18 +116,25 @@
         "en": "Closes the second gap (a code formed between formations); the passages 同则同之, 名无固宜, the 說文's 止戈 gloss and 书同文 are re-pointed to its laws.",
         "zh": "补上第二项缺口（在形成之间形成的编码）；同则同之、名无固宜、说文止戈之释与书同文四段改指向其律。"
       }
+    },
+    {
+      "id": "capture-through-the-rule",
+      "detail": {
+        "en": "Closes the third gap (capture through the rule); the passages 二柄, 据有余而制不足 and 壹 are re-pointed to its laws.",
+        "zh": "补上第三项缺口（经由规则的捕获）；二柄、据有余而制不足与壹三段改指向其律。"
+      }
     }
   ],
   "references": [
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "statement",
-      "sha256": "7698c5ec4f075ba36c3940ffa62c6a61b98bbc829826b2cfe756db5b4cd7ed9d"
+      "sha256": "1be5cc4fbce5a30ec6cbb52587cfdf9a96f94be1f449240a968a3998e831e8b2"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
       "role": "integration",
-      "sha256": "a604c21a4a85091e5c269e4d13ba94b6b4906a4ed6763b5703e8431048e044ca"
+      "sha256": "255cfdc2121d55930a33404a9e91410c74024278b572975b8cfa18960d00d15d"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/verify_ro.py",
@@ -196,6 +203,10 @@
     {
       "en": "19 October 2026, RO's map guard: verify_ro.py re-pointed after reading the change (it also runs build_passages.py --check where the archives are present, so passages.json is checked to be the build of the mappers' entries and FIXES, and an edit made in place fails). The claim is unchanged.",
       "zh": "2026年10月19日，RO 对应表的检查：读过改动后，verify_ro.py 重新指向（在存档在场时它也运行 build_passages.py --check，检查 passages.json 就是由映射者条目与 FIXES 构建的结果，就地改动不再通过）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RC (capture through the rule): the third gap closed by Becoming.RuleCapture (capture-through-the-rule); three passages re-pointed to its laws (declarations, the record, a sentence of each reading) through the build's FIXES and 二柄's gap marked closed, and the gap marked closed in chapter sections 5.7, 8 and 11; the next step lists the four gaps still open; the counts verify_ro.py reports brought to 584 declarations and 120 records; CHINESE-SOURCES-AND-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
+      "zh": "2026年10月19日，RC（经由规则的捕获）：第三项缺口由 Becoming.RuleCapture（capture-through-the-rule）补上；三段经构建的 FIXES 改指向其律（声明、记录、各读法中的一句），二柄的缺口标为已补上，章节第 5.7、8、11 节亦然；下一步只列尚未补上的四项缺口；verify_ro.py 所报计数更新为 584 个声明、120 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json 重新指向。评估其余不变。"
     }
   ]
 }

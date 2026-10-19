@@ -351,6 +351,55 @@ FIXES = {
                              'only from a form kept outside the imposition (SharedCodes: run_from_imposition, outside_needed).'))],
         'why': ('SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its '
                 'laws and record added and the sentence that named the gap replaced (both languages)')},
+    'hanfei-er-bing': {
+        'declarations_add': ['Becoming.RuleCapture.locked_stays',
+                             'Becoming.RuleCapture.favouring_locks',
+                             'Becoming.RuleCapture.perturbation_absorbed',
+                             'Becoming.RuleCapture.uniform_locks'],
+        'records_add': ['capture-through-the-rule'],
+        'reading_sub': [('脊柱分别有这两部分，没有证明它们闭合成回路（见 gap）。',
+                         ('回路的闭合由 RuleCapture 证明：规则从所选出者的份额单调地读出时，锁定之后回路不回转（locked_stays），没有规则反对读法时在第一个读取步锁定（favouring_locks），'
+                          '保持方向的规则扰动在下一读取步被吸收（perturbation_absorbed），只有改变规则怎样读才离开（uniform_locks）。'))],
+        'reading_en_sub': [('whose parts the spine has (Pace.rule_at_reading, Capture) but whose closure it does not prove.',
+                            ('whose closure RuleCapture proves: with the rule read monotonically from the share it selects, the '
+                             'loop locks (locked_stays; at the first reading step where no rule turns against the reading, '
+                             'favouring_locks), a perturbation of the rule that keeps its direction is absorbed at the next '
+                             'reading step (perturbation_absorbed), and only a change of how the rule reads leaves '
+                             '(uniform_locks).'))],
+        'gap_closed': ('RC (Becoming.RuleCapture, record capture-through-the-rule, study section 213); the statement above '
+                       'is kept as proposed. With the margin a natural number, as stated, (i) and (ii) hold at every step, '
+                       'not only at reading steps (Counts.margin_course, Counts.rises_strictly_along), and (iii) holds for '
+                       'every change of the margin (perturbation_absorbed). Where rules can favour the others, (i) and (ii) '
+                       'need the start locked (locked_stays; Alternating refutes them without it), (iii) holds exactly for '
+                       'perturbations keeping the direction (Reversed.not_absorbed), and leaving needs a change of h where '
+                       'the reading favours at every share (uniform_locks, exact by Second.second_exact). Readings D57.'),
+        'why': ('RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its '
+                'laws and record added and a sentence of each reading replaced or extended (both languages)')},
+    'guanzi-guoxu-ju-you-yu': {
+        'declarations_add': ['Becoming.RuleCapture.Counts.proportional_locks'],
+        'records_add': ['capture-through-the-rule'],
+        'reading_sub': [('两个可互替的供给者任一即足（either_suffices）。',
+                         ('两个可互替的供给者任一即足（either_suffices）。据有余而制不足若读作规则按各类所持之比例给出（比例读法），持多者被偏向而持得更多，'
+                          '回路不回转（Counts.proportional_locks）。'))],
+        'reading_en_sub': [('where two feeders would each suffice (either_suffices).',
+                            ('where two feeders would each suffice (either_suffices). Read as a rule given in proportion to what '
+                             'each kind holds, the kind holding more is favoured and holds more, and the loop does not turn back '
+                             '(Counts.proportional_locks).'))],
+        'why': ('RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its '
+                'laws and record added and a sentence of each reading replaced or extended (both languages)')},
+    'shangjunshu-yi-shang-yi-xing-yi-jiao': {
+        'declarations_add': ['Becoming.RuleCapture.uniform_locks',
+                             'Becoming.RuleCapture.Second.second_exact'],
+        'records_add': ['capture-through-the-rule'],
+        'reading_sub': [('商君书把壹作为为国之道；',
+                         ('壹读作一个在每个份额都偏向同一方向的读法时，每条进程自第二个读取步之后锁定，且确切（uniform_locks、Second.second_exact），只有改变规则怎样读才离开。'
+                          '商君书把壹作为为国之道；'))],
+        'reading_en_sub': [('(share_rises_through); the text takes',
+                            ('(share_rises_through); read as one reading favouring one way at every share, every course is locked '
+                             'from its second reading step, exactly, and only a change of how the rule reads leaves '
+                             '(uniform_locks, Second.second_exact); the text takes'))],
+        'why': ('RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its '
+                'laws and record added and a sentence of each reading replaced or extended (both languages)')},
 }
 
 

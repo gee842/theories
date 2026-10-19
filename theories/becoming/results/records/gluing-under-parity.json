@@ -529,7 +529,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "e2528613c6ebe7b2afcc55c45b24c00c28e23f2bd9ccceeb0d13a217af1d0bb9"
+      "sha256": "c39a8987d46ee47edfdd1c81d678a14ad0a047aff19204763a04512cf4c6a0e5"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -744,6 +744,10 @@
     {
       "en": "19 October 2026, MD1 (mutual dependence and the pace it gives): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: MD1 revised D39 (mutual dependence for \"a highly entangled system\", the loops following from it), keeping its earlier text, with its index row and lineage bullet). The claim is unchanged.",
       "zh": "2026年10月19日，MD1（相互依存及其给出的步速）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RC (capture through the rule): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: RC added decision D57, its index row and a lineage line). The claim is unchanged.",
+      "zh": "2026年10月19日，RC（经由规则的捕获）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

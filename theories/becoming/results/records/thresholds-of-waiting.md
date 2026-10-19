@@ -91,6 +91,7 @@ Aliases: `thresholds of waiting`, `等待的阈值`, `tolerance`, `Becoming.Tole
 - 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
 - 19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in sections 4, 8 and 9: SC added a section 4 paragraph on a code formed between formations, a clause to the collective continuation row, a section 8.3 item and a rerun sentence in the integration row, and brought the section 9 receipt and counts to its run. Read before re-pointing. The claim is unchanged.
+- 19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.
 
 </details>
 

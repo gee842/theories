@@ -105,6 +105,7 @@ import Becoming.HexagramSequences
 import Becoming.Withholding
 import Becoming.Widening
 import Becoming.Pace
+import Becoming.RuleCapture
 import Becoming.Passing
 import Becoming.JointKeeping
 import Becoming.Undecided
@@ -1276,6 +1277,18 @@ readings of the unfolding (`Becoming.Labelled`).
   stretch of `L` steps fixes every pair of courses with at most `N` states that held rules
   generate exactly when `L ≥ 2N - 1`; a course of configurations read whole is fixed by its
   first `N + 1` steps, exactly.
+* `Becoming.RuleCapture` (L4): a selection whose rule reads the share it selects. The fast step of
+  `Pace`'s two-level course is a selection and the rule read at a reading step is a monotone
+  function of the share. Where no rule turns against the reading the share falls at no step and the
+  course is locked from the step after its first reading step; on counts, under a margin read from
+  the share, the share falls at no step, rises strictly under a positive margin, and the margin
+  falls at no step from then on. Locked, neither share nor rule falls; a perturbation of the rule
+  that keeps its direction is absorbed at the next reading step; where the reading favours at
+  every share every course is locked from the step after its second reading step, exactly, so only
+  a change of the law leaves; two courses of a monotone law keep their order. Where rules can
+  favour the others the lock needs its start condition: a rule against the reading read one step
+  late alternates without end (`Alternating`), and a reversing perturbation carried across a
+  threshold locks the course the other way (`Reversed`).
 * `Becoming.Passing` (L4): a pattern that outlasts each of its carriers lasts only through
   passing. Read on a web whose activity is carrying, a pattern present at every step from `T`
   on with carriers brief for `d` has a carrier beginning within every `d` steps; under the

@@ -1761,6 +1761,11 @@
    "module": "Becoming.MutualDependence",
    "category": "general-structure",
    "reason": "Capture's share law iterated over generations, for any listing of offspring with carriers leaving at least a and others at most b; the base reads one step of it through support (CaptureWorlds.share_rises_of_unsupported), where the unsupported others leave none, so a reading on the base is the case b = 0 and adds no law"
+  },
+  "Becoming.RuleCapture.Counts.share_not_lower_counts": {
+   "module": "Becoming.RuleCapture",
+   "category": "restates",
+   "reason": "restates share_not_lower (Becoming.Capture) in the share order of counts, to show that the order the laws of RuleCapture read on courses is the comparison of Capture; share_not_lower is read on worlds by CaptureWorlds, and the order on courses by every other law of RuleCapture"
   }
  }
 }

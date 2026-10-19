@@ -9454,12 +9454,17 @@
     "Becoming.Law.perturbation_reabsorbed",
     "Becoming.Captured.rule_perturbation_changes",
     "Becoming.Pace.rule_at_reading",
-    "Becoming.Pace.byRule_reabsorbed"
+    "Becoming.Pace.byRule_reabsorbed",
+    "Becoming.RuleCapture.locked_stays",
+    "Becoming.RuleCapture.favouring_locks",
+    "Becoming.RuleCapture.perturbation_absorbed",
+    "Becoming.RuleCapture.uniform_locks"
    ],
    "records": [
     "target-capture",
     "how-fast-a-rule-may-change",
-    "selection-through-registration"
+    "selection-through-registration",
+    "capture-through-the-rule"
    ],
    "atlas_ids": [
     {
@@ -9472,8 +9477,8 @@
     }
    ],
    "relational": "刑德 is a selection one position applies to another; 韩非 reads the relation as control between parties whose interests are opposed, and warns that whoever holds the selection holds the other.",
-   "reading": "AI 读法：二柄是一个选择：以赏选择所奖者，被选者份额上升（share_rises_through）；规则持有结果：下一构形只依赖规则时扰动状态被吸收（perturbation_reabsorbed），扰动规则则改变结果（Captured.rule_perturbation_changes）。\"释其刑德而使臣用之，则君反制于臣\"指出被选者握住规则的回路：在读取步，下一规则是 h 从快层构形给出的（Pace.rule_at_reading）。脊柱分别有这两部分，没有证明它们闭合成回路（见 gap）。分歧在于：韩非以\"人臣之情…为重利\"立论，把关系读成利益相反者之间的控制；\"德\"被定义为庆赏，缩为选择工具（10 月 6 日研究已保留此反例）。理论从实际关系出发，不从相反利益出发。",
-   "reading_en": "The two handles are a selection whose carriers gain share (share_rises_through), and the rule holds the outcome (perturbation_reabsorbed); \"the ruler is controlled by the minister\" is the loop in which the selected come to write the rule, whose parts the spine has (Pace.rule_at_reading, Capture) but whose closure it does not prove. 韩非 frames the relation as control between opposed interests and narrows 德 to reward, which diverges from starting with actual relations.",
+   "reading": "AI 读法：二柄是一个选择：以赏选择所奖者，被选者份额上升（share_rises_through）；规则持有结果：下一构形只依赖规则时扰动状态被吸收（perturbation_reabsorbed），扰动规则则改变结果（Captured.rule_perturbation_changes）。\"释其刑德而使臣用之，则君反制于臣\"指出被选者握住规则的回路：在读取步，下一规则是 h 从快层构形给出的（Pace.rule_at_reading）。回路的闭合由 RuleCapture 证明：规则从所选出者的份额单调地读出时，锁定之后回路不回转（locked_stays），没有规则反对读法时在第一个读取步锁定（favouring_locks），保持方向的规则扰动在下一读取步被吸收（perturbation_absorbed），只有改变规则怎样读才离开（uniform_locks）。分歧在于：韩非以\"人臣之情…为重利\"立论，把关系读成利益相反者之间的控制；\"德\"被定义为庆赏，缩为选择工具（10 月 6 日研究已保留此反例）。理论从实际关系出发，不从相反利益出发。",
+   "reading_en": "The two handles are a selection whose carriers gain share (share_rises_through), and the rule holds the outcome (perturbation_reabsorbed); \"the ruler is controlled by the minister\" is the loop in which the selected come to write the rule, whose closure RuleCapture proves: with the rule read monotonically from the share it selects, the loop locks (locked_stays; at the first reading step where no rule turns against the reading, favouring_locks), a perturbation of the rule that keeps its direction is absorbed at the next reading step (perturbation_absorbed), and only a change of how the rule reads leaves (uniform_locks). 韩非 frames the relation as control between opposed interests and narrows 德 to reward, which diverges from starting with actual relations.",
    "mapper": "other",
    "gap": {
     "statement": "Capture through the rule (a join of Becoming.Pace and Becoming.Capture). In the paced course `Pace.paced f h reads`, let the fast configuration be a pair of counts (carriers c, others e) of a target and the rule a favour margin m : Nat. Hypotheses: (1) the fast step under margin m is a selection in which each carrier leaves at least a + m offspring and each other parent at most a, for a fixed a > 0 (the hypotheses of share_not_lower / share_rises at every step); (2) at a reading step (reads t = true) the next margin is h(c, e), with h monotone in the share (c * e' <= c' * e implies h(c, e) <= h(c', e')); off reading steps the margin is kept. Conclusions, from every start with c > 0 and e > 0: (i) the share does not fall at any step, and rises strictly at every step whose margin is positive; (ii) from the first reading step on, the margin at each reading step is at least the margin at the previous one; (iii) a change of the margin alone between reading steps is re-absorbed at the next reading step (the margin there is h of the share), so the course leaves a rising margin only through a change of h itself, not of the state or of the margin.",
@@ -9485,8 +9490,10 @@
      "Becoming.Law.perturbation_reabsorbed",
      "Becoming.Captured.rule_perturbation_changes"
     ],
-    "why_it_matters": "The loop in which the selected come to write the selection rule is 韩非's 君反制于臣, 管子's 据有余而制不足 and the meta-attractor of the OPENING. Capture keeps \"winners shape the rule\" as a reading it does not derive (its module header: \"What is not derived: ... that winners shape the rule\"), Captured is a two-state example in which the rule keeps itself rather than being written from the state, and Pace states a rule that reads the fast level without any share; no theorem joins them. With the join, the spine would state where escape needs the rule's reading h changed rather than the state, which is the live form of the 6 October study's question of who may revise the rule."
-   }
+    "why_it_matters": "The loop in which the selected come to write the selection rule is 韩非's 君反制于臣, 管子's 据有余而制不足 and the meta-attractor of the OPENING. Capture keeps \"winners shape the rule\" as a reading it does not derive (its module header: \"What is not derived: ... that winners shape the rule\"), Captured is a two-state example in which the rule keeps itself rather than being written from the state, and Pace states a rule that reads the fast level without any share; no theorem joins them. With the join, the spine would state where escape needs the rule's reading h changed rather than the state, which is the live form of the 6 October study's question of who may revise the rule.",
+    "closed": "RC (Becoming.RuleCapture, record capture-through-the-rule, study section 213); the statement above is kept as proposed. With the margin a natural number, as stated, (i) and (ii) hold at every step, not only at reading steps (Counts.margin_course, Counts.rises_strictly_along), and (iii) holds for every change of the margin (perturbation_absorbed). Where rules can favour the others, (i) and (ii) need the start locked (locked_stays; Alternating refutes them without it), (iii) holds exactly for perturbations keeping the direction (Reversed.not_absorbed), and leaving needs a change of h where the reading favours at every share (uniform_locks, exact by Second.second_exact). Readings D57."
+   },
+   "corrected": "RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its laws and record added and a sentence of each reading replaced or extended (both languages)"
   },
   {
    "id": "shangjunshu-jin-shi",
@@ -9574,12 +9581,15 @@
     "Becoming.Web.pooled_iff_member",
     "Becoming.Learning.selects_not_right_of_parted",
     "Becoming.Flow.unselected_beyond_coupling",
-    "Becoming.share_rises_through"
+    "Becoming.share_rises_through",
+    "Becoming.RuleCapture.uniform_locks",
+    "Becoming.RuleCapture.Second.second_exact"
    ],
    "records": [
     "what-pooled-coupling-reaches",
     "selection-through-registration",
-    "target-capture"
+    "target-capture",
+    "capture-through-the-rule"
    ],
    "atlas_ids": [
     {
@@ -9592,9 +9602,10 @@
     }
    ],
    "relational": "All reward, punishment and teaching pass through one selection; every relation of the people to the state is read through it.",
-   "reading": "AI 读法：\"壹\"使一切选择经过一个耦合：汇集退化为一员（pooled_iff_member）；凡这一读法归并的，经它的选择都分不开（selects_not_right_of_parted）；其耦合闭包之外的选择是盲的（unselected_beyond_coupling）；被这一选择持有的承载者份额上升（share_rises_through）。商君书把壹作为为国之道；脊柱给出壹的代价：选择的到达收窄为一个读法，被选者向这一读法聚集。分歧在方向：以收窄明为治。",
-   "reading_en": "壹 passes every selection through one coupling, so the pool is one member (pooled_iff_member), what that reading lumps none can separate (selects_not_right_of_parted), and the selected carriers gain share (share_rises_through); the text takes this narrowing as the way to order a state.",
-   "mapper": "other"
+   "reading": "AI 读法：\"壹\"使一切选择经过一个耦合：汇集退化为一员（pooled_iff_member）；凡这一读法归并的，经它的选择都分不开（selects_not_right_of_parted）；其耦合闭包之外的选择是盲的（unselected_beyond_coupling）；被这一选择持有的承载者份额上升（share_rises_through）。壹读作一个在每个份额都偏向同一方向的读法时，每条进程自第二个读取步之后锁定，且确切（uniform_locks、Second.second_exact），只有改变规则怎样读才离开。商君书把壹作为为国之道；脊柱给出壹的代价：选择的到达收窄为一个读法，被选者向这一读法聚集。分歧在方向：以收窄明为治。",
+   "reading_en": "壹 passes every selection through one coupling, so the pool is one member (pooled_iff_member), what that reading lumps none can separate (selects_not_right_of_parted), and the selected carriers gain share (share_rises_through); read as one reading favouring one way at every share, every course is locked from its second reading step, exactly, and only a change of how the rule reads leaves (uniform_locks, Second.second_exact); the text takes this narrowing as the way to order a state.",
+   "mapper": "other",
+   "corrected": "RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its laws and record added and a sentence of each reading replaced or extended (both languages)"
   },
   {
    "id": "hanfei-wu-du",
@@ -9684,12 +9695,14 @@
     "Becoming.Flow.Balances.consumption_ends_with_feeders",
     "Becoming.Redundant.either_suffices",
     "Becoming.share_rises",
-    "Becoming.RelativePosition.rise_needs_fall"
+    "Becoming.RelativePosition.rise_needs_fall",
+    "Becoming.RuleCapture.Counts.proportional_locks"
    ],
    "records": [
     "giving-that-waits-on-giving",
     "target-capture",
-    "relative-position-is-zero-sum"
+    "relative-position-is-zero-sum",
+    "capture-through-the-rule"
    ],
    "atlas_ids": [
     {
@@ -9702,9 +9715,10 @@
     }
    ],
    "relational": "The center holds the surplus and gives against the shortfall so that every member's support passes through it.",
-   "reading": "AI 读法：脊柱有其结构：一个给予者停止给予，在其可达家族中结束一切给予（withholding_absorbs）；一切供给不受支持时，消耗至多持续存量水平那么多步（consumption_ends_with_feeders）；两个可互替的供给者任一即足（either_suffices）。国蓄以此结构为术，使民\"无不累于上\"，并以\"其国无敌\"为目的，这是争胜的框架（相对位置零和，rise_needs_fall）。分歧在目的：使整体依赖一个给予者以便控制；理论读出的是这一依赖的代价。",
-   "reading_en": "Holding the surplus to command the shortfall makes every member's support pass through one giver, whose withholding ends all giving reached from it (withholding_absorbs), where two feeders would each suffice (either_suffices). 国蓄 uses the structure as a method of control aimed at having no rival.",
-   "mapper": "other"
+   "reading": "AI 读法：脊柱有其结构：一个给予者停止给予，在其可达家族中结束一切给予（withholding_absorbs）；一切供给不受支持时，消耗至多持续存量水平那么多步（consumption_ends_with_feeders）；两个可互替的供给者任一即足（either_suffices）。据有余而制不足若读作规则按各类所持之比例给出（比例读法），持多者被偏向而持得更多，回路不回转（Counts.proportional_locks）。国蓄以此结构为术，使民\"无不累于上\"，并以\"其国无敌\"为目的，这是争胜的框架（相对位置零和，rise_needs_fall）。分歧在目的：使整体依赖一个给予者以便控制；理论读出的是这一依赖的代价。",
+   "reading_en": "Holding the surplus to command the shortfall makes every member's support pass through one giver, whose withholding ends all giving reached from it (withholding_absorbs), where two feeders would each suffice (either_suffices). Read as a rule given in proportion to what each kind holds, the kind holding more is favoured and holds more, and the loop does not turn back (Counts.proportional_locks). 国蓄 uses the structure as a method of control aimed at having no rival.",
+   "mapper": "other",
+   "corrected": "RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its laws and record added and a sentence of each reading replaced or extended (both languages)"
   },
   {
    "id": "guiguzi-bai-he",

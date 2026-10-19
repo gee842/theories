@@ -101,6 +101,7 @@ Aliases: `mutual dependence`, `相互依存`, `entangled`, `highly entangled sys
 ### History
 
 - 19 October 2026: added (MD1), to read "highly entangled" as mutual dependence and to join it to the exponential pace of couplings, of a selection and of a draw; study section 212.
+- 19 October 2026, RC (capture through the rule): BECOMING-RENEWAL-READING.md, DELEGATED-CHOICES.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RC added study section 213; DELEGATED-CHOICES.md: RC added decision D57, its index row and a lineage line; THE-THEORY-OF-BECOMING.md: RC added the paragraph on capture through the rule and a sentence each to the counter-loop item and to row 6 of the constraints table of section 4, a sentence to the 元闭 row of section 10, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 
 </details>
 

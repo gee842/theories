@@ -287,7 +287,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "52a7fa74fcdebd31a63c877dbdc5e7e4de59cfb5fc400737f61fdc55f61c46ca"
+      "sha256": "9bc32961105ff13b103bc5ae8d1092719837a9a84e3ea43b2a2610dc579ec4c8"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
@@ -344,6 +344,10 @@
     {
       "en": "19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in sections 4, 8 and 9: SC added a section 4 paragraph on a code formed between formations, a clause to the collective continuation row, a section 8.3 item and a rerun sentence in the integration row, and brought the section 9 receipt and counts to its run. Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，SC（在形成之间形成的编码）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 4、8、9 节改动：SC 在第 4 节加入关于在形成之间形成的编码的一段，在集体延续一行加入一句，在 8.3 节加入一项，在整合行加入一句重跑，并把第 9 节的回执与计数更新到其运行。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，RC（经由规则的捕获）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节集体延续一行改动：RC 把经由规则的捕获（Becoming.RuleCapture）加入已陈述者，把读出多于份额的规则加入未决者，并加入其记录的链接。重新指向前已读。论断不变。"
     }
   ]
 }
