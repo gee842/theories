@@ -1,0 +1,15 @@
+{
+ "about": "Apart-register entries retired by R29 (20 October 2026): the theorems were removed as second names of statements proved once (falls_not_recurring in Becoming.Renewal, falls_stop_unrefuted in Becoming.Space, now proved as the whole-number instance of Becoming.Amounts). Bytes as they stood in THEOREM-CONNECTIVITY-APART.json.",
+ "roots": {
+  "Becoming.whole_falls_not_recurring": {
+   "module": "Becoming.LeastLoss",
+   "category": "restates",
+   "reason": "falls_not_recurring (Becoming.Renewal) proved again from the least-loss law at whole-number amounts, with the same statement; on the base its use is restated by Flow.taking_not_recurring_whole (Flow.taking_not_recurring_from) and Flow.takers_within_on_whole"
+  },
+  "Becoming.whole_falls_stop_unrefuted": {
+   "module": "Becoming.LeastLoss",
+   "category": "restates",
+   "reason": "falls_stop_unrefuted (Becoming.Space) proved again from the least-loss law at whole-number amounts, with the same statement; on the base its use is restated by Flow.change_stops_unrefuted_whole (Flow.change_stops_unrefuted) and World.rests_unrefuted_enclosed_whole"
+  }
+ }
+}

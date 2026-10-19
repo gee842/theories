@@ -1,11 +1,11 @@
 {
- "commit": "22cdfe6f0a5a0e919303081318d5c357bd8effc4",
+ "commit": "0d79dca115afb16ee1555b86409b5ff9aeea8d8e",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261019T181519.226999Z",
+ "core_receipt_at_commit": "20261019T185632.962707Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
- "tracked_modules": 301,
- "constants": 36156,
- "spine_theorems": 11684,
+ "tracked_modules": 302,
+ "constants": 36110,
+ "spine_theorems": 11658,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -26,22 +26,22 @@
   "Process reaches World family": false
  },
  "classes": {
-  "statement on both families": 870,
-  "statement on Process/Frame/Run/Trace": 3128,
-  "statement on World/Flow/Web": 2620,
-  "proof through a base family": 153,
-  "used by a theorem on the base": 4428,
-  "apart: own vocabulary": 442,
+  "statement on both families": 866,
+  "statement on Process/Frame/Run/Trace": 3121,
+  "statement on World/Flow/Web": 2614,
+  "proof through a base family": 151,
+  "used by a theorem on the base": 4417,
+  "apart: own vocabulary": 446,
   "apart: prelude-only statement": 43
  },
- "apart_used_by_nothing": 344,
- "apart_roots": 345,
+ "apart_used_by_nothing": 346,
+ "apart_roots": 347,
  "apart_roots_by_category": {
   "model-witness": 205,
-  "support": 85,
-  "general-structure": 31,
+  "support": 87,
+  "general-structure": 33,
   "logical-strength": 10,
-  "restates": 12,
+  "restates": 10,
   "calibration": 2
  },
  "apart_roots_unclassified": [],
@@ -51,7 +51,7 @@
   "Becoming.OneStep": 71,
   "Becoming.Premises": 46,
   "Becoming.Space": 44,
-  "Becoming.Openness": 36,
+  "Becoming.Openness": 34,
   "Becoming.Resolution": 34,
   "Becoming.CensusCounts": 34,
   "Becoming.Standing": 33,
@@ -77,8 +77,8 @@
   "Becoming.LabelledRoles": 8,
   "Becoming.Regrouping": 8,
   "Becoming.FrontierWorlds": 8,
-  "Becoming.Decidedness": 7,
   "Becoming.FormedLoops": 7,
+  "Becoming.Decidedness": 6,
   "Becoming.ValuationFrames": 6,
   "Becoming.ContextualRuns": 6,
   "Becoming.Horizon": 5,
@@ -101,7 +101,6 @@
   "Becoming.CounterfactualRuns": 2,
   "Becoming.CouplingTraces": 2,
   "Becoming.PassageWorlds": 2,
-  "Becoming.LeastLoss": 1,
   "Becoming.ActiveReading": 1,
   "Becoming.Counterfactual": 1,
   "Becoming.RegroupingSelection": 1,
@@ -112,12 +111,12 @@
  },
  "apart_by_module": {
   "Becoming.LeastLoss": [
-   44,
-   74
+   34,
+   39
   ],
   "Becoming.HexagramSites": [
    23,
-   103
+   102
   ],
   "Becoming.Frontier": [
    23,
@@ -125,7 +124,7 @@
   ],
   "Becoming.HexagramPlaces": [
    20,
-   108
+   109
   ],
   "Becoming.Ideals": [
    16,
@@ -137,7 +136,7 @@
   ],
   "Becoming.HexagramLaws": [
    13,
-   130
+   129
   ],
   "Becoming.CodeAcquisition": [
    13,
@@ -165,11 +164,15 @@
   ],
   "Becoming.HexagramSequences": [
    9,
-   98
+   96
   ],
   "Becoming.ListFootprints": [
    9,
    9
+  ],
+  "Becoming.Sensitivity": [
+   9,
+   46
   ],
   "Becoming.ProfileReach": [
    9,
@@ -177,7 +180,11 @@
   ],
   "Becoming.Openness": [
    8,
-   85
+   83
+  ],
+  "Becoming.Amounts": [
+   8,
+   28
   ],
   "Becoming.GuardHorizon": [
    8,
@@ -207,10 +214,6 @@
    7,
    44
   ],
-  "Becoming.Sensitivity": [
-   7,
-   47
-  ],
   "Becoming.Lexical": [
    7,
    39
@@ -226,6 +229,10 @@
   "Becoming.ChanceFloors": [
    6,
    6
+  ],
+  "Becoming.Likeness": [
+   5,
+   153
   ],
   "Becoming.Coverage": [
    5,
@@ -267,10 +274,6 @@
    4,
    18
   ],
-  "Becoming.Likeness": [
-   4,
-   154
-  ],
   "Becoming.Relevance": [
    4,
    31
@@ -285,7 +288,7 @@
   ],
   "Becoming.Decidedness": [
    3,
-   69
+   68
   ],
   "Becoming.Metaethics": [
    3,
@@ -297,7 +300,7 @@
   ],
   "Becoming.ReferencePlan": [
    3,
-   59
+   56
   ],
   "Becoming.ListTests": [
    3,
@@ -331,13 +334,17 @@
    2,
    26
   ],
+  "Becoming.Space": [
+   2,
+   65
+  ],
   "Becoming.ActiveReading": [
    2,
    14
   ],
   "Becoming.Selection": [
    2,
-   67
+   74
   ],
   "Becoming.Undecided": [
    2,
@@ -374,6 +381,10 @@
   "Becoming.Propagation": [
    2,
    81
+  ],
+  "Becoming.Remainder": [
+   2,
+   56
   ],
   "Becoming.ScoreRepresentation": [
    2,
@@ -462,10 +473,6 @@
   "Becoming.Typicality": [
    1,
    43
-  ],
-  "Becoming.Remainder": [
-   1,
-   58
   ],
   "Becoming.Observation": [
    1,
@@ -613,7 +620,6 @@
   "Becoming.Renewable.dip_within_two": "statement on both families",
   "Becoming.Renewable.escalation_undermines_for_every_cycle": "statement on both families",
   "Becoming.Renewable.renewal_without_generation": "statement on both families",
-  "Becoming.Law.run_state": "statement on Process/Frame/Run/Trace",
   "Becoming.Run.revisits_from": "statement on Process/Frame/Run/Trace",
   "Becoming.Run.change_not_recurring": "statement on Process/Frame/Run/Trace",
   "Becoming.Reach.lost_stays": "statement on Process/Frame/Run/Trace",
@@ -719,18 +725,30 @@
   "Becoming.Branching.law_trace_of": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.law_trace_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.law_reach_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.Law.run_state": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Merges.not_lossless": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Reachable.earlier": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.lost_stays": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.trace_last": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Returns.pred": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Returns.reachable_from": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Returns.reachable": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Lossless.cancel": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Lossless.comes_back": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Lossless.recurs": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Lossless.returns": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Lossless.no_rise": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.rise_not_lossless": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.Lossless.unlisted": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.lossless_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.merges_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.reachable_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.keeps_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.returns_iff": "statement on Process/Frame/Run/Trace",
-  "Becoming.Law.Merges.not_lossless": "statement on Process/Frame/Run/Trace",
-  "Becoming.Law.Reachable.earlier": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.lost_stays": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.merged_stays": "used by a theorem on the base",
   "Becoming.Law.Lossless.cancel": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.lossless_of_returns": "statement on Process/Frame/Run/Trace",
-  "Becoming.Law.Returns.reachable": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.Returns.undo": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.Lossless.returns": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.returns_of_reachable": "statement on Process/Frame/Run/Trace",
@@ -1113,7 +1131,6 @@
   "Becoming.Constant.consistent": "statement on Process/Frame/Run/Trace",
   "Becoming.Constant.not_goAlike": "statement on Process/Frame/Run/Trace",
   "Becoming.Switching.inconsistent": "statement on Process/Frame/Run/Trace",
-  "Becoming.Switching.no_state_law_of_criterion": "statement on Process/Frame/Run/Trace",
   "Becoming.Stuck.goAlike_not_matches": "statement on Process/Frame/Run/Trace",
   "Becoming.Coarse.matching": "statement on Process/Frame/Run/Trace",
   "Becoming.Coarse.exact_law": "statement on Process/Frame/Run/Trace",
@@ -1144,13 +1161,6 @@
   "Becoming.Choosing.sameTests": "statement on Process/Frame/Run/Trace",
   "Becoming.Choosing.not_alike": "statement on Process/Frame/Run/Trace",
   "Becoming.Choosing.early_not_determined": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Merges.not_lossless": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Reachable.earlier": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.lost_stays": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.trace_last": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Returns.pred": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Returns.reachable_from": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Returns.reachable": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.keeps_of_returns": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.fed_keeps": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.Reachable.one": "statement on Process/Frame/Run/Trace",
@@ -1162,13 +1172,6 @@
   "Becoming.Branching.FedWithin.keeps": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.keepsWithin_iff_fedWithin": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.returns_iff_keepsWithin": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Lossless.cancel": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Lossless.comes_back": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Lossless.recurs": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Lossless.returns": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Lossless.no_rise": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.rise_not_lossless": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Lossless.unlisted": "statement on Process/Frame/Run/Trace",
   "Becoming.Run.enters_returning": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.trace_positions": "statement on Process/Frame/Run/Trace",
   "Becoming.Branching.positions_reach": "statement on Process/Frame/Run/Trace",
@@ -2796,6 +2799,7 @@
   "Becoming.total_le_of_support": "used by a theorem on the base",
   "Becoming.insertNew_spec": "used by a theorem on the base",
   "Becoming.adjoin_spec": "used by a theorem on the base",
+  "Becoming.Amounts.whole_sum": "used by a theorem on the base",
   "Becoming.Flow.DissipatesOn.replenishment_takers": "statement on World/Flow/Web",
   "Becoming.Flow.DissipatesOn.takes_of_gives": "statement on World/Flow/Web",
   "Becoming.Flow.enclosed_of_finite": "statement on World/Flow/Web",
@@ -3235,8 +3239,8 @@
   "Becoming.Captured.rule_perturbation_changes": "used by a theorem on the base",
   "Becoming.Flow.still_dissipative": "statement on World/Flow/Web",
   "Becoming.quiet_of_once": "used by a theorem on the base",
-  "Becoming.still_le": "used by a theorem on the base",
-  "Becoming.unrefuted_falls_exceed": "used by a theorem on the base",
+  "Becoming.still_le": "apart: prelude-only statement",
+  "Becoming.unrefuted_falls_exceed": "apart: prelude-only statement",
   "Becoming.stop_unrefuted_iff": "used by a theorem on the base",
   "Becoming.falls_stop_unrefuted": "used by a theorem on the base",
   "Becoming.amount_still_unrefuted": "used by a theorem on the base",
@@ -3479,7 +3483,6 @@
   "Becoming.World.CountedBy.arising_iff_ceasing": "statement on both families",
   "Becoming.World.Finite.census_bounded": "statement on both families",
   "Becoming.World.Finite.countedWithin": "statement on both families",
-  "Becoming.World.Finite.arising_iff_ceasing": "statement on both families",
   "Becoming.Accretion.mem_alive": "statement on both families",
   "Becoming.Accretion.alive_distinct": "proof through a base family",
   "Becoming.Accretion.census": "statement on both families",
@@ -3497,7 +3500,6 @@
   "Becoming.World.comes_to_rest_unrefuted_from": "statement on both families",
   "Becoming.World.comes_to_rest_unrefuted": "statement on both families",
   "Becoming.World.Finite.standing": "statement on both families",
-  "Becoming.World.Finite.comes_to_rest_unrefuted": "statement on both families",
   "Becoming.World.rest_needs_census": "statement on both families",
   "Becoming.World.standingCensus": "statement on both families",
   "Becoming.World.rises_of_arises": "statement on both families",
@@ -3591,7 +3593,6 @@
   "Becoming.World.ceasing_not_stopping": "statement on both families",
   "Becoming.World.arising_not_stopping": "statement on both families",
   "Becoming.World.arising_iff_ceasing_decided": "statement on both families",
-  "Becoming.World.arising_iff_ceasing_of_decidable": "statement on both families",
   "Becoming.World.ceasing_not_stopping_covered": "statement on both families",
   "Becoming.World.arising_not_stopping_covered": "statement on both families",
   "Becoming.World.arising_iff_ceasing_covered": "statement on both families",
@@ -4105,13 +4106,6 @@
   "Becoming.Amounts.whole_within": "used by a theorem on the base",
   "Becoming.Amounts.whole_archimedean": "used by a theorem on the base",
   "Becoming.Amounts.whole_losing_steps": "apart: prelude-only statement",
-  "Becoming.whole_falls_not_recurring": "apart: prelude-only statement",
-  "Becoming.whole_falls_stop_unrefuted": "apart: prelude-only statement",
-  "Becoming.Flow.taking_not_recurring_whole": "statement on World/Flow/Web",
-  "Becoming.Amounts.whole_sum": "used by a theorem on the base",
-  "Becoming.Flow.takers_within_on_whole": "statement on World/Flow/Web",
-  "Becoming.Flow.change_stops_unrefuted_whole": "statement on World/Flow/Web",
-  "Becoming.World.rests_unrefuted_enclosed_whole": "statement on both families",
   "Becoming.Dyadic.mul_assoc'": "apart: prelude-only statement",
   "Becoming.Dyadic.right_distrib'": "apart: prelude-only statement",
   "Becoming.Dyadic.mul_right_comm'": "apart: prelude-only statement",
@@ -4146,11 +4140,11 @@
   "Becoming.Layered.beyond_every_multiple": "apart: own vocabulary",
   "Becoming.Layered.never_rests": "apart: own vocabulary",
   "Becoming.Layered.not_archimedean": "apart: own vocabulary",
+  "Becoming.Branching.Lossless.loses_nothing": "statement on Process/Frame/Run/Trace",
+  "Becoming.Branching.loss_needs_merge": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.Lossless.regains": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.Lossless.loses_nothing": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.loss_needs_merge": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.Lossless.loses_nothing": "statement on Process/Frame/Run/Trace",
-  "Becoming.Branching.loss_needs_merge": "statement on Process/Frame/Run/Trace",
   "Becoming.Flow.DissipatesOn.gainlessOn": "statement on World/Flow/Web",
   "Becoming.Flow.Dissipative.gainless": "statement on World/Flow/Web",
   "Becoming.Flow.LosslessOn.gainlessOn": "statement on World/Flow/Web",
@@ -5433,7 +5427,6 @@
   "Becoming.Loop.replyLaw_through": "statement on World/Flow/Web",
   "Becoming.Loop.escalation_follows": "statement on World/Flow/Web",
   "Becoming.Loop.quiet_follows": "statement on World/Flow/Web",
-  "Becoming.Loop.responds_by_law": "statement on World/Flow/Web",
   "Becoming.Loop.courses_fixed": "statement on World/Flow/Web",
   "Becoming.Frame.respectsAt_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Frame.regroup_retains": "statement on Process/Frame/Run/Trace",
@@ -5480,8 +5473,15 @@
   "Becoming.Web.SelectsThroughAll.and": "statement on World/Flow/Web",
   "Becoming.Web.selects_alike_all_iff": "statement on World/Flow/Web",
   "Becoming.Web.separates_all": "statement on World/Flow/Web",
+  "Becoming.WithinClosureOf.of_member": "used by a theorem on the base",
+  "Becoming.closedUnder_withinClosureOf": "used by a theorem on the base",
+  "Becoming.withinClosureOf_iff": "used by a theorem on the base",
+  "Becoming.withinClosureOf_single": "used by a theorem on the base",
+  "Becoming.Flow.beyond_pool_coupling": "statement on World/Flow/Web",
   "Becoming.Flow.unselected_beyond_coupling": "statement on World/Flow/Web",
   "Becoming.Flow.unscored_beyond_coupling": "statement on World/Flow/Web",
+  "Becoming.Flow.uncoupled_beyond_pool": "statement on World/Flow/Web",
+  "Becoming.Flow.unselected_beyond_pool": "statement on World/Flow/Web",
   "Becoming.Flow.unselected_beyond_coupling_all": "statement on World/Flow/Web",
   "Becoming.Flow.unselected_beyond_coupling_responsive": "statement on World/Flow/Web",
   "Becoming.share_rises_through": "apart: own vocabulary",
@@ -5546,11 +5546,6 @@
   "Becoming.Diversion.taker_listed": "statement on World/Flow/Web",
   "Becoming.Diversion.draws_beyond": "statement on World/Flow/Web",
   "Becoming.Diversion.supplying_raises_untaken": "statement on World/Flow/Web",
-  "Becoming.WithinClosureOf.of_member": "used by a theorem on the base",
-  "Becoming.closedUnder_withinClosureOf": "used by a theorem on the base",
-  "Becoming.withinClosureOf_iff": "used by a theorem on the base",
-  "Becoming.withinClosureOf_single": "used by a theorem on the base",
-  "Becoming.Flow.beyond_pool_coupling": "statement on World/Flow/Web",
   "Becoming.Web.pooledClass_selects": "statement on World/Flow/Web",
   "Becoming.Web.separates_all_iff": "statement on World/Flow/Web",
   "Becoming.Web.member_separates_all": "statement on World/Flow/Web",
@@ -5558,9 +5553,6 @@
   "Becoming.Web.admission_separates_all": "statement on World/Flow/Web",
   "Becoming.Web.pooled_iff_member": "statement on World/Flow/Web",
   "Becoming.Web.pool_adds": "statement on World/Flow/Web",
-  "Becoming.Flow.uncoupled_beyond_pool": "statement on World/Flow/Web",
-  "Becoming.Flow.unselected_beyond_pool": "statement on World/Flow/Web",
-  "Becoming.Flow.unselected_beyond_coupling_all_of_pool": "statement on World/Flow/Web",
   "Becoming.Flow.ActsAlikeOnPoolCoupled.within": "statement on World/Flow/Web",
   "Becoming.Flow.act_alike_pool": "statement on World/Flow/Web",
   "Becoming.Flow.act_unselected_pool": "statement on World/Flow/Web",
@@ -5837,6 +5829,7 @@
   "Becoming.Hexagram.middleBrokenOpposed_eq": "used by a theorem on the base",
   "Becoming.Hexagram.same_not_left": "used by a theorem on the base",
   "Becoming.Hexagram.same_not_not": "used by a theorem on the base",
+  "Becoming.Hexagram.neither": "used by a theorem on the base",
   "Becoming.Hexagram.line_complement": "used by a theorem on the base",
   "Becoming.Hexagram.inPhase_complement": "used by a theorem on the base",
   "Becoming.Hexagram.phaseCount_complement": "used by a theorem on the base",
@@ -5920,7 +5913,6 @@
   "Becoming.Hexagram.backward_run": "statement on Process/Frame/Run/Trace",
   "Becoming.Hexagram.backward_relations": "statement on Process/Frame/Run/Trace",
   "Becoming.Hexagram.shown_along_run": "statement on Process/Frame/Run/Trace",
-  "Becoming.Hexagram.neither": "used by a theorem on the base",
   "Becoming.Hexagram.not_mem_of_memb": "apart: own vocabulary",
   "Becoming.Hexagram.nodup_of_distinctb": "apart: own vocabulary",
   "Becoming.Hexagram.order_nodup": "apart: own vocabulary",
@@ -6055,7 +6047,6 @@
   "Becoming.Hexagram.all_congr": "used by a theorem on the base",
   "Becoming.Hexagram.or_left_true": "used by a theorem on the base",
   "Becoming.Hexagram.or_right_true": "used by a theorem on the base",
-  "Becoming.Hexagram.or_false_split": "used by a theorem on the base",
   "Becoming.Hexagram.same_comm": "used by a theorem on the base",
   "Becoming.Hexagram.fixedPhase_between": "used by a theorem on the base",
   "Becoming.Hexagram.fixedPhase_end": "used by a theorem on the base",
@@ -6155,8 +6146,6 @@
   "Becoming.Hexagram.changes_run_sole": "statement on Process/Frame/Run/Trace",
   "Becoming.Hexagram.ofLines_line": "used by a theorem on the base",
   "Becoming.Hexagram.ext_lines": "used by a theorem on the base",
-  "Becoming.Hexagram.complement_line": "used by a theorem on the base",
-  "Becoming.Hexagram.flip_line": "used by a theorem on the base",
   "Becoming.Hexagram.flip_moves": "used by a theorem on the base",
   "Becoming.Hexagram.of_allOf": "used by a theorem on the base",
   "Becoming.Hexagram.every_of_order": "used by a theorem on the base",
@@ -6591,7 +6580,6 @@
   "Becoming.Hexagram.complement_moves": "used by a theorem on the base",
   "Becoming.Hexagram.waxWane_apart": "statement on Process/Frame/Run/Trace",
   "Becoming.Hexagram.waxWane_halfway": "statement on Process/Frame/Run/Trace",
-  "Becoming.Hexagram.pairs_goAlike_of_commutes": "statement on Process/Frame/Run/Trace",
   "Becoming.Hexagram.wane_breaks": "proof through a base family",
   "Becoming.Hexagram.flip_complement": "used by a theorem on the base",
   "Becoming.Hexagram.changes_symmetric": "statement on Process/Frame/Run/Trace",
@@ -6720,7 +6708,6 @@
   "Becoming.ReferencePlan.install_binds_fresh": "used by a theorem on the base",
   "Becoming.ReferencePlan.determined": "statement on Process/Frame/Run/Trace",
   "Becoming.ReferencePlan.step_conserves": "statement on Process/Frame/Run/Trace",
-  "Becoming.ReferencePlan.trace_conserves": "statement on Process/Frame/Run/Trace",
   "Becoming.ReferencePlan.run_trace": "statement on Process/Frame/Run/Trace",
   "Becoming.ReferencePlan.repair_trace": "statement on Process/Frame/Run/Trace",
   "Becoming.ReferencePlan.propose_from_mismatch": "used by a theorem on the base",
@@ -6761,10 +6748,8 @@
   "Becoming.ReferencePlan.balanced": "statement on Process/Frame/Run/Trace",
   "Becoming.ReferencePlan.used_balanced": "statement on Process/Frame/Run/Trace",
   "Becoming.ReferencePlan.draws_held": "statement on Process/Frame/Run/Trace",
-  "Becoming.ReferencePlan.trace_conserves_of_law": "statement on Process/Frame/Run/Trace",
+  "Becoming.ReferencePlan.trace_conserves": "statement on Process/Frame/Run/Trace",
   "Becoming.ReferencePlan.covered": "statement on Process/Frame/Run/Trace",
-  "Becoming.ReferencePlan.added_keeps_of_law": "used by a theorem on the base",
-  "Becoming.ReferencePlan.new_contact_choice_of_law": "used by a theorem on the base",
   "Becoming.ReferencePlan.propose_answers": "used by a theorem on the base",
   "Becoming.ReferencePlan.revise_registers_failure": "used by a theorem on the base",
   "Becoming.ReferencePlan.frozen_reads_method": "used by a theorem on the base",
@@ -8415,8 +8400,7 @@
   "Becoming.Choosing.branching_apart": "statement on Process/Frame/Run/Trace",
   "Becoming.Dependence.dichotomy_of_same_level": "statement on Process/Frame/Run/Trace",
   "Becoming.Dependence.dichotomy_of_determinedAt": "statement on Process/Frame/Run/Trace",
-  "Becoming.Dependence.level_registers": "used by a theorem on the base",
-  "Becoming.Dependence.dichotomy_of_determined": "statement on Process/Frame/Run/Trace",
+  "Becoming.Dependence.level_registers": "apart: own vocabulary",
   "Becoming.Law.agree_bisimulation": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.alike_iff_agree": "statement on Process/Frame/Run/Trace",
   "Becoming.Law.sameTests_iff_within": "statement on Process/Frame/Run/Trace",
@@ -9438,13 +9422,12 @@
   "Becoming.Still.driven": "used by a theorem on the base",
   "Becoming.Parity.neither_alone": "used by a theorem on the base",
   "Becoming.ExchangeLaw.ReadsFinitely.nonanticipating": "used by a theorem on the base",
-  "Becoming.ExchangeLaw.Nonanticipating.readsWithin_of_every": "used by a theorem on the base",
-  "Becoming.ExchangeLaw.Nonanticipating.readsFinitely_of_every": "used by a theorem on the base",
+  "Becoming.ExchangeLaw.Nonanticipating.readsWithin_of_every": "apart: own vocabulary",
+  "Becoming.ExchangeLaw.Nonanticipating.readsFinitely_of_every": "apart: own vocabulary",
   "Becoming.alike_of_sensitive_agree_within": "used by a theorem on the base",
   "Becoming.ExchangeLaw.ReadsFinitely.through_of_observed": "statement on World/Flow/Web",
   "Becoming.ExchangeLaw.ReadsFinitely.through_sensitive": "statement on World/Flow/Web",
   "Becoming.ExchangeLaw.ReadsFinitely.least_coupling": "statement on World/Flow/Web",
-  "Becoming.ExchangeLaw.Nonanticipating.through_sensitive_of_every": "statement on World/Flow/Web",
   "Becoming.comparison_through_sensitivity_of_readsFinitely": "statement on World/Flow/Web",
   "Becoming.mixIn_alike_of_insensitiveAt": "used by a theorem on the base",
   "Becoming.alike_of_insensitiveAt_within": "used by a theorem on the base",
@@ -10106,7 +10089,7 @@
   "Becoming.exact_of_reading_before": "proof through a base family",
   "Becoming.loop_of_coupledInto_succ": "used by a theorem on the base",
   "Becoming.no_chain_of_no_loop": "used by a theorem on the base",
-  "Becoming.no_chain_of_no_loop_listed": "used by a theorem on the base",
+  "Becoming.no_chain_of_no_loop_listed": "apart: own vocabulary",
   "Becoming.bounded_iff_no_loop": "proof through a base family",
   "Becoming.couplesAt_strengthsFrom": "used by a theorem on the base",
   "Becoming.couples_strengthsFrom_iff": "used by a theorem on the base",
@@ -10121,8 +10104,6 @@
   "Becoming.Loops.Once.no_chain_of_two": "used by a theorem on the base",
   "Becoming.Loops.Once.none_from_one": "used by a theorem on the base",
   "Becoming.Loops.Once.settled": "used by a theorem on the base",
-  "Becoming.Remainder.carriedWithin_exact": "proof through a base family",
-  "Becoming.Remainder.carriedWithin_exact_of_no_loop": "proof through a base family",
   "Becoming.Remainder.finite_order_iff_no_loop": "proof through a base family",
   "Becoming.Remainder.Once.exact": "proof through a base family",
   "Becoming.gap_within_order_iff": "statement on World/Flow/Web",

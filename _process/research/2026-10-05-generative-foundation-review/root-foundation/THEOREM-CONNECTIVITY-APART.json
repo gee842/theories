@@ -1612,16 +1612,6 @@
    "category": "model-witness",
    "reason": "the counterexample in one constructed model of the amounts (a least loss, the stock beyond every multiple of it, never resting): it shows the bound premise of Amounts.rests is needed; not a law of the unfolding"
   },
-  "Becoming.whole_falls_not_recurring": {
-   "module": "Becoming.LeastLoss",
-   "category": "restates",
-   "reason": "falls_not_recurring (Becoming.Renewal) proved again from the least-loss law at whole-number amounts, with the same statement; on the base its use is restated by Flow.taking_not_recurring_whole (Flow.taking_not_recurring_from) and Flow.takers_within_on_whole"
-  },
-  "Becoming.whole_falls_stop_unrefuted": {
-   "module": "Becoming.LeastLoss",
-   "category": "restates",
-   "reason": "falls_stop_unrefuted (Becoming.Space) proved again from the least-loss law at whole-number amounts, with the same statement; on the base its use is restated by Flow.change_stops_unrefuted_whole (Flow.change_stops_unrefuted) and World.rests_unrefuted_enclosed_whole"
-  },
   "Becoming.Amounts.whole_losing_steps": {
    "module": "Becoming.LeastLoss",
    "category": "general-structure",
@@ -1741,6 +1731,26 @@
    "module": "Becoming.RuleCapture",
    "category": "restates",
    "reason": "restates share_not_lower (Becoming.Capture) in the share order of counts, to show that the order the laws of RuleCapture read on courses is the comparison of Capture; share_not_lower is read on worlds by CaptureWorlds, and the order on courses by every other law of RuleCapture"
+  },
+  "Becoming.Dependence.level_registers": {
+   "module": "Becoming.Likeness",
+   "category": "support",
+   "reason": "a one-line lemma: the claims reading a condition's level tell its levels apart. With it determinacy is the case of Dependence.dichotomy_of_determinedAt that Joint's Dependence.determined_dichotomy states; R29 removed the second name that used it, and determinacy-up-to-likeness cites it"
+  },
+  "Becoming.ExchangeLaw.Nonanticipating.readsFinitely_of_every": {
+   "module": "Becoming.Sensitivity",
+   "category": "general-structure",
+   "reason": "with finitely many conditions every law of what has stood reads finitely many: a law of every law of exchange, on the base once instantiated; through it Counterfactual's ExchangeLaw.Nonanticipating.through_sensitive is a case of ExchangeLaw.ReadsFinitely.through_sensitive (R29 removed the second name that stated so)"
+  },
+  "Becoming.no_chain_of_no_loop_listed": {
+   "module": "Becoming.Remainder",
+   "category": "general-structure",
+   "reason": "with every condition listed and no loop upstream, no chain in time order of as many couplings as there are conditions ends at a condition: a law of every coupling schedule, in its own vocabulary; it is why carriedWithin_exact_of_no_loop of Becoming.Loops holds (R29 removed Remainder's second name for that statement)"
+  },
+  "Becoming.unrefuted_falls_exceed": {
+   "module": "Becoming.Space",
+   "category": "support",
+   "reason": "the counting step of the whole-number descent: an amount not rising whose later falls are not refuted exceeds every bound. Since R29 falls_stop_unrefuted is proved as the whole-number instance of Amounts.rests_unrefuted, so nothing on the base uses it; space-and-its-parts cites it"
   }
  }
 }
