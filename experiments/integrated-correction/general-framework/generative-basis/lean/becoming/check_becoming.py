@@ -78,12 +78,12 @@ CORE = ["Becoming.Prelude", "Becoming.World", "Becoming.Frame", "Becoming.Laws",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
         "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Amounts", "Becoming.LeastLoss", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
-        "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.SupportRecovery", "Becoming.Admission", "Becoming.Exclusion", "Becoming.Exhaustion",
+        "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.Admission", "Becoming.Exclusion", "Becoming.Exhaustion",
         "Becoming.Regions", "Becoming.Retaining", "Becoming.Clearing", "Becoming.Extension",
         "Becoming.Metaethics", "Becoming.Lifting", "Becoming.Ranking", "Becoming.ActiveReading", "Becoming.LossMatching", "Becoming.StrictTransport", "Becoming.MatchedCourses",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints", "Becoming.ListingRefutations",
         "Becoming.Significance", "Becoming.ValuationFrames", "Becoming.RelativePosition", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback", "Becoming.BoundedSignificance", "Becoming.Cuts", "Becoming.EdgeClosure", "Becoming.SeedReach", "Becoming.ScopedReach",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.SelectionGap", "Becoming.SelectionReach", "Becoming.SelectionPool", "Becoming.PoolResponse", "Becoming.Rejoining", "Becoming.LawThroughCoupling", "Becoming.LawThroughChangingCoupling", "Becoming.Learning", "Becoming.Hexagrams", "Becoming.HexagramPlaces", "Becoming.HexagramLaws", "Becoming.HexagramSites", "Becoming.HexagramSequences", "Becoming.Withholding", "Becoming.LoopReturn", "Becoming.Pace", "Becoming.RuleCapture", "Becoming.PatternPassing", "Becoming.JointKeeping", "Becoming.Undecided", "Becoming.Junctures", "Becoming.Commuting", "Becoming.Tolerance", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.AssurancePlans", "Becoming.Integers", "Becoming.Segmentation", "Becoming.Readout", "Becoming.SummaryFutures", "Becoming.Dephasing", "Becoming.ProjectedLaws", "Becoming.JointPhase", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Ideals", "Becoming.ContingentPlans", "Becoming.Actuation", "Becoming.TreeSearch", "Becoming.Dispatch", "Becoming.FaultEnvelopes", "Becoming.Transactions", "Becoming.Reconfiguration", "Becoming.PooledEnvelopes", "Becoming.WitnessRefinement", "Becoming.WitnessRefinementRuns", "Becoming.ChanceFloors", "Becoming.IntegerOrder", "Becoming.Acceptance", "Becoming.GuardHorizon", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.SharedCodes", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.JointPlans", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.HistoryLanguages", "Becoming.HistoryIdeals", "Becoming.HistoryIdealsTraces", "Becoming.Verification", "Becoming.Coverage", "Becoming.Presentations", "Becoming.PresentationFrames", "Becoming.Carriers", "Becoming.BranchingCorrespondence", "Becoming.JointCorrespondence", "Becoming.ListFootprints", "Becoming.Fragments", "Becoming.LocalUnits", "Becoming.JoiningContexts", "Becoming.JoiningCodes", "Becoming.JoiningRoles", "Becoming.Grains", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.PlaceTransitionNets", "Becoming.ExchangePremises", "Becoming.Readings", "Becoming.MoveFormation", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Regulation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.LevelCoupling", "Becoming.Interleavings", "Becoming.CensusCounts", "Becoming.CensusBinding", "Becoming.Frequency", "Becoming.MutualDependence", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Lexical", "Becoming.Frontier", "Becoming.FrontierFrames", "Becoming.FrontierWorlds", "Becoming.AcceptanceFrames", "Becoming.ScoreRepresentation", "Becoming.Alternatives", "Becoming.Bundles", "Becoming.ActivationCapacity", "Becoming.Narrowing", "Becoming.NarrowingRuns", "Becoming.SecuredContent", "Becoming.ProfileReach", "Becoming.RenewalBound", "Becoming.Handoff", "Becoming.RuleHandoff", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.PartialReadout", "Becoming.CodeAcquisition", "Becoming.RouteFormation", "Becoming.ResponseLearning", "Becoming.LearnedGrouping", "Becoming.Unrolling", "Becoming.Labels", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.HistorySums", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.BoundaryFlows", "Becoming.BoundaryWorlds", "Becoming.CandidateRuns", "Becoming.CaptureWorlds", "Becoming.CensusWebs", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CountdownCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.DependenceWebs", "Becoming.DiagonalRuns", "Becoming.ExchangeFlows", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.JointPlanFrames", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.LevelWebs", "Becoming.ListedOutcomeFrames", "Becoming.ListedWebs", "Becoming.MoveRuns", "Becoming.OrderWorlds", "Becoming.PassageWorlds", "Becoming.RecurrenceRuns", "Becoming.ReducedRuns", "Becoming.ReferencePlanTraces", "Becoming.RetrodictionRuns", "Becoming.RevisionRuns", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.Enough", "Becoming.Settling", "Becoming.LastChange", "Becoming.LimitVerification", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StockTraces", "Becoming.StrengthFlows", "Becoming.TailRuns", "Becoming.TallyWorlds", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.SelectionGap", "Becoming.SelectionReach", "Becoming.SelectionPool", "Becoming.PoolResponse", "Becoming.Rejoining", "Becoming.LawThroughCoupling", "Becoming.LawThroughChangingCoupling", "Becoming.Learning", "Becoming.Hexagrams", "Becoming.HexagramPlaces", "Becoming.HexagramLaws", "Becoming.HexagramSites", "Becoming.HexagramSequences", "Becoming.Withholding", "Becoming.LoopReturn", "Becoming.Pace", "Becoming.RuleCapture", "Becoming.PatternPassing", "Becoming.JointKeeping", "Becoming.Undecided", "Becoming.Junctures", "Becoming.Commuting", "Becoming.Tolerance", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.AssurancePlans", "Becoming.Integers", "Becoming.Segmentation", "Becoming.Readout", "Becoming.SummaryFutures", "Becoming.Dephasing", "Becoming.ProjectedLaws", "Becoming.JointPhase", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.Ideals", "Becoming.ContingentPlans", "Becoming.Actuation", "Becoming.TreeSearch", "Becoming.Dispatch", "Becoming.FaultEnvelopes", "Becoming.Transactions", "Becoming.Reconfiguration", "Becoming.PooledEnvelopes", "Becoming.WitnessRefinement", "Becoming.WitnessRefinementRuns", "Becoming.ChanceFloors", "Becoming.IntegerOrder", "Becoming.Acceptance", "Becoming.GuardHorizon", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.SharedCodes", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.JointPlans", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.HistoryLanguages", "Becoming.HistoryIdeals", "Becoming.HistoryIdealsTraces", "Becoming.Verification", "Becoming.Coverage", "Becoming.Presentations", "Becoming.Carriers", "Becoming.BranchingCorrespondence", "Becoming.JointCorrespondence", "Becoming.ListFootprints", "Becoming.Fragments", "Becoming.LocalUnits", "Becoming.JoiningContexts", "Becoming.JoiningCodes", "Becoming.JoiningRoles", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.PlaceTransitionNets", "Becoming.ExchangePremises", "Becoming.Readings", "Becoming.MoveFormation", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Regulation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.LevelCoupling", "Becoming.Interleavings", "Becoming.CensusCounts", "Becoming.CensusBinding", "Becoming.Frequency", "Becoming.MutualDependence", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Lexical", "Becoming.Frontier", "Becoming.FrontierFrames", "Becoming.FrontierWorlds", "Becoming.ScoreRepresentation", "Becoming.Alternatives", "Becoming.Bundles", "Becoming.ActivationCapacity", "Becoming.Narrowing", "Becoming.NarrowingRuns", "Becoming.SecuredContent", "Becoming.ProfileReach", "Becoming.RenewalBound", "Becoming.Handoff", "Becoming.RuleHandoff", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.PartialReadout", "Becoming.CodeAcquisition", "Becoming.RouteFormation", "Becoming.ResponseLearning", "Becoming.LearnedGrouping", "Becoming.Unrolling", "Becoming.Labels", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.HistorySums", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.ListedWebs", "Becoming.ReferencePlanTraces", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.Enough", "Becoming.Settling", "Becoming.LastChange", "Becoming.LimitVerification", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StrengthFlows", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
 # The bridge: emptied by the F3 sweep (19 October 2026). Every bridge and pure join module is in
 # lean/history/becoming/Becoming/ with its bytes, checked by the receipts before the sweep; the core
 # states the content of the periphery modules they read (SUPERSEDED).
@@ -128,9 +128,9 @@ SUPERSEDED = {
     "ExplanatoryBranching": ["Becoming.BranchingCorrespondence", "Becoming.Granularity", "Becoming.Labelled", "Becoming.Likeness"],
     "ExplanatoryContextualStructure": ["Becoming.Joining", "Becoming.JoiningCodes", "Becoming.JoiningContexts", "Becoming.Presentations"],
     "ExplanatoryFootprints": ["Becoming.Composition", "Becoming.JointCorrespondence", "Becoming.ListFootprints"],
-    "ExplanatoryGranularity": ["Becoming.Grains", "Becoming.Granularity"],
-    "ExplanatoryGranularityBoundary": ["Becoming.Grains", "Becoming.Granularity", "Becoming.Presentations"],
-    "ExplanatoryGuardedPrograms": ["Becoming.Grains", "Becoming.Granularity"],
+    "ExplanatoryGranularity": ["Becoming.Granularity"],
+    "ExplanatoryGranularityBoundary": ["Becoming.Granularity", "Becoming.Presentations"],
+    "ExplanatoryGuardedPrograms": ["Becoming.Granularity"],
     "ExplanatoryJoining": ["Becoming.Fragments"],
     "ExplanatoryJoiningAnchors": ["Becoming.Joining", "Becoming.JoiningRoles", "Becoming.Likeness"],
     "ExplanatoryJoiningBranches": ["Becoming.BranchingCorrespondence", "Becoming.Joining", "Becoming.JoiningCodes", "Becoming.Likeness", "Becoming.Presentations"],
@@ -169,7 +169,7 @@ SUPERSEDED = {
     "RelationalOrganization": ["Becoming.Frontier"],
     "RelationalReduction": ["Becoming.JointPhase"],
     "RenewalComparison": ["Becoming.ActiveReading"],
-    "RenewalRecovery": ["Becoming.SupportRecovery"],
+    "RenewalRecovery": ["Becoming.RenewalFlow"],
     "StandardsBridge": ["Becoming.Narrowing"],
     "SystemsOrganization": ["Becoming.ProjectedLaws"],
     "WholeGroundCoverage": ["Becoming.ScopedReach", "Becoming.SeedReach"],
@@ -1701,38 +1701,38 @@ SCOPE = (
     "schedule witnesses of Closing and Frequency are balanced worlds, the threshold world's loop "
     "of the couplings it reads off its own standing forming at the threshold and not before. "
     "AttractionRuns: attraction on the process of a determined law: what every run is drawn into. "
-    "BoundaryFlows: the self's boundaries drawn along what a flow relates. "
-    "BoundaryWorlds: the presupposition along what affects what in a world. "
-    "CandidateRuns: cross-situational resolution step by step along a run. "
-    "CaptureWorlds: a target's share among descendants. "
-    "CensusWebs: counts of arising and ceasing where they exist, and listing once. "
+    "Boundaries, section BoundaryFlows: the self's boundaries drawn along what a flow relates. "
+    "Boundaries, section BoundaryWorlds: the presupposition along what affects what in a world. "
+    "Courses, section CandidateRuns: cross-situational resolution step by step along a run. "
+    "Capture, section CaptureWorlds: a target's share among descendants. "
+    "Listing, section CensusWebs: counts of arising and ceasing where they exist, and listing once. "
     "ContactCourses: revision rules as processes, and encodings along a run of channels. "
     "ContextualRuns: the parity bounds and the parts of no whole along the runs of any process. "
     "ContinuingRuns: the witness of continuing revision at yield nine, read along its run. "
     "CopyCourses: the laws of copying on the courses and runs of its processes. "
-    "CountdownCourses: countdown on the courses of a partial law's process. "
+    "Countdown, section CountdownCourses: countdown on the courses of a partial law's process. "
     "CounterfactualRuns: the course of an act on runs of the standard model and on the course world. "
     "CouplingTraces: couplings read as the steps of a process. "
     "CourseRoles: one course, one kind or two roles. "
-    "DependenceWebs: support in a fixed unit, and coextinction with no reserve. "
-    "DiagonalRuns: completing a registration within what it registers, as a process. "
-    "ExchangeFlows: uniform descent, and what a sampled flow keeps of an absent relatum. "
+    "Units, section DependenceWebs: support in a fixed unit, and coextinction with no reserve. "
+    "Diagonal, section DiagonalRuns: completing a registration within what it registers, as a process. "
+    "Sampling, section ExchangeFlows: uniform descent, and what a sampled flow keeps of an absent relatum. "
     "HorizonWebs: the horizon in the support-gated law, on its webs. "
     "IdentificationRuns: the states of a run and what a bounded record fixes. "
-    "JointPlanFrames: joint plans of joint frames: nested decompositions read through a description. "
+    "Composition, section JointPlanFrames: joint plans of joint frames: nested decompositions read through a description. "
     "LastingRuns: lasting and reaching on runs and courses. "
     "LearningRuns: what a run's registered record fixes and what a learner reaching it does. "
-    "LevelWebs: laws of a condition's level and a family's configuration on a web. "
-    "ListedOutcomeFrames: what fixes likeness where each move has listed outcomes. "
+    "Entropy, section LevelWebs: laws of a condition's level and a family's configuration on a web. "
+    "Likeness, section ListedOutcomeFrames: what fixes likeness where each move has listed outcomes. "
     "ListedWebs: the laws of listing what is active, read of a web's activity. "
-    "MoveRuns: where the moves of a run are formed. "
-    "OrderWorlds: the arrangements of a world's exchanges, and its readings in time. "
-    "PassageWorlds: what the stated laws of one step and the following of passages give of worlds. "
-    "RecurrenceRuns: recurrence on the process of a determined law: merging, returning and the kept history. "
-    "ReducedRuns: what a reduction keeps of the courses and runs of a law. "
+    "MoveFormation, section MoveRuns: where the moves of a run are formed. "
+    "OrderNormal, section OrderWorlds: the arrangements of a world's exchanges, and its readings in time. "
+    "OneStep, section PassageWorlds: what the stated laws of one step and the following of passages give of worlds. "
+    "Branching, section RecurrenceRuns: recurrence on the process of a determined law: merging, returning and the kept history. "
+    "Courses, section ReducedRuns: what a reduction keeps of the courses and runs of a law. "
     "ReferencePlanTraces: revision of a reference plan as a process of the spine. "
-    "RetrodictionRuns: reading an earlier configuration of a run from later dated records. "
-    "RevisionRuns: what the history of a run's registrations selects, and the reconstruction steps. "
+    "Courses, section RetrodictionRuns: reading an earlier configuration of a run from later dated records. "
+    "Revision, section RevisionRuns: what the history of a run's registrations selects, and the reconstruction steps. "
     "RouteTraces: the orders of a sum over a process's histories. "
     "SeekingRuns: the boundary of enough on the unfolding. "
     "Enough: under an undetermined law some run comes to rest with its target met exactly where a "
@@ -1759,10 +1759,10 @@ SCOPE = (
     "SelectionRuns: a selection through a run's registered course. "
     "SensitivityWebs: sensitivity on webs and flows: what depends on the whole, read off the courses. "
     "SituationTraces: the counts of situations are counts of the traces of one determined process. "
-    "StockTraces: when a course is executable on a stock, in closed form. "
+    "Stock, section StockTraces: when a course is executable on a stock, in closed form. "
     "StrengthFlows: coupling strengths read off the flows a law gives. "
-    "TailRuns: the omniscience a law of the whole takes, stated of every run. "
-    "TallyWorlds: the counts a world's census can have. "
+    "Tail, section TailRuns: the omniscience a law of the whole takes, stated of every run. "
+    "Counting, section TallyWorlds: the counts a world's census can have. "
     "TypicalRuns: what counting says of the records of runs of free branching. "
     "WeightedTraces: integrating out and memory, on the traces of processes. "
     "Selection: two histories are selected alike by every selection through a selector's registration "
@@ -1858,10 +1858,10 @@ SCOPE = (
     "decided; fresh contents under every classification on a frame of two kinds. "
     "FrontierWorlds: what a formation requires of a condition, served across a handover between "
     "givers to it: withdrawn giving needs the successor, no gap serves, a gap refutes service. "
-    "AcceptanceFrames: on the options of a step, every option best with acceptance keeps access "
+    "FrontierFrames, section AcceptanceFrames: on the options of a step, every option best with acceptance keeps access "
     "exactly where every best base option does, restricting to the options loses score least "
     "among them, and an option best by an estimate within err is within 2 err of every option. "
-    "PresentationFrames: exact reduced presentations of a frame's branching tests correspond one "
+    "Presentations, section PresentationFrames: exact reduced presentations of a frame's branching tests correspond one "
     "to one, the canonical presentation reads every test and every exact one factors through "
     "it, the joint relation of a joint frame descends exactly where saturated, and the frame "
     "realizing every predicate tells every two configurations apart. "

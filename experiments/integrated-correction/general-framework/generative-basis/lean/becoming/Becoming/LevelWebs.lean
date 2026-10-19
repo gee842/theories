@@ -37,7 +37,7 @@ variable {F C : Type}
 /-- **A level that never rises from some step on does not fall at arbitrarily late steps.** -/
 theorem level_falls_not_recurring {W : Web F C} {c : C} {T : Nat}
     (still : ∀ n, T ≤ n → ¬ W.Rises n c) : ¬ ∀ N, ∃ n, N ≤ n ∧ W.Falls n c :=
-  falls_not_recurring (fun t => W.level t c) T
+  falls_not_recurring_from_floor (fun t => W.level t c) T
     fun n later => Nat.ge_of_not_lt (still n later)
 
 /-- **That a level never rising from some step on stays the same from some step on cannot be
@@ -62,7 +62,7 @@ theorem config_mem_iff (W : Web F C) (cs : List C) (t K : Nat) :
     W.config cs t ∈ configurations cs.length K ↔ W.stock cs t = K :=
   ((configurations_exact cs.length K).2 (W.config cs t)).trans
     ⟨fun ⟨_, sum⟩ => (W.config_total cs t).symm.trans sum,
-     fun same => ⟨length_map (W.level t) cs, (W.config_total cs t).trans same⟩⟩
+     fun same => ⟨length_of_map (W.level t) cs, (W.config_total cs t).trans same⟩⟩
 
 end LevelWebs
 

@@ -67,7 +67,6 @@ import Becoming.Units
 import Becoming.Imbalance
 import Becoming.Continuation
 import Becoming.RenewalFlow
-import Becoming.SupportRecovery
 import Becoming.Admission
 import Becoming.Exclusion
 import Becoming.Exhaustion
@@ -174,7 +173,6 @@ import Becoming.HistoryIdealsTraces
 import Becoming.Verification
 import Becoming.Coverage
 import Becoming.Presentations
-import Becoming.PresentationFrames
 import Becoming.Carriers
 import Becoming.BranchingCorrespondence
 import Becoming.JointCorrespondence
@@ -184,7 +182,6 @@ import Becoming.LocalUnits
 import Becoming.JoiningContexts
 import Becoming.JoiningCodes
 import Becoming.JoiningRoles
-import Becoming.Grains
 import Becoming.Postponement
 import Becoming.Novelty
 import Becoming.Reading
@@ -226,47 +223,25 @@ import Becoming.FinerTraces
 import Becoming.HistorySums
 import Becoming.FormedLoops
 import Becoming.AttractionRuns
-import Becoming.BoundaryFlows
-import Becoming.BoundaryWorlds
-import Becoming.CandidateRuns
-import Becoming.CaptureWorlds
-import Becoming.CensusWebs
 import Becoming.ContactCourses
 import Becoming.ContextualRuns
 import Becoming.ContinuingRuns
 import Becoming.CopyCourses
-import Becoming.CountdownCourses
 import Becoming.CounterfactualRuns
 import Becoming.CouplingTraces
 import Becoming.CourseRoles
-import Becoming.DependenceWebs
-import Becoming.DiagonalRuns
-import Becoming.ExchangeFlows
 import Becoming.HorizonWebs
 import Becoming.IdentificationRuns
-import Becoming.JointPlanFrames
 import Becoming.LastingRuns
 import Becoming.LearningRuns
-import Becoming.LevelWebs
-import Becoming.ListedOutcomeFrames
 import Becoming.ListedWebs
-import Becoming.MoveRuns
-import Becoming.OrderWorlds
-import Becoming.PassageWorlds
-import Becoming.RecurrenceRuns
-import Becoming.ReducedRuns
 import Becoming.ReferencePlanTraces
-import Becoming.RetrodictionRuns
-import Becoming.RevisionRuns
 import Becoming.RouteTraces
 import Becoming.SeekingRuns
 import Becoming.SelectionRuns
 import Becoming.SensitivityWebs
 import Becoming.SituationTraces
-import Becoming.StockTraces
 import Becoming.StrengthFlows
-import Becoming.TailRuns
-import Becoming.TallyWorlds
 import Becoming.TypicalRuns
 import Becoming.WeightedTraces
 import Becoming.LevelCoupling
@@ -290,7 +265,6 @@ import Becoming.Lexical
 import Becoming.Frontier
 import Becoming.FrontierFrames
 import Becoming.FrontierWorlds
-import Becoming.AcceptanceFrames
 import Becoming.ScoreRepresentation
 import Becoming.Alternatives
 import Becoming.Bundles
@@ -895,7 +869,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   and the focal formation's own trajectory do not decide the class, formations each within
   renewal consume jointly, escalation consumes, and the seasonal web is neither renewing nor
   consuming.
-* `Becoming.SupportRecovery` (L1): recovery in the support-gated family (no premise): with both
+* `Becoming.RenewalFlow` (L1): recovery in the support-gated family (no premise): with both
   formations unsupported the level stays (`absorbs`); a window of supported net repair raises the
   level by at least its length (`window_progress`); two pulses with the same later inputs recover
   or end for good, and the recovered history is neither renewing nor consuming in the whole-time
@@ -1546,7 +1520,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   a handover with no gap serves, and a gap refutes service. Joint plans and undertakings on the
   world's moves: a sole giver to what a formation requires is required, and active where only
   active formations give; a discharged undertaking leaves no residual step.
-* `Becoming.AcceptanceFrames` (L1): scores over the options of a step. Every option best by the
+* `Becoming.FrontierFrames` (L1): scores over the options of a step. Every option best by the
   score with acceptance keeps access exactly where every option best by the base score does;
   restricting to the options loses score, least among them; an option best by an estimate
   within `err` is within `2 * err` of every option.
@@ -1925,7 +1899,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   predicates named where used): presentations exact for the same answers share one kernel and one
   alignment; a relation descends to codes exactly where it is saturated; the canonical
   presentation by all predicates; a frame's branching tests as questions.
-* `Becoming.PresentationFrames` (L1): presentations of a frame. Exact reduced presentations of a
+* `Becoming.Presentations` (L1): presentations of a frame. Exact reduced presentations of a
   frame's branching tests correspond one to one; the canonical presentation reads every test,
   gives one code exactly to configurations passing the same tests where predicates are
   extensional, and every exact presentation factors through it; the joint relation of a joint
@@ -1964,7 +1938,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   and function extensionality named where used): units give every role; the traced fragments of
   the process that moves once collapse through roles and stay apart through retained references
   (`Fragment.once_codes_apart`).
-* `Becoming.Grains` (L1): what remained of reading at two grains (no premise; the decision of two
+* `Becoming.Granularity` (L1): what remained of reading at two grains (no premise; the decision of two
   tests named where used): renaming into single-move blocks and reading finer returns the test
   (`BranchingTest.finer_rename`); either of two decided tests; histories of recipes are finer
   courses; configurations with no step and the same claims are alike (`Alike.of_stuck`).
@@ -2400,11 +2374,11 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   a schedule, the sparse one recurring without running away.
 * `Becoming.AttractionRuns` (L1): attraction on the process of a determined law: what every run is
   drawn into.
-* `Becoming.BoundaryFlows` (L2): the self's boundaries drawn along what a flow relates.
-* `Becoming.BoundaryWorlds` (L2): the presupposition along what affects what in a world.
-* `Becoming.CandidateRuns` (L1): cross-situational resolution step by step along a run.
-* `Becoming.CaptureWorlds` (L1): a target's share among descendants.
-* `Becoming.CensusWebs` (L1): counts of arising and ceasing where they exist, and listing once.
+* `Becoming.Boundaries` (L2): the self's boundaries drawn along what a flow relates.
+* `Becoming.Boundaries` (L2): the presupposition along what affects what in a world.
+* `Becoming.Courses` (L1): cross-situational resolution step by step along a run.
+* `Becoming.Capture` (L1): a target's share among descendants.
+* `Becoming.Listing` (L1): counts of arising and ceasing where they exist, and listing once.
 * `Becoming.ContactCourses` (L1): revision rules as processes, and encodings along a run of
   channels.
 * `Becoming.ContextualRuns` (L1): the parity bounds and the parts of no whole along the runs of any
@@ -2412,36 +2386,36 @@ every module importing one of them; L1 holds the rest. No module imports one of 
 * `Becoming.ContinuingRuns` (L1): the witness of continuing revision at yield nine, read along its
   run.
 * `Becoming.CopyCourses` (L1): the laws of copying on the courses and runs of its processes.
-* `Becoming.CountdownCourses` (L1): countdown on the courses of a partial law's process.
+* `Becoming.Countdown` (L1): countdown on the courses of a partial law's process.
 * `Becoming.CounterfactualRuns` (L1): the course of an act on runs of the standard model and on the
   course world.
 * `Becoming.CouplingTraces` (L1): couplings read as the steps of a process.
 * `Becoming.CourseRoles` (L1): one course, one kind or two roles.
-* `Becoming.DependenceWebs` (L1): support in a fixed unit, and coextinction with no reserve.
-* `Becoming.DiagonalRuns` (L1): completing a registration within what it registers, as a process.
-* `Becoming.ExchangeFlows` (L1): uniform descent, and what a sampled flow keeps of an absent
+* `Becoming.Units` (L1): support in a fixed unit, and coextinction with no reserve.
+* `Becoming.Diagonal` (L1): completing a registration within what it registers, as a process.
+* `Becoming.Sampling` (L1): uniform descent, and what a sampled flow keeps of an absent
   relatum.
 * `Becoming.HorizonWebs` (L1): the horizon in the support-gated law, on its webs.
 * `Becoming.IdentificationRuns` (L1): the states of a run and what a bounded record fixes.
-* `Becoming.JointPlanFrames` (L1): joint plans of joint frames: nested decompositions read through
+* `Becoming.Composition` (L1): joint plans of joint frames: nested decompositions read through
   a description.
 * `Becoming.LastingRuns` (L1): lasting and reaching on runs and courses.
 * `Becoming.LearningRuns` (L1): what a run's registered record fixes and what a learner reaching it
   does.
-* `Becoming.LevelWebs` (L1): laws of a condition's level and a family's configuration on a web.
-* `Becoming.ListedOutcomeFrames` (L1): what fixes likeness where each move has listed outcomes.
+* `Becoming.Entropy` (L1): laws of a condition's level and a family's configuration on a web.
+* `Becoming.Likeness` (L1): what fixes likeness where each move has listed outcomes.
 * `Becoming.ListedWebs` (L1): the laws of listing what is active, read of a web's activity.
-* `Becoming.MoveRuns` (L1): where the moves of a run are formed.
-* `Becoming.OrderWorlds` (L1): the arrangements of a world's exchanges, and its readings in time.
-* `Becoming.PassageWorlds` (L1): what the stated laws of one step and the following of passages
+* `Becoming.MoveFormation` (L1): where the moves of a run are formed.
+* `Becoming.OrderNormal` (L1): the arrangements of a world's exchanges, and its readings in time.
+* `Becoming.OneStep` (L1): what the stated laws of one step and the following of passages
   give of worlds.
-* `Becoming.RecurrenceRuns` (L1): recurrence on the process of a determined law: merging, returning
+* `Becoming.Branching` (L1): recurrence on the process of a determined law: merging, returning
   and the kept history.
-* `Becoming.ReducedRuns` (L1): what a reduction keeps of the courses and runs of a law.
+* `Becoming.Courses` (L1): what a reduction keeps of the courses and runs of a law.
 * `Becoming.ReferencePlanTraces` (L1): revision of a reference plan as a process of the spine.
-* `Becoming.RetrodictionRuns` (L1): reading an earlier configuration of a run from later dated
+* `Becoming.Courses` (L1): reading an earlier configuration of a run from later dated
   records.
-* `Becoming.RevisionRuns` (L1): what the history of a run's registrations selects, and the
+* `Becoming.Revision` (L1): what the history of a run's registrations selects, and the
   reconstruction steps.
 * `Becoming.RouteTraces` (L1): the orders of a sum over a process's histories.
 * `Becoming.SeekingRuns` (L1): the boundary of enough on the unfolding.
@@ -2450,10 +2424,10 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   off the courses.
 * `Becoming.SituationTraces` (L1): the counts of situations are counts of the traces of one
   determined process.
-* `Becoming.StockTraces` (L1): when a course is executable on a stock, in closed form.
+* `Becoming.Stock` (L1): when a course is executable on a stock, in closed form.
 * `Becoming.StrengthFlows` (L1): coupling strengths read off the flows a law gives.
-* `Becoming.TailRuns` (L1): the omniscience a law of the whole takes, stated of every run.
-* `Becoming.TallyWorlds` (L1): the counts a world's census can have.
+* `Becoming.Tail` (L1): the omniscience a law of the whole takes, stated of every run.
+* `Becoming.Counting` (L1): the counts a world's census can have.
 * `Becoming.TypicalRuns` (L1): what counting says of the records of runs of free branching.
 * `Becoming.WeightedTraces` (L1): integrating out and memory, on the traces of processes.
 

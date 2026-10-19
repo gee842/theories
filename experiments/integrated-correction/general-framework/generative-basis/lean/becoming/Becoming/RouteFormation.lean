@@ -1,5 +1,5 @@
 import Becoming.CodeAcquisition
-import Becoming.ReducedRuns
+import Becoming.Courses
 
 /-!
 # Route formation: building an operation from generic connectors and testing it on records

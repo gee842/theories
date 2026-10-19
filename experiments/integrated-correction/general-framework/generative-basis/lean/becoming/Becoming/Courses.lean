@@ -1108,3 +1108,244 @@ theorem distinct_iff {M : Type} : ∀ l : List M, Distinct l ↔ Becoming.Distin
 end CrossSituational
 
 end Becoming
+
+section RetrodictionRuns
+
+/-!
+## Retrodiction runs: reading an earlier configuration of a run from later dated records
+
+`Becoming.Retrodiction` states, for every type of histories, when dated records read an earlier
+relation right: the actual history is always a candidate, a history fits the records another
+gave exactly when it gives the same records, an agreed reading is the actual one where the actual
+history is in the family, and a change seen only at both ends is not located. `Becoming.Courses`
+reads the histories as the runs of a process, the relation at a date as the configuration then,
+and every course of configurations as a run of the process in which every change is admitted
+(`Courses.anyChange`, `Courses.anyRun`). This section states those laws of runs.
+
+* **A run fits the records another run gave exactly when it gives the same records**
+  (`runs_fits_iff_same`).
+* **An agreed reading of a run is the actual one.** Where the actual run is in the family and its
+  source admitted, a content on which every explanation of the packet by a fitting run of the
+  family agrees is the actual content (`runs_agreed_reading_actual`).
+* **Controls at both ends do not locate a change.** Where two configurations differ, there are two
+  runs of the process in which every change is admitted, each changing once over the span, that
+  agree at both ends and differ at a date strictly between (`runs_change_unlocated`).
+
+No ethical predicate, ranking or axiom occurs.
+-/
+
+namespace Becoming
+
+open Generative
+
+universe u v x y z p q
+
+namespace RetrodictionRuns
+
+variable {S : Type u} {A : Type v} {P : Process S A} {Q : Type x} {O : Type y}
+
+/-- **A run fits the dated records another run gave exactly when it gives the same records.** -/
+theorem runs_fits_iff_same (emit : S → Q → O) (g r : Run P) (ps : List (Nat × Q)) :
+    Retrodiction.Fits (fun g : Run P => g.state) emit g
+        (Retrodiction.acquire (fun g : Run P => g.state) emit r ps) ↔
+      Retrodiction.acquire (fun g : Run P => g.state) emit g ps =
+        Retrodiction.acquire (fun g : Run P => g.state) emit r ps :=
+  Retrodiction.fits_iff_same (fun g : Run P => g.state) emit g r ps
+
+/-- **An agreed reading of a run is the actual one.** The packet at date `d` was produced by the
+actual run's configuration and the hidden source `s`. Where the actual run is in the family and
+`s` admitted, a content on which every explanation of the packet by a run of the family fitting
+the dated records and an admitted source agrees is the content of `s`. -/
+theorem runs_agreed_reading_actual {X : Type z} {Pk : Type p} {V : Type q} (emit : S → Q → O)
+    (packet : S → X → Pk) (content : X → V) (F : Run P → Prop) (Admitted : X → Prop) (d : Nat)
+    (r : Run P) (s : X) (ps : List (Nat × Q)) (v : V) (inF : F r) (admitted : Admitted s)
+    (agree : ∀ g t, F g → Retrodiction.Fits (fun g : Run P => g.state) emit g
+        (Retrodiction.acquire (fun g : Run P => g.state) emit r ps) → Admitted t →
+      packet (g.state d) t = packet (r.state d) s → content t = v) :
+    content s = v :=
+  Retrodiction.agreed_reading_actual (fun g : Run P => g.state) emit packet content F Admitted d r
+    s ps v inF admitted agree
+
+/-- **Controls at both ends do not locate a change.** Where `s` and `s'` differ, two runs of the
+process in which every change is admitted each change once over the span from `a`, are at `s` at
+`a` and at `s'` at the end, and are at `s'` and at `s` at the date `a + j + 1` strictly between. -/
+theorem runs_change_unlocated [DecidableEq S] {s s' : S} (two : s ≠ s') (a j m : Nat) :
+    ∃ g g' : Run (Courses.anyChange S),
+      Retrodiction.changes g.state a (j + 1 + (m + 1)) = 1 ∧
+      Retrodiction.changes g'.state a (j + 1 + (m + 1)) = 1 ∧
+      g.state a = s ∧ g'.state a = s ∧
+      g.state (a + (j + 1 + (m + 1))) = s' ∧ g'.state (a + (j + 1 + (m + 1))) = s' ∧
+      g.state (a + j + 1) = s' ∧ g'.state (a + j + 1) = s :=
+  match Retrodiction.change_unlocated two a j m with
+  | ⟨c, c', e, e', b, b', at_g, at_g'⟩ =>
+    have span : j + 1 + 1 + m = j + 1 + (m + 1) := Nat.add_right_comm (j + 1) 1 m
+    ⟨Courses.anyRun (Retrodiction.stepAt s s' (a + j + 1)),
+     Courses.anyRun (Retrodiction.stepAt s s' (a + (j + 1) + 1)),
+     c,
+     Eq.subst (motive := fun k =>
+       Retrodiction.changes (Retrodiction.stepAt s s' (a + (j + 1) + 1)) a k = 1) span c',
+     e, e', b,
+     Eq.subst (motive := fun k => Retrodiction.stepAt s s' (a + (j + 1) + 1) (a + k) = s') span b',
+     at_g, at_g'⟩
+
+end RetrodictionRuns
+
+end Becoming
+
+end RetrodictionRuns
+
+section CandidateRuns
+
+/-!
+## Candidate runs: cross-situational resolution step by step along a run
+
+`Becoming.CrossSituational` states what a form names when read across the records of the
+occasions it was met: a record bearing on the form keeps exactly the candidates it offers, one not
+bearing on it changes nothing, and under coverage a unique candidate is the target, while one
+record omitting the target can leave a wrong meaning as the only candidate. `Becoming.Courses`
+reads the moves of a run as its records (`Courses.run_candidates_append`,
+`Courses.run_resolves_iff`). This section states those laws step by step along a run.
+
+* **Each move of a run narrows the candidates by itself.** The record after `n + 1` moves is the
+  record after `n` and the move at `n` (`window_succ`); a move bearing on the form keeps exactly the
+  candidates it offers (`run_step_bearing`), and a move not bearing on it leaves them as they were
+  (`run_step_other`).
+* **Coverage along a run.** Where the target is in the repertoire and every bearing move of the
+  first `n` offers it, a unique candidate after `n` moves is the target
+  (`run_resolved_is_target`). Coverage cannot be dropped: on every run of a process with one move,
+  the first move, read as the record that offers only `1`, omits the target `0` and leaves `1` the
+  only candidate (`run_omitted`).
+
+No ethical predicate, ranking or axiom occurs.
+-/
+
+namespace Becoming
+
+open Generative CrossSituational
+
+universe u v w
+
+namespace CandidateRuns
+
+variable {S : Type u} {A : Type v} {P : Process S A} {M : Type w}
+
+/-- **The record of a run after `n + 1` moves is its record after `n` and the move at `n`.** -/
+theorem window_succ (run : Run P) (n : Nat) :
+    run.window 0 (n + 1) = run.window 0 n ++ [run.act n] :=
+  (Courses.window_append run n 0 1).trans
+    (congrArg (fun i => run.window 0 n ++ run.window i 1) (Nat.zero_add n))
+
+/-- **A move of a run bearing on the form keeps exactly the candidates it offers.** -/
+theorem run_step_bearing (bears : A → Bool) (offers : A → M → Bool) (run : Run P) (rep : List M)
+    (n : Nat) (bearing : bears (run.act n) = true) :
+    candidates bears offers rep (run.window 0 (n + 1)) =
+      List.filter (offers (run.act n)) (candidates bears offers rep (run.window 0 n)) :=
+  (congrArg (candidates bears offers rep) (window_succ run n)).trans
+    (candidates_snoc_bearing rep (run.window 0 n) bearing)
+
+/-- **A move of a run not bearing on the form leaves its candidates as they were.** -/
+theorem run_step_other (bears : A → Bool) (offers : A → M → Bool) (run : Run P) (rep : List M)
+    (n : Nat) (other : bears (run.act n) = false) :
+    candidates bears offers rep (run.window 0 (n + 1)) =
+      candidates bears offers rep (run.window 0 n) :=
+  (congrArg (candidates bears offers rep) (window_succ run n)).trans
+    (candidates_snoc_other rep (run.window 0 n) other)
+
+/-- **Under coverage along a run, a unique candidate is the target.** Where the target is in the
+repertoire and every bearing move of the first `n` offers it, the only candidate after `n` moves,
+if there is one, is the target. -/
+theorem run_resolved_is_target {bears : A → Bool} {offers : A → M → Bool} (run : Run P) (n : Nat)
+    {rep : List M} {t e : M} (available : t ∈ rep)
+    (covered : ∀ a, a ∈ run.window 0 n → bears a = true → offers a t = true)
+    (resolved : candidates bears offers rep (run.window 0 n) = [e]) : e = t :=
+  resolved_is_target available covered resolved
+
+/-- **Coverage cannot be dropped.** On every run of a process with one move, the first move, read
+as the record bearing on the form that offers only `1`, does not offer the target `0`, and leaves
+`1` the only candidate of the repertoire `[0, 1]`. -/
+theorem run_omitted {P : Process S Unit} (run : Run P) :
+    Omitted.offers (run.act 0) 0 = false ∧
+      candidates (fun _ : Unit => true) Omitted.offers [0, 1] (run.window 0 1) = [1] :=
+  ⟨Omitted.target_uncovered, Omitted.wrong_unique⟩
+
+end CandidateRuns
+
+end Becoming
+
+end CandidateRuns
+
+section ReducedRuns
+
+/-!
+## Reduced runs: what a reduction keeps of the courses and runs of a law
+
+`Becoming.Readout` states, for every reduction `π : S → K`, when an observable can be decoded from
+what `π` keeps (`decodes_iff_of_section`, where `π` has a section) and that a reduced law commuting
+with every move commutes with every course of moves (`foldl_semiconj`). `Becoming.Courses` reads
+what a reduction keeps of a run as a run of the law read through it (`Courses.reducedRun`), and
+every course of configurations as a run of the process in which every change is admitted
+(`Courses.anyChange`, `Courses.anyRun`). A law of change with moves is a process
+(`Assurance.ofMap`). This section states those laws of runs and courses.
+
+* **Decoding every run's reduced run.** Where the reduction has a section, one decoder reads an
+  observable from the reduced run at every date of every course of configurations exactly where
+  the observable goes alike across what the reduction merges (`runs_decoder_iff_of_section`).
+* **The reduced law carries every course.** A course of a law of change ends where its moves take
+  the start (`trace_foldl`). Where a reduced law commutes with every move, what the reduction
+  keeps at the end of every course is the reduced law's fold of the course's moves from the
+  reduced start (`course_reduced`), and the reduced run of every run of the law is so at every date
+  (`run_reduced`).
+
+No ethical predicate, ranking or axiom occurs.
+-/
+
+namespace Becoming
+
+open Generative Assurance Readout
+
+universe u v w x
+
+namespace ReducedRuns
+
+variable {S : Type u} {K : Type v} {V : Type w} {A : Type x}
+
+/-- **Decoding every run's reduced run.** Where the reduction has a section, some decoder reads the
+observable from the reduced run at every date of every course of configurations exactly where the
+observable goes alike across what the reduction merges. -/
+theorem runs_decoder_iff_of_section {π : S → K} {f : S → V} (sec : K → S)
+    (back : ∀ k, π (sec k) = k) :
+    (∃ g : K → V, ∀ (r : Run (Courses.anyChange S)) (n : Nat),
+        f (r.state n) = g ((Courses.reducedRun π r).state n)) ↔ Learning.Lumped π f :=
+  ⟨fun ⟨g, decodes⟩ =>
+    (decodes_iff_of_section sec back).mp ⟨g, fun s => decodes (Courses.anyRun fun _ => s) 0⟩,
+   fun lumped => match (decodes_iff_of_section sec back).mpr lumped with
+    | ⟨g, decodes⟩ => ⟨g, fun r n => decodes (r.state n)⟩⟩
+
+/-- A course of a law of change ends where its moves, taken in turn, take the start. -/
+theorem trace_foldl {f : S → A → S} :
+    ∀ {s t : S} {plan : List A}, Trace (ofMap f) s plan t → t = plan.foldl f s
+  | _, _, [], .nil _ => rfl
+  | _, _, _ :: rest, .cons moved tail =>
+    (trace_foldl tail).trans (congrArg (fun y => rest.foldl f y) moved)
+
+/-- **The reduced law carries every course.** Where a reduced law commutes with every move, what
+the reduction keeps at the end of a course of the law is the reduced law's fold of the course's
+moves from what it keeps of the start. -/
+theorem course_reduced (next : S → A → S) (π : S → K) (reduced : K → A → K)
+    (commutes : ∀ s a, π (next s a) = reduced (π s) a) {s t : S} {plan : List A}
+    (path : Trace (ofMap next) s plan t) : π t = plan.foldl reduced (π s) :=
+  (congrArg π (trace_foldl path)).trans (foldl_semiconj next π reduced commutes plan s)
+
+/-- **The reduced run of every run of the law is the reduced law's fold of its moves**, where the
+reduced law commutes with every move. -/
+theorem run_reduced (next : S → A → S) (π : S → K) (reduced : K → A → K)
+    (commutes : ∀ s a, π (next s a) = reduced (π s) a) (r : Run (ofMap next)) (n : Nat) :
+    (Courses.reducedRun π r).state n = (r.window 0 n).foldl reduced (π (r.state 0)) :=
+  Eq.subst (motive := fun k => π (r.state k) = (r.window 0 n).foldl reduced (π (r.state 0)))
+    (Nat.zero_add n) (course_reduced next π reduced commutes (r.window_trace n 0))
+
+end ReducedRuns
+
+end Becoming
+
+end ReducedRuns

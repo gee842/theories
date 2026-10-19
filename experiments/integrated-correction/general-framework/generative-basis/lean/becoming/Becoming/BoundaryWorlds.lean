@@ -76,6 +76,16 @@ theorem presupposition_iff_all (w : World) {center : Pos → w.Relatum}
       ∀ t g, sig p t g :=
   presupposition_iff_all_of_invariant (Boundary.whole (center p)) invariant
 
+/-- **In every world, a rival bounded by a region holding the center's reach meets the standard
+along affecting exactly where the region holds every relatum.** -/
+theorem bounded_invariant_iff (w : World) {center : Pos → w.Relatum}
+    {region : Pos → w.Relatum → Prop} {p : Pos}
+    (holds : ∀ g, w.flow.WithinReach w.web (center p) g → region p g) :
+    BoundaryInvariant (Boundary (w.flow.Affects w.web) (center p))
+        (SignificantWithin (bounded region) p) ↔
+      ∀ g, region p g :=
+  Becoming.bounded_invariant_iff holds
+
 end BoundaryWorlds
 
 end Becoming

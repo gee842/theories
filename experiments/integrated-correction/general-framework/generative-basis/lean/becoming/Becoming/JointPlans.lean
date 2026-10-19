@@ -21,7 +21,7 @@ Nothing here reads a frame or a labelled process. These declarations were stated
 `Becoming.Composition` and are moved here unchanged, with their names, so that the modules using
 them without a frame (`Becoming.ListFootprints`) do not import it (board item W). The laws of
 plans read through a description stay in `Becoming.Composition`, and those of joint frames in
-`Becoming.JointPlanFrames`. No ethical predicate, ranking or axiom occurs.
+`Becoming.Composition`. No ethical predicate, ranking or axiom occurs.
 -/
 
 /-! ## Nested decompositions and exclusive footprints (moved from `Becoming.Composition`) -/
