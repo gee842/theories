@@ -17,7 +17,7 @@ OUT.mkdir(parents=True,exist_ok=True)
 PDF=OUT/'generativity-to-wisdom-supporting-statement.pdf'
 SOURCE=HERE/'technical_content.json'
 doc=json.loads(SOURCE.read_text())
-FONTS=Path('/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
+FONTS=Path(Path.home(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
 for name,filename in [('Body','DejaVuSans.ttf'),('BodyBold','DejaVuSans-Bold.ttf'),('Serif','NotoSerif-Regular.ttf'),('SerifBold','NotoSerif-Bold.ttf')]:
     pdfmetrics.registerFont(TTFont(name,str(FONTS/filename)))
 for family in ['Body','Serif']:

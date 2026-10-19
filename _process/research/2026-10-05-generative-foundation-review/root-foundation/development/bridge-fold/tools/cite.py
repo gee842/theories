@@ -1,5 +1,6 @@
 import json,re,glob,os,collections
-T='/Users/ren/theories/'
+import subprocess
+T=subprocess.check_output(['git','rev-parse','--show-toplevel'],cwd=os.path.dirname(os.path.abspath(__file__)),text=True).strip()+'/'  # the repository root, from this script's location
 r=json.load(open('meta-res.json'))
 recs={}
 for f in glob.glob(T+'theories/becoming/results/records/*.json'):

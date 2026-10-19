@@ -1,7 +1,9 @@
 """Inventory of the 39 bridge modules' declarations with a first-pass kind."""
-import json, re, sys, pathlib
+import json, re, sys, pathlib, subprocess
 
-ROOT = pathlib.Path("/Users/ren/theories")
+# The repository root, from this script's location.
+ROOT = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"],
+                                          cwd=pathlib.Path(__file__).resolve().parent, text=True).strip())
 LEAN = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/becoming"
 src = (LEAN / "check_becoming.py").read_text()
 bridge = re.search(r"^BRIDGE = \[(.*?)\]", src, re.S | re.M).group(1)

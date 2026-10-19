@@ -5,6 +5,7 @@ Run commands from the repository root; the Python entry point also works from an
 | Command | Purpose |
 |---|---|
 | `make research-check` | Check all configured records, goal scopes, generated views, preservation hashes and declared proof-receipt bindings. |
+| `make research-check-strict` | The same check, and it also fails when a render would change any generated page, directory indexes and the Lean catalogue included (CI runs this; locally a stale index is only reported, so parallel sessions are not blocked). |
 | `make research-render` | Render compact navigation and healthy result pages; preserve stale pages and refuse to overwrite concurrent prose. |
 | `make research-find QUERY=support` | Search result identity and active sources, excluding frozen copies and development attempts. |
 | `make research-test` | Test the infrastructure’s validation, preservation and concurrency behavior. |

@@ -1,5 +1,6 @@
 import json,collections,re
-B='/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/'
+import os,subprocess
+B=subprocess.check_output(['git','rev-parse','--show-toplevel'],cwd=os.path.dirname(os.path.abspath(__file__)),text=True).strip()+'/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/'  # from the repository root
 rc=json.load(open(B+'becoming-verification.json'))
 g=json.load(open('graph.json'))['inherited']
 x=json.load(open('classes.json'))

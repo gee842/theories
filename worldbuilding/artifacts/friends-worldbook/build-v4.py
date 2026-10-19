@@ -14,7 +14,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 ROOT=Path(__file__).resolve().parent
-DEFAULT_FONTS=Path('/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
+DEFAULT_FONTS=Path(Path.home(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
 a=argparse.ArgumentParser();a.add_argument('--font-dir',type=Path,default=DEFAULT_FONTS);a.add_argument('--cjk-font',type=Path,default=Path('/System/Library/Fonts/Supplemental/Arial Unicode.ttf'));args=a.parse_args()
 for name,fn in [('Serif','NotoSerif-Regular.ttf'),('SerifItalic','NotoSerif-Italic.ttf'),('Sans','NotoSans-Regular.ttf'),('SansBold','NotoSans-Bold.ttf')]:
     pdfmetrics.registerFont(TTFont(name,str(args.font_dir/fn)))

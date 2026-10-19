@@ -1,1 +1,9 @@
 sources/situated-recovery/heald-2021/originals/memory_updating_participant24.mat filter=lfs diff=lfs merge=lfs -text
+# New data files of these kinds go to Git LFS (REPOSITORY-LAYOUT: new imports over 10-20 MB go to
+# LFS or an external store). .gitattributes cannot select by size; large PDFs and other kinds are
+# named per file. See _process/research/2026-10-05-repository-reconciliation/r20/TOOLING.md.
+*.mat filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+# The .mat files already in plain git keep their storage (history is not rewritten).
+sources/situated-recovery/heald-2021/originals/evoked_recovery_participant*.mat !filter !diff !merge !text
+sources/situated-recovery/heald-2021/originals/spontaneous_recovery_participant*.mat !filter !diff !merge !text

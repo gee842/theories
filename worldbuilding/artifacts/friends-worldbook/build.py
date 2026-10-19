@@ -20,7 +20,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
-DEFAULT_FONTS = Path('/Users/ren/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
+DEFAULT_FONTS = Path(Path.home(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
 parser = argparse.ArgumentParser()
 parser.add_argument('--font-dir', type=Path, default=DEFAULT_FONTS)
 args = parser.parse_args()

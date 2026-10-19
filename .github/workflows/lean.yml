@@ -1,0 +1,101 @@
+name: Lean core
+# Re-derives the Becoming package's compile and axiom audit on GitHub with the pinned
+# toolchain, by the package's own checker (check_becoming.py). The receipt and run folder go
+# to the runner's temporary directory and are uploaded as an artifact; nothing is committed.
+on:
+  push:
+    paths:
+      - 'experiments/integrated-correction/general-framework/generative-basis/lean/**'
+      - '.github/workflows/lean.yml'
+  pull_request:
+    paths:
+      - 'experiments/integrated-correction/general-framework/generative-basis/lean/**'
+      - '.github/workflows/lean.yml'
+  workflow_dispatch:
+    inputs:
+      fresh:
+        description: 'Run every Lean step (BECOMING_FRESH=1), reusing nothing from the step cache'
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 3 * * 1'  # weekly, fresh
+permissions:
+  contents: read
+concurrency:
+  group: lean-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  becoming-core:
+    runs-on: ubuntu-latest
+    # About 1,100 Lean steps (compile, axiom audit, signatures and prelude-only compile per
+    # module, plus the environment audit and controls). Runs of 500-730 steps took 3-11
+    # minutes on the development workstation; the limit leaves a 4-core runner a wide margin
+    # for a fresh run, which has not yet been timed on GitHub.
+    timeout-minutes: 120
+    env:
+      LEAN_DIR: experiments/integrated-correction/general-framework/generative-basis/lean/becoming
+      LEAN_TIMEOUT: '1800'
+      BECOMING_FRESH: ${{ (github.event_name == 'schedule' || inputs.fresh) && '1' || '0' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          # The checker reads only the Lean root (sources, the shared audit helper and the
+          # passed receipts that bind inherited modules).
+          sparse-checkout: experiments/integrated-correction/general-framework/generative-basis/lean
+      - name: Install elan and the pinned toolchain
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/elan" toolchain install "$(cat "$LEAN_DIR/lean-toolchain")"
+          cd "$LEAN_DIR" && "$HOME/.elan/bin/elan" which lean && "$HOME/.elan/bin/lean" --version
+      # The step cache only saves work: each entry is keyed by the toolchain, the Lean binary's
+      # sha256, the step and the bytes of its whole import closure, and a restored output is
+      # used only when its digest matches the entry. Only CI runs write this cache.
+      - name: Restore the checker's step cache
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.cache/becoming-lean
+          key: becoming-lean-${{ hashFiles('experiments/integrated-correction/general-framework/generative-basis/lean/becoming/lean-toolchain') }}-${{ hashFiles('experiments/integrated-correction/general-framework/generative-basis/lean/**/*.lean', 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py', 'experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check.py') }}
+          restore-keys: |
+            becoming-lean-${{ hashFiles('experiments/integrated-correction/general-framework/generative-basis/lean/becoming/lean-toolchain') }}-
+      - name: Compile the core and audit its axioms (check_becoming.py)
+        env:
+          BECOMING_OUT: ${{ runner.temp }}/becoming-out
+        run: |
+          mkdir -p "$BECOMING_OUT"
+          BECOMING_JOBS="$(nproc)" python3 -B "$LEAN_DIR/check_becoming.py"
+      - name: Keep only the steps this run used in the cache
+        if: success()
+        env:
+          BECOMING_OUT: ${{ runner.temp }}/becoming-out
+        run: |
+          python3 - "$BECOMING_OUT/becoming-verification.json" "$HOME/.cache/becoming-lean" <<'EOF'
+          import json, shutil, sys
+          from pathlib import Path
+          receipt, cache = Path(sys.argv[1]), Path(sys.argv[2])
+          if not receipt.is_file() or not cache.is_dir():
+              sys.exit(0)
+          keep = set(json.loads(receipt.read_text()).get("lean_steps", {}).get("keys", {}).values())
+          for p in cache.iterdir():
+              key = p.name[:-5] if p.name.endswith(".json") else p.name
+              if key not in keep:
+                  shutil.rmtree(p) if p.is_dir() else p.unlink()
+          print(len(keep), "step keys kept")
+          EOF
+      - name: Save the step cache
+        if: always() && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/.cache/becoming-lean
+          key: becoming-lean-${{ hashFiles('experiments/integrated-correction/general-framework/generative-basis/lean/becoming/lean-toolchain') }}-${{ hashFiles('experiments/integrated-correction/general-framework/generative-basis/lean/**/*.lean', 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py', 'experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check.py') }}
+      - name: Upload the receipt and run folder
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: becoming-receipt
+          path: ${{ runner.temp }}/becoming-out
+          retention-days: 30
+          if-no-files-found: warn

@@ -5,11 +5,16 @@ permissions:
 jobs:
   records-and-navigation:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Install ripgrep (the Lean catalogue's file discovery)
+        run: command -v rg || (sudo apt-get update -q && sudo apt-get install -y -q ripgrep)
       - name: Test infrastructure
         run: make research-test
-      - name: Check records, evidence bindings, preservation and generated navigation
-        run: make research-check
+      # Strict: a generated page that a render would change (directory indexes and the Lean
+      # catalogue included) fails here; locally `make research-check` only reports stale indexes.
+      - name: Check records, evidence bindings, preservation and generated navigation (strict freshness)
+        run: make research-check-strict

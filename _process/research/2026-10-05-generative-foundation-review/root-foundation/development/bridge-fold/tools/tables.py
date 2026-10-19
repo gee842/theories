@@ -1,6 +1,8 @@
 import json,collections
 x=json.load(open('classes.json'))
-a=json.load(open('/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json'))['roots']
+import os,subprocess
+ROOT=subprocess.check_output(['git','rev-parse','--show-toplevel'],cwd=os.path.dirname(os.path.abspath(__file__)),text=True).strip()  # the repository root, from this script's location
+a=json.load(open(ROOT+'/_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json'))['roots']
 BR=['Bridge','CompositionBridge','JoiningBridge','GranularityBridge','RepairComparison','Instances','RenewalBridge','CoursesBridge']
 order=[]
 for v in x.values():

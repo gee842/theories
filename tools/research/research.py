@@ -238,8 +238,8 @@ def secrets(root=ROOT, allowlist=None):
 
 def index_outputs(render=False):
     """Pages of the index and catalogue generators: (outputs, errors, reading drift). The Lean
-    catalogue scans every .lean file, so it is rendered but not compared by `check`; its own
-    `lean_catalogue.py --check` compares it."""
+    catalogue scans every .lean file, so it is rendered but compared by `check` only with
+    `--strict-fresh`; its own `lean_catalogue.py --check` compares it as well."""
     out = dict(indexes.render())
     pages, errors, drift = reading_catalogue.render()
     out.update(pages)
@@ -249,7 +249,11 @@ def index_outputs(render=False):
     return out, ['reading catalogue: ' + e for e in errors], drift
 
 
-def check_or_render(render=False, base=None, ids=None):
+def check_or_render(render=False, base=None, ids=None, strict_fresh=False):
+    """Check (or with `render`, write) the generated views. A stale directory index or
+    catalogue is reported, not failed, so parallel sessions are not blocked by pages that
+    follow chapters and studies; `strict_fresh` (CI) fails on it and also compares the Lean
+    catalogue, so the check fails whenever a render would change a generated page."""
     before = input_snapshot()
     records, errors = registry.load_records()
     findings, drift = registry.validate(records)
@@ -260,7 +264,7 @@ def check_or_render(render=False, base=None, ids=None):
     if errors:
         return 1, {'errors': errors, 'source_drift': drift}
     outputs = navigation.render_views(records)
-    index_pages, index_errors, reading_drift = index_outputs(render)
+    index_pages, index_errors, reading_drift = index_outputs(render or strict_fresh)
     stale_indexes = []
     errors += index_errors
     outputs.update(index_pages)
@@ -280,6 +284,14 @@ def check_or_render(render=False, base=None, ids=None):
             errors.append('Research inputs changed during validation; no views written. Retry with current records.')
         else:
             errors += navigation.write_views({**outputs, **record_outputs}, initial)
+            # The Lean catalogue reads the links of the documentation, generated pages among
+            # them (README links Lean files), as they were before this write; a second pass
+            # over it makes one render a fixed point, so a strict check passes after it.
+            if not errors:
+                settled = {path: body for path, body in lean_catalogue.render().items()
+                           if not (ROOT / path).is_file() or (ROOT / path).read_text() != body}
+                if settled:
+                    errors += navigation.write_views(settled, initial)
     elif not render:
         for path, body in {**outputs, **record_outputs}.items():
             if not (ROOT / path).exists() or (ROOT / path).read_text() != body:
@@ -287,6 +299,9 @@ def check_or_render(render=False, base=None, ids=None):
                     stale_indexes.append(path)  # freshness of a directory index or catalogue, not an error
                 else:
                     errors.append('generated view differs; reconcile and run make research-render: ' + path)
+        if strict_fresh:
+            errors += ['generated index differs from what render would write (--strict-fresh); run make research-render: ' + path
+                       for path in stale_indexes]
     # Readability: schema-2 errors are already among the validation errors; the rest warn.
     # The growth ratchet applies to records changed since the base commit.
     warnings = [f for r in records for f in style.lint(r) if f['severity'] == 'warning']
@@ -320,6 +335,8 @@ def main():
         p = sub.add_parser(cmd)
         p.add_argument('--changed-since')
         p.add_argument('--ids', nargs='+')
+    sub.choices['check'].add_argument('--strict-fresh', action='store_true',
+                                      help='fail when a render would change any generated page, directory indexes and the Lean catalogue included (CI)')
     p = sub.add_parser('find')
     p.add_argument('query', nargs='?', default=os.environ.get('QUERY', ''))
     p.add_argument('--archives', action='store_true')
@@ -392,7 +409,7 @@ def main():
         with render_lock():
             code, result = check_or_render(True, args.changed_since, args.ids)
     else:
-        code, result = check_or_render(False, args.changed_since, args.ids)
+        code, result = check_or_render(False, args.changed_since, args.ids, strict_fresh=args.strict_fresh)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return code
 

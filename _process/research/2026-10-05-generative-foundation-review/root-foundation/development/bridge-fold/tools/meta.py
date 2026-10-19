@@ -1,5 +1,6 @@
 import json,re,collections
-B='/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/'
+import os,subprocess
+B=subprocess.check_output(['git','rev-parse','--show-toplevel'],cwd=os.path.dirname(os.path.abspath(__file__)),text=True).strip()+'/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/'  # from the repository root
 src=open(B+'check_becoming.py').read()
 def lst(name): return re.findall(r'"([A-Za-z.]+)"', re.search(r"^"+name+r" = \[(.*?)\]", src, re.S|re.M).group(1))
 CORE=set(lst('CORE')); BRIDGE=lst('BRIDGE'); FOUND={'GenerativeCore','InquirySufficiency','RelationalRenewal'}
