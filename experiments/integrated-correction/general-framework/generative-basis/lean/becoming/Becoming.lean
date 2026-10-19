@@ -373,8 +373,9 @@ readings of the unfolding (`Becoming.Labelled`).
 * `Becoming.Return` (L3): renewal graded by the time to return; readings over cycles.
 * `Becoming.Horizon` (L3): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
-  amounts is decided step by step. What a finite history refutes, with no premise: a
-  refutable reading holds, up to double negation, at every run adhering to it; a reading
+  amounts is decided step by step. What a finite history refutes, with no premise, proved as
+  the case of runs of the laws of points of `Becoming.Ideals` (a run read as the ideal of its
+  stretches, `refutable_iff_refutableBy`, `adheres_iff_adheresBy`): a refutable reading holds, up to double negation, at every run adhering to it; a reading
   with an adhering run outside it is not refutable, and one with a run inside adhering to its
   complement is not verifiable; adhering is refutable exactly where every failure to adhere
   has a horizon, which excluded middle gives; a reading made of
@@ -1816,9 +1817,9 @@ readings of the unfolding (`Becoming.Labelled`).
   profiles, letterwise stability and the obstruction that locates a changed profile; the bounded
   language, the latch and the gate.
 * `Becoming.HistoryIdeals` (L3): histories as ideals of their finite stretches (no premise). A
-  run is the ideal of the stretches it passes through. The laws of `Becoming.Ideals` are read on
-  the histories of every process, and the laws of `Becoming.Horizon` on what a finite history
-  refutes are their case of runs. Adhering is the least closed class, with no double negation; a
+  run is the ideal of the stretches it passes through (`Becoming.Horizon`, which derives its laws
+  of what a finite history refutes from those of `Becoming.Ideals`). The laws of `Becoming.Ideals`
+  are read on the histories of every process. Adhering is the least closed class, with no double negation; a
   run lies in a closed class where each of its stretches is a stretch of the class; asked of every
   process, a refutable class is closed, and a closed class refutable, each exactly under
   double-negation elimination. Avoidance, a lower set's own histories, and the completion at

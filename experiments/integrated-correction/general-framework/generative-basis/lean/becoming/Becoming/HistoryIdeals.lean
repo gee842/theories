@@ -21,7 +21,8 @@ premise:
   (`refutable_iff_refutableBy`), and a run adheres to a reading exactly where it adheres through its
   stretches (`adheres_iff_adheresBy`), that is, where its ideal lies in the hull of the ideals of
   the reading's runs (`adheres_iff_hull`). So Horizon's laws are the case of runs of the laws of
-  `Ideals.RefutableBy` and `Ideals.AdheresBy`, derived from them below (`Stretches`);
+  `Ideals.RefutableBy` and `Ideals.AdheresBy`, and `Becoming.Horizon`, which defines the stretches
+  and states these two equivalences, derives them from those laws;
 * a reading of runs holding every run that adheres to it is the reading of the runs whose
   stretches all lie in a lower set of stretches, the stretches of the runs it holds
   (`closed_iff_within_lower`): it is made of tests, one for each stretch, read as propositions.
@@ -65,9 +66,9 @@ Recurrence is the case, by the sequence of `false` (`finiteOr_recurs_not_refutab
 are the histories of the process `P`: the principal ideals are its finite histories, and its runs
 are the ideals of the stretches they pass through. Each law of `Becoming.Ideals` is read on them,
 with no premise:
-* Horizon's laws follow from the laws of points (`Stretches.not_not`, `Stretches.adheres_least`,
-  `Stretches.adheres_iff`, `Stretches.not_refutable_of_adheres`, `Stretches.refutable_adheres_iff`),
-  and a refutable class of histories is refutable at runs (`refutable_of_class`);
+* Horizon's laws are the laws of points read on runs, and `Becoming.Horizon` proves them so
+  (`Refutable.not_not` from `Ideals.RefutableBy.not_not`, and the rest); a refutable class of
+  histories is refutable at runs (`refutable_of_class`);
 * adhering is the least closed class: a run adheres to a reading exactly where every closed class
   of histories holding the reading's runs holds it, with no double negation (`adheres_iff_closed`);
   that class is unique (`adherence_unique`), adds no stretch (`adheres_content`) and extends any
@@ -114,22 +115,6 @@ variable {S : Type u} {A : Type v}
 
 /-! ## Runs: the ideals of their stretches -/
 
-/-- The stretches of the runs of a process: `(r, h)` is extended by `(r', h')` where `h ≤ h'` and
-the runs agree up to `h`. -/
-def stretchOrder (P : Process S A) : Ideals.Preorder (Run P × Nat) where
-  le e e' := e.2 ≤ e'.2 ∧ e.1.AgreeUpTo e.2 e'.1
-  refl e := ⟨Nat.le_refl e.2, Run.AgreeUpTo.refl e.1 e.2⟩
-  trans := fun ⟨le, agree⟩ ⟨le', agree'⟩ => ⟨Nat.le_trans le le', agree.trans (agree'.mono le)⟩
-
-/-- A run read as the ideal of the stretches it passes through. -/
-def Run.stretches {P : Process S A} (r : Run P) : Ideals.Ideal (stretchOrder P) where
-  mem e := e.1.AgreeUpTo e.2 r
-  nonempty := ⟨(r, 0), Run.AgreeUpTo.refl r 0⟩
-  lower := fun ⟨le, agree⟩ agree' => agree.trans (agree'.mono le)
-  directed := fun {e e'} agree agree' =>
-    ⟨(r, e.2 + e'.2), Run.AgreeUpTo.refl r _, ⟨Nat.le_add_right _ _, agree⟩,
-      ⟨Nat.le_add_left _ _, agree'⟩⟩
-
 /-- **Two runs give ideals one below the other exactly where they agree at every horizon.** -/
 theorem Run.stretches_le_iff {P : Process S A} {r r' : Run P} :
     Ideals.Ideal.LE r.stretches r'.stretches ↔ ∀ h, r.AgreeUpTo h r' :=
@@ -140,22 +125,6 @@ theorem Run.stretches_not_principal {P : Process S A} (r : Run P) (e : Run P × 
     ¬ Ideals.Ideal.Same r.stretches (Ideals.principal (stretchOrder P) e) :=
   fun same => Nat.not_succ_le_self e.2
     ((same (r, e.2 + 1)).mp (Run.AgreeUpTo.refl r (e.2 + 1))).1
-
-/-- **A reading of runs is refutable exactly where it is refutable at a stretch.** -/
-theorem refutable_iff_refutableBy {P : Process S A} {K : Run P → Prop} :
-    Refutable K ↔ Ideals.RefutableBy Run.stretches K :=
-  ⟨fun refutable r outside => match refutable r outside with
-    | ⟨h, blocked⟩ => ⟨(r, h), Run.AgreeUpTo.refl r h, fun r' inside agree => blocked r' agree inside⟩,
-   fun refutable r outside => match refutable r outside with
-    | ⟨_, agree, blocked⟩ => ⟨_, fun r' agree' inside => blocked r' inside (agree.trans agree')⟩⟩
-
-/-- **A run adheres to a reading exactly where it adheres through its stretches.** -/
-theorem adheres_iff_adheresBy {P : Process S A} {K : Run P → Prop} {r : Run P} :
-    Adheres K r ↔ Ideals.AdheresBy Run.stretches K r :=
-  ⟨fun adheres e agree => match adheres e.2 with
-    | ⟨r', inside, agree'⟩ => ⟨r', inside, agree.trans agree'⟩,
-   fun adheres h => match adheres (r, h) (Run.AgreeUpTo.refl r h) with
-    | ⟨r', inside, agree⟩ => ⟨r', inside, agree⟩⟩
 
 /-- The histories that are runs of a reading: the ideals of the runs it holds. -/
 def runClass {P : Process S A} (K : Run P → Prop) : Ideals.Ideal (stretchOrder P) → Prop :=
@@ -617,47 +586,7 @@ open HistoryIdeals (HistoryPrefix SameHistory WithinLanguage initialWord)
 
 variable {P : Process S A}
 
-/-! ### What a finite stretch refutes: Horizon's laws as the case of runs -/
-
-/-- **Horizon's `Refutable.not_not` is the case of runs of `Ideals.RefutableBy.not_not`.** -/
-theorem not_not {K : Run P → Prop} {r : Run P} (refutable : Refutable K) (adheres : Adheres K r) :
-    ¬ ¬ K r :=
-  Ideals.RefutableBy.not_not (refutable_iff_refutableBy.mp refutable)
-    (adheres_iff_adheresBy.mp adheres)
-
-/-- **Horizon's `Refutable.adheres_least` is the case of runs of
-`Ideals.RefutableBy.adheres_least`.** -/
-theorem adheres_least {K L : Run P → Prop} {r : Run P} (refutable : Refutable L)
-    (sub : ∀ r, K r → L r) (adheres : Adheres K r) : ¬ ¬ L r :=
-  Ideals.RefutableBy.adheres_least (refutable_iff_refutableBy.mp refutable) sub
-    (adheres_iff_adheresBy.mp adheres)
-
-/-- **Horizon's `Refutable.adheres_iff` is the case of runs of `Ideals.RefutableBy.adheres_iff`.** -/
-theorem adheres_iff {K : Run P → Prop} {r : Run P} (refutable : Refutable K)
-    (stable : ∀ r, ¬ ¬ K r → K r) : Adheres K r ↔ K r :=
-  adheres_iff_adheresBy.trans
-    (Ideals.RefutableBy.adheres_iff (refutable_iff_refutableBy.mp refutable) stable)
-
-/-- **Horizon's `not_refutable_of_adheres` is the case of runs of
-`Ideals.not_refutableBy_of_adheres`.** -/
-theorem not_refutable_of_adheres {K : Run P → Prop} {r : Run P} (adheres : Adheres K r)
-    (outside : ¬ K r) : ¬ Refutable K :=
-  fun refutable => Ideals.not_refutableBy_of_adheres (adheres_iff_adheresBy.mp adheres) outside
-    (refutable_iff_refutableBy.mp refutable)
-
-/-- **Horizon's `refutable_adheres_iff` is the case of runs of `Ideals.refutableBy_adheres_iff`.** -/
-theorem refutable_adheres_iff {K : Run P → Prop} :
-    Refutable (Adheres K) ↔ ∀ r, ¬ Adheres K r → ∃ h, ¬ ∃ r', K r' ∧ r.AgreeUpTo h r' :=
-  (refutable_iff_refutableBy.trans (Ideals.RefutableBy.congr fun _ => adheres_iff_adheresBy)).trans
-    (Ideals.refutableBy_adheres_iff.trans
-      ⟨fun found r outside =>
-        match found r fun adheres => outside (adheres_iff_adheresBy.mpr adheres) with
-        | ⟨(_, h), agree, none_⟩ =>
-          ⟨h, fun ⟨r', inside, agree'⟩ => none_ ⟨r', inside, agree.trans agree'⟩⟩,
-       fun found r outside =>
-        match found r fun adheres => outside (adheres_iff_adheresBy.mp adheres) with
-        | ⟨h, none_⟩ =>
-          ⟨(r, h), Run.AgreeUpTo.refl r h, fun ⟨r', inside, agree⟩ => none_ ⟨r', inside, agree⟩⟩⟩)
+/-! ### What a finite stretch refutes -/
 
 /-- **A refutable class of histories is refutable at runs**: a history of the class's complement
 that is a run shows a stretch no history of the class holds, and every run agreeing with it up to

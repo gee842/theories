@@ -1,5 +1,6 @@
 import Becoming.Labelled
 import Becoming.Return
+import Becoming.Ideals
 
 /-!
 # What a finite history decides
@@ -42,7 +43,12 @@ taken.
 **What a finite history refutes, for every process.** A reading of runs is refutable where
 every run outside it has a horizon beyond which no agreeing run is inside (`Refutable`), and a
 run adheres to a reading where every finite stretch of it is a stretch of a run inside
-(`Adheres`). With no premise:
+(`Adheres`). These are the laws of points of `Becoming.Ideals` read on runs: a run is read as the
+ideal of the stretches it passes through (`Run.stretches`, ordered by `stretchOrder`), a reading
+is refutable exactly where it is refutable at a stretch (`refutable_iff_refutableBy`), and a run
+adheres exactly where it adheres through its stretches (`adheres_iff_adheresBy`). Each law below
+that `Becoming.Ideals` states for points is proved here as its case of runs, its statement on
+runs unchanged. With no premise:
 * a refutable reading holds, up to double negation, at every run adhering to it
   (`Refutable.not_not`), and a refutable superset holds so at every run adhering to the subset
   (`Refutable.adheres_least`); for a stable reading, adhering is holding (`Refutable.adheres_iff`);
@@ -209,6 +215,22 @@ theorem Run.AgreeUpTo.mono {P : Process S A} {h h' : Nat} {r r' : Run P} (le : h
   ⟨fun t upTo => agree.1 t (Nat.le_trans upTo le),
    fun t before => agree.2 t (Nat.lt_of_lt_of_le before le)⟩
 
+/-- The stretches of the runs of a process: `(r, h)` is extended by `(r', h')` where `h ≤ h'` and
+the runs agree up to `h`. -/
+def stretchOrder (P : Process S A) : Ideals.Preorder (Run P × Nat) where
+  le e e' := e.2 ≤ e'.2 ∧ e.1.AgreeUpTo e.2 e'.1
+  refl e := ⟨Nat.le_refl e.2, Run.AgreeUpTo.refl e.1 e.2⟩
+  trans := fun ⟨le, agree⟩ ⟨le', agree'⟩ => ⟨Nat.le_trans le le', agree.trans (agree'.mono le)⟩
+
+/-- A run read as the ideal of the stretches it passes through. -/
+def Run.stretches {P : Process S A} (r : Run P) : Ideals.Ideal (stretchOrder P) where
+  mem e := e.1.AgreeUpTo e.2 r
+  nonempty := ⟨(r, 0), Run.AgreeUpTo.refl r 0⟩
+  lower := fun ⟨le, agree⟩ agree' => agree.trans (agree'.mono le)
+  directed := fun {e e'} agree agree' =>
+    ⟨(r, e.2 + e'.2), Run.AgreeUpTo.refl r _, ⟨Nat.le_add_right _ _, agree⟩,
+      ⟨Nat.le_add_left _ _, agree'⟩⟩
+
 /-- A reading of runs is refutable where every run outside it has a horizon beyond which no
 run agreeing with it up to there is inside. -/
 def Refutable {P : Process S A} (K : Run P → Prop) : Prop :=
@@ -223,6 +245,22 @@ def Verifiable {P : Process S A} (K : Run P → Prop) : Prop :=
 reading. -/
 def Adheres {P : Process S A} (K : Run P → Prop) (r : Run P) : Prop :=
   ∀ h, ∃ r', K r' ∧ r.AgreeUpTo h r'
+
+/-- **A reading of runs is refutable exactly where it is refutable at a stretch.** -/
+theorem refutable_iff_refutableBy {P : Process S A} {K : Run P → Prop} :
+    Refutable K ↔ Ideals.RefutableBy Run.stretches K :=
+  ⟨fun refutable r outside => match refutable r outside with
+    | ⟨h, blocked⟩ => ⟨(r, h), Run.AgreeUpTo.refl r h, fun r' inside agree => blocked r' agree inside⟩,
+   fun refutable r outside => match refutable r outside with
+    | ⟨_, agree, blocked⟩ => ⟨_, fun r' agree' inside => blocked r' inside (agree.trans agree')⟩⟩
+
+/-- **A run adheres to a reading exactly where it adheres through its stretches.** -/
+theorem adheres_iff_adheresBy {P : Process S A} {K : Run P → Prop} {r : Run P} :
+    Adheres K r ↔ Ideals.AdheresBy Run.stretches K r :=
+  ⟨fun adheres e agree => match adheres e.2 with
+    | ⟨r', inside, agree'⟩ => ⟨r', inside, agree.trans agree'⟩,
+   fun adheres h => match adheres (r, h) (Run.AgreeUpTo.refl r h) with
+    | ⟨r', inside, agree⟩ => ⟨r', inside, agree⟩⟩
 
 theorem Adheres.of {P : Process S A} {K : Run P → Prop} {r : Run P} (inside : K r) : Adheres K r :=
   fun h => ⟨r, inside, .refl r h⟩
@@ -239,28 +277,34 @@ theorem Adheres.adheres {P : Process S A} {K : Run P → Prop} {r : Run P}
     | ⟨_, adheres', agree⟩ => match adheres' h with
       | ⟨r'', inside, agree'⟩ => ⟨r'', inside, agree.trans agree'⟩
 
-/-- **A refutable reading holds, up to double negation, at every run adhering to it.** -/
+/-- **A refutable reading holds, up to double negation, at every run adhering to it**: the case of
+runs of `Ideals.RefutableBy.not_not`. -/
 theorem Refutable.not_not {P : Process S A} {K : Run P → Prop} {r : Run P} (refutable : Refutable K)
     (adheres : Adheres K r) : ¬ ¬ K r :=
-  fun outside => match refutable r outside with
-    | ⟨h, blocked⟩ => match adheres h with
-      | ⟨r', inside, agree⟩ => blocked r' agree inside
+  Ideals.RefutableBy.not_not (refutable_iff_refutableBy.mp refutable)
+    (adheres_iff_adheresBy.mp adheres)
 
 /-- **Refutable supersets hold where the subset is adhered to.** A refutable reading containing
-`K` holds, up to double negation, at every run adhering to `K`. -/
+`K` holds, up to double negation, at every run adhering to `K`: the case of runs of
+`Ideals.RefutableBy.adheres_least`. -/
 theorem Refutable.adheres_least {P : Process S A} {K L : Run P → Prop} {r : Run P}
     (refutable : Refutable L) (sub : ∀ r, K r → L r) (adheres : Adheres K r) : ¬ ¬ L r :=
-  refutable.not_not (adheres.mono sub)
+  Ideals.RefutableBy.adheres_least (refutable_iff_refutableBy.mp refutable) sub
+    (adheres_iff_adheresBy.mp adheres)
 
-/-- **For a stable refutable reading, adhering is holding.** -/
+/-- **For a stable refutable reading, adhering is holding**: the case of runs of
+`Ideals.RefutableBy.adheres_iff`. -/
 theorem Refutable.adheres_iff {P : Process S A} {K : Run P → Prop} {r : Run P}
     (refutable : Refutable K) (stable : ∀ r, ¬ ¬ K r → K r) : Adheres K r ↔ K r :=
-  ⟨fun adheres => stable r (refutable.not_not adheres), Adheres.of⟩
+  adheres_iff_adheresBy.trans
+    (Ideals.RefutableBy.adheres_iff (refutable_iff_refutableBy.mp refutable) stable)
 
-/-- **A run adhering to a reading it lies outside shows the reading is not refutable.** -/
+/-- **A run adhering to a reading it lies outside shows the reading is not refutable**: the case
+of runs of `Ideals.not_refutableBy_of_adheres`. -/
 theorem not_refutable_of_adheres {P : Process S A} {K : Run P → Prop} {r : Run P}
     (adheres : Adheres K r) (outside : ¬ K r) : ¬ Refutable K :=
-  fun refutable => refutable.not_not adheres outside
+  fun refutable => Ideals.not_refutableBy_of_adheres (adheres_iff_adheresBy.mp adheres) outside
+    (refutable_iff_refutableBy.mp refutable)
 
 /-- **A run inside a reading and adhering to its complement shows it is not verifiable.** -/
 theorem not_verifiable_of_adheres {P : Process S A} {K : Run P → Prop} {r : Run P}
@@ -270,20 +314,29 @@ theorem not_verifiable_of_adheres {P : Process S A} {K : Run P → Prop} {r : Ru
       | ⟨r', outside, agree⟩ => outside (all r' agree)
 
 /-- **What adheres to a reading is closed.** Where no run inside `K` agrees with `r` up to `h`, no
-run agreeing with `r` up to `h` adheres to `K`. -/
+run agreeing with `r` up to `h` adheres to `K`: the case of runs of `Ideals.AdheresBy.closed` at
+the stretch `(r, h)`. -/
 theorem Adheres.closed {P : Process S A} {K : Run P → Prop} {r : Run P} {h : Nat}
     (none_ : ¬ ∃ r', K r' ∧ r.AgreeUpTo h r') : ∀ r', r.AgreeUpTo h r' → ¬ Adheres K r' :=
-  fun _ agree adheres => match adheres h with
-    | ⟨r'', inside, agree'⟩ => none_ ⟨r'', inside, agree.trans agree'⟩
+  fun r' agree adheres =>
+    Ideals.AdheresBy.closed (ι := Run.stretches) (p := (r, h))
+      (fun ⟨r'', inside, agree'⟩ => none_ ⟨r'', inside, agree'⟩) r' agree
+      (adheres_iff_adheresBy.mp adheres)
 
 /-- **Adhering is refutable exactly where every failure to adhere has a horizon** at which no run
-inside the reading agrees. -/
+inside the reading agrees: the case of runs of `Ideals.refutableBy_adheres_iff`. -/
 theorem refutable_adheres_iff {P : Process S A} {K : Run P → Prop} :
     Refutable (Adheres K) ↔ ∀ r, ¬ Adheres K r → ∃ h, ¬ ∃ r', K r' ∧ r.AgreeUpTo h r' :=
-  ⟨fun refutable r outside => match refutable r outside with
-    | ⟨h, blocked⟩ => ⟨h, fun ⟨r', inside, agree⟩ => blocked r' agree (Adheres.of inside)⟩,
-   fun witnessed r outside => match witnessed r outside with
-    | ⟨_, none_⟩ => ⟨_, Adheres.closed none_⟩⟩
+  (refutable_iff_refutableBy.trans (Ideals.RefutableBy.congr fun _ => adheres_iff_adheresBy)).trans
+    (Ideals.refutableBy_adheres_iff.trans
+      ⟨fun found r outside =>
+        match found r fun adheres => outside (adheres_iff_adheresBy.mpr adheres) with
+        | ⟨(_, h), agree, none_⟩ =>
+          ⟨h, fun ⟨r', inside, agree'⟩ => none_ ⟨r', inside, agree.trans agree'⟩⟩,
+       fun found r outside =>
+        match found r fun adheres => outside (adheres_iff_adheresBy.mp adheres) with
+        | ⟨h, none_⟩ =>
+          ⟨(r, h), Run.AgreeUpTo.refl r h, fun ⟨r', inside, agree⟩ => none_ ⟨r', inside, agree⟩⟩⟩)
 
 /-- **Excluded middle makes adhering refutable**, for every reading of every process. -/
 theorem refutable_adheres_of_em {P : Process S A} (em : ∀ p : Prop, p ∨ ¬ p) (K : Run P → Prop) :
