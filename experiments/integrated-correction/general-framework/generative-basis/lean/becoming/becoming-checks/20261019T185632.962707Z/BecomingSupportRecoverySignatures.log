@@ -1,0 +1,26 @@
+Becoming.SupportRecovery.absorbs : ∀ (L : RelationalRenewal.Law) (T : Nat),
+  L.level T < L.needF → L.level T < L.needG → ∀ (n : Nat), L.level (T + n) = L.level T
+Becoming.SupportRecovery.repair_step : ∀ (L : RelationalRenewal.Law) (t : Nat),
+  L.needF ≤ L.level t → L.draw t < L.contrib t → L.level t + 1 ≤ L.level (t + 1)
+Becoming.SupportRecovery.window_progress : ∀ (L : RelationalRenewal.Law) (T N : Nat),
+  L.needF ≤ L.level T →
+    (∀ (d : Nat), d < N → L.draw (T + d) < L.contrib (T + d)) → ∀ (d : Nat), d ≤ N → L.level T + d ≤ L.level (T + d)
+Becoming.SupportRecovery.same_later_inputs : ∀ (n : Nat),
+  (Becoming.SupportRecovery.pulse 2).draw (n + 1) = (Becoming.SupportRecovery.pulse 3).draw (n + 1) ∧
+    (Becoming.SupportRecovery.pulse 2).contrib (n + 1) = (Becoming.SupportRecovery.pulse 3).contrib (n + 1)
+Becoming.SupportRecovery.pulse_levels : (Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 2)).level 0 () = 2 ∧
+  (Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 3)).level 0 () = 2 ∧
+    (Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 2)).level 1 () = 1 ∧
+      (Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 3)).level 1 () = 0 ∧
+        (Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 2)).level 2 () = 2
+Becoming.SupportRecovery.supported_pulse_recovers : ∀ (n : Nat), 2 ≤ (Becoming.SupportRecovery.pulse 2).level (2 + n)
+Becoming.SupportRecovery.unsupported_pulse_ends : ∀ (n : Nat),
+  (Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 3)).level (1 + n) () = 0 ∧
+    ∀ (p : RelationalRenewal.Law.Part), ¬(Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 3)).active (1 + n) p
+Becoming.SupportRecovery.recovered_neither : ¬RelationalRenewal.RenewingIn (Becoming.SupportRecovery.pulse 2).unfolding
+      RelationalRenewal.Law.Part.focal ∧
+  ¬RelationalRenewal.ConsumingIn (Becoming.SupportRecovery.pulse 2).unfolding RelationalRenewal.Law.Part.focal
+Becoming.SupportRecovery.recovered_web_neither : ¬(Becoming.SupportGated.web
+          (Becoming.SupportRecovery.pulse 2)).RenewingIn
+      RelationalRenewal.Law.Part.focal ∧
+  ¬(Becoming.SupportGated.web (Becoming.SupportRecovery.pulse 2)).ConsumingIn RelationalRenewal.Law.Part.focal

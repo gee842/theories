@@ -17,7 +17,7 @@ other than the summary of where the summarized configuration goes.
   extended by `false` has the code `true` (`endpoint_moved`).
 
 `DerivedHistoryLaw` states these of its derived process for the unrestricted language and
-`singletonFalseCode`, which is `code`; its derived process is `Readout.image` of the admitted
+`singletonFalseCode`, which is `code`; its derived process is `Image` of the admitted
 histories' law (`Becoming.Bridge`, `derived_same_steps`). No ethical predicate, ranking or axiom
 occurs.
 -/
@@ -46,7 +46,7 @@ theorem every_word : ∀ (word : List Bool) (h : List Bool), Feasible extend h w
 
 /-- **Read through any summary, the futures are carried.** -/
 theorem futures_through (π : List Bool → Bool) :
-    ∀ h word, Feasible (Readout.image extend π) (π h) word ↔ Feasible extend h word :=
+    ∀ h word, Feasible (Image extend π) (π h) word ↔ Feasible extend h word :=
   Readout.futures_through_iff.mpr fun h h' _ word =>
     ⟨fun _ => every_word word h', fun _ => every_word word h⟩
 
@@ -54,7 +54,7 @@ theorem futures_through (π : List Bool → Bool) :
 history's code to `false`, from the history `[true]`, though the empty history extended by `false`
 has the code `true`. -/
 theorem endpoint_moved :
-    Trace (Readout.image extend code) (code []) [false] false ∧ code ([] ++ [false]) ≠ false :=
+    Trace (Image extend code) (code []) [false] false ∧ code ([] ++ [false]) ≠ false :=
   ⟨.cons ⟨[true], [true, false], rfl, rfl, rfl⟩ (.nil false),
    fun moved => Bool.noConfusion (moved : true = false)⟩
 

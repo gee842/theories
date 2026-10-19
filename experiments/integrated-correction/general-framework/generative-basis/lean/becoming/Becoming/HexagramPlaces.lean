@@ -576,6 +576,11 @@ theorem same_not_not : ∀ x y : Bool, same (!x) (!y) = same x y
   | false, true => rfl
   | false, false => rfl
 
+theorem neither : ∀ {x y : Bool}, (x || y) = false → x = false ∧ y = false
+  | false, false, _ => ⟨rfl, rfl⟩
+  | true, _, h => Bool.noConfusion h
+  | false, true, h => Bool.noConfusion h
+
 theorem line_complement : ∀ (s : Hexagram) (k : Place), (complement s).line k = !s.line k
   | ⟨_, _, _, _, _, _⟩, .p1 => rfl
   | ⟨_, _, _, _, _, _⟩, .p2 => rfl

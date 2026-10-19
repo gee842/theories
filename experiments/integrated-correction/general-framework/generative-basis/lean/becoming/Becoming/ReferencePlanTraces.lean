@@ -232,7 +232,7 @@ theorem revise_keeps {s t : State} (st : P.step s .revise t) :
   match revise_step st with
   | ⟨i, _, method⟩ =>
     Eq.subst (motive := fun m => Registration.Keeps ReferencePlan.Alike s.method m) method.symm
-      (added_keeps_of_law s.method i)
+      (added_keeps s.method i)
 
 /-- **A revise step answering a failure at an address the method lacked gains the choice at that
 contact**, which the old method could not make. -/
@@ -242,7 +242,7 @@ theorem revise_gains_contact {s t : State} {i : Nat} (h : s.mismatch = some i) (
       ¬ Learning.Training.Through (ReferencePlan.Alike s.method) (fun x => x i = true) :=
   Eq.subst (motive := fun m => Learning.Training.Through (ReferencePlan.Alike m) (fun x => x i = true) ∧
       ¬ Learning.Training.Through (ReferencePlan.Alike s.method) (fun x => x i = true))
-    (congrArg Prod.fst (revise_binds_plan h st)).symm (new_contact_choice_of_law s.method i absent)
+    (congrArg Prod.fst (revise_binds_plan h st)).symm (new_contact_choice s.method i absent)
 
 /-- **A probe step, while building, acquires both references of the next planned contact.** -/
 theorem probe_binds {s t : State} {i : Nat} {tail : List Nat} (active : s.building = true)

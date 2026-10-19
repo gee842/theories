@@ -65,9 +65,9 @@ amounts (no instance theorem joins them): where no chain of couplings is long en
 order is exact (`carriedWithin_exact_of_not_coupledInto`); where a loop lies upstream, what reaches
 it keeps arriving (`carriedWithin_lt_of_loop`). Here the carried thing is withholding: it passes
 out where no chain is longer than `L` and keeps returning around a loop. With memory, withholding
-has the shape of a possibility lost under `Becoming.Recurrence`'s `Law.lost_stays`: giving at
+has the shape of a possibility lost under `Becoming.Recurrence`'s `Branching.lost_stays`: giving at
 `n + 1` gives giving at `n` (`waitsAll_gives_earlier`), as being reachable at `n + 1` gives being
-reachable at `n` (`Law.Reachable.earlier`), so withholding stays as a lost possibility stays lost.
+reachable at `n` (`Branching.Reachable.earlier`), so withholding stays as a lost possibility stays lost.
 `total_withholding_merges` compares with `Law.merged_stays` (configurations merged stay merged);
 it is stated pointwise by `↔`, since equality of configurations `α → Prop` would need function and
 proposition extensionality. As in `Becoming.Capture`'s `Law.perturbation_reabsorbed`, where a

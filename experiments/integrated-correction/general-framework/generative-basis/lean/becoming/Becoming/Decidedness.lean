@@ -51,13 +51,13 @@ and across a list of steps the counts at each step sum (`CountsAcross`).
   for good, and conversely, with no decidedness (`World.ceasing_not_stopping`,
   `World.arising_not_stopping`); decided from some step on, arising recurs exactly when ceasing
   does (`World.arising_iff_ceasing_decided`), of which `World.arising_iff_ceasing` is the case
-  decided by a procedure from the first step (`World.arising_iff_ceasing_of_decidable`). With a
+  decided by a procedure from the first step. With a
   list covering what is active from some step on, the same holds, decidedness asked only of the
   list's members (`World.ceasing_not_stopping_covered`, `World.arising_not_stopping_covered`,
   `World.arising_iff_ceasing_covered`).
 * **Rest needs none.** The rest theorems of `Becoming.Space` and `Becoming.Openness`
   (`World.rests_unrefuted_covering`, `World.rests_unrefuted`, `World.comes_to_rest_unrefuted`,
-  `World.Finite.comes_to_rest_unrefuted`, `World.rest_few`) use no decision procedure, and state
+  `World.rest_few`) use no decision procedure, and state
   that the world rests from some step on cannot be refuted (`World.RestsFrom`): that the falls of an
   amount that does not rise stop from some step on cannot be refuted, it not being the case that
   after every step from then on a later fall stays unrefuted (`falls_stop_unrefuted`,
@@ -749,12 +749,6 @@ theorem arising_iff_ceasing_decided (finite : w.Finite)
      fun ceasing M => match law.mpr (fun N => match ceasing N with
         | ⟨t, x, later, ceases⟩ => ⟨t, x, later, every x, ceases⟩) M with
       | ⟨t, x, later, _, arises⟩ => ⟨t, x, later, arises⟩⟩
-
-/-- A decision procedure decides from the first step on, so `arising_iff_ceasing` is a case of
-`arising_iff_ceasing_decided`. -/
-theorem arising_iff_ceasing_of_decidable [∀ t x, Decidable (w.web.active t x)]
-    (finite : w.Finite) : w.ArisingRecurs ↔ w.CeasingRecurs :=
-  arising_iff_ceasing_decided finite ⟨0, fun t x _ => Decidable.em (w.web.active t x)⟩
 
 /-- With a list covering what is active from step `T` on, where arising recurs, ceasing never
 stops for good. No decidedness is needed. -/

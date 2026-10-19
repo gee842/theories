@@ -127,11 +127,6 @@ theorem or_right_true : ∀ (x : Bool) {y : Bool}, y = true → (x || y) = true
   | true, true, _ => rfl
   | false, true, _ => rfl
 
-theorem or_false_split : ∀ {x y : Bool}, (x || y) = false → x = false ∧ y = false
-  | false, false, _ => ⟨rfl, rfl⟩
-  | true, _, h => Bool.noConfusion h
-  | false, true, h => Bool.noConfusion h
-
 theorem same_comm : ∀ x y : Bool, same x y = same y x
   | true, true => rfl
   | true, false => rfl
@@ -734,11 +729,11 @@ theorem sole_any {s : Hexagram} : ∀ {k : Place}, sole s k = true → soleAny s
   | .p6, h => or_right_true _ h
 
 theorem none_sole {s : Hexagram} (h : soleAny s = false) : ∀ k, sole s k = false :=
-  have h5 := or_false_split h
-  have h4 := or_false_split h5.1
-  have h3 := or_false_split h4.1
-  have h2 := or_false_split h3.1
-  have h1 := or_false_split h2.1
+  have h5 := neither h
+  have h4 := neither h5.1
+  have h3 := neither h4.1
+  have h2 := neither h3.1
+  have h1 := neither h2.1
   fun
   | .p1 => h1.1
   | .p2 => h1.2

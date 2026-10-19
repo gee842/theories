@@ -19,7 +19,7 @@ the fast level loses and to what fixes the course a rule generates.
   (`rule_kept`), the fast level is the orbit of the one law the rule gives (`never_reads_course`),
   and two courses whose fast configurations differ have the same rule at every step
   (`rule_unreached`): nothing the fast level meets reaches the rule. Under the one law, a fast
-  configuration lost stays lost (`never_reads_lost`, from `Law.lost_stays`), configurations it
+  configuration lost stays lost (`never_reads_lost`, from `Branching.lost_stays`), configurations it
   merges stay merged (`never_reads_merged`, from `Law.merged_stays`), and within finitely many fast
   configurations a merge loses a configuration at every step from the list's length on
   (`never_reads_loses`, from `Law.Merges.loses` and `Law.Reachable.back`). Where neither level's
@@ -80,7 +80,7 @@ open Generative
 
 universe u v w u' v'
 
-/-- **Reachable at `n + k` steps, reachable at `n` steps.** The positive form of `Law.lost_stays`,
+/-- **Reachable at `n + k` steps, reachable at `n` steps.** The positive form of `Branching.lost_stays`,
 which is its contrapositive. -/
 theorem Law.Reachable.back {S : Type u} {next : S → S} {n : Nat} {s : S} :
     ∀ k, Law.Reachable next (n + k) s → Law.Reachable next n s
@@ -167,11 +167,11 @@ theorem rule_unreached (never : ∀ t, reads t = false) (x x' : S) (g : R) (t : 
 
 /-- **Under a rule that never reads, a fast configuration lost stays lost.** A configuration the
 law of the rule cannot give in `n` steps is the fast configuration of no course from that rule at
-any step from `n` on (`Law.lost_stays`). -/
+any step from `n` on (`Branching.lost_stays`). -/
 theorem never_reads_lost (never : ∀ t, reads t = false) {g : R} {n : Nat} {s : S}
     (lost : ¬ Law.Reachable (fun y => f y g) n s) (k : Nat) (x : S) :
     (paced f h reads (x, g) (n + k)).1 ≠ s := fun at_s =>
-  Law.lost_stays lost k (Law.reachable_iff.mpr ⟨x, (congrArg Prod.fst (never_reads_course never (x, g) (n + k))).symm.trans at_s⟩)
+  Branching.lost_stays lost k (Law.reachable_iff.mpr ⟨x, (congrArg Prod.fst (never_reads_course never (x, g) (n + k))).symm.trans at_s⟩)
 
 /-- **Under a rule that never reads, configurations merged stay merged.** Two fast configurations
 the rule's law takes to one give the same two-level course from the next step on
@@ -282,15 +282,15 @@ def slow (x _ : Bool) : Bool := !x
 
 /-- **Each fixed rule loses a configuration from the first step on.** No run of the law the rule
 `true` gives is at `false` at any step from the first on, and no run of the law the rule `false`
-gives is at `true` (`Law.lost_stays`). -/
+gives is at `true` (`Branching.lost_stays`). -/
 theorem fixed_loses (k : Nat) (x : Bool) :
     (Law.run (fun x => fast x true) x).state (1 + k) ≠ false ∧
       (Law.run (fun x => fast x false) x).state (1 + k) ≠ true :=
   ⟨fun at_false =>
-    Law.lost_stays (fun r => let ⟨_, at_1⟩ := Law.reachable_iff.mp r; Bool.noConfusion (at_1 : true = false)) k
+    Branching.lost_stays (fun r => let ⟨_, at_1⟩ := Law.reachable_iff.mp r; Bool.noConfusion (at_1 : true = false)) k
       (Law.reachable_iff.mpr ⟨x, at_false⟩),
    fun at_true =>
-    Law.lost_stays (fun r => let ⟨_, at_1⟩ := Law.reachable_iff.mp r; Bool.noConfusion (at_1 : false = true)) k
+    Branching.lost_stays (fun r => let ⟨_, at_1⟩ := Law.reachable_iff.mp r; Bool.noConfusion (at_1 : false = true)) k
       (Law.reachable_iff.mpr ⟨x, at_true⟩)⟩
 
 /-- The course whose rule reads the fast level at every step comes back after four steps. -/

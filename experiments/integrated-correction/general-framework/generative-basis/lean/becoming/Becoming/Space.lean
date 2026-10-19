@@ -148,7 +148,9 @@ refuted: it is not the case that after every step from `T` on a later fall stays
 form, that its falls do not recur. -/
 theorem falls_stop_unrefuted {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
     ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t, M ≤ t ∧ q (t + 1) < q t :=
-  fun falls => unrefuted_falls_exceed still falls (q T) T (Nat.le_refl T) (Nat.le_refl _)
+  Amounts.rests_unrefuted (M := Amounts.whole) (s := q) (ε := 1) (P := fun t => q (t + 1) < q t)
+    (m := q T + 1) (fun t later no => no (still t later)) (fun _ _ falls no => no falls)
+    (Amounts.whole_within (q T))
 
 /-- So that the amount stays the same from some step on cannot be refuted. -/
 theorem amount_still_unrefuted {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :

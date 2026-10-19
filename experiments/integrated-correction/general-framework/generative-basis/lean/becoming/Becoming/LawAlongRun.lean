@@ -26,8 +26,7 @@ what each theorem names.
   that stays at one configuration of a process allowing every step is consistent through the
   identity at every step, and the process does not go alike (`Constant.consistent`,
   `Constant.not_goAlike`). `Switching.no_state_law` follows from the criterion: its run's first two
-  steps, read through the state, are inconsistent (`Switching.inconsistent`,
-  `Switching.no_state_law_of_criterion`).
+  steps, read through the state, are inconsistent (`Switching.inconsistent`).
 * **Exactness.** The image of a process through `π` represents every finite path exactly, in the
   sense of `Generative.projection_exact_iff`, exactly where configurations alike under `π` match
   each other's steps up to `π` (`MatchesThrough`, `image_exact_iff`). Some determined process on
@@ -210,11 +209,6 @@ the same move, one stays and the other changes. -/
 theorem inconsistent : ¬ run.ConsistentThrough Prod.fst 2 :=
   fun consistent =>
     Bool.noConfusion (consistent 0 1 (Nat.zero_lt_succ 1) (Nat.lt_succ_self 1) rfl rfl)
-
-/-- `Switching.no_state_law`, from the criterion along one run. -/
-theorem no_state_law_of_criterion {t : Nat} (two : 2 ≤ t) :
-    ¬ ∃ Q : Process Bool Unit, Determined Q ∧ run.StepsThrough Prod.fst Q t :=
-  fun law => inconsistent (((run.law_through_iff Prod.fst t).mp law).earlier two)
 
 end Switching
 

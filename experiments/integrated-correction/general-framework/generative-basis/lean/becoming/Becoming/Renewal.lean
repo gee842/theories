@@ -1,4 +1,5 @@
 import RelationalRenewal
+import Becoming.Amounts
 
 /-!
 # Renewal and consumption over configurations
@@ -54,13 +55,14 @@ structure Conditions (S : Type u) (F C : Type) where
 
 /-! ## Continuation without renewal -/
 
-/-- An observable that never rises from step `T` on does not fall at arbitrarily late steps. -/
+/-- An observable that never rises from step `T` on does not fall at arbitrarily late steps: the
+least-loss law of rest (`Amounts.rests`) at whole-number amounts, a strict fall of a whole number
+being a fall by at least one and every whole number lying within its own count of ones plus one. -/
 theorem falls_not_recurring (rank : Nat → Nat) (T : Nat)
     (noRise : ∀ n, T ≤ n → rank (n + 1) ≤ rank n) :
     ¬ ∀ N, ∃ n, N ≤ n ∧ rank (n + 1) < rank n :=
-  unrenewed_drawdown_finite
-    ⟨fun t _ => rank t, fun t _ => rank (t + 1) < rank t,
-      fun _ _ => False, fun _ _ => 0, fun _ _ => False⟩ () () T noRise (fun _ _ falls => falls)
+  Amounts.rests (M := Amounts.whole) (s := rank) (ε := 1) (P := fun n => rank (n + 1) < rank n)
+    (m := rank T + 1) noRise (fun _ _ falls => falls) (Amounts.whole_within (rank T))
 
 /-! ## The class belongs to the run -/
 

@@ -128,26 +128,10 @@ theorem ext_lines : ∀ {s t : Hexagram}, (∀ p, s.line p = t.line p) → s = t
     cases e6
     rfl
 
-theorem complement_line : ∀ (s : Hexagram) (p : Place), (complement s).line p = !s.line p
-  | ⟨_, _, _, _, _, _⟩, .p1 => rfl
-  | ⟨_, _, _, _, _, _⟩, .p2 => rfl
-  | ⟨_, _, _, _, _, _⟩, .p3 => rfl
-  | ⟨_, _, _, _, _, _⟩, .p4 => rfl
-  | ⟨_, _, _, _, _, _⟩, .p5 => rfl
-  | ⟨_, _, _, _, _, _⟩, .p6 => rfl
-
-theorem flip_line : ∀ (k : Place) (s : Hexagram), (flip k s).line k = !s.line k
-  | .p1, ⟨_, _, _, _, _, _⟩ => rfl
-  | .p2, ⟨_, _, _, _, _, _⟩ => rfl
-  | .p3, ⟨_, _, _, _, _, _⟩ => rfl
-  | .p4, ⟨_, _, _, _, _, _⟩ => rfl
-  | .p5, ⟨_, _, _, _, _, _⟩ => rfl
-  | .p6, ⟨_, _, _, _, _, _⟩ => rfl
-
 /-- **Changing a line moves every configuration.** -/
 theorem flip_moves (k : Place) (s : Hexagram) : flip k s ≠ s :=
   fun same => Diagonal.flip_moves (s.line k)
-    (((flip_line k s).symm.trans (congrArg (fun x => x.line k) same)).symm)
+    (((line_flip_self k s).symm.trans (congrArg (fun x => x.line k) same)).symm)
 
 /-! ## A property checked on the received order -/
 
@@ -517,10 +501,10 @@ theorem rearrange_complement (σ : Place → Place) (mask : Hexagram) :
     Law.Commutes (rearrange σ mask) complement :=
   fun s => ext_lines fun p =>
     ((ofLines_line _ p).trans
-      ((congrArg (fun b => turnedBy b (mask.line p)) (complement_line s (σ p))).trans
+      ((congrArg (fun b => turnedBy b (mask.line p)) (line_complement s (σ p))).trans
         (turnedBy_not _ _))).trans
       ((congrArg (fun b => !b) (ofLines_line _ p)).symm.trans
-        (complement_line (rearrange σ mask s) p).symm)
+        (line_complement (rearrange σ mask s) p).symm)
 
 /-- **So no rearrangement of places with a mask runs the received order.** -/
 theorem rearrange_not_runsOrder (σ : Place → Place) (mask : Hexagram) :

@@ -36,8 +36,7 @@ difference, and reads the law of waxing and waning of `Becoming.Hexagrams` as it
   of waxing and waning commutes with it, so `n` steps never bring a hexagram and its complement to
   one (`Hexagram.waxWane_apart`); its six steps to the complement are the pair halfway round a
   return of twelve (`Hexagram.waxWane_halfway`); and its going alike across the pairs
-  (`Hexagram.pairs_goAlike`) is `Commutes.pairs_goAlike`'s instance
-  (`Hexagram.pairs_goAlike_of_commutes`).
+  (`Hexagram.pairs_goAlike`) is `Commutes.pairs_goAlike`'s instance at the complement.
   The law that lets only a broken line enter draws every hexagram into all broken, so it breaks
   the symmetry (`Hexagram.wane_breaks`). The change of one line is symmetric under the complement
   (`Hexagram.changes_symmetric`), and every course of changes has a complementary course, never at
@@ -222,11 +221,6 @@ theorem waxWane_halfway (s : Hexagram) :
     (∀ n, (Law.run waxWane s).state (6 + n) = complement ((Law.run waxWane s).state n)) ∧
       (Law.run waxWane s).state 12 = s :=
   Law.Commutes.paired_halfway waxWane_complement complement_complement (six_steps s)
-
-/-- The going alike across the pairs of complements (`pairs_goAlike`) is the general law's
-instance. -/
-theorem pairs_goAlike_of_commutes : GoAlike (Law.process waxWane) pairOf :=
-  Law.Commutes.pairs_goAlike waxWane_complement (fun _ _ same => pairOf_eq same) pairOf_complement
 
 /-- **Drawing every hexagram into all broken breaks the symmetry.** -/
 theorem wane_breaks : ¬ Law.Commutes wane complement :=

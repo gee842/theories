@@ -27,7 +27,7 @@ assumed of any unfolding; it is the condition written into each law that uses it
   (`not_returns_iff_loses`). Configurations merged stay merged: no later step
   tells them apart (`merged_stays`). A law under which every configuration returns merges
   nothing (`lossless_of_returns`), and a configuration that returns can be had at every step
-  (`Returns.reachable`). Undoing is going on: where `s` returns, further steps of the same
+  (`Branching.Returns.reachable`). Undoing is going on: where `s` returns, further steps of the same
   law lead from `next s` back to `s` (`Returns.undo`).
 * **What can be realized together, and within how many moves.** A bundle of claims is realized
   together within `n` moves where a course of at most `n` moves ends at a configuration
@@ -382,6 +382,152 @@ theorem law_reach_iff {next : S → S} {x t : S} :
 
 end Branching
 
+/-! ### What every process keeps and loses (moved from `Becoming.Branching`)
+
+Stated once for every process; a determined law's forms are these at `Law.process next`, by the
+abbreviations below, or along its run (`Law.run`). -/
+
+namespace Law
+
+variable {S : Type u}
+
+/-- The run of a determined law from `s`. -/
+def run (next : S → S) (s : S) : Run (process next) :=
+  ⟨orbit next s, fun _ => (), fun _ => rfl⟩
+
+theorem run_state (next : S → S) (s : S) : (run next s).state = orbit next s := rfl
+
+end Law
+
+namespace Run
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+/-- A run read from step `i` on. `Parting.after` is this (`Parting.after_eq_onward`). -/
+def onward (r : Run P) (i : Nat) : Run P :=
+  ⟨fun n => r.state (i + n), fun n => r.act (i + n), fun n => r.step (i + n)⟩
+
+end Run
+
+namespace Branching
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+theorem Merges.not_lossless (merges : Merges P) : ¬ Lossless P :=
+  fun lossless => match merges with
+  | ⟨_, _, _, _, _, apart, step, step'⟩ => apart (lossless _ _ _ _ _ step step')
+
+/-- A course of one step more is, without its first step, a course of `n` steps. -/
+theorem Reachable.earlier {n : Nat} {s : S} : Reachable P (n + 1) s → Reachable P n s
+  | ⟨_, [], len, _⟩ => nomatch len
+  | ⟨_, _ :: as, len, .cons _ rest⟩ => ⟨_, as, Nat.succ.inj len, rest⟩
+
+/-- **A possibility lost stays lost**, under every process. -/
+theorem lost_stays {n : Nat} {s : S} (lost : ¬ Reachable P n s) : ∀ k, ¬ Reachable P (n + k) s
+  | 0 => lost
+  | k + 1 => fun reach => lost_stays lost k reach.earlier
+
+/-- A course ending at `s` is empty or ends by a step into `s`. -/
+theorem trace_last {x s : S} {as : List A} (path : Trace P x as s) :
+    x = s ∨ ∃ y a, Reach P x y ∧ P.step y a s := by
+  induction path with
+  | nil => exact .inl rfl
+  | cons step _ ih =>
+    match ih with
+    | .inl same =>
+      exact .inr ⟨_, _, Reach.refl P _, Eq.subst (motive := fun z => P.step _ _ z) same step⟩
+    | .inr ⟨y, a, reach, last⟩ => exact .inr ⟨y, a, (Reach.of_step step).trans reach, last⟩
+
+/-- A configuration that returns is had at the next step from a configuration that returns. -/
+theorem Returns.pred {s : S} : Returns P s → ∃ x a, P.step x a s ∧ Returns P x
+  | ⟨a, t, step, _, path⟩ => match trace_last path with
+    | .inl same =>
+      ⟨s, a, Eq.subst (motive := fun z => P.step s a z) same step, a, t, step, _, path⟩
+    | .inr ⟨y, b, reach, last⟩ => ⟨y, b, last, b, s, last, (Reach.of_step step).trans reach⟩
+
+/-- Courses of every length end at a configuration that returns, from configurations that
+return. -/
+theorem Returns.reachable_from {s : S} (returns : Returns P s) :
+    ∀ n, ∃ x as, as.length = n ∧ Trace P x as s ∧ Returns P x
+  | 0 => ⟨s, [], rfl, .nil s, returns⟩
+  | n + 1 => match Returns.reachable_from returns n with
+    | ⟨_, as, len, path, back⟩ => match back.pred with
+      | ⟨y, a, step, back'⟩ => ⟨y, a :: as, congrArg Nat.succ len, .cons step path, back'⟩
+
+/-- **A configuration that returns can be had at every step**, under every process. -/
+theorem Returns.reachable {s : S} (returns : Returns P s) (n : Nat) : Reachable P n s :=
+  match returns.reachable_from n with
+  | ⟨x, as, len, path, _⟩ => ⟨x, as, len, path⟩
+
+/-- Merging nothing, where two steps of a run are at one configuration, so are the steps as
+many before them, back to the beginning. -/
+theorem Lossless.cancel (lossless : Lossless P) (r : Run P) :
+    ∀ i d, r.state i = r.state (i + d) → r.state 0 = r.state d
+  | 0, d, same => same.trans (congrArg r.state (Nat.zero_add d))
+  | i + 1, d, same =>
+    have shift : r.state (i + d + 1) = r.state (i + 1) :=
+      (congrArg r.state (Nat.succ_add i d).symm).trans same.symm
+    Lossless.cancel lossless r i d (lossless _ _ _ _ _ (r.step i)
+      (Eq.subst (motive := fun z => P.step (r.state (i + d)) (r.act (i + d)) z) shift
+        (r.step (i + d))))
+
+/-- **Merging nothing within finitely many configurations, a run comes back to where it
+began.** Where a list holds the configurations of a run of a process that merges nothing, the
+run is at its first configuration again after some steps. -/
+theorem Lossless.comes_back (lossless : Lossless P) (r : Run P) {l : List S}
+    (held : ∀ n, r.state n ∈ l) : ∃ d, 0 < d ∧ r.state d = r.state 0 :=
+  match revisits_within l r.state (fun n _ => held n) with
+  | ⟨i, _, lt, _, same⟩ => match gap_of_lt lt with
+    | ⟨d, gap⟩ =>
+      ⟨d + 1, Nat.succ_pos d,
+        (lossless.cancel r i (d + 1) (same.trans (congrArg r.state gap))).symm⟩
+
+/-- **Merging nothing within finitely many configurations, every configuration of a run comes
+back on the run itself.** -/
+theorem Lossless.recurs (lossless : Lossless P) (r : Run P) {l : List S}
+    (held : ∀ n, r.state n ∈ l) (i : Nat) : ∃ d, 0 < d ∧ r.state (i + d) = r.state i :=
+  lossless.comes_back (r.onward i) (fun n => held (i + n))
+
+/-- **Merging nothing within finitely many configurations, a configuration with a run returns**,
+where some run begins at the configuration; `Law.Lossless.returns` is the case of a determined
+law's run. -/
+theorem Lossless.returns (lossless : Lossless P) {all : List S} (every : ∀ s, s ∈ all)
+    (r : Run P) : Returns P (r.state 0) :=
+  match lossless.comes_back r (fun _ => every _) with
+  | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
+  | ⟨d + 1, _, back⟩ =>
+    ⟨r.act 0, r.state 1, r.step 0,
+      Eq.subst (motive := fun z => Reach P (r.state 1) z)
+        ((congrArg r.state (Nat.add_comm 1 d)).trans back) (r.reach 1 d)⟩
+
+/-- **Merging nothing within finitely many configurations, nothing rises along a run.** A
+quantity that never falls along a run keeps its value across every step. -/
+theorem Lossless.no_rise (lossless : Lossless P) (r : Run P) {l : List S}
+    (held : ∀ n, r.state n ∈ l) {q : S → Nat}
+    (step : ∀ n, q (r.state n) ≤ q (r.state (n + 1))) (n : Nat) :
+    q (r.state (n + 1)) = q (r.state n) :=
+  match lossless.recurs r held n with
+  | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
+  | ⟨e + 1, _, back⟩ =>
+    have far : q (r.state (n + 1)) ≤ q (r.state (n + 1 + e)) :=
+      never_falls_over (g := r.state) step (n + 1) e
+    have same : r.state (n + 1 + e) = r.state n :=
+      (congrArg r.state (Nat.succ_add n e)).trans back
+    Nat.le_antisymm (Nat.le_trans far (Nat.le_of_eq (congrArg q same))) (step n)
+
+/-- **Within finitely many configurations, a rise along a run needs a merge.** -/
+theorem rise_not_lossless (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) {q : S → Nat}
+    (step : ∀ n, q (r.state n) ≤ q (r.state (n + 1))) {n : Nat}
+    (rises : q (r.state n) < q (r.state (n + 1))) : ¬ Lossless P :=
+  fun lossless => Nat.ne_of_lt rises (lossless.no_rise r held step n).symm
+
+/-- **Merging nothing, a run from a configuration that never returns needs openness.** -/
+theorem Lossless.unlisted (lossless : Lossless P) (r : Run P) (never : ¬ Returns P (r.state 0)) :
+    ¬ ∃ all : List S, ∀ s, s ∈ all :=
+  fun ⟨_, every⟩ => never (lossless.returns every r)
+
+end Branching
+
 namespace Law
 
 variable {S : Type u}
@@ -439,21 +585,13 @@ theorem returns_iff {next : S → S} {s : S} : Returns next s ↔ ∃ p, 0 < p �
     | k + 1, _, back => ⟨(), next s, rfl,
         Branching.law_reach_iff.mpr ⟨k, (orbit_shift next s k).symm.trans back⟩⟩⟩
 
-theorem Merges.not_lossless {next : S → S} (merges : Merges next) : ¬ Lossless next :=
-  fun lossless => let ⟨x, y, apart, merged⟩ := merges_iff.mp merges; apart (lossless_iff.mp lossless x y merged)
-
 /-! ### What every law keeps and loses -/
 
-theorem Reachable.earlier {next : S → S} {n : Nat} {s : S} (reach : Reachable next (n + 1) s) :
-    Reachable next n s :=
-  let ⟨x, to⟩ := reachable_iff.mp reach
-  reachable_iff.mpr ⟨next x, (orbit_shift next x n).symm.trans to⟩
-
-/-- **A possibility lost stays lost**, under every law. -/
+/-- **A possibility lost stays lost**, under every law: the case of `Branching.lost_stays` at the
+law's process. -/
 theorem lost_stays {next : S → S} {n : Nat} {s : S} (lost : ¬ Reachable next n s) :
-    ∀ k, ¬ Reachable next (n + k) s
-  | 0 => lost
-  | k + 1 => fun reach => lost_stays lost k reach.earlier
+    ∀ k, ¬ Reachable next (n + k) s :=
+  Branching.lost_stays lost
 
 /-- **Configurations merged stay merged**: no later step tells them apart. -/
 theorem merged_stays {next : S → S} {x y : S} (merged : next x = next y) (n : Nat) :
@@ -480,15 +618,6 @@ theorem lossless_of_returns {next : S → S} (returns : ∀ s, Returns next s) :
           congrArg (orbit next y) (Nat.mul_comm (p + 1) (q + 1))
         _ = y := orbit_mul back_y (p + 1)
 
-/-- A configuration that returns can be had at every step. -/
-theorem Returns.reachable {next : S → S} {s : S} (returns : Returns next s) (n : Nat) :
-    Reachable next n s :=
-  match returns_iff.mp returns with
-  | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
-  | ⟨p + 1, _, back⟩ =>
-    reachable_iff.mpr ⟨orbit next s (p * n), (orbit_add next s (p * n) n).symm.trans
-      ((congrArg (orbit next s) (Nat.succ_mul p n)).symm.trans (orbit_mul back n))⟩
-
 /-- **Undoing is going on.** Where `s` returns, the step from `s` is undone only by going on
 under the same law: further steps lead from `next s` back to `s`. -/
 theorem Returns.undo {next : S → S} {s : S} (returns : Returns next s) :
@@ -499,15 +628,11 @@ theorem Returns.undo {next : S → S} {s : S} (returns : Returns next s) :
 
 /-! ### Finitely many configurations -/
 
-/-- **Losing nothing, everything returns**, where a list holds every configuration. -/
+/-- **Losing nothing, everything returns**, where a list holds every configuration: the law of
+every process (`Branching.Lossless.returns`) along the law's run from `s`. -/
 theorem Lossless.returns {next : S → S} (lossless : Lossless next) {all : List S}
     (every : ∀ s, s ∈ all) (s : S) : Returns next s :=
-  let ⟨i, _, lt, _, same⟩ := revisits_within all (orbit next s) (fun _ _ => every _)
-  let ⟨d, gap⟩ := gap_of_lt lt
-  returns_iff.mpr ⟨d + 1, Nat.succ_pos d, lossless.cancel i
-    ((orbit_add next s (d + 1) i).symm.trans
-      ((congrArg (orbit next s) (Nat.add_comm (d + 1) i)).trans
-        ((congrArg (orbit next s) gap.symm).trans same.symm)))⟩
+  Branching.Lossless.returns lossless every (run next s)
 
 /-- Where a list holds every configuration, a configuration that can be had as many steps on
 as the list is long returns. -/
@@ -534,31 +659,24 @@ theorem returns_of_reachable {next : S → S} {all : List S} (every : ∀ s, s �
 
 /-- **Losing nothing within finitely many configurations, nothing rises.** Where a list holds
 every configuration and the law merges nothing, a quantity that never falls along an orbit
-keeps its value along it. -/
+keeps its value along it: step by step, the law of every process
+(`Branching.Lossless.no_rise`) along the law's run from `s`. -/
 theorem Lossless.no_rise {next : S → S} (lossless : Lossless next) {all : List S}
     (every : ∀ s, s ∈ all) {q : S → Nat} {s : S}
-    (step : ∀ n, q (orbit next s n) ≤ q (orbit next s (n + 1))) (n : Nat) :
-    q (orbit next s n) = q s :=
-  match returns_iff.mp (lossless.returns every s) with
-  | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
-  | ⟨p + 1, _, back⟩ =>
-    have far : q (orbit next s n) ≤ q (orbit next s (n + p * n)) :=
-      never_falls_over step n (p * n)
-    have whole : orbit next s (n + p * n) = s :=
-      (congrArg (orbit next s) ((Nat.add_comm n (p * n)).trans (Nat.succ_mul p n).symm)).trans
-        (orbit_mul back n)
-    Nat.le_antisymm (Nat.le_trans far (Nat.le_of_eq (congrArg q whole)))
-      (Nat.le_trans (never_falls_over step 0 n)
-        (Nat.le_of_eq (congrArg (fun k => q (orbit next s k)) (Nat.zero_add n))))
+    (step : ∀ n, q (orbit next s n) ≤ q (orbit next s (n + 1))) :
+    ∀ n, q (orbit next s n) = q s
+  | 0 => rfl
+  | n + 1 => (Branching.Lossless.no_rise lossless (run next s) (fun _ => every _) step n).trans
+      (Lossless.no_rise lossless every step n)
 
 /-- **Within finitely many configurations, a rise needs a merge.** Where a list holds every
 configuration and a quantity never falls along an orbit yet rises at some step of it, the law
-does not merge nothing. -/
+does not merge nothing: the law of every process (`Branching.rise_not_lossless`) along the
+law's run from `s`. -/
 theorem rise_not_lossless {next : S → S} {all : List S} (every : ∀ s, s ∈ all) {q : S → Nat}
     {s : S} (step : ∀ n, q (orbit next s n) ≤ q (orbit next s (n + 1))) {n : Nat}
-    (rises : q (orbit next s n) < q (orbit next s (n + 1))) : ¬ Lossless next := fun lossless =>
-  Nat.ne_of_lt rises
-    ((lossless.no_rise every step n).trans (lossless.no_rise every step (n + 1)).symm)
+    (rises : q (orbit next s n) < q (orbit next s (n + 1))) : ¬ Lossless next :=
+  Branching.rise_not_lossless (run next s) (fun _ => every _) step rises
 
 /-- **Within finitely many configurations, losing nothing is returning.** Where a list holds
 every configuration, a law merges nothing exactly where every configuration returns. -/
@@ -586,10 +704,11 @@ theorem Merges.loses {next : S → S} (merges : Merges next) {all : List S}
   fun reach => merges.not_lossless (lossless_of_reachable every reach)
 
 /-- **Losing nothing without return needs openness.** A law that merges nothing and under
-which some configuration never returns has no list holding every configuration. -/
+which some configuration never returns has no list holding every configuration: the law of every
+process (`Branching.Lossless.unlisted`) along the law's run from `s`. -/
 theorem Lossless.unlisted {next : S → S} (lossless : Lossless next) {s : S}
     (never : ¬ Returns next s) : ¬ ∃ all : List S, ∀ x, x ∈ all :=
-  fun ⟨_, every⟩ => never (lossless.returns every s)
+  Branching.Lossless.unlisted lossless (run next s) never
 
 /-! ### Open witnesses -/
 

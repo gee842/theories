@@ -100,11 +100,6 @@ namespace Hexagram
 
 /-! ## Counting over the received order -/
 
-theorem neither : ∀ {x y : Bool}, (x || y) = false → x = false ∧ y = false
-  | false, false, _ => ⟨rfl, rfl⟩
-  | true, _, h => Bool.noConfusion h
-  | false, true, h => Bool.noConfusion h
-
 theorem not_mem_of_memb {s : Hexagram} : ∀ {l : List Hexagram}, memb s l = false → s ∉ l
   | [], _, mem => nomatch mem
   | _ :: _, h, .head _ => Bool.noConfusion ((eqb_self s).symm.trans (neither h).1)

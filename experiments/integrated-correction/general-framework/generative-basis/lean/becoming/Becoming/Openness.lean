@@ -50,8 +50,8 @@ giving needs uptake there; a fall is taken from.
   step (`World.CountedWithin`), arising recurs exactly when ceasing does
   (`World.CountedWithin.arising_iff_ceasing`, from `Web.unceasing_iff_bounded`). Every
   census of a finite world is bounded, with no decidability
-  (`World.Finite.census_bounded`), so where activity is decided the law of finite worlds
-  is a case (`World.Finite.countedWithin`, `World.Finite.arising_iff_ceasing`);
+  (`World.Finite.census_bounded`), so where activity is decided the law of finite worlds,
+  `World.arising_iff_ceasing`, is a case (`World.Finite.countedWithin`);
   `procession`, with one relatum active at a time among infinitely many, keeps arising and
   ceasing
   (`World.procession_world`); `accretion` has no bound (`World.accretion_unbounded`). The bound may
@@ -90,8 +90,8 @@ giving needs uptake there; a fall is taken from.
   the same flow with every relatum embodied, every step is enclosed and nothing is listed
   (`World.rest_needs_standing`).
 * **Its cases.** A finite world lists what stands and is enclosed around it at every step
-  (`World.Finite.standing`), so the finite rest of `Becoming.Space` is a case
-  (`World.Finite.comes_to_rest_unrefuted`), its relata covering whatever is active. Where every
+  (`World.Finite.standing`), so the finite rest of `Becoming.Space` (`World.rests_unrefuted`) is a case
+  of the rest theorem, its relata covering whatever is active (`World.comes_to_rest_unrefuted_from`). Where every
   relatum is embodied, the census of what is
   active lists what stands (`World.rests_unrefuted_around`), and enclosure from some step on
   suffices, with no decision of equality: an enclosed step is not not enclosed around
@@ -292,17 +292,18 @@ theorem change_not_recurring_from (census : W.StandingCensus stand) {T : Nat}
 across every step from `T` on it is not refuted that what stands runs down, it is not the case
 that after every step from `T` on a later change of some standing stays unrefuted
 (`stop_unrefuted_iff`). No premise; `change_not_recurring_from` is the weaker form,
-that change does not recur. -/
+that change does not recur. The least-loss law (`Amounts.rests_unrefuted`) at whole-number amounts:
+each change lowers the total standing by at least one, and nothing is decided. -/
 theorem change_stops_unrefuted (census : W.StandingCensus stand) {T : Nat}
     (runs : ∀ t, T ≤ t → ¬¬ L.RunsDown W t) :
     ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t c, M ≤ t ∧ (W.Rises t c ∨ W.Falls t c) :=
-  fun changing => falls_stop_unrefuted (q := fun t => W.stock (stand t) t) (T := T)
-    (fun t later => Decidable.of_not_not fun above => runs t later fun down =>
-      above (down.standing_le census))
-    fun M from_ falls => changing M from_ fun ⟨t, c, later, changes⟩ =>
-      falls ⟨t, later, Decidable.of_not_not fun level =>
-        runs t (Nat.le_trans from_ later) fun down =>
-          level ((down.changes_iff census).mp ⟨c, changes⟩)⟩
+  fun changing => Amounts.rests_unrefuted (M := Amounts.whole)
+    (s := fun t => W.stock (stand t) t) (ε := 1) (P := fun t => ∃ c, W.Rises t c ∨ W.Falls t c)
+    (m := W.stock (stand T) T + 1)
+    (fun t later no => runs t later fun down => no (down.standing_le census))
+    (fun t later changes no => runs t later fun down => no ((down.changes_iff census).mp changes))
+    (Amounts.whole_within _)
+    fun M from_ none_ => changing M from_ fun ⟨t, c, later, changes⟩ => none_ ⟨t, later, c, changes⟩
 
 /-- That standing stops changing from some step on cannot be refuted where every step from
 some step on is enclosed around what stands: it is not the case that after every step from
@@ -401,13 +402,6 @@ theorem Finite.countedWithin [∀ t x, Decidable (w.web.active t x)] (finite : w
     ∃ B, w.CountedWithin B :=
   match finite.census_bounded, finite.counted with
   | ⟨B, bounded⟩, ⟨alive, census⟩ => ⟨B, alive, census, bounded alive census⟩
-
-/-- So the law of finite worlds, `World.arising_iff_ceasing`, is a case of the bounded
-law. -/
-theorem Finite.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
-    w.ArisingRecurs ↔ w.CeasingRecurs :=
-  match finite.countedWithin with
-  | ⟨_, counted⟩ => counted.arising_iff_ceasing
 
 end World
 
@@ -623,8 +617,8 @@ theorem comes_to_rest_unrefuted (counted : w.Counted)
         unmet ((around t later).runsDownClosed balanced dissipative standing).runsDown
 
 /-- A finite world lists what stands at each step, and every step is enclosed around it,
-so `World.rests_unrefuted` is the finite case of the rest theorem
-(`Finite.comes_to_rest_unrefuted`). -/
+so `World.rests_unrefuted` is the finite case of the rest theorem, its relata covering whatever
+is active (`comes_to_rest_unrefuted_from`). -/
 theorem Finite.standing (finite : w.Finite) :
     ∃ stand, w.web.StandingCensus stand ∧ ∀ t, w.flow.AroundStanding stand t :=
   match finite with
@@ -634,20 +628,6 @@ theorem Finite.standing (finite : w.Finite) :
        ⟨fun standing => mem_keep.mpr ⟨every x, standing⟩, fun mem => (mem_keep.mp mem).2⟩⟩,
      fun _ => ⟨all, distinct, fun c _ => every c, fun c _ => every c,
        fun _ _ c outside => absurd (every c) outside⟩⟩
-
-/-- The finite case: `World.rests_unrefuted` follows from the rest theorem, with no decision
-procedure. A finite world lists what stands, every step is enclosed around it
-(`Finite.standing`), and its relata cover what is active (`comes_to_rest_unrefuted_from`); its
-census of activity, which needs a decision procedure (`Finite.counted`), is not used. -/
-theorem Finite.comes_to_rest_unrefuted (finite : w.Finite)
-    (balanced : w.Balanced) (dissipative : w.Dissipative) (embodied : w.ArisingEmbodied) :
-    ¬ ¬ ∃ N, w.RestsFrom N :=
-  match finite.standing with
-  | ⟨_, standing, around⟩ => match finite with
-    | ⟨all, _, every⟩ =>
-      comes_to_rest_unrefuted_from (T := 0) (fun _ _ => ⟨all, fun x _ => every x⟩)
-        standing embodied fun t _ unmet =>
-          unmet ((around t).runsDownClosed balanced dissipative standing).runsDown
 
 /-- The rest theorem needs its census of activity: in `attrition` nothing stands and nothing
 takes part, so every other premise holds, every step is enclosed around what stands, and

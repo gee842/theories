@@ -15,21 +15,12 @@ others, and use it as an alignment for all, and what is still missing from it?",
 your own pareto frontier decisions, and push the frontier". No premise enters beyond what each
 theorem names.
 
-* **A pool's coupling closure.** The closure of a group under a relation is the least region
-  closed under it that holds every member (`WithinClosureOf`, `closedUnder_withinClosureOf`); it
-  is the union of the members' closures (`withinClosureOf_iff`), and the closure of one formation
-  where the group holds only it (`withinClosureOf_single`). A pool's coupling closure is its
-  closure under being affected through what is coupled into (`Flow.WithinPoolCoupling`); nothing
-  beyond it exchanges with a condition coupled into a formation within it
-  (`Flow.beyond_pool_coupling`).
-* **Blind beyond the pool's coupling closure.** With the rest of the exchange fixed, where every
-  member of a part lies beyond a pool's coupling closure, each formation within the closure
-  couples the levels with and without the part alike at every step
-  (`Flow.uncoupled_beyond_pool`), so every selection through the pooled coupling of any group
-  within the closure, the pool among them, selects them alike, whatever the members
-  (`Flow.unselected_beyond_pool`). With the pool holding one formation this is
-  `Flow.unselected_beyond_coupling_all`, re-derived with its own hypotheses
-  (`Flow.unselected_beyond_coupling_all_of_pool`).
+* **A pool's coupling closure, and blindness beyond it** (stated in `Becoming.Selection`, which
+  derives the single formation's case from them). The closure of a group under a relation is the
+  union of the members' closures (`WithinClosureOf`, `withinClosureOf_iff`); a pool's coupling
+  closure is its closure under being affected through what is coupled into
+  (`Flow.WithinPoolCoupling`), and every selection through the pooled coupling of any group within
+  it selects the levels with and without a part beyond it alike (`Flow.unselected_beyond_pool`).
 * **What a pool separates, exactly.** Some selection through the pooled coupling holds at one
   history and fails at another exactly when the members do not all couple them alike
   (`Web.separates_all_iff`). Where a member couples them apart, its own class is such a selection
@@ -97,65 +88,6 @@ namespace Becoming
 
 variable {F C : Type}
 
-/-! ## A pool's coupling closure -/
-
-/-- `g` lies within a group's closure under a relation: every region closed under the relation
-that holds every member holds `g`. -/
-def WithinClosureOf (rel : F → F → Prop) (group : F → Prop) (g : F) : Prop :=
-  ∀ region, ClosedUnder rel region → (∀ f, group f → region f) → region g
-
-namespace WithinClosureOf
-
-variable {rel : F → F → Prop} {group : F → Prop}
-
-/-- What lies within a member's closure lies within the group's. -/
-theorem of_member {f g : F} (member : group f) (within : WithinClosure rel f g) :
-    WithinClosureOf rel group g :=
-  fun region closed holds => within region closed (holds f member)
-
-end WithinClosureOf
-
-/-- A group's closure is closed under the relation. -/
-theorem closedUnder_withinClosureOf {rel : F → F → Prop} {group : F → Prop} :
-    ClosedUnder rel (WithinClosureOf rel group) :=
-  fun g h within related region closed holds => closed g h (within region closed holds) related
-
-/-- **A group's closure is the union of its members' closures.** -/
-theorem withinClosureOf_iff {rel : F → F → Prop} {group : F → Prop} {g : F} :
-    WithinClosureOf rel group g ↔ ∃ f, group f ∧ WithinClosure rel f g :=
-  ⟨fun within => within (fun g => ∃ f, group f ∧ WithinClosure rel f g)
-      (fun _ _ ⟨f, member, inside⟩ related =>
-        ⟨f, member, inside.trans (WithinClosure.of_rel related)⟩)
-      (fun f member => ⟨f, member, WithinClosure.refl f⟩),
-   fun ⟨_, member, within⟩ => WithinClosureOf.of_member member within⟩
-
-/-- The closure of the group holding one formation is that formation's closure. -/
-theorem withinClosureOf_single {rel : F → F → Prop} {f g : F} :
-    WithinClosureOf rel (fun x => x = f) g ↔ WithinClosure rel f g :=
-  ⟨fun within => match withinClosureOf_iff.mp within with
-    | ⟨_, rfl, inside⟩ => inside,
-   WithinClosureOf.of_member rfl⟩
-
-namespace Flow
-
-variable (L : Flow F C) (W : Web F C)
-
-/-- `g` lies within a pool's coupling closure: the closure of the group under being affected
-through what is coupled into, the union of its members' coupling closures. -/
-def WithinPoolCoupling (obs : F → C → Prop) (group : F → Prop) (g : F) : Prop :=
-  WithinClosureOf (L.CoupledFrom W obs) group g
-
-variable {L W} {obs : F → C → Prop} {group : F → Prop}
-
-/-- Nothing beyond a pool's coupling closure exchanges with a condition coupled into a formation
-within it: a difference beyond the closure cannot come back into it through a formation outside
-it. -/
-theorem beyond_pool_coupling {g h : F} (within : L.WithinPoolCoupling W obs group g)
-    (beyond : ¬ L.WithinPoolCoupling W obs group h) {c : C} (couples : W.CoupledInto obs g c) :
-    ¬ L.Exchanges h c :=
-  fun exchanges => beyond (closedUnder_withinClosureOf g h within ⟨c, couples, exchanges⟩)
-
-end Flow
 
 /-! ## What a pool separates -/
 
@@ -241,50 +173,6 @@ namespace Flow
 
 variable {L L' : Flow F C} {W W' : Web F C} {obs : F → C → Prop} {part : F → Bool}
   {group : F → Prop} {select : (Nat → C → Nat) → Prop}
-
-/-- **A part beyond a pool's coupling closure makes no difference within it.** With the rest of
-the exchange fixed, where every member of a part lies beyond a pool's coupling closure, each
-formation within the closure couples the levels with and without the part alike at every step:
-`uncoupled_beyond_coupling` for the member whose closure holds it. -/
-theorem uncoupled_beyond_pool {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
-    (balanced : ∀ t g c, L.WithinPoolCoupling W obs group g → W.CoupledInto obs g c →
-      L.BalancesOn W [c] t)
-    (beyond : ∀ h, part h = true → ¬ L.WithinPoolCoupling W obs group h) :
-    ∀ t g, L.WithinPoolCoupling W obs group g → W.AlikeThrough obs g W.level l t :=
-  fun t g within => match withinClosureOf_iff.mp within with
-  | ⟨_, member, inside⟩ => uncoupled_beyond_coupling without
-      (fun t g' c within' couples =>
-        balanced t g' c (WithinClosureOf.of_member member within') couples)
-      (fun h inPart within' => beyond h inPart (WithinClosureOf.of_member member within'))
-      t g inside
-
-/-- **A pool is blind beyond its coupling closure.** With the rest of the exchange fixed, where
-every member of a part lies beyond a pool's coupling closure, every selection through the pooled
-coupling of any group within the closure, the pool itself among them, selects the levels with
-and without the part alike, whatever the members. With the pool holding one formation
-(`withinClosureOf_single`) it is `unselected_beyond_coupling_all`. -/
-theorem unselected_beyond_pool {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
-    (balanced : ∀ t g c, L.WithinPoolCoupling W obs group g → W.CoupledInto obs g c →
-      L.BalancesOn W [c] t)
-    (beyond : ∀ h, part h = true → ¬ L.WithinPoolCoupling W obs group h) {pool : F → Prop}
-    (members : ∀ g, pool g → L.WithinPoolCoupling W obs group g) {t : Nat}
-    (through : W.SelectsThroughAll obs pool t select) : select W.level ↔ select l :=
-  through _ _ fun g member s _ =>
-    uncoupled_beyond_pool without balanced beyond s g (members g member)
-
-/-- `unselected_beyond_coupling_all`, with its own hypotheses, is the case of a pool holding one
-formation. -/
-theorem unselected_beyond_coupling_all_of_pool {l : Nat → C → Nat}
-    (without : L.WithheldLevels part W l) {f : F}
-    (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
-      L.BalancesOn W [c] t)
-    (beyond : ∀ h, part h = true → ¬ L.WithinCoupling W obs f h) {pool : F → Prop}
-    (members : ∀ g, pool g → L.WithinCoupling W obs f g) {t : Nat}
-    (through : W.SelectsThroughAll obs pool t select) : select W.level ↔ select l :=
-  unselected_beyond_pool (group := fun x => x = f) without
-    (fun t g c within couples => balanced t g c (withinClosureOf_single.mp within) couples)
-    (fun h inPart within => beyond h inPart (withinClosureOf_single.mp within))
-    (fun g member => withinClosureOf_single.mpr (members g member)) through
 
 /-- **The act differs only beyond a pool's coupling closure.** In the two flows the part
 exchanges alike with every condition a member of the pool's coupling closure, drawn through both

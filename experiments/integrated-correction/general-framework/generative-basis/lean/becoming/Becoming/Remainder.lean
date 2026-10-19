@@ -64,11 +64,13 @@ on decide.
   `Loops.Once` reads the first step only (`Loops.Once.reads_first`). It has no chain of two
   couplings in time order (`Loops.Once.no_chain_of_two`), and its schedule has settled from the
   second step with nothing coupling (`Loops.Once.none_from_one`, `Loops.Once.settled`).
-* **`Becoming.Loops` as instances.** Its results on exactness are re-derived from these:
-  order `j` is exact up to step `j` (`Remainder.carriedWithin_exact`), no loop upstream suffices
-  (`Remainder.carriedWithin_exact_of_no_loop`), its equivalence where couplings hold at every step,
-  now without its listing of every condition (`Remainder.finite_order_iff_no_loop`), and the loop
-  coupled once (`Remainder.Once.exact`).
+* **`Becoming.Loops` as instances.** Its results on exactness are cases of these: order `j` is
+  exact up to step `j` (`carriedWithin_exact`) because a chain in time order of `j + 1` couplings
+  needs `j + 1` steps (`CoupledIntoBy.le_steps`, `exact_every_start_iff`), and no loop upstream
+  suffices (`carriedWithin_exact_of_no_loop`) because no chain is then that long
+  (`no_chain_of_no_loop_listed`). Its equivalence where couplings hold at every step is re-derived,
+  now without its listing of every condition (`Remainder.finite_order_iff_no_loop`), and so is the
+  loop coupled once (`Remainder.Once.exact`).
 * **For every law.** By `most_difference_arrives`, every gap of every law of what has stood with
   the strengths, from every start, is at most what order `j` carries exactly where no chain of
   `j + 1` couplings in time order ends there (`gap_within_order_iff`).
@@ -811,23 +813,6 @@ namespace Remainder
 
 variable {cs : List C} {part : F → Bool} {σ : Nat → F → C → Nat}
   {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F} {δ : C → Nat}
-
-/-- **`carriedWithin_exact` as an instance.** A chain in time order of `j + 1` couplings needs
-`j + 1` steps (`CoupledIntoBy.le_steps`), so none ends by step `j`, and order `j` is exact up to step
-`j` (`exact_every_start_iff`). -/
-theorem carriedWithin_exact :
-    ∀ j t, t ≤ j → ∀ c, carriedWithin cs part σ k present δ j t c =
-      carried cs part σ k present δ t c :=
-  fun j t le c => (exact_every_start_iff j t c).mpr
-    (fun chain => Nat.lt_irrefl j (Nat.lt_of_lt_of_le (Nat.lt_of_succ_le chain.le_steps) le)) δ
-
-/-- **`carriedWithin_exact_of_no_loop` as an instance**, of `exact_every_start_iff` and
-`no_chain_of_no_loop_listed`. -/
-theorem carriedWithin_exact_of_no_loop (every : ∀ c, c ∈ cs) {c : C}
-    (noLoop : ∀ e, Upstream cs part k present e c → ¬ OnLoop cs part k present e) {n : Nat}
-    (long : cs.length ≤ n + 1) (t : Nat) :
-    carriedWithin cs part σ k present δ n t c = carried cs part σ k present δ t c :=
-  (exact_every_start_iff n t c).mpr (no_chain_of_no_loop_listed every noLoop long t) δ
 
 /-- **`finite_order_iff_no_loop` as an instance**, of `finite_order_iff_bounded` and
 `bounded_iff_no_loop`, without its listing of every condition. -/

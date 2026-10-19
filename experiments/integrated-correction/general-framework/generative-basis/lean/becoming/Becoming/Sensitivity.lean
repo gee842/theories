@@ -41,7 +41,7 @@ given constructively.
   such laws with any number of conditions, the coupling being their sensitivity
   (`comparison_through_sensitivity_of_readsFinitely`). The case of finitely many conditions in
   `Becoming.Counterfactual` is the instance with one list holding every condition
-  (`ExchangeLaw.Nonanticipating.through_sensitive_of_every`).
+  (`ExchangeLaw.Nonanticipating.readsFinitely_of_every`).
 * **What depends on the whole depends on some part.** At a step at which a law is insensitive to
   every condition, it gives alike under two histories wherever it reads within a list under one
   of them (`alike_of_insensitiveAt_within`); a law reading finitely many conditions and sensitive
@@ -201,13 +201,6 @@ theorem ExchangeLaw.ReadsFinitely.least_coupling (fin : law.ReadsFinitely) (W : 
         ∀ h, part h = false → ∀ c, law.Sensitive h c → ¬ ¬ W.CoupledInto obs h c :=
   ⟨fin.through_sensitive W part,
    fun _ through _ out _ sensitive => through.couples_of_sensitive out sensitive⟩
-
-/-- **The case of finitely many conditions is an instance**: `Becoming.Counterfactual`'s
-`ExchangeLaw.Nonanticipating.through_sensitive`, from one list holding every condition. -/
-theorem ExchangeLaw.Nonanticipating.through_sensitive_of_every (na : law.Nonanticipating)
-    {cs : List C} (every : ∀ c, c ∈ cs) (W : Web F C) (part : F → Bool) :
-    law.Through W law.Sensitive part :=
-  (na.readsFinitely_of_every every).through_sensitive W part
 
 /-- **The comparison as the dynamics give, with any number of conditions.** As
 `comparison_through_sensitivity`, for a law reading finitely many conditions in place of finitely

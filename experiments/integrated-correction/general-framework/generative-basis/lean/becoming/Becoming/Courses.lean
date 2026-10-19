@@ -805,7 +805,7 @@ open Readout
 variable {S : Type u} {A : Type v} {K : Type w} {P : Process S A}
 
 /-- **What a reduction keeps of a run is a run of the law read through it.** -/
-def reducedRun (π : S → K) (r : Run P) : Run (image P π) :=
+def reducedRun (π : S → K) (r : Run P) : Run (Image P π) :=
   ⟨fun n => π (r.state n), r.act, fun n => ⟨r.state n, r.state (n + 1), rfl, r.step n, rfl⟩⟩
 
 /-- **A reduction undoes no merge of two runs.** Where the reduced runs agree at a date at which

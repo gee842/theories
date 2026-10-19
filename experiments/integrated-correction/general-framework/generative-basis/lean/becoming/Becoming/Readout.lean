@@ -25,7 +25,7 @@ when an observable and a law of change can still be read from what it keeps.
   readings are the readings of a configuration supplied from it agrees with the original under
   every reading exactly where it supplies every part (`supplied_agree_iff_parts`).
 * **Futures through a reduction.** For a law that need not be determined, the law read through
-  a reduction (`image`) takes from each reduced value exactly the words the configuration can
+  a reduction (`Image` of `Becoming.Mechanism`) takes from each reduced value exactly the words the configuration can
   take, for every configuration, exactly when configurations the reduction merges can take the
   same words (`futures_through_iff`).
 * **Fallible witnesses.** A complete report of listed witnesses, some at fault, reduces an
@@ -124,26 +124,21 @@ theorem foldl_semiconj (next : S → A → S) (π : S → K) (reduced : K → A 
 
 section Futures
 
-/-- The law read through a reduction: a move from `k` to `k'` where it takes some configuration
-`π` sends to `k` to one it sends to `k'`. -/
-def image (P : Process S A) (π : S → K) : Process K A :=
-  ⟨fun k a k' => ∃ s t, π s = k ∧ P.step s a t ∧ π t = k'⟩
-
 /-- The same words can be taken from both configurations. -/
 def SameFutures (P : Process S A) (s s' : S) : Prop :=
   ∀ word, Feasible P s word ↔ Feasible P s' word
 
 theorem image_feasible {P : Process S A} {π : S → K} {s : S} {word : List A} :
-    Feasible P s word → Feasible (image P π) (π s) word
-  | ⟨t, path⟩ => ⟨π t, trace_map (Q := image P π) (f := π) (fun s _ t step => ⟨s, t, rfl, step, rfl⟩) path⟩
+    Feasible P s word → Feasible (Image P π) (π s) word
+  | ⟨t, path⟩ => ⟨π t, trace_map (Q := Image P π) (f := π) (fun s _ t step => ⟨s, t, rfl, step, rfl⟩) path⟩
 
 theorem feasible_of_image {P : Process S A} {π : S → K}
     (fibers : ∀ s s', π s = π s' → SameFutures P s s') :
-    ∀ {s : S} {word : List A}, Feasible (image P π) (π s) word → Feasible P s word
+    ∀ {s : S} {word : List A}, Feasible (Image P π) (π s) word → Feasible P s word
   | s, [], _ => ⟨s, .nil s⟩
   | s, a :: word, ⟨_, .cons ⟨s₁, t₁, here, step, there⟩ rest⟩ =>
-    have rest : Feasible (image P π) (π t₁) word :=
-      ⟨_, Eq.subst (motive := fun k => Trace (image P π) k word _) there.symm rest⟩
+    have rest : Feasible (Image P π) (π t₁) word :=
+      ⟨_, Eq.subst (motive := fun k => Trace (Image P π) k word _) there.symm rest⟩
     let ⟨u, path⟩ := feasible_of_image fibers rest
     (fibers s₁ s here (a :: word)).mp ⟨u, .cons step path⟩
 
@@ -152,10 +147,10 @@ futures.** From the reduced value of each configuration the law read through `π
 the words the configuration can take, for every configuration, exactly when configurations `π`
 merges can take the same words. The nondeterministic counterpart of `law_through_iff`. -/
 theorem futures_through_iff {P : Process S A} {π : S → K} :
-    (∀ s word, Feasible (image P π) (π s) word ↔ Feasible P s word) ↔
+    (∀ s word, Feasible (Image P π) (π s) word ↔ Feasible P s word) ↔
       ∀ s s', π s = π s' → SameFutures P s s' :=
   ⟨fun exact s s' same word => (exact s word).symm.trans
-      ((Eq.subst (motive := fun k => Feasible (image P π) k word ↔ Feasible (image P π) (π s') word)
+      ((Eq.subst (motive := fun k => Feasible (Image P π) k word ↔ Feasible (Image P π) (π s') word)
         same.symm Iff.rfl).trans (exact s' word)),
    fun fibers _ _ => ⟨feasible_of_image fibers, image_feasible⟩⟩
 

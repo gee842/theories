@@ -79,7 +79,7 @@ beyond the law of exchange itself and what each theorem names.
   stood and only what couples into the second by level (`Loop.replyLaw_nonanticipating`,
   `Loop.replyLaw_through`). The flow with the first's act and the flow without both follow it
   (`Loop.escalation_follows`, `Loop.quiet_follows`), so P65's `Loop.responds`, checked there case
-  by case, follows from the law (`Loop.responds_by_law`); and each is the only balanced course of
+  by case, follows from the law (`ExchangeLaw.Through.responds` at `Loop.replyLaw_through`); and each is the only balanced course of
   the law with its act (`Loop.courses_fixed`).
 
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D25).**
@@ -779,10 +779,6 @@ theorem quiet_follows : quiet.Follows replyLaw firstPart quietWeb.level
   | .second, _, _, .ofFirst => ⟨rfl, rfl⟩
   | .second, _, _, .ofSecond => ⟨rfl, rfl⟩
   | .first, no, _, _ => nomatch no
-
-/-- P65's `Loop.responds`, checked there case by case, follows from the second's law. -/
-theorem responds_by_law : escalation.RespondsThroughCoupling quiet web quietWeb paired firstPart :=
-  replyLaw_through.responds escalation_follows quiet_follows
 
 /-- **Each course is fixed by the first's act.** A balanced flow with both formations present,
 the second following its law, starting at two units on each condition, has the escalation's levels

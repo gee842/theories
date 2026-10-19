@@ -40,7 +40,11 @@ supplied, never derived.
   closure selects the levels with and without a part beyond the closure alike
   (`Flow.unselected_beyond_coupling`, `Flow.unscored_beyond_coupling`); so does every
   selection through the pooled couplings of a group within the closure
-  (`Flow.unselected_beyond_coupling_all`). Where the members respond, under the hypotheses of
+  (`Flow.unselected_beyond_coupling_all`), the case of one formation of a pool's law: a group's
+  closure under a relation is the union of its members' closures (`WithinClosureOf`,
+  `withinClosureOf_iff`), and every selection through the pooled coupling of any group within a
+  pool's coupling closure selects the levels with and without a part beyond it alike
+  (`Flow.uncoupled_beyond_pool`, `Flow.unselected_beyond_pool`). Where the members respond, under the hypotheses of
   `Flow.alike_within_coupling`, it selects the two flows alike
   (`Flow.unselected_beyond_coupling_responsive`).
 * **The gap.** In `Clearing` the dweller lies within the clearer's reach closure and beyond its
@@ -302,12 +306,72 @@ theorem separates_all (differ : ¬ W.AlikeThroughAll obs group l l' t) :
 
 end Web
 
+/-! ## A pool's coupling closure (from `Becoming.SelectionPool`) -/
+
+/-- `g` lies within a group's closure under a relation: every region closed under the relation
+that holds every member holds `g`. -/
+def WithinClosureOf (rel : F → F → Prop) (group : F → Prop) (g : F) : Prop :=
+  ∀ region, ClosedUnder rel region → (∀ f, group f → region f) → region g
+
+namespace WithinClosureOf
+
+variable {rel : F → F → Prop} {group : F → Prop}
+
+/-- What lies within a member's closure lies within the group's. -/
+theorem of_member {f g : F} (member : group f) (within : WithinClosure rel f g) :
+    WithinClosureOf rel group g :=
+  fun region closed holds => within region closed (holds f member)
+
+end WithinClosureOf
+
+/-- A group's closure is closed under the relation. -/
+theorem closedUnder_withinClosureOf {rel : F → F → Prop} {group : F → Prop} :
+    ClosedUnder rel (WithinClosureOf rel group) :=
+  fun g h within related region closed holds => closed g h (within region closed holds) related
+
+/-- **A group's closure is the union of its members' closures.** -/
+theorem withinClosureOf_iff {rel : F → F → Prop} {group : F → Prop} {g : F} :
+    WithinClosureOf rel group g ↔ ∃ f, group f ∧ WithinClosure rel f g :=
+  ⟨fun within => within (fun g => ∃ f, group f ∧ WithinClosure rel f g)
+      (fun _ _ ⟨f, member, inside⟩ related =>
+        ⟨f, member, inside.trans (WithinClosure.of_rel related)⟩)
+      (fun f member => ⟨f, member, WithinClosure.refl f⟩),
+   fun ⟨_, member, within⟩ => WithinClosureOf.of_member member within⟩
+
+/-- The closure of the group holding one formation is that formation's closure. -/
+theorem withinClosureOf_single {rel : F → F → Prop} {f g : F} :
+    WithinClosureOf rel (fun x => x = f) g ↔ WithinClosure rel f g :=
+  ⟨fun within => match withinClosureOf_iff.mp within with
+    | ⟨_, rfl, inside⟩ => inside,
+   WithinClosureOf.of_member rfl⟩
+
+namespace Flow
+
+variable (L : Flow F C) (W : Web F C)
+
+/-- `g` lies within a pool's coupling closure: the closure of the group under being affected
+through what is coupled into, the union of its members' coupling closures. -/
+def WithinPoolCoupling (obs : F → C → Prop) (group : F → Prop) (g : F) : Prop :=
+  WithinClosureOf (L.CoupledFrom W obs) group g
+
+variable {L W} {obs : F → C → Prop} {group : F → Prop}
+
+/-- Nothing beyond a pool's coupling closure exchanges with a condition coupled into a formation
+within it: a difference beyond the closure cannot come back into it through a formation outside
+it. -/
+theorem beyond_pool_coupling {g h : F} (within : L.WithinPoolCoupling W obs group g)
+    (beyond : ¬ L.WithinPoolCoupling W obs group h) {c : C} (couples : W.CoupledInto obs g c) :
+    ¬ L.Exchanges h c :=
+  fun exchanges => beyond (closedUnder_withinClosureOf g h within ⟨c, couples, exchanges⟩)
+
+end Flow
+
 /-! ## Blind beyond the coupling closure -/
 
 namespace Flow
 
 variable {L L' : Flow F C} {W W' : Web F C} {obs : F → C → Prop} {part : F → Bool}
-  {select : (Nat → C → Nat) → Prop} {score : (Nat → C → Nat) → Nat}
+  {select : (Nat → C → Nat) → Prop} {score : (Nat → C → Nat) → Nat} {group : F → Prop}
 
 /-- **Selection is blind beyond the coupling closure.** With the rest of the exchange fixed,
 where every member of a part lies beyond `f`'s coupling closure, every selection through the
@@ -333,9 +397,40 @@ theorem unscored_beyond_coupling {l : Nat → C → Nat}
     (through : W.ScoresThrough obs g t score) : score W.level = score l :=
   through _ _ fun s _ => uncoupled_beyond_coupling without balanced beyond s g within
 
+/-- **A part beyond a pool's coupling closure makes no difference within it.** With the rest of
+the exchange fixed, where every member of a part lies beyond a pool's coupling closure, each
+formation within the closure couples the levels with and without the part alike at every step:
+`uncoupled_beyond_coupling` for the member whose closure holds it. -/
+theorem uncoupled_beyond_pool {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (balanced : ∀ t g c, L.WithinPoolCoupling W obs group g → W.CoupledInto obs g c →
+      L.BalancesOn W [c] t)
+    (beyond : ∀ h, part h = true → ¬ L.WithinPoolCoupling W obs group h) :
+    ∀ t g, L.WithinPoolCoupling W obs group g → W.AlikeThrough obs g W.level l t :=
+  fun t g within => match withinClosureOf_iff.mp within with
+  | ⟨_, member, inside⟩ => uncoupled_beyond_coupling without
+      (fun t g' c within' couples =>
+        balanced t g' c (WithinClosureOf.of_member member within') couples)
+      (fun h inPart within' => beyond h inPart (WithinClosureOf.of_member member within'))
+      t g inside
+
+/-- **A pool is blind beyond its coupling closure.** With the rest of the exchange fixed, where
+every member of a part lies beyond a pool's coupling closure, every selection through the pooled
+coupling of any group within the closure, the pool itself among them, selects the levels with
+and without the part alike, whatever the members. With the pool holding one formation
+(`withinClosureOf_single`) it is `unselected_beyond_coupling_all`. -/
+theorem unselected_beyond_pool {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (balanced : ∀ t g c, L.WithinPoolCoupling W obs group g → W.CoupledInto obs g c →
+      L.BalancesOn W [c] t)
+    (beyond : ∀ h, part h = true → ¬ L.WithinPoolCoupling W obs group h) {pool : F → Prop}
+    (members : ∀ g, pool g → L.WithinPoolCoupling W obs group g) {t : Nat}
+    (through : W.SelectsThroughAll obs pool t select) : select W.level ↔ select l :=
+  through _ _ fun g member s _ =>
+    uncoupled_beyond_pool without balanced beyond s g (members g member)
+
 /-- **Pooling within the closure stays blind.** Every selection through the pooled couplings
 of a group whose members lie within `f`'s coupling closure selects the levels with and
-without a part beyond the closure alike. -/
+without a part beyond the closure alike: the case of `unselected_beyond_pool` for the pool
+holding `f` alone (`withinClosureOf_single`). -/
 theorem unselected_beyond_coupling_all {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) {f : F}
     (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
@@ -343,8 +438,10 @@ theorem unselected_beyond_coupling_all {l : Nat → C → Nat}
     (beyond : ∀ h, part h = true → ¬ L.WithinCoupling W obs f h) {group : F → Prop}
     (members : ∀ g, group g → L.WithinCoupling W obs f g) {t : Nat}
     (through : W.SelectsThroughAll obs group t select) : select W.level ↔ select l :=
-  through _ _ fun g member s _ =>
-    uncoupled_beyond_coupling without balanced beyond s g (members g member)
+  unselected_beyond_pool (group := fun x => x = f) without
+    (fun t g c within couples => balanced t g c (withinClosureOf_single.mp within) couples)
+    (fun h inPart within => beyond h inPart (withinClosureOf_single.mp within))
+    (fun g member => withinClosureOf_single.mpr (members g member)) through
 
 /-- **Blind beyond the closure where the members respond.** Under the hypotheses of
 `alike_within_coupling`, every selection through the couplings of a formation within

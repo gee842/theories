@@ -77,7 +77,7 @@ CORE = ["Becoming.World", "Becoming.Frame", "Becoming.Labelled", "Becoming.Inqui
         "Becoming.Seeking", "Becoming.Roles", "Becoming.LabelledRoles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
-        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.LeastLoss", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
+        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Amounts", "Becoming.LeastLoss", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
         "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.SupportRecovery", "Becoming.Admission", "Becoming.Exclusion", "Becoming.Exhaustion",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Lifting", "Becoming.Ranking", "Becoming.ActiveReading", "Becoming.LossMatching", "Becoming.StrictTransport", "Becoming.MatchedCourses",
@@ -1152,7 +1152,7 @@ SCOPE = (
     " at most m times the stock, while a whole unit passing in ever more, ever smaller "
     "transfers, each size with a least loss, arises without end and is taken without bound in"
     " amount. "
-    "LeastLoss: over amounts with an associative, commutative addition with nothing as its unit "
+    "Amounts: over amounts with an associative, commutative addition with nothing as its unit "
     "and an order that addition keeps and cancels, with nothing least and possibly dense, the "
     "losses of a stock that falls by them, added since a step, are within its value there; an "
     "amount that does not rise from a step on and falls by at least a least loss at each step at "
@@ -1165,14 +1165,14 @@ SCOPE = (
     "than the stock counts; a family balanced and dissipated on with a least loss "
     "rests the same way; whole numbers are Archimedean with least loss one, and the spine's "
     "descents falls_not_recurring and falls_stop_unrefuted, the laws that taking from a family "
-    "dissipated on does not recur and is bounded by its stock over a stretch, that standing stops "
-    "changing, and the rest theorem of a world enclosed from some step on are proved again from "
-    "the law with their statements unchanged; dyadic amounts are dense and Archimedean, and in them a stock halving at every "
+    "dissipated on does not recur and is bounded by its stock over a stretch, and that standing "
+    "stops changing are proved as this instance. "
+    "LeastLoss: dyadic amounts are dense and Archimedean, and in them a stock halving at every "
     "step loses at every step with no least loss and never rests; in layered amounts a stock "
     "falling by a least loss at every step lies beyond every multiple of it and never rests, and "
     "they are not Archimedean; the halving stock approaches rest and falls at every step; over "
-    "finitely many configurations a law merging nothing loses nothing along an orbit, so a loss "
-    "above nothing needs a law that merges, and so along a run of every process. "
+    "finitely many configurations a process merging nothing loses nothing along a run, and so a "
+    "law along an orbit, so a loss above nothing needs a merge. "
     "Units: at a unit splitting into r t finer units across each step, arising needing an active "
     "giver holds with no condition on r, the law of one exchange holds with change read in the "
     "unit and fails read in raw counts, a need counted in the same unit as the level leaves support "
@@ -1788,7 +1788,7 @@ SCOPE = (
     "not give. "
     "SelectionPool: a pool's coupling closure is the union of its members'; with the rest fixed, "
     "every selection through the pooled coupling of a group within it selects a part beyond it "
-    "alike; some pooled selection separates two histories exactly when the members do not all "
+    "alike (both in Selection, whose single formation's law is their case); some pooled selection separates two histories exactly when the members do not all "
     "couple them alike, and, with the members listed and each member's coupling decided, exactly "
     "when some member couples them apart; where the rest follows a law of exchange reading "
     "through coupling and a pool's act differs only beyond its coupling closure, every selection "

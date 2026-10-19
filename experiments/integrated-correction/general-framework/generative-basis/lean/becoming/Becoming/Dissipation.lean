@@ -210,6 +210,20 @@ theorem adjoin_spec [DecidableEq α] {l : List α} (distinct : Distinct l) :
 
 end Totals
 
+/-- Losses of whole-number amounts added over a stretch are the spine's total over its steps
+(moved from `Becoming.LeastLoss`). -/
+theorem Amounts.whole_sum (d : Nat → Nat) : ∀ n S, Amounts.whole.sum d S n = total (steps S n) d
+  | 0, _ => rfl
+  | n + 1, S =>
+    (congrArg (· + d (S + n)) (Amounts.whole_sum d n S)).trans (total_steps_last d n S).symm
+where
+  total_steps_last (d : Nat → Nat) : ∀ n S, total (steps S (n + 1)) d = total (steps S n) d + d (S + n)
+    | 0, S => (Nat.add_zero (d S)).trans (Nat.zero_add (d S)).symm
+    | n + 1, S =>
+      (congrArg (d S + ·) ((total_steps_last d n (S + 1)).trans
+        (congrArg (fun k => total (steps (S + 1) n) d + d k) (Nat.succ_add S n)))).trans
+        (Nat.add_assoc _ _ _).symm
+
 variable {F C : Type}
 
 namespace Flow
@@ -374,26 +388,16 @@ theorem Balances.runs_down (balances : L.Balances W) {cs : List C} {t : Nat}
 
 /-- Balanced and dissipated on across each step of a stretch, the formations taking from the
 family over the stretch number at most its stock at the start. Nothing is asked of the steps
-outside the stretch. -/
+outside the stretch. The loss law (`Amounts.losses_within`) at whole-number amounts. -/
 theorem takers_within_on {cs : List C} :
     ∀ S N, (∀ t, S ≤ t → t < S + N → L.BalancesOn W cs t) →
       (∀ t, S ≤ t → t < S + N → L.DissipatesOn cs t) →
-      W.stock cs (S + N) + total (steps S N) (L.takers cs) ≤ W.stock cs S
-  | _, 0, _, _ => Nat.le_refl _
-  | S, N + 1, balances, dissipates =>
-    have shift : ∀ t, t < S + 1 + N → t < S + (N + 1) := fun _ below =>
-      Nat.lt_of_lt_of_le below (Nat.le_of_eq (Nat.add_right_comm S 1 N))
-    have first : S < S + (N + 1) :=
-      Nat.lt_of_lt_of_le (Nat.lt_succ_self S) (Nat.succ_le_succ (Nat.le_add_right S N))
-    have later := takers_within_on (S + 1) N
-      (fun t after below => balances t (Nat.le_of_succ_le after) (shift t below))
-      (fun t after below => dissipates t (Nat.le_of_succ_le after) (shift t below))
-    have now := (balances S (Nat.le_refl S) first).runs_down (dissipates S (Nat.le_refl S) first)
-    Nat.le_trans
-      (Nat.le_of_eq
-        ((congrArg (· + _) (congrArg (W.stock cs) (Nat.add_right_comm S 1 N).symm)).trans
-          ((Nat.add_left_comm _ _ _).trans (Nat.add_comm _ _))))
-      (Nat.le_trans (Nat.add_le_add_right later _) now)
+      W.stock cs (S + N) + total (steps S N) (L.takers cs) ≤ W.stock cs S :=
+  fun S N balances dissipates =>
+    Eq.subst (motive := fun x => W.stock cs (S + N) + x ≤ W.stock cs S)
+      (Amounts.whole_sum (L.takers cs) N S)
+      (Amounts.losses_within (M := Amounts.whole) (s := W.stock cs) (d := L.takers cs) N
+        fun t from_ below => (balances t from_ below).runs_down (dissipates t from_ below))
 
 /-- Dissipated on from step `S`, the formations taking from the family over any later
 stretch of steps number at most its stock at `S`. -/
@@ -404,19 +408,18 @@ theorem Balances.takers_within (balances : L.Balances W) {cs : List C} :
     fun t after _ => dissipates t after
 
 /-- Balanced and dissipated on from some step, taking from the family does not recur.
-Nothing is asked of the steps before. -/
+Nothing is asked of the steps before. The family law (`Amounts.family_rests_of_archimedean`) at
+whole-number amounts: each formation taking from a family dissipated on loses at least one unit. -/
 theorem taking_not_recurring_from {cs : List C} {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W cs t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn cs t) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
-  fun recurs => falls_not_recurring (W.stock cs) T
-    (fun t later => Nat.le_trans (Nat.le_add_right _ _)
-      ((balances t later).runs_down (dissipates t later)))
-    fun N => match recurs (N + T) with
-    | ⟨t, later, takes⟩ =>
-      have from_ := Nat.le_trans (Nat.le_add_left T N) later
-      ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right takes)
-          ((balances t from_).runs_down (dissipates t from_))⟩
+  Amounts.family_rests_of_archimedean Amounts.whole_archimedean (s := W.stock cs)
+    (u := L.uptake cs) (r := L.replenishment cs) (ε := 1) (P := fun t => 0 < L.takers cs t)
+    (Nat.not_succ_le_zero 0)
+    (fun t later => Nat.le_of_eq (balances t later).over)
+    (fun t later => Nat.le_trans (Nat.le_add_right _ _) (dissipates t later).replenishment_takers)
+    (fun t later takes =>
+      Nat.le_trans (Nat.add_le_add_left takes _) (dissipates t later).replenishment_takers)
 
 /-- Dissipated on from some step, taking from the family does not recur. -/
 theorem Balances.taking_not_recurring (balances : L.Balances W) {cs : List C} {T : Nat}

@@ -168,14 +168,6 @@ theorem step_conserves {s t : State} {a : Act} (h : P.step s a t) :
       exact ⟨ExchangeLaw.sub_add_back enough, rfl⟩
   next => contradiction
 
-theorem trace_conserves {s t : State} {as : List Act} (h : Trace P s as t) :
-    t.fuel + t.used = s.fuel + s.used := by
-  induction h with
-  | nil => rfl
-  | @cons s m t a as step tail ih =>
-    obtain ⟨fuel, used⟩ := step_conserves step
-    rw [ih, used, Nat.add_comm s.used, ← Nat.add_assoc, fuel]
-
 /-- A single policy consumes the retained method and mismatch at every revision.
 The sequence of ordinary undertakings is supplied separately. -/
 def choose (s : State) : Option Act :=
@@ -254,9 +246,10 @@ theorem alike_iff_agreeOn (plan : List Nat) (x y : Nat → Bool) :
     Alike plan x y ↔ Learning.Training.AgreeOn (fun i => i ∈ plan) x y :=
   Iff.rfl
 
+/-- Adding an address keeps every earlier selection: an instance of `Contacts.keeps_iff_retains`. -/
 theorem added_keeps (m : List Nat) (i : Nat) :
     Registration.Keeps Alike m (i :: m) :=
-  fun _ _ h j hj => h j (List.mem_cons_of_mem i hj)
+  (Contacts.keeps_iff_retains (fun p : List Nat => p) m (i :: m)).mpr fun _ h => List.Mem.tail i h
 
 /-- Direct reuse of `Registration.keeps_iff`, not a second definition of selection through a
 lumping. -/
@@ -271,17 +264,11 @@ theorem choice_at_contact {m : List Nat} {i : Nat} (mem : i ∈ m) :
     Learning.Training.Through (Alike m) (fun x => x i = true) :=
   fun _ _ h => ⟨fun hx => (h i mem).symm.trans hx, fun hy => (h i mem).trans hy⟩
 
+/-- A new contact gains a choice: an instance of `Contacts.added_gains`. -/
 theorem new_contact_choice (m : List Nat) (i : Nat) (absent : i ∉ m) :
     Learning.Training.Through (Alike (i :: m)) (fun x => x i = true) ∧
-      ¬ Learning.Training.Through (Alike m) (fun x => x i = true) := by
-  refine ⟨choice_at_contact (List.mem_cons_self), ?_⟩
-  intro through
-  have same : Alike m (fun _ => false) (fun j => if j = i then true else false) := by
-    intro j hj
-    have ne : j ≠ i := fun eq => absent (eq ▸ hj)
-    exact (if_neg ne).symm
-  have bad := (through _ _ same).mpr (show (if i = i then true else false) = true from if_pos rfl)
-  contradiction
+      ¬ Learning.Training.Through (Alike m) (fun x => x i = true) :=
+  Contacts.added_gains (List.Mem.head m) absent
 
 /-! The native history has two repairs, no resource reset and no external
 calibration labels. Both rounds use exactly `choose`. -/
@@ -440,8 +427,9 @@ theorem draws_held : Stock.DrawsHeld P State.fuel use := by
   next enough => exact enough
   next => contradiction
 
-/-- `trace_conserves` as a corollary of `Stock.trace_balance`. -/
-theorem trace_conserves_of_law {s t : State} {as : List Act} (h : Trace P s as t) :
+/-- Fuel and what has been used, added, are conserved along every course: a corollary of
+`Stock.trace_balance`. -/
+theorem trace_conserves {s t : State} {as : List Act} (h : Trace P s as t) :
     t.fuel + t.used = s.fuel + s.used :=
   have fuel : t.fuel + total as use = s.fuel :=
     (Stock.trace_balance balanced h).trans (congrArg (s.fuel + ·) (Stock.total_zero as))
@@ -457,16 +445,6 @@ starts from; `support_too_small_to_build` and `no_action_after_exhaustion` are c
 theorem covered {s t : State} {as : List Act} (h : Trace P s as t) :
     Stock.Covered use (fun _ => 0) s.fuel as :=
   Stock.covered_of_trace balanced draws_held h
-
-/-- `added_keeps` as an instance of `Contacts.keeps_iff_retains`. -/
-theorem added_keeps_of_law (m : List Nat) (i : Nat) : Registration.Keeps Alike m (i :: m) :=
-  (Contacts.keeps_iff_retains (fun p : List Nat => p) m (i :: m)).mpr fun _ h => List.Mem.tail i h
-
-/-- `new_contact_choice` as an instance of `Contacts.added_gains`. -/
-theorem new_contact_choice_of_law (m : List Nat) (i : Nat) (absent : i ∉ m) :
-    Learning.Training.Through (Alike (i :: m)) (fun x => x i = true) ∧
-      ¬ Learning.Training.Through (Alike m) (fun x => x i = true) :=
-  Contacts.added_gains (List.Mem.head m) absent
 
 /-- The revision rule reads the mismatch and answers every failure. -/
 theorem propose_answers : Contacts.Answers propose := fun _ _ => List.Mem.head _

@@ -1,0 +1,117 @@
+@Becoming.PresentationFrames.correspondence : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {K' : Type u_5} {F : Becoming.Frame S A C} {p : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K}
+  {q : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K'},
+  Becoming.Presentations.Exact (Becoming.BranchingTest.Holds F) p →
+    Becoming.Presentations.Reduced (Becoming.BranchingTest.Holds F) p →
+      Becoming.Presentations.Exact (Becoming.BranchingTest.Holds F) q →
+        Becoming.Presentations.Reduced (Becoming.BranchingTest.Holds F) q →
+          (∀ (k : K),
+              Becoming.Presentations.Used p k →
+                ∃ k',
+                  Becoming.Presentations.Matches p q k k' ∧
+                    ∀ (e : K'), Becoming.Presentations.Matches p q k e → e = k') ∧
+            ∀ (k' : K'),
+              Becoming.Presentations.Used q k' →
+                ∃ k,
+                  Becoming.Presentations.Matches p q k k' ∧ ∀ (e : K), Becoming.Presentations.Matches p q e k' → e = k
+@Becoming.PresentationFrames.canonical_exact : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3}
+  (F : Becoming.Frame S A C),
+  Becoming.Presentations.Exact (Becoming.BranchingTest.Holds F)
+    (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F))
+@Becoming.PresentationFrames.canonical_kernel : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3},
+  Becoming.Presentations.PredicateExt (Becoming.BranchingTest A C) →
+    ∀ (F : Becoming.Frame S A C) (s s' : S),
+      (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)).encode s =
+          (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)).encode s' ↔
+        Becoming.SameBranchingTests F F s s'
+@Becoming.PresentationFrames.canonical_factor_answers : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.Frame S A C} {p : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K},
+  Becoming.Presentations.Exact (Becoming.BranchingTest.Holds F) p →
+    (∀ (k : K),
+        Becoming.Presentations.Used p k →
+          ∃ d,
+            Becoming.Presentations.Used (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) d ∧
+              Becoming.Presentations.Matches p (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) k d ∧
+                ∀ (e : Becoming.BranchingTest A C → Prop),
+                  Becoming.Presentations.Matches p (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) k
+                      e →
+                    ∀ (φ : Becoming.BranchingTest A C), e φ ↔ d φ) ∧
+      ∀ (d : Becoming.BranchingTest A C → Prop),
+        Becoming.Presentations.Used (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) d →
+          ∃ k,
+            Becoming.Presentations.Used p k ∧
+              Becoming.Presentations.Matches p (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) k d
+@Becoming.PresentationFrames.canonical_factor : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.Frame S A C} {p : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K},
+  Becoming.Presentations.PredicateExt (Becoming.BranchingTest A C) →
+    Becoming.Presentations.Exact (Becoming.BranchingTest.Holds F) p →
+      (∀ (k : K),
+          Becoming.Presentations.Used p k →
+            ∃ d,
+              Becoming.Presentations.Used (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) d ∧
+                Becoming.Presentations.Matches p (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) k
+                    d ∧
+                  ∀ (e : Becoming.BranchingTest A C → Prop),
+                    Becoming.Presentations.Matches p (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F))
+                        k e →
+                      e = d) ∧
+        ∀ (d : Becoming.BranchingTest A C → Prop),
+          Becoming.Presentations.Used (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) d →
+            ∃ k,
+              Becoming.Presentations.Used p k ∧
+                Becoming.Presentations.Matches p (Becoming.Presentations.canonical (Becoming.BranchingTest.Holds F)) k d
+@Becoming.PresentationFrames.joint_descends_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.JointFrame S A C} {p : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K},
+  Becoming.Presentations.Exact (Becoming.BranchingTest.Holds F.toFrame) p →
+    Becoming.Presentations.Reduced (Becoming.BranchingTest.Holds F.toFrame) p →
+      ((∃ R, Becoming.Presentations.RelExact p F.joint R) ↔
+        Becoming.Presentations.Saturated (Becoming.BranchingTest.Holds F.toFrame) F.joint)
+@Becoming.PresentationFrames.joint_image_iff : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.JointFrame S A C} {p : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K},
+  Becoming.Presentations.Exact (Becoming.BranchingTest.Holds F.toFrame) p →
+    Becoming.Presentations.Reduced (Becoming.BranchingTest.Holds F.toFrame) p →
+      (Becoming.Presentations.RelExact p F.joint (Becoming.jointImage F.joint p.encode) ↔
+        Becoming.Presentations.Saturated (Becoming.BranchingTest.Holds F.toFrame) F.joint)
+@Becoming.PresentationFrames.joint_reading_unique : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.JointFrame S A C} {p : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K}
+  {R R' : K → K → K → Prop},
+  Becoming.Presentations.RelExact p F.joint R →
+    Becoming.Presentations.RelExact p F.joint R' →
+      ∀ {x y z : K},
+        Becoming.Presentations.Used p x →
+          Becoming.Presentations.Used p y → Becoming.Presentations.Used p z → (R x y z ↔ R' x y z)
+@Becoming.PresentationFrames.joint_blocked : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {K : Type u_4}
+  {F : Becoming.JointFrame S A C} {p : Becoming.Presentations.Presentation S (Becoming.BranchingTest A C) K},
+  Becoming.Presentations.Reduced (Becoming.BranchingTest.Holds F.toFrame) p →
+    ∀ {a a' b b' c c' : S},
+      Becoming.SameBranchingTests F.toFrame F.toFrame a a' →
+        Becoming.SameBranchingTests F.toFrame F.toFrame b b' →
+          Becoming.SameBranchingTests F.toFrame F.toFrame c c' →
+            F.joint a b c → ¬F.joint a' b' c' → ¬∃ R, Becoming.Presentations.RelExact p F.joint R
+@Becoming.PresentationFrames.everyPredicate_separate : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (s s' : S), Becoming.Presentations.SameAnswers (Becoming.PresentationFrames.everyPredicate P).realized s s' ↔ s = s'
+@Becoming.PresentationFrames.everyPredicate_injective : ∀ {S : Type u_1} {A : Type u_2} {K : Type u_3}
+  {P : Generative.Process S A} {p : Becoming.Presentations.Presentation S (S → Prop) K},
+  Becoming.Presentations.Exact (Becoming.PresentationFrames.everyPredicate P).realized p →
+    ∀ (s s' : S), p.encode s = p.encode s' → s = s'
+@Becoming.PresentationFrames.everyPredicate_reduced : ∀ {S : Type u_1} {A : Type u_2} {K : Type u_3}
+  {P : Generative.Process S A} (p : Becoming.Presentations.Presentation S (S → Prop) K),
+  Becoming.Presentations.Reduced (Becoming.PresentationFrames.everyPredicate P).realized p
+@Becoming.PresentationFrames.everyPredicate_saturated : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A}
+  (J : S → S → S → Prop), Becoming.Presentations.Saturated (Becoming.PresentationFrames.everyPredicate P).realized J
+@Becoming.PresentationFrames.everyPredicate_recoverable : ∀ {S : Type u_1} {A : Type u_2} {K : Type u_3}
+  {P : Generative.Process S A} {p : Becoming.Presentations.Presentation S (S → Prop) K},
+  Becoming.Presentations.Exact (Becoming.PresentationFrames.everyPredicate P).realized p →
+    ∀ (J : S → S → S → Prop), Becoming.Presentations.RelExact p J (Becoming.jointImage J p.encode)
+@Becoming.PresentationFrames.everyPredicate_correspondence : ∀ {S : Type u_1} {A : Type u_2} {K : Type u_3}
+  {K' : Type u_4} {P : Generative.Process S A} {p : Becoming.Presentations.Presentation S (S → Prop) K}
+  {q : Becoming.Presentations.Presentation S (S → Prop) K'},
+  Becoming.Presentations.Exact (Becoming.PresentationFrames.everyPredicate P).realized p →
+    Becoming.Presentations.Exact (Becoming.PresentationFrames.everyPredicate P).realized q →
+      (∀ (k : K),
+          Becoming.Presentations.Used p k →
+            ∃ k',
+              Becoming.Presentations.Matches p q k k' ∧ ∀ (e : K'), Becoming.Presentations.Matches p q k e → e = k') ∧
+        ∀ (k' : K'),
+          Becoming.Presentations.Used q k' →
+            ∃ k, Becoming.Presentations.Matches p q k k' ∧ ∀ (e : K), Becoming.Presentations.Matches p q e k' → e = k

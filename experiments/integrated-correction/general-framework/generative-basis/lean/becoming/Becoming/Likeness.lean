@@ -45,8 +45,9 @@ No premise is added; every declaration has an empty axiom report.
   (`Dependence.dichotomy_of_same_level`). Where every step by the move from the withheld
   configuration reaches the same level of the condition, either the part makes the difference or
   the same move still breaks the dependence. Determinacy up to likeness under claims that tell apart
-  the level is a case of it (`Dependence.dichotomy_of_determinedAt`), and so is determinacy
-  (`Dependence.dichotomy_of_determined`, the statement of `Dependence.determined_dichotomy`). In
+  the level is a case of it (`Dependence.dichotomy_of_determinedAt`), and so is determinacy,
+  at the claims that read the level (`Dependence.level_registers`): `Dependence.determined_dichotomy`
+  of `Becoming.Joint`. In
   every process the part makes the difference exactly when the same move no longer breaks the
   dependence (`makesDifference_iff`); what the condition adds is the decision between the two.
 * **Branching tests fix likeness, constructively, where both frames are finite and decided.** A
@@ -2418,19 +2419,6 @@ theorem dichotomy_of_determinedAt {D : Type w} {P : Process S A} {claims : S →
 theorem level_registers (c : C) :
     ∀ x y : S, (∀ n, K.level x c = n ↔ K.level y c = n) → K.level x c = K.level y c :=
   fun _ y same => (same (K.level y c)).mpr rfl
-
-/-- **Determinacy is the named case**: `determined_dichotomy`, read through the claims that read
-the level. -/
-theorem dichotomy_of_determined {P : Process S A} (determined : Determined P)
-    {withhold : F → S → S} {f : F} {s : S} {a : A} {g : F} {c : C}
-    (breaks : K.BreaksBy P s a g c) {t₀ : S} (available : P.step (withhold f s) a t₀)
-    (depends : K.requires (withhold f s) g c)
-    (met : K.need (withhold f s) g c ≤ K.level (withhold f s) c) :
-    K.MakesDifference P withhold f s a g c ∨ K.BreaksBy P (withhold f s) a g c :=
-  dichotomy_of_determinedAt (claims := fun x n => K.level x c = n) (level_registers c)
-    (Determined.at (F := (⟨P, fun x n => K.level x c = n⟩ : Frame S A Nat)) determined
-      (withhold f s))
-    breaks available depends met
 
 end Dependence
 

@@ -879,18 +879,6 @@ open Generative
 
 universe u v w
 
-namespace Law
-
-variable {S : Type u}
-
-/-- The run of a determined law from `s`. -/
-def run (next : S → S) (s : S) : Run (process next) :=
-  ⟨orbit next s, fun _ => (), fun _ => rfl⟩
-
-theorem run_state (next : S → S) (s : S) : (run next s).state = orbit next s := rfl
-
-end Law
-
 section Runs
 
 variable {S : Type u} {A : Type v} {P : Process S A}
