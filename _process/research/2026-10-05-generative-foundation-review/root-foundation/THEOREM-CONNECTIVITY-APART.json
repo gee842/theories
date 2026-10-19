@@ -97,11 +97,6 @@
    "category": "restates",
    "reason": "Under law_reachable_iff and law_drawn_iff it is Branching.necessarilyDrawn_of_lost at Law.process next, already on the base for every process. Not a duplicated proof to fold (U2): the orbit form (Becoming.Recurrence or Becoming.Attraction, R6) comes before the process form (Becoming.Branching) in the import order, and the process form is more general, so neither can be proved through the other where they stand; each is a short corollary at its own level, connected by Branching's law_*_iff."
   },
-  "Becoming.Law.lost_stays": {
-   "module": "Becoming.Recurrence",
-   "category": "restates",
-   "reason": "Branching.lost_stays states it for every process; at Law.process next it is this law through law_reachable_iff. Not a duplicated proof to fold (U2): the orbit form (Becoming.Recurrence or Becoming.Attraction, R6) comes before the process form (Becoming.Branching) in the import order, and the process form is more general, so neither can be proved through the other where they stand; each is a short corollary at its own level, connected by Branching's law_*_iff."
-  },
   "Becoming.Law.rise_not_lossless": {
    "module": "Becoming.Recurrence",
    "category": "restates",

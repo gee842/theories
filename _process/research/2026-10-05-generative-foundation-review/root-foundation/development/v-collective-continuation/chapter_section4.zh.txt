@@ -1,0 +1,8 @@
+
+<a id="what-a-collectives-continuation-needs"></a>
+**集体延续所需。** 一段关于社会可存续性的文字问：哪些约束若长期、系统地被违反，社会就不再能维持自身？它列出八条，另有统一它们的第九条：保持纠错的能力（[出处](../../../sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md)）。英文版第 4 节逐条把它们改写为进程在所述条件下的定律，并列出各自的界限；这里只记其要点（[研究第 193 节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#193-what-a-collectives-continuation-needs-v)）。没有一条是公理，也没有一条说“必须”。
+
+- **五处改写，各由一条定律承载。** 保持一个部分不是更新：在可更新过程中，没有进程离开“焦点形成活动”这一守卫，而同一构形出发，一次运行更新、另一次消耗维持者的条件（`Renewable.kept_part_not_renewal`）。整体没有一个数：损失在断开的依存处（`Flow.act_unselected`、`Flow.favours_reaching_beyond`）。条件是联合，不是相乘：在每条进程下恰好分解（`Viability.kernel_and_iff`），沿某条进程则不（`ChoicePoint.each_not_joint`），且没有作用于各自答案的规则决定联合的答案（`ChoicePoint.no_rule_decides_joint`）。反向回路须及于规则（`Law.perturbation_reabsorbed`）。不变量是定律，不是公理。
+- **四处缺口，各由一个新模块补上。** 陌生人之间的合作：等待给出的给出（`Becoming.Withholding`）；有记忆时一处扣留结束所及之族的一切给出（`withholding_absorbs`），无记忆时沿回路复返（`withholding_returns`），等待越多给出越少，恢复要靠另一条不等待就给出的律。有界的冲突：回路只经一个给回少于所受的环节才闭合（`Becoming.Widening`，`closing_needs_less`）；整数强度下回路要么第一圈闭合，要么保持，要么失控，中间没有（`whole_strengths`）。稳定与适应：规则可以多快地改变（`Becoming.Pace`）；不读快层的规则失其所合并者，一段至少 `2N − 1` 步才确定其所持的进程，且恰好如此（`pace_law`）。形成下一代成员：比每个承载者更持久的样式只经传递而持续（`Becoming.Passing`）；一步无承载者即此后再无，传递停止则在一个跨度内结束（`Web.ByPassing.ends_within`）。
+
+读法是 AI 的（D48）。

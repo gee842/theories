@@ -96,6 +96,11 @@ import Becoming.Regrouping
 import Becoming.Selection
 import Becoming.Learning
 import Becoming.Hexagrams
+import Becoming.Withholding
+import Becoming.Widening
+import Becoming.Pace
+import Becoming.Passing
+import Becoming.JointKeeping
 import Becoming.Revision
 import Becoming.Contacts
 import Becoming.RegroupingSelection
@@ -1127,6 +1132,44 @@ readings of the unfolding (`Becoming.Labelled`).
   Read as claims, a frame and a world, the lines arise and cease at arbitrarily late steps
   (`Frame.claims_recur_iff`); any sixty-five steps revisit, and the kept history is held by no
   list. What the passages of the text say beyond these laws is read in the chapter on the 易传.
+* `Becoming.Withholding` (L3): giving that waits on giving. With memory (a formation gives
+  where it gave and all it waits on gave), a formation gives at a step exactly where every
+  formation within that many waits of it gave at the start; withholding stays, spreads
+  downstream, and one withholding ends all giving in a family reached from it. Without memory
+  (a formation gives where all it waits on gave the step before), withholding passes out where
+  no chain of waits is long enough and returns around every loop. More waiting is less giving
+  under both laws, and in a ring of three a formation giving whatever it waits on restores
+  every formation from the third step on, which no course of the law with memory does.
+* `Becoming.Widening` (L4): whether a loop closes, keeps or widens a difference, read on runs
+  of the return map. A loop closes a difference only through a link that gives back less than
+  it received; a return map below what it receives closes within as many turns as the
+  difference, exactly, and a closing loop merges; taking a constant off closes at the least
+  turn it covers the difference; a cut closes at once where what follows gives nothing for
+  nothing; monotone return maps settle or rise; doubling links run away. With whole-number
+  strengths a loop closes at the first turn, keeps the difference or runs away, nothing
+  between: closing gradually needs a link that is not a multiplication.
+* `Becoming.Pace` (L4): how fast a rule may change. A two-level course, the fast
+  configuration stepping by a rule that changes only at reading steps, is a run of one law. A
+  rule that never reads is kept from then on: nothing the fast level meets reaches it, and under it
+  what is lost stays lost and merges lose configurations; a fast difference reaches the rule
+  only at a reading step, exactly; regaining needs a change of rule. Given two values, a
+  stretch of `L` steps fixes every pair of courses with at most `N` states that held rules
+  generate exactly when `L ≥ 2N - 1`; a course of configurations read whole is fixed by its
+  first `N + 1` steps, exactly.
+* `Becoming.Passing` (L4): a pattern that outlasts each of its carriers lasts only through
+  passing. Read on a web whose activity is carrying, a pattern present at every step from `T`
+  on with carriers brief for `d` has a carrier beginning within every `d` steps; under the
+  passing premise every beginning is a passing, the pattern is passed across one of every `d`
+  steps, one step with no carrier is followed by none with one, and where passing stops it ends
+  within `d` steps. Each bound is attained in `PatternRelay`. The passing premise is supplied.
+* `Becoming.JointKeeping` (L4): conditions kept together, and a part kept under every course.
+  No course leaves two guards, or a list of guards, together exactly where no course leaves
+  any. Along some course this fails: in `ChoicePoint` each of two guards is keepable and the
+  two together are not, and no rule on the separate keepabilities decides the joint one. In
+  `Renewable` no course leaves the guard "the focal formation is active" from any
+  configuration, while from one configuration one run renews and another consumes the
+  sustaining formation's condition: keeping a part decides neither renewal nor what the run
+  does to others.
 * `Becoming.Contacts` (L4): registration through addressed contacts. Registration by agreement
   on data selects a value exactly where its address is in the data, and a change of data keeps
   every old selection exactly where it keeps the old data. A revision rule registers every
