@@ -9,7 +9,10 @@ Three steps, none of which writes to the repository unless `--write` is given:
 2. Dump. `THEOREM-CONNECTIVITY-DUMP.lean` writes, for every constant of those modules, the tracked constants its
    type and its value use.
 3. Analysis. The base is two families of definitions: Process/Trace (GenerativeCore) with Frame/Run, and World with
-   the Flow and Web it is built from. Each spine theorem is placed in the first class that fits:
+   the Flow and Web it is built from. Since R28 (20 October 2026) a World is a run by its type (its history is a Run),
+   so the World family reaches the Process family by definition and a statement on World counts as on both; Flow and
+   Web (Dependence Nat) are records over the step index and reach neither, and a process need not be a world, so the
+   families are still named separately. Each spine theorem is placed in the first class that fits:
    * its statement uses a constant that reaches both families, only the first, or only the second;
    * its proof goes through a family although its statement does not;
    * it is used, directly or through other constants, by some constant that reaches the base;
