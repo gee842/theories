@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-19T05:50:23+00:00",
+  "reviewed_at_utc": "2026-10-19T06:01:48+00:00",
   "statement": {
     "en": "A cut leaves every closure as it was exactly where each removed link is bypassed, and a join adds exactly what passes through it. In a world grown by attachment every condition is needed; one added condition frees exactly the grown ones it crosses.",
     "zh": "切断使每个闭包保持原样，恰当每条被去掉的联系被绕过；连上一条联系，恰好添上经它通过的。在依附式生长的世界中，每个条件都被需要；多一个条件，恰使它跨过的生长出的条件不再被需要。"
@@ -162,8 +162,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T054535.337999Z): the 60 declarations of Becoming.Cuts, 51 of them theorems, have empty axiom reports; the checker verifies core purity. The growth-constrained-fragmentation record holds the periphery instances. Author self-review in study sections 190 and 191; not independently reviewed.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T054535.337999Z）：Becoming.Cuts 的 60 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。外围实例见 growth-constrained-fragmentation。作者自审见研究第 190、191 节；未经独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T055924.801141Z): the 60 declarations of Becoming.Cuts, 51 of them theorems, have empty axiom reports; the checker verifies core purity. The growth-constrained-fragmentation record holds the periphery instances. Author self-review in study sections 190 and 191; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T055924.801141Z）：Becoming.Cuts 的 60 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。外围实例见 growth-constrained-fragmentation。作者自审见研究第 190、191 节；未经独立审查。"
   },
   "next_delta": {
     "en": "Several joins at once and the cycle law; added conditions with more than two takers; the count of links or conditions a whole needs; how links form and are cut along a run; an independent review.",
@@ -291,7 +291,13 @@
         "Becoming.Flow.withinSystem_two_takers_iff",
         "Becoming.Flow.within_of_two_takers"
       ],
-      "sha256": "650c1e1511eda6e5a48e2e407a0c65ae2789795425f8490a51c815e0998de6f6"
+      "sha256": "96b639c0cdba04c347573dfafff81b4f89200356699edeef6cbf4c6f0831876c"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T055924.801141Z/verification.json",
+      "role": "receipt",
+      "sha256": "9860bab7def57c07ac878f9df94af84b9f9d51753f38fd373c45925adad87554",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
@@ -315,13 +321,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "90d01eea8d2e184e9c7fad6829792d06c22f772736244d4b93e3f7c913fcbfb1"
+      "sha256": "45c35ba2e9c443353c4154995a56f5555a3f76126a239c9ee89481d6488aa0be"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "b58d514e64729b55969d6642696287da9f33fcebe11eb9930ceaf9fb923313c9"
+      "sha256": "794863973118ec6ce6caaa00b8b07aa6756db38add29383b331f16def5faeb1f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-general-laws-from-examples.md",
@@ -333,7 +339,7 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T055924.801141Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Cuts",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -354,6 +360,10 @@
     {
       "en": "19 October 2026, K2: growth by attachment read on the base (Flow.GrownBy): every grown condition is needed, and one added condition frees exactly the grown ones it crosses; laws 8 and 9 added, law 4 gains its list lemmas; study section 191. The earlier laws are unchanged.",
       "zh": "2026年10月19日，K2：依附式生长在基上的读法（Flow.GrownBy）：每个生长出的条件都被需要，多一个条件恰使它跨过的生长出的条件不再被需要；新增规律 8、9，规律 4 添上其列表引理；研究第 191 节。原有规律不变。"
+    },
+    {
+      "en": "19 October 2026, K3 (Ren: \"please finish it\"): Cuts.lean re-pointed after reading the change: Flow.GrownBy.cond_ne now reaches its same-orientation case through Cuts.Attaches.listed_once, so no theorem of Becoming.Cuts stands apart; no statement changed. Core receipt 20261019T055924.801141Z; study section 191 (addendum) and the chapter's sections 8.2 and 9 re-pointed with it. The claim is unchanged.",
+      "zh": "2026年10月19日，K3：读过改动后，Cuts.lean 重新指向：Flow.GrownBy.cond_ne 的同向情形改经 Cuts.Attaches.listed_once，Becoming.Cuts 不再有孤立定理；陈述未变。核心回执 20261019T055924.801141Z；研究第 191 节（补记）与本章第 8.2、9 节随之重新指向。论断不变。"
     }
   ]
 }

@@ -1671,11 +1671,6 @@
    "module": "Becoming.HistoryIdeals",
    "category": "restates",
    "reason": "The case of words of `Stretches.run_goesOn` (a run's history goes on), stated on the base for every process."
-  },
-  "Becoming.Cuts.Attaches.listed_once": {
-   "module": "Becoming.Cuts",
-   "category": "restates",
-   "reason": "each link grown by attachment is listed once, a law of the list; its reading on the world, that each condition of a world grown by attachment is attached at one place, is stated on the base by Flow.GrownBy.cond_ne, which is stronger (no other entry attaches the same condition, whatever its pair) and is proved from Cuts.attached_link_separates, so nothing on the base needs listed_once"
   }
  }
 }

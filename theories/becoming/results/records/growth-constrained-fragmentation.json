@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-19T05:28:49+00:00",
+  "reviewed_at_utc": "2026-10-19T06:01:48+00:00",
   "claim": {
     "zh": "实际生长得到的两种同组成连接图限制一边断裂后的后继；精确连通证书和共同准备计算保留断裂规律改变造成的排序反转。",
     "en": "Two actually grown graphs with matched composition constrain successors after one-edge removal; exact connectivity certificates and common-preparation calculations retain a cut-law ranking reversal."
@@ -202,11 +202,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
       "role": "proof",
-      "sha256": "650c1e1511eda6e5a48e2e407a0c65ae2789795425f8490a51c815e0998de6f6",
+      "sha256": "96b639c0cdba04c347573dfafff81b4f89200356699edeef6cbf4c6f0831876c",
       "declarations": [
         "Becoming.Cuts.attached_link_separates",
         "Becoming.Cuts.joined_cut_unchanged_iff"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T055924.801141Z/verification.json",
+      "role": "receipt",
+      "sha256": "9860bab7def57c07ac878f9df94af84b9f9d51753f38fd373c45925adad87554",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
@@ -252,7 +258,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T055924.801141Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Cuts",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -321,6 +327,10 @@
     {
       "en": "19 October 2026, K2: Cuts.lean gained the laws of growth by attachment on the base (study section 191); the two Cuts declarations this record cites are unchanged, and its binding moves to core receipt 20261019T054535.337999Z. The claim is unchanged.",
       "zh": "2026年10月19日，K2：Cuts.lean 新增依附式生长在基上的规律（研究第 191 节）；本记录所引的两项 Cuts 声明不变，其绑定移到核心回执 20261019T054535.337999Z。论断不变。"
+    },
+    {
+      "en": "19 October 2026, K3 (Ren: \"please finish it\"): Cuts.lean re-pointed after reading the change: Flow.GrownBy.cond_ne now reaches its same-orientation case through Cuts.Attaches.listed_once, so no theorem of Becoming.Cuts stands apart; no statement changed. Core receipt 20261019T055924.801141Z; study section 191 (addendum) and the chapter's sections 8.2 and 9 re-pointed with it. The claim is unchanged.",
+      "zh": "2026年10月19日，K3：读过改动后，Cuts.lean 重新指向：Flow.GrownBy.cond_ne 的同向情形改经 Cuts.Attaches.listed_once，Becoming.Cuts 不再有孤立定理；陈述未变。核心回执 20261019T055924.801141Z；研究第 191 节（补记）与本章第 8.2、9 节随之重新指向。论断不变。"
     }
   ]
 }

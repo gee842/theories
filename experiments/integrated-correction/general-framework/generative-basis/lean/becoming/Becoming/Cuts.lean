@@ -550,7 +550,8 @@ theorem link_of_takers (grown : L.GrownBy W added es cond) {e : F × F} (listed 
       (fun yb => Or.inl (xb.trans yb.symm)))
 
 /-- **Each grown condition is attached at one place.** No entry other than `(p, n)` attaches the
-condition `cond n`: its two takers would be `p` and `n`, and its link would join what
+condition `cond n`: its two takers would be `p` and `n`. An entry `(p, n)` again would list it twice
+(`Cuts.Attaches.listed_once`), and an entry `(n, p)` would join what
 `Cuts.attached_link_separates` keeps apart without `(p, n)`. -/
 theorem cond_ne (grown : L.GrownBy W added es cond) {p n : F} {newer older : List (F × F)}
     (split : es = newer ++ (p, n) :: older) {e : F × F} (listed : e ∈ newer ++ older) :
@@ -562,9 +563,14 @@ theorem cond_ne (grown : L.GrownBy W added es cond) {p n : F} {newer older : Lis
   have pTakes : L.TakesPart W p (cond n) := (grown.takers (p, n) here p).mpr (Or.inl rfl)
   have nTakes : L.TakesPart W n (cond n) := (grown.takers (p, n) here n).mpr (Or.inr rfl)
   apply Cuts.attached_link_separates grown.attaches
-  rcases grown.link_of_takers there (same ▸ pTakes) (same ▸ nTakes) with one | link
+  rcases grown.link_of_takers there (same ▸ pTakes) (same ▸ nTakes) with one | ⟨pe, ne⟩ | ⟨pe, ne⟩
   · exact absurd one (Cuts.Attaches.distinct grown.attaches here)
-  · exact WithinClosure.of_rel (Cuts.links_of_link listed link)
+  · obtain ⟨notNewer, notOlder⟩ := Cuts.Attaches.listed_once grown.attaches
+    have again : (p, n) = e := by rw [pe, ne]
+    subst again
+    exact (Cuts.mem_append_cases listed).elim (fun later => absurd later notNewer)
+      (fun earlier => absurd earlier notOlder)
+  · exact WithinClosure.of_rel (Cuts.links_of_link listed (Or.inr ⟨pe, ne⟩))
 
 /-- **What every formation attached takes part in.** The formation `n` attached by `(p, n)` takes
 part only in its own condition, in a condition attached later, or in one in `added`. -/

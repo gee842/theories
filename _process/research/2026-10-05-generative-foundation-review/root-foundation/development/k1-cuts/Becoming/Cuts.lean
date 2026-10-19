@@ -44,8 +44,25 @@ every link it forms. Every statement holds for any relation on any type of forma
   (`Flow.withinSystem_two_takers_iff`), and a formation that takes part only in `c` is alone
   without it (`Flow.alone_beside_of_only`).
 
+* **Which conditions a world grown by attachment needs.** A world is grown by attachment
+  (`Flow.GrownBy`) where a list of entries, latest first, says how its conditions grew: the entry
+  `(p, n)` attaches the formation `n` to the earlier formation `p` by a condition exactly `p` and
+  `n` take part in, and `n` took part in no earlier condition. Its systems are the closures of the
+  listed links (`Flow.GrownBy.within_outside_added_iff`), and without one grown condition they are
+  the closures of the other links (`Flow.GrownBy.within_outside_iff`), so each grown condition is
+  attached at one place (`Flow.GrownBy.cond_ne`) and is needed: its two takers lie in one system
+  and apart without it (`Flow.GrownBy.condition_needed`, `Flow.GrownBy.every_condition_needed`,
+  from `Cuts.attached_link_separates`). The latest formation is alone without its condition
+  (`Flow.GrownBy.latest_alone`, from `Flow.alone_beside_of_only`), and what grew up to any stage
+  is grown by attachment beside the conditions attached later (`Flow.GrownBy.suffix`). With one
+  more condition exactly two formations take part in, a grown condition is bypassed, and every
+  system is what it is without it, exactly where the new condition's takers lie on its two sides
+  through the other conditions (`Flow.GrownBy.bypass_iff`, `Flow.GrownBy.cut_unchanged_iff`, from
+  `Cuts.joined_bypass_iff` and `Cuts.joined_cut_unchanged_iff`).
+
 What is not derived: which links form, which are cut, or when; how much a cut or a join takes;
-what the formations on either side do afterwards; any count of links or formations. Removing a
+what the formations on either side do afterwards; any count of links or formations; whether a
+world grew by attachment, or in which order (`Flow.GrownBy` is a hypothesis on the list). Removing a
 link that is bypassed still removes it: the relation is smaller and only its closures stay.
 -/
 
@@ -303,6 +320,73 @@ theorem joined_cut_unchanged_iff {p n a b : F} {newer older : List (F × F)}
             WithinClosure (Joined (Links (newer ++ older)) (Link a b)) f g)).trans
     ((link_cut_unchanged_iff_of_symm symmetric).trans (joined_bypass_iff grown))
 
+/-! ## Places in a list of links -/
+
+/-- A listed entry other than the one set apart is listed among the rest. -/
+theorem mem_split {e : F × F} : ∀ {newer older : List (F × F)} {e' : F × F},
+    e' ∈ newer ++ e :: older → e' = e ∨ e' ∈ newer ++ older
+  | [], _, _, .head _ => Or.inl rfl
+  | [], _, _, .tail _ listed => Or.inr listed
+  | _ :: _, _, _, .head _ => Or.inr (.head _)
+  | _ :: _, _, _, .tail _ listed => (mem_split listed).elim Or.inl (fun rest => Or.inr (.tail _ rest))
+
+/-- An entry listed among the rest stays listed with one more entry set between them. -/
+theorem mem_widen {e : F × F} : ∀ {newer older : List (F × F)} {e' : F × F},
+    e' ∈ newer ++ older → e' ∈ newer ++ e :: older
+  | [], _, _, listed => .tail _ listed
+  | _ :: _, _, _, .head _ => .head _
+  | _ :: _, _, _, .tail _ listed => .tail _ (mem_widen listed)
+
+/-- The entry set apart is listed. -/
+theorem mem_set_apart {e : F × F} : ∀ {newer older : List (F × F)}, e ∈ newer ++ e :: older
+  | [], _ => .head _
+  | _ :: _, _ => .tail _ mem_set_apart
+
+/-- An entry of two lists joined is an entry of the first or of the second. -/
+theorem mem_append_cases : ∀ {newer older : List (F × F)} {e : F × F},
+    e ∈ newer ++ older → e ∈ newer ∨ e ∈ older
+  | [], _, _, listed => Or.inr listed
+  | _ :: _, _, _, .head _ => Or.inl (.head _)
+  | _ :: _, _, _, .tail _ listed =>
+    (mem_append_cases listed).elim (fun newer => Or.inl (.tail _ newer)) Or.inr
+
+/-- An entry of the later list is an entry of the two joined. -/
+theorem mem_append_right : ∀ {newer older : List (F × F)} {e : F × F},
+    e ∈ older → e ∈ newer ++ older
+  | [], _, _, listed => listed
+  | _ :: _, _, _, listed => .tail _ (mem_append_right listed)
+
+/-- A listed entry splits the list into the entries before it and after it. -/
+theorem exists_split : ∀ {es : List (F × F)} {e : F × F}, e ∈ es → ∃ newer older, es = newer ++ e :: older
+  | _ :: older, _, .head _ => ⟨[], older, rfl⟩
+  | x :: _, _, .tail _ listed =>
+    let ⟨newer, older, split⟩ := exists_split listed
+    ⟨x :: newer, older, congrArg (x :: ·) split⟩
+
+/-- Regrouping a list split at an entry and joined to another. -/
+theorem append_cons_assoc : ∀ {front : List (F × F)} {e : F × F} {back rest : List (F × F)},
+    (front ++ e :: back) ++ rest = front ++ e :: (back ++ rest)
+  | [], _, _, _ => rfl
+  | x :: _, _, _, _ => congrArg (x :: ·) append_cons_assoc
+
+/-- A link of the listed relation is a listed link, read one way or the other. -/
+theorem links_mem : ∀ {es : List (F × F)} {g h : F}, Links es g h → ∃ e, e ∈ es ∧ Link e.1 e.2 g h
+  | [], _, _, linked => linked.elim
+  | _ :: _, _, _, linked => linked.elim
+    (fun r => let ⟨e, listed, link⟩ := links_mem r; ⟨e, .tail _ listed, link⟩)
+    (fun l => ⟨_, .head _, l⟩)
+
+/-- A listed link, read either way, is a link of the listed relation. -/
+theorem links_of_link {es : List (F × F)} {e : F × F} (listed : e ∈ es) {g h : F}
+    (link : Link e.1 e.2 g h) : Links es g h :=
+  link.elim (fun ⟨ga, hb⟩ => by subst ga; subst hb; exact links_of_mem listed)
+    (fun ⟨gb, ha⟩ => by subst gb; subst ha; exact links_symm (links_of_mem listed))
+
+/-- Each link grown by attachment joins two formations. -/
+theorem Attaches.distinct : ∀ {es : List (F × F)} {e : F × F}, Attaches es → e ∈ es → e.1 ≠ e.2
+  | _, _, .cons _ _ distinct, .head _ => distinct
+  | _, _, .cons earlier _ _, .tail _ listed => Attaches.distinct earlier listed
+
 end Cuts
 
 /-! ## Which conditions a system needs -/
@@ -400,6 +484,313 @@ theorem alone_beside_of_only {c : C} {n : F} (only : ∀ d, L.TakesPart W n d �
     fun _ => ⟨fun ⟨d, other, _, nd⟩ => other (only d nd), fun ⟨d, other, nd, _⟩ => other (only d nd)⟩
   ⟨fun _ => ⟨Cuts.within_of_unlinked unlinked, fun same => by subst same; exact WithinClosure.refl _⟩,
    fun _ other => Cuts.not_within_unlinked unlinked other⟩
+
+/-! ## Which conditions a world grown by attachment needs -/
+
+section Grown
+
+variable (L W)
+
+/-- `g` and `h` take part in a common condition outside `cut`. -/
+def SharesOutside (cut : C → Prop) (g h : F) : Prop :=
+  ∃ d, ¬ cut d ∧ L.TakesPart W g d ∧ L.TakesPart W h d
+
+/-- **A world grown by attachment.** The entries of `es` list, latest first, how the conditions
+outside `added` grew: the entry `(p, n)` attaches the formation `n` to the earlier formation `p`
+by the condition `cond n`, in which exactly `p` and `n` take part; the entries attach, each new
+formation taking part in no earlier link (`Cuts.Attaches`); every condition some formation takes
+part in is attached by an entry or lies in `added`; and no attached condition lies in `added`. -/
+structure GrownBy (added : C → Prop) (es : List (F × F)) (cond : F → C) : Prop where
+  attaches : Cuts.Attaches es
+  takers : ∀ e, e ∈ es → ∀ g, L.TakesPart W g (cond e.2) ↔ g = e.1 ∨ g = e.2
+  listed : ∀ g d, L.TakesPart W g d → added d ∨ ∃ e, e ∈ es ∧ cond e.2 = d
+  fresh : ∀ e, e ∈ es → ¬ added (cond e.2)
+
+end Grown
+
+/-- Two formations taking part in a condition exactly `a` and `b` take part in lie in one
+closure once the link between `a` and `b` is joined to any relation. -/
+theorem within_of_two_takers {R : F → F → Prop} {j : C} {a b : F}
+    (takers : ∀ g, L.TakesPart W g j ↔ g = a ∨ g = b) {x y : F}
+    (xj : L.TakesPart W x j) (yj : L.TakesPart W y j) :
+    WithinClosure (Cuts.Joined R (Cuts.Link a b)) x y :=
+  ((takers x).mp xj).elim
+    (fun xa => ((takers y).mp yj).elim
+      (fun ya => by subst xa; subst ya; exact WithinClosure.refl _)
+      (fun yb => WithinClosure.of_rel (Or.inr (Or.inl ⟨xa, yb⟩))))
+    (fun xb => ((takers y).mp yj).elim
+      (fun ya => WithinClosure.of_rel (Or.inr (Or.inr ⟨xb, ya⟩)))
+      (fun yb => by subst xb; subst yb; exact WithinClosure.refl _))
+
+namespace GrownBy
+
+variable {added : C → Prop} {es : List (F × F)} {cond : F → C}
+
+/-- Both ends of a grown link take part in the condition that attached it. -/
+theorem takes_part_of_link (grown : L.GrownBy W added es cond) {e : F × F} (listed : e ∈ es)
+    {x y : F} (link : Cuts.Link e.1 e.2 x y) :
+    L.TakesPart W x (cond e.2) ∧ L.TakesPart W y (cond e.2) :=
+  link.elim
+    (fun ⟨xa, yb⟩ =>
+      ⟨(grown.takers e listed x).mpr (Or.inl xa), (grown.takers e listed y).mpr (Or.inr yb)⟩)
+    (fun ⟨xb, ya⟩ =>
+      ⟨(grown.takers e listed x).mpr (Or.inr xb), (grown.takers e listed y).mpr (Or.inl ya)⟩)
+
+/-- Two formations taking part in a grown condition are one, or the ends of the link that
+attached it. -/
+theorem link_of_takers (grown : L.GrownBy W added es cond) {e : F × F} (listed : e ∈ es)
+    {x y : F} (xc : L.TakesPart W x (cond e.2)) (yc : L.TakesPart W y (cond e.2)) :
+    x = y ∨ Cuts.Link e.1 e.2 x y :=
+  ((grown.takers e listed x).mp xc).elim
+    (fun xa => ((grown.takers e listed y).mp yc).elim
+      (fun ya => Or.inl (xa.trans ya.symm))
+      (fun yb => Or.inr (Or.inl ⟨xa, yb⟩)))
+    (fun xb => ((grown.takers e listed y).mp yc).elim
+      (fun ya => Or.inr (Or.inr ⟨xb, ya⟩))
+      (fun yb => Or.inl (xb.trans yb.symm)))
+
+/-- **Each grown condition is attached at one place.** No entry other than `(p, n)` attaches the
+condition `cond n`: its two takers would be `p` and `n`. An entry `(p, n)` again would list it twice
+(`Cuts.Attaches.listed_once`), and an entry `(n, p)` would join what
+`Cuts.attached_link_separates` keeps apart without `(p, n)`. -/
+theorem cond_ne (grown : L.GrownBy W added es cond) {p n : F} {newer older : List (F × F)}
+    (split : es = newer ++ (p, n) :: older) {e : F × F} (listed : e ∈ newer ++ older) :
+    cond e.2 ≠ cond n := by
+  subst split
+  intro same
+  have here : (p, n) ∈ newer ++ (p, n) :: older := Cuts.mem_set_apart
+  have there : e ∈ newer ++ (p, n) :: older := Cuts.mem_widen listed
+  have pTakes : L.TakesPart W p (cond n) := (grown.takers (p, n) here p).mpr (Or.inl rfl)
+  have nTakes : L.TakesPart W n (cond n) := (grown.takers (p, n) here n).mpr (Or.inr rfl)
+  apply Cuts.attached_link_separates grown.attaches
+  rcases grown.link_of_takers there (same ▸ pTakes) (same ▸ nTakes) with one | ⟨pe, ne⟩ | ⟨pe, ne⟩
+  · exact absurd one (Cuts.Attaches.distinct grown.attaches here)
+  · obtain ⟨notNewer, notOlder⟩ := Cuts.Attaches.listed_once grown.attaches
+    have again : (p, n) = e := by rw [pe, ne]
+    subst again
+    exact (Cuts.mem_append_cases listed).elim (fun later => absurd later notNewer)
+      (fun earlier => absurd earlier notOlder)
+  · exact WithinClosure.of_rel (Cuts.links_of_link listed (Or.inr ⟨pe, ne⟩))
+
+/-- **What every formation attached takes part in.** The formation `n` attached by `(p, n)` takes
+part only in its own condition, in a condition attached later, or in one in `added`. -/
+theorem attached_only (grown : L.GrownBy W added es cond) {p n : F} {newer older : List (F × F)}
+    (split : es = newer ++ (p, n) :: older) {d : C} (takes : L.TakesPart W n d) :
+    added d ∨ d = cond n ∨ ∃ e, e ∈ newer ∧ cond e.2 = d := by
+  rcases grown.listed n d takes with extra | ⟨e, listed, attached⟩
+  · exact Or.inl extra
+  · subst attached
+    subst split
+    rcases Cuts.mem_split listed with here | rest
+    · subst here
+      exact Or.inr (Or.inl rfl)
+    · rcases Cuts.mem_append_cases rest with later | earlier
+      · exact Or.inr (Or.inr ⟨e, later, rfl⟩)
+      · have stage : Cuts.Attaches ((p, n) :: older) := Cuts.Attaches.suffix grown.attaches
+        cases stage with
+        | cons _ unlinked _ =>
+          rcases (grown.takers e listed n).mp takes with first | second
+          · exact absurd (first ▸ Cuts.links_of_mem earlier) (unlinked e.2).2
+          · exact absurd (second ▸ Cuts.links_of_mem earlier) (unlinked e.1).1
+
+/-- Sharing a condition outside `added` and outside the one `(p, n)` attached is sharing a link
+grown without `(p, n)`, up to closure. -/
+theorem outside_step (grown : L.GrownBy W added es cond) {p n : F} {newer older : List (F × F)}
+    (split : es = newer ++ (p, n) :: older) {x y : F}
+    (shared : L.SharesOutside W (fun d => d = cond n ∨ added d) x y) :
+    WithinClosure (Cuts.Links (newer ++ older)) x y := by
+  obtain ⟨d, outside, xd, yd⟩ := shared
+  rcases grown.listed x d xd with extra | ⟨e, listed, attached⟩
+  · exact absurd (Or.inr extra) outside
+  · subst attached
+    have apart : e ∈ newer ++ (p, n) :: older := split ▸ listed
+    rcases Cuts.mem_split apart with here | rest
+    · subst here
+      exact absurd (Or.inl rfl) outside
+    · rcases grown.link_of_takers listed xd yd with one | link
+      · subst one
+        exact WithinClosure.refl _
+      · exact WithinClosure.of_rel (Cuts.links_of_link rest link)
+
+/-- A link grown without `(p, n)` is a condition shared outside `added` and outside the one
+`(p, n)` attached. -/
+theorem outside_of_link (grown : L.GrownBy W added es cond) {p n : F} {newer older : List (F × F)}
+    (split : es = newer ++ (p, n) :: older) {x y : F} (linked : Cuts.Links (newer ++ older) x y) :
+    L.SharesOutside W (fun d => d = cond n ∨ added d) x y := by
+  obtain ⟨e, listed, link⟩ := Cuts.links_mem linked
+  have there : e ∈ es := split ▸ Cuts.mem_widen listed
+  have takes := grown.takes_part_of_link there link
+  exact ⟨cond e.2, fun cut => cut.elim (grown.cond_ne split listed) (grown.fresh e there),
+    takes.1, takes.2⟩
+
+/-- **The systems without a grown condition are the closures of the links grown without it.**
+Beside `added`, sharing a condition other than the one `(p, n)` attached has the closures of the
+listed links other than `(p, n)`. -/
+theorem within_outside_iff (grown : L.GrownBy W added es cond) {p n : F}
+    {newer older : List (F × F)} (split : es = newer ++ (p, n) :: older) {f g : F} :
+    WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ added d)) f g ↔
+      WithinClosure (Cuts.Links (newer ++ older)) f g :=
+  ⟨Cuts.within_of_steps (fun _ _ shared => grown.outside_step split shared),
+   WithinClosure.mono (fun _ _ linked => grown.outside_of_link split linked)⟩
+
+/-- **The systems of a grown world are the closures of its links.** Beside `added`, sharing a
+condition has the closures of the listed links. -/
+theorem within_outside_added_iff (grown : L.GrownBy W added es cond) {f g : F} :
+    WithinClosure (L.SharesOutside W added) f g ↔ WithinClosure (Cuts.Links es) f g :=
+  ⟨Cuts.within_of_steps (fun x y ⟨d, outside, xd, yd⟩ =>
+      (grown.listed x d xd).elim (fun extra => absurd extra outside) fun ⟨e, listed, attached⟩ => by
+        subst attached
+        rcases grown.link_of_takers listed xd yd with one | link
+        · subst one
+          exact WithinClosure.refl _
+        · exact WithinClosure.of_rel (Cuts.links_of_link listed link)),
+   WithinClosure.mono (fun _ _ linked =>
+      let ⟨e, listed, link⟩ := Cuts.links_mem linked
+      let takes := grown.takes_part_of_link listed link
+      ⟨cond e.2, grown.fresh e listed, takes.1, takes.2⟩)⟩
+
+/-- **In a world grown by attachment, every grown condition is needed.** The two formations taking
+part in the condition that attached `n` to `p` lie in one system, and without that condition they
+lie apart (`Cuts.attached_link_separates`). -/
+theorem condition_needed (grown : L.GrownBy W (fun _ => False) es cond) {p n : F}
+    {newer older : List (F × F)} (split : es = newer ++ (p, n) :: older) :
+    L.WithinSystem W p n ∧ ¬ WithinClosure (L.SharesBeside W (cond n)) p n := by
+  have here : (p, n) ∈ es := split ▸ Cuts.mem_set_apart
+  have attaches : Cuts.Attaches (newer ++ (p, n) :: older) := split ▸ grown.attaches
+  refine ⟨WithinClosure.of_rel ⟨cond n, (grown.takers (p, n) here p).mpr (Or.inl rfl),
+    (grown.takers (p, n) here n).mpr (Or.inr rfl)⟩, fun within => ?_⟩
+  have outside : WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ False)) p n :=
+    WithinClosure.mono (fun _ _ ⟨d, other, gd, hd⟩ => ⟨d, fun cut => cut.elim other id, gd, hd⟩)
+      within
+  exact Cuts.attached_link_separates attaches ((grown.within_outside_iff split).mp outside)
+
+/-- **Every condition of a world grown by attachment is needed by the systems.** Where every
+condition some formation takes part in was attached, no system is what it is without any of
+them (the left side of `Flow.system_unchanged_without_iff` fails for each). -/
+theorem every_condition_needed (grown : L.GrownBy W (fun _ => False) es cond) {g : F} {d : C}
+    (takes : L.TakesPart W g d) :
+    ¬ ∀ f h, L.WithinSystem W f h ↔ WithinClosure (L.SharesBeside W d) f h := by
+  rcases grown.listed g d takes with none | ⟨⟨p, n⟩, listed, attached⟩
+  · exact none.elim
+  · subst attached
+    obtain ⟨newer, older, split⟩ := Cuts.exists_split listed
+    exact fun same =>
+      (grown.condition_needed split).2 ((same p n).mp (grown.condition_needed split).1)
+
+/-- **The latest formation is alone without its condition.** In a world grown by attachment, the
+formation attached last takes part only in the condition that attached it, so through the other
+conditions it reaches only itself and nothing else reaches it (`Flow.alone_beside_of_only`). -/
+theorem latest_alone {p n : F} {older : List (F × F)}
+    (grown : L.GrownBy W (fun _ => False) ((p, n) :: older) cond) :
+    (∀ g, WithinClosure (L.SharesBeside W (cond n)) n g ↔ g = n) ∧
+      ∀ f, f ≠ n → ¬ WithinClosure (L.SharesBeside W (cond n)) f n :=
+  alone_beside_of_only fun _ takes =>
+    (grown.attached_only (newer := []) rfl takes).elim False.elim
+      fun rest => rest.elim id fun ⟨_, nothing, _⟩ => nomatch nothing
+
+/-- **What grew up to any stage is grown by attachment**, beside the conditions attached later
+(`Cuts.Attaches.suffix`). -/
+theorem suffix {newer older : List (F × F)} (grown : L.GrownBy W added (newer ++ older) cond) :
+    L.GrownBy W (fun d => added d ∨ ∃ e, e ∈ newer ∧ cond e.2 = d) older cond := by
+  refine ⟨Cuts.Attaches.suffix grown.attaches,
+    fun e listed => grown.takers e (Cuts.mem_append_right listed),
+    fun g d takes => (grown.listed g d takes).elim (fun extra => Or.inl (Or.inl extra))
+      fun ⟨e, listed, attached⟩ => (Cuts.mem_append_cases listed).elim
+        (fun later => Or.inl (Or.inr ⟨e, later, attached⟩)) (fun earlier => Or.inr ⟨e, earlier, attached⟩),
+    fun e listed extra => ?_⟩
+  rcases extra with extra | ⟨⟨q, m⟩, later, same⟩
+  · exact grown.fresh e (Cuts.mem_append_right listed) extra
+  · obtain ⟨front, back, split⟩ := Cuts.exists_split later
+    subst split
+    exact grown.cond_ne Cuts.append_cons_assoc
+      (Cuts.mem_append_right (Cuts.mem_append_right listed)) same.symm
+
+variable [DecidableEq C] {j : C} {a b : F}
+
+/-- With one more condition `j` exactly `a` and `b` take part in, sharing a condition other than
+the one `(p, n)` attached is, up to closure, a link grown without `(p, n)` or the link between `a`
+and `b`. -/
+theorem beside_iff (grown : L.GrownBy W (fun d => d = j) es cond)
+    (takers : ∀ g, L.TakesPart W g j ↔ g = a ∨ g = b) {p n : F} {newer older : List (F × F)}
+    (split : es = newer ++ (p, n) :: older) {f g : F} :
+    WithinClosure (L.SharesBeside W (cond n)) f g ↔
+      WithinClosure (Cuts.Joined (Cuts.Links (newer ++ older)) (Cuts.Link a b)) f g := by
+  have here : (p, n) ∈ es := split ▸ Cuts.mem_set_apart
+  refine ⟨Cuts.within_of_steps fun x y shared => ?_, WithinClosure.mono fun x y joined => ?_⟩
+  · obtain ⟨d, other, xd, yd⟩ := shared
+    exact if dj : d = j then within_of_two_takers takers (dj ▸ xd) (dj ▸ yd)
+      else WithinClosure.mono (fun _ _ r => Or.inl r)
+        (grown.outside_step split ⟨d, fun cut => cut.elim other dj, xd, yd⟩)
+  · rcases joined with linked | link
+    · obtain ⟨d, outside, xd, yd⟩ := grown.outside_of_link split linked
+      exact ⟨d, fun same => outside (Or.inl same), xd, yd⟩
+    · refine ⟨j, fun same => grown.fresh (p, n) here same.symm, ?_⟩
+      exact link.elim (fun ⟨xa, yb⟩ => ⟨(takers x).mpr (Or.inl xa), (takers y).mpr (Or.inr yb)⟩)
+        (fun ⟨xb, ya⟩ => ⟨(takers x).mpr (Or.inr xb), (takers y).mpr (Or.inl ya)⟩)
+
+/-- With one more condition `j` exactly `a` and `b` take part in, the systems of a grown world are
+the closures of its links with the link between `a` and `b` joined. -/
+theorem system_iff (grown : L.GrownBy W (fun d => d = j) es cond)
+    (takers : ∀ g, L.TakesPart W g j ↔ g = a ∨ g = b) {f g : F} :
+    L.WithinSystem W f g ↔ WithinClosure (Cuts.Joined (Cuts.Links es) (Cuts.Link a b)) f g := by
+  refine ⟨Cuts.within_of_steps fun x y shared => ?_, WithinClosure.mono fun x y joined => ?_⟩
+  · obtain ⟨d, xd, yd⟩ := shared
+    exact if dj : d = j then within_of_two_takers takers (dj ▸ xd) (dj ▸ yd)
+      else WithinClosure.mono (fun _ _ r => Or.inl r)
+        ((grown.within_outside_added_iff).mp (WithinClosure.of_rel ⟨d, dj, xd, yd⟩))
+  · rcases joined with linked | link
+    · obtain ⟨e, listed, link⟩ := Cuts.links_mem linked
+      have takes := grown.takes_part_of_link listed link
+      exact ⟨cond e.2, takes.1, takes.2⟩
+    · exact ⟨j, link.elim (fun ⟨xa, yb⟩ => ⟨(takers x).mpr (Or.inl xa), (takers y).mpr (Or.inr yb)⟩)
+        (fun ⟨xb, ya⟩ => ⟨(takers x).mpr (Or.inr xb), (takers y).mpr (Or.inl ya)⟩)⟩
+
+/-- **After one more condition, a grown condition is bypassed exactly where the new one crosses
+it.** In a world grown by attachment with one more condition `j` exactly `a` and `b` take part in,
+the takers `p` and `n` of the condition that attached `n` lie in one system through the other
+conditions exactly where `a` and `b` lie on its two sides: one with `p`, the other with `n`,
+through the conditions other than `cond n` and `j` (`Cuts.joined_bypass_iff`). -/
+theorem bypass_iff (grown : L.GrownBy W (fun d => d = j) es cond)
+    (takers : ∀ g, L.TakesPart W g j ↔ g = a ∨ g = b) {p n : F} {newer older : List (F × F)}
+    (split : es = newer ++ (p, n) :: older) :
+    WithinClosure (L.SharesBeside W (cond n)) p n ↔
+      (WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) p a ∧
+          WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) b n) ∨
+        (WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) p b ∧
+          WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) a n) := by
+  have attaches : Cuts.Attaches (newer ++ (p, n) :: older) := split ▸ grown.attaches
+  exact (grown.beside_iff takers split).trans ((Cuts.joined_bypass_iff attaches).trans
+    (or_congr (and_congr (grown.within_outside_iff split).symm (grown.within_outside_iff split).symm)
+      (and_congr (grown.within_outside_iff split).symm (grown.within_outside_iff split).symm)))
+
+/-- **After one more condition, a grown condition stops being needed exactly where the new one
+crosses it.** Every system is what it is without the condition that attached `n` to `p` exactly
+where the takers of `j` lie on its two sides (`Cuts.joined_cut_unchanged_iff`). -/
+theorem cut_unchanged_iff (grown : L.GrownBy W (fun d => d = j) es cond)
+    (takers : ∀ g, L.TakesPart W g j ↔ g = a ∨ g = b) {p n : F} {newer older : List (F × F)}
+    (split : es = newer ++ (p, n) :: older) :
+    (∀ f g, L.WithinSystem W f g ↔ WithinClosure (L.SharesBeside W (cond n)) f g) ↔
+      (WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) p a ∧
+          WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) b n) ∨
+        (WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) p b ∧
+          WithinClosure (L.SharesOutside W (fun d => d = cond n ∨ d = j)) a n) := by
+  have attaches : Cuts.Attaches (newer ++ (p, n) :: older) := split ▸ grown.attaches
+  have system : ∀ f g, L.WithinSystem W f g ↔
+      WithinClosure (Cuts.Joined (Cuts.Links (newer ++ (p, n) :: older)) (Cuts.Link a b)) f g :=
+    fun _ _ => split ▸ grown.system_iff takers
+  have beside : ∀ f g, WithinClosure (L.SharesBeside W (cond n)) f g ↔
+      WithinClosure (Cuts.Joined (Cuts.Links (newer ++ older)) (Cuts.Link a b)) f g :=
+    fun _ _ => grown.beside_iff takers split
+  exact (⟨fun same f g => ((system f g).symm.trans (same f g)).trans (beside f g),
+      fun same f g => ((system f g).trans (same f g)).trans (beside f g).symm⟩ :
+        (∀ f g, L.WithinSystem W f g ↔ WithinClosure (L.SharesBeside W (cond n)) f g) ↔
+          ∀ f g, WithinClosure (Cuts.Joined (Cuts.Links (newer ++ (p, n) :: older)) (Cuts.Link a b)) f g ↔
+            WithinClosure (Cuts.Joined (Cuts.Links (newer ++ older)) (Cuts.Link a b)) f g).trans
+    ((Cuts.joined_cut_unchanged_iff attaches).trans
+      (or_congr (and_congr (grown.within_outside_iff split).symm (grown.within_outside_iff split).symm)
+        (and_congr (grown.within_outside_iff split).symm (grown.within_outside_iff split).symm)))
+
+end GrownBy
 
 end Flow
 
