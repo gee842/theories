@@ -22,14 +22,14 @@ beyond the hypotheses each statement names.
   `Clearing` every system is the whole while the dweller lies beyond the clearer's influence closure
   (`Clearing.shares_not_mutual`); in `Drawing`, a balanced pair each taking from the condition the
   other depends on and nothing given, each can affect the other and neither feeds the other
-  (`Drawing.mutual_not_fed`). `Overshoot` is mutually fed (`Overshoot.mutuallyFed`).
+  (`Drawing.mutual_not_fed`). `Overshoot` is mutually fed (`Overshoot.closure_whole`).
 * **Mutual dependence read both ways.** `g` lies within `f`'s influence closure exactly where `f`
-  lies within `g`'s reach closure (`Flow.withinInfluence_iff_withinReach`, an instance of
+  lies within `g`'s reach closure (`WithinClosure.converse`, an instance of
   `WithinClosure.converse` of `Becoming.Response`), so a flow is mutually dependent exactly where every reach closure is the
   whole (`Flow.mutuallyDependent_iff_reach`): what each can affect and what can affect each are both
   everything: whatever a formation affects can, at some remove, affect it back. One condition that every formation depends on and
   exchanges with makes a flow mutually dependent (`Flow.mutuallyDependent_of_common`), and one that
-  every formation requires and gives to at a step makes it mutually fed (`Flow.mutuallyFed_of_common`).
+  every formation requires and gives to at a step makes it mutually fed (`Flow.feeding_whole_of_common`).
 * **Each reading makes its bounded significance the continuation condition.** Significance bounded
   by each center's system, influence closure or feeding closure is the continuation condition
   wherever the flow shares conditions throughout, is mutually dependent or is mutually fed

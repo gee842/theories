@@ -31,7 +31,7 @@ unfolding's courses and not of a separate model.
   (`run_history`), so a start below level `n` of a drained family leaves the guard within `n`
   steps on every run (`Drains.leaves_run`, `exhausts_run`). A determined law never reaches a
   target from a start exactly when no configuration its process reaches is in the target
-  (`reach_iff_orbit`), so exactly when a closed set holding the start avoids it
+  (`Branching.law_reach_iff`), so exactly when a closed set holding the start avoids it
   (`avoids_iff_closed_reach`, `some_avoids_iff_reach`, `fixed_avoids_reach`); what a funnel or
   every basin holds at level `n` meets the target within `n` steps on every run
   (`Funnel.runs`, `basin_runs`), and for a determined law a course of at most `n` steps reaches
@@ -74,11 +74,11 @@ unfolding's courses and not of a separate model.
 * **Readout.** What a reduction keeps of a run is a run of the law read through it
   (`reducedRun`): no map of reduced runs restores two runs it merges (`runs_no_restore`), an
   observable of two runs is decoded from their merged reduced runs exactly where it agrees on them
-  (`runs_decoder_pair_iff`), and a judge reads an observable through a run's reduced run exactly
+  (`Readout.decoder_pair_iff`), and a judge reads an observable through a run's reduced run exactly
   when the observable goes alike at the dates the reduction merges (`run_judges_iff`,
   `no_run_judge_of_merged`). Two steps of a web agree under every reading through its conditions
-  exactly where every condition stands at the same level (`steps_agree_iff_levels`,
-  `supplied_agree_iff_levels`).
+  exactly where every condition stands at the same level (`Readout.agree_iff_parts`,
+  `Readout.supplied_agree_iff_parts`).
 * **Fallible witnesses.** The values a map takes along a run at listed dates are fallible witnesses: where
   two fault sets leave a common faithful date, no run of any process is explained by two answers
   under them (`run_reports_apart`); over the courses in which every change is admitted, no course
@@ -88,13 +88,13 @@ unfolding's courses and not of a separate model.
   another's exactly where the second is realized wherever the first is
   (`claims_every_weighting_iff`), and fulfillment gives a floor of chance (`claims_floor`). Every
   selection of the formations drawing on a web's condition is within its standing exactly when
-  all of them together are (`selections_within_iff`), while each formation supported does not put
+  all of them together are (`every_event_within_iff`), while each formation supported does not put
   them together within it (`supported_not_together`). Around a loop of one configuration and two
   moves, the courses of `n` moves are `2 ^ n` (`loop_courses_double`).
 * **Feedback.** A region is a formation's system, the closure under sharing a condition, exactly
   when it holds the formation, is closed under sharing and lies within the system
-  (`system_iff_certified`); certified regions apart are systems apart
-  (`not_within_system_of_closed`).
+  (`closure_iff_certified`); certified regions apart are systems apart
+  (`not_within_of_closed`).
 * **Separation.** Along every course of a determined law (`reachedFrom`), parts moved each by
   itself stay unrelated (`courses_keep_unrelated`), and a relation persists where neither move
   merges (`relation_persists_courses`); a course of copying relates the parts
@@ -104,7 +104,7 @@ unfolding's courses and not of a separate model.
   extension weakly decided, some configuration is extended by no member
   (`extension_frontier_exists`); with extension and a task decided, every configuration no member
   extends performs the task exactly when every member lacking it is extended by some member
-  (`extension_frontier_has_iff`).
+  (`undominated_has_iff`).
 * **One notion, one definition.** The process in which every change is admitted is free branching
   of `Becoming.Parting` (`anyChange_eq_free`, by definition), and the lists without repetition of
   `Becoming.CrossSituational` are those of `Becoming.Population` on every list in `Type`

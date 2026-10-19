@@ -8,7 +8,7 @@ admits and the reports they give, for every roster, and reads them as a process 
 the computed situations of four or five witnesses. Here the process is stated for every roster,
 fault sets and answers: a transcript of reports steps a list of candidate models to the models it
 leaves compatible (`inspection`); an answer to a test steps it to the models agreeing with the
-answer (`testing`). The audit's candidates move by `inspection` (`audit_step_inspection`) and the
+answer (`testing`). The audit's candidates move by `inspection` (`WitnessRefinement.step_candidates`) and the
 inquiry's by `testing` (`inquiry_step_testing`), so every law below holds of those processes too.
 The certificate of a state is taken over the pool of the fault sets its candidates admit.
 

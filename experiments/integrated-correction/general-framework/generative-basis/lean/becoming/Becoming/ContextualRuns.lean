@@ -23,15 +23,15 @@ sense of `Becoming.Gluing`; and the readings a run passes through, as a whole of
   (`square_run_le`), and `n` of the `n + 1` relations of a cycle holding an odd number of differ
   relations (`cycle_run_le`).
 * **Readings in context meet every context, at every step.** The CHSH outcomes read in their pair
-  win all four pairs at every step of every run (`chsh_in_context`), the square's values read in
-  their line meet all six lines (`square_in_context`), and Specker's openings each showing the gem
-  in its first box meet all three (`specker_in_context`); so these worlds of readings are
+  win all four pairs at every step of every run (`CHSH.indexed_met`), the square's values read in
+  their line meet all six lines (`Square.indexed_met`), and Specker's openings each showing the gem
+  in its first box meet all three (`Specker.indexed_met`); so these worlds of readings are
   context-free at no step (`chsh_in_context_not_free`, `square_in_context_not_free`,
   `specker_not_free`).
 * **Respecting the possibilities, never context-free.** Every contextual system of Specker's boxes or
   of the square respecting the possibilities at a step of a run is context-free there at no step
   (`specker_respecting_not_free`, `square_respecting_not_free`), from the parity contradiction of
-  each (`Specker.noGlobal_of_contradiction`, `Square.noGlobal_of_contradiction`). For every parity
+  each (`Specker.noGlobal`, `Square.noGlobal`). For every parity
   system with its claims listed without repetition and its contexts listed, no contextual system
   respecting the contexts' possibilities at a step of a run is context-free there exactly where a
   selection of contexts contradicts (`noGlobal_run_iff`). Some context-free description of a run

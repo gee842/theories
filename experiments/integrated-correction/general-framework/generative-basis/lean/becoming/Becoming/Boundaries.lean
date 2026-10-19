@@ -775,7 +775,7 @@ section Drawn
 
 variable (L : Flow F C) (W : Web F C)
 
-/-! ## The scope of “within the self”, along affecting -/
+/-! ### The scope of “within the self”, along affecting -/
 
 /-- **Along affecting, “everything within the self has the property” is super-true exactly when
 everything has it.** -/
@@ -800,7 +800,7 @@ theorem reach_scopes (f : F) (sig : Pos → Nat → F → Prop) (p : Pos) :
       (SuperTrue (Boundary (L.Affects W) f) (SignificantWithin sig p) ↔ ∀ t g, sig p t g) :=
   presupposition_scopes (L.Affects W) f sig p
 
-/-! ## Super-truth, whatever the flow's relation -/
+/-! ### Super-truth, whatever the flow's relation -/
 
 /-- **The continuation condition is the presupposition held however each self's boundary is drawn
 along affecting.** -/
@@ -815,7 +815,7 @@ theorem superTrue_level_free (f : F) (sig : Pos → Nat → F → Prop) (p : Pos
       SuperTrue (Boundary (L.Shares W) f) (SignificantWithin sig p) :=
   Becoming.superTrue_level_free (L.FedFrom W) (L.Shares W) f sig p
 
-/-! ## The step, along affecting -/
+/-! ### The step, along affecting -/
 
 /-- **Along affecting, invariance is extension to the whole**: holding as the boundary is drawn
 anywhere along affecting, the presupposition holds as it is drawn at the whole. -/
@@ -831,7 +831,7 @@ section Related
 
 variable {L : Flow F C} {W : Web F C}
 
-/-! ## The center's own continuation -/
+/-! ### The center's own continuation -/
 
 /-- **The presupposition drawn along affecting gives the center's own continuation significance.**
 -/
@@ -841,7 +841,7 @@ theorem own_continuation {f : F} {sig : Pos → Nat → F → Prop} {p : Pos}
   subTrue_empty_iff.mp (subTrue_of_larger (rel := fun _ _ => False) (fun _ _ no => no.elim)
     presupposed)
 
-/-! ## Where the system is the whole -/
+/-! ### Where the system is the whole -/
 
 /-- **Under a common condition the whole is the only boundary drawn along sharing.** Where every
 formation takes part in one condition, every boundary of a self along sharing a condition holds
@@ -861,7 +861,7 @@ theorem shares_iff_total_of_common {c : C} (common : ∀ g, L.TakesPart W g c) {
      subTrue_significantWithin_iff.mp sub t g (Flow.system_whole_of_common common f g),
    (Flow.presupposition_order (L := L) (W := W)).1⟩
 
-/-! ## The step from the presupposition -/
+/-! ### The step from the presupposition -/
 
 /-- **Invariant along affecting, the presupposition holds nowhere where some continuation lacks
 significance.** -/
@@ -897,7 +897,7 @@ theorem significant_of_presupposed {Q : Type} {V : Valuation Pos Q} {center : Po
 
 end Related
 
-/-! ## The whole as region -/
+/-! ### The whole as region -/
 
 /-- **Under significance bounded by the whole, retaining is inclusion**: along a web, `l` retains
 what has significance along `l'` from any standpoint exactly when it includes what `l'` admits. -/
@@ -942,7 +942,7 @@ Declarations moved here unchanged, with their names, from `Becoming.Readings` (b
 the sections so headed.
 -/
 
-/-! ## The presupposition as a dichotomy (moved from `Becoming.Readings`) -/
+/-! ### The presupposition as a dichotomy (moved from `Becoming.Readings`) -/
 
 namespace Becoming
 

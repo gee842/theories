@@ -18,7 +18,7 @@ states those laws of a web's activity and proves them through the general laws.
   after a step with those that ceased across it are those active before with those that arose
   (`across`); over any stretch the ceasings are at most the arisings with those active at the
   start, and the arisings at most the ceasings with those active at the end (`ceasings_within`,
-  `arisings_within`). Where at most `B t` are active at each step and the arisings over some
+  `Listed.comings_within`). Where at most `B t` are active at each step and the arisings over some
   stretch from every step outnumber the bound at its end, ceasing recurs (`ceasing_of_outpacing`).
 * **A finite family of formations, with no census.** Over any stretch, the arisings and ceasings of
   the members of a finite list differ by at most its length (`keep_pace`); a formation active at a

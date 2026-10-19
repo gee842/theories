@@ -15,7 +15,7 @@ each, and what keeping one formation's activity under every course says about th
   where no course leaves any of them (`kernel_allOf_iff`).
 * **Along some course, they do not.** A guard is keepable from `s` where some run from `s` stays
   within it (`Keepable`); within finitely many configurations a family that keeps moving is
-  keepable from each member (`Keepable.of_keepsMoving`, from `Onward.KeepsMoving.run`).
+  keepable from each member (`Onward.KeepsMoving.run`, from `Onward.KeepsMoving.run`).
   Keepable together gives keepable each (`Keepable.left`, `Keepable.right`, `Keepable.each`);
   the converse fails: in `ChoicePoint`, where a move chooses between two continuations, each of
   two guards is keepable from the start and the two together are not

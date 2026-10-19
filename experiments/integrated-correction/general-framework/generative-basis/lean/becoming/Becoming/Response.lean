@@ -27,7 +27,7 @@ premise each law names.
   of P42 (`Flow.withinResponse_of_reaches`, `Flow.withinResponse_of_withinReach`); where coupling
   is by threshold only, with one flow, it is the union of the members' reach closures
   (`Flow.withinResponse_thresholdOnly_iff`). The reach closure is the converse of the influence
-  closure (`Flow.withinReach_iff_withinInfluence`).
+  closure (`WithinClosure.converse`).
 * **Responding through the couplings.** The rest responds through its couplings when each
   formation outside the part exchanges alike in the two flows across every step up to which the
   flows have been alike through its couplings (`Flow.RespondsThroughCoupling`). It is a supplied

@@ -39,7 +39,7 @@ many formations are active at each step, and ties the flow's count to the web's.
   under a continuation. A census is
   the listing of activity: the formations active at the end with those that ceased are
   those active at the start with those that arose (`Web.Census.over_stretch`), ceasing
-  recurring needs arising recurring (`Web.arising_of_ceasing`), and under a census
+  recurring needs arising recurring (`Listed.coming_of_ceasing`), and under a census
   bounded from some step on arising recurs exactly when ceasing recurs
   (`Web.unceasing_iff_bounded`). Read of dependence, forming and dissolving obey the
   same balance and laws (`Web.DependenceCensus.over_stretch`,

@@ -32,7 +32,7 @@ holds for every weighting and listing it names.
   step (`Weights.lumped_iff`), the weighted form of `carries_law_iff`; where it does not, the
   description carries no weighted law (`Lumping.loses`).
 * **The losses, each a theorem.**
-  - *Truncation.* What a truncation misses is exactly the part left out (`Weights.truncation`);
+  - *Truncation.* What a truncation misses is exactly the part left out (`Weights.sum_append`);
     where alternatives only add, a truncation bounds the whole from below
     (`counting_truncation_le`).
   - *Cancellation.* With signed counts (`signed`), courses that are each possible can balance

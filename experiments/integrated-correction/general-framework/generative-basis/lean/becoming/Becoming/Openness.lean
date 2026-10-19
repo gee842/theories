@@ -43,7 +43,7 @@ giving needs uptake there; a fall is taken from.
   balanced, dissipative and enclosed at every step.
 * **Ceasing needs arising.** In a world with a census whose activity is decided, ceasing
   recurs only where arising recurs (`World.arising_of_ceasing`, from
-  `Web.arising_of_ceasing`). Not conversely: `accretion` has a census and arises without end
+  `Listed.coming_of_ceasing`). Not conversely: `accretion` has a census and arises without end
   while nothing ceases; `attrition` keeps ceasing while nothing arises, so it has no census
   (`World.census_one_way`).
 * **A bounded count keeps them together.** Where at most `B` relata are active at each
@@ -133,15 +133,13 @@ no embodiment; the rest theorem uses it only for what arises, turning arising in
 rising, and reaches ceasing through a list covering what is active. Decidedness of activity
 is not a commitment of the representation: it is the condition of the laws that find a step
 where without it a step is only not refuted, the census law, the bounded laws and
-`World.few_active`. No ethical predicate,
+`Listed.few_of_quiet`. No ethical predicate,
 ranking or axiom occurs.
 -/
 
 namespace Becoming
 
 variable {α : Type} {F C : Type}
-
-/-! ## Lists -/
 
 /-! ## Total standing -/
 

@@ -63,7 +63,7 @@ states Capture's rule region as an instance of P67's absorbing regions.
   necessarily drawn never returns (`NecessarilyDrawnInto.not_returns`), and what does not return
   is necessarily drawn into what lies ahead of it at the first step
   (`necessarilyDrawnInto_ahead`). Possibly drawn is losing oneself on some course
-  (`possiblyDrawn_iff`), locked in along that course (`PossiblyDrawnInto.never_back`); a
+  (`possiblyDrawn_iff`), locked in along that course (`Invariant.locks_out`); a
   configuration possibly drawn may return on another course: `OneWay`'s `false` is possibly
   drawn into `{true}`, not necessarily, and returns (`OneWay.possibly_not_necessarily`). Under a
   determined process the moves decide whether a run is drawn in (`Determined.moves_decide`,
@@ -1261,7 +1261,7 @@ namespace RecurrenceRuns
 
 variable {S : Type u} {next : S → S}
 
-/-! ## Within finitely many configurations -/
+/-! ### Within finitely many configurations -/
 
 /-- **Within finitely many configurations, the process of a determined law merges nothing exactly
 where every configuration returns.** -/
@@ -1279,7 +1279,7 @@ theorem merges_loses (merges : Branching.Merges (Law.process next)) {all : List 
   fun reach => Law.Merges.loses (Branching.law_merges_iff.mp merges) every
     (fun s => Branching.law_reachable_iff.mp (reach s))
 
-/-! ## The history kept -/
+/-! ### The history kept -/
 
 /-- **Keeping its history, the process of every law merges nothing.** -/
 theorem kept_lossless (next : S → S) :

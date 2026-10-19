@@ -20,7 +20,7 @@ and across a list of steps the counts at each step sum (`CountsAcross`).
   proposition exactly where the proposition is decided (`indicates_iff_decided`), and a count of
   a list exists exactly where each member is decided (`counts_iff_decided`). A count is one
   number (`Counts.unique`), and where a procedure decides, its marks are the count
-  (`counts_total`, `comings_counts`, `ceasings_counts`). So the yes or no is needed only at what
+  (`counts_total`, `counts_total`, `counts_total`). So the yes or no is needed only at what
   is counted, and only for the count to exist.
 * **Counts obey the census with no premise.** Over a stretch, wherever the counts exist, the
   members holding at the end with those that ceased across it are those holding at the start

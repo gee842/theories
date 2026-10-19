@@ -44,7 +44,7 @@ prefixes, the second step is Markov's principle (`Becoming.refutable_passes_iff_
 
 **The hull.** The ideals all of whose stretches are stretches of a class's ideals (`Hull`) are a
 closed class that holds the class, lies below every closed class holding it and has the class's
-content (`hull_closed`, `hull_contains`, `hull_least`, `hull_content`); a closed class with the
+content (`hull_closed`, `Ideals.AdheresBy.of`, `hull_least`, `hull_content`); a closed class with the
 first three properties holds exactly the hull's ideals (`hull_unique`). Any two stretches of an
 ideal of the hull are extended by one stretch of an ideal of the class (`hull_joint`).
 

@@ -78,9 +78,9 @@ decidedness and `Becoming.Imbalance` for balance: nothing is adopted, and no oth
   (`World.probe_named_apart`).
 * **What takes part in a step, counted.** Read on a flow's steps: what takes part in a step can
   be listed once, and has a number, exactly where identity among it is decided
-  (`Flow.present_listsOnce_iff`, `Flow.present_numbers_iff`); the number is one, at most the
+  (`listsOnce_iff_decided`, `numbers_iff_decided`); the number is one, at most the
   places in the step's list, and counted by name is counted up to identity of names
-  (`Flow.present_number_unique`, `Flow.present_number_le`, `Flow.present_numbers_iff_by_eq`); a
+  (`Numbers.unique`, `Numbers.le_length`, `numbers_iff_numbersBy_eq`); a
   step listing one relatum twice numbers one relatum in two places (`Flow.present_repeated`); and
   every flow on a type lists what takes part in each step once exactly where identity on the type
   is decided (`Flow.present_listsOnce_all_iff`).
@@ -1045,9 +1045,9 @@ their relations, and proves them through them.
   with what ceased is the list at the start with what arose (`listed_over_stretch`). Over any
   stretch, wherever a listed family's arisings and ceasings are counted, they differ by at most
   its members (`keep_pace`). Where a procedure decides activity, its marks count what arises and
-  what ceases (`arisings_count`, `ceasings_count`).
+  what ceases (`counts_total`, `counts_total`).
 * **A census decides identity among what it lists.** A census of what is active in a web decides
-  identity among the formations active at each step (`census_identityDecided`).
+  identity among the formations active at each step (`Listed.identityDecided`).
 * **A stock once per member is one number.** Two lists listing a family of conditions once give
   it one stock at every step (`stock_eq`), and repetition only adds (`stock_le`).
 * **Counting a world's relata through their relations.** The number of relata a list of a world

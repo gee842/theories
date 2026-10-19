@@ -819,7 +819,7 @@ what each theorem names.
   through its configurations (`coupled_formed`); along a run of any process, moves formed through a
   reading of the configurations are formed through every reading telling apart as much
   (`formed_of_finer`), and through the reading that tells nothing apart exactly where the run takes
-  one move throughout (`formed_const_iff`).
+  one move throughout (`lumped_const_iff`).
 * **The part's, the rest's, the relation's, along a run.** Where the move is the part's, every run
   of the coupled whole takes the part's policy at the part's configuration (`part_policy`); where it
   is the rest's, the rest's policy (`rest_policy`); where it is both, every run takes one move at
@@ -827,10 +827,10 @@ what each theorem names.
   recurs with the move varied, the rest's configuration differs there (`rest_differs`).
 * **What the record of a run fixes.** A run's moves are a law of its configurations exactly where
   some relation giving at most one move at each configuration gives every move of the run
-  (`formed_iff_singleValued`); the run's reading is contained in every such relation
-  (`reading_le_run`). On its first `N` steps, with equality of configurations decided, a policy of
+  (`lumped_iff_singleValued`); the run's reading is contained in every such relation
+  (`reading_le`). On its first `N` steps, with equality of configurations decided, a policy of
   the configuration gives the run's moves exactly where they never differ at one configuration
-  (`formed_upto_iff`), and, with equality of moves decided too, no policy does exactly where some
+  (`lumped_upto_iff`), and, with equality of moves decided too, no policy does exactly where some
   configuration recurs with the move varied (`no_policy_upto_iff`).
 * **The counterfactual's supplied moves.** Along a run of the standard model of a course with the
   act formed within (`closedBy` of `ExchangeLaw.stepBy`), the act of a law that reads nothing
@@ -920,7 +920,7 @@ theorem ofMoves_formed_stage
 
 end Supplied
 
-/-! ## The witnesses as runs -/
+/-! ### The witnesses as runs -/
 
 /-- The run of a part held still while the rest counts and the move alternates. -/
 def stillRun : Run (Shown (fun n : Nat => ((), n)) MoveFormation.alt) :=

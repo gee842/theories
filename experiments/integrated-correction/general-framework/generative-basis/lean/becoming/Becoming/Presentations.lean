@@ -40,9 +40,9 @@ code (`Reduced`). Every code includes its reading; no varying reading is hidden 
   distinction and finds none.
 * **A frame's branching tests.** With a frame's configurations and its branching tests
   (`Becoming.Likeness`) as questions, an exact reduced presentation gives one code exactly to the
-  configurations passing the same branching tests (`Tests.kernel_iff`), so alike configurations get
+  configurations passing the same branching tests (`Presentations.reduced_exact_kernel`), so alike configurations get
   one code (`Tests.alike_one_code`); the kernels, matches and alignment are those above
-  (`Tests.kernels_same`, `Tests.matches_iff`, `Tests.aligned_iff`).
+  (`Presentations.reduced_presentations_same_kernel`, `Presentations.matches_iff_equal_answers`, `Tests.aligned_iff`).
 
 Uniqueness here is relative to the fixed questions; no ontological order among presentations is
 derived. This module states in the core what `ExplanatoryUniqueness` and `ExplanatoryUniversality`
@@ -389,17 +389,17 @@ its laws on frames of the spine.
   answering alike (`canonical_factor_answers`).
 * **The joint relation of a joint frame.** Read at the codes of an exact reduced presentation of
   the frame's branching tests, the joint relation has an exact reading exactly where it is the same
-  for configurations passing the same branching tests (`joint_descends_iff`); its image is then
-  the reading (`joint_image_iff`), unique on used codes (`joint_reading_unique`), and one pair of
+  for configurations passing the same branching tests (`Presentations.relation_descends_iff_saturated`); its image is then
+  the reading (`Presentations.lift_exact_iff_saturated`), unique on used codes (`Presentations.relational_reading_unique_on_used`), and one pair of
   triples passing the same tests on which the joint relation differs blocks every exact reading
-  (`joint_blocked`).
+  (`Presentations.separating_relation_blocks_descent`).
 * **A frame realizing every predicate.** The frame on a process whose claims are the predicates
   of its configurations, each realized where it holds (`everyPredicate`), tells every two
-  configurations apart (`everyPredicate_separate`). Every exact presentation of what it realizes
-  is injective (`everyPredicate_injective`) and reduced (`everyPredicate_reduced`), every
-  relation among its configurations is read exactly at the codes (`everyPredicate_saturated`,
-  `everyPredicate_recoverable`), and any two such presentations correspond one to one
-  (`everyPredicate_correspondence`): the limit keeps every distinction and finds none.
+  configurations apart (`Presentations.all_predicates_separate`). Every exact presentation of what it realizes
+  is injective (`Presentations.all_predicates_force_injective`) and reduced (`Presentations.all_predicates_automatically_reduced`), every
+  relation among its configurations is read exactly at the codes (`Presentations.all_predicates_every_relation`,
+  `Presentations.all_predicates_relation_recoverable`), and any two such presentations correspond one to one
+  (`Presentations.all_predicates_unique_correspondence`): the limit keeps every distinction and finds none.
 
 Each theorem is the law of `Becoming.Presentations` it names, read on a frame; none is a further
 result. No ethical predicate, ranking or axiom occurs; every declaration has an empty axiom
@@ -414,7 +414,7 @@ universe u v w x y
 
 namespace PresentationFrames
 
-/-! ## Codes of a frame's branching tests -/
+/-! ### Codes of a frame's branching tests -/
 
 section Tests
 
@@ -435,7 +435,7 @@ theorem canonical_kernel (ext : PredicateExt (BranchingTest A C)) (F : Frame S A
 
 end Tests
 
-/-! ## The joint relation of a joint frame -/
+/-! ### The joint relation of a joint frame -/
 
 section Joint
 
@@ -444,7 +444,7 @@ variable {S : Type u} {A : Type v} {C : Type w} {K : Type x} {F : JointFrame S A
 
 end Joint
 
-/-! ## A frame realizing every predicate -/
+/-! ### A frame realizing every predicate -/
 
 section EveryPredicate
 

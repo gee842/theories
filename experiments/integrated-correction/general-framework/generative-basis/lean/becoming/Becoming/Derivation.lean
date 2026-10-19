@@ -42,8 +42,8 @@ executions reach from a belief (board item F3Q, 18 October 2026: the content of
   a sound policy's goal holds over its scope, local premises holding over it are discharged, a
   derived lemma keeps the closure, a configuration of the scope where a claim fails excludes it,
   and with a finite basis the pointwise and common readings of the closure on the scope agree
-  (`Scope.closed`, `Scope.closure_iff`, `Scope.goal_closure`, `Scope.relative`,
-  `Scope.discharged`, `Scope.lemma_closed`, `Scope.countermodel`, `Scope.common_iff`,
+  (`Derivation.closed_throughout`, `Derivation.closure_throughout_iff`, `Scope.goal_closure`, `Derivation.relative_throughout`,
+  `Derivation.discharged_throughout`, `Derivation.lemma_throughout`, `Derivation.countermodel_excludes`, `Scope.common_iff`,
   `Scope.common_relative`).
 
 The basis, the domain and the admissible configurations are supplied; no claim is installed by a

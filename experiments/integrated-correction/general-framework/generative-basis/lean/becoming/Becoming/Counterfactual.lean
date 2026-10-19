@@ -64,7 +64,7 @@ beyond the law of exchange itself and what each theorem names.
   `inputs_intervention_unfixed` and `inputs_model_fixes`).
 * **The counterfactual as an unfolding (P80b, with `Becoming.Unfolding`).** Over one kind of
   relatum the course is a world (`ExchangeLaw.world`), which balances, and so runs by the law of
-  exchange, exactly where the course is feasible (`ExchangeLaw.world_balances_iff`,
+  exchange, exactly where the course is feasible (`ExchangeLaw.course_balances_iff`,
   `ExchangeLaw.world_exchange_iff`, `ExchangeLaw.worldRun`): the course of an act not taken has
   the form of every unfolding, not a second kind of thing. A determined law steps beyond what a
   history of it shows exactly at the moves the history never takes there (`Run.beyond_shown_iff`,

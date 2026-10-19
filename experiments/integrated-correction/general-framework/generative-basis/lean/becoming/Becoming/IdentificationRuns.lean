@@ -18,7 +18,7 @@ courses is `Courses.reachedFrom`. This module states those laws of runs and of r
   whose start returns has two moments that are one state (`returns_states`); a run taking a
   different value through the map at every moment has each moment as its own state (`new_each`);
   a run's course through the map has finitely many states exactly where it repeats from some
-  step (`states_iff_lasso`).
+  step (`finitely_many_states_iff_lasso`).
   Along the run of negation from `true` there are exactly two states (`negation_two_states`), each
   defined through the other (`negation_each_through_other`).
 * **A bounded prefix fixes a run's course, exactly.** Two runs of any process with at most `N` and
@@ -40,8 +40,8 @@ courses is `Courses.reachedFrom`. This module states those laws of runs and of r
   of the diagonal law of the extrapolation given the bound `N` has more than `N` states
   (`answer_exceeds_bound`).
 * **What a description of parts keeps along courses.** Of the whole a law's courses reach,
-  describing each part by itself keeps every reached combination (`separated_of_reached`) and
-  adds none exactly where the reached whole is rectangular (`separation_faithful_iff_reached`).
+  describing each part by itself keeps every reached combination (`separated_of_whole`) and
+  adds none exactly where the reached whole is rectangular (`separation_faithful_iff`).
   After one move of copying the first part into the second, the parts always go alike and,
   described separately, could go apart (`copy_separation_admits_extra`). After one move of the law
   setting a third part to the parity of the first two (`parity`), the reached whole is the even

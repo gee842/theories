@@ -64,7 +64,7 @@ Hearing is a process of the spine (`process`), a stretch of its run is an order 
   image (`Law.Commutes.keepsRelation`), and from a configuration `σ` fixes the run stays fixed. A
   law of codes that keeps the exchange of formations by `π` (`KeepsExchange`) and the renaming of
   forms by `τ` (`KeepsRenaming`) keeps the two together (`keeps_both`), so a start symmetric under
-  them stays symmetric (`symmetric_kept`), formations they exchange agree only on a form the
+  them stays symmetric (`Law.KeepsRelation.run`), formations they exchange agree only on a form the
   renaming fixes (`agrees_only_fixed`), and where the renaming moves every form at `m` they never
   agree there (`never_agrees`, `never_agrees_of_both`). For pairs of forms and a law commuting with
   exchanging the two formations together with the forms, this is the relational form of
@@ -77,7 +77,7 @@ Hearing is a process of the spine (`process`), a stretch of its run is an order 
   `preferred_breaks_renaming`).
 * **An imposed code.** Imposing one code on every formation makes all agree at every sense
   (`impose_agrees`) and every formation read every other exactly where the imposed code tells the
-  senses apart (`impose_reads`). By definition each formation loses exactly the distinctions its
+  senses apart (`SharedCodes.self_reads_iff`). By definition each formation loses exactly the distinctions its
   code made that the imposed code merges (`impose_loses_iff`); the formation whose code is imposed
   loses none (`source_loses_nothing`); along every run of hearing from an imposition all of this
   stays (`run_from_imposition`). A form every formation holds at a sense stays under every later

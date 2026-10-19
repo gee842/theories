@@ -40,7 +40,7 @@ added together, say that nothing has odd parity.
   (`Specker.openings_contradict`): every mixture of placements meets at most two of the three on
   average (`Specker.mixture_le`), each opening's own placement meets all three
   (`Specker.indexed_met`), and `Becoming.Context`'s `Specker.noGlobal` follows
-  (`Specker.noGlobal_of_contradiction`).
+  (`Specker.noGlobal`).
   The CHSH game (Clauser, Horne, Shimony and Holt, 1969), two stations each with two settings,
   whose outcomes must differ exactly where both settings are the second: its four pairs of
   settings contradict, so every mixture of context-free outcomes wins at most three of the four
@@ -48,7 +48,7 @@ added together, say that nothing has odd parity.
   (`CHSH.indexed_met`). The Mermin–Peres square's six lines contradict
   (`Square.lines_contradict`): at most five of the six on average (`Square.mixture_le`), all six
   in context (`Square.indexed_met`), and `Square.noGlobal` follows
-  (`Square.noGlobal_of_contradiction`).
+  (`Square.noGlobal`).
 * **A cycle.** A cycle of claims, each related to the next as equal or different and the last to
   the first (`Gluing.Cycle.system`), counts every claim twice along its relations (`Gluing.Cycle.counts_even`).
   So its relations contradict where an odd number of them are differ relations

@@ -422,7 +422,7 @@ theorem history_gains (r : Run P) (obs : S → X → V) {x y : X}
 
 end Histories
 
-/-! ## The reconstruction process -/
+/-! ### The reconstruction process -/
 
 /-- **Forming the link keeps every old distinction.** Every step of `Revising.P` forming the link
 from a configuration with the link unformed and the response false keeps the lumping. -/

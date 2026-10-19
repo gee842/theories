@@ -40,7 +40,7 @@ to be decidable at each step.
   (`rising_recurs`): in every unfolding, levels of finitely many conditions that keep
   falling keep rising (`Web.falls_need_rises`). For one amount this is the law of
   `Becoming.Renewal` that an observable never rising from some step on does not
-  fall at arbitrarily late steps (`falls_not_recurring_from_floor`). Where amounts are bounded, the
+  fall at arbitrarily late steps (`falls_not_recurring`). Where amounts are bounded, the
   family rises by at most its bound more than it falls (`risen_within`), and rising at
   arbitrarily late steps needs falling at arbitrarily late steps (`falling_recurs`).
 * **Coming to be and ceasing to be keep pace.** A determination counts as zero or one, so
@@ -50,7 +50,7 @@ to be decidable at each step.
   (`keep_pace`), and coming to be recurs exactly when ceasing to be recurs
   (`coming_recurs_iff`). Read of activity: the members of a finite family of formations
   active at the end with those that ceased are those active at the start with those that
-  arose (`Web.activity_over_stretch`); they arise at arbitrarily late steps exactly when
+  arose (`held_over_stretch`); they arise at arbitrarily late steps exactly when
   they cease at arbitrarily late steps (`Web.arising_recurs_iff`); and where the
   formations are finitely many and their activity is decided, arising recurs exactly
   when ceasing recurs (`Web.unceasing_iff`). Read of standing, with no

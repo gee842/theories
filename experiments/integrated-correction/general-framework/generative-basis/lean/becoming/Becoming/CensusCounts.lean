@@ -12,7 +12,7 @@ what is active at each step, `c` what of it ceases across the step, `a` what is 
 step and came to be across it (`World.CountsOf`). A property of the counts holds in a world where
 it holds of every census and every counts of it (`World.CountsHold`). A count across a step
 exists exactly where activity is decided at the relata it counts there
-(`World.ceasings_exist_iff`, `World.comings_exist_iff`), and, the census listing what is active,
+(`counts_iff_decided`, `World.comings_exist_iff`), and, the census listing what is active,
 exactly where it is decided whether each of them is listed at the other end of the step
 (`World.ceasings_exist_iff_listed`, `World.comings_exist_iff_listed`). So the yes or no a law of
 counting needs is asked only of the relata it counts, at the step it counts them, and only for the

@@ -17,8 +17,8 @@ stay conditions; nothing here asserts a comparison.
 
 * **J1/J2 on a frame.** `better` meets the condition on a frame where it compares configurations
   as `Lexical.Frame.Above` does, by the basic claims they realize, then the living ones
-  (`Priority`). The lexical order meets it (`Priority.above`); under it `better` is irreflexive
-  and transitive (`Priority.irrefl`, `Priority.trans`); a configuration keeping every basic claim
+  (`Priority`). The lexical order meets it (`Lexical.BasicPriority.above`); under it `better` is irreflexive
+  and transitive (`Lexical.BasicPriority.irrefl`, `Lexical.BasicPriority.trans`); a configuration keeping every basic claim
   another realizes and realizing one it lacks is better, whatever the living claims
   (`Priority.anchor`), and no number of living claims makes a configuration losing a realized
   basic claim better (`Priority.no_trade`). A generative extension is never refuted to be better
@@ -40,15 +40,15 @@ stay conditions; nothing here asserts a comparison.
 * **Fresh contents under every classification.** On a frame of old and newly distinguished
   contents (`Lexical.Frame.old`, `Lexical.Frame.fresh`), with the old ones split into basic and
   living and the fresh ones classified basic where `q` holds (`classifiedOn`): with none basic
-  the comparison is that with the fresh contents as gains (`classifiedOn_none_iff`); a
+  the comparison is that with the fresh contents as gains (`Lexical.classified_none_iff`); a
   configuration is above another under every classification exactly where it keeps the other's
   fresh contents and is above with them as gains, the forward direction with no decision and the
   backward one where whether the other realizes each fresh content, and the tie at each
-  classification, are decided (`classifiedOn_robust_iff_of_decided`), so wherever excluded middle
-  is named (`classifiedOn_robust_iff_of_em`); the two extreme classifications suffice
-  (`classifiedOn_extremes_iff_of_decided`). Where every option lacking a formation is bettered,
+  classification, are decided (`Lexical.classified_robust_iff_of_decided`), so wherever excluded middle
+  is named (`Lexical.classified_robust_iff_of_em`); the two extreme classifications suffice
+  (`Lexical.classified_extremes_iff_of_decided`). Where every option lacking a formation is bettered,
   with the fresh contents as gains, by an option keeping its fresh contents, the formation is
-  required of the choice under every classification (`classifiedOn_required`).
+  required of the choice under every classification (`Requirement.required_under_every_classification`).
 
 Each theorem is the law of `Becoming.Lexical` or `Becoming.Frontier` it names, read on a frame;
 none is a further result. Direction as in `Becoming.Lexical`: `better s t` says `s` is better.

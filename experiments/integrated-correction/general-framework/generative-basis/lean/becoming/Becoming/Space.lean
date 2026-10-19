@@ -24,7 +24,7 @@ second. Ren confirmed arising and ceasing as the better names for it
 * **The space.** A world is its relata, read with one kind of relatum (`Becoming.Roles`),
   with the flow among them and their web (`World`). The two-kind reading of any flow and
   web is a world, and arising and ceasing read the same there (`World.ofRoles`,
-  `World.arisingRecurs_ofRoles`, `World.ceasingRecurs_ofRoles`).
+  `Web.roles_unceasing`, `World.ceasingRecurs_ofRoles`).
 * **Laws of the whole.** The laws of `Becoming.Change`, and the arithmetic identity of
   `Becoming.Evolution`, are stated of every web and every amount with no premise about
   the unfolding, so they hold throughout the space. Read of worlds: in a finite world

@@ -30,7 +30,7 @@ run too, exactly, with nothing read away. No premise enters beyond what each the
   may change in any way. A world balances exactly where its run is a run of it
   (`World.balanced_iff_run`), exactly where the law it shows lies within it
   (`World.balanced_iff_law`), and exactly where some run of it has the world's webs and exchanges
-  (`World.balanced_iff_exists_run`). Every run of it is a balanced world (`Run.world_balanced`), so
+  (`World.balanced_iff_exists_run`). Every run of it is a balanced world (`Run.step`), so
   balanced worlds and runs of the law of exchange on webs are one (`World.balancedRun`). The
   standings of that run are `World.exchangeRun`'s (`World.balancedRun_level`). With the rest
   counted, every world, its whole web and not only its standings, is a run of the law of exchange,

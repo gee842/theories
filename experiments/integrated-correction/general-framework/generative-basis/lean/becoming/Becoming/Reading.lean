@@ -24,8 +24,8 @@ the ties hold by what the readings are.
   exchanging decided, the relata active at each step are listed (`Flow.readOff_census`).
 * **The rest counted.** With the rest of the whole counted as a relatum, `none`
   (`Flow.withImbalance`), and activity read off its exchange (`Flow.adopt`), every flow balances
-  (`Flow.adopt_balances`), only active relata give and take (`Flow.adopt_acting`,
-  `Flow.adopt_taking`), a formation of the flow exchanges as it did (`Flow.exchanging_some_iff`),
+  (`Flow.withImbalance_balances`), only active relata give and take (`Flow.readOff_acting`,
+  `Flow.readOff_taking`), a formation of the flow exchanges as it did (`Flow.exchanging_some_iff`),
   and the relata active at each step are listed where the formations taking part are listed once
   and exchanging is decided (`Flow.adopt_census`). Balance is no longer supposed: the flow balances
   across a step exactly where the rest is not active there (`Flow.rest_idle_at_iff`), and at every
@@ -45,7 +45,7 @@ the ties hold by what the readings are.
   (`World.withRest`): its relata are the world's and the rest, activity and drawing are read off
   the exchange with the rest counted, and standings, requirements and needs are the world's. Then
   every world balances (`World.withRest_balanced`), only active relata give and take
-  (`World.withRest_acting`, `World.withRest_taking`), and a relatum of the world exchanges as it
+  (`Flow.readOff_acting`, `Flow.readOff_taking`), and a relatum of the world exchanges as it
   did (`World.withRest_exchanging_iff`). The world balances exactly where the rest is never active
   (`World.withRest_closed_iff`), and activity needs support exactly where every relatum that
   exchanges is supported (`World.withRest_dependent_iff`). Read off a law over one kind of relatum

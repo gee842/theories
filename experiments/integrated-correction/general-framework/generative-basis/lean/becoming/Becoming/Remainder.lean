@@ -70,7 +70,7 @@ on decide.
   suffices (`carriedWithin_exact_of_no_loop`) because no chain is then that long
   (`no_chain_of_no_loop_listed`). Its equivalence where couplings hold at every step is re-derived,
   now without its listing of every condition (`Remainder.finite_order_iff_no_loop`), and so is the
-  loop coupled once (`Remainder.Once.exact`).
+  loop coupled once (`Loops.Once.exact`).
 * **For every law.** By `most_difference_arrives`, every gap of every law of what has stood with
   the strengths, from every start, is at most what order `j` carries exactly where no chain of
   `j + 1` couplings in time order ends there (`gap_within_order_iff`).

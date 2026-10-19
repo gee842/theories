@@ -20,9 +20,9 @@ names.
   (`World.roles_take`, `World.roles_give`); so for every course (`level_eq`, `take_eq`,
   `give_eq`).
 * **They balance together**, with no premise: the one-kind world balances exactly where the
-  two-role world does (`World.kind_balanced_iff_roles`); so for every course (`balanced_iff`).
+  two-role world does (`Flow.roles_balances`); so for every course (`balanced_iff`).
   Under a law of what has stood each balances exactly where the course is feasible
-  (`ExchangeLaw.world_balances_iff`, `ExchangeLaw.courseWorld_balanced_iff`).
+  (`ExchangeLaw.course_balances_iff`, `ExchangeLaw.courseWorld_balanced_iff`).
 * **One run of exchange.** Where the course is feasible, the run of the law of exchange read from
   the one-kind world and the run read from the two-role world stand at the same levels at every
   step (`runs_agree`).

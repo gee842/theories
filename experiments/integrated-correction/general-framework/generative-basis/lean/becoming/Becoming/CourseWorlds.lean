@@ -44,7 +44,7 @@ what each theorem names.
 * **Closing (P122).** Before a loop forms upstream, every gap between the worlds grows at most
   polynomially (`TwoActs.gap_le_polynomial_before`). Where strengths are read off the levels so far,
   the course they form is a world (`formedWorld`) that balances (`formedWorld_balanced`) and stands
-  at the carried amount of the strengths it reads off its own standings (`formedWorld_level`); before
+  at the carried amount of the strengths it reads off its own standings (`formedCourse_eq_carried`); before
   a loop of those couplings forms upstream, its standings grow at most polynomially
   (`formedWorld_le_polynomial_before`). Which loops form, and when, is read off the world.
 * **Frequency (P123).** Every gap between the worlds is at most the rate the schedule allows

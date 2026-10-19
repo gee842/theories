@@ -26,7 +26,7 @@ identity (`Parting.freeRun`), and every run of a determined law is its orbit
   (`byElimination_through_prefix`); every candidate it passed missed at an earlier step of the run
   (`missed_before`); over merged classes its current candidate is never beyond the place of one
   that accords along the run (`merged_bound`); where it is right from some step on along a run,
-  the run's course through the map repeats from some step (`lasso_of_right`).
+  the run's course through the map repeats from some step (`Learning.lasso_of_rest`).
 * **Induction along a run held by a list.** On a run of a determined law whose configurations a
   list holds, elimination over the lasso candidates misses fewer than `tri l.length` times,
   proposes from `l.length` on and does not miss at arbitrarily late steps
@@ -35,9 +35,9 @@ identity (`Parting.freeRun`), and every run of a determined law is its orbit
   (`negation_never_rests`).
 * **Generalization from a run.** Within the features that go alike across a map's lumping, their
   values at the configurations a run passed before `t` fix the value at a configuration exactly
-  where it is lumped with one of them (`determines_iff_lumped_alike`); the value carried over
-  is right exactly where the world takes one value at the two (`carried_right_iff`), as it does
-  for a world going alike across the lumping (`world_carried_right`).
+  where it is lumped with one of them (`Learning.determines_lumped_iff`); the value carried over
+  is right exactly where the world takes one value at the two (`Learning.lumped_right_iff`), as it does
+  for a world going alike across the lumping (`Learning.lumped_world_right`).
 * **Training on runs' prefixes.** Read the courses through the map of a process's runs as the
   class (`Courses`) and the moments before `t` as the data. A loss computed from the prefix
   selects alike runs alike through the map before `t` (`loss_through_prefix`); within a class free

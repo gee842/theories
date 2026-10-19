@@ -21,7 +21,7 @@ already decides identity among any list's members; for them the corollary drops 
   `Flow.FedFromBeyond.of_within`, `Flow.cut_of_same`), as closure, enclosure around a family,
   inflow and taking are (`Becoming.Listing`). A stock that is nothing over a family is nothing
   over every family with no other members, and so is its product with any refinement
-  (`Web.stock_zero_of_within`, `mul_zero_of`).
+  (`total_zero_of_within`, `mul_zero_of`).
 * **Being fed from beyond** (`Becoming.Continuation`): `Flow.fed_from_beyond_listing`,
   `Flow.fed_from_beyond_from_listing`, `Flow.rising_fed_from_beyond_listing`,
   `Flow.rising_fed_from_beyond_from_listing`, and `Web.embodiedArising_fed_from_beyond_listing`: a

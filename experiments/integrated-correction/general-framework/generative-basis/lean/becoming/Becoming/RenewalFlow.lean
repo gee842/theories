@@ -360,7 +360,7 @@ open RelationalRenewal RelationalRenewal.Law
 
 namespace SupportRecovery
 
-/-! ## No third route -/
+/-! ### No third route -/
 
 /-- **Where both formations have lost their support, the level stays.** -/
 theorem absorbs (L : Law) (T : Nat) (fOff : L.level T < L.needF) (gOff : L.level T < L.needG) :
@@ -371,7 +371,7 @@ theorem absorbs (L : Law) (T : Nat) (fOff : L.level T < L.needF) (gOff : L.level
     show L.level (T + n + 1) = L.level T
     rw [L.level_succ, before, if_neg (Nat.not_le_of_gt gOff), if_neg (Nat.not_le_of_gt fOff)]
 
-/-! ## The window -/
+/-! ### The window -/
 
 /-- **A supported step of positive net repair raises the level by at least one**, whether or not
 the sustaining formation is active. -/
@@ -401,7 +401,7 @@ theorem window_progress (L : Law) (T N : Nat) (fOn : L.needF ≤ L.level T)
     Nat.le_trans (Nat.succ_le_succ prior)
       (repair_step L (T + d) active (surplus d (Nat.lt_of_succ_le bound)))
 
-/-! ## Two pulses -/
+/-! ### Two pulses -/
 
 /-- Two histories from level 2, sustaining need 2, focal need 1, renewal 1: only the first draw
 differs, and one unit is contributed at every later step. -/

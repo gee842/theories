@@ -56,8 +56,6 @@ namespace ResponseLearning
 
 open CodeAcquisition RouteFormation
 
-/-! ## Arithmetic used below -/
-
 /-! ## Teaching pairs -/
 
 /-- A sender and a receiver. -/

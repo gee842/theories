@@ -34,13 +34,13 @@ the content of `KnowledgeCorrespondence`, 6 October, and of the joins `ExactReco
   (`signal_not_lumped`), so no reading of it is exact (`signal_no_exact`) and every sound reading
   of it stays silent on both values (`signal_sound_silent`); paired with a reference reading of the
   orientation it is read exactly (`paired_exact`), also when only their parity is kept
-  (`parity_exact`). The direct reading is exact on the unreversed channels and not sound on all
+  (`PartialReadout.paired_exact`). The direct reading is exact on the unreversed channels and not sound on all
   (`direct_exact_unreversed`, `direct_not_sound`), though right on one of them
   (`direct_right_once`); reading a negated copy back is exact (`negated_exact`).
 * **On runs.** The prefix a map leaves along a run before step `t` (`prefixBefore`) is read for
-  the feature at `t` (`featureAt`); every law above holds of these readings (`Runs.exact_sound`,
-  `Runs.exact_lumped`, `Runs.sound_silent`, `Runs.sound_mono`, `Runs.finer_lumped`,
-  `Runs.retained_exact`, `Runs.silent_sound`, `Runs.silent_not_exact`, `Runs.exact_exists_iff`),
+  the feature at `t` (`featureAt`); every law above holds of these readings (`PartialReadout.ExactWithin.sound`,
+  `PartialReadout.ExactWithin.lumped`, `PartialReadout.SoundWithin.silent`, `PartialReadout.SoundWithin.mono`, `Runs.finer_lumped`,
+  `PartialReadout.ExactWithin.retained`, `Runs.silent_sound`, `Runs.silent_not_exact`, `PartialReadout.exact_exists_iff`),
   and, along the runs of a determined law, an extrapolation rests on the feature from `T` exactly
   where it reads the prefix exactly at every step from `T` (`Runs.exact_iff_predictsFrom`, through
   `LearnableRuns.PredictsFrom`).

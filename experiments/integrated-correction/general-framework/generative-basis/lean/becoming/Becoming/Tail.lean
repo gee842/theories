@@ -554,7 +554,7 @@ open Generative
 
 namespace TailRuns
 
-/-! ## Rules and principles of every run -/
+/-! ### Rules and principles of every run -/
 
 /-- A rule deciding, of every run of every process and every Boolean map along it, whether the
 Boolean is `false` throughout. -/
@@ -625,7 +625,7 @@ theorem lpo_iff_runs : LPO ↔ TrueDecided :=
   ⟨fun lpo _ _ _ reg r => lpo fun n => reg (r.state n),
    fun decided s => decided Bool Unit _ id (Shown.run s fun _ => ())⟩
 
-/-! ## A whole and no part, decided of every run -/
+/-! ### A whole and no part, decided of every run -/
 
 /-- **A number changed by no condition that still differs exists exactly where it is decided, of
 every run, whether its Boolean is `false` throughout.** -/
@@ -675,7 +675,7 @@ theorem not_through_sensitive_decides (na : law.Nonanticipating) {l l' : Nat →
 
 end Given
 
-/-! ## Vanishing along a run -/
+/-! ### Vanishing along a run -/
 
 /-- **Deciding of every run whether its level vanishes from some step on is exactly deciding of
 every run whether its Boolean is ever `true`.** -/

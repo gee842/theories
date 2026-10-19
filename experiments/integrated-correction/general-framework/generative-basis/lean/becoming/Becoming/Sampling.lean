@@ -1044,7 +1044,7 @@ namespace Becoming
 
 namespace ExchangeFlows
 
-/-! ## Uniform descent -/
+/-! ### Uniform descent -/
 
 section Descent
 
@@ -1080,7 +1080,7 @@ theorem selection_within_uniform (acting : L.Acting W) (dependent : W.Dependent)
 
 end Descent
 
-/-! ## An absent relatum in a sampled flow -/
+/-! ### An absent relatum in a sampled flow -/
 
 section Sampled
 

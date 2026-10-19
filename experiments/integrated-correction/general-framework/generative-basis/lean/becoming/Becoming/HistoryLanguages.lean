@@ -19,7 +19,7 @@ configuration (`Bounded.no_one_point_law`), while its histories realize it
 (`Future`, `SameFuture`). Extending a history updates its profile by concatenation alone
 (`future_update`), so histories with one profile keep one profile after a common extension
 (`same_future_extends`); for a process's language the profile after a course is the union of the
-languages from where the course can end (`future_iff_reach`). A language is **stable** where no
+languages from where the course can end (`Generative.feasible_append_iff`). A language is **stable** where no
 admitted history changes the profile (`Stable`). For a prefix-closed language admitting the empty
 word, stable is exactly letterwise: a word admitted exactly where each of its letters is
 (`stable_iff_letterwise`). A word whose letters are each admitted, while the word is not, refutes

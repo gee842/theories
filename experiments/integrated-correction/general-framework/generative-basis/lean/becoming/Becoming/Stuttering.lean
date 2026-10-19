@@ -34,7 +34,7 @@ at which nothing happens are inserted (a stuttering, read with the same `sample`
   - Arising, ceasing and change of standing recur read through a stuttering exactly where they
     recur (`World.stutter_arisingRecurs_iff`, `World.stutter_ceasingRecurs_iff`,
     `World.stutter_change_recurs_iff`, from `stutter_recurs_iff`). A census survives
-    (`World.stutter_counted`) and returns where a step of the reading is given for each step
+    (`World.sample_counted`) and returns where a step of the reading is given for each step
     (`World.stutter_counted_of_section`).
 * **What a stuttering changes: what is counted per step.** With idle steps at arbitrarily late
   steps no flow is more without end (`Flow.sample_not_more`): the expansion is more without end

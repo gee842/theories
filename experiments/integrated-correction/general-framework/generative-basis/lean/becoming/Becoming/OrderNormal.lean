@@ -1473,7 +1473,7 @@ namespace Becoming
 
 namespace OrderWorlds
 
-/-! ## Arrangements of a world's exchanges -/
+/-! ### Arrangements of a world's exchanges -/
 
 section Arrangements
 
@@ -1526,7 +1526,7 @@ theorem complete_iff :
 
 end Arrangements
 
-/-! ## Readings in time -/
+/-! ### Readings in time -/
 
 /-- **A world read with every step taken twice meets the premises exactly where it meets
 them.** -/

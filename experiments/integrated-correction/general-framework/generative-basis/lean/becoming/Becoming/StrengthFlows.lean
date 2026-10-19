@@ -23,7 +23,7 @@ beyond what each theorem names.
   to a condition exactly where, at some step, two flows the law gives under histories differing in
   one level of that condition up to the step have exchanges that differ (`sensitive_iff_flows`). A
   finite strength is a condition on a law: the flows the square law gives have none
-  (`square_no_finite_strength`).
+  (`Propagation.Square.not_respondsWithin`).
 * **What is read, between flows.** Two flows following a law of what has stood whose levels agree up
   to the step exchange alike across it: every law reads everything (`alike_of_readsAt_all`). Two
   flows following the measurement of `Becoming.Observation` that agree on the levels it reads into a

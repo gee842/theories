@@ -11,7 +11,7 @@ kinds of question the joining itself poses: its contexts (`Becoming.JoiningConte
 branching tests of its frame.
 
 * **Codes of contexts.** A presentation reading exactly which contexts are possible gives one code
-  only to fragments agreeing on contexts (`codes_contextSame`), so the codes join exactly where the
+  only to fragments agreeing on contexts (`Presentations.equal_codes_same_answers`), so the codes join exactly where the
   fragments do (`image_domain_iff`). Where joining is functional and the presentation also gives
   fragments agreeing on contexts one code, the codes join exactly into the code of what the
   fragments join into (`image_realized_iff`) and so join functionally (`image_functional`); two such

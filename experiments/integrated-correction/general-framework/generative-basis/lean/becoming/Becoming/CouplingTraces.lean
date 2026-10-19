@@ -16,7 +16,7 @@ traces. No premise enters beyond what each theorem names.
 
 * **The couplings as a process.** The coupling process (`couplingProcess`) steps from `d` to `c` by
   the step `u` at which a coupling of `d` into `c` acts. A coupling is a step of it
-  (`couples_iff_step`); what lies upstream is what it reaches (`upstream_iff_reach`); a loop through
+  (`couples_iff_couplesAt`); what lies upstream is what it reaches (`upstream_iff_reach`); a loop through
   `e` is a trace of one step or more from `e` back to `e` (`onLoop_iff_trace`). A sequence whose
   successive members are steps of a process is a trace of it, for every process
   (`chain_iff_trace`).

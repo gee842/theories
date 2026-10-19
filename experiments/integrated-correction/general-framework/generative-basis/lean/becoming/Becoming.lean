@@ -319,7 +319,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
   (`closure_throughout_iff`) and a countermodel excludes a claim from it
   (`countermodel_excludes`); with a list covering the basis, claims met one by one are met by one
   configuration (`pointwise_iff_common`), which rows met separately need not be
-  (`rows_not_pointwise`); every law is read on the scope of an inquiry (`Scope.closure_iff`,
+  (`rows_not_pointwise`); every law is read on the scope of an inquiry (`Derivation.closure_throughout_iff`,
   `Scope.goal_closure`, `Scope.common_relative`).
 * `Becoming.ClassifiedBeliefProcesses` (L1): a narrowed belief whose inhabitation is decided
   is empty or inhabited; where every narrowed belief's inhabitation is decided, every belief is
@@ -2307,7 +2307,7 @@ every module importing one of them; L1 holds the rest. No module imports one of 
 * `Becoming.PartialReadout` (L1): partial readout of a feature through a map on a domain (no
   premise beyond what each theorem names; a section of the map is a hypothesis where a reading
   must be built): an exact reading is sound and needs the feature lumped (`ExactWithin.sound`,
-  `ExactWithin.lumped`), and with a section one exists exactly then (`exact_exists_iff`); a sound
+  `ExactWithin.lumped`), and with a section one exists exactly then (`PartialReadout.exact_exists_iff`); a sound
   reading stays silent where the map merges two feature values (`SoundWithin.silent`); in the
   channel model the signal alone is read by no exact reading and the signal with a reference is
   (`signal_no_exact`, `paired_exact`); on runs, an extrapolation rests on the feature from a step

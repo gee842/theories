@@ -20,7 +20,7 @@ along runs.
 * **Along runs.** A strict anchor holds along a run that loses no claim and a strict rejection
   along a run that gains none, wherever keeping every claim is weakly comparable
   (`strict_above_along`, `strict_below_along`); strict comparison among configurations reachable
-  from one supplies a reason where the link is supplied (`reachable_reason`).
+  from one supplies a reason where the link is supplied (`StrictTransport.reason_of_strict_above`).
 * **Weaker rules, audited.** On `Route` (finishing or a repair after an interruption of length
   `n`), a cutoff order is transitive and prefers shorter interruptions (`cutoff_transitive`,
   `shorter_interruption_no_worse`); it prefers repair exactly below its cutoff and finishing

@@ -331,7 +331,7 @@ Declarations moved here unchanged, with their names, from `Becoming.Diagonal` (b
 the sections so headed.
 -/
 
-/-! ## The frame cannot hold its own completeness (moved from `Becoming.Diagonal`) -/
+/-! ### The frame cannot hold its own completeness (moved from `Becoming.Diagonal`) -/
 
 namespace Becoming
 
@@ -358,7 +358,7 @@ namespace DiagonalRuns
 
 open Diagonal
 
-/-! ## Completion as a process -/
+/-! ### Completion as a process -/
 
 section Completion
 
@@ -431,7 +431,7 @@ theorem unfoldingRun_open (L : Nat) (stock : Nat → Nat → Bool) :
       ¬ ∀ n, ∃ i, i < L ∧ ∀ x, stock i x = gap (fun b => !b) (unfoldingRun.state n) x :=
   unfolding_open L stock
 
-/-! ## Revision along runs -/
+/-! ### Revision along runs -/
 
 /-- **Every run of a law revising a value by a map that moves every value changes at every
 step.** -/
@@ -454,7 +454,7 @@ theorem negation_never_rests (r : Run (Law.process Not)) (n : Nat) :
 theorem negation_returns (b : Bool) : Branching.Returns (Law.process fun b : Bool => !b) b :=
   Branching.law_returns_iff.mpr (Diagonal.negation_returns b)
 
-/-! ## A frame's claims about itself -/
+/-! ### A frame's claims about itself -/
 
 /-- **In a frame whose claims are its own configurations, no configuration realizes exactly the
 configurations that do not realize themselves.** -/

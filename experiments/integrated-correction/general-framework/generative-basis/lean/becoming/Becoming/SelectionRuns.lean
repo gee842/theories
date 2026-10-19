@@ -18,7 +18,7 @@ apart.
   map takes one value at them (`selected_alike_iff`), and valued alike by every valuation
   through it exactly then (`valued_alike_iff`). A moment is singled out by some selection of at
   most one moment exactly when no other moment takes its value (`singled_iff_untied`); a choice
-  of one moment chooses only such a moment (`choice_untied`).
+  of one moment chooses only such a moment (`Relabel.EquivariantChoice.untied`).
 * **Where a run takes one value throughout, nothing is singled out.** On such a run, as on
   a run at rest, every valuation through the course values all moments alike
   (`values_alike_of_constant`) and every choice of one moment through it withholds

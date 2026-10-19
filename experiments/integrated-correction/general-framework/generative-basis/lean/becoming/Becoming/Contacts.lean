@@ -15,8 +15,8 @@ assumed beyond decidable equality of addresses.
   selection exactly where it retains the old data (`keeps_data_iff`, `survive_data_iff`). For
   plans: a selection at an address is through the plan exactly where the plan contacts it
   (`through_at_iff`). A change of plan keeps every old selection exactly where it retains every
-  old contact (`keeps_iff_retains`, `selections_survive_iff`, by `Registration.keeps_iff`); a retired
-  contact loses its selection (`retired_loses`), an added one gains it (`added_gains`). Along
+  old contact (`keeps_iff_retains`, `selections_survive_iff`, by `Learning.Training.keeps_through_iff`); a retired
+  contact loses its selection (`retired_loses`), an added one gains it (`Contacts.retired_loses`). Along
   every trace whose steps retain contacts, all selections are kept (`trace_keeps_of_retains`).
 * **Revision that reads its consequences.** A rule forming the next plan from the present plan
   and the address at which the last activity failed answers every failure, in the sense that
