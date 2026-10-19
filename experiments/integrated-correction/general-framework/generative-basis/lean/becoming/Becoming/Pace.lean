@@ -1,6 +1,7 @@
 import Becoming.Identification
 import Becoming.IdentificationRuns
 import Becoming.Capture
+import Becoming.SeekingRuns
 
 /-!
 # Pace: how fast a rule may change

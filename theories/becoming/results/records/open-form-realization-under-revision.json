@@ -293,7 +293,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBound.lean",
       "role": "proof",
-      "sha256": "d7bb80150768b0092f8c0179dc1d3b0d156d80d0e9c7b95f6fad130156c63725",
+      "sha256": "1a59d094330c2fde22a84bfe133ab6983de83ba78aee98200206fa515b339271",
       "declarations": [
         "Becoming.RenewalBound.renewal_within_rank_bound"
       ]
@@ -316,6 +316,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json",
       "role": "receipt",
       "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
     }
   ],
@@ -357,7 +363,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBound.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T210832.866808Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RenewalBound",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -445,6 +451,10 @@
     {
       "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Handoff.lean, PositiveGround.lean re-pointed after reading the change (Handoff.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; PositiveGround.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
       "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Handoff.lean、PositiveGround.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (RenewalBound.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

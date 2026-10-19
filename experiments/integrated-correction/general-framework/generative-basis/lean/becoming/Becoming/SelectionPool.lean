@@ -1,5 +1,5 @@
 import Becoming.SelectionGap
-import Becoming.Likeness
+import Becoming.Decidedness
 
 /-!
 # Selection pool: what selection through pooled coupling reaches

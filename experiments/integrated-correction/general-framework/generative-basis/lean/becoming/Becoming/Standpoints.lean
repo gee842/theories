@@ -79,6 +79,9 @@ and no center is privileged, is the AI's reading of Ren's proposal, adopted on R
 The source of `Clearing` requires nothing by stipulation. Decided holding is a disclosed logical
 commitment of `significant_iff_reached`, as decided equality is of the conveyance results. Names are
 working names.
+
+`Flow.FedBy` and `Clearing.fedBy_source` are in `Becoming.Continuation`, so the modules using them
+do not import the frame (board item W).
 -/
 
 namespace Becoming
@@ -335,19 +338,6 @@ theorem roles_conditions_unrelated (c d : C) (t t' : Nat) :
 
 end Roles
 
-/-! ## Feeding a continuation -/
-
-section Feeding
-
-variable {F C : Type} (L : Flow F C) (W : Web F C)
-
-/-- The continuation of `e`'s formation is fed by `e'`: at their common step, `e'`'s
-formation takes part and gives to a condition `e`'s formation requires. -/
-def FedBy (e e' : F × Nat) : Prop :=
-  e.2 = e'.2 ∧ ∃ c, W.requires e.2 e.1 c ∧ e'.1 ∈ L.present e'.2 ∧ 0 < L.give e'.2 e'.1 c
-
-end Feeding
-
 end Flow
 
 /-! ## The clearing from its standpoints -/
@@ -406,18 +396,6 @@ def sig : Formation → Formation × Nat → Prop
 
 def valuation : Valuation Formation (Formation × Nat) :=
   web.valuation own sig
-
-/-- Only the clearer's continuation is fed, and only by the source. -/
-theorem fedBy_source {e e' : Formation × Nat} (fed : flow.FedBy web e e') :
-    e.1 = .clearer ∧ e'.1 = .source :=
-  match e, e', fed with
-  | (.clearer, _), (.source, _), _ => ⟨rfl, rfl⟩
-  | (.clearer, _), (.clearer, _), ⟨_, .resource, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.clearer, _), (.dweller, _), ⟨_, .resource, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.source, _), _, ⟨_, _, no, _⟩ => nomatch no
-  | (.dweller, _), (.source, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.dweller, _), (.clearer, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.dweller, _), (.dweller, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
 
 /-- S0 ranges over living claims: the clearer's own event at step one is active and not
 living, for the clearer undermines there, so S0 says nothing of it. -/

@@ -1,5 +1,7 @@
 import Becoming.Hexagrams
 import Becoming.Context
+import Becoming.ContextArrivalTraces
+import Becoming.LearningRuns
 
 /-!
 # The places of a hexagram and their relations, read in context

@@ -12,8 +12,6 @@ at t can first affect levels at t+1. No physical duration is assigned to a step.
 namespace Becoming
 namespace TimedResponse
 
-open Generative
-
 variable {F C : Type}
 
 /-- An exchange at the named step in either course, on their common present list.

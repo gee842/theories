@@ -1,5 +1,3 @@
-import Becoming.Frame
-
 /-!
 # Retrodiction: reading an earlier relation from later dated records
 

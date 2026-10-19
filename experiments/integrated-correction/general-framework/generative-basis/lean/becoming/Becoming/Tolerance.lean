@@ -1,5 +1,6 @@
 import Becoming.Withholding
 import Becoming.FaultEnvelopes
+import Becoming.Labelled
 
 /-!
 # Tolerance: thresholds of waiting and the laws that restore giving

@@ -102,8 +102,6 @@ The representation commits to discrete steps and natural quantities.
 
 namespace Becoming
 
-open Generative
-
 variable {F C Pos : Type}
 
 /-! ## The feeding closure -/

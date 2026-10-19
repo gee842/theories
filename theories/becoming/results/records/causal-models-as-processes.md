@@ -68,7 +68,8 @@ The delta is mainly placement: inputs_intervention_unfixed is a direct instance 
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [Mechanism.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean) | `Becoming.inputs`, `Becoming.inputs_determined`, `Becoming.trajectory`, `Becoming.inputsRun`, `Becoming.inputs_intervention_unfixed`, `Becoming.inputs_model_fixes`, `Becoming.forget`, `Becoming.Run.forget`, `Becoming.forget_inputs_determined_iff` |
+| proof | [Mechanism.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean) | `Becoming.inputs`, `Becoming.inputs_determined`, `Becoming.inputsRun`, `Becoming.inputs_intervention_unfixed`, `Becoming.inputs_model_fixes`, `Becoming.forget`, `Becoming.Run.forget`, `Becoming.forget_inputs_determined_iff` |
+| proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.trajectory` |
 | proof | [Experiment.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean) | `Becoming.Run.Fixes`, `Becoming.Run.not_fixes_of_untaken` |
 | proof | [Joint.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean) | `Becoming.Determined` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
@@ -79,6 +80,7 @@ The delta is mainly placement: inputs_intervention_unfixed is a direct instance 
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -130,4 +132,5 @@ Aliases: `Becoming.inputs`, `Becoming.inputs_determined`, `Becoming.trajectory`,
 - 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.
 - 19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: trajectory from Mechanism.lean to Recurrence.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Mechanism.lean). The claim is unchanged.
 - 34 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](causal-models-as-processes.json).

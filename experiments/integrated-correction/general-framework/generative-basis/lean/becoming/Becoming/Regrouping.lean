@@ -1,5 +1,7 @@
 import Becoming.Significance
 import Becoming.Counterfactual
+import Becoming.Frame
+import Becoming.ValuationFrames
 
 /-!
 # Comparison under regrouping

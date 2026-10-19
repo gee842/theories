@@ -266,7 +266,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "role": "proof",
-      "sha256": "9c401845bf7254fba72a74c82a5b4cc373ed68e72c2c151dfaf80933a3a73508",
+      "sha256": "6dbdfe672b8cc94aea03d87162781e4def99dec7672d7c357e3ece80f520a911",
       "declarations": [
         "Becoming.Decided"
       ]
@@ -330,6 +330,12 @@
       "role": "receipt",
       "sha256": "de95f96fbdaf4033149b61c99999a701769bbff509915f6fd858b0f6ce24e0f2",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -363,7 +369,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -559,6 +565,10 @@
     {
       "en": "19 October 2026, U3 (study section 196): Listing.lean gained the section \"what takes part in a step, counted\", its laws read on a flow's steps (Flow.present_*); one sentence added to the claim. The earlier claim is unchanged.",
       "zh": "2026年10月19日，U3（研究第 196 节）：Listing.lean 新增“参与一步者计数”一节，其规律在流的步上读出（Flow.present_*）；论断添一句。原论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Decidedness.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

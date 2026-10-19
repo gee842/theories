@@ -438,13 +438,20 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "role": "proof",
-      "sha256": "33e56ce738d062804808d426049498435660fafcfbd29ae38b8695148536cf35",
+      "sha256": "98bfa21a5f63725b5d67a702cae3d68dc884feca3a1beccf25c55d4acf7e2bac",
       "declarations": [
         "Becoming.Web.Excludes.not_of_alike",
         "Becoming.Web.tail_unexcluded",
         "Becoming.Web.excludesWithin_iff_conjunction",
         "Becoming.Clearing.tested_by_dweller",
-        "Becoming.Clearing.pooled",
+        "Becoming.Clearing.pooled"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LabelledRoles.lean",
+      "role": "proof",
+      "sha256": "9b44b75e5f51bb9d2088c16abc421eb2afa93f801880d68c2b0693821bbd6358",
+      "declarations": [
         "Becoming.Web.class_judge_iff"
       ]
     },
@@ -499,7 +506,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "afa3fa23f606a59e8b9578a3ba2046c136d2b4cb7310f29dff1cf5e020388d09",
+      "sha256": "60a43bae208eb28211003bdf046db891eafc73a59615d309b9a50e0be08ddf63",
       "declarations": [
         "Becoming.carries_law_iff",
         "Becoming.adaptive_state_law_iff"
@@ -508,13 +515,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "aecbe2c2ece126e2fc1d04f901d900bd1619a931679ab3a584888cf0a6e1b4d0",
+      "sha256": "d90322d546de3f1e326cf9cbcab1e5154101741edcb1fd772f3934976787e911",
       "declarations": [
         "Becoming.Learning.no_prefix_fixes_next",
         "Becoming.Learning.every_determines_nothing",
         "Becoming.Learning.determines_lumped_iff",
         "Becoming.Learning.lumped_right_iff",
-        "Becoming.Learning.goAlike_iff_lumped",
         "Becoming.Learning.held_byElimination_bounded",
         "Becoming.Learning.held_rest_unrefuted",
         "Becoming.Learning.no_prefix_fixes_next_finite",
@@ -524,6 +530,14 @@
         "Becoming.Learning.Training.unselected_beyond_data",
         "Becoming.Learning.merged_bound",
         "Becoming.Learning.merged_unrested"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
+      "role": "proof",
+      "sha256": "219dd3103e8aa5f0960e8e580bdd7fbe37957cc4b9446cd206e4a8327cd6db18",
+      "declarations": [
+        "Becoming.Learning.goAlike_iff_lumped"
       ]
     },
     {
@@ -564,7 +578,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "389e050bf149ae8a5e3bc6e04a13c46a1f3f311bd367b7bc3821ccb1e171eda7",
+      "sha256": "5026b3060b7f84309a8284f7b88d45c05e553aa6a76dcb248e60a196f54ac0b6",
       "declarations": [
         "Becoming.Identification.bounded_induction",
         "Becoming.Identification.withBound_exact",
@@ -623,12 +637,18 @@
       "role": "receipt",
       "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -670,14 +690,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -691,8 +711,22 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LabelledRoles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LabelledRoles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LearningRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1002,6 +1036,10 @@
     {
       "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Selection.lean re-pointed after reading the change (Selection.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
       "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Selection.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: class_judge_iff from Testing.lean to LabelledRoles.lean; goAlike_iff_lumped from Learning.lean to LearningRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Identification.lean, Learning.lean, Mechanism.lean, Testing.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

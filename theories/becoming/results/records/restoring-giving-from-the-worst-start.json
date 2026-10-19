@@ -247,17 +247,17 @@
         "Becoming.Tolerance.withheld_kept",
         "Becoming.Tolerance.worst_start"
       ],
-      "sha256": "3b25d41ace43dee151b03139a9df47b464991525fc7d0f2f463ba5f1b2b7eae0"
+      "sha256": "f70b67c5e45affb6e3e7ee774777c784c6abf1213f4d64a710ea6022dc55d54d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+      "sha256": "4e129f5e3d48fe5531409b283d30c0c896f834d2f2b40e74796c7bd19c3111ae"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Withholding.lean",
       "role": "proof",
-      "sha256": "b56112df45782fd28def6d31b6e6a6d52ec64d665e4f2163f2e1e7da61a01b99"
+      "sha256": "2492d75ada2bb95b38d3583eb3885238ed4e7d3f4ed0ffa479a620779371be05"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083316.966154Z/verification.json",
@@ -278,12 +278,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
       "role": "provenance",
       "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Tolerance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T083316.966154Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Tolerance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -337,6 +343,10 @@
     {
       "en": "19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.",
       "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Tolerance.lean). Re-pointed after reading the change (Recurrence.lean: declarations moved in or out by W2; Withholding.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

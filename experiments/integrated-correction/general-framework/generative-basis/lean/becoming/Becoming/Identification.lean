@@ -116,11 +116,12 @@ bound (`leastBound`) fix every history with at most `N` states from step `N + N 
 the Moore and Fine–Wilf bound read as a learning bound. The cubic step of elimination
 (`byElimination_rest_cubic`) is stated for the diagonal order in which `Learning.lassos`
 enumerates the candidates; another order is not covered.
+
+`Law.name_identifiesAlike`, `Law.name_carries` and `Law.decideAlike` are in
+`Becoming.IdentificationRuns`, so this module does not import the frame (board item W).
 -/
 
 namespace Becoming
-
-open Generative
 
 universe u v w
 
@@ -1576,26 +1577,6 @@ theorem sameFuture_iff_below {next : S → S} {o : S → R} {l : List S}
 /-- The name of a configuration: its future through the map before step `T`, latest first. -/
 def name (next : S → S) (o : S → R) (T : Nat) (s : S) : List R :=
   Learning.prefixOf (fun n => o (Law.orbit next s n)) T
-
-/-- **The split that makes sense, named with no quotient.** In a world a list holds, naming each
-configuration by its future through the map before `N + N - 1` makes sense. -/
-theorem name_identifiesAlike {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
-    IdentifiesAlike (Law.frameBy next o) (name next o (l.length + l.length - 1)) :=
-  fun s s' =>
-    (Identification.prefix_eq_iff.trans
-      (sameFuture_iff_below (fun s _ => world (next s)) (world s) (world s')).symm).trans
-      Law.alike_iff_sameFuture.symm
-
-/-- **The names carry the law.** -/
-theorem name_carries {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
-    ∃ Q : Process (List R) Unit,
-      Determined Q ∧ FactorsThrough (Law.process next) (name next o (l.length + l.length - 1)) Q :=
-  Law.IdentifiesAlike.carries (name_identifiesAlike world)
-
-/-- **Likeness is decided by comparing names.** -/
-def decideAlike [DecidableEq R] {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l)
-    (s s' : S) : Decidable (Alike (Law.frameBy next o) (Law.frameBy next o) s s') :=
-  decidable_of_iff _ (name_identifiesAlike world s s')
 
 /-! ## Moore's bound: the classes of one world -/
 

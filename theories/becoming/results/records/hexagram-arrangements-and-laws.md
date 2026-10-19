@@ -112,14 +112,15 @@ Closes the seventh gap the record chinese-sources-on-the-spine found (the hexagr
 | proof | [HexagramPlaces.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean) | `Becoming.Hexagram.Half`, `Becoming.Hexagram.Height`, `Becoming.Hexagram.place`, `Becoming.Hexagram.number`, `Becoming.Hexagram.heng`, `Becoming.Hexagram.xian`, `Becoming.Hexagram.opposed`, `Becoming.Hexagram.alternates`, `Becoming.Hexagram.opposed_complement`, `Becoming.Hexagram.alternates_complement`, `Becoming.Hexagram.phaseCount`, `Becoming.Hexagram.phaseCount_parity` |
 | proof | [HexagramLaws.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean) | `Becoming.Hexagram.nuclear`, `Becoming.Hexagram.Symmetry`, `Becoming.Hexagram.Symmetry.act` |
 | proof | [Commuting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean) | `Becoming.Law.Commutes`, `Becoming.Law.Commutes.paired_halfway`, `Becoming.Law.Commutes.iterate` |
-| proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.Law.run`, `Becoming.Law.process`, `Becoming.Law.Lossless`, `Becoming.Law.orbit`, `Becoming.Law.orbit_shift` |
+| proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.Law.Lossless`, `Becoming.Law.orbit`, `Becoming.Law.orbit_shift` |
 | proof | [Seeking.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean) | `Becoming.RestsAt` |
-| proof | [Learning.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean) | `Becoming.Learning.Lumped`, `Becoming.Learning.goAlike_iff_lumped` |
+| proof | [Learning.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean) | `Becoming.Learning.Lumped` |
+| proof | [LearningRuns.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean) | `Becoming.Learning.goAlike_iff_lumped` |
 | proof | [Mechanism.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean) | `Becoming.GoAlike` |
 | proof | [Frame.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean) | `Becoming.Run` |
 | proof | [World.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean) | `Becoming.World`, `Becoming.Exchange` |
 | proof | [Generation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) | `Becoming.Web.Rises` |
-| proof | [Labelled.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean) | `Becoming.exchange` |
+| proof | [Labelled.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean) | `Becoming.exchange`, `Becoming.Law.run`, `Becoming.Law.process` |
 | proof | [Unfolding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean) | `Becoming.World.balances_iff_exchange` |
 | proof | [Flow.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean) | `Becoming.Flow.Balances`, `Becoming.Flow.Balances.rise_given`, `Becoming.Flow.Balances.fall_taken` |
 | statement | [YI-ZHUAN-AND-BECOMING.md](../../chapters/YI-ZHUAN-AND-BECOMING.md) | — |
@@ -137,6 +138,7 @@ Closes the seventh gap the record chinese-sources-on-the-spine found (the hexagr
 | provenance | [31.json](../../../../sources/zhouyi-yizhuan/hexagrams/31.json) | — |
 | provenance | [32.json](../../../../sources/zhouyi-yizhuan/hexagrams/32.json) | — |
 | provenance | [2026-10-19-the-changes-on-the-spine.md](../../../../sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `序卦`, `雜卦`, `杂卦`, `卦變`, `卦变`, `損下益上`, `損上益下`, `陽卦奇`, `陰卦偶`, `帝出乎震`, `天地交`, `泰否之交`, `終止則亂`, `the received order as a run`, `exchange of two lines`, `parity of the count`, `Becoming.Hexagram.runsOrder_reads`, `Becoming.Hexagram.runsOrder_not_commutes`, `Becoming.Hexagram.across_exchange`, `Becoming.Hexagram.yangOdd_goAlike`, `Becoming.Hexagram.zagua_partners`, `Becoming.Hexagram.never_comes_to_rest`
 
@@ -148,6 +150,7 @@ Aliases: `序卦`, `雜卦`, `杂卦`, `卦變`, `卦变`, `損下益上`, `損�
 - 19 October 2026, RO's map guard: verify_ro.py re-pointed after reading the change (it also runs build_passages.py --check where the archives are present, so passages.json is checked to be the build of the mappers' entries and FIXES, and an edit made in place fails). The claim is unchanged.
 - 19 October 2026, RC (capture through the rule): passages.json re-pointed after reading the change (passages.json: RC: 二柄, 据有余而制不足 and 壹 cite Becoming.RuleCapture and its record, and 二柄's gap is marked closed). The claim is unchanged.
 - 19 October 2026, RG (two-sided regulation and late reading): passages.json re-pointed after reading the change (passages.json: RG added declarations and its record to four passages, replaced the sentences of their readings that named the first gap and marked that gap closed (other passages unchanged)). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: run, process from Recurrence.lean to Labelled.lean; goAlike_iff_lumped from Learning.lean to LearningRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Commuting.lean, HexagramPlaces.lean, Hexagrams.lean, Labelled.lean, Learning.lean, Mechanism.lean, Recurrence.lean, Unfolding.lean). The claim is unchanged.
 
 </details>
 

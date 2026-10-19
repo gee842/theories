@@ -1,4 +1,6 @@
 import Becoming.Metaethics
+import Becoming.Frame
+import Becoming.ValuationFrames
 
 /-!
 # What comparison C ranks under each reading of `living`

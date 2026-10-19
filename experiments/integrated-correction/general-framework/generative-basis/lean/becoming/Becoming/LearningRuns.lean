@@ -55,7 +55,60 @@ identity (`Parting.freeRun`), and every run of a determined law is its orbit
   candidates rests in accord with the second from step `2` (`pair_whole_rests`).
 
 No ethical predicate, ranking or axiom occurs.
+
+Declarations moved here unchanged, with their names, from `Becoming.Learning` (board item W): see
+the sections so headed.
 -/
+
+/-! ## Going alike, at a step and lumped (moved from `Becoming.Learning`) -/
+
+namespace Becoming
+
+open Generative
+
+universe u v w
+
+namespace Learning
+
+section Change
+
+variable {S : Type u} {A : Type v} {K : Type w}
+
+/-- Configurations `s` and `s'` go alike under `π` by the move `a`. -/
+def GoAlikeAt (P : Process S A) (π : S → K) (s s' : S) (a : A) : Prop :=
+  ∀ u u', P.step s a u → P.step s' a u' → π u = π u'
+
+/-- Going alike is going alike at every two configurations lumped together, by every move. -/
+theorem goAlike_iff_at {P : Process S A} {π : S → K} :
+    GoAlike P π ↔ ∀ s s' a, π s = π s' → GoAlikeAt P π s s' a :=
+  ⟨fun alike s s' a same u u' step step' => alike s s' a u u' same step step',
+   fun every s s' a u u' same step step' => every s s' a same u u' step step'⟩
+
+/-- **A law of change generalizes exactly where the step goes alike.** Under a determined
+process, the outcome of `a` observed at `s₀`, read through `π`, transfers to every step of `a`
+from `s` exactly where `s₀` and `s` go alike under `π` by `a`. The prefix does not fix this
+before `a` is taken at `s` (`Run.not_fixesThrough_of_goAlike` of `Becoming.Mechanism`). -/
+theorem transfer_right_iff {P : Process S A} {π : S → K} (determined : Determined P)
+    {s₀ s : S} {a : A} {u₀ : S} (observed : P.step s₀ a u₀) :
+    (∀ u, P.step s a u → π u = π u₀) ↔ GoAlikeAt P π s₀ s a :=
+  ⟨fun transfer u₁ u step₁ step =>
+    (congrArg π (determined s₀ a u₁ u₀ step₁ observed)).trans (transfer u step).symm,
+   fun alike u step => (alike u₀ u observed step).symm⟩
+
+/-- **Structure and change are one lumping.** A determined law goes alike under `π` exactly
+where the next configuration, read through `π`, goes alike across what `π` lumps. -/
+theorem goAlike_iff_lumped {next : S → S} {π : S → K} :
+    GoAlike (Law.process next) π ↔ Lumped π (fun s => π (next s)) :=
+  ⟨fun alike s s' same => alike s s' () (next s) (next s') same rfl rfl,
+   fun lumped s s' _ _ _ same step step' =>
+    (congrArg π step).trans ((lumped s s' same).trans (congrArg π step').symm)⟩
+
+end Change
+
+end Learning
+
+end Becoming
+
 
 namespace Becoming
 

@@ -1,5 +1,3 @@
-import Becoming.Frame
-
 /-!
 # Recurrence: what every law of change keeps, loses and returns to
 
@@ -78,10 +76,15 @@ spine's own is the form: no decidable equality and no choice is used, a list hol
 configurations being the only finiteness.
 
 No ethical predicate, ranking or axiom occurs.
+
+The laws of a determined law as a process and of reach along runs (`Law.process`, `Law.run`,
+`Run.revisits_from`, `keeps_reach_iff_returns`, `not_returns_iff_loses`, `WithinMoves` and what
+follows from it) are in `Becoming.Labelled`, so this module does not import the frame (board item
+W). `Law.SameFuture`, from `Becoming.Unfolding`, and `trajectory`, from `Becoming.Mechanism`, are
+stated here (see the sections so headed).
 -/
 
 namespace Becoming
-open Generative
 
 universe u v w
 
@@ -566,108 +569,51 @@ theorem return_keeps_history {next : S → S} {s : S} {p : Nat} (pos : 0 < p)
   ⟨(present_orbit next (s, past) p).trans back,
     fun same => withHistory_new next (s, past) pos same.symm⟩
 
-/-! ### The law as a process -/
-
-/-- A determined law as a process of the spine: one action, the step to `next s`. -/
-def process (next : S → S) : Process S Unit := ⟨fun s _ t => t = next s⟩
-
-/-- The run of a determined law from `s`. -/
-def run (next : S → S) (s : S) : Run (process next) :=
-  ⟨orbit next s, fun _ => (), fun _ => rfl⟩
-
-theorem run_state (next : S → S) (s : S) : (run next s).state = orbit next s := rfl
-
 end Law
 
-/-! ## Every run of every process -/
+end Becoming
 
-section Runs
+/-! ## The same future under a law (moved from `Becoming.Unfolding`) -/
 
-variable {S : Type u} {A : Type v} {P : Process S A}
+namespace Becoming
 
-/-- A run of any process whose configurations a list holds revisits from every step on. -/
-theorem Run.revisits_from (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) (T : Nat) :
-    ∃ i j, T ≤ i ∧ i < j ∧ r.state i = r.state j :=
-  Becoming.revisits_from held T
+universe u v w u' u''
 
-/-- A run whose configurations a list holds and whose changes a quantity marks: change does not
-recur (`not_marks` on the run's configurations). -/
-theorem Run.change_not_recurring (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) {q : S → Nat}
-    (marks : Marks q r.state) : ¬ ∀ T, ∃ k, T ≤ k ∧ r.state (k + 1) ≠ r.state k :=
-  fun recurs => not_marks held recurs q marks
+section Likeness
 
-/-- A possibility lost along an admissible path stays lost along every continuation. -/
-theorem Reach.lost_stays {t u t' : S} (lost : ¬ Reach P t u) (onward : Reach P t t') :
-    ¬ Reach P t' u :=
-  fun back => lost (onward.trans back)
+variable {S : Type u} {S' : Type u'} {S'' : Type u''} {A : Type v} {C : Type w}
 
-/-- **What can be had from a configuration is kept exactly where it can be had again.** Every
-configuration reachable from `s` is reachable from `t` exactly when `t` leads back to `s`. -/
-theorem keeps_reach_iff_returns {s t : S} : (∀ u, Reach P s u → Reach P t u) ↔ Reach P t s :=
-  ⟨fun keeps => keeps s (Reach.refl P s), fun back _ there => back.trans there⟩
+section Registered
 
-/-- **Along a path, the same possibilities exactly where it can be undone.** For `t` reached
-from `s`, the configurations reachable from both are the same exactly when `t` leads back to
-`s`. -/
-theorem same_reach_iff_returns {s t : S} (onward : Reach P s t) :
-    (∀ u, Reach P s u ↔ Reach P t u) ↔ Reach P t s :=
-  ⟨fun same => (same s).mp (Reach.refl P s),
-   fun back _ => ⟨fun there => back.trans there, fun there => onward.trans there⟩⟩
+variable {R : Type w}
 
-/-- **No way back is a lost possibility, with a witness.** `t` does not lead back to `s` exactly
-when some configuration reachable from `s` is not reachable from `t`: `s` itself is one. -/
-theorem not_returns_iff_loses {s t : S} : ¬ Reach P t s ↔ ∃ u, Reach P s u ∧ ¬ Reach P t u :=
-  ⟨fun away => ⟨s, Reach.refl P s, away⟩, fun ⟨_, there, lost⟩ back => lost (back.trans there)⟩
+/-- Two configurations have the same future through the map under a law. -/
+def Law.SameFuture (next : S → S) (o : S → R) (s s' : S) : Prop :=
+  ∀ n, o (Law.orbit next s n) = o (Law.orbit next s' n)
 
-end Runs
+end Registered
 
+end Likeness
 
-section Together
+end Becoming
 
-variable {S : Type u} {A : Type v} {C : Type w}
+/-! ## The trajectory of the standard model (moved from `Becoming.Mechanism`) -/
 
-/-- A bundle of claims realized together, at one configuration, at the end of a course of at most
-`n` moves from `s`. -/
-def WithinMoves (P : Process S A) (realized : S → C → Prop) (s : S) (n : Nat)
-    (bundle : C → Prop) : Prop :=
-  ∃ word t, Trace P s word t ∧ word.length ≤ n ∧ ∀ c, bundle c → realized t c
+namespace Becoming
 
-variable {P : Process S A} {realized : S → C → Prop} {bundle : C → Prop}
+universe u v w u'
 
-/-- One step before adds one move to the bound. -/
-theorem WithinMoves.before {s m : S} {a : A} {n : Nat} (step : P.step s a m) :
-    WithinMoves P realized m n bundle → WithinMoves P realized s (n + 1) bundle
-  | ⟨word, t, path, short, holds⟩ => ⟨a :: word, t, .cons step path, Nat.succ_le_succ short, holds⟩
+variable {S : Type u} {A : Type v} {K : Type w}
 
-/-- **A course carries every bound on realizing a bundle together, its own moves counted.** -/
-theorem WithinMoves.after_course {n : Nat} :
-    ∀ {s t : S} {xs : List A}, Trace P s xs t → WithinMoves P realized t n bundle →
-      WithinMoves P realized s (xs.length + n) bundle
-  | _, _, _, .nil _, within =>
-    Eq.subst (motive := fun k => WithinMoves P realized _ k bundle) (Nat.zero_add n).symm within
-  | _, _, _, .cons step path, within =>
-    Eq.subst (motive := fun k => WithinMoves P realized _ k bundle) (Nat.succ_add _ n).symm
-      (WithinMoves.before step (WithinMoves.after_course path within))
+section Inputs
 
-/-- **Realizable together within some bound is a reachable configuration realizing the
-bundle.** -/
-theorem withinMoves_iff_reach {s : S} :
-    (∃ n, WithinMoves P realized s n bundle) ↔ ∃ t, Reach P s t ∧ ∀ c, bundle c → realized t c :=
-  ⟨fun ⟨_, word, t, path, _, holds⟩ => ⟨t, ⟨word, path⟩, holds⟩,
-   fun ⟨t, ⟨word, path⟩, holds⟩ => ⟨word.length, word, t, path, Nat.le_refl _, holds⟩⟩
+variable {X : Type u} {U : Type v} {E : Type w}
 
-/-- **Along a course nothing becomes realizable together that was not before.** -/
-theorem together_after_reach {s t : S} (onward : Reach P s t) :
-    (∃ n, WithinMoves P realized t n bundle) → ∃ n, WithinMoves P realized s n bundle
-  | ⟨n, within⟩ => match onward with
-    | ⟨xs, path⟩ => ⟨xs.length + n, WithinMoves.after_course path within⟩
+/-- The trajectory of the standard model from `x₀` under inputs `u` and noise `e`. -/
+def trajectory (F : X → U → E → X) (x₀ : X) (u : Nat → U) (e : Nat → E) : Nat → X
+  | 0 => x₀
+  | n + 1 => F (trajectory F x₀ u e n) (u n) (e n)
 
-/-- **A bundle no longer realizable together marks a course with no way back.** -/
-theorem lost_together_not_returns {s t : S}
-    (before : ∃ n, WithinMoves P realized s n bundle)
-    (after : ¬ ∃ n, WithinMoves P realized t n bundle) : ¬ Reach P t s :=
-  fun back => after (together_after_reach back before)
-
-end Together
+end Inputs
 
 end Becoming

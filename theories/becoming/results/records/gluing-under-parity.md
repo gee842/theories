@@ -92,6 +92,7 @@ Ren asked on 12 October 2026 whether what a frame loses is like “wave/particle
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `when readings in context glue, for parity`, `奇偶约束下语境中的读法何时粘合`, `the parity law of gluing`, `粘合的奇偶律`, `a Bell-type bound without probability`, `不用概率的 Bell 型界`, `the only obstruction to context-free values`, `不依语境之值的唯一障碍`, `the parity law of a cycle`, `环的奇偶律`
 
@@ -123,6 +124,7 @@ Aliases: `when readings in context glue, for parity`, `奇偶约束下语境中�
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
 - 19 October 2026, MD1 (mutual dependence and the pace it gives): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: MD1 revised D39 (mutual dependence for "a highly entangled system", the loops following from it), keeping its earlier text, with its index row and lineage bullet). The claim is unchanged.
 - 19 October 2026, RC (capture through the rule): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: RC added decision D57, its index row and a lineage line). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Context.lean, ParityReadings.lean). The claim is unchanged.
 - 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](gluing-under-parity.json).
 
 <a id="earlier-text--早期文本"></a>

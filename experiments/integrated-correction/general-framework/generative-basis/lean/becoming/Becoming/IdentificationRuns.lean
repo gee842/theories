@@ -49,7 +49,222 @@ courses is `Courses.reachedFrom`. This module states those laws of runs and of r
   (`parity_whole_not_in_pairs`).
 
 No ethical predicate, ranking or axiom occurs.
+
+Declarations moved here unchanged, with their names, from `Becoming.Description` and
+`Becoming.Identification` (board item W): see the sections so headed.
 -/
+
+/-! ## Laws that identify alike configurations (moved from `Becoming.Description`) -/
+
+namespace Becoming
+
+open Generative
+
+universe u v w
+
+namespace Law
+
+variable {S : Type u} {R : Type v} {K : Type w}
+
+/-- Under a determined law, going alike is carrying what is lumped into what is lumped. This is
+`Becoming.Learning`'s `goAlike_iff_lumped`, written independently with the same proof, and is
+stated here as its instance. -/
+theorem goAlike_process_iff {next : S → S} {π : S → K} :
+    GoAlike (process next) π ↔ ∀ s s', π s = π s' → π (next s) = π (next s') :=
+  Learning.goAlike_iff_lumped
+
+/-- A split that keeps the map's value and carries a law relates configurations by a
+bisimulation of the law framed by the map. -/
+theorem kernel_bisimulation {next : S → S} {o : S → R} {π : S → K}
+    (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π) :
+    Bisimulation (frameBy next o) (frameBy next o) (fun s s' => π s = π s') :=
+  fun s s' same =>
+    have ahead : π (next s) = π (next s') := goAlike_process_iff.mp alike s s' same
+    ⟨fun _ => ⟨fun h => (keeps s s' same).symm.trans h, fun h => (keeps s s' same).trans h⟩,
+     fun _ _ to => ⟨next s', rfl, by cases to; exact ahead⟩,
+     fun _ _ to => ⟨next s, rfl, by cases to; exact ahead⟩⟩
+
+/-- Such a split loses nothing the map tells apart. -/
+theorem sameFuture_of_law {next : S → S} {o : S → R} {π : S → K}
+    (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π) {s s' : S}
+    (same : π s = π s') : SameFuture next o s s' :=
+  alike_iff_sameFuture.mp ⟨_, kernel_bisimulation keeps alike, same⟩
+
+/-- **The coarsest split that keeps the map's value and carries a law makes sense.** -/
+theorem identifiesAlike_of_law {next : S → S} {o : S → R} {π : S → K}
+    (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π)
+    (coarsest : ∀ s s', SameFuture next o s s' → π s = π s') : IdentifiesAlike (frameBy next o) π :=
+  identifiesAlike_iff.mpr ⟨kernel_bisimulation keeps alike,
+    fun s s' same => coarsest s s' (alike_iff_sameFuture.mp same)⟩
+
+/-- The split that lumps everything always carries a law (`goAlike_const`), and makes sense only
+where the map's value never differs. -/
+theorem const_identifiesAlike_iff {next : S → S} {o : S → R} (k : K) :
+    IdentifiesAlike (frameBy next o) (fun _ => k) ↔ ∀ s s', SameFuture next o s s' :=
+  ⟨fun sense s s' => alike_iff_sameFuture.mp ((sense s s').mp rfl),
+   fun all s s' => ⟨fun _ => alike_iff_sameFuture.mpr (all s s'), fun _ => rfl⟩⟩
+
+/-- **The map's present value makes sense by itself exactly where it fixes its own future
+through the map.** -/
+theorem now_identifiesAlike_iff {next : S → S} {o : S → R} :
+    IdentifiesAlike (frameBy next o) o ↔ ∀ s s', o s = o s' → SameFuture next o s s' :=
+  ⟨fun sense s s' e => alike_iff_sameFuture.mp ((sense s s').mp e),
+   fun fixes s s' => ⟨fun e => alike_iff_sameFuture.mpr (fixes s s' e),
+     fun same => (alike_iff_sameFuture.mp same) 0⟩⟩
+
+/-- **Through the identity map, the configuration itself is the split that makes sense**:
+nothing alike is two. -/
+theorem whole_identifiesAlike (next : S → S) : IdentifiesAlike (frameBy next id) id :=
+  identifiesAlike_id_iff.mpr fun _ _ alike => alike_iff_sameFuture.mp alike 0
+
+/-- **The part read through the map alone makes sense exactly where the rest never makes a
+difference through the map**; elsewhere the split that makes sense includes the rest. -/
+theorem part_identifiesAlike_iff {X : Type u} {C : Type v} {next : X × C → X × C} :
+    IdentifiesAlike (frameBy next Prod.fst) Prod.fst ↔
+      ∀ x c c', SameFuture next Prod.fst (x, c) (x, c') :=
+  now_identifiesAlike_iff.trans
+    ⟨fun fixes x c c' => fixes (x, c) (x, c') rfl,
+     fun rest s s' e => by
+       cases s with
+       | mk x c =>
+         cases s' with
+         | mk x' c' =>
+           have e : x = x' := e
+           subst e
+           exact rest x c c'⟩
+
+/-- Where the map's value carries a law, it fixes its own future through the map. -/
+theorem sameFuture_of_goAlike {next : S → S} {o : S → R} (alike : GoAlike (process next) o) :
+    ∀ s s', o s = o s' → SameFuture next o s s' := by
+  intro s s' e n
+  induction n with
+  | zero => exact e
+  | succ n ih => exact goAlike_process_iff.mp alike _ _ ih
+
+/-- **The map's present value makes sense by itself exactly where it carries a law**: a condition
+on one step. -/
+theorem now_identifiesAlike_iff_goAlike {next : S → S} {o : S → R} :
+    IdentifiesAlike (frameBy next o) o ↔ GoAlike (process next) o :=
+  now_identifiesAlike_iff.trans
+    ⟨fun fixes => goAlike_process_iff.mpr fun s s' e => fixes s s' e 1, sameFuture_of_goAlike⟩
+
+/-- **The part read through the map alone makes sense exactly where the rest makes no difference
+to its next value.** -/
+theorem part_identifiesAlike_iff_step {X : Type u} {C : Type v} {next : X × C → X × C} :
+    IdentifiesAlike (frameBy next Prod.fst) Prod.fst ↔ ∀ x c c', (next (x, c)).1 = (next (x, c')).1 := by
+  refine now_identifiesAlike_iff_goAlike.trans ⟨fun alike x c c' => goAlike_process_iff.mp alike _ _ rfl, ?_⟩
+  intro every
+  apply goAlike_process_iff.mpr
+  intro s s' e
+  cases s with
+  | mk x c =>
+    cases s' with
+    | mk x' c' =>
+      have e : x = x' := e
+      subst e
+      exact every x c c'
+
+/-- A part whose next value is set by a rule that changes with it: the part alone makes sense
+exactly where the rule makes no difference to it, the condition of `adaptive_state_law_iff`. -/
+theorem adaptive_identifiesAlike_iff {X : Type u} {C : Type v} (F : C → X → X) (G : C → X → C) :
+    IdentifiesAlike (frameBy (fun s : X × C => (F s.2 s.1, G s.2 s.1)) Prod.fst) Prod.fst ↔
+      ∀ x c c', F c x = F c' x :=
+  part_identifiesAlike_iff_step
+
+end Law
+
+namespace Motion
+
+/-- The same law read as `Becoming.Mechanism`'s adaptive process, the passing as the rule. -/
+theorem move_adaptive :
+    Law.process move = adaptive (fun g x (_ : Unit) => x + g) (fun g (_ : Nat) => g) :=
+  rfl
+
+/-- **Through the map to the standing alone, the split that makes sense is the pair.** -/
+theorem pair_identifiesAlike : IdentifiesAlike (Law.frameBy move Prod.fst) (fun s : Nat × Nat => s) :=
+  fun ⟨x, v⟩ ⟨x', v'⟩ =>
+    ⟨fun e => match e with | rfl => Alike.refl _ (x, v),
+     fun alike =>
+      have h := Law.alike_iff_sameFuture.mp alike
+      have hx : x = x' := h 0
+      have h1 : x + v = x' + v' := h 1
+      match hx with
+      | rfl => match cancel x ((Nat.add_comm v x).trans (h1.trans (Nat.add_comm x v'))) with
+        | rfl => rfl⟩
+
+/-- The standing alone carries no law: the passing makes a difference to it. -/
+theorem standing_alone : ¬ GoAlike (Law.process move) Prod.fst :=
+  fun alike => absurd ((adaptive_state_law_iff.mp (move_adaptive ▸ alike)) 0 1 0 ()) (by decide)
+
+/-- Neither alone makes sense. -/
+theorem neither_alone :
+    ¬ IdentifiesAlike (Law.frameBy move Prod.fst) Prod.fst ∧
+      ¬ IdentifiesAlike (Law.frameBy move Prod.fst) Prod.snd :=
+  ⟨fun sense => standing_alone (carries_law_iff.mp (Law.IdentifiesAlike.carries sense)),
+   fun sense => passing_alone (Law.alike_iff_sameFuture.mp ((sense (0, 0) (1, 0)).mp rfl))⟩
+
+/-- **Where nothing passes, the standing alone makes sense**: the pair is one. -/
+theorem still_identifiesAlike : IdentifiesAlike (Law.frameBy still Prod.fst) Prod.fst :=
+  Law.now_identifiesAlike_iff.mpr fun s s' h n =>
+    (congrArg Prod.fst (orbit_still s n)).trans (h.trans (congrArg Prod.fst (orbit_still s' n)).symm)
+
+end Motion
+
+section Moments
+
+variable {O : Type v}
+
+/-- **Every history through a map is a determined law read through a map**: the law of
+moments, each going on to the next, which is the succession of the step index and nothing more.
+Its alike moments are the moments that are one state. -/
+theorem alike_moments_iff {o : Nat → O} {t t' : Nat} :
+    Alike (Law.frameBy Nat.succ o) (Law.frameBy Nat.succ o) t t' ↔ SameAhead o t t' :=
+  Law.alike_iff_sameFuture.trans
+    ⟨fun h n => (congrArg o (Law.succ_orbit t n)).symm.trans
+        ((h n).trans (congrArg o (Law.succ_orbit t' n))),
+     fun h n => (congrArg o (Law.succ_orbit t n)).trans
+        ((h n).trans (congrArg o (Law.succ_orbit t' n)).symm)⟩
+
+end Moments
+
+end Becoming
+
+/-! ## Names that identify alike configurations (moved from `Becoming.Identification`) -/
+
+namespace Becoming
+
+open Generative
+
+universe u v w
+
+namespace Law
+
+variable {S : Type v} {R : Type w}
+
+/-- **The split that makes sense, named with no quotient.** In a world a list holds, naming each
+configuration by its future through the map before `N + N - 1` makes sense. -/
+theorem name_identifiesAlike {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
+    IdentifiesAlike (Law.frameBy next o) (name next o (l.length + l.length - 1)) :=
+  fun s s' =>
+    (Identification.prefix_eq_iff.trans
+      (sameFuture_iff_below (fun s _ => world (next s)) (world s) (world s')).symm).trans
+      Law.alike_iff_sameFuture.symm
+
+/-- **The names carry the law.** -/
+theorem name_carries {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
+    ∃ Q : Process (List R) Unit,
+      Determined Q ∧ FactorsThrough (Law.process next) (name next o (l.length + l.length - 1)) Q :=
+  Law.IdentifiesAlike.carries (name_identifiesAlike world)
+
+/-- **Likeness is decided by comparing names.** -/
+def decideAlike [DecidableEq R] {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l)
+    (s s' : S) : Decidable (Alike (Law.frameBy next o) (Law.frameBy next o) s s') :=
+  decidable_of_iff _ (name_identifiesAlike world s s')
+
+end Law
+
+end Becoming
+
 
 namespace Becoming
 

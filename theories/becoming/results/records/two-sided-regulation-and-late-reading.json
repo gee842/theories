@@ -476,12 +476,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "0a07620f53e13a4e3a8cbf473f6c7e395fe797520458acff457df65bb592f529"
+      "sha256": "55c3dc715dbf6559153b4e288062021f43e7e14d9e1ac967d172cc5102bf9d91"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+      "sha256": "4e129f5e3d48fe5531409b283d30c0c896f834d2f2b40e74796c7bd19c3111ae"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T152617.511553Z/verification.json",
@@ -491,7 +491,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "537f188554a8737bae2774fe082cd9ad8c405741900937af81ea8421dca01668"
+      "sha256": "44140389dd14b17c78ed9dc4c7e173e61f88f00c7b3277798131934a10b472e5"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -527,6 +527,10 @@
     {
       "en": "19 October 2026: added (RG), the first gap of the map of Chinese sources onto the spine; study section 214.",
       "zh": "2026年10月19日：新增（RG），即中国思想与脊柱对应表的第一项缺口；研究第 214 节。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: study section 180.14 added; Propagation.lean: declarations moved in or out by W2; Recurrence.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

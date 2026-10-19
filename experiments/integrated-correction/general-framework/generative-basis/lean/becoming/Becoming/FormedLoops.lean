@@ -44,8 +44,6 @@ add only the name. No ethical predicate, ranking or axiom occurs.
 
 namespace Becoming
 
-open Generative
-
 section Formed
 
 variable {F C : Type} {cs : List C} {part : F → Bool} {σ : Nat → F → C → Nat}

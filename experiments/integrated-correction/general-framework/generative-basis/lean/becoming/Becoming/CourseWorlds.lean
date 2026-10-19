@@ -1,4 +1,3 @@
-import Becoming.Runs
 import Becoming.Routes
 import Becoming.Frequency
 import Becoming.Observation
@@ -72,8 +71,6 @@ infinitely many conditions. No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
-
-open Generative
 
 variable {F C : Type}
 

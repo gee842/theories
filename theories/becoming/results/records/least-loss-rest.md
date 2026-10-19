@@ -91,6 +91,7 @@ The outside review of 19 October 2026 (R20) and an outside reader named the rest
 | review | [deps.log](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ll1-least-loss/audit/deps.log) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `least loss`, `最小损失`, `approach to rest`, `趋近停息`, `exponential relaxation`, `指数弛豫`, `rest over dense amounts`, `可稠密的量上的停息`, `geometric loss never rests`, `几何损失不停息`, `Becoming.Amounts.rests`, `Becoming.Amounts.rests_unrefuted`, `Becoming.Amounts.family_rests`, `Becoming.Halving.never_rests`, `Becoming.Layered.never_rests`, `Becoming.Amounts.approaches_rest`, `Becoming.Law.loss_needs_merge`
 
@@ -104,6 +105,7 @@ Aliases: `least loss`, `最小损失`, `approach to rest`, `趋近停息`, `expo
 - 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.
 - 19 October 2026, Y5 (Becoming.HexagramSequences): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y5 added a study section; THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.
 - 19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section; THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Recurrence.lean). The claim is unchanged.
 
 </details>
 

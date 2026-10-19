@@ -67,6 +67,9 @@ need not be webs; `Frame.world` reads a run's claims as a world but keeps neithe
 standings); that the readings glue (balance is a condition, not given with every world); the
 shared index of steps and the natural amounts (commitments of the representation). No ethical
 predicate, ranking or axiom occurs.
+
+`ExchangeLaw.courseWorld`, `ExchangeLaw.courseWorld_balanced_iff` and `carriedWorld` with its laws
+are in `Becoming.Propagation`, so the modules using them do not import the frame (board item W).
 -/
 
 namespace Becoming
@@ -217,26 +220,12 @@ section Course
 
 variable {F C : Type}
 
-/-- **The course a law of exchange generates, as a world.** Formations and conditions are roles of
-one relatum (`World.ofRoles` of the course's flow and web, `ExchangeLaw.courseWeb`): the formations
-present exchange as the law gives under the levels it generates, and the conditions stand at those
-levels. -/
-def ExchangeLaw.courseWorld (law : ExchangeLaw F C) (present : Nat → List F) (start : C → Nat)
-    (W : Web F C) : World :=
-  World.ofRoles (law.course present start) (law.courseWeb present start W)
-
 variable {law : ExchangeLaw F C} {present : Nat → List F} {start : C → Nat} {W : Web F C}
 
 /-- The course world's conditions stand at the levels the law generates. -/
 theorem ExchangeLaw.courseWorld_level (t : Nat) (c : C) :
     (law.courseWorld present start W).web.level t (.inr c) = law.levels present start t c :=
   rfl
-
-/-- **A course is a balanced world exactly where it is feasible**, under a law of what has
-stood. -/
-theorem ExchangeLaw.courseWorld_balanced_iff (na : law.Nonanticipating) :
-    (law.courseWorld present start W).Balanced ↔ law.Feasible present start :=
-  (law.course present start).roles_balances.trans (ExchangeLaw.course_balances_iff na W)
 
 /-- A feasible course of a law of what has stood as a run of the law of exchange on webs. -/
 def ExchangeLaw.courseRun (na : law.Nonanticipating) (feasible : law.Feasible present start) :
@@ -280,21 +269,6 @@ section Carried
 
 variable {F C : Type} {cs : List C} {part : F → Bool} {σ : Nat → F → C → Nat}
   {k : Nat → F → C → Nat → C → Nat} {present : Nat → List F} {δ : C → Nat}
-
-/-- **The world the carrying law generates**: its conditions stand at the carried amount, every
-formation active, nothing required. -/
-def carriedWorld (cs : List C) (part : F → Bool) (σ : Nat → F → C → Nat)
-    (k : Nat → F → C → Nat → C → Nat) (present : Nat → List F) (δ : C → Nat) : World :=
-  (ExchangeLaw.carrying cs part σ k).courseWorld present δ (Propagation.webOf fun _ _ => 0)
-
-/-- The carried amount is the standing of the carried world. -/
-theorem carriedWorld_level (t : Nat) (c : C) :
-    (carriedWorld cs part σ k present δ).web.level t (.inr c) = carried cs part σ k present δ t c :=
-  rfl
-
-/-- **The carried world balances**, with no premise. -/
-theorem carriedWorld_balanced : (carriedWorld cs part σ k present δ).Balanced :=
-  ((ExchangeLaw.carrying cs part σ k).course present δ).roles_balances.mpr carrying_balances
 
 /-- The carried world as a run of the law of exchange on webs. -/
 def carriedRun (cs : List C) (part : F → Bool) (σ : Nat → F → C → Nat)

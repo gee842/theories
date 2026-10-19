@@ -256,7 +256,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
       "role": "proof",
-      "sha256": "9c401845bf7254fba72a74c82a5b4cc373ed68e72c2c151dfaf80933a3a73508",
+      "sha256": "6dbdfe672b8cc94aea03d87162781e4def99dec7672d7c357e3ece80f520a911",
       "declarations": [
         "Becoming.WeaklyDecided",
         "Becoming.Undominated",
@@ -291,22 +291,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
       "role": "proof",
-      "sha256": "45460b06ad0edd439600480a97053633e7d792c8dbe0f90738135fc2a0af6b7b",
+      "sha256": "1294637793dea407f38a3f1c45a92da00139d896af5fd281c83e485f5856910d",
       "declarations": [
         "Becoming.Lexical.Above.trans",
         "Becoming.Lexical.BasicPriority.trans",
         "Becoming.Lexical.Crossed.incomparable",
-        "Becoming.Lexical.Frame.Above",
-        "Becoming.Lexical.tierFrame",
         "Becoming.Lexical.basicSide",
-        "Becoming.Lexical.gainSide",
-        "Becoming.Lexical.above_iff_frame"
+        "Becoming.Lexical.gainSide"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
       "role": "proof",
-      "sha256": "3c0bedc0a9f8cc4ba9e60aee981fcc9b7b5d562df291597296790f68373d66cf",
+      "sha256": "1018c328c008dcc56dc0294cb47730b7030ab25e0d969a742031f86148b94cbb",
       "declarations": [
         "Becoming.Requirement.Served.successor",
         "Becoming.Lexical.BasicPriority.frontier_iff",
@@ -331,7 +328,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
       "role": "proof",
-      "sha256": "d86d6a921cb05ae244cc600903ae1100b8f1791d0eba7d350be615d7b6dbb550",
+      "sha256": "8d2b13b1b6de580bbf8f83c62c23b9c5ce848ad82275ee8c6c361d275eeaf24c",
       "declarations": [
         "Becoming.FrontierFrames.Priority",
         "Becoming.FrontierFrames.Options",
@@ -346,7 +343,10 @@
         "Becoming.FrontierFrames.means",
         "Becoming.FrontierFrames.nothing_required",
         "Becoming.FrontierFrames.Priority.kept_unrefuted",
-        "Becoming.FrontierFrames.Priority.kept_required"
+        "Becoming.FrontierFrames.Priority.kept_required",
+        "Becoming.Lexical.Frame.Above",
+        "Becoming.Lexical.tierFrame",
+        "Becoming.Lexical.above_iff_frame"
       ]
     },
     {
@@ -385,6 +385,12 @@
       "role": "receipt",
       "sha256": "b66b9f4f542992d9b2d6b9dbb2c42b7b0085f38c3b61ec79a4bb992650a96906",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -411,21 +417,21 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Decidedness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Decidedness",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Lexical",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frontier.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Frontier",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -439,7 +445,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FrontierFrames",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -575,6 +581,10 @@
     {
       "en": "19 October 2026, U5 (study section 208): FrontierWorlds gains the assignment and discharge laws of Frontier read on the world's moves (sole giver required and active; discharge leaves no residual step); its proof reference and binding move to core receipt 20261019T133615.720595Z. The statement and the warrant of the commitments are unchanged.",
       "zh": "2026年10月19日，U5（研究第 208 节）：FrontierWorlds 新增在世界移动上读出的 Frontier 分派与了结规律（唯一给予者被要求且活跃；了结不留余欠之步）；其证明引用与绑定移到核心回执 20261019T133615.720595Z。陈述与承诺的根据不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: Above, tierFrame, above_iff_frame from Lexical.lean to FrontierFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Decidedness.lean, Frontier.lean, FrontierFrames.lean, Lexical.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

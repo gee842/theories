@@ -150,8 +150,6 @@ family of formations; one act of a formation is compared through a second flow, 
 
 namespace Becoming
 
-open Generative
-
 variable {F C : Type}
 
 /-! ## Closures under a relation -/

@@ -1,5 +1,6 @@
 import Becoming.SelectionPool
 import Becoming.TimedResponse
+import Becoming.Decidedness
 
 /-!
 # Pool response: what a pool's acts respond to

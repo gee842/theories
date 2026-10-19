@@ -1,4 +1,6 @@
 import Becoming.Lexical
+import Becoming.Frame
+import Becoming.ValuationFrames
 
 /-!
 # Which scores represent the priority of basic conditions

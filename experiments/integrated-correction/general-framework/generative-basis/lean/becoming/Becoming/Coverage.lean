@@ -1,5 +1,6 @@
 import Becoming.Frame
 import Becoming.Integers
+import Becoming.Decidedness
 
 /-!
 # Coverage: a placement course, the global cover it builds, and an invariant that rules it out
@@ -30,6 +31,9 @@ module states in the core what `ExplanatoryStructure` and one theorem of `Explan
 (6 October 2026) proved with Lean's list and integer lemmas, which carry `propext`; the permutation
 facts and integer laws here are constructive (board item F3E, 18 October 2026). No ethical
 predicate, ranking or axiom occurs; every declaration has an empty axiom report.
+
+`Coverage.Perm.mem` is in `Becoming.Decidedness`, so `Becoming.ListFootprints` does not import the
+frame (board item W).
 -/
 
 namespace Becoming
@@ -50,22 +54,6 @@ theorem Perm.length_eq {l l' : List C} (h : l.Perm l') : l.length = l'.length :=
   | cons _ _ ih => exact congrArg Nat.succ ih
   | swap _ _ _ => rfl
   | trans _ _ ih ih' => exact ih.trans ih'
-
-theorem Perm.mem {l l' : List C} (h : l.Perm l') {a : C} (mem : a ∈ l') : a ∈ l := by
-  induction h with
-  | nil => exact mem
-  | cons x _ ih =>
-    cases mem with
-    | head => exact .head _
-    | tail _ mem => exact .tail _ (ih mem)
-  | swap x y _ =>
-    cases mem with
-    | head => exact .tail _ (.head _)
-    | tail _ mem =>
-      cases mem with
-      | head => exact .head _
-      | tail _ mem => exact .tail _ (.tail _ mem)
-  | trans _ _ ih ih' => exact ih (ih' mem)
 
 theorem Perm.eq_nil {l : List C} (h : l.Perm []) : l = [] :=
   match l, Perm.length_eq h with

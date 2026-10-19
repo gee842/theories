@@ -82,8 +82,6 @@ quantities. No ethical predicate, ranking or axiom occurs.
 
 namespace Becoming
 
-open Generative
-
 variable {F C : Type}
 
 /-- A closure under the converse of a relation is the converse of the closure: `g` lies within

@@ -1,4 +1,5 @@
 import Becoming.Feedback
+import Becoming.Frame
 
 /-!
 # The seed–edge closure

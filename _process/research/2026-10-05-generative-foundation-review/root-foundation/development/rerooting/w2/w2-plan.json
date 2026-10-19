@@ -1,0 +1,1874 @@
+{
+ "split": [
+  "Becoming.Capture",
+  "Becoming.Context",
+  "Becoming.Counterfactual",
+  "Becoming.Description",
+  "Becoming.Diagonal",
+  "Becoming.Frontier",
+  "Becoming.Identification",
+  "Becoming.Learning",
+  "Becoming.Lexical",
+  "Becoming.Metaethics",
+  "Becoming.Recurrence",
+  "Becoming.Significance",
+  "Becoming.Testing",
+  "Becoming.Weighted"
+ ],
+ "targets": {
+  "Becoming.Capture": "Becoming.SeekingRuns",
+  "Becoming.Context": "Becoming.ContextArrivalTraces",
+  "Becoming.Counterfactual": "Becoming.CounterfactualRuns",
+  "Becoming.Description": "Becoming.IdentificationRuns",
+  "Becoming.Diagonal": "Becoming.DiagonalRuns",
+  "Becoming.Frontier": "Becoming.FrontierFrames",
+  "Becoming.Identification": "Becoming.IdentificationRuns",
+  "Becoming.Learning": "Becoming.LearningRuns",
+  "Becoming.Lexical": "Becoming.FrontierFrames",
+  "Becoming.Metaethics": "Becoming.ValuationFrames",
+  "Becoming.Recurrence": "Becoming.Labelled",
+  "Becoming.Significance": "Becoming.ValuationFrames",
+  "Becoming.Testing": "Becoming.LabelledRoles",
+  "Becoming.Weighted": "Becoming.WeightedTraces"
+ },
+ "keep": {
+  "Becoming.Likeness": "Becoming.Decidedness",
+  "Becoming.Unfolding": "Becoming.Recurrence",
+  "Becoming.Horizon": "Becoming.HorizonWebs",
+  "Becoming.Readings": "Becoming.BoundaryWorlds",
+  "Becoming.Standpoints": "Becoming.Continuation",
+  "Becoming.Runs": "Becoming.Propagation",
+  "Becoming.Mechanism": "Becoming.Recurrence",
+  "Becoming.Joining": "Becoming.Decidedness",
+  "Becoming.Coverage": "Becoming.Decidedness",
+  "Becoming.Composition": "Becoming.JointPlans"
+ },
+ "new_modules": {
+  "Becoming.ValuationFrames": [
+   "Becoming.Inquiry",
+   "Becoming.Labelled",
+   "Becoming.Significance"
+  ]
+ },
+ "moved": {
+  "Becoming.Labelled": [
+   "Becoming.Law.process",
+   "Becoming.Law.run",
+   "Becoming.Law.run_state",
+   "Becoming.Reach.lost_stays",
+   "Becoming.Run.change_not_recurring",
+   "Becoming.Run.revisits_from",
+   "Becoming.WithinMoves",
+   "Becoming.WithinMoves.after_course",
+   "Becoming.WithinMoves.before",
+   "Becoming.keeps_reach_iff_returns",
+   "Becoming.lost_together_not_returns",
+   "Becoming.not_returns_iff_loses",
+   "Becoming.same_reach_iff_returns",
+   "Becoming.together_after_reach",
+   "Becoming.withinMoves_iff_reach"
+  ],
+  "Becoming.DiagonalRuns": [
+   "Becoming.Frame.self_incomplete"
+  ],
+  "Becoming.ContextArrivalTraces": [
+   "Becoming.Arrives",
+   "Becoming.ChangingContext.arrives",
+   "Becoming.ChangingContext.erased_not_lifted",
+   "Becoming.ChangingContext.joins",
+   "Becoming.Contextual.FitsFree",
+   "Becoming.Contextual.fitsFree_iff",
+   "Becoming.Contextual.indexed",
+   "Becoming.Contextual.indexed_fits",
+   "Becoming.Contextual.no_free_frame",
+   "Becoming.CrossingContexts.family",
+   "Becoming.CrossingContexts.not_inOne",
+   "Becoming.CrossingContexts.not_joinClosed",
+   "Becoming.CrossingContexts.pooled_crosses",
+   "Becoming.CrossingContexts.retained_excludes",
+   "Becoming.InOne",
+   "Becoming.InOne.pooled",
+   "Becoming.JoinClosed",
+   "Becoming.JoinClosed.inOne",
+   "Becoming.arrives_append",
+   "Becoming.arrives_singleton",
+   "Becoming.arrives_snoc",
+   "Becoming.erasedLaw",
+   "Becoming.erasedLaw_exact_iff_lifts",
+   "Becoming.evolvingLaw",
+   "Becoming.pooledLaw",
+   "Becoming.pooledLaw_exact_iff_joinClosed",
+   "Becoming.retainedLaw",
+   "Becoming.retainedLaw_realizes_inOne",
+   "Becoming.retainedLaw_trace",
+   "Becoming.retainedLaw_trace_iff"
+  ],
+  "Becoming.HorizonWebs": [
+   "Becoming.Feedback.after_horizon",
+   "Becoming.Feedback.at_horizon",
+   "Becoming.Feedback.continuing",
+   "Becoming.Feedback.descending",
+   "Becoming.Feedback.law",
+   "Becoming.Feedback.prefix_does_not_decide",
+   "Becoming.Feedback.step_one",
+   "Becoming.Feedback.step_two",
+   "Becoming.Feedback.stopping",
+   "Becoming.Feedback.supported"
+  ],
+  "Becoming.Recurrence": [
+   "Becoming.Law.SameFuture",
+   "Becoming.trajectory"
+  ],
+  "Becoming.WeightedTraces": [
+   "Becoming.counting_transfer_iff",
+   "Becoming.possibility_transfer_iff"
+  ],
+  "Becoming.SeekingRuns": [
+   "Becoming.Law.perturbation_reabsorbed"
+  ],
+  "Becoming.ValuationFrames": [
+   "Becoming.AccessAt",
+   "Becoming.Comparison",
+   "Becoming.Comparison.climbs",
+   "Becoming.Comparison.outgrows",
+   "Becoming.Comparison.separates",
+   "Becoming.Conditions.connected_of_common",
+   "Becoming.Conditions.consumption_relates",
+   "Becoming.Conditions.significant_iff_of_common",
+   "Becoming.Conditions.significant_of_unrestricted",
+   "Becoming.Conditions.stepwise_related",
+   "Becoming.Conditions.valuation",
+   "Becoming.Conditions.valuing_consumption_reaches",
+   "Becoming.Extension",
+   "Becoming.Extension.irrefl",
+   "Becoming.Extension.trans",
+   "Becoming.G0",
+   "Becoming.LiftBetter",
+   "Becoming.LiftBetter.irrefl",
+   "Becoming.LiftBetter.some",
+   "Becoming.LiftBetter.trans",
+   "Becoming.Model.connection_is_needed",
+   "Becoming.Model.isolated",
+   "Becoming.Model.linked_connected",
+   "Becoming.Model.relational_neutrality_is_needed",
+   "Becoming.Model.seed_is_needed",
+   "Becoming.Model.standpoint_neutrality_is_needed",
+   "Becoming.Renewable.readings_differ",
+   "Becoming.Separate.frame",
+   "Becoming.Separate.not_connected",
+   "Becoming.Separate.still",
+   "Becoming.Valuation.Connected",
+   "Becoming.Valuation.g0",
+   "Becoming.Valuation.reaches",
+   "Becoming.Valuation.relations",
+   "Becoming.Valuation.significant_iff",
+   "Becoming.Valuation.significant_of_grounds",
+   "Becoming.Valuation.transmits_invariant",
+   "Becoming.Web.connected_of_common",
+   "Becoming.Web.paths",
+   "Becoming.Web.paths_comparison_widens",
+   "Becoming.Web.paths_extension_iff_widens",
+   "Becoming.Web.paths_g0_comparison",
+   "Becoming.Web.significant_iff_of_common",
+   "Becoming.universal_reason"
+  ],
+  "Becoming.Continuation": [
+   "Becoming.Clearing.fedBy_source",
+   "Becoming.Flow.FedBy"
+  ],
+  "Becoming.LabelledRoles": [
+   "Becoming.Flow.class_judge_beyond",
+   "Becoming.Renewable.finite_reading_withholds_renewal",
+   "Becoming.Renewable.no_exact_finite_reading",
+   "Becoming.Web.class_judge_iff",
+   "Becoming.Web.class_judge_later",
+   "Becoming.Web.class_judge_widen",
+   "Becoming.sees_narrow"
+  ],
+  "Becoming.CounterfactualRuns": [
+   "Becoming.ExchangeLaw.act_not_taken",
+   "Becoming.ExchangeLaw.closedBy_course",
+   "Becoming.ExchangeLaw.counterfactual_beyond_shown",
+   "Becoming.ExchangeLaw.worldRun",
+   "Becoming.ExchangeLaw.world_exchange_iff",
+   "Becoming.Run.beyond_shown_iff"
+  ],
+  "Becoming.LearningRuns": [
+   "Becoming.Learning.GoAlikeAt",
+   "Becoming.Learning.goAlike_iff_at",
+   "Becoming.Learning.goAlike_iff_lumped",
+   "Becoming.Learning.transfer_right_iff"
+  ],
+  "Becoming.IdentificationRuns": [
+   "Becoming.Law.adaptive_identifiesAlike_iff",
+   "Becoming.Law.const_identifiesAlike_iff",
+   "Becoming.Law.decideAlike",
+   "Becoming.Law.goAlike_process_iff",
+   "Becoming.Law.identifiesAlike_of_law",
+   "Becoming.Law.kernel_bisimulation",
+   "Becoming.Law.name_carries",
+   "Becoming.Law.name_identifiesAlike",
+   "Becoming.Law.now_identifiesAlike_iff",
+   "Becoming.Law.now_identifiesAlike_iff_goAlike",
+   "Becoming.Law.part_identifiesAlike_iff",
+   "Becoming.Law.part_identifiesAlike_iff_step",
+   "Becoming.Law.sameFuture_of_goAlike",
+   "Becoming.Law.sameFuture_of_law",
+   "Becoming.Law.whole_identifiesAlike",
+   "Becoming.Motion.move_adaptive",
+   "Becoming.Motion.neither_alone",
+   "Becoming.Motion.pair_identifiesAlike",
+   "Becoming.Motion.standing_alone",
+   "Becoming.Motion.still_identifiesAlike",
+   "Becoming.alike_moments_iff"
+  ],
+  "Becoming.Decidedness": [
+   "Becoming.Coverage.Perm.mem",
+   "Becoming.Decided.exists_listed",
+   "Becoming.Decided.exists_not_in",
+   "Becoming.Joining.appended_assoc"
+  ],
+  "Becoming.JointPlans": [
+   "Becoming.JointPlan",
+   "Becoming.JointPlan.Realizes",
+   "Becoming.JointPlan.draws",
+   "Becoming.JointPlan.nodup_of_realizes",
+   "Becoming.JointPlan.supports_of_realizes",
+   "Becoming.JointPlan.within_of_realizes",
+   "Becoming.PartsApart",
+   "Becoming.PartsWithin",
+   "Becoming.Supports",
+   "Becoming.mem_appended_split",
+   "Becoming.nodup_append_of_apart"
+  ],
+  "Becoming.BoundaryWorlds": [
+   "Becoming.bounded_invariant_iff",
+   "Becoming.presupposition_iff_all_of_invariant"
+  ],
+  "Becoming.FrontierFrames": [
+   "Becoming.Lexical.Frame.Above",
+   "Becoming.Lexical.Frame.above_basic_iff",
+   "Becoming.Lexical.Frame.above_gain_iff",
+   "Becoming.Lexical.Frame.above_of_extension",
+   "Becoming.Lexical.Frame.adjoin_iff",
+   "Becoming.Lexical.Frame.classified_extension_iff",
+   "Becoming.Lexical.Frame.classified_of_extension",
+   "Becoming.Lexical.Frame.comparison_of_decided",
+   "Becoming.Lexical.Frame.crossed_incomparable",
+   "Becoming.Lexical.Frame.fresh",
+   "Becoming.Lexical.Frame.fresh_basic_reverses",
+   "Becoming.Lexical.Frame.fresh_gains_decide",
+   "Becoming.Lexical.Frame.gain_transfer_iff",
+   "Becoming.Lexical.Frame.included_adjoin_iff",
+   "Becoming.Lexical.Frame.not_not_above_of_extension",
+   "Becoming.Lexical.Frame.old",
+   "Becoming.Lexical.Frame.strictIncluded_adjoin_iff",
+   "Becoming.Lexical.above_iff_frame",
+   "Becoming.Lexical.included_basicSide_iff",
+   "Becoming.Lexical.included_gainSide_iff",
+   "Becoming.Lexical.tierFrame",
+   "Becoming.Requirement.Formation.basis_after",
+   "Becoming.Requirement.Formation.draw",
+   "Becoming.Requirement.Formation.draw_step_iff",
+   "Becoming.Requirement.Formation.frame",
+   "Becoming.Requirement.Formation.idle_rests_left_changes",
+   "Becoming.Requirement.Formation.left_step_retains",
+   "Becoming.Requirement.Formation.no_report_judge_of_step",
+   "Becoming.Requirement.Formation.no_route_required_on_frame",
+   "Becoming.Requirement.Formation.overbuild_off_frontier_on_frame",
+   "Becoming.Requirement.Formation.overbuild_step_loses",
+   "Becoming.Requirement.Formation.priority_on_frame",
+   "Becoming.Requirement.Formation.report_same_basis_differs",
+   "Becoming.Requirement.Formation.required_on_frame",
+   "Becoming.Requirement.Formation.rests_iff_free",
+   "Becoming.Requirement.Required.through_summary"
+  ],
+  "Becoming.Propagation": [
+   "Becoming.ExchangeLaw.courseWorld",
+   "Becoming.ExchangeLaw.courseWorld_balanced_iff",
+   "Becoming.carriedWorld",
+   "Becoming.carriedWorld_balanced",
+   "Becoming.carriedWorld_level"
+  ]
+ },
+ "moves": {
+  "Becoming.WithinMoves.before": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.Law.process": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.Run.revisits_from": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.not_returns_iff_loses": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.WithinMoves.after_course": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.Law.run_state": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.Reach.lost_stays": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.together_after_reach": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.Law.run": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.WithinMoves": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.withinMoves_iff_reach": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.lost_together_not_returns": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.Run.change_not_recurring": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.keeps_reach_iff_returns": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.same_reach_iff_returns": [
+   "Becoming.Recurrence",
+   "Becoming.Labelled"
+  ],
+  "Becoming.Frame.self_incomplete": [
+   "Becoming.Diagonal",
+   "Becoming.DiagonalRuns"
+  ],
+  "Becoming.InOne.pooled": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.CrossingContexts.not_inOne": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.ChangingContext.erased_not_lifted": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.Contextual.no_free_frame": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.erasedLaw_exact_iff_lifts": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.retainedLaw_trace": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.CrossingContexts.pooled_crosses": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.Contextual.fitsFree_iff": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.retainedLaw": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.ChangingContext.joins": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.CrossingContexts.not_joinClosed": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.retainedLaw_realizes_inOne": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.ChangingContext.arrives": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.Contextual.indexed": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.arrives_singleton": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.evolvingLaw": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.Contextual.indexed_fits": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.arrives_append": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.Arrives": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.pooledLaw_exact_iff_joinClosed": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.CrossingContexts.family": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.retainedLaw_trace_iff": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.JoinClosed.inOne": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.CrossingContexts.retained_excludes": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.arrives_snoc": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.JoinClosed": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.pooledLaw": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.InOne": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.erasedLaw": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.Contextual.FitsFree": [
+   "Becoming.Context",
+   "Becoming.ContextArrivalTraces"
+  ],
+  "Becoming.Feedback.descending": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.stopping": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.step_one": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.continuing": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.after_horizon": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.supported": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.at_horizon": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.law": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.prefix_does_not_decide": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.Feedback.step_two": [
+   "Becoming.Horizon",
+   "Becoming.HorizonWebs"
+  ],
+  "Becoming.trajectory": [
+   "Becoming.Mechanism",
+   "Becoming.Recurrence"
+  ],
+  "Becoming.Law.SameFuture": [
+   "Becoming.Unfolding",
+   "Becoming.Recurrence"
+  ],
+  "Becoming.counting_transfer_iff": [
+   "Becoming.Weighted",
+   "Becoming.WeightedTraces"
+  ],
+  "Becoming.possibility_transfer_iff": [
+   "Becoming.Weighted",
+   "Becoming.WeightedTraces"
+  ],
+  "Becoming.Law.perturbation_reabsorbed": [
+   "Becoming.Capture",
+   "Becoming.SeekingRuns"
+  ],
+  "Becoming.Conditions.valuing_consumption_reaches": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Extension.irrefl": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Model.standpoint_neutrality_is_needed": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Model.isolated": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Conditions.significant_iff_of_common": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Valuation.significant_of_grounds": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Separate.still": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Model.relational_neutrality_is_needed": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Web.significant_iff_of_common": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Valuation.significant_iff": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Extension": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.LiftBetter.irrefl": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.LiftBetter.some": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Model.connection_is_needed": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.LiftBetter.trans": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Renewable.readings_differ": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Valuation.transmits_invariant": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Model.linked_connected": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Model.seed_is_needed": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Comparison.outgrows": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Extension.trans": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Conditions.valuation": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Comparison": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Valuation.Connected": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Valuation.relations": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Conditions.consumption_relates": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.universal_reason": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Valuation.g0": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.AccessAt": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Separate.not_connected": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Web.connected_of_common": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.LiftBetter": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.G0": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Separate.frame": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Conditions.stepwise_related": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Comparison.separates": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Comparison.climbs": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Valuation.reaches": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Conditions.connected_of_common": [
+   "Becoming.Metaethics",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Conditions.significant_of_unrestricted": [
+   "Becoming.Significance",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Web.paths": [
+   "Becoming.Significance",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Web.paths_g0_comparison": [
+   "Becoming.Significance",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Web.paths_extension_iff_widens": [
+   "Becoming.Significance",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Web.paths_comparison_widens": [
+   "Becoming.Significance",
+   "Becoming.ValuationFrames"
+  ],
+  "Becoming.Flow.FedBy": [
+   "Becoming.Standpoints",
+   "Becoming.Continuation"
+  ],
+  "Becoming.Clearing.fedBy_source": [
+   "Becoming.Standpoints",
+   "Becoming.Continuation"
+  ],
+  "Becoming.Renewable.finite_reading_withholds_renewal": [
+   "Becoming.Testing",
+   "Becoming.LabelledRoles"
+  ],
+  "Becoming.Web.class_judge_iff": [
+   "Becoming.Testing",
+   "Becoming.LabelledRoles"
+  ],
+  "Becoming.Renewable.no_exact_finite_reading": [
+   "Becoming.Testing",
+   "Becoming.LabelledRoles"
+  ],
+  "Becoming.sees_narrow": [
+   "Becoming.Testing",
+   "Becoming.LabelledRoles"
+  ],
+  "Becoming.Web.class_judge_later": [
+   "Becoming.Testing",
+   "Becoming.LabelledRoles"
+  ],
+  "Becoming.Flow.class_judge_beyond": [
+   "Becoming.Testing",
+   "Becoming.LabelledRoles"
+  ],
+  "Becoming.Web.class_judge_widen": [
+   "Becoming.Testing",
+   "Becoming.LabelledRoles"
+  ],
+  "Becoming.ExchangeLaw.closedBy_course": [
+   "Becoming.Counterfactual",
+   "Becoming.CounterfactualRuns"
+  ],
+  "Becoming.ExchangeLaw.counterfactual_beyond_shown": [
+   "Becoming.Counterfactual",
+   "Becoming.CounterfactualRuns"
+  ],
+  "Becoming.ExchangeLaw.world_exchange_iff": [
+   "Becoming.Counterfactual",
+   "Becoming.CounterfactualRuns"
+  ],
+  "Becoming.Run.beyond_shown_iff": [
+   "Becoming.Counterfactual",
+   "Becoming.CounterfactualRuns"
+  ],
+  "Becoming.ExchangeLaw.act_not_taken": [
+   "Becoming.Counterfactual",
+   "Becoming.CounterfactualRuns"
+  ],
+  "Becoming.ExchangeLaw.worldRun": [
+   "Becoming.Counterfactual",
+   "Becoming.CounterfactualRuns"
+  ],
+  "Becoming.Learning.GoAlikeAt": [
+   "Becoming.Learning",
+   "Becoming.LearningRuns"
+  ],
+  "Becoming.Learning.goAlike_iff_lumped": [
+   "Becoming.Learning",
+   "Becoming.LearningRuns"
+  ],
+  "Becoming.Learning.transfer_right_iff": [
+   "Becoming.Learning",
+   "Becoming.LearningRuns"
+  ],
+  "Becoming.Learning.goAlike_iff_at": [
+   "Becoming.Learning",
+   "Becoming.LearningRuns"
+  ],
+  "Becoming.Motion.pair_identifiesAlike": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.now_identifiesAlike_iff_goAlike": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.part_identifiesAlike_iff": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.goAlike_process_iff": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Motion.standing_alone": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Motion.still_identifiesAlike": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.sameFuture_of_law": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.whole_identifiesAlike": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Motion.neither_alone": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.adaptive_identifiesAlike_iff": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.identifiesAlike_of_law": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.now_identifiesAlike_iff": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Motion.move_adaptive": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.alike_moments_iff": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.part_identifiesAlike_iff_step": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.const_identifiesAlike_iff": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.sameFuture_of_goAlike": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.kernel_bisimulation": [
+   "Becoming.Description",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.name_carries": [
+   "Becoming.Identification",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.name_identifiesAlike": [
+   "Becoming.Identification",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Law.decideAlike": [
+   "Becoming.Identification",
+   "Becoming.IdentificationRuns"
+  ],
+  "Becoming.Decided.exists_not_in": [
+   "Becoming.Likeness",
+   "Becoming.Decidedness"
+  ],
+  "Becoming.Decided.exists_listed": [
+   "Becoming.Likeness",
+   "Becoming.Decidedness"
+  ],
+  "Becoming.Joining.appended_assoc": [
+   "Becoming.Joining",
+   "Becoming.Decidedness"
+  ],
+  "Becoming.Coverage.Perm.mem": [
+   "Becoming.Coverage",
+   "Becoming.Decidedness"
+  ],
+  "Becoming.JointPlan.draws": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.JointPlan.nodup_of_realizes": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.Supports": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.JointPlan": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.JointPlan.Realizes": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.JointPlan.within_of_realizes": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.nodup_append_of_apart": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.JointPlan.supports_of_realizes": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.mem_appended_split": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.PartsWithin": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.PartsApart": [
+   "Becoming.Composition",
+   "Becoming.JointPlans"
+  ],
+  "Becoming.presupposition_iff_all_of_invariant": [
+   "Becoming.Readings",
+   "Becoming.BoundaryWorlds"
+  ],
+  "Becoming.bounded_invariant_iff": [
+   "Becoming.Readings",
+   "Becoming.BoundaryWorlds"
+  ],
+  "Becoming.Lexical.Frame.fresh": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.above_basic_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.strictIncluded_adjoin_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.above_iff_frame": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.above_of_extension": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.adjoin_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.included_basicSide_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.old": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.tierFrame": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.gain_transfer_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.included_gainSide_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.comparison_of_decided": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.not_not_above_of_extension": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.included_adjoin_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.above_gain_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.fresh_basic_reverses": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.fresh_gains_decide": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.classified_of_extension": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.Above": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.crossed_incomparable": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Lexical.Frame.classified_extension_iff": [
+   "Becoming.Lexical",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Required.through_summary": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.no_report_judge_of_step": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.frame": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.overbuild_step_loses": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.rests_iff_free": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.no_route_required_on_frame": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.left_step_retains": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.required_on_frame": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.priority_on_frame": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.draw": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.idle_rests_left_changes": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.report_same_basis_differs": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.draw_step_iff": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.overbuild_off_frontier_on_frame": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.Requirement.Formation.basis_after": [
+   "Becoming.Frontier",
+   "Becoming.FrontierFrames"
+  ],
+  "Becoming.ExchangeLaw.courseWorld": [
+   "Becoming.Runs",
+   "Becoming.Propagation"
+  ],
+  "Becoming.carriedWorld_balanced": [
+   "Becoming.Runs",
+   "Becoming.Propagation"
+  ],
+  "Becoming.carriedWorld": [
+   "Becoming.Runs",
+   "Becoming.Propagation"
+  ],
+  "Becoming.ExchangeLaw.courseWorld_balanced_iff": [
+   "Becoming.Runs",
+   "Becoming.Propagation"
+  ],
+  "Becoming.carriedWorld_level": [
+   "Becoming.Runs",
+   "Becoming.Propagation"
+  ]
+ },
+ "import_changes": {
+  "Becoming.Labelled": {
+   "before": [
+    "Becoming.Frame",
+    "Becoming.Generation"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Generation",
+    "Becoming.Recurrence"
+   ]
+  },
+  "Becoming.Recurrence": {
+   "before": [
+    "Becoming.Frame"
+   ],
+   "after": []
+  },
+  "Becoming.MoveOutcomeProcesses": {
+   "before": [
+    "Becoming.Inquiry",
+    "Becoming.Recurrence"
+   ],
+   "after": [
+    "Becoming.Inquiry",
+    "Becoming.Labelled",
+    "Becoming.Recurrence"
+   ]
+  },
+  "Becoming.Context": {
+   "before": [
+    "Becoming.Frame"
+   ],
+   "after": []
+  },
+  "Becoming.ContextArrivalTraces": {
+   "before": [
+    "Becoming.Context"
+   ],
+   "after": [
+    "Becoming.Context",
+    "Becoming.Frame"
+   ]
+  },
+  "Becoming.Attraction": {
+   "before": [
+    "Becoming.Recurrence"
+   ],
+   "after": [
+    "Becoming.Labelled",
+    "Becoming.Recurrence"
+   ]
+  },
+  "Becoming.Capture": {
+   "before": [
+    "Becoming.Evolution",
+    "Becoming.Locality",
+    "Becoming.Mechanism",
+    "Becoming.Recurrence"
+   ],
+   "after": [
+    "Becoming.Evolution",
+    "Becoming.Locality",
+    "Becoming.Recurrence"
+   ]
+  },
+  "Becoming.Decidedness": {
+   "before": [
+    "Becoming.Space"
+   ],
+   "after": [
+    "Becoming.Recurrence",
+    "Becoming.Space"
+   ]
+  },
+  "Becoming.LabelledRoles": {
+   "before": [
+    "Becoming.Horizon",
+    "Becoming.Roles"
+   ],
+   "after": [
+    "Becoming.Horizon",
+    "Becoming.Inquiry",
+    "Becoming.Roles",
+    "Becoming.Testing"
+   ]
+  },
+  "Becoming.Metaethics": {
+   "before": [
+    "Becoming.Dependence",
+    "Becoming.Inquiry",
+    "Becoming.Labelled"
+   ],
+   "after": [
+    "Becoming.Dependence"
+   ]
+  },
+  "Becoming.Lifting": {
+   "before": [
+    "Becoming.Metaethics"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Metaethics",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.Ranking": {
+   "before": [
+    "Becoming.Metaethics"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Metaethics",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.ActiveReading": {
+   "before": [
+    "Becoming.Ranking"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Ranking",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.LossMatching": {
+   "before": [
+    "Becoming.Metaethics",
+    "Becoming.Population"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Metaethics",
+    "Becoming.Population",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.Correspondence": {
+   "before": [
+    "Becoming.Labelled",
+    "Becoming.Metaethics",
+    "Becoming.Roles"
+   ],
+   "after": [
+    "Becoming.Labelled",
+    "Becoming.Metaethics",
+    "Becoming.Roles",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.Significance": {
+   "before": [
+    "Becoming.Regions",
+    "Becoming.Standpoints"
+   ],
+   "after": [
+    "Becoming.Metaethics",
+    "Becoming.Regions"
+   ]
+  },
+  "Becoming.EdgeClosure": {
+   "before": [
+    "Becoming.Feedback"
+   ],
+   "after": [
+    "Becoming.Feedback",
+    "Becoming.Frame"
+   ]
+  },
+  "Becoming.Testing": {
+   "before": [
+    "Becoming.Feedback",
+    "Becoming.Horizon"
+   ],
+   "after": [
+    "Becoming.Feedback"
+   ]
+  },
+  "Becoming.Counterfactual": {
+   "before": [
+    "Becoming.Mechanism",
+    "Becoming.Response",
+    "Becoming.Unfolding"
+   ],
+   "after": [
+    "Becoming.Recurrence",
+    "Becoming.Response"
+   ]
+  },
+  "Becoming.Regrouping": {
+   "before": [
+    "Becoming.Counterfactual",
+    "Becoming.Significance"
+   ],
+   "after": [
+    "Becoming.Counterfactual",
+    "Becoming.Frame",
+    "Becoming.Significance",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.SelectionPool": {
+   "before": [
+    "Becoming.Likeness",
+    "Becoming.SelectionGap"
+   ],
+   "after": [
+    "Becoming.Decidedness",
+    "Becoming.SelectionGap"
+   ]
+  },
+  "Becoming.PoolResponse": {
+   "before": [
+    "Becoming.SelectionPool",
+    "Becoming.TimedResponse"
+   ],
+   "after": [
+    "Becoming.Decidedness",
+    "Becoming.SelectionPool",
+    "Becoming.TimedResponse"
+   ]
+  },
+  "Becoming.Learning": {
+   "before": [
+    "Becoming.Mechanism",
+    "Becoming.Selection"
+   ],
+   "after": [
+    "Becoming.Selection"
+   ]
+  },
+  "Becoming.Hexagrams": {
+   "before": [
+    "Becoming.Branching",
+    "Becoming.Learning"
+   ],
+   "after": [
+    "Becoming.Branching",
+    "Becoming.Learning",
+    "Becoming.LearningRuns"
+   ]
+  },
+  "Becoming.HexagramPlaces": {
+   "before": [
+    "Becoming.Context",
+    "Becoming.Hexagrams"
+   ],
+   "after": [
+    "Becoming.Context",
+    "Becoming.ContextArrivalTraces",
+    "Becoming.Hexagrams",
+    "Becoming.LearningRuns"
+   ]
+  },
+  "Becoming.Undecided": {
+   "before": [
+    "Becoming.Diagonal"
+   ],
+   "after": [
+    "Becoming.Diagonal",
+    "Becoming.Labelled"
+   ]
+  },
+  "Becoming.Commuting": {
+   "before": [
+    "Becoming.Hexagrams",
+    "Becoming.Junctures"
+   ],
+   "after": [
+    "Becoming.Hexagrams",
+    "Becoming.Junctures",
+    "Becoming.LearningRuns"
+   ]
+  },
+  "Becoming.Withholding": {
+   "before": [
+    "Becoming.Recurrence"
+   ],
+   "after": [
+    "Becoming.Labelled",
+    "Becoming.Recurrence"
+   ]
+  },
+  "Becoming.Closing": {
+   "before": [
+    "Becoming.Remainder"
+   ],
+   "after": [
+    "Becoming.Recurrence",
+    "Becoming.Remainder"
+   ]
+  },
+  "Becoming.Description": {
+   "before": [
+    "Becoming.Context",
+    "Becoming.Diagonal",
+    "Becoming.Learning",
+    "Becoming.Unfolding"
+   ],
+   "after": [
+    "Becoming.Context",
+    "Becoming.Diagonal",
+    "Becoming.Learning"
+   ]
+  },
+  "Becoming.Retrodiction": {
+   "before": [
+    "Becoming.Frame"
+   ],
+   "after": []
+  },
+  "Becoming.Readout": {
+   "before": [
+    "Becoming.Assurance",
+    "Becoming.Learning"
+   ],
+   "after": [
+    "Becoming.Assurance",
+    "Becoming.Learning",
+    "Becoming.Mechanism"
+   ]
+  },
+  "Becoming.Courses": {
+   "before": [
+    "Becoming.Copying",
+    "Becoming.Countdown",
+    "Becoming.CrossSituational",
+    "Becoming.Decidedness",
+    "Becoming.Description",
+    "Becoming.Feedback",
+    "Becoming.Lasting",
+    "Becoming.Metaethics",
+    "Becoming.Parting",
+    "Becoming.Readout",
+    "Becoming.Retrodiction",
+    "Becoming.Weighted"
+   ],
+   "after": [
+    "Becoming.Copying",
+    "Becoming.Countdown",
+    "Becoming.CrossSituational",
+    "Becoming.Decidedness",
+    "Becoming.Description",
+    "Becoming.Feedback",
+    "Becoming.Lasting",
+    "Becoming.Metaethics",
+    "Becoming.Parting",
+    "Becoming.Readout",
+    "Becoming.Retrodiction",
+    "Becoming.ValuationFrames",
+    "Becoming.Weighted"
+   ]
+  },
+  "Becoming.Pace": {
+   "before": [
+    "Becoming.Capture",
+    "Becoming.Identification",
+    "Becoming.IdentificationRuns"
+   ],
+   "after": [
+    "Becoming.Capture",
+    "Becoming.Identification",
+    "Becoming.IdentificationRuns",
+    "Becoming.SeekingRuns"
+   ]
+  },
+  "Becoming.Tolerance": {
+   "before": [
+    "Becoming.FaultEnvelopes",
+    "Becoming.Withholding"
+   ],
+   "after": [
+    "Becoming.FaultEnvelopes",
+    "Becoming.Labelled",
+    "Becoming.Withholding"
+   ]
+  },
+  "Becoming.Revision": {
+   "before": [
+    "Becoming.Learning",
+    "Becoming.Stock"
+   ],
+   "after": [
+    "Becoming.Joint",
+    "Becoming.Learning",
+    "Becoming.Stock"
+   ]
+  },
+  "Becoming.ProjectedLaws": {
+   "before": [
+    "Becoming.Readout"
+   ],
+   "after": [
+    "Becoming.Mechanism",
+    "Becoming.Readout"
+   ]
+  },
+  "Becoming.Composition": {
+   "before": [
+    "Becoming.Likeness"
+   ],
+   "after": [
+    "Becoming.JointPlans",
+    "Becoming.Likeness"
+   ]
+  },
+  "Becoming.Coverage": {
+   "before": [
+    "Becoming.Frame",
+    "Becoming.Integers"
+   ],
+   "after": [
+    "Becoming.Decidedness",
+    "Becoming.Frame",
+    "Becoming.Integers"
+   ]
+  },
+  "Becoming.ListFootprints": {
+   "before": [
+    "Becoming.Composition",
+    "Becoming.Coverage",
+    "Becoming.Joining",
+    "Becoming.Weighted"
+   ],
+   "after": [
+    "Becoming.Decidedness",
+    "Becoming.JointPlans",
+    "Becoming.Weighted"
+   ]
+  },
+  "Becoming.Boundaries": {
+   "before": [
+    "Becoming.Feedback"
+   ],
+   "after": [
+    "Becoming.Feedback",
+    "Becoming.Metaethics"
+   ]
+  },
+  "Becoming.Readings": {
+   "before": [
+    "Becoming.Boundaries",
+    "Becoming.Context",
+    "Becoming.Reading"
+   ],
+   "after": [
+    "Becoming.Boundaries",
+    "Becoming.Context",
+    "Becoming.ContextArrivalTraces",
+    "Becoming.Reading",
+    "Becoming.Unfolding"
+   ]
+  },
+  "Becoming.Coupling": {
+   "before": [
+    "Becoming.Counterfactual",
+    "Becoming.Readout"
+   ],
+   "after": [
+    "Becoming.Counterfactual",
+    "Becoming.Mechanism",
+    "Becoming.Readout"
+   ]
+  },
+  "Becoming.Situations": {
+   "before": [
+    "Becoming.Typicality"
+   ],
+   "after": [
+    "Becoming.Joint",
+    "Becoming.Typicality"
+   ]
+  },
+  "Becoming.Relevance": {
+   "before": [
+    "Becoming.Boundaries",
+    "Becoming.Ranking"
+   ],
+   "after": [
+    "Becoming.Boundaries",
+    "Becoming.Inquiry",
+    "Becoming.Ranking"
+   ]
+  },
+  "Becoming.FrontierFrames": {
+   "before": [
+    "Becoming.Frontier"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Frontier",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.AcceptanceFrames": {
+   "before": [
+    "Becoming.Acceptance",
+    "Becoming.FrontierFrames"
+   ],
+   "after": [
+    "Becoming.Acceptance",
+    "Becoming.Frame",
+    "Becoming.FrontierFrames"
+   ]
+  },
+  "Becoming.ScoreRepresentation": {
+   "before": [
+    "Becoming.Lexical"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Lexical",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.Alternatives": {
+   "before": [
+    "Becoming.Lifting",
+    "Becoming.Metaethics",
+    "Becoming.Relevance"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Lifting",
+    "Becoming.Metaethics",
+    "Becoming.Relevance",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.Bundles": {
+   "before": [
+    "Becoming.Lexical"
+   ],
+   "after": [
+    "Becoming.Frame",
+    "Becoming.Lexical",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.ActivationCapacity": {
+   "before": [
+    "Becoming.Bundles",
+    "Becoming.Recurrence"
+   ],
+   "after": [
+    "Becoming.Bundles",
+    "Becoming.Labelled",
+    "Becoming.Recurrence"
+   ]
+  },
+  "Becoming.ProfileReach": {
+   "before": [
+    "Becoming.EdgeClosure",
+    "Becoming.Metaethics"
+   ],
+   "after": [
+    "Becoming.EdgeClosure",
+    "Becoming.Metaethics",
+    "Becoming.ValuationFrames"
+   ]
+  },
+  "Becoming.RenewalBound": {
+   "before": [
+    "Becoming.Recurrence",
+    "Becoming.Renewal"
+   ],
+   "after": [
+    "Becoming.Labelled",
+    "Becoming.Recurrence",
+    "Becoming.Renewal"
+   ]
+  },
+  "Becoming.CourseWorlds": {
+   "before": [
+    "Becoming.Frequency",
+    "Becoming.Observation",
+    "Becoming.Routes",
+    "Becoming.Runs"
+   ],
+   "after": [
+    "Becoming.Frequency",
+    "Becoming.Observation",
+    "Becoming.Routes"
+   ]
+  },
+  "Becoming.ParityReadings": {
+   "before": [
+    "Becoming.Gluing",
+    "Becoming.Quantum",
+    "Becoming.Readings"
+   ],
+   "after": [
+    "Becoming.ContextArrivalTraces",
+    "Becoming.Gluing",
+    "Becoming.Quantum",
+    "Becoming.Readings"
+   ]
+  },
+  "Becoming.FinerTraces": {
+   "before": [
+    "Becoming.Situations"
+   ],
+   "after": [
+    "Becoming.Situations",
+    "Becoming.WeightedTraces",
+    "GenerativeCore"
+   ]
+  },
+  "Becoming.BoundaryWorlds": {
+   "before": [
+    "Becoming.Readings"
+   ],
+   "after": [
+    "Becoming.Boundaries"
+   ]
+  },
+  "Becoming.ContextualRuns": {
+   "before": [
+    "Becoming.ParityReadings",
+    "Becoming.Parting"
+   ],
+   "after": [
+    "Becoming.ContextArrivalTraces",
+    "Becoming.ParityReadings",
+    "Becoming.Parting"
+   ]
+  },
+  "Becoming.CouplingTraces": {
+   "before": [
+    "Becoming.FormedLoops"
+   ],
+   "after": [
+    "Becoming.FormedLoops",
+    "Becoming.Frame"
+   ]
+  },
+  "Becoming.CourseRoles": {
+   "before": [
+    "Becoming.Runs"
+   ],
+   "after": [
+    "Becoming.CounterfactualRuns",
+    "Becoming.Runs"
+   ]
+  },
+  "Becoming.HorizonWebs": {
+   "before": [
+    "Becoming.Horizon"
+   ],
+   "after": [
+    "Becoming.Dependence"
+   ]
+  },
+  "Becoming.RouteTraces": {
+   "before": [
+    "Becoming.FormedLoops"
+   ],
+   "after": [
+    "Becoming.FormedLoops",
+    "Becoming.WeightedTraces",
+    "GenerativeCore"
+   ]
+  },
+  "Becoming.SensitivityWebs": {
+   "before": [
+    "Becoming.Runs",
+    "Becoming.Tail"
+   ],
+   "after": [
+    "Becoming.Propagation",
+    "Becoming.Tail"
+   ]
+  },
+  "Becoming.TailRuns": {
+   "before": [
+    "Becoming.Tail"
+   ],
+   "after": [
+    "Becoming.Labelled",
+    "Becoming.Tail"
+   ]
+  },
+  "Becoming.WeightedTraces": {
+   "before": [
+    "Becoming.Weighted"
+   ],
+   "after": [
+    "Becoming.Weighted",
+    "GenerativeCore"
+   ]
+  }
+ },
+ "unregistered_moving": [],
+ "world_side_reaching_frame": [],
+ "lost_labelled_process": [
+  "Becoming.Boundaries",
+  "Becoming.BoundaryFlows",
+  "Becoming.BoundaryWorlds",
+  "Becoming.Capture",
+  "Becoming.CaptureWorlds",
+  "Becoming.ChanceFloors",
+  "Becoming.Closing",
+  "Becoming.Context",
+  "Becoming.Counterfactual",
+  "Becoming.CourseWorlds",
+  "Becoming.Cuts",
+  "Becoming.Description",
+  "Becoming.Diagonal",
+  "Becoming.Entropy",
+  "Becoming.ExchangePremises",
+  "Becoming.Exhaustion",
+  "Becoming.Feedback",
+  "Becoming.Feeding",
+  "Becoming.FormedLoops",
+  "Becoming.Frequency",
+  "Becoming.Frontier",
+  "Becoming.FrontierWorlds",
+  "Becoming.Gain",
+  "Becoming.Gluing",
+  "Becoming.HorizonWebs",
+  "Becoming.Identification",
+  "Becoming.Interdependence",
+  "Becoming.Learnable",
+  "Becoming.Learning",
+  "Becoming.LevelCoupling",
+  "Becoming.LevelWebs",
+  "Becoming.Lexical",
+  "Becoming.ListFootprints",
+  "Becoming.Loops",
+  "Becoming.Metaethics",
+  "Becoming.MutualDependence",
+  "Becoming.Novelty",
+  "Becoming.Observation",
+  "Becoming.PlaceTransitionNets",
+  "Becoming.PoolResponse",
+  "Becoming.Propagation",
+  "Becoming.Quantum",
+  "Becoming.Reading",
+  "Becoming.Recurrence",
+  "Becoming.Refinement",
+  "Becoming.Regulation",
+  "Becoming.Rejoining",
+  "Becoming.RelativePosition",
+  "Becoming.Remainder",
+  "Becoming.Response",
+  "Becoming.Retrodiction",
+  "Becoming.Routes",
+  "Becoming.Runaway",
+  "Becoming.Seeking",
+  "Becoming.Selection",
+  "Becoming.SelectionGap",
+  "Becoming.SelectionPool",
+  "Becoming.SelectionReach",
+  "Becoming.Sensitivity",
+  "Becoming.SensitivityWebs",
+  "Becoming.Significance",
+  "Becoming.StrengthFlows",
+  "Becoming.Tail",
+  "Becoming.Testing",
+  "Becoming.Thresholds",
+  "Becoming.TimedResponse",
+  "Becoming.Typicality",
+  "Becoming.Weighted"
+ ]
+}

@@ -1,6 +1,5 @@
 import Becoming.Evolution
 import Becoming.Locality
-import Becoming.Mechanism
 import Becoming.Recurrence
 
 /-!
@@ -47,6 +46,9 @@ it, with no axiom and no premise beyond what each law names.
 What is not derived: that taking more yields more offspring; that offspring carry their
 parents' targets; that winners shape the rule; which rules actual formations live under. No
 ethical predicate, ranking or axiom occurs.
+
+`Law.perturbation_reabsorbed` is in `Becoming.SeekingRuns`, so this module does not import the frame
+(board item W).
 -/
 
 namespace Becoming
@@ -146,21 +148,6 @@ theorem descent_exhausted (census : W.StandingCensus stand) {T : Nat}
 end Flow
 
 /-! ## The rule holds the outcome -/
-
-namespace Law
-
-variable {S : Type u} {R : Type v}
-
-/-- **Perturbing the state alone is re-absorbed.** Where the next configuration depends on the
-rule and not on the state, two configurations with the same rule have the same orbit from the
-next step on: the instance of `Law.reabsorbed` (`Becoming.Mechanism`) with the rule as the
-projection. -/
-theorem perturbation_reabsorbed {next : S × R → S × R} (byRule : ∀ x x' g, next (x, g) = next (x', g))
-    (x x' : S) (g : R) : ∀ n, orbit next (x, g) (n + 1) = orbit next (x', g) (n + 1) :=
-  reabsorbed (π := Prod.snd)
-    (fun s s' same => (byRule s.1 s'.1 s.2).trans (congrArg (fun h => next (s'.1, h)) same)) rfl
-
-end Law
 
 /-! ## A captured rule
 

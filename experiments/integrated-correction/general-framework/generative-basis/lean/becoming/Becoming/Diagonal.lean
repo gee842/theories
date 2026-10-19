@@ -47,11 +47,12 @@ projects, as Zhuangzi's 一与言为二，二与一为三, as the revision theor
 self-prediction belong to the study, not to this module.
 
 No ethical predicate, ranking or axiom occurs.
+
+`Frame.self_incomplete` is in `Becoming.DiagonalRuns`, so this module does not import the frame
+(board item W).
 -/
 
 namespace Becoming
-
-open Generative
 
 universe u v w
 
@@ -290,11 +291,5 @@ theorem negation_returns (b : Bool) : Law.Returns (fun b : Bool => !b) b :=
   ⟨2, Nat.zero_lt_succ 1, Bool.not_not b⟩
 
 end Diagonal
-
-/-- A frame whose claims are its own configurations: no configuration realizes every pattern of
-claims about configurations. -/
-theorem Frame.self_incomplete {S : Type u} {A : Type v} (F : Frame S A S) :
-    ¬ ∀ g : S → Prop, ∃ s, ∀ x, F.realized s x ↔ g x :=
-  Diagonal.claims_incomplete F.realized
 
 end Becoming

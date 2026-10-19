@@ -1,5 +1,6 @@
 import Becoming.Acceptance
 import Becoming.FrontierFrames
+import Becoming.Frame
 
 /-!
 # Scores over the options of a step: acceptance, restriction and estimates

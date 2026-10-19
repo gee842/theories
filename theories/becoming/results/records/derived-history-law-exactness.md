@@ -62,6 +62,7 @@ Finite existential word feasibility only: no endpoint, branch-identity, probabil
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -84,4 +85,5 @@ Aliases: `Generative.DerivedHistoryLaw.exact_iff_fiber_future`, `Becoming.exact_
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
 - 18 October 2026, F2 (Ren: "please, do them, reduce bridges and add more theory to the spine"): every theorem of DerivedHistoryLaw.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Readout.lean; SummaryFutures.lean states the rest (every_word, futures_through, endpoint_moved). DerivedHistoryLaw.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged.
 - 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Readout.lean). The claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](derived-history-law-exactness.json).

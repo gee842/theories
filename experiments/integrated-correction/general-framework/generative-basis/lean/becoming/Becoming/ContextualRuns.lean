@@ -1,5 +1,6 @@
 import Becoming.ParityReadings
 import Becoming.Parting
+import Becoming.ContextArrivalTraces
 
 /-!
 # Contextual runs: the parity bounds and the parts of no whole along the runs of any process

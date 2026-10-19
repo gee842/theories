@@ -10,6 +10,7 @@ import Becoming.Feedback
 import Becoming.Decidedness
 import Becoming.Metaethics
 import Becoming.Parting
+import Becoming.ValuationFrames
 
 /-!
 # Courses: the apart laws read on the shared base

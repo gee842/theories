@@ -1,4 +1,5 @@
 import Becoming.Feedback
+import Becoming.Metaethics
 
 /-!
 # Boundaries: the self's presupposition, however its boundary is drawn
@@ -148,8 +149,6 @@ is no longer an axiom.
 -/
 
 namespace Becoming
-
-open Generative
 
 variable {F C Pos : Type}
 

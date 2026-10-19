@@ -374,7 +374,7 @@
         "Becoming.Pace.turn",
         "Becoming.Pace.paced_succ"
       ],
-      "sha256": "6cbf7e185c4d9cc04643b99ec906ff775a4a256086a13e7c825971925cbef5ec"
+      "sha256": "f3a3ce70165de6407e30c3b469e4802a01678b5b2575a7e96ee6d9969140c826"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
@@ -383,7 +383,7 @@
         "Becoming.share_not_lower",
         "Becoming.mul_assoc_nat"
       ],
-      "sha256": "a56802715a61e381d6e83afd4d8e2342f140847811666f86c92fc1f16f1c7b01"
+      "sha256": "3ade8fbc83347c0156098669a3d034c25f7f681f19a386e8f6c6612e820d1a83"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
@@ -401,7 +401,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "537f188554a8737bae2774fe082cd9ad8c405741900937af81ea8421dca01668"
+      "sha256": "44140389dd14b17c78ed9dc4c7e173e61f88f00c7b3277798131934a10b472e5"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -441,6 +441,10 @@
     {
       "en": "19 October 2026, RG (two-sided regulation and late reading): BECOMING-RENEWAL-READING.md, CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RG added study section 214; CHINESE-SOURCES-AND-BECOMING.md: RG reprinted the passage tables of the traditions it touched, marked the first gap closed in section 8 with a paragraph after the table, and rebuilt the section 11 line of open gaps; THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts; passages.json: RG added declarations and its record to four passages, replaced the sentences of their readings that named the first gap and marked that gap closed (other passages unchanged)). The claim is unchanged.",
       "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，BECOMING-RENEWAL-READING.md、CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: study section 180.14 added; Capture.lean: declarations moved in or out by W2; Pace.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

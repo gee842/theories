@@ -1,4 +1,5 @@
 import Becoming.Space
+import Becoming.Recurrence
 
 /-!
 # Decidedness: what a count needs, and where
@@ -81,6 +82,9 @@ and across a list of steps the counts at each step sum (`CountsAcross`).
 no of a state is not assumed of becoming. It is what an exact count needs, at the states counted,
 and what finding a step needs, at the steps searched. Laws relating counts need none, and the laws
 of recurrence hold with none, doubly negated.
+
+Declarations moved here unchanged, with their names, from `Becoming.Likeness`, `Becoming.Joining`
+and `Becoming.Coverage` (board item W): see the sections so headed.
 -/
 
 namespace Becoming
@@ -929,5 +933,94 @@ theorem undominated_has_iff_em :
    fun em _ _ _ _ bettered => undominated_has (fun _ _ => em _) bettered⟩
 
 end Undominated
+
+end Becoming
+
+/-! ## Decided over a list (moved from `Becoming.Likeness`) -/
+
+namespace Becoming
+
+universe u v w u' w'
+
+section BranchingTests
+
+variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
+
+/-- Searching a list for a member where a determination holds is decided where the determination
+is decided at each member (`Decided.exists_mem` for types of every universe). -/
+theorem Decided.exists_listed {β : Type u} {P : β → Prop} :
+    ∀ {l : List β}, (∀ b, b ∈ l → Decided (P b)) → Decided (∃ b, b ∈ l ∧ P b)
+  | [], _ => .inr fun ⟨_, mem, _⟩ => nomatch mem
+  | b :: l, decided => match decided b (.head l) with
+    | .inl holds => .inl ⟨b, .head l, holds⟩
+    | .inr fails => match Decided.exists_listed (l := l) fun c mem => decided c (.tail b mem) with
+      | .inl ⟨c, mem, holds⟩ => .inl ⟨c, .tail b mem, holds⟩
+      | .inr absent => .inr fun ⟨c, mem, holds⟩ => match mem_cons_split mem with
+        | .inl same => fails (Eq.subst (motive := P) same holds)
+        | .inr mem => absent ⟨c, mem, holds⟩
+
+end BranchingTests
+
+section Outcomes
+
+variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
+
+/-- A decided determination that does not hold of every member of a list fails of some member. -/
+theorem Decided.exists_not_in {β : Type u} {P : β → Prop} {l : List β}
+    (decided : ∀ b, b ∈ l → Decided (P b)) (fails : ¬ ∀ b, b ∈ l → P b) : ∃ b, b ∈ l ∧ ¬ P b :=
+  match Decided.exists_listed (l := l) fun b mem => (decided b mem).not with
+  | .inl found => found
+  | .inr absent =>
+    absurd (fun b mem => (decided b mem).of_not_not fun fails' => absent ⟨b, mem, fails'⟩) fails
+
+end Outcomes
+
+end Becoming
+
+/-! ## Lists joined in either grouping (moved from `Becoming.Joining`) -/
+
+namespace Becoming
+
+universe u v w u' v'
+
+namespace Joining
+
+variable {F : Type u} {G : Type v} {K : Type u'} {K' : Type v'}
+
+theorem appended_assoc : ∀ l m n : List F, l ++ m ++ n = l ++ (m ++ n)
+  | [], _, _ => rfl
+  | a :: l, m, n => congrArg (List.cons a) (appended_assoc l m n)
+
+end Joining
+
+end Becoming
+
+/-! ## Membership kept under reordering (moved from `Becoming.Coverage`) -/
+
+namespace Becoming
+
+universe u
+
+namespace Coverage
+
+variable {C : Type u}
+
+theorem Perm.mem {l l' : List C} (h : l.Perm l') {a : C} (mem : a ∈ l') : a ∈ l := by
+  induction h with
+  | nil => exact mem
+  | cons x _ ih =>
+    cases mem with
+    | head => exact .head _
+    | tail _ mem => exact .tail _ (ih mem)
+  | swap x y _ =>
+    cases mem with
+    | head => exact .tail _ (.head _)
+    | tail _ mem =>
+      cases mem with
+      | head => exact .head _
+      | tail _ mem => exact .tail _ (.tail _ mem)
+  | trans _ _ ih ih' => exact ih (ih' mem)
+
+end Coverage
 
 end Becoming

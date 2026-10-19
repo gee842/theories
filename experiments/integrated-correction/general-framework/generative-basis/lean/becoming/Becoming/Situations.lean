@@ -1,4 +1,5 @@
 import Becoming.Typicality
+import Becoming.Joint
 
 /-!
 # Situations: what natural weights count

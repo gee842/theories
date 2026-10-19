@@ -1,6 +1,7 @@
 import Becoming.Readings
 import Becoming.Gluing
 import Becoming.Quantum
+import Becoming.ContextArrivalTraces
 
 /-!
 # Parity readings: where the readings of one unfolding glue, for parity and for quantum states

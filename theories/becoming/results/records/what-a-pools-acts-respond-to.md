@@ -102,6 +102,7 @@ The chapter's section 7.4 read that what any member's acts do beyond its own cou
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-the-light-and-alignment-for-all.md](../../../../sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `what a pool's acts respond to`, `一组的动作回应什么`, `the gap for a pool's response`, `一组之回应的缺口`, `coupling bounds response and does not fix it`, `耦合界定回应而不确定回应`, `separated, not responded`, `被分开，未被回应`
 
@@ -131,6 +132,7 @@ Aliases: `what a pool's acts respond to`, `一组的动作回应什么`, `the ga
 - 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Selection.lean, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Selection.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md: R20(b) changed wording only (instantiation under the condition, witnesses marked, whole-unit dependence, definitional laws named, section 8.9, premise card C on feasibility)). The claim is unchanged.
 - 19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (PoolResponse.lean). Re-pointed after reading the change (Counterfactual.lean: declarations moved in or out by W2; Decidedness.lean: declarations moved in or out by W2; Feedback.lean: declarations moved in or out by W2; Response.lean: declarations moved in or out by W2; SelectionPool.lean: declarations moved in or out by W2; Testing.lean: declarations moved in or out by W2; TimedResponse.lean: declarations moved in or out by W2). The claim is unchanged.
 
 </details>
 

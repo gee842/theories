@@ -69,6 +69,9 @@ The draw-in laws this module rereads are those of `Becoming.Dissipation` and
 `Becoming.Roles`; the delta is the conveyance form, its exactness, the joint count, the
 support-gated end, and the limits. Equality decided is a disclosed logical commitment, as
 in `Flow.Enclosed.around`. No ethical predicate, ranking or axiom occurs.
+
+Declarations moved here unchanged, with their names, from `Becoming.Standpoints` (board item W): see
+the sections so headed.
 -/
 
 namespace Becoming
@@ -979,6 +982,45 @@ theorem undermines_within_renewal :
       trivial (Nat.le_refl 1) Nat.zero_lt_one,
     Nat.zero_lt_one⟩,
    fun _ dead => dead⟩
+
+end Clearing
+
+end Becoming
+
+/-! ## What feeds what (moved from `Becoming.Standpoints`) -/
+
+namespace Becoming
+
+namespace Flow
+
+section Feeding
+
+variable {F C : Type} (L : Flow F C) (W : Web F C)
+
+/-- The continuation of `e`'s formation is fed by `e'`: at their common step, `e'`'s
+formation takes part and gives to a condition `e`'s formation requires. -/
+def FedBy (e e' : F × Nat) : Prop :=
+  e.2 = e'.2 ∧ ∃ c, W.requires e.2 e.1 c ∧ e'.1 ∈ L.present e'.2 ∧ 0 < L.give e'.2 e'.1 c
+
+end Feeding
+
+end Flow
+
+namespace Clearing
+
+open Frontier (burning)
+
+/-- Only the clearer's continuation is fed, and only by the source. -/
+theorem fedBy_source {e e' : Formation × Nat} (fed : flow.FedBy web e e') :
+    e.1 = .clearer ∧ e'.1 = .source :=
+  match e, e', fed with
+  | (.clearer, _), (.source, _), _ => ⟨rfl, rfl⟩
+  | (.clearer, _), (.clearer, _), ⟨_, .resource, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.clearer, _), (.dweller, _), ⟨_, .resource, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.source, _), _, ⟨_, _, no, _⟩ => nomatch no
+  | (.dweller, _), (.source, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.dweller, _), (.clearer, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.dweller, _), (.dweller, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
 
 end Clearing
 

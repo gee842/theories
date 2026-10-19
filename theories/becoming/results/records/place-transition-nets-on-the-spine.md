@@ -100,6 +100,7 @@ Aliases: `place/transition nets on the spine`, `Petri nets on the spine`, `è„ŠæŸ
 ### History
 
 - 19 October 2026: added (PT1), the instance theorem the opening proposal's second review ranked second; study section 203.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Continuation.lean: declarations moved in or out by W2; Counterfactual.lean: declarations moved in or out by W2). The claim is unchanged.
 
 </details>
 

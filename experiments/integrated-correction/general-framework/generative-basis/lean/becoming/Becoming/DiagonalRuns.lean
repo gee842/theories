@@ -31,7 +31,27 @@ configurations.
   (`frame_gap`).
 
 No ethical predicate, ranking or axiom occurs.
+
+Declarations moved here unchanged, with their names, from `Becoming.Diagonal` (board item W): see
+the sections so headed.
 -/
+
+/-! ## The frame cannot hold its own completeness (moved from `Becoming.Diagonal`) -/
+
+namespace Becoming
+
+open Generative
+
+universe u v w
+
+/-- A frame whose claims are its own configurations: no configuration realizes every pattern of
+claims about configurations. -/
+theorem Frame.self_incomplete {S : Type u} {A : Type v} (F : Frame S A S) :
+    ¬ ∀ g : S → Prop, ∃ s, ∀ x, F.realized s x ↔ g x :=
+  Diagonal.claims_incomplete F.realized
+
+end Becoming
+
 
 namespace Becoming
 

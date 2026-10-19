@@ -132,6 +132,9 @@ tests are alike, which needs a condition on branching; that a description making
 propositional extensionality, and the quotient by likeness needs `Quot.sound`); that the theory without axiom's
 theorems stated with `Determined` hold up to likeness. No ethical predicate, ranking or axiom
 occurs.
+
+`Law.SameFuture` is stated in `Becoming.Recurrence`, so the modules using it do not import the frame
+(board item W).
 -/
 
 namespace Becoming
@@ -259,10 +262,6 @@ theorem exchange_runs_agree (r r' : Run (exchange R)) (moves : ∀ n, r.act n = 
     add_right_cancel _ ((r.step n c).trans ((congrArg (· + (r.act n).given c)
       (exchange_runs_agree r r' moves start n c)).trans there.symm))
 
-namespace Circulation
-
-end Circulation
-
 end Exchange
 
 /-! ## A history and the law it shows -/
@@ -312,14 +311,6 @@ theorem Run.keepHistory_shown {P : Process S A} (r : Run (keepHistory P))
     (r' : Run (Shown r.state r.act)) {k : Nat} (start : r'.state 0 = r.state k) :
     ∀ n, r'.state n = r.state (k + n) :=
   Shown.runs_of_new (keepHistory_new r) r' start
-
-namespace Splice
-
-end Splice
-
-namespace DeadEnd
-
-end DeadEnd
 
 end Correspondence
 
@@ -462,10 +453,6 @@ def Law.frameBy (next : S → S) (o : S → R) : Frame S Unit R :=
 theorem Law.frameBy_determined (next : S → S) (o : S → R) :
     Determined (Law.frameBy next o).P :=
   fun _ _ _ _ to to' => to.trans to'.symm
-
-/-- Two configurations have the same future through the map under a law. -/
-def Law.SameFuture (next : S → S) (o : S → R) (s s' : S) : Prop :=
-  ∀ n, o (Law.orbit next s n) = o (Law.orbit next s' n)
 
 /-- Alike configurations have the same future through the map. -/
 theorem Law.alike_future {next : S → S} {o : S → R} :

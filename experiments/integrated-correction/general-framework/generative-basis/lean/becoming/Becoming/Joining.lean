@@ -51,6 +51,9 @@ tests with likeness (through `alike_of_sameBranchingTests_of_em` of `Becoming.Li
 uniqueness of the factor is stated at every fragment rather than as an equality of functions.
 The readings of these results are the AI's, adopted on Ren's delegation of 15 October 2026
 (DELEGATED-CHOICES D33). No ethical predicate is used.
+
+`Joining.appended_assoc` is in `Becoming.Decidedness`, so the modules using it do not import the
+frame (board item W).
 -/
 
 namespace Becoming
@@ -880,10 +883,6 @@ def retainedFrame (J : Joining F) : Frame (List F) (Nat × Nat) Empty :=
 theorem appended_nil : ∀ l : List F, l ++ [] = l
   | [] => rfl
   | a :: l => congrArg (List.cons a) (appended_nil l)
-
-theorem appended_assoc : ∀ l m n : List F, l ++ m ++ n = l ++ (m ++ n)
-  | [], _, _ => rfl
-  | a :: l, m, n => congrArg (List.cons a) (appended_assoc l m n)
 
 theorem length_appended : ∀ l m : List F, (l ++ m).length = l.length + m.length
   | [], m => (Nat.zero_add m.length).symm

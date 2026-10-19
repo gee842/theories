@@ -116,6 +116,7 @@ Ren, 15 October 2026: “What's the best choices to make? please make best of yo
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `where novelty's gain comes from`, `新的增益从哪里来`, `every rise is given`, `每次上升都是被给予的`, `endless novelty is exchange beyond every finite family`, `无尽的新是越出每个有限家族的交换`, `unceasing generation within a bounded whole is return`, `有界整体中的不息生成是回返`
 
@@ -149,6 +150,7 @@ Aliases: `where novelty's gain comes from`, `新的增益从哪里来`, `every r
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 0 (premise card C) or section 8 (the open programme): E1 rewrote card C's bullet on what the independence measures, the necessity row of section 8.1, and added a sentence and three records to the section 8.2 row on one relational start. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, MD1 (mutual dependence and the pace it gives): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: MD1 revised D39 (mutual dependence for "a highly entangled system", the loops following from it), keeping its earlier text, with its index row and lineage bullet). The claim is unchanged.
 - 19 October 2026, RC (capture through the rule): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: RC added decision D57, its index row and a lineage line). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Recurrence.lean). The claim is unchanged.
 - 8 rebinding entries (2026-10-16 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](where-novelty-gain-comes-from.json).
 
 </details>

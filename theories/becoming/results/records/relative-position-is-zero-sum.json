@@ -339,7 +339,7 @@
       "declarations": [
         "Becoming.Flow.joint_excess_ends"
       ],
-      "sha256": "879544041d05a88778691dfa2810799df82b4917f47c92609544cfab89d3dbde"
+      "sha256": "a51dd4bda16baea5e25e25031f11f3d018e1df0e98ab854bb460047c83ba14ca"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
@@ -347,7 +347,7 @@
       "declarations": [
         "Becoming.Clearing.free_rider_loses"
       ],
-      "sha256": "738f90c9836ee4d42c0338c4b1cab6776e22b5a8f2c172f4f24ddc681855650b"
+      "sha256": "717efff02ff69a7d915253bc96eb34ce3df12530d493d348ee0e59a96b3dfb83"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T110924.527968Z/verification.json",
@@ -397,6 +397,10 @@
     {
       "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Continuation.lean: declarations moved in or out by W2; Significance.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

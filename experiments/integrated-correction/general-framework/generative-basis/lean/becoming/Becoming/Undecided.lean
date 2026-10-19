@@ -1,4 +1,5 @@
 import Becoming.Diagonal
+import Becoming.Labelled
 
 /-!
 # The third value and revision

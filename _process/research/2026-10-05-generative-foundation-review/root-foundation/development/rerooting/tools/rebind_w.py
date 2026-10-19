@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""W1, the re-rooting (18 October 2026): rebind the result records after a passing checker run.
+"""W, the re-rooting (W1 18 October, W2 19 October 2026): rebind the result records after a passing checker run.
 
 Adapted from `bridge-fold/rebind_f1.py`, with W's notes.
 
-usage (from the checkout root): python3 -B rebind_w.py BASE RECEIPT_ID
+usage (from the checkout root): python3 -B rebind_w.py BASE RECEIPT_ID [W1|W2]
 
 BASE is the commit the re-rooting was applied on; RECEIPT_ID the passing core receipt in this checkout.
 Declarations moved between files with their full Lean names, statements and proofs unchanged. For
@@ -28,6 +28,8 @@ import subprocess
 import sys
 
 BASE, RID = sys.argv[1], sys.argv[2]
+BATCH = sys.argv[3] if len(sys.argv) > 3 else 'W1'
+DATE, DATE_ZH = {'W1': ('18 October 2026', '2026年10月18日'), 'W2': ('19 October 2026', '2026年10月19日')}[BATCH]
 PKG = 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/'
 RECEIPT = PKG + 'becoming-checks/' + RID + '/verification.json'
 receipt = json.load(open(RECEIPT))
@@ -60,6 +62,13 @@ WHAT = {
     'THE-THEORY-OF-BECOMING.zh.md': 'the layer and module rows follow the re-rooting',
     'THE-THEORY-OF-BECOMING-REFERENCE.md': 'rows for the three new core modules follow the re-rooting',
     'README.md': 'module rows follow the re-rooting',
+} if BATCH == 'W1' else {
+    'THE-THEORY-OF-BECOMING.md': "sections 1 and 9 say no module free of the labelled process imports the frame and "
+                                 'name Becoming.ValuationFrames and Becoming.JointPlans; counts and receipt follow the W2 run',
+    'THE-THEORY-OF-BECOMING.zh.md': 'module rows and theorem counts follow W2',
+    'THE-THEORY-OF-BECOMING-REFERENCE.md': 'module rows and theorem counts follow W2',
+    'README.md': 'module rows and the import narrative follow W2',
+    'BECOMING-RENEWAL-READING.md': 'study section 180.14 added',
 }
 summary = []
 for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
@@ -119,9 +128,12 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
         refs.append({'path': RECEIPT, 'role': 'receipt', 'sha256': h(RECEIPT), 'declarations': []})
     if json.dumps(d, ensure_ascii=False) == before:
         continue
-    note = ('18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? '
-            'hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these '
-            'extra/ugly complexities, and move toward to the direction of unification"):')
+    prefix = (f'{DATE}, {BATCH}, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? '
+              'hows the lean started?", then "please fix all after study, work with other sessions, totally resolve '
+              'these extra/ugly complexities, and move toward to the direction of unification"):' if BATCH == 'W1' else
+              f'{DATE}, {BATCH}, the re-rooting (board item W: the import tree starts at the one unfolding, and no '
+              'module free of the labelled process imports the frame):')
+    note = prefix
     if moved:
         groups = {}
         for n, s, t in moved:
@@ -132,15 +144,16 @@ for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
         note += f' Rebound to core receipt {RID} after reading the change ({", ".join(sorted(set(rebound)))}).'
     if repointed:
         note += (' Re-pointed after reading the change ('
-                 + '; '.join(f'{x}: {WHAT.get(x, "the fold")}' for x in sorted(set(repointed))) + ').')
+                 + '; '.join(f'{x}: {WHAT.get(x, "the fold" if BATCH == "W1" else "declarations moved in or out by W2" if x.endswith(".lean") else "W2")}'
+                             for x in sorted(set(repointed))) + ').')
     note += ' The claim is unchanged.'
     last = d['history'][-1] if d['history'] else {}
-    if last.get('en', '').startswith('18 October 2026, W1'):
-        last['en'] += note[note.index(':', note.index('direction of unification"')) + 1:]
+    if last.get('en', '').startswith(f'{DATE}, {BATCH}'):
+        last['en'] += note[len(prefix):]
         if 'zh' in last:
-            last['zh'] += ('声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；' if moved else '') + '读过改动后重新绑定或重新指向。论断不变。'
+            last['zh'] += ('声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；' if moved else '') + '读过改动后重新绑定或重新指向。论断不变。'
     else:
-        d['history'].append({'en': note, 'zh': '2026年10月18日，W1 重新定根：' + ('声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；' if moved else '')
+        d['history'].append({'en': note, 'zh': f'{DATE_ZH}，{BATCH} 重新定根：' + ('声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；' if moved else '')
                              + ('读过改动后重新绑定或重新指向。' if rebound or repointed else '') + '论断不变。'})
     open(f, 'w').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
     summary.append((f.rsplit('/', 1)[-1], len(moved), sorted(set(rebound))))

@@ -1,4 +1,5 @@
 import Becoming.FormedLoops
+import Becoming.Frame
 
 /-!
 # Coupling traces: couplings read as the steps of a process

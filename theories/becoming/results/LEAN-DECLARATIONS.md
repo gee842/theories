@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 298 | 11,721 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 300 | 11,721 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -468,6 +468,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [JointKeeping.lean](lean-declarations/becoming-core.md#module-923266ce0995) | Becoming pure core |
 | [JointPhase.lean](lean-declarations/becoming-core.md#module-5cfc0c3cee2e) | Becoming pure core |
 | [JointPlanFrames.lean](lean-declarations/becoming-core.md#module-803304e89e6a) | Becoming pure core |
+| [JointPlans.lean](lean-declarations/becoming-core.md#module-2a662f22e34b) | Becoming pure core |
 | [JointPracticeContinuation.lean](lean-declarations/ethics.md#module-4909b1cdd611) | Normative grounding and generative direction |
 | [JointRiskRevision.lean](lean-declarations/ethics.md#module-bc23aff7b162) | Normative grounding and generative direction |
 | [JudgingCorrespondence.lean](lean-declarations/core.md#module-5f326a865ccb) | Generative core and relational structure |
@@ -896,6 +897,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ValuationBridges.lean](lean-declarations/valuation.md#module-f496d68a278b) | Valuation development and liangzhi |
 | [ValuationCompletion.lean](lean-declarations/valuation.md#module-ff2eea4e63b0) | Valuation development and liangzhi |
 | [ValuationDevelopment.lean](lean-declarations/valuation.md#module-d23b7065be00) | Valuation development and liangzhi |
+| [ValuationFrames.lean](lean-declarations/becoming-core.md#module-aea2986798ed) | Becoming pure core |
 | [ValuationInCore.lean](lean-declarations/inquiry.md#module-3c5f4e829425) | Attainable inquiry, contact and process laws |
 | [ValuationRenewal.lean](lean-declarations/valuation.md#module-003faae288bf) | Valuation development and liangzhi |
 | [ValuationRenewalAudit.lean](lean-declarations/valuation.md#module-b05da0412da4) | Valuation development and liangzhi |

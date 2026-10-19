@@ -1,6 +1,8 @@
 import Becoming.Reading
 import Becoming.Context
 import Becoming.Boundaries
+import Becoming.ContextArrivalTraces
+import Becoming.Unfolding
 
 /-!
 # Readings: one unfolding, read in context, glued where the readings agree
@@ -71,6 +73,9 @@ states show; which readings an unfolding has; what the rest of the whole is, sin
 is read off the standings and the exchange of the formations, as their difference; that
 significance meets the invariance standard, and that the presupposition holds. No ethical predicate, ranking or axiom occurs; the significance
 of the condition of chapter §6.15 enters only as a predicate the theorems quantify over.
+
+`presupposition_iff_all_of_invariant` and `bounded_invariant_iff` are in `Becoming.BoundaryWorlds`,
+so that module does not import the frame (board item W).
 -/
 
 namespace Becoming
@@ -205,29 +210,5 @@ theorem World.unity (w : World) :
    Flow.changeReadings_glue_everywhere_iff.mpr World.withRest_balanced,
    Flow.changeReadings_glue_everywhere_iff,
    World.withRest_closed_iff.symm⟩
-
-/-! ## Significance by the same standard -/
-
-/-- Under invariance the presupposition is the continuation condition at that standpoint: wherever the whole is
-admissible and the presupposition is boundary-invariant, it holds as the boundary is drawn
-somewhere exactly when the continuation of everything has significance from `p`. A restatement of
-`boundaryInvariant_iff_conditional`. -/
-theorem presupposition_iff_all_of_invariant {admissible : (F → Prop) → Prop}
-    (whole : admissible fun _ => True) {sig : Pos → Nat → F → Prop} {p : Pos}
-    (invariant : BoundaryInvariant admissible (SignificantWithin sig p)) :
-    SubTrue admissible (SignificantWithin sig p) ↔ ∀ t g, sig p t g :=
-  ⟨(boundaryInvariant_iff_conditional whole).mp invariant,
-   fun all => ⟨_, whole, fun g _ t => all t g⟩⟩
-
-/-- A rival bounded by a region holding the self's closure meets the standard exactly where the
-region is everything: along a relation, its presupposition is invariant exactly where the region
-holds every formation. A case of `boundaryInvariant_iff_all`. -/
-theorem bounded_invariant_iff {rel : F → F → Prop} {center : Pos → F} {region : Pos → F → Prop}
-    {p : Pos} (holds : ∀ g, WithinClosure rel (center p) g → region p g) :
-    BoundaryInvariant (Boundary rel (center p)) (SignificantWithin (bounded region) p) ↔
-      ∀ g, region p g :=
-  (boundaryInvariant_iff_all (Boundary.whole (center p))
-      ⟨_, Boundary.closure (center p), fun g within _ => holds g within⟩).trans
-    ⟨fun all g => all 0 g, fun all _ g => all g⟩
 
 end Becoming

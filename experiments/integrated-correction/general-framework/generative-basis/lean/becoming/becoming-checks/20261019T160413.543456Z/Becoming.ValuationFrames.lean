@@ -1,0 +1,448 @@
+import Becoming.Inquiry
+import Becoming.Labelled
+import Becoming.Significance
+
+/-!
+# Valuations read on frames
+
+`Becoming.Metaethics` states valuations over the relations a web or a flow forms, and
+`Becoming.Significance` states the continuation condition on them; neither imports the frame. This
+module holds their readings on frames and runs of a labelled process: formed relations as a process
+on claims (`Valuation.relations`, `Valuation.Connected`); living significance on a frame (`G0`,
+`Valuation.g0`) and the reason a sound inquiry
+gives every position with access (`universal_reason`); access as a realized claim (`AccessAt`);
+extension and comparison on a frame (`Extension`, `Comparison`, `LiftBetter`); the instances on
+conditions read along a run (`Conditions.valuation` and what follows) and on separate formations
+(`Separate`); the models showing each hypothesis needed (`Model`); and the paths of a web
+(`Web.paths`), with the continuation condition read on them and on conditions along a run
+(`Conditions.significant_of_unrestricted`).
+
+Every declaration moved here unchanged, with its name, from `Becoming.Metaethics` or
+`Becoming.Significance` (board item W). Every declaration has an empty axiom report.
+-/
+
+/-! ## Valuations read on frames (moved from `Becoming.Metaethics`) -/
+
+namespace Becoming
+
+open Generative Generative.InquirySufficiency
+
+namespace Valuation
+
+variable {Pos C : Type} (V : Valuation Pos C)
+
+/-- Formed relations as a process on claims: a step reaches a related living claim. -/
+def relations : Process C Unit :=
+  ⟨fun c _ d => V.related c d ∧ V.living d⟩
+
+/-- Every two living claims are linked through formed relations among living claims. -/
+def Connected : Prop :=
+  ∀ c d, V.living c → V.living d → Reach V.relations c d
+
+variable {V}
+
+/-- Under N_rel, each standpoint's significance is an invariant of the formed relations. -/
+theorem transmits_invariant (neutral : Neutral V.transmits) (p : Pos) :
+    Invariant V.relations (V.sig p) :=
+  fun c _ d step held => neutral (p, c, d) held step.1 step.2
+
+/-- Significance reaches every living claim linked to a valued one. -/
+theorem reaches (neutral : Neutral V.transmits) {p : Pos} {c d : C}
+    (linked : Reach V.relations c d) (held : V.sig p c) : V.sig p d :=
+  (transmits_invariant neutral p).reach linked held
+
+theorem significant_of_grounds (connected : V.Connected) : V.Grounds → V.Significant
+  | ⟨⟨p₁, c₁, alive₁, held⟩, transmit, share⟩, p, c, alive =>
+    reaches transmit (connected c₁ c alive₁ alive) (share (p₁, p, c₁) alive₁ held)
+
+/-- Characterization of living significance's content on a connected whole with some living claim. -/
+theorem significant_iff (connected : V.Connected) (p₀ : Pos) {c₀ : C}
+    (alive₀ : V.living c₀) : V.Significant ↔ V.Grounds :=
+  ⟨fun all => ⟨⟨p₀, c₀, alive₀, all p₀ c₀ alive₀⟩,
+      fun ⟨p, _, d⟩ _ _ alive => all p d alive,
+      fun ⟨_, q, c⟩ alive _ => all q c alive⟩,
+    significant_of_grounds connected⟩
+
+end Valuation
+
+variable {S A C Pos : Type}
+
+/-- Living significance on the frame: living content realized at a configuration falls under the
+relevance `positive` there. The parameter's name carries no valence: read from significance
+(`Frame.relevance`), it is significance from every standpoint. -/
+def G0 (F : Frame S A C) (living : C → Prop) (positive : S → C → Prop) : Prop :=
+  ∀ s c, living c → F.realized s c → positive s c
+
+/-- Claim-level significance is living significance for the frame, with relevance read as
+significance from every standpoint. -/
+theorem Valuation.g0 (F : Frame S A C) {V : Valuation Pos C} (all : V.Significant) :
+    G0 F V.living (fun _ c => ∀ p, V.sig p c) :=
+  fun _ c alive _ p => all p c alive
+
+/-- A sound inquiry whose goal is new living content gives every position with access
+to it a contributory reason. Seed, N_rel, N_std and A are the normative premises;
+connection and soundness are facts about the unfolding and the inquiry. -/
+theorem universal_reason {R : Type} {k : Nat} (F : Frame S A C) (V : Valuation Pos C)
+    (before : S → C → Prop) {safe : S → A → S → Prop} {sense : S → A → S → Fin k}
+    {response : R → List A} {B : S → Prop}
+    (access : Pos → Policy A R k → Prop) (Reason : Pos → Policy A R k → Prop)
+    (grounds : V.Grounds) (connected : V.Connected)
+    (articulate : Neutral (articulates V access (Scope F.P sense response B) before Reason))
+    (policy : Policy A R k)
+    (sound : Sound F.P safe (Novel F V.living before) sense response policy B) :
+    ∀ p, access p policy → Reason p policy :=
+  fun p available => positioned_articulation_of_articulates articulate p policy available
+    fun t reached => match Scope.secures sound t reached with
+      | ⟨c, alive, held, fresh⟩ =>
+        ⟨c, Valuation.g0 F (Valuation.significant_of_grounds connected grounds) t c alive held,
+          fresh⟩
+
+/-- Access as a realized claim: a position's access is formed in the unfolding. -/
+def AccessAt {R : Type} (F : Frame S A C) (claim : Pos → R → C) (s : S) (p : Pos) (r : R) :
+    Prop :=
+  F.realized s (claim p r)
+
+/-- A generative extension: the second configuration keeps every claim of the first
+and realizes some living claim the first does not. -/
+def Extension (F : Frame S A C) (living : C → Prop) (s t : S) : Prop :=
+  (∀ c, F.realized s c → F.realized t c) ∧
+    ∃ c, living c ∧ F.realized t c ∧ ¬ F.realized s c
+
+/-- C on the frame. `Better s t` says that `t` is strictly better. -/
+def Comparison (F : Frame S A C) (living : C → Prop) (Better : S → S → Prop) : Prop :=
+  ∀ s t, Extension F living s t → Better s t
+
+/-- **What C needs to see.** Where a comparison is read off a description of configurations and
+compares no description with itself, C makes the description tell every extension apart from its
+base: a description identifying a configuration with an extension of it supports no comparison
+satisfying C. -/
+theorem Comparison.separates {F : Frame S A C} {living : C → Prop} {D : Type} {π : S → D}
+    {compare : D → D → Prop} (irreflexive : ∀ d, ¬ compare d d)
+    (comparison : Comparison F living fun s t => compare (π s) (π t)) {s t : S}
+    (extension : Extension F living s t) : π s ≠ π t :=
+  fun same => irreflexive (π t) (Eq.subst (motive := fun d => compare d (π t)) same
+    (comparison s t extension))
+
+/-- No configuration extends itself. -/
+theorem Extension.irrefl {F : Frame S A C} {living : C → Prop} {s : S} :
+    ¬ Extension F living s s :=
+  fun ⟨_, _, _, now, before⟩ => before now
+
+/-- Extensions compose. -/
+theorem Extension.trans {F : Frame S A C} {living : C → Prop} {s t u : S}
+    (first : Extension F living s t) (second : Extension F living t u) : Extension F living s u :=
+  ⟨fun c held => second.1 c (first.1 c held),
+    let ⟨c, live, now, before⟩ := second.2
+    ⟨c, live, now, fun earlier => before (first.1 c earlier)⟩⟩
+
+/-- **A natural-number score satisfying C climbs.** Along an endless chain of extensions, a
+natural-number score whose strict order satisfies C rises by at least one at every link. -/
+theorem Comparison.climbs {F : Frame S A C} {living : C → Prop} {score : S → Nat}
+    (comparison : Comparison F living fun s t => score s < score t) {next : Nat → S}
+    (chain : ∀ i, Extension F living (next i) (next (i + 1))) :
+    ∀ m, score (next 0) + m ≤ score (next m)
+  | 0 => Nat.le_refl _
+  | m + 1 => Nat.le_trans (Nat.succ_le_succ (Comparison.climbs comparison chain m))
+      (comparison _ _ (chain m))
+
+/-- **No configuration stays above an endless chain of extensions.** A natural-number score
+satisfying C ranks some link of the chain above any configuration whatever: the link
+`score s + 1` steps along. The force is the unit step of the natural numbers: a bounded score
+(with values `k / (k + 1)`, say) can satisfy C without this. -/
+theorem Comparison.outgrows {F : Frame S A C} {living : C → Prop} {score : S → Nat}
+    (comparison : Comparison F living fun s t => score s < score t) {next : Nat → S}
+    (chain : ∀ i, Extension F living (next i) (next (i + 1))) (s : S) :
+    score s < score (next (score s + 1)) :=
+  Nat.le_trans (Nat.le_add_left (score s + 1) (score (next 0)))
+    (Comparison.climbs comparison chain (score s + 1))
+
+/-- L, conservative default: every outcome of `a` is better than every outcome of `b`. -/
+def LiftBetter (F : Frame S A C) (better : S → S → Prop) (s : S) (a b : A) : Prop :=
+  ∀ t, F.P.step s a t → ∀ t', F.P.step s b t' → better t t'
+
+theorem LiftBetter.trans {F : Frame S A C} {better : S → S → Prop} {s : S} {a b c : A}
+    (transitive : ∀ {x y z}, better x y → better y z → better x z)
+    (ab : LiftBetter F better s a b) (bc : LiftBetter F better s b c)
+    (live : Enabled F.P s b) : LiftBetter F better s a c :=
+  fun t ht t' ht' => match live with
+    | ⟨m, hm⟩ => transitive (ab t ht m hm) (bc m hm t' ht')
+
+theorem LiftBetter.irrefl {F : Frame S A C} {better : S → S → Prop} {s : S} {a : A}
+    (irreflexive : ∀ x, ¬ better x x) (live : Enabled F.P s a) : ¬ LiftBetter F better s a a :=
+  fun lifted => match live with
+    | ⟨t, ht⟩ => irreflexive t (lifted t ht t ht)
+
+/-- The default implies the weaker "some outcome beats some outcome" when both act. -/
+theorem LiftBetter.some {F : Frame S A C} {better : S → S → Prop} {s : S} {a b : A}
+    (lifted : LiftBetter F better s a b) (liveA : Enabled F.P s a) (liveB : Enabled F.P s b) :
+    ∃ t t', F.P.step s a t ∧ F.P.step s b t' ∧ better t t' :=
+  match liveA, liveB with
+  | ⟨t, ht⟩, ⟨t', ht'⟩ => ⟨t, t', ht, ht', lifted t ht t' ht'⟩
+
+section Reading
+
+open RelationalRenewal
+
+/-- Formation events of a run read through its conditions. An event is living when
+its formation is active and does not consume in the run (the relational reading of
+`RenewalComparison`); two events are related when their formations participate in a
+common condition. Standpoints, their regions and significance remain supplied. -/
+def Conditions.valuation {F Cond : Type} {P : Process S A} (K : Conditions S F Cond)
+    (r : Run P) (own sig : Pos → F × Nat → Prop) : Valuation Pos (F × Nat) where
+  living e := (K.along r).active e.2 e.1 ∧ ¬ ConsumingIn (K.along r) e.1
+  related e e' := ∃ c, Participates (K.along r) e.1 c ∧ Participates (K.along r) e'.1 c
+  own := own
+  sig := sig
+
+namespace Conditions
+
+variable {F Cond : Type} {P : Process S A} (K : Conditions S F Cond) (r : Run P)
+  (own sig : Pos → F × Nat → Prop)
+
+/-- A condition in which every living formation participates connects the whole. -/
+theorem connected_of_common (c₀ : Cond)
+    (common : ∀ e, (K.valuation r own sig).living e → Participates (K.along r) e.1 c₀) :
+    (K.valuation r own sig).Connected :=
+  fun c d alive alive' =>
+    Reach.of_step (a := ()) ⟨⟨c₀, common c alive, common d alive'⟩, alive'⟩
+
+/-- With a condition in which every living formation participates, living significance for every
+standpoint is exactly a seed with N_rel and N_std. Connection follows from
+co-participation, given which conditions are counted. -/
+theorem significant_iff_of_common (c₀ : Cond)
+    (common : ∀ e, (K.valuation r own sig).living e → Participates (K.along r) e.1 c₀)
+    (p₀ : Pos) {e₀ : F × Nat} (alive₀ : (K.valuation r own sig).living e₀) :
+    (K.valuation r own sig).Significant ↔ (K.valuation r own sig).Grounds :=
+  Valuation.significant_iff (connected_of_common K r own sig c₀ common) p₀ alive₀
+
+/-- A consuming formation and a formation that loses its support from some step on
+co-participate in the drawn condition, so their events are related. -/
+theorem consumption_relates {f : F} (consuming : ConsumingIn (K.along r) f) :
+    ∃ g T, (∀ t, T ≤ t → ¬ Supported (K.along r) t g) ∧
+      ∀ t t', (K.valuation r own sig).related (f, t) (g, t') :=
+  match consuming with
+  | ⟨c, drawn, g, T, depends, lost⟩ =>
+    ⟨g, T, fun t after supported => Nat.not_le_of_gt (lost t after) (supported c depends),
+      fun _ _ => ⟨c, Or.inr drawn, Or.inl depends⟩⟩
+
+/-- Under N_rel, a standpoint that values a consuming formation's activity holds
+significant every living event of a formation that loses its support to the consumed
+condition. The transmission runs along co-participation; it does not use the
+consumption. Under the relational reading the consumer's own events are not living,
+so S0 alone supplies no such valuation. N_rel's rival needs a boundary, or a narrower
+account of which co-participation is a formed relation. -/
+theorem valuing_consumption_reaches (transmit : Neutral (K.valuation r own sig).transmits)
+    {f : F} (consuming : ConsumingIn (K.along r) f) :
+    ∃ g T, (∀ t, T ≤ t → ¬ Supported (K.along r) t g) ∧
+      ∀ p t t', (K.valuation r own sig).sig p (f, t) →
+        (K.valuation r own sig).living (g, t') → (K.valuation r own sig).sig p (g, t') :=
+  match consumption_relates K r own sig consuming with
+  | ⟨g, T, lost, related⟩ =>
+    ⟨g, T, lost, fun p t t' held alive => transmit (p, (f, t), (g, t')) held (related t t') alive⟩
+
+end Conditions
+
+namespace Separate
+
+def frame : Process Unit Unit := ⟨fun _ _ _ => True⟩
+
+def still : Run frame := ⟨fun _ => (), fun _ => (), fun _ => trivial⟩
+
+theorem not_connected (own sig : Unit → Bool × Nat → Prop) :
+    ¬ (conditions.valuation still own sig).Connected := fun connected =>
+  Bool.noConfusion (Invariant.reach (P := (conditions.valuation still own sig).relations)
+    (I := fun e => e.1 = false) (fun e _ e' step => stays e e' step.1)
+    (connected (false, 0) (true, 0) ⟨trivial, fun ⟨_, drawn, _⟩ => drawn⟩
+      ⟨trivial, fun ⟨_, drawn, _⟩ => drawn⟩) rfl)
+
+end Separate
+
+namespace Web
+
+variable {F Cond : Type} (W : Web F Cond) (own sig : Pos → F × Nat → Prop)
+
+/-- A condition in which every living event participates connects the whole. -/
+theorem connected_of_common (c₀ : Cond)
+    (common : ∀ e, (W.valuation own sig).living e → W.Participates e.2 e.1 c₀) :
+    (W.valuation own sig).Connected :=
+  fun c d alive alive' =>
+    Reach.of_step (a := ()) ⟨⟨c₀, common c alive, common d alive'⟩, alive'⟩
+
+/-- With a condition in which every living event participates, living significance for every standpoint
+is exactly a seed with N_rel and N_std, on the stepwise reading as on the whole-run
+one. -/
+theorem significant_iff_of_common (c₀ : Cond)
+    (common : ∀ e, (W.valuation own sig).living e → W.Participates e.2 e.1 c₀)
+    (p₀ : Pos) {e₀ : F × Nat} (alive₀ : (W.valuation own sig).living e₀) :
+    (W.valuation own sig).Significant ↔ (W.valuation own sig).Grounds :=
+  Valuation.significant_iff (connected_of_common W own sig c₀ common) p₀ alive₀
+
+end Web
+
+/-- On fixed dependences the stepwise reading relates exactly the events the whole-run
+reading relates; the readings differ only in which events are living. -/
+theorem Conditions.stepwise_related {F Cond : Type} {P : Process S A} (K : Conditions S F Cond)
+    (r : Run P) (own sig : Pos → F × Nat → Prop) :
+    ((K.dependence.along r).valuation own sig).related = (K.valuation r own sig).related :=
+  rfl
+
+/-- In one process the two readings include different events, in both directions. In
+the escalating run the focal formation consumes, so the whole-run reading counts none
+of its events as living, while the stepwise reading includes its first. In the dipping
+run it does not consume, since the condition returns, so the whole-run reading counts
+its first event as living, while the stepwise reading does not: it draws at a step
+that breaks the sustaining formation's dependence. Both readings include the sustaining
+formation's event at the step that breaks its dependence. -/
+theorem Renewable.readings_differ (own sig : Pos → Renewable.Formation × Nat → Prop) :
+    ((Renewable.conditions.dependence.along Renewable.escalating).valuation own sig).living
+      (.focal, 0) ∧
+    ¬ (Renewable.conditions.valuation Renewable.escalating own sig).living (.focal, 0) ∧
+    (Renewable.conditions.valuation Renewable.dipping own sig).living (.focal, 0) ∧
+    ¬ ((Renewable.conditions.dependence.along Renewable.dipping).valuation own sig).living
+      (.focal, 0) ∧
+    (Renewable.conditions.valuation Renewable.escalating own sig).living (.sustaining, 1) ∧
+    ((Renewable.conditions.dependence.along Renewable.escalating).valuation own sig).living
+      (.sustaining, 1) :=
+  match Renewable.broken_formation with
+  | ⟨active, _, _, victim⟩ =>
+    ⟨⟨trivial, Renewable.stepwise_includes_before_escalation.2.1.not_undermining⟩,
+     fun ⟨_, notConsuming⟩ => notConsuming
+       ((Web.static_consumingIn _ _).mp Renewable.stepwise_includes_before_escalation.1),
+     ⟨trivial, fun consuming => Renewable.dip_breaks_without_consuming.1
+       ((Web.static_consumingIn _ _).mpr consuming)⟩,
+     fun ⟨_, notUndermining⟩ => notUndermining
+       ⟨(), trivial, .sustaining, trivial,
+         ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩,
+     ⟨active, fun ⟨_, drawn, _⟩ => drawn⟩, ⟨active, victim⟩⟩
+
+end Reading
+
+namespace Model
+
+theorem linked_connected (sig : Who → Life → Prop) : (valuation linked sig).Connected
+  | .self, .self, _, _ => Reach.refl _ _
+  | .other, .other, _, _ => Reach.refl _ _
+  | .self, .other, _, _ => Reach.of_step (a := ()) ⟨trivial, trivial⟩
+  | .other, .self, _, _ => Reach.of_step (a := ()) ⟨trivial, trivial⟩
+  | .beyond, _, dead, _ => nomatch dead
+  | _, .beyond, _, dead => nomatch dead
+
+/-- Present aim: no seed. Both neutralities hold vacuously; nothing is significant. -/
+theorem seed_is_needed :
+    let V := valuation linked (fun _ _ => False)
+    V.Connected ∧ ¬ V.Seed ∧ Neutral V.transmits ∧ Neutral V.shares ∧ ¬ V.Significant :=
+  ⟨linked_connected _, fun ⟨_, _, _, held⟩ => held,
+    fun ⟨_, _, _⟩ held => (nomatch held), fun ⟨_, _, _⟩ _ held => (nomatch held),
+    fun all => all .evaluator .self trivial⟩
+
+/-- N_rel is needed. The rival holds S0, a seed and N_std, and transmits significance
+only inside the evaluator's own region. -/
+theorem relational_neutrality_is_needed :
+    let V := valuation linked ownRegion
+    V.Connected ∧ V.SelfGood .evaluator ∧ V.Seed ∧ Neutral V.shares ∧
+    Within (fun i => own .evaluator i.2.2) V.transmits ∧
+    ¬ Neutral V.transmits ∧ ¬ V.Significant :=
+  ⟨linked_connected _,
+    fun | .self, _, _ => trivial
+        | .other, owned, _ => (nomatch owned)
+        | .beyond, owned, _ => (nomatch owned),
+    ⟨.evaluator, .self, trivial, trivial⟩,
+    fun | (_, _, .self), _, _ => trivial
+        | (_, _, .other), _, held => held
+        | (_, _, .beyond), dead, _ => dead,
+    fun | (_, _, .self), _, _, _, _ => trivial
+        | (_, _, .other), bound, _, _, _ => (nomatch bound)
+        | (_, _, .beyond), bound, _, _, _ => (nomatch bound),
+    fun neutral => neutral (.evaluator, .self, .other) trivial trivial trivial,
+    fun all => all .evaluator .other trivial⟩
+
+/-- N_std is needed. The rival holds a seed and N_rel at every standpoint, and shares
+significance only with its own standpoint. -/
+theorem standpoint_neutrality_is_needed :
+    let V := valuation linked ownStandpoint
+    V.Connected ∧ V.Seed ∧ Neutral V.transmits ∧
+    Within (fun i => i.1 = i.2.1) V.shares ∧
+    ¬ Neutral V.shares ∧ ¬ V.Significant :=
+  ⟨linked_connected _, ⟨.evaluator, .self, trivial, trivial⟩,
+    fun | (.evaluator, _, _), _, _, _ => trivial
+        | (.bystander, _, _), held, _, _ => held,
+    fun | (_, _, _), rfl, _, held => held,
+    fun neutral => neutral (.evaluator, .bystander, .self) trivial trivial,
+    fun all => all .bystander .self trivial⟩
+
+/-- No path of formed relations enters `beyond` from elsewhere. -/
+theorem isolated {living : Life → Prop} {sig : Who → Life → Prop} :
+    ∀ {c : Life} {word : List Unit},
+      Trace (valuation living sig).relations c word .beyond → c = .beyond
+  | _, _, .nil _ => rfl
+  | _, _, .cons step rest => by
+    have entered := isolated rest
+    subst entered
+    exact absurd step.1 (no_relation_into_beyond _)
+
+/-- Connection is needed: with an unrelated living claim, every premise holds and
+significance stops where formed relations stop. -/
+theorem connection_is_needed :
+    let V := valuation (fun _ => True) (fun _ c => linked c)
+    V.Grounds ∧ ¬ V.Connected ∧ ¬ V.Significant :=
+  ⟨⟨⟨.evaluator, .self, trivial, trivial⟩,
+      fun | (_, _, .self), _, _, _ => trivial
+          | (_, _, .other), _, _, _ => trivial
+          | (_, c, .beyond), _, rel, _ => absurd rel (no_relation_into_beyond c),
+      fun | (_, _, _), _, held => held⟩,
+    fun connected => match connected .self .beyond trivial trivial with
+      | ⟨_, path⟩ => Life.noConfusion (isolated path),
+    fun all => all .evaluator .beyond trivial⟩
+
+end Model
+
+end Becoming
+
+/-! ## The continuation condition on frames and on the paths of a web (moved from `Becoming.Significance`) -/
+
+namespace Becoming
+
+open Generative
+
+variable {F C Pos : Type}
+
+/-- Read through a run, living significance follows from the continuation condition the same way. -/
+theorem Conditions.significant_of_unrestricted {S A Cond : Type} {P : Process S A}
+    (K : Conditions S F Cond) (r : Run P) {sig : Pos → Nat → F → Prop}
+    (unrestricted : Unrestricted sig) (own : Pos → F × Nat → Prop) :
+    (K.valuation r own fun p e => sig p e.2 e.1).Significant :=
+  fun p e _ => unrestricted (p, e.2, e.1)
+
+/-- The frame of a web's level paths: a claim is a formation at a step, realized along a level
+path when the levels admit it there. Nothing steps. -/
+def Web.paths (W : Web F C) : Frame (Nat → C → Nat) Unit (F × Nat) :=
+  ⟨⟨fun _ _ _ => False⟩, fun l e => W.Admits (l e.2) e.2 e.1⟩
+
+/-- On level paths, under the continuation condition, living significance holds with unindexed significance for every reading of
+`living`, and so does C, with “better” read as retaining and adding what has significance. -/
+theorem Web.paths_g0_comparison (W : Web F C) {sig : Pos → Nat → F → Prop}
+    (unrestricted : Unrestricted sig) (living : F × Nat → Prop) (p : Pos) :
+    G0 W.paths living (fun _ e => ∀ q, sig q e.2 e.1) ∧
+      Comparison W.paths living fun l' l => W.Retains sig p l l' ∧ W.Adds sig p l l' :=
+  ⟨fun _ e _ _ q => unrestricted (q, e.2, e.1),
+   fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
+     ⟨fun t f _ admits => keeps (f, t) admits,
+      ⟨e.2, e.1, unrestricted (p, e.2, e.1), realized, fresh⟩⟩⟩
+
+/-- C with no axiom. On level paths, an extension in which every claim counts as living is exactly
+a widening. -/
+theorem Web.paths_extension_iff_widens (W : Web F C) {l l' : Nat → C → Nat} :
+    Extension W.paths (fun _ => True) l' l ↔ W.Widens l l' :=
+  ⟨fun ⟨keeps, e, _, realized, fresh⟩ => ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩,
+   fun ⟨includes, t, f, admits, not⟩ =>
+    ⟨fun e admits => includes e.2 e.1 admits, (f, t), trivial, admits, not⟩⟩
+
+/-- C with no axiom, by definition. On level paths, C holds for every reading of `living` with
+“better” read as widening what can form. The proof unfolds `Comparison` to `Extension`: that
+widening is better is supplied by the reading of “better”, not shown here. -/
+theorem Web.paths_comparison_widens (W : Web F C) (living : F × Nat → Prop) :
+    Comparison W.paths living fun l' l => W.Widens l l' :=
+  fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
+    ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩
+
+end Becoming

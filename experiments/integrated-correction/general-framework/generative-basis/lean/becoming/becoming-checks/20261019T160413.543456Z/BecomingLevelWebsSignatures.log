@@ -1,0 +1,11 @@
+@Becoming.LevelWebs.level_falls_not_recurring : ∀ {F C : Type} {W : Becoming.Web F C} {c : C} {T : Nat},
+  (∀ (n : Nat), T ≤ n → ¬W.Rises n c) → ¬∀ (N : Nat), ∃ n, N ≤ n ∧ W.Falls n c
+@Becoming.LevelWebs.level_still_unrefuted : ∀ {F C : Type} {W : Becoming.Web F C} {c : C} {T : Nat},
+  (∀ (n : Nat), T ≤ n → ¬W.Rises n c) → ¬¬∃ M, T ≤ M ∧ ∀ (t : Nat), M ≤ t → W.level (t + 1) c = W.level t c
+@Becoming.LevelWebs.Balances.level_over_stretch : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C},
+  L.Balances W →
+    ∀ (c : C) (S n : Nat),
+      (W.level (S + n) c + Becoming.total (Becoming.steps S n) fun t => L.taken t c) =
+        W.level S c + Becoming.total (Becoming.steps S n) fun t => L.given t c
+@Becoming.LevelWebs.config_mem_iff : ∀ {F C : Type} (W : Becoming.Web F C) (cs : List C) (t K : Nat),
+  W.config cs t ∈ Becoming.configurations cs.length K ↔ W.stock cs t = K

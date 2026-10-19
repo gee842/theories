@@ -85,6 +85,7 @@ Ren, 16 October 2026, chose “Closest gaps first” on the I4 classification ta
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T062828.251326Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `Becoming.Lasting.lifting`, `Becoming.Lasting.step_iff_either`, `Becoming.Lasting.Unbounded`, `Becoming.Lasting.Unbounded.step_not_not`, `Becoming.Lasting.FinitelyBranching`, `lifting where branching is finite`, `有限分支处的提升`, `König lifting`, `Kőnig lifting`, `lasting some course`, `持续某段进程`
 
@@ -114,6 +115,7 @@ Aliases: `Becoming.Lasting.lifting`, `Becoming.Lasting.step_iff_either`, `Becomi
 - 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
 - 19 October 2026, SG (junctures, commuting laws and the third value): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only where SG added text: SG added its records and open items to the "When the course branches" and "What a description keeps and loses" rows, a section 8.3 item and a rerun sentence in the integration row. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Likeness.lean). The claim is unchanged.
 - 19 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](lifting-where-branching-is-finite.json).
 
 <a id="earlier-text--早期文本"></a>

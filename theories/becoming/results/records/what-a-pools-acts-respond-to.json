@@ -313,7 +313,7 @@
         "Becoming.TimedResponse.pool_alike_before",
         "Becoming.act_courses_response_alike_pool"
       ],
-      "sha256": "2e6b7f783c387054999d4efabaf32a4720a6f038636ff7f9d5bfada891f8a90a"
+      "sha256": "13bce2617ad84cfa4a540f657673fdf803abb323eb15ee30f0a8d3fbbdfbf873"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
@@ -335,7 +335,7 @@
         "Becoming.Loop.escalation_follows",
         "Becoming.Loop.quiet_follows"
       ],
-      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e"
+      "sha256": "a6b7db425e8741a9e3b1c99aac45a2c8d12eb3431b4b73c5391b47e84b9a7089"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionPool.lean",
@@ -353,7 +353,7 @@
         "Becoming.Clearing.restLaw",
         "Becoming.Clearing.rest_follows_spared"
       ],
-      "sha256": "fb2e947cd684e8fffb1b236608bba9842c2f5e044df0e05bfcb1d0b1303ee8b5"
+      "sha256": "78ea73016d194e4759da763f0d68e987ece7db236069e2c7bfaf69f078c8975d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionGap.lean",
@@ -380,7 +380,7 @@
         "Becoming.Loop.web",
         "Becoming.Loop.quietWeb"
       ],
-      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289"
+      "sha256": "9ed9b2ee9a7a9066601b4a8a818081baf1946326fd80db08b0e695bbbd11c7bc"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
@@ -389,7 +389,7 @@
         "Becoming.TimedResponse.ReachedBy",
         "Becoming.TimedResponse.coupling_alike_before"
       ],
-      "sha256": "9673c5bc75201ebad87959ea6e694f53e1dad45bf9855185aa4c2ab625010642"
+      "sha256": "247d0910222d42c9d23862f7828f1b966613e47e1552e40d419dfc9329008a1f"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
@@ -416,7 +416,7 @@
         "Becoming.Flow.CoupledFromEither",
         "Becoming.thresholdOnly"
       ],
-      "sha256": "33e56ce738d062804808d426049498435660fafcfbd29ae38b8695148536cf35"
+      "sha256": "98bfa21a5f63725b5d67a702cae3d68dc884feca3a1beccf25c55d4acf7e2bac"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
@@ -427,7 +427,7 @@
         "Becoming.Clearing.sparedFlow",
         "Becoming.Clearing.sparedWeb"
       ],
-      "sha256": "934d11a64a1b0972253eef6a7f8ffa7c06f9d28e99e61d54441e68876d2ecd12"
+      "sha256": "6626646b06ee6755091a238f4c5345e0b1399e2494ef304d78d195995e36d888"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
@@ -455,7 +455,7 @@
       "declarations": [
         "Becoming.Decided"
       ],
-      "sha256": "9c401845bf7254fba72a74c82a5b4cc373ed68e72c2c151dfaf80933a3a73508"
+      "sha256": "6dbdfe672b8cc94aea03d87162781e4def99dec7672d7c357e3ece80f520a911"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T165934.927469Z/verification.json",
@@ -481,12 +481,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
       "role": "provenance",
       "sha256": "a5296e9a8fb43255176faf4b9df88bed625bb14a09c2e3a4ec6fc22be3771b86"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T165934.927469Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.PoolResponse",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -582,6 +588,10 @@
     {
       "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (PoolResponse.lean). Re-pointed after reading the change (Counterfactual.lean: declarations moved in or out by W2; Decidedness.lean: declarations moved in or out by W2; Feedback.lean: declarations moved in or out by W2; Response.lean: declarations moved in or out by W2; SelectionPool.lean: declarations moved in or out by W2; Testing.lean: declarations moved in or out by W2; TimedResponse.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

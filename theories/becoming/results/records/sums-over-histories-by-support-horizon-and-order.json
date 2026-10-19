@@ -353,11 +353,18 @@
         "Becoming.possibility",
         "Becoming.counting",
         "Becoming.support",
-        "Becoming.possibility_transfer_iff",
-        "Becoming.counting_transfer_iff",
         "Becoming.Interference.unseen"
       ],
-      "sha256": "0919450bd52537debe5098b9a6d8da657d4570183f9a64c5543a05b8d94b852c"
+      "sha256": "f5591fb4b211bfe0e8f55afc442c14094a473fc4b501440f6f53d91a154ac5d1"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WeightedTraces.lean",
+      "role": "proof",
+      "sha256": "39b110ba6474c3a29ed8faac8fc2e57fb3c14b283c0e80ce0e808367a37d58b5",
+      "declarations": [
+        "Becoming.possibility_transfer_iff",
+        "Becoming.counting_transfer_iff"
+      ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Routes.lean",
@@ -396,6 +403,12 @@
       "role": "provenance",
       "declarations": [],
       "sha256": "8d59eec11ae07e213b069462f4b2eee39d70571c71dbc368a4ce30005487ed11"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -408,7 +421,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T143634.829557Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Weighted",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -426,12 +439,23 @@
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WeightedTraces.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.WeightedTraces",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "history": [
     {
       "en": "19 October 2026: added (HS), from W1–W4 of the review of the exploratory repository; study section 211.",
       "zh": "2026年10月19日：新增（HS），来自对探索性仓库之评审的 W1–W4；研究第 211 节。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: possibility_transfer_iff, counting_transfer_iff from Weighted.lean to WeightedTraces.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Weighted.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

@@ -331,7 +331,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "879544041d05a88778691dfa2810799df82b4917f47c92609544cfab89d3dbde",
+      "sha256": "a51dd4bda16baea5e25e25031f11f3d018e1df0e98ab854bb460047c83ba14ca",
       "declarations": [
         "Becoming.Downstream.flow",
         "Becoming.Downstream.web",
@@ -353,19 +353,19 @@
         "Becoming.Clearing.dissipative",
         "Becoming.Clearing.fed",
         "Becoming.Clearing.undermines_within_renewal",
-        "Becoming.Lone.fed_not_recurring"
+        "Becoming.Lone.fed_not_recurring",
+        "Becoming.Flow.FedBy",
+        "Becoming.Clearing.fedBy_source"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "role": "proof",
-      "sha256": "f4ec2cf88bc4f269a9cea236789b5b4eb17b11afe36079acaf15734a1157ab22",
+      "sha256": "af15e3337cee7ca07d8540ffd721e141807446a4bb0f8100996fa6d26e96d724",
       "declarations": [
-        "Becoming.Flow.FedBy",
         "Becoming.Clearing.own",
         "Becoming.Clearing.sig",
         "Becoming.Clearing.valuation",
-        "Becoming.Clearing.fedBy_source",
         "Becoming.Clearing.clearer_not_living",
         "Becoming.Clearing.center_not_derived",
         "Becoming.Web.held_by_formations"
@@ -434,19 +434,25 @@
       "role": "receipt",
       "sha256": "c5e118f377ae815cdb1d8afb02bbc5e3fb7ee519d45ab85f12a834fc467e8f0a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Standpoints",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -726,6 +732,10 @@
     {
       "en": "18 October 2026, C2 (Becoming.Exhaustion): one way taking all that is given forms is stated in where-a-rising-take-ends: a take more than now from a bounded giving, so the next step was narrowed and the record linked. Before: next step \"The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; how taking all that is given forms (a stronger case of the meta-attractor); forced endings in these witnesses (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.\". The claim is unchanged.",
       "zh": "2026年10月18日，C2（Becoming.Exhaustion）：取尽所给的一种形成方式已在 where-a-rising-take-ends 中陈述：对有界所给的多于此刻的取用，所以下一步收窄并链接该记录；原文见英文。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: FedBy, fedBy_source from Standpoints.lean to Continuation.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Continuation.lean, Standpoints.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

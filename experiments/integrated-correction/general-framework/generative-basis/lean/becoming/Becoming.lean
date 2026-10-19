@@ -79,6 +79,7 @@ import Becoming.Correspondence
 import Becoming.Descent
 import Becoming.Standpoints
 import Becoming.Significance
+import Becoming.ValuationFrames
 import Becoming.RelativePosition
 import Becoming.Interdependence
 import Becoming.Feeding
@@ -156,6 +157,7 @@ import Becoming.Retrodiction
 import Becoming.CrossSituational
 import Becoming.Likeness
 import Becoming.Distinguishing
+import Becoming.JointPlans
 import Becoming.Composition
 import Becoming.Joining
 import Becoming.Granularity
@@ -1006,6 +1008,10 @@ readings of the unfolding (`Becoming.Labelled`).
   greatest part that does not depend on what it draws down continues (`Clearing`); what it loses
   is a continuation with significance, and that loss needs a significance, such as the
   continuation condition.
+* `Becoming.ValuationFrames` (L4): the valuations of `Becoming.Metaethics` and the continuation
+  condition of `Becoming.Significance` read on frames and runs of a labelled process (the relations
+  a valuation reads off a frame, living significance and `universal_reason`, comparison and
+  extension, the models showing each hypothesis needed, the paths of a web).
 * `Becoming.Interdependence` (L4): how far the route without axiom reaches. What a
   formation's continuation depends on is its feeding closure, the least region holding it
   that is closed under feeding, and nothing beyond the closure gives to what it requires.
@@ -1783,6 +1789,9 @@ readings of the unfolding (`Becoming.Labelled`).
   the course of a law on `N` configurations; so the depth `N + N' - 1` between two branching
   frames, and the length `N + N' - 1` of the tests across two worlds, are exact for every pair.
   The readings are the AI's.
+* `Becoming.JointPlans` (L3): nested decompositions of any ternary relation and the footprints
+  their leaves draw on (no premise, no frame): realized plans with exclusive footprints draw on the
+  root's footprint without repeating.
 * `Becoming.Composition` (L3): a whole and the parts it holds together, one more relation among
   configurations of the same unfolding. Jointly alike configurations pass the same joint tests
   with no premise; where moves and pairs of parts are compact and the tests stable, passing the

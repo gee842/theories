@@ -1,4 +1,5 @@
 import Becoming.Remainder
+import Becoming.Recurrence
 
 /-!
 # Closing: how loops form within the unfolding

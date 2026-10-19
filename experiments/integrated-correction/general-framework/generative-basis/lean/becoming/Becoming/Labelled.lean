@@ -1,5 +1,6 @@
 import Becoming.Frame
 import Becoming.Generation
+import Becoming.Recurrence
 
 /-!
 # The labelled process as a reading of the one unfolding
@@ -36,6 +37,9 @@ modules, which do not import the frame.
 Every declaration moved here unchanged, with its name, from `Becoming.Unfolding`,
 `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return` or `Becoming.Generation` (study
 section 180, board item W). Every declaration has an empty axiom report.
+
+A third part holds the readings of `Becoming.Recurrence` on runs (a determined law as a process,
+reach along runs), moved here unchanged with their names (board item W, second batch).
 -/
 
 /-! ## The four splits, read from the world's side (moved from `Becoming.Unfolding`) -/
@@ -862,5 +866,118 @@ theorem renewal_without_generation :
     | .sustaining => inactive (Nat.le_refl 1)⟩
 
 end Renewable
+
+end Becoming
+
+/-! ## A determined law as a process, and reach along its runs (moved from `Becoming.Recurrence`) -/
+
+namespace Becoming
+
+open Generative
+
+universe u v w
+
+namespace Law
+
+variable {S : Type u}
+
+/-- A determined law as a process of the spine: one action, the step to `next s`. -/
+def process (next : S → S) : Process S Unit := ⟨fun s _ t => t = next s⟩
+
+/-- The run of a determined law from `s`. -/
+def run (next : S → S) (s : S) : Run (process next) :=
+  ⟨orbit next s, fun _ => (), fun _ => rfl⟩
+
+theorem run_state (next : S → S) (s : S) : (run next s).state = orbit next s := rfl
+
+end Law
+
+section Runs
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+/-- A run of any process whose configurations a list holds revisits from every step on. -/
+theorem Run.revisits_from (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) (T : Nat) :
+    ∃ i j, T ≤ i ∧ i < j ∧ r.state i = r.state j :=
+  Becoming.revisits_from held T
+
+/-- A run whose configurations a list holds and whose changes a quantity marks: change does not
+recur (`not_marks` on the run's configurations). -/
+theorem Run.change_not_recurring (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) {q : S → Nat}
+    (marks : Marks q r.state) : ¬ ∀ T, ∃ k, T ≤ k ∧ r.state (k + 1) ≠ r.state k :=
+  fun recurs => not_marks held recurs q marks
+
+/-- A possibility lost along an admissible path stays lost along every continuation. -/
+theorem Reach.lost_stays {t u t' : S} (lost : ¬ Reach P t u) (onward : Reach P t t') :
+    ¬ Reach P t' u :=
+  fun back => lost (onward.trans back)
+
+/-- **What can be had from a configuration is kept exactly where it can be had again.** Every
+configuration reachable from `s` is reachable from `t` exactly when `t` leads back to `s`. -/
+theorem keeps_reach_iff_returns {s t : S} : (∀ u, Reach P s u → Reach P t u) ↔ Reach P t s :=
+  ⟨fun keeps => keeps s (Reach.refl P s), fun back _ there => back.trans there⟩
+
+/-- **Along a path, the same possibilities exactly where it can be undone.** For `t` reached
+from `s`, the configurations reachable from both are the same exactly when `t` leads back to
+`s`. -/
+theorem same_reach_iff_returns {s t : S} (onward : Reach P s t) :
+    (∀ u, Reach P s u ↔ Reach P t u) ↔ Reach P t s :=
+  ⟨fun same => (same s).mp (Reach.refl P s),
+   fun back _ => ⟨fun there => back.trans there, fun there => onward.trans there⟩⟩
+
+/-- **No way back is a lost possibility, with a witness.** `t` does not lead back to `s` exactly
+when some configuration reachable from `s` is not reachable from `t`: `s` itself is one. -/
+theorem not_returns_iff_loses {s t : S} : ¬ Reach P t s ↔ ∃ u, Reach P s u ∧ ¬ Reach P t u :=
+  ⟨fun away => ⟨s, Reach.refl P s, away⟩, fun ⟨_, there, lost⟩ back => lost (back.trans there)⟩
+
+end Runs
+
+section Together
+
+variable {S : Type u} {A : Type v} {C : Type w}
+
+/-- A bundle of claims realized together, at one configuration, at the end of a course of at most
+`n` moves from `s`. -/
+def WithinMoves (P : Process S A) (realized : S → C → Prop) (s : S) (n : Nat)
+    (bundle : C → Prop) : Prop :=
+  ∃ word t, Trace P s word t ∧ word.length ≤ n ∧ ∀ c, bundle c → realized t c
+
+variable {P : Process S A} {realized : S → C → Prop} {bundle : C → Prop}
+
+/-- One step before adds one move to the bound. -/
+theorem WithinMoves.before {s m : S} {a : A} {n : Nat} (step : P.step s a m) :
+    WithinMoves P realized m n bundle → WithinMoves P realized s (n + 1) bundle
+  | ⟨word, t, path, short, holds⟩ => ⟨a :: word, t, .cons step path, Nat.succ_le_succ short, holds⟩
+
+/-- **A course carries every bound on realizing a bundle together, its own moves counted.** -/
+theorem WithinMoves.after_course {n : Nat} :
+    ∀ {s t : S} {xs : List A}, Trace P s xs t → WithinMoves P realized t n bundle →
+      WithinMoves P realized s (xs.length + n) bundle
+  | _, _, _, .nil _, within =>
+    Eq.subst (motive := fun k => WithinMoves P realized _ k bundle) (Nat.zero_add n).symm within
+  | _, _, _, .cons step path, within =>
+    Eq.subst (motive := fun k => WithinMoves P realized _ k bundle) (Nat.succ_add _ n).symm
+      (WithinMoves.before step (WithinMoves.after_course path within))
+
+/-- **Realizable together within some bound is a reachable configuration realizing the
+bundle.** -/
+theorem withinMoves_iff_reach {s : S} :
+    (∃ n, WithinMoves P realized s n bundle) ↔ ∃ t, Reach P s t ∧ ∀ c, bundle c → realized t c :=
+  ⟨fun ⟨_, word, t, path, _, holds⟩ => ⟨t, ⟨word, path⟩, holds⟩,
+   fun ⟨t, ⟨word, path⟩, holds⟩ => ⟨word.length, word, t, path, Nat.le_refl _, holds⟩⟩
+
+/-- **Along a course nothing becomes realizable together that was not before.** -/
+theorem together_after_reach {s t : S} (onward : Reach P s t) :
+    (∃ n, WithinMoves P realized t n bundle) → ∃ n, WithinMoves P realized s n bundle
+  | ⟨n, within⟩ => match onward with
+    | ⟨xs, path⟩ => ⟨xs.length + n, WithinMoves.after_course path within⟩
+
+/-- **A bundle no longer realizable together marks a course with no way back.** -/
+theorem lost_together_not_returns {s t : S}
+    (before : ∃ n, WithinMoves P realized s n bundle)
+    (after : ¬ ∃ n, WithinMoves P realized t n bundle) : ¬ Reach P t s :=
+  fun back => after (together_after_reach back before)
+
+end Together
 
 end Becoming

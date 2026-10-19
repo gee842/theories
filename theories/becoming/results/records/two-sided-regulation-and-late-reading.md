@@ -97,6 +97,7 @@ Aliases: `two-sided regulation`, `regulation that reads late`, `late reading`, `
 ### History
 
 - 19 October 2026: added (RG), the first gap of the map of Chinese sources onto the spine; study section 214.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: study section 180.14 added; Propagation.lean: declarations moved in or out by W2; Recurrence.lean: declarations moved in or out by W2). The claim is unchanged.
 
 </details>
 

@@ -140,6 +140,9 @@ excluded middle suffices where the moves or the claims are not listed. `Becoming
 periphery's `Test` (`sameBranchingTests_iff_same`).
 
 The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D23).
+
+`Decided.exists_listed` and `Decided.exists_not_in` are in `Becoming.Decidedness`, so the modules
+using them do not import the frame (board item W).
 -/
 
 namespace Becoming
@@ -397,19 +400,6 @@ end NeverReturning
 section BranchingTests
 
 variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
-
-/-- Searching a list for a member where a determination holds is decided where the determination
-is decided at each member (`Decided.exists_mem` for types of every universe). -/
-theorem Decided.exists_listed {β : Type u} {P : β → Prop} :
-    ∀ {l : List β}, (∀ b, b ∈ l → Decided (P b)) → Decided (∃ b, b ∈ l ∧ P b)
-  | [], _ => .inr fun ⟨_, mem, _⟩ => nomatch mem
-  | b :: l, decided => match decided b (.head l) with
-    | .inl holds => .inl ⟨b, .head l, holds⟩
-    | .inr fails => match Decided.exists_listed (l := l) fun c mem => decided c (.tail b mem) with
-      | .inl ⟨c, mem, holds⟩ => .inl ⟨c, .tail b mem, holds⟩
-      | .inr absent => .inr fun ⟨c, mem, holds⟩ => match mem_cons_split mem with
-        | .inl same => fails (Eq.subst (motive := P) same holds)
-        | .inr mem => absent ⟨c, mem, holds⟩
 
 /-- Over a type some list holds all of, whether a decided determination holds of something is
 decided. -/
@@ -1527,14 +1517,6 @@ theorem Decided.forall_in {β : Type u} {P : β → Prop} {l : List β}
   match Decided.exists_listed (l := l) fun b mem => (decided b mem).not with
   | .inl ⟨b, mem, fails⟩ => .inr fun all => fails (all b mem)
   | .inr absent => .inl fun b mem => (decided b mem).of_not_not fun fails => absent ⟨b, mem, fails⟩
-
-/-- A decided determination that does not hold of every member of a list fails of some member. -/
-theorem Decided.exists_not_in {β : Type u} {P : β → Prop} {l : List β}
-    (decided : ∀ b, b ∈ l → Decided (P b)) (fails : ¬ ∀ b, b ∈ l → P b) : ∃ b, b ∈ l ∧ ¬ P b :=
-  match Decided.exists_listed (l := l) fun b mem => (decided b mem).not with
-  | .inl found => found
-  | .inr absent =>
-    absurd (fun b mem => (decided b mem).of_not_not fun fails' => absent ⟨b, mem, fails'⟩) fails
 
 /-- **One member of a list holds a decreasing family throughout, where one member holds it at
 each step**, given `EitherThroughout`: the first member holds it throughout, or the rest hold it

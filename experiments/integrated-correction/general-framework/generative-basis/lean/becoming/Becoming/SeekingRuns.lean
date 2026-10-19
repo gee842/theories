@@ -27,7 +27,34 @@ laws of the runs of processes, with no premise beyond what each theorem names.
   (`captured_rule_changes`).
 
 No ethical predicate, ranking or axiom occurs.
+
+Declarations moved here unchanged, with their names, from `Becoming.Capture` (board item W): see the
+sections so headed.
 -/
+
+/-! ## A perturbation of the captured rule reabsorbed (moved from `Becoming.Capture`) -/
+
+namespace Becoming
+
+universe u v
+
+namespace Law
+
+variable {S : Type u} {R : Type v}
+
+/-- **Perturbing the state alone is re-absorbed.** Where the next configuration depends on the
+rule and not on the state, two configurations with the same rule have the same orbit from the
+next step on: the instance of `Law.reabsorbed` (`Becoming.Mechanism`) with the rule as the
+projection. -/
+theorem perturbation_reabsorbed {next : S × R → S × R} (byRule : ∀ x x' g, next (x, g) = next (x', g))
+    (x x' : S) (g : R) : ∀ n, orbit next (x, g) (n + 1) = orbit next (x', g) (n + 1) :=
+  reabsorbed (π := Prod.snd)
+    (fun s s' same => (byRule s.1 s'.1 s.2).trans (congrArg (fun h => next (s'.1, h)) same)) rfl
+
+end Law
+
+end Becoming
+
 
 namespace Becoming
 

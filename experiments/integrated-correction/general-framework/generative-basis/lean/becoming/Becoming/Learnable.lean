@@ -57,8 +57,6 @@ study, not to this module. No ethical predicate, ranking or axiom occurs.
 
 namespace Becoming
 
-open Generative
-
 universe u v w
 
 namespace Learnable

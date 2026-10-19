@@ -1,4 +1,5 @@
 import Becoming.Tail
+import Becoming.Labelled
 
 /-!
 # Tail runs: the omniscience a law of the whole takes, stated of every run

@@ -51,6 +51,11 @@ enters beyond what each theorem names; every declaration has an empty axiom repo
   (`Routes.none_robust`).
 
 Direction as in `PracticalJudgment`: `better a b` says `a` is better.
+
+The formation witness as steps of a process and on its frame (`Requirement.Formation.draw`,
+`Requirement.Formation.frame` and their laws) and `Requirement.Required.through_summary` are in
+`Becoming.FrontierFrames`, which states the commitments on a frame, so this module does not import
+the frame (board item W).
 -/
 
 namespace Becoming
@@ -490,18 +495,6 @@ theorem amount_recovers_basis (f : Form) : amountJudge (remaining f) ↔ basis f
 From the join `DrawnAmountProcesses` (and its inherited part): the continuations are the moves of
 a process on the shared amount, each step drawing what the continuation draws. -/
 
-/-- The continuations as moves on the amount. -/
-def draw : Generative.Process Nat Form := ⟨fun a f b => b = a - drawn f⟩
-
-/-- **From the shared amount, the step by a continuation reaches exactly what remains after
-it.** -/
-theorem draw_step_iff {f : Form} {b : Nat} : draw.step 6 f b ↔ b = remaining f :=
-  Iff.rfl
-
-/-- **The basis is read off the configuration reached.** -/
-theorem basis_after {f : Form} {b : Nat} (step : draw.step 6 f b) : 2 ≤ b ↔ basis f :=
-  Eq.subst (motive := fun x => 2 ≤ x ↔ basis f) step.symm (amount_recovers_basis f)
-
 /-- Within the amount, drawing leaves the amount as it was only where nothing is drawn. -/
 theorem eq_zero_of_sub_eq : ∀ {a x : Nat}, x ≤ a → a - x = a → x = 0
   | _, 0, _, _ => rfl
@@ -509,20 +502,6 @@ theorem eq_zero_of_sub_eq : ∀ {a x : Nat}, x ≤ a → a - x = a → x = 0
   | a + 1, x + 1, _, same =>
     absurd (Nat.le_trans (Nat.le_of_eq (same.symm.trans (Nat.succ_sub_succ a x)))
       (Nat.sub_le a x)) (Nat.not_succ_le_self a)
-
-/-- **A step rests exactly where it draws nothing**, within the amount. -/
-theorem rests_iff_free {a b : Nat} {f : Form} (within : drawn f ≤ a) (step : draw.step a f b) :
-    b = a ↔ freeOccasion f () :=
-  ⟨fun rests => eq_zero_of_sub_eq within (step.symm.trans rests),
-   fun free => step.trans (congrArg (a - ·) free)⟩
-
-/-- **The idle continuation's step from the shared amount rests, and the left route's step
-changes the configuration**: forming the route uses the free occasion. -/
-theorem idle_rests_left_changes :
-    (∀ b, draw.step 6 .idle b → b = 6) ∧ (∀ b, draw.step 6 .left b → b ≠ 6) :=
-  ⟨fun _ step => (rests_iff_free (Nat.zero_le 6) step).mpr formation_loses_occasion.1,
-   fun _ step rests => formation_loses_occasion.2
-     ((rests_iff_free (by decide : 2 ≤ 6) step).mp rests)⟩
 
 /-- Within the amount, drawing more leaves less. -/
 theorem sub_lt_sub_of_lt : ∀ {a x y : Nat}, x < y → y ≤ a → a - y < a - x
@@ -535,61 +514,6 @@ theorem sub_lt_sub_of_lt : ∀ {a x y : Nat}, x < y → y ≤ a → a - y < a - 
         (Nat.le_of_eq (Nat.succ_sub_succ a x).symm))
   | _, _ + 1, 0, less, _ => absurd less (Nat.not_lt_zero _)
   | _, 0, 0, less, _ => absurd less (Nat.lt_irrefl 0)
-
-/-- **The left route's step from the shared amount reaches four, which keeps the basis.** -/
-theorem left_step_retains {b : Nat} (step : draw.step 6 .left b) : b = 4 ∧ 2 ≤ b :=
-  ⟨step.trans left_retains_basis.1, (basis_after step).mpr left_retains_basis.2.1⟩
-
-/-- **The overbuilding step reaches less than the left route's step and loses the basis.** -/
-theorem overbuild_step_loses {b b' : Nat} (step : draw.step 6 .left b)
-    (step' : draw.step 6 .overbuild b') : b' < b ∧ ¬ 2 ≤ b' :=
-  ⟨Nat.lt_of_le_of_lt (Nat.le_of_eq step')
-     (Nat.lt_of_lt_of_le (sub_lt_sub_of_lt overbuilding.1 (by decide : 5 ≤ 6))
-       (Nat.le_of_eq step.symm)),
-   fun two => not_basis_overbuild ((basis_after step').mp two)⟩
-
-/-- **The report of the left and the overbuilding move is the same, while one configuration
-reached keeps the basis and the other does not.** -/
-theorem report_same_basis_differs {b b' : Nat} (step : draw.step 6 .left b)
-    (step' : draw.step 6 .overbuild b') :
-    report .left = report .overbuild ∧ 2 ≤ b ∧ ¬ 2 ≤ b' :=
-  ⟨rfl, (basis_after step).mpr basis_left,
-   fun two => not_basis_overbuild ((basis_after step').mp two)⟩
-
-/-- **No judgement of the report gives whether a step from the shared amount keeps the
-basis.** -/
-theorem no_report_judge_of_step :
-    ¬ ∃ judge : Bool → Prop, ∀ f b, draw.step 6 f b → (judge (report f) ↔ 2 ≤ b) :=
-  fun ⟨judge, correct⟩ => no_report_judge
-    ⟨judge, fun f => (correct f (remaining f) rfl).trans (basis_after rfl)⟩
-
-/-! ### The frontier on the frame of the continuations -/
-
-/-- The frame of the continuations: each realizes its basic claims and its free occasion. -/
-abbrev frame : Frame Form Unit (Sum Bool Unit) := tierFrame protect freeOccasion
-
-/-- The lexical order on the frame of the continuations satisfies `BasicPriority` for its basic
-claims and free occasion: it is that order read on the frame. -/
-theorem priority_on_frame :
-    BasicPriority protect freeOccasion (Lexical.Frame.Above frame basicSide gainSide) :=
-  ⟨fun _ _ => above_iff_frame.symm⟩
-
-/-- **Every continuation on the frontier of the frame forms the link and keeps the basis.** -/
-theorem required_on_frame :
-    Required (Frontier eligible (Lexical.Frame.Above frame basicSide gainSide)) formed :=
-  priority_on_frame.required_iff.mpr required
-
-/-- **Neither working route is required on the frontier of the frame.** -/
-theorem no_route_required_on_frame :
-    ¬ Required (Frontier eligible (Lexical.Frame.Above frame basicSide gainSide)) usesLeft ∧
-      ¬ Required (Frontier eligible (Lexical.Frame.Above frame basicSide gainSide)) usesRight :=
-  ⟨fun required => no_route_required.1 (priority_on_frame.required_iff.mp required),
-   fun required => no_route_required.2 (priority_on_frame.required_iff.mp required)⟩
-
-/-- **Overbuilding is off the frontier of the frame.** -/
-theorem overbuild_off_frontier_on_frame :
-    ¬ Frontier eligible (Lexical.Frame.Above frame basicSide gainSide) .overbuild :=
-  fun frontier => overbuilding.2.2.2 (priority_on_frame.frontier_iff.mp frontier)
 
 end Formation
 
@@ -814,25 +738,6 @@ theorem none_robust :
   | .right => (all fun n => n = false).2 .left True.intro opposite_routes.1
 
 end Routes
-
-section Summary
-
-open Generative
-
-/-- **A requirement over reachable configurations carries through a summary.** If some
-configuration is reachable from `root` and each performs `task`, then through a summary `q` whose
-steps map forward and lift back, some configuration is reachable from `q root` and each performs
-`task'`, where `task` holds at a configuration exactly when `task'` holds at its image. From the
-join `ReachableFrames`. -/
-theorem Required.through_summary {S S' A : Type} {P : Process S A} {Q : Process S' A}
-    (q : S → S') (preserve : ∀ s a t, P.step s a t → Q.step (q s) a (q t))
-    (lift : ∀ s a r, Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r)
-    {task : S → Prop} {task' : S' → Prop} (meaning : ∀ s, task s ↔ task' (q s)) (root : S)
-    (required : Required (Reach P root) task) : Required (Reach Q (q root)) task' :=
-  required.redescribed q (fun _ reached => Reach.map preserve reached)
-    (fun _ reached => Reach.lift lift reached) meaning
-
-end Summary
 
 end Requirement
 

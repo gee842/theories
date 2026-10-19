@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "21700e33ed207345eeda2606d1ef5504e43359083caa84fcf8df855a4b7b3c94"
+      "sha256": "d2bd6b81d50e7057fc5b030851c963fa440e741955f8ec717b4ec2a38fce23b4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -1177,6 +1177,10 @@
     {
       "en": "19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.",
       "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2 (the re-rooting, second batch): THE-THEORY-OF-BECOMING.md re-pointed. In the sections this record cites, the only change bearing on it since the render last passed on main is W2's: W2 extended the sentence on the import tree: no module free of the labelled process imports the frame, and the readings of a module holding both are in Becoming.Labelled, Becoming.LabelledRoles, Becoming.ValuationFrames or the run and trace module that reads it; W2 revised the module counts of the two rings, the L3 and L4 bullets (Becoming.JointPlans, Becoming.ValuationFrames), the receipt sentence and counts. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，W2（重新定根第二批）：THE-THEORY-OF-BECOMING.md 重新指向。本记录所引各节中，自主线上次通过渲染以来，与本记录相关的改动只有 W2 的：第 1 节（W2 扩充导入树一句：不含带标签过程的模块都不导入框架，兼含两者的模块的读法所在）；第 9 节（W2 更新两环的模块数、L3 与 L4 两条、回执句与计数）。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

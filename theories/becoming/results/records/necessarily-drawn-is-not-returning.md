@@ -66,7 +66,7 @@ This answers attraction for processes that are not determined, a next step of at
 - **formal-reuse**: [target-capture](target-capture.md). Reuses Capture's Captured and Law.perturbation_reabsorbed, as instances of attracting regions.
   - Output: Capture of the rule.
   - Input: The rule region as an absorbing region.
-  - Preserved conditions: None. [Capture.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean)
+  - Preserved conditions: None. [SeekingRuns.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeekingRuns.lean)
 - **formal-reuse**: [returning-where-the-course-branches](returning-where-the-course-branches.md). The same module's Returns and Reachable.
   - Output: Returning under branching.
   - Input: The equivalence of drawing and not returning.
@@ -84,7 +84,7 @@ This answers attraction for processes that are not determined, a next step of at
 | proof | [Attraction.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean) | `Becoming.Law.Absorbing`, `Becoming.Law.DrawnInto`, `Becoming.Law.drawn_iff_not_returns` |
 | proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.Law.Returns` |
 | proof | [Frame.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean) | `Becoming.Invariant`, `Becoming.Run` |
-| proof | [Capture.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean) | `Becoming.Law.perturbation_reabsorbed` |
+| proof | [SeekingRuns.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeekingRuns.lean) | `Becoming.Law.perturbation_reabsorbed` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
@@ -94,6 +94,7 @@ This answers attraction for processes that are not determined, a next step of at
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `Becoming.Branching.PossiblyDrawnInto`, `Becoming.Branching.NecessarilyDrawnInto`, `Becoming.Branching.necessarilyDrawn_iff_not_returns`, `Becoming.Branching.possiblyDrawn_iff`, `Becoming.Branching.Returns.run`, `Becoming.Branching.OneWay.possibly_not_necessarily`, `Becoming.Law.rule_absorbing`, `Becoming.Law.perturbation_drawnInto`, `Becoming.Captured.state_perturbation_drawn`, `possibly drawn`, `可能被吸入`, `necessarily drawn`, `必然被吸入`
 
@@ -120,6 +121,7 @@ Aliases: `Becoming.Branching.PossiblyDrawnInto`, `Becoming.Branching.Necessarily
 - 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
 - 19 October 2026, SG (junctures, commuting laws and the third value): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only where SG added text: SG added its records and open items to the "When the course branches" and "What a description keeps and loses" rows, a section 8.3 item and a rerun sentence in the integration row. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: perturbation_reabsorbed from Capture.lean to SeekingRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Attraction.lean, Recurrence.lean). The evidence of the dependency on Capture.lean follows the declarations it cites to SeekingRuns.lean. The claim is unchanged.
 - 31 rebinding entries (2026-10-13 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](necessarily-drawn-is-not-returning.json).
 
 <a id="earlier-text--早期文本"></a>

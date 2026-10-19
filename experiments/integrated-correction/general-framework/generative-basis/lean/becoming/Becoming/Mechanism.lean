@@ -69,6 +69,9 @@ reading of time nor a finer unit of amount (`Becoming.Resolution`).
 What is not derived: which projection an actual unfolding carries a law through; that any
 formation forms or uses one; how a rule comes to change; that input and noise are separable in
 an actual unfolding. No ethical predicate, ranking or axiom occurs.
+
+`trajectory` is stated in `Becoming.Recurrence`, beside `Law.orbit`, so `Becoming.Counterfactual`
+does not import the frame (board item W).
 -/
 
 namespace Becoming
@@ -195,7 +198,6 @@ theorem reabsorbed {next : S → S} {π : S → K} (only : ∀ s s', π s = π s
     {s s' : S} (same : π s = π s') : ∀ n, orbit next s (n + 1) = orbit next s' (n + 1) :=
   (dependsOnlyOn_iff.mpr only).reabsorbed (run next s) (run next s') (fun _ => rfl) same
 
-
 end Law
 
 /-! ## A system that changes its own rule -/
@@ -307,11 +309,6 @@ def inputs (F : X → U → E → X) : Process X (U × E) :=
 /-- The standard model is determined by its move. -/
 theorem inputs_determined (F : X → U → E → X) : Determined (inputs F) :=
   fun _ _ _ _ step step' => step.trans step'.symm
-
-/-- The trajectory of the standard model from `x₀` under inputs `u` and noise `e`. -/
-def trajectory (F : X → U → E → X) (x₀ : X) (u : Nat → U) (e : Nat → E) : Nat → X
-  | 0 => x₀
-  | n + 1 => F (trajectory F x₀ u e n) (u n) (e n)
 
 /-- The trajectory as a run of the process, its moves the inputs and noise. -/
 def inputsRun (F : X → U → E → X) (x₀ : X) (u : Nat → U) (e : Nat → E) : Run (inputs F) :=

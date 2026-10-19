@@ -1,5 +1,5 @@
 import Becoming.Regions
-import Becoming.Standpoints
+import Becoming.Metaethics
 
 /-!
 # Significance: the continuation condition, the condition of chapter §6.15 (not asserted)
@@ -123,11 +123,13 @@ What is not derived:
 
 Recognition and motivation belong to the later attempt without axiom. The representation
 commits to discrete steps, natural quantities and a decided part.
+
+`Conditions.significant_of_unrestricted` and the paths of a web (`Web.paths` and its comparison
+theorems) are in `Becoming.ValuationFrames`, so this module does not import the frame (board item
+W).
 -/
 
 namespace Becoming
-
-open Generative
 
 variable {F C Pos : Type}
 
@@ -318,7 +320,6 @@ theorem adds_iff_within_margin_at {l : Nat → C → Nat} (without : L.WithheldL
       (supported_iff_within_margin_at without (balances t f significant fresh)).mpr within,
       fresh⟩⟩
 
-
 /-- From standpoint `p`, the levels with a part retain what has significance without it exactly
 when, at every step, for every continuation with significance that the levels without it admit,
 the part's net draw on each condition the formation requires stays within the margin. -/
@@ -409,45 +410,6 @@ theorem Web.significant_of_unrestricted (W : Web F C) {sig : Pos → Nat → F �
     (W.valuation own fun p e => sig p e.2 e.1).Significant ∧
       (W.relations own' fun p e => sig p e.2.2 e.1).Significant :=
   ⟨fun p e _ => unrestricted (p, e.2, e.1), fun p e _ => unrestricted (p, e.2.2, e.1)⟩
-
-/-- Read through a run, living significance follows from the continuation condition the same way. -/
-theorem Conditions.significant_of_unrestricted {S A Cond : Type} {P : Process S A}
-    (K : Conditions S F Cond) (r : Run P) {sig : Pos → Nat → F → Prop}
-    (unrestricted : Unrestricted sig) (own : Pos → F × Nat → Prop) :
-    (K.valuation r own fun p e => sig p e.2 e.1).Significant :=
-  fun p e _ => unrestricted (p, e.2, e.1)
-
-/-- The frame of a web's level paths: a claim is a formation at a step, realized along a level
-path when the levels admit it there. Nothing steps. -/
-def Web.paths (W : Web F C) : Frame (Nat → C → Nat) Unit (F × Nat) :=
-  ⟨⟨fun _ _ _ => False⟩, fun l e => W.Admits (l e.2) e.2 e.1⟩
-
-/-- On level paths, under the continuation condition, living significance holds with unindexed significance for every reading of
-`living`, and so does C, with “better” read as retaining and adding what has significance. -/
-theorem Web.paths_g0_comparison (W : Web F C) {sig : Pos → Nat → F → Prop}
-    (unrestricted : Unrestricted sig) (living : F × Nat → Prop) (p : Pos) :
-    G0 W.paths living (fun _ e => ∀ q, sig q e.2 e.1) ∧
-      Comparison W.paths living fun l' l => W.Retains sig p l l' ∧ W.Adds sig p l l' :=
-  ⟨fun _ e _ _ q => unrestricted (q, e.2, e.1),
-   fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
-     ⟨fun t f _ admits => keeps (f, t) admits,
-      ⟨e.2, e.1, unrestricted (p, e.2, e.1), realized, fresh⟩⟩⟩
-
-/-- C with no axiom. On level paths, an extension in which every claim counts as living is exactly
-a widening. -/
-theorem Web.paths_extension_iff_widens (W : Web F C) {l l' : Nat → C → Nat} :
-    Extension W.paths (fun _ => True) l' l ↔ W.Widens l l' :=
-  ⟨fun ⟨keeps, e, _, realized, fresh⟩ => ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩,
-   fun ⟨includes, t, f, admits, not⟩ =>
-    ⟨fun e admits => includes e.2 e.1 admits, (f, t), trivial, admits, not⟩⟩
-
-/-- C with no axiom, by definition. On level paths, C holds for every reading of `living` with
-“better” read as widening what can form. The proof unfolds `Comparison` to `Extension`: that
-widening is better is supplied by the reading of “better”, not shown here. -/
-theorem Web.paths_comparison_widens (W : Web F C) (living : F × Nat → Prop) :
-    Comparison W.paths living fun l' l => W.Widens l l' :=
-  fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
-    ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩
 
 /-- The two constant significances. Where nothing has significance, every level path retains every other
 and none adds, and living significance fails at any event that lives; where everything has significance living significance holds.
@@ -541,7 +503,6 @@ theorem retains_adds {l : Nat → Unit → Nat} (without : flow.WithheldLevels g
     ⟨includes.retains sig p, (Web.adds_iff_exceeds unrestricted p).mpr exceeds⟩
 
 end Restoring.Inflow
-
 
 /-! A drawer takes a condition's unit before any dependence on it forms. -/
 

@@ -1,0 +1,22 @@
+@Becoming.presupposition_iff_all_of_invariant : ∀ {F Pos : Type} {admissible : (F → Prop) → Prop},
+  (admissible fun x => True) →
+    ∀ {sig : Pos → Nat → F → Prop} {p : Pos},
+      Becoming.BoundaryInvariant admissible (Becoming.SignificantWithin sig p) →
+        (Becoming.SubTrue admissible (Becoming.SignificantWithin sig p) ↔ ∀ (t : Nat) (g : F), sig p t g)
+@Becoming.bounded_invariant_iff : ∀ {F Pos : Type} {rel : F → F → Prop} {center : Pos → F} {region : Pos → F → Prop}
+  {p : Pos},
+  (∀ (g : F), Becoming.WithinClosure rel (center p) g → region p g) →
+    (Becoming.BoundaryInvariant (Becoming.Boundary rel (center p))
+        (Becoming.SignificantWithin (Becoming.bounded region) p) ↔
+      ∀ (g : F), region p g)
+@Becoming.BoundaryWorlds.presupposition_iff_all : ∀ {Pos : Type} (w : Becoming.World) {center : Pos → w.Relatum}
+  {sig : Pos → Nat → w.Relatum → Prop} {p : Pos},
+  Becoming.BoundaryInvariant (Becoming.Boundary (w.flow.Affects w.web) (center p)) (Becoming.SignificantWithin sig p) →
+    (Becoming.SubTrue (Becoming.Boundary (w.flow.Affects w.web) (center p)) (Becoming.SignificantWithin sig p) ↔
+      ∀ (t : Nat) (g : w.Relatum), sig p t g)
+@Becoming.BoundaryWorlds.bounded_invariant_iff : ∀ {Pos : Type} (w : Becoming.World) {center : Pos → w.Relatum}
+  {region : Pos → w.Relatum → Prop} {p : Pos},
+  (∀ (g : w.Relatum), w.flow.WithinReach w.web (center p) g → region p g) →
+    (Becoming.BoundaryInvariant (Becoming.Boundary (w.flow.Affects w.web) (center p))
+        (Becoming.SignificantWithin (Becoming.bounded region) p) ↔
+      ∀ (g : w.Relatum), region p g)

@@ -1,4 +1,4 @@
-import Becoming.Readings
+import Becoming.Boundaries
 
 /-!
 # Boundary worlds: the presupposition along what affects what in a world
@@ -24,7 +24,41 @@ the other depends on (`Flow.Affects` of the world's flow and web), with boundari
 The significance enters only as a predicate the theorems quantify over; nothing here asserts that
 it meets the standard or that the presupposition holds. No ethical predicate, ranking or axiom
 occurs.
+
+Declarations moved here unchanged, with their names, from `Becoming.Readings` (board item W): see
+the sections so headed.
 -/
+
+/-! ## The presupposition as a dichotomy (moved from `Becoming.Readings`) -/
+
+namespace Becoming
+
+variable {F C Pos : Type}
+
+/-- Under invariance the presupposition is the continuation condition at that standpoint: wherever the whole is
+admissible and the presupposition is boundary-invariant, it holds as the boundary is drawn
+somewhere exactly when the continuation of everything has significance from `p`. A restatement of
+`boundaryInvariant_iff_conditional`. -/
+theorem presupposition_iff_all_of_invariant {admissible : (F → Prop) → Prop}
+    (whole : admissible fun _ => True) {sig : Pos → Nat → F → Prop} {p : Pos}
+    (invariant : BoundaryInvariant admissible (SignificantWithin sig p)) :
+    SubTrue admissible (SignificantWithin sig p) ↔ ∀ t g, sig p t g :=
+  ⟨(boundaryInvariant_iff_conditional whole).mp invariant,
+   fun all => ⟨_, whole, fun g _ t => all t g⟩⟩
+
+/-- A rival bounded by a region holding the self's closure meets the standard exactly where the
+region is everything: along a relation, its presupposition is invariant exactly where the region
+holds every formation. A case of `boundaryInvariant_iff_all`. -/
+theorem bounded_invariant_iff {rel : F → F → Prop} {center : Pos → F} {region : Pos → F → Prop}
+    {p : Pos} (holds : ∀ g, WithinClosure rel (center p) g → region p g) :
+    BoundaryInvariant (Boundary rel (center p)) (SignificantWithin (bounded region) p) ↔
+      ∀ g, region p g :=
+  (boundaryInvariant_iff_all (Boundary.whole (center p))
+      ⟨_, Boundary.closure (center p), fun g within _ => holds g within⟩).trans
+    ⟨fun all g => all 0 g, fun all _ g => all g⟩
+
+end Becoming
+
 
 namespace Becoming
 

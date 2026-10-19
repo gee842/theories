@@ -365,7 +365,7 @@
         "Becoming.Clearing.levels",
         "Becoming.Clearing.system_whole"
       ],
-      "sha256": "934d11a64a1b0972253eef6a7f8ffa7c06f9d28e99e61d54441e68876d2ecd12"
+      "sha256": "6626646b06ee6755091a238f4c5345e0b1399e2494ef304d78d195995e36d888"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
@@ -373,7 +373,7 @@
       "declarations": [
         "Becoming.WithinClosure.converse"
       ],
-      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289"
+      "sha256": "9ed9b2ee9a7a9066601b4a8a818081baf1946326fd80db08b0e695bbbd11c7bc"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
@@ -392,7 +392,7 @@
         "Becoming.le_offspringCount",
         "Becoming.offspringCount_le"
       ],
-      "sha256": "a56802715a61e381d6e83afd4d8e2342f140847811666f86c92fc1f16f1c7b01"
+      "sha256": "3ade8fbc83347c0156098669a3d034c25f7f681f19a386e8f6c6612e820d1a83"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T144846.235357Z/verification.json",
@@ -402,7 +402,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "537f188554a8737bae2774fe082cd9ad8c405741900937af81ea8421dca01668"
+      "sha256": "44140389dd14b17c78ed9dc4c7e173e61f88f00c7b3277798131934a10b472e5"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
@@ -446,6 +446,10 @@
     {
       "en": "19 October 2026, RG (two-sided regulation and late reading): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RG added study section 214; THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.",
       "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (BECOMING-RENEWAL-READING.md: study section 180.14 added; Capture.lean: declarations moved in or out by W2; Feedback.lean: declarations moved in or out by W2; Response.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

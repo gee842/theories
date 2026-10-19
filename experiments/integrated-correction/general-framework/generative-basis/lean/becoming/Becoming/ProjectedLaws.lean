@@ -1,4 +1,5 @@
 import Becoming.Readout
+import Becoming.Mechanism
 
 /-!
 # Projected laws: when a description closes under the law, and what wiring and formation do

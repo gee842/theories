@@ -1,5 +1,4 @@
 import Becoming.Feedback
-import Becoming.Horizon
 
 /-!
 # Testing: what couples into a formation, and what it can test
@@ -137,11 +136,15 @@ Activity is supplied by the representation, not produced by the exchange, so it 
 among what couples in; under `Web.Dependent` it cannot outrun support. Balance is assumed only on
 the conditions coupled in, at each step (`Flow.BalancesOn`); global balance gives it
 (`Flow.Balances.on`). The representation commits to discrete steps and natural quantities.
+
+Judging a class along runs (`Web.class_judge_iff`, `Web.class_judge_later`, `Web.class_judge_widen`,
+`Flow.class_judge_beyond`) and the finite readings of renewal
+(`Renewable.finite_reading_withholds_renewal`, `Renewable.no_exact_finite_reading`), with
+`sees_narrow`, which only they use, are in `Becoming.LabelledRoles`, so this module does not import
+the frame (board item W).
 -/
 
 namespace Becoming
-
-open Generative Generative.InquirySufficiency
 
 variable {F C : Type}
 
@@ -159,11 +162,6 @@ def ownStanding {X : Type} : X → X → Prop := fun g c => c = g
 /-- A stock other than oneself is not one's own standing. -/
 theorem ownStanding_other {X : Type} {g c : X} (other : c ≠ g) : ¬ ownStanding g c :=
   other
-
-/-- Belief narrows where the believed histories do. -/
-theorem sees_narrow {X : Type} {B B' : X → Prop} (narrower : ∀ x, B' x → B x) :
-    ∀ s, sees B' s → sees B s
-  | _, ⟨x, believed, same⟩ => ⟨x, narrower x believed, same⟩
 
 /-- `a + x = b + y` and `x ≤ y` give `b ≤ a`. -/
 theorem le_of_add_eq_of_le {a b x y : Nat} (same : a + x = b + y) (le : x ≤ y) : b ≤ a :=
@@ -376,30 +374,6 @@ theorem class_excludes_iff {claim : (Nat → C → Nat) → Prop} {t : Nat} :
    fun disjoint l' meets believed => disjoint l' believed meets⟩
 
 variable {H : Type} {admissible : (Nat → C → Nat) → H → Prop} {a : H}
-
-/-- **The bridge to `Becoming.Inquiry`.** A judgment through a formation's couplings is a common
-response over the class alike through it: admissible at every history alike with the actual
-through its couplings. -/
-theorem class_judge_iff {t : Nat} :
-    CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True) (fun a => [a])
-        (sees (W.ClassThrough obs g l t)) a ↔ ∀ l', W.AlikeThroughUpTo obs g l l' t → admissible l' a :=
-  commonResponse_judge_iff
-
-/-- Later steps narrow the class and keep every common response. -/
-theorem class_judge_later {t t' : Nat} (le : t ≤ t')
-    (common : CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True)
-      (fun a => [a]) (sees (W.ClassThrough obs g l t)) a) :
-    CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True) (fun a => [a])
-      (sees (W.ClassThrough obs g l t')) a :=
-  commonResponse_antitone (sees_narrow fun _ alike => alike.earlier le) common
-
-/-- More coupling by level narrows the class and keeps every common response. -/
-theorem class_judge_widen (larger : ∀ g c, obs g c → obs' g c) {t : Nat}
-    (common : CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True)
-      (fun a => [a]) (sees (W.ClassThrough obs g l t)) a) :
-    CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True) (fun a => [a])
-      (sees (W.ClassThrough obs' g l t)) a :=
-  commonResponse_antitone (sees_narrow fun _ alike => alike.of_obs larger) common
 
 /-- Webs agreeing on what `g` requires and needs pass its support through admission by their
 levels. -/
@@ -691,21 +665,6 @@ theorem beyond_needs_model {l₀ : Nat → C → Nat}
     (refutes : W.ExcludesWithin admitted obs claim g W.level t) : ¬ (admitted l₀ ∧ claim l₀) :=
   fun ⟨inside, meets⟩ => refutes l₀ inside meets fun s _ =>
     uncoupled_beyond_coupling without balanced beyond s g within
-
-/-- A judgment from within the coupling closure holds with and without a part beyond it:
-every response common to the class alike through the formation is admissible under both levels. -/
-theorem class_judge_beyond {H : Type} {admissible : (Nat → C → Nat) → H → Prop} {a : H}
-    {l₀ : Nat → C → Nat} (without : L.WithheldLevels part W l₀) {f : F}
-    (balanced : ∀ t g c, L.WithinCoupling W obs f g → W.CoupledInto obs g c →
-      L.BalancesOn W [c] t)
-    (beyond : ∀ h, part h = true → ¬ L.WithinCoupling W obs f h)
-    (within : L.WithinCoupling W obs f g) {t : Nat}
-    (common : CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True)
-      (fun a => [a]) (sees (W.ClassThrough obs g W.level t)) a) :
-    admissible W.level a ∧ admissible l₀ a :=
-  ⟨Web.class_judge_iff.mp common W.level fun s _ => Web.AlikeThrough.refl s,
-   Web.class_judge_iff.mp common l₀ fun s _ =>
-     uncoupled_beyond_coupling without balanced beyond s g within⟩
 
 /-! ## Threshold blindness: a difference persists until support diverges -/
 
@@ -1605,29 +1564,5 @@ theorem model_idles_coupling :
     Nat.not_succ_le_zero 0 (Nat.le_trans (admits .habitat trivial) (Nat.le_of_eq same))
 
 end Clearing
-
-namespace Renewable
-
-/-- A reading decided by the first `h` steps of a run, including no run in which the focal
-formation consumes, excludes a run in which it renews. -/
-theorem finite_reading_withholds_renewal (h : Nat) (reading : Run process → Prop)
-    (decided : ∀ r r', r.AgreeUpTo h r' → reading r → reading r')
-    (sound : ∀ r, reading r → ¬ (conditions.dependence.along r).ConsumingIn .focal) :
-    ∃ r, (conditions.dependence.along r).RenewingIn .focal ∧ ¬ reading r :=
-  match prefix_does_not_decide h with
-  | ⟨renewing, consuming, agree, _, _, renews, consumes⟩ =>
-    ⟨renewing, renews, fun reads => sound consuming (decided renewing consuming agree reads)
-      consumes⟩
-
-/-- **No finite reading is exact.** Where the continuation is open, no reading decided by the
-first `h` steps of a run is the whole-run classification. -/
-theorem no_exact_finite_reading (h : Nat) (reading : Run process → Prop)
-    (decided : ∀ r r', r.AgreeUpTo h r' → reading r → reading r') :
-    ¬ ∀ r, reading r ↔ (conditions.dependence.along r).RenewingIn .focal :=
-  fun exact => match finite_reading_withholds_renewal h reading decided
-      (fun r reads => Web.renewing_not_consuming ((exact r).mp reads)) with
-    | ⟨r, renews, unread⟩ => unread ((exact r).mpr renews)
-
-end Renewable
 
 end Becoming

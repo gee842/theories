@@ -1,5 +1,5 @@
 import Becoming.Tail
-import Becoming.Runs
+import Becoming.Propagation
 
 /-!
 # Sensitivity on webs and flows: what depends on the whole, read off the courses
@@ -30,8 +30,6 @@ No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
-
-open Generative
 
 namespace SensitivityWebs
 

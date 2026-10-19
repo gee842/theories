@@ -1,5 +1,7 @@
 import Becoming.Population
 import Becoming.Metaethics
+import Becoming.Frame
+import Becoming.ValuationFrames
 
 /-!
 # Strict loss matching: the general laws

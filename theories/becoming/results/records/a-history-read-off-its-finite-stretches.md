@@ -107,6 +107,7 @@ Decision D45 (4) joined IdealWarrant with CompletionRole and HistoryIdeals as on
 | provenance | [DELEGATED-CHOICES.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md) | — |
 | proof | [HistoryIdealsTraces.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdealsTraces.lean) | `Becoming.HistoryIdealsTraces.HistoryOf`, `Becoming.HistoryIdealsTraces.classification`, `Becoming.HistoryIdealsTraces.course_settles`, `Becoming.HistoryIdealsTraces.run_initial_trace`, `Becoming.HistoryIdealsTraces.run_goesOn`, `Becoming.HistoryIdealsTraces.countdown`, `Becoming.HistoryIdealsTraces.history_without_run` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Aliases: `a history read off its finite stretches`, `从有限片段读出的历史`, `ideals of finite stretches`, `有限片段的理想`, `closed classes of histories`, `历史的闭类`, `Becoming.Stretches.classification`, `Becoming.Stretches.refutable_closed_iff`, `Becoming.Stretches.cut_decided_iff_lpo`, `Becoming.HistoryIdealsTraces.classification`, `Becoming.HistoryIdealsTraces.history_without_run`
 
@@ -123,6 +124,7 @@ Aliases: `a history read off its finite stretches`, `从有限片段读出的历
 - 19 October 2026, U5 (general laws read on the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, Y5 (Becoming.HexagramSequences): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.
 - 19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: SC added a section 4 paragraph on a code formed between formations with its readings, a clause and a record to the collective continuation row of section 8.2, a section 8.3 item and the decision count, a rerun sentence in the integration row, and revised the section 9 receipt and counts). The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Horizon.lean). The claim is unchanged.
 
 </details>
 

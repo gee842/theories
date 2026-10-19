@@ -1,4 +1,6 @@
 import Becoming.Situations
+import Becoming.WeightedTraces
+import GenerativeCore
 
 /-!
 # Finer traces: the situations counted are the courses of one determined process

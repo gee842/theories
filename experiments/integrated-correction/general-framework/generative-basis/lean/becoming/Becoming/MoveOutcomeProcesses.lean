@@ -1,5 +1,6 @@
 import Becoming.Inquiry
 import Becoming.Recurrence
+import Becoming.Labelled
 
 /-!
 # The outcomes of one move from a configuration

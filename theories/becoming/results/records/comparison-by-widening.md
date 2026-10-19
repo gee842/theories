@@ -53,7 +53,7 @@ C holds here by definition on the frame of level paths, with “better” read a
 
 **Input:** On the frame of level paths, with widening as “better”, C holds.
 
-**Preserved conditions:** “Better” read as widening. [Metaethics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+**Preserved conditions:** “Better” read as widening. [ValuationFrames.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean)
 
 - Related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). There, with the axiom as a condition, C holds on level paths with retaining and adding what has significance as “better” (Web.paths_g0_comparison); here, with no axiom, with widening as “better”, the two being the same under the axiom.
 - Related, not a proved adapter: [ranking-under-readings](ranking-under-readings.md). Courses are compared on possibilities (chapter section 6.12); here, on level paths, the comparison on possibilities itself satisfies C.
@@ -66,9 +66,9 @@ C holds here by definition on the frame of level paths, with “better” read a
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) | `Becoming.Web.paths_extension_iff_widens`, `Becoming.Web.paths_comparison_widens`, `Becoming.Web.paths`, `Becoming.Web.widens_iff_retains_adds`, `Becoming.Web.paths_g0_comparison` |
+| proof | [Significance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean) | `Becoming.Web.widens_iff_retains_adds` |
+| proof | [ValuationFrames.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean) | `Becoming.Web.paths_extension_iff_widens`, `Becoming.Web.paths_comparison_widens`, `Becoming.Web.paths`, `Becoming.Web.paths_g0_comparison`, `Becoming.Extension`, `Becoming.Comparison` |
 | proof | [Regions.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean) | `Becoming.Web.Widens` |
-| proof | [Metaethics.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | `Becoming.Extension`, `Becoming.Comparison` |
 | proof | [Admission.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean) | `Becoming.Transfer.mixed` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
@@ -79,6 +79,7 @@ C holds here by definition on the frame of level paths, with “better” read a
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -113,4 +114,5 @@ Aliases: `Becoming.Web.paths_extension_iff_widens`, `Becoming.Web.paths_comparis
 - 19 October 2026, N7 (the reading pass on "correction"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of "correction" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.
 - 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
 - 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean, Significance.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; Significance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: paths_extension_iff_widens, paths_comparison_widens, paths, paths_g0_comparison from Significance.lean to ValuationFrames.lean; Extension, Comparison from Metaethics.lean to ValuationFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Significance.lean). The evidence of the dependency on Metaethics.lean follows the declarations it cites to ValuationFrames.lean. The claim is unchanged.
 - 40 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](comparison-by-widening.json).

@@ -4,7 +4,11 @@ usage: move_decls.py PACKAGE PLAN RANGES
 
 PACKAGE is the folder holding `Becoming/`. PLAN is a JSON file
 {"moves": {name: [source module, target module]}, "headers": {target: text}, "imports": {target: [module, ...]},
-"source_order": {target: [module, ...]}}; a target receives its sources' declarations in that order.
+"source_order": {target: [module, ...]}, "titles": {"source>target": heading}}; a target receives its sources'
+declarations in that order, each source's under its heading (`/-! ## heading -/`) where one is given. A new
+target is written with its imports and header; an existing target receives the declarations at its end
+where it is listed in "append" (they use its declarations), else right after its module docstring
+(its declarations may use them).
 RANGES is a TSV of `name, start line, start column, end line, end column`, from Lean's declaration
 ranges (`findDeclarationRanges?`), with lines counted from 1.
 
@@ -185,15 +189,35 @@ def main():
         path_of(source).write_text("".join(kept))
         print(f"{source}: {len(cut)} declarations out")
 
+    titles = plan.get("titles", {})
     for target, parts in bodies.items():
         order = plan.get("source_order", {}).get(target, [])
         parts.sort(key=lambda sp: order.index(sp[0]) if sp[0] in order else len(order))
-        imports = "".join(f"import {m}\n" for m in plan["imports"][target])
-        header = plan["headers"][target].rstrip("\n") + "\n"
-        body = "\n".join(f"-- from `{s}`\n\n{t}" for s, t in parts)
+        mark = lambda s: (f"/-! ## {titles[s + '>' + target]} -/" if s + ">" + target in titles
+                          else f"-- from `{s}`")
+        body = "\n".join(f"{mark(s)}\n\n{t}" for s, t in parts)
         path = path_of(target)
         if path.exists():
-            raise SystemExit(f"{path} exists")
+            if target in plan.get("headers", {}):
+                raise SystemExit(f"{path} exists")
+            if target in plan.get("append", []):
+                path.write_text(path.read_text().rstrip("\n") + "\n\n" + body.rstrip("\n") + "\n")
+                print(f"{target}: received at its end from {[s for s, _ in parts]}")
+                continue
+            lines = path.read_text().splitlines(keepends=True)
+            depths = comment_depths(lines)
+            i = 0
+            while i < len(lines) and not lines[i].startswith("/-!"):
+                i += 1
+            while i + 1 < len(lines) and depths[i + 1] != 0:
+                i += 1
+            if i >= len(lines):
+                raise SystemExit(f"{path}: no module docstring")
+            path.write_text("".join(lines[:i + 1]) + "\n" + body + "\n" + "".join(lines[i + 1:]))
+            print(f"{target}: received from {[s for s, _ in parts]}")
+            continue
+        imports = "".join(f"import {m}\n" for m in plan["imports"][target])
+        header = plan["headers"][target].rstrip("\n") + "\n"
         path.write_text(imports + "\n" + header + "\n" + body)
         print(f"{target}: written from {[s for s, _ in parts]}")
 

@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T18:18:08.110836+00:00`. Run the registry che
 
 Along an actual finite trace under a fixed relational law, all existential endpoint possibilities are preserved exactly when a return path exists. Failure to return has a constructive lost endpoint witness; incomplete questions can hide this loss.
 
-Canonical source: [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+Canonical source: [Labelled.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean)
 
 <a id="前提与对应-hypotheses-and-correspondence"></a>
 ## Hypotheses and correspondence
@@ -50,7 +50,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [becoming-reversibility-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-verification.json) | — |
 | integration | [BECOMING-REVERSIBILITY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md) | — |
 | provenance | [2026-10-08-theory-of-becoming-priority.md](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) | — |
-| proof | [Recurrence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean) | `Becoming.keeps_reach_iff_returns`, `Becoming.same_reach_iff_returns`, `Becoming.not_returns_iff_loses` |
+| proof | [Labelled.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean) | `Becoming.keeps_reach_iff_returns`, `Becoming.same_reach_iff_returns`, `Becoming.not_returns_iff_loses` |
 | proof | [Irreversibility.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Irreversibility.lean) | `Becoming.Irreversibility.deadEnd_no_return`, `Becoming.Irreversibility.same_change_different_return`, `Becoming.Irreversibility.constant_reading_hides_loss` |
 | proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean) | `Becoming.keeps_possible_iff_keeps_reach`, `Becoming.same_endpoint_possibilities_iff_return_by_core`, `Becoming.irreversible_iff_endpoint_loss_by_core` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T150956.178111Z/verification.json) | — |
@@ -59,6 +59,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -78,4 +79,5 @@ Aliases: `BecomingReversibility.same_endpoint_possibilities_iff_return`, `Becomi
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
 - 18 October 2026, F2 (Ren: "please, do them, reduce bridges and add more theory to the spine"): every theorem of BecomingReversibility.lean is stated in the core (port-f2.md, all graded same or step). The canonical source is now Recurrence.lean; Irreversibility.lean states the rest (deadEnd_no_return, same_change_different_return, constant_reading_hides_loss). BecomingReversibility.lean keeps its path and bytes and its old receipt; its retirement from the run is the sweep's (F3). The claim is unchanged.
 - 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.
+- 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: keeps_reach_iff_returns, same_reach_iff_returns, not_returns_iff_loses from Recurrence.lean to Labelled.lean. The claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-16): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](endpoint-loss-and-return.json).

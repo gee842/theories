@@ -39,8 +39,6 @@ No ethical predicate, ranking or axiom occurs.
 
 namespace Becoming
 
-open Generative
-
 namespace StrengthFlows
 
 variable {F C : Type}

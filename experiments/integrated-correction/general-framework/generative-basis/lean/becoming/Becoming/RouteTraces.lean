@@ -1,4 +1,6 @@
 import Becoming.FormedLoops
+import Becoming.WeightedTraces
+import GenerativeCore
 
 /-!
 # Route traces: the orders of a sum over a process's histories

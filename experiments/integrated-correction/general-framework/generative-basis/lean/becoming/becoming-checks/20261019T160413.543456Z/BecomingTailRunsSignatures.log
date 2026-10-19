@@ -1,0 +1,38 @@
+Becoming.TailRuns.falseRule_iff : Nonempty Becoming.TailRuns.FalseRule ↔
+  Nonempty ((s : Nat → Bool) → Decidable (∀ (n : Nat), s n = false))
+Becoming.TailRuns.trueRule_iff : Nonempty Becoming.TailRuns.TrueRule ↔
+  Nonempty ((s : Nat → Bool) → Decidable (∃ n, s n = true))
+Becoming.TailRuns.vanishRule_iff : Nonempty Becoming.TailRuns.VanishRule ↔
+  Nonempty ((α : Nat → Nat) → Decidable (Becoming.VanishFrom α))
+Becoming.TailRuns.wlpo_iff_runs : Becoming.WLPO ↔ Becoming.TailRuns.FalseDecided
+Becoming.TailRuns.lpo_iff_runs : Becoming.LPO ↔ Becoming.TailRuns.TrueDecided
+Becoming.TailRuns.changedByNoCondition_iff_runs : (∃ f, Becoming.ChangedByNoCondition f ∧ ∃ α β, f α ≠ f β) ↔
+  Nonempty Becoming.TailRuns.FalseRule
+Becoming.TailRuns.insensitive_differs_iff_runs : (∃ F law t h l l' c,
+    (∀ (e : Nat), law.InsensitiveAt t h e) ∧
+      ¬(law.take t h l c = law.take t h l' c ∧ law.give t h l c = law.give t h l' c)) ↔
+  Nonempty Becoming.TailRuns.FalseRule
+Becoming.TailRuns.not_through_sensitive_iff_runs : (∃ F law t h l l' c,
+    law.Nonanticipating ∧
+      (∀ (e : Nat), law.Sensitive h e → ∀ (s : Nat), s ≤ t → l s e = l' s e) ∧
+        ¬(law.take t h l c = law.take t h l' c ∧ law.give t h l c = law.give t h l' c)) ↔
+  Nonempty Becoming.TailRuns.FalseRule
+@Becoming.TailRuns.insensitive_differs_decides : ∀ {F : Type} {law : Becoming.ExchangeLaw F Nat} {t : Nat} {h : F},
+  (∀ (c : Nat), law.InsensitiveAt t h c) →
+    ∀ {l l' : Nat → Nat → Nat} {c : Nat},
+      ¬(law.take t h l c = law.take t h l' c ∧ law.give t h l c = law.give t h l' c) → Becoming.TailRuns.FalseDecided
+@Becoming.TailRuns.not_through_sensitive_decides : ∀ {F : Type} {law : Becoming.ExchangeLaw F Nat} {t : Nat} {h : F},
+  law.Nonanticipating →
+    ∀ {l l' : Nat → Nat → Nat},
+      (∀ (c : Nat), law.Sensitive h c → ∀ (s : Nat), s ≤ t → l s c = l' s c) →
+        ∀ {c : Nat},
+          ¬(law.take t h l c = law.take t h l' c ∧ law.give t h l c = law.give t h l' c) →
+            Becoming.TailRuns.FalseDecided
+Becoming.TailRuns.vanishRule_iff_trueRule : Nonempty Becoming.TailRuns.VanishRule ↔ Nonempty Becoming.TailRuns.TrueRule
+Becoming.TailRuns.vanish_decides : ∀ (decides : Becoming.TailRuns.VanishRule), Becoming.TailRuns.TrueDecided
+Becoming.TailRuns.indicators_sum : ∀ (falseRule : Becoming.TailRuns.FalseRule)
+  (vanishRule : Becoming.TailRuns.VanishRule) {S A : Type} {P : Generative.Process S A} (lev : S → Nat)
+  (r : Becoming.Run P),
+  ((Becoming.neverIndicator falseRule.sequences fun n => lev (r.state n)) +
+      Becoming.vanishIndicator vanishRule.sequences fun n => lev (r.state n)) =
+    1

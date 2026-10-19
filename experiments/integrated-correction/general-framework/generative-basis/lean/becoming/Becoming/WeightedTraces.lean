@@ -1,4 +1,5 @@
 import Becoming.Weighted
+import GenerativeCore
 
 /-!
 # Weighted traces: integrating out and memory, on the traces of processes
@@ -21,7 +22,79 @@ it needs (`Memory.of_kept`). This module states these on processes of the spine.
   exactly those (`kept_traces`).
 
 No ethical predicate, ranking or axiom occurs.
+
+Declarations moved here unchanged, with their names, from `Becoming.Weighted` (board item W): see
+the sections so headed.
 -/
+
+/-! ## Counting and possibility weights transferred (moved from `Becoming.Weighted`) -/
+
+namespace Becoming
+
+open Generative
+
+universe u v w x
+
+section Skeleton
+
+variable {S : Type u} {A : Type v}
+
+/-- **Possibility is the core's relation.** Where the possibility weights of steps read a
+process's steps and every move and configuration is listed, the possibility transfer after `n`
+steps holds exactly where a trace of `n` moves leads to a configuration where the reading holds:
+the sum over histories, with alternatives joined and successions met, is the relation of
+`Trace`. The core's laws that are not determined are this instance; no weight beyond possibility
+is in them. -/
+theorem possibility_transfer_iff (P : Process S A) (step : S → A → S → Bool)
+    (reads : ∀ s a t, step s a t = true ↔ P.step s a t) (moves : List A) (all : List S)
+    (every_move : ∀ a, a ∈ moves) (every : ∀ s, s ∈ all) (f : S → Bool) :
+    ∀ n s, possibility.transfer step moves all f n s = true ↔
+      ∃ as t, as.length = n ∧ Trace P s as t ∧ f t = true
+  | 0, s => by
+    constructor
+    · intro holds
+      exact ⟨[], s, rfl, .nil s, holds⟩
+    · rintro ⟨as, t, length, trace, holds⟩
+      cases as with
+      | nil =>
+        have same := trace_nil_iff.mp trace
+        subst same
+        exact holds
+      | cons a as => exact Nat.noConfusion length
+  | n + 1, s => by
+    constructor
+    · intro holds
+      obtain ⟨p, _, here⟩ := possibility_sum_true holds
+      obtain ⟨first, rest⟩ := bool_of_and_true here
+      obtain ⟨as, t, length, trace, ends⟩ :=
+        (possibility_transfer_iff P step reads moves all every_move every f n p.2).mp rest
+      exact ⟨p.1 :: as, t, congrArg (· + 1) length, .cons ((reads _ _ _).mp first) trace, ends⟩
+    · rintro ⟨as, t, length, trace, ends⟩
+      cases as with
+      | nil => exact Nat.noConfusion length
+      | cons a as =>
+        obtain ⟨m, first, rest⟩ := trace_cons_iff.mp trace
+        have length' : as.length = n := Nat.succ.inj length
+        exact possibility_sum_of_mem (g := fun p => step s p.1 p.2 && possibility.transfer step
+            moves all f n p.2)
+          (bool_and_true ((reads _ _ _).mpr first)
+            ((possibility_transfer_iff P step reads moves all every_move every f n m).mpr
+              ⟨as, t, length', rest, ends⟩))
+          (mem_openSteps (every_move a) (every m))
+
+end Skeleton
+
+/-- **The count of courses is not zero exactly where a course exists.** -/
+theorem counting_transfer_iff {S : Type u} {A : Type v} (P : Process S A) (step : S → A → S → Nat)
+    (reads : ∀ s a t, nonzero (step s a t) = true ↔ P.step s a t) (moves : List A) (all : List S)
+    (every_move : ∀ a, a ∈ moves) (every : ∀ s, s ∈ all) (f : S → Nat) (n : Nat) (s : S) :
+    nonzero (counting.transfer step moves all f n s) = true ↔
+      ∃ as t, as.length = n ∧ Trace P s as t ∧ nonzero (f t) = true :=
+  (Eq.to_iff (congrArg (· = true) (support.transfer step moves all f n s))).trans
+    (possibility_transfer_iff P _ reads moves all every_move every _ n s)
+
+end Becoming
+
 
 namespace Becoming
 

@@ -1,7 +1,6 @@
-import Becoming.Composition
-import Becoming.Coverage
-import Becoming.Joining
 import Becoming.Weighted
+import Becoming.Decidedness
+import Becoming.JointPlans
 
 /-!
 # List footprints: a plan is realized exactly where what its leaves draw on is supported

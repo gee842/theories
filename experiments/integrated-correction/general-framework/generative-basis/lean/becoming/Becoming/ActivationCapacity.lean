@@ -1,5 +1,6 @@
 import Becoming.Bundles
 import Becoming.Recurrence
+import Becoming.Labelled
 
 /-!
 # Activation capacity: what one preparation step changes in what can be realized together

@@ -1,6 +1,8 @@
 import Becoming.Metaethics
 import Becoming.Relevance
 import Becoming.Lifting
+import Becoming.Frame
+import Becoming.ValuationFrames
 
 /-!
 # Alternatives realizing configurations: C, P and N on them

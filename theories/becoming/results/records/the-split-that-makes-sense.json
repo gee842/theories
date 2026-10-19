@@ -366,30 +366,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
       "role": "proof",
-      "sha256": "4308401c1b558f54bcef7ec8a517d1edd02defccec148ff2e7805444e599dd11",
+      "sha256": "0d511b56d02d9e8f9a850e7ed48318a31f3b5612d928860382e4ec38e575ccc4",
       "declarations": [
-        "Becoming.Law.goAlike_process_iff",
-        "Becoming.Law.kernel_bisimulation",
-        "Becoming.Law.sameFuture_of_law",
-        "Becoming.Law.identifiesAlike_of_law",
-        "Becoming.Law.const_identifiesAlike_iff",
-        "Becoming.Law.now_identifiesAlike_iff",
-        "Becoming.Law.whole_identifiesAlike",
-        "Becoming.Law.part_identifiesAlike_iff",
-        "Becoming.Law.sameFuture_of_goAlike",
-        "Becoming.Law.now_identifiesAlike_iff_goAlike",
-        "Becoming.Law.part_identifiesAlike_iff_step",
-        "Becoming.Law.adaptive_identifiesAlike_iff",
         "Becoming.Motion.cancel",
         "Becoming.Motion.move",
-        "Becoming.Motion.move_adaptive",
-        "Becoming.Motion.pair_identifiesAlike",
-        "Becoming.Motion.standing_alone",
         "Becoming.Motion.passing_alone",
-        "Becoming.Motion.neither_alone",
         "Becoming.Motion.still",
         "Becoming.Motion.orbit_still",
-        "Becoming.Motion.still_identifiesAlike",
         "Becoming.SameAhead",
         "Becoming.SameAhead.refl",
         "Becoming.SameAhead.symm",
@@ -397,7 +380,6 @@
         "Becoming.SameAhead.next",
         "Becoming.sameAhead_orbit_iff",
         "Becoming.SameAhead.new_each",
-        "Becoming.alike_moments_iff",
         "Becoming.split_top",
         "Becoming.shared_below",
         "Becoming.StatesBelow",
@@ -413,12 +395,36 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/IdentificationRuns.lean",
+      "role": "proof",
+      "sha256": "1672e2cdee0fd5dc0a825e797ae46242a3a65998be187d6a88dd88e771294a2e",
+      "declarations": [
+        "Becoming.Law.goAlike_process_iff",
+        "Becoming.Law.kernel_bisimulation",
+        "Becoming.Law.sameFuture_of_law",
+        "Becoming.Law.identifiesAlike_of_law",
+        "Becoming.Law.const_identifiesAlike_iff",
+        "Becoming.Law.now_identifiesAlike_iff",
+        "Becoming.Law.whole_identifiesAlike",
+        "Becoming.Law.part_identifiesAlike_iff",
+        "Becoming.Law.sameFuture_of_goAlike",
+        "Becoming.Law.now_identifiesAlike_iff_goAlike",
+        "Becoming.Law.part_identifiesAlike_iff_step",
+        "Becoming.Law.adaptive_identifiesAlike_iff",
+        "Becoming.Motion.move_adaptive",
+        "Becoming.Motion.pair_identifiesAlike",
+        "Becoming.Motion.standing_alone",
+        "Becoming.Motion.neither_alone",
+        "Becoming.Motion.still_identifiesAlike",
+        "Becoming.alike_moments_iff"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "4dcb0bf75086a0e559a27817065e38d0df0c76cb1abc1583a362ee78301dc777",
+      "sha256": "84dc14ccc58aa05eccac81923378cd89ec3d7274077e5a9b75bbc77ee454e47d",
       "declarations": [
         "Becoming.Law.frameBy",
-        "Becoming.Law.SameFuture",
         "Becoming.Law.alike_iff_sameFuture",
         "Becoming.Law.IdentifiesAlike.carries"
       ]
@@ -426,20 +432,21 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
       "role": "proof",
-      "sha256": "80d06c60d7880f3c5e4d73d7efa7d83ef4b3b59e9fa1296303dad80e219252eb",
+      "sha256": "8dafce813eca451b6abc016eb088282d10bf104e47d4dfd93d50ba27b0372f7f",
       "declarations": [
         "Becoming.Alike",
         "Becoming.Alike.refl",
         "Becoming.Bisimulation",
         "Becoming.IdentifiesAlike",
         "Becoming.identifiesAlike_iff",
-        "Becoming.identifiesAlike_id_iff"
+        "Becoming.identifiesAlike_id_iff",
+        "Becoming.Law.process"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "afa3fa23f606a59e8b9578a3ba2046c136d2b4cb7310f29dff1cf5e020388d09",
+      "sha256": "60a43bae208eb28211003bdf046db891eafc73a59615d309b9a50e0be08ddf63",
       "declarations": [
         "Becoming.GoAlike",
         "Becoming.adaptive",
@@ -450,24 +457,24 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9",
+      "sha256": "4e129f5e3d48fe5531409b283d30c0c896f834d2f2b40e74796c7bd19c3111ae",
       "declarations": [
         "Becoming.Law.orbit",
         "Becoming.Law.orbit_add",
         "Becoming.Law.succ_orbit",
-        "Becoming.Law.process",
         "Becoming.Law.Returns",
         "Becoming.skipAt",
         "Becoming.skipAt_le",
         "Becoming.skipAt_lt",
         "Becoming.skipAt_ne",
-        "Becoming.le_succ_cases"
+        "Becoming.le_succ_cases",
+        "Becoming.Law.SameFuture"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
       "role": "proof",
-      "sha256": "d9bc94cb1a0f21534a53c0daac1ae6a7563f7ecd86a75c4724ca832b7eb95c4d",
+      "sha256": "317928eccb2379b3035426e523c9ee6def01666ff3224ad48f01df257c50fb0d",
       "declarations": [
         "Becoming.Diagonal.revision_never_rests",
         "Becoming.Diagonal.flip_moves"
@@ -476,10 +483,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
       "role": "proof",
-      "sha256": "aecbe2c2ece126e2fc1d04f901d900bd1619a931679ab3a584888cf0a6e1b4d0",
+      "sha256": "d90322d546de3f1e326cf9cbcab1e5154101741edcb1fd772f3934976787e911",
       "declarations": [
-        "Becoming.Learning.goAlike_iff_lumped",
         "Becoming.Learning.Lasso"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
+      "role": "proof",
+      "sha256": "219dd3103e8aa5f0960e8e580bdd7fbe37957cc4b9446cd206e4a8327cd6db18",
+      "declarations": [
+        "Becoming.Learning.goAlike_iff_lumped"
       ]
     },
     {
@@ -564,55 +578,75 @@
       "role": "receipt",
       "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Description",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Recurrence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Diagonal",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Learning",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Labelled",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/IdentificationRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.IdentificationRuns",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LearningRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -823,6 +857,10 @@
     {
       "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.",
       "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: goAlike_process_iff, kernel_bisimulation, sameFuture_of_law, identifiesAlike_of_law, const_identifiesAlike_iff, now_identifiesAlike_iff, whole_identifiesAlike, part_identifiesAlike_iff, sameFuture_of_goAlike, now_identifiesAlike_iff_goAlike, part_identifiesAlike_iff_step, adaptive_identifiesAlike_iff, move_adaptive, pair_identifiesAlike, standing_alone, neither_alone, still_identifiesAlike, alike_moments_iff from Description.lean to IdentificationRuns.lean; SameFuture from Unfolding.lean to Recurrence.lean; process from Recurrence.lean to Labelled.lean; goAlike_iff_lumped from Learning.lean to LearningRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Description.lean, Diagonal.lean, Labelled.lean, Learning.lean, Mechanism.lean, Recurrence.lean, Unfolding.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

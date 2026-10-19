@@ -1,6 +1,5 @@
 import Becoming.Response
-import Becoming.Mechanism
-import Becoming.Unfolding
+import Becoming.Recurrence
 
 /-!
 # Counterfactual: the course the dynamics give
@@ -112,11 +111,14 @@ arrives; when a move is the part's own rather than supplied (`ExchangeLaw.closed
 the act as formed by a law); a law over two kinds of relatum, formations and conditions, read as
 one world. The representation commits to discrete steps and natural amounts. No ethical predicate,
 ranking or axiom occurs.
+
+The laws of exchange along runs (`ExchangeLaw.worldRun`, `ExchangeLaw.world_exchange_iff`,
+`ExchangeLaw.act_not_taken`, `Run.beyond_shown_iff`, `ExchangeLaw.counterfactual_beyond_shown`,
+`ExchangeLaw.closedBy_course`) are in `Becoming.CounterfactualRuns`, so this module does not import
+the frame (board item W). `trajectory` is stated in `Becoming.Recurrence`.
 -/
 
 namespace Becoming
-
-open Generative
 
 variable {F C : Type}
 
@@ -692,18 +694,6 @@ theorem ExchangeLaw.course_trajectory (law : ExchangeLaw F C) (present : Nat →
   | n + 1 => congrArg (fun x => law.stepBy present part x (u n) ())
       (ExchangeLaw.course_trajectory law present part start u n)
 
-/-- **An act not taken is an intervention.** Where a run of the standard model of the course has
-not taken the part's move `a` at `x` before `t`, the record up to `t` fixes no outcome of that move
-there, while the model fixes it: P53's and P68's laws, read of acts. -/
-theorem ExchangeLaw.act_not_taken {law : ExchangeLaw F C} {present : Nat → List F}
-    {part : F → Bool} (r : Run (inputs (law.stepBy present part))) {t : Nat}
-    {x : Nat × (Nat → C → Nat)} {a : F → C → Nat × Nat} (untaken : ¬ r.Takes t x (a, ())) :
-    (¬ ∃ w, r.Fixes t x (a, ()) w) ∧
-      (inputs (law.stepBy present part)).step x (a, ()) (law.stepBy present part x a ()) :=
-  ⟨inputs_intervention_unfixed r untaken (y := (0, fun _ _ => 0)) (z := (1, fun _ _ => 0))
-      fun same => Nat.zero_ne_one (congrArg Prod.fst same),
-   (inputs_model_fixes _ x a ()).1⟩
-
 end Inputs
 
 /-! ## The counterfactual as an unfolding (P80b) -/
@@ -733,80 +723,11 @@ theorem ExchangeLaw.world_balances_iff {R : Type} {law : ExchangeLaw R R}
       law.Feasible present start :=
   ExchangeLaw.course_balances_iff (present := present) (start := start) na W
 
-/-- **It runs by its relata's exchanges.** Under a law of what has stood, the levels of the course
-run by the law of exchange (`Becoming.Unfolding`), its moves the relata's exchanges, exactly where
-the course is feasible. -/
-theorem ExchangeLaw.world_exchange_iff {R : Type} {law : ExchangeLaw R R}
-    (na : law.Nonanticipating) (present : Nat → List R) (start : R → Nat) (W : Web R R) :
-    (∀ t, (exchange R).step (law.levels present start t) ((law.world present start W).move t)
-        (law.levels present start (t + 1))) ↔
-      law.Feasible present start :=
-  (law.world present start W).balances_iff_exchange.symm.trans
-    (ExchangeLaw.world_balances_iff na present start W)
-
-/-- The course, where feasible, as a run of the law of exchange. -/
-def ExchangeLaw.worldRun {R : Type} {law : ExchangeLaw R R} (na : law.Nonanticipating)
-    {present : Nat → List R} {start : R → Nat} (W : Web R R)
-    (feasible : law.Feasible present start) : Run (exchange R) :=
-  (law.world present start W).exchangeRun
-    ((ExchangeLaw.world_balances_iff na present start W).mpr feasible)
-
-/-- **What a determined law adds to a history is exactly the moves the history never takes.** A
-determined law steps from `s` by `a` beyond what a run of it shows (`Shown`) exactly where it
-steps there at all and the run never takes `a` at `s`. -/
-theorem Run.beyond_shown_iff {S A : Type} {P : Process S A} (determined : Determined P)
-    (r : Run P) {s : S} {a : A} :
-    (∃ t, P.step s a t ∧ ¬ (Shown r.state r.act).step s a t) ↔
-      (∃ t, P.step s a t) ∧ ¬ ∃ n, r.state n = s ∧ r.act n = a :=
-  ⟨fun ⟨t, step, beyond⟩ =>
-    ⟨⟨t, step⟩, fun ⟨n, at_s, by_a⟩ =>
-      have there : P.step s a (r.state (n + 1)) := at_s ▸ by_a ▸ r.step n
-      beyond ⟨n, at_s, by_a, (determined s a t (r.state (n + 1)) step there).symm⟩⟩,
-   fun ⟨⟨t, step⟩, untaken⟩ =>
-    ⟨t, step, fun ⟨n, at_s, by_a, _⟩ => untaken ⟨n, at_s, by_a⟩⟩⟩
-
-/-- **The counterfactuals of a course are what its law adds to its history.** For a run of the
-standard model of the course (the course an act generates is one, `ExchangeLaw.course_trajectory`),
-the history shows a determined law (`Consistent`, `exists_law_iff`), and the part's move `a` at
-`x` has a step of the model beyond what the history shows exactly where the history never takes
-`a` at `x`. -/
-theorem ExchangeLaw.counterfactual_beyond_shown {law : ExchangeLaw F C} {present : Nat → List F}
-    {part : F → Bool} (r : Run (inputs (law.stepBy present part)))
-    (x : Nat × (Nat → C → Nat)) (a : F → C → Nat × Nat) :
-    Consistent r.state r.act ∧
-      ((∃ t, (inputs (law.stepBy present part)).step x (a, ()) t ∧
-          ¬ (Shown r.state r.act).step x (a, ()) t) ↔
-        ¬ ∃ n, r.state n = x ∧ r.act n = (a, ())) :=
-  ⟨exists_law_iff.mp ⟨_, inputs_determined _, r.step⟩,
-   (Run.beyond_shown_iff (inputs_determined _) r).trans
-     ⟨fun both => both.2, fun untaken => ⟨⟨_, rfl⟩, untaken⟩⟩⟩
-
 /-- The part's move formed within the unfolding by a law of the part: what `act` takes and gives
 at the configuration, the stage and the history so far. -/
 def ExchangeLaw.policy (act : ExchangeLaw F C) (x : Nat × (Nat → C → Nat)) :
     (F → C → Nat × Nat) × Unit :=
   (fun h c => (act.take x.1 h x.2 c, act.give x.1 h x.2 c), ())
-
-/-- **With the act formed within, the course is the run P69's `closedBy` fixes.** A run of the
-standard model of the course whose move is formed by `act` from the configuration, starting at
-the starting levels, is at every step the course `law.withAct part act` generates. So two such
-runs agree (`closedBy_runs_agree`): with the act formed within, the part acting otherwise is a
-law of the part otherwise. -/
-theorem ExchangeLaw.closedBy_course {law act : ExchangeLaw F C} {present : Nat → List F}
-    {part : F → Bool} {start : C → Nat}
-    (r : Run (closedBy (inputs (law.stepBy present part)) act.policy))
-    (begins : r.state 0 = ((0, fun _ => start), act.policy (0, fun _ => start))) :
-    ∀ n, (r.state n).1 = (n, (law.withAct part act).history present start n)
-  | 0 => congrArg Prod.fst begins
-  | n + 1 =>
-    have formed : (r.state n).2 = act.policy (r.state n).1 :=
-      match n with
-      | 0 => (congrArg Prod.snd begins).trans (congrArg act.policy (congrArg Prod.fst begins)).symm
-      | k + 1 => (r.step k).2
-    (r.step n).1.trans
-      ((congrArg (fun m => law.stepBy present part (r.state n).1 m.1 m.2) formed).trans
-        (congrArg (fun x => law.stepBy present part x (act.policy x).1 ())
-          (ExchangeLaw.closedBy_course r begins n)))
 
 end Unfolding
 

@@ -1,5 +1,6 @@
 import Becoming.Learning
 import Becoming.Stock
+import Becoming.Joint
 
 /-!
 # Selection when the lumping itself changes

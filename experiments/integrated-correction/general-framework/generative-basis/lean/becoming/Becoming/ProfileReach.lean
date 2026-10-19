@@ -1,5 +1,6 @@
 import Becoming.EdgeClosure
 import Becoming.Metaethics
+import Becoming.ValuationFrames
 
 /-!
 # How a standpoint's own good reaches beyond its own region, through formed profiles

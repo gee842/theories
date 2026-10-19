@@ -296,7 +296,7 @@
         "Becoming.ExchangeLaw.Through",
         "Becoming.Flow.Follows"
       ],
-      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e"
+      "sha256": "a6b7db425e8741a9e3b1c99aac45a2c8d12eb3431b4b73c5391b47e84b9a7089"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
@@ -307,7 +307,7 @@
         "Becoming.Flow.alike_beyond_response",
         "Becoming.Flow.exchange_alike_beyond_response"
       ],
-      "sha256": "56ce5e698aea0d3c3c89a1307e1a08c822fccb260079fb65832de4a41a7be289"
+      "sha256": "9ed9b2ee9a7a9066601b4a8a818081baf1946326fd80db08b0e695bbbd11c7bc"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
@@ -317,7 +317,7 @@
         "Becoming.Web.AlikeThroughUpTo",
         "Becoming.Web.CoupledInto"
       ],
-      "sha256": "33e56ce738d062804808d426049498435660fafcfbd29ae38b8695148536cf35"
+      "sha256": "98bfa21a5f63725b5d67a702cae3d68dc884feca3a1beccf25c55d4acf7e2bac"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T004321.279483Z/verification.json",
@@ -331,7 +331,7 @@
         "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
         "Becoming.Loop.response_returns"
       ],
-      "sha256": "2e6b7f783c387054999d4efabaf32a4720a6f038636ff7f9d5bfada891f8a90a"
+      "sha256": "13bce2617ad84cfa4a540f657673fdf803abb323eb15ee30f0a8d3fbbdfbf873"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
@@ -408,6 +408,10 @@
     {
       "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Counterfactual.lean: declarations moved in or out by W2; PoolResponse.lean: declarations moved in or out by W2; Response.lean: declarations moved in or out by W2; Testing.lean: declarations moved in or out by W2). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

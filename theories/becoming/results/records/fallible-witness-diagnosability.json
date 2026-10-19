@@ -98,7 +98,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
       "role": "proof",
-      "sha256": "08725e834290ab83cfe8f2acf9cb3ede7e8b01b7be233987e4be95ad51d2f94a",
+      "sha256": "62e84deb7670cf63574b91b101b747131db72e8e5f945d3768c09fe29510c2af",
       "declarations": [
         "Becoming.Readout.Explains",
         "Becoming.Readout.CommonWitness",
@@ -131,7 +131,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
       "role": "proof",
-      "sha256": "a270630c90893b96d3ddf42073412d0bbfaa97cf66ffebf9c56d8129edcac732",
+      "sha256": "93dce8d6a17acf4693dd424b99379eb6abbd1a47f374b1365ae439e90a001e43",
       "declarations": [
         "Becoming.Courses.dates_no_common_report_envelopes_iff",
         "Becoming.Courses.dates_no_common_report_iff",
@@ -210,6 +210,12 @@
       "role": "integration",
       "sha256": "0a463207d3f51e269320fd0bbe5ba566d5600309126134ad52b552ff2f130b2a",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "role": "receipt",
+      "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -222,7 +228,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T161154.555289Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Readout",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -236,7 +242,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Courses",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -322,6 +328,10 @@
     {
       "en": "19 October 2026, SC (a code formed between formations): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SC added a study section). The claim is unchanged.",
       "zh": "2026年10月19日，SC（在形成之间形成的编码）：读过改动后，BECOMING-RENEWAL-READING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean, Readout.lean). The claim is unchanged.",
+      "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import Becoming.Boundaries
 import Becoming.Ranking
+import Becoming.Inquiry
 
 /-!
 # Relevance: the uses of living significance under the continuation condition
