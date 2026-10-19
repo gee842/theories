@@ -86,6 +86,7 @@ Studies retired as a whole are under [`_process/history/`](../history/):
 | `2026-10-07-handoffs/` | 10 |
 | `2026-10-17-instructions/` | 3 |
 | `2026-10-18-instructions/` | 1 |
+| `2026-10-19-instructions/` | 1 |
 | `workboard/` | 1 |
 | `worktree-salvage-2026-10-18/` | 391 |
 
