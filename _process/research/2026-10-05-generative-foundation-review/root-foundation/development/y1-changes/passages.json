@@ -1,5 +1,5 @@
 {
- "about": "The passage map of Y1 and Y2: each passage of the 周易 and the 易传 (and two commentaries) quoted verbatim from the preserved Wikisource revision named in sources/zhouyi-yizhuan/PROVENANCE.json, its kind of relation to the spine, and the declarations it corresponds to. The readings are AI readings (D47). verify_mapping.py checks every fragment against the stored revision, every declaration against an audited receipt, and the chapter's table against this file.",
+ "about": "The passage map of Y1, Y2 and Y3: each passage of the 周易 and the 易传 (and two commentaries) quoted verbatim from the preserved Wikisource revision named in sources/zhouyi-yizhuan/PROVENANCE.json, its kind of relation to the spine, and the declarations it corresponds to. The readings are AI readings (D47). verify_mapping.py checks every fragment against the stored revision, every declaration against an audited receipt, and the chapter's table against this file.",
  "kinds": {
   "agreement": "相合：经文所说之结构，脊柱上有已检查之律与之对应。",
   "scope": "定域：脊柱给出此句成立的确切范围，并修正其全称形式。",
@@ -48,9 +48,12 @@
    "kind": "scope",
    "declarations": [
     "Becoming.Hexagram.order_length",
-    "Becoming.World.unity"
+    "Becoming.World.unity",
+    "Becoming.Hexagram.addOne",
+    "Becoming.Hexagram.addOne_one_orbit",
+    "Becoming.Hexagram.line_turns"
    ],
-   "reading": "每加一个二值之分，构形加倍，至六分而六十四；脊柱把它读作一个展开之上逐层的区分，不是时间中的先后产生。"
+   "reading": "每加一个二值之分，构形加倍，至六分而六十四；脊柱把它读作一个展开之上逐层的区分，不是时间中的先后产生。加一之律依次经过全部六十四构形而后复返，只此一轨；第 k 爻每 2^(k−1) 步一变：逐层之分读作数位。"
   },
   {
    "id": "feifu",
@@ -65,9 +68,11 @@
     "Becoming.Hexagram.complement",
     "Becoming.Hexagram.Paired",
     "Becoming.Hexagram.pairs",
-    "Becoming.Hexagram.order_paired"
+    "Becoming.Hexagram.order_paired",
+    "Becoming.Hexagram.turn_fixed_iff",
+    "Becoming.Hexagram.both_fixed_iff"
    ],
-   "reading": "对所传卦序逐对检验：每对之后一卦是前一卦倒转（覆），倒转不变者则六爻皆变（變）。"
+   "reading": "对所传卦序逐对检验：每对之后一卦是前一卦倒转（覆），倒转不变者则六爻皆变（變）。倒转不变者八卦（乾坤、頤大過、坎離、中孚小過），恰是卦序以變相配者；倒转与六爻皆变所得相同者，恰是卦序中覆、變两者兼合之对（泰否、隨蠱、漸歸妹、既濟未濟）。"
   },
   {
    "id": "qiankun-chenglie",
@@ -179,9 +184,15 @@
    "declarations": [
     "Becoming.Hexagram.waxWane_lossless",
     "Becoming.Hexagram.twelve_steps",
-    "Becoming.Hexagram.fourth_step"
+    "Becoming.Hexagram.fourth_step",
+    "Becoming.Hexagram.changesAround",
+    "Becoming.Hexagram.changesAround_values",
+    "Becoming.Hexagram.changesAround_counts",
+    "Becoming.Hexagram.qian_not_reach_jiJi",
+    "Becoming.Hexagram.starts_return",
+    "Becoming.Hexagram.orbit_census"
    ],
-   "reading": "消息盈虚是一个不合并之律的运行；十二消息卦之环只是其中一轨，隨、中孚、蠱、小過四步即返。"
+   "reading": "消息盈虚是一个不合并之律的运行；十二消息卦之环只是其中一轨，隨、中孚、蠱、小過四步即返。消息之律分六十四构形为六轨：五轨十二步，一轨四步；承、乘之数加首尾相同之处，沿每一历程不变，为一、三或五，分别在十二、四十、十二个构形上，故乾不能至既濟。"
   },
   {
    "id": "wanglai-butong",
@@ -410,9 +421,11 @@
     "Becoming.Hexagram.waning",
     "Becoming.Hexagram.allBroken_absorbing",
     "Becoming.Web.consumed_ends_when_fixed",
-    "Becoming.Web.consumed_continues_transformed"
+    "Becoming.Web.consumed_continues_transformed",
+    "Becoming.Hexagram.MarkedLines.run_settled",
+    "Becoming.Hexagram.MarkedLines.run_rests"
    ],
-   "reading": "消息之律下极则转；只入阴爻之律下坤为吸收态，穷而不变。失而不复之后，依存不变者不能延续，延续者已改变其依存：穷则变不是普遍律。"
+   "reading": "消息之律下极则转；只入阴爻之律下坤为吸收态，穷而不变。失而不复之后，依存不变者不能延续，延续者已改变其依存：穷则变不是普遍律。之卦之律下，老爻（九、六）一变即为少爻，此后不再变：在此律之内，“窮”读作老，变之后即久。"
   },
   {
    "id": "kanglong",
@@ -943,6 +956,109 @@
     "Becoming.Web.significance_undetermined"
    ],
    "reading": "爻与位相当与否，是带位之索引的关系（正）。“爻有等”是等级；“文不當，故吉凶生焉”把不当读作吉凶之源。律中的关系不带判断，动力学不决定意义。"
+  },
+  {
+   "id": "zhongyao",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第七章",
+   "fragments": [
+    "若夫雜物撰德，辨是與非，則非其中爻不備"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.nuclear",
+    "Becoming.Hexagram.inner",
+    "Becoming.Hexagram.nuclear_inner",
+    "Becoming.Hexagram.run_inner",
+    "Becoming.Hexagram.nuclear_merges",
+    "Becoming.Hexagram.nuclear_loses"
+   ],
+   "reading": "中爻是第二至第五爻。互卦以二、三、四爻为下卦，三、四、五爻为上卦：互之所成恰由中爻定，起点中爻相同的两个历程自第一步起即为一个历程；初、上两爻一步即失，此律合并，永失一种可能。“辨是與非”是判断，不在律中：律所说的只是互卦所读之处，恰是中爻。"
+  },
+  {
+   "id": "xugua-shouwei",
+   "source": "yizhuan/xugua.json",
+   "locator": "《序卦》首尾",
+   "fragments": [
+    "有天地，然後萬物生焉",
+    "物不可窮也，故受之以未濟；終焉"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.process_returns_iff_ends",
+    "Becoming.Hexagram.nuclear_rests_iff",
+    "Becoming.Hexagram.nuclear_two_fixed_one_cycle",
+    "Becoming.Hexagram.run_in_attractor",
+    "Becoming.Hexagram.entry_counts",
+    "Becoming.Hexagram.basin_counts"
+   ],
+   "reading": "互之律下恰有四个构形复返：乾、坤不变，既濟、未濟相代；一切构形至迟第二步即入此四者，不再离开，依三、四两爻，十六归乾，十六归坤，三十二入既濟、未濟之相代。此四者恰是所传卦序首二卦与末二卦。序卦以天地始，以未濟终而说“物不可窮”：互之律下，既濟、未濟相代而不止，不是静止。"
+  },
+  {
+   "id": "cuozong",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第十章",
+   "fragments": [
+    "參伍以變，錯綜其數"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Hexagram.Symmetry",
+    "Becoming.Hexagram.Symmetry.act",
+    "Becoming.Hexagram.Symmetry.act_comp",
+    "Becoming.Hexagram.Symmetry.comp_self",
+    "Becoming.Hexagram.Symmetry.comp_comm",
+    "Becoming.Hexagram.nuclear_act",
+    "Becoming.Hexagram.nuclear_run_act",
+    "Becoming.Hexagram.run_complement_apart",
+    "Becoming.Hexagram.classOf_eq_iff",
+    "Becoming.Hexagram.class_census",
+    "Becoming.Hexagram.classes_goAlike",
+    "Becoming.Hexagram.classes_not_goAlike_waxWane"
+   ],
+   "reading": "经文的“錯綜”说的是数的交错综合；以“錯”名六爻皆变、以“綜”名倒转，是后世注家之用（明来知德）。脊柱所证的是后者：不变、錯、綜、錯而綜四者成一群，各为自身之逆，两两可交换；互之律与四者皆可交换，故四者各把互的每一历程送为互的历程，一卦与其錯卦的历程永不相遇；六十四卦分为二十类，八类各二卦，十二类各四卦，互同行于诸类之上，消息之律则否：倒转使它逆行。"
+  },
+  {
+   "id": "yongjiu",
+   "source": "hexagrams/01.json",
+   "locator": "乾·用九、象",
+   "fragments": [
+    "用九：見羣龍无首，吉",
+    "用九，天德不可為首也"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Hexagram.Marked",
+    "Becoming.Hexagram.Marked.settle",
+    "Becoming.Hexagram.MarkedLines.settle",
+    "Becoming.Hexagram.MarkedLines.shown",
+    "Becoming.Hexagram.MarkedLines.onward",
+    "Becoming.Hexagram.MarkedLines.all_nines",
+    "Becoming.Hexagram.MarkedLines.settle_merges",
+    "Becoming.Hexagram.MarkedLines.run_settled",
+    "Becoming.Hexagram.MarkedLines.returns_iff",
+    "Becoming.Hexagram.MarkedLines.drawn",
+    "Becoming.Hexagram.MarkedLines.shown_not_goAlike",
+    "Becoming.Hexagram.MarkedLines.onward_goAlike"
+   ],
+   "reading": "用九读作六爻皆为老阳（九）之时（《左傳》昭公二十九年称此辞为“乾之坤”，未存于本库）：老爻变为其反而不再变，少爻不变，一步即定，此后历程静止；所示本卦乾，自第一步起历程所示为坤（之卦）。律对任一卦之老少皆成立，用九只是六爻皆变之一例。本卦不是此律所同行的归并：本卦相同，之卦可异；之卦则是。“見羣龍无首”“吉”是象与判断，不在律中。"
+  },
+  {
+   "id": "yongliu",
+   "source": "hexagrams/02.json",
+   "locator": "坤·用六、象",
+   "fragments": [
+    "用六：利永貞",
+    "用六永貞，以大終也"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Hexagram.MarkedLines.all_sixes",
+    "Becoming.Hexagram.MarkedLines.run_settled",
+    "Becoming.Hexagram.MarkedLines.returns_iff",
+    "Becoming.Hexagram.MarkedLines.onward"
+   ],
+   "reading": "用六读作六爻皆为老阴（六）：所示本卦坤，自第一步起历程所示为乾。《象》“以大終”读作终于阳（乾）；“利永貞”是判断，不在律中。"
   },
   {
    "id": "tianzun",

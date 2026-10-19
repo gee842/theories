@@ -1,0 +1,17 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories--claude-worktrees-reverent-tu-7f9353/9f25a674-397b-4600-b8a0-e367146dbc7f/scratchpad/tree",
+  "modules": 46,
+  "ran": [
+    "Becoming.HexagramLaws",
+    "BecomingHexagramLawsAxiomAudit"
+  ],
+  "reused": 45,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramLaws": {
+      "theorems": 131,
+      "declarations": 188,
+      "with_axioms": {}
+    }
+  }
+}

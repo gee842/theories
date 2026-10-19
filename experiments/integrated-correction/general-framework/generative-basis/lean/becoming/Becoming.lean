@@ -97,6 +97,7 @@ import Becoming.Selection
 import Becoming.Learning
 import Becoming.Hexagrams
 import Becoming.HexagramPlaces
+import Becoming.HexagramLaws
 import Becoming.Withholding
 import Becoming.Widening
 import Becoming.Pace
@@ -1155,6 +1156,20 @@ readings of the unfolding (`Becoming.Labelled`).
   Each law is read along the runs of the spine: of waxing and waning, of the change of one line,
   of the law backward, and of any process. Four censuses of the 彖 and the 小象 are checked on
   their configurations; the chapter on the 易传 reads each passage.
+* `Becoming.HexagramLaws` (L4): four more laws on the sixty-four configurations and the census
+  of the law of waxing and waning, with no premise, stated along the runs of the spine. The
+  nuclear law (互) merges: what it makes of a hexagram is fixed by the four inner lines, and
+  within two steps every run is in 乾, 坤 or the turns of 既濟 and 未濟, exactly the four that
+  return, the first two and the last two of the received order, lines 3 and 4 telling which.
+  The cast of turning and staying lines (之卦) merges and settles in one step; the hexagram
+  shown is not a lumping the law goes alike across, the hexagram the lines go to is. Keeping,
+  changing every line (錯), turning over (綜) and both form a four-group with twenty classes,
+  eight of two and twelve of four, which the nuclear law goes alike across and the law of
+  waxing and waning does not; the configurations turning over keeps are those the received
+  order pairs by changing every line. Adding one merges nothing and has one orbit of
+  sixty-four, line k turning every 2 ^ (k - 1) steps. The law of waxing and waning keeps the
+  changes of line once round (承 and 乘 with the ends), one, three or five, and has six orbits,
+  five of twelve steps and one of four.
 * `Becoming.Withholding` (L3): giving that waits on giving. With memory (a formation gives
   where it gave and all it waits on gave), a formation gives at a step exactly where every
   formation within that many waits of it gave at the start; withholding stays, spreads

@@ -1,0 +1,18 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories--claude-worktrees-reverent-tu-7f9353/9f25a674-397b-4600-b8a0-e367146dbc7f/scratchpad/tree",
+  "modules": 46,
+  "ran": [
+    "Becoming.HexagramLaws",
+    "BecomingHexagramLawsAxiomAudit"
+  ],
+  "reused": 45,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramLaws": {
+      "theorems": 126,
+      "declarations": 183,
+      "with_axioms": {}
+    }
+  }
+}
+python3 -B scratch_build.py $SP Becoming.HexagramLaws  18.67s user 2.05s system 142% cpu 14.579 total

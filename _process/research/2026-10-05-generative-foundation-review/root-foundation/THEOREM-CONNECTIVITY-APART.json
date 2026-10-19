@@ -1576,6 +1576,41 @@
    "module": "Becoming.HexagramPlaces",
    "category": "restates",
    "reason": "Six steps of the law keep every opposition: restated on the base by run_six_keeps, the same law along every run of waxing and waning, derived there from the phases."
+  },
+  "Becoming.Hexagram.class_census": {
+   "module": "Becoming.HexagramLaws",
+   "category": "model-witness",
+   "reason": "A census over the received order: twenty classes under the four symmetries (錯, 綜), eight of two and twelve of four, counted on the sixty-four configurations and checked there; the law it counts is stated along the runs of the spine by nuclear_run_act and classes_goAlike."
+  },
+  "Becoming.Hexagram.changesAround_counts": {
+   "module": "Becoming.HexagramLaws",
+   "category": "model-witness",
+   "reason": "A census over the received order: the changes around are one on twelve configurations, three on forty and five on twelve, counted on the sixty-four configurations and checked there; the law it counts is stated along the runs of the spine by changesAround_run and changesAround_values."
+  },
+  "Becoming.Hexagram.orbit_census": {
+   "module": "Becoming.HexagramLaws",
+   "category": "model-witness",
+   "reason": "A census over the received order: the six orbits of the law of waxing and waning, of twelve, twelve, twelve, twelve, four and twelve configurations, with their changes around, counted on the sixty-four configurations and checked there; the law it counts is stated along the runs of the spine by starts_return, orbitIndex_goAlike and reach_keeps_orbit."
+  },
+  "Becoming.Hexagram.turn_fixed_iff": {
+   "module": "Becoming.HexagramLaws",
+   "category": "model-witness",
+   "reason": "A fact about the text's received order (序卦): the configurations turning over leaves as they are are exactly those the order pairs by changing every line, checked on its thirty-two pairs, not a law of the unfolding; the symmetries act on the runs of the nuclear law by nuclear_run_act."
+  },
+  "Becoming.Hexagram.both_fixed_iff": {
+   "module": "Becoming.HexagramLaws",
+   "category": "model-witness",
+   "reason": "A fact about the text's received order (序卦): those that turning over and changing every line take to the same hexagram are exactly the pairs in which the two agree, checked on its thirty-two pairs, not a law of the unfolding; the symmetries act on the runs of the nuclear law by nuclear_run_act."
+  },
+  "Becoming.Hexagram.Symmetry.comp_comm": {
+   "module": "Becoming.HexagramLaws",
+   "category": "support",
+   "reason": "Any two of the four symmetries commute: a one-line unpacking of the module's own composition table, checked case by case."
+  },
+  "Becoming.Hexagram.order_nodup": {
+   "module": "Becoming.HexagramLaws",
+   "category": "support",
+   "reason": "The received order lists each configuration once: a list lemma on the module's imported list, read with mem_order so that a count over the order counts configurations."
   }
  }
 }

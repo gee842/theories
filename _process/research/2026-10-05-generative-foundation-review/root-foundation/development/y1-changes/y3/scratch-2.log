@@ -1,0 +1,18 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/reverent-tu-7f9353/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y3",
+  "modules": 44,
+  "ran": [
+    "Becoming.HexagramLaws",
+    "BecomingHexagramLawsAxiomAudit"
+  ],
+  "reused": 43,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramLaws": {
+      "theorems": 107,
+      "declarations": 158,
+      "with_axioms": {}
+    }
+  }
+}
+python3 -B scratch_build.py  Becoming.HexagramLaws  13.74s user 1.42s system 146% cpu 10.313 total

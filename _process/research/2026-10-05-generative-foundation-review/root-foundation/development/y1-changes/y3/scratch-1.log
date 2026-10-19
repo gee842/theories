@@ -1,0 +1,73 @@
+Becoming/HexagramLaws.lean:337:72: error: Expected type must not contain free variables
+  ¬({ l1 := a, l2 := b, l3 := false, l4 := false, l5 := e, l6 := f }.l3 = true ∧
+      { l1 := a, l2 := b, l3 := false, l4 := false, l5 := e, l6 := f }.l4 = true)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:337:72: error: Expected type must not contain free variables
+  ¬({ l1 := a, l2 := b, l3 := false, l4 := true, l5 := e, l6 := f }.l3 = true ∧
+      { l1 := a, l2 := b, l3 := false, l4 := true, l5 := e, l6 := f }.l4 = true)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:337:72: error: Expected type must not contain free variables
+  ¬({ l1 := a, l2 := b, l3 := true, l4 := false, l5 := e, l6 := f }.l3 = true ∧
+      { l1 := a, l2 := b, l3 := true, l4 := false, l5 := e, l6 := f }.l4 = true)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:347:72: error: Expected type must not contain free variables
+  ¬({ l1 := a, l2 := b, l3 := false, l4 := true, l5 := e, l6 := f }.l3 = false ∧
+      { l1 := a, l2 := b, l3 := false, l4 := true, l5 := e, l6 := f }.l4 = false)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:347:72: error: Expected type must not contain free variables
+  ¬({ l1 := a, l2 := b, l3 := true, l4 := false, l5 := e, l6 := f }.l3 = false ∧
+      { l1 := a, l2 := b, l3 := true, l4 := false, l5 := e, l6 := f }.l4 = false)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:347:72: error: Expected type must not contain free variables
+  ¬({ l1 := a, l2 := b, l3 := true, l4 := true, l5 := e, l6 := f }.l3 = false ∧
+      { l1 := a, l2 := b, l3 := true, l4 := true, l5 := e, l6 := f }.l4 = false)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:360:32: error: Expected type must not contain free variables
+  ¬{ l1 := a, l2 := b, l3 := false, l4 := false, l5 := e, l6 := f }.l3 =
+      !{ l1 := a, l2 := b, l3 := false, l4 := false, l5 := e, l6 := f }.l4
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:360:32: error: Expected type must not contain free variables
+  ¬{ l1 := a, l2 := b, l3 := true, l4 := true, l5 := e, l6 := f }.l3 =
+      !{ l1 := a, l2 := b, l3 := true, l4 := true, l5 := e, l6 := f }.l4
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+Becoming/HexagramLaws.lean:751:26: error: unsolved goals
+a b c d e f : Marked
+⊢ (true && true && true && true && true && true) = true
+Becoming/HexagramLaws.lean:760:18: error: unsolved goals
+a b c d e f : Marked
+fixed :
+  { m1 := a, m2 := b, m3 := c, m4 := d, m5 := e, m6 := f }.settle =
+    { m1 := a, m2 := b, m3 := c, m4 := d, m5 := e, m6 := f }
+ha : a.settle = a
+hb : b.settle = b
+hc : c.settle = c
+hd : d.settle = d
+he : e.settle = e
+hf : f.settle = f
+⊢ (true && true && true && true && true && true) = true
+Becoming/HexagramLaws.lean:982:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/reverent-tu-7f9353/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y3",
+  "modules": 44,
+  "ran": [
+    "Becoming.HexagramLaws"
+  ],
+  "reused": 43,
+  "unclean": [],
+  "audits": {},
+  "failed": "Becoming.HexagramLaws"
+}
+python3 -B scratch_build.py  Becoming.HexagramLaws  25.57s user 1.63s system 120% cpu 22.632 total

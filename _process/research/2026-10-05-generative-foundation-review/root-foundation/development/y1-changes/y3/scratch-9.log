@@ -1,0 +1,17 @@
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/reverent-tu-7f9353/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y3",
+  "modules": 46,
+  "ran": [
+    "Becoming.HexagramLaws",
+    "BecomingHexagramLawsAxiomAudit"
+  ],
+  "reused": 45,
+  "unclean": [],
+  "audits": {
+    "Becoming.HexagramLaws": {
+      "theorems": 132,
+      "declarations": 189,
+      "with_axioms": {}
+    }
+  }
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the mapping of the 周易 and the 易传 onto the spine (Y1, Y2). usage, from anywhere:
+"""Check the mapping of the 周易 and the 易传 onto the spine (Y1, Y2, Y3). usage, from anywhere:
   python3 -B verify_mapping.py [--receipt PATH] [--chapter PATH]   # check, exit 1 on any failure
   python3 -B verify_mapping.py --table                             # print the chapter's passage table
 
@@ -9,8 +9,8 @@ Checks, each against the repository's own files:
   2. every fragment of passages.json occurs verbatim in the wikitext of its page, read with
      Wikisource's markup removed (character-variant markup -{…}-, links, templates, tags);
   3. every declaration a passage names is in the audited declaration list of a core receipt
-     (default: the newest under becoming-checks/); names of Becoming.Hexagrams and
-     Becoming.HexagramPlaces not yet in that receipt are checked against the modules' source and
+     (default: the newest under becoming-checks/); names of Becoming.Hexagrams,
+     Becoming.HexagramPlaces and Becoming.HexagramLaws not yet in that receipt are checked against the modules' source and
      reported as such;
   4. the received order of Hexagrams.lean is the order of the preserved pages: page n is the
      n-th hexagram (第n卦), follows page n-1 by its link, and its trigram line (X下Y上) gives
@@ -267,7 +267,10 @@ def main():
     places = PKG / 'Becoming/HexagramPlaces.lean'
     if not places.exists():
         places = HERE / 'y2/Becoming/HexagramPlaces.lean'
-    from_source = lean_declarations(module) | lean_declarations(places)
+    laws = PKG / 'Becoming/HexagramLaws.lean'
+    if not laws.exists():
+        laws = HERE / 'y3/Becoming/HexagramLaws.lean'
+    from_source = lean_declarations(module) | lean_declarations(places) | lean_declarations(laws)
     by_source = set()
     for p in passages:
         for d in p['declarations']:
