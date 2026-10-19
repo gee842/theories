@@ -8664,3 +8664,109 @@ Boundary: Flow, Web and World still read levels in whole numbers; the law is sta
 - `Amounts.large_losses_within` takes the steps as a rising sequence `f` with `T ≤ f 0`, and asks the loss at least `ε` only at `f i` for `i < k`; its premise on the stock is the same as the loss law's. `Amounts.few_large_losses_of_archimedean` asks only `M.Archimedean` and `ε` above nothing, and `Halving.approaches_without_reaching` instantiates it with `Dyadic.archimedean` and `Halving.falls`.
 - `Law.Lossless.loses_nothing` takes `Lossless next`, a list holding every configuration and the fall with losses along one orbit; its conclusion `M.le (d n) M.zero` holds at every step. `Law.loss_needs_merge` is its contrapositive at one step. `Branching.Lossless.loses_nothing` asks the same of a run of any process, with a list holding the run's configurations (not every configuration) and `Branching.Lossless`. The orbit form is the run form at `Law.process next` (`Branching.law_lossless_iff`). It is proved where it stands, before the process form, as Recurrence's laws are.
 - Checker run: core `20261019T124334.350424Z` passed (74 theorems, 93 declarations in Becoming.LeastLoss, empty axiom reports).
+
+## 205. What a finite stretch verifies, and what none can refute (O1)
+
+```text
+Result(s): what-a-finite-stretch-verifies (new); reused: a-history-read-off-its-finite-stretches,
+           what-a-finite-history-refutes; feeds the demarcation comparison of
+           scientific-inquiry-foundation
+Delta: A4-L stated what a finite stretch refutes (closed classes, the hull) and left "what a
+       finite stretch verifies (the open classes) on the order of stretches" as its next step.
+       Here: open classes of ideals are exactly the classes meeting an upper set of stretches,
+       the set fixed, and exactly the verifiable classes, with no premise either way; refuting
+       is verifying the complement, and the step back is double-negation elimination asked of
+       every order (on runs it gives Markov's principle). Every reading is its hull met with
+       its remainder (holding wherever it is adhered to), the largest such part, refuted by no
+       finite stretch, dense up to double negation and outright where it is decided at each
+       stretch whether the reading can still hold there; the disjunctive remainder is dense,
+       asked of every process, exactly under excluded middle. What a stretch finds against a
+       reading is what it finds against its hull; a practice keeping verdicts within a
+       favoured reading, never refuted by the record, exists exactly where it is dense
+Supplied premises / correspondence: none in the Lean; decidedness at a stretch is a hypothesis
+       of remainder_dense_of_decided only; the readings onto inquiry (insulation, demarcation)
+       are the AI's
+Evidence: Becoming.Verification (91 theorems, 109 declarations), empty axiom
+          reports; core receipt `20261019T130853.816105Z`; connectivity check passes, 519 apart of 11,150, 8 in the module,
+          its seven roots registered
+Boundary: readings verifiable or refutable in the limit (the next levels above open and
+          closed); the three cases of the demarcation assessment read on actual inquiries;
+          which readings of an actual unfolding are verifiable, refutable or dense
+```
+
+Record [a-history-read-off-its-finite-stretches](../../../../theories/becoming/results/records/a-history-read-off-its-finite-stretches.md) (A4-L, §189) gave as its next step what a finite stretch verifies, the open classes, on the order whose closed classes `Becoming.Ideals` states; chapter §8.2's row "Origins and refutation" listed it as open. The scientific-inquiry target ([record](../../../../theories/becoming/results/records/scientific-inquiry-foundation.md)) asks to compare a warranted claim, a carefully investigated failure and systematic insulation from adverse evidence. This section takes the first and states the formal side of the second (board item O1).
+
+**The question.** What does a finite stretch verify, on every order of stretches and on the runs of every process? And what part of a reading can no finite stretch count against: is there a canonical split of every reading into what finite records can refute and what they cannot, and what does keeping a favoured verdict against every record amount to?
+
+**The move.** Verification at points read as ideals is dual to refutation (`Ideals.VerifiableBy`: a point inside has a stretch through which only points inside pass), and the interior is dual to adherence. Openness of a class of ideals is Scott openness: upward closed and inaccessible by directed unions (`Ideals.Open`). The split takes the remainder in its implication form, `Adheres K r → K r`, which is constructively the largest part splitting `K` with its hull; the disjunctive form `K r ∨ ¬ Adheres K r` of Alpern and Schneider is the same split and lies within it.
+
+**What is proved** (`Becoming.Verification`, every law at points read as ideals and then on runs).
+
+- **Open classes.** `open_iff_upper`: a class is open exactly where it is the class of ideals meeting an upper set; `upper_unique`: the set is the stretches whose finite histories it holds; `Stretches.open_iff_upper` on the histories of every process. `open_iff_verifiable`: open is verifiable, with no premise either way; unlike refuting and closure, the two are one notion constructively. `open_exists`, `open_and`, `open_true`, `open_false`; the interior is the largest open subclass (`interior_open`, `interior_largest`).
+- **Refuting and verifying.** `refutableBy_iff_compl`, `refutable_iff_compl_verifiable`, `refutable_iff_compl_open`: refuting is verifying the complement. `VerifiableBy.compl_refutable` with stability; `verifiable_compl_refutable_iff`: asked of every order and class the step back is exactly double-negation elimination (two-element chain); on runs, `verifiable_compl_refutable_markov`: the step gives Markov's principle (eventual occurrence of `true` in the Boolean sequences). `Open.compl_closed`; `Stretches.open_compl_adheres`.
+- **On runs.** `verifiable_iff_verifiableBy`; `Verified` (a stretch of the run is a stretch only of runs inside), `verified_iff_interiorBy`, `verified_verifiable`, `verified_largest`, `Verified.not_adheres_compl`, `Adheres.not_verified_compl`; `Stretches.open_runs`, `Stretches.verifiable_of_class`, `Stretches.verifiable_iff_open`, `Stretches.verifiable_iff_class`; `Stretches.verifiable_and`, `Stretches.verifiable_exists`, `Stretches.refutable_or`; `decided_at_stretch`: a reading both verifiable and refutable is decided by a finite stretch of each run at which it is decided.
+- **The split.** `splitBy`, `split`: `K r ↔ Adheres K r ∧ Remainder K r`. `remainder_largest`: for every split of `K` into a part holding every run adhering to it and another part, the other part lies in the remainder. `remainder_iff_of_adheres`. `remainder_not_refuted`: through every stretch it is not that only runs outside the remainder pass. `remainder_meets_not_not`, `remainder_dense_of_decided`. `split_or`, `OrNotAdheres.remainder`, `orNotAdheres_dense_iff_em` (witness: the process of `()`s with the reading of a proposition). `Stretches.closed_iff_remainder`.
+- **What a stretch finds.** `refutes_iff_refutes_hull`, `same_hull_same_refutations`; `Dense`, `Dense.noStretchRefutes`, `remainder_noStretchRefutes`, `Refutable.noStretchRefutes_not_not`, `Refutable.remainder_not_not`.
+- **A practice.** `Practice`, `ByRecord`, `Insulates`; `insulates_iff_dense`, `Insulates.refutable_not_not`.
+- **Sequences.** `eventually_verifiable`, `eventually_dense`, `recurs_dense`, `recurs_not_verifiable` (with Horizon's `recurs_not_refutable`).
+
+**Relations.** `refutes_iff_refutes_hull` is the run form of `hull_content` (the hull adds no stretch): the content a finite record bears on is the hull's. `remainder_not_refuted` uses `AdheresBy.closed` (what adheres is closed) in the one place the classical proof splits on whether a run of the reading passes through the stretch; constructively that split is the remaining `¬ ¬`, and `orNotAdheres_dense_iff_em` calibrates it. `verifiable_compl_refutable_markov` stands beside `refutable_passes_iff_markov`: a refutation from tests must find a failed test it is only known not to miss, and a refutation of a verifiable reading's complement must find the verifying stretch.
+
+**Readings (the AI's).** The three cases of the demarcation assessment have formal counterparts. A carefully investigated failure is a refutable claim with a refuting stretch found. A warranted claim survives: the actual run adheres to it, and its refutable content is the claim itself where the claim is stable. Systematic insulation keeps a favoured verdict by revising, each revision met by the record so far; that is possible exactly where the verdict is dense (`insulates_iff_dense`), refuted by no finite record, and a refutable verdict so kept excludes nothing. The laws do not make refutability a criterion of standing: recurrence is dense and neither verifiable nor refutable, and a hypothesis about an unending course can be honest; what they show is that a verdict kept dense by revision cannot also claim that finite records bear on it.
+
+**Counter-review (the author's).** (1) *Is the split trivial?* The equivalence is short; its content is `remainder_largest` (the implication form is the canonical, largest remainder) and `remainder_not_refuted` (no stretch refutes it), with the calibration that density outright is a decision at each stretch. (2) *Why the implication form?* The disjunctive form is the classical one and is dense exactly under excluded middle, asked of every process; the implication form keeps the split and the largest part with no premise. (3) *Is `insulates_iff_dense` circular?* Its backward direction takes the constant practice; the content is the forward direction, that every practice fixed by the record and never refuted by it keeps a dense verdict, and with refutability `Insulates.refutable_not_not`. (4) *Seven roots stand apart and are registered*: five interior lemmas (one-line corollaries whose run forms are stated), one restatement (`hull_not_interior_compl`, run form `Adheres.not_verified_compl`) and one calibration. (5) *Built in this session*, with no separate reviewer; the scratch build and the checker audit every declaration.
+
+**Output → input.** The split and `refutes_iff_refutes_hull` give the scientific-inquiry target's comparison its formal side; the next levels (readings verifiable or refutable in the limit, which the laws of learning and of settling meet) and the three cases read on actual inquiries remain.
+
+## 206. What a method comes to say in the limit (O2)
+
+```text
+Result(s): what-a-method-comes-to-say-in-the-limit (new); reused: what-a-finite-stretch-verifies,
+           what-a-finite-history-refutes, when-the-runs-of-a-process-settle, the-last-change-of-a-run;
+           read beside learnable-through-registration
+Delta: O1 stated what a finite stretch verifies and refutes, and left "readings verifiable or
+       refutable in the limit" as its next step. Here: a method guessing yes or no from the
+       record verifies a reading in the limit where it converges to yes exactly inside, and
+       refutes it where its yes recurs exactly inside. A reading verified in the limit is a
+       union of closed readings, one refuted in the limit a meet of verifiable ones; readings of
+       tests and of some test succeeding are both; meets are kept (of readings refuted in the
+       limit, by a joint guess). Settling is verified in the limit where configurations are told
+       apart; on the free process it is dense with a dense complement, neither verifiable nor
+       refutable, and under Markov's principle no method refutes it in the limit. Recurrence is
+       refuted in the limit and under Markov's principle verified in the limit by none.
+       Identification in the limit decides each hypothesis in the limit. From not recurring to
+       stopping, and splitting a recurring disjunction, each give LPO
+Supplied premises / correspondence: none in the Lean beyond Markov's principle as the hypothesis of
+       the two diagonal laws and decidable configurations for settling; the readings onto inquiry
+       are the AI's
+Evidence: Becoming.LimitVerification (65 theorems, 96 declarations), empty axiom
+          reports; core receipt `20261019T130853.816105Z`; connectivity check passes, 519 apart of 11,150, none in the module
+Boundary: joins of readings verified in the limit and of readings refuted in the limit (the
+          classical dovetail; constructively, the split by disjunction is LPO); whether the two
+          diagonal laws need Markov's principle; the converse of identification for finitely many
+          hypotheses; actual inquiries read at these levels
+```
+
+Record [what-a-finite-stretch-verifies](../../../../theories/becoming/results/records/what-a-finite-stretch-verifies.md) (O1) gave as its next step the readings verifiable or refutable in the limit, joined to the laws of learning and of settling. Settling (`Enough.Settles`) and recurrence (`Horizon.Sequences.Recurs`) are neither open nor closed: no finite record counts for or against them. `LastChange.lpo_iff_settles` says that deciding settling outright, for every process of a finite world, is the limited principle of omniscience. This section asks what is left when the verdict need not be final: what a method can come to say, and keep saying, from some horizon on (board item O2).
+
+**The question.** Which readings of runs can a method, guessing at each horizon from the record so far, come to say in the limit, and which can it come to deny? Where do settling and recurrence sit, and what does the step from a classical form of these levels to a constructive one cost?
+
+**The move.** A method is a Boolean guess at each horizon, fixed by the record up to that horizon (`Limit.ByRecord`). Verifying in the limit is converging to yes exactly inside (`Limit.Verifies`). Refuting in the limit is stated positively, the yes recurring exactly inside (`Limit.Refutes`); Kelly's form, converging to no exactly outside, is classically the same. Constructively a method refuting in the limit and converging to no puts the run outside (`Limit.Refutes.outside_of_no`), and the step from outside to converging to no is calibrated. The defeating runs of the two diagonal laws are built step by step against the method (`Limit.stage`, `Limit.built`): each move or configuration is read off the method's guess on the record built so far.
+
+**What is proved** (`Becoming.LimitVerification`).
+
+- **Structure.** `verifies_iff_union`, `yesFrom_closed`: a reading verified in the limit is the union of the readings "from `n` on the guess is yes", each closed. `refutes_iff_meet`, `yesAfter_verifiable`: a reading refuted in the limit is the meet of the readings "a yes comes at or after `n`", each verifiable. `converges_unique`, `not_recurs_of_no`, `Verifies.outside_of_no`, `Refutes.outside_of_no`.
+- **The finite levels within the limit levels.** `noneFailed_byRecord`, `noneFailed_verifies`, `noneFailed_refutes`: a reading of tests (`Passes`, closed) is verified and refuted in the limit by "no test has failed so far". `someSucceeded_byRecord`, `someSucceeded_verifies`, `someSucceeded_refutes`: "some test succeeds" (open) is verified and refuted in the limit by "some test has succeeded so far".
+- **Meets.** `both_byRecord`, `both_verifies`: the conjunction of the guesses. `pending`, `jointly`, `jointly_byRecord`, `jointly_refutes`: the joint guess, yes where each guess has said yes since the last joint yes, recurs exactly where both yeses recur.
+- **Identification.** `Identifies`, `says`, `says_byRecord`, `identifies_verifies`, `identifies_refutes`: a guess of values converging on each run to the run's hypothesis verifies and refutes in the limit each reading "the hypothesis is `v`".
+- **Settling.** `still`, `still_byRecord`, `still_verifies`: with configurations told apart, "the last step changed nothing" verifies settling in the limit. On the free process (`Enough.Free`): `Free.settles_dense`, `Free.unsettled_dense`, `Free.settles_not_verifiable`, `Free.settles_not_refutable`, `Free.settles_verified`, and `Free.settles_not_refuted`: under Markov's principle no method fixed by the record refutes settling in the limit (the run changing where the method says yes).
+- **Recurrence.** `Sequences.lastMove`, `Sequences.lastMove_byRecord`, `Sequences.lastMove_refutes`; `Sequences.notLastMove_verifies` (from some step on every move is `false`); `Sequences.not_recurs_of_eventuallyFalse`; `Sequences.recurs_not_verified`: under Markov's principle no method fixed by the record verifies recurrence in the limit (the run playing the negation of the guess).
+- **Calibrations.** `Sequences.eventuallyFalse_lpo`: the law that every run not recurring is, from some step on, `false` throughout, asked of the sequences, gives LPO (witness: the sequence marking only the first `true`). `Sequences.either_recurs_lpo`: the law that a recurring disjunction of two guesses has a recurring guess gives LPO (witness: "no `true` so far" and "some `true` so far").
+
+**Relations.** Settling now sits on three levels at once: refuted or verified at no finite stretch (`Free.settles_not_verifiable`, `Free.settles_not_refutable`), verified in the limit (`still_verifies`), decided outright exactly under LPO (`LastChange.lpo_iff_settles`). Not settling and recurrence sit on the other side: refuted in the limit, not verified there. `eventuallyFalse_lpo` is the limit form of `Settling`'s "not changing for ever is not settling": the step from "does not go on" to "stopped at some step" is LPO. `identifies_verifies` reads `Learnable.Rests` (an extrapolation through a map that comes to rest in accord with a feature) as identification in the limit (Gold 1967): where it rests, each value of the feature is decided in the limit. The record notes this correspondence; it does not state an instance theorem on `Learnable`'s orbits.
+
+**Readings (the AI's).** Inquiry in the limit is inquiry that may retract: a method converging to yes keeps its guess from some horizon on, and nothing in the record says which horizon that is. Settling is the shape of a claim that inquiry can come to make and never close: "this has stopped changing" is said in the limit by watching each step, and no step tells the watcher that the saying has become final. That a run changes again and again cannot be said even in the limit: a method claiming it is defeated by the run that stops changing whenever the method says yes. The calibrations say where finality would come from: locating where a run stopped, from the fact that it does not go on, is LPO.
+
+**Counter-review (the author's).** (1) *Is refuting in the limit defined to suit?* The positive form is Kelly's classically, and the constructive gap is exactly the step calibrated by `eventuallyFalse_lpo`. (2) *Do the diagonal laws need Markov's principle?* The proofs use it once each, to find a guess after every horizon that the method is known not always to make; whether a proof without it exists is left open in the boundary. (3) *Joins are not stated.* The classical joins dovetail; constructively the split of a recurring disjunction is LPO, and the join of readings verified in the limit is not attempted. (4) *Built in this session*, with no separate reviewer; the scratch build and the checker audit every declaration.
+
+**Output → input.** The next levels for an actual inquiry: which of its readings are verified in the limit, which refuted, and where its methods are fixed by the record; the joins; the converse of identification for finitely many hypotheses.

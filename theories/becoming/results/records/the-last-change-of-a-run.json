@@ -151,6 +151,13 @@
         "en": "There every schedule settling gives LPO through RecursOrStops; here the count of changes is bounded by the list, and settling every run with no reachable undoable change is exactly LPO.",
         "zh": "那里每个日程都安定经由 RecursOrStops 给出 LPO；这里变化的次数由列表限定，而使每次没有可达可撤回变化的运行都安定，恰是 LPO。"
       }
+    },
+    {
+      "id": "what-a-method-comes-to-say-in-the-limit",
+      "detail": {
+        "en": "Settling, decided outright here exactly under the limited principle of omniscience, is verified in the limit with decidable configurations and refuted in the limit by no method under Markov's principle.",
+        "zh": "止定在此恰在有限全知原则下被直接判定；构型可判定时它在极限中被证实，在马尔可夫原则下没有方法在极限中否证它。"
+      }
     }
   ],
   "references": [
@@ -283,6 +290,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, O2: related entry for what-a-method-comes-to-say-in-the-limit (study section 206). The claim is unchanged.",
+      "zh": "2026年10月19日，O2：加入与 what-a-method-comes-to-say-in-the-limit 的关联条目（研究第 206 节）。论断不变。"
     }
   ]
 }

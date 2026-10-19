@@ -154,6 +154,13 @@
         "zh": "复用同一接合的共同结构结果，不把它升级为所有科学解释已满足其问题范围。",
         "en": "Reuse the common-structure result for one joining law without assuming that all scientific explanations undertake its question scope."
       }
+    },
+    {
+      "id": "what-a-finite-stretch-verifies",
+      "detail": {
+        "en": "The formal side of the comparison of a warranted claim, an investigated failure and systematic insulation.",
+        "zh": "有根据的主张、经研究的失败与系统性免疫三者对照的形式一面。"
+      }
     }
   ],
   "counterexamples": [
@@ -262,6 +269,11 @@
       "en": "Scientific standing: completed causal-access bounds inform an assessment separating truth, evidential strength and operative correction; science is not defined by accepting this theory, and representing all outcomes is not confirmation.",
       "zh": "科学性评估：已成的因果可及界接入科学性评估，分开真伪、证据强度与实际纠错；不以接受本理论定义科学，容纳所有结果不是经验确认。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#17-stronger-foundations-and-the-assessment-of-scientific-standing"
+    },
+    {
+      "en": "Formal side of the demarcation comparison: every reading is what a finite record can refute met with a remainder none can, and a practice keeping a favoured verdict, never refuted by the record, exists exactly where no finite record refutes the verdict; the form alone does not decide standing.",
+      "zh": "划界对照的形式一面：每个读法都是有限记录能否证的部分与无记录能否证的余部之交；一种保住所偏好结论、从不被记录否证的做法，恰在没有有限记录能否证该结论时存在；仅凭形式不能判定地位。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#205-what-a-finite-stretch-verifies-and-what-none-can-refute-o1"
     }
   ],
   "validation_scope": {
@@ -272,7 +284,7 @@
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "f58f46abc5800cf4b6b7cb43aa89acea0c89f92b5c65161c3ecc2383da167994",
+      "sha256": "8044ca187bdd4f0ed07ed66e640294db6c750c0608301347b581de800914447d",
       "declarations": []
     },
     {
@@ -341,6 +353,11 @@
       "role": "review",
       "sha256": "bc2795f8ab4262a541923667f401d48d84ea016893de2b549e3ece3fe3c235f1",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3f65146837bd6ca6cf8151e6c65bc75b8fd8da100095864f86f3ac4771828ee7"
     }
   ],
   "proof_bindings": [],
@@ -408,6 +425,14 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, O1: progress entry for the formal side of the demarcation comparison (record what-a-finite-stretch-verifies, study section 205). The target, its status and its next step are unchanged: the comparison on actual inquiries remains.",
+      "zh": "2026年10月19日，O1：为划界对照的形式一面加入进展条目（记录 what-a-finite-stretch-verifies，研究第 205 节）。目标、状态与下一步不变：在实际探究上的对照仍待完成。"
+    },
+    {
+      "en": "19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.",
+      "zh": "2026年10月19日，O1 与 O2（有限片段所证实者；方法在极限中所能说出者）：读过改动后，SCIENTIFIC-PHILOSOPHY.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-270 registered results: 254 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 684 curated edges join 224 results to the results they draw on.
+272 registered results: 256 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 689 curated edges join 226 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -219,7 +219,9 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [what-a-commuting-law-keeps-apart][] ← <a id="what-a-commuting-law-keeps-apart--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="what-a-commuting-law-keeps-apart--registration-within-what-it-registers"></a>[registration-within-what-it-registers][] · <a id="what-a-commuting-law-keeps-apart--returning-where-the-course-branches"></a>[returning-where-the-course-branches][] · <a id="what-a-commuting-law-keeps-apart--hexagrams-on-the-spine"></a>[hexagrams-on-the-spine][] *(application)* · <a id="what-a-commuting-law-keeps-apart--generalization-through-lumping"></a>[generalization-through-lumping][] · <a id="what-a-commuting-law-keeps-apart--every-loss-passes-a-juncture"></a>[every-loss-passes-a-juncture][]
 - [what-a-cut-loses][] ← <a id="what-a-cut-loses--how-a-carried-difference-grows"></a>[how-a-carried-difference-grows][] · <a id="what-a-cut-loses--how-much-difference-arrives"></a>[how-much-difference-arrives][] · <a id="what-a-cut-loses--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [what-a-finite-history-refutes][] ← <a id="what-a-finite-history-refutes--becoming-finite-horizon"></a>[becoming-finite-horizon][]
+- [what-a-finite-stretch-verifies][] ← <a id="what-a-finite-stretch-verifies--a-history-read-off-its-finite-stretches"></a>[a-history-read-off-its-finite-stretches][] · <a id="what-a-finite-stretch-verifies--what-a-finite-history-refutes"></a>[what-a-finite-history-refutes][]
 - [what-a-law-of-the-whole-and-no-part-takes][] ← <a id="what-a-law-of-the-whole-and-no-part-takes--sensitivity-is-the-least-registration"></a>[sensitivity-is-the-least-registration][] · <a id="what-a-law-of-the-whole-and-no-part-takes--counterfactual-is-the-course"></a>[counterfactual-is-the-course][] · <a id="what-a-law-of-the-whole-and-no-part-takes--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][]
+- [what-a-method-comes-to-say-in-the-limit][] ← <a id="what-a-method-comes-to-say-in-the-limit--what-a-finite-stretch-verifies"></a>[what-a-finite-stretch-verifies][] · <a id="what-a-method-comes-to-say-in-the-limit--what-a-finite-history-refutes"></a>[what-a-finite-history-refutes][] · <a id="what-a-method-comes-to-say-in-the-limit--when-the-runs-of-a-process-settle"></a>[when-the-runs-of-a-process-settle][]
 - [what-a-pools-acts-respond-to][] ← <a id="what-a-pools-acts-respond-to--what-pooled-coupling-reaches"></a>[what-pooled-coupling-reaches][] · <a id="what-a-pools-acts-respond-to--counterfactual-is-the-course"></a>[counterfactual-is-the-course][] · <a id="what-a-pools-acts-respond-to--comparison-where-the-rest-responds"></a>[comparison-where-the-rest-responds][] · <a id="what-a-pools-acts-respond-to--timely-response-necessity"></a>[timely-response-necessity][]
 - [what-pooled-coupling-reaches][] ← <a id="what-pooled-coupling-reaches--selection-through-registration"></a>[selection-through-registration][] · <a id="what-pooled-coupling-reaches--the-gap-for-ones-own-act"></a>[the-gap-for-ones-own-act][]
 - [where-a-level-couples][] ← <a id="where-a-level-couples--how-much-difference-arrives"></a>[how-much-difference-arrives][] · <a id="where-a-level-couples--how-a-carried-difference-grows"></a>[how-a-carried-difference-grows][] · <a id="where-a-level-couples--observation-is-a-route"></a>[observation-is-a-route][] · <a id="where-a-level-couples--loops-within-what-a-law-reads"></a>[loops-within-what-a-law-reads][] · <a id="where-a-level-couples--testing-within-registration"></a>[testing-within-registration][] · <a id="where-a-level-couples--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
@@ -470,9 +472,12 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [what-a-commuting-law-keeps-apart]: theories/becoming/results/records/what-a-commuting-law-keeps-apart.md
 [what-a-cut-loses]: theories/becoming/results/records/what-a-cut-loses.md
 [what-a-finite-history-refutes]: theories/becoming/results/records/what-a-finite-history-refutes.md
+[what-a-finite-stretch-verifies]: theories/becoming/results/records/what-a-finite-stretch-verifies.md
 [what-a-law-of-the-whole-and-no-part-takes]: theories/becoming/results/records/what-a-law-of-the-whole-and-no-part-takes.md
+[what-a-method-comes-to-say-in-the-limit]: theories/becoming/results/records/what-a-method-comes-to-say-in-the-limit.md
 [what-a-pools-acts-respond-to]: theories/becoming/results/records/what-a-pools-acts-respond-to.md
 [what-pooled-coupling-reaches]: theories/becoming/results/records/what-pooled-coupling-reaches.md
+[when-the-runs-of-a-process-settle]: theories/becoming/results/records/when-the-runs-of-a-process-settle.md
 [where-a-level-couples]: theories/becoming/results/records/where-a-level-couples.md
 [where-a-move-is-formed]: theories/becoming/results/records/where-a-move-is-formed.md
 [where-a-run-goes-on]: theories/becoming/results/records/where-a-run-goes-on.md

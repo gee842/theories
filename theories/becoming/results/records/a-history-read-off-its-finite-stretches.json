@@ -325,11 +325,6 @@
       "en": "Boolean tests from the propositional tests a closed reading is made of: that needs each stretch's test decided (compare refutable_passes_iff_markov).",
       "zh": "由闭读法所含的命题测试得到布尔测试：这需要判定每个片段的测试（参见 refutable_passes_iff_markov）。",
       "kind": "scope"
-    },
-    {
-      "en": "What a finite stretch verifies, the open classes of histories, is not stated on this order.",
-      "zh": "有限片段所证实者，即历史的开类，未在此序上陈述。",
-      "kind": "scope"
     }
   ],
   "counterexamples": [
@@ -354,8 +349,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T020248.454200Z）：Becoming.Ideals 99 项定理、Becoming.HistoryIdeals 80 项，公理报告皆空。外围实例 IdealsCorrespondence 由其检查器实查（Lean 4.30.0-rc2，回执 20261019T020352.033083Z）：92 项定理，103 个声明中 40 个公理报告为空，其余只用标准公理；包模块与完成包回执一致。作者自审见研究第 189 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "What a finite stretch verifies (the open classes) on the order of stretches; an independent review.",
-    "zh": "有限片段所证实者（开类）在片段之序上；独立审查。"
+    "en": "Readings verifiable or refutable in the limit on the order of stretches; an independent review.",
+    "zh": "片段之序上极限中可证实或可否证的读法；独立审查。"
   },
   "correspondence": {
     "en": "Decision D45 (4) joined IdealWarrant with CompletionRole and HistoryIdeals as one core family under structural names (board item A4-L). Ren, 19 October 2026: “integrate all, the theory is a whole, not stitched pieces, go ahead” (provenance, not warrant); his “(a)” of 16 October had kept IdealWarrant outside the spine (study section 153). The ideals of the order of finite stretches are the ideal completion of domain theory (Abramsky and Jung 1994); on runs the closed classes are the safety properties of Alpern and Schneider (1985), and refutation from finite data is that of Kelly (1996), as what-a-finite-history-refutes notes. Classically finite refutability and Scott closure coincide (IdealWarrant's W1); constructively each direction is a step that, asked of every order and class, is exactly double-negation elimination. Readings (the AI's): not being refuted by any finite stretch is not belonging; a history known not to lie within a closed class does not thereby show the stretch at which it leaves; telling whether a history ends is deciding whether it changes again.",
@@ -404,6 +399,13 @@
       "detail": {
         "en": "There no finite prefix decides the whole-run classification in Renewable; here what a finite stretch refutes in every process, as the closed classes of its histories.",
         "zh": "那里在 Renewable 中没有有限前缀决定整段分类；这里是每个过程中有限片段所否证者，即其历史的闭类。"
+      }
+    },
+    {
+      "id": "what-a-finite-stretch-verifies",
+      "detail": {
+        "en": "What a finite stretch verifies, the open classes dual to the closed classes here, and the split of every reading into its hull and a remainder no stretch refutes.",
+        "zh": "有限片段所证实者，即与此处闭类对偶的开类，以及每个读法分为其包与无片段能否证的余部。"
       }
     }
   ],
@@ -643,7 +645,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "cbfca85bdfe0ed104b80cd16d08776da57cdfb8e90515a6deaec5fc0186dc589"
+      "sha256": "1ddfee53a7bd7ac82b803152e9a573ec36f2886b1d948e98dd21ed5d8ab660b7"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-integrate-all.md",
@@ -737,6 +739,10 @@
     {
       "en": "19 October 2026, Y2 (Becoming.HexagramPlaces): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y2 added D50, its index row and its lineage line). The claim is unchanged.",
       "zh": "2026年10月19日，Y2（Becoming.HexagramPlaces）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, O1: the next step taken. What a finite stretch verifies (the open classes) is stated in Becoming.Verification (record what-a-finite-stretch-verifies, study section 205); the scope item saying it was not stated is removed and the next step revised. THE-THEORY-OF-BECOMING.md re-pointed after reading: since this record's reviewed hash the chapter gained the paragraphs on what a finite stretch verifies and on what a method comes to say in the limit (O2, landed with O1) after this record's paragraph, and its section 8 and 9 rows changed. The claim is unchanged.",
+      "zh": "2026年10月19日，O1：下一步已完成。有限片段所证实者（开类）在 Becoming.Verification 中陈述（记录 what-a-finite-stretch-verifies，研究第 205 节）；删去说它未陈述的范围项，修订下一步。读过后 THE-THEORY-OF-BECOMING.md 重新指向：自本记录所审哈希以来，该章在本记录段落之后加入了关于有限片段所证实者与方法在极限中所能说出者（O2，与 O1 同时落地）的段落，第 8、9 节各行有改动。论断不变。"
     }
   ]
 }

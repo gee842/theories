@@ -55,6 +55,8 @@ Enough.assured_iff splits assured enough into a part about the target and every 
 - related, not a proved adapter: [the-boundary-of-enough-under-undetermined-laws](the-boundary-of-enough-under-undetermined-laws.md). There assured enough is every reachable stay meeting the target and every run settling; here when the runs keep changing, and that where assured enough holds no reachable change can be undone.
 - related, not a proved adapter: [continued-change-needs-openness](continued-change-needs-openness.md). There, under enclosure, a world cannot be refuted to come to rest, a negative form; here the negative form for the runs of a process is exact on the process, and the positive form is calibrated at LPO.
 
+**Used by:** [what-a-method-comes-to-say-in-the-limit](what-a-method-comes-to-say-in-the-limit.md)
+
 <a id="sources--来源"></a>
 ### Sources
 

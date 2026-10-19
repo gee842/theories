@@ -197,7 +197,7 @@
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "f58f46abc5800cf4b6b7cb43aa89acea0c89f92b5c65161c3ecc2383da167994",
+      "sha256": "8044ca187bdd4f0ed07ed66e640294db6c750c0608301347b581de800914447d",
       "declarations": []
     },
     {
@@ -290,6 +290,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean, TimedResponse.lean. Rebound to receipt 20261018T235724.886433Z, 20261019T000109.055377Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.",
+      "zh": "2026年10月19日，O1 与 O2（有限片段所证实者；方法在极限中所能说出者）：读过改动后，SCIENTIFIC-PHILOSOPHY.md 重新指向。论断不变。"
     }
   ]
 }

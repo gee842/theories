@@ -98,6 +98,7 @@ Aliases: `least loss`, `最小损失`, `approach to rest`, `趋近停息`, `expo
 ### History
 
 - 19 October 2026: added (LL1), after the outside review of 19 October (R20) named the rest laws' dependence on whole-number amounts; study section 204.
+- 19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: O1 and O2 added two study sections; THE-THEORY-OF-BECOMING.md: O1 and O2 added the paragraphs on what a finite stretch verifies and on what a method comes to say in the limit after the one on what a finite stretch refutes, revised the section 8.1 row of the scientific-inquiry target and the section 8.2 "Origins and refutation" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 

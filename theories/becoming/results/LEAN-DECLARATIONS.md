@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 287 | 11,068 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 289 | 11,224 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -497,6 +497,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [LifecycleCorrespondence.lean](lean-declarations/ethics.md#module-5beb4a64d4f6) | Normative grounding and generative direction |
 | [Lifting.lean](lean-declarations/becoming-core.md#module-d94bf165cf48) | Becoming pure core |
 | [Likeness.lean](lean-declarations/becoming-core.md#module-b00054b2fe2f) | Becoming pure core |
+| [LimitVerification.lean](lean-declarations/becoming-core.md#module-39b79d5784de) | Becoming pure core |
 | [LineageAudit.lean](lean-declarations/valuation.md#module-7d1b924b40d2) | Valuation development and liangzhi |
 | [LineageInProcess.lean](lean-declarations/valuation.md#module-45b450e65721) | Valuation development and liangzhi |
 | [ListFootprints.lean](lean-declarations/becoming-core.md#module-a533b5c5cf26) | Becoming pure core |
@@ -892,6 +893,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ValuationRenewalAudit.lean](lean-declarations/valuation.md#module-b05da0412da4) | Valuation development and liangzhi |
 | [VariationWarrant.lean](lean-declarations/core.md#module-ae18a32ad6d2) | Generative core and relational structure |
 | [VaryingFeedback.lean](lean-declarations/learning.md#module-8300137fadf5) | Learning, prediction and dynamics |
+| [Verification.lean](lean-declarations/becoming-core.md#module-7625cee7c051) | Becoming pure core |
 | [VersionedTaskInstances.lean](lean-declarations/other.md#module-f82d00be1c12) | Other formal studies |
 | [Viability.lean](lean-declarations/becoming-core.md#module-9e2d826ba824) | Becoming pure core |
 | [Weighted.lean](lean-declarations/becoming-core.md#module-d37846dd645c) | Becoming pure core |

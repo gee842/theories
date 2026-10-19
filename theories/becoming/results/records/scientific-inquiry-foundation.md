@@ -17,6 +17,7 @@
 5. Stage-relative continuation task: equal completed sequences can omit alternatives kept at the same reached condition, and contextualized histories can be adequate; path, command execution and implementable testing keep separate obligations. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#15-which-continuation-relations-does-a-scientific-task-require)
 6. Timely response: pre-deadline exchange order joins the fallible bound under common all-initial-state and prefix-mechanism conditions; timely routes are not sufficient control, and no physical duration or causal identification is supplied. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#16-a-distinction-must-arrive-before-the-answer-that-uses-it)
 7. Scientific standing: completed causal-access bounds inform an assessment separating truth, evidential strength and operative correction; science is not defined by accepting this theory, and representing all outcomes is not confirmation. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#17-stronger-foundations-and-the-assessment-of-scientific-standing)
+8. Formal side of the demarcation comparison: every reading is what a finite record can refute met with a remainder none can, and a practice keeping a favoured verdict, never refuted by the record, exists exactly where no finite record refutes the verdict; the form alone does not decide standing. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#205-what-a-finite-stretch-verifies-and-what-none-can-refute-o1)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -82,6 +83,7 @@ Map independent scientific achievements to the shared spine’s discrimination, 
 - **interpretive**: [finite-continuation-plans](finite-continuation-plans.md). Reuses finite viability/observation-branching-plan equivalence and blind/sensing/dependency-change witnesses to distinguish paths from commonly usable operations; preserves the original module scope without claiming a new spine adapter.
 - **interpretive**: [timely-response-necessity](timely-response-necessity.md). The proved timed bound supplies the concrete command task; actual correspondence and full-core necessity remain separate.
 - related, not a proved adapter: [multivalued-joining-common-structure](multivalued-joining-common-structure.md). Reuse the common-structure result for one joining law without assuming that all scientific explanations undertake its question scope.
+- related, not a proved adapter: [what-a-finite-stretch-verifies](what-a-finite-stretch-verifies.md). The formal side of the comparison of a warranted claim, an investigated failure and systematic insulation.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -99,6 +101,7 @@ Map independent scientific achievements to the shared spine’s discrimination, 
 | review | [SCIENTIFIC-INQUIRY-CONTINUATION-REVIEW.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONTINUATION-REVIEW.json) | — |
 | review | [SCIENTIFIC-INQUIRY-TIMING-REVIEW.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-TIMING-REVIEW.json) | — |
 | review | [SCIENTIFIC-INQUIRY-DEMARCATION-REVIEW.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-DEMARCATION-REVIEW.json) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 
 Aliases: —
 
@@ -118,6 +121,8 @@ Aliases: —
 - 14 October 2026, open-issues plan item 4: the first hypothesis was Ren's direction of 13 October 2026 and working arrangements, not a premise of this result. It now states the revisable hypothesis under test itself (the complete theory is a necessary foundation of scientific inquiry; the outcome may be the complete core, a part of it, or a commitment that needs revision); Ren's direction moves with Ren's words to the correspondence; "full-theory necessity is not a proof premise" moves to not-required; "preserve the scopes of local results and the ethical route" moves to does-not-show (scope); "continue in the current conversation without automation" is a working arrangement, kept here (Ren: “只在当前对话中连续推进，不设自动安排”). Former text: "Ren explicitly supports continuing as a revisable-hypothesis test on 13 October 2026. Full-theory necessity is not a proof premise; continue in the current conversation without automation. Preserve the scopes of local results and the ethical route."
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"; adopted vocabulary of the naming study, section 7): declarations renamed as in development/n1-migration/RENAME-TABLE.json, the statements and proofs otherwise unchanged. Changed by the renaming: FallibleInquiry.lean. The claim is unchanged.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: FallibleInquiry.lean. The claim is unchanged.
+- 19 October 2026, O1: progress entry for the formal side of the demarcation comparison (record what-a-finite-stretch-verifies, study section 205). The target, its status and its next step are unchanged: the comparison on actual inquiries remains.
+- 19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.
 - 3 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](scientific-inquiry-foundation.json).
 
 <a id="earlier-text--早期文本"></a>

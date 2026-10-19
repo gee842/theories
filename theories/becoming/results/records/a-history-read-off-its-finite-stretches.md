@@ -47,7 +47,6 @@
 - That every refutable class is closed, or every closed class refutable, without a decision: asked of every process each is exactly double-negation elimination. Witness: `Becoming.Stretches.refutable_closed_iff`.
 - That every history settles or goes on: asked of the cut histories of the process of () it is exactly the limited principle of omniscience. Witness: `Becoming.Stretches.cut_decided_iff_lpo`.
 - Boolean tests from the propositional tests a closed reading is made of: that needs each stretch's test decided (compare refutable_passes_iff_markov).
-- What a finite stretch verifies, the open classes of histories, is not stated on this order.
 - **Counterexample:** On the process of (), the histories passing through the stretch at horizon 1, or all where a proposition holds, are refutable once it is not refuted, and closed only if it holds (refutable_closed_iff); the histories within the stretches at horizon 0 are closed, and the history reaching horizon 1 where the proposition holds shows no refuting stretch unless it holds (unitCut, closed_refutable_iff). The finite histories with the infinite histories of a property are not refutable (finiteOr_not_refutable). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean)
 
 **Standard boundaries:** No ethical premise is used. The core declarations use no Lean axiom; the periphery declarations cited use only Lean's standard axioms (propext, Quot.sound, Classical.choice), as their receipts report. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -62,7 +61,7 @@ Canonical source: [Ideals.lean](../../../../experiments/integrated-correction/ge
 <a id="next--下一步"></a>
 ## Next
 
-What a finite stretch verifies (the open classes) on the order of stretches; an independent review.
+Readings verifiable or refutable in the limit on the order of stretches; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -79,6 +78,9 @@ Decision D45 (4) joined IdealWarrant with CompletionRole and HistoryIdeals as on
   - Input: The order of stretches, and the readings of runs the laws of ideals are read on.
   - Preserved conditions: None. [Horizon.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean)
 - related, not a proved adapter: [becoming-finite-horizon](becoming-finite-horizon.md). There no finite prefix decides the whole-run classification in Renewable; here what a finite stretch refutes in every process, as the closed classes of its histories.
+- related, not a proved adapter: [what-a-finite-stretch-verifies](what-a-finite-stretch-verifies.md). What a finite stretch verifies, the open classes dual to the closed classes here, and the split of every reading into its hull and a remainder no stretch refutes.
+
+**Used by:** [what-a-finite-stretch-verifies](what-a-finite-stretch-verifies.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -111,6 +113,7 @@ Aliases: `a history read off its finite stretches`, `从有限片段读出的历
 - 19 October 2026, Y1 (Becoming.Hexagrams): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y1 added D47, its index row and its lineage line). The claim is unchanged.
 - 19 October 2026, V (what a collective's continuation needs): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: V added decision D48). The claim is unchanged.
 - 19 October 2026, Y2 (Becoming.HexagramPlaces): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y2 added D50, its index row and its lineage line). The claim is unchanged.
+- 19 October 2026, O1: the next step taken. What a finite stretch verifies (the open classes) is stated in Becoming.Verification (record what-a-finite-stretch-verifies, study section 205); the scope item saying it was not stated is removed and the next step revised. THE-THEORY-OF-BECOMING.md re-pointed after reading: since this record's reviewed hash the chapter gained the paragraphs on what a finite stretch verifies and on what a method comes to say in the limit (O2, landed with O1) after this record's paragraph, and its section 8 and 9 rows changed. The claim is unchanged.
 
 </details>
 

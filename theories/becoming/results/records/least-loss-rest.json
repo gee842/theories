@@ -537,13 +537,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "8a63001685d1ec99f65184537879ba0bec6f5b40a1fba5a52db4752c71430d26"
+      "sha256": "3f65146837bd6ca6cf8151e6c65bc75b8fd8da100095864f86f3ac4771828ee7"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "6385793b149a375f3f07cc59667d9feb8451e4c1d2538d4adf3e5c43fbe4124a"
+      "sha256": "1ddfee53a7bd7ac82b803152e9a573ec36f2886b1d948e98dd21ed5d8ab660b7"
     }
   ],
   "proof_bindings": [
@@ -615,6 +615,10 @@
     {
       "en": "19 October 2026: added (LL1), after the outside review of 19 October (R20) named the rest laws' dependence on whole-number amounts; study section 204.",
       "zh": "2026年10月19日：新增（LL1），在 10 月 19 日的外部审查（R20）指出停息规律依赖整数的量之后；研究第 204 节。"
+    },
+    {
+      "en": "19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: O1 and O2 added two study sections; THE-THEORY-OF-BECOMING.md: O1 and O2 added the paragraphs on what a finite stretch verifies and on what a method comes to say in the limit after the one on what a finite stretch refutes, revised the section 8.1 row of the scientific-inquiry target and the section 8.2 \"Origins and refutation\" row, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，O1 与 O2（有限片段所证实者；方法在极限中所能说出者）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }
