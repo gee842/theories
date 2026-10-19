@@ -1,11 +1,11 @@
 {
- "commit": "4642e10e5d9e67abe31ead95e31bf805f49de54e",
+ "commit": "5535929ba125001b0ba2e9d17997389da601c842",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261019T130853.816105Z",
+ "core_receipt_at_commit": "20261019T133615.720595Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
- "tracked_modules": 289,
- "constants": 34933,
- "spine_theorems": 11150,
+ "tracked_modules": 292,
+ "constants": 35017,
+ "spine_theorems": 11195,
  "base": {
   "Process family": [
    "Generative.Process",
@@ -27,21 +27,21 @@
  },
  "classes": {
   "statement on both families": 161,
-  "statement on Process/Frame/Run/Trace": 2896,
-  "statement on World/Flow/Web": 3201,
+  "statement on Process/Frame/Run/Trace": 2932,
+  "statement on World/Flow/Web": 3206,
   "proof through a base family": 133,
-  "used by a theorem on the base": 4240,
-  "apart: own vocabulary": 471,
-  "apart: prelude-only statement": 48
+  "used by a theorem on the base": 4283,
+  "apart: own vocabulary": 437,
+  "apart: prelude-only statement": 43
  },
- "apart_used_by_nothing": 357,
- "apart_roots": 358,
+ "apart_used_by_nothing": 335,
+ "apart_roots": 336,
  "apart_roots_by_category": {
   "model-witness": 196,
   "support": 85,
-  "general-structure": 49,
+  "general-structure": 30,
   "logical-strength": 10,
-  "restates": 16,
+  "restates": 13,
   "calibration": 2
  },
  "apart_roots_unclassified": [],
@@ -79,13 +79,13 @@
    47,
    74
   ],
-  "Becoming.Frontier": [
-   27,
-   84
-  ],
   "Becoming.HexagramSites": [
    23,
    103
+  ],
+  "Becoming.Frontier": [
+   23,
+   84
   ],
   "Becoming.HexagramPlaces": [
    21,
@@ -94,10 +94,6 @@
   "Becoming.Ideals": [
    16,
    99
-  ],
-  "Becoming.WitnessRefinement": [
-   16,
-   44
   ],
   "Becoming.IntegerOrder": [
    15,
@@ -123,14 +119,6 @@
    11,
    19
   ],
-  "Becoming.FaultEnvelopes": [
-   11,
-   19
-  ],
-  "Becoming.Narrowing": [
-   11,
-   60
-  ],
   "Becoming.Quantum": [
    9,
    37
@@ -138,10 +126,6 @@
   "Becoming.OrderNormal": [
    9,
    101
-  ],
-  "Becoming.HistoryIdeals": [
-   9,
-   80
   ],
   "Becoming.ListFootprints": [
    9,
@@ -154,10 +138,6 @@
   "Becoming.Openness": [
    8,
    85
-  ],
-  "Becoming.PooledEnvelopes": [
-   8,
-   44
   ],
   "Becoming.GuardHorizon": [
    8,
@@ -183,6 +163,10 @@
    7,
    51
   ],
+  "Becoming.WitnessRefinement": [
+   7,
+   44
+  ],
   "Becoming.Sensitivity": [
    7,
    47
@@ -194,6 +178,10 @@
   "Becoming.Naturals": [
    6,
    18
+  ],
+  "Becoming.PooledEnvelopes": [
+   6,
+   44
   ],
   "Becoming.ChanceFloors": [
    6,
@@ -251,6 +239,10 @@
    4,
    31
   ],
+  "Becoming.Narrowing": [
+   4,
+   60
+  ],
   "Becoming.Recurrence": [
    3,
    63
@@ -270,6 +262,10 @@
   "Becoming.ListTests": [
    3,
    36
+  ],
+  "Becoming.FaultEnvelopes": [
+   3,
+   19
   ],
   "Becoming.CrossSituational": [
    3,
@@ -441,7 +437,7 @@
   ]
  },
  "components": {
-  "count": 65,
+  "count": 64,
   "theorems_outside_the_main_component": [
    "Becoming.Dispatch.add_three_assoc",
    "Becoming.GuardHorizon.coverage_transports",
@@ -459,8 +455,6 @@
    "Becoming.PartialReadout.safe_of_holds",
    "Becoming.Registration.retained_keeps",
    "Becoming.Requirement.Collective.no_common_plan",
-   "Becoming.Requirement.Settled.no_residual",
-   "Becoming.Requirement.residual_of_unfulfilled",
    "Becoming.Requirement.separate_not_joint",
    "Becoming.Routes.cond_zero_mul"
   ]
@@ -7385,15 +7379,15 @@
   "Becoming.FaultEnvelopes.certificate_witness": "used by a theorem on the base",
   "Becoming.FaultEnvelopes.certificate_sound": "used by a theorem on the base",
   "Becoming.FaultEnvelopes.certificate_available": "used by a theorem on the base",
-  "Becoming.FaultEnvelopes.support_inside_fault_rejected": "apart: own vocabulary",
-  "Becoming.FaultEnvelopes.covering_faults_reject": "apart: own vocabulary",
+  "Becoming.FaultEnvelopes.support_inside_fault_rejected": "used by a theorem on the base",
+  "Becoming.FaultEnvelopes.covering_faults_reject": "used by a theorem on the base",
   "Becoming.FaultEnvelopes.availability_iff_separated": "used by a theorem on the base",
-  "Becoming.FaultEnvelopes.any_append": "apart: prelude-only statement",
-  "Becoming.FaultEnvelopes.or_self": "apart: prelude-only statement",
-  "Becoming.FaultEnvelopes.all_congr": "apart: prelude-only statement",
-  "Becoming.FaultEnvelopes.duplicated_roster_same": "apart: own vocabulary",
-  "Becoming.FaultEnvelopes.empty_envelope_rejects": "apart: own vocabulary",
-  "Becoming.FaultEnvelopes.total_fault_rejects": "apart: own vocabulary",
+  "Becoming.FaultEnvelopes.any_append": "used by a theorem on the base",
+  "Becoming.FaultEnvelopes.or_self": "used by a theorem on the base",
+  "Becoming.FaultEnvelopes.all_congr": "used by a theorem on the base",
+  "Becoming.FaultEnvelopes.duplicated_roster_same": "used by a theorem on the base",
+  "Becoming.FaultEnvelopes.empty_envelope_rejects": "used by a theorem on the base",
+  "Becoming.FaultEnvelopes.total_fault_rejects": "used by a theorem on the base",
   "Becoming.FaultEnvelopes.stronger_envelope_no_new_acceptance": "used by a theorem on the base",
   "Becoming.FaultEnvelopes.separated_of_test": "apart: own vocabulary",
   "Becoming.FaultEnvelopes.one_fault_separation": "apart: own vocabulary",
@@ -7516,9 +7510,9 @@
   "Becoming.PooledEnvelopes.pooled_certificate_sound": "used by a theorem on the base",
   "Becoming.PooledEnvelopes.refinement_preserves_certificate": "used by a theorem on the base",
   "Becoming.PooledEnvelopes.refinement_preserves_separation": "used by a theorem on the base",
-  "Becoming.PooledEnvelopes.empty_family_rejects": "apart: own vocabulary",
+  "Becoming.PooledEnvelopes.empty_family_rejects": "used by a theorem on the base",
   "Becoming.PooledEnvelopes.member_completes": "used by a theorem on the base",
-  "Becoming.PooledEnvelopes.pooled_completes": "apart: own vocabulary",
+  "Becoming.PooledEnvelopes.pooled_completes": "used by a theorem on the base",
   "Becoming.PooledEnvelopes.every_candidate_ready_pool_not": "apart: own vocabulary",
   "Becoming.PooledEnvelopes.survivors_insufficient_before_diagnosis": "apart: own vocabulary",
   "Becoming.PooledEnvelopes.diagnosis_not_identifying": "apart: own vocabulary",
@@ -7558,15 +7552,15 @@
   "Becoming.WitnessRefinement.compatible_iff": "used by a theorem on the base",
   "Becoming.WitnessRefinement.refine_keeps_actual": "used by a theorem on the base",
   "Becoming.WitnessRefinement.refine_subset": "used by a theorem on the base",
-  "Becoming.WitnessRefinement.silence_keeps_models": "apart: own vocabulary",
-  "Becoming.WitnessRefinement.common_survivor_same_answer": "apart: own vocabulary",
-  "Becoming.WitnessRefinement.cross_separation_excludes": "apart: own vocabulary",
-  "Becoming.WitnessRefinement.responsive_survivors_exclude": "apart: own vocabulary",
-  "Becoming.WitnessRefinement.covering_faults_same_transcript": "apart: own vocabulary",
-  "Becoming.WitnessRefinement.present_iff": "apart: prelude-only statement",
-  "Becoming.WitnessRefinement.explains_complete_iff": "apart: own vocabulary",
-  "Becoming.WitnessRefinement.compatible_complete_iff": "apart: own vocabulary",
-  "Becoming.WitnessRefinement.complete_diagnosability_iff_cross_separation": "apart: own vocabulary",
+  "Becoming.WitnessRefinement.silence_keeps_models": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.common_survivor_same_answer": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.cross_separation_excludes": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.responsive_survivors_exclude": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.covering_faults_same_transcript": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.present_iff": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.explains_complete_iff": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.compatible_complete_iff": "used by a theorem on the base",
+  "Becoming.WitnessRefinement.complete_diagnosability_iff_cross_separation": "used by a theorem on the base",
   "Becoming.WitnessRefinement.refined_pool_sound": "used by a theorem on the base",
   "Becoming.WitnessRefinement.refined_completes": "used by a theorem on the base",
   "Becoming.WitnessRefinement.conflicting_models_self_certify": "apart: own vocabulary",
@@ -7597,6 +7591,28 @@
   "Becoming.WitnessRefinement.extended_trace_completes": "statement on Process/Frame/Run/Trace",
   "Becoming.WitnessRefinement.four_witness_trace_uncertified": "statement on Process/Frame/Run/Trace",
   "Becoming.WitnessRefinement.extended_trace_short_of_reserve": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.mem_step": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.run_narrows": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.silent_step": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.step_admits": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.step_pool_empty_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.step_certificate_candidate": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.complete_step_agrees": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.complete_run_agrees": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.responsive_step_excludes": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.covering_step_keeps_both": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.diagnosable_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.all_append": "used by a theorem on the base",
+  "Becoming.WitnessRefinementRuns.and_self'": "used by a theorem on the base",
+  "Becoming.WitnessRefinementRuns.any_congr": "used by a theorem on the base",
+  "Becoming.WitnessRefinementRuns.filter_congr": "used by a theorem on the base",
+  "Becoming.WitnessRefinementRuns.doubled_roster_same": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.total_fault_kept": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.total_fault_blocks": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.test_emptied": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.test_step_completes": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.audit_step_inspection": "statement on Process/Frame/Run/Trace",
+  "Becoming.WitnessRefinementRuns.inquiry_step_testing": "statement on Process/Frame/Run/Trace",
   "Becoming.ChanceFloors.mass_dirac_pos_iff": "apart: own vocabulary",
   "Becoming.ChanceFloors.fulfillment_gives_chance_floor": "apart: own vocabulary",
   "Becoming.ChanceFloors.or_true": "apart: prelude-only statement",
@@ -8363,7 +8379,7 @@
   "Becoming.HistoryIdeals.append_eq_self": "used by a theorem on the base",
   "Becoming.HistoryIdeals.append_eq_nil_left": "used by a theorem on the base",
   "Becoming.HistoryIdeals.prefix_antisymm": "used by a theorem on the base",
-  "Becoming.HistoryIdeals.eq_of_le_of_length_le": "apart: own vocabulary",
+  "Becoming.HistoryIdeals.eq_of_le_of_length_le": "used by a theorem on the base",
   "Becoming.HistoryIdeals.initial_append": "used by a theorem on the base",
   "Becoming.HistoryIdeals.initialWord_initial": "used by a theorem on the base",
   "Becoming.HistoryIdeals.initialWord_length": "used by a theorem on the base",
@@ -8375,14 +8391,14 @@
   "Becoming.HistoryIdeals.trace_le_trace_iff": "used by a theorem on the base",
   "Becoming.HistoryIdeals.history_le_iff": "used by a theorem on the base",
   "Becoming.HistoryIdeals.historyIdeal_same_iff": "used by a theorem on the base",
-  "Becoming.HistoryIdeals.settles_principal": "apart: own vocabulary",
-  "Becoming.HistoryIdeals.letter_append": "apart: own vocabulary",
-  "Becoming.HistoryIdeals.letter_congr": "apart: own vocabulary",
-  "Becoming.HistoryIdeals.initial_iff_letter": "apart: own vocabulary",
-  "Becoming.HistoryIdeals.goesOn_trace": "apart: own vocabulary",
-  "Becoming.HistoryIdeals.classification": "apart: own vocabulary",
-  "Becoming.HistoryIdeals.principal_settles": "apart: own vocabulary",
-  "Becoming.HistoryIdeals.trace_goesOn": "apart: own vocabulary",
+  "Becoming.HistoryIdeals.settles_principal": "used by a theorem on the base",
+  "Becoming.HistoryIdeals.letter_append": "used by a theorem on the base",
+  "Becoming.HistoryIdeals.letter_congr": "used by a theorem on the base",
+  "Becoming.HistoryIdeals.initial_iff_letter": "used by a theorem on the base",
+  "Becoming.HistoryIdeals.goesOn_trace": "used by a theorem on the base",
+  "Becoming.HistoryIdeals.classification": "used by a theorem on the base",
+  "Becoming.HistoryIdeals.principal_settles": "used by a theorem on the base",
+  "Becoming.HistoryIdeals.trace_goesOn": "used by a theorem on the base",
   "Becoming.HistoryIdeals.units_length": "used by a theorem on the base",
   "Becoming.HistoryIdeals.unit_le_of_length": "used by a theorem on the base",
   "Becoming.HistoryIdeals.least_true_or_below": "used by a theorem on the base",
@@ -8431,6 +8447,13 @@
   "Becoming.Stretches.sequences_le_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Stretches.sequences_same_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Stretches.sequences_within_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.HistoryIdealsTraces.classification": "statement on Process/Frame/Run/Trace",
+  "Becoming.HistoryIdealsTraces.course_settles": "statement on Process/Frame/Run/Trace",
+  "Becoming.HistoryIdealsTraces.run_initial_trace": "statement on Process/Frame/Run/Trace",
+  "Becoming.HistoryIdealsTraces.run_goesOn": "statement on Process/Frame/Run/Trace",
+  "Becoming.HistoryIdealsTraces.countdown_down": "statement on Process/Frame/Run/Trace",
+  "Becoming.HistoryIdealsTraces.countdown_ends": "statement on Process/Frame/Run/Trace",
+  "Becoming.HistoryIdealsTraces.history_without_run": "statement on Process/Frame/Run/Trace",
   "Becoming.Ideals.InteriorBy.holds": "used by a theorem on the base",
   "Becoming.Ideals.verifiableBy_iff_interior": "used by a theorem on the base",
   "Becoming.Ideals.interiorBy_verifiable": "used by a theorem on the base",
@@ -10277,13 +10300,13 @@
   "Becoming.Requirement.required_of_bettered": "used by a theorem on the base",
   "Becoming.Lexical.BasicPriority.frontier_iff": "used by a theorem on the base",
   "Becoming.Lexical.BasicPriority.required_iff": "used by a theorem on the base",
-  "Becoming.Requirement.Assigned.unique_required": "apart: own vocabulary",
-  "Becoming.Requirement.Assigned.capable": "apart: own vocabulary",
+  "Becoming.Requirement.Assigned.unique_required": "used by a theorem on the base",
+  "Becoming.Requirement.Assigned.capable": "used by a theorem on the base",
   "Becoming.Requirement.Served.successor": "used by a theorem on the base",
   "Becoming.Requirement.served_of_handover": "used by a theorem on the base",
   "Becoming.Requirement.Served.not_of_gap": "used by a theorem on the base",
-  "Becoming.Requirement.Settled.no_residual": "apart: own vocabulary",
-  "Becoming.Requirement.residual_of_unfulfilled": "apart: own vocabulary",
+  "Becoming.Requirement.Settled.no_residual": "used by a theorem on the base",
+  "Becoming.Requirement.residual_of_unfulfilled": "used by a theorem on the base",
   "Becoming.Requirement.separate_not_joint": "apart: prelude-only statement",
   "Becoming.Requirement.decided_of_decidable": "used by a theorem on the base",
   "Becoming.Requirement.decided_included_bool": "used by a theorem on the base",
@@ -10375,6 +10398,11 @@
   "Becoming.FrontierWorlds.Served.successor": "statement on World/Flow/Web",
   "Becoming.FrontierWorlds.served_of_handover": "statement on World/Flow/Web",
   "Becoming.FrontierWorlds.Served.not_of_gap": "statement on World/Flow/Web",
+  "Becoming.FrontierWorlds.sole_giver_required": "statement on World/Flow/Web",
+  "Becoming.FrontierWorlds.giver_active": "statement on World/Flow/Web",
+  "Becoming.FrontierWorlds.sole_giver_active": "statement on World/Flow/Web",
+  "Becoming.FrontierWorlds.Discharged.no_residual": "statement on World/Flow/Web",
+  "Becoming.FrontierWorlds.residual_of_unfulfilled": "statement on World/Flow/Web",
   "Becoming.AcceptanceFrames.access_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.AcceptanceFrames.no_access": "statement on Process/Frame/Run/Trace",
   "Becoming.AcceptanceFrames.restriction_loss": "statement on Process/Frame/Run/Trace",
@@ -10456,7 +10484,7 @@
   "Becoming.Narrowing.filter_cons_false": "used by a theorem on the base",
   "Becoming.Narrowing.filter_filter_self": "used by a theorem on the base",
   "Becoming.Narrowing.filter_map_comm": "used by a theorem on the base",
-  "Becoming.Narrowing.all_map": "apart: prelude-only statement",
+  "Becoming.Narrowing.all_map": "used by a theorem on the base",
   "Becoming.Narrowing.all_true": "used by a theorem on the base",
   "Becoming.Narrowing.all_of": "used by a theorem on the base",
   "Becoming.Narrowing.after_observe_iff": "statement on Process/Frame/Run/Trace",
@@ -10481,14 +10509,14 @@
   "Becoming.Narrowing.answer_iff": "used by a theorem on the base",
   "Becoming.Narrowing.settles_learn_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.Narrowing.answer_safe": "used by a theorem on the base",
-  "Becoming.Narrowing.safe_definite_requires_agreement": "apart: own vocabulary",
-  "Becoming.Narrowing.answer_maximal": "apart: own vocabulary",
-  "Becoming.Narrowing.unique_maximal_safe": "apart: own vocabulary",
-  "Becoming.Narrowing.unique_maximal_safe_of_ext": "apart: own vocabulary",
+  "Becoming.Narrowing.safe_definite_requires_agreement": "used by a theorem on the base",
+  "Becoming.Narrowing.answer_maximal": "used by a theorem on the base",
+  "Becoming.Narrowing.unique_maximal_safe": "used by a theorem on the base",
+  "Becoming.Narrowing.unique_maximal_safe_of_ext": "used by a theorem on the base",
   "Becoming.Narrowing.known_rule_makes_answer_correct": "used by a theorem on the base",
   "Becoming.Narrowing.acquired_evidence_faithful": "used by a theorem on the base",
-  "Becoming.Narrowing.acquired_answers_correct": "apart: own vocabulary",
-  "Becoming.Narrowing.answer_transport": "apart: own vocabulary",
+  "Becoming.Narrowing.acquired_answers_correct": "used by a theorem on the base",
+  "Becoming.Narrowing.answer_transport": "used by a theorem on the base",
   "Becoming.Narrowing.learning_transport": "used by a theorem on the base",
   "Becoming.Narrowing.narrowing_transport": "statement on Process/Frame/Run/Trace",
   "Becoming.Narrowing.wrong_reencoding_breaks_transfer": "apart: own vocabulary",
@@ -10510,6 +10538,17 @@
   "Becoming.Narrowing.repeated_case_leaves_other": "statement on Process/Frame/Run/Trace",
   "Becoming.Narrowing.contradiction_settles_nothing": "statement on Process/Frame/Run/Trace",
   "Becoming.Narrowing.narrow_class_settles_wrongly": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.safeFor_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.inhabited_iff": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.settles_iff_answer": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.narrowed_answer_greatest": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.narrowed_answer_unique": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.narrowed_answer_unique_of_ext": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.run_constant": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.run_kept": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.run_answer_correct": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.run_answer_greatest": "statement on Process/Frame/Run/Trace",
+  "Becoming.NarrowingRuns.transport_settles_iff": "statement on Process/Frame/Run/Trace",
   "Becoming.PositiveGround.one_sub_succ": "used by a theorem on the base",
   "Becoming.PositiveGround.pos_succ": "used by a theorem on the base",
   "Becoming.PositiveGround.not_pos_negSucc": "used by a theorem on the base",
