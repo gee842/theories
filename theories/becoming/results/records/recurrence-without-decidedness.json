@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-19T08:07:06+00:00",
   "statement": {
     "zh": "有限家族中开始成立复现时不再成立永不终止，反之亦然；在所寻之处已定时找到那一步，从某步起已定时二者同时复现。",
     "en": "In a finite family, recurring coming to be refutes any end to ceasing, and conversely; decided where it is sought, the step is found, and decided from some step on, the two recur together."
@@ -134,8 +134,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "detail": {
-        "zh": "undecided 世界（World.undecided）有限，生起复现（World.undecided_world）；要求每个有限世界中生起复现给出止息复现的规律，在 undecided Q 上判定任一命题 Q（World.law_decides），所以对每个有限世界要求确切的复现规律而不给已定，就是排中律（World.law_iff_em）；不终止的形式不要求已定。",
-        "en": "The undecided world (World.undecided) is finite, with arising recurring (World.undecided_world); a law giving ceasing recurring from arising recurring in every finite world decides any proposition Q at undecided Q (World.law_decides), so asking the exact recurrence law of every finite world without decidedness is excluded middle (World.law_iff_em); the forms that never stop ask no decidedness."
+        "zh": "undecided 世界（World.undecided）有限，生起复现（World.undecided_world）；要求每个有限世界中生起复现给出止息复现的规律，在 undecided Q 上判定任一命题 Q（World.law_decides），所以对每个有限世界要求确切的复现规律而不给已定，就是排中律（World.law_iff_em）；不终止的形式不要求已定。这一需要只来自活动是命题，undecided Q 在一步把它设为任意的 Q：这是对表示之逻辑的校准，是已定规律的引理，此外不说变化的任何事。",
+        "en": "The undecided world (World.undecided) is finite, with arising recurring (World.undecided_world); a law giving ceasing recurring from arising recurring in every finite world decides any proposition Q at undecided Q (World.law_decides), so asking the exact recurrence law of every finite world without decidedness is excluded middle (World.law_iff_em); the forms that never stop ask no decidedness. The need comes only from activity being a proposition, which undecided Q sets to an arbitrary Q at one step: a calibration of the representation's logic, a lemma of the decided law, saying nothing further about change."
       }
     }
   ],
@@ -594,6 +594,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the counterexample on World.law_iff_em now says that the need comes from activity being a proposition, so it is a lemma of the decided law. The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章与 Lean 文字恰说 Lean 所表明的）：World.law_iff_em 的反例现在说明这一需要来自活动是命题，所以是已定规律的引理。论断不变。"
     }
   ]
 }

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "reviewed_at_utc": "2026-10-19T08:07:06+00:00",
   "statement": {
     "zh": "不加前提的规律对每个世界成立，前提划出部分：活动可判定的有限世界中生起复现恰当止息复现，活跨越生起与止息，耗散之下有限世界归于停息不能被否证。",
     "en": "Premise-free laws hold of every world and premises carve parts: in a finite world whose activity is decided arising recurs exactly when ceasing does, living crosses arising and ceasing, and under dissipation a finite world cannot be refuted to come to rest."
@@ -39,8 +39,8 @@
       ]
     },
     {
-      "zh": "可判定性是这一规律自己的条件，不是表示的承诺：对每个有限世界都要求这一规律而不给可判定性，它就等价于排中律，在纯净核心中陈述，不需要选择公理。",
-      "en": "Decidedness is this law's own condition, not a commitment of the representation: asked of every finite world without it, the law is equivalent to excluded middle, stated in the pure core with no choice.",
+      "zh": "可判定性是这一规律自己的条件，不是表示的承诺：对每个有限世界都要求这一规律而不给可判定性，它就等价于排中律，在纯净核心中陈述，不需要选择公理。这一需要来自活动是命题（World.undecided 在一步放入任意命题），所以它是已定规律的引理，此外不说变化的任何事。",
+      "en": "Decidedness is this law's own condition, not a commitment of the representation: asked of every finite world without it, the law is equivalent to excluded middle, stated in the pure core with no choice. The need comes from activity being a proposition (World.undecided sets an arbitrary one at a step), so this is a lemma of the decided law and says nothing further about change.",
       "declarations": [
         "Becoming.World.law_iff_em",
         "Becoming.World.law_decides",
@@ -1166,6 +1166,10 @@
     {
       "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (7 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
       "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（7 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the law on law_iff_em now says where the need for excluded middle comes from (activity is a proposition) and that it is a lemma of the decided law, as the calibration rule asks. The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章与 Lean 文字恰说 Lean 所表明的）：law_iff_em 一条现在说明对排中律的需要从何而来（活动是命题），并说明它是已定规律的引理，如校准规则所要求。论断不变。"
     }
   ],
   "text_versions": [

@@ -28,7 +28,8 @@ This module states the continuation condition on the spine and what follows from
   something lives (`Valuation.premises_of_unrestricted`). No connection is used. The stepwise
   reading, the reading of relations and the whole-run reading are such readings
   (`Web.significant_of_unrestricted`, `Conditions.significant_of_unrestricted`). The step is
-  immediate: living significance is the continuation condition restricted to living claims, and the continuation condition is stronger, for it
+  immediate, an instantiation: `Unrestricted sig` says that `sig` holds of every standpoint,
+  step and formation, and living significance is the continuation condition restricted to living claims, and the continuation condition is stronger, for it
   covers events that are not living and formations not yet formed. On the level paths of a web
   (`Web.paths`), living significance holds with unindexed significance, and so does C, with “better” read as
   retaining and adding what has significance (`Web.paths_g0_comparison`).
@@ -81,15 +82,19 @@ This module states the continuation condition on the spine and what follows from
   `Flow.Balances.widens_iff_within_margin`). On level paths, an extension in which every
   claim counts as living is exactly a widening, so C holds for every reading of `living`
   with “better” read as widening, with no axiom (`Web.paths_extension_iff_widens`,
-  `Web.paths_comparison_widens`). With the continuation condition supplied, widening is retaining and
+  `Web.paths_comparison_widens`). This holds by definition: `Comparison` unfolds to `Extension`,
+  so the normative content of C lies in calling widening better, which is not shown here. With the continuation condition supplied, widening is retaining and
   adding, keeping the same is retaining both ways, and being mixed is adding both ways
   (`Web.widens_iff_retains_adds`, `Web.keeps_iff_retains`, `Web.mixed_iff_adds`): the
   reduction to possibilities loses nothing, and the rules above need no axiom (Ren, 11
   October 2026: “as long as the derivation of the rules doesn't rely on axiom, don't use
   one”).
-* **The continuation condition is needed.** Where nothing has significance, every level path retains every
-  other and none adds, and living significance fails at any event that lives (`Web.significance_undetermined`).
-  No law of the dynamics mentions significance, so the dynamics does not decide it.
+* **The dynamics do not decide significance.** Where nothing has significance, every level path retains every
+  other and none adds, and living significance fails at any event that lives; where everything
+  has significance it holds (`Web.significance_undetermined`, which evaluates these two constant
+  significances). That no law of the dynamics constrains significance holds because significance
+  is not a field of `World`, `Web` or `Flow`, a fact about the representation, not a theorem here.
+  This does not show that the continuation condition is needed.
 
 Significance here is not graded, and, as Ren wrote, it need not be positive. A part does no
 harm when the levels with it retain what has significance without it, and it is generative when
@@ -140,7 +145,9 @@ def bounded (region : Pos → F → Prop) : Pos → Nat → F → Prop :=
   fun p _ f => region p f
 
 /-- A bounded significance is the continuation condition's rule accepted inside a formed boundary. Where some
-formation lies outside some standpoint's region, it is not the continuation condition. -/
+formation lies outside some standpoint's region, it is not the continuation condition. This is all
+the theorem proves; that such a rival is consistent with every law of the dynamics holds only
+because significance is not a field of the representation. -/
 theorem bounded_rival {region : Pos → F → Prop} :
     Within (fun i : Pos × Nat × F => region i.1 i.2.2) (fun i => bounded region i.1 i.2.1 i.2.2) ∧
       ((∃ p f, ¬ region p f) → ¬ Unrestricted (bounded region)) :=
@@ -434,16 +441,18 @@ theorem Web.paths_extension_iff_widens (W : Web F C) {l l' : Nat → C → Nat} 
    fun ⟨includes, t, f, admits, not⟩ =>
     ⟨fun e admits => includes e.2 e.1 admits, (f, t), trivial, admits, not⟩⟩
 
-/-- C with no axiom. On level paths, C holds for every reading of `living` with “better” read as
-widening what can form: the comparison by possibilities is a law, not a premise. -/
+/-- C with no axiom, by definition. On level paths, C holds for every reading of `living` with
+“better” read as widening what can form. The proof unfolds `Comparison` to `Extension`: that
+widening is better is supplied by the reading of “better”, not shown here. -/
 theorem Web.paths_comparison_widens (W : Web F C) (living : F × Nat → Prop) :
     Comparison W.paths living fun l' l => W.Widens l l' :=
   fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
     ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩
 
-/-- The continuation condition is needed. Where nothing has significance, every level path retains every other
+/-- The two constant significances. Where nothing has significance, every level path retains every other
 and none adds, and living significance fails at any event that lives; where everything has significance living significance holds.
-The dynamics decides neither. -/
+So the represented dynamics do not entail living significance. This does not show that the
+continuation condition is needed. -/
 theorem Web.significance_undetermined (W : Web F C) (own : Pos → F × Nat → Prop) (p : Pos)
     {e : F × Nat} (alive : W.active e.2 e.1 ∧ ¬ W.UnderminingAt e.2 e.1) :
     (∀ l l' : Nat → C → Nat, W.Retains (fun _ _ _ => False) p l l' ∧

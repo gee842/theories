@@ -7,7 +7,7 @@ One situation of one unfolding. Alternative `k` either retains a protected basic
 further gain (`k = 0`) or loses it and realizes `k` gains (`k > 0`); the alternatives are the
 configurations of a frame with no moves, realizing those claims, and the gains are its living
 claims. Three conditions are kept apart: living significance (`G0`) makes each realized gain
-positively relevant; C (`Comparison`) favours every generative extension; the lexical order of
+fall under its relevance parameter (which carries no valence); C (`Comparison`) favours every generative extension; the lexical order of
 the protected condition, then the gains (`Lexical.Above`, J1/J2 when a comparison meets
 `BasicPriority`), gives the condition priority. In this situation:
 

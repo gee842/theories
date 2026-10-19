@@ -51,7 +51,7 @@
 - In a world meeting the rest theorem's conditions not unboundedly many relata ever stand or act, a list holding all of them needing omniscience in general, so the generalization lies only in idle relata. Witness: `Becoming.Listed.lpo_of_few`.
 - Openness with the eight premises does not suffice for arising without end, nor does every premise binding bring rest. Witness: `Becoming.World.holding_world`.
 - In exposed three premises hold vacuously, a feature of representing dissipation as binding only enclosed exchange, not a description of actual open systems.
-- Amounts are natural numbers.
+- Amounts are natural numbers: dissipation loses a whole unit per taking step; with real amounts losses can shrink geometrically and rest fails, and the second law gives no least loss per step.
 - **Counterexample:** exposed: meets all eight premises, no step enclosed, and arising never ceases; so the condition of enclosure cannot be dropped. Activity needing support, bounded transmission and dissipation hold vacuously in it. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
 - **Counterexample:** attrition: meets every premise of the rest theorem but the census of what is active, every step enclosed around what stands, and ceasing recurs; so that census is needed (World.rest_needs_census). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
 - **Counterexample:** throughput and embodiedThroughput: every step enclosed, balanced and dissipative, and arising never ceases; throughput has a census of what is active and embodied arising but no census of what stands, and embodiedThroughput has every relatum embodied but no census; so finitely many standing at each step is needed (World.rest_needs_standing). [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
@@ -180,6 +180,7 @@ Aliases: `Becoming.Web.StandingCensus`, `Becoming.Flow.AroundStanding`, `Becomin
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): declarations moved with their full Lean names, statements and proofs unchanged: World from Space.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean, Flow.lean, Renewal.lean, Roles.lean, Space.lean). The claim is unchanged.
 - 19 October 2026, A4 (Ren 19 October: "integrate all, the theory is a whole, not stitched pieces, go ahead"): The rest family's Chinese term in the live Chinese fields is now 停息 (26 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged; the Chinese title changes with it, and the old one is kept as an alias. The claim is unchanged.
+- 19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the scope item on natural-number amounts now says what the rest theorem uses of them. The claim is unchanged.
 - 64 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continued-change-needs-openness.json).
 
 <a id="earlier-text--早期文本"></a>
@@ -190,4 +191,4 @@ Aliases: `Becoming.Web.StandingCensus`, `Becoming.Flow.AroundStanding`, `Becomin
 
 </details>
 
-Documentary review UTC: `2026-10-16T18:25:05+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-19T08:07:06+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

@@ -1342,7 +1342,7 @@ readings of the unfolding (`Becoming.Labelled`).
   within the rank where a rank certifies it; along runs; the alternation renews for ever with
   bounded novelty. Ported from `ContinuationRenewal` (F3J).
 * `Becoming.Handoff` (L4): a remaining-step certificate handed between revised rules along one
-  history gives formation within the bound, positively relevant under living significance or
+  history gives formation within the bound, relevant under living significance or
   the continuation condition; without the handoff condition revised rules can fail for ever, and
   a real revision changes the formed outcome. Ported from `OpenFutureRevision` (F3J).
 * `Becoming.RuleHandoff` (L4): a gated rule handed on through enacted relations: only adoption

@@ -7,7 +7,8 @@ import Becoming.Ranking
 `Becoming.Significance` shows that Ren's proposal, the continuation condition, gives living significance. Before Ren decided whether the continuation condition
 replaces living significance, every use of living significance in the core and in the periphery's
 generative-capacity modules was audited for what it needs of positive relevance and of
-`living`. This module states what the audit found.
+`living`. This module states what the audit found. “Positive relevance” names `G0`'s parameter
+`positive`; the name carries no valence.
 
 * **Living significance from the continuation condition on every frame.** Read positive relevance from significance: realized
   living content whose continuation has significance from every standpoint
@@ -64,8 +65,11 @@ comparison of courses to the AI (“Comparing courses - you decide”), which co
 possibilities; the theorems of the other comparisons stay.
 
 **AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D1, D16).**
-- Significance need not be positive, and what is positive is the living, 生生: so the AI reads
-  Ren's “doesn't have to be positive”.
+- Significance need not be positive, and neither the condition nor `G0`'s parameter supplies a
+  valence: read from significance, the relevance holds of exactly the realized living content
+  (`relevance_least`). The AI once read the living content as 生生; D1's revision withdrew that,
+  since the `living` readings do not include further generation. So the AI reads Ren's
+  “doesn't have to be positive”.
 - The possibility reading of C reads “what has significance is what can form”
   (`Becoming.Significance`) and Ren's “more possibilities of becoming”. It counts what can form,
   not what does: a course in which a formation lives without adding a possibility is neither
@@ -92,7 +96,8 @@ def Frame.relevance (M : Frame S A Q) (living : Q → Prop) (sig : Pos → Nat �
   living c ∧ M.realized s c ∧ ∀ p, sig p (step c) (formation c)
 
 /-- Under the continuation condition living significance holds on every frame for every reading of `living`, with positive
-relevance read from significance. -/
+relevance read from significance. The proof instantiates `Unrestricted`, which says that `sig`
+holds of every standpoint, step and formation. -/
 theorem g0_of_unrestricted (M : Frame S A Q) (living : Q → Prop) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat) :
     G0 M living (M.relevance living sig formation step) :=

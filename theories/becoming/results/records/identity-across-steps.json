@@ -892,7 +892,7 @@
     {
       "path": "theories/becoming/chapters/NONDUAL-METHOD.md",
       "role": "provenance",
-      "sha256": "34879a406378f20ea80d3ae58409357c1c21543d07d8d475bff44f4106778da7",
+      "sha256": "c589a04a73ea9e928bf8a992151b24ee8d3813d8159756cfbb7ed0ab3b20066d",
       "declarations": []
     },
     {
@@ -1501,6 +1501,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: Web from Dependence.lean to World.lean; total from Generation.lean to World.lean; Flow from Flow.lean to World.lean; Alike, exchangeFrame, exchange_alike_iff from Unfolding.lean to Labelled.lean. Re-pointed after reading the change (Dependence.lean: the fold; Flow.lean: the fold; Generation.lean: the fold). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter and method say exactly what the Lean shows): NONDUAL-METHOD.md re-pointed after reading the change. R20(b) changed wording only: consequences of the continuation condition are stated as instantiations, witnesses for \"can\" claims are marked as witnesses, the rest laws' dependence on whole-unit amounts is named, definitional laws are said to be definitional, law_iff_em is a lemma, the pure core's axiom report is stated exactly, section 8.9 lists objections not yet answered, and \"generative\" no longer names any formation. No line this record relies on changed its content. The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章与方法恰说 Lean 所表明的）：NONDUAL-METHOD.md 读过改动后重新指向。R20(b) 只改措辞：延续条件的推论陈述为实例化，“可以”的见证标为见证，指明停息定律依赖整单位的量，定义性的规律说明是定义性的，law_iff_em 是引理，纯核心的公理报告确切陈述，第 8.9 节列出尚未回答的反对，“generative”不再指任何形成。本记录所依的文字内容未变。论断不变。"
     }
   ],
   "text_versions": [

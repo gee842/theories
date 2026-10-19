@@ -20,7 +20,7 @@
 <a id="conditions--条件"></a>
 ## Conditions
 
-- Balance (Flow.Balances) and dissipation (Flow.Dissipative): as in no-finite-part-bears-taking, physical premises of the representation, each met by some worlds and not by others.
+- Balance (Flow.Balances) and dissipation (Flow.Dissipative): as in no-finite-part-bears-taking, physical premises of the representation, each met by some worlds and not by others. Dissipation loses at least one whole unit per taking step; with real-valued amounts losses can shrink geometrically and the conclusion fails, and the second law gives no least loss per step.
 - The family is without repetition (Distinct) and enclosed around from some step on (Around); recurring taking, recurring rising and recurring embodied arising are each the hypothesis of one theorem.
 - Decided equality: inward_of_not_fed and the theorems drawn from it need it, a logical commitment of the representation, as in Flow.Enclosed.around.
 - The constructive form: the conclusion is that the family cannot from any step on be fed from nothing beyond it; it exhibits no step at which it is fed, and reading it as ‘fed at arbitrarily late steps’ needs omniscience.
@@ -116,6 +116,7 @@ Aliases: `Becoming.Flow.Conveys`, `Becoming.Flow.FedFromBeyond`, `Becoming.Flow.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean, Flow.lean, Roles.lean). The claim is unchanged.
 - 19 October 2026, A4 (Ren 19 October: "integrate all, the theory is a whole, not stitched pieces, go ahead"): The rest family's Chinese term in the live Chinese fields is now 停息 (1 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.
+- 19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the dissipation hypothesis now names the whole unit lost per taking step on which the law depends. The claim is unchanged.
 - 52 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](continuing-self-fed-from-beyond.json).
 
 <a id="earlier-text--早期文本"></a>
@@ -126,4 +127,4 @@ Aliases: `Becoming.Flow.Conveys`, `Becoming.Flow.FedFromBeyond`, `Becoming.Flow.
 
 </details>
 
-Documentary review UTC: `2026-10-16T18:25:05+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-19T08:07:06+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

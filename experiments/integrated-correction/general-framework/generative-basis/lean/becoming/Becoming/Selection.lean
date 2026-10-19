@@ -16,7 +16,9 @@ supplied, never derived.
 
 * **A selection reaches exactly what couples in.** Two histories are selected alike by every
   selection through `f`'s couplings up to `t` exactly when they are alike through `f`'s couplings
-  up to `t` (`Web.selects_alike_iff`). The class alike through `f` of `Becoming.Testing` is such
+  up to `t` (`Web.selects_alike_iff`). This holds by construction: `Web.SelectsThrough` is defined
+  as respecting likeness through the couplings, and the converse is that likeness is an
+  equivalence. The class alike through `f` of `Becoming.Testing` is such
   a selection (`Web.class_selects`), so where two histories are apart through `f`'s couplings, a
   selection through them holds at one and fails at the other (`Web.separates`); alike through the
   couplings is an equivalence (`Web.AlikeThroughUpTo.trans`). A selection through a selector's
@@ -179,7 +181,8 @@ theorem class_selects : W.SelectsThrough obs g t (W.ClassThrough obs g l t) :=
 
 /-- **A selection reaches exactly what couples in.** Two histories are selected alike by every
 selection through `g`'s couplings up to `t` exactly when they are alike through `g`'s couplings
-up to `t`. -/
+up to `t`. One direction is the definition of `SelectsThrough`; the other uses only that the
+class alike through `g` is such a selection. The law states what the definition builds in. -/
 theorem selects_alike_iff :
     (∀ select, W.SelectsThrough obs g t select → (select l ↔ select l')) ↔
       W.AlikeThroughUpTo obs g l l' t :=

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "reviewed_at_utc": "2026-10-19T08:07:06+00:00",
   "statement": {
     "zh": "“从每个立场看，任何东西的延续都有意义”这一延续条件，在主张的意义即某形成之延续的意义的每种读法上推出生生之意义、每个立场的自身意义、两种中立与种子，在水平路径上推出 C，并解除生生之意义的每处用法。",
     "en": "The continuation condition yields living significance, self-significance at every standpoint, both neutralities and a seed on every reading where a claim's significance is a formation's continuation, C on level paths, and discharges every use of living significance."
@@ -167,8 +167,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "主张层面的生生之意义是延续条件的直接推论，延续条件更强：生生之意义是延续条件限于活的主张，延续条件还覆盖不活的事件与尚未形成的形成。",
-      "en": "Living significance at the level of claims is the continuation condition restricted to living claims, an immediate consequence; the condition is stronger, also covering events not living and formations not yet formed.",
+      "zh": "主张层面的生命意义是延续条件限于活的主张，是其全称命题的实例化；延续条件更强，还覆盖不活的事件与尚未形成的形成。",
+      "en": "Living significance is the continuation condition restricted to living claims, an instantiation of its universal statement; the condition is stronger, covering events not living and formations not yet formed.",
       "kind": "converse"
     },
     {
@@ -201,6 +201,11 @@
       "en": "That becoming leaves significance undetermined: significance_undetermined compares the free constants everything and nothing, so it shows only that a representation without significance does not entail it, not that the condition is needed.",
       "kind": "non-implication",
       "witness": "Becoming.Web.significance_undetermined"
+    },
+    {
+      "en": "Counting theorems that take the condition as a hypothesis counts uses of a universal statement, not dependence on further content; what ranks lies in C and in the step of invariance.",
+      "zh": "以条件为假设的定理之数，计的是一个全称命题的用处，不是对更多内容的依存；排序在于 C 与不变的一步。",
+      "kind": "non-implication"
     }
   ],
   "counterexamples": [
@@ -1188,6 +1193,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the record says that the consequences are instantiations of the condition's universal statement, and that counts of theorems taking it measure no further dependence. The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章与 Lean 文字恰说 Lean 所表明的）：记录说明这些推论是条件之全称命题的实例化，以它为假设的定理之数不度量更多的依存。论断不变。"
     }
   ],
   "text_versions": [

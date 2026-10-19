@@ -8,7 +8,9 @@ import Becoming.Relevance
 A response secures positive ground at a visible scope where every admitted continuation holds
 positive content absent before it (`SecuresPositiveGround`, `Becoming.Metaethics`). This is a
 positive aspect at a stated scope, not an all-things-considered comparison: C and every order
-are absent. Living significance (`G0`) supplies positive relevance for realized living content;
+are absent. Living significance (`G0`) supplies relevance for realized living content (the
+parameter is named `positive`, but the name carries no valence; read from significance it is
+significance from every standpoint);
 articulation into a contributory reason is a supplied premise, not permission or duty.
 
 * **Quantifier order matters.** One fixed response can secure some new positive content in each
@@ -95,7 +97,7 @@ section Ground
 variable {H A Q : Type}
 
 /-- **Quantifier order matters**: where each admitted continuation realizes living content absent
-before, living significance gives each some positively relevant content absent before, though no
+before, living significance gives each some relevant content absent before, though no
 one content need be realized in all. -/
 theorem contingent_generation (F : Frame H A Q) (living : Q → Prop) (admitted : H → Prop)
     (before : H → Q → Prop) (positive : H → Q → Prop) (g0 : G0 F living positive)
@@ -138,7 +140,7 @@ theorem certified_reason_on_scope {C R O : Type} {k : Nat} (F : Frame H A C) (li
   certified_integral_reason F living (Scope F.P sense response B policy) before positive reason g0
     articulate domain contribution meaning correspondence certificate
 
-/-- Under the continuation condition, formation gives positively relevant content read from
+/-- Under the continuation condition, formation gives content relevant as read from
 significance, absent before, in every admitted continuation. -/
 theorem contingent_generation_of_unrestricted {F' Pos : Type} (F : Frame H A Q)
     (living : Q → Prop) (admitted : H → Prop) (before : H → Q → Prop)

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
+  "reviewed_at_utc": "2026-10-19T08:07:06+00:00",
   "statement": {
     "zh": "延续者不能从某步起都不从其外得到供给，这是汲入律的输送形式。在可判定相等之下，从其外得到供给恰是该步不内向；必要的是得到供给，不必有哪个来源条件复现。",
     "en": "A continuing family cannot from any step on be fed from nothing beyond it, the conveyance form of the draw-in laws. With equality decided, being fed from beyond is exactly a step that is not inward; being fed is needed, and no source condition need recur."
@@ -76,8 +76,8 @@
   ],
   "hypotheses": [
     {
-      "zh": "平衡（Flow.Balances）与耗散（Flow.Dissipative）：同 no-finite-part-bears-taking，是表示中的物理前提，各有满足与不满足它的世界。",
-      "en": "Balance (Flow.Balances) and dissipation (Flow.Dissipative): as in no-finite-part-bears-taking, physical premises of the representation, each met by some worlds and not by others."
+      "zh": "平衡（Flow.Balances）与耗散（Flow.Dissipative）：同 no-finite-part-bears-taking，是表示中的物理前提，各有满足与不满足它的世界。耗散在每个取用的步至少失去一个整单位；量取实数时损失可以几何地缩小，结论不成立，第二定律也不给每步的最小损失。",
+      "en": "Balance (Flow.Balances) and dissipation (Flow.Dissipative): as in no-finite-part-bears-taking, physical premises of the representation, each met by some worlds and not by others. Dissipation loses at least one whole unit per taking step; with real-valued amounts losses can shrink geometrically and the conclusion fails, and the second law gives no least loss per step."
     },
     {
       "zh": "家族不重复（Distinct），从某步起被围住（Around）；取用复现、成员上升复现或体现成员生起复现，三者各为一条定理的假设。",
@@ -670,6 +670,10 @@
     {
       "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (1 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
       "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（1 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the dissipation hypothesis now names the whole unit lost per taking step on which the law depends. The claim is unchanged.",
+      "zh": "2026年10月19日，R20(b)（理论章与 Lean 文字恰说 Lean 所表明的）：耗散的假设现在指明这一规律所依赖的每个取用之步失去的整单位。论断不变。"
     }
   ],
   "text_versions": [

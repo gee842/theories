@@ -8,16 +8,16 @@ import Becoming.Labelled
 Evaluation is stated over the same frame as the dynamics. Positions, their own
 regions and their significance are formed within the unfolding; `own` is a region
 of formed relations, not an owner. `related` stands for formed relation
-(conditioning, dependence, descent, cooperation) and `living` for the claims that are
-living and further generation, 生生. Both are inputs of a valuation. The readings the
+(conditioning, dependence, descent, cooperation) and `living` for the claims read as
+living. Both are inputs of a valuation; 生生 is read separately, by widening what can form. The readings the
 Becoming layer supplies below are narrower: `related` is co-participation in a
 condition, which includes co-dependence without interaction, and `living` is activity
 that does not undermine the dependence of others. Neither contains further generation:
 an active formation participating in nothing counts as living.
 
 The premise card, every item named and visible:
-* S0, `SelfGood`: a position's own living and further generation has positive
-  significance for it. Any S0-holding position with own living supplies a `Seed`.
+* S0, `SelfGood`: a position's own living claims have significance for it
+  (significance, with no valence). Any S0-holding position with own living supplies a `Seed`.
 * N, boundary neutrality. Each rule below is accepted, by its rivals, inside some
   formed boundary (`Within`); the premise is that no formed boundary restricts it
   (`Neutral`):
@@ -149,7 +149,7 @@ def Connected : Prop :=
 def SelfGood (p : Pos) : Prop :=
   ∀ c, V.own p c → V.living c → V.sig p c
 
-/-- Some living claim has positive significance from some standpoint. -/
+/-- Some living claim has significance from some standpoint. -/
 def Seed : Prop :=
   ∃ p c, V.living c ∧ V.sig p c
 
@@ -203,12 +203,14 @@ end Valuation
 
 variable {S A C Pos : Type}
 
-/-- Living significance on the frame: living content realized at a configuration is positively
-relevant there. -/
+/-- Living significance on the frame: living content realized at a configuration falls under the
+relevance `positive` there. The parameter's name carries no valence: read from significance
+(`Frame.relevance`), it is significance from every standpoint. -/
 def G0 (F : Frame S A C) (living : C → Prop) (positive : S → C → Prop) : Prop :=
   ∀ s c, living c → F.realized s c → positive s c
 
-/-- Claim-level significance is living significance for the frame, with unindexed positive relevance. -/
+/-- Claim-level significance is living significance for the frame, with relevance read as
+significance from every standpoint. -/
 theorem Valuation.g0 (F : Frame S A C) {V : Valuation Pos C} (all : V.Significant) :
     G0 F V.living (fun _ c => ∀ p, V.sig p c) :=
   fun _ c alive _ p => all p c alive

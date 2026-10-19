@@ -9,7 +9,7 @@
 
 Editable record: [recurrence-without-decidedness.json](recurrence-without-decidedness.json) · [Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-13T12:27:01.789893+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-19T08:07:06+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 <a id="主张-claim"></a>
 ## Claim
@@ -34,7 +34,7 @@ Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 55 theo
 
 The forms that never stop name no step; naming one needs decidedness where it is sought, and asking recurrence of every world needs decidedness from some step on; stated for discrete steps; the readings are the AI's, adopted on Ren's delegation.
 
-- The undecided world (World.undecided) is finite, with arising recurring (World.undecided_world); a law giving ceasing recurring from arising recurring in every finite world decides any proposition Q at undecided Q (World.law_decides), so asking the exact recurrence law of every finite world without decidedness is excluded middle (World.law_iff_em); the forms that never stop ask no decidedness. [Space.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+- The undecided world (World.undecided) is finite, with arising recurring (World.undecided_world); a law giving ceasing recurring from arising recurring in every finite world decides any proposition Q at undecided Q (World.law_decides), so asking the exact recurrence law of every finite world without decidedness is excluded middle (World.law_iff_em); the forms that never stop ask no decidedness. The need comes only from activity being a proposition, which undecided Q sets to an arbitrary Q at one step: a calibration of the representation's logic, a lemma of the decided law, saying nothing further about change. [Space.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
 
 <a id="依赖与关联-dependencies-and-related-results"></a>
 ## Dependencies and related results
@@ -107,4 +107,5 @@ Aliases: `Becoming.holds_on`, `Becoming.comes_once`, `Becoming.ceases_once_of`, 
 - 19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.
 - 19 October 2026, N7 (the reading pass on "correction"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of "correction" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.
 - 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
+- 19 October 2026, R20(b) (chapter and Lean wording say exactly what the Lean shows): the counterexample on World.law_iff_em now says that the need comes from activity being a proposition, so it is a lemma of the decided law. The claim is unchanged.
 - 60 rebinding entries (2026-10-12 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](recurrence-without-decidedness.json).

@@ -15,7 +15,8 @@ supplied.
   unfinished step (`handed_off_progress`), so a completion comes within the initial bound
   (`RenewalBound.renewal_within_rank_bound`), and with correspondence each admitted history forms,
   within the bound, living content absent before (`generation_by_bound`); living significance
-  makes it positively relevant (`positive_ground_by_bound`), and so does the continuation
+  makes it relevant, under `G0`'s relevance parameter, which carries no valence
+  (`positive_ground_by_bound`), and so does the continuation
   condition (`positive_ground_by_bound_of_unrestricted`,
   `revised_generation_by_bound_of_unrestricted`), on runs of any process
   (`generation_by_bound_on_runs`) and on a run of a frame (`Run.novel_by_handoff`,
@@ -92,8 +93,8 @@ theorem positive_ground_by_bound {H Q : Type} (admitted : H → Prop)
   PositiveGround.contingent_generation (boundedFrame appears bound) living admitted before positive
     g0 formed
 
-/-- Under the continuation condition, the formed content is positively relevant read from
-significance. -/
+/-- Under the continuation condition, the formed content falls under the relevance read from
+significance (significance from every standpoint, with no valence). -/
 theorem positive_ground_by_bound_of_unrestricted {H Q F Pos : Type} (admitted : H → Prop)
     (appears : H → Nat → Q → Prop) (living : Q → Prop) (before : H → Q → Prop) (bound : Nat)
     {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) (formation : Q → F)
@@ -162,7 +163,8 @@ theorem Run.novel_by_handoff {S A Q : Type} (M : Frame S A Q) (r : Run M.P) (liv
       (handed_off_progress r.state rank completed localStep handoff) bound 0 initial with
   | ⟨n, _, within, finished⟩ => ⟨n, Nat.zero_add bound ▸ within, correspondence n finished⟩
 
-/-- The same realized witness has positive relevance under the continuation condition. Its form
+/-- The same realized witness falls under the relevance read from significance, under the
+continuation condition. Its form
 is not fixed in advance or across runs. -/
 theorem Run.relevance_by_handoff_of_unrestricted {S A Q F Pos : Type} (M : Frame S A Q)
     (r : Run M.P) (living : Q → Prop) (before : S → Q → Prop) (rank : Nat → S → Nat)
