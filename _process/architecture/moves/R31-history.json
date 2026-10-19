@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "batch": "R31-history",
+  "date": "2026-10-19T21:38:44+00:00",
+  "base_commit": "2d4d30eb7a99f3dccb92f4d4f61a6dda24ede8c0",
+  "tool": "tools/research/moves.py",
+  "files": [
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Order.lean",
+      "sha256": "f14441de1c2dead8301cf465e364811302a649a945f60309cf4f72b6c33f5876",
+      "blob": "79cc70c04a09f39016a65229fc1f2ab3bcc6edd2",
+      "reason": "R31 (20 October 2026): split along its two readings into Becoming.Stuttering, Becoming.Reordering and Becoming.IdleRemoval, declarations and names unchanged; bytes as on main 5c55b36f4",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Naturals.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Naturals.lean",
+      "sha256": "fd0a6d9830d5a2f0eba08331004b9dd0eb19a98438188095bdd0ffe0559ab3dd",
+      "blob": "ce5ab69c443a0a329dd61d38deaf35a2c40acf06",
+      "reason": "R31 (20 October 2026): moved into Becoming.Prelude with its names (namespace Naturals); bytes as on main 5c55b36f4",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Naturals.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListTests.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ListTests.lean",
+      "sha256": "ae36d0df480bb1b8443d2944bdf35b1c08c80b54c99cec2b883118f45b153616",
+      "blob": "a3e1c7d13f9a9103d0cb1356b5de7494bdcf12bf",
+      "reason": "R31 (20 October 2026): moved into Becoming.Prelude with its names (namespace ListTests); bytes as on main 5c55b36f4",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListTests.lean"
+    }
+  ],
+  "keep_references": false,
+  "rewritten": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "old_sha256": "281f77c187f6c0b8dfd01f86565959223fde0a8cc237a8498e30e01b81ee6db9",
+      "new_sha256": "b3d0b5bd9be7f15eeb8ee6efec017aa860477f87033e9fd738319b2b33538ecc",
+      "references": 1
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md",
+      "old_sha256": "33ee8c6bb391d595dff47c21b4193ea9b0bb3b305e1f0e4e781da0ed192d6922",
+      "new_sha256": "dcb6513a4b04e5f19df8d0b44b5559655a6c37d1016b5be546304d06b8bb24f8",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
+      "old_sha256": "cd7f78587091a2cd7aac733da5ba71a6c9fe445d87744de9b3b59ca74295887b",
+      "new_sha256": "7b22d6c1865a6aa25dc2a16e76aeab35d44d721091d6383dc55320c49b483519",
+      "references": 3
+    },
+    {
+      "path": "theories/becoming/results/data/arguments-m-z.json",
+      "old_sha256": "e6adc180c6003e2e2ee1963f4aac9490e748d19123faa0532d8ff4a73246cdd2",
+      "new_sha256": "1e61fdeeace07117f588be6f0902142654ba55a674e73669b6f1b103acf9cad1",
+      "references": 1
+    },
+    {
+      "path": "theories/becoming/results/records/exchanges-commute-unless-joined.json",
+      "old_sha256": "4b91b0f2231c75e448466648ea49a517acd3a2a2295bf10a667df4200bcb3883",
+      "new_sha256": "01027170f757a5ba99b7ad0681e6ce85fe78b5b10be8494bffdafca8066b044e",
+      "references": 5
+    },
+    {
+      "path": "theories/becoming/results/records/least-footprint-where-idleness-decided.json",
+      "old_sha256": "d1d58f59f17c019ef798f8f41681ef394548aa974819d9c4c1023dc9589438a3",
+      "new_sha256": "a722b3b4f774fefa6d8b49cf49d8aca4bd37516cc64df631562802093defe528",
+      "references": 3
+    },
+    {
+      "path": "theories/becoming/results/records/normal-forms-need-decided-apartness.json",
+      "old_sha256": "170ed4480eed022b5e594ac9949660fd92891707d010d3eef25933c36d6c7f3c",
+      "new_sha256": "2ebe4350503475f0336378b5cac4d641bc52184783281f67392bf63065e84b93",
+      "references": 3
+    },
+    {
+      "path": "theories/becoming/results/records/only-the-order-of-change-registers.json",
+      "old_sha256": "5bd62b7061c09fdc05fdfa9459cecf29d0d645e1d2bafdad283f8800d2911ca3",
+      "new_sha256": "104b16ed542c0cf36ed45fb03e245e50dd4547b9c75c0a935dea8e76678712d7",
+      "references": 5
+    },
+    {
+      "path": "theories/becoming/results/records/order-of-exchanges-is-the-invariant.json",
+      "old_sha256": "9776bcf2f16d698316005043596e998d75886e12fa7b0983678e2bd2f7e9db46",
+      "new_sha256": "c25b7bc2166dd3bfa9a195f198deec13ab8747254f4c8420c3afd2da9ff899c4",
+      "references": 5
+    }
+  ],
+  "history_roots": [
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history"
+  ],
+  "generated_pages_to_rerender": [
+    "RESULTS.md",
+    "theories/becoming/results/ARGUMENTS-M-Z.md",
+    "theories/becoming/results/LEAN-DECLARATIONS.md",
+    "theories/becoming/results/LEAN-INDEX.md",
+    "theories/becoming/results/data/lean-index.json",
+    "theories/becoming/results/data/source-index.json",
+    "theories/becoming/results/lean-declarations/abstraction.md",
+    "theories/becoming/results/lean-declarations/becoming-core.md",
+    "theories/becoming/results/records/exchanges-commute-unless-joined.md",
+    "theories/becoming/results/records/least-footprint-where-idleness-decided.md",
+    "theories/becoming/results/records/normal-forms-need-decided-apartness.md",
+    "theories/becoming/results/records/only-the-order-of-change-registers.md",
+    "theories/becoming/results/records/order-of-exchanges-is-the-invariant.md"
+  ],
+  "verification_errors": []
+}

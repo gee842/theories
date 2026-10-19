@@ -309,6 +309,15 @@
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhaseTracesInherited.lean"
     },
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListTests.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ListTests.lean",
+      "sha256": "ae36d0df480bb1b8443d2944bdf35b1c08c80b54c99cec2b883118f45b153616",
+      "blob": "a3e1c7d13f9a9103d0cb1356b5de7494bdcf12bf",
+      "batch": "R31-history",
+      "reason": "R31 (20 October 2026): moved into Becoming.Prelude with its names (namespace ListTests); bytes as on main 5c55b36f4",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListTests.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/MoveOutcomeProcessesInherited.lean",
       "sha256": "9d96a2106cf189608a60911389582a596a910931ec057a8540972ee3c6369a23",
@@ -316,6 +325,24 @@
       "batch": "F3-sweep",
       "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
       "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Naturals.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Naturals.lean",
+      "sha256": "fd0a6d9830d5a2f0eba08331004b9dd0eb19a98438188095bdd0ffe0559ab3dd",
+      "blob": "ce5ab69c443a0a329dd61d38deaf35a2c40acf06",
+      "batch": "R31-history",
+      "reason": "R31 (20 October 2026): moved into Becoming.Prelude with its names (namespace Naturals); bytes as on main 5c55b36f4",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Naturals.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Order.lean",
+      "sha256": "f14441de1c2dead8301cf465e364811302a649a945f60309cf4f72b6c33f5876",
+      "blob": "79cc70c04a09f39016a65229fc1f2ab3bcc6edd2",
+      "batch": "R31-history",
+      "reason": "R31 (20 October 2026): split along its two readings into Becoming.Stuttering, Becoming.Reordering and Becoming.IdleRemoval, declarations and names unchanged; bytes as on main 5c55b36f4",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
     },
     {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean",
