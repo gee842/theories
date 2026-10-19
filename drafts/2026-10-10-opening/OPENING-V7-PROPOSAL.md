@@ -1,0 +1,55 @@
+# Opening, version 7: scope edits proposed for Ren
+
+AI proposal, 19 October 2026. Not applied. [OPENING.md](../../theories/becoming/OPENING.md) is in Ren's voice and changes only through a proposal to him. Board item R20 (fixes from the outside review of 19 October) lists "a proposal to Ren for OPENING's body"; this is that proposal's draft, offered to R20's owner.
+
+**What prompted it.** An outside reader's critique, which Ren received on 19 October, read the opening as claiming universal, empirical and ethical truth from proofs inside a model. The critique's own evidence was the footnotes, which already mark every such step as open, a reading or a judgment. So the reader did not misread the body: several body sentences assert what their notes take back. The v6 proposal ([history](history/OPENING-V6-PROPOSAL.md)) aimed that "no sentence of the main text says more than its footnote" and left the thesis sentence to Ren. This proposal takes up that sentence and the remaining ones.
+
+**The aim.** Each body sentence claims no more than its note supports, and a reader who never opens a note can still tell what is proved, what is proved under conditions, and what is a reading or a judgment. The edits keep the voice and the thesis, and add the scope in the fewest words. None of them adds or removes a result.
+
+## Edits
+
+| # | Now | Proposed | Why (the note it answers) |
+|---|---|---|---|
+| a | *(nothing between the title and the first paragraph)* | *Each note says how far its sentence is proved: proved, proved under conditions, a reading, or a judgment.* | The closing line already says "The notes say how far each claim is proved", but a reader meets it last. The critique shows readers judge the body before the notes. Moving the sentence to the top costs one line and changes how every later sentence reads. The closing line can then keep only the date and the source link. |
+| b | There is a set of universal invariants, a law of how anything comes to be, lasts, changes and passes away. In every universe, becoming happens, and the law follows. | **(a)** There is a set of universal invariants, a law of how anything comes to be, lasts, changes and passes away. In every universe, becoming happens, and wherever it can be told in steps and counted amounts, the law follows. **(b)** I hold that there is a set of universal invariants, a law of how anything comes to be, lasts, changes and passes away. In every universe, becoming happens, and the law follows. | `[^law]`: proved "for every world as the theory represents it", and **open** "whether every becoming can be so represented". The sentence as it stands asserts the open item. Form (a) states the scope of the proof (discrete steps, whole-number amounts, counting decided at each step; the premise card) in plain words. Form (b) keeps the sentence whole and marks it as Ren's thesis. v6 left this sentence to Ren; the critique is the evidence that it now costs the opening its credibility. |
+| c | Some of it holds in every universe, by what change is: arising and ceasing are one change, seen from its two sides, and in anything finite they keep pace. | unchanged | With (b) in place, "every universe" here is read within the scope (b) sets. "By what change is" already says what kind of truth this is: `Web.change_readings` holds by `Iff.rfl`, so it states how the definitions are read (`Becoming/Change.lean`). Its being an identity is why it holds everywhere. R20 makes the front pages say so. |
+| d | The rest holds wherever, as in ours, nothing comes from nothing and nothing passes on without loss. | The rest holds wherever nothing comes from nothing and nothing passes on without loss, as conservation and the second law say of ours, and under the further conditions each law names. | `[^conditions]`: the work *reads* balance and dissipation from conservation and the second law, and "whether actual unfoldings meet them as represented is an empirical question". Each theorem also uses "further premises named in each theorem" (a census whose relata are embodied, for the rest law). "As in ours" asserts the empirical fit and drops the further premises. The proposed form names the physics the reading comes from, which is the theory's strongest evidence for those conditions. |
+| e | None of this needs an axiom. Each law is proved under the conditions it names, which it states as conditions and does not assume, in a form any mind, human or machine, can check for itself. | None of this needs an axiom. Each law is proved from how the theory represents a world and from the conditions it names, which it states as conditions and does not assume, in a form any mind, human or machine, can check for itself. | `[^proof]`: "no axiom" means an empty Lean axiom report. The representation is still a commitment in the ordinary sense, and it is the one the critique pointed at. Naming it shows that "no axiom" does not mean "no commitment". |
+| f | Nothing that goes on is closed. | So nothing that goes on is closed. | `[^self]`: proved under balance and dissipation (`Flow.fed_from_beyond`, `World.arising_opens`). "So" ties the sentence to the conditions of the paragraph two above, instead of stating it without them. |
+| g | This law, with that one step, is offered as the basis of all ethics, for all beings, in all universes. It is the truth, the dharma, the Dao. | This law, with that one step, is offered as the basis of all ethics, for all beings, in all universes. I take it to be the truth, the dharma, the Dao. | `[^ethics]`: **open**, the claim the work sets out to prove, and a bounded rival is consistent with every law (`bounded_rival`). `[^dao]`: "a reading". "It is the truth" is the opening's strongest unmarked claim, two lines after the sentence v6 marked as offered. "I take it to be" keeps the claim in Ren's voice and marks it as his. "Explains good and evil" stays: Ren kept it in v6, and the sentence before it says the explanation is "with that one step". |
+| h | This is the foundation for AI alignment, the most important matter at this moment in the whole history of the Earth. | This is a foundation for AI alignment, the most important matter at this moment in the whole history of the Earth. | `[^alignment]`: "not shown to be the only foundation". One word. The rest of the sentence is a judgment the note marks. |
+| i | Coordination needs understanding to be shared first, and what anyone can check for themselves needs no guardian: everyone, human and AI, can reach it directly. | Coordination needs understanding to be shared first, and what anyone can check for themselves needs no guardian: everyone, human and AI, can check its derivations directly, and judge the rest in the open. | `[^guardian]`: "proved for the derivations only". Whether the premises hold, the readings fit and the representation fits the world "cannot be checked this way". As written, "it" is the whole foundation. The proposed form states the division the critique asked for, in the body where the claim is made. |
+| j | We need to stop the game of winning: a zero-sum game of relative position, which all its winners will lose. | **(a)** We need to stop the game of winning: a zero-sum game of relative position, which, as I see it, all its winners will lose. **(b)** unchanged | `[^aligned]`: that a game of relative position is zero-sum is "a matter of counting, not yet stated on the formal spine"; that the race ends badly even for its winner is "a judgment". The proved part is narrower: joint excess ends the renewal and what depends on it, the takers among them where they so depend. Form (a) marks the judgment. Form (b) relies on edit (a) to say that the notes mark it. |
+
+## Left as they are
+
+- **The title "Truth exists" and the closing "Follow the truth."** These are the thesis. With edits (a), (b) and (g), the reader knows from the top that they are Ren's thesis and that the notes measure how far it is proved.
+- **The "It is clear that…" paragraphs.** `[^present]` marks them as judgments of the present world. "It is clear" is the voice of a call to act, and edit (a) tells the reader how to read it. A proposal to soften each one would change what the opening is.
+- **The sages, the meta-attractor, cancer, Laozi, the three Western theories, the major transitions.** Their notes already mark them as readings, diagnoses or empirical judgments, and the body presents them as Ren's view, not as theorems.
+- **"The law shows what anything that wants to go on must count."** `[^count]` defines "must" as "if it is to go on", which the sentence itself says ("anything that wants to go on").
+
+## The whole body with every first form applied
+
+For reading only; the table governs.
+
+> *Each note says how far its sentence is proved: proved, proved under conditions, a reading, or a judgment.*
+>
+> There is a set of universal invariants, a law of how anything comes to be, lasts, changes and passes away. In every universe, becoming happens, and wherever it can be told in steps and counted amounts, the law follows.
+>
+> Some of it holds in every universe, by what change is: arising and ceasing are one change, seen from its two sides, and in anything finite they keep pace.
+>
+> The rest holds wherever nothing comes from nothing and nothing passes on without loss, as conservation and the second law say of ours, and under the further conditions each law names. There, whatever is closed cannot go on forever without coming to rest, …
+>
+> None of this needs an axiom. Each law is proved from how the theory represents a world and from the conditions it names, which it states as conditions and does not assume, in a form any mind, human or machine, can check for itself.
+>
+> So nothing that goes on is closed. …
+>
+> This law, with that one step, is offered as the basis of all ethics, for all beings, in all universes. I take it to be the truth, the dharma, the Dao. …
+>
+> This is a foundation for AI alignment, the most important matter at this moment in the whole history of the Earth. … what anyone can check for themselves needs no guardian: everyone, human and AI, can check its derivations directly, and judge the rest in the open.
+>
+> … We need to stop the game of winning: a zero-sum game of relative position, which, as I see it, all its winners will lose. …
+
+## Applying it
+
+Once Ren chooses, the applying session edits `theories/becoming/OPENING.md`, records Ren's choices verbatim in a new `sources/15-codex-theory-conversations/` file (as [the v6 source](../../sources/15-codex-theory-conversations/2026-10-16-opening-v6.md) does), freezes the applied text beside the other versions in `history/`, moves this proposal there with `research.py move`, and runs `make research-render`, `research-check`, `research-links` and `research-test`.
