@@ -167,6 +167,7 @@ import Becoming.Grains
 import Becoming.Postponement
 import Becoming.Novelty
 import Becoming.Reading
+import Becoming.ExchangePremises
 import Becoming.Readings
 import Becoming.Coupling
 import Becoming.Sensitivity
@@ -1716,6 +1717,17 @@ readings of the unfolding (`Becoming.Labelled`).
   so the four premises tying readings of one exchange hold with no premise, and requirement is a
   counterfactual of the law that no course fixes. The readings are the AI's, adopted on Ren's
   delegation of 15 October 2026.
+* `Becoming.ExchangePremises` (L4): which of the remaining premises a reading of the exchange
+  settles, with no premise beyond the hypotheses named. The census is a reading wherever a step's
+  exchange lies within finitely many relata: the relata that exchange are listed with no decision
+  procedure, every finite world has a census with its rest counted, no world read off an exchange
+  fails a census at any step, and asking it of every flow is the limited principle of omniscience;
+  enclosure is not itself read off, and a world read off a law that is never enclosed still has one.
+  Dissipation, embodiment and bounded transmission are states of the law of exchange: read off laws,
+  with the rest counted and idle and the four tying premises holding, each is met by one world and
+  failed by another; with the rest counted, embodiment is closure and no dormancy. Requirement read
+  as necessary response over a relation leaving several exchanges open gives activity needing
+  support on every run; read as possible response it does not.
 * `Becoming.Readings` (L4): one unfolding, read in context, with no premise. The readings in context
   of a run are always one world of indexed claims, with no gluing; a description free of context is a
   gluing; balance is the gluing of the standing's and the exchange's readings of change, and with the
