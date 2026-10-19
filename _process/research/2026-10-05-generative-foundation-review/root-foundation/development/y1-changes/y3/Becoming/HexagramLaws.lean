@@ -1,4 +1,5 @@
 import Becoming.HexagramPlaces
+import Becoming.Commuting
 
 /-!
 # Hexagram laws: the nuclear law, orbits, turning lines, symmetries, the counter
@@ -36,9 +37,10 @@ them, the chapter on the 易传 maps it.
   (`Symmetry`, `Symmetry.act`) compose as a group in which each is its own inverse and any two
   commute (`Symmetry.act_comp`, `Symmetry.comp_self`, `Symmetry.comp_comm`). The nuclear law
   commutes with each (`nuclear_complement`, `nuclear_reverse`, `nuclear_act`), so each takes every
-  run of it to a run of it (`nuclear_run_act`). Changing every line leaves nothing as it is
-  (`complement_ne`), so the runs from a configuration and from its complement never meet
-  (`run_complement_apart`). A class is named by its member of least binary value (`classOf`), and
+  run of it to a run of it (`nuclear_run_act`, by `Law.Commutes.iterate`). Changing every line
+  leaves nothing as it is (`complement_moves`), so the runs from a configuration and from its
+  complement never meet (`run_complement_apart`), the instance of what a commuting law keeps apart
+  (`Law.Commutes.apart`). A class is named by its member of least binary value (`classOf`), and
   two hexagrams are in one class exactly where a symmetry takes one to the other (`classOf_eq_iff`).
   There are twenty classes, eight of two and twelve of four (`classes`, `class_census`). They are a
   lumping the nuclear law goes alike across (`classes_lumped`, `classes_goAlike`); the law of waxing
@@ -126,12 +128,6 @@ theorem order_nodup : order.Nodup := nodup_of_distinctb rfl
 
 /-- All lines unbroken (乾). -/
 def allUnbroken : Hexagram := ⟨true, true, true, true, true, true⟩
-
-/-- A map that commutes with a law takes its orbits to orbits. -/
-theorem orbit_commutes {next f : Hexagram → Hexagram} (comm : ∀ s, next (f s) = f (next s))
-    (s : Hexagram) : ∀ n, Law.orbit next (f s) n = f (Law.orbit next s n)
-  | 0 => rfl
-  | n + 1 => (congrArg next (orbit_commutes comm s n)).trans (comm _)
 
 /-- A configuration a law leaves as it is stays along its run. -/
 theorem orbit_still {next : Hexagram → Hexagram} {s : Hexagram} (still : next s = s) :
@@ -472,11 +468,6 @@ theorem reverse_reverse : ∀ s : Hexagram, reverse (reverse s) = s
 theorem reverse_complement_reverse : ∀ s : Hexagram, reverse (complement (reverse s)) = complement s
   | ⟨_, _, _, _, _, _⟩ => rfl
 
-/-- **Changing every line leaves nothing as it is**, so no class has one member. -/
-theorem complement_ne : ∀ s : Hexagram, complement s ≠ s
-  | ⟨true, _, _, _, _, _⟩ => fun h => Bool.noConfusion (congrArg Hexagram.l1 h)
-  | ⟨false, _, _, _, _, _⟩ => fun h => Bool.noConfusion (congrArg Hexagram.l1 h)
-
 /-- The four symmetries of a hexagram: keeping it, changing every line (錯), turning it over (綜),
 and both (錯綜). -/
 inductive Symmetry where
@@ -552,16 +543,17 @@ theorem nuclear_act : ∀ (g : Symmetry) (s : Hexagram), nuclear (g.act s) = g.a
   | .turn, s => nuclear_reverse s
   | .both, s => (nuclear_complement (reverse s)).trans (congrArg complement (nuclear_reverse s))
 
-/-- **So each takes every run of the nuclear law to a run of it.** -/
+/-- **So each takes every run of the nuclear law to a run of it** (`Law.Commutes.iterate`). -/
 theorem nuclear_run_act (g : Symmetry) (s : Hexagram) (n : Nat) :
     (Law.run nuclear (g.act s)).state n = g.act ((Law.run nuclear s).state n) :=
-  orbit_commutes (nuclear_act g) s n
+  Law.Commutes.iterate (nuclear_act g) s n
 
-/-- **The runs from a configuration and from its complement never meet**: at every step they are
-each other's complements, and no configuration is its own (`complement_ne`). -/
+/-- **The runs from a configuration and from its complement never meet**: the nuclear law commutes
+with the complement, which moves every configuration, so this is what a commuting law keeps apart
+(`Law.Commutes.apart`). -/
 theorem run_complement_apart (s : Hexagram) (n : Nat) :
     (Law.run nuclear (complement s)).state n ≠ (Law.run nuclear s).state n :=
-  fun meet => complement_ne _ ((nuclear_run_act .change s n).symm.trans meet)
+  Law.Commutes.apart nuclear_complement complement_moves s n
 
 /-- The binary value of a hexagram, line 1 the lowest place. -/
 def binaryValue (s : Hexagram) : Nat :=

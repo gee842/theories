@@ -544,7 +544,7 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "0e68e6bc9c2fbd153719ebe06b433007523ca2d90e2a3b14da62ff1572dd8172"
+      "sha256": "6765bc9e071aad61e51ea9e5aef182cbc97b64a48c0fb5b56bdc7cfecdc04684"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
@@ -562,13 +562,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "b5bd1fa61bd0b236e48a84c198e1b5ac03c292c772d7072a38d40688f1a72b8b"
+      "sha256": "4ebebd483628097c348bac4b1f04e9065041e22bc9e47d86ddc60eb44b707f71"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "b8461fa95b360591ec8cab5dcc24b8b4ece287611fb26ae20039e540b16d2c74"
+      "sha256": "b16b6506806af57b61b098d014126b21c22903a314fc8ae9d9fed943be168a12"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -673,6 +673,10 @@
     {
       "en": "19 October 2026, SG (junctures, commuting laws and the third value): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: SG added its study section; THE-THEORY-OF-BECOMING.md: SG added the section 1 paragraphs on where a configuration is lost and what a commuting law keeps apart, the section 3 item on the liar with a third value, glossary rows, section 8.2 and 8.3 items, and revised the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，SG（关节、交换之律与第三值）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG: YI-ZHUAN-AND-BECOMING.md, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 states two of its laws as instances of SG's Law.Commutes.iterate and Law.Commutes.apart; study section 198 and the chapter on the 易传 say so). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，YI-ZHUAN-AND-BECOMING.md、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向（Y3 把其两条律写作 SG 的 Law.Commutes.iterate 与 Law.Commutes.apart 之实例）。论断不变。"
     }
   ]
 }

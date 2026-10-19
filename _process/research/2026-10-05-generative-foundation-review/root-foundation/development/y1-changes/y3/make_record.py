@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Write Y3's record hexagram-world-laws and update the records of Y1 (hexagrams-on-the-spine) and Y2
 (place-relations-in-context):
-  python3 -B make_record.py CORE_RECEIPT STUDY_SECTION DECISION
+  python3 -B make_record.py CORE_RECEIPT STUDY_SECTION DECISION [--follow-up]
+With --follow-up (after SG's Becoming.Commuting landed and cite_commuting.py ran), the record is written again with its
+history kept and a note added, and Y1's and Y2's records are only re-pointed after reading the change.
 
 The receipt is checked against the current bytes of Becoming/HexagramLaws.lean and of every module the record binds,
 every declaration of the module is listed in exactly one law, every declaration the record cites is in the receipt, and
@@ -30,6 +32,7 @@ CHAPTER = 'theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md'
 SOURCE = 'sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md'
 PROVENANCE = 'sources/zhouyi-yizhuan/PROVENANCE.json'
 core_id, section, decision = sys.argv[1], sys.argv[2], sys.argv[3]
+FOLLOW_UP = '--follow-up' in sys.argv[4:]
 core_receipt = f'{PKG}/becoming-checks/{core_id}/verification.json'
 NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
 BOUND = ('HexagramLaws', 'HexagramPlaces', 'Hexagrams', 'Learning', 'Mechanism', 'Attraction', 'Branching', 'Recurrence',
@@ -49,8 +52,10 @@ assert not any(module['axiom_dependencies'].values())
 own = {d['name'] for d in module['declarations']}
 # Where SG's Becoming.Commuting landed first, cite_commuting.py stated the commuting laws as its instances.
 COMMUTING = 'Becoming.Hexagram.orbit_commutes' not in own
+assert COMMUTING or not FOLLOW_UP, 'the follow-up needs cite_commuting.py applied'
 if COMMUTING:
     assert core['source_sha256']['Becoming.Commuting'] == sha(f'{PKG}/Becoming/Commuting.lean')
+    BOUND = BOUND + ('Commuting',)
 audited = {d['name'] for m in core['modules'] for d in m['declarations']}
 STUDY_TEXT = (ROOT / STUDY).read_text()
 assert re.search(rf'^## {section}\. Laws of the hexagram world beyond waxing and waning \(Y3\)$', STUDY_TEXT, re.M), section
@@ -63,7 +68,7 @@ y3_passages = [p for p in passages if any(d.startswith('Becoming.Hexagram.') and
 
 
 def h(*names):
-    out = ['Becoming.Hexagram.' + n for n in names if not (COMMUTING and n == 'orbit_commutes')]
+    out = ['Becoming.Hexagram.' + n for n in names if not (COMMUTING and n in ('orbit_commutes', 'complement_ne'))]
     missing = [n for n in out if n not in own]
     assert not missing, missing
     return out
@@ -448,6 +453,19 @@ record = {
          'zh': f'2026年10月19日：新增（Y3），SSBX 审读之 H1 至 H5 在纯核心中证明；研究第 {section} 节，决定 {decision}。'},
     ],
 }
+if FOLLOW_UP:
+    old = json.loads((RECORDS / 'hexagram-world-laws.json').read_text())
+    record['history'] = old['history'] + [{
+        'en': f'19 October 2026, Y3 follow-up after SG: nuclear_run_act and run_complement_apart are stated as instances '
+              f'of Law.Commutes.iterate and Law.Commutes.apart (Becoming.Commuting, with complement_moves), and Y3\'s '
+              f'own orbit_commutes, the iterate proved again for hexagrams, and complement_ne, which said what '
+              f'complement_moves says, are dropped; statements unchanged; {module["theorems"]} theorems, {len(own)} declarations, empty axiom '
+              f'reports, core receipt {core_id}; the dependency what-a-commuting-law-keeps-apart added and the general '
+              f'law removed from the next delta (study section {section}).',
+        'zh': f'2026年10月19日，Y3 补记（SG 之后）：nuclear_run_act 与 run_complement_apart 写作 Law.Commutes.iterate 与 '
+              f'Law.Commutes.apart 的实例（Becoming.Commuting，及 complement_moves），Y3 自己为卦重证一遍的 orbit_commutes '
+              f'与所说即 complement_moves 之 complement_ne 删去；陈述不变；{module["theorems"]} 条定理，{len(own)} 项声明，公理报告为空，'
+              f'核心回执 {core_id}；加上依赖 what-a-commuting-law-keeps-apart，下一步不再列此一般律（研究第 {section} 节）。'}]
 assert len(record['statement']['en']) <= 300 and len(record['statement']['zh']) <= 150, (
     len(record['statement']['en']), len(record['statement']['zh']))
 (RECORDS / 'hexagram-world-laws.json').write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
@@ -463,6 +481,22 @@ def repoint(rec, reason_en, reason_zh):
         rec['related'].append({'id': 'hexagram-world-laws', 'detail': {'en': reason_en, 'zh': reason_zh}})
     return changed
 
+
+if FOLLOW_UP:
+    for path in (RECORDS / 'place-relations-in-context.json', RECORDS / 'hexagrams-on-the-spine.json'):
+        rec = json.loads(path.read_text())
+        changed = repoint(rec, '', '')
+        if changed:
+            rec['history'].append({
+                'en': f'19 October 2026, Y3 follow-up after SG: {", ".join(changed)} re-pointed after reading the change '
+                      f'(Y3 states two of its laws as instances of SG\'s Law.Commutes.iterate and Law.Commutes.apart; '
+                      f'study section {section} and the chapter on the 易传 say so). The claim is unchanged.',
+                'zh': f'2026年10月19日，Y3 补记（SG 之后）：读过改动后，{"、".join(changed)} 重新指向（Y3 把其两条律写作 SG 的 '
+                      f'Law.Commutes.iterate 与 Law.Commutes.apart 之实例）。论断不变。'})
+            path.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + '\n')
+        print(path.name, 're-pointed:', changed)
+    print('written', len(own), 'declarations in', len(laws), 'laws (follow-up)')
+    sys.exit(0)
 
 # Y2's record: 互 and the cast, listed as its next delta, are done here (stated on the configurations, not its sites).
 y2_path = RECORDS / 'place-relations-in-context.json'

@@ -2019,8 +2019,8 @@
     "argument_en": "The configurations the 周易 describes (six two-valued lines, the change of a line, the law of waxing and waning, the received order) are a world of the pure core, on which the spine's laws are checked; the relations of the places (正, 應, 比, 中) are contextual readings at their sites; the nuclear law 互, the cast of turning lines, the four symmetries of 錯 and 綜, the counter and the six orbits of waxing and waning are laws on that world; every law is read along the runs of the spine. 69 passages of the 易传, the classic and two commentaries, quoted from preserved revisions, are each mapped to declarations as agreement, exact scope or divergence, and four censuses check every statement of a kind about the places in the 彖 and the 小象.",
     "significance_zh": "古典文本与理论的关系成为库中可检查的部分；相分之处保留，使原典能反过来检验理论。",
     "significance_en": "The relation of a classical text to the theory becomes a checked part of the library, with the divergences kept so that the text can challenge the theory.",
-    "scope_zh": "312 条 Lean 定理，公理报告为空；读法为 AI 读法（D47、D50、D51）；不解释周易整体，不说作者意谓这些律；吉凶、取象、序卦之理、位之等级与占筮不在其中。",
-    "scope_en": "312 Lean theorems with empty axiom reports; the readings are the AI's (D47, D50, D51). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons, the ranks of the places and divination are outside it.",
+    "scope_zh": "310 条 Lean 定理，公理报告为空；读法为 AI 读法（D47、D50、D51）；不解释周易整体，不说作者意谓这些律；吉凶、取象、序卦之理、位之等级与占筮不在其中。",
+    "scope_en": "310 Lean theorems with empty axiom reports; the readings are the AI's (D47, D50, D51). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons, the ranks of the places and divination are outside it.",
     "next_zh": "建议：王弼《周易略例》存入后，初上无位与卦主之读；爻辞与大象的普查；与程颐、朱熹之读法比较；与刻本对校。",
     "next_en": "Proposed: 王弼's readings (初上无位, the ruling line) once the 《周易略例》 is preserved; censuses of the line texts and the 大象; comparison with the readings of 程頤 and 朱熹; collation with a printed edition.",
     "lean": [
@@ -2034,7 +2034,7 @@
       "sources/zhouyi-yizhuan/PROVENANCE.json",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md"
     ],
-    "source_sha256": "0e68e6bc9c2fbd153719ebe06b433007523ca2d90e2a3b14da62ff1572dd8172"
+    "source_sha256": "6765bc9e071aad61e51ea9e5aef182cbc97b64a48c0fb5b56bdc7cfecdc04684"
   },
   {
     "id": "zero-axiom-practical-judgment",

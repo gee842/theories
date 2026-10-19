@@ -111,8 +111,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T102354.824114Z）：Becoming.Commuting 的 28 项声明（25 项定理）公理报告为空；检查器并核对核心纯净。由认领 SG 的会话在草稿中证明；作者审查见研究第 199 节；未经人的独立审查。"
   },
   "next_delta": {
-    "en": "Groups of symmetries and 互 (Y3, Becoming.HexagramLaws); an independent review.",
-    "zh": "对称群与互（Y3，Becoming.HexagramLaws）；独立审查。"
+    "en": "Groups of symmetries (the four of 錯 and 綜, which 互 commutes with, in hexagram-world-laws); an independent review.",
+    "zh": "对称群（互与之皆交换的錯綜四对称，见 hexagram-world-laws）；独立审查。"
   },
   "correspondence": {
     "en": "The earlier 义理·拓扑 (§四, §九) argues that a fixed-point-free symmetry is never erased by a law keeping it, proved there for instances only (SSBX review §3.2, G2); its table equating Borsuk–Ulam with the second law is not taken. Reading the AI's (D52); Ren's words are provenance, not warrant.",
@@ -274,6 +274,13 @@
         "en": "Relabel.Equivariant.tied keeps a tie through an exchange in selection; Law.Commutes.keeps_fixed is the fixed case for a law of change, and Law.Commutes.apart the free case. No instance theorem.",
         "zh": "Relabel.Equivariant.tied 在选择中经对换保持并列；Law.Commutes.keeps_fixed 是变化之律的固定情形，Law.Commutes.apart 是自由情形。无实例定理。"
       }
+    },
+    {
+      "id": "hexagram-world-laws",
+      "detail": {
+        "en": "The nuclear law 互 is an instance: nuclear_run_act is Law.Commutes.iterate with nuclear_act, and run_complement_apart is Law.Commutes.apart with nuclear_complement and complement_moves.",
+        "zh": "互是一例：nuclear_run_act 是 Law.Commutes.iterate 配 nuclear_act，run_complement_apart 是 Law.Commutes.apart 配 nuclear_complement 与 complement_moves。"
+      }
     }
   ],
   "references": [
@@ -354,12 +361,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b5bd1fa61bd0b236e48a84c198e1b5ac03c292c772d7072a38d40688f1a72b8b"
+      "sha256": "4ebebd483628097c348bac4b1f04e9065041e22bc9e47d86ddc60eb44b707f71"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b8461fa95b360591ec8cab5dcc24b8b4ece287611fb26ae20039e540b16d2c74"
+      "sha256": "b16b6506806af57b61b098d014126b21c22903a314fc8ae9d9fed943be168a12"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SSBX-REPOSITORY-REVIEW.md",
@@ -380,6 +387,14 @@
     {
       "en": "19 October 2026: added (SG, general law G2 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated (\"please take a look of this … many insights can be integrated\", abridged as quoted with the review); study section 199.",
       "zh": "2026年10月19日：新增（SG，早期《生生不息》仓库审读的一般律 G2），按 Ren 要求审读早期仓库中可并入者（“please take a look of this … many insights can be integrated”，节录，随审读引用）；研究第 199 节。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up: Becoming.HexagramLaws states its two laws of 互 under the symmetries as instances of Law.Commutes.iterate and Law.Commutes.apart (study section 198), so the related record hexagram-world-laws is named and 互 leaves the next delta; groups of symmetries stay. The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记：Becoming.HexagramLaws 把互在诸对称下的两条律写作 Law.Commutes.iterate 与 Law.Commutes.apart 的实例（研究第 198 节），故列出相关记录 hexagram-world-laws，互从下一步中移出；对称群仍是下一步。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198; THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.",
+      "zh": "2026年10月19日，Y3 补记（SG 之后）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

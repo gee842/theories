@@ -2,10 +2,12 @@
 """Y3 (19 October 2026): re-point record references to files the Y3 landing changed, after reading the change, with a
 history note naming each file. Only references that matched the file at BASE are re-pointed; a reference already stale
 at BASE is left as it was. A changed file that a re-pointed reference names and WHAT does not describe stops the script
-before anything is written. usage (from the landing checkout's root): python3 -B rehash_refs.py BASE"""
+before anything is written. usage (from the landing checkout's root): python3 -B rehash_refs.py BASE [--follow-up]
+With --follow-up, the descriptions and notes are those of Y3's follow-up after SG."""
 import glob, hashlib, json, subprocess, sys
 
 BASE = sys.argv[1]
+FOLLOW_UP = '--follow-up' in sys.argv[2:]
 changed = set(subprocess.run(['git', 'diff', '--name-only', BASE], capture_output=True, text=True).stdout.split())
 h = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
 at_base = lambda p: hashlib.sha256(subprocess.run(['git', 'show', BASE + ':' + p], capture_output=True).stdout).hexdigest()
@@ -32,6 +34,19 @@ WHAT = {
     f'{PKG}/check_becoming.py': 'Y3 added Becoming.HexagramLaws to CORE and its scope text',
     f'{PKG}/becoming-verification.json': 'the current receipt is the Y3 run',
 }
+if FOLLOW_UP:
+    WHAT = {
+        'theories/becoming/chapters/THE-THEORY-OF-BECOMING.md':
+            'the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt',
+        'theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md':
+            'the Y3 follow-up names Law.Commutes.iterate and Law.Commutes.apart in the symmetries bullet and the count',
+        RF + 'BECOMING-RENEWAL-READING.md': 'the Y3 follow-up after SG added a paragraph to section 198',
+        'theories/becoming/results/data/arguments-m-z.json': 'the Y3 follow-up updated the theorem count of the entry',
+        f'{PKG}/becoming-verification.json': 'the current receipt is the Y3 follow-up run',
+    }
+LABEL = ('Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting)' if FOLLOW_UP
+         else 'Y3 (Becoming.HexagramLaws)')
+LABEL_ZH = 'Y3 补记（SG 之后）' if FOLLOW_UP else 'Y3（Becoming.HexagramLaws）'
 plan = []
 for f in sorted(glob.glob('theories/becoming/results/records/*.json')):
     if f.endswith(('hexagrams-on-the-spine.json', 'place-relations-in-context.json', 'hexagram-world-laws.json')):
@@ -51,9 +66,9 @@ for f, d, hits in plan:
     names = [p.rsplit('/', 1)[-1] for p in paths]
     why = '; '.join(f'{p.rsplit("/", 1)[-1]}: {WHAT[p]}' for p in paths)
     d['history'].append({
-        'en': f'19 October 2026, Y3 (Becoming.HexagramLaws): {", ".join(names)} re-pointed after reading the change ({why}). '
+        'en': f'19 October 2026, {LABEL}: {", ".join(names)} re-pointed after reading the change ({why}). '
               f'The claim is unchanged.',
-        'zh': f'2026年10月19日，Y3（Becoming.HexagramLaws）：读过改动后，{"、".join(names)} 重新指向。论断不变。'})
+        'zh': f'2026年10月19日，{LABEL_ZH}：读过改动后，{"、".join(names)} 重新指向。论断不变。'})
     open(f, 'w', encoding='utf-8').write(json.dumps(d, ensure_ascii=False, indent=2) + '\n')
     print(f.rsplit('/', 1)[-1], names)
 print(len(plan), 'records re-pointed')

@@ -1764,7 +1764,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **Significance:** The relation of a classical text to the theory becomes a checked part of the library, with the divergences kept so that the text can challenge the theory.
 
-**Scope:** 312 Lean theorems with empty axiom reports; the readings are the AI's (D47, D50, D51). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons, the ranks of the places and divination are outside it.
+**Scope:** 310 Lean theorems with empty axiom reports; the readings are the AI's (D47, D50, D51). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons, the ranks of the places and divination are outside it.
 
 **Next:** Proposed: 王弼's readings (初上无位, the ruling line) once the 《周易略例》 is preserved; censuses of the line texts and the 大象; comparison with the readings of 程頤 and 朱熹; collation with a printed edition.
 

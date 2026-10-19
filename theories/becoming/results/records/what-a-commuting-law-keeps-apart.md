@@ -40,7 +40,7 @@ Canonical source: [Commuting.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-Groups of symmetries and 互 (Y3, Becoming.HexagramLaws); an independent review.
+Groups of symmetries (the four of 錯 and 綜, which 互 commutes with, in hexagram-world-laws); an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -77,6 +77,9 @@ The earlier 义理·拓扑 (§四, §九) argues that a fixed-point-free symmetr
   - Input: Junctures in pairs.
   - Preserved conditions: σ an exchange. [Junctures.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Junctures.lean)
 - related, not a proved adapter: [selection-through-a-model-of-the-options](selection-through-a-model-of-the-options.md). Relabel.Equivariant.tied keeps a tie through an exchange in selection; Law.Commutes.keeps_fixed is the fixed case for a law of change, and Law.Commutes.apart the free case. No instance theorem.
+- related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). The nuclear law 互 is an instance: nuclear_run_act is Law.Commutes.iterate with nuclear_act, and run_complement_apart is Law.Commutes.apart with nuclear_complement and complement_moves.
+
+**Used by:** [hexagram-world-laws](hexagram-world-laws.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -101,6 +104,8 @@ Aliases: `what a commuting law keeps apart`, `交换之律保持什么分开`, `
 ### History
 
 - 19 October 2026: added (SG, general law G2 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated ("please take a look of this … many insights can be integrated", abridged as quoted with the review); study section 199.
+- 19 October 2026, Y3 follow-up: Becoming.HexagramLaws states its two laws of 互 under the symmetries as instances of Law.Commutes.iterate and Law.Commutes.apart (study section 198), so the related record hexagram-world-laws is named and 互 leaves the next delta; groups of symmetries stay. The claim is unchanged.
+- 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198; THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
 
 </details>
 

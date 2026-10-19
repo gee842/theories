@@ -2,8 +2,8 @@
 """Where SG's `Becoming.Commuting` has landed before Y3, state Y3's commuting laws as its instances
 instead of proving them again: import it, take the runs of the nuclear law under a symmetry from
 `Law.Commutes.iterate` (dropping Y3's own `orbit_commutes`), the runs from a configuration and its
-complement apart from `Law.Commutes.apart` with `complement_moves`, and `complement_ne` from
-`complement_moves`. usage: python3 -B cite_commuting.py MODULE_FILE (edited in place; each edit must
+complement apart from `Law.Commutes.apart` with `complement_moves`, and drop Y3's `complement_ne`,
+which says what `complement_moves` says and nothing else uses then. usage: python3 -B cite_commuting.py MODULE_FILE (edited in place; each edit must
 match exactly once)."""
 import sys
 from pathlib import Path
@@ -24,11 +24,10 @@ once("""  run of it to a run of it (`nuclear_run_act`). Changing every line leav
   (`run_complement_apart`). A class is named by its member of least binary value (`classOf`), and
   two hexagrams are in one class exactly where a symmetry takes one to the other (`classOf_eq_iff`).""",
      """  run of it to a run of it (`nuclear_run_act`, by `Law.Commutes.iterate`). Changing every line
-  leaves nothing as it is (`complement_moves`, `complement_ne`), so the runs from a configuration
-  and from its complement never meet (`run_complement_apart`), the instance of what a commuting law
-  keeps apart (`Law.Commutes.apart`). A class is named by its member of least binary value
-  (`classOf`), and two hexagrams are in one class exactly where a symmetry takes one to the other
-  (`classOf_eq_iff`).""")
+  leaves nothing as it is (`complement_moves`), so the runs from a configuration and from its
+  complement never meet (`run_complement_apart`), the instance of what a commuting law keeps apart
+  (`Law.Commutes.apart`). A class is named by its member of least binary value (`classOf`), and
+  two hexagrams are in one class exactly where a symmetry takes one to the other (`classOf_eq_iff`).""")
 once("""/-- A map that commutes with a law takes its orbits to orbits. -/
 theorem orbit_commutes {next f : Hexagram → Hexagram} (comm : ∀ s, next (f s) = f (next s))
     (s : Hexagram) : ∀ n, Law.orbit next (f s) n = f (Law.orbit next s n)
@@ -36,12 +35,12 @@ theorem orbit_commutes {next f : Hexagram → Hexagram} (comm : ∀ s, next (f s
   | n + 1 => (congrArg next (orbit_commutes comm s n)).trans (comm _)
 
 """, '')
-once("""theorem complement_ne : ∀ s : Hexagram, complement s ≠ s
+once("""/-- **Changing every line leaves nothing as it is**, so no class has one member. -/
+theorem complement_ne : ∀ s : Hexagram, complement s ≠ s
   | ⟨true, _, _, _, _, _⟩ => fun h => Bool.noConfusion (congrArg Hexagram.l1 h)
   | ⟨false, _, _, _, _, _⟩ => fun h => Bool.noConfusion (congrArg Hexagram.l1 h)
-""", """theorem complement_ne (s : Hexagram) : complement s ≠ s :=
-  fun same => complement_moves s same.symm
-""")
+
+""", '')
 once("""/-- **So each takes every run of the nuclear law to a run of it.** -/
 theorem nuclear_run_act (g : Symmetry) (s : Hexagram) (n : Nat) :
     (Law.run nuclear (g.act s)).state n = g.act ((Law.run nuclear s).state n) :=
