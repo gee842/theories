@@ -92,6 +92,7 @@ Ren, 12 October 2026, asked about the integration for laws that are not determin
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json) | — |
 
 Aliases: `orders as a sum over histories`, `阶作为历史之和`, `sum over routes`, `路线之和`, `route back in time`, `沿时间往回的路线`, `expansion by order of a sum over histories`, `历史之和按阶展开`, `horizon and order`, `视界与阶`, `joining the orders to the sum over histories`, `把各阶接到历史之和`
 
@@ -118,6 +119,7 @@ Aliases: `orders as a sum over histories`, `阶作为历史之和`, `sum over ro
 - 19 October 2026, HS: the grouping by exactly i responses, listed as the next step, is stated where alternatives commute in sums-over-histories-by-support-horizon-and-order; the next step and the boundary say so. The claim is unchanged.
 - 19 October 2026, HS (sums over histories by support, horizon and exact order): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: HS added the paragraph on support, splitting, exact orders and the steps between after the orders as a sum over histories, narrowed the open grouping by exactly i responses in the section 8.2 row of laws of exchange, coupling and loops and linked its record there, added a rerun to the section 8.2 integration row, and updated the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Propagation.lean, Recurrence.lean, Weighted.lean). The claim is unchanged.
+- 19 October 2026, R21 (the nineteenth review's fix list): Propagation.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39. Read before re-pointing. The claim is unchanged.
 - 14 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](orders-as-a-sum-over-histories.json).
 
 <a id="earlier-text--早期文本"></a>

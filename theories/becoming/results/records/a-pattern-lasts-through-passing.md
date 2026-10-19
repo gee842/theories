@@ -5,12 +5,12 @@
 
 `a-pattern-lasts-through-passing` · **recorded-checked** · theorem · F01 · [record](a-pattern-lasts-through-passing.json) · [register](../../../../RESULTS.md)
 
-> A pattern present from T on whose carriers are brief for d has a carrier beginning within every d steps; under the passing premise it is passed across one of every d steps, one empty step ends it, and if passing stops it ends within d steps.
+> A pattern present from T on whose carriers are brief for d lets no d consecutive steps pass without a carrier beginning (in double-negation form); under the passing premise it is passed across one of every d steps, one empty step ends it, and if passing stops it ends within d steps.
 
 <a id="laws--规律"></a>
 ## Laws
 
-1. Present at every step from T on, its carriers brief for d, some carrier begins within every d consecutive steps (an instance of Covered.arises_within). (`Becoming.Web.carrying`, `Becoming.Web.carrying_iff`, `Becoming.Web.Present`, `Becoming.Web.begins_within`)
+1. Present at every step from T on, its carriers brief for d, no d consecutive steps pass without a carrier beginning (an instance of Covered.arises_within, in double-negation form: with activity undecided it does not name the carrier; under the passing premise ByPassing.passes_within finds the passing). (`Becoming.Web.carrying`, `Becoming.Web.carrying_iff`, `Becoming.Web.Present`, `Becoming.Web.begins_within`)
 2. Under the passing premise every beginning is a passing, and the pattern is passed across one of every d consecutive steps from T on; PatternRelay attains the bound. (`Becoming.Web.PassesAt`, `Becoming.Web.ByPassing`, `Becoming.Web.ByPassing.begins_passed`, `Becoming.Web.ByPassing.trace`, `Becoming.Web.ByPassing.passes_within`, `Becoming.PatternRelay.shifts`)
 3. Under the passing premise a step with no carrier is followed by none with one; with carriers brief for d and no passing from T on, no formation carries it from T + d on, attained in PatternRelay. (`Becoming.Web.ByPassing.present_back`, `Becoming.Web.ByPassing.empty_stays`, `Becoming.Web.ByPassing.ends_within`, `Becoming.PatternRelay.relay`, `Becoming.PatternRelay.stopped_relay`)
 
@@ -86,6 +86,7 @@ Aliases: `a pattern lasts through passing`, `样式经传递而持续`, `one emp
 - 19 October 2026, SC (a code formed between formations): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in sections 4, 8 and 9: SC added a section 4 paragraph on a code formed between formations, a clause to the collective continuation row, a section 8.3 item and a rerun sentence in the integration row, and brought the section 9 receipt and counts to its run. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.
+- 19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The statement and law 1 were corrected (nineteenth review O1): `Web.begins_within` is in double-negation form, so they now say that no d consecutive steps pass without a carrier beginning.
 
 </details>
 

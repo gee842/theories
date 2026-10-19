@@ -297,7 +297,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
       "role": "proof",
-      "sha256": "9c07a911c035438d1fb291af3a7be04a2fd79d0c19b0dd0aa3074c918d7f6cce",
+      "sha256": "49bd56600517a5dbc6d0fc1c44cb5c6183dffdaaa45f1903275345b38ca92277",
       "declarations": [
         "Becoming.ProfileReach.self_good_reaches_at_least_as_connected",
         "Becoming.ProfileReach.strict_indexed_rival_inconsistent",
@@ -333,6 +333,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
       "declarations": []
     }
   ],
@@ -381,7 +387,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ProfileReach",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -480,6 +486,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: reaches, G0 from Metaethics.lean to ValuationFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Metaethics.lean, ProfileReach.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): ProfileReach.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: ProfileReach.lean, documentation only (no name, statement or proof changed): significance stated with no valence. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：ProfileReach.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：ProfileReach.lean，只改说明（名称、陈述与证明不变）：意义注明不带正负。重新指向前已读。论断不变。"
     }
   ]
 }

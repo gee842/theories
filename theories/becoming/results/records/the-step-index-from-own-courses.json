@@ -143,7 +143,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
       "role": "proof",
-      "sha256": "f191c6c5edb18770b0db8657da3f5f25270531f788f8dd81e01fa34e996f9f21",
+      "sha256": "2be38392c2a1ba2c5546345570738da4d31098e9a069e1e9bc287ae8d84be5a2",
       "declarations": [
         "Becoming.Interleavings.LocalLaw.Connected",
         "Becoming.Interleavings.LocalLaw.act_comm",
@@ -188,12 +188,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
       "role": "provenance",
       "sha256": "68f1d05515797ea373b2b62cd21591e1c779c78eeb5eb903fe90b12a5fb0bfc3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interleavings.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T000841.184655Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Interleavings",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -261,6 +267,10 @@
     {
       "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 0 (premise card C) or section 8 (the open programme): E1 rewrote card C's bullet on what the independence measures, the necessity row of section 8.1, and added a sentence and three records to the section 8.2 row on one relational start. Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，E1（从一次交换读出的前提）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 0 节（前提卡 C）或第 8 节（开放纲领）改动：E1 重写了卡 C 关于独立性度量什么的条目、第 8.1 节的必然性一行，并在第 8.2 节关于从关系开始的一行加入一句与三个记录。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Interleavings.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Interleavings.lean, documentation only (no name, statement or proof changed): reading labelled D43. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Interleavings.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Interleavings.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。论断不变。"
     }
   ]
 }

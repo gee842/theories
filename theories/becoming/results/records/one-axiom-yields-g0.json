@@ -693,7 +693,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "cbfca85bdfe0ed104b80cd16d08776da57cdfb8e90515a6deaec5fc0186dc589"
+      "sha256": "a96e325b2bf3466d7d5acf04091d6bdec20b8b295d75c714eba482294cf0eaf4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
@@ -1231,6 +1231,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: significant_of_unrestricted, paths, paths_g0_comparison from Significance.lean to ValuationFrames.lean; G0, Extension, Comparison, valuation from Metaethics.lean to ValuationFrames.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Alternatives.lean, Metaethics.lean, Relevance.lean, Significance.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

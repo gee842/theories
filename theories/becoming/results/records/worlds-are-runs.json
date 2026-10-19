@@ -331,7 +331,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
       "role": "proof",
-      "sha256": "dbe76ab08baa55aef81d2497573bf7300d09bd03dc583c686218e2d7bc263836",
+      "sha256": "5e94e6e913c881b8817e618405d9d40e0431b54e8b969f4d3f7de820aa4fdfb2",
       "declarations": [
         "Becoming.WebAt",
         "Becoming.WebAt.dependence",
@@ -451,7 +451,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "55c3dc715dbf6559153b4e288062021f43e7e14d9e1ac967d172cc5102bf9d91",
+      "sha256": "49d86c65c83562f2759f6ce690cb21bef79b133b68545fb313f07c4ed0b6dc6c",
       "declarations": [
         "Becoming.ExchangeLaw.carrying",
         "Becoming.carried",
@@ -546,12 +546,18 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Runs",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -600,7 +606,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -675,6 +681,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: courseWorld, courseWorld_balanced_iff, carriedWorld, carriedWorld_level, carriedWorld_balanced from Runs.lean to Propagation.lean; run, process from Recurrence.lean to Labelled.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Counterfactual.lean, CourseRoles.lean, Labelled.lean, Propagation.lean, Readings.lean, Runs.lean, Unfolding.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Propagation.lean, Runs.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39; Runs.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Propagation.lean、Runs.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Propagation.lean，只改说明（名称、陈述与证明不变）：读法标为 D39；Runs.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

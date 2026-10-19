@@ -65,6 +65,7 @@ The open programme of the chapter left open "deriving the shared index of steps 
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json) | — |
 
 Aliases: `the step index from own courses`, `步指标读自自身进程`, `interleaving of own courses`, `自身进程的交错`, `equal own courses equal configurations`, `自身进程同则构形同`, `the index is built`, `指标是构造出来的`, `where the courses fix the index`, `进程定下指标之处`, `shared index as commitment`, `共同指标作为承诺`
 
@@ -87,6 +88,7 @@ Aliases: `the step index from own courses`, `步指标读自自身进程`, `inte
 - 19 October 2026, N7 (the reading pass on "correction"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of "correction" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.
 - 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 0 (premise card C) or section 8 (the open programme): E1 rewrote card C's bullet on what the independence measures, the necessity row of section 8.1, and added a sentence and three records to the section 8.2 row on one relational start. Read before re-pointing. The claim is unchanged.
+- 19 October 2026, R21 (the nineteenth review's fix list): Interleavings.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Interleavings.lean, documentation only (no name, statement or proof changed): reading labelled D43. Read before re-pointing. The claim is unchanged.
 
 </details>
 

@@ -13,7 +13,7 @@
 1. No course leaves two guards together exactly where no course leaves either, and for a list exactly where no course leaves any. (`Becoming.Viability.kernel_and_iff`, `Becoming.Viability.AllOf`, `Becoming.Viability.kernel_allOf_iff`)
 2. A guard is keepable where some run stays within it; keepable together gives keepable each, and the converse fails in ChoicePoint; where either guard lies in the kernel, keeping both is keeping the other; likewise for n steps. (`Becoming.Viability.Keepable`, `Becoming.Viability.Keepable.each`, `Becoming.Viability.Keepable.of_keepsMoving`, `Becoming.Viability.keepable_and_iff_of_kernel_left`, `Becoming.Viability.keepable_and_iff_of_kernel_right`, `Becoming.Viability.KeptFor.each`, `Becoming.Viability.ChoicePoint.each_not_joint`, `Becoming.Viability.ChoicePoint.keptFor_each_not_joint`)
 3. No rule on the separate answers decides the joint one: on ChoicePoint two configurations have both guards keepable and only one has them together; decisions exist, and for every F : Bool → Bool → Bool the joint decision is not F of the separate ones. (`Becoming.Viability.ChoicePoint.joint_differs`, `Becoming.Viability.ChoicePoint.decisions_exist`, `Becoming.Viability.ChoicePoint.no_rule_decides_joint`, `Becoming.Viability.ChoicePoint.no_respecting_rule_decides_joint`)
-4. Keeping a part decides neither renewal nor what the run does to others: in Renewable no course leaves the guard "the focal formation is active" from any configuration, while from one configuration one run renews and another consumes the sustaining formation's condition, which ends. (`Becoming.Renewable.kept_part_not_renewal`)
+4. Keeping a part decides neither renewal nor what the run does to others: in Renewable no course leaves the guard "the focal formation is active" from the starting configuration, while from that configuration one run renews and another consumes the sustaining formation's condition, which ends. (`Becoming.Renewable.kept_part_not_renewal`)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -73,6 +73,7 @@ An account of social viability Ren brought on 19 October 2026 lists eight constr
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-19-collective-continuation.md](../../../../sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json) | — |
 
 Aliases: `conditions kept together`, `共同保持的条件`, `keeping a part is not renewal`, `Becoming.Viability.ChoicePoint.no_rule_decides_joint`, `Becoming.Renewable.kept_part_not_renewal`, `viability is not a product (reading)`
 
@@ -94,6 +95,7 @@ Aliases: `conditions kept together`, `共同保持的条件`, `keeping a part is
 - 19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Labelled.lean: declarations moved in or out by W2). The claim is unchanged.
+- 19 October 2026, R21 (the nineteenth review's fix list): JointKeeping.lean, Onward.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: JointKeeping.lean, documentation only (no name, statement or proof changed): the kernel conjunct stated at the starting configuration; Onward.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. Law 4 was corrected (nineteenth review O4): the kernel conjunct is stated at the starting configuration.
 
 </details>
 

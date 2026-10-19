@@ -151,6 +151,7 @@ Aliases: `序卦`, `雜卦`, `杂卦`, `卦變`, `卦变`, `損下益上`, `損�
 - 19 October 2026, RC (capture through the rule): passages.json re-pointed after reading the change (passages.json: RC: 二柄, 据有余而制不足 and 壹 cite Becoming.RuleCapture and its record, and 二柄's gap is marked closed). The claim is unchanged.
 - 19 October 2026, RG (two-sided regulation and late reading): passages.json re-pointed after reading the change (passages.json: RG added declarations and its record to four passages, replaced the sentences of their readings that named the first gap and marked that gap closed (other passages unchanged)). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: run, process from Recurrence.lean to Labelled.lean; goAlike_iff_lumped from Learning.lean to LearningRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Commuting.lean, HexagramPlaces.lean, Hexagrams.lean, Labelled.lean, Learning.lean, Mechanism.lean, Recurrence.lean, Unfolding.lean). The claim is unchanged.
+- 19 October 2026, R21 (the nineteenth review's fix list): YI-ZHUAN-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: YI-ZHUAN-AND-BECOMING.md, the conditions of the laws read for 生生之謂易 named (O2). Read before re-pointing. The claim is unchanged.
 
 </details>
 

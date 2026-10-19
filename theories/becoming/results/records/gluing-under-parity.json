@@ -529,7 +529,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "c39a8987d46ee47edfdd1c81d678a14ad0a047aff19204763a04512cf4c6a0e5"
+      "sha256": "ae4815a5a7feaae166458117aae0f55f0f2257d4b2ea74e87757e73744375d8f"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -758,6 +758,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Context.lean, ParityReadings.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): DELEGATED-CHOICES.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: DELEGATED-CHOICES.md, dated restatements in current terms (E5, O2); the original decisions kept. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：DELEGATED-CHOICES.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：DELEGATED-CHOICES.md，以现行用语作出的注明日期的重述（E5、O2）；原决定保留。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

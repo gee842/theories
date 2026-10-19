@@ -527,7 +527,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "55c3dc715dbf6559153b4e288062021f43e7e14d9e1ac967d172cc5102bf9d91",
+      "sha256": "49d86c65c83562f2759f6ce690cb21bef79b133b68545fb313f07c4ed0b6dc6c",
       "declarations": [
         "Becoming.carried",
         "Becoming.carriedGive",
@@ -618,7 +618,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "6cd71dd634abef26e4a456abee102f3b94cc17fe0db93758d67e1525cf8b99b0"
+      "sha256": "a96e325b2bf3466d7d5acf04091d6bdec20b8b295d75c714eba482294cf0eaf4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -687,6 +687,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -699,7 +705,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -920,6 +926,14 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Counterfactual.lean, Propagation.lean, Recurrence.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Propagation.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Propagation.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Propagation.lean，只改说明（名称、陈述与证明不变）：读法标为 D39。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

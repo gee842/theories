@@ -206,7 +206,7 @@
         "Becoming.Viability.kernel_allOf_iff",
         "Becoming.Viability.kernel_and_iff"
       ],
-      "sha256": "6f163c04ea7bae5e065fe609abfcad1930637be5e275c5e69583f44820421745"
+      "sha256": "b188713f860f9a83318aa9a9d74e6a917207b8b2995b0ae3c4ea53fc0169ad26"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Viability.lean",
@@ -229,7 +229,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
       "role": "proof",
-      "sha256": "0a44e28e50b3e8b9761c1c10dcb8d072fa6dd1df644f32da5c8987e35ca3e418"
+      "sha256": "a68f1a36d6189f92aae665a1103297e0af7af60ddaeecaa0b9aee93119d02b03"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
@@ -250,12 +250,18 @@
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
       "role": "provenance",
       "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointKeeping.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.JointKeeping",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -321,6 +327,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Re-pointed after reading the change (Labelled.lean: declarations moved in or out by W2). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): JointKeeping.lean, Onward.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: JointKeeping.lean, documentation only (no name, statement or proof changed): the kernel conjunct stated at the starting configuration; Onward.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. Law 4 was corrected (nineteenth review O4): the kernel conjunct is stated at the starting configuration.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：JointKeeping.lean、Onward.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：JointKeeping.lean，只改说明（名称、陈述与证明不变）：核心合取注明在起始构形；Onward.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。第四条律已更正（第十九次审查 O4）：核心合取陈述于起始构形。"
     }
   ]
 }

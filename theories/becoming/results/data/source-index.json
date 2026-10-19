@@ -829,6 +829,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md": {
       "title": "Readings decided on Ren's delegation (P110)",
       "local_links": [
+        "AGENTS.md",
         "_process/RESEARCH-DIRECTIVES.md",
         "_process/history/2026-09-consolidation/GLOSSARY.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -887,6 +888,7 @@
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.zh.md": {
       "title": "依 Ren 交托决定的读法",
       "local_links": [
+        "AGENTS.md",
         "_process/RESEARCH-DIRECTIVES.md",
         "_process/history/2026-09-consolidation/GLOSSARY.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -6298,7 +6300,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T130738.412710Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
@@ -6581,7 +6583,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T231055.702986Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/JudgingCorrespondence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",

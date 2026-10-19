@@ -66,6 +66,7 @@ Boundary source: [GrownFragmentation.lean](../../../../experiments/integrated-co
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -95,4 +96,5 @@ Aliases: `GrownFragmentation.certificate_exact_split`, `Becoming.closure_iff_cer
 - 19 October 2026, K2: Cuts.lean gained the laws of growth by attachment on the base (study section 191); the two Cuts declarations this record cites are unchanged, and its binding moves to core receipt 20261019T054535.337999Z. The claim is unchanged.
 - 19 October 2026, K3 (Ren: "please finish it"): Cuts.lean re-pointed after reading the change: Flow.GrownBy.cond_ne now reaches its same-orientation case through Cuts.Attaches.listed_once, so no theorem of Becoming.Cuts stands apart; no statement changed. Core receipt 20261019T055924.801141Z; study section 191 (addendum) and the chapter's sections 8.2 and 9 re-pointed with it. The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean, Feedback.lean). The claim is unchanged.
+- 19 October 2026, R21 (the nineteenth review's fix list): Cuts.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Cuts.lean, documentation only (no name, statement or proof changed): the bypass stated for a directed link (target within the source's closure). Read before re-pointing. The claim is unchanged.
 - 2 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](growth-constrained-fragmentation.json).

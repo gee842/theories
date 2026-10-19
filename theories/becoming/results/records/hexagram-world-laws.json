@@ -862,7 +862,7 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "bcaec508c86fce59c64d80b93d8436bb374e43310135ae52277fd6ff890602fc"
+      "sha256": "119a5a7cc3c6200e77a51ebe4731759e40822a117b594f36b249f1d28d1208af"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
@@ -1061,6 +1061,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: goAlike_iff_lumped from Learning.lean to LearningRuns.lean; run, run_state, process from Recurrence.lean to Labelled.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Attraction.lean, Commuting.lean, HexagramPlaces.lean, Hexagrams.lean, Learning.lean, Mechanism.lean, Recurrence.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): YI-ZHUAN-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: YI-ZHUAN-AND-BECOMING.md, the conditions of the laws read for 生生之謂易 named (O2). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：YI-ZHUAN-AND-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：YI-ZHUAN-AND-BECOMING.md，生生之謂易所读诸律的条件写明（O2）。重新指向前已读。论断不变。"
     }
   ]
 }

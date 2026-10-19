@@ -286,7 +286,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
       "role": "proof",
-      "sha256": "0a44e28e50b3e8b9761c1c10dcb8d072fa6dd1df644f32da5c8987e35ca3e418",
+      "sha256": "a68f1a36d6189f92aae665a1103297e0af7af60ddaeecaa0b9aee93119d02b03",
       "declarations": [
         "Becoming.Onward.continues_of_run",
         "Becoming.Onward.unbounded_of_run",
@@ -466,12 +466,18 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T183920.923524Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Onward",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -637,6 +643,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Decidedness.lean, Horizon.lean, Recurrence.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Onward.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Onward.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Onward.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Onward.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

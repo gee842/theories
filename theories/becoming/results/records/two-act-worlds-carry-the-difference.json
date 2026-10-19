@@ -355,7 +355,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
       "role": "proof",
-      "sha256": "0d6712d03c2094d11d6a4f9da23d790939dbfc8dd4c450ff677df93fe0bb20a0",
+      "sha256": "0081dd1e0bc5d2d64f91826165501c739130eeb9c499b0c3db9e501eccec316a",
       "declarations": [
         "Becoming.ExchangeLaw.actWorld",
         "Becoming.TwoActs",
@@ -436,7 +436,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "55c3dc715dbf6559153b4e288062021f43e7e14d9e1ac967d172cc5102bf9d91",
+      "sha256": "49d86c65c83562f2759f6ce690cb21bef79b133b68545fb313f07c4ed0b6dc6c",
       "declarations": [
         "Becoming.gap",
         "Becoming.carried",
@@ -475,7 +475,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
       "role": "proof",
-      "sha256": "c58488b3535bf76d1be18f54ac397d6e291af65e5e8397fac33d499a15fd4003",
+      "sha256": "ef5077c1fc78dad7b155c856a11dfc254f0ee0167bc188d479c6d5d961e57a4b",
       "declarations": [
         "Becoming.CoupledIntoBy",
         "Becoming.strengthsFrom",
@@ -514,7 +514,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
       "role": "proof",
-      "sha256": "ddc46bc4842f553ae98e43121ceddff53811270b7da137dbaf61c316bd93c0b7",
+      "sha256": "27ae3aed2fa0079d056b5c81702c1d242d87e72e39daa94a40e49351c649491e",
       "declarations": [
         "Becoming.Frequency.count",
         "Becoming.Returns",
@@ -540,7 +540,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
       "role": "proof",
-      "sha256": "29cd8691e1b4f8e5b141befb4b35c77139bd1d5ec79f9a12ea882a9d202fd372",
+      "sha256": "c754341e5d1a167599a601594d260270a6182139f35d290eaa3a6caadae6a635",
       "declarations": [
         "Becoming.ExchangeLaw.ReadsInto",
         "Becoming.readCouplings",
@@ -596,12 +596,18 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.CourseWorlds",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -622,7 +628,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -636,7 +642,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T124157.989030Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Remainder",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -657,7 +663,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Frequency",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -671,7 +677,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Observation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Observation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -708,6 +714,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: courseWorld, courseWorld_balanced_iff, carriedWorld, carriedWorld_balanced from Runs.lean to Propagation.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Closing.lean, Counterfactual.lean, CourseWorlds.lean, FormedLoops.lean, Propagation.lean). The evidence of the dependency on Runs.lean follows the declarations it cites to Propagation.lean. The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。依赖的证据随其所引声明从 Runs.lean 改指 Propagation.lean。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): CourseWorlds.lean, Frequency.lean, Observation.lean, Propagation.lean, Remainder.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: CourseWorlds.lean, documentation only (no name, statement or proof changed): readings labelled D43; the attaining law named as the carrying law, which is not gainless; Frequency.lean, documentation only (no name, statement or proof changed): readings labelled D43; Observation.lean, documentation only (no name, statement or proof changed): readings labelled D43; Propagation.lean, documentation only (no name, statement or proof changed): readings labelled D39; Remainder.lean, documentation only (no name, statement or proof changed): readings labelled D43. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：CourseWorlds.lean、Frequency.lean、Observation.lean、Propagation.lean、Remainder.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：CourseWorlds.lean，只改说明（名称、陈述与证明不变）：读法标为 D43；达到者注明为携带律，它不是无增益的；Frequency.lean，只改说明（名称、陈述与证明不变）：读法标为 D43；Observation.lean，只改说明（名称、陈述与证明不变）：读法标为 D43；Propagation.lean，只改说明（名称、陈述与证明不变）：读法标为 D39；Remainder.lean，只改说明（名称、陈述与证明不变）：读法标为 D43。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

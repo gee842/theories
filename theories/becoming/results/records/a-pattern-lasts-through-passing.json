@@ -187,7 +187,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "21700e33ed207345eeda2606d1ef5504e43359083caa84fcf8df855a4b7b3c94"
+      "sha256": "a96e325b2bf3466d7d5acf04091d6bdec20b8b295d75c714eba482294cf0eaf4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
@@ -260,6 +260,10 @@
     {
       "en": "19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.",
       "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The statement and law 1 were corrected (nineteenth review O1): `Web.begins_within` is in double-negation form, so they now say that no d consecutive steps pass without a carrier beginning.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。陈述与第一条律已更正（第十九次审查 O1）：`Web.begins_within` 是双重否定的形式，所以现在说不会连续 d 步都没有承载者开始。"
     }
   ]
 }

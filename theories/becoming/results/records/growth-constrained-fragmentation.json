@@ -202,7 +202,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
       "role": "proof",
-      "sha256": "96b639c0cdba04c347573dfafff81b4f89200356699edeef6cbf4c6f0831876c",
+      "sha256": "3468e1797fb310a4e1fd2d086955d4c6c563ef6d171b5154107b4776b74f4b83",
       "declarations": [
         "Becoming.Cuts.attached_link_separates",
         "Becoming.Cuts.joined_cut_unchanged_iff"
@@ -230,6 +230,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "role": "receipt",
+      "sha256": "2d67544b861ef92ad93c09f3e21c359b69c7713733d831319afaa8bdda8074fd",
       "declarations": []
     }
   ],
@@ -264,7 +270,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T055924.801141Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Cuts",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -341,6 +347,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Courses.lean, Feedback.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R21 (the nineteenth review's fix list): Cuts.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Cuts.lean, documentation only (no name, statement or proof changed): the bypass stated for a directed link (target within the source's closure). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R21（第十九次审查的修正清单）：Cuts.lean 重新指向，证明绑定改到核心回执 20261019T162802.564989Z。自所审哈希以来，所引文件只在 R21 改动之处改动：Cuts.lean，只改说明（名称、陈述与证明不变）：绕行按有向联系陈述（终点在起点的闭包之内）。重新指向前已读。论断不变。"
     }
   ]
 }
