@@ -11,10 +11,19 @@
     },
     "README.md": {
       "original": "README.md",
-      "sha256": "47dfae942acfeeb4902f8a039b97fe02683ba43c22c76817f1636e2e86b987fd",
-      "raw": "_process/architecture/history/47dfae942acfeeb4/README.md",
-      "reading": "_process/architecture/history/47dfae942acfeeb4/README.reading.md",
-      "reading_sha256": "46e80aa370158db931ff5056e5e0e66c053b1a1dd1384b494d37b26843c73834"
+      "sha256": "3142e18e33fe48125571b1c582e223143c9c08513d162ab5f83b6ff3a9c972bc",
+      "raw": "_process/architecture/history/3142e18e33fe4812/README.md",
+      "reading": "_process/architecture/history/3142e18e33fe4812/README.reading.md",
+      "reading_sha256": "6466a82a213f41b8ad0b58cdab35ce49480b8a4d5f1f645fa9868c8c7ed6eac3",
+      "prior_versions": [
+        {
+          "original": "README.md",
+          "sha256": "47dfae942acfeeb4902f8a039b97fe02683ba43c22c76817f1636e2e86b987fd",
+          "raw": "_process/architecture/history/47dfae942acfeeb4/README.md",
+          "reading": "_process/architecture/history/47dfae942acfeeb4/README.reading.md",
+          "reading_sha256": "46e80aa370158db931ff5056e5e0e66c053b1a1dd1384b494d37b26843c73834"
+        }
+      ]
     },
     "RESEARCH.md": {
       "original": "RESEARCH.md",
@@ -134,6 +143,11 @@
       "path": "theories/shengsheng-buxi-generative-existence/results/records/finite-branching-relational-recovery.md",
       "sha256": "37a9dc7c5fa9fc004dd5f70ee868e57d413be710acda6e041b232ff05c3d9d21",
       "note": "This generated page was rendered during a concurrent migration; its author subsequently removed the editable JSON. Its complete bytes are preserved here. The supporting same_is_bisimulation direction is in the existing ExplanatoryBranching source used by branching-tests-bisimulation. No scientific source or receipt removed; this is retirement of an orphan generated view only."
+    },
+    {
+      "path": "README.md",
+      "sha256": "3142e18e33fe48125571b1c582e223143c9c08513d162ab5f83b6ff3a9c972bc",
+      "note": "b14d03d5f changed README note-present by hand alongside OPENING [^present]; the same text is in OPENING at b14d03d5f, so it is incorporated in its source; reviewed by the [^law] session before rendering"
     }
   ]
 }

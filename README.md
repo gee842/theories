@@ -64,7 +64,7 @@ The future is within our hands. Let's make it good. Follow the truth.
 
 ### Notes
 
-1. <a id="note-law"></a>**Proved, for every world as the theory represents it, and in this sense only:** in discrete steps, with whole-number amounts, and with what is counted decided at each step. In every such world, arising, a dependence forming and a condition coming to stand are one coming to be, read of activity, dependence and standing, and ceasing, dissolving and ceasing to stand are one ceasing to be, read the same three ways (`Web.change_readings`, which holds by definition). In a finite family whose members' holding is decided at each step, comings to be and ceasings to be over any stretch differ by at most the number of members (`keep_pace`), and arising recurs exactly where ceasing does (`Web.arising_recurs_iff`). This is what the next paragraph claims with no premise: coming to be and ceasing to be are changes of the same holdings, counted against each other ("seen from their two sides"), and they keep pace. The stronger sense of "two sides", that nothing rises or comes to stand but something else falls across the same step, is not among these laws: it holds under balance and dissipation (`Flow.rise_with_fall`, `Flow.standing_with_fall`; see the note on conditions). These laws need no premise about the unfolding because of what they are: identities by definition (`change_readings`), arithmetic identities (`over_stretch`), consequences of two-valuedness and finiteness, and laws of one step. Beyond what the representation excludes, they exclude no unfolding: they locate the claims about the whole and are not dynamical content. So "by counting alone", in the next paragraph, means by the definitions of change and of count in the representation; these laws hold of any sequence, however finely its steps are drawn. Finiteness is needed: where the relata are infinitely many, either of arising and ceasing can recur without the other (`World.separate`, constructed). Asked of every finite world without decidedness, the law that arising recurs exactly when ceasing does is equivalent to excluded middle (`World.law_iff_em`). **Open:** whether every becoming can be so represented, so that "in every universe" reads the representation's scope and is not a theorem; and the deduction that the whole theory is necessary with no added premise ([the theory stated whole](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#第一部分的总陈述--part-i-stated-whole); [the open target](theories/becoming/results/records/theory-of-becoming-foundation.md)). [↩](#ref-law)
+1. <a id="note-law"></a>**Proved with no premise about the unfolding, and at the exact boundary where it can hold.** A determination of any kind comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after. Arising, a dependence forming and a condition coming to stand are this one coming to be, read of activity, dependence and standing, and ceasing, dissolving and ceasing to stand are this one ceasing to be, read the same three ways (`Web.change_readings`, by definition). Of every finite family of determinations whose holding is decided at each step, whatever they are, three laws follow, and no unfolding can be otherwise, because they hold of every sequence of holdings: over any stretch, what holds at the end with what ceased is what held at the start with what came to be (`held_over_stretch`); comings to be and ceasings to be differ by at most the number of members (`keep_pace`); and coming to be recurs exactly where ceasing to be does (`coming_recurs_iff`; read of activity, `Web.arising_recurs_iff`). Each commitment of the representation is either not needed or needed exactly. *Decidedness:* wherever the comings and ceasings are counted at all, they keep pace, with nothing decided (`CensusWebs.keep_pace`); coming to stand and ceasing to stand recur together with no premise at all (`Web.standing_recurs_iff`); and for activity, decidedness is a commitment of the logic, not of the world: with excluded middle the recurrence law holds of every finite world (`World.law_of_em`), and asked of every finite world without decidedness it is equivalent to excluded middle (`World.law_iff_em`), so it is exactly as strong as classical logic and asks nothing of what unfolds beyond finiteness. *Amounts:* activity and dependence read no amount, and standing reads only whether an amount is positive; the laws are stated for any determination, so they hold of standing in amounts of any kind wherever positivity is decided. *Steps:* the laws hold of any sequence, however finely or coarsely its steps are drawn, so of a continuous unfolding read at any sequence of times, of what that reading records; and where exchanges act locally, a shared step index carries nothing the relata's own courses do not: two orders giving every relatum the same course reach the same configuration from the same start (`Interleavings.LocalLaw.run_of_courses`). *Finiteness* is needed, and only so far: one list covering what is active from some step on suffices, finitely many relata in all is not needed (`Web.unceasing_iff_covering`, activity decided); where the relata are infinitely many, either of arising and ceasing can recur without the other (`World.separate`, constructed). These laws hold by what change and count are: identities by definition (`change_readings`), arithmetic identities (`over_stretch`), and consequences of two-valuedness and finiteness. That is why they need no premise and why nothing that unfolds can break them; it is also why they are not a dynamics: they fix what coming to be and ceasing to be are and how each is counted against the other, and what a particular unfolding does is stated by the laws under conditions. This is what "by counting alone" means in the next paragraph. The stronger sense of "two sides", that nothing rises or comes to stand but something else falls across the same step, is not among these laws: it holds under balance and dissipation (`Flow.rise_with_fall`, `Flow.standing_with_fall`; see the note on conditions). **Open:** whether every becoming can be read as successive holdings of determinations, so that "in every universe" is a theorem and not the scope of the representation; and the deduction that the whole theory is necessary with no added premise ([the theory stated whole](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#第一部分的总陈述--part-i-stated-whole); [the open target](theories/becoming/results/records/theory-of-becoming-foundation.md)). [↩](#ref-law)
 
 2. <a id="note-conditions"></a>**Proved under conditions.** "Nothing comes from nothing" is the premise of balance: every change of a condition's level is what is taken from it and given to it (`Flow.Balances`), a continuity equation for each condition. Under a law of exchange that reads only what has stood, the course it generates balances exactly where the law never takes from a condition more than stands on it and is given to it (`ExchangeLaw.course_balances_iff`): balance is the law never overdrawing. Balance alone does not stop a formation giving what it never took; that bound is "nothing passes on without loss", dissipation: within a closed family, every formation taking part gives back no more than it takes, and less when it takes (`Flow.DissipatesOn`). As represented, dissipation loses at least one whole unit with every uptake from a closed family, which is stronger than the statistical second law. Under the two, where a member of a family dissipated on across a step rises or comes to stand, another member falls across the same step (`Flow.rise_with_fall`, `Flow.standing_with_fall`). *General theorems*, each under these with further premises named in it: a finite family that formations keep taking from cannot, enclosed around, go on fed from nothing beyond it, with equality of conditions decided (`Flow.fed_from_beyond`); a world with a census whose relata are all embodied cannot, once enclosed, go on without ever coming to rest: that it never rests is refuted (`World.rests_unrefuted_enclosed`), though naming a step after which nothing arises, for every finite world meeting the premises with its activity decided, would give the limited principle of omniscience (`World.lpo_of_finite_ends`); support is gained only from the supported (`Flow.gains_from_supported`); a reserve defers the end (`Carries.lasts`); and where the renewers depend on what they renew, joint excess ends them and what depends on the condition at such a need (`Flow.joint_excess_ends`). *Constructed examples*, which show that something can happen, not how often it does: two formations each draw within what a step gives and together exceed it (`Pair.own_not_joint`); and a part goes on while closing what lies beyond its dependence (`Clearing.loses_beyond`), in a web built so that the part is active and supported at every step, which is less than the body's "thriving". Several of these laws rely on whole-number amounts. At a unit that refines, the rest law holds where, from some step on, the refinement gives nothing to what stands (`World.rests_unrefuted_without_refinement`); counting the refinement as one more formation turns that same requirement into dissipation and adds nothing to it (`Flow.withRefinement_dissipatesOn_iff`); in constructed worlds balanced at a unit that splits without end, the refinement feeds them, and in one of them something new arises at every step (`refinement_feeds_witnesses`, `arising_needs_quantum`); and with real-valued levels a bounded part can be new at every step ([the theory stated whole](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#第一部分的总陈述--part-i-stated-whole), II). The work reads balance and dissipation from conservation and the second law of thermodynamics; whether actual unfoldings meet them as represented is an empirical question ([the premise card](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#0-前提卡--premise-card)). [↩](#ref-conditions)
 
@@ -126,7 +126,6 @@ Start with the canonical entry, [The Theory of Becoming](theories/becoming/chapt
 
 *Ordered as one argument about AI and human coordination: why a race to be more, or above all others, cannot come to rest; why each counting only its own draw can together end what all depend on, the winner included; what anything that wants to go on must count, and where that stops; why selection and policy through a selector's couplings are blind to what does not couple in, including how far off the break is; why reforming the state without changing the rule is re-absorbed; why what cannot be undone cannot be tested by trial; what closing and opening the future exactly take; and why relations and wholes go on only through joint action and continuing generation. Each is checked in Lean on the pure core, whose source declarations have empty axiom reports; that is a constructive discipline, not an absence of premises, and each holds under the hypotheses its record states. Where a result says that something can happen, a constructed example shows that it can, not how often it does. Chosen for significance; the selection is open to revision.*
 
-<a id="leading-results"></a>
 ### Laws of the theory without axiom (sections 1–6)
 
 Each is checked in Lean on the pure core: every source declaration has an empty axiom report. That is a constructive discipline, not an absence of premises. Each holds under the hypotheses its record states, with the commitments of the representation (discrete steps, natural-number amounts); a result saying that something can happen is shown by a constructed example.
@@ -273,7 +272,6 @@ You need Python 3.9 or later (standard library only), git, and ripgrep for the s
 - `make research-check` checks records, evidence bindings, preservation hashes and generated pages. A stale directory index is reported there without failing. `make research-check-strict`, which CI runs, fails on it.
 - `python3 -B experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py` compiles the core and audits the axioms of every declaration ([checker](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)). It writes `becoming-verification.json` and a run folder in `becoming-checks/` beside it. With `BECOMING_OUT=<dir>` both go to that directory instead, and the repository is left untouched. Steps whose inputs match an earlier passed step are reused from `~/.cache/becoming-lean` (moved by `BECOMING_LEAN_CACHE`). `BECOMING_FRESH=1` runs every step, `BECOMING_JOBS` sets how many Lean runs go at once (half the cores by default), `LEAN_TIMEOUT` sets the seconds per Lean run (600 by default), and `LEAN` names a Lean binary. Run one checker at a time on a shared checkout. CI reruns it when the Lean root changes, and keeps the receipt as a workflow artifact.
 
-<a id="discovery-and-evidence--检索与证据"></a>
 ## Discovery and evidence
 
 [Full reading catalogue](theories/becoming/results/README.md) · [Curated generativity chain](theories/becoming/results/GENERATIVITY-CHAIN.md) · [Dated session map](theories/becoming/results/SESSION-RESULTS.md) · [Broader theory map](MAP.md)
@@ -286,10 +284,9 @@ make research-render
 
 Default discovery excludes frozen copies and failed build attempts. Use `--archives` deliberately to include them. Checks concern metadata and evidence bindings; mathematical changes retain their actual Lean-build requirement.
 
-<a id="preserved-history--完整历史"></a>
 ## Preserved history
 
-[Previous full text with working links](_process/architecture/history/47dfae942acfeeb4/README.reading.md) · [Exact original bytes](_process/architecture/history/47dfae942acfeeb4/README.md)
+[Previous full text with working links](_process/architecture/history/3142e18e33fe4812/README.reading.md) · [Exact original bytes](_process/architecture/history/3142e18e33fe4812/README.md)
 
 The complete previous content remains preserved. This generated page is the current navigation; historical next steps retain their dated scope.
 
@@ -297,23 +294,266 @@ The complete previous content remains preserved. This generated page is the curr
 <details>
 <summary>Historical section links</summary>
 
+<a id="a-whole-persists-through-the-generation-of-its-parts"></a>
+[Historical section: a-whole-persists-through-the-generation-of-its-parts](_process/architecture/history/3142e18e33fe4812/README.reading.md#a-whole-persists-through-the-generation-of-its-parts)
+
+<a id="advancing-ai-alignment"></a>
+[Historical section: advancing-ai-alignment](_process/architecture/history/3142e18e33fe4812/README.reading.md#advancing-ai-alignment)
+
+<a id="closing-needs-a-net-draw"></a>
+[Historical section: closing-needs-a-net-draw](_process/architecture/history/3142e18e33fe4812/README.reading.md#closing-needs-a-net-draw)
+
+<a id="consumption-ends-with-its-feeders"></a>
+[Historical section: consumption-ends-with-its-feeders](_process/architecture/history/3142e18e33fe4812/README.reading.md#consumption-ends-with-its-feeders)
+
+<a id="counting-ones-own-draw-misses-joint-excess"></a>
+[Historical section: counting-ones-own-draw-misses-joint-excess](_process/architecture/history/3142e18e33fe4812/README.reading.md#counting-ones-own-draw-misses-joint-excess)
+
+<a id="developing-significance-comparison-and-practical-judgment"></a>
+[Historical section: developing-significance-comparison-and-practical-judgment](_process/architecture/history/3142e18e33fe4812/README.reading.md#developing-significance-comparison-and-practical-judgment)
+
+<a id="discovery-and-evidence"></a>
+[Historical section: discovery-and-evidence](_process/architecture/history/3142e18e33fe4812/README.reading.md#discovery-and-evidence)
+
+<a id="discovery-and-evidence--检索与证据"></a>
+[Historical section: discovery-and-evidence--检索与证据](_process/architecture/history/3142e18e33fe4812/README.reading.md#discovery-and-evidence--检索与证据)
+
+<a id="experiment-needs-return"></a>
+[Historical section: experiment-needs-return](_process/architecture/history/3142e18e33fe4812/README.reading.md#experiment-needs-return)
+
+<a id="first-priority-theory-of-becoming"></a>
+[Historical section: first-priority-theory-of-becoming](_process/architecture/history/3142e18e33fe4812/README.reading.md#first-priority-theory-of-becoming)
+
+<a id="investigating-the-theory-of-evolution"></a>
+[Historical section: investigating-the-theory-of-evolution](_process/architecture/history/3142e18e33fe4812/README.reading.md#investigating-the-theory-of-evolution)
+
+<a id="laws-of-the-theory-without-axiom-sections-16"></a>
+[Historical section: laws-of-the-theory-without-axiom-sections-16](_process/architecture/history/3142e18e33fe4812/README.reading.md#laws-of-the-theory-without-axiom-sections-16)
+
+<a id="leading-results"></a>
+[Historical section: leading-results](_process/architecture/history/3142e18e33fe4812/README.reading.md#leading-results)
+
+<a id="limits-of-the-derived-extent"></a>
+[Historical section: limits-of-the-derived-extent](_process/architecture/history/3142e18e33fe4812/README.reading.md#limits-of-the-derived-extent)
+
+<a id="note-aligned"></a>
+[Historical section: note-aligned](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-aligned)
+
+<a id="note-alignment"></a>
+[Historical section: note-alignment](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-alignment)
+
+<a id="note-axiom"></a>
+[Historical section: note-axiom](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-axiom)
+
+<a id="note-cancer"></a>
+[Historical section: note-cancer](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-cancer)
+
+<a id="note-collective"></a>
+[Historical section: note-collective](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-collective)
+
+<a id="note-conditions"></a>
+[Historical section: note-conditions](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-conditions)
+
+<a id="note-count"></a>
+[Historical section: note-count](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-count)
+
+<a id="note-dao"></a>
+[Historical section: note-dao](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-dao)
+
+<a id="note-ethics"></a>
+[Historical section: note-ethics](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-ethics)
+
+<a id="note-good-evil"></a>
+[Historical section: note-good-evil](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-good-evil)
+
+<a id="note-guardian"></a>
+[Historical section: note-guardian](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-guardian)
+
+<a id="note-law"></a>
+[Historical section: note-law](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-law)
+
+<a id="note-meta"></a>
+[Historical section: note-meta](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-meta)
+
+<a id="note-no-law"></a>
+[Historical section: note-no-law](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-no-law)
+
+<a id="note-own"></a>
+[Historical section: note-own](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-own)
+
+<a id="note-present"></a>
+[Historical section: note-present](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-present)
+
+<a id="note-proof"></a>
+[Historical section: note-proof](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-proof)
+
+<a id="note-race"></a>
+[Historical section: note-race](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-race)
+
+<a id="note-reach"></a>
+[Historical section: note-reach](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-reach)
+
+<a id="note-sages"></a>
+[Historical section: note-sages](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-sages)
+
+<a id="note-self"></a>
+[Historical section: note-self](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-self)
+
+<a id="note-transitions"></a>
+[Historical section: note-transitions](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-transitions)
+
+<a id="note-turn"></a>
+[Historical section: note-turn](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-turn)
+
+<a id="note-withholding"></a>
+[Historical section: note-withholding](_process/architecture/history/3142e18e33fe4812/README.reading.md#note-withholding)
+
+<a id="notes"></a>
+[Historical section: notes](_process/architecture/history/3142e18e33fe4812/README.reading.md#notes)
+
+<a id="ongoing-research-and-current-progress"></a>
+[Historical section: ongoing-research-and-current-progress](_process/architecture/history/3142e18e33fe4812/README.reading.md#ongoing-research-and-current-progress)
+
+<a id="preserved-history"></a>
+[Historical section: preserved-history](_process/architecture/history/3142e18e33fe4812/README.reading.md#preserved-history)
+
+<a id="preserved-history--完整历史"></a>
+[Historical section: preserved-history--完整历史](_process/architecture/history/3142e18e33fe4812/README.reading.md#preserved-history--完整历史)
+
+<a id="ref-aligned"></a>
+[Historical section: ref-aligned](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-aligned)
+
+<a id="ref-aligned-2"></a>
+[Historical section: ref-aligned-2](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-aligned-2)
+
+<a id="ref-alignment"></a>
+[Historical section: ref-alignment](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-alignment)
+
+<a id="ref-axiom"></a>
+[Historical section: ref-axiom](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-axiom)
+
+<a id="ref-cancer"></a>
+[Historical section: ref-cancer](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-cancer)
+
+<a id="ref-collective"></a>
+[Historical section: ref-collective](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-collective)
+
+<a id="ref-conditions"></a>
+[Historical section: ref-conditions](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-conditions)
+
+<a id="ref-count"></a>
+[Historical section: ref-count](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-count)
+
+<a id="ref-dao"></a>
+[Historical section: ref-dao](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-dao)
+
+<a id="ref-ethics"></a>
+[Historical section: ref-ethics](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-ethics)
+
+<a id="ref-good-evil"></a>
+[Historical section: ref-good-evil](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-good-evil)
+
+<a id="ref-guardian"></a>
+[Historical section: ref-guardian](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-guardian)
+
+<a id="ref-law"></a>
+[Historical section: ref-law](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-law)
+
+<a id="ref-meta"></a>
+[Historical section: ref-meta](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-meta)
+
+<a id="ref-no-law"></a>
+[Historical section: ref-no-law](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-no-law)
+
+<a id="ref-own"></a>
+[Historical section: ref-own](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-own)
+
+<a id="ref-present"></a>
+[Historical section: ref-present](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-present)
+
+<a id="ref-present-2"></a>
+[Historical section: ref-present-2](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-present-2)
+
+<a id="ref-proof"></a>
+[Historical section: ref-proof](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-proof)
+
+<a id="ref-race"></a>
+[Historical section: ref-race](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-race)
+
+<a id="ref-reach"></a>
+[Historical section: ref-reach](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-reach)
+
+<a id="ref-sages"></a>
+[Historical section: ref-sages](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-sages)
+
+<a id="ref-self"></a>
+[Historical section: ref-self](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-self)
+
+<a id="ref-transitions"></a>
+[Historical section: ref-transitions](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-transitions)
+
+<a id="ref-turn"></a>
+[Historical section: ref-turn](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-turn)
+
+<a id="ref-withholding"></a>
+[Historical section: ref-withholding](_process/architecture/history/3142e18e33fe4812/README.reading.md#ref-withholding)
+
 <a id="ren-的理论成果与进度--rens-theories-results-and-progress"></a>
-[Historical section: ren-的理论成果与进度--rens-theories-results-and-progress](_process/architecture/history/47dfae942acfeeb4/README.reading.md#ren-的理论成果与进度--rens-theories-results-and-progress)
+[Historical section: ren-的理论成果与进度--rens-theories-results-and-progress](_process/architecture/history/3142e18e33fe4812/README.reading.md#ren-的理论成果与进度--rens-theories-results-and-progress)
+
+<a id="research-and-repository"></a>
+[Historical section: research-and-repository](_process/architecture/history/3142e18e33fe4812/README.reading.md#research-and-repository)
+
+<a id="runaway-and-the-distance-to-the-break-that-does-not-couple-in"></a>
+[Historical section: runaway-and-the-distance-to-the-break-that-does-not-couple-in](_process/architecture/history/3142e18e33fe4812/README.reading.md#runaway-and-the-distance-to-the-break-that-does-not-couple-in)
+
+<a id="running-the-checks"></a>
+[Historical section: running-the-checks](_process/architecture/history/3142e18e33fe4812/README.reading.md#running-the-checks)
+
+<a id="selection-through-the-couplings"></a>
+[Historical section: selection-through-the-couplings](_process/architecture/history/3142e18e33fe4812/README.reading.md#selection-through-the-couplings)
+
+<a id="separation-loses-exactly-the-relation"></a>
+[Historical section: separation-loses-exactly-the-relation](_process/architecture/history/3142e18e33fe4812/README.reading.md#separation-loses-exactly-the-relation)
+
+<a id="the-capture-of-a-target-and-why-perturbing-the-state-alone-is-re-absorbed"></a>
+[Historical section: the-capture-of-a-target-and-why-perturbing-the-state-alone-is-re-absorbed](_process/architecture/history/3142e18e33fe4812/README.reading.md#the-capture-of-a-target-and-why-perturbing-the-state-alone-is-re-absorbed)
+
+<a id="the-continuation-condition-yields-living-significance"></a>
+[Historical section: the-continuation-condition-yields-living-significance](_process/architecture/history/3142e18e33fe4812/README.reading.md#the-continuation-condition-yields-living-significance)
+
+<a id="the-feeding-closure"></a>
+[Historical section: the-feeding-closure](_process/architecture/history/3142e18e33fe4812/README.reading.md#the-feeding-closure)
+
+<a id="the-theory-of-becoming"></a>
+[Historical section: the-theory-of-becoming](_process/architecture/history/3142e18e33fe4812/README.reading.md#the-theory-of-becoming)
+
+<a id="truth-exists"></a>
+[Historical section: truth-exists](_process/architecture/history/3142e18e33fe4812/README.reading.md#truth-exists)
+
+<a id="under-the-condition-of-section-615"></a>
+[Historical section: under-the-condition-of-section-615](_process/architecture/history/3142e18e33fe4812/README.reading.md#under-the-condition-of-section-615)
+
+<a id="what-is-established"></a>
+[Historical section: what-is-established](_process/architecture/history/3142e18e33fe4812/README.reading.md#what-is-established)
+
+<a id="where-seeking-rests-more-than-now-never-does-above-all-others-never-for-two"></a>
+[Historical section: where-seeking-rests-more-than-now-never-does-above-all-others-never-for-two](_process/architecture/history/3142e18e33fe4812/README.reading.md#where-seeking-rests-more-than-now-never-does-above-all-others-never-for-two)
 
 <a id="原文与谱系--sources-and-genealogy"></a>
-[Historical section: 原文与谱系--sources-and-genealogy](_process/architecture/history/47dfae942acfeeb4/README.reading.md#原文与谱系--sources-and-genealogy)
+[Historical section: 原文与谱系--sources-and-genealogy](_process/architecture/history/3142e18e33fe4812/README.reading.md#原文与谱系--sources-and-genealogy)
 
 <a id="已有的主要成果--main-results-so-far"></a>
-[Historical section: 已有的主要成果--main-results-so-far](_process/architecture/history/47dfae942acfeeb4/README.reading.md#已有的主要成果--main-results-so-far)
+[Historical section: 已有的主要成果--main-results-so-far](_process/architecture/history/3142e18e33fe4812/README.reading.md#已有的主要成果--main-results-so-far)
 
 <a id="查看理论与论证--browse-the-theory-and-arguments"></a>
-[Historical section: 查看理论与论证--browse-the-theory-and-arguments](_process/architecture/history/47dfae942acfeeb4/README.reading.md#查看理论与论证--browse-the-theory-and-arguments)
+[Historical section: 查看理论与论证--browse-the-theory-and-arguments](_process/architecture/history/3142e18e33fe4812/README.reading.md#查看理论与论证--browse-the-theory-and-arguments)
 
 <a id="目前继续探索什么--current-research-frontier"></a>
-[Historical section: 目前继续探索什么--current-research-frontier](_process/architecture/history/47dfae942acfeeb4/README.reading.md#目前继续探索什么--current-research-frontier)
+[Historical section: 目前继续探索什么--current-research-frontier](_process/architecture/history/3142e18e33fe4812/README.reading.md#目前继续探索什么--current-research-frontier)
 
 <a id="阅读与研究方法--reading-and-research-method"></a>
-[Historical section: 阅读与研究方法--reading-and-research-method](_process/architecture/history/47dfae942acfeeb4/README.reading.md#阅读与研究方法--reading-and-research-method)
+[Historical section: 阅读与研究方法--reading-and-research-method](_process/architecture/history/3142e18e33fe4812/README.reading.md#阅读与研究方法--reading-and-research-method)
 
 </details>
 
