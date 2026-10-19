@@ -5,7 +5,7 @@
 
 `which-links-a-closure-needs` · **recorded-checked** · theorem · F01 · [record](which-links-a-closure-needs.json) · [register](../../../../RESULTS.md)
 
-> A cut leaves every closure as it was exactly where each removed link is bypassed, and a join adds exactly what passes through it. Growth by attachment makes every link needed; one added link frees exactly the links it crosses. A system needs a condition where its takers meet only through it.
+> A cut leaves every closure as it was exactly where each removed link is bypassed, and a join adds exactly what passes through it. In a world grown by attachment every condition is needed; one added condition frees exactly the grown ones it crosses.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -13,21 +13,23 @@
 1. Removing the links of added from a relation leaves every closure as it was exactly where each removed link has its second end within its first end's closure under what remains; for one link read both ways, exactly where each end lies within the other's closure, and under a symmetric relation where one does. (`Becoming.Cuts.Joined`, `Becoming.Cuts.Link`, `Becoming.Cuts.link_symm`, `Becoming.Cuts.within_congr`, `Becoming.Cuts.within_of_steps`, `Becoming.Cuts.closure_unchanged_iff_bypassed`, `Becoming.Cuts.link_cut_unchanged_iff`, `Becoming.Cuts.link_cut_unchanged_iff_of_symm`)
 2. After a link between a and b is joined, g lies within f's closure exactly where it did, or f reaches one of a, b and the other reaches g; no symmetry and no decision is used. (`Becoming.Cuts.within_link_iff`)
 3. A formation that takes part in no link reaches only itself and nothing else reaches it, so attaching it by one link changes no closure among the other formations. (`Becoming.Cuts.Unlinked`, `Becoming.Cuts.within_of_unlinked`, `Becoming.Cuts.not_within_unlinked`, `Becoming.Cuts.within_attached_iff`)
-4. In a list of links each attaching, to another formation, one that took part in no earlier link, each link is listed once, and removing any one leaves its ends apart, whatever came before or after it. (`Becoming.Cuts.Links`, `Becoming.Cuts.links_symm`, `Becoming.Cuts.links_split`, `Becoming.Cuts.links_of_mem`, `Becoming.Cuts.Attaches`, `Becoming.Cuts.Attaches.suffix`, `Becoming.Cuts.Attaches.listed_once`, `Becoming.Cuts.attached_link_separates`)
+4. In a list of links each attaching, to another formation, one that took part in no earlier link, each link is listed once, and removing any one leaves its ends apart, whatever came before or after it. (`Becoming.Cuts.Links`, `Becoming.Cuts.links_symm`, `Becoming.Cuts.links_split`, `Becoming.Cuts.links_of_mem`, `Becoming.Cuts.Attaches`, `Becoming.Cuts.Attaches.suffix`, `Becoming.Cuts.Attaches.listed_once`, `Becoming.Cuts.attached_link_separates`, `Becoming.Cuts.Attaches.distinct`, `Becoming.Cuts.links_mem`, `Becoming.Cuts.links_of_link`, `Becoming.Cuts.mem_split`, `Becoming.Cuts.mem_widen`, `Becoming.Cuts.mem_set_apart`, `Becoming.Cuts.mem_append_cases`, `Becoming.Cuts.mem_append_right`, `Becoming.Cuts.exists_split`, `Becoming.Cuts.append_cons_assoc`)
 5. With one more link joined between a and b, a grown link p–n is bypassed exactly where p reaches one of a, b and the other reaches n without it; cutting it then changes no closure exactly there. (`Becoming.Cuts.joined_bypass_iff`, `Becoming.Cuts.joined_cut_unchanged_iff`)
 6. On the base, every system is what it is through the conditions other than c exactly where any two formations taking part in c lie in one system through the others; a condition one formation takes part in is needed by no system. (`Becoming.Flow.SharesBeside`, `Becoming.Flow.BothTakePart`, `Becoming.Flow.shares_iff_beside`, `Becoming.Flow.system_unchanged_without_iff`, `Becoming.Flow.system_unchanged_of_single`)
 7. Where exactly a and b take part in c, g lies within f's system exactly where it does through the other conditions, or f reaches one of them and the other reaches g; a formation taking part only in c is alone without it, and one taking part in no condition has only itself in its system. (`Becoming.Flow.withinSystem_two_takers_iff`, `Becoming.Flow.alone_beside_of_only`, `Becoming.Flow.withinSystem_of_no_part`)
+8. In a world grown by attachment, each new formation taking part only in a condition exactly one earlier formation takes part in, the systems are the closures of the grown links; each grown condition is attached at one place and is needed, its two takers lying in one system and apart without it; the latest formation is alone without its condition; and what grew up to any stage is grown by attachment beside the later conditions. (`Becoming.Flow.SharesOutside`, `Becoming.Flow.GrownBy`, `Becoming.Flow.GrownBy.takes_part_of_link`, `Becoming.Flow.GrownBy.link_of_takers`, `Becoming.Flow.GrownBy.cond_ne`, `Becoming.Flow.GrownBy.attached_only`, `Becoming.Flow.GrownBy.outside_step`, `Becoming.Flow.GrownBy.outside_of_link`, `Becoming.Flow.GrownBy.within_outside_iff`, `Becoming.Flow.GrownBy.within_outside_added_iff`, `Becoming.Flow.GrownBy.condition_needed`, `Becoming.Flow.GrownBy.every_condition_needed`, `Becoming.Flow.GrownBy.latest_alone`, `Becoming.Flow.GrownBy.suffix`)
+9. With one more condition exactly a and b take part in, the takers p and n of the condition that attached n lie in one system through the other conditions, and every system is what it is without it, exactly where p reaches one of a, b and the other reaches n through the conditions other than these two. (`Becoming.Flow.within_of_two_takers`, `Becoming.Flow.GrownBy.beside_iff`, `Becoming.Flow.GrownBy.system_iff`, `Becoming.Flow.GrownBy.bypass_iff`, `Becoming.Flow.GrownBy.cut_unchanged_iff`)
 
 <a id="conditions--条件"></a>
 ## Conditions
 
-- No axiom and no premise beyond the relation in the general laws. On the base, splitting sharing a condition into sharing c and sharing another needs equality of conditions decided, given as DecidableEq C; withinSystem_two_takers_iff takes the list of c's takers as its hypothesis.
+- No axiom and no premise beyond the relation in the general laws. On the base, splitting sharing a condition into sharing c and sharing another needs equality of conditions decided, given as DecidableEq C; withinSystem_two_takers_iff and the join law take the list of a condition's takers as a hypothesis; growth by attachment is the hypothesis Flow.GrownBy on a list of entries.
 
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
 - Which links form or are cut, when, or what a cut or a join takes; the laws take the relation as given.
-- Growth by attachment read on the base: the laws of a list of attachments are stated on any relation, and read only in the periphery, on bodies grown by division.
+- Whether a world grew by attachment, or in which order: Flow.GrownBy takes the list as a hypothesis; nor several added conditions at once, or added conditions with more than two takers.
 - That keeping, cutting or adding a link supports 生生; a needed link is needed by a closure, not by a valuation.
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Uses decidability of the named determinations, a logical commitment written as a hypothesis. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -35,14 +37,14 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T052230.247441Z): the 31 declarations of Becoming.Cuts, 24 of them theorems, have empty axiom reports; the checker verifies core purity. The growth-constrained-fragmentation record holds the periphery instances. Author self-review in study section 190; not independently reviewed.
+Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T054535.337999Z): the 60 declarations of Becoming.Cuts, 51 of them theorems, have empty axiom reports; the checker verifies core purity. The growth-constrained-fragmentation record holds the periphery instances. Author self-review in study sections 190 and 191; not independently reviewed.
 
 Canonical source: [Cuts.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean)
 
 <a id="next--下一步"></a>
 ## Next
 
-Growth by attachment read on the base, a world in which each new formation takes part only in a condition shared with one earlier formation; several joins at once and the count of links a whole needs; how links form and are cut along a run; an independent review.
+Several joins at once and the cycle law; added conditions with more than two takers; the count of links or conditions a whole needs; how links form and are cut along a run; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -67,20 +69,21 @@ GrownFragmentation proved its bypass and its certified tree cuts for two hand-bu
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [Cuts.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean) | `Becoming.Cuts.Attaches`, `Becoming.Cuts.Attaches.listed_once`, `Becoming.Cuts.Attaches.suffix`, `Becoming.Cuts.Joined`, `Becoming.Cuts.Link`, `Becoming.Cuts.Links`, `Becoming.Cuts.Unlinked`, `Becoming.Cuts.attached_link_separates`, `Becoming.Cuts.closure_unchanged_iff_bypassed`, `Becoming.Cuts.joined_bypass_iff`, `Becoming.Cuts.joined_cut_unchanged_iff`, `Becoming.Cuts.link_cut_unchanged_iff`, `Becoming.Cuts.link_cut_unchanged_iff_of_symm`, `Becoming.Cuts.link_symm`, `Becoming.Cuts.links_of_mem`, `Becoming.Cuts.links_split`, `Becoming.Cuts.links_symm`, `Becoming.Cuts.not_within_unlinked`, `Becoming.Cuts.within_attached_iff`, `Becoming.Cuts.within_congr`, `Becoming.Cuts.within_link_iff`, `Becoming.Cuts.within_of_steps`, `Becoming.Cuts.within_of_unlinked`, `Becoming.Flow.BothTakePart`, `Becoming.Flow.SharesBeside`, `Becoming.Flow.alone_beside_of_only`, `Becoming.Flow.shares_iff_beside`, `Becoming.Flow.system_unchanged_of_single`, `Becoming.Flow.system_unchanged_without_iff`, `Becoming.Flow.withinSystem_of_no_part`, `Becoming.Flow.withinSystem_two_takers_iff` |
-| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json) | — |
+| proof | [Cuts.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean) | `Becoming.Cuts.Attaches`, `Becoming.Cuts.Attaches.distinct`, `Becoming.Cuts.Attaches.listed_once`, `Becoming.Cuts.Attaches.suffix`, `Becoming.Cuts.Joined`, `Becoming.Cuts.Link`, `Becoming.Cuts.Links`, `Becoming.Cuts.Unlinked`, `Becoming.Cuts.append_cons_assoc`, `Becoming.Cuts.attached_link_separates`, `Becoming.Cuts.closure_unchanged_iff_bypassed`, `Becoming.Cuts.exists_split`, `Becoming.Cuts.joined_bypass_iff`, `Becoming.Cuts.joined_cut_unchanged_iff`, `Becoming.Cuts.link_cut_unchanged_iff`, `Becoming.Cuts.link_cut_unchanged_iff_of_symm`, `Becoming.Cuts.link_symm`, `Becoming.Cuts.links_mem`, `Becoming.Cuts.links_of_link`, `Becoming.Cuts.links_of_mem`, `Becoming.Cuts.links_split`, `Becoming.Cuts.links_symm`, `Becoming.Cuts.mem_append_cases`, `Becoming.Cuts.mem_append_right`, `Becoming.Cuts.mem_set_apart`, `Becoming.Cuts.mem_split`, `Becoming.Cuts.mem_widen`, `Becoming.Cuts.not_within_unlinked`, `Becoming.Cuts.within_attached_iff`, `Becoming.Cuts.within_congr`, `Becoming.Cuts.within_link_iff`, `Becoming.Cuts.within_of_steps`, `Becoming.Cuts.within_of_unlinked`, `Becoming.Flow.BothTakePart`, `Becoming.Flow.GrownBy`, `Becoming.Flow.GrownBy.attached_only`, `Becoming.Flow.GrownBy.beside_iff`, `Becoming.Flow.GrownBy.bypass_iff`, `Becoming.Flow.GrownBy.cond_ne`, `Becoming.Flow.GrownBy.condition_needed`, `Becoming.Flow.GrownBy.cut_unchanged_iff`, `Becoming.Flow.GrownBy.every_condition_needed`, `Becoming.Flow.GrownBy.latest_alone`, `Becoming.Flow.GrownBy.link_of_takers`, `Becoming.Flow.GrownBy.outside_of_link`, `Becoming.Flow.GrownBy.outside_step`, `Becoming.Flow.GrownBy.suffix`, `Becoming.Flow.GrownBy.system_iff`, `Becoming.Flow.GrownBy.takes_part_of_link`, `Becoming.Flow.GrownBy.within_outside_added_iff`, `Becoming.Flow.GrownBy.within_outside_iff`, `Becoming.Flow.SharesBeside`, `Becoming.Flow.SharesOutside`, `Becoming.Flow.alone_beside_of_only`, `Becoming.Flow.shares_iff_beside`, `Becoming.Flow.system_unchanged_of_single`, `Becoming.Flow.system_unchanged_without_iff`, `Becoming.Flow.withinSystem_of_no_part`, `Becoming.Flow.withinSystem_two_takers_iff`, `Becoming.Flow.within_of_two_takers` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json) | — |
 | proof | [Feedback.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean) | `Becoming.ClosedUnder`, `Becoming.WithinClosure`, `Becoming.Flow.TakesPart`, `Becoming.Flow.Shares`, `Becoming.Flow.WithinSystem` |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-19-general-laws-from-examples.md](../../../../sources/15-codex-theory-conversations/2026-10-19-general-laws-from-examples.md) | — |
 
-Aliases: `which links a closure needs`, `闭包需要哪些联系`, `cut changes no closure exactly where bypassed`, `被绕过的切断不改变闭包`, `every link grown by attachment is needed`, `依附式生长的每条联系都被需要`, `which conditions a system needs`, `系统需要哪些条件`, `Becoming.Cuts.closure_unchanged_iff_bypassed`, `Becoming.Cuts.attached_link_separates`, `Becoming.Flow.system_unchanged_without_iff`
+Aliases: `which links a closure needs`, `闭包需要哪些联系`, `cut changes no closure exactly where bypassed`, `被绕过的切断不改变闭包`, `every link grown by attachment is needed`, `依附式生长的每条联系都被需要`, `which conditions a system needs`, `系统需要哪些条件`, `Becoming.Cuts.closure_unchanged_iff_bypassed`, `Becoming.Cuts.attached_link_separates`, `Becoming.Flow.system_unchanged_without_iff`, `every condition of a world grown by attachment is needed`, `依附式生长的世界的每个条件都被需要`, `Becoming.Flow.GrownBy.condition_needed`, `Becoming.Flow.GrownBy.cut_unchanged_iff`
 
 <a id="history--沿革"></a>
 ### History
 
 - 19 October 2026: added (K1), on Ren's "let's make these limited, non general laws, into general ones", after his questions on GrownFragmentation's bypass theorems; study section 190.
+- 19 October 2026, K2: growth by attachment read on the base (Flow.GrownBy): every grown condition is needed, and one added condition frees exactly the grown ones it crosses; laws 8 and 9 added, law 4 gains its list lemmas; study section 191. The earlier laws are unchanged.
 
 </details>
 
-Documentary review UTC: `2026-10-19T05:28:49+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.
+Documentary review UTC: `2026-10-19T05:50:23+00:00`. Hashes in the record bind the reviewed sources; the checker does not audit transitive Lean imports or establish premise warrant, and this page is not a proof receipt.

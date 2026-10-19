@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-19T05:28:49+00:00",
+  "reviewed_at_utc": "2026-10-19T05:50:23+00:00",
   "statement": {
-    "en": "A cut leaves every closure as it was exactly where each removed link is bypassed, and a join adds exactly what passes through it. Growth by attachment makes every link needed; one added link frees exactly the links it crosses. A system needs a condition where its takers meet only through it.",
-    "zh": "切断使每个闭包保持原样，恰当每条被去掉的联系被绕过；连上一条联系，恰好添上经它通过的。依附式生长使每条联系都被需要；多连一条联系，恰使它跨过的联系不再被需要。系统需要一个条件，恰在参与者只经它相遇之处。"
+    "en": "A cut leaves every closure as it was exactly where each removed link is bypassed, and a join adds exactly what passes through it. In a world grown by attachment every condition is needed; one added condition frees exactly the grown ones it crosses.",
+    "zh": "切断使每个闭包保持原样，恰当每条被去掉的联系被绕过；连上一条联系，恰好添上经它通过的。在依附式生长的世界中，每个条件都被需要；多一个条件，恰使它跨过的生长出的条件不再被需要。"
   },
   "laws": [
     {
@@ -56,7 +56,17 @@
         "Becoming.Cuts.Attaches",
         "Becoming.Cuts.Attaches.suffix",
         "Becoming.Cuts.Attaches.listed_once",
-        "Becoming.Cuts.attached_link_separates"
+        "Becoming.Cuts.attached_link_separates",
+        "Becoming.Cuts.Attaches.distinct",
+        "Becoming.Cuts.links_mem",
+        "Becoming.Cuts.links_of_link",
+        "Becoming.Cuts.mem_split",
+        "Becoming.Cuts.mem_widen",
+        "Becoming.Cuts.mem_set_apart",
+        "Becoming.Cuts.mem_append_cases",
+        "Becoming.Cuts.mem_append_right",
+        "Becoming.Cuts.exists_split",
+        "Becoming.Cuts.append_cons_assoc"
       ]
     },
     {
@@ -86,12 +96,43 @@
         "Becoming.Flow.alone_beside_of_only",
         "Becoming.Flow.withinSystem_of_no_part"
       ]
+    },
+    {
+      "en": "In a world grown by attachment, each new formation taking part only in a condition exactly one earlier formation takes part in, the systems are the closures of the grown links; each grown condition is attached at one place and is needed, its two takers lying in one system and apart without it; the latest formation is alone without its condition; and what grew up to any stage is grown by attachment beside the later conditions.",
+      "zh": "在依附式生长的世界中（每个新形成只参与恰有一个先前形成也参与的条件），系统就是生长出的联系的闭包；每个生长出的条件只在一处接上，并且被需要：它的两个参与者处于同一系统，没有它就分开；最后接上的形成没有它的条件就是孤立的；生长到任何阶段为止的部分，在其后接上的条件之旁，也是依附式生长的。",
+      "declarations": [
+        "Becoming.Flow.SharesOutside",
+        "Becoming.Flow.GrownBy",
+        "Becoming.Flow.GrownBy.takes_part_of_link",
+        "Becoming.Flow.GrownBy.link_of_takers",
+        "Becoming.Flow.GrownBy.cond_ne",
+        "Becoming.Flow.GrownBy.attached_only",
+        "Becoming.Flow.GrownBy.outside_step",
+        "Becoming.Flow.GrownBy.outside_of_link",
+        "Becoming.Flow.GrownBy.within_outside_iff",
+        "Becoming.Flow.GrownBy.within_outside_added_iff",
+        "Becoming.Flow.GrownBy.condition_needed",
+        "Becoming.Flow.GrownBy.every_condition_needed",
+        "Becoming.Flow.GrownBy.latest_alone",
+        "Becoming.Flow.GrownBy.suffix"
+      ]
+    },
+    {
+      "en": "With one more condition exactly a and b take part in, the takers p and n of the condition that attached n lie in one system through the other conditions, and every system is what it is without it, exactly where p reaches one of a, b and the other reaches n through the conditions other than these two.",
+      "zh": "再多一个恰有 a 与 b 参与的条件后，接上 n 的那个条件的参与者 p 与 n 经其余条件处于同一系统、且每个系统没有它仍是原样，恰当经这两个条件以外的条件，p 到达 a、b 之一而另一个到达 n。",
+      "declarations": [
+        "Becoming.Flow.within_of_two_takers",
+        "Becoming.Flow.GrownBy.beside_iff",
+        "Becoming.Flow.GrownBy.system_iff",
+        "Becoming.Flow.GrownBy.bypass_iff",
+        "Becoming.Flow.GrownBy.cut_unchanged_iff"
+      ]
     }
   ],
   "hypotheses": [
     {
-      "en": "No axiom and no premise beyond the relation in the general laws. On the base, splitting sharing a condition into sharing c and sharing another needs equality of conditions decided, given as DecidableEq C; withinSystem_two_takers_iff takes the list of c's takers as its hypothesis.",
-      "zh": "一般规律除关系本身外不加公理、不加前提。在基上，把共享条件分成共享 c 与共享其他条件，需要条件相等可判定，以 DecidableEq C 给出；withinSystem_two_takers_iff 以 c 的参与者为假设。"
+      "en": "No axiom and no premise beyond the relation in the general laws. On the base, splitting sharing a condition into sharing c and sharing another needs equality of conditions decided, given as DecidableEq C; withinSystem_two_takers_iff and the join law take the list of a condition's takers as a hypothesis; growth by attachment is the hypothesis Flow.GrownBy on a list of entries.",
+      "zh": "一般规律除关系本身外不加公理、不加前提。在基上，把共享条件分成共享 c 与共享其他条件，需要条件相等可判定，以 DecidableEq C 给出；withinSystem_two_takers_iff 与连接规律以一个条件的参与者为假设；依附式生长是对一列条目的假设 Flow.GrownBy。"
     }
   ],
   "does_not_show": [
@@ -101,8 +142,8 @@
       "kind": "scope"
     },
     {
-      "en": "Growth by attachment read on the base: the laws of a list of attachments are stated on any relation, and read only in the periphery, on bodies grown by division.",
-      "zh": "依附式生长在基上的读法：一列依附的规律对任何关系陈述，只在外围、在经分裂生长的身体上被读。",
+      "en": "Whether a world grew by attachment, or in which order: Flow.GrownBy takes the list as a hypothesis; nor several added conditions at once, or added conditions with more than two takers.",
+      "zh": "一个世界是否依附式生长、以何种次序：Flow.GrownBy 以这列条目为假设；也不涉及同时多加几个条件，或多于两个参与者的新增条件。",
       "kind": "scope"
     },
     {
@@ -121,12 +162,12 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T052230.247441Z): the 31 declarations of Becoming.Cuts, 24 of them theorems, have empty axiom reports; the checker verifies core purity. The growth-constrained-fragmentation record holds the periphery instances. Author self-review in study section 190; not independently reviewed.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T052230.247441Z）：Becoming.Cuts 的 31 项声明（24 项定理）公理报告为空；检查器并核对核心纯净。外围实例见 growth-constrained-fragmentation。作者自审见研究第 190 节；未经独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T054535.337999Z): the 60 declarations of Becoming.Cuts, 51 of them theorems, have empty axiom reports; the checker verifies core purity. The growth-constrained-fragmentation record holds the periphery instances. Author self-review in study sections 190 and 191; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T054535.337999Z）：Becoming.Cuts 的 60 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。外围实例见 growth-constrained-fragmentation。作者自审见研究第 190、191 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Growth by attachment read on the base, a world in which each new formation takes part only in a condition shared with one earlier formation; several joins at once and the count of links a whole needs; how links form and are cut along a run; an independent review.",
-    "zh": "依附式生长在基上的读法：每个新形成只参与与一个先前形成共享的条件的世界；同时多处连接，以及一个整体所需的联系数；联系如何沿一次运行形成与被切断；独立审查。"
+    "en": "Several joins at once and the cycle law; added conditions with more than two takers; the count of links or conditions a whole needs; how links form and are cut along a run; an independent review.",
+    "zh": "同时多处连接与回路规律；多于两个参与者的新增条件；一个整体所需的联系或条件数；联系如何沿一次运行形成与被切断；独立审查。"
   },
   "correspondence": {
     "en": "GrownFragmentation proved its bypass and its certified tree cuts for two hand-built bodies by kernel computation. Ren, 19 October 2026, asked \"why these numbers? is this really a proof?\", then which of its theorems are general laws, then \"let's make these limited, non general laws, into general ones\" (provenance, not warrant). Reading (the AI's): a link is needed by a closure exactly where nothing else carries what it carries; growth by attachment alone makes every link needed, and a link that closes a loop makes needless exactly the links on it.",
@@ -144,7 +185,11 @@
     "系统需要哪些条件",
     "Becoming.Cuts.closure_unchanged_iff_bypassed",
     "Becoming.Cuts.attached_link_separates",
-    "Becoming.Flow.system_unchanged_without_iff"
+    "Becoming.Flow.system_unchanged_without_iff",
+    "every condition of a world grown by attachment is needed",
+    "依附式生长的世界的每个条件都被需要",
+    "Becoming.Flow.GrownBy.condition_needed",
+    "Becoming.Flow.GrownBy.cut_unchanged_iff"
   ],
   "dependencies": [
     {
@@ -186,22 +231,32 @@
       "role": "proof",
       "declarations": [
         "Becoming.Cuts.Attaches",
+        "Becoming.Cuts.Attaches.distinct",
         "Becoming.Cuts.Attaches.listed_once",
         "Becoming.Cuts.Attaches.suffix",
         "Becoming.Cuts.Joined",
         "Becoming.Cuts.Link",
         "Becoming.Cuts.Links",
         "Becoming.Cuts.Unlinked",
+        "Becoming.Cuts.append_cons_assoc",
         "Becoming.Cuts.attached_link_separates",
         "Becoming.Cuts.closure_unchanged_iff_bypassed",
+        "Becoming.Cuts.exists_split",
         "Becoming.Cuts.joined_bypass_iff",
         "Becoming.Cuts.joined_cut_unchanged_iff",
         "Becoming.Cuts.link_cut_unchanged_iff",
         "Becoming.Cuts.link_cut_unchanged_iff_of_symm",
         "Becoming.Cuts.link_symm",
+        "Becoming.Cuts.links_mem",
+        "Becoming.Cuts.links_of_link",
         "Becoming.Cuts.links_of_mem",
         "Becoming.Cuts.links_split",
         "Becoming.Cuts.links_symm",
+        "Becoming.Cuts.mem_append_cases",
+        "Becoming.Cuts.mem_append_right",
+        "Becoming.Cuts.mem_set_apart",
+        "Becoming.Cuts.mem_split",
+        "Becoming.Cuts.mem_widen",
         "Becoming.Cuts.not_within_unlinked",
         "Becoming.Cuts.within_attached_iff",
         "Becoming.Cuts.within_congr",
@@ -209,21 +264,40 @@
         "Becoming.Cuts.within_of_steps",
         "Becoming.Cuts.within_of_unlinked",
         "Becoming.Flow.BothTakePart",
+        "Becoming.Flow.GrownBy",
+        "Becoming.Flow.GrownBy.attached_only",
+        "Becoming.Flow.GrownBy.beside_iff",
+        "Becoming.Flow.GrownBy.bypass_iff",
+        "Becoming.Flow.GrownBy.cond_ne",
+        "Becoming.Flow.GrownBy.condition_needed",
+        "Becoming.Flow.GrownBy.cut_unchanged_iff",
+        "Becoming.Flow.GrownBy.every_condition_needed",
+        "Becoming.Flow.GrownBy.latest_alone",
+        "Becoming.Flow.GrownBy.link_of_takers",
+        "Becoming.Flow.GrownBy.outside_of_link",
+        "Becoming.Flow.GrownBy.outside_step",
+        "Becoming.Flow.GrownBy.suffix",
+        "Becoming.Flow.GrownBy.system_iff",
+        "Becoming.Flow.GrownBy.takes_part_of_link",
+        "Becoming.Flow.GrownBy.within_outside_added_iff",
+        "Becoming.Flow.GrownBy.within_outside_iff",
         "Becoming.Flow.SharesBeside",
+        "Becoming.Flow.SharesOutside",
         "Becoming.Flow.alone_beside_of_only",
         "Becoming.Flow.shares_iff_beside",
         "Becoming.Flow.system_unchanged_of_single",
         "Becoming.Flow.system_unchanged_without_iff",
         "Becoming.Flow.withinSystem_of_no_part",
-        "Becoming.Flow.withinSystem_two_takers_iff"
+        "Becoming.Flow.withinSystem_two_takers_iff",
+        "Becoming.Flow.within_of_two_takers"
       ],
-      "sha256": "fbfe48e0e05f9c1c949974c0db59147fbd24d58698a3a8debc5bf9a4779f4567"
+      "sha256": "650c1e1511eda6e5a48e2e407a0c65ae2789795425f8490a51c815e0998de6f6"
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
       "role": "receipt",
       "declarations": [],
-      "sha256": "344fec8520c9db87e7a2c4f007e3d1176f10b40a8059cb6cc4bb26d9aa75e4cc"
+      "sha256": "f6f3160528efc7d709a50d0e28acf9b41650e0a103b23d0e0bb516789697c0e6"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
@@ -241,13 +315,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "795ee66b7617a5638527b6a3eacd9e91e7d433c1aca73bfdfa8fce2b388c8771"
+      "sha256": "90d01eea8d2e184e9c7fad6829792d06c22f772736244d4b93e3f7c913fcbfb1"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "662a32738fcee0142ffd75678de04e2d5c59b8a28c96c2a073672f582e3a8449"
+      "sha256": "b58d514e64729b55969d6642696287da9f33fcebe11eb9930ceaf9fb923313c9"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-general-laws-from-examples.md",
@@ -259,14 +333,14 @@
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Cuts",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feedback",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -276,6 +350,10 @@
     {
       "en": "19 October 2026: added (K1), on Ren's \"let's make these limited, non general laws, into general ones\", after his questions on GrownFragmentation's bypass theorems; study section 190.",
       "zh": "2026年10月19日：新增（K1），按 Ren 的 \"let's make these limited, non general laws, into general ones\"，在他就 GrownFragmentation 的绕行定理提问之后；研究第 190 节。"
+    },
+    {
+      "en": "19 October 2026, K2: growth by attachment read on the base (Flow.GrownBy): every grown condition is needed, and one added condition frees exactly the grown ones it crosses; laws 8 and 9 added, law 4 gains its list lemmas; study section 191. The earlier laws are unchanged.",
+      "zh": "2026年10月19日，K2：依附式生长在基上的读法（Flow.GrownBy）：每个生长出的条件都被需要，多一个条件恰使它跨过的生长出的条件不再被需要；新增规律 8、9，规律 4 添上其列表引理；研究第 191 节。原有规律不变。"
     }
   ]
 }

@@ -1674,18 +1674,8 @@
   },
   "Becoming.Cuts.Attaches.listed_once": {
    "module": "Becoming.Cuts",
-   "category": "general-structure",
-   "reason": "a law of any relation grown by a list of attachments; the base has no lists of links or growth by attachment to read it on (its laws of cutting and joining one link are read on the base by Flow.system_unchanged_without_iff and Flow.withinSystem_two_takers_iff), and it is read in the periphery on bodies grown by division (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff)"
-  },
-  "Becoming.Cuts.Attaches.suffix": {
-   "module": "Becoming.Cuts",
-   "category": "general-structure",
-   "reason": "a law of any relation grown by a list of attachments; the base has no lists of links or growth by attachment to read it on (its laws of cutting and joining one link are read on the base by Flow.system_unchanged_without_iff and Flow.withinSystem_two_takers_iff), and it is read in the periphery on bodies grown by division (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff)"
-  },
-  "Becoming.Cuts.joined_cut_unchanged_iff": {
-   "module": "Becoming.Cuts",
-   "category": "general-structure",
-   "reason": "a law of any relation grown by a list of attachments; the base has no lists of links or growth by attachment to read it on (its laws of cutting and joining one link are read on the base by Flow.system_unchanged_without_iff and Flow.withinSystem_two_takers_iff), and it is read in the periphery on bodies grown by division (PreparationCorrespondence.bond_cut_separates, aggregate_cut_unchanged_iff)"
+   "category": "restates",
+   "reason": "each link grown by attachment is listed once, a law of the list; its reading on the world, that each condition of a world grown by attachment is attached at one place, is stated on the base by Flow.GrownBy.cond_ne, which is stronger (no other entry attaches the same condition, whatever its pair) and is proved from Cuts.attached_link_separates, so nothing on the base needs listed_once"
   }
  }
 }

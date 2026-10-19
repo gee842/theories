@@ -202,11 +202,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
       "role": "proof",
-      "sha256": "fbfe48e0e05f9c1c949974c0db59147fbd24d58698a3a8debc5bf9a4779f4567",
+      "sha256": "650c1e1511eda6e5a48e2e407a0c65ae2789795425f8490a51c815e0998de6f6",
       "declarations": [
         "Becoming.Cuts.attached_link_separates",
         "Becoming.Cuts.joined_cut_unchanged_iff"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
+      "role": "receipt",
+      "sha256": "f6f3160528efc7d709a50d0e28acf9b41650e0a103b23d0e0bb516789697c0e6",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json",
@@ -246,7 +252,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Cuts.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T052230.247441Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T054535.337999Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Cuts",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -311,6 +317,10 @@
     {
       "en": "19 October 2026, K1: K1 added to PreparationCorrespondence a section reading Becoming.Cuts (study section 190; Ren, 19 October 2026: \"let's make these limited, non general laws, into general ones\"); the earlier declarations are unchanged. The example theorems are now cases of general laws: every bond of every body grown by division separates its ends when cut (bond_cut_separates, every_grown_bond_separates, by Cuts.attached_link_separates), and after one aggregation a grown bond is bypassed exactly where the aggregated bond crosses it (aggregate_cut_unchanged_iff, by Cuts.joined_cut_unchanged_iff), the reinforced chain being a case (reinforced_cut_unchanged). Instance receipt 20261019T052332.277017Z; the claim and its scope are unchanged.",
       "zh": "2026年10月19日，K1：PreparationCorrespondence 新增一节读 Becoming.Cuts（研究第 190 节）。示例定理成为一般规律的情形：经分裂生长的每个身体的每条键被切断时两端分开，一次聚合后生长出的键被绕过恰在聚合键跨过它之处，加固链是一例。实例回执 20261019T052332.277017Z；论断与范围不变。"
+    },
+    {
+      "en": "19 October 2026, K2: Cuts.lean gained the laws of growth by attachment on the base (study section 191); the two Cuts declarations this record cites are unchanged, and its binding moves to core receipt 20261019T054535.337999Z. The claim is unchanged.",
+      "zh": "2026年10月19日，K2：Cuts.lean 新增依附式生长在基上的规律（研究第 191 节）；本记录所引的两项 Cuts 声明不变，其绑定移到核心回执 20261019T054535.337999Z。论断不变。"
     }
   ]
 }
