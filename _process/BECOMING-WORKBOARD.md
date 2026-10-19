@@ -47,7 +47,7 @@ Landed since 15 October (full receipts, record counts and study sections are in 
 
 ## Decisions pending Ren
 
-Two proposals, from R25 (20 October 2026; [study §218](research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), neither applied:
+Two proposals, from R25 (20 October 2026; [study §218](research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#218-r25-the-twentieth-reviews-step-1-docs-now)), **approved by Ren on 20 October 2026** ([source](../sources/15-codex-theory-conversations/2026-10-20-fix-all-twentieth-review.md)); R35 applies them in GOALS, the record and RESEARCH-DIRECTIVES and then removes them from this section:
 - **Target 1's formal part** (a goal scope). The target asks “that every becoming can be represented as the spine represents worlds”, which no proof settles as worded. Proposed restatement: every central law of the spine stated over every law, or relation, of exchange (`ExchangeLaw`, `ExchangeRelation`), each `World` premise shown to be a reading of the exchange or a state of the law, and the process and world families joined by definition; that the whole's determinations are internally related moments of one unfolding stays the philosophical part. GOALS and the record `theory-of-becoming-foundation` keep the current wording until decided.
 - **A completion criterion a script can check, K1–K7** (coverage, unity, premises, representation, enclosure, the ethics chain, the open register; twentieth review D1). Adopting it changes this page's target sentence and RESEARCH-DIRECTIVES' four parts; until it runs, the chapter's item 11 claims completeness only in the qualified sense it now states.
 
