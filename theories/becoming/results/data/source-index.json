@@ -109,6 +109,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
@@ -422,6 +423,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/v-collective-continuation/BRIEF.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y5/ro_chapter.py",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/y5/ro_fixes.py",
         "drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean",
@@ -2691,6 +2694,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
@@ -5211,6 +5215,26 @@
         "theories/becoming/history/THEORY-OF-BECOMING.md"
       ]
     },
+    "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md": {
+      "title": "中国思想的关系本体与生成之论：诸传统在脊柱上的对应",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/atlas-excerpt.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
+        "sources/15-codex-theory-conversations/2026-10-19-relational-ontology-of-chinese-thought.md",
+        "sources/chinese-classical-texts/PROVENANCE.json",
+        "sources/chinese-classical-texts/README.md",
+        "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+        "theories/becoming/chapters/HANZI-AND-THEORY-TREE.md",
+        "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
+        "theories/becoming/chapters/NONDUAL-METHOD.md",
+        "theories/becoming/chapters/PRE-QIN-AND-WENYAN.md",
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/chapters/WANG-YANGMING.md",
+        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md"
+      ]
+    },
     "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md": {
       "title": "Joint choice, limited aggregation and context",
       "local_links": [
@@ -6034,6 +6058,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
@@ -6121,7 +6146,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T130738.412710Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T140534.048868Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
@@ -6292,6 +6317,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
@@ -6518,10 +6544,12 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md",
-        "sources/zhouyi-yizhuan/PROVENANCE.json"
+        "sources/zhouyi-yizhuan/PROVENANCE.json",
+        "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md"
       ]
     },
     "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md": {

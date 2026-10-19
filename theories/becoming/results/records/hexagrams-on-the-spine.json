@@ -174,8 +174,8 @@
       "kind": "correspondence"
     },
     {
-      "en": "The judgments of fortune (吉凶悔吝), the images of 說卦, the order's own reasons (序卦), divination and number lore; the relations of the places are in place-relations-in-context.",
-      "zh": "吉凶悔吝之判断、說卦的取象、卦序本身的次第之理、占筮与数术；爻位之关系见 place-relations-in-context。",
+      "en": "The judgments of fortune (吉凶悔吝), the images of 說卦, the 序卦's reasons between pairs (which laws run the order is in hexagram-arrangements-and-laws), divination and number lore; the relations of the places are in place-relations-in-context.",
+      "zh": "吉凶悔吝之判断、說卦的取象、序卦在对与对之间的理由（何种律运行卦序，见 hexagram-arrangements-and-laws）、占筮与数术；爻位之关系见 place-relations-in-context。",
       "kind": "scope"
     },
     {
@@ -198,8 +198,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T092027.048735Z）：Becoming.Hexagrams 的 98 项声明（72 项定理）公理报告为空；检查器并核对核心纯净。逐句对应（44 段）由 verify_mapping.py 对照保存的维基文库版本与回执的声明清单检查。作者自审见研究第 192 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "The order's own reasons; comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.",
-    "zh": "卦序本身的次第之理；与王弼、程颐、朱熹之读法的比较；与刻本对校；独立审查。"
+    "en": "Comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.",
+    "zh": "与王弼、程颐、朱熹之读法的比较；与刻本对校；独立审查。"
   },
   "correspondence": {
     "en": "Ren, 19 October 2026, asked whether the relation of the work to the 周易, above all the 易传, can be seen and built, then: “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping” (provenance, not warrant). The chapter on the 易传 maps 44 passages, quoted from preserved revisions, to the declarations they correspond to: 24 agreements, 14 exact scopes and 6 divergences. Reading (the AI's, D47): 无往不復 holds exactly where a law merges nothing, and 日新 is the same law with its history kept; 窮則變 is not a law; 生生之謂易 is a scope, change being wider than 生生; 繼之者善 and the ranks of 天尊地卑 diverge.",
@@ -368,6 +368,13 @@
       "detail": {
         "en": "Four more laws on these configurations (the nuclear law, the cast, the four symmetries, the counter) and the six orbits of the law of waxing and waning.",
         "zh": "这些构形上另四条律（互、之卦、四种对称、加一）与消息之律的六轨。"
+      }
+    },
+    {
+      "id": "hexagram-arrangements-and-laws",
+      "detail": {
+        "en": "Which laws run the received order (only a table, keeping no symmetry), the exchange of two lines, the parity of the count, the 雜卦 and the stations.",
+        "zh": "何种律运行所传卦序（只是一张表，不保持任何对称）、两爻相易、阳爻之数的奇偶、杂卦与八站。"
       }
     }
   ],
@@ -544,31 +551,31 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "3db2702447a60b5eaffa85615264cfdfb6238c2cd3b3a843a48d7d8185db40b1"
+      "sha256": "bcaec508c86fce59c64d80b93d8436bb374e43310135ae52277fd6ff890602fc"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
       "role": "integration",
       "declarations": [],
-      "sha256": "4f0476d9e98e4fd8f3ded1df97d8869b11a1a28ff3353f227a9f0907f2ed7f59"
+      "sha256": "34a599ef8aa13ba8aad07ee3debbc3eec5fb4471bf2b76268fcd8135e341aaea"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "abdce96c891ea01ad6b2cebea2f9453ce39f9f6c00c908f37442448a708d5f89"
+      "sha256": "6cceb3cb6f46187ceaec8bde901a074a74b0f8858bb79cc2455ca6c28bbd7525"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "580e8c08fa6d5b616e179b92202020bd2c3d0117723ba51d30401ad341892c7c"
+      "sha256": "35d9d3183693d72ac9add8535fa1d6cacca92b55b502548d01419cef5bc5d870"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "4e5547d2b3e38a0545c17ac38c72e361e230489cc39a04628b2d09cfd2f12e64"
+      "sha256": "4e156fbdeade975089eea5f8e55bd8259b357e0e029325d1b63ba999e761490b"
     },
     {
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
@@ -697,6 +704,10 @@
     {
       "en": "19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (passages.json: the passage 非覆即變 (feifu) names order_paired_by_law and six_steps beside order_paired, and its reading adds that 變 is six steps along the law of waxing and waning; no other passage changed). The claim is unchanged.",
       "zh": "2026年10月19日，U5 后续（段落图）：读过改动后重新指向（passages.json：非覆即變一段（feifu）在 order_paired 旁加列 order_paired_by_law 与 six_steps，读法补一句：變即沿消息之律六步；其他段未变）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y5 (what of the arrangements of the 傳 is a law): the order's own reasons, listed as not shown and as the next delta, are now the record hexagram-arrangements-and-laws so far as a law reaches them (study section 209, decision D55); the 序卦's reasons between pairs stay outside; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y5 added two passages, the chapter's module item, section 2 subsection, section 5 points and section 8 correction, the study section and the canonical paragraph). The claim is unchanged.",
+      "zh": "2026年10月19日，Y5（传中诸排列何者是律）：原列为未示与下一步的卦序次第之理，至律所能及者，现为记录 hexagram-arrangements-and-laws（研究第 209 节，决定 D55）；序卦在对与对之间的理由仍在其外；读过改动后，YI-ZHUAN-AND-BECOMING.md、passages.json、verify_mapping.py、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

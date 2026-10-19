@@ -87,7 +87,7 @@ Ren's proposal asks to explain formation, persistence, transformation, degenerat
 - related, not a proved adapter: [theory-of-becoming-foundation](theory-of-becoming-foundation.md). Completes P20 under the plan's section 9: in a family dissipated on, rising and falling are joined within one step.
 - related, not a proved adapter: [life-as-condition-of-life](life-as-condition-of-life.md). Brood is given there: generation after generation, each given by the one before; this adds that nothing falls there and nothing is dissipated.
 
-**Used by:** [continued-change-needs-openness](continued-change-needs-openness.md) · [place-transition-nets-on-the-spine](place-transition-nets-on-the-spine.md)
+**Used by:** [continued-change-needs-openness](continued-change-needs-openness.md) · [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md) · [place-transition-nets-on-the-spine](place-transition-nets-on-the-spine.md)
 
 <a id="sources--来源"></a>
 ### Sources

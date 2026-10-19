@@ -92,6 +92,8 @@ Laws H1 to H5 of the review of the earlier 生生不息 repository (SSBX review,
   - Preserved conditions: None. [Commuting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Commuting.lean)
 - related, not a proved adapter: [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md). The nuclear law is a case with two fixed configurations and a cycle of two: everything else is drawn in and does not return.
 
+**Used by:** [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md)
+
 <a id="sources--来源"></a>
 ### Sources
 
@@ -132,6 +134,9 @@ Aliases: `the nuclear law`, `互`, `互卦`, `中爻`, `the cast`, `之卦`, `�
 - 19 October 2026, Y4 (Becoming.HexagramSites): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (section 11: the statement-source row of the chapter on the 易传 now also names fixed-places-and-sole-lines; Y4 also added the section 1 paragraph on 王弼's readings of the places after this record's, and the earlier changes since this record bound the file are in sections it does not cite). The claim is unchanged.
 - 19 October 2026, PT1 (place/transition nets on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (passages.json: the passage 非覆即變 (feifu) names order_paired_by_law and six_steps beside order_paired, and its reading adds that 變 is six steps along the law of waxing and waning; no other passage changed). The claim is unchanged.
+- 19 October 2026, Y5 (Becoming.HexagramSequences): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (section 11: the statement-source row of the chapter on the 易传 now also names hexagram-arrangements-and-laws; section 1 gains the paragraph on the arrangements of the 傳 after 王弼's readings; the earlier changes since this record bound the file are in sections it does not cite). The claim is unchanged.
+- 19 October 2026, Y5 (Becoming.HexagramSequences): passages.json, verify_mapping.py re-pointed after reading the change (passages.json: Y5 added two passages of the 彖 (恒 剛上而柔下, 咸 柔上而剛下); verify_mapping.py: Y5 added check 10, the 雜卦's sequence and the stations of 說卦 ch. 5 against the preserved texts). The claim is unchanged.
+- 19 October 2026, Y5 (Becoming.HexagramSequences): YI-ZHUAN-AND-BECOMING.md re-pointed after reading the change (the opening names the fifth module, Becoming.HexagramSequences, and counts 90 passages; section 2 gains a subsection on the arrangements of the 傳, section 5 points, section 7 a reading line, and section 8 corrects the claim that the order is the orbit of no law; the passage table holds two more passages and the U5 follow-up's 非覆即變). The claim is unchanged.
 
 </details>
 

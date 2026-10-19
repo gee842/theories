@@ -13,6 +13,7 @@ read -r N DN < $K/apply_text.log
 echo "section $N, decision $DN"
 python3 -B $K/make_record.py "$R" "$N" "$DN" > $K/make_record.log
 python3 -B $K/rehash_refs.py "$(git rev-parse "$BASE")" > $K/rehash.log
+python3 -B $K/repoint_chapter.py >> $K/rehash.log
 python3 -B $K/board_move.py "$R" "$(git rev-parse --short=9 "$CHECKER_MAIN")" $K/conn-1.log "$N" "$DN"
 status=0
 for g in research-render research-check research-check-strict research-links research-test research-secrets; do

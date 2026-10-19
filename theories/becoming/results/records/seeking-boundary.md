@@ -61,7 +61,7 @@ How a target forms or is revised, that a seeker pursues it, and which targets ac
 - Related, not a proved adapter: [continuing-self-fed-from-beyond](continuing-self-fed-from-beyond.md). There a finite family that keeps taking cannot, enclosed, go on fed from beyond; here rising without end needs steps at which what stands does not run down.
 - Related, not a proved adapter: [where-a-rising-take-ends](where-a-rising-take-ends.md). There, where what stands runs down, the rises of more than now do not recur; here, read on what a seeker takes from a bounded giving, the seeker itself ends under balance alone.
 
-**Used by:** [learnable-through-registration](learnable-through-registration.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
+**Used by:** [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md) · [learnable-through-registration](learnable-through-registration.md) · [wisdom-root-part-one](wisdom-root-part-one.md) (interpretive)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

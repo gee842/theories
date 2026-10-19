@@ -121,6 +121,7 @@ Aliases: `a history read off its finite stretches`, `从有限片段读出的历
 - 19 October 2026, RO (the Chinese sources on the spine): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RO added a section 1 paragraph on the Chinese sources, a section 8.3 item and a section 11 row, and extended four section 11 status cells). The claim is unchanged.
 - 19 October 2026, U5 (study section 208): the word half read on the courses a process can take (Becoming.HistoryIdealsTraces, 7 theorems, core receipt 20261019T133615.720595Z); one law and one counterexample added (a history of feasible courses that is no run's moves). The statement and the earlier laws are unchanged.
 - 19 October 2026, U5 (general laws read on the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
+- 19 October 2026, Y5 (Becoming.HexagramSequences): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: Y5 added the section 1 paragraph on the arrangements of the 傳 with its readings, its rerun in the integration row with the current component counts, the section 9 counts, layer count and receipt, and the section 11 row). The claim is unchanged.
 
 </details>
 

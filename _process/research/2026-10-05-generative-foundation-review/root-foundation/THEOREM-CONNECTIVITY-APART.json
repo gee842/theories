@@ -1696,6 +1696,46 @@
    "module": "Becoming.Verification",
    "category": "calibration",
    "reason": "Asked of every order and class, the step from a verifiable class to a refutable complement is exactly double-negation elimination (two-element chain): a history only known not to lie outside a verifiable class does not thereby show the stretch that verifies it. On runs the same step gives Markov's principle (`verifiable_compl_refutable_markov`)."
+  },
+  "Becoming.Hexagram.zagua_every": {
+   "module": "Becoming.HexagramSequences",
+   "category": "model-witness",
+   "reason": "The 雜卦 lists each of the sixty-four configurations once: a fact about the 雜卦's list, checked on it, its sequence matched to the preserved text by verify_mapping.py; a law running the list is read on the base by zagua_not_commutes, and the pairing as a law by partner_run."
+  },
+  "Becoming.Hexagram.zagua_partners": {
+   "module": "Becoming.HexagramSequences",
+   "category": "model-witness",
+   "reason": "The 雜卦's first fifty-six are twenty-eight pairs side by side, each a configuration and its partner: a fact about the 雜卦's list, checked on it, its sequence matched to the preserved text by verify_mapping.py; a law running the list is read on the base by zagua_not_commutes, and the pairing as a law by partner_run."
+  },
+  "Becoming.Hexagram.zagua_last_eight": {
+   "module": "Becoming.HexagramSequences",
+   "category": "model-witness",
+   "reason": "The 雜卦's last eight hold the remaining four pairs, no partner beside partner: a fact about the 雜卦's list, checked on it, its sequence matched to the preserved text by verify_mapping.py; a law running the list is read on the base by zagua_not_commutes, and the pairing as a law by partner_run."
+  },
+  "Becoming.Hexagram.order_partners": {
+   "module": "Becoming.HexagramSequences",
+   "category": "model-witness",
+   "reason": "The received order sets every configuration beside its partner: a fact about the order's list, checked pair by pair (order_paired read through the partner); a law running the order is read on the base by runsOrder_agrees and runsOrder_not_commutes, and the pairing as a law by partner_run."
+  },
+  "Becoming.Hexagram.three_census": {
+   "module": "Becoming.HexagramSequences",
+   "category": "model-witness",
+   "reason": "The census of the configurations with three unbroken lines (twenty) and of 泰, 否 and the eighteen one exchange across from them (no two alike), counted over the received order; the law it counts is read on the base by exchanges_from_tai_pi."
+  },
+  "Becoming.Hexagram.Trigram.opposite_stations": {
+   "module": "Becoming.HexagramSequences",
+   "category": "model-witness",
+   "reason": "Of the four pairs of opposite stations of 說卦 ch. 5 only 離 and 坎 are complements, while each of the four pairs of ch. 3 is: a fact about two arrangements of the text, checked on the eight trigrams; a law running the stations is read on the base by Trigram.stations_not_commutes."
+  },
+  "Becoming.Hexagram.paired_iff_partner": {
+   "module": "Becoming.HexagramSequences",
+   "category": "restates",
+   "reason": "Paired (Becoming.Hexagrams, 非覆即變) restated as a configuration's partner, a map; the pairing is read on the base as a law by partner_run."
+  },
+  "Becoming.Hexagram.phaseCount_yangOdd": {
+   "module": "Becoming.HexagramSequences",
+   "category": "restates",
+   "reason": "PhaseCount_parity (Becoming.HexagramPlaces) restated in the count of unbroken lines: the count in phase has the other parity; the parity is read on the base by run_yangOdd and changes_run_yangOdd."
   }
  }
 }

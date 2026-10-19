@@ -2015,27 +2015,29 @@
     "title_en": "The 易传 and the theory of becoming: the configurations of the 周易 on the spine",
     "category": "classical-comparison",
     "status": "逐句对应已检查；Lean 已实查 / Passage map checked; Lean checked",
-    "argument_zh": "周易所描述的构形（六爻二值、一爻之变、消息之律、所传卦序）作为脊柱上的一个世界写入纯核心，脊柱之律在其上被检查；爻位之关系（正、应、比、中）作为在位上成立的语境读法写入；互、之卦、錯綜四对称、加一之律与消息之六轨作为此世界上的律写入；诸律都沿脊柱的运行读出。初上无位与独应之爻依王弼《周易略例》写作另两个关系。易传、经文、两种注疏与《周易略例》的 88 段文字取自保存的版本，逐段标明相合、定域或相分，以及所对应的声明；十二项普查把彖、小象、爻辞与大象中关于位与中的明言逐一检查。",
-    "argument_en": "The configurations the 周易 describes (six two-valued lines, the change of a line, the law of waxing and waning, the received order) are a world of the pure core, on which the spine's laws are checked; the relations of the places (正, 應, 比, 中) are contextual readings at their sites; the nuclear law 互, the cast of turning lines, the four symmetries of 錯 and 綜, the counter and the six orbits of waxing and waning are laws on that world; every law is read along the runs of the spine. 王弼's 初上无位 and the line answered by all others are two further relations. 88 passages of the 易传, the classic, two commentaries and 王弼's 《周易略例》, quoted from preserved revisions, are each mapped to declarations as agreement, exact scope or divergence, and twelve censuses check every statement of a kind about place and 中 in the 彖, the 小象, the line texts and the 大象.",
+    "argument_zh": "周易所描述的构形（六爻二值、一爻之变、消息之律、所传卦序）作为脊柱上的一个世界写入纯核心，脊柱之律在其上被检查；爻位之关系（正、应、比、中）作为在位上成立的语境读法写入；互、之卦、錯綜四对称、加一之律与消息之六轨作为此世界上的律写入；诸律都沿脊柱的运行读出。初上无位与独应之爻依王弼《周易略例》写作另两个关系；传中诸排列（卦序、卦变、奇偶、杂卦、八站与交）何者是律亦写出，卦序是一张表的运行。易传、经文、两种注疏与《周易略例》的 90 段文字取自保存的版本，逐段标明相合、定域或相分，以及所对应的声明；十二项普查把彖、小象、爻辞与大象中关于位与中的明言逐一检查。",
+    "argument_en": "The configurations the 周易 describes (six two-valued lines, the change of a line, the law of waxing and waning, the received order) are a world of the pure core, on which the spine's laws are checked; the relations of the places (正, 應, 比, 中) are contextual readings at their sites; the nuclear law 互, the cast of turning lines, the four symmetries of 錯 and 綜, the counter and the six orbits of waxing and waning are laws on that world; every law is read along the runs of the spine. 王弼's 初上无位 and the line answered by all others are two further relations; which of the 傳's arrangements (the order, 卦變, the parity, the 雜卦, the stations, 交) is a law is stated, the order the run of a table. 90 passages of the 易传, the classic, two commentaries and 王弼's 《周易略例》, quoted from preserved revisions, are each mapped to declarations as agreement, exact scope or divergence, and twelve censuses check every statement of a kind about place and 中 in the 彖, the 小象, the line texts and the 大象.",
     "significance_zh": "古典文本与理论的关系成为库中可检查的部分；相分之处保留，使原典能反过来检验理论。",
     "significance_en": "The relation of a classical text to the theory becomes a checked part of the library, with the divergences kept so that the text can challenge the theory.",
-    "scope_zh": "413 条 Lean 定理，公理报告为空；读法为 AI 读法（D47、D50、D51、D53）；不解释周易整体，不说作者意谓这些律；吉凶、取象、序卦之理、位之等级与占筮不在其中。",
-    "scope_en": "413 Lean theorems with empty axiom reports; the readings are the AI's (D47, D50, D51, D53). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons, the ranks of the places and divination are outside it.",
+    "scope_zh": "511 条 Lean 定理，公理报告为空；读法为 AI 读法（D47、D50、D51、D53、D55）；不解释周易整体，不说作者意谓这些律；吉凶、取象、序卦在对与对之间的理由、位之等级与占筮不在其中。",
+    "scope_en": "511 Lean theorems with empty axiom reports; the readings are the AI's (D47, D50, D51, D53, D55). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the 序卦's reasons between pairs, the ranks of the places and divination are outside it.",
     "next_zh": "建议：王弼于独应之外所举之主与时位之读，王弼《周易注》之逐爻对照；文言的普查；与程颐、朱熹之读法比较；与刻本对校。",
     "next_en": "Proposed: 王弼's other rulers and 時 with 位, and his 周易注 line by line; a census of the 文言; comparison with the readings of 程頤 and 朱熹; collation with a printed edition.",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramPlaces.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramLaws.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSites.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HexagramSequences.lean"
     ],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
       "sources/zhouyi-yizhuan/PROVENANCE.json",
-      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md"
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json"
     ],
-    "source_sha256": "3db2702447a60b5eaffa85615264cfdfb6238c2cd3b3a843a48d7d8185db40b1"
+    "source_sha256": "bcaec508c86fce59c64d80b93d8436bb374e43310135ae52277fd6ff890602fc"
   },
   {
     "id": "zero-axiom-practical-judgment",

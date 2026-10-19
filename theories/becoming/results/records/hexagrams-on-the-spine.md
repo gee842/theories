@@ -28,7 +28,7 @@
 ## Does not show
 
 - What any passage of the 周易 or the 易传 claims beyond these laws; the passage map of the chapter states, passage by passage, agreement, exact scope or divergence, and its readings are the AI's.
-- The judgments of fortune (吉凶悔吝), the images of 說卦, the order's own reasons (序卦), divination and number lore; the relations of the places are in place-relations-in-context.
+- The judgments of fortune (吉凶悔吝), the images of 說卦, the 序卦's reasons between pairs (which laws run the order is in hexagram-arrangements-and-laws), divination and number lore; the relations of the places are in place-relations-in-context.
 - That returning, waxing or waning is good or supports 生生; the module has no ethical predicate and no ranking of configurations.
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -43,7 +43,7 @@ Canonical source: [Hexagrams.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-The order's own reasons; comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.
+Comparison with the readings of 王弼, 程頤 and 朱熹; collation against a printed edition; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -79,8 +79,9 @@ Ren, 19 October 2026, asked whether the relation of the work to the 周易, abov
 - related, not a proved adapter: [necessarily-drawn-is-not-returning](necessarily-drawn-is-not-returning.md). The merging law is a case: every configuration but all broken is drawn in and does not return.
 - related, not a proved adapter: [place-relations-in-context](place-relations-in-context.md). The relations of the places (正, 應, 比, 中) read in context on these configurations, and their laws under the same changes.
 - related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). Four more laws on these configurations (the nuclear law, the cast, the four symmetries, the counter) and the six orbits of the law of waxing and waning.
+- related, not a proved adapter: [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md). Which laws run the received order (only a table, keeping no symmetry), the exchange of two lines, the parity of the count, the 雜卦 and the stations.
 
-**Used by:** [chinese-sources-on-the-spine](chinese-sources-on-the-spine.md) (interpretive) · [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md) · [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md) (application)
+**Used by:** [chinese-sources-on-the-spine](chinese-sources-on-the-spine.md) (interpretive) · [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md) · [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md) · [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md) (application)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -124,6 +125,7 @@ Aliases: `the sixty-four hexagrams on the spine`, `六十四卦在脊柱上`, `�
 - 19 October 2026, Y4 (王弼's readings of the places, record fixed-places-and-sole-lines, study section 202): YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md, PROVENANCE.json re-pointed after reading the change (Y4 added its passages, censuses, chapter text, study section, canonical paragraph and the preserved pages of the 《周易略例》). The claim is unchanged.
 - 19 October 2026, PT1 (place/transition nets on the spine): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: PT1 added a study section; THE-THEORY-OF-BECOMING.md: PT1 added a section 8.7 bullet on place/transition nets, a rerun sentence in the section 8.2 integration row, and revised the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (passages.json: the passage 非覆即變 (feifu) names order_paired_by_law and six_steps beside order_paired, and its reading adds that 變 is six steps along the law of waxing and waning; no other passage changed). The claim is unchanged.
+- 19 October 2026, Y5 (what of the arrangements of the 傳 is a law): the order's own reasons, listed as not shown and as the next delta, are now the record hexagram-arrangements-and-laws so far as a law reaches them (study section 209, decision D55); the 序卦's reasons between pairs stay outside; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y5 added two passages, the chapter's module item, section 2 subsection, section 5 points and section 8 correction, the study section and the canonical paragraph). The claim is unchanged.
 
 </details>
 

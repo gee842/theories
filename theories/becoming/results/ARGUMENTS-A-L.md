@@ -27,7 +27,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [autonomous-method-formation](#autonomous-method-formation) | Forming and replacing a mathematical method connection | learning | Finite conditional construction complete |
 | [basic-conflict-judgment](#basic-conflict-judgment) | Judgment when basic claims conflict | ethical argument | Explicit-premise ethical argument with conditional checks (source changed since reading) |
 | [becoming-foundation](#becoming-foundation) | Theory of Becoming: foundational scope | foundation | Finite coherence checked; whole deduction open (source changed since reading) |
-| [chinese-sources-and-becoming](#chinese-sources-and-becoming) | The relational ontology of Chinese thought and the theory of becoming: the traditions on the spine | classical comparison | Passage map checked; no new Lean |
+| [chinese-sources-and-becoming](#chinese-sources-and-becoming) | The relational ontology of Chinese thought and the theory of becoming: the traditions on the spine | classical comparison | Passage map checked; no new Lean (source changed since reading) |
 | [choice-and-generative-context](#choice-and-generative-context) | Joint choice, limited aggregation and context | ethical argument | Checked conditional results; complete choice rule open (source changed since reading) |
 | [claims](#claims) | Registered claims and historical ledger | navigation | Generated register with differentiated evidence |
 | [claims-and-paid-action](#claims-and-paid-action) | Claims, actual action and continuing protection | ethics interface | 45 new declarations checked in Lean (source changed since reading) |
@@ -406,6 +406,8 @@ Correspondence covers only the stated premises and subclaims; source existence d
 **Source:** [CHINESE-SOURCES-AND-BECOMING.md](../chapters/CHINESE-SOURCES-AND-BECOMING.md)
 
 **Status:** Passage map checked; no new Lean
+
+**Reading status:** the source changed after this reading (read version sha256 `66c4b62b6714…`). The entry describes that earlier version; it awaits a reread before its hash is refreshed.
 
 **Argument:** 248 passages of nine parts of Chinese thought, quoted from preserved texts, are each mapped to declarations and records as agreement, exact scope or divergence. The thesis that these lines continue one relational ontology is tested: it holds for their start and observation, their universal forms mostly need a scope, and four non-relational overlays are each answered inside their tradition.
 

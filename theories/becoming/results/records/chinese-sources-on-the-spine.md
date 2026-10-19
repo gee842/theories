@@ -37,7 +37,7 @@ Canonical source: [CHINESE-SOURCES-AND-BECOMING.md](../../chapters/CHINESE-SOURC
 <a id="next--下一步"></a>
 ## Next
 
-Seven gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; a code formed between formations; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws; the hexagram world's order, exchange, parity and 雜卦. Then the earlier Chinese chapters' superseded parts moved to history.
+Six gaps, each to be claimed before it is written: two-sided regulation of a level and its late-reading form; a code formed between formations; capture through the rule; a graded order by closure level; division across several conditions; tolerance compared across laws. Then the earlier Chinese chapters' superseded parts moved to history.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -53,6 +53,7 @@ Ren, 19 October 2026, after sharing the 易道体系图 v1.3.0: “整个中国�
 - **interpretive**: [configurations-alike-by-relation](configurations-alike-by-relation.md). What "relational" means in the test: a configuration is how it relates.
 - related, not a proved adapter: [relative-position-is-zero-sum](relative-position-is-zero-sum.md). Cited by passages of the map.
 - related, not a proved adapter: [place-relations-in-context](place-relations-in-context.md). Cited by passages of the map.
+- related, not a proved adapter: [hexagram-arrangements-and-laws](hexagram-arrangements-and-laws.md). Closes the seventh gap, the supplements of the hexagram world (Y5).
 
 <a id="sources--来源"></a>
 ### Sources
@@ -76,6 +77,7 @@ Aliases: `the Chinese sources on the spine`, `中国思想诸传统在脊柱上`
 - 19 October 2026: added (RO), on Ren's request to map and integrate the relational ontology of Chinese thought; study section 207; readings D54.
 - 19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208; THE-THEORY-OF-BECOMING.md: U5 added the world reading of J3 to premise card F and section 6, a sentence each on the word half of histories (section 2), narrowing on the pure observation and evidence under fallible witnesses (section 3), a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, U5 follow-up (the passage map): re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the paragraph on Y1's passage map in study section 208 says the addition is made). The claim is unchanged.
+- 19 October 2026, Y5: the seventh gap of the chapter's section 8 (the supplements of the hexagram world) is closed by the record hexagram-arrangements-and-laws (study section 209, decision D55); nine passages cite it, and the chapter's claim, quoted from the 易传 chapter, that the order is the orbit of no law is corrected; CHINESE-SOURCES-AND-BECOMING.md, passages.json, THE-THEORY-OF-BECOMING.md re-pointed after reading the change. The claim is unchanged.
 
 </details>
 
