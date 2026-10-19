@@ -243,6 +243,7 @@ import Becoming.SelectionReach
 import Becoming.SelectionPool
 import Becoming.PoolResponse
 import Becoming.LawThroughCoupling
+import Becoming.LawThroughChangingCoupling
 import Becoming.Lexical
 import Becoming.Frontier
 import Becoming.ScoreRepresentation
@@ -1065,6 +1066,14 @@ readings of the unfolding (`Becoming.Labelled`).
   conditions. In `Unseen` the process is determined and a level the formation does not couple
   into decides what it next couples into, so no law holds at its coupling along the run;
   coupling into that level restores it.
+* `Becoming.LawThroughChangingCoupling` (L4): a law through coupling that changes along the run.
+  With dependences read off the configuration (`Dependence`), what a formation couples into at
+  each occasion, through the dependence it then has, is an equivalence, so the criterion of
+  `Becoming.LawThroughCoupling` holds through it; fixed conditions are the instance, and
+  `Web.AlikeThrough` read at one step fixes the dependence of that step. Where the formation's
+  dependences do not change along the run the two criteria agree. In `Changing`, on one
+  determined process, a dissolving dependence carries a law the coupling fixed at the start
+  lacks, and a forming one breaks a law it has.
 * `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
   differ at its next step, also among worlds held by a list, and for every learner a course
   refutes each of its claims, the registration of a law keeping its record, so open. Learning by

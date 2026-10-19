@@ -82,3 +82,11 @@ After G3 (a law through a projection along one run, `55ee120c2`) landed, the ass
 > Yes: claim G4 on the board — the criterion along one run with Becoming.Testing's registration as the projection — and prove it in scratch while the queue runs.
 
 The assistant's reading: claim and prove G4 in scratch; landing follows the queue. Registration is now called coupling (`Web.AlikeThrough`), and since it is a relation rather than a projection, the criterion is stated up to a relation and coupling is taken as that relation.
+
+## Ren's continue (19 October 2026)
+
+After G4 (`Becoming.LawThroughCoupling`) landed and the assistant reported it, Ren wrote:
+
+> continue
+
+The assistant's reading, which Ren may revise: the standing go of 18 October continues. The next item taken is the criterion through coupling that changes along the run (board item G5), which G4 left open.

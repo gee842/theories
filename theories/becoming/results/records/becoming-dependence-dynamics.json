@@ -271,6 +271,13 @@
         "zh": "该结果在支持门控定律中实现了依存的替代，并证明消耗的分类在替代下保持，承接本记录原有的下一步。",
         "en": "That result realizes substitution of dependence in the support-gated law and proves that the consuming class is preserved under it, taking up this record's earlier next step."
       }
+    },
+    {
+      "id": "a-law-through-changing-coupling-along-one-run",
+      "detail": {
+        "en": "There dependences read off the configuration give what a formation couples into on each occasion; where they form or dissolve along a run, the law at that coupling and the law at the coupling of one moment neither gives the other.",
+        "zh": "那里从配置读出的依赖给出形成在每个场合所耦合者；它们沿运行形成或消散之处，该耦合上的规律与某一时刻耦合上的规律互不给出。"
+      }
     }
   ],
   "references": [
@@ -841,6 +848,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: Web from Dependence.lean to World.lean; along, conditions_along, loss_does_not_decide, ending_dependent, transforming_dependent, restoring_dependent from Dependence.lean to Labelled.lean; along from Renewal.lean to Labelled.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean, Renewal.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, G5 (Becoming.LawThroughChangingCoupling): a-law-through-changing-coupling-along-one-run added as related. This record's claims are unchanged.",
+      "zh": "2026年10月19日，G5（Becoming.LawThroughChangingCoupling）：加入 a-law-through-changing-coupling-along-one-run 为相关。本记录的论断不变。"
     }
   ],
   "text_versions": [

@@ -23,7 +23,6 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- Coupling that changes along the run (Dependence rather than fixed Conditions), where the relation need not be an equivalence, is not treated.
 - The up-to form over histories (Web.AlikeThroughUpTo) relates two histories and is not the relation here.
 - Which formation's coupling carries a law along an actual unfolding, or how many steps settle it.
 - The criterion is near-definitional; what it adds is the relation form, the bridge to coupling and the witness.
@@ -41,7 +40,7 @@ Canonical source: [LawThroughCoupling.lean](../../../../experiments/integrated-c
 <a id="next--下一步"></a>
 ## Next
 
-Coupling that changes along the run; how many steps settle whether a law at a finite coupling holds; an independent review.
+How many steps settle whether a law at a finite coupling holds; observation that changes along the run; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -74,6 +73,9 @@ The chapter's open programme (section 8.2, Selection, causes and experiment) nam
   - Input: The conditions coupling is stated on.
   - Preserved conditions: None. [Renewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
 - related, not a proved adapter: [subthreshold-registration](subthreshold-registration.md). There a difference below a threshold does not couple in; here a level outside what a formation couples into decides its next coupling along a run.
+- related, not a proved adapter: [a-law-through-changing-coupling-along-one-run](a-law-through-changing-coupling-along-one-run.md). There the criterion through coupling that changes along the run, of which fixed conditions are the instance; where dependences form or dissolve, the law at the coupling fixed at the start and the law at the changing coupling neither gives the other.
+
+**Used by:** [a-law-through-changing-coupling-along-one-run](a-law-through-changing-coupling-along-one-run.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -105,6 +107,8 @@ Aliases: `law through coupling`, `经耦合的规律`, `criterion up to a relati
 - 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.
 - 18 October 2026, C2 (Becoming.Exhaustion): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: C2 added a study section; THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the "Seeking, capture and runaway" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 - 19 October 2026, C2 follow-up (D46): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: section 186 (C2) now states its readings as D46 rather than waiting on Ren). The claim is unchanged.
+- 19 October 2026, G5 (Becoming.LawThroughChangingCoupling): the open item "coupling that changes along the run (Dependence rather than fixed Conditions), where the relation need not be an equivalence, is not treated" is removed from does_not_show and next_delta, since a-law-through-changing-coupling-along-one-run states it. Its clause "where the relation need not be an equivalence" was wrong for the coupling read through the dependence each configuration carries, which is an equivalence (Dependence.alikeAt_equivalence). That record is added as related. This record's claims are unchanged.
+- 19 October 2026, G5 (Becoming.LawThroughChangingCoupling): 2026-10-17-registration-dualist-vocabulary.md, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (2026-10-17-registration-dualist-vocabulary.md: G5 recorded Ren's 19 October "continue"; BECOMING-RENEWAL-READING.md: G5 added a study section; THE-THEORY-OF-BECOMING.md: G5 added the Mechanism bullet on a law through coupling that changes along the run, revised the "Selection, causes and experiment" row of section 8.2 and the section 9 receipt and connectivity text). The claim is unchanged.
 
 </details>
 

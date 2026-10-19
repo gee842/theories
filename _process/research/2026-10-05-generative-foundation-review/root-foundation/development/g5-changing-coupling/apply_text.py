@@ -151,7 +151,7 @@ para = para[:m.start()] + (f'It was checked with Lean 4.29.1 on main {MAIN} with
 for label, value in [
         ('Core modules (with the root `Becoming`, 0 theorems)', f'{core_n} modules, {fmt(core_t)} theorems'),
         ('Core closure', f'{clos_n} modules, {fmt(core_t + found_t)} theorems'),
-        ('Spine (core and bridge)', f'{fmt(spine)} theorems'),
+        ('Spine (the core; no bridge since the F3 sweep)', f'{fmt(spine)} theorems'),
         ('Audited spine declarations', fmt(audits)),
         ('Modules in the compile order', str(order))]:
     para, k = re.subn(r'(\| ' + re.escape(label) + r' \| )[^|]*( \|)', lambda mm: mm.group(1) + value + mm.group(2), para)

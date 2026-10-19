@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-The single register of results: one editable JSON record per migrated claim, from which this page and each record page are generated. 245 registered results: 229 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). `recorded-checked` credits an existing Lean receipt and `reviewed-scoped` an existing substantive review; neither certifies a stronger claim. Unmigrated results retain their existing sources; files, checks and repeated acceptances are not independent results. Hash drift requires reading the changed source before updating its record.
+The single register of results: one editable JSON record per migrated claim, from which this page and each record page are generated. 246 registered results: 230 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). `recorded-checked` credits an existing Lean receipt and `reviewed-scoped` an existing substantive review; neither certifies a stronger claim. Unmigrated results retain their existing sources; files, checks and repeated acceptances are not independent results. Hash drift requires reading the changed source before updating its record.
 
 <a id="已登记成果--registered-results"></a>
 ## Registered results
@@ -13,6 +13,7 @@ The single register of results: one editable JSON record per migrated claim, fro
 | ID | Result | Kind | Status | Source |
 |---|---|---|---|---|
 | `a-law-through-a-projection-along-one-run` | [A law through a projection along one run](theories/becoming/results/records/a-law-through-a-projection-along-one-run.md) | theorem | recorded-checked | [LawAlongRun.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawAlongRun.lean) |
+| `a-law-through-changing-coupling-along-one-run` | [A law through coupling that changes along the run](theories/becoming/results/records/a-law-through-changing-coupling-along-one-run.md) | theorem | recorded-checked | [LawThroughChangingCoupling.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughChangingCoupling.lean) |
 | `a-law-through-coupling-along-one-run` | [A law through what a formation couples into, along one run](theories/becoming/results/records/a-law-through-coupling-along-one-run.md) | theorem | recorded-checked | [LawThroughCoupling.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LawThroughCoupling.lean) |
 | `acquired-binding-compositional-use` | [Acquired bindings enter compositional use](theories/becoming/results/records/acquired-binding-compositional-use.md) | theorem | recorded-checked | [AcquiredBinding.lean](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean) |
 | `acquired-revision-of-pending-task` | [Acquired goal revision enters a pending task](theories/becoming/results/records/acquired-revision-of-pending-task.md) | theorem | recorded-checked | [CommonTaskRevision.lean](experiments/market-generativity/meta-attractor/CommonTaskRevision.lean) |
