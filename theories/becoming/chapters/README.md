@@ -8,7 +8,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 ## Files in this directory
 
-1 canonical, 1 reference, 34 kept, 1 generated, 19 Chinese edition.
+1 canonical, 1 reference, 33 kept, 1 generated, 18 Chinese edition.
 
 | File | Title | Status | Role in section 11 | Note |
 |---|---|---|---|---|
@@ -18,16 +18,16 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [ALIGNMENT-DIRECTION.md](ALIGNMENT-DIRECTION.md) | The direction of AI alignment we propose | kept | Statement source | Statement source of §7. Its wording on the axiom predates the restatement of the condition as §6.15 (16 October 2026). |
 | [ALIGNMENT-THROUGH-CHANGE.md](ALIGNMENT-THROUGH-CHANGE.md) | Generative alignment through change | kept | Statement source | Cited in §7; statement source of three records. |
 | [BASIC-CONFLICT-JUDGMENT.md](BASIC-CONFLICT-JUDGMENT.md) | Judgment when basic claims conflict | kept | Statement source | Statement source of [finite-aggregation-within-restorable-basic-losses](../results/records/finite-aggregation-within-restorable-basic-losses.md). |
-| [BECOMING-FOUNDATION.md](BECOMING-FOUNDATION.md) | Theory of Becoming: foundational scope | kept | Foundation study | The foundational scope of 9 October 2026; states the open deduction of the whole (§8.1). |
+| [BECOMING-FOUNDATION.md](BECOMING-FOUNDATION.md) | Theory of Becoming: foundational scope | kept | Foundation study | The foundational scope of 9 October 2026, live in part (banner of 19 October 2026). Statement source of the open target [theory-of-becoming-foundation](../results/records/theory-of-becoming-foundation.md) (§8.1). Its §4 (what the target with no added substantive axiom requires), the remaining inferences of its §5 audit and its §9 (the three claims in "the whole") are stated only there; its other sections are held by §1, the records and the theory stated in full. |
 | [CHOICE-AND-GENERATIVE-CONTEXT.md](CHOICE-AND-GENERATIVE-CONTEXT.md) | Joint choice, limited aggregation and context | kept | Statement source | Statement source of [open-form-realization-under-revision](../results/records/open-form-realization-under-revision.md). |
 | [COGNITION-LEARNING-AND-EVOLUTION.md](COGNITION-LEARNING-AND-EVOLUTION.md) | Cognition, learning and evolution within becoming | kept | Statement source | The active cognition goal; states the laws of learning. |
-| [DAO-AND-GENERATIVITY.md](DAO-AND-GENERATIVITY.md) | 生成论与“道”：生成、德与善能否贯通 | kept | Open direction | Ren-confirmed open direction on the classical texts. |
+| [DAO-AND-GENERATIVITY.md](DAO-AND-GENERATIVITY.md) | 生成论与“道”：生成、德与善能否贯通 | kept | Open direction | Open direction on the classical texts. |
 | [ETHICAL-LEARNING.md](ETHICAL-LEARNING.md) | Ethical learning: how concern forms, acquires grounds and keeps changing | kept | Statement source | Statement source of [organizational-formation-from-generative-comparison](../results/records/organizational-formation-from-generative-comparison.md); Ren redirected its sections 55–74. |
 | [FORMAL-CORE.md](FORMAL-CORE.md) | Formal core of relational generativity | kept | Historical, pinned | Historical (5 October 2026), stays for the same reason. |
 | [FORMAL-SPECIFICATION.md](FORMAL-SPECIFICATION.md) | Formal specification for physical formation, renewal and shared capability | kept | Historical, pinned | Historical (5 October 2026), stays for the same reason. |
 | [G0-WARRANT.md](G0-WARRANT.md) | The warrant for living significance: how its starting commitment is supported | kept | Foundation study | Written on 9 October 2026, when living significance was an adopted axiom. It is now a condition, and the former conditional part is §6.15, so its framing is historical. It is kept for its analysis of what each kind of support contributes. |
 | [GENERATED-LOGIC.md](GENERATED-LOGIC.md) | Conditions of becoming and logical rules | kept | Statement source | Statement source of [constitutive-binding-assessment](../results/records/constitutive-binding-assessment.md). |
-| [HANZI-AND-THEORY-TREE.md](HANZI-AND-THEORY-TREE.md) | 汉字、组合与理论树：建立有根据的局部对应 | kept | Open direction | A method direction Ren marked feasible and open. |
+| [HANZI-AND-THEORY-TREE.md](HANZI-AND-THEORY-TREE.md) | 汉字、组合与理论树：建立有根据的局部对应 | kept | Open direction | An open method direction. |
 | [KNOWLEDGE.md](KNOWLEDGE.md) | Knowledge within becoming | kept | Statement source | Cited by §3. |
 | [LIANGZHI-EVOLUTION.md](LIANGZHI-EVOLUTION.md) | 本然良知的生成演化 | kept | Open direction | The goal statement of the liangzhi-evolution goal. |
 | [MARKET-DYNAMICS-MATH.md](MARKET-DYNAMICS-MATH.md) | Market renewal selection and capture | kept | Statement source | Defines the market update law that the four market records take as hypothesis; kept with the chapter above. |
@@ -39,11 +39,10 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [PHILOSOPHICAL-ACCOUNT.md](PHILOSOPHICAL-ACCOUNT.md) | A philosophy of becoming for knowing and living | kept | Statement source | The synthesis of knowing and wisdom; cited by §3. |
 | [PLURAL-SYSTEMS-AND-CORRECTION.md](PLURAL-SYSTEMS-AND-CORRECTION.md) | Responsive transformation: plural systems, shared trials and parent/subsystem relationships | kept | Statement source | Its section 15 is Ren's framing of responsive transformation of 9 October 2026, the current formulation. |
 | [PRACTICAL-JUDGMENT.md](PRACTICAL-JUDGMENT.md) | Practical judgment | kept | Statement source | Statement source of the record [practical-judgment-g0-j](../results/records/practical-judgment-g0-j.md). |
-| [PRE-QIN-AND-WENYAN.md](PRE-QIN-AND-WENYAN.md) | 从先秦到文言传统：生成、关切与治道的竞争解释 | kept | Open direction | Ren-confirmed open direction on competing explanations. |
+| [PRE-QIN-AND-WENYAN.md](PRE-QIN-AND-WENYAN.md) | 从先秦到文言传统：生成、关切与治道的竞争解释 | kept | Open direction | Open direction on competing explanations. |
 | [RELATIONS-ACROSS-SCALES.md](RELATIONS-ACROSS-SCALES.md) | Relations across scales | kept | Statement source | Current argument; seven Lean modules, two of them joined to the spine. |
 | [SCIENTIFIC-PHILOSOPHY.md](SCIENTIFIC-PHILOSOPHY.md) | Scientific philosophy and the generative conditions of knowing | kept | Statement source | Statement source of the open target on scientific inquiry (§8.1). |
-| [THE-THEORY-OF-EVOLUTION.md](THE-THEORY-OF-EVOLUTION.md) | The Theory of Evolution | kept | Foundation study | The evolution entry of 9 October 2026, cited by this chapter. Read at its date. |
-| [THEORY-OF-BECOMING.md](THEORY-OF-BECOMING.md) | How relations of becoming change | kept | Foundation study | The argument of 9 October 2026 on how relations of becoming change. Read at its date: it is the statement source of five records, not a current statement. |
+| [THE-THEORY-OF-EVOLUTION.md](THE-THEORY-OF-EVOLUTION.md) | The Theory of Evolution | kept | Programme chapter | The chapter of the separately authorized evolution programme (goal `theory-of-evolution`), written on 8 and 9 October 2026 and cited by §2 and §8.2. It holds the programme's six completion requirements, its current theoretical focus and its next connection, which this chapter does not restate; two experiment checkers read its requirement rows. |
 | [WANG-YANGMING.md](WANG-YANGMING.md) | 王阳明与生成理论：一体之仁、知行与工夫的整体整合 | kept | Open direction | The classical comparison with Wang Yangming, kept with the three chapters above. |
 | [WISDOM-AND-CONTEXT.md](WISDOM-AND-CONTEXT.md) | Wisdom, context and the common core | kept | Statement source | Statement source of the open target [wisdom-root](../results/records/wisdom-root.md) (§8.1). |
 | [YI-ZHUAN-AND-BECOMING.md](YI-ZHUAN-AND-BECOMING.md) | 易传与生成／变化之论：周易的构形在脊柱上 | kept | Statement source | The 易传 passage by passage on the spine (19 October 2026); statement source of [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md). |
@@ -65,19 +64,22 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [RELATIONS-ACROSS-SCALES.zh.md](RELATIONS-ACROSS-SCALES.zh.md) | 尺度之间的关系 | Chinese edition | — | Of [RELATIONS-ACROSS-SCALES](RELATIONS-ACROSS-SCALES.md); the English file governs. |
 | [SCIENTIFIC-PHILOSOPHY.zh.md](SCIENTIFIC-PHILOSOPHY.zh.md) | Scientific philosophy and the generative conditions of knowing | Chinese edition | — | Of [SCIENTIFIC-PHILOSOPHY](SCIENTIFIC-PHILOSOPHY.md); the English file governs. |
 | [THE-THEORY-OF-BECOMING.zh.md](THE-THEORY-OF-BECOMING.zh.md) | 生成／变化之论 | Chinese edition | — | Of [THE-THEORY-OF-BECOMING](THE-THEORY-OF-BECOMING.md); the English file governs. |
-| [THEORY-OF-BECOMING.zh.md](THEORY-OF-BECOMING.zh.md) | 生成关系怎样变化 | Chinese edition | — | Of [THEORY-OF-BECOMING](THEORY-OF-BECOMING.md); the English file governs. |
 | [WISDOM-AND-CONTEXT.zh.md](WISDOM-AND-CONTEXT.zh.md) | 智慧、情境与共同核心 | Chinese edition | — | Of [WISDOM-AND-CONTEXT](WISDOM-AND-CONTEXT.md); the English file governs. |
 | [ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.zh.md) | 零公理实践判断：正在建立的根据 | Chinese edition | — | Of [ZERO-AXIOM-PRACTICAL-JUDGMENT](ZERO-AXIOM-PRACTICAL-JUDGMENT.md); the English file governs. |
 
 ## Chapters moved to history
 
-117 files that were in this directory were moved, bytes unchanged, by the move receipts in [`_process/architecture/moves/`](../../../_process/architecture/moves/). Each is kept at its original scope as a record of argument; the receipts give the reason per batch.
+119 files that were in this directory were moved, bytes unchanged, by the move receipts in [`_process/architecture/moves/`](../../../_process/architecture/moves/). Each is kept at its original scope as a record of argument; the receipts give the reason per batch.
 
 **H4** (13 files): 5-Oct release bundle: checkers and JSON for the retired concern-interface, formation-math and release checks (11 of 15 hashes already stale)
 
 **H4** (103 files): earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews
 
 **H4** (1 file): earlier chapter (record of argument at its original scope); not a current statement source; superseded or historical per section 11 and the area reviews; record-bound: 1 file (tool rewrites record paths, sha256 unchanged)
+
+**R19-chapters** (1 file): superseded: the argument of 9 October 2026 on how relations of becoming change; its framing (five relational changes, retained form without capacity) and every result it states are held by the canonical chapter section 1 (THE-THEORY-OF-BECOMING.md) and the records effective-capacity-and-eventual-reachability, joint-correlation-reduced-dynamics, relational-renewal-classification, relational-reading-comparison and supported-renewal-recovery; evidence and counterreview stay in the live study RELATIONAL-BECOMING-INTEGRATION.md
+
+**R19-chapters** (1 file): superseded: the argument of 9 October 2026 on how relations of becoming change; its framing (five relational changes, retained form without capacity) and every result it states are held by the canonical chapter section 1 (THE-THEORY-OF-BECOMING.md) and the records effective-capacity-and-eventual-reachability, joint-correlation-reduced-dynamics, relational-renewal-classification, relational-reading-comparison and supported-renewal-recovery; evidence and counterreview stay in the live study RELATIONAL-BECOMING-INTEGRATION.md (Chinese edition)
 
 | Former path | Now at | Batch |
 |---|---|---|
@@ -178,6 +180,8 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | `SYSTEM-INDIVIDUATION.md` | [history/SYSTEM-INDIVIDUATION.md](../history/SYSTEM-INDIVIDUATION.md) | H4 |
 | `SYSTEM-WARRANT.md` | [history/SYSTEM-WARRANT.md](../history/SYSTEM-WARRANT.md) | H4 |
 | `SYSTEMS-COMPLEXITY-CHAOS.md` | [history/SYSTEMS-COMPLEXITY-CHAOS.md](../history/SYSTEMS-COMPLEXITY-CHAOS.md) | H4 |
+| `THEORY-OF-BECOMING.md` | [history/THEORY-OF-BECOMING.md](../history/THEORY-OF-BECOMING.md) | R19-chapters |
+| `THEORY-OF-BECOMING.zh.md` | [history/THEORY-OF-BECOMING.zh.md](../history/THEORY-OF-BECOMING.zh.md) | R19-chapters |
 | `THEORY.md` | [history/THEORY.md](../history/THEORY.md) | H4 |
 | `TOOL-EVIDENCE-AND-AUTHORITY.md` | [history/TOOL-EVIDENCE-AND-AUTHORITY.md](../history/TOOL-EVIDENCE-AND-AUTHORITY.md) | H4 |
 | `UNIFIED-ETHICAL-GROUNDING.md` | [history/UNIFIED-ETHICAL-GROUNDING.md](../history/UNIFIED-ETHICAL-GROUNDING.md) | H4 |

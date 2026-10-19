@@ -296,7 +296,7 @@ def expected_chapters(generated: set[str]) -> set[str]:
         if p.name.endswith('.zh.md') or p.name == 'README.md':
             continue
         out.add(rel_path)
-    return out | historical_chapters()
+    return out | {p for p in historical_chapters() if not p.endswith('.zh.md')}
 
 
 def validate(chapters: list[dict], branches: list[dict]) -> tuple[list[str], dict]:

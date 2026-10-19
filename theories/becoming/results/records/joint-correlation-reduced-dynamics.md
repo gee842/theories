@@ -59,7 +59,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [MachineInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) | `Becoming.MachineInstances.summary_carries_law`, `Becoming.MachineInstances.summary_every_word` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json) | — |
 | integration | [RELATIONAL-BECOMING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) | — |
-| statement | [THEORY-OF-BECOMING.md](../../chapters/THEORY-OF-BECOMING.md) | — |
+| statement | [THEORY-OF-BECOMING.md](../../history/THEORY-OF-BECOMING.md) | — |
 | review | [check_relational_reduction.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_relational_reduction.py) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |

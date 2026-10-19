@@ -82,7 +82,7 @@ Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 
 | proof | [RenewalBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean) | `Becoming.SupportGated.overdraw_extension`, `Becoming.SupportGated.contest_extensions` |
 | receipt | [relational-renewal-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json) | — |
 | statement | [RELATIONAL-RENEWAL-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md) | — |
-| integration | [THEORY-OF-BECOMING.md](../../chapters/THEORY-OF-BECOMING.md) | — |
+| integration | [THEORY-OF-BECOMING.md](../../history/THEORY-OF-BECOMING.md) | — |
 | integration | [UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) | — |
 | provenance | [2026-10-09-renewing-consuming-without-axioms.md](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md) | — |
 | provenance | [2026-10-07-shengsheng-ethical-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) | — |

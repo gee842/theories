@@ -1534,7 +1534,7 @@ Correspondence covers only the stated premises and subclaims; source existence d
 
 **ID:** `theory-of-becoming` · **Category:** mechanism
 
-**Source:** [THEORY-OF-BECOMING.md](../chapters/THEORY-OF-BECOMING.md)
+**Source:** [THEORY-OF-BECOMING.md](../history/THEORY-OF-BECOMING.md) · earlier chapter, kept in history at its original scope
 
 **Status:** Checked conditional results; whole grounding open
 

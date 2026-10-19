@@ -80,7 +80,7 @@ Formations, conditions and dependence are differentiated aspects of one unfoldin
 | proof | [RenewalFlow.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean) | `Becoming.SupportGated.flow`, `Becoming.SupportGated.web`, `Becoming.SupportGated.balances`, `Becoming.SupportGated.givers_supported`, `Becoming.SupportGated.below_for_good`, `Becoming.SupportGated.ends_for_good`, `Becoming.SupportGated.overdraw_ends`, `Becoming.SupportGated.jointly_ends` |
 | receipt | [relational-renewal-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json) | — |
 | statement | [RELATIONAL-RENEWAL-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md) | — |
-| integration | [THEORY-OF-BECOMING.md](../../chapters/THEORY-OF-BECOMING.md) | — |
+| integration | [THEORY-OF-BECOMING.md](../../history/THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-09-renewing-consuming-without-axioms.md](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md) | — |
 | provenance | [2026-10-07-shengsheng-ethical-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |

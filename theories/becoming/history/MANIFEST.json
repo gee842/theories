@@ -876,6 +876,24 @@
       "plan_entry": "theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md"
     },
     {
+      "old_path": "theories/becoming/chapters/THEORY-OF-BECOMING.md",
+      "new_path": "theories/becoming/history/THEORY-OF-BECOMING.md",
+      "sha256": "10b5d1faa826473427818718e609cd5a7ccb253748ffa5154dd43b04d0577160",
+      "blob": "fc8bb01f8326ab7195bb9cf7b319b2197ed9899b",
+      "batch": "R19-chapters",
+      "reason": "superseded: the argument of 9 October 2026 on how relations of becoming change; its framing (five relational changes, retained form without capacity) and every result it states are held by the canonical chapter section 1 (THE-THEORY-OF-BECOMING.md) and the records effective-capacity-and-eventual-reachability, joint-correlation-reduced-dynamics, relational-renewal-classification, relational-reading-comparison and supported-renewal-recovery; evidence and counterreview stay in the live study RELATIONAL-BECOMING-INTEGRATION.md",
+      "plan_entry": "theories/becoming/chapters/THEORY-OF-BECOMING.md"
+    },
+    {
+      "old_path": "theories/becoming/chapters/THEORY-OF-BECOMING.zh.md",
+      "new_path": "theories/becoming/history/THEORY-OF-BECOMING.zh.md",
+      "sha256": "2b6e4355388f96cb49981548920e2f59f66f4942d165f7c86a85b86907250b67",
+      "blob": "70f40fa6b68d9c88347f59465b1998da86888aa6",
+      "batch": "R19-chapters",
+      "reason": "superseded: the argument of 9 October 2026 on how relations of becoming change; its framing (five relational changes, retained form without capacity) and every result it states are held by the canonical chapter section 1 (THE-THEORY-OF-BECOMING.md) and the records effective-capacity-and-eventual-reachability, joint-correlation-reduced-dynamics, relational-renewal-classification, relational-reading-comparison and supported-renewal-recovery; evidence and counterreview stay in the live study RELATIONAL-BECOMING-INTEGRATION.md (Chinese edition)",
+      "plan_entry": "theories/becoming/chapters/THEORY-OF-BECOMING.zh.md"
+    },
+    {
       "old_path": "theories/becoming/chapters/THEORY.md",
       "new_path": "theories/becoming/history/THEORY.md",
       "sha256": "87e778da71b7fd9833153837bfe9cfe443a58dd4bcd8dbae814766af95f9e3f1",

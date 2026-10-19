@@ -17,7 +17,7 @@ Live counts every file outside a `history/` folder, frozen run evidence included
 | `2026-10-05-concern-theory/` | — | 48 | `reward-association/ (13)` | 0 |
 | `2026-10-05-generative-foundation-review/` | — | 933 | [foundation-assessment/ (105)](2026-10-05-generative-foundation-review/foundation-assessment/README.md) · [root-foundation/ (828)](2026-10-05-generative-foundation-review/root-foundation/INDEX.md) | 3363 |
 | `2026-10-05-generative-health/` | — | 1 | `discovery/ (1)` | 0 |
-| `2026-10-05-repository-reconciliation/` | — | 9 | [whole-repo-review-2026-10-16/ (8)](2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/README.md) | 0 |
+| `2026-10-05-repository-reconciliation/` | — | 10 | [whole-repo-review-2026-10-16/ (8)](2026-10-05-repository-reconciliation/whole-repo-review-2026-10-16/README.md) | 0 |
 | `2026-10-05-revisable-concern/` | — | 3 | `settlement/ (3)` | 0 |
 | `2026-10-05-support-and-shared-generativity/` | — | 24 | `completion/ (24)` | 0 |
 
@@ -60,6 +60,12 @@ No README; its top-level documents:
 - [learning-formal.md](2026-10-05-concern-theory/learning-formal.md): A conditional formation theory of learned concern
 - [review.md](2026-10-05-concern-theory/review.md): Independent review of the concern theory
 
+### 2026-10-05-repository-reconciliation
+
+No README; its top-level documents:
+
+- [whole-repo-review-2026-10-19.md](2026-10-05-repository-reconciliation/whole-repo-review-2026-10-19.md): Whole-repository review, 19 October 2026
+
 ## History
 
 Retired study material, bytes unchanged. Each history folder has a `MANIFEST.json` (written by the move tool) where the move receipts created it; read its entries for the reason and former path of each file.
@@ -86,7 +92,7 @@ Studies retired as a whole are under [`_process/history/`](../history/):
 | `2026-10-07-handoffs/` | 10 |
 | `2026-10-17-instructions/` | 3 |
 | `2026-10-18-instructions/` | 1 |
-| `2026-10-19-instructions/` | 1 |
+| `2026-10-19-instructions/` | 2 |
 | `workboard/` | 1 |
 | `worktree-salvage-2026-10-18/` | 391 |
 

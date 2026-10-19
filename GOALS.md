@@ -107,7 +107,7 @@ Explain how relationships within one unfolding form, persist, transform, degener
 
 **Completion criterion:** Connect explanations of actual formation, continuing effects and loss while disclosing unestablished universal inferences. An event bound or finite example alone does not complete the full scope. Do not reduce the strong zero-substantive-axiom hypothesis to absence of ethical axioms.
 
-[2026-10-09-generative-relation-change-goal](sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) · [THEORY-OF-BECOMING](theories/becoming/chapters/THEORY-OF-BECOMING.md)
+[2026-10-09-generative-relation-change-goal](sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) · [THEORY-OF-BECOMING](theories/becoming/history/THEORY-OF-BECOMING.md)
 
 [effective-capacity-and-eventual-reachability](theories/becoming/results/records/effective-capacity-and-eventual-reachability.md): `recorded-checked`
 

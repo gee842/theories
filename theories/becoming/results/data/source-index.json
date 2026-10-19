@@ -5088,6 +5088,7 @@
       "title": "The direction of AI alignment we propose",
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
         "sources/15-codex-theory-conversations/2026-10-08-alignment-direction-completion.md",
         "sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md",
@@ -5121,9 +5122,9 @@
         "sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
-        "theories/becoming/chapters/THEORY-OF-BECOMING.md",
         "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md",
-        "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md"
+        "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
+        "theories/becoming/history/THEORY-OF-BECOMING.md"
       ]
     },
     "theories/becoming/chapters/BECOMING-FOUNDATION.zh.md": {
@@ -5134,9 +5135,11 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-verification.json",
         "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
         "theories/becoming/history/ASSUMPTION-FREE-FOUNDATION.md",
-        "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md"
+        "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
+        "theories/becoming/history/THEORY-OF-BECOMING.md"
       ]
     },
     "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md": {
@@ -5286,6 +5289,7 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/GENERATIVE-PREMISE-DERIVATION.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/NORMATIVE-WARRANT-SOURCES.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
@@ -5399,6 +5403,7 @@
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/SOURCE-RELIANCE-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
         "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md",
         "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
@@ -5459,6 +5464,7 @@
         "RESEARCH.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
         "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PROCESS-LAW-DERIVATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean",
@@ -5911,6 +5917,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/READINGS-PENDING-REN.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY-APART.json",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.md",
@@ -6049,21 +6056,14 @@
         "sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md",
         "sources/15-codex-theory-conversations/2026-10-11-fold-g0.md",
         "sources/15-codex-theory-conversations/2026-10-11-generative-space-no-axiom.md",
-        "sources/15-codex-theory-conversations/2026-10-11-part-ii-into-part-i.md",
         "sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md",
         "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
         "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
-        "sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md",
         "sources/15-codex-theory-conversations/2026-10-12-relational-starting-point.md",
         "sources/15-codex-theory-conversations/2026-10-15-situational-and-the-whole-core.md",
-        "sources/15-codex-theory-conversations/2026-10-16-finite-name-and-open-proofs.md",
         "sources/15-codex-theory-conversations/2026-10-16-fold-part-ii.md",
-        "sources/15-codex-theory-conversations/2026-10-16-loops-readings-and-delegated-choices.md",
-        "sources/15-codex-theory-conversations/2026-10-16-routes-closing-readings.md",
         "sources/15-codex-theory-conversations/2026-10-16-the-situation-makes-it-true.md",
-        "sources/15-codex-theory-conversations/2026-10-18-central-readings-taken.md",
         "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
-        "sources/15-codex-theory-conversations/2026-10-19-integrate-all.md",
         "theories/becoming/chapters/ALIGNMENT-COMPLETION.md",
         "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
         "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
@@ -6097,7 +6097,6 @@
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
-        "theories/becoming/chapters/THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/WANG-YANGMING.md",
         "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
         "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
@@ -6106,6 +6105,7 @@
         "theories/becoming/history/EVALUATIVE-GROUNDING.md",
         "theories/becoming/history/EVALUATIVE-UPTAKE.md",
         "theories/becoming/history/EVOLUTIONARY-ORGANIZATION.md",
+        "theories/becoming/history/THEORY-OF-BECOMING.md",
         "theories/meta-attractor/COMMON-ORGANIZATION.md",
         "theories/meta-attractor/README.md"
       ]
@@ -6361,7 +6361,6 @@
         "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
-        "theories/becoming/chapters/THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
         "theories/becoming/history/COMPLETION-PLAN.md",
         "theories/becoming/history/EVALUATIVE-GROUNDING.md",
@@ -6375,6 +6374,7 @@
         "theories/becoming/history/JOINT-FORMATION.md",
         "theories/becoming/history/START-HERE.md",
         "theories/becoming/history/SYNTHESIS-RECORD.md",
+        "theories/becoming/history/THEORY-OF-BECOMING.md",
         "theories/becoming/history/THEORY.md",
         "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md",
         "theories/meta-attractor/COMMON-ORGANIZATION.md",

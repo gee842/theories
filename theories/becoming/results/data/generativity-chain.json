@@ -910,7 +910,7 @@
               "label_en": "Reused earlier possibility interface"
             },
             {
-              "path": "theories/becoming/chapters/THEORY-OF-BECOMING.md",
+              "path": "theories/becoming/history/THEORY-OF-BECOMING.md",
               "label_zh": "作用关系怎样变化",
               "label_en": "How operative relations change"
             },
@@ -8334,7 +8334,7 @@
     "theories/becoming/results/records/retrospective-source-binding.json": "6dab8abc0daddf0dfc376ffea65bb3b0511381cccba087ca46cb6b3eca9c5445",
     "theories/becoming/results/records/historical-source-binding.json": "ee8d6ee28a4f788814cae5bf301b337128fabf399019bf971dd25d7f0965de3f",
     "theories/becoming/results/records/historical-source-binding.md": "740e065cce88794cc9674ebe744948e08784c96836163575ff71b801489acb10",
-    "theories/becoming/chapters/THEORY-OF-BECOMING.md": "10b5d1faa826473427818718e609cd5a7ccb253748ffa5154dd43b04d0577160",
+    "theories/becoming/history/THEORY-OF-BECOMING.md": "10b5d1faa826473427818718e609cd5a7ccb253748ffa5154dd43b04d0577160",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md": "8850662e88fde2e29e43016c2224677367f9596436f0b07658c065fff2c1978f",
     "theories/becoming/results/records/joint-practice-forms-continuation.json": "f231b9ce36d7ecbfdea5ca5ab7c32ddbf2ef3ef4d390e3bfd48644d86cc3a311",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/README.md": "8d734b6dbab0a741edb51ebd57f8f46858605241ad7d06e7f5384c4ccb2c5788",
@@ -9584,8 +9584,8 @@
     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
     "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
     "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
-    "theories/becoming/chapters/THEORY-OF-BECOMING.md",
-    "theories/becoming/chapters/THEORY-OF-BECOMING.zh.md",
+    "theories/becoming/history/THEORY-OF-BECOMING.md",
+    "theories/becoming/history/THEORY-OF-BECOMING.zh.md",
     "theories/becoming/chapters/WANG-YANGMING.md",
     "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
     "theories/becoming/chapters/WISDOM-AND-CONTEXT.zh.md",

@@ -73,7 +73,7 @@ Sustaining, drawing and repair differentiate roles within one unfolding. The inh
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json) | — |
 | review | [check_renewal_recovery.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_renewal_recovery.py) | — |
 | statement | [RELATIONAL-BECOMING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) | — |
-| integration | [THEORY-OF-BECOMING.md](../../chapters/THEORY-OF-BECOMING.md) | — |
+| integration | [THEORY-OF-BECOMING.md](../../history/THEORY-OF-BECOMING.md) | — |
 | proof | [Continuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean) | `Becoming.Flow.net_give_raises_at`, `Becoming.Flow.net_give_bounded_at`, `Becoming.Flow.restores_at`, `Becoming.Flow.restores` |
 | proof | [RenewalBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean) | `Becoming.SupportGated.pulse_restores` |
 | proof | [RenewalFlow.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalFlow.lean) | `Becoming.SupportGated.renewal`, `Becoming.SupportGated.netGive`, `Becoming.SupportGated.flow`, `Becoming.SupportGated.web`, `Becoming.SupportGated.balances`, `Becoming.SupportGated.netGive_step`, `Becoming.SupportGated.repair_restores` |

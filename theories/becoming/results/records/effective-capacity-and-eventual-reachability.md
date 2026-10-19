@@ -55,7 +55,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [JointContinuationClassification.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean) | `JointContinuationClassification.Realized` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json) | — |
 | integration | [RELATIONAL-BECOMING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md) | — |
-| statement | [THEORY-OF-BECOMING.md](../../chapters/THEORY-OF-BECOMING.md) | — |
+| statement | [THEORY-OF-BECOMING.md](../../history/THEORY-OF-BECOMING.md) | — |
 | integration | [REGENERATIVE-POSSIBILITY-INTERFACE.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md) | — |
 | provenance | [2026-10-09-generative-relation-change-goal.md](../../../../sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) | — |
 | integration | [DIRECT-PORT-RENEWAL.md](../../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/DIRECT-PORT-RENEWAL.md) | — |

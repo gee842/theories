@@ -1744,7 +1744,7 @@
     "scope_en": "Relational classification 35 theorems / 60 audits; comparison 15; return 10/14; repair 9/10; joint cross term 11/25; empty axiom reports. The law family has one shared condition, no substitution and strict per-step renewal; no real-world correspondence or ethical ranking is established, and C does not decide mixed cases. Universal necessity of the whole and the zero-added-substantive-axiom hypothesis are not proved.",
     "next_zh": "这些已完成的连接支持哪一项共同的构成性论断，以及为何在所要求范围内不可缺少；保留真实损失。现由正典入口与 Becoming 脊柱统一。",
     "next_en": "Which common constitutive claim these completed connections support, and why it is indispensable at the required scope, with real losses retained. The canonical entry and Becoming spine now unify this chapter.",
-    "source": "theories/becoming/chapters/THEORY-OF-BECOMING.md",
+    "source": "theories/becoming/history/THEORY-OF-BECOMING.md",
     "source_sha256": "71c0d3c735dccf3a3489f2f45337ee5865e028d61d799cbf5304600f355e7cef",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
