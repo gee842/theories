@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "chinese-sources-and-becoming",
+  "title": {
+    "en": "The Chinese sources and the Theory of Becoming",
+    "zh": "中国思想与生成之论"
+  },
+  "scope_type": "authorized-session",
+  "state": "unmarked",
+  "scope": {
+    "en": "The relational ontology of Chinese thought read against the Theory of Becoming: the 易 and 易传, the 道家, the 儒家, the script (止戈为武 among it) and other lines, mapped passage by passage onto the formal spine and integrated where the map finds a law the spine lacks. Requested by Ren on 19 October 2026 and shown in the README at his request the same day. The thesis that these lines continue one relational ontology is tested, not assumed.",
+    "zh": "以生成之论读中国思想的关系本体：易与易传、道家、儒家、文字（其中有止戈为武）及其他各线，逐段对应到形式脊柱上，并在对应发现脊柱所缺之律处加以整合。Ren 于2026年10月19日提出，同日要求列入 README。诸线延续同一种关系本体之说是要检验的论题，不是前提。"
+  },
+  "objective": {
+    "en": "Tie each passage, quoted verbatim from a preserved text, to checked declarations and records as agreement, exact scope or divergence; state where each tradition's universal forms need a scope and where it diverges; prove in the pure core the laws the passages point at and the spine lacks, or show them false.",
+    "zh": "把每一段（从所存文本逐字引出）以相合、定域或相分对应到已检查的声明与记录；写明各传统的全称形式何处需要定域、何处相分；在纯核心中证明诸段所指而脊柱所缺之律，或说明其不成立。"
+  },
+  "premises": {
+    "en": "Begin with one relational unfolding. A passage counts as relational when it reads the relation first and lets the terms differentiate within it, not from a prior ground, a nature or value fixed before relations, a will or single centre, or a contest or rank. The readings are the AI's (decision D54) and keep their labels; agreement means the spine has a law of that structure, not that the text's authors meant it.",
+    "zh": "从一个关系的展开开始。一段文字先读关系、让诸项在其中分化，而不是出自先在的根据、先于关系而定的性或价值、意志或单一中心、争胜或等级，才算关系的。读法是 AI 的（决定 D54），保留其标注；相合是说脊柱上有结构相同之律，不是说原文作者意谓此律。"
+  },
+  "completion": {
+    "en": "The passage map verifies (verify_ro.py) and every gap it lists is proved in the pure core, shown false, or kept open with its statement. Completing the map does not show that one relational ontology is the doctrine of every line, or that agreement confirms either side.",
+    "zh": "对应表通过检查（verify_ro.py），所列每项缺口或在纯核心中证明，或说明其不成立，或连同其陈述保留为开放。完成对应不说明一种关系本体是每一家的学说，也不说明相合证实了任何一方。"
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-19-relational-ontology-of-chinese-thought.md",
+    "sources/15-codex-theory-conversations/2026-10-19-chinese-sources-in-readme.md",
+    "sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md",
+    "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md"
+  ],
+  "result_ids": [
+    "chinese-sources-on-the-spine",
+    "hexagrams-on-the-spine",
+    "hexagram-world-laws",
+    "place-relations-in-context",
+    "fixed-places-and-sole-lines",
+    "hexagram-arrangements-and-laws",
+    "a-code-formed-between-formations"
+  ],
+  "overview": {
+    "title": {
+      "en": "Mapping the relational ontology of Chinese thought onto the spine",
+      "zh": "中国思想的关系本体，逐段对应到脊柱"
+    },
+    "summary": {
+      "en": "248 passages of nine parts of Chinese thought (the 易传, the 老子 with its commentaries and excavated witnesses, the 儒家, the script with 止戈为武, 庄子 and 玄学, 墨辩 and 名家, 兵家 and 法家, Buddhist lines) are quoted verbatim from hash-bound texts and tied to checked laws of the spine: 95 agree, 94 hold within an exact scope, 59 diverge. The relational start holds across the lines; their universal forms mostly need a scope; four non-relational overlays (a prior ground, a fixed nature, a single centre, contest and rank) recur, each answered inside its own tradition. The script is relational as a system of readings, not in the shapes of its graphs. Gaps the map found are being proved in the core: the arrangements of the 傳 (`Becoming.HexagramSequences`) and a code formed between formations, 约定俗成 (`Becoming.SharedCodes`), have landed, and the four earlier Chinese chapters keep only what the map and the spine do not carry.",
+      "zh": "中国思想九个部分的 248 段文字（易传、老子及其注与出土诸本、儒家、文字与止戈为武、庄子与玄学、墨辩与名家、兵家与法家、汉传佛教各线）从以哈希绑定的文本逐字引出，对应到脊柱上已检查之律：相合 95 段，定域 94 段，相分 59 段。关系性的起点贯穿诸线；其全称形式大多需要定域；四种非关系之层（先在的根据、固定的性、单一中心、争胜与等级）反复出现，各在本传统内部得到回应。文字作为读法系统是关系的，而不在字形。对应所发现的缺口正在核心中证明：传之排列（`Becoming.HexagramSequences`）与在形成之间形成的编码、约定俗成（`Becoming.SharedCodes`）已落地，较早的四个中国章节只保留对应与脊柱所不承载者。"
+    },
+    "next_step": {
+      "en": "Land the two verified gap modules in the queue: two-sided regulation of a level and regulation that reads the level late (中和, 宽猛相济; `Becoming.Regulation`), and capture through the rule (二柄, 据有余而制不足; `Becoming.RuleCapture`). Then the three open gaps: a graded order by closure level and whether it is the same from every standpoint (亲亲之杀), division across several conditions (分), and tolerance compared across laws (柔弱者生之徒).",
+      "zh": "落地队列中两个已验证的缺口模块：水平的双向调节与迟到读法下的调节（中和、宽猛相济；`Becoming.Regulation`），以及经由规则的捕获（二柄、据有余而制不足；`Becoming.RuleCapture`）。然后是三项开放缺口：以闭包层级分等的次序及其是否对每一立场相同（亲亲之杀），跨多个条件的分（分），以及跨律比较容忍（柔弱者生之徒）。"
+    }
+  }
+}

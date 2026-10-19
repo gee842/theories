@@ -7,6 +7,7 @@
 
 This page earlier repeated the scope list. Directions, their authorization and their state are in [GOALS.md](../../../GOALS.md).
 
+- <a id="chinese-sources-and-becoming"></a><a id="the-chinese-sources-and-the-theory-of-becoming"></a><a id="中国思想与生成之论--the-chinese-sources-and-the-theory-of-becoming"></a>[The Chinese sources and the Theory of Becoming](../../../GOALS.md#chinese-sources-and-becoming) (`unmarked`)
 - <a id="cognition-learning-evolution"></a><a id="connected-explanation-of-cognition-learning-and-evolutionary-psychology"></a><a id="认知学习与演化心理的相连解释--connected-explanation-of-cognition-learning-and-evolutionary-psychology"></a>[Connected explanation of cognition, learning and evolutionary psychology](../../../GOALS.md#cognition-learning-evolution) (`unmarked`)
 - <a id="collective-problems"></a><a id="common-problems-and-revisable-purposes"></a><a id="共同问题与可修订目的--common-problems-and-revisable-purposes"></a>[Common problems and revisable purposes](../../../GOALS.md#collective-problems) (`unmarked`)
 - <a id="explicit-axiom-route"></a><a id="completed-conditional-alignment-route"></a><a id="已完成的条件对齐路线--completed-conditional-alignment-route"></a>[Completed conditional alignment route](../../../GOALS.md#explicit-axiom-route) (`completed`)

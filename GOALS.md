@@ -9,6 +9,40 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 ## Scopes not yet marked by Ren
 
+<a id="chinese-sources-and-becoming"></a>
+<a id="中国思想与生成之论--the-chinese-sources-and-the-theory-of-becoming"></a>
+### The Chinese sources and the Theory of Becoming
+
+**State:** `unmarked` · **Scope:** The relational ontology of Chinese thought read against the Theory of Becoming: the 易 and 易传, the 道家, the 儒家, the script (止戈为武 among it) and other lines, mapped passage by passage onto the formal spine and integrated where the map finds a law the spine lacks. Requested by Ren on 19 October 2026 and shown in the README at his request the same day. The thesis that these lines continue one relational ontology is tested, not assumed.
+
+Tie each passage, quoted verbatim from a preserved text, to checked declarations and records as agreement, exact scope or divergence; state where each tradition's universal forms need a scope and where it diverges; prove in the pure core the laws the passages point at and the spine lacks, or show them false.
+
+**Premises:** Begin with one relational unfolding. A passage counts as relational when it reads the relation first and lets the terms differentiate within it, not from a prior ground, a nature or value fixed before relations, a will or single centre, or a contest or rank. The readings are the AI's (decision D54) and keep their labels; agreement means the spine has a law of that structure, not that the text's authors meant it.
+
+**Completion criterion:** The passage map verifies (verify_ro.py) and every gap it lists is proved in the pure core, shown false, or kept open with its statement. Completing the map does not show that one relational ontology is the doctrine of every line, or that agreement confirms either side.
+
+[2026-10-19-relational-ontology-of-chinese-thought](sources/15-codex-theory-conversations/2026-10-19-relational-ontology-of-chinese-thought.md) · [2026-10-19-chinese-sources-in-readme](sources/15-codex-theory-conversations/2026-10-19-chinese-sources-in-readme.md) · [2026-10-19-the-changes-on-the-spine](sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md) · [CHINESE-SOURCES-AND-BECOMING](theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md)
+
+**README overview:** Mapping the relational ontology of Chinese thought onto the spine
+
+248 passages of nine parts of Chinese thought (the 易传, the 老子 with its commentaries and excavated witnesses, the 儒家, the script with 止戈为武, 庄子 and 玄学, 墨辩 and 名家, 兵家 and 法家, Buddhist lines) are quoted verbatim from hash-bound texts and tied to checked laws of the spine: 95 agree, 94 hold within an exact scope, 59 diverge. The relational start holds across the lines; their universal forms mostly need a scope; four non-relational overlays (a prior ground, a fixed nature, a single centre, contest and rank) recur, each answered inside its own tradition. The script is relational as a system of readings, not in the shapes of its graphs. Gaps the map found are being proved in the core: the arrangements of the 傳 (`Becoming.HexagramSequences`) and a code formed between formations, 约定俗成 (`Becoming.SharedCodes`), have landed, and the four earlier Chinese chapters keep only what the map and the spine do not carry.
+
+**Next:** Land the two verified gap modules in the queue: two-sided regulation of a level and regulation that reads the level late (中和, 宽猛相济; `Becoming.Regulation`), and capture through the rule (二柄, 据有余而制不足; `Becoming.RuleCapture`). Then the three open gaps: a graded order by closure level and whether it is the same from every standpoint (亲亲之杀), division across several conditions (分), and tolerance compared across laws (柔弱者生之徒).
+
+[a-code-formed-between-formations](theories/becoming/results/records/a-code-formed-between-formations.md): `recorded-checked`
+
+[chinese-sources-on-the-spine](theories/becoming/results/records/chinese-sources-on-the-spine.md): `reviewed-scoped`
+
+[fixed-places-and-sole-lines](theories/becoming/results/records/fixed-places-and-sole-lines.md): `recorded-checked`
+
+[hexagram-arrangements-and-laws](theories/becoming/results/records/hexagram-arrangements-and-laws.md): `recorded-checked`
+
+[hexagram-world-laws](theories/becoming/results/records/hexagram-world-laws.md): `recorded-checked`
+
+[hexagrams-on-the-spine](theories/becoming/results/records/hexagrams-on-the-spine.md): `recorded-checked`
+
+[place-relations-in-context](theories/becoming/results/records/place-relations-in-context.md): `recorded-checked`
+
 <a id="cognition-learning-evolution"></a>
 <a id="认知学习与演化心理的相连解释--connected-explanation-of-cognition-learning-and-evolutionary-psychology"></a>
 ### Connected explanation of cognition, learning and evolutionary psychology
