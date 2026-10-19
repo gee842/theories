@@ -1272,20 +1272,10 @@
    "category": "support",
    "reason": "a one-line unpacking of `repertoire`: a plan of listed queries and responses is in it (AlignmentInquiry, ported by F3C)"
   },
-  "Becoming.FaultEnvelopes.availability_iff_separated": {
-   "module": "Becoming.FaultEnvelopes",
-   "category": "general-structure",
-   "reason": "a law of every roster of domains and every fault envelope: the certificate is available for every admitted fault set exactly where the envelope is separated (FaultTolerantCorrection, ported by F3C)"
-  },
   "Becoming.FaultEnvelopes.correlated_four_separation": {
    "module": "Becoming.FaultEnvelopes",
    "category": "model-witness",
    "reason": "a fact about one constructed envelope: a correlated pair among four domains is separated (FaultTolerantCorrection, ported by F3C)"
-  },
-  "Becoming.FaultEnvelopes.correlated_three_blocks": {
-   "module": "Becoming.FaultEnvelopes",
-   "category": "model-witness",
-   "reason": "a fact about one constructed envelope: a correlated pair among three domains blocks the certificate (FaultTolerantCorrection, ported by F3C)"
   },
   "Becoming.FaultEnvelopes.covering_faults_reject": {
    "module": "Becoming.FaultEnvelopes",

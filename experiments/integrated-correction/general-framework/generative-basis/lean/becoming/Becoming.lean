@@ -102,6 +102,7 @@ import Becoming.Widening
 import Becoming.Pace
 import Becoming.Passing
 import Becoming.JointKeeping
+import Becoming.Tolerance
 import Becoming.Revision
 import Becoming.Contacts
 import Becoming.RegroupingSelection
@@ -1187,6 +1188,18 @@ readings of the unfolding (`Becoming.Labelled`).
   configuration, while from one configuration one run renews and another consumes the
   sustaining formation's condition: keeping a part decides neither renewal nor what the run
   does to others.
+* `Becoming.Tolerance` (L4): thresholds of waiting and the laws that restore giving. Under
+  the tolerating law a formation gives where all but its tolerance of what it waits on gave;
+  tolerance zero is waiting on all. For every law keeping inclusion of configurations, giving
+  at a step from every start is giving there from total withholding, from which giving only
+  grows, and restoring needs a formation that gives after total withholding: under the
+  tolerating law one sparing all it waits on. A set of formations each waiting on at most its
+  tolerance outside it keeps giving whatever the rest does, and a thin withholding passes out
+  in one step. Where a formation gives first, restoring by step `n` is exactly no chain of `n`
+  waits clear of sources, and a loop clear of sources is never restored; without memory it is
+  exactly no chain of `n` waits, and with memory no step restores. The certificate of
+  `Becoming.FaultEnvelopes` read as a law of giving keeps a covered set giving under separated
+  envelopes, and is available exactly where they are separated.
 * `Becoming.Contacts` (L4): registration through addressed contacts. Registration by agreement
   on data selects a value exactly where its address is in the data, and a change of data keeps
   every old selection exactly where it keeps the old data. A revision rule registers every
