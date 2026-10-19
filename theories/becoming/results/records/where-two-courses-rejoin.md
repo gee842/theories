@@ -92,6 +92,7 @@ Aliases: `where two courses rejoin`, `两个进程在何处重合`, `rejoining m
 ### History
 
 - 19 October 2026: added (M4), on Ren's "what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?" and "please make your own pareto frontier decisions, and push the frontier", the AI choosing the item, and named on Ren's "correct? this is a dualist word, are we drifting off?"; study section 188.
+- 19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.
 
 </details>
 

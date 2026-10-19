@@ -155,8 +155,8 @@
     "zh": "哪个律闭合而非扩大一组所分开的差别（两个进程在何处、经谁重合，见 where-two-courses-rejoin）；成员的律怎样变得回应其所耦合入者（训练）；成员直接读彼此的耦合；组怎样形成与持续（target-capture）；独立审查。"
   },
   "correspondence": {
-    "en": "The chapter's section 7.4 read that what any member's acts do beyond its own coupling closure couples into some member of the pool \"and can be corrected there\", and what-pooled-coupling-reaches left open whether a pool's selection responds to what it separates; section 7.7 listed \"Coupling is not compliance\". Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's): what a pool does is a selection through its pooled coupling, so its acts respond to nothing beyond the union of its members' coupling closures, and within it only through members that couple a difference apart; a response reaches an actor's own act only through the actor's coupling closure, the structure that closing a difference and widening it share.",
-    "zh": "本章第 7.4 节读到，任何成员的动作在其自身耦合闭包之外所做的，耦合入组中的某个成员“并能在那里被纠正”；what-pooled-coupling-reaches 留下开放：一组的选择是否回应它所分开者；第 7.7 节列出“耦合不是服从”。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。读法（AI 的）：一组所做的是经其合起来之耦合的选择，所以它的动作不回应其成员耦合闭包之并以外的任何东西，在其内也只经把差别耦合得有别的成员；回应只经行动者的耦合闭包及于其自身的动作，这是闭合差别与扩大差别共有的结构。"
+    "en": "The chapter's section 7.4 read that what any member's acts do beyond its own coupling closure couples into some member of the pool \"and can be corrected there\", and what-pooled-coupling-reaches left open whether a pool's selection responds to what it separates; section 7.7 listed \"Coupling is not compliance\". Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): what a pool does is a selection through its pooled coupling, so its acts respond to nothing beyond the union of its members' coupling closures, and within it only through members that couple a difference apart; a response reaches an actor's own act only through the actor's coupling closure, the structure that closing a difference and widening it share.",
+    "zh": "本章第 7.4 节读到，任何成员的动作在其自身耦合闭包之外所做的，耦合入组中的某个成员“并能在那里被纠正”；what-pooled-coupling-reaches 留下开放：一组的选择是否回应它所分开者；第 7.7 节列出“耦合不是服从”。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。读法（AI 的，以理论第 7 节的范围在一个说明中采用，DELEGATED-CHOICES D45）：一组所做的是经其合起来之耦合的选择，所以它的动作不回应其成员耦合闭包之并以外的任何东西，在其内也只经把差别耦合得有别的成员；回应只经行动者的耦合闭包及于其自身的动作，这是闭合差别与扩大差别共有的结构。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PoolResponse.lean",
   "aliases": [
@@ -470,7 +470,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -542,6 +542,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: M4 added a study section; THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The reading is adopted with the scope of chapter section 7, whose readings were marked open until 19 October 2026 (DELEGATED-CHOICES D45 (2)). The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：读法以理论第 7 节的范围采用，该节的读法在 2026年10月19日之前标为开放（DELEGATED-CHOICES D45 (2)）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ]
 }

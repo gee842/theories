@@ -162,16 +162,16 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T164401.170999Z）：Becoming.Sensitivity 的 58 项声明（47 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §137；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T164401.170999Z）：Becoming.Sensitivity 的 58 项声明（47 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §137；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T164401.170999Z): the 58 declarations of Becoming.Sensitivity, 47 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 137; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
     "zh": "条件不编号时反例给出什么；按时间先后读的敏感；独立审查。",
     "en": "What a counterexample gives with conditions not numbered; sensitivity in temporal order; an independent review."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的耦合，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。有限全知原则出自 Bishop（1967），弱有限全知原则出自 Bridges 与 Richman（1987）；不连续的函数给出弱原则，是构造性反推数学的标准结果（Ishihara）。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识这个词本身仍是 Ren 的）：耦合就是敏感，耦合入形成的恰是其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
-    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least coupling, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. The limited principle of omniscience is Bishop's (1967) and the weak one Bridges and Richman's (1987); that a discontinuous function gives the weak principle is a standard result of constructive reverse mathematics (Ishihara). Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; the word 识 itself stays Ren's): coupling is sensitivity, what couples into a formation being exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
+    "zh": "Ren 2026-10-12 的目标：“move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”。本结果回答 counterfactual-is-the-course 的 next_delta：条件无穷多时敏感是否仍是最小的耦合，或有反例。凡律在每个历史下读有限多个条件，是；不然不必，而条件编号时，反例在核心中不经全知原则不能给出。有限全知原则出自 Bishop（1967），弱有限全知原则出自 Bridges 与 Richman（1987）；不连续的函数给出弱原则，是构造性反推数学的标准结果（Ishihara）。读法（AI 的，依 Ren 的交托以确切范围采用，DELEGATED-CHOICES D37；识本身原留给 Ren，由命名研究的选项 (b) 回答，DELEGATED-CHOICES D45）：耦合就是敏感，耦合入形成的恰是其交换所能被改变者，一次一个条件；依存于整体者依存于某个部分；依存于整体而不依存于任何部分者是尾，如终将消失或长程平均，是 Kolmogorov 尾事件不带概率的对应；每个律都读有限多个条件是 Brouwer 的连续性原则，它驳斥弱有限全知原则，核心既不陈述也不驳斥它。",
+    "en": "Ren, 12 October 2026, the goal: “move towards 100%, you can spawn a few agents for help, pick the \"What would move it most next\" first, and don't stop until we are 100%”. This result answers the next_delta of counterfactual-is-the-course: whether, with infinitely many conditions, sensitivity remains the least coupling, or a counterexample. It does wherever the law reads finitely many conditions under each history; otherwise it need not, and with numbered conditions no counterexample can be given in the core without a principle of omniscience. The limited principle of omniscience is Bishop's (1967) and the weak one Bridges and Richman's (1987); that a discontinuous function gives the weak principle is a standard result of constructive reverse mathematics (Ishihara). Readings (the AI's, adopted with exact scope on Ren's delegation, DELEGATED-CHOICES D37; 识 itself, left to Ren, is answered by the naming study's option (b), DELEGATED-CHOICES D45): coupling is sensitivity, what couples into a formation being exactly what its exchange can be changed by, one condition at a time; what depends on the whole depends on some part; what depends on the whole and on no part of it is a tail, like eventual vanishing or a long-run average, the counterpart without probability of Kolmogorov's tail events; that every law reads finitely many conditions is Brouwer's continuity principle, which refutes the weak limited principle and which the core neither states nor refutes."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sensitivity.lean",
   "aliases": [
@@ -397,7 +397,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -578,6 +578,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The eighteenth review counts as the review this record asked for (DELEGATED-CHOICES D45 (4)), so the validation scope says that it reviewed the record (AI, read-only, no Lean rebuild), in place of \"not independently reviewed\"; the reading kept 识 itself for Ren; the naming study's option (b) answers it (DELEGATED-CHOICES D45 (3)): 识 is a formation's own further course through the lumping its own couplings make. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：第十八次审查算作本记录所要求的审查（DELEGATED-CHOICES D45 (4)），验证范围写明它审阅了本记录（AI，只读，未重建 Lean），代替“未经独立审查”；读法原把识本身留给 Ren；命名研究的选项 (b) 回答了它（DELEGATED-CHOICES D45 (3)）：识是一个形成自身的进一步历程经其自身耦合所成之归并而行。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

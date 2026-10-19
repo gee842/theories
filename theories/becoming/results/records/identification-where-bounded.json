@@ -10,7 +10,7 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-15T12:00:00+00:00",
   "statement": {
-    "zh": "有界的前段确定历程，前段长度恰好。界给定时归纳即演绎；不给定界时，按最小的界的外推从 2N − 1 起每步都对，与任何外推能做到的一样早：界给出沉默，不给出更早的静止。有限的名命名有意义的切分，不用商。",
+    "zh": "有界的前段确定历程，前段长度恰好。界给定时归纳即演绎；不给定界时，按最小的界的外推从 2N − 1 起每步都对，与任何外推能做到的一样早：界给出沉默，不给出更早的停息。有限的名命名有意义的切分，不用商。",
     "en": "A bounded prefix fixes the course at an exact length. With the bound given, induction is deduction; not given, extrapolation by the least bound is right from 2N − 1 on, as early as any can be: the bound buys silence, not speed. Finite names name the split that makes sense, with no quotient."
   },
   "laws": [
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "zh": "静止之步不需要界：按最小的界的外推（leastBound），不被给予界，在前段于其内证实某个套索候选的最小的界中，按第一个被证实的候选提出（leastFit）；它在至多 N 个状态的每个历史上从 N + N − 1 起每步都对，对每个 N（leastBound_exact）：所找到的候选在真实的界之内，因为真实的候选被证实，而 N 之内、在 N + N − 1 之前被证实的候选处处相合。给定两个值，没有外推（给定界与否）在每个至多 M + 2 个状态的历史上于第 M + M + 2 步都对（rest_earliest），所以 N + N − 1 是对每个外推最优的静止之步，给定界不改变它。界给出的是沉默：没有外推既在每个一个状态的历史上于第 1 步都对，又在每个两个状态的历史上处处相合（rest_without_bound_missed）；给定界的外推在 N + N − 1 之前默而处处相合（第七条规律）。",
+      "zh": "停息之步不需要界：按最小的界的外推（leastBound），不被给予界，在前段于其内证实某个套索候选的最小的界中，按第一个被证实的候选提出（leastFit）；它在至多 N 个状态的每个历史上从 N + N − 1 起每步都对，对每个 N（leastBound_exact）：所找到的候选在真实的界之内，因为真实的候选被证实，而 N 之内、在 N + N − 1 之前被证实的候选处处相合。给定两个值，没有外推（给定界与否）在每个至多 M + 2 个状态的历史上于第 M + M + 2 步都对（rest_earliest），所以 N + N − 1 是对每个外推最优的停息之步，给定界不改变它。界给出的是沉默：没有外推既在每个一个状态的历史上于第 1 步都对，又在每个两个状态的历史上处处相合（rest_without_bound_missed）；给定界的外推在 N + N − 1 之前默而处处相合（第七条规律）。",
       "en": "The rest step needs no bound: the extrapolation by the least bound (leastBound), given no bound, proposes by the first lasso candidate the prefix bears out within the least bound within which one is (leastFit); it is right at every step from N + N − 1 on of every history with at most N states, for every N (leastBound_exact): what it finds is within the true bound, since the true candidate is borne out, and a candidate within N borne out before N + N − 1 accords everywhere. Given two values, no extrapolation, given the bound or not, is right at step M + M + 2 on every history with at most M + 2 states (rest_earliest), so N + N − 1 is the optimal rest step for every extrapolation, and being given the bound does not move it. What the bound buys is silence: no extrapolation is both right at step 1 on every history with one state and missing at no step of every history with two states (rest_without_bound_missed); the extrapolation given the bound stays silent before N + N − 1 and misses nowhere (the seventh law).",
       "declarations": [
         "Becoming.Identification.orFit",
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "zh": "逐除外推的静止之步是立方阶的：在 N = 2m + 3 个位置的环上的二值否定（oddCycle，至多 N 个状态）上，它在第 (N³ − N)/4 步不合（byElimination_missed_late），周期 N 之前每个偶数位移花去整整一圈；所以在至多 N 个状态的二值历史上，(N³ − N)/4 之前没有一步使它处处静止（byElimination_rest_cubic）。",
+      "zh": "逐除外推的停息之步是立方阶的：在 N = 2m + 3 个位置的环上的二值否定（oddCycle，至多 N 个状态）上，它在第 (N³ − N)/4 步不合（byElimination_missed_late），周期 N 之前每个偶数位移花去整整一圈；所以在至多 N 个状态的二值历史上，(N³ − N)/4 之前没有一步使它处处停息（byElimination_rest_cubic）。",
       "en": "Extrapolation by elimination rests at a cubic step: on the two-valued negation along a cycle of N = 2m + 3 places (oddCycle), with at most N states, it misses at step (N³ − N)/4 (byElimination_missed_late), each even shift before the period N taking a whole turn; so no step before (N³ − N)/4 bounds its rest on every two-valued history with at most N states (byElimination_rest_cubic).",
       "declarations": [
         "Becoming.Identification.oddCycle",
@@ -226,7 +226,7 @@
       "kind": "scope"
     },
     {
-      "zh": "逐除外推的确切静止之步没有表明：对奇数 N 它在 (N³ − N)/4 之后（第十六条规律），并至多是 N + (2N − 1)·tri N（第十条规律），所以是立方阶；对至多 N 个状态的二值历史（N ≤ 17）与三值历史（N ≤ 9）的穷举，找到奇数 N ≥ 3 的最坏静止之步是 (N³ − N)/4 + 3，这是计算，不是证明。对每个外推最优的是 2N − 1（第十五条规律）。",
+      "zh": "逐除外推的确切停息之步没有表明：对奇数 N 它在 (N³ − N)/4 之后（第十六条规律），并至多是 N + (2N − 1)·tri N（第十条规律），所以是立方阶；对至多 N 个状态的二值历史（N ≤ 17）与三值历史（N ≤ 9）的穷举，找到奇数 N ≥ 3 的最坏停息之步是 (N³ − N)/4 + 3，这是计算，不是证明。对每个外推最优的是 2N − 1（第十五条规律）。",
       "en": "The exact rest step of extrapolation by elimination is not shown: for odd N it comes after (N³ − N)/4 (the sixteenth law) and is at most N + (2N − 1)·tri N (the tenth law), so it is cubic; exhaustive search over two-valued histories with at most N states (N ≤ 17) and three-valued ones (N ≤ 9) finds the worst rest step (N³ − N)/4 + 3 for odd N ≥ 3, a computation, not a proof. The optimum over extrapolations is 2N − 1 (the fifteenth law).",
       "kind": "scope"
     }
@@ -250,11 +250,11 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Identification have empty axiom reports (receipt 20261013T094743.528770Z, some declarations under former names; the current bytes of Identification, Description and Unfolding bound by 20261013T204910.042715Z), and the checker verifies core purity. Author counterreview, with the scope of the independent review, in the integration note."
   },
   "next_delta": {
-    "zh": "逐除外推的确切静止之步：对奇数 N ≥ 3 穷举得 (N³ − N)/4 + 3，尚未证明。",
+    "zh": "逐除外推的确切停息之步：对奇数 N ≥ 3 穷举得 (N³ − N)/4 + 3，尚未证明。",
     "en": "The exact rest step of extrapolation by elimination: exhaustive search finds (N³ − N)/4 + 3 for odd N ≥ 3, not yet proved."
   },
   "correspondence": {
-    "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的前段推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有前段确定下一个值；外推静止这一点不能被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的外推静止之步（由界给出，外推的前段不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D34；有限的名由 Ren 2026-10-16 取作类比，“take 2”：定理是有界时类有有限的名，“名可名”只是类比）：有限的前段是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。Ren 2026-10-15 未把“按情境就是界”取为自己的（“not sure what's the reading 1, but reality is always situational”）；这一读法的限定见 identification-where-runs-part 与 typicality-by-counting。",
+    "zh": "Ren 2026-10-12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与其后的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”：这里回答 Description、Diagonal 与 Context 留下的后两个开放问题：从有限的前段推出律，以及不加公理命名有意义的切分的类。learning-by-refutation 给出不用界的一面（没有前段确定下一个值；外推停息这一点不能被否证）；这里给出界给定的一面与恰好的边界，并给出未给定界的外推停息之步（由界给出，外推的前段不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，依 Ren 的交托采用，DELEGATED-CHOICES D34；有限的名由 Ren 2026-10-16 取作类比，“take 2”：定理是有界时类有有限的名，“名可名”只是类比）：有限的前段是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；给定界与未给定界的差别在何时对与能否知道已对，不在最后是否对。Ren 2026-10-15 未把“按情境就是界”取为自己的（“not sure what's the reading 1, but reality is always situational”）；这一读法的限定见 identification-where-runs-part 与 typicality-by-counting。",
     "en": "Ren's speculation on 12 October 2026, ‘the full \"truth\" can be derived, situationally, including the cognition/controller part’, and the later ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’: this answers the last two questions Description, Diagonal and Context left open, deriving the law from a finite prefix and naming with no axiom the classes of the split that makes sense. Extrapolation by elimination gives the side with no bound (no prefix fixes the next value; the extrapolation's coming to rest is unrefuted); this gives the side with the bound given, its exact boundary, and the step by which the extrapolation not given the bound rests, which the bound gives and the extrapolation's prefix does not show. Known results: Fine and Wilf's two periods (1965), Moore's finite experiments (1956), Gold's identification in the limit (1967), here reproved in the core with no axiom and connected. Readings (the AI's, adopted on Ren's delegation, DELEGATED-CHOICES D34; the finite name taken by Ren on 16 October 2026 as an analogy, “take 2”: the theorem is that within a bound kinds have finite names, and 名可名 is an analogy only): a finite prefix is a projection, which the bound makes lose nothing of the course; the controller is inside the bounded world, and only a world answering it defeats it, which exceeds the bound; with a bound, a class's name is its finite future; being given the bound and not being given it differ in when the extrapolation is right and whether it can know it is, not in whether it ends right. Ren, 15 October 2026, did not take ‘situationally means the bound’ as theirs (“not sure what's the reading 1, but reality is always situational”); the reading's qualification is in identification-where-runs-part and typicality-by-counting."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
@@ -313,7 +313,7 @@
       "id": "learning-by-refutation",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_accords、Accords、MissesAt、prefixOf、back_prefix、back_made、holdFrom、lassoNext 与 diagonal_unrested：界给定时补上它在界未知时的结果；复用逐除外推的 byElimination、lassos、index 及其引理与 lasso_byElimination_bounded，给出它的静止之步。",
+        "zh": "复用 Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_accords、Accords、MissesAt、prefixOf、back_prefix、back_made、holdFrom、lassoNext 与 diagonal_unrested：界给定时补上它在界未知时的结果；复用逐除外推的 byElimination、lassos、index 及其引理与 lasso_byElimination_bounded，给出它的停息之步。",
         "en": "Reuses Learning.Lasso, lasso_of_held, lasso, lasso_claims, lasso_accords, Accords, MissesAt, prefixOf, back_prefix, back_made, holdFrom, lassoNext and diagonal_unrested: it completes, with the bound given, what that record states with the bound unknown; reuses extrapolation by elimination (byElimination, lassos, index and its lemmas, lasso_byElimination_bounded) to state the step at which it rests."
       },
       "interface": {
@@ -322,7 +322,7 @@
           "en": "Lassos, prefixes, misses and the answering course; extrapolation by elimination and its bound on misses."
         },
         "input": {
-          "zh": "有界的前段确定历程；给定界的外推；未给定界的外推的静止之步。",
+          "zh": "有界的前段确定历程；给定界的外推；未给定界的外推的停息之步。",
           "en": "A bounded prefix fixes the course; the extrapolation given the bound; the step at which the extrapolation not given it rests."
         },
         "conditions": {
@@ -420,7 +420,7 @@
     {
       "id": "wisdom-root-part-one",
       "detail": {
-        "zh": "其“学习”一项说逐除外推静止这一点不能被否证；held_byElimination_rests 给出这一步，是列表长度的函数，外推自己没有它。",
+        "zh": "其“学习”一项说逐除外推停息这一点不能被否证；held_byElimination_rests 给出这一步，是列表长度的函数，外推自己没有它。",
         "en": "Its learning clause says that extrapolation by elimination's coming to rest is unrefuted; held_byElimination_rests states the step, a function of the list's length, which the extrapolation does not have."
       }
     },
@@ -662,7 +662,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3",
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215",
       "declarations": []
     },
     {
@@ -1013,6 +1013,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (13 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（13 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

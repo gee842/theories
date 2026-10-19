@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "rest-at-every-resolution",
   "title": {
-    "zh": "每一分辨率下的静止",
+    "zh": "每一分辨率下的停息",
     "en": "Rest at every resolution"
   },
   "kind": "theorem",
@@ -15,12 +15,12 @@
   },
   "laws": [
     {
-      "zh": "脊柱以一个固定单位的自然数计量，所以耗散每次交换至少损失一个单位；静止与开放的规律依赖这一量子。",
+      "zh": "脊柱以一个固定单位的自然数计量，所以耗散每次交换至少损失一个单位；停息与开放的规律依赖这一量子。",
       "en": "The spine counts amounts in natural numbers of one fixed unit, so dissipation loses at least a unit at every exchange, and the rest and openness laws rely on that quantum.",
       "declarations": []
     },
     {
-      "zh": "把单位的细分算作只给不取的形成时，脊柱的前提不添任何前提就带来每一分辨率下的静止（rest-with-refinement-counted）；这里的规律是不算入细分时的规律，作为研究笔记保留。",
+      "zh": "把单位的细分算作只给不取的形成时，脊柱的前提不添任何前提就带来每一分辨率下的停息（rest-with-refinement-counted）；这里的规律是不算入细分时的规律，作为研究笔记保留。",
       "en": "With the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added (rest-with-refinement-counted); the laws here are those without counting the refinement, kept as research notes.",
       "declarations": []
     },
@@ -215,7 +215,7 @@
       "en": "The exchange law at a least loss: the spine's dissipation (each formation taking gives a closed family back at least one unit of the step after less than it takes; the proof uses only that it gives no more than it takes) and a least loss at each size (Flow.LosesAtSize: a formation taking at least 1/p of the unit loses at least 1/m of it, m the same at every step)."
     },
     {
-      "zh": "世界的规律：活动的普查、每个关系项都体现、从 T 起每步被围住，与静止定理（continued-change-needs-openness）相同。交换的规律只对从 T 起固定的封闭家族陈述。",
+      "zh": "世界的规律：活动的普查、每个关系项都体现、从 T 起每步被围住，与停息定理（continued-change-needs-openness）相同。交换的规律只对从 T 起固定的封闭家族陈述。",
       "en": "The world laws: a census of activity, every relatum embodied and every step from T on enclosed, as in the rest theorem (continued-change-needs-openness). The exchange law is stated for a fixed family closed from T on."
     },
     {
@@ -284,7 +284,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "detail": {
-        "zh": "Emission：满足 World.rests_unrefuted_enclosed 的全部前提，只是平衡在减半的单位下，并按比例耗散（给回所取用的一半），每步生起一个新关系项，立于下一步的一个单位；世界在固定单位下不平衡（Emission.not_balanced）。所以静止定理依赖量子，按比例的损失没有最小尺度时也不足够。",
+        "zh": "Emission：满足 World.rests_unrefuted_enclosed 的全部前提，只是平衡在减半的单位下，并按比例耗散（给回所取用的一半），每步生起一个新关系项，立于下一步的一个单位；世界在固定单位下不平衡（Emission.not_balanced）。所以停息定理依赖量子，按比例的损失没有最小尺度时也不足够。",
         "en": "Emission: meets every premise of World.rests_unrefuted_enclosed but with balance at a halving unit, and is dissipative in proportion (giving back half of what it takes), with a new relatum arising at every step, standing at one unit of the step after; the world does not balance at the fixed unit (Emission.not_balanced). So the rest theorem relies on the quantum, and loss in proportion without a least size does not suffice."
       }
     },
@@ -323,7 +323,7 @@
     "en": "Research notes: attainment of the counting bounds; the exchange law with changing enclosures; whether the proportion's growth constant can be smaller; whether the review's weaker premises (ReplenishedLoses, NotGaining, the quantum law asking only that the family is not gained on) and the per-formation proportion (EachShare) enter the core; continuous time and real amounts; active conduits."
   },
   "correspondence": {
-    "zh": "单位固定时的静止定理（continued-change-needs-openness）是 r = 1 并带脊柱一单位损失的情形；本结果说明那里的损失是由单位承载的一个量子，并给出不算入细分时每一分辨率下成立的规律。Ren 2026-10-11 说每次交换至少一个最小差异属于生成本身（“A is right - because of change, there is difference”），并问零前提的情形（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）；把单位的细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的静止，本记录的见证都由细分供给（rest-with-refinement-counted）。作者的读法（AI 论证，依 Ren 的交托采用）：不算入细分时，以第 T 步的单位计，所立者的总水平是一个有理量，细分单位以更细的分辨率表示量；按比例的损失是效率的上界；1/p 是计数变化所用的尺度。在这一读法下，有界效率之下被围住的生成，任何固定尺度的都会停止；在围住之内只能以越来越细或越来越接近无损的方式继续。这回答了 continued-change-needs-openness 的下一步“带比率或连续量的总水平”中有理量与离散步的部分；连续时间与实数量仍开放。计数转移只需每一尺度的最小损失；计数关系项得到的，需要多于每一尺度转移的最小损失，因为一整个单位可以由越来越多、越来越小的转移带过（Trickle）。对家族总和的前提不受分割影响：比例如此，第十五次独立审查的探针 ReplenishedLoses（被给予至少 1/p 单位的封闭家族至少失去 1/m 单位）也如此，它严格弱于比例而仍给出增长的规律；分割打败的只是逐个转移的前提。此前这里说计数关系项“需要对家族的比例”，“只有损失随所转移的量成比例，分割才不能把损失分没”，是过度的必要性陈述，按第十五次独立审查 W1 更正。Ren 关于研究笔记（2026-10-11）：“they seem to be good research subjects, but this is separate matter, we can leave a note”。",
+    "zh": "单位固定时的停息定理（continued-change-needs-openness）是 r = 1 并带脊柱一单位损失的情形；本结果说明那里的损失是由单位承载的一个量子，并给出不算入细分时每一分辨率下成立的规律。Ren 2026-10-11 说每次交换至少一个最小差异属于生成本身（“A is right - because of change, there is difference”），并问零前提的情形（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）；把单位的细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的停息，本记录的见证都由细分供给（rest-with-refinement-counted）。作者的读法（AI 论证，依 Ren 的交托采用）：不算入细分时，以第 T 步的单位计，所立者的总水平是一个有理量，细分单位以更细的分辨率表示量；按比例的损失是效率的上界；1/p 是计数变化所用的尺度。在这一读法下，有界效率之下被围住的生成，任何固定尺度的都会停止；在围住之内只能以越来越细或越来越接近无损的方式继续。这回答了 continued-change-needs-openness 的下一步“带比率或连续量的总水平”中有理量与离散步的部分；连续时间与实数量仍开放。计数转移只需每一尺度的最小损失；计数关系项得到的，需要多于每一尺度转移的最小损失，因为一整个单位可以由越来越多、越来越小的转移带过（Trickle）。对家族总和的前提不受分割影响：比例如此，第十五次独立审查的探针 ReplenishedLoses（被给予至少 1/p 单位的封闭家族至少失去 1/m 单位）也如此，它严格弱于比例而仍给出增长的规律；分割打败的只是逐个转移的前提。此前这里说计数关系项“需要对家族的比例”，“只有损失随所转移的量成比例，分割才不能把损失分没”，是过度的必要性陈述，按第十五次独立审查 W1 更正。Ren 关于研究笔记（2026-10-11）：“they seem to be good research subjects, but this is separate matter, we can leave a note”。",
     "en": "The rest theorem with a fixed unit (continued-change-needs-openness) is the case r = 1 with the spine's one-unit loss; this result shows that the loss there is a quantum carried by the unit and gives the laws holding at every resolution without counting the refinement. On 11 October 2026 Ren said that a least difference at every exchange belongs to becoming itself (‘A is right - because of change, there is difference’) and asked about the case of zero premises (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md); with the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and the witnesses of this record are each fed by the refinement (rest-with-refinement-counted). The author's reading (an AI argument, adopted on Ren's delegation): without counting the refinement, the total standing counted in the unit of step T is a rational quantity, refining the unit representing amounts at finer resolution; loss in proportion is an upper bound on efficiency; 1/p is the size at which change is counted. On this reading, with bounded efficiency, enclosed generation of any fixed size stops, and inside an enclosure it can continue only ever finer or ever closer to lossless. This answers, for rational amounts and discrete steps, the next step of continued-change-needs-openness, ‘total standing with rates or continuous amounts’; continuous time and real amounts remain open. Counting transfers needs only a least loss at each size; counting what relata gain needs more than a least loss at each size of transfer, since a whole unit can pass in ever more, ever smaller transfers (Trickle). A premise on the family's totals is immune to splitting: so is the proportion, and so is the fifteenth independent review's probe ReplenishedLoses (a closed family given at least 1/p of the unit loses at least 1/m of it), which is strictly weaker than the proportion and still gives the growth law; what splitting defeats is a premise per transfer. This passage earlier said that counting what relata gain ‘needs the family's share’ and that ‘only a loss in proportion to what is transferred cannot be split away’; both overclaimed necessity and are corrected following W1 of the fifteenth independent review. Ren on the research notes (11 October 2026): ‘they seem to be good research subjects, but this is separate matter, we can leave a note’."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
@@ -378,7 +378,8 @@
     "Becoming.throughput_needs_proportion",
     "Becoming.Asymptote.not_balanced",
     "Becoming.Emission.not_balanced",
-    "Becoming.Alternation.not_balanced"
+    "Becoming.Alternation.not_balanced",
+    "每一分辨率下的静止"
   ],
   "dependencies": [
     {
@@ -469,7 +470,7 @@
     {
       "id": "rest-with-refinement-counted",
       "detail": {
-        "zh": "那里把细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的静止，本记录的见证都由细分供给；本记录是不算入细分时的规律。",
+        "zh": "那里把细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的停息，本记录的见证都由细分供给；本记录是不算入细分时的规律。",
         "en": "There the splitting of the unit is counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and this record's witnesses are fed by the refinement; this record gives the laws without counting it."
       }
     }
@@ -855,7 +856,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3",
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215",
       "declarations": []
     },
     {
@@ -1249,6 +1250,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (8 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged; the Chinese title changes with it, and the old one is kept as an alias. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（8 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变；中文标题随之改动，旧标题保留为别名。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

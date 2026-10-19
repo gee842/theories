@@ -11,12 +11,12 @@
   "reviewed_at_utc": "2026-10-18T07:36:11+00:00",
   "statement": {
     "en": "Under an undetermined law enough parts in two: some run can come to rest with its target met exactly where a reachable configuration stays and meets it; every run must exactly where every such configuration meets it and every run settles; under a determined law the two are one.",
-    "zh": "在不确定之律下，够分为两部分：某次运行能静止且目标被满足，恰当某个可达构形停留且满足目标；每次运行必然如此，恰当每个这样的构形都满足目标且每次运行都安定；在确定之律下，两者为一。"
+    "zh": "在不确定之律下，够分为两部分：某次运行能停息且目标被满足，恰当某个可达构形停留且满足目标；每次运行必然如此，恰当每个这样的构形都满足目标且每次运行都安定；在确定之律下，两者为一。"
   },
   "laws": [
     {
       "en": "Possible enough: some run of a process from a configuration comes to rest with its target met exactly where a configuration reachable from it meets the target and has a step that stays.",
-      "zh": "可能之够：过程从一个构形出发的某次运行达到静止且目标被满足，恰当从它可达的某个构形满足目标且有一步停留。",
+      "zh": "可能之够：过程从一个构形出发的某次运行达到停息且目标被满足，恰当从它可达的某个构形满足目标且有一步停留。",
       "declarations": [
         "Becoming.Enough.RestsFrom",
         "Becoming.Enough.Rests",
@@ -31,7 +31,7 @@
     },
     {
       "en": "Assured enough: every run from a configuration comes to rest with its target met exactly where every reachable configuration with a step that stays meets the target and every run from it settles; the second part does not mention the target.",
-      "zh": "确保之够：从一个构形出发的每次运行都达到静止且目标被满足，恰当每个有一步停留的可达构形满足目标，且从它出发的每次运行都安定；第二部分不提及目标。",
+      "zh": "确保之够：从一个构形出发的每次运行都达到停息且目标被满足，恰当每个有一步停留的可达构形满足目标，且从它出发的每次运行都安定；第二部分不提及目标。",
       "declarations": [
         "Becoming.Enough.Settles",
         "Becoming.Enough.settled_at",
@@ -41,7 +41,7 @@
     },
     {
       "en": "Where every configuration can stay and meets the target, a run may still never settle: with two configurations and every step allowed, some run rests and the alternating run does not settle.",
-      "zh": "在每个构形都可停留且满足目标之处，一次运行仍可能永不安定：两个构形、每一步皆允许，某次运行静止，而交替的运行不安定。",
+      "zh": "在每个构形都可停留且满足目标之处，一次运行仍可能永不安定：两个构形、每一步皆允许，某次运行停息，而交替的运行不安定。",
       "declarations": [
         "Becoming.Enough.Free.process",
         "Becoming.Enough.Free.alternate",
@@ -52,7 +52,7 @@
     },
     {
       "en": "Under a determined law some run from a configuration rests with its target met exactly where every run does, and exactly where the orbit reaches a configuration the law leaves unchanged that meets the target.",
-      "zh": "在确定之律下，从一个构形出发的某次运行静止且目标被满足，恰当每次运行皆然，也恰当轨道达到一个律使之不变且满足目标的构形。",
+      "zh": "在确定之律下，从一个构形出发的某次运行停息且目标被满足，恰当每次运行皆然，也恰当轨道达到一个律使之不变且满足目标的构形。",
       "declarations": [
         "Becoming.Enough.law_possibly_iff",
         "Becoming.Enough.law_possibly_iff_assured"
@@ -82,7 +82,7 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Enough.lean",
       "detail": {
         "en": "Two configurations, every step allowed, the target met everywhere: every configuration can stay, some run rests, and the alternating run never settles (Free.stays_meet_not_assured).",
-        "zh": "两个构形、每一步皆允许、目标处处被满足：每个构形可停留，某次运行静止，而交替的运行永不安定（Free.stays_meet_not_assured）。"
+        "zh": "两个构形、每一步皆允许、目标处处被满足：每个构形可停留，某次运行停息，而交替的运行永不安定（Free.stays_meet_not_assured）。"
       }
     }
   ],
@@ -168,7 +168,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -256,6 +256,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (6 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（6 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ]
 }

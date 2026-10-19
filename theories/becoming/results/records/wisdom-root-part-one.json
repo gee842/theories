@@ -50,7 +50,7 @@
     },
     {
       "en": "Learning: in a world held by a list, extrapolation by elimination misses a bounded number of times, its coming to rest is unrefuted and its prefix never shows that it has come to rest; every extrapolation has an open course on which each value it proposes misses.",
-      "zh": "学习：被列表所持的世界中逐除外推的不合有界、静止不能被否证、其前段从不表明它已静止；每个外推都有一个开放的历程，使它提出的每个值都不合。",
+      "zh": "学习：被列表所持的世界中逐除外推的不合有界、停息不能被否证、其前段从不表明它已停息；每个外推都有一个开放的历程，使它提出的每个值都不合。",
       "declarations": [
         "Becoming.Learning.held_byElimination_bounded",
         "Becoming.Learning.held_rest_unrefuted",
@@ -71,7 +71,7 @@
     },
     {
       "en": "Enough: seeking rests exactly at a state the law leaves unchanged that meets its target; “more than now” needs an open world; two seekers of “above all others” never rest together.",
-      "zh": "够：寻求恰在到达律所不变、满足其目标的状态时静止；“比现在更多”需要开放的世界；“高于一切他者”的两个寻求者从不同时静止。",
+      "zh": "够：寻求恰在到达律所不变、满足其目标的状态时停息；“比现在更多”需要开放的世界；“高于一切他者”的两个寻求者从不同时停息。",
       "declarations": [
         "Becoming.Law.rests_iff",
         "Becoming.more_needs_open",
@@ -180,7 +180,7 @@
       },
       "interface": {
         "output": {
-          "zh": "无前段固定下一个值；对角；逐除外推的不合有界、静止不能被否证；合并枚举。",
+          "zh": "无前段固定下一个值；对角；逐除外推的不合有界、停息不能被否证；合并枚举。",
           "en": "No prefix fixes the next value; the diagonal; extrapolation by elimination's misses bounded, its rest unrefuted; the merged enumeration."
         },
         "input": {
@@ -249,7 +249,7 @@
       },
       "interface": {
         "output": {
-          "zh": "寻求恰在够处静止；“比现在更多”需要开放；“高于一切他者”不同时满足两个寻求者。",
+          "zh": "寻求恰在够处停息；“比现在更多”需要开放；“高于一切他者”不同时满足两个寻求者。",
           "en": "Seeking rests exactly at enough; “more than now” needs openness; “above all others” never meets two seekers at once."
         },
         "input": {
@@ -432,7 +432,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3",
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215",
       "declarations": []
     },
     {
@@ -976,6 +976,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (6 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（6 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

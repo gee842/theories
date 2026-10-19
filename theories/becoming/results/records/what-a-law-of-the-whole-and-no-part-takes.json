@@ -155,8 +155,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T224751.654308Z）：Becoming.Tail 的 53 项声明（39 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §160；未经独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T224751.654308Z): the 53 declarations of Becoming.Tail, 39 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 160; not independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261015T224751.654308Z）：Becoming.Tail 的 53 项声明（39 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §160；经第十八次审查（AI，只读，未重建 Lean）审阅，其更正已处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T224751.654308Z): the 53 declarations of Becoming.Tail, 39 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 160; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
     "zh": "弱的规则是否给出有限全知原则的规则（尾之律是否严格多取）；条件不编号时反例给出什么；按时间先后读的敏感；独立审查。",
@@ -398,7 +398,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -574,6 +574,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The eighteenth review counts as the review this record asked for (DELEGATED-CHOICES D45 (4)), so the validation scope says that it reviewed the record (AI, read-only, no Lean rebuild), in place of \"not independently reviewed\". The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：第十八次审查算作本记录所要求的审查（DELEGATED-CHOICES D45 (4)），验证范围写明它审阅了本记录（AI，只读，未重建 Lean），代替“未经独立审查”。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

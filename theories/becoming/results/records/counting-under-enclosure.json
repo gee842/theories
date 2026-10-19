@@ -445,7 +445,7 @@
     "en": "Local forms of the other laws, by the zero-premise plan."
   },
   "correspondence": {
-    "zh": "静止定理（ceasing-needs-arising、continued-change-needs-openness）说被围住时变化不再复现；本结果给出它的定量形式，以及它在计数上的全部内容：被围住的展开中，计数只多受一个变化界约束，其余由计数表与八个前提给出（whole-law-of-counting）；在全部八个前提之下，在计数上有限世界与从某步起被围住的世界无法区分，在一个前提选择之下恰在它约束变化且约束计数时无法区分；被围住所加的恰在选中平衡、体现与耗散时出现，有限所加的还有计数的界，以及耗散从第一步起对生起的约束。作者的读法（AI 论证）：变化界就是被围住时所立者总水平的逐步耗散在计数上的样子；在被围住的展开中，每一次形成或消解都耗去关系中立着的一些东西，能不息地变化的是开放的展开（continued-change-needs-openness）；没有耗散，封闭的家族可以不取用而给予，被围住就不再约束计数；有限的世界从第一步起就被围住，所以在那里不需要只有活跃者取用，耗散连同平衡与体现就使生起需要在场者。这是活动的计数，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它不是 Ren 提议中的“生成的”“退化的”（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠，所以这一读法不是其所指；二者读作对能形成者的扩大与缩小，DELEGATED-CHOICES D2）；它也不评价生起、止息或静止。",
+    "zh": "停息定理（ceasing-needs-arising、continued-change-needs-openness）说被围住时变化不再复现；本结果给出它的定量形式，以及它在计数上的全部内容：被围住的展开中，计数只多受一个变化界约束，其余由计数表与八个前提给出（whole-law-of-counting）；在全部八个前提之下，在计数上有限世界与从某步起被围住的世界无法区分，在一个前提选择之下恰在它约束变化且约束计数时无法区分；被围住所加的恰在选中平衡、体现与耗散时出现，有限所加的还有计数的界，以及耗散从第一步起对生起的约束。作者的读法（AI 论证）：变化界就是被围住时所立者总水平的逐步耗散在计数上的样子；在被围住的展开中，每一次形成或消解都耗去关系中立着的一些东西，能不息地变化的是开放的展开（continued-change-needs-openness）；没有耗散，封闭的家族可以不取用而给予，被围住就不再约束计数；有限的世界从第一步起就被围住，所以在那里不需要只有活跃者取用，耗散连同平衡与体现就使生起需要在场者。这是活动的计数，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它不是 Ren 提议中的“生成的”“退化的”（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠，所以这一读法不是其所指；二者读作对能形成者的扩大与缩小，DELEGATED-CHOICES D2）；它也不评价生起、止息或停息。",
     "en": "The rest theorem (ceasing-needs-arising, continued-change-needs-openness) says change does not recur under enclosure; this result gives its quantitative form and all it says of counting: in an enclosed unfolding the counts are constrained by a change bound and by nothing more than the tally and the eight premises (whole-law-of-counting); under all eight premises, in counting, finite worlds cannot be told from worlds enclosed from some step on, and under a selection of the premises they cannot be told apart exactly where it bounds change and binds counting; what enclosure adds appears exactly where balance, embodiment and dissipation are selected, and finiteness adds a bound on the count and the constraint of dissipation on arising from the first step. The author's reading (an AI argument): the change bound is what the stepwise dissipation of the total standing under enclosure looks like in the counts; in an enclosed unfolding every forming or dissolving spends something standing in the relations, and what can change without end is the open unfolding (continued-change-needs-openness); without dissipation a closed family can be given to without taking, and enclosure no longer constrains counting; a finite world is enclosed from the first step, so there only active relata taking is not needed: dissipation with balance and embodiment already makes arising need what is present. This is the counting of activity, whose English names arising and ceasing Ren confirmed (2026-10-09-arising-ceasing-names; the Chinese 生起／止息 being the AI's rendering); it is not the proposal's generative and degenerative (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap, so this reading is not what is meant; they read as widening and narrowing what can form, DELEGATED-CHOICES D2); it evaluates neither arising, ceasing nor rest."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
@@ -524,7 +524,7 @@
       },
       "interface": {
         "output": {
-          "zh": "被围住时变化不再复现（静止定理）。",
+          "zh": "被围住时变化不再复现（停息定理）。",
           "en": "Under enclosure change does not recur (the rest theorem)."
         },
         "input": {
@@ -1009,7 +1009,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/BECOMING-P32-P34-REVIEW.md",
@@ -1457,6 +1457,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (3 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（3 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

@@ -32,7 +32,7 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 10 月 10 日把劫持说成“a part of the nature got hijacked by what they \"got nurtured\"”，10 月 11 日答“b5”。无明边界计划的 B5：在赢得更多以赢之处，不能静止的目标被多取并多传递，直到被围住；胜者写下判断寻求的规则。这里陈述三个部分：份额（元吸引子对心智之选择的计数核心，差异的延续与复利），世系停止之处，规则握住结果（“胜者重写考题”与杠杆点论证）。读法（AI 的，依 Ren 的交托采用）：劫持是奖赏不能静止者的选择所形成、由胜者所写之规则保持的目标；Ren 的“even rationality is self-interest”读作规则伸及理性本身的标准。见整合文档 §83。",
+    "zh": "Ren 10 月 10 日把劫持说成“a part of the nature got hijacked by what they \"got nurtured\"”，10 月 11 日答“b5”。无明边界计划的 B5：在赢得更多以赢之处，不能停息的目标被多取并多传递，直到被围住；胜者写下判断寻求的规则。这里陈述三个部分：份额（元吸引子对心智之选择的计数核心，差异的延续与复利），世系停止之处，规则握住结果（“胜者重写考题”与杠杆点论证）。读法（AI 的，依 Ren 的交托采用）：劫持是奖赏不能停息者的选择所形成、由胜者所写之规则保持的目标；Ren 的“even rationality is self-interest”读作规则伸及理性本身的标准。见整合文档 §83。",
     "en": "Ren on 10 October spoke of nature hijacked “by what they \"got nurtured\"”, and on 11 October answered “b5”. B5 of the 无明 boundary plan: where winning buys more power to win, targets that cannot rest are taken more and passed on more until enclosure binds, and the winners write the rule by which seeking is judged. Three parts are stated here: the share (the counting core of the meta-attractor's selection of minds, differential persistence and compounding), where descent stops, and the rule holding the outcome (“the winner rewrites the test” and the leverage-point argument). Readings (the AI's, adopted on Ren's delegation): hijacking is a target formed and passed on by a selection that rewards what cannot rest, held in place by a rule its winners write; Ren's “even rationality is self-interest” reads as the rule reaching the standard of reason itself. See §83 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
@@ -129,7 +129,7 @@
     {
       "id": "seeking-boundary",
       "detail": {
-        "zh": "B1、B2：寻求何处能静止；这里是 B5：不能静止的目标怎样被选择、选择握在哪里。",
+        "zh": "B1、B2：寻求何处能停息；这里是 B5：不能停息的目标怎样被选择、选择握在哪里。",
         "en": "B1 and B2: where seeking can rest; here B5: how a target that cannot rest is selected and where the selection is held."
       }
     },
@@ -155,8 +155,8 @@
     "en": "That taking more yields more offspring, that offspring carry their parents' target and that winners shape the rule are supplied, not derived; the share theorems are the counting for a two-valued target; the condition of perturbation_reabsorbed (the next configuration not depending on the state) is strong, and how a rule rewritten by its winners still holds the outcome is not stated in general; Captured is a minimal witness; the readings are the AI's, adopted on Ren's delegation; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "2026-10-14：Becoming.Capture、Becoming.Mechanism 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Capture 的 11 项定理全部空依赖，其中含 share_not_lower、share_rises、Flow.descent_exhausted 与 Law.perturbation_reabsorbed；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查，是否需要交 Ren。",
-    "en": "14 October 2026: the current bytes of Becoming.Capture, Becoming.Mechanism are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 11 theorems of Becoming.Capture all have empty axiom reports, among them share_not_lower, share_rises, Flow.descent_exhausted and Law.perturbation_reabsorbed; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §83 of the integration note; not independently reviewed, whether it needs a review is Ren's call."
+    "zh": "2026-10-14：Becoming.Capture、Becoming.Mechanism 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Capture 的 11 项定理全部空依赖，其中含 share_not_lower、share_rises、Flow.descent_exhausted 与 Law.perturbation_reabsorbed；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查；需要如第十八次审查的审查（D45 (4)）。",
+    "en": "14 October 2026: the current bytes of Becoming.Capture, Becoming.Mechanism are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 11 theorems of Becoming.Capture all have empty axiom reports, among them share_not_lower, share_rises, Flow.descent_exhausted and Law.perturbation_reabsorbed; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §83 of the integration note; not independently reviewed; it needs a review such as the eighteenth was (DELEGATED-CHOICES D45 (4))."
   },
   "references": [
     {
@@ -239,7 +239,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3",
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215",
       "declarations": []
     },
     {
@@ -640,6 +640,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The question this record left to Ren, whether it needs a review, is answered (DELEGATED-CHOICES D45 (4)): it needs the review the eighteenth review gave the modules it covered, which no reviewer has given it yet; the rest family's Chinese term in the live Chinese fields is now 停息 (4 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：本记录留给 Ren 的问题（是否需要审查）已回答（DELEGATED-CHOICES D45 (4)）：它需要第十八次审查给其所覆盖模块的那种审查，尚无审查者给过它；中文字段中停息家族的用语由“静止”改为“停息”（4 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ]
 }

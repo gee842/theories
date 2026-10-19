@@ -96,8 +96,8 @@
     "zh": "所取者是否被依赖（与 Becoming.SelectionGap 一起，其外的依赖者是否被终结）；伸出者份额的上升；独立审查。"
   },
   "correspondence": {
-    "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"the general form of favouring what reaches beyond\". Becoming.Selection had it in the witness Diversion, and Dissipation's rising_draws_in, for rising recurring at arbitrarily late steps under dissipation, in a negative form. Here one step, the weaker premise of gaining nothing (Becoming.Entropy), and a named formation and condition. Ren, 18 October 2026: \"please see what else is there to do - keep pushing the frontier till finishing\" (provenance, not warrant). Reading (the AI's): where nothing comes from nothing, a selection rewarding what it couples into rewards drawing on what lies beyond its coupling, which by Becoming.SelectionGap it does not see; the favour is structural, not intended.",
-    "zh": "本章开放纲领（第 8.2 节，选择、原因与实验）列出“the general form of favouring what reaches beyond”。Becoming.Selection 在见证 Diversion 中有它，Dissipation 的 rising_draws_in 对耗散下在任意晚的步反复上升以否定形式给出。这里是一步、较弱的不增益前提（Becoming.Entropy），以及具名的形成与条件。Ren，2026年10月18日：“please see what else is there to do - keep pushing the frontier till finishing”（来历，不是根据）。读法（AI 的）：无中不生有之处，奖励其所耦合者的选择奖励汲取其耦合之外者，依 Becoming.SelectionGap 它看不见这一点；这偏向是结构的，不是意图的。"
+    "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"the general form of favouring what reaches beyond\". Becoming.Selection had it in the witness Diversion, and Dissipation's rising_draws_in, for rising recurring at arbitrarily late steps under dissipation, in a negative form. Here one step, the weaker premise of gaining nothing (Becoming.Entropy), and a named formation and condition. Ren, 18 October 2026: \"please see what else is there to do - keep pushing the frontier till finishing\" (provenance, not warrant). Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): where nothing comes from nothing, a selection rewarding what it couples into rewards drawing on what lies beyond its coupling, which by Becoming.SelectionGap it does not see; the favour is structural, not intended.",
+    "zh": "本章开放纲领（第 8.2 节，选择、原因与实验）列出“the general form of favouring what reaches beyond”。Becoming.Selection 在见证 Diversion 中有它，Dissipation 的 rising_draws_in 对耗散下在任意晚的步反复上升以否定形式给出。这里是一步、较弱的不增益前提（Becoming.Entropy），以及具名的形成与条件。Ren，2026年10月18日：“please see what else is there to do - keep pushing the frontier till finishing”（来历，不是根据）。读法（AI 的，以理论第 7 节的范围在一个说明中采用，DELEGATED-CHOICES D45）：无中不生有之处，奖励其所耦合者的选择奖励汲取其耦合之外者，依 Becoming.SelectionGap 它看不见这一点；这偏向是结构的，不是意图的。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionReach.lean",
   "aliases": [
@@ -229,7 +229,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -336,6 +336,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The reading is adopted with the scope of chapter section 7, whose readings were marked open until 19 October 2026 (DELEGATED-CHOICES D45 (2)). The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：读法以理论第 7 节的范围采用，该节的读法在 2026年10月19日之前标为开放（DELEGATED-CHOICES D45 (2)）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ]
 }

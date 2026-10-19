@@ -10,7 +10,7 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "不加前提的规律对每个世界成立，前提划出部分：活动可判定的有限世界中生起复现恰当止息复现，活跨越生起与止息，耗散之下有限世界归于静止不能被否证。",
+    "zh": "不加前提的规律对每个世界成立，前提划出部分：活动可判定的有限世界中生起复现恰当止息复现，活跨越生起与止息，耗散之下有限世界归于停息不能被否证。",
     "en": "Premise-free laws hold of every world and premises carve parts: in a finite world whose activity is decided arising recurs exactly when ceasing does, living crosses arising and ceasing, and under dissipation a finite world cannot be refuted to come to rest."
   },
   "laws": [
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "zh": "在有限、平衡、耗散且生起者体现的世界中，世界从某步起静止不能被否证，所以生起与止息都不复现，不用判定程序；两半在共同的一步合起。",
+      "zh": "在有限、平衡、耗散且生起者体现的世界中，世界从某步起停息不能被否证，所以生起与止息都不复现，不用判定程序；两半在共同的一步合起。",
       "en": "In a finite, balanced, dissipative world in which whatever arises is embodied, that the world rests from some step on cannot be refuted, so neither arising nor ceasing recurs, with no decision procedure; the two halves join at a common step.",
       "declarations": [
         "Becoming.World.RestsFrom",
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "zh": "静止不用判定程序。从某步起不上升的量，其下降从某步起停止不能被否证：并非此后每一步之后再有下降都不能被否证；两种写法等价；它此后不变不能被否证。",
+      "zh": "停息不用判定程序。从某步起不上升的量，其下降从某步起停止不能被否证：并非此后每一步之后再有下降都不能被否证；两种写法等价；它此后不变不能被否证。",
       "en": "Rest needs no decision procedure. For an amount that does not rise from some step on, that its falls stop from some step on cannot be refuted: it is not the case that after every step from then on a later fall stays unrefuted; the two forms are equivalent, and that it stays the same from some step on cannot be refuted.",
       "declarations": [
         "Becoming.falls_stop_unrefuted",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "zh": "规律与静止对每个世界有局部形式：一个列表从某步起覆盖活跃者（不要世界有限）；静止另要该家族从某步起平衡与耗散，不要闭合、不要别的家族或步；World.arising_iff_ceasing、World.rests_unrefuted 是它们的推论。",
+      "zh": "规律与停息对每个世界有局部形式：一个列表从某步起覆盖活跃者（不要世界有限）；停息另要该家族从某步起平衡与耗散，不要闭合、不要别的家族或步；World.arising_iff_ceasing、World.rests_unrefuted 是它们的推论。",
       "en": "The law and rest hold of every world in a local form: one list covering the active relata from some step on (no finiteness of the world), rest also asking the family to be balanced and dissipated on from that step, with no closure and no premise on other families or steps; World.arising_iff_ceasing and World.rests_unrefuted are their corollaries.",
       "declarations": [
         "Becoming.World.arising_iff_ceasing_covering",
@@ -195,7 +195,7 @@
       "en": "The law (arising_iff_ceasing): the world is finite, a list naming every relatum once; whether each relatum is active at each step is decidable. Decidedness is this law's own condition, not a commitment of the representation, classically always met; asked of every finite world without it, the law is equivalent to excluded middle (law_iff_em)."
     },
     {
-      "zh": "静止（rests）：另加平衡（Balanced）、耗散（Dissipative）与生起者体现（ArisingEmbodied）；不要求活动可判定（P58）。",
+      "zh": "停息（rests）：另加平衡（Balanced）、耗散（Dissipative）与生起者体现（ArisingEmbodied）；不要求活动可判定（P58）。",
       "en": "Rest (rests): also balance (Balanced), dissipation (Dissipative) and whatever arises being embodied (ArisingEmbodied); activity need not be decided (P58)."
     },
     {
@@ -340,7 +340,7 @@
           "en": "With finitely many relata, under balance and dissipation, embodied relata do not arise at arbitrarily late steps."
         },
         "input": {
-          "zh": "有限、平衡、耗散且生起者体现的世界归于静止；每个前提都不可少。",
+          "zh": "有限、平衡、耗散且生起者体现的世界归于停息；每个前提都不可少。",
           "en": "A finite, balanced, dissipative world whose arising is embodied comes to rest; each premise is needed."
         },
         "conditions": {
@@ -1162,6 +1162,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: World from Space.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean, Flow.lean, Roles.lean, Space.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (7 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（7 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
     }
   ],
   "text_versions": [

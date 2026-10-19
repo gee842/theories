@@ -14,7 +14,7 @@
     "en": "A list can be listed once exactly where identity among its members is decided, and sums and counts once per member are then one number; laws refuting something need nothing, and laws that sum or count need it only as a local condition."
   },
   "claim": {
-    "zh": "一个列表的成员之间同一已定（IdentityDecided l），指其中任何两个成员相同或不同已定。s 把 l 列出一次（ListsOnce s l），指 s 不重复（Distinct）且与 l 成员相同。不重复的列表决定其成员之间的同一（Distinct.identityDecided）；成员之间同一已定时，有一个与之成员相同的不重复列表（listsOnce_of_decided，构造性地由 listOnce 给出）；所以列表恰在成员之间同一已定时能列出一次（listsOnce_iff_decided），而它能列出一次从不能被否证（not_not_listsOnce）。成员相同的不重复列表有同样的每个量的总和与同样的长度（total_eq_of_same、ListsOnce.total_eq、ListsOnce.length_eq）；列表所含关系项的数目（Numbers）唯一（Numbers.unique），恰在成员之间同一已定时存在（numbers_iff_decided）；重复只会增加（Numbers.le_length、ListsOnce.total_le）。处处列出一次时否证某事的律，对该列表不加前提地否证它（not_of_listsOnce）；所以结论是否证的律对任何列出方式的家族成立（Flow.Dissipative.opens_listing、Flow.Dissipative.finite_taking_not_recurring_listing、Flow.taking_draws_in_listing、Web.generation_not_recurring_listing、Flow.taking_not_recurring_listing），在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）。用到这一承诺之处它是局部的：一步被封闭（或围绕一个家族被封闭）恰在有一个跨此步封闭、成员之间同一已定的家族时（Flow.enclosed_iff、Flow.around_iff）；世界有限恰在可枚举且关系项之间同一已定时（World.finite_iff）；耗散就是每个封闭家族按成员读一次时的耗散（Flow.dissipative_iff）；每个普查决定其所列者之间的同一（Listed.identityDecided），任何带同一判定的列出给出普查（Listed.of_listing）。重复并非无害：在 Doubled 中流平衡并耗散，把来到静止的条件列两次的家族是封闭的而没有在其上耗散，其存量不降，列一次则降（Doubled.needs_once）。不加前提。",
+    "zh": "一个列表的成员之间同一已定（IdentityDecided l），指其中任何两个成员相同或不同已定。s 把 l 列出一次（ListsOnce s l），指 s 不重复（Distinct）且与 l 成员相同。不重复的列表决定其成员之间的同一（Distinct.identityDecided）；成员之间同一已定时，有一个与之成员相同的不重复列表（listsOnce_of_decided，构造性地由 listOnce 给出）；所以列表恰在成员之间同一已定时能列出一次（listsOnce_iff_decided），而它能列出一次从不能被否证（not_not_listsOnce）。成员相同的不重复列表有同样的每个量的总和与同样的长度（total_eq_of_same、ListsOnce.total_eq、ListsOnce.length_eq）；列表所含关系项的数目（Numbers）唯一（Numbers.unique），恰在成员之间同一已定时存在（numbers_iff_decided）；重复只会增加（Numbers.le_length、ListsOnce.total_le）。处处列出一次时否证某事的律，对该列表不加前提地否证它（not_of_listsOnce）；所以结论是否证的律对任何列出方式的家族成立（Flow.Dissipative.opens_listing、Flow.Dissipative.finite_taking_not_recurring_listing、Flow.taking_draws_in_listing、Web.generation_not_recurring_listing、Flow.taking_not_recurring_listing），在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）。用到这一承诺之处它是局部的：一步被封闭（或围绕一个家族被封闭）恰在有一个跨此步封闭、成员之间同一已定的家族时（Flow.enclosed_iff、Flow.around_iff）；世界有限恰在可枚举且关系项之间同一已定时（World.finite_iff）；耗散就是每个封闭家族按成员读一次时的耗散（Flow.dissipative_iff）；每个普查决定其所列者之间的同一（Listed.identityDecided），任何带同一判定的列出给出普查（Listed.of_listing）。重复并非无害：在 Doubled 中流平衡并耗散，把来到停息的条件列两次的家族是封闭的而没有在其上耗散，其存量不降，列一次则降（Doubled.needs_once）。不加前提。",
     "en": "Identity among a list's members is decided (IdentityDecided l) where for any two members it is decided whether they are the same. s lists l once (ListsOnce s l) where s is without repetition (Distinct) and has the members of l. A list without repetition decides identity among its members (Distinct.identityDecided); where identity among a list's members is decided, some list without repetition has exactly its members (listsOnce_of_decided, constructively by listOnce); so a list can be listed once exactly where identity among its members is decided (listsOnce_iff_decided), and that it can be is never refuted (not_not_listsOnce). Lists without repetition with the same members have the same total of every quantity and the same length (total_eq_of_same, ListsOnce.total_eq, ListsOnce.length_eq); the number of relata a list holds (Numbers) is one number (Numbers.unique) and exists exactly where identity among its members is decided (numbers_iff_decided); repetition only adds (Numbers.le_length, ListsOnce.total_le). A law refuting something wherever a list is listed once refutes it of the list with no premise (not_of_listsOnce); so the laws whose conclusion is a refutation hold of every family however listed (Flow.Dissipative.opens_listing, Flow.Dissipative.finite_taking_not_recurring_listing, Flow.taking_draws_in_listing, Web.generation_not_recurring_listing, Flow.taking_not_recurring_listing), and under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world (World.Enumerated, World.Enumerated.not_recurring). Where the commitment is used it is local: a step is enclosed, or enclosed around a family, exactly where some family closed across it has decided identity among its members (Flow.enclosed_iff, Flow.around_iff); a world is finite exactly where it is enumerated and identity among its relata is decided (World.finite_iff); dissipation is dissipation on every closed family read once per member (Flow.dissipative_iff); every census decides identity among what it lists (Listed.identityDecided), and any listing with identity decided gives a census (Listed.of_listing). Repetition is not harmless: in Doubled the flow balances and dissipates, the family listing twice the condition that comes to stand is closed and not dissipated on, and its stock does not fall, while listed once it falls (Doubled.needs_once). No premise."
   },
   "hypotheses": [
@@ -117,7 +117,7 @@
     {
       "id": "continued-change-needs-openness",
       "detail": {
-        "zh": "静止定理（World.rests_unrefuted）：这里推广到每个可枚举的世界，不需列出一次。",
+        "zh": "停息定理（World.rests_unrefuted）：这里推广到每个可枚举的世界，不需列出一次。",
         "en": "The rest theorem (World.rests_unrefuted): extended here to every enumerated world, with no listing once."
       }
     },
@@ -273,7 +273,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3",
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215",
       "declarations": []
     },
     {
@@ -520,6 +520,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (2 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（2 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ]
 }

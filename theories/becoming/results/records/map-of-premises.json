@@ -10,7 +10,7 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "地图给出世界的哪些前提推出哪些，其余八个相对于彼此独立；一个世界满足全部，另一个世界中八个都起约束，满足它们的有限世界归于静止不能被否证。",
+    "zh": "地图给出世界的哪些前提推出哪些，其余八个相对于彼此独立；一个世界满足全部，另一个世界中八个都起约束，满足它们的有限世界归于停息不能被否证。",
     "en": "The map shows which premises of worlds follow from which, and that the remaining eight are independent relative to one another; one world meets them all, in another each of the eight binds, and a finite world meeting them cannot be refuted to come to rest."
   },
   "laws": [
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "zh": "始终活跃的互利者满足全部八个；有限且满足八个的世界中，从某步起静止不能被否证，所以生起与止息都不再复现，不用判定程序，证明用到其中的平衡、耗散与体现。",
+      "zh": "始终活跃的互利者满足全部八个；有限且满足八个的世界中，从某步起停息不能被否证，所以生起与止息都不再复现，不用判定程序，证明用到其中的平衡、耗散与体现。",
       "en": "Mutualists active throughout meet all eight, and in a finite world which meets the eight, that it rests from some step on cannot be refuted, so neither arising nor ceasing recurs, with no decision procedure, the proof using balance, dissipation and embodiment among them.",
       "declarations": [
         "Becoming.World.mutualism_premised",
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "zh": "所以普查起约束只在于世界不有限：在满足静止定理条件的每个世界中，曾经活跃或立着的都不是无界多（World.rest_few，见 continued-change-needs-openness）。",
+      "zh": "所以普查起约束只在于世界不有限：在满足停息定理条件的每个世界中，曾经活跃或立着的都不是无界多（World.rest_few，见 continued-change-needs-openness）。",
       "en": "So a census binds only in that the world is not finite: in every world meeting the rest theorem's conditions, not unboundedly many relata are ever active or stand (World.rest_few, in continued-change-needs-openness).",
       "declarations": []
     },
@@ -172,7 +172,7 @@
       ]
     },
     {
-      "zh": "活动需要支持起约束而不紧：食物从不低于所需；关于流的四个前提只在第一步起约束。它在第一步有一次生起与一次止息，此后从某步起静止不能被否证（World.hatch_rests_unrefuted）。",
+      "zh": "活动需要支持起约束而不紧：食物从不低于所需；关于流的四个前提只在第一步起约束。它在第一步有一次生起与一次止息，此后从某步起停息不能被否证（World.hatch_rests_unrefuted）。",
       "en": "Activity needing support binds without being tight, the food never falling below the need, and the four premises about the flow bind at the first step only; across the first step one relatum arises and one ceases, and that it rests from some step on cannot be refuted (World.hatch_rests_unrefuted).",
       "declarations": []
     }
@@ -241,7 +241,7 @@
     "en": "A map of the premises stated relative to a further reading (a continuation relation, a renewal relation, a decaying reserve, a family of conditions)."
   },
   "correspondence": {
-    "zh": "计划对“完整”的第三条读法要求每个动力学前提划出整个空间的真部分。P22 对七个前提给出了这一点；本结果补上普查与有界传递，并更进一步：前提不仅各自偶然，而且其余八个相对于彼此独立，在这八个之中没有一个藏在其余之中。八个是 P22 的七个去掉储备承载（由活动需要支持推出），加上普查与有界传递；连同储备承载与生起者体现这两个较弱的形式，世界层面共陈述十个前提。作者的读法（AI 论证）：蕴含显示哪些前提只是另一前提的较弱形式（有储备承载、生起者体现）或在活动可判定的有限世界中自动成立（普查；不给可判定性而对每个有限世界要求它，就蕴含排中律），以及耗散与只有活跃者取用怎样在被围住的步上带来只有活跃者给予；独立性显示剩下的每一个都是对世界的独立限定。有限与被围住不在这八个之中，而静止定理正是以它们为转折（可判定性不再需要，P58）；加上它们，只有活跃者给予与普查就推出。多个见证没有流，关于流的四个前提（只有活跃者给予、只有活跃者取用、耗散、有界传递）在其中空成立：strained、unbalanced、latent、multitude 与互利者没有流，scatter 没有被围住的步，morsel 没有依存、给予与世系，lossless 的水平不变；只有 novel 中其余七个都起约束。这足以证明独立；平衡另有取用与耗散每步起约束的见证（draining_but）。相对于另一读法陈述的前提——延续关系（Identity）、更新关系（Generation）、衰减的储备（Reserve）、条件家族（Flow、Dissipation）——没有在这里映射；流中每个参与者只列一次是表示的条件，不是世界的条件。前提的名称与这些世界的名称是 AI 的表述，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
+    "zh": "计划对“完整”的第三条读法要求每个动力学前提划出整个空间的真部分。P22 对七个前提给出了这一点；本结果补上普查与有界传递，并更进一步：前提不仅各自偶然，而且其余八个相对于彼此独立，在这八个之中没有一个藏在其余之中。八个是 P22 的七个去掉储备承载（由活动需要支持推出），加上普查与有界传递；连同储备承载与生起者体现这两个较弱的形式，世界层面共陈述十个前提。作者的读法（AI 论证）：蕴含显示哪些前提只是另一前提的较弱形式（有储备承载、生起者体现）或在活动可判定的有限世界中自动成立（普查；不给可判定性而对每个有限世界要求它，就蕴含排中律），以及耗散与只有活跃者取用怎样在被围住的步上带来只有活跃者给予；独立性显示剩下的每一个都是对世界的独立限定。有限与被围住不在这八个之中，而停息定理正是以它们为转折（可判定性不再需要，P58）；加上它们，只有活跃者给予与普查就推出。多个见证没有流，关于流的四个前提（只有活跃者给予、只有活跃者取用、耗散、有界传递）在其中空成立：strained、unbalanced、latent、multitude 与互利者没有流，scatter 没有被围住的步，morsel 没有依存、给予与世系，lossless 的水平不变；只有 novel 中其余七个都起约束。这足以证明独立；平衡另有取用与耗散每步起约束的见证（draining_but）。相对于另一读法陈述的前提——延续关系（Identity）、更新关系（Generation）、衰减的储备（Reserve）、条件家族（Flow、Dissipation）——没有在这里映射；流中每个参与者只列一次是表示的条件，不是世界的条件。前提的名称与这些世界的名称是 AI 的表述，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）。",
     "en": "The plan's third part of completeness asks that each dynamical premise carve a proper part of the whole space. P22 gave this for seven premises; this result adds the census and bounded transmission and goes further: the premises are not only each contingent, the remaining eight are independent relative to one another, none hidden in the others among these eight. The eight are P22's seven without the reserve carrying activity, which follows from activity needing support, together with the census and bounded transmission; with the two weaker forms, a reserve carrying activity and embodied arising, ten premises are stated of worlds. The author's reading (an AI argument): the implications show which premises are only weaker forms of another (activity carried, whatever arises embodied) or hold automatically in finite worlds whose activity is decided (a census; asking it of every finite world without decidability implies excluded middle), and how dissipation and only active relata taking bring only active relata giving across enclosed steps; independence shows that each of the rest is a separate restriction of worlds. Finiteness and enclosure are not among the eight, though the rest theorems turn on them (decidability is no longer needed, P58); with them added, only active relata giving and a census follow. Several witnesses have no flow, so the four premises about the flow (only active relata giving, only active relata taking, dissipation, bounded transmission) hold vacuously there: strained, unbalanced, latent, multitude and the mutualists have no flow, scatter has no enclosed step, morsel has no dependence, giving or descent, and the levels of lossless are steady; only in novel do all the other seven bind. That suffices for independence; for balance a second witness has taking and dissipation binding at every step (draining_but). Premises stated relative to a further reading, a continuation relation (Identity), a renewal relation (Generation), a decaying reserve (Reserve) or a family of conditions (Flow, Dissipation), are not mapped here; that each formation taking part is listed once in a flow is a condition of the representation, not of the world. The names of the premises and of these worlds are the AI's formulations, adopted under Ren's naming rule (DELEGATED-CHOICES D36)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
@@ -273,16 +273,16 @@
       "id": "space-and-its-parts",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用世界、其部分与前提（World）、静止（rests）、unbalanced 与 mutualism 两个世界。",
+        "zh": "复用世界、其部分与前提（World）、停息（rests）、unbalanced 与 mutualism 两个世界。",
         "en": "Reuses worlds, their parts and premises (World), rest (rests), and the worlds unbalanced and mutualism."
       },
       "interface": {
         "output": {
-          "zh": "世界上的七个前提各有满足与不满足它的世界；有限、平衡、耗散且生起者体现的世界归于静止。",
+          "zh": "世界上的七个前提各有满足与不满足它的世界；有限、平衡、耗散且生起者体现的世界归于停息。",
           "en": "Seven premises on worlds, each met and failed by some world; a finite, balanced, dissipative world whose arising is embodied comes to rest."
         },
         "input": {
-          "zh": "八个前提的地图：蕴含、独立与全部满足；有限世界中全部前提一起归于静止。",
+          "zh": "八个前提的地图：蕴含、独立与全部满足；有限世界中全部前提一起归于停息。",
           "en": "The map of eight premises: implications, independence and one world meeting all; in a finite world all together come to rest."
         },
         "conditions": {
@@ -419,7 +419,7 @@
     {
       "id": "generation-is-replenishment",
       "detail": {
-        "zh": "有限世界中全部前提一起使其从某步起静止不能被否证，是那里 generation_not_recurring 读于满足全部前提的世界。",
+        "zh": "有限世界中全部前提一起使其从某步起停息不能被否证，是那里 generation_not_recurring 读于满足全部前提的世界。",
         "en": "That all premises together leave a finite world resting unrefuted is generation_not_recurring read of worlds meeting every premise."
       }
     },
@@ -1043,6 +1043,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: World from Space.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean, Roles.lean, Space.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (9 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（9 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
     }
   ],
   "text_versions": [

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "id": "continued-change-needs-openness",
   "title": {
-    "zh": "开放与静止定理",
+    "zh": "开放与停息定理",
     "en": "Openness and the rest theorem"
   },
   "kind": "theorem",
@@ -10,7 +10,7 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "围住所立者排除不息的变化：跨过被围住的步，任何水平变化都使所立者的总水平下降；每步立着的与活跃的有限多、生起者体现的平衡耗散世界被围住所立者时，归于静止不能被否证，交换也不复现；八个前提既不决定被围住，也不决定开放。",
+    "zh": "围住所立者排除不息的变化：跨过被围住的步，任何水平变化都使所立者的总水平下降；每步立着的与活跃的有限多、生起者体现的平衡耗散世界被围住所立者时，归于停息不能被否证，交换也不复现；八个前提既不决定被围住，也不决定开放。",
     "en": "Enclosure excludes endless change: over enclosed steps any change of standing lowers the total, so an enclosed, balanced, dissipative world with finite censuses and embodied arising cannot be refuted to come to rest, its exchange not recurring; the premises decide neither enclosure nor openness."
   },
   "laws": [
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "zh": "静止定理：有活动的普查与所立者的普查、生起者体现、流平衡且耗散的世界，从某步起每步都围住所立者时，世界从某步起静止（World.RestsFrom）不能被否证，所以生起与止息都不复现。",
+      "zh": "停息定理：有活动的普查与所立者的普查、生起者体现、流平衡且耗散的世界，从某步起每步都围住所立者时，世界从某步起停息（World.RestsFrom）不能被否证，所以生起与止息都不复现。",
       "en": "The rest theorem: a world with a census of what is active and of what stands, whose arising is embodied, with a balanced, dissipative flow, in which every step from some step on is enclosed around what stands, is such that its resting from some step on (World.RestsFrom) cannot be refuted, so neither arising nor ceasing recurs.",
       "declarations": [
         "Becoming.World.comes_to_rest_unrefuted"
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "zh": "所以世界本身不必有限，但每步立着的与活跃的须有限多；在静止这样不能被否证的世界中，曾经活跃的与曾经立着的都不是无界多，不用判定程序：静止定理比有限世界多涵盖的，只是从不立着、从不活动的关系项。",
+      "zh": "所以世界本身不必有限，但每步立着的与活跃的须有限多；在停息这样不能被否证的世界中，曾经活跃的与曾经立着的都不是无界多，不用判定程序：停息定理比有限世界多涵盖的，只是从不立着、从不活动的关系项。",
       "en": "So the world itself need not be finite, but finitely many must stand and finitely many be active at each step; in a world whose rest is so unrefuted, not unboundedly many relata are ever active and not unboundedly many ever stand, with no decision procedure: beyond finite worlds the rest theorem covers only relata that never stand or act.",
       "declarations": [
         "Becoming.World.rest_few",
@@ -179,14 +179,14 @@
       ]
     },
     {
-      "zh": "每个前提都起约束的 hatch（map-of-premises 的 hatch_binds）中子代生起、亲代止息，之后每步都被围住，世界不有限，它的地关系项闲置，而它从某步起静止不能被否证。",
+      "zh": "每个前提都起约束的 hatch（map-of-premises 的 hatch_binds）中子代生起、亲代止息，之后每步都被围住，世界不有限，它的地关系项闲置，而它从某步起停息不能被否证。",
       "en": "In hatch, where every premise binds (hatch_binds of map-of-premises), the child arises and the parent ceases, every step is enclosed, and that the world, though not finite, its ground relata idle, rests from some step on cannot be refuted.",
       "declarations": [
         "Becoming.World.hatch_rests_unrefuted"
       ]
     },
     {
-      "zh": "每个前提都起约束并不带来静止：在每步一个成员替换另一个的只闭合一次的队列（whole-law-of-counting 的 World.onceClosedQueue）中每个前提都起约束，生起与止息都复现。",
+      "zh": "每个前提都起约束并不带来停息：在每步一个成员替换另一个的只闭合一次的队列（whole-law-of-counting 的 World.onceClosedQueue）中每个前提都起约束，生起与止息都复现。",
       "en": "Every premise binding does not bring rest: in a queue closed once in which one member replaces another at every step (World.onceClosedQueue of whole-law-of-counting) every premise binds, and arising and ceasing both recur.",
       "declarations": [
         "Becoming.World.binding_contingent"
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "zh": "前提只是给出局部条件的一种方式：对每个世界的确切形式见 laws-of-one-step，那里下降不需要封闭，本记录的水平的静止定理是它的推论。",
+      "zh": "前提只是给出局部条件的一种方式：对每个世界的确切形式见 laws-of-one-step，那里下降不需要封闭，本记录的水平的停息定理是它的推论。",
       "en": "The premises are one way of supplying the local condition: the exact form for every world is in laws-of-one-step, where running down needs no closure, and this record's standing rest theorems are its corollaries.",
       "declarations": []
     }
@@ -217,7 +217,7 @@
       "en": "Read of worlds. Arising stopping unrefuted (arising_stops_unrefuted): a census of what stands and whatever arises embodied."
     },
     {
-      "zh": "静止定理（comes_to_rest_unrefuted）：另加活动的普查；不要求活动可判定（P58），普查只作覆盖活跃者的列表用（comes_to_rest_unrefuted_from）。",
+      "zh": "停息定理（comes_to_rest_unrefuted）：另加活动的普查；不要求活动可判定（P58），普查只作覆盖活跃者的列表用（comes_to_rest_unrefuted_from）。",
       "en": "The rest theorem (comes_to_rest_unrefuted): also a census of what is active; activity need not be decided (P58), the census serving only as a list covering what is active (comes_to_rest_unrefuted_from)."
     },
     {
@@ -231,12 +231,12 @@
   ],
   "does_not_show": [
     {
-      "zh": "交换归于静止陈述为交换不在任意晚的步发生（复现的否定），不是某步之后没有交换，后者需要判定。",
+      "zh": "交换归于停息陈述为交换不在任意晚的步发生（复现的否定），不是某步之后没有交换，后者需要判定。",
       "en": "The exchange coming to rest is stated as no exchange at arbitrarily late steps (a negated recurrence), not as a step after which none occurs, which would need a decision.",
       "kind": "non-implication"
     },
     {
-      "zh": "满足静止定理条件的世界中曾经立着或活跃的不是无界多，列出全部的列表一般地需要全知，所以推广只在于闲置的关系项。",
+      "zh": "满足停息定理条件的世界中曾经立着或活跃的不是无界多，列出全部的列表一般地需要全知，所以推广只在于闲置的关系项。",
       "en": "In a world meeting the rest theorem's conditions not unboundedly many relata ever stand or act, a list holding all of them needing omniscience in general, so the generalization lies only in idle relata.",
       "kind": "scope",
       "witness": "Becoming.Listed.lpo_of_few"
@@ -269,7 +269,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "detail": {
-        "zh": "attrition：满足静止定理除活动的普查以外的每个前提，每步都围住所立者，止息复现；所以活动的普查不可少（World.rest_needs_census）。",
+        "zh": "attrition：满足停息定理除活动的普查以外的每个前提，每步都围住所立者，止息复现；所以活动的普查不可少（World.rest_needs_census）。",
         "en": "attrition: meets every premise of the rest theorem but the census of what is active, every step enclosed around what stands, and ceasing recurs; so that census is needed (World.rest_needs_census)."
       }
     },
@@ -297,7 +297,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "detail": {
-        "zh": "exchange_needs：Flow 的循环（被围住、平衡、不耗散）、leaking（被围住、耗散、不平衡）与 throughput（被围住、平衡、耗散，所立者不能被列出）中交换都在任意晚的步复现，exposed 中也是（满足八个前提，没有一步被围住）；所以交换归于静止的四个前提都不能去掉。",
+        "zh": "exchange_needs：Flow 的循环（被围住、平衡、不耗散）、leaking（被围住、耗散、不平衡）与 throughput（被围住、平衡、耗散，所立者不能被列出）中交换都在任意晚的步复现，exposed 中也是（满足八个前提，没有一步被围住）；所以交换归于停息的四个前提都不能去掉。",
         "en": "exchange_needs: in the cycle of Becoming.Flow (enclosed, balanced, not dissipative), leaking (enclosed, dissipative, not balanced) and throughput (enclosed, balanced, dissipative, what stands not listable) the exchange recurs at arbitrarily late steps, as in exposed (all eight premises, no step enclosed); so none of the four premises of the exchange coming to rest can be dropped."
       }
     },
@@ -315,7 +315,7 @@
     "discrete-steps"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；外围 20261013T095049.338744Z 通过）：Becoming.Openness、Becoming.Counting、Becoming.Dissipation 与 Becoming.Locality 的定理（含本记录的局部规律）公理报告为空；检查器并核对核心纯净。作者反审见 §33 与 §35；第十次独立审查接受所审部分的数学，静止定理部分与其更正尚未经独立审查；第十一次接受其数学，其更正尚未再经审查。",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；外围 20261013T095049.338744Z 通过）：Becoming.Openness、Becoming.Counting、Becoming.Dissipation 与 Becoming.Locality 的定理（含本记录的局部规律）公理报告为空；检查器并核对核心纯净。作者反审见 §33 与 §35；第十次独立审查接受所审部分的数学，停息定理部分与其更正尚未经独立审查；第十一次接受其数学，其更正尚未再经审查。",
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery 20261013T095049.338744Z passed): the theorems of Becoming.Openness, Becoming.Counting, Becoming.Dissipation and Becoming.Locality, with this record's local laws, have empty axiom reports; the checker verifies core purity. Author counterreview in §33 and §35; the tenth independent review accepts the mathematics of the part it reviewed, while the rest-theorem part and its corrections are not yet independently reviewed; the eleventh accepts its mathematics, its corrections not yet reviewed."
   },
   "next_delta": {
@@ -323,7 +323,7 @@
     "en": "Total standing with rates or continuous amounts."
   },
   "correspondence": {
-    "zh": "space-and-its-parts 的 rests 用有限使世界的静止不能被否证；本结果说明世界本身不必有限：起作用的是每步立着的与活跃的有限多（两种普查），连同被围住所立者；有限世界在两点上起作用，给出普查，也给出被围住，这两点可以分开要求。throughput 与 embodiedThroughput 说明每步立着的有限多不能去掉，attrition 说明活动的普查不能去掉，exposed 说明被围住不能去掉，holding 说明开放不足以给出生起不息。rests_unrefuted 与这里的 rests_unrefuted_around 是同一个静止定理的两种情形：有限世界自动有两种普查并且每步都被围住，每个关系项都体现的世界中两种普查是同一个。作者的读法（AI 论证）：在平衡与耗散之下，所立者的总水平是一个只降不升的量；每次生起（体现时就是开始作为条件而在）与每次止息（体现时就是不再作为条件而在）都使它下降，所以在一个被围住、每步立着的有限多的展开中，水平的变化不在任意晚的步发生（活动的变化另需活动的普查，attrition）。这一推广的范围：在静止这样不能被否证的世界中，曾经立着或活跃的不是无界多（rest_few），它比 rests_unrefuted 多涵盖的只是从不立着、从不活动的关系项（第十一次独立审查 R3）。生起不息因此需要开放：并非从某步起每步都被围住，即与每个有限家族之外交换。这是 no-finite-part-bears-taking 与 generation-is-replenishment 中家族层面的“开放”在世界层面的陈述，并且用变化的所立者列表而不是固定的家族。在世界层面，开放是在每个有限家族之外的交换，不必有流入：exposed 的交换净量为零，总水平始终为一，无界的是与之交换的关系项的数目，各自水平为零；依 Ren 的交托，“开放”指每个有限家族之外的交换，流入是增益，另行陈述（DELEGATED-CHOICES D7；where-novelty-gain-comes-from）。exposed 中活动需要支持与有界传递因为没有依存而空成立，耗散因为没有一步被围住而空成立；静止定理只用其中四个前提。耗散只约束被围住的交换是其表示的已披露的特点（Spray，见第六次独立审查之后的更正）。“开放”“被围住”“所立者”的读法与名称是 AI 的表述，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）；本结果不评价开放或静止。",
+    "zh": "space-and-its-parts 的 rests 用有限使世界的停息不能被否证；本结果说明世界本身不必有限：起作用的是每步立着的与活跃的有限多（两种普查），连同被围住所立者；有限世界在两点上起作用，给出普查，也给出被围住，这两点可以分开要求。throughput 与 embodiedThroughput 说明每步立着的有限多不能去掉，attrition 说明活动的普查不能去掉，exposed 说明被围住不能去掉，holding 说明开放不足以给出生起不息。rests_unrefuted 与这里的 rests_unrefuted_around 是同一个停息定理的两种情形：有限世界自动有两种普查并且每步都被围住，每个关系项都体现的世界中两种普查是同一个。作者的读法（AI 论证）：在平衡与耗散之下，所立者的总水平是一个只降不升的量；每次生起（体现时就是开始作为条件而在）与每次止息（体现时就是不再作为条件而在）都使它下降，所以在一个被围住、每步立着的有限多的展开中，水平的变化不在任意晚的步发生（活动的变化另需活动的普查，attrition）。这一推广的范围：在停息这样不能被否证的世界中，曾经立着或活跃的不是无界多（rest_few），它比 rests_unrefuted 多涵盖的只是从不立着、从不活动的关系项（第十一次独立审查 R3）。生起不息因此需要开放：并非从某步起每步都被围住，即与每个有限家族之外交换。这是 no-finite-part-bears-taking 与 generation-is-replenishment 中家族层面的“开放”在世界层面的陈述，并且用变化的所立者列表而不是固定的家族。在世界层面，开放是在每个有限家族之外的交换，不必有流入：exposed 的交换净量为零，总水平始终为一，无界的是与之交换的关系项的数目，各自水平为零；依 Ren 的交托，“开放”指每个有限家族之外的交换，流入是增益，另行陈述（DELEGATED-CHOICES D7；where-novelty-gain-comes-from）。exposed 中活动需要支持与有界传递因为没有依存而空成立，耗散因为没有一步被围住而空成立；停息定理只用其中四个前提。耗散只约束被围住的交换是其表示的已披露的特点（Spray，见第六次独立审查之后的更正）。“开放”“被围住”“所立者”的读法与名称是 AI 的表述，按 Ren 的命名规则采用（DELEGATED-CHOICES D36）；本结果不评价开放或停息。",
     "en": "The rests of space-and-its-parts makes a world's rest unrefutable through finiteness; this result shows that the world itself need not be finite: what does the work is finitely many standing and finitely many active at each step (the two censuses), with enclosure around what stands; finiteness works in two ways, giving the censuses and giving enclosure, and the two can be asked for separately. throughput and embodiedThroughput show that finitely many standing at each step cannot be dropped, attrition that the census of what is active cannot, and exposed that enclosure cannot, while holding shows that openness does not suffice for arising without end. rests_unrefuted and rests_unrefuted_around here are two cases of one rest theorem: a finite world has both censuses and is enclosed at every step, and where every relatum is embodied the two censuses are one. The author's reading (an AI argument): under balance and dissipation the total standing is a quantity that falls and never rises; every arising (for an embodied relatum, coming to stand) and every ceasing (for an embodied relatum, ceasing to stand) lowers it, so in an unfolding enclosed and with finitely many standing at each step, changes of standing do not happen at arbitrarily late steps (changes of activity need the census of activity as well, attrition). The reach of this generalization: in a world whose rest is so unrefuted, not unboundedly many relata ever stand or act (rest_few), so it covers beyond rests_unrefuted only relata that never stand or act (the eleventh independent review's R3). Arising without end therefore needs openness: not every step from some step on enclosed, that is, exchange beyond every finite family. This is the family-level openness of no-finite-part-bears-taking and generation-is-replenishment stated of worlds, over the changing list of what stands rather than a fixed family. At world level openness is exchange beyond every finite family and need not be inflow: exposed exchanges at zero net, its total standing stays at one, and what is unbounded is the number of relata it exchanges with, each at zero; on Ren's delegation ‘openness’ names exchange beyond every finite family, and inflow is gain, stated separately (DELEGATED-CHOICES D7; where-novelty-gain-comes-from). In exposed, activity needing support and bounded transmission hold vacuously, since nothing depends on anything, and dissipation holds vacuously, since no step is enclosed; the rest theorem uses four premises. That dissipation binds only enclosed exchange is a disclosed feature of its representation (Spray, from the corrections after the sixth independent review). The readings and names of ‘openness’, ‘enclosed’ and ‘what stands’ are the AI's formulations, adopted under Ren's naming rule (DELEGATED-CHOICES D36); the result evaluates neither openness nor rest."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
@@ -361,7 +361,8 @@
     "Becoming.comes_after_unrefuted",
     "Becoming.Listed.few_of_stop_unrefuted",
     "Becoming.World.arising_stops_unrefuted_from",
-    "Becoming.World.comes_to_rest_unrefuted_from"
+    "Becoming.World.comes_to_rest_unrefuted_from",
+    "开放与静止定理"
   ],
   "dependencies": [
     {
@@ -446,7 +447,7 @@
           "en": "The eight premises; the census."
         },
         "input": {
-          "zh": "满足全部八个前提而生起不息的世界；世界层面的静止定理的前提。",
+          "zh": "满足全部八个前提而生起不息的世界；世界层面的停息定理的前提。",
           "en": "A world meeting all eight premises in which arising does not cease; the premises of the world-level rest theorems."
         },
         "conditions": {
@@ -469,7 +470,7 @@
           "en": "Worlds and their parts."
         },
         "input": {
-          "zh": "被围住的世界归于静止。",
+          "zh": "被围住的世界归于停息。",
           "en": "An enclosed world comes to rest."
         },
         "conditions": {
@@ -515,7 +516,7 @@
           "en": "In a world with a census whose activity is decided, recurring ceasing comes with recurring arising."
         },
         "input": {
-          "zh": "生起停止时止息也停止，所以静止定理只要求生起者体现。",
+          "zh": "生起停止时止息也停止，所以停息定理只要求生起者体现。",
           "en": "Where arising stops, ceasing stops, so the rest theorem needs only whatever arises embodied."
         },
         "conditions": {
@@ -529,7 +530,7 @@
       "id": "laws-of-one-step",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "证明改经一步的规律：水平的静止定理（change_stops_unrefuted_around、exchange_not_recurring_around、standing_never_rises、change_lowers、exchange_lowers、standing_runs_down、fall_lowers_on），前提给出的条件见 Flow.AroundStanding.runsDownClosed；Web.StandingCensus 与 stock_eq 移入 Becoming.Locality。",
+        "zh": "证明改经一步的规律：水平的停息定理（change_stops_unrefuted_around、exchange_not_recurring_around、standing_never_rises、change_lowers、exchange_lowers、standing_runs_down、fall_lowers_on），前提给出的条件见 Flow.AroundStanding.runsDownClosed；Web.StandingCensus 与 stock_eq 移入 Becoming.Locality。",
         "en": "The proofs now go through the laws of one step: the standing rest theorems (change_stops_unrefuted_around, exchange_not_recurring_around, standing_never_rises, change_lowers, exchange_lowers, standing_runs_down, fall_lowers_on), the premises supplying the condition by Flow.AroundStanding.runsDownClosed; Web.StandingCensus and stock_eq moved into Becoming.Locality."
       },
       "interface": {
@@ -538,7 +539,7 @@
           "en": "Across a step at which a family holding what stands, balanced and dissipated on, runs down, some standing changes exactly when the total falls; under a census of what stands, change recurs exactly where it recurs across steps that do not run down."
         },
         "input": {
-          "zh": "围住所立者的步上，前提给出下降（Flow.AroundStanding.runsDownClosed），所以被围住的步上变化归于静止。",
+          "zh": "围住所立者的步上，前提给出下降（Flow.AroundStanding.runsDownClosed），所以被围住的步上变化归于停息。",
           "en": "Across a step enclosed around what stands the premises give the running down (Flow.AroundStanding.runsDownClosed), so change comes to rest across enclosed steps."
         },
         "conditions": {
@@ -560,7 +561,7 @@
     {
       "id": "space-and-its-parts",
       "detail": {
-        "zh": "那里的 rests 以有限为前提；静止定理以普查与被围住代替有限，rests_unrefuted 是它的有限情形（World.Finite.comes_to_rest_unrefuted，P26）。",
+        "zh": "那里的 rests 以有限为前提；停息定理以普查与被围住代替有限，rests_unrefuted 是它的有限情形（World.Finite.comes_to_rest_unrefuted，P26）。",
         "en": "rests there assumes finiteness; the rest theorem replaces finiteness with censuses and enclosure, and rests_unrefuted is its finite case (World.Finite.comes_to_rest_unrefuted, P26)."
       }
     },
@@ -1317,6 +1318,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): declarations moved with their full Lean names, statements and proofs unchanged: World from Space.lean to World.lean. Rebound to core receipt 20261018T183920.923524Z after reading the change (Dissipation.lean, Flow.lean, Renewal.lean, Roles.lean, Space.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入新的核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (26 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged; the Chinese title changes with it, and the old one is kept as an alias. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（26 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变；中文标题随之改动，旧标题保留为别名。论断不变。"
     }
   ],
   "text_versions": [

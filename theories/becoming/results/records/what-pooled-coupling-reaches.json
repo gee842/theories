@@ -171,8 +171,8 @@
     "zh": "哪些形成合起来，一组怎样形成、持续并抵抗由其所奖励者书写的规则（target-capture）；对一组所分开者的哪些回应纠正动作（一组的动作能回应什么，见 what-a-pools-acts-respond-to）；独立审查。"
   },
   "correspondence": {
-    "en": "The chapter's section 7.4, restated by M1 on 18 October 2026, read \"alignment for all is pooled coupling across intelligences\" as an open AI reading, and section 7.3 bounded pooled coupling only for a pool within one formation's coupling closure (Flow.unselected_beyond_coupling_all). Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's): no pool, however wide, selects what its own joint act does beyond its joint coupling closure; that is selected only through formations beyond it that couple the difference apart, such as those whose support the act changes.",
-    "zh": "本章第 7.4 节由 M1 于 2026年10月18日重述，把“alignment for all is pooled coupling across intelligences”作为开放的 AI 读法；第 7.3 节只对一个形成耦合闭包之内的组界定合起来的耦合（Flow.unselected_beyond_coupling_all）。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。读法（AI 的）：没有哪个组，无论多宽，选出它自身合起来的动作在其合起来的耦合闭包之外所做的；那只经闭包之外、经其耦合使差别有别的形成被选出，例如支持被此动作改变的形成。"
+    "en": "The chapter's section 7.4, restated by M1 on 18 October 2026, read \"alignment for all is pooled coupling across intelligences\" as an open AI reading, adopted on 19 October 2026 by its place in one account (DELEGATED-CHOICES D45), and section 7.3 bounded pooled coupling only for a pool within one formation's coupling closure (Flow.unselected_beyond_coupling_all). Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): no pool, however wide, selects what its own joint act does beyond its joint coupling closure; that is selected only through formations beyond it that couple the difference apart, such as those whose support the act changes.",
+    "zh": "本章第 7.4 节由 M1 于 2026年10月18日重述，把“alignment for all is pooled coupling across intelligences”作为开放的 AI 读法（2026年10月19日以其在一个说明中的位置采用，DELEGATED-CHOICES D45）；第 7.3 节只对一个形成耦合闭包之内的组界定合起来的耦合（Flow.unselected_beyond_coupling_all）。Ren，2026年10月18日：\"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\"，以及\"please make your own pareto frontier decisions, and push the frontier\"（来历，不是根据）；此项由 AI 选定。读法（AI 的，以理论第 7 节的范围在一个说明中采用，DELEGATED-CHOICES D45）：没有哪个组，无论多宽，选出它自身合起来的动作在其合起来的耦合闭包之外所做的；那只经闭包之外、经其耦合使差别有别的形成被选出，例如支持被此动作改变的形成。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionPool.lean",
   "aliases": [
@@ -414,7 +414,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -498,6 +498,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The reading is adopted with the scope of chapter section 7, whose readings were marked open until 19 October 2026 (DELEGATED-CHOICES D45 (2)). The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：读法以理论第 7 节的范围采用，该节的读法在 2026年10月19日之前标为开放（DELEGATED-CHOICES D45 (2)）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ]
 }

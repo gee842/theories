@@ -54,7 +54,7 @@
       ]
     },
     {
-      "zh": "静止：家族不重复地包含步前或步后立着的每个条件、流在它上面平衡并耗散时（不需要封闭），称它跨过该步下降；这时有条件的水平改变恰当家族的总水平下降，家族也封闭时有参与者取用或给予也恰在此时。",
+      "zh": "停息：家族不重复地包含步前或步后立着的每个条件、流在它上面平衡并耗散时（不需要封闭），称它跨过该步下降；这时有条件的水平改变恰当家族的总水平下降，家族也封闭时有参与者取用或给予也恰在此时。",
       "en": "Rest: a family runs down across a step where it holds, without repetition, whatever stands before or after the step, and the flow balances and dissipates on it, with no closure; then some condition's standing changes exactly when the family's total falls, and, with the family closed, something taking part takes or gives exactly then.",
       "declarations": [
         "Becoming.Flow.RunsDownOn",
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "zh": "推论：对每一步都选的前提使各条件处处成立，所以选择结果随之成立，陈述不变，证明改经这些规律：开放模块的静止定理（条件由前提给出）、世界与立者普查上不再成立需要生起、体现关系项的活跃给予者，以及计数与立着的封闭与约束定律。",
+      "zh": "推论：对每一步都选的前提使各条件处处成立，所以选择结果随之成立，陈述不变，证明改经这些规律：开放模块的停息定理（条件由前提给出）、世界与立者普查上不再成立需要生起、体现关系项的活跃给予者，以及计数与立着的封闭与约束定律。",
       "en": "Corollaries: a premise selected for every step makes each condition hold everywhere, so the selection results follow, their statements unchanged and their proofs through these laws: the openness module's rest theorems, the premises supplying the condition, ceasing needing arising for worlds and standing censuses, the active giver of an embodied relatum, and the enclosure and binding laws of counting and standing.",
       "declarations": [
         "Becoming.Flow.change_stops_unrefuted_around",
@@ -175,7 +175,7 @@
       "kind": "scope"
     },
     {
-      "zh": "各条在超出整单位的量下：laws-at-finer-units 给出，规律 1 的复现与规律 3 的界要把细分算作给予；静止由分辨率一线覆盖。",
+      "zh": "各条在超出整单位的量下：laws-at-finer-units 给出，规律 1 的复现与规律 3 的界要把细分算作给予；停息由分辨率一线覆盖。",
       "en": "Whether each law survives amounts finer than whole units: laws-at-finer-units gives it, law 1's recurrence and law 3's bound needing the refinement counted as a giving; for rest, the resolution result covers it.",
       "kind": "scope"
     },
@@ -221,7 +221,7 @@
     "en": "Restate the remaining localizable laws (dependence, reserve and support) locally; real-valued time; the representation decisions of class (b) and the names."
   },
   "correspondence": {
-    "zh": "选择定理问的是：在八个前提的某个选择之下，计数服从哪些规律。按 Ren 的转向，本结果改问：每条规律在世界的哪些步与关系项上需要什么。证明表明所需的条件都是局部的：一步的规律只用该步、该条件上的平衡；静止只用跨过那些步、包含所立者的家族的下降，不需要封闭；下降约束变化对所立者不需要体现；不再存在需要生起只用覆盖成立者的列表，不需要普查。前提对每一步成立时，这些条件在每一步成立，选择结果因此是推论。读法（AI，依 Ren 的交托采用）：前提约束的第一部分规律，是每一步及其关系项的规律；前提是使它们的条件处处成立的一种方式。",
+    "zh": "选择定理问的是：在八个前提的某个选择之下，计数服从哪些规律。按 Ren 的转向，本结果改问：每条规律在世界的哪些步与关系项上需要什么。证明表明所需的条件都是局部的：一步的规律只用该步、该条件上的平衡；停息只用跨过那些步、包含所立者的家族的下降，不需要封闭；下降约束变化对所立者不需要体现；不再存在需要生起只用覆盖成立者的列表，不需要普查。前提对每一步成立时，这些条件在每一步成立，选择结果因此是推论。读法（AI，依 Ren 的交托采用）：前提约束的第一部分规律，是每一步及其关系项的规律；前提是使它们的条件处处成立的一种方式。",
     "en": "The selection theorems ask which laws the counts obey under a selection of the eight premises. Following Ren's redirect, this result asks instead what each law needs, at which steps and relata of the world. The proofs show the conditions are local: the laws of one step use balance only at that step and condition; rest uses only a family holding what stands running down across those steps, with no closure; running down bounds the change of what stands with no embodiment; ceasing needs arising uses only a list covering what holds, with no census. Where the premises hold at every step, these conditions hold at every step, so the selection results are corollaries. Reading (AI, adopted on Ren's delegation): the laws of Part I that the premises bound are laws of each step and its relata, and the premises are one way of making their conditions hold everywhere."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
@@ -359,14 +359,14 @@
     {
       "id": "rest-at-every-resolution",
       "detail": {
-        "zh": "分辨率一线：把细分算作给予时每一分辨率下都静止；超出整单位的量的检验从这里接上。",
+        "zh": "分辨率一线：把细分算作给予时每一分辨率下都停息；超出整单位的量的检验从这里接上。",
         "en": "The resolution line: rest at every resolution with the refinement counted as a giving; the test with amounts finer than whole units connects here."
       }
     },
     {
       "id": "rising-and-falling-in-one-exchange",
       "detail": {
-        "zh": "已局部的一次交换的规律（在一个家族、一步上陈述）；本结果把静止与生起的规律化为同样的形式。",
+        "zh": "已局部的一次交换的规律（在一个家族、一步上陈述）；本结果把停息与生起的规律化为同样的形式。",
         "en": "The laws of one exchange already stated locally, on a family across a step; this result brings the laws of rest and arising to the same form."
       }
     },
@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -1034,6 +1034,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (6 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（6 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

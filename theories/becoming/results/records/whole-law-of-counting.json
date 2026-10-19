@@ -393,7 +393,7 @@
     "en": "Local forms of the other laws, by the zero-premise plan; for comparison, whether, under a reading of binding in which each premise excludes something the representation allows, something arising is still the only added law."
   },
   "correspondence": {
-    "zh": "完整的陈述（P23）说，整体的规律除了表示本身所排除的，不排除任何展开。对计数，本结果使这一点精确：计数的规律不排除任何计数表，所以从计数本身推不出关于展开的任何更多的东西。开放纲领中的“对整个空间成立的规律的完整清单”在计数的部分由此给出。前提的地图（map-of-premises）表明八个前提彼此独立；本结果说明它们中的哪些约束计数、约束什么：在 256 个选择的每一个之下计数的规律只有两种，缺平衡或缺体现的任何一组都不约束，两者连同只有活跃者给予，或连同只有活跃者取用与耗散，约束同一条，而全部八个所加的也只有这一条，即使每个都起约束，也只多出有某个生起，这一条来自体现起约束的条件本身；更多的约束来自被围住：静止定理（ceasing-needs-arising、continued-change-needs-openness）在被围住之下使计数归于静止不能被否证，被围住时计数的全部规律再加一个变化界（counting-under-enclosure）。作者的读法（AI 论证）：在场者的数目只记录进入与离开相抵；展开怎样改变这些数目，来自给予与取用的关系，即平衡与体现一起所说的：生起需要一个在场的给予者；或者，在只有活跃者取用与耗散之下，一个封闭的关系不能不取用而给予，生起需要从在场者那里取得。这是活动的计数，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它不是 Ren 提议中的“生成的”“退化的”（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠，所以这一读法不是其所指；二者读作对能形成者的扩大与缩小，DELEGATED-CHOICES D2）；它也不评价生起或止息。",
+    "zh": "完整的陈述（P23）说，整体的规律除了表示本身所排除的，不排除任何展开。对计数，本结果使这一点精确：计数的规律不排除任何计数表，所以从计数本身推不出关于展开的任何更多的东西。开放纲领中的“对整个空间成立的规律的完整清单”在计数的部分由此给出。前提的地图（map-of-premises）表明八个前提彼此独立；本结果说明它们中的哪些约束计数、约束什么：在 256 个选择的每一个之下计数的规律只有两种，缺平衡或缺体现的任何一组都不约束，两者连同只有活跃者给予，或连同只有活跃者取用与耗散，约束同一条，而全部八个所加的也只有这一条，即使每个都起约束，也只多出有某个生起，这一条来自体现起约束的条件本身；更多的约束来自被围住：停息定理（ceasing-needs-arising、continued-change-needs-openness）在被围住之下使计数归于停息不能被否证，被围住时计数的全部规律再加一个变化界（counting-under-enclosure）。作者的读法（AI 论证）：在场者的数目只记录进入与离开相抵；展开怎样改变这些数目，来自给予与取用的关系，即平衡与体现一起所说的：生起需要一个在场的给予者；或者，在只有活跃者取用与耗散之下，一个封闭的关系不能不取用而给予，生起需要从在场者那里取得。这是活动的计数，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它不是 Ren 提议中的“生成的”“退化的”（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠，所以这一读法不是其所指；二者读作对能形成者的扩大与缩小，DELEGATED-CHOICES D2）；它也不评价生起或止息。",
     "en": "The full statement (P23) says that the laws of the whole exclude no unfolding beyond what the representation itself excludes. For counting this result makes it precise: the laws of counting exclude no tally, so nothing more about an unfolding follows from counting alone. The open programme's ‘complete list of the laws holding of the whole space’ is thereby given for counting. The map of premises (map-of-premises) shows the eight premises independent; this result says which of them constrain counting, and how: under each of the 256 selections the laws of counting are of two kinds; no set lacking balance or embodiment constrains it, the two with only active relata giving, or with only active relata taking and dissipation, add the same law, and all eight add nothing more, and with each of them binding only that something arises, which comes from the condition of embodiment binding by itself; further constraint comes from enclosure: under it the rest theorem (ceasing-needs-arising, continued-change-needs-openness) leaves counting unrefuted to come to rest, and the whole law of counting under enclosure adds a change bound (counting-under-enclosure). The author's reading (an AI argument): the number present records only that entering and leaving balance; how an unfolding changes these numbers comes from the relations of giving and taking, which is what balance and embodiment say together: arising needs a giver present; or, with only active relata taking and dissipation, a closed relation cannot give without taking, and arising needs a taking from what is present. This is the counting of activity, whose English names arising and ceasing Ren confirmed (2026-10-09-arising-ceasing-names; the Chinese 生起／止息 being the AI's rendering); it is not the proposal's generative and degenerative (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap, so this reading is not what is meant; they read as widening and narrowing what can form, DELEGATED-CHOICES D2); it evaluates neither arising nor ceasing."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
@@ -610,7 +610,7 @@
     {
       "id": "ceasing-needs-arising",
       "detail": {
-        "zh": "静止定理是平衡、耗散、体现与被围住一起对计数的约束。",
+        "zh": "停息定理是平衡、耗散、体现与被围住一起对计数的约束。",
         "en": "The rest theorem is a constraint on counting by balance, dissipation, embodiment and enclosure together."
       }
     },
@@ -953,7 +953,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3"
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -1417,6 +1417,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (3 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（3 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [

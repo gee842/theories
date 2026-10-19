@@ -137,7 +137,7 @@
       ]
     },
     {
-      "zh": "合并：变化是构型的函数时，变化之后静止合并两个构型，不用流的规律。",
+      "zh": "合并：变化是构型的函数时，变化之后停息合并两个构型，不用流的规律。",
       "en": "Merging: where change is a function of the configuration, rest after a change merges two configurations, with no law of the flow.",
       "declarations": [
         "Becoming.Web.Determined",
@@ -268,14 +268,14 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "detail": {
-        "zh": "Passing：有限、平衡、无损、被围住，每次交换在下一步被逆转，不耗散，生起与止息复现，构型每两步回来，没有箭头，变化不合并任何构型，历史每步增长（Passing.passes、Passing.history_without_arrow）：第一律不推出静止，也不推出耗散。",
+        "zh": "Passing：有限、平衡、无损、被围住，每次交换在下一步被逆转，不耗散，生起与止息复现，构型每两步回来，没有箭头，变化不合并任何构型，历史每步增长（Passing.passes、Passing.history_without_arrow）：第一律不推出停息，也不推出耗散。",
         "en": "Passing: finite, balanced, lossless and enclosed, each exchange reversed at the next step, not dissipative, arising and ceasing recurring, its configuration coming back every two steps, with no arrow, its change merging no configurations, its history growing at every step (Passing.passes, Passing.history_without_arrow): the first law gives neither rest nor dissipation."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "detail": {
-        "zh": "Settling：一个单位传递一次，无损，从不复返而静止，不耗散，静止合并了构型，接受单位一边的水平是箭头（Settling.settles、Settling.merges）：从不复返不推出耗散。",
+        "zh": "Settling：一个单位传递一次，无损，从不复返而停息，不耗散，停息合并了构型，接受单位一边的水平是箭头（Settling.settles、Settling.merges）：从不复返不推出耗散。",
         "en": "Settling: one unit passes once, losslessly; the world never revisits and rests, is not dissipative, its rest merges configurations, and the level of the side receiving the unit is an arrow (Settling.settles, Settling.merges): never revisiting does not give dissipation."
       }
     },
@@ -308,7 +308,7 @@
     "en": "The count of reachable configurations within the first law's list, and every possibility kept where nothing merges; the record as a relatum in the census, so the counted flow is itself a world; a coarse-grained entropy with a premise about the start (periphery); continuous time and real amounts; an independent review."
   },
   "correspondence": {
-    "zh": "回答 Ren 的三个问题（AI 的读法，依 Ren 的交托采用）。零是否可能：可能，恰在无损之处；Ren 的业力读法在此是逆转之后水平没有差异，历史有差异。熵能否推出：不加前提地增加的是历史；有限围住的水平在变化继续时没有箭头，箭头或静止合并构型，在构型中守住历史使交换停止；最小损失恰是第一律加守恒量中的记录，是分解而不是推出。第二定律的形式：历史与耗散的量不减，后者连同存量守恒，按比例耗散时为取用定界，与量的规律（rest-at-every-resolution 的 Flow.uptake_bound）相合。与热力学的对应是读法，不是物理推导：Clausius（不减的量）；Boltzmann 的 W（configurations，即 Einstein 固体的多重度）；Zermelo 与 Poincaré 的复返（unending_change_revisits）；Loschmidt 的可逆性（no_arrow）；Landauer 的擦除（merges_of_settles）；Bennett 的可逆计算保存历史（World.forgets）；Gouy–Stodola 的可用功（dissipatesOn_iff_conserved、residues_lost）；开放系统（Gathering）。脊柱上的“水平恢复而历史不恢复”与 endpoint-loss-and-return 及 ReturnConditions.lean 中加入的计数器是同一区分，那里的结果先在；本结果是它在流与网上的形式，并把它连到第一律、耗散与构型的计数。",
+    "zh": "回答 Ren 的三个问题（AI 的读法，依 Ren 的交托采用）。零是否可能：可能，恰在无损之处；Ren 的业力读法在此是逆转之后水平没有差异，历史有差异。熵能否推出：不加前提地增加的是历史；有限围住的水平在变化继续时没有箭头，箭头或停息合并构型，在构型中守住历史使交换停止；最小损失恰是第一律加守恒量中的记录，是分解而不是推出。第二定律的形式：历史与耗散的量不减，后者连同存量守恒，按比例耗散时为取用定界，与量的规律（rest-at-every-resolution 的 Flow.uptake_bound）相合。与热力学的对应是读法，不是物理推导：Clausius（不减的量）；Boltzmann 的 W（configurations，即 Einstein 固体的多重度）；Zermelo 与 Poincaré 的复返（unending_change_revisits）；Loschmidt 的可逆性（no_arrow）；Landauer 的擦除（merges_of_settles）；Bennett 的可逆计算保存历史（World.forgets）；Gouy–Stodola 的可用功（dissipatesOn_iff_conserved、residues_lost）；开放系统（Gathering）。脊柱上的“水平恢复而历史不恢复”与 endpoint-loss-and-return 及 ReturnConditions.lean 中加入的计数器是同一区分，那里的结果先在；本结果是它在流与网上的形式，并把它连到第一律、耗散与构型的计数。",
     "en": "Answers to Ren's three questions (the AI's reading, adopted on Ren's delegation). Is 0 possible: yes, exactly where lossless; in Ren's karmic reading, after a reverse the levels show no difference and the history does. Can entropy be derived: what rises with no premise is the history; the levels of a finite enclosure have no arrow while change goes on, an arrow or rest merges configurations, and holding the history in the configuration stops exchange; the least loss is exactly the first law with the record held in the conserved amount, a decomposition, not a derivation. The second-law form: the history and the amount dissipated never fall, the latter conserved with the stock and bounding uptake under loss in proportion, in keeping with the amount law (Flow.uptake_bound of rest-at-every-resolution). The correspondences to thermodynamics are readings, not physical derivations: Clausius (a never-decreasing quantity); Boltzmann's W (configurations, the Einstein solid's multiplicity); Zermelo's and Poincaré's recurrence (unending_change_revisits); Loschmidt's reversibility (no_arrow); Landauer's erasure (merges_of_settles); Bennett's reversible computation keeping its history (World.forgets); Gouy–Stodola's available work (dissipatesOn_iff_conserved, residues_lost); open systems (Gathering). On the spine, ‘the levels restored, the history not’ is the distinction already drawn by endpoint-loss-and-return and by the counter added in ReturnConditions.lean, which come first; this result is its form on the flow and web, connected to the first law, dissipation and the count of configurations."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
@@ -421,7 +421,7 @@
     {
       "id": "rest-with-refinement-counted",
       "detail": {
-        "zh": "并行的读法：R4 把单位的细分算作只给不取的形成，本结果把交换的记录算作只被给予的条件；两者都不添前提而重读，R4 得到每一分辨率下的静止，本结果把最小损失分解为第一律与守恒量中的记录。R4 的下一步（最小损失能否推出、无损的交换是否存在）由本结果回答。",
+        "zh": "并行的读法：R4 把单位的细分算作只给不取的形成，本结果把交换的记录算作只被给予的条件；两者都不添前提而重读，R4 得到每一分辨率下的停息，本结果把最小损失分解为第一律与守恒量中的记录。R4 的下一步（最小损失能否推出、无损的交换是否存在）由本结果回答。",
         "en": "A parallel reading: R4 counts the splitting of the unit as a formation that gives without taking; this result counts the record of the exchanges as a condition only given to. Both reread without adding a premise; R4 obtains rest at every resolution, and this result decomposes the least loss into the first law and the record in the conserved amount. It answers R4's next step (whether the least loss can be derived, whether lossless exchanges exist)."
       }
     },
@@ -786,7 +786,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7906999d2786551dfc67ec832d4e5bb86faaf9fa5acd3e1210dd1f5d1ab9c9a3",
+      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215",
       "declarations": []
     },
     {
@@ -1066,6 +1066,14 @@
     {
       "en": "19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without \"correction\", replaced the \"Which responses correct\" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the \"Selection, causes and experiment\" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，M4（Becoming.Rejoining）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4 (Ren 19 October: \"integrate all, the theory is a whole, not stitched pieces, go ahead\"): The rest family's Chinese term in the live Chinese fields is now 停息 (6 uses), as in the chapter (DELEGATED-CHOICES D45 (4)); the English is unchanged. The claim is unchanged.",
+      "zh": "2026年10月19日，A4（Ren 10月19日的回答：“integrate all, the theory is a whole, not stitched pieces, go ahead”）：中文字段中停息家族的用语由“静止”改为“停息”（6 处），与理论章一致（DELEGATED-CHOICES D45 (4)）；英文不变。论断不变。"
+    },
+    {
+      "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
+      "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
     }
   ],
   "text_versions": [
