@@ -4912,7 +4912,8 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -4927,7 +4928,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5358,7 +5360,7 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
       "direct_documentation_links_from": [
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5635,7 +5637,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -5728,7 +5731,7 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -6470,7 +6473,8 @@
       "direct_documentation_links_from": [
         "RESULTS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -7077,7 +7081,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },
@@ -8380,7 +8385,9 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.zh.md",
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING-REFERENCE.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+        "theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
     },

@@ -109,6 +109,7 @@ Aliases: `mutual dependence`, `相互依存`, `entangled`, `highly entangled sys
 - 19 October 2026, R23 (the refutation laws however a family is listed): BECOMING-RENEWAL-READING.md re-pointed. Since the reviewed hash, the cited files changed only where R23 changed them: BECOMING-RENEWAL-READING.md, section 215 added. Read before re-pointing. The claim is unchanged.
 - 20 October 2026, R26 (Horizon's refutation laws derived from the laws of ideals; board rule 9): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 216 added. The claim is unchanged.
 - 20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 217 added. The claim is unchanged.
+- 20 October 2026, R25 (the twentieth review's step 1, docs now): BECOMING-RENEWAL-READING.md, DELEGATED-CHOICES.md, OPENING.md re-pointed. R25 changed the cited files as follows: BECOMING-RENEWAL-READING.md, section 218 added (R25); earlier sections unchanged; DELEGATED-CHOICES.md, a dated paragraph on what widening counts (a type of formations given in advance; widening over a grown world open); the decisions unchanged; OPENING.md, the AI-written footnote [^axiom] only: scope and order named, the warrant of C open; the body unchanged. Read before re-pointing; no Lean changed. The claim is unchanged.
 
 </details>
 

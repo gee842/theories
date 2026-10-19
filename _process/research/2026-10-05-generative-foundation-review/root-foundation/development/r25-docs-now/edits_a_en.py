@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+"""R25 (a): the ethics' scope and order separated in the English chapter (twentieth review F5, F6, D8).
+Writes edits_a_en.json for sub.py."""
+import json
+C = 'theories/becoming/chapters/THE-THEORY-OF-BECOMING.md'
+E = []
+def r(old, new, p=C):
+    E.append([p, old, new])
+
+# Status block
+r("What ranks courses lies in C's calling widening better and in the step of invariance (sections 6.11, 6.13). Without the condition,",
+  "Scope and order are separate. The condition fixes scope, whose losses count: everything's. Its content beyond the self's presupposition is the step of invariance (section 6.11), which widens whose losses count and orders nothing. Only C, calling widening better, orders courses (section 6.13). The ethics therefore rests on two premises, the continuation condition for scope and C for order, and the warrant of each is open (section 8.5). Without the condition,")
+
+# Scope paragraph
+r("Calling any part of it good takes a further condition, such as the continuation condition of section 6.15, whose warrant is open (sections 6.13, 8.5).",
+  "Calling any part of it good takes two further premises, neither asserted: C, calling widening better, which orders, and the continuation condition of section 6.15, which fixes whose losses count. The warrant of both is open (sections 6.13, 8.5).")
+
+# Target 2
+r("2. **The ethical orientation within the whole.** Explain, through living significance and disclosed practical premises, how 生生 (life in the whole and its continuing generation) acquires normative significance. Under its declared conditions this target is complete (section 6), in the sense that its conditions are stated and what follows from them is checked. Living significance is not an axiom: it is an instantiation of the continuation condition of section 6.15 (sections 6.8, 6.15), and the theory does not assert that condition. The condition gives significance to everything and ranks nothing; the content that ranks lies in C's calling widening better and in the step of invariance (sections 6.11, 6.13), whose warrant is open.",
+  "2. **The ethical orientation within the whole.** Explain how 生生 (life in the whole and its continuing generation) acquires normative significance: through the comparison by widening what can form (C), under the continuation condition of section 6.15, with disclosed practical premises. Under its declared conditions this target is complete (section 6) in a thin sense: its premises are stated and what follows from them is checked, and much of what follows unfolds a definition (`Web.paths_comparison_widens`, `g0_of_unrestricted`); the warrant of its two premises is open. Living significance is not an axiom: it is an instantiation of the continuation condition (sections 6.8, 6.15), and the theory does not assert that condition. The condition gives significance to everything and ranks nothing: it fixes scope, whose losses count, and its step of invariance (section 6.11) is part of that scope. Only C, calling widening better, orders (section 6.13).")
+
+# Premise card E, the continuation condition
+r("On level paths, C with “better” read as retaining and adding what has significance follows. Every use of living significance",
+  "Under it, widening what can form is retaining and adding what has significance (`Web.widens_iff_retains_adds`); C does not follow from it, since C's ranking lies in the reading of “better” (section 6.13). Every use of living significance")
+r("loses something with significance. What ranks lies in C's calling widening better and in the step of invariance (sections 6.11, 6.13). Without it, route (b)",
+  "loses something with significance. It fixes scope, not order: its content beyond the self's presupposition, the step of invariance (section 6.11), says whose losses count, and only C orders (section 6.13). Without it, route (b)")
+
+# Premise card F, C
+r("A comparison premise. Courses are compared on possibilities, for the reasons of section 6.12. With the condition, this is the condition's own comparison: it ranks the absence of an overdrawing formation above its presence and withholds no event. On level paths, with “better” read as retaining and adding what has significance, C follows from the continuation condition (section 6.8). With “better” read as widening what can form, C's no-loss extension is exactly widening; that is definitional (`Web.paths_comparison_widens`, section 6.13), and that widening is better is the open warrant.",
+  "The order premise of the ethics, the only one that ranks courses. Courses are compared on possibilities, for the reasons of section 6.12: extension on possibilities ranks the absence of an overdrawing formation above its presence and withholds no event, and under the condition it is retaining and adding what has significance (`Ranking.possible_extends_iff`). The condition fixes which possibilities count; C supplies the order. With “better” read as widening what can form, C's no-loss extension is exactly widening; that is definitional (`Web.paths_comparison_widens`, section 6.13), and that widening is better is the open warrant. Under the condition, widening is retaining and adding what has significance (`Web.widens_iff_retains_adds`), so the same holds with “better” read that way (`Web.paths_g0_comparison`, section 6.8): a reading of “better”, not a consequence of the condition.")
+
+# 6.8, living significance bullet
+r("and so does C with “better” read as retaining and adding what has significance (`Web.paths_g0_comparison`). So under the condition the premise card's seed, self-significance, relational neutrality, standpoint neutrality and, on level paths, C hold. A, L and the practical commitments remain premises.",
+  "and C holds with “better” read as retaining and adding what has significance (`Web.paths_g0_comparison`). That is C under a reading of “better”: under the condition retaining and adding is widening (`Web.widens_iff_retains_adds`), so the reading calls widening better, and the ranking lies in that reading, not in the condition (section 6.13). So under the condition the premise card's seed, self-significance, relational neutrality and standpoint neutrality hold; C, A, L and the practical commitments remain premises.")
+
+# 6.12 reason 1
+r("1. Under the condition, it is the condition's own comparison, retaining and adding what has significance (`Ranking.possible_extends_iff`), with no further premise; each alternative adds one, a reading of `living` or an order.",
+  "1. Under the condition, its extension is retaining and adding what has significance (`Ranking.possible_extends_iff`), with no further premise; each alternative adds one, a reading of `living` or an order. The condition fixes which possibilities count; that extension is better is C's.")
+
+# 6.13 what it does not derive
+r("What does not come along is the “ought”: that narrowing a future which never returns to oneself is wrong for oneself. That is the condition's step of invariance (section 6.11). After the reduction it becomes the content of calling the generative space good, an open question of warrant and no premise of any law (section 8).",
+  "What does not come along is the “ought”, and it has two parts that do different work. Calling widening better is C, the only premise of the ethics that orders. Counting the futures that never return to oneself is scope, not order: it is the condition's step of invariance (section 6.11), which fixes whose possibilities count and ranks nothing (section 6.15). Both are open questions of warrant (section 8.5), and neither is a premise of any law here.\n\n**What widening counts.** `Web.Widens` compares which members of the world's type of formations `F`, given in advance, the levels admit at the thresholds the web fixes (`Web.Admits`; requirements as thresholds, section 0, block A). A course that brings about a kind of formation or a requirement outside `F` widens nothing on this measure, so 生生, read as creating the conditions and generators of further forming (D1), can exceed what widening registers. Widening over a world that grows, along the growth by attachment of `Flow.GrownBy` (`Becoming.Cuts`), is open (section 8.1, item 5).")
+
+# 6.15 what the condition adds
+r("What could rank courses lies elsewhere: in C, that is, in calling widening better (section 6.13), and in the step of invariance from “my continuation matters” to “anything's continuation matters” (section 6.11). Section 6.13 already shows the first: once significance is read as possibility, the rules hold with no condition, and their normative content has moved into calling widening better.",
+  "What ranks courses lies elsewhere, in C alone: calling widening better (section 6.13). Once significance is read as possibility the rules hold with no condition, and their normative content has moved into that call. The step of invariance from “my continuation matters” to “anything's continuation matters” (section 6.11) is not a second ranking: it is the condition's own content beyond the self's presupposition, and it fixes scope, whose losses count, not order. So the ethics rests on two premises with two roles: the condition for scope, C for order.")
+r("What the step adds is significance for the continuations whose loss returns to no one. After the reduction to possibilities, it is the content of calling the generative space good (section 6.13).",
+  "What the step adds is significance for the continuations whose loss returns to no one. After the reduction to possibilities, it says that every formation's possibilities count, those whose loss never returns to oneself included; that widening them is better is C's (section 6.13).")
+r("The alignment direction of section 7 is stated under this condition and the disclosed practical premises.",
+  "The alignment direction of section 7 is stated under this condition, C read as widening, and the disclosed practical premises.")
+
+# Stated whole IV
+r("On level paths, C's extension is exactly widening; that holds by definition, and that widening is better is the open question of warrant. The continuation condition is the condition of section 6.15.",
+  "On level paths, C's extension is exactly widening; that holds by definition, and that widening is better is the open question of warrant. The continuation condition is the condition of section 6.15. The ethics rests on it and on C, with two roles: the condition fixes scope, whose losses count, and C alone orders.")
+
+# 7.5
+r("The direction takes two premises: the continuation condition of §6.15 and the disclosed practical premises. The theory does not assert the condition.",
+  "The direction takes the continuation condition of §6.15, which fixes scope, C read as widening, which orders, and the disclosed practical premises. The theory asserts none of them.")
+r("So they enter the same evaluation, by living significance and the practical commitments, and no layer of selection needs a starting point of its own",
+  "So they enter the same evaluation, by C read as widening, under the condition, and the practical commitments, and no layer of selection needs a starting point of its own")
+
+# 8.3 bullet 1
+r("The three scopes of 7 October 2026 are scopes of what is counted. Living significance and C share this reading, and courses are compared on possibilities (D1, D22, revised on 18 October 2026).",
+  "The three scopes of 7 October 2026 are scopes of what is counted. C shares this reading; living significance does not read 生生, since the `living` readings include no further generation. Courses are compared on possibilities (D1, D22, revised on 18 October 2026).")
+
+# 8.5 calling the generative space good
+r("- **Calling the generative space good.** After the reduction to possibilities, the content of calling it good is the condition's step of invariance (§6.11). That widening is better is a question of warrant, not a premise of any law (§6.13): C's no-loss extension is exactly widening by definition, so the definition carries no warrant.",
+  "- **Calling the generative space good.** Two questions of warrant, which do different work:\n  - *Is widening better?* The warrant of C, the only premise of the ethics that orders. C's no-loss extension is exactly widening by definition (§6.13), so the definition carries no warrant.\n  - *Does significance stop at no boundary?* The warrant of the condition's step of invariance (§6.11), which fixes scope, whose losses count, and orders nothing.")
+
+if __name__ == '__main__':
+    json.dump(E, open(__file__.replace('.py', '.json'), 'w'), ensure_ascii=False, indent=0)
+    print(len(E))

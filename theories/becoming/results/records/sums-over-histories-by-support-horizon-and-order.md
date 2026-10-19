@@ -94,6 +94,7 @@ Aliases: `sums over histories by support, horizon and exact order`, `历史之�
 
 - 19 October 2026: added (HS), from W1–W4 of the review of the exploratory repository; study section 211.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: possibility_transfer_iff, counting_transfer_iff from Weighted.lean to WeightedTraces.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Weighted.lean). The claim is unchanged.
+- 20 October 2026, R25 (the twentieth review's step 1, docs now): THE-THEORY-OF-BECOMING.md re-pointed. R25 changed the cited files as follows: THE-THEORY-OF-BECOMING.md, the twentieth review's step 1 (R25): the ethics' scope (the continuation condition) and order (C) stated apart (status, §6.8, §6.12, §6.13, §6.15, §7.5, §8.3, §8.5, the theory stated whole); the two presentations of the base stated exactly (§1, §9); rising_recurs, falls_not_recurring and Flow.excess_bounded tagged as natural-number facts (block A, §1, §2, §4); §8 rewritten as twelve ranked open items, its targets and area table moved verbatim to theories/becoming/history/THE-THEORY-OF-BECOMING-open-programme-2026-10-20.md and its connectivity log to THEOREM-CONNECTIVITY.md §10; item 11 qualified. Read before re-pointing; no Lean changed. The claim is unchanged.
 
 </details>
 

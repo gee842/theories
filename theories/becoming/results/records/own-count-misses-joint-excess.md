@@ -5,7 +5,7 @@
 
 `own-count-misses-joint-excess` · **recorded-checked** · theorem · F01 · [record](own-count-misses-joint-excess.json) · [register](../../../../RESULTS.md)
 
-> Formations each taking within what is given can together exceed it; joint excess cannot outlast what was held. Where renewers depend on what they renew, it ends the renewal and those depending at such a need, a taker among them where it so depends.
+> Formations each taking within what is given can together exceed it; with natural-number amounts, joint excess cannot outlast what was held. Where renewers depend on what they renew, it ends the renewal and those depending at such a need, a taker among them where it so depends.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -113,6 +113,7 @@ Aliases: `Becoming.Flow.WithinOwn`, `Becoming.Flow.WithinJoint`, `Becoming.Flow.
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Continuation.lean). The claim is unchanged.
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Flow.lean). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Continuation.lean). The claim is unchanged.
+- 20 October 2026, R25 (the twentieth review's step 1, docs now): Its statement now says that the amounts are natural numbers (twentieth review D5).
 - 52 rebinding entries (2026-10-10 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](own-count-misses-joint-excess.json).
 
 <a id="earlier-text--早期文本"></a>

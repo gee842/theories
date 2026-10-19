@@ -85,7 +85,7 @@ Since P6 the open programme has listed ‘relax Dependent (buffers, reserves, la
   - Input: Activity can go beyond support, at most as often as what is held allows.
   - Preserved conditions: Carries; a loss without return with the dependence unchanged. [Dependence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 - **formal-reuse**: [becoming-renewal-reading](becoming-renewal-reading.md). Reuses falls_not_recurring: a reserve that never rises from some step on does not fall at arbitrarily late steps.
-  - Output: An observable that never rises from some step on does not fall at arbitrarily late steps.
+  - Output: An amount counted in whole units (natural-number amounts) that never rises from some step on does not fall at arbitrarily late steps.
   - Input: An unsupported formation is not active at arbitrarily late steps.
   - Preserved conditions: Carries; unsupported from some step on. [Renewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
 - **formal-reuse**: [life-as-condition-of-life](life-as-condition-of-life.md). Reuses Embodied; coextinct_lasts generalizes coextinct to formations with a reserve.
@@ -145,6 +145,7 @@ Aliases: `Becoming.Web.Carries`, `Becoming.Web.carries_zero`, `Becoming.Web.Carr
 - 18 October 2026, W1, the re-rooting (Ren: "i think our spine is more like a tree - where is the root? hows the lean started?", then "please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification"): declarations moved with their full Lean names, statements and proofs unchanged: total from Generation.lean to World.lean; coextinct from Roles.lean to LabelledRoles.lean. Re-pointed after reading the change (Dependence.lean: the fold; Flow.lean: the fold; Generation.lean: the fold; Renewal.lean: the fold; Roles.lean: the fold). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (LabelledRoles.lean). The claim is unchanged.
 - 19 October 2026, R22 (the names of the nineteenth review): BECOMING-UNIFICATION-PLAN.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: BECOMING-UNIFICATION-PLAN.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
+- 20 October 2026, R25 (the twentieth review's step 1, docs now): One dependency interface now says that the principle is for an amount counted in whole units (twentieth review D5).
 - 75 rebinding entries (2026-10-09 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](reserve-defers-ending.json).
 
 <a id="earlier-text--早期文本"></a>

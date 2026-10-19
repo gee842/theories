@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-16T18:25:05+00:00",
   "statement": {
-    "zh": "各自在所给之内取用的形成，合起来可以超出；联合超出持续不过原有的。更新者依存于所更新者时，它终结更新与以其所需依存者，取用者以这样的需要依存时也在内。",
-    "en": "Formations each taking within what is given can together exceed it; joint excess cannot outlast what was held. Where renewers depend on what they renew, it ends the renewal and those depending at such a need, a taker among them where it so depends."
+    "zh": "各自在所给之内取用的形成，合起来可以超出；在自然数的量中，联合超出持续不过原有的。更新者依存于所更新者时，它终结更新与以其所需依存者，取用者以这样的需要依存时也在内。",
+    "en": "Formations each taking within what is given can together exceed it; with natural-number amounts, joint excess cannot outlast what was held. Where renewers depend on what they renew, it ends the renewal and those depending at such a need, a taker among them where it so depends."
   },
   "laws": [
     {
@@ -649,6 +649,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Continuation.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): Its statement now says that the amounts are natural numbers (twentieth review D5).",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：其陈述现在写明量是自然数（第二十次审查 D5）。"
     }
   ],
   "text_versions": [

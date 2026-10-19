@@ -402,12 +402,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "7f3843cb7649f286ae4735b69bfb88056ebafd545beafbeb8b50a7c2e87301d5"
+      "sha256": "612acf3c51e9cd59cf004811067b91ff14d541081ca3f7c61c366b96514695f7"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "integration",
-      "sha256": "b0e93aec11891f72ca82125d66b8d40f9bb290b73f3ea724257ccea319d867d9"
+      "sha256": "fdc6d36933075d29deb11ca8e31ee2553912d39cd11275400c0c5886494b8c0e"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -417,7 +417,7 @@
     {
       "path": "theories/becoming/OPENING.md",
       "role": "provenance",
-      "sha256": "47f07d82109e0733bfde74bf5a58a13dd3f2471da075c5308ce43be5d25b0531"
+      "sha256": "ac56b6f8b272da7f1d2b3411c71e5a0609904545e4a05a192fc9c4f640b6ea55"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-entangled-mutual-dependence.md",
@@ -470,6 +470,10 @@
     {
       "en": "20 October 2026, R27 (the stepwise classes and loss): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 217 added. The claim is unchanged.",
       "zh": "2026年10月20日，R27（逐步类别与失去）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 217 节。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R25 (the twentieth review's step 1, docs now): BECOMING-RENEWAL-READING.md, DELEGATED-CHOICES.md, OPENING.md re-pointed. R25 changed the cited files as follows: BECOMING-RENEWAL-READING.md, section 218 added (R25); earlier sections unchanged; DELEGATED-CHOICES.md, a dated paragraph on what widening counts (a type of formations given in advance; widening over a grown world open); the decisions unchanged; OPENING.md, the AI-written footnote [^axiom] only: scope and order named, the warrant of C open; the body unchanged. Read before re-pointing; no Lean changed. The claim is unchanged.",
+      "zh": "2026年10月20日，R25（第二十次审查第一步，现在改文本）：BECOMING-RENEWAL-READING.md、DELEGATED-CHOICES.md、OPENING.md 重新指向。R25 对所引文件的改动：BECOMING-RENEWAL-READING.md，新增第 218 节（R25）；前面各节不变；DELEGATED-CHOICES.md，一段注明日期的说明：扩大计入什么（事先给定的形成类型；在生长的世界上的扩大开放）；各决定不变；OPENING.md，只改 AI 所写的脚注 [^axiom]：写明范围与次序，C 的根据开放；正文不变。重新指向前已读；Lean 未改。论断不变。"
     }
   ]
 }

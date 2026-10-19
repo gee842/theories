@@ -1,0 +1,57 @@
+[
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+"and feeding from beyond (`Flow.fed_from_beyond`) use that: with real-valued amounts, losses can shrink geometrically and those conclusions fail. The second law supplies no least loss per step.",
+"and feeding from beyond (`Flow.fed_from_beyond`) use that: with real-valued amounts, losses can shrink geometrically and those conclusions fail. The second law supplies no least loss per step. Three laws stated with no premise about the unfolding rest on the same least unit, since each sums falls of at least one: finitely many conditions that keep falling keep rising (`rising_recurs`), an amount that never rises cannot keep falling (`falls_not_recurring`), and joint excess cannot outlast what was held (`Flow.excess_bounded`). Over dense amounts a stock halving at every step falls for ever and never rises (`Halving.approaches_without_reaching`); their general form is the least-loss law (`Amounts.rests`), from which `falls_not_recurring` is proved again (`whole_falls_not_recurring`)."
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+"停息定理（`World.comes_to_rest_unrefuted`、`World.rests_unrefuted_enclosed`、`World.rests_unrefuted`）与从外供给（`Flow.fed_from_beyond`）用到这一点：量取实数时损失可以几何地缩小，这些结论不成立；第二定律不给每步的最小损失 |",
+"停息定理（`World.comes_to_rest_unrefuted`、`World.rests_unrefuted_enclosed`、`World.rests_unrefuted`）与从外供给（`Flow.fed_from_beyond`）用到这一点：量取实数时损失可以几何地缩小，这些结论不成立；第二定律不给每步的最小损失。三条不加关于展开之前提而陈述的规律也依于同一最小单位，因为每条都把至少为一的下降相加：有限多个条件持续下降就持续上升（`rising_recurs`），不再上升的量不能持续下降（`falls_not_recurring`），联合超出持续不过原有的（`Flow.excess_bounded`）。在稠密的量中，每步减半的存量永远下降而从不上升（`Halving.approaches_without_reaching`）；它们的一般形式是最小损失之律（`Amounts.rests`），`falls_not_recurring` 由它再证（`whole_falls_not_recurring`） |"
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+"Amounts do not go below zero, so in a finite family recurring falls need recurring rises: in every unfolding, finitely many conditions that keep falling keep rising; with amounts bounded, recurring rises also need recurring falls.",
+"Amounts are natural numbers, so each fall is at least one unit and none goes below zero; so in a finite family recurring falls need recurring rises: in every unfolding so represented, finitely many conditions that keep falling keep rising (`rising_recurs`). That is a fact of the least unit, not of every unfolding: over dense amounts a stock halving at every step falls for ever and never rises (`Halving.approaches_without_reaching`; block A, natural-number amounts). With amounts bounded, recurring rises also need recurring falls."
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+"量不低于零，所以有限家族中下降复现就需要上升复现：每个展开中，有限多个条件持续下降就持续上升；量有界时，上升复现也需要下降复现。",
+"量是自然数，每次下降至少一个单位，且不低于零，所以有限家族中下降复现就需要上升复现：每个这样表示的展开中，有限多个条件持续下降就持续上升（`rising_recurs`）。这是最小单位的事实，不是每个展开的：在稠密的量中，每步减半的存量永远下降而从不上升（`Halving.approaches_without_reaching`；A 块，自然数的量）。量有界时，上升复现也需要下降复现。"
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+"**One principle bounds continuation without renewal: an observable that never rises from some step on cannot keep falling.** In Lean: given a rank that does not rise from step T on, it is not the case that the rank falls at steps as late as one likes (`falls_not_recurring`). Three bounds are cases of it:",
+"**One principle bounds continuation without renewal: an amount counted in whole units that never rises from some step on cannot keep falling.** In Lean: given a rank that does not rise from step T on, it is not the case that the rank falls at steps as late as one likes (`falls_not_recurring`). It is a fact of natural-number amounts, where each fall is at least one unit: over dense amounts a stock halving at every step never rises and falls for ever (`Halving.approaches_without_reaching`). Its general form is the least-loss law: falls of at least a least loss, from a stock within finitely many of them, do not recur (`Amounts.rests`); `falls_not_recurring` is that law at whole numbers, proved again from it with its statement unchanged (`whole_falls_not_recurring`; “Limits of the rest theorem” above). Three bounds are cases of it:"
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+"**一条原则约束无更新的继续：从某步起不再上升的可观测量，不在任意晚的步下降。** 以下三条界都是它的情形（`falls_not_recurring`）：",
+"**一条原则约束无更新的继续：以整单位计、从某步起不再上升的量，不在任意晚的步下降。** 以下三条界都是它的情形（`falls_not_recurring`）。这是自然数之量的事实，每次下降至少一个单位：在稠密的量中，每步减半的存量从不上升而永远下降（`Halving.approaches_without_reaching`）。它的一般形式是最小损失之律：每次下降至少一个最小损失、存量在其有限多倍之内时，下降不复现（`Amounts.rests`）；`falls_not_recurring` 是这条律在整数上的情形，由它再证，陈述不变（`whole_falls_not_recurring`）："
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+"- no condition is drawn down without end (`excess_bounded`);",
+"- no condition is drawn down without end (`excess_bounded`; natural-number amounts, each step of joint excess lowering the level by at least one unit);"
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+"- 没有条件能被无限耗下去（`excess_bounded`）；",
+"- 没有条件能被无限耗下去（`excess_bounded`；自然数的量，联合超出的每一步至少使水平下降一个单位）；"
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+"Each step of joint excess lowers the level by at least one, so joint excess cannot outlast what was held (`Flow.excess_bounded`).",
+"Each step of joint excess lowers the level by at least one unit, so with natural-number amounts joint excess cannot outlast what was held (`Flow.excess_bounded`: `n` steps of it lower the level by at least `n`). The bound counts each step's excess as at least one unit; over amounts that may be dense it would need a least excess per step, as rest needs a least loss (`Becoming.LeastLoss`)."
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.zh.md",
+"联合超出的每一步至少使水平下降一，所以持续不过原有的（`Flow.excess_bounded`）。",
+"联合超出的每一步至少使水平下降一个单位，所以在自然数的量中它持续不过原有的（`Flow.excess_bounded`：`n` 步使水平至少下降 `n`）。这一界把每步的超出计为至少一个单位；在可能稠密的量中，它需要每步有最小的超出，正如停息需要最小损失（`Becoming.LeastLoss`）。"
+],
+[
+"theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+"an observable that never rises cannot keep falling (`falls_not_recurring`);",
+"an amount counted in whole units that never rises cannot keep falling (`falls_not_recurring`, natural-number amounts);"
+]
+]
