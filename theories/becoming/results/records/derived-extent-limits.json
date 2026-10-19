@@ -185,8 +185,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the current bytes of Becoming.Continuation are bound to receipt 20261014T141427.442103Z, those of Becoming.Dependence to receipt 20261014T091930.724493Z and those of Becoming.Standpoints to receipt 20261013T094743.528770Z; every source declaration has an empty axiom report, and core purity is verified. Author counterreview in the integration note; the independent review (listed under sources) accepts its Lean, and its corrections are handled in the integration note."
   },
   "next_delta": {
-    "en": "The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; how taking all that is given forms (a stronger case of the meta-attractor); forced endings in these witnesses (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.",
-    "zh": "伤害的层级（个体、谱系、整体）在见证上的形式；跨世代的想要是否越过想要的视界；取尽所给如何形成（元吸引子的更强情形）；这些见证中强制形式的终结（对 active 量化）；同一世界去掉一个来源形成后仍每步得到供给的见证；整段读法上的同一界限。"
+    "en": "The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; how taking all forms other than by a rising take (a stronger case of the meta-attractor); forced endings in these witnesses (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.",
+    "zh": "伤害的层级（个体、谱系、整体）在见证上的形式；跨世代的想要是否越过想要的视界；取尽所给如何以上升的取用以外的方式形成（元吸引子的更强情形）；这些见证中强制形式的终结（对 active 量化）；同一世界去掉一个来源形成后仍每步得到供给的见证；整段读法上的同一界限。"
   },
   "correspondence": {
     "zh": "Ren 的提议说：“all above does not require any axiom”，又说那条公理“closes the whole”。AI 的分析（Ren 答“exactly”）说：推出的范围单向地到达自身所依存的，以条件而不是以想要的存在者到达他者，而谨慎的总体化者（其见证现名 `Clearing`）满足它的全部；所以动力学定出系统的范围，定不出中心。本结果给出这四个界限的见证。作为检验（若推出的要求迫使立场中立，中心就会由动力学推出），最初的见证不可能失败：Flow 与 Web 的谓词从不约束意义，其传递合取由 S0 推出，如独立审查所指出；“见证造出来了”作为检验通过的说法撤回，现在的见证含沿依存的封闭。在依存使每两个生命都相连的整体中，S0 加沿依存的 N_rel 给出 G0（held-lives-g0-is-centering 的 significant_of_transmits）。清除者是元吸引子所选出的自我的一种形式（AI 的读法）：它不是不计入其外，而是只计入它自己的延续所需的那部分。",
@@ -317,6 +317,13 @@
       "detail": {
         "en": "Here a clearer meeting every requirement derived from its want still ends a dweller, the ending stipulated; there ending another serves taking all that is given, not continuing as such, and the ending of a formation living by taking alongside a full taker is derived.",
         "zh": "这里满足由其想要推出的每项要求的清除者仍终结栖居者，终结是规定的；那里终结他者服务于取尽所给，而不是延续本身，在取尽者旁以取用为生的形成的终结是推出的。"
+      }
+    },
+    {
+      "id": "where-a-rising-take-ends",
+      "detail": {
+        "en": "There the clearer's ending of the dweller is stipulated; here a seeker's ending is derived from balance and a bound on what is given.",
+        "zh": "那里清除者对栖居者的终结是规定的；这里寻求者的终结由平衡与所给之界推出。"
       }
     }
   ],
@@ -715,6 +722,10 @@
     {
       "en": "18 October 2026, W1, the re-rooting (Ren: \"i think our spine is more like a tree - where is the root? hows the lean started?\", then \"please fix all after study, work with other sessions, totally resolve these extra/ugly complexities, and move toward to the direction of unification\"): Rebound to core receipt 20261018T183920.923524Z after reading the change (Dependence.lean). The claim is unchanged.",
       "zh": "2026年10月18日，W1 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): one way taking all that is given forms is stated in where-a-rising-take-ends: a take more than now from a bounded giving, so the next step was narrowed and the record linked. Before: next step \"The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; how taking all that is given forms (a stronger case of the meta-attractor); forced endings in these witnesses (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading.\". The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：取尽所给的一种形成方式已在 where-a-rising-take-ends 中陈述：对有界所给的多于此刻的取用，所以下一步收窄并链接该记录；原文见英文。论断不变。"
     }
   ],
   "text_versions": [

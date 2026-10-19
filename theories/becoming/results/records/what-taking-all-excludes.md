@@ -41,7 +41,7 @@ Canonical source: [Exclusion.lean](../../../../experiments/integrated-correction
 <a id="next--下一步"></a>
 ## Next
 
-Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.
+Endings forced in the witnesses of section 6.7; how taking all that is given forms other than by a rising take; a comparison of courses that shows an ending through exclusion from taking; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -58,6 +58,7 @@ The chapter's open programme (section 8.2, "Continuation (§6.7) and feeding") n
 - related, not a proved adapter: [derived-extent-limits](derived-extent-limits.md). There a clearer meeting every requirement derived from its want still ends a dweller, the ending stipulated; here ending another serves taking all that is given, not continuing as such, and the ending of a formation living by taking is derived.
 - related, not a proved adapter: [significance-retained-within-margin](significance-retained-within-margin.md). There retaining and the margin compare level paths by what they admit; here the levels admit the excluded formation at every step while it ends, so that comparison does not show it.
 - related, not a proved adapter: [consumption-ends-with-feeders](consumption-ends-with-feeders.md). There a taker ends with its feeders; here a taker ends alongside a full taker while the renewer and the full taker continue.
+- related, not a proved adapter: [where-a-rising-take-ends](where-a-rising-take-ends.md). There a full taker that continues excludes every other taker; here a take more than now comes to take all that is given and does not continue.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -78,6 +79,8 @@ Aliases: `what taking all that is given excludes`, `取尽所给所排除的`, `
 - 18 October 2026: added (C1), on Ren's "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable", the AI choosing the item; study section 183; the reading is D44 of DELEGATED-CHOICES.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md. The claim is unchanged.
 - 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.
+- 18 October 2026, C2 (Becoming.Exhaustion): one way taking all that is given forms is stated in where-a-rising-take-ends: a take more than now from a bounded giving, so the next step was narrowed and the record linked. Before: next step "Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.". The claim is unchanged.
+- 18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the "Seeking, capture and runaway" and "Continuation (§6.7) and feeding" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 
 </details>
 

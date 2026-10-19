@@ -78,7 +78,7 @@ CORE = ["Becoming.World", "Becoming.Frame", "Becoming.Labelled", "Becoming.Inqui
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
         "Becoming.Openness", "Becoming.Decidedness", "Becoming.Refinement", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
-        "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.SupportRecovery", "Becoming.Admission", "Becoming.Exclusion",
+        "Becoming.Continuation", "Becoming.RenewalFlow", "Becoming.SupportRecovery", "Becoming.Admission", "Becoming.Exclusion", "Becoming.Exhaustion",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Lifting", "Becoming.Ranking", "Becoming.ActiveReading", "Becoming.LossMatching", "Becoming.StrictTransport", "Becoming.MatchedCourses",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
@@ -1223,6 +1223,16 @@ SCOPE = (
     "ends, the ending also following from the law, and all three continue where each takes one, "
     "while the levels of the last two courses admit every member at every step. No ethical "
     "predicate occurs. "
+    "Exhaustion: a take that is more than now at each of n steps has risen by at least n, so from "
+    "a condition given at most B at each step it takes all that is given after B + 1 steps and "
+    "takes more than is given; under balance such taking does not last as many steps as the level "
+    "plus one, so a formation that while active takes part with a take more than now is not active "
+    "through a window of B + 1 steps and the level plus one, and one whose activity does not resume "
+    "once it stops ends, with no need supplied; where renewal depends on what it renews and the "
+    "seeker stays active while the condition meets a need, the level falls below that need within "
+    "the window and every formation depending on the condition there is inactive from then on; of "
+    "a renewer and a taker whose take rises by one at each step, the taker takes all that is given "
+    "from step one and ends at step four while the renewer continues. No ethical predicate occurs. "
     "Regions: within a region of formations levels admit everything other levels admit there, and "
     "beyond it some formation the other levels admit these do not; inclusion is admission within "
     "the whole at every step, what holds within a region holds within every region inside it, what "

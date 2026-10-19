@@ -65,6 +65,7 @@ import Becoming.RenewalFlow
 import Becoming.SupportRecovery
 import Becoming.Admission
 import Becoming.Exclusion
+import Becoming.Exhaustion
 import Becoming.Regions
 import Becoming.Metaethics
 import Becoming.Lifting
@@ -825,6 +826,16 @@ readings of the unfolding (`Becoming.Labelled`).
   supported. Of a renewer and two takers, the first's continuation does not require the
   second's ending (all three continue where each takes one); taking all that is given does.
   The levels admit the second where it ends, so admission does not see the exclusion.
+* `Becoming.Exhaustion` (L3): where a take that is more than now ends, with no ethical premise.
+  Read on what a formation takes from a condition, "more than now" (`Becoming.Seeking`) rises by
+  at least one at each step, so from a condition given at most `B` at each step the take comes
+  to take all that is given within `B + 1` steps and then more than is given. Under balance such
+  taking lasts fewer steps than the level plus one, so a formation that while active takes part
+  with a take more than now does not stay active, and where its activity does not resume it
+  ends, with no need supplied. Where renewal depends on what it renews and the seeker stays
+  active while its need is met, the level falls below the need and every formation depending on
+  the condition there ends. In `Alone` the same taker, taking all that is given without its take
+  rising, continues.
 * `Becoming.Regions` (L3): self, system and whole, and represented boundaries. What a
   part's levels admit within a region they admit within every region inside it, what is
   lost beyond a region is lost beyond every region inside it, and nothing lies beyond

@@ -1,0 +1,189 @@
+#!/usr/bin/env python3
+"""Write the record where-a-rising-take-ends for C2: python3 -B make_record.py RECEIPT_ID
+
+The receipt id names the checker run folder under becoming-checks/; the source hash is read from that receipt and
+checked against the file's current bytes before anything is written. Run after apply_text.py text (it adds the study
+section this record cites and the chapter text its statement reference hashes)."""
+import datetime
+import hashlib
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[6]
+PKG = 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming'
+SRC = f'{PKG}/Becoming/Exhaustion.lean'
+receipt_id = sys.argv[1]
+receipt = f'{PKG}/becoming-checks/{receipt_id}/verification.json'
+data = json.loads((ROOT / receipt).read_text())
+sha = hashlib.sha256((ROOT / SRC).read_bytes()).hexdigest()
+assert data['status'] == 'passed', data['status']
+assert data['source_sha256']['Becoming.Exhaustion'] == sha, 'receipt does not bind the current bytes'
+FAMILY = json.loads((ROOT / 'theories/becoming/results/records/what-taking-all-excludes.json').read_text())['family']
+SECTION = int(re.search(r'^## (\d+)\. Where a take more than now ends \(C2\)$', (ROOT / '_process/research/2026-10-05-'
+                        'generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md').read_text(), re.M).group(1))
+WORDS = ('"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are '
+         'important, but i think you are capable"')
+
+
+def d(*names):
+    return ['Becoming.' + n for n in names]
+
+
+laws = [
+    {
+        'en': 'A quantity more than now at each of n steps has risen by at least n. So a take more than now from a '
+              'condition given at most B at each step exceeds what is given after B + 1 steps: taking part, the formation '
+              'takes all that is given, and the taking exceeds what is given.',
+        'zh': '在 n 步中每步都多于此刻的量至少上升了 n。所以对每步所给至多为 B 的条件，多于此刻的取用在 B + 1 步后超出所给：参与时，'
+              '该形成取尽所给，且取用超出所给。',
+        'declarations': d('more_accumulates', 'Flow.take_le_taken', 'Flow.exceeds_of_more', 'Flow.takesAll_of_more',
+                          'Flow.excess_of_more'),
+    },
+    {
+        'en': 'Under balance, no formation takes part and takes more than is given to the condition at each of level + 1 '
+              'steps from any step.',
+        'zh': '在平衡下，没有形成自任何一步起的水平 + 1 步中每步都参与并取用多于该条件所得之给予。',
+        'declarations': d('Flow.beyond_given_bounded'),
+    },
+    {
+        'en': 'Under balance, a formation that, while active, takes part with a take more than now, from a condition given '
+              'at most B at each step, is not active at each of B + 1 + (level + 1) steps, the level read B + 1 steps on; '
+              'it does not stay active, and where its activity does not resume once it stops it is inactive from then on. '
+              'No need or dependence is supplied.',
+        'zh': '在平衡下，一个在活跃时以多于此刻的取用参与、从每步所给至多为 B 的条件取用的形成，不在 B + 1 +（水平 + 1）步中每步都活跃'
+              '（水平取 B + 1 步之后的）；它不保持活跃，其活动一旦停止不再恢复之处，它自那时起不再活跃。不提供需要或依存。',
+        'declarations': d('Flow.seeking_bounded', 'Flow.seeking_not_continues', 'Flow.seeking_ends'),
+    },
+    {
+        'en': 'Where renewal depends on what it renews and the seeker stays active while the condition is at least m, '
+              'some step of that window finds the level below m, and from then on every formation depending on the '
+              'condition at a need of at least m is inactive, the renewers included.',
+        'zh': '更新依存于所更新者、且寻求者在条件至少为 m 时保持活跃之处，那一窗口中的某一步水平低于 m，自那时起每个以至少 m 的需要'
+              '依存于该条件的形成都不再活跃，更新者也在内。',
+        'declarations': d('all_or_below', 'Flow.seeking_exhausts'),
+    },
+    {
+        'en': 'Of a renewer giving two units across each step and a taker whose take rises by one at each step: the taker '
+              'takes all that is given from step one and is inactive from step four, which the law also gives, while the '
+              'renewer is active at every step; in Alone the taker takes all that is given at every step without its take '
+              'rising and is active at every step.',
+        'zh': '一个每步给予两个单位的更新者，与一个取用每步多一的取用者：取用者自第一步起取尽所给，自第四步起不再活跃，这也由定律推出，'
+              '而更新者每步都活跃；在 Alone 中取用者每步取尽所给而取用不上升，每步都活跃。',
+        'declarations': d('Seeker.level', 'Seeker.present', 'Seeker.flow', 'Seeker.web', 'Seeker.balances',
+                          'Seeker.bounded', 'Seeker.level_pos', 'Seeker.dependent', 'Seeker.present_first',
+                          'Seeker.seeks', 'Seeker.lasting', 'Seeker.takes_all', 'Seeker.ends', 'Seeker.ends_by_law',
+                          'Seeker.course', 'Alone.takes_all'),
+    },
+]
+
+record = {
+    'schema_version': 2,
+    'id': 'where-a-rising-take-ends',
+    'title': {
+        'zh': '多于此刻的取用终于何处',
+        'en': 'Where a rising take ends',
+    },
+    'kind': 'theorem',
+    'status': 'recorded-checked',
+    'family': FAMILY,
+    'reviewed_at_utc': datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat(),
+    'statement': {
+        'en': 'A take more than now at every step, from a condition given at most B per step, takes all that is given '
+              'within B + 1 steps, then more, which balance allows for fewer steps than the level plus one: the seeker '
+              'ends, no need supplied. Where renewal depends on what it renews, the renewal ends too.',
+        'zh': '每步都多于此刻的取用，从每步所给至多为 B 的条件，在 B + 1 步内取尽所给，然后取用多于所给，而平衡只容许少于水平加一的步数：'
+              '寻求者终结，不提供需要。更新依存于所更新者之处，更新也终结。',
+    },
+    'laws': laws,
+    'hypotheses': [{
+        'en': 'No axiom. Balance at the condition; what is given bounded by B at each step; a formation that, while active, '
+              'takes part with a take more than now. For the ending, no resumption; for the renewal, Continuation\'s '
+              'premises and a seeker active while the condition meets its need.',
+        'zh': '不加公理。条件处的平衡；每步所给以 B 为界；一个在活跃时以多于此刻的取用参与的形成。就终结而言，不再恢复；就更新而言，'
+              'Continuation 的前提与在条件满足其需要时保持活跃的寻求者。',
+    }],
+    'does_not_show': [
+        {'en': 'Takes that rise only at some steps or by less than a unit; giving that grows with the take; how a take comes '
+               'to rise (what it gains).',
+         'zh': '只在某些步上升或上升少于一个单位的取用；随取用增长的给予；取用如何开始上升（其所得）。',
+         'kind': 'scope'},
+        {'en': 'That taking all that is given ends the taker: in Alone a full taker whose take does not rise continues.',
+         'zh': '取尽所给终结取用者：在 Alone 中取用不上升的取尽者持续。',
+         'kind': 'non-implication'},
+        {'en': 'A reading of the seeker\'s ending as the boundary of 无明 or as a case of the meta-attractor: these read '
+               'Ren\'s terms and wait on him.',
+         'zh': '把寻求者的终结读作无明的边界或元吸引子的情形：这些读 Ren 的术语，待他决定。',
+         'kind': 'scope'},
+    ],
+    'counterexamples': [],
+    'standard_boundaries': ['no-ethical-premise', 'no-evaluation', 'discrete-steps', 'formal-not-empirical',
+                            'names-provisional', 'omission-not-refutation'],
+    'validation_scope': {
+        'en': f'Machine-checked by the consolidated Lean 4.29.1 checker (receipt {receipt_id}): the 27 declarations of '
+              'Becoming.Exhaustion, 23 of them theorems, have empty axiom reports; the checker verifies core purity. '
+              f'Author self-review in study section {SECTION}; not independently reviewed.',
+        'zh': f'Lean 4.29.1 合并检查器实查（回执 {receipt_id}）：Becoming.Exhaustion 的 27 项声明（23 项定理）公理报告为空；'
+              f'检查器并核对核心纯净。作者自审见研究第 {SECTION} 节；未经独立审查。',
+    },
+    'next_delta': {
+        'en': 'Takes that rise only at some steps; giving that grows with the take; how a take comes to rise; the readings '
+              'of 无明 and of the meta-attractor, with Ren; an independent review.',
+        'zh': '只在某些步上升的取用；随取用增长的给予；取用如何开始上升；无明与元吸引子的读法，待 Ren；独立审查。',
+    },
+    'correspondence': {
+        'en': 'The chapter\'s open programme (section 8.2, "Seeking, capture and runaway") named "exhaustion ending the '
+              'seekers themselves where activity needs support", and what-taking-all-excludes left how taking all that is '
+              'given forms. Ren, 18 October 2026: ' + WORDS + ' (provenance, not warrant); the AI chose the item. '
+              '"More than now" is MoreThanNow of Becoming.Seeking, read on the take; taking all is Flow.TakesAll of '
+              'Becoming.Exclusion.',
+        'zh': '本章开放纲领（第 8.2 节，“Seeking, capture and runaway”）列出“exhaustion ending the seekers themselves where '
+              'activity needs support”，what-taking-all-excludes 留下取尽所给如何形成。Ren，2026年10月18日：' + WORDS +
+              '（来历，不是根据）；此项由 AI 选定。“多于此刻”是 Becoming.Seeking 的 MoreThanNow，读在取用上；取尽所给是 '
+              'Becoming.Exclusion 的 Flow.TakesAll。',
+    },
+    'canonical_source': SRC,
+    'aliases': ['where a rising take ends', '多于此刻的取用终于何处', 'exhaustion ends the seeker', '耗尽终结寻求者',
+                'a take more than now', '多于此刻的取用', 'exhaustion of the renewal', '更新的耗尽'],
+    'dependencies': [],
+    'related': [
+        {'id': 'seeking-boundary',
+         'detail': {'en': 'There, where what stands runs down, the rises of more than now do not recur; here, read on what '
+                          'a seeker takes from a bounded giving, the seeker itself ends under balance alone.',
+                    'zh': '那里所立者衰减之处，多于此刻的上升不再出现；这里读在寻求者从有界所给中所取上，寻求者本身仅在平衡下终结。'}},
+        {'id': 'what-taking-all-excludes',
+         'detail': {'en': 'There a full taker that continues excludes every other taker; here a take more than now comes '
+                          'to take all that is given and does not continue.',
+                    'zh': '那里持续的取尽者排除每个其他取用者；这里多于此刻的取用达到取尽所给，且不持续。'}},
+        {'id': 'derived-extent-limits',
+         'detail': {'en': 'There the clearer\'s ending of the dweller is stipulated; here a seeker\'s ending is derived from '
+                          'balance and a bound on what is given.',
+                    'zh': '那里清除者对栖居者的终结是规定的；这里寻求者的终结由平衡与所给之界推出。'}},
+    ],
+    'references': [
+        {'path': SRC, 'role': 'proof', 'declarations': sorted({x for law in laws for x in law['declarations']})},
+        {'path': receipt, 'role': 'receipt'},
+        {'path': '_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md',
+         'role': 'integration'},
+        {'path': 'theories/becoming/chapters/THE-THEORY-OF-BECOMING.md', 'role': 'statement'},
+        {'path': 'sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md', 'role': 'provenance'},
+    ],
+    'proof_bindings': [{'source': SRC, 'receipt': receipt, 'sha256_pointer': '/source_sha256/Becoming.Exhaustion',
+                        'success_pointer': '/status', 'success_value': 'passed'}],
+    'history': [{
+        'en': '18 October 2026: added (C2), on Ren\'s ' + WORDS + f', the AI choosing the item; study section {SECTION}; '
+              'the readings of 无明 and of the meta-attractor wait on Ren.',
+        'zh': '2026年10月18日：新增（C2），按 Ren 的' + WORDS + f'，此项由 AI 选定；研究第 {SECTION} 节；无明与元吸引子的读法待 Ren。',
+    }],
+}
+assert sum(len(law['declarations']) for law in laws) == 27, sum(len(law['declarations']) for law in laws)
+assert len(record['statement']['en']) <= 300 and len(record['statement']['zh']) <= 150, (
+    len(record['statement']['en']), len(record['statement']['zh']))
+for x in record['does_not_show']:
+    assert len(x['en']) <= 240 and len(x['zh']) <= 110, x
+for ref in record['references']:
+    ref['sha256'] = hashlib.sha256((ROOT / ref['path']).read_bytes()).hexdigest()
+out = ROOT / 'theories/becoming/results/records/where-a-rising-take-ends.json'
+out.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
+print(out)

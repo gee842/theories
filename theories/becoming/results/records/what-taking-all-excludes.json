@@ -128,8 +128,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T154830.591298Z）：Becoming.Exclusion 的 38 项声明（31 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 183 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.",
-    "zh": "第 6.7 节见证中强制的终结；取尽所给如何形成；记下经由被排除于取用之外的终结的进程比较；独立审查。"
+    "en": "Endings forced in the witnesses of section 6.7; how taking all that is given forms other than by a rising take; a comparison of courses that shows an ending through exclusion from taking; an independent review.",
+    "zh": "第 6.7 节见证中强制的终结；取尽所给如何以上升的取用以外的方式形成；记下经由被排除于取用之外的终结的进程比较；独立审查。"
   },
   "correspondence": {
     "en": "The chapter's open programme (section 8.2, \"Continuation (§6.7) and feeding\") named \"a witness in which ending another serves the clearer's continuation (a stronger case of the meta-attractor)\". Ren, 18 October 2026: \"alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable\" (provenance, not warrant); the AI chose the item. Ending another serves taking all that is given, not continuing as such. The law is the form here of the competitive exclusion principle of ecology, where one formation takes the whole renewal. The reading is D44 of DELEGATED-CHOICES.",
@@ -176,6 +176,13 @@
       "detail": {
         "en": "There a taker ends with its feeders; here a taker ends alongside a full taker while the renewer and the full taker continue.",
         "zh": "那里取用者随其供给者终结；这里取用者在取尽者旁终结，而更新者与取尽者持续。"
+      }
+    },
+    {
+      "id": "where-a-rising-take-ends",
+      "detail": {
+        "en": "There a full taker that continues excludes every other taker; here a take more than now comes to take all that is given and does not continue.",
+        "zh": "那里持续的取尽者排除每个其他取用者；这里多于此刻的取用达到取尽所给，且不持续。"
       }
     }
   ],
@@ -238,7 +245,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "3be600e65658b806105119b89f424a256cd31a02b29a0cef9d67a7e1b75c8cf8"
+      "sha256": "3658da25e69e4fd0bcc456b54ca816e2049e5f45824a5b98ee70536d526f42d5"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -266,6 +273,14 @@
     {
       "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): one way taking all that is given forms is stated in where-a-rising-take-ends: a take more than now from a bounded giving, so the next step was narrowed and the record linked. Before: next step \"Endings forced in the witnesses of section 6.7; how taking all that is given forms; a comparison of courses that shows an ending through exclusion from taking; an independent review.\". The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：取尽所给的一种形成方式已在 where-a-rising-take-ends 中陈述：对有界所给的多于此刻的取用，所以下一步收窄并链接该记录；原文见英文。论断不变。"
+    },
+    {
+      "en": "18 October 2026, C2 (Becoming.Exhaustion): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: C2 added the section 6.7 bullet on where a take more than now ends, a sentence to the exhaustion bullet of the seeking passage, revised the \"Seeking, capture and runaway\" and \"Continuation (§6.7) and feeding\" rows of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月18日，C2（Becoming.Exhaustion）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }
