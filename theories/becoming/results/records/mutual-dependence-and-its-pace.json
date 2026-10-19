@@ -417,7 +417,7 @@
     {
       "path": "theories/becoming/OPENING.md",
       "role": "provenance",
-      "sha256": "81631c941fe67689c7bfddce470dcc0e708db1e1086083e3b8199dc4461124f9"
+      "sha256": "aa8699236d072100ea569188143cf62e423cfb146309882314a48df705d5de23"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-entangled-mutual-dependence.md",
@@ -492,6 +492,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: carried_returns (now carried_roundTrip); returns_of_coupledAlways (now roundTrip_of_coupledAlways). Proof bindings (MutualDependence.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: DELEGATED-CHOICES.md, names follow the R30 rename table; Frequency.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; MutualDependence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; OPENING.md, the footnotes name the renamed declarations; the body is unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：carried_returns（现为 carried_roundTrip）；returns_of_coupledAlways（现为 roundTrip_of_coupledAlways）。证明绑定（MutualDependence.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：DELEGATED-CHOICES.md，名称随 R30 改名表；Frequency.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；MutualDependence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；OPENING.md，脚注改用改名后的声明名；正文不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, opening version 8 (proposal drafts/2026-10-10-opening/history/OPENING-V8-PROPOSAL.md, forms A(b) and B(b)): OPENING.md re-pointed after reading the change: in the body, the sentence on political realism, neoliberalism and libertarianism says which feature each takes for a law of nature, without \"Within Western thinking\" or \"manifestations of a system captured by the meta-attractor\", and the four \"It is clear that\" read \"It is clear to me that\"; the last sentence of the AI-written note [^no-law] separates the reading of what those theories claim from the diagnosis; the header comment and closing line name version 8. The passages this record quotes (\"the whole Earth has become a highly entangled system\", \"heavily coupled into it\", \"an exponential pace, which leaves us very little time to react\") are unchanged; the first now follows \"It is clear to me that\". The claim is unchanged.",
+      "zh": "2026年10月20日，开篇第 8 版（提案 drafts/2026-10-10-opening/history/OPENING-V8-PROPOSAL.md，形式 A(b) 与 B(b)）：读过改动后 OPENING.md 重新指向：正文中关于政治现实主义、新自由主义与自由意志主义的句子改为写明各自把哪一特征当作自然律，去掉“Within Western thinking”与“manifestations of a system captured by the meta-attractor”；四处“It is clear that”改为“It is clear to me that”；AI 所写脚注 [^no-law] 的末句把对这些理论所主张者的读法与诊断分开；页首注释与结尾行写明第 8 版。本记录所引的段落（“the whole Earth has become a highly entangled system”“heavily coupled into it”“an exponential pace, which leaves us very little time to react”）不变；第一处现在接在“It is clear to me that”之后。论断不变。"
     }
   ]
 }
