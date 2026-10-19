@@ -1,7 +1,7 @@
 {
- "commit": "6ac309523e398f311eda72f80de9d2923489a543",
+ "commit": "fe7dca77d6794c18fe221d7c2be7ab4fcbcba725",
  "sources_match_commit": true,
- "core_receipt_at_commit": "20261019T054535.337999Z",
+ "core_receipt_at_commit": "20261019T055924.801141Z",
  "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
  "tracked_modules": 266,
  "constants": 31584,
@@ -30,18 +30,18 @@
   "statement on Process/Frame/Run/Trace": 2429,
   "statement on World/Flow/Web": 3064,
   "proof through a base family": 124,
-  "used by a theorem on the base": 3703,
-  "apart: own vocabulary": 425,
+  "used by a theorem on the base": 3704,
+  "apart: own vocabulary": 424,
   "apart: prelude-only statement": 42
  },
- "apart_used_by_nothing": 332,
- "apart_roots": 332,
+ "apart_used_by_nothing": 331,
+ "apart_roots": 331,
  "apart_roots_by_category": {
   "model-witness": 152,
   "general-structure": 70,
   "support": 84,
-  "restates": 13,
   "logical-strength": 12,
+  "restates": 12,
   "calibration": 1
  },
  "apart_roots_unclassified": [],
@@ -349,10 +349,6 @@
   "Becoming.Significance": [
    1,
    37
-  ],
-  "Becoming.Cuts": [
-   1,
-   51
   ],
   "Becoming.ScopedReach": [
    1,
@@ -4957,7 +4953,7 @@
   "Becoming.Cuts.links_split": "used by a theorem on the base",
   "Becoming.Cuts.links_of_mem": "used by a theorem on the base",
   "Becoming.Cuts.Attaches.suffix": "used by a theorem on the base",
-  "Becoming.Cuts.Attaches.listed_once": "apart: own vocabulary",
+  "Becoming.Cuts.Attaches.listed_once": "used by a theorem on the base",
   "Becoming.Cuts.attached_link_separates": "used by a theorem on the base",
   "Becoming.Cuts.joined_bypass_iff": "used by a theorem on the base",
   "Becoming.Cuts.joined_cut_unchanged_iff": "used by a theorem on the base",
