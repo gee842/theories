@@ -36,7 +36,7 @@ PAGES = ('sources/zhouyi-yizhuan/yizhuan/xugua.json', 'sources/zhouyi-yizhuan/yi
 core_id, section, decision = sys.argv[1], sys.argv[2], sys.argv[3]
 core_receipt = f'{PKG}/becoming-checks/{core_id}/verification.json'
 NOW = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
-BOUND = ('HexagramSequences', 'HexagramSites', 'HexagramLaws', 'HexagramPlaces', 'Hexagrams', 'Commuting', 'Learning',
+BOUND = ('HexagramSequences', 'HexagramLaws', 'HexagramPlaces', 'Hexagrams', 'Commuting', 'Learning',
          'Mechanism', 'Recurrence', 'Seeking', 'Frame', 'World', 'Generation', 'Labelled', 'Unfolding', 'Flow')
 
 
@@ -254,11 +254,11 @@ record = {
          'zh': '交优于不交、損劣于益，或卦序、相易、奇偶支持生生；模块没有伦理谓词，也没有判断。', 'kind': 'non-implication'},
     ],
     'counterexamples': [
-        {'path': SRC, 'detail': {'en': 'The claim that the received order is not the orbit of any law (the chapter on the 易传, §8, before this '
-               'record) is false as stated: the law taking each to the next runs it, with one orbit of sixty-four '
+        {'path': SRC, 'detail': {'en': 'The claim that the received order is not the orbit of any law (in the open items of the chapter on the '
+               '易传 before this record) is false as stated: the law taking each to the next runs it, with one orbit of sixty-four '
                '(orderNext_runsOrder, orderNext_one_orbit). What holds is that no law reading less than the whole '
                'configuration, or keeping a symmetry, runs it.',
-         'zh': '“卦序不是任何律的轨道”（本记录之前易传章 §8 之说）如此表述不确：取每卦至其下一卦之律运行卦序，六十四卦成一轨'
+         'zh': '“卦序不是任何律的轨道”（本记录之前易传章未做之事中的说法）如此表述不确：取每卦至其下一卦之律运行卦序，六十四卦成一轨'
                '（orderNext_runsOrder、orderNext_one_orbit）。成立的是：没有只读构形之一部分、或保持某一对称之律运行它。'}},
     ],
     'standard_boundaries': ['no-ethical-premise', 'no-evaluation', 'discrete-steps', 'formal-not-empirical',
@@ -417,10 +417,10 @@ record = {
     ],
     'history': [
         {'en': f'19 October 2026: added (Y5), closing the seventh gap of {GO_REC}; study section {section}, decision '
-               f'{decision}. The claim of the 易传 chapter\'s §8 that the order is the orbit of no law is corrected '
-               f'there and kept here as a counterexample.',
+               f'{decision}. The claim in the 易传 chapter\'s open items that the order is the orbit of no law is '
+               f'corrected there and kept here as a counterexample.',
          'zh': f'2026年10月19日：新增（Y5），补上 {GO_REC} 的第七项缺口；研究第 {section} 节，决定 {decision}。'
-               f'易传章 §8“卦序不是任何律的轨道”之说已在该章更正，在此作为反例保留。'},
+               f'易传章未做之事中“卦序不是任何律的轨道”之说已在该章更正，在此作为反例保留。'},
     ],
 }
 assert len(record['statement']['en']) <= 300 and len(record['statement']['zh']) <= 150, (
@@ -464,8 +464,8 @@ y1_changed = repoint(
     f'19 October 2026, Y5 (what of the arrangements of the 傳 is a law): the order\'s own reasons, listed as not shown '
     f'and as the next delta, are now the record hexagram-arrangements-and-laws so far as a law reaches them (study '
     f'section {section}, decision {decision}); the 序卦\'s reasons between pairs stay outside; {{}} re-pointed after '
-    f'reading the change (Y5 added two passages, the chapter\'s module item, §2 subsection, §5 points and §8 '
-    f'correction, the study section and the canonical paragraph). The claim is unchanged.',
+    f'reading the change (Y5 added two passages, the chapter\'s module item, section 2 subsection, section 5 points and '
+    f'section 8 correction, the study section and the canonical paragraph). The claim is unchanged.',
     f'2026年10月19日，Y5（传中诸排列何者是律）：原列为未示与下一步的卦序次第之理，至律所能及者，现为记录 '
     f'hexagram-arrangements-and-laws（研究第 {section} 节，决定 {decision}）；序卦在对与对之间的理由仍在其外；读过改动后，'
     f'{{}} 重新指向。论断不变。')
@@ -478,19 +478,51 @@ if not any(r['id'] == 'hexagram-arrangements-and-laws' for r in ro['related']):
     ro['related'].append({'id': 'hexagram-arrangements-and-laws',
                           'detail': {'en': 'Closes the seventh gap, the supplements of the hexagram world (Y5).',
                                      'zh': '补上第七项缺口，卦的世界的补充（Y5）。'}})
-GAP_EN, GAP_ZH = 'the hexagram world\'s order, exchange, parity and 雜卦', '卦的世界的卦序、互换、奇偶与杂卦'
+# The seventh gap leaves RO's next delta, and the count of gaps there goes down by one.
+GAP_EN, GAP_ZH = '; the hexagram world\'s order, exchange, parity and 雜卦', '；卦的世界的卦序、互换、奇偶与杂卦'
 assert ro['next_delta']['en'].count(GAP_EN) == 1 and ro['next_delta']['zh'].count(GAP_ZH) == 1, ro['next_delta']
-ro['next_delta']['en'] = ro['next_delta']['en'].replace(GAP_EN, GAP_EN + ' (closed by hexagram-arrangements-and-laws)')
-ro['next_delta']['zh'] = ro['next_delta']['zh'].replace(GAP_ZH, GAP_ZH + '（已由 hexagram-arrangements-and-laws 补上）')
+WORDS = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven']
+ZH = '一二三四五六七'
+count_en = re.search(r'\b(' + '|'.join(WORDS[1:]) + r') gaps\b', ro['next_delta']['en'])
+count_zh = re.search(r'([' + ZH[1:] + r'])项缺口', ro['next_delta']['zh'])
+assert count_en and count_zh, ro['next_delta']
+fewer = WORDS[WORDS.index(count_en.group(1)) - 1]
+ro['next_delta']['en'] = (ro['next_delta']['en'].replace(GAP_EN, '')
+                          .replace(count_en.group(0), fewer + (' gap' if fewer == 'One' else ' gaps'), 1))
+ro['next_delta']['zh'] = (ro['next_delta']['zh'].replace(GAP_ZH, '')
+                          .replace(count_zh.group(0), ZH[ZH.index(count_zh.group(1)) - 1] + '项缺口', 1))
 ro_changed = repoint(
     ro,
-    f'19 October 2026, Y5: the seventh gap of the chapter\'s §8 (the supplements of the hexagram world) is closed by '
+    f'19 October 2026, Y5: the seventh gap of the chapter\'s section 8 (the supplements of the hexagram world) is closed by '
     f'the record hexagram-arrangements-and-laws (study section {section}, decision {decision}); nine passages cite it, '
     f'and the chapter\'s claim, quoted from the 易传 chapter, that the order is the orbit of no law is corrected; {{}} '
     f're-pointed after reading the change. The claim is unchanged.',
-    f'2026年10月19日，Y5：章 §8 第七项缺口（卦的世界的补充）由记录 hexagram-arrangements-and-laws 补上（研究第 {section} 节，'
+    f'2026年10月19日，Y5：章第 8 节第七项缺口（卦的世界的补充）由记录 hexagram-arrangements-and-laws 补上（研究第 {section} 节，'
     f'决定 {decision}）；九段引之，章中引自易传章的“卦序不是任何律的轨道”之说已更正；读过改动后，{{}} 重新指向。论断不变。')
 ro_path.write_text(json.dumps(ro, ensure_ascii=False, indent=2) + '\n')
+
+# The other records the 易传 chapter's statement-source row names: their reference to the canonical chapter was already
+# stale at the landing base for sections they do not cite; Y5's section 11 row and section 1 paragraph are next to
+# theirs, so the drift check reads them as cited. Re-pointed after reading the change; the claims are unchanged.
+canon_sha = sha(CANON)
+for rid in ('hexagram-world-laws', 'place-relations-in-context', 'fixed-places-and-sole-lines'):
+    path = RECORDS / f'{rid}.json'
+    rec = json.loads(path.read_text())
+    refs = [r for r in rec['references'] if r['path'] == CANON and r['sha256'] != canon_sha]
+    if not refs:
+        continue
+    for r in refs:
+        r['sha256'] = canon_sha
+    rec['history'].append({
+        'en': '19 October 2026, Y5 (Becoming.HexagramSequences): THE-THEORY-OF-BECOMING.md re-pointed after reading the '
+              'change (section 11: the statement-source row of the chapter on the 易传 now also names '
+              'hexagram-arrangements-and-laws; section 1 gains the paragraph on the arrangements of the 傳 after 王弼\'s '
+              'readings; the earlier changes since this record bound the file are in sections it does not cite). The '
+              'claim is unchanged.',
+        'zh': '2026年10月19日，Y5（Becoming.HexagramSequences）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（第 11 节易传一章的'
+              '陈述来源行增列 hexagram-arrangements-and-laws；第 1 节在王弼之读之后增加传中诸排列一段）。论断不变。'})
+    path.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + '\n')
+    print(rid, 're-pointed', len(refs))
 
 ro_check = subprocess.run([sys.executable, '-B', str(ROOT / RO_KIT / 'verify_ro.py'), '--receipt', str(ROOT / core_receipt)],
                           capture_output=True, text=True)
