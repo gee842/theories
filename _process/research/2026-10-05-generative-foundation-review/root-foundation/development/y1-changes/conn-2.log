@@ -1,0 +1,502 @@
+{
+ "commit": "3ac4a66ead9133841e9d3fee05771082daf10fdb",
+ "sources_match_commit": false,
+ "core_receipt_at_commit": "20261019T052230.247441Z",
+ "lean": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+ "tracked_modules": 267,
+ "constants": 31728,
+ "spine_theorems": 9990,
+ "base": {
+  "Process family": [
+   "Generative.Process",
+   "Generative.Trace",
+   "Becoming.Frame",
+   "Becoming.Run"
+  ],
+  "World family": [
+   "Becoming.World",
+   "Becoming.Flow",
+   "Becoming.Web"
+  ]
+ },
+ "families_reach_each_other": {
+  "Flow reaches Process family": false,
+  "Web reaches Process family": false,
+  "World reaches Process family": false,
+  "Process reaches World family": false
+ },
+ "classes": {
+  "statement on both families": 161,
+  "statement on Process/Frame/Run/Trace": 2456,
+  "statement on World/Flow/Web": 3047,
+  "proof through a base family": 125,
+  "used by a theorem on the base": 3718,
+  "apart: own vocabulary": 440,
+  "apart: prelude-only statement": 43
+ },
+ "apart_used_by_nothing": 336,
+ "apart_roots": 336,
+ "apart_roots_by_category": {
+  "model-witness": 153,
+  "general-structure": 73,
+  "support": 85,
+  "logical-strength": 12,
+  "restates": 12,
+  "calibration": 1
+ },
+ "apart_roots_unclassified": [],
+ "register_entries_not_apart_roots": [],
+ "statements_on_both_by_module": {
+  "Becoming.Correspondence": 18,
+  "Becoming.Relevance": 16,
+  "Becoming.Runs": 16,
+  "Becoming.Labelled": 15,
+  "Becoming.Descent": 15,
+  "Becoming.Ranking": 13,
+  "Becoming.Joint": 8,
+  "Becoming.Regrouping": 8,
+  "Becoming.Testing": 6,
+  "Becoming.ContextualRuns": 6,
+  "Becoming.Horizon": 5,
+  "Becoming.ParityReadings": 5,
+  "Becoming.Unfolding": 4,
+  "Becoming.LawThroughChangingCoupling": 4,
+  "Becoming.Metaethics": 3,
+  "Becoming.Significance": 3,
+  "Becoming.Readings": 3,
+  "Becoming.Stock": 2,
+  "Becoming.LabelledRoles": 2,
+  "Becoming.LawThroughCoupling": 2,
+  "Becoming.Hexagrams": 2,
+  "Becoming.Persistence": 1,
+  "Becoming.ActiveReading": 1,
+  "Becoming.Counterfactual": 1,
+  "Becoming.RegroupingSelection": 1,
+  "Becoming.CourseRoles": 1
+ },
+ "apart_by_module": {
+  "Becoming.Frontier": [
+   34,
+   84
+  ],
+  "Becoming.Presentations": [
+   25,
+   36
+  ],
+  "Becoming.IntegerOrder": [
+   17,
+   39
+  ],
+  "Becoming.Lexical": [
+   17,
+   56
+  ],
+  "Becoming.Ideals": [
+   16,
+   99
+  ],
+  "Becoming.WitnessRefinement": [
+   16,
+   44
+  ],
+  "Becoming.Acceptance": [
+   16,
+   17
+  ],
+  "Becoming.FaultEnvelopes": [
+   13,
+   19
+  ],
+  "Becoming.CodeAcquisition": [
+   13,
+   39
+  ],
+  "Becoming.Cuts": [
+   12,
+   24
+  ],
+  "Becoming.PartialReadout": [
+   12,
+   32
+  ],
+  "Becoming.Listing": [
+   11,
+   85
+  ],
+  "Becoming.StrictTransport": [
+   11,
+   19
+  ],
+  "Becoming.Narrowing": [
+   11,
+   60
+  ],
+  "Becoming.Quantum": [
+   9,
+   37
+  ],
+  "Becoming.OrderNormal": [
+   9,
+   101
+  ],
+  "Becoming.HistoryIdeals": [
+   9,
+   80
+  ],
+  "Becoming.ListFootprints": [
+   9,
+   9
+  ],
+  "Becoming.ProfileReach": [
+   9,
+   16
+  ],
+  "Becoming.Openness": [
+   8,
+   85
+  ],
+  "Becoming.PooledEnvelopes": [
+   8,
+   44
+  ],
+  "Becoming.GuardHorizon": [
+   8,
+   32
+  ],
+  "Becoming.PositiveGround": [
+   8,
+   30
+  ],
+  "Becoming.Derivation": [
+   7,
+   32
+  ],
+  "Becoming.Weighted": [
+   7,
+   44
+  ],
+  "Becoming.Reconfiguration": [
+   7,
+   51
+  ],
+  "Becoming.Sensitivity": [
+   7,
+   47
+  ],
+  "Becoming.Naturals": [
+   6,
+   18
+  ],
+  "Becoming.ChanceFloors": [
+   6,
+   6
+  ],
+  "Becoming.Coverage": [
+   6,
+   23
+  ],
+  "Becoming.Recurrence": [
+   5,
+   63
+  ],
+  "Becoming.Decidedness": [
+   5,
+   65
+  ],
+  "Becoming.Hexagrams": [
+   5,
+   71
+  ],
+  "Becoming.LocalUnits": [
+   5,
+   45
+  ],
+  "Becoming.Tail": [
+   5,
+   39
+  ],
+  "Becoming.Attraction": [
+   4,
+   47
+  ],
+  "Becoming.Entropy": [
+   4,
+   185
+  ],
+  "Becoming.MatchedCourses": [
+   4,
+   33
+  ],
+  "Becoming.Learning": [
+   4,
+   83
+  ],
+  "Becoming.Description": [
+   4,
+   53
+  ],
+  "Becoming.ProjectedLaws": [
+   4,
+   28
+  ],
+  "Becoming.ContingentPlans": [
+   4,
+   18
+  ],
+  "Becoming.Likeness": [
+   4,
+   156
+  ],
+  "Becoming.Relevance": [
+   4,
+   31
+  ],
+  "Becoming.Metaethics": [
+   3,
+   40
+  ],
+  "Becoming.Standpoints": [
+   3,
+   22
+  ],
+  "Becoming.ReferencePlan": [
+   3,
+   59
+  ],
+  "Becoming.ListTests": [
+   3,
+   36
+  ],
+  "Becoming.CrossSituational": [
+   3,
+   37
+  ],
+  "Becoming.Propagation": [
+   3,
+   78
+  ],
+  "Becoming.Routes": [
+   3,
+   30
+  ],
+  "Becoming.Gluing": [
+   3,
+   81
+  ],
+  "Becoming.LearnedGrouping": [
+   3,
+   41
+  ],
+  "Becoming.Context": [
+   2,
+   46
+  ],
+  "Becoming.ActiveReading": [
+   2,
+   14
+  ],
+  "Becoming.Selection": [
+   2,
+   67
+  ],
+  "Becoming.Revision": [
+   2,
+   31
+  ],
+  "Becoming.Dephasing": [
+   2,
+   63
+  ],
+  "Becoming.Composition": [
+   2,
+   65
+  ],
+  "Becoming.Joining": [
+   2,
+   71
+  ],
+  "Becoming.HistoryLanguages": [
+   2,
+   37
+  ],
+  "Becoming.Carriers": [
+   2,
+   46
+  ],
+  "Becoming.Grains": [
+   2,
+   6
+  ],
+  "Becoming.ScoreRepresentation": [
+   2,
+   17
+  ],
+  "Becoming.Alternatives": [
+   2,
+   17
+  ],
+  "Becoming.RouteFormation": [
+   2,
+   70
+  ],
+  "Becoming.OneStep": [
+   1,
+   311
+  ],
+  "Becoming.Evolution": [
+   1,
+   31
+  ],
+  "Becoming.SupportRecovery": [
+   1,
+   9
+  ],
+  "Becoming.Ranking": [
+   1,
+   39
+  ],
+  "Becoming.Significance": [
+   1,
+   37
+  ],
+  "Becoming.ScopedReach": [
+   1,
+   15
+  ],
+  "Becoming.Testing": [
+   1,
+   92
+  ],
+  "Becoming.Contacts": [
+   1,
+   24
+  ],
+  "Becoming.Viability": [
+   1,
+   25
+  ],
+  "Becoming.Actuation": [
+   1,
+   46
+  ],
+  "Becoming.TreeSearch": [
+   1,
+   35
+  ],
+  "Becoming.Dispatch": [
+   1,
+   34
+  ],
+  "Becoming.Transactions": [
+   1,
+   59
+  ],
+  "Becoming.Lasting": [
+   1,
+   89
+  ],
+  "Becoming.JoiningRoles": [
+   1,
+   23
+  ],
+  "Becoming.Boundaries": [
+   1,
+   47
+  ],
+  "Becoming.Courses": [
+   1,
+   90
+  ],
+  "Becoming.Typicality": [
+   1,
+   43
+  ],
+  "Becoming.Remainder": [
+   1,
+   58
+  ],
+  "Becoming.Observation": [
+   1,
+   27
+  ],
+  "Becoming.Frequency": [
+   1,
+   83
+  ],
+  "Becoming.Handoff": [
+   1,
+   22
+  ]
+ },
+ "components": {
+  "count": 59,
+  "theorems_outside_the_main_component": [
+   "Becoming.Dispatch.add_three_assoc",
+   "Becoming.GuardHorizon.coverage_transports",
+   "Becoming.GuardHorizon.empty_requirement_hides_loss",
+   "Becoming.GuardHorizon.endpoint_access_hides_gap",
+   "Becoming.GuardHorizon.overlapping_handoff_keeps_access",
+   "Becoming.GuardHorizon.route_retirement_allowed",
+   "Becoming.IntegerOrder.le_iff",
+   "Becoming.IntegerOrder.lt_iff",
+   "Becoming.IntegerOrder.nonneg_or_neg",
+   "Becoming.ListTests.filter_of_all",
+   "Becoming.ListTests.length_append",
+   "Becoming.Naturals.add_left_cancel",
+   "Becoming.Naturals.add_right_cancel",
+   "Becoming.PartialReadout.safe_of_holds",
+   "Becoming.Registration.retained_keeps",
+   "Becoming.Requirement.Collective.no_common_plan",
+   "Becoming.Requirement.Handover.served",
+   "Becoming.Requirement.Handover.undelivered_fails",
+   "Becoming.Requirement.Served.not_of_gap",
+   "Becoming.Requirement.Served.successor",
+   "Becoming.Requirement.Settled.no_residual",
+   "Becoming.Requirement.residual_of_unfulfilled",
+   "Becoming.Requirement.separate_not_joint",
+   "Becoming.Requirement.served_of_handover",
+   "Becoming.Routes.cond_zero_mul"
+  ]
+ },
+ "periphery": {
+  "modules": 3,
+  "theorems": 74,
+  "classes": {
+   "statement on both families": 0,
+   "statement on Process/Frame/Run/Trace": 37,
+   "statement on World/Flow/Web": 0,
+   "proof through a base family": 0,
+   "used by a theorem on the base": 36,
+   "apart: own vocabulary": 1,
+   "apart: prelude-only statement": 0
+  },
+  "apart": 1,
+  "apart_roots": 1,
+  "apart_roots_by_category": {
+   "restates": 1
+  },
+  "apart_by_module": {
+   "RelationalRenewal": [
+    1,
+    35
+   ]
+  },
+  "theorems_outside_the_main_component": []
+ },
+ "records_by_best_alias_class": {
+  "statement on both families": 25,
+  "statement on Process/Frame/Run/Trace": 98,
+  "statement on World/Flow/Web": 89,
+  "proof through a base family": 1,
+  "used by a theorem on the base": 7,
+  "apart: own vocabulary": 1
+ },
+ "records_resting_only_on_apart_theorems": [
+  {
+   "id": "finite-joining-tree-lifting",
+   "modules": [
+    "Becoming.Joining"
+   ]
+  }
+ ]
+}

@@ -1671,6 +1671,16 @@
    "module": "Becoming.HistoryIdeals",
    "category": "restates",
    "reason": "The case of words of `Stretches.run_goesOn` (a run's history goes on), stated on the base for every process."
+  },
+  "Becoming.Hexagram.order_length": {
+   "module": "Becoming.Hexagrams",
+   "category": "support",
+   "reason": "The received order lists sixty-four hexagrams: a one-line unpacking of the module's own list."
+  },
+  "Becoming.Hexagram.order_paired": {
+   "module": "Becoming.Hexagrams",
+   "category": "model-witness",
+   "reason": "Each pair of the received order (序卦) is turned over or changed in every line: a fact about the text's one constructed list, checked line by line, not a law of the unfolding; the order serves the base as the list holding every configuration (mem_order)."
   }
  }
 }

@@ -1,0 +1,16 @@
+Becoming/Hexagrams.lean:700:3: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  (c : Place) → (t : Nat) → Decidable (lines.realized ((Law.run waxWane s).state t) c)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/y1-changes/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes",
+  "modules": 43,
+  "ran": [
+    "Becoming.Hexagrams"
+  ],
+  "reused": 42,
+  "unclean": [],
+  "audits": {},
+  "failed": "Becoming.Hexagrams"
+}

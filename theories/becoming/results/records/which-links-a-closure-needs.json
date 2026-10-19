@@ -321,13 +321,13 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "45c35ba2e9c443353c4154995a56f5555a3f76126a239c9ee89481d6488aa0be"
+      "sha256": "e5e0e03c74cdd58888a78594660b804ab6a354f2d9e846f4423803e184172a1d"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "794863973118ec6ce6caaa00b8b07aa6756db38add29383b331f16def5faeb1f"
+      "sha256": "e79338372f91b3b160a6cfc4545d0e3090511cb1a282d5bcfd883ef6d946b212"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-general-laws-from-examples.md",
@@ -364,6 +364,10 @@
     {
       "en": "19 October 2026, K3 (Ren: \"please finish it\"): Cuts.lean re-pointed after reading the change: Flow.GrownBy.cond_ne now reaches its same-orientation case through Cuts.Attaches.listed_once, so no theorem of Becoming.Cuts stands apart; no statement changed. Core receipt 20261019T055924.801141Z; study section 191 (addendum) and the chapter's sections 8.2 and 9 re-pointed with it. The claim is unchanged.",
       "zh": "2026年10月19日，K3：读过改动后，Cuts.lean 重新指向：Flow.GrownBy.cond_ne 的同向情形改经 Cuts.Attaches.listed_once，Becoming.Cuts 不再有孤立定理；陈述未变。核心回执 20261019T055924.801141Z；研究第 191 节（补记）与本章第 8.2、9 节随之重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y1 (Becoming.Hexagrams): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y1 added a study section; THE-THEORY-OF-BECOMING.md: Y1 added the section 1 paragraph on the configurations of the Changes with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts and receipt, and the section 11 row). The claim is unchanged.",
+      "zh": "2026年10月19日，Y1（Becoming.Hexagrams）：读过改动后，BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ]
 }

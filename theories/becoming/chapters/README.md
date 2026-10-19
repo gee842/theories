@@ -8,7 +8,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 
 ## Files in this directory
 
-1 canonical, 1 reference, 33 kept, 1 generated, 19 Chinese edition.
+1 canonical, 1 reference, 34 kept, 1 generated, 19 Chinese edition.
 
 | File | Title | Status | Role in section 11 | Note |
 |---|---|---|---|---|
@@ -46,6 +46,7 @@ Status: **canonical** is the entry that states the theory; **reference** keeps m
 | [THEORY-OF-BECOMING.md](THEORY-OF-BECOMING.md) | How relations of becoming change | kept | Foundation study | The argument of 9 October 2026 on how relations of becoming change. Read at its date: it is the statement source of five records, not a current statement. |
 | [WANG-YANGMING.md](WANG-YANGMING.md) | 王阳明与生成理论：一体之仁、知行与工夫的整体整合 | kept | Open direction | The classical comparison with Wang Yangming, kept with the three chapters above. |
 | [WISDOM-AND-CONTEXT.md](WISDOM-AND-CONTEXT.md) | Wisdom, context and the common core | kept | Statement source | Statement source of the open target [wisdom-root](../results/records/wisdom-root.md) (§8.1). |
+| [YI-ZHUAN-AND-BECOMING.md](YI-ZHUAN-AND-BECOMING.md) | 易传与生成／变化之论：周易的构形在脊柱上 | kept | Statement source | The 易传 passage by passage on the spine (19 October 2026); statement source of [hexagrams-on-the-spine](../results/records/hexagrams-on-the-spine.md). |
 | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.md) | Zero-axiom Practical judgment | kept | Statement source | Statement source of the open target [universal-practical-warrant](../results/records/universal-practical-warrant.md) (§8.1). |
 | [CLAIMS.md](CLAIMS.md) | Registered claims and historical ledger | generated | Register | Generated register stub; the [result register](../results/RESULT-REGISTER.md) and its records govern. |
 | [ALIGNMENT-DIRECTION.zh.md](ALIGNMENT-DIRECTION.zh.md) | 我们主张怎样的 AI 对齐方向 | Chinese edition | — | Of [ALIGNMENT-DIRECTION](ALIGNMENT-DIRECTION.md); the English file governs. |

@@ -1,0 +1,23 @@
+Becoming/Hexagrams.lean:702:7: warning: unused variable `decided`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/y1-changes/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes",
+  "modules": 43,
+  "ran": [
+    "Becoming.Hexagrams",
+    "BecomingHexagramsAxiomAudit"
+  ],
+  "reused": 42,
+  "unclean": [
+    "Becoming.Hexagrams"
+  ],
+  "audits": {
+    "Becoming.Hexagrams": {
+      "theorems": 69,
+      "declarations": 95,
+      "with_axioms": {}
+    }
+  }
+}

@@ -1,0 +1,108 @@
+Becoming/Hexagrams.lean:700:7: warning: unused variable `decided`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+{
+  "tree": "/Users/ren/theories/.claude/worktrees/y1-changes/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes",
+  "modules": 43,
+  "ran": [
+    "Becoming.Hexagrams",
+    "BecomingHexagramsAxiomAudit"
+  ],
+  "reused": 42,
+  "unclean": [
+    "Becoming.Hexagrams"
+  ],
+  "audits": {
+    "Becoming.Hexagrams": {
+      "theorems": 69,
+      "declarations": 95,
+      "with_axioms": {
+        "Becoming.Hexagram.same": [
+          "propext"
+        ],
+        "Becoming.Hexagram.same_eq": [
+          "propext"
+        ],
+        "Becoming.Hexagram.same_self": [
+          "propext"
+        ],
+        "Becoming.Hexagram.eqb": [
+          "propext"
+        ],
+        "Becoming.Hexagram.eq_of_eqb": [
+          "propext"
+        ],
+        "Becoming.Hexagram.eqb_self": [
+          "propext"
+        ],
+        "Becoming.Hexagram.ne_of_eqb": [
+          "propext"
+        ],
+        "Becoming.Hexagram.memb": [
+          "propext"
+        ],
+        "Becoming.Hexagram.mem_of_memb": [
+          "propext"
+        ],
+        "Becoming.Hexagram.mem_order": [
+          "propext"
+        ],
+        "Becoming.Hexagram.pairs": [
+          "propext"
+        ],
+        "Becoming.Hexagram.pairedb": [
+          "propext"
+        ],
+        "Becoming.Hexagram.paired_of_pairedb": [
+          "propext"
+        ],
+        "Becoming.Hexagram.allPaired": [
+          "propext"
+        ],
+        "Becoming.Hexagram.paired_of_allPaired": [
+          "propext"
+        ],
+        "Becoming.Hexagram.order_paired": [
+          "propext"
+        ],
+        "Becoming.Hexagram.changes_merges": [
+          "propext"
+        ],
+        "Becoming.Hexagram.changes_keeps": [
+          "propext"
+        ],
+        "Becoming.Hexagram.changes_run_revisits": [
+          "propext"
+        ],
+        "Becoming.Hexagram.waxWane_returns": [
+          "propext"
+        ],
+        "Becoming.Hexagram.waxWane_process_returns": [
+          "propext"
+        ],
+        "Becoming.Hexagram.first_return": [
+          "propext"
+        ],
+        "Becoming.Hexagram.fourth_step": [
+          "propext"
+        ],
+        "Becoming.Hexagram.wane_merges": [
+          "propext"
+        ],
+        "Becoming.Hexagram.wane_loses": [
+          "propext"
+        ],
+        "Becoming.Hexagram.wane_process_merges": [
+          "propext"
+        ],
+        "Becoming.Hexagram.every_returns_iff": [
+          "propext"
+        ],
+        "Becoming.Hexagram.revisits_within_order": [
+          "propext"
+        ]
+      }
+    }
+  }
+}

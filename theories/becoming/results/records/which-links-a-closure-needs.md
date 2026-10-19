@@ -85,6 +85,7 @@ Aliases: `which links a closure needs`, `闭包需要哪些联系`, `cut changes
 - 19 October 2026: added (K1), on Ren's "let's make these limited, non general laws, into general ones", after his questions on GrownFragmentation's bypass theorems; study section 190.
 - 19 October 2026, K2: growth by attachment read on the base (Flow.GrownBy): every grown condition is needed, and one added condition frees exactly the grown ones it crosses; laws 8 and 9 added, law 4 gains its list lemmas; study section 191. The earlier laws are unchanged.
 - 19 October 2026, K3 (Ren: "please finish it"): Cuts.lean re-pointed after reading the change: Flow.GrownBy.cond_ne now reaches its same-orientation case through Cuts.Attaches.listed_once, so no theorem of Becoming.Cuts stands apart; no statement changed. Core receipt 20261019T055924.801141Z; study section 191 (addendum) and the chapter's sections 8.2 and 9 re-pointed with it. The claim is unchanged.
+- 19 October 2026, Y1 (Becoming.Hexagrams): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: Y1 added a study section; THE-THEORY-OF-BECOMING.md: Y1 added the section 1 paragraph on the configurations of the Changes with its readings, its rerun in the 8.2 integration row with the current component counts, the section 9 counts and receipt, and the section 11 row). The claim is unchanged.
 
 </details>
 

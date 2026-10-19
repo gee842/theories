@@ -102,6 +102,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
@@ -391,6 +392,8 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/U2-ADDENDUM-AXIOM-RING.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/U2-PERIPHERY-BRIEF.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/u-unification/u2/relabel_docstrings.py",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
@@ -455,7 +458,11 @@
         "sources/15-codex-theory-conversations/2026-10-18-spine-root-reroot.md",
         "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
         "sources/15-codex-theory-conversations/2026-10-19-correct-is-dualist.md",
-        "sources/15-codex-theory-conversations/2026-10-19-integrate-all.md"
+        "sources/15-codex-theory-conversations/2026-10-19-integrate-all.md",
+        "sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md",
+        "sources/zhouyi-yizhuan/PROVENANCE.json",
+        "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md"
       ]
     },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.zh.md": {
@@ -2633,6 +2640,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Grains.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GuardHorizon.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryLanguages.lean",
@@ -5944,6 +5952,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
@@ -6015,7 +6024,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T130738.412710Z/verification.json",
-        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T055924.801141Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T060745.666273Z/verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
@@ -6091,6 +6100,7 @@
         "theories/becoming/chapters/THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/WANG-YANGMING.md",
         "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
+        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
         "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
         "theories/becoming/history",
         "theories/becoming/history/EVALUATIVE-GROUNDING.md",
@@ -6179,6 +6189,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
@@ -6351,6 +6362,7 @@
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
         "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
         "theories/becoming/chapters/THEORY-OF-BECOMING.md",
+        "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
         "theories/becoming/history/COMPLETION-PLAN.md",
         "theories/becoming/history/EVALUATIVE-GROUNDING.md",
         "theories/becoming/history/EVALUATIVE-UPTAKE.md",
@@ -6387,6 +6399,17 @@
         "theories/becoming/chapters/NONDUAL-METHOD.md",
         "theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md",
         "theories/becoming/history/UNIFIED-ETHICAL-GROUNDING.md"
+      ]
+    },
+    "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md": {
+      "title": "易传与生成／变化之论：周易的构形在脊柱上",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean",
+        "sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md",
+        "sources/zhouyi-yizhuan/PROVENANCE.json"
       ]
     },
     "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md": {
@@ -6571,7 +6594,6 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
         "sources/07-shengsheng-buxi/ssbx-repo/docs-next/10_formal_形式/wen-substrate/03-operation-monism.md",
         "sources/07-shengsheng-buxi/ssbx-repo/docs-next/10_formal_形式/wen-substrate/07-claim.md",
-        "sources/12-claude-ai-chats/2026-05-05_古文一元论与语言的逻辑收敛_2954cf42.md",
         "sources/15-codex-theory-conversations/2026-10-06-core-tree-nonduality-and-method.md",
         "sources/15-codex-theory-conversations/2026-10-06-deeper-generative-root-request.md",
         "sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md",

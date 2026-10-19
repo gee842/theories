@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-249 registered results: 233 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 621 curated edges join 203 results to the results they draw on.
+250 registered results: 234 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 626 curated edges join 204 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -83,6 +83,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [growth-constrained-fragmentation][] ← <a id="growth-constrained-fragmentation--risk-certificate-outcome-distinction"></a>[risk-certificate-outcome-distinction][] · <a id="growth-constrained-fragmentation--which-links-a-closure-needs"></a>[which-links-a-closure-needs][]
 - [guarded-program-question-recovery][] ← <a id="guarded-program-question-recovery--branching-tests-bisimulation"></a>[branching-tests-bisimulation][]
 - [held-lives-g0-is-centering][] ← <a id="held-lives-g0-is-centering--metaethical-core-characterization"></a>[metaethical-core-characterization][] · <a id="held-lives-g0-is-centering--becoming-stepwise-reading"></a>[becoming-stepwise-reading][] · <a id="held-lives-g0-is-centering--self-good-reachable-g0"></a>[self-good-reachable-g0][] *(interpretive)*
+- [hexagrams-on-the-spine][] ← <a id="hexagrams-on-the-spine--recurrence-without-premise"></a>[recurrence-without-premise][] · <a id="hexagrams-on-the-spine--attraction-is-not-returning"></a>[attraction-is-not-returning][] · <a id="hexagrams-on-the-spine--returning-where-the-course-branches"></a>[returning-where-the-course-branches][] · <a id="hexagrams-on-the-spine--generalization-through-lumping"></a>[generalization-through-lumping][] · <a id="hexagrams-on-the-spine--process-and-frame-as-readings"></a>[process-and-frame-as-readings][]
 - [historical-source-binding][] ← <a id="historical-source-binding--retrospective-source-binding"></a>[retrospective-source-binding][] · <a id="historical-source-binding--acquired-binding-compositional-use"></a>[acquired-binding-compositional-use][]
 - [histories-fix-law-up-to-dead-ends][] ← <a id="histories-fix-law-up-to-dead-ends--process-and-frame-as-readings"></a>[process-and-frame-as-readings][] · <a id="histories-fix-law-up-to-dead-ends--joint-difference-making"></a>[joint-difference-making][]
 - [how-a-carried-difference-grows][] ← <a id="how-a-carried-difference-grows--how-much-difference-arrives"></a>[how-much-difference-arrives][] · <a id="how-a-carried-difference-grows--recurrence-without-premise"></a>[recurrence-without-premise][]
@@ -299,6 +300,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [growth-constrained-fragmentation]: theories/becoming/results/records/growth-constrained-fragmentation.md
 [guarded-program-question-recovery]: theories/becoming/results/records/guarded-program-question-recovery.md
 [held-lives-g0-is-centering]: theories/becoming/results/records/held-lives-g0-is-centering.md
+[hexagrams-on-the-spine]: theories/becoming/results/records/hexagrams-on-the-spine.md
 [historical-source-binding]: theories/becoming/results/records/historical-source-binding.md
 [histories-fix-law-up-to-dead-ends]: theories/becoming/results/records/histories-fix-law-up-to-dead-ends.md
 [how-a-carried-difference-grows]: theories/becoming/results/records/how-a-carried-difference-grows.md

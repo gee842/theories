@@ -653,7 +653,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
       "role": "provenance",
-      "sha256": "083f61644ea94f07555c94b775c50d006c95dfcf1c32d9071afa3783abc0afe2"
+      "sha256": "e5f1540b86903988c03f33167d2b81b7bb233fbad521aae991753ad1a70c8ba8"
     }
   ],
   "proof_bindings": [
@@ -725,6 +725,10 @@
     {
       "en": "19 October 2026: added (A4-L), on decision D45 (4) and Ren's “integrate all, the theory is a whole, not stitched pieces, go ahead” (19 October); study section 189.",
       "zh": "2026年10月19日：新增（A4-L），依决定 D45 (4) 与 Ren 的“integrate all, the theory is a whole, not stitched pieces, go ahead”（10月19日）；研究第 189 节。"
+    },
+    {
+      "en": "19 October 2026, Y1 (Becoming.Hexagrams): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: Y1 added D47, its index row and its lineage line). The claim is unchanged.",
+      "zh": "2026年10月19日，Y1（Becoming.Hexagrams）：读过改动后，DELEGATED-CHOICES.md 重新指向。论断不变。"
     }
   ]
 }

@@ -95,6 +95,7 @@ import Becoming.Counterfactual
 import Becoming.Regrouping
 import Becoming.Selection
 import Becoming.Learning
+import Becoming.Hexagrams
 import Becoming.Revision
 import Becoming.Contacts
 import Becoming.RegroupingSelection
@@ -1110,6 +1111,22 @@ readings of the unfolding (`Becoming.Labelled`).
   reads it, the modeling of the laws of structure and of change; the other readings are the AI's,
   adopted on Ren's delegation of 15 October 2026 or, for selection through a model, approved by
   Ren on 16 October 2026.
+* `Becoming.Hexagrams` (L4): the configurations of the 周易 as a world of the spine, with no
+  premise. Six lines, each unbroken or broken, give sixty-four configurations, told apart and
+  listed with no axiom; the received order holds every one, and each of its pairs is turned over
+  or, where turning over gives the same hexagram, changed in every line. The change of one line
+  is a process under which every configuration returns and every configuration can be had from
+  every other, and it merges. The law of waxing and waning, every line rising one place and the
+  top line entering at the bottom as its opposite, merges nothing, so every configuration
+  returns (`Law.lossless_iff_returns`); six steps change every line, the first unbroken line
+  comes back at the seventh step from all unbroken, and all broken returns first at the
+  twelfth. Where only a broken line enters, the law merges and every other configuration is
+  drawn into all broken and never comes back. For every law of hexagrams every configuration
+  returns exactly where the law merges nothing. The pairs of complements are a lumping the law
+  goes alike across, the count of unbroken lines is not; turning over runs the law backward.
+  Read as claims, a frame and a world, the lines arise and cease at arbitrarily late steps
+  (`Frame.claims_recur_iff`); any sixty-five steps revisit, and the kept history is held by no
+  list. What the passages of the text say beyond these laws is read in the chapter on the 易传.
 * `Becoming.Contacts` (L4): registration through addressed contacts. Registration by agreement
   on data selects a value exactly where its address is in the data, and a change of data keeps
   every old selection exactly where it keeps the old data. A revision rule registers every

@@ -2009,6 +2009,32 @@
     "status_code": "defended-open"
   },
   {
+    "id": "yi-zhuan-and-becoming",
+    "source": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
+    "title_zh": "易传与生成／变化之论：周易的构形在脊柱上",
+    "title_en": "The 易传 and the theory of becoming: the configurations of the 周易 on the spine",
+    "category": "classical-comparison",
+    "status": "逐句对应已检查；Lean 已实查 / Passage map checked; Lean checked",
+    "argument_zh": "周易所描述的构形（六爻二值、一爻之变、消息之律、所传卦序）作为脊柱上的一个世界写入纯核心，脊柱之律在其上被检查。易传、经文与两种注疏的 44 段文字取自保存的版本，逐段标明相合、定域或相分，以及所对应的声明。",
+    "argument_en": "The configurations the 周易 describes (six two-valued lines, the change of a line, the law of waxing and waning, the received order) are a world of the pure core, on which the spine's laws are checked. 44 passages of the 易传, the classic and two commentaries, quoted from preserved revisions, are each mapped to declarations as agreement, exact scope or divergence.",
+    "significance_zh": "古典文本与理论的关系成为库中可检查的部分；相分之处保留，使原典能反过来检验理论。",
+    "significance_en": "The relation of a classical text to the theory becomes a checked part of the library, with the divergences kept so that the text can challenge the theory.",
+    "scope_zh": "71 条 Lean 定理，公理报告为空；读法为 AI 读法（D47）；不解释周易整体，不说作者意谓这些律；吉凶、取象、序卦之理与占筮不在其中。",
+    "scope_en": "71 Lean theorems with empty axiom reports; the readings are the AI's (D47). Not an interpretation of the whole 周易, nor a claim that its authors meant these laws; fortune, the images, the order's reasons and divination are outside it.",
+    "next_zh": "建议：爻位的应、比、中、正作为带语境索引的读法；与王弼、程颐、朱熹之读法比较；与刻本对校。",
+    "next_en": "Proposed: the relations of the places as indexed readings in context; comparison with the readings of 王弼, 程頤 and 朱熹; collation with a printed edition.",
+    "lean": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Hexagrams.lean"
+    ],
+    "evidence": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
+      "sources/zhouyi-yizhuan/PROVENANCE.json",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md"
+    ],
+    "source_sha256": "46d6c2aa170d23a1be753a64c3a10f8e1ab0eae5f288bb8f552d2034a92c99ba"
+  },
+  {
     "id": "zero-axiom-practical-judgment",
     "title_zh": "零公理实践判断：正在建立的根据",
     "title_en": "Zero-axiom practical judgment",

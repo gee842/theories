@@ -36,7 +36,7 @@ Readings of 8 October 2026 and later · [Repository home](../../../README.md) ·
 <a id="覆盖与证据含义--coverage-and-evidence"></a>
 ## Coverage and evidence
 
-This reading edition covers **140 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 82 entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
+This reading edition covers **141 chapters** (current and moved to history) and **17 branch READMEs** at their recorded source versions. 82 entries name a source that changed after the reading; they are marked on their pages and await a reread. Additional chapters, changed source versions and session outcomes also appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
 
 | Category | Meaning |
 |---|---|
@@ -194,6 +194,7 @@ Identifiers follow source filenames. A Lean link identifies a particular corresp
 | [`valuation-identification-bounds`](ARGUMENTS-M-Z.md#valuation-identification-bounds) | Bounds for identifying changed evaluation | identification mathematics |
 | [`wang-yangming`](ARGUMENTS-M-Z.md#wang-yangming) | Wang Yangming, benevolence and situated practice | classical ethical |
 | [`wisdom-and-context`](ARGUMENTS-M-Z.md#wisdom-and-context) | Wisdom, context and the common core | philosophical epistemic |
+| [`yi-zhuan-and-becoming`](ARGUMENTS-M-Z.md#yi-zhuan-and-becoming) | The 易传 and the theory of becoming: the configurations of the 周易 on the spine | classical comparison |
 | [`zero-axiom-practical-judgment`](ARGUMENTS-M-Z.md#zero-axiom-practical-judgment) | Zero-axiom practical judgment | normative foundation |
 
 <a id="维护--maintenance"></a>

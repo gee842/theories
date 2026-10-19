@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 266 | 10,020 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 267 | 10,091 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -406,6 +406,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [GrownFragmentation.lean](lean-declarations/ethics.md#module-93d3383fc37b) | Normative grounding and generative direction |
 | [GuardHorizon.lean](lean-declarations/becoming-core.md#module-de2c4a4581b2) | Becoming pure core |
 | [Handoff.lean](lean-declarations/becoming-core.md#module-96dbcca36f4a) | Becoming pure core |
+| [Hexagrams.lean](lean-declarations/becoming-core.md#module-51d79d79834a) | Becoming pure core |
 | [HistoricalBinding.lean](lean-declarations/inquiry.md#module-b3efe142595e) | Attainable inquiry, contact and process laws |
 | [Histories.lean](lean-declarations/becoming-core.md#module-41f2b00bb90e) | Becoming pure core |
 | [HistoryIdeals.lean](lean-declarations/becoming-core.md#module-53b317abd0cf) | Becoming pure core |

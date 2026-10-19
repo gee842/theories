@@ -1,0 +1,690 @@
+{
+ "about": "Y1's passage map: each passage of the 周易 and the 易传 (and two commentaries) quoted verbatim from the preserved Wikisource revision named in sources/zhouyi-yizhuan/PROVENANCE.json, its kind of relation to the spine, and the declarations it corresponds to. The readings are AI readings (D47). verify_mapping.py checks every fragment against the stored revision, every declaration against an audited receipt, and the chapter's table against this file.",
+ "kinds": {
+  "agreement": "相合：经文所说之结构，脊柱上有已检查之律与之对应。",
+  "scope": "定域：脊柱给出此句成立的确切范围，并修正其全称形式。",
+  "divergence": "相分：经文所断言者，理论不断言，或与理论的结构名称相冲突。"
+ },
+ "passages": [
+  {
+   "id": "chonggua",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第一章",
+   "fragments": [
+    "八卦成列，象在其中矣；因而重之，爻在其中矣"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram",
+    "Becoming.Hexagram.line",
+    "Becoming.Hexagram.order",
+    "Becoming.Hexagram.order_length",
+    "Becoming.Hexagram.mem_order"
+   ],
+   "reading": "卦由下卦、上卦相重而成，六爻各取刚柔二值；所传卦序长六十四，含全部构形。"
+  },
+  {
+   "id": "sancai",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第八章",
+   "fragments": [
+    "兼三材而兩之，故六"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.Place",
+    "Becoming.Hexagram.places",
+    "Becoming.Hexagram.line"
+   ],
+   "reading": "六位，每位二值；把六位两两分作天、地、人三材，不在模块之内。"
+  },
+  {
+   "id": "taiji",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第十一章",
+   "fragments": [
+    "是故易有太極，是生兩儀，兩儀生四象，四象生八卦"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Hexagram.order_length",
+    "Becoming.World.unity"
+   ],
+   "reading": "每加一个二值之分，构形加倍，至六分而六十四；脊柱把它读作一个展开之上逐层的区分，不是时间中的先后产生。"
+  },
+  {
+   "id": "feifu",
+   "source": "commentary/zhengyi-10.json",
+   "locator": "孔穎達《周易正義》（序卦疏）",
+   "fragments": [
+    "今驗六十四卦，二二相耦，非覆即變"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.reverse",
+    "Becoming.Hexagram.complement",
+    "Becoming.Hexagram.Paired",
+    "Becoming.Hexagram.pairs",
+    "Becoming.Hexagram.order_paired"
+   ],
+   "reading": "对所传卦序逐对检验：每对之后一卦是前一卦倒转（覆），倒转不变者则六爻皆变（變）。"
+  },
+  {
+   "id": "qiankun-chenglie",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第十二章",
+   "fragments": [
+    "乾坤成列，而易立乎其中矣"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.waxing",
+    "Becoming.Hexagram.waning",
+    "Becoming.Hexagram.six_steps"
+   ],
+   "reading": "消息之律下，坤六步至乾，乾六步至坤；任一构形六步即至其错卦。"
+  },
+  {
+   "id": "gangrou",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第二章",
+   "fragments": [
+    "剛柔相推而生變化"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.flip",
+    "Becoming.Hexagram.changes",
+    "Becoming.Hexagram.reach_every",
+    "Becoming.Hexagram.changes_returns",
+    "Becoming.Hexagram.changes_keeps",
+    "Becoming.Hexagram.changes_merges",
+    "Becoming.Branching.keeps_of_returns"
+   ],
+   "reading": "一爻之变：任一构形可由任一构形得到，每一构形皆复返，不失任何可能；而此过程有合并，可见复返不等于无合并。"
+  },
+  {
+   "id": "wuwang-bufu",
+   "source": "hexagrams/11.json",
+   "locator": "泰·九三、象",
+   "fragments": [
+    "无平不陂，无往不復",
+    "无往不復，天地際也"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Law.lossless_iff_returns",
+    "Becoming.Hexagram.every_returns_iff",
+    "Becoming.Hexagram.waxWane_returns",
+    "Becoming.Hexagram.wane_not_returns",
+    "Becoming.Law.drawn_iff_not_returns"
+   ],
+   "reading": "有限构形之内，一律之下每一构形皆复返，恰当此律不合并；律有合并处，被吸入者不复返。"
+  },
+  {
+   "id": "qiri-laifu",
+   "source": "hexagrams/24.json",
+   "locator": "復·卦辭、彖",
+   "fragments": [
+    "反復其道，七日來復"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.rising",
+    "Becoming.Hexagram.falling",
+    "Becoming.Hexagram.waning",
+    "Becoming.Hexagram.seventh_step"
+   ],
+   "reading": "依消息卦的读法：自乾起，一阴生为姤，第六步至坤，第七步一阳复生为復。"
+  },
+  {
+   "id": "tiandi-zhixin",
+   "source": "hexagrams/24.json",
+   "locator": "復·彖",
+   "fragments": [
+    "復其見天地之心乎"
+   ],
+   "kind": "divergence",
+   "declarations": [
+    "Becoming.Hexagram.waxWane_returns",
+    "Becoming.Web.significance_undetermined"
+   ],
+   "reading": "复返是不合并之律的定理；把复返读作天地之心（意向或关切），律不支持，动力学不决定意义。"
+  },
+  {
+   "id": "xiaoxi",
+   "source": "hexagrams/55.json",
+   "locator": "豐·彖",
+   "fragments": [
+    "日中則昃，月盈則食，天地盈虛，與時消息"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.waxWane",
+    "Becoming.Hexagram.waxing",
+    "Becoming.Hexagram.waning",
+    "Becoming.Hexagram.twelve_steps",
+    "Becoming.Hexagram.first_return"
+   ],
+   "reading": "消息之律：每爻升一位，上爻出而以其反入初位；盈（乾）之后即消，虚（坤）之后即息，自坤十二步首次复至坤。"
+  },
+  {
+   "id": "shang-xiaoxi",
+   "source": "hexagrams/23.json",
+   "locator": "剝·彖",
+   "fragments": [
+    "君子尚消息盈虛，天行也"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.waxWane_lossless",
+    "Becoming.Hexagram.twelve_steps",
+    "Becoming.Hexagram.fourth_step"
+   ],
+   "reading": "消息盈虚是一个不合并之律的运行；十二消息卦之环只是其中一轨，隨、中孚、蠱、小過四步即返。"
+  },
+  {
+   "id": "wanglai-butong",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第十一章",
+   "fragments": [
+    "闔戶謂之坤，闢戶謂之乾，一闔一闢謂之變；往來不窮謂之通"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Hexagram.waxWane_returns",
+    "Becoming.Hexagram.every_returns_iff",
+    "Becoming.Hexagram.allBroken_absorbing"
+   ],
+   "reading": "往来不穷，恰在律不合并之处；只入阴爻之律下坤为吸收态，往而不来。"
+  },
+  {
+   "id": "riyue",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第四章",
+   "fragments": [
+    "日往則月來，月往則日來，日月相推而明生焉",
+    "往者，屈也；來者，信也。屈信相感而利生焉"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.arising_recurs",
+    "Becoming.Hexagram.ceasing_recurs",
+    "Becoming.Frame.claims_recur_iff"
+   ],
+   "reading": "沿律之每一运行，一爻在任意晚的步上转为阳，也在任意晚的步上止于阳；“利生焉”是评价，不在律中。"
+  },
+  {
+   "id": "yiyin-yiyang",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "一陰一陽之謂道"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Web.change_readings",
+    "Becoming.World.arising_iff_ceasing",
+    "Becoming.World.law_iff_em",
+    "Becoming.Hexagram.world_arising_recurs",
+    "Becoming.Hexagram.world_ceasing_recurs"
+   ],
+   "reading": "生起与止息是一个变化的两种读法；有限且活动可判定的世界中二者同时反复；不经判定而对一切有限世界断言之，等价于排中律。"
+  },
+  {
+   "id": "jizhi-shan",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "繼之者善也，成之者性也"
+   ],
+   "kind": "divergence",
+   "declarations": [
+    "Becoming.Web.significance_undetermined",
+    "Becoming.Unrestricted",
+    "Becoming.g0_of_unrestricted"
+   ],
+   "reading": "易传断言继之者善；理论中动力学不决定意义，生命意义只在延续条件之下是定理，此条件明示而不断言。"
+  },
+  {
+   "id": "gu-wanwu",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "鼓萬物而不與聖人同憂"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Web.significance_undetermined"
+   ],
+   "reading": "律鼓动万物，自身不带关切：无物有意义与万物有意义，动力学两者都不排除。"
+  },
+  {
+   "id": "jianzhi",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "仁者見之謂之仁，知者見之謂之知"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Web.change_readings",
+    "Becoming.Learning.goAlike_iff_lumped",
+    "Becoming.Hexagram.pairs_goAlike",
+    "Becoming.Hexagram.yang_not_goAlike"
+   ],
+   "reading": "同一展开有多种读法；一种读法承载律，恰当律在其归并上同行：错卦之对承载，阳爻之数不承载。"
+  },
+  {
+   "id": "rixin",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "富有之謂大業，日新之謂盛德"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.waxWane_returns",
+    "Becoming.Law.withHistory_never_returns",
+    "Becoming.Hexagram.kept_history_unlisted"
+   ],
+   "reading": "构形皆复返，而带着历史的展开永不复返，不被任何清单所含：无往不复与日新是同一律的两层读法；大业、盛德之评价不在律中。"
+  },
+  {
+   "id": "shengsheng",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "生生之謂易"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Hexagram.wane_drawn",
+    "Becoming.Hexagram.wane_loses",
+    "Becoming.World.living_crosses",
+    "Becoming.World.arising_opens",
+    "Becoming.Web.generation_fed_from_beyond"
+   ],
+   "reading": "脊柱上的变化比生生宽：它也含合并与可能之失；生生作为生成之持续，需要开放，并由外部供给。"
+  },
+  {
+   "id": "jishu-zhilai",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "極數知來之謂占"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Learning.no_prefix_fixes_next",
+    "Becoming.Learning.diagonal_misses",
+    "Becoming.Identification.bounded_agree",
+    "Becoming.Learning.goAlike_iff_lumped"
+   ],
+   "reading": "一般而言没有有限前缀定得下一步；知来只在历程有界、读法为律所同行之处成立；以数占筮不被支持。"
+  },
+  {
+   "id": "buce",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第五章",
+   "fragments": [
+    "陰陽不測之謂神"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Learning.diagonal_misses",
+    "Becoming.Web.tail_unexcluded"
+   ],
+   "reading": "对任一外推，皆有其失误的历程；没有模型时，有限前缀不排除其后的任何走向。"
+  },
+  {
+   "id": "gantong",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第十章",
+   "fragments": [
+    "易，无思也，无為也，寂然不動，感而遂通天下之故"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Web.observed_level_couples",
+    "Becoming.Flow.uncoupled_beyond_coupling"
+   ],
+   "reading": "感即耦合：经耦合而入的差别得以传达；耦合闭包之外者不被区分，“通天下”恰止于耦合所及。"
+  },
+  {
+   "id": "xian-gan",
+   "source": "hexagrams/31.json",
+   "locator": "咸·彖",
+   "fragments": [
+    "咸，感也",
+    "觀其所感，而天地萬物之情可見矣"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Web.observed_level_couples",
+    "Becoming.Flow.uncoupled_beyond_coupling",
+    "Becoming.Flow.unselected_beyond_coupling"
+   ],
+   "reading": "所见即所感：一个形成所显示的，是其耦合所携带的；闭包之外的部分，选择也不能及。"
+  },
+  {
+   "id": "yanji",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第十章",
+   "fragments": [
+    "夫易，聖人之所以極深而研幾也"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Web.observed_level_couples",
+    "Becoming.Web.break_not_bounded"
+   ],
+   "reading": "研几只能经由耦合而入者：依水平耦合的条件，其差别传入；断裂所系的条件若不耦合，断裂之前无物界定其远近。"
+  },
+  {
+   "id": "zhiji",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第四章",
+   "fragments": [
+    "知幾其神乎",
+    "幾者，動之微，吉之先見者也"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Web.break_not_bounded",
+    "Becoming.Web.observed_level_couples",
+    "Becoming.Flow.policy_uses_after_failure"
+   ],
+   "reading": "几之先见恰在相关条件耦合入读法之处；否则断裂前无可登记，经耦合的策略只在失败之后才动用更大的储备。"
+  },
+  {
+   "id": "qiong-bian",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第二章",
+   "fragments": [
+    "易窮則變，變則通，通則久"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Hexagram.waxing",
+    "Becoming.Hexagram.waning",
+    "Becoming.Hexagram.allBroken_absorbing",
+    "Becoming.Web.consumed_ends_when_fixed",
+    "Becoming.Web.consumed_continues_transformed"
+   ],
+   "reading": "消息之律下极则转；只入阴爻之律下坤为吸收态，穷而不变。失而不复之后，依存不变者不能延续，延续者已改变其依存：穷则变不是普遍律。"
+  },
+  {
+   "id": "kanglong",
+   "source": "hexagrams/01.json",
+   "locator": "乾·上九、象、文言",
+   "fragments": [
+    "上九：亢龍，有悔",
+    "亢龍有悔，盈不可久也",
+    "「亢龍有悔」，窮之災也",
+    "「亢龍有悔」，與時偕極"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Law.more_never_rests",
+    "Becoming.Flow.takesAll_of_more",
+    "Becoming.Flow.more_exhausted"
+   ],
+   "reading": "以多于现在为目标者永不止息；供给有界时，递增之取终取尽所予；封闭之下，多于现在必竭。"
+  },
+  {
+   "id": "kang-zhiwei-yan",
+   "source": "yizhuan/wenyan.json",
+   "locator": "《文言》（乾）",
+   "fragments": [
+    "亢之為言也。知進而不知退。知存而不知亡。知得而不知喪"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Flow.policy_uses_after_failure",
+    "Becoming.Web.break_not_bounded"
+   ],
+   "reading": "只知进者，所失只在断裂时登记：经耦合的策略只在失败之后动用更大储备；断裂之前，耦合所入者不界定其远近。"
+  },
+  {
+   "id": "gen-zhi",
+   "source": "hexagrams/52.json",
+   "locator": "艮·彖",
+   "fragments": [
+    "艮，止也。時止則止，時行則行，動靜不失其時"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Law.rests_iff",
+    "Becoming.World.rests_unrefuted_enclosed"
+   ],
+   "reading": "止是相对于律而言：轨道止于其目标，恰当它到达律所不变之态；静不是世界停止。"
+  },
+  {
+   "id": "lishuang",
+   "source": "hexagrams/02.json",
+   "locator": "坤·初六、象",
+   "fragments": [
+    "履霜，堅冰至",
+    "履霜堅冰，陰始凝也。馴致其道，至堅冰也"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.wane",
+    "Becoming.Hexagram.wane_six",
+    "Becoming.Hexagram.wane_drawn",
+    "Becoming.Hexagram.wane_never_back",
+    "Becoming.Law.DrawnInto.never_back"
+   ],
+   "reading": "只入阴爻之律：每步多一阴爻，六步皆阴而不复离，被吸入者永不回来；在消息之律下坤并非吸收态，坚冰是否长存在律不在卦。"
+  },
+  {
+   "id": "weiji",
+   "source": "yizhuan/xugua.json",
+   "locator": "《序卦》",
+   "fragments": [
+    "物不可窮也，故受之以未濟；終焉"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Law.withHistory_unlisted",
+    "Becoming.Hexagram.kept_history_unlisted",
+    "Becoming.World.arising_opens",
+    "Becoming.Onward.run_iff_continues"
+   ],
+   "reading": "卦序终于未济：带着历史的展开不被任何清单所含；生起无尽须开放；有限构形之内，运行恰是长如清单之历程。"
+  },
+  {
+   "id": "ziqiang",
+   "source": "hexagrams/01.json",
+   "locator": "乾·象",
+   "fragments": [
+    "天行健，君子以自強不息"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Flow.fed_from_beyond",
+    "Becoming.Web.generation_fed_from_beyond"
+   ],
+   "reading": "平衡而耗散的交换中，持续者由外部供给，封闭的部分不能只凭自身不息；自强读作耦合之中自身之分则相合，读作自足则相分。"
+  },
+  {
+   "id": "yuanshi",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第四章",
+   "fragments": [
+    "原始反終，故知死生之說"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Frame.arises_iff",
+    "Becoming.Frame.novel_iff_arises",
+    "Becoming.World.living_crosses"
+   ],
+   "reading": "生起是一主张被新实现；活着跨越生起与止息，不由二者之反复决定。"
+  },
+  {
+   "id": "xiang",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第三章",
+   "fragments": [
+    "是故易者，象也。象也者，像也"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Learning.goAlike_iff_lumped",
+    "Becoming.Hexagram.pairs_goAlike",
+    "Becoming.Hexagram.yang_not_goAlike"
+   ],
+   "reading": "象是一种归并的读法；它承载律，恰当律在其上同行。"
+  },
+  {
+   "id": "yijian",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第一章",
+   "fragments": [
+    "易簡，而天下之理得矣"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.Learning.goAlike_iff_lumped",
+    "Becoming.Hexagram.pairs_lumped",
+    "Becoming.Hexagram.yang_not_lumped"
+   ],
+   "reading": "更简的读法保留律，恰当它是律所同行的归并：六十四归为三十二对仍成律，按阳爻之数归并则不成；并非任何简化皆得理。"
+  },
+  {
+   "id": "daoqi",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第十二章",
+   "fragments": [
+    "是故形而上者謂之道，形而下者謂之器"
+   ],
+   "kind": "scope",
+   "declarations": [
+    "Becoming.exists_law_iff",
+    "Becoming.shown_le_iff",
+    "Becoming.Run.keepHistory_shown"
+   ],
+   "reading": "律由展开读出：一历史所显之律是它所属的最小律；某一决定之律容纳此历史，恰当此历史自洽。把形而上读作器外另一实在，则相分。"
+  },
+  {
+   "id": "wang-qi",
+   "source": "commentary/waizhuan-5.json",
+   "locator": "王夫之《周易外傳》卷五",
+   "fragments": [
+    "天下惟器而已矣。道者器之道，器者不可謂之道之器也",
+    "無其器則無其道"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.exists_law_iff",
+    "Becoming.shown_le_iff",
+    "Becoming.Run.keepHistory_shown"
+   ],
+   "reading": "道是器之道：一历史所显之律只容纳此历史，律不先于其所行之展开。"
+  },
+  {
+   "id": "biandong",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第七章",
+   "fragments": [
+    "變動不居，周流六虛，上下无常，剛柔相易，不可為典要，唯變所適"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Hexagram.run_six_steps",
+    "Becoming.Hexagram.twelve_steps",
+    "Becoming.Learning.no_prefix_fixes_next",
+    "Becoming.Contextual.fitsFree_iff"
+   ],
+   "reading": "消息之律下每爻周流六位；没有有限前缀定得下一步；去语境的读法，恰在各语境相接处一致时才合。"
+  },
+  {
+   "id": "liuyao-xiangza",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第七章",
+   "fragments": [
+    "六爻相雜，唯其時物也"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.Contextual.indexed_fits",
+    "Becoming.Contextual.glues_iff_agree"
+   ],
+   "reading": "一爻之义随其位与时：带语境索引的框架合于所示的一切；各语境所示能粘合，恰当它们在相接处一致。"
+  },
+  {
+   "id": "zhen-fu-yi",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第一章",
+   "fragments": [
+    "天下之動，貞夫一者也"
+   ],
+   "kind": "agreement",
+   "declarations": [
+    "Becoming.World.unity"
+   ],
+   "reading": "每一世界是交换律的一次运行，其平衡即其诸读法之粘合。"
+  },
+  {
+   "id": "tianzun",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第一章",
+   "fragments": [
+    "天尊地卑，乾坤定矣。卑高以陳，貴賤位矣"
+   ],
+   "kind": "divergence",
+   "declarations": [
+    "Becoming.Hexagram.complement_complement",
+    "Becoming.Hexagram.waxWane_complement",
+    "Becoming.Hexagram.reverse_waxWane"
+   ],
+   "reading": "构形中乾坤互为错卦，律与错交换、倒转则律逆行：结构不含尊卑；贵贱之位是理论不采的等级。"
+  },
+  {
+   "id": "guijian",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第八章",
+   "fragments": [
+    "三與五同功而異位，其遇不同：三多凶，五多功，貴賤之等也"
+   ],
+   "kind": "divergence",
+   "declarations": [
+    "Becoming.Hexagram.Place",
+    "Becoming.Contextual.indexed_fits"
+   ],
+   "reading": "位有别，是语境之索引；位无等级。"
+  },
+  {
+   "id": "dade",
+   "source": "yizhuan/xici-xia.json",
+   "locator": "《繫辭下》第一章",
+   "fragments": [
+    "天地之大德曰生，聖人之大寶曰位"
+   ],
+   "kind": "divergence",
+   "declarations": [
+    "Becoming.World.living_crosses",
+    "Becoming.Web.significance_undetermined",
+    "Becoming.g0_of_unrestricted"
+   ],
+   "reading": "大德曰生是断言；理论中生起不定活着，生命意义只在延续条件之下成立；大宝曰位是等级。"
+  },
+  {
+   "id": "dayan",
+   "source": "yizhuan/xici-shang.json",
+   "locator": "《繫辭上》第九章、第十章",
+   "fragments": [
+    "大衍之數五十，其用四十有九",
+    "以卜筮者尚其占"
+   ],
+   "kind": "divergence",
+   "declarations": [
+    "Becoming.Learning.no_prefix_fixes_next",
+    "Becoming.Learning.diagonal_misses"
+   ],
+   "reading": "数术不在脊柱之中：任一由有限记录给出预言的程序，都有其失误的历程。"
+  }
+ ]
+}
