@@ -1,0 +1,15 @@
+{
+ "about": "Apart-register entries retired by R31 (20 October 2026): the lemmas, now in Becoming.Prelude, are used on the base since R31 removed the copies whose users now read them (one name per statement). Bytes as they stood in THEOREM-CONNECTIVITY-APART.json.",
+ "roots": {
+  "Becoming.ListTests.length_append": {
+   "module": "Becoming.ListTests",
+   "category": "support",
+   "reason": "a list lemma proved without `propext`: the length of an append is the sum (F3C's constructive support for the family)"
+  },
+  "Becoming.Naturals.add_sub_cancel_left": {
+   "module": "Becoming.Naturals",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
+  }
+ }
+}

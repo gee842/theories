@@ -1143,37 +1143,27 @@
    "reason": "an arithmetic lemma of `Int`: `a + -b + b = a` (F3C's constructive support for the family)"
   },
   "Becoming.ListTests.all_mem": {
-   "module": "Becoming.ListTests",
+   "module": "Becoming.Prelude",
    "category": "support",
    "reason": "a list lemma proved without `propext`: every member passes a test `all` passes (F3C's constructive support for the family)"
   },
   "Becoming.ListTests.filter_of_all": {
-   "module": "Becoming.ListTests",
+   "module": "Becoming.Prelude",
    "category": "support",
    "reason": "a list lemma proved without `propext`: a filter every member passes keeps the list (F3C's constructive support for the family)"
   },
-  "Becoming.ListTests.length_append": {
-   "module": "Becoming.ListTests",
-   "category": "support",
-   "reason": "a list lemma proved without `propext`: the length of an append is the sum (F3C's constructive support for the family)"
-  },
   "Becoming.Naturals.add_le_of_le_sub": {
-   "module": "Becoming.Naturals",
+   "module": "Becoming.Prelude",
    "category": "support",
    "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
   },
   "Becoming.Naturals.add_left_cancel": {
-   "module": "Becoming.Naturals",
-   "category": "support",
-   "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
-  },
-  "Becoming.Naturals.add_sub_cancel_left": {
-   "module": "Becoming.Naturals",
+   "module": "Becoming.Prelude",
    "category": "support",
    "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
   },
   "Becoming.Naturals.ne_of_lt": {
-   "module": "Becoming.Naturals",
+   "module": "Becoming.Prelude",
    "category": "support",
    "reason": "an arithmetic lemma of `Nat` proved without `propext` (F3C's constructive support for the family)"
   },
@@ -1593,7 +1583,7 @@
    "reason": "Of the twelve, four hold their place between the ends, four are out of phase there and four are at the ends: a fact about the twelve configurations with a sole line, checked on each; the sole line is read on the base by sole_shown_along_run and run_sole."
   },
   "Becoming.Amounts.family_rests": {
-   "module": "Becoming.LeastLoss",
+   "module": "Becoming.Amounts",
    "category": "general-structure",
    "reason": "the family law of rest for any amounts, with the bound of the stock by m least losses named; the base reads amounts only as whole numbers, where it is used in its Archimedean form, Amounts.family_rests_of_archimedean, by Flow.taking_not_recurring_whole"
   },
@@ -1613,7 +1603,7 @@
    "reason": "the counterexample in one constructed model of the amounts (a least loss, the stock beyond every multiple of it, never resting): it shows the bound premise of Amounts.rests is needed; not a law of the unfolding"
   },
   "Becoming.Amounts.whole_losing_steps": {
-   "module": "Becoming.LeastLoss",
+   "module": "Becoming.Amounts",
    "category": "general-structure",
    "reason": "the approach law at whole-number amounts, stated for any sequences of stocks and losses: no more steps lose anything than the stock counts; the base reads the same descent through Flow.takers_within_on_whole and Flow.taking_not_recurring_whole"
   },
@@ -1751,6 +1741,11 @@
    "module": "Becoming.Space",
    "category": "support",
    "reason": "the counting step of the whole-number descent: an amount not rising whose later falls are not refuted exceeds every bound. Since R29 falls_stop_unrefuted is proved as the whole-number instance of Amounts.rests_unrefuted, so nothing on the base uses it; space-and-its-parts cites it"
+  },
+  "Becoming.Copying.le_of_add_le_add": {
+   "module": "Becoming.Copying",
+   "category": "support",
+   "reason": "an arithmetic lemma of `Nat` proved without `propext`: adding the same amount on the left keeps no more than the order. Its only user, Copying.le_sub_of_add, was removed by R31 as a copy of Naturals.le_sub_of_add_le in Becoming.Prelude, so nothing uses it"
   }
  }
 }
