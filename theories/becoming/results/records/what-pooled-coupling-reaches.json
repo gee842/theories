@@ -130,8 +130,8 @@
   ],
   "does_not_show": [
     {
-      "en": "Which formations pool, or how a pool forms, lasts or resists capture; that a pool's selection responds to what it separates or corrects anything; which acts are taken, or that any is wrong.",
-      "zh": "哪些形成合起来，一组怎样形成、持续或抵抗劫持；一组的选择回应它所分开者或纠正任何东西；哪些动作被采取，或任何一个是错的。",
+      "en": "Which formations pool, or how a pool forms, lasts or resists capture; that a pool's selection responds to what it separates or closes any difference; which acts are taken, or that any is wrong.",
+      "zh": "哪些形成合起来，一组怎样形成、持续或抵抗劫持；一组的选择回应它所分开者或闭合任何差别；哪些动作被采取，或任何一个是错的。",
       "kind": "non-implication"
     },
     {
@@ -167,8 +167,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261018T122313.319851Z）：Becoming.SelectionPool 的 37 项声明（33 项定理）公理报告为空；检查器并核对核心纯净。作者自审见研究第 179 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); which responses to what a pool separates correct the act (what a pool's acts can respond to is stated in what-a-pools-acts-respond-to); an independent review.",
-    "zh": "哪些形成合起来，一组怎样形成、持续并抵抗由其所奖励者书写的规则（target-capture）；对一组所分开者的哪些回应纠正动作（一组的动作能回应什么，见 what-a-pools-acts-respond-to）；独立审查。"
+    "en": "Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); which law closes rather than widens a difference a pool separates (what a pool's acts can respond to is stated in what-a-pools-acts-respond-to); an independent review.",
+    "zh": "哪些形成合起来，一组怎样形成、持续并抵抗由其所奖励者书写的规则（target-capture）；哪个律闭合而非扩大一组所分开的差别（一组的动作能回应什么，见 what-a-pools-acts-respond-to）；独立审查。"
   },
   "correspondence": {
     "en": "The chapter's section 7.4, restated by M1 on 18 October 2026, read \"alignment for all is pooled coupling across intelligences\" as an open AI reading, adopted on 19 October 2026 by its place in one account (DELEGATED-CHOICES D45), and section 7.3 bounded pooled coupling only for a pool within one formation's coupling closure (Flow.unselected_beyond_coupling_all). Ren, 18 October 2026: \"what is the light, how can we hold the light to enlight others, and use it as an alignment for all, and what is still missing from it?\" and \"please make your own pareto frontier decisions, and push the frontier\" (provenance, not warrant); the AI chose the item. Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): no pool, however wide, selects what its own joint act does beyond its joint coupling closure; that is selected only through formations beyond it that couple the difference apart, such as those whose support the act changes.",
@@ -414,7 +414,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
+      "sha256": "2aef20279901b3d848306e67b4e1c2b8f9a6f6cba3ade0dde40437fbc73cfe30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md",
@@ -506,6 +506,14 @@
     {
       "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
       "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): The first non-implication and next_delta: \"corrects\" read as closing a difference, as M4 states it. \"Correct\" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the field now states the structure meant. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：第一条非蕴含与 next_delta：“纠正”读作闭合差别，如 M4 所陈述。“纠正”预设了关系之外的标准，即一条对的进程和一个要去除的错误（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）；此字段现陈述所指的结构。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
     }
   ]
 }

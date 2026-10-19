@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-13T23:00:00+00:00",
   "statement": {
-    "zh": "既有实践原则在有根据的 AI 对应下支持生成、纠正、交接与适当结束，并保留能力增长的真实好处和损失。",
-    "en": "With warranted AI correspondence, the practical principles support generative development, correction, transfer and appropriate ending while retaining capability growth’s real benefits and losses."
+    "zh": "既有实践原则在有根据的 AI 对应下支持生成、修订、交接与适当结束，并保留能力增长的真实好处和损失。",
+    "en": "With warranted AI correspondence, the practical principles support generative development, revision, transfer and appropriate ending while retaining capability growth’s real benefits and losses."
   },
   "hypotheses": [
     {
@@ -107,7 +107,7 @@
     {
       "path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
       "role": "statement",
-      "sha256": "11467e87a5a3543f0a7d6d704a3f50a974df5c018353c3a7e6441c4f59ece99f",
+      "sha256": "2d2a27004a0965f1c3b845c09f6771671336a471196430e8439a74188705a22e",
       "declarations": []
     },
     {
@@ -303,6 +303,14 @@
     {
       "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): Statement and overview: \"correction\" read as revision, as in the restated claim of ALIGNMENT-DIRECTION (\"understand, challenge and revise that development\"); which revision supports living goes through the stated premises. \"Correct\" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the field now states the structure meant. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：陈述与概述：“纠正”读作修订，与 ALIGNMENT-DIRECTION 改述后的主张（“能够被认识、质疑和修订”）一致；哪种修订支持生，经所述前提。“纠正”预设了关系之外的标准，即一条对的进程和一个要去除的错误（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）；此字段现陈述所指的结构。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed ALIGNMENT-DIRECTION.md (N7 restated the central claim (\"revise\" for \"correct\"), section 2 and the heading of section 4 item 3). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 ALIGNMENT-DIRECTION.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [
@@ -321,8 +329,8 @@
       "zh": "能够评价并修订目的的 AI 对齐"
     },
     "summary": {
-      "en": "The core, the explicit practical commitments, and warranted AI correspondence provide a normative framework for aligning learning, action, correction, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.",
-      "zh": "核心、公开的实践承诺及有根据的 AI 对应，共同提供规范框架，使学习、行动、纠正、交接和适当结束指向真实的生与进一步共同生成。人类指令、机构目标及 AI 当前目的都可以接受伦理评价。评价目的的对齐需要规范判准；在本框架中，生成理由必须进入判断。这项必要要求具有明示的公理范围；论证不声称该表述是每一种对齐理论唯一可能的基础。"
+      "en": "The core, the explicit practical commitments, and warranted AI correspondence provide a normative framework for aligning learning, action, revision, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.",
+      "zh": "核心、公开的实践承诺及有根据的 AI 对应，共同提供规范框架，使学习、行动、修订、交接和适当结束指向真实的生与进一步共同生成。人类指令、机构目标及 AI 当前目的都可以接受伦理评价。评价目的的对齐需要规范判准；在本框架中，生成理由必须进入判断。这项必要要求具有明示的公理范围；论证不声称该表述是每一种对齐理论唯一可能的基础。"
     },
     "evidence": {
       "zh": "已完成并经独立审查的哲学论证，含一个说明哪些变化会改变判断的 AI 案例。Lean 检查案例中的判断确由所述生生之意义与实践承诺推出，交叉基本损失不排序（经独立重编译）。另行检查表明：基本保护优先不由 C 推出（生生之意义不约束排序）；在一个所给磨损规律下，一步的形成计数把消耗型接续排在持续形成之前，而这种消耗随后终止共享形成。前提是否正确、部署系统是否认可或遵循，是另外的问题。",

@@ -5,13 +5,13 @@
 
 `alignment-direction-g0-j` · **reviewed-scoped** · argument · F07 · [record](alignment-direction-g0-j.json) · [register](../../../../RESULTS.md)
 
-> With warranted AI correspondence, the practical principles support generative development, correction, transfer and appropriate ending while retaining capability growth’s real benefits and losses.
+> With warranted AI correspondence, the practical principles support generative development, revision, transfer and appropriate ending while retaining capability growth’s real benefits and losses.
 
 <details><summary>README overview</summary>
 
 **AI alignment that can evaluate and revise its ends**
 
-The core, the explicit practical commitments, and warranted AI correspondence provide a normative framework for aligning learning, action, correction, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.
+The core, the explicit practical commitments, and warranted AI correspondence provide a normative framework for aligning learning, action, revision, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.
 
 **Evidence:** A completed philosophical argument with independent review, including a worked AI case that names which changes alter the verdict. Lean checks that the case's verdicts follow from living significance and the practical commitments as stated, with crossed basic losses left unranked (independently recompiled). Separate checks show that the priority of basic conditions does not follow from C (living significance does not constrain ordering), and that under a supplied wear law a one-step count of formation ranks a consuming continuation above sustained formation, although such consumption later ends co-dependent formation. Whether the premises are right, and whether deployed systems recognize or comply with them, are separate questions.
 
@@ -103,6 +103,8 @@ Aliases: `Becoming.alignment_better_iff_betterAt`, `Becoming.alignment_frontier_
 - 18 October 2026, F1, the bridge fold (Ren: "so there seems to be a lot bridges in our code, how do they work? do we really need a bridge?", then "please do all"): Rebound to core receipt 20261018T134446.673561Z after reading the change (Bridge.lean). The claim is unchanged.
 - 18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core counterparts of the cited periphery and bridge declarations are cited (3 in Becoming.Frontier; 5 in Becoming.Lexical), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.
 - 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.
+- 19 October 2026, N7 (the reading pass on "correction"): Statement and overview: "correction" read as revision, as in the restated claim of ALIGNMENT-DIRECTION ("understand, challenge and revise that development"); which revision supports living goes through the stated premises. "Correct" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: "correct? this is a dualist word, are we drifting off?"); the field now states the structure meant. The claim is unchanged.
+- 19 October 2026, N7 (the reading pass on "correction"): re-pointed ALIGNMENT-DIRECTION.md (N7 restated the central claim ("revise" for "correct"), section 2 and the heading of section 4 item 3). Wording only; read before re-pointing. The claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](alignment-direction-g0-j.json).
 
 <a id="earlier-text--早期文本"></a>

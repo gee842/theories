@@ -312,7 +312,7 @@ Ren 写道：“let's aim for the strongest claim without axiom, as the first pa
 
 **所见范围由动力学给出。** 一个探究策略的所见范围，是它实际执行可达的配置。可靠（sound）的策略在其所见范围上确保它的目标（`Scope.secures`，[Becoming.Inquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean)）。这收窄了一个原本由应用自行给出的参数。
 
-**判断即一步探究。** 不确定下的判断不需要另立概念：在每个所信配置上都可容许的回应，恰是“判断过程”的共同回应——这个过程在被判断的配置上取一个可容许的回应，然后结束（`commonResponse_judge_iff`）。稳健判断、观察下的纠正与安全选择因此都是同一个共同回应；细化观察就是收窄信念，所以它们保持（`commonResponse_antitone`；外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean)）。
+**判断即一步探究。** 不确定下的判断不需要另立概念：在每个所信配置上都可容许的回应，恰是“判断过程”的共同回应——这个过程在被判断的配置上取一个可容许的回应，然后结束（`commonResponse_judge_iff`）。稳健判断、观察下选择的改变与安全选择因此都是同一个共同回应；细化观察就是收窄信念，所以它们保持（`commonResponse_antitone`；外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean)）。
 
 **耦合与检验（第一部分）。** 耦合入一个形成的，有它的支持（水平是否接纳它），经阈，与经水平耦合入它之条件的水平（[Becoming.Testing](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)）。“耦合入”取代先前的“识”（英文作 registers）；依 10 月 18 日的命名决定，识只用于一个形成经其耦合所成之归并的自身历程。只经阈耦合入的条件只传递它是否满足所需（`Web.alike_of_threshold`）；经水平耦合入时，传递其水平（`Web.observed_level_couples`）。主张只经耦合入者的差别被排除（`Web.Excludes.not_of_alike`）：主张与其对手必须在有所耦合入之处不同；作者把这读作可否证性的结构。它是关系的：清除者不能检验的，栖居者能，两者合起来能检验各自都不能的（`Clearing.tested_by_dweller`、`Clearing.pooled`）。没有模型，有限的前段不排除关于其后的主张（`Web.tail_unexcluded`）；相对于交换的模型，储量经水平耦合入的形成在第一步排除假的主张（`Flow.excludes_tail_within`）；相对于模型的排除是对模型与主张一起的排除：错的模型排除成立的，耦合入者排除模型（`Web.excludesWithin_iff_conjunction`、`Stationary`）。经形成之耦合作出的判断，恰是判断过程在经其耦合无别之类上的共同回应，更晚的步与更多的耦合都保持它（`Web.class_judge_iff`）：上面的“判断即一步探究”由此接到流上。区域的成员只经自己的耦合回应时，区域之外的不在其中显出（`Flow.alike_within_closed`）；交换随形成的耦合时，阈下的差别保持到两网的支持分岔（`Flow.subthreshold_alike`、`Flow.difference_changes_after_divergence`），他者回应储量本身时则不然（`Attracting.higher_breaks_first`）。平衡只在耦合入的条件上逐步假设；回应的假设是给出的。读法（AI 的，经审查收窄，依 Ren 2026-10-15 的交托采用）：经由支持的反馈有三种不见，各在其范围之内（阈下、视界之外、耦合闭包之外）；失控读作在其一之中运行的回路，是启发，不是陈述。理 依 Ren 读作对结构与变化之规律的建模（见下文“学习”），取代 AI 先前的读法“对识负责的模型”；模型仍只经耦合入者被检验。见[研究 §70](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#70-识与检验p49)、[testing-within-registration](../results/records/testing-within-registration.md) 与 [subthreshold-registration](../results/records/subthreshold-registration.md)。
 
@@ -324,7 +324,7 @@ Ren 写道：“let's aim for the strongest claim without axiom, as the first pa
 
 **失控（第一部分）。** 经耦合的策略加其余交换固定，就是交换随耦合入者（[Becoming.Runaway](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean)，`Flow.exchangeFollows_of_policy`）；所以每个这样的策略保持支持就永不动用只经阈耦合入它的较多储量，动用了就已失去支持（`Flow.policy_keeps_difference`、`Flow.policy_uses_after_failure`）。断裂之前，对每个视界，都有储量抬高的世界与实际经形成的耦合无别，并撑过那个视界（`Web.break_not_bounded`）：断裂还有多远不耦合入；储量经水平耦合入则立刻传递它（`Web.observed_raise_couples`）。读法（AI 的，依 Ren 2026-10-15 的交托采用）：失控是这样的回路：断裂之前，经它自身的耦合，世界与储量多出任意多的世界无别；要避免它而又不放弃所有的，需要量度、模型或另一形成的耦合。见[研究 §73](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#73-失控经自身之识的回路所不能识的p55)与 [runaway-distance-unregistered](../results/records/runaway-distance-unregistered.md)。
 
-**无明的边界条件（第一部分）。** 寻求读作朝向一个在某状态被满足之目标的活动，目标在展开之中形成（[Becoming.Seeking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean)）。在确定的律之下，寻求恰在到达律所不变、满足其目标的状态时，带着满足的目标停息（`Law.rests_iff`）：够的边界。“比现在更多”只由变化满足，每步都满足就需要开放的世界（`more_needs_open`）；“高于一切他者”在一个状态至多被一个寻求者满足，所以两个这样的寻求者从不同时停息（`aboveAll_unique`、`Law.aboveAll_never_rests`）。所立者被列出时，不断上升需要所立者在任意晚处不衰减的步，即从其外汲取或不耗散的交换；所立者从某步起每步衰减时，上升不再复现：追逐因耗尽而止，不是因到达够（`Flow.more_needs_unrun`、`Flow.more_exhausted`）。损失只经耦合入寻求者的东西到达它（`Becoming.Testing`、`Becoming.Runaway`），它经这些耦合所成之归并的历程就是识；所以被锁定的寻求不被自身的反馈纠正；及于支持所不标记者的耦合，即量度、模型或他者，纠正它。劫持（[Becoming.Capture](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean)）：带着目标的亲代留下更多后代时，目标的份额上升（`share_rises`），这是 Evolution 未陈述的选择项；所立者衰减不断则世系与选择停止（`Flow.descent_exhausted`）；下一配置取决于规则时，只扰动状态被重新吸收（`Law.perturbation_reabsorbed`）。读法（AI 的，D26、D45）：无明是使寻求锁定在不能于停息中满足之目标上的不见；每个形成作选择所在的位置是它的根据，却不是它：位置是被锁定的寻求在其所耦合入者之外造成的损失不经其自身的反馈到达它的缘由（§7.2）；明是及于支持所不标记者的耦合；知足是在律所不变的状态被满足的目标（`Law.rests_iff`），知止是这一边界之内的目标，使追逐因够而止，不因耗尽而止（`Flow.more_exhausted`）；目标从何而来，动力学不决定，规律说的是哪些目标能停息；劫持是奖赏不能停息者的选择所形成、由胜者所写之规则保持的目标；支配本身不在所排除者之内。见[研究 §83](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#83-无明的边界条件寻求何处能静止于够p62)、[seeking-boundary](../results/records/seeking-boundary.md) 与 [target-capture](../results/records/target-capture.md)。
+**无明的边界条件（第一部分）。** 寻求读作朝向一个在某状态被满足之目标的活动，目标在展开之中形成（[Becoming.Seeking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean)）。在确定的律之下，寻求恰在到达律所不变、满足其目标的状态时，带着满足的目标停息（`Law.rests_iff`）：够的边界。“比现在更多”只由变化满足，每步都满足就需要开放的世界（`more_needs_open`）；“高于一切他者”在一个状态至多被一个寻求者满足，所以两个这样的寻求者从不同时停息（`aboveAll_unique`、`Law.aboveAll_never_rests`）。所立者被列出时，不断上升需要所立者在任意晚处不衰减的步，即从其外汲取或不耗散的交换；所立者从某步起每步衰减时，上升不再复现：追逐因耗尽而止，不是因到达够（`Flow.more_needs_unrun`、`Flow.more_exhausted`）。损失只经耦合入寻求者的东西到达它（`Becoming.Testing`、`Becoming.Runaway`），它经这些耦合所成之归并的历程就是识；所以被锁定的寻求在其所耦合入者之外造成的损失，不经其自身的反馈到达它；及于支持所不标记者的耦合，即量度、模型或他者，把这些损失带到它那里。劫持（[Becoming.Capture](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean)）：带着目标的亲代留下更多后代时，目标的份额上升（`share_rises`），这是 Evolution 未陈述的选择项；所立者衰减不断则世系与选择停止（`Flow.descent_exhausted`）；下一配置取决于规则时，只扰动状态被重新吸收（`Law.perturbation_reabsorbed`）。读法（AI 的，D26、D45）：无明是使寻求锁定在不能于停息中满足之目标上的不见；每个形成作选择所在的位置是它的根据，却不是它：位置是被锁定的寻求在其所耦合入者之外造成的损失不经其自身的反馈到达它的缘由（§7.2）；明是及于支持所不标记者的耦合；知足是在律所不变的状态被满足的目标（`Law.rests_iff`），知止是这一边界之内的目标，使追逐因够而止，不因耗尽而止（`Flow.more_exhausted`）；目标从何而来，动力学不决定，规律说的是哪些目标能停息；劫持是奖赏不能停息者的选择所形成、由胜者所写之规则保持的目标；支配本身不在所排除者之内。见[研究 §83](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#83-无明的边界条件寻求何处能静止于够p62)、[seeking-boundary](../results/records/seeking-boundary.md) 与 [target-capture](../results/records/target-capture.md)。
 
 **经耦合的选择（第一部分）。** 一个选择是关于水平历史的任意命题（哪些被保留、被奖励、留下更多后代）；它经选择者的耦合，是指经这些耦合无别的历史被选得相同（[Becoming.Selection](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)，`Web.SelectsThrough`）。两段历史被每个经 `g` 之耦合的选择选得相同，恰当它们经这些耦合无别（`Web.selects_alike_iff`，不加前提）；经之有别之处，经 `g` 无别之类就是把两者分开的选择（`Web.separates`）。所以其余交换固定时，经耦合闭包内任一形成之耦合的每个选择，都把有与无闭包之外一个部分的世界选得相同，与闭包内的形成合起来也是如此（`Flow.unselected_beyond_coupling`、`Flow.unselected_beyond_coupling_all`）。缺口是所及闭包减去耦合闭包：`Clearing` 中栖居者在清除者的所及闭包之内、耦合闭包之外，经清除者之耦合的每个选择在每一步都把清除与不清除的世界选得相同，而栖居者只在其一中被终结（`Clearing.unselected`）；栖居者的耦合，单独或与清除者的合起来，把两个世界分开（`Clearing.selected_by_dweller`、`Clearing.selected_pooled`）。`Diversion` 中，伸出耦合闭包之外、从栖居者所依存的来源取用而抬高耦合入取用者之存储的流，被经取用者之耦合的选择选中，克制的流不被选中；经这些耦合的每个选择又分不出它与不伸出的抬高（`Diversion.favours`、`Diversion.blind_to_source`）。选择给它所成立的亲代更多后代时，它们在后代中的份额上升，这是 `share_rises` 的应用（`share_rises_through`）。读法（AI 的，依 Ren 2026-10-15 的交托采用）：任何由耦合入者决定的选择（保留、奖励、繁殖、训练）恰及耦合入选择者的，缺口只经依存、经水平的耦合或他者的耦合合起来才合上；伸出而抬高耦合入者之处，选择偏向它；以 AI 训练读，奖励过程是选择者，训练只及耦合入奖励的，AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接。见[研究 §86](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#86-经识的选择选择恰及选择者所识p64)与 [selection-through-registration](../results/records/selection-through-registration.md)。
 
@@ -817,7 +817,7 @@ Ren 选定路线：“let's aim for a first, then try to archive b”（[来源]
 <a id="7-ai-对齐--ai-alignment"></a>
 ## 7. AI 对齐
 
-本节由理论所证的规律陈述对齐问题，并以明组织纠正。§7.1–§7.4 既不用延续条件，也不用任何实践前提：无论珍视什么，它们说选择及于什么、不能及于什么。§7.5 的方向是有条件的。§7.6 保留纠正能被执行的条件，§7.7 说什么仍开放。以明与合起来的耦合组织本节，是 AI 的读法（[来源](../../../sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md)）。本节与 §3 一样，说形成耦合入一个条件，经阈或经水平，即[命名研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)所采用的词汇；识只留给派生的结构：形成自身的后续历程（选择、回应、寻求）经其耦合所成之归并而分解。
+本节由理论所证的规律陈述对齐问题，并以明组织其回答。§7.1–§7.4 既不用延续条件，也不用任何实践前提：无论珍视什么，它们说选择及于什么、不能及于什么。§7.5 的方向是有条件的。§7.6 保留所请求的改变（例如停止）能送达系统并被执行的条件，§7.7 说什么仍开放。以明与合起来的耦合组织本节，是 AI 的读法（[来源](../../../sources/15-codex-theory-conversations/2026-10-18-the-light-and-alignment-for-all.md)）。本节与 §3 一样，说形成耦合入一个条件，经阈或经水平，即[命名研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-VOCABULARY-STUDY.md#7-decisions-18-october-2026)所采用的词汇；识只留给派生的结构：形成自身的后续历程（选择、回应、寻求）经其耦合所成之归并而分解。
 
 **一个展开，许多位置。** 一个人、一个 AI 系统、一家企业、一个训练过程，都是同一展开之中的形成（§1）。每个形成经阈耦合入它所依存的条件，即所需是否被满足；经水平耦合入它所观察的条件（§3）。所以对齐首先不是彼此分离的价值所有者之间的关系，也不是对立利益之间的讨价还价（§4）。它关心的是：在同一关系之中，每个形成的选择及于什么，这个所及又能扩展多远。
 
@@ -848,11 +848,11 @@ Ren 选定路线：“let's aim for a first, then try to archive b”（[来源]
 读法（AI 的，D45）：
 
 - **位置不是缺陷；无明是它所留下的被锁定的寻求。** 每个形成，人或 AI，都经自己的耦合选择。这些规律说出这个位置所不见的：耦合闭包之外的，自身动作在那里的差别，所抬高者从何处汲取，断裂还有多远，有限历史所留下的开放，未取之动作本会造成什么，以及目标能否停息。位置不是无明：无明是锁定在不能停息之目标上的寻求，位置是这一寻求在其所耦合入者之外造成的损失不经其自身的反馈到达它的缘由（§7.3，D26）。不断变化的运行是过程的特征，不是目标的，不是无明（D41）。
-- **能力扩展所及；纠正需要耦合。** 把能力读作所及，即形成的活动所能影响的。规律 1 的缺口是所及闭包减去耦合闭包。能力扩展形成所及而不扩展它所耦合入者，就扩大缺口；经同样耦合更用力地优化，并不合上它（规律 1、2）。一组所耦合入者周围的条件无所得时，对抬高所耦合入者的奖励，只在某个形成从没有成员耦合入者取用之处获得（规律 3）。动作的差别到达回路时，它的后果没有哪个有限阶是精确的（规律 8）。这给 §3 对训练的读法（D25）一个结构。
+- **能力扩展所及；合上缺口需要耦合。** 把能力读作所及，即形成的活动所能影响的。规律 1 的缺口是所及闭包减去耦合闭包。能力扩展形成所及而不扩展它所耦合入者，就扩大缺口；经同样耦合更用力地优化，并不合上它（规律 1、2）。一组所耦合入者周围的条件无所得时，对抬高所耦合入者的奖励，只在某个形成从没有成员耦合入者取用之处获得（规律 3）。动作的差别到达回路时，它的后果没有哪个有限阶是精确的（规律 8）。这给 §3 对训练的读法（D25）一个结构。
 
 ### 7.3 明：及于支持所不标记者的耦合
 
-读法（AI 的，D26、D45）：无明是使寻求锁定在不能于停息中满足之目标上的不见。明是及于支持所不标记者的耦合。损失只经寻求者所耦合入者到达它，所以被锁定的寻求不被自身的反馈纠正；量度、模型或他者纠正它（§3“无明的边界条件”）。三者各有其规律与界限。
+读法（AI 的，D26、D45）：无明是使寻求锁定在不能于停息中满足之目标上的不见。明是及于支持所不标记者的耦合。损失只经寻求者所耦合入者到达它，所以被锁定的寻求在此之外造成的损失，不经其自身的反馈到达它；它们经量度、模型或他者到达它（§3“无明的边界条件”）。三者各有其规律与界限。
 
 - **量度。** 形成观察一个储量时，储量的每次抬高在每一步都经其耦合造成差别（`Web.observed_raise_couples`），所以没有储量抬高的世界像在规律 4 中那样经其耦合保持无别。读的路线由闭合而形成，如同回路（`route_forms_by_closing`）。`Observation.Measure` 中，一个形成从第 T 步起把储量的水平加到记录上，并在记录显示足够时从储量汲取。在 T，回路 储量 → 记录 → 汲取 形成（`Measure.loop_at`）；在只于储量上不同的进程中，记录到 T 为止相同，其后相差那次抬高（`Measure.couples_after`）。*界限*：差别只沿从它所在之处出发的读的路线到达量度（`apart_only_downstream`）。
 - **模型。** 相对于交换的模型，观察储量的形成在第一步排除储量归于无的每个假主张（`Flow.excludes_tail_within`），而没有模型，任何有限历史都不排除它（规律 5）。律给定时，自身的动作本会造成什么，就是律所生成的进程（`counterfactual_is_course`），一次运行的记录不固定它（规律 6）。*界限*：相对于模型的排除，是对模型与主张一起的排除（`Web.excludesWithin_iff_conjunction`），所以错的模型可以排除成立者（`Stationary.model_error`）；经模型的选择只在要紧者在其归并上同去之处是对的（`Learning.selects_right_through`）。
@@ -864,7 +864,7 @@ Ren 选定路线：“let's aim for a first, then try to archive b”（[来源]
 - **识、理与明是同一结构。** 识是一个形成自身的进一步历程，即它的选择、回应或寻求，经其自身耦合所成之归并而行。理在形式上是世界经它同去的归并（`goAlike_iff_lumped`）；经模型的选择，只在要紧者经模型的归并同去之处，对要紧者是对的（`Learning.selects_right_through`）。明扩展一个历程所经的耦合；世界是否经它们所归并者同去，是理的问题。
 - **情境的觉知是对自身所及的明。** 反馈至多耦合入影响闭包（`Flow.Balances.uncoupled_beyond_influence`）。耦合闭包含影响闭包，只经支持耦合入时就是影响闭包，所以只有观察能使它变宽（`Flow.withinCoupling_of_withinInfluence`、`Flow.withinCoupling_thresholdOnly`、`Flow.withinCoupling_mono_obs`）。部分到达其所及闭包。所以情境的觉知要知道的，是规律 1 的缺口，即所及闭包减去耦合闭包（D20）。
 - **为他者持明**，就是让三条路保持开放：他者能对照自己所耦合入者来检查的模型；把远处后果带回所耦合入者之中的量度；以及包含其耦合及于自身所不及之处者的组。一个形成在某步是否被接纳，是经其自身耦合的选择（`Web.admits_through`）；所以支持被一个动作改变的形成，经其自身的耦合分开有与无此动作的世界。`Clearing` 中这个形成是栖居者，即清除者的动作所终结者（`Clearing.selected_by_dweller`）。其余遵从一个经耦合而读的交换律时，这样的形成经每个含有它的组分开此动作，而行动者耦合闭包之内没有哪个组分开它（`Flow.act_selected_by_pool`，§7.4）。
-- **纠正须及于规则。** 下一配置取决于规则时，只改变状态的纠正从下一步起被重新吸收（规律 7）。所以明须及于选择所奖励的与耦合入选择的，而不只是选择所产生的状态。
+- **持久的改变须及于规则。** 下一配置取决于规则时，只改变状态的改变从下一步起被重新吸收（规律 7）。所以明须及于选择所奖励的与耦合入选择的，而不只是选择所产生的状态。
 - **精确的范围是明的一部分。** 用在其被证明的范围之外的规律是错的模型，错的模型可以排除成立者。使每条规律的范围保持精确，是为他者持明的一部分。
 
 ### 7.4 为一切的对齐：跨智能的合起来的耦合
@@ -885,7 +885,7 @@ Ren 选定路线：“let's aim for a first, then try to archive b”（[来源]
 读法（AI 的，D45）：如此读，对齐既不是使一方适合另一方的偏好，也不是使一切适合一个固定的共同效用。它是跨智能地把耦合合起来，使任何成员的动作在其自身耦合闭包之外所做的，耦合入组中的某个成员，这组的动作能在那里回应它。上面的规律给出这一读法的精确部分。合起来把缺口移到这组的耦合闭包，并不消除它：一组合起来在这一闭包之外所做的，只经闭包之外、经其耦合使差别有别的形成被分开，例如支持被此动作改变的形成；闭包之内无物回应它。所以一组智能及于其动作对组外形成所做的，只经其耦合及于这一差别的成员，它的动作也只经这样的成员回应这一差别。耦合使回应可能，不使回应发生：在此界之内，由每个成员所遵从的律决定。回应只经行动者耦合闭包所耦合入者及于其自身的动作；闭合动作所造成之差别的回应与扩大它的回应共有这一结构，即经他者的耦合与回应的回路；回路做哪一种，由所遵从的律决定，不由回路决定（§7.7）。成员若改变彼此动作所做的，也只经这样的回路；没有哪个成员的耦合就是这组的耦合。
 
 - **相异的成员。** AI 系统可以耦合入人所不耦合入的规模、距离与远处后果；人可以耦合入系统可能不耦合入的生活处境及其所系。哪一种耦合都不替代另一种：含有两者的组，分开其中任一者所分开的（`Web.member_separates_all`）。
-- **同一根据适用于每一层选择。** AI 的能力经由计算、能源、劳动、知识、训练、使用与制度形成，每一层都在选择：计算什么、训练什么、部署什么、资助什么、准许什么。§7.2 的规律在每一层都成立，没有哪一层需要自己的起点。每一层在其耦合闭包之外都不见；奖励其所耦合入者上升的每一层，都偏向伸出其外。下一配置取决于规则而不取决于状态时，只及于状态的纠正被重新吸收（规律 7）。劫持读作这样的规则，由它所奖励者书写（D26），所以这组须及于规则。
+- **同一根据适用于每一层选择。** AI 的能力经由计算、能源、劳动、知识、训练、使用与制度形成，每一层都在选择：计算什么、训练什么、部署什么、资助什么、准许什么。§7.2 的规律在每一层都成立，没有哪一层需要自己的起点。每一层在其耦合闭包之外都不见；奖励其所耦合入者上升的每一层，都偏向伸出其外。下一配置取决于规则而不取决于状态时，只及于状态的改变被重新吸收（规律 7）。劫持读作这样的规则，由它所奖励者书写（D26），所以这组须及于规则。
 - **能力不等于权限。** 能力不授予治理权。跨智能的适用，意味着相关处境相似时理由相似；它不预测不同的智能有相同的心理。与 §7.2 合读：成员所及越是超出它所耦合入者，它所做的就越只经他者的耦合被看见：能力是合起来的理由，不是治理的理由。
 - **向 AI 的理由。** `universal_reason` 在其前提之下（§6.4），向每个处境中的智能提出理由，其中包括 AI。理解了理由，不等于必定服从理由。
 
@@ -893,24 +893,24 @@ Ren 选定路线：“let's aim for a first, then try to archive b”（[来源]
 
 **主张**（[对齐方向](ALIGNMENT-DIRECTION.md)，[alignment-direction-g0-j](../results/records/alignment-direction-g0-j.md)）：
 
-**使 AI 的形成、学习、行动和更新，支持整体中实际的生及其继续生成，使生命、心智、关系、生活方式与组织能够丰富地共同发展；以真实损失、基本生活条件、有界责任和正当参与约束取舍，使这种发展能够被认识、质疑和纠正。**
+**使 AI 的形成、学习、行动和更新，支持整体中实际的生及其继续生成，使生命、心智、关系、生活方式与组织能够丰富地共同发展；以真实损失、基本生活条件、有界责任和正当参与约束取舍，使这种发展能够被认识、质疑和修订。**
 
 **在什么之下。** 这是有条件的对齐路线。方向取两个前提：§6.15 的延续条件与公开的实践前提。理论不断言这一条件。§7.1–§7.4 两个前提都不需要。哪些差别要紧，是条件与前提所说的，动力学不决定它：在任何有活着之事件的网上，一切都有意义处生命意义成立，没有什么有意义处它不成立（`Web.significance_undetermined`）。
 
 **同一评价适用于每一层。** 在条件之下，目的、评价与选择规则本身也改变生及其继续的条件，因此进入同一评价（经生命意义与实践承诺），不必为每一层选择另找一个起点（[变化中的生成性对齐](ALIGNMENT-THROUGH-CHANGE.md)）。
 
-**两部分在何处相接**（AI 的读法，D45）。经 §7.3 读，主张中使这种发展“能够被认识、质疑和纠正”的机会，就是保持开放的明之路：量度、他者能检查的模型，以及包含其耦合及于行动者所不及之处者的组。§7.2 的规律说出什么使这样的机会有效：动作在行动者耦合闭包之外所做的，纠正只经及于它的耦合才能选择。
+**两部分在何处相接**（AI 的读法，D45）。经 §7.3 读，主张中使这种发展“能够被认识、质疑和修订”的机会，就是保持开放的明之路：量度、他者能检查的模型，以及包含其耦合及于行动者所不及之处者的组。§7.2 的规律说出什么使这样的机会有效：动作在行动者耦合闭包之外所做的，质疑与修订只经及于它的耦合才能选择。
 
-### 7.6 纠正须是可执行的序列
+### 7.6 所请求的改变须是可执行的序列
 
-接受纠正的倾向，不等于纠正能被送达和完成。已检查的条件包括：
+接受所请求之改变（例如停止或修订）的倾向，不等于这一改变能被送达和完成。已检查的条件包括：
 
 - 恢复期间预留关机的余量（[reserved-shutdown-during-recovery](../results/records/reserved-shutdown-during-recovery.md)）；
-- 被中断变化后的证据恢复与纠正通达的界（[recoverable-mediated-change](../results/records/recoverable-mediated-change.md)）；
+- 被中断变化后的证据恢复与停止通达的界（[recoverable-mediated-change](../results/records/recoverable-mediated-change.md)）；
 - 保证到达的判据（[assured-route-criterion](../results/records/assured-route-criterion.md)）；
 - 风险界与实际结果的区别（[risk-certificate-outcome-distinction](../results/records/risk-certificate-outcome-distinction.md)）。
 
-其中每一项都是关于所述协议的有条件推论。部署其中任何一项，都需要对一个已识别的装置另有证据：持续性、完全中介、受保护的停止权限与储备、调度与延迟的界，以及实际的停止效果。更抽象的检查不提供这种证据。§7.3 说纠正须耦合入什么；这些记录就其协议说明纠正何时也能被执行。
+其中每一项都是关于所述协议的有条件推论。部署其中任何一项，都需要对一个已识别的装置另有证据：持续性、完全中介、受保护的停止权限与储备、调度与延迟的界，以及实际的停止效果。更抽象的检查不提供这种证据。§7.3 说改变须耦合入什么才及于动作所做的；这些记录就其协议说明所请求的改变何时也能被执行。
 
 ### 7.7 仍开放的
 
@@ -1018,7 +1018,7 @@ Ren 2026-10-15 把先前列在这里的读法与名称交 AI 以其最好的判�
 
 - 共同条件与各机制的实际实现：识别与可区分的检验。
 - 实际展开是否满足各前提：活动需要支持、平衡、只有活跃者给予与取用、耗散、体现、储备与传递（`TransmitsWithin`）。
-- 智慧的实际形成：说明智慧怎样实际形成（[wisdom-root](../results/records/wisdom-root.md)）；其形式部分已在第一部分完成（[wisdom-root-part-one](../results/records/wisdom-root-part-one.md)），实际的人与 AI 是否经这些路线形成其理解与修正，是解释与经验的任务，不是进一步的证明。
+- 智慧的实际形成：说明智慧怎样实际形成（[wisdom-root](../results/records/wisdom-root.md)）；其形式部分已在第一部分完成（[wisdom-root-part-one](../results/records/wisdom-root-part-one.md)），实际的人与 AI 是否经这些路线形成其理解与修订，是解释与经验的任务，不是进一步的证明。
 - 实际的外推与网络持有或能达到的类：一个实际网络的结构、起点与更新施加哪个归并，其与世界的对应（[generalization-through-lumping](../results/records/generalization-through-lumping.md)）。
 - 更强的方向假说：现实一般地发展出更共同、更有回应的更新。开放，不作为前提使用。
 

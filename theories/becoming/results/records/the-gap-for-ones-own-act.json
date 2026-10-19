@@ -82,8 +82,8 @@
     "zh": "偏向伸出的一般形式；在传递、后代与开放之下伸出者份额的上升；独立审查。"
   },
   "correspondence": {
-    "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"The gap for one's own act as a general theorem\". Becoming.Selection had it in one world (Clearing, from an instance of the closure lemma) and in general only with the second flow and the response supplied (Flow.unselected_beyond_coupling_responsive). Here the response is derived from a law of exchange (ExchangeLaw.Through.responds, counterfactual-is-the-course), and in the course form the second flow is the law's own course. Ren, 18 October 2026: \"please see what else is there to do - keep pushing the frontier till finishing\" (provenance, not warrant). Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): what a formation can select for or against is bounded by its coupling closure, not by its reach; correcting an act whose consequences lie beyond takes a coupling that reaches them (Clearing.selected_pooled).",
-    "zh": "本章开放纲领（第 8.2 节，选择、原因与实验）列出“The gap for one's own act as a general theorem”。Becoming.Selection 在一个世界中有它（Clearing，来自闭包引理的实例），一般地只在给出第二条流与回应时有它（Flow.unselected_beyond_coupling_responsive）。这里回应由交换律推出（ExchangeLaw.Through.responds，counterfactual-is-the-course），进程形式中第二条流是律自己的进程。Ren，2026年10月18日：“please see what else is there to do - keep pushing the frontier till finishing”（来历，不是根据）。读法（AI 的，以理论第 7 节的范围在一个说明中采用，DELEGATED-CHOICES D45）：一个形成所能选取或排斥的，以其耦合闭包为界，不以其所及为界；纠正后果在闭包之外的动作，需要及于后果的耦合（Clearing.selected_pooled）。"
+    "en": "The chapter's open programme (section 8.2, Selection, causes and experiment) named \"The gap for one's own act as a general theorem\". Becoming.Selection had it in one world (Clearing, from an instance of the closure lemma) and in general only with the second flow and the response supplied (Flow.unselected_beyond_coupling_responsive). Here the response is derived from a law of exchange (ExchangeLaw.Through.responds, counterfactual-is-the-course), and in the course form the second flow is the law's own course. Ren, 18 October 2026: \"please see what else is there to do - keep pushing the frontier till finishing\" (provenance, not warrant). Reading (the AI's, adopted in one account with the scope of chapter section 7, DELEGATED-CHOICES D45): what a formation can select for or against is bounded by its coupling closure, not by its reach; responding to an act whose consequences lie beyond takes a coupling that reaches them (Clearing.selected_pooled).",
+    "zh": "本章开放纲领（第 8.2 节，选择、原因与实验）列出“The gap for one's own act as a general theorem”。Becoming.Selection 在一个世界中有它（Clearing，来自闭包引理的实例），一般地只在给出第二条流与回应时有它（Flow.unselected_beyond_coupling_responsive）。这里回应由交换律推出（ExchangeLaw.Through.responds，counterfactual-is-the-course），进程形式中第二条流是律自己的进程。Ren，2026年10月18日：“please see what else is there to do - keep pushing the frontier till finishing”（来历，不是根据）。读法（AI 的，以理论第 7 节的范围在一个说明中采用，DELEGATED-CHOICES D45）：一个形成所能选取或排斥的，以其耦合闭包为界，不以其所及为界；回应后果在闭包之外的动作，需要及于后果的耦合（Clearing.selected_pooled）。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionGap.lean",
   "aliases": [
@@ -209,7 +209,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "822dc2b189f126b464022cc9a8a91cceb6cbb42139f278d2d7047a861395b215"
+      "sha256": "2aef20279901b3d848306e67b4e1c2b8f9a6f6cba3ade0dde40437fbc73cfe30"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-17-registration-dualist-vocabulary.md",
@@ -332,6 +332,14 @@
     {
       "en": "19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.",
       "zh": "2026年10月19日，A4：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向（诸读法在一个说明中定位，D45）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): The AI's reading in the correspondence: \"correcting an act\" read as responding to it. \"Correct\" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the field now states the structure meant. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：对应中 AI 的读法：“纠正动作”读作回应它。“纠正”预设了关系之外的标准，即一条对的进程和一个要去除的错误（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）；此字段现陈述所指的结构。论断不变。"
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of \"correction\" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 (\"one ground\"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：重新指向 THE-THEORY-OF-BECOMING.md。只改措辞（“纠正”改述为所指的结构，见命名研究第 9 节）；重新指向前已读。论断不变。"
     }
   ]
 }

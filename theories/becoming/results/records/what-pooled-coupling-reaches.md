@@ -31,7 +31,7 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- Which formations pool, or how a pool forms, lasts or resists capture; that a pool's selection responds to what it separates or corrects anything; which acts are taken, or that any is wrong.
+- Which formations pool, or how a pool forms, lasts or resists capture; that a pool's selection responds to what it separates or closes any difference; which acts are taken, or that any is wrong.
 - Claims about every later step, such as a formation's ending: the selections are of level histories up to a step.
 - The member-level converse without a list or decided coupling: constructively, a pool's separation then gives only that not every member couples the two alike.
 - **Counterexample:** Clearing.within_closure_unseparated: blindness beyond a pool's closure is sufficient, not necessary, for a difference to go unseparated by a member: the clearer's part lies within the clearer's closure, the clearer couples the levels with and without it alike, and the dweller couples them apart. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SelectionPool.lean)
@@ -48,7 +48,7 @@ Canonical source: [SelectionPool.lean](../../../../experiments/integrated-correc
 <a id="next--下一步"></a>
 ## Next
 
-Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); which responses to what a pool separates correct the act (what a pool's acts can respond to is stated in what-a-pools-acts-respond-to); an independent review.
+Which formations pool, and how a pool forms, lasts and resists rules written by those it rewards (target-capture); which law closes rather than widens a difference a pool separates (what a pool's acts can respond to is stated in what-a-pools-acts-respond-to); an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -117,6 +117,8 @@ Aliases: `what pooled coupling reaches`, `合起来的耦合及于什么`, `the 
 - 19 October 2026, M4 (Becoming.Rejoining): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: M4 added the bullet on where two courses rejoin, restated M3's sentences of section 7.4 without "correction", replaced the "Which responses correct" bullet of section 7.7, extended the section 7 line of the open readings in section 8.4, revised the "Selection, causes and experiment" row of section 8.2 and updated the section 9 receipt, counts and connectivity text). The claim is unchanged.
 - 19 October 2026, A4 (Ren 19 October: "integrate all, the theory is a whole, not stitched pieces, go ahead"): The reading is adopted with the scope of chapter section 7, whose readings were marked open until 19 October 2026 (DELEGATED-CHOICES D45 (2)). The claim is unchanged.
 - 19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.
+- 19 October 2026, N7 (the reading pass on "correction"): The first non-implication and next_delta: "corrects" read as closing a difference, as M4 states it. "Correct" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: "correct? this is a dualist word, are we drifting off?"); the field now states the structure meant. The claim is unchanged.
+- 19 October 2026, N7 (the reading pass on "correction"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of "correction" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.
 
 </details>
 

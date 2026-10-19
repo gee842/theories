@@ -4,7 +4,7 @@ we drifting off?"). Replaces each use the naming study's section 9 restates, aft
 once on the tree; updates the live fields of four records; re-points the record references to the changed files, with
 a history note. Docs and records only: no Lean, no statement changed. Lands after N6 (the section 3 sentence follows
 N6's wording; before N6, its first block still applies and the second reads N6's text) and is independent of M4's
-blocks, which restate M4's and M3's sentences (section 7.4 last paragraph, 7.7, 8.2, the 8.4 clause on loops).
+blocks, which restate M4's and M3's sentences (section 7.4 last paragraph, 7.7, 8.2), all landed.
 
 usage (from the repository root):
   python3 -B .../n7-correction-reading/apply_n7.py --check    count every block on the tree, change nothing
@@ -67,11 +67,7 @@ BLOCKS = {
          'carried out.',
          '§7.3 says what a change has to couple into to reach what an act does; these records state, for their protocols, '
          'when a requested change can also be carried out.'),
-        # sections 8.4 and 8.7
-        ('with correction reaching the rule and each law\'s scope kept exact;',
-         'with a lasting change reaching the rule and each law\'s scope kept exact;'),
-        ('the conditional direction\'s opportunities to correct read as the routes of 明',
-         'the conditional direction\'s opportunities to revise read as the routes of 明'),
+        # section 8.7 (A4 removed the list of open readings in section 8.4 that two blocks first edited)
         ('Whether actual humans and AI form understanding and correction along these routes',
          'Whether actual humans and AI form understanding and revision along these routes'),
     ],
@@ -96,8 +92,6 @@ BLOCKS = {
         ('被中断变化后的证据恢复与纠正通达的界', '被中断变化后的证据恢复与停止通达的界'),
         ('§7.3 说纠正须耦合入什么；这些记录就其协议说明纠正何时也能被执行。',
          '§7.3 说改变须耦合入什么才及于动作所做的；这些记录就其协议说明所请求的改变何时也能被执行。'),
-        ('纠正须及于规则，各规律的范围保持精确', '持久的改变须及于规则，各规律的范围保持精确'),
-        ('有条件之方向中纠正的机会读作明之路', '有条件之方向中修订的机会读作明之路'),
         ('实际的人与 AI 是否经这些路线形成其理解与修正', '实际的人与 AI 是否经这些路线形成其理解与修订'),
     ],
     AD: [
@@ -163,7 +157,7 @@ RECORD_WHAT = {
 }
 FILE_WHAT = {
     EN: 'N7 restated the uses of "correction" in sections 3 (the boundary condition for 无明, and the one-step inquiry), '
-        '7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6, 8.4 and 8.7',
+        '7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7',
     ZH: 'N7 restated the uses of 纠正 in the same places of the zh edition',
     AD: 'N7 restated the central claim ("revise" for "correct"), section 2 and the heading of section 4 item 3',
     ADZ: 'N7 restated the central claim (修订 for 纠正), section 2 and section 4 item 3',

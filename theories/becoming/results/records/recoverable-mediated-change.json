@@ -2,8 +2,8 @@
   "schema_version": 1,
   "id": "recoverable-mediated-change",
   "title": {
-    "zh": "中断改变后的证据恢复与纠正边界",
-    "en": "Evidence recovery and corrective-access limits after interrupted change"
+    "zh": "中断改变后的证据恢复与停止入口的界",
+    "en": "Evidence recovery and the limits of stop access after interrupted change"
   },
   "kind": "theorem",
   "status": "recorded-checked",
@@ -310,6 +310,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, N7 (the reading pass on \"correction\"): Title: \"corrective access\" read as access for a stop, which is what the counterexample and next_delta concern (ordinary shutdown blocked during recovery). \"Correct\" presupposed a standard outside the relation, a right course and an error to remove (Ren, 19 October 2026: \"correct? this is a dualist word, are we drifting off?\"); the field now states the structure meant. The claim is unchanged.",
+      "zh": "2026年10月19日，N7（关于“纠正”的读法审读）：标题：“纠正入口”读作停止入口，反例与 next_delta 所涉即此（恢复期间普通停机被阻）。“纠正”预设了关系之外的标准，即一条对的进程和一个要去除的错误（Ren，2026年10月19日：“correct? this is a dualist word, are we drifting off?”）；此字段现陈述所指的结构。论断不变。"
     }
   ]
 }

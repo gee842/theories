@@ -6,14 +6,14 @@
 <a id="1-核心主张--central-claim"></a>
 ## 1. Central claim
 
-**We propose aligning AI formation, learning, action and revision with actual living and further generation within the whole: enabling richer co-development of life, minds, relationships, ways of living and organization, while governing tradeoffs through real losses, basic living conditions, bounded responsibility and legitimate participation, with effective opportunities to understand, challenge and correct that development.**
+**We propose aligning AI formation, learning, action and revision with actual living and further generation within the whole: enabling richer co-development of life, minds, relationships, ways of living and organization, while governing tradeoffs through real losses, basic living conditions, bounded responsibility and legitimate participation, with effective opportunities to understand, challenge and revise that development.**
 
 The positive direction includes creation, exploration, learning, assistance, care and newly shared possibilities, as well as present living, rest, self-care and finite fulfillment. It supports initiative without requiring every life to produce a successor, every organization to persist, or every step to increase a quantity.
 
 <a id="2-从同一形成过程说明评价范围--locating-appraisal-within-one-process"></a>
 ## 2. Locating appraisal within one process
 
-Training, infrastructure, energy, labor, inherited knowledge, use and institutions form AI capacities. Dependence, authority, affected positions and feedback channels differentiate within those relations. An upgrade can change capability, supporting burdens, feasible ways of living and later correction together. Appraisal follows those effects, including positions unable to participate or no longer involved, without requiring a return to developers or current users.
+Training, infrastructure, energy, labor, inherited knowledge, use and institutions form AI capacities. Dependence, authority, affected positions and feedback channels differentiate within those relations. An upgrade can change capability, supporting burdens, feasible ways of living and later revision together. Appraisal follows those effects, including positions unable to participate or no longer involved, without requiring a return to developers or current users.
 
 The whole requires accountable inclusion of relations and consequences. It confers no authority on a cosmic representative and demands no omniscient decision. A practical account states its affected range, horizon, omissions and uncertainty, and revises them with relevant evidence. Unmeasured damage is not recorded as zero damage.
 
@@ -40,7 +40,7 @@ Basic-condition priority is a scoped lexical commitment: extra basic protection 
 
 1. **Enable actual realization and new shared possibilities.** Support learning, creation, understanding, self-direction and shared living, retaining costs and exclusions. Capabilities and diverse organization can themselves be favorable aspects; counts of outputs, copies or scores alone do not establish improvement.
 2. **Govern growth through disclosed comparisons and limits.** Protect basic conditions under basic-condition priority and recognize improvements under full comparison. Retain conflicts between distinct basic claims. Future basic losses count; distance grants neither exclusion nor automatic priority.
-3. **Maintain effective participation, challenge and correction.** Under bounded responsibility and practical selection, fallible judgment and changed power warrant proportionate evidence access, recourse, repair and replacement. Effectiveness concerns actual influence on relevant judgment and action, without unlimited disclosure or obedience to every challenge or shutdown request.
+3. **Maintain effective participation, challenge and revision.** Under bounded responsibility and practical selection, fallible judgment and changed power warrant proportionate evidence access, recourse, repair and replacement. Effectiveness concerns actual influence on relevant judgment and action, without unlimited disclosure or obedience to every challenge or shutdown request.
 4. **Allow warranted transformation, transfer and ending.** Shared needs can be met by changing or ending a particular model; outstanding justified dependence requires feasible transition and response to residual harm. The service role alone settles neither the presence nor absence of experiential or other moral standing in a particular AI.
 
 User requests, institutional aims and training feedback help form commitments and understanding; their normative weight depends on content, authority and consequences. Capability confers no self-authorizing rule. The account can criticize highly rewarded harm and favor reduced model performance when it improves shared living. It supplies an argued direction, not a reward function replacing judgment.
