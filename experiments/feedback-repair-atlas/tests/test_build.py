@@ -27,7 +27,8 @@ class EvidenceBindingTests(unittest.TestCase):
         ]}))
         for receipt, verifier in [('verification.json', 'verify.py'),
                                   ('interaction-verification.json', 'verify_interaction.py'),
-                                  ('gradual-verification.json', 'verify_gradual.py')]:
+                                  ('gradual-verification.json', 'verify_gradual.py'),
+                                  ('research-verification.json', 'verify_research.py')]:
             script = self.here / 'model' / verifier
             script.write_text('# test fixture verifier\n')
             self.here.joinpath('model', receipt).write_text(json.dumps({
@@ -38,6 +39,8 @@ class EvidenceBindingTests(unittest.TestCase):
             }))
         (self.here / 'src/atlas.fragment.html').write_text('<script>const data=__RETRY_DATA__;</script>')
         (self.here / 'src/dynamics.js').write_text('// fixture dynamics\n')
+        (self.here / 'src/research.js').write_text('// fixture research dynamics\n')
+        (self.here / 'src/research.fragment.html').write_text('<section>research fixture</section>')
         (self.here / 'src/shell.html').write_text('<main><!--__ATLAS_FRAGMENT__--></main>')
         old = builder.ROOT, builder.HERE
         self.addCleanup(lambda: self.restore(old))

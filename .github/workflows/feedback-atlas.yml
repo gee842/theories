@@ -23,6 +23,6 @@ jobs:
       - name: Check displayed source bindings and reproducible page
         run: python3 -B experiments/feedback-repair-atlas/build.py --check
       - name: Check executable interaction dynamics
-        run: node --test experiments/feedback-repair-atlas/tests/dynamics.test.cjs
+        run: node --test experiments/feedback-repair-atlas/tests/*.cjs
       - name: Check fail-closed source binding
         run: python3 -B -m unittest discover -s experiments/feedback-repair-atlas/tests -p 'test_*.py'

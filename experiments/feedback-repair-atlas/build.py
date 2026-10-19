@@ -26,7 +26,8 @@ def build():
     receipts = {}
     for receipt_name, verifier in [('verification.json', 'verify.py'),
                                    ('interaction-verification.json', 'verify_interaction.py'),
-                                   ('gradual-verification.json', 'verify_gradual.py')]:
+                                   ('gradual-verification.json', 'verify_gradual.py'),
+                                   ('research-verification.json', 'verify_research.py')]:
         receipt = json.loads((HERE / 'model' / receipt_name).read_text())
         if receipt['status'] != 'passed' or receipt['axiom_dependencies']:
             raise ValueError('Unverified application: ' + receipt_name)
@@ -39,12 +40,12 @@ def build():
                                  ['status', 'checked_at_utc', 'theorems', 'declarations']}
         receipts[receipt_name]['matching_source_hashes'] = len(receipt['source_sha256'])
     data = json.dumps(dict(components=components, receipts=receipts,
-                          sourceModel='GradualInteractionTrial'), ensure_ascii=False).replace('</', '<\\/')
-    fragment = (HERE / 'src/atlas.fragment.html').read_text()
+                          sourceModel='ResearchInteractionTrial'), ensure_ascii=False).replace('</', '<\\/')
+    fragment = (HERE / 'src/research.fragment.html').read_text() + '<details><summary>Earlier tally model · six abstraction levels</summary>' + (HERE / 'src/atlas.fragment.html').read_text() + '</details>'
     if fragment.count('__RETRY_DATA__') != 1:
         raise ValueError('Expected exactly one data placeholder')
     fragment = fragment.replace('__RETRY_DATA__', data)
-    dynamics = (HERE / 'src/dynamics.js').read_text()
+    dynamics = (HERE / 'src/dynamics.js').read_text() + '\n' + (HERE / 'src/research.js').read_text()
     # Embed before the atlas script; the delivered page needs no modules, APIs or CDNs.
     fragment = '<script>\n' + dynamics + '\n</script>\n' + fragment
     shell = (HERE / 'src/shell.html').read_text()

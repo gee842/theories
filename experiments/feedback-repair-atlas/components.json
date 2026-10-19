@@ -149,6 +149,46 @@
       "path": "experiments/feedback-repair-atlas/model/GradualInteractionTrial.lean",
       "end": 226,
       "sha256": "c31a892815ea023f5bb2daea4e69ed5dbe1ad747868f0e2b94cb8fc340ce1266"
+    },
+    {
+      "id": "research-state",
+      "label": "Separate expectation, confidence and credibility",
+      "name": "Separate expectation, confidence and credibility",
+      "line": 60,
+      "end": 97,
+      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
+      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
+      "boundary": "These are supplied state variables, not measured psychological quantities. Confidence is positive prior evidence weight."
+    },
+    {
+      "id": "research-coupling",
+      "label": "Compose two situated updates",
+      "name": "Compose two situated updates",
+      "line": 138,
+      "end": 166,
+      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
+      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
+      "boundary": "Alex acts, Maya learns and responds, Alex learns from her reply. Core coupling and readout are reused under supplied laws."
+    },
+    {
+      "id": "research-lapse",
+      "label": "Same lapse, different histories",
+      "name": "Same lapse, different histories",
+      "line": 210,
+      "end": 249,
+      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
+      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
+      "boundary": "Exact synthetic histories and fixed response probes; no empirical calibration or obligation to engage."
+    },
+    {
+      "id": "research-credibility",
+      "label": "Same explanation, different credibility",
+      "name": "Same explanation, different credibility",
+      "line": 257,
+      "end": 276,
+      "path": "experiments/feedback-repair-atlas/model/ResearchInteractionTrial.lean",
+      "sha256": "592642168bfa6b0bba5d30f9c306df7cf9ed520edb6b4adc554717a32163a910",
+      "boundary": "Credibility weights fresh favorable reports, not direct behavior. It does not establish motives or truth of a report."
     }
   ]
 }

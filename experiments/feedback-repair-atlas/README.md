@@ -1,8 +1,8 @@
 # Feedback and repair atlas
 
-A worked application of the Becoming proofs: explore how different retained
-histories, gradual supporting evidence, defensive lapses and retries interact
-under explicitly supplied toy response laws.
+A worked application of the Becoming proofs: explore how expectation, confidence
+and credibility change a shared exchange under research-informed candidate laws.
+Compare the earlier gradual tally model across six abstraction levels as well.
 
 Open [index.html](index.html) locally, or serve this directory:
 
@@ -72,9 +72,10 @@ From the repository root:
 LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify.py
 LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify_interaction.py
 LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify_gradual.py
+LEAN=/absolute/path/to/lean python3 -B experiments/feedback-repair-atlas/model/verify_research.py
 python3 -B experiments/feedback-repair-atlas/build.py
 python3 -B experiments/feedback-repair-atlas/build.py --check
-node --test experiments/feedback-repair-atlas/tests/dynamics.test.cjs
+node --test experiments/feedback-repair-atlas/tests/*.cjs
 python3 -B -m unittest discover -s experiments/feedback-repair-atlas/tests -p 'test_*.py'
 ```
 
@@ -98,3 +99,25 @@ plugin, local visualization folder, or particular user's home path is needed.
 The path-filtered `Feedback atlas` CI job checks the deterministic page, source
 and receipt bindings, and executable dynamics. It does not install Lean or rerun
 the formal compiler; reproduce those checks explicitly with the commands above.
+
+## Research-informed version
+
+The first view now uses `ResearchInteractionTrial.lean`: expectation, confidence
+as prior evidence weight, and explanation credibility are distinct. Select each
+partner's short or longer history independently, apply an identical lapse, and
+compare a returned defense, constructive reply, next-turn interruption, or pause.
+High/low verified report histories affect a favorable explanation's weight without
+excusing direct behavior. Select an earlier exchange to branch from it.
+
+The earlier six-level tally model remains available in a disclosure, labeled with
+its original supplied assumptions. Its fixed +1/-2 weights are not evidence-fitted.
+The [new walkthrough](model/RESEARCH-INFORMED-MODEL.md) and
+[research map](model/PSYCHOLOGICAL-GROUNDING.md) explain sources and limitations.
+The new candidate is not a volatility model or a calibrated psychological predictor.
+
+The new Lean application has 22 theorems and 52 audited declarations (51 transitive
+modules), with empty reported axiom dependencies. Together, the four human
+applications have 75 theorems and 152 source declaration audits. `research.js`
+implements exact rational arithmetic and separate browser checks reproduce the
+Lean examples; there is no formal Lean-to-JavaScript compilation theorem. The
+build now also binds the fourth receipt, verifier and displayed source excerpts.

@@ -23,3 +23,10 @@ choose clarification are supplied assumptions; no actual dialogue was measured.
 
 See the [atlas documentation](../README.md) for reproduction commands, imported
 components, human correspondence and the boundaries of the higher-level views.
+
+## Research-informed extension
+
+[Three-part learning model](RESEARCH-INFORMED-MODEL.md) separates expectation,
+confidence and credibility, with exact same-lapse comparisons for both partners.
+[Psychological grounding](PSYCHOLOGICAL-GROUNDING.md) records primary research and
+assumption limits. Run `LEAN=/absolute/path/to/lean python3 -B verify_research.py`.
