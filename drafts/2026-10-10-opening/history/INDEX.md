@@ -16,3 +16,5 @@ Retired material, moved here with its bytes unchanged. Each file's former path, 
 | [OPENING-V6.md](OPENING-V6.md) | `drafts/2026-10-10-opening/OPENING-V6.md` | 1 | superseded: draft versions, notes and review of the opening; the applied text is theories/becoming/OPENING.md (v6 accuracy edits, 04d084aca) | K1 |
 | [OPENING-V7-PROPOSAL.md](OPENING-V7-PROPOSAL.md) | `drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md` | 1 | applied: the version 7 proposal; the applied text is theories/becoming/OPENING.md (19 October 2026) | opening-v7 |
 | [OPENING-V7.md](OPENING-V7.md) | `drafts/2026-10-10-opening/OPENING-V7.md` | 1 | frozen: the applied version 7 of the opening (19 October 2026) | opening-v7 |
+| [OPENING-V8-PROPOSAL.md](OPENING-V8-PROPOSAL.md) | `drafts/2026-10-10-opening/OPENING-V8-PROPOSAL.md` | 1 | applied: the version 8 proposal; the applied text is theories/becoming/OPENING.md (20 October 2026) | opening-v8 |
+| [OPENING-V8.md](OPENING-V8.md) | `drafts/2026-10-10-opening/OPENING-V8.md` | 1 | frozen: the applied version 8 of the opening (20 October 2026) | opening-v8 |
