@@ -90,6 +90,7 @@ Aliases: `capture through the rule`, `经由规则的捕获`, `rule capture`, `t
 ### History
 
 - 19 October 2026: added (RC), the third gap the map of the Chinese sources found, its proposed statement checked, sharpened where rules can favour the others, and refuted there without the start condition; study section 213; readings D57.
+- 19 October 2026, RG (two-sided regulation and late reading): BECOMING-RENEWAL-READING.md, CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RG added study section 214; CHINESE-SOURCES-AND-BECOMING.md: RG reprinted the passage tables of the traditions it touched, marked the first gap closed in section 8 with a paragraph after the table, and rebuilt the section 11 line of open gaps; THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts; passages.json: RG added declarations and its record to four passages, replaced the sentences of their readings that named the first gap and marked that gap closed (other passages unchanged)). The claim is unchanged.
 
 </details>
 

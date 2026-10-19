@@ -192,6 +192,7 @@ import Becoming.Onward
 import Becoming.Typicality
 import Becoming.Situations
 import Becoming.Propagation
+import Becoming.Regulation
 import Becoming.Loops
 import Becoming.Remainder
 import Becoming.Routes
@@ -2035,6 +2036,17 @@ readings of the unfolding (`Becoming.Labelled`).
   positive exactly along a route in time of positive strengths, on routes of `TimedResponse`'s
   spread where they are registered; carried differences add. A held difference arrives without
   bound through a chain, and a loop of strength one doubles it every step.
+* `Becoming.Regulation` (L4): a level held from both sides, and a level read late, with no premise
+  beyond what each law names. With balance, the joint exchange at a condition is within the gap to
+  `m` on both sides exactly where the next level lies between `m` and the level; within the gap
+  and opposing the departure on both sides, the gap falls by one a step and the level settles at
+  `m` within its gap; beyond the gap an opposing exchange crosses `m`, a witness oscillating about
+  `m` without end, and one side alone is not regulation. A rule reading `ℓ` steps late cannot
+  tell apart rests that differ over `ℓ + 1` steps, so no band narrower than `2 (ℓ + 1) d` is kept
+  under a rest moving the level by `d` a step, and the late return keeps exactly that. The late
+  relay overshoots its band by lateness times step; past `b + 2 ≤ a + (ℓ + 1) M` a start held
+  below the band crosses both ends without end, within it every such start settles, and the
+  relay runs for every start where `(ℓ + 1) M ≤ b + 1`, so the threshold is exact.
 * `Becoming.Loops` (L4): how a carried difference grows, with no premise beyond the strengths each
   statement names. The carried amount expands by order: order `j`, what routes of at most `j`
   responses carry, rises to the carried amount and is exact up to step `j`. Where no loop of

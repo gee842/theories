@@ -1,0 +1,24 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories--claude-worktrees-unruffled-mendeleev-6f6ba1/87425f54-f1b7-4594-8e84-5ae0c9b1f84b/scratchpad/tree2",
+  "modules": 293,
+  "ran": [
+    "Becoming.Regulation",
+    "Becoming",
+    "BecomingRegulationAxiomAudit",
+    "BecomingAxiomAudit"
+  ],
+  "reused": 291,
+  "unclean": [],
+  "audits": {
+    "Becoming.Regulation": {
+      "theorems": 108,
+      "declarations": 136,
+      "with_axioms": {}
+    },
+    "Becoming": {
+      "theorems": 0,
+      "declarations": 0,
+      "with_axioms": {}
+    }
+  }
+}

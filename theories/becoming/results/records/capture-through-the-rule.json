@@ -401,12 +401,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "8431893d2f9244b975d8230190c7b360ad5e5aac30161ae8b97be5083485be2a"
+      "sha256": "537f188554a8737bae2774fe082cd9ad8c405741900937af81ea8421dca01668"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9bc32961105ff13b103bc5ae8d1092719837a9a84e3ea43b2a2610dc579ec4c8"
+      "sha256": "21700e33ed207345eeda2606d1ef5504e43359083caa84fcf8df855a4b7b3c94"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DELEGATED-CHOICES.md",
@@ -416,12 +416,12 @@
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "integration",
-      "sha256": "1be5cc4fbce5a30ec6cbb52587cfdf9a96f94be1f449240a968a3998e831e8b2"
+      "sha256": "b21a7c6cfe68a512cc250f377f14e2eb889bf540ab47a1538b8a6eb28b06514b"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
       "role": "integration",
-      "sha256": "255cfdc2121d55930a33404a9e91410c74024278b572975b8cfa18960d00d15d"
+      "sha256": "6d97988bc215d4e5dfa3ac0a9841365c3dc91f21bcbd873891e99d252f3e7a47"
     }
   ],
   "proof_bindings": [
@@ -437,6 +437,10 @@
     {
       "en": "19 October 2026: added (RC), the third gap the map of the Chinese sources found, its proposed statement checked, sharpened where rules can favour the others, and refuted there without the start condition; study section 213; readings D57.",
       "zh": "2026年10月19日：新增（RC），中国思想映射所见的第三项缺口；其所拟陈述经查验，在规则可偏向他者处收紧，在那里没有起点条件则被驳倒；研究第 213 节；读法 D57。"
+    },
+    {
+      "en": "19 October 2026, RG (two-sided regulation and late reading): BECOMING-RENEWAL-READING.md, CHINESE-SOURCES-AND-BECOMING.md, THE-THEORY-OF-BECOMING.md, passages.json re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RG added study section 214; CHINESE-SOURCES-AND-BECOMING.md: RG reprinted the passage tables of the traditions it touched, marked the first gap closed in section 8 with a paragraph after the table, and rebuilt the section 11 line of open gaps; THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts; passages.json: RG added declarations and its record to four passages, replaced the sentences of their readings that named the first gap and marked that gap closed (other passages unchanged)). The claim is unchanged.",
+      "zh": "2026年10月19日，RG（双向调节与迟读）：读过改动后，BECOMING-RENEWAL-READING.md、CHINESE-SOURCES-AND-BECOMING.md、THE-THEORY-OF-BECOMING.md、passages.json 重新指向。论断不变。"
     }
   ]
 }

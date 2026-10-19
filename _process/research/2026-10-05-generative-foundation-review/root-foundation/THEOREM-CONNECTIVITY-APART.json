@@ -352,11 +352,6 @@
    "category": "model-witness",
    "reason": "A fact about Specker's three-box context model of Becoming.Context (with its non-root evenBoxes_glued, even_third, flipIf_self): parity on the boxes is glued from its pairs and not determined by them; the run-side form of the same relation, a whole no two parts hold, is joined as IdentificationRuns.parity_whole_not_in_pairs."
   },
-  "Becoming.gap_le_iff": {
-   "module": "Becoming.Propagation",
-   "category": "support",
-   "reason": "Arithmetic on natural numbers: the gap of two amounts is at most m exactly where each is at most the other plus m."
-  },
   "Becoming.nodup_iff_distinct": {
    "module": "Becoming.Composition",
    "category": "support",

@@ -1,0 +1,532 @@
+{
+  "schema_version": 2,
+  "id": "two-sided-regulation-and-late-reading",
+  "title": {
+    "en": "Two-sided regulation, and regulation that reads late",
+    "zh": "双向调节，与迟读的调节"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T15:28:22+00:00",
+  "statement": {
+    "en": "Opposed from both sides within its gap, which is exactly not overshooting, a level settles at m; read l steps late, every rule needs a band at least 2(l+1)d wide, which the late return keeps; a late relay settles from every start held below exactly where a + (l+1)M <= b + 1.",
+    "zh": "两侧相反且在距离之内（恰是不越过）时，水平定于 m；迟 l 步读时，每个规则所需之带至少宽 2(l+1)d，迟返恰保此带；迟读的阈值调节，自带下保持的每个起点，恰在 a + (l+1)M ≤ b + 1 时定于带内。"
+  },
+  "laws": [
+    {
+      "en": "With balance across a step, the joint exchange departs from evenness by at most the level's gap to m on each side exactly where the next level lies between m and the present one: the bound is exactly no overshoot; for an opposing exchange the cases above, below and at m are exact.",
+      "zh": "一步之间平衡时，合取交换在两侧偏离均衡都不超过水平与 m 的距离，恰是下一水平落在 m 与当前水平之间：界恰是不越过；对相反的交换，高于、低于与等于 m 三种情形都是确切的。",
+      "declarations": [
+        "Becoming.Flow.WithinGap",
+        "Becoming.Flow.Opposes",
+        "Becoming.Regulation.within_iff_between",
+        "Becoming.Flow.withinGap_iff_between",
+        "Becoming.Flow.withinGap_iff_of_above",
+        "Becoming.Flow.withinGap_iff_of_below",
+        "Becoming.Flow.withinGap_iff_of_at"
+      ]
+    },
+    {
+      "en": "Within the gap the gap does not rise and the level never crosses m; within it and opposing, the gap falls by at least one at each step where it is positive, by n over n steps, and the level is m from the step its gap is used up; from below, restoration with the bound reaches m exactly and stays.",
+      "zh": "在距离之内，距离不升，水平永不越过 m；在其内且相反时，距离为正则每步至少降一，n 步降 n，距离用尽之步起水平为 m；自下且有界时，恢复恰到 m 而止。",
+      "declarations": [
+        "Becoming.Flow.gap_le_of_within",
+        "Becoming.Flow.stays_between_at",
+        "Becoming.Flow.gap_falls",
+        "Becoming.Flow.regulates_at",
+        "Becoming.Flow.regulates",
+        "Becoming.Flow.settles_at",
+        "Becoming.Flow.settles_from",
+        "Becoming.Flow.settles",
+        "Becoming.Flow.restores_exactly"
+      ]
+    },
+    {
+      "en": "Beyond the bound an opposing exchange crosses m; a balanced witness opposing the departure at every step and exceeding the gap at every step oscillates about m and is never m.",
+      "zh": "越界的相反交换越过 m；一个平衡、每步都与偏离相反且每步都超出距离的证人在 m 两侧往复，永不为 m。",
+      "declarations": [
+        "Becoming.Flow.crosses_of_above",
+        "Becoming.Flow.crosses_of_below",
+        "Becoming.Regulation.Overshooting.balances",
+        "Becoming.Regulation.Overshooting.opposes",
+        "Becoming.Regulation.Overshooting.beyond",
+        "Becoming.Regulation.Overshooting.oscillates",
+        "Becoming.Regulation.Overshooting.never_at"
+      ]
+    },
+    {
+      "en": "One side is not regulation: a balanced witness meets the premise of the law of restoration from every step and the bound at every step, does not oppose the departure above m, and stays above m.",
+      "zh": "一侧不是调节：一个平衡的证人自每步起满足恢复律的前提、每步都在界内，却不与高于 m 的偏离相反，水平永在 m 之上。",
+      "declarations": [
+        "Becoming.Regulation.OneSided.balances",
+        "Becoming.Regulation.OneSided.within",
+        "Becoming.Regulation.OneSided.restores_premise",
+        "Becoming.Regulation.OneSided.not_opposes",
+        "Becoming.Regulation.OneSided.above"
+      ]
+    },
+    {
+      "en": "A rule reading l steps late answers alike two rests agreeing before T up to step T + l; the levels reached at T + l + 1 differ by exactly what the rests exchange differently over the l + 1 steps from T, so one raising and one lowering by d over the window leave no band narrower than 2(l + 1)d.",
+      "zh": "迟 l 步读的规则，对在 T 之前相同的两种扰动直到 T + l 步都回答相同；在 T + l + 1 所达水平之差恰是两种扰动在自 T 起 l + 1 步中交换之差，所以一升 d、一降 d 时，没有带窄于 2(l + 1)d。",
+      "declarations": [
+        "Becoming.Regulation.Record",
+        "Becoming.Regulation.Rule",
+        "Becoming.Regulation.ReadsLate",
+        "Becoming.Regulation.NetWithin",
+        "Becoming.Flow.FollowsRule",
+        "Becoming.Regulation.ReadsLate.alike",
+        "Becoming.Regulation.levels_alike",
+        "Becoming.Regulation.late_spread",
+        "Becoming.Regulation.late_band"
+      ]
+    },
+    {
+      "en": "On the course a rule generates from a start, no rule reading l late keeps the level within [a, b], 0 < a, under every rest moving it by at most d a step unless a + 2(l + 1)d <= b.",
+      "zh": "在规则自一个起点所生成的进程上，迟 l 步读的规则在每步至多移动 d 的一切扰动下把水平保持于 [a, b]（0 < a），仅当 a + 2(l + 1)d ≤ b。",
+      "declarations": [
+        "Becoming.Regulation.course",
+        "Becoming.Regulation.courseFlow",
+        "Becoming.Regulation.courseWeb",
+        "Becoming.Regulation.courseFlow_follows",
+        "Becoming.Regulation.course_balances_of_pos",
+        "Becoming.Regulation.no_narrower_band"
+      ]
+    },
+    {
+      "en": "The late return, moving back what the rest exchanged l + 1 steps before, reads l late, needs only the level read l steps late and its own exchanges, and keeps every course within (l + 1)d of its start: the least band is attained.",
+      "zh": "迟返把扰动在 l + 1 步之前的交换移回，它迟 l 步读，只需迟 l 步读到的水平与自己的交换，并使每个进程都在其起点的 (l + 1)d 之内：最小带宽可达。",
+      "declarations": [
+        "Becoming.Regulation.lateReturn",
+        "Becoming.Regulation.lateReturn_readsLate",
+        "Becoming.Regulation.lateReturn_reads_levels",
+        "Becoming.Regulation.lateReturn_keeps",
+        "Becoming.Regulation.lateReturn_course_balances",
+        "Becoming.Regulation.lateReturn_band"
+      ]
+    },
+    {
+      "en": "The relay reading l late pushes M for a reading below a, pulls M for one above b and rests within; a level entering the band after l readings below goes on by exactly lM, and its own rise or fall, read late, feeds itself.",
+      "zh": "迟 l 步读的阈值调节，读数低于 a 时推 M，高于 b 时拉 M，带内不动；在 l 次带下读数之后入带的水平恰再走 lM，它自己的升降迟读后自我延续。",
+      "declarations": [
+        "Becoming.Regulation.relay",
+        "Becoming.Flow.RelaysLate",
+        "Becoming.Regulation.push_ramp",
+        "Becoming.Regulation.pull_ramp",
+        "Becoming.Regulation.rest_ramp",
+        "Becoming.Regulation.overshoot",
+        "Becoming.Regulation.undershoot",
+        "Becoming.Regulation.rise_run",
+        "Becoming.Regulation.fall_run"
+      ]
+    },
+    {
+      "en": "From a start held below a for its first l + 1 steps the level rises by M a step, settles where its entry carried lM further is within b, and passes b otherwise.",
+      "zh": "前 l + 1 步保持在 a 之下的起点，水平每步升 M；入带处再走 lM 仍在 b 之内则定于带内，否则越过 b。",
+      "declarations": [
+        "Becoming.Regulation.held_rise",
+        "Becoming.Regulation.held_settles",
+        "Becoming.Regulation.held_leaves"
+      ]
+    },
+    {
+      "en": "An upward crossing is followed by a downward one and that by an upward one, so after every step the level is somewhere above b and somewhere below a; the start held at a - 1 crosses exactly where b + 2 <= a + (l + 1)M.",
+      "zh": "向上越出之后有向下越出，其后又有向上越出，所以每一步之后水平都还会高于 b、也还会低于 a；保持于 a - 1 的起点，恰在 b + 2 ≤ a + (l + 1)M 时越出。",
+      "declarations": [
+        "Becoming.Web.UpCrossing",
+        "Becoming.Web.DownCrossing",
+        "Becoming.Regulation.upCrossing_next",
+        "Becoming.Regulation.downCrossing_next",
+        "Becoming.Regulation.upCrossing_later",
+        "Becoming.Regulation.crossing_oscillates",
+        "Becoming.Regulation.held_crosses",
+        "Becoming.Regulation.held_oscillates"
+      ]
+    },
+    {
+      "en": "The relay has a run from every start where (l + 1)M <= b + 1, by its window law on Law.orbit; for 0 < a <= b and 0 < M, every start held below the band settles in it exactly where a + (l + 1)M <= b + 1.",
+      "zh": "(l + 1)M ≤ b + 1 时，阈值调节以其窗口之律在 Law.orbit 上从每个起点都有运行；0 < a ≤ b、0 < M 时，带下保持的每个起点恰在 a + (l + 1)M ≤ b + 1 时定于带内。",
+      "declarations": [
+        "Becoming.Regulation.held_below_settles",
+        "Becoming.Regulation.relayWindow",
+        "Becoming.Regulation.relayLevel",
+        "Becoming.Regulation.relayFlow",
+        "Becoming.Regulation.relayWeb",
+        "Becoming.Regulation.relay_runs",
+        "Becoming.Regulation.relay_threshold"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. Balance at the condition, the bound, opposition, a rule reading l late, a rest within d a step, the relay's step M and band [a, b], and a start held for l + 1 steps are named premises stated where they are used.",
+      "zh": "不加公理。条件处的平衡、界、相反、迟 l 步读的规则、每步至多 d 的扰动、阈值调节的步长 M 与带 [a, b]、保持 l + 1 步的起点，都是在用处陈述的具名前提。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That a given system regulates a level, which level, how late it reads, or the size of its step.",
+      "zh": "某个系统在调节某个水平、是哪个水平、它迟读多少、步长多大。",
+      "kind": "scope"
+    },
+    {
+      "en": "One policy keeping a band from every start in it under late reading; several regulated levels lumped into one; regulation of several conditions at once.",
+      "zh": "迟读下对带中每个起点都保带的单一策略；把几个受调节的水平归并为一个；同时调节几个条件。",
+      "kind": "scope"
+    },
+    {
+      "en": "That holding a level is good: the laws say what holds it and how wide a band it needs.",
+      "zh": "保持一个水平是好的：这些律只说什么保持它、它需要多宽的带。",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "detail": {
+        "en": "Opposing on both sides without the bound is not regulation: Regulation.Overshooting balances and opposes the departure from m = 1 at every step, its level alternates between 2 and 0 and is never 1 (Overshooting.oscillates, Overshooting.never_at).",
+        "zh": "两侧相反而无界不是调节：Regulation.Overshooting 每步平衡并与对 m = 1 的偏离相反，水平在 2 与 0 之间往复，永不为 1（Overshooting.oscillates、Overshooting.never_at）。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "detail": {
+        "en": "The premise of the law of restoration, with the bound, does not give regulation: Regulation.OneSided meets both from every step and its level stays at 2 above m = 1 (OneSided.restores_premise, OneSided.above).",
+        "zh": "恢复律的前提加上界并不给出调节：Regulation.OneSided 自每步起两者都满足，水平停在 2，高于 m = 1（OneSided.restores_premise、OneSided.above）。"
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "detail": {
+        "en": "A relay entering its band does not settle there in general: past b + 2 <= a + (l + 1)M the start held at a - 1 leaves both ends without end (held_oscillates).",
+        "zh": "阈值调节入带并不一般地定于带内：过 b + 2 ≤ a + (l + 1)M，保持于 a - 1 的起点两端越出而无尽（held_oscillates）。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T152617.511553Z): the 136 declarations of Becoming.Regulation, 108 of them theorems, have empty axiom reports; the checker verifies core purity. The statements were checked by simulation before the proofs (simulate.py). Author review in study section 214; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T152617.511553Z）：Becoming.Regulation 的 136 项声明（108 项定理）公理报告为空；检查器并核对核心纯净。证明之前已以模拟核对各陈述（simulate.py）。作者审查见研究记录；未经人的独立审查。"
+  },
+  "next_delta": {
+    "en": "One policy keeping a band from every start under late reading; the lumping of several regulated levels; amounts in a field, where a factor below one closes gradually; an independent review.",
+    "zh": "迟读下对每个起点都保带的单一策略；几个受调节水平的归并；域上的量，其中小于一的因子渐近闭合；独立审查。"
+  },
+  "correspondence": {
+    "en": "The map of Chinese sources onto the spine found no law for a level held from both sides, nor for one held by a rule reading it late (损有余而补不足, 张弓, 冲气以为和, 济其不及以泄其过, 宽猛相济, 中节). These laws are the formal statements it proposed; reading the passages as them is the AI's.",
+    "zh": "中国思想与脊柱的对应没有找到两侧保持水平之律，也没有迟读保持之律（损有余而补不足、张弓、冲气以为和、济其不及以泄其过、宽猛相济、中节）。这些律是它所拟的形式陈述；把这些段落读作这些律是 AI 的读法。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+  "aliases": [
+    "two-sided regulation",
+    "regulation that reads late",
+    "late reading",
+    "late relay",
+    "双向调节",
+    "迟读的调节",
+    "Becoming.Flow.withinGap_iff_between",
+    "Becoming.Flow.settles",
+    "Becoming.Regulation.no_narrower_band",
+    "Becoming.Regulation.lateReturn_band",
+    "Becoming.Regulation.relay_threshold"
+  ],
+  "dependencies": [
+    {
+      "id": "how-much-difference-arrives",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses Propagation's gap and its laws (gap_le_iff, gap_total, gap_comm, gap_zero) for the distance to m and the width of a band.",
+        "zh": "以 Propagation 的距离及其定律（gap_le_iff、gap_total、gap_comm、gap_zero）表示与 m 的距离与带宽。"
+      },
+      "interface": {
+        "output": {
+          "en": "The gap between two amounts, bounded exactly by each side, and bounded over a stretch by the gaps summed.",
+          "zh": "两个量之间的距离，恰以两侧为界，在一段之上以诸距离之和为界。"
+        },
+        "input": {
+          "en": "The gap to m falls under regulation; the spread between two courses under a late rule is the exchanged gap.",
+          "zh": "调节下与 m 的距离下降；迟读规则下两个进程之差是所交换之差。"
+        },
+        "conditions": {
+          "en": "Whole-number amounts.",
+          "zh": "整数量。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Uses Law.orbit to iterate the relay's window law into a run from every start.",
+        "zh": "以 Law.orbit 迭代阈值调节的窗口之律，得到自每个起点的运行。"
+      },
+      "interface": {
+        "output": {
+          "en": "The orbit of a law from a state.",
+          "zh": "一个律自一个状态的轨道。"
+        },
+        "input": {
+          "en": "The relay's levels along its run, held for l + 1 steps and then moved by the relay's late reading.",
+          "zh": "阈值调节沿其运行的水平：保持 l + 1 步，此后由迟读移动。"
+        },
+        "conditions": {
+          "en": "(l + 1)M <= b + 1 for the run to balance.",
+          "zh": "(l + 1)M ≤ b + 1，运行才平衡。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "supported-renewal-recovery",
+      "detail": {
+        "en": "Flow.restores is the one-sided law: giving more than taking below m reaches at least m. With the bound it reaches m exactly (Flow.restores_exactly), and without the other side it is not regulation (Regulation.OneSided).",
+        "zh": "Flow.restores 是单侧之律：低于 m 时给多于取，则至少到 m。有界时恰到 m（Flow.restores_exactly），无另一侧则不是调节（Regulation.OneSided）。"
+      }
+    },
+    {
+      "id": "own-count-misses-joint-excess",
+      "detail": {
+        "en": "The excess laws lower a level above a need and raise one below it, each on one side; two-sided regulation holds both sides with a bound.",
+        "zh": "过量之律降低高于需要的水平、提高低于需要的水平，各在一侧；双向调节以界保持两侧。"
+      }
+    },
+    {
+      "id": "assured-route-criterion",
+      "detail": {
+        "en": "AssurancePlans.Regulation has two levels and an immediate response; a response that reads late needs a band growing with the lateness.",
+        "zh": "AssurancePlans.Regulation 只有两档、即时响应；迟读的响应需要随迟而增的带。"
+      }
+    },
+    {
+      "id": "whether-a-loop-closes-a-difference",
+      "detail": {
+        "en": "A loop closes a difference only through a link giving back less; within the gap and opposing, the difference to m closes by at least one a step at one condition.",
+        "zh": "回路只经返还较少的环节闭合差异；在距离之内且相反时，一个条件上与 m 之差每步至少闭合一。"
+      }
+    },
+    {
+      "id": "how-fast-a-rule-may-change",
+      "detail": {
+        "en": "A slow rule reading a fast level at stretches; reading late, here, needs a band of 2(l + 1)d.",
+        "zh": "慢规则分段读快层；这里迟读需要 2(l + 1)d 之带。"
+      }
+    },
+    {
+      "id": "chinese-sources-on-the-spine",
+      "detail": {
+        "en": "Closes the first gap of the map: 损有余而补不足 and 张弓, 冲气以为和, 济其不及以泄其过 and 宽猛相济, and 中节 are re-pointed to these laws.",
+        "zh": "补上对应表的第一项缺口：损有余而补不足与张弓、冲气以为和、济其不及以泄其过与宽猛相济、中节改指向这些律。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.Flow.FollowsRule",
+        "Becoming.Flow.Opposes",
+        "Becoming.Flow.RelaysLate",
+        "Becoming.Flow.WithinGap",
+        "Becoming.Flow.accumulates_at",
+        "Becoming.Flow.crosses_of_above",
+        "Becoming.Flow.crosses_of_below",
+        "Becoming.Flow.gap_falls",
+        "Becoming.Flow.gap_le_of_within",
+        "Becoming.Flow.regulates",
+        "Becoming.Flow.regulates_at",
+        "Becoming.Flow.restores_exactly",
+        "Becoming.Flow.settles",
+        "Becoming.Flow.settles_at",
+        "Becoming.Flow.settles_from",
+        "Becoming.Flow.stays_between_at",
+        "Becoming.Flow.withinGap_iff_between",
+        "Becoming.Flow.withinGap_iff_of_above",
+        "Becoming.Flow.withinGap_iff_of_at",
+        "Becoming.Flow.withinGap_iff_of_below",
+        "Becoming.Regulation.Between",
+        "Becoming.Regulation.Between.at_level",
+        "Becoming.Regulation.Between.gap_falls",
+        "Becoming.Regulation.Between.gap_le",
+        "Becoming.Regulation.Between.refl",
+        "Becoming.Regulation.Between.stays",
+        "Becoming.Regulation.Between.trans",
+        "Becoming.Regulation.NetWithin",
+        "Becoming.Regulation.OneSided.above",
+        "Becoming.Regulation.OneSided.balances",
+        "Becoming.Regulation.OneSided.flow",
+        "Becoming.Regulation.OneSided.not_opposes",
+        "Becoming.Regulation.OneSided.opposes_below",
+        "Becoming.Regulation.OneSided.restores_premise",
+        "Becoming.Regulation.OneSided.web",
+        "Becoming.Regulation.OneSided.within",
+        "Becoming.Regulation.Overshooting.amount",
+        "Becoming.Regulation.Overshooting.back",
+        "Becoming.Regulation.Overshooting.balances",
+        "Becoming.Regulation.Overshooting.beyond",
+        "Becoming.Regulation.Overshooting.flow",
+        "Becoming.Regulation.Overshooting.given_eq",
+        "Becoming.Regulation.Overshooting.high",
+        "Becoming.Regulation.Overshooting.high_even",
+        "Becoming.Regulation.Overshooting.never_at",
+        "Becoming.Regulation.Overshooting.opposes",
+        "Becoming.Regulation.Overshooting.oscillates",
+        "Becoming.Regulation.Overshooting.taken_eq",
+        "Becoming.Regulation.Overshooting.web",
+        "Becoming.Regulation.ReadsLate",
+        "Becoming.Regulation.ReadsLate.alike",
+        "Becoming.Regulation.Record",
+        "Becoming.Regulation.Rule",
+        "Becoming.Regulation.add_mul'",
+        "Becoming.Regulation.course",
+        "Becoming.Regulation.courseFlow",
+        "Becoming.Regulation.courseFlow_follows",
+        "Becoming.Regulation.courseWeb",
+        "Becoming.Regulation.course_balances",
+        "Becoming.Regulation.course_balances_of_pos",
+        "Becoming.Regulation.cross_cancel",
+        "Becoming.Regulation.crossing_oscillates",
+        "Becoming.Regulation.downCrossing_next",
+        "Becoming.Regulation.fall_run",
+        "Becoming.Regulation.first_index",
+        "Becoming.Regulation.first_or_nowhere",
+        "Becoming.Regulation.gap_le_of_add_eq",
+        "Becoming.Regulation.gap_of_ge",
+        "Becoming.Regulation.gap_of_le",
+        "Becoming.Regulation.held_below_settles",
+        "Becoming.Regulation.held_crosses",
+        "Becoming.Regulation.held_leaves",
+        "Becoming.Regulation.held_oscillates",
+        "Becoming.Regulation.held_rise",
+        "Becoming.Regulation.held_settles",
+        "Becoming.Regulation.lateReturn",
+        "Becoming.Regulation.lateReturn_band",
+        "Becoming.Regulation.lateReturn_course_balances",
+        "Becoming.Regulation.lateReturn_early",
+        "Becoming.Regulation.lateReturn_early_sum",
+        "Becoming.Regulation.lateReturn_keeps",
+        "Becoming.Regulation.lateReturn_late",
+        "Becoming.Regulation.lateReturn_readsLate",
+        "Becoming.Regulation.lateReturn_reads_levels",
+        "Becoming.Regulation.lateReturn_window",
+        "Becoming.Regulation.late_band",
+        "Becoming.Regulation.late_spread",
+        "Becoming.Regulation.le_sub_add",
+        "Becoming.Regulation.le_succ_mul",
+        "Becoming.Regulation.levels_alike",
+        "Becoming.Regulation.no_narrower_band",
+        "Becoming.Regulation.overshoot",
+        "Becoming.Regulation.pull_ramp",
+        "Becoming.Regulation.push_ramp",
+        "Becoming.Regulation.relay",
+        "Becoming.Regulation.relayFlow",
+        "Becoming.Regulation.relayFlow_late",
+        "Becoming.Regulation.relayLevel",
+        "Becoming.Regulation.relayLevel_drop",
+        "Becoming.Regulation.relayLevel_drops",
+        "Becoming.Regulation.relayLevel_held",
+        "Becoming.Regulation.relayLevel_step",
+        "Becoming.Regulation.relayWeb",
+        "Becoming.Regulation.relayWindow",
+        "Becoming.Regulation.relayWindow_shift",
+        "Becoming.Regulation.relay_above",
+        "Becoming.Regulation.relay_balances",
+        "Becoming.Regulation.relay_below",
+        "Becoming.Regulation.relay_inside",
+        "Becoming.Regulation.relay_room",
+        "Becoming.Regulation.relay_runs",
+        "Becoming.Regulation.relay_step",
+        "Becoming.Regulation.relay_take_le",
+        "Becoming.Regulation.relay_take_of_le",
+        "Becoming.Regulation.relay_threshold",
+        "Becoming.Regulation.rest_ramp",
+        "Becoming.Regulation.reversal",
+        "Becoming.Regulation.reversal_evens",
+        "Becoming.Regulation.reversal_of_levels",
+        "Becoming.Regulation.rise_run",
+        "Becoming.Regulation.step_above",
+        "Becoming.Regulation.step_below",
+        "Becoming.Regulation.step_inside",
+        "Becoming.Regulation.sub_eq_of_add_eq",
+        "Becoming.Regulation.sub_succ_le_of_gt",
+        "Becoming.Regulation.sub_succ_le_of_lt",
+        "Becoming.Regulation.total_steps_congr",
+        "Becoming.Regulation.total_steps_const",
+        "Becoming.Regulation.total_steps_le",
+        "Becoming.Regulation.undershoot",
+        "Becoming.Regulation.upCrossing_later",
+        "Becoming.Regulation.upCrossing_next",
+        "Becoming.Regulation.window_step",
+        "Becoming.Regulation.within_iff_between",
+        "Becoming.Web.DownCrossing",
+        "Becoming.Web.UpCrossing"
+      ],
+      "sha256": "f5aad064082f4c33b905d8b09993810f35e56e5131870aa80233ee92dbb41d3b"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
+      "role": "proof",
+      "sha256": "0a07620f53e13a4e3a8cbf473f6c7e395fe797520458acff457df65bb592f529"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "c3e77048aaedb64f4b5cc04a08c0e0b890d4980c730b74e0c8dc85784ec17dc9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T152617.511553Z/verification.json",
+      "role": "receipt",
+      "sha256": "6dea8005a28c8723c7419039a351a056da0f4403f9a1d4709160c2a80e9ba37a"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "537f188554a8737bae2774fe082cd9ad8c405741900937af81ea8421dca01668"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "21700e33ed207345eeda2606d1ef5504e43359083caa84fcf8df855a4b7b3c94"
+    },
+    {
+      "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
+      "role": "provenance",
+      "sha256": "b21a7c6cfe68a512cc250f377f14e2eb889bf540ab47a1538b8a6eb28b06514b"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
+      "role": "integration",
+      "sha256": "6d97988bc215d4e5dfa3ac0a9841365c3dc91f21bcbd873891e99d252f3e7a47"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/rg-regulation/simulate.py",
+      "role": "review",
+      "sha256": "6706ac3974a84ab2a212862416b719203a7e6654e0d7f6c23b6ccb52a6a290b5"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regulation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T152617.511553Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regulation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (RG), the first gap of the map of Chinese sources onto the spine; study section 214.",
+      "zh": "2026年10月19日：新增（RG），即中国思想与脊柱对应表的第一项缺口；研究第 214 节。"
+    }
+  ]
+}

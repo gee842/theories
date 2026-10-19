@@ -25,9 +25,9 @@ Tie each passage, quoted verbatim from a preserved text, to checked declarations
 
 **README overview:** Mapping the relational ontology of Chinese thought onto the spine
 
-248 passages of nine parts of Chinese thought (the 易传, the 老子 with its commentaries and excavated witnesses, the 儒家, the script with 止戈为武, 庄子 and 玄学, 墨辩 and 名家, 兵家 and 法家, Buddhist lines) are quoted verbatim from hash-bound texts and tied to checked laws of the spine: 95 agree, 94 hold within an exact scope, 59 diverge. The relational start holds across the lines; their universal forms mostly need a scope; four non-relational overlays (a prior ground, a fixed nature, a single centre, contest and rank) recur, each answered inside its own tradition. The script is relational as a system of readings, not in the shapes of its graphs. Gaps the map found are being proved in the core: the arrangements of the 傳 (`Becoming.HexagramSequences`), a code formed between formations (约定俗成, `Becoming.SharedCodes`) and capture through the rule (二柄, 据有余而制不足; `Becoming.RuleCapture`) have landed, and the four earlier Chinese chapters keep only what the map and the spine do not carry.
+248 passages of nine parts of Chinese thought (the 易传, the 老子 with its commentaries and excavated witnesses, the 儒家, the script with 止戈为武, 庄子 and 玄学, 墨辩 and 名家, 兵家 and 法家, Buddhist lines) are quoted verbatim from hash-bound texts and tied to checked laws of the spine: 95 agree, 94 hold within an exact scope, 59 diverge. The relational start holds across the lines; their universal forms mostly need a scope; four non-relational overlays (a prior ground, a fixed nature, a single centre, contest and rank) recur, each answered inside its own tradition. The script is relational as a system of readings, not in the shapes of its graphs. Gaps the map found are being proved in the core: the arrangements of the 傳 (`Becoming.HexagramSequences`), a code formed between formations (约定俗成, `Becoming.SharedCodes`), capture through the rule (二柄, 据有余而制不足; `Becoming.RuleCapture`) and two-sided regulation of a level and regulation that reads the level late (中和, 宽猛相济; `Becoming.Regulation`) have landed, and the four earlier Chinese chapters keep only what the map and the spine do not carry.
 
-**Next:** Land the verified gap module in the queue: two-sided regulation of a level and regulation that reads the level late (中和, 宽猛相济; `Becoming.Regulation`). Then the three open gaps: a graded order by closure level and whether it is the same from every standpoint (亲亲之杀), division across several conditions (分), and tolerance compared across laws (柔弱者生之徒).
+**Next:** The three open gaps: a graded order by closure level and whether it is the same from every standpoint (亲亲之杀), division across several conditions (分), and tolerance compared across laws (柔弱者生之徒).
 
 [a-code-formed-between-formations](theories/becoming/results/records/a-code-formed-between-formations.md): `recorded-checked`
 
@@ -44,6 +44,8 @@ Tie each passage, quoted verbatim from a preserved text, to checked declarations
 [hexagrams-on-the-spine](theories/becoming/results/records/hexagrams-on-the-spine.md): `recorded-checked`
 
 [place-relations-in-context](theories/becoming/results/records/place-relations-in-context.md): `recorded-checked`
+
+[two-sided-regulation-and-late-reading](theories/becoming/results/records/two-sided-regulation-and-late-reading.md): `recorded-checked`
 
 <a id="cognition-learning-evolution"></a>
 <a id="认知学习与演化心理的相连解释--connected-explanation-of-cognition-learning-and-evolutionary-psychology"></a>

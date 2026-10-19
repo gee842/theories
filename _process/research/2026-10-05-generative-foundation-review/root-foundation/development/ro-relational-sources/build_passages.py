@@ -400,6 +400,114 @@ FIXES = {
                              '(uniform_locks, Second.second_exact); the text takes'))],
         'why': ('RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its '
                 'laws and record added and a sentence of each reading replaced or extended (both languages)')},
+    'lao-77-tian-zhi-dao': {
+        'declarations_add': ['Becoming.Flow.withinGap_iff_between',
+                             'Becoming.Flow.regulates',
+                             'Becoming.Flow.settles',
+                             'Becoming.Flow.restores_exactly',
+                             'Becoming.Flow.crosses_of_above',
+                             'Becoming.Regulation.Overshooting.oscillates',
+                             'Becoming.Regulation.OneSided.above'],
+        'records_add': ['two-sided-regulation-and-late-reading'],
+        'reading_sub': [('双向调节的确切定律（含两种失败：单侧、矫枉过正而振荡）是缺口。',
+                         '双向调节的确切定律已证（`Becoming.Regulation`）：平衡下，合取的交换在两侧都以与 m 的距离为界，恰是下一水平落在 m '
+                         '与当前水平之间（`Flow.withinGap_iff_between`）；有界且两侧都与偏离相反时，距离为正则每步至少降一，距离用尽时水平定于 '
+                         'm（`Flow.regulates`、`Flow.settles`）。两种失败也是确切的：越界的相反交换越过 m（`Flow.crosses_of_above`），其证人在 m '
+                         '两侧往复而永不到 m（`Overshooting.oscillates`）；只有一侧时，恢复律的前提成立而水平永在 m 之上（`OneSided.above`）。')],
+        'reading_en_sub': [('it is the property of a regulating coupling, and the two-sided law with its failure '
+                            'modes is a gap.',
+                            'it is the property of a regulating coupling. That law is proved (Becoming.Regulation): '
+                            'bounded by the gap on both sides and opposing, the level settles at m within its gap; '
+                            'beyond the bound it crosses m and can alternate without end; one side alone can leave '
+                            'it away for ever.')],
+        'gap_closed': ('RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), as stated for one '
+                       'condition, with the bound read as no overshoot: the exchange is within the gap to m on both '
+                       'sides exactly where the next level lies between m and the level '
+                       '(Flow.withinGap_iff_between); with it and opposing on both sides the level is m from T plus '
+                       'its gap at T on (Flow.regulates, Flow.settles); (iii) is not needed, since at m the bound '
+                       'itself keeps the level at m (Flow.withinGap_iff_of_at). Both failures are exact: beyond the '
+                       'bound an opposing exchange crosses m and a witness alternates without end '
+                       '(Flow.crosses_of_above, Regulation.Overshooting.oscillates); with one side only the premise '
+                       'of Flow.restores holds and the level stays above m (Regulation.OneSided.above).'),
+        'why': 'RG proved the two-sided law the reading named as a gap, with both of its failures'},
+    'lao-42-chong-qi-yi-wei-he': {
+        'declarations_add': ['Becoming.Flow.withinGap_iff_between',
+                             'Becoming.Flow.settles',
+                             'Becoming.Flow.stays_between_at',
+                             'Becoming.Regulation.Overshooting.never_at'],
+        'records_add': ['two-sided-regulation-and-late-reading'],
+        'reading_sub': [('脊柱目前只有单向的部分：', '脊柱有单向的部分：'),
+                        ('双向调节（高者抑、低者举）与其失败方式（单向、矫枉过正）没有被证明的定律，见缺口。',
+                         '双向调节（高者抑、低者举）与其失败方式已证（`Becoming.Regulation`，见第七十七章条）：两种相反作用各以与 m 的距离为界时，水平在界内永不越过 '
+                         'm（`Flow.stays_between_at`），与偏离相反时定于 m（`Flow.settles`）；越界则越过，可以永不到 '
+                         'm（`Overshooting.never_at`）。所以“和”在此读作受两侧有界的相反作用所保持的水平，是一种耦合的性质。')],
+        'reading_en_sub': [("'harmony' has only one-sided counterparts on the spine (restoration from below, excess "
+                            'lowering, difference closing on a loop); the two-sided regulating law is a gap, stated '
+                            'under lao-77-tian-zhi-dao.',
+                            "'harmony' is the level two-sided regulation keeps (Becoming.Regulation, under "
+                            'lao-77-tian-zhi-dao): bounded by the gap on both sides the level never crosses m, and '
+                            'opposing it settles there; beyond the bound it crosses and can miss m for ever. The '
+                            'one-sided counterparts (restoration from below, excess lowering, difference closing on '
+                            'a loop) are its parts.')],
+        'gap_closed': ('RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), as stated for one '
+                       'condition, with the bound read as no overshoot: the exchange is within the gap to m on both '
+                       'sides exactly where the next level lies between m and the level '
+                       '(Flow.withinGap_iff_between); with it and opposing on both sides the level is m from T plus '
+                       'its gap at T on (Flow.regulates, Flow.settles); (iii) is not needed, since at m the bound '
+                       'itself keeps the level at m (Flow.withinGap_iff_of_at). Both failures are exact: beyond the '
+                       'bound an opposing exchange crosses m and a witness alternates without end '
+                       '(Flow.crosses_of_above, Regulation.Overshooting.oscillates); with one side only the premise '
+                       'of Flow.restores holds and the level stays above m (Regulation.OneSided.above).'),
+        'why': 'RG proved the two-sided law the reading named as a gap (stated under lao-77-tian-zhi-dao)'},
+    'zuo-zhao20-kuan-meng': {
+        'declarations_add': ['Becoming.Regulation.late_spread',
+                             'Becoming.Regulation.no_narrower_band',
+                             'Becoming.Regulation.lateReturn_band',
+                             'Becoming.Regulation.overshoot',
+                             'Becoming.Regulation.crossing_oscillates',
+                             'Becoming.Regulation.held_oscillates',
+                             'Becoming.Regulation.held_below_settles',
+                             'Becoming.Regulation.relay_threshold'],
+        'records_add': ['two-sided-regulation-and-late-reading'],
+        'reading_sub': [('范围与分歧：这是两档玩具模型、即时响应；“政宽则民慢，慢则纠之以猛，猛则民残”描述的是迟到的读法造成两端越界的往复，模型没有覆盖（见缺口）。',
+                         '范围与分歧：这是两档玩具模型、即时响应。“政宽则民慢，慢则纠之以猛，猛则民残”所述的往复，是迟到读法的越界，已证（`Becoming.Regulation`）：迟 ℓ '
+                         '步读的规则分不出其后 ℓ + 1 步内不同的扰动，所以扰动每步至多 d 时，任何这样的规则所保之带都不窄于 2(ℓ + '
+                         '1)d（`late_spread`、`no_narrower_band`），而迟返恰保此带（`lateReturn_band`）。以步长 M 迟读的阈值调节越过入带处 '
+                         'ℓM（`overshoot`），一旦越过便两端越出而无尽（`crossing_oscillates`）；带下的起点恰在 a + (ℓ + 1)M ≤ b + 1 '
+                         '时都定于带内（`held_below_settles`、`relay_threshold`），过此阈值则贴近 a 的起点两端往复（`held_oscillates`）。')],
+        'reading_en_sub': [("the passage's overshoot from a late reading (宽→慢→猛→残) is beyond the model, and its "
+                            'frame governs the people as a regulated stock.',
+                            "the passage's overshoot from a late reading (宽→慢→猛→残) is proved beyond the model "
+                            '(Becoming.Regulation): no rule reading ℓ steps late keeps a band narrower than 2(ℓ + '
+                            '1)d, and a relay reading late leaves both ends without end exactly past a threshold set '
+                            'by lateness times step. Its frame governs the people as a regulated stock.')],
+        'gap_closed': ('RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), in part. (iii) '
+                       'proved exactly: a start held at a - 1 for the first l + 1 steps leaves both ends without end '
+                       'where b + 2 <= a + (l + 1) M (Regulation.held_oscillates), every start held below a settles '
+                       'in the band where a + (l + 1) M <= b + 1 (Regulation.held_below_settles), and with the '
+                       "relay's runs (Regulation.relay_runs, where (l + 1) M <= b + 1) the threshold is exact "
+                       '(Regulation.relay_threshold). (i) proved for one start, the rule chosen with it: no rule '
+                       'reading l late keeps a band narrower than 2 (l + 1) d under every rest within d a step '
+                       '(Regulation.no_narrower_band), and the late return keeps that band '
+                       '(Regulation.lateReturn_band); one policy keeping [a, b] from every start in it is not '
+                       'proved. (ii) is not proved.'),
+        'why': ("RG proved the late reading's overshoot the reading placed beyond the model, with the least band a "
+                "late rule needs and the relay's exact threshold")},
+    'ru-zhongyong-zhi-zhong-he': {
+        'declarations_add': ['Becoming.Flow.withinGap_iff_between',
+                             'Becoming.Flow.settles',
+                             'Becoming.Flow.crosses_of_above'],
+        'records_add': ['two-sided-regulation-and-late-reading'],
+        'reading_sub': [('（见程颢“一体”条）。',
+                         '（见程颢“一体”条）。“发而皆中节”的“节”也可读为（AI 读法）回应以距离为界：与偏离相反的回应在两侧都不超过它与 m 的距离，恰是下一水平落在 m '
+                         '与当前水平之间（`Flow.withinGap_iff_between`），这时水平在距离用尽时定于 m（`Flow.settles`）；不中节的回应越过 '
+                         'm（`Flow.crosses_of_above`）。这是一种耦合的性质，不涉及天地之位。')],
+        'reading_en_sub': [('not as such.',
+                            'not as such. 发而皆中节 can also be read (AI) as a response within the gap: opposing, it '
+                            "stays within the level's distance to m on both sides exactly where the next level lies "
+                            'between m and the present one, and the level then settles at m '
+                            '(Flow.withinGap_iff_between, Flow.settles); a response beyond it crosses m.')],
+        'why': 'RG: 中节 read as a response within the gap, the bound two-sided regulation proves exact'},
 }
 
 

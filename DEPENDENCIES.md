@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-278 registered results: 261 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 712 curated edges join 232 results to the results they draw on.
+279 registered results: 262 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 714 curated edges join 233 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -217,6 +217,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [transmission-independent-where-it-binds][] ← <a id="transmission-independent-where-it-binds--map-of-premises"></a>[map-of-premises][] · <a id="transmission-independent-where-it-binds--transmission-is-inheritance-and-need"></a>[transmission-is-inheritance-and-need][]
 - [transmission-is-inheritance-and-need][] ← <a id="transmission-is-inheritance-and-need--evolution-on-descent"></a>[evolution-on-descent][]
 - [two-act-worlds-carry-the-difference][] ← <a id="two-act-worlds-carry-the-difference--worlds-are-runs"></a>[worlds-are-runs][] · <a id="two-act-worlds-carry-the-difference--how-much-difference-arrives"></a>[how-much-difference-arrives][] · <a id="two-act-worlds-carry-the-difference--counterfactual-is-the-course"></a>[counterfactual-is-the-course][] · <a id="two-act-worlds-carry-the-difference--how-a-carried-difference-grows"></a>[how-a-carried-difference-grows][] · <a id="two-act-worlds-carry-the-difference--what-a-cut-loses"></a>[what-a-cut-loses][] · <a id="two-act-worlds-carry-the-difference--orders-as-a-sum-over-histories"></a>[orders-as-a-sum-over-histories][] · <a id="two-act-worlds-carry-the-difference--how-loops-form"></a>[how-loops-form][] · <a id="two-act-worlds-carry-the-difference--how-often-couplings-act"></a>[how-often-couplings-act][] · <a id="two-act-worlds-carry-the-difference--loops-within-what-a-law-reads"></a>[loops-within-what-a-law-reads][] · <a id="two-act-worlds-carry-the-difference--observation-is-a-route"></a>[observation-is-a-route][]
+- [two-sided-regulation-and-late-reading][] ← <a id="two-sided-regulation-and-late-reading--how-much-difference-arrives"></a>[how-much-difference-arrives][] · <a id="two-sided-regulation-and-late-reading--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [typicality-by-counting][] ← <a id="typicality-by-counting--sum-over-histories-exact"></a>[sum-over-histories-exact][] · <a id="typicality-by-counting--identification-where-bounded"></a>[identification-where-bounded][] · <a id="typicality-by-counting--recurrence-without-premise"></a>[recurrence-without-premise][]
 - [unanchored-incidence-collapse][] ← <a id="unanchored-incidence-collapse--joining-open-map-factor"></a>[joining-open-map-factor][]
 - [unceasing-generation-needs-renewal][] ← <a id="unceasing-generation-needs-renewal--becoming-renewal-reading"></a>[becoming-renewal-reading][] · <a id="unceasing-generation-needs-renewal--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][] · <a id="unceasing-generation-needs-renewal--becoming-stepwise-reading"></a>[becoming-stepwise-reading][] · <a id="unceasing-generation-needs-renewal--becoming-return-grades"></a>[becoming-return-grades][]
@@ -475,6 +476,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [transmission-independent-where-it-binds]: theories/becoming/results/records/transmission-independent-where-it-binds.md
 [transmission-is-inheritance-and-need]: theories/becoming/results/records/transmission-is-inheritance-and-need.md
 [two-act-worlds-carry-the-difference]: theories/becoming/results/records/two-act-worlds-carry-the-difference.md
+[two-sided-regulation-and-late-reading]: theories/becoming/results/records/two-sided-regulation-and-late-reading.md
 [typicality-by-counting]: theories/becoming/results/records/typicality-by-counting.md
 [unanchored-incidence-collapse]: theories/becoming/results/records/unanchored-incidence-collapse.md
 [unceasing-generation-needs-renewal]: theories/becoming/results/records/unceasing-generation-needs-renewal.md

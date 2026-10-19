@@ -2581,12 +2581,17 @@
     "Becoming.Flow.restores",
     "Becoming.Flow.excess_lowers",
     "Becoming.Widening.closes_within",
-    "Becoming.Widening.closing_needs_less"
+    "Becoming.Widening.closing_needs_less",
+    "Becoming.Flow.withinGap_iff_between",
+    "Becoming.Flow.settles",
+    "Becoming.Flow.stays_between_at",
+    "Becoming.Regulation.Overshooting.never_at"
    ],
    "records": [
     "supported-renewal-recovery",
     "own-count-misses-joint-excess",
-    "whether-a-loop-closes-a-difference"
+    "whether-a-loop-closes-a-difference",
+    "two-sided-regulation-and-late-reading"
    ],
    "atlas_ids": [
     {
@@ -2611,8 +2616,8 @@
     }
    ],
    "relational": "和 is the joint outcome of two opposed bearings (负阴, 抱阳) through 冲气; no single side gives it.",
-   "reading": "AI 的读法：经文说万物负阴抱阳，以冲气为和；atlas 提醒这不是“任意阴加任意阳便和”的相加公式（LL-R007）。一个结构读法（AI 的）：和是两种相反作用经由中介而保持的状态。脊柱目前只有单向的部分：在平衡下，凡水平不低于起点处都有共同净给予，则水平在确定步数内恢复到 m 以上（`Flow.restores`）；共同过度拿取每步至少降低一单位（`Flow.excess_lowers`）；差异经环路闭合需要返还少于所受的环节（`Widening.closing_needs_less`、`Widening.closes_within`）。双向调节（高者抑、低者举）与其失败方式（单向、矫枉过正）没有被证明的定律，见缺口。",
-   "reading_en": "AI reading: read as a state kept by two opposed actions through a medium, 'harmony' has only one-sided counterparts on the spine (restoration from below, excess lowering, difference closing on a loop); the two-sided regulating law is a gap, stated under lao-77-tian-zhi-dao.",
+   "reading": "AI 的读法：经文说万物负阴抱阳，以冲气为和；atlas 提醒这不是“任意阴加任意阳便和”的相加公式（LL-R007）。一个结构读法（AI 的）：和是两种相反作用经由中介而保持的状态。脊柱有单向的部分：在平衡下，凡水平不低于起点处都有共同净给予，则水平在确定步数内恢复到 m 以上（`Flow.restores`）；共同过度拿取每步至少降低一单位（`Flow.excess_lowers`）；差异经环路闭合需要返还少于所受的环节（`Widening.closing_needs_less`、`Widening.closes_within`）。双向调节（高者抑、低者举）与其失败方式已证（`Becoming.Regulation`，见第七十七章条）：两种相反作用各以与 m 的距离为界时，水平在界内永不越过 m（`Flow.stays_between_at`），与偏离相反时定于 m（`Flow.settles`）；越界则越过，可以永不到 m（`Overshooting.never_at`）。所以“和”在此读作受两侧有界的相反作用所保持的水平，是一种耦合的性质。",
+   "reading_en": "AI reading: read as a state kept by two opposed actions through a medium, 'harmony' is the level two-sided regulation keeps (Becoming.Regulation, under lao-77-tian-zhi-dao): bounded by the gap on both sides the level never crosses m, and opposing it settles there; beyond the bound it crosses and can miss m for ever. The one-sided counterparts (restoration from below, excess lowering, difference closing on a loop) are its parts.",
    "mapper": "lao",
    "layer": "经",
    "gap": {
@@ -2622,8 +2627,10 @@
      "Becoming.Flow.excess_lowers",
      "Becoming.Widening.closes_within"
     ],
-    "why_it_matters": "It would give 冲气以为和 a checked reading as regulation by opposed couplings, without reading 和 as a property of the whole unfolding."
-   }
+    "why_it_matters": "It would give 冲气以为和 a checked reading as regulation by opposed couplings, without reading 和 as a property of the whole unfolding.",
+    "closed": "RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), as stated for one condition, with the bound read as no overshoot: the exchange is within the gap to m on both sides exactly where the next level lies between m and the level (Flow.withinGap_iff_between); with it and opposing on both sides the level is m from T plus its gap at T on (Flow.regulates, Flow.settles); (iii) is not needed, since at m the bound itself keeps the level at m (Flow.withinGap_iff_of_at). Both failures are exact: beyond the bound an opposing exchange crosses m and a witness alternates without end (Flow.crosses_of_above, Regulation.Overshooting.oscillates); with one side only the premise of Flow.restores holds and the level stays above m (Regulation.OneSided.above)."
+   },
+   "corrected": "RG proved the two-sided law the reading named as a gap (stated under lao-77-tian-zhi-dao)"
   },
   {
    "id": "lao-42-sun-zhi-er-yi",
@@ -3541,12 +3548,20 @@
     "Becoming.Widening.never_closes_of_no_less",
     "Becoming.Widening.closing_not_lossless",
     "Becoming.Flow.restores",
-    "Becoming.Flow.excess_lowers"
+    "Becoming.Flow.excess_lowers",
+    "Becoming.Flow.withinGap_iff_between",
+    "Becoming.Flow.regulates",
+    "Becoming.Flow.settles",
+    "Becoming.Flow.restores_exactly",
+    "Becoming.Flow.crosses_of_above",
+    "Becoming.Regulation.Overshooting.oscillates",
+    "Becoming.Regulation.OneSided.above"
    ],
    "records": [
     "whether-a-loop-closes-a-difference",
     "supported-renewal-recovery",
-    "own-count-misses-joint-excess"
+    "own-count-misses-joint-excess",
+    "two-sided-regulation-and-late-reading"
    ],
    "atlas_ids": [
     {
@@ -3563,8 +3578,8 @@
     }
    ],
    "relational": "Lowering the high and raising the low is a regulating relation between levels and what couples to them.",
-   "reading": "AI 的读法：“天之道，损有馀而补不足”，如张弓之高者抑、下者举。脊柱不支持把它当作展开整体的定律：环路每一环节返还不少于所受时，任何一圈都不闭合差异（`Widening.never_closes_of_no_less`），闭合需要一个返还少于所受的环节（`closing_needs_less`），返还低于所受的返回映射在 d 圈内闭合（`closes_within`），而闭合正差异的环不是无损的（`closing_not_lossless`）。单侧的部分也有：自下的恢复（`Flow.restores`）、过度拿取的降低（`Flow.excess_lowers`）。所以“损有余补不足”是某种调节耦合的性质，而不是天的普遍性质；双向调节的确切定律（含两种失败：单侧、矫枉过正而振荡）是缺口。经文把它归于“天之道”，这一归属理论不采纳。",
-   "reading_en": "AI reading: 'reducing excess and making up deficiency' is not a law of the whole unfolding on the spine (a loop closes a difference only through a link giving back less, and closing is not lossless); it is the property of a regulating coupling, and the two-sided law with its failure modes is a gap.",
+   "reading": "AI 的读法：“天之道，损有馀而补不足”，如张弓之高者抑、下者举。脊柱不支持把它当作展开整体的定律：环路每一环节返还不少于所受时，任何一圈都不闭合差异（`Widening.never_closes_of_no_less`），闭合需要一个返还少于所受的环节（`closing_needs_less`），返还低于所受的返回映射在 d 圈内闭合（`closes_within`），而闭合正差异的环不是无损的（`closing_not_lossless`）。单侧的部分也有：自下的恢复（`Flow.restores`）、过度拿取的降低（`Flow.excess_lowers`）。所以“损有余补不足”是某种调节耦合的性质，而不是天的普遍性质；双向调节的确切定律已证（`Becoming.Regulation`）：平衡下，合取的交换在两侧都以与 m 的距离为界，恰是下一水平落在 m 与当前水平之间（`Flow.withinGap_iff_between`）；有界且两侧都与偏离相反时，距离为正则每步至少降一，距离用尽时水平定于 m（`Flow.regulates`、`Flow.settles`）。两种失败也是确切的：越界的相反交换越过 m（`Flow.crosses_of_above`），其证人在 m 两侧往复而永不到 m（`Overshooting.oscillates`）；只有一侧时，恢复律的前提成立而水平永在 m 之上（`OneSided.above`）。经文把它归于“天之道”，这一归属理论不采纳。",
+   "reading_en": "AI reading: 'reducing excess and making up deficiency' is not a law of the whole unfolding on the spine (a loop closes a difference only through a link giving back less, and closing is not lossless); it is the property of a regulating coupling. That law is proved (Becoming.Regulation): bounded by the gap on both sides and opposing, the level settles at m within its gap; beyond the bound it crosses m and can alternate without end; one side alone can leave it away for ever.",
    "mapper": "lao",
    "layer": "经",
    "gap": {
@@ -3576,8 +3591,10 @@
      "Becoming.Widening.closes_within",
      "Becoming.Widening.closing_needs_less"
     ],
-    "why_it_matters": "It gives 损有馀而补不足, 张弓 (77) and 冲气以为和 (42) a checked form as the property of a coupling that reads the level on both sides with bounded correction, with exactly where it fails (one side only, overcorrection), instead of a law of the whole; it also connects the Widening loop law to levels, and is likely shared with the Ru slice's 中和."
-   }
+    "why_it_matters": "It gives 损有馀而补不足, 张弓 (77) and 冲气以为和 (42) a checked form as the property of a coupling that reads the level on both sides with bounded correction, with exactly where it fails (one side only, overcorrection), instead of a law of the whole; it also connects the Widening loop law to levels, and is likely shared with the Ru slice's 中和.",
+    "closed": "RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), as stated for one condition, with the bound read as no overshoot: the exchange is within the gap to m on both sides exactly where the next level lies between m and the level (Flow.withinGap_iff_between); with it and opposing on both sides the level is m from T plus its gap at T on (Flow.regulates, Flow.settles); (iii) is not needed, since at m the bound itself keeps the level at m (Flow.withinGap_iff_of_at). Both failures are exact: beyond the bound an opposing exchange crosses m and a witness alternates without end (Flow.crosses_of_above, Regulation.Overshooting.oscillates); with one side only the premise of Flow.restores holds and the level stays above m (Regulation.OneSided.above)."
+   },
+   "corrected": "RG proved the two-sided law the reading named as a gap, with both of its failures"
   },
   {
    "id": "lao-77-ren-zhi-dao",
@@ -5790,18 +5807,23 @@
     "Becoming.Flow.Balances.comparison_within_reach",
     "Becoming.Flow.WithinReach",
     "Becoming.Clearing.loses_beyond",
-    "Becoming.Web.AdmitsWithin.narrow"
+    "Becoming.Web.AdmitsWithin.narrow",
+    "Becoming.Flow.withinGap_iff_between",
+    "Becoming.Flow.settles",
+    "Becoming.Flow.crosses_of_above"
    ],
    "records": [
     "comparison-within-reach",
     "feedback-and-reach",
-    "loss-beyond-a-region"
+    "loss-beyond-a-region",
+    "two-sided-regulation-and-late-reading"
    ],
    "atlas_ids": [],
    "relational": "The measure of a part's responses (中节) is set in relation to the whole (天地位、万物育). The passage links the part's balance to the whole's order.",
-   "reading": "AI 的读法：“发而皆中节”是部分的回应保持在度之内；“致中和，天地位焉，万物育焉”把部分的中和与整体的位育连起来。脊柱给出这一联系成立的范围：部分未触及的东西，有它无它同样被容纳（Flow.Balances.admits_unreached），任何覆盖部分可达范围的意义，比较有无它的水平时与延续条件一致（comparison_within_reach）。所以部分的中和决定的是它可达范围之内的位育；超出可达范围的天地之位不由它决定，而且部分可以在其内保持一切而在其外失去（Clearing.loses_beyond）。范围的修正：这是“在所及之内”的命题，不是“致中和即天地位”。朱熹注把它读成“天地万物本吾一体”，那是注的层次（见程颢“一体”条）。",
-   "reading_en": "A part's measured responses decide what lies within its reach (what it does not reach is admitted alike with and without it), so 致中和 orders 天地 and 万物 only within that reach, not as such.",
-   "mapper": "ru"
+   "reading": "AI 的读法：“发而皆中节”是部分的回应保持在度之内；“致中和，天地位焉，万物育焉”把部分的中和与整体的位育连起来。脊柱给出这一联系成立的范围：部分未触及的东西，有它无它同样被容纳（Flow.Balances.admits_unreached），任何覆盖部分可达范围的意义，比较有无它的水平时与延续条件一致（comparison_within_reach）。所以部分的中和决定的是它可达范围之内的位育；超出可达范围的天地之位不由它决定，而且部分可以在其内保持一切而在其外失去（Clearing.loses_beyond）。范围的修正：这是“在所及之内”的命题，不是“致中和即天地位”。朱熹注把它读成“天地万物本吾一体”，那是注的层次（见程颢“一体”条）。“发而皆中节”的“节”也可读为（AI 读法）回应以距离为界：与偏离相反的回应在两侧都不超过它与 m 的距离，恰是下一水平落在 m 与当前水平之间（`Flow.withinGap_iff_between`），这时水平在距离用尽时定于 m（`Flow.settles`）；不中节的回应越过 m（`Flow.crosses_of_above`）。这是一种耦合的性质，不涉及天地之位。",
+   "reading_en": "A part's measured responses decide what lies within its reach (what it does not reach is admitted alike with and without it), so 致中和 orders 天地 and 万物 only within that reach, not as such. 发而皆中节 can also be read (AI) as a response within the gap: opposing, it stays within the level's distance to m on both sides exactly where the next level lies between m and the present one, and the level then settles at m (Flow.withinGap_iff_between, Flow.settles); a response beyond it crosses m.",
+   "mapper": "ru",
+   "corrected": "RG: 中节 read as a response within the gap, the bound two-sided regulation proves exact"
   },
   {
    "id": "ru-zhongyong-bing-yu-bing-xing",
@@ -7666,10 +7688,19 @@
     "Becoming.AssurancePlans.Regulation.no_merged_move",
     "Becoming.AssurancePlans.Regulation.respond_keeps",
     "Becoming.AssurancePlans.Regulation.kept_along",
-    "Becoming.AssurancePlans.Regulation.next_move_changes"
+    "Becoming.AssurancePlans.Regulation.next_move_changes",
+    "Becoming.Regulation.late_spread",
+    "Becoming.Regulation.no_narrower_band",
+    "Becoming.Regulation.lateReturn_band",
+    "Becoming.Regulation.overshoot",
+    "Becoming.Regulation.crossing_oscillates",
+    "Becoming.Regulation.held_oscillates",
+    "Becoming.Regulation.held_below_settles",
+    "Becoming.Regulation.relay_threshold"
    ],
    "records": [
-    "assured-route-criterion"
+    "assured-route-criterion",
+    "two-sided-regulation-and-late-reading"
    ],
    "atlas_ids": [
     {
@@ -7678,8 +7709,8 @@
     }
    ],
    "relational": "A range is kept by moves in opposite directions at its two ends (济其不及，以泄其过); the regulator reads the regulated (民) and alternates. The people are the regulated stock, not members of the reading.",
-   "reading": "AI 读法：在调节模型中：区间两端需要相反的动作（Regulation.opposite_moves）；经把两端合并的读法所选的任何一个动作都不能两端兼保（no_merged_move）；响应保持区间（respond_keeps），沿任意长的路线保持（kept_along）；一次成功的动作不会两次成功，响应改变它（next_move_changes）。“济其不及，以泄其过”“宽以济猛，猛以济宽”是这一结构。范围与分歧：这是两档玩具模型、即时响应；“政宽则民慢，慢则纠之以猛，猛则民残”描述的是迟到的读法造成两端越界的往复，模型没有覆盖（见缺口）。仲尼此语以民为被调节之量、以猛为手段，是治理框架，律不采纳。",
-   "reading_en": "Agreement in the toy model: a band needs opposite moves at its two ends, no move chosen through a reading that merges the ends keeps both, and the successful move must change; the passage's overshoot from a late reading (宽→慢→猛→残) is beyond the model, and its frame governs the people as a regulated stock.",
+   "reading": "AI 读法：在调节模型中：区间两端需要相反的动作（Regulation.opposite_moves）；经把两端合并的读法所选的任何一个动作都不能两端兼保（no_merged_move）；响应保持区间（respond_keeps），沿任意长的路线保持（kept_along）；一次成功的动作不会两次成功，响应改变它（next_move_changes）。“济其不及，以泄其过”“宽以济猛，猛以济宽”是这一结构。范围与分歧：这是两档玩具模型、即时响应。“政宽则民慢，慢则纠之以猛，猛则民残”所述的往复，是迟到读法的越界，已证（`Becoming.Regulation`）：迟 ℓ 步读的规则分不出其后 ℓ + 1 步内不同的扰动，所以扰动每步至多 d 时，任何这样的规则所保之带都不窄于 2(ℓ + 1)d（`late_spread`、`no_narrower_band`），而迟返恰保此带（`lateReturn_band`）。以步长 M 迟读的阈值调节越过入带处 ℓM（`overshoot`），一旦越过便两端越出而无尽（`crossing_oscillates`）；带下的起点恰在 a + (ℓ + 1)M ≤ b + 1 时都定于带内（`held_below_settles`、`relay_threshold`），过此阈值则贴近 a 的起点两端往复（`held_oscillates`）。仲尼此语以民为被调节之量、以猛为手段，是治理框架，律不采纳。",
+   "reading_en": "Agreement in the toy model: a band needs opposite moves at its two ends, no move chosen through a reading that merges the ends keeps both, and the successful move must change; the passage's overshoot from a late reading (宽→慢→猛→残) is proved beyond the model (Becoming.Regulation): no rule reading ℓ steps late keeps a band narrower than 2(ℓ + 1)d, and a relay reading late leaves both ends without end exactly past a threshold set by lateness times step. Its frame governs the people as a regulated stock.",
    "mapper": "wen",
    "gap": {
     "statement": "Regulation with a late reading. On natural-number levels, let the rest move the level by at most d per step in either direction, and let a policy add or remove up to m ≥ d per step while reading the level ℓ steps late. Prove: (i) there is an exact least width W(d, m, ℓ), nondecreasing in ℓ and growing with ℓ·d, such that some such policy keeps the band [a, b] from every level in it exactly where b − a ≥ W(d, m, ℓ); (ii) every policy that reads the level through a lumping merging a level within W(d, m, ℓ)/2 of a with one within W(d, m, ℓ)/2 of b leaves the band from some start (the general form of Regulation.no_merged_move); (iii) with no drift, the policy that adds m while its ℓ-late reading is below a, removes m while it is above b and otherwise rests, leaves the band at both ends infinitely often from some start outside it exactly where ℓ·m exceeds a threshold fixed by b − a (the proof states it), and settles inside where it does not (the 宽→慢→猛→残 alternation as overshoot of a late response).",
@@ -7690,8 +7721,10 @@
      "Becoming.Viability.kernel_and_iff",
      "Becoming.Tolerance.restores_iff"
     ],
-    "why_it_matters": "The 和 passages (济其不及以泄其过, 宽以济猛, and 中庸's 发而皆中节) state a range kept by opposite moves, and 宽猛 states the overshoot of a late response. The spine has this only as a two-level toy with an instant response. A general law would say when keeping a range needs a margin that grows with the lateness of the reading, which bears on every regulation that reads its object late, including oversight of fast-changing systems."
-   }
+    "why_it_matters": "The 和 passages (济其不及以泄其过, 宽以济猛, and 中庸's 发而皆中节) state a range kept by opposite moves, and 宽猛 states the overshoot of a late response. The spine has this only as a two-level toy with an instant response. A general law would say when keeping a range needs a margin that grows with the lateness of the reading, which bears on every regulation that reads its object late, including oversight of fast-changing systems.",
+    "closed": "RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), in part. (iii) proved exactly: a start held at a - 1 for the first l + 1 steps leaves both ends without end where b + 2 <= a + (l + 1) M (Regulation.held_oscillates), every start held below a settles in the band where a + (l + 1) M <= b + 1 (Regulation.held_below_settles), and with the relay's runs (Regulation.relay_runs, where (l + 1) M <= b + 1) the threshold is exact (Regulation.relay_threshold). (i) proved for one start, the rule chosen with it: no rule reading l late keeps a band narrower than 2 (l + 1) d under every rest within d a step (Regulation.no_narrower_band), and the late return keeps that band (Regulation.lateReturn_band); one policy keeping [a, b] from every start in it is not proved. (ii) is not proved."
+   },
+   "corrected": "RG proved the late reading's overshoot the reading placed beyond the model, with the least band a late rule needs and the relay's exact threshold"
   },
   {
    "id": "shuowen-de-wai-nei",
