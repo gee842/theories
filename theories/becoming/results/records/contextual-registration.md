@@ -46,7 +46,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 - Related, not a proved adapter: [unity-of-readings](unity-of-readings.md). What contexts show is always the relata of one world, with no gluing; World's balance is the gluing of the standing's and the exchange's readings of change. Ren approved the readings in context as the general case.
 - Related, not a proved adapter: [gluing-under-parity](gluing-under-parity.md). Answers its next step “the general parity obstruction”: context-free readings glue exactly where no selection of contexts contradicts, and where one does a mixture of context-free assignments meets on average at most m − 1 of its m contexts.
 
-**Used by:** [gluing-under-parity](gluing-under-parity.md) · [place-relations-in-context](place-relations-in-context.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [separation-loses-the-relation](separation-loses-the-relation.md) · [unity-of-readings](unity-of-readings.md)
+**Used by:** [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md) · [gluing-under-parity](gluing-under-parity.md) · [place-relations-in-context](place-relations-in-context.md) · [scientific-inquiry-foundation](scientific-inquiry-foundation.md) (interpretive) · [separation-loses-the-relation](separation-loses-the-relation.md) · [unity-of-readings](unity-of-readings.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

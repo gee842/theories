@@ -23,7 +23,7 @@ Original material and its provenance: Ren's writings and directions, exported co
 | 10 | `10-context-runtime-ember/` | — | 71 | 2026-03-28 to 2026-08-30 |
 | 11 | `11-human-solutions-museum/` | — | 6 |  |
 | 14 | `14-claude-code-prompts/` | — | 17 |  |
-| 15a | `15-codex-theory-conversations/` | — | 289 | 2026-09-05 to 2026-10-19 |
+| 15a | `15-codex-theory-conversations/` | — | 290 | 2026-09-05 to 2026-10-19 |
 | 15b | `15-user-provided-2026-09-06/` | — | 4 |  |
 | 16 | `16-claude-code-directions/` | — | 15 | 2026-09-25 to 2026-10-04 |
 | 17 | `17-user-provided-2026-10-02/` | — | 1 |  |
@@ -70,6 +70,6 @@ Original material and its provenance: Ren's writings and directions, exported co
 | `nishida-zen-no-kenkyu/` | — | 2 |  |
 | `situated-recovery/` | — | 76 |  |
 | [tclab-benchmark/](tclab-benchmark/README.md) | TCLab physical benchmark sources | 30 |  |
-| [zhouyi-yizhuan/](zhouyi-yizhuan/README.md) | The 周易 and the 易传: Chinese Wikisource revisions | 73 |  |
+| [zhouyi-yizhuan/](zhouyi-yizhuan/README.md) | The 周易 and the 易传: Chinese Wikisource revisions | 81 |  |
 
 Descriptions are the first heading of each group's README, where it has one. Rerun `make research-render` after an import.

@@ -80,7 +80,7 @@ Ren, 19 October 2026, asked whether the relation of the work to the 周易, abov
 - related, not a proved adapter: [place-relations-in-context](place-relations-in-context.md). The relations of the places (正, 應, 比, 中) read in context on these configurations, and their laws under the same changes.
 - related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). Four more laws on these configurations (the nuclear law, the cast, the four symmetries, the counter) and the six orbits of the law of waxing and waning.
 
-**Used by:** [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md) (application)
+**Used by:** [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md) · [hexagram-world-laws](hexagram-world-laws.md) · [place-relations-in-context](place-relations-in-context.md) · [what-a-commuting-law-keeps-apart](what-a-commuting-law-keeps-apart.md) (application)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -121,6 +121,7 @@ Aliases: `the sixty-four hexagrams on the spine`, `六十四卦在脊柱上`, `�
 - 19 October 2026, Y3 follow-up after SG: YI-ZHUAN-AND-BECOMING.md, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 states two of its laws as instances of SG's Law.Commutes.iterate and Law.Commutes.apart; study section 198 and the chapter on the 易传 say so). The claim is unchanged.
 - 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
 - 19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.
+- 19 October 2026, Y4 (王弼's readings of the places, record fixed-places-and-sole-lines, study section 202): YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md, PROVENANCE.json re-pointed after reading the change (Y4 added its passages, censuses, chapter text, study section, canonical paragraph and the preserved pages of the 《周易略例》). The claim is unchanged.
 
 </details>
 

@@ -262,8 +262,8 @@
       "kind": "correspondence"
     },
     {
-      "en": "The ranks of the places (尊位, 貴賤); whether the bottom and top places have a place (初上无位); one line answered by all others (上下應之, 乘五剛); statements of place outside the four censuses; 王弼's 《周易略例》, not preserved here. The censuses of the sixty-four by each count, which the earlier repository states.",
-      "zh": "位的尊卑（尊位、贵贱），初上两位是否有位（初上无位），一爻为众爻所应（上下應之、乘五剛），以及四项普查之外关于位的言说（爻辞、大象、文言）；王弼《周易略例》未存于本库，未对照。六十四卦按各计数的普查（早期仓库已陈述）也未重述。",
+      "en": "The ranks of the places (尊位, 貴賤); the reading with no fixed place at the bottom and top (初上无位), the line answered by all others (上下應之, 乘五剛), the censuses of the line texts and the 大象, and 王弼's 《周易略例》 are in fixed-places-and-sole-lines; the 文言's statements of place. The censuses of the sixty-four by each count, which the earlier repository states.",
+      "zh": "位的尊卑（尊位、贵贱）；初上无位之读、一爻为众爻所应（上下應之、乘五剛）、爻辭与大象之普查与王弼《周易略例》，见 fixed-places-and-sole-lines；文言中关于位的言说。六十四卦按各计数的普查（早期仓库已陈述）也未重述。",
       "kind": "scope"
     },
     {
@@ -286,8 +286,8 @@
     "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T080527.161049Z）：Becoming.HexagramPlaces 的 156 项声明（108 项定理）公理报告为空；检查器并核对核心纯净。逐句对应（64 段，其中 22 段引本模块）与四项普查由 verify_mapping.py 对照保存的维基文库版本与回执的声明清单检查。作者自审见研究第 195 节；未经独立审查。"
   },
   "next_delta": {
-    "en": "王弼's reading that the bottom and top lines have no place, as a second relation on places 2 to 5, once the 《周易略例》 is preserved; the relation of one line to all the others (卦主); censuses of the line texts, the 大象 and the 文言; the nuclear law read on these sites; an independent review.",
-    "zh": "王弼“初上无位”之读，作为二至五位上的另一关系，待《周易略例》存入本库；一爻与其余诸爻的关系（卦主）；爻辞、大象与文言的普查；在这些位上读互；独立审查。"
+    "en": "A census of the 文言; the nuclear law read on these sites; an independent review.",
+    "zh": "文言的普查；在这些位上读互；独立审查。"
   },
   "correspondence": {
     "en": "Continues hexagrams-on-the-spine (Y1), which listed the relations of the places as not done, on Ren's request of 19 October 2026, “我要你把这个系统完全建立起来，要变成库的一部分，要确保它在spine上有明确的mapping” (provenance, not warrant). The chapter on the 易传 maps 22 passages that cite this module: 12 agreements, 5 exact scopes and 5 divergences. Reading (the AI's, D50): 正 is a relation of a line and its place, so a line's phase turns as it rises (六位時成); 應 is told by phase, so 未濟's 雖不當位，剛柔應也 is an entailment; 敵應 is where the two trigrams glue; the oppositions carry the law and the count in phase does not; the text agrees with the relations in four censuses except at 需's top line and 艮's fifth; the ranks of the places diverge.",
@@ -401,6 +401,13 @@
       "detail": {
         "en": "The nuclear law, the cast, the four symmetries, the counter and the six orbits of waxing and waning on the same configurations, using the rises and falls for the changes around.",
         "zh": "同一些构形上的互、之卦、四种对称、加一与消息之六轨，以承、乘数出绕行一周之爻变。"
+      }
+    },
+    {
+      "id": "fixed-places-and-sole-lines",
+      "detail": {
+        "en": "王弼's second relation of phase on places 2 to 5 beside inPhase, under which 需's top line agrees, and the line answered by all others.",
+        "zh": "王弼在二至五位上的第二个关系，在 inPhase 之旁，需上六在其下相合；以及独应之爻。"
       }
     }
   ],
@@ -648,31 +655,31 @@
       "path": "theories/becoming/chapters/YI-ZHUAN-AND-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "6765bc9e071aad61e51ea9e5aef182cbc97b64a48c0fb5b56bdc7cfecdc04684"
+      "sha256": "3db2702447a60b5eaffa85615264cfdfb6238c2cd3b3a843a48d7d8185db40b1"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/passages.json",
       "role": "integration",
       "declarations": [],
-      "sha256": "19ff998c64e53fbbf8ed5aacf8a3dbc9832efb579038779ff1f3d4301b6a2475"
+      "sha256": "4d5388bb32c6dedcd787f0c54d9b4bcccb216ed86d93310257b43b89e9b11a34"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/y1-changes/verify_mapping.py",
       "role": "integration",
       "declarations": [],
-      "sha256": "37c15bbea32b5a5033c34959c0d9700bc89351c4aa554d53df369b10ae7486c0"
+      "sha256": "abdce96c891ea01ad6b2cebea2f9453ce39f9f6c00c908f37442448a708d5f89"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "declarations": [],
-      "sha256": "dfe98addb79966e18bd133428bc9c20deec8321fc006024853510b00dcb4fd50"
+      "sha256": "f5fdf985480d90d91077602176980412b4afc4eb982c774213000d017998c84a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
       "declarations": [],
-      "sha256": "b16b6506806af57b61b098d014126b21c22903a314fc8ae9d9fed943be168a12"
+      "sha256": "cfc03c248abb2f904a5a4d35242ca453bcf2fd42bd35cfb7352403cc4eac63c1"
     },
     {
       "path": "sources/07-shengsheng-buxi/ssbx-repo/formal-notes/zhouyi-position-operator-report.md",
@@ -690,7 +697,7 @@
       "path": "sources/zhouyi-yizhuan/PROVENANCE.json",
       "role": "provenance",
       "declarations": [],
-      "sha256": "476477819c8778a28abc9c2a889127929ce1fe7be4cfadd1b475b48b20958ff0"
+      "sha256": "a3fd3c521e54bcd58cd8d8d95ecef0d6ad59f635aaedd6199328b7e1a611b93f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-the-changes-on-the-spine.md",
@@ -800,6 +807,10 @@
     {
       "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, Y4 (王弼's readings of the places): 初上无位, the line answered by all others and the 《周易略例》, listed as not shown and as the next delta, are now the record fixed-places-and-sole-lines (study section 202, decision D53); the passages on 小畜, 大有, 夬, 履六三 and 需上六 cite it, 需上六 now an agreement under the second relation while xu_top_inPhase stands; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md, PROVENANCE.json re-pointed after reading the change (Y4 added its passages, censuses, chapter text, study section, canonical paragraph and preserved pages). The claim is unchanged.",
+      "zh": "2026年10月19日，Y4（王弼之读）：原列为未示与下一步的初上无位、一爻为众爻所应与《周易略例》，现为记录 fixed-places-and-sole-lines（研究第 202 节，决定 D53）；小畜、大有、夬、履六三与需上六各段引之，需上六在第二个关系下改为相合，xu_top_inPhase 仍成立；读过改动后，YI-ZHUAN-AND-BECOMING.md、passages.json、verify_mapping.py、BECOMING-RENEWAL-READING.md、THE-THEORY-OF-BECOMING.md、PROVENANCE.json 重新指向。论断不变。"
     }
   ]
 }

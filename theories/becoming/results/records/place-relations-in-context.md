@@ -33,7 +33,7 @@
 ## Does not show
 
 - What any passage says of the places beyond these relations; the passage map of the chapter states, passage by passage, agreement, exact scope or divergence, and its readings are the AI's.
-- The ranks of the places (尊位, 貴賤); whether the bottom and top places have a place (初上无位); one line answered by all others (上下應之, 乘五剛); statements of place outside the four censuses; 王弼's 《周易略例》, not preserved here. The censuses of the sixty-four by each count, which the earlier repository states.
+- The ranks of the places (尊位, 貴賤); the reading with no fixed place at the bottom and top (初上无位), the line answered by all others (上下應之, 乘五剛), the censuses of the line texts and the 大象, and 王弼's 《周易略例》 are in fixed-places-and-sole-lines; the 文言's statements of place. The censuses of the sixty-four by each count, which the earlier repository states.
 - That being in phase, opposed, central or rising is good, fortunate or supports 生生; the module has no ethical predicate and no judgment of fortune.
 
 **Standard boundaries:** No ethical premise and no Lean axiom is used. · Contains no ethical predicate and evaluates neither arising nor ceasing. · Stated for discrete steps. · A law of the formal model; its correspondence to actual systems is a separate obligation. · Names follow the structural naming criteria and are adopted only where the statement has their exact meaning; readings are interpretations, open to revision. · A relation omitted by a weaker description does not refute the fuller account.
@@ -48,7 +48,7 @@ Canonical source: [HexagramPlaces.lean](../../../../experiments/integrated-corre
 <a id="next--下一步"></a>
 ## Next
 
-王弼's reading that the bottom and top lines have no place, as a second relation on places 2 to 5, once the 《周易略例》 is preserved; the relation of one line to all the others (卦主); censuses of the line texts, the 大象 and the 文言; the nuclear law read on these sites; an independent review.
+A census of the 文言; the nuclear law read on these sites; an independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -74,8 +74,9 @@ Continues hexagrams-on-the-spine (Y1), which listed the relations of the places 
   - Preserved conditions: None. [Learning.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
 - related, not a proved adapter: [gluing-under-parity](gluing-under-parity.md). Another case of contexts that glue or do not; here every reading is decided and the failure to glue is located at the opposed heights.
 - related, not a proved adapter: [hexagram-world-laws](hexagram-world-laws.md). The nuclear law, the cast, the four symmetries, the counter and the six orbits of waxing and waning on the same configurations, using the rises and falls for the changes around.
+- related, not a proved adapter: [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md). 王弼's second relation of phase on places 2 to 5 beside inPhase, under which 需's top line agrees, and the line answered by all others.
 
-**Used by:** [hexagram-world-laws](hexagram-world-laws.md)
+**Used by:** [fixed-places-and-sole-lines](fixed-places-and-sole-lines.md) · [hexagram-world-laws](hexagram-world-laws.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -117,6 +118,7 @@ Aliases: `the relations of the places`, `爻位之关系`, `應`, `应`, `比`, 
 - 19 October 2026, Y3 follow-up after SG: YI-ZHUAN-AND-BECOMING.md, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (Y3 states two of its laws as instances of SG's Law.Commutes.iterate and Law.Commutes.apart; study section 198 and the chapter on the 易传 say so). The claim is unchanged.
 - 19 October 2026, Y2 follow-up: the earlier work on the places, the 生生不息 repository's HexagramPosition.lean (its commit efd892a5; its Lean is not preserved here), its preserved report on places and operators and item H6 of the review of that repository, is cited in study section 195: where the definitions agree, where they part (its 比 counts neighbours of one kind), what is proved here that it left unproved, and the review's H6 revised (the pattern of 應 is a lumping, its count is not). The references to the report and the review are added and the study reference re-pointed. The claim is unchanged.
 - 19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.
+- 19 October 2026, Y4 (王弼's readings of the places): 初上无位, the line answered by all others and the 《周易略例》, listed as not shown and as the next delta, are now the record fixed-places-and-sole-lines (study section 202, decision D53); the passages on 小畜, 大有, 夬, 履六三 and 需上六 cite it, 需上六 now an agreement under the second relation while xu_top_inPhase stands; YI-ZHUAN-AND-BECOMING.md, passages.json, verify_mapping.py, BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md, PROVENANCE.json re-pointed after reading the change (Y4 added its passages, censuses, chapter text, study section, canonical paragraph and preserved pages). The claim is unchanged.
 
 </details>
 
