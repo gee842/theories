@@ -17,7 +17,9 @@ CONTINUATION = f'{PKG}/Becoming/Continuation.lean'
 SIGNIFICANCE = f'{PKG}/Becoming/Significance.lean'
 STUDY = '_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md'
 OPENING = 'theories/becoming/OPENING.md'
-PROPOSAL = 'drafts/2026-10-10-opening/OPENING-V7-PROPOSAL.md'
+CHAPTER = 'theories/becoming/chapters/THE-THEORY-OF-BECOMING.md'
+PROPOSAL = 'drafts/2026-10-10-opening/history/OPENING-V7-PROPOSAL.md'
+GO = 'sources/15-codex-theory-conversations/2026-10-19-opening-v7.md'
 RECORDS = ROOT / 'theories/becoming/results/records'
 RID = 'relative-position-is-zero-sum'
 core_id, section = sys.argv[1], sys.argv[2]
@@ -177,16 +179,22 @@ r = {
               'produces joint excess; several shared conditions with different needs; an independent review.',
         'zh': '以名次或份额读的位置；落后者增加取用的竞逐动力，及其是否产生联合超出；需要不同的多个共享条件；独立审查。'},
     'correspondence': {
-        'en': 'States the counting half of the opening\'s sentence "a zero-sum game of relative position, which all its '
-              'winners will lose" (OPENING, Ren\'s voice; provenance, not warrant), which its note [^aligned] called "a '
-              'matter of counting, not yet stated on the formal spine", and proves the second half under a stated '
-              'dependence (board item Z1; v7 proposal, edits (j) and (ee)). "Winner" is read as a greatest part by '
-              'the reading of positions, the AI\'s reading; the sentence the note can carry is in study section '
-              f'{section}.',
-        'zh': '陈述开篇一句“a zero-sum game of relative position, which all its winners will lose”（OPENING，Ren 的口吻；'
-              '是出处，不是依据）的计数一半，其注 [^aligned] 称之为“a matter of counting, not yet stated on the formal spine”；'
-              '并在写明的依赖下证明后一半（工作板 Z1；v7 提案编辑 (j) 与 (ee)）。“winner”读作按位置读法最大的部分，此为 AI 的读法；'
-              f'注中可承载的句子见研究第 {section} 节。'},
+        'en': 'States the counting half of the opening\'s sentence on the game of winning (OPENING, Ren\'s voice; '
+              'provenance, not warrant), which read "a zero-sum game of relative position, which, as I see it, all its '
+              'winners will lose" and whose note [^aligned] had called the zero-sum "a matter of counting, not yet '
+              'stated on the formal spine", and proves the second half under a stated dependence (board item Z1; v7 '
+              'proposal, edits (j), (ee), (oo) and (oo\u2032)). With this landing, by Ren\'s agreement to the '
+              'proposal\'s third pass, the body reads "a zero-sum game of relative position, which all its winners '
+              'will lose wherever they live on what it draws down" (oo) and "A race of position cannot raise everyone" '
+              '(oo\u2032), and the notes [^aligned] and [^race] cite this record. "Winner" is read as a greatest part '
+              f'by the reading of positions, the AI\'s reading; the note\'s sentence is in study section {section}.',
+        'zh': '陈述开篇“赢的游戏”一句（OPENING，Ren 的口吻；是出处，不是依据）的计数一半：该句原为“a zero-sum game of '
+              'relative position, which, as I see it, all its winners will lose”，其注 [^aligned] 原称零和“a matter of '
+              'counting, not yet stated on the formal spine”；并在写明的依赖下证明后一半（工作板 Z1；v7 提案编辑 (j)、(ee)、'
+              '(oo) 与 (oo′)）。随本次落地，依 Ren 对提案第三轮的同意，正文改为“a zero-sum game of relative position, '
+              'which all its winners will lose wherever they live on what it draws down”（oo）与“A race of position cannot '
+              'raise everyone”（oo′），注 [^aligned] 与 [^race] 引本记录。“winner”读作按位置读法最大的部分，此为 AI 的读法；'
+              f'注中的句子见研究第 {section} 节。'},
     'canonical_source': SRC,
     'aliases': ['the game of relative position', '相对位置的博弈', 'zero-sum game of relative position',
                 'relative position is zero-sum', '相对位置是零和的', 'position does not protect',
@@ -233,8 +241,10 @@ r = {
          'sha256': sha(SIGNIFICANCE)},
         {'path': RECEIPT, 'role': 'receipt', 'sha256': sha(RECEIPT)},
         {'path': STUDY, 'role': 'integration', 'sha256': sha(STUDY)},
+        {'path': CHAPTER, 'role': 'statement', 'sha256': sha(CHAPTER)},
         {'path': OPENING, 'role': 'provenance', 'sha256': sha(OPENING)},
-        {'path': PROPOSAL, 'role': 'statement', 'sha256': sha(PROPOSAL)}],
+        {'path': PROPOSAL, 'role': 'provenance', 'sha256': sha(PROPOSAL)},
+        {'path': GO, 'role': 'provenance', 'sha256': sha(GO)}],
     'proof_bindings': [{'source': SRC, 'receipt': RECEIPT, 'sha256_pointer': '/source_sha256/Becoming.RelativePosition',
                         'success_pointer': '/status', 'success_value': 'passed'}],
     'history': [{
