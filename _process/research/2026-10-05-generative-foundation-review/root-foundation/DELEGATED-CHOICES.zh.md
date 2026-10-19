@@ -252,7 +252,7 @@
 
 所在：第 8 节第十二项；[one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)、[significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)、[whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)、[comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)、[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)。
 
-**决定。** 一、`Unrestricted` 读出公理：形成的索引读“anything”，一个形成在一步的延续读“its continuation into the future”，立场的索引不加限定地读“has significance”，没有中心特殊。二、A 读在活的内容上：这一读法是被迫的（`Widening.bare_forces_reason`），如此读，A 给出 D 与普遍理由（`universal_reason_of_unrestricted`）。三、重述是否替代 G0，已由 Ren 的折叠回答（2026-10-11）：G0 不再是公理，第一部分把它作为条件陈述，第二部分断言公理时它是定理。
+**决定。** 一、`Unrestricted` 读出公理：形成的索引读“anything”，一个形成在一步的延续读“its continuation into the future”，立场的索引不加限定地读“has significance”，没有中心特殊。二、A 读在活的内容上：这一读法是被迫的（`BareSignificance.bare_forces_reason`），如此读，A 给出 D 与普遍理由（`universal_reason_of_unrestricted`）。三、重述是否替代 G0，已由 Ren 的折叠回答（2026-10-11）：G0 不再是公理，第一部分把它作为条件陈述，第二部分断言公理时它是定理。
 **理由。** 一、逐字合 Ren 的句子，并且它就是对任何东西的 G0（`unrestricted_iff_g0`）；二、见证迫使它。
 **会改变它的。** Ren 给“has significance”加限定。
 

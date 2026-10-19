@@ -564,7 +564,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "454cfa7bc3382e90e22de817d64d429e413fee0a8a258760f2e3b8ef89c0c831"
+      "sha256": "39481677948c2c7701b1fd6b9c942dabc0003e06f66fc83b9f85912566f87593"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "11fece2418ace02390dea2890cb1a7f7e04531e2a4cfc0a8ca99234dd9806ad6"
+      "sha256": "14f5b47cf9f46f6b6e3b92ab50e936f2ad06df22f617a1ca5f414eadcc7bc149"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -1185,6 +1185,10 @@
     {
       "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The claim is unchanged. The chapter reference was re-pointed again after §8.8's row for the nineteenth review was updated.",
       "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。论断不变。§8.8 中第十九次审查一行更新后，理论章节的引用再次重新指向。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): BECOMING-UNIFICATION-PLAN.md, THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: BECOMING-UNIFICATION-PLAN.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json); THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：BECOMING-UNIFICATION-PLAN.md、THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：BECOMING-UNIFICATION-PLAN.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）；THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

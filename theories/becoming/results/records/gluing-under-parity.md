@@ -126,6 +126,7 @@ Aliases: `when readings in context glue, for parity`, `奇偶约束下语境中�
 - 19 October 2026, RC (capture through the rule): DELEGATED-CHOICES.md re-pointed after reading the change (DELEGATED-CHOICES.md: RC added decision D57, its index row and a lineage line). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Context.lean, ParityReadings.lean). The claim is unchanged.
 - 19 October 2026, R21 (the nineteenth review's fix list): DELEGATED-CHOICES.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: DELEGATED-CHOICES.md, dated restatements in current terms (E5, O2); the original decisions kept. Read before re-pointing. The claim is unchanged.
+- 19 October 2026, R22 (the names of the nineteenth review): DELEGATED-CHOICES.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: DELEGATED-CHOICES.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
 - 5 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](gluing-under-parity.json).
 
 <a id="earlier-text--早期文本"></a>

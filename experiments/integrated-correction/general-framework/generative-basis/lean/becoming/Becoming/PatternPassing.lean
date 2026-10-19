@@ -1,7 +1,7 @@
 import Becoming.Wholes
 
 /-!
-# Passing: a pattern that outlasts each of its carriers lasts only through passing
+# PatternPassing: a pattern that outlasts each of its carriers lasts only through passing
 
 `Becoming.Wholes` proves that parts covering the steps from `T` on, none active at two steps `d`
 apart, have a part arising within every `d` consecutive steps (`Web.Covered.arises_within`), and

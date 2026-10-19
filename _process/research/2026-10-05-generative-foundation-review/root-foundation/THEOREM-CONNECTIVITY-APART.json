@@ -312,7 +312,7 @@
    "category": "support",
    "reason": "a sum over an appended list splits, for any weights (Weights.sum_append restated)"
   },
-  "Becoming.Widening.bare_forces_reason": {
+  "Becoming.BareSignificance.bare_forces_reason": {
    "module": "Becoming.Relevance",
    "category": "model-witness",
    "reason": "a counter-model showing that a premise of the ethical laws is needed; a fact about one constructed valuation, not a law of the unfolding"

@@ -18,57 +18,57 @@
       "en": "A return map giving back what it receives keeps a difference; where every link gives on at least what it receives, the difference never falls below where it began, so a loop that closes a difference has a link giving back less than it received, found.",
       "zh": "给回所受的回返映射保持差别；每个环节所传至少等于所受时，差别从不低于起点，因此闭合差别的回路有一个给回少于所受的环节，且可找到。",
       "declarations": [
-        "Becoming.Widening.returnMap",
-        "Becoming.Widening.kept_of_identity",
-        "Becoming.Widening.loop_kept",
-        "Becoming.Widening.never_closes_of_no_less",
-        "Becoming.Widening.closing_needs_less"
+        "Becoming.LoopReturn.returnMap",
+        "Becoming.LoopReturn.kept_of_identity",
+        "Becoming.LoopReturn.loop_kept",
+        "Becoming.LoopReturn.never_closes_of_no_less",
+        "Becoming.LoopReturn.closing_needs_less"
       ]
     },
     {
       "en": "A return map with f 0 = 0 and f x < x at every positive x closes within d turns and stays closed (an instance of Lasting.Variant.reaches), exactly by Nat.pred; a closing loop merges two differences and is not lossless.",
       "zh": "f 0 = 0 且对每个正 x 有 f x < x 的回返映射在 d 圈之内闭合并保持闭合（Lasting.Variant.reaches 的实例），由 Nat.pred 知其精确；闭合的回路合并两个差别，不是无损的。",
       "declarations": [
-        "Becoming.Widening.difference_variant",
-        "Becoming.Widening.closes_within",
-        "Becoming.Widening.closes_within_exact",
-        "Becoming.Widening.closing_merges",
-        "Becoming.Widening.closing_not_lossless"
+        "Becoming.LoopReturn.difference_variant",
+        "Becoming.LoopReturn.closes_within",
+        "Becoming.LoopReturn.closes_within_exact",
+        "Becoming.LoopReturn.closing_merges",
+        "Becoming.LoopReturn.closing_not_lossless"
       ]
     },
     {
       "en": "Taking a constant off leaves d - n * c after n turns, closed exactly from the least n with n * c ≥ d; a cut closes at once where every later link gives nothing for nothing, and is reopened otherwise.",
       "zh": "每圈减去常数 c，n 圈后余 d - n * c，恰从满足 n * c ≥ d 的最小 n 起闭合；切断在其后每个环节无来则无往之处立即闭合，否则被重新打开。",
       "declarations": [
-        "Becoming.Widening.orbit_sub_const",
-        "Becoming.Widening.sub_const_closes",
-        "Becoming.Widening.sub_const_open",
-        "Becoming.Widening.cut_closes",
-        "Becoming.Widening.cut_reopened"
+        "Becoming.LoopReturn.orbit_sub_const",
+        "Becoming.LoopReturn.sub_const_closes",
+        "Becoming.LoopReturn.sub_const_open",
+        "Becoming.LoopReturn.cut_closes",
+        "Becoming.LoopReturn.cut_reopened"
       ]
     },
     {
       "en": "Monotone return maps settle within d turns at a fixed value where f d ≤ d (exact) and never fall where d ≤ f d; doubling links run away, at least 2 ^ n * d after n turns, exactly for one doubling link.",
       "zh": "单调回返映射在 f d ≤ d 时于 d 圈之内停于不动值（精确），在 d ≤ f d 时从不下降；加倍的环节失控，n 圈后至少 2 ^ n * d，单个加倍环节恰好如此。",
       "declarations": [
-        "Becoming.Widening.never_rises",
-        "Becoming.Widening.never_falls",
-        "Becoming.Widening.settles_within",
-        "Becoming.Widening.settles_within_exact",
-        "Becoming.Widening.runs_away",
-        "Becoming.Widening.runs_away_unbounded",
-        "Becoming.Widening.doubling_exact"
+        "Becoming.LoopReturn.never_rises",
+        "Becoming.LoopReturn.never_falls",
+        "Becoming.LoopReturn.settles_within",
+        "Becoming.LoopReturn.settles_within_exact",
+        "Becoming.LoopReturn.runs_away",
+        "Becoming.LoopReturn.runs_away_unbounded",
+        "Becoming.LoopReturn.doubling_exact"
       ]
     },
     {
       "en": "With links multiplying by whole-number strengths, product 0 closes at the first turn, product 1 keeps the difference, product at least 2 exceeds every bound; no such loop closes gradually, while taking one off does.",
       "zh": "各环节以整数强度相乘时，乘积为 0 在第一圈闭合，为 1 保持差别，至少为 2 则超过一切界；这样的回路都不逐步闭合，而减一则可以。",
       "declarations": [
-        "Becoming.Widening.scaling",
-        "Becoming.Widening.returnMap_scaling",
-        "Becoming.Widening.whole_strengths",
-        "Becoming.Widening.nothing_between",
-        "Becoming.Widening.gradual_needs_another_link"
+        "Becoming.LoopReturn.scaling",
+        "Becoming.LoopReturn.returnMap_scaling",
+        "Becoming.LoopReturn.whole_strengths",
+        "Becoming.LoopReturn.nothing_between",
+        "Becoming.LoopReturn.gradual_needs_another_link"
       ]
     }
   ],
@@ -100,8 +100,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 49 declarations of Becoming.Widening, 46 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.Widening 的 49 项声明（46 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 49 declarations of Becoming.LoopReturn, 46 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.LoopReturn 的 49 项声明（46 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
   },
   "next_delta": {
     "en": "Real strengths, where a multiplication below one closes gradually; a loop of Rejoining read as a return map; many conditions at once; an independent review.",
@@ -111,13 +111,13 @@
     "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; the AI's mapping found this one (bounded conflict) partial: runaway was proved, closing was not; it also answers, for loops, the chapter's open question which law closes rather than widens a difference. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
     "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；AI 的对照发现此条（有界冲突）部分承载：失控已证，闭合未证；它也就回路回答了本章的开放问题：哪条律闭合而非扩大差别。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Widening.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LoopReturn.lean",
   "aliases": [
     "whether a loop closes a difference",
     "回路是否闭合差别",
     "closing needs a link that gives back less",
-    "Becoming.Widening.closing_needs_less",
-    "Becoming.Widening.whole_strengths",
+    "Becoming.LoopReturn.closing_needs_less",
+    "Becoming.LoopReturn.whole_strengths",
     "bounded conflict (reading)"
   ],
   "dependencies": [
@@ -163,60 +163,60 @@
   ],
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Widening.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LoopReturn.lean",
       "role": "proof",
       "declarations": [
-        "Becoming.Widening.below_of_falls",
-        "Becoming.Widening.closes_within",
-        "Becoming.Widening.closes_within_exact",
-        "Becoming.Widening.closing_merges",
-        "Becoming.Widening.closing_needs_less",
-        "Becoming.Widening.closing_not_lossless",
-        "Becoming.Widening.cut_closes",
-        "Becoming.Widening.cut_reopened",
-        "Becoming.Widening.difference_variant",
-        "Becoming.Widening.doubling_exact",
-        "Becoming.Widening.empty_loop_kept",
-        "Becoming.Widening.eq_zero_of_add_le",
-        "Becoming.Widening.gradual_needs_another_link",
-        "Becoming.Widening.kept_of_identity",
-        "Becoming.Widening.last_positive",
-        "Becoming.Widening.link_below_of_below",
-        "Becoming.Widening.loop_kept",
-        "Becoming.Widening.lt_two_pow_mul",
-        "Becoming.Widening.never_closes_of_no_less",
-        "Becoming.Widening.never_falls",
-        "Becoming.Widening.never_rises",
-        "Becoming.Widening.nothing_between",
-        "Becoming.Widening.one_pow",
-        "Becoming.Widening.orbit_doubling",
-        "Becoming.Widening.orbit_ge_of_ge",
-        "Becoming.Widening.orbit_of_fixed",
-        "Becoming.Widening.orbit_scaling",
-        "Becoming.Widening.orbit_sub_const",
-        "Becoming.Widening.returnMap",
-        "Becoming.Widening.returnMap_cut",
-        "Becoming.Widening.returnMap_doubles",
-        "Becoming.Widening.returnMap_ge",
-        "Becoming.Widening.returnMap_of_identity",
-        "Becoming.Widening.returnMap_scaling",
-        "Becoming.Widening.returnMap_zero",
-        "Becoming.Widening.runs_away",
-        "Becoming.Widening.runs_away_unbounded",
-        "Becoming.Widening.scaling",
-        "Becoming.Widening.settled_or_fallen",
-        "Becoming.Widening.settles_within",
-        "Becoming.Widening.settles_within_exact",
-        "Becoming.Widening.stays_from_fixed",
-        "Becoming.Widening.strength",
-        "Becoming.Widening.sub_const_closes",
-        "Becoming.Widening.sub_const_open",
-        "Becoming.Widening.sub_eq_zero_of_le",
-        "Becoming.Widening.sub_pos_of_lt",
-        "Becoming.Widening.two_pow_succ_mul",
-        "Becoming.Widening.whole_strengths"
+        "Becoming.LoopReturn.below_of_falls",
+        "Becoming.LoopReturn.closes_within",
+        "Becoming.LoopReturn.closes_within_exact",
+        "Becoming.LoopReturn.closing_merges",
+        "Becoming.LoopReturn.closing_needs_less",
+        "Becoming.LoopReturn.closing_not_lossless",
+        "Becoming.LoopReturn.cut_closes",
+        "Becoming.LoopReturn.cut_reopened",
+        "Becoming.LoopReturn.difference_variant",
+        "Becoming.LoopReturn.doubling_exact",
+        "Becoming.LoopReturn.empty_loop_kept",
+        "Becoming.LoopReturn.eq_zero_of_add_le",
+        "Becoming.LoopReturn.gradual_needs_another_link",
+        "Becoming.LoopReturn.kept_of_identity",
+        "Becoming.LoopReturn.last_positive",
+        "Becoming.LoopReturn.link_below_of_below",
+        "Becoming.LoopReturn.loop_kept",
+        "Becoming.LoopReturn.lt_two_pow_mul",
+        "Becoming.LoopReturn.never_closes_of_no_less",
+        "Becoming.LoopReturn.never_falls",
+        "Becoming.LoopReturn.never_rises",
+        "Becoming.LoopReturn.nothing_between",
+        "Becoming.LoopReturn.one_pow",
+        "Becoming.LoopReturn.orbit_doubling",
+        "Becoming.LoopReturn.orbit_ge_of_ge",
+        "Becoming.LoopReturn.orbit_of_fixed",
+        "Becoming.LoopReturn.orbit_scaling",
+        "Becoming.LoopReturn.orbit_sub_const",
+        "Becoming.LoopReturn.returnMap",
+        "Becoming.LoopReturn.returnMap_cut",
+        "Becoming.LoopReturn.returnMap_doubles",
+        "Becoming.LoopReturn.returnMap_ge",
+        "Becoming.LoopReturn.returnMap_of_identity",
+        "Becoming.LoopReturn.returnMap_scaling",
+        "Becoming.LoopReturn.returnMap_zero",
+        "Becoming.LoopReturn.runs_away",
+        "Becoming.LoopReturn.runs_away_unbounded",
+        "Becoming.LoopReturn.scaling",
+        "Becoming.LoopReturn.settled_or_fallen",
+        "Becoming.LoopReturn.settles_within",
+        "Becoming.LoopReturn.settles_within_exact",
+        "Becoming.LoopReturn.stays_from_fixed",
+        "Becoming.LoopReturn.strength",
+        "Becoming.LoopReturn.sub_const_closes",
+        "Becoming.LoopReturn.sub_const_open",
+        "Becoming.LoopReturn.sub_eq_zero_of_le",
+        "Becoming.LoopReturn.sub_pos_of_lt",
+        "Becoming.LoopReturn.two_pow_succ_mul",
+        "Becoming.LoopReturn.whole_strengths"
       ],
-      "sha256": "55a880e0702332ef6ffe650f5ba30872eae44a4317d7c2056797218ac557abf9"
+      "sha256": "2b724c5dc2718c034ec61f74abf7e946e6a8d6d35d85099e18896cfbcad2baa8"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
@@ -245,19 +245,25 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a96e325b2bf3466d7d5acf04091d6bdec20b8b295d75c714eba482294cf0eaf4"
+      "sha256": "14f5b47cf9f46f6b6e3b92ab50e936f2ad06df22f617a1ca5f414eadcc7bc149"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
       "role": "provenance",
       "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "role": "receipt",
+      "sha256": "e404248790d05ebecf72efd2af0313f7fb1167840713dce35fa124a275b40884",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Widening.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Widening",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LoopReturn.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.LoopReturn",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -326,6 +332,10 @@
     {
       "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The claim is unchanged.",
       "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): LoopReturn.lean re-pointed, proof bindings rebound to core receipt 20261019T164609.214116Z. Since the reviewed hash, the cited files changed only where R22 renamed: LoopReturn.lean, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：LoopReturn.lean 重新指向，证明绑定改到核心回执 20261019T164609.214116Z。自所审哈希以来，所引文件只在 R22 改名之处改动：LoopReturn.lean，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
     }
   ]
 }

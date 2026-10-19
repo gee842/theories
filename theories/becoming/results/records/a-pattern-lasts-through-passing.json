@@ -76,8 +76,8 @@
     "omission-not-refutation"
   ],
   "validation_scope": {
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 29 declarations of Becoming.Passing, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
-    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.Passing 的 29 项声明（19 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 29 declarations of Becoming.PatternPassing, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T064004.300228Z）：Becoming.PatternPassing 的 29 项声明（19 项定理）公理报告为空；检查器并核对核心纯净。由一个 Opus 证明者在草稿中构建，由另一个 Opus 审查者依简报审查并修正；作者审查见研究第 193 节；未经人的独立审查。"
   },
   "next_delta": {
     "en": "Passing derived from descent (Flow.DescendsAt) rather than supplied; patterns that change as they pass; an independent review.",
@@ -87,7 +87,7 @@
     "en": "An account of social viability Ren brought on 19 October 2026 lists eight constraints and a unifying ninth; the AI's mapping found this one (forming the next members) partial: the whole persists through the generation of its parts, but no law of passing a pattern. Ren's words are provenance, not warrant; the reading onto collectives is the AI's (D48).",
     "zh": "Ren 于 2026年10月19日带来的一段社会可存续性文字列出八条约束与统一它们的第九条；AI 的对照发现此条（形成下一代成员）部分承载：整体经其部分的生成而持续，但没有样式传递的定律。Ren 的话是出处，不是依据；读到集体上是 AI 的（D48）。"
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PatternPassing.lean",
   "aliases": [
     "a pattern lasts through passing",
     "样式经传递而持续",
@@ -131,7 +131,7 @@
   ],
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PatternPassing.lean",
       "role": "proof",
       "declarations": [
         "Becoming.PatternRelay.brief",
@@ -164,7 +164,7 @@
         "Becoming.Web.carrying_active",
         "Becoming.Web.carrying_iff"
       ],
-      "sha256": "da2894e3f8c38f71ca0d08a4bc155f4a94745da7dffa807eb39739b10df62a70"
+      "sha256": "f1adfdc2fec448aaaeab80eb6143104cf815bf4ac89896fd330ea1ee2dae8d1d"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
@@ -187,19 +187,25 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a96e325b2bf3466d7d5acf04091d6bdec20b8b295d75c714eba482294cf0eaf4"
+      "sha256": "14f5b47cf9f46f6b6e3b92ab50e936f2ad06df22f617a1ca5f414eadcc7bc149"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
       "role": "provenance",
       "sha256": "a47624d5a4b6fae8f4d5a7cb7a47dc0c4ce82c233e5fe59f6dd490ecf35f7db9"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "role": "receipt",
+      "sha256": "e404248790d05ebecf72efd2af0313f7fb1167840713dce35fa124a275b40884",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Passing",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PatternPassing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.PatternPassing",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -264,6 +270,10 @@
     {
       "en": "19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The statement and law 1 were corrected (nineteenth review O1): `Web.begins_within` is in double-negation form, so they now say that no d consecutive steps pass without a carrier beginning.",
       "zh": "2026年10月19日，R21（第十九次审查的修正清单）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R21 改动之处改动：THE-THEORY-OF-BECOMING.md，第十九次审查的修正：措辞对齐 Lean 所陈述的，读法标上其决定，§8.8 与 §9 的根、计数与回执更新。重新指向前已读。陈述与第一条律已更正（第十九次审查 O1）：`Web.begins_within` 是双重否定的形式，所以现在说不会连续 d 步都没有承载者开始。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): PatternPassing.lean re-pointed, proof bindings rebound to core receipt 20261019T164609.214116Z. Since the reviewed hash, the cited files changed only where R22 renamed: PatternPassing.lean, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：PatternPassing.lean 重新指向，证明绑定改到核心回执 20261019T164609.214116Z。自所审哈希以来，所引文件只在 R22 改名之处改动：PatternPassing.lean，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
     }
   ]
 }

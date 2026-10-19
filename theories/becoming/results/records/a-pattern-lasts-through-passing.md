@@ -30,9 +30,9 @@
 <a id="evidence--证据"></a>
 ## Evidence
 
-Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 29 declarations of Becoming.Passing, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.
+Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T064004.300228Z): the 29 declarations of Becoming.PatternPassing, 19 of them theorems, have empty axiom reports; the checker verifies core purity. Built in scratch by an Opus prover, reviewed by a separate Opus reviewer against the brief, fixed; author review in study section 193; not independently reviewed by a person.
 
-Canonical source: [Passing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean)
+Canonical source: [PatternPassing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PatternPassing.lean)
 
 <a id="next--下一步"></a>
 ## Next
@@ -60,12 +60,13 @@ An account of social viability Ren brought on 19 October 2026 lists eight constr
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [Passing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Passing.lean) | `Becoming.PatternRelay.brief`, `Becoming.PatternRelay.half_odd`, `Becoming.PatternRelay.passes`, `Becoming.PatternRelay.passesOdd`, `Becoming.PatternRelay.passesUntil`, `Becoming.PatternRelay.relay`, `Becoming.PatternRelay.shifted`, `Becoming.PatternRelay.shifts`, `Becoming.PatternRelay.stopped`, `Becoming.PatternRelay.stopped_brief`, `Becoming.PatternRelay.stopped_by_passing`, `Becoming.PatternRelay.stopped_quiet`, `Becoming.PatternRelay.stopped_relay`, `Becoming.PatternRelay.web`, `Becoming.Web.ByPassing`, `Becoming.Web.ByPassing.begins_passed`, `Becoming.Web.ByPassing.empty_stays`, `Becoming.Web.ByPassing.ends_within`, `Becoming.Web.ByPassing.passes_within`, `Becoming.Web.ByPassing.present_back`, `Becoming.Web.ByPassing.present_earlier`, `Becoming.Web.ByPassing.present_of_le`, `Becoming.Web.ByPassing.trace`, `Becoming.Web.PassesAt`, `Becoming.Web.Present`, `Becoming.Web.begins_within`, `Becoming.Web.carrying`, `Becoming.Web.carrying_active`, `Becoming.Web.carrying_iff` |
+| proof | [PatternPassing.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PatternPassing.lean) | `Becoming.PatternRelay.brief`, `Becoming.PatternRelay.half_odd`, `Becoming.PatternRelay.passes`, `Becoming.PatternRelay.passesOdd`, `Becoming.PatternRelay.passesUntil`, `Becoming.PatternRelay.relay`, `Becoming.PatternRelay.shifted`, `Becoming.PatternRelay.shifts`, `Becoming.PatternRelay.stopped`, `Becoming.PatternRelay.stopped_brief`, `Becoming.PatternRelay.stopped_by_passing`, `Becoming.PatternRelay.stopped_quiet`, `Becoming.PatternRelay.stopped_relay`, `Becoming.PatternRelay.web`, `Becoming.Web.ByPassing`, `Becoming.Web.ByPassing.begins_passed`, `Becoming.Web.ByPassing.empty_stays`, `Becoming.Web.ByPassing.ends_within`, `Becoming.Web.ByPassing.passes_within`, `Becoming.Web.ByPassing.present_back`, `Becoming.Web.ByPassing.present_earlier`, `Becoming.Web.ByPassing.present_of_le`, `Becoming.Web.ByPassing.trace`, `Becoming.Web.PassesAt`, `Becoming.Web.Present`, `Becoming.Web.begins_within`, `Becoming.Web.carrying`, `Becoming.Web.carrying_active`, `Becoming.Web.carrying_iff` |
 | proof | [Wholes.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean) | `Becoming.Web.Covered.arises_within` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T064004.300228Z/verification.json) | — |
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-19-collective-continuation.md](../../../../sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json) | — |
 
 Aliases: `a pattern lasts through passing`, `样式经传递而持续`, `one empty step ends it`, `Becoming.Web.ByPassing.ends_within`, `forming the next members (reading)`
 
@@ -87,6 +88,7 @@ Aliases: `a pattern lasts through passing`, `样式经传递而持续`, `one emp
 - 19 October 2026, RC (capture through the rule): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in the collective continuation row of section 8, where RC added capture through the rule (Becoming.RuleCapture) to what is stated, rules that read more than the share to what is open, and its record to the links. Read before re-pointing. The claim is unchanged.
 - 19 October 2026, RG (two-sided regulation and late reading): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: RG added a section 4 paragraph after Pace's, amended constraint 7 of the account of social viability, the section 8.2 collective-continuation row and integration row, and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, R21 (the nineteenth review's fix list): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R21 changed them: THE-THEORY-OF-BECOMING.md, the fixes of the nineteenth review (E1–E4, O1–O8, L2, L3, P1, P4–P8, P11): wording brought to what the Lean states, readings labelled with their decisions, §8.8 and the §9 roots, counts and receipt updated. Read before re-pointing. The statement and law 1 were corrected (nineteenth review O1): `Web.begins_within` is in double-negation form, so they now say that no d consecutive steps pass without a carrier beginning.
+- 19 October 2026, R22 (the names of the nineteenth review): PatternPassing.lean re-pointed, proof bindings rebound to core receipt 20261019T164609.214116Z. Since the reviewed hash, the cited files changed only where R22 renamed: PatternPassing.lean, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
 
 </details>
 

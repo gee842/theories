@@ -121,6 +121,7 @@ Aliases: `law through coupling`, `经耦合的规律`, `criterion up to a relati
 - 19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
 - 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Labelled.lean, Likeness.lean, Testing.lean). The claim is unchanged.
+- 19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
 
 </details>
 

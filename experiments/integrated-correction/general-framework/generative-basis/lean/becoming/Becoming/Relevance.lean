@@ -30,7 +30,7 @@ generative-capacity modules was audited for what it needs of positive relevance 
   significance, A read with bare significance supplies a reason for every response with access
   that yields any new content, living or not; read on living content it supplies one for every
   response securing new living content (`articulates_total`). In a witness the first forces a
-  reason the second does not (`Widening.bare_forces_reason`). Read on living content, A gives D
+  reason the second does not (`BareSignificance.bare_forces_reason`). Read on living content, A gives D
   on living content (`positioned_articulation_of_articulatesLiving`), and the universal reason
   follows from the continuation condition with no seed, neutrality or connection premise
   (`universal_reason_of_unrestricted`).
@@ -250,7 +250,7 @@ end Reasons
 One position and one response with one outcome. Of two claims, `true` is living and held before;
 `false` is new and not living. -/
 
-namespace Widening
+namespace BareSignificance
 
 def valuation : Valuation Unit Bool :=
   ⟨fun c => c = true, fun _ _ => False, fun _ _ => True, fun _ _ => True⟩
@@ -272,7 +272,7 @@ theorem bare_forces_reason :
    fun ⟨_, _⟩ _ secured => match secured () trivial with
     | ⟨_, ⟨alive, _⟩, fresh⟩ => fresh alive⟩
 
-end Widening
+end BareSignificance
 
 /-! ## Levels nowhere lower are never ranked below -/
 

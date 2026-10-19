@@ -246,6 +246,7 @@ Each connection of independently specified wisdom content to the core’s formal
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261019T000109.055377Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T090457.012800Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json) | — |
 
 Aliases: —
 
@@ -294,6 +295,7 @@ Aliases: —
 - 19 October 2026, R19 (the review of 19 October, fixed): KNOWLEDGE.md re-pointed after reading the change. R19 changed wording only: living significance is stated as the Lean shows (significance from every standpoint, no valence; the `living` readings do not include further generation); reasons replace Ren's past words where they served as warrant or standing; review bookkeeping was dropped; a link follows a chapter moved to history. No line this record relies on changed its content. The claim is unchanged.
 - 19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Handoff.lean, Relevance.lean re-pointed after reading the change (Handoff.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged; Relevance.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: beyond_shown_iff, closedBy_course from Counterfactual.lean to CounterfactualRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Counterfactual.lean, Joining.lean, Labelled.lean, Mechanism.lean, Regrouping.lean, Relevance.lean, Response.lean, Revision.lean, TimedResponse.lean, Unfolding.lean). The claim is unchanged.
+- 19 October 2026, R22 (the names of the nineteenth review): Relevance.lean re-pointed, proof bindings rebound to core receipt 20261019T164609.214116Z. Since the reviewed hash, the cited files changed only where R22 renamed: Relevance.lean, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.
 - 11 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](wisdom-root.json).
 
 <a id="earlier-text--早期文本"></a>

@@ -3,7 +3,7 @@ import Becoming.Lasting
 import Becoming.Naturals
 
 /-!
-# Widening: whether a loop closes, keeps or widens a difference
+# LoopReturn: whether a loop closes, keeps or widens a difference
 
 `Becoming.Rejoining` (M4) shows that a difference between two courses closes only through a
 response, and, citing `Becoming.PoolResponse`, where they are proved, that a response closing a
@@ -15,7 +15,7 @@ each statement names.
 
 A difference is a natural number. One turn around a loop sends a difference into the first link,
 each link gives on what it receives to the next, and the last gives it back: a link is a map
-`Nat → Nat`, and a loop of links `links` has the return map `Widening.returnMap links`, the first
+`Nat → Nat`, and a loop of links `links` has the return map `LoopReturn.returnMap links`, the first
 link applied first. The course of the difference is the run of the return map,
 `(Law.run f d).state n`, a run of the spine whose states are the orbit `Law.orbit f d n`
 (`Becoming.Recurrence`, `Law.run_state`), the difference after `n` turns from `d`. The difference
@@ -23,60 +23,60 @@ is one number, a simplification of Rejoining's levels at many conditions; no the
 loop of Rejoining as a return map.
 
 * **A return map giving back what it receives keeps a difference.** Such a return map keeps
-  `d` at every turn (`Widening.kept_of_identity`), and so does a loop each of whose links gives on
-  exactly what it receives (`Widening.loop_kept`).
+  `d` at every turn (`LoopReturn.kept_of_identity`), and so does a loop each of whose links gives on
+  exactly what it receives (`LoopReturn.loop_kept`).
 * **Closing needs a link that gives back less than it received.** Where every link gives on at
   least what it receives, the difference after every turn is at least `d`
-  (`Widening.never_closes_of_no_less`). So where the course falls below `d` at some turn, some link
-  of the loop gives on, for some difference, less than it received (`Widening.closing_needs_less`);
+  (`LoopReturn.never_closes_of_no_less`). So where the course falls below `d` at some turn, some link
+  of the loop gives on, for some difference, less than it received (`LoopReturn.closing_needs_less`);
   the link and the difference are found, nothing being decided beyond the order of numbers.
 * **A return map below what it receives closes within `d` turns.** Where `f 0 = 0` and `f x < x`
   for every positive `x`, the course is `0` at turn `d` and at every turn from then on
-  (`Widening.closes_within`), and the bound is exact: under `Nat.pred`, which meets both
-  hypotheses, the course is positive before turn `d` (`Widening.closes_within_exact`). This is an
+  (`LoopReturn.closes_within`), and the bound is exact: under `Nat.pred`, which meets both
+  hypotheses, the course is positive before turn `d` (`LoopReturn.closes_within_exact`). This is an
   instance of the reaching law with a numeric variant (`Lasting.Variant.reaches`, read on the orbit
   by `Lasting.reaches_iff_orbit`): the difference itself is the variant for the target `0`. A
   loop that closes a positive difference merges two differences, a positive one and `0`, at the
-  turn before it closes (`Widening.closing_merges`, the turn found by searching the turns, where
+  turn before it closes (`LoopReturn.closing_merges`, the turn found by searching the turns, where
   equality of numbers is decided), so its return map is not lossless
-  (`Widening.closing_not_lossless`): the two go on as one at every later turn (`Law.merged_stays`),
+  (`LoopReturn.closing_not_lossless`): the two go on as one at every later turn (`Law.merged_stays`),
   and within finitely many differences the merge loses a possibility for good (`Law.Merges.loses`).
 * **Taking a constant off closes, gradually where the constant is below the difference.** A return
   map giving back `c` less than it receives (`f x = x - c`) leaves `d - n * c` after `n` turns
-  (`Widening.orbit_sub_const`): the course is `0` once `n * c ≥ d` (`Widening.sub_const_closes`)
-  and positive while `n * c < d` (`Widening.sub_const_open`), so the closing turn is the least `n`
+  (`LoopReturn.orbit_sub_const`): the course is `0` once `n * c ≥ d` (`LoopReturn.sub_const_closes`)
+  and positive while `n * c < d` (`LoopReturn.sub_const_open`), so the closing turn is the least `n`
   with `n * c ≥ d`. With `c = 0` nothing closes, and with `c ≥ d` the difference closes in one
   turn.
 * **A cut closes at once, where what follows it gives nothing for nothing.** A link returning
   nothing makes the difference `0` from the first turn, whatever the links before it, where every
-  link after it gives on no difference where it receives none (`Widening.cut_closes`). The
+  link after it gives on no difference where it receives none (`LoopReturn.cut_closes`). The
   condition on the links after the cut is needed: in the loop of a cut followed by `Nat.succ`, the
-  difference is `1` at every turn after the first, whatever it was (`Widening.cut_reopened`).
+  difference is `1` at every turn after the first, whatever it was (`LoopReturn.cut_reopened`).
 * **Monotone return maps settle or rise.** Where `f` keeps order and `f d ≤ d`, the course never
-  rises (`Widening.never_rises`, from `Lasting.orbit_mono`: a monotone map keeps order along its
+  rises (`LoopReturn.never_rises`, from `Lasting.orbit_mono`: a monotone map keeps order along its
   orbits) and settles within `d` turns at a value `v` with `f v = v`, staying
-  there (`Widening.settles_within`); the bound `d` is exact, by `Nat.pred`
-  (`Widening.settles_within_exact`, `Nat.pred` meeting both hypotheses). Where `f` keeps order and
-  `d ≤ f d`, the course never falls (`Widening.never_falls`, again from `Lasting.orbit_mono`).
+  there (`LoopReturn.settles_within`); the bound `d` is exact, by `Nat.pred`
+  (`LoopReturn.settles_within_exact`, `Nat.pred` meeting both hypotheses). Where `f` keeps order and
+  `d ≤ f d`, the course never falls (`LoopReturn.never_falls`, again from `Lasting.orbit_mono`).
 * **Doubling links run away.** Where a loop has at least one link and every link gives on at least
   twice what it receives, the difference after `n` turns is at least `2 ^ n * d`
-  (`Widening.runs_away`), exceeding every bound from a positive start
-  (`Widening.runs_away_unbounded`); the loop of one doubling link meets the hypothesis and attains
-  `2 ^ n * d` exactly (`Widening.doubling_exact`). An empty loop gives back what it receives, so
-  the link is needed (`Widening.empty_loop_kept`). This runs parallel to `Becoming.Frequency`'s
+  (`LoopReturn.runs_away`), exceeding every bound from a positive start
+  (`LoopReturn.runs_away_unbounded`); the loop of one doubling link meets the hypothesis and attains
+  `2 ^ n * d` exactly (`LoopReturn.doubling_exact`). An empty loop gives back what it receives, so
+  the link is needed (`LoopReturn.empty_loop_kept`). This runs parallel to `Becoming.Frequency`'s
   doubling at every return, with no instance theorem between them (`carried_doubles_return`, `carried_returns`): there a return doubles what had
   reached a condition because it arrives once held and once around the loop, and
   `runaway_of_returns` turns doubling at returns that come often enough into outgrowing every
   polynomial in the steps. Here the doubling is a property of each link, and the count is of
   turns, not of steps; how many steps a turn takes is what `Becoming.Frequency` adds.
 * **Whole-number strengths have nothing between.** In a loop of links multiplying by whole-number
-  strengths (`Widening.scaling`), the return map multiplies by the product of the strengths
-  (`Widening.returnMap_scaling`, `Widening.orbit_scaling`). With product `0` the difference closes
+  strengths (`LoopReturn.scaling`), the return map multiplies by the product of the strengths
+  (`LoopReturn.returnMap_scaling`, `LoopReturn.orbit_scaling`). With product `0` the difference closes
   at the first turn, with product `1` it is kept at every turn, and with product at least `2` it
-  exceeds every bound from a positive start (`Widening.whole_strengths`). So no such loop closes a
+  exceeds every bound from a positive start (`LoopReturn.whole_strengths`). So no such loop closes a
   difference gradually: at every turn the course is `0` or no less than at the turn before
-  (`Widening.nothing_between`), while taking one off, from `2`, leaves `1` after one turn
-  (`Widening.gradual_needs_another_link`). With whole-number strengths, a loop that closes
+  (`LoopReturn.nothing_between`), while taking one off, from `2`, leaves `1` after one turn
+  (`LoopReturn.gradual_needs_another_link`). With whole-number strengths, a loop that closes
   gradually needs a link that is not a multiplication.
 
 What is not derived: which return law a loop follows, which the laws above take as given, as
@@ -88,7 +88,7 @@ whole, which goes through the comparison and the condition of the chapter's §6.
 
 namespace Becoming
 
-namespace Widening
+namespace LoopReturn
 
 /-! ## Loops of links -/
 
@@ -522,6 +522,6 @@ theorem gradual_needs_another_link :
     | Or.inr le => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le lt le),
    ⟨Nat.succ_pos 0, Nat.lt_succ_self 1⟩⟩
 
-end Widening
+end LoopReturn
 
 end Becoming

@@ -222,7 +222,7 @@ Where: section 8, Ren's choices, first item; the records above.
 <a id="d16-读出公理a-与-g0--reading-the-axiom-a-and-g0"></a>
 ### Reading the axiom, A, and G0
 
-**Decision.** (1) `Unrestricted` reads the axiom: the formation index reads “anything”, a formation's continuation at a step “its continuation into the future”, and the standpoint index “has significance” unqualified, with no center privileged. (2) A is read on living content: the reading is forced (`Widening.bare_forces_reason`), and so read A gives D and the universal reason (`universal_reason_of_unrestricted`). (3) Whether the restatement replaces G0 is answered by Ren's fold (11 October 2026): G0 is no longer an axiom; Part I states it as a condition, and where Part II asserts the axiom it is a theorem.
+**Decision.** (1) `Unrestricted` reads the axiom: the formation index reads “anything”, a formation's continuation at a step “its continuation into the future”, and the standpoint index “has significance” unqualified, with no center privileged. (2) A is read on living content: the reading is forced (`BareSignificance.bare_forces_reason`), and so read A gives D and the universal reason (`universal_reason_of_unrestricted`). (3) Whether the restatement replaces G0 is answered by Ren's fold (11 October 2026): G0 is no longer an axiom; Part I states it as a condition, and where Part II asserts the axiom it is a theorem.
 **Reasons.** (1) It follows Ren's sentence word by word, and it is G0 for anything (`unrestricted_iff_g0`). (2) The witness forces it.
 **What would change it.** Ren qualifying “has significance”.
 

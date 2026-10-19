@@ -104,10 +104,10 @@ import Becoming.HexagramLaws
 import Becoming.HexagramSites
 import Becoming.HexagramSequences
 import Becoming.Withholding
-import Becoming.Widening
+import Becoming.LoopReturn
 import Becoming.Pace
 import Becoming.RuleCapture
-import Becoming.Passing
+import Becoming.PatternPassing
 import Becoming.JointKeeping
 import Becoming.Undecided
 import Becoming.Junctures
@@ -1268,7 +1268,7 @@ readings of the unfolding (`Becoming.Labelled`).
   no chain of waits is long enough and returns around every loop. More waiting is less giving
   under both laws, and in a ring of three a formation giving whatever it waits on restores
   every formation from the third step on, which no course of the law with memory does.
-* `Becoming.Widening` (L4): whether a loop closes, keeps or widens a difference, read on runs
+* `Becoming.LoopReturn` (L4): whether a loop closes, keeps or widens a difference, read on runs
   of the return map. A loop closes a difference only through a link that gives back less than
   it received; a return map below what it receives closes within as many turns as the
   difference, exactly, and a closing loop merges; taking a constant off closes at the least
@@ -1296,7 +1296,7 @@ readings of the unfolding (`Becoming.Labelled`).
   favour the others the lock needs its start condition: a rule against the reading read one step
   late alternates without end (`Alternating`), and a reversing perturbation carried across a
   threshold locks the course the other way (`Reversed`).
-* `Becoming.Passing` (L4): a pattern that outlasts each of its carriers lasts only through
+* `Becoming.PatternPassing` (L4): a pattern that outlasts each of its carriers lasts only through
   passing. Read on a web whose activity is carrying, a pattern present at every step from `T`
   on with carriers brief for `d` has a carrier beginning within every `d` steps; under the
   passing premise every beginning is a passing, the pattern is passed across one of every `d`

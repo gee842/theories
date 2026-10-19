@@ -272,7 +272,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "21700e33ed207345eeda2606d1ef5504e43359083caa84fcf8df855a4b7b3c94"
+      "sha256": "14f5b47cf9f46f6b6e3b92ab50e936f2ad06df22f617a1ca5f414eadcc7bc149"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-19-collective-continuation.md",
@@ -347,6 +347,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Tolerance.lean). Re-pointed after reading the change (Recurrence.lean: declarations moved in or out by W2; Withholding.lean: declarations moved in or out by W2). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): THE-THEORY-OF-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: THE-THEORY-OF-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：THE-THEORY-OF-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：THE-THEORY-OF-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
     }
   ]
 }

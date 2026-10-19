@@ -161,7 +161,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "454cfa7bc3382e90e22de817d64d429e413fee0a8a258760f2e3b8ef89c0c831"
+      "sha256": "39481677948c2c7701b1fd6b9c942dabc0003e06f66fc83b9f85912566f87593"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
@@ -524,6 +524,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): BECOMING-UNIFICATION-PLAN.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: BECOMING-UNIFICATION-PLAN.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：BECOMING-UNIFICATION-PLAN.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：BECOMING-UNIFICATION-PLAN.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
     }
   ]
 }

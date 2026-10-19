@@ -1069,7 +1069,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
       "role": "proof",
-      "sha256": "d5e159ee855b3928d9c3e44ed3e10639214e641fc1b26358cefc7e512d1d6e6c",
+      "sha256": "f5bffe78448db5731ab8a050dc2db1f03d45ff56a25e7e1b9eb64a798350db35",
       "declarations": [
         "Becoming.Frame.relevance",
         "Becoming.g0_of_unrestricted",
@@ -1387,6 +1387,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
+      "role": "receipt",
+      "sha256": "e404248790d05ebecf72efd2af0313f7fb1167840713dce35fa124a275b40884",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -1532,7 +1538,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T164609.214116Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Relevance",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -1866,6 +1872,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: beyond_shown_iff, closedBy_course from Counterfactual.lean to CounterfactualRuns.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Counterfactual.lean, Joining.lean, Labelled.lean, Mechanism.lean, Regrouping.lean, Relevance.lean, Response.lean, Revision.lean, TimedResponse.lean, Unfolding.lean). The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): Relevance.lean re-pointed, proof bindings rebound to core receipt 20261019T164609.214116Z. Since the reviewed hash, the cited files changed only where R22 renamed: Relevance.lean, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：Relevance.lean 重新指向，证明绑定改到核心回执 20261019T164609.214116Z。自所审哈希以来，所引文件只在 R22 改名之处改动：Relevance.lean，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [

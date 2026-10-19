@@ -517,6 +517,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [LivingRecovery.lean](lean-declarations/ethics.md#module-37187272c431) | Normative grounding and generative direction |
 | [LocalUnits.lean](lean-declarations/becoming-core.md#module-b3c201a9c528) | Becoming pure core |
 | [Locality.lean](lean-declarations/becoming-core.md#module-0ddb9a8ad442) | Becoming pure core |
+| [LoopReturn.lean](lean-declarations/becoming-core.md#module-ea338218110d) | Becoming pure core |
 | [Loops.lean](lean-declarations/becoming-core.md#module-4b39d999f04e) | Becoming pure core |
 | [LossMatching.lean](lean-declarations/becoming-core.md#module-34f775b6e095) | Becoming pure core |
 | [MachineInstances.lean](lean-declarations/ethics.md#module-589a347ca85c) | Normative grounding and generative direction |
@@ -587,8 +588,8 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PartialRegimeTransition.lean](lean-declarations/other.md#module-5a3139fb2b49) | Other formal studies |
 | [Parting.lean](lean-declarations/becoming-core.md#module-cfce0a952f3b) | Becoming pure core |
 | [PassageWorlds.lean](lean-declarations/becoming-core.md#module-1ea3e5194a8f) | Becoming pure core |
-| [Passing.lean](lean-declarations/becoming-core.md#module-3b01f28c0e7a) | Becoming pure core |
 | [PatientConcern.lean](lean-declarations/concern.md#module-5ad0b8e8fd94) | Concern and shared activity |
+| [PatternPassing.lean](lean-declarations/becoming-core.md#module-d0eea37890b9) | Becoming pure core |
 | [PendingTaskApplicability.lean](lean-declarations/other.md#module-2d39360c8f48) | Other formal studies |
 | [PeriodCostSelection.lean](lean-declarations/inquiry.md#module-e674e69e840d) | Attainable inquiry, contact and process laws |
 | [PeriodCoverData.lean](lean-declarations/inquiry.md#module-387fd4f713a6) | Attainable inquiry, contact and process laws |
@@ -914,7 +915,6 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [WholeQualityNaturalism.lean](lean-declarations/core.md#module-b4942b7409e4) | Generative core and relational structure |
 | [WholeTheoryDischarge.lean](lean-declarations/inquiry.md#module-ca1aed5ff8a7) | Attainable inquiry, contact and process laws |
 | [Wholes.lean](lean-declarations/becoming-core.md#module-708cbc7816ed) | Becoming pure core |
-| [Widening.lean](lean-declarations/becoming-core.md#module-fb766a828cd3) | Becoming pure core |
 | [WisdomFallibleJudgment.lean](lean-declarations/core.md#module-782abba8ef08) | Generative core and relational structure |
 | [WisdomGoalGrounds.lean](lean-declarations/ethics.md#module-3bd6cb85aa59) | Normative grounding and generative direction |
 | [WisdomResponseStructure.lean](lean-declarations/core.md#module-25c8adeade56) | Generative core and relational structure |

@@ -136,7 +136,7 @@
     {
       "path": "theories/becoming/chapters/CHINESE-SOURCES-AND-BECOMING.md",
       "role": "statement",
-      "sha256": "b21a7c6cfe68a512cc250f377f14e2eb889bf540ab47a1538b8a6eb28b06514b"
+      "sha256": "257a20bf7540644e0fb76fbb1a1c05cad5cf50940f86e6742fcdece8d9db0e3e"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/ro-relational-sources/passages.json",
@@ -223,6 +223,10 @@
     {
       "en": "19 October 2026, RG (two-sided regulation and late reading): the first gap closed by Becoming.Regulation (two-sided-regulation-and-late-reading); four passages re-pointed to its laws (declarations, the record, the sentences of each reading that named the gap; 中和 gains a reading of 中节) and the gap marked closed in the map and in chapter sections 8 and 11, two points of the 宽猛 gap left open; the next step lists the 3 gaps still open; the counts verify_ro.py reports brought to 601 declarations and 121 records; CHINESE-SOURCES-AND-BECOMING.md, passages.json re-pointed after reading the change. The assessment is otherwise unchanged.",
       "zh": "2026年10月19日，RG（双向调节与迟读）：第一项缺口由 Becoming.Regulation（two-sided-regulation-and-late-reading）补上；四段改指向其律（声明、记录、各读法中指称缺口的句子；中和增一条中节之读），缺口在对应表与章节第 8、11 节标为已补上，宽猛条缺口中的两点仍开放；下一步只列尚未补上的 3 项缺口；verify_ro.py 所报计数更新为 601 个声明、121 份记录；读过改动后，CHINESE-SOURCES-AND-BECOMING.md、passages.json 重新指向。评估其余不变。"
+    },
+    {
+      "en": "19 October 2026, R22 (the names of the nineteenth review): CHINESE-SOURCES-AND-BECOMING.md re-pointed. Since the reviewed hash, the cited files changed only where R22 renamed: CHINESE-SOURCES-AND-BECOMING.md, names only (nineteenth review N1, N2; table in development/r22-names/RENAME-TABLE.json). Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，R22（第十九次审查的名称）：CHINESE-SOURCES-AND-BECOMING.md 重新指向。自所审哈希以来，所引文件只在 R22 改名之处改动：CHINESE-SOURCES-AND-BECOMING.md，只改名称（第十九次审查 N1、N2；对照表见 development/r22-names/RENAME-TABLE.json）。重新指向前已读。论断不变。"
     }
   ]
 }
