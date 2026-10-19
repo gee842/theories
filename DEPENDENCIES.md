@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-258 registered results: 242 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 640 curated edges join 212 results to the results they draw on.
+261 registered results: 245 with a recorded Lean receipt (`recorded-checked`), 12 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 647 curated edges join 215 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -33,6 +33,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [ceasing-needs-arising][] ← <a id="ceasing-needs-arising--census-balance"></a>[census-balance][] · <a id="ceasing-needs-arising--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="ceasing-needs-arising--more-needs-renewers"></a>[more-needs-renewers][] · <a id="ceasing-needs-arising--map-of-premises"></a>[map-of-premises][] · <a id="ceasing-needs-arising--space-and-its-parts"></a>[space-and-its-parts][] · <a id="ceasing-needs-arising--laws-of-one-step"></a>[laws-of-one-step][]
 - [census-balance][] ← <a id="census-balance--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="census-balance--more-needs-renewers"></a>[more-needs-renewers][] · <a id="census-balance--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][]
 - [census-balance-under-continuation][] ← <a id="census-balance-under-continuation--identity-across-steps"></a>[identity-across-steps][] · <a id="census-balance-under-continuation--census-balance"></a>[census-balance][] · <a id="census-balance-under-continuation--ceasing-needs-arising"></a>[ceasing-needs-arising][] · <a id="census-balance-under-continuation--bounded-census-keeps-pace"></a>[bounded-census-keeps-pace][] · <a id="census-balance-under-continuation--more-needs-renewers"></a>[more-needs-renewers][]
+- [census-read-off-the-exchange][] ← <a id="census-read-off-the-exchange--premises-read-off-the-exchange"></a>[premises-read-off-the-exchange][] · <a id="census-read-off-the-exchange--map-of-premises"></a>[map-of-premises][]
 - [classification-robust-generative-comparison][] ← <a id="classification-robust-generative-comparison--practical-judgment-g0-j"></a>[practical-judgment-g0-j][] · <a id="classification-robust-generative-comparison--organizational-formation-from-generative-comparison"></a>[organizational-formation-from-generative-comparison][] · <a id="classification-robust-generative-comparison--relational-generative-comparison"></a>[relational-generative-comparison][]
 - [closing-needs-net-draw][] ← <a id="closing-needs-net-draw--more-needs-renewers"></a>[more-needs-renewers][] · <a id="closing-needs-net-draw--laws-of-one-step"></a>[laws-of-one-step][]
 - [closure-verdict-meets-axiom][] ← <a id="closure-verdict-meets-axiom--one-axiom-yields-g0"></a>[one-axiom-yields-g0][] · <a id="closure-verdict-meets-axiom--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="closure-verdict-meets-axiom--whole-first-and-bounded-centers"></a>[whole-first-and-bounded-centers][] · <a id="closure-verdict-meets-axiom--feeding-closure"></a>[feeding-closure][] · <a id="closure-verdict-meets-axiom--consumption-ends-with-feeders"></a>[consumption-ends-with-feeders][] · <a id="closure-verdict-meets-axiom--loss-beyond-a-region"></a>[loss-beyond-a-region][] · <a id="closure-verdict-meets-axiom--four-cases-of-a-part"></a>[four-cases-of-a-part][]
@@ -147,6 +148,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [practical-judgment-g0-j][] ← <a id="practical-judgment-g0-j--becoming-return-grades"></a>[becoming-return-grades][] *(interpretive)* · <a id="practical-judgment-g0-j--substitution-preserves-consumption"></a>[substitution-preserves-consumption][] *(interpretive)*
 - [prefix-observation-loss][] ← <a id="prefix-observation-loss--finite-granularity-question-recovery"></a>[finite-granularity-question-recovery][]
 - [premises-read-off-the-exchange][] ← <a id="premises-read-off-the-exchange--imbalance-as-relatum"></a>[imbalance-as-relatum][] · <a id="premises-read-off-the-exchange--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
+- [premises-that-are-states-of-the-law][] ← <a id="premises-that-are-states-of-the-law--premises-read-off-the-exchange"></a>[premises-read-off-the-exchange][] · <a id="premises-that-are-states-of-the-law--counterfactual-is-the-course"></a>[counterfactual-is-the-course][] · <a id="premises-that-are-states-of-the-law--map-of-premises"></a>[map-of-premises][]
 - [presupposition-scopes][] ← <a id="presupposition-scopes--levels-of-closure"></a>[levels-of-closure][] · <a id="presupposition-scopes--feeding-closure"></a>[feeding-closure][] · <a id="presupposition-scopes--comparison-within-reach"></a>[comparison-within-reach][] · <a id="presupposition-scopes--one-axiom-yields-g0"></a>[one-axiom-yields-g0][] · <a id="presupposition-scopes--four-cases-of-a-part"></a>[four-cases-of-a-part][] · <a id="presupposition-scopes--significance-retained-within-margin"></a>[significance-retained-within-margin][] · <a id="presupposition-scopes--whole-first-and-bounded-centers"></a>[whole-first-and-bounded-centers][]
 - [process-and-frame-as-readings][] ← <a id="process-and-frame-as-readings--space-and-its-parts"></a>[space-and-its-parts][] · <a id="process-and-frame-as-readings--projection-carrying-a-law"></a>[projection-carrying-a-law][] · <a id="process-and-frame-as-readings--experiment-needs-return"></a>[experiment-needs-return][] · <a id="process-and-frame-as-readings--joint-difference-making"></a>[joint-difference-making][] · <a id="process-and-frame-as-readings--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][]
 - [projection-carrying-a-law][] ← <a id="projection-carrying-a-law--experiment-needs-return"></a>[experiment-needs-return][] · <a id="projection-carrying-a-law--joint-difference-making"></a>[joint-difference-making][] · <a id="projection-carrying-a-law--recurrence-without-premise"></a>[recurrence-without-premise][]
@@ -160,6 +162,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [relata-counted-up-to-indiscernibility][] ← <a id="relata-counted-up-to-indiscernibility--listing-once-is-decided-identity"></a>[listing-once-is-decided-identity][]
 - [relational-reading-comparison][] ← <a id="relational-reading-comparison--relational-renewal-classification"></a>[relational-renewal-classification][]
 - [represented-boundary-against-dependence][] ← <a id="represented-boundary-against-dependence--becoming-stepwise-reading"></a>[becoming-stepwise-reading][] · <a id="represented-boundary-against-dependence--derived-extent-limits"></a>[derived-extent-limits][] · <a id="represented-boundary-against-dependence--support-from-the-supported"></a>[support-from-the-supported][]
+- [requirement-over-open-exchanges][] ← <a id="requirement-over-open-exchanges--premises-read-off-the-exchange"></a>[premises-read-off-the-exchange][] · <a id="requirement-over-open-exchanges--counterfactual-is-the-course"></a>[counterfactual-is-the-course][]
 - [reserve-defers-ending][] ← <a id="reserve-defers-ending--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][] · <a id="reserve-defers-ending--becoming-renewal-reading"></a>[becoming-renewal-reading][] · <a id="reserve-defers-ending--life-as-condition-of-life"></a>[life-as-condition-of-life][] · <a id="reserve-defers-ending--more-needs-renewers"></a>[more-needs-renewers][]
 - [reserved-shutdown-during-recovery][] ← <a id="reserved-shutdown-during-recovery--recoverable-mediated-change"></a>[recoverable-mediated-change][]
 - [residual-continuation-correspondence][] ← <a id="residual-continuation-correspondence--guarded-program-question-recovery"></a>[guarded-program-question-recovery][] · <a id="residual-continuation-correspondence--branching-tests-bisimulation"></a>[branching-tests-bisimulation][] · <a id="residual-continuation-correspondence--finite-trace-transport"></a>[finite-trace-transport][]
@@ -249,6 +252,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [ceasing-needs-arising]: theories/becoming/results/records/ceasing-needs-arising.md
 [census-balance]: theories/becoming/results/records/census-balance.md
 [census-balance-under-continuation]: theories/becoming/results/records/census-balance-under-continuation.md
+[census-read-off-the-exchange]: theories/becoming/results/records/census-read-off-the-exchange.md
 [classification-robust-generative-comparison]: theories/becoming/results/records/classification-robust-generative-comparison.md
 [closing-needs-net-draw]: theories/becoming/results/records/closing-needs-net-draw.md
 [closure-verdict-meets-axiom]: theories/becoming/results/records/closure-verdict-meets-axiom.md
@@ -379,6 +383,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [practical-judgment-g0-j]: theories/becoming/results/records/practical-judgment-g0-j.md
 [prefix-observation-loss]: theories/becoming/results/records/prefix-observation-loss.md
 [premises-read-off-the-exchange]: theories/becoming/results/records/premises-read-off-the-exchange.md
+[premises-that-are-states-of-the-law]: theories/becoming/results/records/premises-that-are-states-of-the-law.md
 [presupposition-scopes]: theories/becoming/results/records/presupposition-scopes.md
 [process-and-frame-as-readings]: theories/becoming/results/records/process-and-frame-as-readings.md
 [projection-carrying-a-law]: theories/becoming/results/records/projection-carrying-a-law.md
@@ -396,6 +401,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [relational-renewal-classification]: theories/becoming/results/records/relational-renewal-classification.md
 [renewing-consuming-formation]: theories/becoming/results/records/renewing-consuming-formation.md
 [represented-boundary-against-dependence]: theories/becoming/results/records/represented-boundary-against-dependence.md
+[requirement-over-open-exchanges]: theories/becoming/results/records/requirement-over-open-exchanges.md
 [reserve-defers-ending]: theories/becoming/results/records/reserve-defers-ending.md
 [reserved-shutdown-during-recovery]: theories/becoming/results/records/reserved-shutdown-during-recovery.md
 [residual-continuation-correspondence]: theories/becoming/results/records/residual-continuation-correspondence.md

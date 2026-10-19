@@ -28,7 +28,7 @@
 
 - That an actual becoming is to be read so: reading activity as exchanging and counting the rest are choices of representation (the second adopted by the theory); embodiment ties activity to standing.
 - What the rest is: its exchange is read off the levels and the formations' exchange, as their difference, not observed; counting it adds no information about the exchange.
-- Closure, dissipation, embodiment, bounded transmission and the decision to list what is active are not read off the exchange; they remain states of parts.
+- Closure, dissipation, embodiment and bounded transmission are not read off the exchange: they are states of the law (premises-that-are-states-of-the-law). The decision to list what is active is not needed where a named family closes each step (census-read-off-the-exchange).
 - No physical conservation is claimed: with the rest counted, every flow balances by construction; likewise, under readWeb, activity needs support by the definition of the requirement as response.
 - **Counterexample:** responsive and unresponsive generate one course from one start yet differ in requirement (ExchangeLaw.requirement_beyond_course): requirement is not fixed by the course. [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean)
 
@@ -44,7 +44,7 @@ Canonical source: [Reading.lean](../../../../experiments/integrated-correction/g
 <a id="next--下一步"></a>
 ## Next
 
-Requirement read as response over branching processes; an independent review.
+An independent review.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -67,8 +67,11 @@ Ren, 14 October 2026: “why do we need "World"? wasn't this about the whole and
 - related, not a proved adapter: [map-of-premises](map-of-premises.md). There the eight premises are independent relative to one another; here four hold by reading, the independence being the freedom of separately chosen fields.
 - related, not a proved adapter: [space-and-its-parts](space-and-its-parts.md). The remaining premises are states of parts: the rest idle (closure), dissipation, embodiment, bounded transmission and the decision a census needs.
 - related, not a proved adapter: [unity-of-readings](unity-of-readings.md). Step 3 of the same re-founding: balance is the gluing of two readings of change, and with the rest counted every world is one run of the law of exchange.
+- related, not a proved adapter: [census-read-off-the-exchange](census-read-off-the-exchange.md). The census, left here needing exchanging decided, is read off the exchange where a named family closes each step.
+- related, not a proved adapter: [premises-that-are-states-of-the-law](premises-that-are-states-of-the-law.md). Of the states of parts left here, dissipation, embodiment and bounded transmission are states of the law.
+- related, not a proved adapter: [requirement-over-open-exchanges](requirement-over-open-exchanges.md). This record's next delta: requirement as response where several exchanges are open.
 
-**Used by:** [unity-of-readings](unity-of-readings.md) · [worlds-are-runs](worlds-are-runs.md)
+**Used by:** [census-read-off-the-exchange](census-read-off-the-exchange.md) · [premises-that-are-states-of-the-law](premises-that-are-states-of-the-law.md) · [requirement-over-open-exchanges](requirement-over-open-exchanges.md) · [unity-of-readings](unity-of-readings.md) · [worlds-are-runs](worlds-are-runs.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -120,6 +123,8 @@ Aliases: `tying premises read off the exchange`, `联结的前提从交换读出
 - 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
 - 19 October 2026, R20(b) landing: THE-THEORY-OF-BECOMING.md re-pointed after reading the change on main (Y2 and V2 paragraphs merged with R20(b)'s wording; premise card C now says that balance by reading leaves the rest idle, which under a law of what has stood is feasibility). The claim is unchanged.
 - 19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.
+- 19 October 2026, E1: the scope line on closure, dissipation, embodiment, bounded transmission and the decision to list what is active corrected (census-read-off-the-exchange, premises-that-are-states-of-the-law); the next delta, requirement read as response over branching, done (requirement-over-open-exchanges), leaving an independent review; three related records added. The claim is unchanged; study section 197.
+- 19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.
 - 14 rebinding entries (2026-10-14 to 2026-10-18): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](premises-read-off-the-exchange.json).
 
 </details>

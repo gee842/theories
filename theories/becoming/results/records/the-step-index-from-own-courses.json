@@ -182,7 +182,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "cbfca85bdfe0ed104b80cd16d08776da57cdfb8e90515a6deaec5fc0186dc589"
+      "sha256": "1bb0cecc46f54281ef759a2bbfd9ad0fae646a01a7579cdd5bac3b33ed832adb"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md",
@@ -257,6 +257,10 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 0 (premise card C) or section 8 (the open programme): E1 rewrote card C's bullet on what the independence measures, the necessity row of section 8.1, and added a sentence and three records to the section 8.2 row on one relational start. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 0 节（前提卡 C）或第 8 节（开放纲领）改动：E1 重写了卡 C 关于独立性度量什么的条目、第 8.1 节的必然性一行，并在第 8.2 节关于从关系开始的一行加入一句与三个记录。重新指向前已读。论断不变。"
     }
   ]
 }

@@ -1,0 +1,345 @@
+{
+  "schema_version": 2,
+  "id": "census-read-off-the-exchange",
+  "title": {
+    "en": "The census read off the exchange",
+    "zh": "从交换读出的普查"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:06:36+00:00",
+  "statement": {
+    "en": "Read off the exchange, the relata that exchange are listed with no decision procedure wherever a named family closes each step; every finite world has a census with its rest counted. No census fails at any step, and asking one at every step of every flow over Nat is LPO.",
+    "zh": "从交换读出，凡有一个具名的家族围住每一步，交换者就被列出，不需判定程序；每个有限世界算入其余都有普查。没有普查在任何一步失败，而对 Nat 上每个流的每一步要求普查是有限全知原则。"
+  },
+  "laws": [
+    {
+      "en": "Whether a formation exchanges with some member of a list is decided by going through the list; where a family closes a step, a formation exchanges exactly where it takes part and exchanges within the family, so the formations taking part, listed once, are kept to those that exchange: a census read off the exchange, with no decision procedure supplied.",
+      "zh": "一个形成是否与某个列表成员交换，逐一查看列表即可判定；家族围住一步时，形成恰在它参与且在家族内交换时交换，所以把各列一次的参与形成留下交换者即得从交换读出的普查，不提供判定程序。",
+      "declarations": [
+        "Becoming.Flow.ExchangesWithin",
+        "Becoming.Flow.exchangesWithin_decided",
+        "Becoming.of_not_not",
+        "Becoming.Flow.exchanging_iff_within",
+        "Becoming.Flow.listed_at_of_closed",
+        "Becoming.Flow.listed_at_of_enclosed",
+        "Becoming.Flow.readOff_census_of_closed"
+      ]
+    },
+    {
+      "en": "With the rest counted, every world whose formations taking part are listed once and whose steps a named family closes has a census; every finite world does, where World.Finite.counted needed activity decided.",
+      "zh": "算入其余，参与形成各列一次、每一步由一个具名家族围住的每个世界都有普查；每个有限世界都有，而 World.Finite.counted 需要活跃可判定。",
+      "declarations": [
+        "Becoming.World.withRest_counted",
+        "Becoming.World.Finite.withRest_counted"
+      ]
+    },
+    {
+      "en": "Without enclosure, that a world read off an exchange fails a census at a step is refuted: of a list without repetition, the members meeting any property cannot fail to be listable.",
+      "zh": "不被围住时，从交换读出的世界在某一步缺普查被否证：对无重复的列表，满足任何性质的成员不可能不可列出。",
+      "declarations": [
+        "Becoming.listed_of_em",
+        "Becoming.not_not_listed",
+        "Becoming.Flow.not_not_listed_at"
+      ]
+    },
+    {
+      "en": "A census at every step of every flow over Nat with its formations listed once is exactly LPO: under marking s a formation exchanges exactly where s marks something.",
+      "zh": "对 Nat 上参与形成各列一次的每个流的每一步要求普查，恰是有限全知原则：在 marking s 下形成恰在 s 标出某处时交换。",
+      "declarations": [
+        "Becoming.Flow.marking",
+        "Becoming.Flow.cond_pos",
+        "Becoming.Flow.marking_exchanging",
+        "Becoming.Flow.memDecided",
+        "Becoming.Flow.listed_iff_lpo"
+      ]
+    },
+    {
+      "en": "Enclosure is not read off: read off the spreading law, which gives every relatum a unit, the rest is idle and no step is enclosed, and the world has a census all the same.",
+      "zh": "被围住不是读出的：从给每个关系项一个单位的 spreading 律读出，其余闲置，没有一步被围住，世界仍有普查。",
+      "declarations": [
+        "Becoming.ExchangeLaw.spreading",
+        "Becoming.ExchangeLaw.spreadingWorld",
+        "Becoming.ExchangeLaw.spreading_closed",
+        "Becoming.ExchangeLaw.origin",
+        "Becoming.ExchangeLaw.optionIndex",
+        "Becoming.ExchangeLaw.spreading_not_enclosed",
+        "Becoming.ExchangeLaw.spreading_counted"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom. The formations taking part at each step are listed once (a condition of the representation, as in Flow.readOff_census); for the census as a function of the step, a family closing each step is named (data, not only its existence at each step); listed_iff_lpo concerns flows over Nat.",
+      "zh": "不加公理。每一步的参与形成各列一次（表示的条件，同 Flow.readOff_census）；普查作为步的函数时，围住每一步的家族是具名的（数据，不只是每一步的存在）；listed_iff_lpo 关于 Nat 上的流。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "That an actual unfolding's exchange at a step lies within finitely many relata: enclosure is a state of the law.",
+      "zh": "实际展开在一步上的交换落在有限多个关系项之内：被围住是律的状态。",
+      "kind": "scope"
+    },
+    {
+      "en": "A census over every step where each step is enclosed but no family is named: that would also need countable choice.",
+      "zh": "每一步都被围住而没有具名家族时，所有步上的普查：那还需要可数选择。",
+      "kind": "scope"
+    },
+    {
+      "en": "That a census counts a population in any further sense: it lists the relata that exchange.",
+      "zh": "普查在更进一步的意义上计数一个群体：它列出交换的关系项。",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "detail": {
+        "en": "spreadingWorld: no step is enclosed (spreading_not_enclosed) and a census exists (spreading_counted): enclosure suffices for a census and is not needed.",
+        "zh": "spreadingWorld：没有一步被围住（spreading_not_enclosed），普查存在（spreading_counted）：被围住对普查是充分的，不是必要的。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation",
+    "decidability"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T100412.397267Z): the 78 declarations of Becoming.ExchangePremises, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author review in study section 197; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T100412.397267Z）：Becoming.ExchangePremises 的 78 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。作者审查见研究第 197 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "A census over every step without a named family; an independent review.",
+    "zh": "无具名家族时所有步上的普查；独立审查。"
+  },
+  "correspondence": {
+    "en": "The first open target of chapter §8.1, the deductive necessity of the whole, had no progress entry since the early spine; §125 left four World premises as states of parts. This result settles the census: a reading under enclosure, never refuted, and LPO where asked of every flow. The classification of the eight premises into readings of one exchange and states of the law is the AI's; the session reviewing the repository on 19 October 2026 set the task.",
+    "zh": "第 8.1 节的首要开放目标，整体的演绎必然性，自早期脊柱以来没有进展条目；§125 把 World 的四个前提留作部分的状态。本结果判定普查：在被围住处是读法，从不被否证，对每个流要求它是有限全知原则。把八个前提分为一次交换的读法与律的状态是 AI 的；任务由 2026年10月19日审阅仓库的会话提出。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+  "aliases": [
+    "census read off the exchange",
+    "从交换读出的普查",
+    "Becoming.Flow.readOff_census_of_closed",
+    "Becoming.World.Finite.withRest_counted",
+    "Becoming.Flow.listed_iff_lpo"
+  ],
+  "dependencies": [
+    {
+      "id": "premises-read-off-the-exchange",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.Exchanging, Flow.readOff, World.withRest, World.restFlow, Flow.present_distinct, World.withRest_exchanging_iff, World.withRest_closed_iff, ExchangeLaw.readWorld and ExchangeLaw.readWorld_glue.",
+        "zh": "复用 Flow.Exchanging、Flow.readOff、World.withRest、World.restFlow、Flow.present_distinct、World.withRest_exchanging_iff、World.withRest_closed_iff、ExchangeLaw.readWorld 与 ExchangeLaw.readWorld_glue。"
+      },
+      "interface": {
+        "output": {
+          "en": "Worlds read off an exchange with the rest counted, the four tying premises holding.",
+          "zh": "算入其余、从交换读出的世界，四个联结前提成立。"
+        },
+        "input": {
+          "en": "The worlds on which each remaining premise is settled.",
+          "zh": "判定每个其余前提所在的世界。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean"
+      }
+    },
+    {
+      "id": "map-of-premises",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses the eight premises World.Dissipative, World.Embodied, World.Counted and World.Transmitting, keep, mem_keep, keep_distinct, beyond and lt_beyond.",
+        "zh": "复用八个前提中的 World.Dissipative、World.Embodied、World.Counted、World.Transmitting，以及 keep、mem_keep、keep_distinct、beyond 与 lt_beyond。"
+      },
+      "interface": {
+        "output": {
+          "en": "The premises and the list operations.",
+          "zh": "前提与列表运算。"
+        },
+        "input": {
+          "en": "What is settled for each premise.",
+          "zh": "每个前提被判定之处。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "premises-read-off-the-exchange",
+      "detail": {
+        "en": "There a census needed exchanging decided (Flow.readOff_census); here a family closing the step decides it.",
+        "zh": "那里普查需要交换可判定（Flow.readOff_census）；这里围住该步的家族判定它。"
+      }
+    },
+    {
+      "id": "counting-where-the-counts-exist",
+      "detail": {
+        "en": "Counting over counted censuses takes no decision; here the census itself is read off the exchange.",
+        "zh": "在已计数的普查上计数不需判定；这里普查本身从交换读出。"
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "en": "Progress on the first target: what a reading of the exchange makes necessary, and where becoming is contingent in the law.",
+        "zh": "首要目标的进展：交换的读法使什么成为必然，生成在律中何处偶然。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ExchangeLaw.Sprouting",
+        "Becoming.ExchangeLaw.contingent",
+        "Becoming.ExchangeLaw.course_runs",
+        "Becoming.ExchangeLaw.groundOne",
+        "Becoming.ExchangeLaw.needOneOf",
+        "Becoming.ExchangeLaw.nothing_comes",
+        "Becoming.ExchangeLaw.optionIndex",
+        "Becoming.ExchangeLaw.origin",
+        "Becoming.ExchangeLaw.relation",
+        "Becoming.ExchangeLaw.relation_admits",
+        "Becoming.ExchangeLaw.relation_exchanges",
+        "Becoming.ExchangeLaw.relation_may_iff",
+        "Becoming.ExchangeLaw.relation_readWeb_may",
+        "Becoming.ExchangeLaw.relation_readWeb_requires",
+        "Becoming.ExchangeLaw.relation_responds_iff",
+        "Becoming.ExchangeLaw.responsiveWorld",
+        "Becoming.ExchangeLaw.responsive_balanced",
+        "Becoming.ExchangeLaw.responsive_closed",
+        "Becoming.ExchangeLaw.responsive_embodied",
+        "Becoming.ExchangeLaw.responsive_not_dissipative",
+        "Becoming.ExchangeLaw.responsive_transmitting",
+        "Becoming.ExchangeLaw.source_unrequired",
+        "Becoming.ExchangeLaw.spreading",
+        "Becoming.ExchangeLaw.spreadingWorld",
+        "Becoming.ExchangeLaw.spreading_closed",
+        "Becoming.ExchangeLaw.spreading_counted",
+        "Becoming.ExchangeLaw.spreading_not_enclosed",
+        "Becoming.ExchangeLaw.sprout_descends",
+        "Becoming.ExchangeLaw.sprout_requires",
+        "Becoming.ExchangeLaw.sprouting",
+        "Becoming.ExchangeLaw.sproutingWorld",
+        "Becoming.ExchangeLaw.sprouting_closed",
+        "Becoming.ExchangeLaw.sprouting_feasible",
+        "Becoming.ExchangeLaw.sprouting_nonanticipating",
+        "Becoming.ExchangeLaw.sprouting_not_transmitting",
+        "Becoming.ExchangeLaw.sprouts",
+        "Becoming.ExchangeLaw.still",
+        "Becoming.ExchangeLaw.stillWorld",
+        "Becoming.ExchangeLaw.still_balanced",
+        "Becoming.ExchangeLaw.still_closed",
+        "Becoming.ExchangeLaw.still_dissipative",
+        "Becoming.ExchangeLaw.still_levels",
+        "Becoming.ExchangeLaw.still_not_embodied",
+        "Becoming.ExchangeLaw.still_transmitting",
+        "Becoming.ExchangeRelation",
+        "Becoming.ExchangeRelation.Exchanges",
+        "Becoming.ExchangeRelation.MayRespondBelow",
+        "Becoming.ExchangeRelation.RespondsBelow",
+        "Becoming.ExchangeRelation.Runs",
+        "Becoming.ExchangeRelation.free",
+        "Becoming.ExchangeRelation.free_unsupported",
+        "Becoming.ExchangeRelation.readWeb",
+        "Becoming.ExchangeRelation.readWeb_dependent",
+        "Becoming.ExchangeRelation.reading_glue",
+        "Becoming.ExchangeRelation.takingOne",
+        "Becoming.ExchangeRelation.world",
+        "Becoming.Flow.ExchangesWithin",
+        "Becoming.Flow.cond_pos",
+        "Becoming.Flow.exchangesWithin_decided",
+        "Becoming.Flow.exchanging_iff_within",
+        "Becoming.Flow.listed_at_of_closed",
+        "Becoming.Flow.listed_at_of_enclosed",
+        "Becoming.Flow.listed_iff_lpo",
+        "Becoming.Flow.marking",
+        "Becoming.Flow.marking_exchanging",
+        "Becoming.Flow.memDecided",
+        "Becoming.Flow.not_not_listed_at",
+        "Becoming.Flow.readOff_census_of_closed",
+        "Becoming.World.Finite.withRest_counted",
+        "Becoming.World.restFlow_give_zero",
+        "Becoming.World.transmitting_of_nothing_comes",
+        "Becoming.World.withRest_counted",
+        "Becoming.World.withRest_dissipative_of_gives_nothing",
+        "Becoming.World.withRest_embodied_balanced",
+        "Becoming.World.withRest_embodied_iff",
+        "Becoming.listed_of_em",
+        "Becoming.not_not_listed",
+        "Becoming.of_not_not"
+      ],
+      "sha256": "c66c599254b18a219bf554f027214bd9656f9e8dff52bfc2873b59f2954c3e5e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.World.Counted",
+        "Becoming.World.Finite.counted",
+        "Becoming.keep",
+        "Becoming.mem_keep"
+      ],
+      "sha256": "d4f748607ac4590ced2090618040d65bf7ac6a18ce41979d1febf045f4e88816"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.LPO"
+      ],
+      "sha256": "accd86eb3c7ce0e8a24617843fbdf31a021941a82e29ed67bb03cd292a60d5a2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
+      "role": "proof",
+      "sha256": "aa0e051de0783cc47458f5c4ec23a0ec1da2a636bf223c3c0570f07e2ded453d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T100412.397267Z/verification.json",
+      "role": "receipt",
+      "sha256": "cb5d67dbba20ce4091b34136b34a0ff68571b8b45ce602c72f992f8859d0ea96"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "74f24f8be5d7cec103317634f07d7fd0755404450217e036824ffb7586ca9143"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "1bb0cecc46f54281ef759a2bbfd9ad0fae646a01a7579cdd5bac3b33ed832adb"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T100412.397267Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ExchangePremises",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (E1), on the first target of chapter §8.1, the deductive necessity of the whole; study section 197.",
+      "zh": "2026年10月19日：新增（E1），针对第 8.1 节的首要目标，整体的演绎必然性；研究第 197 节。"
+    }
+  ]
+}

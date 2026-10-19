@@ -107,6 +107,20 @@
         "zh": "在“一切皆有意义”的条件之下 G0 得出；理论不断言这一条件。",
         "en": "Under the condition that everything is significant, G0 follows; the theory does not assert the condition."
       }
+    },
+    {
+      "id": "premises-that-are-states-of-the-law",
+      "detail": {
+        "en": "Where becoming is contingent in the law: dissipation, embodiment and bounded transmission are met by some laws of exchange and failed by others, with the readings fixed.",
+        "zh": "生成在律中偶然之处：读法固定时，耗散、体现与有界传递有满足与不满足它们的交换之律。"
+      }
+    },
+    {
+      "id": "census-read-off-the-exchange",
+      "detail": {
+        "en": "The census is a reading of the exchange under enclosure.",
+        "zh": "普查在被围住时是交换的读法。"
+      }
     }
   ],
   "counterexamples": [
@@ -198,6 +212,11 @@
       "zh": "一个根：每个世界是其网与交换所显之律的运行（worlds-are-runs，多由展开定义），前沿规律陈述在两种作为的世界上；两族仍以对应相遇，落地时 1,019／7,214 条定理独立。",
       "en": "One root: every world is a run of the law its webs and exchanges show (worlds-are-runs, largely by definition), frontier laws stated on two-act worlds; the families meet by correspondence, 1,019 of 7,214 theorems apart at landing.",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130"
+    },
+    {
+      "en": "Premises read off one exchange (E1): of the eight World premises, five are readings (the four tying premises, and the census under enclosure, never refuted without it) and three, dissipation, embodiment and bounded transmission, are states of the law of exchange, as closure and enclosure are; the necessary content of the whole cannot include those three.",
+      "zh": "从一次交换读出的前提（E1）：World 的八个前提中五个是读法（四个联结前提，以及被围住时的普查，不被围住时从不被否证），耗散、体现与有界传递三个是交换之律的状态，与封闭和被围住一样；整体的必然内容不能包括这三个。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#197-which-remaining-premises-a-reading-of-the-exchange-settles-e1"
     }
   ],
   "validation_scope": {
@@ -304,6 +323,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, E1: a progress entry and two related records (premises read off one exchange: which premises are readings and which are states of the law); study section 197. The target's wording is unchanged.",
+      "zh": "2026年10月19日，E1：新增一条进展与两个相关记录（从一次交换读出的前提：哪些前提是读法、哪些是律的状态）；研究第 197 节。目标措辞不变。"
     }
   ],
   "text_versions": [

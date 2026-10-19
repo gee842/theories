@@ -1,0 +1,308 @@
+{
+  "schema_version": 2,
+  "id": "requirement-over-open-exchanges",
+  "title": {
+    "en": "Requirement as response where several exchanges are open",
+    "zh": "多个交换开放时把要求读作回应"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-19T10:06:36+00:00",
+  "statement": {
+    "en": "Where a relation of exchange leaves several exchanges open, requirement read as necessary response gives activity needing support on every run, and with the rest counted the four tying premises hold; read as possible response it does not. A law is the relation leaving one exchange open.",
+    "zh": "交换关系留下多个交换开放时，把要求读作必然的回应，每个运行上活动都需要支持，算入其余时四个联结前提成立；读作可能的回应则不然。律是只留下一个交换开放的关系。"
+  },
+  "laws": [
+    {
+      "en": "A relation of exchange leaves open, under each level history, any number of exchanges across a step; a run takes an open exchange at every step. A formation's exchange necessarily responds to a condition falling below a need where, under every history differing at most in that level at that step with the level below the need, no open exchange has it exchange; read as requirement, activity needs support on every run, for every history and need, and with the rest counted the four tying premises hold.",
+      "zh": "交换关系在每个水平历史下留下一步上任意多个交换开放；运行在每一步取一个开放的交换。一个形成的交换必然回应条件低于所需，当在至多在该步该水平上不同且水平低于所需的每个历史下，没有开放的交换让它交换；读作要求，每个运行上对每个历史与所需活动都需要支持，算入其余时四个联结前提成立。",
+      "declarations": [
+        "Becoming.ExchangeRelation",
+        "Becoming.ExchangeRelation.Exchanges",
+        "Becoming.ExchangeRelation.RespondsBelow",
+        "Becoming.ExchangeRelation.Runs",
+        "Becoming.ExchangeRelation.readWeb",
+        "Becoming.ExchangeRelation.readWeb_dependent",
+        "Becoming.ExchangeRelation.world",
+        "Becoming.ExchangeRelation.reading_glue"
+      ]
+    },
+    {
+      "en": "Read as possible response (some open exchange leaves it idle), activity need not be supported: under the free relation a formation takes a unit at a level of nothing and possibly responds.",
+      "zh": "读作可能的回应（某个开放的交换让它闲置），活动不必被支持：在 free 关系下形成在水平为零时取一个单位，且可能回应。",
+      "declarations": [
+        "Becoming.ExchangeRelation.MayRespondBelow",
+        "Becoming.ExchangeRelation.free",
+        "Becoming.ExchangeRelation.takingOne",
+        "Becoming.ExchangeRelation.free_unsupported"
+      ]
+    },
+    {
+      "en": "A law of exchange is the relation leaving one exchange open; its course is a run of it, and there necessary and possible response are the law's response: read off the course as a run, the web's requirement is the law's.",
+      "zh": "交换之律是只留下一个交换开放的关系；它的历程是这个关系的运行，在那里必然回应与可能回应都是律的回应：把历程读作运行，网的要求就是律的。",
+      "declarations": [
+        "Becoming.ExchangeLaw.relation",
+        "Becoming.ExchangeLaw.course_runs",
+        "Becoming.ExchangeLaw.relation_exchanges",
+        "Becoming.ExchangeLaw.relation_admits",
+        "Becoming.ExchangeLaw.relation_responds_iff",
+        "Becoming.ExchangeLaw.relation_may_iff",
+        "Becoming.ExchangeLaw.relation_readWeb_requires",
+        "Becoming.ExchangeLaw.relation_readWeb_may"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "en": "No axiom and no premise: the relation, the run along a history and the need are given; levels need not follow balance on a run, the rest counting the difference.",
+      "zh": "不加公理，不加前提：关系、沿历史的运行与所需是给定的；运行上的水平不必遵从平衡，差额由其余计入。"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "Which exchanges are open in an actual unfolding, or that any exchange responds to anything.",
+      "zh": "实际展开中哪些交换开放，或任何交换回应任何东西。",
+      "kind": "scope"
+    },
+    {
+      "en": "A join to the branching processes of Becoming.Branching: the relation is not stated as a Generative.Process.",
+      "zh": "与 Becoming.Branching 的分支过程相连：关系没有陈述为 Generative.Process。",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "detail": {
+        "en": "free_unsupported: under the free relation a formation exchanges at a level of nothing while its exchange possibly responds to the condition falling below one.",
+        "zh": "free_unsupported：在 free 关系下，形成在水平为零时交换，而其交换可能回应条件低于一。"
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "omission-not-refutation"
+  ],
+  "validation_scope": {
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261019T100412.397267Z): the 78 declarations of Becoming.ExchangePremises, 51 of them theorems, have empty axiom reports; the checker verifies core purity. Author review in study section 197; not independently reviewed.",
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261019T100412.397267Z）：Becoming.ExchangePremises 的 78 项声明（51 项定理）公理报告为空；检查器并核对核心纯净。作者审查见研究第 197 节；未经独立审查。"
+  },
+  "next_delta": {
+    "en": "The relation of exchange read as a process on level histories and joined to Becoming.Branching; levels following balance on runs; an independent review.",
+    "zh": "把交换关系读作水平历史上的过程并与 Becoming.Branching 相连；运行上水平遵从平衡；独立审查。"
+  },
+  "correspondence": {
+    "en": "The first open target of chapter §8.1, the deductive necessity of the whole, had no progress entry since the early spine; §125 left four World premises as states of parts. This result settles the next delta of premises-read-off-the-exchange: requirement read as response where several exchanges are open. The classification of the eight premises into readings of one exchange and states of the law is the AI's; the session reviewing the repository on 19 October 2026 set the task.",
+    "zh": "第 8.1 节的首要开放目标，整体的演绎必然性，自早期脊柱以来没有进展条目；§125 把 World 的四个前提留作部分的状态。本结果判定premises-read-off-the-exchange 的下一步：多个交换开放时把要求读作回应。把八个前提分为一次交换的读法与律的状态是 AI 的；任务由 2026年10月19日审阅仓库的会话提出。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+  "aliases": [
+    "requirement over open exchanges",
+    "开放交换上的要求",
+    "Becoming.ExchangeRelation.readWeb_dependent",
+    "Becoming.ExchangeRelation.free_unsupported",
+    "Becoming.ExchangeLaw.relation_responds_iff"
+  ],
+  "dependencies": [
+    {
+      "id": "premises-read-off-the-exchange",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses Flow.Exchanging, Flow.readOff, World.withRest, World.restFlow, Flow.present_distinct, World.withRest_exchanging_iff, World.withRest_closed_iff, ExchangeLaw.readWorld and ExchangeLaw.readWorld_glue.",
+        "zh": "复用 Flow.Exchanging、Flow.readOff、World.withRest、World.restFlow、Flow.present_distinct、World.withRest_exchanging_iff、World.withRest_closed_iff、ExchangeLaw.readWorld 与 ExchangeLaw.readWorld_glue。"
+      },
+      "interface": {
+        "output": {
+          "en": "Worlds read off an exchange with the rest counted, the four tying premises holding.",
+          "zh": "算入其余、从交换读出的世界，四个联结前提成立。"
+        },
+        "input": {
+          "en": "The worlds on which each remaining premise is settled.",
+          "zh": "判定每个其余前提所在的世界。"
+        },
+        "conditions": {
+          "en": "None.",
+          "zh": "无。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "en": "Reuses ExchangeLaw, levels, levels_succ, course, Feasible, Nonanticipating and readWorld_closed_iff.",
+        "zh": "复用 ExchangeLaw、levels、levels_succ、course、Feasible、Nonanticipating 与 readWorld_closed_iff。"
+      },
+      "interface": {
+        "output": {
+          "en": "The course a law generates; the rest idle exactly where a law of what has stood is feasible.",
+          "zh": "律生成的历程；读已立者的律可行之处其余恰闲置。"
+        },
+        "input": {
+          "en": "Witness worlds with the rest idle.",
+          "zh": "其余闲置的见证世界。"
+        },
+        "conditions": {
+          "en": "The law reads what has stood.",
+          "zh": "律只读已立者。"
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "returning-where-the-course-branches",
+      "detail": {
+        "en": "Branching processes where the configuration fixes only which steps are admissible; here which exchanges are open under a level history.",
+        "zh": "配置只固定哪些步可容许的分支过程；这里是在水平历史下哪些交换开放。"
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "en": "Progress on the first target: what a reading of the exchange makes necessary, and where becoming is contingent in the law.",
+        "zh": "首要目标的进展：交换的读法使什么成为必然，生成在律中何处偶然。"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ExchangeLaw.Sprouting",
+        "Becoming.ExchangeLaw.contingent",
+        "Becoming.ExchangeLaw.course_runs",
+        "Becoming.ExchangeLaw.groundOne",
+        "Becoming.ExchangeLaw.needOneOf",
+        "Becoming.ExchangeLaw.nothing_comes",
+        "Becoming.ExchangeLaw.optionIndex",
+        "Becoming.ExchangeLaw.origin",
+        "Becoming.ExchangeLaw.relation",
+        "Becoming.ExchangeLaw.relation_admits",
+        "Becoming.ExchangeLaw.relation_exchanges",
+        "Becoming.ExchangeLaw.relation_may_iff",
+        "Becoming.ExchangeLaw.relation_readWeb_may",
+        "Becoming.ExchangeLaw.relation_readWeb_requires",
+        "Becoming.ExchangeLaw.relation_responds_iff",
+        "Becoming.ExchangeLaw.responsiveWorld",
+        "Becoming.ExchangeLaw.responsive_balanced",
+        "Becoming.ExchangeLaw.responsive_closed",
+        "Becoming.ExchangeLaw.responsive_embodied",
+        "Becoming.ExchangeLaw.responsive_not_dissipative",
+        "Becoming.ExchangeLaw.responsive_transmitting",
+        "Becoming.ExchangeLaw.source_unrequired",
+        "Becoming.ExchangeLaw.spreading",
+        "Becoming.ExchangeLaw.spreadingWorld",
+        "Becoming.ExchangeLaw.spreading_closed",
+        "Becoming.ExchangeLaw.spreading_counted",
+        "Becoming.ExchangeLaw.spreading_not_enclosed",
+        "Becoming.ExchangeLaw.sprout_descends",
+        "Becoming.ExchangeLaw.sprout_requires",
+        "Becoming.ExchangeLaw.sprouting",
+        "Becoming.ExchangeLaw.sproutingWorld",
+        "Becoming.ExchangeLaw.sprouting_closed",
+        "Becoming.ExchangeLaw.sprouting_feasible",
+        "Becoming.ExchangeLaw.sprouting_nonanticipating",
+        "Becoming.ExchangeLaw.sprouting_not_transmitting",
+        "Becoming.ExchangeLaw.sprouts",
+        "Becoming.ExchangeLaw.still",
+        "Becoming.ExchangeLaw.stillWorld",
+        "Becoming.ExchangeLaw.still_balanced",
+        "Becoming.ExchangeLaw.still_closed",
+        "Becoming.ExchangeLaw.still_dissipative",
+        "Becoming.ExchangeLaw.still_levels",
+        "Becoming.ExchangeLaw.still_not_embodied",
+        "Becoming.ExchangeLaw.still_transmitting",
+        "Becoming.ExchangeRelation",
+        "Becoming.ExchangeRelation.Exchanges",
+        "Becoming.ExchangeRelation.MayRespondBelow",
+        "Becoming.ExchangeRelation.RespondsBelow",
+        "Becoming.ExchangeRelation.Runs",
+        "Becoming.ExchangeRelation.free",
+        "Becoming.ExchangeRelation.free_unsupported",
+        "Becoming.ExchangeRelation.readWeb",
+        "Becoming.ExchangeRelation.readWeb_dependent",
+        "Becoming.ExchangeRelation.reading_glue",
+        "Becoming.ExchangeRelation.takingOne",
+        "Becoming.ExchangeRelation.world",
+        "Becoming.Flow.ExchangesWithin",
+        "Becoming.Flow.cond_pos",
+        "Becoming.Flow.exchangesWithin_decided",
+        "Becoming.Flow.exchanging_iff_within",
+        "Becoming.Flow.listed_at_of_closed",
+        "Becoming.Flow.listed_at_of_enclosed",
+        "Becoming.Flow.listed_iff_lpo",
+        "Becoming.Flow.marking",
+        "Becoming.Flow.marking_exchanging",
+        "Becoming.Flow.memDecided",
+        "Becoming.Flow.not_not_listed_at",
+        "Becoming.Flow.readOff_census_of_closed",
+        "Becoming.World.Finite.withRest_counted",
+        "Becoming.World.restFlow_give_zero",
+        "Becoming.World.transmitting_of_nothing_comes",
+        "Becoming.World.withRest_counted",
+        "Becoming.World.withRest_dissipative_of_gives_nothing",
+        "Becoming.World.withRest_embodied_balanced",
+        "Becoming.World.withRest_embodied_iff",
+        "Becoming.listed_of_em",
+        "Becoming.not_not_listed",
+        "Becoming.of_not_not"
+      ],
+      "sha256": "c66c599254b18a219bf554f027214bd9656f9e8dff52bfc2873b59f2954c3e5e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
+      "role": "proof",
+      "declarations": [
+        "Becoming.ExchangeLaw.RespondsBelow",
+        "Becoming.ExchangeLaw.readWeb",
+        "Becoming.ExchangeLaw.supported_of_responds",
+        "Becoming.World.withRest_dependent_iff"
+      ],
+      "sha256": "aa0e051de0783cc47458f5c4ec23a0ec1da2a636bf223c3c0570f07e2ded453d"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "3120e70adbe3c7159275e7b12de522e71b081571c1259fef1fa0159d5bb0b24e"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T100412.397267Z/verification.json",
+      "role": "receipt",
+      "sha256": "cb5d67dbba20ce4091b34136b34a0ff68571b8b45ce602c72f992f8859d0ea96"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "74f24f8be5d7cec103317634f07d7fd0755404450217e036824ffb7586ca9143"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "1bb0cecc46f54281ef759a2bbfd9ad0fae646a01a7579cdd5bac3b33ed832adb"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExchangePremises.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T100412.397267Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.ExchangePremises",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "en": "19 October 2026: added (E1), on the first target of chapter §8.1, the deductive necessity of the whole; study section 197.",
+      "zh": "2026年10月19日：新增（E1），针对第 8.1 节的首要目标，整体的演绎必然性；研究第 197 节。"
+    }
+  ]
+}

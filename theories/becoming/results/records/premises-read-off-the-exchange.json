@@ -123,8 +123,8 @@
       "kind": "scope"
     },
     {
-      "zh": "封闭、耗散、体现、有界传递与列出活跃者所需的判定不从交换读出，它们仍是部分的状态。",
-      "en": "Closure, dissipation, embodiment, bounded transmission and the decision to list what is active are not read off the exchange; they remain states of parts.",
+      "zh": "封闭、耗散、体现与有界传递不从交换读出：它们是律的状态（premises-that-are-states-of-the-law）。凡有具名的家族围住每一步，列出活跃者不需判定（census-read-off-the-exchange）。",
+      "en": "Closure, dissipation, embodiment and bounded transmission are not read off the exchange: they are states of the law (premises-that-are-states-of-the-law). The decision to list what is active is not needed where a named family closes each step (census-read-off-the-exchange).",
       "kind": "scope"
     },
     {
@@ -155,8 +155,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T143041.527461Z): the 50 declarations of Becoming.Reading, 34 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 125; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
-    "zh": "要求读作回应时在分支过程上的形式；独立审查。",
-    "en": "Requirement read as response over branching processes; an independent review."
+    "en": "An independent review.",
+    "zh": "独立审查。"
   },
   "correspondence": {
     "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第二步：采用其余作为关系项，从交换读出活跃与依存，把联结的前提作为定义或定理重证，余下局部状态。读法（AI 的，依 Ren 的交托采用）：平衡、只有活跃者给予、只有活跃者取用其所汲取的、活动需要支持把一次交换的诸读法联结起来；World.independent 的独立性是分别选取的读法的自由：它为这四个前提给的见证（unbalanced、strained、scatter、morsel）中，一个读法被选得与它所读的交换不符。",
@@ -239,6 +239,27 @@
       "detail": {
         "zh": "同一重建的第三步：平衡是两种变化读法的粘合，算入其余时每个世界都是交换之律的一次运行。",
         "en": "Step 3 of the same re-founding: balance is the gluing of two readings of change, and with the rest counted every world is one run of the law of exchange."
+      }
+    },
+    {
+      "id": "census-read-off-the-exchange",
+      "detail": {
+        "en": "The census, left here needing exchanging decided, is read off the exchange where a named family closes each step.",
+        "zh": "这里留下需要交换可判定的普查，在具名家族围住每一步之处从交换读出。"
+      }
+    },
+    {
+      "id": "premises-that-are-states-of-the-law",
+      "detail": {
+        "en": "Of the states of parts left here, dissipation, embodiment and bounded transmission are states of the law.",
+        "zh": "这里留下的部分的状态中，耗散、体现与有界传递是律的状态。"
+      }
+    },
+    {
+      "id": "requirement-over-open-exchanges",
+      "detail": {
+        "en": "This record's next delta: requirement as response where several exchanges are open.",
+        "zh": "本记录的下一步：多个交换开放时把要求读作回应。"
       }
     }
   ],
@@ -371,7 +392,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "44d452a1ad43e71f5169a32260237fbfc445dd6dea45067f548ee3b64559e8c4"
+      "sha256": "1bb0cecc46f54281ef759a2bbfd9ad0fae646a01a7579cdd5bac3b33ed832adb"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
@@ -605,6 +626,14 @@
     {
       "en": "19 October 2026, U3 (theorems apart from the base): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: U3 revised premise card F and the glossary row of J1-J4, added the frame reading to section 6 and the calibration to section 8.6, a rerun to the section 8.2 integration row and the section 9 receipt and counts). The claim is unchanged.",
       "zh": "2026年10月19日，U3（与基相离的定理）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, E1: the scope line on closure, dissipation, embodiment, bounded transmission and the decision to list what is active corrected (census-read-off-the-exchange, premises-that-are-states-of-the-law); the next delta, requirement read as response over branching, done (requirement-over-open-exchanges), leaving an independent review; three related records added. The claim is unchanged; study section 197.",
+      "zh": "2026年10月19日，E1：关于封闭、耗散、体现、有界传递与列出活跃者之判定的范围条目更正（census-read-off-the-exchange、premises-that-are-states-of-the-law）；下一步“分支过程上把要求读作回应”已完成（requirement-over-open-exchanges），余下独立审查；新增三个相关记录。论断不变；研究第 197 节。"
+    },
+    {
+      "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
+      "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": []

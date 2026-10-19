@@ -20,6 +20,7 @@
 8. Relation first: laws stated on the levels alone, the premises read off the exchange (premises-read-off-the-exchange) and readings in context forming one world (unity-of-readings); the representation's commitments remain. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#125-从关系开始的重建只用水平的规律从交换读出的前提语境中的读法becomingnoveltybecomingreadingbecomingreadings)
 9. The theory asserts no axiom: that everything is significant is only the condition of the conditional section, under which living significance follows; the step of invariance remains to be stated. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#162-第二部分折叠进第一部分一个条件小节p128)
 10. One root: every world is a run of the law its webs and exchanges show (worlds-are-runs, largely by definition), frontier laws stated on two-act worlds; the families meet by correspondence, 1,019 of 7,214 theorems apart at landing. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#165-一个根每个基都读作运行前沿陈述在两种作为的世界上p130)
+11. Premises read off one exchange (E1): of the eight World premises, five are readings (the four tying premises, and the census under enclosure, never refuted without it) and three, dissipation, embodiment and bounded transmission, are states of the law of exchange, as closure and enclosure are; the necessary content of the whole cannot include those three. [study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#197-which-remaining-premises-a-reading-of-the-exchange-settles-e1)
 
 <a id="conditions--条件"></a>
 ## Conditions
@@ -72,6 +73,8 @@ The whole deduction must warrant relational unity and differentiation, including
 - related, not a proved adapter: [unity-of-readings](unity-of-readings.md). Readings in context make one world; context-free description exists just where they glue.
 - related, not a proved adapter: [worlds-are-runs](worlds-are-runs.md). A world is exactly a run of the law it shows; the correspondence holds largely by unfolding definitions.
 - related, not a proved adapter: [one-axiom-yields-g0](one-axiom-yields-g0.md). Under the condition that everything is significant, G0 follows; the theory does not assert the condition.
+- related, not a proved adapter: [premises-that-are-states-of-the-law](premises-that-are-states-of-the-law.md). Where becoming is contingent in the law: dissipation, embodiment and bounded transmission are met by some laws of exchange and failed by others, with the readings fixed.
+- related, not a proved adapter: [census-read-off-the-exchange](census-read-off-the-exchange.md). The census is a reading of the exchange under enclosure.
 
 <a id="sources--来源"></a>
 ### Sources
@@ -103,6 +106,7 @@ Aliases: —
 - 17 October 2026, whole-repository review of 16–17 October 2026 (CHANGES.md), items B6, A18: the target record had no new progress since P30 (review records-mz-7, target-1): four progress lines are added, linking study section 67 (P51, G0 folded), 125 (P107, the relation-first re-founding), 162 (P128, Part II folded into a condition) and 165 (P130, one root, with the connectivity measurement of 1,019 of 7,214 theorems apart), the study log is added as an integration reference, and four related entries are added. Status, target wording and next step are unchanged (Ren's). Earlier text in text_versions.
 - 17 October 2026, wording: outdated labels (G0, Part I, Part II) replaced by the current vocabulary (living significance, the theory without axiom, the conditional section (§6.15)); authority phrasing and fold chronology removed from public fields, following Ren's 17 October directive that his earlier words are provenance, not authority; the claim is unchanged.
 - 18 October 2026, the N1 renaming (Ren: "Renames, full scope"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged.
+- 19 October 2026, E1: a progress entry and two related records (premises read off one exchange: which premises are readings and which are states of the law); study section 197. The target's wording is unchanged.
 - 2 rebinding entries (2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](theory-of-becoming-foundation.json).
 
 <a id="earlier-text--早期文本"></a>
