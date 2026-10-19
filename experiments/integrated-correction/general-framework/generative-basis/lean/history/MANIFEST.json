@@ -3,6 +3,564 @@
   "root": "experiments/integrated-correction/general-framework/generative-basis/lean/history",
   "entries": [
     {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
+      "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+      "blob": "9f72981ad802db7b2642d41c22eb7d6469b5e072",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClassifiedFramesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ClassifiedFramesInherited.lean",
+      "sha256": "9f7059a31fb764957eec160113356cb6f4a7b753acbfdd185d1f167f544b9f39",
+      "blob": "f1dbdacba989c967b95835141df1f4c4e4ff6328",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ClassifiedFramesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CompositionBridge.lean",
+      "sha256": "1ebdb280164ae841ad06d7a66afe36cc7d6c3e8d16bef29a8ec9facee98cc798",
+      "blob": "56fb0d1fecd9ad2fb64604fbfbc775be295c8b95",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ContextArrivalTracesInherited.lean",
+      "sha256": "d9f5b7e5a3b2e841628e33075a2a2265c980641fc68657661e45d6b617ed46e1",
+      "blob": "65509fdeacddfb844322e96161398c9ad7cd9d40",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextArrivalTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CouplingHistoryFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CouplingHistoryFrames.lean",
+      "sha256": "3a9ad9e744639725f881d46af82aa2322346f89e892dc04af494d4272db96e35",
+      "blob": "eda2753b4e4f87d33cb02c9cff1f036049c0e520",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CouplingHistoryFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseExtensionFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CourseExtensionFrames.lean",
+      "sha256": "9fa32377909f8130b8c6a78b54819d958db93a646dd06b605d7a83b95fa74203",
+      "blob": "be6d1e1a929e8d1f64a0e8d5f07934914851d244",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseExtensionFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CoursesBridge.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/CoursesBridge.lean",
+      "sha256": "f1c5fd8ac0f939b317a305255c8d774c8a6e868baec73d2b40120447e13ec466",
+      "blob": "1410827c9c210ac0dae0003e39318b03186af3ac",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CoursesBridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DephasingRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DephasingRuns.lean",
+      "sha256": "b4b97b7c3d6bfbf517037a215ee58a6794651b22168340767d299988802170f1",
+      "blob": "d65cf87bdb9b24210aa4aef13349eb425ad537d5",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DephasingRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DephasingRunsInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DephasingRunsInherited.lean",
+      "sha256": "e94815edc92f5e5f6b41fdf8a5f7a38b949b9f7421b3e2bb9f1f6dcd4256bfbf",
+      "blob": "82be56eeb0714a38497e20196a502bbbbfaf2abd",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DephasingRunsInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DerivationScopeProcesses.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DerivationScopeProcesses.lean",
+      "sha256": "0c0cd5ae3304e0e5fccf90d0dce4ad3ec438b8f943c3331dd5adad83c5a54627",
+      "blob": "1180b14a1c57163e2cdc8e8335ce53775cdfeb4f",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DerivationScopeProcesses.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DescentRenewalRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DescentRenewalRuns.lean",
+      "sha256": "b190359d684b65ae4898922232b315e0b1ad4556ee44bbd92c69e10c6061d1a0",
+      "blob": "3f2c91fde375782541619ead8cb4341155a59889",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DescentRenewalRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DispatchProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DispatchProcessesInherited.lean",
+      "sha256": "99be04f1a15b9d8aee74fcce5289f121a1c435fb1710fc6eec0e6fc836c6d129",
+      "blob": "504e5204b2befe06500458bee8bb40bc4d7114fb",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DispatchProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DrawnAmountProcesses.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DrawnAmountProcesses.lean",
+      "sha256": "b1c39d150e3badfc8efc85c638be911ede74b498a4b6aabb20cd02de8bdd7937",
+      "blob": "73b33534dcd7c6bb3443858e56273937f2b6c18b",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DrawnAmountProcesses.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DrawnAmountProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/DrawnAmountProcessesInherited.lean",
+      "sha256": "70763f2990333ff8948049a0e319361b88c993cc5fa4ef0c2281abf637ac667c",
+      "blob": "c5d12caab4a347adcdc94c540530b794749ff88d",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/DrawnAmountProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExactRecordRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ExactRecordRuns.lean",
+      "sha256": "bc252043d58a6b08e538da0ab4761f0f2ddaff09e8a37d5da615408f3aff3367",
+      "blob": "8c3cac7425d9445e5e4fac55b6967d2398559429",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExactRecordRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExactRecordRunsInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ExactRecordRunsInherited.lean",
+      "sha256": "f7c89acceff33b8a4e7e0fd98dd4b7e875ea46c8b62075a803c50bc1725dd5f4",
+      "blob": "ae2bf22cb860cc7394e381c1f0355982938797d4",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExactRecordRunsInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExtendedClaimFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ExtendedClaimFrames.lean",
+      "sha256": "7c41d13900064960bf0a4b3961f33b3677ed7b21d177bf87daa9d9db9e2218ce",
+      "blob": "053eb9049e337a701922f7433b93593b570cee89",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExtendedClaimFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExtensionFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ExtensionFrames.lean",
+      "sha256": "e0759f13b488c9531a5c247bd4020b339e784db5529e8c96e3a25c59d03c6fa6",
+      "blob": "14dfaea24caf6037b35d3a27b43aedaba61ae254",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ExtensionFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FeasibleProfileTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/FeasibleProfileTraces.lean",
+      "sha256": "19061d16a64a6f84e0d66752d054fcf6c4ae95640e9b54251fd7805f621ccf2b",
+      "blob": "f511cbe3a24b7a1967b89f7a9d1d25e9f595f479",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FeasibleProfileTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FormationTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/FormationTracesInherited.lean",
+      "sha256": "9bad5826ca02c3834836917815677998b448ae11ec9331ed8ee9c20008c49f56",
+      "blob": "e0d5be4afd091de9f295f70044fe3918bd8f6c1f",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FormationTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GranularityBridge.lean",
+      "sha256": "441e190ce5f748dc5cdf6b925f10276428bf4df4714f5ac46e6d5d1446e677a0",
+      "blob": "4c79045c8357e5971c7d4518ae8f5597cf919f32",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GranularityBridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GuardHorizonProcesses.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GuardHorizonProcesses.lean",
+      "sha256": "ad45c42371640f744522d596ce33e3dfa343899b663cf2f13d9ab82ffccaa6f8",
+      "blob": "33c25e9221f9f512d27954af8c14ad594aedd749",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GuardHorizonProcesses.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GuardHorizonProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GuardHorizonProcessesInherited.lean",
+      "sha256": "e9db9e6e44abd514cc8777b3ecc4170f2943dc83d8adafee558c9e0e60833e22",
+      "blob": "94c163977bb6eb1e83ea29c033b7074493ceac0a",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/GuardHorizonProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InspectionProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/InspectionProcessesInherited.lean",
+      "sha256": "12a993bf9c8c26e8b7f2b58a2d770744f83b2ee8ca8f24c832109009f757f2d7",
+      "blob": "801a9095040b029613c36f12bc4b35373f310a2c",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InspectionProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InstallationTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/InstallationTraces.lean",
+      "sha256": "e8ebe2392ecfa6e3c97c6e6e9a331b48edda3f42083987875de72cea4c280273",
+      "blob": "41a8aab72b0467c3ae4ee5850942141cdf9170ed",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InstallationTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InstallationTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/InstallationTracesInherited.lean",
+      "sha256": "04ec01b3fb950d210d0d11c14f07e8d8b9ec9bb4db4ca0a3cd5681967c6d1fe1",
+      "blob": "e21e7d8c1009d702b7463c21e548e1262b7afea2",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InstallationTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
+      "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
+      "blob": "cc9575493c7138ffaac9e702cefd3f015a86f008",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InterfaceTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/InterfaceTraces.lean",
+      "sha256": "b1f17fce4ebd672110085b2000c0cbd5ea5dfd898618c3914f791fe69e1cbbd1",
+      "blob": "85e49dd87b7481e5716425e46a3128610d619877",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InterfaceTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InterfaceTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/InterfaceTracesInherited.lean",
+      "sha256": "6c843fcb5fbedbfc37ed9bb5ceb6c8818b73baa8be06bf75d29c14b88fcf852f",
+      "blob": "e653bbbf083834a8ae819d6ae40dc2265283fe1b",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/InterfaceTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+      "sha256": "07948aff461a1a8a72852689a35dbec9276179ac0eec265d39e8b44a1ecef0c9",
+      "blob": "908ae1a93eb2aab14808ec880d63b490dace8912",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodeFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningCodeFrames.lean",
+      "sha256": "91b09adb0b9d0ff54216750529aef302f20ea7eebf312f545d34bb2ddcd1f576",
+      "blob": "56a4a28e25cfc02e8fd094170a2dcf5e7d8feb7e",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodeFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodeFramesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningCodeFramesInherited.lean",
+      "sha256": "b573f61132c4a256c95c18ad1988baa6d43aa05996a9c24d09f07946d2af9a15",
+      "blob": "a7916d6edddcd01c1d5a2db9689bdc0bdce92270",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningCodeFramesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhaseTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JointPhaseTraces.lean",
+      "sha256": "e5b73ba65599aff47c97693439ef42adcc7fefa1eb17216ed176504c08412c2e",
+      "blob": "e81e8ba0da735d15dec581a705f8674c4fad8562",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhaseTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhaseTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JointPhaseTracesInherited.lean",
+      "sha256": "8ba0ca9a9cfb7f6d95e1f1ed268c606fef9b40e1cd8c4e3ac1f755bbc0a7f827",
+      "blob": "b47e5dac780d878ca014aaeb3a2aa7cf26c8af90",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JointPhaseTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/MoveOutcomeProcessesInherited.lean",
+      "sha256": "9d96a2106cf189608a60911389582a596a910931ec057a8540972ee3c6369a23",
+      "blob": "7f8686e7ff32324d994ff5f4e087c1b38f97a95c",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveOutcomeProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ProbeRunsInherited.lean",
+      "sha256": "a7ca9d0ff07568863b45894e43b4965332cc29ae643c67f5e329be63527c018c",
+      "blob": "cafbcfe1c9113c0123036e8b56b9c8625a600880",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProbeRunsInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProjectedLawTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ProjectedLawTraces.lean",
+      "sha256": "b75263929eb58272ac8a69aca95dc101a390eb7f50ebf8feb2fda578f3ca354c",
+      "blob": "f37d06075ccc50b38c966645cedf7e4f4c07b714",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProjectedLawTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/QueryTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/QueryTraces.lean",
+      "sha256": "e31921980a618671871e18a99a80663dd930f0111724eaa6b0481382583c9b05",
+      "blob": "7034704b67515f333f788ba1cd3d72042fa609c0",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/QueryTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/QueryTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/QueryTracesInherited.lean",
+      "sha256": "1702082d3b015067f4f9caabf2189e729d114d689da2c4db8746b3138f136b00",
+      "blob": "f346c01b73c4efbf63c931771108aab8ba340cb1",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/QueryTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReachableFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ReachableFrames.lean",
+      "sha256": "1ba8ac980c36e55fef8d833b6a9bcbe355b4ada97724d8849213968eb5716c0a",
+      "blob": "560ec0613292f922356f9b5937182cee32ba0a80",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReachableFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReachableFramesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ReachableFramesInherited.lean",
+      "sha256": "aa75435aaf1248f1bdd3b38da1758dcc00f28fcaa8632fe74c12fef8189b37eb",
+      "blob": "34cc539df956786d78fd74b5303016f8b39f9e3e",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReachableFramesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReceptionTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ReceptionTracesInherited.lean",
+      "sha256": "28362d0ee4dfb39d0200b4dbe0bf12863920d1747f4642a63161dfb2e9de2826",
+      "blob": "aff3ca34a04aeaef1f7fd471278bda728371006c",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReceptionTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReconfigurationProcesses.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ReconfigurationProcesses.lean",
+      "sha256": "3c7a58b2511ae389ea3e86fc1e09c7ff7e7f499aa5af9b2728ec17f387ac3823",
+      "blob": "5736b29f5e4c5964e977c4d6b989f366e66a4002",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReconfigurationProcesses.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReconfigurationProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/ReconfigurationProcessesInherited.lean",
+      "sha256": "c063bb606c08538547dd82ccf40a6a4a1ffcc873af3e611ceda2f5c3a1b15279",
+      "blob": "afd3d078e6f100a07550467d9a5b8a34b277c602",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReconfigurationProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RenewalBridge.lean",
+      "sha256": "ae3569b0dcb912f605231c5d903f188480158c35c552bb4cba9ee668be187cf7",
+      "blob": "b24f519c9ae305548badd6b68f84a0270e1795bd",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
+      "sha256": "c4ab73db434b95c6a49415326aca0670b55166e1735a2baa4ce83c6177f8ba8d",
+      "blob": "fd38d4a372a2b769e6c68c80d167fb8703691fd9",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoffTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RuleHandoffTraces.lean",
+      "sha256": "c2c4d5233ff30013efc72ae99a2b1865b8003a85fe37aea0a871426647a3030b",
+      "blob": "394e3cdf136b9ac960adc3f6ac2e59ee461ddbd7",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoffTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoffTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RuleHandoffTracesInherited.lean",
+      "sha256": "25c9d42d20efaeee962bc062b1823dcbf7726ebe97509f78c8d50ce728ad85d4",
+      "blob": "1e9300e591e23466a112f2898b58a89dd784f5f5",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleHandoffTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleNarrowingProcesses.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RuleNarrowingProcesses.lean",
+      "sha256": "08994dc0012ce824fac0001a6bf4830bb00337956addda5787949eca4bd50541",
+      "blob": "ef8bb86403135a57320e53d70722e50e33712431",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleNarrowingProcesses.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleNarrowingProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RuleNarrowingProcessesInherited.lean",
+      "sha256": "77715de6a6bfe7ea60bf58c6d409444b1f0c171a1f3fae80c15ff92f2fa8d47b",
+      "blob": "7ea25d3c47d23ef4ea81a34a4949eff58a429f19",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleNarrowingProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleRevisionTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RuleRevisionTraces.lean",
+      "sha256": "ee23d7f31be05dd864d8b1cd197500dddd3fa1661dc20d52baa91bc86a267130",
+      "blob": "44ca0fb9c202924db6a6d8aa5b6805ee30bc4764",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleRevisionTraces.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleRevisionTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RuleRevisionTracesInherited.lean",
+      "sha256": "9a5fbd0f0988977569991bd482d839dff48f3c15267cca6372c2eda42afe9a98",
+      "blob": "f3aa3d96cdff47e3a48b518a9bffc8a42eeca4a8",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleRevisionTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeedReachProcesses.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SeedReachProcesses.lean",
+      "sha256": "75e9996459fe809bb91f98106fc527e85951fd20e9a71e068592fde68d63f48c",
+      "blob": "59eb4b0568ff3c8bd64f74e2fbc184b3ace913ae",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeedReachProcesses.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransportRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/StrictTransportRuns.lean",
+      "sha256": "9a1faf6f080cee6192ddefb691d9f4aa8779b2fc45bce3f97da86534e9f03454",
+      "blob": "92e00b36197f10968e083d97916cc122d78e332a",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/StrictTransportRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportGatedWebs.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SupportGatedWebs.lean",
+      "sha256": "5810d961ef355195422a18fe6c23e7e67e80dc7d996772f2eaccfd5aeddccb87",
+      "blob": "3c02b2a2bd6477e5bf5ab71b43432477c6f63ada",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportGatedWebs.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportGatedWebsInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SupportGatedWebsInherited.lean",
+      "sha256": "33079d825c309f91a24eed0d25a848d0b86db0ddaa8874088570b866d0126f61",
+      "blob": "528854b2644b8aa37f970c98ca4d060089c737c7",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SupportGatedWebsInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TestCodeFrames.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/TestCodeFrames.lean",
+      "sha256": "1b9c1d93488584329f036f6533a44533ddeb70617951f294a7d5c70c50a442fc",
+      "blob": "6e51e89d5f3ccac87fc681f4e398558081e2f59b",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TestCodeFrames.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TrainingProcessesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/TrainingProcessesInherited.lean",
+      "sha256": "5a3f46626b1e7f3d71c1ec9de80f0e6c38a92143c4d50b6ce147c1a76c8ee1a9",
+      "blob": "fc1684914f63079bb356ffd383300c4f9c425276",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TrainingProcessesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TransactionTracesInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/TransactionTracesInherited.lean",
+      "sha256": "7b74e1c6257ff1545c08c9ba4ef356d00a1bfb829109f4d3adb614279ba33baf",
+      "blob": "abddf2e9b15b9dc52fab604463cf193ace1174e2",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TransactionTracesInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TreeSearchRuns.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/TreeSearchRuns.lean",
+      "sha256": "10a3c492fdffe9a63a2a525f3eb72f28d61d8ddf60002b2d41bf1cd006719954",
+      "blob": "c7fafa503babbddf1cce7eb1d6d0951ffe0a5912",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TreeSearchRuns.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TreeSearchRunsInherited.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/TreeSearchRunsInherited.lean",
+      "sha256": "00945344897cc3d4cf43719dad486929fe30fcfb0e14a63d435652b12bb92655",
+      "blob": "4c25f68d98e8d4d4541307f4b0202a4d4544c7eb",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TreeSearchRunsInherited.lean"
+    },
+    {
+      "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/UnitTraces.lean",
+      "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/UnitTraces.lean",
+      "sha256": "1f528c4830cb74e6d1e5783b949258c8c8a8717b139ea11250130795a45fac32",
+      "blob": "f17715628537d65c9b653a839fcba33f36c02684",
+      "batch": "F3-sweep",
+      "reason": "F3 sweep (19 October 2026): every declaration reads only superseded periphery modules, whose content the core states (bridge-fold port files)",
+      "plan_entry": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/UnitTraces.lean"
+    },
+    {
       "old_path": "experiments/integrated-correction/general-framework/generative-basis/lean/connected/INPUTS.json",
       "new_path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/connected/INPUTS.json",
       "sha256": "4bc41d478e5c706f53499790ee536aa7a61de038504dcaee18ce7b392a872ccb",

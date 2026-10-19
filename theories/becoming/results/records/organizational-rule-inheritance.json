@@ -111,7 +111,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
       "role": "proof",
       "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
       "declarations": [
@@ -225,7 +225,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Instances",
       "success_pointer": "/status",
@@ -335,6 +335,10 @@
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (12 in Becoming.RuleHandoff), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from OrganizationalRuleInheritance.lean to RuleHandoff.lean. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Instances.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
     }
   ]
 }

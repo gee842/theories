@@ -114,6 +114,7 @@ Aliases: `what a pool's acts respond to`, `一组的动作回应什么`, `the ga
 - 18 October 2026, G4 (Becoming.LawThroughCoupling): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: G4 added a study section). The claim is unchanged.
 - 18 October 2026, G4 (Becoming.LawThroughCoupling): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme): G4 revised the "Selection, causes and experiment" row (the criterion along one run through coupling stated, its record linked). Read before re-pointing. The claim is unchanged.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Counterfactual.lean, Feedback.lean, Response.lean, Selection.lean, THE-THEORY-OF-BECOMING.md, Testing.lean, TimedResponse.lean. The claim is unchanged.
+- 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.
 
 </details>
 

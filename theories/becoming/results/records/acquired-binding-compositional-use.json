@@ -106,7 +106,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "role": "proof",
-      "sha256": "0b3c91885d4f84a47c9a7cdecda9201e52bd6b902374db4901e03306e48ccb12",
+      "sha256": "4c28156010fb69ca309f5ab44323998f200d9ed6d4912b589e22a1ac5d82b351",
       "declarations": [
         "Becoming.MachineInstances.Groups",
         "Becoming.MachineInstances.segments_of_groups",
@@ -178,6 +178,12 @@
       "role": "receipt",
       "sha256": "a6724f4ad2e4d40cb4cd9af052811f25f5b92ebaaa507c801ef17cb75b072567",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261019T001148.333281Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d30faffd5899d5180f3a2e230035c0f87ce266d959330b61aebed22411a173b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -197,7 +203,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261019T001148.333281Z/verification.json",
       "sha256_pointer": "/source_sha256/MachineInstances",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -324,6 +330,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): MachineInstances now states the two lemmas it took from the bridge module Instances; rebound to its receipt 20261019T001148.333281Z. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

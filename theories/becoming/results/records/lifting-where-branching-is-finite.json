@@ -322,7 +322,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e6a7080e91391e723178e71ddab6b831bb28a91d58c8f59abf011c670a015361"
+      "sha256": "3be600e65658b806105119b89f424a256cd31a02b29a0cef9d67a7e1b75c8cf8"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-16-i4-decisions.md",
@@ -514,6 +514,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Likeness.lean, THE-THEORY-OF-BECOMING.md. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

@@ -168,7 +168,7 @@ FR 不跨越 J2 的基本／可放弃区分：L 本身必须是实际基本损�
 <a id="11-第一个有具体两端的比较完整片段与共同修复--first-concrete-comparison-anchors-complete-episodes-and-common-repair"></a>
 ## 11. 第一个有具体两端的比较：完整片段与共同修复
 
-13 October 2026，P100。接续 Ren 的“好的”，把上一节的存在性候选推进到一个有实际生成路线的有限构造。这里的“实际”指模型内按同一律发生的路线；它是理论案例，没有声称完成现实修复网络的经验校准。新数学在共享脊柱的外围模块 [Becoming.RepairComparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean)，复用 `Frame`、`Run`、`Trace` 与旧损失比较的 `Strict` 和优先传递定理。2026-10-14 起，严格损失匹配的一般规律在纯核心模块 [Becoming.LossMatching](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean)，对每个框架成立；这里的修复过程是它的实例（见 §11.3 末）。
+13 October 2026，P100。接续 Ren 的“好的”，把上一节的存在性候选推进到一个有实际生成路线的有限构造。这里的“实际”指模型内按同一律发生的路线；它是理论案例，没有声称完成现实修复网络的经验校准。新数学在共享脊柱的外围模块 [Becoming.RepairComparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean)，复用 `Frame`、`Run`、`Trace` 与旧损失比较的 `Strict` 和优先传递定理。2026-10-14 起，严格损失匹配的一般规律在纯核心模块 [Becoming.LossMatching](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LossMatching.lean)，对每个框架成立；这里的修复过程是它的实例（见 §11.3 末）。
 
 <a id="111-同一共同支持过程及其四条路线--one-common-support-process-and-four-courses"></a>
 ### 11.1 同一共同支持过程及其四条路线

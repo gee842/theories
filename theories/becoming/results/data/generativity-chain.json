@@ -3993,7 +3993,7 @@
               "label_en": "P89 argument, counterreview and checks"
             },
             {
-              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
               "label_zh": "共同脊柱上的适配源码",
               "label_en": "Adapters on the shared spine"
             },
@@ -4043,7 +4043,7 @@
               "label_en": "Complete-episode comparison: anchors, premises and counterreview"
             },
             {
-              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+              "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
               "label_zh": "共享脊柱上的修复比较应用",
               "label_en": "Repair comparison on the shared spine"
             },
@@ -8389,7 +8389,7 @@
     "sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md": "ad4e0a9485bd7e87ce2f5b5ef9cf713a20ef885786ccff64e36ca1e1a9c79d20",
     "_process/research/2026-10-05-generative-foundation-review/history/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md": "e11f4462141f3b0e48e9168e44dcbeba66bab4401261cabea20e8b5e4faa3024",
     "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/check_learned_procedure_transmission.py": "ee6c0e44fe414c5c2b2d0b2c48590bf6b2918585e933a6ee72e51a2b50aa030f",
-    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T102207.009826Z/verification.json": "b4b0d6b2ce654b05ee8b4731faee4f8332834ed22dac0de2adb9e6b1a1d14bb0",
     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean": "210ecae682f45520052e618c3ffad47d01f93b4779f9160f87dd66b734b4b876",
     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json": "f4eee5e5cdb9244b1ab905e51a67a1a2f1e5930b9f03cc8dfb3a0a5344e6a032",
@@ -8407,7 +8407,7 @@
     "theories/becoming/results/records/consequence-revised-reference-plan.md": "ba5d32e23118281b80f779016e73ff30477f47421ad5b2d0c02eca9026cc271c",
     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean": "eb01f4c37c477a75727e5d12a7fa0a85c6bcc1783a26fc09d56a72d619dfb165",
     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T120722.092811Z/verification.json": "cd9846eb8a2de8f5d9e88738de039b411d0b3cd30bc8b3c4da2fe99e2a843fdf",
-    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean": "c4ab73db434b95c6a49415326aca0670b55166e1735a2baa4ce83c6177f8ba8d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean": "c4ab73db434b95c6a49415326aca0670b55166e1735a2baa4ce83c6177f8ba8d",
     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json": "f30fd393a060e81fd5b19bb761a565eee3ba24ae4d765e051b75b0b99e4a85e9",
     "sources/15-codex-theory-conversations/2026-10-13-nondual-normative-grounding-correction.md": "acf7ec065778fb7fae18e86a0c68b8ce1f6f12db6c6ae7810f6ebbc993d6ccb1",
     "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122414.398959Z/verification.json": "f3cd00d272dcaf69b53a64b189b1eb5cdb5c7672302643c581a5421de0d84db3",

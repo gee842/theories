@@ -1,4 +1,11 @@
-import Becoming.Instances
+import Becoming.Assurance
+import Becoming.Segmentation
+import Becoming.Readout
+import Becoming.Gated
+import WisdomResponseStructure
+import RelationalReduction
+import OrganizationalRuleInheritance
+import AcquiredSegmentation
 import Becoming.CrossSituational
 import EncounterChoice
 import RetrospectiveBinding
@@ -10,7 +17,8 @@ import JointPracticeContinuation
 
 The definitions of these peripheral machines use standard axioms through their library instances
 (membership tests, counting, `Option` binding), so their instances of the core's laws are stated
-here rather than in the pure bridge `Becoming.Instances`. The core does not import this module.
+here (the pure bridge `Becoming.Instances` they once shared is in `lean/history/becoming/` since
+the F3 sweep). The core does not import this module.
 
 * **Reading acquired words.** For every lexicon whose transition record groups the two-word
   encoding (six local bond conditions, `Groups`), interpretation of every encoded sequence is the
@@ -73,6 +81,130 @@ namespace Becoming.MachineInstances
 
 open Generative Becoming.Assurance
 
+/-! ## Grouping and adoption of the periphery machines
+
+Stated here since the F3 sweep (19 October 2026), with their proofs, from the pure bridge
+`Becoming.Instances` (now in `lean/history/becoming/`): the two-word grouping law of
+`AcquiredSegmentation` from the core's `Segmentation.encode_iff`, and that only an adoption changes
+the rule of `OrganizationalRuleInheritance` (`Gated.KeptBy`). The core states both on its own
+machines (`LearnedGrouping.two_word_iff`, `RuleHandoff.rule_kept`). -/
+
+section Grouping
+
+open Generative.AcquiredSegmentation
+
+/-- `AcquiredSegmentation.chunks` is the core's grouping. -/
+theorem chunks_eq (r : Sound → Sound → Bool) :
+    ∀ xs : List Sound, AcquiredSegmentation.chunks r xs = Segmentation.chunks r xs
+  | [] => rfl
+  | x :: xs => by
+    show (match AcquiredSegmentation.chunks r xs with
+      | [] => [[x]]
+      | [] :: rest => [x] :: rest
+      | (y :: ys) :: rest => if r x y then (x :: y :: ys) :: rest else [x] :: (y :: ys) :: rest) =
+      Segmentation.glue r x (Segmentation.chunks r xs)
+    rw [chunks_eq r xs]
+    cases Segmentation.chunks r xs with
+    | nil => rfl
+    | cons g rest =>
+      cases g with
+      | nil => rfl
+      | cons y ys => rfl
+
+theorem flatten_eq_join {α : Type} : ∀ L : List (List α), L.flatten = Segmentation.join L
+  | [] => rfl
+  | g :: gs => congrArg (g ++ ·) (flatten_eq_join gs)
+
+/-- The two-word encoding is the core's encoding. -/
+theorem encode_eq (ws : List Bool) :
+    AcquiredSegmentation.encode ws = Segmentation.encode AcquiredSegmentation.word ws :=
+  flatten_eq_join (ws.map AcquiredSegmentation.word)
+
+/-- The first sound of each word. -/
+def wordFirst : Bool → Sound
+  | false => .a
+  | true => .c
+
+/-- The rest of each word. -/
+def wordRest : Bool → List Sound
+  | false => [.b]
+  | true => [.d]
+
+theorem spelled : Segmentation.Spelled AcquiredSegmentation.word wordFirst wordRest
+  | false => rfl
+  | true => rfl
+
+/-- **For every grouping relation, grouping recovers the words of every sequence in the two-word
+encoding exactly when `a→b` and `c→d` are linked and `b→a`, `b→c`, `d→a`, `d→c` are not.** -/
+theorem two_word_iff (r : Sound → Sound → Bool) :
+    (∀ ws, AcquiredSegmentation.chunks r (AcquiredSegmentation.encode ws) =
+        ws.map AcquiredSegmentation.word) ↔
+      r .a .b = true ∧ r .c .d = true ∧ r .b .a = false ∧ r .b .c = false ∧
+        r .d .a = false ∧ r .d .c = false :=
+  have core := Segmentation.encode_iff r spelled
+  ⟨fun every =>
+    have every' : ∀ ws, Segmentation.chunks r (Segmentation.encode AcquiredSegmentation.word ws) =
+        ws.map AcquiredSegmentation.word := fun ws =>
+      (encode_eq ws ▸ chunks_eq r _ ▸ every ws)
+    match core.mp every' with
+    | ⟨inside, between⟩ =>
+      ⟨(inside false).1, (inside true).1, between false false, between false true,
+       between true false, between true true⟩,
+   fun ⟨ab, cd, ba, bc, da, dc⟩ ws =>
+    have inside : ∀ w, Segmentation.LinkedFrom r (wordFirst w) (wordRest w) := fun
+      | false => ⟨ab, trivial⟩
+      | true => ⟨cd, trivial⟩
+    have between : ∀ w v, r (Segmentation.lastOf (wordFirst w) (wordRest w)) (wordFirst v) =
+        false := fun
+      | false, false => ba
+      | false, true => bc
+      | true, false => da
+      | true, true => dc
+    (chunks_eq r _).trans ((congrArg (Segmentation.chunks r) (encode_eq ws)).trans
+      (core.mpr ⟨inside, between⟩ ws))⟩
+
+end Grouping
+
+section Governance
+
+open OrganizationalRuleInheritance
+
+/-- The gate: adoption. -/
+def adopts : Event → Bool
+  | .review _ _ => false
+  | .enroll _ _ => false
+  | .propose _ _ => false
+  | .adopt _ => true
+  | .integrate _ => false
+  | .handoff _ => false
+
+theorem ite_some {β : Type} {c : Prop} {d : Decidable c} {x t : β} :
+    (@ite _ c d (some x) none) = some t → x = t :=
+  match d with
+  | isTrue _ => fun same => Option.some.inj same
+  | isFalse _ => fun same => nomatch same
+
+/-- **Only an adoption changes the rule.** -/
+theorem rule_kept : Gated.KeptBy OrganizationalRuleInheritance.process adopts State.rule
+  | s, .review r c, t, step, _ =>
+    have same : { s with reviews := (r, c) :: s.reviews } = t := ite_some step
+    (congrArg State.rule same).symm
+  | s, .enroll c _, t, step, _ =>
+    have same : { s with roster := s.roster ++ [c] } = t := ite_some step
+    (congrArg State.rule same).symm
+  | s, .propose _ p, t, step, _ =>
+    have same : { s with proposal := some p } = t := ite_some step
+    (congrArg State.rule same).symm
+  | _, .adopt _, _, _, gated => nomatch gated
+  | s, .integrate _, t, step, _ =>
+    have same : { s with accepted := s.accepted + 1 } = t := ite_some step
+    (congrArg State.rule same).symm
+  | s, .handoff cs, t, step, _ =>
+    have same : handoff s cs = t := Option.some.inj step
+    (congrArg State.rule same).symm
+
+end Governance
+
 /-! ## Reading acquired words -/
 
 section Reading
@@ -86,7 +218,7 @@ def Groups (log : List (Option Sound)) : Prop :=
 
 theorem segments_of_groups {log : List (Option Sound)} (groups : Groups log) (ws : List Bool) :
     chunks (bond log) (encode ws) = ws.map word :=
-  (Instances.two_word_iff (bond log)).mpr groups ws
+  (two_word_iff (bond log)).mpr groups ws
 
 theorem readForms_eq (s : Lexicon) :
     ∀ fs, readForms s fs = Segmentation.readAll (resolve s) fs
@@ -577,7 +709,7 @@ theorem practice_rule_kept :
     · simp at step
     · split at step
       · obtain ⟨org, moved, rfl⟩ := Option.map_eq_some_iff.mp step
-        exact Instances.rule_kept _ _ _ moved rfl
+        exact rule_kept _ _ _ moved rfl
       · simp at step
   | organizational e =>
     cases e with
@@ -586,19 +718,19 @@ theorem practice_rule_kept :
     | enroll c b =>
       simp only [JointPracticeContinuation.step] at step
       obtain ⟨org, moved, rfl⟩ := Option.map_eq_some_iff.mp step
-      exact Instances.rule_kept _ _ _ moved rfl
+      exact rule_kept _ _ _ moved rfl
     | propose c p =>
       simp only [JointPracticeContinuation.step] at step
       obtain ⟨org, moved, rfl⟩ := Option.map_eq_some_iff.mp step
-      exact Instances.rule_kept _ _ _ moved rfl
+      exact rule_kept _ _ _ moved rfl
     | integrate b =>
       simp only [JointPracticeContinuation.step] at step
       obtain ⟨org, moved, rfl⟩ := Option.map_eq_some_iff.mp step
-      exact Instances.rule_kept _ _ _ moved rfl
+      exact rule_kept _ _ _ moved rfl
     | handoff cs =>
       simp only [JointPracticeContinuation.step] at step
       obtain ⟨org, moved, rfl⟩ := Option.map_eq_some_iff.mp step
-      exact Instances.rule_kept _ _ _ moved rfl
+      exact rule_kept _ _ _ moved rfl
   | changeContext c =>
     simp only [JointPracticeContinuation.step, Option.some.injEq] at step
     subst step; rfl

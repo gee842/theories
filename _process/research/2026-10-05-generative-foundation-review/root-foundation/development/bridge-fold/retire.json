@@ -1,0 +1,585 @@
+{
+ "about": "F3 final sweep: periphery modules each family reports fully ported (every theorem graded same or step), with the core modules stating them, and the landing that put them on main. The sweep registers these in SUPERSEDED. stated_by names the core modules the family's port file gives for its new statements; theorems the step-0 audit already found stated keep their counterparts as that audit lists them.",
+ "modules": {
+  "ExplanatoryResiduals": {
+   "stated_by": [
+    "Becoming.Granularity"
+   ],
+   "family": "F3E",
+   "landed": "353a5eea6 (retired)"
+  },
+  "GeneratedPaths": {
+   "stated_by": [
+    "Becoming.AssurancePlans"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "CorePredication": {
+   "stated_by": [
+    "Becoming.AssurancePlans"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "ContextualWisdom": {
+   "stated_by": [
+    "Becoming.AssurancePlans"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "WisdomResponseStructure": {
+   "stated_by": [
+    "Becoming.AssurancePlans"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "SystemsOrganization": {
+   "stated_by": [
+    "Becoming.ProjectedLaws"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "OperativeCoherence": {
+   "stated_by": [
+    "Becoming.Dephasing"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "RelationalReduction": {
+   "stated_by": [
+    "Becoming.JointPhase"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "GenerativeLossComparison": {
+   "stated_by": [
+    "Becoming.StrictTransport"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "RenewalComparison": {
+   "stated_by": [
+    "Becoming.ActiveReading"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "RenewalRecovery": {
+   "stated_by": [
+    "Becoming.SupportRecovery"
+   ],
+   "family": "F3R",
+   "landed": "1caee5c84"
+  },
+  "PracticalReach": {
+   "stated_by": [
+    "Becoming.MoveOutcomeProcesses"
+   ],
+   "family": "F2",
+   "landed": "2f19bff73"
+  },
+  "CutCoverageAudit": {
+   "stated_by": [
+    "Becoming.SeedReach"
+   ],
+   "family": "F2",
+   "landed": "2f19bff73"
+  },
+  "WholeGroundCoverage": {
+   "stated_by": [
+    "Becoming.SeedReach",
+    "Becoming.ScopedReach"
+   ],
+   "family": "F2",
+   "landed": "2f19bff73"
+  },
+  "BecomingCompatibility": {
+   "stated_by": [
+    "Becoming.ContextArrivalTraces"
+   ],
+   "family": "F2",
+   "landed": "2f19bff73"
+  },
+  "BecomingReversibility": {
+   "stated_by": [
+    "Becoming.Irreversibility"
+   ],
+   "family": "F2",
+   "landed": "2f19bff73"
+  },
+  "DerivedHistoryLaw": {
+   "stated_by": [
+    "Becoming.SummaryFutures"
+   ],
+   "family": "F2",
+   "landed": "2f19bff73"
+  },
+  "GenerativeComparison": {
+   "stated_by": [
+    "Becoming.Alternatives",
+    "Becoming.Metaethics"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "PracticalJudgment": {
+   "stated_by": [
+    "Becoming.Lexical",
+    "Becoming.Frontier"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "JointContinuationClassification": {
+   "stated_by": [
+    "Becoming.Bundles"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "ProtectionPriorityRival": {
+   "stated_by": [
+    "Becoming.ScoreRepresentation"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "RelationalGrounding": {
+   "stated_by": [
+    "Becoming.Bundles"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "ConcernExtension": {
+   "stated_by": [
+    "Becoming.Lexical"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "RelationalOrganization": {
+   "stated_by": [
+    "Becoming.Frontier"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "ClassificationRobustJudgment": {
+   "stated_by": [
+    "Becoming.Lexical",
+    "Becoming.Frontier"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "AlignmentDirection": {
+   "stated_by": [
+    "Becoming.Frontier"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "StandardsBridge": {
+   "stated_by": [
+    "Becoming.Narrowing"
+   ],
+   "family": "F3J",
+   "landed": "4f6bc20c8"
+  },
+  "RelationalBecoming": {
+   "stated_by": [
+    "Becoming.ActivationCapacity"
+   ],
+   "family": "F3R",
+   "landed": "3f89c9114"
+  },
+  "KnowledgeCorrespondence": {
+   "stated_by": [
+    "Becoming.PartialReadout"
+   ],
+   "family": "F3Q",
+   "landed": "0217baa38"
+  },
+  "GenerativeClosure": {
+   "stated_by": [
+    "Becoming.Derivation"
+   ],
+   "family": "F3Q",
+   "landed": "0217baa38"
+  },
+  "JointInterpretation": {
+   "stated_by": [
+    "Becoming.Derivation"
+   ],
+   "family": "F3Q",
+   "landed": "0217baa38"
+  },
+  "CompositionalAcquisition": {
+   "stated_by": [
+    "Becoming.CodeAcquisition"
+   ],
+   "family": "F3Q",
+   "landed": "0217baa38"
+  },
+  "CompositionalFormation": {
+   "stated_by": [
+    "Becoming.RouteFormation"
+   ],
+   "family": "F3Q",
+   "landed": "0217baa38"
+  },
+  "CompositionalTransmission": {
+   "stated_by": [
+    "Becoming.ResponseLearning"
+   ],
+   "family": "F3Q",
+   "landed": "0217baa38"
+  },
+  "AcquiredSegmentation": {
+   "stated_by": [
+    "Becoming.LearnedGrouping"
+   ],
+   "family": "F3Q",
+   "landed": "0217baa38"
+  },
+  "PositiveGroundUncertainty": {
+   "stated_by": [
+    "Becoming.PositiveGround"
+   ],
+   "family": "F3J",
+   "landed": "502c22b45"
+  },
+  "PositionedPositiveReason": {
+   "stated_by": [
+    "Becoming.PositiveGround"
+   ],
+   "family": "F3J",
+   "landed": "502c22b45"
+  },
+  "EvaluatorGrounding": {
+   "stated_by": [
+    "Becoming.ProfileReach"
+   ],
+   "family": "F3J",
+   "landed": "502c22b45"
+  },
+  "ContinuationRenewal": {
+   "stated_by": [
+    "Becoming.RenewalBound"
+   ],
+   "family": "F3J",
+   "landed": "502c22b45"
+  },
+  "OpenFutureRevision": {
+   "stated_by": [
+    "Becoming.Handoff"
+   ],
+   "family": "F3J",
+   "landed": "502c22b45"
+  },
+  "OrganizationalRuleInheritance": {
+   "stated_by": [
+    "Becoming.RuleHandoff"
+   ],
+   "family": "F3J",
+   "landed": "502c22b45"
+  },
+  "HistoryRealization": {
+   "stated_by": [
+    "Becoming.HistoryLanguages",
+    "Becoming.Joining"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryNecessity": {
+   "stated_by": [
+    "Becoming.Carriers",
+    "Becoming.Histories",
+    "Becoming.HistoryLanguages",
+    "Becoming.Labelled",
+    "GenerativeCore"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryStructure": {
+   "stated_by": [
+    "Becoming.Coverage"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryUniqueness": {
+   "stated_by": [
+    "Becoming.Coverage",
+    "Becoming.Presentations"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ContinuationConditions": {
+   "stated_by": [
+    "Becoming.HistoryLanguages"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "DynamicUnderdetermination": {
+   "stated_by": [
+    "Becoming.Carriers"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "RelationalDynamics": {
+   "stated_by": [
+    "Becoming.Carriers",
+    "Becoming.Labelled"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "DynamicSymmetry": {
+   "stated_by": [
+    "Becoming.Carriers"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "DynamicConsequences": {
+   "stated_by": [
+    "Becoming.Carriers",
+    "Becoming.Labelled"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryUniversality": {
+   "stated_by": [
+    "Becoming.Presentations"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryBranching": {
+   "stated_by": [
+    "Becoming.BranchingCorrespondence",
+    "Becoming.Granularity",
+    "Becoming.Labelled",
+    "Becoming.Likeness"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJointness": {
+   "stated_by": [
+    "Becoming.Composition",
+    "Becoming.JointCorrespondence"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryFootprints": {
+   "stated_by": [
+    "Becoming.Composition",
+    "Becoming.JointCorrespondence",
+    "Becoming.ListFootprints"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJoining": {
+   "stated_by": [
+    "Becoming.Fragments"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryLocalUnits": {
+   "stated_by": [
+    "Becoming.LocalUnits"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJoiningContexts": {
+   "stated_by": [
+    "Becoming.JoiningContexts"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryContextualStructure": {
+   "stated_by": [
+    "Becoming.Joining",
+    "Becoming.JoiningCodes",
+    "Becoming.JoiningContexts",
+    "Becoming.Presentations"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJoiningBranches": {
+   "stated_by": [
+    "Becoming.BranchingCorrespondence",
+    "Becoming.Joining",
+    "Becoming.JoiningCodes",
+    "Becoming.Likeness",
+    "Becoming.Presentations"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJoiningIncidence": {
+   "stated_by": [
+    "Becoming.Joining",
+    "Becoming.JoiningRoles"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJoiningRefinement": {
+   "stated_by": [
+    "Becoming.Joining",
+    "Becoming.JoiningRoles"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJoiningAnchors": {
+   "stated_by": [
+    "Becoming.Joining",
+    "Becoming.JoiningRoles",
+    "Becoming.Likeness"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryJoiningRegisters": {
+   "stated_by": [
+    "Becoming.Joining",
+    "Becoming.JoiningRoles"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryGranularity": {
+   "stated_by": [
+    "Becoming.Grains",
+    "Becoming.Granularity"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryGuardedPrograms": {
+   "stated_by": [
+    "Becoming.Grains",
+    "Becoming.Granularity"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "ExplanatoryGranularityBoundary": {
+   "stated_by": [
+    "Becoming.Grains",
+    "Becoming.Granularity",
+    "Becoming.Presentations"
+   ],
+   "family": "F3E",
+   "landed": "e652d079e"
+  },
+  "AlignmentInquiry": {
+   "stated_by": [
+    "Becoming.ContingentPlans"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "EffectiveCommand": {
+   "stated_by": [
+    "Becoming.Actuation"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "AcquiredCorrection": {
+   "stated_by": [
+    "Becoming.Dispatch",
+    "Becoming.TreeSearch"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "FaultTolerantCorrection": {
+   "stated_by": [
+    "Becoming.FaultEnvelopes",
+    "Becoming.Transactions"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "CorrectionReconfiguration": {
+   "stated_by": [
+    "Becoming.Reconfiguration"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "EvidenceQualifiedCorrection": {
+   "stated_by": [
+    "Becoming.PooledEnvelopes"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "FallibleInspection": {
+   "stated_by": [
+    "Becoming.WitnessRefinement"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "ChanceAdequacy": {
+   "stated_by": [
+    "Becoming.ChanceFloors",
+    "Becoming.Weighted"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  },
+  "CorrectionInfrastructure": {
+   "stated_by": [
+    "Becoming.Acceptance",
+    "Becoming.GuardHorizon"
+   ],
+   "family": "F3C",
+   "landed": "c564f508c"
+  }
+ },
+ "ring_content_in_core": {
+  "Becoming.RepairComparison": [
+   "Becoming.MatchedCourses"
+  ],
+  "Becoming.SupportGatedWebs": "F3R port-r.md joins table",
+  "Becoming.RenewalBridge": "F3R (pulse_restores, overdraw_extension, contest_extensions)",
+  "Becoming.CourseExtensionFrames": "F3R",
+  "Becoming.DephasingRuns": "F3R",
+  "Becoming.JointPhaseTraces": "F3R",
+  "Becoming.ProjectedLawTraces": "F3R",
+  "Becoming.StrictTransportRuns": "F3R",
+  "Becoming.Instances (quantum, routes/regulation readings)": "F3R"
+ },
+ "pending": {},
+ "notes": {
+  "SeedReachProcesses.reachable_living_significance": "core counterpart ProfileReach.self_good_derives_reachable_g0 (F3J)"
+ }
+}

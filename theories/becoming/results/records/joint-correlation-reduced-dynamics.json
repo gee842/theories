@@ -162,7 +162,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
       "role": "proof",
       "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
       "declarations": [
@@ -174,7 +174,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "role": "proof",
-      "sha256": "0b3c91885d4f84a47c9a7cdecda9201e52bd6b902374db4901e03306e48ccb12",
+      "sha256": "4c28156010fb69ca309f5ab44323998f200d9ed6d4912b589e22a1ac5d82b351",
       "declarations": [
         "Becoming.MachineInstances.summary_carries_law",
         "Becoming.MachineInstances.summary_every_word"
@@ -233,6 +233,12 @@
       "role": "receipt",
       "sha256": "eaecacb9f82aa5c37e86cc3f0bf8ca3b404b7e9bd82fe75effd9691660cb0a2b",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261019T001148.333281Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d30faffd5899d5180f3a2e230035c0f87ce266d959330b61aebed22411a173b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -272,7 +278,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Instances.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Instances",
       "success_pointer": "/status",
@@ -280,7 +286,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261019T001148.333281Z/verification.json",
       "sha256_pointer": "/source_sha256/MachineInstances",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -381,6 +387,10 @@
     {
       "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (JointPhase, Readout; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
       "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（JointPhase、Readout），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Instances.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. MachineInstances now states the two lemmas it took from the bridge module Instances; rebound to its receipt 20261019T001148.333281Z. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

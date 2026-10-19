@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Check the peripheral instances of the Becoming core's laws in constructed machines.
 
-`MachineInstances` imports the pure bridge `Becoming.Instances`, the core's
+`MachineInstances` imports the core's `Becoming.Assurance`, `Segmentation`, `Readout` and `Gated`, the
+periphery modules the pure bridge `Becoming.Instances` gave it (`WisdomResponseStructure`,
+`RelationalReduction`, `OrganizationalRuleInheritance`, `AcquiredSegmentation`; the bridge is in
+`lean/history/becoming/` since the F3 sweep), the core's
 `Becoming.CrossSituational` and four peripheral machine modules (`EncounterChoice`, `RetrospectiveBinding`, `GoalFormationRevision`,
 `JointPracticeContinuation`). Their definitions use standard axioms through library
-instances, so these instances are stated here rather than in the pure bridge, and their
+instances, so these instances are stated here rather than in the core, and their
 declarations may depend on `propext`, `Quot.sound` and `Classical.choice` only. The
 module is compiled with Lean 4.29.1 and no Mathlib, as the core is. Module resolution,
 declaration scanning, passed-receipt matching and the Lean step cache are those of the

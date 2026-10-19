@@ -31,7 +31,7 @@
     "zh": "按核心约定，配置保留问题所需的历史，因此把模块的历史类型取为框架的配置是对应选择，不是 Lean 结果。分类页逐模块记录其定理经桥接、因已在核心上、或经类型代入作用于脊柱，以及哪些模块有意不桥接（三个 Mathlib 叶子、具体模型）；两个 Mathlib 叶子经外围桥接 CorrectionInquiry 连接；两个更新模块由 P3b 归入运行上的更新界。",
     "en": "By the core convention a configuration retains whatever history the question needs, so taking a module's history type as a frame's configurations is a correspondence choice, not a Lean result. The classification page records, module by module, whether its theorems reach the spine by a bridge, by already being on the core, or by type substitution, and which modules are deliberately not bridged (three Mathlib leaves, concrete models); two Mathlib leaves connect through the peripheral bridge CorrectionInquiry; P3b places the two renewal modules as renewal bounds on runs."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
   "aliases": [
     "Becoming.reached_iff_closure",
     "Becoming.cutReach_iff_closure",
@@ -84,7 +84,7 @@
           "zh": "同一框架、同一 living 读法；比较方向按 GenerativeComparison 的约定翻转为 LiftBetter 的约定。",
           "en": "Same frame and `living` reading; the comparison's direction is flipped from GenerativeComparison's convention to LiftBetter's."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean"
       }
     }
   ],
@@ -186,7 +186,7 @@
   },
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
       "role": "proof",
       "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
       "declarations": [
@@ -230,7 +230,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeedReachProcesses.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SeedReachProcesses.lean",
       "role": "proof",
       "sha256": "75e9996459fe809bb91f98106fc527e85951fd20e9a71e068592fde68d63f48c",
       "declarations": [
@@ -542,7 +542,7 @@
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
@@ -675,7 +675,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SeedReachProcesses.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/SeedReachProcesses.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T191422.542444Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.SeedReachProcesses",
       "success_pointer": "/status",
@@ -1123,6 +1123,10 @@
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (5 in Becoming.Alternatives; 5 in Becoming.Bundles; 1 in Becoming.Frame; 3 in Becoming.Lexical; 3 in Becoming.Narrowing), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明。移植只是重述，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean, SeedReachProcesses.lean are in lean/history/becoming/ with their bytes, bound to the receipts that checked them. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
     }
   ]
 }

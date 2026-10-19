@@ -489,7 +489,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
       "role": "proof",
       "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
       "declarations": [
@@ -524,7 +524,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e6a7080e91391e723178e71ddab6b831bb28a91d58c8f59abf011c670a015361",
+      "sha256": "3be600e65658b806105119b89f424a256cd31a02b29a0cef9d67a7e1b75c8cf8",
       "declarations": []
     },
     {
@@ -656,7 +656,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
@@ -888,6 +888,10 @@
     },
     {
       "en": "18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: Experiment.lean, Mechanism.lean, THE-THEORY-OF-BECOMING.md, Unfolding.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

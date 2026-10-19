@@ -242,7 +242,7 @@ NP 保持原有的局部候选范围。**校准“足够接近平等”之前，
 <a id="20-这条研究线在统一理论中的完成位置--completion-within-the-unified-theory"></a>
 ## 20. 这条研究线在统一理论中的完成位置
 
-2026-10-13，P89。第17–19节的成果现已正式接入 Becoming 脊柱。[Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)不另建过程或评价模型：`Run.novel_by_handoff` 在同一 `Frame` 的实际 `Run` 上复用旧有限实现证明，`Run.relevance_by_handoff_of_unrestricted` 把其中同一个新形成见证送入 `Frame.relevance`。另两项适配声明直接调用原 `OpenFutureRevision` 的生产端与消费端，补齐以前只有审计说明的实例化。四项声明都是空公理依赖的已检查推论，不新增独立成果身份。
+2026-10-13，P89。第17–19节的成果现已正式接入 Becoming 脊柱。[Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean)不另建过程或评价模型：`Run.novel_by_handoff` 在同一 `Frame` 的实际 `Run` 上复用旧有限实现证明，`Run.relevance_by_handoff_of_unrestricted` 把其中同一个新形成见证送入 `Frame.relevance`。另两项适配声明直接调用原 `OpenFutureRevision` 的生产端与消费端，补齐以前只有审计说明的实例化。四项声明都是空公理依赖的已检查推论，不新增独立成果身份。
 
 G0 的位置按新总论更新：原定理仍可把 G0 当作显式条件使用；统一理论中，它由所声明的 `Unrestricted` 条件推出。空 Lean 公理报告检查的是这条推论，不是证明该意义条件无须根据。实际执行、有限实现证书、完成与生的对应、活的内容范围，以及意义到理由的实践条件都没有被迁移删除。
 

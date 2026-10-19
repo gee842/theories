@@ -4,13 +4,13 @@
 One relational unfolding, stated once. This directory is the Lean package `Becoming`. The canonical chapter gives the account; the unification plan gives the direction and phases.
 
 <a id="三环--three-rings"></a>
-## Three rings
+## Two rings
 
 | Ring | Contents | Constraint |
 |---|---|---|
 | Core | The foundation `GenerativeCore`, `InquirySufficiency`, `RelationalRenewal`, plus the four layers inside the package | Imports only itself; every source declaration has an empty axiom report (for constructors with fields Lean generates injectivity lemmas `injEq` that depend on `propext`; no source declaration uses them, and the checker lists them one by one); compiles from Lean's built-in prelude alone |
-| Bridge | [`Becoming.Bridge`](Becoming/Bridge.lean) and the other bridge modules, with the pure [periphery joins](#periphery-joins) | Imports the existing modules and proves that their interfaces are the core's concepts, or states their laws of the base; empty axiom report; the core does not import it |
-| Periphery | The existing ethics and dynamics modules, Mathlib leaves and their bridges [`CorrectionInquiry`](../universal-ethics/generative-capacity/CorrectionInquiry.lean), [`LearningCorrespondence`](../universal-ethics/evolution-connectionism/LearningCorrespondence.lean), Python experiments | May use any suitable tool; the direction of dependence points to the core  The [periphery joins](#periphery-joins) named `…Inherited` sit here: compiled and audited in the core checker's run and imported by nothing in the core or the bridge, they carry only the axioms they inherit from periphery theorems (`propext`, `Quot.sound`, `Classical.choice`), and the receipt reports them exactly |
+| (Bridge) | None since the F3 sweep (19 October 2026): the bridge modules and the [periphery joins](#periphery-joins) are in [`../history/becoming/`](../history/becoming/) with their bytes | The core states the content of the periphery modules they read; those modules are superseded (`SUPERSEDED` in the checker), out of the run |
+| Periphery | The existing ethics and dynamics modules, Mathlib leaves and their bridges [`CorrectionInquiry`](../universal-ethics/generative-capacity/CorrectionInquiry.lean), [`LearningCorrespondence`](../universal-ethics/evolution-connectionism/LearningCorrespondence.lean), Python experiments | May use any suitable tool; the direction of dependence points to the core |
 
 Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md). The checker enforces all three conditions on every run.
 
@@ -261,64 +261,7 @@ Each layer imports only those below it (within L2, `Becoming.Diagonal` imports `
 <a id="periphery-joins"></a>
 ## Periphery joins
 
-U2 (17 October 2026) states the laws of the periphery modules in the checker's run on the base: each module below reads a periphery structure as a process, run, trace, frame or web and states the periphery theorem's law of it, proved through that theorem. Modules whose proofs go through periphery theorems with non-empty axiom reports are named `…Inherited` and form the periphery-join ring; the others have empty axiom reports and sit on the bridge. The periphery files keep their paths and bytes. The Mathlib leaves (`CorrectionInquiry`, `LearningCorrespondence`) are not in the checker's run and are not measured. The study's [connectivity measure](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/THEOREM-CONNECTIVITY.md) gives the counts; every apart root left is classified in its register. The bridge fold (F1, 18 October 2026) moved what reaches no periphery constant into the core: `Becoming.ClassifiedBeliefProcesses`, which reads only the foundation, is a core module, and six laws of `Becoming.SupportGatedWebs` are in `Becoming.RenewalFlow` ([fold study](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-BRIDGE-FOLD.md)). The joins into the core (F2, 18 October 2026) proved three joins without the periphery: `Becoming.MoveOutcomeProcesses` and `Becoming.ContextArrivalTraces` are core modules, and the laws of reach from seeds are in `Becoming.SeedReach`; what still names a periphery constant stayed in its join or moved, name unchanged, to the `…Inherited` module.
-
-| Module | Ring | What it reads on the base |
-|---|---|---|
-| [`Becoming.GuardHorizonProcesses`](Becoming/GuardHorizonProcesses.lean) | bridge | a guard kept over a horizon: the step relation of `CorrectionInfrastructure` as a process |
-| [`Becoming.InstallationTraces`](Becoming/InstallationTraces.lean) | bridge | the installation of `EffectiveCommand` as a process: its courses are traces |
-| [`Becoming.ReconfigurationProcesses`](Becoming/ReconfigurationProcesses.lean) | bridge | reconfiguration as a process: the rearrangement step of `CorrectionReconfiguration` |
-| [`Becoming.TreeSearchRuns`](Becoming/TreeSearchRuns.lean) | bridge | tree search as runs: the scan of `AcquiredCorrection` is the run of a determined law |
-| [`Becoming.QueryTraces`](Becoming/QueryTraces.lean) | bridge | query traces: the records a course of queries delivers |
-| [`Becoming.DephasingRuns`](Becoming/DephasingRuns.lean) | bridge | dephasing and recording as determined laws |
-| [`Becoming.DrawnAmountProcesses`](Becoming/DrawnAmountProcesses.lean) | bridge | continuations drawing on one amount as steps of a process |
-| [`Becoming.ProjectedLawTraces`](Becoming/ProjectedLawTraces.lean) | bridge | projected laws on the traces of deterministic processes |
-| [`Becoming.RuleHandoffTraces`](Becoming/RuleHandoffTraces.lean) | bridge | rule handoff on the traces of the gated process |
-| [`Becoming.ExactRecordRuns`](Becoming/ExactRecordRuns.lean) | bridge | exact readings of a run's registered record |
-| [`Becoming.JoiningCodeFrames`](Becoming/JoiningCodeFrames.lean) | bridge | exact codes of a joining's frames |
-| [`Becoming.JointPhaseTraces`](Becoming/JointPhaseTraces.lean) | bridge | the phase and interaction steps of one joint configuration, as traces |
-| [`Becoming.TestCodeFrames`](Becoming/TestCodeFrames.lean) | bridge | exact codes of a frame's branching tests |
-| [`Becoming.UnitTraces`](Becoming/UnitTraces.lean) | bridge | units of the traces of a process |
-| [`Becoming.RuleNarrowingProcesses`](Becoming/RuleNarrowingProcesses.lean) | bridge | learning a rule as belief narrowed by observation |
-| [`Becoming.SeedReachProcesses`](Becoming/SeedReachProcesses.lean) | bridge | seed closures as reach in a process |
-| [`Becoming.ExtendedClaimFrames`](Becoming/ExtendedClaimFrames.lean) | bridge | frames whose claims gain a newly distinguished kind |
-| [`Becoming.ExtensionFrames`](Becoming/ExtensionFrames.lean) | bridge | generative extensions on frames: new relevant content and surviving responses |
-| [`Becoming.InterfaceTraces`](Becoming/InterfaceTraces.lean) | bridge | a probing interface is a process, and a plan's execution is a trace of it |
-| [`Becoming.ReachableFrames`](Becoming/ReachableFrames.lean) | bridge | what holds over the configurations a process reaches |
-| [`Becoming.StrictTransportRuns`](Becoming/StrictTransportRuns.lean) | bridge | strict comparisons carried along runs and reachable configurations |
-| [`Becoming.CouplingHistoryFrames`](Becoming/CouplingHistoryFrames.lean) | bridge | the coupling law's histories as traces of its frame |
-| [`Becoming.CourseExtensionFrames`](Becoming/CourseExtensionFrames.lean) | bridge | comparison of courses on the frame of courses |
-| [`Becoming.DerivationScopeProcesses`](Becoming/DerivationScopeProcesses.lean) | bridge | derivation over the scope of an inquiry, with local premises |
-| [`Becoming.DescentRenewalRuns`](Becoming/DescentRenewalRuns.lean) | bridge | renewal by descent along runs |
-| [`Becoming.FeasibleProfileTraces`](Becoming/FeasibleProfileTraces.lean) | bridge | continuation profiles of a process's feasible words |
-| [`Becoming.RuleRevisionTraces`](Becoming/RuleRevisionTraces.lean) | bridge | revised rules as actions of one process |
-| [`Becoming.SupportGatedWebs`](Becoming/SupportGatedWebs.lean) | bridge | the support-gated family's pulses and the course without the focal formation, on their webs |
-| [`Becoming.GuardHorizonProcessesInherited`](Becoming/GuardHorizonProcessesInherited.lean) | periphery join | a guard kept over a horizon: the laws of `CorrectionInfrastructure` that inherit axioms |
-| [`Becoming.InstallationTracesInherited`](Becoming/InstallationTracesInherited.lean) | periphery join | the installation of `EffectiveCommand` as a process: the laws of its steps that inherit axioms |
-| [`Becoming.TransactionTracesInherited`](Becoming/TransactionTracesInherited.lean) | periphery join | the transaction monitor of `FaultTolerantCorrection` as a process |
-| [`Becoming.DispatchProcessesInherited`](Becoming/DispatchProcessesInherited.lean) | periphery join | dispatch as a process: the delivery step of `AcquiredCorrection`, inherited |
-| [`Becoming.InspectionProcessesInherited`](Becoming/InspectionProcessesInherited.lean) | periphery join | inspection as a process: the fallible witnesses of `FallibleInspection`, inherited |
-| [`Becoming.ProbeRunsInherited`](Becoming/ProbeRunsInherited.lean) | periphery join | probing as runs: the inquiry of `EvidenceQualifiedCorrection`, inherited |
-| [`Becoming.ReconfigurationProcessesInherited`](Becoming/ReconfigurationProcessesInherited.lean) | periphery join | reconfiguration as a process: the general laws of the step, inherited |
-| [`Becoming.TreeSearchRunsInherited`](Becoming/TreeSearchRunsInherited.lean) | periphery join | tree search as runs: the general laws of the scan, inherited |
-| [`Becoming.FormationTracesInherited`](Becoming/FormationTracesInherited.lean) | periphery join | formation traces: the formation apparatus's moves as a process |
-| [`Becoming.QueryTracesInherited`](Becoming/QueryTracesInherited.lean) | periphery join | query traces and succession runs |
-| [`Becoming.TrainingProcessesInherited`](Becoming/TrainingProcessesInherited.lean) | periphery join | training processes: the acquisition learner's step as a process |
-| [`Becoming.DephasingRunsInherited`](Becoming/DephasingRunsInherited.lean) | periphery join | dephasing, recording and gates as laws: the results with inherited axioms |
-| [`Becoming.DrawnAmountProcessesInherited`](Becoming/DrawnAmountProcessesInherited.lean) | periphery join | continuations drawing on one amount: the results with inherited axioms |
-| [`Becoming.RuleHandoffTracesInherited`](Becoming/RuleHandoffTracesInherited.lean) | periphery join | rule handoff on the traces of the gated process: the results with inherited axioms |
-| [`Becoming.ExactRecordRunsInherited`](Becoming/ExactRecordRunsInherited.lean) | periphery join | exact readings of a run's registered record: the condition of resolution |
-| [`Becoming.JoiningCodeFramesInherited`](Becoming/JoiningCodeFramesInherited.lean) | periphery join | exact codes of a joining's frames: the canonical factor |
-| [`Becoming.JointPhaseTracesInherited`](Becoming/JointPhaseTracesInherited.lean) | periphery join | the phase and interaction steps of one joint configuration: the reduced summary |
-| [`Becoming.ReceptionTracesInherited`](Becoming/ReceptionTracesInherited.lean) | periphery join | acquired grouping along the traces of reception |
-| [`Becoming.MoveOutcomeProcessesInherited`](Becoming/MoveOutcomeProcessesInherited.lean) | periphery join | `PracticalReach` read off the step of a process as the core's laws of one move (`canEnsure_iff`, `summary_iff`, `steps_eq`), and the lost goal of a failed cover |
-| [`Becoming.RuleNarrowingProcessesInherited`](Becoming/RuleNarrowingProcessesInherited.lean) | periphery join | learning a rule as narrowed belief: laws through `StandardsBridge`'s list facts |
-| [`Becoming.ClassifiedFramesInherited`](Becoming/ClassifiedFramesInherited.lean) | periphery join | comparison under every classification on a frame |
-| [`Becoming.InterfaceTracesInherited`](Becoming/InterfaceTracesInherited.lean) | periphery join | selecting a listed plan on a probing interface's process |
-| [`Becoming.ReachableFramesInherited`](Becoming/ReachableFramesInherited.lean) | periphery join | a certified positive integral over a policy's scope |
-| [`Becoming.ContextArrivalTracesInherited`](Becoming/ContextArrivalTracesInherited.lean) | periphery join | where the changed history ends, through the periphery's proof |
-| [`Becoming.RuleRevisionTracesInherited`](Becoming/RuleRevisionTracesInherited.lean) | periphery join | the revising run never finishes, through the periphery's proofs |
-| [`Becoming.SupportGatedWebsInherited`](Becoming/SupportGatedWebsInherited.lean) | periphery join | recovery on the support-gated webs, through the periphery's proofs |
+U2 (17 October 2026) stated the laws of the periphery modules in the checker's run on the base, each join reading a periphery structure as a process, run, trace, frame or web; joins through periphery proofs with non-empty axiom reports were named `…Inherited`. The port (F3, 18–19 October 2026) stated that content in the core, and the sweep moved every join, with the bridge modules, to [`../history/becoming/Becoming/`](../history/becoming/Becoming/) with its bytes ([port program](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/bridge-fold/PORT-PROGRAM.md)). The checker still checks joins (`PERIPHERY_JOINS`), were one added.
 
 <a id="检查--verification"></a>
 ## Verification
@@ -327,7 +270,7 @@ U2 (17 October 2026) states the laws of the periphery modules in the checker's r
 python3 -B experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py
 ```
 
-The checker resolves the import closure, requires inherited modules to match passed receipts, compiles in dependency order with Lean 4.29.1, audits the axioms of every source declaration and of every constant Lean holds for the core closure and the bridge modules, and checks the core's three purity conditions. The receipt records the result; each run's folder in `becoming-checks/` keeps the receipt, the drivers and logs of the steps that ran, and copies of the source and checker files `main` does not hold byte for byte (from 12 October 2026; the rest are named by the receipt's `source_commit` and sha256).
+The checker resolves the import closure, requires inherited modules to match passed receipts, compiles in dependency order with Lean 4.29.1, audits the axioms of every source declaration and of every constant Lean holds for the core closure, and checks the core's three purity conditions. The receipt records the result; each run's folder in `becoming-checks/` keeps the receipt, the drivers and logs of the steps that ran, and copies of the source and checker files `main` does not hold byte for byte (from 12 October 2026; the rest are named by the receipt's `source_commit` and sha256).
 
 Each Lean step is keyed by everything it reads: the toolchain and binary, its own bytes and, through their keys, the bytes of its whole import closure. A step whose key matches one that passed earlier is not run again; its outputs and log come from a cache shared by runs and worktrees (`~/.cache/becoming-lean`, or `BECOMING_LEAN_CACHE`), so only changed modules and the modules depending on them are compiled and audited again. The receipt's `lean_steps` lists the steps run and the steps reused, each with the run it came from. `BECOMING_FRESH=1` runs every step; `LEAN_TIMEOUT` sets the seconds allowed for each Lean run. [`check_correction_inquiry.py`](../universal-ethics/generative-capacity/check_correction_inquiry.py) uses the same cache, with the Mathlib revision in its keys.
 
@@ -344,7 +287,7 @@ BECOMING_FRESH=1 BECOMING_OUT=/tmp/becoming-run \
   python3 -B experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py
 ```
 
-3. `"status": "passed"` in the last line of JSON means all of the following were checked on your machine. **Core purity**: the core's import closure is exactly the foundation and the core modules, all files of this repository (no Mathlib, no `Lean` metaprogramming). **Empty axiom reports**: `#print axioms` reports no axiom for every source declaration of the foundation, the core and the bridge (inherited periphery modules may use only `propext`, `Quot.sound` and `Classical.choice`, recorded as they are). **Prelude-only compile**: with `import Std` removed, the core closure compiles from Lean's prelude alone, warnings failing the run. **Environment audit**: every constant Lean holds for the core closure and for the bridge modules (generated constants, private declarations and unnamed instances included) depends on no axiom, the one exception being constructors' injectivity lemmas (`injEq`) on `propext`, none of them a source declaration. Also: the Lean version must be 4.29.1 and the binary's sha256 is recorded; the control examples compile.
+3. `"status": "passed"` in the last line of JSON means all of the following were checked on your machine. **Core purity**: the core's import closure is exactly the foundation and the core modules, all files of this repository (no Mathlib, no `Lean` metaprogramming). **Empty axiom reports**: `#print axioms` reports no axiom for every source declaration of the foundation and the core. **Prelude-only compile**: with `import Std` removed, the core closure compiles from Lean's prelude alone, warnings failing the run. **Environment audit**: every constant Lean holds for the core closure and for the bridge modules (generated constants, private declarations and unnamed instances included) depends on no axiom, the one exception being constructors' injectivity lemmas (`injEq`) on `propext`, none of them a source declaration. Also: the Lean version must be 4.29.1 and the binary's sha256 is recorded; the control examples compile.
 4. Environment variables: `BECOMING_FRESH=1` runs every step without the cache (the cache is outside the repository and unauthenticated, so use it for any claim made to others); `BECOMING_OUT=<dir>` writes the run folder and the receipt to that directory and leaves the repository unchanged; `BECOMING_JOBS` sets how many Lean steps run at once (default half the cores, 1 for one at a time); `LEAN_TIMEOUT` sets the seconds allowed for each Lean run (default 600; raise it on a loaded machine); `BECOMING_LEAN_CACHE` sets the cache directory (default `~/.cache/becoming-lean`); `LEAN` names the Lean binary, else what `elan which lean` finds in this folder is used, else elan's default path.
 
 The periphery checkers that use Mathlib (such as `check_correction_inquiry.py`) depend on a Mathlib project outside the repository: `SYSTEMS_MATHLIB_PROJECT`, by default `~/repos/生生不息`, with toolchain v4.30.0-rc2, not the core's v4.29.1. Its `lakefile.lean` and `lake-manifest.json` are kept byte for byte in [`../periphery-mathlib-pin/`](../periphery-mathlib-pin/README.md), pinning the Mathlib revision; the core check above does not need it.
@@ -353,7 +296,7 @@ The periphery checkers that use Mathlib (such as `check_correction_inquiry.py`) 
 ## Extending
 
 - State new formal results here; extend the core rather than build another model.
-- Existing modules keep their scope and connect through instance or equivalence theorems in `Becoming.Bridge`.
+- Existing modules keep their scope; where their content belongs to the core, it is stated in the core and the module is registered as superseded (the F3 port), rather than connected through a bridge.
 - Results needing Mathlib or other libraries live in the periphery and import the core, never the reverse. `CorrectionInquiry` is one, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too.
 
 <a id="名称--names"></a>

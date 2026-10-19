@@ -155,7 +155,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
       "role": "proof",
       "sha256": "07948aff461a1a8a72852689a35dbec9276179ac0eec265d39e8b44a1ecef0c9",
       "declarations": [
@@ -191,7 +191,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.JoiningBridge",
       "success_pointer": "/status",
@@ -247,6 +247,10 @@
     {
       "en": "18 October 2026, F3E, the port of the explanatory and dynamics family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (Joining, JoiningCodes; verdicts in port-e.md), bound to core receipt 20261018T222948.779875Z, and the canonical source is the core module. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
       "zh": "2026年10月18日，F3E 将解释与动力学族移入核心：所引声明旁加上核心陈述（Joining、JoiningCodes），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): JoiningBridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
     }
   ]
 }

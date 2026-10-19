@@ -229,7 +229,7 @@ G0 肯定实际生活及其继续生成。对同等严重且同样可避免的�
 
 新增的公开承诺是：**在基本活动片段内容完整、实际相当且无重复的范围内，完整匹配的减损可以取得充分比较效力。** 它加强了 LC 的理由强度，不由 LC 或支持恢复本身推出。片段对应还须保留累积伤害、共同后果、先行承担与权限；`scope` 不能定义成希望得到的答案。若这些前提成立，A 相对 B₁ 多避免一次完整损失，B₃ 相对 A 多避免一次，因而得到**一次不足、三次足够**的两个条件锚点。B₂ 与 A 仅检查了可逆的损失对应，不声称最终平局或唯一机会比例。
 
-[外围模块](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean)实际检查 17 项定理、45 项源声明，全部空公理报告；规范充分性仍是显式参数。骨干被三接入修复切断时，原匹配失效的控制也已检查。当前支持可用不证明完整的经验恢复；重复受损的集中即使没有额外功能损伤，也仍是可反对这项规范承诺的理由。连续恶化不能按时间格强行拆成同等片段。本次取得具体范围内的边界，未完成任意 H 的交换或整个 FR。
+[外围模块](../../../experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean)实际检查 17 项定理、45 项源声明，全部空公理报告；规范充分性仍是显式参数。骨干被三接入修复切断时，原匹配失效的控制也已检查。当前支持可用不证明完整的经验恢复；重复受损的集中即使没有额外功能损伤，也仍是可反对这项规范承诺的理由。连续恶化不能按时间格强行拆成同等片段。本次取得具体范围内的边界，未完成任意 H 的交换或整个 FR。
 
 <a id="complete-episodes-and-whole-course-judgment"></a>
 

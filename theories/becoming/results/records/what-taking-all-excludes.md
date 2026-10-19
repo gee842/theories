@@ -77,6 +77,7 @@ Aliases: `what taking all that is given excludes`, `取尽所给所排除的`, `
 
 - 18 October 2026: added (C1), on Ren's "alright, generally agree, please make your own pareto frontier decisions, and push the frontier - words are important, but i think you are capable", the AI choosing the item; study section 183; the reading is D44 of DELEGATED-CHOICES.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: THE-THEORY-OF-BECOMING.md. The claim is unchanged.
+- 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.
 
 </details>
 

@@ -211,7 +211,7 @@
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
       "detail": {
         "zh": "三接入安装实际断开共同骨干的给定设备律下，保护没有兑现且额外共同损失保留；fragile_b3_not_matching 排除原匹配。 一般规律：每个主张都依于骨干时，失去骨干的路线经严格匹配不优于任何路线（not_strictLossMatch_of_base_lost；本例 fragile_b3_better_than_none，对任何内容读法成立）。",
         "en": "When the supplied equipment law makes the three-access installation disconnect the backbone, protection fails and the common loss remains; fragile_b3_not_matching excludes the original matching. The general law: where every claim rests on the backbone, a course losing it is strictly better by matching than no course (not_strictLossMatch_of_base_lost; here fragile_b3_better_than_none, under any content reading)."
@@ -334,7 +334,7 @@
           "zh": "给定共同修复律及相应运行；充分性和生活内容对应不由 Trace 推出。",
           "en": "A common supplied repair law and its runs; Trace establishes neither sufficiency nor living-content correspondence."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean"
       }
     },
     {
@@ -374,13 +374,13 @@
     {
       "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
       "role": "statement",
-      "sha256": "884daa2a141ab5baaa288ea2aec1fe0ec2c65f796709aa0f916263fcaaa2adcd",
+      "sha256": "df234b74a833ae0a70f3daa76fc342afeb02b467c24ebdba9ea6e0ec88b8b30d",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
       "role": "review",
-      "sha256": "dc8511c092a0fec03eaf549938f3c8c851b7fe1bd8acdac11bf9e82c48942776",
+      "sha256": "55840b0957632f2c2689534ee1cc4e0c926e820fa893067318de30671122ac56",
       "declarations": []
     },
     {
@@ -396,7 +396,7 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
       "role": "proof",
       "sha256": "c4ab73db434b95c6a49415326aca0670b55166e1735a2baa4ce83c6177f8ba8d",
       "declarations": [
@@ -592,7 +592,7 @@
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/RepairComparison.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RepairComparison",
       "success_pointer": "/status",
@@ -687,6 +687,10 @@
     {
       "en": "19 October 2026, F3R, the port of the renewal, loss, systems and wisdom family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core statements of the cited declarations are added beside them (LossMatching, MatchedCourses, StrictTransport; verdicts in port-r.md), bound to core receipt 20261018T190110.587858Z. The periphery references stay until the sweep retires their modules. No new result; the claim is unchanged.",
       "zh": "2026年10月19日，F3R 将更新、损失、系统与智慧族移入核心：所引声明旁加上核心陈述（LossMatching、MatchedCourses、StrictTransport），绑定到核心回执；外围引用保留到清扫退役其模块。无新结果，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): RepairComparison.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. Re-pointed after reading the change (BASIC-CONFLICT-JUDGMENT.md: the fold; CROSSED-CLAIMS-ARGUMENT.md: the fold). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。读过改动后重新绑定或重新指向。论断不变。"
     }
   ],
   "text_versions": [

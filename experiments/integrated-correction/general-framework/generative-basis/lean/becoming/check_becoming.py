@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One checker for the Becoming package: the formal core and its bridge.
+"""One checker for the Becoming package: the formal core.
 
 The package names modules by path (`Becoming/Frame.lean` is `Becoming.Frame`); other
 modules are found by file name under the Lean root. The checker resolves the import
@@ -13,21 +13,18 @@ compiles from Lean's prelude alone (the foundation's `import Std` line is remove
 that run). The constants Lean generates in the closure are audited as well: the only
 ones depending on an axiom are the injectivity lemmas of constructors with fields
 (`injEq`), on `propext`, which no source declaration uses; the receipt lists them.
-The bridge imports existing modules to show that their interfaces are the core's;
-nothing in the core imports it, and its declarations also have empty axiom reports. The
-constants of the bridge modules themselves are audited the same way (their imports may use
-axioms; only the bridge's own constants count): empty, apart from generated `injEq` on `propext`.
-Superseded periphery modules (`SUPERSEDED`, since F3) are modules whose every theorem the core states:
-they keep their bytes, stay out of the run, and the receipt records each one's sha256 and the core
-modules stating it.
-Periphery joins (`PERIPHERY_JOINS`, since U2) state periphery theorems' laws of the base through
-periphery roots whose own reports are not empty; nothing in the core or the bridge imports them, and
-each of their declarations may carry only the axioms it inherits (propext, Quot.sound,
-Classical.choice), recorded exactly.
+Since the F3 sweep (19 October 2026) the package has no bridge and no periphery join: the core states
+the content of every periphery module that was in the run (`SUPERSEDED`), and the bridge and join
+files are in `lean/history/becoming/` with their bytes, checked by the receipts before the sweep. A
+superseded module keeps its bytes, stays out of the run (the run asserts that nothing compiled here
+imports it), and the receipt records its sha256 and the core modules stating it. The checker still
+checks a bridge (`BRIDGE`: modules importing existing modules to show that their interfaces are the
+core's, with empty axiom reports and their own constants audited) or periphery joins
+(`PERIPHERY_JOINS`: declarations carrying only the axioms they inherit), were one added.
 The declaration scanner reads every declaration outside comments and strings, at any
 indentation and with any modifiers; private declarations and unnamed instances, which cannot
 be audited by name, are listed in the receipt (`not_audited_by_name`) and, in the core closure
-and the bridge, covered by the environment audits. An inherited module is recorded with the
+(and a bridge, were there one), covered by the environment audits. An inherited module is recorded with the
 passed receipts that map its name or path to its current sha256 (`inherited_receipts`).
 
 Lean is `LEAN` if set, else what `elan which lean` finds in this folder (its `lean-toolchain`
@@ -71,7 +68,7 @@ import check as audit_support  # noqa: E402
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the base (`Becoming.World`, the one unfolding, prelude only), the four
-# core layers and their root, then the bridge.
+# core layers and their root.
 CORE = ["Becoming.World", "Becoming.Frame", "Becoming.Labelled", "Becoming.Inquiry", "Becoming.Derivation", "Becoming.ClassifiedBeliefProcesses", "Becoming.MoveOutcomeProcesses", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.ContextArrivalTraces", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Irreversibility", "Becoming.LawAlongRun", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OrderNormal", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
         "Becoming.Substitution",
@@ -87,45 +84,96 @@ CORE = ["Becoming.World", "Becoming.Frame", "Becoming.Labelled", "Becoming.Inqui
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback", "Becoming.EdgeClosure", "Becoming.SeedReach", "Becoming.ScopedReach",
         "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.SelectionGap", "Becoming.SelectionReach", "Becoming.SelectionPool", "Becoming.PoolResponse", "Becoming.LawThroughCoupling", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Learnable", "Becoming.Assurance", "Becoming.AssurancePlans", "Becoming.Integers", "Becoming.Segmentation", "Becoming.Readout", "Becoming.SummaryFutures", "Becoming.Dephasing", "Becoming.ProjectedLaws", "Becoming.JointPhase", "Becoming.Gated", "Becoming.Viability", "Becoming.Keeping", "Becoming.ListTests", "Becoming.Naturals", "Becoming.ContingentPlans", "Becoming.Actuation", "Becoming.TreeSearch", "Becoming.Dispatch", "Becoming.FaultEnvelopes", "Becoming.Transactions", "Becoming.Reconfiguration", "Becoming.PooledEnvelopes", "Becoming.WitnessRefinement", "Becoming.ChanceFloors", "Becoming.IntegerOrder", "Becoming.Acceptance", "Becoming.GuardHorizon", "Becoming.Countdown", "Becoming.Lasting", "Becoming.Copying", "Becoming.Retrodiction", "Becoming.CrossSituational", "Becoming.Likeness", "Becoming.Distinguishing", "Becoming.Composition", "Becoming.Joining", "Becoming.Granularity", "Becoming.HistoryLanguages", "Becoming.Coverage", "Becoming.Presentations", "Becoming.Carriers", "Becoming.BranchingCorrespondence", "Becoming.JointCorrespondence", "Becoming.ListFootprints", "Becoming.Fragments", "Becoming.LocalUnits", "Becoming.JoiningContexts", "Becoming.JoiningCodes", "Becoming.JoiningRoles", "Becoming.Grains", "Becoming.Postponement", "Becoming.Boundaries", "Becoming.Novelty", "Becoming.Reading", "Becoming.Readings", "Becoming.Coupling", "Becoming.Sensitivity", "Becoming.Tail", "Becoming.Courses", "Becoming.Parting", "Becoming.Onward", "Becoming.Typicality", "Becoming.Situations", "Becoming.Propagation", "Becoming.Loops", "Becoming.Remainder", "Becoming.Routes", "Becoming.Closing", "Becoming.Thresholds", "Becoming.Observation", "Becoming.LevelCoupling", "Becoming.Interleavings", "Becoming.CensusCounts", "Becoming.CensusBinding", "Becoming.Frequency", "Becoming.Gain", "Becoming.Gluing", "Becoming.Relevance", "Becoming.Lexical", "Becoming.Frontier", "Becoming.ScoreRepresentation", "Becoming.Alternatives", "Becoming.Bundles", "Becoming.ActivationCapacity", "Becoming.Narrowing", "Becoming.PositiveGround", "Becoming.ProfileReach", "Becoming.RenewalBound", "Becoming.Handoff", "Becoming.RuleHandoff", "Becoming.Runs", "Becoming.CourseWorlds", "Becoming.LearnableRuns", "Becoming.PartialReadout", "Becoming.CodeAcquisition", "Becoming.RouteFormation", "Becoming.ResponseLearning", "Becoming.LearnedGrouping", "Becoming.Unrolling", "Becoming.Labels", "Becoming.ParityReadings", "Becoming.FinerTraces", "Becoming.FormedLoops", "Becoming.AttractionRuns", "Becoming.BoundaryFlows", "Becoming.BoundaryWorlds", "Becoming.CandidateRuns", "Becoming.CaptureWorlds", "Becoming.CensusWebs", "Becoming.ContactCourses", "Becoming.ContextualRuns", "Becoming.ContinuingRuns", "Becoming.CopyCourses", "Becoming.CountdownCourses", "Becoming.CounterfactualRuns", "Becoming.CouplingTraces", "Becoming.CourseRoles", "Becoming.DependenceWebs", "Becoming.DiagonalRuns", "Becoming.ExchangeFlows", "Becoming.HorizonWebs", "Becoming.IdentificationRuns", "Becoming.JointPlanFrames", "Becoming.LastingRuns", "Becoming.LearningRuns", "Becoming.LevelWebs", "Becoming.ListedOutcomeFrames", "Becoming.ListedWebs", "Becoming.MoveRuns", "Becoming.OrderWorlds", "Becoming.PassageWorlds", "Becoming.RecurrenceRuns", "Becoming.ReducedRuns", "Becoming.ReferencePlanTraces", "Becoming.RetrodictionRuns", "Becoming.RevisionRuns", "Becoming.RouteTraces", "Becoming.SeekingRuns", "Becoming.Enough", "Becoming.Settling", "Becoming.LastChange", "Becoming.SelectionRuns", "Becoming.SensitivityWebs", "Becoming.SituationTraces", "Becoming.StockTraces", "Becoming.StrengthFlows", "Becoming.TailRuns", "Becoming.TallyWorlds", "Becoming.TypicalRuns", "Becoming.WeightedTraces", "Becoming"]
-BRIDGE = ["Becoming.Bridge", "Becoming.CompositionBridge", "Becoming.JoiningBridge", "Becoming.GranularityBridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge", "Becoming.CoursesBridge",
-    # U2 (17 October 2026): pure joins of the periphery to the base
-    "Becoming.GuardHorizonProcesses", "Becoming.InstallationTraces",
-    "Becoming.ReconfigurationProcesses", "Becoming.TreeSearchRuns", "Becoming.QueryTraces",
-    "Becoming.DephasingRuns", "Becoming.DrawnAmountProcesses", "Becoming.ProjectedLawTraces",
-    "Becoming.RuleHandoffTraces", "Becoming.ExactRecordRuns", "Becoming.JoiningCodeFrames",
-    "Becoming.JointPhaseTraces", "Becoming.TestCodeFrames", "Becoming.UnitTraces",
-    "Becoming.RuleNarrowingProcesses",
-    "Becoming.SeedReachProcesses", "Becoming.ExtendedClaimFrames", "Becoming.ExtensionFrames",
-    "Becoming.InterfaceTraces", "Becoming.ReachableFrames", "Becoming.StrictTransportRuns",
-    "Becoming.CouplingHistoryFrames", "Becoming.CourseExtensionFrames",
-    "Becoming.DerivationScopeProcesses", "Becoming.DescentRenewalRuns",
-    "Becoming.FeasibleProfileTraces", "Becoming.RuleRevisionTraces", "Becoming.SupportGatedWebs"]
+# The bridge: emptied by the F3 sweep (19 October 2026). Every bridge and pure join module is in
+# lean/history/becoming/Becoming/ with its bytes, checked by the receipts before the sweep; the core
+# states the content of the periphery modules they read (SUPERSEDED).
+BRIDGE = []
 SPINE = CORE + BRIDGE
 # Periphery joins (U2, 17 October 2026): modules stating periphery theorems' laws of the base through
-# periphery roots whose own axiom reports are not empty. They are compiled and audited in this run and
-# imported by nothing in the core or the bridge; each declaration may carry only axioms it inherits
-# (propext, Quot.sound, Classical.choice), reported exactly in the receipt.
-PERIPHERY_JOINS = [
-    "Becoming.GuardHorizonProcessesInherited", "Becoming.InstallationTracesInherited",
-    "Becoming.TransactionTracesInherited", "Becoming.DispatchProcessesInherited",
-    "Becoming.InspectionProcessesInherited", "Becoming.ProbeRunsInherited",
-    "Becoming.ReconfigurationProcessesInherited", "Becoming.TreeSearchRunsInherited",
-    "Becoming.FormationTracesInherited", "Becoming.QueryTracesInherited",
-    "Becoming.TrainingProcessesInherited", "Becoming.DephasingRunsInherited",
-    "Becoming.DrawnAmountProcessesInherited", "Becoming.RuleHandoffTracesInherited",
-    "Becoming.ExactRecordRunsInherited", "Becoming.JoiningCodeFramesInherited",
-    "Becoming.JointPhaseTracesInherited", "Becoming.ReceptionTracesInherited",
-    "Becoming.MoveOutcomeProcessesInherited", "Becoming.RuleNarrowingProcessesInherited",
-    "Becoming.ClassifiedFramesInherited", "Becoming.InterfaceTracesInherited",
-    "Becoming.ReachableFramesInherited", "Becoming.ContextArrivalTracesInherited",
-    "Becoming.RuleRevisionTracesInherited", "Becoming.SupportGatedWebsInherited"]
+# periphery roots whose own axiom reports are not empty. Emptied by the F3 sweep (19 October 2026)
+# with the bridge; each declaration of a join, were one added, may carry only axioms it inherits.
+PERIPHERY_JOINS = []
 CHECKED = SPINE + PERIPHERY_JOINS
 # Superseded periphery modules (F3, 18 October 2026): modules whose every theorem the core states.
 # Each keeps its path and bytes, so earlier receipts stay re-checkable and files outside the run that
 # import it still compile; it is out of this run: nothing compiled here imports it, which the run
 # asserts. Each maps to the core modules that state its content (its records' canonical source).
 SUPERSEDED = {
+    "AcquiredCorrection": ["Becoming.Dispatch", "Becoming.TreeSearch"],
+    "AcquiredSegmentation": ["Becoming.LearnedGrouping"],
+    "AlignmentDirection": ["Becoming.Frontier"],
+    "AlignmentInquiry": ["Becoming.ContingentPlans"],
+    "BecomingCompatibility": ["Becoming.ContextArrivalTraces"],
+    "BecomingReversibility": ["Becoming.Irreversibility"],
+    "ChanceAdequacy": ["Becoming.ChanceFloors", "Becoming.Weighted"],
+    "ClassificationRobustJudgment": ["Becoming.Frontier", "Becoming.Lexical"],
+    "CompositionalAcquisition": ["Becoming.CodeAcquisition"],
+    "CompositionalFormation": ["Becoming.RouteFormation"],
+    "CompositionalTransmission": ["Becoming.ResponseLearning"],
+    "ConcernExtension": ["Becoming.Lexical"],
+    "ContextualWisdom": ["Becoming.AssurancePlans"],
+    "ContinuationConditions": ["Becoming.HistoryLanguages"],
+    "ContinuationRenewal": ["Becoming.RenewalBound"],
+    "CorePredication": ["Becoming.AssurancePlans"],
+    "CorrectionInfrastructure": ["Becoming.Acceptance", "Becoming.GuardHorizon"],
+    "CorrectionReconfiguration": ["Becoming.Reconfiguration"],
+    "CutCoverageAudit": ["Becoming.SeedReach"],
+    "DerivedHistoryLaw": ["Becoming.SummaryFutures"],
+    "DynamicConsequences": ["Becoming.Carriers", "Becoming.Labelled"],
+    "DynamicSymmetry": ["Becoming.Carriers"],
+    "DynamicUnderdetermination": ["Becoming.Carriers"],
+    "EffectiveCommand": ["Becoming.Actuation"],
+    "EvaluatorGrounding": ["Becoming.ProfileReach"],
+    "EvidenceQualifiedCorrection": ["Becoming.PooledEnvelopes"],
+    "ExplanatoryBranching": ["Becoming.BranchingCorrespondence", "Becoming.Granularity", "Becoming.Labelled", "Becoming.Likeness"],
+    "ExplanatoryContextualStructure": ["Becoming.Joining", "Becoming.JoiningCodes", "Becoming.JoiningContexts", "Becoming.Presentations"],
+    "ExplanatoryFootprints": ["Becoming.Composition", "Becoming.JointCorrespondence", "Becoming.ListFootprints"],
+    "ExplanatoryGranularity": ["Becoming.Grains", "Becoming.Granularity"],
+    "ExplanatoryGranularityBoundary": ["Becoming.Grains", "Becoming.Granularity", "Becoming.Presentations"],
+    "ExplanatoryGuardedPrograms": ["Becoming.Grains", "Becoming.Granularity"],
+    "ExplanatoryJoining": ["Becoming.Fragments"],
+    "ExplanatoryJoiningAnchors": ["Becoming.Joining", "Becoming.JoiningRoles", "Becoming.Likeness"],
+    "ExplanatoryJoiningBranches": ["Becoming.BranchingCorrespondence", "Becoming.Joining", "Becoming.JoiningCodes", "Becoming.Likeness", "Becoming.Presentations"],
+    "ExplanatoryJoiningContexts": ["Becoming.JoiningContexts"],
+    "ExplanatoryJoiningIncidence": ["Becoming.Joining", "Becoming.JoiningRoles"],
+    "ExplanatoryJoiningRefinement": ["Becoming.Joining", "Becoming.JoiningRoles"],
+    "ExplanatoryJoiningRegisters": ["Becoming.Joining", "Becoming.JoiningRoles"],
+    "ExplanatoryJointness": ["Becoming.Composition", "Becoming.JointCorrespondence"],
+    "ExplanatoryLocalUnits": ["Becoming.LocalUnits"],
+    "ExplanatoryNecessity": ["Becoming.Carriers", "Becoming.Histories", "Becoming.HistoryLanguages", "Becoming.Labelled", "GenerativeCore"],
     "ExplanatoryResiduals": ["Becoming.Granularity"],
+    "ExplanatoryStructure": ["Becoming.Coverage"],
+    "ExplanatoryUniqueness": ["Becoming.Coverage", "Becoming.Presentations"],
+    "ExplanatoryUniversality": ["Becoming.Presentations"],
+    "FallibleInspection": ["Becoming.WitnessRefinement"],
+    "FaultTolerantCorrection": ["Becoming.FaultEnvelopes", "Becoming.Transactions"],
+    "GeneratedPaths": ["Becoming.AssurancePlans"],
+    "GenerativeClosure": ["Becoming.Derivation"],
+    "GenerativeComparison": ["Becoming.Alternatives", "Becoming.Metaethics"],
+    "GenerativeLossComparison": ["Becoming.StrictTransport"],
+    "HistoryRealization": ["Becoming.HistoryLanguages", "Becoming.Joining"],
+    "JointContinuationClassification": ["Becoming.Bundles"],
+    "JointInterpretation": ["Becoming.Derivation"],
+    "KnowledgeCorrespondence": ["Becoming.PartialReadout"],
+    "OpenFutureRevision": ["Becoming.Handoff"],
+    "OperativeCoherence": ["Becoming.Dephasing"],
+    "OrganizationalRuleInheritance": ["Becoming.RuleHandoff"],
+    "PositionedPositiveReason": ["Becoming.PositiveGround"],
+    "PositiveGroundUncertainty": ["Becoming.PositiveGround"],
+    "PracticalJudgment": ["Becoming.Frontier", "Becoming.Lexical"],
+    "PracticalReach": ["Becoming.MoveOutcomeProcesses"],
+    "ProtectionPriorityRival": ["Becoming.ScoreRepresentation"],
+    "RelationalBecoming": ["Becoming.ActivationCapacity"],
+    "RelationalDynamics": ["Becoming.Carriers", "Becoming.Labelled"],
+    "RelationalGrounding": ["Becoming.Bundles"],
+    "RelationalOrganization": ["Becoming.Frontier"],
+    "RelationalReduction": ["Becoming.JointPhase"],
+    "RenewalComparison": ["Becoming.ActiveReading"],
+    "RenewalRecovery": ["Becoming.SupportRecovery"],
+    "StandardsBridge": ["Becoming.Narrowing"],
+    "SystemsOrganization": ["Becoming.ProjectedLaws"],
+    "WholeGroundCoverage": ["Becoming.ScopedReach", "Becoming.SeedReach"],
+    "WisdomResponseStructure": ["Becoming.AssurancePlans"],
 }
 PURE = FOUNDATION + CORE
 RECEIPT = HERE / "becoming-verification.json"
@@ -2199,7 +2247,7 @@ def declarations(data):
     return scanned(data)["declarations"]
 
 
-CONTROLS = """import Becoming.Bridge
+CONTROLS = """import Becoming
 open Becoming Generative Generative.InquirySufficiency
 
 -- The full premise set is consistent: the model satisfies seed, both neutralities and connection.
@@ -2241,7 +2289,7 @@ theorem grow_reason : ∀ p, access p (.respond ()) → routeReason p (.respond 
     (.respond ()) grow_sound
 
 -- The continuation instance is nonvacuous: a reached configuration realizes the living claim.
-example : JointContinuationClassification.Jointly (grow.continuations false) (fun _ => True) :=
+example : Jointly grow (Reach grow.P false) (fun _ => True) :=
   ⟨true, Reach.of_step (a := ()) ⟨rfl, rfl⟩, fun _ _ => rfl⟩
 
 -- The common-condition discharge is nonvacuous: in `Renewable`, every formation participates.
@@ -2307,7 +2355,7 @@ def main():
         assert not set(SUPERSEDED) & set(order), ("superseded module in the run", sorted(set(SUPERSEDED) & set(order)))
         for name, stated_by in SUPERSEDED.items():
             assert len(index.get(name, [])) == 1, ("superseded module not found once", name)
-            assert stated_by and all(m in CORE for m in stated_by), ("superseded module not stated by the core", name, stated_by)
+            assert stated_by and all(m in CORE + FOUNDATION for m in stated_by), ("superseded module not stated by the core", name, stated_by)
         receipt["superseded_modules"] = {
             name: {"source_path": str(index[name][0].relative_to(LEAN_ROOT)),
                    "source_sha256": audit_support.digest(index[name][0].read_bytes()),
@@ -2415,10 +2463,11 @@ def main():
             bridge_environment = ENVIRONMENT_AUDIT.format(
                 imports="\n".join("import " + name for name in BRIDGE),
                 modules=", ".join("`" + name for name in BRIDGE))
-            tasks["bridge environment"] = (compiled(bridge_environment),
-                                           driver_step("BridgeEnvironmentAudit.lean", bridge_environment))
+            if BRIDGE:
+                tasks["bridge environment"] = (compiled(bridge_environment),
+                                               driver_step("BridgeEnvironmentAudit.lean", bridge_environment))
             tasks["controls"] = (compiled(CONTROLS), driver_step("Controls.lean", CONTROLS))
-            sequence += ["EnvironmentAudit.log", "BridgeEnvironmentAudit.log", "Controls.log"]
+            sequence += ["EnvironmentAudit.log"] + (["BridgeEnvironmentAudit.log"] if BRIDGE else []) + ["Controls.log"]
             # The core needs nothing beyond Lean's prelude.
             bare = work / "prelude-only"
             bare.mkdir()
@@ -2475,7 +2524,8 @@ def main():
             constants, generated = environment_audit(outputs["environment"], core_closure)
             receipt["core_closure_constants"] = constants
             receipt["generated_axiom_dependencies"] = generated
-            constants, generated = environment_audit(outputs["bridge environment"], BRIDGE)
+            constants, generated = (environment_audit(outputs["bridge environment"], BRIDGE)
+                                    if BRIDGE else ({}, {}))
             receipt["bridge_constants"] = constants
             receipt["bridge_generated_axiom_dependencies"] = generated
             receipt["core_compiles_from_prelude"] = True

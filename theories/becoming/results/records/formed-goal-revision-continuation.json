@@ -65,7 +65,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "role": "proof",
-      "sha256": "0b3c91885d4f84a47c9a7cdecda9201e52bd6b902374db4901e03306e48ccb12",
+      "sha256": "4c28156010fb69ca309f5ab44323998f200d9ed6d4912b589e22a1ac5d82b351",
       "declarations": [
         "Becoming.MachineInstances.cycle_eq",
         "Becoming.MachineInstances.cycles_iff",
@@ -106,6 +106,12 @@
       "role": "receipt",
       "sha256": "9529958e4e9e29d9acd9ebff1dbe6cc734739f80577a0c75b623f85840ea2e79",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261019T001148.333281Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d30faffd5899d5180f3a2e230035c0f87ce266d959330b61aebed22411a173b",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -118,7 +124,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261014T092451.420909Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261019T001148.333281Z/verification.json",
       "sha256_pointer": "/source_sha256/MachineInstances",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -200,6 +206,10 @@
     },
     {
       "en": "18 October 2026, the N1 renaming (Ren: \"Renames, full scope\"): BECOMING-RENEWAL-READING.md changed by the renaming (identifiers renamed; the chapter's glossary gains a table of retired Lean names; the renewal study gains section 172). Read the change: it touches no statement of this record; re-pointed, the claim is unchanged."
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): MachineInstances now states the two lemmas it took from the bridge module Instances; rebound to its receipt 20261019T001148.333281Z. The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

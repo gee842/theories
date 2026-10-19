@@ -92,7 +92,7 @@
           "zh": "同一有界清单、同一新形成见证、原执行与交接条件；Unrestricted 保持显式。",
           "en": "The same bounded inventory and novel witness, the inherited execution and handoff conditions, with Unrestricted explicit."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean"
       }
     }
   ],
@@ -225,7 +225,7 @@
     {
       "path": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md",
       "role": "statement",
-      "sha256": "f5a3790f07f1685825c92326a6b70aa04e65ea597fa02b3646410c8c09565f39",
+      "sha256": "880ec574a456390f71f08dd09b7b5471740f603dd724d3771aa7e508501d471f",
       "declarations": []
     },
     {
@@ -235,7 +235,7 @@
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
       "role": "proof",
       "sha256": "1c90a7f2788e21264c20a65e979ead06c0b3c5b4ce1d0b2831fe452f060eab36",
       "declarations": [
@@ -336,7 +336,7 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
@@ -431,6 +431,10 @@
     {
       "en": "18 October 2026, F3J, the port of the judgment and comparison family into the core (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): the core counterparts of the cited periphery and bridge declarations are cited (14 in Becoming.Handoff; 1 in Becoming.PositiveGround; 1 in Becoming.RenewalBound), graded in development/bridge-fold/port-j.md; the periphery stays cited until the sweep retires it. Canonical source moved from OpenFutureRevision.lean to Handoff.lean. A port restates; the claim is unchanged.",
       "zh": "2026年10月18日，F3J 将判断与比较族移入核心：引用其核心对应声明，规范来源随之移动。移植只是重述，论断不变。"
+    },
+    {
+      "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. Re-pointed after reading the change (CHOICE-AND-GENERATIVE-CONTEXT.md: the fold). The claim is unchanged.",
+      "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。读过改动后重新绑定或重新指向。论断不变。"
     }
   ]
 }

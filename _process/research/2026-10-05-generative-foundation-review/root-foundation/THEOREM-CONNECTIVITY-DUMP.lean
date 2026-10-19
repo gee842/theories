@@ -1,44 +1,8 @@
 import Lean
 import Becoming
-import Becoming.Bridge
-import Becoming.CompositionBridge
-import Becoming.JoiningBridge
-import Becoming.GranularityBridge
-import Becoming.RepairComparison
-import Becoming.Instances
-import Becoming.RenewalBridge
-import Becoming.CoursesBridge
-import Becoming.GuardHorizonProcesses
-import Becoming.InstallationTraces
-import Becoming.ReconfigurationProcesses
-import Becoming.TreeSearchRuns
-import Becoming.QueryTraces
-import Becoming.DephasingRuns
-import Becoming.DrawnAmountProcesses
-import Becoming.ProjectedLawTraces
-import Becoming.RuleHandoffTraces
-import Becoming.ExactRecordRuns
-import Becoming.JoiningCodeFrames
-import Becoming.JointPhaseTraces
-import Becoming.TestCodeFrames
-import Becoming.UnitTraces
 import Becoming.MoveOutcomeProcesses
-import Becoming.RuleNarrowingProcesses
-import Becoming.SeedReachProcesses
-import Becoming.ExtendedClaimFrames
-import Becoming.ExtensionFrames
-import Becoming.InterfaceTraces
-import Becoming.ReachableFrames
-import Becoming.StrictTransportRuns
 import Becoming.ClassifiedBeliefProcesses
 import Becoming.ContextArrivalTraces
-import Becoming.CouplingHistoryFrames
-import Becoming.CourseExtensionFrames
-import Becoming.DerivationScopeProcesses
-import Becoming.DescentRenewalRuns
-import Becoming.FeasibleProfileTraces
-import Becoming.RuleRevisionTraces
-import Becoming.SupportGatedWebs
 open Lean
 
 /-!
@@ -47,9 +11,9 @@ open Lean
 Run by `THEOREM-CONNECTIVITY.py` against the spine's compiled modules restored from the
 checker's cache; it reads the environment and declares nothing.
 
-Every constant of every tracked module (the modules of the spine run: foundation, core, bridge
-and the inherited modules the bridge imports; that is, every module not rooted at `Init`, `Std`,
-`Lean` or `Lake`) is written as one JSON line to the file named by `THEOREM_CONNECTIVITY_OUT`:
+Every constant of every tracked module (the modules of the spine run: the foundation and the core,
+with a bridge and the modules it imports were there one; that is, every module not rooted
+at `Init`, `Std`, `Lean` or `Lake`) is written as one JSON line to the file named by `THEOREM_CONNECTIVITY_OUT`:
 its name `n`, module `m`, kind `k`, the tracked constants its type uses `t`, and `v`, the tracked
 constants its value uses (for an inductive, its constructors; for a constructor, its inductive).
 -/

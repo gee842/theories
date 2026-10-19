@@ -102,6 +102,7 @@ Aliases: `law through coupling`, `经耦合的规律`, `criterion up to a relati
 
 - 18 October 2026: added (G4), on Ren's "Yes: claim G4 on the board — the criterion along one run with Becoming.Testing's registration as the projection — and prove it in scratch while the queue runs."; study section 185.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. This record's live fields are read in the adopted words; its id is unchanged. Changed by the pass, in docstrings or prose only: LawAlongRun.lean, Likeness.lean, THE-THEORY-OF-BECOMING.md, Testing.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
+- 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): Re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: section 9's receipt, counts, rings and connectivity follow the final sweep's run (no bridge, no join, 75 superseded modules); sentences of sections 6 and 8 that named bridge declarations name their core statements). The claim is unchanged.
 
 </details>
 
