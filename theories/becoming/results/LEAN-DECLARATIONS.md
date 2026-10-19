@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 289 | 11,224 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 292 | 11,269 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -420,6 +420,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Histories.lean](lean-declarations/becoming-core.md#module-41f2b00bb90e) | Becoming pure core |
 | [HistoryIdeals.lean](lean-declarations/becoming-core.md#module-53b317abd0cf) | Becoming pure core |
 | [HistoryIdeals.lean](lean-declarations/abstraction.md#module-81928aacbe61) | Abstraction, applicability and constitution |
+| [HistoryIdealsTraces.lean](lean-declarations/becoming-core.md#module-7efc10e14cbe) | Becoming pure core |
 | [HistoryLanguages.lean](lean-declarations/becoming-core.md#module-9e9246f66d1f) | Becoming pure core |
 | [HistoryRealization.lean](lean-declarations/core.md#module-a7d9b0de6d97) | Generative core and relational structure |
 | [Horizon.lean](lean-declarations/becoming-core.md#module-35179900d759) | Becoming pure core |
@@ -533,6 +534,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [MoveRuns.lean](lean-declarations/becoming-core.md#module-ff714cb23467) | Becoming pure core |
 | [MutualGrounding.lean](lean-declarations/core.md#module-a9df0fda7b92) | Generative core and relational structure |
 | [Narrowing.lean](lean-declarations/becoming-core.md#module-1e3a473d40a1) | Becoming pure core |
+| [NarrowingRuns.lean](lean-declarations/becoming-core.md#module-98ae144b1c2c) | Becoming pure core |
 | [NativePacketCases.lean](lean-declarations/inquiry.md#module-08a4b3aa7401) | Attainable inquiry, contact and process laws |
 | [NativePacketProcess.lean](lean-declarations/inquiry.md#module-a594aff718eb) | Attainable inquiry, contact and process laws |
 | [NativePortContinuation.lean](lean-declarations/renewal.md#module-948079a4c2d6) | Support and renewal |
@@ -911,4 +913,5 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Withholding.lean](lean-declarations/becoming-core.md#module-f047a0ccf338) | Becoming pure core |
 | [WitnessHull.lean](lean-declarations/abstraction.md#module-72d18a9b2453) | Abstraction, applicability and constitution |
 | [WitnessRefinement.lean](lean-declarations/becoming-core.md#module-0717096c6252) | Becoming pure core |
+| [WitnessRefinementRuns.lean](lean-declarations/becoming-core.md#module-14e9a16c1bc9) | Becoming pure core |
 | [World.lean](lean-declarations/becoming-core.md#module-7d8b73829c63) | Becoming pure core |

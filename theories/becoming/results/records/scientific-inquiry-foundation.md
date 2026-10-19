@@ -124,6 +124,7 @@ Aliases: —
 - 19 October 2026, O1: progress entry for the formal side of the demarcation comparison (record what-a-finite-stretch-verifies, study section 205). The target, its status and its next step are unchanged: the comparison on actual inquiries remains.
 - 19 October 2026, O1 and O2 (what a finite stretch verifies; what a method comes to say in the limit): SCIENTIFIC-PHILOSOPHY.md re-pointed after reading the change (SCIENTIFIC-PHILOSOPHY.md: O1 added two sentences on the form of insulation after the demarcation paragraph's sentence on systematic insulation). The claim is unchanged.
 - 19 October 2026, RO (the Chinese sources on the spine): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: RO added a study section). The claim is unchanged.
+- 19 October 2026, U5 (general laws read on the base): BECOMING-RENEWAL-READING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: U5 added study section 208). The claim is unchanged.
 - 3 rebinding entries (2026-10-14 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](scientific-inquiry-foundation.json).
 
 <a id="earlier-text--早期文本"></a>

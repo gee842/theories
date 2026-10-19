@@ -7,12 +7,12 @@
 
 Editable record: [fallible-witness-diagnosability.json](fallible-witness-diagnosability.json) · [Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-19T13:38:06+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 <a id="主张-claim"></a>
 ## Claim
 
-Two different Boolean answers cannot both be compatible with any complete report iff their admitted fault envelopes are CrossSeparated.
+Two different Boolean answers cannot both be compatible with any complete report iff their admitted fault envelopes are CrossSeparated. Read on the process of inspection for every roster (Becoming.WitnessRefinementRuns), two candidates with different answers are told apart by every step on a complete transcript exactly where their envelopes are CrossSeparated (diagnosable_iff), and once a complete transcript is read, remaining cross-separated candidates agree at every later state (complete_run_agrees).
 
 Canonical source: [WitnessRefinement.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WitnessRefinement.lean)
 
@@ -59,6 +59,9 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T134446.673561Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T234635.457051Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json) | — |
+| proof | [WitnessRefinementRuns.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WitnessRefinementRuns.lean) | `Becoming.WitnessRefinementRuns.inspection`, `Becoming.WitnessRefinementRuns.testing`, `Becoming.WitnessRefinementRuns.mem_step`, `Becoming.WitnessRefinementRuns.silent_step`, `Becoming.WitnessRefinementRuns.step_certificate_candidate`, `Becoming.WitnessRefinementRuns.complete_step_agrees`, `Becoming.WitnessRefinementRuns.complete_run_agrees`, `Becoming.WitnessRefinementRuns.responsive_step_excludes`, `Becoming.WitnessRefinementRuns.covering_step_keeps_both`, `Becoming.WitnessRefinementRuns.diagnosable_iff`, `Becoming.WitnessRefinementRuns.doubled_roster_same`, `Becoming.WitnessRefinementRuns.total_fault_blocks`, `Becoming.WitnessRefinementRuns.test_emptied`, `Becoming.WitnessRefinementRuns.test_step_completes`, `Becoming.WitnessRefinementRuns.audit_step_inspection`, `Becoming.WitnessRefinementRuns.inquiry_step_testing` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant.
 
@@ -67,7 +70,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 Reuse diagnosability; fault coverage through actual change and response capacity need their own evidence.
 
-Aliases: `FallibleInspection.complete_diagnosability_iff_cross_separation`, `Becoming.complete_diagnosability_iff_by_core`, `Becoming.Courses.dates_no_common_report_envelopes_iff`, `Becoming.Courses.dates_no_common_report_iff`, `Becoming.Courses.run_reports_apart`
+Aliases: `FallibleInspection.complete_diagnosability_iff_cross_separation`, `Becoming.complete_diagnosability_iff_by_core`, `Becoming.Courses.dates_no_common_report_envelopes_iff`, `Becoming.Courses.dates_no_common_report_iff`, `Becoming.Courses.run_reports_apart`, `Becoming.WitnessRefinementRuns.diagnosable_iff`, `Becoming.WitnessRefinementRuns.complete_run_agrees`, `inspection by fallible witnesses as a process`, `可失实见证的检视过程`
 
 <a id="沿革-history"></a>
 ## History
@@ -80,4 +83,5 @@ Aliases: `FallibleInspection.complete_diagnosability_iff_cross_separation`, `Bec
 - 19 October 2026, F3C, the port of the correction family into the core (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): the core statements of the cited declarations are added beside them (WitnessRefinement; verdicts in port-c.md), bound to core receipt 20261018T234635.457051Z, and the canonical source is the core module. The periphery and bridge references stay until the sweep retires them. No new result; the claim is unchanged.
 - 18 October 2026, the N6 reading pass (board item N6, proposed to Ren and not landed; the vocabulary adopted in section 7 of the naming study): prose read by sense, no statement changed. Changed by the pass, in docstrings or prose only: Courses.lean. Rebound to receipt 20261018T235724.886433Z after reading the change. The claim is unchanged.
 - 19 October 2026, F3 sweep step 2 (Ren: "work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): Bridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.
+- 19 October 2026, U5 (study section 208): the roster laws of WitnessRefinement, FaultEnvelopes and PooledEnvelopes read on the processes of inspection and testing for every roster, fault sets and answers (Becoming.WitnessRefinementRuns, 22 theorems, core receipt 20261019T133615.720595Z); the audit and the inquiry move their candidates by them. Two sentences added to the claim; the earlier claim is unchanged.
 - 4 rebinding entries (2026-10-15 to 2026-10-16): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](fallible-witness-diagnosability.json).

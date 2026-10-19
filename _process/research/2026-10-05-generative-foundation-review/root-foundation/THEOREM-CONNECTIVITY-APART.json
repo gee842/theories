@@ -567,21 +567,6 @@
    "category": "calibration",
    "reason": "the exact principle the criterion of being above under every classification needs over every type: excluded middle (every proposition decided); the base asserts no such classification, so this is a lemma of the criterion (ClassificationRobustJudgment, ported by F3J)"
   },
-  "Becoming.Narrowing.acquired_answers_correct": {
-   "module": "Becoming.Narrowing",
-   "category": "general-structure",
-   "reason": "a law of every list of candidate rules on any question type: from a list containing the actual rule, what the narrowed belief answers is correct (StandardsBridge, ported by F3J)"
-  },
-  "Becoming.Narrowing.answer_maximal": {
-   "module": "Becoming.Narrowing",
-   "category": "general-structure",
-   "reason": "a law of every nonempty list of candidate rules on any question type: the answer procedure gives the greatest safe answer (StandardsBridge, ported by F3J)"
-  },
-  "Becoming.Narrowing.answer_transport": {
-   "module": "Becoming.Narrowing",
-   "category": "general-structure",
-   "reason": "a law of every list of rules and every decoding: transported rules answer at a token as the rules answer at its decoding (StandardsBridge, ported by F3J)"
-  },
   "Becoming.Narrowing.before_acquisition_abstains": {
    "module": "Becoming.Narrowing",
    "category": "model-witness",
@@ -597,11 +582,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed repertoire of four rules on two cases, with function extensionality a named hypothesis: every such rule is one of the four (StandardsBridge, ported by F3J)"
   },
-  "Becoming.Narrowing.unique_maximal_safe_of_ext": {
-   "module": "Becoming.Narrowing",
-   "category": "general-structure",
-   "reason": "a law of every nonempty list of rules on any question type, with function extensionality a named hypothesis: a safe greatest answer is the answer (StandardsBridge, ported by F3J)"
-  },
   "Becoming.Narrowing.wrong_reencoding_breaks_transfer": {
    "module": "Becoming.Narrowing",
    "category": "model-witness",
@@ -616,16 +596,6 @@
    "module": "Becoming.Alternatives",
    "category": "model-witness",
    "reason": "a fact about one constructed pair of appraisals: they disagree when one realization replaces the other (GenerativeComparison, ported by F3J)"
-  },
-  "Becoming.Requirement.Assigned.capable": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a law of every allocation and capability relation on any type: an assignment in an admissible plan is feasible where every admissible plan's assignments are (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Requirement.Assigned.unique_required": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a law of every allocation on any type: a unique responder in every admissible plan is required (PracticalJudgment, ported by F3J)"
   },
   "Becoming.Requirement.Collective.no_common_plan": {
    "module": "Becoming.Frontier",
@@ -676,16 +646,6 @@
    "module": "Becoming.Frontier",
    "category": "model-witness",
    "reason": "a fact about the constructed routes model: formation is required of its lexical frontier (ClassificationRobustJudgment, ported by F3J)"
-  },
-  "Becoming.Requirement.Settled.no_residual": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a law of every due, done and released relation on any type: a settled account leaves no residual (PracticalJudgment, ported by F3J)"
-  },
-  "Becoming.Requirement.residual_of_unfulfilled": {
-   "module": "Becoming.Frontier",
-   "category": "general-structure",
-   "reason": "a law of every due, done and released relation on any type: what is due, not done and not released is residual (PracticalJudgment, ported by F3J)"
   },
   "Becoming.Requirement.separate_not_joint": {
    "module": "Becoming.Frontier",
@@ -1117,30 +1077,10 @@
    "category": "model-witness",
    "reason": "a fact about one constructed envelope: a correlated pair among four domains is separated (FaultTolerantCorrection, ported by F3C)"
   },
-  "Becoming.FaultEnvelopes.covering_faults_reject": {
-   "module": "Becoming.FaultEnvelopes",
-   "category": "general-structure",
-   "reason": "a law of every roster of domains and every fault envelope: two admitted fault sets covering the roster reject the support outside the actual one (FaultTolerantCorrection, ported by F3C)"
-  },
-  "Becoming.FaultEnvelopes.duplicated_roster_same": {
-   "module": "Becoming.FaultEnvelopes",
-   "category": "general-structure",
-   "reason": "a law of every roster of domains and every fault envelope: listing the roster twice certifies exactly what it certifies once (FaultTolerantCorrection, ported by F3C)"
-  },
-  "Becoming.FaultEnvelopes.empty_envelope_rejects": {
-   "module": "Becoming.FaultEnvelopes",
-   "category": "general-structure",
-   "reason": "a law of every roster of domains and every fault envelope: an empty envelope certifies nothing (FaultTolerantCorrection, ported by F3C)"
-  },
   "Becoming.FaultEnvelopes.one_fault_separation": {
    "module": "Becoming.FaultEnvelopes",
    "category": "model-witness",
    "reason": "a fact about one constructed envelope: one fault among three domains is separated (FaultTolerantCorrection, ported by F3C)"
-  },
-  "Becoming.FaultEnvelopes.total_fault_rejects": {
-   "module": "Becoming.FaultEnvelopes",
-   "category": "general-structure",
-   "reason": "a law of every roster of domains and every fault envelope: an envelope admitting the whole roster certifies nothing (FaultTolerantCorrection, ported by F3C)"
   },
   "Becoming.GuardHorizon.coverage_transports": {
    "module": "Becoming.GuardHorizon",
@@ -1262,11 +1202,6 @@
    "category": "model-witness",
    "reason": "a fact about the constructed three causal models of four members: a diagnosis readies the pool without identifying the model (EvidenceQualifiedCorrection, ported by F3C)"
   },
-  "Becoming.PooledEnvelopes.empty_family_rejects": {
-   "module": "Becoming.PooledEnvelopes",
-   "category": "general-structure",
-   "reason": "a law of every family of causal models: an empty family certifies nothing (EvidenceQualifiedCorrection, ported by F3C)"
-  },
   "Becoming.PooledEnvelopes.every_candidate_ready_pool_not": {
    "module": "Becoming.PooledEnvelopes",
    "category": "model-witness",
@@ -1276,11 +1211,6 @@
    "module": "Becoming.PooledEnvelopes",
    "category": "model-witness",
    "reason": "a fact about the constructed three causal models of four members: a misleading diagnosis accepts only compromised support (EvidenceQualifiedCorrection, ported by F3C)"
-  },
-  "Becoming.PooledEnvelopes.pooled_completes": {
-   "module": "Becoming.PooledEnvelopes",
-   "category": "general-structure",
-   "reason": "a law of every family of causal models, test and installation: a separated pool after a faithful test completes a guarded transaction; its process reading is the inquiry's `certificate_kept` and `chosen_plan_completes` (EvidenceQualifiedCorrection, ported by F3C)"
   },
   "Becoming.PooledEnvelopes.short_or_closed_no_plan": {
    "module": "Becoming.PooledEnvelopes",
@@ -1342,25 +1272,10 @@
    "category": "model-witness",
    "reason": "a fact about the constructed audit (four or five witnesses of a structural question): without the fifth report every model stays (FallibleInspection, ported by F3C)"
   },
-  "Becoming.WitnessRefinement.complete_diagnosability_iff_cross_separation": {
-   "module": "Becoming.WitnessRefinement",
-   "category": "general-structure",
-   "reason": "a law of every roster of witnesses, fault envelopes and reports: on complete transcripts opposite answers are told apart exactly where the envelopes are cross-separated, the core's `Readout.no_common_report_envelopes_iff` read on these reports (FallibleInspection, ported by F3C)"
-  },
   "Becoming.WitnessRefinement.conflicting_models_self_certify": {
    "module": "Becoming.WitnessRefinement",
    "category": "model-witness",
    "reason": "a fact about the constructed audit (four or five witnesses of a structural question): conflicting models each certify themselves (FallibleInspection, ported by F3C)"
-  },
-  "Becoming.WitnessRefinement.covering_faults_same_transcript": {
-   "module": "Becoming.WitnessRefinement",
-   "category": "general-structure",
-   "reason": "a law of every roster of witnesses, fault envelopes and reports: fault sets covering the roster admit one complete transcript for both answers (FallibleInspection, ported by F3C)"
-  },
-  "Becoming.WitnessRefinement.cross_separation_excludes": {
-   "module": "Becoming.WitnessRefinement",
-   "category": "general-structure",
-   "reason": "a law of every roster of witnesses, fault envelopes and reports: cross-separated envelopes exclude opposite explanations of a complete transcript (FallibleInspection, ported by F3C)"
   },
   "Becoming.WitnessRefinement.duplicated_fifth_no_repair": {
    "module": "Becoming.WitnessRefinement",
@@ -1381,16 +1296,6 @@
    "module": "Becoming.WitnessRefinement",
    "category": "model-witness",
    "reason": "a fact about the constructed audit (four or five witnesses of a structural question): four witnesses cannot separate the split transcript (FallibleInspection, ported by F3C)"
-  },
-  "Becoming.WitnessRefinement.responsive_survivors_exclude": {
-   "module": "Becoming.WitnessRefinement",
-   "category": "general-structure",
-   "reason": "a law of every roster of witnesses, fault envelopes and reports: responsive survivors outside every alternative fault set exclude the opposite answer (FallibleInspection, ported by F3C)"
-  },
-  "Becoming.WitnessRefinement.silence_keeps_models": {
-   "module": "Becoming.WitnessRefinement",
-   "category": "general-structure",
-   "reason": "a law of every roster of witnesses, fault envelopes and reports: silence keeps every model with a fault set (FallibleInspection, ported by F3C)"
   },
   "Becoming.WitnessRefinement.uncovered_correlation_deletes_actual": {
    "module": "Becoming.WitnessRefinement",
@@ -1481,21 +1386,6 @@
    "module": "Becoming.Ideals",
    "category": "support",
    "reason": "A directed supremum lies below that of a larger directed set: the fields of `DirectedComplete` unpacked."
-  },
-  "Becoming.HistoryIdeals.classification": {
-   "module": "Becoming.HistoryIdeals",
-   "category": "restates",
-   "reason": "The case of words of `Stretches.classification`, which states for the histories of every process that one settling, or going on with a stretch beyond each horizon picked, is a finite history or the history of a run; on the process of all sequences its stretches and the words are one order read two ways (`HistoryIdeals.sequence_stretch_iff`, `Stretches.sequences_le_iff`)."
-  },
-  "Becoming.HistoryIdeals.principal_settles": {
-   "module": "Becoming.HistoryIdeals",
-   "category": "restates",
-   "reason": "The case of words of `Stretches.principal_settles` (a finite history settles), stated on the base for every process."
-  },
-  "Becoming.HistoryIdeals.trace_goesOn": {
-   "module": "Becoming.HistoryIdeals",
-   "category": "restates",
-   "reason": "The case of words of `Stretches.run_goesOn` (a run's history goes on), stated on the base for every process."
   },
   "Becoming.Hexagram.weiJi_opposed": {
    "module": "Becoming.HexagramPlaces",

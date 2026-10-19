@@ -8,7 +8,7 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-19T09:27:15+00:00",
+  "reviewed_at_utc": "2026-10-19T13:38:06+00:00",
   "statement": {
     "zh": "生生之意义加公开的实践承诺与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。",
     "en": "Living significance with the explicit practical commitments and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility."
@@ -37,7 +37,9 @@
     "实践承诺在核心中",
     "Becoming.FrontierFrames.Priority",
     "Becoming.FrontierFrames.choice_exists_iff_weakly",
-    "Becoming.FrontierFrames.Priority.kept_required"
+    "Becoming.FrontierFrames.Priority.kept_required",
+    "Becoming.FrontierWorlds.sole_giver_required",
+    "Becoming.FrontierWorlds.Discharged.no_residual"
   ],
   "dependencies": [
     {
@@ -154,11 +156,16 @@
       "en": "J1–J4 in the pure core: Becoming.Lexical states J1/J2 as the condition BasicPriority and Becoming.Frontier states J3/J4, every PracticalJudgment declaration with a core counterpart and an empty axiom report; FrontierFrames reads them on a frame, the options of a configuration being what one move reaches, and FrontierWorlds reads service across a handover in a world. The one classical step of PracticalJudgment (finite_frontier) is weak excluded middle, now a hypothesis calibrated on frames (choice_exists_iff_weakly).",
       "zh": "J1–J4 在纯核心中：Becoming.Lexical 把 J1/J2 陈述为条件 BasicPriority，Becoming.Frontier 陈述 J3/J4，PracticalJudgment 的每项声明在核心中都有对应，公理报告为空；FrontierFrames 在框架上读它们（一个构形的选项是一步移动所达），FrontierWorlds 在世界中读跨交接的服务。PracticalJudgment 唯一的经典步骤（finite_frontier）是弱排中律，现为假设，并在框架上校准（choice_exists_iff_weakly）。",
       "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#196-theorems-apart-from-the-base-largest-groups-first-the-practical-commitments-in-the-core-u3-u4"
+    },
+    {
+      "en": "Assignment and discharge read in a world (U5): the joint plan at a step is the world's move, a relatum assigned the giving to a condition where it takes part and gives to it. Where a formation requires the condition at some step, someone gives at each such step and only one relatum does, its giving is required (sole_giver_required), and where only active formations give it is active there (sole_giver_active); an undertaking to give to what a formation requires is discharged where at every required step it is given or the formation no longer acts, and leaves no residual step (Discharged.no_residual).",
+      "zh": "在世界中读分派与了结（U5）：一步的联合计划即世界在该步的移动，某关系项参与并给予某条件，即被分派给予该条件。某构成在某步要求该条件、每个这样的步都有给予者且只有一个关系项给予时，它的给予是被要求的（sole_giver_required）；在只有活跃者给予之处，它在那里活跃（sole_giver_active）；给予某构成所求的担当，若在每个被要求之步都有给予、或该构成不再活跃，则了结，不留余欠之步（Discharged.no_residual）。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#208-general-laws-read-on-the-base-joint-plans-inspection-narrowing-and-the-histories-of-words-u5"
     }
   ],
   "validation_scope": {
-    "en": "Independent completion review accepted the explicit-commitment scope; the 30 theorems of the original package concern its form, not normative warrant. Since 19 October 2026 (receipt 20261019T092027.048735Z) J1–J4 are stated in the pure core (Lexical, Frontier) and read on frames and worlds (FrontierFrames, 22 theorems; FrontierWorlds, 3), all with empty axiom reports; choice_exists_iff_weakly calibrates the choice at every step as weak excluded middle. Timely continuation is interpretive application. The commitments stay argued, not proved.",
-    "zh": "既有独立完成审查接受明确承诺的一般原则范围；原形式包的 30 项定理关乎形式，不是规范根据。2026年10月19日起（回执 20261019T092027.048735Z），J1–J4 在纯核心中陈述（Lexical、Frontier），并在框架与世界上读出（FrontierFrames 22 项定理，FrontierWorlds 3 项），公理报告皆空；choice_exists_iff_weakly 把每一步有被选者校准为弱排中律。及时接续部分是解释性应用。承诺仍是论证的，不是证明的。"
+    "en": "Independent completion review accepted the explicit-commitment scope; the 30 theorems of the original package concern its form, not normative warrant. Since 19 October 2026 (receipt 20261019T092027.048735Z) J1–J4 are stated in the pure core (Lexical, Frontier) and read on frames and worlds (FrontierFrames, 22 theorems; FrontierWorlds, 8 since U5), all with empty axiom reports; choice_exists_iff_weakly calibrates the choice at every step as weak excluded middle. Timely continuation is interpretive application. The commitments stay argued, not proved.",
+    "zh": "既有独立完成审查接受明确承诺的一般原则范围；原形式包的 30 项定理关乎形式，不是规范根据。2026年10月19日起（回执 20261019T092027.048735Z），J1–J4 在纯核心中陈述（Lexical、Frontier），并在框架与世界上读出（FrontierFrames 22 项定理，FrontierWorlds 8 项（U5 起）），公理报告皆空；choice_exists_iff_weakly 把每一步有被选者校准为弱排中律。及时接续部分是解释性应用。承诺仍是论证的，不是证明的。"
   },
   "references": [
     {
@@ -351,18 +358,32 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean",
       "role": "proof",
-      "sha256": "b551db86b1ae56da175fb0a3c852a94fb4dd915594daf5b8cd71d2a6b3815e2b",
+      "sha256": "b115d5a1bbc9ed636f34cb82c5105dc69d53cbb16ea091fbadaeb58930201d40",
       "declarations": [
         "Becoming.FrontierWorlds.Served",
         "Becoming.FrontierWorlds.Served.successor",
         "Becoming.FrontierWorlds.served_of_handover",
-        "Becoming.FrontierWorlds.Served.not_of_gap"
+        "Becoming.FrontierWorlds.Served.not_of_gap",
+        "Becoming.FrontierWorlds.Gives",
+        "Becoming.FrontierWorlds.sole_giver_required",
+        "Becoming.FrontierWorlds.giver_active",
+        "Becoming.FrontierWorlds.sole_giver_active",
+        "Becoming.FrontierWorlds.Discharged",
+        "Becoming.FrontierWorlds.Residual",
+        "Becoming.FrontierWorlds.Discharged.no_residual",
+        "Becoming.FrontierWorlds.residual_of_unfulfilled"
       ]
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
       "sha256": "b5f428f44cba764c421865385b6deb0ba648e99df070b6bdc050cdecbdcce8bc",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+      "role": "receipt",
+      "sha256": "b66b9f4f542992d9b2d6b9dbb2c42b7b0085f38c3b61ec79a4bb992650a96906",
       "declarations": []
     }
   ],
@@ -425,7 +446,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FrontierWorlds.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T092027.048735Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FrontierWorlds",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -550,6 +571,10 @@
     {
       "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
       "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, U5 (study section 208): FrontierWorlds gains the assignment and discharge laws of Frontier read on the world's moves (sole giver required and active; discharge leaves no residual step); its proof reference and binding move to core receipt 20261019T133615.720595Z. The statement and the warrant of the commitments are unchanged.",
+      "zh": "2026年10月19日，U5（研究第 208 节）：FrontierWorlds 新增在世界移动上读出的 Frontier 分派与了结规律（唯一给予者被要求且活跃；了结不留余欠之步）；其证明引用与绑定移到核心回执 20261019T133615.720595Z。陈述与承诺的根据不变。"
     }
   ],
   "text_versions": [

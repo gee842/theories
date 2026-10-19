@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T10:34:51.255963+00:00",
+  "reviewed_at_utc": "2026-10-19T13:38:06+00:00",
   "claim": {
     "zh": "种子—边闭包（WholeGroundCoverage 的 Reached、CutCoverageAudit 的 Reach）与评价者链（EvaluatorGrounding 的 Chain）恰是边过程上的可达。框架的可达配置构成共同延续空间：保持步骤与主张的映射携带每个可共同实现的组合，步骤可提升、主张可反映的摘要不丢失任何组合。稳健回应恰是可容许性取完成的共同回应，每个稳健回应都是判断过程的共同回应；保证即一步完成；LiveStep 即 Enabled；按一次观察过滤规则表即纯观察上的 After。函数式情境的实践表述恰是提升规则 L 下表述在确定框架上的情形；在 L 下，生成比较提升到回应，并给出理由、协调选择的存活与持续改进无存活者，对每个框架成立。L 是实质承诺：有一好一坏两个结果的回应，在保守规则下两个方向都不可比。核心的生生之意义、生成扩展、C、确保的正面根据与 D 在定义上就是 GenerativeComparison 与 PositionedPositiveReason 的定义；“先基本条件、后生的增益”的实践判断在配置上即 PracticalJudgment.Better（BetterAt）。判断即一步探究：一个回应是判断过程的共同回应，当且仅当它在每个所信配置上可容许（核心的 commonResponse_judge_iff）。在外围（Mathlib）：观察上的策略实施纠正，当且仅当它在每个观察值的格上的行动是共同回应；共同行动存在，当且仅当每个格都有共同回应；安全选择即显示该值的世界上的共同回应；CorrectionBoundary 与 ObservationChange 的细化定理由核心的 commonResponse_antitone 导出。开放形态有限实现直接作用于共同 Frame 的 Run，同一个新形成见证在显式意义条件下取得 relevance；另两项旧接口适配完成原生成生产端到正面根据消费端的组合。",
     "en": "Seed–edge closures (WholeGroundCoverage.Reached, CutCoverageAudit.Reach) and evaluator chains (EvaluatorGrounding.Chain) are exactly reachability on the edge process. A frame's reachable configurations form a joint-continuation space: a step- and claim-preserving map carries every jointly realizable bundle, and a summary whose steps lift and whose claims reflect loses none. A robust response is exactly a common response with completion as admissibility, and every robust response is a common response of the judgment process; a guarantee is one-step completion; LiveStep is Enabled; filtering a rule list by one observation is After on a pure observation. The functional articulation of a situation is exactly the articulation under the lifting rule L on the deterministic frame; under L, generative comparison lifts to responses and supplies reasons, survival of coherent selection and the absence of survivors under continual improvement on every frame. L is substantive: a response with one better and one worse outcome is comparable in neither direction under the conservative rule. The core's living significance, generative extension, C, secured positive ground and D are by definition those of GenerativeComparison and PositionedPositiveReason; the practical judgment of basic conditions first, then living gain, on configurations is PracticalJudgment.Better (BetterAt). A judgment is a one-step inquiry: a response is a common response of the judgment process exactly when it is admissible at every believed configuration (the core's commonResponse_judge_iff). In the periphery, with Mathlib, a policy on observations implements correction exactly when its action on each observation value's cell is a common response; a common action exists exactly when every cell has one; a safe choice is a common response on the worlds showing the value; and the refinement theorems of CorrectionBoundary and ObservationChange follow from the core's commonResponse_antitone. Bounded open-form realization applies to a Run of the shared Frame, and the same novel witness receives relevance under the explicit significance condition; two inherited-interface adapters complete the generation-to-positive-ground composition."
@@ -61,7 +61,9 @@
     "Becoming.commonAction_iff_commonResponse",
     "Becoming.implements_refine",
     "Becoming.safeOn_iff_commonResponse",
-    "Becoming.safeOn_refine"
+    "Becoming.safeOn_refine",
+    "Becoming.NarrowingRuns.narrowed_answer_greatest",
+    "Becoming.NarrowingRuns.run_answer_greatest"
   ],
   "dependencies": [
     {
@@ -544,6 +546,37 @@
       "role": "receipt",
       "sha256": "73da26fa45a43969d573d4f0f79afeaf50f1b40ecd31082bc842b017a49920b4",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/NarrowingRuns.lean",
+      "role": "proof",
+      "sha256": "07eaa1fcd796e8c23e75cd1fd2b4df5c4c7cccde9fe8c94380c4099534049147",
+      "declarations": [
+        "Becoming.NarrowingRuns.SafeFor",
+        "Becoming.NarrowingRuns.GreatestFor",
+        "Becoming.NarrowingRuns.settles_iff_answer",
+        "Becoming.NarrowingRuns.narrowed_answer_greatest",
+        "Becoming.NarrowingRuns.narrowed_answer_unique",
+        "Becoming.NarrowingRuns.narrowed_answer_unique_of_ext",
+        "Becoming.NarrowingRuns.run_constant",
+        "Becoming.NarrowingRuns.record",
+        "Becoming.NarrowingRuns.run_kept",
+        "Becoming.NarrowingRuns.run_answer_correct",
+        "Becoming.NarrowingRuns.run_answer_greatest",
+        "Becoming.NarrowingRuns.transport_settles_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+      "role": "receipt",
+      "sha256": "b66b9f4f542992d9b2d6b9dbb2c42b7b0085f38c3b61ec79a4bb992650a96906",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "59a4e9f1d2b0a6e8d0a655f0f3772b71ba242db6ff858319091239f26b6360f9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -719,6 +752,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lexical.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T201753.515165Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Lexical",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/NarrowingRuns.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T133615.720595Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.NarrowingRuns",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1137,6 +1177,10 @@
     {
       "en": "19 October 2026, R20(b) (chapter, records and Lean docstrings say exactly what the Lean shows): Metaethics.lean re-pointed after reading the change (Metaethics.lean: R20(b) changed comments only (docstrings); statements and proofs unchanged). The claim is unchanged. Their proof bindings now point to the R20(b) receipt 20261019T090457.012800Z, which binds the new bytes.",
       "zh": "2026年10月19日，R20(b)（理论章、记录与 Lean 文档注释恰说 Lean 所表明的）：读过改动后，Metaethics.lean 重新指向。论断不变。其证明绑定指向绑定新字节的 R20(b) 收据 20261019T090457.012800Z。"
+    },
+    {
+      "en": "19 October 2026, U5 (study section 208): the answer laws of Narrowing read on the belief After narrows on the pure observation and along its runs (Becoming.NarrowingRuns, 11 theorems, core receipt 20261019T133615.720595Z): the answer is the greatest safe answer of the narrowed belief, the only one; along every run observing a candidate rule it asserts the observed rule's values; re-encoding transports what the belief settles. The claim is unchanged.",
+      "zh": "2026年10月19日，U5（研究第 208 节）：Narrowing 的回答规律在纯观察上由 After 收窄的信念及其运行上读出（Becoming.NarrowingRuns，11 项定理，核心回执 20261019T133615.720595Z）：回答是收窄信念唯一的最大安全回答；沿每个观察候选规则的运行，它所断言的是所观察规则的值；重新编码搬运信念所定者。论断不变。"
     }
   ]
 }

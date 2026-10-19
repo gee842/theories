@@ -142,6 +142,7 @@ import Becoming.Transactions
 import Becoming.Reconfiguration
 import Becoming.PooledEnvelopes
 import Becoming.WitnessRefinement
+import Becoming.WitnessRefinementRuns
 import Becoming.ChanceFloors
 import Becoming.IntegerOrder
 import Becoming.Acceptance
@@ -158,6 +159,7 @@ import Becoming.Joining
 import Becoming.Granularity
 import Becoming.HistoryLanguages
 import Becoming.HistoryIdeals
+import Becoming.HistoryIdealsTraces
 import Becoming.Verification
 import Becoming.Coverage
 import Becoming.Presentations
@@ -278,6 +280,7 @@ import Becoming.Alternatives
 import Becoming.Bundles
 import Becoming.ActivationCapacity
 import Becoming.Narrowing
+import Becoming.NarrowingRuns
 import Becoming.PositiveGround
 import Becoming.ProfileReach
 import Becoming.RenewalBound
@@ -1428,7 +1431,9 @@ readings of the unfolding (`Becoming.Labelled`).
   required where decided. Fresh contents under every classification on a frame of two kinds.
 * `Becoming.FrontierWorlds` (L4): what a formation requires of a condition in a world, served
   across a handover from one giver to another (`Served`): withdrawn giving needs the successor,
-  a handover with no gap serves, and a gap refutes service.
+  a handover with no gap serves, and a gap refutes service. Joint plans and undertakings on the
+  world's moves: a sole giver to what a formation requires is required, and active where only
+  active formations give; a discharged undertaking leaves no residual step.
 * `Becoming.AcceptanceFrames` (L4): scores over the options of a step. Every option best by the
   score with acceptance keeps access exactly where every option best by the base score does;
   restricting to the options loses score, least among them; an option best by an estimate
@@ -1454,6 +1459,11 @@ readings of the unfolding (`Becoming.Labelled`).
   exactly the fitting candidates; the answer procedure answers what the narrowed belief settles,
   safely and as the greatest safe answer; faithful acquisition answers correctly and re-encoding
   transports learning. Ported from `StandardsBridge` (F3J).
+* `Becoming.NarrowingRuns` (L4): narrowing along the runs of the pure observation. What the
+  belief `After` narrows settles is what the learned list answers; the answer is safe for it
+  and, where it holds a rule, its greatest safe answer, the only one; along every run observing
+  a candidate rule the answer from the record is the greatest safe answer and asserts the
+  observed rule's values; re-encoding transports what the belief settles.
 * `Becoming.PositiveGround` (L4): certain positive ground with open future form: one response
   can secure new living content in each admitted continuation without one fixed content in all;
   a finite signed integral certifies it where each positive occurrence means such content; with
@@ -1617,6 +1627,16 @@ readings of the unfolding (`Becoming.Labelled`).
   cross-separated (`complete_diagnosability_iff_cross_separation`, through
   `Readout.no_common_report_envelopes_iff`); a fifth witness resolves what four cannot and stays
   fallible, and the audit is a process whose runs only narrow the candidates.
+* `Becoming.WitnessRefinementRuns` (L4): inspection by fallible witnesses as a process for every
+  roster, fault sets and answers (`inspection`), and testing (`testing`); the audit and the
+  inquiry move their candidates by them. A silent transcript keeps exactly the candidates
+  admitting a fault set, a certificate after a step needs a candidate; after a complete
+  transcript candidates with cross-separated envelopes agree, at every later state; two
+  candidates are told apart by every complete step exactly where their envelopes are
+  cross-separated; covering fault sets keep both and certify nothing; listing the roster twice
+  changes nothing; a candidate admitting every failure is kept and blocks every later
+  certificate; a test leaving no candidate certifies nothing, and a separated pool after a
+  faithful test completes.
 * `Becoming.ChanceFloors` (L3): what pointwise fulfilment of a due protection gives under a finite
   law of chance (no premise): a chance floor (`fulfillment_gives_chance_floor`, through
   `mass_mono`), repair as an event that raises the mass (`repair_adds_new_protection`), and a
@@ -1748,6 +1768,10 @@ readings of the unfolding (`Becoming.Labelled`).
   principle of omniscience. Words and histories under prefix; for the process of all sequences,
   the runs' histories are the infinite histories of words; prefix-closed languages give closed
   classes of histories.
+* `Becoming.HistoryIdealsTraces` (L3): the word half of `Becoming.HistoryIdeals` on the courses a
+  process can take (no premise): an ideal of feasible courses that settles, or goes on with its
+  courses picked, is a history of the process, a feasible course settles, and a run's moves go
+  on; a history of feasible courses need not be a run's moves (`history_without_run`).
 * `Becoming.Verification` (L4): what a finite stretch verifies, and what none can refute (no
   premise). A class of histories is open, holding every history above one it holds and a member
   of every directed family whose union it holds, exactly where it is the class meeting an upper
