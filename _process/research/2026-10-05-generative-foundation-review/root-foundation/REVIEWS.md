@@ -10,9 +10,9 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-06 | [CORE-TREE-CONTINUATION-REVIEW.md](CORE-TREE-CONTINUATION-REVIEW.md) | Core/tree continuation: independent review and scope |
 | 2026-10-06 | [EVALUATIVE-PLASTICITY-REVIEW.md](EVALUATIVE-PLASTICITY-REVIEW.md) | Prospective review of paid evaluative plasticity |
 | 2026-10-06 | [SELECTIVE-HANDOFF-REVIEW.md](SELECTIVE-HANDOFF-REVIEW.md) | Selective reuse of a historical correction: prospective review |
-| 2026-10-06 | [SSBX-REPOSITORY-REVIEW.md](SSBX-REPOSITORY-REVIEW.md) | 早期《生生不息》仓库审读：哪些可以并入生成／变化之论 |
 | 2026-10-10 | [CONTINUATION-GROUNDING-REVIEW.md](CONTINUATION-GROUNDING-REVIEW.md) | Independent review: continuation grounding W1–W5 (plan W8) |
 | 2026-10-16 | [BECOMING-RELEASE-READINESS-REVIEW.md](BECOMING-RELEASE-READINESS-REVIEW.md) | Release-readiness review of the Theory of Becoming |
+| 2026-10-19 | [SSBX-REPOSITORY-REVIEW.md](SSBX-REPOSITORY-REVIEW.md) | 早期《生生不息》仓库审读：哪些可以并入生成／变化之论 |
 |  | [BECOMING-EIGHTEENTH-REVIEW.md](BECOMING-EIGHTEENTH-REVIEW.md) · [Chinese edition](BECOMING-EIGHTEENTH-REVIEW.zh.md) | Eighteenth independent review: P107–P127 and I4b |
 |  | [BECOMING-GENERAL-LAWS-REVIEW.md](BECOMING-GENERAL-LAWS-REVIEW.md) · [Chinese edition](BECOMING-GENERAL-LAWS-REVIEW.zh.md) | Independent review of the general laws (seventeenth) |
 
@@ -104,6 +104,8 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-06 | [MODEL-FAMILY-REVISION-REVIEW.md](../history/root-foundation/MODEL-FAMILY-REVISION-REVIEW.md) | Model-family revision: memory, interface and resource review |
 | 2026-10-06 | [NECESSITY-ATTEMPT-REVIEW.md](../history/root-foundation/NECESSITY-ATTEMPT-REVIEW.md) | Can the reason in one's own suffering establish universal scope? |
 | 2026-10-06 | [NONDUAL-APPLICABILITY-REVIEW.md](../history/root-foundation/NONDUAL-APPLICABILITY-REVIEW.md) | Need, evidence, response and completion within one unfolding |
+| 2026-10-06 | [NONDUAL-TREE-REVIEW.md](../history/root-foundation/NONDUAL-TREE-REVIEW.md) | 整树非二元继续的独立审查 |
+| 2026-10-06 | [NONINSTRUMENTAL-CONCERN-REVIEW.md](../history/root-foundation/NONINSTRUMENTAL-CONCERN-REVIEW.md) | 非工具性关切：独立反例、形式范围与实现审查 |
 | 2026-10-06 | [ORGANIZATIONAL-REQUIREMENT-REVIEW.md](../history/root-foundation/ORGANIZATIONAL-REQUIREMENT-REVIEW.md) | When a dependency becomes an operative continuation requirement |
 | 2026-10-06 | [PARTICIPATION-CONSEQUENCE-REVIEW.md](../history/root-foundation/PARTICIPATION-CONSEQUENCE-REVIEW.md) | Acquired distinctions and changed participation: source and rival review |
 | 2026-10-06 | [PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md](../history/root-foundation/PERMITTED-RELIEF-AND-DESERT-COUNTERREVIEW.md) | Permitted relief and desert: the strongest extinction rival |
@@ -147,11 +149,15 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-06 | [UNIFIED-GROUNDING-COUNTERREVIEW.md](../history/root-foundation/UNIFIED-GROUNDING-COUNTERREVIEW.md) | Counterreview: patient value, practical uptake and eligible actors |
 | 2026-10-06 | [V73-INTEGRATION-REVIEW.md](../history/root-foundation/V73-INTEGRATION-REVIEW.md) | V7.3 integration: independent assumption and counterexample review |
 | 2026-10-06 | [VARYING-DYNAMICS-REVIEW.md](../history/root-foundation/VARYING-DYNAMICS-REVIEW.md) | Varying dynamics: independent review |
+| 2026-10-06 | [WANG-YANGMING-REVIEW.md](../history/root-foundation/WANG-YANGMING-REVIEW.md) | 王阳明比较：反例、前提与旧形式主张审查 |
 | 2026-10-06 | [WARRANT-OF-CONCERN-REVIEW.md](../history/root-foundation/WARRANT-OF-CONCERN-REVIEW.md) | Actual undergoing and the warrant of concern |
 | 2026-10-06 | [WENYAN-REVIEW.md](../history/root-foundation/WENYAN-REVIEW.md) | 扩展先秦与文言研究：整合与内部审读记录 |
 | 2026-10-06 | [WHOLE-PROCESS-GROUNDING-REVIEW.md](../history/root-foundation/WHOLE-PROCESS-GROUNDING-REVIEW.md) | Whole-process goodness without a privileged beneficiary |
 | 2026-10-06 | [WHOLE-PROCESS-REALIZATION-REVIEW.md](../history/root-foundation/WHOLE-PROCESS-REALIZATION-REVIEW.md) | Realized quality and the value of its place in a whole |
+| 2026-10-06 | [YITI-REN-COFORMATION-REVIEW.md](../history/root-foundation/YITI-REN-COFORMATION-REVIEW.md) | 一体之仁的共同形成解释：正向论证与独立审查 |
+| 2026-10-06 | [YITI-REN-CRITERION-REVIEW.md](../history/root-foundation/YITI-REN-CRITERION-REVIEW.md) | 准入审查：处境怎样改变何为完成 |
 | 2026-10-06 | [YITI-REN-INITIATION-REVIEW.md](../history/root-foundation/YITI-REN-INITIATION-REVIEW.md) | 启动与优先修订的前提及反例审查 |
+| 2026-10-06 | [YITI-REN-SCOPE-REVIEW.md](../history/root-foundation/YITI-REN-SCOPE-REVIEW.md) | 活动范围形成：前提与结论的独立审查 |
 | 2026-10-07 | [COMPLETION-WARRANT-LEAN-REVIEW.md](../history/root-foundation/COMPLETION-WARRANT-LEAN-REVIEW.md) | Independent statement and correspondence review of the completion formalization |
 | 2026-10-07 | [CONTINUATION-GENERATIVITY-REVIEW.md](../history/root-foundation/CONTINUATION-GENERATIVITY-REVIEW.md) | Continuation through generativity: affirmative argument and counterreview |
 | 2026-10-07 | [DIRECT-PORT-RENEWAL-REVIEW.md](../history/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md) | Independent review of direct port regeneration |
@@ -182,6 +188,7 @@ The reviews of this study, by the date each states in its opening lines (blank w
 | 2026-10-07 | [ROOT-MATHEMATICAL-INDUCTION-REVIEW.md](../history/root-foundation/ROOT-MATHEMATICAL-INDUCTION-REVIEW.md) | Independent review: induction and collective formation |
 | 2026-10-07 | [ROOT-MATHEMATICAL-UNIVERSALITY-REVIEW.md](../history/root-foundation/ROOT-MATHEMATICAL-UNIVERSALITY-REVIEW.md) | Counterreview: can structural universality establish the root's unique constitution? |
 | 2026-10-07 | [SITUATED-WARRANT-COUNTERREVIEW.md](../history/root-foundation/SITUATED-WARRANT-COUNTERREVIEW.md) | 情境判断、深度不确定性与实践根据：独立反评审 |
+| 2026-10-07 | [WANG-YANGMING-COMPLETION-REVIEW.md](../history/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md) | 王阳明整体整合：实质反审与完成范围 |
 | 2026-10-07 | [WHOLE-CONTINUATION-WARRANT-REVIEW.md](../history/root-foundation/WHOLE-CONTINUATION-WARRANT-REVIEW.md) | Whole continuation, impairment and justified finality: counterreview |
 | 2026-10-07 | [WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md](../history/root-foundation/WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md) | Whole ethical identification: repose, attenuation and achievement |
 | 2026-10-07 | [WHOLE-GENERATIVE-AUTHORITY-COUNTERREVIEW.md](../history/root-foundation/WHOLE-GENERATIVE-AUTHORITY-COUNTERREVIEW.md) | Review of the attempted whole-generative authority inference |
@@ -248,11 +255,4 @@ The reviews of this study, by the date each states in its opening lines (blank w
 |  | [BECOMING-RENEWAL-READING-REVIEW.md](../history/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md) | Independent review of the relational reading and dependence dynamics |
 |  | [DAO-NORMATIVE-REVIEW.md](../history/root-foundation/DAO-NORMATIVE-REVIEW.md) | 从生成之理到行动之道：规范桥梁审查 |
 |  | [NONDUAL-CORE-REVIEW.md](../history/root-foundation/NONDUAL-CORE-REVIEW.md) | 非二元核心与派生作用范围：独立审查 |
-|  | [NONDUAL-TREE-REVIEW.md](../history/root-foundation/NONDUAL-TREE-REVIEW.md) | 整树非二元继续的独立审查 |
-|  | [NONINSTRUMENTAL-CONCERN-REVIEW.md](../history/root-foundation/NONINSTRUMENTAL-CONCERN-REVIEW.md) | 非工具性关切：独立反例、形式范围与实现审查 |
 |  | [NONINSTRUMENTAL-ROOT-REVIEW.md](../history/root-foundation/NONINSTRUMENTAL-ROOT-REVIEW.md) | 非工具性关切的根本推导：反例、构成性路线与验收界限 |
-|  | [WANG-YANGMING-COMPLETION-REVIEW.md](../history/root-foundation/WANG-YANGMING-COMPLETION-REVIEW.md) | 王阳明整体整合：实质反审与完成范围 |
-|  | [WANG-YANGMING-REVIEW.md](../history/root-foundation/WANG-YANGMING-REVIEW.md) | 王阳明比较：反例、前提与旧形式主张审查 |
-|  | [YITI-REN-COFORMATION-REVIEW.md](../history/root-foundation/YITI-REN-COFORMATION-REVIEW.md) | 一体之仁的共同形成解释：正向论证与独立审查 |
-|  | [YITI-REN-CRITERION-REVIEW.md](../history/root-foundation/YITI-REN-CRITERION-REVIEW.md) | 准入审查：处境怎样改变何为完成 |
-|  | [YITI-REN-SCOPE-REVIEW.md](../history/root-foundation/YITI-REN-SCOPE-REVIEW.md) | 活动范围形成：前提与结论的独立审查 |

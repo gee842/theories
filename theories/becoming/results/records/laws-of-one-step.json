@@ -574,7 +574,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "1bb0cecc46f54281ef759a2bbfd9ad0fae646a01a7579cdd5bac3b33ed832adb"
+      "sha256": "6209c69a11525e469ea828197f703e6731ee273d500b121c4ca17b3bb1f20754"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -1098,6 +1098,10 @@
     {
       "en": "19 October 2026, E1 (premises read off one exchange): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: E1 revised item 3 of the theory stated in full, premise card C, the section 8.1 necessity row and a section 8.2 row, and the section 9 receipt and connectivity text). The claim is unchanged.",
       "zh": "2026年10月19日，E1（从一次交换读出的前提）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1 (the crosswalk of closing and opening, D49): THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 8 (the open programme), where X1 added the reading D49 and the range D1–D49, and in section 10 (the glossary), where X1 added the subsection \"Closing and opening: a crosswalk\" and a clause to the corpus rows 开 and 闭 / 成闭. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1（闭与开的对照，D49）：THE-THEORY-OF-BECOMING.md 重新指向。自本记录所审哈希以来，所引文字只在第 8 节（开放纲领）与第 10 节（术语表）改动：X1 在第 8 节加入读法 D49 与编号范围 D1–D49，在第 10 节加入“Closing and opening: a crosswalk”一小节，并在语料对照的“开”与“闭／成闭”两行各加一句。重新指向前已读。论断不变。"
     }
   ],
   "text_versions": [
