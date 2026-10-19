@@ -113,12 +113,12 @@ laws = [
         'Flow.Balances.half_stands', 'Flow.Balances.doubling_needs'),
     law('Overshoot, in which each formation feeds the other\'s condition, is mutually fed.',
         '在 Overshoot 中，每个形成供给对方的条件，它相互供给。', 'Overshoot.mutuallyFed'),
-    law('In Doubling a stock of seven meets draws of one, two and four: the flow balances, four of the seven stand at the '
+    law('In DoublingDraw a stock of seven meets draws of one, two and four: the flow balances, four of the seven stand at the '
         'third step, more than half, nothing stands after it, and two to the third is the stock plus one, so the bound '
         'of doubling_needs is attained.',
-        '在 Doubling 中，七的存量面对一、二、四的汲取：流平衡，第三步余七中之四，多于一半，此后为零，2 的三次方等于存量加一，'
+        '在 DoublingDraw 中，七的存量面对一、二、四的汲取：流平衡，第三步余七中之四，多于一半，此后为零，2 的三次方等于存量加一，'
         '所以 doubling_needs 的界被达到。',
-        'Doubling.flow', 'Doubling.web', 'Doubling.balances', 'Doubling.exceeds', 'Doubling.half_then_none'),
+        'DoublingDraw.flow', 'DoublingDraw.web', 'DoublingDraw.balances', 'DoublingDraw.exceeds', 'DoublingDraw.half_then_none'),
 ]
 counterexamples = [
     {'path': SRC, 'detail': {

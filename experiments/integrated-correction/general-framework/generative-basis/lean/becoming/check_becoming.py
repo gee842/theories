@@ -1592,7 +1592,7 @@ SCOPE = (
     "condition at least doubles each turn, there and downstream, and the carried amount stays within "
     "D (1 + M)^t; transmission with carriers leaving at least a and others at most b raises the share "
     "ratio at least as (a/b)^n; under balance a draw exceeding all earlier draws leaves more than half "
-    "the stock at every step it is met and needs 2^n - 1 for n steps (Doubling attains it). "
+    "the stock at every step it is met and needs 2^n - 1 for n steps (DoublingDraw attains it). "
     "Frequency: counting the steps at which anything couples, the carried amount is at most D "
     "times (1 + M) to their number, attained by a self-loop coupling at the steps of any "
     "schedule; every return around a loop at least doubles what reached it, so returns with 2^i "

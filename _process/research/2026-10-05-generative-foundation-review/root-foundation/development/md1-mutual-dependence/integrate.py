@@ -41,7 +41,7 @@ SCOPE = (
     '    "condition at least doubles each turn, there and downstream, and the carried amount stays within "\n'
     '    "D (1 + M)^t; transmission with carriers leaving at least a and others at most b raises the share "\n'
     '    "ratio at least as (a/b)^n; under balance a draw exceeding all earlier draws leaves more than half "\n'
-    '    "the stock at every step it is met and needs 2^n - 1 for n steps (Doubling attains it). "\n')
+    '    "the stock at every step it is met and needs 2^n - 1 for n steps (DoublingDraw attains it). "\n')
 README_ROW = (
     '| L4 | [`Becoming.MutualDependence`](Becoming/MutualDependence.lean) | formations whose continuations depend '
     'on one another, and the pace it gives (no premise beyond the hypotheses named): three nested readings '
@@ -51,7 +51,7 @@ README_ROW = (
     '`Flow.MutuallyFed.unrestricted`); exponential both ways around a loop of couplings at every step '
     '(`carried_pow_around`, `carried_pow_downstream`, `carried_le_pow_always`, `exponential_around`, '
     '`CoupledThroughout.exponential`); the pace of a selection (`share_ratio_pow`); a draw exceeding all earlier '
-    'draws (`Flow.Balances.half_stands`, `Flow.Balances.doubling_needs`, `Doubling.half_then_none`) |')
+    'draws (`Flow.Balances.half_stands`, `Flow.Balances.doubling_needs`, `DoublingDraw.half_then_none`) |')
 
 root = (PKG / 'Becoming.lean').read_text()
 root = once(root, 'import Becoming.Frequency\n', 'import Becoming.Frequency\nimport Becoming.MutualDependence\n')

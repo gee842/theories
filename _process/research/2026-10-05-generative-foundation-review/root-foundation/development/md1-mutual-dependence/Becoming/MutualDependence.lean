@@ -58,8 +58,8 @@ beyond the hypotheses each statement names.
   (`Flow.Balances.level_add_drawn`). Where each step's draw exceeds everything drawn before it, as a
   draw that doubles does, more than half the starting stock stands at every step of the stretch
   (`Flow.Balances.half_stands`), and such a draw lasting `n` steps needs a stock of at least
-  `2 ^ n - 1` (`Flow.Balances.doubling_needs`). In `Doubling` a stock of `7` meets draws of `1`, `2`
-  and `4`: `4` of `7` stands at the third step, and nothing after it (`Doubling.half_then_none`).
+  `2 ^ n - 1` (`Flow.Balances.doubling_needs`). In `DoublingDraw` a stock of `7` meets draws of `1`, `2`
+  and `4`: `4` of `7` stands at the third step, and nothing after it (`DoublingDraw.half_then_none`).
 
 **Readings (the AI's, decided by their place in one account, D45).**
 - "Highly entangled" reads as mutual dependence: every continuation can be affected, at some remove,
@@ -461,7 +461,7 @@ end Flow
 
 One formation takes `1`, `2` and `4` from one condition standing at `7`; nothing gives. -/
 
-namespace Doubling
+namespace DoublingDraw
 
 /-- Draws of one, two and four, then nothing. -/
 def flow : Flow Unit Unit where
@@ -508,6 +508,6 @@ theorem half_then_none :
   ⟨balances, Flow.Balances.half_stands balances (fun _ _ => rfl) exceeds 2 (Nat.lt_succ_self 2),
    rfl, rfl⟩
 
-end Doubling
+end DoublingDraw
 
 end Becoming
