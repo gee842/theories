@@ -53,7 +53,7 @@ Where weights come from and which weighting an actual unfolding has are not stat
 - Related, not a proved adapter: [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md). The losses of the sum over histories in the same module: truncation, cancellation, memory and loops.
 - Related, not a proved adapter: [returning-where-the-course-branches](returning-where-the-course-branches.md). Returning and being drawn on branching courses (P81): the weighted histories here give them a measure.
 
-**Used by:** [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md) · [typicality-by-counting](typicality-by-counting.md) · [weights-count-situations](weights-count-situations.md)
+**Used by:** [losses-of-the-sum-over-histories](losses-of-the-sum-over-histories.md) · [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) · [typicality-by-counting](typicality-by-counting.md) · [weights-count-situations](weights-count-situations.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

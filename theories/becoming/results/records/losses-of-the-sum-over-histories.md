@@ -49,7 +49,7 @@ The witnesses are on small worlds; that keeping the whole course makes every wei
 - Related, not a proved adapter: [projection-carrying-a-law](projection-carrying-a-law.md). The loss of memory is a loss of the description: configurations keeping what is needed carry the law.
 - Related, not a proved adapter: [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md). The carried difference is a sum over histories of counting weights: order j of Becoming.Loops is horizon j + 1; every sum over histories expands by order, exact up to horizon j.
 
-**Used by:** [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md) · [weights-count-situations](weights-count-situations.md)
+**Used by:** [orders-as-a-sum-over-histories](orders-as-a-sum-over-histories.md) · [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) (interpretive) · [weights-count-situations](weights-count-situations.md)
 
 <a id="来源与既有回执-sources-and-existing-receipts"></a>
 ## Sources and existing receipts

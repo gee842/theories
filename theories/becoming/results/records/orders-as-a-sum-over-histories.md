@@ -24,7 +24,7 @@
 <a id="does-not-show--未表明"></a>
 ## Does not show
 
-- A grouping by exactly i responses: it needs alternatives that commute, which weights in general do not, and is not stated for counting.
+- A grouping by exactly i responses: it needs alternatives that commute, which weights in general do not, and is not stated for counting. Stated where alternatives commute, with counting as an instance, in sums-over-histories-by-support-horizon-and-order (Becoming.HistorySums); the first-listed weighting shows some condition is needed.
 - Signed or complex carried differences: counting weights do not cancel, so there is no interference here.
 - Sums over infinitely many route points or an unbounded horizon, and their convergence.
 
@@ -40,7 +40,7 @@ Canonical source: [Routes.lean](../../../../experiments/integrated-correction/ge
 <a id="next--下一步"></a>
 ## Next
 
-Grouping by exactly i responses (for alternatives that commute); signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; an argued judgment on the readings.
+signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; an argued judgment on the readings.
 
 <details><summary>Correspondence, dependencies, sources and history</summary>
 
@@ -62,7 +62,7 @@ Ren, 12 October 2026, asked about the integration for laws that are not determin
   - Preserved conditions: As in P118: strengths supplied; the conditions of the bound and the equivalence. [Loops.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean)
 - related, not a proved adapter: [how-loops-form](how-loops-form.md). The other item of the same day: how loops form within the unfolding; "loops where both multiply" here gets its moment of formation there.
 
-**Used by:** [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
+**Used by:** [sums-over-histories-by-support-horizon-and-order](sums-over-histories-by-support-horizon-and-order.md) · [two-act-worlds-carry-the-difference](two-act-worlds-carry-the-difference.md)
 
 <a id="sources--来源"></a>
 ### Sources
@@ -114,6 +114,8 @@ Aliases: `orders as a sum over histories`, `阶作为历史之和`, `sum over ro
 - 19 October 2026, A4: THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4 placed the readings in one account (DELEGATED-CHOICES D45): the legend; section 2, the reading of where a level couples into a formation, adopted, and the conjecture on observation in its exact sense; section 3, the readings of 无明, 明, 知足 and 知止; the labels and readings of sections 7.2 to 7.5 and the last line of 7.7; section 8, its opening, the Origins row of 8.2, the decisions of 8.3, 8.4 (no reading open) and the review row of 8.8; the glossary rows on becoming, coming to rest (停息), enough, 无明, 明 and 识). The claim is unchanged.
 - 19 October 2026, N7 (the reading pass on "correction"): re-pointed THE-THEORY-OF-BECOMING.md (N7 restated the uses of "correction" in sections 3 (the boundary condition for 无明, and the one-step inquiry), 7.0, 7.2, 7.3, 7.4 ("one ground"), 7.5 (the claim and where the two parts meet), 7.6 and 8.7). Wording only; read before re-pointing. The claim is unchanged.
 - 19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.
+- 19 October 2026, HS: the grouping by exactly i responses, listed as the next step, is stated where alternatives commute in sums-over-histories-by-support-horizon-and-order; the next step and the boundary say so. The claim is unchanged.
+- 19 October 2026, HS (sums over histories by support, horizon and exact order): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: HS added the paragraph on support, splitting, exact orders and the steps between after the orders as a sum over histories, narrowed the open grouping by exactly i responses in the section 8.2 row of laws of exchange, coupling and loops and linked its record there, added a rerun to the section 8.2 integration row, and updated the section 9 receipt and counts). The claim is unchanged.
 - 14 rebinding entries (2026-10-16 to 2026-10-17): receipts re-pointed or sources rehashed after reading their changes, with the claim unchanged. Each is kept in the [record](orders-as-a-sum-over-histories.json).
 
 <a id="earlier-text--早期文本"></a>

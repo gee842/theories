@@ -12,7 +12,7 @@ Theorems and lemmas are individually listed; definitions and type declarations s
 
 | Topic | Entries | theorem/lemma occurrences |
 |---|---:|---:|
-| [Becoming pure core](lean-declarations/becoming-core.md) | 294 | 11,486 |
+| [Becoming pure core](lean-declarations/becoming-core.md) | 295 | 11,527 |
 | [Becoming bridge](lean-declarations/becoming-bridge.md) | 0 | 0 |
 | [Normative grounding and generative direction](lean-declarations/ethics.md) | 139 | 2,533 |
 | [Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
@@ -424,6 +424,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [HistoryIdealsTraces.lean](lean-declarations/becoming-core.md#module-7efc10e14cbe) | Becoming pure core |
 | [HistoryLanguages.lean](lean-declarations/becoming-core.md#module-9e9246f66d1f) | Becoming pure core |
 | [HistoryRealization.lean](lean-declarations/core.md#module-a7d9b0de6d97) | Generative core and relational structure |
+| [HistorySums.lean](lean-declarations/becoming-core.md#module-de8b7fa464e2) | Becoming pure core |
 | [Horizon.lean](lean-declarations/becoming-core.md#module-35179900d759) | Becoming pure core |
 | [HorizonWebs.lean](lean-declarations/becoming-core.md#module-dc492bc90a94) | Becoming pure core |
 | [IdealWarrant.lean](lean-declarations/abstraction.md#module-e3abf1a9ab66) | Abstraction, applicability and constitution |

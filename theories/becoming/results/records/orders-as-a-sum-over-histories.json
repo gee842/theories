@@ -92,8 +92,8 @@
   ],
   "does_not_show": [
     {
-      "zh": "按“恰好 i 次回应”的分组：需要相加可交换，对一般的权重不成立，对计数没有陈述。",
-      "en": "A grouping by exactly i responses: it needs alternatives that commute, which weights in general do not, and is not stated for counting.",
+      "zh": "按“恰好 i 次回应”的分组：需要相加可交换，对一般的权重不成立，对计数没有陈述。 选项可交换时已在 sums-over-histories-by-support-horizon-and-order（Becoming.HistorySums）中陈述，计数是其一例；先列者权重表明需要某个条件。",
+      "en": "A grouping by exactly i responses: it needs alternatives that commute, which weights in general do not, and is not stated for counting. Stated where alternatives commute, with counting as an instance, in sums-over-histories-by-support-horizon-and-order (Becoming.HistorySums); the first-listed weighting shows some condition is needed.",
       "kind": "scope"
     },
     {
@@ -121,8 +121,8 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261015T204525.767887Z): the 39 declarations of Becoming.Routes, 30 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 155; reviewed by the eighteenth review (AI, read-only, no Lean rebuild), whose corrections are applied."
   },
   "next_delta": {
-    "zh": "按恰好 i 次回应分组（对可交换的相加）；带号的携带差别与相消；无穷多路线点与无界的视界；独立审查；对读法的论证判断。",
-    "en": "Grouping by exactly i responses (for alternatives that commute); signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; an argued judgment on the readings."
+    "zh": "带号的携带差别与相消；无穷多路线点与无界的视界；独立审查；对读法的论证判断。",
+    "en": "signed carried differences and cancellation; infinitely many route points and unbounded horizons; an independent review; an argued judgment on the readings."
   },
   "correspondence": {
     "zh": "Ren 2026-10-12 问不确定的律的积分（“how how accurate can we do that uh what is the limitation do we have losses”）。Ren 2026-10-16 取了读法：所问的积分是 P82 的历史之和及其四种损失，P118 的阶是同一结构类的，按回应次数组织，如同费曼图按顶点数，两者尚未连起来；并说“joining P82's sum over histories with P118's orders … let's finish both”。本结果完成接合，回答 how-a-carried-difference-grows 与 losses-of-the-sum-over-histories 中把两者接上的一项。读法（AI 的，Ren 2026-10-16 同意）：沿时间往回的路线是历史，它的步是回应（顶点），顶点之间水平保持，如同传播子对中间时刻求和；两个积分是一个，P82 的回路损失就是 P118 的失控；对应是结构的，不是物理的，计数的权重不相消。数学是标准的：线性递推的路径之和与按相互作用次数的展开。",
@@ -369,7 +369,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "cbfca85bdfe0ed104b80cd16d08776da57cdfb8e90515a6deaec5fc0186dc589"
+      "sha256": "6cd71dd634abef26e4a456abee102f3b94cc17fe0db93758d67e1525cf8b99b0"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -617,6 +617,14 @@
     {
       "en": "19 October 2026, A4-L (Becoming.Ideals, Becoming.HistoryIdeals): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: A4-L added the section 2 paragraph on what a finite stretch refutes in every process, a clause of the theory stated whole, its rerun in the 8.1 integration row, the 8.2 Origins row, the 8.4 bullet (landed), the 8.6 entries under double-negation elimination and LPO, and the section 9 counts, receipt, L2 line and instance list). The claim is unchanged.",
       "zh": "2026年10月19日，A4-L（Becoming.Ideals、Becoming.HistoryIdeals）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
+    },
+    {
+      "en": "19 October 2026, HS: the grouping by exactly i responses, listed as the next step, is stated where alternatives commute in sums-over-histories-by-support-horizon-and-order; the next step and the boundary say so. The claim is unchanged.",
+      "zh": "2026年10月19日，HS：列为下一步的按恰 i 次回应分组，选项可交换时已在 sums-over-histories-by-support-horizon-and-order 中陈述；下一步与边界据此改写。论断不变。"
+    },
+    {
+      "en": "19 October 2026, HS (sums over histories by support, horizon and exact order): THE-THEORY-OF-BECOMING.md re-pointed after reading the change (THE-THEORY-OF-BECOMING.md: HS added the paragraph on support, splitting, exact orders and the steps between after the orders as a sum over histories, narrowed the open grouping by exactly i responses in the section 8.2 row of laws of exchange, coupling and loops and linked its record there, added a rerun to the section 8.2 integration row, and updated the section 9 receipt and counts). The claim is unchanged.",
+      "zh": "2026年10月19日，HS（历史之和：支撑、视界与确切阶）：读过改动后，THE-THEORY-OF-BECOMING.md 重新指向。论断不变。"
     }
   ],
   "text_versions": [

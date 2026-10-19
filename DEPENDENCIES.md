@@ -5,7 +5,7 @@
 
 [Home](README.md) · [Start here](MAP.md) · [Results](RESULTS.md) · [Scopes](GOALS.md) · [Connections](DEPENDENCIES.md) · [Open questions](OPEN-QUESTIONS.md) · [Contribute](_process/RESULT-WORKFLOW.md)
 
-275 registered results: 258 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 703 curated edges join 229 results to the results they draw on.
+276 registered results: 259 with a recorded Lean receipt (`recorded-checked`), 13 reviewed at their stated scope (`reviewed-scoped`) and 4 open targets (`open`). 706 curated edges join 230 results to the results they draw on.
 
 Each line names a result, then, after ←, the results it draws on. A plain edge is `formal-reuse`: the consumer's proof uses the producer's theorem; *interpretive* and *application* edges are marked. Each edge has a stable anchor `consumer--producer`. The edge's detail, the producer's output, the consumer's input, the retained conditions and the connection evidence are on the consumer's record page, whose "Used by" line lists the reverse edges. Curated edges retain their exact interpretation; file imports can be explored with `make research-find QUERY=GenerativeCore`, and an import is not itself a proof of scientific composition.
 
@@ -200,6 +200,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 - [substitution-preserves-consumption][] ← <a id="substitution-preserves-consumption--relational-renewal-classification"></a>[relational-renewal-classification][] · <a id="substitution-preserves-consumption--becoming-dependence-dynamics"></a>[becoming-dependence-dynamics][]
 - [subthreshold-registration][] ← <a id="subthreshold-registration--testing-within-registration"></a>[testing-within-registration][] · <a id="subthreshold-registration--closing-needs-net-draw"></a>[closing-needs-net-draw][] · <a id="subthreshold-registration--levels-of-closure"></a>[levels-of-closure][]
 - [sum-over-histories-exact][] ← <a id="sum-over-histories-exact--projection-carrying-a-law"></a>[projection-carrying-a-law][] *(interpretive)*
+- [sums-over-histories-by-support-horizon-and-order][] ← <a id="sums-over-histories-by-support-horizon-and-order--sum-over-histories-exact"></a>[sum-over-histories-exact][] · <a id="sums-over-histories-by-support-horizon-and-order--orders-as-a-sum-over-histories"></a>[orders-as-a-sum-over-histories][] · <a id="sums-over-histories-by-support-horizon-and-order--losses-of-the-sum-over-histories"></a>[losses-of-the-sum-over-histories][] *(interpretive)*
 - [support-from-the-supported][] ← <a id="support-from-the-supported--coming-and-ceasing-keep-pace"></a>[coming-and-ceasing-keep-pace][] · <a id="support-from-the-supported--more-needs-renewers"></a>[more-needs-renewers][] · <a id="support-from-the-supported--laws-of-one-step"></a>[laws-of-one-step][]
 - [supported-renewal-recovery][] ← <a id="supported-renewal-recovery--relational-renewal-classification"></a>[relational-renewal-classification][] *(application)*
 - [target-capture][] ← <a id="target-capture--evolution-on-descent"></a>[evolution-on-descent][] · <a id="target-capture--laws-of-one-step"></a>[laws-of-one-step][] · <a id="target-capture--recurrence-without-premise"></a>[recurrence-without-premise][]
@@ -454,6 +455,7 @@ Each line names a result, then, after ←, the results it draws on. A plain edge
 [substitution-preserves-consumption]: theories/becoming/results/records/substitution-preserves-consumption.md
 [subthreshold-registration]: theories/becoming/results/records/subthreshold-registration.md
 [sum-over-histories-exact]: theories/becoming/results/records/sum-over-histories-exact.md
+[sums-over-histories-by-support-horizon-and-order]: theories/becoming/results/records/sums-over-histories-by-support-horizon-and-order.md
 [support-from-the-supported]: theories/becoming/results/records/support-from-the-supported.md
 [supported-renewal-recovery]: theories/becoming/results/records/supported-renewal-recovery.md
 [target-capture]: theories/becoming/results/records/target-capture.md

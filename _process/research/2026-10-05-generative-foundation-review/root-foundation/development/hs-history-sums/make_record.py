@@ -102,10 +102,10 @@ laws = [
            'binom n i times M to the i: the ways to place i responses among n steps.',
      'zh': '一个构形、基础权重一、回应权重 M 时，视界 n 上的确切 i 阶是 binom n i 乘 M 的 i 次方：在 n 步中放 i 次回应的方式数。',
      'declarations': h('Routes.SelfLoop.exactly_eq')},
-    {'en': 'Grouping by order needs alternatives that commute: the weighting that keeps the cost of the first possible '
-           'course in listed order satisfies every law of weights, its alternatives do not commute, and there one '
+    {'en': 'Grouping by order needs alternatives that commute: the weighting that keeps the first possible course in '
+           'listed order satisfies every law of weights, its alternatives do not commute, and there one '
            'step\'s sum over histories is not the sum of its exact orders.',
-     'zh': '按阶分组需要选项可交换：保留按列出次序第一个可能历程之代价的权重满足权重的每条律，其选项不可交换，'
+     'zh': '按阶分组需要选项可交换：保留按列出次序第一个可能历程的权重满足权重的每条律，其选项不可交换，'
            '那里一步的历史之和不是其各确切阶之和。',
      'declarations': h('HistorySums.firstAdd', 'HistorySums.firstMul', 'HistorySums.firstListed',
                        'HistorySums.firstListed_not_comm', 'HistorySums.firstGround', 'HistorySums.firstResponse',
@@ -132,10 +132,10 @@ record = {
     'family': json.loads((RECORDS / 'orders-as-a-sum-over-histories.json').read_text())['family'],
     'reviewed_at_utc': NOW,
     'statement': {
-        'en': 'A weighting vanishing off a possibility sums to nothing where it does not reach; the transfer splits at '
-              'every horizon; where alternatives commute, exact order i sums the courses with exactly i responses, '
-              'the orders of Routes being its partial sums; what is carried depends only on the steps between.',
-        'zh': '在可能性以外为零的权重在它达不到处和为零；转移在每个视界拆分；选项可交换时确切 i 阶是恰有 i 次回应的历程之和，'
+        'en': 'A weighting that vanishes off a possibility sums only where the possibility reaches; the transfer '
+              'splits at every horizon; where alternatives commute, exact order i sums the courses with exactly i responses, '
+              'Routes’ orders being its partial sums; what is carried depends only on the steps between.',
+        'zh': '在可能性以外为零的权重只在可能性所及处有和；转移在每个视界拆分；选项可交换时确切 i 阶是恰有 i 次回应的历程之和，'
               'Routes 的各阶是其部分和；所携带的只依赖其间之步。'},
     'laws': laws,
     'hypotheses': [
