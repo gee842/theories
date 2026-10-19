@@ -100,20 +100,20 @@ theorem square_run_le (val : σ → Square.Cell → Bool) (r : Run P) (n : Nat) 
 /-- **A cycle's bound over a run.** Where the cycle holds an odd number of differ relations, every
 context-free description of a run meets at most `n` of its `n + 1` relations on average. -/
 theorem cycle_run_le {n : Nat} {pol : Nat → Bool} {close : Bool}
-    (odd : Cycle.polarity n pol close = true) (val : σ → Nat → Bool) (r : Run P) (m : Nat) :
+    (odd : Gluing.Cycle.polarity n pol close = true) (val : σ → Nat → Bool) (r : Run P) (m : Nat) :
     total (readings val r m)
-        (fun v => total (Cycle.edges n) (fun k => cond ((Cycle.system n pol close).met k v) 1 0)) +
+        (fun v => total (Gluing.Cycle.edges n) (fun k => cond ((Gluing.Cycle.system n pol close).met k v) 1 0)) +
         m ≤ m * (n + 1) :=
-  along_le val r m (Cycle.mixture_le odd _)
+  along_le val r m (Gluing.Cycle.mixture_le odd _)
 
 /-- **Some context-free description of a run meets every relation of a cycle at every step exactly
 where the cycle holds an even number of differ relations.** -/
 theorem cycle_run_iff (n : Nat) (pol : Nat → Bool) (close : Bool) (r : Run P) :
-    (∃ val : σ → Nat → Bool, ∀ t k, k ∈ Cycle.edges n →
-        (Cycle.system n pol close).support k (val (r.state t))) ↔
-      Cycle.polarity n pol close = false :=
-  ⟨fun ⟨val, all⟩ => (Cycle.met_iff_even n pol close).mp ⟨val (r.state 0), all 0⟩,
-   fun even => match (Cycle.met_iff_even n pol close).mpr even with
+    (∃ val : σ → Nat → Bool, ∀ t k, k ∈ Gluing.Cycle.edges n →
+        (Gluing.Cycle.system n pol close).support k (val (r.state t))) ↔
+      Gluing.Cycle.polarity n pol close = false :=
+  ⟨fun ⟨val, all⟩ => (Gluing.Cycle.met_iff_even n pol close).mp ⟨val (r.state 0), all 0⟩,
+   fun even => match (Gluing.Cycle.met_iff_even n pol close).mpr even with
     | ⟨v, all⟩ => ⟨fun _ => v, fun _ => all⟩⟩
 
 /-! ## Readings in context meet every context at every step -/

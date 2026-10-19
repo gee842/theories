@@ -69,11 +69,11 @@ are taken in the other order.
   needed. Activity needing support holds after commuting where no dependence at the two outer
   steps crosses the sides (`Web.commute_dependent`); in `Crossing` the two exchanges share no
   relatum and the sides split them, yet a relatum depends on a condition the other exchange
-  ends, and in the other order it is active without support (`Crossing.order_registers`). Only
+  ends, and in the other order it is active without support (`Order.Crossing.order_registers`). Only
   active relata giving holds after commuting where no relatum giving across one of the steps
   has its activity begun by the first or ended by the second (`Flow.Commuted.acting`); in
   `Arising` the relatum arising across the first step gives across the second, and in the other
-  order it gives before it is active (`Arising.order_registers`).
+  order it gives before it is active (`Order.Arising.order_registers`).
 
 * **The order of exchanges as an object (P78b).** `Footprinted X` is a world's flow and web with
   a footprint: at each step, the relata the exchange across it touches, decided relatum by
@@ -120,10 +120,10 @@ are taken in the other order.
   `Reorders`, joined or not, the counts of arising and ceasing over a stretch holding every
   commuted pair are kept, with activity decided (`Reorders.counts`). `Reorders` itself keeps
   neither the order nor activity needing support nor only active relata giving: in `Crossing` and
-  `Arising` every footprint containing the two exchanges joins them (`Crossing.joined`,
-  `Arising.joined`), and taking them in the other order is a step of `Reorders` after which
+  `Arising` every footprint containing the two exchanges joins them (`Order.Crossing.joined`,
+  `Order.Arising.joined`), and taking them in the other order is a step of `Reorders` after which
   activity needing support, respectively only active relata giving, fails
-  (`Crossing.reorders_joined`, `Arising.reorders_joined`).
+  (`Order.Crossing.reorders_joined`, `Order.Arising.reorders_joined`).
 * **Removing idle steps.** Given a stuttering `ρ` and its moving steps `σ` (`Stutter.Moves`; each
   exists by `Stutter.crosses` and is the only one, `Stutter.moving_unique`), a world idle at the
   idle steps of `ρ` (`World.IdleAt`) has them removed by keeping the exchanges of the moving steps
@@ -910,7 +910,7 @@ end Web
 
 /-! ### The halving: every step read twice -/
 
-namespace Halving
+namespace Order.Halving
 
 /-- `Pulse.half` reads every step twice, `0, 0, 1, 1, 2, 2, …`: a stuttering idle at every
 even step. -/
@@ -929,7 +929,7 @@ theorem idles (N : Nat) : ∃ n, N ≤ n ∧ Pulse.half (n + 1) = Pulse.half n :
   ⟨2 * N, Nat.le_trans (Nat.le_add_right N N) (Nat.le_of_eq (Nat.two_mul N).symm),
    (Pulse.half_odd N).trans (Pulse.half_even N).symm⟩
 
-end Halving
+end Order.Halving
 
 namespace Expansion
 
@@ -942,7 +942,7 @@ instance kind_decided : DecidableEq Kind := fun a b => match a, b with
 /-- More without end is not kept by inserting idle steps: the expansion is more without end,
 and read with every step taken twice it is not. -/
 theorem more_step_relative : flow.More [()] ∧ ¬ (flow.sample Pulse.half).More [()] :=
-  ⟨more.2.2.2.2.2.2, Flow.sample_not_more Halving.idles [()]⟩
+  ⟨more.2.2.2.2.2.2, Flow.sample_not_more Order.Halving.idles [()]⟩
 
 end Expansion
 
@@ -1793,7 +1793,7 @@ def firstSide : Nat → Bool
   | 0 => true
   | _ + 1 => false
 
-namespace Crossing
+namespace Order.Crossing
 
 /-- The first relatum is active at the first step only; the third throughout. -/
 def act : Nat → Nat → Bool
@@ -1889,9 +1889,9 @@ theorem order_registers :
      Nat.not_succ_le_zero 1 (Nat.le_trans (dependent' 1 (0 : Nat) active (1 : Nat) requires)
        (Nat.le_of_eq level))⟩
 
-end Crossing
+end Order.Crossing
 
-namespace Arising
+namespace Order.Arising
 
 /-- The first relatum is active from the step after the first. -/
 def act : Nat → Nat → Bool
@@ -1983,7 +1983,7 @@ theorem order_registers :
        (sideC := firstSide) (n := 0) (f := 0) (Nat.succ_ne_self 0).symm)
        (acting' 0 (0 : Nat) (1 : Nat) mem gives) : act 0 0 = true)⟩
 
-end Arising
+end Order.Arising
 
 
 /-! ## The order of exchanges as an object -/
@@ -2777,7 +2777,7 @@ theorem Reorders.counts {X : Type} {S m : Nat} (xs : List X) :
 
 /-! ### Where the order makes a difference, every footprint joins the two exchanges -/
 
-namespace Crossing
+namespace Order.Crossing
 
 /-- **Every footprint containing the two exchanges joins them.** The first relatum, which the
 first exchange touches (it ceases), depends on the second, which the second touches (it ceases to
@@ -2803,9 +2803,9 @@ theorem reorders_joined :
     web.Dependent ∧ ¬ (web.commute 0 firstSide firstSide).Dependent :=
   ⟨.swap 0 firstSide trivial split (.refl _ _), joined, dependent, order_registers.2.2.2.2⟩
 
-end Crossing
+end Order.Crossing
 
-namespace Arising
+namespace Order.Arising
 
 /-- Every footprint containing the two exchanges joins them: the first relatum arises across the
 first step and gives across the second. -/
@@ -2830,7 +2830,7 @@ theorem reorders_joined :
     flow.Acting web ∧ ¬ (flow.swap 0).Acting (web.commute 0 firstSide firstSide) :=
   ⟨.swap 0 firstSide trivial split (.refl _ _), joined, acting, order_registers.2.2.2.2⟩
 
-end Arising
+end Order.Arising
 
 
 /-! ### Bringing one exchange forward -/

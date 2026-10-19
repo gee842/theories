@@ -13,9 +13,9 @@ reading, which includes every active event, and the unfolding lemmas of the whol
 that the core lacked.
 
 * **The whole-run reading.** It withholds every event of a consuming formation
-  (`wholeRun_withholds_consuming`), and living significance on it (`G0`) holds exactly where the
-  active events of non-consuming formations fall under the relevance `positive`, a parameter whose
-  name carries no valence (`g0_wholeRun_iff`). The course without the
+  (`wholeRun_withholds_consuming`), and living significance on it (`LivingSignificance`) holds exactly where the
+  active events of non-consuming formations fall under `relevance`, a parameter whose
+  name carries no valence (`livingSignificance_wholeRun_iff`). The course without the
   focal formation is dependent, on its unfolding and its web (`absent_dependent`,
   `absent_web_dependent`), no formation consumes in it (`absent_not_consuming`), and its
   sustaining formation's events are included at every step (`absent_included`).
@@ -49,21 +49,21 @@ theorem wholeRun_withholds_consuming (U : W → Unfolding F C) {w : W} {f : F}
     (consuming : ConsumingIn (U w) f) (t : Nat) : ¬ Ranking.wholeRun U w (f, t) :=
   fun included => included.2 consuming
 
-/-- **Living significance on the whole-run reading** (`G0`) holds exactly where the active events
-of non-consuming formations fall under the relevance `positive`; it says nothing of consumers' events. -/
-theorem g0_wholeRun_iff (U : W → Unfolding F C) (positive : W → F × Nat → Prop) :
-    G0 (Ranking.frame (Ranking.wholeRun U)) (fun _ => True) positive ↔
-      ∀ w f t, (U w).active t f → ¬ ConsumingIn (U w) f → positive w (f, t) :=
+/-- **Living significance on the whole-run reading** (`LivingSignificance`) holds exactly where the active events
+of non-consuming formations fall under `relevance`; it says nothing of consumers' events. -/
+theorem livingSignificance_wholeRun_iff (U : W → Unfolding F C) (relevance : W → F × Nat → Prop) :
+    LivingSignificance (Ranking.frame (Ranking.wholeRun U)) (fun _ => True) relevance ↔
+      ∀ w f t, (U w).active t f → ¬ ConsumingIn (U w) f → relevance w (f, t) :=
   ⟨fun g0 w f t active notConsuming => g0 w (f, t) trivial ⟨active, notConsuming⟩,
    fun h w e _ included => h w e.1 e.2 included.1 included.2⟩
 
 /-- Living significance on the whole-run reading, read on the courses' webs: every active event of a formation
-that does not consume on its course's web falls under the relevance `positive`. -/
-theorem g0_wholeRun_web_iff (U : W → Unfolding F C) (positive : W → F × Nat → Prop) :
-    G0 (Ranking.frame (Ranking.wholeRun U)) (fun _ => True) positive ↔
+that does not consume on its course's web falls under `relevance`. -/
+theorem livingSignificance_wholeRun_web_iff (U : W → Unfolding F C) (relevance : W → F × Nat → Prop) :
+    LivingSignificance (Ranking.frame (Ranking.wholeRun U)) (fun _ => True) relevance ↔
       ∀ w f t, (Web.static (U w)).active t f → ¬ (Web.static (U w)).ConsumingIn f →
-        positive w (f, t) :=
-  (g0_wholeRun_iff U positive).trans
+        relevance w (f, t) :=
+  (livingSignificance_wholeRun_iff U relevance).trans
     ⟨fun relevant w f t active notConsuming => relevant w f t active
         fun consuming => notConsuming ((Web.static_consumingIn _ _).mpr consuming),
      fun relevant w f t active notConsuming => relevant w f t active

@@ -1,5 +1,5 @@
 import Becoming.Frame
-import Becoming.Generation
+import Becoming.Arising
 import Becoming.Recurrence
 
 /-!
@@ -33,11 +33,11 @@ process and the frame are readings of the one unfolding rather than a ground ben
 The second part holds the run readings of the trunk's laws: renewal and consumption along a run
 (`Conditions.along`, the `Renewable` witness runs), dependence along a run (`Dependence.along`,
 `Web.conditions_along`, the `Crossing`, `Pinned` and `Renewable` runs), and the runs of
-`Becoming.Return` and `Becoming.Generation`. The laws themselves are stated over the web in those
+`Becoming.Restoration` and `Becoming.Arising`. The laws themselves are stated over the web in those
 modules.
 
 Every declaration moved here unchanged, with its name, from `Becoming.Unfolding`,
-`Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return` or `Becoming.Generation` (study
+`Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Restoration` or `Becoming.Arising` (study
 section 180, board item W). Every declaration has an empty axiom report.
 
 A third part holds the readings of `Becoming.Recurrence` on runs (the run of a determined law,
@@ -119,7 +119,7 @@ from it, is its standing before, with what is given to it. -/
 def exchange (R : Type) : Process (R → Nat) (Exchange R) :=
   ⟨fun level m level' => ∀ c, level' c + m.taken c = level c + m.given c⟩
 
-namespace Circulation
+namespace Labelled.Circulation
 
 /-- One relatum standing at one. -/
 def one : Unit → Nat := fun _ => 1
@@ -144,7 +144,7 @@ theorem start_needed :
   ⟨⟨fun _ _ => 0, fun _ => idle, fun _ _ => rfl⟩, ⟨fun _ _ => 1, fun _ => idle, fun _ _ => rfl⟩,
    fun _ => rfl, fun _ same => absurd (show (0 : Nat) = 1 from same) (by decide)⟩
 
-end Circulation
+end Labelled.Circulation
 
 end Exchange
 
@@ -301,7 +301,7 @@ def Bisimulation (F : Frame S A C) (G : Frame S' A C) (B : S → S' → Prop) : 
     (∀ a t', G.P.step s' a t' → ∃ t, F.P.step s a t ∧ B t t')
 
 /-- Two configurations are alike where some bisimulation relates them: they relate alike to
-every continuation. `ReferencePlan.Alike` is another sense, two signals agreeing at the addresses
+every continuation. `ReferencePlan.AgreeOn` is another sense, two signals agreeing at the addresses
 of a plan. -/
 def Alike (F : Frame S A C) (G : Frame S' A C) (s : S) (s' : S') : Prop :=
   ∃ B, Bisimulation F G B ∧ B s s'
@@ -804,7 +804,7 @@ end Pinned
 
 end Becoming
 
-/-! ## Return along a run (moved from `Becoming.Return`) -/
+/-! ## Return along a run (moved from `Becoming.Restoration`) -/
 
 namespace Becoming
 
@@ -849,7 +849,7 @@ end Renewable
 
 end Becoming
 
-/-! ## Generation along a run (moved from `Becoming.Generation`) -/
+/-! ## Generation along a run (moved from `Becoming.Arising`) -/
 
 namespace Becoming
 
@@ -858,7 +858,7 @@ variable {F C : Type}
 namespace Renewable
 
 /-- Drawing exactly what is renewed keeps every dependence, and nothing ever arises. -/
-theorem renewal_without_generation :
+theorem renewal_without_arising :
     (conditions.dependence.along withinRenewal).Renewed () ∧
     ∀ t f, ¬ (conditions.dependence.along withinRenewal).Arises t f :=
   ⟨fun _ g depends => match g, depends with

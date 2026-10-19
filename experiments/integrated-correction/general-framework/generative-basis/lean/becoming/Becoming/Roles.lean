@@ -66,24 +66,24 @@ Results:
   it is given at least the standing it arises with (`Embodied.given_of_arises`), so its
   arising replenishes every family containing it (`Embodied.replenishes`). Where
   embodied members of a family arise at arbitrarily late steps, its replenishment recurs
-  whatever is taken (`generation_needs_replenishment`): generation carries the
+  whatever is taken (`embodiedArising_needs_replenishment`): generation carries the
   requirement itself, not through the uptake it brings as in
   `Flow.uptake_needs_replenishment`.
 * Generation under dissipation. Whatever gives to a family dissipated on takes from it
   (`Flow.DissipatesOn.takes_of_gives`), so the arising of an embodied member of a family
   dissipated on lowers the family's stock (`Embodied.arising_lowers_on`), as under
   dissipation for a family without repetition closed across the step
-  (`Embodied.arising_lowers`): the premise of `Web.dissipation_generation_not_recurring`, supplied
+  (`Embodied.arising_lowers`): the premise of `Web.dissipation_arising_not_recurring`, supplied
   there as physical, here follows from balance, dissipation and embodiment. The arising comes with
   another member falling across the same step (`Embodied.arising_with_fall`). Embodied
   members of a family dissipated on from some step on do not arise at arbitrarily late
-  steps (`generation_not_recurring_on`). So a finite family without repetition in which embodied
+  steps (`embodiedArising_not_recurring_on`). So a finite family without repetition in which embodied
   members arise at arbitrarily late steps is not closed from any step on
-  (`generation_opens`), though the exchange that opens it need not touch it
+  (`embodiedArising_opens`), though the exchange that opens it need not touch it
   (`SprayShuttle`); enclosed around from some step on, it draws in: at arbitrarily late
-  steps some relatum gives to it and takes from beyond it (`generation_draws_in`). If
+  steps some relatum gives to it and takes from beyond it (`embodiedArising_draws_in`). If
   finitely many relata are all there is, embodied relata do not arise at arbitrarily
-  late steps (`generation_not_recurring`). What these use of embodiment is that arising is a
+  late steps (`embodiedArising_not_recurring`). What these use of embodiment is that arising is a
   coming to stand; where activity and standing are out of step, as in dormancy,
   `Becoming.Reserve` states what generation then bears.
 * Witnesses. A bee and a flower, each depending on itself and on the other and drawing
@@ -95,7 +95,7 @@ Results:
   nothing else (`Brood`); giving without taking, the brood is not dissipative
   (`Brood.not_dissipative`), and each generation arises in the family of it and the one
   before, closed across the step, with nothing falling (`Brood.rise_without_fall`).
-* Each premise of `generation_not_recurring` is needed. Two sides handing one standing back and
+* Each premise of `embodiedArising_not_recurring` is needed. Two sides handing one standing back and
   forth, each embodied, bear unceasing generation in a closed world of two relata
   without dissipation (`Shuttle`). Burning a fresh fuel at every step, they bear it under
   dissipation, every finite family containing a side is open at arbitrarily late steps,
@@ -624,7 +624,7 @@ theorem Embodied.replenishes (balances : L.Balances W) {x : X} (embodied : W.Emb
 /-- Generation carries the requirement itself, from a step on: where the family is balanced
 on from `T` on and embodied members of it arise at arbitrarily late steps, it is
 replenished at some step from `T` on, whatever is taken. -/
-theorem generation_needs_replenishment_from {cs : List X} {T : Nat}
+theorem embodiedArising_needs_replenishment_from {cs : List X} {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W cs t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.Embodied x ∧ W.Arises t x) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
@@ -632,10 +632,10 @@ theorem generation_needs_replenishment_from {cs : List X} {T : Nat}
 
 /-- Generation carries the requirement itself: where embodied members of a family arise at
 arbitrarily late steps, replenishment of the family recurs, whatever is taken. -/
-theorem generation_needs_replenishment (balances : L.Balances W) {cs : List X}
+theorem embodiedArising_needs_replenishment (balances : L.Balances W) {cs : List X}
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.Embodied x ∧ W.Arises t x) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
-  generation_needs_replenishment_from (fun t _ => balances.on cs t) arising
+  embodiedArising_needs_replenishment_from (fun t _ => balances.on cs t) arising
 
 /-- The arising of an embodied member of a family balanced and dissipated on across the
 step lowers the family's stock. -/
@@ -675,23 +675,23 @@ theorem Embodied.arising_with_fall (balances : L.Balances W) {ds : List X} {t : 
 
 /-- Embodied members of a family balanced and dissipated on from some step on do not arise
 at arbitrarily late steps. Nothing is asked of the steps before. -/
-theorem generation_not_recurring_from {ds : List X} {T : Nat}
+theorem embodiedArising_not_recurring_from {ds : List X} {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
   fun arising => Flow.standing_not_recurring_from balances dissipates (Embodied.coming arising)
 
 /-- Embodied members of a family dissipated on from some step on do not arise at
 arbitrarily late steps. -/
-theorem generation_not_recurring_on (balances : L.Balances W) {ds : List X} {T : Nat}
+theorem embodiedArising_not_recurring_on (balances : L.Balances W) {ds : List X} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
-  generation_not_recurring_from (fun t _ => balances.on ds t) dissipates
+  embodiedArising_not_recurring_from (fun t _ => balances.on ds t) dissipates
 
 /-- Under dissipation, a finite family without repetition in which embodied members arise
 at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some
 formation taking part exchanges with a relatum outside it. That exchange need not touch
 the family (`SprayShuttle`). -/
-theorem generation_opens (balances : L.Balances W) (dissipative : L.Dissipative)
+theorem embodiedArising_opens (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List X} (distinct : Distinct ds)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
@@ -701,7 +701,7 @@ theorem generation_opens (balances : L.Balances W) (dissipative : L.Dissipative)
 repetition arise at arbitrarily late steps, and from `T₀` on the family is balanced on,
 enclosed around, and every family closed across each step is dissipated on, at arbitrarily
 late steps some relatum gives to the family and takes from a relatum beyond it. -/
-theorem generation_draws_in_from {ds : List X} (distinct : Distinct ds) {T₀ : Nat}
+theorem embodiedArising_draws_in_from {ds : List X} (distinct : Distinct ds) {T₀ : Nat}
     (around : ∀ t, T₀ ≤ t → L.Around ds t) (balances : ∀ t, T₀ ≤ t → L.BalancesOn W ds t)
     (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
@@ -713,7 +713,7 @@ theorem generation_draws_in_from {ds : List X} (distinct : Distinct ds) {T₀ : 
 without repetition arise at arbitrarily late steps and the family is enclosed around from
 some step on, at arbitrarily late steps some relatum gives to the family and takes from a
 relatum beyond it. -/
-theorem generation_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
+theorem embodiedArising_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List X} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
@@ -721,7 +721,7 @@ theorem generation_draws_in (balances : L.Balances W) (dissipative : L.Dissipati
 
 /-- If finitely many relata are all there is, embodied relata do not arise at arbitrarily
 late steps under dissipation. -/
-theorem generation_not_recurring (balances : L.Balances W) (dissipative : L.Dissipative)
+theorem embodiedArising_not_recurring (balances : L.Balances W) (dissipative : L.Dissipative)
     {all : List X} (distinct : Distinct all) (every : ∀ x, x ∈ all) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ W.Embodied x ∧ W.Arises t x :=
   fun arising => Flow.standing_not_recurring balances dissipative distinct every fun N =>
@@ -1384,7 +1384,7 @@ theorem throughput : flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
 late steps: the fuels burnt are not contained in any finite family. -/
 theorem frontier {ds : List Relatum} (distinct : Distinct ds) {x : Bool}
     (side : Relatum.side x ∈ ds) (T : Nat) : ¬ ∀ t, T ≤ t → flow.ClosedAt ds t :=
-  Web.generation_opens balances dissipative distinct (fun N => match Shuttle.recurs x N with
+  Web.embodiedArising_opens balances dissipative distinct (fun N => match Shuttle.recurs x N with
     | ⟨t, later, arises⟩ => ⟨t, .side x, later, side, fun _ => Iff.rfl, arises⟩) T
 
 /-- Every step is enclosed around the two sides, by the sides and the fuel burnt. -/
@@ -1410,7 +1410,7 @@ theorem around (t : Nat) : flow.Around [.side true, .side false] t :=
 /-- So generation in the family of the sides draws in: at arbitrarily late steps the side
 that gives to the family takes from beyond it, the fuel. -/
 theorem draws_in (N : Nat) : ¬ ∀ t, N ≤ t → flow.Inward [.side true, .side false] t :=
-  Web.generation_draws_in (ds := [.side true, .side false]) balances dissipative
+  Web.embodiedArising_draws_in (ds := [.side true, .side false]) balances dissipative
     ⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩
     (T₀ := 0) (fun t _ => around t)
     (fun M => match Shuttle.recurs true M with
@@ -1546,12 +1546,12 @@ theorem spray_shuttle :
     | _, .tail _ (.tail _ no) => (nomatch no),
    fun _ _ => ⟨rfl, rfl⟩, even_sum⟩
 
-/-- The conclusion of `Web.generation_opens` holds, met by the sink's exchange, which never
-touches the family; and no step is enclosed around the family, as `generation_draws_in`
+/-- The conclusion of `Web.embodiedArising_opens` holds, met by the sink's exchange, which never
+touches the family; and no step is enclosed around the family, as `embodiedArising_draws_in`
 needs. -/
 theorem opens_anyway (T : Nat) :
     (¬ ∀ t, T ≤ t → flow.ClosedAt sides t) ∧ ∀ t, ¬ flow.Around sides t :=
-  ⟨Web.generation_opens balances dissipative sides_distinct
+  ⟨Web.embodiedArising_opens balances dissipative sides_distinct
     (fun N => match Shuttle.recurs true N with
       | ⟨t, later, arises⟩ => ⟨t, .side true, later, .head _, fun _ => Iff.rfl, arises⟩) T,
    fun t ⟨es, distinct, _, closed⟩ => unenclosed t ⟨es, distinct, closed⟩⟩

@@ -46,7 +46,7 @@ amount counted once for each part, against the family's total. Here it is kept a
   every step (`Clearing.greatest_continues`). What it loses is a continuation with significance,
   not its own, and the loss needs a significance: under the continuation condition the clearer's
   part loses the dweller from every standpoint, and with nothing significant it loses nothing
-  (`Clearing.loss_needs_significance`, from `Clearing.free_rider_loses`). The continuation
+  (`Clearing.loss_needs_significance`, from `Clearing.clearer_loses_dweller`). The continuation
   condition is not the only significance that counts the loss: the clearer's own presupposition,
   held along sharing a condition, counts it too (`Clearing.own_presupposition`).
 
@@ -618,7 +618,7 @@ theorem greatest_continues :
 /-- What the greatest part loses is a continuation with significance, and the loss needs a
 significance. Under the continuation condition, from every standpoint, the clearer's part loses
 the dweller, so the levels with it do not retain what has significance without it
-(`free_rider_loses`); where nothing has significance, the levels with the part retain everything
+(`clearer_loses_dweller`); where nothing has significance, the levels with the part retain everything
 that has significance without it and add nothing; either way the clearer is active and supported
 at every step. The continuation condition is one significance that counts the loss, not the only
 one (`own_presupposition`). -/
@@ -629,8 +629,8 @@ theorem loss_needs_significance {Pos : Type} {l : Nat → Place → Nat}
       (∀ p : Pos, web.Retains (fun _ _ _ => False) p web.level l ∧
         ¬ web.Adds (fun _ _ _ => False) p l web.level) ∧
       ∀ t, web.active t .clearer ∧ web.Supported t .clearer :=
-  ⟨fun _ unrestricted p => ⟨(free_rider_loses without unrestricted p).1,
-     (free_rider_loses without unrestricted p).2.1⟩,
+  ⟨fun _ unrestricted p => ⟨(clearer_loses_dweller without unrestricted p).1,
+     (clearer_loses_dweller without unrestricted p).2.1⟩,
    fun _ => ⟨fun _ _ no => (nomatch no), fun ⟨_, _, no, _⟩ => no⟩,
    fun t => ⟨trivial, dependent t .clearer trivial⟩⟩
 

@@ -172,8 +172,8 @@ Where a statement depends on decidedness, the reason is given by the decidabilit
 | Lasting | `Lasting.hitTime_stable` | `DecidablePred target` | first fitting member | its own condition |
 | Lasting | `Lasting.hitTime_succ` | `DecidablePred target` | first fitting member | its own condition |
 | Learnable | `Learnable.firstFit_congr` | `(a : α) → Decidable (p a)`；`(a : α) → Decidable (q a)` | first fitting member | its own condition |
-| Learnable | `Learnable.rests_through` | `DecidableEq R` | learning by refutation | its own condition |
-| LearnableRuns | `LearnableRuns.rests_through` | `DecidableEq R` | learning by refutation | its own condition |
+| Learnable | `Learnable.predicts_through` | `DecidableEq R` | learning by refutation | its own condition |
+| LearnableRuns | `LearnableRuns.predicts_through` | `DecidableEq R` | learning by refutation | its own condition |
 | Learning | `Learning.diagonal_not_lasso` | `DecidableEq O` | learning by refutation | its own condition |
 | Learning | `Learning.held_learner_bounded` | `DecidableEq O` | learning by refutation | its own condition |
 | Learning | `Learning.held_rest_unrefuted` | `DecidableEq O` | learning by refutation | its own condition |
@@ -519,7 +519,7 @@ Where a statement depends on decidedness, the reason is given by the decidabilit
 | Continuation | `Flow.inward_of_not_fed` | `DecidableEq C` | tells same from different | — |
 | Continuation | `Flow.rising_fed_from_beyond` | `DecidableEq C` | tells same from different | — |
 | Continuation | `Flow.rising_fed_from_beyond_from` | `DecidableEq C` | tells same from different | — |
-| Continuation | `Web.generation_fed_from_beyond` | `DecidableEq X` | tells same from different | — |
+| Continuation | `Web.embodiedArising_fed_from_beyond` | `DecidableEq X` | tells same from different | — |
 | Counterfactual | `ExchangeLaw.Nonanticipating.through_of_observed` | `DecidableEq C` | tells same from different | `ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision） |
 | Counterfactual | `ExchangeLaw.Nonanticipating.through_sensitive` | `DecidableEq C` | tells same from different | `ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision） |
 | Counterfactual | `alike_of_sensitive_agree` | `DecidableEq C` | tells same from different | through registering everything, no decision, P80） |

@@ -32,7 +32,7 @@ This module states the continuation condition on the spine and what follows from
   step and formation, and living significance is the continuation condition restricted to living claims, and the continuation condition is stronger, for it
   covers events that are not living and formations not yet formed. On the level paths of a web
   (`Web.paths`), living significance holds with unindexed significance, and so does C, with “better” read as
-  retaining and adding what has significance (`Web.paths_g0_comparison`).
+  retaining and adding what has significance (`Web.paths_livingSignificance_comparison`).
 * **What has significance is what can form.** From a standpoint, one level path *retains* what
   has significance along another when it admits every continuation with significance that the
   other admits (`Web.Retains`). It *adds* when it admits one that the other does not
@@ -87,7 +87,7 @@ This module states the continuation condition on the spine and what follows from
   (`Clearing.centers_disagree`). Under the continuation condition the part loses the dweller from every
   standpoint. Meanwhile, the levels without the part admit every formation at every step, and
   the clearer is supported throughout, so withholding the part ends nothing
-  (`Clearing.free_rider_loses`).
+  (`Clearing.clearer_loses_dweller`).
 * **The generative space, with no axiom.** With balance at the conditions each formation
   requires, across the steps before it, the levels with a part widen those without it exactly
   when its net draw stays within the margin for everything the levels without it admit and
@@ -469,7 +469,7 @@ lives. No connection is used. -/
 theorem Valuation.premises_of_unrestricted {Q : Type} {V : Valuation Pos Q}
     {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) (formation : Q → F)
     (step : Q → Nat) (reads : ∀ p c, sig p (step c) (formation c) → V.sig p c) :
-    V.Significant ∧ (∀ p, V.SelfGood p) ∧ Neutral V.transmits ∧ Neutral V.shares ∧
+    V.Significant ∧ (∀ p, V.SelfSignificance p) ∧ Neutral V.transmits ∧ Neutral V.shares ∧
       ∀ c, V.living c → Pos → V.Seed :=
   have all : V.Significant := fun p c _ => reads p c (unrestricted (p, step c, formation c))
   ⟨all, fun p c _ alive => all p c alive, fun ⟨p, _, d⟩ _ _ alive => all p d alive,
@@ -513,11 +513,11 @@ theorem admitted_all_without {l : Nat → Place → Nat}
     | .fuel _, no => nomatch no
   | t, .dweller => admitted_without without t
 
-/-- The continuation condition counts what a free rider ends. Under it, from every standpoint, the clearer's part
+/-- The continuation condition counts what the clearer's part ends. Under it, from every standpoint, the clearer's part
 loses the dweller, so the levels with it do not retain what has significance without it. The
 levels without it retain what has significance with it, and the clearer is supported at every
 step and admitted without its part: withholding the part ends nothing. -/
-theorem free_rider_loses {l : Nat → Place → Nat} (without : flow.WithheldLevels clearerPart web l)
+theorem clearer_loses_dweller {l : Nat → Place → Nat} (without : flow.WithheldLevels clearerPart web l)
     {sig : Pos → Nat → Formation → Prop} (unrestricted : Unrestricted sig) (p : Pos) :
     web.Adds sig p l web.level ∧ ¬ web.Retains sig p web.level l ∧
       web.Retains sig p l web.level ∧
@@ -535,7 +535,7 @@ def dependenceRegion : Formation → Formation → Prop
   | .source, f => f = .source
   | .dweller, f => f = .dweller
 
-/-- Centers bounded by their dependence license the free rider and disagree. With each
+/-- Centers bounded by their dependence license the clearer's part and disagree. With each
 formation's significance stopping at its region along its dependence, the clearer's part retains
 what has significance from the clearer's standpoint at every step, and loses the dweller from
 the dweller's. -/

@@ -31,7 +31,7 @@ decidedness and `Becoming.Imbalance` for balance: nothing is adopted, and no oth
   members is decided (`of_listsOnce`). So the laws whose conclusion is a refutation hold of every
   family however listed, with no listing once and no decided identity
   (`Flow.Dissipative.opens_listing`, `Flow.Dissipative.finite_taking_not_recurring_listing`,
-  `Flow.taking_draws_in_listing`, `Web.generation_not_recurring_listing`, `Flow.taking_not_recurring_listing`),
+  `Flow.taking_draws_in_listing`, `Web.embodiedArising_not_recurring_listing`, `Flow.taking_not_recurring_listing`),
   and under balance, dissipation and embodied arising, neither arising nor ceasing recurs
   where some list, repetition allowed, holds every relatum (`World.Enumerated.not_recurring`).
 * **Where the commitment is used, it is local.** A step is enclosed, or enclosed around a family,
@@ -442,12 +442,12 @@ theorem standing_lowers_decided (balances : L.Balances W) (dissipative : L.Dissi
 end Flow
 
 /-- **Where some list holds every relatum, however listed, embodied relata do not arise at
-arbitrarily late steps under dissipation** (`Web.generation_not_recurring`): no listing once. -/
-theorem Web.generation_not_recurring_listing {X : Type} {W : Web X X} {L : Flow X X}
+arbitrarily late steps under dissipation** (`Web.embodiedArising_not_recurring`): no listing once. -/
+theorem Web.embodiedArising_not_recurring_listing {X : Type} {W : Web X X} {L : Flow X X}
     (balances : L.Balances W) (dissipative : L.Dissipative) {all : List X} (every : ∀ x, x ∈ all) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ W.Embodied x ∧ W.Arises t x :=
   not_of_listsOnce all fun _ lists =>
-    Web.generation_not_recurring balances dissipative lists.1 fun x => (lists.2 x).mpr (every x)
+    Web.embodiedArising_not_recurring balances dissipative lists.1 fun x => (lists.2 x).mpr (every x)
 
 /-- **With the unit fixed from some step on, taking from a closed family does not recur, however
 the family is listed** (`Flow.taking_not_recurring`). -/

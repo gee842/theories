@@ -47,7 +47,7 @@ variable {I : Type} [DecidableEq I]
 
 /-- Two signals agree at every contacted address: the shared `Learning.Training.AgreeOn`, the
 data being the contacts. -/
-abbrev Alike {V : Type} (plan : List I) : (I → V) → (I → V) → Prop :=
+abbrev AgreeOn {V : Type} (plan : List I) : (I → V) → (I → V) → Prop :=
   Learning.Training.AgreeOn (fun i => i ∈ plan)
 
 /-- Membership in a list, decided with no premise. -/
@@ -110,39 +110,39 @@ theorem survive_data_iff {S : Type u} {D : S → I → Prop} (s t : S)
 /-! ### Contact plans: the data held by a list -/
 
 omit [DecidableEq I] in
-theorem Alike.refl {V : Type} (plan : List I) (x : I → V) : Alike plan x x := fun _ _ => rfl
+theorem AgreeOn.refl {V : Type} (plan : List I) (x : I → V) : AgreeOn plan x x := fun _ _ => rfl
 
 theorem through_at_iff {plan : List I} {i : I} :
-    Learning.Training.Through (Alike plan) (fun x : I → Bool => x i = true) ↔ i ∈ plan :=
+    Learning.Training.Through (AgreeOn plan) (fun x : I → Bool => x i = true) ↔ i ∈ plan :=
   through_data_iff (fun j => mem_or_not j plan)
 
 theorem keeps_iff_retains {S : Type u} (plan : S → List I) (s t : S) :
-    Registration.Keeps (fun s => Alike (V := Bool) (plan s)) s t ↔ ∀ i, i ∈ plan s → i ∈ plan t :=
+    Registration.Keeps (fun s => AgreeOn (V := Bool) (plan s)) s t ↔ ∀ i, i ∈ plan s → i ∈ plan t :=
   keeps_data_iff (D := fun s i => i ∈ plan s) s t (fun j => mem_or_not j (plan t))
 
 theorem selections_survive_iff {S : Type u} (plan : S → List I) (s t : S) :
-    (∀ select, Learning.Training.Through (Alike (V := Bool) (plan s)) select →
-      Learning.Training.Through (Alike (plan t)) select) ↔ ∀ i, i ∈ plan s → i ∈ plan t :=
+    (∀ select, Learning.Training.Through (AgreeOn (V := Bool) (plan s)) select →
+      Learning.Training.Through (AgreeOn (plan t)) select) ↔ ∀ i, i ∈ plan s → i ∈ plan t :=
   survive_data_iff (D := fun s i => i ∈ plan s) s t (fun j => mem_or_not j (plan t))
 
 /-- A retired contact loses its selection. -/
 theorem retired_loses {D D' : List I} {i : I} (held : i ∈ D) (retired : i ∉ D') :
-    Learning.Training.Through (Alike D) (fun x : I → Bool => x i = true) ∧
-      ¬ Learning.Training.Through (Alike D') (fun x : I → Bool => x i = true) :=
+    Learning.Training.Through (AgreeOn D) (fun x : I → Bool => x i = true) ∧
+      ¬ Learning.Training.Through (AgreeOn D') (fun x : I → Bool => x i = true) :=
   ⟨through_at_iff.mpr held, fun h => retired (through_at_iff.mp h)⟩
 
 /-- An added contact gains its selection. -/
 theorem added_gains {D D' : List I} {i : I} (added : i ∈ D') (absent : i ∉ D) :
-    Learning.Training.Through (Alike D') (fun x : I → Bool => x i = true) ∧
-      ¬ Learning.Training.Through (Alike D) (fun x : I → Bool => x i = true) :=
+    Learning.Training.Through (AgreeOn D') (fun x : I → Bool => x i = true) ∧
+      ¬ Learning.Training.Through (AgreeOn D) (fun x : I → Bool => x i = true) :=
   retired_loses added absent
 
 /-- Along every trace whose steps retain contacts, every selection is kept. -/
 theorem trace_keeps_of_retains {S : Type u} {A : Type v} {P : Process S A} {plan : S → List I}
     (retains : ∀ s a t, P.step s a t → ∀ i, i ∈ plan s → i ∈ plan t)
     {s t : S} {as : List A} (path : Trace P s as t) :
-    ∀ select, Learning.Training.Through (Alike (V := Bool) (plan s)) select →
-      Learning.Training.Through (Alike (plan t)) select :=
+    ∀ select, Learning.Training.Through (AgreeOn (V := Bool) (plan s)) select →
+      Learning.Training.Through (AgreeOn (plan t)) select :=
   (selections_survive_iff plan s t).mpr
     ((keeps_iff_retains plan s t).mp
       (Registration.trace_keeps (fun s a t step => (keeps_iff_retains plan s t).mpr
@@ -156,7 +156,7 @@ def Answers (ρ : List I → Option I → List I) : Prop := ∀ D i, i ∈ ρ D 
 /-- **A revision rule answers every failure exactly where its output contains the failed
 address.** -/
 theorem answers_iff (ρ : List I → Option I → List I) :
-    (∀ D i, Learning.Training.Through (Alike (ρ D (some i))) (fun x : I → Bool => x i = true)) ↔
+    (∀ D i, Learning.Training.Through (AgreeOn (ρ D (some i))) (fun x : I → Bool => x i = true)) ↔
       Answers ρ :=
   ⟨fun h D i => through_at_iff.mp (h D i), fun h D i => through_at_iff.mpr (h D i)⟩
 
@@ -176,7 +176,7 @@ def Unlisted (I : Type) : Prop := ∀ l : List I, ∃ i, i ∉ l
 list holds every address. -/
 theorem blind_misses {ρ : List I → Option I → List I} (blind : Blind ρ) (unlisted : Unlisted I)
     (D : List I) :
-    ∃ i, ¬ Learning.Training.Through (Alike (ρ D (some i))) (fun x : I → Bool => x i = true) :=
+    ∃ i, ¬ Learning.Training.Through (AgreeOn (ρ D (some i))) (fun x : I → Bool => x i = true) :=
   match unlisted (ρ D none) with
   | ⟨i, absent⟩ => ⟨i, fun through => absent (blind D (some i) ▸ through_at_iff.mp through)⟩
 

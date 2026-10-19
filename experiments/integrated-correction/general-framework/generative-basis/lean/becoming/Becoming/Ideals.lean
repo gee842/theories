@@ -26,7 +26,7 @@ The laws of `Becoming.Horizon` are the case of the runs of a process read as the
 stretches (`Becoming.refutable_iff_refutableBy`, `Becoming.adheres_iff_adheresBy`).
 
 **Classes of ideals.** A class is closed where it holds every ideal below one it holds and the union
-of every directed family it holds (`Closed`). With no premise:
+of every directed family it holds (`ScottClosed`). With no premise:
 * a class is closed exactly where it is the class of ideals within a lower set (`closed_iff_lower`);
   the set is then fixed: the stretches whose finite histories the class holds
   (`closed_iff_within_principal`, `lower_unique`), which are its content, the stretches of its
@@ -35,7 +35,7 @@ of every directed family it holds (`Closed`). With no premise:
   every directed family it holds (`Refutable.lower_not_not`, `Refutable.unions_not_not`), so a stable
   refutable class is closed (`Refutable.closed`);
 * a closed class is refutable exactly where every ideal outside it has a stretch whose finite
-  history the class does not hold (`Closed.refutable_iff`).
+  history the class does not hold (`ScottClosed.refutable_iff`).
 Asked of every order and class, each of the two steps is exactly double-negation elimination,
 witnessed on the two-element chain (`refutable_closed_iff`, `closed_refutable_iff`). Not being
 refuted is not holding; and a history known not to lie within a closed class does not thereby show
@@ -329,25 +329,25 @@ def Within (P : Preorder α) (Q : α → Prop) (I : Ideal P) : Prop := ∀ p, I.
 
 /-- A closed class: it holds every ideal below one it holds, and the union of every directed
 family it holds. -/
-structure Closed (C : Ideal P → Prop) : Prop where
+structure ScottClosed (C : Ideal P → Prop) : Prop where
   lower : ∀ {I J}, C I → Ideal.LE J I → C J
   unions : ∀ (D : Ideal P → Prop) (hd : Directed (idealOrder P) D), (∀ I, D I → C I) →
     C (union D hd)
 
-theorem Closed.same {C : Ideal P → Prop} (hc : Closed C) {I J : Ideal P} (hI : C I)
+theorem ScottClosed.same {C : Ideal P → Prop} (hc : ScottClosed C) {I J : Ideal P} (hI : C I)
     (h : Ideal.Same I J) : C J :=
   hc.lower hI h.ge
 
-theorem Closed.principal_of_mem {C : Ideal P → Prop} (hc : Closed C) {I : Ideal P} (hI : C I)
+theorem ScottClosed.principal_of_mem {C : Ideal P → Prop} (hc : ScottClosed C) {I : Ideal P} (hI : C I)
     {p : α} (hp : I.mem p) : C (principal P p) :=
   hc.lower hI (principal_le_iff.mpr hp)
 
-theorem closed_of_iff {C E : Ideal P → Prop} (hc : Closed C) (h : ∀ I, C I ↔ E I) : Closed E :=
+theorem closed_of_iff {C E : Ideal P → Prop} (hc : ScottClosed C) (h : ∀ I, C I ↔ E I) : ScottClosed E :=
   ⟨fun hI hJI => (h _).mp (hc.lower ((h _).mpr hI) hJI),
    fun D hd hD => (h _).mp (hc.unions D hd fun I hI => (h I).mpr (hD I hI))⟩
 
 /-- The ideals within any set are a closed class. -/
-theorem within_closed (Q : α → Prop) : Closed (Within P Q) :=
+theorem within_closed (Q : α → Prop) : ScottClosed (Within P Q) :=
   ⟨fun hI hJI p hp => hI p (hJI p hp), fun _ _ hD p ⟨I, hI, hp⟩ => hD I hI p hp⟩
 
 theorem within_principal_iff {Q : α → Prop} (hq : Lower P Q) {p : α} :
@@ -355,7 +355,7 @@ theorem within_principal_iff {Q : α → Prop} (hq : Lower P Q) {p : α} :
   ⟨fun h => h p (P.refl p), fun h _ hq' => hq hq' h⟩
 
 /-- **A closed class holds exactly the ideals all of whose finite histories it holds.** -/
-theorem closed_iff_within_principal {C : Ideal P → Prop} (hc : Closed C) (I : Ideal P) :
+theorem closed_iff_within_principal {C : Ideal P → Prop} (hc : ScottClosed C) (I : Ideal P) :
     C I ↔ Within P (fun p => C (principal P p)) I :=
   ⟨fun hI _ hp => hc.principal_of_mem hI hp,
    fun h => hc.same (hc.unions (principalFamily I) (principalFamily_directed I)
@@ -363,12 +363,12 @@ theorem closed_iff_within_principal {C : Ideal P → Prop} (hc : Closed C) (I : 
      (union_principalFamily I)⟩
 
 /-- The stretches whose finite histories a closed class holds are a lower set. -/
-theorem principal_lower {C : Ideal P → Prop} (hc : Closed C) : Lower P (fun p => C (principal P p)) :=
+theorem principal_lower {C : Ideal P → Prop} (hc : ScottClosed C) : Lower P (fun p => C (principal P p)) :=
   fun hpq hq => hc.lower hq (principal_le_principal_iff.mpr hpq)
 
 /-- **A class is closed exactly where it is the class of ideals within a lower set.** -/
 theorem closed_iff_lower (C : Ideal P → Prop) :
-    Closed C ↔ ∃ Q : α → Prop, Lower P Q ∧ ∀ I, C I ↔ Within P Q I :=
+    ScottClosed C ↔ ∃ Q : α → Prop, Lower P Q ∧ ∀ I, C I ↔ Within P Q I :=
   ⟨fun hc => ⟨_, principal_lower hc, closed_iff_within_principal hc⟩,
    fun ⟨_, _, h⟩ => closed_of_iff (within_closed _) fun I => (h I).symm⟩
 
@@ -385,7 +385,7 @@ theorem lower_unique_of_two {C : Ideal P → Prop} {Q R : α → Prop} (hq : Low
   (lower_unique hq hQ p).trans (lower_unique hr hR p).symm
 
 /-- **The finite histories a closed class holds are its content.** -/
-theorem principal_iff_content {C : Ideal P → Prop} (hc : Closed C) (p : α) :
+theorem principal_iff_content {C : Ideal P → Prop} (hc : ScottClosed C) (p : α) :
     C (principal P p) ↔ Content C p :=
   ⟨fun h => ⟨_, h, P.refl p⟩, fun ⟨_, hI, hp⟩ => hc.principal_of_mem hI hp⟩
 
@@ -411,7 +411,7 @@ theorem Refutable.unions_not_not {C : Ideal P → Prop} (refutable : Refutable C
 
 /-- **A stable refutable class is closed.** -/
 theorem Refutable.closed {C : Ideal P → Prop} (refutable : Refutable C)
-    (stable : ∀ I, ¬ ¬ C I → C I) : Closed C :=
+    (stable : ∀ I, ¬ ¬ C I → C I) : ScottClosed C :=
   ⟨fun hI hJI => stable _ (refutable.lower_not_not hI hJI),
    fun D hd hD => stable _ (refutable.unions_not_not D hd hD)⟩
 
@@ -422,7 +422,7 @@ theorem Refutable.hull_not_not {C : Ideal P → Prop} (refutable : Refutable C) 
 
 /-- **A closed class is refutable exactly where every ideal outside it has an element whose
 finite history it does not hold.** -/
-theorem Closed.refutable_iff {C : Ideal P → Prop} (hc : Closed C) :
+theorem ScottClosed.refutable_iff {C : Ideal P → Prop} (hc : ScottClosed C) :
     Refutable C ↔ ∀ I, ¬ C I → ∃ p, I.mem p ∧ ¬ C (principal P p) :=
   ⟨fun refutable I outside => match refutable I outside with
      | ⟨p, hp, blocked⟩ => ⟨p, hp, fun h => blocked _ h (principal_mem P p)⟩,
@@ -447,7 +447,7 @@ theorem within_false {I : Ideal P} : ¬ Within P (fun _ => False) I :=
 theorem false_refutable : Refutable (fun _ : Ideal P => False) :=
   fun I _ => match I.nonempty with | ⟨p, hp⟩ => ⟨p, hp, fun _ h => h.elim⟩
 
-theorem false_closed : Closed (fun _ : Ideal P => False) :=
+theorem false_closed : ScottClosed (fun _ : Ideal P => False) :=
   ⟨fun h _ => h, fun _ hd hD => match hd.nonempty with | ⟨I, hI⟩ => hD I hI⟩
 
 theorem content_false (p : α) : ¬ Content (fun _ : Ideal P => False) p :=
@@ -462,11 +462,11 @@ theorem hull_iff_within_content {C : Ideal P → Prop} {I : Ideal P} :
 theorem hull_contains {C : Ideal P → Prop} {I : Ideal P} (hI : C I) : Hull C I :=
   AdheresBy.of hI
 
-theorem hull_closed (C : Ideal P → Prop) : Closed (Hull C) :=
+theorem hull_closed (C : Ideal P → Prop) : ScottClosed (Hull C) :=
   closed_of_iff (within_closed (Content C)) fun _ => Iff.rfl
 
 /-- **The hull lies below every closed class holding the class.** -/
-theorem hull_least {C E : Ideal P → Prop} (he : Closed E) (sub : ∀ I, C I → E I) {I : Ideal P}
+theorem hull_least {C E : Ideal P → Prop} (he : ScottClosed E) (sub : ∀ I, C I → E I) {I : Ideal P}
     (hI : Hull C I) : E I :=
   (closed_iff_within_principal he I).mpr fun p hp => match hI p hp with
     | ⟨J, hJ, hpJ⟩ => he.principal_of_mem (sub J hJ) hpJ
@@ -477,8 +477,8 @@ theorem hull_content (C : Ideal P → Prop) (p : α) : Content (Hull C) p ↔ Co
 
 /-- **A closed class holding the class and below every closed class holding it holds exactly the
 hull's ideals.** -/
-theorem hull_unique {C H : Ideal P → Prop} (hh : Closed H) (contains : ∀ I, C I → H I)
-    (least : ∀ E, Closed E → (∀ I, C I → E I) → ∀ I, H I → E I) (I : Ideal P) :
+theorem hull_unique {C H : Ideal P → Prop} (hh : ScottClosed H) (contains : ∀ I, C I → H I)
+    (least : ∀ E, ScottClosed E → (∀ I, C I → E I) → ∀ I, H I → E I) (I : Ideal P) :
     H I ↔ Hull C I :=
   ⟨least _ (hull_closed C) (fun _ => hull_contains) I, hull_least hh contains⟩
 
@@ -486,7 +486,7 @@ theorem hull_hull {C : Ideal P → Prop} {I : Ideal P} (hI : Hull (Hull C) I) : 
   AdheresBy.adheres hI
 
 /-- A closed class is its own hull. -/
-theorem Closed.hull_iff {C : Ideal P → Prop} (hc : Closed C) (I : Ideal P) : Hull C I ↔ C I :=
+theorem ScottClosed.hull_iff {C : Ideal P → Prop} (hc : ScottClosed C) (I : Ideal P) : Hull C I ↔ C I :=
   ⟨hull_least hc fun _ h => h, hull_contains⟩
 
 /-- **Any two stretches of an ideal of the hull are extended by one stretch of an ideal of the
@@ -507,7 +507,7 @@ theorem avoids_iff_within (F : α → Prop) (I : Ideal P) :
     Avoids F I ↔ Within P (fun p => ∀ b, F b → ¬ P.le b p) I :=
   ⟨fun h _ hp b hb hbp => h b hb (I.lower hbp hp), fun h b hb hbI => h b hbI b hb (P.refl b)⟩
 
-theorem avoids_closed (F : α → Prop) : Closed (Avoids (P := P) F) :=
+theorem avoids_closed (F : α → Prop) : ScottClosed (Avoids (P := P) F) :=
   closed_of_iff (within_closed _) fun I => (avoids_iff_within F I).symm
 
 theorem avoids_principal_iff (F : α → Prop) (p : α) :
@@ -515,7 +515,7 @@ theorem avoids_principal_iff (F : α → Prop) (p : α) :
   Iff.rfl
 
 /-- **The only closed class holding exactly the finite histories that avoid `F`.** -/
-theorem avoids_unique {C : Ideal P → Prop} (hc : Closed C) {F : α → Prop}
+theorem avoids_unique {C : Ideal P → Prop} (hc : ScottClosed C) {F : α → Prop}
     (h : ∀ p, C (principal P p) ↔ ∀ b, F b → ¬ P.le b p) (I : Ideal P) : C I ↔ Avoids F I :=
   (closed_iff_within_principal hc I).trans
     ((Iff.intro (fun hw p hp => (h p).mp (hw p hp)) (fun hw p hp => (h p).mpr (hw p hp))).trans
@@ -551,7 +551,7 @@ elimination.** The witness: on the two-element chain, the class holding the idea
 `true`, and every ideal where `φ` holds, is refutable once `¬ ¬ φ`; closed, it holds the finite
 history of `false`, which is `φ`. -/
 theorem refutable_closed_iff :
-    (∀ (α : Type) (P : Preorder α) (C : Ideal P → Prop), Refutable C → Closed C) ↔
+    (∀ (α : Type) (P : Preorder α) (C : Ideal P → Prop), Refutable C → ScottClosed C) ↔
       ∀ φ : Prop, ¬ ¬ φ → φ :=
   ⟨fun law φ notNot =>
     match (law Bool chain (fun J => J.mem true ∨ φ)
@@ -566,7 +566,7 @@ theorem refutable_closed_iff :
 elimination.** The witness: on the two-element chain, the ideals within `false`; the ideal holding
 `true` where `φ` holds lies outside them once `¬ ¬ φ`, and a refuting element must be `true`. -/
 theorem closed_refutable_iff :
-    (∀ (α : Type) (P : Preorder α) (C : Ideal P → Prop), Closed C → Refutable C) ↔
+    (∀ (α : Type) (P : Preorder α) (C : Ideal P → Prop), ScottClosed C → Refutable C) ↔
       ∀ φ : Prop, ¬ ¬ φ → φ :=
   ⟨fun law φ notNot =>
     match law Bool chain (Within chain fun b => b = false) (within_closed _) (chain.cut φ)

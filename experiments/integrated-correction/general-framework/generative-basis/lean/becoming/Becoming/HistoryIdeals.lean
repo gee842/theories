@@ -45,7 +45,7 @@ no sequence is below a word. Two histories give ideals with the same words exact
 the same history (`historyIdeal_same_iff`).
 
 **Which ideals are histories.** An ideal of words with a longest word is a finite history
-(`settles_principal`); one with words longer than every length, a word of each length picked, is
+(`hasLongest_principal`); one with words longer than every length, a word of each length picked, is
 an infinite history, whose move at each place is the move there of the word picked for it
 (`goesOn_trace`); so an ideal that settles, or goes on with its words picked, is a history
 (`classification`). Telling which is deciding whether the history goes on: on the histories of `()`
@@ -90,7 +90,7 @@ with no premise:
   histories is fixed at every run by its values on finite histories (`run_reading_unique`); finite
   stretches tell runs apart (`runs_told_apart`); the finite histories are a compact basis
   (`finite_basis`), and the histories are the completion of the stretches (`histories_representation`);
-* which histories are runs: one that settles is a finite history (`Stretches.settles_principal`);
+* which histories are runs: one that settles is a finite history (`Stretches.hasLatest_principal`);
   one going on, with a stretch beyond each horizon picked, is the history of the run read off the
   picks (`pickedRun`, `goesOn_run`). So the classification holds for every process
   (`Stretches.classification`), and on the cut histories of the process of `()`s telling which is
@@ -347,7 +347,7 @@ theorem historyIdeal_same_iff : ∀ h k : History A,
 /-! ## Which ideals of words are histories -/
 
 /-- An ideal of words settles where it has a longest word. -/
-def Settles (I : Ideals.Ideal (prefixOrder A)) : Prop :=
+def HasLongest (I : Ideals.Ideal (prefixOrder A)) : Prop :=
   ∃ w, I.mem w ∧ ∀ v, I.mem v → v.length ≤ w.length
 
 /-- An ideal of words goes on where it has words longer than every length. -/
@@ -355,7 +355,7 @@ def GoesOn (I : Ideals.Ideal (prefixOrder A)) : Prop :=
   ∀ n, ∃ w, I.mem w ∧ n < w.length
 
 /-- **An ideal of words with a longest word is a finite history.** -/
-theorem settles_principal {I : Ideals.Ideal (prefixOrder A)} (h : Settles I) :
+theorem hasLongest_principal {I : Ideals.Ideal (prefixOrder A)} (h : HasLongest I) :
     ∃ w, Ideals.Ideal.Same I (Ideals.principal (prefixOrder A) w) := by
   obtain ⟨w, hw, longest⟩ := h
   refine ⟨w, fun v => ⟨fun hv => ?_, fun hv => I.lower hv hw⟩⟩
@@ -416,16 +416,16 @@ theorem goesOn_trace {I : Ideals.Ideal (prefixOrder A)} (pick : Nat → List A)
 /-- **An ideal of words that settles, or goes on with a word of each length picked, is a
 history.** -/
 theorem classification {I : Ideals.Ideal (prefixOrder A)}
-    (decided : Settles I ∨
+    (decided : HasLongest I ∨
       ∃ pick : Nat → List A, (∀ n, I.mem (pick n)) ∧ ∀ n, n < (pick n).length) :
     ∃ h : History A, Ideals.Ideal.Same I (historyIdeal h) :=
   match decided with
-  | .inl settles => match settles_principal settles with
+  | .inl settles => match hasLongest_principal settles with
     | ⟨w, same⟩ => ⟨.finite w, same⟩
   | .inr ⟨pick, mem, long⟩ => ⟨.infinite _, goesOn_trace pick mem long⟩
 
 /-- A finite history settles. -/
-theorem principal_settles (w : List A) : Settles (Ideals.principal (prefixOrder A) w) :=
+theorem principal_hasLongest (w : List A) : HasLongest (Ideals.principal (prefixOrder A) w) :=
   ⟨w, (prefixOrder A).refl w, fun _ hv => length_le_of_le hv⟩
 
 /-- An infinite history goes on. -/
@@ -479,7 +479,7 @@ theorem least_true_or_below (s : Nat → Bool) : ∀ n,
 /-- **Settling or going on, asked of the cut histories, is exactly the limited principle of
 omniscience.** The cut history settles where `s` has a `true` and goes on where `s` is `false`
 throughout. -/
-theorem cut_decided_iff_lpo : (∀ s : Nat → Bool, Settles (cut s) ∨ GoesOn (cut s)) ↔ LPO := by
+theorem cut_decided_iff_lpo : (∀ s : Nat → Bool, HasLongest (cut s) ∨ GoesOn (cut s)) ↔ LPO := by
   constructor
   · intro law s
     rcases law s with ⟨w, hw, longest⟩ | goes
@@ -602,7 +602,7 @@ theorem refutable_of_class {C : Ideals.Ideal (stretchOrder P) → Prop}
 reading's runs holds it.** With closure in place of refutability, no double negation remains
 (compare `Refutable.adheres_least`). -/
 theorem adheres_iff_closed {K : Run P → Prop} {r : Run P} :
-    Adheres K r ↔ ∀ C : Ideals.Ideal (stretchOrder P) → Prop, Ideals.Closed C →
+    Adheres K r ↔ ∀ C : Ideals.Ideal (stretchOrder P) → Prop, Ideals.ScottClosed C →
       (∀ r', K r' → C r'.stretches) → C r.stretches :=
   ⟨fun adheres _ hc sub => Ideals.hull_least hc
       (fun _ ⟨r', inside, same⟩ => hc.same (sub r' inside) same.symm) (adheres_iff_hull.mp adheres),
@@ -612,8 +612,8 @@ theorem adheres_iff_closed {K : Run P → Prop} {r : Run P} :
 /-- **The closure is unique**: a closed class of histories holding a reading's runs, and below every
 closed class holding them, holds exactly the runs adhering to the reading. -/
 theorem adherence_unique {K : Run P → Prop} {H : Ideals.Ideal (stretchOrder P) → Prop}
-    (hh : Ideals.Closed H) (contains : ∀ r, K r → H r.stretches)
-    (least : ∀ E : Ideals.Ideal (stretchOrder P) → Prop, Ideals.Closed E →
+    (hh : Ideals.ScottClosed H) (contains : ∀ r, K r → H r.stretches)
+    (least : ∀ E : Ideals.Ideal (stretchOrder P) → Prop, Ideals.ScottClosed E →
       (∀ r, K r → E r.stretches) → ∀ I, H I → E I) (r : Run P) :
     H r.stretches ↔ Adheres K r :=
   (Ideals.hull_unique hh (fun _ ⟨r', inside, same⟩ => hh.same (contains r' inside) same.symm)
@@ -640,7 +640,7 @@ theorem adheres_joint {K : Run P → Prop} {r : Run P} (adheres : Adheres K r)
 
 /-- **A run lies in a closed class of histories exactly where each of its stretches is a stretch of a
 history of the class**: the lower set the class is within is its content. -/
-theorem closed_runs {C : Ideals.Ideal (stretchOrder P) → Prop} (hc : Ideals.Closed C)
+theorem closed_runs {C : Ideals.Ideal (stretchOrder P) → Prop} (hc : Ideals.ScottClosed C)
     (r : Run P) : C r.stretches ↔ ∀ e, r.stretches.mem e → Ideals.Content C e :=
   match (Ideals.closed_iff_lower C).mp hc with
   | ⟨_, hq, h⟩ => (h r.stretches).trans
@@ -668,7 +668,7 @@ process of `()`s: the histories passing through the stretch at horizon 1, with e
 which passes through no stretch at horizon 1, so `φ`. -/
 theorem refutable_closed_iff :
     (∀ (S A : Type) (P : Process S A) (C : Ideals.Ideal (stretchOrder P) → Prop),
-      Ideals.Refutable C → Ideals.Closed C) ↔ ∀ φ : Prop, ¬ ¬ φ → φ :=
+      Ideals.Refutable C → Ideals.ScottClosed C) ↔ ∀ φ : Prop, ¬ ¬ φ → φ :=
   ⟨fun law φ notNot =>
     match (law Unit Unit (Sequences.process Unit) (fun J => J.mem (unitRun, 1) ∨ φ)
         fun _ outside => absurd (fun h => outside (.inr h)) notNot).lower
@@ -698,7 +698,7 @@ horizon 0; the history reaching horizon 1 where `φ` holds lies outside them onc
 refuting stretch must be at horizon 1. -/
 theorem closed_refutable_iff :
     (∀ (S A : Type) (P : Process S A) (C : Ideals.Ideal (stretchOrder P) → Prop),
-      Ideals.Closed C → Ideals.Refutable C) ↔ ∀ φ : Prop, ¬ ¬ φ → φ :=
+      Ideals.ScottClosed C → Ideals.Refutable C) ↔ ∀ φ : Prop, ¬ ¬ φ → φ :=
   ⟨fun law φ notNot =>
     match law Unit Unit (Sequences.process Unit) (Ideals.Within _ fun e => e.2 = 0)
         (Ideals.within_closed _) (unitCut φ)
@@ -720,7 +720,7 @@ theorem avoids_adheres {F : Run P × Nat → Prop} {r : Run P}
 
 /-- **A closed class of histories holding exactly the finite histories that avoid `F` holds exactly
 the runs that avoid it.** -/
-theorem avoids_runs {C : Ideals.Ideal (stretchOrder P) → Prop} (hc : Ideals.Closed C)
+theorem avoids_runs {C : Ideals.Ideal (stretchOrder P) → Prop} (hc : Ideals.ScottClosed C)
     {F : Run P × Nat → Prop}
     (h : ∀ e, C (Ideals.principal _ e) ↔ ∀ b, F b → ¬ (stretchOrder P).le b e) (r : Run P) :
     C r.stretches ↔ Ideals.Avoids F r.stretches :=
@@ -824,7 +824,7 @@ theorem mem_act {I : Ideals.Ideal (stretchOrder P)} {e e' : Run P × Nat} (he : 
   | ⟨_, _, ⟨_, agree⟩, ⟨_, agree'⟩⟩ => (agree.2 s hs).trans (agree'.2 s hs').symm
 
 /-- A history settles where one of its stretches reaches the latest horizon among them. -/
-def Settles (I : Ideals.Ideal (stretchOrder P)) : Prop :=
+def HasLatest (I : Ideals.Ideal (stretchOrder P)) : Prop :=
   ∃ e, I.mem e ∧ ∀ e', I.mem e' → e'.2 ≤ e.2
 
 /-- A history goes on where it has stretches beyond every horizon. -/
@@ -832,7 +832,7 @@ def GoesOn (I : Ideals.Ideal (stretchOrder P)) : Prop :=
   ∀ h, ∃ e, I.mem e ∧ h < e.2
 
 /-- **A history that settles is a finite history.** -/
-theorem settles_principal {I : Ideals.Ideal (stretchOrder P)} (h : Settles I) :
+theorem hasLatest_principal {I : Ideals.Ideal (stretchOrder P)} (h : HasLatest I) :
     ∃ e, Ideals.Ideal.Same I (Ideals.principal _ e) :=
   match h with
   | ⟨e, he, latest⟩ => ⟨e, fun e' =>
@@ -869,15 +869,15 @@ theorem goesOn_run {I : Ideals.Ideal (stretchOrder P)} (pick : Nat → Run P × 
 /-- **A history of a process that settles, or goes on with a stretch beyond each horizon picked, is
 a finite history or the history of a run**: A4 of the completion package, for every process. -/
 theorem classification {I : Ideals.Ideal (stretchOrder P)}
-    (decided : Settles I ∨
+    (decided : HasLatest I ∨
       ∃ pick : Nat → Run P × Nat, (∀ h, I.mem (pick h)) ∧ ∀ h, h < (pick h).2) :
     (∃ e, Ideals.Ideal.Same I (Ideals.principal _ e)) ∨ ∃ r : Run P, Ideals.Ideal.Same I r.stretches :=
   match decided with
-  | .inl settles => .inl (settles_principal settles)
+  | .inl settles => .inl (hasLatest_principal settles)
   | .inr ⟨pick, mem, beyond⟩ => .inr ⟨_, goesOn_run pick mem beyond⟩
 
 /-- **A finite history settles.** -/
-theorem principal_settles (e : Run P × Nat) : Settles (Ideals.principal (stretchOrder P) e) :=
+theorem principal_hasLatest (e : Run P × Nat) : HasLatest (Ideals.principal (stretchOrder P) e) :=
   ⟨e, (stretchOrder P).refl e, fun _ le => le.1⟩
 
 /-- **A run's history goes on.** -/
@@ -894,7 +894,7 @@ def cut (s : Nat → Bool) : Ideals.Ideal (stretchOrder (Sequences.process Unit)
     | .inl lt => ⟨e', he', ⟨Nat.le_of_lt lt, unit_agree _ _ _⟩, (stretchOrder _).refl e'⟩
     | .inr ge => ⟨e, he, (stretchOrder _).refl e, ⟨ge, unit_agree _ _ _⟩⟩
 
-theorem cut_settles_iff (s : Nat → Bool) : Settles (cut s) ↔ HistoryIdeals.Settles (HistoryIdeals.cut s) :=
+theorem cut_hasLatest_iff (s : Nat → Bool) : HasLatest (cut s) ↔ HistoryIdeals.HasLongest (HistoryIdeals.cut s) :=
   ⟨fun ⟨e, he, latest⟩ => ⟨HistoryIdeals.units e.2,
      fun m hm => he m (Eq.subst (motive := fun n => m < n) (HistoryIdeals.units_length e.2) hm),
      fun v hv => Eq.subst (motive := fun n => v.length ≤ n) (HistoryIdeals.units_length e.2).symm
@@ -915,15 +915,15 @@ theorem cut_goesOn_iff (s : Nat → Bool) : GoesOn (cut s) ↔ HistoryIdeals.Goe
 /-- **Settling or going on, asked of the cut histories of the process of `()`s, is exactly the
 limited principle of omniscience**: telling whether a history ends is deciding whether it changes
 again. -/
-theorem cut_decided_iff_lpo : (∀ s : Nat → Bool, Settles (cut s) ∨ GoesOn (cut s)) ↔ LPO :=
-  (show (∀ s : Nat → Bool, Settles (cut s) ∨ GoesOn (cut s)) ↔
-      ∀ s : Nat → Bool, HistoryIdeals.Settles (HistoryIdeals.cut s) ∨
+theorem cut_decided_iff_lpo : (∀ s : Nat → Bool, HasLatest (cut s) ∨ GoesOn (cut s)) ↔ LPO :=
+  (show (∀ s : Nat → Bool, HasLatest (cut s) ∨ GoesOn (cut s)) ↔
+      ∀ s : Nat → Bool, HistoryIdeals.HasLongest (HistoryIdeals.cut s) ∨
         HistoryIdeals.GoesOn (HistoryIdeals.cut s) from
     ⟨fun law s => match law s with
-      | .inl settles => .inl ((cut_settles_iff s).mp settles)
+      | .inl settles => .inl ((cut_hasLatest_iff s).mp settles)
       | .inr goes => .inr ((cut_goesOn_iff s).mp goes),
      fun law s => match law s with
-      | .inl settles => .inl ((cut_settles_iff s).mpr settles)
+      | .inl settles => .inl ((cut_hasLatest_iff s).mpr settles)
       | .inr goes => .inr ((cut_goesOn_iff s).mpr goes)⟩).trans
     HistoryIdeals.cut_decided_iff_lpo
 

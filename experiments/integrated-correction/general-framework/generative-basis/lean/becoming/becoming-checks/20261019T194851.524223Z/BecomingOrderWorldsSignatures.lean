@@ -1,0 +1,9 @@
+import Becoming.OrderWorlds
+#check @Becoming.OrderWorlds.rearranges_refl
+#check @Becoming.OrderWorlds.rearranges_symm
+#check @Becoming.OrderWorlds.rearranges_trans
+#check @Becoming.OrderWorlds.normalForm_normal
+#check @Becoming.OrderWorlds.normalForm_least
+#check @Becoming.OrderWorlds.complete_iff
+#check @Becoming.OrderWorlds.halving_premises_iff
+#check @Becoming.OrderWorlds.commuted_rise_count

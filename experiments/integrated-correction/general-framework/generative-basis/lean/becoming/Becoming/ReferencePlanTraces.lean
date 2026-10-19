@@ -211,37 +211,37 @@ theorem revise_step {s t : State} (st : P.step s .revise t) :
 /-- **A revise step's method contacts the failed address it answers.** -/
 theorem revise_registers {s t : State} {i : Nat} (h : s.mismatch = some i)
     (st : P.step s .revise t) :
-    Learning.Training.Through (ReferencePlan.Alike t.method) (fun x => x i = true) :=
-  Eq.subst (motive := fun m => Learning.Training.Through (ReferencePlan.Alike m) (fun x => x i = true))
+    Learning.Training.Through (ReferencePlan.AgreeOn t.method) (fun x => x i = true) :=
+  Eq.subst (motive := fun m => Learning.Training.Through (ReferencePlan.AgreeOn m) (fun x => x i = true))
     ((congrArg Prod.fst (revise_binds_plan h st)).trans (propose_from_mismatch s.method i).symm).symm
     (revise_registers_failure s.method i)
 
 /-- **A revise step keeps every selection the old method made.** -/
 theorem revise_keeps_selections {s t : State} (st : P.step s .revise t) :
-    ∀ select, Learning.Training.Through (ReferencePlan.Alike s.method) select →
-      Learning.Training.Through (ReferencePlan.Alike t.method) select :=
+    ∀ select, Learning.Training.Through (ReferencePlan.AgreeOn s.method) select →
+      Learning.Training.Through (ReferencePlan.AgreeOn t.method) select :=
   match revise_step st with
   | ⟨i, _, method⟩ =>
-    Eq.subst (motive := fun m => ∀ select, Learning.Training.Through (ReferencePlan.Alike s.method) select →
-        Learning.Training.Through (ReferencePlan.Alike m) select)
+    Eq.subst (motive := fun m => ∀ select, Learning.Training.Through (ReferencePlan.AgreeOn s.method) select →
+        Learning.Training.Through (ReferencePlan.AgreeOn m) select)
       method.symm (old_selections_remain s.method i)
 
 /-- **A revise step keeps every distinction of the old method.** -/
 theorem revise_keeps {s t : State} (st : P.step s .revise t) :
-    Registration.Keeps ReferencePlan.Alike s.method t.method :=
+    Registration.Keeps ReferencePlan.AgreeOn s.method t.method :=
   match revise_step st with
   | ⟨i, _, method⟩ =>
-    Eq.subst (motive := fun m => Registration.Keeps ReferencePlan.Alike s.method m) method.symm
+    Eq.subst (motive := fun m => Registration.Keeps ReferencePlan.AgreeOn s.method m) method.symm
       (added_keeps s.method i)
 
 /-- **A revise step answering a failure at an address the method lacked gains the choice at that
 contact**, which the old method could not make. -/
 theorem revise_gains_contact {s t : State} {i : Nat} (h : s.mismatch = some i) (absent : i ∉ s.method)
     (st : P.step s .revise t) :
-    Learning.Training.Through (ReferencePlan.Alike t.method) (fun x => x i = true) ∧
-      ¬ Learning.Training.Through (ReferencePlan.Alike s.method) (fun x => x i = true) :=
-  Eq.subst (motive := fun m => Learning.Training.Through (ReferencePlan.Alike m) (fun x => x i = true) ∧
-      ¬ Learning.Training.Through (ReferencePlan.Alike s.method) (fun x => x i = true))
+    Learning.Training.Through (ReferencePlan.AgreeOn t.method) (fun x => x i = true) ∧
+      ¬ Learning.Training.Through (ReferencePlan.AgreeOn s.method) (fun x => x i = true) :=
+  Eq.subst (motive := fun m => Learning.Training.Through (ReferencePlan.AgreeOn m) (fun x => x i = true) ∧
+      ¬ Learning.Training.Through (ReferencePlan.AgreeOn s.method) (fun x => x i = true))
     (congrArg Prod.fst (revise_binds_plan h st)).symm (new_contact_choice s.method i absent)
 
 /-- **A probe step, while building, acquires both references of the next planned contact.** -/
@@ -265,10 +265,10 @@ theorem frozen_plan {s t : State} (st : P.step s .frozen t) :
 /-- **At every retained method some failure is left unanswered by every frozen step.** -/
 theorem frozen_leaves_unregistered (s : State) :
     ∃ i, ∀ t, P.step { s with mismatch := some i } .frozen t →
-      ¬ Learning.Training.Through (ReferencePlan.Alike t.pending) (fun x => x i = true) :=
+      ¬ Learning.Training.Through (ReferencePlan.AgreeOn t.pending) (fun x => x i = true) :=
   match frozen_misses s.method with
   | ⟨i, miss⟩ => ⟨i, fun _ st =>
-      Eq.subst (motive := fun m => ¬ Learning.Training.Through (ReferencePlan.Alike m) (fun x => x i = true))
+      Eq.subst (motive := fun m => ¬ Learning.Training.Through (ReferencePlan.AgreeOn m) (fun x => x i = true))
         (frozen_plan st).symm miss⟩
 
 /-- **A perform step answers through the installed key.** -/

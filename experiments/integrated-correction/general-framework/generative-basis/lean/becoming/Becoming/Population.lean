@@ -3,7 +3,7 @@ import Becoming.Change
 /-!
 # Population: counting the formations that take part
 
-`Becoming.Generation` reads arising through the activity of formations across steps;
+`Becoming.Arising` reads arising through the activity of formations across steps;
 `Becoming.Flow` counts the formations that take from a family. This module reads how
 many formations are active at each step, and ties the flow's count to the web's.
 

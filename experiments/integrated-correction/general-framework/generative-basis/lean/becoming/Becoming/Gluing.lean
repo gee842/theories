@@ -50,12 +50,12 @@ added together, say that nothing has odd parity.
   in context (`Square.indexed_met`), and `Square.noGlobal` follows
   (`Square.noGlobal_of_contradiction`).
 * **A cycle.** A cycle of claims, each related to the next as equal or different and the last to
-  the first (`Cycle.system`), counts every claim twice along its relations (`Cycle.counts_even`).
+  the first (`Gluing.Cycle.system`), counts every claim twice along its relations (`Gluing.Cycle.counts_even`).
   So its relations contradict where an odd number of them are differ relations
-  (`Cycle.contradicts`), and then every mixture of context-free assignments meets at most `n` of
-  its `n + 1` relations on average (`Cycle.mixture_le`); a context-free assignment meets them all
+  (`Gluing.Cycle.contradicts`), and then every mixture of context-free assignments meets at most `n` of
+  its `n + 1` relations on average (`Gluing.Cycle.mixture_le`); a context-free assignment meets them all
   exactly where that number is even, found by walking the cycle from one claim
-  (`Cycle.met_iff_even`). Specker's three boxes are, relabelled, the cycle of three differ
+  (`Gluing.Cycle.met_iff_even`). Specker's three boxes are, relabelled, the cycle of three differ
   relations, and `CorrectionRelations.cycle_compatible_iff_even` in the periphery is the same law
   for a list of relations.
 
@@ -697,7 +697,7 @@ end Square
 
 /-! ## A cycle of equal and differ relations -/
 
-namespace Cycle
+namespace Gluing.Cycle
 
 /-- The numbers below `n`, listed downward. -/
 def down : Nat → List Nat
@@ -846,6 +846,6 @@ theorem met_iff_even (n : Nat) (pol : Nat → Bool) (close : Bool) :
       | ⟨k, mem, unmet⟩ => absurd (all k mem) unmet,
    fun even => ⟨walk pol, walk_meets even⟩⟩
 
-end Cycle
+end Gluing.Cycle
 
 end Becoming

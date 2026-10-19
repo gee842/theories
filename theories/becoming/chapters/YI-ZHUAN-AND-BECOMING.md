@@ -125,11 +125,11 @@
 | <a id="p-wanglai-butong"></a>「闔戶謂之坤，闢戶謂之乾，一闔一闢謂之變；往來不窮謂之通」 | 《繫辭上》第十一章 | 定域 | `Hexagram.waxWane_returns`<br>`Hexagram.every_returns_iff`<br>`Hexagram.allBroken_absorbing` | 往来不穷，恰在律不合并之处；只入阴爻之律下坤为吸收态，往而不来。 |
 | <a id="p-riyue"></a>「日往則月來，月往則日來，日月相推而明生焉」……「往者，屈也；來者，信也。屈信相感而利生焉」 | 《繫辭下》第四章 | 相合 | `Hexagram.arising_recurs`<br>`Hexagram.ceasing_recurs`<br>`Frame.claims_recur_iff` | 沿律之每一运行，一爻在任意晚的步上转为阳，也在任意晚的步上止于阳；“利生焉”是评价，不在律中。 |
 | <a id="p-yiyin-yiyang"></a>「一陰一陽之謂道」 | 《繫辭上》第五章 | 定域 | `Web.change_readings`<br>`World.arising_iff_ceasing`<br>`World.law_iff_em`<br>`Hexagram.world_arising_recurs`<br>`Hexagram.world_ceasing_recurs` | 生起与止息是一个变化的两种读法；有限且活动可判定的世界中二者同时反复；不经判定而对一切有限世界断言之，等价于排中律。 |
-| <a id="p-jizhi-shan"></a>「繼之者善也，成之者性也」 | 《繫辭上》第五章 | 相分 | `Web.significance_undetermined`<br>`Unrestricted`<br>`g0_of_unrestricted` | 易传断言继之者善；理论中动力学不决定意义，生命意义只在延续条件之下是定理，此条件明示而不断言。 |
+| <a id="p-jizhi-shan"></a>「繼之者善也，成之者性也」 | 《繫辭上》第五章 | 相分 | `Web.significance_undetermined`<br>`Unrestricted`<br>`livingSignificance_of_unrestricted` | 易传断言继之者善；理论中动力学不决定意义，生命意义只在延续条件之下是定理，此条件明示而不断言。 |
 | <a id="p-gu-wanwu"></a>「鼓萬物而不與聖人同憂」 | 《繫辭上》第五章 | 相合 | `Web.significance_undetermined` | 律鼓动万物，自身不带关切：无物有意义与万物有意义，动力学两者都不排除。 |
 | <a id="p-jianzhi"></a>「仁者見之謂之仁，知者見之謂之知」 | 《繫辭上》第五章 | 相合 | `Web.change_readings`<br>`Learning.goAlike_iff_lumped`<br>`Hexagram.pairs_goAlike`<br>`Hexagram.yang_not_goAlike` | 同一展开有多种读法；一种读法承载律，恰当律在其归并上同行：错卦之对承载，阳爻之数不承载。 |
 | <a id="p-rixin"></a>「富有之謂大業，日新之謂盛德」 | 《繫辭上》第五章 | 相合 | `Hexagram.waxWane_returns`<br>`Law.withHistory_never_returns`<br>`Hexagram.kept_history_unlisted` | 构形皆复返，而带着历史的展开永不复返，不被任何清单所含：无往不复与日新是同一律的两层读法；大业、盛德之评价不在律中。 |
-| <a id="p-shengsheng"></a>「生生之謂易」 | 《繫辭上》第五章 | 定域 | `Hexagram.wane_drawn`<br>`Hexagram.wane_loses`<br>`World.living_crosses`<br>`World.arising_opens`<br>`Web.generation_fed_from_beyond` | 脊柱上的变化比生生宽：它也含合并与可能之失；生生作为生成之持续有其条件：在有计数、有承载、平衡且耗散的世界中，无尽的生起排除从某步起每步封闭；耗散、被围住而成员不断生起的有限族，不能从某步起每步都无外部供给（双重否定的形式）。 |
+| <a id="p-shengsheng"></a>「生生之謂易」 | 《繫辭上》第五章 | 定域 | `Hexagram.wane_drawn`<br>`Hexagram.wane_loses`<br>`World.living_crosses`<br>`World.arising_opens`<br>`Web.embodiedArising_fed_from_beyond` | 脊柱上的变化比生生宽：它也含合并与可能之失；生生作为生成之持续，需要开放，并由外部供给。 |
 | <a id="p-jishu-zhilai"></a>「極數知來之謂占」 | 《繫辭上》第五章 | 定域 | `Learning.no_prefix_fixes_next`<br>`Learning.diagonal_misses`<br>`Identification.bounded_agree`<br>`Learning.goAlike_iff_lumped` | 一般而言没有有限前缀定得下一步；知来只在历程有界、读法为律所同行之处成立；以数占筮不被支持。 |
 | <a id="p-buce"></a>「陰陽不測之謂神」 | 《繫辭上》第五章 | 相合 | `Learning.diagonal_misses`<br>`Web.tail_unexcluded` | 对任一外推，皆有其失误的历程；没有模型时，有限前缀不排除其后的任何走向。 |
 | <a id="p-gantong"></a>「易，无思也，无為也，寂然不動，感而遂通天下之故」 | 《繫辭上》第十章 | 定域 | `Web.observed_level_couples`<br>`Flow.uncoupled_beyond_coupling` | 感即耦合：经耦合而入的差别得以传达；耦合闭包之外者不被区分，“通天下”恰止于耦合所及。 |
@@ -142,7 +142,7 @@
 | <a id="p-gen-zhi"></a>「艮，止也。時止則止，時行則行，動靜不失其時」 | 艮·彖 | 相合 | `Law.rests_iff`<br>`World.rests_unrefuted_enclosed` | 止是相对于律而言：轨道止于其目标，恰当它到达律所不变之态；静不是世界停止。 |
 | <a id="p-lishuang"></a>「履霜，堅冰至」……「履霜堅冰，陰始凝也。馴致其道，至堅冰也」 | 坤·初六、象 | 相合 | `Hexagram.wane`<br>`Hexagram.wane_six`<br>`Hexagram.wane_drawn`<br>`Hexagram.wane_never_back`<br>`Law.DrawnInto.never_back` | 只入阴爻之律：每步多一阴爻，六步皆阴而不复离，被吸入者永不回来；在消息之律下坤并非吸收态，坚冰是否长存在律不在卦。 |
 | <a id="p-weiji"></a>「物不可窮也，故受之以未濟；終焉」 | 《序卦》 | 相合 | `Law.withHistory_unlisted`<br>`Hexagram.kept_history_unlisted`<br>`World.arising_opens`<br>`Onward.run_iff_continues` | 卦序终于未济：带着历史的展开不被任何清单所含；生起无尽须开放；有限构形之内，运行恰是长如清单之历程。 |
-| <a id="p-ziqiang"></a>「天行健，君子以自強不息」 | 乾·象 | 定域 | `Flow.fed_from_beyond`<br>`Web.generation_fed_from_beyond` | 平衡而耗散的交换中，持续者由外部供给，封闭的部分不能只凭自身不息；自强读作耦合之中自身之分则相合，读作自足则相分。 |
+| <a id="p-ziqiang"></a>「天行健，君子以自強不息」 | 乾·象 | 定域 | `Flow.fed_from_beyond`<br>`Web.embodiedArising_fed_from_beyond` | 平衡而耗散的交换中，持续者由外部供给，封闭的部分不能只凭自身不息；自强读作耦合之中自身之分则相合，读作自足则相分。 |
 | <a id="p-yuanshi"></a>「原始反終，故知死生之說」 | 《繫辭上》第四章 | 相合 | `Frame.arises_iff`<br>`Frame.novel_iff_arises`<br>`World.living_crosses` | 生起是一主张被新实现；活着跨越生起与止息，不由二者之反复决定。 |
 | <a id="p-xiang"></a>「是故易者，象也。象也者，像也」 | 《繫辭下》第三章 | 定域 | `Learning.goAlike_iff_lumped`<br>`Hexagram.pairs_goAlike`<br>`Hexagram.yang_not_goAlike` | 象是一种归并的读法；它承载律，恰当律在其上同行。 |
 | <a id="p-yijian"></a>「易簡，而天下之理得矣」 | 《繫辭上》第一章 | 定域 | `Learning.goAlike_iff_lumped`<br>`Hexagram.pairs_lumped`<br>`Hexagram.yang_not_lumped` | 更简的读法保留律，恰当它是律所同行的归并：六十四归为三十二对仍成律，按阳爻之数归并则不成；并非任何简化皆得理。 |
@@ -199,7 +199,7 @@
 | <a id="p-yongliu"></a>「用六：利永貞」……「用六永貞，以大終也」 | 坤·用六、象 | 定域 | `Hexagram.MarkedLines.all_sixes`<br>`Hexagram.MarkedLines.run_settled`<br>`Hexagram.MarkedLines.returns_iff`<br>`Hexagram.MarkedLines.onward` | 用六读作六爻皆为老阴（六）：所示本卦坤，自第一步起历程所示为乾。《象》“以大終”读作终于阳（乾）；“利永貞”是判断，不在律中。 |
 | <a id="p-tianzun"></a>「天尊地卑，乾坤定矣。卑高以陳，貴賤位矣」 | 《繫辭上》第一章 | 相分 | `Hexagram.complement_complement`<br>`Hexagram.waxWane_complement`<br>`Hexagram.reverse_waxWane` | 构形中乾坤互为错卦，律与错交换、倒转则律逆行：结构不含尊卑；贵贱之位是理论不采的等级。 |
 | <a id="p-guijian"></a>「三與五同功而異位，其遇不同：三多凶，五多功，貴賤之等也」 | 《繫辭下》第八章 | 相分 | `Hexagram.Place`<br>`Contextual.indexed_fits`<br>`Hexagram.odd`<br>`Hexagram.middle` | 位有别，是语境之索引：三、五同为奇位（同功），五居中而三不居中（異位）；位无等级。 |
-| <a id="p-dade"></a>「天地之大德曰生，聖人之大寶曰位」 | 《繫辭下》第一章 | 相分 | `World.living_crosses`<br>`Web.significance_undetermined`<br>`g0_of_unrestricted` | 大德曰生是断言；理论中生起不定活着，生命意义只在延续条件之下成立；大宝曰位是等级。 |
+| <a id="p-dade"></a>「天地之大德曰生，聖人之大寶曰位」 | 《繫辭下》第一章 | 相分 | `World.living_crosses`<br>`Web.significance_undetermined`<br>`livingSignificance_of_unrestricted` | 大德曰生是断言；理论中生起不定活着，生命意义只在延续条件之下成立；大宝曰位是等级。 |
 | <a id="p-dayan"></a>「大衍之數五十，其用四十有九」……「以卜筮者尚其占」 | 《繫辭上》第九章、第十章 | 相分 | `Learning.no_prefix_fixes_next`<br>`Learning.diagonal_misses` | 数术不在脊柱之中：任一由有限记录给出预言的程序，都有其失误的历程。 |
 <!-- passage-map:end -->
 
@@ -215,7 +215,7 @@
 
 **感与几：止于耦合所及。** 咸彖“咸，感也”与繫辭“感而遂通”，读作耦合：经水平耦合的条件，差别传入（`Web.observed_level_couples`）；耦合闭包之外，什么也不被区分（`Flow.uncoupled_beyond_coupling`），选择也不能及（`Flow.unselected_beyond_coupling`）。“通天下之故”于是恰止于耦合所及。几也是一样：断裂所系的条件若不以水平耦合入读法，则断裂之前，没有经耦合而入的东西界定断裂有多远（`Web.break_not_bounded`），经耦合的策略只在失败之后动用更大储备（`Flow.policy_uses_after_failure`）。“知幾其神乎”说的难处，在这里是一条律：几的先见，只在相关条件已耦合入读法时可能。这也是文言“亢之為言也，知進而不知退”的结构：只知进者，所失只在断裂时登记。
 
-**生生之谓易：变化比生生宽。** 理论中的变化包括生成与退化，两者不重叠；生生是生成之持续（D1），不是任何新的组织。只入阴爻之律是一种变化，它合并、失去可能（`wane_drawn`、`wane_loses`）。活着跨越生起与止息，不由二者的反复决定（`World.living_crosses`）。生成之持续有其条件：在有计数、有承载、平衡且耗散的世界中，无尽的生起排除从某步起每步封闭（`World.arising_opens`）；耗散、被围住而成员不断生起的有限族，不能从某步起每步都无外部供给（`Web.generation_fed_from_beyond`，双重否定的形式）。所以“生生之謂易”在理论中是定域：易（变化）不尽是生生；生生是变化中的一种历程，有它的条件。
+**生生之谓易：变化比生生宽。** 理论中的变化包括生成与退化，两者不重叠；生生是生成之持续（D1），不是任何新的组织。只入阴爻之律是一种变化，它合并、失去可能（`wane_drawn`、`wane_loses`）。活着跨越生起与止息，不由二者的反复决定（`World.living_crosses`）。生成之持续有其条件：在有计数、有承载、平衡且耗散的世界中，无尽的生起排除从某步起每步封闭（`World.arising_opens`）；耗散、被围住而成员不断生起的有限族，不能从某步起每步都无外部供给（`Web.embodiedArising_fed_from_beyond`，双重否定的形式）。所以“生生之謂易”在理论中是定域：易（变化）不尽是生生；生生是变化中的一种历程，有它的条件。
 
 **自强不息与外部供给。** “天行健，君子以自強不息”是劝勉，不是本体论断。若把“自强”读作只凭自身而不息，平衡而耗散的交换中没有这样的部分：持续者由外部供给（`Flow.fed_from_beyond`）。若读作在耦合之中尽其自身之分，则与理论相合。
 
@@ -263,7 +263,7 @@
 
 ## 6. 相分之处
 
-- **继之者善，天地之大德曰生，復见天地之心。** 易传把善、大德与心归于天地之行。理论中动力学不决定意义：无物有意义与万物有意义，动力学两者都不排除（`Web.significance_undetermined`）。生命意义只在延续条件（`Unrestricted`）之下是定理（`g0_of_unrestricted`），此条件在理论中明示而不断言，其根据开放。
+- **继之者善，天地之大德曰生，復见天地之心。** 易传把善、大德与心归于天地之行。理论中动力学不决定意义：无物有意义与万物有意义，动力学两者都不排除（`Web.significance_undetermined`）。生命意义只在延续条件（`Unrestricted`）之下是定理（`livingSignificance_of_unrestricted`），此条件在理论中明示而不断言，其根据开放。
 - **天尊地卑，贵贱位矣；三多凶，五多功，贵贱之等；圣人之大宝曰位。** 构形之中乾坤互为错卦，律与错交换，倒转则律逆行：结构里没有尊卑。位有别，是语境的索引（`Contextual.indexed_fits`），不是等级。贵贱之位是社会等级，理论不采。
 - **柔得尊位；爻有等，文不當，故吉凶生焉。** 大有彖以五为尊位，繫辭下以爻有等级、文之不当为吉凶之源。模块中，正是爻与位之间不带判断的关系，位之有别是语境的索引；动力学不决定意义（`Web.significance_undetermined`）。与上一条贵贱之位同，不采。
 - **需上六“雖不當位”，依六位之奇偶。** 上六阴居偶位，依六位之奇偶当位（`xu_top_inPhase`），象却说不当位。王弼《辯位》以此与乾上九“貴而无位”为初、上无定位之证；模块把初上无位写作二至五位上的第二个关系，此句在其下相合（`xu_top_no_place`，§5），表中为相合。依六位之奇偶的相分如其所是地保留。

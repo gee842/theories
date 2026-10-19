@@ -564,7 +564,7 @@ theorem within_closure_yet_loses {l : Nat → Place → Nat}
       web.Adds (bounded (flow.WithinFeeding web)) .dweller l web.level :=
   ⟨Web.retains_bounded_iff.mpr fun t => ((loses_beyond without).1 t).2.2.narrow
       fun _ within => within alongDependence fedClosed trivial,
-   (free_rider_loses without unrestricted p).2.1,
+   (clearer_loses_dweller without unrestricted p).2.1,
    ⟨2, .dweller, Flow.WithinFeeding.refl _, admitted_without without 2, unsupported_with 0⟩⟩
 
 end Clearing

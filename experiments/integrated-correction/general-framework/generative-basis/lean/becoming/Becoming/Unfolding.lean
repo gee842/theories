@@ -39,7 +39,7 @@ covers both.
   there (`World.exchange_step_iff`), and is then a run of that law (`World.exchangeRun`). The
   exchange fixes the standings after it (`exchange_agrees`) and, from a beginning, at every
   step (`exchange_runs_agree`); without the beginning it does not, and the standings do not fix
-  the exchange (`Circulation.start_needed`, `Circulation.standings_leave_exchange`).
+  the exchange (`Labelled.Circulation.start_needed`, `Labelled.Circulation.standings_leave_exchange`).
 * **A history fixes the law it shows.** Every sequence of configurations and moves is a run of
   the law it shows (`Shown`, `Shown.run`), the least law it is a run of (`shown_le_iff`); two
   laws take the same steps exactly when they have the same traces (`same_steps_iff_traces`). That

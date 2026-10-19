@@ -156,33 +156,33 @@ inductive Step : Configuration → Event → Configuration → Prop where
 def law : Process Configuration Event := ⟨Step⟩
 
 /-- A complete history: two steps from the initial configuration. -/
-structure History where
+structure TwoSteps where
   first : Event
   middle : Configuration
   second : Event
   final : Configuration
 
-def Admissible (h : History) : Prop :=
+def Admissible (h : TwoSteps) : Prop :=
   Step .initial h.first h.middle ∧ Step h.middle h.second h.final
 
 inductive Claim where
   | leftRealized | rightRealized
 
-def realized (h : History) : Claim → Prop
+def realized (h : TwoSteps) : Claim → Prop
   | .leftRealized => h.final = .leftActive ∨ h.final = .bothActive
   | .rightRealized => h.final = .rightActive ∨ h.final = .bothActive
 
 /-- Complete histories as the configurations of a frame with no moves. -/
-def frame : Frame History Unit Claim := ⟨⟨fun _ _ _ => False⟩, realized⟩
+def frame : Frame TwoSteps Unit Claim := ⟨⟨fun _ _ _ => False⟩, realized⟩
 
 /-- The histories that retain, and those that release, the coupling. -/
-def retained (h : History) : Prop := Admissible h ∧ h.first = .retain
-def released (h : History) : Prop := Admissible h ∧ h.first = .release
+def retained (h : TwoSteps) : Prop := Admissible h ∧ h.first = .retain
+def released (h : TwoSteps) : Prop := Admissible h ∧ h.first = .release
 
-def together : History := ⟨.retain, .coupled, .activateTogether, .bothActive⟩
-def leftOnly : History := ⟨.release, .released, .activateLeft, .leftActive⟩
-def rightOnly : History := ⟨.release, .released, .activateRight, .rightActive⟩
-def retainedLeft : History := ⟨.retain, .coupled, .activateLeft, .leftActive⟩
+def together : TwoSteps := ⟨.retain, .coupled, .activateTogether, .bothActive⟩
+def leftOnly : TwoSteps := ⟨.release, .released, .activateLeft, .leftActive⟩
+def rightOnly : TwoSteps := ⟨.release, .released, .activateRight, .rightActive⟩
+def retainedLeft : TwoSteps := ⟨.retain, .coupled, .activateLeft, .leftActive⟩
 
 theorem together_retained : retained together := ⟨⟨.retainCoupling, .activateTogether⟩, rfl⟩
 
@@ -191,7 +191,7 @@ theorem together_all : ∀ c, realized together c
   | .rightRealized => .inr rfl
 
 /-- After releasing, no history realizes both claims. -/
-theorem released_not_both {h : History} (inReleased : released h)
+theorem released_not_both {h : TwoSteps} (inReleased : released h)
     (both : ∀ c, realized h c) : False := by
   obtain ⟨first, middle, second, final⟩ := h
   obtain ⟨⟨firstStep, secondStep⟩, isRelease⟩ := inReleased
@@ -238,12 +238,12 @@ def realizedAt (s : Configuration) : Claim → Prop
 def lawFrame : Frame Configuration Event Claim := ⟨law, realizedAt⟩
 
 /-- **A history realizes exactly the claims the frame realizes at its final configuration.** -/
-theorem history_meaning (h : History) : ∀ c, realized h c ↔ lawFrame.realized h.final c
+theorem twoSteps_meaning (h : TwoSteps) : ∀ c, realized h c ↔ lawFrame.realized h.final c
   | .leftRealized => Iff.rfl
   | .rightRealized => Iff.rfl
 
 /-- An admissible history is a two-step trace of the law from the initial configuration. -/
-theorem admissible_trace {h : History} (admissible : Admissible h) :
+theorem admissible_trace {h : TwoSteps} (admissible : Admissible h) :
     Trace lawFrame.P .initial [h.first, h.second] h.final :=
   .cons admissible.1 (.cons admissible.2 (.nil _))
 
@@ -266,10 +266,10 @@ theorem retained_left_only :
     lawFrame.realized .leftActive .leftRealized ∧
       ¬ lawFrame.realized .leftActive .rightRealized :=
   ⟨⟨.activateTogether, .bothActive, admissible_trace (h := together) together_retained.1,
-     fun c => (history_meaning together c).mp (together_all c)⟩,
+     fun c => (twoSteps_meaning together c).mp (together_all c)⟩,
    admissible_trace (h := retainedLeft) retainedLeft_only.1.1,
-   (history_meaning retainedLeft _).mp retainedLeft_only.2.1,
-   fun right => retainedLeft_only.2.2 ((history_meaning retainedLeft _).mpr right)⟩
+   (twoSteps_meaning retainedLeft _).mp retainedLeft_only.2.1,
+   fun right => retainedLeft_only.2.2 ((twoSteps_meaning retainedLeft _).mpr right)⟩
 
 /-- **The joint content of the law is the configuration with both active**: a configuration
 realizing both claims is `bothActive`. From the bridge's reading of the law. -/
@@ -333,7 +333,7 @@ open Activation
 inductive Regime where
   | released | retained
 
-def histories : Regime → History → Prop
+def histories : Regime → TwoSteps → Prop
   | .released => Activation.released
   | .retained => Activation.retained
 

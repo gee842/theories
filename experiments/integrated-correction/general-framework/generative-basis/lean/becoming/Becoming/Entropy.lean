@@ -10,14 +10,14 @@ whether an exchange can lose nothing, where the spine's least loss per exchange
 
 * **The history, with no premise.** In a balanced flow every change of a member's level is
   an exchange with the family (`Flow.Balances.exchanges_of_change`). The history of the
-  family's exchanges since `T` (`Flow.history`) never shrinks (`Flow.history_mono`) and
+  family's exchanges since `T` (`Flow.exchangeCount`) never shrinks (`Flow.history_mono`) and
   grows at every step at which anything is exchanged with it. An exchange and its reverse
   (`Flow.Reverses`: the same formations, each taking what it gave and giving what it took)
   restore every level, and the history counts both
   (`Flow.Balances.restores_levels_not_history`).
 * **Zero loss.** Nothing from nothing (`Flow.Gainless`: every closed family without
   repetition gets back at most what is taken from it) and losing nothing
-  (`Flow.Lossless`) are the first law at a fixed unit; dissipation is the first law with a
+  (`Flow.Conserving`) are the first law at a fixed unit; dissipation is the first law with a
   least loss (`Flow.Dissipative.gainless`). Under the first law the reverse of an exchange
   is within the law exactly where the exchange loses nothing
   (`Flow.Reverses.gainlessOn_iff`); under dissipation no exchange is reversed
@@ -59,14 +59,14 @@ whether an exchange can lose nothing, where the spine's least loss per exchange
   those totalling exactly that stock: `configurations n K` lists each way `K` units fall
   into `n` members exactly once (`configurations_exact`, `configurations_examples`). A
   family that never revisits a configuration (`Web.Revisits`) changes across at most that
-  many steps (`Flow.Balances.changes_within`, `Flow.Balances.changes_within_lossless`) and
+  many steps (`Flow.Balances.changes_within`, `Flow.Balances.changes_within_conserving`) and
   comes to rest (`Flow.Balances.rests_of_never_revisits`). So under the first law change
   without end revisits (`Flow.Balances.unending_change_revisits`), and in a finite world
   arising without end revisits from every step on (`World.arising_revisits`). Under
   dissipation a family never revisits (`Flow.Balances.never_revisits`,
   `World.never_revisits`). Never revisiting brings rest without the least loss: in
   `Settling` one unit passes once, losing nothing, and the world rests
-  (`Settling.settles`).
+  (`Entropy.Settling.settles`).
 * **No arrow of the levels while change goes on.** A quantity of the configuration that
   never falls and rises across every change (`Web.Arrow`) rules out revisiting
   (`Web.never_revisits_of_arrow`). So under the first law an arrow brings rest
@@ -91,7 +91,7 @@ whether an exchange can lose nothing, where the spine's least loss per exchange
   (`Flow.Balances.merges_of_never_revisits`, `Flow.Balances.merges_of_arrow`,
   `Flow.Balances.merges_of_dissipates`). In `Passing` the sides swap, merging nothing
   (`Passing.history_without_arrow`); in `Settling` coming to rest merges, and the level of
-  the side receiving the unit is an arrow (`Settling.merges`).
+  the side receiving the unit is an arrow (`Entropy.Settling.merges`).
 * **The laws of change, read on the family.** `Becoming.Recurrence` states what every
   sequence and every determined law keeps, loses and returns to, with no premise. Revisiting
   after a change is revisiting (`Web.Revisits.recurs`), an arrow marks every change
@@ -100,10 +100,10 @@ whether an exchange can lose nothing, where the spine's least loss per exchange
   first law the configurations stay within one list (`Flow.Balances.held`), so from every
   step on they take one value twice, constructively (`Flow.Balances.recurs`), an arrow
   stops change (`Flow.Balances.arrow_stops`), within that bound a law merging nothing
-  brings the start back (`Flow.Balances.returns_of_lossless`; the bound does the work, as
+  brings the start back (`Flow.Balances.returns_of_conserving`; the bound does the work, as
   `Law.succ_open` merges nothing and never returns), the present forgets the kept history
   (`Flow.Balances.present_forgets`), and an arrow or dissipation rules out a law merging
-  nothing (`Flow.Balances.not_lossless_of_arrow`, `Flow.Balances.not_lossless_of_dissipates`).
+  nothing (`Flow.Balances.not_conserving_of_arrow`, `Flow.Balances.not_conserving_of_dissipates`).
 * **An arrow drawn from beyond.** In `Gathering` a record takes one unit from a new relatum
   at every step: every exchange conserves exactly, every step is enclosed, the exchange
   recurs, and the record's level is an arrow without end. The record gains by exchange
@@ -140,7 +140,7 @@ def GainlessOn (cs : List C) (t : Nat) : Prop :=
 
 /-- Across the step from `t`, every formation taking part gives the family exactly what it
 takes from it: its exchanges lose nothing. -/
-def LosslessOn (cs : List C) (t : Nat) : Prop :=
+def ConservingOn (cs : List C) (t : Nat) : Prop :=
   ∀ f, f ∈ L.present t → total cs (L.give t f) = total cs (L.take t f)
 
 /-- Nothing from nothing: across every step, every family without repetition closed across
@@ -149,8 +149,8 @@ def Gainless : Prop :=
   ∀ cs t, Distinct cs → L.ClosedAt cs t → L.GainlessOn cs t
 
 /-- Across every step, every family without repetition closed across it loses nothing. -/
-def Lossless : Prop :=
-  ∀ cs t, Distinct cs → L.ClosedAt cs t → L.LosslessOn cs t
+def Conserving : Prop :=
+  ∀ cs t, Distinct cs → L.ClosedAt cs t → L.ConservingOn cs t
 
 /-- The exchange across the step from `u` reverses the exchange across the step from `t`:
 the same formations take part, each taking what it gave and giving what it took. -/
@@ -173,10 +173,10 @@ theorem DissipatesOn.gainlessOn (dissipates : L.DissipatesOn cs t) : L.GainlessO
 theorem Dissipative.gainless (dissipative : L.Dissipative) : L.Gainless :=
   fun cs t distinct closed => (dissipative cs t distinct closed).gainlessOn
 
-theorem LosslessOn.gainlessOn (lossless : L.LosslessOn cs t) : L.GainlessOn cs t :=
+theorem ConservingOn.gainlessOn (lossless : L.ConservingOn cs t) : L.GainlessOn cs t :=
   fun f present => Nat.le_of_eq (lossless f present)
 
-theorem Lossless.gainless (lossless : L.Lossless) : L.Gainless :=
+theorem Conserving.gainless (lossless : L.Conserving) : L.Gainless :=
   fun cs t distinct closed => (lossless cs t distinct closed).gainlessOn
 
 /-- A number with its sign added is at most itself only where it is zero. -/
@@ -186,7 +186,7 @@ theorem eq_zero_of_add_sign_le : ∀ {a : Nat}, a + sign a ≤ a → a = 0
 
 /-- Dissipated on, an exchange that loses nothing exchanges nothing: a formation taking part
 that gives the family what it takes from it neither takes nor gives. -/
-theorem DissipatesOn.idle_of_lossless (dissipates : L.DissipatesOn cs t) {f : F}
+theorem DissipatesOn.idle_of_conserving (dissipates : L.DissipatesOn cs t) {f : F}
     (present : f ∈ L.present t) (same : total cs (L.give t f) = total cs (L.take t f)) :
     total cs (L.take t f) = 0 ∧ total cs (L.give t f) = 0 :=
   have none : total cs (L.take t f) = 0 := eq_zero_of_add_sign_le
@@ -239,7 +239,7 @@ theorem Reverses.closedAt (rev : L.Reverses u t) (closed : L.ClosedAt cs t) :
 /-- Under the first law the reverse of an exchange is within it exactly where the exchange
 loses nothing: an exchange losing nothing is one that can be undone within the law. -/
 theorem Reverses.gainlessOn_iff (rev : L.Reverses u t) (gainless : L.GainlessOn cs t) :
-    L.GainlessOn cs u ↔ L.LosslessOn cs t :=
+    L.GainlessOn cs u ↔ L.ConservingOn cs t :=
   ⟨fun back f present => Nat.le_antisymm (gainless f present)
       (Nat.le_trans (Nat.le_of_eq (rev.give_total cs f).symm)
         (Nat.le_trans (back f (rev.mem present)) (Nat.le_of_eq (rev.take_total cs f)))),
@@ -251,7 +251,7 @@ exchanged. -/
 theorem Reverses.idle_of_dissipates (rev : L.Reverses u t) (forth : L.DissipatesOn cs t)
     (back : L.DissipatesOn cs u) {f : F} (present : f ∈ L.present t) :
     total cs (L.take t f) = 0 ∧ total cs (L.give t f) = 0 :=
-  forth.idle_of_lossless present
+  forth.idle_of_conserving present
     (((rev.gainlessOn_iff forth.gainlessOn).mp back.gainlessOn) f present)
 
 /-- What passes does not pass back: under dissipation, across a step at which a family
@@ -618,7 +618,7 @@ theorem DissipatesOn.exchanges_le_takers (dissipates : L.DissipatesOn cs t) :
            (Nat.zero_add _)))))
 
 /-- Losing nothing, the family loses nothing. -/
-theorem LosslessOn.lost_zero (lossless : L.LosslessOn cs t) : L.lost cs t = 0 :=
+theorem ConservingOn.lost_zero (lossless : L.ConservingOn cs t) : L.lost cs t = 0 :=
   excess_zero_of_le (Nat.le_trans
     (Nat.le_of_eq (total_swap (fun f c => L.take t f c) cs (L.present t)).symm)
     (Nat.le_trans (total_le _ fun f present => Nat.le_of_eq (lossless f present).symm)
@@ -662,7 +662,7 @@ theorem Balances.dissipated_le (balances : L.Balances W) {T : Nat}
   Nat.le_trans (Nat.le_add_left _ _) (Nat.le_of_eq (balances.stock_dissipated gainless N))
 
 /-- Losing nothing, nothing is dissipated. -/
-theorem dissipated_zero {T : Nat} (lossless : ∀ t, T ≤ t → L.LosslessOn cs t) (N : Nat) :
+theorem dissipated_zero {T : Nat} (lossless : ∀ t, T ≤ t → L.ConservingOn cs t) (N : Nat) :
     L.dissipated cs T N = 0 :=
   total_eq_zero fun t mem => (lossless t (steps_mem mem)).lost_zero
 
@@ -700,8 +700,8 @@ def residue (L : Flow F C) (cs : List C) (t : Nat) (f : F) : Nat :=
 /-- With the record counted, the family with its record loses nothing exactly where each
 formation taking part gives the family, with what it records, exactly what it takes from
 it. -/
-theorem losslessOn_withRecord_iff :
-    (L.withRecord ρ).LosslessOn ((none : Option C) :: cs.map some) t ↔
+theorem conservingOn_withRecord_iff :
+    (L.withRecord ρ).ConservingOn ((none : Option C) :: cs.map some) t ↔
       ∀ f, f ∈ L.present t → total cs (L.give t f) + ρ t f = total cs (L.take t f) :=
   ⟨fun lossless f present => calc
       total cs (L.give t f) + ρ t f = ρ t f + total cs (L.give t f) := Nat.add_comm _ _
@@ -735,9 +735,9 @@ loses nothing, and the record receives at least one unit from every exchange wit
 family. -/
 theorem dissipatesOn_iff_conserved :
     L.DissipatesOn cs t ↔ ∃ ρ : Nat → F → Nat,
-      (L.withRecord ρ).LosslessOn ((none : Option C) :: cs.map some) t ∧ L.RecordsOn ρ cs t :=
+      (L.withRecord ρ).ConservingOn ((none : Option C) :: cs.map some) t ∧ L.RecordsOn ρ cs t :=
   ⟨fun dissipates => ⟨L.residue cs,
-     losslessOn_withRecord_iff.mpr fun _ present =>
+     conservingOn_withRecord_iff.mpr fun _ present =>
        dissipates.gainlessOn.conserves_residue present,
      fun f present exchanged => excess_pos.mpr (Nat.lt_of_lt_of_le
        (Nat.lt_add_of_pos_right (sign_pos exchanged))
@@ -1177,8 +1177,8 @@ theorem Balances.changes_within (balances : L.Balances W) {T : Nat}
 
 /-- Losing nothing, it changes across at most as many steps as there are ways its stock falls
 into its members: Boltzmann's count of the configurations of that stock. -/
-theorem Balances.changes_within_lossless (balances : L.Balances W) {T : Nat}
-    (lossless : ∀ t, T ≤ t → L.LosslessOn cs t) (never : ¬ W.Revisits cs T) (N : Nat) :
+theorem Balances.changes_within_conserving (balances : L.Balances W) {T : Nat}
+    (lossless : ∀ t, T ≤ t → L.ConservingOn cs t) (never : ¬ W.Revisits cs T) (N : Nat) :
     total (steps T N) (fun t => mark (W.Changes cs t)) ≤
       (configurations cs.length (W.stock cs T)).length :=
   Web.changes_within _ (fun _ later => match le_dest later with
@@ -1445,7 +1445,7 @@ flow over a family gaining nothing at every step from `T` on, the configurations
 those of its members totalling at most its stock at `T` (`Flow.Balances.orbit_held`); where
 its change from `T` on is the law `next` and `next` merges no two configurations, the
 configuration at `T` comes back. -/
-theorem Balances.returns_of_lossless (balances : L.Balances W) {T : Nat}
+theorem Balances.returns_of_conserving (balances : L.Balances W) {T : Nat}
     (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {next : List Nat → List Nat}
     (determined : W.Determined cs T next) (lossless : Law.Lossless next) :
     Law.Returns next (W.config cs T) :=
@@ -1474,7 +1474,7 @@ theorem Balances.present_forgets (balances : L.Balances W) {T : Nat}
 change is the law `next` and some quantity of its configuration is an arrow, once it changes
 `next` merges two configurations somewhere (`Law.rise_not_lossless`, here with no list of
 every configuration). -/
-theorem Balances.not_lossless_of_arrow (balances : L.Balances W) {T : Nat}
+theorem Balances.not_conserving_of_arrow (balances : L.Balances W) {T : Nat}
     (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {next : List Nat → List Nat}
     (determined : W.Determined cs T next) {S : List Nat → Nat} (arrow : W.Arrow cs T S)
     {v : Nat} (from_ : T ≤ v) (changes : W.Changes cs v) : ¬ Law.Lossless next :=
@@ -1482,7 +1482,7 @@ theorem Balances.not_lossless_of_arrow (balances : L.Balances W) {T : Nat}
     fun merges => merges.law.not_lossless lossless
 
 /-- And so does dissipation. -/
-theorem Balances.not_lossless_of_dissipates (balances : L.Balances W) {T : Nat}
+theorem Balances.not_conserving_of_dissipates (balances : L.Balances W) {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn cs t) {next : List Nat → List Nat}
     (determined : W.Determined cs T next) {v : Nat} (from_ : T ≤ v)
     (changes : W.Changes cs v) : ¬ Law.Lossless next :=
@@ -1509,20 +1509,20 @@ variable {L : Flow F C} {W : Web F C} {cs : List C}
 
 /-- The history of the family's exchanges over the `N` steps from `T`: how many exchanges
 with it took place across them. -/
-def history (L : Flow F C) (cs : List C) (T N : Nat) : Nat :=
+def exchangeCount (L : Flow F C) (cs : List C) (T N : Nat) : Nat :=
   total (steps T N) (L.exchanges cs)
 
 /-- The history never shrinks. -/
 theorem history_mono (L : Flow F C) (cs : List C) (T : Nat) {a b : Nat} (le : a ≤ b) :
-    L.history cs T a ≤ L.history cs T b :=
+    L.exchangeCount cs T a ≤ L.exchangeCount cs T b :=
   match le_dest le with
-  | ⟨m, same⟩ => Eq.subst (motive := fun z => L.history cs T a ≤ L.history cs T z) same.symm
+  | ⟨m, same⟩ => Eq.subst (motive := fun z => L.exchangeCount cs T a ≤ L.exchangeCount cs T z) same.symm
       (steps_mono (L.exchanges cs) T a m)
 
 /-- The family's configuration carries its history from `T` on: some reading of its
 configuration at each step from `T` on gives the number of exchanges with it since `T`. -/
 def CarriesHistory (L : Flow F C) (W : Web F C) (cs : List C) (T : Nat) : Prop :=
-  ∃ read : List Nat → Nat, ∀ N, read (W.config cs (T + N)) = L.history cs T N
+  ∃ read : List Nat → Nat, ∀ N, read (W.config cs (T + N)) = L.exchangeCount cs T N
 
 /-- A formation taking part that takes from or gives to a member of the family exchanges
 with it. -/
@@ -1540,7 +1540,7 @@ anything is exchanged with it: the history grows, so what carries it changes. -/
 theorem CarriesHistory.changes {T : Nat} (carries : L.CarriesHistory W cs T) {N : Nat}
     (exchanged : 0 < L.exchanges cs (T + N)) : W.Changes cs (T + N) :=
   fun same => match carries with
-  | ⟨read, reads⟩ => Nat.lt_irrefl (L.history cs T N) (Nat.lt_of_lt_of_le
+  | ⟨read, reads⟩ => Nat.lt_irrefl (L.exchangeCount cs T N) (Nat.lt_of_lt_of_le
       (Nat.lt_add_of_pos_right exchanged)
       (Nat.le_of_eq ((steps_last (L.exchanges cs) T N).symm.trans
         ((reads (N + 1)).symm.trans ((congrArg read same).trans (reads N))))))
@@ -1562,10 +1562,10 @@ theorem Balances.never_revisits_of_carries (balances : L.Balances W) {T : Nat}
       have exchanged : 0 < L.exchanges cs (T + c) :=
         match Web.changes_member (Eq.subst (motive := fun x => W.Changes cs x) vc changes) with
         | ⟨_, mem, moves⟩ => balances.exchanges_of_change mem moves
-      have back : L.history cs T b = L.history cs T a :=
+      have back : L.exchangeCount cs T b = L.exchangeCount cs T a :=
         (reads b).symm.trans ((congrArg (fun x => read (W.config cs x)) ub.symm).trans
           ((congrArg read same).trans ((congrArg (fun x => read (W.config cs x)) sa).trans (reads a))))
-      Nat.lt_irrefl (L.history cs T a) (Nat.lt_of_le_of_lt (L.history_mono cs T ac)
+      Nat.lt_irrefl (L.exchangeCount cs T a) (Nat.lt_of_le_of_lt (L.history_mono cs T ac)
         (Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right exchanged)
           (Nat.le_trans (Nat.le_of_eq (steps_last (L.exchanges cs) T c).symm)
             (Nat.le_trans (L.history_mono cs T cb) (Nat.le_of_eq back)))))
@@ -1799,7 +1799,7 @@ theorem balances : flow.Balances web := fun t c => match c with
 
 /-- Every family without repetition closed across a step loses nothing: it holds both sides,
 and one unit is taken from one and given to the other. -/
-theorem lossless : flow.Lossless := fun _ _ distinct closed f present =>
+theorem conserving : flow.Conserving := fun _ _ distinct closed f present =>
   (total_at distinct (holds_side fun c out => (closed f present c out).2)).trans
     (total_at distinct (holds_side fun c out => (closed f present c out).1)).symm
 
@@ -1845,7 +1845,7 @@ theorem exchanges_one (t : Nat) : flow.exchanges all t = 1 :=
         (congrArg (1 + ·) (total_at_all (!side t))))
 
 /-- The history of exchanges grows by one at every step, without end. -/
-theorem history_grows (T N : Nat) : flow.history all T N = N :=
+theorem history_grows (T N : Nat) : flow.exchangeCount all T N = N :=
   (total_congr exchanges_one (steps T N)).trans ((total_ones (steps T N)).trans (steps_length T N))
 
 /-- The configuration of all three comes back every two steps, though it changes across
@@ -1860,11 +1860,11 @@ each step is reversed across the next; arising and ceasing recur. The world revi
 configuration every two steps; it is not dissipative; nothing is dissipated, while the
 history of exchanges grows by one at every step. -/
 theorem passes :
-    world.Finite ∧ world.Embodied ∧ world.Counted ∧ world.Balanced ∧ flow.Lossless ∧
+    world.Finite ∧ world.Embodied ∧ world.Counted ∧ world.Balanced ∧ flow.Conserving ∧
     (∀ t, flow.Enclosed t) ∧ (∀ t, flow.Reverses (t + 1) t) ∧
     world.ArisingRecurs ∧ world.CeasingRecurs ∧ (∀ T, web.Revisits all T) ∧
     ¬ world.Dissipative ∧ (∀ T N, flow.dissipated all T N = 0) ∧ (∀ t, flow.exchanges all t = 1) :=
-  ⟨⟨all, distinct, every⟩, embodied, counted, balances, lossless,
+  ⟨⟨all, distinct, every⟩, embodied, counted, balances, conserving,
    fun t => ⟨all, distinct, closed t⟩, reverses,
    fun N => ⟨N, some (!side N), Nat.le_refl N,
      fun active => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le active (Nat.le_of_eq (holds_not (side N)))),
@@ -1876,7 +1876,7 @@ theorem passes :
    revisits,
    fun dissipative => Nat.not_succ_le_self 1
      (dissipative all 0 distinct (closed 0) none (.head _)),
-   fun _ N => Flow.dissipated_zero (fun t _ => lossless all t distinct (closed t)) N,
+   fun _ N => Flow.dissipated_zero (fun t _ => conserving all t distinct (closed t)) N,
    exchanges_one⟩
 
 /-- Both parts of the reading of dissipation are needed. Recording nothing, the family with
@@ -1929,16 +1929,16 @@ reversed across the next step; the change is a function of the configuration mer
 of its configurations; the history of exchanges grows by one at every step without end,
 while the configuration comes back every two steps and no quantity of it is an arrow. -/
 theorem history_without_arrow :
-    flow.Lossless ∧ (∀ t, flow.Reverses (t + 1) t) ∧ web.Determined all 0 swap ∧
-    ¬ web.Merges all 0 swap ∧ (∀ T N, flow.history all T N = N) ∧
+    flow.Conserving ∧ (∀ t, flow.Reverses (t + 1) t) ∧ web.Determined all 0 swap ∧
+    ¬ web.Merges all 0 swap ∧ (∀ T N, flow.exchangeCount all T N = N) ∧
     (∀ T, web.Revisits all T) ∧ ∀ T S, ¬ web.Arrow all T S :=
-  ⟨lossless, reverses, determined, apart, history_grows, revisits, no_arrow⟩
+  ⟨conserving, reverses, determined, apart, history_grows, revisits, no_arrow⟩
 
 end Passing
 
 /-! ## One passing, then rest -/
 
-namespace Settling
+namespace Entropy.Settling
 
 open Passing (holds at_ all)
 
@@ -1975,7 +1975,7 @@ theorem balances : flow.Balances web := fun t c => match t, c with
   | 0, some b => Nat.add_comm (holds b false) (holds b true)
   | _ + 1, _ => rfl
 
-theorem lossless : flow.Lossless := fun _ t distinct closed f present => match t, present with
+theorem conserving : flow.Conserving := fun _ t distinct closed f present => match t, present with
   | 0, present =>
     (Passing.total_at distinct (Passing.holds_side fun c out => (closed f present c out).2)).trans
       (Passing.total_at distinct (Passing.holds_side fun c out => (closed f present c out).1)).symm
@@ -2015,7 +2015,7 @@ nothing, every step is enclosed, and its configuration changes across the first 
 never revisits a configuration and is not dissipative; neither arising nor ceasing recurs, by
 `World.rests_of_never_revisits`. Never revisiting brings rest without the least loss. -/
 theorem settles :
-    world.Embodied ∧ world.Balanced ∧ flow.Lossless ∧ (∀ t, flow.Enclosed t) ∧
+    world.Embodied ∧ world.Balanced ∧ flow.Conserving ∧ (∀ t, flow.Enclosed t) ∧
     web.Changes all 0 ∧ ¬ web.Revisits all 0 ∧ ¬ world.Dissipative ∧
     ¬ world.ArisingRecurs ∧ ¬ world.CeasingRecurs :=
   have never : ¬ web.Revisits all 0 := fun ⟨s, v, u, _, sv, vu, changes, same⟩ =>
@@ -2027,16 +2027,16 @@ theorem settles :
           (rfl : web.level 0 (some true) = 1) |>.symm.trans
           (Web.level_of_config (W := web) same (Passing.every (some true))).symm)
     | _ + 1, _, _, changes => changes rfl
-  ⟨fun _ _ => Iff.rfl, balances, lossless, fun t => ⟨all, Passing.distinct, closed t⟩,
+  ⟨fun _ _ => Iff.rfl, balances, conserving, fun t => ⟨all, Passing.distinct, closed t⟩,
    changed, never,
    fun dissipative => Nat.not_succ_le_self 1
      (dissipative all 0 Passing.distinct (closed 0) none (.head _)),
    (World.rests_of_never_revisits (w := world) Passing.distinct Passing.every
-      (fun _ _ => Iff.rfl) balances lossless.gainless never).1,
+      (fun _ _ => Iff.rfl) balances conserving.gainless never).1,
    (World.rests_of_never_revisits (w := world) Passing.distinct Passing.every
-      (fun _ _ => Iff.rfl) balances lossless.gainless never).2⟩
+      (fun _ _ => Iff.rfl) balances conserving.gainless never).2⟩
 
-end Settling
+end Entropy.Settling
 
 /-! ## A record gathered from beyond -/
 
@@ -2121,7 +2121,7 @@ theorem balances : flow.Balances web := fun t c => match c with
 
 /-- Every family without repetition closed across a step loses nothing: it holds the relatum
 gathered from and the record, and one unit passes from the one to the other. -/
-theorem lossless : flow.Lossless := fun _ _ distinct closed f present =>
+theorem conserving : flow.Conserving := fun _ _ distinct closed f present =>
   (total_unit distinct (unit_mem fun c out => (closed f present c out).2)).trans
     (total_unit distinct (unit_mem fun c out => (closed f present c out).1)).symm
 
@@ -2144,10 +2144,10 @@ the world is not finite. So the premises of `Flow.Balances.no_arrow` that the fa
 nothing and of `World.no_arrow` that the world is finite do work: an arrow rising forever
 under exact conservation draws from beyond what it holds. -/
 theorem gathers :
-    world.Balanced ∧ flow.Lossless ∧ (∀ t, flow.Enclosed t) ∧ flow.ExchangeRecurs ∧
+    world.Balanced ∧ flow.Conserving ∧ (∀ t, flow.Enclosed t) ∧ flow.ExchangeRecurs ∧
     web.Arrow [0] 0 (fun l => total l fun x => x) ∧ (∀ t, ¬ flow.GainlessOn [0] t) ∧
     ¬ world.Finite :=
-  ⟨balances, lossless, enclosed,
+  ⟨balances, conserving, enclosed,
    fun N => ⟨N, 0, 0, Nat.le_refl N, .head _,
      .inr (Nat.lt_of_lt_of_le Nat.one_pos (Nat.le_of_eq (unit_self 0).symm))⟩,
    ⟨fun t _ => show t + 0 ≤ t + 1 + 0 from Nat.le_succ t,

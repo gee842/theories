@@ -32,7 +32,7 @@ namespace CountdownCourses
 at most `work` unit moves of the tick's process from a pending configuration ends at a
 configuration that is not finished. -/
 theorem not_done_before_course {S : Type u} {tick : S → Option S} {busy done : S → Prop}
-    {work fuel : S → Nat} (counts : Countdown.Counts tick busy done work fuel)
+    {work fuel : S → Nat} (counts : Countdown.CountedWork tick busy done work fuel)
     (apart : ∀ s, busy s → done s → False) {s t : S} {k : Nat} (pending : busy s)
     (within : k ≤ work s)
     (path : Trace (ofPartial fun s (_ : Unit) => tick s) s (List.replicate k ()) t) : ¬ done t :=

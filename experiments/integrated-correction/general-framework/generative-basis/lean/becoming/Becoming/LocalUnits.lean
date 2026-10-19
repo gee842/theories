@@ -4,7 +4,7 @@ import Becoming.Fragments
 # Local units: where a joining recovers the ends of what it joins
 
 A joining (`Becoming.Joining`) may leave some fragment unchanged whatever it joins with
-(`Joining.Neutral`); such a fragment is a unit of what it joins with unchanged (`LeftUnit`,
+(`Joining.TwoSidedUnit`); such a fragment is a unit of what it joins with unchanged (`LeftUnit`,
 `RightUnit`). Units are read off the joining alone, with no ends supplied.
 
 * Where joining is associative, each fragment has at most one unit on each side
@@ -18,11 +18,11 @@ A joining (`Becoming.Joining`) may leave some fragment unchanged whatever it joi
   joining in which `true` joins with `false` alone (`atMostOnce`) is functional, associative and
   has units, and two `true`s share a unit and do not join (`atMostOnce_not_chainComplete`).
 * A one-to-one correspondence carrying a joining carries its neutral fragments and units
-  (`neutral_transport`, `leftUnit_transport`, `rightUnit_transport`).
+  (`twoSidedUnit_transport`, `leftUnit_transport`, `rightUnit_transport`).
 
 On the traced fragments of a process (`Fragment.Traces`, `Fragment.joining`) all four laws hold
 with no hypothesis: joining is functional, associative and chain-complete, and the neutral
-fragments are exactly those staying at a configuration (`Fragment.neutral_iff_idle`), the left
+fragments are exactly those staying at a configuration (`Fragment.twoSidedUnit_iff_idle`), the left
 unit of a fragment the one staying at its start and the right unit the one staying at its finish
 (`Fragment.leftUnit_iff`, `Fragment.rightUnit_iff`). The ends of a fragment are recovered from
 the joining alone. Read through whether a fragment takes its step, the traced fragments of the
@@ -53,14 +53,14 @@ def Associative (J : Joining F) : Prop :=
   ∀ a b c d, (∃ m, J a b m ∧ J m c d) ↔ (∃ n, J b c n ∧ J a n d)
 
 /-- A fragment leaving what it joins with unchanged, on either side. -/
-def Neutral (J : Joining F) (e : F) : Prop :=
+def TwoSidedUnit (J : Joining F) (e : F) : Prop :=
   (∀ a c, J e a c → c = a) ∧ (∀ a c, J a e c → c = a)
 
 /-- A neutral fragment joining before `a` into `a`. -/
-def LeftUnit (J : Joining F) (e a : F) : Prop := J.Neutral e ∧ J e a a
+def LeftUnit (J : Joining F) (e a : F) : Prop := J.TwoSidedUnit e ∧ J e a a
 
 /-- A neutral fragment joining after `a` into `a`. -/
-def RightUnit (J : Joining F) (e a : F) : Prop := J.Neutral e ∧ J a e a
+def RightUnit (J : Joining F) (e a : F) : Prop := J.TwoSidedUnit e ∧ J a e a
 
 /-- Every fragment has a unit on each side. -/
 def HasUnits (J : Joining F) : Prop :=
@@ -86,7 +86,7 @@ theorem RightUnit.unique {J : Joining F} (assoc : J.Associative) {e f a : F}
   | ⟨_, joined, _⟩ => (unit'.1.2 _ _ joined).symm.trans (unit.1.1 _ _ joined)
 
 /-- Where every fragment has units, a neutral fragment joins itself into itself. -/
-theorem Neutral.self {J : Joining F} (units : J.HasUnits) {e : F} (neutral : J.Neutral e) :
+theorem TwoSidedUnit.self {J : Joining F} (units : J.HasUnits) {e : F} (neutral : J.TwoSidedUnit e) :
     J e e e :=
   match units.1 e with
   | ⟨f, _, joined⟩ => Eq.subst (motive := fun x => J x e e) (neutral.2 f e joined).symm joined
@@ -161,9 +161,9 @@ theorem units_agree {J : Joining F} (assoc : J.Associative) (left right left' ri
   fun a => ⟨LeftUnit.unique assoc (unitsL a) (unitsL' a), RightUnit.unique assoc (unitsR a) (unitsR' a)⟩
 
 /-- **A one-to-one correspondence carrying a joining carries its neutral fragments.** -/
-theorem neutral_transport {J : Joining F} {K : Joining G} {f : F → G}
+theorem twoSidedUnit_transport {J : Joining F} {K : Joining G} {f : F → G}
     (one : ∀ a b, f a = f b → a = b) (onto : ∀ b, ∃ a, f a = b)
-    (carries : ∀ a b c, J a b c ↔ K (f a) (f b) (f c)) (e : F) : J.Neutral e ↔ K.Neutral (f e) :=
+    (carries : ∀ a b c, J a b c ↔ K (f a) (f b) (f c)) (e : F) : J.TwoSidedUnit e ↔ K.TwoSidedUnit (f e) :=
   ⟨fun neutral =>
     ⟨fun a c joined => match onto a, onto c with
       | ⟨x, atX⟩, ⟨y, atY⟩ =>
@@ -184,20 +184,20 @@ theorem leftUnit_transport {J : Joining F} {K : Joining G} {f : F → G}
     (one : ∀ a b, f a = f b → a = b) (onto : ∀ b, ∃ a, f a = b)
     (carries : ∀ a b c, J a b c ↔ K (f a) (f b) (f c)) (e a : F) :
     J.LeftUnit e a ↔ K.LeftUnit (f e) (f a) :=
-  ⟨fun unit => ⟨(neutral_transport one onto carries e).mp unit.1, (carries e a a).mp unit.2⟩,
-   fun unit => ⟨(neutral_transport one onto carries e).mpr unit.1, (carries e a a).mpr unit.2⟩⟩
+  ⟨fun unit => ⟨(twoSidedUnit_transport one onto carries e).mp unit.1, (carries e a a).mp unit.2⟩,
+   fun unit => ⟨(twoSidedUnit_transport one onto carries e).mpr unit.1, (carries e a a).mpr unit.2⟩⟩
 
 /-- **A one-to-one correspondence carrying a joining carries right units.** -/
 theorem rightUnit_transport {J : Joining F} {K : Joining G} {f : F → G}
     (one : ∀ a b, f a = f b → a = b) (onto : ∀ b, ∃ a, f a = b)
     (carries : ∀ a b c, J a b c ↔ K (f a) (f b) (f c)) (e a : F) :
     J.RightUnit e a ↔ K.RightUnit (f e) (f a) :=
-  ⟨fun unit => ⟨(neutral_transport one onto carries e).mp unit.1, (carries a e a).mp unit.2⟩,
-   fun unit => ⟨(neutral_transport one onto carries e).mpr unit.1, (carries a e a).mpr unit.2⟩⟩
+  ⟨fun unit => ⟨(twoSidedUnit_transport one onto carries e).mp unit.1, (carries a e a).mp unit.2⟩,
+   fun unit => ⟨(twoSidedUnit_transport one onto carries e).mpr unit.1, (carries a e a).mpr unit.2⟩⟩
 
 /-- Neutrality passes between joinings holding at the same triples. -/
-theorem Neutral.of_iff {J K : Joining F} (same : ∀ a b c, J a b c ↔ K a b c) {e : F}
-    (neutral : K.Neutral e) : J.Neutral e :=
+theorem TwoSidedUnit.of_iff {J K : Joining F} (same : ∀ a b c, J a b c ↔ K a b c) {e : F}
+    (neutral : K.TwoSidedUnit e) : J.TwoSidedUnit e :=
   ⟨fun a c joined => neutral.1 a c ((same e a c).mp joined),
    fun a c joined => neutral.2 a c ((same a e c).mp joined)⟩
 
@@ -242,21 +242,21 @@ theorem atMostOnce_assoc : atMostOnce.Associative
           | .inr no => Bool.noConfusion no⟩
 
 /-- `false` is neutral for `atMostOnce`. -/
-theorem atMostOnce_neutral : atMostOnce.Neutral false :=
+theorem atMostOnce_twoSidedUnit : atMostOnce.TwoSidedUnit false :=
   ⟨fun _ _ joined => joined.2, fun a _ joined => joined.2.trans (match a with
     | false => rfl
     | true => rfl)⟩
 
 theorem atMostOnce_has_units : atMostOnce.HasUnits :=
-  ⟨fun _ => ⟨false, atMostOnce_neutral, ⟨.inl rfl, rfl⟩⟩,
-   fun a => ⟨false, atMostOnce_neutral, ⟨.inr rfl, match a with
+  ⟨fun _ => ⟨false, atMostOnce_twoSidedUnit, ⟨.inl rfl, rfl⟩⟩,
+   fun a => ⟨false, atMostOnce_twoSidedUnit, ⟨.inr rfl, match a with
     | false => rfl
     | true => rfl⟩⟩⟩
 
 /-- **Two `true`s share a unit and do not join.** -/
 theorem atMostOnce_commonUnit_not_composable :
     atMostOnce.CommonUnit true true ∧ ¬ atMostOnce.Composable true true :=
-  ⟨⟨false, ⟨atMostOnce_neutral, ⟨.inr rfl, rfl⟩⟩, ⟨atMostOnce_neutral, ⟨.inl rfl, rfl⟩⟩⟩,
+  ⟨⟨false, ⟨atMostOnce_twoSidedUnit, ⟨.inr rfl, rfl⟩⟩, ⟨atMostOnce_twoSidedUnit, ⟨.inl rfl, rfl⟩⟩⟩,
    fun ⟨_, either, _⟩ => match either with
     | .inl no => Bool.noConfusion no
     | .inr no => Bool.noConfusion no⟩
@@ -298,7 +298,7 @@ theorem joining_assoc (P : Process S A) : (joining P).Associative := fun a b c d
     | ⟨m, first', second'⟩ => ⟨⟨m, joined_traced first'⟩, first', second'⟩⟩
 
 /-- **The fragment staying at a configuration is neutral.** -/
-theorem idle_neutral (P : Process S A) (s : S) : (joining P).Neutral (idleTrace P s) :=
+theorem idle_twoSidedUnit (P : Process S A) (s : S) : (joining P).TwoSidedUnit (idleTrace P s) :=
   ⟨fun a _ joined => Traces.ext (joined.2.symm.trans
       (Eq.subst (motive := fun x => merge (idle x) a.val = a.val) joined.1.2.2.symm
         (joined_idle_left a.property).2)),
@@ -308,8 +308,8 @@ theorem idle_neutral (P : Process S A) (s : S) : (joining P).Neutral (idleTrace 
 
 /-- **Every traced fragment has units**: the fragments staying at its start and at its finish. -/
 theorem has_units (P : Process S A) : (joining P).HasUnits :=
-  ⟨fun a => ⟨idleTrace P a.val.start, idle_neutral P _, joined_idle_left a.property⟩,
-   fun a => ⟨idleTrace P a.val.finish, idle_neutral P _, joined_idle_right a.property⟩⟩
+  ⟨fun a => ⟨idleTrace P a.val.start, idle_twoSidedUnit P _, joined_idle_left a.property⟩,
+   fun a => ⟨idleTrace P a.val.finish, idle_twoSidedUnit P _, joined_idle_right a.property⟩⟩
 
 /-- **Joining traced fragments is chain-complete.** -/
 theorem chainComplete (P : Process S A) : (joining P).ChainComplete :=
@@ -322,7 +322,7 @@ theorem chainComplete (P : Process S A) : (joining P).ChainComplete :=
 theorem leftUnit_iff (P : Process S A) (e a : Traces P) :
     (joining P).LeftUnit e a ↔ e = idleTrace P a.val.start :=
   have unit : (joining P).LeftUnit (idleTrace P a.val.start) a :=
-    ⟨idle_neutral P _, joined_idle_left a.property⟩
+    ⟨idle_twoSidedUnit P _, joined_idle_left a.property⟩
   ⟨fun unit' => Joining.LeftUnit.unique (joining_assoc P) unit' unit,
    fun same => Eq.subst (motive := fun x => (joining P).LeftUnit x a) same.symm unit⟩
 
@@ -330,7 +330,7 @@ theorem leftUnit_iff (P : Process S A) (e a : Traces P) :
 theorem rightUnit_iff (P : Process S A) (e a : Traces P) :
     (joining P).RightUnit e a ↔ e = idleTrace P a.val.finish :=
   have unit : (joining P).RightUnit (idleTrace P a.val.finish) a :=
-    ⟨idle_neutral P _, joined_idle_right a.property⟩
+    ⟨idle_twoSidedUnit P _, joined_idle_right a.property⟩
   ⟨fun unit' => Joining.RightUnit.unique (joining_assoc P) unit' unit,
    fun same => Eq.subst (motive := fun x => (joining P).RightUnit x a) same.symm unit⟩
 
@@ -341,19 +341,19 @@ theorem composable_iff_commonUnit (P : Process S A) (a b : Traces P) :
 
 /-- **The neutral traced fragments are exactly those staying at a configuration**: the
 configurations are recovered from the joining alone. -/
-theorem neutral_iff_idle (P : Process S A) (e : Traces P) :
-    (joining P).Neutral e ↔ ∃ s, e = idleTrace P s :=
+theorem twoSidedUnit_iff_idle (P : Process S A) (e : Traces P) :
+    (joining P).TwoSidedUnit e ↔ ∃ s, e = idleTrace P s :=
   ⟨fun neutral => ⟨e.val.start, (leftUnit_iff P e e).mp ⟨neutral, neutral.self (has_units P)⟩⟩,
-   fun ⟨s, same⟩ => Eq.subst (motive := (joining P).Neutral) same.symm (idle_neutral P s)⟩
+   fun ⟨s, same⟩ => Eq.subst (motive := (joining P).TwoSidedUnit) same.symm (idle_twoSidedUnit P s)⟩
 
 theorem idleTrace_injective (P : Process S A) (s t : S) (same : idleTrace P s = idleTrace P t) :
     s = t :=
   congrArg (fun f : Traces P => f.val.start) same
 
 /-- **A neutral traced fragment stays at exactly one configuration.** -/
-theorem neutral_stays_once (P : Process S A) (e : Traces P) (neutral : (joining P).Neutral e) :
+theorem twoSidedUnit_stays_once (P : Process S A) (e : Traces P) (neutral : (joining P).TwoSidedUnit e) :
     ∃ s, e = idleTrace P s ∧ ∀ t, e = idleTrace P t → t = s :=
-  match (neutral_iff_idle P e).mp neutral with
+  match (twoSidedUnit_iff_idle P e).mp neutral with
   | ⟨s, same⟩ => ⟨s, same, fun t same' => idleTrace_injective P t s (same'.symm.trans same)⟩
 
 /-- **Each traced fragment has exactly one unit on each side.** -/
@@ -454,10 +454,10 @@ theorem stepsImage_assoc : stepsImage.Associative := fun a b c d =>
 theorem stepsImage_has_units : stepsImage.HasUnits :=
   ⟨fun a => match Joining.atMostOnce_has_units.1 a with
     | ⟨e, neutral, joined⟩ =>
-      ⟨e, Joining.Neutral.of_iff steps_reads neutral, (steps_reads e a a).mpr joined⟩,
+      ⟨e, Joining.TwoSidedUnit.of_iff steps_reads neutral, (steps_reads e a a).mpr joined⟩,
    fun a => match Joining.atMostOnce_has_units.2 a with
     | ⟨e, neutral, joined⟩ =>
-      ⟨e, Joining.Neutral.of_iff steps_reads neutral, (steps_reads a e a).mpr joined⟩⟩
+      ⟨e, Joining.TwoSidedUnit.of_iff steps_reads neutral, (steps_reads a e a).mpr joined⟩⟩
 
 /-- **Read through whether a fragment takes the step, the joining is not chain-complete**, though
 the traced fragments themselves are (`chainComplete`): the description loses the chain of two

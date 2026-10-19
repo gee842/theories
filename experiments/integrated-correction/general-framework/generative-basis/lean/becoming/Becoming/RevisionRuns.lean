@@ -8,7 +8,7 @@ the new distinctions (`Registration.retained_gains`), and, of the reconstruction
 `Revising.P`, that the lumping with the link unformed cannot select between the two
 reconstruction choices (`Revising.old_cannot_select_rebuild`) while forming the link keeps every
 old distinction (`Revising.opened_keeps`). The history of a run's lumpings
-(`Registration.History`) is defined of the run. This module states those laws of runs and steps.
+(`Registration.AlikeUpTo`) is defined of the run. This module states those laws of runs and steps.
 
 * **The history through the first step is the retained reading.** Two inputs are alike in the
   history of a run's lumpings through step `1` exactly where the readings at the start and
@@ -38,7 +38,7 @@ variable {S : Type u} {A : Type v} {X : Type w} {V : Type z} {P : Process S A}
 are alike in it exactly where the readings at the start and at step `1`, taken together, agree on
 them. -/
 theorem history_retained_iff (r : Run P) (obs : S → X → V) (x y : X) :
-    Registration.History r (fun s a b => obs s a = obs s b) 1 x y ↔
+    Registration.AlikeUpTo r (fun s a b => obs s a = obs s b) 1 x y ↔
       (obs (r.state 0) x, obs (r.state 1) x) = (obs (r.state 0) y, obs (r.state 1) y) :=
   ⟨fun h => (congrArg (fun a => (a, obs (r.state 1) x)) (h 0 (Nat.zero_le 1))).trans
       (congrArg (fun b => (obs (r.state 0) y, b)) (h 1 (Nat.le_refl 1))),
@@ -54,12 +54,12 @@ start. -/
 theorem history_gains (r : Run P) (obs : S → X → V) {x y : X}
     (same : obs (r.state 0) x = obs (r.state 0) y) (different : obs (r.state 1) x ≠ obs (r.state 1) y)
     {t : Nat} (later : 1 ≤ t) :
-    ∃ select, Learning.Training.Through (Registration.History r (fun s a b => obs s a = obs s b) t)
+    ∃ select, Learning.Training.Through (Registration.AlikeUpTo r (fun s a b => obs s a = obs s b) t)
         select ∧
       ¬ Learning.Training.Through (fun a b => obs (r.state 0) a = obs (r.state 0) b) select :=
   match Registration.retained_gains same different with
   | ⟨select, through, lost⟩ =>
-    ⟨select, Registration.through_history_later r
+    ⟨select, Registration.through_alikeUpTo_later r
       (fun a b h => through a b ((history_retained_iff r obs a b).mp h)) later, lost⟩
 
 end Histories

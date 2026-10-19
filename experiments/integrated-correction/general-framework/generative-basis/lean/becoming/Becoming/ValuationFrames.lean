@@ -8,8 +8,8 @@ import Becoming.Significance
 `Becoming.Metaethics` states valuations over the relations a web or a flow forms, and
 `Becoming.Significance` states the continuation condition on them; neither imports the frame. This
 module holds their readings on frames and runs of a labelled process: formed relations as a process
-on claims (`Valuation.relations`, `Valuation.Connected`); living significance on a frame (`G0`,
-`Valuation.g0`) and the reason a sound inquiry
+on claims (`Valuation.relations`, `Valuation.Connected`); living significance on a frame (`LivingSignificance`,
+`Valuation.livingSignificance`) and the reason a sound inquiry
 gives every position with access (`universal_reason`); access as a realized claim (`AccessAt`);
 extension and comparison on a frame (`Extension`, `Comparison`, `LiftBetter`); the instances on
 conditions read along a run (`Conditions.valuation` and what follows) and on separate formations
@@ -68,15 +68,15 @@ end Valuation
 variable {S A C Pos : Type}
 
 /-- Living significance on the frame: living content realized at a configuration falls under the
-relevance `positive` there. The parameter's name carries no valence: read from significance
+relevance `relevance` there. The parameter carries no valence: read from significance
 (`Frame.relevance`), it is significance from every standpoint. -/
-def G0 (F : Frame S A C) (living : C → Prop) (positive : S → C → Prop) : Prop :=
-  ∀ s c, living c → F.realized s c → positive s c
+def LivingSignificance (F : Frame S A C) (living : C → Prop) (relevance : S → C → Prop) : Prop :=
+  ∀ s c, living c → F.realized s c → relevance s c
 
 /-- Claim-level significance is living significance for the frame, with relevance read as
 significance from every standpoint. -/
-theorem Valuation.g0 (F : Frame S A C) {V : Valuation Pos C} (all : V.Significant) :
-    G0 F V.living (fun _ c => ∀ p, V.sig p c) :=
+theorem Valuation.livingSignificance (F : Frame S A C) {V : Valuation Pos C} (all : V.Significant) :
+    LivingSignificance F V.living (fun _ c => ∀ p, V.sig p c) :=
   fun _ c alive _ p => all p c alive
 
 /-- A sound inquiry whose goal is new living content gives every position with access
@@ -94,7 +94,7 @@ theorem universal_reason {R : Type} {k : Nat} (F : Frame S A C) (V : Valuation P
   fun p available => positioned_articulation_of_articulates articulate p policy available
     fun t reached => match Scope.secures sound t reached with
       | ⟨c, alive, held, fresh⟩ =>
-        ⟨c, Valuation.g0 F (Valuation.significant_of_grounds connected grounds) t c alive held,
+        ⟨c, Valuation.livingSignificance F (Valuation.significant_of_grounds connected grounds) t c alive held,
           fresh⟩
 
 /-- Access as a realized claim: a position's access is formed in the unfolding. -/
@@ -339,7 +339,7 @@ theorem seed_is_needed :
 only inside the evaluator's own region. -/
 theorem relational_neutrality_is_needed :
     let V := valuation linked ownRegion
-    V.Connected ∧ V.SelfGood .evaluator ∧ V.Seed ∧ Neutral V.shares ∧
+    V.Connected ∧ V.SelfSignificance .evaluator ∧ V.Seed ∧ Neutral V.shares ∧
     Within (fun i => own .evaluator i.2.2) V.transmits ∧
     ¬ Neutral V.transmits ∧ ¬ V.Significant :=
   ⟨linked_connected _,
@@ -420,9 +420,9 @@ def Web.paths (W : Web F C) : Frame (Nat → C → Nat) Unit (F × Nat) :=
 
 /-- On level paths, under the continuation condition, living significance holds with unindexed significance for every reading of
 `living`, and so does C, with “better” read as retaining and adding what has significance. -/
-theorem Web.paths_g0_comparison (W : Web F C) {sig : Pos → Nat → F → Prop}
+theorem Web.paths_livingSignificance_comparison (W : Web F C) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (living : F × Nat → Prop) (p : Pos) :
-    G0 W.paths living (fun _ e => ∀ q, sig q e.2 e.1) ∧
+    LivingSignificance W.paths living (fun _ e => ∀ q, sig q e.2 e.1) ∧
       Comparison W.paths living fun l' l => W.Retains sig p l l' ∧ W.Adds sig p l l' :=
   ⟨fun _ e _ _ q => unrestricted (q, e.2, e.1),
    fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>

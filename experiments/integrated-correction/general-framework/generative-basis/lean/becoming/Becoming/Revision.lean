@@ -112,19 +112,19 @@ theorem run_keeps {P : Process S A} (r : Run P) {alike : S → X → X → Prop}
 
 /-- Alike through every lumping actually drawn up to this step. Reading it as a usable present record
 requires an actual retention mechanism; this definition does not provide one. -/
-def History {P : Process S A} (r : Run P) (alike : S → X → X → Prop)
+def AlikeUpTo {P : Process S A} (r : Run P) (alike : S → X → X → Prop)
     (t : Nat) (x y : X) : Prop := ∀ n, n ≤ t → alike (r.state n) x y
 
-theorem history_keeps {P : Process S A} (r : Run P) (alike : S → X → X → Prop)
+theorem alikeUpTo_keeps {P : Process S A} (r : Run P) (alike : S → X → X → Prop)
     {t u : Nat} (le : t ≤ u) :
-    ∀ x y, History r alike u x y → History r alike t x y :=
+    ∀ x y, AlikeUpTo r alike u x y → AlikeUpTo r alike t x y :=
   fun _ _ h n before => h n (Nat.le_trans before le)
 
-theorem through_history_later {P : Process S A} (r : Run P)
+theorem through_alikeUpTo_later {P : Process S A} (r : Run P)
     {alike : S → X → X → Prop} {t u : Nat} {select : X → Prop}
-    (through : Learning.Training.Through (History r alike t) select) (le : t ≤ u) :
-    Learning.Training.Through (History r alike u) select :=
-  fun x y h => through x y (history_keeps r alike le x y h)
+    (through : Learning.Training.Through (AlikeUpTo r alike t) select) (le : t ≤ u) :
+    Learning.Training.Through (AlikeUpTo r alike u) select :=
+  fun x y h => through x y (alikeUpTo_keeps r alike le x y h)
 
 /-- Lumping through a jointly retained old and new reading preserves both. -/
 theorem retained_keeps (old fresh : X → V) :

@@ -9,21 +9,21 @@ import Becoming.ValuationFrames
 
 A set of alternatives of one history realizes each feasible alternative as a configuration of a
 frame (`Alternatives`): the alternatives are differentiated responses within the history, not
-independent choosers. Living significance (`G0`), C (`Comparison`), the articulation P
+independent choosers. Living significance (`LivingSignificance`), C (`Comparison`), the articulation P
 (`Alternatives.Articulation`: a strict comparison of two feasible alternatives' configurations gives a
 reason to move) and the coherence N (`Alternatives.Coherent`: a selected alternative is feasible and no
 feasible one is strictly better) are separate conditions; each theorem names those it takes. P
 supplies a reason, not an obligation, permission or compliance. The conditional selection
 results use C and N, not living significance.
 
-Ported from `GenerativeComparison` (F3J, 18 October 2026). Its `Inventory`, `G0`,
-`GenerativeExtension` and `ComparisonPrinciple` are the core's `G0`, `Extension` and `Comparison`
+Ported from `GenerativeComparison` (F3J, 18 October 2026). Its `Inventory`, `LivingSignificance`,
+`GenerativeExtension` and `ComparisonPrinciple` are the core's `LivingSignificance`, `Extension` and `Comparison`
 on a frame by `Iff.rfl` (`Becoming.Bridge`), so `generative_extension_irreflexive` and
 `generative_extension_transitive` are `Extension.irrefl` and `Extension.trans`, and are not
 restated. Every declaration has an empty axiom report.
 
 * **A new realization of an extension has positive relevance** under living significance
-  (`G0.new_realization`); under the continuation condition, positive relevance read from
+  (`LivingSignificance.new_realization`); under the continuation condition, positive relevance read from
   significance (`Extension.new_relevance`, from the join `ExtensionFrames`).
 * **Survivors are lifted survivors.** On the step of a set of alternatives, an alternative
   survives exactly when no live alternative liftedly extends it
@@ -65,21 +65,21 @@ structure Alternatives (S A : Type) where
 
 /-- **A new realization of a generative extension has positive relevance** under living
 significance. -/
-theorem G0.new_realization {F : Frame S A C} {living : C → Prop} {positive : S → C → Prop}
-    (g0 : G0 F living positive) {s t : S} (extension : Extension F living s t) :
-    ∃ c, positive t c ∧ ¬ F.realized s c :=
+theorem LivingSignificance.new_realization {F : Frame S A C} {living : C → Prop} {relevance : S → C → Prop}
+    (g0 : LivingSignificance F living relevance) {s t : S} (extension : Extension F living s t) :
+    ∃ c, relevance t c ∧ ¬ F.realized s c :=
   match extension with
   | ⟨_, c, alive, now, before⟩ => ⟨c, g0 t c alive now, before⟩
 
 /-- **Under the continuation condition a new realization of an extension has positive relevance
-read from significance**: living significance holds of that relevance (`g0_of_unrestricted`), so
+read from significance**: living significance holds of that relevance (`livingSignificance_of_unrestricted`), so
 an extension realizes living content with significance that the earlier configuration lacked.
 Ported from the join `ExtensionFrames`. -/
 theorem Extension.new_relevance {Q F Pos : Type} (M : Frame S A Q) (living : Q → Prop)
     {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) (formation : Q → F)
     (step : Q → Nat) {s t : S} (extension : Extension M living s t) :
     ∃ c, M.relevance living sig formation step t c ∧ ¬ M.realized s c :=
-  G0.new_realization (g0_of_unrestricted M living unrestricted formation step) extension
+  LivingSignificance.new_realization (livingSignificance_of_unrestricted M living unrestricted formation step) extension
 
 variable {R : Type}
 

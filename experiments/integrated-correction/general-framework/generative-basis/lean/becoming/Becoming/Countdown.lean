@@ -10,7 +10,7 @@ module states each as a law for every process or partial law of its kind.
   where it holds exactly when every step keeps it (`invariant_iff_reach`). Read on the steps a
   partial law takes where a move is admitted (`admitted`), interruptions and ordinary moves are
   steps alike, so a protocol's history keeps its invariant exactly when each kind of step does.
-* **Counted work (`Counts`).** A partial law `tick` that, while a task is pending (`busy`),
+* **Counted work (`CountedWork`).** A partial law `tick` that, while a task is pending (`busy`),
   does one unit of remaining work for one unit of fuel, finishes into `done` when no work remains
   and fuel is left, and stalls without fuel. From every pending configuration, `work + 1` ticks
   finish the task exactly when the fuel covers them (`completes_iff`); every shorter run leaves the
@@ -98,7 +98,7 @@ theorem ticks_eq_runPartial (tick : S → Option S) :
 
 /-- **Counted work**: while pending, one tick does one unit of work for one unit of fuel; with
 no work left and fuel left, a tick finishes; without fuel, a tick stalls. -/
-structure Counts (tick : S → Option S) (busy done : S → Prop) (work fuel : S → Nat) : Prop where
+structure CountedWork (tick : S → Option S) (busy done : S → Prop) (work fuel : S → Nat) : Prop where
   advance : ∀ s, busy s → 0 < fuel s → 0 < work s →
     ∃ t, tick s = some t ∧ busy t ∧ work t + 1 = work s ∧ fuel t + 1 = fuel s
   finish : ∀ s, busy s → 0 < fuel s → work s = 0 → ∃ t, tick s = some t ∧ done t
@@ -118,7 +118,7 @@ theorem pos_of_add_eq {f : Nat} : ∀ {w F : Nat}, f + w = F → w + 1 ≤ F →
 /-- **Within the work and the fuel, every run of ticks leaves the task pending**, with the work
 and the fuel each lowered by the number of ticks. -/
 theorem ticks_busy {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
-    (counts : Counts tick busy done work fuel) :
+    (counts : CountedWork tick busy done work fuel) :
     ∀ (k : Nat) (s : S), busy s → k ≤ work s → k ≤ fuel s →
       ∃ t, ticks tick k s = some t ∧ busy t ∧ work t + k = work s ∧ fuel t + k = fuel s
   | 0, s, pending, _, _ => ⟨s, rfl, pending, rfl, rfl⟩
@@ -139,7 +139,7 @@ theorem ticks_busy {tick : S → Option S} {busy done : S → Prop} {work fuel :
 
 /-- **With fuel short of the work, every run longer than the fuel stalls.** -/
 theorem stalls_beyond {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
-    (counts : Counts tick busy done work fuel) :
+    (counts : CountedWork tick busy done work fuel) :
     ∀ (n : Nat) (s : S), busy s → fuel s ≤ work s → fuel s < n → ticks tick n s = none
   | 0, _, _, _, beyond => absurd beyond (Nat.not_lt_zero _)
   | n + 1, s, pending, short, beyond => by
@@ -164,7 +164,7 @@ theorem stalls_beyond {tick : S → Option S} {busy done : S → Prop} {work fue
 
 /-- **Counted work finishes in `work + 1` ticks exactly when the fuel covers them.** -/
 theorem completes_iff {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
-    (counts : Counts tick busy done work fuel) {s : S} (pending : busy s) :
+    (counts : CountedWork tick busy done work fuel) {s : S} (pending : busy s) :
     (∃ t, ticks tick (work s + 1) s = some t ∧ done t) ↔ work s + 1 ≤ fuel s :=
   ⟨fun ⟨t, ran, _⟩ =>
     match Nat.lt_or_ge (work s) (fuel s) with
@@ -187,7 +187,7 @@ theorem completes_iff {tick : S → Option S} {busy done : S → Prop} {work fue
 /-- **Every shorter run leaves the task pending**: every run of at most `work` ticks leaves the task pending,
 with the work lowered by the ticks taken. -/
 theorem pending_before {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
-    (counts : Counts tick busy done work fuel) {s t : S} {k : Nat} (pending : busy s)
+    (counts : CountedWork tick busy done work fuel) {s t : S} {k : Nat} (pending : busy s)
     (within : k ≤ work s) (ran : ticks tick k s = some t) : busy t ∧ work t + k = work s :=
   match Nat.lt_or_ge (fuel s) k with
   | .inl beyond =>
@@ -201,7 +201,7 @@ theorem pending_before {tick : S → Option S} {busy done : S → Prop} {work fu
 
 /-- Where pending and finished exclude each other, the task finishes at no earlier tick. -/
 theorem not_done_before {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
-    (counts : Counts tick busy done work fuel) (apart : ∀ s, busy s → done s → False)
+    (counts : CountedWork tick busy done work fuel) (apart : ∀ s, busy s → done s → False)
     {s t : S} {k : Nat} (pending : busy s) (within : k ≤ work s)
     (ran : ticks tick k s = some t) : ¬ done t :=
   fun finished => apart t (pending_before counts pending within ran).1 finished
@@ -209,7 +209,7 @@ theorem not_done_before {tick : S → Option S} {busy done : S → Prop} {work f
 /-- **As a plan of the partial law, counted work completes exactly when the fuel covers it**
 (`Assurance.Completes` with no safety condition). -/
 theorem completes_plan_iff {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
-    (counts : Counts tick busy done work fuel) {s : S} (pending : busy s) :
+    (counts : CountedWork tick busy done work fuel) {s : S} (pending : busy s) :
     Completes (ofPartial fun s (_ : Unit) => tick s) free done s (List.replicate (work s + 1) ()) ↔
       work s + 1 ≤ fuel s :=
   (completes_ofPartial_iff _).trans
@@ -225,9 +225,9 @@ structure Advances (tick : S → Option S) (busy done : S → Prop) (work : S �
   finish : ∀ s, busy s → work s = 0 → ∃ t, tick s = some t ∧ done t
 
 /-- Unfuelled work is counted work whose fuel is one more than the work. -/
-theorem Advances.counts {tick : S → Option S} {busy done : S → Prop} {work : S → Nat}
+theorem Advances.countedWork {tick : S → Option S} {busy done : S → Prop} {work : S → Nat}
     (advances : Advances tick busy done work) :
-    Counts tick busy done work (fun s => work s + 1) :=
+    CountedWork tick busy done work (fun s => work s + 1) :=
   ⟨fun s pending _ positive =>
     match advances.advance s pending positive with
     | ⟨t, moved, pending', lowered⟩ => ⟨t, moved, pending', lowered, congrArg Nat.succ lowered⟩,
@@ -238,7 +238,7 @@ theorem Advances.counts {tick : S → Option S} {busy done : S → Prop} {work :
 theorem Advances.completes {tick : S → Option S} {busy done : S → Prop} {work : S → Nat}
     (advances : Advances tick busy done work) {s : S} (pending : busy s) :
     ∃ t, ticks tick (work s + 1) s = some t ∧ done t :=
-  (completes_iff advances.counts pending).mpr (Nat.le_refl _)
+  (completes_iff advances.countedWork pending).mpr (Nat.le_refl _)
 
 /-! ## A reserved exit -/
 

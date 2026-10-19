@@ -24,17 +24,17 @@ already decides identity among any list's members; for them the corollary drops 
   (`Web.stock_zero_of_within`, `mul_zero_of`).
 * **Being fed from beyond** (`Becoming.Continuation`): `Flow.fed_from_beyond_listing`,
   `Flow.fed_from_beyond_from_listing`, `Flow.rising_fed_from_beyond_listing`,
-  `Flow.rising_fed_from_beyond_from_listing`, and `Web.generation_fed_from_beyond_listing`: a
+  `Flow.rising_fed_from_beyond_from_listing`, and `Web.embodiedArising_fed_from_beyond_listing`: a
   dissipative family enclosed around from some step on, in which embodied members arise at
   arbitrarily late steps, cannot from some step on be fed from nothing beyond it, however the
   family is listed.
 * **Opening** (`Becoming.Dissipation`, `Becoming.Roles`): `Flow.More.opens_listing`,
   `Flow.opens_of_arising_listing`, `Flow.rising_opens_listing`, `Flow.standing_opens_listing`,
-  `Flow.rise_alone_opens_listing`, `Web.generation_opens_listing`.
+  `Flow.rise_alone_opens_listing`, `Web.embodiedArising_opens_listing`.
 * **Drawing in** (`Becoming.Dissipation`, `Becoming.Roles`): `Flow.taking_draws_in_from_listing`,
   `Flow.rising_draws_in_from_listing`, `Flow.rising_draws_in_listing`,
-  `Flow.standing_draws_in_listing`, `Web.generation_draws_in_from_listing`,
-  `Web.generation_draws_in_listing`.
+  `Flow.standing_draws_in_listing`, `Web.embodiedArising_draws_in_from_listing`,
+  `Web.embodiedArising_draws_in_listing`.
 * **Rest** (`Becoming.Dissipation`, `Becoming.Resolution`): where some list, repetition allowed,
   holds every condition, rising and coming to stand do not recur under dissipation
   (`Flow.rising_not_recurring_listing`, `Flow.standing_not_recurring_listing`), and taking from a
@@ -297,39 +297,39 @@ namespace Web
 
 variable {X : Type} {W : Web X X} {L : Flow X X}
 
-/-- **`generation_fed_from_beyond` holds of every family, however listed, with no premise**:
+/-- **`embodiedArising_fed_from_beyond` holds of every family, however listed, with no premise**:
 under dissipation, a family in which embodied members arise at arbitrarily late steps, enclosed
 around from some step on, cannot from some step on be fed from nothing beyond it. -/
-theorem generation_fed_from_beyond_listing [DecidableEq X] (balances : L.Balances W)
+theorem embodiedArising_fed_from_beyond_listing [DecidableEq X] (balances : L.Balances W)
     (dissipative : L.Dissipative) {ds : List X} {T₀ : Nat}
     (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
     ¬ ∀ t, N ≤ t → ¬ L.FedFromBeyond ds t :=
   not_of_listsOnce ds fun _ lists unfed =>
-    generation_fed_from_beyond balances dissipative lists.1
+    embodiedArising_fed_from_beyond balances dissipative lists.1
       (fun t later => (around t later).of_same fun c mem => (lists.2 c).mp mem)
       (fun M => match arising M with
         | ⟨t, x, later, mem, embodied, arises⟩ => ⟨t, x, later, (lists.2 x).mpr mem, embodied, arises⟩)
       N fun t later fed => unfed t later (fed.of_within lists.2)
 
-/-- **`generation_opens` holds of every family, however listed, with no premise.** -/
-theorem generation_opens_listing (balances : L.Balances W) (dissipative : L.Dissipative)
+/-- **`embodiedArising_opens` holds of every family, however listed, with no premise.** -/
+theorem embodiedArising_opens_listing (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List X} (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x)
     (T : Nat) : ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
   not_of_listsOnce ds fun _ lists closed =>
-    generation_opens balances dissipative lists.1
+    embodiedArising_opens balances dissipative lists.1
       (fun M => match arising M with
         | ⟨t, x, later, mem, embodied, arises⟩ => ⟨t, x, later, (lists.2 x).mpr mem, embodied, arises⟩)
       T fun t later => (closed t later).widen fun c mem => (lists.2 c).mpr mem
 
-/-- **`generation_draws_in_from` holds of every family, however listed, with no premise.** -/
-theorem generation_draws_in_from_listing {ds : List X} {T₀ : Nat}
+/-- **`embodiedArising_draws_in_from` holds of every family, however listed, with no premise.** -/
+theorem embodiedArising_draws_in_from_listing {ds : List X} {T₀ : Nat}
     (around : ∀ t, T₀ ≤ t → L.Around ds t) (balances : ∀ t, T₀ ≤ t → L.BalancesOn W ds t)
     (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
   not_of_listsOnce ds fun _ lists inward =>
-    generation_draws_in_from lists.1
+    embodiedArising_draws_in_from lists.1
       (fun t later => (around t later).of_same fun c mem => (lists.2 c).mp mem)
       (fun t later => (balances t later).of_same fun c mem => (lists.2 c).mp mem)
       dissipative
@@ -337,13 +337,13 @@ theorem generation_draws_in_from_listing {ds : List X} {T₀ : Nat}
         | ⟨t, x, later, mem, embodied, arises⟩ => ⟨t, x, later, (lists.2 x).mpr mem, embodied, arises⟩)
       N fun t later => (inward t later).of_same fun c => (lists.2 c).symm
 
-/-- **`generation_draws_in` holds of every family, however listed, with no premise.** -/
-theorem generation_draws_in_listing (balances : L.Balances W) (dissipative : L.Dissipative)
+/-- **`embodiedArising_draws_in` holds of every family, however listed, with no premise.** -/
+theorem embodiedArising_draws_in_listing (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List X} {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
   not_of_listsOnce ds fun _ lists inward =>
-    generation_draws_in balances dissipative lists.1
+    embodiedArising_draws_in balances dissipative lists.1
       (fun t later => (around t later).of_same fun c mem => (lists.2 c).mp mem)
       (fun M => match arising M with
         | ⟨t, x, later, mem, embodied, arises⟩ => ⟨t, x, later, (lists.2 x).mpr mem, embodied, arises⟩)

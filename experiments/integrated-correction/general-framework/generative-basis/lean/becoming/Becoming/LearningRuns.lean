@@ -394,10 +394,10 @@ theorem held_byElimination_bounded [DecidableEq R] (r : Run (Law.process next)) 
 /-- **Induction along a run held by a list: that elimination rests is unrefuted.** -/
 theorem held_rest_unrefuted [DecidableEq R] (r : Run (Law.process next)) {l : List S}
     (held : ∀ n, r.state n ∈ l) (reg : S → R) :
-    ¬ ¬ LearnableRuns.Rests reg reg (byElimination lassos) r :=
+    ¬ ¬ LearnableRuns.Predicts reg reg (byElimination lassos) r :=
   fun never => Learning.held_rest_unrefuted
     (fun n => Eq.subst (motive := fun s => s ∈ l) (Branching.law_run_state r n) (held n)) reg
-    fun ⟨T, rests⟩ => never ⟨T, (LearnableRuns.restsFrom_iff r T).mpr rests⟩
+    fun ⟨T, rests⟩ => never ⟨T, (LearnableRuns.predictsFrom_iff r T).mpr rests⟩
 
 /-- **A proposal finer than the map is right on at most one of two runs beginning alike.**
 On runs of a determined law beginning alike in the frame by `reg`, at a step where the
@@ -453,9 +453,9 @@ theorem negation_never_rests (r : Run (Law.process not)) (n : Nat) :
 /-- **Two misses, then rest.** Along every run of negation from `false`, elimination over
 the lasso candidates through the identity proposes each value right from step `3` on. -/
 theorem alternate_rests (r : Run (Law.process not)) (start : r.state 0 = false) :
-    LearnableRuns.RestsFrom id id (byElimination lassos) r 3 :=
-  (LearnableRuns.restsFrom_iff r 3).mpr
-    (Eq.subst (motive := fun s => Learnable.RestsFrom not id id (byElimination lassos) s 3) start.symm
+    LearnableRuns.PredictsFrom id id (byElimination lassos) r 3 :=
+  (LearnableRuns.predictsFrom_iff r 3).mpr
+    (Eq.subst (motive := fun s => Learnable.PredictsFrom not id id (byElimination lassos) s 3) start.symm
       Alternate.rests)
 
 /-- The four configurations of two coordinates. -/
@@ -469,24 +469,24 @@ theorem pair_world : ∀ s : Bool × Bool, s ∈ [(true, true), (true, false), (
 along the runs from both `(true, false)` and `(true, true)`** of the law leaving each
 configuration unchanged. -/
 theorem pair_first_not_rests (pred : List Bool → Option Bool) :
-    ¬ (LearnableRuns.Rests Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, false)) ∧
-      LearnableRuns.Rests Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, true))) :=
-  fun ⟨rests, rests'⟩ => Learnable.Pair.first_not_rests pred
-    ⟨(LearnableRuns.rests_iff _).mp rests, (LearnableRuns.rests_iff _).mp rests'⟩
+    ¬ (LearnableRuns.Predicts Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, false)) ∧
+      LearnableRuns.Predicts Prod.fst Prod.snd pred (Law.run Learnable.Pair.still (true, true))) :=
+  fun ⟨rests, rests'⟩ => Learnable.Pair.first_not_predicts pred
+    ⟨(LearnableRuns.predicts_iff _).mp rests, (LearnableRuns.predicts_iff _).mp rests'⟩
 
 /-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
 along every run.** -/
 theorem pair_not_learnable :
     ¬ ∃ pred : List Bool → Option Bool, ∀ r : Run (Law.process Learnable.Pair.still),
-      LearnableRuns.Rests Prod.fst Prod.snd pred r :=
+      LearnableRuns.Predicts Prod.fst Prod.snd pred r :=
   fun learnable => Learnable.Pair.not_lumped
     ((LearnableRuns.still_learnable_iff_lumped (fun _ => rfl) pair_world).mp learnable)
 
 /-- **Through the map to both, elimination over the lasso candidates rests in accord with the
 second along every run from step `2`.** -/
 theorem pair_whole_rests (r : Run (Law.process Learnable.Pair.still)) :
-    LearnableRuns.RestsFrom id Prod.snd (fun l => (byElimination lassos l).map Prod.snd) r 2 :=
-  (LearnableRuns.restsFrom_iff r 2).mpr (Learnable.Pair.whole_rests (r.state 0))
+    LearnableRuns.PredictsFrom id Prod.snd (fun l => (byElimination lassos l).map Prod.snd) r 2 :=
+  (LearnableRuns.predictsFrom_iff r 2).mpr (Learnable.Pair.whole_predicts (r.state 0))
 
 end LearningRuns
 

@@ -1,0 +1,10 @@
+import Becoming.SupportRecovery
+#check @Becoming.SupportRecovery.absorbs
+#check @Becoming.SupportRecovery.repair_step
+#check @Becoming.SupportRecovery.window_progress
+#check @Becoming.SupportRecovery.same_later_inputs
+#check @Becoming.SupportRecovery.pulse_levels
+#check @Becoming.SupportRecovery.supported_pulse_recovers
+#check @Becoming.SupportRecovery.unsupported_pulse_ends
+#check @Becoming.SupportRecovery.recovered_neither
+#check @Becoming.SupportRecovery.recovered_web_neither

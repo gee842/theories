@@ -38,8 +38,8 @@ beyond the hypotheses each statement names.
   one common condition to any web of mutual feeding.
 * **Couplings at every step around a loop: exponential both ways.** Along couplings that hold at every
   step a chain leads one coupling a step (`CoupledAlways.chainInTime`), so a loop of `m + 1` such
-  couplings returns what reached a condition every `m + 1` steps (`returns_of_coupledAlways`). Each
-  return at least doubles it (`carried_returns`): after `R` turns the most difference that can
+  couplings returns what reached a condition every `m + 1` steps (`roundTrip_of_coupledAlways`). Each
+  return at least doubles it (`carried_roundTrip`): after `R` turns the most difference that can
   arrive at the condition is at least `2 ^ R` times what had reached it (`carried_pow_around`), and
   at every condition downstream along such couplings likewise (`carried_pow_downstream`). With the
   part giving no gap after the start, starting gaps at most `D` and the strengths into each condition
@@ -262,9 +262,9 @@ theorem CoupledAlways.chainInTime {v : Nat → C} {j : Nat}
 
 /-- **A loop of couplings at every step returns at every turn.** Around a loop of `m + 1` couplings
 holding at every step, what has reached its condition from step `T` on returns to it by `T + m + 1`. -/
-theorem returns_of_coupledAlways {e : C} {v : Nat → C} {m : Nat} (start : v 0 = e)
+theorem roundTrip_of_coupledAlways {e : C} {v : Nat → C} {m : Nat} (start : v 0 = e)
     (back : v (m + 1) = e) (loop : CoupledAlways cs part k present v (m + 1)) (T : Nat) :
-    Returns cs part k present e T (T + (m + 1)) :=
+    RoundTrip cs part k present e T (T + (m + 1)) :=
   ⟨v, m, start, back, loop.chainInTime T (m + 1) (Nat.le_refl _)⟩
 
 /-- **Exponential around the loop.** Around a loop of `m + 1` couplings holding at every step, after
@@ -274,9 +274,9 @@ theorem carried_pow_around {e : C} {v : Nat → C} {m : Nat} (start : v 0 = e)
     (back : v (m + 1) = e) (loop : CoupledAlways cs part k present v (m + 1)) (T R : Nat) :
     2 ^ R * carried cs part σ k present δ T e ≤
       carried cs part σ k present δ (T + (m + 1) * R) e :=
-  carried_returns (T := fun i => T + (m + 1) * i) R fun i _ =>
-    Eq.subst (motive := fun x => Returns cs part k present e (T + (m + 1) * i) x)
-      (Nat.add_assoc T ((m + 1) * i) (m + 1)) (returns_of_coupledAlways start back loop _)
+  carried_roundTrip (T := fun i => T + (m + 1) * i) R fun i _ =>
+    Eq.subst (motive := fun x => RoundTrip cs part k present e (T + (m + 1) * i) x)
+      (Nat.add_assoc T ((m + 1) * i) (m + 1)) (roundTrip_of_coupledAlways start back loop _)
 
 /-- **Exponential downstream.** Where, besides, a chain of `q` couplings holding at every step leads
 from the loop's condition `e` to `c`, the carried amount at `c` at step `T + (m + 1) * R + q` is at

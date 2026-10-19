@@ -22,8 +22,8 @@ alone (`ReadsShare`).
   this is the statement with a margin: each carrier leaving `a + m` offspring and each other `a`, the
   margin read at a reading step a monotone function of the share, from every start under a margin the
   share falls at no step and from the step after the first reading step the margin falls at no step
-  (`Counts.margin_course`); the share rises strictly at every step whose margin is positive, carriers
-  present, along every course (`Counts.rises_strictly`, `Counts.rises_strictly_along`).
+  (`CarrierCounts.margin_course`); the share rises strictly at every step whose margin is positive, carriers
+  present, along every course (`CarrierCounts.rises_strictly`, `CarrierCounts.rises_strictly_along`).
 * **Locked, the loop does not turn back.** Favouring kept by every rule not lower, a configuration
   whose rule favours and is not above what the reading of its share gives (`Locked`) stays locked at
   every later step (`locked_stays`), and neither the share nor the rule falls across any step, reading
@@ -53,20 +53,20 @@ alone (`ReadsShare`).
   `Pace.paced_shift`: a two-level course read from a later step is the course from its configuration
   there). With absorption: a perturbation that keeps the direction delays the course and does not turn
   it.
-* **Counts.** Two counts, the second positive (`Counts`): a population of carriers and others with
+* **Counts.** Two counts, the second positive (`CarrierCounts`): a population of carriers and others with
   others present, or a rule giving each carrier and each other so many offspring. The share order is
-  cross-multiplication (`Counts.order`), the comparison of `share_not_lower`
-  (`Counts.share_not_lower_counts`). Selection (`Counts.select`) multiplies each kind by what the rule
+  cross-multiplication (`CarrierCounts.order`), the comparison of `share_not_lower`
+  (`CarrierCounts.share_not_lower_counts`). Selection (`CarrierCounts.select`) multiplies each kind by what the rule
   gives it; it does not lower the share under a favouring rule nor raise it under a disfavouring one
-  (`Counts.raises`, `Counts.lowers`), favouring and disfavouring are kept upward and downward
-  (`Counts.upper`, `Counts.lower`), and selection is monotone (`Counts.select_mono`), so a
+  (`CarrierCounts.raises`, `CarrierCounts.lowers`), favouring and disfavouring are kept upward and downward
+  (`CarrierCounts.upper`, `CarrierCounts.lower`), and selection is monotone (`CarrierCounts.select_mono`), so a
   perturbation lowering the rule keeps its course below on counts
-  (`Counts.perturbation_keeps_below_counts`). Under the proportional reading, which leaves each kind offspring in proportion to how many of its kind there
+  (`CarrierCounts.perturbation_keeps_below_counts`). Under the proportional reading, which leaves each kind offspring in proportion to how many of its kind there
   are, from a rule that favours and is not above the population's own proportion, the carriers'
   share and the rule fall at no step; from one that disfavours and is not below it, they rise at
-  none (`Counts.proportional_locks`, `Counts.proportional_locks_down`). A threshold reading is
-  monotone where its lower rule is not above its upper one (`Counts.threshold_reads`) and favours at
-  every share where both favour (`Counts.threshold_favours`).
+  none (`CarrierCounts.proportional_locks`, `CarrierCounts.proportional_locks_down`). A threshold reading is
+  monotone where its lower rule is not above its upper one (`CarrierCounts.threshold_reads`) and favours at
+  every share where both favour (`CarrierCounts.threshold_favours`).
 
 So in a loop whose rule reads the share it selects, the outcome is held by how the rule reads, not by
 the rule's value: every reading step sets the value again from the share. This is the mirror of
@@ -80,7 +80,7 @@ does read, carries the loop.
   theory states the loop as a relation between a selection and its rule; 韩非 reads it as control
   between opposed interests, and that divergence is kept.
 - 据有余而制不足 (管子·国蓄): the proportional reading; the kind holding more is favoured and holds more
-  (`Counts.proportional_locks`).
+  (`CarrierCounts.proportional_locks`).
 - 壹赏、壹刑、壹教 (商君书): one reading favouring one way at every share; every course is locked from
   its second reading step (`uniform_locks`), and only a change of how the rule reads leaves.
 - The premise `ReadsShare` is where "the winner shapes the rule" of `Becoming.Capture` enters, now
@@ -91,7 +91,7 @@ which readings formations live under; that offspring carry their parents' target
 `Becoming.Capture`); that the share or the rule rises strictly, except on counts under a positive
 margin. A reading against the share is not this lock: in `Switching` (of `Becoming.Pace`) the rule takes
 the value the fast level lacks, and both values recur. The representation commits to discrete steps, natural
-counts and, in `Counts`, others present. No ethical predicate, ranking or axiom occurs.
+counts and, in `CarrierCounts`, others present. No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -381,12 +381,12 @@ end Order
 /-- Two counts, the second positive. Read as a population: the carriers of a target and the others,
 the others present. Read as a rule of selection: the offspring each carrier leaves and the offspring
 each other leaves, each other leaving at least one. -/
-structure Counts where
+structure CarrierCounts where
   carrier : Nat
   other : Nat
   other_pos : 0 < other
 
-namespace Counts
+namespace CarrierCounts
 
 /-- Factors of a product of three exchange their last two places. -/
 theorem mul_right_comm_nat (a b c : Nat) : a * b * c = a * c * b :=
@@ -400,7 +400,7 @@ theorem mul_mul_mul_comm_nat (a b c d : Nat) : a * b * (c * d) = a * c * (b * d)
 
 /-- **The share order**: the carriers stand to the others in `y` at least as in `x`, by
 cross-multiplication, as in `share_not_lower`. -/
-def order : Ideals.Preorder Counts where
+def order : Ideals.Preorder CarrierCounts where
   le x y := x.carrier * y.other ≤ y.carrier * x.other
   refl _ := Nat.le_refl _
   trans {x y z} xy yz := Nat.le_of_mul_le_mul_right
@@ -413,13 +413,13 @@ def order : Ideals.Preorder Counts where
 
 /-- The rule favours the carriers: each carrier leaves at least as many offspring as each other.
 Read of a population: the carriers are at least as many as the others. -/
-def favours (g : Counts) : Prop := g.other ≤ g.carrier
+def favours (g : CarrierCounts) : Prop := g.other ≤ g.carrier
 
 /-- The rule favours the others. -/
-def disfavours (g : Counts) : Prop := g.carrier ≤ g.other
+def disfavours (g : CarrierCounts) : Prop := g.carrier ≤ g.other
 
 /-- **Selection by a rule**: each carrier leaves `g.carrier` offspring, each other `g.other`. -/
-def select (x g : Counts) : Counts :=
+def select (x g : CarrierCounts) : CarrierCounts :=
   ⟨x.carrier * g.carrier, x.other * g.other, Nat.mul_pos x.other_pos g.other_pos⟩
 
 /-- **Selection by a favouring rule does not lower the share.** -/
@@ -430,7 +430,7 @@ theorem raises : Raises order favours select := fun x g fav =>
     _ = x.carrier * g.carrier * x.other := mul_right_comm_nat _ _ _
 
 /-- **Selection by a rule favouring strictly raises the share strictly**, carriers present. -/
-theorem rises_strictly {x g : Counts} (some : 0 < x.carrier) (lt : g.other < g.carrier) :
+theorem rises_strictly {x g : CarrierCounts} (some : 0 < x.carrier) (lt : g.other < g.carrier) :
     x.carrier * (select x g).other < (select x g).carrier * x.other :=
   calc x.carrier * (x.other * g.other)
       = x.carrier * x.other * g.other := (mul_assoc_nat _ _ _).symm
@@ -445,7 +445,7 @@ theorem lowers : Raises (reverse order) disfavours select := fun x g dis =>
     _ = x.carrier * (x.other * g.other) := mul_assoc_nat _ _ _
 
 /-- **Favouring is kept by every rule not lower.** -/
-theorem upper {g g' : Counts} (le : order.le g g') (fav : favours g) : favours g' :=
+theorem upper {g g' : CarrierCounts} (le : order.le g g') (fav : favours g) : favours g' :=
   Nat.le_of_mul_le_mul_right
     (calc g'.other * g.other
         ≤ g'.other * g.carrier := Nat.mul_le_mul_left _ fav
@@ -453,7 +453,7 @@ theorem upper {g g' : Counts} (le : order.le g g') (fav : favours g) : favours g
       _ ≤ g'.carrier * g.other := le) g.other_pos
 
 /-- **Disfavouring is kept by every rule not higher.** -/
-theorem lower {g g' : Counts} (le : (reverse order).le g g') (dis : disfavours g) : disfavours g' :=
+theorem lower {g g' : CarrierCounts} (le : (reverse order).le g g') (dis : disfavours g) : disfavours g' :=
   Nat.le_of_mul_le_mul_right
     (calc g'.carrier * g.other
         ≤ g.carrier * g'.other := le
@@ -461,7 +461,7 @@ theorem lower {g g' : Counts} (le : (reverse order).le g g') (dis : disfavours g
       _ = g'.other * g.other := Nat.mul_comm _ _) g.other_pos
 
 /-- **Selection is monotone in the population and in the rule.** -/
-theorem select_mono {x y g g' : Counts} (le : order.le x y) (le' : order.le g g') :
+theorem select_mono {x y g g' : CarrierCounts} (le : order.le x y) (le' : order.le g g') :
     order.le (select x g) (select y g') :=
   calc x.carrier * g.carrier * (y.other * g'.other)
       = x.carrier * y.other * (g.carrier * g'.other) := mul_mul_mul_comm_nat _ _ _ _
@@ -479,19 +479,19 @@ theorem share_not_lower_counts {α : Type} {kids : α → List α} {ms es : List
 
 /-- **Along every course, selection by a rule favouring strictly raises the share strictly**, the
 carriers present, whatever the reading and the schedule. -/
-theorem rises_strictly_along {hR : Counts → Counts → Counts} {reads : Nat → Bool} (c : Counts × Counts)
+theorem rises_strictly_along {hR : CarrierCounts → CarrierCounts → CarrierCounts} {reads : Nat → Bool} (c : CarrierCounts × CarrierCounts)
     (t : Nat) (some : 0 < (paced select hR reads c t).1.carrier)
     (lt : (paced select hR reads c t).2.other < (paced select hR reads c t).2.carrier) :
     (paced select hR reads c t).1.carrier * (paced select hR reads c (t + 1)).1.other <
       (paced select hR reads c (t + 1)).1.carrier * (paced select hR reads c t).1.other :=
-  Eq.subst (motive := fun y : Counts => (paced select hR reads c t).1.carrier * y.other <
+  Eq.subst (motive := fun y : CarrierCounts => (paced select hR reads c t).1.carrier * y.other <
       y.carrier * (paced select hR reads c t).1.other) (paced_fast_succ c t).symm (rises_strictly some lt)
 
 /-- **On counts, a perturbation lowering the rule keeps its course below.** Under every reading
 monotone in the share, the rule perturbed at step `a` to one not above it, the perturbed course is at
 no later step above the course without the perturbation, in share or in rule. -/
-theorem perturbation_keeps_below_counts {hR : Counts → Counts → Counts} (monotone : ReadsShare order order hR)
-    {reads : Nat → Bool} {c : Counts × Counts} {a : Nat} {g' : Counts}
+theorem perturbation_keeps_below_counts {hR : CarrierCounts → CarrierCounts → CarrierCounts} (monotone : ReadsShare order order hR)
+    {reads : Nat → Bool} {c : CarrierCounts × CarrierCounts} {a : Nat} {g' : CarrierCounts}
     (lower : order.le g' (paced select hR reads c a).2) (k : Nat) :
     order.le (paced select hR (fun u => reads (a + u)) ((paced select hR reads c a).1, g') k).1
         (paced select hR reads c (a + k)).1 ∧
@@ -501,22 +501,22 @@ theorem perturbation_keeps_below_counts {hR : Counts → Counts → Counts} (mon
 
 /-- **The proportional reading**: the rule read leaves each kind offspring in proportion to how many
 of its kind there are. -/
-def proportional (x _ : Counts) : Counts := x
+def proportional (x _ : CarrierCounts) : CarrierCounts := x
 
 theorem proportional_reads : ReadsShare order order proportional := fun _ _ _ _ le => le
 
 /-- **A threshold reading**: the rule read is `hi` where the carriers are at least as many as the
 others, `lo` elsewhere. -/
-def threshold (hi lo : Counts) (x _ : Counts) : Counts := if x.other ≤ x.carrier then hi else lo
+def threshold (hi lo : CarrierCounts) (x _ : CarrierCounts) : CarrierCounts := if x.other ≤ x.carrier then hi else lo
 
-theorem threshold_above {hi lo x g : Counts} (fav : favours x) : threshold hi lo x g = hi :=
+theorem threshold_above {hi lo x g : CarrierCounts} (fav : favours x) : threshold hi lo x g = hi :=
   if_pos fav
 
-theorem threshold_below {hi lo x g : Counts} (dis : ¬ favours x) : threshold hi lo x g = lo :=
+theorem threshold_below {hi lo x g : CarrierCounts} (dis : ¬ favours x) : threshold hi lo x g = lo :=
   if_neg dis
 
 /-- **A threshold reading with `lo` not above `hi` is monotone in the share.** -/
-theorem threshold_reads {hi lo : Counts} (step : order.le lo hi) :
+theorem threshold_reads {hi lo : CarrierCounts} (step : order.le lo hi) :
     ReadsShare order order (threshold hi lo) := fun x y _ _ le =>
   if hx : x.other ≤ x.carrier then
     Eq.mpr (congr (congrArg order.le (threshold_above hx)) (threshold_above (upper le hx)))
@@ -527,13 +527,13 @@ theorem threshold_reads {hi lo : Counts} (step : order.le lo hi) :
     Eq.mpr (congr (congrArg order.le (threshold_below hx)) (threshold_below hy)) (order.refl lo)
 
 /-- **A threshold reading between two favouring rules favours at every share.** -/
-theorem threshold_favours {hi lo : Counts} (fhi : favours hi) (flo : favours lo) :
+theorem threshold_favours {hi lo : CarrierCounts} (fhi : favours hi) (flo : favours lo) :
     ∀ x g, favours (threshold hi lo x g) := fun x _ =>
   if hx : x.other ≤ x.carrier then Eq.mpr (congrArg favours (threshold_above hx)) fhi
   else Eq.mpr (congrArg favours (threshold_below hx)) flo
 
 /-- **A margin**: each carrier leaves `a + m` offspring and each other `a`. -/
-def margin (a m : Nat) (pos : 0 < a) : Counts := ⟨a + m, a, pos⟩
+def margin (a m : Nat) (pos : 0 < a) : CarrierCounts := ⟨a + m, a, pos⟩
 
 theorem margin_favours {a m : Nat} {pos : 0 < a} : favours (margin a m pos) := Nat.le_add_right a m
 
@@ -543,10 +543,10 @@ theorem margin_le {a m m' : Nat} {pos : 0 < a} (le : m ≤ m') :
   Nat.mul_le_mul_right a (Nat.add_le_add_left le a)
 
 /-- **The rule read as a margin**: the margin `φ x` read from the share at `x`. -/
-def byMargin (a : Nat) (pos : 0 < a) (φ : Counts → Nat) (x _ : Counts) : Counts := margin a (φ x) pos
+def byMargin (a : Nat) (pos : 0 < a) (φ : CarrierCounts → Nat) (x _ : CarrierCounts) : CarrierCounts := margin a (φ x) pos
 
 /-- A margin read monotonically in the share is a reading monotone in the share. -/
-theorem byMargin_reads {a : Nat} {pos : 0 < a} {φ : Counts → Nat}
+theorem byMargin_reads {a : Nat} {pos : 0 < a} {φ : CarrierCounts → Nat}
     (mono : ∀ x y, order.le x y → φ x ≤ φ y) : ReadsShare order order (byMargin a pos φ) :=
   fun x y _ _ le => margin_le (mono x y le)
 
@@ -554,8 +554,8 @@ theorem byMargin_reads {a : Nat} {pos : 0 < a} {φ : Counts → Nat}
 `a + m` offspring and each other `a`, and the margin at a reading step a monotone function of the
 share: from every start under a margin, the share falls at no step, and from the step after the
 first reading step on the margin falls at no step either. -/
-theorem margin_course {a : Nat} {pos : 0 < a} {φ : Counts → Nat}
-    (mono : ∀ x y, order.le x y → φ x ≤ φ y) (x : Counts) (m : Nat) (reads : Nat → Bool) :
+theorem margin_course {a : Nat} {pos : 0 < a} {φ : CarrierCounts → Nat}
+    (mono : ∀ x y, order.le x y → φ x ≤ φ y) (x : CarrierCounts) (m : Nat) (reads : Nat → Bool) :
     (∀ t, order.le (paced select (byMargin a pos φ) reads (x, margin a m pos) t).1
         (paced select (byMargin a pos φ) reads (x, margin a m pos) (t + 1)).1) ∧
       ∀ r, reads r = true → ∀ k,
@@ -568,7 +568,7 @@ theorem margin_course {a : Nat} {pos : 0 < a} {φ : Counts → Nat}
 /-- **Under the proportional reading, the kind holding more holds more.** From a rule that favours
 and is not above the population's own proportion, under every schedule of reading, neither the
 carriers' share nor the rule falls at any step. -/
-theorem proportional_locks {x g : Counts} (fav : favours g) (below : order.le g x)
+theorem proportional_locks {x g : CarrierCounts} (fav : favours g) (below : order.le g x)
     (reads : Nat → Bool) (t : Nat) :
     order.le (paced select proportional reads (x, g) t).1
         (paced select proportional reads (x, g) (t + 1)).1 ∧
@@ -583,7 +583,7 @@ theorem proportional_locks {x g : Counts} (fav : favours g) (below : order.le g 
 
 /-- **And the kind holding less holds less.** From a rule that disfavours and is not below the
 population's own proportion, neither the carriers' share nor the rule rises at any step. -/
-theorem proportional_locks_down {x g : Counts} (dis : disfavours g) (above : order.le x g)
+theorem proportional_locks_down {x g : CarrierCounts} (dis : disfavours g) (above : order.le x g)
     (reads : Nat → Bool) (t : Nat) :
     order.le (paced select proportional reads (x, g) (t + 1)).1
         (paced select proportional reads (x, g) t).1 ∧
@@ -596,21 +596,21 @@ theorem proportional_locks_down {x g : Counts} (dis : disfavours g) (above : ord
     (locked_rises (P := reverse order) (M := reverse order) (reads := reads) (c := (x, g)) (t := 0) lowers
       proportional_reads.reverse lower ⟨dis, above⟩ t)
 
-end Counts
+end CarrierCounts
 
 /-! ## Witnesses -/
 
-namespace Counts
+namespace CarrierCounts
 
 /-- The rule that favours the carriers four to one. -/
-def hi : Counts := ⟨4, 1, Nat.zero_lt_succ 0⟩
+def hi : CarrierCounts := ⟨4, 1, Nat.zero_lt_succ 0⟩
 
 /-- The rule that favours the others four to one. -/
-def lo : Counts := ⟨1, 4, Nat.zero_lt_succ 3⟩
+def lo : CarrierCounts := ⟨1, 4, Nat.zero_lt_succ 3⟩
 
 /-- Two to one: as a population, two carriers to each other; as a rule, each carrier leaving two
 offspring to each other's one. -/
-def twoToOne : Counts := ⟨2, 1, Nat.zero_lt_succ 0⟩
+def twoToOne : CarrierCounts := ⟨2, 1, Nat.zero_lt_succ 0⟩
 
 theorem lo_le_hi : order.le lo hi := show 1 * 1 ≤ 4 * 4 by decide
 
@@ -622,18 +622,18 @@ theorem twoToOne_le_hi : order.le twoToOne hi := show 2 * 1 ≤ 4 * 1 by decide
 
 /-- One step of a course read at every step: the carriers and the others multiply by what the
 rule in force gives each, and the rule becomes what the reading gives. -/
-theorem always_step {hR : Counts → Counts → Counts} (c : Counts × Counts) (t : Nat) :
+theorem always_step {hR : CarrierCounts → CarrierCounts → CarrierCounts} (c : CarrierCounts × CarrierCounts) (t : Nat) :
     (paced select hR (fun _ => true) c (t + 1)).1.carrier =
         (paced select hR (fun _ => true) c t).1.carrier * (paced select hR (fun _ => true) c t).2.carrier ∧
       (paced select hR (fun _ => true) c (t + 1)).1.other =
         (paced select hR (fun _ => true) c t).1.other * (paced select hR (fun _ => true) c t).2.other ∧
       (paced select hR (fun _ => true) c (t + 1)).2 =
         hR (paced select hR (fun _ => true) c t).1 (paced select hR (fun _ => true) c t).2 :=
-  ⟨congrArg (fun p : Counts × Counts => p.1.carrier) (paced_succ c t),
-   congrArg (fun p : Counts × Counts => p.1.other) (paced_succ c t),
+  ⟨congrArg (fun p : CarrierCounts × CarrierCounts => p.1.carrier) (paced_succ c t),
+   congrArg (fun p : CarrierCounts × CarrierCounts => p.1.other) (paced_succ c t),
    congrArg Prod.snd (paced_succ c t)⟩
 
-end Counts
+end CarrierCounts
 
 /-! ### Witness: without the lock, a reading one step late alternates
 
@@ -643,10 +643,10 @@ from it with its rule reversed. -/
 
 namespace Alternating
 
-open Counts
+open CarrierCounts
 
 /-- The course of the threshold reading read at every step, from carriers two to one under `lo`. -/
-def course (t : Nat) : Counts × Counts := paced select (threshold hi lo) (fun _ => true) (twoToOne, lo) t
+def course (t : Nat) : CarrierCounts × CarrierCounts := paced select (threshold hi lo) (fun _ => true) (twoToOne, lo) t
 
 theorem course_step (t : Nat) :
     (course (t + 1)).1.carrier = (course t).1.carrier * (course t).2.carrier ∧
@@ -761,7 +761,7 @@ and held for one step before the threshold reading reads at every later step. -/
 
 namespace Reversed
 
-open Counts
+open CarrierCounts
 
 /-- No reading at the first step, reading at every step after it. -/
 def late : Nat → Bool
@@ -769,7 +769,7 @@ def late : Nat → Bool
   | _ + 1 => true
 
 /-- The course of the threshold reading on that schedule, from carriers two to one under `lo`. -/
-def course (t : Nat) : Counts × Counts := paced select (threshold hi lo) late (twoToOne, lo) t
+def course (t : Nat) : CarrierCounts × CarrierCounts := paced select (threshold hi lo) late (twoToOne, lo) t
 
 /-- **After one step under the reversed rule, the course is locked the other way.** The carriers
 are now one to two, the rule in force favours the others and is not below what the reading gives. -/
@@ -799,14 +799,14 @@ rule falls at its second. -/
 
 namespace Second
 
-open Counts
+open CarrierCounts
 
 /-- One carrier to one other. -/
-def oneToOne : Counts := ⟨1, 1, Nat.zero_lt_succ 0⟩
+def oneToOne : CarrierCounts := ⟨1, 1, Nat.zero_lt_succ 0⟩
 
 /-- The course of the threshold reading `hi`/`twoToOne` read at every step, from one to one under
 `lo`. -/
-def course (t : Nat) : Counts × Counts := paced select (threshold hi twoToOne) (fun _ => true) (oneToOne, lo) t
+def course (t : Nat) : CarrierCounts × CarrierCounts := paced select (threshold hi twoToOne) (fun _ => true) (oneToOne, lo) t
 
 /-- **The bound of `uniform_locks` is exact.** The course is not locked at step 1, the step after
 its first reading step; its rule falls across its second reading step; it is locked at step 2. -/

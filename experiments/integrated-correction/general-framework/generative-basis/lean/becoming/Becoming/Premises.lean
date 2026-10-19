@@ -58,7 +58,7 @@ that the rest are independent, none following from all the others together.
   (`World.finiteHatch_binds_but_census`).
 
 Premises stated relative to a further reading, such as a continuation relation
-(`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
+(`Becoming.Identity`), a renewal relation (`Becoming.Arising`), a reserve that decays
 (`Becoming.Reserve`) or a family of conditions (`Becoming.Flow`, `Becoming.Dissipation`),
 are not mapped here. That each formation taking part in a flow is listed once is a
 condition of the representation, not of the world. No ethical predicate, ranking or axiom

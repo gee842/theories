@@ -42,8 +42,8 @@ the content of `KnowledgeCorrespondence`, 6 October, and of the joins `ExactReco
   `Runs.exact_lumped`, `Runs.sound_silent`, `Runs.sound_mono`, `Runs.finer_lumped`,
   `Runs.retained_exact`, `Runs.silent_sound`, `Runs.silent_not_exact`, `Runs.exact_exists_iff`),
   and, along the runs of a determined law, an extrapolation rests on the feature from `T` exactly
-  where it reads the prefix exactly at every step from `T` (`Runs.exact_iff_restsFrom`, through
-  `LearnableRuns.RestsFrom`).
+  where it reads the prefix exactly at every step from `T` (`Runs.exact_iff_predictsFrom`, through
+  `LearnableRuns.PredictsFrom`).
 
 The channel is a supplied countermodel, not a definition of knowledge; domain adequacy and uptake
 are not claimed. No ethical predicate or ranking occurs, and every declaration has an empty axiom
@@ -338,10 +338,10 @@ variable {S : Type u} {R : Type v} {V : Type w} {next : S → S}
 
 /-- **Along the runs of a determined law, an extrapolation rests on the feature from `T` exactly
 where, at every step from `T` on, it reads the prefix exactly on all runs.** -/
-theorem exact_iff_restsFrom {g : S → R} {f : S → V} {pred : List R → Option V} {T : Nat} :
+theorem exact_iff_predictsFrom {g : S → R} {f : S → V} {pred : List R → Option V} {T : Nat} :
     (∀ t, T ≤ t → ExactWithin (fun _ : Run (Law.process next) => True) (prefixBefore g t)
         (featureAt f t) pred) ↔
-      ∀ r : Run (Law.process next), LearnableRuns.RestsFrom g f pred r T :=
+      ∀ r : Run (Law.process next), LearnableRuns.PredictsFrom g f pred r T :=
   ⟨fun exact r t late => exact t late r trivial, fun rests t late r _ => rests r t late⟩
 
 end Law

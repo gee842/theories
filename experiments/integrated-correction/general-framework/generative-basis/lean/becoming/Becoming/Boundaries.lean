@@ -144,7 +144,7 @@ What is not derived:
   (`Flow.Balances.uncoupled_beyond_influence`);
 - the step from significance to a reason, to motivation or to practice.
 
-The audit of the uses of living significance (`Becoming.Relevance`) is clean, and Ren folded living significance (`G0`) on 11 October 2026: it
+The audit of the uses of living significance (`Becoming.Relevance`) is clean, and Ren folded living significance (`LivingSignificance`) on 11 October 2026: it
 is no longer an axiom.
 -/
 

@@ -358,7 +358,7 @@ theorem avoids_iff_not_meets (F : α → Prop) (I : Ideal P) : Avoids F I ↔ ¬
   ⟨fun h ⟨b, hb, hF⟩ => h b hF hb, fun h b hF hb => h ⟨b, hb, hF⟩⟩
 
 /-- **The complement of an open class is closed.** -/
-theorem Open.compl_closed {C : Ideal P → Prop} (hc : Open C) : Closed (fun I => ¬ C I) :=
+theorem Open.compl_closed {C : Ideal P → Prop} (hc : Open C) : ScottClosed (fun I => ¬ C I) :=
   closed_of_iff (avoids_closed fun p => C (principal P p)) fun I =>
     (avoids_iff_not_meets _ I).trans
       ⟨fun n hC => n ((open_iff_meets_principal hc I).mp hC),

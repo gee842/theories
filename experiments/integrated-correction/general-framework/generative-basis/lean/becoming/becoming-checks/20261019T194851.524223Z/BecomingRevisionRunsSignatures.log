@@ -1,0 +1,17 @@
+@Becoming.RevisionRuns.history_retained_iff : ∀ {S : Type u_1} {A : Type u_2} {X : Type u_3} {V : Type u_4}
+  {P : Generative.Process S A} (r : Becoming.Run P) (obs : S → X → V) (x y : X),
+  Becoming.Registration.AlikeUpTo r (fun s a b => obs s a = obs s b) 1 x y ↔
+    (obs (r.state 0) x, obs (r.state 1) x) = (obs (r.state 0) y, obs (r.state 1) y)
+@Becoming.RevisionRuns.history_gains : ∀ {S : Type u_1} {A : Type u_2} {X : Type u_3} {V : Type u_4}
+  {P : Generative.Process S A} (r : Becoming.Run P) (obs : S → X → V) {x y : X},
+  obs (r.state 0) x = obs (r.state 0) y →
+    obs (r.state 1) x ≠ obs (r.state 1) y →
+      ∀ {t : Nat},
+        1 ≤ t →
+          ∃ select,
+            Becoming.Learning.Training.Through (Becoming.Registration.AlikeUpTo r (fun s a b => obs s a = obs s b) t)
+                select ∧
+              ¬Becoming.Learning.Training.Through (fun a b => obs (r.state 0) a = obs (r.state 0) b) select
+@Becoming.RevisionRuns.rebuild_opens_keeps : ∀ {s t : Becoming.Revising.State},
+  Becoming.Revising.P.step s (Becoming.Revising.Act.rebuild true) t →
+    s.snd = (false, false) → Becoming.Registration.Keeps Becoming.Revising.alike s t

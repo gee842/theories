@@ -29,11 +29,11 @@ cultural progress is claimed.
   units, the basic lesson delivers the program's records (`basic_lesson_records`), and the
   learner reconstructs the program, with seven units left, where its primitives differ
   (`reconstructs_program`); so every successor keeps it (`successor_keeps`), every generation
-  holds it (`every_generation_holds`), and every generation's program evaluates every expression
-  as the code does (`every_generation_corresponds`).
+  holds it (`every_cohort_holds`), and every generation's program evaluates every expression
+  as the code does (`every_cohort_corresponds`).
 * **Faithful is not correct.** A sender ignoring the second argument of each join is reconstructed
   faithfully and loses a distinction the task makes, in every generation, whatever the stock
-  (`faithful_loses_distinction`, `stock_keeps_content`, `distinction_lost_every_generation`); the
+  (`faithful_loses_distinction`, `stock_keeps_content`, `distinction_lost_every_cohort`); the
   same teacher yields different programs after different lessons (`lessons_change_program`); a
   peer's demonstration repairs a reconstruction or keeps an error (`peer_repairs`,
   `peer_keeps_error_example`); a received disagreement without stock is not repaired
@@ -41,7 +41,7 @@ cultural progress is claimed.
   then stays (`limited_changes_then_stays`, `limited_fails_task`).
 * **As processes.** The pair under queries is a process whose courses are exactly the lessons
   (`queryProcess`, `trace_iff`), and succession is `Law.process successor`, whose runs pass
-  through the generations (`run_generation`); the laws above are stated of courses and runs
+  through the generations (`run_cohort`); the laws above are stated of courses and runs
   (`step_delivers`, `course_stock`, `learned_*`, `succession_*`, `formed_succession_*`,
   `execution_stock_succession_blocked`, `peer_repair`, `peer_keeps_error`).
 
@@ -281,10 +281,10 @@ def cohort (p : Program) : Nat → Apparatus
   | n + 1 => successor (cohort p n)
 
 /-- **Every generation holds the program**, with seven units. -/
-theorem every_generation_holds (p : Program) (routes : p.route ∈ generatedRoutes 2)
+theorem every_cohort_holds (p : Program) (routes : p.route ∈ generatedRoutes 2)
     (distinct : p.first ≠ p.second) : ∀ n, (cohort p n).installed = some p ∧ 7 ≤ (cohort p n).stock
   | 0 => ⟨rfl, Nat.le_refl 7⟩
-  | n + 1 => match every_generation_holds p routes distinct n with
+  | n + 1 => match every_cohort_holds p routes distinct n with
     | ⟨installed, enough⟩ => successor_keeps _ p installed routes distinct enough
 
 theorem routeFor_generated (c : Code) : routeFor c ∈ generatedRoutes 2 :=
@@ -293,9 +293,9 @@ theorem routeFor_generated (c : Code) : routeFor c ∈ generatedRoutes 2 :=
   | ⟨_, _, true⟩ => .tail _ (.tail _ (.head _))
 
 /-- **Every generation's program evaluates every expression as the code does.** -/
-theorem every_generation_corresponds (c : Code) (distinct : c.first ≠ c.second) (n : Nat) (e : Expr) :
+theorem every_cohort_corresponds (c : Code) (distinct : c.first ≠ c.second) (n : Nat) (e : Expr) :
     ∃ p, (cohort (programFor c) n).installed = some p ∧ operate p e = eval c e :=
-  ⟨programFor c, (every_generation_holds _ (routeFor_generated c) distinct n).1, programFor_operates c e⟩
+  ⟨programFor c, (every_cohort_holds _ (routeFor_generated c) distinct n).1, programFor_operates c e⟩
 
 /-! ## The examples -/
 
@@ -359,11 +359,11 @@ theorem short_receiver_not_repaired :
     (learn (source (programFor collapsed) 11) 5 8 extended).installed = none := by decide
 
 /-- **The lost distinction recurs in every generation.** -/
-theorem distinction_lost_every_generation (n : Nat) :
+theorem distinction_lost_every_cohort (n : Nat) :
     (cohort selective n).installed = some selective ∧
     operate selective joint00 = operate selective orderProbe ∧
     eval usual joint00 ≠ eval usual orderProbe :=
-  ⟨(every_generation_holds selective (.head _) Bool.noConfusion n).1, by decide, by decide⟩
+  ⟨(every_cohort_holds selective (.head _) Bool.noConfusion n).1, by decide, by decide⟩
 
 /-- **A successful reconstruction can teach a later formation.** -/
 theorem reconstruction_teaches_later :
@@ -544,7 +544,7 @@ theorem orbit_limited : ∀ n, Law.orbit successor (source (programFor collapsed
   | n + 1 => congrArg successor (orbit_limited n)
 
 /-- **Every run of succession from a teacher passes through the generations from it.** -/
-theorem run_generation {p : Program} {r : Run (Law.process successor)} (start : r.state 0 = source p 7)
+theorem run_cohort {p : Program} {r : Run (Law.process successor)} (start : r.state 0 = source p 7)
     (n : Nat) : r.state n = cohort p n :=
   (Branching.law_run_state r n).trans
     ((congrArg (fun s => Law.orbit successor s n) start).trans (orbit_cohort p n))
@@ -554,14 +554,14 @@ holds at every date a program evaluating every expression as the code does. -/
 theorem succession_keeps_correspondence {c : Code} {r : Run (Law.process successor)}
     (start : r.state 0 = source (programFor c) 7) (distinct : c.first ≠ c.second) (n : Nat) (e : Expr) :
     ∃ p, (r.state n).installed = some p ∧ operate p e = eval c e :=
-  (run_generation start n).symm ▸ every_generation_corresponds c distinct n e
+  (run_cohort start n).symm ▸ every_cohort_corresponds c distinct n e
 
 /-- **Succession keeps a lost distinction.** -/
 theorem succession_keeps_lost_distinction {r : Run (Law.process successor)}
     (start : r.state 0 = source selective 7) (n : Nat) :
     (r.state n).installed = some selective ∧ operate selective joint00 = operate selective orderProbe ∧
       eval usual joint00 ≠ eval usual orderProbe :=
-  (run_generation start n).symm ▸ distinction_lost_every_generation n
+  (run_cohort start n).symm ▸ distinction_lost_every_cohort n
 
 /-- **Succession stabilizes a change.** -/
 theorem succession_stabilizes_change {r : Run (Law.process successor)}

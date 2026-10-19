@@ -64,9 +64,9 @@ loop of Rejoining as a return map.
   (`LoopReturn.runs_away_unbounded`); the loop of one doubling link meets the hypothesis and attains
   `2 ^ n * d` exactly (`LoopReturn.doubling_exact`). An empty loop gives back what it receives, so
   the link is needed (`LoopReturn.empty_loop_kept`). This runs parallel to `Becoming.Frequency`'s
-  doubling at every return, with no instance theorem between them (`carried_doubles_return`, `carried_returns`): there a return doubles what had
+  doubling at every return, with no instance theorem between them (`carried_doubles_roundTrip`, `carried_roundTrip`): there a return doubles what had
   reached a condition because it arrives once held and once around the loop, and
-  `runaway_of_returns` turns doubling at returns that come often enough into outgrowing every
+  `runaway_of_roundTrip` turns doubling at returns that come often enough into outgrowing every
   polynomial in the steps. Here the doubling is a property of each link, and the count is of
   turns, not of steps; how many steps a turn takes is what `Becoming.Frequency` adds.
 * **Whole-number strengths have nothing between.** In a loop of links multiplying by whole-number

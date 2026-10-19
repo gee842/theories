@@ -22,7 +22,7 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   nothing beyond it, whether taking from it recurs (`fed_from_beyond`), its members rise
   at arbitrarily late steps (`rising_fed_from_beyond`), or, read with one kind of
   relatum, embodied members arise at arbitrarily late steps
-  (`Web.generation_fed_from_beyond`). Being fed is needed; no condition it is fed
+  (`Web.embodiedArising_fed_from_beyond`). Being fed is needed; no condition it is fed
   from need recur: in `Lone` the pool is fed at every step, and each fuel is conveyed from at one
   step only (`Lone.fed`, `Lone.each_fuel_once`). The one formation conveying, the source, is
   the same at every step.
@@ -401,12 +401,12 @@ variable {X : Type} {W : Web X X} {L : Flow X X}
 /-- Under dissipation, a finite family without repetition in which embodied members arise
 at arbitrarily late steps, enclosed around from some step on, cannot from any step on be
 fed from nothing beyond it. -/
-theorem generation_fed_from_beyond [DecidableEq X] (balances : L.Balances W)
+theorem embodiedArising_fed_from_beyond [DecidableEq X] (balances : L.Balances W)
     (dissipative : L.Dissipative) {ds : List X} (distinct : Distinct ds) {T₀ : Nat}
     (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
     ¬ ∀ t, N ≤ t → ¬ L.FedFromBeyond ds t :=
-  Flow.fed_of_not_inward (generation_draws_in balances dissipative distinct around arising N)
+  Flow.fed_of_not_inward (embodiedArising_draws_in balances dissipative distinct around arising N)
 
 end Web
 

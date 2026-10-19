@@ -1,0 +1,50 @@
+@Becoming.OrderWorlds.rearranges_refl : ∀ {X : Type} (r : Becoming.Footprinted X) {S m : Nat} {π σ : Nat → Nat},
+  Becoming.Reindexes S m π σ → Becoming.Rearranges r.Joined S m π σ π
+@Becoming.OrderWorlds.rearranges_symm : ∀ {X : Type} (r : Becoming.Footprinted X) {S m : Nat} {π σ π' σ' : Nat → Nat},
+  Becoming.Reindexes S m π σ →
+    Becoming.Reindexes S m π' σ' → Becoming.Rearranges r.Joined S m π σ π' → Becoming.Rearranges r.Joined S m π' σ' π
+@Becoming.OrderWorlds.rearranges_trans : ∀ {X : Type} (r : Becoming.Footprinted X) {S m : Nat}
+  {π σ π' σ' π'' σ'' : Nat → Nat},
+  Becoming.Reindexes S m π σ →
+    Becoming.Reindexes S m π' σ' →
+      Becoming.Reindexes S m π'' σ'' →
+        Becoming.Rearranges r.Joined S m π σ π' →
+          Becoming.Rearranges r.Joined S m π' σ' π'' → Becoming.Rearranges r.Joined S m π σ π''
+@Becoming.OrderWorlds.normalForm_normal : ∀ {X : Type} (r : Becoming.Footprinted X) {S m : Nat}
+  {apart : Nat → Nat → Bool} {π σ : Nat → Nat},
+  Becoming.DecidesApart r.Joined S m apart →
+    Becoming.Reindexes S m π σ →
+      ∀ {i : Nat},
+        S ≤ i →
+          i < S + m →
+            Becoming.normalForm apart S m (Becoming.normalForm apart S m π σ)
+                (fun p => σ (Becoming.origin (Becoming.normalSteps apart S m π σ m) p)) i =
+              Becoming.normalForm apart S m π σ i
+@Becoming.OrderWorlds.normalForm_least : ∀ {X : Type} (r : Becoming.Footprinted X) {S m : Nat}
+  {apart : Nat → Nat → Bool} {π σ π' σ' : Nat → Nat},
+  Becoming.DecidesApart r.Joined S m apart →
+    Becoming.Reindexes S m π σ →
+      Becoming.Reindexes S m π' σ' →
+        Becoming.Rearranges r.Joined S m π σ π' →
+          ∀ {k : Nat},
+            k < m →
+              (∀ (p : Nat), S ≤ p → p < S + k → σ (Becoming.origin (Becoming.normalSteps apart S m π σ m) p) = σ' p) →
+                σ (Becoming.origin (Becoming.normalSteps apart S m π σ m) (S + k)) ≤ σ' (S + k)
+@Becoming.OrderWorlds.complete_iff : ∀ {X : Type} (r : Becoming.Footprinted X) {S m : Nat},
+  (∃ N, Becoming.CompleteInvariant r.Joined S m N) ↔ ∃ apart, Becoming.DecidesApart r.Joined S m apart
+Becoming.OrderWorlds.halving_premises_iff : ∀ (w : Becoming.World) [inst : DecidableEq w.Relatum],
+  w.flow.Once →
+    ((w.sample Becoming.Pulse.half).Balanced ↔ w.Balanced) ∧
+      ((w.sample Becoming.Pulse.half).Dissipative ↔ w.Dissipative) ∧
+        ((w.sample Becoming.Pulse.half).Acting ↔ w.Acting) ∧
+          ((w.sample Becoming.Pulse.half).Taking ↔ w.Taking) ∧
+            ((w.sample Becoming.Pulse.half).Dependent ↔ w.Dependent) ∧
+              ((w.sample Becoming.Pulse.half).Embodied ↔ w.Embodied) ∧
+                ((w.sample Becoming.Pulse.half).Transmitting ↔ w.Transmitting)
+@Becoming.OrderWorlds.commuted_rise_count : ∀ {F C : Type} {W W' : Becoming.Web F C} {t : Nat},
+  W.Commuted W' t →
+    ∀ (cs : List C) {S m : Nat},
+      S ≤ t →
+        t + 2 ≤ S + m →
+          Becoming.count (Becoming.steps S m) (Becoming.rise (W'.stock cs)) =
+            Becoming.count (Becoming.steps S m) (Becoming.rise (W.stock cs))

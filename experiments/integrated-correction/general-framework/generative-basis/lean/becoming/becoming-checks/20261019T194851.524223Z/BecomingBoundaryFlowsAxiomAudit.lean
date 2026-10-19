@@ -1,0 +1,17 @@
+import Becoming.BoundaryFlows
+#print axioms Becoming.BoundaryFlows.subTrue_member
+#print axioms Becoming.BoundaryFlows.superTrue_all_iff
+#print axioms Becoming.BoundaryFlows.bounded_reach_iff
+#print axioms Becoming.BoundaryFlows.reach_scopes
+#print axioms Becoming.BoundaryFlows.unrestricted_iff_superTrue
+#print axioms Becoming.BoundaryFlows.superTrue_level_free
+#print axioms Becoming.BoundaryFlows.boundaryInvariant_iff_determinate
+#print axioms Becoming.BoundaryFlows.boundaryInvariant_iff_extends
+#print axioms Becoming.BoundaryFlows.own_continuation
+#print axioms Becoming.BoundaryFlows.only_whole_of_common
+#print axioms Becoming.BoundaryFlows.shares_iff_total_of_common
+#print axioms Becoming.BoundaryFlows.not_subTrue_of_invariant
+#print axioms Becoming.BoundaryFlows.unrestricted_of_presupposed
+#print axioms Becoming.BoundaryFlows.boundaryInvariant_iff_standpointInvariant
+#print axioms Becoming.BoundaryFlows.significant_of_presupposed
+#print axioms Becoming.BoundaryFlows.retains_whole_iff_includes

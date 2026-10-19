@@ -1,0 +1,12 @@
+@Becoming.DependenceWebs.continuing_restores_fixed_unit : ∀ {F C : Type} {W : Becoming.Web F C} {T k : Nat} {g : F}
+  {c : C},
+  W.Supported (T + k) g → W.requires (T + k) g c → W.need T g c ≤ W.need (T + k) g c → W.need T g c ≤ W.level (T + k) c
+@Becoming.DependenceWebs.chain_ends_at_once : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent →
+    ∀ {chain : Nat → X} {n : Nat},
+      (∀ (k : Nat), k < n → W.Embodied (chain k)) →
+        ∀ {T : Nat},
+          (∀ (k t : Nat),
+              k < n → T ≤ t → W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k)) →
+            (∀ (t : Nat), T ≤ t → ¬W.active t (chain 0)) →
+              ∀ (k : Nat), k ≤ n → ∀ (t : Nat), T ≤ t → ¬W.active t (chain k)

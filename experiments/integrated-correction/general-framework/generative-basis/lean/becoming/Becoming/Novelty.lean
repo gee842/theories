@@ -273,7 +273,7 @@ on the stock of a family stays within a bound and something is exchanged with it
 late steps, its configuration does not carry the count of its exchanges. -/
 theorem uncarried_of_bounded {T K : Nat} (bound : ∀ t, T ≤ t → W.stock cs t ≤ K)
     (exchanging : ∀ M, ∃ t, M ≤ t ∧ 0 < L.exchanges cs t) : ¬ L.CarriesHistory W cs T :=
-  fun ⟨read, reads⟩ => Web.unread_of_unbounded bound (count := L.history cs T)
+  fun ⟨read, reads⟩ => Web.unread_of_unbounded bound (count := L.exchangeCount cs T)
     (recurring_accumulates exchanging T) read reads
 
 end Flow

@@ -42,7 +42,7 @@ holds for every weighting and listing it names.
   - *Memory.* A weighting that depends on how one came is not a weighting of steps of the
     configurations it is given on (`Memory.not_of_steps`); it is one on configurations that keep
     what it needs (`Memory.of_kept`).
-  - *Loops.* Around a loop of two moves the courses double at every step (`Loop.courses_double`),
+  - *Loops.* Around a loop of two moves the courses double at every step (`Weighted.Loop.courses_double`),
     so a sum over every horizon has no finite value without something more.
 * **What every weighting of a listed domain sees.** The mass of an event on a listed domain
   follows inclusion under every weighting (`mass_mono`) and rises strictly where an entry of
@@ -536,7 +536,7 @@ theorem of_kept : ∀ a b,
 
 end Memory
 
-namespace Loop
+namespace Weighted.Loop
 
 /-- One configuration and two moves back to it. -/
 def courses (n : Nat) : Nat :=
@@ -550,7 +550,7 @@ theorem courses_double : ∀ n, courses n = 2 ^ n
     show 1 * courses n + (1 * courses n + 0) = 2 ^ n * 2
     rw [courses_double n, Nat.one_mul, Nat.add_zero, Nat.mul_two]
 
-end Loop
+end Weighted.Loop
 
 /-! ## What every weighting of a listed domain sees -/
 

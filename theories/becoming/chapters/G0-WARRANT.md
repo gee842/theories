@@ -54,7 +54,7 @@ The two formal readings each have defects. `Ceaseless` (formation at every step)
 
 **Natural-number scores and bounded scores.** [ProtectionPriorityRival.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) checks a constructed protection-versus-gain situation:
 
-- Living significance, the no-loss extension comparison C and the ordering of basic-condition priority can hold together, and that priority never trades the basic condition for any number of gains (`g0_leaves_ordering_open`, `priority_never_trades`);
+- Living significance, the no-loss extension comparison C and the ordering of basic-condition priority can hold together, and that priority never trades the basic condition for any number of gains (`livingSignificance_leaves_ordering_open`, `priority_never_trades`);
 - Living significance constrains only positive relevance, not ordering: it equally coexists with an ordering that satisfies C yet does trade. Basic-condition priority therefore does not follow from C; that it does "not follow from living significance" is trivial (`comparison_does_not_yield_priority`);
 - Every natural-number score satisfying C trades, at the `score 0 + 2` gains (`every_nat_score_trades`). What does the work is that a strictly increasing natural-number score adds at least one at each step;
 - A bounded rational score (protection is 1, `k` gains are `k/(k+1)`) satisfies C, never trades, and agrees with basic-condition priority on every pair of options (`ratio_agrees_with_priority`, `bounded_score_represents_priority`).
@@ -67,9 +67,9 @@ This situation therefore separates basic-condition priority from natural-number-
 
 **Partially completed on 2026-10-09, narrowed after independent review** ([record](../results/records/self-good-reachable-g0.md), [argument](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md), [review](../../../_process/research/2026-10-05-generative-foundation-review/history/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)).
 
-The starting point becomes the evaluator's own self-significance (`SelfGood` in Lean): its own living claims have significance from it.
+The starting point becomes the evaluator's own self-significance (`SelfSignificance` in Lean): its own living claims have significance from it.
 - **First step.** Self-significance plus unrestricted monotonicity (across self and other) reaches others at least as connected. Unrestricted monotonicity is equivalent to supervenience, a profile-monotone valuation and BI; BI is contested. A rival who acknowledges only "mine" is strictly inconsistent only if it accepts that "degree of connection is the complete ground".
-- **Second step.** Adding tolerance and graded connectivity reaches all reachable life. The result is a **standpoint-indexed, single-history instance** of living significance (`G0 (reach s) (sig s)` in Lean), and everything beyond self-significance is carried by tolerance.
+- **Second step.** Adding tolerance and graded connectivity reaches all reachable life. The result is a **standpoint-indexed, single-history instance** of living significance (`LivingSignificance (reach s) (sig s)` in Lean), and everything beyond self-significance is carried by tolerance.
 - **A bridge is still needed.** The unindexed living significance, across continuations, still needs a bridge from standpoint-relative to normative significance.
 - **Binding force depends on endorsement.** Whether a reason binds a position depends on whether that position endorses self-significance, tolerance (and BI); it is not independent of endorsement.
 - **The wall.** An evaluator of present purposes without self-significance is not bound; tolerance has not been defended against rivals with closed coordinates and weights set to zero; what is obtained is significance, not weight.

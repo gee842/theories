@@ -62,7 +62,7 @@ second. Ren confirmed arising and ceasing as the better names for it
   refuted (`World.rests_unrefuted`, `World.RestsFrom`), so neither arising nor ceasing recurs
   (`World.not_recurring_of_rests_unrefuted`), with no decision procedure: the stock does not rise,
   so that generation stops from some step on cannot be refuted (`falls_stop_unrefuted`,
-  `Web.generation_stops_unrefuted`; read through `stop_unrefuted_iff`), which refutes the arising
+  `Web.embodiedArising_stops_unrefuted`; read through `stop_unrefuted_iff`), which refutes the arising
   that ceasing leaves unrefuted under a covering list (`World.arising_unrefuted_covering`). Each
   premise is needed (`World.rests_needs`): a world
   burning fresh fuel keeps arising with infinitely many relata, two sides handing a
@@ -162,9 +162,9 @@ theorem amount_still_unrefuted {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤
 /-- That the arising of embodied members of a family balanced and dissipated on from step `T`
 on stops from some step on cannot be refuted: it is not the case that after every step from `T`
 on a later arising of one of them stays unrefuted (`stop_unrefuted_iff`). No
-decidedness is needed; `Web.generation_not_recurring_from` is the weaker form, that their arising
+decidedness is needed; `Web.embodiedArising_not_recurring_from` is the weaker form, that their arising
 does not recur. -/
-theorem Web.generation_stops_unrefuted {X : Type} {W : Web X X} {L : Flow X X} {ds : List X}
+theorem Web.embodiedArising_stops_unrefuted {X : Type} {W : Web X X} {L : Flow X X} {ds : List X}
     {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t x, M ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
@@ -316,7 +316,7 @@ theorem arising_unrefuted_covering {ds : List w.Relatum} {T : Nat}
 step on the active relata lie in one family, balanced and dissipated on at each of those steps,
 that the world rests from some step on cannot be refuted. No decision procedure, no finiteness
 of the world, no closure and no premise on other families or steps: that generation stops cannot
-be refuted (`Web.generation_stops_unrefuted`), and ceasing left unrefuted after every step would
+be refuted (`Web.embodiedArising_stops_unrefuted`), and ceasing left unrefuted after every step would
 leave arising unrefuted after every step (`arising_unrefuted_covering`). Neither arising nor
 ceasing recurs, the weaker form (`not_recurring_of_rests_unrefuted`). -/
 theorem rests_unrefuted_covering {ds : List w.Relatum} {T : Nat}
@@ -324,7 +324,7 @@ theorem rests_unrefuted_covering {ds : List w.Relatum} {T : Nat}
     (balances : ∀ t, T ≤ t → w.flow.BalancesOn w.web ds t)
     (dissipates : ∀ t, T ≤ t → w.flow.DissipatesOn ds t) (embodied : w.ArisingEmbodied) :
     ¬ ¬ ∃ N, w.RestsFrom N :=
-  have unrefuted := Web.generation_stops_unrefuted balances dissipates
+  have unrefuted := Web.embodiedArising_stops_unrefuted balances dissipates
   rests_unrefuted_iff.mpr
   ⟨fun arising => unrefuted fun M from_ none_ => arising M fun ⟨t, x, later, arises⟩ =>
       none_ ⟨t, x, later,

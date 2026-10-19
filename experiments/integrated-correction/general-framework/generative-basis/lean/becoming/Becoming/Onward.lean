@@ -43,7 +43,7 @@ with nothing selected, and what a run takes where nothing else gives one.
   (`decidedTest`, `decidedTest_finds`).
 * **What a run takes in general.** A run from every member of every family that keeps moving,
   asked of every process, is exactly the principle that a total relation has a sequence along it
-  from every start (`DependentSelection`; standard name: dependent choice) (`runs_iff_selection`).
+  from every start (`DependentChoice`; standard name: dependent choice) (`runs_iff_dependentChoice`).
 
 **Readings (the AI's, D43).**
 - Within finitely many configurations, whatever goes on without end does so by coming round: the
@@ -53,7 +53,7 @@ with nothing selected, and what a run takes where nothing else gives one.
   searched; asked of every process, that every configuration that can keep moving starts a run
   is exactly dependent choice.
 
-What is not derived: whether the core gives `DependentSelection` (a statement about the theory,
+What is not derived: whether the core gives `DependentChoice` (a statement about the theory,
 needing a model outside it); runs along unbounded configurations where the branching is finite
 and nothing is searched, given in `Becoming.Lasting` through `EitherThroughout` and a selection
 (`Lasting.lifting`); the laws along runs where nothing lists the configurations. No ethical
@@ -65,8 +65,8 @@ cycle, found by the pigeonhole principle (`revisits_within` of `Becoming.Recurre
 every length give no infinite path. König's lemma itself, for finite branching over unbounded
 configurations, is not stated here; it is not constructive in general, and weak König's lemma is
 equivalent to `LLPO` (Ishihara 1990; Bridges and Richman 1987), the principle `EitherThroughout`
-that `Becoming.Lasting` uses for lifting (`eitherThroughout_iff_llpoForDecided`). `DependentSelection` is the axiom of dependent choice (Bernays 1942), and
-`runs_iff_selection` states it as exactly what runs from every family that keeps moving take, at
+that `Becoming.Lasting` uses for lifting (`eitherThroughout_iff_llpoForDecided`). `DependentChoice` is the axiom of dependent choice (Bernays 1942), and
+`runs_iff_dependentChoice` states it as exactly what runs from every family that keeps moving take, at
 `Type 0`.
 -/
 
@@ -378,7 +378,7 @@ theorem decidedTest_finds {K : S → Prop} [∀ s a t, Decidable (P.step s a t)]
 
 /-- A total relation has a sequence along it from every start (standard name: dependent
 choice). -/
-def DependentSelection : Prop :=
+def DependentChoice : Prop :=
   ∀ (α : Type) (R : α → α → Prop), (∀ x, ∃ y, R x y) →
     ∀ x, ∃ f : Nat → α, f 0 = x ∧ ∀ n, R (f n) (f (n + 1))
 
@@ -393,10 +393,10 @@ theorem moveOf_eq {B : Type} : ∀ {o : Option B} (found : ∃ b, o = some b) {b
   | none, _, _, same => nomatch same
 
 /-- **A run from every member of every family that keeps moving, asked of every process, is
-exactly `DependentSelection`.** -/
-theorem runs_iff_selection :
+exactly `DependentChoice`.** -/
+theorem runs_iff_dependentChoice :
     (∀ (S A : Type) (P : Process S A) (K : S → Prop), KeepsMoving P K →
-      ∀ s, K s → ∃ r : Run P, r.state 0 = s ∧ ∀ n, K (r.state n)) ↔ DependentSelection :=
+      ∀ s, K s → ∃ r : Run P, r.state 0 = s ∧ ∀ n, K (r.state n)) ↔ DependentChoice :=
   ⟨fun runs α R total x =>
     match runs α Unit ⟨fun y _ z => R y z⟩ (fun _ => True)
         (fun y _ => match total y with

@@ -22,19 +22,19 @@ enough, and what labels of the feature along the course give, with no premise be
   its first `N - 1` values through the map, from itself on (Moore's bound,
   `Law.sameFuture_iff_within`), and labelled with its feature, rests in accord with the feature
   along every orbit, from the bound of the extrapolation given nothing on
-  (`Learnable.table_rests`). So a feature is learnable exactly where the extrapolation given some
+  (`Learnable.table_predicts`). So a feature is learnable exactly where the extrapolation given some
   table of at most `N` labelled names of `N - 1` values learns it (`Learnable.learnable_iff_table`).
 * **The labels needed.** Every value the feature takes from the step an extrapolation given a
-  table rests on is a label of the table (`Learnable.label_of_rests`); where the law leaves every
+  table rests on is a label of the table (`Learnable.label_of_predicts`); where the law leaves every
   configuration unchanged, every value the feature takes is (`Learnable.labels_of_still`).
 * **Labels along the course.** Where the map also carries the feature, every feature is
-  learned by the extrapolation given nothing, from the bound on (`Learnable.rests_with_labels`, an
-  instance of `Learnable.rests_through`), and, unrolled, it proposes the feature at every step ahead
+  learned by the extrapolation given nothing, from the bound on (`Learnable.predicts_with_labels`, an
+  instance of `Learnable.predicts_through`), and, unrolled, it proposes the feature at every step ahead
   (`Learnable.ahead_with_labels`, an instance of `Learnable.ahead_fixes`): in a world a list holds,
   the labels before the bound fix every later one. Over every course no prefix fixes the next
   value (`Learning.no_prefix_fixes_next`); here a list holds the world.
-* **Along runs** (`LearnableRuns.table_rests`, `LearnableRuns.learnable_iff_table`,
-  `LearnableRuns.labels_of_still`, `LearnableRuns.rests_with_labels`,
+* **Along runs** (`LearnableRuns.table_predicts`, `LearnableRuns.learnable_iff_table`,
+  `LearnableRuns.labels_of_still`, `LearnableRuns.predicts_with_labels`,
   `LearnableRuns.ahead_with_labels`), through `Becoming.LearnableRuns`.
 
 So what a learnable feature adds to the prefix is a finite object: at most `N` labelled names of
@@ -172,10 +172,10 @@ theorem begins_entryOf {next : S → S} {reg : S → R} {val : S → V} {l : Lis
 the same future through the map have features agreeing from some step on, the extrapolation given
 the table of the world rests in accord with the feature along every orbit, from the bound of the
 extrapolation given nothing on. -/
-theorem table_rests {next : S → S} {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l)
+theorem table_predicts {next : S → S} {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l)
     (agree : ∀ s s', Law.SameFuture next reg s s' →
       ∃ T, ∀ t, T ≤ t → val (Law.orbit next s t) = val (Law.orbit next s' t)) (s : S) :
-    RestsFrom next reg val (byTable (tableOf next reg val l)) s
+    PredictsFrom next reg val (byTable (tableOf next reg val l)) s
       (l.length + (l.length + l.length - 1) * Learning.tri l.length) :=
   have closed : ∀ x, x ∈ l → next x ∈ l := fun x _ => world (next x)
   fun t late =>
@@ -221,17 +221,17 @@ given some table of at most `N` labelled names, each of `N - 1` values, rests in
 every configuration; the table of the world is one where any is. -/
 theorem learnable_iff_table {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) :
-    (∃ pred : List R → Option V, ∀ s, Rests next reg val pred s) ↔
+    (∃ pred : List R → Option V, ∀ s, Predicts next reg val pred s) ↔
       ∃ tbl : List (List R × V), tbl.length ≤ l.length ∧ (∀ e, e ∈ tbl → e.1.length = l.length - 1) ∧
-        ∀ s, Rests next reg val (byTable tbl) s :=
+        ∀ s, Predicts next reg val (byTable tbl) s :=
   ⟨fun learnable => ⟨tableOf next reg val l, Nat.le_of_eq (tableOf_length next reg val l),
-      tableOf_names next reg val l, fun s => ⟨_, table_rests world ((learnable_iff world).mp learnable) s⟩⟩,
+      tableOf_names next reg val l, fun s => ⟨_, table_predicts world ((learnable_iff world).mp learnable) s⟩⟩,
    fun ⟨tbl, _, _, rests⟩ => ⟨byTable tbl, rests⟩⟩
 
 /-- **The labels needed.** Every value the feature takes from the step an extrapolation given a
 table rests on is a label of an entry of the table. -/
-theorem label_of_rests {next : S → S} {reg : S → R} {val : S → V} {tbl : List (List R × V)}
-    {s : S} {T : Nat} (rests : RestsFrom next reg val (byTable tbl) s T) :
+theorem label_of_predicts {next : S → S} {reg : S → R} {val : S → V} {tbl : List (List R × V)}
+    {s : S} {T : Nat} (rests : PredictsFrom next reg val (byTable tbl) s T) :
     ∀ t, T ≤ t → ∃ e, e ∈ tbl ∧ e.2 = val (Law.orbit next s t) :=
   fun t late =>
     match found : Identification.firstFit (Begins (Learning.ahead (Learning.byElimination Learning.lassos)
@@ -244,10 +244,10 @@ theorem label_of_rests {next : S → S} {reg : S → R} {val : S → V} {tbl : L
 label.** An extrapolation given a table resting in accord with the feature at every configuration
 has every value of the feature among the table's labels. -/
 theorem labels_of_still {next : S → S} (still : ∀ s, next s = s) {reg : S → R} {val : S → V}
-    {tbl : List (List R × V)} (rests : ∀ s, Rests next reg val (byTable tbl) s) (s : S) :
+    {tbl : List (List R × V)} (rests : ∀ s, Predicts next reg val (byTable tbl) s) (s : S) :
     ∃ e, e ∈ tbl ∧ e.2 = val s :=
   match rests s with
-  | ⟨T, at_s⟩ => match label_of_rests at_s T (Nat.le_refl T) with
+  | ⟨T, at_s⟩ => match label_of_predicts at_s T (Nat.le_refl T) with
     | ⟨e, mem, label⟩ => ⟨e, mem, label.trans (congrArg val (orbit_of_still (still s) T))⟩
 
 end Table
@@ -261,13 +261,13 @@ variable {S : Type u} {R : Type v} {V : Type w} [DecidableEq R] [DecidableEq V]
 /-- **With the feature carried by the map along the course, every feature is learned given
 nothing.** In a world a list holds, the extrapolation by elimination over the lasso candidates,
 reading the map paired with the feature, rests in accord with the feature from the bound on. An
-instance of `rests_through`. -/
-theorem rests_with_labels {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
+instance of `predicts_through`. -/
+theorem predicts_with_labels {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
     (reg : S → R) (val : S → V) :
-    RestsFrom next (fun x => (reg x, val x)) val
+    PredictsFrom next (fun x => (reg x, val x)) val
       (fun r => (Learning.byElimination Learning.lassos r).map Prod.snd) s
       (l.length + (l.length + l.length - 1) * Learning.tri l.length) :=
-  rests_through held (reg := fun x => (reg x, val x)) (g := Prod.snd) fun _ => rfl
+  predicts_through held (reg := fun x => (reg x, val x)) (g := Prod.snd) fun _ => rfl
 
 /-- **The labels before the bound fix every later one.** In a world a list holds, from the bound
 on, the extrapolation by elimination over the lasso candidates, reading the map paired with the
@@ -296,13 +296,13 @@ variable {S : Type} {R : Type} {V : Type} [DecidableEq R] {next : S → S}
 /-- **`N` names of `N - 1` values are enough, along runs.** In a world a list holds, where runs
 beginning alike in the frame have features agreeing from some step on, the extrapolation given the
 table of the world rests in accord with the feature along every run of the law. -/
-theorem table_rests {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l)
+theorem table_predicts {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l)
     (agree : ∀ r r' : Run (Law.process next),
       Alike (Law.frameBy next reg) (Law.frameBy next reg) (r.state 0) (r'.state 0) →
         ∃ T, ∀ t, T ≤ t → val (r.state t) = val (r'.state t))
     (r : Run (Law.process next)) :
-    Rests reg val (Learnable.byTable (Learnable.tableOf next reg val l)) r :=
-  (rests_iff r).mpr ⟨_, Learnable.table_rests world
+    Predicts reg val (Learnable.byTable (Learnable.tableOf next reg val l)) r :=
+  (predicts_iff r).mpr ⟨_, Learnable.table_predicts world
     (fun s s' same => match agree (Law.run next s) (Law.run next s') (Law.alike_iff_sameFuture.mpr same) with
       | ⟨T, agrees⟩ => ⟨T, fun t late =>
         (congrArg val (Branching.law_run_state (Law.run next s) t)).symm.trans
@@ -312,22 +312,22 @@ theorem table_rests {reg : S → R} {val : S → V} {l : List S} (world : ∀ s,
 /-- **Learnable along runs exactly where learned from at most `N` labelled names of `N - 1`
 values.** -/
 theorem learnable_iff_table {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l) :
-    (∃ pred : List R → Option V, ∀ r : Run (Law.process next), Rests reg val pred r) ↔
+    (∃ pred : List R → Option V, ∀ r : Run (Law.process next), Predicts reg val pred r) ↔
       ∃ tbl : List (List R × V), tbl.length ≤ l.length ∧ (∀ e, e ∈ tbl → e.1.length = l.length - 1) ∧
-        ∀ r : Run (Law.process next), Rests reg val (Learnable.byTable tbl) r :=
+        ∀ r : Run (Law.process next), Predicts reg val (Learnable.byTable tbl) r :=
   ⟨fun ⟨pred, rests⟩ =>
     match (Learnable.learnable_iff_table (next := next) (reg := reg) (val := val) world).mp
-        ⟨pred, fun s => (rests_iff (Law.run next s)).mp (rests (Law.run next s))⟩ with
-    | ⟨tbl, few, names, rests'⟩ => ⟨tbl, few, names, fun r => (rests_iff r).mpr (rests' (r.state 0))⟩,
+        ⟨pred, fun s => (predicts_iff (Law.run next s)).mp (rests (Law.run next s))⟩ with
+    | ⟨tbl, few, names, rests'⟩ => ⟨tbl, few, names, fun r => (predicts_iff r).mpr (rests' (r.state 0))⟩,
    fun ⟨tbl, _, _, rests⟩ => ⟨Learnable.byTable tbl, rests⟩⟩
 
 /-- **Where the law leaves every configuration unchanged, every value the feature takes is a
 label**, of a table whose extrapolation rests in accord with the feature along every run. -/
 theorem labels_of_still (still : ∀ s, next s = s) {reg : S → R} {val : S → V}
     {tbl : List (List R × V)}
-    (rests : ∀ r : Run (Law.process next), Rests reg val (Learnable.byTable tbl) r) (s : S) :
+    (rests : ∀ r : Run (Law.process next), Predicts reg val (Learnable.byTable tbl) r) (s : S) :
     ∃ e, e ∈ tbl ∧ e.2 = val s :=
-  Learnable.labels_of_still still (fun s => (rests_iff (Law.run next s)).mp (rests (Law.run next s))) s
+  Learnable.labels_of_still still (fun s => (predicts_iff (Law.run next s)).mp (rests (Law.run next s))) s
 
 end Table
 
@@ -337,13 +337,13 @@ variable {S : Type u} {R : Type v} {V : Type w} [DecidableEq R] [DecidableEq V] 
 
 /-- **With the feature carried by the map along a run, every feature is learned given nothing**, along
 every run of the law a list holds. -/
-theorem rests_with_labels (r : Run (Law.process next)) {l : List S} (held : ∀ n, r.state n ∈ l)
+theorem predicts_with_labels (r : Run (Law.process next)) {l : List S} (held : ∀ n, r.state n ∈ l)
     (reg : S → R) (val : S → V) :
-    RestsFrom (fun x => (reg x, val x)) val
+    PredictsFrom (fun x => (reg x, val x)) val
       (fun x => (Learning.byElimination Learning.lassos x).map Prod.snd) r
       (l.length + (l.length + l.length - 1) * Learning.tri l.length) :=
-  (restsFrom_iff r _).mpr
-    (Learnable.rests_with_labels
+  (predictsFrom_iff r _).mpr
+    (Learnable.predicts_with_labels
       (fun n => Eq.subst (motive := fun x => x ∈ l) (Branching.law_run_state r n) (held n)) reg val)
 
 /-- **The labels before the bound fix every later one, along a run.** Along every run of the law a

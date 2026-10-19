@@ -12,7 +12,7 @@ import Becoming.ContextArrivalTraces
 import Becoming.Quantum
 import Becoming.Renewal
 import Becoming.Dependence
-import Becoming.Return
+import Becoming.Restoration
 import Becoming.Horizon
 import Becoming.Joint
 import Becoming.Experiment
@@ -31,7 +31,7 @@ import Becoming.Transmission
 import Becoming.Succession
 import Becoming.Attraction
 import Becoming.Substitution
-import Becoming.Generation
+import Becoming.Arising
 import Becoming.Flow
 import Becoming.Stock
 import Becoming.Change
@@ -186,7 +186,7 @@ import Becoming.PlaceTransitionNets
 import Becoming.SharedCodes
 import Becoming.ExchangePremises
 import Becoming.Readings
-import Becoming.Coupling
+import Becoming.MoveFormation
 import Becoming.Sensitivity
 import Becoming.Tail
 import Becoming.Courses
@@ -291,7 +291,7 @@ import Becoming.Bundles
 import Becoming.ActivationCapacity
 import Becoming.Narrowing
 import Becoming.NarrowingRuns
-import Becoming.PositiveGround
+import Becoming.SecuredContent
 import Becoming.ProfileReach
 import Becoming.RenewalBound
 import Becoming.Handoff
@@ -376,7 +376,7 @@ read from the world's side in `Becoming.Labelled`.
 * `Becoming.Dependence` (L3): dependence forms, holds, breaks and dissolves across
   steps; the outcomes of a loss where activity needs support; stepwise readings of
   events and their relations; the arithmetic the layers share.
-* `Becoming.Return` (L3): renewal graded by the time to return; readings over cycles.
+* `Becoming.Restoration` (L3): renewal graded by the time to return; readings over cycles.
 * `Becoming.Horizon` (L3): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
   amounts is decided step by step. What a finite history refutes, with no premise, proved as
@@ -477,10 +477,10 @@ read from the world's side in `Becoming.Labelled`.
   a condition persists and still consumes on the whole-run reading, while the stepwise
   reading credits it until the sustaining formation loses support and withholds it from
   then until it switches.
-* `Becoming.Generation` (L3): formations arise. Where arising depletes a finite family
-  of conditions, unceasing generation needs their renewal to recur; renewal does not
-  imply generation; substitution among unrenewed conditions defers the end; and
-  dissipation ends generation, while a closed cycle need not.
+* `Becoming.Arising` (L3): formations arise. Where arising depletes a finite family
+  of conditions, unceasing arising needs their renewal to recur; renewal does not
+  imply arising; substitution among unrenewed conditions defers the end; and
+  dissipation ends unceasing arising, while a closed cycle need not.
 * `Becoming.Flow` (L3): conditions as amounts that formations take and give. Uptake at
   arbitrarily late steps, as of formations that take arising without end, needs
   replenishment at arbitrarily late steps;
@@ -563,7 +563,7 @@ read from the world's side in `Becoming.Labelled`.
   is open at arbitrarily late steps and, enclosed around, draws in. Across a step
   dissipated on, a family's members fall by at least as much as they rise, and by one
   more for each formation taking from it: a member rising comes with another falling in
-  the same exchange, and the depletion that `Becoming.Generation` supplies as a premise
+  the same exchange, and the depletion that `Becoming.Arising` supplies as a premise
   follows for an event at whose steps the family is dissipated on and taken from.
 * `Becoming.Locality` (L3): the laws of one step, with their condition inside them. Each
   holds of every world: where a premise selected for every step was used, the law states the
@@ -913,7 +913,7 @@ read from the world's side in `Becoming.Labelled`.
   it. Renewal over a region of conditions is renewal at the step when the region covers
   every condition the formation takes part in, keeps its own support when it covers what
   it requires, and over a region omitting a requirement can lose its own support.
-* `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
+* `Becoming.Metaethics` (L4): valuation and significance: the premise card,
   living significance's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
 * `Becoming.Lifting` (L4): the lifting rule L on a frame's responses: C lifts, P and N hold
@@ -926,7 +926,7 @@ read from the world's side in `Becoming.Labelled`.
   occurrence.
 * `Becoming.ActiveReading` (L4): the reading of every active event beside the whole-run reading
   (no premise): the whole-run reading withholds a consumer's events, and living significance on it
-  credits exactly the active events of non-consuming formations (`g0_wholeRun_iff`); under the
+  credits exactly the active events of non-consuming formations (`livingSignificance_wholeRun_iff`); under the
   reading of every active event an overdrawing formation leaves the two courses unranked, so C
   admits a comparison preferring the course with it (`overdraw_unranked`,
   `overdraw_admits_occurrence`), while sharing still extends winning by consumption
@@ -1448,11 +1448,11 @@ read from the world's side in `Becoming.Labelled`.
   restraint and sharing as the whole-run reading does and withholds no event; it leaves
   a formation that adds no possibility unranked against its absence, where both
   readings of `living` rank its presence higher. The readings are the AI's, adopted on Ren's
-  delegation of 15 October 2026. After this audit Ren folded living significance (`G0`) (11 October 2026): it is a condition
+  delegation of 15 October 2026. After this audit Ren folded living significance (`LivingSignificance`) (11 October 2026): it is a condition
   with no axiom in the theory without axiom and a theorem of the continuation condition in the conditional section (since 16 October 2026,
   a theorem with the continuation condition as the condition of chapter §6.15). Ren then folded positive relevance
   into significance, with which living significance is the continuation condition on realized living content
-  (`g0_relevance_iff`), and left the comparison of courses to the AI, which compares courses on
+  (`livingSignificance_relevance_iff`), and left the comparison of courses to the AI, which compares courses on
   possibilities.
 
 * `Becoming.Lexical` (L4): the lexical order of configurations by basic claims, then gains
@@ -1515,12 +1515,12 @@ read from the world's side in `Becoming.Labelled`.
   and, where it holds a rule, its greatest safe answer, the only one; along every run observing
   a candidate rule the answer from the record is the greatest safe answer and asserts the
   observed rule's values; re-encoding transports what the belief settles.
-* `Becoming.PositiveGround` (L4): certain positive ground with open future form: one response
+* `Becoming.SecuredContent` (L4): secured new content with open future form: one response
   can secure new living content in each admitted continuation without one fixed content in all;
   a finite signed integral certifies it where each positive occurrence means such content; with
   D every position with access has the reason, the least such reason fixed by access alone.
   Ported from `PositiveGroundUncertainty` and `PositionedPositiveReason` (F3J).
-* `Becoming.ProfileReach` (L4): how a standpoint's own good reaches beyond its own region
+* `Becoming.ProfileReach` (L4): how a standpoint's self-significance reaches beyond its own region
   through formed profiles: S0 with monotonicity reaches whatever is at least as connected;
   tolerance is relational neutrality on profiles, so `Valuation.reaches` carries significance
   along chains of small steps; threshold, present-aim, closed-self and persistence rivals mark
@@ -1959,7 +1959,7 @@ read from the world's side in `Becoming.Labelled`.
   significance from a standpoint holds within a boundary only by holding for everything, a
   restatement of `Becoming.Boundaries`. The readings are the AI's, adopted on Ren's delegation of 15
   October 2026.
-* `Becoming.Coupling` (L4): where a move is formed, with no premise beyond what each law names. In a
+* `Becoming.MoveFormation` (L4): where a move is formed, with no premise beyond what each law names. In a
   part and the rest coupled by one move formed within the whole, the move is the part's exactly
   where it is a policy of the part, the rest's exactly where it is a policy of the rest, and both
   only where it is the same everywhere; an own move closes the part and is the rest's input. Every
@@ -2024,7 +2024,7 @@ read from the world's side in `Becoming.Labelled`.
   merges, needing openness) hold for every such configuration with no run given. Where a test
   recognizes, among enumerated moves, a step staying in the family, a run is built by search,
   with no selection. Asked of every process, a run from every member of every family that keeps
-  moving is exactly dependent choice (`DependentSelection`).
+  moving is exactly dependent choice (`DependentChoice`).
 * `Becoming.Typicality` (L4): what counting says of the course that happens, with no premise.
   With natural weights p and q on two values, the squared deviations (q·a - p·b)² of the courses
   of n steps, weighted, add up exactly to n·p·q·(p + q)^n, so the courses deviating by at least d
@@ -2061,7 +2061,7 @@ read from the world's side in `Becoming.Labelled`.
   whose other hypotheses read its family through membership only and whose conclusion is a
   refutation holds with no `Distinct` (`not_of_listsOnce`), and with no decided identity except
   where the law's own statement takes `[DecidableEq]` (the fed-from-beyond and boundary laws): the
-  fed-from-beyond laws of `Becoming.Continuation` (`Web.generation_fed_from_beyond_listing` among
+  fed-from-beyond laws of `Becoming.Continuation` (`Web.embodiedArising_fed_from_beyond_listing` among
   them), the opening, drawing-in and rest laws of `Becoming.Dissipation` and `Becoming.Roles`,
   `Flow.taking_needs_refinement_listing`, and the boundary laws of `Becoming.Standpoints`.
 * `Becoming.Regulation` (L4): a level held from both sides, and a level read late, with no premise
@@ -2277,7 +2277,7 @@ read from the world's side in `Becoming.Labelled`.
   reading stays silent where the map merges two feature values (`SoundWithin.silent`); in the
   channel model the signal alone is read by no exact reading and the signal with a reference is
   (`signal_no_exact`, `paired_exact`); on runs, an extrapolation rests on the feature from a step
-  exactly where it reads the prefix exactly from then on (`Runs.exact_iff_restsFrom`).
+  exactly where it reads the prefix exactly from then on (`Runs.exact_iff_predictsFrom`).
 * `Becoming.CodeAcquisition` (L4): acquiring a two-primitive code from probe records (supplied
   code, probes and stock): the probe records give the code exactly and so every expression
   (`acquired_exact`, `acquired_every_expression`), while the primitive probes alone are lumped and
@@ -2294,10 +2294,10 @@ read from the world's side in `Becoming.Labelled`.
 * `Becoming.ResponseLearning` (L4): forming an operation from another formation's actual responses
   (supplied programs, lessons and stock): a lesson keeps the pair's stock plus drawn and the
   receiver sees only responses (`lesson_stock`, `learn_through_interface`); the program is
-  reconstructed and kept in every generation (`reconstructs_program`, `every_generation_holds`),
-  and so is a lost distinction, whatever the stock (`distinction_lost_every_generation`,
+  reconstructed and kept in every generation (`reconstructs_program`, `every_cohort_holds`),
+  and so is a lost distinction, whatever the stock (`distinction_lost_every_cohort`,
   `stock_keeps_content`); succession is a law whose runs pass through the generations
-  (`run_generation`).
+  (`run_cohort`).
 * `Becoming.LearnedGrouping` (L4): received transitions form the grouping through which a formed
   operation reads an utterance (supplied sounds, decoder and encounters): grouping recovers the
   words of every two-word sequence exactly when six bond values hold (`two_word_iff`), which the

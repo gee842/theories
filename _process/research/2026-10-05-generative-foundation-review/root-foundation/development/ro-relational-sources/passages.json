@@ -1489,7 +1489,7 @@
     "Becoming.Hexagram.waxWane_returns",
     "Becoming.Flow.Balances.runs_down",
     "Becoming.Flow.uptake_needs_replenishment",
-    "Becoming.Web.dissipation_generation_not_recurring",
+    "Becoming.Web.dissipation_arising_not_recurring",
     "Becoming.Hexagram.waxWane_moves",
     "Becoming.Hexagram.run_never_rests",
     "Becoming.Hexagram.never_comes_to_rest",
@@ -1517,7 +1517,7 @@
     }
    ],
    "relational": "Completion is not a resting place: stopping at the end brings disorder; the unfinished is what does not carry its course through to the end.",
-   "reading": "AI读法：已有图谱映射了既济\"刚柔正而位当\"与序卦\"受之以未济；终焉\"；\"终止则乱\"与\"不续终\"未映射。脊柱：确定之律的运行静止，当且仅当它到达一个律不改变的组态（rests_iff）；消息之律下没有这样的组态，六步即全变（six_steps），每个组态都回来（waxWane_returns），所以既济不是静止处。在流上：耗散之下存量每步下降（Balances.runs_down），持续摄取需要持续补充（uptake_needs_replenishment），只耗散而不恢复则生成不能不息（dissipation_generation_not_recurring），\"终止则乱\"即停止补充的展开衰退。消息之律无不动点，由 Y5 写成：没有构形为其不动点（waxWane_moves），其运行在任何一步都不止，也不自某步起止（run_never_rests、never_comes_to_rest），一爻之变的历程亦然（changes_run_never_rests）。",
+   "reading": "AI读法：已有图谱映射了既济\"刚柔正而位当\"与序卦\"受之以未济；终焉\"；\"终止则乱\"与\"不续终\"未映射。脊柱：确定之律的运行静止，当且仅当它到达一个律不改变的组态（rests_iff）；消息之律下没有这样的组态，六步即全变（six_steps），每个组态都回来（waxWane_returns），所以既济不是静止处。在流上：耗散之下存量每步下降（Balances.runs_down），持续摄取需要持续补充（uptake_needs_replenishment），只耗散而不恢复则生成不能不息（dissipation_arising_not_recurring），\"终止则乱\"即停止补充的展开衰退。消息之律无不动点，由 Y5 写成：没有构形为其不动点（waxWane_moves），其运行在任何一步都不止，也不自某步起止（run_never_rests、never_comes_to_rest），一爻之变的历程亦然（changes_run_never_rests）。",
    "reading_en": "AI reading: under the hexagram law no configuration is a rest (six steps change every line), so 既濟 is no resting place; on flows, stopping replenishment runs the stock down and generation cannot be unceasing. \"終止則亂\" matches.",
    "mapper": "yi",
    "gap": {
@@ -1531,7 +1531,7 @@
     "why_it_matters": "It states in one lemma what 既濟 \"終止則亂\" and Cheng Yi’s 无常止 claim of the hexagram world; the spine has it only through six_steps. Small.",
     "closed": "Y5 (Becoming.HexagramSequences): waxWane_moves, run_never_rests, never_comes_to_rest, changes_run_never_rests."
    },
-   "corrected": "Y5 stated the lemma the reading named as a gap"
+   "corrected": "Y5 stated the lemma the reading named as a gap; names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "cy-jiji-wuchangzhi",
@@ -1772,7 +1772,7 @@
    "declarations": [
     "Becoming.Web.significance_undetermined",
     "Becoming.Unrestricted",
-    "Becoming.g0_of_unrestricted",
+    "Becoming.livingSignificance_of_unrestricted",
     "Becoming.break_carried_nowhere"
    ],
    "records": [
@@ -1786,9 +1786,10 @@
     }
    ],
    "relational": "The accumulated conduct of a household is said to bring it a surplus of blessing or of calamity: a fixed correspondence from conduct to later fortune across generations.",
-   "reading": "AI读法：这是一种报应式的对应：积善必有余庆。脊柱：所表示的动力学不推出生生之意义（significance_undetermined）；意义只在延续条件之下作为定理（g0_of_unrestricted 以 Unrestricted 为前提），而且即便在其下，也没有一条律把\"善\"的积累映射为\"庆\"的回报。累积在阈值以下不被读出（break_carried_nowhere）这一结构可以支持\"积\"的部分，但\"必有余庆/余殃\"的必然回报不是关系所给，是断言的道德秩序。分歧。",
+   "reading": "AI读法：这是一种报应式的对应：积善必有余庆。脊柱：所表示的动力学不推出生生之意义（significance_undetermined）；意义只在延续条件之下作为定理（livingSignificance_of_unrestricted 以 Unrestricted 为前提），而且即便在其下，也没有一条律把\"善\"的积累映射为\"庆\"的回报。累积在阈值以下不被读出（break_carried_nowhere）这一结构可以支持\"积\"的部分，但\"必有余庆/余殃\"的必然回报不是关系所给，是断言的道德秩序。分歧。",
    "reading_en": "AI reading: a necessary return of blessing for accumulated good is an asserted moral order; the spine’s dynamics fix no significance, and even under the continuation condition no law maps accumulated good to later fortune. Only the accumulation structure carries.",
-   "mapper": "yi"
+   "mapper": "yi",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "wenyan-jian",
@@ -1835,7 +1836,7 @@
    "declarations": [
     "Becoming.Web.significance_undetermined",
     "Becoming.Unrestricted",
-    "Becoming.g0_of_unrestricted",
+    "Becoming.livingSignificance_of_unrestricted",
     "Becoming.Hexagram.waxWane_complement"
    ],
    "records": [
@@ -1865,9 +1866,10 @@
     }
    ],
    "relational": "The four words of the judgement of 乾 (元亨利貞) are read as four virtues of the cosmos and of the 君子: goodness, beauty, rightness and the trunk of affairs. Value is read into the beginning of the course.",
-   "reading": "AI读法：元亨利贞在经文中是占断之辞；文言把它读成四德，把善、嘉、义放进宇宙之始。这是\"把价值读入展开\"，脊柱明确不这样做：动力学不决定意义（significance_undetermined），意义与伦理只在延续条件下作为定理（Unrestricted、g0_of_unrestricted），而延续条件本身不排序。经与传是不同层，把文言之读回填为卦辞原义是越层。程颐自己把四德限于乾坤（见 cy-side-qiankun）。分歧。",
+   "reading": "AI读法：元亨利贞在经文中是占断之辞；文言把它读成四德，把善、嘉、义放进宇宙之始。这是\"把价值读入展开\"，脊柱明确不这样做：动力学不决定意义（significance_undetermined），意义与伦理只在延续条件下作为定理（Unrestricted、livingSignificance_of_unrestricted），而延续条件本身不排序。经与传是不同层，把文言之读回填为卦辞原义是越层。程颐自己把四德限于乾坤（见 cy-side-qiankun）。分歧。",
    "reading_en": "AI reading: reading 元亨利貞 as four virtues puts value into the beginning of the course; the spine’s dynamics fix no significance, and ethics comes only as theorems under the continuation condition. The 經 formula and the 傳 reading are different layers.",
-   "mapper": "yi"
+   "mapper": "yi",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "cy-side-qiankun",
@@ -2399,7 +2401,7 @@
     "Becoming.Law.drawn_iff_not_returns",
     "Becoming.Law.lost_stays",
     "Becoming.Diagonal.Unfolds.never_returns",
-    "Becoming.Widening.closing_needs_less"
+    "Becoming.LoopReturn.closing_needs_less"
    ],
    "records": [
     "recurrence-without-premise",
@@ -2426,7 +2428,7 @@
     }
    ],
    "relational": "Return is a relation of a configuration to its own course; weakness is read here as a link giving back less than it receives.",
-   "reading": "AI 的读法：“反者道之动”若读作“道的运动是返回”，脊柱给出它成立的确切范围：在有限多配置之内，一个律什么都不合并恰当每个配置都返回（`Law.lossless_iff_returns`），而“撤销即继续前行”（`Law.Returns.undo`）；每个确定的律恰吸入不返回者（`Law.drawn_iff_not_returns`），丧失的可能保持丧失（`Law.lost_stays`）；自我补全的展开族永不返回（`Diagonal.Unfolds.never_returns`）。所以返回不是道的普遍运动，而是无损失之处的运动。若把“反”读作“相反、转向对立面”，则对应另见第五十八章条目。“弱者道之用”的一个可检验读法（AI 的，较弱）：差异经环路闭合，恰需某一环节返还少于所受（`Widening.closing_needs_less`），即“弱”使回归可能。郭店本作“返也者，道○（动）也”，帛书乙作“反也者道之動也”。",
+   "reading": "AI 的读法：“反者道之动”若读作“道的运动是返回”，脊柱给出它成立的确切范围：在有限多配置之内，一个律什么都不合并恰当每个配置都返回（`Law.lossless_iff_returns`），而“撤销即继续前行”（`Law.Returns.undo`）；每个确定的律恰吸入不返回者（`Law.drawn_iff_not_returns`），丧失的可能保持丧失（`Law.lost_stays`）；自我补全的展开族永不返回（`Diagonal.Unfolds.never_returns`）。所以返回不是道的普遍运动，而是无损失之处的运动。若把“反”读作“相反、转向对立面”，则对应另见第五十八章条目。“弱者道之用”的一个可检验读法（AI 的，较弱）：差异经环路闭合，恰需某一环节返还少于所受（`LoopReturn.closing_needs_less`），即“弱”使回归可能。郭店本作“返也者，道○（动）也”，帛书乙作“反也者道之動也”。",
    "reading_en": "AI reading: return is the motion exactly where a law loses nothing within finitely many configurations; where it merges, what is drawn never returns, and an unfolding family never returns, so 'return' is scoped rather than universal; a weaker reading takes 'weakness' as the link giving back less that closing needs.",
    "mapper": "lao",
    "layer": "经",
@@ -2443,7 +2445,8 @@
      "fragment": "反也者道之動也",
      "note": "帛书乙本。"
     }
-   ]
+   ],
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "lao-40-you-sheng-yu-wu",
@@ -2580,8 +2583,8 @@
    "declarations": [
     "Becoming.Flow.restores",
     "Becoming.Flow.excess_lowers",
-    "Becoming.Widening.closes_within",
-    "Becoming.Widening.closing_needs_less",
+    "Becoming.LoopReturn.closes_within",
+    "Becoming.LoopReturn.closing_needs_less",
     "Becoming.Flow.withinGap_iff_between",
     "Becoming.Flow.settles",
     "Becoming.Flow.stays_between_at",
@@ -2616,7 +2619,7 @@
     }
    ],
    "relational": "和 is the joint outcome of two opposed bearings (负阴, 抱阳) through 冲气; no single side gives it.",
-   "reading": "AI 的读法：经文说万物负阴抱阳，以冲气为和；atlas 提醒这不是“任意阴加任意阳便和”的相加公式（LL-R007）。一个结构读法（AI 的）：和是两种相反作用经由中介而保持的状态。脊柱有单向的部分：在平衡下，凡水平不低于起点处都有共同净给予，则水平在确定步数内恢复到 m 以上（`Flow.restores`）；共同过度拿取每步至少降低一单位（`Flow.excess_lowers`）；差异经环路闭合需要返还少于所受的环节（`Widening.closing_needs_less`、`Widening.closes_within`）。双向调节（高者抑、低者举）与其失败方式已证（`Becoming.Regulation`，见第七十七章条）：两种相反作用各以与 m 的距离为界时，水平在界内永不越过 m（`Flow.stays_between_at`），与偏离相反时定于 m（`Flow.settles`）；越界则越过，可以永不到 m（`Overshooting.never_at`）。所以“和”在此读作受两侧有界的相反作用所保持的水平，是一种耦合的性质。",
+   "reading": "AI 的读法：经文说万物负阴抱阳，以冲气为和；atlas 提醒这不是“任意阴加任意阳便和”的相加公式（LL-R007）。一个结构读法（AI 的）：和是两种相反作用经由中介而保持的状态。脊柱有单向的部分：在平衡下，凡水平不低于起点处都有共同净给予，则水平在确定步数内恢复到 m 以上（`Flow.restores`）；共同过度拿取每步至少降低一单位（`Flow.excess_lowers`）；差异经环路闭合需要返还少于所受的环节（`LoopReturn.closing_needs_less`、`LoopReturn.closes_within`）。双向调节（高者抑、低者举）与其失败方式已证（`Becoming.Regulation`，见第七十七章条）：两种相反作用各以与 m 的距离为界时，水平在界内永不越过 m（`Flow.stays_between_at`），与偏离相反时定于 m（`Flow.settles`）；越界则越过，可以永不到 m（`Overshooting.never_at`）。所以“和”在此读作受两侧有界的相反作用所保持的水平，是一种耦合的性质。",
    "reading_en": "AI reading: read as a state kept by two opposed actions through a medium, 'harmony' is the level two-sided regulation keeps (Becoming.Regulation, under lao-77-tian-zhi-dao): bounded by the gap on both sides the level never crosses m, and opposing it settles there; beyond the bound it crosses and can miss m for ever. The one-sided counterparts (restoration from below, excess lowering, difference closing on a loop) are its parts.",
    "mapper": "lao",
    "layer": "经",
@@ -2630,7 +2633,7 @@
     "why_it_matters": "It would give 冲气以为和 a checked reading as regulation by opposed couplings, without reading 和 as a property of the whole unfolding.",
     "closed": "RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), as stated for one condition, with the bound read as no overshoot: the exchange is within the gap to m on both sides exactly where the next level lies between m and the level (Flow.withinGap_iff_between); with it and opposing on both sides the level is m from T plus its gap at T on (Flow.regulates, Flow.settles); (iii) is not needed, since at m the bound itself keeps the level at m (Flow.withinGap_iff_of_at). Both failures are exact: beyond the bound an opposing exchange crosses m and a witness alternates without end (Flow.crosses_of_above, Regulation.Overshooting.oscillates); with one side only the premise of Flow.restores holds and the level stays above m (Regulation.OneSided.above)."
    },
-   "corrected": "RG proved the two-sided law the reading named as a gap (stated under lao-77-tian-zhi-dao)"
+   "corrected": "RG proved the two-sided law the reading named as a gap (stated under lao-77-tian-zhi-dao); names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "lao-42-sun-zhi-er-yi",
@@ -3543,10 +3546,10 @@
    ],
    "kind": "scope",
    "declarations": [
-    "Becoming.Widening.closing_needs_less",
-    "Becoming.Widening.closes_within",
-    "Becoming.Widening.never_closes_of_no_less",
-    "Becoming.Widening.closing_not_lossless",
+    "Becoming.LoopReturn.closing_needs_less",
+    "Becoming.LoopReturn.closes_within",
+    "Becoming.LoopReturn.never_closes_of_no_less",
+    "Becoming.LoopReturn.closing_not_lossless",
     "Becoming.Flow.restores",
     "Becoming.Flow.excess_lowers",
     "Becoming.Flow.withinGap_iff_between",
@@ -3578,7 +3581,7 @@
     }
    ],
    "relational": "Lowering the high and raising the low is a regulating relation between levels and what couples to them.",
-   "reading": "AI 的读法：“天之道，损有馀而补不足”，如张弓之高者抑、下者举。脊柱不支持把它当作展开整体的定律：环路每一环节返还不少于所受时，任何一圈都不闭合差异（`Widening.never_closes_of_no_less`），闭合需要一个返还少于所受的环节（`closing_needs_less`），返还低于所受的返回映射在 d 圈内闭合（`closes_within`），而闭合正差异的环不是无损的（`closing_not_lossless`）。单侧的部分也有：自下的恢复（`Flow.restores`）、过度拿取的降低（`Flow.excess_lowers`）。所以“损有余补不足”是某种调节耦合的性质，而不是天的普遍性质；双向调节的确切定律已证（`Becoming.Regulation`）：平衡下，合取的交换在两侧都以与 m 的距离为界，恰是下一水平落在 m 与当前水平之间（`Flow.withinGap_iff_between`）；有界且两侧都与偏离相反时，距离为正则每步至少降一，距离用尽时水平定于 m（`Flow.regulates`、`Flow.settles`）。两种失败也是确切的：越界的相反交换越过 m（`Flow.crosses_of_above`），其证人在 m 两侧往复而永不到 m（`Overshooting.oscillates`）；只有一侧时，恢复律的前提成立而水平永在 m 之上（`OneSided.above`）。经文把它归于“天之道”，这一归属理论不采纳。",
+   "reading": "AI 的读法：“天之道，损有馀而补不足”，如张弓之高者抑、下者举。脊柱不支持把它当作展开整体的定律：环路每一环节返还不少于所受时，任何一圈都不闭合差异（`LoopReturn.never_closes_of_no_less`），闭合需要一个返还少于所受的环节（`closing_needs_less`），返还低于所受的返回映射在 d 圈内闭合（`closes_within`），而闭合正差异的环不是无损的（`closing_not_lossless`）。单侧的部分也有：自下的恢复（`Flow.restores`）、过度拿取的降低（`Flow.excess_lowers`）。所以“损有余补不足”是某种调节耦合的性质，而不是天的普遍性质；双向调节的确切定律已证（`Becoming.Regulation`）：平衡下，合取的交换在两侧都以与 m 的距离为界，恰是下一水平落在 m 与当前水平之间（`Flow.withinGap_iff_between`）；有界且两侧都与偏离相反时，距离为正则每步至少降一，距离用尽时水平定于 m（`Flow.regulates`、`Flow.settles`）。两种失败也是确切的：越界的相反交换越过 m（`Flow.crosses_of_above`），其证人在 m 两侧往复而永不到 m（`Overshooting.oscillates`）；只有一侧时，恢复律的前提成立而水平永在 m 之上（`OneSided.above`）。经文把它归于“天之道”，这一归属理论不采纳。",
    "reading_en": "AI reading: 'reducing excess and making up deficiency' is not a law of the whole unfolding on the spine (a loop closes a difference only through a link giving back less, and closing is not lossless); it is the property of a regulating coupling. That law is proved (Becoming.Regulation): bounded by the gap on both sides and opposing, the level settles at m within its gap; beyond the bound it crosses m and can alternate without end; one side alone can leave it away for ever.",
    "mapper": "lao",
    "layer": "经",
@@ -3594,7 +3597,7 @@
     "why_it_matters": "It gives 损有馀而补不足, 张弓 (77) and 冲气以为和 (42) a checked form as the property of a coupling that reads the level on both sides with bounded correction, with exactly where it fails (one side only, overcorrection), instead of a law of the whole; it also connects the Widening loop law to levels, and is likely shared with the Ru slice's 中和.",
     "closed": "RG (Becoming.Regulation, record two-sided-regulation-and-late-reading), as stated for one condition, with the bound read as no overshoot: the exchange is within the gap to m on both sides exactly where the next level lies between m and the level (Flow.withinGap_iff_between); with it and opposing on both sides the level is m from T plus its gap at T on (Flow.regulates, Flow.settles); (iii) is not needed, since at m the bound itself keeps the level at m (Flow.withinGap_iff_of_at). Both failures are exact: beyond the bound an opposing exchange crosses m and a witness alternates without end (Flow.crosses_of_above, Regulation.Overshooting.oscillates); with one side only the premise of Flow.restores holds and the level stays above m (Regulation.OneSided.above)."
    },
-   "corrected": "RG proved the two-sided law the reading named as a gap, with both of its failures"
+   "corrected": "RG proved the two-sided law the reading named as a gap, with both of its failures; names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "lao-77-ren-zhi-dao",
@@ -4178,7 +4181,7 @@
    "declarations": [
     "Becoming.Learnable.learnable_iff",
     "Becoming.Learnable.still_learnable_iff_lumped",
-    "Becoming.Learnable.not_rests_on_both",
+    "Becoming.Learnable.not_predicts_on_both",
     "Becoming.Identification.bounded_induction",
     "Becoming.Flow.unselected_beyond_pool"
    ],
@@ -4194,10 +4197,11 @@
     }
    ],
    "relational": "Knowing the world without going out is a relation of one's lumping to how the world goes; going far changes which configurations one's lumping must cover.",
-   "reading": "AI 的读法：“不出户，知天下”在脊柱中有确切范围：在有限世界中，经由一个映射可学到的，恰是同一未来者特征终归一致的那些（`Learnable.learnable_iff`；静止律下恰是在映射合并之间相同者，`still_learnable_iff_lumped`）；有界时归纳即演绎（`Identification.bounded_induction`）。“其出弥远，其知弥少”有一个确切的意义：把范围扩展到经由映射相同而特征在任意晚处不同的配置，就没有外推能同时静止于两者（`Learnable.not_rests_on_both`）——走得更远，若仍用原来的合并，可学者变少。但在闭包之外什么都不被选择（`Flow.unselected_beyond_pool`）：不出户只知道户内耦合所及的天下。经文的普遍形式被限定为“世界在你的合并上走得一样之处”。",
+   "reading": "AI 的读法：“不出户，知天下”在脊柱中有确切范围：在有限世界中，经由一个映射可学到的，恰是同一未来者特征终归一致的那些（`Learnable.learnable_iff`；静止律下恰是在映射合并之间相同者，`still_learnable_iff_lumped`）；有界时归纳即演绎（`Identification.bounded_induction`）。“其出弥远，其知弥少”有一个确切的意义：把范围扩展到经由映射相同而特征在任意晚处不同的配置，就没有外推能同时静止于两者（`Learnable.not_predicts_on_both`）——走得更远，若仍用原来的合并，可学者变少。但在闭包之外什么都不被选择（`Flow.unselected_beyond_pool`）：不出户只知道户内耦合所及的天下。经文的普遍形式被限定为“世界在你的合并上走得一样之处”。",
    "reading_en": "AI reading: knowing the world without going out holds exactly where the world is bounded and its features go alike across one's lumping; going farther with the same lumping can make features unlearnable, and nothing beyond one's coupling closure is selected at all.",
    "mapper": "lao",
-   "layer": "经"
+   "layer": "经",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "lao-05-tian-di-bu-ren",
@@ -5161,7 +5165,7 @@
     "Becoming.Flow.joint_excess_ends_at",
     "Becoming.Flow.level_kept",
     "Becoming.Exceeding.own_not_joint",
-    "Becoming.Web.generation_needs_replenishment"
+    "Becoming.Web.embodiedArising_needs_replenishment"
    ],
    "records": [
     "own-count-misses-joint-excess",
@@ -5183,9 +5187,10 @@
     }
    ],
    "relational": "Wanting (欲) and things (物) are two sides of one relation: each must not exhaust the other, and both grow while they hold each other (相持而长). The bound (度量分界) is a bound on the relation, not on either side alone.",
-   "reading": "AI 的读法：“求而无度量分界……乱则穷”与脊柱的合取超取定律同构：合取超出所给的每一步都使水平下降，在更新依赖于被更新者时，降到需要之下的合取超取终结依赖它的形成（Flow.joint_excess_ends、joint_excess_ends_at），而各自不超取并不防止合取超取（Exceeding.own_not_joint）。“两者相持而长”对应合取在所给之内时水平不降（Flow.level_kept），以及生成携带补充的要求（Web.generation_needs_replenishment）。经文把这一界限归于“先王”制礼；脊柱只给出界限是延续的条件，不给出谁来定界。",
+   "reading": "AI 的读法：“求而无度量分界……乱则穷”与脊柱的合取超取定律同构：合取超出所给的每一步都使水平下降，在更新依赖于被更新者时，降到需要之下的合取超取终结依赖它的形成（Flow.joint_excess_ends、joint_excess_ends_at），而各自不超取并不防止合取超取（Exceeding.own_not_joint）。“两者相持而长”对应合取在所给之内时水平不降（Flow.level_kept），以及生成携带补充的要求（Web.embodiedArising_needs_replenishment）。经文把这一界限归于“先王”制礼；脊柱只给出界限是延续的条件，不给出谁来定界。",
    "reading_en": "Seeking without a measured bound exhausts what it draws on, while wants and things that hold each other both grow: the spine's joint-excess law and its converse (joint taking within what is given keeps the level) have exactly this structure, though who sets the bound is not part of it.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-xunzi-gui-jian-you-deng",
@@ -5608,7 +5613,7 @@
    ],
    "kind": "agreement",
    "declarations": [
-    "Becoming.Web.generation_needs_replenishment",
+    "Becoming.Web.embodiedArising_needs_replenishment",
     "Becoming.Confound.misattributes",
     "Becoming.Learning.no_prefix_fixes_next",
     "Becoming.Run.not_fixes_of_untaken",
@@ -5621,9 +5626,10 @@
    ],
    "atlas_ids": [],
    "relational": "The bare mountain is the outcome of a history of cutting and grazing against nightly regrowth; what one sees now is read wrongly as the mountain's nature. 性 is read off a history, and the history is relational (斧斤、牛羊、雨露).",
-   "reading": "AI 的读法：两点都有脊柱定律。其一，生成携带补充的要求：在后来的步骤仍有成员出现的族群，补充反复出现（Web.generation_needs_replenishment），而反复的取用超过补充会终结依赖者（Flow.joint_excess_ends），这是“得其养则长，失其养则消”。其二，“以为未尝有材”是错误的归因：错误的投影把不造成任何差别的东西读成差别（Confound.misattributes），前缀不固定下一步（no_prefix_fixes_next），未走过的一步不被固定（Run.not_fixes_of_untaken）——从濯濯的现状推断“性”就是从一段记录推断一条规律。这一段读出的性是历史的结果，与告子上·2“水之就下”的固定性相反（见 ru-mengzi-xing-shan）。",
+   "reading": "AI 的读法：两点都有脊柱定律。其一，生成携带补充的要求：在后来的步骤仍有成员出现的族群，补充反复出现（Web.embodiedArising_needs_replenishment），而反复的取用超过补充会终结依赖者（Flow.joint_excess_ends），这是“得其养则长，失其养则消”。其二，“以为未尝有材”是错误的归因：错误的投影把不造成任何差别的东西读成差别（Confound.misattributes），前缀不固定下一步（no_prefix_fixes_next），未走过的一步不被固定（Run.not_fixes_of_untaken）——从濯濯的现状推断“性”就是从一段记录推断一条规律。这一段读出的性是历史的结果，与告子上·2“水之就下”的固定性相反（见 ru-mengzi-xing-shan）。",
    "reading_en": "The bare mountain is the record of cutting and grazing outrunning regrowth, not the mountain's nature: the spine's laws that generation needs replenishment and that a record misattributes and fixes no untaken move carry this exactly.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-mengzi-xing-shan",
@@ -5911,7 +5917,7 @@
     "Becoming.bounded_whole",
     "Becoming.Flow.within_closure_iff_retains",
     "Becoming.Clearing.centers_disagree",
-    "Becoming.Clearing.free_rider_loses",
+    "Becoming.Clearing.clearer_loses_dweller",
     "Becoming.unrestricted_iff_presupposed_along"
    ],
    "records": [
@@ -5939,9 +5945,10 @@
     }
    ],
    "relational": "大同 does not bound care by one's own kin (不独亲其亲) and does not direct effort to oneself (不必为己); 小康 bounds both by the household (各亲其亲、为己). Two ways of drawing the region within which continuation counts.",
-   "reading": "AI 的读法：大同与小康在脊柱上对应两种边界的划法。小康的“各亲其亲，货力为己”是以各自依赖为界的意义：以依赖为界的中心容许搭便车者并彼此不一致（Clearing.centers_disagree、free_rider_loses）。大同的“不独亲其亲”是以整体为界的意义：以整体为界的意义就是延续条件（bounded_whole）；在一个形成的喂养闭包是整体之处，两者在每个比较上一致（Flow.within_closure_iff_retains），否则分开。从小康到大同需要的是不变性的步骤（unrestricted_iff_presupposed_along），这是条件，理论不断言它。范围的修正：经文把大同说成过去曾行之道，是叙述，不是推导；脊柱只说两种边界各给出什么，以及它们在哪里分开。",
+   "reading": "AI 的读法：大同与小康在脊柱上对应两种边界的划法。小康的“各亲其亲，货力为己”是以各自依赖为界的意义：以依赖为界的中心容许搭便车者并彼此不一致（Clearing.centers_disagree、clearer_loses_dweller）。大同的“不独亲其亲”是以整体为界的意义：以整体为界的意义就是延续条件（bounded_whole）；在一个形成的喂养闭包是整体之处，两者在每个比较上一致（Flow.within_closure_iff_retains），否则分开。从小康到大同需要的是不变性的步骤（unrestricted_iff_presupposed_along），这是条件，理论不断言它。范围的修正：经文把大同说成过去曾行之道，是叙述，不是推导；脊柱只说两种边界各给出什么，以及它们在哪里分开。",
    "reading_en": "小康 bounds care by the household and 大同 by the whole: the spine shows bounded centres license the free rider and disagree, that significance bounded by the whole is the continuation condition, and that the move from one to the other is the invariance step, a condition the theory does not assert.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-zhoudunyi-shi",
@@ -5956,8 +5963,8 @@
    "declarations": [
     "Becoming.Law.drawn_iff_not_returns",
     "Becoming.Law.DrawnInto.never_back",
-    "Becoming.Widening.closes_within",
-    "Becoming.Widening.closes_within_exact",
+    "Becoming.LoopReturn.closes_within",
+    "Becoming.LoopReturn.closes_within_exact",
     "Becoming.Web.break_not_bounded"
    ],
    "records": [
@@ -5988,9 +5995,10 @@
     }
    ],
    "relational": "势 is the weighting of the whole's tendencies (轻重); reversal depends on recognizing the weight early. What can be done depends on where the course already is.",
-   "reading": "AI 的读法：三处都有脊柱定律。“极重不可反”：每个规律吸引的恰是不回返的构形（Law.drawn_iff_not_returns），被吸入的不再回来（DrawnInto.never_back）。“识不早，力不易”：一个低于所接收的回返映射在差额那么多轮内闭合，这个界是确切的（Widening.closes_within、closes_within_exact）——偏得越多，收回所需越多。“识”之难：断点之前没有任何耦合进来的东西界定还有多远（Web.break_not_bounded）。所以周敦颐说的是吸引、闭合的轮数与登记的界限，与脊柱同构。“天乎？人也”把责任归于人，这一归属脊柱不处理。",
+   "reading": "AI 的读法：三处都有脊柱定律。“极重不可反”：每个规律吸引的恰是不回返的构形（Law.drawn_iff_not_returns），被吸入的不再回来（DrawnInto.never_back）。“识不早，力不易”：一个低于所接收的回返映射在差额那么多轮内闭合，这个界是确切的（LoopReturn.closes_within、closes_within_exact）——偏得越多，收回所需越多。“识”之难：断点之前没有任何耦合进来的东西界定还有多远（Web.break_not_bounded）。所以周敦颐说的是吸引、闭合的轮数与登记的界限，与脊柱同构。“天乎？人也”把责任归于人，这一归属脊柱不处理。",
    "reading_en": "Extreme weight cannot be reversed, reversal takes force, and late recognition makes it harder: the spine proves that what is drawn in never returns, that closing a difference takes as many turns as the difference, and that nothing coupled in bounds the distance to the break.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-zhangzai-tai-xu-ji-qi",
@@ -6131,7 +6139,7 @@
    "kind": "divergence",
    "declarations": [
     "Becoming.Web.significance_undetermined",
-    "Becoming.g0_of_unrestricted",
+    "Becoming.livingSignificance_of_unrestricted",
     "Becoming.Web.widens_iff_retains_adds",
     "Becoming.Unrestricted",
     "Becoming.Transfer.unordered"
@@ -6143,9 +6151,10 @@
    ],
    "atlas_ids": [],
    "relational": "One observes the whole's generating (生物气象) and names the vitality of things (生意) the first of goods (善之长) and 仁. Generation is seen in relation and then valued.",
-   "reading": "AI 的读法：内容上与条件下的定理一致，地位上分歧。在延续条件之下，生命意义在每个框架上对每种“生”的读法成立（g0_of_unrestricted），把“更好”读作保持并增加有意义者时就是扩大可形成者（Web.widens_iff_retains_adds），这与“生意……善之长”的内容相合。但理论不断言条件（Unrestricted 只是一个前提）：在无物有意义处每条路径保持每条路径，动力学不蕴含生命意义（Web.significance_undetermined）；条件本身不排序，混合的部分无序（Transfer.unordered），排序在于把扩大称为更好（C）和不变性的步骤。王夫之引“程子谓雞雛可以觀仁”，读作“觀天地化機之仁也”（V4SO001），同样把生成称为仁，是另一层的读法。所以“生即仁”在理论中是条件下的定理，在程颢是直接的认取。",
+   "reading": "AI 的读法：内容上与条件下的定理一致，地位上分歧。在延续条件之下，生命意义在每个框架上对每种“生”的读法成立（livingSignificance_of_unrestricted），把“更好”读作保持并增加有意义者时就是扩大可形成者（Web.widens_iff_retains_adds），这与“生意……善之长”的内容相合。但理论不断言条件（Unrestricted 只是一个前提）：在无物有意义处每条路径保持每条路径，动力学不蕴含生命意义（Web.significance_undetermined）；条件本身不排序，混合的部分无序（Transfer.unordered），排序在于把扩大称为更好（C）和不变性的步骤。王夫之引“程子谓雞雛可以觀仁”，读作“觀天地化機之仁也”（V4SO001），同样把生成称为仁，是另一层的读法。所以“生即仁”在理论中是条件下的定理，在程颢是直接的认取。",
    "reading_en": "Naming the vitality of things the first of goods and 仁 agrees in content with theorems under the continuation condition, but the theory holds the condition unasserted and the dynamics fix no value, so Cheng Hao's direct identification diverges in status (Wang Fuzhi's reading of the chick passage does the same on another layer).",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-chengyi-gan-ying",
@@ -6159,9 +6168,9 @@
    ],
    "kind": "scope",
    "declarations": [
-    "Becoming.Widening.loop_kept",
-    "Becoming.Widening.closing_needs_less",
-    "Becoming.Widening.nothing_between",
+    "Becoming.LoopReturn.loop_kept",
+    "Becoming.LoopReturn.closing_needs_less",
+    "Becoming.LoopReturn.nothing_between",
     "Becoming.forms_by_closing",
     "Becoming.Flow.Balances.comparison_within_response"
    ],
@@ -6172,9 +6181,10 @@
    ],
    "atlas_ids": [],
    "relational": "Every movement is a stimulus that gets a response, and the response becomes a new stimulus: the whole is one web of mutual response (只有一个感与应), unceasing because it loops.",
-   "reading": "AI 的读法：“所应复为感，所感复有应，所以不已”是一个回路。脊柱给出“不已”成立的确切条件：每个环节至少传出所接收的，回路就保持差别（Widening.loop_kept）；回路闭合需要某个环节传出少于所接收（closing_needs_less）；整数强度下回路要么在第一轮闭合、要么保持、要么失控，没有中间（nothing_between）；回路由连接一条链的耦合闭合而形成（forms_by_closing）。所以感应不已恰在没有环节衰减时成立。“有感必有应”作为普遍断言是前提：在 Response 中回应是被供给的，而比较在回应可达范围内决定（comparison_within_response）。“天地之间只有一个感与应”是关系本体的强表述，脊柱的回路定律承接其结构，不承接其普遍性。",
+   "reading": "AI 的读法：“所应复为感，所感复有应，所以不已”是一个回路。脊柱给出“不已”成立的确切条件：每个环节至少传出所接收的，回路就保持差别（LoopReturn.loop_kept）；回路闭合需要某个环节传出少于所接收（closing_needs_less）；整数强度下回路要么在第一轮闭合、要么保持、要么失控，没有中间（nothing_between）；回路由连接一条链的耦合闭合而形成（forms_by_closing）。所以感应不已恰在没有环节衰减时成立。“有感必有应”作为普遍断言是前提：在 Response 中回应是被供给的，而比较在回应可达范围内决定（comparison_within_response）。“天地之间只有一个感与应”是关系本体的强表述，脊柱的回路定律承接其结构，不承接其普遍性。",
    "reading_en": "Response becoming stimulus again is a loop, and the spine gives the exact condition for 不已: a loop keeps a difference where no link gives back less, and closing needs such a link; that every stimulus is answered is a supplied premise, not a theorem.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-chengyi-fu-tiandi-zhi-xin",
@@ -6267,7 +6277,7 @@
     "Becoming.exists_law_iff",
     "Becoming.Law.alike_iff_sameFuture",
     "Becoming.Clearing.center_not_derived",
-    "Becoming.Web.generation_needs_replenishment"
+    "Becoming.Web.embodiedArising_needs_replenishment"
    ],
    "records": [
     "process-and-frame-as-readings",
@@ -6276,9 +6286,10 @@
    ],
    "atlas_ids": [],
    "relational": "Heaven and earth are said to have a heart, namely generating things, but a heart without a mind (无心之心): a direction of the whole with no deliberating centre.",
-   "reading": "AI 的读法：朱熹在“天地有心”与“天地无志”之间取了中间：天地以生物为心，但是“无心之心”。脊柱给出这一中间立场成立的范围：生成携带补充的要求（Web.generation_needs_replenishment），规律从展开中读出（exists_law_iff、Law.alike_iff_sameFuture），所以“以生物为心”可以读成整体之生成的规律性；中心不是沿依赖导出的（Clearing.center_not_derived），动力学不蕴含意义（Web.significance_undetermined），所以“无心”——没有一个审议的中心——与脊柱一致。范围的修正：朱熹仍用“心、情”的语法并反问“安得谓天地无心”，脊柱不承接这一语法；它承接的只是“无心之心”所指的无中心的规律性。",
+   "reading": "AI 的读法：朱熹在“天地有心”与“天地无志”之间取了中间：天地以生物为心，但是“无心之心”。脊柱给出这一中间立场成立的范围：生成携带补充的要求（Web.embodiedArising_needs_replenishment），规律从展开中读出（exists_law_iff、Law.alike_iff_sameFuture），所以“以生物为心”可以读成整体之生成的规律性；中心不是沿依赖导出的（Clearing.center_not_derived），动力学不蕴含意义（Web.significance_undetermined），所以“无心”——没有一个审议的中心——与脊柱一致。范围的修正：朱熹仍用“心、情”的语法并反问“安得谓天地无心”，脊柱不承接这一语法；它承接的只是“无心之心”所指的无中心的规律性。",
    "reading_en": "Zhu Xi's 'heart without a mind' reads the whole's generating as a direction with no deliberating centre, which the spine supports (laws read off the unfolding, no centre derived), while his insistence that heaven and earth do have a heart keeps a grammar the spine does not carry.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-zhuxi-li-yi-fen-shu",
@@ -6293,7 +6304,7 @@
    "declarations": [
     "Becoming.Transfer.unordered",
     "Becoming.Clearing.centers_disagree",
-    "Becoming.Clearing.free_rider_loses",
+    "Becoming.Clearing.clearer_loses_dweller",
     "Becoming.Contextual.indexed_fits",
     "Becoming.Contextual.fitsFree_iff",
     "Becoming.Lexical.Above"
@@ -6315,9 +6326,10 @@
     }
    ],
    "relational": "One pattern (理一) holds across differentiated positions (分殊): the same 理 gives different duties at different places in the relations. Both one and many are kept.",
-   "reading": "AI 的读法：朱熹指出两种失败，各有脊柱对应。“理一而不言分殊”：对一切有意义而无度量，混合的部分无序（Transfer.unordered：排序需要一个度量）。“分殊而不言理一”：以各自依赖为界的中心容许搭便车者并彼此不一致（Clearing.centers_disagree、free_rider_loses）。而“理一分殊”本身有一个成立的结构：语境索引的读法符合一切所示（Contextual.indexed_fits），而无语境的读法只在各语境一致时存在（fitsFree_iff）——同一规律在不同位置给出不同的读法。范围：脊柱给出“一规律、诸语境读法”的结构，但“分殊”所含的等差（亲疏之分）需要一个度量，脊柱只有两层字典序的定义（Lexical.Above），没有按关系层级分层的序（见孟子“亲亲而仁民”条的 gap）。层次：墨、杨在此是朱熹的论辩性概括，不是两家原文。",
+   "reading": "AI 的读法：朱熹指出两种失败，各有脊柱对应。“理一而不言分殊”：对一切有意义而无度量，混合的部分无序（Transfer.unordered：排序需要一个度量）。“分殊而不言理一”：以各自依赖为界的中心容许搭便车者并彼此不一致（Clearing.centers_disagree、clearer_loses_dweller）。而“理一分殊”本身有一个成立的结构：语境索引的读法符合一切所示（Contextual.indexed_fits），而无语境的读法只在各语境一致时存在（fitsFree_iff）——同一规律在不同位置给出不同的读法。范围：脊柱给出“一规律、诸语境读法”的结构，但“分殊”所含的等差（亲疏之分）需要一个度量，脊柱只有两层字典序的定义（Lexical.Above），没有按关系层级分层的序（见孟子“亲亲而仁民”条的 gap）。层次：墨、杨在此是朱熹的论辩性概括，不是两家原文。",
    "reading_en": "Zhu Xi's two failures match the spine (significance for all without a measure leaves mixed parts unordered; centres bounded by their own dependence disagree), and one law read differently in each context matches context-indexed readings; the grading inside 分殊 needs a measure the spine does not have.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-zhuxi-li-qi-er-wu",
@@ -6586,7 +6598,7 @@
     "Becoming.Flow.within_closure_iff_retains",
     "Becoming.Excluding.three_courses",
     "Becoming.Flow.level_kept",
-    "Becoming.g0_of_unrestricted"
+    "Becoming.livingSignificance_of_unrestricted"
    ],
    "records": [
     "presupposition-scopes",
@@ -6605,9 +6617,10 @@
     }
    ],
    "relational": "仁 is the virtue of continuing generation; one's own living on is extended to the living on of all together (共遂其生). The self's continuation and the whole's are one movement of extension.",
-   "reading": "AI 的读法：“一人遂其生，推之而与天下共遂其生”在脊柱上分两步。第一步，自身的延续依赖其喂养闭包；在喂养闭包是整体之处，有界的意义与延续条件在每个比较上一致（Flow.within_closure_iff_retains），否则需要不变性的步骤才从自身推到整体（unrestricted_iff_presupposed_along）。第二步，“共遂”可行的条件：合取在所给之内时全部持续（Excluding.three_courses、Flow.level_kept）。“仁者，生生之德也”把生生称为德，与条件下的定理同内容（g0_of_unrestricted），地位上是断言。所以此句在“推”需要不变性步骤、“共”需要合取在所给之内这两个条件下成立。",
+   "reading": "AI 的读法：“一人遂其生，推之而与天下共遂其生”在脊柱上分两步。第一步，自身的延续依赖其喂养闭包；在喂养闭包是整体之处，有界的意义与延续条件在每个比较上一致（Flow.within_closure_iff_retains），否则需要不变性的步骤才从自身推到整体（unrestricted_iff_presupposed_along）。第二步，“共遂”可行的条件：合取在所给之内时全部持续（Excluding.three_courses、Flow.level_kept）。“仁者，生生之德也”把生生称为德，与条件下的定理同内容（livingSignificance_of_unrestricted），地位上是断言。所以此句在“推”需要不变性步骤、“共”需要合取在所给之内这两个条件下成立。",
    "reading_en": "Extending one's own living on to all living on together needs the invariance step (or a feeding closure that is the whole) and is feasible where joint taking stays within what is given; calling continuing generation 仁 agrees in content with theorems under the condition, not with the theory's assertions.",
-   "mapper": "ru"
+   "mapper": "ru",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "ru-huangzongxi-tianxia-wei-zhu",
@@ -6744,12 +6757,12 @@
    ],
    "kind": "scope",
    "declarations": [
-    "Becoming.Widening.closing_needs_less",
-    "Becoming.Widening.never_closes_of_no_less",
-    "Becoming.Widening.cut_closes",
-    "Becoming.Widening.cut_reopened",
-    "Becoming.Widening.closes_within",
-    "Becoming.Widening.loop_kept"
+    "Becoming.LoopReturn.closing_needs_less",
+    "Becoming.LoopReturn.never_closes_of_no_less",
+    "Becoming.LoopReturn.cut_closes",
+    "Becoming.LoopReturn.cut_reopened",
+    "Becoming.LoopReturn.closes_within",
+    "Becoming.LoopReturn.loop_kept"
    ],
    "records": [
     "whether-a-loop-closes-a-difference"
@@ -6758,7 +6771,8 @@
    "relational": "The worth of force is read through what it does to the loop of force between parties: 武 is named by the stopping of 戈 passed back and forth, an act judged by the relation it ends, not by the strength of the actor. The reading is a speaker's normative gloss on a graph, made at the moment of declining to build a 京觀.",
    "reading": "AI 读法：把“止戈”读作一环往复传递的差（兵来兵往）怎样才停。Widening 证明：环中至少有一环“回给的少于所受”，差才会关闭（closing_needs_less）；每一环都至少照原样传下去，则任何一轮都不关闭（never_closes_of_no_less）；一环全不回传是“截断”，当即关闭（cut_closes），但截断之后的环节仍可把差重新打开（cut_reopened）；回传映射处处小于所受时，差在有限轮内关闭（closes_within）。所以“止戈”在确切范围内成立：力量止住力量，只有当它成为回给更少的一环，并且此后各环不再放大。一次战胜只是截断，是否“止”取决于后续各环。没有断言：左传此句是楚庄王借字形说理，不是字源；律也不推出任何具体用兵是否正当。",
    "reading_en": "The spine gives the exact range of 止戈: a loop of force closes only through a link that returns less than it received, a cut closes at once but can be reopened by what follows, and where every link passes on at least what it got nothing closes; so a victory is a cut, not yet a stopping. The sentence is a speaker's gloss, not an etymology.",
-   "mapper": "wen"
+   "mapper": "wen",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "zuo-xuan12-qi-de-guards",
@@ -6918,7 +6932,7 @@
     "Becoming.Web.alikeThrough_raise",
     "Becoming.break_carried_nowhere",
     "Becoming.Thresholds.Draw.forms_at_break",
-    "Becoming.Widening.runs_away"
+    "Becoming.LoopReturn.runs_away"
    ],
    "records": [
     "runaway-distance-unregistered",
@@ -6927,9 +6941,10 @@
    ],
    "atlas_ids": [],
    "relational": "Displaying troops to awe the other lords relies on their response at a threshold (submission or alliance against): the display acts on a stock the actor does not read.",
-   "reading": "AI 读法：观兵示威依赖他者在阈值处的反应。Runaway/Thresholds 证明：一个不经水平耦合入 g 的存量，其抬升在断点前不传到（Web.alikeThrough_raise）；到断点的距离不耦合入（break_not_bounded），对每一条只读阈值之下的律都不被携带（break_carried_nowhere）；环在断点处形成（Draw.forms_at_break）；各环至少加倍时差失控（Widening.runs_away）。所以示威者无从读出距离他者反扑还有多远，楚庄王把观兵列为“兵不戢”有确切结构理由。没有断言：律不预言诸侯的实际反应。",
+   "reading": "AI 读法：观兵示威依赖他者在阈值处的反应。Runaway/Thresholds 证明：一个不经水平耦合入 g 的存量，其抬升在断点前不传到（Web.alikeThrough_raise）；到断点的距离不耦合入（break_not_bounded），对每一条只读阈值之下的律都不被携带（break_carried_nowhere）；环在断点处形成（Draw.forms_at_break）；各环至少加倍时差失控（LoopReturn.runs_away）。所以示威者无从读出距离他者反扑还有多远，楚庄王把观兵列为“兵不戢”有确切结构理由。没有断言：律不预言诸侯的实际反应。",
    "reading_en": "Scope: a display of force acts on others' thresholds, and the distance to the break is carried nowhere for any law reading below the threshold, so the displayer cannot read how near the reversal is; this is the structure behind naming 觀兵 a failure of 戢兵.",
-   "mapper": "wen"
+   "mapper": "wen",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "zuo-xuan12-jing-guan-ming-wang",
@@ -6943,8 +6958,8 @@
    "kind": "divergence",
    "declarations": [
     "Becoming.Clearing.center_not_derived",
-    "Becoming.Widening.never_closes_of_no_less",
-    "Becoming.Widening.runs_away",
+    "Becoming.LoopReturn.never_closes_of_no_less",
+    "Becoming.LoopReturn.runs_away",
     "Becoming.ExchangeLaw.response_not_fixed_by_coupling"
    ],
    "records": [
@@ -6956,7 +6971,8 @@
    "relational": "Punitive display: the defeated are made 鯨鯢 (monsters), 不敬 is measured against the 明王's standing, and a mound of corpses is to deter. The speaker rejects the mound here only because the enemy dead were loyal, not the practice as such.",
    "reading": "AI 读法：此为分歧，是把“止戈”读成非战主义的反例。楚庄王并未否定京观，只说此战不合其古义；古义以“明王”为中心、以“不敬”为罪、以敌为鯨鯢、以示众为惩。理论不导出中心（center_not_derived）；示众以惩是一环至少照原样回传的差，律只说这样的环不关闭（never_closes_of_no_less），加倍则失控（runs_away）；耦合限定响应而不确定响应（response_not_fixed_by_coupling），惩戒能否“懲”不由示众本身给定。理论对“懲”不给任何根据。此处“明王”是称号，与理论所读的“明”无关。",
    "reading_en": "Divergence: the speech keeps the punitive mound as a rite of a central king against the 'irreverent'; the spine derives no center, and a display that returns at least what it received closes no loop, so the passage is a counterexample to reading 止戈 as rejecting force.",
-   "mapper": "wen"
+   "mapper": "wen",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "zuo-xuan12-jing-guan-refusal",
@@ -7440,7 +7456,7 @@
     "Becoming.Law.Merges.loses",
     "Becoming.Law.merged_stays",
     "Becoming.Readout.no_judge_of_merged",
-    "Becoming.ResponseLearning.distinction_lost_every_generation",
+    "Becoming.ResponseLearning.distinction_lost_every_cohort",
     "Becoming.References.stays_iff",
     "Becoming.SharedCodes.run_from_imposition",
     "Becoming.SharedCodes.source_loses_nothing",
@@ -7460,10 +7476,10 @@
     }
    ],
    "relational": "Regional variant codes (言語異聲，文字異形) are replaced by decree with one code from one center; the clerical script, chosen for ease, merges forms, and the older script is cut off.",
-   "reading": "AI 读法：在有限配置中合并永久失去可能（Law.Merges.loses），被合并者此后不再被分开（merged_stays），经合并的约化没有判者（Readout.no_judge_of_merged）；经由教学传递，失去的区分在每一代都保持失去（ResponseLearning.distinction_lost_every_generation）。“古文由此絕”是这一结构。另一面是统一编码使各地读法一致，差异可跨地区传达（参照 References.stays_iff）。范围：律给出合并的确切损失；“罷其不與秦文合者”是一中心以废除强加一码，处在兼并天下的权力框架中，与“约定俗成”所说在使用者之间形成的约定不同。SharedCodes 给出强加编码的确切律：强加使所有人在每一义上相合，每个形成恰失去其编码所分而强加编码所合并者，被强加其编码的形成一无所失（run_from_imposition、source_loses_nothing）；此后在任何听取次序与规则下强加编码保持（run_imposed_stays），被合并的分别只从强加之外保留的形式回来（outside_needed），从这样的形式则一步即回（outside_returns）。“古文由此絕”是外面再无保留旧形之处。",
+   "reading": "AI 读法：在有限配置中合并永久失去可能（Law.Merges.loses），被合并者此后不再被分开（merged_stays），经合并的约化没有判者（Readout.no_judge_of_merged）；经由教学传递，失去的区分在每一代都保持失去（ResponseLearning.distinction_lost_every_cohort）。“古文由此絕”是这一结构。另一面是统一编码使各地读法一致，差异可跨地区传达（参照 References.stays_iff）。范围：律给出合并的确切损失；“罷其不與秦文合者”是一中心以废除强加一码，处在兼并天下的权力框架中，与“约定俗成”所说在使用者之间形成的约定不同。SharedCodes 给出强加编码的确切律：强加使所有人在每一义上相合，每个形成恰失去其编码所分而强加编码所合并者，被强加其编码的形成一无所失（run_from_imposition、source_loses_nothing）；此后在任何听取次序与规则下强加编码保持（run_imposed_stays），被合并的分别只从强加之外保留的形式回来（outside_needed），从这样的形式则一步即回（outside_returns）。“古文由此絕”是外面再无保留旧形之处。",
    "reading_en": "Scope: imposing one code merges variant distinctions, which stay merged and, passed through teaching, stay lost in every generation; the decree is a merge imposed from one center within a frame of conquest, unlike a convention formed among users; its loss stays under every later exchange and comes back only from a form kept outside the imposition (SharedCodes: run_from_imposition, outside_needed).",
    "mapper": "wen",
-   "corrected": "SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its laws and record added and the sentence that named the gap replaced (both languages)"
+   "corrected": "SC: Becoming.SharedCodes proved the code formed between formations the reading named as a gap; its laws and record added and the sentence that named the gap replaced (both languages); names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "shuowen-xu-shi-gu",
@@ -7481,7 +7497,7 @@
     "Becoming.Law.withHistory_never_returns",
     "Becoming.Retrodiction.reading_right_iff",
     "Becoming.Retrodiction.change_unlocated",
-    "Becoming.ResponseLearning.every_generation_holds"
+    "Becoming.ResponseLearning.every_cohort_holds"
    ],
    "records": [
     "recurrence-without-premise",
@@ -7495,9 +7511,10 @@
     }
    ],
    "relational": "Writing is the relation through which the later reads the earlier; inscriptions found in the land are kept records that let the earlier script be read.",
-   "reading": "AI 读法：有限的现在遗忘（Law.present_forgets），保留历史者不返回（withHistory_never_returns）；所以早先只能经由保留下来的记录读出，读对恰当对手被有日期的对照分开（Retrodiction.reading_right_iff）；两端可见的变化，其中间每一步未定位（change_unlocated），古文到隶之间的每一变化需中间记录定位。经教学，每一代都持有所教的程序（ResponseLearning.every_generation_holds），这是“垂後”。鼎彝铭文是有日期的对照。结构相合。",
+   "reading": "AI 读法：有限的现在遗忘（Law.present_forgets），保留历史者不返回（withHistory_never_returns）；所以早先只能经由保留下来的记录读出，读对恰当对手被有日期的对照分开（Retrodiction.reading_right_iff）；两端可见的变化，其中间每一步未定位（change_unlocated），古文到隶之间的每一变化需中间记录定位。经教学，每一代都持有所教的程序（ResponseLearning.every_cohort_holds），这是“垂後”。鼎彝铭文是有日期的对照。结构相合。",
    "reading_en": "Agreement: the present forgets its history, so the earlier is read only through kept records that separate rival histories, and a change seen at both ends is unlocated without intermediate records; bronze inscriptions are such dated controls.",
-   "mapper": "wen"
+   "mapper": "wen",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "shuowen-wang-yi-guan-san",
@@ -8092,7 +8109,7 @@
     "Becoming.Web.selects_alike_iff",
     "Becoming.Learning.selects_through_lumping",
     "Becoming.Law.present_forgets",
-    "Becoming.ResponseLearning.every_generation_holds"
+    "Becoming.ResponseLearning.every_cohort_holds"
    ],
    "records": [
     "selection-through-registration",
@@ -8100,9 +8117,10 @@
    ],
    "atlas_ids": [],
    "relational": "The graph's glosses give 識 as marking or keeping (常, read by commentators variously) and as knowing: a relation between a mark and what it keeps.",
-   "reading": "AI 读法：说文给识两义：常（注家异读，有记识之义）与知。命名研究在 18 日把“记录”“登记”之义从识移出（改为前段、耦合入），识只留给派生结构：形成体自身的后续历程经其自身耦合所成之归并而走（Web.SelectsThrough、selects_alike_iff、Learning.selects_through_lumping）。说文之“常/记”义对应的是有限现在遗忘而须保留前段（Law.present_forgets）与代代持有（ResponseLearning.every_generation_holds），而不是派生结构。这里检查的结论是：当前读法是理论的约定、AI 标注，字书不单独支持它，亦不排除它（“一曰知也”与之相近）。",
+   "reading": "AI 读法：说文给识两义：常（注家异读，有记识之义）与知。命名研究在 18 日把“记录”“登记”之义从识移出（改为前段、耦合入），识只留给派生结构：形成体自身的后续历程经其自身耦合所成之归并而走（Web.SelectsThrough、selects_alike_iff、Learning.selects_through_lumping）。说文之“常/记”义对应的是有限现在遗忘而须保留前段（Law.present_forgets）与代代持有（ResponseLearning.every_cohort_holds），而不是派生结构。这里检查的结论是：当前读法是理论的约定、AI 标注，字书不单独支持它，亦不排除它（“一曰知也”与之相近）。",
    "reading_en": "Scope: the dictionary gives 識 as marking or keeping and as knowing; the current term keeps 識 only for the derived structure (a formation's course factoring through its own couplings' lumping), which the gloss neither singles out nor excludes, so the reading stays the theory's, labelled as the AI's.",
-   "mapper": "wen"
+   "mapper": "wen",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "shuowen-ming-zhao",
@@ -8834,10 +8852,10 @@
    "kind": "scope",
    "declarations": [
     "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
-    "Becoming.Widening.kept_of_identity",
-    "Becoming.Widening.loop_kept",
-    "Becoming.Widening.closes_within",
-    "Becoming.Widening.runs_away",
+    "Becoming.LoopReturn.kept_of_identity",
+    "Becoming.LoopReturn.loop_kept",
+    "Becoming.LoopReturn.closes_within",
+    "Becoming.LoopReturn.runs_away",
     "Becoming.Withholding.withholding_returns"
    ],
    "records": [
@@ -8853,7 +8871,8 @@
    "relational": "Love and harm are read as what returns along the relation between persons: the act's consequence comes back through the other.",
    "reading": "AI 读法：\"必从而\"是普遍的回报律。脊柱：耦合界定回应而不固定回应，有经耦合读取的定律在两种历史下取得不同，也有在一切历史下交换一致的（response_not_fixed_by_coupling），所以\"必\"不由关系本身给出。它在环的每一环节都把收到的给回去时成立（kept_of_identity, loop_kept）；环节给回少于所收时差异在有限圈内关闭（closes_within）；环节至少加倍时失控（runs_away）。\"恶人者人必从而恶之\"在环上对应停止给予每圈返回（withholding_returns）。所以回报律在\"环节守恒\"的范围内成立，不是关系的必然。",
    "reading_en": "The \"must\" of returned love and harm is not fixed by coupling (response_not_fixed_by_coupling); it holds where each link of the loop gives back what it receives (kept_of_identity, loop_kept), fades where links give back less (closes_within) and grows where they double (runs_away).",
-   "mapper": "other"
+   "mapper": "other",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "mozi-jianai-xia-xian-cong-shi",
@@ -8948,7 +8967,7 @@
    "kind": "scope",
    "declarations": [
     "Becoming.Flow.Balances.loses_iff_beyond_margin",
-    "Becoming.Clearing.free_rider_loses",
+    "Becoming.Clearing.clearer_loses_dweller",
     "Becoming.Transfer.unordered",
     "Becoming.Learning.selects_right_through",
     "Becoming.Learning.selects_not_right_of_parted"
@@ -8965,9 +8984,10 @@
     }
    ],
    "relational": "亏人自利 relates one's gain to another's loss in one exchange; 墨子 then compares acts by how much loss they bring.",
-   "reading": "AI 读法：\"亏人自利\"有确切对应：从立场 p，一个部分丢失一个有意义的延续，恰当没有它的水平容纳该形成，而它对所需某条件的净汲取超过余量（loses_iff_beyond_margin）；在延续条件下，清除者的部分丢失居住者（free_rider_loses）。\"亏人愈多，其不仁兹甚\"是标量累加；脊柱的比较是保留（扩大），混合部分不排序（Transfer.unordered），所以它只在一方保留另一方的范围内成立。\"至大为攻国则弗知非\"：通过一个读法的选择，只在关键之处跨其归并一致时才对（selects_right_through），把窃与攻国分开判断的读法不跟随关键之处，即墨子所说\"不知类\"。",
-   "reading_en": "亏人自利 is a part's net draw beyond the margin losing a continuation with significance (loses_iff_beyond_margin, free_rider_loses); \"the more loss, the worse\" is scalar aggregation, which holds only where one course retains the other (Transfer.unordered); praising the great attack while condemning the small theft is a selection not through what matters (selects_right_through).",
-   "mapper": "other"
+   "reading": "AI 读法：\"亏人自利\"有确切对应：从立场 p，一个部分丢失一个有意义的延续，恰当没有它的水平容纳该形成，而它对所需某条件的净汲取超过余量（loses_iff_beyond_margin）；在延续条件下，清除者的部分丢失居住者（clearer_loses_dweller）。\"亏人愈多，其不仁兹甚\"是标量累加；脊柱的比较是保留（扩大），混合部分不排序（Transfer.unordered），所以它只在一方保留另一方的范围内成立。\"至大为攻国则弗知非\"：通过一个读法的选择，只在关键之处跨其归并一致时才对（selects_right_through），把窃与攻国分开判断的读法不跟随关键之处，即墨子所说\"不知类\"。",
+   "reading_en": "亏人自利 is a part's net draw beyond the margin losing a continuation with significance (loses_iff_beyond_margin, clearer_loses_dweller); \"the more loss, the worse\" is scalar aggregation, which holds only where one course retains the other (Transfer.unordered); praising the great attack while condemning the small theft is a selection not through what matters (selects_right_through).",
+   "mapper": "other",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "mojing-li-suo-de-er-xi",
@@ -9729,7 +9749,7 @@
     "Becoming.Redundant.either_suffices",
     "Becoming.share_rises",
     "Becoming.RelativePosition.rise_needs_fall",
-    "Becoming.RuleCapture.Counts.proportional_locks"
+    "Becoming.RuleCapture.CarrierCounts.proportional_locks"
    ],
    "records": [
     "giving-that-waits-on-giving",
@@ -9748,10 +9768,10 @@
     }
    ],
    "relational": "The center holds the surplus and gives against the shortfall so that every member's support passes through it.",
-   "reading": "AI 读法：脊柱有其结构：一个给予者停止给予，在其可达家族中结束一切给予（withholding_absorbs）；一切供给不受支持时，消耗至多持续存量水平那么多步（consumption_ends_with_feeders）；两个可互替的供给者任一即足（either_suffices）。据有余而制不足若读作规则按各类所持之比例给出（比例读法），持多者被偏向而持得更多，回路不回转（Counts.proportional_locks）。国蓄以此结构为术，使民\"无不累于上\"，并以\"其国无敌\"为目的，这是争胜的框架（相对位置零和，rise_needs_fall）。分歧在目的：使整体依赖一个给予者以便控制；理论读出的是这一依赖的代价。",
-   "reading_en": "Holding the surplus to command the shortfall makes every member's support pass through one giver, whose withholding ends all giving reached from it (withholding_absorbs), where two feeders would each suffice (either_suffices). Read as a rule given in proportion to what each kind holds, the kind holding more is favoured and holds more, and the loop does not turn back (Counts.proportional_locks). 国蓄 uses the structure as a method of control aimed at having no rival.",
+   "reading": "AI 读法：脊柱有其结构：一个给予者停止给予，在其可达家族中结束一切给予（withholding_absorbs）；一切供给不受支持时，消耗至多持续存量水平那么多步（consumption_ends_with_feeders）；两个可互替的供给者任一即足（either_suffices）。据有余而制不足若读作规则按各类所持之比例给出（比例读法），持多者被偏向而持得更多，回路不回转（CarrierCounts.proportional_locks）。国蓄以此结构为术，使民\"无不累于上\"，并以\"其国无敌\"为目的，这是争胜的框架（相对位置零和，rise_needs_fall）。分歧在目的：使整体依赖一个给予者以便控制；理论读出的是这一依赖的代价。",
+   "reading_en": "Holding the surplus to command the shortfall makes every member's support pass through one giver, whose withholding ends all giving reached from it (withholding_absorbs), where two feeders would each suffice (either_suffices). Read as a rule given in proportion to what each kind holds, the kind holding more is favoured and holds more, and the loop does not turn back (CarrierCounts.proportional_locks). 国蓄 uses the structure as a method of control aimed at having no rival.",
    "mapper": "other",
-   "corrected": "RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its laws and record added and a sentence of each reading replaced or extended (both languages)"
+   "corrected": "RC: Becoming.RuleCapture proved the loop the reading named as a gap (capture through the rule); its laws and record added and a sentence of each reading replaced or extended (both languages); names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "guiguzi-bai-he",
@@ -9881,9 +9901,9 @@
    "declarations": [
     "Becoming.responds_to_own_level",
     "Becoming.ExchangeLaw.response_not_fixed_by_coupling",
-    "Becoming.Widening.closing_needs_less",
-    "Becoming.Widening.closes_within",
-    "Becoming.Widening.runs_away"
+    "Becoming.LoopReturn.closing_needs_less",
+    "Becoming.LoopReturn.closes_within",
+    "Becoming.LoopReturn.runs_away"
    ],
    "records": [
     "how-loops-form",
@@ -9902,7 +9922,8 @@
    "relational": "The first arrow is a relation to what strikes; the second is the response to one's own response.",
    "reading": "AI 读法：第二支箭是对自身回应的回应：一个交换开始回应它所给予的水平，即形成单环（responds_to_own_level）。耦合界定回应而不固定回应（response_not_fixed_by_coupling），身受不固定心受。环要关闭一个差异，需某一环节给回少于所收（closing_needs_less）；返回映射低于所收时在 d 圈内关闭（closes_within）；加倍则失控（runs_away）。\"唯生一受\"对应差异经过而不成环。",
    "reading_en": "The second arrow is a response to one's own response, a loop of one (responds_to_own_level); coupling bounds response without fixing it (response_not_fixed_by_coupling), and a loop closes a difference only where some link gives back less than it received (closing_needs_less, closes_within).",
-   "mapper": "other"
+   "mapper": "other",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "tanjing-wu-nian",
@@ -9919,7 +9940,7 @@
    "kind": "agreement",
    "declarations": [
     "Becoming.responds_to_own_level",
-    "Becoming.Widening.closing_needs_less",
+    "Becoming.LoopReturn.closing_needs_less",
     "Becoming.Withholding.withholding_returns",
     "Becoming.Web.Whole.needs_arising",
     "Becoming.Flow.nothing_supported_stays"
@@ -9943,7 +9964,8 @@
    "relational": "無念 is not the absence of thought but thought that does not fasten on itself; it stays in relation to what appears (於相) without fixing it.",
    "reading": "AI 读法：\"於念而無念\"：回应继续，不形成对自身回应的环（responds_to_own_level 所述之环不成）。\"不思酬害\"：在等待之环上停止给予每圈返回（withholding_returns），关闭差异需要一个给回少于所收的环节（closing_needs_less），不以害酬害就是那一环节。\"百物不思，当令念绝，即是法缚，即名边见\"：断绝一切回应被判为偏见；脊柱上，持续的整体只通过部分不断生起而持续（Whole.needs_arising），一旦无物被支持便不再有（nothing_supported_stays）。这是汉传对\"止息\"读法的内部修正，与苦灭条对照。",
    "reading_en": "無念 is response that does not loop on itself (responds_to_own_level); not repaying harm is the link that gives back less, which a loop needs to close a difference (closing_needs_less, against withholding_returns); and cutting off all thought is called bondage, as a lasting whole persists only through arising (Whole.needs_arising).",
-   "mapper": "other"
+   "mapper": "other",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "tanjing-zi-xing",
@@ -10043,9 +10065,9 @@
     "Becoming.responds_to_own_level",
     "Becoming.onLoop_succ_iff",
     "Becoming.forms_by_closing",
-    "Becoming.Widening.runs_away",
-    "Becoming.Widening.closing_needs_less",
-    "Becoming.Widening.closes_within"
+    "Becoming.LoopReturn.runs_away",
+    "Becoming.LoopReturn.closing_needs_less",
+    "Becoming.LoopReturn.closes_within"
    ],
    "records": [
     "how-loops-form",
@@ -10076,7 +10098,8 @@
    "relational": "Seed and manifest activity produce each other: what arises from a seed acts back and forms seed; transformation changes the loop's strengths rather than removing the relation.",
    "reading": "AI 读法：\"从种生时即能为因，复熏成种\"：环经闭合形成（onLoop_succ_iff, forms_by_closing），一个交换开始回应自己所给的水平即成单环（responds_to_own_level）；\"数数现行熏习\"对应环节加倍时差异失控（runs_away）。\"损染种势力，益净种功能\"：关闭一个差异需某一环节给回少于所收（closing_needs_less），低于所收者在有限圈内关闭（closes_within）。\"转舍转得\"是转变而不是断灭。剩余：论中\"种现俱时\"（俱有因）与\"种种前后\"（同类因）分开（KR9456）；\"芦束互依，因果俱时\"是同一时刻的互依，脊柱以离散步为建模选择，在这里把它读作逐步的环，不是同一步的互依。",
    "reading_en": "Seed and manifest producing each other is a loop formed by closing (onLoop_succ_iff, responds_to_own_level); repeated perfuming strengthens it (runs_away), and transforming it needs links that give back less (closing_needs_less). The text's simultaneous mutual support (reeds leaning on each other) is read here stepwise, a modelling choice of the spine.",
-   "mapper": "other"
+   "mapper": "other",
+   "corrected": "names follow the renamed declarations (R22, R30; tables in development/r22-names and development/r30-names), statements unchanged"
   },
   {
    "id": "weishi-wei-shi-wu-jing",

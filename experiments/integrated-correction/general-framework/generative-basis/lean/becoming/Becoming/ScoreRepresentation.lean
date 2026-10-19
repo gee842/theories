@@ -8,13 +8,13 @@ import Becoming.ValuationFrames
 One situation of one unfolding. Alternative `k` either retains a protected basic condition with no
 further gain (`k = 0`) or loses it and realizes `k` gains (`k > 0`); the alternatives are the
 configurations of a frame with no moves, realizing those claims, and the gains are its living
-claims. Three conditions are kept apart: living significance (`G0`) makes each realized gain
+claims. Three conditions are kept apart: living significance (`LivingSignificance`) makes each realized gain
 fall under its relevance parameter (which carries no valence); C (`Comparison`) favours every generative extension; the lexical order of
 the protected condition, then the gains (`Lexical.Above`, J1/J2 when a comparison meets
 `BasicPriority`), gives the condition priority. In this situation:
 
 * living significance, C and the lexical order hold together, and the lexical order never ranks
-  any number of gains above the protected condition (`g0_leaves_ordering_open`,
+  any number of gains above the protected condition (`livingSignificance_leaves_ordering_open`,
   `above_satisfies_comparison`, `never_outranked`);
 * living significance constrains positive relevance, not order: it holds as well beside a scalar
   order satisfying C that ranks gains above the protected condition
@@ -85,8 +85,8 @@ theorem successor_extends (k : Nat) : Extension frame living (k + 1) (k + 1 + 1)
    .gain (k + 1), True.intro, Nat.lt_succ_self (k + 1), Nat.lt_irrefl (k + 1)⟩
 
 /-- Living significance recognizes every realized gain of an alternative losing protection. -/
-theorem g0_recognizes_gains (positive : Nat → Claim → Prop) (g0 : G0 frame living positive) :
-    ∀ k i, i < k → positive k (.gain i) :=
+theorem livingSignificance_recognizes_gains (relevance : Nat → Claim → Prop) (g0 : LivingSignificance frame living relevance) :
+    ∀ k i, i < k → relevance k (.gain i) :=
   fun k i held => g0 k (.gain i) True.intro held
 
 /-- **The lexical order on the alternatives.** Protection is above any gains, and among
@@ -161,8 +161,8 @@ theorem no_nat_score_represents :
 
 /-- **Living significance leaves the order open**: it holds beside the lexical order and beside a
 scalar order satisfying C that ranks gains above protection. -/
-theorem g0_leaves_ordering_open :
-    G0 frame living (fun _ _ => True) ∧
+theorem livingSignificance_leaves_ordering_open :
+    LivingSignificance frame living (fun _ _ => True) ∧
       Comparison frame living (fun s t => Above protect gain t s) ∧
       (∀ k, 0 < k → ¬ Above protect gain k 0) ∧
       Comparison frame living (fun s t => weighted 0 s < weighted 0 t) ∧

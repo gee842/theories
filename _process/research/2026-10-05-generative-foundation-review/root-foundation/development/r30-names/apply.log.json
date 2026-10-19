@@ -1,0 +1,312 @@
+{
+ "changed": [
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ActiveReading.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Alternatives.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bundles.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Contacts.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContextualRuns.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CountdownCourses.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Coupling.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CouplingTraces.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CourseWorlds.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Courses.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gluing.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Handoff.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdeals.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/HistoryIdealsTraces.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ideals.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labelled.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Labels.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learnable.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearnableRuns.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LearningRuns.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ListingRefutations.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LocalUnits.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LoopReturn.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MoveRuns.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/MutualDependence.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Novelty.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Onward.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderWorlds.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Pace.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PartialReadout.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/PositiveGround.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ProfileReach.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlanTraces.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RelativePosition.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ResponseLearning.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RevisionRuns.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RuleCapture.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runs.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ScoreRepresentation.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/SharedCodes.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unrolling.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Verification.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gain.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+  "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean"
+ ],
+ "dot": {
+  "ReturnsWithin": "RestoredWithin",
+  "carried_doubles_return": "carried_doubles_roundTrip",
+  "carried_returns": "carried_roundTrip",
+  "runaway_of_returns": "runaway_of_roundTrip",
+  "Lossless": "Conserving",
+  "LosslessOn": "ConservingOn",
+  "idle_of_lossless": "idle_of_conserving",
+  "losslessOn_withRecord_iff": "conservingOn_withRecord_iff",
+  "changes_within_lossless": "changes_within_conserving",
+  "returns_of_lossless": "returns_of_conserving",
+  "not_lossless_of_arrow": "not_conserving_of_arrow",
+  "not_lossless_of_dissipates": "not_conserving_of_dissipates",
+  "cut_settles_iff": "cut_hasLatest_iff",
+  "Rests": "Predicts",
+  "agree_of_rests_both": "agree_of_predicts_both",
+  "not_rests_on_both": "not_predicts_on_both",
+  "still_not_rests_on_both": "still_not_predicts_on_both",
+  "still_lumped_of_rests": "still_lumped_of_predicts",
+  "rests_through": "predicts_through",
+  "first_not_rests": "first_not_predicts",
+  "whole_rests": "whole_predicts",
+  "restsFrom_iff": "predictsFrom_iff",
+  "rests_iff": "predicts_iff",
+  "rest_ranked_below": "pause_ranked_below",
+  "Closed": "ScottClosed",
+  "Alike": "AgreeOn",
+  "alike_iff_agreeOn": "agreeOn_iff",
+  "generation_fed_from_beyond": "embodiedArising_fed_from_beyond",
+  "generation_not_recurring_listing": "embodiedArising_not_recurring_listing",
+  "generation_fed_from_beyond_listing": "embodiedArising_fed_from_beyond_listing",
+  "generation_opens_listing": "embodiedArising_opens_listing",
+  "generation_draws_in_from_listing": "embodiedArising_draws_in_from_listing",
+  "generation_draws_in_listing": "embodiedArising_draws_in_listing",
+  "generation_needs_replenishment_from": "embodiedArising_needs_replenishment_from",
+  "generation_needs_replenishment": "embodiedArising_needs_replenishment",
+  "generation_not_recurring_from": "embodiedArising_not_recurring_from",
+  "generation_not_recurring_on": "embodiedArising_not_recurring_on",
+  "generation_opens": "embodiedArising_opens",
+  "generation_draws_in_from": "embodiedArising_draws_in_from",
+  "generation_draws_in": "embodiedArising_draws_in",
+  "generation_not_recurring": "embodiedArising_not_recurring",
+  "generation_stops_unrefuted": "embodiedArising_stops_unrefuted",
+  "dissipation_generation_not_recurring": "dissipation_arising_not_recurring",
+  "renewal_without_generation": "renewal_without_arising",
+  "Regenerating": "ActiveRenewer",
+  "regeneration_recurs": "activeRenewer_recurs",
+  "contingent_generation": "contingent_newContent",
+  "contingent_generation_of_unrestricted": "contingent_newContent_of_unrestricted",
+  "generation_by_bound": "newContent_by_bound",
+  "revised_generation_by_bound_of_unrestricted": "revised_newContent_by_bound_of_unrestricted",
+  "generation_by_bound_on_runs": "newContent_by_bound_on_runs",
+  "positive_ground_by_bound": "securesNewContent_by_bound",
+  "positive_ground_by_bound_of_unrestricted": "securesNewContent_by_bound_of_unrestricted",
+  "generation_runs": "process_runs",
+  "courseWorld_generation": "courseWorld_process",
+  "generation_of_resolved": "nextCohort_of_resolved",
+  "every_generation_resolves": "every_cohort_resolves",
+  "generation_merges": "nextCohort_merges",
+  "every_generation_holds": "every_cohort_holds",
+  "every_generation_corresponds": "every_cohort_corresponds",
+  "distinction_lost_every_generation": "distinction_lost_every_cohort",
+  "run_generation": "run_cohort",
+  "G0": "LivingSignificance",
+  "g0_wholeRun_iff": "livingSignificance_wholeRun_iff",
+  "g0_wholeRun_web_iff": "livingSignificance_wholeRun_web_iff",
+  "g0Relevant": "livingSignificanceRelevant",
+  "g0_holds": "livingSignificance_holds",
+  "reach_is_g0": "reach_is_livingSignificance",
+  "self_good_derives_reachable_g0": "selfSignificance_derives_reachable_livingSignificance",
+  "g0_of_unrestricted": "livingSignificance_of_unrestricted",
+  "g0_relevance_iff": "livingSignificance_relevance_iff",
+  "unrestricted_iff_g0": "unrestricted_iff_livingSignificance",
+  "unrestricted_iff_paths_g0": "unrestricted_iff_paths_livingSignificance",
+  "g0_recognizes_gains": "livingSignificance_recognizes_gains",
+  "g0_leaves_ordering_open": "livingSignificance_leaves_ordering_open",
+  "g0": "livingSignificance",
+  "paths_g0_comparison": "paths_livingSignificance_comparison",
+  "SecuresPositiveGround": "SecuresNewContent",
+  "securesPositiveGround_total": "securesNewContent_total",
+  "acquired_evidence_secures_good_and_leaves_both_opennesses": "acquired_evidence_secures_content_and_leaves_both_opennesses",
+  "SelfGood": "SelfSignificance",
+  "seed_of_selfGood": "seed_of_selfSignificance",
+  "self_good_reaches_at_least_as_connected": "selfSignificance_reaches_at_least_as_connected",
+  "selfGood_valuation": "selfSignificance_valuation",
+  "threshold_selfGood": "threshold_selfSignificance",
+  "DependentSelection": "DependentChoice",
+  "Neutral": "TwoSidedUnit",
+  "neutral_transport": "twoSidedUnit_transport",
+  "atMostOnce_neutral": "atMostOnce_twoSidedUnit",
+  "idle_neutral": "idle_twoSidedUnit",
+  "neutral_iff_idle": "twoSidedUnit_iff_idle",
+  "neutral_stays_once": "twoSidedUnit_stays_once",
+  "free_rider_loses": "clearer_loses_dweller",
+  "Image": "Relabels",
+  "history_keeps": "alikeUpTo_keeps",
+  "table_rests": "table_predicts",
+  "label_of_rests": "label_of_predicts",
+  "rests_with_labels": "predicts_with_labels",
+  "reading_rests": "reading_predicts",
+  "reading_rests_from": "reading_predicts_from",
+  "exact_iff_restsFrom": "exact_iff_predictsFrom",
+  "returns_of_coupledAlways": "roundTrip_of_coupledAlways",
+  "history_meaning": "twoSteps_meaning",
+  "through_history_later": "through_alikeUpTo_later",
+  "runs_iff_selection": "runs_iff_dependentChoice"
+ },
+ "dot_skipped": {
+  "Returns": [
+   [
+    "Restored",
+    "RoundTrip"
+   ],
+   []
+  ],
+  "returns": [
+   [
+    "restored",
+    "returns",
+    "roundTrip"
+   ],
+   [
+    "Becoming.Branching.Symmetric.returns",
+    "Becoming.Branching.Lossless.returns",
+    "Becoming.Onward.KeepsMoving.returns",
+    "Becoming.Branching.Juncture.returns",
+    "Becoming.Law.Lossless.returns"
+   ]
+  ],
+  "lossless": [
+   [
+    "conserving"
+   ],
+   [
+    "Becoming.World.lossless"
+   ]
+  ],
+  "Settles": [
+   [
+    "HasLatest",
+    "HasLongest"
+   ],
+   []
+  ],
+  "settles_principal": [
+   [
+    "hasLatest_principal",
+    "hasLongest_principal"
+   ],
+   []
+  ],
+  "principal_settles": [
+   [
+    "principal_hasLatest",
+    "principal_hasLongest"
+   ],
+   []
+  ],
+  "RestsFrom": [
+   [
+    "PredictsFrom"
+   ],
+   [
+    "Becoming.World.RestsFrom"
+   ]
+  ],
+  "generation": [
+   [
+    "nextCohort",
+    "process"
+   ],
+   []
+  ],
+  "Counts": [
+   [
+    "CarrierCounts",
+    "CountedWork"
+   ],
+   []
+  ],
+  "History": [
+   [
+    "AlikeUpTo",
+    "TwoSteps"
+   ],
+   []
+  ],
+  "history": [
+   [
+    "exchangeCount"
+   ],
+   [
+    "Becoming.ExchangeLaw.history"
+   ]
+  ],
+  "counts": [
+   [
+    "countedWork"
+   ],
+   [
+    "Becoming.Reorders.counts"
+   ]
+  ]
+ },
+ "log": {
+  "namespace": [
+   "Coupling.lean: namespace Coupling -> MoveFormation",
+   "Coupling.lean: namespace Coupling -> MoveFormation",
+   "Entropy.lean: namespace Settling -> Entropy.Settling",
+   "Gluing.lean: namespace Cycle -> Gluing.Cycle",
+   "Identity.lean: namespace Fork -> Identity.Fork",
+   "Labelled.lean: namespace Circulation -> Labelled.Circulation",
+   "Likeness.lean: namespace Parting -> Likeness.Parting",
+   "Order.lean: namespace Halving -> Order.Halving",
+   "Order.lean: namespace Crossing -> Order.Crossing",
+   "Order.lean: namespace Arising -> Order.Arising",
+   "Order.lean: namespace Crossing -> Order.Crossing",
+   "Order.lean: namespace Arising -> Order.Arising",
+   "Pace.lean: namespace Copying -> Pace.Copying",
+   "PositiveGround.lean: namespace PositiveGround -> SecuredContent",
+   "Relevance.lean: namespace Rest -> Pause",
+   "RuleCapture.lean: namespace Counts -> CarrierCounts",
+   "RuleCapture.lean: namespace Counts -> CarrierCounts",
+   "Weighted.lean: namespace Loop -> Weighted.Loop"
+  ],
+  "open": [
+   "Coupling.lean: open Coupling -> MoveFormation",
+   "Coupling.lean: open Coupling -> MoveFormation",
+   "RuleCapture.lean: open Counts -> CarrierCounts",
+   "RuleCapture.lean: open Counts -> CarrierCounts",
+   "RuleCapture.lean: open Counts -> CarrierCounts"
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 import Becoming.Dependence
 
 /-!
-# The Universal Metaethical Core on the Becoming spine
+# Valuation and significance on the Becoming spine
 
 Evaluation is stated over the same frame as the dynamics. Positions, their own
 regions and their significance are formed within the unfolding; `own` is a region
@@ -14,7 +14,7 @@ that does not undermine the dependence of others. Neither contains further gener
 an active formation participating in nothing counts as living.
 
 The premise card, every item named and visible:
-* S0, `SelfGood`: a position's own living claims have significance for it
+* S0, `SelfSignificance`: a position's own living claims have significance for it
   (significance, with no valence). Any S0-holding position with own living supplies a `Seed`.
 * N, boundary neutrality. Each rule below is accepted, by its rivals, inside some
   formed boundary (`Within`); the premise is that no formed boundary restricts it
@@ -22,7 +22,7 @@ The premise card, every item named and visible:
   - N_rel, `transmits`: significance passes along a formed relation to living
     content (patient side: self and other, kin, species, temporal distance);
   - N_std, `shares`: significance of living content holds from every standpoint;
-  - A, `articulates`: a response a position has access to, which secures positive
+  - A, `articulates`: a response a position has access to, which secures new
     content from its standpoint on the response's scope, supplies a contributory
     reason (addressee side: no endorsement condition).
 * C, `Comparison`: a no-loss extension realizing more living content is better.
@@ -42,13 +42,13 @@ The premise card, every item named and visible:
   relates two events only when one draws on it and the other depends on it at a
   positive level, so that idle conditions connect nothing and connection through a
   condition is made by its living use. Both readings are relative to a run, while
-  `G0`, `Comparison` and `universal_reason` take a `living` fixed across
+  `LivingSignificance`, `Comparison` and `universal_reason` take a `living` fixed across
   configurations; joining them needs a construction not given here.
 
 Results:
 * `significant_iff`: on a connected whole with some living content, living significance for every
   standpoint is equivalent to a seed with N_rel and N_std. This characterizes the
-  content of living significance with no axiom; since Ren folded living significance (`G0`) (11 October 2026) it is a condition,
+  content of living significance with no axiom; since Ren folded living significance (`LivingSignificance`) (11 October 2026) it is a condition,
   and a theorem of the continuation condition of `Becoming.Significance`. The forward direction is
   nearly immediate; the content lies in the backward direction and in minimality.
 * `positioned_articulation_of_articulates`: the positioned articulation D follows
@@ -98,12 +98,12 @@ treats bringing new lives into existence. A contributory reason is not a duty, a
 ranking or a prediction of recognition or compliance. Every declaration has an
 empty axiom report.
 
-The core imports only its own layers and the foundation. Living significance, C, D and the secured positive
-ground are stated here once; `Becoming.Bridge` shows that the definitions of
+The core imports only its own layers and the foundation. Living significance, C, D and the secured new
+content are stated here once; `Becoming.Bridge` shows that the definitions of
 `GenerativeComparison` and `PositionedPositiveReason` are these, so their theorems
 apply without the core depending on them.
 
-The valuations read on frames (`Valuation.relations`, `G0`, `universal_reason`, `Comparison`,
+The valuations read on frames (`Valuation.relations`, `LivingSignificance`, `universal_reason`, `Comparison`,
 `Extension`, `LiftBetter`, the `Conditions`, `Separate` and `Model` instances) are in
 `Becoming.ValuationFrames` (board item W).
 -/
@@ -137,19 +137,21 @@ namespace Valuation
 
 variable {Pos C : Type} (V : Valuation Pos C)
 
-/-- S0 at a position. -/
-def SelfGood (p : Pos) : Prop :=
+/-- Self-significance at a position (S0): its own living claims have significance from it. -/
+def SelfSignificance (p : Pos) : Prop :=
   ∀ c, V.own p c → V.living c → V.sig p c
 
 /-- Some living claim has significance from some standpoint. -/
 def Seed : Prop :=
   ∃ p c, V.living c ∧ V.sig p c
 
-/-- N_rel's rule. -/
+/-- The rule of relational neutrality (N_rel): significance passes along a formed relation to
+living content. -/
 def transmits : Pos × C × C → Prop
   | (p, c, d) => V.sig p c → V.related c d → V.living d → V.sig p d
 
-/-- N_std's rule. -/
+/-- The rule of standpoint neutrality (N_std): significance of living content holds from every
+standpoint. -/
 def shares : Pos × Pos × C → Prop
   | (p, q, c) => V.living c → V.sig p c → V.sig q c
 
@@ -163,7 +165,7 @@ def Significant : Prop :=
 
 variable {V}
 
-theorem seed_of_selfGood {p : Pos} {c : C} (self : V.SelfGood p) (own : V.own p c)
+theorem seed_of_selfSignificance {p : Pos} {c : C} (self : V.SelfSignificance p) (own : V.own p c)
     (alive : V.living c) : V.Seed :=
   ⟨p, c, alive, self c own alive⟩
 
@@ -173,16 +175,16 @@ end Valuation
 
 variable {S A C Pos : Type}
 
-/-- Every admitted outcome of the response holds positive content absent before it. -/
-def SecuresPositiveGround {H R : Type} (admitted : R → H → Prop) (before : H → C → Prop)
-    (positive : H → C → Prop) (r : R) : Prop :=
-  ∀ h, admitted r h → ∃ c, positive h c ∧ ¬ before h c
+/-- Every admitted outcome of the response holds relevant content absent before it. -/
+def SecuresNewContent {H R : Type} (admitted : R → H → Prop) (before : H → C → Prop)
+    (relevance : H → C → Prop) (r : R) : Prop :=
+  ∀ h, admitted r h → ∃ c, relevance h c ∧ ¬ before h c
 
 /-- D: positioned articulation. Endorsement does not occur in it. -/
 def PositionedArticulation {H R : Type} (access : Pos → R → Prop)
-    (admitted : R → H → Prop) (before : H → C → Prop) (positive : H → C → Prop)
+    (admitted : R → H → Prop) (before : H → C → Prop) (relevance : H → C → Prop)
     (Reason : Pos → R → Prop) : Prop :=
-  ∀ p r, access p r → SecuresPositiveGround admitted before positive r → Reason p r
+  ∀ p r, access p r → SecuresNewContent admitted before relevance r → Reason p r
 
 /-- A's rule: securing positive content from one's own standpoint, with access,
 supplies a contributory reason. -/
@@ -190,7 +192,7 @@ def articulates {H R : Type} (V : Valuation Pos C) (access : Pos → R → Prop)
     (admitted : R → H → Prop) (before : H → C → Prop) (Reason : Pos → R → Prop) :
     Pos × R → Prop
   | (p, r) => access p r →
-      SecuresPositiveGround admitted before (fun _ c => V.sig p c) r → Reason p r
+      SecuresNewContent admitted before (fun _ c => V.sig p c) r → Reason p r
 
 /-- D follows from A with living significance read with unindexed significance. -/
 theorem positioned_articulation_of_articulates {H R : Type} {V : Valuation Pos C}

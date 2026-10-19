@@ -15,7 +15,7 @@ word half is a law of the process's histories read by their moves only.
   feasible from `s` (`classification`, `HistoryIdeals.classification` with
   `HistoryIdeals.history_within_iff` on the prefix-closed language of feasible courses). A
   feasible course settles as a history of the process (`course_settles`,
-  `HistoryIdeals.principal_settles`).
+  `HistoryIdeals.principal_hasLongest`).
 * **A run's moves go on.** The moves of every run are a history of the process from the run's
   start that goes on (`run_goesOn`, `HistoryIdeals.trace_goesOn`): each of its initial courses is
   the trace of the run's first steps (`run_initial_trace`).
@@ -49,7 +49,7 @@ def HistoryOf (P : Process S A) (s : S) (h : History A) : Prop :=
 picked, is a history of the process from `s`.** -/
 theorem classification (P : Process S A) (s : S) {I : Ideals.Ideal (prefixOrder A)}
     (feasible : Ideals.Within (prefixOrder A) (Feasible P s) I)
-    (decided : Settles I ∨
+    (decided : HasLongest I ∨
       ∃ pick : Nat → List A, (∀ n, I.mem (pick n)) ∧ ∀ n, n < (pick n).length) :
     ∃ h : History A, Ideals.Ideal.Same I (historyIdeal h) ∧ HistoryOf P s h :=
   match HistoryIdeals.classification decided with
@@ -59,8 +59,8 @@ theorem classification (P : Process S A) (s : S) {I : Ideals.Ideal (prefixOrder 
 
 /-- **A feasible course settles as a history of the process.** -/
 theorem course_settles (P : Process S A) (s : S) {w : List A} (feasible : Feasible P s w) :
-    Settles (Ideals.principal (prefixOrder A) w) ∧ HistoryOf P s (.finite w) :=
-  ⟨principal_settles w, feasible⟩
+    HasLongest (Ideals.principal (prefixOrder A) w) ∧ HistoryOf P s (.finite w) :=
+  ⟨principal_hasLongest w, feasible⟩
 
 /-- **Each initial course of a run's moves is the trace of its first steps.** -/
 theorem run_initial_trace {P : Process S A} (r : Run P) :

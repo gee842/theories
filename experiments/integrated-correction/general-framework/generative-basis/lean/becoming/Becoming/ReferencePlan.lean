@@ -236,38 +236,38 @@ theorem checked_pair_correct (c : Bool → Bool) (separate : c false ≠ c true)
 /-- The address domain of the lumping on installed contacts. These are alternative
 signals at its contacts, not claims that unseen channels were actually sampled. Two signals are
 alike where they agree at every planned address: `Learning.Training.AgreeOn` on the plan
-(`alike_iff_agreeOn`). This is not `Becoming.Alike` of `Becoming.Unfolding`, which relates two
+(`agreeOn_iff`). This is not `Becoming.Alike` of `Becoming.Unfolding`, which relates two
 configurations by a bisimulation. -/
-def Alike (plan : List Nat) (x y : Nat → Bool) : Prop :=
+def AgreeOn (plan : List Nat) (x y : Nat → Bool) : Prop :=
   ∀ i, i ∈ plan → x i = y i
 
 /-- Alike under a plan is agreeing on the planned addresses, by definition. -/
-theorem alike_iff_agreeOn (plan : List Nat) (x y : Nat → Bool) :
-    Alike plan x y ↔ Learning.Training.AgreeOn (fun i => i ∈ plan) x y :=
+theorem agreeOn_iff (plan : List Nat) (x y : Nat → Bool) :
+    AgreeOn plan x y ↔ Learning.Training.AgreeOn (fun i => i ∈ plan) x y :=
   Iff.rfl
 
 /-- Adding an address keeps every earlier selection: an instance of `Contacts.keeps_iff_retains`. -/
 theorem added_keeps (m : List Nat) (i : Nat) :
-    Registration.Keeps Alike m (i :: m) :=
+    Registration.Keeps AgreeOn m (i :: m) :=
   (Contacts.keeps_iff_retains (fun p : List Nat => p) m (i :: m)).mpr fun _ h => List.Mem.tail i h
 
 /-- Direct reuse of `Registration.keeps_iff`, not a second definition of selection through a
 lumping. -/
 theorem old_selections_remain (m : List Nat) (i : Nat) :
-    ∀ select, Learning.Training.Through (Alike m) select →
-      Learning.Training.Through (Alike (i :: m)) select :=
+    ∀ select, Learning.Training.Through (AgreeOn m) select →
+      Learning.Training.Through (AgreeOn (i :: m)) select :=
   (Registration.keeps_iff
     (fun _ _ _ => rfl) (fun _ _ h j hj => (h j hj).symm)
     (fun _ _ _ h k j hj => (h j hj).trans (k j hj))).mp (added_keeps m i)
 
 theorem choice_at_contact {m : List Nat} {i : Nat} (mem : i ∈ m) :
-    Learning.Training.Through (Alike m) (fun x => x i = true) :=
+    Learning.Training.Through (AgreeOn m) (fun x => x i = true) :=
   fun _ _ h => ⟨fun hx => (h i mem).symm.trans hx, fun hy => (h i mem).trans hy⟩
 
 /-- A new contact gains a choice: an instance of `Contacts.added_gains`. -/
 theorem new_contact_choice (m : List Nat) (i : Nat) (absent : i ∉ m) :
-    Learning.Training.Through (Alike (i :: m)) (fun x => x i = true) ∧
-      ¬ Learning.Training.Through (Alike m) (fun x => x i = true) :=
+    Learning.Training.Through (AgreeOn (i :: m)) (fun x => x i = true) ∧
+      ¬ Learning.Training.Through (AgreeOn m) (fun x => x i = true) :=
   Contacts.added_gains (List.Mem.head m) absent
 
 /-! The native history has two repairs, no resource reset and no external
@@ -331,18 +331,18 @@ theorem second_candidate_unavailable_before :
   | tail _ h => cases h
 
 theorem first_new_selection :
-    Learning.Training.Through (Alike repairedFirst.method) (fun x => x 0 = true) ∧
-      ¬ Learning.Training.Through (Alike initial.method) (fun x => x 0 = true) :=
+    Learning.Training.Through (AgreeOn repairedFirst.method) (fun x => x 0 = true) ∧
+      ¬ Learning.Training.Through (AgreeOn initial.method) (fun x => x 0 = true) :=
   new_contact_choice [] 0 (List.not_mem_nil)
 
 theorem second_new_selection :
-    Learning.Training.Through (Alike repairedSecond.method) (fun x => x 1 = true) ∧
-      ¬ Learning.Training.Through (Alike repairedFirst.method) (fun x => x 1 = true) :=
+    Learning.Training.Through (AgreeOn repairedSecond.method) (fun x => x 1 = true) ∧
+      ¬ Learning.Training.Through (AgreeOn repairedFirst.method) (fun x => x 1 = true) :=
   new_contact_choice [0] 1 second_candidate_unavailable_before.2.2.1
 
 /-- Only constructed and installed contacts participate in this lumping. -/
 def alikeOnInstalled (s : State) : (Nat → Bool) → (Nat → Bool) → Prop :=
-  Alike (s.installed.map Sample.address)
+  AgreeOn (s.installed.map Sample.address)
 
 theorem first_installed_choice :
     Learning.Training.Through (alikeOnInstalled repairedFirst) (fun x => x 0 = true) ∧
@@ -450,7 +450,7 @@ theorem covered {s t : State} {as : List Act} (h : Trace P s as t) :
 theorem propose_answers : Contacts.Answers propose := fun _ _ => List.Mem.head _
 
 theorem revise_registers_failure (m : List Nat) (i : Nat) :
-    Learning.Training.Through (Alike (propose m (some i))) (fun x => x i = true) :=
+    Learning.Training.Through (AgreeOn (propose m (some i))) (fun x => x i = true) :=
   (Contacts.answers_iff propose).mpr propose_answers m i
 
 /-- The frozen operation re-runs the retained method whatever the mismatch. -/
@@ -464,7 +464,7 @@ theorem frozen_blind : Contacts.Blind frozenRule := fun _ _ => rfl
 /-- **Instance of `Contacts.blind_misses`.** At every retained method, some failure is left
 unanswered by the frozen rule; `frozen_method_still_fails` is one control of this law. -/
 theorem frozen_misses (m : List Nat) :
-    ∃ i, ¬ Learning.Training.Through (Alike (frozenRule m (some i))) (fun x => x i = true) :=
+    ∃ i, ¬ Learning.Training.Through (AgreeOn (frozenRule m (some i))) (fun x => x i = true) :=
   Contacts.blind_misses frozen_blind Contacts.nat_unlisted m
 
 theorem flip_is_pick (c : Bool → Bool) (b : Bool) :

@@ -104,7 +104,7 @@ variable {V}
 /-- Where every living claim is some position's own, living significance is S0 at every position with
 standpoint neutrality. Neither connection nor relational neutrality is used. -/
 theorem significant_iff_held (held : V.Held) :
-    V.Significant ↔ (∀ p, V.SelfGood p) ∧ Neutral V.shares :=
+    V.Significant ↔ (∀ p, V.SelfSignificance p) ∧ Neutral V.shares :=
   ⟨fun all => ⟨fun p c _ alive => all p c alive, fun ⟨_, q, c⟩ alive _ => all q c alive⟩,
     fun ⟨self, share⟩ q c alive => match held c alive with
       | ⟨p, own⟩ => share (p, q, c) alive (self p c own alive)⟩
@@ -115,7 +115,7 @@ neutrality, and relational neutrality into claims no position holds. -/
 theorem significant_iff_reached [∀ c, Decidable (∃ p, V.own p c)]
     (reached : ∀ c, V.living c → ∃ c₀ p, V.living c₀ ∧ V.own p c₀ ∧ Reach V.relations c₀ c) :
     V.Significant ↔
-      (∀ p, V.SelfGood p) ∧ Neutral V.shares ∧ Within (fun i => V.Unheld i.2.2) V.transmits :=
+      (∀ p, V.SelfSignificance p) ∧ Neutral V.shares ∧ Within (fun i => V.Unheld i.2.2) V.transmits :=
   ⟨fun all => ⟨fun p c _ alive => all p c alive, fun ⟨_, q, c⟩ alive _ => all q c alive,
       fun ⟨p, _, d⟩ _ _ _ alive => all p d alive⟩,
     fun ⟨self, share, transmit⟩ q c alive => match reached c alive with
@@ -128,7 +128,7 @@ theorem significant_iff_reached [∀ c, Decidable (∃ p, V.own p c)]
 
 /-- S0 at every position already carries each position's significance along any relation
 into its own region: transmission into own regions adds nothing to S0. -/
-theorem own_transmission (self : ∀ p, V.SelfGood p) :
+theorem own_transmission (self : ∀ p, V.SelfSignificance p) :
     Within (fun i => V.own i.1 i.2.2) V.transmits :=
   fun ⟨p, _, d⟩ own _ _ alive => self p d own alive
 
@@ -136,7 +136,7 @@ theorem own_transmission (self : ∀ p, V.SelfGood p) :
 claim, S0 at every position with relational neutrality gives living significance, with no standpoint
 neutrality. -/
 theorem significant_of_transmits (connected : V.Connected)
-    (holds : ∀ p, ∃ c, V.own p c ∧ V.living c) (self : ∀ p, V.SelfGood p)
+    (holds : ∀ p, ∃ c, V.own p c ∧ V.living c) (self : ∀ p, V.SelfSignificance p)
     (transmit : Neutral V.transmits) : V.Significant :=
   fun q c alive => match holds q with
     | ⟨c₀, own, alive₀⟩ =>
@@ -159,7 +159,7 @@ theorem held_by_formations (sig : F → F × Nat → Prop) :
 /-- So living significance there is S0 at every formation with standpoint neutrality. -/
 theorem significant_iff_self (sig : F → F × Nat → Prop) :
     (W.valuation (fun f e => e.1 = f) sig).Significant ↔
-      (∀ f, (W.valuation (fun f e => e.1 = f) sig).SelfGood f) ∧
+      (∀ f, (W.valuation (fun f e => e.1 = f) sig).SelfSignificance f) ∧
         Neutral (W.valuation (fun f e => e.1 = f) sig).shares :=
   Valuation.significant_iff_held (W.held_by_formations sig)
 
@@ -179,7 +179,7 @@ def valuation : Valuation Bool Bool := ⟨fun _ => True, fun _ _ => True, own, o
 /-- Held lives and S0 do not suffice: every life is held and valued by its own standpoint
 only, and neither standpoint neutrality nor relational neutrality holds. -/
 theorem not_enough :
-    valuation.Held ∧ (∀ p, valuation.SelfGood p) ∧ ¬ Neutral valuation.shares ∧
+    valuation.Held ∧ (∀ p, valuation.SelfSignificance p) ∧ ¬ Neutral valuation.shares ∧
       ¬ Neutral valuation.transmits ∧ ¬ valuation.Significant :=
   ⟨fun c _ => match c with
     | true => ⟨true, trivial⟩
@@ -203,7 +203,7 @@ def valuation : Valuation Unit Bool := ⟨fun _ => True, fun _ _ => False, own, 
 /-- Holding is needed: a life held by no standpoint has no significance though S0 and
 standpoint neutrality hold. -/
 theorem held_is_needed :
-    ¬ valuation.Held ∧ (∀ p, valuation.SelfGood p) ∧ Neutral valuation.shares ∧
+    ¬ valuation.Held ∧ (∀ p, valuation.SelfSignificance p) ∧ Neutral valuation.shares ∧
       ¬ valuation.Significant :=
   ⟨fun held => match held false trivial with
     | ⟨(), no⟩ => no,
@@ -228,7 +228,7 @@ one, S0 and standpoint neutrality hold, and the unheld life has no significance.
 theorem transmission_is_needed :
     (∀ c, valuation.living c →
         ∃ c₀ p, valuation.living c₀ ∧ valuation.own p c₀ ∧ Reach valuation.relations c₀ c) ∧
-      (∀ p, valuation.SelfGood p) ∧ Neutral valuation.shares ∧
+      (∀ p, valuation.SelfSignificance p) ∧ Neutral valuation.shares ∧
       ¬ Within (fun i => valuation.Unheld i.2.2) valuation.transmits ∧
       ¬ valuation.Significant :=
   ⟨fun c _ => match c with
@@ -410,7 +410,7 @@ standpoint, so standpoint neutrality and living significance fail. The clearer's
 related to it through the habitat, so transmission out of the clearer's own region along the
 formed relations fails. -/
 theorem center_not_derived :
-    valuation.Held ∧ (∀ f, valuation.SelfGood f) ∧
+    valuation.Held ∧ (∀ f, valuation.SelfSignificance f) ∧
       (∀ p e e', valuation.sig p e → flow.FedBy web e e' → valuation.sig p e') ∧
       valuation.living (.dweller, 0) ∧ ¬ valuation.sig .clearer (.dweller, 0) ∧
       ¬ Neutral valuation.shares ∧ ¬ valuation.Significant ∧

@@ -1,0 +1,4 @@
+import Becoming.JointPlanFrames
+#check @Becoming.JointPlanFrames.plans_lift_iff_of_kernel
+#check @Becoming.JointPlanFrames.plans_lift_of_jointAlike
+#check @Becoming.JointPlanFrames.plans_lift_of_sameJointTests

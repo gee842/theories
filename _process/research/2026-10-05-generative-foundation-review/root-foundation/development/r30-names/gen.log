@@ -1,0 +1,4 @@
+424 {('decl', True): 345, ('module', True): 4, ('namespace', True): 12, ('keep', False): 32, ('binder', True): 1, ('docstring', True): 1, ('delete', True): 1, ('port', True): 28}
+new exists: ['Becoming.Generation->Becoming.Arising']
+clash: []
+missing old: ['Becoming.Web.static (+ static_supported/_dependent/_renewed/_consumed/_renewingIn/_consumingIn)']

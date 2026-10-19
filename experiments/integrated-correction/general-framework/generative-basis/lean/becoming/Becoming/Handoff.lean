@@ -1,4 +1,4 @@
-import Becoming.PositiveGround
+import Becoming.SecuredContent
 import Becoming.RenewalBound
 
 /-!
@@ -14,12 +14,12 @@ supplied.
   the handoff to the next rule does not raise it, the handed certificate falls at every
   unfinished step (`handed_off_progress`), so a completion comes within the initial bound
   (`RenewalBound.renewal_within_rank_bound`), and with correspondence each admitted history forms,
-  within the bound, living content absent before (`generation_by_bound`); living significance
-  makes it relevant, under `G0`'s relevance parameter, which carries no valence
-  (`positive_ground_by_bound`), and so does the continuation
-  condition (`positive_ground_by_bound_of_unrestricted`,
-  `revised_generation_by_bound_of_unrestricted`), on runs of any process
-  (`generation_by_bound_on_runs`) and on a run of a frame (`Run.novel_by_handoff`,
+  within the bound, living content absent before (`newContent_by_bound`); living significance
+  makes it relevant, under `LivingSignificance`'s relevance parameter, which carries no valence
+  (`securesNewContent_by_bound`), and so does the continuation
+  condition (`securesNewContent_by_bound_of_unrestricted`,
+  `revised_newContent_by_bound_of_unrestricted`), on runs of any process
+  (`newContent_by_bound_on_runs`) and on a run of a frame (`Run.novel_by_handoff`,
   `Run.relevance_by_handoff_of_unrestricted`).
 * **Revised rules can fail for ever.** In a local arrangement, every rule the revising run
   executes finishes when retained and lowers its own remaining count, yet no outcome ever forms
@@ -62,7 +62,7 @@ def boundedFrame {H Q : Type} (appears : H → Nat → Q → Prop) (bound : Nat)
 
 /-- **Generation by bound**: each admitted history forms, within the bound, living content absent
 before it. -/
-theorem generation_by_bound {H S Q : Type} (admitted : H → Prop) (states : H → Nat → S)
+theorem newContent_by_bound {H S Q : Type} (admitted : H → Prop) (states : H → Nat → S)
     (rank : H → Nat → S → Nat) (completed : H → Nat → Prop)
     (decideEvent : ∀ h n, Decidable (completed h n)) (appears : H → Nat → Q → Prop)
     (living : Q → Prop) (before : H → Q → Prop) (bound : Nat)
@@ -82,20 +82,20 @@ theorem generation_by_bound {H S Q : Type} (admitted : H → Prop) (states : H �
     | ⟨n, _, within, finished⟩ => match correspondence h allowed n finished with
       | ⟨q, alive, actual, fresh⟩ => ⟨q, alive, ⟨n, Nat.zero_add bound ▸ within, actual⟩, fresh⟩
 
-/-- **The producer's output is the formation premise of positive ground.** This does not
+/-- **The producer's output is the formation premise of secured new content.** This does not
 establish all-things permission or a duty. -/
-theorem positive_ground_by_bound {H Q : Type} (admitted : H → Prop)
+theorem securesNewContent_by_bound {H Q : Type} (admitted : H → Prop)
     (appears : H → Nat → Q → Prop) (living : Q → Prop) (before : H → Q → Prop) (bound : Nat)
-    (positive : H → Q → Prop) (g0 : G0 (boundedFrame appears bound) living positive)
+    (relevance : H → Q → Prop) (g0 : LivingSignificance (boundedFrame appears bound) living relevance)
     (formed : ∀ h, admitted h → ∃ q, living q ∧ (boundedFrame appears bound).realized h q ∧
       ¬ before h q) :
-    ∀ h, admitted h → ∃ q, positive h q ∧ ¬ before h q :=
-  PositiveGround.contingent_generation (boundedFrame appears bound) living admitted before positive
+    ∀ h, admitted h → ∃ q, relevance h q ∧ ¬ before h q :=
+  SecuredContent.contingent_newContent (boundedFrame appears bound) living admitted before relevance
     g0 formed
 
 /-- Under the continuation condition, the formed content falls under the relevance read from
 significance (significance from every standpoint, with no valence). -/
-theorem positive_ground_by_bound_of_unrestricted {H Q F Pos : Type} (admitted : H → Prop)
+theorem securesNewContent_by_bound_of_unrestricted {H Q F Pos : Type} (admitted : H → Prop)
     (appears : H → Nat → Q → Prop) (living : Q → Prop) (before : H → Q → Prop) (bound : Nat)
     {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) (formation : Q → F)
     (step : Q → Nat)
@@ -103,12 +103,12 @@ theorem positive_ground_by_bound_of_unrestricted {H Q F Pos : Type} (admitted : 
       ¬ before h q) :
     ∀ h, admitted h → ∃ q,
       (boundedFrame appears bound).relevance living sig formation step h q ∧ ¬ before h q :=
-  positive_ground_by_bound admitted appears living before bound _
-    (g0_of_unrestricted (boundedFrame appears bound) living unrestricted formation step) formed
+  securesNewContent_by_bound admitted appears living before bound _
+    (livingSignificance_of_unrestricted (boundedFrame appears bound) living unrestricted formation step) formed
 
 /-- **Producer to consumer**: every operational hypothesis of generation by bound retained, and
 positive relevance obtained from significance. -/
-theorem revised_generation_by_bound_of_unrestricted {H S Q F Pos : Type} (admitted : H → Prop)
+theorem revised_newContent_by_bound_of_unrestricted {H S Q F Pos : Type} (admitted : H → Prop)
     (states : H → Nat → S) (rank : H → Nat → S → Nat) (completed : H → Nat → Prop)
     (decideEvent : ∀ h n, Decidable (completed h n)) (appears : H → Nat → Q → Prop)
     (living : Q → Prop) (before : H → Q → Prop) (bound : Nat)
@@ -123,14 +123,14 @@ theorem revised_generation_by_bound_of_unrestricted {H S Q F Pos : Type} (admitt
     (step : Q → Nat) :
     ∀ h, admitted h → ∃ q,
       (boundedFrame appears bound).relevance living sig formation step h q ∧ ¬ before h q :=
-  positive_ground_by_bound_of_unrestricted admitted appears living before bound unrestricted
+  securesNewContent_by_bound_of_unrestricted admitted appears living before bound unrestricted
     formation step
-    (generation_by_bound admitted states rank completed decideEvent appears living before bound
+    (newContent_by_bound admitted states rank completed decideEvent appears living before bound
       initial localStep handoff correspondence)
 
 /-- **Generation by bound on a family of runs** of any process, the histories being the runs'
 configurations. -/
-theorem generation_by_bound_on_runs {S A H Q F Pos : Type} {P : Process S A} (r : H → Run P)
+theorem newContent_by_bound_on_runs {S A H Q F Pos : Type} {P : Process S A} (r : H → Run P)
     (admitted : H → Prop) (rank : H → Nat → S → Nat) (completed : H → Nat → Prop)
     (decideEvent : ∀ h n, Decidable (completed h n)) (appears : H → Nat → Q → Prop)
     (living : Q → Prop) (before : H → Q → Prop) (bound : Nat)
@@ -145,7 +145,7 @@ theorem generation_by_bound_on_runs {S A H Q F Pos : Type} {P : Process S A} (r 
     (step : Q → Nat) :
     ∀ h, admitted h → ∃ q,
       (boundedFrame appears bound).relevance living sig formation step h q ∧ ¬ before h q :=
-  revised_generation_by_bound_of_unrestricted admitted (fun h => (r h).state) rank completed
+  revised_newContent_by_bound_of_unrestricted admitted (fun h => (r h).state) rank completed
     decideEvent appears living before bound initial localStep handoff correspondence unrestricted
     formation step
 
@@ -180,7 +180,7 @@ theorem Run.relevance_by_handoff_of_unrestricted {S A Q F Pos : Type} (M : Frame
   match Run.novel_by_handoff M r living before rank completed decision bound initial localStep
       handoff correspondence with
   | ⟨n, within, q, alive, real, fresh⟩ =>
-    ⟨n, within, q, g0_of_unrestricted M living unrestricted formation step _ q alive real, fresh⟩
+    ⟨n, within, q, livingSignificance_of_unrestricted M living unrestricted formation step _ q alive real, fresh⟩
 
 /-! ## Revised rules in a local arrangement
 

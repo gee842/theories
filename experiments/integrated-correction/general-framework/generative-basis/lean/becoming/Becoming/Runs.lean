@@ -41,9 +41,9 @@ run too, exactly, with nothing read away. No premise enters beyond what each the
   what has stood it balances exactly where the course is feasible
   (`ExchangeLaw.courseWorld_balanced_iff`), so a feasible course is a run of the law of exchange
   (`ExchangeLaw.courseRun`). Its generation is a run too: the determined process of the stage and
-  the history so far (`ExchangeLaw.generation`) has exactly one run from the start, the generated
-  history (`ExchangeLaw.generation_runs`), from which the world's standings are read
-  (`ExchangeLaw.courseWorld_generation`).
+  the history so far (`ExchangeLaw.process`) has exactly one run from the start, the generated
+  history (`ExchangeLaw.process_runs`), from which the world's standings are read
+  (`ExchangeLaw.courseWorld_process`).
 * **The carried amount is a run.** The amount coupling strengths carry (`Becoming.Propagation`'s
   `carried`) is the standing of the world the carrying law generates (`carriedWorld`,
   `carriedWorld_level`). That world balances with no premise (`carriedWorld_balanced`), so the
@@ -243,12 +243,12 @@ theorem ExchangeLaw.courseRun_state (na : law.Nonanticipating)
 
 /-- The generation of a law's course: the determined process of the stage and the history so
 far. -/
-def ExchangeLaw.generation (law : ExchangeLaw F C) (present : Nat → List F) :
+def ExchangeLaw.process (law : ExchangeLaw F C) (present : Nat → List F) :
     Process (Nat × (Nat → C → Nat)) Unit :=
   Law.process (law.next present)
 
 /-- **A course's generation has one run from the start: the generated history.** -/
-theorem ExchangeLaw.generation_runs (r : Run (law.generation present))
+theorem ExchangeLaw.process_runs (r : Run (law.process present))
     (begins : r.state 0 = (0, fun _ => start)) :
     ∀ n, r.state n = (n, law.history present start n) :=
   fun n => (Branching.law_run_state r n).trans
@@ -256,10 +256,10 @@ theorem ExchangeLaw.generation_runs (r : Run (law.generation present))
       (ExchangeLaw.history_orbit start n))
 
 /-- **The course world's standings are read off the run of its generation.** -/
-theorem ExchangeLaw.courseWorld_generation (r : Run (law.generation present))
+theorem ExchangeLaw.courseWorld_process (r : Run (law.process present))
     (begins : r.state 0 = (0, fun _ => start)) (t : Nat) (c : C) :
     (law.courseWorld present start W).web.level t (.inr c) = (r.state t).2 t c :=
-  (congrArg (fun x => x.2 t c) (ExchangeLaw.generation_runs r begins t)).symm
+  (congrArg (fun x => x.2 t c) (ExchangeLaw.process_runs r begins t)).symm
 
 end Course
 

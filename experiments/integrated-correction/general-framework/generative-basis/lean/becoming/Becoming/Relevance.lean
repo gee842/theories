@@ -8,22 +8,22 @@ import Becoming.Inquiry
 `Becoming.Significance` shows that Ren's proposal, the continuation condition, gives living significance. Before Ren decided whether the continuation condition
 replaces living significance, every use of living significance in the core and in the periphery's
 generative-capacity modules was audited for what it needs of positive relevance and of
-`living`. This module states what the audit found. “Positive relevance” names `G0`'s parameter
-`positive`; the name carries no valence.
+`living`. This module states what the audit found. “Positive relevance” names `LivingSignificance`'s parameter
+`relevance` (named `positive` before R30); it carries no valence.
 
 * **Living significance from the continuation condition on every frame.** Read positive relevance from significance: realized
   living content whose continuation has significance from every standpoint
   (`Frame.relevance`). Under the continuation condition living significance holds on every frame for every reading of `living`
-  (`g0_of_unrestricted`), and this relevance is the least satisfying living significance, exactly the realized
+  (`livingSignificance_of_unrestricted`), and this relevance is the least satisfying living significance, exactly the realized
   living content (`relevance_least`). Every use of living significance takes it as a hypothesis for an arbitrary
   positive relevance, so each is discharged by this one; `Becoming.Bridge` does so for the
   periphery's interface. With no axiom, living significance with this relevance holds exactly where every
   realized living claim's continuation has significance from every standpoint
-  (`g0_relevance_iff`): it is the continuation condition on realized living content.
+  (`livingSignificance_relevance_iff`): it is the continuation condition on realized living content.
 * **The continuation condition is living significance for anything.** On a frame whose claims are formations at steps, each
   realized at some configuration, the continuation condition holds exactly when living significance holds with every claim living
-  and positive relevance read as significance from every standpoint (`unrestricted_iff_g0`).
-  The level paths of every web are such a frame (`Web.unrestricted_iff_paths_g0`). Replacing living significance
+  and positive relevance read as significance from every standpoint (`unrestricted_iff_livingSignificance`).
+  The level paths of every web are such a frame (`Web.unrestricted_iff_paths_livingSignificance`). Replacing living significance
   by the continuation condition widens its scope from living content to anything and weakens “positive” to “has
   significance”.
 * **The reason premises keep their scope only on living content.** Where everything has
@@ -56,7 +56,7 @@ generative-capacity modules was audited for what it needs of positive relevance 
   formation above its occurrence (`Ranking.possibleFirst_overdraw`); with either reading of
   `living` second, it ranks the presence of a formation drawing within renewal above its absence
   (`Ranking.possibleFirst_presence`). It also ranks a rest that adds no possibility below
-  uninterrupted activity (`Ranking.Rest.rest_ranked_below`): counting continuations beyond
+  uninterrupted activity (`Ranking.Pause.pause_ranked_below`): counting continuations beyond
   possibilities counts a pause as a loss. The order is a further premise; the continuation condition gives the
   possibility reading alone.
 
@@ -66,7 +66,7 @@ comparison of courses to the AI (“Comparing courses - you decide”), which co
 possibilities; the theorems of the other comparisons stay.
 
 **AI reading, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D1, D16).**
-- Significance need not be positive, and neither the condition nor `G0`'s parameter supplies a
+- Significance need not be positive, and neither the condition nor `LivingSignificance`'s parameter supplies a
   valence: read from significance, the relevance holds of exactly the realized living content
   (`relevance_least`). The AI once read the living content as 生生; D1's revision withdrew that,
   since the `living` readings do not include further generation. So the AI reads Ren's
@@ -77,7 +77,7 @@ possibilities; the theorems of the other comparisons stay.
   better nor worse than one in which it could live and does not.
 
 What is not derived: the warrant of the continuation condition; the step from significance to a reason (A), which
-stays a premise. After the audit Ren folded living significance (`G0`) (11 October 2026): it is no longer an axiom.
+stays a premise. After the audit Ren folded living significance (`LivingSignificance`) (11 October 2026): it is no longer an axiom.
 -/
 
 namespace Becoming
@@ -99,9 +99,9 @@ def Frame.relevance (M : Frame S A Q) (living : Q → Prop) (sig : Pos → Nat �
 /-- Under the continuation condition living significance holds on every frame for every reading of `living`, with positive
 relevance read from significance. The proof instantiates `Unrestricted`, which says that `sig`
 holds of every standpoint, step and formation. -/
-theorem g0_of_unrestricted (M : Frame S A Q) (living : Q → Prop) {sig : Pos → Nat → F → Prop}
+theorem livingSignificance_of_unrestricted (M : Frame S A Q) (living : Q → Prop) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat) :
-    G0 M living (M.relevance living sig formation step) :=
+    LivingSignificance M living (M.relevance living sig formation step) :=
   fun _ c alive realized => ⟨alive, realized, fun p => unrestricted (p, step c, formation c)⟩
 
 /-- It is the least positive relevance satisfying living significance: under the continuation condition it holds of exactly the
@@ -109,8 +109,8 @@ realized living content, and every positive relevance satisfying living signific
 theorem relevance_least (M : Frame S A Q) (living : Q → Prop) {sig : Pos → Nat → F → Prop}
     (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat) :
     (∀ s c, M.relevance living sig formation step s c ↔ living c ∧ M.realized s c) ∧
-      ∀ positive, G0 M living positive →
-        ∀ s c, M.relevance living sig formation step s c → positive s c :=
+      ∀ relevance, LivingSignificance M living relevance →
+        ∀ s c, M.relevance living sig formation step s c → relevance s c :=
   ⟨fun _ c => ⟨fun ⟨alive, realized, _⟩ => ⟨alive, realized⟩,
      fun ⟨alive, realized⟩ => ⟨alive, realized, fun p => unrestricted (p, step c, formation c)⟩⟩,
    fun _ g0 s c ⟨alive, realized, _⟩ => g0 s c alive realized⟩
@@ -118,9 +118,9 @@ theorem relevance_least (M : Frame S A Q) (living : Q → Prop) {sig : Pos → N
 /-- Positive relevance folded into significance (Ren, 11 October 2026). Read from significance, living significance
 holds exactly where the continuation of every realized living claim has significance from every
 standpoint: it is the continuation condition on realized living content, with no axiom. -/
-theorem g0_relevance_iff (M : Frame S A Q) (living : Q → Prop) (sig : Pos → Nat → F → Prop)
+theorem livingSignificance_relevance_iff (M : Frame S A Q) (living : Q → Prop) (sig : Pos → Nat → F → Prop)
     (formation : Q → F) (step : Q → Nat) :
-    G0 M living (M.relevance living sig formation step) ↔
+    LivingSignificance M living (M.relevance living sig formation step) ↔
       ∀ s c, living c → M.realized s c → ∀ p, sig p (step c) (formation c) :=
   ⟨fun g0 s c alive realized => (g0 s c alive realized).2.2,
    fun all s c alive realized => ⟨alive, realized, all s c alive realized⟩⟩
@@ -128,9 +128,9 @@ theorem g0_relevance_iff (M : Frame S A Q) (living : Q → Prop) (sig : Pos → 
 /-- The continuation condition is living significance for anything. On a frame whose claims are formations at steps, each realized
 at some configuration, the continuation condition holds exactly when living significance holds with every claim living and
 positive relevance read as significance from every standpoint. -/
-theorem unrestricted_iff_g0 (M : Frame S A (F × Nat)) (somewhere : ∀ e, ∃ s, M.realized s e)
+theorem unrestricted_iff_livingSignificance (M : Frame S A (F × Nat)) (somewhere : ∀ e, ∃ s, M.realized s e)
     {sig : Pos → Nat → F → Prop} :
-    Unrestricted sig ↔ G0 M (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1) :=
+    Unrestricted sig ↔ LivingSignificance M (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1) :=
   ⟨fun unrestricted _ e _ _ p => unrestricted (p, e.2, e.1),
    fun g0 ⟨p, t, f⟩ => match somewhere (f, t) with
     | ⟨s, realized⟩ => g0 s (f, t) trivial realized p⟩
@@ -147,9 +147,9 @@ theorem Web.paths_somewhere (W : Web F C) (e : F × Nat) : ∃ l, W.paths.realiz
   ⟨fun _ c => W.need e.2 e.1 c, fun _ _ => Nat.le_refl _⟩
 
 /-- So on the level paths of every web the continuation condition is living significance for anything. -/
-theorem Web.unrestricted_iff_paths_g0 (W : Web F C) {sig : Pos → Nat → F → Prop} :
-    Unrestricted sig ↔ G0 W.paths (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1) :=
-  unrestricted_iff_g0 W.paths W.paths_somewhere
+theorem Web.unrestricted_iff_paths_livingSignificance (W : Web F C) {sig : Pos → Nat → F → Prop} :
+    Unrestricted sig ↔ LivingSignificance W.paths (fun _ => True) (fun _ e => ∀ p, sig p e.2 e.1) :=
+  unrestricted_iff_livingSignificance W.paths W.paths_somewhere
 
 end Paths
 
@@ -161,9 +161,9 @@ variable {S A Q F Pos : Type}
 
 /-- Where everything has significance, securing ground with bare significance is securing any
 new content. -/
-theorem securesPositiveGround_total {H R : Type} {admitted : R → H → Prop}
+theorem securesNewContent_total {H R : Type} {admitted : R → H → Prop}
     {before : H → Q → Prop} {sig : H → Q → Prop} (total : ∀ h c, sig h c) (r : R) :
-    SecuresPositiveGround admitted before sig r ↔ ∀ h, admitted r h → ∃ c, ¬ before h c :=
+    SecuresNewContent admitted before sig r ↔ ∀ h, admitted r h → ∃ c, ¬ before h c :=
   ⟨fun secured h inScope => match secured h inScope with
     | ⟨c, _, fresh⟩ => ⟨c, fresh⟩,
    fun novel h inScope => match novel h inScope with
@@ -175,7 +175,7 @@ def articulatesLiving {H R : Type} (V : Valuation Pos Q) (access : Pos → R →
     (admitted : R → H → Prop) (before : H → Q → Prop) (Reason : Pos → R → Prop) :
     Pos × R → Prop
   | (p, r) => access p r →
-      SecuresPositiveGround admitted before (fun _ c => V.living c ∧ V.sig p c) r → Reason p r
+      SecuresNewContent admitted before (fun _ c => V.living c ∧ V.sig p c) r → Reason p r
 
 /-- Where everything has significance, A read with bare significance supplies a reason for every
 response with access that yields any new content, living or not; read on living content it
@@ -186,12 +186,12 @@ theorem articulates_total {H R : Type} {V : Valuation Pos Q} {access : Pos → R
     (Neutral (articulates V access admitted before Reason) ↔
       ∀ p r, access p r → (∀ h, admitted r h → ∃ c, ¬ before h c) → Reason p r) ∧
     (Neutral (articulatesLiving V access admitted before Reason) ↔
-      ∀ p r, access p r → SecuresPositiveGround admitted before (fun _ c => V.living c) r →
+      ∀ p r, access p r → SecuresNewContent admitted before (fun _ c => V.living c) r →
         Reason p r) :=
   ⟨⟨fun articulate p r available novel =>
-      articulate (p, r) available ((securesPositiveGround_total (fun _ c => total p c) r).2 novel),
+      articulate (p, r) available ((securesNewContent_total (fun _ c => total p c) r).2 novel),
     fun all ⟨p, r⟩ available secured =>
-      all p r available ((securesPositiveGround_total (fun _ c => total p c) r).1 secured)⟩,
+      all p r available ((securesNewContent_total (fun _ c => total p c) r).1 secured)⟩,
    ⟨fun articulate p r available secured =>
       articulate (p, r) available fun h inScope => match secured h inScope with
         | ⟨c, alive, fresh⟩ => ⟨c, ⟨alive, total p c⟩, fresh⟩,
@@ -527,7 +527,7 @@ theorem possibleFirst_presence (L : Law) (within : ∀ t, L.draw t ≤ L.renew +
 One formation needing one unit of a condition held at one. In the course `true` it rests at
 step 0, though supported; in the course `false` it is active at every step. -/
 
-namespace Rest
+namespace Pause
 
 def courses (rests : Bool) : Unfolding Unit Unit where
   level _ _ := 1
@@ -539,7 +539,7 @@ def courses (rests : Bool) : Unfolding Unit Unit where
 /-- The two courses admit the same formations, so neither extends the other under the
 possibility reading; with either reading of `living` second, possibilities first ranks the
 rest below uninterrupted activity. -/
-theorem rest_ranked_below :
+theorem pause_ranked_below :
     (∀ w e, possible courses w e) ∧ ¬ ExtendsUnder (possible courses) true false ∧
       ¬ ExtendsUnder (possible courses) false true ∧
       possibleFirst courses (wholeRun courses) true false ∧
@@ -558,7 +558,7 @@ theorem rest_ranked_below :
    .inr ⟨same, fun e _ => ⟨active e, notUndermining false e.2 e.1⟩, ((), 0), trivial,
      ⟨active ((), 0), notUndermining false 0 ()⟩, fun ⟨rests, _⟩ => resting rests⟩⟩
 
-end Rest
+end Pause
 
 end Ranking
 

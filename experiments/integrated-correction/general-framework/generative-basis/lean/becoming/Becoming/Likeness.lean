@@ -30,7 +30,7 @@ No premise is added; every declaration has an empty axiom report.
 * **The image is no longer the least carrier.** Its frame is determined up to likeness exactly
   where configurations whose descriptions are alike in it go alike under it
   (`image_determinedAt_iff`), and a description can carry a law up to likeness while its image is
-  not determined up to likeness (`Parting.image_not_determinedAt`, `Parting.carries`): with
+  not determined up to likeness (`Likeness.Parting.image_not_determinedAt`, `Likeness.Parting.carries`): with
   equality the image is the least process the step factors through (`Image.least`), and up to
   likeness a larger process can make alike what the image tells apart.
 * **A run that never returns up to likeness fixes no other move up to likeness**
@@ -276,7 +276,7 @@ end ImageAlike
 
 /-! ## A configuration whose one move parts it into one that can go on and one that cannot -/
 
-namespace Parting
+namespace Likeness.Parting
 
 /-- The three configurations. -/
 inductive Pos where
@@ -323,7 +323,7 @@ theorem carries :
       FactorsThrough process id Q :=
   carries_unregistered process id
 
-end Parting
+end Likeness.Parting
 
 /-! ## A run that never returns up to likeness -/
 

@@ -33,7 +33,7 @@ These are records over `Nat` and `Prop`. This module imports the frame (`Becomin
 foundation `GenerativeCore`), so the core's import tree starts at the process and its runs, and the
 world's records stand on them. The definitions moved here unchanged, with their names, from
 `Becoming.Dependence` (`Dependence`, and `Web`, now its reading along the steps),
-`Becoming.Flow` (`Flow`), `Becoming.Generation` (`total`), `Becoming.Space` (`World`, now a
+`Becoming.Flow` (`Flow`), `Becoming.Arising` (`total`), `Becoming.Space` (`World`, now a
 history), `Becoming.Runs` (`WebAt`) and `Becoming.Unfolding` (`Exchange`, `Exchange.taken`,
 `Exchange.given`, `World.move`). Every declaration has an empty axiom report.
 -/

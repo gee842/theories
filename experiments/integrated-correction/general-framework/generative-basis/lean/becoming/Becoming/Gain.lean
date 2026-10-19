@@ -49,7 +49,7 @@ whole recurs: unceasing generation within a bounded whole is return, not novelty
 **Readings (the AI's, adopted on Ren's delegation of 15 October 2026, DELEGATED-CHOICES D7, D27).**
 “Gain from beyond the part” is read as these two ways in, the boundary and the rest. The rest counts
 what the listed relata do not, so a finite whole new without end is one whose listing leaves out
-what gives to it. `Becoming.Coupling` states the counterpart for moves: moves formed by a whole,
+what gives to it. `Becoming.MoveFormation` states the counterpart for moves: moves formed by a whole,
 rest or part that a list holds repeat within the list's length.
 
 What is not derived: whether an actual part is open, which relatum the rest is in an actual

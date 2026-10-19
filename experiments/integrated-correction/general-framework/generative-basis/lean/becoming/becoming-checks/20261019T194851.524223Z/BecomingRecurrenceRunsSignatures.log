@@ -1,0 +1,26 @@
+@Becoming.RecurrenceRuns.lossless_iff_returns : ∀ {S : Type u_1} {next : S → S} {all : List S},
+  (∀ (s : S), s ∈ all) →
+    (Becoming.Branching.Lossless (Becoming.Law.process next) ↔
+      ∀ (s : S), Becoming.Branching.Returns (Becoming.Law.process next) s)
+@Becoming.RecurrenceRuns.merges_loses : ∀ {S : Type u_1} {next : S → S},
+  Becoming.Branching.Merges (Becoming.Law.process next) →
+    ∀ {all : List S},
+      (∀ (s : S), s ∈ all) → ¬∀ (s : S), Becoming.Branching.Reachable (Becoming.Law.process next) all.length s
+@Becoming.RecurrenceRuns.kept_lossless : ∀ {S : Type u_1} (next : S → S),
+  Becoming.Branching.Lossless (Becoming.Law.process (Becoming.Law.withHistory next))
+@Becoming.RecurrenceRuns.kept_never_returns : ∀ {S : Type u_1} (next : S → S) (h : S × List S),
+  ¬Becoming.Branching.Returns (Becoming.Law.process (Becoming.Law.withHistory next)) h
+@Becoming.RecurrenceRuns.kept_loses_beginning : ∀ {S : Type u_1} (next : S → S) (s : S) (n : Nat),
+  ¬Becoming.Branching.Reachable (Becoming.Law.process (Becoming.Law.withHistory next)) (n + 1) (s, [])
+@Becoming.RecurrenceRuns.kept_unlisted : ∀ {S : Type u_1} {next : S → S}
+  (h : Becoming.Run (Becoming.Law.process (Becoming.Law.withHistory next))), ¬∃ l, ∀ (n : Nat), h.state n ∈ l
+@Becoming.RecurrenceRuns.keptRun_present : ∀ {S : Type u_1} {next : S → S}
+  (r : Becoming.Run (Becoming.Law.process next)) (past : List S) (n : Nat),
+  ((Becoming.RecurrenceRuns.keptRun r past).state n).fst = r.state n
+@Becoming.RecurrenceRuns.return_keeps_history : ∀ {S : Type u_1} {next : S → S}
+  (r : Becoming.Run (Becoming.Law.process next)) {p : Nat},
+  0 < p →
+    r.state p = r.state 0 →
+      ∀ (past : List S),
+        ((Becoming.RecurrenceRuns.keptRun r past).state p).fst = r.state 0 ∧
+          (Becoming.RecurrenceRuns.keptRun r past).state p ≠ (Becoming.RecurrenceRuns.keptRun r past).state 0

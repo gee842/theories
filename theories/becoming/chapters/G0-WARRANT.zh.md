@@ -51,7 +51,7 @@ G0 只给出效价：实现了的生及继续生成有正面意义。把它变�
 
 **自然数评分与有界评分。** [ProtectionPriorityRival.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) 检查了一个构造的保护对增益情境：
 
-- G0、无损扩展比较 C 与 J2 的排序可同时成立，J2 从不以任何数量的增益交换基本条件（`g0_leaves_ordering_open`、`priority_never_trades`）；
+- G0、无损扩展比较 C 与 J2 的排序可同时成立，J2 从不以任何数量的增益交换基本条件（`livingSignificance_leaves_ordering_open`、`priority_never_trades`）；
 - G0 只约束正面相关性，不约束排序：它同样与一个满足 C、却会交换的排序并存。因此 J2 不由 C 推出；说它“不由 G0 推出”是平凡的（`comparison_does_not_yield_priority`）；
 - 每一个满足 C 的自然数评分都会在 `score 0 + 2` 项增益处交换（`every_nat_score_trades`）。起作用的是严格递增的自然数评分每步至少加一；
 - 一个有界的有理评分（保护为 1，`k` 项增益为 `k/(k+1)`）满足 C、从不交换，并在每一对选项上与 J2 一致（`ratio_agrees_with_priority`、`bounded_score_represents_priority`）。

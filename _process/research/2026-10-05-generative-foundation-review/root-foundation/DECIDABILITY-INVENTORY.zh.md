@@ -172,8 +172,8 @@
 | Lasting | `Lasting.hitTime_stable` | `DecidablePred target` | 首个符合者 | 可判定是它自己的条件 |
 | Lasting | `Lasting.hitTime_succ` | `DecidablePred target` | 首个符合者 | 可判定是它自己的条件 |
 | Learnable | `Learnable.firstFit_congr` | `(a : α) → Decidable (p a)`；`(a : α) → Decidable (q a)` | 首个符合者 | 可判定是它自己的条件 |
-| Learnable | `Learnable.rests_through` | `DecidableEq R` | 按否证学习 | 可判定是它自己的条件 |
-| LearnableRuns | `LearnableRuns.rests_through` | `DecidableEq R` | 按否证学习 | 可判定是它自己的条件 |
+| Learnable | `Learnable.predicts_through` | `DecidableEq R` | 按否证学习 | 可判定是它自己的条件 |
+| LearnableRuns | `LearnableRuns.predicts_through` | `DecidableEq R` | 按否证学习 | 可判定是它自己的条件 |
 | Learning | `Learning.diagonal_not_lasso` | `DecidableEq O` | 按否证学习 | 可判定是它自己的条件 |
 | Learning | `Learning.held_learner_bounded` | `DecidableEq O` | 按否证学习 | 可判定是它自己的条件 |
 | Learning | `Learning.held_rest_unrefuted` | `DecidableEq O` | 按否证学习 | 可判定是它自己的条件 |
@@ -519,7 +519,7 @@
 | Continuation | `Flow.inward_of_not_fed` | `DecidableEq C` | 分辨相同 | — |
 | Continuation | `Flow.rising_fed_from_beyond` | `DecidableEq C` | 分辨相同 | — |
 | Continuation | `Flow.rising_fed_from_beyond_from` | `DecidableEq C` | 分辨相同 | — |
-| Continuation | `Web.generation_fed_from_beyond` | `DecidableEq X` | 分辨相同 | — |
+| Continuation | `Web.embodiedArising_fed_from_beyond` | `DecidableEq X` | 分辨相同 | — |
 | Counterfactual | `ExchangeLaw.Nonanticipating.through_of_observed` | `DecidableEq C` | 分辨相同 | `ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision） |
 | Counterfactual | `ExchangeLaw.Nonanticipating.through_sensitive` | `DecidableEq C` | 分辨相同 | `ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision） |
 | Counterfactual | `alike_of_sensitive_agree` | `DecidableEq C` | 分辨相同 | `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 |
@@ -606,10 +606,10 @@
 | Lasting | `Lasting.reaches_iff_not_lasts` | `DecidablePred target` | 找出 | — |
 | Lasting | `Lasting.reaches_of_histories` | `DecidablePred target` | 找出 | — |
 | Lasting | `Lasting.reaches_of_not_lasts` | `DecidablePred target` | 找出 | — |
-| Learnable | `Learnable.learnable_iff` | `DecidableEq R` | 找出 | `Learnable.agree_of_rests_both`（必要一侧，对每个学习者，不判定 |
+| Learnable | `Learnable.learnable_iff` | `DecidableEq R` | 找出 | `Learnable.agree_of_predicts_both`（必要一侧，对每个学习者，不判定 |
 | Learnable | `Learnable.learnable_of_lumped` | `DecidableEq R` | 找出 | — |
 | Learnable | `Learnable.refuted_on_one` | `DecidableEq V` | 分辨相同 | `Learnable.claim_not_right_on_both`（无前提：主张不在两者上都对 |
-| Learnable | `Learnable.still_learnable_iff_lumped` | `DecidableEq R` | 找出 | `Learnable.still_lumped_of_rests`（必要一侧，不判定 |
+| Learnable | `Learnable.still_learnable_iff_lumped` | `DecidableEq R` | 找出 | `Learnable.still_lumped_of_predicts`（必要一侧，不判定 |
 | LearnableRuns | `LearnableRuns.learnable_iff` | `DecidableEq R` | 找出 | — |
 | LearnableRuns | `LearnableRuns.still_learnable_iff_lumped` | `DecidableEq R` | 找出 | — |
 | Learning | `Learning.claim_refuted_on_one` | `DecidableEq O` | 分辨相同 | `Learning.no_record_fixes_next`（无前提：主张不在两者上都对 |

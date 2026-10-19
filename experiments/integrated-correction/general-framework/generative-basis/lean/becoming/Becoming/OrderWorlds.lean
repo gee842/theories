@@ -98,7 +98,7 @@ theorem halving_premises_iff (w : World) [DecidableEq w.Relatum] (once : w.flow.
       ((w.sample Pulse.half).Dependent ↔ w.Dependent) ∧
       ((w.sample Pulse.half).Embodied ↔ w.Embodied) ∧
       ((w.sample Pulse.half).Transmitting ↔ w.Transmitting) :=
-  World.stutter_premises_iff Halving.stutter once
+  World.stutter_premises_iff Order.Halving.stutter once
 
 /-- **In two commuted webs, the steps at which a family's stock rises number the same** over a
 stretch holding both commuted steps. -/

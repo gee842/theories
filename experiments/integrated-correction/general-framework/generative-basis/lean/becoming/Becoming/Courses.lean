@@ -351,7 +351,7 @@ theorem Advances.completes_plan {tick : S → Option S} {busy done : S → Prop}
 /-- **Every shorter course leaves the task pending**: every course of at most `work` moves of the
 tick's process leaves the task pending, with the work lowered by the moves taken. -/
 theorem pending_before_course {tick : S → Option S} {busy done : S → Prop} {work fuel : S → Nat}
-    (counts : Countdown.Counts tick busy done work fuel) {s t : S} {k : Nat} (pending : busy s)
+    (counts : Countdown.CountedWork tick busy done work fuel) {s t : S} {k : Nat} (pending : busy s)
     (within : k ≤ work s)
     (path : Trace (ofPartial fun s (_ : Unit) => tick s) s (List.replicate k ()) t) :
     busy t ∧ work t + k = work s :=
@@ -1016,7 +1016,7 @@ theorem loop_courses_double (n : Nat) :
   ⟨fun h _ => loop_trace (h.map Prod.fst),
    (counting_sum_one _).symm.trans ((Weights.sum_congr _ fun h _ => (along_one () h).symm).trans
      ((Weights.sum_courses (W := counting) (fun _ _ _ => 1) [true, false] [()] (fun _ => 1) n ()).trans
-       (Loop.courses_double n)))⟩
+       (Weighted.Loop.courses_double n)))⟩
 
 end Mass
 

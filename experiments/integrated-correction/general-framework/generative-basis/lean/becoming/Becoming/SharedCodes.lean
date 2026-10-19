@@ -87,9 +87,9 @@ Hearing is a process of the spine (`process`), a stretch of its run is an order 
   hearing from any such form at once (`outside_returns`).
 * **A reading written back.** Generations read a form off the previous generation's records by
   `CrossSituational`'s candidates (`resolve`); each writes a record offering exactly what it
-  resolved (`WritesExactly`, `generation`). A resolution written back rests from the next generation
-  on (`written_rests`, `every_generation_resolves`). Two histories resolving alike are merged and
-  stay merged (`resolved_alike_merged`, by `Law.merged_stays`; `generation_merges`), so no reading
+  resolved (`WritesExactly`, `nextCohort`). A resolution written back rests from the next generation
+  on (`written_rests`, `every_cohort_resolves`). Two histories resolving alike are merged and
+  stay merged (`resolved_alike_merged`, by `Law.merged_stays`; `nextCohort_merges`), so no reading
   of later records recovers what came before (`no_reading_recovers`). Under coverage the rest is the
   target (`covered_rest`, by `CrossSituational.resolved_is_target`); where the records resolve to
   another sense, the target is no candidate at any later generation and the resolved sense is
@@ -801,37 +801,37 @@ variable {I : Type u} {M : Type v} {F : Type w}
 
 /-- `Y` is `X` with the formations exchanged by `π` and, at each sense, the forms renamed by
 `τ`. -/
-def Image (π : I → I) (τ : M → F → F) (X Y : I → M → F) : Prop := ∀ i m, Y i m = τ m (X (π i) m)
+def Relabels (π : I → I) (τ : M → F → F) (X Y : I → M → F) : Prop := ∀ i m, Y i m = τ m (X (π i) m)
 
 /-- A law of codes keeps the exchange of formations by `π`: it privileges none of the formations
 `π` exchanges. -/
 def KeepsExchange (T : (I → M → F) → I → M → F) (π : I → I) : Prop :=
-  Law.KeepsRelation T (Image π fun _ x => x)
+  Law.KeepsRelation T (Relabels π fun _ x => x)
 
 /-- A law of codes keeps the renaming of forms by `τ`: it privileges none of the forms `τ`
 exchanges. -/
 def KeepsRenaming (T : (I → M → F) → I → M → F) (τ : M → F → F) : Prop :=
-  Law.KeepsRelation T (Image (fun i => i) τ)
+  Law.KeepsRelation T (Relabels (fun i => i) τ)
 
 variable {T : (I → M → F) → I → M → F} {π : I → I} {τ : M → F → F}
 
 /-- **Keeping both, a law keeps the two together.** -/
 theorem keeps_both (exchanges : KeepsExchange T π) (renames : KeepsRenaming T τ) :
-    Law.KeepsRelation T (Image π τ) :=
+    Law.KeepsRelation T (Relabels π τ) :=
   fun X Y image =>
-    have exchanged : Image π (fun _ x => x) X (fun i m => X (π i) m) := fun _ _ => rfl
-    have renamed : Image (fun i => i) τ (fun i m => X (π i) m) Y := image
+    have exchanged : Relabels π (fun _ x => x) X (fun i m => X (π i) m) := fun _ _ => rfl
+    have renamed : Relabels (fun i => i) τ (fun i m => X (π i) m) Y := image
     fun i m => (renames _ _ renamed i m).trans (congrArg (τ m) (exchanges _ _ exchanged i m))
 
 /-- **A symmetry of the start that a law keeps is kept at every step.** -/
-theorem symmetric_kept (keeps : Law.KeepsRelation T (Image π τ)) {X : I → M → F}
-    (symmetric : Image π τ X X) (n : Nat) :
-    Image π τ ((Law.run T X).state n) ((Law.run T X).state n) :=
+theorem symmetric_kept (keeps : Law.KeepsRelation T (Relabels π τ)) {X : I → M → F}
+    (symmetric : Relabels π τ X X) (n : Nat) :
+    Relabels π τ ((Law.run T X).state n) ((Law.run T X).state n) :=
   keeps.run symmetric n
 
 /-- **Formations that a kept symmetry exchanges agree only on a form the renaming fixes.** -/
-theorem agrees_only_fixed (keeps : Law.KeepsRelation T (Image π τ)) {X : I → M → F}
-    (symmetric : Image π τ X X) (n : Nat) (i : I) (m : M)
+theorem agrees_only_fixed (keeps : Law.KeepsRelation T (Relabels π τ)) {X : I → M → F}
+    (symmetric : Relabels π τ X X) (n : Nat) (i : I) (m : M)
     (agree : (Law.run T X).state n i m = (Law.run T X).state n (π i) m) :
     τ m ((Law.run T X).state n i m) = (Law.run T X).state n i m :=
   (congrArg (τ m) agree).trans (symmetric_kept keeps symmetric n i m).symm
@@ -839,15 +839,15 @@ theorem agrees_only_fixed (keeps : Law.KeepsRelation T (Image π τ)) {X : I →
 /-- **Agreement needs a broken symmetry.** Where the renaming moves every form at `m`, a law
 keeping the exchange of formations by `π` together with that renaming never brings formations it
 exchanges, from a start symmetric under them, to agree at `m`. -/
-theorem never_agrees (keeps : Law.KeepsRelation T (Image π τ)) {X : I → M → F}
-    (symmetric : Image π τ X X) {m : M} (moves : ∀ x, τ m x ≠ x) (n : Nat) (i : I) :
+theorem never_agrees (keeps : Law.KeepsRelation T (Relabels π τ)) {X : I → M → F}
+    (symmetric : Relabels π τ X X) {m : M} (moves : ∀ x, τ m x ≠ x) (n : Nat) (i : I) :
     (Law.run T X).state n i m ≠ (Law.run T X).state n (π i) m :=
   fun agree => moves _ (agrees_only_fixed keeps symmetric n i m agree)
 
 /-- **A law that privileges neither formation nor form does not form agreement from a symmetric
 disagreement.** -/
 theorem never_agrees_of_both (exchanges : KeepsExchange T π) (renames : KeepsRenaming T τ)
-    {X : I → M → F} (symmetric : Image π τ X X) {m : M} (moves : ∀ x, τ m x ≠ x) (n : Nat)
+    {X : I → M → F} (symmetric : Relabels π τ X X) {m : M} (moves : ∀ x, τ m x ≠ x) (n : Nat)
     (i : I) : (Law.run T X).state n i m ≠ (Law.run T X).state n (π i) m :=
   never_agrees (keeps_both exchanges renames) symmetric moves n i
 
@@ -877,7 +877,7 @@ variable [DecidableEq I] [DecidableEq M]
 /-- **Hearing under a rule that reads codes alike after a renaming keeps the renaming**: no form
 is privileged by hearing. -/
 theorem hearBy_keeps_renaming {adopt : (M → F) → (M → F) → M → Bool}
-    (reads : ∀ X Y : I → M → F, Image (fun i => i) τ X Y → ∀ e : Hearing I M,
+    (reads : ∀ X Y : I → M → F, Relabels (fun i => i) τ X Y → ∀ e : Hearing I M,
       adopt (Y e.hearer) (Y e.speaker) e.sense = adopt (X e.hearer) (X e.speaker) e.sense)
     (e : Hearing I M) : KeepsRenaming (hearBy adopt e) τ :=
   fun X Y renamed i m =>
@@ -906,11 +906,11 @@ theorem hear_keeps_renaming (e : Hearing I M) : KeepsRenaming (hear (F := F) e) 
 /-- **No form is privileged by an order of exchange.** Two runs of hearing through the same order
 from starts that differ by a renaming of forms differ by that renaming at every step. -/
 theorem run_renamed {adopt : (M → F) → (M → F) → M → Bool}
-    (reads : ∀ X Y : I → M → F, Image (fun i => i) τ X Y → ∀ e : Hearing I M,
+    (reads : ∀ X Y : I → M → F, Relabels (fun i => i) τ X Y → ∀ e : Hearing I M,
       adopt (Y e.hearer) (Y e.speaker) e.sense = adopt (X e.hearer) (X e.speaker) e.sense)
     (r r' : Run (process (I := I) adopt)) (same : ∀ n, r'.act n = r.act n)
-    (renamed : Image (fun i => i) τ (r.state 0) (r'.state 0)) :
-    ∀ n, Image (fun i => i) τ (r.state n) (r'.state n)
+    (renamed : Relabels (fun i => i) τ (r.state 0) (r'.state 0)) :
+    ∀ n, Relabels (fun i => i) τ (r.state n) (r'.state n)
   | 0 => renamed
   | n + 1 => fun i m =>
     (step_at r' n i m).trans
@@ -921,10 +921,10 @@ theorem run_renamed {adopt : (M → F) → (M → F) → M → Bool}
 /-- **The form reached is not fixed by the sense.** Through one order, starts differing by a
 renaming reach forms that agree exactly where the renaming fixes the form reached. -/
 theorem reached_differ_iff {adopt : (M → F) → (M → F) → M → Bool}
-    (reads : ∀ X Y : I → M → F, Image (fun i => i) τ X Y → ∀ e : Hearing I M,
+    (reads : ∀ X Y : I → M → F, Relabels (fun i => i) τ X Y → ∀ e : Hearing I M,
       adopt (Y e.hearer) (Y e.speaker) e.sense = adopt (X e.hearer) (X e.speaker) e.sense)
     (r r' : Run (process (I := I) adopt)) (same : ∀ n, r'.act n = r.act n)
-    (renamed : Image (fun i => i) τ (r.state 0) (r'.state 0)) (n : Nat) (i : I) (m : M) :
+    (renamed : Relabels (fun i => i) τ (r.state 0) (r'.state 0)) (n : Nat) (i : I) (m : M) :
     r'.state n i m = r.state n i m ↔ τ m (r.state n i m) = r.state n i m :=
   have at_n := run_renamed reads r r' same renamed n i m
   ⟨fun e => at_n.symm.trans e, fun e => at_n.trans e⟩
@@ -934,10 +934,10 @@ at every step, exactly what the other tells apart**: the forms are free, the gro
 is not. -/
 theorem run_renamed_tells_apart_iff {adopt : (M → F) → (M → F) → M → Bool} {σ : F → F}
     (injective : ∀ x y, σ x = σ y → x = y)
-    (reads : ∀ X Y : I → M → F, Image (fun i => i) (fun _ => σ) X Y → ∀ e : Hearing I M,
+    (reads : ∀ X Y : I → M → F, Relabels (fun i => i) (fun _ => σ) X Y → ∀ e : Hearing I M,
       adopt (Y e.hearer) (Y e.speaker) e.sense = adopt (X e.hearer) (X e.speaker) e.sense)
     (r r' : Run (process (I := I) adopt)) (same : ∀ n, r'.act n = r.act n)
-    (renamed : Image (fun i => i) (fun _ => σ) (r.state 0) (r'.state 0)) (n : Nat) (i : I) :
+    (renamed : Relabels (fun i => i) (fun _ => σ) (r.state 0) (r'.state 0)) (n : Nat) (i : I) :
     TellsApart (r'.state n i) ↔ TellsApart (r.state n i) :=
   have at_n := run_renamed (τ := fun _ => σ) reads r r' same renamed n i
   ⟨fun tells => (renamed_tells_apart_iff injective (r.state n i)).mp fun m m' e =>
@@ -1067,7 +1067,7 @@ def resolve (bears : R → Bool) (offers : R → M → Bool) (rep : List M) (rs 
 /-- One generation reading the previous generation's records: it resolves the form from them and
 writes a record of what it resolved; where they leave the form unresolved, they pass on as they
 were. -/
-def generation (bears : R → Bool) (offers : R → M → Bool) (rep : List M) (writes : M → R)
+def nextCohort (bears : R → Bool) (offers : R → M → Bool) (rep : List M) (writes : M → R)
     (rs : List R) : List R :=
   match resolve bears offers rep rs with
   | some e => [writes e]
@@ -1089,9 +1089,9 @@ variable {bears : R → Bool} {offers : R → M → Bool} {rep : List M} {writes
 theorem resolve_mem {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) : e ∈ rep :=
   mem_candidates.mp ((unique_eq_some_iff.mp h) ▸ List.Mem.head []) |>.1
 
-theorem generation_of_resolved {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
-    generation bears offers rep writes rs = [writes e] := by
-  unfold generation
+theorem nextCohort_of_resolved {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
+    nextCohort bears offers rep writes rs = [writes e] := by
+  unfold nextCohort
   rw [h]
 
 /-- **A record of `e` alone resolves the form to `e`.** -/
@@ -1105,17 +1105,17 @@ theorem resolve_written [DecidableEq M] (exact : WritesExactly bears offers writ
 generation's records are the record of `e`. -/
 theorem written_rests [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
     {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
-    ∀ n, (Law.run (generation bears offers rep writes) rs).state (n + 1) = [writes e]
-  | 0 => generation_of_resolved h
+    ∀ n, (Law.run (nextCohort bears offers rep writes) rs).state (n + 1) = [writes e]
+  | 0 => nextCohort_of_resolved h
   | n + 1 =>
-    (congrArg (generation bears offers rep writes) (written_rests exact distinct h n)).trans
-      (generation_of_resolved (resolve_written exact distinct (resolve_mem h)))
+    (congrArg (nextCohort bears offers rep writes) (written_rests exact distinct h n)).trans
+      (nextCohort_of_resolved (resolve_written exact distinct (resolve_mem h)))
 
 /-- **The decision locks**: every generation from the first resolution on resolves the form
 alike. -/
-theorem every_generation_resolves [DecidableEq M] (exact : WritesExactly bears offers writes)
+theorem every_cohort_resolves [DecidableEq M] (exact : WritesExactly bears offers writes)
     (distinct : CrossSituational.Distinct rep) {rs : List R} {e : M} (h : resolve bears offers rep rs = some e) :
-    ∀ n, resolve bears offers rep ((Law.run (generation bears offers rep writes) rs).state n) = some e
+    ∀ n, resolve bears offers rep ((Law.run (nextCohort bears offers rep writes) rs).state n) = some e
   | 0 => h
   | n + 1 => (congrArg (resolve bears offers rep) (written_rests exact distinct h n)).trans
       (resolve_written exact distinct (resolve_mem h))
@@ -1124,27 +1124,27 @@ theorem every_generation_resolves [DecidableEq M] (exact : WritesExactly bears o
 the form alike are merged by one generation and stay merged (`Law.merged_stays`). -/
 theorem resolved_alike_merged {rs rs' : List R} {e : M} (h : resolve bears offers rep rs = some e)
     (h' : resolve bears offers rep rs' = some e) (n : Nat) :
-    (Law.run (generation bears offers rep writes) rs).state (n + 1) =
-      (Law.run (generation bears offers rep writes) rs').state (n + 1) :=
-  Law.merged_stays ((generation_of_resolved h).trans (generation_of_resolved h').symm) n
+    (Law.run (nextCohort bears offers rep writes) rs).state (n + 1) =
+      (Law.run (nextCohort bears offers rep writes) rs').state (n + 1) :=
+  Law.merged_stays ((nextCohort_of_resolved h).trans (nextCohort_of_resolved h').symm) n
 
 /-- **No reading of later records recovers the earlier ones**: every reading of a later
 generation's records reads the two histories alike. -/
 theorem no_reading_recovers {K : Type w} (reading : List R → K) {rs rs' : List R} {e : M}
     (h : resolve bears offers rep rs = some e) (h' : resolve bears offers rep rs' = some e)
     (n : Nat) :
-    reading ((Law.run (generation bears offers rep writes) rs).state (n + 1)) =
-      reading ((Law.run (generation bears offers rep writes) rs').state (n + 1)) :=
+    reading ((Law.run (nextCohort bears offers rep writes) rs).state (n + 1)) =
+      reading ((Law.run (nextCohort bears offers rep writes) rs').state (n + 1)) :=
   congrArg reading (resolved_alike_merged h h' n)
 
 /-- **Writing back merges records**: two different record lists resolving alike are taken to
 one (`Law.Merges`), and their runs are one from the next generation on. -/
-theorem generation_merges {rs rs' : List R} (apart : rs ≠ rs') {e : M}
+theorem nextCohort_merges {rs rs' : List R} (apart : rs ≠ rs') {e : M}
     (h : resolve bears offers rep rs = some e) (h' : resolve bears offers rep rs' = some e) :
-    Law.Merges (generation bears offers rep writes) ∧
-      ∀ n, (Law.run (generation bears offers rep writes) rs).state (n + 1) =
-        (Law.run (generation bears offers rep writes) rs').state (n + 1) :=
-  ⟨Law.merges_iff.mpr ⟨rs, rs', apart, (generation_of_resolved h).trans (generation_of_resolved h').symm⟩,
+    Law.Merges (nextCohort bears offers rep writes) ∧
+      ∀ n, (Law.run (nextCohort bears offers rep writes) rs).state (n + 1) =
+        (Law.run (nextCohort bears offers rep writes) rs').state (n + 1) :=
+  ⟨Law.merges_iff.mpr ⟨rs, rs', apart, (nextCohort_of_resolved h).trans (nextCohort_of_resolved h').symm⟩,
    resolved_alike_merged h h'⟩
 
 /-- **Under coverage, the rest is the target**: where every first record bearing on the form
@@ -1153,7 +1153,7 @@ theorem covered_rest [DecidableEq M] (exact : WritesExactly bears offers writes)
     {rs : List R} {t e : M} (available : t ∈ rep)
     (covered : ∀ r, r ∈ rs → bears r = true → offers r t = true)
     (h : resolve bears offers rep rs = some e) (n : Nat) :
-    (Law.run (generation bears offers rep writes) rs).state (n + 1) = [writes t] :=
+    (Law.run (nextCohort bears offers rep writes) rs).state (n + 1) = [writes t] :=
   (written_rests exact distinct h n).trans
     (congrArg (fun x => [writes x]) (resolved_is_target available covered (unique_eq_some_iff.mp h)))
 
@@ -1162,8 +1162,8 @@ to `e` other than `t`, at every later generation `t` is no candidate and `e` is:
 excludes `e` or offers `t`. -/
 theorem omitted_rest [DecidableEq M] (exact : WritesExactly bears offers writes) (distinct : CrossSituational.Distinct rep)
     {rs : List R} {t e : M} (ne : t ≠ e) (h : resolve bears offers rep rs = some e) (n : Nat) :
-    t ∉ candidates bears offers rep ((Law.run (generation bears offers rep writes) rs).state (n + 1)) ∧
-      e ∈ candidates bears offers rep ((Law.run (generation bears offers rep writes) rs).state (n + 1)) :=
+    t ∉ candidates bears offers rep ((Law.run (nextCohort bears offers rep writes) rs).state (n + 1)) ∧
+      e ∈ candidates bears offers rep ((Law.run (nextCohort bears offers rep writes) rs).state (n + 1)) :=
   have rest := written_rests (writes := writes) exact distinct h n
   ⟨fun mem =>
     have offered := (mem_candidates.mp (rest ▸ mem)).2 (writes e) (.head []) (exact e).1
@@ -1252,7 +1252,7 @@ theorem not_not : ∀ b : Bool, (!!b) = b
   | true => rfl
 
 /-- The start is symmetric under exchanging the formations together with the forms. -/
-theorem start_symmetric : Image not (fun _ => not) start start := fun i _ => (not_not i).symm
+theorem start_symmetric : Relabels not (fun _ => not) start start := fun i _ => (not_not i).symm
 
 /-- **The order of exchange decides the form.** Along every run of hearing from the start, the
 formation `false` hearing `true` first brings both to `true`; `true` hearing `false` first brings
@@ -1466,16 +1466,16 @@ theorem distinct : CrossSituational.Distinct rep :=
 
 /-- Records of the earlier sense resolve the form to it, and written back it rests. -/
 theorem earlier_rests (n : Nat) :
-    (Law.run (generation (fun _ => true) offersOne rep id) [0]).state (n + 1) = [0] :=
+    (Law.run (nextCohort (fun _ => true) offersOne rep id) [0]).state (n + 1) = [0] :=
   written_rests exact distinct (rs := [0]) rfl n
 
 /-- **A reading taken up in place of the earlier records locks**: from the record of `1` alone,
 every later generation's records are the record of `1`, and the earlier sense `0` is never a
 candidate again. -/
 theorem taken_up_locks (n : Nat) :
-    (Law.run (generation (fun _ => true) offersOne rep id) [1]).state (n + 1) = [1] ∧
+    (Law.run (nextCohort (fun _ => true) offersOne rep id) [1]).state (n + 1) = [1] ∧
       0 ∉ CrossSituational.candidates (fun _ => true) offersOne rep
-        ((Law.run (generation (fun _ => true) offersOne rep id) [1]).state (n + 1)) :=
+        ((Law.run (nextCohort (fun _ => true) offersOne rep id) [1]).state (n + 1)) :=
   ⟨written_rests exact distinct (rs := [1]) rfl n,
    (omitted_rest exact distinct (rs := [1]) zero_ne_one rfl n).1⟩
 

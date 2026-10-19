@@ -1,9 +1,9 @@
-import Becoming.Coupling
+import Becoming.MoveFormation
 
 /-!
 # Move runs: where the moves of a run are formed
 
-`Becoming.Coupling` states where a move is formed: through a reading of the configuration where it
+`Becoming.MoveFormation` states where a move is formed: through a reading of the configuration where it
 goes alike across what the reading lumps (`Learning.Lumped`), by the part, the rest or only their
 relation in a coupled whole (`coupled`), and what the record of one course fixes of it. Its record
 laws are stated for any sequence of configurations `g` and of moves `m`. A run of any process is
@@ -152,8 +152,8 @@ end Supplied
 /-! ## The witnesses as runs -/
 
 /-- The run of a part held still while the rest counts and the move alternates. -/
-def stillRun : Run (Shown (fun n : Nat => ((), n)) Coupling.alt) :=
-  Shown.run (fun n : Nat => ((), n)) Coupling.alt
+def stillRun : Run (Shown (fun n : Nat => ((), n)) MoveFormation.alt) :=
+  Shown.run (fun n : Nat => ((), n)) MoveFormation.alt
 
 /-- **Along the run of a part held still while the move alternates, the moves are formed through
 the rest's count and not through the part.** -/

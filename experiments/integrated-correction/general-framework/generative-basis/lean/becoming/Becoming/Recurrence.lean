@@ -114,7 +114,7 @@ def KeepsPossibilities (P : Process S A) : Prop := ∀ n s, Reachable P n s
 
 /-- `s` returns: some step from `s` leads to a configuration from which `s` can be had
 again. Under a determined law this is `Law.Returns`, by definition; read on the orbit it is a
-period (`Law.returns_iff`). `Web.Returns` (`Becoming.Return`, a dependence met again) and
+period (`Law.returns_iff`). `Web.Restored` (`Becoming.Restoration`, a dependence met again) and
 `Becoming.Returns` (`Becoming.Frequency`, a loop of couplings in time order) are other senses. -/
 def Returns (P : Process S A) (s : S) : Prop := ∃ a t, P.step s a t ∧ Reach P t s
 
@@ -541,8 +541,8 @@ abbrev Lossless (next : S → S) : Prop := Branching.Lossless (process next)
 abbrev Merges (next : S → S) : Prop := Branching.Merges (process next)
 
 /-- `s` comes back after some steps (`returns_iff`): returning as a process
-(`Branching.Returns`, read on reach) at `process next`. Other senses of the name: `Web.Returns` of
-`Becoming.Return` is a dependence met again at a later step, and `Becoming.Returns` of
+(`Branching.Returns`, read on reach) at `process next`. Other senses of the name: `Web.Restored` of
+`Becoming.Restoration` is a dependence met again at a later step, and `Becoming.Returns` of
 `Becoming.Frequency` is a loop of couplings in time order, neither a configuration coming back. -/
 abbrev Returns (next : S → S) (s : S) : Prop := Branching.Returns (process next) s
 

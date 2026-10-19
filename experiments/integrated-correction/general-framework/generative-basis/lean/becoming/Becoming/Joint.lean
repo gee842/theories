@@ -1,5 +1,5 @@
 import Becoming.Labelled
-import Becoming.Return
+import Becoming.Restoration
 
 /-!
 # Joint activity and difference-making

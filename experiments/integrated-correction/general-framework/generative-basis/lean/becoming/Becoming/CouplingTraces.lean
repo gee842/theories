@@ -201,7 +201,7 @@ theorem chainInTime_trace {v : Nat → C} {T : Nat} : ∀ {p T' : Nat},
 
 /-- **A return is a trace back to its condition**: from the level of `e` at the step it returns by,
 of one step or more, to a level of `e` read from the step it starts from on. -/
-theorem returns_trace {e : C} {T T' : Nat} (back : Returns cs part k present e T T') :
+theorem returns_trace {e : C} {T T' : Nat} (back : RoundTrip cs part k present e T T') :
     ∃ u us s, Trace (retraceProcess cs part k present) (T', e) (u :: us) (s, e) ∧ T ≤ s :=
   match back with
   | ⟨v, _, start, close, chain⟩ =>
@@ -468,7 +468,7 @@ to its level at a step from the marked one on. -/
 theorem selfLoop_returns {on : Nat → Bool} {M u : Nat} (yes : on u = true) (strong : 0 < M) :
     ∃ a as s, Trace (retraceProcess [()] (fun _ => false) (Frequency.SelfLoop.strengths on M)
       (fun _ => [()])) (u + 1, ()) (a :: as) (s, ()) ∧ u ≤ s :=
-  returns_trace (Frequency.SelfLoop.returns yes strong)
+  returns_trace (Frequency.SelfLoop.roundTrip yes strong)
 
 /-- **A coupling all of whose steps back read levels before `N` is not a step of the couplings from
 every step on.** -/

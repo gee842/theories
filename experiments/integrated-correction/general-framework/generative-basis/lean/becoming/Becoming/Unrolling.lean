@@ -27,8 +27,8 @@ what it needs to be given, with no premise.
 * **A feature needs its reading.** Where a feature is a reading of the future through the map
   (`Learnable.ReadOff`: `val s` is `G` of the values through the map along the orbit from `s`), the
   extrapolation given only that reading rests in accord with the feature from the same bound on
-  (`Learnable.reading_rests`), for a reading respecting values at each step (no function
-  extensionality is assumed). This extends `Learnable.rests_through`, where the feature is read off
+  (`Learnable.reading_predicts`), for a reading respecting values at each step (no function
+  extensionality is assumed). This extends `Learnable.predicts_through`, where the feature is read off
   the present value only.
 * **Given nothing, not every learnable feature.** With one configuration and one value through the
   map, the feature `true` and the feature `false` are each learned by the extrapolation given its
@@ -44,7 +44,7 @@ what it needs to be given, with no premise.
   returning configurations whose features agree from some step on have equal features
   (`Learnable.eq_of_returns`), so on them the feature is fixed by the future
   (`Learnable.reads_of_agree`). Then the extrapolation given the reading learns the feature
-  (`Learnable.reading_rests_from`).
+  (`Learnable.reading_predicts_from`).
 
 * **Along runs.** A determined law is a process of the spine whose runs are its orbits; the
   whole future fixed given nothing, the exact reading and the witness hold along its runs
@@ -138,11 +138,11 @@ where the feature is read off the future through the map by a reading respecting
 step, the extrapolation given that reading rests in accord with the feature from
 `Becoming.Identification`'s bound on. It is given neither the configurations, nor how many there
 are, nor the law, nor any value of the feature. -/
-theorem reading_rests {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
+theorem reading_predicts {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
     {reg : S → R} {val : S → V} {G : (Nat → Option R) → V}
     (respects : ∀ f f' : Nat → Option R, (∀ k, f k = f' k) → G f = G f')
     (read : ReadOff next reg val G) :
-    RestsFrom next reg val (reading G) s
+    PredictsFrom next reg val (reading G) s
       (l.length + (l.length + l.length - 1) * Learning.tri l.length) :=
   fun t late => congrArg some ((respects _ _ fun k => (ahead_fixes held reg t late k).trans
       (congrArg (fun x => some (reg x)) (Law.orbit_add next s t k))).trans
@@ -153,11 +153,11 @@ the map, the feature `true` and the feature `false` are each learned by the extr
 reading (each a reading of the future, by a constant), and no single extrapolation rests in accord
 with both: the prefixes are the same, so are its proposals. -/
 theorem given_nothing_not_every :
-    (∀ b : Bool, Rests (fun _ : Unit => ()) (fun _ => ()) (fun _ => b)
+    (∀ b : Bool, Predicts (fun _ : Unit => ()) (fun _ => ()) (fun _ => b)
       (reading fun _ => b) ()) ∧
     ¬ ∃ pred : List Unit → Option Bool, ∀ b : Bool,
-      Rests (fun _ : Unit => ()) (fun _ => ()) (fun _ => b) pred () :=
-  ⟨fun _ => ⟨_, reading_rests (l := [()]) (fun _ => List.Mem.head _) (fun _ _ _ => rfl)
+      Predicts (fun _ : Unit => ()) (fun _ => ()) (fun _ => b) pred () :=
+  ⟨fun _ => ⟨_, reading_predicts (l := [()]) (fun _ => List.Mem.head _) (fun _ _ _ => rfl)
       fun _ => rfl⟩,
    fun ⟨_, rests⟩ => match rests true, rests false with
     | ⟨T, yes⟩, ⟨T', no⟩ => Bool.noConfusion (Option.some.inj
@@ -248,12 +248,12 @@ theorem reads_of_agree {next : S → S} {reg : S → R} {val : S → V} {l : Lis
 In a world a list holds, where from some step on along the orbit from `s` the feature is a reading
 of the future through the map, respecting values at each step, the extrapolation given that
 reading rests in accord with the feature. -/
-theorem reading_rests_from {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
+theorem reading_predicts_from {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
     {reg : S → R} {val : S → V} {G : (Nat → Option R) → V}
     (respects : ∀ f f' : Nat → Option R, (∀ k, f k = f' k) → G f = G f') {T : Nat}
     (read : ∀ t, T ≤ t → val (Law.orbit next s t) =
       G fun k => some (reg (Law.orbit next (Law.orbit next s t) k))) :
-    RestsFrom next reg val (reading G) s
+    PredictsFrom next reg val (reading G) s
       (T + (l.length + (l.length + l.length - 1) * Learning.tri l.length)) :=
   fun t late => congrArg some ((respects _ _ fun k =>
       (ahead_fixes held reg t (Nat.le_trans (Nat.le_add_left _ T) late) k).trans
@@ -267,7 +267,7 @@ the world, the law and the feature (`fromWorld`); in the second, the extrapolati
 reading learns the feature (`reading`). -/
 theorem learnable_iff_reading {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) (v₀ : V) :
-    (∃ pred : List R → Option V, ∀ s, Rests next reg val pred s) ↔
+    (∃ pred : List R → Option V, ∀ s, Predicts next reg val pred s) ↔
       ∃ G : (Nat → Option R) → V, (∀ f f' : Nat → Option R, (∀ k, f k = f' k) → G f = G f') ∧
         ∀ s, ∃ T, ∀ t, T ≤ t → val (Law.orbit next s t) =
           G fun k => some (reg (Law.orbit next (Law.orbit next s t) k)) :=
@@ -284,7 +284,7 @@ theorem learnable_iff_reading {next : S → S} {reg : S → R} {val : S → V} {
                 at_t))⟩⟩,
    fun ⟨_, respects, read⟩ => ⟨reading _, fun s =>
       match read s with
-      | ⟨_, at_s⟩ => ⟨_, reading_rests_from (fun _ => world _) respects at_s⟩⟩⟩
+      | ⟨_, at_s⟩ => ⟨_, reading_predicts_from (fun _ => world _) respects at_s⟩⟩⟩
 
 end ExactlyReading
 
@@ -321,12 +321,12 @@ configuration, the feature `true` and the feature `false` are each learned by th
 given its reading, and no single extrapolation rests in accord with both. -/
 theorem given_nothing_not_every :
     (∀ b : Bool, ∀ r : Run (Law.process fun _ : Unit => ()),
-      Rests (fun _ => ()) (fun _ => b) (Learnable.reading fun _ => b) r) ∧
+      Predicts (fun _ => ()) (fun _ => b) (Learnable.reading fun _ => b) r) ∧
     ¬ ∃ pred : List Unit → Option Bool, ∀ b : Bool, ∀ r : Run (Law.process fun _ : Unit => ()),
-      Rests (fun _ => ()) (fun _ => b) pred r :=
-  ⟨fun b r => (rests_iff r).mpr (Learnable.given_nothing_not_every.1 b),
+      Predicts (fun _ => ()) (fun _ => b) pred r :=
+  ⟨fun b r => (predicts_iff r).mpr (Learnable.given_nothing_not_every.1 b),
    fun ⟨pred, rests⟩ => Learnable.given_nothing_not_every.2
-      ⟨pred, fun b => (rests_iff (Law.run _ ())).mp (rests b (Law.run _ ()))⟩⟩
+      ⟨pred, fun b => (predicts_iff (Law.run _ ())).mp (rests b (Law.run _ ()))⟩⟩
 
 end GivenNothing
 
@@ -347,13 +347,13 @@ values at each step, is the feature from some step on along every run, read of t
 the run. -/
 theorem learnable_iff_reading {reg : S → R} {val : S → V} {l : List S} (world : ∀ s, s ∈ l)
     (v₀ : V) :
-    (∃ pred : List R → Option V, ∀ r : Run (Law.process next), Rests reg val pred r) ↔
+    (∃ pred : List R → Option V, ∀ r : Run (Law.process next), Predicts reg val pred r) ↔
       ∃ G : (Nat → Option R) → V, (∀ f f' : Nat → Option R, (∀ k, f k = f' k) → G f = G f') ∧
         ∀ r : Run (Law.process next), ∃ T, ∀ t, T ≤ t →
           val (r.state t) = G fun k => some (reg (r.state (t + k))) :=
   ⟨fun ⟨pred, rests⟩ =>
     match (Learnable.learnable_iff_reading (next := next) (reg := reg) (val := val) world v₀).mp
-        ⟨pred, fun s => (rests_iff (Law.run next s)).mp (rests (Law.run next s))⟩ with
+        ⟨pred, fun s => (predicts_iff (Law.run next s)).mp (rests (Law.run next s))⟩ with
     | ⟨G, respects, read⟩ => ⟨G, respects, fun r =>
       match read (r.state 0) with
       | ⟨T, at_s⟩ => ⟨T, fun t late =>
@@ -364,7 +364,7 @@ theorem learnable_iff_reading {reg : S → R} {val : S → V} {l : List S} (worl
         ⟨G, respects, fun s => match read (Law.run next s) with
           | ⟨T, at_r⟩ => ⟨T, fun t late =>
             (at_r t late).trans (respects _ _ fun k => future_eq reg (Law.run next s) t k)⟩⟩ with
-    | ⟨pred, rests⟩ => ⟨pred, fun r => (rests_iff r).mpr (rests (r.state 0))⟩⟩
+    | ⟨pred, rests⟩ => ⟨pred, fun r => (predicts_iff r).mpr (rests (r.state 0))⟩⟩
 
 end ExactlyReading
 

@@ -45,7 +45,7 @@ Results:
   The pattern of names across steps carries identity. The representation supplies it as
   a correspondence premise, and `Turnover` shows that the premise is substantive.
   Arisings made by naming alone can meet every premise of
-  `Unceasing.regeneration_recurs`: `Depletes` is not tied to the arising formation and
+  `Unceasing.activeRenewer_recurs`: `Depletes` is not tied to the arising formation and
   does not screen them out (`TideFlip`).
 * Continuity, read one way. A re-identification that keeps the name of every formation
   active before and after a step (`KeepsActive`) makes no arising: what arises under the
@@ -1479,7 +1479,7 @@ theorem arises : ∀ t, odd t = true → flipped.Arises t .moon := fun _ odd' =>
    Eq.subst (motive := fun b => turn swap b .moon = .moon) (congrArg (!·) odd').symm rfl⟩
 
 /-- `Tide.still` has no arising. Named by `flip`, which breaks the moon's continuing
-activity, it meets every premise of `Unceasing.regeneration_recurs`: activity needs
+activity, it meets every premise of `Unceasing.activeRenewer_recurs`: activity needs
 support, every rise is made by the renewing moon, the tide changes at every step at which
 a formation arises, and generation is unceasing. The conclusion, that renewal recurs, is
 true; the generation is the naming's. -/
@@ -1487,7 +1487,7 @@ theorem naming_meets_premises :
     (∀ t f, ¬ Tide.still.Arises t f) ∧ ¬ flip.KeepsActive Tide.still ∧
     flipped.Dependent ∧ flipped.RenewedBy renews ∧
     flipped.Depletes [()] (fun t => ∃ x, flipped.Arises t x) ∧ flipped.Unceasing ∧
-    ∀ T, ¬ ∀ t, T ≤ t → ∀ x, ¬ flipped.Regenerating renews [()] t x :=
+    ∀ T, ¬ ∀ t, T ≤ t → ∀ x, ¬ flipped.ActiveRenewer renews [()] t x :=
   have made : flipped.RenewedBy renews := fun t _ _ =>
     ⟨flip.new t .moon, flip.old_new t .moon,
      Eq.subst (motive := fun f => Tide.renews t f ()) (flip.old_new t .moon).symm trivial⟩
@@ -1500,7 +1500,7 @@ theorem naming_meets_premises :
    fun keeps => Formation.noConfusion (keeps 0 .moon rfl rfl),
    (Tide.still.reidentify_dependent flip).mpr fun _ _ _ _ depends => (nomatch depends),
    made, depletes, unceasing,
-   Web.Unceasing.regeneration_recurs flipped made depletes unceasing⟩
+   Web.Unceasing.activeRenewer_recurs flipped made depletes unceasing⟩
 
 end TideFlip
 
@@ -1535,7 +1535,7 @@ theorem growth_without_arising :
 
 end Budding
 
-namespace Fork
+namespace Identity.Fork
 
 /-- Each formation continues itself; at step one formation `0` also continues as
 formation `1`. -/
@@ -1557,7 +1557,7 @@ theorem split_unceasing : ¬ Cycle.web.NoSplit forks ∧ Cycle.web.UnceasingFrom
       | .inr ⟨one, _, _⟩ => Nat.lt_irrefl 1
           (Eq.subst (motive := fun k => 1 < k) one (Nat.succ_lt_succ (Nat.zero_lt_succ N)))⟩⟩
 
-end Fork
+end Identity.Fork
 
 namespace Merge
 

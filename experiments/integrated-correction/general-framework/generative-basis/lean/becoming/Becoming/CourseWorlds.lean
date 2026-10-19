@@ -462,14 +462,14 @@ theorem TwoActs.gap_le_count (every : ∀ c, c ∈ cs) {M D : Nat} {on : Nat →
 no polynomial** (`Becoming.Frequency`): something has reached `e` in the carried world, and `e`
 returns it in succession at steps `T i` with `2 ^ i` outgrowing every polynomial in `T i`. -/
 theorem runaway_worlds (every : ∀ c, c ∈ cs) (distinct : Distinct cs) {e : C} {T : Nat → Nat}
-    (back : ∀ i, Returns cs part k present e (T i) (T (i + 1)))
+    (back : ∀ i, RoundTrip cs part k present e (T i) (T (i + 1)))
     (fed : 0 < (carriedWorld cs part σ k present δ).web.level (T 0) (.inr e))
     (often : ∀ A n, ∃ i, A * (T i + 1) ^ n < 2 ^ i) :
     ¬ ∃ A n, ∀ t, ∀ (law act act' : ExchangeLaw F C) (start start' : C → Nat) (W W' : Web F C),
       TwoActs part σ k present δ law act act' start start' →
         gap ((law.actWorld act part present start W).web.level t (.inr e))
           ((law.actWorld act' part present start' W').web.level t (.inr e)) ≤ A * (t + 1) ^ n :=
-  fun ⟨A, n, bound⟩ => runaway_of_returns back fed often
+  fun ⟨A, n, bound⟩ => runaway_of_roundTrip back fed often
     ⟨A, n, fun t => (most_difference_worlds every distinct t e _).mp (bound t)⟩
 
 end Frontier

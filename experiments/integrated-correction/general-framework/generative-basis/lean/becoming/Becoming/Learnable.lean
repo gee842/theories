@@ -9,7 +9,7 @@ take: a map `reg : S → R` of configurations, a feature `val : S → V`, and an
 `pred : List R → Option V` that proposes at step `t` of the orbit from `s`, from the prefix
 before `t` of the course through the map (`Becoming.Learning`'s `prefixOf`). It rests in accord
 with the feature from step `T` where it proposes the feature's value at every later step
-(`RestsFrom`, `Rests`). `Becoming.Testing` shows that a claim is excluded at a formation only
+(`PredictsFrom`, `Predicts`). `Becoming.Testing` shows that a claim is excluded at a formation only
 through a difference that couples into it; `Becoming.Learning` that no prefix fixes the next
 value; `Becoming.Identification` that in a world a list holds, elimination over the lasso
 candidates comes to rest in accord with the course through the map within a bound. This module
@@ -20,13 +20,13 @@ states, with no premise, what a map lets an extrapolation come to rest in accord
   where their features differ, a proposed value is right on at most one
   (`claim_not_right_on_both`); with the features decided it misses on one, while the two
   prefixes stay equal at every step (`missed_on_one`). An extrapolation resting on both has
-  features that agree from some step on (`agree_of_rests_both`); where they differ at
-  arbitrarily late steps, no extrapolation rests on both (`not_rests_on_both`), already for two
-  configurations the law leaves unchanged (`still_not_rests_on_both`).
+  features that agree from some step on (`agree_of_predicts_both`); where they differ at
+  arbitrarily late steps, no extrapolation rests on both (`not_predicts_on_both`), already for two
+  configurations the law leaves unchanged (`still_not_predicts_on_both`).
 * **What is read off the map is learned by an extrapolation given nothing.** Where the
   feature is read off the map (`val s = g (reg s)`), elimination over the lasso candidates on the
   values through the map, its proposals read by `g`, rests in accord with the feature in every
-  world a list holds, from `Becoming.Identification`'s bound on (`rests_through`). It is given
+  world a list holds, from `Becoming.Identification`'s bound on (`predicts_through`). It is given
   neither the configurations, nor their number, nor any value of the feature.
 * **Exactly.** In a world a list holds, some extrapolation from prefixes through the map rests in
   accord with the feature at every configuration exactly where configurations with the same
@@ -40,9 +40,9 @@ states, with no premise, what a map lets an extrapolation come to rest in accord
   `Becoming.Learning` states generalization.
 * **Two still configurations** (`Pair`). Through the map to the first of two coordinates, no
   extrapolation rests in accord with the second at both `(true, false)` and `(true, true)`
-  (`Pair.first_not_rests`), the second not going alike across the first (`Pair.not_lumped`).
+  (`Pair.first_not_predicts`), the second not going alike across the first (`Pair.not_lumped`).
   Through the map to both, elimination over the lasso candidates rests in accord with the second
-  at every configuration from step 2 (`Pair.whole_rests`).
+  at every configuration from step 2 (`Pair.whole_predicts`).
 
 Resting in accord with the feature from some step on is what the literature calls
 identification in the limit (Gold 1967), and `learnable_iff` is an observability condition in
@@ -70,13 +70,13 @@ def course (next : S → S) (reg : S → R) (s : S) : Nat → R := fun n => reg 
 
 /-- The extrapolation `pred`, from the prefix of the course through the map, proposes the
 feature's value at every step from `T` on along the orbit from `s`. -/
-def RestsFrom (next : S → S) (reg : S → R) (val : S → V) (pred : List R → Option V) (s : S)
+def PredictsFrom (next : S → S) (reg : S → R) (val : S → V) (pred : List R → Option V) (s : S)
     (T : Nat) : Prop :=
   ∀ t, T ≤ t → pred (Learning.prefixOf (course next reg s) t) = some (val (Law.orbit next s t))
 
 /-- The extrapolation comes to rest in accord with the feature along the orbit from `s`. -/
-def Rests (next : S → S) (reg : S → R) (val : S → V) (pred : List R → Option V) (s : S) : Prop :=
-  ∃ T, RestsFrom next reg val pred s T
+def Predicts (next : S → S) (reg : S → R) (val : S → V) (pred : List R → Option V) (s : S) : Prop :=
+  ∃ T, PredictsFrom next reg val pred s T
 
 end Rest
 
@@ -123,9 +123,9 @@ theorem missed_on_one [DecidableEq V] (pred : List R → Option V) {s s' : S}
 
 /-- **An extrapolation resting on two configurations alike through the map has features that
 agree from some step on.** -/
-theorem agree_of_rests_both {pred : List R → Option V} {s s' : S}
+theorem agree_of_predicts_both {pred : List R → Option V} {s s' : S}
     (same : Law.SameFuture next reg s s') {T T' : Nat}
-    (rests : RestsFrom next reg val pred s T) (rests' : RestsFrom next reg val pred s' T') :
+    (rests : PredictsFrom next reg val pred s T) (rests' : PredictsFrom next reg val pred s' T') :
     ∀ t, T + T' ≤ t → val (Law.orbit next s t) = val (Law.orbit next s' t) :=
   fun t late =>
     Option.some.inj (((rests t (Nat.le_trans (Nat.le_add_right T T') late)).symm.trans
@@ -133,13 +133,13 @@ theorem agree_of_rests_both {pred : List R → Option V} {s s' : S}
       (rests' t (Nat.le_trans (Nat.le_add_left T' T) late)))
 
 /-- **Where their features differ at arbitrarily late steps, no extrapolation rests on both.** -/
-theorem not_rests_on_both (pred : List R → Option V) {s s' : S}
+theorem not_predicts_on_both (pred : List R → Option V) {s s' : S}
     (same : Law.SameFuture next reg s s')
     (differ : ∀ T, ∃ t, T ≤ t ∧ val (Law.orbit next s t) ≠ val (Law.orbit next s' t)) :
-    ¬ (Rests next reg val pred s ∧ Rests next reg val pred s') :=
+    ¬ (Predicts next reg val pred s ∧ Predicts next reg val pred s') :=
   fun ⟨⟨T, rests⟩, ⟨T', rests'⟩⟩ =>
     match differ (T + T') with
-    | ⟨t, late, ne⟩ => ne (agree_of_rests_both same rests rests' t late)
+    | ⟨t, late, ne⟩ => ne (agree_of_predicts_both same rests rests' t late)
 
 /-- A configuration the law leaves unchanged is its own orbit (`Law.fixed_rests`). -/
 theorem orbit_of_still {s : S} (still : next s = s) (n : Nat) : Law.orbit next s n = s :=
@@ -148,10 +148,10 @@ theorem orbit_of_still {s : S} (still : next s = s) (n : Nat) : Law.orbit next s
 /-- **Already for two still configurations.** Where the law leaves `s` and `s'` unchanged, the
 map does not tell them apart and their features differ, no extrapolation through the map rests
 in accord with the feature at both. -/
-theorem still_not_rests_on_both (pred : List R → Option V) {s s' : S} (still : next s = s)
+theorem still_not_predicts_on_both (pred : List R → Option V) {s s' : S} (still : next s = s)
     (still' : next s' = s') (alike : reg s = reg s') (differ : val s ≠ val s') :
-    ¬ (Rests next reg val pred s ∧ Rests next reg val pred s') :=
-  not_rests_on_both pred
+    ¬ (Predicts next reg val pred s ∧ Predicts next reg val pred s') :=
+  not_predicts_on_both pred
     (fun n => (congrArg reg (orbit_of_still still n)).trans
       (alike.trans (congrArg reg (orbit_of_still still' n)).symm))
     fun T => ⟨T, Nat.le_refl T, fun same =>
@@ -160,13 +160,13 @@ theorem still_not_rests_on_both (pred : List R → Option V) {s s' : S} (still :
 
 /-- **Where the law leaves every configuration unchanged, a feature learned at every
 configuration goes alike across the map's lumping.** -/
-theorem still_lumped_of_rests (still : ∀ s, next s = s) {pred : List R → Option V}
-    (rests : ∀ s, Rests next reg val pred s) : Learning.Lumped reg val :=
+theorem still_lumped_of_predicts (still : ∀ s, next s = s) {pred : List R → Option V}
+    (rests : ∀ s, Predicts next reg val pred s) : Learning.Lumped reg val :=
   fun s s' alike =>
     match rests s, rests s' with
     | ⟨T, at_s⟩, ⟨T', at_s'⟩ =>
       (congrArg val (orbit_of_still (still s) (T + T'))).symm.trans
-        ((agree_of_rests_both
+        ((agree_of_predicts_both
             (fun n => (congrArg reg (orbit_of_still (still s) n)).trans
               (alike.trans (congrArg reg (orbit_of_still (still s') n)).symm))
             at_s at_s' (T + T') (Nat.le_refl _)).trans
@@ -185,9 +185,9 @@ list holds, where the feature is read off the map, elimination over the lasso ca
 values through the map, its proposals read by `g`, rests in accord with the feature from
 `Becoming.Identification`'s bound on (`held_byElimination_rests`). It is given neither the
 configurations, nor their number, nor any value of the feature. -/
-theorem rests_through {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
+theorem predicts_through {next : S → S} {s : S} {l : List S} (held : ∀ n, Law.orbit next s n ∈ l)
     {reg : S → R} {val : S → V} {g : R → V} (factors : ∀ s, val s = g (reg s)) :
-    RestsFrom next reg val (fun r => (Learning.byElimination Learning.lassos r).map g) s
+    PredictsFrom next reg val (fun r => (Learning.byElimination Learning.lassos r).map g) s
       (l.length + (l.length + l.length - 1) * Learning.tri l.length) :=
   fun t late =>
     (congrArg (Option.map g) (Identification.held_byElimination_rests held reg t late)).trans
@@ -236,12 +236,12 @@ every extrapolation, whatever it is given; the extrapolation of the second is bu
 law, the map, the feature and the list (`fromLaw`). -/
 theorem learnable_iff {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) :
-    (∃ pred : List R → Option V, ∀ s, Rests next reg val pred s) ↔
+    (∃ pred : List R → Option V, ∀ s, Predicts next reg val pred s) ↔
       ∀ s s', Law.SameFuture next reg s s' →
         ∃ T, ∀ t, T ≤ t → val (Law.orbit next s t) = val (Law.orbit next s' t) :=
   ⟨fun ⟨_, rests⟩ s s' same =>
     match rests s, rests s' with
-    | ⟨_, at_s⟩, ⟨_, at_s'⟩ => ⟨_, agree_of_rests_both same at_s at_s'⟩,
+    | ⟨_, at_s⟩, ⟨_, at_s'⟩ => ⟨_, agree_of_predicts_both same at_s at_s'⟩,
    fun agree => ⟨fromLaw next reg val l, fun s =>
     have closed : ∀ x, x ∈ l → next x ∈ l := fun x _ => world (next x)
     have iff_same : ∀ t, l.length + l.length - 1 ≤ t → ∀ x,
@@ -275,15 +275,15 @@ theorem learnable_iff {next : S → S} {reg : S → R} {val : S → V} {l : List
 world a list holds. -/
 theorem learnable_of_lumped {next : S → S} {reg : S → R} {val : S → V} {l : List S}
     (world : ∀ s, s ∈ l) (lumped : Learning.Lumped reg val) :
-    ∃ pred : List R → Option V, ∀ s, Rests next reg val pred s :=
+    ∃ pred : List R → Option V, ∀ s, Predicts next reg val pred s :=
   (learnable_iff world).mpr fun _ _ same => ⟨0, fun t _ => lumped _ _ (same t)⟩
 
 /-- **Where the law leaves every configuration unchanged, what can be learned through a
 map is exactly what goes alike across its lumping.** -/
 theorem still_learnable_iff_lumped {next : S → S} (still : ∀ s, next s = s) {reg : S → R}
     {val : S → V} {l : List S} (world : ∀ s, s ∈ l) :
-    (∃ pred : List R → Option V, ∀ s, Rests next reg val pred s) ↔ Learning.Lumped reg val :=
-  ⟨fun ⟨_, rests⟩ => still_lumped_of_rests still rests, learnable_of_lumped world⟩
+    (∃ pred : List R → Option V, ∀ s, Predicts next reg val pred s) ↔ Learning.Lumped reg val :=
+  ⟨fun ⟨_, rests⟩ => still_lumped_of_predicts still rests, learnable_of_lumped world⟩
 
 end Exactly
 
@@ -299,10 +299,10 @@ theorem stays (s : Bool × Bool) (n : Nat) : Law.orbit still s n = s :=
 
 /-- **Through the map to the first coordinate, no extrapolation rests in accord with the second
 at both `(true, false)` and `(true, true)`.** -/
-theorem first_not_rests (pred : List Bool → Option Bool) :
-    ¬ (Rests still Prod.fst Prod.snd pred (true, false) ∧
-      Rests still Prod.fst Prod.snd pred (true, true)) :=
-  still_not_rests_on_both pred rfl rfl rfl fun same => Bool.noConfusion same
+theorem first_not_predicts (pred : List Bool → Option Bool) :
+    ¬ (Predicts still Prod.fst Prod.snd pred (true, false) ∧
+      Predicts still Prod.fst Prod.snd pred (true, true)) :=
+  still_not_predicts_on_both pred rfl rfl rfl fun same => Bool.noConfusion same
 
 /-- The second coordinate does not go alike across the first. -/
 theorem not_lumped : ¬ Learning.Lumped (Prod.fst : Bool × Bool → Bool) Prod.snd :=
@@ -310,9 +310,9 @@ theorem not_lumped : ¬ Learning.Lumped (Prod.fst : Bool × Bool → Bool) Prod.
 
 /-- **Through the map to both, elimination over the lasso candidates rests in accord with the
 second at every configuration from step 2.** -/
-theorem whole_rests (s : Bool × Bool) :
-    RestsFrom still id Prod.snd (fun r => (Learning.byElimination Learning.lassos r).map Prod.snd) s 2 :=
-  rests_through (l := [s])
+theorem whole_predicts (s : Bool × Bool) :
+    PredictsFrom still id Prod.snd (fun r => (Learning.byElimination Learning.lassos r).map Prod.snd) s 2 :=
+  predicts_through (l := [s])
     (fun n => Eq.subst (motive := fun x => x ∈ [s]) (stays s n).symm (List.Mem.head []))
     fun _ => rfl
 

@@ -63,12 +63,12 @@ on dissipation. This module states that premise on flows and proves what it carr
   dissipation, `standing_not_recurring_on`, `standing_opens`, `standing_draws_in` and
   `standing_not_recurring`). Where a formation is itself a condition standing exactly while it
   is active, its arising is such a coming to stand (`Becoming.Roles`,
-  `Web.generation_draws_in`).
+  `Web.embodiedArising_draws_in`).
 * Rising and falling in one exchange. Across a step dissipated on, the members of a
   family fall by at least as much as they rise, and by one more for each formation
   taking from it (`Balances.falls_cover`). So a formation taking from the family makes
   some member fall, whether or not another rises (`Balances.falls_of_taking`), and the
-  depletion supplied as a premise in `Becoming.Generation` is a theorem for an event at
+  depletion supplied as a premise in `Becoming.Arising` is a theorem for an event at
   whose steps the family is dissipated on and taken from (`Balances.depletes`). Where a
   member rises, another member falls across the same step (`rise_with_fall`,
   `standing_with_fall` for coming to stand), so under dissipation a member of a family
@@ -789,7 +789,7 @@ theorem Balances.falls_of_taking (balances : L.Balances W) {ds : List C} {t : Na
     ∃ d, d ∈ ds ∧ W.Falls t d :=
   (balances.on ds t).falls_of_taking dissipates takes
 
-/-- The depletion of `Becoming.Generation` follows: an event at each of whose steps the
+/-- The depletion of `Becoming.Arising` follows: an event at each of whose steps the
 family is dissipated on and some formation takes from it depletes the family. -/
 theorem Balances.depletes (balances : L.Balances W) {ds : List C} {event : Nat → Prop}
     (taken : ∀ t, event t → L.DissipatesOn ds t ∧ 0 < L.takers ds t) : W.Depletes ds event :=

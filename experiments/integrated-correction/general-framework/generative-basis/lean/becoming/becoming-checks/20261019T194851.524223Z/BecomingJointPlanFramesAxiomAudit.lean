@@ -1,0 +1,4 @@
+import Becoming.JointPlanFrames
+#print axioms Becoming.JointPlanFrames.plans_lift_iff_of_kernel
+#print axioms Becoming.JointPlanFrames.plans_lift_of_jointAlike
+#print axioms Becoming.JointPlanFrames.plans_lift_of_sameJointTests

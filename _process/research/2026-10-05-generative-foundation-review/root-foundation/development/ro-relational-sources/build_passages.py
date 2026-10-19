@@ -510,6 +510,68 @@ FIXES = {
         'why': 'RG: 中节 read as a response within the gap, the bound two-sided regulation proves exact'},
 }
 
+# Renamed declarations, a correction of every entry that names one: the Lean renamed them after the mappers
+# wrote, statements unchanged (R22: development/r22-names/RENAME-TABLE.json, Widening -> LoopReturn; R30:
+# development/r30-names/RENAME-TABLE.json). The declarations and the names in a reading follow; the reading's
+# words do not change. Applied after FIXES, so a FIXES entry may still name an old declaration.
+RENAMED_WHY = ('names follow the renamed declarations (R22, R30; tables in development/r22-names and '
+               'development/r30-names), statements unchanged')
+
+
+def renamed():
+    out = dict(json.loads((HERE.parent / 'r22-names/RENAME-TABLE.json').read_text())['declarations'])
+    r30 = HERE.parent / 'r30-names/RENAME-TABLE.json'
+    if r30.exists():
+        out.update(json.loads(r30.read_text())['declarations'])
+    return out
+
+
+def r30_rules():
+    r30 = HERE.parent / 'r30-names/RENAME-TABLE.json'
+    if not r30.exists():
+        return {}, {}
+    t = json.loads(r30.read_text())
+    return t['text_windows'], t['text_words']
+
+
+def rename_text_r30(s, windows, words):
+    """R30's rule for prose (development/r30-names/text.py): a qualified suffix of at least two components that
+    ends only renamed declarations, all renamed to one form, takes that form; a one-component name every declaration
+    of which is renamed to one name takes it where it cannot be an English word."""
+    import re
+    ident = re.compile(r"(?<![A-Za-z0-9_'!?₀-₉])[A-Za-z_][A-Za-z0-9_'!?₀-₉]*(?:\.[A-Za-z_][A-Za-z0-9_'!?₀-₉]*)*")
+
+    def one(tok):
+        c = tok.split('.')
+        out = list(c)
+        i = len(c) - 1
+        while i >= 0:
+            for k in range(min(i + 1, 7), 1, -1):
+                w = '.'.join(c[i - k + 1:i + 1])
+                if w in windows:
+                    out[i - k + 1:i + 1] = windows[w].split('.')
+                    i -= k
+                    break
+            else:
+                if len(c) == 1 and c[0] in words:
+                    out[0] = words[c[0]]
+                i -= 1
+        return '.'.join(out)
+    return ident.sub(lambda m: one(m.group(0)), s)
+
+
+def rename_text(s, table):
+    """A declaration named qualified (Becoming.X.y or X.y) takes its new name."""
+    import re
+    short = {o[len('Becoming.'):]: n[len('Becoming.'):] for o, n in table.items()}
+    pat = re.compile(r'(?<![\w.])(Becoming\.)?(' + '|'.join(re.escape(k) for k in sorted(short, key=len, reverse=True)
+                                                           if '.' in k) + r')(?![\w])')
+    return pat.sub(lambda m: (m.group(1) or '') + short[m.group(2)], s)
+
+
+RENAMES = renamed()
+R30_WINDOWS, R30_WORDS = r30_rules()
+
 
 def tradition(slice_, e):
     fixed = {'yi': '易传', 'lao': '老子', 'ru': '儒家', 'wen': '文字'}
@@ -597,6 +659,12 @@ def main():
                 p['reading_en'] = p['reading_en'].replace(old, new)
             if fix:
                 p['corrected'] = fix['why']
+            before = (p['declarations'], p['reading'], p['reading_en'])
+            p['declarations'] = [RENAMES.get(d, d) for d in p['declarations']]
+            p['reading'] = rename_text_r30(rename_text(p['reading'], RENAMES), R30_WINDOWS, R30_WORDS)
+            p['reading_en'] = rename_text_r30(rename_text(p['reading_en'], RENAMES), R30_WINDOWS, R30_WORDS)
+            if (p['declarations'], p['reading'], p['reading_en']) != before:
+                p['corrected'] = (p['corrected'] + '; ' if p.get('corrected') else '') + RENAMED_WHY
             if not src.startswith('wikisource/'):
                 wanted.add(src)
             passages.append(p)

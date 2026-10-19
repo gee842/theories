@@ -1,9 +1,9 @@
-import Becoming.Generation
+import Becoming.Arising
 
 /-!
 # Flow: more generation needs more replenishment
 
-`Becoming.Generation` reads whether generation ceases. Ren's words also say *more*: a
+`Becoming.Arising` reads whether generation ceases. Ren's words also say *more*: a
 whole direction of unceasingly creating more 生. This module reads the conditions of an
 unfolding as amounts that the formations taking part in each step take and give
 (`Flow`), and states what unceasing and more generation need.
@@ -16,7 +16,7 @@ unfolding as amounts that the formations taking part in each step take and give
   their units are commensurable.
 * Balance makes every change the work of a formation. In a balanced flow every rise is
   given to (`Balances.rise_given`), and where only active formations give, the premise
-  `RenewedBy` of `Becoming.Generation` is a theorem (`Balances.renewedBy`). Every fall is
+  `RenewedBy` of `Becoming.Arising` is a theorem (`Balances.renewedBy`). Every fall is
   taken from (`Balances.fall_taken`), and where only active formations take, some active
   formation drawing on a condition takes from it whenever it falls
   (`Balances.takenBy`).
@@ -27,7 +27,7 @@ unfolding as amounts that the formations taking part in each step take and give
   (`replenishment_recurs`, with formations giving to the family: `renewing_recurs`); a
   constant population of takers, with nothing arising, is another (`Steady`). The
   theorem uses arising only for the uptake it brings. Unlike the net rise of
-  `Becoming.Generation`, this sees replenishment concurrent with drawing.
+  `Becoming.Arising`, this sees replenishment concurrent with drawing.
 * Rising needs replenishment, whatever is taken: where members of a family rise at
   arbitrarily late steps, the family's replenishment recurs
   (`rising_needs_replenishment`). A condition *comes to stand* across a step when its
@@ -52,7 +52,7 @@ unfolding as amounts that the formations taking part in each step take and give
   formalized: the core has natural numbers only).
 * The premises are consistent with more without end: renewers and growers arise
   together at every step (`Expansion.more`). There the level never rises, so the net-rise
-  premise of `Becoming.Generation` fails (`Expansion.undepleted`), while the flow form
+  premise of `Becoming.Arising` fails (`Expansion.undepleted`), while the flow form
   applies. Unceasing generation does not imply more without end: the oscillator arises again
   and again while at most one formation ever takes (`Oscillation.not_more`).
 * The renewers can be the takers themselves: in a closed cycle each formation gives
@@ -773,7 +773,7 @@ theorem growers_take : flow.Taking web ∧ ∀ t, flow.ArisesTaking web [()] t (
    fun t => ⟨⟨Nat.lt_irrefl t, Nat.lt_succ_self t⟩, .tail _ (.head _), Nat.zero_lt_one⟩⟩
 
 /-- The level never rises: generation is unceasing, yet arising does not deplete the
-family in the net sense of `Becoming.Generation`. Replenishment concurrent with drawing
+family in the net sense of `Becoming.Arising`. Replenishment concurrent with drawing
 is invisible to a net rise. -/
 theorem undepleted :
     web.Unceasing ∧ (∀ t, ¬ web.Rises t ()) ∧

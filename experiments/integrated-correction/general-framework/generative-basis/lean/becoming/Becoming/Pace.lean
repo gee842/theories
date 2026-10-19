@@ -30,7 +30,7 @@ the fast level loses and to what fixes the course a rule generates.
   (`rule_until_reading`, `rule_alike_until_reading`); at a reading step the next rule is what `h`
   gives from the fast configuration there (`rule_at_reading`). In `Copying` two courses with one
   rule at the start part in their rule at the step after the first reading step
-  (`Copying.rule_parts`): the reading step is exact.
+  (`Pace.Copying.rule_parts`): the reading step is exact.
 * **Regaining needs a change of rule.** In `Switching` the fast level takes the rule's value: under
   each of the two fixed rules a fast configuration is the configuration of no run at any step from
   the first on (`Switching.fixed_loses`), and the course whose rule reads the fast level and changes
@@ -247,7 +247,7 @@ end Pace
 
 The fast level stays; the rule copies the fast configuration at every reading step. -/
 
-namespace Copying
+namespace Pace.Copying
 
 /-- The fast configuration stays. -/
 def fast (x _ : Bool) : Bool := x
@@ -265,7 +265,7 @@ theorem rule_parts :
         (Pace.paced fast slow (fun _ => true) (false, false) 1).2 :=
   ⟨rfl, fun same => Bool.noConfusion (same : true = false)⟩
 
-end Copying
+end Pace.Copying
 
 /-! ## Witness: regaining needs a change of rule
 

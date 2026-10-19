@@ -24,14 +24,14 @@ every schedule settles is a principle of reasoning, exactly.
   `M` and the steps at which couplings act. By `most_difference_arrives`, the rate bounds every gap
   of every law with the strengths (`gap_le_count`).
 * **Runaway needs frequent couplings, not strong ones.** A chain in time order (`ChainInTime`)
-  carries what has reached its start to its end (`carried_along_in_time`); a return (`Returns`) is
+  carries what has reached its start to its end (`carried_along_in_time`); a return (`RoundTrip`) is
   such a chain from a condition back to it. Every return at least doubles what had reached the
-  condition, which arrives once held and once around the loop (`carried_doubles_return`).
+  condition, which arrives once held and once around the loop (`carried_doubles_roundTrip`).
   Strengths are natural numbers, so a positive strength is at least one; with strengths below one
   the doubling does not follow. After `R` returns in succession it has doubled `R` times
-  (`carried_returns`). So where something has reached a condition and returns at steps `T i` with
+  (`carried_roundTrip`). So where something has reached a condition and returns at steps `T i` with
   `2 ^ i` outgrowing every polynomial in `T i`, the carried amount there, the most difference that
-  can arrive, outgrows every polynomial (`runaway_of_returns`). Conversely, where two to the number
+  can arrive, outgrows every polynomial (`runaway_of_roundTrip`). Conversely, where two to the number
   of steps at which anything couples is at most a polynomial in the steps, so is the carried amount,
   whatever the strengths, of degree `n * M` (`carried_le_of_rare`). For a self-loop the two meet: it
   is bounded by a polynomial exactly where two to the number of steps at which it couples is,
@@ -77,7 +77,7 @@ every schedule settles is a principle of reasoning, exactly.
   reading that left couplings at only some steps open. That case now closes in both directions.
   Only a loop of the couplings that go on can make the most difference that can arrive run away
   (`carried_le_polynomial_from`), and such a loop need not (`Frequency.Sparse`): it runs away where
-  it returns often enough (`runaway_of_returns`). For a self-loop, how often it couples decides
+  it returns often enough (`runaway_of_roundTrip`). For a self-loop, how often it couples decides
   exactly.
 - That every schedule settles is not something the theory can assert or deny of the unfolding: it
   is equivalent to a principle of reasoning about decided sequences, a dichotomy of the form "every
@@ -414,20 +414,20 @@ theorem carried_along_in_time {v : Nat → C} {T : Nat} :
 /-- **A return.** What has reached `e` from step `T` on comes back to `e` by step `T'` around a
 loop of couplings in time order. What returns is a carried difference along couplings, not a
 configuration (`Law.Returns` of `Becoming.Recurrence`, `Branching.Returns`) and not a dependence
-met again (`Web.Returns` of `Becoming.Return`). -/
-def Returns (cs : List C) (part : F → Bool) (k : Nat → F → C → Nat → C → Nat)
+met again (`Web.Restored` of `Becoming.Restoration`). -/
+def RoundTrip (cs : List C) (part : F → Bool) (k : Nat → F → C → Nat → C → Nat)
     (present : Nat → List F) (e : C) (T T' : Nat) : Prop :=
   ∃ v p, v 0 = e ∧ v (p + 1) = e ∧ ChainInTime cs part k present v T (p + 1) T'
 
 /-- A condition coupled into itself at step `u`, reading a level from step `T` on, returns what had
 reached it by `T` by the next step. -/
-theorem Returns.of_couplesAt {u s T : Nat} {e : C} (at_ : CouplesAt cs part k present u s e e)
-    (late : T ≤ s) : Returns cs part k present e T (u + 1) :=
+theorem RoundTrip.of_couplesAt {u s T : Nat} {e : C} (at_ : CouplesAt cs part k present u s e e)
+    (late : T ≤ s) : RoundTrip cs part k present e T (u + 1) :=
   ⟨fun _ => e, 0, rfl, rfl, u, s, Nat.lt_succ_self u, at_, late⟩
 
 /-- **Every return at least doubles.** What has reached `e` by step `T` and returns to it by `T'`
 arrives there twice over: once held, once around the loop. -/
-theorem carried_doubles_return {e : C} {T T' : Nat} (back : Returns cs part k present e T T') :
+theorem carried_doubles_roundTrip {e : C} {T T' : Nat} (back : RoundTrip cs part k present e T T') :
     carried cs part σ k present δ T e + carried cs part σ k present δ T e ≤
       carried cs part σ k present δ T' e :=
   match back with
@@ -445,24 +445,24 @@ theorem carried_doubles_return {e : C} {T T' : Nat} (back : Returns cs part k pr
 
 /-- **Each return doubles again.** After `R` returns in succession, at the steps `T i`, what had
 reached `e` by `T 0` has at least doubled `R` times. -/
-theorem carried_returns {e : C} {T : Nat → Nat} :
-    ∀ R, (∀ i, i < R → Returns cs part k present e (T i) (T (i + 1))) →
+theorem carried_roundTrip {e : C} {T : Nat → Nat} :
+    ∀ R, (∀ i, i < R → RoundTrip cs part k present e (T i) (T (i + 1))) →
       2 ^ R * carried cs part σ k present δ (T 0) e ≤ carried cs part σ k present δ (T R) e
   | 0, _ => Nat.le_of_eq (Nat.one_mul _)
   | R + 1, back =>
     Nat.le_trans (Nat.le_of_eq ((congrArg (· * _) (Loops.two_pow_succ R)).trans
         (Loops.add_mul_nat _ _ _)))
       (Nat.le_trans (Nat.add_le_add
-          (carried_returns R fun i lt => back i (Nat.lt_succ_of_lt lt))
-          (carried_returns R fun i lt => back i (Nat.lt_succ_of_lt lt)))
-        (carried_doubles_return (back R (Nat.lt_succ_self R))))
+          (carried_roundTrip R fun i lt => back i (Nat.lt_succ_of_lt lt))
+          (carried_roundTrip R fun i lt => back i (Nat.lt_succ_of_lt lt)))
+        (carried_doubles_roundTrip (back R (Nat.lt_succ_self R))))
 
 /-- **Returns often enough run away.** Where something has reached `e` by step `T 0` and returns to
 it in succession by the steps `T i`, with `2 ^ i` outgrowing every polynomial in `T i`, the carried
 amount at `e`, the most difference that can arrive there, is bounded by no polynomial in the steps,
 whatever the strengths. -/
-theorem runaway_of_returns {e : C} {T : Nat → Nat}
-    (back : ∀ i, Returns cs part k present e (T i) (T (i + 1)))
+theorem runaway_of_roundTrip {e : C} {T : Nat → Nat}
+    (back : ∀ i, RoundTrip cs part k present e (T i) (T (i + 1)))
     (fed : 0 < carried cs part σ k present δ (T 0) e)
     (often : ∀ A n, ∃ i, A * (T i + 1) ^ n < 2 ^ i) :
     ¬ ∃ A n, ∀ t, carried cs part σ k present δ t e ≤ A * (t + 1) ^ n :=
@@ -470,7 +470,7 @@ theorem runaway_of_returns {e : C} {T : Nat → Nat}
     | ⟨i, below⟩ => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le below
         (Nat.le_trans (Nat.le_trans (Nat.le_of_eq (Nat.mul_one _).symm)
             (Nat.mul_le_mul_left _ fed))
-          (Nat.le_trans (carried_returns i fun j _ => back j) (bound (T i)))))
+          (Nat.le_trans (carried_roundTrip i fun j _ => back j) (bound (T i)))))
 
 end Returns
 
@@ -494,9 +494,9 @@ theorem recurs {on : Nat → Bool} {M : Nat} (strong : 0 < M)
     | ⟨u, le, yes⟩ => ⟨u, u, le, couplesAt yes strong⟩
 
 /-- Each marked step is a return: what has reached the loop by it is back by the next step. -/
-theorem returns {on : Nat → Bool} {M u : Nat} (yes : on u = true) (strong : 0 < M) :
-    Returns [()] (fun _ => false) (strengths on M) (fun _ => [()]) () u (u + 1) :=
-  Returns.of_couplesAt (couplesAt yes strong) (Nat.le_refl u)
+theorem roundTrip {on : Nat → Bool} {M u : Nat} (yes : on u = true) (strong : 0 < M) :
+    RoundTrip [()] (fun _ => false) (strengths on M) (fun _ => [()]) () u (u + 1) :=
+  RoundTrip.of_couplesAt (couplesAt yes strong) (Nat.le_refl u)
 
 /-- **It couples exactly at the marked steps**, reading its current level, where its strength is
 positive. -/
