@@ -70,8 +70,7 @@ What is not derived: which projection an actual unfolding carries a law through;
 formation forms or uses one; how a rule comes to change; that input and noise are separable in
 an actual unfolding. No ethical predicate, ranking or axiom occurs.
 
-`trajectory` is stated in `Becoming.Recurrence`, beside `Law.orbit`, so `Becoming.Counterfactual`
-does not import the frame (board item W).
+`trajectory` is stated in `Becoming.Recurrence`, beside `Law.orbit` (board item W).
 -/
 
 namespace Becoming

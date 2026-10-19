@@ -133,8 +133,7 @@ propositional extensionality, and the quotient by likeness needs `Quot.sound`); 
 theorems stated with `Determined` hold up to likeness. No ethical predicate, ranking or axiom
 occurs.
 
-`Law.SameFuture` is stated in `Becoming.Recurrence`, so the modules using it do not import the frame
-(board item W).
+`Law.SameFuture` is stated in `Becoming.Recurrence` (board item W).
 -/
 
 namespace Becoming

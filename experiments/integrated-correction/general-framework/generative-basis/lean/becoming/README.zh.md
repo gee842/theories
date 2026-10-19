@@ -17,11 +17,11 @@
 <a id="四层--four-layers"></a>
 ## 四层
 
-`import Becoming` 导入全部四层。
+`import Becoming` 导入全部四层。核心只有一个基底：运行（每一步展开是什么、如何走向下一步；`Generative.Process`、`Run`、`Becoming.Frame`）。世界一族（`World`、`Web`、`Flow`）按定义就是运行的立与交换之读：一个 `World` 是一种关系项及其历史，即容许每一步的过程（`everyStep`）的一次运行，其构形是各步的依存网（`WebAt`），其移动是关系项之间的交换；`Web F C` 就是 `Dependence Nat F C`。所以 `Becoming.World` 导入框架，导入树从基础与 `Becoming.Frame` 开始。
 
 | 层 | 模块 | 讲什么 |
 |---|---|---|
-| 基底 | [`Becoming.World`](Becoming/World.lean) | 展开的记录：依存网、流、世界、交换，彼此之间不设前提；不导入任何模块 |
+| 基底 | [`Becoming.World`](Becoming/World.lean) | 展开的记录：依存、依存网（`Dependence Nat`）、流、交换，以及作为运行的世界（其构形是依存网、移动是交换；`World.of`、`World.web`、`World.flow`、`World.move`），彼此之间不设前提；导入框架 |
 | L0 | `GenerativeCore`（基础） | 过程、轨迹及其组合与传递 |
 | L1 | [`Becoming.Frame`](Becoming/Frame.lean) | 框架：过程加上每个配置实现的主张；运行、可达、不变量、新实现 |
 | L1 | [`Becoming.Labelled`](Becoming/Labelled.lean) | 带标签的过程与框架作为展开的读法：动作读入配置、历史所显示的律、主张是关系项、互模拟的相同；更新、依存、回程与生成沿运行的读法 |

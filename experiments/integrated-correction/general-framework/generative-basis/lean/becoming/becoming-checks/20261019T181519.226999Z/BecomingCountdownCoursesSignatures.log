@@ -1,0 +1,14 @@
+@Becoming.CountdownCourses.not_done_before_course : ∀ {S : Type u_1} {tick : S → Option S} {busy done : S → Prop}
+  {work fuel : S → Nat},
+  Becoming.Countdown.Counts tick busy done work fuel →
+    (∀ (s : S), busy s → done s → False) →
+      ∀ {s t : S} {k : Nat},
+        busy s →
+          k ≤ work s →
+            Generative.Trace (Becoming.Assurance.ofPartial fun s x => tick s) s (List.replicate k ()) t → ¬done t
+@Becoming.CountdownCourses.slow_exits : ∀ {n : Nat} {plan : List Unit},
+  n < plan.length →
+    ∀ {t : Option Nat},
+      Generative.Trace (Becoming.Assurance.ofPartial Becoming.Countdown.Slow.step) (some n) plan t → t = none
+Becoming.CountdownCourses.slow_misses : ∀ (n : Nat),
+  Generative.Trace (Becoming.Assurance.ofPartial Becoming.Countdown.Slow.step) (some n) (List.replicate n ()) (some 0)

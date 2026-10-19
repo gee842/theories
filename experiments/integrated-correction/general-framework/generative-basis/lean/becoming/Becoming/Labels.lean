@@ -210,8 +210,8 @@ theorem table_rests {next : S → S} {reg : S → R} {val : S → V} {l : List S
         match agree _ _ same with
         | ⟨_, agrees⟩ =>
           have equal : val (Law.orbit next s t) = val (Law.orbit next x l.length) :=
-            eq_of_returns (Law.returns_of_reachable world ⟨Law.orbit next s d, at_t⟩)
-              (Law.returns_of_reachable world ⟨x, rfl⟩) agrees
+            eq_of_returns (Law.returns_of_reachable world (Law.reachable_iff.mpr ⟨Law.orbit next s d, at_t⟩))
+              (Law.returns_of_reachable world (Law.reachable_iff.mpr ⟨x, rfl⟩)) agrees
           (congrArg (Option.map Prod.snd) (mapped.trans (congrArg (Option.map (entryOf next reg val l)) found))).trans
             (congrArg some equal.symm)
 

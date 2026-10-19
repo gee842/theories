@@ -628,7 +628,7 @@ theorem readWeb_dependent {l : Nat → C → Nat} {L : Flow F C} (runs : rel.Run
 /-- A run over one kind of relatum, read as a world. -/
 def world {R : Type} (rel : ExchangeRelation R R) (present : Nat → List R) (L : Flow R R)
     (l : Nat → R → Nat) (need : Nat → R → R → Nat) : World :=
-  ⟨R, L, rel.readWeb present L l need⟩
+  World.of R L (rel.readWeb present L l need)
 
 /-- **The four tying premises hold on every run, with no premise.** With the rest counted and
 requirement read as necessary response, the world of a run balances, only active relata give and

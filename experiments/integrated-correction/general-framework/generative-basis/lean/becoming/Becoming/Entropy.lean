@@ -1389,7 +1389,7 @@ theorem Arrow.marks {T : Nat} {S : List Nat → Nat} (arrow : W.Arrow cs T S) :
 theorem Merges.law {T : Nat} {next : List Nat → List Nat} (merges : W.Merges cs T next) :
     Law.Merges next :=
   match merges with
-  | ⟨t, _, changes, merged⟩ => ⟨W.config cs (t + 1), W.config cs t, changes, merged⟩
+  | ⟨t, _, changes, merged⟩ => Law.merges_iff.mpr ⟨W.config cs (t + 1), W.config cs t, changes, merged⟩
 
 /-- Where the family's change is a function of its configuration from `T` on, its
 configuration `n` steps after `T` is the orbit of its configuration at `T` under `next`. -/
@@ -1452,7 +1452,7 @@ theorem Balances.returns_of_lossless (balances : L.Balances W) {T : Nat}
   match revisits_of_held (g := Law.orbit next (W.config cs T))
       (balances.orbit_held gainless determined) with
   | ⟨i, _, lt, same⟩ => match gap_of_lt lt with
-    | ⟨d, gap⟩ => ⟨d + 1, Nat.succ_pos d, lossless.cancel i
+    | ⟨d, gap⟩ => Law.returns_iff.mpr ⟨d + 1, Nat.succ_pos d, lossless.cancel i
         ((Law.orbit_add next (W.config cs T) (d + 1) i).symm.trans
           ((congrArg (Law.orbit next (W.config cs T)) (Nat.add_comm (d + 1) i)).trans
             ((congrArg (Law.orbit next (W.config cs T)) gap.symm).trans same.symm)))⟩
@@ -1730,7 +1730,7 @@ def web : Web (Option Bool) (Option Bool) where
   need _ _ _ := 0
   draws _ _ _ := False
 
-def world : World := ⟨Option Bool, flow, web⟩
+def world : World := World.of (Option Bool) flow web
 
 /-- The carrier and both sides. -/
 def all : List (Option Bool) := [none, some true, some false]
@@ -1968,7 +1968,7 @@ def web : Web (Option Bool) (Option Bool) where
   need _ _ _ := 0
   draws _ _ _ := False
 
-def world : World := ⟨Option Bool, flow, web⟩
+def world : World := World.of (Option Bool) flow web
 
 theorem balances : flow.Balances web := fun t c => match t, c with
   | 0, none => rfl
@@ -2066,7 +2066,7 @@ def web : Web Nat Nat where
   need _ _ _ := 0
   draws _ _ _ := False
 
-def world : World := ⟨Nat, flow, web⟩
+def world : World := World.of Nat flow web
 
 theorem unit_self (a : Nat) : unit a a = 1 := mark_one rfl
 

@@ -1,0 +1,25 @@
+@Becoming.CaptureWorlds.length_le_zero : ∀ {X : Type} {l : List X}, (∀ (k : X), k ∈ l → False) → l.length ≤ 0
+@Becoming.CaptureWorlds.unsupported_leave_none : ∀ {X : Type} {L : Becoming.Flow X X} {W : Becoming.Web X X},
+  L.Acting W →
+    W.Dependent →
+      ∀ {t : Nat} {es : List X} {kids : X → List X},
+        (∀ (p k : X), p ∈ es → k ∈ kids p → L.DescendsAt W t k p) →
+          (∀ (p : X), p ∈ es → ¬W.Supported t p) → ∀ (p : X), p ∈ es → (kids p).length ≤ 0
+@Becoming.CaptureWorlds.share_rises_of_unsupported : ∀ {X : Type} {L : Becoming.Flow X X} {W : Becoming.Web X X},
+  L.Acting W →
+    W.Dependent →
+      ∀ {t : Nat} {ms es : List X} {kids : X → List X} {a : Nat},
+        (∀ (p k : X), p ∈ es → k ∈ kids p → L.DescendsAt W t k p) →
+          (∀ (p : X), p ∈ es → ¬W.Supported t p) →
+            (∀ (p : X), p ∈ ms → a ≤ (kids p).length) →
+              0 < a →
+                0 < ms.length →
+                  0 < es.length →
+                    ms.length * Becoming.offspringCount es kids < Becoming.offspringCount ms kids * es.length
+@Becoming.CaptureWorlds.share_not_lower_of_unsupported : ∀ {X : Type} {L : Becoming.Flow X X} {W : Becoming.Web X X},
+  L.Acting W →
+    W.Dependent →
+      ∀ {t : Nat} {ms es : List X} {kids : X → List X},
+        (∀ (p k : X), p ∈ es → k ∈ kids p → L.DescendsAt W t k p) →
+          (∀ (p : X), p ∈ es → ¬W.Supported t p) →
+            ms.length * Becoming.offspringCount es kids ≤ Becoming.offspringCount ms kids * es.length

@@ -280,8 +280,8 @@ theorem MeetsAllBut.of {P : World → Prop}
 /-- Where nothing takes part, nothing gives, takes or descends, and dissipation holds
 vacuously. -/
 theorem still_vacuous {R : Type} (W : Web R R) :
-    (⟨R, Flow.still, W⟩ : World).Acting ∧ (⟨R, Flow.still, W⟩ : World).Taking ∧
-    (⟨R, Flow.still, W⟩ : World).Dissipative ∧ (⟨R, Flow.still, W⟩ : World).Transmitting :=
+    (World.of R Flow.still W : World).Acting ∧ (World.of R Flow.still W : World).Taking ∧
+    (World.of R Flow.still W : World).Dissipative ∧ (World.of R Flow.still W : World).Transmitting :=
   ⟨fun _ _ _ present _ => (nomatch present), fun _ _ _ present _ => (nomatch present),
    Flow.still_dissipative, ⟨0, fun _ _ _ _ descends _ => (nomatch descends.1)⟩⟩
 
@@ -307,7 +307,7 @@ end Strained
 
 /-- A relatum active beyond its own standing, with no flow. -/
 def strained : World :=
-  ⟨Unit, Flow.still, Strained.web⟩
+  World.of Unit Flow.still Strained.web
 
 instance strained_decided : ∀ t x, Decidable (strained.web.active t x) :=
   fun _ _ => isTrue trivial
@@ -336,7 +336,7 @@ theorem unbalanced_but : unbalanced.MeetsAllBut Balanced :=
 /-- The flow of `leaking` on the web of `selfDrawing`: the holder takes its own unit at every
 step, drawing on it, and gives nothing (the tenth review's probe). -/
 def draining : World :=
-  ⟨Bool, Leaking.flow, SelfDrawing.web⟩
+  World.of Bool Leaking.flow SelfDrawing.web
 
 instance draining_decided : ∀ t x, Decidable (draining.web.active t x) :=
   fun t x => Nat.decLt 0 (Shuttle.stands x t)
@@ -411,7 +411,7 @@ end Scatter
 /-- A relatum never active gives to infinitely many while an active one takes as much
 back. -/
 def scatter : World :=
-  ⟨Scatter.Relatum, Scatter.flow, Scatter.web⟩
+  World.of Scatter.Relatum Scatter.flow Scatter.web
 
 /-- Every premise but only active relata giving. No step is enclosed: the exchange of
 every step reaches infinitely many relata, so dissipation holds vacuously. -/
@@ -479,7 +479,7 @@ end Morsel
 
 /-- An eater takes a morsel it does not draw on. -/
 def morsel : World :=
-  ⟨Morsel.Relatum, Morsel.flow, Morsel.web⟩
+  World.of Morsel.Relatum Morsel.flow Morsel.web
 
 instance morsel_decided : ∀ t x, Decidable (morsel.web.active t x) :=
   fun t x => Nat.decLt 0 (Morsel.level t x)
@@ -541,7 +541,7 @@ end Lossless
 
 /-- A drawer takes its store's unit and gives it back: nothing is lost. -/
 def lossless : World :=
-  ⟨Lossless.Relatum, Lossless.flow, Lossless.web⟩
+  World.of Lossless.Relatum Lossless.flow Lossless.web
 
 instance lossless_decided : ∀ t x, Decidable (lossless.web.active t x) :=
   fun _ _ => isTrue trivial
@@ -586,7 +586,7 @@ end Latent
 
 /-- A relatum that stands and is never active, with no flow. -/
 def latent : World :=
-  ⟨Unit, Flow.still, Latent.web⟩
+  World.of Unit Flow.still Latent.web
 
 instance latent_decided : ∀ t x, Decidable (latent.web.active t x) :=
   fun _ _ => isFalse id
@@ -615,7 +615,7 @@ end Multitude
 
 /-- Infinitely many relata active at once, with no flow. -/
 def multitude : World :=
-  ⟨Nat, Flow.still, Multitude.web⟩
+  World.of Nat Flow.still Multitude.web
 
 /-- Every premise but a census. -/
 theorem multitude_but : multitude.MeetsAllBut Counted :=
@@ -699,7 +699,7 @@ end Novel
 /-- A parent burns fuel to give a child its standing, and the child comes to depend on the
 parent. -/
 def novel : World :=
-  ⟨Novel.Relatum, Novel.flow, Novel.web⟩
+  World.of Novel.Relatum Novel.flow Novel.web
 
 instance novel_decided : ∀ t x, Decidable (novel.web.active t x) :=
   fun t x => Nat.decLt 0 (Novel.level t x)
@@ -989,7 +989,7 @@ end Hatch
 stand depending on the food as the parent did, and the parent ceases. Infinitely many
 ground relata stand at nothing and take no part (`hatch_idle`). -/
 def hatch : World :=
-  ⟨Hatch.Relatum, Hatch.flow, Hatch.web⟩
+  World.of Hatch.Relatum Hatch.flow Hatch.web
 
 theorem hatch_balanced : hatch.Balanced
   | 0, .food => rfl
@@ -1116,7 +1116,7 @@ end FiniteHatch
 /-- `hatch` without its ground: the parent, the food and the child alone (the fourteenth
 review's probe). -/
 def finiteHatch : World :=
-  ⟨FiniteHatch.Relatum, FiniteHatch.flow, FiniteHatch.web⟩
+  World.of FiniteHatch.Relatum FiniteHatch.flow FiniteHatch.web
 
 instance finiteHatch_decided : ∀ t x, Decidable (finiteHatch.web.active t x) :=
   fun t x => Nat.decLt 0 (Hatch.level t (FiniteHatch.into x))

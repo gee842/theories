@@ -48,8 +48,7 @@ self-prediction belong to the study, not to this module.
 
 No ethical predicate, ranking or axiom occurs.
 
-`Frame.self_incomplete` is in `Becoming.DiagonalRuns`, so this module does not import the frame
-(board item W).
+`Frame.self_incomplete` is in `Becoming.DiagonalRuns` (board item W).
 -/
 
 namespace Becoming
@@ -288,7 +287,7 @@ theorem negation_never_rests (P : Prop) (n : Nat) :
 
 /-- The two-valued negation returns every two steps. -/
 theorem negation_returns (b : Bool) : Law.Returns (fun b : Bool => !b) b :=
-  ⟨2, Nat.zero_lt_succ 1, Bool.not_not b⟩
+  Law.returns_iff.mpr ⟨2, Nat.zero_lt_succ 1, Bool.not_not b⟩
 
 end Diagonal
 

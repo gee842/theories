@@ -599,9 +599,8 @@ def worldNeed (y : P → Nat) : T ⊕ P → T ⊕ P → Nat
 /-- The net read as a world: its places and transitions are its relata, the transitions fired
 at a step take part in it. -/
 def world (y : P → Nat) (σ : Nat → List T) (M₀ : P → Nat) : World :=
-  ⟨T ⊕ P, ⟨fun t => (σ t).map Sum.inl, fun _ => N.worldTake y, fun _ => N.worldGive y⟩,
-    ⟨N.worldLevel y σ M₀, N.worldActive y σ M₀, fun _ => N.worldRequires, fun _ => N.worldNeed y,
-      fun _ => N.worldRequires⟩⟩
+  World.of (T ⊕ P) (⟨fun t => (σ t).map Sum.inl, fun _ => N.worldTake y, fun _ => N.worldGive y⟩) (⟨N.worldLevel y σ M₀, N.worldActive y σ M₀, fun _ => N.worldRequires, fun _ => N.worldNeed y,
+      fun _ => N.worldRequires⟩)
 
 variable {N}
 

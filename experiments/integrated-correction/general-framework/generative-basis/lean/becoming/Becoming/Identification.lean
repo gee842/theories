@@ -118,7 +118,7 @@ the Moore and Fine–Wilf bound read as a learning bound. The cubic step of elim
 enumerates the candidates; another order is not covered.
 
 `Law.name_identifiesAlike`, `Law.name_carries` and `Law.decideAlike` are in
-`Becoming.IdentificationRuns`, so this module does not import the frame (board item W).
+`Becoming.IdentificationRuns` (board item W).
 -/
 
 namespace Becoming

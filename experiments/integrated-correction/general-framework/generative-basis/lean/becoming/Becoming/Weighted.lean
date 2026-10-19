@@ -72,8 +72,8 @@ witness is one weighting; that a configuration keeping the whole course makes ev
 of steps is not proved here for weights in general (for possibility, a kept history shows a law
 with no other history: `Run.keepHistory_shown` in `Becoming.Unfolding`, P69).
 
-`counting_transfer_iff` and `possibility_transfer_iff` are in `Becoming.WeightedTraces`, so this
-module does not import the frame (board item W).
+`counting_transfer_iff` and `possibility_transfer_iff` are in `Becoming.WeightedTraces` (board
+item W).
 -/
 
 namespace Becoming

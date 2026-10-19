@@ -1,0 +1,26 @@
+import Becoming.RenewalFlow
+#print axioms Becoming.SupportGated.add_sub_le
+#print axioms Becoming.SupportGated.sub_eq_zero_of_le
+#print axioms Becoming.SupportGated.sub_pos_of_lt
+#print axioms Becoming.SupportGated.add_sub_assoc_of_le
+#print axioms Becoming.SupportGated.renewal
+#print axioms Becoming.SupportGated.netGive
+#print axioms Becoming.SupportGated.flow
+#print axioms Becoming.SupportGated.web
+#print axioms Becoming.SupportGated.level_succ_le
+#print axioms Becoming.SupportGated.balances
+#print axioms Becoming.SupportGated.renewal_supported
+#print axioms Becoming.SupportGated.netGive_active
+#print axioms Becoming.SupportGated.givers_supported
+#print axioms Becoming.SupportGated.netGive_step
+#print axioms Becoming.SupportGated.repair_restores
+#print axioms Becoming.SupportGated.below_for_good
+#print axioms Becoming.SupportGated.ends_for_good
+#print axioms Becoming.SupportGated.overdraw_ends
+#print axioms Becoming.SupportGated.jointly_ends
+#print axioms Becoming.SupportGatedWebs.formation_does_not_decide
+#print axioms Becoming.SupportGatedWebs.own_trajectory_does_not_decide
+#print axioms Becoming.SupportGatedWebs.jointly_consuming
+#print axioms Becoming.SupportGatedWebs.escalation_consumes
+#print axioms Becoming.SupportGatedWebs.fluctuating_dependent
+#print axioms Becoming.SupportGatedWebs.fluctuating_neither

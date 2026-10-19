@@ -299,17 +299,22 @@ import Becoming.RuleHandoff
 /-!
 # The Theory of Becoming: the formal core
 
-One relational unfolding, stated once. The import tree starts from its records,
-`Becoming.World`, which imports nothing; the foundation (`GenerativeCore`, `InquirySufficiency`,
-`RelationalRenewal`) and four layers follow. The labelled process and the frame enter as
-readings of the unfolding (`Becoming.Labelled`).
+One relational unfolding, stated once, on one base: the run. The import tree starts at the
+foundation (`GenerativeCore`, `InquirySufficiency`, `RelationalRenewal`) and the frame
+(`Becoming.Frame`: processes and their runs); the unfolding's records, `Becoming.World`, stand
+on them, a world being a run by its type, and the four layers follow. The World family is the
+standing-and-exchange reading of a run, by definition; the labelled process and the frame are
+read from the world's side in `Becoming.Labelled`.
 
-* `Becoming.World` (base): the records of the unfolding, with no premise among them. A web
-  (levels, activity, what each formation requires, needs and draws), a flow (who takes part,
-  what each takes and gives), a world (one kind of relatum with a flow and a web among its own
-  relata) and an exchange (what the relata take and give across a step), over `Nat` and `Prop`,
-  with nothing imported. Balance and the other premises are gluings or local states stated where
-  they are used (`Becoming.Readings`).
+* `Becoming.World` (base): the records of the unfolding, with no premise among them. A
+  dependence (levels, activity, what each formation requires, needs and draws at a
+  configuration) and a web (a dependence read along the step index, `Web F C := Dependence Nat F
+  C`), a flow (who takes part, what each takes and gives), an exchange (what the relata take and
+  give across a step), and a world: one kind of relatum and its history, a run of the process
+  that admits every step whose configurations are its webs at each step and whose moves are its
+  relata's exchanges (`World.web`, `World.flow`, `World.move` read it; `World.of` builds it),
+  over `Nat` and `Prop`, importing the frame. Balance and the other premises are gluings or local
+  states stated where they are used (`Becoming.Readings`).
 * `Becoming.Frame` (L1): a frame is a process with realized claims; runs,
   reachability, invariants and new realization.
 * `Becoming.Labelled` (L1): the labelled process and the frame as readings of the one
@@ -2245,10 +2250,10 @@ readings of the unfolding (`Becoming.Labelled`).
   Mermin–Peres square are instances. A cycle of claims related as equal or different is met by a
   context-free assignment exactly where the number of differ relations is even, and contradicts
   where it is odd.
-* `Becoming.Runs` (L3): the one root, with no premise. A world is exactly a run of the law its
-  webs and exchanges show, and every run on webs and exchanges is a world; a world balances
-  exactly where it is a run of the law of exchange on webs, and with the rest counted every world
-  is such a run. A law of exchange's course is a world, balanced exactly where the law is
+* `Becoming.Runs` (L3): the one root, with no premise. A world is a run by its type (its
+  history, `Becoming.World`) and exactly a run of the law its webs and exchanges show, and every
+  run on webs and exchanges is a world; a world balances exactly where it is a run of the law of
+  exchange on webs, and with the rest counted every world is such a run. A law of exchange's course is a world, balanced exactly where the law is
   feasible, and its generation is the one run of a determined law; the amount coupling strengths
   carry is the standing of a balanced world, a run of the law of exchange; an orbit is a run. So
   the run is the unfolding read step by step and the world the same unfolding read as relata

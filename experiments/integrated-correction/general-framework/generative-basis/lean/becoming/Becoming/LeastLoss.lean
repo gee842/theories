@@ -823,7 +823,7 @@ theorem Lossless.regains {next : S → S} (lossless : Lossless next) {all : List
     (every : ∀ s, s ∈ all) {q : S → A} {s : S}
     (still : ∀ n, M.le (q (orbit next s (n + 1))) (q (orbit next s n))) (n : Nat) :
     M.le (q s) (q (orbit next s n)) :=
-  match lossless.returns every s with
+  match returns_iff.mp (lossless.returns every s) with
   | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
   | ⟨p + 1, _, back⟩ =>
     have whole : orbit next s (n + p * n) = s :=

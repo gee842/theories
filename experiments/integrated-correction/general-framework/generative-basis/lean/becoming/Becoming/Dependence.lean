@@ -80,10 +80,10 @@ Results:
 No ethical predicate, ranking or axiom occurs. Which observables represent an actual
 history, and whether a change of dependence preceded a fall, are application duties.
 
-The structure `Web` is stated in `Becoming.World`, the base of the core. The readings of
+The structure `Dependence` (the observable of any configuration) and `Web`, which is `Dependence`
+read along the step index, are stated in `Becoming.World`, the base of the core. The readings of
 dependence along a run of a labelled process (`Dependence.along`, `Web.conditions_along`, the
-`Crossing`, `Pinned` and `Renewable` runs) are in `Becoming.Labelled`, so this module does not
-import the frame.
+`Crossing`, `Pinned` and `Renewable` runs) are in `Becoming.Labelled`.
 -/
 
 namespace Becoming
@@ -158,16 +158,9 @@ theorem arises_at_a_step {p : Nat → Prop} {T t : Nat} (le : T ≤ t) (absent :
     exact none m within (Nat.lt_succ_self m) ⟨fun yes =>
       earlier yes (fun s from_ below => none s from_ (Nat.lt_succ_of_lt below)), holds⟩
 
-/-! ## Dependence as an observable of the configuration -/
+/-! ## Dependence as an observable of the configuration
 
-/-- Levels of conditions, the formations active at each configuration, and which
-conditions each formation there depends on (at what level) and draws on. -/
-structure Dependence (S : Type u) (F C : Type) where
-  level : S → C → Nat
-  active : S → F → Prop
-  requires : S → F → C → Prop
-  need : S → F → C → Nat
-  draws : S → F → C → Prop
+The structure `Dependence` is in `Becoming.World`, where `Web F C` is `Dependence Nat F C`. -/
 
 variable {S : Type u} {A : Type v} {F C : Type}
 

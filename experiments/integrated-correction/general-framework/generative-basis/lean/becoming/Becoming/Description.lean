@@ -81,8 +81,7 @@ No ethical predicate, ranking or axiom occurs.
 
 The laws that identify alike configurations (`Law.identifiesAlike_of_law` and the other `Law`
 theorems on identifying alike, `Law.kernel_bisimulation`, `Law.sameFuture_of_law`, the `Motion`
-witnesses and `alike_moments_iff`) are in `Becoming.IdentificationRuns`, so this module does not
-import the frame (board item W).
+witnesses and `alike_moments_iff`) are in `Becoming.IdentificationRuns` (board item W).
 -/
 
 namespace Becoming
@@ -467,7 +466,7 @@ theorem finitely_many_states_iff {o : Nat → O} :
 /-- **A configuration that returns has finitely many states through every map.** -/
 theorem Law.Returns.states {S : Type u} {next : S → S} {s : S} (returns : Law.Returns next s)
     (o : S → O) : ∃ i j, i < j ∧ SameAhead (fun n => o (Law.orbit next s n)) i j :=
-  match returns with
+  match Law.returns_iff.mp returns with
   | ⟨p, pos, back⟩ => ⟨0, p, pos, fun n =>
       (congrArg (fun m => o (Law.orbit next s m)) (Nat.zero_add n)).trans
         (congrArg o ((congrArg (fun x => Law.orbit next x n) back).symm.trans

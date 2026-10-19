@@ -141,8 +141,7 @@ periphery's `Test` (`sameBranchingTests_iff_same`).
 
 The readings are the AI's, adopted on Ren's delegation of 15 October 2026 (DELEGATED-CHOICES D23).
 
-`Decided.exists_listed` and `Decided.exists_not_in` are in `Becoming.Decidedness`, so the modules
-using them do not import the frame (board item W).
+`Decided.exists_listed` and `Decided.exists_not_in` are in `Becoming.Decidedness` (board item W).
 -/
 
 namespace Becoming

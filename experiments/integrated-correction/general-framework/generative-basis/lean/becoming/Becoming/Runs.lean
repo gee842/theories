@@ -9,15 +9,18 @@ The spine states its laws on several readings of one unfolding: the runs of a pr
 (`Generative.Process`, `Becoming.Run`), a world's flow and web (`Becoming.World`), the course a law
 of exchange generates (`ExchangeLaw`), the orbit of a determined law (`Law.orbit`), and the amounts
 that coupling strengths carry (`carried`). They were joined by correspondence theorems in both
-directions, each reading some of the data. This module states that each of them is a run, exactly,
-with nothing read away, so that the one root is the run: what the unfolding is at each step and how
-it goes on to the next. No premise enters beyond what each theorem names.
+directions, each reading some of the data. The one root is the run: what the unfolding is at each
+step and how it goes on to the next. For the world this holds by definition: a world's history is a
+run of the process that admits every step (`World.history`, `Becoming.World`), so the World family is
+the standing-and-exchange reading of a run. This module states that each of the other readings is a
+run too, exactly, with nothing read away. No premise enters beyond what each theorem names.
 
 * **A world is a run.** A world's web at a step (`World.webAt`, a `WebAt`: standings, activity,
-  requirements, needs and drawing then) is a configuration, and its relata's exchange across the
-  step (`World.move`, `Becoming.Unfolding`) a move. Every world is a run of the law it shows
-  (`World.law`, `World.run`), and every run whose configurations are webs and whose moves are
-  exchanges is a world (`Run.world`). The two readings are one: the world of a world's run is the
+  requirements, needs and drawing then) is its history's configuration, and its relata's exchange
+  across the step (`World.move`) its history's move. Every world is a run of the law it shows
+  (`World.law`, `World.run`), with its history's configurations and moves (`World.run_history`),
+  and every run whose configurations are webs and whose moves are exchanges is a world
+  (`Run.world`). The two readings are one: the world of a world's run is the
   world (`World.run_world`), and the run of a run's world has its configurations and moves
   (`Run.world_webAt`, `Run.world_move`, `Run.world_run`). A world's web is its run read through the
   dependences its webs carry (`World.web_along`, `Dependence.along`).
@@ -53,10 +56,11 @@ it goes on to the next. No premise enters beyond what each theorem names.
 
 **Readings (the AI's, D43).**
 - The root is the run because every other reading is one, and not conversely as stated: a world is
-  a run of the law it shows (P69's `Shown`), a balanced world is a run of the law of exchange, a
-  course and the amount it carries are runs, an orbit is one. This does not make the run a ground
-  beneath the world: a run is the unfolding read step by step, what it is at each step and how it
-  goes on, and the world is the same unfolding read as relata of one kind exchanging. The
+  a run by its type and a run of the law it shows (P69's `Shown`), a balanced world is a run of the
+  law of exchange, a course and the amount it carries are runs, an orbit is one. This does not
+  make the run a ground beneath the world: a run is the unfolding read step by step, what it is at
+  each step and how it goes on, and the world is the same unfolding read as relata of one kind
+  exchanging. The
   identification is exact, so the two are one reading of one unfolding, not two things joined.
 - The law is read off the unfolding (Ren, 12 October 2026: "there are no two realities"). What a
   world adds to its run is nothing; what the law of exchange adds is the relation of standing and
@@ -69,7 +73,7 @@ shared index of steps and the natural amounts (commitments of the representation
 predicate, ranking or axiom occurs.
 
 `ExchangeLaw.courseWorld`, `ExchangeLaw.courseWorld_balanced_iff` and `carriedWorld` with its laws
-are in `Becoming.Propagation`, so the modules using them do not import the frame (board item W).
+are in `Becoming.Propagation`, where the modules using them read them.
 -/
 
 namespace Becoming
@@ -77,15 +81,6 @@ namespace Becoming
 open Generative
 
 /-! ## A world is a run -/
-
-/-- What a world is at one step: each relatum's standing, its activity, and what it requires,
-needs and draws on then. -/
-structure WebAt (R : Type) where
-  level : R → Nat
-  active : R → Prop
-  requires : R → R → Prop
-  need : R → R → Nat
-  draws : R → R → Prop
 
 /-- The webs at each step read as configurations: the dependences each web carries. -/
 def WebAt.dependence (R : Type) : Dependence (WebAt R) R R :=
@@ -95,9 +90,9 @@ namespace World
 
 variable (w : World)
 
-/-- The world's web at step `t`. -/
+/-- The world's web at step `t`: its history's configuration. -/
 def webAt (t : Nat) : WebAt w.Relatum :=
-  ⟨w.web.level t, w.web.active t, w.web.requires t, w.web.need t, w.web.draws t⟩
+  w.history.state t
 
 /-- The law a world shows: its steps from each web to the next by its relata's exchange. -/
 def law : Process (WebAt w.Relatum) (Exchange w.Relatum) :=
@@ -110,11 +105,16 @@ def run : Run w.law :=
 
 end World
 
+/-- **A world's run is its history.** The run of the law a world shows has the configurations
+and moves of the world's history, the run of every step; only the law it is read as a run of is
+narrowed, to the steps the history takes. -/
+theorem World.run_history (w : World) :
+    w.run.state = w.history.state ∧ w.run.act = w.history.act :=
+  ⟨rfl, rfl⟩
+
 /-- A run whose configurations are webs and whose moves are exchanges, read as a world. -/
 def Run.world {R : Type} {P : Process (WebAt R) (Exchange R)} (r : Run P) : World :=
-  ⟨R, ⟨fun t => (r.act t).present, fun t => (r.act t).take, fun t => (r.act t).give⟩,
-    ⟨fun t => (r.state t).level, fun t => (r.state t).active, fun t => (r.state t).requires,
-      fun t => (r.state t).need, fun t => (r.state t).draws⟩⟩
+  ⟨R, ⟨r.state, r.act, fun _ => trivial⟩⟩
 
 /-- **A world is its run.** Read as a world, the run of a world is that world. -/
 theorem World.run_world (w : World) : w.run.world = w :=

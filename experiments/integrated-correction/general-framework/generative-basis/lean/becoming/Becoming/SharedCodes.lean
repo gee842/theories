@@ -1144,7 +1144,7 @@ theorem generation_merges {rs rs' : List R} (apart : rs ≠ rs') {e : M}
     Law.Merges (generation bears offers rep writes) ∧
       ∀ n, (Law.run (generation bears offers rep writes) rs).state (n + 1) =
         (Law.run (generation bears offers rep writes) rs').state (n + 1) :=
-  ⟨⟨rs, rs', apart, (generation_of_resolved h).trans (generation_of_resolved h').symm⟩,
+  ⟨Law.merges_iff.mpr ⟨rs, rs', apart, (generation_of_resolved h).trans (generation_of_resolved h').symm⟩,
    resolved_alike_merged h h'⟩
 
 /-- **Under coverage, the rest is the target**: where every first record bearing on the form

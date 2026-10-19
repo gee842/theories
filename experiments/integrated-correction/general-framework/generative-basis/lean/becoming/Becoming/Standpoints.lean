@@ -80,8 +80,7 @@ The source of `Clearing` requires nothing by stipulation. Decided holding is a d
 commitment of `significant_iff_reached`, as decided equality is of the conveyance results. Names are
 working names.
 
-`Flow.FedBy` and `Clearing.fedBy_source` are in `Becoming.Continuation`, so the modules using them
-do not import the frame (board item W).
+`Flow.FedBy` and `Clearing.fedBy_source` are in `Becoming.Continuation` (board item W).
 -/
 
 namespace Becoming

@@ -47,8 +47,7 @@ What is not derived: that taking more yields more offspring; that offspring carr
 parents' targets; that winners shape the rule; which rules actual formations live under. No
 ethical predicate, ranking or axiom occurs.
 
-`Law.perturbation_reabsorbed` is in `Becoming.SeekingRuns`, so this module does not import the frame
-(board item W).
+`Law.perturbation_reabsorbed` is in `Becoming.SeekingRuns` (board item W).
 -/
 
 namespace Becoming

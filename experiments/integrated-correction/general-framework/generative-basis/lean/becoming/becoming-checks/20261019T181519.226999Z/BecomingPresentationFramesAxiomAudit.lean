@@ -1,0 +1,17 @@
+import Becoming.PresentationFrames
+#print axioms Becoming.PresentationFrames.correspondence
+#print axioms Becoming.PresentationFrames.canonical_exact
+#print axioms Becoming.PresentationFrames.canonical_kernel
+#print axioms Becoming.PresentationFrames.canonical_factor_answers
+#print axioms Becoming.PresentationFrames.canonical_factor
+#print axioms Becoming.PresentationFrames.joint_descends_iff
+#print axioms Becoming.PresentationFrames.joint_image_iff
+#print axioms Becoming.PresentationFrames.joint_reading_unique
+#print axioms Becoming.PresentationFrames.joint_blocked
+#print axioms Becoming.PresentationFrames.everyPredicate
+#print axioms Becoming.PresentationFrames.everyPredicate_separate
+#print axioms Becoming.PresentationFrames.everyPredicate_injective
+#print axioms Becoming.PresentationFrames.everyPredicate_reduced
+#print axioms Becoming.PresentationFrames.everyPredicate_saturated
+#print axioms Becoming.PresentationFrames.everyPredicate_recoverable
+#print axioms Becoming.PresentationFrames.everyPredicate_correspondence

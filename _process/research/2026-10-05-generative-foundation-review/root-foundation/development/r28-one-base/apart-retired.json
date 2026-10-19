@@ -1,0 +1,25 @@
+{
+ "about": "Apart-register entries retired by R28 (20 October 2026): with Law.* abbreviations at Law.process, these theorems reach the Process family by definition and are no longer apart roots. Bytes as they stood in THEOREM-CONNECTIVITY-APART.json.",
+ "roots": {
+  "Becoming.Law.Lossless.unlisted": {
+   "module": "Becoming.Recurrence",
+   "category": "restates",
+   "reason": "Branching.Lossless.unlisted at Law.process next with the run Law.run next s states it on the base (through law_lossless_iff and law_returns_iff). Not a duplicated proof to fold (U2): the orbit form (Becoming.Recurrence or Becoming.Attraction, R6) comes before the process form (Becoming.Branching) in the import order, and the process form is more general, so neither can be proved through the other where they stand; each is a short corollary at its own level, connected by Branching's law_*_iff."
+  },
+  "Becoming.Law.drawn_of_lost": {
+   "module": "Becoming.Attraction",
+   "category": "restates",
+   "reason": "Under law_reachable_iff and law_drawn_iff it is Branching.necessarilyDrawn_of_lost at Law.process next, already on the base for every process. Not a duplicated proof to fold (U2): the orbit form (Becoming.Recurrence or Becoming.Attraction, R6) comes before the process form (Becoming.Branching) in the import order, and the process form is more general, so neither can be proved through the other where they stand; each is a short corollary at its own level, connected by Branching's law_*_iff."
+  },
+  "Becoming.Law.loss_needs_merge": {
+   "module": "Becoming.LeastLoss",
+   "category": "restates",
+   "reason": "Branching.loss_needs_merge states it on a run of every process, needing only the run's configurations listed; at Law.process next it is this law through Branching.law_lossless_iff. The orbit form is proved where it stands, as Recurrence's Law.rise_not_lossless is beside Branching.rise_not_lossless"
+  },
+  "Becoming.Law.rise_not_lossless": {
+   "module": "Becoming.Recurrence",
+   "category": "restates",
+   "reason": "Branching.rise_not_lossless states it on a run of every process, needing only the run's configurations listed; at Law.process next it is this law through law_lossless_iff. Not a duplicated proof to fold (U2): the orbit form (Becoming.Recurrence or Becoming.Attraction, R6) comes before the process form (Becoming.Branching) in the import order, and the process form is more general, so neither can be proved through the other where they stand; each is a short corollary at its own level, connected by Branching's law_*_iff."
+  }
+ }
+}

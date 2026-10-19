@@ -105,7 +105,7 @@ apply without the core depending on them.
 
 The valuations read on frames (`Valuation.relations`, `G0`, `universal_reason`, `Comparison`,
 `Extension`, `LiftBetter`, the `Conditions`, `Separate` and `Model` instances) are in
-`Becoming.ValuationFrames`, so this module does not import the frame (board item W).
+`Becoming.ValuationFrames` (board item W).
 -/
 
 namespace Becoming

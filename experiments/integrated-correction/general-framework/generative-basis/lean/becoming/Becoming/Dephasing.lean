@@ -354,7 +354,7 @@ theorem prepared_ne_coherent : prepared ≠ coherent := by decide
 
 /-- **Dephasing merges the prepared and the coherent control.** -/
 theorem merges : Law.Merges dephase :=
-  ⟨prepared, coherent, prepared_ne_coherent, dephase_merges_preparations⟩
+  Law.merges_iff.mpr ⟨prepared, coherent, prepared_ne_coherent, dephase_merges_preparations⟩
 
 theorem process_merges : Branching.Merges (Law.process dephase) :=
   Branching.law_merges_iff.mpr merges
@@ -414,7 +414,7 @@ theorem no_diagonal_decoder_along (n : Nat) :
 
 /-- **Every configuration returns under the recording process**, after two steps. -/
 theorem returns (j : Joint) : Branching.Returns (Law.process recordBranch) j :=
-  Branching.law_returns_iff.mpr ⟨2, Nat.zero_lt_succ 1, recordBranch_involution j⟩
+  Law.returns_iff.mpr ⟨2, Nat.zero_lt_succ 1, recordBranch_involution j⟩
 
 /-- **Recording is dephasing of the control**: along every run of the recording law from a
 control with a blank register, the control read at the first step is the dephasing of the one

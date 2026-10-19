@@ -274,11 +274,11 @@ namespace World
 
 /-- Relata queue, with nothing flowing. -/
 def queue (n c : Nat → Nat) : World :=
-  ⟨Nat, Flow.still, Queue.web n c⟩
+  World.of Nat Flow.still (Queue.web n c)
 
 /-- Relata queue, each standing exactly while it is active, with nothing flowing. -/
 def embodiedQueue (n c : Nat → Nat) : World :=
-  ⟨Nat, Flow.still, Queue.embodied n c⟩
+  World.of Nat Flow.still (Queue.embodied n c)
 
 instance queue_decided (n c : Nat → Nat) : ∀ t x, Decidable ((queue n c).web.active t x) :=
   fun t x => inferInstanceAs (Decidable (Queue.holds n c x t))
@@ -443,7 +443,7 @@ namespace World
 /-- An open queue: its front gives to each relatum joining, takes from each
 leaving, and while active exchanges one unit each way with every ground relatum. -/
 def openQueue (n c : Nat → Nat) : World :=
-  ⟨OpenQueue.Relatum, OpenQueue.flow n c, OpenQueue.web n c⟩
+  World.of OpenQueue.Relatum (OpenQueue.flow n c) (OpenQueue.web n c)
 
 instance openQueue_decided (n c : Nat → Nat) :
     ∀ t x, Decidable ((openQueue n c).web.active t x)
@@ -601,7 +601,7 @@ namespace World
 /-- A queue driven by an inactive relatum: the members of an open queue, the exchange driven
 from a ground relatum never active. -/
 def drivenQueue (n c : Nat → Nat) : World :=
-  ⟨OpenQueue.Relatum, OpenQueue.driven n c, OpenQueue.web n c⟩
+  World.of OpenQueue.Relatum (OpenQueue.driven n c) (OpenQueue.web n c)
 
 instance drivenQueue_decided (n c : Nat → Nat) :
     ∀ t x, Decidable ((drivenQueue n c).web.active t x) :=
@@ -1025,7 +1025,7 @@ namespace World
 /-- An enclosed queue: its front exchanges only within the queue, and what stands falls
 by one at each step at which a member joins or leaves. -/
 def enclosedQueue (n c a : Nat → Nat) (B : Nat) : World :=
-  ⟨Nat, EnclosedQueue.flow n c a B, EnclosedQueue.web n c a B⟩
+  World.of Nat (EnclosedQueue.flow n c a B) (EnclosedQueue.web n c a B)
 
 instance enclosedQueue_decided (n c a : Nat → Nat) (B : Nat) :
     ∀ t x, Decidable ((enclosedQueue n c a B).web.active t x) :=
@@ -1282,7 +1282,7 @@ namespace World
 
 /-- An enclosed queue on the finitely many places its members ever take. -/
 def finiteQueue (n c a : Nat → Nat) (B : Nat) : World :=
-  ⟨Fin (FiniteQueue.size B), FiniteQueue.flow n c a B, FiniteQueue.web n c a B⟩
+  World.of (Fin (FiniteQueue.size B)) (FiniteQueue.flow n c a B) (FiniteQueue.web n c a B)
 
 instance finiteQueue_decided (n c a : Nat → Nat) (B : Nat) :
     ∀ t x, Decidable ((finiteQueue n c a B).web.active t x) :=
@@ -1442,7 +1442,7 @@ namespace World
 /-- An enclosed queue closing at step `T`: before `T` every relatum also exchanges one unit
 each way with the front. -/
 def closingQueue (n c a : Nat → Nat) (B T : Nat) : World :=
-  ⟨Nat, EnclosedQueue.closing n c a B T, EnclosedQueue.web n c a B⟩
+  World.of Nat (EnclosedQueue.closing n c a B T) (EnclosedQueue.web n c a B)
 
 instance closingQueue_decided (n c a : Nat → Nat) (B T : Nat) :
     ∀ t x, Decidable ((closingQueue n c a B T).web.active t x) :=
@@ -1828,16 +1828,16 @@ namespace World
 
 /-- A queue seated round a ring of places, with nothing standing or flowing. -/
 def ring (n c : Nat → Nat) (M : Nat) : World :=
-  ⟨Fin (Ring.size M), Flow.still, Ring.web n c M fun _ _ => 0⟩
+  World.of (Fin (Ring.size M)) Flow.still (Ring.web n c M fun _ _ => 0)
 
 /-- The same ring, each place standing exactly while it is held, with nothing flowing. -/
 def embodiedRing (n c : Nat → Nat) (M : Nat) : World :=
-  ⟨Fin (Ring.size M), Flow.still, Ring.web n c M (Ring.stands n c M)⟩
+  World.of (Fin (Ring.size M)) Flow.still (Ring.web n c M (Ring.stands n c M))
 
 /-- The same ring, its front's place taking what each place's standing loses and giving what
 it gains. -/
 def balancedRing (n c : Nat → Nat) (M : Nat) : World :=
-  ⟨Fin (Ring.size M), Ring.flow n c M, Ring.web n c M (Ring.stands n c M)⟩
+  World.of (Fin (Ring.size M)) (Ring.flow n c M) (Ring.web n c M (Ring.stands n c M))
 
 instance ring_decided (n c : Nat → Nat) (M : Nat) :
     ∀ t x, Decidable ((ring n c M).web.active t x) :=
@@ -2234,7 +2234,7 @@ theorem closed (tally : Tally n c a) {t : Nat} (shut : exchange n T t = 0) :
 /-- Activity needing support holds in its web whatever is active: each need is the level of
 what is needed (the fourteenth review's probe). -/
 theorem dependent_any_activity (active : Nat → Nat → Prop) :
-    ({ web n c T E with active } : Web Nat Nat).Dependent :=
+    Web.Dependent ({ web n c T E with active } : Web Nat Nat) :=
   fun _ _ _ _ _ => Nat.le_refl _
 
 /-- And every flow transmits each dependence within one and the excess, the levels being
@@ -2261,7 +2261,7 @@ namespace World
 after; across `T` its front, standing `E` more, exchanges only within the queue and loses that
 excess. -/
 def onceClosedQueue (n c : Nat → Nat) (T E : Nat) : World :=
-  ⟨Nat, OnceClosedQueue.flow n c T E, OnceClosedQueue.web n c T E⟩
+  World.of Nat (OnceClosedQueue.flow n c T E) (OnceClosedQueue.web n c T E)
 
 instance onceClosedQueue_decided (n c : Nat → Nat) (T E : Nat) :
     ∀ t x, Decidable ((onceClosedQueue n c T E).web.active t x) :=
@@ -2483,7 +2483,7 @@ namespace World
 /-- A world with its web saturated: the same flow, levels and activity, every relatum
 depending on every relatum at what it stands at. -/
 def saturated (w : World) : World :=
-  ⟨w.Relatum, w.flow, w.web.saturated⟩
+  World.of w.Relatum w.flow w.web.saturated
 
 instance saturated_decided (w : World) [decided : ∀ t x, Decidable (w.web.active t x)] :
     ∀ t x, Decidable (w.saturated.web.active t x) :=
@@ -2575,7 +2575,7 @@ front exchanges one unit each way with itself and with each member joining and l
 unit more, which no standing records; across each step `t` a ground relatum gives `gift t` to
 every relatum. Every relatum depends on every relatum, needing what it stands at. -/
 def lossyQueue (n c : Nat → Nat) (U : Nat) (gift : Nat → Nat) : World :=
-  ⟨OpenQueue.Relatum, LossyQueue.flow n c U gift, (OpenQueue.web n c).saturated⟩
+  World.of OpenQueue.Relatum (LossyQueue.flow n c U gift) ((OpenQueue.web n c).saturated)
 
 instance lossyQueue_decided (n c : Nat → Nat) (U : Nat) (gift : Nat → Nat) :
     ∀ t x, Decidable ((lossyQueue n c U gift).web.active t x) :=
@@ -2698,7 +2698,7 @@ theorem lossyQueue_binding (tally : Tally n c a) (occupied : 0 < n U) {T : Nat}
       (fun same => absurd (unbalanced.symm.trans (same ▸ selected)) Bool.noConfusion)
       (fun same => descends (same ▸ selected))
     match p, selected with
-    | .dependent, _ => ⟨Web.saturated_dependent _, binds⟩
+    | .dependent, _ => ⟨Web.saturated_dependent (OpenQueue.web n c), binds⟩
     | .balanced, selected => nomatch unbalanced.symm.trans selected
     | .acting, selected => ⟨lossyQueue_acting occupied (giving selected), binds⟩
     | .taking, _ => ⟨lossyQueue_taking occupied, binds⟩
@@ -2773,8 +2773,7 @@ across `U`, `g` hands one of the two units ground `1` stands at on to ground `0`
 to stand, and the other is lost. Every relatum depends on every relatum, needing what it
 stands at. -/
 def relayQueue (n c : Nat → Nat) (U : Nat) (g : OpenQueue.Relatum) : World :=
-  ⟨OpenQueue.Relatum, RelayQueue.flow U g,
-    ({ OpenQueue.web n c with level := RelayQueue.level U } : Web _ _).saturated⟩
+  World.of OpenQueue.Relatum (RelayQueue.flow U g) (Web.saturated ({ OpenQueue.web n c with level := RelayQueue.level U } : Web _ _))
 
 instance relayQueue_decided (n c : Nat → Nat) (U : Nat) (g : OpenQueue.Relatum) :
     ∀ t x, Decidable ((relayQueue n c U g).web.active t x) :=
@@ -2878,14 +2877,14 @@ theorem relayQueue_binding {S : Premise → Bool} (disembodied : S .embodied = f
       (fun same => absurd (disembodied.symm.trans (same ▸ selected)) Bool.noConfusion)
       (fun same => active (.inl (same ▸ selected)))
     match p, selected with
-    | .dependent, _ => ⟨Web.saturated_dependent _, binds⟩
+    | .dependent, _ => ⟨Web.saturated_dependent ({ OpenQueue.web n c with level := RelayQueue.level U } : Web _ _), binds⟩
     | .balanced, _ => ⟨relayQueue_balanced n c U g, binds⟩
     | .acting, selected => ⟨(relayQueue_acts (active (.inr (.inl selected)))).1, binds⟩
     | .taking, selected => ⟨(relayQueue_acts (active (.inr (.inr selected)))).2, binds⟩
     | .dissipative, _ => ⟨relayQueue_dissipative n c U g, binds⟩
     | .embodied, selected => nomatch disembodied.symm.trans selected
     | .counted, _ => ⟨⟨_, openQueue_census n c⟩, binds⟩
-    | .transmitting, _ => ⟨⟨2, Flow.transmits_saturated _ fun _ x => match x with
+    | .transmitting, _ => ⟨⟨2, Flow.transmits_saturated (W := ({ OpenQueue.web n c with level := RelayQueue.level U } : Web _ _)) _ fun _ x => match x with
         | .ground 0 => Nat.le_succ_of_le (mark_le_one _)
         | .ground 1 => Nat.add_le_add (mark_le_one _) (mark_le_one _)
         | .ground (_ + 2) => Nat.zero_le 2
@@ -2931,7 +2930,7 @@ theorem openQueue_saturated_binding (tally : Tally n c a) (joins : 0 < a T)
   | ⟨k, _, comes⟩, ⟨_, balanced, taking, embodied, counted, _⟩ =>
     have comes := mark_pos.mp comes
     fun
-    | .dependent, _ => ⟨Web.saturated_dependent _, ⟨T + 1, .member k, .member k, comes.2, trivial,
+    | .dependent, _ => ⟨Web.saturated_dependent (openQueue n c).web, ⟨T + 1, .member k, .member k, comes.2, trivial,
         mark_pos.mpr comes.2⟩⟩
     | .balanced, _ => ⟨balanced, ⟨T, .member k, fun same => Nat.lt_irrefl 0
         (Nat.lt_of_lt_of_le (mark_pos.mpr comes.2) (Nat.le_of_eq (same.trans (mark_zero comes.1))))⟩⟩
@@ -3334,8 +3333,7 @@ held; across `U`, `g` hands one of the two units place `1` stands at on to place
 comes to stand, and the other is lost. Every place depends on every place, needing what it
 stands at. -/
 def relayRing (n c : Nat → Nat) (M U : Nat) (g : Fin (Ring.size (M + 1))) : World :=
-  ⟨Fin (Ring.size (M + 1)), RelayRing.flow U g,
-    (Ring.web n c (M + 1) fun t i => RelayRing.level U t i.val).saturated⟩
+  World.of (Fin (Ring.size (M + 1))) (RelayRing.flow U g) ((Ring.web n c (M + 1) fun t i => RelayRing.level U t i.val).saturated)
 
 instance relayRing_decided (n c : Nat → Nat) (M U : Nat) (g : Fin (Ring.size (M + 1))) :
     ∀ t x, Decidable ((relayRing n c M U g).web.active t x) :=
@@ -3436,14 +3434,14 @@ theorem relayRing_binding {S : Premise → Bool}
       (fun same => absurd (uncounted.symm.trans (same ▸ selected)) Bool.noConfusion)
       (fun same => active (.inl (same ▸ selected)))
     match p, selected with
-    | .dependent, _ => ⟨Web.saturated_dependent _, binds⟩
+    | .dependent, _ => ⟨Web.saturated_dependent (Ring.web n c (M + 1) fun t i => RelayRing.level U t i.val), binds⟩
     | .balanced, _ => ⟨relayRing_balanced n c M U g, binds⟩
     | .acting, selected => ⟨(relayRing_acts (active (.inr (.inl selected)))).1, binds⟩
     | .taking, selected => ⟨(relayRing_acts (active (.inr (.inr selected)))).2, binds⟩
     | .dissipative, _ => ⟨relayRing_dissipative n c M U g, binds⟩
     | .embodied, selected => nomatch disembodied.symm.trans selected
     | .counted, selected => nomatch uncounted.symm.trans selected
-    | .transmitting, _ => ⟨⟨2, Flow.transmits_saturated _ fun _ x => match x with
+    | .transmitting, _ => ⟨⟨2, Flow.transmits_saturated (W := (Ring.web n c (M + 1) fun t i => RelayRing.level U t i.val)) _ fun _ x => match x with
         | ⟨0, _⟩ => Nat.le_succ_of_le (mark_le_one _)
         | ⟨1, _⟩ => Nat.add_le_add (mark_le_one _) (mark_le_one _)
         | ⟨_ + 2, _⟩ => Nat.zero_le 2⟩, binds⟩
@@ -3488,7 +3486,7 @@ is held; across `U` the front's place exchanges one unit each way with itself an
 place coming to be held and loses one unit more, which no standing records. Every place
 depends on every place, needing what it stands at. -/
 def lossyRing (n c : Nat → Nat) (M U : Nat) : World :=
-  ⟨Fin (Ring.size M), LossyRing.flow n c M U, (Ring.web n c M (Ring.stands n c M)).saturated⟩
+  World.of (Fin (Ring.size M)) (LossyRing.flow n c M U) ((Ring.web n c M (Ring.stands n c M)).saturated)
 
 instance lossyRing_decided (n c : Nat → Nat) (M U : Nat) :
     ∀ t x, Decidable ((lossyRing n c M U).web.active t x) :=
@@ -3579,14 +3577,14 @@ theorem lossyRing_binding (tally : Tally n c a) (bounded : ∀ t, n t ≤ M) (jo
       (fun same => absurd (uncounted.symm.trans (same ▸ selected)) Bool.noConfusion)
       (fun same => descends (same ▸ selected))
     match p, selected with
-    | .dependent, _ => ⟨Web.saturated_dependent _, binds⟩
+    | .dependent, _ => ⟨Web.saturated_dependent (Ring.web n c M (Ring.stands n c M)), binds⟩
     | .balanced, selected => nomatch unbalanced.symm.trans selected
     | .acting, selected => ⟨lossyRing_acting (occupied (.inl selected)), binds⟩
     | .taking, selected => ⟨lossyRing_taking (occupied (.inr selected)), binds⟩
     | .dissipative, _ => ⟨lossyRing_dissipative n c M U, binds⟩
     | .embodied, _ => ⟨fun _ _ => mark_pos.symm, binds⟩
     | .counted, selected => nomatch uncounted.symm.trans selected
-    | .transmitting, _ => ⟨⟨1, Flow.transmits_saturated _ fun _ _ => mark_le_one _⟩, binds⟩
+    | .transmitting, _ => ⟨⟨1, Flow.transmits_saturated (W := (Ring.web n c M (Ring.stands n c M))) _ fun _ _ => mark_le_one _⟩, binds⟩
 
 end World
 
@@ -3615,7 +3613,7 @@ is held; the front's place takes what each place's standing loses and gives what
 and across `V` exchanges one unit more each way with itself. Every place depends on every
 place, needing what it stands at. -/
 def exchangingRing (n c : Nat → Nat) (M V : Nat) : World :=
-  ⟨Fin (Ring.size M), Ring.exchanging n c M V, (Ring.web n c M (Ring.stands n c M)).saturated⟩
+  World.of (Fin (Ring.size M)) (Ring.exchanging n c M V) ((Ring.web n c M (Ring.stands n c M)).saturated)
 
 instance exchangingRing_decided (n c : Nat → Nat) (M V : Nat) :
     ∀ t x, Decidable ((exchangingRing n c M V).web.active t x) :=
@@ -3696,7 +3694,7 @@ theorem exchangingRing_binding (tally : Tally n c a) (bounded : ∀ t, n t ≤ M
       (fun same => absurd (dissipating.symm.trans (same ▸ selected)) Bool.noConfusion)
       (fun same => absurd (uncounted.symm.trans (same ▸ selected)) Bool.noConfusion)
     match p, selected with
-    | .dependent, _ => ⟨Web.saturated_dependent _, binds⟩
+    | .dependent, _ => ⟨Web.saturated_dependent (Ring.web n c M (Ring.stands n c M)), binds⟩
     | .balanced, _ => ⟨exchangingRing_balanced n c M (T + 1), binds⟩
     | .acting, selected => ⟨exchangingRing_acting tally (giving selected) (tally.after_pos joins),
         binds⟩
@@ -3704,7 +3702,7 @@ theorem exchangingRing_binding (tally : Tally n c a) (bounded : ∀ t, n t ≤ M
     | .dissipative, selected => nomatch dissipating.symm.trans selected
     | .embodied, _ => ⟨fun _ _ => mark_pos.symm, binds⟩
     | .counted, selected => nomatch uncounted.symm.trans selected
-    | .transmitting, _ => ⟨⟨1, Flow.transmits_saturated _ fun _ _ => mark_le_one _⟩, binds⟩
+    | .transmitting, _ => ⟨⟨1, Flow.transmits_saturated (W := (Ring.web n c M (Ring.stands n c M))) _ fun _ _ => mark_le_one _⟩, binds⟩
 
 instance (S : Premise → Bool) : Decidable (BoundsChange S) :=
   inferInstanceAs (Decidable (_ ∧ _ ∧ _))
@@ -3995,7 +3993,7 @@ store; the front takes what each member's standing loses and gives what it gains
 `V` exchanges one unit more each way with itself. Every relatum depends on every relatum,
 needing what it stands at. -/
 def exchangingQueue (n c a : Nat → Nat) (B V : Nat) : World :=
-  ⟨Nat, EnclosedQueue.exchanging n c a B V, (EnclosedQueue.web n c a B).saturated⟩
+  World.of Nat (EnclosedQueue.exchanging n c a B V) ((EnclosedQueue.web n c a B).saturated)
 
 instance exchangingQueue_decided (n c a : Nat → Nat) (B V : Nat) :
     ∀ t x, Decidable ((exchangingQueue n c a B V).web.active t x) :=
@@ -4076,7 +4074,7 @@ theorem exchangingQueue_binding (tally : Tally n c a) (joins : 0 < a T) {S : Pre
     have binds := exchangingQueue_binds (B := B) tally joins p
       (fun same => absurd (dissipating.symm.trans (same ▸ selected)) Bool.noConfusion)
     match p, selected with
-    | .dependent, _ => ⟨Web.saturated_dependent _, binds⟩
+    | .dependent, _ => ⟨Web.saturated_dependent (EnclosedQueue.web n c a B), binds⟩
     | .balanced, _ => ⟨exchangingQueue_balanced n c a B (T + 1), binds⟩
     | .acting, selected => ⟨exchangingQueue_acting tally (giving selected) (tally.after_pos joins),
         binds⟩
@@ -4084,7 +4082,7 @@ theorem exchangingQueue_binding (tally : Tally n c a) (joins : 0 < a T) {S : Pre
     | .dissipative, selected => nomatch dissipating.symm.trans selected
     | .embodied, _ => ⟨fun _ _ => EnclosedQueue.place_pos, binds⟩
     | .counted, _ => ⟨⟨_, Queue.listed⟩, binds⟩
-    | .transmitting, _ => ⟨⟨1 + B, Flow.transmits_saturated _ fun t k =>
+    | .transmitting, _ => ⟨⟨1 + B, Flow.transmits_saturated (W := EnclosedQueue.web n c a B) _ fun t k =>
         EnclosedQueue.level_le (n := n) (c := c) (a := a) (B := B) t k⟩, binds⟩
 
 end World
@@ -4226,7 +4224,7 @@ namespace World
 `T` and sheds it across `T`; before `T` every relatum also exchanges one unit each way with
 the front. Every relatum depends on every relatum, needing what it stands at. -/
 def sheddingQueue (n c a : Nat → Nat) (B T : Nat) : World :=
-  ⟨Nat, EnclosedQueue.shedding n c a B T, (EnclosedQueue.sheddingWeb n c a B T).saturated⟩
+  World.of Nat (EnclosedQueue.shedding n c a B T) ((EnclosedQueue.sheddingWeb n c a B T).saturated)
 
 instance sheddingQueue_decided (n c a : Nat → Nat) (B T : Nat) :
     ∀ t x, Decidable ((sheddingQueue n c a B T).web.active t x) :=
@@ -4402,7 +4400,7 @@ theorem sheddingQueue_binding (tally : Tally n c a) (bound : ChangeBound 0 B n c
   fun p selected =>
     have binds := sheddingQueue_binds tally bound occupied joins p
     match p, selected with
-    | .dependent, _ => ⟨Web.saturated_dependent _, binds⟩
+    | .dependent, _ => ⟨Web.saturated_dependent (EnclosedQueue.sheddingWeb n c a B T), binds⟩
     | .balanced, _ => ⟨sheddingQueue_balanced n c a B T, binds⟩
     | .acting, selected => nomatch giving.symm.trans selected
     | .taking, selected => nomatch taking.symm.trans selected

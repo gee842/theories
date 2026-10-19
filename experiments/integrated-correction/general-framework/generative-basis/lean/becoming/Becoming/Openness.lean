@@ -482,7 +482,7 @@ namespace World
 /-- Relatum `x` is active at step `x` alone: infinitely many relata, one active at a time.
 -/
 def procession : World :=
-  ⟨Nat, Flow.still, Procession.web⟩
+  World.of Nat Flow.still Procession.web
 
 instance procession_decided : ∀ t x, Decidable (procession.web.active t x) :=
   fun t x => Nat.decEq x t
@@ -528,7 +528,7 @@ namespace World
 
 /-- Relatum `x` is active at step `t` while below `B t`. -/
 def slow (B : Nat → Nat) : World :=
-  ⟨Nat, Flow.still, Slow.web B⟩
+  World.of Nat Flow.still (Slow.web B)
 
 instance slow_decided (B : Nat → Nat) : ∀ t x, Decidable ((slow B).web.active t x) :=
   fun t x => Nat.decLt x (B t)
@@ -1069,7 +1069,7 @@ namespace World
 
 /-- The sides of `Shuttle` exchanging with an unbounded ground. -/
 def exposed : World :=
-  ⟨Exposed.Relatum, Exposed.flow, Exposed.web⟩
+  World.of Exposed.Relatum Exposed.flow Exposed.web
 
 /-- `exposed` meets all eight premises and arising recurs in it: no step is enclosed, so
 dissipation binds at none. -/
@@ -1118,7 +1118,7 @@ theorem openness_contingent :
 
 /-- One side holding its standing while exchanging at zero net with an unbounded ground. -/
 def holding : World :=
-  ⟨Exposed.Relatum, Holding.flow, Holding.web⟩
+  World.of Exposed.Relatum Holding.flow Holding.web
 
 /-- Openness with the eight premises does not give arising without end: `holding` meets all
 eight with no step enclosed, and nothing ever arises or ceases (the eleventh review's
@@ -1223,7 +1223,7 @@ namespace World
 /-- `Throughput`'s flow with every relatum active while it stands (the tenth review's
 probe). -/
 def embodiedThroughput : World :=
-  ⟨Throughput.Relatum, Throughput.flow, EmbodiedThroughput.web⟩
+  World.of Throughput.Relatum Throughput.flow EmbodiedThroughput.web
 
 /-- The rest theorem needs its census of what stands. In `throughput` what is active is
 listed, whatever arises is embodied, the flow balances and dissipates, and every step is

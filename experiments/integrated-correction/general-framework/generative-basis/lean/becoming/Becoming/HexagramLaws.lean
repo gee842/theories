@@ -162,7 +162,7 @@ theorem run_inner {s t : Hexagram} (same : inner s = inner t) (n : Nat) :
 
 /-- **The nuclear law merges**: 剝 and 坤 go on to 坤. -/
 theorem nuclear_merges : Law.Merges nuclear :=
-  ⟨falling 5, allBroken, ne_of_eqb rfl, rfl⟩
+  Law.merges_iff.mpr ⟨falling 5, allBroken, ne_of_eqb rfl, rfl⟩
 
 /-- The same merge, read on the law as a process of the spine. -/
 theorem nuclear_process_merges : Branching.Merges (Law.process nuclear) :=
@@ -313,10 +313,10 @@ theorem attractor_absorbing : Law.Absorbing nuclear NuclearAttractor
 /-- Each configuration of the attractor returns, 乾 and 坤 at once and 既濟 and 未濟 at the
 second step. -/
 theorem attractor_returns {s : Hexagram} : NuclearAttractor s → Law.Returns nuclear s
-  | .inl e => ⟨1, Nat.succ_pos 0, by subst e; rfl⟩
-  | .inr (.inl e) => ⟨1, Nat.succ_pos 0, by subst e; rfl⟩
-  | .inr (.inr (.inl e)) => ⟨2, Nat.succ_pos 1, by subst e; rfl⟩
-  | .inr (.inr (.inr e)) => ⟨2, Nat.succ_pos 1, by subst e; rfl⟩
+  | .inl e => Law.returns_iff.mpr ⟨1, Nat.succ_pos 0, by subst e; rfl⟩
+  | .inr (.inl e) => Law.returns_iff.mpr ⟨1, Nat.succ_pos 0, by subst e; rfl⟩
+  | .inr (.inr (.inl e)) => Law.returns_iff.mpr ⟨2, Nat.succ_pos 1, by subst e; rfl⟩
+  | .inr (.inr (.inr e)) => Law.returns_iff.mpr ⟨2, Nat.succ_pos 1, by subst e; rfl⟩
 
 /-- **Every other configuration is drawn into the attractor.** -/
 theorem outside_drawn {s : Hexagram} (outside : ¬ NuclearAttractor s) :
@@ -866,7 +866,7 @@ theorem settle_fixed_iff : ∀ m : MarkedLines, settle m = m ↔ staysAll m = tr
 
 /-- **The law merges**: a turning unbroken line and a staying broken one go on to one. -/
 theorem settle_merges : Law.Merges settle :=
-  ⟨⟨.turning true, .staying false, .staying false, .staying false, .staying false, .staying false⟩,
+  Law.merges_iff.mpr ⟨⟨.turning true, .staying false, .staying false, .staying false, .staying false, .staying false⟩,
    ⟨.staying false, .staying false, .staying false, .staying false, .staying false, .staying false⟩,
    fun same => Marked.turning_ne_staying (congrArg MarkedLines.m1 same), rfl⟩
 
@@ -896,7 +896,7 @@ theorem returns_iff (m : MarkedLines) : Law.Returns settle m ↔ staysAll m = tr
     | true => rfl
     | false => absurd returns
         (Law.Drawn.not_returns ⟨_, fun x _ => staysAll_settle x, drawn m h⟩),
-   fun all => ⟨1, Nat.succ_pos 0, (settle_fixed_iff m).mpr all⟩⟩
+   fun all => Law.returns_iff.mpr ⟨1, Nat.succ_pos 0, (settle_fixed_iff m).mpr all⟩⟩
 
 /-- The same, read on the law as a process of the spine. -/
 theorem process_returns_iff (m : MarkedLines) :
@@ -1019,7 +1019,7 @@ theorem subOne_addOne (s : Hexagram) : subOne (addOne s) = s := by
 
 /-- **The counter merges nothing.** -/
 theorem addOne_lossless : Law.Lossless addOne :=
-  fun x y same => (subOne_addOne x).symm.trans ((congrArg subOne same).trans (subOne_addOne y))
+  Law.lossless_iff.mpr fun x y same => (subOne_addOne x).symm.trans ((congrArg subOne same).trans (subOne_addOne y))
 
 /-- From 坤, the counter comes to each configuration at the step of its binary value. -/
 theorem from_allBroken (s : Hexagram) : Law.orbit addOne allBroken (binaryValue s) = s := by

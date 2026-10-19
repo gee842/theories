@@ -18,9 +18,12 @@ states Capture's rule region as an instance of P67's absorbing regions.
 * **What R6's notions become.** A configuration can be had `n` steps on where some course of `n`
   moves leads to it (`Branching.Reachable`); it returns where a step from it leads to where it can
   be had again (`Branching.Returns`); a process merges where two distinct configurations step to
-  one (`Branching.Merges`, `Branching.Lossless`). Under a determined law each is R6's
-  (`law_reachable_iff`, `law_keeps_iff`, `law_returns_iff`, `law_lossless_iff`,
-  `law_merges_iff`), its courses being its orbits (`law_trace_iff`, `law_reach_iff`).
+  one (`Branching.Merges`, `Branching.Lossless`). These five are stated in `Becoming.Recurrence`,
+  and R6's notions of a determined law are them at the law's process by definition (`Law.Lossless`
+  and the others are abbreviations at `Law.process next`), so the bridges `law_reachable_iff`,
+  `law_keeps_iff`, `law_returns_iff`, `law_lossless_iff` and `law_merges_iff` hold by `Iff.rfl`;
+  the courses of a determined law are its orbits (`law_trace_iff`, `law_reach_iff`, also in
+  `Becoming.Recurrence`).
 * **What survives with no premise.** A possibility lost stays lost (`Branching.lost_stays`). A
   configuration that returns can be had at every step (`Branching.Returns.reachable`), so where
   every configuration returns every possibility is kept (`keeps_of_returns`); every possibility
@@ -144,27 +147,8 @@ variable {S : Type u} {A : Type v} {P : Process S A}
 
 /-! ## Courses of a given length -/
 
-/-- `s` can be had `n` steps on: some course of `n` moves leads to it. -/
-def Reachable (P : Process S A) (n : Nat) (s : S) : Prop :=
-  ∃ x as, as.length = n ∧ Trace P x as s
-
-/-- Every configuration can be had at every step: no possibility is ever lost. -/
-def KeepsPossibilities (P : Process S A) : Prop := ∀ n s, Reachable P n s
-
-/-- `s` returns: some step from `s` leads to a configuration from which `s` can be had
-again. Under a determined law this is `Law.Returns` of `Becoming.Recurrence`, read on the orbit
-(`law_returns_iff`). `Web.Returns` (`Becoming.Return`, a dependence met again) and
-`Becoming.Returns` (`Becoming.Frequency`, a loop of couplings in time order) are other senses. -/
-def Returns (P : Process S A) (s : S) : Prop := ∃ a t, P.step s a t ∧ Reach P t s
-
 /-- What lies ahead of `s`, from its next step on. -/
 def Ahead (P : Process S A) (s : S) : S → Prop := fun z => ∃ a t, P.step s a t ∧ Reach P t z
-
-/-- `P` merges nothing: no configuration is had in one step from two distinct ones. -/
-def Lossless (P : Process S A) : Prop := ∀ x y a b t, P.step x a t → P.step y b t → x = y
-
-/-- `P` takes two distinct configurations to one. -/
-def Merges (P : Process S A) : Prop := ∃ x y a b t, x ≠ y ∧ P.step x a t ∧ P.step y b t
 
 /-- Every configuration of `R` can be had at the next step from within `R`. -/
 def FedWithin (P : Process S A) (R : S → Prop) : Prop :=
@@ -665,71 +649,34 @@ theorem Determined.stays_merged (determined : Determined P) (r r' : Run P) {n : 
 
 end Courses
 
-/-! ## Determined laws are the instance -/
+/-! ## Determined laws are the instance
+
+R6's notions are these at `Law.process next` by definition, so each bridge is `Iff.rfl`. -/
 
 section Laws
 
 variable {S : Type u}
 
-theorem units_length : ∀ n, (List.replicate n ()).length = n
-  | 0 => rfl
-  | n + 1 => congrArg Nat.succ (units_length n)
-
-theorem law_trace_of {next : S → S} :
-    ∀ (as : List Unit) (x t : S), Law.orbit next x as.length = t →
-      Trace (Law.process next) x as t
-  | [], x, _, to => Eq.subst (motive := fun z => Trace (Law.process next) x [] z) to (.nil x)
-  | _ :: as, x, t, to =>
-    .cons (rfl : next x = next x)
-      (law_trace_of as (next x) t ((Law.orbit_shift next x as.length).symm.trans to))
-
-/-- A course of a determined law is its orbit. -/
-theorem law_trace_iff {next : S → S} {x t : S} {as : List Unit} :
-    Trace (Law.process next) x as t ↔ Law.orbit next x as.length = t :=
-  ⟨fun path => by
-    induction path with
-    | nil => rfl
-    | @cons s _ _ _ as step _ ih =>
-      exact (Law.orbit_shift next s as.length).trans
-        ((congrArg (fun z => Law.orbit next z as.length) step.symm).trans ih),
-   law_trace_of as x t⟩
-
-theorem law_reach_iff {next : S → S} {x t : S} :
-    Reach (Law.process next) x t ↔ ∃ n, Law.orbit next x n = t :=
-  ⟨fun ⟨as, path⟩ => ⟨as.length, law_trace_iff.mp path⟩,
-   fun ⟨n, to⟩ => ⟨List.replicate n (), law_trace_iff.mpr
-     (Eq.subst (motive := fun k => Law.orbit next x k = t) (units_length n).symm to)⟩⟩
-
 /-- Under a determined law, what can be had `n` steps on is R6's. -/
 theorem law_reachable_iff {next : S → S} {n : Nat} {s : S} :
     Reachable (Law.process next) n s ↔ Law.Reachable next n s :=
-  ⟨fun ⟨x, _, len, path⟩ =>
-    ⟨x, Eq.subst (motive := fun k => Law.orbit next x k = s) len (law_trace_iff.mp path)⟩,
-   fun ⟨x, to⟩ => ⟨x, List.replicate n (), units_length n, law_trace_iff.mpr
-     (Eq.subst (motive := fun k => Law.orbit next x k = s) (units_length n).symm to)⟩⟩
+  Iff.rfl
 
 theorem law_keeps_iff {next : S → S} :
     KeepsPossibilities (Law.process next) ↔ Law.KeepsPossibilities next :=
-  ⟨fun keeps n s => law_reachable_iff.mp (keeps n s),
-   fun keeps n s => law_reachable_iff.mpr (keeps n s)⟩
+  Iff.rfl
 
 /-- Under a determined law, returning is R6's. -/
 theorem law_returns_iff {next : S → S} {s : S} :
     Returns (Law.process next) s ↔ Law.Returns next s :=
-  ⟨fun ⟨_, _, step, reach⟩ => match law_reach_iff.mp reach with
-    | ⟨k, back⟩ => Law.returns_iff_ahead.mpr
-      ⟨k, (congrArg (fun z => Law.orbit next z k) step.symm).trans back⟩,
-   fun returns => match Law.returns_iff_ahead.mp returns with
-    | ⟨k, back⟩ => ⟨(), next s, rfl, law_reach_iff.mpr ⟨k, back⟩⟩⟩
+  Iff.rfl
 
 /-- Under a determined law, merging nothing is R6's. -/
 theorem law_lossless_iff {next : S → S} : Lossless (Law.process next) ↔ Law.Lossless next :=
-  ⟨fun lossless x y same => lossless x y () () (next x) rfl same,
-   fun lossless x y _ _ _ step step' => lossless x y (step.symm.trans step')⟩
+  Iff.rfl
 
 theorem law_merges_iff {next : S → S} : Merges (Law.process next) ↔ Law.Merges next :=
-  ⟨fun ⟨x, y, _, _, _, apart, step, step'⟩ => ⟨x, y, apart, step.symm.trans step'⟩,
-   fun ⟨x, y, apart, same⟩ => ⟨x, y, (), (), next x, apart, rfl, same⟩⟩
+  Iff.rfl
 
 /-- A run of a determined law is its orbit. -/
 theorem law_run_state {next : S → S} (r : Run (Law.process next)) :

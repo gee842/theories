@@ -1,0 +1,73 @@
+@Becoming.ListedWebs.across : ∀ {F C : Type} {W : Becoming.Web F C}
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive →
+    ∀ (t : Nat),
+      ((alive (t + 1)).length + Becoming.total (alive t) fun f => Becoming.mark (W.Ceases t f)) =
+        (alive t).length + Becoming.total (alive (t + 1)) fun f => Becoming.mark (W.Arises t f)
+@Becoming.ListedWebs.ceasings_within : ∀ {F C : Type} {W : Becoming.Web F C}
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive →
+    ∀ (S n : Nat),
+      (Becoming.total (Becoming.steps S n) fun t => Becoming.total (alive t) fun f => Becoming.mark (W.Ceases t f)) ≤
+        (alive S).length +
+          Becoming.total (Becoming.steps S n) fun t =>
+            Becoming.total (alive (t + 1)) fun f => Becoming.mark (W.Arises t f)
+@Becoming.ListedWebs.arisings_within : ∀ {F C : Type} {W : Becoming.Web F C}
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive →
+    ∀ (S n : Nat),
+      (Becoming.total (Becoming.steps S n) fun t =>
+          Becoming.total (alive (t + 1)) fun f => Becoming.mark (W.Arises t f)) ≤
+        (alive (S + n)).length +
+          Becoming.total (Becoming.steps S n) fun t => Becoming.total (alive t) fun f => Becoming.mark (W.Ceases t f)
+@Becoming.ListedWebs.ceasing_of_outpacing : ∀ {F C : Type} {W : Becoming.Web F C}
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive →
+    ∀ {B : Nat → Nat},
+      (∀ (t : Nat), (alive t).length ≤ B t) →
+        (∀ (N : Nat),
+            ∃ n,
+              B (N + n) <
+                Becoming.total (Becoming.steps N n) fun t =>
+                  Becoming.total (alive (t + 1)) fun f => Becoming.mark (W.Arises t f)) →
+          ∀ (N : Nat), ∃ t f, N ≤ t ∧ W.Ceases t f
+@Becoming.ListedWebs.keep_pace : ∀ {F C : Type} (W : Becoming.Web F C)
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] (fs : List F) (S n : Nat),
+  ((Becoming.total (Becoming.steps S n) fun t => Becoming.total fs fun f => Becoming.mark (W.Arises t f)) ≤
+      fs.length +
+        Becoming.total (Becoming.steps S n) fun t => Becoming.total fs fun f => Becoming.mark (W.Ceases t f)) ∧
+    (Becoming.total (Becoming.steps S n) fun t => Becoming.total fs fun f => Becoming.mark (W.Ceases t f)) ≤
+      fs.length + Becoming.total (Becoming.steps S n) fun t => Becoming.total fs fun f => Becoming.mark (W.Arises t f)
+@Becoming.ListedWebs.persists : ∀ {F C : Type} (W : Becoming.Web F C) [(t : Nat) → (f : F) → Decidable (W.active t f)]
+  {f : F} {S : Nat}, W.active S f → (∀ (t : Nat), S ≤ t → ¬W.Ceases t f) → ∀ (n : Nat), W.active (S + n) f
+@Becoming.ListedWebs.ceasing_needs_arising : ∀ {F C : Type} {W : Becoming.Web F C}
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] {l : List F} {N n : Nat},
+  (Becoming.Distinct l ∧ ∀ (f : F), W.active N f ↔ f ∈ l) →
+    (∀ (s : Nat) (f : F), N ≤ s → s < N + n → ¬W.Arises s f) →
+      (∀ (k : Nat), k ≤ n → ∀ (f : F), W.active (N + k) f → f ∈ l) ∧
+        (∀ (s : Nat) (f : F), N ≤ s → s < N + n → W.Ceases s f → f ∈ l) ∧
+          ((Becoming.total l fun f => Becoming.mark (W.active (N + n) f)) +
+              Becoming.total (Becoming.steps N n) fun t => Becoming.total l fun f => Becoming.mark (W.Ceases t f)) =
+            l.length
+@Becoming.ListedWebs.ceasing_not_recurring : ∀ {F C : Type} {W : Becoming.Web F C} {l : List F} {N : Nat},
+  (∀ (f : F), W.active N f → f ∈ l) →
+    (∀ (s : Nat) (f : F), N ≤ s → ¬W.Arises s f) → ¬∀ (M : Nat), ∃ t f, M ≤ t ∧ W.Ceases t f
+@Becoming.ListedWebs.ceasing_steps_found : ∀ {F C : Type} {W : Becoming.Web F C},
+  (∀ (M : Nat), ∃ t f, M ≤ t ∧ W.Ceases t f) →
+    ∀ (N k : Nat),
+      ∃ E U, Becoming.Distinct E ∧ E.length = k ∧ N ≤ U ∧ ∀ (t : Nat), t ∈ E → N ≤ t ∧ t < U ∧ ∃ f, W.Ceases t f
+@Becoming.ListedWebs.forced_iff_more : ∀ {F C : Type} {W : Becoming.Web F C} {alive : Nat → List F} {t : Nat},
+  (Becoming.Distinct (alive t) ∧ ∀ (f : F), W.active t f ↔ f ∈ alive t) →
+    (Becoming.Distinct (alive (t + 1)) ∧ ∀ (f : F), W.active (t + 1) f ↔ f ∈ alive (t + 1)) →
+      ((∀ (S : F → F → Prop),
+          (∀ (g f f' : F), S g f → S g f' → f = f') → ¬∀ (f : F), W.active (t + 1) f → W.Continues (fun x => S) t f) ↔
+        (alive t).length < (alive (t + 1)).length)
+@Becoming.ListedWebs.forces_iff_noSplit : ∀ {F C : Type} [DecidableEq F] {S : F → F → Prop},
+  (∀ (W : Becoming.Web F C) (t : Nat) (before after : List F),
+      (∀ (f : F), W.active t f → f ∈ before) →
+        Becoming.Distinct after →
+          (∀ (f : F), f ∈ after → W.active (t + 1) f) →
+            before.length < after.length → ¬∀ (f : F), W.active (t + 1) f → W.Continues (fun x => S) t f) ↔
+    ∀ (g f f' : F), S g f → S g f' → f = f'
+Becoming.ListedWebs.rests_unrefuted_iff : ∀ (w : Becoming.World) {T : Nat},
+  (¬∀ (M : Nat), T ≤ M → ¬¬∃ t, M ≤ t ∧ ∃ x, w.web.Arises t x ∨ w.web.Ceases t x) ↔ ¬¬∃ M, T ≤ M ∧ w.RestsFrom M

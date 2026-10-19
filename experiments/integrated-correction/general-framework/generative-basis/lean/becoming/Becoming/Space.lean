@@ -240,12 +240,12 @@ theorem Embodied.arising (embodied : w.Embodied) : w.ArisingEmbodied :=
 
 /-- The two-kind reading of a flow and a web, as a world. -/
 def ofRoles {F C : Type} (L : Flow F C) (W : Web F C) : World :=
-  ⟨F ⊕ C, L.roles, W.roles⟩
+  World.of (F ⊕ C) L.roles W.roles
 
 /-- The one-kind reading of a flow and a web over one kind of relatum, as a world: its relata are
 those of the flow and the web themselves. -/
 def ofKind {R : Type} (L : Flow R R) (W : Web R R) : World :=
-  ⟨R, L, W⟩
+  World.of R L W
 
 theorem arisingRecurs_ofRoles {F C : Type} (L : Flow F C) (W : Web F C) :
     (ofRoles L W).ArisingRecurs ↔ W.Unceasing :=
@@ -348,7 +348,7 @@ theorem rests_unrefuted (finite : w.Finite)
 
 /-- Two sides hand one standing back and forth (`Shuttle`). -/
 def shuttle : World :=
-  ⟨Bool, Shuttle.flow, Shuttle.web⟩
+  World.of Bool Shuttle.flow Shuttle.web
 
 instance shuttle_decided : ∀ t x, Decidable (shuttle.web.active t x) :=
   fun t x => Nat.decLt 0 (Shuttle.stands x t)
@@ -407,7 +407,7 @@ end SelfDrawing
 
 /-- The sides of `Shuttle`, each drawing on its own standing while it stands. -/
 def selfDrawing : World :=
-  ⟨Bool, Shuttle.flow, SelfDrawing.web⟩
+  World.of Bool Shuttle.flow SelfDrawing.web
 
 instance selfDrawing_decided : ∀ t x, Decidable (selfDrawing.web.active t x) :=
   fun t x => Nat.decLt 0 (Shuttle.stands x t)
@@ -433,7 +433,7 @@ theorem selfDrawing_world :
 
 /-- Mutualists active throughout (`Mutualism`), with no flow. -/
 def mutualism : World :=
-  ⟨Mutualism.Relatum, Flow.still, Mutualism.web⟩
+  World.of Mutualism.Relatum Flow.still Mutualism.web
 
 theorem mutualism_finite : mutualism.Finite :=
   ⟨[.bee, .flower],
@@ -454,7 +454,7 @@ theorem mutualism_world :
 
 /-- A parent drawing a pool down as it gives to two descendants (`Drawdown`). -/
 def drawdown : World :=
-  ⟨Drawdown.Relatum, Drawdown.flow, Drawdown.web⟩
+  World.of Drawdown.Relatum Drawdown.flow Drawdown.web
 
 instance drawdown_decided : ∀ t x, Decidable (drawdown.web.active t x)
   | _, .pool => isFalse id
@@ -499,12 +499,12 @@ theorem drawdown_world :
 
 /-- A parent active beyond its support (`Unchecked`). -/
 def unchecked : World :=
-  ⟨Unchecked.Relatum, Unchecked.flow, Unchecked.web⟩
+  World.of Unchecked.Relatum Unchecked.flow Unchecked.web
 
 /-- The sides of `Shuttle` with no flow: their standing comes and goes with nothing given
 or taken. -/
 def unbalanced : World :=
-  ⟨Bool, Flow.still, Shuttle.web⟩
+  World.of Bool Flow.still Shuttle.web
 
 theorem unbalanced_world :
     unbalanced.Finite ∧ unbalanced.ArisingRecurs ∧ unbalanced.Dissipative ∧
@@ -531,7 +531,7 @@ end Idle
 
 /-- A relatum rising by what it gives itself though it is never active. -/
 def idle : World :=
-  ⟨Unit, Idle.flow, Idle.web⟩
+  World.of Unit Idle.flow Idle.web
 
 theorem idle_world : idle.Balanced ∧ ¬ idle.Acting :=
   ⟨fun _ _ => rfl, fun acting => acting 0 () () (.head _) Nat.zero_lt_one⟩
@@ -551,7 +551,7 @@ end Restless
 
 /-- A relatum active beyond its support at every step. -/
 def restless : World :=
-  ⟨Unit, Flow.still, Restless.web⟩
+  World.of Unit Flow.still Restless.web
 
 /-- No reserve carries it: activity beyond support at every step outruns every reserve. -/
 theorem restless_world : ¬ restless.Carried :=
@@ -562,7 +562,7 @@ theorem restless_world : ¬ restless.Carried :=
 /-- Two sides handing a standing back and forth, burning fresh fuel each step
 (`Throughput`). -/
 def throughput : World :=
-  ⟨Throughput.Relatum, Throughput.flow, Throughput.web⟩
+  World.of Throughput.Relatum Throughput.flow Throughput.web
 
 instance throughput_decided : ∀ t x, Decidable (throughput.web.active t x)
   | t, .side x => Nat.decLt 0 (Shuttle.stands x t)
@@ -586,7 +586,7 @@ theorem throughput_world :
 
 /-- One relatum whose activity is not its standing (`Flicker`). -/
 def flicker : World :=
-  ⟨Unit, Flicker.flow, Flicker.web⟩
+  World.of Unit Flicker.flow Flicker.web
 
 theorem flicker_world :
     flicker.Finite ∧ flicker.Balanced ∧ flicker.Dissipative ∧ flicker.ArisingRecurs ∧
@@ -749,7 +749,7 @@ end Grazing
 /-- The sides of `Shuttle`, with a grazer drawing down a pool that a browser also depends
 on (the ninth review's probe). -/
 def grazing : World :=
-  ⟨Grazing.Relatum, Grazing.flow, Grazing.web⟩
+  World.of Grazing.Relatum Grazing.flow Grazing.web
 
 theorem grazing_finite : grazing.Finite :=
   ⟨[.pool, .grazer, .browser, .side true, .side false],
@@ -904,7 +904,7 @@ end Seedbank
 
 /-- A seed dormant in soil that a drawer draws down (the eleventh review's probe). -/
 def seedbank : World :=
-  ⟨Seedbank.Relatum, Seedbank.flow, Seedbank.web⟩
+  World.of Seedbank.Relatum Seedbank.flow Seedbank.web
 
 /-- A finite, balanced world in which activity needs support and every relatum is
 embodied. The drawer's event at the first step undermines the seed's dependence on the
@@ -961,7 +961,7 @@ end Leaking
 /-- The sides of `Shuttle`, the holder taking its own unit and giving nothing (the ninth
 review's probe). -/
 def leaking : World :=
-  ⟨Bool, Leaking.flow, Shuttle.web⟩
+  World.of Bool Leaking.flow Shuttle.web
 
 /-- A finite world whose flow takes part at every step, with the family of both sides
 closed and taken from at every step, and dissipative: its dissipation is not vacuous.
@@ -1022,7 +1022,7 @@ end Undecided
 /-- One relatum with no flow, whose activity of period four has `Q` as its third phase
 (the ninth review's probe). -/
 def undecided (Q : Prop) : World :=
-  ⟨Unit, Flow.still, Undecided.web Q⟩
+  World.of Unit Flow.still (Undecided.web Q)
 
 /-- It is finite, and arising recurs whatever `Q` is: it arises at the start of every
 period. -/

@@ -1,0 +1,12 @@
+import Becoming.CourseRoles
+#check @Becoming.World.roles_level
+#check @Becoming.World.roles_take
+#check @Becoming.World.roles_give
+#check @Becoming.World.kind_balanced_iff_roles
+#check @Becoming.CourseRoles.world_eq
+#check @Becoming.CourseRoles.courseWorld_eq
+#check @Becoming.CourseRoles.level_eq
+#check @Becoming.CourseRoles.take_eq
+#check @Becoming.CourseRoles.give_eq
+#check @Becoming.CourseRoles.balanced_iff
+#check @Becoming.CourseRoles.runs_agree

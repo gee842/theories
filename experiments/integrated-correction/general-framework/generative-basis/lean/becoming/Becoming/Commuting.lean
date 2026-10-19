@@ -201,7 +201,7 @@ theorem Commutes.halfway_returns (commutes : Commutes T σ) (exchange : ∀ x, �
     Branching.Returns (process T) x :=
   match k, half with
   | 0, half => absurd half (moves x)
-  | k + 1, half => Branching.law_returns_iff.mpr
+  | k + 1, half => Law.returns_iff.mpr
       ⟨k + 1 + (k + 1), Nat.zero_lt_succ _, (commutes.paired_halfway exchange half).2⟩
 
 end Law

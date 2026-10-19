@@ -1,3 +1,4 @@
+import Becoming.Frame
 /-!
 # Recurrence: what every law of change keeps, loses and returns to
 
@@ -58,8 +59,15 @@ assumed of any unfolding; it is the condition written into each law that uses it
   comes back with another history (`return_keeps_history`). Where a list holds the
   configurations an unfolding passes through, the present forgets: from every step on, two
   different histories share one present (`present_forgets`).
-* **The law as a process.** A determined law is a process of the spine with one action, and
-  its orbit is a run of it (`Law.process`, `Law.run`).
+* **The law as a process.** A determined law is a process of the spine with one action
+  (`Law.process`), and its orbit is a run of it (`Law.run`, `Becoming.Labelled`). Merging,
+  merging nothing, returning, being reachable and keeping every possibility are stated once for
+  every process (`Branching.Merges`, `Branching.Lossless`, `Branching.Returns`,
+  `Branching.Reachable`, `Branching.KeepsPossibilities`); a determined law's are these at its
+  process, by definition (`Law.Merges` and the others are abbreviations), and read on the orbit
+  they are the familiar forms (`Law.lossless_iff`, `Law.merges_iff`, `Law.returns_iff`,
+  `Law.reachable_iff`, `Law.keeps_iff`), a course being an orbit (`Branching.law_trace_iff`,
+  `Branching.law_reach_iff`).
 
 So, with no premise: within finitely many configurations a law that merges nothing returns
 every configuration and raises nothing, an arrow needs a merge, a merge loses a possibility
@@ -77,16 +85,55 @@ configurations being the only finiteness.
 
 No ethical predicate, ranking or axiom occurs.
 
-The laws of a determined law as a process and of reach along runs (`Law.process`, `Law.run`,
+This module imports the frame (`Becoming.Frame`), so that a determined law's notions are those
+of its process (one base, board item R28): `Law.process`, the five notions of every process and
+the four lemmas reading a course as an orbit are stated here, moved unchanged with their names
+from `Becoming.Labelled` and `Becoming.Branching`. The laws of reach along runs (`Law.run`,
 `Run.revisits_from`, `keeps_reach_iff_returns`, `not_returns_iff_loses`, `WithinMoves` and what
-follows from it) are in `Becoming.Labelled`, so this module does not import the frame (board item
-W). `Law.SameFuture`, from `Becoming.Unfolding`, and `trajectory`, from `Becoming.Mechanism`, are
-stated here (see the sections so headed).
+follows from it) stay in `Becoming.Labelled` (board item W). `Law.SameFuture`, from
+`Becoming.Unfolding`, and `trajectory`, from `Becoming.Mechanism`, are stated here (see the
+sections so headed).
 -/
 
 namespace Becoming
 
 universe u v w
+
+open Generative
+
+namespace Branching
+
+variable {S : Type u} {A : Type v}
+
+/-- `s` can be had `n` steps on: some course of `n` moves leads to it. -/
+def Reachable (P : Process S A) (n : Nat) (s : S) : Prop :=
+  ∃ x as, as.length = n ∧ Trace P x as s
+
+/-- Every configuration can be had at every step: no possibility is ever lost. -/
+def KeepsPossibilities (P : Process S A) : Prop := ∀ n s, Reachable P n s
+
+/-- `s` returns: some step from `s` leads to a configuration from which `s` can be had
+again. Under a determined law this is `Law.Returns`, by definition; read on the orbit it is a
+period (`Law.returns_iff`). `Web.Returns` (`Becoming.Return`, a dependence met again) and
+`Becoming.Returns` (`Becoming.Frequency`, a loop of couplings in time order) are other senses. -/
+def Returns (P : Process S A) (s : S) : Prop := ∃ a t, P.step s a t ∧ Reach P t s
+
+/-- `P` merges nothing: no configuration is had in one step from two distinct ones. -/
+def Lossless (P : Process S A) : Prop := ∀ x y a b t, P.step x a t → P.step y b t → x = y
+
+/-- `P` takes two distinct configurations to one. -/
+def Merges (P : Process S A) : Prop := ∃ x y a b t, x ≠ y ∧ P.step x a t ∧ P.step y b t
+
+end Branching
+
+namespace Law
+
+variable {S : Type u}
+
+/-- A determined law as a process of the spine: one action, the step to `next s`. -/
+def process (next : S → S) : Process S Unit := ⟨fun s _ t => t = next s⟩
+
+end Law
 
 section Sequences
 
@@ -298,33 +345,109 @@ theorem orbit_mul {next : S → S} {s : S} {p : Nat} (back : orbit next s p = s)
   | k + 1 => (orbit_add next s (p * k) p).trans
       ((congrArg (fun x => orbit next x p) (orbit_mul back k)).trans back)
 
-/-- `next` merges nothing: distinct configurations go on to distinct configurations. -/
-def Lossless (next : S → S) : Prop := ∀ x y, next x = next y → x = y
+end Law
 
-/-- `next` takes two distinct configurations to one. -/
-def Merges (next : S → S) : Prop := ∃ x y, x ≠ y ∧ next x = next y
+namespace Branching
 
-/-- `s` comes back after some steps. Other senses of the name: `Branching.Returns` is the same
-notion for every process, read on reach (`Branching.law_returns_iff`); `Web.Returns` of
+variable {S : Type u}
+
+theorem units_length : ∀ n, (List.replicate n ()).length = n
+  | 0 => rfl
+  | n + 1 => congrArg Nat.succ (units_length n)
+
+theorem law_trace_of {next : S → S} :
+    ∀ (as : List Unit) (x t : S), Law.orbit next x as.length = t →
+      Trace (Law.process next) x as t
+  | [], x, _, to => Eq.subst (motive := fun z => Trace (Law.process next) x [] z) to (.nil x)
+  | _ :: as, x, t, to =>
+    .cons (rfl : next x = next x)
+      (law_trace_of as (next x) t ((Law.orbit_shift next x as.length).symm.trans to))
+
+/-- A course of a determined law is its orbit. -/
+theorem law_trace_iff {next : S → S} {x t : S} {as : List Unit} :
+    Trace (Law.process next) x as t ↔ Law.orbit next x as.length = t :=
+  ⟨fun path => by
+    induction path with
+    | nil => rfl
+    | @cons s _ _ _ as step _ ih =>
+      exact (Law.orbit_shift next s as.length).trans
+        ((congrArg (fun z => Law.orbit next z as.length) step.symm).trans ih),
+   law_trace_of as x t⟩
+
+theorem law_reach_iff {next : S → S} {x t : S} :
+    Reach (Law.process next) x t ↔ ∃ n, Law.orbit next x n = t :=
+  ⟨fun ⟨as, path⟩ => ⟨as.length, law_trace_iff.mp path⟩,
+   fun ⟨n, to⟩ => ⟨List.replicate n (), law_trace_iff.mpr
+     (Eq.subst (motive := fun k => Law.orbit next x k = t) (units_length n).symm to)⟩⟩
+
+end Branching
+
+namespace Law
+
+variable {S : Type u}
+
+/-- `next` merges nothing: distinct configurations go on to distinct configurations
+(`lossless_iff`); merging nothing as a process (`Branching.Lossless`) at `process next`. -/
+abbrev Lossless (next : S → S) : Prop := Branching.Lossless (process next)
+
+/-- `next` takes two distinct configurations to one (`merges_iff`); merging as a process at
+`process next`. -/
+abbrev Merges (next : S → S) : Prop := Branching.Merges (process next)
+
+/-- `s` comes back after some steps (`returns_iff`): returning as a process
+(`Branching.Returns`, read on reach) at `process next`. Other senses of the name: `Web.Returns` of
 `Becoming.Return` is a dependence met again at a later step, and `Becoming.Returns` of
 `Becoming.Frequency` is a loop of couplings in time order, neither a configuration coming back. -/
-def Returns (next : S → S) (s : S) : Prop := ∃ p, 0 < p ∧ orbit next s p = s
+abbrev Returns (next : S → S) (s : S) : Prop := Branching.Returns (process next) s
 
-/-- `s` can still be had `n` steps on: some configuration leads to it in `n` steps. -/
-def Reachable (next : S → S) (n : Nat) (s : S) : Prop := ∃ x, orbit next x n = s
+/-- `s` can still be had `n` steps on: some configuration leads to it in `n` steps
+(`reachable_iff`); `Branching.Reachable` at `process next`. -/
+abbrev Reachable (next : S → S) (n : Nat) (s : S) : Prop := Branching.Reachable (process next) n s
 
-/-- Every configuration can be had at every step: no possibility is ever lost. -/
-def KeepsPossibilities (next : S → S) : Prop := ∀ n s, Reachable next n s
+/-- Every configuration can be had at every step: no possibility is ever lost (`keeps_iff`);
+`Branching.KeepsPossibilities` at `process next`. -/
+abbrev KeepsPossibilities (next : S → S) : Prop := Branching.KeepsPossibilities (process next)
+
+/-- Merging nothing, read on the orbit. -/
+theorem lossless_iff {next : S → S} : Lossless next ↔ ∀ x y, next x = next y → x = y :=
+  ⟨fun lossless x y same => lossless x y () () (next x) rfl same,
+   fun lossless x y _ _ _ step step' => lossless x y (step.symm.trans step')⟩
+
+/-- Merging, read on the orbit. -/
+theorem merges_iff {next : S → S} : Merges next ↔ ∃ x y, x ≠ y ∧ next x = next y :=
+  ⟨fun ⟨x, y, _, _, _, apart, step, step'⟩ => ⟨x, y, apart, step.symm.trans step'⟩,
+   fun ⟨x, y, apart, same⟩ => ⟨x, y, (), (), next x, apart, rfl, same⟩⟩
+
+/-- Being reachable, read on the orbit. -/
+theorem reachable_iff {next : S → S} {n : Nat} {s : S} :
+    Reachable next n s ↔ ∃ x, orbit next x n = s :=
+  ⟨fun ⟨x, _, len, path⟩ =>
+    ⟨x, Eq.subst (motive := fun k => orbit next x k = s) len (Branching.law_trace_iff.mp path)⟩,
+   fun ⟨x, to⟩ => ⟨x, List.replicate n (), Branching.units_length n, Branching.law_trace_iff.mpr
+     (Eq.subst (motive := fun k => orbit next x k = s) (Branching.units_length n).symm to)⟩⟩
+
+/-- Keeping every possibility, read on the orbit. -/
+theorem keeps_iff {next : S → S} : KeepsPossibilities next ↔ ∀ n s, ∃ x, orbit next x n = s :=
+  ⟨fun keeps n s => reachable_iff.mp (keeps n s), fun keeps n s => reachable_iff.mpr (keeps n s)⟩
+
+/-- Returning, read on the orbit. -/
+theorem returns_iff {next : S → S} {s : S} : Returns next s ↔ ∃ p, 0 < p ∧ orbit next s p = s :=
+  ⟨fun ⟨_, _, step, reach⟩ => match Branching.law_reach_iff.mp reach with
+    | ⟨k, back⟩ => ⟨k + 1, Nat.succ_pos k, (orbit_shift next s k).trans
+        ((congrArg (fun z => orbit next z k) step.symm).trans back)⟩,
+   fun ⟨p, pos, back⟩ => match p, pos, back with
+    | k + 1, _, back => ⟨(), next s, rfl,
+        Branching.law_reach_iff.mpr ⟨k, (orbit_shift next s k).symm.trans back⟩⟩⟩
 
 theorem Merges.not_lossless {next : S → S} (merges : Merges next) : ¬ Lossless next :=
-  fun lossless => let ⟨x, y, apart, merged⟩ := merges; apart (lossless x y merged)
+  fun lossless => let ⟨x, y, apart, merged⟩ := merges_iff.mp merges; apart (lossless_iff.mp lossless x y merged)
 
 /-! ### What every law keeps and loses -/
 
 theorem Reachable.earlier {next : S → S} {n : Nat} {s : S} (reach : Reachable next (n + 1) s) :
     Reachable next n s :=
-  let ⟨x, to⟩ := reach
-  ⟨next x, (orbit_shift next x n).symm.trans to⟩
+  let ⟨x, to⟩ := reachable_iff.mp reach
+  reachable_iff.mpr ⟨next x, (orbit_shift next x n).symm.trans to⟩
 
 /-- **A possibility lost stays lost**, under every law. -/
 theorem lost_stays {next : S → S} {n : Nat} {s : S} (lost : ¬ Reachable next n s) :
@@ -342,12 +465,12 @@ theorem merged_stays {next : S → S} {x y : S} (merged : next x = next y) (n : 
 theorem Lossless.cancel {next : S → S} (lossless : Lossless next) {x y : S} :
     ∀ n, orbit next x n = orbit next y n → x = y
   | 0, same => same
-  | n + 1, same => Lossless.cancel lossless n (lossless _ _ same)
+  | n + 1, same => Lossless.cancel lossless n (lossless_iff.mp lossless _ _ same)
 
 /-- A law under which every configuration returns merges nothing. -/
 theorem lossless_of_returns {next : S → S} (returns : ∀ s, Returns next s) : Lossless next :=
-  fun x y merged =>
-    match returns x, returns y with
+  lossless_iff.mpr fun x y merged =>
+    match returns_iff.mp (returns x), returns_iff.mp (returns y) with
     | ⟨0, pos, _⟩, _ => absurd pos (Nat.lt_irrefl 0)
     | _, ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
     | ⟨p + 1, _, back_x⟩, ⟨q + 1, _, back_y⟩ =>
@@ -360,17 +483,17 @@ theorem lossless_of_returns {next : S → S} (returns : ∀ s, Returns next s) :
 /-- A configuration that returns can be had at every step. -/
 theorem Returns.reachable {next : S → S} {s : S} (returns : Returns next s) (n : Nat) :
     Reachable next n s :=
-  match returns with
+  match returns_iff.mp returns with
   | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
   | ⟨p + 1, _, back⟩ =>
-    ⟨orbit next s (p * n), (orbit_add next s (p * n) n).symm.trans
+    reachable_iff.mpr ⟨orbit next s (p * n), (orbit_add next s (p * n) n).symm.trans
       ((congrArg (orbit next s) (Nat.succ_mul p n)).symm.trans (orbit_mul back n))⟩
 
 /-- **Undoing is going on.** Where `s` returns, the step from `s` is undone only by going on
 under the same law: further steps lead from `next s` back to `s`. -/
 theorem Returns.undo {next : S → S} {s : S} (returns : Returns next s) :
     ∃ k, orbit next (next s) k = s :=
-  match returns with
+  match returns_iff.mp returns with
   | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
   | ⟨k + 1, _, back⟩ => ⟨k, (orbit_shift next s k).symm.trans back⟩
 
@@ -381,7 +504,7 @@ theorem Lossless.returns {next : S → S} (lossless : Lossless next) {all : List
     (every : ∀ s, s ∈ all) (s : S) : Returns next s :=
   let ⟨i, _, lt, _, same⟩ := revisits_within all (orbit next s) (fun _ _ => every _)
   let ⟨d, gap⟩ := gap_of_lt lt
-  ⟨d + 1, Nat.succ_pos d, lossless.cancel i
+  returns_iff.mpr ⟨d + 1, Nat.succ_pos d, lossless.cancel i
     ((orbit_add next s (d + 1) i).symm.trans
       ((congrArg (orbit next s) (Nat.add_comm (d + 1) i)).trans
         ((congrArg (orbit next s) gap.symm).trans same.symm)))⟩
@@ -390,7 +513,7 @@ theorem Lossless.returns {next : S → S} (lossless : Lossless next) {all : List
 as the list is long returns. -/
 theorem returns_of_reachable {next : S → S} {all : List S} (every : ∀ s, s ∈ all) {s : S}
     (reach : Reachable next all.length s) : Returns next s :=
-  let ⟨x, to⟩ := reach
+  let ⟨x, to⟩ := reachable_iff.mp reach
   let ⟨i, _, lt, le, same⟩ := revisits_within all (orbit next x) (fun _ _ => every _)
   let ⟨d, gap⟩ := gap_of_lt lt
   let ⟨e, rest⟩ := gap_of_le (Nat.le_trans (Nat.le_of_lt lt) le)
@@ -398,7 +521,7 @@ theorem returns_of_reachable {next : S → S} {all : List S} (every : ∀ s, s �
     (orbit_add next x i (d + 1)).symm.trans ((congrArg (orbit next x) gap.symm).trans same.symm)
   have reached : orbit next (orbit next x i) e = s :=
     (orbit_add next x i e).symm.trans ((congrArg (orbit next x) rest.symm).trans to)
-  ⟨d + 1, Nat.succ_pos d,
+  returns_iff.mpr ⟨d + 1, Nat.succ_pos d,
     calc orbit next s (d + 1)
         = orbit next (orbit next (orbit next x i) e) (d + 1) :=
           congrArg (fun w => orbit next w (d + 1)) reached.symm
@@ -416,7 +539,7 @@ theorem Lossless.no_rise {next : S → S} (lossless : Lossless next) {all : List
     (every : ∀ s, s ∈ all) {q : S → Nat} {s : S}
     (step : ∀ n, q (orbit next s n) ≤ q (orbit next s (n + 1))) (n : Nat) :
     q (orbit next s n) = q s :=
-  match lossless.returns every s with
+  match returns_iff.mp (lossless.returns every s) with
   | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
   | ⟨p + 1, _, back⟩ =>
     have far : q (orbit next s n) ≤ q (orbit next s (n + p * n)) :=
@@ -479,10 +602,11 @@ returns, and the beginning can no longer be had after one step. -/
 theorem succ_open :
     Lossless Nat.succ ∧ (∀ s, ¬ Returns Nat.succ s) ∧ ¬ Reachable Nat.succ 1 0 ∧
       ∀ s n, orbit Nat.succ s n < orbit Nat.succ s (n + 1) :=
-  ⟨fun _ _ same => Nat.succ.inj same,
-    fun s ⟨p, pos, back⟩ => Nat.lt_irrefl s (Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right pos)
+  ⟨lossless_iff.mpr fun _ _ same => Nat.succ.inj same,
+    fun s returns => let ⟨p, pos, back⟩ := returns_iff.mp returns; Nat.lt_irrefl s (Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right pos)
       (Nat.le_of_eq ((succ_orbit s p).symm.trans back))),
-    fun ⟨x, to⟩ => Nat.add_one_ne_zero x to, fun _ _ => Nat.lt_succ_self _⟩
+    fun reach => let ⟨x, to⟩ := reachable_iff.mp reach; Nat.add_one_ne_zero x to,
+    fun _ _ => Nat.lt_succ_self _⟩
 
 theorem pred_orbit : ∀ n t, orbit Nat.pred (t + n) n = t
   | 0, _ => rfl
@@ -494,7 +618,8 @@ theorem pred_orbit : ∀ n t, orbit Nat.pred (t + n) n = t
 zero, yet every number can be had at every step: in an open world a merge need not lose a
 possibility. -/
 theorem pred_open : Merges Nat.pred ∧ KeepsPossibilities Nat.pred :=
-  ⟨⟨0, 1, fun same => Nat.noConfusion same, rfl⟩, fun n t => ⟨t + n, pred_orbit n t⟩⟩
+  ⟨merges_iff.mpr ⟨0, 1, fun same => Nat.noConfusion same, rfl⟩,
+    keeps_iff.mpr fun n t => ⟨t + n, pred_orbit n t⟩⟩
 
 /-! ### The history kept -/
 
@@ -503,6 +628,7 @@ def withHistory (next : S → S) (h : S × List S) : S × List S := (next h.1, h
 
 /-- **Keeping its history, every law loses nothing.** -/
 theorem withHistory_lossless (next : S → S) : Lossless (withHistory next) := by
+  refine lossless_iff.mpr ?_
   intro ⟨a, p⟩ ⟨b, q⟩ same
   have tails : a :: p = b :: q := congrArg Prod.snd same
   have ⟨ha, hp⟩ := List.cons.inj tails
@@ -531,12 +657,12 @@ theorem withHistory_new (next : S → S) (h : S × List S) {i j : Nat} (lt : i <
 /-- **Keeping its history, nothing returns.** -/
 theorem withHistory_never_returns (next : S → S) (h : S × List S) :
     ¬ Returns (withHistory next) h :=
-  fun ⟨_, pos, back⟩ => withHistory_new next h pos back.symm
+  fun returns => let ⟨_, pos, back⟩ := returns_iff.mp returns; withHistory_new next h pos back.symm
 
 /-- **Keeping its history, the beginning is lost at the first step.** No kept history with
 nothing past can be had one or more steps on. -/
 theorem withHistory_loses_beginning (next : S → S) (s : S) (n : Nat) :
-    ¬ Reachable (withHistory next) (n + 1) (s, []) := fun ⟨x, to⟩ =>
+    ¬ Reachable (withHistory next) (n + 1) (s, []) := fun reach => let ⟨x, to⟩ := reachable_iff.mp reach
   Nat.add_one_ne_zero (x.2.length + n)
     ((past_length next x (n + 1)).symm.trans (congrArg (fun y => y.2.length) to))
 

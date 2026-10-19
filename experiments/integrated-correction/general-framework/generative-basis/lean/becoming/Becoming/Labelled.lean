@@ -8,9 +8,11 @@ import Becoming.Recurrence
 `Generative.Process S A` and `Becoming.Frame` take four splits as given: a configuration and a
 move drawn from an alphabet of its own; a law supplied before the history it governs; claims
 read off a configuration; and configurations given before the relation among them (Ren, 12
-October 2026: "is this dualistic?"). `Becoming.World` takes none of them. This module states each
-split from the world's side, with no premise beyond what each theorem names, so that the
-labelled process and the frame are readings of the one unfolding rather than its ground.
+October 2026: "is this dualistic?"). A world takes none of them as given: its history is a run
+of the process that admits every step (`Becoming.World`), its moves are its relata's own
+exchanges, and what it stands at is part of each configuration. This module states each split
+from the world's side, with no premise beyond what each theorem names, so that the labelled
+process and the frame are readings of the one unfolding rather than a ground beneath it.
 
 * **The move is part of what the unfolding is.** Read with the move inside the configuration
   (`withMove`), a process has the same runs, read two ways (`Run.toWithMove`,
@@ -32,14 +34,15 @@ The second part holds the run readings of the trunk's laws: renewal and consumpt
 (`Conditions.along`, the `Renewable` witness runs), dependence along a run (`Dependence.along`,
 `Web.conditions_along`, the `Crossing`, `Pinned` and `Renewable` runs), and the runs of
 `Becoming.Return` and `Becoming.Generation`. The laws themselves are stated over the web in those
-modules, which do not import the frame.
+modules.
 
 Every declaration moved here unchanged, with its name, from `Becoming.Unfolding`,
 `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return` or `Becoming.Generation` (study
 section 180, board item W). Every declaration has an empty axiom report.
 
-A third part holds the readings of `Becoming.Recurrence` on runs (a determined law as a process,
-reach along runs), moved here unchanged with their names (board item W, second batch).
+A third part holds the readings of `Becoming.Recurrence` on runs (the run of a determined law,
+reach along runs), moved here unchanged with their names (board item W, second batch);
+`Law.process` itself is in `Becoming.Recurrence` (board item R28).
 -/
 
 /-! ## The four splits, read from the world's side (moved from `Becoming.Unfolding`) -/
@@ -259,9 +262,8 @@ variable {S : Type u} {A : Type v} {C : Type}
 /-- A frame along a run read as a world: its relata are its claims, each active exactly where
 it is realized; nothing stands, depends, draws or is exchanged. -/
 def Frame.world (F : Frame S A C) (r : Run F.P) : World :=
-  ⟨C, ⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩,
-    ⟨fun _ _ => 0, fun t c => F.realized (r.state t) c, fun _ _ _ => False, fun _ _ _ => 0,
-      fun _ _ _ => False⟩⟩
+  World.of C (⟨fun _ => [], fun _ _ _ => 0, fun _ _ _ => 0⟩) (⟨fun _ _ => 0, fun t c => F.realized (r.state t) c, fun _ _ _ => False, fun _ _ _ => 0,
+      fun _ _ _ => False⟩)
 
 variable {F : Frame S A C} {r : Run F.P}
 
@@ -880,9 +882,6 @@ universe u v w
 namespace Law
 
 variable {S : Type u}
-
-/-- A determined law as a process of the spine: one action, the step to `next s`. -/
-def process (next : S → S) : Process S Unit := ⟨fun s _ t => t = next s⟩
 
 /-- The run of a determined law from `s`. -/
 def run (next : S → S) (s : S) : Run (process next) :=

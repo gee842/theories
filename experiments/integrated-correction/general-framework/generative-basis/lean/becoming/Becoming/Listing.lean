@@ -784,7 +784,7 @@ def probeWeb (Q : Prop) : Web Bool Bool :=
 /-- Two relata with no exchange, one active throughout, the other active exactly where `Q`
 holds. -/
 def probe (Q : Prop) : World :=
-  ⟨Bool, Flow.still, probeWeb Q⟩
+  World.of Bool Flow.still (probeWeb Q)
 
 /-- In the probe the two relata are indiscernible exactly where `Q` holds. -/
 theorem probe_indiscernible (Q : Prop) : (probe Q).Indiscernible true false ↔ Q :=

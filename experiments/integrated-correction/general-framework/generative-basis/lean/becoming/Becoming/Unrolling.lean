@@ -173,7 +173,7 @@ section ExactlyReading
 theorem eq_of_returns {S : Type u} {V : Type w} {next : S → S} {val : S → V} {x y : S}
     (back : Law.Returns next x) (back' : Law.Returns next y) {T : Nat}
     (agrees : ∀ t, T ≤ t → val (Law.orbit next x t) = val (Law.orbit next y t)) : val x = val y :=
-  match back, back' with
+  match Law.returns_iff.mp back, Law.returns_iff.mp back' with
   | ⟨p + 1, _, at_x⟩, ⟨q + 1, _, at_y⟩ =>
     have back_x : Law.orbit next x ((p + 1) * (q + 1)) = x := Law.orbit_mul at_x (q + 1)
     have back_y : Law.orbit next y ((p + 1) * (q + 1)) = y :=
@@ -240,8 +240,8 @@ theorem reads_of_agree {next : S → S} {reg : S → R} {val : S → V} {l : Lis
         (Option.some.inj (Identification.prefix_eq_iff.mp fits n lt)).symm
     match agree _ _ same with
     | ⟨_, agrees⟩ =>
-      (eq_of_returns (Law.returns_of_reachable world ⟨b, rfl⟩)
-          (Law.returns_of_reachable world ⟨y, rfl⟩) agrees).symm.trans
+      (eq_of_returns (Law.returns_of_reachable world (Law.reachable_iff.mpr ⟨b, rfl⟩))
+          (Law.returns_of_reachable world (Law.reachable_iff.mpr ⟨y, rfl⟩)) agrees).symm.trans
         (congrArg (fun o => Option.elim o v₀ fun x => val (Law.orbit next x l.length)) found).symm
 
 /-- **A feature that is a reading of the future from some step on is learned given its reading.**

@@ -385,7 +385,7 @@ def restNeed (t : Nat) : Option w.Relatum → Option w.Relatum → Nat
 drawing are read off the exchange with the rest counted (`Flow.readOff`), and standings,
 requirements and needs are the world's. -/
 def withRest : World :=
-  ⟨Option w.Relatum, w.restFlow, w.restFlow.readOff w.restLevel w.restRequires w.restNeed⟩
+  World.of (Option w.Relatum) w.restFlow (w.restFlow.readOff w.restLevel w.restRequires w.restNeed)
 
 variable {w}
 
@@ -451,7 +451,7 @@ namespace ExchangeLaw
 and requirement read off the law. -/
 def readWorld {R : Type} (law : ExchangeLaw R R) (present : Nat → List R) (start : R → Nat)
     (need : Nat → R → R → Nat) : World :=
-  ⟨R, law.course present start, law.readWeb present start need⟩
+  World.of R (law.course present start) (law.readWeb present start need)
 
 variable {R : Type} {law : ExchangeLaw R R} {present : Nat → List R} {start : R → Nat}
   {need : Nat → R → R → Nat}

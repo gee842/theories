@@ -1,0 +1,12 @@
+Becoming.PassageWorlds.runsDownClosed_realized_iff : ∀ (P : List Becoming.Passage) (k : Nat) (e : Prop),
+  Becoming.OneStep.Realized (fun w t es => w.flow.RunsDownOn w.web es t ∧ w.flow.ClosedAt es t) P k e ↔
+    Becoming.OneStep.Stated P k e ∧ Becoming.sign (Becoming.total P Becoming.Passage.taken) ≤ k
+@Becoming.PassageWorlds.stated_of_runsDownClosed : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C}
+  {es : List C} {t : Nat},
+  L.RunsDownOn W es t →
+    L.ClosedAt es t → Becoming.OneStep.Stated (List.map (L.passage W t) es) (L.takers es t) (L.ExchangesAt t)
+@Becoming.PassageWorlds.passages_continue : ∀ {F C : Type} (L : Becoming.Flow F C) (W : Becoming.Web F C) (es : List C),
+  Becoming.OneStep.Continues fun t => List.map (L.passage W t) es
+@Becoming.PassageWorlds.RunRealized.continues : ∀ {cond : (w : Becoming.World) → Nat → List w.Relatum → Prop}
+  {P : Nat → List Becoming.Passage} {k : Nat → Nat} {e : Nat → Prop},
+  Becoming.OneStep.RunRealized cond P k e → Becoming.OneStep.Continues P

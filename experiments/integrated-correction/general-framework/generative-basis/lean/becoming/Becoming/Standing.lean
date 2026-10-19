@@ -164,7 +164,7 @@ namespace World
 /-- A queue fed from a source: the driven queue (`drivenQueue`), its driver active throughout
 and standing at nothing, its members standing while in the queue and never active. -/
 def sourcedQueue (n c : Nat → Nat) : World :=
-  ⟨OpenQueue.Relatum, OpenQueue.driven n c, OpenQueue.sourced n c⟩
+  World.of OpenQueue.Relatum (OpenQueue.driven n c) (OpenQueue.sourced n c)
 
 /-- Whatever its counts, a queue fed from a source meets every premise but embodiment: it
 balances, only its source gives and takes, and it is active, and no family is closed across
@@ -349,7 +349,7 @@ namespace World
 /-- A waiting queue: a closing queue (`closingQueue`) whose next to join is active before it
 comes to stand. -/
 def waitingQueue (n c a : Nat → Nat) (B T : Nat) : World :=
-  ⟨Nat, EnclosedQueue.closing n c a B T, EnclosedQueue.waiting n c a B⟩
+  World.of Nat (EnclosedQueue.closing n c a B T) (EnclosedQueue.waiting n c a B)
 
 variable {n c a : Nat → Nat} {B T : Nat}
 
@@ -487,8 +487,7 @@ namespace World
 /-- The balanced ring (`balancedRing`) with every place active throughout, standing while
 held. -/
 def activeRing (n c : Nat → Nat) (M : Nat) : World :=
-  ⟨Fin (Ring.size M), Ring.flow n c M,
-    { Ring.web n c M (Ring.stands n c M) with active := fun _ _ => True }⟩
+  World.of (Fin (Ring.size M)) (Ring.flow n c M) ({ Ring.web n c M (Ring.stands n c M) with active := fun _ _ => True })
 
 variable {n c a : Nat → Nat} {M : Nat}
 
@@ -681,7 +680,7 @@ namespace World
 /-- A depending queue: members of a queue depending on a common condition while in it, with
 nothing flowing. -/
 def dependingQueue (n c : Nat → Nat) : World :=
-  ⟨Nat, Flow.still, Queue.depending n c⟩
+  World.of Nat Flow.still (Queue.depending n c)
 
 instance dependingQueue_decided (n c : Nat → Nat) :
     ∀ t f g, Decidable ((dependingQueue n c).web.requires t f g) :=
@@ -691,7 +690,7 @@ instance dependingQueue_decided (n c : Nat → Nat) :
 the three that are about the web alone: activity needing support, embodiment and a census. -/
 theorem still_premised {R : Type} (W : Web R R) (steady : ∀ t x, W.level (t + 1) x = W.level t x)
     (dependent : W.Dependent) (embodied : ∀ x, W.Embodied x) (counted : ∃ alive, W.Census alive) :
-    (⟨R, Flow.still, W⟩ : World).Premised :=
+    (World.of R Flow.still W : World).Premised :=
   match still_vacuous W with
   | ⟨acting, taking, dissipative, transmitting⟩ =>
     .of dependent (fun t x => congrArg (· + 0) (steady t x)) acting taking dissipative embodied
@@ -786,7 +785,7 @@ namespace World
 /-- A depending ring: places of a ring depending on its first place while held, with nothing
 flowing. -/
 def dependingRing (n c : Nat → Nat) (M : Nat) : World :=
-  ⟨Fin (Ring.size M), Flow.still, Ring.depending n c M⟩
+  World.of (Fin (Ring.size M)) Flow.still (Ring.depending n c M)
 
 instance dependingRing_decided (n c : Nat → Nat) (M : Nat) :
     ∀ t i j, Decidable ((dependingRing n c M).web.requires t i j) :=

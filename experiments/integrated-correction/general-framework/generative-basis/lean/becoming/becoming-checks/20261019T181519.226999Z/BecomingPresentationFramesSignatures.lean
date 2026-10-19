@@ -1,0 +1,16 @@
+import Becoming.PresentationFrames
+#check @Becoming.PresentationFrames.correspondence
+#check @Becoming.PresentationFrames.canonical_exact
+#check @Becoming.PresentationFrames.canonical_kernel
+#check @Becoming.PresentationFrames.canonical_factor_answers
+#check @Becoming.PresentationFrames.canonical_factor
+#check @Becoming.PresentationFrames.joint_descends_iff
+#check @Becoming.PresentationFrames.joint_image_iff
+#check @Becoming.PresentationFrames.joint_reading_unique
+#check @Becoming.PresentationFrames.joint_blocked
+#check @Becoming.PresentationFrames.everyPredicate_separate
+#check @Becoming.PresentationFrames.everyPredicate_injective
+#check @Becoming.PresentationFrames.everyPredicate_reduced
+#check @Becoming.PresentationFrames.everyPredicate_saturated
+#check @Becoming.PresentationFrames.everyPredicate_recoverable
+#check @Becoming.PresentationFrames.everyPredicate_correspondence

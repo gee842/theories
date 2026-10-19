@@ -297,7 +297,7 @@ turn tells them apart, and within finitely many differences the merge loses a po
 theorem closing_merges {f : Nat → Nat} {d n : Nat} (zero : f 0 = 0)
     (closed : (Law.run f d).state n = 0) (pos : 0 < d) : Law.Merges f :=
   match last_positive pos closed with
-  | ⟨k, open_, next⟩ => ⟨(Law.run f d).state k, 0, Nat.ne_of_gt open_, next.trans zero.symm⟩
+  | ⟨k, open_, next⟩ => Law.merges_iff.mpr ⟨(Law.run f d).state k, 0, Nat.ne_of_gt open_, next.trans zero.symm⟩
 
 /-- **A loop that closes a positive difference is not lossless** (`Law.Merges.not_lossless`). -/
 theorem closing_not_lossless {f : Nat → Nat} {d n : Nat} (zero : f 0 = 0)

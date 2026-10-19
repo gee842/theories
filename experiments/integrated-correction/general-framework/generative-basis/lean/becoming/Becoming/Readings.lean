@@ -74,8 +74,8 @@ is read off the standings and the exchange of the formations, as their differenc
 significance meets the invariance standard, and that the presupposition holds. No ethical predicate, ranking or axiom occurs; the significance
 of the condition of chapter §6.15 enters only as a predicate the theorems quantify over.
 
-`presupposition_iff_all_of_invariant` and `bounded_invariant_iff` are in `Becoming.BoundaryWorlds`,
-so that module does not import the frame (board item W).
+`presupposition_iff_all_of_invariant` and `bounded_invariant_iff` are in `Becoming.BoundaryWorlds`
+(board item W).
 -/
 
 namespace Becoming

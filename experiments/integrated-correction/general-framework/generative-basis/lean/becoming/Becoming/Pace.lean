@@ -171,7 +171,7 @@ any step from `n` on (`Law.lost_stays`). -/
 theorem never_reads_lost (never : ∀ t, reads t = false) {g : R} {n : Nat} {s : S}
     (lost : ¬ Law.Reachable (fun y => f y g) n s) (k : Nat) (x : S) :
     (paced f h reads (x, g) (n + k)).1 ≠ s := fun at_s =>
-  Law.lost_stays lost k ⟨x, (congrArg Prod.fst (never_reads_course never (x, g) (n + k))).symm.trans at_s⟩
+  Law.lost_stays lost k (Law.reachable_iff.mpr ⟨x, (congrArg Prod.fst (never_reads_course never (x, g) (n + k))).symm.trans at_s⟩)
 
 /-- **Under a rule that never reads, configurations merged stay merged.** Two fast configurations
 the rule's law takes to one give the same two-level course from the next step on
@@ -191,8 +191,8 @@ theorem never_reads_loses (never : ∀ t, reads t = false) {g : R}
     ¬ ∀ s, ∃ x, (paced f h reads (x, g) (all.length + k)).1 = s := fun onto =>
   Law.Merges.loses merges every fun s =>
     match onto s with
-    | ⟨x, at_s⟩ => Law.Reachable.back k
-        ⟨x, (congrArg Prod.fst (never_reads_course never (x, g) (all.length + k))).symm.trans at_s⟩
+    | ⟨x, at_s⟩ => Law.Reachable.back k (Law.reachable_iff.mpr
+        ⟨x, (congrArg Prod.fst (never_reads_course never (x, g) (all.length + k))).symm.trans at_s⟩)
 
 /-- Where neither level's step reads the fast configuration, one turn does not either. -/
 theorem turn_byRule (fast : ∀ x x' g, f x g = f x' g) (slow : ∀ x x' g, h x g = h x' g) :
@@ -287,9 +287,11 @@ theorem fixed_loses (k : Nat) (x : Bool) :
     (Law.run (fun x => fast x true) x).state (1 + k) ≠ false ∧
       (Law.run (fun x => fast x false) x).state (1 + k) ≠ true :=
   ⟨fun at_false =>
-    Law.lost_stays (fun ⟨_, at_1⟩ => Bool.noConfusion (at_1 : true = false)) k ⟨x, at_false⟩,
+    Law.lost_stays (fun r => let ⟨_, at_1⟩ := Law.reachable_iff.mp r; Bool.noConfusion (at_1 : true = false)) k
+      (Law.reachable_iff.mpr ⟨x, at_false⟩),
    fun at_true =>
-    Law.lost_stays (fun ⟨_, at_1⟩ => Bool.noConfusion (at_1 : false = true)) k ⟨x, at_true⟩⟩
+    Law.lost_stays (fun r => let ⟨_, at_1⟩ := Law.reachable_iff.mp r; Bool.noConfusion (at_1 : false = true)) k
+      (Law.reachable_iff.mpr ⟨x, at_true⟩)⟩
 
 /-- The course whose rule reads the fast level at every step comes back after four steps. -/
 theorem back_at_four :

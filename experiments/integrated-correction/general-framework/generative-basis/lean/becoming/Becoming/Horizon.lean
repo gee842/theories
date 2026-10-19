@@ -78,7 +78,7 @@ Kelly (1996). `Adheres K` is the closure of `K`; that the closure is refutable i
 constructively it is the step from a failure to adhere to a horizon that witnesses it.
 
 The support-gated law (`Feedback`) is in `Becoming.HorizonWebs`, which states the horizon on its
-webs, so that module does not import the frame (board item W).
+webs (board item W).
 -/
 
 namespace Becoming

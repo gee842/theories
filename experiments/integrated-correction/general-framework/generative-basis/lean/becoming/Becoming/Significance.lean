@@ -139,8 +139,7 @@ Recognition and motivation belong to the later attempt without axiom. The repres
 commits to discrete steps, natural quantities and a decided part.
 
 `Conditions.significant_of_unrestricted` and the paths of a web (`Web.paths` and its comparison
-theorems) are in `Becoming.ValuationFrames`, so this module does not import the frame (board item
-W).
+theorems) are in `Becoming.ValuationFrames` (board item W).
 -/
 
 namespace Becoming

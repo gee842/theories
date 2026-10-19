@@ -417,7 +417,7 @@ theorem unwax_wax : ∀ s : Hexagram, unwaxWane (waxWane s) = s
 
 /-- **The law of waxing and waning merges nothing.** -/
 theorem waxWane_lossless : Law.Lossless waxWane :=
-  fun x y same => (unwax_wax x).symm.trans ((congrArg unwaxWane same).trans (unwax_wax y))
+  Law.lossless_iff.mpr fun x y same => (unwax_wax x).symm.trans ((congrArg unwaxWane same).trans (unwax_wax y))
 
 /-- **Under the law of waxing and waning every configuration returns**, by
 `Law.lossless_iff_returns` on the received order. -/
@@ -542,7 +542,7 @@ def wane : Hexagram → Hexagram
 
 /-- **Where only a broken line enters, the law merges** (剝 and 坤 go on to 坤). -/
 theorem wane_merges : Law.Merges wane :=
-  ⟨falling 5, rising 0, ne_of_eqb rfl, rfl⟩
+  Law.merges_iff.mpr ⟨falling 5, rising 0, ne_of_eqb rfl, rfl⟩
 
 /-- **After six steps every configuration is all broken.** -/
 theorem wane_six : ∀ s : Hexagram, (Law.run wane s).state 6 = allBroken

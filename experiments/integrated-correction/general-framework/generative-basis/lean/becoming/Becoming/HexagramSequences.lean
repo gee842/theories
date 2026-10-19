@@ -330,7 +330,7 @@ theorem orderNext_back (s : Hexagram) : orderNext (orderBack s) = s :=
 
 /-- **It merges nothing.** -/
 theorem orderNext_lossless : Law.Lossless orderNext :=
-  fun x y same => (orderBack_next x).symm.trans ((congrArg orderBack same).trans (orderBack_next y))
+  Law.lossless_iff.mpr fun x y same => (orderBack_next x).symm.trans ((congrArg orderBack same).trans (orderBack_next y))
 
 set_option maxRecDepth 100000 in
 /-- From 乾 it does not come back before the sixty-fourth step. -/
@@ -368,14 +368,14 @@ theorem runsOrder_lossless_iff {next : Hexagram → Hexagram} (runs : RunsOrder 
       have back : orderBack (next weiJi) ≠ weiJi := fun e =>
         ne_of_eqb h ((orderNext_back (next weiJi)).symm.trans
           ((congrArg orderNext e).trans orderNext_closes))
-      absurd (lossless _ _ ((runsOrder_agrees runs back).trans (orderNext_back (next weiJi)))) back,
-   fun closes x y same =>
+      absurd (Law.lossless_iff.mp lossless _ _ ((runsOrder_agrees runs back).trans (orderNext_back (next weiJi)))) back,
+   fun closes => Law.lossless_iff.mpr fun x y same =>
     have agree : ∀ s, next s = orderNext s := fun s => match h : eqb s weiJi with
       | true => by
         cases eq_of_eqb h
         exact closes
       | false => runsOrder_agrees runs (ne_of_eqb h)
-    orderNext_lossless x y ((agree x).symm.trans (same.trans (agree y)))⟩
+    Law.lossless_iff.mp orderNext_lossless x y ((agree x).symm.trans (same.trans (agree y)))⟩
 
 /-! ## What a law running the order reads -/
 
@@ -750,11 +750,10 @@ def exchangesRun (r : Run exchanges) : Run (exchange Half) :=
 /-- A course of exchanges read as a world: its relata the two trigrams, each standing at its count
 of unbroken lines, what each exchange passes the flow. -/
 def exchangeWorld (r : Run exchanges) : World :=
-  ⟨Half, ⟨fun t => (passing (r.act t).1 (r.act t).2 (r.state t)).present,
+  World.of Half (⟨fun t => (passing (r.act t).1 (r.act t).2 (r.state t)).present,
       fun t => (passing (r.act t).1 (r.act t).2 (r.state t)).take,
-      fun t => (passing (r.act t).1 (r.act t).2 (r.state t)).give⟩,
-    ⟨fun t => halfYang (r.state t), fun _ _ => True, fun _ _ _ => False, fun _ _ _ => 0,
-      fun _ _ _ => True⟩⟩
+      fun t => (passing (r.act t).1 (r.act t).2 (r.state t)).give⟩) (⟨fun t => halfYang (r.state t), fun _ _ => True, fun _ _ _ => False, fun _ _ _ => 0,
+      fun _ _ _ => True⟩)
 
 /-- **It balances**, by `World.balances_iff_exchange`. -/
 theorem exchangeWorld_balances (r : Run exchanges) :

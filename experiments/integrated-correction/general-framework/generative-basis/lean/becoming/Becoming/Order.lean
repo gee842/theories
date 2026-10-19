@@ -795,10 +795,11 @@ theorem stutter_premises_iff (stutter : Stutter ρ) (once : w.flow.Once) :
     ((w.sample ρ).Acting ↔ w.Acting) ∧ ((w.sample ρ).Taking ↔ w.Taking) ∧
     ((w.sample ρ).Dependent ↔ w.Dependent) ∧ ((w.sample ρ).Embodied ↔ w.Embodied) ∧
     ((w.sample ρ).Transmitting ↔ w.Transmitting) :=
-  ⟨Flow.stutter_balances_iff (F := w.Relatum) stutter once,
+  ⟨Flow.stutter_balances_iff (F := w.Relatum) (W := w.web) stutter once,
    Flow.stutter_dissipative_iff (F := w.Relatum) stutter,
-   Flow.stutter_acting_iff (F := w.Relatum) stutter, Flow.stutter_taking_iff (F := w.Relatum) stutter,
-   Web.stutter_dependent_iff stutter,
+   Flow.stutter_acting_iff (F := w.Relatum) (W := w.web) stutter,
+   Flow.stutter_taking_iff (F := w.Relatum) (W := w.web) stutter,
+   Web.stutter_dependent_iff (W := w.web) stutter,
    ⟨fun embodied x => (Web.stutter_embodied_iff stutter).mp (embodied x),
     fun embodied x => (Web.stutter_embodied_iff stutter).mpr (embodied x)⟩,
    ⟨fun ⟨δ, transmits⟩ => ⟨δ, fun c =>
@@ -1691,7 +1692,7 @@ namespace World
 /-- A world with its exchanges across the steps from `t` and `t + 1` taken in the other order,
 its changes moved as the side of each relatum says. -/
 def commute (w : World) (t : Nat) (side : w.Relatum → Bool) : World :=
-  ⟨w.Relatum, w.flow.swap t, w.web.commute t side side⟩
+  World.of w.Relatum (w.flow.swap t) (w.web.commute t side side)
 
 variable {w : World} {t : Nat} {side : w.Relatum → Bool}
 
@@ -1761,12 +1762,12 @@ inductive Reorders {X : Type} (within : Nat → Prop) :
 world balances, dissipates and is embodied exactly where it did. -/
 theorem Reorders.laws {X : Type} {within : Nat → Prop} {L L' : Flow X X} {W W' : Web X X} :
     Reorders within L W L' W' →
-      (((⟨X, L', W'⟩ : World).Balanced ↔ (⟨X, L, W⟩ : World).Balanced) ∧
-       ((⟨X, L', W'⟩ : World).Dissipative ↔ (⟨X, L, W⟩ : World).Dissipative) ∧
-       ((⟨X, L', W'⟩ : World).Embodied ↔ (⟨X, L, W⟩ : World).Embodied))
+      (((World.of X L' W' : World).Balanced ↔ (World.of X L W : World).Balanced) ∧
+       ((World.of X L' W' : World).Dissipative ↔ (World.of X L W : World).Dissipative) ∧
+       ((World.of X L' W' : World).Embodied ↔ (World.of X L W : World).Embodied))
   | .refl _ _ => ⟨Iff.rfl, Iff.rfl, Iff.rfl⟩
   | .swap t side _ split more =>
-    have laws := World.commute_laws (w := ⟨X, L, W⟩) (t := t) (side := side) split
+    have laws := World.commute_laws (w := World.of X L W) (t := t) (side := side) split
     have next := Reorders.laws more
     ⟨next.1.trans laws.1, next.2.1.trans laws.2.1, next.2.2.trans laws.2.2.1⟩
 
@@ -1833,7 +1834,7 @@ def flow : Flow Nat Nat where
 takes from the second, which ceases to stand. The two exchanges share no relatum, and the first
 relatum depends on the second. -/
 def world : World :=
-  ⟨Nat, flow, web⟩
+  World.of Nat flow web
 
 theorem balances : flow.Balances web
   | 0, 0 => rfl
@@ -1930,7 +1931,7 @@ def flow : Flow Nat Nat where
 /-- The first relatum arises across the step from zero and gives across the step from one: the
 two exchanges share it. -/
 def world : World :=
-  ⟨Nat, flow, web⟩
+  World.of Nat flow web
 
 theorem balances : flow.Balances web
   | 0, _ => rfl
@@ -2126,7 +2127,7 @@ variable {X : Type}
 
 /-- The world. -/
 def world (r : Footprinted X) : World :=
-  ⟨X, r.flow, r.web⟩
+  World.of X r.flow r.web
 
 /-- The footprint contains each exchange: a relatum a step does not touch takes no part in its
 exchange and is unmoved across it. -/
@@ -3282,7 +3283,7 @@ def IdleAt (v : World) (ρ : Nat → Nat) : Prop :=
 the web read at the times `σ`. Where `σ` gives the moving steps of a stuttering at whose idle
 steps the world is idle, this removes them. -/
 def withoutIdle (v : World) (σ : Nat → Nat) : World :=
-  ⟨v.Relatum, v.flow.readAt σ, v.web.sample σ⟩
+  World.of v.Relatum (v.flow.readAt σ) (v.web.sample σ)
 
 section Removal
 

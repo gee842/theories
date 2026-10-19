@@ -534,7 +534,7 @@ namespace World
 /-- The world with `g`'s dependence on `c` at step `t` dropped: the same relata and flow, and
 the same levels, activity, drawing and needs. -/
 def drop (w : World) (t : Nat) (g c : w.Relatum) : World :=
-  ⟨w.Relatum, w.flow, w.web.drop t g c⟩
+  World.of w.Relatum w.flow (w.web.drop t g c)
 
 variable {w : World}
 
@@ -738,9 +738,8 @@ theorem drawn_not_enough :
 /-- The finite hatch in which the parent also depends on itself, at need one: it bears on
 itself, and depends on everything it draws on. -/
 def bearingHatch : World :=
-  ⟨FiniteHatch.Relatum, FiniteHatch.flow,
-   { FiniteHatch.web with requires := fun _ x y =>
-      (Hatch.eats (FiniteHatch.into x) ∧ y = .food) ∨ (x = .parent ∧ y = .parent) }⟩
+  World.of FiniteHatch.Relatum FiniteHatch.flow ({ FiniteHatch.web with requires := fun _ x y =>
+      (Hatch.eats (FiniteHatch.into x) ∧ y = .food) ∨ (x = .parent ∧ y = .parent) })
 
 /-- The derivation is not vacuous: in the finite hatch whose parent bears on itself, a finite
 world meeting balance, dissipation, embodiment and activity needing support, a relatum depends

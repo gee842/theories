@@ -760,7 +760,7 @@ variable (w : World) [DecidableEq w.Relatum] (σ : Nat → Nat)
 /-- A world read at the times `σ`: the same relata, with the flow and web read at the
 sampling times. -/
 def sample : World :=
-  ⟨w.Relatum, w.flow.sample σ, w.web.sample σ⟩
+  World.of w.Relatum (w.flow.sample σ) (w.web.sample σ)
 
 variable {w σ}
 
@@ -848,7 +848,7 @@ def flow : Flow Unit Unit where
 
 /-- The strobe: one relatum, on at the odd steps. -/
 def world : World :=
-  ⟨Unit, flow, web⟩
+  World.of Unit flow web
 
 instance relatum_decided : DecidableEq world.Relatum :=
   fun a b => match a, b with
@@ -941,7 +941,7 @@ def flow : Flow Bool Bool where
 
 /-- A world in which the gift precedes the standing. -/
 def world : World :=
-  ⟨Bool, flow, web⟩
+  World.of Bool flow web
 
 instance relatum_decided : DecidableEq world.Relatum :=
   inferInstanceAs (DecidableEq Bool)

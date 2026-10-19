@@ -128,7 +128,7 @@ theorem Absorbing.orbit {next : S → S} {R : S → Prop} (absorbing : Absorbing
 /-- **A configuration returns exactly where it lies ahead of itself.** -/
 theorem returns_iff_ahead {next : S → S} {s : S} : Returns next s ↔ Ahead next s s :=
   ⟨fun returns => returns.undo,
-    fun ⟨k, back⟩ => ⟨k + 1, Nat.succ_pos k, (orbit_shift next s k).trans back⟩⟩
+    fun ⟨k, back⟩ => returns_iff.mpr ⟨k + 1, Nat.succ_pos k, (orbit_shift next s k).trans back⟩⟩
 
 /-! ## Lock-in -/
 
@@ -141,7 +141,7 @@ theorem DrawnInto.never_back {next : S → S} {R : S → Prop} (absorbing : Abso
 
 /-- **A drawn configuration never returns.** -/
 theorem Drawn.not_returns {next : S → S} {s : S} (drawn : Drawn next s) : ¬ Returns next s :=
-  fun returns => match drawn, returns with
+  fun returns => match drawn, returns_iff.mp returns with
   | _, ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
   | ⟨_, absorbing, outside, n, enters⟩, ⟨p + 1, _, back⟩ =>
     DrawnInto.never_back absorbing outside enters (p * n)
@@ -166,11 +166,12 @@ theorem drawn_iff_not_returns {next : S → S} {s : S} : Drawn next s ↔ ¬ Ret
 
 /-- **What can be had `n` steps on is absorbing.** -/
 theorem reachable_absorbing (next : S → S) (n : Nat) : Absorbing next (Reachable next n) :=
-  fun _ ⟨x, to⟩ => ⟨next x, (orbit_shift next x n).symm.trans (congrArg next to)⟩
+  fun _ reach => let ⟨x, to⟩ := reachable_iff.mp reach
+    reachable_iff.mpr ⟨next x, (orbit_shift next x n).symm.trans (congrArg next to)⟩
 
 /-- Every course is, at step `n`, something that can be had at step `n`. -/
 theorem reachable_orbit (next : S → S) (s : S) (n : Nat) : Reachable next n (orbit next s n) :=
-  ⟨s, rfl⟩
+  reachable_iff.mpr ⟨s, rfl⟩
 
 /-- **A lost possibility is drawn in.** A configuration that cannot be had `n` steps on is
 drawn into what can be had `n` steps on, entering at step `n`. -/
@@ -185,7 +186,8 @@ theorem drawn_of_lost {next : S → S} {n : Nat} {s : S} (lost : ¬ Reachable ne
 
 /-- **What returns is absorbing.** -/
 theorem returning_absorbing (next : S → S) : Absorbing next (Returns next) :=
-  fun s ⟨p, pos, back⟩ => ⟨p, pos, (orbit_shift next s p).symm.trans (congrArg next back)⟩
+  fun s returns => let ⟨p, pos, back⟩ := returns_iff.mp returns
+    returns_iff.mpr ⟨p, pos, (orbit_shift next s p).symm.trans (congrArg next back)⟩
 
 /-! ## A merge draws one of the two -/
 
@@ -203,7 +205,7 @@ after `a + 1` steps and `y` after `b + 1`, both lie on the course from their com
 configuration, which is at `x` and at `y` at one step. -/
 theorem Merges.not_both_return {next : S → S} {x y : S} (apart : x ≠ y)
     (merged : next x = next y) : ¬ (Returns next x ∧ Returns next y) :=
-  fun ⟨returns_x, returns_y⟩ => match returns_x, returns_y with
+  fun ⟨returns_x, returns_y⟩ => match returns_iff.mp returns_x, returns_iff.mp returns_y with
   | ⟨0, pos, _⟩, _ => absurd pos (Nat.lt_irrefl 0)
   | _, ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
   | ⟨a + 1, _, back_x⟩, ⟨b + 1, _, back_y⟩ =>
@@ -231,7 +233,7 @@ theorem merge_draws {next : S → S} {x y : S} (apart : x ≠ y) (merged : next 
 
 /-- A law that merges draws something, in double-negation form. -/
 theorem Merges.draws {next : S → S} (merges : Merges next) : ¬ ¬ ∃ s, Drawn next s :=
-  fun undrawn => match merges with
+  fun undrawn => match merges_iff.mp merges with
   | ⟨x, y, apart, merged⟩ =>
     merge_draws apart merged ⟨fun drawn => undrawn ⟨x, drawn⟩, fun drawn => undrawn ⟨y, drawn⟩⟩
 
@@ -245,7 +247,7 @@ theorem none_drawn_merges_nothing {next : S → S} (undrawn : ∀ s, ¬ Drawn ne
 nothing. -/
 theorem none_drawn_lossless [DecidableEq S] {next : S → S} (undrawn : ∀ s, ¬ Drawn next s) :
     Lossless next :=
-  fun x y merged => match decEq x y with
+  lossless_iff.mpr fun x y merged => match decEq x y with
   | isTrue same => same
   | isFalse apart => absurd apart (none_drawn_merges_nothing undrawn x y merged)
 
@@ -291,8 +293,8 @@ theorem enters_returning {next : S → S} {all : List S} (every : ∀ x, x ∈ a
     ∃ n, Returns next (orbit next s n) :=
   let ⟨i, _, lt, _, same⟩ := revisits_within all (orbit next s) (fun _ _ => every _)
   let ⟨d, gap⟩ := gap_of_lt lt
-  ⟨i, d + 1, Nat.succ_pos d,
-    (orbit_add next s i (d + 1)).symm.trans ((congrArg (orbit next s) gap.symm).trans same.symm)⟩
+  ⟨i, returns_iff.mpr ⟨d + 1, Nat.succ_pos d,
+    (orbit_add next s i (d + 1)).symm.trans ((congrArg (orbit next s) gap.symm).trans same.symm)⟩⟩
 
 /-- **Within finitely many configurations, what returns is the attractor.** Every
 configuration that does not return is drawn into the absorbing region of what returns. -/
@@ -315,7 +317,7 @@ theorem pred_orbit_zero : ∀ k, orbit Nat.pred 0 k = 0
 /-- **Counting down draws while keeping every possibility.** Under `Nat.pred` one is drawn,
 yet every number can be had at every step. -/
 theorem pred_drawn_keeps : Drawn Nat.pred 1 ∧ KeepsPossibilities Nat.pred :=
-  ⟨drawn_iff_not_returns.mpr fun returns => match returns with
+  ⟨drawn_iff_not_returns.mpr fun returns => match returns_iff.mp returns with
     | ⟨0, pos, _⟩ => absurd pos (Nat.lt_irrefl 0)
     | ⟨k + 1, _, back⟩ =>
       Nat.noConfusion ((pred_orbit_zero k).symm.trans ((orbit_shift Nat.pred 1 k).symm.trans back)),
@@ -383,7 +385,7 @@ def next (_ : Bool) : Bool := true
 def atTrue (s : Bool) : Prop := s = true
 
 /-- The law merges `false` and `true`. -/
-theorem merges : Law.Merges next := ⟨false, true, fun same => Bool.noConfusion same, rfl⟩
+theorem merges : Law.Merges next := Law.merges_iff.mpr ⟨false, true, fun same => Bool.noConfusion same, rfl⟩
 
 /-- `{true}` is absorbing. -/
 theorem absorbing : Law.Absorbing next atTrue := fun _ _ => rfl
@@ -397,7 +399,7 @@ theorem false_never_returns : ¬ Law.Returns next false :=
   Law.Drawn.not_returns ⟨atTrue, absorbing, false_drawn⟩
 
 /-- `true` returns at once. -/
-theorem true_returns : Law.Returns next true := ⟨1, Nat.succ_pos 0, rfl⟩
+theorem true_returns : Law.Returns next true := Law.returns_iff.mpr ⟨1, Nat.succ_pos 0, rfl⟩
 
 /-- `true` is not drawn. -/
 theorem true_not_drawn : ¬ Law.Drawn next true :=
@@ -405,7 +407,7 @@ theorem true_not_drawn : ¬ Law.Drawn next true :=
 
 /-- `false` cannot be had one step on. -/
 theorem false_lost : ¬ Law.Reachable next 1 false :=
-  fun ⟨_, to⟩ => Bool.noConfusion to
+  fun reach => let ⟨_, to⟩ := Law.reachable_iff.mp reach; Bool.noConfusion to
 
 end Ratchet
 

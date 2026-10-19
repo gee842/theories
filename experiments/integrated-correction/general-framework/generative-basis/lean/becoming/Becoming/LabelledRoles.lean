@@ -10,7 +10,7 @@ The run readings of `Becoming.Roles` (a web's activity along a run, `Web.active_
 bears on it, `Web.bearing`; ending together, `Web.coextinct`; the predation witness,
 `Predation.fox_ends`) and of `Becoming.Dissipation` (a Boolean sequence recurs as a run exactly
 where its one-member family recurs, `Sequences.recurs_iff`). The laws they read are stated over
-the web and the flow in those modules, which do not import the frame.
+the web and the flow in those modules.
 
 Every declaration moved here unchanged, with its name (study section 180, board item W). Every
 declaration has an empty axiom report.

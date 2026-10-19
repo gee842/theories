@@ -507,12 +507,11 @@ step from `t` is named as the configuration at `t` is, the move belonging to the
 it is made from (`withMove`). Each step's relations are those of the world at that step, read
 through the naming there. -/
 def reidentify (σ : Reidentify w.Relatum R') : World :=
-  ⟨R', ⟨fun t => (w.flow.present t).map (σ.new t), fun t x y => w.flow.take t (σ.old t x) (σ.old t y),
-      fun t x y => w.flow.give t (σ.old t x) (σ.old t y)⟩,
-    ⟨fun t x => w.web.level t (σ.old t x), fun t x => w.web.active t (σ.old t x),
+  World.of R' (⟨fun t => (w.flow.present t).map (σ.new t), fun t x y => w.flow.take t (σ.old t x) (σ.old t y),
+      fun t x y => w.flow.give t (σ.old t x) (σ.old t y)⟩) (⟨fun t x => w.web.level t (σ.old t x), fun t x => w.web.active t (σ.old t x),
       fun t x y => w.web.requires t (σ.old t x) (σ.old t y),
       fun t x y => w.web.need t (σ.old t x) (σ.old t y),
-      fun t x y => w.web.draws t (σ.old t x) (σ.old t y)⟩⟩
+      fun t x y => w.web.draws t (σ.old t x) (σ.old t y)⟩)
 
 /-- **The continuation a world's relations induce.** Across the step from `t`, `f` after it
 continues `g` before it by conservation: `f`'s standing after the step, with what is taken from

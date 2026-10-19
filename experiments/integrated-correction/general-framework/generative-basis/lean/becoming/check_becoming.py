@@ -67,8 +67,8 @@ import check as audit_support  # noqa: E402
 
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
-# The package, in layer order: the base (`Becoming.World`, the one unfolding, prelude only), the four
-# core layers and their root.
+# The package: the base (`Becoming.World`, the one unfolding's records, a world being a run of the
+# frame; prelude only), the four core layers and their root. Compile order comes from the imports.
 CORE = ["Becoming.World", "Becoming.Frame", "Becoming.Labelled", "Becoming.Inquiry", "Becoming.Derivation", "Becoming.ClassifiedBeliefProcesses", "Becoming.MoveOutcomeProcesses", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.ContextArrivalTraces", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Irreversibility", "Becoming.LawAlongRun", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OrderNormal", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
         "Becoming.Substitution",
@@ -180,11 +180,15 @@ RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
 SCOPE = (
-    "World: the import tree starts from the records of the one unfolding, Becoming.World, which imports "
-    "nothing: Web, Flow, World, Exchange and total over Nat and Prop, with no premise among them. The labelled process and the frame enter as "
-    "readings of it (Becoming.Labelled: the four splits stated from the world's side, and the run "
+    "World: one base, the run. The import tree starts at the foundation and Becoming.Frame (processes "
+    "and their runs); the records of the one unfolding, Becoming.World, import the frame: Dependence, "
+    "Web (Dependence Nat), Flow, Exchange and total over Nat and Prop, and World, one kind of relatum "
+    "with its history, a run of the process admitting every step whose configurations are its webs "
+    "and whose moves are its exchanges, so the world family is the standing-and-exchange reading of a "
+    "run by definition, with no premise among the records. The labelled process and the frame are "
+    "read from the world's side (Becoming.Labelled: the four splits, and the run "
     "readings of renewal, dependence, return and generation; Becoming.LabelledRoles: those of roles "
-    "and dissipation; Becoming.ValuationFrames: the valuations of Metaethics and Significance read on frames; the other readings in the run and trace modules of the modules they read), and no module free of the labelled process imports the frame. "
+    "and dissipation; Becoming.ValuationFrames: the valuations of Metaethics and Significance read on frames; the other readings in the run and trace modules of the modules they read). "
     "Stock: for every process, balance at each step is balance along every course; where steps "
     "draw only from what is held, a course is executable exactly where it is covered, and run "
     "jointly with a registration exactly where the registration admits it and the stock covers it; "
@@ -1640,7 +1644,8 @@ SCOPE = (
     "recognizing among enumerated moves a step that stays in the family gives a run by search; "
     "asked of every process, a run from every member of every family that keeps moving is exactly "
     "dependent choice. "
-    "Runs: a world is exactly a run of the law its webs and exchanges show and every run on webs "
+    "Runs: a world is a run by its type and exactly a run of the law its webs and exchanges show, with "
+    "its history's configurations and moves, and every run on webs "
     "and exchanges is a world; a world balances exactly where it is a run of the law of exchange on "
     "webs, and with the rest counted every world is such a run; a law of exchange's course is a "
     "world, balanced exactly where the law is feasible, its generation is the one run of a "

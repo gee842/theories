@@ -617,11 +617,9 @@ namespace World
 
 /-- The world from step `T` on: its step `t` is step `T + t`. -/
 def after (w : World) (T : Nat) : World :=
-  ⟨w.Relatum,
-   ⟨fun t => w.flow.present (T + t), fun t => w.flow.take (T + t),
-    fun t => w.flow.give (T + t)⟩,
-   ⟨fun t => w.web.level (T + t), fun t => w.web.active (T + t), fun t => w.web.requires (T + t),
-    fun t => w.web.need (T + t), fun t => w.web.draws (T + t)⟩⟩
+  World.of w.Relatum (⟨fun t => w.flow.present (T + t), fun t => w.flow.take (T + t),
+    fun t => w.flow.give (T + t)⟩) (⟨fun t => w.web.level (T + t), fun t => w.web.active (T + t), fun t => w.web.requires (T + t),
+    fun t => w.web.need (T + t), fun t => w.web.draws (T + t)⟩)
 
 variable {w : World}
 
@@ -1764,7 +1762,7 @@ def web : Web (Option Nat) (Option Nat) :=
     fun _ _ c => c = none⟩
 
 def world : World :=
-  ⟨Option Nat, flow, web⟩
+  World.of (Option Nat) flow web
 
 theorem bud_before {s : Nat} : ∀ {t}, t ≤ s → bud s t = 0
   | 0, _ => rfl
@@ -1935,7 +1933,7 @@ def web : Web Bool Bool :=
   ⟨level, fun t x => 0 < level t x, fun _ _ _ => False, fun _ _ _ => 0, fun _ _ _ => False⟩
 
 def world : World :=
-  ⟨Bool, flow, web⟩
+  World.of Bool flow web
 
 /-- The flow balances at a unit halving at each step. -/
 theorem balances : flow.BalancesAt (fun _ => 2) web :=
@@ -2116,7 +2114,7 @@ def web : Web Relatum Relatum :=
   ⟨level, fun t c => 0 < level t c, fun _ _ _ => False, fun _ _ _ => 0, fun _ _ _ => False⟩
 
 def world : World :=
-  ⟨Relatum, flow, web⟩
+  World.of Relatum flow web
 
 theorem taken (t : Nat) (c : Relatum) :
     flow.taken t c = halving t * (side t c * (4 * (halving t + 1))) :=
