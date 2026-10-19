@@ -119,7 +119,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "25b1a8e61f785d83f938706eceb5b98f13e590ebd9803c0c3c3f03eec9336b33",
+      "sha256": "f76c95d000ad47ce325ef58c7891d7536ac3844ddc9deb4ccced572b8a8bd4eb",
       "declarations": [
         "Becoming.Image"
       ]
@@ -186,6 +186,12 @@
       "role": "receipt",
       "sha256": "0f7165394767e93fae5bd03aec472a194f9797cebcdd3202397a0b31a07359f1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -219,7 +225,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -286,6 +292,10 @@
     {
       "en": "20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Removed, with the statement kept under one name: Readout.image (now Image). Proof bindings (Readout.lean, SummaryFutures.lean) rebound to core receipt 20261019T185632.962707Z. Re-pointed after reading the change: Readout.lean, Readout.image removed for Image of Becoming.Mechanism; SummaryFutures.lean, a restatement of a statement proved under another name removed (one name per statement), or a use or docstring re-pointed to the kept name; kept statements unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R29（按看板规则 9 压缩：在下面推广而非并列；每个陈述一个名称）：删去，陈述以一个名称保留：Readout.image（现为 Image）。证明绑定（Readout.lean、SummaryFutures.lean）改到核心回执 20261019T185632.962707Z。读过改动后重新指向：Readout.lean，删去 Readout.image，改用 Becoming.Mechanism 的 Image；SummaryFutures.lean，删去以另一名称证明之陈述的重述（每个陈述一个名称），或用法与说明改指保留的名称；保留的陈述不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Mechanism.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Mechanism.lean, GoAlike moved to Laws.lean, defined as GoAlikeUnder at equality. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Mechanism.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Mechanism.lean，GoAlike 移到 Laws.lean，定义为相等处的 GoAlikeUnder。论断不变。"
     }
   ]
 }

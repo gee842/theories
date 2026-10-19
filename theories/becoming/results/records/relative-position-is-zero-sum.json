@@ -339,7 +339,7 @@
       "declarations": [
         "Becoming.Flow.joint_excess_ends"
       ],
-      "sha256": "8606d794204c4f68e4ad963dc8642ebb1a1d8dc4750c58625e5ca219a8efc564"
+      "sha256": "0ab0815ed90be71d73e427578aeeb623f23a4d2e7055391ab23903e6ac6f3861"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
@@ -347,7 +347,7 @@
       "declarations": [
         "Becoming.Clearing.clearer_loses_dweller"
       ],
-      "sha256": "962dcce61063d96cfdc1785b77a7e524df0397e1d2d6ac25b03f9f18310ea7df"
+      "sha256": "ddd1afe1ef826f426a418e24066e801610d4d99e3300dca8c7fc8aba03fd16e3"
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T110924.527968Z/verification.json",
@@ -357,7 +357,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -423,6 +423,10 @@
     {
       "en": "20 October 2026, opening version 8 (proposal drafts/2026-10-10-opening/history/OPENING-V8-PROPOSAL.md, forms A(b) and B(b)): OPENING.md re-pointed after reading the change: in the body, the sentence on political realism, neoliberalism and libertarianism says which feature each takes for a law of nature, without \"Within Western thinking\" or \"manifestations of a system captured by the meta-attractor\", and the four \"It is clear that\" read \"It is clear to me that\"; the last sentence of the AI-written note [^no-law] separates the reading of what those theories claim from the diagnosis; the header comment and closing line name version 8. The sentence on the game of winning and \"A race of position cannot raise everyone\", which this record quotes, are unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，开篇第 8 版（提案 drafts/2026-10-10-opening/history/OPENING-V8-PROPOSAL.md，形式 A(b) 与 B(b)）：读过改动后 OPENING.md 重新指向：正文中关于政治现实主义、新自由主义与自由意志主义的句子改为写明各自把哪一特征当作自然律，去掉“Within Western thinking”与“manifestations of a system captured by the meta-attractor”；四处“It is clear that”改为“It is clear to me that”；AI 所写脚注 [^no-law] 的末句把对这些理论所主张者的读法与诊断分开；页首注释与结尾行写明第 8 版。本记录所引的关于赢的游戏的句子与“A race of position cannot raise everyone”不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Continuation.lean, the witness Clearing moved to Clearing.lean; Significance.lean, what takes no condition moved to Retaining.lean and Clearing.lean; the conditional theorems kept, statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Continuation.lean，见证 Clearing 移到 Clearing.lean；Significance.lean，不带条件者移到 Retaining.lean 与 Clearing.lean；条件定理保留，陈述不变。论断不变。"
     }
   ]
 }

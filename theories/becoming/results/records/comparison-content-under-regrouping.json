@@ -177,7 +177,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
       "role": "proof",
-      "sha256": "f8a7b460f2e847d2bea994fb294950fe6b5a64de214fa43ebadba295094a34ef",
+      "sha256": "db44669cad44018e864d9921184c7887303a4da5a473a81338c5a47cbe06de6f",
       "declarations": [
         "Becoming.Frame.regroup",
         "Becoming.Frame.RespectsAt",
@@ -217,7 +217,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
       "role": "proof",
-      "sha256": "456fff2668715d568bd3916ca95e15c20a0b0f71f035f5d32760f2f7ca32837e",
+      "sha256": "73d088bbc1bf0fec27a52cae188ac580e2fe61e3b7280ee0257aa1a4bef096ef",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "role": "proof",
+      "sha256": "73f33d048dc2e68aa92df80333e378c6638f5081c3693d4c9f5a836e38a8da29",
       "declarations": [
         "Becoming.Web.paths_extension_iff_widens",
         "Becoming.Web.paths"
@@ -234,7 +240,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "8d615dddf37bbe38a0dfbb3794224c0b574a63c0239fc0a49925dd6bcbf4e28d",
+      "sha256": "040b8324ef7925d17601301b37e2847babb6d2bb5f23a0c466c37961b95068bf",
       "declarations": [
         "Becoming.ExchangeLaw.course_balances_iff",
         "Becoming.ExchangeLaw.withAct_follows",
@@ -318,12 +324,18 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Regrouping",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -337,15 +349,22 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ValuationFrames.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ValuationFrames",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Extension.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Extension",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -501,6 +520,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (ValuationFrames.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: ValuationFrames.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（ValuationFrames.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：ValuationFrames.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from ValuationFrames.lean to Extension.lean, Web.paths, Web.paths_extension_iff_widens. Proof bindings (Counterfactual.lean, Regrouping.lean, ValuationFrames.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Regrouping.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; ValuationFrames.lean, C on frames moved to Extension.lean. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 ValuationFrames.lean 到 Extension.lean：Web.paths、Web.paths_extension_iff_widens。证明绑定（Counterfactual.lean、Regrouping.lean、ValuationFrames.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Regrouping.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；ValuationFrames.lean，框架上的 C 移到 Extension.lean。论断不变。"
     }
   ]
 }

@@ -127,7 +127,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "19037f0a2aa44095907954703ad5463d9dc0427d8c0e7f14ec0ab483a4c2d8b2",
+      "sha256": "a19138f81fea35432a6cde54c6d1c3ce5a985a007719675e9cf31b08a5f180cc",
       "declarations": [
         "Becoming.Alike.sameBranchingTests"
       ]
@@ -135,7 +135,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningRoles.lean",
       "role": "proof",
-      "sha256": "e275c5b791528c4b258b2729322b8e4cf7d6aab41a937c6cf57701f68d605b68",
+      "sha256": "d4f49e95212086eb88e172b9358be053de0590f197900d3f8d849727b1f9d192",
       "declarations": [
         "Becoming.Joining.HasUnits.roleTotal",
         "Becoming.Joining.HasUnits.collapse",
@@ -177,7 +177,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LocalUnits.lean",
       "role": "proof",
-      "sha256": "0b2eb5a5f7a504a233c962e9ba9b8f1bb983260357ce854273fd8579c166e7d9",
+      "sha256": "1d1b6e7ac5ba7520bf9265716be266a3b663d9eb51f7d0d806eaca0d0d7870b4",
       "declarations": [
         "Becoming.Fragment.has_units"
       ]
@@ -193,7 +193,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Fragments.lean",
       "role": "proof",
-      "sha256": "523feeca7614fdf2a610cf55feefdf41f1151c1817692c76962923a49e13d81c",
+      "sha256": "b8e3cae76f78686db5ec36794e4bc5797d8eebd584ebbd74626259c8e92e92fd",
       "declarations": [
         "Becoming.Fragment.passage_not_self_joint"
       ]
@@ -201,7 +201,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
       "role": "proof",
-      "sha256": "e274f8d6117733c5ce51deb93078796f41a365f6d11d93782483c5fa25f41aca",
+      "sha256": "789d5d602ee55c33e3fda89dc6806b2b9be1336a2ab7fa437a4097dec73d8b65",
       "declarations": [
         "Becoming.Joining.RoleTotal.alike",
         "Becoming.Joining.RoleTotal.collapse",
@@ -262,6 +262,12 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -295,7 +301,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Joining",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -309,36 +315,43 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningRoles.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.JoiningRoles",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Joining",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/LocalUnits.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.LocalUnits",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Fragments.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Fragments",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/JoiningBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.JoiningBridge",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -400,6 +413,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Likeness.lean, LocalUnits.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Likeness.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; LocalUnits.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Likeness.lean、LocalUnits.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Likeness.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；LocalUnits.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): JoiningBridge.lean, in the Lean history folder with its bytes, is bound to receipt 20261018T222948.779875Z, which elaborates Becoming.Joining.units_alike_in_roles, Becoming.Joining.open_map_does_not_force_pair_lifting_by_core, so the alias stays checked. Proof bindings (Fragments.lean, Joining.lean, JoiningRoles.lean, Likeness.lean, LocalUnits.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Fragments.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Joining.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; JoiningRoles.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Likeness.lean, GoAlikeUnder moved to Laws.lean; LocalUnits.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：JoiningBridge.lean（连同字节在 Lean 历史目录中）绑定到回执 20261018T222948.779875Z，它精化了 Becoming.Joining.units_alike_in_roles、Becoming.Joining.open_map_does_not_force_pair_lifting_by_core，别名因此仍受检查。证明绑定（Fragments.lean、Joining.lean、JoiningRoles.lean、Likeness.lean、LocalUnits.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Fragments.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Joining.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；JoiningRoles.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Likeness.lean，GoAlikeUnder 移到 Laws.lean；LocalUnits.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
     }
   ]
 }

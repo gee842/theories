@@ -78,6 +78,7 @@ GrownFragmentation proved its bypass and its certified tree cuts for two hand-bu
 | provenance | [2026-10-19-general-laws-from-examples.md](../../../../sources/15-codex-theory-conversations/2026-10-19-general-laws-from-examples.md) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json) | — |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 
 Aliases: `which links a closure needs`, `闭包需要哪些联系`, `cut changes no closure exactly where bypassed`, `被绕过的切断不改变闭包`, `every link grown by attachment is needed`, `依附式生长的每条联系都被需要`, `which conditions a system needs`, `系统需要哪些条件`, `Becoming.Cuts.closure_unchanged_iff_bypassed`, `Becoming.Cuts.attached_link_separates`, `Becoming.Flow.system_unchanged_without_iff`, `every condition of a world grown by attachment is needed`, `依附式生长的世界的每个条件都被需要`, `Becoming.Flow.GrownBy.condition_needed`, `Becoming.Flow.GrownBy.cut_unchanged_iff`
 
@@ -101,6 +102,7 @@ Aliases: `which links a closure needs`, `闭包需要哪些联系`, `cut changes
 - 19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): Rebound to core receipt 20261019T160413.543456Z after reading the change (Feedback.lean). The claim is unchanged.
 - 19 October 2026, R21 (the nineteenth review's fix list): Cuts.lean re-pointed, proof bindings rebound to core receipt 20261019T162802.564989Z. Since the reviewed hash, the cited files changed only where R21 changed them: Cuts.lean, documentation only (no name, statement or proof changed): the bypass stated for a directed link (target within the source's closure). Read before re-pointing. The claim is unchanged. The chapter reference was re-pointed as well, after reading R21's changes to the sections it cites.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
+- 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Feedback.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Feedback.lean, the conditional theorems moved to BoundedSignificance.lean; comparison_within_reach proved with no condition, statement unchanged. The claim is unchanged.
 
 </details>
 

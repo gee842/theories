@@ -511,7 +511,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "643839a8686bd12f8b8bfc28fbad35b8829573d3db5ccafb54cd5e932156384a",
+      "sha256": "223c387f0da8bee284888313cc3ce82ca43fb42a3fa3b19144e4709a618a53ef",
       "declarations": [
         "Becoming.Web.Dependent",
         "Becoming.Web.Renewed",
@@ -547,7 +547,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
       "declarations": []
     },
     {
@@ -1132,6 +1132,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Generation (now Arising); Generation.lean (now Arising.lean); Renewable.renewal_without_generation (now Renewable.renewal_without_arising); Return.lean (now Restoration.lean); Web.Regenerating (now Web.ActiveRenewer); Web.Unceasing.regeneration_recurs (now Web.Unceasing.activeRenewer_recurs); Web.dissipation_generation_not_recurring (now Web.dissipation_arising_not_recurring); dissipation_generation_not_recurring (now dissipation_arising_not_recurring); renewal_without_generation (now renewal_without_arising). Proof bindings (Arising.lean, Flow.lean, Labelled.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Arising.lean, the module Generation renamed Arising; Web.generation_* are Web.embodiedArising_*, Web.Regenerating is Web.ActiveRenewer; statements unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Identity.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Labelled.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Restoration.lean, the module Return renamed Restoration; Web.Returns and Web.ReturnsWithin are Web.Restored and Web.RestoredWithin; statements unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Generation（现为 Arising）；Generation.lean（现为 Arising.lean）；Renewable.renewal_without_generation（现为 Renewable.renewal_without_arising）；Return.lean（现为 Restoration.lean）；Web.Regenerating（现为 Web.ActiveRenewer）；Web.Unceasing.regeneration_recurs（现为 Web.Unceasing.activeRenewer_recurs）；Web.dissipation_generation_not_recurring（现为 Web.dissipation_arising_not_recurring）；dissipation_generation_not_recurring（现为 dissipation_arising_not_recurring）；renewal_without_generation（现为 renewal_without_arising）。证明绑定（Arising.lean、Flow.lean、Labelled.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Arising.lean，模块 Generation 改名为 Arising；Web.generation_* 现为 Web.embodiedArising_*，Web.Regenerating 现为 Web.ActiveRenewer；陈述不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Identity.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Labelled.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Restoration.lean，模块 Return 改名为 Restoration；Web.Returns 与 Web.ReturnsWithin 现为 Web.Restored 与 Web.RestoredWithin；陈述不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Dependence.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Dependence.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
     }
   ],
   "text_versions": [

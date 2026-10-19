@@ -285,7 +285,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "role": "statement",
-      "sha256": "74d044668c508278200b0afc0c01de558fcc298a12ce62f8ecb3666b0f260a04",
+      "sha256": "f8ca1ecbf116796643b58b18f9fb2f82f6c55c4ff0f7f4cf9a278d3ad0caebc9",
       "declarations": [
         "Becoming.Flow.residue",
         "Becoming.Flow.Gainless",
@@ -307,7 +307,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "role": "statement",
-      "sha256": "83daa2806392dadb0a9038c0a99177b983e5f4c3c5f10f71930b6567b652d9fa",
+      "sha256": "f74ef78a90acbe667a38de56ff34e71ea2f597c68c178740810b371364ffa539",
       "declarations": [
         "Becoming.Flow.DissipativeBy",
         "Becoming.Flow.DissipatesBy.of_each"
@@ -338,6 +338,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Passing.lossless (now Passing.conserving). Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Entropy.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Passing.lossless（现为 Passing.conserving）。读过改动后重新指向：Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Entropy.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Re-pointed after reading the change: Entropy.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Resolution.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：读过改动后重新指向：Entropy.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Resolution.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
     }
   ],
   "text_versions": []

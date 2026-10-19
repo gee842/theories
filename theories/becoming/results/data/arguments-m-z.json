@@ -1555,7 +1555,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/Order.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean",

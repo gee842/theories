@@ -71,6 +71,7 @@ The open programme of the chapter named one exception to the localized decidabil
 | integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
 | statement | [THE-THEORY-OF-BECOMING.md](../../chapters/THE-THEORY-OF-BECOMING.md) | — |
 | provenance | [2026-10-18-representation-scope-go.md](../../../../sources/15-codex-theory-conversations/2026-10-18-representation-scope-go.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json) | — |
 
 Aliases: `counting where the counts exist`, `计数存在之处的计数`, `counted census`, `被计数的普查`, `counts as relations`, `计数作为关系`, `counting laws for every property`, `对每个性质的计数之律`, `binding laws over counted censuses`, `被计数的普查上的约束之律`
 
@@ -97,6 +98,7 @@ Aliases: `counting where the counts exist`, `计数存在之处的计数`, `coun
 - 20 October 2026, R28 (one base by definition: a world is a run by its type; Web is Dependence Nat; Law.* are the notions of Law.process): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, §1 "One base, the run" replaces "The two presentations, exactly"; the theory stated in full item 1, §8.1 item 1, "What this completeness is" and §9 (layers, import tree, receipt, counts) follow R28. The claim is unchanged.
 - 20 October 2026, R29 (compression under board rule 9: generalize below, not beside; one name per statement): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, the sentences citing the removed names cite the kept ones; §9 (layers, import tree, receipt, counts) follows R29. The claim is unchanged.
 - 20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Re-pointed after reading the change: THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.
+- 20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (CensusCounts.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; CensusCounts.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.
 
 </details>
 

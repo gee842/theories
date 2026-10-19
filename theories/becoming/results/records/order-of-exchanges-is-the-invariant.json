@@ -31,7 +31,7 @@
     "zh": "P78b（工作板，P78 的延伸），按 Ren 2026-10-12 的“move towards 100%”：把交换的偏序作为对象，并证明逆方向。读法（AI 的，依 Ren 的交托采用）：给定足迹，规律所需的是相连交换的偏序，不是步的序列；这是以足迹为独立关系的 Mazurkiewicz 迹定理。见整合文档 §102。",
     "en": "P78b (work board, extending P78), following Ren's ‘move towards 100%’ of 12 October 2026: the partial order of exchanges as an object, and the converse. Reading (the AI's, adopted on Ren's delegation): given a footprint, what the laws need is the partial order of joined exchanges, not a sequence of steps; this is Mazurkiewicz's trace theorem with footprints as the independence relation. See the integration document §102."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean",
   "aliases": [
     "Becoming.Footprinted.Joined",
     "Becoming.Footprinted.Precedes",
@@ -76,7 +76,7 @@
           "zh": "包含交换的足迹；交换不相连。",
           "en": "A footprint containing the exchanges; the exchanges commuted not joined."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean"
       }
     }
   ],
@@ -105,7 +105,7 @@
   ],
   "counterexamples": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean",
       "detail": {
         "zh": "Order.Crossing.reorders_joined 与 Order.Arising.reorders_joined：只给两侧的 Reorders 可交换相连的交换，次序不保持。",
         "en": "Order.Crossing.reorders_joined and Order.Arising.reorders_joined: Reorders with sides only can commute joined exchanges, and the order is not kept."
@@ -122,9 +122,9 @@
   },
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean",
       "role": "proof",
-      "sha256": "f14441de1c2dead8301cf465e364811302a649a945f60309cf4f72b6c33f5876",
+      "sha256": "b39910d06a2cc17f1a0879e952174c880420fd7a9aff143e8efb5a098549fdaa",
       "declarations": [
         "Becoming.Web.SameAt",
         "Becoming.Web.Unmoved",
@@ -217,13 +217,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
+      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
       "declarations": []
     },
     {
@@ -273,20 +273,26 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Order",
+      "sha256_pointer": "/source_sha256/Becoming.World",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.World",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Reordering",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -482,6 +488,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Arising.reorders_joined (now Order.Arising.reorders_joined); Crossing.reorders_joined (now Order.Crossing.reorders_joined). Proof bindings (Order.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Order.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Arising.reorders_joined（现为 Order.Arising.reorders_joined）；Crossing.reorders_joined（现为 Order.Crossing.reorders_joined）。证明绑定（Order.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Order.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Order.lean to Reordering.lean, EachStep, EachStep.always, EachStep.append, EachStep.mono, Flow.SameExchange.trans, Footprinted, Footprinted.Contains, Footprinted.Contains.mono, Footprinted.Independent, Footprinted.Independent.append, Footprinted.Independent.keeps, Footprinted.Joined, Footprinted.Joined.mono, Footprinted.Joined.symm, Footprinted.Keeps, Footprinted.Precedes, Footprinted.Precedes.asymm, Footprinted.Precedes.irrefl, Footprinted.Precedes.lt, Footprinted.Precedes.mono, Footprinted.commute, Footprinted.commute_apart, Footprinted.commute_contains, Footprinted.commute_joined, Footprinted.commute_precedes, Footprinted.commute_precedes_of, Footprinted.commute_shows, Footprinted.commute_shows_first, Footprinted.commute_shows_second, Footprinted.contains_everything, Footprinted.converse, Footprinted.converse_webs, Footprinted.disjoint, Footprinted.first_free, Footprinted.lowered_keeps, Footprinted.lowered_origin, Footprinted.lowered_place, Footprinted.lowered_reindexes, Footprinted.precedes_of_commute, Footprinted.precedes_place, Footprinted.reorder, Footprinted.reorder_append, Footprinted.reorder_before, Footprinted.reorder_contains, Footprinted.reorder_exchange, Footprinted.reorder_joined, Footprinted.reorder_precedes, Footprinted.reorder_reorders, Footprinted.reorder_shows, Footprinted.reorder_touch, Footprinted.sorts, Footprinted.sorts_iff, Footprinted.sorts_step, Footprinted.split, Footprinted.world, Reindexes, Web.SameAt, Web.SameAt.refl, Web.SameAt.symm, Web.SameAt.trans, Web.Unmoved, Web.commute_sameAt_away, Web.commute_sameAt_false, Web.commute_sameAt_true, Web.dependent_of_sameAt, origin, origin_place, place, place_append, place_fixed, place_origin. The canonical source Order.lean was split; it is now Reordering.lean. The evidence and counterexample paths that named Order.lean name Reordering.lean (the split part holding what they cite). Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Order.lean 到 Reordering.lean：EachStep、EachStep.always、EachStep.append、EachStep.mono、Flow.SameExchange.trans、Footprinted、Footprinted.Contains、Footprinted.Contains.mono、Footprinted.Independent、Footprinted.Independent.append、Footprinted.Independent.keeps、Footprinted.Joined、Footprinted.Joined.mono、Footprinted.Joined.symm、Footprinted.Keeps、Footprinted.Precedes、Footprinted.Precedes.asymm、Footprinted.Precedes.irrefl、Footprinted.Precedes.lt、Footprinted.Precedes.mono、Footprinted.commute、Footprinted.commute_apart、Footprinted.commute_contains、Footprinted.commute_joined、Footprinted.commute_precedes、Footprinted.commute_precedes_of、Footprinted.commute_shows、Footprinted.commute_shows_first、Footprinted.commute_shows_second、Footprinted.contains_everything、Footprinted.converse、Footprinted.converse_webs、Footprinted.disjoint、Footprinted.first_free、Footprinted.lowered_keeps、Footprinted.lowered_origin、Footprinted.lowered_place、Footprinted.lowered_reindexes、Footprinted.precedes_of_commute、Footprinted.precedes_place、Footprinted.reorder、Footprinted.reorder_append、Footprinted.reorder_before、Footprinted.reorder_contains、Footprinted.reorder_exchange、Footprinted.reorder_joined、Footprinted.reorder_precedes、Footprinted.reorder_reorders、Footprinted.reorder_shows、Footprinted.reorder_touch、Footprinted.sorts、Footprinted.sorts_iff、Footprinted.sorts_step、Footprinted.split、Footprinted.world、Reindexes、Web.SameAt、Web.SameAt.refl、Web.SameAt.symm、Web.SameAt.trans、Web.Unmoved、Web.commute_sameAt_away、Web.commute_sameAt_false、Web.commute_sameAt_true、Web.dependent_of_sameAt、origin、origin_place、place、place_append、place_fixed、place_origin。规范来源 Order.lean 已拆分，现为 Reordering.lean。提到 Order.lean 的证据与反例路径改提 Reordering.lean（拆分后持有所引内容的部分）。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
     }
   ]
 }

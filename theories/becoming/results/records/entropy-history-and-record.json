@@ -444,7 +444,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "role": "proof",
-      "sha256": "74d044668c508278200b0afc0c01de558fcc298a12ce62f8ecb3666b0f260a04",
+      "sha256": "f8ca1ecbf116796643b58b18f9fb2f82f6c55c4ff0f7f4cf9a278d3ad0caebc9",
       "declarations": [
         "Becoming.Flow.GainlessOn",
         "Becoming.Flow.ConservingOn",
@@ -536,7 +536,6 @@
         "Becoming.mem_configurations",
         "Becoming.mem_downFrom",
         "Becoming.mem_configurationsWithin",
-        "Becoming.preimage_of_mem_map",
         "Becoming.EntropyLists.mem_append_cases",
         "Becoming.mem_joinMap_cases",
         "Becoming.EntropyLists.distinct_append",
@@ -621,7 +620,6 @@
         "Becoming.Passing.world",
         "Becoming.Passing.all",
         "Becoming.Passing.one_ne_zero",
-        "Becoming.Passing.not_not",
         "Becoming.Passing.holds_self",
         "Becoming.Passing.holds_not",
         "Becoming.Passing.holds_to_not",
@@ -682,9 +680,18 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "40ef738225fdabbd52e0e5aed597d24eb0403ea8e3b662eef89dd90b773962e8",
+      "declarations": [
+        "Becoming.preimage_of_mem_map",
+        "Becoming.ListTests.not_not"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "role": "proof",
-      "sha256": "83daa2806392dadb0a9038c0a99177b983e5f4c3c5f10f71930b6567b652d9fa",
+      "sha256": "f74ef78a90acbe667a38de56ff34e71ea2f597c68c178740810b371364ffa539",
       "declarations": [
         "Becoming.Flow.DissipatesBy",
         "Becoming.Flow.DissipatesBy.replenishment_le",
@@ -717,7 +724,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "e285f78504fa5ae4dcf078b20ab94d75cde9014ac79737210bd2cd17175a17c1",
+      "sha256": "e7834fe9c545643fcd27dcb0b4a22f62825b6f842916560a494ed8b8edc05f3a",
       "declarations": [
         "Becoming.Flow.fall_lowers_on",
         "Becoming.World.rises_of_arises",
@@ -753,7 +760,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "78d3c86b42afecb2bfc36fe01e1996895975ecebb340fc96b611828b79faf259",
+      "sha256": "66d08a0242dc234bc40ab03bc9d2873ab814e333510a4cf77def6c05375c940e",
       "declarations": [
         "Becoming.World.Finite",
         "Becoming.World.Embodied",
@@ -780,13 +787,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
+      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
       "declarations": []
     },
     {
@@ -854,19 +861,25 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Entropy",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Resolution",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -880,7 +893,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Openness",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -901,7 +914,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Space",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -910,6 +923,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1154,6 +1174,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Flow.Balances.changes_within_lossless (now Flow.Balances.changes_within_conserving); Flow.Balances.not_lossless_of_arrow (now Flow.Balances.not_conserving_of_arrow); Flow.Balances.not_lossless_of_dissipates (now Flow.Balances.not_conserving_of_dissipates); Flow.Balances.returns_of_lossless (now Flow.Balances.returns_of_conserving); Flow.DissipatesOn.idle_of_lossless (now Flow.DissipatesOn.idle_of_conserving); Flow.Lossless (now Flow.Conserving); Flow.Lossless.gainless (now Flow.Conserving.gainless); Flow.LosslessOn (now Flow.ConservingOn); Flow.LosslessOn.gainlessOn (now Flow.ConservingOn.gainlessOn); Flow.LosslessOn.lost_zero (now Flow.ConservingOn.lost_zero); Flow.history (now Flow.exchangeCount); Flow.losslessOn_withRecord_iff (now Flow.conservingOn_withRecord_iff); Gathering.lossless (now Gathering.conserving); Passing.lossless (now Passing.conserving); Settling.balances (now Entropy.Settling.balances); Settling.changed (now Entropy.Settling.changed); Settling.closed (now Entropy.Settling.closed); Settling.flow (now Entropy.Settling.flow); Settling.level (now Entropy.Settling.level); Settling.lossless (now Entropy.Settling.conserving); Settling.merges (now Entropy.Settling.merges); Settling.rest (now Entropy.Settling.rest); Settling.settled (now Entropy.Settling.settled); Settling.settles (now Entropy.Settling.settles); Settling.third (now Entropy.Settling.third); Settling.web (now Entropy.Settling.web); Settling.world (now Entropy.Settling.world). Proof bindings (Dissipation.lean, Entropy.lean, Flow.lean, Recurrence.lean, Space.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Dissipation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Entropy.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Space.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Flow.Balances.changes_within_lossless（现为 Flow.Balances.changes_within_conserving）；Flow.Balances.not_lossless_of_arrow（现为 Flow.Balances.not_conserving_of_arrow）；Flow.Balances.not_lossless_of_dissipates（现为 Flow.Balances.not_conserving_of_dissipates）；Flow.Balances.returns_of_lossless（现为 Flow.Balances.returns_of_conserving）；Flow.DissipatesOn.idle_of_lossless（现为 Flow.DissipatesOn.idle_of_conserving）；Flow.Lossless（现为 Flow.Conserving）；Flow.Lossless.gainless（现为 Flow.Conserving.gainless）；Flow.LosslessOn（现为 Flow.ConservingOn）；Flow.LosslessOn.gainlessOn（现为 Flow.ConservingOn.gainlessOn）；Flow.LosslessOn.lost_zero（现为 Flow.ConservingOn.lost_zero）；Flow.history（现为 Flow.exchangeCount）；Flow.losslessOn_withRecord_iff（现为 Flow.conservingOn_withRecord_iff）；Gathering.lossless（现为 Gathering.conserving）；Passing.lossless（现为 Passing.conserving）；Settling.balances（现为 Entropy.Settling.balances）；Settling.changed（现为 Entropy.Settling.changed）；Settling.closed（现为 Entropy.Settling.closed）；Settling.flow（现为 Entropy.Settling.flow）；Settling.level（现为 Entropy.Settling.level）；Settling.lossless（现为 Entropy.Settling.conserving）；Settling.merges（现为 Entropy.Settling.merges）；Settling.rest（现为 Entropy.Settling.rest）；Settling.settled（现为 Entropy.Settling.settled）；Settling.settles（现为 Entropy.Settling.settles）；Settling.third（现为 Entropy.Settling.third）；Settling.web（现为 Entropy.Settling.web）；Settling.world（现为 Entropy.Settling.world）。证明绑定（Dissipation.lean、Entropy.lean、Flow.lean、Recurrence.lean、Space.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Dissipation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Entropy.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Space.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Entropy.lean to Prelude.lean, preimage_of_mem_map. Removed, with the statement kept under one name: Passing.not_not (now ListTests.not_not). Proof bindings (Entropy.lean, Openness.lean, Resolution.lean, Space.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Entropy.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Openness.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Resolution.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Space.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Entropy.lean 到 Prelude.lean：preimage_of_mem_map。删去，陈述以一个名称保留：Passing.not_not（现为 ListTests.not_not）。证明绑定（Entropy.lean、Openness.lean、Resolution.lean、Space.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Entropy.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Openness.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Resolution.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Space.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
     }
   ],
   "text_versions": [

@@ -43,6 +43,10 @@
     {
       "en": "19 October 2026, F3 sweep step 2 (Ren: \"work with other sessions, totally resolve these extra/ugly bridges, and move toward to the direction of unification\"): The bridge and join files it cites left the package with the periphery modules they read, whose content the core now states (the bridge-fold port files): GranularityBridge.lean is in lean/history/becoming/ with its bytes, bound to the receipts that checked it. The claim is unchanged.",
       "zh": "2026年10月19日，F3 清扫 step 2：所引桥接与接合文件连同字节移入 lean/history/becoming/，仍绑定检查过它们的回执。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): GranularityBridge.lean, in the Lean history folder with its bytes, is bound to receipt 20261018T222948.779875Z, which elaborates Becoming.guarded_history_matches_of_em, so the alias stays checked. Proof bindings (Granularity.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Granularity.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：GranularityBridge.lean（连同字节在 Lean 历史目录中）绑定到回执 20261018T222948.779875Z，它精化了 Becoming.guarded_history_matches_of_em，别名因此仍受检查。证明绑定（Granularity.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Granularity.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
     }
   ],
   "validation_scope": {
@@ -163,7 +167,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
       "role": "proof",
-      "sha256": "78e280076fadc82f9f3df9334cd0c902809366963fcf8c41a4c6b8689a9923c1",
+      "sha256": "86e8a037af43de4c61e044a7d46bc7ec9fc0c261bdea8fee98bd2d41b7b2f1a1",
       "declarations": [
         "Becoming.Recipe",
         "Becoming.Recipe.Leads",
@@ -208,6 +212,12 @@
       "role": "receipt",
       "sha256": "0a2bacf2db996d0f2da49b75bda0b985f74a5b6849be2b50ab6471033917d914",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -220,8 +230,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Granularity.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Granularity",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/history/becoming/Becoming/GranularityBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T222948.779875Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.GranularityBridge",
       "success_pointer": "/status",
       "success_value": "passed"
     }

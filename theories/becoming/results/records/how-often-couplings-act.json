@@ -137,9 +137,9 @@
       "zh": "在第 s 步之后、到第 s 行的各行都已在某处为真之步读第 s 步水平的自环，复现恰在每行都在某处为真处；它安定时，有限全知原则判定到其安定之步的各行，二分成立。所以一个条件回到自身的每个时程都安定，与条件全部列出的每个世界的每个时程都安定，各恰是这一二分。",
       "en": "The self-loop reading level s once every row up to s has been true somewhere recurs exactly where every row is; where it settles, the limited principle of omniscience decides the rows up to its settling step, and the dichotomy follows. So every schedule of one condition returning to itself settling, and every schedule of every world with its conditions listed settling, are each exactly the dichotomy.",
       "declarations": [
-        "Becoming.Frequency.Rows.or_cases",
-        "Becoming.Frequency.Rows.or_left",
-        "Becoming.Frequency.Rows.or_right",
+        "Becoming.ListTests.or_cases",
+        "Becoming.ListTests.or_left",
+        "Becoming.ListTests.or_right",
         "Becoming.Frequency.Rows.anyUpTo",
         "Becoming.Frequency.Rows.allUpTo",
         "Becoming.Frequency.Rows.anyUpTo_of",
@@ -325,8 +325,8 @@
       "id": "how-loops-form",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 carriedGive_congr_strength、Closing.ble_false_of_lt 与 Closing.Onset：在 T 形成的回路是自 T 起耦合的时程。",
-        "en": "Reuses carriedGive_congr_strength, Closing.ble_false_of_lt and Closing.Onset: the loop forming at T is the schedule coupling from T on."
+        "zh": "复用 carriedGive_congr_strength、Naturals.ble_false_of_lt 与 Closing.Onset：在 T 形成的回路是自 T 起耦合的时程。",
+        "en": "Reuses carriedGive_congr_strength, Naturals.ble_false_of_lt and Closing.Onset: the loop forming at T is the schedule coupling from T on."
       },
       "interface": {
         "output": {
@@ -441,7 +441,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
       "role": "proof",
-      "sha256": "77f1f6946de52b2eee15e9685d1ff1bbf244eb86a4f435e494f313da762d7ef8",
+      "sha256": "700283babe5b974d43b026f9801b7f0a760f03c2e803958ae296d3fa39b07031",
       "declarations": [
         "Becoming.Frequency.count",
         "Becoming.Frequency.count_succ_on",
@@ -514,9 +514,6 @@
         "Becoming.Frequency.First.not_recurs",
         "Becoming.Frequency.First.decides",
         "Becoming.lpo_of_settled",
-        "Becoming.Frequency.Rows.or_cases",
-        "Becoming.Frequency.Rows.or_left",
-        "Becoming.Frequency.Rows.or_right",
         "Becoming.Frequency.Rows.anyUpTo",
         "Becoming.Frequency.Rows.allUpTo",
         "Becoming.Frequency.Rows.anyUpTo_of",
@@ -544,9 +541,27 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "40ef738225fdabbd52e0e5aed597d24eb0403ea8e3b662eef89dd90b773962e8",
+      "declarations": [
+        "Becoming.ListTests.or_cases",
+        "Becoming.ListTests.or_left",
+        "Becoming.ListTests.or_right",
+        "Becoming.beq_self",
+        "Becoming.mul_assoc_nat",
+        "Becoming.add_mul_split",
+        "Becoming.mul_turn",
+        "Becoming.Naturals.ble_false_of_lt",
+        "Becoming.Naturals.add_congr",
+        "Becoming.ListTests.and_left",
+        "Becoming.ListTests.and_right"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
       "role": "proof",
-      "sha256": "3d6bc7ef2ba80fb20f9c183e21ceda21acd9c314d097eb4987f6f24f8fc6e08e",
+      "sha256": "8c549d8bfaf798ca5ca9d6dcbdf9471124443c82f938dce747f97924a09bef1d",
       "declarations": [
         "Becoming.CouplesAt",
         "Becoming.CouplingRecurs",
@@ -558,7 +573,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
       "role": "proof",
-      "sha256": "fccdc76341f8846bd67cd6194e155bda2ec9cda9f95ad2293d128f310cab2983",
+      "sha256": "b36ad1c0bb63fae6c68784ca7bb69369d0d16ac931134356101aad31d102c0ac",
       "declarations": [
         "Becoming.inflow",
         "Becoming.total_give_le_inflow",
@@ -566,12 +581,8 @@
         "Becoming.carriedGive_of_rest",
         "Becoming.carried_mono_steps",
         "Becoming.Loops.zero_or_pos",
-        "Becoming.Loops.beq_self",
         "Becoming.Loops.le_mul_of_pos",
-        "Becoming.Loops.mul_assoc_nat",
-        "Becoming.Loops.add_mul_nat",
         "Becoming.Loops.one_add_mul",
-        "Becoming.Loops.mul_left_comm_nat",
         "Becoming.Loops.pow_mul_nat",
         "Becoming.Loops.mul_pow_nat",
         "Becoming.Loops.pow_le_pow_base",
@@ -586,10 +597,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
       "role": "proof",
-      "sha256": "56fe2c2b91df2c01aa675ebe414e29faddf5b36a355c4dbabe7d3769ac1bf8f1",
+      "sha256": "28416655f17b66a1ac279d777da69d2051c8d865c3a88dc349457e8668574581",
       "declarations": [
         "Becoming.carriedGive_congr_strength",
-        "Becoming.Closing.ble_false_of_lt",
         "Becoming.Closing.Onset.strengths",
         "Becoming.Closing.Onset.amount"
       ]
@@ -597,7 +607,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
       "role": "proof",
-      "sha256": "49d86c65c83562f2759f6ce690cb21bef79b133b68545fb313f07c4ed0b6dc6c",
+      "sha256": "c93b6c83973671003bcd146d3ecbe13fa4d284a120330bbbac21bcdf069797a2",
       "declarations": [
         "Becoming.carried",
         "Becoming.carriedGive",
@@ -607,7 +617,6 @@
         "Becoming.Conveyed",
         "Becoming.Flow.exchangeGap",
         "Becoming.ExchangeLaw.RespondsWithin",
-        "Becoming.Propagation.add_congr",
         "Becoming.Propagation.cond_same",
         "Becoming.Propagation.mem_steps_upto",
         "Becoming.Propagation.le_of_mem_steps_upto"
@@ -616,14 +625,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "accd86eb3c7ce0e8a24617843fbdf31a021941a82e29ed67bb03cd292a60d5a2",
+      "sha256": "787f73218c583aee6d89874a152dbfdbffd60bd40c80a1ecf618568b528dad28",
       "declarations": [
         "Becoming.LPO",
         "Becoming.clear",
         "Becoming.Clear.false_of_not",
         "Becoming.Clear.not_both",
-        "Becoming.Clear.and_left",
-        "Becoming.Clear.and_right",
         "Becoming.Clear.and_both",
         "Becoming.Clear.false_before",
         "Becoming.Clear.or_first",
@@ -665,7 +672,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "8d615dddf37bbe38a0dfbb3794224c0b574a63c0239fc0a49925dd6bcbf4e28d",
+      "sha256": "040b8324ef7925d17601301b37e2847babb6d2bb5f23a0c466c37961b95068bf",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.ExchangeLaw.Nonanticipating",
@@ -675,12 +682,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
+      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
@@ -773,47 +780,53 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frequency.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Frequency",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Remainder.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Remainder",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Loops.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261017T113233.209872Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Loops",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Closing.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Closing",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Propagation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T162802.564989Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Propagation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261016T121942.514802Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Change",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -834,7 +847,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T185632.962707Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -850,6 +863,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/World.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.World",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -1021,6 +1041,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Frequency.SelfLoop.returns (now Frequency.SelfLoop.roundTrip); Returns (now RoundTrip); Returns.of_couplesAt (now RoundTrip.of_couplesAt); carried_doubles_return (now carried_doubles_roundTrip); carried_returns (now carried_roundTrip); runaway_of_returns (now runaway_of_roundTrip). Proof bindings (Flow.lean, Frequency.lean, Recurrence.lean, World.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Flow.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Frequency.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; World.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Frequency.SelfLoop.returns（现为 Frequency.SelfLoop.roundTrip）；Returns（现为 RoundTrip）；Returns.of_couplesAt（现为 RoundTrip.of_couplesAt）；carried_doubles_return（现为 carried_doubles_roundTrip）；carried_returns（现为 carried_roundTrip）；runaway_of_returns（现为 runaway_of_roundTrip）。证明绑定（Flow.lean、Frequency.lean、Recurrence.lean、World.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Flow.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Frequency.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；World.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Removed, with the statement kept under one name: Clear.and_left (now ListTests.and_left); Clear.and_right (now ListTests.and_right); Closing.ble_false_of_lt (now Naturals.ble_false_of_lt); Frequency.Rows.or_cases (now ListTests.or_cases); Frequency.Rows.or_left (now ListTests.or_left); Frequency.Rows.or_right (now ListTests.or_right); Loops.add_mul_nat (now add_mul_split); Loops.beq_self (now beq_self); Loops.mul_assoc_nat (now mul_assoc_nat); Loops.mul_left_comm_nat (now mul_turn); Propagation.add_congr (now Naturals.add_congr). The sentence that named a removed declaration names the kept one. Proof bindings (Change.lean, Closing.lean, Counterfactual.lean, Frequency.lean, Loops.lean, Propagation.lean, Remainder.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Change.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Closing.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Counterfactual.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Frequency.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Loops.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Propagation.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Remainder.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：删去，陈述以一个名称保留：Clear.and_left（现为 ListTests.and_left）；Clear.and_right（现为 ListTests.and_right）；Closing.ble_false_of_lt（现为 Naturals.ble_false_of_lt）；Frequency.Rows.or_cases（现为 ListTests.or_cases）；Frequency.Rows.or_left（现为 ListTests.or_left）；Frequency.Rows.or_right（现为 ListTests.or_right）；Loops.add_mul_nat（现为 add_mul_split）；Loops.beq_self（现为 beq_self）；Loops.mul_assoc_nat（现为 mul_assoc_nat）；Loops.mul_left_comm_nat（现为 mul_turn）；Propagation.add_congr（现为 Naturals.add_congr）。提到删去之声明的句子改提保留者。证明绑定（Change.lean、Closing.lean、Counterfactual.lean、Frequency.lean、Loops.lean、Propagation.lean、Remainder.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Change.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Closing.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Counterfactual.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Frequency.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Loops.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Propagation.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Remainder.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
     }
   ],
   "text_versions": [

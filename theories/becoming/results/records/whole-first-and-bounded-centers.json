@@ -295,47 +295,60 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "962dcce61063d96cfdc1785b77a7e524df0397e1d2d6ac25b03f9f18310ea7df",
+      "sha256": "ddd1afe1ef826f426a418e24066e801610d4d99e3300dca8c7fc8aba03fd16e3",
       "declarations": [
-        "Becoming.bounded",
-        "Becoming.Web.Retains",
-        "Becoming.Web.Adds",
-        "Becoming.Web.Retains.of_fewer",
-        "Becoming.Web.retains_bounded_iff",
         "Becoming.Web.Retains.within",
-        "Becoming.Clearing.admitted_all_without",
-        "Becoming.Clearing.clearer_loses_dweller",
-        "Becoming.Clearing.dependenceRegion",
-        "Becoming.Clearing.centers_disagree"
+        "Becoming.Clearing.clearer_loses_dweller"
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Clearing.lean",
       "role": "proof",
-      "sha256": "bb56e19f04df2cf1f35b67208f96e1a8ff8da058ee6ea0a98883bcfe756e85e3",
+      "sha256": "920cc4a0657a68494c9bc523c24b903db9385de3425d92e134bb75a2956d8852",
       "declarations": [
-        "Becoming.Web.AdmitsWithin",
-        "Becoming.Web.AdmitsWithin.narrow",
+        "Becoming.Clearing.admitted_all_without",
+        "Becoming.Clearing.dependenceRegion",
+        "Becoming.Clearing.centers_disagree",
         "Becoming.Clearing.clearerPart",
         "Becoming.Clearing.alongDependence",
         "Becoming.Clearing.withheldLevel",
         "Becoming.Clearing.withheld",
         "Becoming.Clearing.admitted_without",
         "Becoming.Clearing.unsupported_with",
-        "Becoming.Clearing.loses_beyond"
-      ]
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "role": "proof",
-      "sha256": "8606d794204c4f68e4ad963dc8642ebb1a1d8dc4750c58625e5ca219a8efc564",
-      "declarations": [
+        "Becoming.Clearing.loses_beyond",
         "Becoming.Clearing.Place",
         "Becoming.Clearing.Formation",
         "Becoming.Clearing.flow",
         "Becoming.Clearing.web",
         "Becoming.Clearing.dependent"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean",
+      "role": "proof",
+      "sha256": "b6301624c379bdfdbca4187f14dbba58c51c668b145b56a3acf9dd42456d804a",
+      "declarations": [
+        "Becoming.bounded",
+        "Becoming.Web.Retains",
+        "Becoming.Web.Adds",
+        "Becoming.Web.Retains.of_fewer",
+        "Becoming.Web.retains_bounded_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "eac24ce5ac1d7c00004ca2d35b61b30a8159913abfa40586b562daeec87eb3bc",
+      "declarations": [
+        "Becoming.Web.AdmitsWithin",
+        "Becoming.Web.AdmitsWithin.narrow"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "0ab0815ed90be71d73e427578aeeb623f23a4d2e7055391ab23903e6ac6f3861",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
@@ -345,12 +358,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de"
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31"
+      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -415,27 +428,47 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Significance",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Regions",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Clearing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Clearing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retaining.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Retaining",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -805,6 +838,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Renamed: Clearing.free_rider_loses (now Clearing.clearer_loses_dweller). Proof bindings (Continuation.lean, Significance.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Continuation.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Significance.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：改名：Clearing.free_rider_loses（现为 Clearing.clearer_loses_dweller）。证明绑定（Continuation.lean、Significance.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Continuation.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Significance.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Continuation.lean to Clearing.lean, Clearing.Formation, Clearing.Place, Clearing.dependent, Clearing.flow, Clearing.web; from Regions.lean to Clearing.lean, Clearing.admitted_without, Clearing.alongDependence, Clearing.clearerPart, Clearing.loses_beyond, Clearing.unsupported_with, Clearing.withheld, Clearing.withheldLevel; from Significance.lean to Clearing.lean, Clearing.admitted_all_without, Clearing.centers_disagree, Clearing.dependenceRegion; from Significance.lean to Retaining.lean, Web.Adds, Web.Retains, Web.Retains.of_fewer, Web.retains_bounded_iff, bounded. Proof bindings (Continuation.lean, Regions.lean, Significance.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Continuation.lean, the witness Clearing moved to Clearing.lean; Regions.lean, Clearing's losing beyond the dependence moved to Clearing.lean; Significance.lean, what takes no condition moved to Retaining.lean and Clearing.lean; the conditional theorems kept, statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Continuation.lean 到 Clearing.lean：Clearing.Formation、Clearing.Place、Clearing.dependent、Clearing.flow、Clearing.web；从 Regions.lean 到 Clearing.lean：Clearing.admitted_without、Clearing.alongDependence、Clearing.clearerPart、Clearing.loses_beyond、Clearing.unsupported_with、Clearing.withheld、Clearing.withheldLevel；从 Significance.lean 到 Clearing.lean：Clearing.admitted_all_without、Clearing.centers_disagree、Clearing.dependenceRegion；从 Significance.lean 到 Retaining.lean：Web.Adds、Web.Retains、Web.Retains.of_fewer、Web.retains_bounded_iff、bounded。证明绑定（Continuation.lean、Regions.lean、Significance.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Continuation.lean，见证 Clearing 移到 Clearing.lean；Regions.lean，Clearing 的依存之外的失去移到 Clearing.lean；Significance.lean，不带条件者移到 Retaining.lean 与 Clearing.lean；条件定理保留，陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
     }
   ],
   "text_versions": [

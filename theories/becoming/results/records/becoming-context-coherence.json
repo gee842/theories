@@ -153,7 +153,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
       "role": "proof",
-      "sha256": "1fe5439338dcfed9e045f14dadd889e754081ab932eba69fee388ba907929769",
+      "sha256": "5c9abd8e7826e62410c02e25f3c2f329415875898d183373e8328d172db28758",
       "declarations": [
         "Becoming.ChangingContext.ends"
       ]
@@ -217,6 +217,12 @@
       "role": "receipt",
       "sha256": "ace68a8204b4d696007b214fe3d23183492a76d03ba95c5ecef598c535ae0fe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -243,7 +249,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Context",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -323,6 +329,10 @@
     {
       "en": "19 October 2026, W2, the re-rooting (board item W: the import tree starts at the one unfolding, and no module free of the labelled process imports the frame): declarations moved with their full Lean names, statements and proofs unchanged: pooledLaw, InOne, JoinClosed, pooledLaw_exact_iff_joinClosed, retainedLaw_trace_iff, retainedLaw_realizes_inOne, erasedLaw_exact_iff_lifts, arrives_append, arrives_snoc, not_inOne, joins from Context.lean to ContextArrivalTraces.lean. Rebound to core receipt 20261019T160413.543456Z after reading the change (Context.lean, ContextArrivalTraces.lean). The alias Becoming.pooling_exact_iff_join_closed_by_core is elaborated only in Becoming.Bridge (Bridge.lean, retired by the F3 sweep with its bytes kept), so that file stays bound to receipt 20261018T191422.542444Z, whose hash of it matches. The claim is unchanged.",
       "zh": "2026年10月19日，W2 重新定根：声明连同完整 Lean 名称、陈述与证明原样移入另一个核心模块；读过改动后重新绑定或重新指向。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Proof bindings (Context.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: Context.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：证明绑定（Context.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：Context.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变。论断不变。"
     }
   ]
 }

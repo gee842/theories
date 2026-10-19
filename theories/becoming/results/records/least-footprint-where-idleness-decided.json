@@ -67,7 +67,7 @@
           "zh": "给定闲置判定；逆刻画另需相等可判定。",
           "en": "A supplied idleness decision; the converse additionally needs decidable equality."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean"
       }
     }
   ],
@@ -101,10 +101,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
       "role": "proof",
-      "sha256": "15b3b597eb34cf18e5378fc7fe5b5d22a3fb9a69ced8c46c974fb0ea8f1d332f",
+      "sha256": "8d407205a6fa663573b6f81c680936e0574fa360fecee095d59876e50dce6197",
       "declarations": [
         "Becoming.bool_cases",
-        "Becoming.not_eq_true_iff",
         "Becoming.not_eq_false_iff",
         "Becoming.Footprinted.DecidesIdle",
         "Becoming.Footprinted.least",
@@ -121,9 +120,17 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
       "role": "proof",
-      "sha256": "f14441de1c2dead8301cf465e364811302a649a945f60309cf4f72b6c33f5876",
+      "sha256": "40ef738225fdabbd52e0e5aed597d24eb0403ea8e3b662eef89dd90b773962e8",
+      "declarations": [
+        "Becoming.ListTests.not_true_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean",
+      "role": "proof",
+      "sha256": "b39910d06a2cc17f1a0879e952174c880420fd7a9aff143e8efb5a098549fdaa",
       "declarations": [
         "Becoming.Footprinted",
         "Becoming.Footprinted.Contains",
@@ -143,13 +150,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
+      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
       "declarations": []
     },
     {
@@ -193,20 +200,33 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261015T192014.437564Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.OrderNormal",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Order",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reordering.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Reordering",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -392,6 +412,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Order.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Order.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Order.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Order.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Order.lean to Reordering.lean, Footprinted, Footprinted.Contains, Footprinted.Joined.mono, Footprinted.Keeps, Footprinted.Precedes.mono, Footprinted.sorts_iff, Web.Unmoved. Removed, with the statement kept under one name: not_eq_true_iff (now ListTests.not_true_iff). Proof bindings (OrderNormal.lean) rebound to core receipt 20261019T213206.644158Z. The evidence and counterexample paths that named Order.lean name Reordering.lean (the split part holding what they cite). Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; OrderNormal.lean, root list and Boolean lemmas moved to Prelude.lean; copies removed (one name per statement); imports IdleRemoval; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Order.lean 到 Reordering.lean：Footprinted、Footprinted.Contains、Footprinted.Joined.mono、Footprinted.Keeps、Footprinted.Precedes.mono、Footprinted.sorts_iff、Web.Unmoved。删去，陈述以一个名称保留：not_eq_true_iff（现为 ListTests.not_true_iff）。证明绑定（OrderNormal.lean）改到核心回执 20261019T213206.644158Z。提到 Order.lean 的证据与反例路径改提 Reordering.lean（拆分后持有所引内容的部分）。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；OrderNormal.lean，根命名空间的列表与布尔引理移到 Prelude.lean；副本删去（每个陈述一个名称）；导入 IdleRemoval；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
     }
   ]
 }

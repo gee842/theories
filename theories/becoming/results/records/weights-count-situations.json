@@ -116,7 +116,7 @@
       "declarations": [
         "Becoming.FinerTraces.mem_finer_iff",
         "Becoming.FinerTraces.two_values_mem_iff",
-        "Becoming.FinerTraces.two_listed",
+        "Becoming.ListTests.mem_bools",
         "Becoming.FinerTraces.supportLaw",
         "Becoming.FinerTraces.trace_forget",
         "Becoming.FinerTraces.trace_lift",
@@ -348,7 +348,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "a8e4d252fa870cac6f200aec594aef104fcc85b29577c439af877bd9242192f8",
+      "sha256": "332ef82fb2662a473fdcce4ce1349c7a4ac31ad06e59ed01e3162a4bdf661c19",
       "declarations": [
         "Becoming.Typicality.courses",
         "Becoming.Typicality.extend",
@@ -372,7 +372,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
       "role": "proof",
-      "sha256": "9713b7e6719cb40a85a506a9be7a582bbc0da7a7bae8d3c6040b73a4be4ce873",
+      "sha256": "068cb32667ebeb844f1ad515ab184053a3e59dc48ba3db31cd1ad02089f08c8b",
       "declarations": [
         "Becoming.counting",
         "Becoming.joinMap",
@@ -394,7 +394,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WeightedTraces.lean",
       "role": "proof",
-      "sha256": "39b110ba6474c3a29ed8faac8fc2e57fb3c14b283c0e80ce0e808367a37d58b5",
+      "sha256": "96918175152cdb9e183ca66f40f81f0fa1966dec4e7852a4d75873a5ad8b2a51",
       "declarations": [
         "Becoming.counting_transfer_iff"
       ]
@@ -402,15 +402,31 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
       "role": "proof",
-      "sha256": "da3ac5a191832b494e8b1764af8f8ffd014640d498eb73bb29f0dc199a5ea4b9",
+      "sha256": "8ea0464dfadcec57c808a06423c88bb7d97025c6bc53c24b3315cd7d66531f94",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "40ef738225fdabbd52e0e5aed597d24eb0403ea8e3b662eef89dd90b773962e8",
       "declarations": [
-        "Becoming.mul_assoc_nat"
+        "Becoming.mul_assoc_nat",
+        "Becoming.ListTests.mem_bools",
+        "Becoming.mem_cons_cases",
+        "Becoming.mem_append_cases",
+        "Becoming.preimage_of_mem_map"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "fd1d911058d7f5fffe1d139022004de88c586616c5675b61b6848dfd6c2727d9",
+      "sha256": "6c54aea85b715cac11048f19fcc0f41cb4219276fb015d6ed12e466e90c8616b",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "role": "proof",
+      "sha256": "5719f92274999e36329507583e71d6f92ad2850222be02027fb846e4ae8104bd",
       "declarations": [
         "Becoming.Determined"
       ]
@@ -418,13 +434,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
+      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
       "declarations": []
     },
     {
@@ -465,19 +481,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FinerTraces.lean",
       "role": "proof",
-      "sha256": "1808caa8f0f01e92dd4ea776ad357bc442e860fd1c642fb4d34f70ff96e3619f",
+      "sha256": "5fcd71ab149cad7e086b2f439f2d46a1fabc3d170b56f203bcb227a713023ea6",
       "declarations": [
         "Becoming.FinerTraces.mem_finer_iff",
         "Becoming.FinerTraces.two_values_mem_iff",
-        "Becoming.FinerTraces.two_listed",
         "Becoming.FinerTraces.supportLaw",
         "Becoming.FinerTraces.trace_forget",
         "Becoming.FinerTraces.trace_lift",
         "Becoming.FinerTraces.nonzero_iff",
         "Becoming.FinerTraces.finer_exists_iff",
-        "Becoming.FinerTraces.mem_cons_split",
-        "Becoming.FinerTraces.mem_append_split",
-        "Becoming.FinerTraces.of_mem_map",
         "Becoming.FinerTraces.of_mem_joinMap",
         "Becoming.FinerTraces.lt_of_mem_upto",
         "Becoming.FinerTraces.mem_upto",
@@ -521,6 +533,12 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -533,43 +551,57 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Typicality",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Weighted",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Capture",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Joint",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FinerTraces.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FinerTraces",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/WeightedTraces.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T160413.543456Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.WeightedTraces",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Laws.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Laws",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -728,6 +760,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Joint.lean, Weighted.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Joint.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Weighted.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Joint.lean、Weighted.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Joint.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Weighted.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Capture.lean to Prelude.lean, mul_assoc_nat; from Joint.lean to Laws.lean, Determined. Removed, with the statement kept under one name: FinerTraces.mem_append_split (now mem_append_cases; the two differ in universe level only); FinerTraces.mem_cons_split (now mem_cons_cases; the two differ in universe level only); FinerTraces.of_mem_map (now preimage_of_mem_map; the two differ in universe level only); FinerTraces.two_listed (now ListTests.mem_bools). Proof bindings (Capture.lean, FinerTraces.lean, Joint.lean, Typicality.lean, Weighted.lean, WeightedTraces.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Capture.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; FinerTraces.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Joint.lean, Determined moved to Laws.lean; Typicality.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Weighted.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; WeightedTraces.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Capture.lean 到 Prelude.lean：mul_assoc_nat；从 Joint.lean 到 Laws.lean：Determined。删去，陈述以一个名称保留：FinerTraces.mem_append_split（现为 mem_append_cases；二者只在宇宙层级上不同）；FinerTraces.mem_cons_split（现为 mem_cons_cases；二者只在宇宙层级上不同）；FinerTraces.of_mem_map（现为 preimage_of_mem_map；二者只在宇宙层级上不同）；FinerTraces.two_listed（现为 ListTests.mem_bools）。证明绑定（Capture.lean、FinerTraces.lean、Joint.lean、Typicality.lean、Weighted.lean、WeightedTraces.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Capture.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；FinerTraces.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Joint.lean，Determined 移到 Laws.lean；Typicality.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Weighted.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；WeightedTraces.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
     }
   ],
   "text_versions": []

@@ -64,7 +64,7 @@
       "zh": "集中是指数的：一乘 u、零乘 v 时权重逐步相乘；对每个 u ≥ v，至少 k 个一的历程之重乘 uᵏ·vⁿ 至多 (p·u + q·v)ⁿ·vᵏ；p = q = 1 时其数乘 3ᵏ 至多 4ⁿ，k ≥ 3n/4 时所占不到 0.88ⁿ（由那一界的算术：2ⁿ/3^(3n/4) < 0.88ⁿ，不是另一条定理）。",
       "en": "Concentration is exponential: weighting each one by u and each zero by v multiplies the weights step by step; for every u ≥ v, the courses with at least k ones weigh, times uᵏ·vⁿ, at most (p·u + q·v)ⁿ·vᵏ; with p = q = 1 they number, times 3ᵏ, at most 4ⁿ, a share below 0.88ⁿ for k ≥ 3n/4 (arithmetic from that bound: 2ⁿ/3^(3n/4) < 0.88ⁿ, not a separate theorem).",
       "declarations": [
-        "Becoming.Typicality.pow_add_nat",
+        "Becoming.Naturals.pow_add",
         "Becoming.Typicality.ones_add_zeros",
         "Becoming.Typicality.weight_pow",
         "Becoming.Typicality.mul_mul_mul",
@@ -134,7 +134,6 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
   "aliases": [
-    "Becoming.Typicality.left_comm",
     "Becoming.Typicality.ones",
     "Becoming.Typicality.zeros",
     "Becoming.Typicality.weight",
@@ -284,9 +283,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
       "role": "proof",
-      "sha256": "a8e4d252fa870cac6f200aec594aef104fcc85b29577c439af877bd9242192f8",
+      "sha256": "332ef82fb2662a473fdcce4ce1349c7a4ac31ad06e59ed01e3162a4bdf661c19",
       "declarations": [
-        "Becoming.Typicality.left_comm",
         "Becoming.Typicality.ones",
         "Becoming.Typicality.zeros",
         "Becoming.Typicality.weight",
@@ -326,7 +324,6 @@
         "Becoming.Typicality.offBy",
         "Becoming.Typicality.offBy_le",
         "Becoming.Typicality.typical",
-        "Becoming.Typicality.pow_add_nat",
         "Becoming.Typicality.ones_add_zeros",
         "Becoming.Typicality.weight_pow",
         "Becoming.Typicality.mul_mul_mul",
@@ -345,9 +342,21 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "role": "proof",
+      "sha256": "40ef738225fdabbd52e0e5aed597d24eb0403ea8e3b662eef89dd90b773962e8",
+      "declarations": [
+        "Becoming.mul_turn",
+        "Becoming.Naturals.pow_add",
+        "Becoming.add_mul_split",
+        "Becoming.mul_assoc_nat",
+        "Becoming.le_of_add_le_add_right"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
       "role": "proof",
-      "sha256": "9713b7e6719cb40a85a506a9be7a582bbc0da7a7bae8d3c6040b73a4be4ce873",
+      "sha256": "068cb32667ebeb844f1ad515ab184053a3e59dc48ba3db31cd1ad02089f08c8b",
       "declarations": [
         "Becoming.Weights",
         "Becoming.counting",
@@ -360,26 +369,20 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "role": "proof",
-      "sha256": "83daa2806392dadb0a9038c0a99177b983e5f4c3c5f10f71930b6567b652d9fa",
-      "declarations": [
-        "Becoming.add_mul_split"
-      ]
+      "sha256": "f74ef78a90acbe667a38de56ff34e71ea2f597c68c178740810b371364ffa539",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
       "role": "proof",
-      "sha256": "da3ac5a191832b494e8b1764af8f8ffd014640d498eb73bb29f0dc199a5ea4b9",
-      "declarations": [
-        "Becoming.mul_assoc_nat"
-      ]
+      "sha256": "8ea0464dfadcec57c808a06423c88bb7d97025c6bc53c24b3315cd7d66531f94",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "ce19c0e89d9dae2a2cffbfccb0095a578de04eb96ec3e08953d61fb3c0b1555c",
-      "declarations": [
-        "Becoming.Identification.le_of_add_right"
-      ]
+      "sha256": "3abe8c009372c8b3e4b24b3817e667b73fdbe9ec311d9c5538a7eafe97b494a0",
+      "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
@@ -393,7 +396,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
       "role": "proof",
-      "sha256": "c407b82f13e730ed997cc2be4eb4d786fccdb3e9afc0bfdf76f1110b5bd4b3d5",
+      "sha256": "16791c32e7d29bc255e7bac08b5e00edf763cb656a1c99de064a5b85ada42989",
       "declarations": [
         "Becoming.Parting.freeRun",
         "Becoming.Parting.free_parts_after"
@@ -402,13 +405,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "adbb744556c30ee15992a153b8c4b247a60acb908c2d29a8aa32554ab5d6d5de",
+      "sha256": "9ce3fc6b6a7a186c1636365b99577ec8e22917aaa567bb0f373c6c702d9d4a74",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "896059873459ef20d16446e5c3bb08073cef3729627faa6cdd35b1a89eb9fb31",
+      "sha256": "9e685ecce00472c47bb21523e497aedb93391b66c21b4dcb7a3cf51b7295116b",
       "declarations": []
     },
     {
@@ -455,7 +458,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TypicalRuns.lean",
       "role": "proof",
-      "sha256": "7e485dc470369b3701ce2b38b47b20a1edca3df63189fe295aae8c16622abe54",
+      "sha256": "02bbf8dcf49e3b3ba468d1fbb6bd7a8ddc36a7ff5a06c3a7a1b5d00da6522e86",
       "declarations": [
         "Becoming.TypicalRuns.mem_courses_iff",
         "Becoming.TypicalRuns.courses_records",
@@ -516,40 +519,46 @@
       "role": "receipt",
       "sha256": "6c3f0168725a9cb3fac9292e801688ff58ed3b93b08dcb2b7a5c5e8372753070",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "role": "receipt",
+      "sha256": "d7d6c80b402ec417240edad046a1e8b0e1db954f42a99727f3745726dae729f7",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Typicality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Typicality",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T194851.524223Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Weighted",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Resolution",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Capture",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T181519.226999Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -563,15 +572,22 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Parting.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Parting",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TypicalRuns.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261018T235724.886433Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.TypicalRuns",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Prelude.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261019T213206.644158Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Prelude",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -723,6 +739,10 @@
     {
       "en": "20 October 2026, R30 (one notion, one name: names that stated a meaning the statement does not have, or collided, renamed by one table, development/r30-names/RENAME-TABLE.json): Proof bindings (Recurrence.lean, Weighted.lean) rebound to core receipt 20261019T194851.524223Z. Re-pointed after reading the change: Recurrence.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; Weighted.lean, declarations, namespaces and uses renamed by the R30 table (one notion, one name); statements and proofs unchanged; THE-THEORY-OF-BECOMING.md, names follow the R30 rename table; the retired Lean names of 20 October are in the glossary; §9 (receipt) follows R30. Also re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 221 added; the links of earlier sections to the renamed modules' files follow the table, their text unchanged. The claim is unchanged.",
       "zh": "2026年10月20日，R30（一个概念一个名字：名字说出陈述所没有的意思或相撞者，按一张表改名，见 development/r30-names/RENAME-TABLE.json）：证明绑定（Recurrence.lean、Weighted.lean）改到核心回执 20261019T194851.524223Z。读过改动后重新指向：Recurrence.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；Weighted.lean，声明、命名空间与用法按 R30 改名表改名（一个概念一个名字）；陈述与证明不变；THE-THEORY-OF-BECOMING.md，名称随 R30 改名表；10月20日退役的 Lean 名列入术语表；§9（回执）随 R30。另读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 221 节；此前各节指向改名模块文件的链接随改名表，文字不变。论断不变。"
+    },
+    {
+      "en": "20 October 2026, R31 (layers and one prelude: the ethics out of the general import closure, one law module, one prelude, Order split): Moved with their full names: from Capture.lean to Prelude.lean, mul_assoc_nat; from Resolution.lean to Prelude.lean, add_mul_split. Removed, with the statement kept under one name: Identification.le_of_add_right (now le_of_add_le_add_right); Typicality.left_comm (now mul_turn); Typicality.pow_add_nat (now Naturals.pow_add). Proof bindings (Capture.lean, Identification.lean, Parting.lean, Resolution.lean, TypicalRuns.lean, Typicality.lean, Weighted.lean) rebound to core receipt 20261019T213206.644158Z. Re-pointed after reading the change: BECOMING-RENEWAL-READING.md, section 222 added; Capture.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Identification.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Parting.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Resolution.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; TypicalRuns.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Typicality.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; Weighted.lean, prelude-only lemmas stated once in Prelude.lean: copies removed and uses re-pointed to the kept name, imports and docstrings follow R31; kept statements unchanged; THE-THEORY-OF-BECOMING.md, §9 (layers by a checkable property, the module table, receipt, counts) follows R31. The claim is unchanged.",
+      "zh": "2026年10月20日，R31（层与一个前导：伦理移出一般导入闭包、一个律模块、一个前导、Order 拆分）：连同完整名称移动：从 Capture.lean 到 Prelude.lean：mul_assoc_nat；从 Resolution.lean 到 Prelude.lean：add_mul_split。删去，陈述以一个名称保留：Identification.le_of_add_right（现为 le_of_add_le_add_right）；Typicality.left_comm（现为 mul_turn）；Typicality.pow_add_nat（现为 Naturals.pow_add）。证明绑定（Capture.lean、Identification.lean、Parting.lean、Resolution.lean、TypicalRuns.lean、Typicality.lean、Weighted.lean）改到核心回执 20261019T213206.644158Z。读过改动后重新指向：BECOMING-RENEWAL-READING.md，新增第 222 节；Capture.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Identification.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Parting.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Resolution.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；TypicalRuns.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Typicality.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；Weighted.lean，只用前导的引理在 Prelude.lean 中只陈述一次：副本删去，用法改指保留的名称，导入与说明随 R31；保留的陈述不变；THE-THEORY-OF-BECOMING.md，§9（以可检查性质定义的层、模块表、回执、计数）随 R31。论断不变。"
     }
   ],
   "text_versions": []
