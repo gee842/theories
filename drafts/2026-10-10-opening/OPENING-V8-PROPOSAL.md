@@ -1,5 +1,7 @@
 # Opening, version 8: the capture paragraph and "It is clear"
 
+**Applied 20 October 2026 with Ren's go** ([source](../../sources/15-codex-theory-conversations/2026-10-20-opening-v8.md)): forms A(b) and B(b), with the last sentence of `[^no-law]` in the form given for (b); frozen as [OPENING-V8.md](OPENING-V8.md).
+
 AI proposal, 20 October 2026. Not applied. [OPENING.md](../../theories/becoming/OPENING.md) is in Ren's voice and changes only through a proposal to him. Two edits, each independent of the other; neither adds or removes a result, and no Lean changes.
 
 **What prompted it.** Ren asked whether the opening is too spicy. The assessment: most of its boldness is the thesis, and each bold sentence carries its tag ("Truth exists", "in all universes", "the dharma, the Dao", the line between good and evil, cancer, godlike technology). Two places carry more heat than their notes support: the sentence that names three doctrines as captured, and the four "It is clear".
