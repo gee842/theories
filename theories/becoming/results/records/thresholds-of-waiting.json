@@ -282,7 +282,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b5f428f44cba764c421865385b6deb0ba648e99df070b6bdc050cdecbdcce8bc"
+      "sha256": "dfe98addb79966e18bd133428bc9c20deec8321fc006024853510b00dcb4fd50"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -336,6 +336,10 @@
     {
       "en": "19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.",
       "zh": "2026年10月19日，Y2 补记：读过改动后，BECOMING-RENEWAL-READING.md 重新指向（第 195 节新增早期关于爻位工作的一段）。论断不变。"
+    },
+    {
+      "en": "19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.",
+      "zh": "2026年10月19日，X1b（护闭诸文合于关节律的确切范围）：BECOMING-RENEWAL-READING.md 重新指向。自本记录所审哈希以来，所引文字只在第 199 节改动：其护闭读法现说保持是在自 s 起的路径上保住 s 的最大闭（`keeping_greatest`），由 X1b 改。重新指向前已读。论断不变。"
     }
   ]
 }

@@ -90,6 +90,7 @@ Aliases: `the game of relative position`, `相对位置的博弈`, `zero-sum gam
 ### History
 
 - 19 October 2026: added (Z1), to state on the spine what the opening's note [^aligned] called "a matter of counting, not yet stated on the formal spine", and to prove where "all its winners will lose" holds; study section 200.
+- 19 October 2026, X1b (the 护闭 texts at the exact scope of the juncture laws): BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged.
 
 </details>
 

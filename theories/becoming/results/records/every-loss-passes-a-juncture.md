@@ -5,7 +5,7 @@
 
 `every-loss-passes-a-juncture` · **recorded-checked** · theorem · F01 · [record](every-loss-passes-a-juncture.json) · [register](../../../../RESULTS.md)
 
-> Where s returns, every course to a configuration that cannot have s again passes, not not, a juncture: one step there keeps s to be had and one loses it. Finding it is deciding reach (LPO for every process). Keeping the steps that keep s keeps s, the largest that does.
+> Where s returns, every course to a configuration that cannot have s again passes, not not, a juncture: one step there keeps s to be had and one loses it. Finding it is deciding reach (LPO for every process). Keeping the steps that keep s keeps s, the largest that does on its course from s.
 
 <a id="laws--规律"></a>
 ## Laws
@@ -96,6 +96,7 @@ Aliases: `every loss passes a juncture`, `每次失去都经过一个关节`, `�
 - 19 October 2026: added (SG, general law G1 of the review of the earlier 生生不息 repository), on Ren's request that the earlier repository be read for what can be integrated ("please take a look of this … many insights can be integrated", abridged as quoted with the review); study section 199.
 - 19 October 2026, Y3 follow-up after SG (Becoming.HexagramLaws cites Becoming.Commuting): BECOMING-RENEWAL-READING.md, THE-THEORY-OF-BECOMING.md re-pointed after reading the change (BECOMING-RENEWAL-READING.md: the Y3 follow-up after SG added a paragraph to section 198; THE-THEORY-OF-BECOMING.md: the Y3 follow-up after SG reran the 8.2 integration row and the section 9 counts and receipt). The claim is unchanged.
 - 19 October 2026, Y2 follow-up: BECOMING-RENEWAL-READING.md re-pointed after reading the change (section 195 gained a paragraph on the earlier work on the places). The claim is unchanged.
+- 19 October 2026, X1b: the statement's last clause said keeping is the largest sub-process that keeps s; `keeping_greatest` holds every sub-process keeping s on that sub-process's course from s, so the clause now says "on its course from s", as law 5 already did. The laws, their declarations and the proof bindings are unchanged. BECOMING-RENEWAL-READING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 199, whose reading of 护闭 now says that keeping is the largest closure keeping s on its course from s (`keeping_greatest`), as X1b brought it. Read before re-pointing. The claim is unchanged. THE-THEORY-OF-BECOMING.md re-pointed. Since this record's reviewed hash, the cited text changed only in section 1 (the D52 reading: keeping is the largest closure keeping s on its course from s) and in section 10 (the 护闭 row of the crosswalk: every loss passes a juncture where s returns; keeping is the largest on its course from s), which X1b brought to the exact scope of `loss_passes_juncture` and `keeping_greatest`. Read before re-pointing. The claim is unchanged.
 
 </details>
 
