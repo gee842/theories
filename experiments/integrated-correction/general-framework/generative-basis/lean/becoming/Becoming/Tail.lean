@@ -56,7 +56,7 @@ given as a rule.
   (`LPO.of_rule`). So the tail law takes the limited principle as a rule, and a law of the whole
   and no part takes only the weak one.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D43).**
 - A whole that depends on no part of it is given exactly where it can be decided, of every
   unending record of yes and no, whether it says no throughout: every such whole gives that
   decision, and that decision gives one. With the conditions numbered, the least coupling

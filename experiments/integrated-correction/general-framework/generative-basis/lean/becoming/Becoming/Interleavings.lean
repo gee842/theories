@@ -30,7 +30,7 @@ relatum's own (`ownCourse`, `Interleaves`). No premise beyond what each theorem 
   from any configuration `traced_unique_iff`). Two exchanges sharing no relatum have the same own
   courses in either order (`swap_courses`).
 
-Reading (the AI's, pending Ren): the shared index of steps is a reading of the relations, not
+Reading (the AI's, D43): the shared index of steps is a reading of the relations, not
 their ground. What each relatum undergoes, and in what order, is its own course; a global index
 adds only an order between exchanges that share no relatum, and that order changes no
 configuration. The index is derived from the relations exactly where every two exchanges share a

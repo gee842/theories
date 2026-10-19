@@ -73,7 +73,7 @@ on decide.
   the strengths, from every start, is at most what order `j` carries exactly where no chain of
   `j + 1` couplings in time order ends there (`gap_within_order_iff`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D43).**
 - On 12 October Ren asked about the loops: "how how accurate can we do that uh what is the
   limitation do we have losses". On 16 October Ren took the orders of `Becoming.Loops` as the same
   structural kind as the sum over histories, organized by the number of responses as Feynman

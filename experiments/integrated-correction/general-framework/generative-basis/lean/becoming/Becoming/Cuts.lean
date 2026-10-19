@@ -11,8 +11,8 @@ names, what removing links and joining links do to closures, and what growth by 
 every link it forms. Every statement holds for any relation on any type of formations.
 
 * **A cut changes no closure exactly where every removed link is bypassed.** Removing the links of
-  `added` from a relation leaves every closure as it was exactly where the ends of each removed
-  link stay within each other's closure under what remains (`closure_unchanged_iff_bypassed`). For
+  `added` from a relation leaves every closure as it was exactly where the target of each removed
+  link stays within its source's closure under what remains (`closure_unchanged_iff_bypassed`). For
   one link read both ways, this is that each end stays within the other's closure
   (`link_cut_unchanged_iff`), and under a symmetric relation that one end stays within the other's
   (`link_cut_unchanged_iff_of_symm`).
@@ -97,8 +97,8 @@ theorem within_of_steps {rel rel' : F → F → Prop} (steps : ∀ g h, rel g h 
     (fun _ y reached related => reached.trans (steps _ y related)) (WithinClosure.refl f)
 
 /-- **A cut changes no closure exactly where every removed link is bypassed.** Removing the links of
-`added` leaves every closure as it was exactly where each removed link's ends stay within each
-other's closure under what remains. -/
+`added` leaves every closure as it was exactly where each removed link's target stays within its
+source's closure under what remains. -/
 theorem closure_unchanged_iff_bypassed {rel added : F → F → Prop} :
     (∀ f g, WithinClosure (Joined rel added) f g ↔ WithinClosure rel f g) ↔
       ∀ g h, added g h → WithinClosure rel g h :=

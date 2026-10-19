@@ -50,7 +50,7 @@ route of readings from where it starts, and observing the stock itself is the ro
   (`Measure.couples_after`), and the draw responds to the record (`Measure.draw_responds`): the
   raise passes through the record, with no threshold of the stock involved.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D43).**
 - Observation is not a second kind of relation beside dependence. To observe a stock is to stand at
   the end of a route of readings from it; observing it directly is the route of length zero, and a
   measurement, a model or another's reading is a longer route. A formation comes to observe

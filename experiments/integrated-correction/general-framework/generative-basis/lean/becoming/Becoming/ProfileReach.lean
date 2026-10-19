@@ -9,7 +9,7 @@ One unfolding. An evaluating position is a formation within it, not a primitive 
 Occurrences `Gen` of living and further generation carry profiles `Prof`, their formed relations
 to this evaluating (organizational continuity, formative contribution, dependence ...). "Own" is
 a region of those relations, not a primitive index. `sig` is this standpoint's reason-giving
-positive significance: contributory, not weight, permission or duty.
+significance, with no valence: contributory, not weight, permission or duty.
 
 Supplied, and kept visible: S0 (`SelfGood`), the standpoint's own living and further generation
 is reason-giving for it; `Monotone`, an occurrence at least as connected in the grounding

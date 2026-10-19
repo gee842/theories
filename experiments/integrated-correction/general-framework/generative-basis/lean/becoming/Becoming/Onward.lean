@@ -45,7 +45,7 @@ with nothing selected, and what a run takes where nothing else gives one.
   asked of every process, is exactly the principle that a total relation has a sequence along it
   from every start (`DependentSelection`; standard name: dependent choice) (`runs_iff_selection`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D43).**
 - Within finitely many configurations, whatever goes on without end does so by coming round: the
   course itself shows where it returns, and the run goes round there. Nothing is selected and
   nothing decided; going on is read off the unfolding.

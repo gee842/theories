@@ -51,7 +51,7 @@ it goes on to the next. No premise enters beyond what each theorem names.
   (`Branching.law_run_state`); readings in context are a world along every run
   (`Contextual.world`, `Becoming.Readings`). They are cited here, not restated.
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D43).**
 - The root is the run because every other reading is one, and not conversely as stated: a world is
   a run of the law it shows (P69's `Shown`), a balanced world is a run of the law of exchange, a
   course and the amount it carries are runs, an orbit is one. This does not make the run a ground

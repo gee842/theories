@@ -39,7 +39,8 @@ each, and what keeping one formation's activity under every course says about th
   leaves a guard is a fact of the configuration, shared by every run from it (`Kernel.run`),
   while renewing is a fact of the run. In `Renewable` (`Becoming.Renewal`, read along runs in
   `Becoming.Labelled`), the guard "the focal formation is active" holds at every configuration,
-  so no course leaves it from any configuration; from one configuration one run is renewing and
+  so no course leaves it (`kept_part_not_renewal` states this at the starting configuration; the
+  same one-line proof serves every other); from that configuration one run is renewing and
   another consumes the condition of the sustaining formation, which ends
   (`Renewable.kept_part_not_renewal`, from `Renewable.class_belongs_to_the_run`); the sustaining
   formation's activity is keepable there and not in the kernel.
@@ -393,7 +394,8 @@ open Viability RelationalRenewal
 
 /-- **A formation's activity kept under every course decides neither renewal nor what the run
 does to others.** In `Renewable` the focal formation is active at every configuration, so no
-course leaves that guard, from this configuration as from every other: the kernel conjunct is a
+course leaves that guard; the kernel conjunct is stated at this configuration (the same one-line
+proof serves every other), and it is a
 fact of the configuration, shared by every run from it (`Kernel.run`). From this one
 configuration, one run renews and another consumes the condition of the sustaining formation,
 which ends from step 1 (`class_belongs_to_the_run`): renewing is a fact of the run. The

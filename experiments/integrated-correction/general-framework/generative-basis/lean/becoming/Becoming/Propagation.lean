@@ -65,7 +65,7 @@ most that can arrive.
   (`Propagation.Chain.gap_arrives`). Returned to its condition by a loop of strength one, it arrives
   as `2 ^ t` (`Propagation.Loop.runaway`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D39).**
 - The coupling strength is the measure that sensitivity lacked: sensitivity says that a level can
   change an exchange, the strength how much. Read as 识, what couples into a formation is
   what its exchange is sensitive to, and the strength is how strongly.

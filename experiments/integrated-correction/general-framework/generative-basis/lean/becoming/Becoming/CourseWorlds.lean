@@ -28,7 +28,8 @@ what each theorem names.
   nothing, whose worlds have the carried amount and nothing as standings (`carrying_act_levels`,
   `quiet_act_levels`, by `counterfactual_fixed`). So two acts' worlds bound the difference exactly
   as every two balanced flows do (`worlds_iff_flows`): the counterfactual worlds of P80b attain the
-  most difference that can arrive.
+  most difference that can arrive, by the carrying law, which is not gainless (whether gainless
+  laws attain it is open, chapter §8.2).
 * **Loops (P118).** Where no loop lies upstream, the most difference between the worlds is what a
   finite order carries (`most_difference_within_worlds`) and every gap between them is at most a
   polynomial (`TwoActs.gap_le_polynomial`); with stationary strengths the most difference between
@@ -57,7 +58,7 @@ what each theorem names.
   (`TwoActs.gap_le_carried_read`). A law reading a schedule, the part making moves, reads what has
   stood (`ExchangeLaw.ReadsAt.withMoves_nonanticipating`, `ExchangeLaw.ReadsInto.withMoves_nonanticipating`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D43).**
 - How much difference arrives is a difference between two worlds of one law, the actual and the one
   an act not taken generates: not between two flows supplied side by side. By `Becoming.Runs` both
   are runs of the law of exchange, so the frontier's laws are laws of the one unfolding's runs.

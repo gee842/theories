@@ -65,7 +65,7 @@ every schedule settles is a principle of reasoning, exactly.
   `Becoming.Closing` forming at step `T` couples at the steps from `T` (`Frequency.SelfLoop.onset`),
   so its doubling after `T` is the rate (`Frequency.SelfLoop.onset_amount`).
 
-**Readings (the AI's, pending Ren).**
+**Readings (the AI's, D43).**
 - On 12 October Ren asked of the loops "how how accurate can we do that uh what is the limitation do
   we have losses". The rate says how fast the most difference that can arrive grows: `D` times
   `1 + M` to the number of steps at which couplings act, and this is attained. A runaway is set by
